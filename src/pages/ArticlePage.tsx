@@ -106,22 +106,22 @@ export default function ArticlePage() {
       {/* Breadcrumb */}
       <nav className="bg-surface border-b border-divider py-3" aria-label="Breadcrumb">
         <div className="container max-w-7xl mx-auto px-4">
-          <ol className="flex items-center gap-2 text-sm" itemScope itemType="https://schema.org/BreadcrumbList">
-            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+          <ol className="flex items-center gap-2 text-sm overflow-x-auto" itemScope itemType="https://schema.org/BreadcrumbList">
+            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem" className="flex-shrink-0">
               <Link to="/" className="text-muted-foreground hover:text-primary" itemProp="item">
                 <span itemProp="name">Home</span>
               </Link>
               <meta itemProp="position" content="1" />
             </li>
-            <span className="text-muted-foreground">/</span>
-            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+            <span className="text-muted-foreground flex-shrink-0">/</span>
+            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem" className="flex-shrink-0">
               <Link to={`/category/${post.category.toLowerCase()}`} className="text-muted-foreground hover:text-primary" itemProp="item">
                 <span itemProp="name">{post.category}</span>
               </Link>
               <meta itemProp="position" content="2" />
             </li>
-            <span className="text-muted-foreground">/</span>
-            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem" className="text-foreground truncate max-w-[200px]">
+            <span className="text-muted-foreground flex-shrink-0">/</span>
+            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem" className="text-foreground truncate max-w-[150px] sm:max-w-[200px]">
               <span itemProp="name">{post.title}</span>
               <meta itemProp="position" content="3" />
             </li>
@@ -129,20 +129,20 @@ export default function ArticlePage() {
         </div>
       </nav>
 
-      <article className="py-8 md:py-12" ref={articleRef}>
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-8">
+      <article className="py-6 md:py-8" ref={articleRef}>
+        <div className="container max-w-6xl mx-auto px-4">
+          <div className="grid lg:grid-cols-3 gap-6">
             {/* Main Content */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 min-w-0">
               {/* Header */}
-              <header className="mb-8">
-                <Badge className="mb-4 gradient-primary text-primary-foreground border-0">
+              <header className="mb-6">
+                <Badge className="mb-3 gradient-primary text-primary-foreground border-0">
                   {post.category}
                 </Badge>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-headline leading-tight mb-6">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-headline leading-tight mb-4 break-words">
                   {post.title}
                 </h1>
-                <p className="text-xl md:text-2xl text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-4 leading-relaxed">
                   {post.excerpt}
                 </p>
 
@@ -171,21 +171,21 @@ export default function ArticlePage() {
               </header>
 
               {/* Featured Image with WebP support */}
-              <figure className="mb-8">
-                <div className="aspect-video rounded-2xl overflow-hidden bg-muted shadow-lg">
+              <figure className="mb-6">
+                <div className="aspect-video rounded-xl overflow-hidden bg-muted shadow-md">
                   <picture>
                     <source srcSet={post.image.replace(/.(jpg|jpeg|png)$/, '.webp')} type="image/webp" />
                     <img
                       src={post.image}
                       alt={post.imageAlt}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      loading="eager"
+                      loading="lazy"
                       width="1200"
                       height="675"
                     />
                   </picture>
                 </div>
-                <figcaption className="mt-3 text-sm text-muted-foreground text-center">
+                <figcaption className="mt-2 text-xs sm:text-sm text-muted-foreground text-center">
                   {post.imageAlt}
                 </figcaption>
               </figure>
@@ -252,7 +252,7 @@ export default function ArticlePage() {
 
               {/* Article Content - Rendered from Markdown */}
               <div 
-                className="prose prose-xl max-w-none dark:prose-invert prose-headings:font-serif prose-headings:text-headline prose-headings:font-bold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-foreground prose-blockquote:border-l-primary prose-img:rounded-xl prose-img:shadow-md"
+                className="prose prose-sm sm:prose-base md:prose-lg max-w-none dark:prose-invert prose-headings:font-serif prose-headings:text-headline prose-headings:font-bold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-foreground prose-blockquote:border-l-primary prose-img:rounded-xl prose-img:shadow-md break-words"
                 dangerouslySetInnerHTML={{ __html: post.htmlContent }}
               />
 
