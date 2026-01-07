@@ -1,5 +1,45 @@
-import matter from 'gray-matter';
 import { marked } from 'marked';
+
+// Browser-compatible frontmatter parser (gray-matter uses Node.js Buffer)
+function parseFrontmatter(content: string): { data: Record<string, unknown>; content: string } {
+  const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
+  const match = content.match(frontmatterRegex);
+  
+  if (!match) {
+    return { data: {}, content };
+  }
+  
+  const yamlContent = match[1];
+  const bodyContent = match[2];
+  
+  // Simple YAML parser for frontmatter
+  const data: Record<string, unknown> = {};
+  const lines = yamlContent.split('\n');
+  
+  for (const line of lines) {
+    const colonIndex = line.indexOf(':');
+    if (colonIndex === -1) continue;
+    
+    const key = line.slice(0, colonIndex).trim();
+    let value: unknown = line.slice(colonIndex + 1).trim();
+    
+    // Handle arrays (tags: [tag1, tag2])
+    if (typeof value === 'string' && value.startsWith('[') && value.endsWith(']')) {
+      value = value.slice(1, -1).split(',').map(item => item.trim().replace(/^["']|["']$/g, ''));
+    }
+    // Handle booleans
+    else if (value === 'true') value = true;
+    else if (value === 'false') value = false;
+    // Handle quoted strings
+    else if (typeof value === 'string' && ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'")))) {
+      value = value.slice(1, -1);
+    }
+    
+    data[key] = value;
+  }
+  
+  return { data, content: bodyContent };
+}
 
 export interface PostFrontmatter {
   title: string;
@@ -39,8 +79,8 @@ export function getAllPosts(): Post[] {
 
   for (const path in postFiles) {
     const rawContent = postFiles[path] as string;
-    const { data, content } = matter(rawContent);
-    const frontmatter = data as PostFrontmatter;
+    const { data, content } = parseFrontmatter(rawContent);
+    const frontmatter = data as unknown as PostFrontmatter;
 
     posts.push({
       ...frontmatter,
