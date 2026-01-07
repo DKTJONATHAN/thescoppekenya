@@ -303,8 +303,8 @@ export default function ArticlePage() {
                       Passionate journalist covering entertainment, lifestyle, and breaking news across Kenya and East Africa.
                     </p>
                     <div className="flex gap-2">
-                      <Button variant="outline" size="sm" className="hover:bg-primary/10">
-                        <Twitter className="w-4 h-4 mr-1" />
+                      <Button variant="outline" size="sm" className="hover:bg-primary/10" onClick={() => window.open('https://x.com/thescoopkenya', '_blank')}>
+                        <XIcon className="w-4 h-4 mr-1" />
                         Follow
                       </Button>
                       <Button variant="outline" size="sm" className="hover:bg-primary/10">
@@ -405,9 +405,9 @@ export default function ArticlePage() {
                       <Facebook className="w-5 h-5 mr-2" />
                       Facebook
                     </Button>
-                    <Button variant="outline" size="sm" className="h-12 hover:bg-primary/10">
-                      <Twitter className="w-5 h-5 mr-2" />
-                      Twitter
+                    <Button variant="outline" size="sm" className="h-12 hover:bg-primary/10" onClick={() => window.open('https://x.com/thescoopkenya', '_blank')}>
+                      <XIcon className="w-5 h-5 mr-2" />
+                      X
                     </Button>
                     <Button variant="outline" size="sm" className="h-12 hover:bg-primary/10">
                       <Instagram className="w-5 h-5 mr-2" />
