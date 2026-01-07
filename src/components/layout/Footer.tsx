@@ -1,12 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Facebook, Instagram, Youtube, Mail, ArrowRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { categories } from "@/lib/markdown";
 import { XIcon } from "@/components/XIcon";
 
 export function Footer() {
+  const navigate = useNavigate();
+
+  const handleLinkClick = (path: string) => {
+    navigate(path);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <footer className="bg-card dark:bg-card text-card-foreground border-t border-border">
+    <footer className="bg-card text-card-foreground border-t border-border">
       {/* Newsletter Section */}
       <div className="border-b border-border">
         <div className="container py-12">
@@ -37,11 +44,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center mb-4">
+            <button onClick={() => handleLinkClick("/")} className="flex items-center mb-4">
               <h2 className="text-2xl font-serif font-bold text-foreground">
                 The Scoop <span className="text-primary">KE</span>
               </h2>
-            </Link>
+            </button>
             <p className="text-muted-foreground text-sm mb-4">
               Kenya's premier destination for breaking news, entertainment, and celebrity gossip. Stay informed, stay entertained.
             </p>
@@ -67,12 +74,12 @@ export function Footer() {
             <ul className="space-y-2">
               {categories.map((category) => (
                 <li key={category.slug}>
-                  <Link
-                    to={`/category/${category.slug}`}
-                    className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                  <button
+                    onClick={() => handleLinkClick(`/category/${category.slug}`)}
+                    className="text-muted-foreground hover:text-primary transition-colors text-sm text-left"
                   >
                     {category.name}
-                  </Link>
+                  </button>
                 </li>
               ))}
             </ul>
@@ -83,34 +90,34 @@ export function Footer() {
             <h4 className="font-serif font-bold text-lg mb-4 text-foreground">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
+                <button onClick={() => handleLinkClick("/about")} className="text-muted-foreground hover:text-primary transition-colors">
                   About Us
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+                <button onClick={() => handleLinkClick("/contact")} className="text-muted-foreground hover:text-primary transition-colors">
                   Contact
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/advertise" className="text-muted-foreground hover:text-primary transition-colors">
+                <button onClick={() => handleLinkClick("/advertise")} className="text-muted-foreground hover:text-primary transition-colors">
                   Advertise With Us
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/careers" className="text-muted-foreground hover:text-primary transition-colors">
+                <button onClick={() => handleLinkClick("/careers")} className="text-muted-foreground hover:text-primary transition-colors">
                   Careers
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
+                <button onClick={() => handleLinkClick("/privacy")} className="text-muted-foreground hover:text-primary transition-colors">
                   Privacy Policy
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/terms" className="text-muted-foreground hover:text-primary transition-colors">
+                <button onClick={() => handleLinkClick("/terms")} className="text-muted-foreground hover:text-primary transition-colors">
                   Terms of Service
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
@@ -142,8 +149,7 @@ export function Footer() {
                 <br />
                 <a 
                   href="https://www.jonathanmwaniki.co.ke" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                  target="_blank"
                   className="hover:text-primary transition-colors"
                 >
                   www.jonathanmwaniki.co.ke
@@ -159,7 +165,7 @@ export function Footer() {
         <div className="container py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} The Scoop Kenya. All rights reserved.</p>
           <p>
-            A <a href="https://www.jonathanmwaniki.co.ke" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Jonathan Mwaniki</a> Project
+            <a href="https://jonathanmwaniki.co.ke/about" target="_blank" className="text-primary hover:underline">A Jonathan Mwaniki Project</a>
           </p>
         </div>
       </div>
