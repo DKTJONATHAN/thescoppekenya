@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
-import { categories } from "@/data/posts";
+import { categories } from "@/lib/markdown";
 
 export function CategoryBar() {
   return (

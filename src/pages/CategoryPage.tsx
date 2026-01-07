@@ -3,7 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { CategoryBar } from "@/components/articles/CategoryBar";
 import { ArticleCard } from "@/components/articles/ArticleCard";
 import { TrendingSidebar } from "@/components/articles/TrendingSidebar";
-import { getPostsByCategory, categories } from "@/data/posts";
+import { getPostsByCategory, categories } from "@/lib/markdown";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 

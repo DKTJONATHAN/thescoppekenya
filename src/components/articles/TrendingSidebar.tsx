@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import { Post, getTrendingPosts } from "@/data/posts";
-import { ArticleCard } from "./ArticleCard";
+import { Post, getLatestPosts } from "@/lib/markdown";
 
 interface TrendingSidebarProps {
   posts?: Post[];
 }
 
 export function TrendingSidebar({ posts }: TrendingSidebarProps) {
-  const trendingPosts = posts || getTrendingPosts();
+  const trendingPosts = posts || getLatestPosts(5);
 
   return (
     <aside className="bg-surface rounded-2xl p-6">

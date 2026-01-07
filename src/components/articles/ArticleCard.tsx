@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Clock, ArrowRight } from "lucide-react";
-import { Post } from "@/data/posts";
+import { Clock } from "lucide-react";
+import { Post } from "@/lib/markdown";
 import { Badge } from "@/components/ui/badge";
 
 interface ArticleCardProps {

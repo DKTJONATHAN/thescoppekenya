@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Instagram, Youtube, Mail, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { categories } from "@/data/posts";
+import { categories } from "@/lib/markdown";
 
 export function Footer() {
   return (

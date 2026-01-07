@@ -2,7 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { CategoryBar } from "@/components/articles/CategoryBar";
 import { ArticleCard } from "@/components/articles/ArticleCard";
 import { TrendingSidebar } from "@/components/articles/TrendingSidebar";
-import { getFeaturedPosts, getLatestPosts, categories } from "@/data/posts";
+import { getFeaturedPosts, getLatestPosts, categories } from "@/lib/markdown";
 import { Link } from "react-router-dom";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
