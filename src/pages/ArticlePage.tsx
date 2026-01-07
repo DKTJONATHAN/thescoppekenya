@@ -104,7 +104,7 @@ export default function ArticlePage() {
 
       {/* Breadcrumb */}
       <nav className="bg-surface border-b border-divider py-3" aria-label="Breadcrumb">
-        <div className="container">
+        <div className="container max-w-7xl mx-auto px-4">
           <ol className="flex items-center gap-2 text-sm" itemScope itemType="https://schema.org/BreadcrumbList">
             <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
               <Link to="/" className="text-muted-foreground hover:text-primary" itemProp="item">
@@ -129,7 +129,7 @@ export default function ArticlePage() {
       </nav>
 
       <article className="py-8 md:py-12" ref={articleRef}>
-        <div className="container">
+        <div className="container max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Main Content */}
             <div className="lg:col-span-2">
@@ -271,29 +271,6 @@ export default function ArticlePage() {
                 className="prose prose-xl max-w-none dark:prose-invert prose-headings:font-serif prose-headings:text-headline prose-headings:font-bold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-foreground prose-blockquote:border-l-primary prose-img:rounded-xl prose-img:shadow-md"
                 dangerouslySetInnerHTML={{ __html: post.htmlContent }}
               />
-
-              {/* Engagement Poll */}
-              <div className="my-12 p-8 bg-surface rounded-2xl border border-divider shadow-lg">
-                <h3 className="font-serif font-bold text-2xl text-headline mb-4 flex items-center gap-2">
-                  <MessageCircle className="w-6 h-6 text-primary" />
-                  What's Your Take?
-                </h3>
-                <p className="text-muted-foreground mb-6">Do you believe this story?</p>
-                <div className="space-y-3">
-                  <Button variant="outline" className="w-full justify-start text-left h-auto py-4 hover:bg-primary/10 hover:border-primary">
-                    <span className="flex-1">Yes, totally believable</span>
-                    <span className="text-muted-foreground">0%</span>
-                  </Button>
-                  <Button variant="outline" className="w-full justify-start text-left h-auto py-4 hover:bg-primary/10 hover:border-primary">
-                    <span className="flex-1">Not sure, need more info</span>
-                    <span className="text-muted-foreground">0%</span>
-                  </Button>
-                  <Button variant="outline" className="w-full justify-start text-left h-auto py-4 hover:bg-primary/10 hover:border-primary">
-                    <span className="flex-1">No, seems fake</span>
-                    <span className="text-muted-foreground">0%</span>
-                  </Button>
-                </div>
-              </div>
 
               {/* Newsletter Signup */}
               <div className="my-12 p-8 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl border border-primary/20">
@@ -449,13 +426,6 @@ export default function ArticlePage() {
                 <div className="bg-surface rounded-2xl p-6 text-center border border-divider">
                   <p className="text-xs text-muted-foreground mb-2">ADVERTISEMENT</p>
                   <div className="aspect-[4/5] bg-muted rounded-lg flex items-center justify-center">
-                    {/* Google AdSense Placeholder */}
-                    <ins className="adsbygoogle"
-                         style={{ display: 'block' }}
-                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                         data-ad-slot="XXXXXXXXXX"
-                         data-ad-format="auto"
-                         data-full-width-responsive="true"></ins>
                     <span className="text-muted-foreground">Ad Space</span>
                   </div>
                 </div>
