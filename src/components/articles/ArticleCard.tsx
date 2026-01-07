@@ -23,6 +23,7 @@ export function ArticleCard({ post, variant = "default" }: ArticleCardProps) {
           alt={post.imageAlt}
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground via-foreground/50 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
@@ -67,6 +68,7 @@ export function ArticleCard({ post, variant = "default" }: ArticleCardProps) {
               alt={post.imageAlt}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
+              decoding="async"
             />
           </div>
         </Link>
@@ -120,6 +122,7 @@ export function ArticleCard({ post, variant = "default" }: ArticleCardProps) {
             alt={post.imageAlt}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             loading="lazy"
+            decoding="async"
           />
         </div>
       </Link>
