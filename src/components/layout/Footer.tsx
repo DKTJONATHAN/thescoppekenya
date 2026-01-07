@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { Facebook, Twitter, Instagram, Youtube, Mail, ArrowRight } from "lucide-react";
+import { Facebook, Instagram, Youtube, Mail, ArrowRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { categories } from "@/lib/markdown";
+import { XIcon } from "@/components/XIcon";
 
 export function Footer() {
   return (
@@ -36,29 +37,25 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-serif font-bold text-xl">S</span>
-              </div>
-              <div>
-                <h2 className="text-lg font-serif font-bold leading-none">The Scoop</h2>
-                <p className="text-xs text-primary font-medium tracking-wider">KENYA</p>
-              </div>
+            <Link to="/" className="flex items-center mb-4">
+              <h2 className="text-2xl font-serif font-bold">
+                The Scoop <span className="text-primary">KE</span>
+              </h2>
             </Link>
             <p className="text-background/70 text-sm mb-4">
               Kenya's premier destination for breaking news, entertainment, and celebrity gossip. Stay informed, stay entertained.
             </p>
             <div className="flex items-center gap-3">
-              <a href="#" className="w-9 h-9 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Facebook">
+              <a href="https://facebook.com/thescoopkenya" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Facebook">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Twitter">
-                <Twitter className="w-4 h-4" />
+              <a href="https://x.com/thescoopkenya" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="X">
+                <XIcon className="w-4 h-4" />
               </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Instagram">
+              <a href="https://instagram.com/thescoopkenya" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Instagram">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Youtube">
+              <a href="https://youtube.com/@thescoopkenya" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Youtube">
                 <Youtube className="w-4 h-4" />
               </a>
             </div>
@@ -123,12 +120,24 @@ export function Footer() {
             <h4 className="font-serif font-bold text-lg mb-4">Contact Us</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
-                <Mail className="w-4 h-4 mt-0.5 text-primary" />
-                <a href="mailto:info@thescoopkenya.co.ke" className="text-background/70 hover:text-primary transition-colors">
-                  info@thescoopkenya.co.ke
+                <Phone className="w-4 h-4 mt-0.5 text-primary" />
+                <a href="tel:+254706396305" className="text-background/70 hover:text-primary transition-colors">
+                  0706 396 305
                 </a>
               </li>
-              <li className="text-background/70">
+              <li className="flex items-start gap-2">
+                <Mail className="w-4 h-4 mt-0.5 text-primary" />
+                <a href="mailto:contact@thescoopkenya.co.ke" className="text-background/70 hover:text-primary transition-colors">
+                  contact@thescoopkenya.co.ke
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
+                <Mail className="w-4 h-4 mt-0.5 text-primary" />
+                <a href="mailto:info@jonathanmwaniki.co.ke" className="text-background/70 hover:text-primary transition-colors">
+                  info@jonathanmwaniki.co.ke
+                </a>
+              </li>
+              <li className="text-background/70 pt-2">
                 <span className="text-primary font-medium">Affiliated with:</span>
                 <br />
                 <a 

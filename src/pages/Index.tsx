@@ -67,7 +67,7 @@ const Index = () => {
             {/* Grid Secondary Features */}
             {featuredPosts.slice(1, 5).map((post, idx) => (
               <div key={post.slug} className={`${idx === 0 ? 'hidden md:block' : ''}`}>
-                <ArticleCard post={post} variant="grid-sm" />
+                <ArticleCard post={post} variant="compact" />
               </div>
             ))}
             

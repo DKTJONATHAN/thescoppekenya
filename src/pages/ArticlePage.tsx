@@ -3,10 +3,11 @@ import { Layout } from "@/components/layout/Layout";
 import { TrendingSidebar } from "@/components/articles/TrendingSidebar";
 import { ArticleCard } from "@/components/articles/ArticleCard";
 import { getPostBySlug, getLatestPosts } from "@/lib/markdown";
-import { Clock, Calendar, Share2, Facebook, Twitter, Linkedin, Instagram, Bookmark, MessageCircle, TrendingUp, Zap } from "lucide-react";
+import { Clock, Calendar, Share2, Facebook, Linkedin, Instagram, Bookmark, MessageCircle, TrendingUp, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useEffect, useState, useRef } from "react";
+import { XIcon } from "@/components/XIcon";
 
 export default function ArticlePage() {
   const { slug } = useParams<{ slug: string }>();
@@ -206,10 +207,10 @@ export default function ArticlePage() {
                     variant="ghost" 
                     size="icon" 
                     className="hover:bg-primary/10 hover:text-primary" 
-                    aria-label="Share on Twitter"
-                    onClick={() => window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(post.title)}`, '_blank')}
+                    aria-label="Share on X"
+                    onClick={() => window.open(`https://x.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(post.title)}`, '_blank')}
                   >
-                    <Twitter className="w-5 h-5" />
+                    <XIcon className="w-5 h-5" />
                   </Button>
                   <Button 
                     variant="ghost" 
@@ -248,23 +249,6 @@ export default function ArticlePage() {
                 </Button>
               </div>
 
-              {/* Quick Facts Sidebar for Mobile */}
-              {post.quickFacts && (
-                <div className="mb-8 p-6 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl border border-primary/20 lg:hidden">
-                  <h3 className="font-serif font-bold text-xl text-headline mb-4 flex items-center gap-2">
-                    <Zap className="w-5 h-5 text-primary" />
-                    Quick Facts
-                  </h3>
-                  <ul className="space-y-2 text-sm">
-                    {post.quickFacts.map((fact: string, index: number) => (
-                      <li key={index} className="flex items-start gap-2">
-                        <span className="text-primary mt-1">•</span>
-                        <span>{fact}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
 
               {/* Article Content - Rendered from Markdown */}
               <div 
@@ -404,23 +388,6 @@ export default function ArticlePage() {
                   </div>
                 </div>
 
-                {/* Quick Facts for Desktop */}
-                {post.quickFacts && (
-                  <div className="hidden lg:block p-6 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl border border-primary/20">
-                    <h3 className="font-serif font-bold text-xl text-headline mb-4 flex items-center gap-2">
-                      <Zap className="w-5 h-5 text-primary" />
-                      Quick Facts
-                    </h3>
-                    <ul className="space-y-2 text-sm">
-                      {post.quickFacts.map((fact: string, index: number) => (
-                        <li key={index} className="flex items-start gap-2">
-                          <span className="text-primary mt-1">•</span>
-                          <span>{fact}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
 
                 {/* Ad Placeholder */}
                 <div className="bg-surface rounded-2xl p-6 text-center border border-divider">
