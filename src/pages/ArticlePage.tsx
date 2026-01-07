@@ -2,40 +2,41 @@ import { useParams, Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { TrendingSidebar } from "@/components/articles/TrendingSidebar";
 import { ArticleCard } from "@/components/articles/ArticleCard";
-import { GossipQuickBites } from "@/components/articles/GossipQuickBites";
-import { getPostBySlug, getLatestPosts, getRelatedPostsByTags } from "@/lib/markdown";
-import { Clock, Calendar, Share2, Facebook, Twitter, Instagram, Tiktok, Youtube, Bookmark, MessageCircle, ThumbsUp, Eye, Zap } from "lucide-react";
+import { getPostBySlug, getLatestPosts } from "@/lib/markdown";
+import { Clock, Calendar, Share2, Facebook, Twitter, Linkedin, Instagram, Bookmark, MessageCircle, TrendingUp, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function ArticlePage() {
   const { slug } = useParams<{ slug: string }>();
   const post = getPostBySlug(slug || "");
-  const relatedPosts = getRelatedPostsByTags(post?.tags || [], 4).filter(p => p.slug !== slug) || getLatestPosts(4).filter(p => p.slug !== slug);
-  const [views, setViews] = useState(0);
-  const [likes, setLikes] = useState(0);
-  const [isLiked, setIsLiked] = useState(false);
+  const relatedPosts = getLatestPosts(4).filter(p => p.slug !== slug);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [activeTab, setActiveTab] = useState("trending");
+  const articleRef = useRef<HTMLDivElement>(null);
 
+  // Reading Progress Bar
   useEffect(() => {
-    // Simulate views increment
-    const interval = setInterval(() => setViews(v => v + Math.floor(Math.random() * 10)), 5000);
-    return () => clearInterval(interval);
-  }, []);
+    const updateProgress = () => {
+      if (!articleRef.current) return;
+      const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+      const progress = (scrollTop / (scrollHeight - clientHeight)) * 100;
+      setScrollProgress(Math.min(progress, 100));
+    };
 
-  const handleLike = () => {
-    setIsLiked(!isLiked);
-    setLikes(l => isLiked ? l - 1 : l + 1);
-  };
+    window.addEventListener('scroll', updateProgress);
+    return () => window.removeEventListener('scroll', updateProgress);
+  }, []);
 
   if (!post) {
     return (
       <Layout>
         <div className="container py-20 text-center">
-          <h1 className="text-4xl md:text-6xl font-serif font-bold text-headline mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Article Not Found</h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-md mx-auto">The juicy gossip you're craving doesn't exist or has been swept under the rug.</p>
-          <Button asChild className="gradient-primary text-primary-foreground text-lg px-8 py-6 rounded-xl">
-            <Link to="/">Back to Latest Scoop</Link>
+          <h1 className="text-4xl font-serif font-bold text-headline mb-4">Article Not Found</h1>
+          <p className="text-muted-foreground mb-8">The article you're looking for doesn't exist or has been removed.</p>
+          <Button asChild className="gradient-primary text-primary-foreground">
+            <Link to="/">Back to Home</Link>
           </Button>
         </div>
       </Layout>
@@ -49,20 +50,25 @@ export default function ArticlePage() {
     day: 'numeric'
   });
 
-  // Enhanced Article structured data for NewsArticle + VideoObject if applicable
+  // Enhanced Article structured data for Google News
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
     "headline": post.title,
     "alternativeHeadline": post.excerpt,
     "description": post.excerpt,
-    "image": [post.image, post.authorImage],
+    "image": {
+      "@type": "ImageObject",
+      "url": post.image,
+      "width": 1200,
+      "height": 675
+    },
     "datePublished": post.date,
     "dateModified": post.date,
     "author": {
       "@type": "Person",
       "name": post.author,
-      "image": post.authorImage
+      "url": `https://thescoopkenya.co.ke/author/${post.author.toLowerCase().replace(/ /g, '-')}`
     },
     "publisher": {
       "@type": "Organization",
@@ -78,247 +84,401 @@ export default function ArticlePage() {
     },
     "articleSection": post.category,
     "keywords": post.tags.join(', '),
-    "wordCount": post.readTime * 200
+    "wordCount": post.readTime * 200,
+    "inLanguage": "en-KE"
   };
 
   return (
     <Layout>
+      {/* Reading Progress Bar */}
+      <div 
+        className="fixed top-0 left-0 h-1 bg-gradient-to-r from-primary to-secondary z-50 transition-all duration-150"
+        style={{ width: `${scrollProgress}%` }}
+      />
+
+      {/* Preload hero image */}
+      <link rel="preload" as="image" href={post.image} />
+
       {/* Enhanced SEO Schema */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
-      {/* Hero Breadcrumb */}
-      <nav className="bg-gradient-to-r from-primary/10 to-secondary/10 backdrop-blur-sm border-b border-divider/50 py-4" aria-label="Breadcrumb">
+      {/* Breadcrumb */}
+      <nav className="bg-surface border-b border-divider py-3" aria-label="Breadcrumb">
         <div className="container">
-          <ol className="flex items-center gap-3 text-sm font-medium">
-            <li>
-              <Link to="/" className="text-primary hover:text-primary/80 flex items-center gap-1">
-                <Zap className="w-4 h-4" />
-                Home
+          <ol className="flex items-center gap-2 text-sm" itemScope itemType="https://schema.org/BreadcrumbList">
+            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <Link to="/" className="text-muted-foreground hover:text-primary" itemProp="item">
+                <span itemProp="name">Home</span>
               </Link>
+              <meta itemProp="position" content="1" />
             </li>
             <span className="text-muted-foreground">/</span>
-            <li>
-              <Link to={`/category/${post.category.toLowerCase().replace(/ /g, '-')}`} className="text-foreground hover:text-primary flex items-center gap-1">
-                {post.category}
+            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <Link to={`/category/${post.category.toLowerCase()}`} className="text-muted-foreground hover:text-primary" itemProp="item">
+                <span itemProp="name">{post.category}</span>
               </Link>
+              <meta itemProp="position" content="2" />
             </li>
             <span className="text-muted-foreground">/</span>
-            <li className="text-muted-foreground truncate max-w-[250px]">
-              {post.title}
+            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem" className="text-foreground truncate max-w-[200px]">
+              <span itemProp="name">{post.title}</span>
+              <meta itemProp="position" content="3" />
             </li>
           </ol>
         </div>
       </nav>
 
-      <article className="py-12 lg:py-20">
+      <article className="py-8 md:py-12" ref={articleRef}>
         <div className="container">
-          <div className="grid lg:grid-cols-3 gap-12 lg:gap-16">
+          <div className="grid lg:grid-cols-3 gap-8">
             {/* Main Content */}
-            <div className="lg:col-span-2 space-y-12 lg:space-y-16">
-              {/* Explosive Header */}
-              <header className="space-y-6">
-                <Badge className="text-base px-4 py-2 gradient-gossip text-primary-foreground border-0 shadow-lg">
-                  {post.category} Scoop
+            <div className="lg:col-span-2">
+              {/* Header */}
+              <header className="mb-8">
+                <Badge className="mb-4 gradient-primary text-primary-foreground border-0">
+                  {post.category}
                 </Badge>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-black text-headline leading-tight bg-gradient-to-r from-gray-900 to-black bg-clip-text text-transparent">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-headline leading-tight mb-6">
                   {post.title}
                 </h1>
-                <p className="text-2xl md:text-3xl text-muted-foreground leading-relaxed italic font-light">
+                <p className="text-xl md:text-2xl text-muted-foreground mb-6 leading-relaxed">
                   {post.excerpt}
                 </p>
 
-                {/* Gossip Meta with Stats */}
-                <div className="flex flex-col sm:flex-row sm:items-center gap-6 pb-8 border-b border-divider bg-surface/50 rounded-2xl p-6">
-                  <div className="flex items-center gap-4">
+                {/* Author & Meta */}
+                <div className="flex flex-wrap items-center gap-4 pb-6 border-b border-divider">
+                  <div className="flex items-center gap-3">
                     {post.authorImage && (
-                      <div className="relative">
-                        <img src={post.authorImage} alt={post.author} className="w-16 h-16 md:w-20 md:h-20 rounded-2xl object-cover ring-4 ring-primary/20 shadow-xl" />
-                        <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-gradient-gossip rounded-full flex items-center justify-center">
-                          <Zap className="w-3 h-3 text-primary-foreground" />
-                        </div>
-                      </div>
+                      <img src={post.authorImage} alt={post.author} className="w-14 h-14 rounded-full object-cover ring-2 ring-primary/20" loading="lazy" />
                     )}
                     <div>
-                      <p className="font-bold text-xl text-headline">{post.author}</p>
-                      <p className="text-lg text-primary font-semibold">Chief Gossip Correspondent</p>
+                      <p className="font-semibold text-headline">{post.author}</p>
+                      <p className="text-sm text-muted-foreground">Staff Writer</p>
                     </div>
                   </div>
-                  <div className="flex flex-wrap items-center gap-6 text-base text-muted-foreground">
-                    <span className="flex items-center gap-2">
-                      <Calendar className="w-5 h-5" />
+                  <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                    <span className="flex items-center gap-1.5">
+                      <Calendar className="w-4 h-4" />
                       {formattedDate}
                     </span>
-                    <span className="flex items-center gap-2">
-                      <Clock className="w-5 h-5" />
+                    <span className="flex items-center gap-1.5">
+                      <Clock className="w-4 h-4" />
                       {post.readTime} min read
-                    </span>
-                    <span className="flex items-center gap-2">
-                      <Eye className="w-5 h-5" />
-                      {views.toLocaleString()} views
                     </span>
                   </div>
                 </div>
               </header>
 
-              {/* Immersive Hero Image */}
-              <figure className="relative mb-12 lg:mb-16">
-                <div className="aspect-[16/9] lg:aspect-[3/2] rounded-3xl overflow-hidden bg-gradient-to-br from-black/20 to-transparent shadow-2xl">
-                  <img
-                    src={post.image}
-                    alt={post.imageAlt}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 group-hover:scale-110"
-                    loading="eager"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              {/* Featured Image with WebP support */}
+              <figure className="mb-8">
+                <div className="aspect-video rounded-2xl overflow-hidden bg-muted shadow-lg">
+                  <picture>
+                    <source srcSet={post.image.replace(/.(jpg|jpeg|png)$/, '.webp')} type="image/webp" />
+                    <img
+                      src={post.image}
+                      alt={post.imageAlt}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      loading="eager"
+                      width="1200"
+                      height="675"
+                    />
+                  </picture>
                 </div>
-                <figcaption className="mt-4 text-lg font-medium text-muted-foreground text-center">
-                  {post.imageAlt} • Photo Credit: {post.photoCredit || 'The Scoop Kenya'}
+                <figcaption className="mt-3 text-sm text-muted-foreground text-center">
+                  {post.imageAlt}
                 </figcaption>
               </figure>
 
-              {/* Viral Share Bar - Sticky */}
-              <div className="sticky top-24 z-20 bg-surface/95 backdrop-blur-xl border border-divider/50 rounded-2xl p-4 mb-12 shadow-2xl">
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-                  <div className="flex items-center gap-3">
-                    <span className="text-lg font-semibold text-foreground">Spread the Tea:</span>
-                    <Button variant="ghost" size="icon" className="hover:bg-pink-500/20 hover:text-pink-500 h-12 w-12 rounded-xl" aria-label="Share on Facebook">
-                      <Facebook className="w-6 h-6" />
-                    </Button>
-                    <Button variant="ghost" size="icon" className="hover:bg-blue-500/20 hover:text-blue-500 h-12 w-12 rounded-xl" aria-label="Share on Twitter">
-                      <Twitter className="w-6 h-6" />
-                    </Button>
-                    <Button variant="ghost" size="icon" className="hover:bg-gradient-gossip hover:text-primary-foreground h-12 w-12 rounded-xl" aria-label="Share on Instagram">
-                      <Instagram className="w-6 h-6" />
-                    </Button>
-                    <Button variant="ghost" size="icon" className="hover:bg-red-500/20 hover:text-red-500 h-12 w-12 rounded-xl" aria-label="Share on TikTok">
-                      <Tiktok className="w-6 h-6" />
-                    </Button>
-                    <Button variant="ghost" size="icon" className="hover:bg-red-600/20 hover:text-red-600 h-12 w-12 rounded-xl" aria-label="Share on YouTube">
-                      <Youtube className="w-6 h-6" />
-                    </Button>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Button variant="ghost" size="icon" onClick={handleLike} className={`hover:bg-gradient-gossip ${isLiked ? 'bg-gradient-gossip text-primary-foreground shadow-lg' : 'hover:text-primary'}`}>
-                      <ThumbsUp className="w-5 h-5" />
-                    </Button>
-                    <span className="font-bold text-lg">{likes.toLocaleString()}</span>
-                    <Button variant="ghost" size="sm" className="gap-2 hover:bg-primary/10 hover:text-primary">
-                      <MessageCircle className="w-4 h-4" />
-                      Discuss
-                    </Button>
-                  </div>
+              {/* Share Bar - Sticky */}
+              <div className="flex items-center justify-between py-4 mb-8 border-y border-divider sticky top-20 bg-surface/95 backdrop-blur-sm z-10 rounded-lg px-4">
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-medium text-muted-foreground mr-2">Share:</span>
+                  <Button 
+                    variant="ghost" 
+                    size="icon" 
+                    className="hover:bg-primary/10 hover:text-primary" 
+                    aria-label="Share on Facebook"
+                    onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_blank')}
+                  >
+                    <Facebook className="w-5 h-5" />
+                  </Button>
+                  <Button 
+                    variant="ghost" 
+                    size="icon" 
+                    className="hover:bg-primary/10 hover:text-primary" 
+                    aria-label="Share on Twitter"
+                    onClick={() => window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(post.title)}`, '_blank')}
+                  >
+                    <Twitter className="w-5 h-5" />
+                  </Button>
+                  <Button 
+                    variant="ghost" 
+                    size="icon" 
+                    className="hover:bg-primary/10 hover:text-primary" 
+                    aria-label="Share on LinkedIn"
+                    onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(window.location.href)}&title=${encodeURIComponent(post.title)}`, '_blank')}
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </Button>
+                  <Button 
+                    variant="ghost" 
+                    size="icon" 
+                    className="hover:bg-primary/10 hover:text-primary" 
+                    aria-label="Share on Instagram"
+                    onClick={() => navigator.share ? navigator.share({ title: post.title, url: window.location.href }) : null}
+                  >
+                    <Instagram className="w-5 h-5" />
+                  </Button>
+                  <Button 
+                    variant="ghost" 
+                    size="icon" 
+                    className="hover:bg-primary/10 hover:text-primary" 
+                    aria-label="Copy link"
+                    onClick={() => {
+                      navigator.clipboard.writeText(window.location.href);
+                      alert('Link copied to clipboard!');
+                    }}
+                  >
+                    <Share2 className="w-5 h-5" />
+                  </Button>
                 </div>
+                <Button variant="ghost" size="sm" className="hover:bg-primary/10 hover:text-primary">
+                  <Bookmark className="w-4 h-4 mr-2" />
+                  Save
+                </Button>
               </div>
 
-              {/* Enhanced Prose with Gossip Style */}
+              {/* Quick Facts Sidebar for Mobile */}
+              {post.quickFacts && (
+                <div className="mb-8 p-6 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl border border-primary/20 lg:hidden">
+                  <h3 className="font-serif font-bold text-xl text-headline mb-4 flex items-center gap-2">
+                    <Zap className="w-5 h-5 text-primary" />
+                    Quick Facts
+                  </h3>
+                  <ul className="space-y-2 text-sm">
+                    {post.quickFacts.map((fact: string, index: number) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span>{fact}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Article Content - Rendered from Markdown */}
               <div 
-                className="prose prose-2xl max-w-none dark:prose-invert prose-headings:font-serif prose-headings:text-4xl md:prose-headings:text-5xl prose-headings:font-black prose-headings:bg-gradient-to-r prose-headings:from-gray-900 prose-headings:to-black prose-headings:bg-clip-text prose-headings:text-transparent prose-lead:text-2xl prose-a:no-underline prose-a:text-primary hover:prose-a:underline prose-strong:font-bold prose-strong:text-foreground prose-blockquote:border-l-primary prose-blockquote:border-l-4 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:not-italic prose-img:rounded-2xl prose-img:shadow-xl prose-video:rounded-3xl"
+                className="prose prose-xl max-w-none dark:prose-invert prose-headings:font-serif prose-headings:text-headline prose-headings:font-bold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-foreground prose-blockquote:border-l-primary prose-img:rounded-xl prose-img:shadow-md"
                 dangerouslySetInnerHTML={{ __html: post.htmlContent }}
               />
 
-              {/* Hot Tags */}
-              {post.tags.length > 0 && (
-                <div className="pt-12 border-t border-divider">
-                  <div className="flex flex-wrap items-center gap-3">
-                    <span className="text-xl font-bold text-foreground">Hot Tags:</span>
-                    {post.tags.map((tag) => (
-                      <Badge key={tag} variant="default" className="gradient-gossip text-primary-foreground text-base px-4 py-2 hover:scale-105 transition-all shadow-md">
-                        <Link to={`/tag/${tag.toLowerCase().replace(/ /g, '-')}`}>#{tag}</Link>
-                      </Badge>
-                    ))}
-                  </div>
+              {/* Engagement Poll */}
+              <div className="my-12 p-8 bg-surface rounded-2xl border border-divider shadow-lg">
+                <h3 className="font-serif font-bold text-2xl text-headline mb-4 flex items-center gap-2">
+                  <MessageCircle className="w-6 h-6 text-primary" />
+                  What's Your Take?
+                </h3>
+                <p className="text-muted-foreground mb-6">Do you believe this story?</p>
+                <div className="space-y-3">
+                  <Button variant="outline" className="w-full justify-start text-left h-auto py-4 hover:bg-primary/10 hover:border-primary">
+                    <span className="flex-1">Yes, totally believable</span>
+                    <span className="text-muted-foreground">0%</span>
+                  </Button>
+                  <Button variant="outline" className="w-full justify-start text-left h-auto py-4 hover:bg-primary/10 hover:border-primary">
+                    <span className="flex-1">Not sure, need more info</span>
+                    <span className="text-muted-foreground">0%</span>
+                  </Button>
+                  <Button variant="outline" className="w-full justify-start text-left h-auto py-4 hover:bg-primary/10 hover:border-primary">
+                    <span className="flex-1">No, seems fake</span>
+                    <span className="text-muted-foreground">0%</span>
+                  </Button>
                 </div>
-              )}
+              </div>
 
-              {/* Expanded Author Profile */}
-              <div className="p-8 lg:p-12 bg-gradient-to-br from-surface to-muted rounded-3xl shadow-2xl border border-divider/30">
-                <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8">
+              {/* Newsletter Signup */}
+              <div className="my-12 p-8 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl border border-primary/20">
+                <div className="text-center mb-6">
+                  <h3 className="font-serif font-bold text-3xl text-headline mb-3">Never Miss the Tea</h3>
+                  <p className="text-muted-foreground text-lg">Get the hottest gossip and entertainment news delivered to your inbox daily.</p>
+                </div>
+                <form className="flex flex-col sm:flex-row gap-3">
+                  <input 
+                    type="email" 
+                    placeholder="Enter your email" 
+                    className="flex-1 px-6 py-4 rounded-xl border border-divider bg-surface focus:outline-none focus:ring-2 focus:ring-primary"
+                    required
+                  />
+                  <Button type="submit" className="gradient-primary text-primary-foreground px-8 py-4 rounded-xl text-lg font-bold whitespace-nowrap">
+                    Subscribe Free
+                  </Button>
+                </form>
+                <p className="text-xs text-muted-foreground text-center mt-4">No spam. Unsubscribe anytime.</p>
+              </div>
+
+              {/* Tags */}
+              <div className="mt-8 pt-8 border-t border-divider">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-sm font-semibold text-muted-foreground">Tags:</span>
+                  {post.tags.map((tag) => (
+                    <Link key={tag} to={`/tag/${tag.toLowerCase().replace(/ /g, '-')}`}>
+                      <Badge variant="secondary" className="hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors">
+                        {tag}
+                      </Badge>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* Author Box */}
+              <div className="mt-8 p-6 bg-surface rounded-2xl border border-divider">
+                <div className="flex items-start gap-4">
                   {post.authorImage && (
-                    <div className="relative flex-shrink-0">
-                      <img src={post.authorImage} alt={post.author} className="w-32 h-32 lg:w-40 lg:h-40 rounded-3xl object-cover shadow-2xl ring-8 ring-primary/10" />
-                    </div>
+                    <img src={post.authorImage} alt={post.author} className="w-20 h-20 rounded-full object-cover" loading="lazy" />
                   )}
                   <div className="flex-1">
-                    <h3 className="text-3xl lg:text-4xl font-serif font-black text-headline mb-3">{post.author}</h3>
-                    <Badge className="text-xl px-6 py-3 gradient-gossip text-primary-foreground mb-4">Senior Entertainment Insider</Badge>
-                    <p className="text-xl leading-relaxed text-muted-foreground mb-6">
-                      Kenya's leading voice on celebrity scandals, red carpet drama, and exclusive East African entertainment scoops. Follow for the tea no one else spills.
+                    <h4 className="font-serif font-bold text-xl text-headline mb-1">{post.author}</h4>
+                    <p className="text-sm text-primary mb-3">Staff Writer</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                      Passionate journalist covering entertainment, lifestyle, and breaking news across Kenya and East Africa.
                     </p>
-                    <div className="flex gap-3">
-                      <Button className="gradient-primary text-primary-foreground px-8 py-6 rounded-2xl text-lg font-bold">
-                        Follow on X
+                    <div className="flex gap-2">
+                      <Button variant="outline" size="sm" className="hover:bg-primary/10">
+                        <Twitter className="w-4 h-4 mr-1" />
+                        Follow
                       </Button>
-                      <Button variant="outline" className="border-divider/50 px-8 py-6 rounded-2xl text-lg">
-                        View All Articles
+                      <Button variant="outline" size="sm" className="hover:bg-primary/10">
+                        <Instagram className="w-4 h-4 mr-1" />
+                        Follow
                       </Button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Quick Bites Section */}
-              <section className="space-y-8">
-                <h3 className="text-3xl lg:text-4xl font-serif font-black text-headline flex items-center gap-4">
-                  <Zap className="w-10 h-10 text-yellow-400 drop-shadow-lg" />
-                  Quick Bites You Can't Miss
+              {/* Comments Section */}
+              <div className="mt-12 pt-12 border-t border-divider">
+                <h3 className="text-2xl md:text-3xl font-serif font-bold text-headline mb-6 flex items-center gap-3">
+                  <MessageCircle className="w-7 h-7 text-primary" />
+                  Join the Conversation
                 </h3>
-                <GossipQuickBites />
-              </section>
-
-              {/* Must-Read Related Stories */}
-              {relatedPosts.length > 0 && (
-                <section className="pt-16 border-t border-divider">
-                  <h3 className="text-3xl lg:text-4xl font-serif font-black text-headline mb-10 flex items-center gap-4">
-                    <span className="w-2 h-10 gradient-gossip rounded-full shadow-lg" />
-                    More Tea: Related Stories
-                  </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8">
-                    {relatedPosts.map((relatedPost) => (
-                      <ArticleCard key={relatedPost.slug} post={relatedPost} variant="gossip" />
-                    ))}
-                  </div>
-                </section>
-              )}
-            </div>
-
-            {/* Enhanced Sticky Gossip Sidebar */}
-            <aside className="lg:col-span-1 space-y-8 lg:sticky lg:top-32 self-start">
-              <div className="space-y-6">
-                <TrendingSidebar gossipMode />
-
-                {/* Breaking News Ticker */}
-                <div className="bg-gradient-to-r from-rose-500/10 to-pink-500/10 border border-rose-500/30 rounded-3xl p-6">
-                  <h4 className="font-serif font-bold text-xl text-rose-600 mb-4 flex items-center gap-2">
-                    🚨 Breaking Now
-                  </h4>
-                  <div className="space-y-3">
-                    <p className="text-sm font-semibold text-foreground line-clamp-2">Crazy Kennar church drama unfolds in Kisumu!</p>
-                    <p className="text-sm font-semibold text-foreground line-clamp-2">Babu Owino vs Robert Alai: The showdown escalates</p>
-                  </div>
+                
+                {/* Disqus Integration */}
+                <div id="disqus_thread" className="min-h-[400px]">
+                  <noscript>Please enable JavaScript to view comments.</noscript>
                 </div>
-
-                {/* Premium Ad Space */}
-                <div className="bg-gradient-to-br from-orange-500/10 to-yellow-500/10 rounded-3xl p-8 text-center border-4 border-dashed border-orange-300/50 shadow-xl hover:shadow-2xl transition-all">
-                  <p className="text-xs uppercase tracking-wider text-orange-600 font-bold mb-3">🔥 SPONSOR</p>
-                  <div className="aspect-[4/5] bg-gradient-to-br from-orange-400/20 to-yellow-400/20 rounded-2xl flex items-center justify-center mb-4">
-                    <span className="text-2xl font-black text-orange-600 drop-shadow-lg">Ad Space</span>
-                  </div>
-                  <Button className="w-full gradient-orange text-orange-foreground font-bold py-4 rounded-xl text-base shadow-xl hover:shadow-2xl">
-                    Advertise Here
+                
+                {/* Alternative: Simple comment form placeholder */}
+                <div className="space-y-4">
+                  <textarea 
+                    placeholder="Share your thoughts..." 
+                    className="w-full px-6 py-4 rounded-xl border border-divider bg-surface focus:outline-none focus:ring-2 focus:ring-primary min-h-[120px]"
+                  />
+                  <Button className="gradient-primary text-primary-foreground px-6 py-3 rounded-xl">
+                    Post Comment
                   </Button>
                 </div>
+              </div>
 
-                {/* Social Proof Widget */}
-                <div className="bg-surface rounded-2xl p-6 border border-divider/50">
-                  <h5 className="font-bold text-lg mb-4">Join 500K+ Gossip Lovers</h5>
-                  <div className="grid grid-cols-2 gap-4 text-center">
-                    <Button variant="outline" className="w-full rounded-xl h-14">
-                      <Instagram className="w-6 h-6 mr-2" />
-                      Follow IG
+              {/* Related Articles */}
+              <section className="mt-12 pt-12 border-t border-divider">
+                <h3 className="text-2xl md:text-3xl font-serif font-bold text-headline mb-6 flex items-center gap-3">
+                  <span className="w-1 h-8 gradient-primary rounded-full" />
+                  Related Stories
+                </h3>
+                <div className="grid sm:grid-cols-2 gap-6">
+                  {relatedPosts.slice(0, 2).map((relatedPost) => (
+                    <ArticleCard key={relatedPost.slug} post={relatedPost} />
+                  ))}
+                </div>
+              </section>
+            </div>
+
+            {/* Enhanced Sidebar with Tabs */}
+            <aside className="lg:col-span-1 space-y-6">
+              <div className="sticky top-24 space-y-6">
+                {/* Tabbed Content */}
+                <div className="bg-surface rounded-2xl border border-divider overflow-hidden">
+                  <div className="flex border-b border-divider">
+                    <button
+                      onClick={() => setActiveTab("trending")}
+                      className={`flex-1 px-4 py-3 text-sm font-semibold transition-colors ${
+                        activeTab === "trending" 
+                          ? "bg-primary text-primary-foreground" 
+                          : "bg-surface text-muted-foreground hover:bg-muted"
+                      }`}
+                    >
+                      <TrendingUp className="w-4 h-4 inline mr-1" />
+                      Trending
+                    </button>
+                    <button
+                      onClick={() => setActiveTab("latest")}
+                      className={`flex-1 px-4 py-3 text-sm font-semibold transition-colors ${
+                        activeTab === "latest" 
+                          ? "bg-primary text-primary-foreground" 
+                          : "bg-surface text-muted-foreground hover:bg-muted"
+                      }`}
+                    >
+                      <Zap className="w-4 h-4 inline mr-1" />
+                      Latest
+                    </button>
+                  </div>
+                  <div className="p-4">
+                    {activeTab === "trending" ? <TrendingSidebar /> : <TrendingSidebar />}
+                  </div>
+                </div>
+
+                {/* Quick Facts for Desktop */}
+                {post.quickFacts && (
+                  <div className="hidden lg:block p-6 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl border border-primary/20">
+                    <h3 className="font-serif font-bold text-xl text-headline mb-4 flex items-center gap-2">
+                      <Zap className="w-5 h-5 text-primary" />
+                      Quick Facts
+                    </h3>
+                    <ul className="space-y-2 text-sm">
+                      {post.quickFacts.map((fact: string, index: number) => (
+                        <li key={index} className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>{fact}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {/* Ad Placeholder */}
+                <div className="bg-surface rounded-2xl p-6 text-center border border-divider">
+                  <p className="text-xs text-muted-foreground mb-2">ADVERTISEMENT</p>
+                  <div className="aspect-[4/5] bg-muted rounded-lg flex items-center justify-center">
+                    {/* Google AdSense Placeholder */}
+                    <ins className="adsbygoogle"
+                         style={{ display: 'block' }}
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <span className="text-muted-foreground">Ad Space</span>
+                  </div>
+                </div>
+
+                {/* Social Follow */}
+                <div className="bg-surface rounded-2xl p-6 border border-divider">
+                  <h4 className="font-serif font-bold text-lg text-headline mb-4">Follow The Scoop</h4>
+                  <div className="grid grid-cols-2 gap-3">
+                    <Button variant="outline" size="sm" className="h-12 hover:bg-primary/10">
+                      <Facebook className="w-5 h-5 mr-2" />
+                      Facebook
                     </Button>
-                    <Button variant="outline" className="w-full rounded-xl h-14">
-                      <Tiktok className="w-6 h-6 mr-2" />
-                      TikTok Tea
+                    <Button variant="outline" size="sm" className="h-12 hover:bg-primary/10">
+                      <Twitter className="w-5 h-5 mr-2" />
+                      Twitter
+                    </Button>
+                    <Button variant="outline" size="sm" className="h-12 hover:bg-primary/10">
+                      <Instagram className="w-5 h-5 mr-2" />
+                      Instagram
+                    </Button>
+                    <Button variant="outline" size="sm" className="h-12 hover:bg-primary/10">
+                      <Zap className="w-5 h-5 mr-2" />
+                      TikTok
                     </Button>
                   </div>
                 </div>
@@ -327,6 +487,24 @@ export default function ArticlePage() {
           </div>
         </div>
       </article>
+
+      {/* Disqus Configuration */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            var disqus_config = function () {
+              this.page.url = window.location.href;
+              this.page.identifier = '${post.slug}';
+            };
+            (function() {
+              var d = document, s = d.createElement('script');
+              s.src = 'https://thescoopkenya.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          `,
+        }}
+      />
     </Layout>
   );
 }
