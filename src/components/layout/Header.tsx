@@ -43,14 +43,10 @@ export function Header() {
         <div className="container py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center shadow-glow">
-                <span className="text-primary-foreground font-serif font-bold text-xl">S</span>
-              </div>
-              <div className="hidden sm:block">
-                <h1 className="text-xl font-serif font-bold text-headline leading-none">The Scoop</h1>
-                <p className="text-xs text-primary font-medium tracking-wider">KENYA</p>
-              </div>
+            <Link to="/" className="flex items-center">
+              <h1 className="text-2xl sm:text-3xl font-serif font-bold text-headline">
+                The Scoop <span className="text-primary">KE</span>
+              </h1>
             </Link>
 
             {/* Desktop Navigation */}
