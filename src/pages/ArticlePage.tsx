@@ -2,8 +2,8 @@ import { useParams, Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { TrendingSidebar } from "@/components/articles/TrendingSidebar";
 import { ArticleCard } from "@/components/articles/ArticleCard";
-import { getPostBySlug, getLatestPosts } from "@/data/posts";
-import { Clock, Calendar, Share2, Facebook, Twitter, Linkedin, ArrowLeft, Bookmark } from "lucide-react";
+import { getPostBySlug, getLatestPosts } from "@/lib/markdown";
+import { Clock, Calendar, Share2, Facebook, Twitter, Linkedin, Bookmark } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -170,24 +170,11 @@ export default function ArticlePage() {
                 </Button>
               </div>
 
-              {/* Article Content */}
-              <div className="prose-article text-lg">
-                {post.content.split('\n\n').map((paragraph, index) => {
-                  if (paragraph.startsWith('## ')) {
-                    return <h2 key={index} className="text-2xl font-serif font-bold text-headline mt-8 mb-4">{paragraph.replace('## ', '')}</h2>;
-                  }
-                  if (paragraph.startsWith('- ')) {
-                    return (
-                      <ul key={index} className="list-disc pl-6 mb-4 space-y-2">
-                        {paragraph.split('\n').map((item, i) => (
-                          <li key={i}>{item.replace('- ', '')}</li>
-                        ))}
-                      </ul>
-                    );
-                  }
-                  return <p key={index} className="mb-4 leading-relaxed">{paragraph}</p>;
-                })}
-              </div>
+              {/* Article Content - Rendered from Markdown */}
+              <div 
+                className="prose-article prose prose-lg max-w-none dark:prose-invert prose-headings:font-serif prose-headings:text-headline prose-a:text-primary prose-strong:text-foreground"
+                dangerouslySetInnerHTML={{ __html: post.htmlContent }}
+              />
 
               {/* Tags */}
               <div className="mt-8 pt-8 border-t border-divider">
