@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useEffect, useState } from "react";
 import { XIcon } from "@/components/XIcon";
+import { NewsletterForm } from "@/components/NewsletterForm";
 
 export default function ArticlePage() {
   const { slug } = useParams<{ slug: string }>();
@@ -170,11 +171,13 @@ export default function ArticlePage() {
           <div 
             className="prose prose-lg max-w-none dark:prose-invert 
               prose-headings:font-serif prose-headings:text-foreground 
-              prose-p:text-foreground prose-p:leading-relaxed
-              prose-a:text-primary prose-a:no-underline hover:prose-a:underline 
-              prose-strong:text-foreground 
-              prose-blockquote:border-l-primary prose-blockquote:text-muted-foreground
-              prose-img:rounded-xl"
+              prose-p:text-foreground prose-p:leading-[1.8] prose-p:mb-6
+              prose-a:text-primary prose-a:font-medium prose-a:no-underline hover:prose-a:underline 
+              prose-strong:text-foreground prose-strong:font-bold
+              prose-blockquote:border-l-primary prose-blockquote:text-muted-foreground prose-blockquote:pl-6
+              prose-img:rounded-xl prose-img:my-8
+              prose-li:mb-2 prose-li:leading-7
+              prose-ul:mb-6 prose-ol:mb-6"
             dangerouslySetInnerHTML={{ __html: post.htmlContent }}
           />
 
@@ -184,9 +187,11 @@ export default function ArticlePage() {
               <div className="flex flex-wrap items-center gap-2">
                 <span className="text-sm font-medium text-muted-foreground">Tags:</span>
                 {post.tags.map((tag) => (
-                  <Badge key={tag} variant="secondary" className="cursor-pointer hover:bg-primary hover:text-primary-foreground">
-                    {tag}
-                  </Badge>
+                  <Link key={tag} to={`/tag/${encodeURIComponent(tag)}`}>
+                    <Badge variant="secondary" className="cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors">
+                      {tag}
+                    </Badge>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -196,17 +201,7 @@ export default function ArticlePage() {
           <div className="mt-12 p-6 md:p-8 bg-muted rounded-xl">
             <h3 className="font-serif font-bold text-xl text-foreground mb-2">Stay Updated</h3>
             <p className="text-muted-foreground mb-4">Get the latest news delivered to your inbox.</p>
-            <form className="flex flex-col sm:flex-row gap-3">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="flex-1 px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                required
-              />
-              <Button type="submit" className="gradient-primary text-primary-foreground">
-                Subscribe
-              </Button>
-            </form>
+            <NewsletterForm />
           </div>
 
           {/* Related Articles */}

@@ -186,34 +186,88 @@
   }
 
   .prose-article p {
-    @apply mb-4;
+    @apply mb-6 text-base leading-7;
   }
 
   .prose-article h2 {
-    @apply text-2xl mt-8 mb-4;
+    @apply text-2xl mt-10 mb-5 font-bold;
   }
 
   .prose-article h3 {
-    @apply text-xl mt-6 mb-3;
+    @apply text-xl mt-8 mb-4 font-semibold;
   }
 
   .prose-article ul, .prose-article ol {
-    @apply ml-6 mb-4;
+    @apply ml-6 mb-6 space-y-2;
   }
 
   .prose-article li {
-    @apply mb-2;
+    @apply mb-2 leading-7;
   }
 
   .prose-article blockquote {
-    @apply border-l-4 border-primary pl-4 italic my-6 text-muted-foreground;
+    @apply border-l-4 border-primary pl-6 italic my-8 text-muted-foreground py-2;
   }
 
   .prose-article a {
-    @apply text-primary hover:underline;
+    @apply text-primary font-medium hover:underline;
   }
 
   .prose-article img {
-    @apply rounded-lg my-6;
+    @apply rounded-xl my-8;
   }
+
+  .prose-article strong {
+    @apply font-bold text-foreground;
+  }
+
+  .prose-article em {
+    @apply italic;
+  }
+}
+
+/* Enhanced prose styles for article pages */
+.prose a {
+  color: hsl(var(--primary)) !important;
+  font-weight: 500;
+}
+
+.prose a:hover {
+  text-decoration: underline;
+}
+
+.prose strong {
+  color: hsl(var(--foreground)) !important;
+  font-weight: 700;
+}
+
+.prose p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.prose h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose ul, .prose ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+.prose blockquote {
+  border-left-color: hsl(var(--primary));
+  padding-left: 1.5rem;
+  margin: 2rem 0;
 }

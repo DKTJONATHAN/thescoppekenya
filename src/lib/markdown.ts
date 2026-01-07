@@ -126,6 +126,61 @@ export function searchPosts(query: string): Post[] {
   );
 }
 
+export function getPostsByTag(tag: string): Post[] {
+  const normalizedTag = tag.toLowerCase().trim();
+  return getAllPosts().filter(post => 
+    post.tags.some(t => t.toLowerCase() === normalizedTag)
+  );
+}
+
+export function getAllTags(): string[] {
+  const allTags = getAllPosts().flatMap(post => post.tags);
+  return [...new Set(allTags)].sort();
+}
+
+export function generateSitemap(): string {
+  const baseUrl = 'https://thescoopkenya.co.ke';
+  const posts = getAllPosts();
+  
+  type SitemapUrl = { loc: string; priority: string; changefreq: string; lastmod?: string };
+  
+  const staticPages: SitemapUrl[] = [
+    { loc: '/', priority: '1.0', changefreq: 'daily' },
+    { loc: '/about', priority: '0.5', changefreq: 'monthly' },
+    { loc: '/contact', priority: '0.5', changefreq: 'monthly' },
+    { loc: '/privacy', priority: '0.3', changefreq: 'monthly' },
+    { loc: '/terms', priority: '0.3', changefreq: 'monthly' },
+  ];
+
+  const postUrls: SitemapUrl[] = posts.map(post => ({
+    loc: `/article/${post.slug}`,
+    lastmod: post.date,
+    priority: '0.8',
+    changefreq: 'weekly'
+  }));
+
+  const categoryUrls: SitemapUrl[] = categories.map(cat => ({
+    loc: `/category/${cat.slug}`,
+    priority: '0.6',
+    changefreq: 'daily'
+  }));
+
+  const allUrls: SitemapUrl[] = [...staticPages, ...postUrls, ...categoryUrls];
+
+  const urlElements = allUrls.map(url => `
+  <url>
+    <loc>${baseUrl}${url.loc}</loc>
+    ${url.lastmod ? `<lastmod>${url.lastmod}</lastmod>` : ''}
+    <changefreq>${url.changefreq}</changefreq>
+    <priority>${url.priority}</priority>
+  </url>`).join('');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urlElements}
+</urlset>`;
+}
+
 export const categories = [
   { name: "News", slug: "news", description: "Breaking news and current affairs from Kenya and beyond" },
   { name: "Entertainment", slug: "entertainment", description: "Celebrity news, music, movies, and pop culture" },

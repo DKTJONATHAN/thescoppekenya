@@ -78,10 +78,12 @@ const Index = () => {
                 Hot Topics:
               </div>
               <div className="flex-1 flex gap-2 overflow-x-auto no-scrollbar py-1">
-                {['#Politics', '#CelebrityGossip', '#GenZ', '#NairobiNightlife', '#Rugby7s'].map(tag => (
-                  <Badge key={tag} variant="secondary" className="hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors whitespace-nowrap px-4 py-1.5 rounded-full text-foreground dark:text-white">
-                    {tag}
-                  </Badge>
+                {['Politics', 'CelebrityGossip', 'GenZ', 'NairobiNightlife', 'Rugby7s'].map(tag => (
+                  <Link key={tag} to={`/tag/${encodeURIComponent(tag)}`}>
+                    <Badge variant="secondary" className="hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors whitespace-nowrap px-4 py-1.5 rounded-full text-foreground dark:text-white">
+                      #{tag}
+                    </Badge>
+                  </Link>
                 ))}
               </div>
             </div>
