@@ -35,7 +35,7 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    const host = "thescoopkenya.co.ke";
+    const host = "thescoopkenya.vercel.app";
     const keyLocation = `https://${host}/${apiKey}.txt`;
 
     console.log(`Submitting ${urls.length} URLs to IndexNow:`, urls);
