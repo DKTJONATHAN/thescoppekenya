@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { getAllPosts, Post, categories } from "@/lib/markdown";
-import { Lock, Plus, Eye, Save, FileText, LogOut, Calendar, Tag, User, Image, AlignLeft, Star, Send, Loader2 } from "lucide-react";
+import { Lock, Plus, Eye, Save, FileText, LogOut, Calendar, Tag, User, Image, AlignLeft, Star, Send, Loader2, Pencil, Trash2, X } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
@@ -27,6 +27,7 @@ export default function AdminPage() {
   const [activeTab, setActiveTab] = useState<"create" | "manage">("create");
   const [isSubmittingToIndex, setIsSubmittingToIndex] = useState(false);
   const { toast } = useToast();
+  const [editingPost, setEditingPost] = useState<Post | null>(null);
   const [newPost, setNewPost] = useState({
     title: "",
     slug: "",
@@ -143,6 +144,97 @@ ${newPost.content}`;
       image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800",
       author: "The Scoop KE", tags: "", featured: false
     });
+    setEditingPost(null);
+  };
+
+  const handleEditPost = (post: Post) => {
+    setEditingPost(post);
+    setNewPost({
+      title: post.title,
+      slug: post.slug,
+      excerpt: post.excerpt,
+      category: post.category,
+      content: post.content,
+      image: post.image,
+      author: post.author,
+      tags: post.tags.join(", "),
+      featured: post.featured || false
+    });
+    setActiveTab("create");
+  };
+
+  const handleUpdatePost = async () => {
+    if (!newPost.title || !newPost.content) {
+      alert("Please fill in the title and content.");
+      return;
+    }
+
+    const postSlug = newPost.slug || generateSlug(newPost.title);
+
+    const markdown = `---
+title: "${newPost.title}"
+slug: "${postSlug}"
+excerpt: "${newPost.excerpt}"
+image: "${newPost.image}"
+category: "${newPost.category}"
+author: "${newPost.author}"
+date: "${editingPost?.date || new Date().toISOString().split('T')[0]}"
+tags: [${newPost.tags.split(',').map(t => `"${t.trim()}"`).filter(t => t !== '""').join(', ')}]
+featured: ${newPost.featured}
+---
+
+${newPost.content}`;
+
+    // Create downloadable file
+    const blob = new Blob([markdown], { type: 'text/markdown' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${postSlug}.md`;
+    a.click();
+    URL.revokeObjectURL(url);
+
+    // Submit to IndexNow for re-indexing
+    await submitToIndexNow(postSlug);
+
+    toast({
+      title: "Post updated!",
+      description: "Replace the old file in content/posts/ with the downloaded file and redeploy.",
+    });
+    resetForm();
+  };
+
+  const handleDeletePost = (post: Post) => {
+    const confirmed = window.confirm(`Are you sure you want to delete "${post.title}"?\n\nYou will need to manually delete the file: content/posts/${post.slug}.md`);
+    
+    if (confirmed) {
+      // Create a deletion instruction file
+      const instructions = `DELETE THIS POST
+==================
+Post: ${post.title}
+Slug: ${post.slug}
+File to delete: content/posts/${post.slug}.md
+
+Instructions:
+1. Delete the file: content/posts/${post.slug}.md
+2. Commit and push the changes
+3. Redeploy your site
+
+Generated: ${new Date().toISOString()}`;
+
+      const blob = new Blob([instructions], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `DELETE-${post.slug}.txt`;
+      a.click();
+      URL.revokeObjectURL(url);
+
+      toast({
+        title: "Deletion instructions downloaded",
+        description: `Delete content/posts/${post.slug}.md and redeploy.`,
+      });
+    }
   };
 
   if (!isAuthenticated) {
@@ -221,9 +313,20 @@ ${newPost.content}`;
 
         {activeTab === "create" && (
           <div className="bg-surface rounded-2xl p-6 md:p-8 border border-divider shadow-soft">
-            <h2 className="text-xl font-serif font-bold text-headline mb-6 flex items-center gap-2">
-              <Plus className="w-5 h-5 text-primary" /> Create New Post
-            </h2>
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-xl font-serif font-bold text-headline flex items-center gap-2">
+                {editingPost ? (
+                  <><Pencil className="w-5 h-5 text-primary" /> Edit Post</>
+                ) : (
+                  <><Plus className="w-5 h-5 text-primary" /> Create New Post</>
+                )}
+              </h2>
+              {editingPost && (
+                <Button variant="ghost" size="sm" onClick={resetForm} className="text-muted-foreground">
+                  <X className="w-4 h-4 mr-1" /> Cancel Edit
+                </Button>
+              )}
+            </div>
 
             <div className="space-y-6">
               {/* Title & Slug */}
@@ -359,13 +462,22 @@ ${newPost.content}`;
                 </label>
                 <div className="flex gap-3">
                   <Button variant="outline" onClick={resetForm}>
-                    Clear Form
+                    {editingPost ? "Cancel" : "Clear Form"}
                   </Button>
-                  <Button onClick={handleCreatePost} className="gradient-primary text-primary-foreground" disabled={isSubmittingToIndex}>
+                  <Button 
+                    onClick={editingPost ? handleUpdatePost : handleCreatePost} 
+                    className="gradient-primary text-primary-foreground" 
+                    disabled={isSubmittingToIndex}
+                  >
                     {isSubmittingToIndex ? (
                       <>
                         <Loader2 className="w-4 h-4 mr-2 animate-spin" />
                         Processing...
+                      </>
+                    ) : editingPost ? (
+                      <>
+                        <Save className="w-4 h-4 mr-2" />
+                        Update & Download
                       </>
                     ) : (
                       <>
@@ -421,12 +533,22 @@ ${newPost.content}`;
                         </div>
                       </div>
                     </div>
-                    <Button variant="outline" size="sm" asChild className="flex-shrink-0">
-                      <a href={`/article/${post.slug}`} target="_blank" rel="noopener noreferrer">
-                        <Eye className="w-4 h-4 mr-2" />
-                        View
-                      </a>
-                    </Button>
+                    <div className="flex gap-2 flex-shrink-0">
+                      <Button variant="outline" size="sm" onClick={() => handleEditPost(post)}>
+                        <Pencil className="w-4 h-4 mr-2" />
+                        Edit
+                      </Button>
+                      <Button variant="outline" size="sm" onClick={() => handleDeletePost(post)} className="text-destructive hover:text-destructive">
+                        <Trash2 className="w-4 h-4 mr-2" />
+                        Delete
+                      </Button>
+                      <Button variant="outline" size="sm" asChild>
+                        <a href={`/article/${post.slug}`} target="_blank" rel="noopener noreferrer">
+                          <Eye className="w-4 h-4 mr-2" />
+                          View
+                        </a>
+                      </Button>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -434,7 +556,7 @@ ${newPost.content}`;
 
             <div className="mt-6 p-4 bg-muted rounded-xl">
               <p className="text-sm text-muted-foreground">
-                <strong>Note:</strong> To edit or delete posts, modify the markdown files in the <code className="bg-background px-1.5 py-0.5 rounded">content/posts/</code> folder and redeploy your site.
+                <strong>Tip:</strong> Click "Edit" to load a post into the form, make changes, then download and replace the file in <code className="bg-background px-1.5 py-0.5 rounded">content/posts/</code>.
               </p>
             </div>
           </div>
