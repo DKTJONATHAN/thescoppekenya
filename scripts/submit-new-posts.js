@@ -1,127 +1,78 @@
 #!/usr/bin/env node
 
 /**
- * Build-time script that detects new posts and submits them to IndexNow.
+ * Build-time script that detects new posts and submits them to IndexJump.
  * This runs during Vercel build to automatically index new content.
  */
 
-import fs from 'fs';
+import { execSync } from 'child_process';
 import path from 'path';
-import { fileURLToPath } from 'url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const INDEXJUMP_API_KEY = process.env.INDEXJUMP_API_KEY;
+const SITE_URL = 'https://thescoopkenya.vercel.app';
 
-const ROOT_DIR = path.join(__dirname, '..');
-const POSTS_DIR = path.join(ROOT_DIR, 'content/posts');
-const CACHE_FILE = path.join(ROOT_DIR, '.posts-cache.json');
-const HOST = process.env.SITE_HOST || 'thescoopkenya.vercel.app';
-
-async function getExistingPosts() {
-  try {
-    if (fs.existsSync(CACHE_FILE)) {
-      const cache = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf-8'));
-      return new Set(cache.posts || []);
-    }
-  } catch (e) {
-    console.log('No cache file found, treating all posts as new');
-  }
-  return new Set();
+if (!INDEXJUMP_API_KEY) {
+  console.log('⚠️  INDEXJUMP_API_KEY environment variable not set, skipping indexing');
+  process.exit(0);
 }
 
-function getCurrentPosts() {
-  const files = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith('.md'));
-  return files.map(f => f.replace('.md', ''));
-}
-
-function extractSlugFromFile(filename) {
-  const filePath = path.join(POSTS_DIR, filename);
-  const content = fs.readFileSync(filePath, 'utf-8');
-  
-  // Extract slug from frontmatter
-  const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---/);
-  if (frontmatterMatch) {
-    const slugMatch = frontmatterMatch[1].match(/slug:\s*["']?([^"'\n]+)["']?/);
-    if (slugMatch) {
-      return slugMatch[1].trim();
-    }
-  }
-  
-  // Fallback to filename
-  return filename.replace('.md', '');
-}
-
-async function submitToIndexNow(urls) {
-  const apiKey = process.env.INDEXNOW_API_KEY;
-  
-  if (!apiKey) {
-    console.log('⚠️  INDEXNOW_API_KEY not set, skipping submission');
-    return false;
-  }
-
-  const payload = {
-    host: HOST,
-    key: apiKey,
-    keyLocation: `https://${HOST}/${apiKey}.txt`,
-    urlList: urls
-  };
-
-  console.log(`📤 Submitting ${urls.length} URL(s) to IndexNow:`, urls);
-
-  try {
-    const response = await fetch('https://indexjump.com/indexnow', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
-    });
-
-    if (response.status === 200 || response.status === 202) {
-      console.log('✅ Successfully submitted to IndexNow');
-      return true;
-    } else {
-      console.error(`❌ IndexNow API returned status ${response.status}`);
-      return false;
-    }
-  } catch (error) {
-    console.error('❌ Failed to submit to IndexNow:', error.message);
-    return false;
-  }
-}
+console.log('🔍 Checking for new posts...');
 
 async function main() {
-  console.log('\n🔍 Checking for new posts to index...\n');
+  try {
+    const gitOutput = execSync('git diff --name-only HEAD~1 HEAD', { 
+      encoding: 'utf8'
+    }).trim();
 
-  const existingPosts = await getExistingPosts();
-  const currentPostFiles = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith('.md'));
-  
-  const newPosts = [];
-  const allSlugs = [];
-
-  for (const file of currentPostFiles) {
-    const slug = extractSlugFromFile(file);
-    allSlugs.push(slug);
-    
-    if (!existingPosts.has(slug)) {
-      newPosts.push(slug);
+    if (!gitOutput) {
+      console.log('📝 No changes detected');
+      process.exit(0);
     }
-  }
 
-  if (newPosts.length === 0) {
-    console.log('📝 No new posts detected\n');
-  } else {
-    console.log(`📝 Found ${newPosts.length} new post(s):`, newPosts);
-    
-    const urls = newPosts.map(slug => `https://${HOST}/article/${slug}`);
-    await submitToIndexNow(urls);
-  }
+    const changedFiles = gitOutput.split('\n');
+    const newPostFiles = changedFiles.filter(file => 
+      file.includes('content/posts/') && file.endsWith('.md')
+    );
 
-  // Update cache
-  fs.writeFileSync(CACHE_FILE, JSON.stringify({ 
-    posts: allSlugs,
-    lastUpdated: new Date().toISOString()
-  }, null, 2));
-  
-  console.log('💾 Cache updated\n');
+    if (newPostFiles.length === 0) {
+      console.log('📝 No new posts found');
+      process.exit(0);
+    }
+
+    console.log(`🚀 Found ${newPostFiles.length} new posts, submitting...`);
+
+    let successful = 0;
+    for (const file of newPostFiles) {
+      const slug = path.basename(file, '.md').toLowerCase();
+      const url = `${SITE_URL}/article/${slug}`;
+
+      try {
+        const indexUrl = `https://api.indexjump.com/index?url=${encodeURIComponent(url)}&token=${INDEXJUMP_API_KEY}`;
+        const response = await fetch(indexUrl);
+
+        if (response.ok) {
+          console.log(`✅ Indexed: ${url}`);
+          successful++;
+        } else {
+          const result = await response.text();
+          console.log(`❌ Failed: ${url} - ${result}`);
+        }
+
+        // Small delay between requests
+        await new Promise(resolve => setTimeout(resolve, 200));
+
+      } catch (error) {
+        console.log(`❌ Error: ${url} - ${error.message}`);
+      }
+    }
+
+    console.log(`\n📤 Successfully indexed ${successful}/${newPostFiles.length} posts`);
+
+  } catch (error) {
+    // Git might fail on first commit or shallow clone
+    console.log('⚠️  Git error (possibly first build):', error.message);
+    console.log('📝 Skipping indexing for this build');
+  }
 }
 
 main().catch(console.error);
