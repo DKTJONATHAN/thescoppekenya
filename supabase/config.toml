@@ -1,1 +1,4 @@
 project_id = "iqdjucfzdcquwmiwtlil"
+
+[functions.index-now]
+verify_jwt = false
