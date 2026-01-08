@@ -20,7 +20,7 @@ Head coach has selected a balanced squad featuring:
 - **Young talents** ready to prove themselves
 - **European-based players** adding international experience
 
-## Group Stage Fixtures
+## Group Stages Fixtures
 
 Kenya has been drawn in a challenging group:
 
