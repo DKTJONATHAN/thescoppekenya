@@ -1,4 +1,5 @@
 {
+  "buildCommand": "node scripts/submit-new-posts.js && vite build",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
