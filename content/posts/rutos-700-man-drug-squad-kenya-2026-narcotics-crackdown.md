@@ -2,7 +2,7 @@
 title: "Ruto's 700-Man Drug Squad: Kenya's Massive 2026 Crackdown on Booze and Narcotics Lords"
 slug: "rutos-700-man-drug-squad-kenya-2026-narcotics-crackdown"
 excerpt: "President Ruto launches Kenya's largest ever anti-narcotics unit with 700 elite officers targeting drug barons, changaa cartels, and their money networks across all counties as Gen Z demands real results."
-image: "https://images.unsplash.com/photo-1576092768241-dec2318799f5?w=800"
+image: "https://i.postimg.cc/BvB87HNV/images-(1)-(1).jpg"
 category: "politics"
 author: "Jonathan Mwaniki"
 date: "2026-01-08"
