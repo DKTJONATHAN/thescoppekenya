@@ -5,7 +5,7 @@ const corsHeaders = {
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
 };
 
-interface IndexNowRequest {
+interface IndexJumpRequest {
   urls: string[];
 }
 
@@ -16,17 +16,17 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
-    const apiKey = Deno.env.get("INDEXNOW_API_KEY");
+    const apiKey = Deno.env.get("INDEXJUMP_API_KEY");
     
     if (!apiKey) {
-      console.error("INDEXNOW_API_KEY not configured");
+      console.error("INDEXJUMP_API_KEY not configured");
       return new Response(
-        JSON.stringify({ error: "IndexNow API key not configured" }),
+        JSON.stringify({ error: "IndexJump API key not configured" }),
         { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
       );
     }
 
-    const { urls }: IndexNowRequest = await req.json();
+    const { urls }: IndexJumpRequest = await req.json();
 
     if (!urls || urls.length === 0) {
       return new Response(
@@ -35,47 +35,45 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    const host = "thescoopkenya.vercel.app";
-    const keyLocation = `https://${host}/${apiKey}.txt`;
+    console.log(`Submitting ${urls.length} URLs to IndexJump:`, urls);
 
-    console.log(`Submitting ${urls.length} URLs to IndexNow:`, urls);
+    const results: { url: string; success: boolean; error?: string }[] = [];
 
-    // Submit to IndexNow API (supports multiple search engines)
-    const indexNowPayload = {
-      host,
-      key: apiKey,
-      keyLocation,
-      urlList: urls.map(url => url.startsWith('http') ? url : `https://${host}${url}`)
-    };
+    for (const url of urls) {
+      const fullUrl = url.startsWith('http') ? url : `https://thescoopkenya.vercel.app${url}`;
+      
+      try {
+        const indexUrl = `https://api.indexjump.com/index?url=${encodeURIComponent(fullUrl)}&token=${apiKey}`;
+        const response = await fetch(indexUrl);
 
-    const response = await fetch("https://indexjump.com/indexnow", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(indexNowPayload)
-    });
+        if (response.ok) {
+          console.log(`✅ Indexed: ${fullUrl}`);
+          results.push({ url: fullUrl, success: true });
+        } else {
+          const errorText = await response.text();
+          console.log(`❌ Failed: ${fullUrl} - ${errorText}`);
+          results.push({ url: fullUrl, success: false, error: errorText });
+        }
 
-    const status = response.status;
-    console.log(`IndexNow API response status: ${status}`);
-
-    if (status === 200 || status === 202) {
-      return new Response(
-        JSON.stringify({ 
-          success: true, 
-          message: `Successfully submitted ${urls.length} URL(s) to IndexNow`,
-          submittedUrls: indexNowPayload.urlList
-        }),
-        { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }
-      );
-    } else {
-      const errorText = await response.text();
-      console.error(`IndexNow API error: ${status} - ${errorText}`);
-      return new Response(
-        JSON.stringify({ error: `IndexNow API returned status ${status}`, details: errorText }),
-        { status: response.status, headers: { "Content-Type": "application/json", ...corsHeaders } }
-      );
+        // Small delay between requests
+        await new Promise(resolve => setTimeout(resolve, 200));
+      } catch (error) {
+        const errorMessage = error instanceof Error ? error.message : "Unknown error";
+        console.log(`❌ Error: ${fullUrl} - ${errorMessage}`);
+        results.push({ url: fullUrl, success: false, error: errorMessage });
+      }
     }
+
+    const successful = results.filter(r => r.success).length;
+
+    return new Response(
+      JSON.stringify({ 
+        success: true, 
+        message: `Submitted ${successful}/${urls.length} URL(s) to IndexJump`,
+        results
+      }),
+      { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }
+    );
   } catch (error: unknown) {
     const errorMessage = error instanceof Error ? error.message : "Unknown error";
     console.error("Error in index-now function:", errorMessage);
