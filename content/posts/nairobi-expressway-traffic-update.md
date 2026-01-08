@@ -4,7 +4,7 @@ slug: "nairobi-expressway-traffic-update"
 excerpt: "The modern highway continues to transform commuting patterns in the capital city."
 image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800"
 category: "news"
-author: "Peter Kariuki"
+author: "Jonathan Mwaniki"
 date: "2024-01-11"
 tags: ["infrastructure", "nairobi", "transport"]
 featured: false
