@@ -27,3 +27,4 @@ Commuters report significant time savings:
 > "What used to take me 2 hours now takes just 20 minutes," says regular user Jane Akinyi.
 
 The expressway continues to prove its worth as a critical piece of Nairobi's infrastructure.
+for more read at Jonathanmwaniki.co.ke 
