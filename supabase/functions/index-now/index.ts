@@ -48,7 +48,7 @@ const handler = async (req: Request): Promise<Response> => {
       urlList: urls.map(url => url.startsWith('http') ? url : `https://${host}${url}`)
     };
 
-    const response = await fetch("https://api.indexnow.org/indexnow", {
+    const response = await fetch("https://indexjump.com/indexnow", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

@@ -69,7 +69,7 @@ async function submitToIndexNow(urls) {
   console.log(`📤 Submitting ${urls.length} URL(s) to IndexNow:`, urls);
 
   try {
-    const response = await fetch('https://api.indexnow.org/indexnow', {
+    const response = await fetch('https://indexjump.com/indexnow', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
