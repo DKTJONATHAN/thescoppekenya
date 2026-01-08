@@ -2,7 +2,9 @@ import { useState, useEffect } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { getAllPosts, Post, categories } from "@/lib/markdown";
-import { Lock, Plus, Eye, Save, FileText, LogOut, Calendar, Tag, User, Image, AlignLeft, Star } from "lucide-react";
+import { Lock, Plus, Eye, Save, FileText, LogOut, Calendar, Tag, User, Image, AlignLeft, Star, Send, Loader2 } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 // Simple hash function for PIN verification
 const hashPin = (pin: string): string => {
@@ -23,6 +25,8 @@ export default function AdminPage() {
   const [error, setError] = useState("");
   const [posts, setPosts] = useState<Post[]>([]);
   const [activeTab, setActiveTab] = useState<"create" | "manage">("create");
+  const [isSubmittingToIndex, setIsSubmittingToIndex] = useState(false);
+  const { toast } = useToast();
   const [newPost, setNewPost] = useState({
     title: "",
     slug: "",
@@ -66,15 +70,43 @@ export default function AdminPage() {
     return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
   };
 
-  const handleCreatePost = () => {
+  const submitToIndexNow = async (slug: string) => {
+    setIsSubmittingToIndex(true);
+    try {
+      const { data, error } = await supabase.functions.invoke('index-now', {
+        body: { urls: [`/article/${slug}`] }
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Submitted to IndexNow",
+        description: "Your post URL has been submitted for indexing.",
+      });
+      console.log("IndexNow response:", data);
+    } catch (err) {
+      console.error("IndexNow submission error:", err);
+      toast({
+        title: "IndexNow submission failed",
+        description: "The post was created but indexing failed. You can retry later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmittingToIndex(false);
+    }
+  };
+
+  const handleCreatePost = async () => {
     if (!newPost.title || !newPost.content) {
       alert("Please fill in the title and content.");
       return;
     }
 
+    const postSlug = newPost.slug || generateSlug(newPost.title);
+
     const markdown = `---
 title: "${newPost.title}"
-slug: "${newPost.slug || generateSlug(newPost.title)}"
+slug: "${postSlug}"
 excerpt: "${newPost.excerpt}"
 image: "${newPost.image}"
 category: "${newPost.category}"
@@ -91,11 +123,17 @@ ${newPost.content}`;
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `${newPost.slug || generateSlug(newPost.title)}.md`;
+    a.download = `${postSlug}.md`;
     a.click();
     URL.revokeObjectURL(url);
 
-    alert('Post markdown file downloaded! Add it to content/posts/ folder and redeploy.');
+    // Submit to IndexNow for automatic indexing
+    await submitToIndexNow(postSlug);
+
+    toast({
+      title: "Post created!",
+      description: "Markdown file downloaded. Add it to content/posts/ and redeploy.",
+    });
     resetForm();
   };
 
@@ -323,9 +361,18 @@ ${newPost.content}`;
                   <Button variant="outline" onClick={resetForm}>
                     Clear Form
                   </Button>
-                  <Button onClick={handleCreatePost} className="gradient-primary text-primary-foreground">
-                    <Save className="w-4 h-4 mr-2" />
-                    Download Markdown
+                  <Button onClick={handleCreatePost} className="gradient-primary text-primary-foreground" disabled={isSubmittingToIndex}>
+                    {isSubmittingToIndex ? (
+                      <>
+                        <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                        Processing...
+                      </>
+                    ) : (
+                      <>
+                        <Save className="w-4 h-4 mr-2" />
+                        Create & Download
+                      </>
+                    )}
                   </Button>
                 </div>
               </div>
