@@ -35,6 +35,48 @@ export type Database = {
         }
         Relationships: []
       }
+      sports_ai_content: {
+        Row: {
+          away_team: string | null
+          competition_code: string | null
+          content: string
+          content_type: string
+          expires_at: string
+          generated_at: string
+          headline: string
+          home_team: string | null
+          id: string
+          match_date: string | null
+          match_id: string
+        }
+        Insert: {
+          away_team?: string | null
+          competition_code?: string | null
+          content: string
+          content_type: string
+          expires_at?: string
+          generated_at?: string
+          headline: string
+          home_team?: string | null
+          id?: string
+          match_date?: string | null
+          match_id: string
+        }
+        Update: {
+          away_team?: string | null
+          competition_code?: string | null
+          content?: string
+          content_type?: string
+          expires_at?: string
+          generated_at?: string
+          headline?: string
+          home_team?: string | null
+          id?: string
+          match_date?: string | null
+          match_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
