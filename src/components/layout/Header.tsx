@@ -54,7 +54,7 @@ export function Header() {
               {categories.map((category) => (
                 <Link
                   key={category.slug}
-                  to={`/category/${category.slug}`}
+                  to={category.slug === 'sports' ? '/sports' : `/category/${category.slug}`}
                   className="px-4 py-2 text-sm font-medium text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-smooth"
                 >
                   {category.name}
@@ -97,7 +97,7 @@ export function Header() {
               {categories.map((category) => (
                 <Link
                   key={category.slug}
-                  to={`/category/${category.slug}`}
+                  to={category.slug === 'sports' ? '/sports' : `/category/${category.slug}`}
                   className="block px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-smooth"
                   onClick={() => setIsMenuOpen(false)}
                 >

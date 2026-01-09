@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams, Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { LeagueSelector } from "@/components/sports/LeagueSelector";
@@ -7,19 +8,34 @@ import { FixturesList } from "@/components/sports/FixturesList";
 import { StandingsTable } from "@/components/sports/StandingsTable";
 import { AIHeadlinesBanner } from "@/components/sports/AIHeadlinesBanner";
 import { SportsNewsFeed } from "@/components/sports/SportsNewsFeed";
+import { KenyaSportsSection } from "@/components/sports/KenyaSportsSection";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Match, useMatchPreview, useMatchReview } from "@/hooks/useSportsData";
+import { Match, useMatchPreview, useMatchReview, usePreloadSportsData, COMPETITIONS } from "@/hooks/useSportsData";
 import { Button } from "@/components/ui/button";
-import { Sparkles, Loader2 } from "lucide-react";
+import { Sparkles, Loader2, Activity, Calendar, Trophy, Newspaper } from "lucide-react";
 
 export default function SportsPage() {
-  const [selectedLeague, setSelectedLeague] = useState("PL");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const initialLeague = searchParams.get("league") || "KPL";
+  const [selectedLeague, setSelectedLeague] = useState(initialLeague);
   const [selectedMatch, setSelectedMatch] = useState<Match | null>(null);
   const [aiContent, setAiContent] = useState<{ headline: string; content: string } | null>(null);
   const [isGeneratingAI, setIsGeneratingAI] = useState(false);
 
   const previewMutation = useMatchPreview();
   const reviewMutation = useMatchReview();
+
+  // Preload data for better performance
+  usePreloadSportsData();
+
+  // Sync URL with selected league
+  useEffect(() => {
+    setSearchParams({ league: selectedLeague }, { replace: true });
+  }, [selectedLeague, setSearchParams]);
+
+  const handleLeagueSelect = (code: string) => {
+    setSelectedLeague(code);
+  };
 
   const handleMatchClick = (match: Match) => {
     setSelectedMatch(match);
@@ -43,6 +59,8 @@ export default function SportsPage() {
     }
   };
 
+  const isKenyaSelected = selectedLeague === "KPL";
+
   const sportsSchema = {
     "@context": "https://schema.org",
     "@type": "SportsEvent",
@@ -64,18 +82,27 @@ export default function SportsPage() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
             <div>
               <h1 className="text-3xl md:text-4xl font-bold mb-2">
-                Sports Hub ⚽
+                Sports Hub
               </h1>
               <p className="text-muted-foreground">
                 Live scores, standings, fixtures & AI-powered match analysis
               </p>
+            </div>
+            <div className="flex items-center gap-2">
+              <Link to="/sports/live">
+                <Button variant="outline" className="gap-2">
+                  <Activity className="w-4 h-4" />
+                  <span className="hidden sm:inline">Live Scores</span>
+                  <span className="sm:hidden">Live</span>
+                </Button>
+              </Link>
             </div>
           </div>
 
           {/* League Selector */}
           <LeagueSelector 
             selected={selectedLeague} 
-            onSelect={setSelectedLeague} 
+            onSelect={handleLeagueSelect} 
           />
         </div>
       </section>
@@ -89,29 +116,41 @@ export default function SportsPage() {
               {/* AI Headlines Banner */}
               <AIHeadlinesBanner />
 
-              {/* Tabs for different content */}
-              <Tabs defaultValue="fixtures" className="w-full">
-                <TabsList className="w-full justify-start overflow-x-auto">
-                  <TabsTrigger value="fixtures">Fixtures & Results</TabsTrigger>
-                  <TabsTrigger value="standings">Standings</TabsTrigger>
-                  <TabsTrigger value="news">News</TabsTrigger>
-                </TabsList>
+              {isKenyaSelected ? (
+                <KenyaSportsSection />
+              ) : (
+                <Tabs defaultValue="fixtures" className="w-full">
+                  <TabsList className="w-full grid grid-cols-3 mb-6">
+                    <TabsTrigger value="fixtures" className="gap-2">
+                      <Calendar className="w-4 h-4" />
+                      <span className="hidden sm:inline">Fixtures</span>
+                    </TabsTrigger>
+                    <TabsTrigger value="standings" className="gap-2">
+                      <Trophy className="w-4 h-4" />
+                      <span className="hidden sm:inline">Standings</span>
+                    </TabsTrigger>
+                    <TabsTrigger value="news" className="gap-2">
+                      <Newspaper className="w-4 h-4" />
+                      <span className="hidden sm:inline">News</span>
+                    </TabsTrigger>
+                  </TabsList>
 
-                <TabsContent value="fixtures" className="mt-6">
-                  <FixturesList 
-                    competition={selectedLeague} 
-                    onMatchClick={handleMatchClick}
-                  />
-                </TabsContent>
+                  <TabsContent value="fixtures" className="mt-6">
+                    <FixturesList 
+                      competition={selectedLeague} 
+                      onMatchClick={handleMatchClick}
+                    />
+                  </TabsContent>
 
-                <TabsContent value="standings" className="mt-6">
-                  <StandingsTable competition={selectedLeague} />
-                </TabsContent>
+                  <TabsContent value="standings" className="mt-6">
+                    <StandingsTable competition={selectedLeague} />
+                  </TabsContent>
 
-                <TabsContent value="news" className="mt-6">
-                  <SportsNewsFeed />
-                </TabsContent>
-              </Tabs>
+                  <TabsContent value="news" className="mt-6">
+                    <SportsNewsFeed />
+                  </TabsContent>
+                </Tabs>
+              )}
             </div>
 
             {/* Sidebar */}
@@ -170,7 +209,7 @@ export default function SportsPage() {
                   <Button 
                     onClick={generateAIContent} 
                     disabled={isGeneratingAI}
-                    className="w-full"
+                    className="w-full gradient-primary text-primary-foreground"
                   >
                     {isGeneratingAI ? (
                       <>
