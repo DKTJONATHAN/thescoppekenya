@@ -1,18 +1,31 @@
 import { COMPETITIONS } from "@/hooks/useSportsData";
 import { cn } from "@/lib/utils";
+import { MapPin, Trophy, Star, Sparkles } from "lucide-react";
+import { ReactNode } from "react";
 
 interface LeagueSelectorProps {
   selected: string;
   onSelect: (code: string) => void;
 }
 
-const leagueLogos: Record<string, string> = {
-  PL: "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-  PD: "🇪🇸",
-  SA: "🇮🇹",
-  BL1: "🇩🇪",
-  FL1: "🇫🇷",
-  CL: "⭐",
+const leagueIcons: Record<string, ReactNode> = {
+  KPL: <MapPin className="w-4 h-4" />,
+  PL: <Trophy className="w-4 h-4" />,
+  PD: <Trophy className="w-4 h-4" />,
+  SA: <Trophy className="w-4 h-4" />,
+  BL1: <Trophy className="w-4 h-4" />,
+  FL1: <Trophy className="w-4 h-4" />,
+  CL: <Star className="w-4 h-4" />,
+};
+
+const leagueColors: Record<string, string> = {
+  KPL: "text-green-600",
+  PL: "text-purple-600",
+  PD: "text-orange-500",
+  SA: "text-blue-600",
+  BL1: "text-red-600",
+  FL1: "text-blue-800",
+  CL: "text-yellow-500",
 };
 
 export function LeagueSelector({ selected, onSelect }: LeagueSelectorProps) {
@@ -29,7 +42,12 @@ export function LeagueSelector({ selected, onSelect }: LeagueSelectorProps) {
               : "bg-background text-foreground border-divider hover:border-primary hover:text-primary"
           )}
         >
-          <span className="text-lg">{leagueLogos[league.code]}</span>
+          <span className={cn(selected === league.code ? "text-primary-foreground" : leagueColors[league.code])}>
+            {leagueIcons[league.code]}
+          </span>
+          {league.isEditorial && (
+            <Sparkles className="w-3 h-3 text-yellow-500" />
+          )}
           <span className="hidden sm:inline">{league.name}</span>
           <span className="sm:hidden">{league.code}</span>
         </button>

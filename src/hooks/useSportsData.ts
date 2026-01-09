@@ -1,11 +1,13 @@
-import { useQuery, useMutation } from "@tanstack/react-query";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { useEffect } from "react";
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
 const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
 
-interface Competition {
+export interface Competition {
   code: string;
   name: string;
+  isEditorial?: boolean;
 }
 
 interface Team {
@@ -101,6 +103,38 @@ async function fetchAIContent(type: string, data: Record<string, unknown>) {
   return response.json();
 }
 
+// Preload data for top leagues to reduce API calls
+export function usePreloadSportsData() {
+  const queryClient = useQueryClient();
+
+  useEffect(() => {
+    // Preload standings for top 3 leagues
+    const topLeagues = ["PL", "PD", "SA"];
+    topLeagues.forEach((code) => {
+      queryClient.prefetchQuery({
+        queryKey: ["standings", code],
+        queryFn: () => fetchFootballData("standings", { competition: code }),
+        staleTime: 10 * 60 * 1000, // 10 minutes
+      });
+    });
+
+    // Preload today's matches
+    queryClient.prefetchQuery({
+      queryKey: ["todayMatches"],
+      queryFn: async () => {
+        const today = new Date().toISOString().split('T')[0];
+        const result = await fetchFootballData('matches', { 
+          competition: 'ALL',
+          dateFrom: today,
+          dateTo: today,
+        });
+        return result.data?.matches as Match[] || [];
+      },
+      staleTime: 60 * 1000,
+    });
+  }, [queryClient]);
+}
+
 export function useMatches(competition: string = 'PL') {
   return useQuery({
     queryKey: ['matches', competition],
@@ -120,6 +154,7 @@ export function useMatches(competition: string = 'PL') {
     },
     staleTime: 60 * 1000, // 1 minute for live scores
     refetchInterval: 60 * 1000, // Refetch every minute for live updates
+    enabled: competition !== 'KPL', // Don't fetch for Kenya (editorial content)
   });
 }
 
@@ -186,7 +221,9 @@ export function useDailyRoundup() {
   });
 }
 
+// Kenya first (editorial), then international leagues
 export const COMPETITIONS: Competition[] = [
+  { code: 'KPL', name: 'Kenya', isEditorial: true },
   { code: 'PL', name: 'Premier League' },
   { code: 'PD', name: 'La Liga' },
   { code: 'SA', name: 'Serie A' },
