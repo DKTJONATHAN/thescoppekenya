@@ -43,7 +43,7 @@ function MatchRow({ match }: { match: Match }) {
             <span className="font-medium truncate">{match.homeTeam.shortName || match.homeTeam.name}</span>
           </div>
           <span className="font-bold text-lg w-8 text-center">
-            {match.score.fullTime.home ?? "-"}
+            {match.score.fullTime?.home ?? "-"}
           </span>
         </div>
         <div className="flex items-center justify-between">
@@ -59,7 +59,7 @@ function MatchRow({ match }: { match: Match }) {
             <span className="font-medium truncate">{match.awayTeam.shortName || match.awayTeam.name}</span>
           </div>
           <span className="font-bold text-lg w-8 text-center">
-            {match.score.fullTime.away ?? "-"}
+            {match.score.fullTime?.away ?? "-"}
           </span>
         </div>
       </div>

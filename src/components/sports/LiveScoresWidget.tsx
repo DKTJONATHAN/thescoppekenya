@@ -11,6 +11,10 @@ export function LiveScoresWidget() {
   ) || [];
 
   const recentMatches = matches?.filter(m => m.status === 'FINISHED').slice(0, 5) || [];
+  
+  const upcomingMatches = matches?.filter(m => 
+    m.status === 'SCHEDULED' || m.status === 'TIMED'
+  ).slice(0, 5) || [];
 
   if (isLoading) {
     return (
@@ -55,7 +59,7 @@ export function LiveScoresWidget() {
 
       {/* Recent Results */}
       {recentMatches.length > 0 && (
-        <div className="p-4">
+        <div className={cn("p-4", liveMatches.length > 0 && "border-t border-divider")}>
           <h3 className="text-sm font-semibold text-muted-foreground mb-3">
             Recent Results
           </h3>
@@ -67,9 +71,24 @@ export function LiveScoresWidget() {
         </div>
       )}
 
-      {liveMatches.length === 0 && recentMatches.length === 0 && (
+      {/* Upcoming Matches */}
+      {liveMatches.length === 0 && recentMatches.length === 0 && upcomingMatches.length > 0 && (
+        <div className="p-4">
+          <h3 className="text-sm font-semibold text-muted-foreground mb-3">
+            Upcoming Today
+          </h3>
+          <div className="space-y-2">
+            {upcomingMatches.map(match => (
+              <LiveMatchRow key={match.id} match={match} />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {liveMatches.length === 0 && recentMatches.length === 0 && upcomingMatches.length === 0 && (
         <div className="p-6 text-center">
-          <p className="text-muted-foreground">No matches today</p>
+          <p className="text-muted-foreground text-sm">No matches today</p>
+          <p className="text-xs text-muted-foreground mt-1">Check fixtures for upcoming games</p>
         </div>
       )}
     </div>
