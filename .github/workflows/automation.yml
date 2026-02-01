@@ -1,8 +1,8 @@
-name: East Africa Gossip Bot (Stable)
+name: East Africa Gossip Bot (Dynamic & Real-Time)
 
 on:
   schedule:
-    # Runs 6 times a day (Every 4 hours starting at 4 AM EAT)
+    # Runs 6 times a day (Every 4 hours)
     - cron: '0 1 * * *'   # 1. Kenya
     - cron: '0 5 * * *'   # 2. Uganda
     - cron: '0 9 * * *'   # 3. Tanzania
@@ -42,7 +42,6 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # We use the standard library. 'google-generativeai' is the correct one for Actions.
           pip install requests google-generativeai python-slugify
 
       - name: Generate article with Gemini
@@ -52,12 +51,13 @@ jobs:
           MANUAL_TOPIC: ${{ inputs.manual_topic }}
         run: |
           python << 'EOF'
-          import os, json, datetime, requests, random, time
+          import os, json, datetime, requests, random, time, re
           import google.generativeai as genai
           from slugify import slugify
 
           # --- CONFIGURATION ---
-          date_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y") # e.g. Sunday, February 01, 2026
           current_hour = datetime.datetime.utcnow().hour
           
           # Configure Gemini SDK
@@ -66,31 +66,47 @@ jobs:
           
           genai.configure(api_key=api_key)
 
-          # --- 1. COUNTRY ROTATION LOGIC ---
-          if current_hour < 4:
-              country_name = 'Kenya'
-          elif current_hour < 8:
-              country_name = 'Uganda'
-          elif current_hour < 12:
-              country_name = 'Tanzania'
-          elif current_hour < 16:
-              country_name = 'Kenya'
-          elif current_hour < 20:
-              country_name = 'Uganda'
-          else:
-              country_name = 'Tanzania'
+          # --- 1. COUNTRY ROTATION ---
+          if current_hour < 4: country_name = 'Kenya'
+          elif current_hour < 8: country_name = 'Uganda'
+          elif current_hour < 12: country_name = 'Tanzania'
+          elif current_hour < 16: country_name = 'Kenya'
+          elif current_hour < 20: country_name = 'Uganda'
+          else: country_name = 'Tanzania'
 
+          # --- 2. DYNAMIC TOPIC PICKER ---
+          # We randomize the category so every run feels different.
+          categories = [
+              "Entertainment", 
+              "Sports", 
+              "Politics", 
+              "Business", 
+              "Technology"
+          ]
+          
           # Check for manual input
           manual_input = os.environ.get('MANUAL_TOPIC', '').strip()
           
           if manual_input:
-              topic_instruction = f"The user explicitly wants you to talk about: {manual_input}."
+              search_query = f"{manual_input} news {country_name} {today_str}"
+              selected_category = "Manual"
               print(f"🎯 Manual Topic: {manual_input}")
           else:
-              topic_instruction = f"Search for the absolute trending entertainment/gossip stories in {country_name} TODAY. Pick the juiciest one."
-              print(f"🌍 Target Region: {country_name}")
+              # Pick a random category
+              selected_category = random.choice(categories)
+              
+              # Construct a SEARCH QUERY that forces freshness
+              # e.g. "trending Sports news Kenya today Sunday, February 01, 2026"
+              search_query = f"trending {selected_category} news in {country_name} today {full_date_str}"
+              print(f"🌍 Searching for: [{selected_category}] in [{country_name}]")
 
-          # --- 2. IMAGE HELPER ---
+          # --- 3. JSON CLEANER ---
+          def clean_json(text):
+              text = re.sub(r'```json\s*', '', text)
+              text = re.sub(r'```', '', text)
+              return text.strip()
+
+          # --- 4. IMAGE HELPER ---
           def get_real_image(query):
               access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
               fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800"
@@ -103,42 +119,45 @@ jobs:
               except: pass
               return fallback
 
-          # --- 3. THE "YAPPER" PROMPT ---
+          # --- 5. THE "ADAPTIVE YAPPER" PROMPT ---
           prompt = f"""
-          {topic_instruction}
+          Current Date: {full_date_str}
+          Search Query: "{search_query}"
+          Category: {selected_category}
 
-          ROLE: You are a chaotic, funny East African gossip blogger. 
+          ROLE: You are "The Tea Master", East Africa's sharpest gossip blogger.
           
           TASK: 
-          1. Use Google Search to find the real details of this story.
+          1. Use Google Search to find the HOTTEST story for the selected category & date.
           2. Write a blog post about it.
 
-          TONE GUIDE:
-          - Use slang ("Wueh!", "Tea", "Imagine", "Eish!").
-          - Be opinionated. If it's a scandal, drag them. If it's success, hype them.
-          - NO boring politics (Parliament bills, taxes) unless it's a scandal.
-          - NO robotic intros ("In the digital age..."). Start with the drama!
+          TONE ADAPTATION:
+          - If {selected_category} == "Politics": Focus on the SCANDAL, the DRAMA, or the INSULTS. Ignore boring bills.
+          - If {selected_category} == "Sports": Write like a DIE-HARD FAN. Celebrate wins, roast losers.
+          - If {selected_category} == "Business": Focus on MONEY GOSSIP. Who is broke? Who is rich? Which company is dying?
+          - If {selected_category} == "Technology": Focus on SCAMS, social media bans, or crazy new gadgets.
+          - General: Use slang ("Wueh!", "Imagine!", "Tea", "Kwani?").
 
-          OUTPUT FORMAT:
-          Return strictly valid JSON with these fields:
+          STRICT CONTENT RULES:
+          - MUST be a real story from TODAY or YESTERDAY.
+          - MUST mention real names, locations, and quotes.
+          - DO NOT write generic "Internet is buzzing" fluff. Be specific.
+
+          OUTPUT FORMAT (JSON ONLY):
           {{
-            "title": "A short, clickbaity title",
+            "title": "A viral, clickbait title (Max 12 words)",
             "slug": "url-friendly-slug",
-            "excerpt": "One spicy sentence summary",
-            "category": "Choose one: [Entertainment, Business, Sports, Technology, Relationships]",
-            "tags": ["tag1", "tag2"],
-            "image_keyword": "A single search term for the header image",
-            "body": "The full article content in Markdown format..."
+            "excerpt": "A single, spicy sentence hook.",
+            "category": "{selected_category}",
+            "tags": ["tag1", "tag2", "tag3"],
+            "image_keyword": "Specific visual search term for the story",
+            "body": "The article body in Markdown. Use ## Subheadings. Keep it punchy."
           }}
           """
 
-          # --- 4. CALL GEMINI (STABLE MODEL + RETRY LOGIC) ---
-          
-          # Using gemini-1.5-flash because it is the STABLE production model.
-          # The "3-preview" models are often quota-locked.
+          # --- 6. CALL GEMINI (STABLE) ---
           MODEL_NAME = 'gemini-1.5-flash'
           
-          # Enable Google Search Tool
           tools = [
               {'google_search_retrieval': {
                   'dynamic_retrieval_config': {
@@ -152,7 +171,7 @@ jobs:
           max_retries = 3
 
           for attempt in range(max_retries):
-              print(f"🤖 Attempt {attempt+1}/{max_retries} with {MODEL_NAME}...")
+              print(f"🤖 Attempt {attempt+1}...")
               try:
                   model = genai.GenerativeModel(MODEL_NAME)
                   
@@ -164,33 +183,26 @@ jobs:
                       )
                   )
                   
-                  parsed = json.loads(response.text)
-                  print(f"🔥 Success! Story Generated: {parsed['title']}")
+                  clean_text = clean_json(response.text)
+                  parsed = json.loads(clean_text)
+                  
+                  # Sanity Check
+                  if "buzzing today" in parsed['title'].lower():
+                      raise ValueError("Generic title detected, retrying...")
+                      
+                  print(f"🔥 Success! Story: {parsed['title']}")
                   break 
                   
               except Exception as e:
                   print(f"⚠️ Error: {e}")
-                  if "429" in str(e):
-                      print("⏳ Quota hit. Sleeping for 30 seconds...")
-                      time.sleep(30)
-                  else:
-                      time.sleep(5)
+                  time.sleep(10)
                   continue
 
           if not parsed:
-              # Fallback to a generic static story if API fails completely
-              print("❌ API failed. Generating fallback content.")
-              parsed = {
-                  "title": "Why East African Internet is Buzzing Today",
-                  "slug": "east-africa-buzzing-today",
-                  "excerpt": "Everyone is talking, but what is the real tea? Let's dive in.",
-                  "category": "Entertainment",
-                  "tags": ["gossip", "kenya", "uganda"],
-                  "image_keyword": "nairobi skyline",
-                  "body": "## The Tea is Hot\n\nSometimes the internet just breaks. Today seems to be one of those days..."
-              }
+              print("❌ All attempts failed. Exiting.")
+              exit(0)
 
-          # --- 5. ASSEMBLE FRONT MATTER ---
+          # --- 7. ASSEMBLE FRONT MATTER ---
           image_url = get_real_image(parsed['image_keyword'])
           
           authors = ["The Tea Master", "Nairobi Gossip Desk", "Bongo Flavor", "Kampala Insider"]
@@ -202,7 +214,7 @@ jobs:
           image: "{image_url}"
           category: "{parsed['category']}"
           author: "{random.choice(authors)}"
-          date: "{date_str}"
+          date: "{today_str}"
           tags: {json.dumps(parsed['tags'])}
           featured: false
           ---
@@ -210,7 +222,6 @@ jobs:
           {parsed['body']}
           """
 
-          # Save File
           import textwrap
           final_file = textwrap.dedent(final_file).strip()
           
