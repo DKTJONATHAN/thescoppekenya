@@ -1,4 +1,4 @@
-name: East Africa Gossip Bot (Gemini Search)
+name: East Africa Gossip Bot (Gemini 3 Pro)
 
 on:
   schedule:
@@ -42,11 +42,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # We REMOVED pygooglenews/feedparser to fix your error.
-          # We ADDED google-generativeai for the official SDK.
+          # We use the standard google-generativeai library which supports Gemini 3
           pip install requests google-generativeai python-slugify
 
-      - name: Generate article with Gemini
+      - name: Generate article with Gemini 3 Pro
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
@@ -56,7 +55,6 @@ jobs:
           import os, json, datetime, requests, random, time
           import google.generativeai as genai
           from slugify import slugify
-          from google.ai.generativelanguage_v1beta.types import content
 
           # --- CONFIGURATION ---
           date_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
@@ -106,8 +104,6 @@ jobs:
               return fallback
 
           # --- 3. THE "YAPPER" PROMPT ---
-          # We use the 'google_search_retrieval' tool to force it to look up real info.
-          
           prompt = f"""
           {topic_instruction}
 
@@ -136,27 +132,46 @@ jobs:
           }}
           """
 
-          # --- 4. CALL GEMINI (With Search Grounding) ---
-          # We use gemini-2.0-flash-exp (Preview) as requested for speed and search capabilities.
+          # --- 4. CALL GEMINI 3 PRO (With Fallback) ---
           
-          model = genai.GenerativeModel('gemini-2.0-flash-exp')
+          # Enable Google Search Tool configuration
+          tools = [
+              {'google_search_retrieval': {
+                  'dynamic_retrieval_config': {
+                      'mode': 'dynamic',
+                      'dynamic_threshold': 0.3
+                  }
+              }}
+          ]
+
+          # Try Gemini 3 Pro first, then 3 Flash
+          models_to_try = ['gemini-3-pro-preview', 'gemini-3-flash-preview']
           
-          # Generate content with Search Tool enabled
-          try:
-              response = model.generate_content(
-                  prompt,
-                  tools='google_search_retrieval', # This enables real-time search
-                  generation_config=genai.types.GenerationConfig(
-                      response_mime_type="application/json"
+          parsed = None
+          
+          for model_name in models_to_try:
+              print(f"🤖 Attempting with model: {model_name}...")
+              try:
+                  model = genai.GenerativeModel(model_name)
+                  
+                  response = model.generate_content(
+                      prompt,
+                      tools=tools,
+                      generation_config=genai.types.GenerationConfig(
+                          response_mime_type="application/json"
+                      )
                   )
-              )
-              
-              parsed = json.loads(response.text)
-              print(f"🔥 Story Generated: {parsed['title']}")
-              
-          except Exception as e:
-              print(f"❌ Gemini Error: {e}")
-              raise SystemExit("Failed to generate content via Gemini.")
+                  
+                  parsed = json.loads(response.text)
+                  print(f"🔥 Success! Story Generated: {parsed['title']}")
+                  break # Stop if successful
+                  
+              except Exception as e:
+                  print(f"⚠️ {model_name} failed: {e}")
+                  continue # Try next model
+
+          if not parsed:
+              raise SystemExit("❌ All models failed to generate content.")
 
           # --- 5. ASSEMBLE FRONT MATTER ---
           image_url = get_real_image(parsed['image_keyword'])
