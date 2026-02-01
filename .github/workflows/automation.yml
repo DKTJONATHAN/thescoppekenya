@@ -1,14 +1,17 @@
-name: East Africa Gossip Bot (Dynamic & Real-Time)
+name: East Africa Gossip Bot (Exact Times)
 
 on:
   schedule:
-    # Runs 6 times a day (Every 4 hours)
-    - cron: '0 1 * * *'   # 1. Kenya
-    - cron: '0 5 * * *'   # 2. Uganda
-    - cron: '0 9 * * *'   # 3. Tanzania
-    - cron: '0 13 * * *'  # 4. Kenya
-    - cron: '0 17 * * *'  # 5. Uganda
-    - cron: '0 21 * * *'  # 6. Tanzania
+    # --- EXACT EAT TIMES (Converted to UTC) ---
+    # GitHub uses UTC, so we subtract 3 hours from Kenya Time.
+    
+    - cron: '0 0 * * *'   # 3:00 AM EAT (Tanzania Slot)
+    - cron: '0 4 * * *'   # 7:00 AM EAT (Kenya Slot)
+    - cron: '0 8 * * *'   # 11:00 AM EAT (Uganda Slot)
+    - cron: '0 12 * * *'  # 3:00 PM EAT (Tanzania Slot)
+    - cron: '0 16 * * *'  # 7:00 PM EAT (Kenya Slot)
+    - cron: '0 20 * * *'  # 11:00 PM EAT (Uganda Slot)
+
   workflow_dispatch:
     inputs:
       manual_topic:
@@ -54,10 +57,11 @@ jobs:
           import os, json, datetime, requests, random, time, re
           import google.generativeai as genai
           from slugify import slugify
+          from google.ai.generativelanguage_v1beta.types import HarmCategory, HarmBlockThreshold
 
           # --- CONFIGURATION ---
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
-          full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y") # e.g. Sunday, February 01, 2026
+          full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_hour = datetime.datetime.utcnow().hour
           
           # Configure Gemini SDK
@@ -66,25 +70,25 @@ jobs:
           
           genai.configure(api_key=api_key)
 
-          # --- 1. COUNTRY ROTATION ---
-          if current_hour < 4: country_name = 'Kenya'
-          elif current_hour < 8: country_name = 'Uganda'
-          elif current_hour < 12: country_name = 'Tanzania'
-          elif current_hour < 16: country_name = 'Kenya'
-          elif current_hour < 20: country_name = 'Uganda'
-          else: country_name = 'Tanzania'
+          # --- 1. COUNTRY ROTATION (Synced to exact hours) ---
+          # UTC Hours: 0, 4, 8, 12, 16, 20
+          
+          if current_hour < 2: 
+              country_name = 'Tanzania' # 00:00 UTC -> 3 AM EAT
+          elif current_hour < 6: 
+              country_name = 'Kenya'    # 04:00 UTC -> 7 AM EAT
+          elif current_hour < 10: 
+              country_name = 'Uganda'   # 08:00 UTC -> 11 AM EAT
+          elif current_hour < 14: 
+              country_name = 'Tanzania' # 12:00 UTC -> 3 PM EAT
+          elif current_hour < 18: 
+              country_name = 'Kenya'    # 16:00 UTC -> 7 PM EAT
+          else: 
+              country_name = 'Uganda'   # 20:00 UTC -> 11 PM EAT
 
           # --- 2. DYNAMIC TOPIC PICKER ---
-          # We randomize the category so every run feels different.
-          categories = [
-              "Entertainment", 
-              "Sports", 
-              "Politics", 
-              "Business", 
-              "Technology"
-          ]
+          categories = ["Entertainment", "Sports", "Politics", "Business", "Technology"]
           
-          # Check for manual input
           manual_input = os.environ.get('MANUAL_TOPIC', '').strip()
           
           if manual_input:
@@ -92,13 +96,10 @@ jobs:
               selected_category = "Manual"
               print(f"🎯 Manual Topic: {manual_input}")
           else:
-              # Pick a random category
               selected_category = random.choice(categories)
-              
-              # Construct a SEARCH QUERY that forces freshness
-              # e.g. "trending Sports news Kenya today Sunday, February 01, 2026"
+              # Force "Today" in search to get fresh news
               search_query = f"trending {selected_category} news in {country_name} today {full_date_str}"
-              print(f"🌍 Searching for: [{selected_category}] in [{country_name}]")
+              print(f"🌍 Searching for: [{selected_category}] in [{country_name}] (Hour: {current_hour} UTC)")
 
           # --- 3. JSON CLEANER ---
           def clean_json(text):
@@ -119,7 +120,7 @@ jobs:
               except: pass
               return fallback
 
-          # --- 5. THE "ADAPTIVE YAPPER" PROMPT ---
+          # --- 5. THE "YAPPER" PROMPT ---
           prompt = f"""
           Current Date: {full_date_str}
           Search Query: "{search_query}"
@@ -132,16 +133,14 @@ jobs:
           2. Write a blog post about it.
 
           TONE ADAPTATION:
-          - If {selected_category} == "Politics": Focus on the SCANDAL, the DRAMA, or the INSULTS. Ignore boring bills.
-          - If {selected_category} == "Sports": Write like a DIE-HARD FAN. Celebrate wins, roast losers.
-          - If {selected_category} == "Business": Focus on MONEY GOSSIP. Who is broke? Who is rich? Which company is dying?
-          - If {selected_category} == "Technology": Focus on SCAMS, social media bans, or crazy new gadgets.
+          - If {selected_category} == "Politics": Focus on SCANDAL/DRAMA. Ignore boring bills.
+          - If {selected_category} == "Sports": Write like a DIE-HARD FAN.
+          - If {selected_category} == "Business": Focus on MONEY GOSSIP.
           - General: Use slang ("Wueh!", "Imagine!", "Tea", "Kwani?").
 
           STRICT CONTENT RULES:
           - MUST be a real story from TODAY or YESTERDAY.
           - MUST mention real names, locations, and quotes.
-          - DO NOT write generic "Internet is buzzing" fluff. Be specific.
 
           OUTPUT FORMAT (JSON ONLY):
           {{
@@ -150,7 +149,7 @@ jobs:
             "excerpt": "A single, spicy sentence hook.",
             "category": "{selected_category}",
             "tags": ["tag1", "tag2", "tag3"],
-            "image_keyword": "Specific visual search term for the story",
+            "image_keyword": "Specific visual search term",
             "body": "The article body in Markdown. Use ## Subheadings. Keep it punchy."
           }}
           """
@@ -158,6 +157,14 @@ jobs:
           # --- 6. CALL GEMINI (STABLE) ---
           MODEL_NAME = 'gemini-1.5-flash'
           
+          # DISABLE SAFETY FILTERS (Crucial for Gossip/Drama topics)
+          safety_settings = {
+              HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
+              HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
+              HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
+              HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
+          }
+
           tools = [
               {'google_search_retrieval': {
                   'dynamic_retrieval_config': {
@@ -178,6 +185,7 @@ jobs:
                   response = model.generate_content(
                       prompt,
                       tools=tools,
+                      safety_settings=safety_settings,
                       generation_config=genai.types.GenerationConfig(
                           response_mime_type="application/json"
                       )
@@ -186,7 +194,6 @@ jobs:
                   clean_text = clean_json(response.text)
                   parsed = json.loads(clean_text)
                   
-                  # Sanity Check
                   if "buzzing today" in parsed['title'].lower():
                       raise ValueError("Generic title detected, retrying...")
                       
@@ -200,11 +207,10 @@ jobs:
 
           if not parsed:
               print("❌ All attempts failed. Exiting.")
-              exit(0)
+              exit(1) # FORCE FAILURE so you see Red X in Actions
 
           # --- 7. ASSEMBLE FRONT MATTER ---
           image_url = get_real_image(parsed['image_keyword'])
-          
           authors = ["The Tea Master", "Nairobi Gossip Desk", "Bongo Flavor", "Kampala Insider"]
           
           final_file = f"""---
@@ -234,16 +240,34 @@ jobs:
           with open(filepath, "w", encoding="utf-8") as f:
               f.write(final_file)
           
-          print(f"✅ Published: {filepath}")
+          print(f"✅ Created File: {filepath}")
           EOF
 
-      - name: Commit and push article
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "content: fresh tea served ☕ (${{ github.run_id }})"
-          branch: ${{ env.DEFAULT_BRANCH }}
-          file_pattern: ${{ env.POSTS_DIR }}/*.md
-          commit_user_name: "Gossip Bot"
-          commit_user_email: "actions@github.com"
-        env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+      # --- VERIFICATION STEP ---
+      - name: Check File Generation
+        run: |
+          if [ -z "$(ls -A content/posts/*.md 2>/dev/null)" ]; then
+             echo "❌ No posts generated!"
+             exit 1
+          else
+             echo "✅ Posts found:"
+             ls content/posts/*.md
+          fi
+
+      # --- MANUAL GIT COMMIT ---
+      - name: Commit and Push
+        run: |
+          git config --global user.name "Gossip Bot"
+          git config --global user.email "bot@thescoppekenya.com"
+          
+          # Force add new files
+          git add content/posts/*.md
+          
+          # Commit only if changes exist
+          if git diff-index --quiet HEAD; then
+            echo "⚠️ No changes to commit."
+            exit 1 
+          else
+            git commit -m "🔥 New Tea Served: $(date)"
+            git push
+          fi
