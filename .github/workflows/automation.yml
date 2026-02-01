@@ -2,6 +2,7 @@ name: East Africa Gossip Bot
 
 on:
   schedule:
+    # 6 Runs per day (Approx every 4 hours)
     - cron: '0 0 * * *'   # 3 AM EAT
     - cron: '0 4 * * *'   # 7 AM EAT
     - cron: '0 8 * * *'   # 11 AM EAT
@@ -20,7 +21,7 @@ permissions:
 
 env:
   DEFAULT_BRANCH: main
-  POSTS_DIR: content/posts  # <--- EXACTLY AS REQUESTED (ROOT)
+  POSTS_DIR: content/posts
 
 jobs:
   generate-and-publish:
@@ -125,9 +126,9 @@ jobs:
           api_key = os.environ.get("GEMINI_API_KEY")
           if not api_key: raise SystemExit("Missing GEMINI_API_KEY")
 
-          # --- 5. CALL GEMINI (Raw API with Search Tool) ---
-          # Using gemini-1.5-pro for reliable search tools
-          url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key={api_key}"
+          # --- 5. CALL GEMINI (Raw API) ---
+          # Using gemini-1.5-flash (STABLE)
+          url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
           
           headers = { "Content-Type": "application/json" }
           
@@ -136,7 +137,7 @@ jobs:
               "tools": [{
                   "googleSearchRetrieval": {
                       "dynamicRetrievalConfig": {
-                          "mode": "MODE_DYNAMIC",
+                          "mode": "MODE_DYNAMIC",  # <--- THIS WAS THE FIX
                           "dynamicThreshold": 0.3
                       }
                   }
@@ -206,13 +207,11 @@ jobs:
           image_url = get_real_image(parsed['IMAGE_KEYWORD'])
           authors = ["The Tea Master", "Nairobi Gossip Desk", "Bongo Flavor", "Kampala Insider"]
           
-          # Handle Tags List (Convert string "[tag1, tag2]" to proper JSON array)
+          # Clean Tags
           try:
-              # Simple clean up to handle "tag1, tag2" or "[tag1, tag2]"
-              tags_raw = parsed["TAGS"].strip("[]")
-              tags_clean = [t.strip() for t in tags_raw.split(',') if t.strip()]
+              tags_clean = [t.strip() for t in parsed["TAGS"].strip("[]").split(',')]
           except:
-              tags_clean = ["gossip", "east-africa"]
+              tags_clean = ["gossip", "news"]
 
           final_file = f"""---
           title: "{parsed['TITLE'].replace('"', "'")}"
@@ -232,7 +231,7 @@ jobs:
           import textwrap
           final_file = textwrap.dedent(final_file).strip()
 
-          # Save to Disk
+          # SAVE TO ROOT: content/posts
           out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
           os.makedirs(out_dir, exist_ok=True)
           
