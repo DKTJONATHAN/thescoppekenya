@@ -1,4 +1,4 @@
-name: East Africa Gossip Bot (Smart Pro)
+name: East Africa Gossip Bot (Strict Gemini 3 Pro)
 
 on:
   schedule:
@@ -120,21 +120,12 @@ jobs:
           api_key = os.environ.get("GEMINI_API_KEY")
           if not api_key: raise SystemExit("Missing GEMINI_API_KEY")
 
-          # --- 5. ROBUST MODEL SELECTOR ---
-          # We try these models in order. 
-          # If 404 (Not Found) -> Try next.
-          # If 429 (Busy) -> Retry same model forever.
-          models_to_try = [
-              "gemini-1.5-pro-002",
-              "gemini-1.5-pro-001",
-              "gemini-1.5-pro",
-              "gemini-pro"
-          ]
-
-          full_text = ""
+          # --- 5. CALL GEMINI (Strictly Gemini 3 Pro) ---
+          # We use gemini-3-pro-preview because your logs proved you have access to it.
+          url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-preview:generateContent?key={api_key}"
+          
           headers = { "Content-Type": "application/json" }
           
-          # No Search Tools
           payload = {
               "contents": [{ "parts": [{ "text": spec_text }] }],
               "safetySettings": [
@@ -145,42 +136,38 @@ jobs:
               ]
           }
 
-          for model_name in models_to_try:
-              print(f"🤖 Trying Model: {model_name}...")
-              url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}"
-              
-              success = False
-              while True: # Infinite Retry Loop for Busy Signals
-                  try:
-                      resp = requests.post(url, headers=headers, json=payload, timeout=120)
+          full_text = ""
+          attempt = 0
+          
+          # INFINITE RETRY LOOP (For 429 Quota Errors)
+          while True:
+              attempt += 1
+              print(f"🤖 Attempt {attempt} with Gemini 3 Pro...")
+              try:
+                  resp = requests.post(url, headers=headers, json=payload, timeout=120)
+                  
+                  if resp.status_code == 200:
+                      full_text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
+                      print("🔥 Content Generated!")
+                      break 
+                  
+                  # 429 = Quota Exceeded (The error you saw earlier)
+                  # 503 = Service Overloaded
+                  elif resp.status_code in [429, 503, 500]:
+                      print(f"⏳ Busy (Status {resp.status_code}). Sleeping for 60s...")
+                      time.sleep(60) # Wait 1 minute and try again endlessly
+                      continue
+                  
+                  else:
+                      # Only exit on Fatal errors (Auth failure, 404, etc)
+                      print(f"⚠️ Fatal Error {resp.status_code}: {resp.text}")
+                      raise SystemExit("Fatal API Error")
                       
-                      if resp.status_code == 200:
-                          full_text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
-                          print(f"🔥 Success with {model_name}!")
-                          success = True
-                          break # Break retry loop
-                      
-                      elif resp.status_code in [429, 503, 500]:
-                          print(f"⏳ {model_name} Busy (Status {resp.status_code}). Retrying in 60s...")
-                          time.sleep(60)
-                          continue # Retry same model
-                      
-                      elif resp.status_code == 404:
-                          print(f"⚠️ {model_name} Not Found (404). Switching to next model...")
-                          break # Break retry loop, go to next model in for-loop
-                      
-                      else:
-                          print(f"⚠️ Fatal Error {resp.status_code}: {resp.text}")
-                          break # Break retry loop, try next model
-                          
-                  except Exception as e:
-                      print(f"⚠️ Network Error: {e}. Retrying...")
-                      time.sleep(60)
-              
-              if success:
-                  break # Break model loop, we are done!
-
-          if not full_text: raise SystemExit("❌ Failed to generate content with ANY model.")
+              except Exception as e:
+                  print(f"⚠️ Network Error: {e}. Retrying in 60s...")
+                  time.sleep(60)
+          
+          if not full_text: raise SystemExit("Failed to get content from Gemini.")
 
           # --- 6. PARSE RESPONSE ---
           parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
@@ -214,7 +201,6 @@ jobs:
               elif current_section == "BODY":
                   parsed["BODY"] += line + "\n"
 
-          # Fallback Slug
           if not parsed["SLUG"]:
               parsed["SLUG"] = re.sub(r'[^a-z0-9-]', '-', parsed["TITLE"].lower()).strip('-')
 
