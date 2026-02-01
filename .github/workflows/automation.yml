@@ -1,15 +1,13 @@
-name: East Africa Gossip Bot (Final Fix)
+name: East Africa Gossip Bot
 
 on:
   schedule:
-    # --- EXACT EAT TIMES (Converted to UTC) ---
-    - cron: '0 0 * * *'   # 3:00 AM EAT
-    - cron: '0 4 * * *'   # 7:00 AM EAT
-    - cron: '0 8 * * *'   # 11:00 AM EAT
-    - cron: '0 12 * * *'  # 3:00 PM EAT
-    - cron: '0 16 * * *'  # 7:00 PM EAT
-    - cron: '0 20 * * *'  # 11:00 PM EAT
-
+    - cron: '0 0 * * *'   # 3 AM EAT
+    - cron: '0 4 * * *'   # 7 AM EAT
+    - cron: '0 8 * * *'   # 11 AM EAT
+    - cron: '0 12 * * *'  # 3 PM EAT
+    - cron: '0 16 * * *'  # 7 PM EAT
+    - cron: '0 20 * * *'  # 11 PM EAT
   workflow_dispatch:
     inputs:
       manual_topic:
@@ -22,7 +20,7 @@ permissions:
 
 env:
   DEFAULT_BRANCH: main
-  POSTS_DIR: content/posts
+  POSTS_DIR: content/posts  # <--- EXACTLY AS REQUESTED (ROOT)
 
 jobs:
   generate-and-publish:
@@ -43,120 +41,102 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests python-slugify
+          pip install requests
 
       - name: Generate article with Gemini
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           MANUAL_TOPIC: ${{ inputs.manual_topic }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
         run: |
           python << 'EOF'
-          import os, json, datetime, requests, random, time, re
-          from slugify import slugify
+          import os, json, datetime, requests, re, random, time
 
           # --- CONFIGURATION ---
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_hour = datetime.datetime.utcnow().hour
-          
-          api_key = os.environ.get("GEMINI_API_KEY")
-          if not api_key: raise SystemExit("Missing GEMINI_API_KEY")
 
-          # --- 1. COUNTRY ROTATION (Synced to exact hours) ---
-          if current_hour < 2: 
-              country_name = 'Tanzania' # 3 AM EAT
-          elif current_hour < 6: 
-              country_name = 'Kenya'    # 7 AM EAT
-          elif current_hour < 10: 
-              country_name = 'Uganda'   # 11 AM EAT
-          elif current_hour < 14: 
-              country_name = 'Tanzania' # 3 PM EAT
-          elif current_hour < 18: 
-              country_name = 'Kenya'    # 7 PM EAT
-          else: 
-              country_name = 'Uganda'   # 11 PM EAT
+          # --- 1. COUNTRY ROTATION ---
+          if current_hour < 2:   country_name = 'Tanzania'
+          elif current_hour < 6: country_name = 'Kenya'
+          elif current_hour < 10: country_name = 'Uganda'
+          elif current_hour < 14: country_name = 'Tanzania'
+          elif current_hour < 18: country_name = 'Kenya'
+          else:                   country_name = 'Uganda'
 
-          # --- 2. DYNAMIC TOPIC PICKER ---
+          # --- 2. TOPIC SELECTION ---
+          manual_input = os.environ.get('MANUAL_TOPIC', '').strip()
           categories = ["Entertainment", "Sports", "Politics", "Business", "Technology"]
           
-          manual_input = os.environ.get('MANUAL_TOPIC', '').strip()
-          
           if manual_input:
-              search_query = f"{manual_input} news {country_name} {today_str}"
-              selected_category = "Manual"
-              print(f"🎯 Manual Topic: {manual_input}")
+              topic = manual_input
+              search_query = f"{topic} news in {country_name} today {full_date_str}"
           else:
-              selected_category = random.choice(categories)
-              search_query = f"trending {selected_category} news in {country_name} today {full_date_str}"
-              print(f"🌍 Searching for: [{selected_category}] in [{country_name}] (Hour: {current_hour} UTC)")
+              topic = random.choice(categories)
+              search_query = f"trending {topic} news stories in {country_name} today {full_date_str}"
 
-          # --- 3. JSON CLEANER ---
-          def clean_json(text):
-              text = re.sub(r'```json\s*', '', text)
-              text = re.sub(r'```', '', text)
-              return text.strip()
+          print(f"🎯 Target: {country_name} | Topic: {topic}")
 
-          # --- 4. IMAGE HELPER ---
+          # --- 3. IMAGE HELPER ---
           def get_real_image(query):
               access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
-              fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800"
-              if not access_key: return fallback
+              fallback_image = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+              
+              if not access_key: return fallback_image
+              
+              url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}"
               try:
-                  url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}"
                   resp = requests.get(url, timeout=10)
                   if resp.status_code == 200:
                       return resp.json()['urls']['regular']
-              except: pass
-              return fallback
+              except Exception: pass
+              return fallback_image
 
-          # --- 5. THE "YAPPER" PROMPT ---
-          prompt = f"""
+          # --- 4. CONSTRUCT PROMPT ---
+          spec_text = f"""
           Current Date: {full_date_str}
           Search Query: "{search_query}"
-          Category: {selected_category}
-
+          
           ROLE: You are "The Tea Master", East Africa's sharpest gossip blogger.
           
-          TASK: 
-          1. Use Google Search to find the HOTTEST story for the selected category & date.
-          2. Write a blog post about it.
+          TASK: Use Google Search to find the HOTTEST story for "{topic}" in {country_name} happening TODAY. Write a blog post about it.
+          
+          TONE:
+          - Use slang ("Wueh!", "Imagine!", "Tea", "Kwani?").
+          - If Politics: Focus on SCANDAL/DRAMA.
+          - If Sports: Be a DIE-HARD FAN.
+          - If Business: Focus on MONEY GOSSIP.
 
-          TONE ADAPTATION:
-          - If {selected_category} == "Politics": Focus on SCANDAL/DRAMA. Ignore boring bills.
-          - If {selected_category} == "Sports": Write like a DIE-HARD FAN.
-          - If {selected_category} == "Business": Focus on MONEY GOSSIP.
-          - General: Use slang ("Wueh!", "Imagine!", "Tea", "Kwani?").
+          *** STRICT OUTPUT FORMAT ***
+          Do NOT write Markdown/YAML yourself. Provide raw data labeled exactly like this:
 
-          STRICT CONTENT RULES:
-          - MUST be a real story from TODAY or YESTERDAY.
-          - MUST mention real names, locations, and quotes.
-
-          OUTPUT FORMAT (JSON ONLY):
-          {{
-            "title": "A viral, clickbait title (Max 12 words)",
-            "slug": "url-friendly-slug",
-            "excerpt": "A single, spicy sentence hook.",
-            "category": "{selected_category}",
-            "tags": ["tag1", "tag2", "tag3"],
-            "image_keyword": "Specific visual search term",
-            "body": "The article body in Markdown. Use ## Subheadings. Keep it punchy."
-          }}
+          TITLE: [Insert punchy clickbait title]
+          SLUG: [url-friendly-slug-lowercase]
+          EXCERPT: [One spicy sentence hook]
+          CATEGORY: {topic}
+          TAGS: [tag1, tag2, tag3]
+          IMAGE_KEYWORD: [Visual search term for the story]
+          BODY:
+          [Write the full article here using ## Headers. NO Title at start.]
           """
 
-          # --- 6. RAW API CALL (Replaces SDK) ---
-          
-          url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+          api_key = os.environ.get("GEMINI_API_KEY")
+          if not api_key: raise SystemExit("Missing GEMINI_API_KEY")
+
+          # --- 5. CALL GEMINI (Raw API with Search Tool) ---
+          # Using gemini-1.5-pro for reliable search tools
+          url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key={api_key}"
           
           headers = { "Content-Type": "application/json" }
           
-          # FIX: 'mode' must be 'MODE_DYNAMIC' (Uppercase Enum), not 'dynamic'
           payload = {
-              "contents": [{ "parts": [{"text": prompt}] }],
+              "contents": [{ "parts": [{ "text": spec_text }] }],
               "tools": [{
                   "googleSearchRetrieval": {
                       "dynamicRetrievalConfig": {
-                          "mode": "MODE_DYNAMIC", 
+                          "mode": "MODE_DYNAMIC",
                           "dynamicThreshold": 0.3
                       }
                   }
@@ -166,102 +146,109 @@ jobs:
                   {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
                   {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
                   {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"}
-              ],
-              "generationConfig": { "response_mime_type": "application/json" }
+              ]
           }
 
-          parsed = None
-          max_retries = 3
-
-          for attempt in range(max_retries):
-              print(f"🤖 Attempt {attempt+1}...")
+          full_text = ""
+          for attempt in range(3):
               try:
-                  resp = requests.post(url, headers=headers, json=payload, timeout=60)
-                  
-                  if resp.status_code != 200:
+                  resp = requests.post(url, headers=headers, json=payload, timeout=120)
+                  if resp.status_code == 200:
+                      full_text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
+                      print("🔥 Content Generated!")
+                      break
+                  else:
                       print(f"⚠️ API Error {resp.status_code}: {resp.text}")
                       time.sleep(10)
-                      continue
-                      
-                  data = resp.json()
-                  
-                  # Extract text from raw JSON response
-                  raw_text = data["candidates"][0]["content"]["parts"][0]["text"]
-                  clean_text = clean_json(raw_text)
-                  parsed = json.loads(clean_text)
-                  
-                  if "buzzing today" in parsed['title'].lower():
-                      raise ValueError("Generic title detected, retrying...")
-                      
-                  print(f"🔥 Success! Story: {parsed['title']}")
-                  break 
-                  
               except Exception as e:
-                  print(f"⚠️ Exception: {e}")
+                  print(f"⚠️ Network Error: {e}")
                   time.sleep(10)
+          
+          if not full_text: raise SystemExit("Failed to get content from Gemini.")
+
+          # --- 6. PARSE RESPONSE ---
+          parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
+          
+          current_section = None
+          lines = full_text.splitlines()
+
+          for line in lines:
+              clean = line.strip().replace("**", "")
+              if clean.startswith("TITLE:"):
+                  parsed["TITLE"] = clean.replace("TITLE:", "").strip()
+                  current_section = None
+              elif clean.startswith("SLUG:"):
+                  parsed["SLUG"] = clean.replace("SLUG:", "").strip()
+                  current_section = None
+              elif clean.startswith("EXCERPT:"):
+                  parsed["EXCERPT"] = clean.replace("EXCERPT:", "").strip()
+                  current_section = None
+              elif clean.startswith("CATEGORY:"):
+                  parsed["CATEGORY"] = clean.replace("CATEGORY:", "").strip()
+                  current_section = None
+              elif clean.startswith("TAGS:"):
+                  parsed["TAGS"] = clean.replace("TAGS:", "").strip()
+                  current_section = None
+              elif clean.startswith("IMAGE_KEYWORD:"):
+                  parsed["IMAGE_KEYWORD"] = clean.replace("IMAGE_KEYWORD:", "").strip()
+                  current_section = None
+              elif clean.startswith("BODY:"):
+                  current_section = "BODY"
                   continue
+              elif current_section == "BODY":
+                  parsed["BODY"] += line + "\n"
 
-          if not parsed:
-              print("❌ All attempts failed. Exiting.")
-              exit(1)
+          # Fallback Slug
+          if not parsed["SLUG"]:
+              parsed["SLUG"] = re.sub(r'[^a-z0-9-]', '-', parsed["TITLE"].lower()).strip('-')
 
-          # --- 7. ASSEMBLE FRONT MATTER ---
-          image_url = get_real_image(parsed['image_keyword'])
+          # --- 7. ASSEMBLE FILE ---
+          image_url = get_real_image(parsed['IMAGE_KEYWORD'])
           authors = ["The Tea Master", "Nairobi Gossip Desk", "Bongo Flavor", "Kampala Insider"]
           
+          # Handle Tags List (Convert string "[tag1, tag2]" to proper JSON array)
+          try:
+              # Simple clean up to handle "tag1, tag2" or "[tag1, tag2]"
+              tags_raw = parsed["TAGS"].strip("[]")
+              tags_clean = [t.strip() for t in tags_raw.split(',') if t.strip()]
+          except:
+              tags_clean = ["gossip", "east-africa"]
+
           final_file = f"""---
-          title: "{parsed['title']}"
-          slug: "{parsed['slug']}"
-          excerpt: "{parsed['excerpt']}"
+          title: "{parsed['TITLE'].replace('"', "'")}"
+          slug: "{parsed['SLUG']}"
+          excerpt: "{parsed['EXCERPT'].replace('"', "'")}"
           image: "{image_url}"
-          category: "{parsed['category']}"
+          category: "{parsed['CATEGORY']}"
           author: "{random.choice(authors)}"
           date: "{today_str}"
-          tags: {json.dumps(parsed['tags'])}
+          tags: {json.dumps(tags_clean)}
           featured: false
           ---
 
-          {parsed['body']}
+          {parsed['BODY']}
           """
 
           import textwrap
           final_file = textwrap.dedent(final_file).strip()
-          
+
+          # Save to Disk
           out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
           os.makedirs(out_dir, exist_ok=True)
           
-          filename = f"{parsed['slug']}.md"
-          filepath = os.path.join(out_dir, filename)
-          
-          with open(filepath, "w", encoding="utf-8") as f:
+          with open(os.path.join(out_dir, f"{parsed['SLUG']}.md"), "w", encoding="utf-8") as f:
               f.write(final_file)
           
-          print(f"✅ Created File: {filepath}")
+          print(f"✅ Success! Created {parsed['SLUG']}.md")
           EOF
 
-      # --- VERIFICATION STEP ---
-      - name: Check File Generation
-        run: |
-          if [ -z "$(ls -A content/posts/*.md 2>/dev/null)" ]; then
-             echo "❌ No posts generated!"
-             exit 1
-          else
-             echo "✅ Posts found:"
-             ls content/posts/*.md
-          fi
-
-      # --- MANUAL GIT COMMIT ---
-      - name: Commit and Push
-        run: |
-          git config --global user.name "Gossip Bot"
-          git config --global user.email "bot@thescoppekenya.com"
-          
-          git add content/posts/*.md
-          
-          if git diff-index --quiet HEAD; then
-            echo "⚠️ No changes to commit."
-            exit 1 
-          else
-            git commit -m "🔥 New Tea Served: $(date)"
-            git push
-          fi
+      - name: Commit and push article
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "content: fresh tea served ☕ (${{ github.run_id }})"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: ${{ env.POSTS_DIR }}/*.md
+          commit_user_name: "Content Bot"
+          commit_user_email: "actions@github.com"
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
