@@ -1,8 +1,7 @@
-name: East Africa Gossip Bot
+name: East Africa Gossip Bot (Pro & Infinite Retry)
 
 on:
   schedule:
-    # 6 Runs per day (Approx every 4 hours)
     - cron: '0 0 * * *'   # 3 AM EAT
     - cron: '0 4 * * *'   # 7 AM EAT
     - cron: '0 8 * * *'   # 11 AM EAT
@@ -73,14 +72,19 @@ jobs:
           
           if manual_input:
               topic = manual_input
-              search_query = f"{topic} news in {country_name} today {full_date_str}"
+              query_context = f"{topic} news in {country_name}"
           else:
               topic = random.choice(categories)
-              search_query = f"trending {topic} news stories in {country_name} today {full_date_str}"
+              query_context = f"latest {topic} news and rumors in {country_name}"
 
           print(f"🎯 Target: {country_name} | Topic: {topic}")
 
-          # --- 3. IMAGE HELPER ---
+          # --- 3. HELPER FUNCTIONS ---
+          def clean_json(text):
+              text = re.sub(r'```json\s*', '', text)
+              text = re.sub(r'```', '', text)
+              return text.strip()
+
           def get_real_image(query):
               access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
               fallback_image = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
@@ -95,20 +99,18 @@ jobs:
               except Exception: pass
               return fallback_image
 
-          # --- 4. CONSTRUCT PROMPT ---
+          # --- 4. PROMPT (No Search Instructions) ---
           spec_text = f"""
           Current Date: {full_date_str}
-          Search Query: "{search_query}"
+          Topic: "{query_context}"
           
           ROLE: You are "The Tea Master", East Africa's sharpest gossip blogger.
           
-          TASK: Use Google Search to find the HOTTEST story for "{topic}" in {country_name} happening TODAY. Write a blog post about it.
+          TASK: Based on your knowledge of current events and trends in {country_name}, write a spicy blog post about the hottest "{topic}" story right now. 
           
           TONE:
           - Use slang ("Wueh!", "Imagine!", "Tea", "Kwani?").
-          - If Politics: Focus on SCANDAL/DRAMA.
-          - If Sports: Be a DIE-HARD FAN.
-          - If Business: Focus on MONEY GOSSIP.
+          - Be dramatic and engaging.
 
           *** STRICT OUTPUT FORMAT ***
           Do NOT write Markdown/YAML yourself. Provide raw data labeled exactly like this:
@@ -126,22 +128,15 @@ jobs:
           api_key = os.environ.get("GEMINI_API_KEY")
           if not api_key: raise SystemExit("Missing GEMINI_API_KEY")
 
-          # --- 5. CALL GEMINI (Raw API) ---
-          # Using gemini-1.5-flash (STABLE)
-          url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+          # --- 5. CALL GEMINI (Infinite Retry Loop) ---
+          # Using gemini-1.5-pro-latest (The most powerful stable model)
+          url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro-latest:generateContent?key={api_key}"
           
           headers = { "Content-Type": "application/json" }
           
+          # NO TOOLS. PURE PROMPTING.
           payload = {
               "contents": [{ "parts": [{ "text": spec_text }] }],
-              "tools": [{
-                  "googleSearchRetrieval": {
-                      "dynamicRetrievalConfig": {
-                          "mode": "MODE_DYNAMIC",  # <--- THIS WAS THE FIX
-                          "dynamicThreshold": 0.3
-                      }
-                  }
-              }],
               "safetySettings": [
                   {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
                   {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
@@ -151,19 +146,31 @@ jobs:
           }
 
           full_text = ""
-          for attempt in range(3):
+          attempt = 0
+          
+          while True:
+              attempt += 1
+              print(f"🤖 Attempt {attempt}...")
               try:
                   resp = requests.post(url, headers=headers, json=payload, timeout=120)
+                  
                   if resp.status_code == 200:
                       full_text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
                       print("🔥 Content Generated!")
-                      break
+                      break # Exit loop on success
+                  
+                  elif resp.status_code in [429, 503, 500]:
+                      print(f"⏳ API Busy/Error ({resp.status_code}). Sleeping for 60s...")
+                      time.sleep(60) # Wait 1 minute and try again
+                      continue
+                  
                   else:
-                      print(f"⚠️ API Error {resp.status_code}: {resp.text}")
-                      time.sleep(10)
+                      print(f"⚠️ Fatal Error {resp.status_code}: {resp.text}")
+                      break # Exit on fatal errors (400, 403, 404)
+                      
               except Exception as e:
                   print(f"⚠️ Network Error: {e}")
-                  time.sleep(10)
+                  time.sleep(60)
           
           if not full_text: raise SystemExit("Failed to get content from Gemini.")
 
@@ -207,11 +214,11 @@ jobs:
           image_url = get_real_image(parsed['IMAGE_KEYWORD'])
           authors = ["The Tea Master", "Nairobi Gossip Desk", "Bongo Flavor", "Kampala Insider"]
           
-          # Clean Tags
+          # Handle Tags
           try:
               tags_clean = [t.strip() for t in parsed["TAGS"].strip("[]").split(',')]
           except:
-              tags_clean = ["gossip", "news"]
+              tags_clean = ["gossip", "east-africa"]
 
           final_file = f"""---
           title: "{parsed['TITLE'].replace('"', "'")}"
