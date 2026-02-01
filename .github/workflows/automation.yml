@@ -1,14 +1,14 @@
-name: East Africa Gossip Bot (Exact Times)
+name: East Africa Gossip Bot (Raw API)
 
 on:
   schedule:
     # --- EXACT EAT TIMES (Converted to UTC) ---
-    - cron: '0 0 * * *'   # 3:00 AM EAT (Tanzania Slot)
-    - cron: '0 4 * * *'   # 7:00 AM EAT (Kenya Slot)
-    - cron: '0 8 * * *'   # 11:00 AM EAT (Uganda Slot)
-    - cron: '0 12 * * *'  # 3:00 PM EAT (Tanzania Slot)
-    - cron: '0 16 * * *'  # 7:00 PM EAT (Kenya Slot)
-    - cron: '0 20 * * *'  # 11:00 PM EAT (Uganda Slot)
+    - cron: '0 0 * * *'   # 3:00 AM EAT
+    - cron: '0 4 * * *'   # 7:00 AM EAT
+    - cron: '0 8 * * *'   # 11:00 AM EAT
+    - cron: '0 12 * * *'  # 3:00 PM EAT
+    - cron: '0 16 * * *'  # 7:00 PM EAT
+    - cron: '0 20 * * *'  # 11:00 PM EAT
 
   workflow_dispatch:
     inputs:
@@ -43,7 +43,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests google-generativeai python-slugify
+          # We only need requests and slugify. No more SDK.
+          pip install requests python-slugify
 
       - name: Generate article with Gemini
         env:
@@ -53,22 +54,15 @@ jobs:
         run: |
           python << 'EOF'
           import os, json, datetime, requests, random, time, re
-          import google.generativeai as genai
           from slugify import slugify
-          
-          # --- FIX: Correct Import Path for Safety Settings ---
-          from google.generativeai.types import HarmCategory, HarmBlockThreshold
 
           # --- CONFIGURATION ---
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_hour = datetime.datetime.utcnow().hour
           
-          # Configure Gemini SDK
           api_key = os.environ.get("GEMINI_API_KEY")
           if not api_key: raise SystemExit("Missing GEMINI_API_KEY")
-          
-          genai.configure(api_key=api_key)
 
           # --- 1. COUNTRY ROTATION (Synced to exact hours) ---
           if current_hour < 2: 
@@ -151,25 +145,37 @@ jobs:
           }}
           """
 
-          # --- 6. CALL GEMINI (STABLE) ---
-          MODEL_NAME = 'gemini-1.5-flash'
+          # --- 6. RAW API CALL (Replaces SDK) ---
+          # Using requests direct to v1beta to ensure tools and model work perfectly.
           
-          # SAFETY SETTINGS (Filters Disabled)
-          safety_settings = {
-              HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
-              HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
-              HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
-              HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
+          url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+          
+          headers = {
+              "Content-Type": "application/json"
           }
-
-          tools = [
-              {'google_search_retrieval': {
-                  'dynamic_retrieval_config': {
-                      'mode': 'dynamic',
-                      'dynamic_threshold': 0.3
+          
+          payload = {
+              "contents": [{
+                  "parts": [{"text": prompt}]
+              }],
+              "tools": [{
+                  "googleSearchRetrieval": {
+                      "dynamicRetrievalConfig": {
+                          "mode": "dynamic",
+                          "dynamicThreshold": 0.3
+                      }
                   }
-              }}
-          ]
+              }],
+              "safetySettings": [
+                  {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
+                  {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
+                  {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
+                  {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"}
+              ],
+              "generationConfig": {
+                  "response_mime_type": "application/json"
+              }
+          }
 
           parsed = None
           max_retries = 3
@@ -177,18 +183,18 @@ jobs:
           for attempt in range(max_retries):
               print(f"🤖 Attempt {attempt+1}...")
               try:
-                  model = genai.GenerativeModel(MODEL_NAME)
+                  resp = requests.post(url, headers=headers, json=payload, timeout=60)
                   
-                  response = model.generate_content(
-                      prompt,
-                      tools=tools,
-                      safety_settings=safety_settings,
-                      generation_config=genai.types.GenerationConfig(
-                          response_mime_type="application/json"
-                      )
-                  )
+                  if resp.status_code != 200:
+                      print(f"⚠️ API Error {resp.status_code}: {resp.text}")
+                      time.sleep(10)
+                      continue
+                      
+                  data = resp.json()
                   
-                  clean_text = clean_json(response.text)
+                  # Extract text from raw JSON response
+                  raw_text = data["candidates"][0]["content"]["parts"][0]["text"]
+                  clean_text = clean_json(raw_text)
                   parsed = json.loads(clean_text)
                   
                   if "buzzing today" in parsed['title'].lower():
@@ -198,7 +204,7 @@ jobs:
                   break 
                   
               except Exception as e:
-                  print(f"⚠️ Error: {e}")
+                  print(f"⚠️ Exception: {e}")
                   time.sleep(10)
                   continue
 
