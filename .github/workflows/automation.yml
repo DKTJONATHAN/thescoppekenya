@@ -3,8 +3,6 @@ name: East Africa Gossip Bot (Exact Times)
 on:
   schedule:
     # --- EXACT EAT TIMES (Converted to UTC) ---
-    # GitHub uses UTC, so we subtract 3 hours from Kenya Time.
-    
     - cron: '0 0 * * *'   # 3:00 AM EAT (Tanzania Slot)
     - cron: '0 4 * * *'   # 7:00 AM EAT (Kenya Slot)
     - cron: '0 8 * * *'   # 11:00 AM EAT (Uganda Slot)
@@ -57,7 +55,9 @@ jobs:
           import os, json, datetime, requests, random, time, re
           import google.generativeai as genai
           from slugify import slugify
-          from google.ai.generativelanguage_v1beta.types import HarmCategory, HarmBlockThreshold
+          
+          # --- FIX: Correct Import Path for Safety Settings ---
+          from google.generativeai.types import HarmCategory, HarmBlockThreshold
 
           # --- CONFIGURATION ---
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
@@ -71,20 +71,18 @@ jobs:
           genai.configure(api_key=api_key)
 
           # --- 1. COUNTRY ROTATION (Synced to exact hours) ---
-          # UTC Hours: 0, 4, 8, 12, 16, 20
-          
           if current_hour < 2: 
-              country_name = 'Tanzania' # 00:00 UTC -> 3 AM EAT
+              country_name = 'Tanzania' # 3 AM EAT
           elif current_hour < 6: 
-              country_name = 'Kenya'    # 04:00 UTC -> 7 AM EAT
+              country_name = 'Kenya'    # 7 AM EAT
           elif current_hour < 10: 
-              country_name = 'Uganda'   # 08:00 UTC -> 11 AM EAT
+              country_name = 'Uganda'   # 11 AM EAT
           elif current_hour < 14: 
-              country_name = 'Tanzania' # 12:00 UTC -> 3 PM EAT
+              country_name = 'Tanzania' # 3 PM EAT
           elif current_hour < 18: 
-              country_name = 'Kenya'    # 16:00 UTC -> 7 PM EAT
+              country_name = 'Kenya'    # 7 PM EAT
           else: 
-              country_name = 'Uganda'   # 20:00 UTC -> 11 PM EAT
+              country_name = 'Uganda'   # 11 PM EAT
 
           # --- 2. DYNAMIC TOPIC PICKER ---
           categories = ["Entertainment", "Sports", "Politics", "Business", "Technology"]
@@ -97,7 +95,6 @@ jobs:
               print(f"🎯 Manual Topic: {manual_input}")
           else:
               selected_category = random.choice(categories)
-              # Force "Today" in search to get fresh news
               search_query = f"trending {selected_category} news in {country_name} today {full_date_str}"
               print(f"🌍 Searching for: [{selected_category}] in [{country_name}] (Hour: {current_hour} UTC)")
 
@@ -157,7 +154,7 @@ jobs:
           # --- 6. CALL GEMINI (STABLE) ---
           MODEL_NAME = 'gemini-1.5-flash'
           
-          # DISABLE SAFETY FILTERS (Crucial for Gossip/Drama topics)
+          # SAFETY SETTINGS (Filters Disabled)
           safety_settings = {
               HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
               HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
@@ -207,7 +204,7 @@ jobs:
 
           if not parsed:
               print("❌ All attempts failed. Exiting.")
-              exit(1) # FORCE FAILURE so you see Red X in Actions
+              exit(1)
 
           # --- 7. ASSEMBLE FRONT MATTER ---
           image_url = get_real_image(parsed['image_keyword'])
@@ -260,10 +257,8 @@ jobs:
           git config --global user.name "Gossip Bot"
           git config --global user.email "bot@thescoppekenya.com"
           
-          # Force add new files
           git add content/posts/*.md
           
-          # Commit only if changes exist
           if git diff-index --quiet HEAD; then
             echo "⚠️ No changes to commit."
             exit 1 
