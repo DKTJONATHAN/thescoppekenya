@@ -1,8 +1,8 @@
-name: East Africa Gossip Bot
+name: East Africa Gossip Bot (Gemini Search)
 
 on:
   schedule:
-    # Runs 6 times a day (Every 4 hours starting at 4 AM EAT / 1 AM UTC)
+    # Runs 6 times a day (Every 4 hours starting at 4 AM EAT)
     - cron: '0 1 * * *'   # 1. Kenya
     - cron: '0 5 * * *'   # 2. Uganda
     - cron: '0 9 * * *'   # 3. Tanzania
@@ -42,10 +42,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # FIX: Downgrade setuptools to allow installing old feedparser (required by pygooglenews)
-          pip install "setuptools<58.0.0" wheel
-          # Install remaining dependencies (using python-slugify instead of slugify)
-          pip install requests pygooglenews feedparser python-slugify
+          # We REMOVED pygooglenews/feedparser to fix your error.
+          # We ADDED google-generativeai for the official SDK.
+          pip install requests google-generativeai python-slugify
 
       - name: Generate article with Gemini
         env:
@@ -54,180 +53,123 @@ jobs:
           MANUAL_TOPIC: ${{ inputs.manual_topic }}
         run: |
           python << 'EOF'
-          import os, json, datetime, requests, re, random, time
-          from pygooglenews import GoogleNews
+          import os, json, datetime, requests, random, time
+          import google.generativeai as genai
           from slugify import slugify
+          from google.ai.generativelanguage_v1beta.types import content
 
           # --- CONFIGURATION ---
           date_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           current_hour = datetime.datetime.utcnow().hour
           
-          # --- 1. COUNTRY ROTATION LOGIC (6 Runs) ---
-          # 1&4=Kenya, 2&5=Uganda, 3&6=Tanzania
+          # Configure Gemini SDK
+          api_key = os.environ.get("GEMINI_API_KEY")
+          if not api_key: raise SystemExit("Missing GEMINI_API_KEY")
+          
+          genai.configure(api_key=api_key)
+
+          # --- 1. COUNTRY ROTATION LOGIC ---
           if current_hour < 4:
-              target_country = 'KE'
               country_name = 'Kenya'
           elif current_hour < 8:
-              target_country = 'UG'
               country_name = 'Uganda'
           elif current_hour < 12:
-              target_country = 'TZ'
               country_name = 'Tanzania'
           elif current_hour < 16:
-              target_country = 'KE'
               country_name = 'Kenya'
           elif current_hour < 20:
-              target_country = 'UG'
               country_name = 'Uganda'
           else:
-              target_country = 'TZ'
               country_name = 'Tanzania'
 
-          print(f"🌍 Target Region: {country_name}")
-
-          # --- 2. FETCH REAL TRENDS ---
-          def get_trend(country_code, attempts=0):
-              if attempts > 2: return None # Prevent infinite loops
-              
-              print(f"🔍 Searching trends in {country_code}...")
-              gn = GoogleNews(lang='en', country=country_code)
-              try:
-                  search = gn.top_news()
-                  entries = search['entries']
-                  
-                  # Filter: Remove Hard Politics, keep Ent/Tech/Sports/Biz
-                  valid_stories = []
-                  forbidden_terms = ["parliament", "bill", "constitution", "senate", "governor", "imf", "tax"]
-                  
-                  for e in entries[:15]:
-                      title_lower = e.title.lower()
-                      # If it has forbidden terms, skip UNLESS it has entertainment terms
-                      if any(x in title_lower for x in forbidden_terms):
-                          if not any(y in title_lower for y in ["star", "music", "concert", "drama", "scandal", "tiktok"]):
-                              continue
-                      valid_stories.append(e)
-                  
-                  if valid_stories:
-                      return random.choice(valid_stories)
-                  else:
-                      # Fallback logic: Try other countries if current is dry
-                      next_country = 'KE' if country_code != 'KE' else 'TZ'
-                      print(f"⚠️ No fun news in {country_code}, trying {next_country}...")
-                      return get_trend(next_country, attempts + 1)
-                      
-              except Exception as e:
-                  print(f"Error fetching news: {e}")
-                  return None
-
-          # Check for manual input or fetch trend
+          # Check for manual input
           manual_input = os.environ.get('MANUAL_TOPIC', '').strip()
           
           if manual_input:
-              story_title = manual_input
-              story_link = "Manual Topic"
-              print(f"🎯 Manual Topic Selected: {story_title}")
+              topic_instruction = f"The user explicitly wants you to talk about: {manual_input}."
+              print(f"🎯 Manual Topic: {manual_input}")
           else:
-              trend = get_trend(target_country)
-              if not trend:
-                  # Ultimate fallback
-                  story_title = "Why East African Internet is Boring Today"
-                  story_link = "None"
-              else:
-                  story_title = trend.title
-                  story_link = trend.link
-              print(f"🔥 Trending Story Found: {story_title}")
+              topic_instruction = f"Search for the absolute trending entertainment/gossip stories in {country_name} TODAY. Pick the juiciest one."
+              print(f"🌍 Target Region: {country_name}")
 
-          # --- 3. IMAGE HELPER ---
+          # --- 2. IMAGE HELPER ---
           def get_real_image(query):
               access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
-              fallback_image = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800"
-              
-              if not access_key: return fallback_image
-              
-              url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}"
+              fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800"
+              if not access_key: return fallback
               try:
+                  url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}"
                   resp = requests.get(url, timeout=10)
                   if resp.status_code == 200:
                       return resp.json()['urls']['regular']
               except: pass
-              return fallback_image
+              return fallback
 
-          # --- 4. CONSTRUCT PROMPT (THE YAPPER) ---
-          spec_text = f"""
-          You are a popular, slightly chaotic East African content creator who LOVES tea (gossip).
+          # --- 3. THE "YAPPER" PROMPT ---
+          # We use the 'google_search_retrieval' tool to force it to look up real info.
           
-          TASK: Write a blog post about this trending story: "{story_title}"
-          SOURCE CONTEXT: {story_link}
-          REGION: {country_name}
+          prompt = f"""
+          {topic_instruction}
 
-          TONE: 
-          - You are a "Yapper" (talkative, opinionated, funny).
-          - Use slang like "Wueh!", "Eish!", "Imagine!", "Tea", "Weuh".
-          - NO robotic language. NO "In conclusion". NO "Delving into".
-          - If the story is Tech/Biz: Make it sound like a conspiracy or money gossip.
-          - If the story is Sports: Be very emotional (fan view).
-          - STRICTLY NO BORING POLITICS. If it's political, focus on the DRAMA/Scandal only.
+          ROLE: You are a chaotic, funny East African gossip blogger. 
+          
+          TASK: 
+          1. Use Google Search to find the real details of this story.
+          2. Write a blog post about it.
 
-          FORMAT REQUIREMENTS:
-          - Return RAW JSON ONLY.
-          - Fields: title, slug, excerpt, category, tags, image_keyword, body.
-          - Categories allowed: sports, entertainment, technology, business, relationships.
+          TONE GUIDE:
+          - Use slang ("Wueh!", "Tea", "Imagine", "Eish!").
+          - Be opinionated. If it's a scandal, drag them. If it's success, hype them.
+          - NO boring politics (Parliament bills, taxes) unless it's a scandal.
+          - NO robotic intros ("In the digital age..."). Start with the drama!
 
-          JSON STRUCTURE:
+          OUTPUT FORMAT:
+          Return strictly valid JSON with these fields:
           {{
-            "title": "Clickbaity Fun Title",
+            "title": "A short, clickbaity title",
             "slug": "url-friendly-slug",
-            "excerpt": "One spicy sentence summary.",
-            "category": "entertainment",
-            "tags": ["gossip", "kenya", "drama"],
-            "image_keyword": "visual search term",
-            "body": "The full article in Markdown..."
+            "excerpt": "One spicy sentence summary",
+            "category": "Choose one: [Entertainment, Business, Sports, Technology, Relationships]",
+            "tags": ["tag1", "tag2"],
+            "image_keyword": "A single search term for the header image",
+            "body": "The full article content in Markdown format..."
           }}
           """
 
-          api_key = os.environ.get("GEMINI_API_KEY")
-          if not api_key: raise SystemExit("Missing GEMINI_API_KEY")
-
-          # --- 5. CALL GEMINI ---
-          url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + api_key
-          headers = { "Content-Type": "application/json" }
-          payload = { 
-            "contents": [{ "parts": [{ "text": spec_text }] }],
-            "generationConfig": { "response_mime_type": "application/json" }
-          }
-
-          # Retry logic
-          for attempt in range(3):
-              try:
-                  resp = requests.post(url, headers=headers, data=json.dumps(payload), timeout=60)
-                  if resp.status_code == 200:
-                      response_data = resp.json()
-                      raw_json = response_data["candidates"][0]["content"]["parts"][0]["text"]
-                      parsed = json.loads(raw_json)
-                      break
-                  time.sleep(10)
-              except Exception as e:
-                  print(f"Retrying... Error: {e}")
-                  time.sleep(10)
+          # --- 4. CALL GEMINI (With Search Grounding) ---
+          # We use gemini-2.0-flash-exp (Preview) as requested for speed and search capabilities.
           
-          if 'parsed' not in locals(): raise SystemExit("Failed to generate content")
+          model = genai.GenerativeModel('gemini-2.0-flash-exp')
+          
+          # Generate content with Search Tool enabled
+          try:
+              response = model.generate_content(
+                  prompt,
+                  tools='google_search_retrieval', # This enables real-time search
+                  generation_config=genai.types.GenerationConfig(
+                      response_mime_type="application/json"
+                  )
+              )
+              
+              parsed = json.loads(response.text)
+              print(f"🔥 Story Generated: {parsed['title']}")
+              
+          except Exception as e:
+              print(f"❌ Gemini Error: {e}")
+              raise SystemExit("Failed to generate content via Gemini.")
 
-          # --- 6. ASSEMBLE FRONT MATTER ---
-          print(f"📷 Fetching image for: {parsed['image_keyword']}")
+          # --- 5. ASSEMBLE FRONT MATTER ---
           image_url = get_real_image(parsed['image_keyword'])
           
-          # Fix Author (Randomize for flavor)
           authors = ["The Tea Master", "Nairobi Gossip Desk", "Bongo Flavor", "Kampala Insider"]
-          author = random.choice(authors)
-
-          # Construct File Content
+          
           final_file = f"""---
           title: "{parsed['title']}"
           slug: "{parsed['slug']}"
           excerpt: "{parsed['excerpt']}"
           image: "{image_url}"
           category: "{parsed['category']}"
-          author: "{author}"
+          author: "{random.choice(authors)}"
           date: "{date_str}"
           tags: {json.dumps(parsed['tags'])}
           featured: false
@@ -236,7 +178,7 @@ jobs:
           {parsed['body']}
           """
 
-          # Dedent and Save
+          # Save File
           import textwrap
           final_file = textwrap.dedent(final_file).strip()
           
@@ -255,7 +197,7 @@ jobs:
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: new gossip dropped ☕ (${{ github.run_id }})"
+          commit_message: "content: fresh tea served ☕ (${{ github.run_id }})"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: ${{ env.POSTS_DIR }}/*.md
           commit_user_name: "Gossip Bot"
