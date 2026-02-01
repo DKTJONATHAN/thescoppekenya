@@ -1,4 +1,4 @@
-name: East Africa Gossip Bot (Strict Gemini 3 Pro)
+name: East Africa Gossip Bot (Gemini 3 Flash)
 
 on:
   schedule:
@@ -90,7 +90,7 @@ jobs:
               except Exception: pass
               return fallback_image
 
-          # --- 4. PROMPT ---
+          # --- 4. PROMPT (No Search, Pure Knowledge) ---
           spec_text = f"""
           Current Date: {full_date_str}
           Target Country: {country_name}
@@ -120,12 +120,13 @@ jobs:
           api_key = os.environ.get("GEMINI_API_KEY")
           if not api_key: raise SystemExit("Missing GEMINI_API_KEY")
 
-          # --- 5. CALL GEMINI (Strictly Gemini 3 Pro) ---
-          # We use gemini-3-pro-preview because your logs proved you have access to it.
-          url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-preview:generateContent?key={api_key}"
+          # --- 5. CALL GEMINI (Gemini 3 Flash Preview) ---
+          # EXACT model from your working workflow
+          url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key={api_key}"
           
           headers = { "Content-Type": "application/json" }
           
+          # NO TOOLS. PURE PROMPT.
           payload = {
               "contents": [{ "parts": [{ "text": spec_text }] }],
               "safetySettings": [
@@ -139,10 +140,10 @@ jobs:
           full_text = ""
           attempt = 0
           
-          # INFINITE RETRY LOOP (For 429 Quota Errors)
+          # INFINITE RETRY LOOP (For 429 Quota/Busy Errors)
           while True:
               attempt += 1
-              print(f"🤖 Attempt {attempt} with Gemini 3 Pro...")
+              print(f"🤖 Attempt {attempt} with Gemini 3 Flash...")
               try:
                   resp = requests.post(url, headers=headers, json=payload, timeout=120)
                   
@@ -151,16 +152,16 @@ jobs:
                       print("🔥 Content Generated!")
                       break 
                   
-                  # 429 = Quota Exceeded (The error you saw earlier)
-                  # 503 = Service Overloaded
+                  # 429 = Quota Exceeded / Busy
                   elif resp.status_code in [429, 503, 500]:
                       print(f"⏳ Busy (Status {resp.status_code}). Sleeping for 60s...")
-                      time.sleep(60) # Wait 1 minute and try again endlessly
+                      time.sleep(60)
                       continue
                   
                   else:
-                      # Only exit on Fatal errors (Auth failure, 404, etc)
                       print(f"⚠️ Fatal Error {resp.status_code}: {resp.text}")
+                      # Fatal errors (400/404) mean the model name or key is wrong. 
+                      # We exit here to avoid infinite loops on bad config.
                       raise SystemExit("Fatal API Error")
                       
               except Exception as e:
