@@ -1,4 +1,4 @@
-name: East Africa Gossip Bot (Raw API)
+name: East Africa Gossip Bot (Final Fix)
 
 on:
   schedule:
@@ -43,7 +43,6 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # We only need requests and slugify. No more SDK.
           pip install requests python-slugify
 
       - name: Generate article with Gemini
@@ -146,22 +145,18 @@ jobs:
           """
 
           # --- 6. RAW API CALL (Replaces SDK) ---
-          # Using requests direct to v1beta to ensure tools and model work perfectly.
           
           url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
           
-          headers = {
-              "Content-Type": "application/json"
-          }
+          headers = { "Content-Type": "application/json" }
           
+          # FIX: 'mode' must be 'MODE_DYNAMIC' (Uppercase Enum), not 'dynamic'
           payload = {
-              "contents": [{
-                  "parts": [{"text": prompt}]
-              }],
+              "contents": [{ "parts": [{"text": prompt}] }],
               "tools": [{
                   "googleSearchRetrieval": {
                       "dynamicRetrievalConfig": {
-                          "mode": "dynamic",
+                          "mode": "MODE_DYNAMIC", 
                           "dynamicThreshold": 0.3
                       }
                   }
@@ -172,9 +167,7 @@ jobs:
                   {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
                   {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"}
               ],
-              "generationConfig": {
-                  "response_mime_type": "application/json"
-              }
+              "generationConfig": { "response_mime_type": "application/json" }
           }
 
           parsed = None
