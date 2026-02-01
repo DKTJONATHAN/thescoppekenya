@@ -1,4 +1,4 @@
-name: East Africa Gossip Bot (Strict Pro & Infinite Retry)
+name: East Africa Gossip Bot (Smart Pro)
 
 on:
   schedule:
@@ -81,9 +81,7 @@ jobs:
           def get_real_image(query):
               access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
               fallback_image = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
-              
               if not access_key: return fallback_image
-              
               url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}"
               try:
                   resp = requests.get(url, timeout=10)
@@ -92,7 +90,7 @@ jobs:
               except Exception: pass
               return fallback_image
 
-          # --- 4. PROMPT (No Search Instructions, Just Knowledge) ---
+          # --- 4. PROMPT ---
           spec_text = f"""
           Current Date: {full_date_str}
           Target Country: {country_name}
@@ -122,13 +120,21 @@ jobs:
           api_key = os.environ.get("GEMINI_API_KEY")
           if not api_key: raise SystemExit("Missing GEMINI_API_KEY")
 
-          # --- 5. CALL GEMINI (Infinite Retry Loop) ---
-          # Using gemini-1.5-pro (The standard Pro model - 'latest' alias causes 404s)
-          url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key={api_key}"
-          
+          # --- 5. ROBUST MODEL SELECTOR ---
+          # We try these models in order. 
+          # If 404 (Not Found) -> Try next.
+          # If 429 (Busy) -> Retry same model forever.
+          models_to_try = [
+              "gemini-1.5-pro-002",
+              "gemini-1.5-pro-001",
+              "gemini-1.5-pro",
+              "gemini-pro"
+          ]
+
+          full_text = ""
           headers = { "Content-Type": "application/json" }
           
-          # NO TOOLS. PURE PROMPT.
+          # No Search Tools
           payload = {
               "contents": [{ "parts": [{ "text": spec_text }] }],
               "safetySettings": [
@@ -139,36 +145,42 @@ jobs:
               ]
           }
 
-          full_text = ""
-          attempt = 0
-          
-          # INFINITE RETRY LOOP
-          while True:
-              attempt += 1
-              print(f"🤖 Attempt {attempt}...")
-              try:
-                  resp = requests.post(url, headers=headers, json=payload, timeout=120)
-                  
-                  if resp.status_code == 200:
-                      full_text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
-                      print("🔥 Content Generated!")
-                      break # Exit loop only on success
-                  
-                  elif resp.status_code in [429, 503, 500]:
-                      print(f"⏳ API Busy (Status {resp.status_code}). Sleeping for 60s...")
-                      time.sleep(60) # Wait 1 minute and retry
-                      continue
-                  
-                  else:
-                      print(f"⚠️ Fatal Error {resp.status_code}: {resp.text}")
-                      # For fatal errors (like 400 Bad Request), we must exit or it loops forever on bad data
-                      raise SystemExit("Fatal API Error")
+          for model_name in models_to_try:
+              print(f"🤖 Trying Model: {model_name}...")
+              url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}"
+              
+              success = False
+              while True: # Infinite Retry Loop for Busy Signals
+                  try:
+                      resp = requests.post(url, headers=headers, json=payload, timeout=120)
                       
-              except Exception as e:
-                  print(f"⚠️ Network Error: {e}. Retrying in 60s...")
-                  time.sleep(60)
-          
-          if not full_text: raise SystemExit("Failed to get content from Gemini.")
+                      if resp.status_code == 200:
+                          full_text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
+                          print(f"🔥 Success with {model_name}!")
+                          success = True
+                          break # Break retry loop
+                      
+                      elif resp.status_code in [429, 503, 500]:
+                          print(f"⏳ {model_name} Busy (Status {resp.status_code}). Retrying in 60s...")
+                          time.sleep(60)
+                          continue # Retry same model
+                      
+                      elif resp.status_code == 404:
+                          print(f"⚠️ {model_name} Not Found (404). Switching to next model...")
+                          break # Break retry loop, go to next model in for-loop
+                      
+                      else:
+                          print(f"⚠️ Fatal Error {resp.status_code}: {resp.text}")
+                          break # Break retry loop, try next model
+                          
+                  except Exception as e:
+                      print(f"⚠️ Network Error: {e}. Retrying...")
+                      time.sleep(60)
+              
+              if success:
+                  break # Break model loop, we are done!
+
+          if not full_text: raise SystemExit("❌ Failed to generate content with ANY model.")
 
           # --- 6. PARSE RESPONSE ---
           parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
@@ -210,7 +222,6 @@ jobs:
           image_url = get_real_image(parsed['IMAGE_KEYWORD'])
           authors = ["The Tea Master", "Nairobi Gossip Desk", "Bongo Flavor", "Kampala Insider"]
           
-          # Clean Tags
           try:
               tags_clean = [t.strip() for t in parsed["TAGS"].strip("[]").split(',')]
           except:
@@ -234,7 +245,6 @@ jobs:
           import textwrap
           final_file = textwrap.dedent(final_file).strip()
 
-          # SAVE TO ROOT: content/posts
           out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
           os.makedirs(out_dir, exist_ok=True)
           
