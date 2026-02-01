@@ -1,0 +1,262 @@
+name: East Africa Gossip Bot
+
+on:
+  schedule:
+    # Runs 6 times a day (Every 4 hours starting at 4 AM EAT / 1 AM UTC)
+    - cron: '0 1 * * *'   # 1. Kenya
+    - cron: '0 5 * * *'   # 2. Uganda
+    - cron: '0 9 * * *'   # 3. Tanzania
+    - cron: '0 13 * * *'  # 4. Kenya
+    - cron: '0 17 * * *'  # 5. Uganda
+    - cron: '0 21 * * *'  # 6. Tanzania
+  workflow_dispatch:
+    inputs:
+      manual_topic:
+        description: 'Force a topic (optional)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts  # Changed to root content/posts
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # Added pygooglenews for real-time trend fetching
+          pip install requests pygooglenews feedparser slugify
+
+      - name: Generate article with Gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          MANUAL_TOPIC: ${{ inputs.manual_topic }}
+        run: |
+          python << 'EOF'
+          import os, json, datetime, requests, re, random, time
+          from pygooglenews import GoogleNews
+          from slugify import slugify
+
+          # --- CONFIGURATION ---
+          date_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          current_hour = datetime.datetime.utcnow().hour
+          
+          # --- 1. COUNTRY ROTATION LOGIC (6 Runs) ---
+          # 1&4=Kenya, 2&5=Uganda, 3&6=Tanzania
+          if current_hour < 4:
+              target_country = 'KE'
+              country_name = 'Kenya'
+          elif current_hour < 8:
+              target_country = 'UG'
+              country_name = 'Uganda'
+          elif current_hour < 12:
+              target_country = 'TZ'
+              country_name = 'Tanzania'
+          elif current_hour < 16:
+              target_country = 'KE'
+              country_name = 'Kenya'
+          elif current_hour < 20:
+              target_country = 'UG'
+              country_name = 'Uganda'
+          else:
+              target_country = 'TZ'
+              country_name = 'Tanzania'
+
+          print(f"🌍 Target Region: {country_name}")
+
+          # --- 2. FETCH REAL TRENDS ---
+          def get_trend(country_code, attempts=0):
+              if attempts > 2: return None # Prevent infinite loops
+              
+              print(f"🔍 Searching trends in {country_code}...")
+              gn = GoogleNews(lang='en', country=country_code)
+              try:
+                  search = gn.top_news()
+                  entries = search['entries']
+                  
+                  # Filter: Remove Hard Politics, keep Ent/Tech/Sports/Biz
+                  valid_stories = []
+                  forbidden_terms = ["parliament", "bill", "constitution", "senate", "governor", "imf", "tax"]
+                  
+                  for e in entries[:15]:
+                      title_lower = e.title.lower()
+                      # If it has forbidden terms, skip UNLESS it has entertainment terms
+                      if any(x in title_lower for x in forbidden_terms):
+                          if not any(y in title_lower for y in ["star", "music", "concert", "drama", "scandal", "tiktok"]):
+                              continue
+                      valid_stories.append(e)
+                  
+                  if valid_stories:
+                      return random.choice(valid_stories)
+                  else:
+                      # Fallback logic: Try other countries if current is dry
+                      next_country = 'KE' if country_code != 'KE' else 'TZ'
+                      print(f"⚠️ No fun news in {country_code}, trying {next_country}...")
+                      return get_trend(next_country, attempts + 1)
+                      
+              except Exception as e:
+                  print(f"Error fetching news: {e}")
+                  return None
+
+          # Check for manual input or fetch trend
+          manual_input = os.environ.get('MANUAL_TOPIC', '').strip()
+          
+          if manual_input:
+              story_title = manual_input
+              story_link = "Manual Topic"
+              print(f"🎯 Manual Topic Selected: {story_title}")
+          else:
+              trend = get_trend(target_country)
+              if not trend:
+                  # Ultimate fallback
+                  story_title = "Why East African Internet is Boring Today"
+                  story_link = "None"
+              else:
+                  story_title = trend.title
+                  story_link = trend.link
+              print(f"🔥 Trending Story Found: {story_title}")
+
+          # --- 3. IMAGE HELPER ---
+          def get_real_image(query):
+              access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
+              fallback_image = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800"
+              
+              if not access_key: return fallback_image
+              
+              url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}"
+              try:
+                  resp = requests.get(url, timeout=10)
+                  if resp.status_code == 200:
+                      return resp.json()['urls']['regular']
+              except: pass
+              return fallback_image
+
+          # --- 4. CONSTRUCT PROMPT (THE YAPPER) ---
+          spec_text = f"""
+          You are a popular, slightly chaotic East African content creator who LOVES tea (gossip).
+          
+          TASK: Write a blog post about this trending story: "{story_title}"
+          SOURCE CONTEXT: {story_link}
+          REGION: {country_name}
+
+          TONE: 
+          - You are a "Yapper" (talkative, opinionated, funny).
+          - Use slang like "Wueh!", "Eish!", "Imagine!", "Tea", "Weuh".
+          - NO robotic language. NO "In conclusion". NO "Delving into".
+          - If the story is Tech/Biz: Make it sound like a conspiracy or money gossip.
+          - If the story is Sports: Be very emotional (fan view).
+          - STRICTLY NO BORING POLITICS. If it's political, focus on the DRAMA/Scandal only.
+
+          FORMAT REQUIREMENTS:
+          - Return RAW JSON ONLY.
+          - Fields: title, slug, excerpt, category, tags, image_keyword, body.
+          - Categories allowed: sports, entertainment, technology, business, relationships.
+
+          JSON STRUCTURE:
+          {{
+            "title": "Clickbaity Fun Title",
+            "slug": "url-friendly-slug",
+            "excerpt": "One spicy sentence summary.",
+            "category": "entertainment",
+            "tags": ["gossip", "kenya", "drama"],
+            "image_keyword": "visual search term",
+            "body": "The full article in Markdown..."
+          }}
+          """
+
+          api_key = os.environ.get("GEMINI_API_KEY")
+          if not api_key: raise SystemExit("Missing GEMINI_API_KEY")
+
+          # --- 5. CALL GEMINI ---
+          url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + api_key
+          headers = { "Content-Type": "application/json" }
+          payload = { 
+            "contents": [{ "parts": [{ "text": spec_text }] }],
+            "generationConfig": { "response_mime_type": "application/json" }
+          }
+
+          # Retry logic
+          for attempt in range(3):
+              try:
+                  resp = requests.post(url, headers=headers, data=json.dumps(payload), timeout=60)
+                  if resp.status_code == 200:
+                      response_data = resp.json()
+                      raw_json = response_data["candidates"][0]["content"]["parts"][0]["text"]
+                      parsed = json.loads(raw_json)
+                      break
+                  time.sleep(10)
+              except Exception as e:
+                  print(f"Retrying... Error: {e}")
+                  time.sleep(10)
+          
+          if 'parsed' not in locals(): raise SystemExit("Failed to generate content")
+
+          # --- 6. ASSEMBLE FRONT MATTER ---
+          print(f"📷 Fetching image for: {parsed['image_keyword']}")
+          image_url = get_real_image(parsed['image_keyword'])
+          
+          # Fix Author (Randomize for flavor)
+          authors = ["The Tea Master", "Nairobi Gossip Desk", "Bongo Flavor", "Kampala Insider"]
+          author = random.choice(authors)
+
+          # Construct File Content
+          final_file = f"""---
+          title: "{parsed['title']}"
+          slug: "{parsed['slug']}"
+          excerpt: "{parsed['excerpt']}"
+          image: "{image_url}"
+          category: "{parsed['category']}"
+          author: "{author}"
+          date: "{date_str}"
+          tags: {json.dumps(parsed['tags'])}
+          featured: false
+          ---
+
+          {parsed['body']}
+          """
+
+          # Dedent and Save
+          import textwrap
+          final_file = textwrap.dedent(final_file).strip()
+          
+          out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
+          os.makedirs(out_dir, exist_ok=True)
+          
+          filename = f"{parsed['slug']}.md"
+          filepath = os.path.join(out_dir, filename)
+          
+          with open(filepath, "w", encoding="utf-8") as f:
+              f.write(final_file)
+          
+          print(f"✅ Published: {filepath}")
+          EOF
+
+      - name: Commit and push article
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "content: new gossip dropped ☕ (${{ github.run_id }})"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: ${{ env.POSTS_DIR }}/*.md
+          commit_user_name: "Gossip Bot"
+          commit_user_email: "actions@github.com"
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
