@@ -1,4 +1,4 @@
-name: East Africa Gossip Bot (Pro & Infinite Retry)
+name: East Africa Gossip Bot (Strict Pro & Infinite Retry)
 
 on:
   schedule:
@@ -72,19 +72,12 @@ jobs:
           
           if manual_input:
               topic = manual_input
-              query_context = f"{topic} news in {country_name}"
           else:
               topic = random.choice(categories)
-              query_context = f"latest {topic} news and rumors in {country_name}"
 
           print(f"🎯 Target: {country_name} | Topic: {topic}")
 
           # --- 3. HELPER FUNCTIONS ---
-          def clean_json(text):
-              text = re.sub(r'```json\s*', '', text)
-              text = re.sub(r'```', '', text)
-              return text.strip()
-
           def get_real_image(query):
               access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
               fallback_image = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
@@ -99,14 +92,15 @@ jobs:
               except Exception: pass
               return fallback_image
 
-          # --- 4. PROMPT (No Search Instructions) ---
+          # --- 4. PROMPT (No Search Instructions, Just Knowledge) ---
           spec_text = f"""
           Current Date: {full_date_str}
-          Topic: "{query_context}"
+          Target Country: {country_name}
+          Topic: {topic}
           
           ROLE: You are "The Tea Master", East Africa's sharpest gossip blogger.
           
-          TASK: Based on your knowledge of current events and trends in {country_name}, write a spicy blog post about the hottest "{topic}" story right now. 
+          TASK: Tell me what is trending regarding "{topic}" in {country_name} right now. Write a spicy blog post about it based on your internal knowledge.
           
           TONE:
           - Use slang ("Wueh!", "Imagine!", "Tea", "Kwani?").
@@ -129,12 +123,12 @@ jobs:
           if not api_key: raise SystemExit("Missing GEMINI_API_KEY")
 
           # --- 5. CALL GEMINI (Infinite Retry Loop) ---
-          # Using gemini-1.5-pro-latest (The most powerful stable model)
-          url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro-latest:generateContent?key={api_key}"
+          # Using gemini-1.5-pro (The standard Pro model - 'latest' alias causes 404s)
+          url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key={api_key}"
           
           headers = { "Content-Type": "application/json" }
           
-          # NO TOOLS. PURE PROMPTING.
+          # NO TOOLS. PURE PROMPT.
           payload = {
               "contents": [{ "parts": [{ "text": spec_text }] }],
               "safetySettings": [
@@ -148,6 +142,7 @@ jobs:
           full_text = ""
           attempt = 0
           
+          # INFINITE RETRY LOOP
           while True:
               attempt += 1
               print(f"🤖 Attempt {attempt}...")
@@ -157,19 +152,20 @@ jobs:
                   if resp.status_code == 200:
                       full_text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
                       print("🔥 Content Generated!")
-                      break # Exit loop on success
+                      break # Exit loop only on success
                   
                   elif resp.status_code in [429, 503, 500]:
-                      print(f"⏳ API Busy/Error ({resp.status_code}). Sleeping for 60s...")
-                      time.sleep(60) # Wait 1 minute and try again
+                      print(f"⏳ API Busy (Status {resp.status_code}). Sleeping for 60s...")
+                      time.sleep(60) # Wait 1 minute and retry
                       continue
                   
                   else:
                       print(f"⚠️ Fatal Error {resp.status_code}: {resp.text}")
-                      break # Exit on fatal errors (400, 403, 404)
+                      # For fatal errors (like 400 Bad Request), we must exit or it loops forever on bad data
+                      raise SystemExit("Fatal API Error")
                       
               except Exception as e:
-                  print(f"⚠️ Network Error: {e}")
+                  print(f"⚠️ Network Error: {e}. Retrying in 60s...")
                   time.sleep(60)
           
           if not full_text: raise SystemExit("Failed to get content from Gemini.")
@@ -214,7 +210,7 @@ jobs:
           image_url = get_real_image(parsed['IMAGE_KEYWORD'])
           authors = ["The Tea Master", "Nairobi Gossip Desk", "Bongo Flavor", "Kampala Insider"]
           
-          # Handle Tags
+          # Clean Tags
           try:
               tags_clean = [t.strip() for t in parsed["TAGS"].strip("[]").split(',')]
           except:
