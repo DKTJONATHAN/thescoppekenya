@@ -1,91 +1,192 @@
-- name: Generate article
+name: East Africa Gossip Bot (Gemini 3 Flash)
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # 3 AM EAT
+    - cron: '0 4 * * *'   # 7 AM EAT
+    - cron: '0 8 * * *'   # 11 AM EAT
+    - cron: '0 12 * * *'  # 3 PM EAT
+    - cron: '0 16 * * *'  # 7 PM EAT
+    - cron: '0 20 * * *'  # 11 PM EAT
+  workflow_dispatch:
+    inputs:
+      manual_topic:
+        description: 'Force a topic (optional)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Generate article with Gemini
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           MANUAL_TOPIC: ${{ inputs.manual_topic }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
         run: |
           python << 'EOF'
           import os, json, datetime, requests, re, random, time
 
-          # --- 1. CONFIG & ROTATION ---
+          # --- 1. CONFIGURATION ---
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_hour = datetime.datetime.utcnow().hour
+
+          # --- 2. COUNTRY & VIP ROTATION ---
+          # We rotate countries and provide specific names to force recency/accuracy
+          if current_hour < 2:   
+              country_name, vips = 'Tanzania', "Samia Suluhu, Diamond Platnumz, Harmonize, Zuchu, Alikiba"
+          elif current_hour < 6: 
+              country_name, vips = 'Kenya', "William Ruto, Rigathi Gachagua, Raila Odinga, Eric Omondi, Khaligraph Jones"
+          elif current_hour < 10: 
+              country_name, vips = 'Uganda', "Yoweri Museveni, Bobi Wine, Muhoozi Kainerugaba, Sheebah Karungi"
+          elif current_hour < 14: 
+              country_name, vips = 'Tanzania', "Mange Kimambi, Millard Ayo, Marioo, Paula Kajala"
+          elif current_hour < 18: 
+              country_name, vips = 'Kenya', "Johnson Sakaja, Ferdinand Omanyala, Bahati, Diana Marua"
+          else:                   
+              country_name, vips = 'Uganda', "Jose Chameleone, Eddy Kenzo, Spice Diana, Bad Black"
+
+          # --- 3. TOPIC SELECTION ---
+          manual_input = os.environ.get('MANUAL_TOPIC', '').strip()
+          categories = ["Entertainment", "Sports", "Politics", "Business", "Social Media Drama"]
+          topic = manual_input if manual_input else random.choice(categories)
+
+          print(f"🎯 Target: {country_name} | Topic: {topic} | VIPS: {vips}")
+
+          # --- 4. HELPER FUNCTIONS ---
+          def get_real_image(query):
+              access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
+              fallback_image = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+              if not access_key: return fallback_image
+              url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}"
+              try:
+                  resp = requests.get(url, timeout=10)
+                  if resp.status_code == 200:
+                      return resp.json()['urls']['regular']
+              except Exception: pass
+              return fallback_image
+
+          # --- 5. THE FINE-TUNED PROMPT ---
+          spec_text = f"""
+          Current Date: {full_date_str}
+          Target Country: {country_name}
+          Topic: {topic}
+          Target Figures: {vips}
           
-          # Hard rotation to ensure variety
-          countries = ['Kenya', 'Tanzania', 'Uganda']
-          country = countries[current_hour % 3]
+          ROLE: You are "The Tea Master", East Africa's most savage, unfiltered gossip blogger.
           
-          categories = ["Politics", "Celebrity Gossip", "Social Media Drama"]
-          topic = os.environ.get('MANUAL_TOPIC') or random.choice(categories)
-
-          # --- 2. THE NAME ANCHORS (To force specific mentions) ---
-          anchors = {
-              "Kenya": "William Ruto, Rigathi Gachagua, Raila Odinga, Khaligraph Jones, Eric Omondi, Bahati",
-              "Tanzania": "Samia Suluhu, Diamond Platnumz, Harmonize, Alikiba, Zuchu, Mange Kimambi",
-              "Uganda": "Yoweri Museveni, Bobi Wine, Muhoozi Kainerugaba, Sheebah Karungi, Jose Chameleone"
-          }
-          local_vips = anchors.get(country, "")
-
-          print(f"🌍 Target: {country} | Topic: {topic} | Mentioning: {local_vips}")
-
-          # --- 3. THE SAVAGE PROMPT ---
-          prompt = f"""
-          Role: You are 'The Tea Master', the most savage, unfiltered blogger in East Africa. 
-          Task: Write a factual but BRUTALLY opinionated wrap-up of a major event involving {topic} in {country} from the past week.
+          TASK: Write a factual but BRUTALLY opinionated wrap-up of a story that happened THIS WEEK.
           
           STRICT RULES:
-          1. YOU MUST MENTION NAMES. Use the names of key figures like {local_vips} if they are relevant to the topic.
-          2. DO NOT BE NICE. If someone is moving like a 'clown', say it.
-          3. Use heavy slang: Wueh, Kwani, Tea, Sasa Basi, Me nimejam, 'Character Development'.
-          4. Be factual about what happened, but your commentary must be 100% opinionated and spicy.
-          
-          OUTPUT FORMAT:
-          TITLE: [Savage Clickbait Title]
-          SLUG: [url-friendly-slug]
-          EXCERPT: [One sentence that burns specific people]
+          - YOU MUST MENTION NAMES. Use the figures listed above ({vips}) to ground the story in reality.
+          - DO NOT BE NICE. If someone is failing or causing drama, call them out. No corporate PR talk.
+          - Use heavy slang ("Wueh!", "Imagine!", "Tea", "Kwani?", "Sasa basi", "Character Development").
+          - Be dramatic, engaging, and highly critical.
+
+          *** STRICT OUTPUT FORMAT ***
+          Do NOT write Markdown/YAML yourself. Provide raw data labeled exactly like this:
+
+          TITLE: [Insert savage clickbait title]
+          SLUG: [url-friendly-slug-lowercase]
+          EXCERPT: [One spicy sentence hook mentioning a name]
+          CATEGORY: {topic}
+          TAGS: [tag1, tag2, tag3]
+          IMAGE_KEYWORD: [Visual search term for the story]
           BODY:
-          [Article content with ## Headers. Start with the names and the drama immediately.]
+          [Write the full article here using ## Headers. NO Title at start. Start by addressing the drama directly.]
           """
 
-          # --- 4. DIRECT POST WITH INFINITE RETRY ---
-          url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={os.environ['GEMINI_API_KEY']}"
-          headers = {'Content-Type': 'application/json'}
-          payload = {"contents": [{"parts": [{"text": prompt}]}]}
-          
+          api_key = os.environ.get("GEMINI_API_KEY")
+          url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key={api_key}"
+          headers = { "Content-Type": "application/json" }
+          payload = { "contents": [{ "parts": [{ "text": spec_text }] }] }
+
           full_text = ""
-          wait = 30
+          attempt = 0
           while True:
+              attempt += 1
+              print(f"🤖 Attempt {attempt} for {country_name}...")
               try:
-                  resp = requests.post(url, json=payload, headers=headers)
+                  resp = requests.post(url, headers=headers, json=payload, timeout=120)
                   if resp.status_code == 200:
-                      full_text = resp.json()['candidates'][0]['content']['parts'][0]['text']
-                      break
+                      full_text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
+                      break 
                   elif resp.status_code in [429, 500, 503]:
-                      print(f"⏳ API Busy/Quota. Sleeping {wait}s...")
-                      time.sleep(wait)
-                      wait = min(wait * 2, 300)
+                      time.sleep(60)
+                      continue
                   else:
-                      print(f"❌ Error: {resp.text}")
-                      exit(1)
+                      raise SystemExit(f"Fatal API Error: {resp.status_code}")
               except Exception as e:
-                  print(f"⚠️ Network error: {e}")
-                  time.sleep(30)
-
-          # --- 5. PARSING & SAVING ---
-          parsed = {"TITLE": "Untitled", "SLUG": "post", "EXCERPT": "", "BODY": ""}
-          try:
-              parsed["TITLE"] = re.search(r"TITLE:(.*)", full_text).group(1).strip()
-              parsed["SLUG"] = re.search(r"SLUG:(.*)", full_text).group(1).strip()
-              parsed["EXCERPT"] = re.search(r"EXCERPT:(.*)", full_text).group(1).strip()
-              parsed["BODY"] = full_text.split("BODY:")[1].strip()
-          except:
-              # Fallback if parsing fails
-              parsed["SLUG"] = f"tea-{int(time.time())}"
-
-          content = f"---\ntitle: \"{parsed['TITLE']}\"\ndate: \"{today_str}\"\nexcerpt: \"{parsed['EXCERPT']}\"\ncountry: \"{country}\"\n---\n\n{parsed['BODY']}"
+                  time.sleep(60)
           
-          os.makedirs("content/posts", exist_ok=True)
-          with open(f"content/posts/{parsed['SLUG']}.md", "w") as f:
-              f.write(content)
-          print(f"✅ Served the tea on {country} with names.")
+          # --- 6. PARSE & SAVE ---
+          parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
+          current_section = None
+          for line in full_text.splitlines():
+              clean = line.strip().replace("**", "")
+              if clean.startswith("TITLE:"): parsed["TITLE"] = clean.replace("TITLE:", "").strip()
+              elif clean.startswith("SLUG:"): parsed["SLUG"] = clean.replace("SLUG:", "").strip()
+              elif clean.startswith("EXCERPT:"): parsed["EXCERPT"] = clean.replace("EXCERPT:", "").strip()
+              elif clean.startswith("CATEGORY:"): parsed["CATEGORY"] = clean.replace("CATEGORY:", "").strip()
+              elif clean.startswith("TAGS:"): parsed["TAGS"] = clean.replace("TAGS:", "").strip()
+              elif clean.startswith("IMAGE_KEYWORD:"): parsed["IMAGE_KEYWORD"] = clean.replace("IMAGE_KEYWORD:", "").strip()
+              elif clean.startswith("BODY:"):
+                  current_section = "BODY"
+                  continue
+              elif current_section == "BODY":
+                  parsed["BODY"] += line + "\n"
+
+          image_url = get_real_image(parsed['IMAGE_KEYWORD'])
+          final_file = f"""---
+          title: "{parsed['TITLE']}"
+          slug: "{parsed['SLUG']}"
+          excerpt: "{parsed['EXCERPT']}"
+          image: "{image_url}"
+          category: "{parsed['CATEGORY']}"
+          date: "{today_str}"
+          ---
+
+          {parsed['BODY']}
+          """
+
+          out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
+          os.makedirs(out_dir, exist_ok=True)
+          with open(os.path.join(out_dir, f"{parsed['SLUG']}.md"), "w", encoding="utf-8") as f:
+              f.write(final_file)
+          
+          print(f"✅ Success! Created {parsed['SLUG']}.md")
           EOF
+
+      - name: Commit and push article
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "content: fresh tea served ☕"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: ${{ env.POSTS_DIR }}/*.md
