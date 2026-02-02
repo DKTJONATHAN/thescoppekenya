@@ -78,18 +78,42 @@ export function getAllPosts(): Post[] {
   const posts: Post[] = [];
 
   for (const path in postFiles) {
-    const rawContent = postFiles[path] as string;
-    const { data, content } = parseFrontmatter(rawContent);
-    const frontmatter = data as unknown as PostFrontmatter;
+    try {
+      const rawContent = postFiles[path] as string;
+      const { data, content } = parseFrontmatter(rawContent);
+      const frontmatter = data as unknown as Partial<PostFrontmatter>;
 
-    posts.push({
-      ...frontmatter,
-      content,
-      htmlContent: marked(content) as string,
-      readTime: calculateReadTime(content),
-      imageAlt: frontmatter.title,
-      authorImage: `https://api.dicebear.com/7.x/avataaars/svg?seed=${frontmatter.author}`,
-    });
+      // Ensure required fields have defaults to prevent crashes
+      const author = frontmatter.author || 'The Scoop Kenya';
+      const tags = Array.isArray(frontmatter.tags) ? frontmatter.tags : [];
+      const title = frontmatter.title || 'Untitled Post';
+      const slug = frontmatter.slug || path.replace('/content/posts/', '').replace('.md', '');
+      const excerpt = frontmatter.excerpt || '';
+      const image = frontmatter.image || '/placeholder.svg';
+      const category = frontmatter.category || 'News';
+      const date = frontmatter.date || new Date().toISOString().split('T')[0];
+
+      posts.push({
+        title,
+        slug,
+        excerpt,
+        image,
+        category,
+        author,
+        date,
+        tags,
+        featured: frontmatter.featured || false,
+        content,
+        htmlContent: marked(content) as string,
+        readTime: calculateReadTime(content),
+        imageAlt: title,
+        authorImage: `https://api.dicebear.com/7.x/avataaars/svg?seed=${author}`,
+      });
+    } catch (error) {
+      console.error(`Error parsing post at ${path}:`, error);
+      // Skip malformed posts instead of crashing
+      continue;
+    }
   }
 
   // Sort by date descending
