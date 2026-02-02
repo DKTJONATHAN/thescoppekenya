@@ -109,6 +109,31 @@ export function getLatestPosts(limit?: number): Post[] {
   return limit ? posts.slice(0, limit) : posts;
 }
 
+// Get today's top story (first published post of the day)
+export function getTodaysTopStory(): Post | undefined {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  
+  const posts = getAllPosts();
+  const todaysPosts = posts.filter(post => {
+    const postDate = new Date(post.date);
+    postDate.setHours(0, 0, 0, 0);
+    return postDate.getTime() === today.getTime();
+  });
+  
+  // If no posts today, return the most recent post
+  return todaysPosts.length > 0 
+    ? todaysPosts[todaysPosts.length - 1] // First published (earliest)
+    : posts[0]; // Fallback to most recent
+}
+
+// Get secondary featured posts (next N most recent, excluding a specific slug)
+export function getSecondaryPosts(excludeSlug: string | undefined, limit = 4): Post[] {
+  return getAllPosts()
+    .filter(post => post.slug !== excludeSlug)
+    .slice(0, limit);
+}
+
 export function getPostsByCategory(category: string): Post[] {
   return getAllPosts().filter(post => post.category.toLowerCase() === category.toLowerCase());
 }

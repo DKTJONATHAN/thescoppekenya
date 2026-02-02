@@ -1,17 +1,33 @@
+import { useEffect } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { CategoryBar } from "@/components/articles/CategoryBar";
 import { ArticleCard } from "@/components/articles/ArticleCard";
 import { TrendingSidebar } from "@/components/articles/TrendingSidebar";
-import { getFeaturedPosts, getLatestPosts, categories } from "@/lib/markdown";
+import { getTodaysTopStory, getSecondaryPosts, getLatestPosts, categories } from "@/lib/markdown";
 import { Link } from "react-router-dom";
 import { ArrowRight, TrendingUp, Zap, Flame, Clock, Newspaper } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 const Index = () => {
-  const featuredPosts = getFeaturedPosts();
+  const topStory = getTodaysTopStory();
+  const secondaryPosts = getSecondaryPosts(topStory?.slug, 4);
   const latestPosts = getLatestPosts(10);
-  const tickerPosts = latestPosts.slice(0, 3); // Top 3 stories for the ticker
+  const tickerPosts = latestPosts.slice(0, 3);
+
+  // Preload top story image for faster LCP
+  useEffect(() => {
+    if (topStory?.image) {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = topStory.image;
+      document.head.appendChild(link);
+      return () => {
+        document.head.removeChild(link);
+      };
+    }
+  }, [topStory?.image]);
 
   return (
     <Layout>
@@ -32,7 +48,7 @@ const Index = () => {
         })
       }} />
 
-      {/* Top Stories Ticker - Responsive Theming */}
+      {/* Top Stories Ticker */}
       <div className="bg-surface border-b border-divider py-2 overflow-hidden">
         <div className="container max-w-7xl mx-auto px-4 flex items-center gap-4">
           <Badge variant="default" className="gradient-primary text-primary-foreground border-0 rounded-sm font-bold whitespace-nowrap">
@@ -53,19 +69,19 @@ const Index = () => {
 
       <CategoryBar />
 
-      {/* Bento Grid Hero - High-End Layout */}
+      {/* Bento Grid Hero */}
       <section className="py-6 md:py-10">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Main Feature */}
+            {/* Main Feature - Today's Top Story */}
             <div className="lg:col-span-2 lg:row-span-2">
-              {featuredPosts[0] && (
-                <ArticleCard post={featuredPosts[0]} variant="featured" />
+              {topStory && (
+                <ArticleCard post={topStory} variant="featured" />
               )}
             </div>
 
             {/* Grid Secondary Features */}
-            {featuredPosts.slice(1, 5).map((post, idx) => (
+            {secondaryPosts.map((post, idx) => (
               <div key={post.slug} className={`${idx === 0 ? 'hidden md:block' : ''}`}>
                 <ArticleCard post={post} variant="compact" />
               </div>
@@ -121,7 +137,7 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Sidebar with Theme-Responsive Widgets */}
+            {/* Sidebar */}
             <div className="lg:col-span-1 space-y-8">
               <div className="sticky top-24 space-y-8">
                 <div className="bg-surface rounded-2xl border border-divider shadow-sm overflow-hidden">
@@ -169,7 +185,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Categories Hub - Theme Sensitive Text */}
+      {/* Categories Hub */}
       <section className="py-16">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between mb-10">
