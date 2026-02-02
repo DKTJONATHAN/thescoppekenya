@@ -1,29 +1,4 @@
-name: Gossiper (NewsAPI + Gemini)
-
-on:
-  schedule:
-    - cron: '30 1 * * *'  # 4:30AM EAT (Celebrity)
-    - cron: '30 5 * * *'  # 8:30AM EAT (Sports)
-    - cron: '30 10 * * *' # 1:30PM EAT (Tech)
-    - cron: '30 13 * * *' # 4:30PM EAT (Politics)
-    - cron: '30 17 * * *' # 8:30PM EAT (Celebrity)
-    - cron: '30 21 * * *' # 12:30AM EAT (Sports)
-  workflow_dispatch:
-    inputs:
-      manual_topic:
-        description: 'Force topic: celebrity, sports, technology, politics'
-        required: false
-        default: ''
-
-permissions:
-  contents: write
-
-env:
-  DEFAULT_BRANCH: main
-  POSTS_DIR: content/posts
-
-jobs:
-  generate-and-publish:
+generate-and-publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -41,7 +16,6 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # Updated to use the new Google GenAI SDK for Gemini 3
           pip install requests google-genai
 
       - name: Generate article with Gemini
@@ -54,7 +28,6 @@ jobs:
         run: |
           python << 'EOF'
           import os, json, datetime, requests, re, random, time
-          # New SDK Import
           from google import genai
           from google.genai import types
 
@@ -63,21 +36,18 @@ jobs:
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_hour = datetime.datetime.utcnow().hour
 
-          # Topic rotation (international focus)
+          # Topic rotation
           manual_input = os.environ.get('MANUAL_TOPIC', '').strip().lower()
           if manual_input in ['celebrity', 'sports', 'technology', 'politics']:
               topic = manual_input
           else:
               hour_mod = current_hour % 6
-              # Logic: celebrity, sports, tech, politics, celebrity, sports
               topics = ['celebrity', 'sports', 'technology', 'politics', 'celebrity', 'sports']
-              # Safety check for index out of bounds
               if hour_mod < len(topics):
                   topic = topics[hour_mod]
               else:
                   topic = 'celebrity'
           
-          # NewsAPI category mapping - Defined explicitly to avoid f-string errors
           cat_map = {'celebrity': 'entertainment', 'sports': 'sports', 'technology': 'technology', 'politics': 'general'}
           newsapi_cat = cat_map.get(topic, 'general')
           
@@ -123,7 +93,7 @@ jobs:
               except Exception: pass
               return fallback_image
 
-          # --- 4. GOSSIP-TONE PROMPT (facts -> savage spin) ---
+          # --- 4. GOSSIP-TONE PROMPT ---
           gossip_angles = [
               "The celebrity meltdown nobody saw coming",
               "Sports star's biggest scandal exposed",
@@ -131,7 +101,6 @@ jobs:
               "Politician caught in ultimate hypocrisy"
           ]
           
-          # Robust angle selection
           angle_index = 0
           if topic == 'celebrity': angle_index = 0
           elif topic == 'sports': angle_index = 1
@@ -170,24 +139,35 @@ jobs:
           - Grounded in THIS headline. No hallucinations.
           - Dramatic but readable (8th grade level).'''
 
-          # --- 5. GEMINI CALL (Updated to Gemini 3) ---
+          # --- 5. GEMINI CALL (With Retry Logic) ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
           model_id = "gemini-3-flash-preview"
 
           print(f"🤖 Spilling tea with {model_id}...")
           
-          try:
-              response = client.models.generate_content(
-                  model=model_id,
-                  contents=prompt,
-                  config=types.GenerateContentConfig(
-                      temperature=0.7 # Higher temp for more creative gossip
+          full_text = ""
+          max_retries = 3
+          
+          for attempt in range(max_retries):
+              try:
+                  response = client.models.generate_content(
+                      model=model_id,
+                      contents=prompt,
+                      config=types.GenerateContentConfig(
+                          temperature=0.7
+                      )
                   )
-              )
-              full_text = response.text.strip()
-          except Exception as e:
-              print(f"❌ Gemini Error: {e}")
-              exit(1)
+                  full_text = response.text.strip()
+                  print("✅ Generation successful!")
+                  break # Success, exit loop
+              except Exception as e:
+                  print(f"⚠️ Attempt {attempt + 1} failed: {e}")
+                  if attempt < max_retries - 1:
+                      print("⏳ Retrying in 5 seconds...")
+                      time.sleep(5)
+                  else:
+                      print("❌ All retries failed.")
+                      exit(1)
 
           # --- 6. PARSE & DASH SCRUB ---
           parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
@@ -222,9 +202,7 @@ jobs:
           # --- 7. SAVE ---
           image_url = get_real_image(parsed['IMAGE_KEYWORD'])
           
-          # Using dedent to ensure clean markdown
           import textwrap
-          
           final_file = f"""---
           title: "{parsed['TITLE'].replace('"', "'")}"
           slug: "{parsed['SLUG']}"
