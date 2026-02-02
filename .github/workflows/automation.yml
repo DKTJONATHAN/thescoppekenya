@@ -1,17 +1,17 @@
-name: East Africa Gossip Bot (Gemini 3 Flash)
+name: Gossiper (NewsAPI + Gemini)
 
 on:
   schedule:
-    - cron: '0 0 * * *'   # 3 AM EAT
-    - cron: '0 4 * * *'   # 7 AM EAT
-    - cron: '0 8 * * *'   # 11 AM EAT
-    - cron: '0 12 * * *'  # 3 PM EAT
-    - cron: '0 16 * * *'  # 7 PM EAT
-    - cron: '0 20 * * *'  # 11 PM EAT
+    - cron: '30 1 * * *'  # 4:30AM EAT (Celebrity)
+    - cron: '30 5 * * *'  # 8:30AM EAT (Sports)
+    - cron: '30 10 * * *' # 1:30PM EAT (Tech)
+    - cron: '30 13 * * *' # 4:30PM EAT (Politics)
+    - cron: '30 17 * * *' # 8:30PM EAT (Celebrity)
+    - cron: '30 21 * * *' # 12:30AM EAT (Sports)
   workflow_dispatch:
     inputs:
       manual_topic:
-        description: 'Force a topic (optional)'
+        description: 'Force topic: celebrity, sports, technology, politics'
         required: false
         default: ''
 
@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ env.DEFAULT_BRANCH }}
-          token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
           persist-credentials: true
 
       - name: Set up Python
@@ -41,46 +41,76 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          # Updated to use the new Google GenAI SDK for Gemini 3
+          pip install requests google-genai
 
       - name: Generate article with Gemini
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           MANUAL_TOPIC: ${{ inputs.manual_topic }}
           POSTS_DIR: ${{ env.POSTS_DIR }}
         run: |
           python << 'EOF'
           import os, json, datetime, requests, re, random, time
+          # New SDK Import
+          from google import genai
+          from google.genai import types
 
           # --- 1. CONFIGURATION ---
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_hour = datetime.datetime.utcnow().hour
 
-          # --- 2. COUNTRY & VIP ROTATION ---
-          # We rotate countries and provide specific names to force recency/accuracy
-          if current_hour < 2:   
-              country_name, vips = 'Tanzania', "Samia Suluhu, Diamond Platnumz, Harmonize, Zuchu, Alikiba"
-          elif current_hour < 6: 
-              country_name, vips = 'Kenya', "William Ruto, Rigathi Gachagua, Raila Odinga, Eric Omondi, Khaligraph Jones"
-          elif current_hour < 10: 
-              country_name, vips = 'Uganda', "Yoweri Museveni, Bobi Wine, Muhoozi Kainerugaba, Sheebah Karungi"
-          elif current_hour < 14: 
-              country_name, vips = 'Tanzania', "Mange Kimambi, Millard Ayo, Marioo, Paula Kajala"
-          elif current_hour < 18: 
-              country_name, vips = 'Kenya', "Johnson Sakaja, Ferdinand Omanyala, Bahati, Diana Marua"
-          else:                   
-              country_name, vips = 'Uganda', "Jose Chameleone, Eddy Kenzo, Spice Diana, Bad Black"
+          # Topic rotation (international focus)
+          manual_input = os.environ.get('MANUAL_TOPIC', '').strip().lower()
+          if manual_input in ['celebrity', 'sports', 'technology', 'politics']:
+              topic = manual_input
+          else:
+              hour_mod = current_hour % 6
+              # Logic: celebrity, sports, tech, politics, celebrity, sports
+              topics = ['celebrity', 'sports', 'technology', 'politics', 'celebrity', 'sports']
+              # Safety check for index out of bounds
+              if hour_mod < len(topics):
+                  topic = topics[hour_mod]
+              else:
+                  topic = 'celebrity'
+          
+          # NewsAPI category mapping - Defined explicitly to avoid f-string errors
+          cat_map = {'celebrity': 'entertainment', 'sports': 'sports', 'technology': 'technology', 'politics': 'general'}
+          newsapi_cat = cat_map.get(topic, 'general')
+          
+          print(f"🎯 Topic: {topic} | NewsAPI: {newsapi_cat}")
 
-          # --- 3. TOPIC SELECTION ---
-          manual_input = os.environ.get('MANUAL_TOPIC', '').strip()
-          categories = ["Entertainment", "Sports", "Politics", "Business", "Social Media Drama"]
-          topic = manual_input if manual_input else random.choice(categories)
+          # --- 2. FETCH INTERNATIONAL NEWS ---
+          params = {
+              'category': newsapi_cat,
+              'language': 'en',
+              'pageSize': 5,
+              'apiKey': os.environ['NEWSAPI_KEY']
+          }
+          try:
+              news_resp = requests.get('https://newsapi.org/v2/top-headlines', params=params, timeout=10)
+              news_data = news_resp.json()
+          except Exception as e:
+              print(f"Error fetching news: {e}")
+              exit(0)
+          
+          if news_data.get('totalResults', 0) == 0:
+              print("No fresh news, skipping")
+              exit(0)
+          
+          # Freshest story
+          top_story = min(news_data['articles'], key=lambda x: x['publishedAt'] if x['publishedAt'] else '9999')
+          title = top_story['title']
+          snippet = (top_story.get('description') or top_story.get('content', ''))[:300]
+          source = top_story['source']['name']
+          pub_date = top_story['publishedAt']
+          
+          print(f"📰 Headline: {title[:80]}... ({source})")
 
-          print(f"🎯 Target: {country_name} | Topic: {topic} | VIPS: {vips}")
-
-          # --- 4. HELPER FUNCTIONS ---
+          # --- 3. IMAGE HELPER ---
           def get_real_image(query):
               access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
               fallback_image = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
@@ -93,62 +123,76 @@ jobs:
               except Exception: pass
               return fallback_image
 
-          # --- 5. THE FINE-TUNED PROMPT ---
-          spec_text = f"""
-          Current Date: {full_date_str}
-          Target Country: {country_name}
-          Topic: {topic}
-          Target Figures: {vips}
+          # --- 4. GOSSIP-TONE PROMPT (facts -> savage spin) ---
+          gossip_angles = [
+              "The celebrity meltdown nobody saw coming",
+              "Sports star's biggest scandal exposed",
+              "Tech giant's dirty secret revealed", 
+              "Politician caught in ultimate hypocrisy"
+          ]
           
-          ROLE: You are "The Tea Master", East Africa's most savage, unfiltered gossip blogger.
+          # Robust angle selection
+          angle_index = 0
+          if topic == 'celebrity': angle_index = 0
+          elif topic == 'sports': angle_index = 1
+          elif topic == 'technology': angle_index = 2
+          elif topic == 'politics': angle_index = 3
           
-          TASK: Write a factual but BRUTALLY opinionated wrap-up of a story that happened THIS WEEK.
+          angle = gossip_angles[angle_index]
           
-          STRICT RULES:
-          - YOU MUST MENTION NAMES. Use the figures listed above ({vips}) to ground the story in reality.
-          - DO NOT BE NICE. If someone is failing or causing drama, call them out. No corporate PR talk.
-          - Use heavy slang ("Wueh!", "Imagine!", "Tea", "Kwani?", "Sasa basi", "Character Development").
-          - Be dramatic, engaging, and highly critical.
+          prompt = f'''Current Date: {full_date_str}
+          NEWS STORY:
+          Title: "{title}"
+          Snippet: "{snippet}"
+          Source: {source}
+          Date: {pub_date}
 
-          *** STRICT OUTPUT FORMAT ***
-          Do NOT write Markdown/YAML yourself. Provide raw data labeled exactly like this:
+          ROLE: "Global Tea Spiller" - International gossip blogger (jonathanmwaniki.co.ke style).
 
-          TITLE: [Insert savage clickbait title]
-          SLUG: [url-friendly-slug-lowercase]
-          EXCERPT: [One spicy sentence hook mentioning a name]
-          CATEGORY: {topic}
-          TAGS: [tag1, tag2, tag3]
-          IMAGE_KEYWORD: [Visual search term for the story]
+          TASK: Turn these FACTS into savage gossip. BRUTAL opinions OK after facts established.
+          - Start factual (what snippet says).
+          - Then savage analysis ("This proves X is washed", "Career over", etc.).
+          - Mention 2-3 celeb equivalents (Taylor Swift drama, Messi fumble).
+          - Heavy slang: "Spill the tea", "Career suicide", "Public execution".
+
+          STRICT OUTPUT FORMAT:
+          TITLE: [Savage clickbait, mention name if possible]
+          SLUG: [url-friendly-lowercase-no-dates]
+          EXCERPT: [One-line spicy hook]
+          CATEGORY: {topic.capitalize()}
+          TAGS: [gossip, {topic}, scandal, drama]
+          IMAGE_KEYWORD: [{topic} celebrity drama]
           BODY:
-          [Write the full article here using ## Headers. NO Title at start. Start by addressing the drama directly.]
-          """
+          [1400 words. ## Headers: The Incident, What Really Happened, Public Reaction, Career Fallout]
 
-          api_key = os.environ.get("GEMINI_API_KEY")
-          url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key={api_key}"
-          headers = { "Content-Type": "application/json" }
-          payload = { "contents": [{ "parts": [{ "text": spec_text }] }] }
+          RULES:
+          - UK English. Commas, NO em-dashes (—/–).
+          - Grounded in THIS headline. No hallucinations.
+          - Dramatic but readable (8th grade level).'''
 
-          full_text = ""
-          attempt = 0
-          while True:
-              attempt += 1
-              print(f"🤖 Attempt {attempt} for {country_name}...")
-              try:
-                  resp = requests.post(url, headers=headers, json=payload, timeout=120)
-                  if resp.status_code == 200:
-                      full_text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
-                      break 
-                  elif resp.status_code in [429, 500, 503]:
-                      time.sleep(60)
-                      continue
-                  else:
-                      raise SystemExit(f"Fatal API Error: {resp.status_code}")
-              except Exception as e:
-                  time.sleep(60)
+          # --- 5. GEMINI CALL (Updated to Gemini 3) ---
+          client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
+          model_id = "gemini-3-flash-preview"
+
+          print(f"🤖 Spilling tea with {model_id}...")
           
-          # --- 6. PARSE & SAVE ---
+          try:
+              response = client.models.generate_content(
+                  model=model_id,
+                  contents=prompt,
+                  config=types.GenerateContentConfig(
+                      temperature=0.7 # Higher temp for more creative gossip
+                  )
+              )
+              full_text = response.text.strip()
+          except Exception as e:
+              print(f"❌ Gemini Error: {e}")
+              exit(1)
+
+          # --- 6. PARSE & DASH SCRUB ---
           parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
           current_section = None
+          
           for line in full_text.splitlines():
               clean = line.strip().replace("**", "")
               if clean.startswith("TITLE:"): parsed["TITLE"] = clean.replace("TITLE:", "").strip()
@@ -163,11 +207,28 @@ jobs:
               elif current_section == "BODY":
                   parsed["BODY"] += line + "\n"
 
+          # Em-dash scrubber
+          for key in ["TITLE", "EXCERPT", "BODY"]:
+              text = parsed[key]
+              text = text.replace("—", ", ").replace("–", ", ").replace("--", ", ")
+              text = re.sub(r',\s*,', ',', text)
+              parsed[key] = text.strip()
+
+          # Fallbacks
+          if not parsed["TITLE"]: parsed["TITLE"] = f"{topic.capitalize()} Tea Spill"
+          if not parsed["SLUG"]: 
+              parsed["SLUG"] = re.sub(r'[^a-z0-9-]', '-', title.lower())[:80].strip('-')
+
+          # --- 7. SAVE ---
           image_url = get_real_image(parsed['IMAGE_KEYWORD'])
+          
+          # Using dedent to ensure clean markdown
+          import textwrap
+          
           final_file = f"""---
-          title: "{parsed['TITLE']}"
+          title: "{parsed['TITLE'].replace('"', "'")}"
           slug: "{parsed['SLUG']}"
-          excerpt: "{parsed['EXCERPT']}"
+          excerpt: "{parsed['EXCERPT'].replace('"', "'")}"
           image: "{image_url}"
           category: "{parsed['CATEGORY']}"
           date: "{today_str}"
@@ -175,18 +236,24 @@ jobs:
 
           {parsed['BODY']}
           """
+          
+          final_file = textwrap.dedent(final_file).strip()
 
           out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
           os.makedirs(out_dir, exist_ok=True)
           with open(os.path.join(out_dir, f"{parsed['SLUG']}.md"), "w", encoding="utf-8") as f:
               f.write(final_file)
           
-          print(f"✅ Success! Created {parsed['SLUG']}.md")
+          print(f"✅ Tea spilled: {parsed['SLUG']}.md")
           EOF
 
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: fresh tea served ☕"
+          commit_message: "content: fresh international tea ☕"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: ${{ env.POSTS_DIR }}/*.md
+          commit_user_name: "Content Bot"
+          commit_user_email: "actions@github.com"
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
