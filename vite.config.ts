@@ -15,4 +15,6 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // Ensure markdown files in content folder are properly bundled
+  assetsInclude: ['**/*.md'],
 }));
