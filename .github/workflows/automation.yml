@@ -1,4 +1,29 @@
-generate-and-publish:
+name: International Gossip Bot (NewsAPI + Gemini)
+
+on:
+  schedule:
+    - cron: '30 1 * * *'  # 4:30AM EAT (Celebrity)
+    - cron: '30 5 * * *'  # 8:30AM EAT (Sports)
+    - cron: '30 10 * * *' # 1:30PM EAT (Tech)
+    - cron: '30 13 * * *' # 4:30PM EAT (Politics)
+    - cron: '30 17 * * *' # 8:30PM EAT (Celebrity)
+    - cron: '30 21 * * *' # 12:30AM EAT (Sports)
+  workflow_dispatch:
+    inputs:
+      manual_topic:
+        description: 'Force topic: celebrity, sports, technology, politics'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+
+jobs:
+  generate-and-publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
