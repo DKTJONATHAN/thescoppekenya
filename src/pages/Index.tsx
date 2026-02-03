@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { CategoryBar } from "@/components/articles/CategoryBar";
 import { ArticleCard } from "@/components/articles/ArticleCard";
+import { FeaturedStoryCard } from "@/components/articles/FeaturedStoryCard";
 import { TrendingSidebar } from "@/components/articles/TrendingSidebar";
 import { getTodaysTopStory, getSecondaryPosts, getLatestPosts, categories } from "@/lib/markdown";
 import { Link } from "react-router-dom";
@@ -76,7 +77,7 @@ const Index = () => {
             {/* Main Feature - Today's Top Story */}
             <div className="lg:col-span-2 lg:row-span-2">
               {topStory && (
-                <ArticleCard post={topStory} variant="featured" />
+                <FeaturedStoryCard post={topStory} />
               )}
             </div>
 
