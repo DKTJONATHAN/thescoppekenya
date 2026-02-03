@@ -61,11 +61,13 @@ jobs:
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_hour = datetime.datetime.utcnow().hour
 
-          # MODEL PRIORITY LIST (Smart Fallback)
-          # We try Gemini 2.0 first. If it fails, we use 1.5 to save the job.
-          MODELS_TO_TRY = ["gemini-2.0-flash", "gemini-1.5-flash"]
+          # FIXED MODEL LIST
+          # 1. Try 2.0 Flash (Fastest)
+          # 2. Fallback to 1.5 Flash 001 (Strict ID to fix 404)
+          # 3. Fallback to 1.5 Pro (Most reliable)
+          MODELS_TO_TRY = ["gemini-2.0-flash", "gemini-1.5-flash-001", "gemini-1.5-pro-001"]
 
-          # BANNED PHRASES (Strict Filter)
+          # BANNED PHRASES
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
               "grab your popcorn", "listen up", "buckle up", "breaking news",
@@ -107,13 +109,12 @@ jobs:
               print("No fresh news, skipping")
               sys.exit(0)
           
-          # FIX: Use MAX to get the NEWEST story
+          # Use MAX to get the NEWEST story
           top_story = max(news_data['articles'], key=lambda x: x['publishedAt'] if x['publishedAt'] else '0000')
           
           title = top_story['title']
           snippet = (top_story.get('description') or top_story.get('content', ''))[:300]
           source = top_story['source']['name']
-          pub_date = top_story['publishedAt']
           
           print(f"📰 Freshest Headline: {title[:80]}... ({source})")
 
@@ -130,10 +131,9 @@ jobs:
               except Exception: pass
               return fallback_image
 
-          # --- 4. GROUNDED GENERATION (MULTI-MODEL SUPPORT) ---
+          # --- 4. GROUNDED GENERATION WITH PATIENCE ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
 
-          # Search Tool
           google_search_tool = types.Tool(
               google_search=types.GoogleSearch()
           )
@@ -171,37 +171,50 @@ jobs:
           full_text = ""
           success_flag = False
           
-          # Try models in order
           for model_id in MODELS_TO_TRY:
               print(f"🤖 Attempting with {model_id}...")
-              try:
-                  response = client.models.generate_content(
-                      model=model_id,
-                      contents=prompt,
-                      config=types.GenerateContentConfig(
-                          temperature=0.9,
-                          tools=[google_search_tool],
-                          response_modalities=["TEXT"]
-                      )
-                  )
-                  
-                  # Grounding Check
-                  # Note: Gemini 2.0 metadata structure is slightly different, but checking for None is safe
-                  if not response.candidates[0].grounding_metadata.search_entry_point:
-                      print(f"⚠️ {model_id} didn't search. Trying next model...")
-                      continue 
-
-                  full_text = response.text.strip()
-                  print(f"✅ SUCCESS with {model_id}!")
-                  success_flag = True
-                  break # Stop loop on success
               
-              except Exception as e:
-                  print(f"⚠️ Failed with {model_id}: {e}")
-                  time.sleep(2) # Brief pause before next model
-          
+              # Inner retry loop for Quota (429) errors
+              max_quota_retries = 2
+              for q_attempt in range(max_quota_retries):
+                  try:
+                      response = client.models.generate_content(
+                          model=model_id,
+                          contents=prompt,
+                          config=types.GenerateContentConfig(
+                              temperature=0.9,
+                              tools=[google_search_tool],
+                              response_modalities=["TEXT"]
+                          )
+                      )
+                      
+                      # Metadata Check
+                      if not response.candidates[0].grounding_metadata.search_entry_point:
+                          print(f"⚠️ {model_id} didn't search. Trying next model...")
+                          break # Break inner loop, go to next model
+
+                      full_text = response.text.strip()
+                      print(f"✅ SUCCESS with {model_id}!")
+                      success_flag = True
+                      break # Break inner loop
+                  
+                  except Exception as e:
+                      error_str = str(e)
+                      if "429" in error_str or "RESOURCE_EXHAUSTED" in error_str:
+                          print(f"⏳ Quota hit on {model_id}. Sleeping 70s to cool down...")
+                          time.sleep(70) # WAIT for quota reset
+                          continue # Retry same model
+                      elif "404" in error_str:
+                          print(f"❌ Model {model_id} not found. Skipping.")
+                          break # Break inner loop, try next model
+                      else:
+                          print(f"⚠️ Error with {model_id}: {e}")
+                          break # Break inner loop, try next model
+              
+              if success_flag: break
+
           if not success_flag:
-              print("❌ All models failed.")
+              print("❌ All models failed after retries.")
               sys.exit(1)
 
           # --- 5. PARSE & SAVE ---
