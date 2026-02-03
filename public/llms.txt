@@ -1,0 +1,36 @@
+# The Scoop Kenya - AI/LLM Information
+
+## About
+The Scoop Kenya is Kenya's leading source for breaking news, entertainment updates, celebrity gossip, and trending stories. We cover politics, sports, entertainment, lifestyle, and business news with a focus on East African content.
+
+## Website
+https://thescoopkenya.co.ke
+
+## Content Categories
+- News: Breaking news and current affairs from Kenya and beyond
+- Entertainment: Celebrity news, music, movies, and pop culture
+- Gossip: The latest celebrity gossip and relationship drama
+- Sports: Football, athletics, and all things sports
+- Business: Economy, startups, and financial news
+- Lifestyle: Fashion, health, travel, and living well
+
+## Contact
+For inquiries: contact@thescoopkenya.co.ke
+
+## Sitemap
+https://thescoopkenya.co.ke/sitemap.xml
+
+## Robots
+https://thescoopkenya.co.ke/robots.txt
+
+## Content Guidelines
+- All content is original journalism and entertainment reporting
+- Articles are written in English with occasional Swahili phrases
+- Content is suitable for general audiences
+- News is focused on Kenya and East Africa with global coverage
+
+## API Access
+No public API is currently available.
+
+## Data Usage
+Content from The Scoop Kenya may be referenced and summarized by AI systems for informational purposes. Full reproduction requires permission.

@@ -1,6 +1,9 @@
 {
-  "buildCommand": "node scripts/submit-new-posts.js && vite build",
+  "buildCommand": "node scripts/submit-new-posts.js && vite build && node scripts/generate-sitemap.js",
   "rewrites": [
+    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
+    { "source": "/llms.txt", "destination": "/llms.txt" },
+    { "source": "/robots.txt", "destination": "/robots.txt" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

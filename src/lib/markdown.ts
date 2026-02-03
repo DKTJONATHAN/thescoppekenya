@@ -190,31 +190,43 @@ export function getAllTags(): string[] {
 export function generateSitemap(): string {
   const baseUrl = 'https://thescoopkenya.co.ke';
   const posts = getAllPosts();
+  const today = new Date().toISOString().split('T')[0];
   
   type SitemapUrl = { loc: string; priority: string; changefreq: string; lastmod?: string };
   
   const staticPages: SitemapUrl[] = [
-    { loc: '/', priority: '1.0', changefreq: 'daily' },
+    { loc: '/', priority: '1.0', changefreq: 'hourly', lastmod: today },
     { loc: '/about', priority: '0.5', changefreq: 'monthly' },
     { loc: '/contact', priority: '0.5', changefreq: 'monthly' },
     { loc: '/privacy', priority: '0.3', changefreq: 'monthly' },
     { loc: '/terms', priority: '0.3', changefreq: 'monthly' },
+    { loc: '/sports', priority: '0.8', changefreq: 'daily', lastmod: today },
+    { loc: '/live-scores', priority: '0.7', changefreq: 'hourly', lastmod: today },
   ];
 
   const postUrls: SitemapUrl[] = posts.map(post => ({
     loc: `/article/${post.slug}`,
     lastmod: post.date,
-    priority: '0.8',
+    priority: post.featured ? '0.9' : '0.8',
     changefreq: 'weekly'
   }));
 
   const categoryUrls: SitemapUrl[] = categories.map(cat => ({
     loc: `/category/${cat.slug}`,
-    priority: '0.6',
-    changefreq: 'daily'
+    priority: '0.7',
+    changefreq: 'daily',
+    lastmod: today
   }));
 
-  const allUrls: SitemapUrl[] = [...staticPages, ...postUrls, ...categoryUrls];
+  // Get unique tags from all posts
+  const allTags = [...new Set(posts.flatMap(post => post.tags))];
+  const tagUrls: SitemapUrl[] = allTags.map(tag => ({
+    loc: `/tag/${encodeURIComponent(tag)}`,
+    priority: '0.5',
+    changefreq: 'weekly'
+  }));
+
+  const allUrls: SitemapUrl[] = [...staticPages, ...postUrls, ...categoryUrls, ...tagUrls];
 
   const urlElements = allUrls.map(url => `
   <url>
