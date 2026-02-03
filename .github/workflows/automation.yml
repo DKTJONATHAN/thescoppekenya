@@ -60,9 +60,10 @@ jobs:
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_hour = datetime.datetime.utcnow().hour
-          
-          # STRICT MODEL SELECTION
-          MODEL_ID = "gemini-3-flash-preview"
+
+          # MODEL PRIORITY LIST (Smart Fallback)
+          # We try Gemini 2.0 first. If it fails, we use 1.5 to save the job.
+          MODELS_TO_TRY = ["gemini-2.0-flash", "gemini-1.5-flash"]
 
           # BANNED PHRASES (Strict Filter)
           BANNED_PHRASES = [
@@ -129,10 +130,10 @@ jobs:
               except Exception: pass
               return fallback_image
 
-          # --- 4. GROUNDED GENERATION (STRICTLY GEMINI 3) ---
+          # --- 4. GROUNDED GENERATION (MULTI-MODEL SUPPORT) ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
-          
-          # We enable the Google Search Tool for Gemini 3
+
+          # Search Tool
           google_search_tool = types.Tool(
               google_search=types.GoogleSearch()
           )
@@ -167,15 +168,15 @@ jobs:
           [1000 words. Markdown. 4 Sections. Brutal honesty.]
           '''
 
-          print(f"🤖 Searching & Writing with {MODEL_ID}...")
-          
           full_text = ""
-          max_retries = 3
+          success_flag = False
           
-          for attempt in range(max_retries):
+          # Try models in order
+          for model_id in MODELS_TO_TRY:
+              print(f"🤖 Attempting with {model_id}...")
               try:
                   response = client.models.generate_content(
-                      model=MODEL_ID,
+                      model=model_id,
                       contents=prompt,
                       config=types.GenerateContentConfig(
                           temperature=0.9,
@@ -184,22 +185,24 @@ jobs:
                       )
                   )
                   
-                  # Grounding Check: Ensure search actually happened
+                  # Grounding Check
+                  # Note: Gemini 2.0 metadata structure is slightly different, but checking for None is safe
                   if not response.candidates[0].grounding_metadata.search_entry_point:
-                      print("⚠️ Warning: Model didn't search. Retrying...")
-                      # In this strict mode, we retry to force search
-                      if attempt < max_retries - 1: continue 
+                      print(f"⚠️ {model_id} didn't search. Trying next model...")
+                      continue 
 
                   full_text = response.text.strip()
-                  print(f"✅ Generation successful (with Live Search)!")
-                  break
+                  print(f"✅ SUCCESS with {model_id}!")
+                  success_flag = True
+                  break # Stop loop on success
+              
               except Exception as e:
-                  print(f"⚠️ Attempt {attempt + 1} failed: {e}")
-                  if attempt < max_retries - 1:
-                      time.sleep(5)
-                  else:
-                      print("❌ All retries failed.")
-                      sys.exit(1)
+                  print(f"⚠️ Failed with {model_id}: {e}")
+                  time.sleep(2) # Brief pause before next model
+          
+          if not success_flag:
+              print("❌ All models failed.")
+              sys.exit(1)
 
           # --- 5. PARSE & SAVE ---
           parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
@@ -250,7 +253,7 @@ jobs:
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: fresh gossip via gemini-3 ☕"
+          commit_message: "content: fresh gossip ☕"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: ${{ env.POSTS_DIR }}/*.md
           commit_user_name: "Gossip Bot"
