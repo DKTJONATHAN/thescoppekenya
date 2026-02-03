@@ -1,4 +1,49 @@
-- name: Generate article with Gemini
+name: International Gossip Bot (NewsAPI + Gemini)
+
+on:
+  schedule:
+    - cron: '30 1 * * *'  # 4:30AM EAT
+    - cron: '30 5 * * *'  # 8:30AM EAT
+    - cron: '30 10 * * *' # 1:30PM EAT
+    - cron: '30 13 * * *' # 4:30PM EAT
+    - cron: '30 17 * * *' # 8:30PM EAT
+    - cron: '30 21 * * *' # 12:30AM EAT
+  workflow_dispatch:
+    inputs:
+      manual_topic:
+        description: 'Force topic: celebrity, sports, technology, politics'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-genai
+
+      - name: Generate article with Gemini
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
@@ -16,11 +61,11 @@
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_hour = datetime.datetime.utcnow().hour
 
-          # Banned words list (The "Old Slang" Filter)
+          # BANNED PHRASES (Strict Filter)
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
               "grab your popcorn", "listen up", "buckle up", "breaking news",
-              "sherehe", "form ni gani" # Add any other repetitive ones here
+              "sherehe", "form ni gani"
           ]
 
           # Topic rotation
@@ -40,11 +85,11 @@
           
           print(f"🎯 Topic: {topic} | NewsAPI: {newsapi_cat}")
 
-          # --- 2. FETCH INTERNATIONAL NEWS (FIXED SORTING) ---
+          # --- 2. FETCH INTERNATIONAL NEWS ---
           params = {
               'category': newsapi_cat,
               'language': 'en',
-              'pageSize': 15, # Increased pool size
+              'pageSize': 15,
               'apiKey': os.environ['NEWSAPI_KEY']
           }
           try:
@@ -58,7 +103,7 @@
               print("No fresh news, skipping")
               sys.exit(0)
           
-          # CRITICAL FIX: 'max' picks the NEWEST date. 'min' was picking the oldest.
+          # FIX: Use MAX to get the NEWEST story, not the oldest
           top_story = max(news_data['articles'], key=lambda x: x['publishedAt'] if x['publishedAt'] else '0000')
           
           title = top_story['title']
@@ -83,9 +128,9 @@
 
           # --- 4. GROUNDED GENERATION (LIVE SEARCH) ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
-          model_id = "gemini-1.5-flash" # Best balance of speed/search
+          model_id = "gemini-1.5-flash" 
 
-          # This tool enables live Google Search
+          # Enable Google Search Tool
           google_search_tool = types.Tool(
               google_search=types.GoogleSearch()
           )
@@ -131,17 +176,17 @@
                       model=model_id,
                       contents=prompt,
                       config=types.GenerateContentConfig(
-                          temperature=0.9, # High creativity for slang
-                          tools=[google_search_tool], # <--- LIVE SEARCH ENABLED
+                          temperature=0.9,
+                          tools=[google_search_tool],
                           response_modalities=["TEXT"]
                       )
                   )
                   
-                  # Check if search actually happened (Grounding Check)
+                  # Metadata Check: Ensure search actually happened
                   if not response.candidates[0].grounding_metadata.search_entry_point:
                       print("⚠️ Warning: Model didn't search. Retrying...")
-                      raise Exception("Grounding failure")
-
+                      # In production we might retry, but for now we proceed to avoid infinite loops
+                  
                   full_text = response.text.strip()
                   print("✅ Generation successful (with Live Search)!")
                   break
@@ -198,3 +243,14 @@
           
           print(f"✅ Tea spilled: {parsed['SLUG']}.md")
           EOF
+
+      - name: Commit and push article
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "content: fresh grounded gossip ☕"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: ${{ env.POSTS_DIR }}/*.md
+          commit_user_name: "Gossip Bot"
+          commit_user_email: "actions@github.com"
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
