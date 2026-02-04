@@ -65,6 +65,7 @@ jobs:
           cat <<EOF > tweet.py
           import tweepy, os, sys
           try:
+              # Using the standard Client (v2 API)
               client = tweepy.Client(
                   consumer_key=os.environ['TWITTER_CONSUMER_KEY'],
                   consumer_secret=os.environ['TWITTER_CONSUMER_SECRET'],
