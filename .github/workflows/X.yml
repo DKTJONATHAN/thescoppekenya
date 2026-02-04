@@ -19,10 +19,35 @@ jobs:
 
       - name: Fetch Content (Smart Fit)
         run: |
-          # ... (Logic remains the same for content fetching) ...
-          # Logic loop for ZenQuotes/JokeAPI truncated for brevity
+          # Initialize variables
+          MAX_RETRIES=5
+          COUNT=0
+          MSG=""
           
-          # Fallback: If we failed 5 times, post a safe default
+          while [ $COUNT -lt $MAX_RETRIES ]; do
+             ROLL=$((RANDOM % 4))
+             
+             if [ $ROLL -eq 0 ]; then
+                echo "Attempting Quote..."
+                JSON=$(curl -s "https://zenquotes.io/api/random")
+                TEMP_MSG="$(echo $JSON | jq -r '.[0].q') - $(echo $JSON | jq -r '.[0].a')"
+             else
+                echo "Attempting Joke..."
+                JSON=$(curl -s "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single&maxLength=280")
+                TEMP_MSG="$(echo $JSON | jq -r '.joke')"
+             fi
+
+             LEN=${#TEMP_MSG}
+             if [ "$TEMP_MSG" != "null" ] && [ $LEN -gt 10 ] && [ $LEN -le 280 ]; then
+                echo "✅ Success!"
+                MSG="$TEMP_MSG"
+                break
+             else
+                COUNT=$((COUNT+1))
+                sleep 2
+             fi
+          done
+
           if [ -z "$MSG" ]; then 
             MSG="Consistency is key. Keep building."
           fi
@@ -31,20 +56,20 @@ jobs:
 
       - name: Post to X
         env:
-          X_KEY: ${{ secrets.X_KEY }}
-          X_SECRET: ${{ secrets.X_SECRET }}
-          ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
-          ACCESS_SECRET: ${{ secrets.ACCESS_SECRET }}
+          TWITTER_CONSUMER_KEY: ${{ secrets.TWITTER_CONSUMER_KEY }}
+          TWITTER_CONSUMER_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
           TWEET_TEXT: ${{ env.MSG }}
         run: |
           cat <<EOF > tweet.py
           import tweepy, os, sys
           try:
               client = tweepy.Client(
-                  consumer_key=os.environ['X_KEY'],
-                  consumer_secret=os.environ['X_SECRET'],
-                  access_token=os.environ['ACCESS_KEY'],
-                  access_token_secret=os.environ['ACCESS_SECRET']
+                  consumer_key=os.environ['TWITTER_CONSUMER_KEY'],
+                  consumer_secret=os.environ['TWITTER_CONSUMER_SECRET'],
+                  access_token=os.environ['TWITTER_ACCESS_TOKEN'],
+                  access_token_secret=os.environ['TWITTER_ACCESS_SECRET']
               )
               client.create_tweet(text=os.environ['TWEET_TEXT'])
               print("✅ Tweet Sent Successfully")
