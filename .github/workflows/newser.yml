@@ -42,47 +42,49 @@ jobs:
           node << 'EOF'
           const fs = require('fs');
           const path = require('path');
-          // Correct import and initialization for Node.js environment
-          const { init } = require('@heyputer/puter.js');
-          const puter = init(); 
+          // Standard import for @heyputer/puter.js
+          const puter = require('@heyputer/puter.js');
 
           async function generate() {
               const now = new Date();
               const todayStr = now.toISOString().split('T')[0];
               const hour = now.getUTCHours();
 
-              // --- 1. TARGETING TEXT-HEAVY GOSSIP HANDLES ---
+              // --- 1. RESEARCHED GOSSIP HANDLES (Text-Heavy) ---
               let country, handles, vips;
               
               if (hour < 8) {
                   country = 'Kenya';
-                  handles = ['kenyasgossips', 'Nairobi_Gossip', 'Kenyans', 'TukoCoKe'];
+                  // Handles that post actual writing/threads
+                  handles = ['kenyasgossips', 'Nairobi_Gossip', 'TukoCoKe', 'Kenyans'];
                   vips = 'William Ruto, Eric Omondi, Khaligraph Jones, Rigathi Gachagua';
               } else if (hour < 16) {
                   country = 'Tanzania';
-                  handles = ['Bongo5', 'MillardAyo', 'Jaymaudaku', 'MangeKimambi_'];
+                  handles = ['Bongo5', 'Jaymaudaku', 'MillardAyo', 'MangeKimambi_'];
                   vips = 'Diamond Platnumz, Samia Suluhu, Harmonize, Zuchu';
               } else {
                   country = 'Uganda';
                   handles = ['MbuUganda', 'GalaxyFMUg', 'sqoopuganda', 'DailyMonitor'];
-                  vips = 'Bobi Wine, Yoweri Museveni, Sheebah Karungi, Eddy Kenzo';
+                  vips = 'Bobi Wine, Museveni, Sheebah Karungi, Eddy Kenzo';
               }
 
-              console.log(`🎯 Targeting ${country} via verified handles...`);
+              console.log(`🎯 Researching ${country} gossip from: ${handles.join(', ')}`);
 
-              // --- 2. GROK 4.1 GENERATION ---
+              // --- 2. GROK 4.1 X-SEARCH PROMPT ---
               const prompt = `
-                  Date: ${todayStr}
-                  Target: ${country}
-                  Handles: ${handles.join(', ')}
+                  Today's Date: ${todayStr}
+                  Target Country: ${country}
+                  VIPs to track: ${vips}
 
                   TASK: 
-                  Use X Search to find a trending text-based gossip story posted in the last 24 hours by these handles.
-                  Write a savage, unfiltered blog post for "The Tea Master".
+                  1. Use X Search to find the latest text-based gossip story posted by these accounts: ${handles.join(', ')}.
+                  2. Verify the news is from TODAY (${todayStr}).
+                  3. Write a savage blog post as "The Tea Master". 
 
                   STRICT RULES:
-                  - NO em dashes (—) or en dashes (–). Use standard hyphens (-) only.
-                  - Use slang: "Wueh!", "Imagine!", "Sasa basi", "Character Development".
+                  - NEVER use em dashes (—) or en dashes (–). Use standard hyphens (-) only.
+                  - Use heavy slang (Wueh, Imagine, Sasa basi, Character Development).
+                  - Content must be as recent as today.
 
                   OUTPUT FORMAT:
                   TITLE: [Savage Clickbait]
@@ -94,7 +96,7 @@ jobs:
               `;
 
               try {
-                  // In Node.js, ai.chat is accessed directly from the initialized puter object
+                  // Grok 4.1 Fast with X Search tool
                   const response = await puter.ai.chat(prompt, {
                       model: 'x-ai/grok-4.1-fast',
                       tools: [{
@@ -108,7 +110,8 @@ jobs:
 
                   let content = response.message.content;
 
-                  // --- 3. DASH SCRUBBER ---
+                  // --- 3. THE DASH SCRUBBER ---
+                  // Replaces em dashes (\u2014) and en dashes (\u2013) with standard hyphens
                   content = content.replace(/\u2014/g, '-').replace(/\u2013/g, '-');
 
                   // --- 4. PARSING ---
@@ -126,13 +129,13 @@ jobs:
                       else if (isBody) parsed.body += line + '\n';
                   });
 
-                  // --- 5. SAVING ---
+                  // --- 5. FILE GENERATION ---
                   const finalMarkdown = `---
           title: "${parsed.title.replace(/"/g, "'")}"
-          slug: "${parsed.slug || 'latest-news'}"
+          slug: "${parsed.slug || 'latest-tea'}"
           excerpt: "${parsed.excerpt.replace(/"/g, "'")}"
           image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
-          date: "${todayStr}"
+          date: "${today_str}"
           ---
 
           ${parsed.body.trim()}`;
@@ -143,10 +146,10 @@ jobs:
                   const fileName = `${parsed.slug || 'latest-tea'}.md`;
                   fs.writeFileSync(path.join(outDir, fileName), finalMarkdown);
                   
-                  console.log(`✅ Success: ${fileName} created using Grok 4.1.`);
+                  console.log(`✅ Success: ${fileName} generated using Grok 4.1 X-Search.`);
 
               } catch (error) {
-                  console.error("❌ Puter Error:", error);
+                  console.error("❌ Puter/Grok Error:", error);
                   process.exit(1);
               }
           }
