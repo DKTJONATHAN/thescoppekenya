@@ -42,7 +42,7 @@ jobs:
           node << 'EOF'
           const fs = require('fs');
           const path = require('path');
-          // Correct import for Node.js environment
+          // Node.js specific import for Puter
           const puter = require('@heyputer/puter.js');
 
           async function generate() {
@@ -50,53 +50,52 @@ jobs:
               const todayStr = now.toISOString().split('T')[0];
               const hour = now.getUTCHours();
 
-              // --- 1. TEXT-HEAVY GOSSIP SOURCES ---
+              // --- 1. TARGETING TEXT-HEAVY GOSSIP HANDLES ---
               let country, handles, vips;
-              
               if (hour < 8) {
                   country = 'Kenya';
-                  handles = ['kenyasgossips', 'Nairobi_Gossip', 'Kenyans', 'TukoCoKe'];
-                  vips = 'William Ruto, Eric Omondi, Khaligraph Jones, Rigathi Gachagua';
+                  handles = ['kenyasgossips', 'Nairobi_Gossip', 'TukoCoKe'];
+                  vips = 'William Ruto, Eric Omondi, Khaligraph Jones';
               } else if (hour < 16) {
                   country = 'Tanzania';
                   handles = ['Bongo5', 'MillardAyo', 'Jaymaudaku', 'MangeKimambi_'];
                   vips = 'Diamond Platnumz, Samia Suluhu, Harmonize, Zuchu';
               } else {
                   country = 'Uganda';
-                  handles = ['MbuUganda', 'GalaxyFMUg', 'sqoopuganda', 'DailyMonitor'];
-                  vips = 'Bobi Wine, Yoweri Museveni, Sheebah Karungi, Eddy Kenzo';
+                  handles = ['MbuUganda', 'GalaxyFMUg', 'sqoopuganda'];
+                  vips = 'Bobi Wine, Museveni, Sheebah Karungi, Eddy Kenzo';
               }
 
-              console.log(`🎯 Researching ${country} drama via: ${handles.join(', ')}`);
+              console.log(`🎯 Researching ${country} drama via X handles: ${handles.join(', ')}`);
 
-              // --- 2. THE SAVAGE PROMPT ---
+              // --- 2. PROMPT & GROK X-SEARCH ---
               const prompt = `
                   Date: ${todayStr}
                   Target Country: ${country}
                   Handles: @${handles.join(', @')}
 
-                  TASK: 
-                  Use X Search to find the latest trending text-based gossip from the handles above.
-                  Write a brutal, high-slang blog post for "The Tea Master". 
+                  TASK: Use X Search to find the latest trending text gossip from the handles above. 
+                  Write a savage blog post for "The Tea Master". 
 
-                  STRICT CONSTRAINTS:
+                  RULES:
                   - NO em dashes (—) or en dashes (–). Use standard hyphens (-) only.
-                  - Language: English mixed with heavy East African slang (Wueh, Character Development, Imagine).
-                  - Must be factual news from TODAY (${todayStr}).
+                  - Use heavy slang (Wueh, Character Development, Imagine).
+                  - Content must be from TODAY.
 
                   OUTPUT FORMAT:
                   TITLE: [Savage Clickbait]
                   SLUG: [url-friendly-slug]
-                  EXCERPT: [One spicy hook sentence]
+                  EXCERPT: [Spicy hook]
                   IMAGE_KEYWORD: [Visual search term]
                   BODY:
-                  [Full article in Markdown with ## Headers]
+                  [Article in Markdown]
               `;
 
               try {
-                  // Puter.ai.chat is the correct method for Node.js
+                  // The Puter Node SDK requires calling 'chat' directly from 'puter.ai'
+                  // Ensure we are using the Grok 4.1 model which has the x_search tool
                   const response = await puter.ai.chat(prompt, {
-                      model: 'x-ai/grok-4.1-fast',
+                      model: 'grok-4.1-fast', // Puter's internal identifier for the latest Grok
                       tools: [{
                           type: "x_search",
                           x_search: {
@@ -105,6 +104,10 @@ jobs:
                           }
                       }]
                   });
+
+                  if (!response || !response.message || !response.message.content) {
+                      throw new Error("Empty response from Puter AI");
+                  }
 
                   let content = response.message.content;
 
@@ -126,7 +129,7 @@ jobs:
                       else if (isBody) parsed.body += line + '\n';
                   });
 
-                  // --- 5. GENERATE FILE ---
+                  // --- 5. SAVE ---
                   const finalMarkdown = `---
           title: "${parsed.title.replace(/"/g, "'")}"
           slug: "${parsed.slug || 'tea-alert'}"
@@ -146,7 +149,7 @@ jobs:
                   console.log(`✅ Success: ${fileName} generated via Grok 4.1.`);
 
               } catch (error) {
-                  console.error("❌ Puter/Grok Error:", error);
+                  console.error("❌ Puter/Grok Error:", error.message);
                   process.exit(1);
               }
           }
@@ -157,6 +160,6 @@ jobs:
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: fresh tea via Grok 4.1 (X-Search) ☕"
+          commit_message: "content: fresh tea via Grok 4.1 ☕"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: ${{ env.POSTS_DIR }}/*.md
