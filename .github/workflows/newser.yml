@@ -81,6 +81,7 @@ jobs:
 
           # --- 2. HELPERS ---
           def dash_scrubber(text):
+              # Removes em dashes (\u2014) and en dashes (\u2013)
               return text.replace('\u2014', '-').replace('\u2013', '-')
 
           def get_real_image(query):
@@ -107,8 +108,8 @@ jobs:
           TASK: USE GOOGLE SEARCH to find the absolute freshest news from TODAY. 
           Write a savage, unfiltered East African gossip article. 
           
-          RULES:
-          - No em dashes (—) or en dashes (–). Use regular hyphens only.
+          STRICT RULES:
+          - NO em dashes (—) or en dashes (–). Use regular hyphens only.
           - Use slang: "Wueh!", "Imagine!", "Character Development".
 
           OUTPUT FORMAT:
@@ -123,12 +124,13 @@ jobs:
           """
 
           try:
+              # FIXED: Nester thinking_level inside ThinkingConfig
               response = client.models.generate_content(
                   model="gemini-3-flash-preview",
                   contents=spec_text,
                   config=types.GenerateContentConfig(
-                      temperature=1.0, # Recommended for Gemini 3
-                      thinking_level="minimal", # Prevents the "stuck" hang
+                      temperature=1.0,
+                      thinking_config=types.ThinkingConfig(thinking_level="minimal"),
                       tools=[google_search_tool]
                   )
               )
