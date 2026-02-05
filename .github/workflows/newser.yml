@@ -42,7 +42,9 @@ jobs:
           node << 'EOF'
           const fs = require('fs');
           const path = require('path');
-          const puter = require('@heyputer/puter.js');
+          // Correct import and initialization for Node.js environment
+          const { init } = require('@heyputer/puter.js');
+          const puter = init(); 
 
           async function generate() {
               const now = new Date();
@@ -54,46 +56,45 @@ jobs:
               
               if (hour < 8) {
                   country = 'Kenya';
-                  handles = ['kenyasgossips', 'Nairobi_Gossip', 'TukoCoKe'];
+                  handles = ['kenyasgossips', 'Nairobi_Gossip', 'Kenyans', 'TukoCoKe'];
                   vips = 'William Ruto, Eric Omondi, Khaligraph Jones, Rigathi Gachagua';
               } else if (hour < 16) {
                   country = 'Tanzania';
-                  handles = ['Bongo5', 'Jaymaudaku', 'MillardAyo'];
+                  handles = ['Bongo5', 'MillardAyo', 'Jaymaudaku', 'MangeKimambi_'];
                   vips = 'Diamond Platnumz, Samia Suluhu, Harmonize, Zuchu';
               } else {
                   country = 'Uganda';
-                  handles = ['MbuUganda', 'GalaxyFMUg', 'sqoopuganda'];
-                  vips = 'Bobi Wine, Museveni, Sheebah Karungi, Eddy Kenzo';
+                  handles = ['MbuUganda', 'GalaxyFMUg', 'sqoopuganda', 'DailyMonitor'];
+                  vips = 'Bobi Wine, Yoweri Museveni, Sheebah Karungi, Eddy Kenzo';
               }
 
-              console.log(`🎯 Targeting ${country} via handles: ${handles.join(', ')}`);
+              console.log(`🎯 Targeting ${country} via verified handles...`);
 
-              // --- 2. GROK 4.1 REAL-TIME GENERATION ---
+              // --- 2. GROK 4.1 GENERATION ---
               const prompt = `
-                  Today's Date: ${todayStr}
-                  Target Country: ${country}
-                  VIPs: ${vips}
+                  Date: ${todayStr}
+                  Target: ${country}
+                  Handles: ${handles.join(', ')}
 
                   TASK: 
-                  Use X Search to find the latest trending gossip story from these accounts: ${handles.join(', ')}.
-                  Write a savage article for "The Tea Master" blog.
+                  Use X Search to find a trending text-based gossip story posted in the last 24 hours by these handles.
+                  Write a savage, unfiltered blog post for "The Tea Master".
 
-                  STRICT CONSTRAINTS:
+                  STRICT RULES:
                   - NO em dashes (—) or en dashes (–). Use standard hyphens (-) only.
-                  - Use heavy slang (Wueh, Imagine, Sasa basi, Character Development).
-                  - Focus on actual events from the last 24 hours.
+                  - Use slang: "Wueh!", "Imagine!", "Sasa basi", "Character Development".
 
                   OUTPUT FORMAT:
                   TITLE: [Savage Clickbait]
                   SLUG: [url-friendly-slug]
-                  EXCERPT: [One spicy hook sentence]
+                  EXCERPT: [Spicy hook sentence]
                   IMAGE_KEYWORD: [Visual search term]
                   BODY:
                   [Full article in Markdown with ## Headers]
               `;
 
               try {
-                  // Puter.js handles guest authentication automatically
+                  // In Node.js, ai.chat is accessed directly from the initialized puter object
                   const response = await puter.ai.chat(prompt, {
                       model: 'x-ai/grok-4.1-fast',
                       tools: [{
@@ -107,7 +108,7 @@ jobs:
 
                   let content = response.message.content;
 
-                  // --- 3. THE DASH SCRUBBER ---
+                  // --- 3. DASH SCRUBBER ---
                   content = content.replace(/\u2014/g, '-').replace(/\u2013/g, '-');
 
                   // --- 4. PARSING ---
@@ -116,18 +117,19 @@ jobs:
                   let isBody = false;
 
                   lines.forEach(line => {
-                      if (line.startsWith('TITLE:')) parsed.title = line.replace('TITLE:', '').trim();
-                      else if (line.startsWith('SLUG:')) parsed.slug = line.replace('SLUG:', '').trim();
-                      else if (line.startsWith('EXCERPT:')) parsed.excerpt = line.replace('EXCERPT:', '').trim();
-                      else if (line.startsWith('IMAGE_KEYWORD:')) parsed.imageKeyword = line.replace('IMAGE_KEYWORD:', '').trim();
-                      else if (line.startsWith('BODY:')) isBody = true;
+                      const cleanLine = line.trim();
+                      if (cleanLine.startsWith('TITLE:')) parsed.title = cleanLine.replace('TITLE:', '').trim();
+                      else if (cleanLine.startsWith('SLUG:')) parsed.slug = cleanLine.replace('SLUG:', '').trim();
+                      else if (cleanLine.startsWith('EXCERPT:')) parsed.excerpt = cleanLine.replace('EXCERPT:', '').trim();
+                      else if (cleanLine.startsWith('IMAGE_KEYWORD:')) parsed.imageKeyword = cleanLine.replace('IMAGE_KEYWORD:', '').trim();
+                      else if (cleanLine.startsWith('BODY:')) isBody = true;
                       else if (isBody) parsed.body += line + '\n';
                   });
 
                   // --- 5. SAVING ---
                   const finalMarkdown = `---
           title: "${parsed.title.replace(/"/g, "'")}"
-          slug: "${parsed.slug || 'latest-tea'}"
+          slug: "${parsed.slug || 'latest-news'}"
           excerpt: "${parsed.excerpt.replace(/"/g, "'")}"
           image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
           date: "${todayStr}"
@@ -141,7 +143,7 @@ jobs:
                   const fileName = `${parsed.slug || 'latest-tea'}.md`;
                   fs.writeFileSync(path.join(outDir, fileName), finalMarkdown);
                   
-                  console.log(`✅ ${fileName} saved. Drama has been documented.`);
+                  console.log(`✅ Success: ${fileName} created using Grok 4.1.`);
 
               } catch (error) {
                   console.error("❌ Puter Error:", error);
