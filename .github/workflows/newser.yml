@@ -3,11 +3,8 @@ name: East Africa (Gemini 3 Flash)
 on:
   schedule:
     - cron: '0 0 * * *'   # 3 AM EAT
-    - cron: '0 4 * * *'   # 7 AM EAT
     - cron: '0 8 * * *'   # 11 AM EAT
-    - cron: '0 12 * * *'  # 3 PM EAT
     - cron: '0 16 * * *'  # 7 PM EAT
-    - cron: '0 20 * * *'  # 11 PM EAT
   workflow_dispatch:
     inputs:
       manual_topic:
@@ -60,28 +57,22 @@ jobs:
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_hour = datetime.datetime.utcnow().hour
 
+          # Fallback Model List
+          MODELS = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+
           if current_hour < 2:   
               country_name, vips = 'Tanzania', "Samia Suluhu, Diamond Platnumz, Harmonize, Zuchu, Alikiba"
-          elif current_hour < 6: 
-              country_name, vips = 'Kenya', "William Ruto, Rigathi Gachagua, Raila Odinga, Eric Omondi, Khaligraph Jones"
           elif current_hour < 10: 
-              country_name, vips = 'Uganda', "Yoweri Museveni, Bobi Wine, Muhoozi Kainerugaba, Sheebah Karungi"
-          elif current_hour < 14: 
-              country_name, vips = 'Tanzania', "Mange Kimambi, Millard Ayo, Marioo, Paula Kajala"
-          elif current_hour < 18: 
-              country_name, vips = 'Kenya', "Johnson Sakaja, Ferdinand Omanyala, Bahati, Diana Marua"
+              country_name, vips = 'Kenya', "William Ruto, Rigathi Gachagua, Raila Odinga, Eric Omondi, Khaligraph Jones"
           else:                   
               country_name, vips = 'Uganda', "Jose Chameleone, Eddy Kenzo, Spice Diana, Bad Black"
 
           manual_input = os.environ.get('MANUAL_TOPIC', '').strip()
-          categories = ["Entertainment", "Sports", "Politics", "Business", "Social Media Drama"]
-          topic = manual_input if manual_input else random.choice(categories)
-
+          topic = manual_input if manual_input else random.choice(["Entertainment", "Sports", "Politics"])
           print(f"🎯 Target: {country_name} | Topic: {topic}")
 
           # --- 2. HELPERS ---
           def dash_scrubber(text):
-              # Removes em dashes (\u2014) and en dashes (\u2013)
               return text.replace('\u2014', '-').replace('\u2013', '-')
 
           def get_real_image(query):
@@ -92,63 +83,55 @@ jobs:
               try:
                   resp = requests.get(url, timeout=10)
                   if resp.status_code == 200: return resp.json()['urls']['regular']
-              except Exception: pass
+              except: pass
               return fallback_image
 
-          # --- 3. GENERATION ---
+          # --- 3. GENERATION WITH RETRY LOGIC ---
           client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
 
-          spec_text = f"""
-          Current Date: {full_date_str}
-          Target Country: {country_name}
-          Topic: {topic}
-          Target Figures: {vips}
-          
-          TASK: USE GOOGLE SEARCH to find the absolute freshest news from TODAY. 
-          Write a savage, unfiltered East African gossip article. 
-          
-          STRICT RULES:
-          - NO em dashes (—) or en dashes (–). Use regular hyphens only.
-          - Use slang: "Wueh!", "Imagine!", "Character Development".
+          spec_text = f"Today: {full_date_str}. Country: {country_name}. Topic: {topic}. Target: {vips}. Use Search to find latest news. No em/en dashes. Style: Savage gossip. Format: TITLE: SLUG: EXCERPT: CATEGORY: TAGS: IMAGE_KEYWORD: BODY:"
 
-          OUTPUT FORMAT:
-          TITLE: [Savage Clickbait]
-          SLUG: [url-friendly-lowercase]
-          EXCERPT: [Spicy hook]
-          CATEGORY: {topic}
-          TAGS: [tag1, tag2]
-          IMAGE_KEYWORD: [search query]
-          BODY:
-          [Full Markdown article]
-          """
+          full_text = None
+          for model_id in MODELS:
+              if full_text: break
+              print(f"🤖 Trying {model_id}...")
+              
+              for attempt in range(3): # 3 retries per model
+                  try:
+                      response = client.models.generate_content(
+                          model=model_id,
+                          contents=spec_text,
+                          config=types.GenerateContentConfig(
+                              temperature=1.0,
+                              thinking_config=types.ThinkingConfig(thinking_level="minimal") if "3-flash" in model_id else None,
+                              tools=[google_search_tool]
+                          )
+                      )
+                      full_text = dash_scrubber(response.text.strip())
+                      print(f"✅ Success with {model_id}!")
+                      break
+                  except Exception as e:
+                      if "429" in str(e):
+                          wait_time = (2 ** attempt) * 30 + random.randint(1, 10)
+                          print(f"⏳ 429 Quota Hit. Waiting {wait_time}s before retry {attempt+1}/3...")
+                          time.sleep(wait_time)
+                      else:
+                          print(f"⚠️ Error: {e}")
+                          break
 
-          try:
-              # FIXED: Nester thinking_level inside ThinkingConfig
-              response = client.models.generate_content(
-                  model="gemini-3-flash-preview",
-                  contents=spec_text,
-                  config=types.GenerateContentConfig(
-                      temperature=1.0,
-                      thinking_config=types.ThinkingConfig(thinking_level="minimal"),
-                      tools=[google_search_tool]
-                  )
-              )
-              full_text = dash_scrubber(response.text.strip())
-          except Exception as e:
-              print(f"❌ API Error: {e}")
+          if not full_text:
+              print("❌ All models and retries failed.")
               sys.exit(1)
 
           # --- 4. PARSE & SAVE ---
-          parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
+          parsed = { "TITLE": "N/A", "SLUG": f"tea-{random.randint(100,999)}", "EXCERPT": "", "CATEGORY": topic, "TAGS": "", "IMAGE_KEYWORD": topic, "BODY": "" }
           current_section = None
           for line in full_text.splitlines():
               clean = line.strip().replace("**", "")
               if clean.startswith("TITLE:"): parsed["TITLE"] = clean.replace("TITLE:", "").strip()
               elif clean.startswith("SLUG:"): parsed["SLUG"] = clean.replace("SLUG:", "").strip()
               elif clean.startswith("EXCERPT:"): parsed["EXCERPT"] = clean.replace("EXCERPT:", "").strip()
-              elif clean.startswith("CATEGORY:"): parsed["CATEGORY"] = clean.replace("CATEGORY:", "").strip()
-              elif clean.startswith("TAGS:"): parsed["TAGS"] = clean.replace("TAGS:", "").strip()
               elif clean.startswith("IMAGE_KEYWORD:"): parsed["IMAGE_KEYWORD"] = clean.replace("IMAGE_KEYWORD:", "").strip()
               elif clean.startswith("BODY:"):
                   current_section = "BODY"
@@ -157,29 +140,19 @@ jobs:
                   parsed["BODY"] += line + "\n"
 
           image_url = get_real_image(parsed['IMAGE_KEYWORD'])
-          final_file = f"""---
-          title: "{parsed['TITLE'].replace('"', "'")}"
-          slug: "{parsed['SLUG']}"
-          excerpt: "{parsed['EXCERPT'].replace('"', "'")}"
-          image: "{image_url}"
-          category: "{parsed['CATEGORY']}"
-          date: "{today_str}"
-          ---
-
-          {parsed['BODY'].strip()}
-          """
+          final_file = f"---\ntitle: \"{parsed['TITLE']}\"\nslug: \"{parsed['SLUG']}\"\nexcerpt: \"{parsed['EXCERPT']}\"\nimage: \"{image_url}\"\ncategory: \"{parsed['CATEGORY']}\"\ndate: \"{today_str}\"\n---\n\n{parsed['BODY'].strip()}"
 
           out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
           os.makedirs(out_dir, exist_ok=True)
           with open(os.path.join(out_dir, f"{parsed['SLUG']}.md"), "w", encoding="utf-8") as f:
               f.write(final_file)
           
-          print(f"✅ Success: {parsed['SLUG']}.md")
+          print(f"✅ Created {parsed['SLUG']}.md")
           EOF
 
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: fresh tea served ☕"
+          commit_message: "content: daily tea served ☕"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: ${{ env.POSTS_DIR }}/*.md
