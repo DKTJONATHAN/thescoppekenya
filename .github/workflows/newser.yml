@@ -2,7 +2,7 @@ name: East Africa Gossip Bot (Puter + Grok 4.1)
 
 on:
   schedule:
-    - cron: '0 0,4,8,12,16,20 * * *' # Every 4 hours to catch peak drama
+    - cron: '0 0,4,8,12,16,20 * * *' 
   workflow_dispatch:
     inputs:
       manual_topic:
@@ -33,7 +33,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install @puter/sdk
+        run: npm install @heyputer/puter.js
 
       - name: Generate article with Grok 4.1
         env:
@@ -42,27 +42,27 @@ jobs:
           node << 'EOF'
           const fs = require('fs');
           const path = require('path');
-          const puter = require('@puter/sdk');
+          const puter = require('@heyputer/puter.js');
 
           async function generate() {
               const now = new Date();
               const todayStr = now.toISOString().split('T')[0];
               const hour = now.getUTCHours();
 
-              // --- 1. RESEARCHED GOSSIP HANDLES ---
+              // --- 1. TARGETING TEXT-HEAVY GOSSIP HANDLES ---
               let country, handles, vips;
               
               if (hour < 8) {
                   country = 'Kenya';
-                  handles = ['kenyasgossips', 'Nairobi_Gossip', 'TukoCoKe', 'Kenyans'];
+                  handles = ['kenyasgossips', 'Nairobi_Gossip', 'TukoCoKe'];
                   vips = 'William Ruto, Eric Omondi, Khaligraph Jones, Rigathi Gachagua';
               } else if (hour < 16) {
                   country = 'Tanzania';
-                  handles = ['Bongo5', 'GhaflaTanzania', 'MillardAyo', 'Jaymaudaku'];
+                  handles = ['Bongo5', 'Jaymaudaku', 'MillardAyo'];
                   vips = 'Diamond Platnumz, Samia Suluhu, Harmonize, Zuchu';
               } else {
                   country = 'Uganda';
-                  handles = ['MbuUganda', 'GalaxyFMUg', 'GhaflaUganda', 'sqoopuganda'];
+                  handles = ['MbuUganda', 'GalaxyFMUg', 'sqoopuganda'];
                   vips = 'Bobi Wine, Museveni, Sheebah Karungi, Eddy Kenzo';
               }
 
@@ -72,27 +72,28 @@ jobs:
               const prompt = `
                   Today's Date: ${todayStr}
                   Target Country: ${country}
-                  VIPs to check: ${vips}
+                  VIPs: ${vips}
 
                   TASK: 
-                  Use X Search to find a specific, text-based gossip story posted in the last 24 hours by these handles: ${handles.join(', ')}.
-                  Look for "Character Development", "Tea", or "Drama".
+                  Use X Search to find the latest trending gossip story from these accounts: ${handles.join(', ')}.
+                  Write a savage article for "The Tea Master" blog.
 
                   STRICT CONSTRAINTS:
                   - NO em dashes (—) or en dashes (–). Use standard hyphens (-) only.
-                  - Use heavy East African slang (Wueh, Imagine, Sasa basi).
-                  - If handles are dry, search for trending hashtags: #KenyaGossip, #BongoDrama, #UgandaCelebs.
+                  - Use heavy slang (Wueh, Imagine, Sasa basi, Character Development).
+                  - Focus on actual events from the last 24 hours.
 
                   OUTPUT FORMAT:
                   TITLE: [Savage Clickbait]
                   SLUG: [url-friendly-slug]
-                  EXCERPT: [Spicy hook]
+                  EXCERPT: [One spicy hook sentence]
                   IMAGE_KEYWORD: [Visual search term]
                   BODY:
                   [Full article in Markdown with ## Headers]
               `;
 
               try {
+                  // Puter.js handles guest authentication automatically
                   const response = await puter.ai.chat(prompt, {
                       model: 'x-ai/grok-4.1-fast',
                       tools: [{
@@ -134,16 +135,16 @@ jobs:
 
           ${parsed.body.trim()}`;
 
-                  const outDir = path.join(process.cwd(), 'content/posts');
+                  const outDir = path.join(process.cwd(), process.env.POSTS_DIR);
                   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
                   
                   const fileName = `${parsed.slug || 'latest-tea'}.md`;
                   fs.writeFileSync(path.join(outDir, fileName), finalMarkdown);
                   
-                  console.log(`✅ ${fileName} served fresh via Grok 4.1.`);
+                  console.log(`✅ ${fileName} saved. Drama has been documented.`);
 
               } catch (error) {
-                  console.error("❌ Puter/Grok 4.1 Error:", error);
+                  console.error("❌ Puter Error:", error);
                   process.exit(1);
               }
           }
@@ -154,6 +155,6 @@ jobs:
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: gossip fresh from X (Grok 4.1) ☕"
+          commit_message: "content: fresh tea via Grok 4.1 ☕"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: ${{ env.POSTS_DIR }}/*.md
