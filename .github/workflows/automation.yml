@@ -1,4 +1,4 @@
-name: International Gossip Bot (NewsAPI + Gemini)
+name: International Gossip Bot (Gemini 3 Flash)
 
 on:
   schedule:
@@ -61,7 +61,10 @@ jobs:
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_hour = datetime.datetime.utcnow().hour
 
-          MODELS_TO_TRY = ["gemini-2.0-flash", "gemini-1.5-flash-001", "gemini-1.5-pro-001"]
+          # UPDATED MODEL LIST FOR 2026
+          # 1. gemini-3-flash-preview (The requested target)
+          # 2. gemini-2.5-flash (Current stable backup)
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
@@ -91,7 +94,7 @@ jobs:
               'apiKey': os.environ['NEWSAPI_KEY']
           }
           try:
-              news_resp = requests.get('https://newsapi.org/v2/top-headlines', params=params, timeout=10)
+              news_resp = requests.get('https://newsapi.org/v2/top-headlines', params=params, timeout=15)
               news_data = news_resp.json()
           except Exception as e:
               print(f"Error fetching news: {e}")
@@ -110,8 +113,6 @@ jobs:
           desc = top_story.get('description') or ""
           content = top_story.get('content') or ""
           snippet = (desc + " " + content).strip()[:500]
-          source_obj = top_story.get('source') or {}
-          source = source_obj.get('name', 'Unknown Source')
           
           print(f"📰 NewsAPI Headline: {title[:80]}...")
 
@@ -129,7 +130,7 @@ jobs:
               return fallback_image
 
           def dash_scrubber(text):
-              # Replaces em dashes (\u2014) and en dashes (\u2013) with a standard hyphen
+              # Removes em dashes (\u2014) and en dashes (\u2013)
               return text.replace('\u2014', '-').replace('\u2013', '-')
 
           # --- 4. GROUNDED GENERATION ---
@@ -140,11 +141,13 @@ jobs:
           NEWS HEADLINE: "{title}"
           SOURCE SNIPPET: "{snippet}"
 
-          TASK: Research the LATEST developments of this story using Google Search to ensure your commentary is accurate as of {today_str}. 
+          TASK: Use Google Search to research what happened TODAY regarding this news. Find the absolute latest details so the article is accurate as of {today_str}.
 
-          ROLE: "The Nairobi Gossip Source" - A hyper-local, savage commentator. Use Nairobi slang but NO banned phrases: {", ".join(BANNED_PHRASES)}.
+          ROLE: "The Nairobi Gossip Source" - A savage commentator. Use Nairobi slang but NO banned phrases: {", ".join(BANNED_PHRASES)}.
 
-          STRICT DASH RULE: NEVER use em dashes (—) or en dashes (–). Use regular hyphens (-) only.
+          STRICT RULES:
+          1. NEVER use em dashes (—) or en dashes (–). Only regular hyphens (-).
+          2. Output must follow the format below EXACTLY.
 
           OUTPUT FORMAT:
           TITLE: [Savage Clickbait]
@@ -162,25 +165,29 @@ jobs:
           
           for model_id in MODELS_TO_TRY:
               print(f"🤖 Attempting with {model_id}...")
-              try:
-                  response = client.models.generate_content(
-                      model=model_id,
-                      contents=prompt,
-                      config=types.GenerateContentConfig(
-                          temperature=0.9,
-                          tools=[google_search_tool]
+              # Quota cooldown retry
+              for retry in range(2):
+                  try:
+                      response = client.models.generate_content(
+                          model=model_id,
+                          contents=prompt,
+                          config=types.GenerateContentConfig(
+                              temperature=0.85,
+                              tools=[google_search_tool]
+                          )
                       )
-                  )
-                  full_text = response.text.strip()
-                  # Apply Scrubber immediately
-                  full_text = dash_scrubber(full_text)
-                  success_flag = True
-                  print(f"✅ SUCCESS with {model_id}!")
-                  break 
-              except Exception as e:
-                  print(f"⚠️ Error with {model_id}: {e}")
-                  time.sleep(10)
-                  continue
+                      full_text = dash_scrubber(response.text.strip())
+                      success_flag = True
+                      print(f"✅ SUCCESS with {model_id}!")
+                      break 
+                  except Exception as e:
+                      if "429" in str(e):
+                          print("⏳ Quota hit. Waiting 35s...")
+                          time.sleep(35)
+                          continue
+                      print(f"⚠️ Error with {model_id}: {e}")
+                      break
+              if success_flag: break
 
           if not success_flag: sys.exit(1)
 
@@ -227,8 +234,6 @@ jobs:
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: fresh gossip ☕"
+          commit_message: "content: fresh gossip via Gemini 3 Flash ☕"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: ${{ env.POSTS_DIR }}/*.md
-          commit_user_name: "Gossip Bot"
-          commit_user_email: "actions@github.com"
