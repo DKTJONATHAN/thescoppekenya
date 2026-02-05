@@ -59,7 +59,6 @@ jobs:
           current_hour = datetime.datetime.utcnow().hour
 
           # --- 2. COUNTRY & VIP ROTATION ---
-          # We rotate countries and provide specific names to force recency/accuracy
           if current_hour < 2:   
               country_name, vips = 'Tanzania', "Samia Suluhu, Diamond Platnumz, Harmonize, Zuchu, Alikiba"
           elif current_hour < 6: 
@@ -93,40 +92,46 @@ jobs:
               except Exception: pass
               return fallback_image
 
-          # --- 5. THE FINE-TUNED PROMPT ---
+          def dash_scrubber(text):
+              # Replaces em dashes (\u2014) and en dashes (\u2013) with a standard hyphen
+              text = text.replace('\u2014', '-').replace('\u2013', '-')
+              return text
+
+          # --- 5. THE FINE-TUNED PROMPT (Added Search Intent) ---
           spec_text = f"""
           Current Date: {full_date_str}
           Target Country: {country_name}
           Topic: {topic}
           Target Figures: {vips}
           
-          ROLE: You are "The Tea Master", East Africa's most savage, unfiltered gossip blogger.
-          
-          TASK: Write a factual but BRUTALLY opinionated wrap-up of a story that happened THIS WEEK.
+          TASK: Act as "The Tea Master". USE GOOGLE SEARCH to find the absolute latest, breaking news from TODAY or the last 24 hours regarding {country_name} and these figures: {vips}.
           
           STRICT RULES:
-          - YOU MUST MENTION NAMES. Use the figures listed above ({vips}) to ground the story in reality.
-          - DO NOT BE NICE. If someone is failing or causing drama, call them out. No corporate PR talk.
-          - Use heavy slang ("Wueh!", "Imagine!", "Tea", "Kwani?", "Sasa basi", "Character Development").
-          - Be dramatic, engaging, and highly critical.
+          - DO NOT hallucinate. Use actual events happening right now.
+          - STYLE: Savage, unfiltered East African gossip blogger.
+          - VOCAB: Use "Wueh!", "Imagine!", "Tea", "Kwani?", "Character Development".
+          - FORMAT: Provide raw data labeled exactly as shown below.
+          - DASHES: Never use em dashes or en dashes. Use regular hyphens.
 
           *** STRICT OUTPUT FORMAT ***
-          Do NOT write Markdown/YAML yourself. Provide raw data labeled exactly like this:
-
-          TITLE: [Insert savage clickbait title]
+          TITLE: [Savage clickbait title]
           SLUG: [url-friendly-slug-lowercase]
-          EXCERPT: [One spicy sentence hook mentioning a name]
+          EXCERPT: [One spicy sentence hook]
           CATEGORY: {topic}
           TAGS: [tag1, tag2, tag3]
-          IMAGE_KEYWORD: [Visual search term for the story]
+          IMAGE_KEYWORD: [Visual search term]
           BODY:
-          [Write the full article here using ## Headers. NO Title at start. Start by addressing the drama directly.]
+          [Full article with ## Headers. No Title inside. Start with the drama.]
           """
 
           api_key = os.environ.get("GEMINI_API_KEY")
           url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key={api_key}"
           headers = { "Content-Type": "application/json" }
-          payload = { "contents": [{ "parts": [{ "text": spec_text }] }] }
+          # Note: google_search_retrieval tool is called here for recency
+          payload = {
+            "contents": [{ "parts": [{ "text": spec_text }] }],
+            "tools": [{"google_search_retrieval": {}}]
+          }
 
           full_text = ""
           attempt = 0
@@ -146,9 +151,13 @@ jobs:
               except Exception as e:
                   time.sleep(60)
           
-          # --- 6. PARSE & SAVE ---
+          # --- 6. PARSE, SCRUB & SAVE ---
           parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
           current_section = None
+          
+          # Scrub all dashes from the raw output first
+          full_text = dash_scrubber(full_text)
+
           for line in full_text.splitlines():
               clean = line.strip().replace("**", "")
               if clean.startswith("TITLE:"): parsed["TITLE"] = clean.replace("TITLE:", "").strip()
@@ -173,7 +182,7 @@ jobs:
           date: "{today_str}"
           ---
 
-          {parsed['BODY']}
+          {parsed['BODY'].strip()}
           """
 
           out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
@@ -181,7 +190,7 @@ jobs:
           with open(os.path.join(out_dir, f"{parsed['SLUG']}.md"), "w", encoding="utf-8") as f:
               f.write(final_file)
           
-          print(f"✅ Success! Created {parsed['SLUG']}.md")
+          print(f"✅ Success! Created {parsed['SLUG']}.md with dash scrubbing applied.")
           EOF
 
       - name: Commit and push article
