@@ -1,14 +1,12 @@
-name: East Africa (Gemini 3 Flash)
+name: East Africa Gossip Bot (Puter + Grok 4.1)
 
 on:
   schedule:
-    - cron: '0 0 * * *'   # 3 AM EAT
-    - cron: '0 8 * * *'   # 11 AM EAT
-    - cron: '0 16 * * *'  # 7 PM EAT
+    - cron: '0 0,4,8,12,16,20 * * *' # Every 4 hours to catch peak drama
   workflow_dispatch:
     inputs:
       manual_topic:
-        description: 'Force a topic (optional)'
+        description: 'Force a specific drama topic'
         required: false
         default: ''
 
@@ -27,132 +25,135 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ env.DEFAULT_BRANCH }}
-          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
-          persist-credentials: true
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.11'
+          node-version: '20'
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests google-genai
+        run: npm install @puter/sdk
 
-      - name: Generate article with Gemini
+      - name: Generate article with Grok 4.1
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
-          MANUAL_TOPIC: ${{ inputs.manual_topic }}
-          POSTS_DIR: ${{ env.POSTS_DIR }}
+          MANUAL_TOPIC: ${{ github.event.inputs.manual_topic }}
         run: |
-          python << 'EOF'
-          import os, json, datetime, requests, re, random, time, sys
-          from google import genai
-          from google.genai import types
+          node << 'EOF'
+          const fs = require('fs');
+          const path = require('path');
+          const puter = require('@puter/sdk');
 
-          # --- 1. CONFIGURATION ---
-          today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
-          full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
-          current_hour = datetime.datetime.utcnow().hour
+          async function generate() {
+              const now = new Date();
+              const todayStr = now.toISOString().split('T')[0];
+              const hour = now.getUTCHours();
 
-          # Fallback Model List
-          MODELS = ["gemini-3-flash-preview", "gemini-2.5-flash"]
-
-          if current_hour < 2:   
-              country_name, vips = 'Tanzania', "Samia Suluhu, Diamond Platnumz, Harmonize, Zuchu, Alikiba"
-          elif current_hour < 10: 
-              country_name, vips = 'Kenya', "William Ruto, Rigathi Gachagua, Raila Odinga, Eric Omondi, Khaligraph Jones"
-          else:                   
-              country_name, vips = 'Uganda', "Jose Chameleone, Eddy Kenzo, Spice Diana, Bad Black"
-
-          manual_input = os.environ.get('MANUAL_TOPIC', '').strip()
-          topic = manual_input if manual_input else random.choice(["Entertainment", "Sports", "Politics"])
-          print(f"🎯 Target: {country_name} | Topic: {topic}")
-
-          # --- 2. HELPERS ---
-          def dash_scrubber(text):
-              return text.replace('\u2014', '-').replace('\u2013', '-')
-
-          def get_real_image(query):
-              access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
-              fallback_image = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
-              if not access_key: return fallback_image
-              url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}"
-              try:
-                  resp = requests.get(url, timeout=10)
-                  if resp.status_code == 200: return resp.json()['urls']['regular']
-              except: pass
-              return fallback_image
-
-          # --- 3. GENERATION WITH RETRY LOGIC ---
-          client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
-          google_search_tool = types.Tool(google_search=types.GoogleSearch())
-
-          spec_text = f"Today: {full_date_str}. Country: {country_name}. Topic: {topic}. Target: {vips}. Use Search to find latest news. No em/en dashes. Style: Savage gossip. Format: TITLE: SLUG: EXCERPT: CATEGORY: TAGS: IMAGE_KEYWORD: BODY:"
-
-          full_text = None
-          for model_id in MODELS:
-              if full_text: break
-              print(f"🤖 Trying {model_id}...")
+              // --- 1. RESEARCHED GOSSIP HANDLES ---
+              let country, handles, vips;
               
-              for attempt in range(3): # 3 retries per model
-                  try:
-                      response = client.models.generate_content(
-                          model=model_id,
-                          contents=spec_text,
-                          config=types.GenerateContentConfig(
-                              temperature=1.0,
-                              thinking_config=types.ThinkingConfig(thinking_level="minimal") if "3-flash" in model_id else None,
-                              tools=[google_search_tool]
-                          )
-                      )
-                      full_text = dash_scrubber(response.text.strip())
-                      print(f"✅ Success with {model_id}!")
-                      break
-                  except Exception as e:
-                      if "429" in str(e):
-                          wait_time = (2 ** attempt) * 30 + random.randint(1, 10)
-                          print(f"⏳ 429 Quota Hit. Waiting {wait_time}s before retry {attempt+1}/3...")
-                          time.sleep(wait_time)
-                      else:
-                          print(f"⚠️ Error: {e}")
-                          break
+              if (hour < 8) {
+                  country = 'Kenya';
+                  handles = ['kenyasgossips', 'Nairobi_Gossip', 'TukoCoKe', 'Kenyans'];
+                  vips = 'William Ruto, Eric Omondi, Khaligraph Jones, Rigathi Gachagua';
+              } else if (hour < 16) {
+                  country = 'Tanzania';
+                  handles = ['Bongo5', 'GhaflaTanzania', 'MillardAyo', 'Jaymaudaku'];
+                  vips = 'Diamond Platnumz, Samia Suluhu, Harmonize, Zuchu';
+              } else {
+                  country = 'Uganda';
+                  handles = ['MbuUganda', 'GalaxyFMUg', 'GhaflaUganda', 'sqoopuganda'];
+                  vips = 'Bobi Wine, Museveni, Sheebah Karungi, Eddy Kenzo';
+              }
 
-          if not full_text:
-              print("❌ All models and retries failed.")
-              sys.exit(1)
+              console.log(`🎯 Targeting ${country} via handles: ${handles.join(', ')}`);
 
-          # --- 4. PARSE & SAVE ---
-          parsed = { "TITLE": "N/A", "SLUG": f"tea-{random.randint(100,999)}", "EXCERPT": "", "CATEGORY": topic, "TAGS": "", "IMAGE_KEYWORD": topic, "BODY": "" }
-          current_section = None
-          for line in full_text.splitlines():
-              clean = line.strip().replace("**", "")
-              if clean.startswith("TITLE:"): parsed["TITLE"] = clean.replace("TITLE:", "").strip()
-              elif clean.startswith("SLUG:"): parsed["SLUG"] = clean.replace("SLUG:", "").strip()
-              elif clean.startswith("EXCERPT:"): parsed["EXCERPT"] = clean.replace("EXCERPT:", "").strip()
-              elif clean.startswith("IMAGE_KEYWORD:"): parsed["IMAGE_KEYWORD"] = clean.replace("IMAGE_KEYWORD:", "").strip()
-              elif clean.startswith("BODY:"):
-                  current_section = "BODY"
-                  continue
-              elif current_section == "BODY":
-                  parsed["BODY"] += line + "\n"
+              // --- 2. GROK 4.1 REAL-TIME GENERATION ---
+              const prompt = `
+                  Today's Date: ${todayStr}
+                  Target Country: ${country}
+                  VIPs to check: ${vips}
 
-          image_url = get_real_image(parsed['IMAGE_KEYWORD'])
-          final_file = f"---\ntitle: \"{parsed['TITLE']}\"\nslug: \"{parsed['SLUG']}\"\nexcerpt: \"{parsed['EXCERPT']}\"\nimage: \"{image_url}\"\ncategory: \"{parsed['CATEGORY']}\"\ndate: \"{today_str}\"\n---\n\n{parsed['BODY'].strip()}"
+                  TASK: 
+                  Use X Search to find a specific, text-based gossip story posted in the last 24 hours by these handles: ${handles.join(', ')}.
+                  Look for "Character Development", "Tea", or "Drama".
 
-          out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
-          os.makedirs(out_dir, exist_ok=True)
-          with open(os.path.join(out_dir, f"{parsed['SLUG']}.md"), "w", encoding="utf-8") as f:
-              f.write(final_file)
-          
-          print(f"✅ Created {parsed['SLUG']}.md")
+                  STRICT CONSTRAINTS:
+                  - NO em dashes (—) or en dashes (–). Use standard hyphens (-) only.
+                  - Use heavy East African slang (Wueh, Imagine, Sasa basi).
+                  - If handles are dry, search for trending hashtags: #KenyaGossip, #BongoDrama, #UgandaCelebs.
+
+                  OUTPUT FORMAT:
+                  TITLE: [Savage Clickbait]
+                  SLUG: [url-friendly-slug]
+                  EXCERPT: [Spicy hook]
+                  IMAGE_KEYWORD: [Visual search term]
+                  BODY:
+                  [Full article in Markdown with ## Headers]
+              `;
+
+              try {
+                  const response = await puter.ai.chat(prompt, {
+                      model: 'x-ai/grok-4.1-fast',
+                      tools: [{
+                          type: "x_search",
+                          x_search: {
+                              allowedXHandles: handles,
+                              fromDate: todayStr
+                          }
+                      }]
+                  });
+
+                  let content = response.message.content;
+
+                  // --- 3. THE DASH SCRUBBER ---
+                  content = content.replace(/\u2014/g, '-').replace(/\u2013/g, '-');
+
+                  // --- 4. PARSING ---
+                  const lines = content.split('\n');
+                  const parsed = { title: "", slug: "", excerpt: "", imageKeyword: "", body: "" };
+                  let isBody = false;
+
+                  lines.forEach(line => {
+                      if (line.startsWith('TITLE:')) parsed.title = line.replace('TITLE:', '').trim();
+                      else if (line.startsWith('SLUG:')) parsed.slug = line.replace('SLUG:', '').trim();
+                      else if (line.startsWith('EXCERPT:')) parsed.excerpt = line.replace('EXCERPT:', '').trim();
+                      else if (line.startsWith('IMAGE_KEYWORD:')) parsed.imageKeyword = line.replace('IMAGE_KEYWORD:', '').trim();
+                      else if (line.startsWith('BODY:')) isBody = true;
+                      else if (isBody) parsed.body += line + '\n';
+                  });
+
+                  // --- 5. SAVING ---
+                  const finalMarkdown = `---
+          title: "${parsed.title.replace(/"/g, "'")}"
+          slug: "${parsed.slug || 'latest-tea'}"
+          excerpt: "${parsed.excerpt.replace(/"/g, "'")}"
+          image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+          date: "${todayStr}"
+          ---
+
+          ${parsed.body.trim()}`;
+
+                  const outDir = path.join(process.cwd(), 'content/posts');
+                  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+                  
+                  const fileName = `${parsed.slug || 'latest-tea'}.md`;
+                  fs.writeFileSync(path.join(outDir, fileName), finalMarkdown);
+                  
+                  console.log(`✅ ${fileName} served fresh via Grok 4.1.`);
+
+              } catch (error) {
+                  console.error("❌ Puter/Grok 4.1 Error:", error);
+                  process.exit(1);
+              }
+          }
+
+          generate();
           EOF
 
-      - name: Commit and push article
+      - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: daily tea served ☕"
+          commit_message: "content: gossip fresh from X (Grok 4.1) ☕"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: ${{ env.POSTS_DIR }}/*.md
