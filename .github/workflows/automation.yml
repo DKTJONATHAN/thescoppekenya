@@ -61,10 +61,8 @@ jobs:
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_hour = datetime.datetime.utcnow().hour
 
-          # FIXED MODEL LIST
           MODELS_TO_TRY = ["gemini-2.0-flash", "gemini-1.5-flash-001", "gemini-1.5-pro-001"]
 
-          # BANNED PHRASES
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
               "grab your popcorn", "listen up", "buckle up", "breaking news",
@@ -78,10 +76,7 @@ jobs:
           else:
               hour_mod = current_hour % 6
               topics = ['celebrity', 'sports', 'technology', 'politics', 'celebrity', 'sports']
-              if hour_mod < len(topics):
-                  topic = topics[hour_mod]
-              else:
-                  topic = 'celebrity'
+              topic = topics[hour_mod] if hour_mod < len(topics) else 'celebrity'
           
           cat_map = {'celebrity': 'entertainment', 'sports': 'sports', 'technology': 'technology', 'politics': 'general'}
           newsapi_cat = cat_map.get(topic, 'general')
@@ -102,7 +97,6 @@ jobs:
               print(f"Error fetching news: {e}")
               sys.exit(0)
           
-          # SAFETY CHECK: Handle API Errors
           if news_data.get('status') != 'ok':
               print(f"❌ NewsAPI Error: {news_data.get('message', 'Unknown error')}")
               sys.exit(0)
@@ -111,26 +105,17 @@ jobs:
               print("No fresh news, skipping")
               sys.exit(0)
           
-          # Use MAX to get the NEWEST story
           top_story = max(news_data['articles'], key=lambda x: x['publishedAt'] if x['publishedAt'] else '0000')
-          
           title = top_story['title']
-          
-          # FIX 1: Safely handle None in description/content
           desc = top_story.get('description') or ""
           content = top_story.get('content') or ""
-          # Combine them and ensure it's a string before slicing
-          snippet = (desc + " " + content).strip()
-          if not snippet: snippet = "No details available."
-          snippet = snippet[:500]
-          
-          # FIX 2: Safely handle Source object
+          snippet = (desc + " " + content).strip()[:500]
           source_obj = top_story.get('source') or {}
           source = source_obj.get('name', 'Unknown Source')
           
-          print(f"📰 Freshest Headline: {title[:80]}... ({source})")
+          print(f"📰 NewsAPI Headline: {title[:80]}...")
 
-          # --- 3. IMAGE HELPER ---
+          # --- 3. HELPERS ---
           def get_real_image(query):
               access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
               fallback_image = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
@@ -143,31 +128,23 @@ jobs:
               except Exception: pass
               return fallback_image
 
-          # --- 4. GROUNDED GENERATION WITH PATIENCE ---
-          client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
+          def dash_scrubber(text):
+              # Replaces em dashes (\u2014) and en dashes (\u2013) with a standard hyphen
+              return text.replace('\u2014', '-').replace('\u2013', '-')
 
-          google_search_tool = types.Tool(
-              google_search=types.GoogleSearch()
-          )
+          # --- 4. GROUNDED GENERATION ---
+          client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
+          google_search_tool = types.Tool(google_search=types.GoogleSearch())
 
           prompt = f'''Current Date: {full_date_str}
           NEWS HEADLINE: "{title}"
           SOURCE SNIPPET: "{snippet}"
 
-          ROLE: "The Nairobi Gossip Source" - A hyper-local, savage commentator.
+          TASK: Research the LATEST developments of this story using Google Search to ensure your commentary is accurate as of {today_str}. 
 
-          TASK 1 (RESEARCH):
-          - Use Google Search to find the *latest* details on this story (verify if it's trending *now*).
-          - Use Google Search to find 3-5 *current* trending slang words in Kenya (Nairobi) for {today_str}.
+          ROLE: "The Nairobi Gossip Source" - A hyper-local, savage commentator. Use Nairobi slang but NO banned phrases: {", ".join(BANNED_PHRASES)}.
 
-          TASK 2 (WRITE):
-          Write a savage gossip article about this news.
-          
-          STRICT STYLE RULES:
-          1. **NO REPETITION**: Do NOT use these banned words: {", ".join(BANNED_PHRASES)}.
-          2. **FRESH SLANG**: Use the *new* slang you found in Task 1.
-          3. **TONE**: Brutal, funny, distinctively Kenyan (mix English with fresh Sheng).
-          4. **RECENCY**: If the news is old/stale, roast the person for "bringing up old files" or find a new angle.
+          STRICT DASH RULE: NEVER use em dashes (—) or en dashes (–). Use regular hyphens (-) only.
 
           OUTPUT FORMAT:
           TITLE: [Savage Clickbait]
@@ -177,7 +154,7 @@ jobs:
           TAGS: [comma, separated, tags]
           IMAGE_KEYWORD: [search query]
           BODY:
-          [1000 words. Markdown. 4 Sections. Brutal honesty.]
+          [Article text in Markdown. Start directly with the gossip.]
           '''
 
           full_text = ""
@@ -185,54 +162,31 @@ jobs:
           
           for model_id in MODELS_TO_TRY:
               print(f"🤖 Attempting with {model_id}...")
-              
-              # Inner retry loop for Quota (429) errors
-              max_quota_retries = 2
-              for q_attempt in range(max_quota_retries):
-                  try:
-                      response = client.models.generate_content(
-                          model=model_id,
-                          contents=prompt,
-                          config=types.GenerateContentConfig(
-                              temperature=0.9,
-                              tools=[google_search_tool],
-                              response_modalities=["TEXT"]
-                          )
+              try:
+                  response = client.models.generate_content(
+                      model=model_id,
+                      contents=prompt,
+                      config=types.GenerateContentConfig(
+                          temperature=0.9,
+                          tools=[google_search_tool]
                       )
-                      
-                      # Metadata Check
-                      if not response.candidates[0].grounding_metadata.search_entry_point:
-                          print(f"⚠️ {model_id} didn't search. Trying next model...")
-                          break 
+                  )
+                  full_text = response.text.strip()
+                  # Apply Scrubber immediately
+                  full_text = dash_scrubber(full_text)
+                  success_flag = True
+                  print(f"✅ SUCCESS with {model_id}!")
+                  break 
+              except Exception as e:
+                  print(f"⚠️ Error with {model_id}: {e}")
+                  time.sleep(10)
+                  continue
 
-                      full_text = response.text.strip()
-                      print(f"✅ SUCCESS with {model_id}!")
-                      success_flag = True
-                      break 
-                  
-                  except Exception as e:
-                      error_str = str(e)
-                      if "429" in error_str or "RESOURCE_EXHAUSTED" in error_str:
-                          print(f"⏳ Quota hit on {model_id}. Sleeping 70s to cool down...")
-                          time.sleep(70) 
-                          continue 
-                      elif "404" in error_str:
-                          print(f"❌ Model {model_id} not found. Skipping.")
-                          break 
-                      else:
-                          print(f"⚠️ Error with {model_id}: {e}")
-                          break 
-              
-              if success_flag: break
-
-          if not success_flag:
-              print("❌ All models failed after retries.")
-              sys.exit(1)
+          if not success_flag: sys.exit(1)
 
           # --- 5. PARSE & SAVE ---
           parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
           current_section = None
-          
           for line in full_text.splitlines():
               clean = line.strip().replace("**", "")
               if clean.startswith("TITLE:"): parsed["TITLE"] = clean.replace("TITLE:", "").strip()
@@ -247,13 +201,8 @@ jobs:
               elif current_section == "BODY":
                   parsed["BODY"] += line + "\n"
 
-          # Fallbacks
-          if not parsed["TITLE"]: parsed["TITLE"] = f"{topic.capitalize()} Update: {title[:20]}"
-          if not parsed["SLUG"]: parsed["SLUG"] = re.sub(r'[^a-z0-9-]', '-', title.lower())[:80].strip('-')
-
           image_url = get_real_image(parsed['IMAGE_KEYWORD'])
           
-          import textwrap
           final_file = f"""---
           title: "{parsed['TITLE'].replace('"', "'")}"
           slug: "{parsed['SLUG']}"
@@ -264,15 +213,15 @@ jobs:
           tags: [{parsed['TAGS']}]
           ---
 
-          {parsed['BODY']}
+          {parsed['BODY'].strip()}
           """
           
           out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
           os.makedirs(out_dir, exist_ok=True)
           with open(os.path.join(out_dir, f"{parsed['SLUG']}.md"), "w", encoding="utf-8") as f:
-              f.write(textwrap.dedent(final_file).strip())
+              f.write(final_file)
           
-          print(f"✅ Tea spilled: {parsed['SLUG']}.md")
+          print(f"✅ File saved: {parsed['SLUG']}.md")
           EOF
 
       - name: Commit and push article
@@ -283,5 +232,3 @@ jobs:
           file_pattern: ${{ env.POSTS_DIR }}/*.md
           commit_user_name: "Gossip Bot"
           commit_user_email: "actions@github.com"
-        env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
