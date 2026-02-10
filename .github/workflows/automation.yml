@@ -62,14 +62,13 @@ jobs:
           current_hour = datetime.datetime.utcnow().hour
 
           # UPDATED MODEL LIST FOR 2026
-          # 1. gemini-3-flash-preview (The requested target)
-          # 2. gemini-2.5-flash (Current stable backup)
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
+          # BANNED: Old/Repetitive Millennial Slang to avoid
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
               "grab your popcorn", "listen up", "buckle up", "breaking news",
-              "sherehe", "form ni gani"
+              "sherehe", "form ni gani", "udaku", "hello guys", "welcome back"
           ]
 
           # Topic rotation
@@ -130,7 +129,6 @@ jobs:
               return fallback_image
 
           def dash_scrubber(text):
-              # Removes em dashes (\u2014) and en dashes (\u2013)
               return text.replace('\u2014', '-').replace('\u2013', '-')
 
           # --- 4. GROUNDED GENERATION ---
@@ -141,23 +139,27 @@ jobs:
           NEWS HEADLINE: "{title}"
           SOURCE SNIPPET: "{snippet}"
 
-          TASK: Use Google Search to research what happened TODAY regarding this news. Find the absolute latest details so the article is accurate as of {today_str}.
+          TASK: 
+          1. Use Google Search to research the latest details on this story.
+          2. Write an article as a **Nairobi Gen Z Gossip Reporter** (Investigative but Street Smart).
 
-          ROLE: "The Nairobi Gossip Source" - A savage commentator. Use Nairobi slang but NO banned phrases: {", ".join(BANNED_PHRASES)}.
+          LANGUAGE MANDATE (STRICT):
+          - WRITE IN PURE KENYAN SHENG ONLY.
+          - TONE: You are NOT just a fan. You are a **REPORTER**. Use phrases that imply you dug for info (e.g., "Tumenusa hii story," "Sources wanasema," "Inspecta wetu wameconfirm").
+          - DO NOT USE FORMAL ENGLISH OR STANDARD ENGLISH.
+          - DO NOT USE OLD SLANG.
+          - Autonomously find and use the latest trending street terms that fit this specific topic.
+          - BANNED PHRASES (DO NOT USE): {", ".join(BANNED_PHRASES)}.
 
-          STRICT RULES:
-          1. NEVER use em dashes (—) or en dashes (–). Only regular hyphens (-).
-          2. Output must follow the format below EXACTLY.
-
-          OUTPUT FORMAT:
-          TITLE: [Savage Clickbait]
+          STRICT OUTPUT FORMAT:
+          TITLE: [Investigative/Savage Sheng Title]
           SLUG: [url-friendly-lowercase]
-          EXCERPT: [One spicy hook]
+          EXCERPT: [Reporter-style hook in Sheng]
           CATEGORY: {topic.capitalize()}
           TAGS: [comma, separated, tags]
           IMAGE_KEYWORD: [search query]
           BODY:
-          [Article text in Markdown. Start directly with the gossip.]
+          [Article text in pure Sheng. Structure it like a report: The Scoop -> The Evidence -> The Verdict.]
           '''
 
           full_text = ""
@@ -165,14 +167,13 @@ jobs:
           
           for model_id in MODELS_TO_TRY:
               print(f"🤖 Attempting with {model_id}...")
-              # Quota cooldown retry
               for retry in range(2):
                   try:
                       response = client.models.generate_content(
                           model=model_id,
                           contents=prompt,
                           config=types.GenerateContentConfig(
-                              temperature=0.85,
+                              temperature=0.9,
                               tools=[google_search_tool]
                           )
                       )
