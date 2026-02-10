@@ -5,6 +5,7 @@
     { "source": "/llms.txt", "destination": "/llms.txt" },
     { "source": "/rss.xml", "destination": "/rss.xml" },
     { "source": "/robots.txt", "destination": "/robots.txt" },
+    { "source": "/sitemap", "destination": "/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
