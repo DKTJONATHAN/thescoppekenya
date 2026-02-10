@@ -22,6 +22,7 @@ const TagPage = lazy(() => import("./pages/TagPage"));
 const SportsPage = lazy(() => import("./pages/SportsPage"));
 const LiveScoresPage = lazy(() => import("./pages/LiveScoresPage"));
 const SitemapPage = lazy(() => import("./pages/SitemapPage"));
+const SitemapHtmlPage = lazy(() => import("./pages/SitemapHtmlPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Optimized Query Client with caching
@@ -145,6 +146,7 @@ const App = () => (
                   <Route path="/sports" element={<SportsPage />} />
                   <Route path="/sports/live" element={<LiveScoresPage />} />
                   <Route path="/sitemap.xml" element={<SitemapPage />} />
+                  <Route path="/sitemap" element={<SitemapHtmlPage />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </Suspense>

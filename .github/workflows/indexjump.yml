@@ -1,0 +1,66 @@
+name: IndexJump Auto-Index on Commit
+
+on:
+  push:
+    paths:
+      - 'content/posts/**.md'
+
+jobs:
+  submit-to-indexjump:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect changed posts & submit to IndexJump
+        env:
+          INDEXJUMP_API_KEY: ${{ secrets.INDEXJUMP_API_KEY }}
+        run: |
+          if [ -z "$INDEXJUMP_API_KEY" ]; then
+            echo "⚠️  INDEXJUMP_API_KEY not set, skipping"
+            exit 0
+          fi
+
+          SITE_URL="https://thescoopkenya.vercel.app"
+
+          # Get changed .md files in content/posts/
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
+
+          if [ -z "$CHANGED" ]; then
+            echo "📝 No post changes detected"
+            exit 0
+          fi
+
+          # Build JSON array of URLs
+          URLS="["
+          FIRST=true
+          while IFS= read -r file; do
+            SLUG=$(basename "$file" .md)
+            URL="${SITE_URL}/article/${SLUG}"
+            if [ "$FIRST" = true ]; then
+              URLS="${URLS}\"${URL}\""
+              FIRST=false
+            else
+              URLS="${URLS},\"${URL}\""
+            fi
+            echo "🔗 $URL"
+          done <<< "$CHANGED"
+          URLS="${URLS}]"
+
+          echo "🚀 Submitting to IndexJump..."
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
+            "https://api.indexjump.com/index/bulk?token=${INDEXJUMP_API_KEY}" \
+            -H "Content-Type: application/json" \
+            -d "{\"urls\": ${URLS}}")
+
+          HTTP_CODE=$(echo "$RESPONSE" | tail -1)
+          BODY=$(echo "$RESPONSE" | head -n -1)
+
+          if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
+            echo "✅ IndexJump submission successful (${HTTP_CODE})"
+          else
+            echo "❌ IndexJump submission failed (${HTTP_CODE}): ${BODY}"
+            exit 1
+          fi

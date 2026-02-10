@@ -188,7 +188,7 @@ export function getAllTags(): string[] {
 }
 
 export function generateSitemap(): string {
-  const baseUrl = 'https://thescoopkenya.co.ke';
+  const baseUrl = 'https://thescoopkenya.vercel.app';
   const posts = getAllPosts();
   const today = new Date().toISOString().split('T')[0];
   
