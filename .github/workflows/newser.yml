@@ -52,6 +52,9 @@ jobs:
           RSS_URL = "https://www.standardmedia.co.ke/rss/entertainment.php"
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           
+          # SAFETY FILTER: Skip these boring pages if they appear in RSS
+          BORING_KEYWORDS = ["Policy", "Terms", "Conditions", "Contact Us", "About Us", "Sitemap", "Advertise", "Subscribe"]
+
           # BANNED PHRASES (Strict Clean-up)
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
@@ -65,30 +68,46 @@ jobs:
           try:
               rss_resp = requests.get(RSS_URL, timeout=15)
               soup = BeautifulSoup(rss_resp.content, "xml")
-              items = soup.find_all("item")
+              all_items = soup.find_all("item")
           except Exception as e:
               print(f"❌ RSS Error: {e}")
               sys.exit(0)
 
-          if not items:
+          if not all_items:
               print("⚠️ No items found in RSS.")
               sys.exit(0)
 
-          # Pick one random story from the top 5 to ensure variety
-          target_item = random.choice(items[:5])
+          # --- 3. FILTER & SELECT ---
+          valid_items = []
+          for item in all_items:
+              title = item.title.text.strip()
+              link = item.link.text.strip()
+              
+              # Check if title contains any boring keywords
+              if any(b in title for b in BORING_KEYWORDS):
+                  print(f"🚫 Skipping boring page: {title}")
+                  continue
+                  
+              valid_items.append(item)
+
+          if not valid_items:
+              print("❌ No valid news stories found (only boring pages).")
+              sys.exit(0)
+
+          # Pick one random story from the valid list (Top 8 to ensure variety)
+          target_item = random.choice(valid_items[:8])
           target_link = target_item.link.text.strip()
           target_title = target_item.title.text.strip()
           
           print(f"🎯 Selected Story: {target_title}")
           print(f"🔗 Link: {target_link}")
 
-          # --- 3. EXTRACT FULL CONTENT VIA APIFY ---
+          # --- 4. EXTRACT FULL CONTENT VIA APIFY ---
           print("🕷️ Extracting full content via Apify...")
           full_content = ""
           
           try:
               apify_client = ApifyClient(os.environ['APIFY_TOKEN'])
-              # Using the lightweight content crawler
               run = apify_client.actor("apify/website-content-crawler").call(
                   run_input={
                       "startUrls": [{"url": target_link}], 
@@ -102,22 +121,18 @@ jobs:
               items = list(dataset.iterate_items())
               
               if items:
-                  # Prefer markdown, fall back to text
                   full_content = items[0].get('markdown', items[0].get('text', ''))
               
           except Exception as e:
               print(f"❌ Apify Extraction Failed: {e}")
-              # If Apify fails, we rely on the RSS description (not ideal but a fallback)
               full_content = target_item.description.text.strip()
 
           if len(full_content) < 200:
               print("⚠️ Content too short. Aborting.")
               sys.exit(0)
 
-          # --- 4. GEMINI REWRITE (Reporter Persona) ---
+          # --- 5. GEMINI REWRITE (Reporter Persona) ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
-          
-          # Google Search tool to verify details if Apify missed context
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
 
           prompt = f'''
@@ -157,7 +172,6 @@ jobs:
           print("🤖 Generating with Gemini...")
           final_text = ""
           
-          # Try Gemini 3 Flash Preview first, fallback to 2.5 Flash
           for model in ["gemini-3-flash-preview", "gemini-2.5-flash"]:
               try:
                   resp = client.models.generate_content(
@@ -179,7 +193,7 @@ jobs:
           if not final_text:
               sys.exit(1)
 
-          # --- 5. PARSE & SAVE ---
+          # --- 6. PARSE & SAVE ---
           parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
           current_section = None
           
@@ -197,7 +211,6 @@ jobs:
               elif current_section == "BODY":
                   parsed["BODY"] += line + "\n"
 
-          # Image Fetching
           def get_image(query):
               key = os.environ.get("UNSPLASH_ACCESS_KEY")
               fallback = "https://images.unsplash.com/photo-1499364615650-ec387c1470c5?w=1200"
@@ -210,7 +223,6 @@ jobs:
 
           image_url = get_image(parsed['IMAGE_KEYWORD'] or target_title)
 
-          # Markdown Construction
           md_content = f"""---
           title: "{parsed['TITLE'].replace('"', "'")}"
           slug: "{parsed['SLUG']}"
@@ -224,7 +236,6 @@ jobs:
           {parsed['BODY'].strip()}
           """
 
-          # File Writing
           out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
           os.makedirs(out_dir, exist_ok=True)
           filename = f"{parsed['SLUG']}.md"
