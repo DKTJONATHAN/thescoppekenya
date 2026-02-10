@@ -1,179 +1,64 @@
 
-## Fix Article Page & Dynamic Homepage Redesign
+# Auto-Updating Sitemap + IndexJump on Commit
 
-### Issues Identified
+## What You Already Have
 
-1. **Blank Screen on Article Click**
-   - The error "Failed to fetch dynamically imported module" indicates Vite's dynamic import is failing
-   - Root cause: Error occurs during ArticlePage.tsx module initialization or a stale Vite cache
-   - Solution: Add error boundary around lazy-loaded routes and implement global unhandled promise rejection handling
+Your project already has most of the pieces in place:
+- `scripts/generate-sitemap.js` - generates sitemap.xml at build time
+- `scripts/submit-new-posts.js` - submits new/changed posts to IndexJump at build time
+- Both run during Vercel builds via `vercel.json` buildCommand
+- A Supabase edge function `index-now` for manual IndexJump submissions
 
-2. **Homepage Featured Story Logic**
-   - Currently: Uses `getFeaturedPosts()` which requires manual `featured: true` flag
-   - Required: Top story should be the first post published each day (dynamic selection)
+## What Needs to Change
 
-3. **Site Load Speed**
-   - Already has lazy loading for pages
-   - Can add: Image lazy loading improvements, critical CSS inlining, React Query prefetching
+### 1. Fix the sitemap URL to use `thescoopkenya.vercel.app`
+The sitemap script currently uses `thescoopkenya.co.ke`. Update to `thescoopkenya.vercel.app`.
 
----
+### 2. Create a visual `/sitemap` page
+Add a new route at `/sitemap` that renders a human-readable HTML page listing all article links (not the XML sitemap). The XML sitemap stays at `/sitemap.xml`.
 
-### Implementation Plan
+### 3. Create a GitHub Actions workflow for IndexJump on commit
+Add a new workflow (`.github/workflows/indexjump.yml`) that triggers whenever a `.md` file is added/changed in `content/posts/`. It will:
+- Detect which post files changed
+- Build their full URLs
+- Submit them to IndexJump using the `INDEXJUMP_API_KEY` stored in GitHub Secrets
 
-#### 1. Fix Blank Screen Issue
-**File: `src/App.tsx`**
+This runs independently from the Vercel build, so indexing happens as soon as the commit lands - not after the build finishes.
 
-Add an error boundary component and global error handler for unhandled promise rejections:
+### 4. Keep the Vercel build pipeline as-is
+The existing `submit-new-posts.js` in the build command acts as a safety net (in case the GitHub Action misses something).
 
-```text
-+-- ErrorBoundary component
-|   - Catches rendering errors in lazy-loaded pages
-|   - Shows friendly error message with "Try Again" button
-|
-+-- Global unhandledrejection handler
-|   - Catches async errors that error boundaries miss
-|   - Logs error and shows toast notification
-|
-+-- Suspense with ErrorBoundary wrapper
-    - Each lazy route wrapped for graceful failure
-```
+## Technical Details
 
-#### 2. Redesign Homepage with Dynamic Top Story
-**File: `src/lib/markdown.ts`**
+### Files to modify:
+- **`scripts/generate-sitemap.js`** - Change `SITE_URL` from `https://thescoopkenya.co.ke` to `https://thescoopkenya.vercel.app`
+- **`scripts/submit-new-posts.js`** - Already uses `thescoopkenya.vercel.app` (no change needed)
 
-Add new function for daily top story logic:
+### Files to create:
+- **`.github/workflows/indexjump.yml`** - New workflow triggered on push to `content/posts/*.md`, reads `INDEXJUMP_API_KEY` from GitHub secrets, submits changed URLs to IndexJump API
+- **`src/pages/SitemapHtmlPage.tsx`** - A styled page at `/sitemap` that lists all article links in a readable format
 
-```typescript
-// Get today's top story (first published post of the day)
-export function getTodaysTopStory(): Post | undefined {
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  
-  const posts = getAllPosts();
-  const todaysPosts = posts.filter(post => {
-    const postDate = new Date(post.date);
-    postDate.setHours(0, 0, 0, 0);
-    return postDate.getTime() === today.getTime();
-  });
-  
-  // If no posts today, return the most recent post
-  return todaysPosts.length > 0 
-    ? todaysPosts[todaysPosts.length - 1] // First published (earliest)
-    : posts[0]; // Fallback to most recent
-}
+### Files to update:
+- **`src/App.tsx`** - Add `/sitemap` route pointing to the new HTML sitemap page
+- **`vercel.json`** - Add rewrite for `/sitemap` so it works on refresh
 
-// Get secondary featured posts (next 4 most recent, excluding top story)
-export function getSecondaryPosts(excludeSlug: string, limit = 4): Post[] {
-  return getAllPosts()
-    .filter(post => post.slug !== excludeSlug)
-    .slice(0, limit);
-}
-```
+### GitHub Secrets needed:
+You'll need to add `INDEXJUMP_API_KEY` to your GitHub repo secrets (Settings > Secrets and variables > Actions > New repository secret). This is separate from the Vercel/Supabase environment variable you may already have.
 
-**File: `src/pages/Index.tsx`**
-
-Update to use dynamic top story:
+## How it works end-to-end:
 
 ```text
-BEFORE:
-- const featuredPosts = getFeaturedPosts();
-- Uses featuredPosts[0] as main feature
-- Uses featuredPosts.slice(1, 5) for secondary
-
-AFTER:
-- const topStory = getTodaysTopStory();
-- const secondaryPosts = getSecondaryPosts(topStory?.slug, 4);
-- Uses topStory as main feature
-- Uses secondaryPosts for secondary grid
+New post committed to GitHub
+       |
+       +--> GitHub Action triggers immediately
+       |        |
+       |        +--> Detects changed .md files
+       |        +--> Submits URLs to IndexJump API
+       |
+       +--> Vercel build triggers
+                |
+                +--> submit-new-posts.js (backup IndexJump submit)
+                +--> vite build
+                +--> generate-sitemap.js (regenerates sitemap.xml)
+                +--> Site deployed with updated sitemap
 ```
-
-#### 3. Performance Optimizations
-**File: `src/App.tsx`**
-
-Configure React Query with optimized defaults:
-
-```typescript
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      staleTime: 5 * 60 * 1000, // 5 minutes
-      gcTime: 30 * 60 * 1000, // 30 minutes (previously cacheTime)
-      refetchOnWindowFocus: false,
-      retry: 1,
-    },
-  },
-});
-```
-
-**File: `src/components/articles/ArticleCard.tsx`**
-
-Add loading="lazy" and decoding="async" to all images (already present, but verify consistency).
-
-**File: `src/pages/Index.tsx`**
-
-Add image preloading for top story:
-
-```typescript
-// Preload top story image
-useEffect(() => {
-  if (topStory?.image) {
-    const link = document.createElement('link');
-    link.rel = 'preload';
-    link.as = 'image';
-    link.href = topStory.image;
-    document.head.appendChild(link);
-    return () => document.head.removeChild(link);
-  }
-}, [topStory]);
-```
-
----
-
-### Files to Modify
-
-| File | Changes |
-|------|---------|
-| `src/App.tsx` | Add ErrorBoundary, unhandledrejection handler, optimize QueryClient |
-| `src/lib/markdown.ts` | Add `getTodaysTopStory()` and `getSecondaryPosts()` functions |
-| `src/pages/Index.tsx` | Replace static featured logic with dynamic top story, add image preloading |
-
----
-
-### Technical Details
-
-#### Error Boundary Component
-```tsx
-class ErrorBoundary extends React.Component<
-  { children: ReactNode; fallback: ReactNode },
-  { hasError: boolean }
-> {
-  constructor(props) {
-    super(props);
-    this.state = { hasError: false };
-  }
-
-  static getDerivedStateFromError() {
-    return { hasError: true };
-  }
-
-  componentDidCatch(error, errorInfo) {
-    console.error('Page error:', error, errorInfo);
-  }
-
-  render() {
-    if (this.state.hasError) {
-      return this.props.fallback;
-    }
-    return this.props.children;
-  }
-}
-```
-
-#### Dynamic Top Story Logic
-The "first post published each day" is determined by:
-1. Filter posts where `post.date` matches today's date
-2. Sort by date ascending (earliest first)
-3. Return the first one (earliest published today)
-4. If no posts today, fallback to the most recent post overall
-
-This ensures fresh, dynamic content without manual intervention.
