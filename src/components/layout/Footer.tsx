@@ -44,13 +44,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <button onClick={() => handleLinkClick("/")} className="flex items-center mb-4">
+            <button onClick={() => handleLinkClick("/")} className="flex flex-col items-start mb-4">
               <h2 className="text-2xl font-serif font-bold text-foreground">
                 The Scoop <span className="text-primary">KE</span>
               </h2>
+              <span className="text-xs font-medium text-primary">Kenya's First Sheng News Site</span>
             </button>
             <p className="text-muted-foreground text-sm mb-4">
-              Kenya's premier destination for breaking news, entertainment, and celebrity gossip. Stay informed, stay entertained.
+              Kenya's first Sheng news and entertainment website. Breaking news, gossip, na trending stories kwa lugha ya mtaa.
             </p>
             <div className="flex items-center gap-3">
               <a href="https://facebook.com/thescoopkenya" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth text-foreground" aria-label="Facebook">

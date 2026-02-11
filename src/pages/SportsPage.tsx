@@ -10,9 +10,10 @@ import { AIHeadlinesBanner } from "@/components/sports/AIHeadlinesBanner";
 import { SportsNewsFeed } from "@/components/sports/SportsNewsFeed";
 import { KenyaSportsSection } from "@/components/sports/KenyaSportsSection";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Match, useMatchPreview, useMatchReview, usePreloadSportsData, COMPETITIONS } from "@/hooks/useSportsData";
+import { Match, useMatchPreview, useMatchReview, usePreloadSportsData } from "@/hooks/useSportsData";
 import { Button } from "@/components/ui/button";
-import { Sparkles, Loader2, Activity, Calendar, Trophy, Newspaper } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Sparkles, Loader2, Activity, Calendar, Trophy, Newspaper, Flame, TrendingUp } from "lucide-react";
 
 export default function SportsPage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -25,10 +26,8 @@ export default function SportsPage() {
   const previewMutation = useMatchPreview();
   const reviewMutation = useMatchReview();
 
-  // Preload data for better performance
   usePreloadSportsData();
 
-  // Sync URL with selected league
   useEffect(() => {
     setSearchParams({ league: selectedLeague }, { replace: true });
   }, [selectedLeague, setSearchParams]);
@@ -64,9 +63,9 @@ export default function SportsPage() {
   const sportsSchema = {
     "@context": "https://schema.org",
     "@type": "SportsEvent",
-    "name": "Sports Hub - Live Scores & Football News",
-    "description": "Live football scores, standings, fixtures and AI-powered match analysis from top European leagues.",
-    "url": "https://jonathanmwaniki.co.ke/sports",
+    "name": "Sports Hub - Live Scores & Football News | The Scoop KE",
+    "description": "Live football scores, standings, fixtures and AI-powered match analysis. Kenya's first Sheng sports coverage.",
+    "url": "https://thescoopkenya.vercel.app/sports",
   };
 
   return (
@@ -76,26 +75,37 @@ export default function SportsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(sportsSchema) }}
       />
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/10 via-background to-accent/10 py-8 md:py-12 border-b border-divider">
-        <div className="container">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+      {/* Hero Section - matches main site aesthetic */}
+      <div className="bg-surface border-b border-divider py-2 overflow-hidden">
+        <div className="container max-w-7xl mx-auto px-4 flex items-center gap-4">
+          <Badge variant="default" className="gradient-primary text-primary-foreground border-0 rounded-sm font-bold whitespace-nowrap">
+            <Activity className="w-3 h-3 mr-1" />
+            SPORTS
+          </Badge>
+          <div className="flex-1 overflow-hidden whitespace-nowrap">
+            <span className="text-sm font-medium text-foreground dark:text-white">
+              Live scores, standings, fixtures & AI match analysis
+            </span>
+          </div>
+          <Link to="/sports/live">
+            <Badge variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors whitespace-nowrap">
+              Live Scores →
+            </Badge>
+          </Link>
+        </div>
+      </div>
+
+      <section className="py-6 md:py-10">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
             <div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-2">
+              <h1 className="text-3xl md:text-4xl font-serif font-bold text-foreground dark:text-white flex items-center gap-3">
+                <span className="w-1.5 h-9 gradient-primary rounded-full shadow-sm" />
                 Sports Hub
               </h1>
-              <p className="text-muted-foreground">
-                Live scores, standings, fixtures & AI-powered match analysis
+              <p className="text-muted-foreground mt-2">
+                Kila kitu sports — live scores, standings, fixtures na AI match analysis
               </p>
-            </div>
-            <div className="flex items-center gap-2">
-              <Link to="/sports/live">
-                <Button variant="outline" className="gap-2">
-                  <Activity className="w-4 h-4" />
-                  <span className="hidden sm:inline">Live Scores</span>
-                  <span className="sm:hidden">Live</span>
-                </Button>
-              </Link>
             </div>
           </div>
 
@@ -107,10 +117,10 @@ export default function SportsPage() {
         </div>
       </section>
 
-      {/* Main Content */}
-      <section className="py-8">
-        <div className="container">
-          <div className="grid lg:grid-cols-3 gap-8">
+      {/* Main Content - matches main site grid */}
+      <section className="py-8 bg-surface/50 border-y border-divider">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="grid lg:grid-cols-3 gap-12">
             {/* Main Column */}
             <div className="lg:col-span-2 space-y-8">
               {/* AI Headlines Banner */}
@@ -120,16 +130,16 @@ export default function SportsPage() {
                 <KenyaSportsSection />
               ) : (
                 <Tabs defaultValue="fixtures" className="w-full">
-                  <TabsList className="w-full grid grid-cols-3 mb-6">
-                    <TabsTrigger value="fixtures" className="gap-2">
+                  <TabsList className="w-full grid grid-cols-3 mb-6 bg-surface border border-divider rounded-2xl p-1 h-auto">
+                    <TabsTrigger value="fixtures" className="gap-2 rounded-xl py-3 data-[state=active]:gradient-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-soft">
                       <Calendar className="w-4 h-4" />
                       <span className="hidden sm:inline">Fixtures</span>
                     </TabsTrigger>
-                    <TabsTrigger value="standings" className="gap-2">
+                    <TabsTrigger value="standings" className="gap-2 rounded-xl py-3 data-[state=active]:gradient-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-soft">
                       <Trophy className="w-4 h-4" />
                       <span className="hidden sm:inline">Standings</span>
                     </TabsTrigger>
-                    <TabsTrigger value="news" className="gap-2">
+                    <TabsTrigger value="news" className="gap-2 rounded-xl py-3 data-[state=active]:gradient-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-soft">
                       <Newspaper className="w-4 h-4" />
                       <span className="hidden sm:inline">News</span>
                     </TabsTrigger>
@@ -153,11 +163,34 @@ export default function SportsPage() {
               )}
             </div>
 
-            {/* Sidebar */}
-            <div className="space-y-6">
-              <div className="sticky top-24">
-                <h2 className="text-lg font-bold mb-4">Live Scores</h2>
-                <LiveScoresWidget />
+            {/* Sidebar - matches main site sidebar style */}
+            <div className="lg:col-span-1 space-y-8">
+              <div className="sticky top-24 space-y-8">
+                <div className="bg-surface rounded-2xl border border-divider shadow-sm overflow-hidden">
+                  <div className="flex items-center gap-2 p-4 border-b border-divider">
+                    <TrendingUp className="w-4 h-4 text-primary" />
+                    <h2 className="text-sm font-bold text-foreground dark:text-white">Live Scores</h2>
+                  </div>
+                  <div className="p-4">
+                    <LiveScoresWidget />
+                  </div>
+                </div>
+
+                {/* Sports CTA */}
+                <div className="gradient-primary rounded-2xl p-8 text-primary-foreground shadow-xl relative overflow-hidden group">
+                  <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-110 transition-transform">
+                    <Flame className="w-32 h-32" />
+                  </div>
+                  <div className="relative z-10">
+                    <Badge variant="secondary" className="mb-4 bg-white/20 text-white border-0">Sports Kwa Sheng</Badge>
+                    <h3 className="text-2xl font-serif font-bold mb-4 leading-tight">
+                      AI Match Analysis Kwa Kila Game
+                    </h3>
+                    <p className="text-sm text-white/80 mb-4">
+                      Click any match to generate AI-powered previews na reviews
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -204,7 +237,6 @@ export default function SportsPage() {
                   {selectedMatch.competition.name} • Matchday {selectedMatch.matchday}
                 </p>
 
-                {/* AI Content Generation */}
                 {!aiContent ? (
                   <Button 
                     onClick={generateAIContent} 
@@ -224,7 +256,7 @@ export default function SportsPage() {
                     )}
                   </Button>
                 ) : (
-                  <div className="bg-muted/50 rounded-lg p-4">
+                  <div className="bg-surface rounded-2xl p-4 border border-divider">
                     <div className="flex items-center gap-2 mb-2">
                       <Sparkles className="w-4 h-4 text-primary" />
                       <span className="text-xs font-semibold text-primary uppercase">

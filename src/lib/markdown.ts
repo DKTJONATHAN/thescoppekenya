@@ -74,6 +74,32 @@ function calculateReadTime(content: string): number {
   return Math.ceil(wordCount / wordsPerMinute);
 }
 
+// Normalize category from frontmatter to match defined categories
+function normalizeCategory(rawCategory: string): string {
+  const lower = rawCategory.toLowerCase().trim();
+  
+  // Map common frontmatter categories to defined slugs
+  const categoryMap: Record<string, string> = {
+    'news': 'News',
+    'entertainment': 'Entertainment',
+    'gossip': 'Gossip',
+    'sports': 'Sports',
+    'business': 'Business',
+    'lifestyle': 'Lifestyle',
+    'politics': 'News',
+    'celebrity': 'Gossip',
+    'celebrity gossip': 'Gossip',
+    'tech': 'Business',
+    'technology': 'Business',
+    'music': 'Entertainment',
+    'fashion': 'Lifestyle',
+    'health': 'Lifestyle',
+    'travel': 'Lifestyle',
+  };
+  
+  return categoryMap[lower] || rawCategory;
+}
+
 export function getAllPosts(): Post[] {
   const posts: Post[] = [];
 
@@ -90,7 +116,7 @@ export function getAllPosts(): Post[] {
       const slug = frontmatter.slug || path.replace('/content/posts/', '').replace('.md', '');
       const excerpt = frontmatter.excerpt || '';
       const image = frontmatter.image || '/placeholder.svg';
-      const category = frontmatter.category || 'News';
+      const category = normalizeCategory(frontmatter.category || 'News');
       const date = frontmatter.date || new Date().toISOString().split('T')[0];
 
       posts.push({
@@ -111,7 +137,6 @@ export function getAllPosts(): Post[] {
       });
     } catch (error) {
       console.error(`Error parsing post at ${path}:`, error);
-      // Skip malformed posts instead of crashing
       continue;
     }
   }
@@ -145,10 +170,9 @@ export function getTodaysTopStory(): Post | undefined {
     return postDate.getTime() === today.getTime();
   });
   
-  // If no posts today, return the most recent post
   return todaysPosts.length > 0 
-    ? todaysPosts[todaysPosts.length - 1] // First published (earliest)
-    : posts[0]; // Fallback to most recent
+    ? todaysPosts[todaysPosts.length - 1]
+    : posts[0];
 }
 
 // Get secondary featured posts (next N most recent, excluding a specific slug)
@@ -218,7 +242,6 @@ export function generateSitemap(): string {
     lastmod: today
   }));
 
-  // Get unique tags from all posts
   const allTags = [...new Set(posts.flatMap(post => post.tags))];
   const tagUrls: SitemapUrl[] = allTags.map(tag => ({
     loc: `/tag/${encodeURIComponent(tag)}`,
@@ -243,10 +266,10 @@ ${urlElements}
 }
 
 export const categories = [
-  { name: "News", slug: "news", description: "Breaking news and current affairs from Kenya and beyond" },
-  { name: "Entertainment", slug: "entertainment", description: "Celebrity news, music, movies, and pop culture" },
-  { name: "Gossip", slug: "gossip", description: "The latest celebrity gossip and relationship drama" },
-  { name: "Sports", slug: "sports", description: "Football, athletics, and all things sports" },
-  { name: "Business", slug: "business", description: "Economy, startups, and financial news" },
-  { name: "Lifestyle", slug: "lifestyle", description: "Fashion, health, travel, and living well" },
+  { name: "News", slug: "news", description: "Breaking news, politics na current affairs from Kenya and beyond" },
+  { name: "Entertainment", slug: "entertainment", description: "Celebrity news, music, movies, na pop culture" },
+  { name: "Gossip", slug: "gossip", description: "The latest celebrity gossip na relationship drama" },
+  { name: "Sports", slug: "sports", description: "Football, athletics, na all things sports" },
+  { name: "Business", slug: "business", description: "Economy, startups, tech na financial news" },
+  { name: "Lifestyle", slug: "lifestyle", description: "Fashion, health, travel, na living well" },
 ];

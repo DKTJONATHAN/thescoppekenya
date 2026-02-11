@@ -1,20 +1,42 @@
-import { useEffect } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { CategoryBar } from "@/components/articles/CategoryBar";
 import { ArticleCard } from "@/components/articles/ArticleCard";
 import { FeaturedStoryCard } from "@/components/articles/FeaturedStoryCard";
 import { TrendingSidebar } from "@/components/articles/TrendingSidebar";
-import { getTodaysTopStory, getSecondaryPosts, getLatestPosts, categories } from "@/lib/markdown";
+import { getTodaysTopStory, getSecondaryPosts, getAllPosts, categories } from "@/lib/markdown";
 import { Link } from "react-router-dom";
 import { ArrowRight, TrendingUp, Zap, Flame, Clock, Newspaper } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
+const POSTS_PER_PAGE = 12;
+
 const Index = () => {
   const topStory = getTodaysTopStory();
   const secondaryPosts = getSecondaryPosts(topStory?.slug, 4);
-  const latestPosts = getLatestPosts(10);
-  const tickerPosts = latestPosts.slice(0, 3);
+  const allPosts = getAllPosts();
+  const tickerPosts = allPosts.slice(0, 3);
+
+  const [visibleCount, setVisibleCount] = useState(POSTS_PER_PAGE);
+
+  const displayedPosts = allPosts.slice(0, visibleCount);
+  const hasMore = visibleCount < allPosts.length;
+
+  // Infinite scroll
+  const handleScroll = useCallback(() => {
+    if (!hasMore) return;
+    const scrollBottom = window.innerHeight + window.scrollY;
+    const docHeight = document.documentElement.scrollHeight;
+    if (scrollBottom >= docHeight - 800) {
+      setVisibleCount(prev => Math.min(prev + POSTS_PER_PAGE, allPosts.length));
+    }
+  }, [hasMore, allPosts.length]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [handleScroll]);
 
   // Preload top story image for faster LCP
   useEffect(() => {
@@ -38,12 +60,12 @@ const Index = () => {
           "@context": "https://schema.org",
           "@type": "NewsMediaOrganization",
           "name": "The Scoop Kenya",
-          "description": "Kenya's leading source for breaking news, entertainment updates, celebrity gossip, and trending stories.",
-          "url": "https://thescoopkenya.co.ke",
-          "logo": "https://thescoopkenya.co.ke/logo.png",
+          "description": "Kenya's first Sheng news and entertainment website. Breaking news, gossip, and trending stories in Sheng.",
+          "url": "https://thescoopkenya.vercel.app",
+          "logo": "https://thescoopkenya.vercel.app/logo.png",
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://thescoopkenya.co.ke/search?q={search_term_string}",
+            "target": "https://thescoopkenya.vercel.app/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
           }
         })
@@ -108,7 +130,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Main Content: Latest + Trending */}
+      {/* Main Content: All Posts + Trending */}
       <section className="py-10 bg-surface/50 border-y border-divider">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-12">
@@ -120,21 +142,35 @@ const Index = () => {
                   <span className="w-1.5 h-9 gradient-primary rounded-full shadow-sm" />
                   Latest Scoops
                 </h2>
+                <p className="text-sm text-muted-foreground">
+                  {displayedPosts.length} of {allPosts.length} stories
+                </p>
               </div>
 
               <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
-                {latestPosts.map((post) => (
+                {displayedPosts.map((post) => (
                   <ArticleCard key={post.slug} post={post} />
                 ))}
               </div>
 
-              {/* Load More Trigger */}
+              {/* Load More / End */}
               <div className="mt-12 text-center space-y-4">
-                <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-6 rounded-2xl text-lg font-bold shadow-sm transition-all hover:scale-105 active:scale-95">
-                  Load More Stories
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-                <p className="text-sm text-muted-foreground">Showing 10 of 42 articles</p>
+                {hasMore ? (
+                  <>
+                    <Button 
+                      variant="outline" 
+                      size="lg" 
+                      onClick={() => setVisibleCount(prev => Math.min(prev + POSTS_PER_PAGE, allPosts.length))}
+                      className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-6 rounded-2xl text-lg font-bold shadow-sm transition-all hover:scale-105 active:scale-95"
+                    >
+                      Load More Stories
+                      <ArrowRight className="w-5 h-5 ml-2" />
+                    </Button>
+                    <p className="text-sm text-muted-foreground">Scroll down for more stories</p>
+                  </>
+                ) : (
+                  <p className="text-sm text-muted-foreground font-medium">You've seen all {allPosts.length} stories 🎉</p>
+                )}
               </div>
             </div>
 
@@ -194,17 +230,13 @@ const Index = () => {
               <span className="w-1.5 h-9 gradient-primary rounded-full" />
               Browse the Hub
             </h2>
-            <Link to="/categories" className="group text-primary font-bold flex items-center gap-2">
-              View All 
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {categories.map((category) => (
               <Link
                 key={category.slug}
-                to={`/category/${category.slug}`}
+                to={category.slug === 'sports' ? '/sports' : `/category/${category.slug}`}
                 className="group relative h-48 rounded-2xl border border-divider overflow-hidden flex flex-col justify-end p-6 hover:shadow-2xl transition-all hover:-translate-y-1 bg-surface"
               >
                 <div className="absolute top-0 right-0 p-4 text-divider/20 group-hover:text-primary/10 transition-colors">
