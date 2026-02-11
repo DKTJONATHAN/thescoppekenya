@@ -29,7 +29,7 @@ export default function CategoryPage() {
     "@type": "CollectionPage",
     "name": `${category.name} - The Scoop Kenya`,
     "description": category.description,
-    "url": `https://thescoopkenya.co.ke/category/${category.slug}`
+    "url": `https://thescoopkenya.vercel.app/category/${category.slug}`
   };
 
   return (

@@ -5,6 +5,7 @@
       <stop offset="100%" style="stop-color:#ff9933"/>
     </linearGradient>
   </defs>
-  <rect width="100" height="100" rx="20" fill="url(#primaryGradient)"/>
-  <text x="50" y="65" text-anchor="middle" font-family="Georgia, serif" font-size="50" font-weight="bold" fill="white">S</text>
+  <rect width="100" height="100" rx="18" fill="url(#primaryGradient)"/>
+  <text x="50" y="42" text-anchor="middle" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="white">SK</text>
+  <text x="50" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" opacity="0.85">SHENG</text>
 </svg>
