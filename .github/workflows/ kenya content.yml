@@ -1,9 +1,15 @@
-name: Mpasho Scraper (No Duplicates & Fresh)
+name: Mpasho Scraper (Guaranteed Images)
 
 on:
   schedule:
-    # Runs every 3 hours (more frequent checks catch news faster)
-    - cron: '0 */3 * * *'
+    # Runs every 2 hours and 17 minutes between 7 AM and 10 PM
+    - cron: '0 4 * * *'
+    - cron: '17 6 * * *'
+    - cron: '34 8 * * *'
+    - cron: '51 10 * * *'
+    - cron: '8 13 * * *'
+    - cron: '25 15 * * *'
+    - cron: '42 17 * * *'
   workflow_dispatch:
 
 permissions:
@@ -44,19 +50,19 @@ jobs:
           from email.utils import parsedate_to_datetime
 
           # --- CONFIGURATION ---
-          # 1. Tighter Time Limit: 'when:12h' asks Google for only the last 12 hours
           RSS_FEED = "https://news.google.com/rss/search?q=site:mpasho.co.ke+when:12h&hl=en-KE&gl=KE&ceid=KE:en"
           HISTORY_FILE = "posted_history.txt"
 
+          # --- DASH CLEANER ---
           def clean_dashes(text):
               if not text: return ""
               text = text.replace('—', ' - ').replace('–', '-')
               text = re.sub(r'\s+', ' ', text)
               return text.strip()
 
+          # --- HISTORY MANAGER ---
           def load_history():
-              if not os.path.exists(HISTORY_FILE):
-                  return set()
+              if not os.path.exists(HISTORY_FILE): return set()
               with open(HISTORY_FILE, "r") as f:
                   return set(line.strip() for line in f.readlines())
 
@@ -64,10 +70,10 @@ jobs:
               with open(HISTORY_FILE, "a") as f:
                   f.write(f"{link}\n")
 
+          # --- GOOGLE NEWS FETCH ---
           def get_fresh_links():
-              print(f"📡 Checking Google News (Last 12 Hours)...")
+              print(f"📡 Checking Google News (Last 12h)...")
               history = load_history()
-              
               try:
                   resp = requests.get(RSS_FEED, timeout=10)
                   soup = BeautifulSoup(resp.content, "xml")
@@ -76,22 +82,17 @@ jobs:
                   valid_links = []
                   for item in items:
                       link = item.link.text.strip()
-                      pub_date_str = item.pubDate.text.strip()
+                      pub_str = item.pubDate.text.strip()
                       
-                      # Check 1: Is it a Duplicate?
                       if link in history:
-                          print(f"   Skipping (Already Posted): {item.title.text[:30]}...")
                           continue
-
-                      # Check 2: Is it ACTUALLY fresh? (Double-check the date)
+                      
+                      # Check freshness (must be < 24h old)
                       try:
-                          pub_date = parsedate_to_datetime(pub_date_str)
-                          # If it's older than 24 hours, skip it (even if Google sent it)
-                          if datetime.now(pub_date.tzinfo) - pub_date > timedelta(hours=24):
-                              print(f"   Skipping (Too Old): {item.title.text[:30]}...")
+                          pdate = parsedate_to_datetime(pub_str)
+                          if datetime.now(pdate.tzinfo) - pdate > timedelta(hours=24):
                               continue
-                      except:
-                          pass # If date parsing fails, rely on Google's filter
+                      except: pass
 
                       valid_links.append(link)
 
@@ -101,6 +102,7 @@ jobs:
                   print(f"❌ RSS Error: {e}")
                   return []
 
+          # --- PLAYWRIGHT SCRAPER ---
           def scrape_article_universal(url):
               print(f"🕷️ Stealth-Loading: {url}")
               with sync_playwright() as p:
@@ -123,49 +125,44 @@ jobs:
                       title = h1.text.strip() if h1 else soup.title.string
 
                       article_text = ""
-                      potential_containers = soup.find_all(['article', 'main', 'div'], class_=re.compile(r'(body|content|entry|post)'))
-                      
-                      for container in potential_containers:
-                          paras = container.find_all("p")
-                          temp_text = "\n\n".join([p.text.strip() for p in paras if len(p.text) > 50])
-                          if len(temp_text) > 500:
-                              article_text = temp_text
+                      # Priority Containers
+                      containers = soup.find_all(['article', 'main', 'div'], class_=re.compile(r'(body|content|entry|post)'))
+                      for c in containers:
+                          paras = c.find_all("p")
+                          txt = "\n\n".join([p.text.strip() for p in paras if len(p.text) > 50])
+                          if len(txt) > 500:
+                              article_text = txt
                               break
                       
+                      # Fallback Vacuum
                       if not article_text:
-                          all_paras = soup.find_all("p")
-                          clean_paras = [p.text.strip() for p in all_paras if len(p.text.strip()) > 60]
-                          article_text = "\n\n".join(clean_paras)
+                          all_p = soup.find_all("p")
+                          article_text = "\n\n".join([p.text.strip() for p in all_p if len(p.text) > 60])
 
                       browser.close()
                       return title, article_text
-
-                  except Exception as e:
-                      print(f"❌ Playwright Error: {e}")
+                  except:
                       browser.close()
                       return None, None
 
-          # --- MAIN EXECUTION ---
+          # --- MAIN LOGIC ---
           candidates = get_fresh_links()
           if not candidates:
-              print("No new content found. Exiting.")
+              print("No fresh news.")
               sys.exit(0)
-          
-          # Pick the FIRST one (since they are sorted by newest)
+
           target_link = candidates[0]
-          
           final_title, final_text = scrape_article_universal(target_link)
 
           if not final_text or len(final_text) < 300:
-              print("❌ Scraping failed or text too short.")
+              print("❌ Scrape failed.")
               sys.exit(1)
 
-          # --- KEY ROTATION & REWRITE ---
+          # --- AI REWRITE ---
           print("🤖 Rewriting...")
           keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY")]
           keys = [k for k in keys if k]
-          
-          target_models = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash-001"]
+          models = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash-001"]
 
           prompt = f"""
           Rewrite this for a Nairobi Gossip Blog (Sheng).
@@ -178,31 +175,31 @@ jobs:
           EXCERPT: [Hook]
           CATEGORY: Entertainment
           TAGS: Gossip, Nairobi
-          IMAGE_KEYWORD: [Search Term]
+          IMAGE_KEYWORD: [One single broad English noun e.g. City, Crowd, Money, Car. Do NOT use names.]
           BODY:
           [Markdown Text]
           """
-          
+
           success = False
           final_output = ""
-
-          for i, api_key in enumerate(keys):
-              genai.configure(api_key=api_key)
-              for model_name in target_models:
+          
+          for k in keys:
+              genai.configure(api_key=k)
+              for m in models:
                   try:
-                      model = genai.GenerativeModel(model_name)
+                      model = genai.GenerativeModel(m)
                       resp = model.generate_content(prompt)
                       final_output = resp.text
                       success = True
-                      break 
+                      break
                   except: time.sleep(1)
-              if success: break 
+              if success: break
 
           if not success: sys.exit(1)
 
-          # --- SAVE POST & UPDATE HISTORY ---
+          # --- SAVE ---
           parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
-          current_section = None
+          curr = None
           
           for line in final_output.splitlines():
               line = clean_dashes(line)
@@ -214,54 +211,71 @@ jobs:
               elif clean.startswith("TAGS:"): parsed["TAGS"] = clean.replace("TAGS:", "").strip()
               elif clean.startswith("IMAGE_KEYWORD:"): parsed["IMAGE_KEYWORD"] = clean.replace("IMAGE_KEYWORD:", "").strip()
               elif clean.startswith("BODY:"):
-                  current_section = "BODY"
+                  curr = "BODY"
                   continue
-              elif current_section == "BODY":
+              elif curr == "BODY":
                   parsed["BODY"] += line + "\n"
-
+          
           parsed["BODY"] = clean_dashes(parsed["BODY"])
 
+          # --- ROBUST IMAGE FINDER ---
           def get_image(query):
-              key = os.environ.get("UNSPLASH_ACCESS_KEY")
+              access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
+              # Guaranteed Fallback Image (Nairobi Skyline)
               fallback = "https://images.unsplash.com/photo-1499364615650-ec387c1470c5?w=1200"
-              if not key: return fallback
-              try:
-                  u = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={key}"
-                  r = requests.get(u, timeout=10)
-                  return r.json()['urls']['regular'] if r.status_code == 200 else fallback
-              except: return fallback
+              
+              if not access_key: return fallback
 
-          image_url = get_image(parsed['IMAGE_KEYWORD'] or "Kenya")
-          today_str = datetime.utcnow().strftime("%Y-%m-%d")
+              # Try 3 layers of keywords: Specific -> City -> Country
+              search_terms = [query, "Nairobi", "Kenya"]
+              # Filter out empty terms
+              search_terms = [t for t in search_terms if t and len(t) > 2]
 
-          md_content = f"""---
+              for term in search_terms:
+                  try:
+                      print(f"📷 Trying image search: {term}")
+                      u = f"https://api.unsplash.com/photos/random?query={term}&orientation=landscape&client_id={access_key}"
+                      r = requests.get(u, timeout=5)
+                      if r.status_code == 200:
+                          data = r.json()
+                          # Unsplash API sometimes returns list, sometimes dict
+                          if isinstance(data, list) and data:
+                              return data[0]['urls']['regular']
+                          elif isinstance(data, dict) and 'urls' in data:
+                              return data['urls']['regular']
+                  except Exception as e:
+                      print(f"   Image Error ({term}): {e}")
+              
+              print("⚠️ All image searches failed. Using fallback.")
+              return fallback
+
+          image_url = get_image(parsed['IMAGE_KEYWORD'])
+          today = datetime.utcnow().strftime("%Y-%m-%d")
+
+          md = f"""---
           title: "{parsed['TITLE'].replace('"', "'")}"
           slug: "{parsed['SLUG']}"
           excerpt: "{parsed['EXCERPT'].replace('"', "'")}"
           image: "{image_url}"
           category: "{parsed['CATEGORY']}"
-          date: "{today_str}"
+          date: "{today}"
           tags: [{parsed['TAGS']}]
           ---
 
           {parsed['BODY'].strip()}
           """
 
-          out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
-          os.makedirs(out_dir, exist_ok=True)
-          filename = f"{parsed['SLUG']}.md"
+          path = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"), f"{parsed['SLUG']}.md")
+          with open(path, "w", encoding="utf-8") as f:
+              f.write(md)
           
-          with open(os.path.join(out_dir, filename), "w", encoding="utf-8") as f:
-              f.write(md_content)
-          
-          # SAVE TO HISTORY AFTER SUCCESS
           save_to_history(target_link)
-          print(f"✅ Published: {filename}")
+          print(f"✅ Published: {parsed['SLUG']}.md")
           EOF
 
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: new scoop (fresh & unique) 🕵️"
+          commit_message: "content: fresh scoop 🕵️"
           branch: main
           file_pattern: "content/posts/*.md posted_history.txt"
