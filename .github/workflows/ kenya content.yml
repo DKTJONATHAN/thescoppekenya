@@ -1,9 +1,8 @@
-name: Mpasho Scraper (Bypass Cloudflare)
+name: Mpasho Scraper (Google News Bypass)
 
 on:
   schedule:
-    # Runs at 6 AM, 12 PM, 6 PM EAT
-    - cron: '0 3,9,15 * * *'
+    - cron: '0 6,12,18 * * *'
   workflow_dispatch:
 
 permissions:
@@ -25,123 +24,167 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install playwright google-genai beautifulsoup4 lxml
-          # Install the browser binary required for Playwright
+          pip install playwright google-genai beautifulsoup4 lxml requests
           playwright install chromium
 
-      - name: Run Scraper
+      - name: Run Stealth Scraper
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           POSTS_DIR: content/posts
         run: |
           python << 'EOF'
-          import os, random, sys, time
+          import os, random, sys, time, requests
           from google import genai
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
           from datetime import datetime
 
           # --- CONFIGURATION ---
-          HOMEPAGE = "https://mpasho.co.ke/"
-          
-          def run_scraper():
+          # We search Google News specifically for Mpasho articles from the last 1 day
+          RSS_FEED = "https://news.google.com/rss/search?q=site:mpasho.co.ke+when:1d&hl=en-KE&gl=KE&ceid=KE:en"
+
+          def get_links_from_google():
+              print(f"📡 Asking Google News for Mpasho links...")
+              try:
+                  # Google News is easy to scrape with basic requests
+                  resp = requests.get(RSS_FEED, timeout=10)
+                  soup = BeautifulSoup(resp.content, "xml")
+                  items = soup.find_all("item")
+                  
+                  links = []
+                  for item in items:
+                      # Google News links look like "https://news.google.com/rss/articles/..."
+                      # Playwright will follow the redirect to the real Mpasho link
+                      links.append(item.link.text)
+
+                  print(f"✅ Google found {len(links)} articles.")
+                  return links
+              except Exception as e:
+                  print(f"❌ Google RSS Error: {e}")
+                  return []
+
+          def scrape_article_stealth(url):
+              print(f"🕷️ Stealth-Loading: {url}")
+              
               with sync_playwright() as p:
-                  # Launch a real browser (Headless = invisible)
-                  browser = p.chromium.launch(headless=True)
+                  # LAUNCH ARGS TO HIDE "HEADLESS" STATUS
+                  browser = p.chromium.launch(
+                      headless=True,
+                      args=[
+                          "--disable-blink-features=AutomationControlled",
+                          "--no-sandbox",
+                          "--disable-setuid-sandbox",
+                          "--disable-infobars",
+                          "--window-position=0,0",
+                          "--ignore-certifcate-errors",
+                          "--ignore-certifcate-errors-spki-list",
+                          "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                      ]
+                  )
+                  
                   context = browser.new_context(
+                      viewport={"width": 1366, "height": 768},
                       user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
                   )
+                  
                   page = context.new_page()
 
-                  # --- 1. CRAWL HOMEPAGE ---
-                  print(f"📡 Visiting Homepage: {HOMEPAGE}")
+                  # STEALTH: Remove the "webdriver" property that alerts Cloudflare
+                  page.add_init_script("""
+                      Object.defineProperty(navigator, 'webdriver', {
+                          get: () => undefined
+                      });
+                  """)
+
                   try:
-                      page.goto(HOMEPAGE, timeout=60000)
-                      # Wait 5 seconds for Cloudflare challenge to finish
-                      page.wait_for_timeout(5000) 
+                      # Navigate
+                      page.goto(url, timeout=90000)
                       
-                      # Grab HTML after JavaScript has run
+                      # Wait for redirect to finish and body to load
+                      page.wait_for_load_state("domcontentloaded")
+                      
+                      # Random mouse jiggle to look human
+                      page.mouse.move(100, 100)
+                      page.wait_for_timeout(1000)
+                      page.mouse.move(200, 200)
+
+                      # Grab content
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
                       
-                      # Find Article Links
-                      candidates = []
-                      for a in soup.find_all("a", href=True):
-                          link = a['href']
-                          if "mpasho.co.ke" in link and len(link) > 40:
-                              if not any(x in link for x in ["/category/", "/tag/", "contact", "about"]):
-                                  candidates.append(link)
+                      # DEBUG: Print Title to verify we are on Mpasho
+                      page_title = soup.title.string if soup.title else "No Title"
+                      print(f"   Landed on: {page_title}")
 
-                      candidates = list(set(candidates))
-                      
-                      if not candidates:
-                          print("❌ Cloudflare blocked us or layout changed.")
-                          # Debug screenshot if it fails
-                          page.screenshot(path="debug_homepage.png")
-                          print("Saved debug_homepage.png")
+                      if "Just a moment" in page_title or "Cloudflare" in page_title:
+                          print("❌ Still blocked by Cloudflare challenge.")
+                          browser.close()
                           return None, None
-                      
-                      print(f"✅ Found {len(candidates)} articles.")
-                      target_link = random.choice(candidates[:10])
 
-                  except Exception as e:
-                      print(f"❌ Homepage Error: {e}")
-                      browser.close()
-                      return None, None
-
-                  # --- 2. SCRAPE ARTICLE ---
-                  print(f"🕷️ Reading: {target_link}")
-                  try:
-                      page.goto(target_link, timeout=60000)
-                      page.wait_for_timeout(3000) # Wait for text to load
-
-                      content = page.content()
-                      soup = BeautifulSoup(content, "html.parser")
-
-                      # Extract Body
+                      # EXTRACT BODY
+                      # Mpasho Selectors
                       body_div = soup.find("div", class_="article-body") or \
                                  soup.find("div", class_="entry-content") or \
                                  soup.find("div", class_="post-content")
 
                       if not body_div:
-                          print("⚠️ Could not find article body.")
+                          print("⚠️ Loaded page but couldn't find text div.")
+                          browser.close()
                           return None, None
 
                       paragraphs = body_div.find_all("p")
                       text = "\n\n".join([p.text.strip() for p in paragraphs])
                       
-                      # Extract Title
-                      title_tag = soup.find("h1")
-                      title = title_tag.text.strip() if title_tag else "Mpasho Gossip"
+                      # EXTRACT TITLE
+                      h1 = soup.find("h1")
+                      title = h1.text.strip() if h1 else page_title
 
                       browser.close()
                       return title, text
 
                   except Exception as e:
-                      print(f"❌ Article Error: {e}")
+                      print(f"❌ Playwright Error: {e}")
                       browser.close()
                       return None, None
 
-          # --- MAIN LOGIC ---
-          title, text = run_scraper()
-
-          if not text or len(text) < 200:
-              print("❌ Failed to get content. Exiting.")
+          # --- MAIN EXECUTION ---
+          
+          # 1. Get Links from Google (Bypasses Homepage Block)
+          candidates = get_links_from_google()
+          if not candidates:
               sys.exit(0)
+          
+          # 2. Pick a random one
+          # We try up to 3 links in case one fails
+          final_title = None
+          final_text = None
+          
+          # Shuffle to keep it random
+          random.shuffle(candidates)
+          
+          for link in candidates[:3]:
+              final_title, final_text = scrape_article_stealth(link)
+              if final_text and len(final_text) > 300:
+                  break # Success!
+              print("   Retrying next link...")
 
-          print(f"🎯 Target Acquired: {title}")
+          if not final_text:
+              print("❌ All attempts failed.")
+              sys.exit(1)
 
-          # --- 3. REWRITE WITH GEMINI ---
+          print(f"🎯 Success! Scraped: {final_title}")
+
+          # --- 3. REWRITE (Sheng Reporter) ---
           print("🤖 Rewriting with Gemini...")
           client = genai.Client(api_key=os.environ["GEMINI_WRITE_KEY"])
           
           prompt = f"""
           Rewrite this story into a Nairobi Gossip Blog post (Sheng).
-          Title: {title}
-          Body: {text[:6000]}
+          Title: {final_title}
+          Body: {final_text[:6000]}
           
-          FORMAT:
+          Format:
           TITLE: [Sheng Clickbait Title]
           SLUG: [slug]
           EXCERPT: [Hook]
@@ -177,8 +220,6 @@ jobs:
               elif current_section == "BODY":
                   parsed["BODY"] += line + "\n"
 
-          # Image Fetcher
-          import requests # Still need requests for Unsplash
           def get_image(query):
               key = os.environ.get("UNSPLASH_ACCESS_KEY")
               fallback = "https://images.unsplash.com/photo-1499364615650-ec387c1470c5?w=1200"
@@ -218,6 +259,6 @@ jobs:
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: mpasho scoop 🕵️"
+          commit_message: "content: mpasho stealth scoop 🕵️"
           branch: main
           file_pattern: content/posts/*.md
