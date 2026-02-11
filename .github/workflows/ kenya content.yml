@@ -1,8 +1,7 @@
-name: Mpasho Scraper (Multi-Key Auto-Rotate)
+name: Mpasho Scraper (Gemini 3 & 2.5)
 
 on:
   schedule:
-    # Runs every 6 hours
     - cron: '0 6,12,18 * * *'
   workflow_dispatch:
 
@@ -25,12 +24,12 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install playwright google-genai beautifulsoup4 lxml requests
+          # Force upgrade to ensure 'gemini-3' definitions are present
+          pip install -U google-generativeai requests beautifulsoup4 lxml playwright
           playwright install chromium
 
       - name: Run Scraper
         env:
-          # LOAD BOTH KEYS HERE
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
@@ -38,7 +37,7 @@ jobs:
         run: |
           python << 'EOF'
           import os, random, sys, time, requests, re
-          from google import genai
+          import google.generativeai as genai
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
           from datetime import datetime
@@ -125,20 +124,18 @@ jobs:
               print("❌ All scraping attempts failed.")
               sys.exit(1)
 
-          # --- KEY ROTATION LOGIC ---
-          print("🤖 Rewriting with Auto-Rotation...")
+          # --- KEY ROTATION & REWRITE ---
+          print("🤖 Rewriting...")
           
-          # List of available keys
-          keys = [
-              os.environ.get("GEMINI_WRITE_KEY"),
-              os.environ.get("GEMINI_API_KEY")
-          ]
-          # Filter out empty keys just in case
+          keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY")]
           keys = [k for k in keys if k]
           
-          if not keys:
-              print("❌ No API Keys found!")
-              sys.exit(1)
+          # --- 2026 MODEL LINEUP ---
+          target_models = [
+              "gemini-3-flash-preview", # The new 2026 standard for speed
+              "gemini-2.5-flash",       # Stable 2025 release
+              "gemini-2.0-flash-001"    # Deprecated fallback (retires March 2026)
+          ]
 
           prompt = f"""
           Rewrite this for a Nairobi Gossip Blog (Sheng).
@@ -159,27 +156,31 @@ jobs:
           success = False
           final_output = ""
 
-          # Try each key
+          # Try each KEY
           for i, api_key in enumerate(keys):
-              print(f"🔑 Attempting with Key #{i+1}...")
-              try:
-                  client = genai.Client(api_key=api_key)
-                  # Use 'gemini-1.5-flash' for stability
-                  resp = client.models.generate_content(model="gemini-1.5-flash", contents=prompt)
-                  final_output = resp.text
-                  success = True
-                  print("✅ Success!")
-                  break # Exit loop if successful
-              except Exception as e:
-                  error_msg = str(e)
-                  if "429" in error_msg or "RESOURCE_EXHAUSTED" in error_msg:
-                      print(f"⚠️ Key #{i+1} Quota Exceeded. Switching to next key...")
-                  else:
-                      print(f"❌ Key #{i+1} Error: {e}")
-                      # If it's a non-quota error, we might still want to try the next key
-                      
+              print(f"🔑 Trying Key #{i+1}...")
+              genai.configure(api_key=api_key)
+              
+              # Try each MODEL for this key
+              for model_name in target_models:
+                  print(f"   👉 Attempting model: {model_name}")
+                  try:
+                      model = genai.GenerativeModel(model_name)
+                      resp = model.generate_content(prompt)
+                      final_output = resp.text
+                      success = True
+                      print(f"   ✅ Success with {model_name}!")
+                      break # Break model loop
+                  except Exception as e:
+                      print(f"      ❌ {model_name} Failed: {e}")
+                      # Small pause to avoid rapid-fire errors
+                      time.sleep(1)
+              
+              if success:
+                  break # Break key loop if we got a result
+
           if not success:
-              print("❌ All API keys failed.")
+              print("❌ All Keys/Models Failed.")
               sys.exit(1)
 
           # --- SAVE ---
@@ -237,6 +238,6 @@ jobs:
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: mpasho multi-key scoop 🕵️"
+          commit_message: "content: mpasho gemini 3 scoop 🕵️"
           branch: main
           file_pattern: content/posts/*.md
