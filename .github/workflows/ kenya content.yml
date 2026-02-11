@@ -1,7 +1,8 @@
-name: Mpasho Scraper (Universal Fix)
+name: Mpasho Scraper (Multi-Key Auto-Rotate)
 
 on:
   schedule:
+    # Runs every 6 hours
     - cron: '0 6,12,18 * * *'
   workflow_dispatch:
 
@@ -29,7 +30,9 @@ jobs:
 
       - name: Run Scraper
         env:
+          # LOAD BOTH KEYS HERE
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           POSTS_DIR: content/posts
         run: |
@@ -41,7 +44,6 @@ jobs:
           from datetime import datetime
 
           # --- CONFIGURATION ---
-          # Google News RSS for Mpasho
           RSS_FEED = "https://news.google.com/rss/search?q=site:mpasho.co.ke+when:1d&hl=en-KE&gl=KE&ceid=KE:en"
 
           def get_links_from_google():
@@ -59,66 +61,42 @@ jobs:
 
           def scrape_article_universal(url):
               print(f"🕷️ Stealth-Loading: {url}")
-              
               with sync_playwright() as p:
-                  browser = p.chromium.launch(
-                      headless=True,
-                      args=["--disable-blink-features=AutomationControlled", "--no-sandbox"]
-                  )
+                  browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox"])
                   context = browser.new_context(
                       user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
                   )
                   page = context.new_page()
-
-                  # Disable navigator.webdriver to hide from bot detection
                   page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
                   try:
                       page.goto(url, timeout=60000)
-                      
-                      # WAIT STRATEGY: Wait for network to be idle (ads finished loading)
                       try:
                           page.wait_for_load_state("networkidle", timeout=15000)
-                      except:
-                          print("⚠️ Network didn't settle, but proceeding with DOM...")
-                          pass
+                      except: pass
 
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
                       
-                      # 1. GET TITLE
                       h1 = soup.find("h1")
                       title = h1.text.strip() if h1 else soup.title.string
                       print(f"   Title Found: {title}")
 
-                      # 2. GET TEXT (The Smart Way)
-                      # Instead of looking for one specific div, we try a prioritized list
-                      # If that fails, we just grab ALL paragraphs > 60 chars.
-                      
                       article_text = ""
-                      
-                      # Strategy A: Semantic Tags
                       potential_containers = soup.find_all(['article', 'main', 'div'], class_=re.compile(r'(body|content|entry|post)'))
                       
                       for container in potential_containers:
-                          # Check if this container has enough text
                           paras = container.find_all("p")
                           temp_text = "\n\n".join([p.text.strip() for p in paras if len(p.text) > 50])
-                          if len(temp_text) > 500: # Found a good chunk
+                          if len(temp_text) > 500:
                               article_text = temp_text
                               print("   ✅ Found text in container.")
                               break
                       
-                      # Strategy B: The "Vacuum" (Grab all long paragraphs)
                       if not article_text:
-                          print("   ⚠️ Strategy A failed. Using Vacuum Method...")
+                          print("   ⚠️ Strategy A failed. Vacuuming text...")
                           all_paras = soup.find_all("p")
-                          # Filter: Must be > 60 chars and not contain 'copyright' or 'cookie'
-                          clean_paras = []
-                          for p in all_paras:
-                              txt = p.text.strip()
-                              if len(txt) > 60 and "cookie" not in txt.lower():
-                                  clean_paras.append(txt)
+                          clean_paras = [p.text.strip() for p in all_paras if len(p.text.strip()) > 60]
                           article_text = "\n\n".join(clean_paras)
 
                       browser.close()
@@ -134,10 +112,8 @@ jobs:
           if not candidates: sys.exit(0)
           
           random.shuffle(candidates)
-          
           final_title, final_text = None, None
           
-          # Try up to 3 links
           for link in candidates[:3]:
               t, txt = scrape_article_universal(link)
               if txt and len(txt) > 300:
@@ -149,16 +125,25 @@ jobs:
               print("❌ All scraping attempts failed.")
               sys.exit(1)
 
-          print(f"🎯 Success! Ready to rewrite.")
-
-          # --- REWRITE (Gemini) ---
-          print("🤖 Rewriting...")
-          client = genai.Client(api_key=os.environ["GEMINI_WRITE_KEY"])
+          # --- KEY ROTATION LOGIC ---
+          print("🤖 Rewriting with Auto-Rotation...")
           
+          # List of available keys
+          keys = [
+              os.environ.get("GEMINI_WRITE_KEY"),
+              os.environ.get("GEMINI_API_KEY")
+          ]
+          # Filter out empty keys just in case
+          keys = [k for k in keys if k]
+          
+          if not keys:
+              print("❌ No API Keys found!")
+              sys.exit(1)
+
           prompt = f"""
           Rewrite this for a Nairobi Gossip Blog (Sheng).
           Title: {final_title}
-          Body: {final_text[:6000]}
+          Body: {final_text[:5000]}
           
           Format:
           TITLE: [Sheng Title]
@@ -171,17 +156,36 @@ jobs:
           [Markdown Text]
           """
           
-          try:
-              resp = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
-              final_text = resp.text
-          except Exception as e:
-              print(f"❌ Gemini Error: {e}")
+          success = False
+          final_output = ""
+
+          # Try each key
+          for i, api_key in enumerate(keys):
+              print(f"🔑 Attempting with Key #{i+1}...")
+              try:
+                  client = genai.Client(api_key=api_key)
+                  # Use 'gemini-1.5-flash' for stability
+                  resp = client.models.generate_content(model="gemini-1.5-flash", contents=prompt)
+                  final_output = resp.text
+                  success = True
+                  print("✅ Success!")
+                  break # Exit loop if successful
+              except Exception as e:
+                  error_msg = str(e)
+                  if "429" in error_msg or "RESOURCE_EXHAUSTED" in error_msg:
+                      print(f"⚠️ Key #{i+1} Quota Exceeded. Switching to next key...")
+                  else:
+                      print(f"❌ Key #{i+1} Error: {e}")
+                      # If it's a non-quota error, we might still want to try the next key
+                      
+          if not success:
+              print("❌ All API keys failed.")
               sys.exit(1)
 
           # --- SAVE ---
           parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
           current_section = None
-          for line in final_text.splitlines():
+          for line in final_output.splitlines():
               clean = line.strip().replace("**", "")
               if clean.startswith("TITLE:"): parsed["TITLE"] = clean.replace("TITLE:", "").strip()
               elif clean.startswith("SLUG:"): parsed["SLUG"] = clean.replace("SLUG:", "").strip()
@@ -195,7 +199,6 @@ jobs:
               elif current_section == "BODY":
                   parsed["BODY"] += line + "\n"
 
-          # Image
           def get_image(query):
               key = os.environ.get("UNSPLASH_ACCESS_KEY")
               fallback = "https://images.unsplash.com/photo-1499364615650-ec387c1470c5?w=1200"
@@ -234,6 +237,6 @@ jobs:
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: mpasho universal scoop 🕵️"
+          commit_message: "content: mpasho multi-key scoop 🕵️"
           branch: main
           file_pattern: content/posts/*.md
