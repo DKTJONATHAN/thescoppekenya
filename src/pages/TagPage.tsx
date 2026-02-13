@@ -3,6 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { ArticleCard } from "@/components/articles/ArticleCard";
 import { getPostsByTag } from "@/lib/markdown";
 import { ChevronLeft, Tag } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export default function TagPage() {
   const { tag } = useParams<{ tag: string }>();
@@ -11,6 +12,10 @@ export default function TagPage() {
 
   return (
     <Layout>
+      <Helmet>
+        <title>#{decodedTag} - The Scoop KE</title>
+        <meta name="description" content={`Articles tagged with "${decodedTag}" on The Scoop Kenya`} />
+      </Helmet>
       <div className="bg-muted/50 border-b border-border">
         <div className="container max-w-7xl py-3">
           <Link 

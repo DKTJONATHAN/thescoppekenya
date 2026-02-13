@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { useEffect, useState } from "react";
 import { XIcon } from "@/components/XIcon";
 import { NewsletterForm } from "@/components/NewsletterForm";
+import { Helmet } from "react-helmet-async";
 
 export default function ArticlePage() {
   const { slug } = useParams<{ slug: string }>();
@@ -67,6 +68,22 @@ export default function ArticlePage() {
 
   return (
     <Layout>
+      <Helmet>
+        <title>{post.title} | The Scoop KE</title>
+        <meta name="description" content={post.excerpt} />
+        <link rel="canonical" href={`https://thescoopkenya.co.ke/article/${post.slug}`} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://thescoopkenya.co.ke/article/${post.slug}`} />
+        <meta property="og:title" content={`${post.title} | The Scoop KE`} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:image" content={post.image} />
+        <meta property="article:published_time" content={post.date} />
+        <meta property="article:section" content={post.category} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${post.title} | The Scoop KE`} />
+        <meta name="twitter:description" content={post.excerpt} />
+        <meta name="twitter:image" content={post.image} />
+      </Helmet>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       {/* Back Navigation */}

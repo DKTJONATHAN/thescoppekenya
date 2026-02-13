@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, TrendingUp, Zap, Flame, Clock, Newspaper } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Helmet } from "react-helmet-async";
 
 const POSTS_PER_PAGE = 12;
 
@@ -54,6 +55,11 @@ const Index = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>The Scoop KE | Kenya's First Sheng News & Entertainment Website</title>
+        <meta name="description" content="Kenya's first Sheng news and entertainment website. Breaking news, celebrity gossip, trending stories na entertainment updates kwa Sheng." />
+        <link rel="canonical" href="https://thescoopkenya.co.ke" />
+      </Helmet>
       {/* Enhanced SEO Schema */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
