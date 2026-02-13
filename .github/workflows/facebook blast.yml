@@ -1,59 +1,158 @@
-name: Facebook Auto-Post on Commit
+name: FB Gossip Bot (Stateless)
 
 on:
   push:
     paths:
-      - 'content/posts/**.md'
+      - '.github/workflows/fb-gossip.yml'
+  schedule:
+    # Runs every 2 hours (odd hours)
+    - cron: '15 3,5,7,9,11,13,15,17,19,21 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
-  post-to-facebook:
+  post-gossip-text:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          fetch-depth: 2
+          python-version: '3.11'
 
-      - name: Detect changed posts & publish to Facebook
+      - name: Install dependencies
+        run: pip install requests google-genai apify-client beautifulsoup4
+
+      - name: Scrape & Post (No Memory)
         env:
-          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
-          FACEBOOK_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
+          GEMINI_POOL: "${{ secrets.GEMINI_API_KEY }},${{ secrets.GEMINI_API_KEY1 }},${{ secrets.GEMINI_API_KEY2 }},${{ secrets.GEMINI_WRITE_KEY }}"
+          APIFY_POOL: "${{ secrets.APIFY_API_TOKEN }},${{ secrets.APIFY_API_TOKEN1 }},${{ secrets.APIFY_API_TOKEN2 }},${{ secrets.APIFY_API_TOKEN3 }},${{ secrets.APIFY_API_TOKEN4 }},${{ secrets.APIFY_API_TOKEN5 }}"
+          FB_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
         run: |
-          if [ -z "$FACEBOOK_PAGE_ID" ] || [ -z "$FACEBOOK_PAGE_TOKEN" ]; then
-            echo "⚠️  Facebook credentials not set, skipping"
-            exit 0
-          fi
+          python << 'EOF'
+          import os, requests, random, sys, re
+          from google import genai
+          from google.genai import types
+          from apify_client import ApifyClient
+          from bs4 import BeautifulSoup
 
-          SITE_URL="https://thescoopkenya.vercel.app"
+          # 1. DISCOVERY (KenyaMoja Entertainment)
+          print("🔍 Checking KenyaMoja Entertainment...")
+          try:
+              res = requests.get("https://www.kenyamoja.com/entertainment", headers={'User-Agent': 'Mozilla/5.0'}, timeout=15)
+              items = BeautifulSoup(res.text, 'html.parser').select('li.news-item')
+          except Exception as e:
+              print(f"❌ Network error: {e}")
+              sys.exit(1)
 
-          # Get changed .md files in content/posts/
-          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
+          if not items:
+              print("⚠️ No items found.")
+              sys.exit(0)
 
-          if [ -z "$CHANGED" ]; then
-            echo "📝 No post changes detected"
-            exit 0
-          fi
+          # 2. SELECT RANDOM STORY (Stateless Mode)
+          # We pick one from the Top 6 to ensure variety
+          top_stories = items[:6]
+          selected_item = random.choice(top_stories)
+          
+          link = selected_item.select_one('.news-title a')
+          if not link: sys.exit(0)
+          
+          target_url = link['href']
+          print(f"🕷️ Selected Story: {target_url}")
 
-          # Process and post each changed file sequentially
-          while IFS= read -r file; do
-            SLUG=$(basename "$file" .md)
-            URL="${SITE_URL}/article/${SLUG}"
-            
-            echo "🚀 Posting to Facebook: $URL"
-            
-            # Updated to explicitly use Graph API v24.0
-            RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
-              "https://graph.facebook.com/v24.0/${FACEBOOK_PAGE_ID}/feed" \
-              -d "link=${URL}" \
-              -d "access_token=${FACEBOOK_PAGE_TOKEN}")
+          # 3. SCRAPE (Apify)
+          raw_story = None
+          apify_keys = [k.strip() for k in os.environ.get("APIFY_POOL", "").split(",") if k.strip()]
+          apify = ApifyClient(random.choice(apify_keys))
 
-            HTTP_CODE=$(echo "$RESPONSE" | tail -1)
-            BODY=$(echo "$RESPONSE" | head -n -1)
+          try:
+              run = apify.actor("apify/website-content-crawler").call(
+                  run_input={
+                      "startUrls": [{"url": target_url}], 
+                      "maxCrawlPages": 1,
+                      "crawlerType": "playwright:firefox"
+                  }
+              )
+              dataset = apify.dataset(run["defaultDatasetId"])
+              data = list(dataset.iterate_items())
+              if data:
+                  text = data[0].get('markdown', data[0].get('text', ''))
+                  if len(text) > 300:
+                      raw_story = text
+          except Exception as e:
+              print(f"❌ Scrape failed: {e}")
+              sys.exit(1)
+          
+          if not raw_story:
+              print("⚠️ Content too short or empty.")
+              sys.exit(0)
 
-            if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
-              echo "✅ Facebook post successful for $SLUG (${HTTP_CODE})"
-            else
-              echo "❌ Facebook post failed for $SLUG (${HTTP_CODE}): ${BODY}"
-              exit 1
-            fi
-          done <<< "$CHANGED"
+          # 4. GENERATE (Gemini - The Nairobi Gossip Chair)
+          print("🤖 Brewing the Tea...")
+          gem_keys = [k.strip() for k in os.environ.get("GEMINI_POOL", "").split(",") if k.strip()]
+          gemini = genai.Client(api_key=random.choice(gem_keys))
+          
+          # DYNAMIC PROMPT FOR VIRALITY
+          prompt = f"""
+          ROLE: You are the most followed, savage gossip journalist in Nairobi. You run a 'Tea Master' page.
+          
+          SOURCE MATERIAL: 
+          {raw_story[:6000]}
+
+          INSTRUCTIONS:
+          1. TONE: High energy, slightly judgmental, and fully Kenyan. You are spilling secrets to your followers.
+          2. SLANG STRATEGY: Do NOT use generic slang. Use situational Sheng that fits THIS specific story.
+          3. HASHTAGS (CRITICAL): 
+             - If you mention a specific person (e.g., Ruto, Diamond, Amber Ray), you MUST hashtag their name immediately in the sentence (e.g., "Imagine what #Diamond just did...").
+             - Do not hashtag random words. Only Names and Places.
+          4. VIRAL ENDING: Finish with 3-4 specific viral tags relevant to this exact topic (e.g., if it's music, use music tags; if politics, use #KOT).
+          5. LENGTH: Short and punchy for Facebook (approx 100-150 words).
+
+          FORBIDDEN: 
+          - Do not use phrases like "Dive into", "In the realm of", "Tapestry".
+          - Do not use hashtags that are not relevant to Kenya or the story.
+
+          OUTPUT FORMAT:
+          [The Gossip Post with emojis]
+          """
+          
+          try:
+              res = gemini.models.generate_content(
+                  model="gemini-2.0-flash", 
+                  contents=prompt,
+                  config=types.GenerateContentConfig(temperature=0.85) # High temp for creativity
+              )
+              # Clean up markdown bolding but KEEP hashtags
+              gossip_text = res.text.strip().replace("**", "").replace("__", "")
+          except Exception as e:
+              print(f"❌ Gemini Error: {e}")
+              sys.exit(1)
+          
+          # 5. POST (Facebook Feed - Text Post)
+          print("🚀 Posting to Facebook...")
+          fb_token = os.environ.get("FB_TOKEN")
+          fb_page_id = os.environ.get("FB_PAGE_ID")
+          
+          if not fb_page_id or not fb_token:
+              print("❌ Missing Facebook credentials")
+              sys.exit(1)
+          
+          # No hardcoded tags here - we rely on the AI's generated tags
+          final_msg = gossip_text
+          
+          resp = requests.post(
+              f"https://graph.facebook.com/v24.0/{fb_page_id}/feed",
+              data={"message": final_msg, "access_token": fb_token}
+          )
+          
+          if resp.status_code == 200:
+              print("✅ Posted successfully!")
+          else:
+              print(f"❌ Facebook API Error: {resp.text}")
+              sys.exit(1)
+          EOF
