@@ -70,25 +70,39 @@ jobs:
               with open(HISTORY_FILE, "a") as f:
                   f.write(f"{link}\n")
 
-          # --- URL RESOLVER (BYPASS GOOGLE NEWS 403) ---
+          # --- URL DECODER (BYPASS GOOGLE NEWS 403) ---
           def resolve_google_news_url(url):
-              print(f"🔗 Resolving Google News redirect for: {url}")
-              headers = {
-                  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-                  "Accept-Language": "en-US,en;q=0.5"
-              }
+              print(f"🔗 Decoding Google News URL: {url}")
               try:
-                  res = requests.get(url, headers=headers, allow_redirects=True, timeout=15)
+                  from urllib.parse import urlparse
+                  import json
                   
-                  # If Google returns a manual redirect or consent page
-                  if "news.google.com" in res.url or "consent.google.com" in res.url:
-                      match = re.search(r'<a[^>]*href="(https://[^"]+)"', res.text)
-                      if match:
-                          return match.group(1)
-                  return res.url
+                  # Extract the base64 token from the end of the URL
+                  guid = urlparse(url).path.split('/')[-1]
+                  
+                  # Build Google's internal batchexecute RPC payload
+                  param = f'["garturlreq",[["en-US","US",["FINANCE_TOP_INDICES","WEB_TEST_1_0_0"],null,null,1,1,"US:en",null,null,null,null,null,null,null,0,5],"en-US","US",true,[2,4,8],1,true,"661099999",0,0,null,0],"{guid}"]'
+                  data = {'f.req': json.dumps([[["Fbv4je", param, "null", "generic"]]])}
+                  
+                  headers = {
+                      'content-type': 'application/x-www-form-urlencoded;charset=UTF-8',
+                      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36'
+                  }
+                  
+                  # Hit the hidden endpoint
+                  res = requests.post("https://news.google.com/_/DotsSplashUi/data/batchexecute", data=data, headers=headers, timeout=10)
+                  
+                  # Extract the clean URL using regex
+                  match = re.search(r'\\"garturlres\\",\\"(https?://[^\\]+)\\"', res.text)
+                  if match:
+                      final_url = match.group(1)
+                      print(f"✅ Decoded successfully: {final_url}")
+                      return final_url
+                      
+                  print("⚠️ Decode failed. Returning original URL.")
+                  return url
               except Exception as e:
-                  print(f"⚠️ URL Resolution Error: {e}")
+                  print(f"⚠️ URL Decode Error: {e}")
                   return url
 
           # --- GOOGLE NEWS FETCH ---
@@ -136,6 +150,14 @@ jobs:
 
                   try:
                       page.goto(url, timeout=60000)
+                      
+                      # Handle Google Consent if the decoder failed and we got stuck
+                      if "consent.google.com" in page.url or "news.google.com" in page.url:
+                          try:
+                              page.locator('button:has-text("Accept all")').click(timeout=5000)
+                          except:
+                              pass
+
                       try: page.wait_for_load_state("networkidle", timeout=15000)
                       except: pass
 
