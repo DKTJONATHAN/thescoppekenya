@@ -31,7 +31,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install -U google-generativeai requests beautifulsoup4 lxml playwright
+          pip install -U google-genai requests beautifulsoup4 lxml playwright
           playwright install chromium
 
       - name: Run Scraper
@@ -43,7 +43,7 @@ jobs:
         run: |
           python << 'EOF'
           import os, random, sys, time, requests, re
-          import google.generativeai as genai
+          from google import genai
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
           from datetime import datetime, timedelta
@@ -69,6 +69,27 @@ jobs:
           def save_to_history(link):
               with open(HISTORY_FILE, "a") as f:
                   f.write(f"{link}\n")
+
+          # --- URL RESOLVER (BYPASS GOOGLE NEWS 403) ---
+          def resolve_google_news_url(url):
+              print(f"🔗 Resolving Google News redirect for: {url}")
+              headers = {
+                  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+                  "Accept-Language": "en-US,en;q=0.5"
+              }
+              try:
+                  res = requests.get(url, headers=headers, allow_redirects=True, timeout=15)
+                  
+                  # If Google returns a manual redirect or consent page
+                  if "news.google.com" in res.url or "consent.google.com" in res.url:
+                      match = re.search(r'<a[^>]*href="(https://[^"]+)"', res.text)
+                      if match:
+                          return match.group(1)
+                  return res.url
+              except Exception as e:
+                  print(f"⚠️ URL Resolution Error: {e}")
+                  return url
 
           # --- GOOGLE NEWS FETCH ---
           def get_fresh_links():
@@ -108,7 +129,7 @@ jobs:
               with sync_playwright() as p:
                   browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox"])
                   context = browser.new_context(
-                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
                   )
                   page = context.new_page()
                   page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
@@ -152,7 +173,10 @@ jobs:
               sys.exit(0)
 
           target_link = candidates[0]
-          final_title, final_text = scrape_article_universal(target_link)
+          # Bypassing the Google News redirect wall
+          resolved_link = resolve_google_news_url(target_link)
+          
+          final_title, final_text = scrape_article_universal(resolved_link)
 
           if not final_text or len(final_text) < 300:
               print("❌ Scrape failed.")
@@ -162,7 +186,7 @@ jobs:
           print("🤖 Rewriting...")
           keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY")]
           keys = [k for k in keys if k]
-          models = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash-001"]
+          models = ["gemini-2.0-flash", "gemini-2.5-flash"]
 
           prompt = f"""
           Rewrite this for a Nairobi Gossip Blog (Sheng).
@@ -184,18 +208,24 @@ jobs:
           final_output = ""
           
           for k in keys:
-              genai.configure(api_key=k)
+              client = genai.Client(api_key=k)
               for m in models:
                   try:
-                      model = genai.GenerativeModel(m)
-                      resp = model.generate_content(prompt)
+                      resp = client.models.generate_content(
+                          model=m,
+                          contents=prompt
+                      )
                       final_output = resp.text
                       success = True
                       break
-                  except: time.sleep(1)
+                  except Exception as e:
+                      print(f"⚠️ Model {m} failed: {e}")
+                      time.sleep(1)
               if success: break
 
-          if not success: sys.exit(1)
+          if not success: 
+              print("❌ All Gemini generations failed.")
+              sys.exit(1)
 
           # --- SAVE ---
           parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
