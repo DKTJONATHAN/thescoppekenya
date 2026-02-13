@@ -1,0 +1,58 @@
+name: Facebook Auto-Post on Commit
+
+on:
+  push:
+    paths:
+      - 'content/posts/**.md'
+
+jobs:
+  post-to-facebook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect changed posts & publish to Facebook
+        env:
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          FACEBOOK_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
+        run: |
+          if [ -z "$FACEBOOK_PAGE_ID" ] || [ -z "$FACEBOOK_PAGE_TOKEN" ]; then
+            echo "⚠️  Facebook credentials not set, skipping"
+            exit 0
+          fi
+
+          SITE_URL="https://thescoopkenya.vercel.app"
+
+          # Get changed .md files in content/posts/
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
+
+          if [ -z "$CHANGED" ]; then
+            echo "📝 No post changes detected"
+            exit 0
+          fi
+
+          # Process and post each changed file sequentially
+          while IFS= read -r file; do
+            SLUG=$(basename "$file" .md)
+            URL="${SITE_URL}/article/${SLUG}"
+            
+            echo "🚀 Posting to Facebook: $URL"
+            
+            RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
+              "https://graph.facebook.com/${FACEBOOK_PAGE_ID}/feed" \
+              -d "link=${URL}" \
+              -d "access_token=${FACEBOOK_PAGE_TOKEN}")
+
+            HTTP_CODE=$(echo "$RESPONSE" | tail -1)
+            BODY=$(echo "$RESPONSE" | head -n -1)
+
+            if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
+              echo "✅ Facebook post successful for $SLUG (${HTTP_CODE})"
+            else
+              echo "❌ Facebook post failed for $SLUG (${HTTP_CODE}): ${BODY}"
+              exit 1
+            fi
+          done <<< "$CHANGED"
