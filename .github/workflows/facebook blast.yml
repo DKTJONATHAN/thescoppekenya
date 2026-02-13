@@ -41,8 +41,9 @@ jobs:
             
             echo "🚀 Posting to Facebook: $URL"
             
+            # Updated to explicitly use Graph API v24.0
             RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
-              "https://graph.facebook.com/${FACEBOOK_PAGE_ID}/feed" \
+              "https://graph.facebook.com/v24.0/${FACEBOOK_PAGE_ID}/feed" \
               -d "link=${URL}" \
               -d "access_token=${FACEBOOK_PAGE_TOKEN}")
 
