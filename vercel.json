@@ -1,5 +1,5 @@
 {
-  "buildCommand": "node scripts/generate-llms-txt.js && node scripts/generate-rss.js && node scripts/submit-new-posts.js && vite build && node scripts/generate-sitemap.js",
+  "buildCommand": "node scripts/generate-llms-txt.js && node scripts/generate-rss.js && node scripts/submit-new-posts.js && vite build && node scripts/generate-sitemap.js && node scripts/generate-article-html.js",
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
     { "source": "/llms.txt", "destination": "/llms.txt" },

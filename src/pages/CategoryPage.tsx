@@ -6,6 +6,7 @@ import { TrendingSidebar } from "@/components/articles/TrendingSidebar";
 import { getPostsByCategory, categories } from "@/lib/markdown";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export default function CategoryPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -34,6 +35,11 @@ export default function CategoryPage() {
 
   return (
     <Layout>
+      <Helmet>
+        <title>{category.name} - The Scoop KE</title>
+        <meta name="description" content={category.description} />
+        <link rel="canonical" href={`https://thescoopkenya.co.ke/category/${category.slug}`} />
+      </Helmet>
       {/* SEO Schema */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(categorySchema) }} />
 

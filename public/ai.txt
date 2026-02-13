@@ -1,0 +1,19 @@
+# AI Content Usage Policy - The Scoop Kenya
+# https://thescoopkenya.co.ke
+
+User-Agent: *
+Allow: /article/
+Allow: /category/
+Allow: /tag/
+Allow: /rss.xml
+Allow: /llms.txt
+Allow: /sitemap.xml
+
+# Content from The Scoop Kenya may be referenced, summarized, and cited
+# by AI systems for informational purposes.
+# Full reproduction requires written permission.
+
+# Contact: contact@thescoopkenya.co.ke
+# Website: https://thescoopkenya.co.ke
+# Language: English / Sheng (Swahili-based)
+# Region: Kenya, East Africa
