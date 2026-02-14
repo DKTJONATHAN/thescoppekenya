@@ -1,211 +1,201 @@
-name: Mpasho Scraper (Direct & Guaranteed Images)
+name: International Gossip Bot (Gemini 3 Flash)
 
 on:
   schedule:
-    # Runs every 2 hours and 17 minutes between 7 AM and 10 PM
-    - cron: '0 4 * * *'
-    - cron: '17 6 * * *'
-    - cron: '34 8 * * *'
-    - cron: '51 10 * * *'
-    - cron: '8 13 * * *'
-    - cron: '25 15 * * *'
-    - cron: '42 17 * * *'
+    - cron: '30 1 * * *'  # 4:30AM EAT
+    - cron: '30 5 * * *'  # 8:30AM EAT
+    - cron: '30 10 * * *' # 1:30PM EAT
+    - cron: '30 13 * * *' # 4:30PM EAT
+    - cron: '30 17 * * *' # 8:30PM EAT
+    - cron: '30 21 * * *' # 12:30AM EAT
   workflow_dispatch:
+    inputs:
+      manual_topic:
+        description: 'Force topic: celebrity, sports, technology, politics'
+        required: false
+        default: ''
 
 permissions:
   contents: write
 
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+
 jobs:
-  scrape-and-publish:
+  generate-and-publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Checkout repo
         uses: actions/checkout@v4
         with:
+          ref: ${{ env.DEFAULT_BRANCH }}
           token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: |
-          pip install -U google-genai requests beautifulsoup4 lxml playwright
-          playwright install chromium
+          python -m pip install --upgrade pip
+          pip install requests google-genai
 
-      - name: Run Scraper
+      - name: Generate article with Gemini
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
-          POSTS_DIR: content/posts
+          MANUAL_TOPIC: ${{ inputs.manual_topic }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
         run: |
           python << 'EOF'
-          import os, random, sys, time, requests, re
+          import os, json, datetime, requests, re, random, time, sys
           from google import genai
-          from bs4 import BeautifulSoup
-          from playwright.sync_api import sync_playwright
-          from datetime import datetime
+          from google.genai import types
 
-          # --- CONFIGURATION ---
-          HISTORY_FILE = "posted_history.txt"
+          # --- 1. CONFIGURATION ---
+          today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
+          current_hour = datetime.datetime.utcnow().hour
 
-          # --- DASH CLEANER ---
-          def clean_dashes(text):
-              if not text: return ""
-              text = text.replace('\u2014', ' - ').replace('\u2013', '-')
-              text = re.sub(r'\s+', ' ', text)
-              return text.strip()
+          # UPDATED MODEL LIST FOR 2026
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
-          # --- HISTORY MANAGER ---
-          def load_history():
-              if not os.path.exists(HISTORY_FILE): return set()
-              with open(HISTORY_FILE, "r") as f:
-                  return set(line.strip() for line in f.readlines())
+          # BANNED: Old/Repetitive Millennial Slang to avoid
+          BANNED_PHRASES = [
+              "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
+              "grab your popcorn", "listen up", "buckle up", "breaking news",
+              "sherehe", "form ni gani", "udaku", "hello guys", "welcome back"
+          ]
 
-          def save_to_history(link):
-              with open(HISTORY_FILE, "a") as f:
-                  f.write(f"{link}\n")
+          # Topic rotation
+          manual_input = os.environ.get('MANUAL_TOPIC', '').strip().lower()
+          if manual_input in ['celebrity', 'sports', 'technology', 'politics']:
+              topic = manual_input
+          else:
+              hour_mod = current_hour % 6
+              topics = ['celebrity', 'sports', 'technology', 'politics', 'celebrity', 'sports']
+              topic = topics[hour_mod] if hour_mod < len(topics) else 'celebrity'
+          
+          cat_map = {'celebrity': 'entertainment', 'sports': 'sports', 'technology': 'technology', 'politics': 'general'}
+          newsapi_cat = cat_map.get(topic, 'general')
+          
+          print(f"🎯 Topic: {topic} | NewsAPI: {newsapi_cat}")
 
-          # --- DIRECT MPASHO FETCH ---
-          def get_fresh_links():
-              print(f"📡 Fetching directly from Mpasho Entertainment...")
-              history = load_history()
-              headers = {
-                  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
-              }
-              try:
-                  resp = requests.get("https://mpasho.co.ke/entertainment/", headers=headers, timeout=15)
-                  soup = BeautifulSoup(resp.text, "html.parser")
-                  
-                  valid_links = []
-                  # Find all hyperlinks on the entertainment homepage
-                  for a in soup.find_all('a', href=True):
-                      link = a['href']
-                      
-                      # Rebuild relative links
-                      if link.startswith('/'):
-                          link = "https://mpasho.co.ke" + link
-                          
-                      # Filter: Must be a long article link, not a general category tab
-                      if 'mpasho.co.ke/entertainment/' in link and len(link) > 50 and not link.endswith('/entertainment/'):
-                          if link not in history and link not in valid_links:
-                              valid_links.append(link)
-
-                  print(f"✅ Found {len(valid_links)} NEW unposted articles.")
-                  return valid_links
-              except Exception as e:
-                  print(f"❌ Direct Fetch Error: {e}")
-                  return []
-
-          # --- PLAYWRIGHT SCRAPER ---
-          def scrape_article_universal(url):
-              print(f"🕷️ Stealth-Loading: {url}")
-              with sync_playwright() as p:
-                  browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox"])
-                  context = browser.new_context(
-                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-                  )
-                  page = context.new_page()
-                  page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-
-                  try:
-                      page.goto(url, timeout=60000)
-                      try: page.wait_for_load_state("networkidle", timeout=15000)
-                      except: pass
-
-                      content = page.content()
-                      soup = BeautifulSoup(content, "html.parser")
-                      
-                      h1 = soup.find("h1")
-                      title = h1.text.strip() if h1 else soup.title.string
-
-                      article_text = ""
-                      containers = soup.find_all(['article', 'main', 'div'], class_=re.compile(r'(body|content|entry|post)'))
-                      for c in containers:
-                          paras = c.find_all("p")
-                          txt = "\n\n".join([p.text.strip() for p in paras if len(p.text) > 50])
-                          if len(txt) > 500:
-                              article_text = txt
-                              break
-                      
-                      if not article_text:
-                          all_p = soup.find_all("p")
-                          article_text = "\n\n".join([p.text.strip() for p in all_p if len(p.text) > 60])
-
-                      browser.close()
-                      return title, article_text
-                  except:
-                      browser.close()
-                      return None, None
-
-          # --- MAIN LOGIC ---
-          candidates = get_fresh_links()
-          if not candidates:
-              print("No fresh news.")
+          # --- 2. FETCH INTERNATIONAL NEWS ---
+          params = {
+              'category': newsapi_cat,
+              'language': 'en',
+              'pageSize': 15,
+              'apiKey': os.environ['NEWSAPI_KEY']
+          }
+          try:
+              news_resp = requests.get('https://newsapi.org/v2/top-headlines', params=params, timeout=15)
+              news_data = news_resp.json()
+          except Exception as e:
+              print(f"Error fetching news: {e}")
+              sys.exit(0)
+          
+          if news_data.get('status') != 'ok':
+              print(f"❌ NewsAPI Error: {news_data.get('message', 'Unknown error')}")
               sys.exit(0)
 
-          # Take the top direct link
-          target_link = candidates[0]
+          if news_data.get('totalResults', 0) == 0:
+              print("No fresh news, skipping")
+              sys.exit(0)
           
-          final_title, final_text = scrape_article_universal(target_link)
-
-          if not final_text or len(final_text) < 300:
-              print("❌ Scrape failed.")
-              sys.exit(1)
-
-          # --- AI REWRITE ---
-          print("🤖 Rewriting...")
-          keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY")]
-          keys = [k for k in keys if k]
-          models = ["gemini-2.0-flash", "gemini-2.5-flash"]
-
-          prompt = f"""
-          Rewrite this for a Nairobi Gossip Blog (Sheng).
-          Title: {final_title}
-          Body: {final_text[:5000]}
+          top_story = max(news_data['articles'], key=lambda x: x['publishedAt'] if x['publishedAt'] else '0000')
+          title = top_story['title']
+          desc = top_story.get('description') or ""
+          content = top_story.get('content') or ""
+          snippet = (desc + " " + content).strip()[:500]
           
-          Format:
-          TITLE: [Sheng Title]
-          SLUG: [slug]
-          EXCERPT: [Hook]
-          CATEGORY: Entertainment
-          TAGS: Gossip, Nairobi
-          IMAGE_KEYWORD: [One single broad English noun e.g. City, Crowd, Money, Car. Do NOT use names.]
+          print(f"📰 NewsAPI Headline: {title[:80]}...")
+
+          # --- 3. HELPERS ---
+          def get_real_image(query):
+              access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
+              fallback_image = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+              if not access_key: return fallback_image
+              url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}"
+              try:
+                  resp = requests.get(url, timeout=10)
+                  if resp.status_code == 200:
+                      return resp.json()['urls']['regular']
+              except Exception: pass
+              return fallback_image
+
+          def dash_scrubber(text):
+              return text.replace('\u2014', '-').replace('\u2013', '-')
+
+          # --- 4. GROUNDED GENERATION ---
+          client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
+          google_search_tool = types.Tool(google_search=types.GoogleSearch())
+
+          prompt = f'''Current Date: {full_date_str}
+          NEWS HEADLINE: "{title}"
+          SOURCE SNIPPET: "{snippet}"
+
+          TASK: 
+          1. Use Google Search to research the latest details on this story.
+          2. Write an article as a **Nairobi Gen Z Gossip Reporter** (Investigative but Street Smart).
+
+          LANGUAGE MANDATE (STRICT):
+          - WRITE IN PURE KENYAN SHENG ONLY.
+          - TONE: You are NOT just a fan. You are a **REPORTER**. Use phrases that imply you dug for info (e.g., "Tumenusa hii story," "Sources wanasema," "Inspecta wetu wameconfirm").
+          - DO NOT USE FORMAL ENGLISH OR STANDARD ENGLISH.
+          - DO NOT USE OLD SLANG.
+          - Autonomously find and use the latest trending street terms that fit this specific topic.
+          - BANNED PHRASES (DO NOT USE): {", ".join(BANNED_PHRASES)}.
+
+          STRICT OUTPUT FORMAT:
+          TITLE: [Investigative/Savage Sheng Title]
+          SLUG: [url-friendly-lowercase]
+          EXCERPT: [Reporter-style hook in Sheng]
+          CATEGORY: {topic.capitalize()}
+          TAGS: [comma, separated, tags]
+          IMAGE_KEYWORD: [search query]
           BODY:
-          [Markdown Text]
-          """
+          [Article text in pure Sheng. Structure it like a report: The Scoop -> The Evidence -> The Verdict.]
+          '''
 
-          success = False
-          final_output = ""
+          full_text = ""
+          success_flag = False
           
-          for k in keys:
-              client = genai.Client(api_key=k)
-              for m in models:
+          for model_id in MODELS_TO_TRY:
+              print(f"🤖 Attempting with {model_id}...")
+              for retry in range(2):
                   try:
-                      resp = client.models.generate_content(
-                          model=m,
-                          contents=prompt
+                      response = client.models.generate_content(
+                          model=model_id,
+                          contents=prompt,
+                          config=types.GenerateContentConfig(
+                              temperature=0.9,
+                              tools=[google_search_tool]
+                          )
                       )
-                      final_output = resp.text
-                      success = True
-                      break
+                      full_text = dash_scrubber(response.text.strip())
+                      success_flag = True
+                      print(f"✅ SUCCESS with {model_id}!")
+                      break 
                   except Exception as e:
-                      print(f"⚠️ Model {m} failed: {e}")
-                      time.sleep(1)
-              if success: break
+                      if "429" in str(e):
+                          print("⏳ Quota hit. Waiting 35s...")
+                          time.sleep(35)
+                          continue
+                      print(f"⚠️ Error with {model_id}: {e}")
+                      break
+              if success_flag: break
 
-          if not success: 
-              print("❌ All Gemini generations failed.")
-              sys.exit(1)
+          if not success_flag: sys.exit(1)
 
-          # --- SAVE ---
+          # --- 5. PARSE & SAVE ---
           parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
-          curr = None
-          
-          for line in final_output.splitlines():
-              line = clean_dashes(line)
+          current_section = None
+          for line in full_text.splitlines():
               clean = line.strip().replace("**", "")
               if clean.startswith("TITLE:"): parsed["TITLE"] = clean.replace("TITLE:", "").strip()
               elif clean.startswith("SLUG:"): parsed["SLUG"] = clean.replace("SLUG:", "").strip()
@@ -214,67 +204,37 @@ jobs:
               elif clean.startswith("TAGS:"): parsed["TAGS"] = clean.replace("TAGS:", "").strip()
               elif clean.startswith("IMAGE_KEYWORD:"): parsed["IMAGE_KEYWORD"] = clean.replace("IMAGE_KEYWORD:", "").strip()
               elif clean.startswith("BODY:"):
-                  curr = "BODY"
+                  current_section = "BODY"
                   continue
-              elif curr == "BODY":
+              elif current_section == "BODY":
                   parsed["BODY"] += line + "\n"
+
+          image_url = get_real_image(parsed['IMAGE_KEYWORD'])
           
-          parsed["BODY"] = clean_dashes(parsed["BODY"])
-
-          # --- ROBUST IMAGE FINDER ---
-          def get_image(query):
-              access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
-              fallback = "https://images.unsplash.com/photo-1499364615650-ec387c1470c5?w=1200"
-              
-              if not access_key: return fallback
-
-              search_terms = [query, "Nairobi", "Kenya"]
-              search_terms = [t for t in search_terms if t and len(t) > 2]
-
-              for term in search_terms:
-                  try:
-                      print(f"📷 Trying image search: {term}")
-                      u = f"https://api.unsplash.com/photos/random?query={term}&orientation=landscape&client_id={access_key}"
-                      r = requests.get(u, timeout=5)
-                      if r.status_code == 200:
-                          data = r.json()
-                          if isinstance(data, list) and data:
-                              return data[0]['urls']['regular']
-                          elif isinstance(data, dict) and 'urls' in data:
-                              return data['urls']['regular']
-                  except Exception as e:
-                      print(f"   Image Error ({term}): {e}")
-              
-              print("⚠️ All image searches failed. Using fallback.")
-              return fallback
-
-          image_url = get_image(parsed['IMAGE_KEYWORD'])
-          today = datetime.utcnow().strftime("%Y-%m-%d")
-
-          md = f"""---
+          final_file = f"""---
           title: "{parsed['TITLE'].replace('"', "'")}"
           slug: "{parsed['SLUG']}"
           excerpt: "{parsed['EXCERPT'].replace('"', "'")}"
           image: "{image_url}"
           category: "{parsed['CATEGORY']}"
-          date: "{today}"
+          date: "{today_str}"
           tags: [{parsed['TAGS']}]
           ---
 
           {parsed['BODY'].strip()}
           """
-
-          path = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"), f"{parsed['SLUG']}.md")
-          with open(path, "w", encoding="utf-8") as f:
-              f.write(md)
           
-          save_to_history(target_link)
-          print(f"✅ Published: {parsed['SLUG']}.md")
+          out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
+          os.makedirs(out_dir, exist_ok=True)
+          with open(os.path.join(out_dir, f"{parsed['SLUG']}.md"), "w", encoding="utf-8") as f:
+              f.write(final_file)
+          
+          print(f"✅ File saved: {parsed['SLUG']}.md")
           EOF
 
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: fresh scoop 🕵️"
-          branch: main
-          file_pattern: "content/posts/*.md posted_history.txt"
+          commit_message: "content: fresh gossip via Gemini 3 Flash ☕"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: ${{ env.POSTS_DIR }}/*.md
