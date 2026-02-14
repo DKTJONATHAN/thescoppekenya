@@ -1,4 +1,4 @@
-name: Standard Media Gossip (Sheng Reporter)
+name: East Africa Gossip Bot (Google News)
 
 on:
   schedule:
@@ -6,12 +6,17 @@ on:
     - cron: '15 4,8,12,16,20 * * *'
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
 env:
   DEFAULT_BRANCH: main
   POSTS_DIR: content/posts
+  MEMORY_FILE: .github/scrape_memory.json
 
 jobs:
   scrape-and-publish:
@@ -20,6 +25,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           ref: ${{ env.DEFAULT_BRANCH }}
           token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
           persist-credentials: true
@@ -32,28 +38,26 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests google-genai apify-client beautifulsoup4 lxml
+          pip install requests google-genai beautifulsoup4 lxml playwright
+          playwright install chromium
 
       - name: Run Reporter Bot
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
-          APIFY_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           POSTS_DIR: ${{ env.POSTS_DIR }}
+          MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           python << 'EOF'
-          import os, json, datetime, requests, re, random, time, sys
+          import os, json, datetime, requests, re, time, sys, hashlib, random, urllib.parse
           from google import genai
           from google.genai import types
-          from apify_client import ApifyClient
           from bs4 import BeautifulSoup
+          from playwright.sync_api import sync_playwright
 
           # --- 1. CONFIGURATION ---
-          RSS_URL = "https://www.standardmedia.co.ke/rss/entertainment.php"
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
-          
-          # SAFETY FILTER: Skip these boring pages if they appear in RSS
-          BORING_KEYWORDS = ["Policy", "Terms", "Conditions", "Contact Us", "About Us", "Sitemap", "Advertise", "Subscribe"]
+          full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
 
           # BANNED PHRASES (Strict Clean-up)
           BANNED_PHRASES = [
@@ -63,88 +67,136 @@ jobs:
               "dive in", "tapestry"
           ]
 
-          # --- 2. FETCH RSS FEED ---
-          print(f"📡 Scanning Standard Media RSS: {RSS_URL}")
+          # --- 2. FETCH GOOGLE NEWS RSS (EAST AFRICA GOSSIP) ---
+          # Targeted query for East African entertainment & celebrities
+          q = '("Kenya" OR "Uganda" OR "Tanzania" OR "East Africa") (celebrity OR gossip OR entertainment OR "diamond platnumz" OR "eric omondi" OR zari) when:24h'
+          safe_q = urllib.parse.quote(q)
+          rss_url = f'https://news.google.com/rss/search?q={safe_q}&hl=en-KE&gl=KE&ceid=KE:en'
+          
+          print(f"🌍 Fetching EA Gossip from Google News: {rss_url}")
+          
           try:
-              rss_resp = requests.get(RSS_URL, timeout=15)
-              soup = BeautifulSoup(rss_resp.content, "xml")
-              all_items = soup.find_all("item")
+              resp = requests.get(rss_url, timeout=15)
+              soup = BeautifulSoup(resp.content, "xml")
+              articles = [{"title": item.title.text, "url": item.link.text} for item in soup.find_all("item")]
           except Exception as e:
               print(f"❌ RSS Error: {e}")
               sys.exit(0)
 
-          if not all_items:
-              print("⚠️ No items found in RSS.")
+          if not articles:
+              print("⚠️ No fresh East African gossip found in RSS.")
               sys.exit(0)
 
-          # --- 3. FILTER & SELECT ---
-          valid_items = []
-          for item in all_items:
-              title = item.title.text.strip()
-              link = item.link.text.strip()
-              
-              # Check if title contains any boring keywords
-              if any(b in title for b in BORING_KEYWORDS):
-                  print(f"🚫 Skipping boring page: {title}")
-                  continue
-                  
-              valid_items.append(item)
+          memory_path = os.environ.get('MEMORY_FILE')
+          memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
 
-          if not valid_items:
-              print("❌ No valid news stories found (only boring pages).")
-              sys.exit(0)
+          # --- 3. FREE SCRAPER (STEALTH PLAYWRIGHT) ---
+          def scrape_article_free(url):
+              print(f"🕷️ Stealth-Loading: {url}")
+              with sync_playwright() as p:
+                  browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox"])
+                  context = browser.new_context(
+                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                  )
+                  page = context.new_page()
+                  page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
-          # Pick one random story from the valid list (Top 8 to ensure variety)
-          target_item = random.choice(valid_items[:8])
-          target_link = target_item.link.text.strip()
-          target_title = target_item.title.text.strip()
+                  try:
+                      page.goto(url, timeout=50000)
+                      try: page.wait_for_load_state("networkidle", timeout=10000)
+                      except: pass
+
+                      content = page.content()
+                      soup = BeautifulSoup(content, "html.parser")
+                      
+                      article_text = ""
+                      containers = soup.find_all(['article', 'main', 'div'], class_=re.compile(r'(body|content|entry|post)'))
+                      for c in containers:
+                          paras = c.find_all("p")
+                          chunk = "\n\n".join([p.text.strip() for p in paras if len(p.text) > 50])
+                          if len(chunk) > 600:
+                              article_text = chunk
+                              break
+                      if not article_text:
+                          all_paras = soup.find_all("p")
+                          article_text = "\n\n".join([p.text.strip() for p in all_paras if len(p.text.strip()) > 60])
+                      return article_text
+                  except: return None
+                  finally: browser.close()
+
+          # --- 4. PROCESS ARTICLES ---
+          full_content, final_hash, target_title = None, None, None
           
-          print(f"🎯 Selected Story: {target_title}")
-          print(f"🔗 Link: {target_link}")
+          for a in articles:
+              u_hash = hashlib.md5(a['url'].encode()).hexdigest()
+              if u_hash in memory: continue
+              
+              text = scrape_article_free(a['url'])
+              if text and len(text) > 600:
+                  full_content = text
+                  final_hash = u_hash
+                  target_title = re.sub(r' - [^-]+$', '', a['title']).strip()
+                  break 
 
-          # --- 4. EXTRACT FULL CONTENT VIA APIFY ---
-          print("🕷️ Extracting full content via Apify...")
-          full_content = ""
-          
-          try:
-              apify_client = ApifyClient(os.environ['APIFY_TOKEN'])
-              run = apify_client.actor("apify/website-content-crawler").call(
-                  run_input={
-                      "startUrls": [{"url": target_link}], 
-                      "maxCrawlPages": 1,
-                      "crawlerType": "playwright:firefox",
-                      "initialCookies": [] 
-                  }
-              )
-              
-              dataset = apify_client.dataset(run["defaultDatasetId"])
-              items = list(dataset.iterate_items())
-              
-              if items:
-                  full_content = items[0].get('markdown', items[0].get('text', ''))
-              
-          except Exception as e:
-              print(f"❌ Apify Extraction Failed: {e}")
-              full_content = target_item.description.text.strip()
-
-          if len(full_content) < 200:
-              print("⚠️ Content too short. Aborting.")
+          if not full_content: 
+              print("❌ No valid unread gossip found.")
               sys.exit(0)
 
-          # --- 5. GEMINI REWRITE (Reporter Persona) ---
+          print(f"🎯 Target Story: {target_title[:80]}...")
+
+          # --- 5. HELPERS (INTERNAL LINKS & SCRUBBER) ---
+          def get_internal_context(posts_dir):
+              if not os.path.exists(posts_dir): return ""
+              files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
+              if not files: return ""
+              sample = random.sample(files, min(len(files), 3))
+              context = "PAST STORIES (PICK ONE AND LINK IT NATURALLY IN THE SHENG TEXT USING MARKDOWN):\n"
+              for f in sample:
+                  try:
+                      with open(os.path.join(posts_dir, f), 'r', encoding='utf-8') as c:
+                          txt = c.read()
+                          t_match = re.search(r'title:\s*"(.*?)"', txt)
+                          t = t_match.group(1) if t_match else f
+                          context += f"- Title: {t} | Link: /posts/{f.replace('.md', '')}\n"
+                  except: continue
+              return context
+
+          def get_image(query):
+              key = os.environ.get("UNSPLASH_ACCESS_KEY")
+              fallback = "https://images.unsplash.com/photo-1499364615650-ec387c1470c5?w=1200"
+              if not key: return fallback
+              try:
+                  u = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={key}"
+                  r = requests.get(u, timeout=10)
+                  return r.json()['urls']['regular'] if r.status_code == 200 else fallback
+              except: return fallback
+
+          def dash_scrubber(text):
+              if not text: return ""
+              text = text.replace('\u2014', '-').replace('\u2013', '-')
+              text = text.replace('—', '-').replace('–', '-')
+              return text
+
+          # --- 6. GEMINI REWRITE (Reporter Persona) ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
+          
+          internal_links_data = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
 
-          prompt = f'''
+          prompt = f'''Current Date: {full_date_str}
           SOURCE TITLE: "{target_title}"
           SOURCE TEXT: 
           {full_content[:12000]}
+          
+          {internal_links_data}
 
-          TASK: Write an investigative gossip article as a **Nairobi Gen Z Reporter**.
+          TASK: Write an investigative East African gossip article as a **Nairobi Gen Z Reporter**.
+          1. Use Google Search to verify any trending claims in the story if needed.
+          2. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph.
 
           ROLE & TONE:
           - You are NOT a fan. You are a REPORTER ("The Nairobi Street Insider").
-          - Use investigative phrases: "Tumenusa hii story" (We sniffed this out), "Inspecta wetu wameconfirm" (Our inspectors confirmed), "Receipts ziko" (We have receipts).
+          - Use investigative phrases: "Tumenusa hii story", "Inspecta wetu wameconfirm", "Receipts ziko".
           - Vibe: Professional but Street Smart. Savage but factual.
 
           LANGUAGE MANDATE (STRICT):
@@ -152,13 +204,9 @@ jobs:
           - NO FORMAL ENGLISH. NO OLD SLANG.
           - Find trending terms autonomously.
           - BANNED: {", ".join(BANNED_PHRASES)}.
+          - NEVER use em dashes or en dashes. Only use regular hyphens.
 
-          STRUCTURE:
-          1. THE SCOOP (What happened?)
-          2. THE RECEIPTS (The details/evidence)
-          3. THE VERDICT (Your reporter opinion)
-
-          OUTPUT FORMAT:
+          STRICT OUTPUT FORMAT:
           TITLE: [Investigative Sheng Clickbait]
           SLUG: [url-friendly-lowercase]
           EXCERPT: [Reporter hook in Sheng]
@@ -166,11 +214,21 @@ jobs:
           TAGS: [comma, separated, tags]
           IMAGE_KEYWORD: [search query based on title]
           BODY:
-          [Full Article in Markdown]
+          [Article text in pure Sheng containing the internal link. You MUST structure the body using EXACTLY these three Markdown headings:]
+
+          ## Scoop Ni Gani?
+          [What happened?]
+
+          ## Evidence Ni?
+          [The receipts/details/evidence]
+
+          ## Verdict Yetu Ni
+          [Your reporter opinion/conclusion]
           '''
 
           print("🤖 Generating with Gemini...")
           final_text = ""
+          success_flag = False
           
           for model in ["gemini-3-flash-preview", "gemini-2.5-flash"]:
               try:
@@ -182,26 +240,30 @@ jobs:
                           tools=[google_search_tool]
                       )
                   )
-                  final_text = resp.text.strip().replace('\u2014', '-').replace('\u2013', '-')
+                  final_text = dash_scrubber(resp.text.strip())
+                  success_flag = True
                   print(f"✅ Success with {model}")
                   break
               except Exception as e:
+                  if "429" in str(e):
+                      print("⏳ Quota hit. Waiting 35s...")
+                      time.sleep(35)
+                      continue
                   print(f"⚠️ Error with {model}: {e}")
-                  time.sleep(2)
-                  continue
+                  break
 
-          if not final_text:
+          if not success_flag or not final_text:
               sys.exit(1)
 
-          # --- 6. PARSE & SAVE ---
+          # --- 7. PARSE & SAVE ---
           parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
           current_section = None
           
           for line in final_text.splitlines():
               clean = line.strip().replace("**", "")
-              if clean.startswith("TITLE:"): parsed["TITLE"] = clean.replace("TITLE:", "").strip()
+              if clean.startswith("TITLE:"): parsed["TITLE"] = dash_scrubber(clean.replace("TITLE:", "").strip())
               elif clean.startswith("SLUG:"): parsed["SLUG"] = clean.replace("SLUG:", "").strip()
-              elif clean.startswith("EXCERPT:"): parsed["EXCERPT"] = clean.replace("EXCERPT:", "").strip()
+              elif clean.startswith("EXCERPT:"): parsed["EXCERPT"] = dash_scrubber(clean.replace("EXCERPT:", "").strip())
               elif clean.startswith("CATEGORY:"): parsed["CATEGORY"] = clean.replace("CATEGORY:", "").strip()
               elif clean.startswith("TAGS:"): parsed["TAGS"] = clean.replace("TAGS:", "").strip()
               elif clean.startswith("IMAGE_KEYWORD:"): parsed["IMAGE_KEYWORD"] = clean.replace("IMAGE_KEYWORD:", "").strip()
@@ -210,16 +272,6 @@ jobs:
                   continue
               elif current_section == "BODY":
                   parsed["BODY"] += line + "\n"
-
-          def get_image(query):
-              key = os.environ.get("UNSPLASH_ACCESS_KEY")
-              fallback = "https://images.unsplash.com/photo-1499364615650-ec387c1470c5?w=1200"
-              if not key: return fallback
-              try:
-                  u = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={key}"
-                  r = requests.get(u, timeout=10)
-                  return r.json()['urls']['regular'] if r.status_code == 200 else fallback
-              except: return fallback
 
           image_url = get_image(parsed['IMAGE_KEYWORD'] or target_title)
 
@@ -242,13 +294,28 @@ jobs:
           
           with open(os.path.join(out_dir, filename), "w", encoding="utf-8") as f:
               f.write(md_content)
+              
+          # Update Memory
+          memory.append(final_hash)
+          os.makedirs(os.path.dirname(memory_path), exist_ok=True)
+          with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
           
           print(f"✅ Published: {filename}")
           EOF
 
+      - name: Git Safety Pull
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git stash -u
+          git fetch origin main
+          git pull origin main --rebase
+          git stash pop || echo "Nothing to pop"
+
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: standard media scoop 🕵️"
+          commit_message: "content: fresh east african gossip via Google News 🕵️"
           branch: ${{ env.DEFAULT_BRANCH }}
-          file_pattern: ${{ env.POSTS_DIR }}/*.md
+          file_pattern: 'content/posts/*.md .github/scrape_memory.json'
