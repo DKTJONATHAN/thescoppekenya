@@ -14,6 +14,9 @@ jobs:
         with:
           fetch-depth: 2
 
+      - name: Wait for 30 seconds
+        run: sleep 30
+
       - name: Detect changed posts & publish to Facebook
         env:
           FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
