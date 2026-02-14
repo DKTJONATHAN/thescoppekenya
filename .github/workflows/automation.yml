@@ -1,4 +1,4 @@
-name: International Gossip Bot (Gemini 3 Flash)
+name: International Gossip & Tech Bot (Gemini 3 Flash)
 
 on:
   schedule:
@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       manual_topic:
-        description: 'Force topic: celebrity, sports'
+        description: 'Force topic: celebrity, sports, technology'
         required: false
         default: ''
 
@@ -59,7 +59,7 @@ jobs:
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           python << 'EOF'
-          import os, json, datetime, requests, re, time, sys, hashlib, random
+          import os, json, datetime, requests, re, time, sys, hashlib, random, urllib.parse
           from google import genai
           from google.genai import types
           from bs4 import BeautifulSoup
@@ -79,21 +79,29 @@ jobs:
           ]
 
           manual_input = os.environ.get('MANUAL_TOPIC', '').strip().lower()
-          if manual_input in ['celebrity', 'sports']:
+          if manual_input in ['celebrity', 'sports', 'technology']:
               topic = manual_input
           else:
-              topic = 'celebrity' if current_hour % 2 == 0 else 'sports'
+              topics = ['celebrity', 'sports', 'technology']
+              topic = topics[current_hour % 3]
           
           print(f"🎯 Topic: {topic}")
 
-          # --- 2. FETCH GOOGLE NEWS RSS (INTERNATIONAL) ---
-          base_rss_urls = {
-              'celebrity': 'https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=en-US&gl=US&ceid=US:en',
-              'sports': 'https://news.google.com/rss/headlines/section/topic/SPORTS?hl=en-US&gl=US&ceid=US:en'
-          }
-          rss_url = base_rss_urls.get(topic)
+          # --- 2. FETCH GOOGLE NEWS RSS (TARGETED NICHES) ---
+          if topic == 'celebrity':
+              rss_url = 'https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=en-US&gl=US&ceid=US:en'
+          elif topic == 'sports':
+              # Targeted sports query: Europe/Kenya/Middle East Football, Athletics, F1, NBA
+              q = '(football Europe OR football Kenya OR "Saudi Pro League" OR athletics OR "Formula 1" OR F1 OR NBA) when:24h'
+              safe_q = urllib.parse.quote(q)
+              rss_url = f'https://news.google.com/rss/search?q={safe_q}&hl=en-US&gl=US&ceid=US:en'
+          elif topic == 'technology':
+              # Targeted tech query: Gadgets, AI models, Emerging tech
+              q = '(gadgets OR smartphones OR "AI models" OR "artificial intelligence" OR "emerging tech") when:24h'
+              safe_q = urllib.parse.quote(q)
+              rss_url = f'https://news.google.com/rss/search?q={safe_q}&hl=en-US&gl=US&ceid=US:en'
           
-          print(f"🌍 Fetching Global Google News: {rss_url}")
+          print(f"🌍 Fetching Google News: {rss_url}")
           
           try:
               resp = requests.get(rss_url, timeout=15)
@@ -213,14 +221,13 @@ jobs:
 
           TASK: 
           1. Use Google Search to research the latest details on this story if needed.
-          2. Write an article as a **Nairobi Gen Z Gossip Reporter** (Investigative but Street Smart).
-          3. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph. Make it look like a smooth callback (e.g., "Kama vile tuliona kwa ile stori ya [Title](/posts/slug)...").
+          2. Write an article as a **Nairobi Gen Z Gossip/Tech Reporter** (Investigative but Street Smart).
+          3. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph. Make it look like a smooth callback.
 
           LANGUAGE MANDATE (STRICT):
           - WRITE IN PURE KENYAN SHENG ONLY.
-          - TONE: You are NOT just a fan. You are a **REPORTER**. Use phrases that imply you dug for info (e.g., "Tumenusa hii story," "Sources wanasema," "Inspecta wetu wameconfirm").
+          - TONE: You are a **REPORTER**. Use phrases that imply you dug for info.
           - DO NOT USE FORMAL ENGLISH OR STANDARD ENGLISH.
-          - DO NOT USE OLD SLANG.
           - Autonomously find and use the latest trending street terms.
           - BANNED PHRASES (DO NOT USE): {", ".join(BANNED_PHRASES)}.
           - NEVER use em dashes or en dashes. Only use regular hyphens.
@@ -233,7 +240,16 @@ jobs:
           TAGS: [comma, separated, tags]
           IMAGE_KEYWORD: [search query]
           BODY:
-          [Article text in pure Sheng containing the internal link. Structure it like a report: The Scoop -> The Evidence -> The Verdict.]
+          [Article text in pure Sheng containing the internal link. You MUST structure the body using EXACTLY these three Markdown headings:]
+          
+          ## Scoop Ni Gani?
+          [Explain what happened here]
+
+          ## Evidence Ni?
+          [Break down the proof, the stats, or the details here]
+
+          ## Verdict Yetu Ni
+          [Give your final street-smart conclusion here]
           '''
 
           full_text = ""
@@ -324,6 +340,6 @@ jobs:
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: fresh global gossip via Google News 🌍"
+          commit_message: "content: fresh target niche scoop via Google News 🌍"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/scrape_memory.json'
