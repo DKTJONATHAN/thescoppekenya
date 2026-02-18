@@ -8,7 +8,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-const SITE_URL = 'https://thescoopkenya.co.ke';
+const SITE_URL = 'https://zandani.co.ke';
 
 const categories = [
   { name: "News", slug: "news", description: "Breaking news and current affairs from Kenya and beyond" },
@@ -84,12 +84,12 @@ async function generateLlmsTxt() {
   const recentPosts = posts.slice(0, 20);
   const allTags = [...new Set(posts.flatMap(post => post.tags))].slice(0, 30);
   
-  return `# The Scoop Kenya - AI/LLM Information
+  return `# Za Ndani - AI/LLM Information
 # Generated: ${today}
 # Total Articles: ${posts.length}
 
 ## About
-The Scoop Kenya is Kenya's leading source for breaking news, entertainment updates, celebrity gossip, and trending stories. We cover politics, sports, entertainment, lifestyle, and business news with a focus on East African content.
+Za Ndani is Kenya's boldest Sheng news and entertainment website. Bold, unbiased, insider content — habari kutoka ndani. We cover politics, sports, entertainment, lifestyle, and business news with a focus on East African content.
 
 ## Website
 ${SITE_URL}
@@ -110,11 +110,11 @@ ${allTags.map(tag => `#${tag}`).join(', ')}
 - Robots: ${SITE_URL}/robots.txt
 
 ## Contact
-For inquiries: contact@thescoopkenya.co.ke
+For inquiries: contact@zandani.co.ke
 
 ## Content Guidelines
 - All content is original journalism and entertainment reporting
-- Articles are written in English with occasional Swahili phrases
+- Articles are written in Sheng with occasional English phrases
 - Content is suitable for general audiences
 - News is focused on Kenya and East Africa with global coverage
 
@@ -122,7 +122,7 @@ For inquiries: contact@thescoopkenya.co.ke
 No public API is currently available.
 
 ## Data Usage
-Content from The Scoop Kenya may be referenced and summarized by AI systems for informational purposes. Full reproduction requires permission.
+Content from Za Ndani may be referenced and summarized by AI systems for informational purposes. Full reproduction requires permission.
 
 ## Update Frequency
 - Homepage: Updated multiple times daily

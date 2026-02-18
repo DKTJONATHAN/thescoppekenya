@@ -46,10 +46,10 @@ export function Header() {
             <Link to="/" className="flex items-center gap-3">
               <div className="flex flex-col">
                 <h1 className="text-2xl sm:text-3xl font-serif font-bold text-headline leading-none">
-                  The Scoop <span className="text-primary">KE</span>
+                  Za <span className="text-primary">Ndani</span>
                 </h1>
                 <span className="text-[10px] sm:text-xs font-medium text-primary tracking-wide">
-                  Kenya's First Sheng News Site
+                  Bold. Unbiased. Insider.
                 </span>
               </div>
             </Link>

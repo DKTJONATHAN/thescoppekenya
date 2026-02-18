@@ -9,7 +9,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-const SITE_URL = 'https://thescoopkenya.co.ke';
+const SITE_URL = 'https://zandani.co.ke';
 
 async function parseFrontmatter(content) {
   const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
@@ -63,7 +63,7 @@ async function getAllPosts() {
         excerpt: data.excerpt || '',
         image: data.image || `${SITE_URL}/logo.png`,
         category: data.category || 'News',
-        author: data.author || 'The Scoop Kenya',
+        author: data.author || 'Za Ndani',
         date: data.date || new Date().toISOString().split('T')[0],
         tags: Array.isArray(data.tags) ? data.tags : [],
       });
@@ -86,7 +86,7 @@ async function getDistIndexHtml() {
 }
 
 function generateArticleHtml(baseHtml, post) {
-  const title = escapeHtml(`${post.title} | The Scoop KE`);
+  const title = escapeHtml(`${post.title} | Za Ndani`);
   const description = escapeHtml(post.excerpt || post.title);
   const image = post.image;
   const url = `${SITE_URL}/article/${post.slug}`;
@@ -102,7 +102,7 @@ function generateArticleHtml(baseHtml, post) {
     "author": { "@type": "Person", "name": post.author },
     "publisher": {
       "@type": "Organization",
-      "name": "The Scoop Kenya",
+      "name": "Za Ndani",
       "logo": { "@type": "ImageObject", "url": `${SITE_URL}/logo.png` }
     },
     "mainEntityOfPage": { "@type": "WebPage", "@id": url }

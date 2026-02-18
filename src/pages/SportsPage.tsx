@@ -63,9 +63,9 @@ export default function SportsPage() {
   const sportsSchema = {
     "@context": "https://schema.org",
     "@type": "SportsEvent",
-    "name": "Sports Hub - Live Scores & Football News | The Scoop KE",
-    "description": "Live football scores, standings, fixtures and AI-powered match analysis. Kenya's first Sheng sports coverage.",
-    "url": "https://thescoopkenya.vercel.app/sports",
+    "name": "Sports Hub - Live Scores & Football News | Za Ndani",
+    "description": "Live football scores, standings, fixtures and AI-powered match analysis. Kenya's boldest Sheng sports coverage.",
+    "url": "https://zandani.co.ke/sports",
   };
 
   return (
@@ -75,7 +75,7 @@ export default function SportsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(sportsSchema) }}
       />
 
-      {/* Hero Section - matches main site aesthetic */}
+      {/* Hero Section */}
       <div className="bg-surface border-b border-divider py-2 overflow-hidden">
         <div className="container max-w-7xl mx-auto px-4 flex items-center gap-4">
           <Badge variant="default" className="gradient-primary text-primary-foreground border-0 rounded-sm font-bold whitespace-nowrap">
@@ -109,7 +109,6 @@ export default function SportsPage() {
             </div>
           </div>
 
-          {/* League Selector */}
           <LeagueSelector 
             selected={selectedLeague} 
             onSelect={handleLeagueSelect} 
@@ -117,13 +116,10 @@ export default function SportsPage() {
         </div>
       </section>
 
-      {/* Main Content - matches main site grid */}
       <section className="py-8 bg-surface/50 border-y border-divider">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-12">
-            {/* Main Column */}
             <div className="lg:col-span-2 space-y-8">
-              {/* AI Headlines Banner */}
               <AIHeadlinesBanner />
 
               {isKenyaSelected ? (
@@ -163,7 +159,6 @@ export default function SportsPage() {
               )}
             </div>
 
-            {/* Sidebar - matches main site sidebar style */}
             <div className="lg:col-span-1 space-y-8">
               <div className="sticky top-24 space-y-8">
                 <div className="bg-surface rounded-2xl border border-divider shadow-sm overflow-hidden">
@@ -176,13 +171,12 @@ export default function SportsPage() {
                   </div>
                 </div>
 
-                {/* Sports CTA */}
                 <div className="gradient-primary rounded-2xl p-8 text-primary-foreground shadow-xl relative overflow-hidden group">
                   <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-110 transition-transform">
                     <Flame className="w-32 h-32" />
                   </div>
                   <div className="relative z-10">
-                    <Badge variant="secondary" className="mb-4 bg-white/20 text-white border-0">Sports Kwa Sheng</Badge>
+                    <Badge variant="secondary" className="mb-4 bg-white/20 text-white border-0">Sports Za Ndani</Badge>
                     <h3 className="text-2xl font-serif font-bold mb-4 leading-tight">
                       AI Match Analysis Kwa Kila Game
                     </h3>
@@ -207,11 +201,7 @@ export default function SportsPage() {
                   <div className="flex items-center justify-center gap-4 text-lg">
                     <div className="flex items-center gap-2">
                       {selectedMatch.homeTeam.crest && (
-                        <img 
-                          src={selectedMatch.homeTeam.crest} 
-                          alt="" 
-                          className="w-8 h-8 object-contain" 
-                        />
+                        <img src={selectedMatch.homeTeam.crest} alt="" className="w-8 h-8 object-contain" />
                       )}
                       <span>{selectedMatch.homeTeam.shortName || selectedMatch.homeTeam.name}</span>
                     </div>
@@ -221,11 +211,7 @@ export default function SportsPage() {
                     <div className="flex items-center gap-2">
                       <span>{selectedMatch.awayTeam.shortName || selectedMatch.awayTeam.name}</span>
                       {selectedMatch.awayTeam.crest && (
-                        <img 
-                          src={selectedMatch.awayTeam.crest} 
-                          alt="" 
-                          className="w-8 h-8 object-contain" 
-                        />
+                        <img src={selectedMatch.awayTeam.crest} alt="" className="w-8 h-8 object-contain" />
                       )}
                     </div>
                   </div>

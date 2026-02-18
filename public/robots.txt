@@ -13,7 +13,7 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://thescoopkenya.co.ke/sitemap.xml
+Sitemap: https://zandani.co.ke/sitemap.xml
 
 # AI crawler guidance
 User-agent: GPTBot

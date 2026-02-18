@@ -16,14 +16,14 @@ export default function TermsPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-serif font-bold text-headline mb-4">1. Acceptance of Terms</h2>
             <p className="text-muted-foreground">
-              By accessing and using The Scoop KE website, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+              By accessing and using the Za Ndani website, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
             </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-serif font-bold text-headline mb-4">2. Use of Content</h2>
             <p className="text-muted-foreground mb-4">
-              All content published on The Scoop KE, including but not limited to articles, images, graphics, and videos, is the property of The Scoop KE or its content suppliers and is protected by copyright laws.
+              All content published on Za Ndani, including but not limited to articles, images, graphics, and videos, is the property of Za Ndani or its content suppliers and is protected by copyright laws.
             </p>
             <p className="text-muted-foreground">
               You may not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on our website without prior written consent.
@@ -54,14 +54,14 @@ export default function TermsPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-serif font-bold text-headline mb-4">5. Disclaimer of Warranties</h2>
             <p className="text-muted-foreground">
-              The Scoop KE provides content on an "as is" and "as available" basis. We make no representations or warranties of any kind, express or implied, as to the operation of the website or the information, content, materials, or products included on this website.
+              Za Ndani provides content on an "as is" and "as available" basis. We make no representations or warranties of any kind, express or implied, as to the operation of the website or the information, content, materials, or products included on this website.
             </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-serif font-bold text-headline mb-4">6. Limitation of Liability</h2>
             <p className="text-muted-foreground">
-              The Scoop KE will not be liable for any damages of any kind arising from the use of this website, including, but not limited to direct, indirect, incidental, punitive, and consequential damages.
+              Za Ndani will not be liable for any damages of any kind arising from the use of this website, including, but not limited to direct, indirect, incidental, punitive, and consequential damages.
             </p>
           </section>
 
@@ -83,8 +83,8 @@ export default function TermsPage() {
             <h2 className="text-2xl font-serif font-bold text-headline mb-4">9. Contact</h2>
             <p className="text-muted-foreground">
               If you have any questions about these Terms, please contact us at{" "}
-              <a href="mailto:contact@thescoopkenya.co.ke" className="text-primary hover:underline">
-                contact@thescoopkenya.co.ke
+              <a href="mailto:contact@zandani.co.ke" className="text-primary hover:underline">
+                contact@zandani.co.ke
               </a>
             </p>
           </section>

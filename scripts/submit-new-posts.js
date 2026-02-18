@@ -14,7 +14,7 @@ import path from 'path';
 import fs from 'fs/promises';
 
 const INDEXJUMP_API_KEY = process.env.INDEXJUMP_API_KEY;
-const SITE_URL = 'https://thescoopkenya.vercel.app';
+const SITE_URL = 'https://zandani.co.ke';
 
 if (!INDEXJUMP_API_KEY) {
   console.log('⚠️  INDEXJUMP_API_KEY environment variable not set, skipping indexing');

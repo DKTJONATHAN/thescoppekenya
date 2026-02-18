@@ -7,7 +7,7 @@ const openPositions = [
     title: "Content Writer",
     location: "Remote / Nairobi",
     type: "Full-time",
-    description: "We're looking for talented writers who can create engaging content across entertainment, news, and lifestyle topics."
+    description: "We're looking for talented writers who can create engaging insider content across entertainment, news, and lifestyle topics."
   },
   {
     title: "Social Media Manager",
@@ -19,7 +19,7 @@ const openPositions = [
     title: "Freelance Contributor",
     location: "Remote",
     type: "Freelance",
-    description: "Have a story to tell? Pitch us your ideas and join our network of freelance contributors."
+    description: "Have insider info or a story to tell? Pitch us your ideas and join our network of freelance contributors."
   }
 ];
 
@@ -32,7 +32,7 @@ export default function CareersPage() {
             Join <span className="text-primary">Our Team</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Be part of Kenya's fastest-growing digital news platform. We're always looking for passionate individuals.
+            Be part of Kenya's boldest digital news platform. We're always looking for passionate individuals.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ export default function CareersPage() {
               </div>
               <div>
                 <h3 className="font-bold text-headline mb-1">Creative Freedom</h3>
-                <p className="text-muted-foreground text-sm">Your ideas matter. We encourage innovation and creativity.</p>
+                <p className="text-muted-foreground text-sm">Your ideas matter. We encourage bold, fearless storytelling.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
@@ -101,7 +101,7 @@ export default function CareersPage() {
                     <p className="text-muted-foreground">{position.description}</p>
                   </div>
                   <Button asChild className="gradient-primary text-primary-foreground whitespace-nowrap">
-                    <a href={`mailto:contact@thescoopkenya.co.ke?subject=Application: ${position.title}`}>
+                    <a href={`mailto:contact@zandani.co.ke?subject=Application: ${position.title}`}>
                       Apply Now
                     </a>
                   </Button>
@@ -119,7 +119,7 @@ export default function CareersPage() {
             We're always open to hearing from talented individuals. Send us your CV and tell us how you can contribute.
           </p>
           <Button asChild variant="outline">
-            <a href="mailto:contact@thescoopkenya.co.ke?subject=General Application">
+            <a href="mailto:contact@zandani.co.ke?subject=General Application">
               <Mail className="w-5 h-5 mr-2" />
               Send General Application
             </a>
