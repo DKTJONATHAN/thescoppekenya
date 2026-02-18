@@ -14,7 +14,7 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:contact@thescoopkenya.co.ke?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`;
+    const mailtoLink = `mailto:contact@zandani.co.ke?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`;
     window.location.href = mailtoLink;
   };
 
@@ -26,7 +26,7 @@ export default function ContactPage() {
             Get in <span className="text-primary">Touch</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Have a story tip, question, or want to collaborate? We'd love to hear from you.
+            Have a story tip, insider info, or want to collaborate? We'd love to hear from you.
           </p>
         </div>
 
@@ -54,8 +54,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-serif font-bold text-headline mb-1">Email</h3>
-                  <a href="mailto:contact@thescoopkenya.co.ke" className="text-muted-foreground hover:text-primary transition-colors block">
-                    contact@thescoopkenya.co.ke
+                  <a href="mailto:contact@zandani.co.ke" className="text-muted-foreground hover:text-primary transition-colors block">
+                    contact@zandani.co.ke
                   </a>
                   <a href="mailto:info@jonathanmwaniki.co.ke" className="text-muted-foreground hover:text-primary transition-colors block">
                     info@jonathanmwaniki.co.ke
@@ -82,16 +82,16 @@ export default function ContactPage() {
             <div className="bg-surface rounded-2xl p-6 border border-divider">
               <h3 className="font-serif font-bold text-headline mb-4">Follow Us</h3>
               <div className="flex gap-3">
-                <a href="https://facebook.com/thescoopkenya" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
+                <a href="https://facebook.com/zandanike" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
                   <Facebook className="w-5 h-5" />
                 </a>
-                <a href="https://x.com/thescoopkenya" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
+                <a href="https://x.com/zandani_ke" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
                   <XIcon className="w-5 h-5" />
                 </a>
-                <a href="https://instagram.com/thescoopkenya" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
+                <a href="https://instagram.com/zandani_ke" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a href="https://youtube.com/@thescoopkenya" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
+                <a href="https://youtube.com/@zandanike" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
                   <Youtube className="w-5 h-5" />
                 </a>
               </div>

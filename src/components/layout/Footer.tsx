@@ -19,10 +19,10 @@ export function Footer() {
         <div className="container py-12">
           <div className="max-w-2xl mx-auto text-center">
             <h3 className="text-2xl md:text-3xl font-serif font-bold mb-3 text-foreground">
-              Never Miss a Story
+              Usikose Story Yoyote
             </h3>
             <p className="text-muted-foreground mb-6">
-              Get the hottest news, gossip, and entertainment updates delivered straight to your inbox.
+              Pata insider news, gossip, na entertainment updates moja kwa moja kwa inbox yako.
             </p>
             <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input
@@ -46,24 +46,24 @@ export function Footer() {
           <div className="lg:col-span-1">
             <button onClick={() => handleLinkClick("/")} className="flex flex-col items-start mb-4">
               <h2 className="text-2xl font-serif font-bold text-foreground">
-                The Scoop <span className="text-primary">KE</span>
+                Za <span className="text-primary">Ndani</span>
               </h2>
-              <span className="text-xs font-medium text-primary">Kenya's First Sheng News Site</span>
+              <span className="text-xs font-medium text-primary">Bold. Unbiased. Insider.</span>
             </button>
             <p className="text-muted-foreground text-sm mb-4">
-              Kenya's first Sheng news and entertainment website. Breaking news, gossip, na trending stories kwa lugha ya mtaa.
+              Kenya's boldest Sheng news and entertainment website. Habari kutoka ndani — breaking news, gossip, na trending stories bila bias, kwa lugha ya mtaa.
             </p>
             <div className="flex items-center gap-3">
-              <a href="https://facebook.com/thescoopkenya" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth text-foreground" aria-label="Facebook">
+              <a href="https://facebook.com/zandanike" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth text-foreground" aria-label="Facebook">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="https://x.com/thescoopkenya" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth text-foreground" aria-label="X">
+              <a href="https://x.com/zandani_ke" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth text-foreground" aria-label="X">
                 <XIcon className="w-4 h-4" />
               </a>
-              <a href="https://instagram.com/thescoopkenya" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth text-foreground" aria-label="Instagram">
+              <a href="https://instagram.com/zandani_ke" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth text-foreground" aria-label="Instagram">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="https://youtube.com/@thescoopkenya" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth text-foreground" aria-label="Youtube">
+              <a href="https://youtube.com/@zandanike" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth text-foreground" aria-label="Youtube">
                 <Youtube className="w-4 h-4" />
               </a>
             </div>
@@ -135,8 +135,8 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 text-primary" />
-                <a href="mailto:contact@thescoopkenya.co.ke" className="text-muted-foreground hover:text-primary transition-colors">
-                  contact@thescoopkenya.co.ke
+                <a href="mailto:contact@zandani.co.ke" className="text-muted-foreground hover:text-primary transition-colors">
+                  contact@zandani.co.ke
                 </a>
               </li>
               <li className="flex items-start gap-2">
@@ -164,7 +164,7 @@ export function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-border">
         <div className="container py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} The Scoop Kenya. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Za Ndani. All rights reserved.</p>
           <p>
             <a href="https://jonathanmwaniki.co.ke/about" target="_blank" className="text-primary hover:underline">A Jonathan Mwaniki Project</a>
           </p>

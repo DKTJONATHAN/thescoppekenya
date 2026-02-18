@@ -8,7 +8,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-const SITE_URL = 'https://thescoopkenya.vercel.app';
+const SITE_URL = 'https://zandani.co.ke';
 
 const categories = [
   { name: "News", slug: "news" },

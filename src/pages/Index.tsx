@@ -56,22 +56,22 @@ const Index = () => {
   return (
     <Layout>
       <Helmet>
-        <title>The Scoop KE | Kenya's First Sheng News & Entertainment Website</title>
-        <meta name="description" content="Kenya's first Sheng news and entertainment website. Breaking news, celebrity gossip, trending stories na entertainment updates kwa Sheng." />
-        <link rel="canonical" href="https://thescoopkenya.co.ke" />
+        <title>Za Ndani | Bold. Unbiased. Insider. Kenya's Sheng News & Entertainment</title>
+        <meta name="description" content="Za Ndani — habari kutoka ndani, bila bias. Kenya's boldest Sheng news and entertainment website. Breaking news, celebrity gossip, trending stories na insider content kwa Sheng." />
+        <link rel="canonical" href="https://zandani.co.ke" />
       </Helmet>
       {/* Enhanced SEO Schema */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "NewsMediaOrganization",
-          "name": "The Scoop Kenya",
-          "description": "Kenya's first Sheng news and entertainment website. Breaking news, gossip, and trending stories in Sheng.",
-          "url": "https://thescoopkenya.vercel.app",
-          "logo": "https://thescoopkenya.vercel.app/logo.png",
+          "name": "Za Ndani",
+          "description": "Za Ndani — habari kutoka ndani, bila bias. Kenya's boldest Sheng news and entertainment website.",
+          "url": "https://zandani.co.ke",
+          "logo": "https://zandani.co.ke/logo.png",
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://thescoopkenya.vercel.app/search?q={search_term_string}",
+            "target": "https://zandani.co.ke/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
           }
         })
@@ -81,7 +81,7 @@ const Index = () => {
       <div className="bg-surface border-b border-divider py-2 overflow-hidden">
         <div className="container max-w-7xl mx-auto px-4 flex items-center gap-4">
           <Badge variant="default" className="gradient-primary text-primary-foreground border-0 rounded-sm font-bold whitespace-nowrap">
-            TOP STORIES
+            ZA NDANI
           </Badge>
           <div className="flex-1 overflow-hidden whitespace-nowrap">
             <div className="inline-block animate-marquee hover:pause cursor-pointer text-sm font-medium text-foreground dark:text-white">
@@ -146,7 +146,7 @@ const Index = () => {
               <div className="flex items-center justify-between">
                 <h2 className="text-3xl font-serif font-bold text-foreground dark:text-white flex items-center gap-3">
                   <span className="w-1.5 h-9 gradient-primary rounded-full shadow-sm" />
-                  Latest Scoops
+                  Latest Za Ndani
                 </h2>
                 <p className="text-sm text-muted-foreground">
                   {displayedPosts.length} of {allPosts.length} stories

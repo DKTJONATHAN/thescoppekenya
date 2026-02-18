@@ -63,24 +63,24 @@ export default function ArticlePage() {
     "image": post.image,
     "datePublished": post.date,
     "author": { "@type": "Person", "name": post.author },
-    "publisher": { "@type": "Organization", "name": "The Scoop Kenya" }
+    "publisher": { "@type": "Organization", "name": "Za Ndani" }
   };
 
   return (
     <Layout>
       <Helmet>
-        <title>{post.title} | The Scoop KE</title>
+        <title>{post.title} | Za Ndani</title>
         <meta name="description" content={post.excerpt} />
-        <link rel="canonical" href={`https://thescoopkenya.co.ke/article/${post.slug}`} />
+        <link rel="canonical" href={`https://zandani.co.ke/article/${post.slug}`} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://thescoopkenya.co.ke/article/${post.slug}`} />
-        <meta property="og:title" content={`${post.title} | The Scoop KE`} />
+        <meta property="og:url" content={`https://zandani.co.ke/article/${post.slug}`} />
+        <meta property="og:title" content={`${post.title} | Za Ndani`} />
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:image" content={post.image} />
         <meta property="article:published_time" content={post.date} />
         <meta property="article:section" content={post.category} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${post.title} | The Scoop KE`} />
+        <meta name="twitter:title" content={`${post.title} | Za Ndani`} />
         <meta name="twitter:description" content={post.excerpt} />
         <meta name="twitter:image" content={post.image} />
       </Helmet>
@@ -217,7 +217,7 @@ export default function ArticlePage() {
           {/* Newsletter */}
           <div className="mt-12 p-6 md:p-8 bg-muted rounded-xl">
             <h3 className="font-serif font-bold text-xl text-foreground mb-2">Stay Updated</h3>
-            <p className="text-muted-foreground mb-4">Get the latest news delivered to your inbox.</p>
+            <p className="text-muted-foreground mb-4">Get the latest insider news delivered to your inbox.</p>
             <NewsletterForm />
           </div>
 

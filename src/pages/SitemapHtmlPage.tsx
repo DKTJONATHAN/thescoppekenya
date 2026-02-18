@@ -3,7 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { FileText, Tag, Folder } from "lucide-react";
 
-const SITE_URL = "https://thescoopkenya.vercel.app";
+const SITE_URL = "https://zandani.co.ke";
 
 const SitemapHtmlPage = () => {
   const posts = getAllPosts();
@@ -16,7 +16,7 @@ const SitemapHtmlPage = () => {
           Sitemap
         </h1>
         <p className="text-muted-foreground mb-8">
-          All pages on The Scoop Kenya —{" "}
+          All pages on Za Ndani —{" "}
           <a
             href={`${SITE_URL}/sitemap.xml`}
             className="text-primary underline"
@@ -51,7 +51,6 @@ const SitemapHtmlPage = () => {
           </ul>
         </section>
 
-        {/* Categories */}
         <section className="mb-8">
           <h2 className="text-xl font-semibold text-foreground mb-3 flex items-center gap-2">
             <Folder className="w-5 h-5 text-primary" /> Categories
@@ -59,10 +58,7 @@ const SitemapHtmlPage = () => {
           <ul className="space-y-1 pl-7 list-disc text-muted-foreground">
             {categories.map((cat) => (
               <li key={cat.slug}>
-                <Link
-                  to={`/category/${cat.slug}`}
-                  className="text-primary hover:underline"
-                >
+                <Link to={`/category/${cat.slug}`} className="text-primary hover:underline">
                   {cat.name}
                 </Link>
               </li>
@@ -70,7 +66,6 @@ const SitemapHtmlPage = () => {
           </ul>
         </section>
 
-        {/* Articles */}
         <section className="mb-8">
           <h2 className="text-xl font-semibold text-foreground mb-3 flex items-center gap-2">
             <FileText className="w-5 h-5 text-primary" /> Articles ({posts.length})
@@ -78,21 +73,15 @@ const SitemapHtmlPage = () => {
           <ul className="space-y-1 pl-7 list-disc text-muted-foreground">
             {posts.map((post) => (
               <li key={post.slug}>
-                <Link
-                  to={`/article/${post.slug}`}
-                  className="text-primary hover:underline"
-                >
+                <Link to={`/article/${post.slug}`} className="text-primary hover:underline">
                   {post.title}
                 </Link>
-                <span className="text-xs ml-2 text-muted-foreground">
-                  {post.date}
-                </span>
+                <span className="text-xs ml-2 text-muted-foreground">{post.date}</span>
               </li>
             ))}
           </ul>
         </section>
 
-        {/* Tags */}
         {allTags.length > 0 && (
           <section className="mb-8">
             <h2 className="text-xl font-semibold text-foreground mb-3 flex items-center gap-2">

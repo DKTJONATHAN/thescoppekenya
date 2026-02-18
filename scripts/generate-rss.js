@@ -8,9 +8,9 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-const SITE_URL = 'https://thescoopkenya.co.ke';
-const SITE_TITLE = 'The Scoop Kenya';
-const SITE_DESCRIPTION = "Kenya's leading source for breaking news, entertainment updates, celebrity gossip, and trending stories.";
+const SITE_URL = 'https://zandani.co.ke';
+const SITE_TITLE = 'Za Ndani';
+const SITE_DESCRIPTION = "Za Ndani — habari kutoka ndani, bila bias. Kenya's boldest Sheng news and entertainment website.";
 
 async function parseFrontmatter(content) {
   const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
@@ -76,7 +76,7 @@ async function getAllPosts() {
         slug: data.slug || file.replace('.md', ''),
         excerpt: data.excerpt || '',
         category: data.category || 'News',
-        author: data.author || 'The Scoop Kenya',
+        author: data.author || 'Za Ndani',
         date: data.date || new Date().toISOString().split('T')[0],
         image: data.image || '',
         tags: Array.isArray(data.tags) ? data.tags : [],
@@ -101,7 +101,7 @@ async function generateRssFeed() {
       <link>${SITE_URL}/article/${post.slug}</link>
       <guid isPermaLink="true">${SITE_URL}/article/${post.slug}</guid>
       <description>${escapeXml(post.excerpt || post.content.replace(/[#*`_\[\]]/g, '').trim())}</description>
-      <author>contact@thescoopkenya.co.ke (${escapeXml(post.author)})</author>
+      <author>contact@zandani.co.ke (${escapeXml(post.author)})</author>
       <category>${escapeXml(post.category)}</category>
       <pubDate>${formatRssDate(post.date)}</pubDate>
       ${post.image ? `<enclosure url="${escapeXml(post.image)}" type="image/jpeg" />` : ''}
@@ -121,9 +121,9 @@ async function generateRssFeed() {
       <title>${escapeXml(SITE_TITLE)}</title>
       <link>${SITE_URL}</link>
     </image>
-    <copyright>© ${new Date().getFullYear()} The Scoop Kenya. All rights reserved.</copyright>
-    <managingEditor>contact@thescoopkenya.co.ke (The Scoop Kenya)</managingEditor>
-    <webMaster>contact@thescoopkenya.co.ke (The Scoop Kenya)</webMaster>
+    <copyright>© ${new Date().getFullYear()} Za Ndani. All rights reserved.</copyright>
+    <managingEditor>contact@zandani.co.ke (Za Ndani)</managingEditor>
+    <webMaster>contact@zandani.co.ke (Za Ndani)</webMaster>
     <ttl>60</ttl>
 ${items}
   </channel>

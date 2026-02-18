@@ -8,7 +8,7 @@ export default function AdvertisePage() {
       <div className="container max-w-6xl mx-auto px-4 py-12 md:py-20">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-headline mb-4">
-            Advertise with <span className="text-primary">The Scoop KE</span>
+            Advertise with <span className="text-primary">Za Ndani</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Reach thousands of engaged Kenyan readers daily. Partner with us to grow your brand.
@@ -126,7 +126,7 @@ export default function AdvertisePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild className="gradient-primary text-primary-foreground">
-              <a href="mailto:contact@thescoopkenya.co.ke">
+              <a href="mailto:contact@zandani.co.ke">
                 <Mail className="w-5 h-5 mr-2" />
                 Email Us
               </a>

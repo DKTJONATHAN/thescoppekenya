@@ -24,28 +24,25 @@ export default function CategoryPage() {
     );
   }
 
-  // Category page schema
   const categorySchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": `${category.name} - The Scoop Kenya`,
+    "name": `${category.name} - Za Ndani`,
     "description": category.description,
-    "url": `https://thescoopkenya.vercel.app/category/${category.slug}`
+    "url": `https://zandani.co.ke/category/${category.slug}`
   };
 
   return (
     <Layout>
       <Helmet>
-        <title>{category.name} - The Scoop KE</title>
+        <title>{category.name} - Za Ndani</title>
         <meta name="description" content={category.description} />
-        <link rel="canonical" href={`https://thescoopkenya.co.ke/category/${category.slug}`} />
+        <link rel="canonical" href={`https://zandani.co.ke/category/${category.slug}`} />
       </Helmet>
-      {/* SEO Schema */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(categorySchema) }} />
 
       <CategoryBar />
 
-      {/* Category Header */}
       <section className="py-12 gradient-hero">
         <div className="container">
           <div className="max-w-2xl">
@@ -59,11 +56,9 @@ export default function CategoryPage() {
         </div>
       </section>
 
-      {/* Posts Grid */}
       <section className="py-8 md:py-12">
         <div className="container">
           <div className="grid lg:grid-cols-3 gap-8">
-            {/* Posts */}
             <div className="lg:col-span-2">
               {posts.length > 0 ? (
                 <>
@@ -72,7 +67,6 @@ export default function CategoryPage() {
                       <ArticleCard key={post.slug} post={post} />
                     ))}
                   </div>
-
                   <div className="mt-8 text-center">
                     <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                       Load More
@@ -86,8 +80,6 @@ export default function CategoryPage() {
                 </div>
               )}
             </div>
-
-            {/* Sidebar */}
             <div className="lg:col-span-1">
               <TrendingSidebar />
             </div>
