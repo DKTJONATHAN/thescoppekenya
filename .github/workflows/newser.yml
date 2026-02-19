@@ -49,7 +49,7 @@ jobs:
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           python << 'EOF'
-          import os, json, datetime, requests, re, time, sys, hashlib, random, urllib.parse
+          import os, json, datetime, requests, re, time, sys, hashlib, random, urllib.parse, textwrap
           from google import genai
           from google.genai import types
           from bs4 import BeautifulSoup
@@ -109,6 +109,18 @@ jobs:
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
                       
+                      # EXTRACT IMAGE VIA META TAGS
+                      img_url = ""
+                      og_image = soup.find("meta", property="og:image")
+                      if og_image and og_image.get("content"):
+                          img_url = og_image["content"]
+                      
+                      if not img_url:
+                          twitter_image = soup.find("meta", attrs={"name": "twitter:image"})
+                          if twitter_image and twitter_image.get("content"):
+                              img_url = twitter_image["content"]
+                      
+                      # EXTRACT ARTICLE TEXT
                       article_text = ""
                       containers = soup.find_all(['article', 'main', 'div'], class_=re.compile(r'(body|content|entry|post)'))
                       for c in containers:
@@ -117,23 +129,29 @@ jobs:
                           if len(chunk) > 600:
                               article_text = chunk
                               break
+                      
                       if not article_text:
                           all_paras = soup.find_all("p")
                           article_text = "\n\n".join([p.text.strip() for p in all_paras if len(p.text.strip()) > 60])
-                      return article_text
-                  except: return None
+                          
+                      return article_text, img_url
+                  except: return None, None
                   finally: browser.close()
 
           # --- 4. PROCESS ARTICLES ---
-          full_content, final_hash, target_title = None, None, None
+          full_content, final_hash, target_title, target_image = None, None, None, None
           
           for a in articles:
               u_hash = hashlib.md5(a['url'].encode()).hexdigest()
               if u_hash in memory: continue
               
-              text = scrape_article_free(a['url'])
+              result = scrape_article_free(a['url'])
+              if not result: continue
+              text, img = result
+              
               if text and len(text) > 600:
                   full_content = text
+                  target_image = img
                   final_hash = u_hash
                   target_title = re.sub(r' - [^-]+$', '', a['title']).strip()
                   break 
@@ -261,6 +279,8 @@ jobs:
           
           for line in final_text.splitlines():
               clean = line.strip().replace("**", "")
+              if clean.startswith("```"): continue # Prevent stray markdown fences from polluting body
+              
               if clean.startswith("TITLE:"): parsed["TITLE"] = dash_scrubber(clean.replace("TITLE:", "").strip())
               elif clean.startswith("SLUG:"): parsed["SLUG"] = clean.replace("SLUG:", "").strip()
               elif clean.startswith("EXCERPT:"): parsed["EXCERPT"] = dash_scrubber(clean.replace("EXCERPT:", "").strip())
@@ -269,24 +289,30 @@ jobs:
               elif clean.startswith("IMAGE_KEYWORD:"): parsed["IMAGE_KEYWORD"] = clean.replace("IMAGE_KEYWORD:", "").strip()
               elif clean.startswith("BODY:"):
                   current_section = "BODY"
+                  # Check if Gemini sneaks the start of the body on the same line
+                  inline_body = line.split("BODY:", 1)[-1].strip()
+                  if inline_body: parsed["BODY"] += inline_body + "\n"
                   continue
               elif current_section == "BODY":
                   parsed["BODY"] += line + "\n"
 
-          image_url = get_image(parsed['IMAGE_KEYWORD'] or target_title)
+          # Use scraped image, fallback to unsplash if scraped image is missing
+          final_image_url = target_image if target_image else get_image(parsed['IMAGE_KEYWORD'] or target_title)
 
-          md_content = f"""---
+          # Use textwrap.dedent to ensure the final markdown file is completely flush-left
+          md_content = textwrap.dedent(f"""\
+          ---
           title: "{parsed['TITLE'].replace('"', "'")}"
           slug: "{parsed['SLUG']}"
           excerpt: "{parsed['EXCERPT'].replace('"', "'")}"
-          image: "{image_url}"
+          image: "{final_image_url}"
           category: "{parsed['CATEGORY']}"
           date: "{today_str}"
           tags: [{parsed['TAGS']}]
           ---
 
           {parsed['BODY'].strip()}
-          """
+          """)
 
           out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
           os.makedirs(out_dir, exist_ok=True)
