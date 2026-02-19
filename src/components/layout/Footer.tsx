@@ -3,6 +3,7 @@ import { Facebook, Instagram, Youtube, Mail, ArrowRight, Phone } from "lucide-re
 import { Button } from "@/components/ui/button";
 import { categories } from "@/lib/markdown";
 import { XIcon } from "@/components/XIcon";
+import logoImg from "@/assets/logo.png";
 
 export function Footer() {
   const navigate = useNavigate();
@@ -44,11 +45,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <button onClick={() => handleLinkClick("/")} className="flex flex-col items-start mb-4">
-              <h2 className="text-2xl font-serif font-bold text-foreground">
-                Za <span className="text-primary">Ndani</span>
-              </h2>
-              <span className="text-xs font-medium text-primary">Bold. Unbiased. Insider.</span>
+            <button onClick={() => handleLinkClick("/")} className="mb-4">
+              <img src={logoImg} alt="Za Ndani" className="h-12 w-auto" />
             </button>
             <p className="text-muted-foreground text-sm mb-4">
               Kenya's boldest Sheng news and entertainment website. Habari kutoka ndani — breaking news, gossip, na trending stories bila bias, kwa lugha ya mtaa.

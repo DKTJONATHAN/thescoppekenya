@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { SearchOverlay } from "@/components/SearchOverlay";
 import { categories } from "@/lib/markdown";
+import logoImg from "@/assets/logo.png";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,14 +45,7 @@ export function Header() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3">
-              <div className="flex flex-col">
-                <h1 className="text-2xl sm:text-3xl font-serif font-bold text-headline leading-none">
-                  Za <span className="text-primary">Ndani</span>
-                </h1>
-                <span className="text-[10px] sm:text-xs font-medium text-primary tracking-wide">
-                  Bold. Unbiased. Insider.
-                </span>
-              </div>
+              <img src={logoImg} alt="Za Ndani" className="h-10 sm:h-12 w-auto" />
             </Link>
 
             {/* Desktop Navigation */}
