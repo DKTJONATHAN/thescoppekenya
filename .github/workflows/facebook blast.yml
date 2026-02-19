@@ -15,7 +15,9 @@ jobs:
           fetch-depth: 2
 
       - name: Wait for 30 seconds
-        run: sleep 30
+        run: |
+          echo "Waiting 30 seconds for The Scoop Kenya to deploy..."
+          sleep 30
 
       - name: Detect changed posts & publish to Facebook
         env:
@@ -42,21 +44,81 @@ jobs:
             SLUG=$(basename "$file" .md)
             URL="${SITE_URL}/article/${SLUG}"
             
-            echo "🚀 Posting to Facebook: $URL"
+            echo "🚀 Processing File: $file"
             
-            # Using the latest Graph API v24.0
-            RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
-              "https://graph.facebook.com/v24.0/${FACEBOOK_PAGE_ID}/feed" \
-              -d "link=${URL}" \
-              -d "access_token=${FACEBOOK_PAGE_TOKEN}")
+            # Extract Title, First Paragraph, and Image
+            TITLE=$(grep -m 1 "^title:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//')
+            IMAGE_URL=$(grep -m 1 "^image:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//')
+            
+            # Extract only the first paragraph (Skipping the YAML frontmatter)
+            PARAGRAPH=$(awk 'BEGIN {count=0; body=0} /^---$/ {count++; if(count==2){body=1; next}} body==1 {print}' "$file" | awk -v RS='' -v ORS='\n\n' 'NR<=1')
+            
+            if [ -z "$TITLE" ]; then TITLE="Latest Update"; fi
+            
+            FINAL_MESSAGE="$TITLE
 
-            HTTP_CODE=$(echo "$RESPONSE" | tail -1)
-            BODY=$(echo "$RESPONSE" | head -n -1)
+            $PARAGRAPH"
 
-            if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
-              echo "✅ Facebook post successful for $SLUG (${HTTP_CODE})"
+            echo "Posting to Facebook Page ID: $FACEBOOK_PAGE_ID..."
+            
+            # Download and Send Main Post to Facebook
+            if [ -n "$IMAGE_URL" ]; then
+              echo "Image found. Disguising as a web browser to download..."
+              curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" -o fb_preview_image.jpg "$IMAGE_URL"
+              
+              # Check the actual MIME type of the downloaded file
+              MIME_TYPE=$(file --mime-type -b fb_preview_image.jpg 2>/dev/null || echo "unknown")
+              echo "Downloaded file type detected as: $MIME_TYPE"
+              
+              if [ -s "fb_preview_image.jpg" ] && [[ "$MIME_TYPE" == image/* ]]; then
+                echo "Valid image confirmed. Uploading direct file to Facebook photos endpoint..."
+                FB_RESPONSE=$(curl -s -X POST "https://graph.facebook.com/v24.0/${FACEBOOK_PAGE_ID}/photos" \
+                  -F "message=$FINAL_MESSAGE" \
+                  -F "source=@fb_preview_image.jpg" \
+                  -F "access_token=$FACEBOOK_PAGE_TOKEN")
+              else
+                echo "Download returned an invalid file. Falling back to text-only post..."
+                FB_RESPONSE=$(curl -s -X POST "https://graph.facebook.com/v24.0/${FACEBOOK_PAGE_ID}/feed" \
+                  -d "message=$FINAL_MESSAGE" \
+                  -d "access_token=$FACEBOOK_PAGE_TOKEN")
+              fi
             else
-              echo "❌ Facebook post failed for $SLUG (${HTTP_CODE}): ${BODY}"
+              echo "No image found. Falling back to feed endpoint (text-only)..."
+              FB_RESPONSE=$(curl -s -X POST "https://graph.facebook.com/v24.0/${FACEBOOK_PAGE_ID}/feed" \
+                -d "message=$FINAL_MESSAGE" \
+                -d "access_token=$FACEBOOK_PAGE_TOKEN")
+            fi
+
+            echo "Facebook API Response: $FB_RESPONSE"
+
+            # Extract Post ID and Add Comment with Link
+            # The photos endpoint returns 'post_id', the feed endpoint returns 'id'
+            POST_ID=$(echo "$FB_RESPONSE" | jq -r '.post_id // .id')
+
+            if [ "$POST_ID" != "null" ] && [ -n "$POST_ID" ]; then
+              echo "✅ Main post successful for $SLUG. Waiting 10 seconds for Facebook servers to sync..."
+              sleep 10
+              
+              echo "Adding link to the comment section..."
+              COMMENT_RESPONSE=$(curl -s -X POST "https://graph.facebook.com/v24.0/$POST_ID/comments" \
+                -d "message=Read the full story here: $URL" \
+                -d "access_token=$FACEBOOK_PAGE_TOKEN")
+              
+              if echo "$COMMENT_RESPONSE" | grep -q '"OAuthException"'; then
+                echo "❌ Facebook API rejected the comment. Token lacks 'pages_manage_engagement' permission."
+                exit 1
+              elif echo "$COMMENT_RESPONSE" | grep -q '"error"'; then
+                echo "❌ Failed to add comment due to an API error: $COMMENT_RESPONSE"
+                exit 1
+              else
+                echo "✅ Successfully published post and link comment for $SLUG!"
+              fi
+            else
+              echo "❌ Failed to retrieve Post ID for $SLUG. Could not add comment."
               exit 1
             fi
+            
+            # Clean up image before the next loop iteration
+            rm -f fb_preview_image.jpg
+            
           done <<< "$CHANGED"
