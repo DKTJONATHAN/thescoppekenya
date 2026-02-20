@@ -1,81 +1,186 @@
-name: Twitter Bot (3x Daily)
+name: "Instant Post to X on Publish"
+
 on:
-  schedule:
-    # 8 AM, 1 PM, 8 PM (Kenya Time)
-    - cron: '0 5,10,17 * * *'
+  push:
+    paths:
+      - 'content/posts/**.md'
+      - 'content/posts/**.mdx'
   workflow_dispatch:
+    inputs:
+      specific_slug:
+        description: 'Slug of the post (e.g., "my-new-article")'
+        required: false
+        type: string
 
 jobs:
-  post-twitter:
+  tweet:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Python
-        uses: actions/setup-python@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
         with:
-          python-version: '3.x'
-      
-      - name: Install Deps
-        run: pip install tweepy jq
+          fetch-depth: 2
 
-      - name: Fetch Content (Smart Fit)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
         run: |
-          # Initialize variables
-          MAX_RETRIES=5
-          COUNT=0
-          MSG=""
-          
-          while [ $COUNT -lt $MAX_RETRIES ]; do
-             ROLL=$((RANDOM % 4))
-             
-             if [ $ROLL -eq 0 ]; then
-                echo "Attempting Quote..."
-                JSON=$(curl -s "https://zenquotes.io/api/random")
-                TEMP_MSG="$(echo $JSON | jq -r '.[0].q') - $(echo $JSON | jq -r '.[0].a')"
-             else
-                echo "Attempting Joke..."
-                JSON=$(curl -s "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single&maxLength=280")
-                TEMP_MSG="$(echo $JSON | jq -r '.joke')"
-             fi
+          python -m pip install --upgrade pip
+          pip install tweepy requests
 
-             LEN=${#TEMP_MSG}
-             if [ "$TEMP_MSG" != "null" ] && [ $LEN -gt 10 ] && [ $LEN -le 280 ]; then
-                echo "✅ Success!"
-                MSG="$TEMP_MSG"
-                break
-             else
-                COUNT=$((COUNT+1))
-                sleep 2
-             fi
-          done
+      - name: Wait for Deployment
+        if: github.event_name == 'push'
+        run: |
+          echo "Waiting 30 seconds for site to build..."
+          sleep 30
 
-          if [ -z "$MSG" ]; then 
-            MSG="Consistency is key. Keep building."
-          fi
-          
-          echo "MSG=$MSG" >> $GITHUB_ENV
-
-      - name: Post to X
+      - name: Detect and Tweet
         env:
-          TWITTER_CONSUMER_KEY: ${{ secrets.TWITTER_CONSUMER_KEY }}
-          TWITTER_CONSUMER_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
-          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-          TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
-          TWEET_TEXT: ${{ env.MSG }}
+          APP_KEY: ${{ secrets.TWITTER_CONSUMER_KEY }}
+          APP_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
+          ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+          INPUT_SLUG: ${{ inputs.specific_slug }}
         run: |
-          cat <<EOF > tweet.py
-          import tweepy, os, sys
-          try:
-              # Using the standard Client (v2 API)
-              client = tweepy.Client(
-                  consumer_key=os.environ['TWITTER_CONSUMER_KEY'],
-                  consumer_secret=os.environ['TWITTER_CONSUMER_SECRET'],
-                  access_token=os.environ['TWITTER_ACCESS_TOKEN'],
-                  access_token_secret=os.environ['TWITTER_ACCESS_SECRET']
-              )
-              client.create_tweet(text=os.environ['TWEET_TEXT'])
-              print("✅ Tweet Sent Successfully")
-          except Exception as e:
-              print(f"❌ Error: {e}")
-              sys.exit(1)
-          EOF
-          python tweet.py
+          # Disable GitHub strict crash rule
+          set +e 
+
+          if [ -z "$APP_KEY" ] || [ -z "$ACCESS_TOKEN" ]; then
+            echo "Warning: Twitter credentials not set, skipping"
+            exit 0
+          fi
+
+          SITE_URL="https://thescoopkenya.vercel.app"
+
+          # 1. Determine which file to process based on manual input or git diff
+          if [ -n "$INPUT_SLUG" ]; then
+            FILE=$(find content/posts -name "${INPUT_SLUG}.md*" | head -n 1)
+            CHANGED="$FILE"
+          else
+            CHANGED=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD | grep '^content/posts/' || true)
+            
+            # Fallback for manual runs without an input slug
+            if [ -z "$CHANGED" ] && [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+              CHANGED=$(find content/posts -type f \( -name "*.md" -o -name "*.mdx" \) -exec stat -c "%Y %n" {} + | sort -nr | head -n 1 | cut -d' ' -f2- || true)
+              echo "Manual run detected. Defaulting to most recent file."
+            fi
+          fi
+
+          if [ -z "$CHANGED" ]; then
+            echo "No post changes detected"
+            exit 0
+          fi
+
+          # --- 2. PREPARE PYTHON SCRIPT ---
+          # Aligning strictly to the left to prevent Python IndentationErrors
+          cat << 'EOF' > tweet.py
+import os, sys, tweepy
+
+api_key = os.environ.get("APP_KEY")
+api_secret = os.environ.get("APP_SECRET")
+access_token = os.environ.get("ACCESS_TOKEN")
+access_secret = os.environ.get("ACCESS_SECRET")
+
+title = os.environ.get("TWEET_TITLE", "").strip()
+description = os.environ.get("TWEET_DESCRIPTION", "").strip()
+url = os.environ.get("TWEET_URL")
+image_path = os.environ.get("TWEET_IMAGE")
+
+# Safely calculate Twitter 280 character limit
+available_space = 280 - len(title) - 2 # 2 characters for the double newline
+
+if available_space > 0:
+    if len(description) > available_space:
+        # Truncate to available space, break at the last full word, and add ellipsis
+        description = description[:available_space - 3].rsplit(" ", 1)[0] + "..."
+    tweet_text = f"{title}\n\n{description}"
+else:
+    if len(title) > 280:
+        tweet_text = title[:277] + "..."
+    else:
+        tweet_text = title
+
+try:
+    auth = tweepy.OAuth1UserHandler(api_key, api_secret, access_token, access_secret)
+    api = tweepy.API(auth)
+    
+    client = tweepy.Client(
+        consumer_key=api_key, consumer_secret=api_secret,
+        access_token=access_token, access_token_secret=access_secret
+    )
+
+    media_id = None
+    if image_path and os.path.exists(image_path):
+        print("Uploading media to Twitter...")
+        media = api.media_upload(image_path)
+        media_id = media.media_id
+
+    print("Sending main tweet...")
+    if media_id:
+        response = client.create_tweet(text=tweet_text, media_ids=[media_id])
+    else:
+        response = client.create_tweet(text=tweet_text)
+        
+    tweet_id = response.data["id"]
+    print(f"Main tweet posted successfully! Tweet ID: {tweet_id}")
+    
+    print("Adding reply with the article link...")
+    reply_text = f"Read the full story here: {url}"
+    client.create_tweet(text=reply_text, in_reply_to_tweet_id=tweet_id)
+    print("Link reply posted successfully!")
+    
+except Exception as e:
+    print(f"Twitter API Error: {e}")
+    sys.exit(1)
+EOF
+          # --------------------------------
+
+          # 3. Process and post each changed file sequentially
+          while IFS= read -r file; do
+            if [ ! -f "$file" ]; then continue; fi
+            
+            FILENAME=$(basename "$file")
+            SLUG="${FILENAME%.*}"
+            URL="${SITE_URL}/article/${SLUG}"
+            
+            echo "Processing File: $file"
+            
+            TITLE=$(grep -m 1 "^title:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//' || true)
+            IMAGE_URL=$(grep -m 1 "^image:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//' || true)
+            
+            # Extract only the first paragraph (Skipping the YAML frontmatter)
+            DESCRIPTION=$(awk 'BEGIN {count=0; body=0} /^---$/ {count++; if(count==2){body=1; next}} body==1 {print}' "$file" | awk -v RS='' -v ORS='\n\n' 'NR<=1' || true)
+            
+            if [ -z "$TITLE" ]; then TITLE="New Article"; fi
+            if [ -z "$DESCRIPTION" ]; then DESCRIPTION="Read the latest updates on our website."; fi
+            
+            IMAGE_PATH=""
+            if [ -n "$IMAGE_URL" ]; then
+              echo "Image found. Downloading locally to bypass blocks..."
+              curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -o tw_preview_image.jpg "$IMAGE_URL" || true
+              
+              MIME_TYPE=$(file --mime-type -b tw_preview_image.jpg 2>/dev/null || echo "unknown")
+              echo "Downloaded file type detected as: $MIME_TYPE"
+              
+              if [ -s "tw_preview_image.jpg" ] && [[ "$MIME_TYPE" == image/* ]]; then
+                IMAGE_PATH="tw_preview_image.jpg"
+                echo "Valid image confirmed."
+              else
+                echo "Invalid image downloaded. Proceeding with text only."
+              fi
+            fi
+
+            export TWEET_TITLE="$TITLE"
+            export TWEET_DESCRIPTION="$DESCRIPTION"
+            export TWEET_URL="$URL"
+            export TWEET_IMAGE="$IMAGE_PATH"
+
+            # Run the Python script
+            python tweet.py
+            
+            rm -f tw_preview_image.jpg
+            
+          done <<< "$CHANGED"
