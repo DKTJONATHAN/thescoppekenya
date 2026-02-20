@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'content/posts/**.md'
+  workflow_dispatch:
 
 jobs:
   post_to_x:
