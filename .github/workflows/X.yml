@@ -74,8 +74,7 @@ jobs:
             exit 0
           fi
 
-          # --- 2. PREPARE PYTHON SCRIPT ---
-          # Aligning strictly to the left to prevent Python IndentationErrors
+          # 2. PREPARE PYTHON SCRIPT
           cat << 'EOF' > tweet.py
 import os, sys, tweepy
 
@@ -90,11 +89,10 @@ url = os.environ.get("TWEET_URL")
 image_path = os.environ.get("TWEET_IMAGE")
 
 # Safely calculate Twitter 280 character limit
-available_space = 280 - len(title) - 2 # 2 characters for the double newline
+available_space = 280 - len(title) - 2
 
 if available_space > 0:
     if len(description) > available_space:
-        # Truncate to available space, break at the last full word, and add ellipsis
         description = description[:available_space - 3].rsplit(" ", 1)[0] + "..."
     tweet_text = f"{title}\n\n{description}"
 else:
@@ -136,7 +134,6 @@ except Exception as e:
     print(f"Twitter API Error: {e}")
     sys.exit(1)
 EOF
-          # --------------------------------
 
           # 3. Process and post each changed file sequentially
           while IFS= read -r file; do
@@ -151,7 +148,6 @@ EOF
             TITLE=$(grep -m 1 "^title:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//' || true)
             IMAGE_URL=$(grep -m 1 "^image:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//' || true)
             
-            # Extract only the first paragraph (Skipping the YAML frontmatter)
             DESCRIPTION=$(awk 'BEGIN {count=0; body=0} /^---$/ {count++; if(count==2){body=1; next}} body==1 {print}' "$file" | awk -v RS='' -v ORS='\n\n' 'NR<=1' || true)
             
             if [ -z "$TITLE" ]; then TITLE="New Article"; fi
@@ -178,7 +174,6 @@ EOF
             export TWEET_URL="$URL"
             export TWEET_IMAGE="$IMAGE_PATH"
 
-            # Run the Python script
             python tweet.py
             
             rm -f tw_preview_image.jpg
