@@ -16,7 +16,7 @@ jobs:
 
       - name: Wait for 30 seconds
         run: |
-          echo "Waiting 30 seconds for The Scoop Kenya to deploy..."
+          echo "Waiting 30 seconds for Zandani to deploy..."
           sleep 30
 
       - name: Detect changed posts & publish to Facebook
@@ -29,7 +29,7 @@ jobs:
             exit 0
           fi
 
-          SITE_URL="https://thescoopkenya.vercel.app"
+          SITE_URL="https://zandani.co.ke"
 
           # Get changed .md files in content/posts/
           CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
