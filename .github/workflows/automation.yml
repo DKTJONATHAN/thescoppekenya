@@ -1,17 +1,17 @@
-name: International Gossip & Tech Bot (Gemini 3 Flash)
+name: Global Sports & Tech Sheng Scraper (Google News + Internal Links)
 
 on:
   schedule:
-    - cron: '30 1 * * *'  # 4:30AM EAT
-    - cron: '30 5 * * *'  # 8:30AM EAT
-    - cron: '30 10 * * *' # 1:30PM EAT
-    - cron: '30 13 * * *' # 4:30PM EAT
-    - cron: '30 17 * * *' # 8:30PM EAT
-    - cron: '30 21 * * *' # 12:30AM EAT
+    # 5 runs distributed from 6:00 AM EAT to 10:00 PM EAT
+    - cron: '0 3 * * *'   # 6:00 AM EAT (3:00 AM UTC)
+    - cron: '0 7 * * *'   # 10:00 AM EAT (7:00 AM UTC)
+    - cron: '0 11 * * *'  # 2:00 PM EAT (11:00 AM UTC)
+    - cron: '0 15 * * *'  # 6:00 PM EAT (3:00 PM UTC)
+    - cron: '0 19 * * *'  # 10:00 PM EAT (7:00 PM UTC)
   workflow_dispatch:
     inputs:
       manual_topic:
-        description: 'Force topic: celebrity, technology'
+        description: 'Force topic: european_football, other_sports, tech'
         required: false
         default: ''
 
@@ -71,32 +71,41 @@ jobs:
           current_hour = datetime.datetime.utcnow().hour
 
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
-
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
               "grab your popcorn", "listen up", "buckle up", "breaking news",
               "sherehe", "form ni gani", "udaku", "hello guys", "welcome back"
           ]
 
+          # Define topics for the 5-run schedule (mapped to UTC hours of the crons)
+          hour_to_topic = {
+              3: 'european_football',
+              7: 'tech',
+              11: 'european_football',
+              15: 'other_sports',
+              19: 'tech'
+          }
+
           manual_input = os.environ.get('MANUAL_TOPIC', '').strip().lower()
-          if manual_input in ['celebrity', 'technology']:
+          valid_topics = ['european_football', 'other_sports', 'tech']
+          
+          if manual_input in valid_topics:
               topic = manual_input
           else:
-              topics = ['celebrity', 'technology']
-              topic = topics[current_hour % 2]
+              topic = hour_to_topic.get(current_hour, 'european_football')
           
           print(f"🎯 Topic: {topic}")
 
-          # --- 2. FETCH GOOGLE NEWS RSS (TARGETED NICHES) ---
-          if topic == 'celebrity':
-              # International celebrity news
-              rss_url = 'https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=en-US&gl=US&ceid=US:en'
-          elif topic == 'technology':
-              # Targeted tech query: Gadgets, AI models, Emerging tech
-              q = '(gadgets OR smartphones OR "AI models" OR "artificial intelligence" OR "emerging tech") when:24h'
-              safe_q = urllib.parse.quote(q)
-              rss_url = f'https://news.google.com/rss/search?q={safe_q}&hl=en-US&gl=US&ceid=US:en'
+          # --- 2. FETCH GOOGLE NEWS RSS (KENYA FOCUS FOR RELEVANT LOCAL ANGLE) ---
+          base_keywords = {
+              'european_football': 'premier league OR arsenal OR manchester united OR chelsea OR la liga OR real madrid OR champions league OR bundesliga OR serie a',
+              'other_sports': 'nba OR formula 1 OR wrc safari rally OR tennis grand slam OR rugby sevens',
+              'tech': 'smartphone review OR new phone release OR tech gadget OR samsung galaxy OR iphone OR device alerts'
+          }
+          query_str = base_keywords.get(topic, 'sports news')
+          safe_query = urllib.parse.quote(f"{query_str} when:24h")
           
+          rss_url = f"https://news.google.com/rss/search?q={safe_query}&hl=en-KE&gl=KE&ceid=KE:en"
           print(f"🌍 Fetching Google News: {rss_url}")
           
           try:
@@ -197,7 +206,7 @@ jobs:
                           txt = c.read()
                           t_match = re.search(r'title:\s*"(.*?)"', txt)
                           t = t_match.group(1) if t_match else f
-                          context += f"- Title: {t} | Link: /posts/{f.replace('.md', '')}\n"
+                          context += f"- Title: {t} | Link: https://zandani.co.ke/posts/{f.replace('.md', '')}\n"
                   except: continue
               return context
 
@@ -215,8 +224,9 @@ jobs:
 
           def dash_scrubber(text):
               if not text: return ""
+              # Scrubber targeting all long dashes and normalizing to standard hyphen
               text = text.replace('\u2014', '-').replace('\u2013', '-')
-              text = text.replace('—', '-').replace('–', '-')
+              text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
 
           # --- 6. GENERATION ---
@@ -233,35 +243,27 @@ jobs:
 
           TASK: 
           1. Use Google Search to research the latest details on this story if needed.
-          2. Write an article as a **Nairobi Gen Z Gossip/Tech Reporter** (Investigative but Street Smart).
-          3. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph. Make it look like a smooth callback.
+          2. Write an article as a **Nairobi Gen Z Sports & Tech Pundit** (Knowledgeable, opinionated, but Street Smart).
+          3. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph. Make it look like a smooth callback (e.g., "Kama vile tuliona kwa ile stori ya [Title](https://zandani.co.ke/posts/slug)...").
 
           LANGUAGE MANDATE (STRICT):
           - WRITE IN PURE KENYAN SHENG ONLY.
-          - TONE: You are a **REPORTER**. Use phrases that imply you dug for info.
+          - TONE: You are NOT just a fan. You are an **EXPERT/PUNDIT**. Use phrases that imply you understand the tactics, the specs, or the deeper story (e.g., "Kama unajua ball utaelewa," "Specs za hii gadget," "Wasee wa tech wanadai").
           - DO NOT USE FORMAL ENGLISH OR STANDARD ENGLISH.
+          - DO NOT USE OLD SLANG.
           - Autonomously find and use the latest trending street terms.
           - BANNED PHRASES (DO NOT USE): {", ".join(BANNED_PHRASES)}.
-          - NEVER use em dashes or en dashes. Only use regular hyphens.
+          - NEVER use long dashes or double dashes. Only use regular hyphens.
 
           STRICT OUTPUT FORMAT:
-          TITLE: [Investigative/Savage Sheng Title]
+          TITLE: [Savage/Catchy Sheng Title]
           SLUG: [url-friendly-lowercase]
-          EXCERPT: [Reporter-style hook in Sheng]
-          CATEGORY: {topic.capitalize()}
+          EXCERPT: [Pundit-style hook in Sheng]
+          CATEGORY: Global News
           TAGS: [comma, separated, tags]
           IMAGE_KEYWORD: [search query]
           BODY:
-          [Article text in pure Sheng containing the internal link. You MUST structure the body using EXACTLY these three Markdown headings:]
-          
-          ## Scoop Ni Gani?
-          [Explain what happened here]
-
-          ## Evidence Ni?
-          [Break down the proof, the stats, or the details here]
-
-          ## Verdict Yetu Ni
-          [Give your final street-smart conclusion here]
+          [Article text in pure Sheng containing the internal link. Structure it logically: The Core Update -> The Deeper Analysis -> The Verdict.]
           '''
 
           full_text = ""
@@ -299,7 +301,7 @@ jobs:
           current_section = None
           for line in full_text.splitlines():
               clean = line.strip().replace("**", "")
-              if clean.startswith("```"): continue # Prevent stray markdown fences from polluting body
+              if clean.startswith("```"): continue
 
               if clean.startswith("TITLE:"): parsed["TITLE"] = dash_scrubber(clean.replace("TITLE:", "").strip())
               elif clean.startswith("SLUG:"): parsed["SLUG"] = clean.replace("SLUG:", "").strip()
@@ -309,7 +311,6 @@ jobs:
               elif clean.startswith("IMAGE_KEYWORD:"): parsed["IMAGE_KEYWORD"] = clean.replace("IMAGE_KEYWORD:", "").strip()
               elif clean.startswith("BODY:"):
                   current_section = "BODY"
-                  # Check if Gemini sneaks the start of the body on the same line
                   inline_body = line.split("BODY:", 1)[-1].strip()
                   if inline_body: parsed["BODY"] += inline_body + "\n"
                   continue
@@ -358,6 +359,6 @@ jobs:
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: fresh target niche scoop via Google News 🌍"
+          commit_message: "content: fresh sports & tech scoop via Google News 🌍"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/scrape_memory.json'
