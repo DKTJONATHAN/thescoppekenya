@@ -24,18 +24,24 @@ const Index = () => {
   const displayedPosts = allPosts.slice(0, visibleCount);
   const hasMore = visibleCount < allPosts.length;
 
-  // Infinite scroll
+  // Infinite scroll with robust cross-browser math
   const handleScroll = useCallback(() => {
     if (!hasMore) return;
-    const scrollBottom = window.innerHeight + window.scrollY;
-    const docHeight = document.documentElement.scrollHeight;
-    if (scrollBottom >= docHeight - 800) {
+    
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    const scrollHeight = Math.max(
+      document.documentElement.scrollHeight,
+      document.body.scrollHeight
+    );
+    const clientHeight = document.documentElement.clientHeight || window.innerHeight || 0;
+
+    if (scrollTop + clientHeight >= scrollHeight - 800) {
       setVisibleCount(prev => Math.min(prev + POSTS_PER_PAGE, allPosts.length));
     }
   }, [hasMore, allPosts.length]);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
@@ -57,7 +63,7 @@ const Index = () => {
     <Layout>
       <Helmet>
         <title>Za Ndani | Bold. Unbiased. Insider. Kenya's Sheng News & Entertainment</title>
-        <meta name="description" content="Za Ndani — habari kutoka ndani, bila bias. Kenya's boldest Sheng news and entertainment website. Breaking news, celebrity gossip, trending stories na insider content kwa Sheng." />
+        <meta name="description" content="Za Ndani - habari kutoka ndani, bila bias. Kenya's boldest Sheng news and entertainment website. Breaking news, celebrity gossip, trending stories na insider content kwa Sheng." />
         <link rel="canonical" href="https://zandani.co.ke" />
       </Helmet>
       {/* Enhanced SEO Schema */}
@@ -66,7 +72,7 @@ const Index = () => {
           "@context": "https://schema.org",
           "@type": "NewsMediaOrganization",
           "name": "Za Ndani",
-          "description": "Za Ndani — habari kutoka ndani, bila bias. Kenya's boldest Sheng news and entertainment website.",
+          "description": "Za Ndani - habari kutoka ndani, bila bias. Kenya's boldest Sheng news and entertainment website.",
           "url": "https://zandani.co.ke",
           "logo": "https://zandani.co.ke/logo.png",
           "potentialAction": {
@@ -115,7 +121,7 @@ const Index = () => {
                 <ArticleCard post={post} variant="compact" />
               </div>
             ))}
-            
+
             {/* Hot Topics Horizontal Bar */}
             <div className="lg:col-span-2 bg-surface border border-divider rounded-2xl p-4 flex items-center justify-between gap-4">
               <div className="flex items-center gap-2 font-bold text-foreground dark:text-white whitespace-nowrap">
@@ -140,7 +146,7 @@ const Index = () => {
       <section className="py-10 bg-surface/50 border-y border-divider">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-12">
-            
+
             {/* Stories Feed */}
             <div className="lg:col-span-2 space-y-10">
               <div className="flex items-center justify-between">
@@ -249,7 +255,7 @@ const Index = () => {
                   <Newspaper className="w-16 h-16" />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                
+
                 <h3 className="font-serif font-bold text-xl text-foreground dark:text-white group-hover:text-white transition-colors relative z-10">
                   {category.name}
                 </h3>
