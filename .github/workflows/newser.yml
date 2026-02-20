@@ -59,16 +59,27 @@ jobs:
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
 
-          # BANNED PHRASES (Strict Clean-up)
+          # BANNED PHRASES (Strict Clean-up) Added common AI-Sheng cliches
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
               "grab your popcorn", "listen up", "buckle up", "breaking news",
               "sherehe", "form ni gani", "udaku", "hello guys", "welcome back",
-              "dive in", "tapestry"
+              "dive in", "tapestry", "mambo vipi", "niaje wasee", "karibuni"
           ]
 
+          # DYNAMIC OPENINGS TO PREVENT REPETITION
+          OPENING_VIBES = [
+              "Start directly with a sarcastic comment about the celebrities involved.",
+              "Start with a shocking rhetorical question to the reader.",
+              "Start by casually mentioning how the timeline/streets are reacting right now.",
+              "Start by acting exhausted by the drama but admitting you love the tea.",
+              "Start by dropping the most controversial fact immediately without saying any greetings.",
+              "Start like you are whispering a secret you just found out.",
+              "Start by laughing at the situation before explaining what happened."
+          ]
+          random_hook = random.choice(OPENING_VIBES)
+
           # --- 2. FETCH GOOGLE NEWS RSS (PAN-AFRICAN ENTERTAINMENT) ---
-          # Targeted query covering major African hubs and strict entertainment/music/social media terms
           q = '("Nigeria" OR "South Africa" OR "Ghana" OR "Kenya" OR "Tanzania" OR "Africa") (afrobeats OR amapiano OR nollywood OR "social media trend" OR "music video" OR celebrity OR showbiz) when:24h'
           safe_q = urllib.parse.quote(q)
           rss_url = f'https://news.google.com/rss/search?q={safe_q}&hl=en-KE&gl=KE&ceid=KE:en'
@@ -195,7 +206,7 @@ jobs:
               text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
 
-          # --- 6. GEMINI REWRITE (Reporter Persona) ---
+          # --- 6. GEMINI REWRITE (Humanized Reporter Persona) ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
           
@@ -214,13 +225,22 @@ jobs:
 
           LANGUAGE MANDATE (STRICT):
           - TITLE, EXCERPT, SLUG, AND TAGS: MUST be written in VERY SIMPLE, SEO-OPTIMIZED ENGLISH to rank well on search engines. Keep them clear, searchable, and catchy.
-          - BODY CONTENT: MUST be in PURE KENYAN SHENG ONLY.
-          - TONE FOR BODY: You are NOT a fan. You are a REPORTER ("The Nairobi Street Insider" covering the whole continent). Use investigative phrases: "Tumenusa hii story", "Inspecta wetu wameconfirm", "Receipts ziko". Vibe: Professional but Street Smart. Savage but factual.
-          - DO NOT USE FORMAL ENGLISH OR STANDARD ENGLISH IN THE BODY.
-          - DO NOT USE OLD SLANG in the body.
-          - Autonomously find and use the latest trending street terms.
-          - BANNED PHRASES (DO NOT USE): {", ".join(BANNED_PHRASES)}.
+          
+          TONE FOR THE BODY CONTENT (CRITICAL):
+          - DO NOT WRITE IN "PURE" OR FORCED SHENG. Real humans code-switch. 
+          - Write exactly like a 24-year-old Nairobian tweeting on X (Twitter). Mix natural Swahili, conversational English, and current Sheng smoothly.
+          - DO NOT force slang into every single word. Let the sentences breathe. 
+          - Tone is investigative but street-smart. You are the plug for the truth.
+          - BANNED PHRASES: {", ".join(BANNED_PHRASES)}.
           - NEVER use long dashes or double dashes. Only use regular hyphens.
+
+          ANTI-REPETITION RULES:
+          - DO NOT use the exact same words or structure as previous articles. 
+          - Avoid starting every article with "Manze", "Bana", or "Kwanza". Use them sparingly inside the text instead.
+          - HERE IS YOUR UNIQUE OPENING INSTRUCTION FOR THIS SPECIFIC ARTICLE: {random_hook}
+
+          EXAMPLE OF THE PERFECT TONE VIBE TO MIMIC (DO NOT COPY THESE EXACT WORDS):
+          "Hii story inakaa kuwa moto sana. Kama ulikuwa unafikiria hii beef itaisha leo, wacha nikusho, mambo ndio inachemka. Kwanza the way evidence imetokea online, inaonyesha kulikuwa na plan all along. Receipts zinasema..."
 
           STRICT OUTPUT FORMAT:
           TITLE: [Very Simple SEO-Optimized English Title]
@@ -230,13 +250,13 @@ jobs:
           TAGS: [comma, separated, english, seo, tags]
           IMAGE_KEYWORD: [search query based on title]
           BODY:
-          [Article text in pure Sheng containing the internal link. You MUST structure the body using EXACTLY these three Markdown headings:]
+          [Article text in mixed conversational Sheng/Swahili/English containing the internal link. You MUST structure the body using EXACTLY these three Markdown headings:]
 
           ## Scoop Ni Gani?
-          [What happened?]
+          [What actually happened?]
 
           ## Evidence Ni?
-          [The receipts/details/evidence]
+          [The receipts/details/proof]
 
           ## Verdict Yetu Ni
           [Your reporter opinion/conclusion]
