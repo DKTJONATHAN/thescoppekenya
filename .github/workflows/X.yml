@@ -1,16 +1,21 @@
-name: X Auto-Post on Commit
+name: "X Auto-Post"
 
 on:
   push:
     paths:
       - 'content/posts/**.md'
   workflow_dispatch:
+    inputs:
+      specific_slug:
+        description: 'Slug of the post to test (e.g., "my-latest-gossip")'
+        required: false
+        type: string
 
 jobs:
   post_to_x:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Code
         uses: actions/checkout@v4
         with:
           fetch-depth: 2
@@ -18,31 +23,45 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install tweepy requests
+        run: |
+          python -m pip install --upgrade pip
+          pip install tweepy requests
 
       - name: Wait for 30 seconds
+        if: github.event_name == 'push'
         run: |
           echo "Waiting 30 seconds for The Scoop Kenya to deploy..."
           sleep 30
 
-      - name: Detect changed posts and publish to X
+      - name: Publish to X
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_KEY_SECRET: ${{ secrets.X_API_KEY_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          INPUT_SLUG: ${{ inputs.specific_slug }}
         run: |
-          if [ -z "$X_API_KEY" ] || [ -z "$X_API_KEY_SECRET" ] || [ -z "$X_ACCESS_TOKEN" ] || [ -z "$X_ACCESS_TOKEN_SECRET" ]; then
+          # Prevent the script from crashing immediately if a single command fails
+          set +e
+
+          if [ -z "$X_API_KEY" ] || [ -z "$X_ACCESS_TOKEN" ]; then
             echo "Warning: X credentials not set, skipping"
             exit 0
           fi
 
           SITE_URL="https://thescoopkenya.vercel.app"
 
-          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
+          # 1. Check if you manually typed a slug to test
+          if [ -n "$INPUT_SLUG" ]; then
+            echo "Manual input detected. Searching for $INPUT_SLUG.md..."
+            CHANGED=$(find content/posts -name "${INPUT_SLUG}.md" | head -n 1)
+          else
+            # 2. Otherwise, look for what changed in the push
+            CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
+          fi
 
           if [ -z "$CHANGED" ]; then
             echo "No post changes detected"
@@ -102,15 +121,17 @@ except Exception as e:
 EOF
 
           while IFS= read -r file; do
+            if [ ! -f "$file" ]; then continue; fi
+            
             export SLUG=$(basename "$file" .md)
             export URL="${SITE_URL}/article/${SLUG}"
             
             echo "Processing File: $file"
             
-            TITLE=$(grep -m 1 "^title:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//')
-            IMAGE_URL=$(grep -m 1 "^image:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//')
+            TITLE=$(grep -m 1 "^title:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//' || true)
+            IMAGE_URL=$(grep -m 1 "^image:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//' || true)
             
-            PARAGRAPH=$(awk 'BEGIN {count=0; body=0} /^---$/ {count++; if(count==2){body=1; next}} body==1 {print}' "$file" | awk -v RS='' -v ORS='\n\n' 'NR<=1')
+            PARAGRAPH=$(awk 'BEGIN {count=0; body=0} /^---$/ {count++; if(count==2){body=1; next}} body==1 {print}' "$file" | awk -v RS='' -v ORS='\n\n' 'NR<=1' || true)
             
             if [ -z "$TITLE" ]; then TITLE="Latest Update"; fi
             
@@ -122,7 +143,7 @@ $PARAGRAPH"
             
             if [ -n "$IMAGE_URL" ]; then
               echo "Image found. Disguising as a web browser to download..."
-              curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" -o x_preview_image.jpg "$IMAGE_URL"
+              curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" -o x_preview_image.jpg "$IMAGE_URL" || true
               
               MIME_TYPE=$(file --mime-type -b x_preview_image.jpg 2>/dev/null || echo "unknown")
               echo "Downloaded file type detected as: $MIME_TYPE"
