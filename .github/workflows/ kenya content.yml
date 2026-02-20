@@ -78,27 +78,31 @@ jobs:
           current_hour = datetime.datetime.utcnow().hour
 
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          
+          # Humanizer: added AI cliches to banned list
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
               "grab your popcorn", "listen up", "buckle up", "breaking news",
-              "sherehe", "form ni gani", "udaku", "hello guys", "welcome back"
+              "sherehe", "form ni gani", "udaku", "hello guys", "welcome back",
+              "mambo vipi", "niaje wasee", "karibuni", "tapestry", "dive in"
           ]
 
-          # Define topics for the new 12-run schedule (mapped to UTC hours of the crons)
-          # Entertainment runs 6 times a day (50% focus), others are spread out
+          # DYNAMIC OPENINGS TO PREVENT REPETITION (Kenya News Focus)
+          OPENING_VIBES = [
+              "Start with a sarcastic observation about Kenyan politicians, the economy, or celebrities.",
+              "Start with a rhetorical question about the endless drama in Nairobi.",
+              "Start by acting exhausted by the news cycle but admitting it's entertaining.",
+              "Start by dropping a controversial opinion about the situation directly.",
+              "Start by laughing at how Kenyans on X (Twitter) are reacting to this.",
+              "Start like you are leaking a government or celebrity secret.",
+              "Start directly with the facts, but phrase it like a street rumor you just confirmed."
+          ]
+          random_hook = random.choice(OPENING_VIBES)
+
           hour_to_topic = {
-              3: 'entertainment',
-              4: 'news',
-              6: 'entertainment',
-              7: 'politics',
-              9: 'entertainment',
-              10: 'sports',
-              12: 'entertainment',
-              13: 'business',
-              15: 'entertainment',
-              16: 'tech',
-              18: 'entertainment',
-              19: 'news'
+              3: 'entertainment', 4: 'news', 6: 'entertainment', 7: 'politics',
+              9: 'entertainment', 10: 'sports', 12: 'entertainment', 13: 'business',
+              15: 'entertainment', 16: 'tech', 18: 'entertainment', 19: 'news'
           }
 
           manual_input = os.environ.get('MANUAL_TOPIC', '').strip().lower()
@@ -141,37 +145,27 @@ jobs:
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
 
-          # --- 3. FREE SCRAPER (STEALTH PLAYWRIGHT) ---
+          # --- 3. FREE SCRAPER ---
           def scrape_article_free(url):
               print(f"🕷️ Stealth-Loading: {url}")
               with sync_playwright() as p:
                   browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox"])
-                  context = browser.new_context(
-                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-                  )
+                  context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36")
                   page = context.new_page()
                   page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-
                   try:
                       page.goto(url, timeout=50000)
                       try: page.wait_for_load_state("networkidle", timeout=10000)
                       except: pass
-
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
-                      
-                      # EXTRACT IMAGE VIA META TAGS
                       img_url = ""
                       og_image = soup.find("meta", property="og:image")
-                      if og_image and og_image.get("content"):
-                          img_url = og_image["content"]
-                      
+                      if og_image and og_image.get("content"): img_url = og_image["content"]
                       if not img_url:
                           twitter_image = soup.find("meta", attrs={"name": "twitter:image"})
-                          if twitter_image and twitter_image.get("content"):
-                              img_url = twitter_image["content"]
+                          if twitter_image and twitter_image.get("content"): img_url = twitter_image["content"]
                       
-                      # EXTRACT ARTICLE TEXT
                       article_text = ""
                       containers = soup.find_all(['article', 'main', 'div'], class_=re.compile(r'(body|content|entry|post)'))
                       for c in containers:
@@ -189,15 +183,12 @@ jobs:
 
           # --- 4. PROCESS ARTICLES ---
           full_raw_text, final_hash, target_title, target_image = None, None, None, None
-          
           for a in articles:
               u_hash = hashlib.md5(a['url'].encode()).hexdigest()
               if u_hash in memory: continue
-              
               result = scrape_article_free(a['url'])
               if not result: continue
               text, img = result
-
               if text and len(text) > 600:
                   full_raw_text = text
                   target_image = img
@@ -209,9 +200,7 @@ jobs:
               print("❌ No valid unread content found.")
               sys.exit(0)
 
-          print(f"📰 Scraping Success: {target_title[:80]}...")
-
-          # --- 5. HELPERS (INTERNAL LINKS & SCRUBBER) ---
+          # --- 5. HELPERS ---
           def get_internal_context(posts_dir):
               if not os.path.exists(posts_dir): return ""
               files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
@@ -230,19 +219,17 @@ jobs:
 
           def get_real_image(query):
               access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
-              fallback_image = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
-              if not access_key: return fallback_image
+              fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+              if not access_key: return fallback
               url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}"
               try:
                   resp = requests.get(url, timeout=10)
-                  if resp.status_code == 200:
-                      return resp.json()['urls']['regular']
-              except Exception: pass
-              return fallback_image
+                  if resp.status_code == 200: return resp.json()['urls']['regular']
+              except: pass
+              return fallback
 
           def dash_scrubber(text):
               if not text: return ""
-              # Scrubber restored: targeting all long dashes and normalizing to standard hyphen
               text = text.replace('\u2014', '-').replace('\u2013', '-')
               text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
@@ -250,7 +237,6 @@ jobs:
           # --- 6. GENERATION ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
-          
           internal_links_data = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
 
           prompt = f'''Current Date: {full_date_str}
@@ -259,20 +245,29 @@ jobs:
           
           {internal_links_data}
 
-          TASK: 
+          TASK: Write a news report as a **Nairobi Gen Z Gossip Reporter**.
           1. Use Google Search to research the latest details on this story if needed.
-          2. Write an article body as a **Nairobi Gen Z Gossip Reporter** (Investigative but Street Smart).
-          3. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph. Make it look like a smooth callback (e.g., "Kama vile tuliona kwa ile stori ya [Title](https://zandani.co.ke/posts/slug)...").
+          2. Naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph.
 
           LANGUAGE MANDATE (STRICT):
           - TITLE, EXCERPT, SLUG, AND TAGS: MUST be written in VERY SIMPLE, SEO-OPTIMIZED ENGLISH to rank well on search engines. Keep them clear, searchable, and catchy.
-          - BODY CONTENT: MUST be in PURE KENYAN SHENG ONLY.
-          - TONE FOR BODY: You are NOT just a fan. You are a **REPORTER**. Use phrases that imply you dug for info (e.g., "Tumenusa hii story," "Sources wanasema," "Inspecta wetu wameconfirm").
-          - DO NOT USE FORMAL ENGLISH OR STANDARD ENGLISH IN THE BODY.
-          - DO NOT USE OLD SLANG in the body.
-          - Autonomously find and use the latest trending street terms.
-          - BANNED PHRASES (DO NOT USE): {", ".join(BANNED_PHRASES)}.
+          
+          TONE FOR THE BODY CONTENT (CRITICAL):
+          - DO NOT WRITE IN "PURE" OR FORCED SHENG. Real humans code-switch. 
+          - Write exactly like a 24-year-old Nairobian tweeting on X (Twitter). Mix natural Swahili, conversational English, and current Sheng smoothly.
+          - DO NOT force slang into every single word. Let the sentences breathe. 
+          - Use conversational fillers naturally: "bana", "manze", "ati", "kwanza", "jo", "walae".
+          - Tone is investigative but street-smart. You dug for the info.
+          - BANNED PHRASES: {", ".join(BANNED_PHRASES)}.
           - NEVER use long dashes or double dashes. Only use regular hyphens.
+
+          ANTI-REPETITION RULES:
+          - DO NOT use the exact same words or structure as previous articles. 
+          - Avoid starting every article with "Manze", "Bana", or "Kwanza". Use them sparingly inside the text instead.
+          - HERE IS YOUR UNIQUE OPENING INSTRUCTION FOR THIS SPECIFIC ARTICLE: {random_hook}
+
+          EXAMPLE OF THE PERFECT TONE VIBE TO MIMIC (DO NOT COPY THESE EXACT WORDS):
+          "Hii country yetu ina mambo. Uki-think umeona yote, boom, another drama inatokea. Kwanza the way wasee wame-react hapo X inaonyesha hakuna mwenye anabuy hii story. The facts ni hizi..."
 
           STRICT OUTPUT FORMAT:
           TITLE: [Very Simple SEO-Optimized English Title]
@@ -282,23 +277,18 @@ jobs:
           TAGS: [comma, separated, english, seo, tags]
           IMAGE_KEYWORD: [search query]
           BODY:
-          [Article text in pure Sheng containing the internal link. Structure it like a report: The Scoop -> The Evidence -> The Verdict.]
+          [Article text in mixed conversational Sheng/Swahili/English containing the internal link. Structure it logically: The Scoop -> The Evidence -> The Verdict.]
           '''
 
           full_text = ""
           success_flag = False
           
           for model_id in MODELS_TO_TRY:
-              print(f"🤖 Attempting with {model_id}...")
               for retry in range(2):
                   try:
                       response = client.models.generate_content(
-                          model=model_id,
-                          contents=prompt,
-                          config=types.GenerateContentConfig(
-                              temperature=0.9,
-                              tools=[google_search_tool]
-                          )
+                          model=model_id, contents=prompt,
+                          config=types.GenerateContentConfig(temperature=0.9, tools=[google_search_tool])
                       )
                       full_text = dash_scrubber(response.text.strip())
                       success_flag = True
@@ -309,7 +299,6 @@ jobs:
                           print("⏳ Quota hit. Waiting 35s...")
                           time.sleep(35)
                           continue
-                      print(f"⚠️ Error with {model_id}: {e}")
                       break
               if success_flag: break
 
@@ -321,7 +310,6 @@ jobs:
           for line in full_text.splitlines():
               clean = line.strip().replace("**", "")
               if clean.startswith("```"): continue
-
               if clean.startswith("TITLE:"): parsed["TITLE"] = dash_scrubber(clean.replace("TITLE:", "").strip())
               elif clean.startswith("SLUG:"): parsed["SLUG"] = clean.replace("SLUG:", "").strip()
               elif clean.startswith("EXCERPT:"): parsed["EXCERPT"] = dash_scrubber(clean.replace("EXCERPT:", "").strip())
@@ -333,8 +321,7 @@ jobs:
                   inline_body = line.split("BODY:", 1)[-1].strip()
                   if inline_body: parsed["BODY"] += inline_body + "\n"
                   continue
-              elif current_section == "BODY":
-                  parsed["BODY"] += line + "\n"
+              elif current_section == "BODY": parsed["BODY"] += line + "\n"
 
           final_image_url = target_image if target_image else get_real_image(parsed['IMAGE_KEYWORD'] or target_title)
           
@@ -357,11 +344,9 @@ jobs:
           with open(os.path.join(out_dir, f"{parsed['SLUG']}.md"), "w", encoding="utf-8") as f:
               f.write(final_file)
           
-          # Update Memory
           memory.append(final_hash)
           os.makedirs(os.path.dirname(memory_path), exist_ok=True)
           with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
-
           print(f"✅ File saved: {parsed['SLUG']}.md")
           EOF
 
