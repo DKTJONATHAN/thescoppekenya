@@ -6,7 +6,7 @@ on:
       - 'content/posts/**.md'
 
 jobs:
-  post-to-x:
+  post_to_x:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -27,7 +27,7 @@ jobs:
           echo "Waiting 30 seconds for The Scoop Kenya to deploy..."
           sleep 30
 
-      - name: Detect changed posts & publish to X
+      - name: Detect changed posts and publish to X
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_KEY_SECRET: ${{ secrets.X_API_KEY_SECRET }}
@@ -41,7 +41,6 @@ jobs:
 
           SITE_URL="https://thescoopkenya.vercel.app"
 
-          # Get changed .md files in content/posts/
           CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
 
           if [ -z "$CHANGED" ]; then
@@ -49,9 +48,8 @@ jobs:
             exit 0
           fi
 
-          # Create the Python script for X API interactions
           cat << 'EOF' > post_to_x.py
-import sys, os, tweepy
+import sys, os, tweepy, time
 
 client = tweepy.Client(
     consumer_key=os.environ['X_API_KEY'],
@@ -91,11 +89,10 @@ try:
     tweet_id = response.data['id']
     print(f"Main post successful for {os.environ['SLUG']}. Waiting 10 seconds to sync...")
     
-    import time
     time.sleep(10)
 
     print("Adding link to the comment section...")
-    reply_response = client.create_tweet(text=url_text, in_reply_to_tweet_id=tweet_id)
+    client.create_tweet(text=url_text, in_reply_to_tweet_id=tweet_id)
     print("Successfully published post and link comment!")
 
 except Exception as e:
@@ -103,18 +100,15 @@ except Exception as e:
     sys.exit(1)
 EOF
 
-          # Process and post each changed file sequentially
           while IFS= read -r file; do
             export SLUG=$(basename "$file" .md)
             export URL="${SITE_URL}/article/${SLUG}"
             
             echo "Processing File: $file"
             
-            # Extract Title, First Paragraph, and Image exactly like the Facebook script
             TITLE=$(grep -m 1 "^title:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//')
             IMAGE_URL=$(grep -m 1 "^image:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//')
             
-            # Extract only the first paragraph
             PARAGRAPH=$(awk 'BEGIN {count=0; body=0} /^---$/ {count++; if(count==2){body=1; next}} body==1 {print}' "$file" | awk -v RS='' -v ORS='\n\n' 'NR<=1')
             
             if [ -z "$TITLE" ]; then TITLE="Latest Update"; fi
@@ -125,7 +119,6 @@ $PARAGRAPH"
 
             echo "Posting to X Page..."
             
-            # Download Image using exact Facebook curl logic
             if [ -n "$IMAGE_URL" ]; then
               echo "Image found. Disguising as a web browser to download..."
               curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" -o x_preview_image.jpg "$IMAGE_URL"
@@ -143,10 +136,8 @@ $PARAGRAPH"
               echo "No image found. Falling back to text-only post..."
             fi
 
-            # Execute the Python script to post to X
             python3 post_to_x.py
             
-            # Clean up image before the next loop iteration
             rm -f x_preview_image.jpg
             
           done <<< "$CHANGED"
