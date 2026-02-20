@@ -2,15 +2,23 @@ name: Kenya News Sheng Scraper (Google News + Internal Links)
 
 on:
   schedule:
-    - cron: '30 2 * * *'  # 5:30AM EAT
-    - cron: '30 6 * * *'  # 9:30AM EAT
-    - cron: '30 11 * * *' # 2:30PM EAT
-    - cron: '30 15 * * *' # 6:30PM EAT
-    - cron: '30 19 * * *' # 10:30PM EAT
+    # 12 runs distributed from 6:00 AM EAT to 10:30 PM EAT
+    - cron: '0 3 * * *'   # 6:00 AM EAT (3:00 AM UTC)
+    - cron: '30 4 * * *'  # 7:30 AM EAT (4:30 AM UTC)
+    - cron: '0 6 * * *'   # 9:00 AM EAT (6:00 AM UTC)
+    - cron: '30 7 * * *'  # 10:30 AM EAT (7:30 AM UTC)
+    - cron: '0 9 * * *'   # 12:00 PM EAT (9:00 AM UTC)
+    - cron: '30 10 * * *' # 1:30 PM EAT (10:30 AM UTC)
+    - cron: '0 12 * * *'  # 3:00 PM EAT (12:00 PM UTC)
+    - cron: '30 13 * * *' # 4:30 PM EAT (1:30 PM UTC)
+    - cron: '0 15 * * *'  # 6:00 PM EAT (3:00 PM UTC)
+    - cron: '30 16 * * *' # 7:30 PM EAT (4:30 PM UTC)
+    - cron: '0 18 * * *'  # 9:00 PM EAT (6:00 PM UTC)
+    - cron: '30 19 * * *' # 10:30 PM EAT (7:30 PM UTC)
   workflow_dispatch:
     inputs:
       manual_topic:
-        description: 'Force topic: celebrity, sports, technology, politics'
+        description: 'Force topic: entertainment, politics, news, sports, business, tech'
         required: false
         default: ''
 
@@ -76,24 +84,43 @@ jobs:
               "sherehe", "form ni gani", "udaku", "hello guys", "welcome back"
           ]
 
+          # Define topics for the new 12-run schedule (mapped to UTC hours of the crons)
+          # Entertainment runs 6 times a day (50% focus), others are spread out
+          hour_to_topic = {
+              3: 'entertainment',
+              4: 'news',
+              6: 'entertainment',
+              7: 'politics',
+              9: 'entertainment',
+              10: 'sports',
+              12: 'entertainment',
+              13: 'business',
+              15: 'entertainment',
+              16: 'tech',
+              18: 'entertainment',
+              19: 'news'
+          }
+
           manual_input = os.environ.get('MANUAL_TOPIC', '').strip().lower()
-          if manual_input in ['celebrity', 'sports', 'technology', 'politics']:
+          valid_topics = ['entertainment', 'politics', 'news', 'sports', 'business', 'tech']
+          
+          if manual_input in valid_topics:
               topic = manual_input
           else:
-              hour_mod = current_hour % 6
-              topics = ['celebrity', 'sports', 'technology', 'politics', 'celebrity', 'sports']
-              topic = topics[hour_mod] if hour_mod < len(topics) else 'celebrity'
+              topic = hour_to_topic.get(current_hour, 'entertainment')
           
           print(f"🎯 Topic: {topic}")
 
           # --- 2. FETCH GOOGLE NEWS RSS (KENYA) ---
           base_keywords = {
-              'celebrity': 'Kenya celebrity OR nairobi gossip OR eric omondi OR bahati',
+              'entertainment': 'Kenya celebrity OR nairobi gossip OR eric omondi OR bahati OR kenya showbiz',
+              'politics': 'william ruto OR raila odinga OR kenya parliament OR nairobi politics',
+              'news': 'kenya breaking news OR nairobi news OR citizen tv kenya OR ntv kenya',
               'sports': 'harambee stars OR athletics kenya OR shujaa OR fkf',
-              'technology': 'safaricom OR mpesa OR kenya tech OR nairobi startup',
-              'politics': 'william ruto OR raila odinga OR kenya parliament OR nairobi'
+              'business': 'kenya economy OR nairobi securities exchange OR cbk OR kenya business',
+              'tech': 'safaricom OR mpesa OR kenya tech OR nairobi startup'
           }
-          query_str = base_keywords.get(topic, 'kenya news')
+          query_str = base_keywords.get(topic, 'kenya breaking news')
           safe_query = urllib.parse.quote(f"{query_str} when:24h")
           
           rss_url = f"https://news.google.com/rss/search?q={safe_query}&hl=en-KE&gl=KE&ceid=KE:en"
@@ -197,7 +224,7 @@ jobs:
                           txt = c.read()
                           t_match = re.search(r'title:\s*"(.*?)"', txt)
                           t = t_match.group(1) if t_match else f
-                          context += f"- Title: {t} | Link: /posts/{f.replace('.md', '')}\n"
+                          context += f"- Title: {t} | Link: https://zandani.co.ke/posts/{f.replace('.md', '')}\n"
                   except: continue
               return context
 
@@ -215,8 +242,9 @@ jobs:
 
           def dash_scrubber(text):
               if not text: return ""
+              # Scrubber restored: targeting all long dashes and normalizing to standard hyphen
               text = text.replace('\u2014', '-').replace('\u2013', '-')
-              text = text.replace('—', '-').replace('–', '-')
+              text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
 
           # --- 6. GENERATION ---
@@ -234,7 +262,7 @@ jobs:
           TASK: 
           1. Use Google Search to research the latest details on this story if needed.
           2. Write an article as a **Nairobi Gen Z Gossip Reporter** (Investigative but Street Smart).
-          3. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph. Make it look like a smooth callback (e.g., "Kama vile tuliona kwa ile stori ya [Title](/posts/slug)...").
+          3. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph. Make it look like a smooth callback (e.g., "Kama vile tuliona kwa ile stori ya [Title](https://zandani.co.ke/posts/slug)...").
 
           LANGUAGE MANDATE (STRICT):
           - WRITE IN PURE KENYAN SHENG ONLY.
@@ -243,7 +271,7 @@ jobs:
           - DO NOT USE OLD SLANG.
           - Autonomously find and use the latest trending street terms.
           - BANNED PHRASES (DO NOT USE): {", ".join(BANNED_PHRASES)}.
-          - NEVER use em dashes or en dashes. Only use regular hyphens.
+          - NEVER use long dashes or double dashes. Only use regular hyphens.
 
           STRICT OUTPUT FORMAT:
           TITLE: [Investigative/Savage Sheng Title]
@@ -291,7 +319,7 @@ jobs:
           current_section = None
           for line in full_text.splitlines():
               clean = line.strip().replace("**", "")
-              if clean.startswith("```"): continue # Prevent stray markdown fences from polluting body
+              if clean.startswith("```"): continue
 
               if clean.startswith("TITLE:"): parsed["TITLE"] = dash_scrubber(clean.replace("TITLE:", "").strip())
               elif clean.startswith("SLUG:"): parsed["SLUG"] = clean.replace("SLUG:", "").strip()
@@ -301,7 +329,6 @@ jobs:
               elif clean.startswith("IMAGE_KEYWORD:"): parsed["IMAGE_KEYWORD"] = clean.replace("IMAGE_KEYWORD:", "").strip()
               elif clean.startswith("BODY:"):
                   current_section = "BODY"
-                  # Check if Gemini sneaks the start of the body on the same line
                   inline_body = line.split("BODY:", 1)[-1].strip()
                   if inline_body: parsed["BODY"] += inline_body + "\n"
                   continue
