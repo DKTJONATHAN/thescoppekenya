@@ -113,12 +113,12 @@ jobs:
 
           # --- 2. FETCH GOOGLE NEWS RSS (KENYA) ---
           base_keywords = {
-              'entertainment': 'Kenya celebrity OR nairobi gossip OR eric omondi OR bahati OR kenya showbiz',
-              'politics': 'william ruto OR raila odinga OR kenya parliament OR nairobi politics',
-              'news': 'kenya breaking news OR nairobi news OR citizen tv kenya OR ntv kenya',
-              'sports': 'harambee stars OR athletics kenya OR shujaa OR fkf',
-              'business': 'kenya economy OR nairobi securities exchange OR cbk OR kenya business',
-              'tech': 'safaricom OR mpesa OR kenya tech OR nairobi startup'
+              'entertainment': 'kenya entertainment OR kenya celebrity OR nairobi gossip OR kenya showbiz',
+              'politics': 'kenya politics OR kenya parliament OR nairobi politics OR kenya government',
+              'news': 'kenya breaking news OR nairobi news OR kenya latest news',
+              'sports': 'kenya sports OR kenya athletics OR kenya football OR nairobi sports',
+              'business': 'kenya economy OR kenya business OR kenya finance OR nairobi markets',
+              'tech': 'kenya tech OR kenya technology OR nairobi startup OR kenya innovation'
           }
           query_str = base_keywords.get(topic, 'kenya breaking news')
           safe_query = urllib.parse.quote(f"{query_str} when:24h")
