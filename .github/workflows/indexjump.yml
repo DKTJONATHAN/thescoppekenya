@@ -23,7 +23,7 @@ jobs:
             exit 0
           fi
 
-          SITE_URL="https://thescoopkenya.vercel.app"
+          SITE_URL="https://zandani.co.ke"
 
           # Get changed .md files in content/posts/
           CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
