@@ -261,24 +261,25 @@ jobs:
 
           TASK: 
           1. Use Google Search to research the latest details on this story if needed.
-          2. Write an article as a **Nairobi Gen Z Gossip Reporter** (Investigative but Street Smart).
+          2. Write an article body as a **Nairobi Gen Z Gossip Reporter** (Investigative but Street Smart).
           3. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph. Make it look like a smooth callback (e.g., "Kama vile tuliona kwa ile stori ya [Title](https://zandani.co.ke/posts/slug)...").
 
           LANGUAGE MANDATE (STRICT):
-          - WRITE IN PURE KENYAN SHENG ONLY.
-          - TONE: You are NOT just a fan. You are a **REPORTER**. Use phrases that imply you dug for info (e.g., "Tumenusa hii story," "Sources wanasema," "Inspecta wetu wameconfirm").
-          - DO NOT USE FORMAL ENGLISH OR STANDARD ENGLISH.
-          - DO NOT USE OLD SLANG.
+          - TITLE, EXCERPT, SLUG, AND TAGS: MUST be written in VERY SIMPLE, SEO-OPTIMIZED ENGLISH to rank well on search engines. Keep them clear, searchable, and catchy.
+          - BODY CONTENT: MUST be in PURE KENYAN SHENG ONLY.
+          - TONE FOR BODY: You are NOT just a fan. You are a **REPORTER**. Use phrases that imply you dug for info (e.g., "Tumenusa hii story," "Sources wanasema," "Inspecta wetu wameconfirm").
+          - DO NOT USE FORMAL ENGLISH OR STANDARD ENGLISH IN THE BODY.
+          - DO NOT USE OLD SLANG in the body.
           - Autonomously find and use the latest trending street terms.
           - BANNED PHRASES (DO NOT USE): {", ".join(BANNED_PHRASES)}.
           - NEVER use long dashes or double dashes. Only use regular hyphens.
 
           STRICT OUTPUT FORMAT:
-          TITLE: [Investigative/Savage Sheng Title]
-          SLUG: [url-friendly-lowercase]
-          EXCERPT: [Reporter-style hook in Sheng]
+          TITLE: [Very Simple SEO-Optimized English Title]
+          SLUG: [url-friendly-lowercase-english-slug]
+          EXCERPT: [Simple SEO-Optimized English Snippet/Hook]
           CATEGORY: Kenya News
-          TAGS: [comma, separated, tags]
+          TAGS: [comma, separated, english, seo, tags]
           IMAGE_KEYWORD: [search query]
           BODY:
           [Article text in pure Sheng containing the internal link. Structure it like a report: The Scoop -> The Evidence -> The Verdict.]
