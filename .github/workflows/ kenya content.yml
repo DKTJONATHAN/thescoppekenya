@@ -1,152 +1,382 @@
-name: X Auto-Post on Commit
+name: Kenya News Sheng Scraper (Google News + Internal Links)
 
 on:
-  push:
-    paths:
-      - 'content/posts/**.md'
+  schedule:
+    # 12 runs distributed from 6:00 AM EAT to 10:30 PM EAT
+    - cron: '0 3 * * *'   # 6:00 AM EAT (3:00 AM UTC)
+    - cron: '30 4 * * *'  # 7:30 AM EAT (4:30 AM UTC)
+    - cron: '0 6 * * *'   # 9:00 AM EAT (6:00 AM UTC)
+    - cron: '30 7 * * *'  # 10:30 AM EAT (7:30 AM UTC)
+    - cron: '0 9 * * *'   # 12:00 PM EAT (9:00 AM UTC)
+    - cron: '30 10 * * *' # 1:30 PM EAT (10:30 AM UTC)
+    - cron: '0 12 * * *'  # 3:00 PM EAT (12:00 PM UTC)
+    - cron: '30 13 * * *' # 4:30 PM EAT (1:30 PM UTC)
+    - cron: '0 15 * * *'  # 6:00 PM EAT (3:00 PM UTC)
+    - cron: '30 16 * * *' # 7:30 PM EAT (4:30 PM UTC)
+    - cron: '0 18 * * *'  # 9:00 PM EAT (6:00 PM UTC)
+    - cron: '30 19 * * *' # 10:30 PM EAT (7:30 PM UTC)
+  workflow_dispatch:
+    inputs:
+      manual_topic:
+        description: 'Force topic: entertainment, politics, news, sports, business, tech'
+        required: false
+        default: ''
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+  MEMORY_FILE: .github/scrape_memory.json
 
 jobs:
-  post-to-x:
+  generate-and-publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install tweepy requests
-
-      - name: Wait for 30 seconds
         run: |
-          echo "Waiting 30 seconds for The Scoop Kenya to deploy..."
-          sleep 30
+          python -m pip install --upgrade pip
+          pip install requests google-genai beautifulsoup4 lxml playwright
+          playwright install chromium
 
-      - name: Detect changed posts and publish to X
+      - name: Generate article with Gemini
         env:
-          X_API_KEY: ${{ secrets.X_API_KEY }}
-          X_API_KEY_SECRET: ${{ secrets.X_API_KEY_SECRET }}
-          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
-          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          MANUAL_TOPIC: ${{ inputs.manual_topic }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
+          MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
-          if [ -z "$X_API_KEY" ] || [ -z "$X_API_KEY_SECRET" ] || [ -z "$X_ACCESS_TOKEN" ] || [ -z "$X_ACCESS_TOKEN_SECRET" ]; then
-            echo "Warning: X credentials not set, skipping"
-            exit 0
-          fi
+          python << 'EOF'
+          import os, json, datetime, requests, re, time, sys, hashlib, random, urllib.parse, textwrap
+          from google import genai
+          from google.genai import types
+          from bs4 import BeautifulSoup
+          from playwright.sync_api import sync_playwright
 
-          SITE_URL="https://thescoopkenya.vercel.app"
+          # --- 1. CONFIGURATION ---
+          today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
+          current_hour = datetime.datetime.utcnow().hour
 
-          # Get changed .md files in content/posts/
-          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          BANNED_PHRASES = [
+              "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
+              "grab your popcorn", "listen up", "buckle up", "breaking news",
+              "sherehe", "form ni gani", "udaku", "hello guys", "welcome back"
+          ]
 
-          if [ -z "$CHANGED" ]; then
-            echo "📝 No post changes detected"
-            exit 0
-          fi
+          # Define topics for the new 12-run schedule (mapped to UTC hours of the crons)
+          # Entertainment runs 6 times a day (50% focus), others are spread out
+          hour_to_topic = {
+              3: 'entertainment',
+              4: 'news',
+              6: 'entertainment',
+              7: 'politics',
+              9: 'entertainment',
+              10: 'sports',
+              12: 'entertainment',
+              13: 'business',
+              15: 'entertainment',
+              16: 'tech',
+              18: 'entertainment',
+              19: 'news'
+          }
 
-          # Create the Python script for X API interactions once
-          cat << 'EOF' > post_to_x.py
-import sys, os, tweepy, time
+          manual_input = os.environ.get('MANUAL_TOPIC', '').strip().lower()
+          valid_topics = ['entertainment', 'politics', 'news', 'sports', 'business', 'tech']
+          
+          if manual_input in valid_topics:
+              topic = manual_input
+          else:
+              topic = hour_to_topic.get(current_hour, 'entertainment')
+          
+          print(f"🎯 Topic: {topic}")
 
-client = tweepy.Client(
-    consumer_key=os.environ['X_API_KEY'],
-    consumer_secret=os.environ['X_API_KEY_SECRET'],
-    access_token=os.environ['X_ACCESS_TOKEN'],
-    access_token_secret=os.environ['X_ACCESS_TOKEN_SECRET']
-)
-auth = tweepy.OAuth1UserHandler(
-    os.environ['X_API_KEY'], os.environ['X_API_KEY_SECRET'],
-    os.environ['X_ACCESS_TOKEN'], os.environ['X_ACCESS_TOKEN_SECRET']
-)
-api = tweepy.API(auth)
+          # --- 2. FETCH GOOGLE NEWS RSS (KENYA) ---
+          base_keywords = {
+              'entertainment': 'Kenya celebrity OR nairobi gossip OR eric omondi OR bahati OR kenya showbiz',
+              'politics': 'william ruto OR raila odinga OR kenya parliament OR nairobi politics',
+              'news': 'kenya breaking news OR nairobi news OR citizen tv kenya OR ntv kenya',
+              'sports': 'harambee stars OR athletics kenya OR shujaa OR fkf',
+              'business': 'kenya economy OR nairobi securities exchange OR cbk OR kenya business',
+              'tech': 'safaricom OR mpesa OR kenya tech OR nairobi startup'
+          }
+          query_str = base_keywords.get(topic, 'kenya breaking news')
+          safe_query = urllib.parse.quote(f"{query_str} when:24h")
+          
+          rss_url = f"https://news.google.com/rss/search?q={safe_query}&hl=en-KE&gl=KE&ceid=KE:en"
+          print(f"🌍 Fetching Google News: {rss_url}")
+          
+          try:
+              resp = requests.get(rss_url, timeout=15)
+              soup = BeautifulSoup(resp.content, "xml")
+              articles = [{"title": item.title.text, "url": item.link.text} for item in soup.find_all("item")]
+          except Exception as e:
+              print(f"Error fetching Google News: {e}")
+              sys.exit(0)
 
-text = os.environ.get('FINAL_MESSAGE', '')
-url_text = f"Read the full story here: {os.environ['URL']}"
-image_path = "x_preview_image.jpg"
+          if not articles:
+              print("No fresh news, skipping")
+              sys.exit(0)
 
-max_length = 270
-if len(text) > max_length:
-    text = text[:max_length-3] + "..."
+          memory_path = os.environ.get('MEMORY_FILE')
+          memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
 
-media_ids = []
-if os.path.exists(image_path) and os.path.getsize(image_path) > 0:
-    try:
-        media = api.media_upload(image_path)
-        media_ids.append(media.media_id)
-        print("Image uploaded to X successfully.")
-    except Exception as e:
-        print(f"Warning: Media upload failed: {e}")
+          # --- 3. FREE SCRAPER (STEALTH PLAYWRIGHT) ---
+          def scrape_article_free(url):
+              print(f"🕷️ Stealth-Loading: {url}")
+              with sync_playwright() as p:
+                  browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox"])
+                  context = browser.new_context(
+                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                  )
+                  page = context.new_page()
+                  page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
-try:
-    if media_ids:
-        response = client.create_tweet(text=text, media_ids=media_ids)
-    else:
-        response = client.create_tweet(text=text)
-    
-    tweet_id = response.data['id']
-    print(f"✅ Main post successful for {os.environ.get('SLUG', 'post')}. Waiting 10 seconds to sync...")
-    
-    time.sleep(10)
+                  try:
+                      page.goto(url, timeout=50000)
+                      try: page.wait_for_load_state("networkidle", timeout=10000)
+                      except: pass
 
-    print("Adding link to the comment section...")
-    client.create_tweet(text=url_text, in_reply_to_tweet_id=tweet_id)
-    print("✅ Successfully published post and link comment!")
+                      content = page.content()
+                      soup = BeautifulSoup(content, "html.parser")
+                      
+                      # EXTRACT IMAGE VIA META TAGS
+                      img_url = ""
+                      og_image = soup.find("meta", property="og:image")
+                      if og_image and og_image.get("content"):
+                          img_url = og_image["content"]
+                      
+                      if not img_url:
+                          twitter_image = soup.find("meta", attrs={"name": "twitter:image"})
+                          if twitter_image and twitter_image.get("content"):
+                              img_url = twitter_image["content"]
+                      
+                      # EXTRACT ARTICLE TEXT
+                      article_text = ""
+                      containers = soup.find_all(['article', 'main', 'div'], class_=re.compile(r'(body|content|entry|post)'))
+                      for c in containers:
+                          paras = c.find_all("p")
+                          chunk = "\n\n".join([p.text.strip() for p in paras if len(p.text) > 50])
+                          if len(chunk) > 600:
+                              article_text = chunk
+                              break
+                      if not article_text:
+                          all_paras = soup.find_all("p")
+                          article_text = "\n\n".join([p.text.strip() for p in all_paras if len(p.text.strip()) > 60])
+                      return article_text, img_url
+                  except: return None, None
+                  finally: browser.close()
 
-except Exception as e:
-    print(f"❌ Error posting to X: {e}")
-    sys.exit(1)
-EOF
-
-          # Process and post each changed file sequentially
-          while IFS= read -r file; do
-            export SLUG=$(basename "$file" .md)
-            export URL="${SITE_URL}/article/${SLUG}"
-            
-            echo "🚀 Processing File: $file"
-            
-            # Extract Title, First Paragraph, and Image exactly like the Facebook script
-            TITLE=$(grep -m 1 "^title:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//')
-            IMAGE_URL=$(grep -m 1 "^image:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//')
-            
-            # Extract only the first paragraph (Skipping the YAML frontmatter)
-            PARAGRAPH=$(awk 'BEGIN {count=0; body=0} /^---$/ {count++; if(count==2){body=1; next}} body==1 {print}' "$file" | awk -v RS='' -v ORS='\n\n' 'NR<=1')
-            
-            if [ -z "$TITLE" ]; then TITLE="Latest Update"; fi
-            
-            export FINAL_MESSAGE="$TITLE
-
-$PARAGRAPH"
-
-            echo "Posting to X Page..."
-            
-            # Download Image using exact Facebook curl logic
-            if [ -n "$IMAGE_URL" ]; then
-              echo "Image found. Disguising as a web browser to download..."
-              curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" -o x_preview_image.jpg "$IMAGE_URL"
+          # --- 4. PROCESS ARTICLES ---
+          full_raw_text, final_hash, target_title, target_image = None, None, None, None
+          
+          for a in articles:
+              u_hash = hashlib.md5(a['url'].encode()).hexdigest()
+              if u_hash in memory: continue
               
-              # Check the actual MIME type of the downloaded file
-              MIME_TYPE=$(file --mime-type -b x_preview_image.jpg 2>/dev/null || echo "unknown")
-              echo "Downloaded file type detected as: $MIME_TYPE"
-              
-              if ! [[ "$MIME_TYPE" == image/* ]]; then
-                echo "Download returned an invalid file. Falling back to text-only post..."
-                rm -f x_preview_image.jpg
-              else
-                echo "Valid image confirmed. Ready for upload."
-              fi
-            else
-              echo "No image found. Falling back to text-only post..."
-            fi
+              result = scrape_article_free(a['url'])
+              if not result: continue
+              text, img = result
 
-            # Execute the Python script to post to X
-            python3 post_to_x.py
-            
-            # Clean up image before the next loop iteration
-            rm -f x_preview_image.jpg
-            
-          done <<< "$CHANGED"
+              if text and len(text) > 600:
+                  full_raw_text = text
+                  target_image = img
+                  final_hash = u_hash
+                  target_title = re.sub(r' - [^-]+$', '', a['title']).strip()
+                  break 
+
+          if not full_raw_text: 
+              print("❌ No valid unread content found.")
+              sys.exit(0)
+
+          print(f"📰 Scraping Success: {target_title[:80]}...")
+
+          # --- 5. HELPERS (INTERNAL LINKS & SCRUBBER) ---
+          def get_internal_context(posts_dir):
+              if not os.path.exists(posts_dir): return ""
+              files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
+              if not files: return ""
+              sample = random.sample(files, min(len(files), 3))
+              context = "PAST STORIES (PICK ONE AND LINK IT NATURALLY IN THE SHENG TEXT USING MARKDOWN):\n"
+              for f in sample:
+                  try:
+                      with open(os.path.join(posts_dir, f), 'r', encoding='utf-8') as c:
+                          txt = c.read()
+                          t_match = re.search(r'title:\s*"(.*?)"', txt)
+                          t = t_match.group(1) if t_match else f
+                          context += f"- Title: {t} | Link: https://zandani.co.ke/posts/{f.replace('.md', '')}\n"
+                  except: continue
+              return context
+
+          def get_real_image(query):
+              access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
+              fallback_image = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+              if not access_key: return fallback_image
+              url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}"
+              try:
+                  resp = requests.get(url, timeout=10)
+                  if resp.status_code == 200:
+                      return resp.json()['urls']['regular']
+              except Exception: pass
+              return fallback_image
+
+          def dash_scrubber(text):
+              if not text: return ""
+              # Scrubber restored: targeting all long dashes and normalizing to standard hyphen
+              text = text.replace('\u2014', '-').replace('\u2013', '-')
+              text = text.replace(chr(8212), '-').replace(chr(8211), '-')
+              return text
+
+          # --- 6. GENERATION ---
+          client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
+          google_search_tool = types.Tool(google_search=types.GoogleSearch())
+          
+          internal_links_data = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
+
+          prompt = f'''Current Date: {full_date_str}
+          NEWS HEADLINE: "{target_title}"
+          SOURCE SCRAPED TEXT: "{full_raw_text[:12000]}"
+          
+          {internal_links_data}
+
+          TASK: 
+          1. Use Google Search to research the latest details on this story if needed.
+          2. Write an article as a **Nairobi Gen Z Gossip Reporter** (Investigative but Street Smart).
+          3. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph. Make it look like a smooth callback (e.g., "Kama vile tuliona kwa ile stori ya [Title](https://zandani.co.ke/posts/slug)...").
+
+          LANGUAGE MANDATE (STRICT):
+          - WRITE IN PURE KENYAN SHENG ONLY.
+          - TONE: You are NOT just a fan. You are a **REPORTER**. Use phrases that imply you dug for info (e.g., "Tumenusa hii story," "Sources wanasema," "Inspecta wetu wameconfirm").
+          - DO NOT USE FORMAL ENGLISH OR STANDARD ENGLISH.
+          - DO NOT USE OLD SLANG.
+          - Autonomously find and use the latest trending street terms.
+          - BANNED PHRASES (DO NOT USE): {", ".join(BANNED_PHRASES)}.
+          - NEVER use long dashes or double dashes. Only use regular hyphens.
+
+          STRICT OUTPUT FORMAT:
+          TITLE: [Investigative/Savage Sheng Title]
+          SLUG: [url-friendly-lowercase]
+          EXCERPT: [Reporter-style hook in Sheng]
+          CATEGORY: Kenya News
+          TAGS: [comma, separated, tags]
+          IMAGE_KEYWORD: [search query]
+          BODY:
+          [Article text in pure Sheng containing the internal link. Structure it like a report: The Scoop -> The Evidence -> The Verdict.]
+          '''
+
+          full_text = ""
+          success_flag = False
+          
+          for model_id in MODELS_TO_TRY:
+              print(f"🤖 Attempting with {model_id}...")
+              for retry in range(2):
+                  try:
+                      response = client.models.generate_content(
+                          model=model_id,
+                          contents=prompt,
+                          config=types.GenerateContentConfig(
+                              temperature=0.9,
+                              tools=[google_search_tool]
+                          )
+                      )
+                      full_text = dash_scrubber(response.text.strip())
+                      success_flag = True
+                      print(f"✅ SUCCESS with {model_id}!")
+                      break 
+                  except Exception as e:
+                      if "429" in str(e):
+                          print("⏳ Quota hit. Waiting 35s...")
+                          time.sleep(35)
+                          continue
+                      print(f"⚠️ Error with {model_id}: {e}")
+                      break
+              if success_flag: break
+
+          if not success_flag: sys.exit(1)
+
+          # --- 7. PARSE & SAVE ---
+          parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
+          current_section = None
+          for line in full_text.splitlines():
+              clean = line.strip().replace("**", "")
+              if clean.startswith("```"): continue
+
+              if clean.startswith("TITLE:"): parsed["TITLE"] = dash_scrubber(clean.replace("TITLE:", "").strip())
+              elif clean.startswith("SLUG:"): parsed["SLUG"] = clean.replace("SLUG:", "").strip()
+              elif clean.startswith("EXCERPT:"): parsed["EXCERPT"] = dash_scrubber(clean.replace("EXCERPT:", "").strip())
+              elif clean.startswith("CATEGORY:"): parsed["CATEGORY"] = clean.replace("CATEGORY:", "").strip()
+              elif clean.startswith("TAGS:"): parsed["TAGS"] = clean.replace("TAGS:", "").strip()
+              elif clean.startswith("IMAGE_KEYWORD:"): parsed["IMAGE_KEYWORD"] = clean.replace("IMAGE_KEYWORD:", "").strip()
+              elif clean.startswith("BODY:"):
+                  current_section = "BODY"
+                  inline_body = line.split("BODY:", 1)[-1].strip()
+                  if inline_body: parsed["BODY"] += inline_body + "\n"
+                  continue
+              elif current_section == "BODY":
+                  parsed["BODY"] += line + "\n"
+
+          final_image_url = target_image if target_image else get_real_image(parsed['IMAGE_KEYWORD'] or target_title)
+          
+          final_file = textwrap.dedent(f"""\
+          ---
+          title: "{parsed['TITLE'].replace('"', "'")}"
+          slug: "{parsed['SLUG']}"
+          excerpt: "{parsed['EXCERPT'].replace('"', "'")}"
+          image: "{final_image_url}"
+          category: "{parsed['CATEGORY']}"
+          date: "{today_str}"
+          tags: [{parsed['TAGS']}]
+          ---
+
+          {parsed['BODY'].strip()}
+          """)
+          
+          out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
+          os.makedirs(out_dir, exist_ok=True)
+          with open(os.path.join(out_dir, f"{parsed['SLUG']}.md"), "w", encoding="utf-8") as f:
+              f.write(final_file)
+          
+          # Update Memory
+          memory.append(final_hash)
+          os.makedirs(os.path.dirname(memory_path), exist_ok=True)
+          with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
+
+          print(f"✅ File saved: {parsed['SLUG']}.md")
+          EOF
+
+      - name: Git Safety Pull
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git stash -u
+          git fetch origin main
+          git pull origin main --rebase
+          git stash pop || echo "Nothing to pop"
+
+      - name: Commit and push article
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "content: fresh local scoop via Google News 🇰🇪"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: 'content/posts/*.md .github/scrape_memory.json'
