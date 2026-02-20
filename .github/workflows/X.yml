@@ -1,152 +1,55 @@
-name: X Auto-Post on Commit
+name: Test X API Connection
 
 on:
-  push:
-    paths:
-      - 'content/posts/**.md'
+  workflow_dispatch:
 
 jobs:
-  post-to-x:
+  test_tweet:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
-        run: pip install tweepy requests
+      - name: Install tweepy
+        run: pip install tweepy
 
-      - name: Wait for 30 seconds
-        run: |
-          echo "Waiting 30 seconds for The Scoop Kenya to deploy..."
-          sleep 30
-
-      - name: Detect changed posts and publish to X
+      - name: Send Test Tweet
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_KEY_SECRET: ${{ secrets.X_API_KEY_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
         run: |
-          if [ -z "$X_API_KEY" ] || [ -z "$X_API_KEY_SECRET" ] || [ -z "$X_ACCESS_TOKEN" ] || [ -z "$X_ACCESS_TOKEN_SECRET" ]; then
-            echo "Warning: X credentials not set, skipping"
-            exit 0
-          fi
+          cat << 'EOF' > test_tweet.py
+import os, sys, tweepy
 
-          SITE_URL="https://thescoopkenya.vercel.app"
+api_key = os.environ.get('X_API_KEY')
+api_secret = os.environ.get('X_API_KEY_SECRET')
+access_token = os.environ.get('X_ACCESS_TOKEN')
+access_secret = os.environ.get('X_ACCESS_TOKEN_SECRET')
 
-          # Get changed .md files in content/posts/
-          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
-
-          if [ -z "$CHANGED" ]; then
-            echo "📝 No post changes detected"
-            exit 0
-          fi
-
-          # Create the Python script for X API interactions once
-          cat << 'EOF' > post_to_x.py
-import sys, os, tweepy, time
-
-client = tweepy.Client(
-    consumer_key=os.environ['X_API_KEY'],
-    consumer_secret=os.environ['X_API_KEY_SECRET'],
-    access_token=os.environ['X_ACCESS_TOKEN'],
-    access_token_secret=os.environ['X_ACCESS_TOKEN_SECRET']
-)
-auth = tweepy.OAuth1UserHandler(
-    os.environ['X_API_KEY'], os.environ['X_API_KEY_SECRET'],
-    os.environ['X_ACCESS_TOKEN'], os.environ['X_ACCESS_TOKEN_SECRET']
-)
-api = tweepy.API(auth)
-
-text = os.environ.get('FINAL_MESSAGE', '')
-url_text = f"Read the full story here: {os.environ['URL']}"
-image_path = "x_preview_image.jpg"
-
-max_length = 270
-if len(text) > max_length:
-    text = text[:max_length-3] + "..."
-
-media_ids = []
-if os.path.exists(image_path) and os.path.getsize(image_path) > 0:
-    try:
-        media = api.media_upload(image_path)
-        media_ids.append(media.media_id)
-        print("Image uploaded to X successfully.")
-    except Exception as e:
-        print(f"Warning: Media upload failed: {e}")
+if not all([api_key, api_secret, access_token, access_secret]):
+    print("Error: Missing one or more Twitter API credentials in GitHub Secrets.")
+    sys.exit(1)
 
 try:
-    if media_ids:
-        response = client.create_tweet(text=text, media_ids=media_ids)
-    else:
-        response = client.create_tweet(text=text)
+    client = tweepy.Client(
+        consumer_key=api_key,
+        consumer_secret=api_secret,
+        access_token=access_token,
+        access_token_secret=access_secret
+    )
     
-    tweet_id = response.data['id']
-    print(f"✅ Main post successful for {os.environ.get('SLUG', 'post')}. Waiting 10 seconds to sync...")
+    response = client.create_tweet(text="Testing the X API connection for The Scoop Kenya via GitHub Actions! 🚀")
+    print(f"Success! Test tweet sent. Tweet ID: {response.data['id']}")
     
-    time.sleep(10)
-
-    print("Adding link to the comment section...")
-    client.create_tweet(text=url_text, in_reply_to_tweet_id=tweet_id)
-    print("✅ Successfully published post and link comment!")
-
 except Exception as e:
-    print(f"❌ Error posting to X: {e}")
+    print(f"Twitter API Error: {e}")
     sys.exit(1)
 EOF
-
-          # Process and post each changed file sequentially
-          while IFS= read -r file; do
-            export SLUG=$(basename "$file" .md)
-            export URL="${SITE_URL}/article/${SLUG}"
-            
-            echo "🚀 Processing File: $file"
-            
-            # Extract Title, First Paragraph, and Image exactly like the Facebook script
-            TITLE=$(grep -m 1 "^title:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//')
-            IMAGE_URL=$(grep -m 1 "^image:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//')
-            
-            # Extract only the first paragraph (Skipping the YAML frontmatter)
-            PARAGRAPH=$(awk 'BEGIN {count=0; body=0} /^---$/ {count++; if(count==2){body=1; next}} body==1 {print}' "$file" | awk -v RS='' -v ORS='\n\n' 'NR<=1')
-            
-            if [ -z "$TITLE" ]; then TITLE="Latest Update"; fi
-            
-            export FINAL_MESSAGE="$TITLE
-
-$PARAGRAPH"
-
-            echo "Posting to X Page..."
-            
-            # Download Image using exact Facebook curl logic
-            if [ -n "$IMAGE_URL" ]; then
-              echo "Image found. Disguising as a web browser to download..."
-              curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" -o x_preview_image.jpg "$IMAGE_URL"
-              
-              # Check the actual MIME type of the downloaded file
-              MIME_TYPE=$(file --mime-type -b x_preview_image.jpg 2>/dev/null || echo "unknown")
-              echo "Downloaded file type detected as: $MIME_TYPE"
-              
-              if ! [[ "$MIME_TYPE" == image/* ]]; then
-                echo "Download returned an invalid file. Falling back to text-only post..."
-                rm -f x_preview_image.jpg
-              else
-                echo "Valid image confirmed. Ready for upload."
-              fi
-            else
-              echo "No image found. Falling back to text-only post..."
-            fi
-
-            # Execute the Python script to post to X
-            python3 post_to_x.py
-            
-            # Clean up image before the next loop iteration
-            rm -f x_preview_image.jpg
-            
-          done <<< "$CHANGED"
+          python3 test_tweet.py
