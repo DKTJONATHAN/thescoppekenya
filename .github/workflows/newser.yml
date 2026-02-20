@@ -208,28 +208,26 @@ jobs:
           
           {internal_links_data}
 
-          TASK: Write an investigative Pan-African entertainment gossip article as a **Nairobi Gen Z Reporter**.
+          TASK: Write an investigative Pan-African entertainment gossip article.
           1. Use Google Search to verify any trending claims in the story if needed.
           2. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph. Make it a valid link using the provided zandani.co.ke URL.
 
-          ROLE & TONE:
-          - You are NOT a fan. You are a REPORTER ("The Nairobi Street Insider" covering the whole continent).
-          - Use investigative phrases: "Tumenusa hii story", "Inspecta wetu wameconfirm", "Receipts ziko".
-          - Vibe: Professional but Street Smart. Savage but factual.
-
           LANGUAGE MANDATE (STRICT):
-          - WRITE IN PURE KENYAN SHENG ONLY.
-          - NO FORMAL ENGLISH. NO OLD SLANG.
-          - Find trending terms autonomously.
-          - BANNED: {", ".join(BANNED_PHRASES)}.
+          - TITLE, EXCERPT, SLUG, AND TAGS: MUST be written in VERY SIMPLE, SEO-OPTIMIZED ENGLISH to rank well on search engines. Keep them clear, searchable, and catchy.
+          - BODY CONTENT: MUST be in PURE KENYAN SHENG ONLY.
+          - TONE FOR BODY: You are NOT a fan. You are a REPORTER ("The Nairobi Street Insider" covering the whole continent). Use investigative phrases: "Tumenusa hii story", "Inspecta wetu wameconfirm", "Receipts ziko". Vibe: Professional but Street Smart. Savage but factual.
+          - DO NOT USE FORMAL ENGLISH OR STANDARD ENGLISH IN THE BODY.
+          - DO NOT USE OLD SLANG in the body.
+          - Autonomously find and use the latest trending street terms.
+          - BANNED PHRASES (DO NOT USE): {", ".join(BANNED_PHRASES)}.
           - NEVER use long dashes or double dashes. Only use regular hyphens.
 
           STRICT OUTPUT FORMAT:
-          TITLE: [Investigative Sheng Clickbait]
-          SLUG: [url-friendly-lowercase]
-          EXCERPT: [Reporter hook in Sheng]
+          TITLE: [Very Simple SEO-Optimized English Title]
+          SLUG: [url-friendly-lowercase-english-slug]
+          EXCERPT: [Simple SEO-Optimized English Snippet/Hook]
           CATEGORY: Entertainment
-          TAGS: [comma, separated, tags]
+          TAGS: [comma, separated, english, seo, tags]
           IMAGE_KEYWORD: [search query based on title]
           BODY:
           [Article text in pure Sheng containing the internal link. You MUST structure the body using EXACTLY these three Markdown headings:]
