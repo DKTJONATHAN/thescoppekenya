@@ -1,8 +1,8 @@
-name: East Africa Gossip Bot (Google News)
+name: African Entertainment Gossip Bot (Google News)
 
 on:
   schedule:
-    # Runs every 4 hours
+    # Runs 5 times a day
     - cron: '15 4,8,12,16,20 * * *'
   workflow_dispatch:
 
@@ -67,13 +67,13 @@ jobs:
               "dive in", "tapestry"
           ]
 
-          # --- 2. FETCH GOOGLE NEWS RSS (EAST AFRICA GOSSIP) ---
-          # Targeted query for East African entertainment & celebrities
-          q = '("Kenya" OR "Uganda" OR "Tanzania" OR "East Africa") (celebrity OR gossip OR entertainment OR "diamond platnumz" OR "eric omondi" OR zari) when:24h'
+          # --- 2. FETCH GOOGLE NEWS RSS (PAN-AFRICAN ENTERTAINMENT) ---
+          # Targeted query covering major African hubs and strict entertainment/music/social media terms
+          q = '("Nigeria" OR "South Africa" OR "Ghana" OR "Kenya" OR "Tanzania" OR "Africa") (afrobeats OR amapiano OR nollywood OR "social media trend" OR "music video" OR celebrity OR showbiz) when:24h'
           safe_q = urllib.parse.quote(q)
           rss_url = f'https://news.google.com/rss/search?q={safe_q}&hl=en-KE&gl=KE&ceid=KE:en'
           
-          print(f"🌍 Fetching EA Gossip from Google News: {rss_url}")
+          print(f"🌍 Fetching African Entertainment News: {rss_url}")
           
           try:
               resp = requests.get(rss_url, timeout=15)
@@ -84,7 +84,7 @@ jobs:
               sys.exit(0)
 
           if not articles:
-              print("⚠️ No fresh East African gossip found in RSS.")
+              print("⚠️ No fresh African entertainment gossip found in RSS.")
               sys.exit(0)
 
           memory_path = os.environ.get('MEMORY_FILE')
@@ -175,7 +175,7 @@ jobs:
                           txt = c.read()
                           t_match = re.search(r'title:\s*"(.*?)"', txt)
                           t = t_match.group(1) if t_match else f
-                          context += f"- Title: {t} | Link: /posts/{f.replace('.md', '')}\n"
+                          context += f"- Title: {t} | Link: https://zandani.co.ke/posts/{f.replace('.md', '')}\n"
                   except: continue
               return context
 
@@ -192,7 +192,7 @@ jobs:
           def dash_scrubber(text):
               if not text: return ""
               text = text.replace('\u2014', '-').replace('\u2013', '-')
-              text = text.replace('—', '-').replace('–', '-')
+              text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
 
           # --- 6. GEMINI REWRITE (Reporter Persona) ---
@@ -208,12 +208,12 @@ jobs:
           
           {internal_links_data}
 
-          TASK: Write an investigative East African gossip article as a **Nairobi Gen Z Reporter**.
+          TASK: Write an investigative Pan-African entertainment gossip article as a **Nairobi Gen Z Reporter**.
           1. Use Google Search to verify any trending claims in the story if needed.
-          2. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph.
+          2. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph. Make it a valid link using the provided zandani.co.ke URL.
 
           ROLE & TONE:
-          - You are NOT a fan. You are a REPORTER ("The Nairobi Street Insider").
+          - You are NOT a fan. You are a REPORTER ("The Nairobi Street Insider" covering the whole continent).
           - Use investigative phrases: "Tumenusa hii story", "Inspecta wetu wameconfirm", "Receipts ziko".
           - Vibe: Professional but Street Smart. Savage but factual.
 
@@ -222,7 +222,7 @@ jobs:
           - NO FORMAL ENGLISH. NO OLD SLANG.
           - Find trending terms autonomously.
           - BANNED: {", ".join(BANNED_PHRASES)}.
-          - NEVER use em dashes or en dashes. Only use regular hyphens.
+          - NEVER use long dashes or double dashes. Only use regular hyphens.
 
           STRICT OUTPUT FORMAT:
           TITLE: [Investigative Sheng Clickbait]
@@ -249,26 +249,28 @@ jobs:
           success_flag = False
           
           for model in ["gemini-3-flash-preview", "gemini-2.5-flash"]:
-              try:
-                  resp = client.models.generate_content(
-                      model=model,
-                      contents=prompt,
-                      config=types.GenerateContentConfig(
-                          temperature=0.9,
-                          tools=[google_search_tool]
+              for retry in range(2):
+                  try:
+                      resp = client.models.generate_content(
+                          model=model,
+                          contents=prompt,
+                          config=types.GenerateContentConfig(
+                              temperature=0.9,
+                              tools=[google_search_tool]
+                          )
                       )
-                  )
-                  final_text = dash_scrubber(resp.text.strip())
-                  success_flag = True
-                  print(f"✅ Success with {model}")
-                  break
-              except Exception as e:
-                  if "429" in str(e):
-                      print("⏳ Quota hit. Waiting 35s...")
-                      time.sleep(35)
-                      continue
-                  print(f"⚠️ Error with {model}: {e}")
-                  break
+                      final_text = dash_scrubber(resp.text.strip())
+                      success_flag = True
+                      print(f"✅ Success with {model}")
+                      break
+                  except Exception as e:
+                      if "429" in str(e):
+                          print("⏳ Quota hit. Waiting 35s...")
+                          time.sleep(35)
+                          continue
+                      print(f"⚠️ Error with {model}: {e}")
+                      break
+              if success_flag: break
 
           if not success_flag or not final_text:
               sys.exit(1)
@@ -289,7 +291,6 @@ jobs:
               elif clean.startswith("IMAGE_KEYWORD:"): parsed["IMAGE_KEYWORD"] = clean.replace("IMAGE_KEYWORD:", "").strip()
               elif clean.startswith("BODY:"):
                   current_section = "BODY"
-                  # Check if Gemini sneaks the start of the body on the same line
                   inline_body = line.split("BODY:", 1)[-1].strip()
                   if inline_body: parsed["BODY"] += inline_body + "\n"
                   continue
@@ -342,6 +343,6 @@ jobs:
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: fresh east african gossip via Google News 🕵️"
+          commit_message: "content: fresh african entertainment gossip via Google News 🕵️"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/scrape_memory.json'
