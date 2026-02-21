@@ -25,19 +25,19 @@ jobs:
 
       - name: Compose and Send Tweet
         env:
-          APP_KEY: ${{ secrets.TWITTER_CONSUMER_KEY }}
-          APP_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
-          ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-          ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+          TWITTER_CONSUMER_KEY: ${{ secrets.TWITTER_CONSUMER_KEY }}
+          TWITTER_CONSUMER_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
         run: |
           python << 'EOF'
           import os, sys, re, requests, tweepy, subprocess
 
-          # 1. Authenticate with X API
-          api_key = os.environ.get('APP_KEY')
-          api_secret = os.environ.get('APP_SECRET')
-          access_token = os.environ.get('ACCESS_TOKEN')
-          access_secret = os.environ.get('ACCESS_SECRET')
+          # 1. Authenticate with X API using exact secret names
+          api_key = os.environ.get('TWITTER_CONSUMER_KEY')
+          api_secret = os.environ.get('TWITTER_CONSUMER_SECRET')
+          access_token = os.environ.get('TWITTER_ACCESS_TOKEN')
+          access_secret = os.environ.get('TWITTER_ACCESS_TOKEN_SECRET')
 
           if not all([api_key, api_secret, access_token, access_secret]):
               print("Error: Missing Twitter API credentials.")
