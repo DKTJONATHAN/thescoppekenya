@@ -1,4 +1,4 @@
-name: Global Sports & Tech Sheng Scraper (Google News + Internal Links)
+name: Global Sports & Tech British Gossip Scraper (Google News + Internal Links)
 
 on:
   schedule:
@@ -72,23 +72,24 @@ jobs:
 
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
           
-          # Humanizer: added AI cliches to banned list
+          # Humanizer: added sports/tech AI cliches to banned list
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
               "grab your popcorn", "listen up", "buckle up", "breaking news",
               "sherehe", "form ni gani", "udaku", "hello guys", "welcome back",
-              "mambo vipi", "niaje wasee", "karibuni", "tapestry", "dive in"
+              "mambo vipi", "niaje wasee", "karibuni", "tapestry", "dive in",
+              "a testament to their skill", "delve into the stats", 
+              "navigating the digital landscape", "in today's fast-paced world",
+              "moreover", "furthermore", "in conclusion"
           ]
 
-          # DYNAMIC OPENINGS TO PREVENT REPETITION (Sports/Tech Focus)
+          # DYNAMIC OPENINGS TO PREVENT REPETITION (Sports/Tech Psychological Hooks)
           OPENING_VIBES = [
-              "Start with a controversial hot take about the team, player, or tech brand involved.",
-              "Start by expressing absolute disbelief at the stats, scoreline, or price of the gadget.",
-              "Start like an arrogant sports pundit or tech bro who 'called it' before it happened.",
-              "Start directly with a savage comment about the losing side or the outdated tech.",
-              "Start by casually mentioning how fans or the tech community on X (Twitter) are losing their minds.",
-              "Start by giving respect where it's due before dropping the reality check.",
-              "Start directly with the core stats or specs, phrasing it like an undeniable fact."
+              "Start with a bold, controversial statement that challenges a popular opinion about a manager, player, or tech brand.",
+              "Start by making the reader feel they are the absolute last to know about a massive gadget leak or a shocking transfer rumour.",
+              "Start by expressing absolute disbelief at a ridiculous scoreline, controversial referee decision, or the shocking price tag of a new device.",
+              "Start with a funny, relatable anecdote about battery life dying at the worst time or watching your team bottle a lead.",
+              "Start directly with a savage, sarcastic comment about the losing side or an outdated piece of tech."
           ]
           random_hook = random.choice(OPENING_VIBES)
 
@@ -112,7 +113,7 @@ jobs:
           query_str = base_keywords.get(topic, 'sports news')
           safe_query = urllib.parse.quote(f"{query_str} when:24h")
           
-          rss_url = f"[https://news.google.com/rss/search?q=](https://news.google.com/rss/search?q=){safe_query}&hl=en-KE&gl=KE&ceid=KE:en"
+          rss_url = f"https://news.google.com/rss/search?q={safe_query}&hl=en-KE&gl=KE&ceid=KE:en"
           print(f"🌍 Fetching Google News: {rss_url}")
           
           try:
@@ -192,22 +193,22 @@ jobs:
               files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
               if not files: return ""
               sample = random.sample(files, min(len(files), 3))
-              context = "PAST STORIES (PICK ONE AND LINK IT NATURALLY IN THE SHENG TEXT USING MARKDOWN):\n"
+              context = "PAST STORIES (PICK ONE AND LINK IT NATURALLY IN THE TEXT USING MARKDOWN):\n"
               for f in sample:
                   try:
                       with open(os.path.join(posts_dir, f), 'r', encoding='utf-8') as c:
                           txt = c.read()
                           t_match = re.search(r'title:\s*"(.*?)"', txt)
                           t = t_match.group(1) if t_match else f
-                          context += f"- Title: {t} | Link: [https://zandani.co.ke/posts/](https://zandani.co.ke/posts/){f.replace('.md', '')}\n"
+                          context += f"- Title: {t} | Link: https://zandani.co.ke/posts/{f.replace('.md', '')}\n"
                   except: continue
               return context
 
           def get_real_image(query):
               access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
-              fallback = "[https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200](https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200)"
+              fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
               if not access_key: return fallback
-              url = f"[https://api.unsplash.com/photos/random?query=](https://api.unsplash.com/photos/random?query=){query}&orientation=landscape&client_id={access_key}"
+              url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}"
               try:
                   resp = requests.get(url, timeout=10)
                   if resp.status_code == 200: return resp.json()['urls']['regular']
@@ -231,39 +232,38 @@ jobs:
           
           {internal_links_data}
 
-          TASK: Write an article as a **Nairobi Gen Z Sports & Tech Pundit**.
+          TASK: Write an article as a **British Sports & Tech Pundit**.
           1. Use Google Search to research the latest details on this story if needed.
           2. Naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph.
 
           LANGUAGE MANDATE (STRICT):
-          - TITLE, EXCERPT, SLUG, AND TAGS: MUST be written in VERY SIMPLE, SEO-OPTIMIZED ENGLISH to rank well on search engines. Keep them clear, searchable, and catchy.
-          
-          TONE FOR THE BODY CONTENT (CRITICAL):
-          - DO NOT WRITE IN "PURE" OR FORCED SHENG. Real humans code-switch. 
-          - Write exactly like a 24-year-old Nairobian tweeting on X (Twitter). Mix natural Swahili, conversational English, and current Sheng smoothly.
-          - DO NOT force slang into every single word. Let the sentences breathe. 
-          - Tone is opinionated, knowledgeable, but street-smart. You understand the tactics/specs perfectly.
+          - NO SHENG OR SWAHILI. Write for an audience who loves cheeky British gossip, sports banter, and tech leaks.
+          - Use conversational British English: "Right," "Honestly," "Mate," "Look," "absolute madness."
+          - Include rhetorical questions and bracketed side thoughts (e.g., "and who actually pays that much?").
           - BANNED PHRASES: {", ".join(BANNED_PHRASES)}.
           - NEVER use long dashes or double dashes. Only use regular hyphens.
 
           ANTI-REPETITION RULES:
           - DO NOT use the exact same words or structure as previous articles. 
-          - Avoid starting every article with "Manze", "Bana", or "Kwanza". Use them sparingly inside the text instead.
           - HERE IS YOUR UNIQUE OPENING INSTRUCTION FOR THIS SPECIFIC ARTICLE: {random_hook}
 
           EXAMPLE OF THE PERFECT TONE VIBE TO MIMIC (DO NOT COPY THESE EXACT WORDS):
-          "Kama unajua ball, hii result haifai kukushtua hata kidogo. Tangu season ianze, the writing was on the wall. Kwanza the way manager amekuwa aki-set up..." 
-          (OR FOR TECH): "Hii tech mpya inakaa joke until uone the specs. Kwanza uki-compare na the previous model..."
+          "Look, if you actually thought they were going to hold on to that lead, you are having a laugh. The tactics were completely all over the place..." 
+          (OR FOR TECH): "Right, get a load of this. The new specs just dropped, and frankly, I am entirely unconvinced. For that price tag?"
 
           STRICT OUTPUT FORMAT:
-          TITLE: [Very Simple SEO-Optimized English Title]
+          TITLE: [Very Simple SEO-Optimized English Title front-loaded with the main keyword]
           SLUG: [url-friendly-lowercase-english-slug]
-          EXCERPT: [Simple SEO-Optimized English Snippet/Hook]
+          EXCERPT: [Simple SEO-Optimized English Snippet/Hook under 160 characters]
           CATEGORY: Global News
           TAGS: [comma, separated, english, seo, tags]
           IMAGE_KEYWORD: [search query]
           BODY:
-          [Article text in mixed conversational Sheng/Swahili/English containing the internal link. Structure it logically: The Core Update -> The Deeper Analysis -> The Verdict.]
+          [Article text in chatty British English containing the internal link. 
+          Structure it logically:
+          - Include an H2 heading asking a direct question about the core match/tech news.
+          - Immediately follow that H2 with a crisp, completely objective 40 to 60-word answer paragraph to win Google Featured Snippets.
+          - Then dive into the rest of the cheeky British banter: The Core Update -> The Deeper Analysis -> The Verdict.]
           '''
 
           full_text = ""
