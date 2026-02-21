@@ -1,4 +1,4 @@
-name: African Entertainment Gossip Bot (Google News)
+name: African Entertainment British Gossip Bot (Google News)
 
 on:
   schedule:
@@ -59,28 +59,30 @@ jobs:
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
 
-          # BANNED PHRASES (Strict Clean-up) Added common AI-Sheng cliches
+          # BANNED PHRASES (Strict Clean-up) Added common AI cliches
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
               "grab your popcorn", "listen up", "buckle up", "breaking news",
               "sherehe", "form ni gani", "udaku", "hello guys", "welcome back",
-              "dive in", "tapestry", "mambo vipi", "niaje wasee", "karibuni"
+              "dive in", "tapestry", "mambo vipi", "niaje wasee", "karibuni",
+              "delve into", "moreover", "furthermore", "in conclusion", 
+              "it's worth noting", "a testament to"
           ]
 
-          # DYNAMIC OPENINGS TO PREVENT REPETITION
+          # DYNAMIC OPENINGS TO PREVENT REPETITION (British Gossip & Psychological Hooks)
           OPENING_VIBES = [
-              "Start directly with a sarcastic comment about the celebrities involved.",
-              "Start with a shocking rhetorical question to the reader.",
-              "Start by casually mentioning how the timeline/streets are reacting right now.",
-              "Start by acting exhausted by the drama but admitting you love the tea.",
-              "Start by dropping the most controversial fact immediately without saying any greetings.",
-              "Start like you are whispering a secret you just found out.",
-              "Start by laughing at the situation before explaining what happened."
+              "Start with a cheeky rhetorical question asking the reader if they are ready for this mess.",
+              "Start by pretending to whisper a secret you just found out about these celebrities.",
+              "Start with a blunt, slightly sarcastic summary of the drama.",
+              "Start by acting exhausted by the constant showbiz drama but admitting you absolutely love it.",
+              "Start by expressing shock at how cheeky these celebs are being online today.",
+              "Start with a bold, controversial statement that challenges a popular opinion about the artist/actor.",
+              "Start by triggering FOMO (Fear Of Missing Out), making the reader feel they are the last to know this crucial gossip."
           ]
           random_hook = random.choice(OPENING_VIBES)
 
           # --- 2. FETCH GOOGLE NEWS RSS (PAN-AFRICAN ENTERTAINMENT) ---
-          q = '("Nigeria" OR "South Africa" OR "Ghana" OR "Kenya" OR "Tanzania" OR "Africa") (afrobeats OR amapiano OR nollywood OR "social media trend" OR "music video" OR celebrity OR showbiz) when:24h'
+          q = '("Nigeria" OR "South Africa" OR "Ghana" OR "Kenya" OR "Tanzania" OR "Africa") (afrobeats OR amapiano OR nollywood OR "social media trend" OR "music video" OR celebrity OR showbiz) when:2d'
           safe_q = urllib.parse.quote(q)
           rss_url = f'https://news.google.com/rss/search?q={safe_q}&hl=en-KE&gl=KE&ceid=KE:en'
           
@@ -101,21 +103,38 @@ jobs:
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
 
-          # --- 3. FREE SCRAPER (STEALTH PLAYWRIGHT) ---
+          # --- 3. FREE SCRAPER (STEALTH PLAYWRIGHT & DIRECT LINK BYPASS) ---
           def scrape_article_free(url):
-              print(f"🕷️ Stealth-Loading: {url}")
+              print(f"🕷️ Stealth-Loading Google News Link: {url}")
               with sync_playwright() as p:
-                  browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox"])
+                  browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox", "--disable-dev-shm-usage"])
                   context = browser.new_context(
-                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                      viewport={"width": 1920, "height": 1080}
                   )
                   page = context.new_page()
                   page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
                   try:
-                      page.goto(url, timeout=50000)
-                      try: page.wait_for_load_state("networkidle", timeout=10000)
+                      page.goto(url, timeout=60000)
+                      
+                      # Force Playwright to wait until the URL leaves google.com
+                      try:
+                          page.wait_for_function("window.location.hostname && !window.location.hostname.includes('google.com')", timeout=20000)
                       except: pass
+                      
+                      # Fallback: If still trapped on Google, find the direct link in the HTML and click it manually
+                      if "google.com" in page.url:
+                          try:
+                              hrefs = page.evaluate("Array.from(document.querySelectorAll('a')).map(a => a.href).filter(h => h.startsWith('http') && !h.includes('google.com'))")
+                              if hrefs:
+                                  print(f"Found hidden direct link: {hrefs[0]}")
+                                  page.goto(hrefs[0], timeout=60000)
+                          except: pass
+
+                      # Wait for the actual destination article to fully load
+                      page.wait_for_timeout(5000)
+                      print(f"📍 Successfully reached full article: {page.url}")
 
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
@@ -137,7 +156,8 @@ jobs:
                       for c in containers:
                           paras = c.find_all("p")
                           chunk = "\n\n".join([p.text.strip() for p in paras if len(p.text) > 50])
-                          if len(chunk) > 600:
+                          # Lowered threshold to catch short gossip updates
+                          if len(chunk) > 300:
                               article_text = chunk
                               break
                       
@@ -146,7 +166,9 @@ jobs:
                           article_text = "\n\n".join([p.text.strip() for p in all_paras if len(p.text.strip()) > 60])
                           
                       return article_text, img_url
-                  except: return None, None
+                  except Exception as e: 
+                      print(f"Scrape error: {e}")
+                      return None, None
                   finally: browser.close()
 
           # --- 4. PROCESS ARTICLES ---
@@ -160,7 +182,7 @@ jobs:
               if not result: continue
               text, img = result
               
-              if text and len(text) > 600:
+              if text and len(text) > 300:
                   full_content = text
                   target_image = img
                   final_hash = u_hash
@@ -179,7 +201,7 @@ jobs:
               files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
               if not files: return ""
               sample = random.sample(files, min(len(files), 3))
-              context = "PAST STORIES (PICK ONE AND LINK IT NATURALLY IN THE SHENG TEXT USING MARKDOWN):\n"
+              context = "PAST STORIES (PICK ONE AND LINK IT NATURALLY IN THE TEXT USING MARKDOWN):\n"
               for f in sample:
                   try:
                       with open(os.path.join(posts_dir, f), 'r', encoding='utf-8') as c:
@@ -206,7 +228,7 @@ jobs:
               text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
 
-          # --- 6. GEMINI REWRITE (Humanized Reporter Persona) ---
+          # --- 6. GEMINI REWRITE (Humanized British Reporter Persona) ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
           
@@ -224,42 +246,43 @@ jobs:
           2. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph. Make it a valid link using the provided zandani.co.ke URL.
 
           LANGUAGE MANDATE (STRICT):
-          - TITLE, EXCERPT, SLUG, AND TAGS: MUST be written in VERY SIMPLE, SEO-OPTIMIZED ENGLISH to rank well on search engines. Keep them clear, searchable, and catchy.
-          
-          TONE FOR THE BODY CONTENT (CRITICAL):
-          - DO NOT WRITE IN "PURE" OR FORCED SHENG. Real humans code-switch. 
-          - Write exactly like a 24-year-old Nairobian tweeting on X (Twitter). Mix natural Swahili, conversational English, and current Sheng smoothly.
-          - DO NOT force slang into every single word. Let the sentences breathe. 
-          - Tone is investigative but street-smart. You are the plug for the truth.
+          - NO SHENG OR SWAHILI. You are writing for an audience who loves simple, dramatic British gossip.
+          - Use very simple, conversational British English. Think of a chatty, cheeky tabloid reporter having a chinwag about Afrobeats, Amapiano, or Nollywood stars.
+          - Keep the vocabulary basic but the tone highly dramatic and gossipy. 
+          - Use conversational fillers naturally to sound human: "Right,", "Well,", "Honestly,", "Anyway,", "Mate."
+          - Include rhetorical questions and subjective asides in brackets (e.g., "Can you even imagine?", "What a nightmare.").
+          - Vary sentence length aggressively. Mix short, punchy facts with longer, breathy gossip thoughts.
           - BANNED PHRASES: {", ".join(BANNED_PHRASES)}.
-          - NEVER use long dashes or double dashes. Only use regular hyphens.
+          - NEVER use long dashes or double dashes. Only use regular single hyphens.
 
           ANTI-REPETITION RULES:
           - DO NOT use the exact same words or structure as previous articles. 
-          - Avoid starting every article with "Manze", "Bana", or "Kwanza". Use them sparingly inside the text instead.
           - HERE IS YOUR UNIQUE OPENING INSTRUCTION FOR THIS SPECIFIC ARTICLE: {random_hook}
 
           EXAMPLE OF THE PERFECT TONE VIBE TO MIMIC (DO NOT COPY THESE EXACT WORDS):
-          "Hii story inakaa kuwa moto sana. Kama ulikuwa unafikiria hii beef itaisha leo, wacha nikusho, mambo ndio inachemka. Kwanza the way evidence imetokea online, inaonyesha kulikuwa na plan all along. Receipts zinasema..."
+          "Right, gather round. If you thought yesterday was dramatic in the Afrobeats scene, you are in for an absolute treat. The internet is having a right laugh about this one. The receipts say it all..."
 
           STRICT OUTPUT FORMAT:
-          TITLE: [Very Simple SEO-Optimized English Title]
+          TITLE: [Very Simple SEO-Optimized English Title front-loaded with the main keyword]
           SLUG: [url-friendly-lowercase-english-slug]
-          EXCERPT: [Simple SEO-Optimized English Snippet/Hook]
+          EXCERPT: [Simple SEO-Optimized English Snippet/Hook under 160 characters]
           CATEGORY: Entertainment
           TAGS: [comma, separated, english, seo, tags]
           IMAGE_KEYWORD: [search query based on title]
           BODY:
-          [Article text in mixed conversational Sheng/Swahili/English containing the internal link. You MUST structure the body using EXACTLY these three Markdown headings:]
+          [Article text in chatty British English containing the internal link. You MUST structure the body using EXACTLY these Markdown headings:]
 
-          ## Scoop Ni Gani?
-          [What actually happened?]
+          ## [Direct Question About the Core Gossip]
+          [40 to 60-word completely objective answer paragraph to win Google Featured Snippets]
 
-          ## Evidence Ni?
-          [The receipts/details/proof]
+          ## The Scoop
+          [What actually happened in the drama?]
 
-          ## Verdict Yetu Ni
-          [Your reporter opinion/conclusion]
+          ## The Evidence
+          [The receipts/details/proof from social media or statements]
+
+          ## The Verdict
+          [Your cheeky British reporter opinion/conclusion]
           '''
 
           print("🤖 Generating with Gemini...")
@@ -361,6 +384,6 @@ jobs:
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: fresh african entertainment gossip via Google News 🕵️"
+          commit_message: "content: fresh african entertainment gossip via direct links 🕵️"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/scrape_memory.json'
