@@ -21,7 +21,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install tweepy requests
+        run: pip install tweepy
 
       - name: Compose and Send Tweet
         env:
@@ -31,7 +31,7 @@ jobs:
           TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
         run: |
           python << 'EOF'
-          import os, sys, re, requests, tweepy, subprocess
+          import os, sys, re, time, subprocess, tweepy
 
           # 1. Authenticate with X API using exact secret names
           api_key = os.environ.get('TWITTER_CONSUMER_KEY')
@@ -63,34 +63,18 @@ jobs:
               title = re.search(r'title:\s*"(.*?)"', content).group(1)
               excerpt = re.search(r'excerpt:\s*"(.*?)"', content).group(1)
               slug = re.search(r'slug:\s*"(.*?)"', content).group(1)
-              image_url = re.search(r'image:\s*"(.*?)"', content).group(1)
           except AttributeError:
               print("Error: Could not parse frontmatter from the markdown file.")
               sys.exit(1)
 
-          # 4. Download the image temporarily to the GitHub runner
-          image_path = "temp_gossip_img.jpg"
-          media_ids = []
-          if image_url:
-              print(f"📸 Downloading image: {image_url}")
-              try:
-                  r = requests.get(image_url, stream=True, timeout=10)
-                  if r.status_code == 200:
-                      with open(image_path, 'wb') as f:
-                          for chunk in r: f.write(chunk)
-                  else:
-                      print("Failed to download image. Proceeding without it.")
-                      image_path = None
-              except Exception as e:
-                  print(f"Image download error: {e}")
-                  image_path = None
+          article_link = f"https://zandani.co.ke/posts/{slug}"
 
-          # 5. Connect to X (Twitter) API
-          # We use API v1.1 just for the media upload (X free tier quirk)
-          auth = tweepy.OAuth1UserHandler(api_key, api_secret, access_token, access_secret)
-          api_v1 = tweepy.API(auth)
-          
-          # We use API v2 for actually composing the tweet
+          # 4. The 30-Second Wait
+          # This gives your website time to finish deploying so Twitter can successfully scrape the image!
+          print("⏳ Waiting 30 seconds for the website to publish...")
+          time.sleep(30)
+
+          # 5. Connect to X (Twitter) API v2
           client = tweepy.Client(
               consumer_key=api_key,
               consumer_secret=api_secret,
@@ -98,45 +82,22 @@ jobs:
               access_token_secret=access_secret
           )
 
-          # Upload the image if we successfully downloaded it
-          if image_path and os.path.exists(image_path):
-              print("🚀 Uploading media to X...")
-              try:
-                  media = api_v1.media_upload(image_path)
-                  media_ids.append(media.media_id)
-              except Exception as e:
-                  print(f"Media upload failed: {e}")
-
-          # 6. Format the Tweet (Keep it under 280 characters)
+          # 6. Format the Tweet
+          # X links always take up exactly 23 characters, leaving us 257 for the text
           main_text = f"{title}\n\n{excerpt}"
-          if len(main_text) > 270:
-              main_text = main_text[:267] + "..."
+          if len(main_text) > 220:
+              main_text = main_text[:217] + "..."
 
-          # 7. Post the Main Tweet
-          print("📝 Posting main tweet...")
+          # By putting the link in the main tweet, X will automatically generate the image card
+          tweet_content = f"{main_text}\n\nRead full article here: {article_link}"
+
+          # 7. Post the Tweet
+          print("📝 Posting tweet with link preview...")
           try:
-              response = client.create_tweet(
-                  text=main_text, 
-                  media_ids=media_ids if media_ids else None
-              )
-              tweet_id = response.data['id']
-              print(f"✅ Main tweet sent successfully! ID: {tweet_id}")
+              response = client.create_tweet(text=tweet_content)
+              print(f"✅ Tweet sent successfully! ID: {response.data['id']}")
           except Exception as e:
-              print(f"Failed to send main tweet: {e}")
+              print(f"Failed to send tweet: {e}")
               sys.exit(1)
-
-          # 8. Post the Reply with the Link
-          article_link = f"https://zandani.co.ke/posts/{slug}"
-          reply_text = f"Read full article here: {article_link}"
-          
-          print("🔗 Posting reply link...")
-          try:
-              client.create_tweet(
-                  text=reply_text, 
-                  in_reply_to_tweet_id=tweet_id
-              )
-              print("✅ Reply sent successfully!")
-          except Exception as e:
-              print(f"Failed to send reply: {e}")
 
           EOF
