@@ -1,4 +1,4 @@
-name: Kenya News Sheng Scraper (Google News + Internal Links)
+name: Kenya News British Gossip Scraper (Google News + Internal Links)
 
 on:
   schedule:
@@ -79,23 +79,30 @@ jobs:
 
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
           
-          # Humanizer: added AI cliches to banned list
+          # Humanizer: added AI cliches and old slang to banned list
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
               "grab your popcorn", "listen up", "buckle up", "breaking news",
               "sherehe", "form ni gani", "udaku", "hello guys", "welcome back",
-              "mambo vipi", "niaje wasee", "karibuni", "tapestry", "dive in"
+              "mambo vipi", "niaje wasee", "karibuni", "tapestry", "dive in",
+              "delve into", "moreover", "furthermore", "in conclusion", 
+              "it's worth noting", "a testament to", "navigating the landscape",
+              "in today's digital age", "shed light on"
           ]
 
-          # DYNAMIC OPENINGS TO PREVENT REPETITION (Kenya News Focus)
+          # DYNAMIC OPENINGS TO PREVENT REPETITION (British Gossip & Psychological Hooks)
           OPENING_VIBES = [
-              "Start with a sarcastic observation about Kenyan politicians, the economy, or celebrities.",
-              "Start with a rhetorical question about the endless drama in Nairobi.",
-              "Start by acting exhausted by the news cycle but admitting it's entertaining.",
-              "Start by dropping a controversial opinion about the situation directly.",
-              "Start by laughing at how Kenyans on X (Twitter) are reacting to this.",
-              "Start like you are leaking a government or celebrity secret.",
-              "Start directly with the facts, but phrase it like a street rumor you just confirmed."
+              "Start with a cheeky rhetorical question asking the reader if they are ready for this mess.",
+              "Start by pretending to whisper a secret you just found out.",
+              "Start with a blunt, slightly sarcastic summary of the situation.",
+              "Start by acting exhausted by the constant drama but admitting you absolutely love it.",
+              "Start with a direct address to the reader like you are chatting over a cup of coffee.",
+              "Start by expressing shock at how cheeky people are being online today.",
+              "Start with a relatable, slightly embarrassing personal anecdote that somehow connects to the news.",
+              "Start with a bold, controversial statement that challenges a popular opinion, but keep it lighthearted.",
+              "Start by highlighting a shocking or surprising fact about the situation that most people completely missed.",
+              "Start with a vivid, dramatic metaphor, like comparing the drama to a telenovela or a messy breakup.",
+              "Start by triggering FOMO (Fear Of Missing Out), making the reader feel they are the last to know this crucial gossip."
           ]
           random_hook = random.choice(OPENING_VIBES)
 
@@ -206,7 +213,7 @@ jobs:
               files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
               if not files: return ""
               sample = random.sample(files, min(len(files), 3))
-              context = "PAST STORIES (PICK ONE AND LINK IT NATURALLY IN THE SHENG TEXT USING MARKDOWN):\n"
+              context = "PAST STORIES (PICK ONE AND LINK IT NATURALLY IN THE TEXT USING MARKDOWN):\n"
               for f in sample:
                   try:
                       with open(os.path.join(posts_dir, f), 'r', encoding='utf-8') as c:
@@ -245,39 +252,40 @@ jobs:
           
           {internal_links_data}
 
-          TASK: Write a news report as a **Nairobi Gen Z Gossip Reporter**.
+          TASK: Write a news report as a **British Tabloid Gossip Columnist**.
           1. Use Google Search to research the latest details on this story if needed.
           2. Naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph.
 
           LANGUAGE MANDATE (STRICT):
-          - TITLE, EXCERPT, SLUG, AND TAGS: MUST be written in VERY SIMPLE, SEO-OPTIMIZED ENGLISH to rank well on search engines. Keep them clear, searchable, and catchy.
-          
-          TONE FOR THE BODY CONTENT (CRITICAL):
-          - DO NOT WRITE IN "PURE" OR FORCED SHENG. Real humans code-switch. 
-          - Write exactly like a 24-year-old Nairobian tweeting on X (Twitter). Mix natural Swahili, conversational English, and current Sheng smoothly.
-          - DO NOT force slang into every single word. Let the sentences breathe. 
-          - Use conversational fillers naturally: "bana", "manze", "ati", "kwanza", "jo", "walae".
-          - Tone is investigative but street-smart. You dug for the info.
+          - NO SHENG OR SWAHILI. You are writing for an audience who loves simple, dramatic British gossip.
+          - Use very simple, conversational British English. Think of a chatty, cheeky tabloid reporter having a chinwag.
+          - Keep the vocabulary basic but the tone highly dramatic and gossipy. 
+          - Use conversational fillers naturally to sound human: "Right,", "Well,", "Honestly,", "Anyway,", "Mate."
+          - Include rhetorical questions and subjective asides in brackets (e.g., "Can you even imagine?", "What a nightmare.").
+          - Vary sentence length aggressively. Mix short, punchy facts with longer, breathy gossip thoughts.
           - BANNED PHRASES: {", ".join(BANNED_PHRASES)}.
-          - NEVER use long dashes or double dashes. Only use regular hyphens.
+          - NEVER use long dashes or double dashes. Only use regular single hyphens.
 
           ANTI-REPETITION RULES:
           - DO NOT use the exact same words or structure as previous articles. 
-          - Avoid starting every article with "Manze", "Bana", or "Kwanza". Use them sparingly inside the text instead.
           - HERE IS YOUR UNIQUE OPENING INSTRUCTION FOR THIS SPECIFIC ARTICLE: {random_hook}
 
           EXAMPLE OF THE PERFECT TONE VIBE TO MIMIC (DO NOT COPY THESE EXACT WORDS):
-          "Hii country yetu ina mambo. Uki-think umeona yote, boom, another drama inatokea. Kwanza the way wasee wame-react hapo X inaonyesha hakuna mwenye anabuy hii story. The facts ni hizi..."
+          "Right, gather round. If you thought yesterday was dramatic, you are in for an absolute treat. The internet is having a right laugh about this one. So, here is what actually went down..."
 
           STRICT OUTPUT FORMAT:
-          TITLE: [Very Simple SEO-Optimized English Title]
+          TITLE: [Very Simple SEO-Optimized English Title starting with the main keyword]
           SLUG: [url-friendly-lowercase-english-slug]
-          EXCERPT: [Simple SEO-Optimized English Snippet/Hook]
+          EXCERPT: [Simple SEO-Optimized English Snippet/Hook under 160 characters]
           CATEGORY: Kenya News
           TAGS: [comma, separated, english, seo, tags]
           IMAGE_KEYWORD: [search query]
           BODY:
-          [Article text in mixed conversational Sheng/Swahili/English containing the internal link. Structure it logically: The Scoop -> The Evidence -> The Verdict.]
+          [Article text in chatty, simple British English containing the internal link. 
+          Structure it logically: 
+          - Include an H2 heading asking a direct question about the core gossip/news.
+          - Immediately follow that H2 with a crisp, 40 to 60 word neutral answer paragraph to win Google Featured Snippets.
+          - Then dive into the rest of the cheeky British gossip: The Scoop -> The Evidence -> The Verdict.]
           '''
 
           full_text = ""
