@@ -79,7 +79,6 @@ jobs:
 
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
           
-          # Humanizer: added AI cliches and old slang to banned list
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
               "grab your popcorn", "listen up", "buckle up", "breaking news",
@@ -90,7 +89,6 @@ jobs:
               "in today's digital age", "shed light on"
           ]
 
-          # DYNAMIC OPENINGS TO PREVENT REPETITION (British Gossip & Psychological Hooks)
           OPENING_VIBES = [
               "Start with a cheeky rhetorical question asking the reader if they are ready for this mess.",
               "Start by pretending to whisper a secret you just found out.",
@@ -132,7 +130,7 @@ jobs:
               'tech': 'kenya tech OR kenya technology OR nairobi startup OR kenya innovation'
           }
           query_str = base_keywords.get(topic, 'kenya breaking news')
-          safe_query = urllib.parse.quote(f"{query_str} when:24h")
+          safe_query = urllib.parse.quote(f"{query_str} when:2d")
           
           rss_url = f"https://news.google.com/rss/search?q={safe_query}&hl=en-KE&gl=KE&ceid=KE:en"
           print(f"🌍 Fetching Google News: {rss_url}")
@@ -154,16 +152,36 @@ jobs:
 
           # --- 3. FREE SCRAPER ---
           def scrape_article_free(url):
-              print(f"🕷️ Stealth-Loading: {url}")
+              print(f"🕷️ Stealth-Loading Google News Link: {url}")
               with sync_playwright() as p:
-                  browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox"])
-                  context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36")
+                  browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox", "--disable-dev-shm-usage"])
+                  context = browser.new_context(
+                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                      viewport={"width": 1920, "height": 1080}
+                  )
                   page = context.new_page()
                   page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
                   try:
-                      page.goto(url, timeout=50000)
-                      try: page.wait_for_load_state("networkidle", timeout=10000)
+                      page.goto(url, timeout=60000)
+                      
+                      # Force Playwright to wait until the URL leaves google.com
+                      try:
+                          page.wait_for_function("window.location.hostname && !window.location.hostname.includes('google.com')", timeout=20000)
                       except: pass
+                      
+                      # Fallback: If still trapped on Google, find the direct link in the HTML and click it manually
+                      if "google.com" in page.url:
+                          try:
+                              hrefs = page.evaluate("Array.from(document.querySelectorAll('a')).map(a => a.href).filter(h => h.startsWith('http') && !h.includes('google.com'))")
+                              if hrefs:
+                                  print(f"Found hidden direct link: {hrefs[0]}")
+                                  page.goto(hrefs[0], timeout=60000)
+                          except: pass
+
+                      # Wait for the actual destination article to fully load
+                      page.wait_for_timeout(5000)
+                      print(f"📍 Successfully reached full article: {page.url}")
+                      
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
                       img_url = ""
@@ -178,14 +196,16 @@ jobs:
                       for c in containers:
                           paras = c.find_all("p")
                           chunk = "\n\n".join([p.text.strip() for p in paras if len(p.text) > 50])
-                          if len(chunk) > 600:
+                          if len(chunk) > 300:
                               article_text = chunk
                               break
                       if not article_text:
                           all_paras = soup.find_all("p")
                           article_text = "\n\n".join([p.text.strip() for p in all_paras if len(p.text.strip()) > 60])
                       return article_text, img_url
-                  except: return None, None
+                  except Exception as e: 
+                      print(f"Scrape error: {e}")
+                      return None, None
                   finally: browser.close()
 
           # --- 4. PROCESS ARTICLES ---
@@ -196,7 +216,7 @@ jobs:
               result = scrape_article_free(a['url'])
               if not result: continue
               text, img = result
-              if text and len(text) > 600:
+              if text and len(text) > 300:
                   full_raw_text = text
                   target_image = img
                   final_hash = u_hash
@@ -371,6 +391,6 @@ jobs:
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: fresh local scoop via Google News 🇰🇪"
+          commit_message: "content: fresh local scoop via direct links 🇰🇪"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/scrape_memory.json'
