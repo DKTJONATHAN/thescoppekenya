@@ -316,15 +316,20 @@ jobs:
 
           parsed = {"TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": ""}
 
-          section_matches = re.findall(r'^(TITLE|SLUG|EXCERPT|CATEGORY|TAGS|IMAGE_KEYWORD|BODY):\s*(.*)', final_text, re.MULTILINE | re.IGNORECASE)
+          section_matches = re.findall(r'^(TITLE|SLUG|EXCERPT|CATEGORY|TAGS|IMAGE_KEYWORD):\s*(.*)', final_text, re.MULTILINE | re.IGNORECASE)
           for key, value in section_matches:
-              key = key.upper()
-              if key != "BODY":
-                  parsed[key] = value.strip()
+              parsed[key.upper()] = value.strip()
 
+          # Isolate the body content
           body_match = re.search(r'BODY:\s*(.*)', final_text, re.DOTALL | re.IGNORECASE)
           if body_match:
               parsed["BODY"] = body_match.group(1).strip()
+          else:
+              # Fallback if BODY tag is totally missing
+              parsed["BODY"] = final_text.split("BODY:", 1)[-1].strip() if "BODY:" in final_text else final_text
+
+          # Scrub out any leaked frontmatter lines from the top of the body
+          parsed["BODY"] = re.sub(r'^(TITLE|SLUG|EXCERPT|CATEGORY|TAGS|IMAGE_KEYWORD|BODY):\s*.*$', '', parsed["BODY"], flags=re.MULTILINE | re.IGNORECASE).strip()
 
           parsed["BODY"] = dash_scrubber(parsed["BODY"]).strip()
 
