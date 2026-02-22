@@ -100,55 +100,90 @@ jobs:
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
 
-          # --- 3. FREE SCRAPER (unchanged) ---
+          # --- 3. STRONG FULL-ARTICLE SCRAPER (forces real publisher link) ---
           def scrape_article_free(url):
-              print(f"🕷️ Stealth-Loading Google News Link: {url}")
+              print(f"🕷️ Trying full article from Google News: {url}")
               with sync_playwright() as p:
-                  browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox", "--disable-dev-shm-usage"])
+                  browser = p.chromium.launch(headless=True, args=[
+                      "--no-sandbox", 
+                      "--disable-dev-shm-usage",
+                      "--disable-blink-features=AutomationControlled"
+                  ])
                   context = browser.new_context(
-                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
                       viewport={"width": 1920, "height": 1080}
                   )
                   page = context.new_page()
-                  page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
                   try:
-                      page.goto(url, timeout=60000)
-                      try:
-                          page.wait_for_function("window.location.hostname && !window.location.hostname.includes('google.com')", timeout=20000)
-                      except: pass
-                      if "google.com" in page.url:
-                          try:
-                              hrefs = page.evaluate("Array.from(document.querySelectorAll('a')).map(a => a.href).filter(h => h.startsWith('http') && !h.includes('google.com'))")
-                              if hrefs:
-                                  print(f"Found hidden direct link: {hrefs[0]}")
-                                  page.goto(hrefs[0], timeout=60000)
-                          except: pass
-                      page.wait_for_timeout(5000)
-                      print(f"📍 Successfully reached full article: {page.url}")
+                      page.goto(url, timeout=60000, wait_until="domcontentloaded")
+
+                      # Force real link if still on Google
+                      if any(x in page.url for x in ["google.com", "news.google.com"]):
+                          print("   Still on Google wrapper → forcing direct link...")
+                          direct = page.evaluate('''() => {
+                              const links = Array.from(document.querySelectorAll('a[href^="http"]'));
+                              for (let a of links) {
+                                  const h = a.href;
+                                  if (!h.includes('google.com') && !h.includes('news.google.com') && h.length > 30) {
+                                      return h;
+                                  }
+                              }
+                              return null;
+                          }''')
+                          if direct:
+                              print(f"   Found direct link → {direct[:80]}...")
+                              page.goto(direct, timeout=60000, wait_until="networkidle")
+                          else:
+                              page.click('text=/Visit|Continue|Go to site/i', timeout=8000).catch(lambda: None)
+                              page.wait_for_timeout(6000)
+
+                      # Scroll & wait for full content
+                      page.wait_for_timeout(8000)
+                      page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                      page.wait_for_timeout(4000)
+
+                      print(f"✅ Landed on real article: {page.url}")
+
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
-                      img_url = ""
-                      og_image = soup.find("meta", property="og:image")
-                      if og_image and og_image.get("content"): img_url = og_image["content"]
-                      if not img_url:
-                          twitter_image = soup.find("meta", attrs={"name": "twitter:image"})
-                          if twitter_image and twitter_image.get("content"): img_url = twitter_image["content"]
+
+                      # Multi-strategy text extraction
                       article_text = ""
-                      containers = soup.find_all(['article', 'main', 'div'], class_=re.compile(r'(body|content|entry|post)'))
+                      containers = soup.select('article, main, .article-body, .post-content, .entry-content, .story-content, .content-body, .article__content, .post-body')
                       for c in containers:
-                          paras = c.find_all("p")
-                          chunk = "\n\n".join([p.text.strip() for p in paras if len(p.text) > 50])
-                          if len(chunk) > 300:
+                          paras = c.find_all('p')
+                          chunk = "\n\n".join([p.get_text(strip=True) for p in paras if len(p.get_text(strip=True)) > 40])
+                          if len(chunk) > 600:
                               article_text = chunk
                               break
-                      if not article_text:
-                          all_paras = soup.find_all("p")
-                          article_text = "\n\n".join([p.text.strip() for p in all_paras if len(p.text.strip()) > 60])
+
+                      if len(article_text) < 600:
+                          all_paras = soup.find_all('p')
+                          chunk = "\n\n".join([p.get_text(strip=True) for p in all_paras if len(p.get_text(strip=True)) > 40])
+                          if len(chunk) > 400:
+                              article_text = chunk
+
+                      if len(article_text) < 400:
+                          article_text = soup.get_text(separator='\n\n', strip=True)
+                          chunks = [c.strip() for c in article_text.split('\n\n') if len(c.strip()) > 80]
+                          if chunks:
+                              article_text = max(chunks, key=len)
+
+                      # Image
+                      img_url = ""
+                      for meta in soup.find_all('meta'):
+                          if meta.get('property') in ['og:image', 'twitter:image']:
+                              img_url = meta.get('content', '')
+                              if img_url: break
+
+                      print(f"   Extracted {len(article_text)} characters of text")
                       return article_text, img_url
-                  except Exception as e: 
-                      print(f"Scrape error: {e}")
+
+                  except Exception as e:
+                      print(f"   Scrape failed: {e}")
                       return None, None
-                  finally: browser.close()
+                  finally:
+                      browser.close()
 
           # --- 4. PROCESS ARTICLES ---
           full_content, final_hash, target_title, target_image = None, None, None, None
@@ -296,27 +331,22 @@ jobs:
 
           parsed = {"TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": ""}
 
-          # Extract headers
           section_matches = re.findall(r'^(TITLE|SLUG|EXCERPT|CATEGORY|TAGS|IMAGE_KEYWORD|BODY):\s*(.*)', final_text, re.MULTILINE | re.IGNORECASE)
           for key, value in section_matches:
               key = key.upper()
               if key != "BODY":
                   parsed[key] = value.strip()
 
-          # Extract full BODY
           body_match = re.search(r'BODY:\s*(.*)', final_text, re.DOTALL | re.IGNORECASE)
           if body_match:
               parsed["BODY"] = body_match.group(1).strip()
 
-          # Cleanups
           parsed["BODY"] = re.sub(r'```[\s\S]*?```', '', parsed["BODY"])
           parsed["BODY"] = dash_scrubber(parsed["BODY"]).strip()
 
-          # Proper tags
           tags_list = [t.strip().replace('"', '') for t in parsed["TAGS"].split(",") if t.strip()]
           tags_str = ', '.join([f'"{t}"' for t in tags_list]) if tags_list else '"afrobeats", "nollywood", "gossip"'
 
-          # Strong fallback
           if not parsed["BODY"] or len(parsed["BODY"]) < 300:
               print("⚠️ BODY extraction weak - using fallback")
               parsed["BODY"] = final_text.split("BODY:", 1)[-1].strip() if "BODY:" in final_text else final_text
