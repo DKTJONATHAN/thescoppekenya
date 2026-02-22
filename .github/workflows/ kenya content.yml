@@ -166,14 +166,15 @@ jobs:
                   try:
                       page.goto(url, timeout=60000, wait_until="domcontentloaded")
 
-                      # Force real link if still on Google
+                      # === FORCE REAL PUBLISHER LINK ===
                       if any(x in page.url for x in ["google.com", "news.google.com"]):
                           print("   Still on Google wrapper → forcing direct link...")
+                          # Try to extract real URL from page
                           direct = page.evaluate('''() => {
                               const links = Array.from(document.querySelectorAll('a[href^="http"]'));
                               for (let a of links) {
                                   const h = a.href;
-                                  if (!h.includes('google.com') && !h.includes('news.google.com') && h.length > 30) {
+                                  if (!h.includes('google.com') && !h.includes('news.google.com') && h.length > 40) {
                                       return h;
                                   }
                               }
@@ -183,10 +184,14 @@ jobs:
                               print(f"   Found direct link → {direct[:80]}...")
                               page.goto(direct, timeout=60000, wait_until="networkidle")
                           else:
-                              page.click('text=/Visit|Continue|Go to site/i', timeout=8000).catch(lambda: None)
-                              page.wait_for_timeout(6000)
+                              # Fallback click on any "Visit" button
+                              try:
+                                  page.click('text=/Visit|Continue|Go to site|Read more/i', timeout=10000)
+                                  page.wait_for_timeout(6000)
+                              except:
+                                  print("   No clickable button found, continuing anyway...")
 
-                      # Scroll & wait for full content
+                      # Final load + scroll for lazy content
                       page.wait_for_timeout(8000)
                       page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                       page.wait_for_timeout(4000)
@@ -196,7 +201,7 @@ jobs:
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
 
-                      # Multi-strategy text extraction
+                      # === MULTI-STRATEGY TEXT EXTRACTION ===
                       article_text = ""
                       containers = soup.select('article, main, .article-body, .post-content, .entry-content, .story-content, .content-body, .article__content, .post-body')
                       for c in containers:
@@ -358,7 +363,7 @@ jobs:
 
           if not success_flag: sys.exit(1)
 
-          # --- 7. ROBUST PARSE (guarantees full body) ---
+          # --- 7. ROBUST PARSE ---
           print("🔍 Gemini raw output preview (first 900 chars):")
           print(full_text[:900])
 
