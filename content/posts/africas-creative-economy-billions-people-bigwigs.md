@@ -9,12 +9,6 @@ tags: ["Africa", "creative economy", "music", "film", "gaming", "fashion", "arti
 author: "Okwonko Ben"
 ---
 
-TITLE: Africa's Creative Economy: Are the Billions Really Benefiting the People or Just the Bigwigs?
-SLUG: africas-creative-economy-billions-people-bigwigs
-EXCERPT: Whispers abound in Africa's booming creative economy! Is the projected USD 200 billion by 2030 truly trickling down to the artists?
-CATEGORY: Entertainment
-TAGS: Africa, creative economy, music, film, gaming, fashion, artists, entertainment, gossip, finance, investment
-IMAGE_KEYWORD: African artists behind the scenes
 
 ## Africa's Creative Economy: The Real Story Behind the USD 200 Billion Dream?
 
