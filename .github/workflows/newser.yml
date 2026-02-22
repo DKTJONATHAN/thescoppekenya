@@ -2,12 +2,11 @@ name: African Entertainment British Gossip Bot (Google News)
 
 on:
   schedule:
-    # Runs 5 times a day
     - cron: '15 4,8,12,16,20 * * *'
   workflow_dispatch:
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: \( {{ github.workflow }}- \){{ github.ref }}
   cancel-in-progress: false
 
 permissions:
@@ -59,7 +58,6 @@ jobs:
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
 
-          # BANNED PHRASES (Strict Clean-up) Added common AI cliches
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
               "grab your popcorn", "listen up", "buckle up", "breaking news",
@@ -69,7 +67,6 @@ jobs:
               "it's worth noting", "a testament to"
           ]
 
-          # DYNAMIC OPENINGS TO PREVENT REPETITION (British Gossip & Psychological Hooks)
           OPENING_VIBES = [
               "Start with a cheeky rhetorical question asking the reader if they are ready for this mess.",
               "Start by pretending to whisper a secret you just found out about these celebrities.",
@@ -103,7 +100,7 @@ jobs:
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
 
-          # --- 3. FREE SCRAPER (STEALTH PLAYWRIGHT & DIRECT LINK BYPASS) ---
+          # --- 3. FREE SCRAPER (unchanged) ---
           def scrape_article_free(url):
               print(f"🕷️ Stealth-Loading Google News Link: {url}")
               with sync_playwright() as p:
@@ -114,16 +111,11 @@ jobs:
                   )
                   page = context.new_page()
                   page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-
                   try:
                       page.goto(url, timeout=60000)
-                      
-                      # Force Playwright to wait until the URL leaves google.com
                       try:
                           page.wait_for_function("window.location.hostname && !window.location.hostname.includes('google.com')", timeout=20000)
                       except: pass
-                      
-                      # Fallback: If still trapped on Google, find the direct link in the HTML and click it manually
                       if "google.com" in page.url:
                           try:
                               hrefs = page.evaluate("Array.from(document.querySelectorAll('a')).map(a => a.href).filter(h => h.startsWith('http') && !h.includes('google.com'))")
@@ -131,40 +123,27 @@ jobs:
                                   print(f"Found hidden direct link: {hrefs[0]}")
                                   page.goto(hrefs[0], timeout=60000)
                           except: pass
-
-                      # Wait for the actual destination article to fully load
                       page.wait_for_timeout(5000)
                       print(f"📍 Successfully reached full article: {page.url}")
-
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
-                      
-                      # EXTRACT IMAGE VIA META TAGS
                       img_url = ""
                       og_image = soup.find("meta", property="og:image")
-                      if og_image and og_image.get("content"):
-                          img_url = og_image["content"]
-                      
+                      if og_image and og_image.get("content"): img_url = og_image["content"]
                       if not img_url:
                           twitter_image = soup.find("meta", attrs={"name": "twitter:image"})
-                          if twitter_image and twitter_image.get("content"):
-                              img_url = twitter_image["content"]
-                      
-                      # EXTRACT ARTICLE TEXT
+                          if twitter_image and twitter_image.get("content"): img_url = twitter_image["content"]
                       article_text = ""
                       containers = soup.find_all(['article', 'main', 'div'], class_=re.compile(r'(body|content|entry|post)'))
                       for c in containers:
                           paras = c.find_all("p")
                           chunk = "\n\n".join([p.text.strip() for p in paras if len(p.text) > 50])
-                          # Lowered threshold to catch short gossip updates
                           if len(chunk) > 300:
                               article_text = chunk
                               break
-                      
                       if not article_text:
                           all_paras = soup.find_all("p")
                           article_text = "\n\n".join([p.text.strip() for p in all_paras if len(p.text.strip()) > 60])
-                          
                       return article_text, img_url
                   except Exception as e: 
                       print(f"Scrape error: {e}")
@@ -173,15 +152,12 @@ jobs:
 
           # --- 4. PROCESS ARTICLES ---
           full_content, final_hash, target_title, target_image = None, None, None, None
-          
           for a in articles:
               u_hash = hashlib.md5(a['url'].encode()).hexdigest()
               if u_hash in memory: continue
-              
               result = scrape_article_free(a['url'])
               if not result: continue
               text, img = result
-              
               if text and len(text) > 300:
                   full_content = text
                   target_image = img
@@ -195,7 +171,7 @@ jobs:
 
           print(f"🎯 Target Story: {target_title[:80]}...")
 
-          # --- 5. HELPERS (INTERNAL LINKS & SCRUBBER) ---
+          # --- 5. HELPERS ---
           def get_internal_context(posts_dir):
               if not os.path.exists(posts_dir): return ""
               files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
@@ -228,10 +204,9 @@ jobs:
               text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
 
-          # --- 6. GEMINI REWRITE (Humanized British Reporter Persona) ---
+          # --- 6. GEMINI REWRITE ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
-          
           internal_links_data = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
 
           prompt = f'''Current Date: {full_date_str}
@@ -243,7 +218,7 @@ jobs:
 
           TASK: Write an investigative Pan-African entertainment gossip article.
           1. Use Google Search to verify any trending claims in the story if needed.
-          2. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph. Make it a valid link using the provided zandani.co.ke URL.
+          2. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph.
 
           LANGUAGE MANDATE (STRICT):
           - NO SHENG OR SWAHILI. You are writing for an audience who loves simple, dramatic British gossip.
@@ -295,10 +270,7 @@ jobs:
                       resp = client.models.generate_content(
                           model=model,
                           contents=prompt,
-                          config=types.GenerateContentConfig(
-                              temperature=0.9,
-                              tools=[google_search_tool]
-                          )
+                          config=types.GenerateContentConfig(temperature=0.9, tools=[google_search_tool])
                       )
                       final_text = dash_scrubber(resp.text.strip())
                       success_flag = True
@@ -316,44 +288,53 @@ jobs:
           if not success_flag or not final_text:
               sys.exit(1)
 
-          # --- 7. PARSE & SAVE ---
-          parsed = { "TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": "" }
-          current_section = None
-          
-          for line in final_text.splitlines():
-              clean = line.strip().replace("**", "")
-              if clean.startswith("```"): continue # Prevent stray markdown fences from polluting body
-              
-              if clean.startswith("TITLE:"): parsed["TITLE"] = dash_scrubber(clean.replace("TITLE:", "").strip())
-              elif clean.startswith("SLUG:"): parsed["SLUG"] = clean.replace("SLUG:", "").strip()
-              elif clean.startswith("EXCERPT:"): parsed["EXCERPT"] = dash_scrubber(clean.replace("EXCERPT:", "").strip())
-              elif clean.startswith("CATEGORY:"): parsed["CATEGORY"] = clean.replace("CATEGORY:", "").strip()
-              elif clean.startswith("TAGS:"): parsed["TAGS"] = clean.replace("TAGS:", "").strip()
-              elif clean.startswith("IMAGE_KEYWORD:"): parsed["IMAGE_KEYWORD"] = clean.replace("IMAGE_KEYWORD:", "").strip()
-              elif clean.startswith("BODY:"):
-                  current_section = "BODY"
-                  inline_body = line.split("BODY:", 1)[-1].strip()
-                  if inline_body: parsed["BODY"] += inline_body + "\n"
-                  continue
-              elif current_section == "BODY":
-                  parsed["BODY"] += line + "\n"
+          # ──────────────────────────────────────────────────────────────
+          # 7. ROBUST PARSE (THE FIX)
+          # ──────────────────────────────────────────────────────────────
+          print("🔍 Gemini raw output preview (first 900 chars):")
+          print(final_text[:900])
 
-          # Use scraped image, fallback to unsplash if scraped image is missing
-          final_image_url = target_image if target_image else get_image(parsed['IMAGE_KEYWORD'] or target_title)
+          parsed = {"TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": ""}
 
-          # Use textwrap.dedent to ensure the final markdown file is completely flush-left
+          # Extract headers
+          section_matches = re.findall(r'^(TITLE|SLUG|EXCERPT|CATEGORY|TAGS|IMAGE_KEYWORD|BODY):\s*(.*)', final_text, re.MULTILINE | re.IGNORECASE)
+          for key, value in section_matches:
+              key = key.upper()
+              if key != "BODY":
+                  parsed[key] = value.strip()
+
+          # Extract full BODY
+          body_match = re.search(r'BODY:\s*(.*)', final_text, re.DOTALL | re.IGNORECASE)
+          if body_match:
+              parsed["BODY"] = body_match.group(1).strip()
+
+          # Cleanups
+          parsed["BODY"] = re.sub(r'```[\s\S]*?```', '', parsed["BODY"])
+          parsed["BODY"] = dash_scrubber(parsed["BODY"]).strip()
+
+          # Proper tags
+          tags_list = [t.strip().replace('"', '') for t in parsed["TAGS"].split(",") if t.strip()]
+          tags_str = ', '.join([f'"{t}"' for t in tags_list]) if tags_list else '"afrobeats", "nollywood", "gossip"'
+
+          # Strong fallback
+          if not parsed["BODY"] or len(parsed["BODY"]) < 300:
+              print("⚠️ BODY extraction weak - using fallback")
+              parsed["BODY"] = final_text.split("BODY:", 1)[-1].strip() if "BODY:" in final_text else final_text
+
+          final_image_url = target_image if target_image else get_image(parsed.get('IMAGE_KEYWORD') or target_title)
+
           md_content = textwrap.dedent(f"""\
           ---
           title: "{parsed['TITLE'].replace('"', "'")}"
           slug: "{parsed['SLUG']}"
           excerpt: "{parsed['EXCERPT'].replace('"', "'")}"
           image: "{final_image_url}"
-          category: "{parsed['CATEGORY']}"
+          category: "{parsed['CATEGORY'] or 'Entertainment'}"
           date: "{today_str}"
-          tags: [{parsed['TAGS']}]
+          tags: [{tags_str}]
           ---
 
-          {parsed['BODY'].strip()}
+          {parsed['BODY']}
           """)
 
           out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
@@ -363,12 +344,12 @@ jobs:
           with open(os.path.join(out_dir, filename), "w", encoding="utf-8") as f:
               f.write(md_content)
               
-          # Update Memory
           memory.append(final_hash)
           os.makedirs(os.path.dirname(memory_path), exist_ok=True)
           with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
           
           print(f"✅ Published: {filename}")
+          print(f"   Body length: {len(parsed['BODY'])} characters")
           EOF
 
       - name: Git Safety Pull
