@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       manual_topic:
-        description: 'Force topic: european_football, other_sports, tech'
+        description: 'Force topic: sports, tech'
         required: false
         default: ''
 
@@ -64,7 +64,7 @@ jobs:
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
 
-          # --- 1. CONFIGURATION ---
+          # 1. CONFIGURATION 
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_hour = datetime.datetime.utcnow().hour
@@ -82,29 +82,40 @@ jobs:
           ]
 
           hour_to_topic = {
-              3: 'european_football', 7: 'tech', 11: 'european_football',
-              15: 'other_sports', 19: 'tech'
+              3: 'sports', 7: 'tech', 11: 'sports',
+              15: 'sports', 19: 'tech'
           }
 
           manual_input = os.environ.get('MANUAL_TOPIC', '').strip().lower()
-          valid_topics = ['european_football', 'other_sports', 'tech']
+          valid_topics = ['sports', 'tech']
           if manual_input in valid_topics:
               topic = manual_input
           else:
-              topic = hour_to_topic.get(current_hour, 'european_football')
+              topic = hour_to_topic.get(current_hour, 'sports')
           print(f"🎯 Topic: {topic}")
 
-          # --- 2. FETCH GOOGLE NEWS RSS (strictly last 24 hours) ---
+          # 2. DYNAMIC GOOGLE NEWS RSS (Country Codes for Sports) 
           base_keywords = {
-              'european_football': 'premier league OR arsenal OR manchester united OR chelsea OR la liga OR real madrid OR champions league OR bundesliga OR serie a',
-              'other_sports': 'nba OR formula 1 OR wrc safari rally OR tennis grand slam OR rugby sevens',
+              'sports': 'sports OR athletics OR football OR rugby OR basketball',
               'tech': 'smartphone review OR new phone release OR tech gadget OR samsung galaxy OR iphone OR device alerts'
           }
           query_str = base_keywords.get(topic, 'sports news')
           safe_query = urllib.parse.quote(f"{query_str} when:1d") 
           
-          rss_url = f"[https://news.google.com/rss/search?q=](https://news.google.com/rss/search?q=){safe_query}&hl=en-KE&gl=KE&ceid=KE:en"
-          print(f"🌍 Fetching very recent Google News (last 24h): {rss_url}")
+          if topic == 'sports':
+              # Pick a random country code to get global sports directly
+              country_code = random.choice(['GB', 'US', 'KE', 'ZA', 'AU', 'NG', 'IN'])
+              lang = 'en-GB' if country_code in ['GB', 'ZA', 'AU', 'NG', 'IN', 'KE'] else 'en-US'
+              ceid = f"{country_code}:en"
+              gl = country_code
+          else:
+              gl = 'KE'
+              lang = 'en-KE'
+              ceid = 'KE:en'
+
+          # Constructed securely to prevent connection adapter formatting errors
+          rss_url = f"https://news.google.com/rss/search?q={safe_query}&hl={lang}&gl={gl}&ceid={ceid}"
+          print(f"🌍 Fetching Google News (Country: {gl} | last 24h): {rss_url}")
           
           try:
               resp = requests.get(rss_url, timeout=15)
@@ -122,7 +133,6 @@ jobs:
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
           memory_set = set(memory)
 
-          # Filter only unread articles
           fresh_articles = []
           for a in articles:
               u_hash = hashlib.md5(a['url'].encode()).hexdigest()
@@ -135,7 +145,7 @@ jobs:
 
           print(f"Found {len(fresh_articles)} fresh unread articles from last 24h")
 
-          # --- 3. FAST & RELIABLE SCRAPER ---
+          # 3. FAST & RELIABLE SCRAPER 
           def scrape_article_free(url):
               print(f"🕷️ Scraping: {url}")
               with sync_playwright() as p:
@@ -199,7 +209,7 @@ jobs:
                   finally:
                       browser.close()
 
-          # --- 4. PROCESS ARTICLES (fast & early exit) ---
+          # 4. PROCESS ARTICLES 
           full_raw_text, final_hash, target_title, target_image = None, None, None, None
           for a in fresh_articles:
               u_hash = hashlib.md5(a['url'].encode()).hexdigest()
@@ -216,7 +226,7 @@ jobs:
               print("❌ NO USABLE FULL ARTICLE FOUND IN LAST 24 HOURS (all short or failed). Skipping generation.")
               sys.exit(0)
 
-          # --- 5. HELPERS ---
+          # 5. HELPERS 
           def get_internal_context(posts_dir):
               if not os.path.exists(posts_dir): return ""
               files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
@@ -229,16 +239,16 @@ jobs:
                           txt = c.read()
                           t = re.search(r'title:\s*"(.*?)"', txt)
                           t = t.group(1) if t else f
-                          context += f"- {t} → [https://zandani.co.ke/posts/](https://zandani.co.ke/posts/){f.replace('.md', '')}\n"
+                          context += f"- {t} -> https://zandani.co.ke/posts/{f.replace('.md', '')}\n"
                   except: continue
               return context
 
           def get_real_image(query):
               key = os.environ.get("UNSPLASH_ACCESS_KEY")
-              fallback = "[https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200](https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200)"
+              fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
               if not key: return fallback
               try:
-                  r = requests.get(f"[https://api.unsplash.com/photos/random?query=](https://api.unsplash.com/photos/random?query=){query}&orientation=landscape&client_id={key}", timeout=8)
+                  r = requests.get(f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={key}", timeout=8)
                   if r.status_code == 200: return r.json()['urls']['regular']
               except: pass
               return fallback
@@ -249,7 +259,7 @@ jobs:
               text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
 
-          # --- 6. GENERATION ---
+          # 6. GENERATION 
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
           internal_links_data = get_internal_context(os.environ.get("POSTS_DIR"))
@@ -276,7 +286,7 @@ jobs:
           IMAGE_KEYWORD: [unsplash query]
           BODY:
           [Start with H2 using main keyword.
-          Follow with 40-60 word neutral answer paragraph.
+          Follow with 40 to 60 word neutral answer paragraph.
           Then natural subheadings (AI chooses). No frontmatter repeat in body.]'''
 
           full_text = ""
@@ -303,7 +313,7 @@ jobs:
 
           if not success_flag: sys.exit(1)
 
-          # --- 7. PARSE & SAVE ---
+          # 7. PARSE & SAVE 
           print("🔍 Gemini output preview:", full_text[:900])
 
           # Strip outer markdown wrappers safely
@@ -320,13 +330,10 @@ jobs:
           if body_match:
               parsed["BODY"] = body_match.group(1).strip()
           else:
-              # Fallback if standard extraction fails
               parsed["BODY"] = full_text.split("BODY:", 1)[-1].strip() if "BODY:" in full_text else full_text
 
-          # Scrub dashes completely from the final body text
           parsed["BODY"] = dash_scrubber(parsed["BODY"]).strip()
 
-          # Safely construct the YAML array for tags
           tags_list = [t.strip().replace('"', '') for t in parsed["TAGS"].split(",") if t.strip()]
           tags_str = ', '.join([f'"{t}"' for t in tags_list]) if tags_list else '"global", "news"'
 
@@ -353,7 +360,6 @@ jobs:
               f.write(final_file)
 
           memory.append(final_hash)
-          # Ensure directory exists before writing memory file
           os.makedirs(os.path.dirname(memory_path), exist_ok=True)
           with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
 
