@@ -71,13 +71,12 @@ jobs:
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
 
-          # --- 1. CONFIGURATION ---
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_hour = datetime.datetime.utcnow().hour
 
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
-          
+
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
               "grab your popcorn", "listen up", "buckle up", "breaking news",
@@ -96,15 +95,14 @@ jobs:
 
           manual_input = os.environ.get('MANUAL_TOPIC', '').strip().lower()
           valid_topics = ['entertainment', 'politics', 'news', 'sports', 'business', 'tech']
-          
+
           if manual_input in valid_topics:
               topic = manual_input
           else:
               topic = hour_to_topic.get(current_hour, 'entertainment')
-          
+
           print(f"🎯 Topic: {topic}")
 
-          # --- 2. FETCH GOOGLE NEWS RSS (KENYA) ---
           base_keywords = {
               'entertainment': 'kenya entertainment OR kenya celebrity OR nairobi gossip OR kenya showbiz',
               'politics': 'kenya politics OR kenya parliament OR nairobi politics OR kenya government',
@@ -115,10 +113,10 @@ jobs:
           }
           query_str = base_keywords.get(topic, 'kenya breaking news')
           safe_query = urllib.parse.quote(f"{query_str} when:2d")
-          
+
           rss_url = f"https://news.google.com/rss/search?q={safe_query}&hl=en-KE&gl=KE&ceid=KE:en"
           print(f"🌍 Fetching Google News: {rss_url}")
-          
+
           try:
               resp = requests.get(rss_url, timeout=15)
               soup = BeautifulSoup(resp.content, "xml")
@@ -134,7 +132,6 @@ jobs:
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
 
-          # --- 3. STRONG FULL-ARTICLE SCRAPER ---
           def scrape_article_free(url):
               print(f"🕷️ Trying full article from Google News: {url}")
               with sync_playwright() as p:
@@ -218,7 +215,6 @@ jobs:
                   finally:
                       browser.close()
 
-          # --- 4. PROCESS ARTICLES ---
           full_raw_text, final_hash, target_title, target_image = None, None, None, None
           for a in articles:
               u_hash = hashlib.md5(a['url'].encode()).hexdigest()
@@ -237,7 +233,6 @@ jobs:
               print("❌ No valid unread content found.")
               sys.exit(0)
 
-          # --- 5. HELPERS ---
           def get_internal_context(posts_dir):
               if not os.path.exists(posts_dir): return ""
               files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
@@ -271,7 +266,6 @@ jobs:
               text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
 
-          # --- 6. GENERATION (updated with new keyword + originality instructions) ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
           internal_links_data = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
@@ -312,7 +306,7 @@ jobs:
           Structure it logically: 
           - Start with an H2 heading that includes the main keywords from the original headline.
           - Immediately follow that H2 with a crisp, 40 to 60 word neutral answer paragraph to win Google Featured Snippets.
-          - Continue with natural subheadings that also reuse the main keywords (AI decides the subheadings).]
+          - Continue with natural subheadings that also reuse the main keywords (AI decides the subheadings). Do not include or repeat any frontmatter content (like title, excerpt) in the BODY. Start the BODY with the first paragraph of the article.]
           '''
 
           full_text = ""
@@ -339,7 +333,6 @@ jobs:
 
           if not success_flag: sys.exit(1)
 
-          # --- 7. ROBUST PARSE ---
           print("🔍 Gemini raw output preview (first 900 chars):")
           print(full_text[:900])
 
@@ -380,17 +373,17 @@ jobs:
 
           {parsed['BODY']}
           """)
-          
+
           out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
           os.makedirs(out_dir, exist_ok=True)
           filename = f"{parsed['SLUG']}.md"
           with open(os.path.join(out_dir, filename), "w", encoding="utf-8") as f:
               f.write(final_file)
-          
+
           memory.append(final_hash)
           os.makedirs(os.path.dirname(memory_path), exist_ok=True)
           with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
-          
+
           print(f"✅ Article saved with full body: {filename}")
           print(f"   Body length: {len(parsed['BODY'])} characters")
           EOF
