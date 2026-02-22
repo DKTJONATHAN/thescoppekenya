@@ -67,17 +67,6 @@ jobs:
               "it's worth noting", "a testament to"
           ]
 
-          OPENING_VIBES = [
-              "Start with a cheeky rhetorical question asking the reader if they are ready for this mess.",
-              "Start by pretending to whisper a secret you just found out about these celebrities.",
-              "Start with a blunt, slightly sarcastic summary of the drama.",
-              "Start by acting exhausted by the constant showbiz drama but admitting you absolutely love it.",
-              "Start by expressing shock at how cheeky these celebs are being online today.",
-              "Start with a bold, controversial statement that challenges a popular opinion about the artist/actor.",
-              "Start by triggering FOMO (Fear Of Missing Out), making the reader feel they are the last to know this crucial gossip."
-          ]
-          random_hook = random.choice(OPENING_VIBES)
-
           # --- 2. FETCH GOOGLE NEWS RSS (PAN-AFRICAN ENTERTAINMENT) ---
           q = '("Nigeria" OR "South Africa" OR "Ghana" OR "Kenya" OR "Tanzania" OR "Africa") (afrobeats OR amapiano OR nollywood OR "social media trend" OR "music video" OR celebrity OR showbiz) when:2d'
           safe_q = urllib.parse.quote(q)
@@ -239,7 +228,7 @@ jobs:
               text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
 
-          # --- 6. GEMINI REWRITE ---
+          # --- 6. GEMINI REWRITE (updated prompt - no hardcoded openings, no examples) ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
           internal_links_data = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
@@ -251,13 +240,14 @@ jobs:
           
           {internal_links_data}
 
-          TASK: Write an investigative Pan-African entertainment gossip article.
+          TASK: Write an investigative entertainment gossip article focused on African countries.
           1. Use Google Search to verify any trending claims in the story if needed.
           2. You MUST naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph.
+          3. Identify the main topic and issues discussed in the scraped article. Then, generate a new article that is 100% related but focuses on aspects not covered in the original (e.g., what the story hasn't talked about). Reuse the main keywords from the original headline naturally and heavily in the new TITLE (front-loaded), EXCERPT, and every subheading you create for better SEO.
 
           LANGUAGE MANDATE (STRICT):
           - NO SHENG OR SWAHILI. You are writing for an audience who loves simple, dramatic British gossip.
-          - Use very simple, conversational British English. Think of a chatty, cheeky tabloid reporter having a chinwag about Afrobeats, Amapiano, or Nollywood stars.
+          - Use very simple, conversational British English. Think of a chatty, cheeky tabloid reporter having a chinwag.
           - Keep the vocabulary basic but the tone highly dramatic and gossipy. 
           - Use conversational fillers naturally to sound human: "Right,", "Well,", "Honestly,", "Anyway,", "Mate."
           - Include rhetorical questions and subjective asides in brackets (e.g., "Can you even imagine?", "What a nightmare.").
@@ -266,11 +256,7 @@ jobs:
           - NEVER use long dashes or double dashes. Only use regular single hyphens.
 
           ANTI-REPETITION RULES:
-          - DO NOT use the exact same words or structure as previous articles. 
-          - HERE IS YOUR UNIQUE OPENING INSTRUCTION FOR THIS SPECIFIC ARTICLE: {random_hook}
-
-          EXAMPLE OF THE PERFECT TONE VIBE TO MIMIC (DO NOT COPY THESE EXACT WORDS):
-          "Right, gather round. If you thought yesterday was dramatic in the Afrobeats scene, you are in for an absolute treat. The internet is having a right laugh about this one. The receipts say it all..."
+          - DO NOT use the exact same words or structure as previous articles.
 
           STRICT OUTPUT FORMAT:
           TITLE: [Very Simple SEO-Optimized English Title front-loaded with the main keyword]
@@ -280,19 +266,11 @@ jobs:
           TAGS: [comma, separated, english, seo, tags]
           IMAGE_KEYWORD: [search query based on title]
           BODY:
-          [Article text in chatty British English containing the internal link. You MUST structure the body using EXACTLY these Markdown headings:]
-
-          ## [Direct Question About the Core Gossip]
-          [40 to 60-word completely objective answer paragraph to win Google Featured Snippets]
-
-          ## The Scoop
-          [What actually happened in the drama?]
-
-          ## The Evidence
-          [The receipts/details/proof from social media or statements]
-
-          ## The Verdict
-          [Your cheeky British reporter opinion/conclusion]
+          [Article text in chatty British English containing the internal link. 
+          Structure it logically:
+          - Start with an H2 heading that includes the main keywords from the original headline.
+          - Immediately follow that H2 with a crisp, 40 to 60-word neutral answer paragraph to win Google Featured Snippets.
+          - Continue with natural subheadings that also reuse the main keywords (AI decides the subheadings). Do not include or repeat any frontmatter content (like title, excerpt) in the BODY. Start the BODY with the first paragraph of the article.]
           '''
 
           print("🤖 Generating with Gemini...")
@@ -362,6 +340,7 @@ jobs:
           category: "{parsed['CATEGORY'] or 'Entertainment'}"
           date: "{today_str}"
           tags: [{tags_str}]
+          author: "Okwonko Ben"
           ---
 
           {parsed['BODY']}
