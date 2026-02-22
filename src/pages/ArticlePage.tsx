@@ -5,7 +5,7 @@ import { getPostBySlug, getLatestPosts } from "@/lib/markdown";
 import { Clock, Calendar, Share2, Facebook, Linkedin, ChevronLeft, ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo, useCallback } from "react";
 import { XIcon } from "@/components/XIcon";
 import { NewsletterForm } from "@/components/NewsletterForm";
 import { Helmet } from "react-helmet-async";
@@ -13,25 +13,59 @@ import { Helmet } from "react-helmet-async";
 export default function ArticlePage() {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
-  const post = getPostBySlug(slug || "");
-  const relatedPosts = getLatestPosts(3).filter(p => p.slug !== slug);
+
+  // ──────────────────────────────────────────────────────────────
+  // MEMOIZED DATA – no more re-parsing markdown on every render
+  // ──────────────────────────────────────────────────────────────
+  const post = useMemo(() => getPostBySlug(slug || ""), [slug]);
+  const latestPosts = useMemo(() => getLatestPosts(5), []); // fetch extra for filter buffer
+  const relatedPosts = useMemo(
+    () => latestPosts.filter((p) => p.slug !== slug).slice(0, 3),
+    [latestPosts, slug]
+  );
+
   const [showScrollTop, setShowScrollTop] = useState(false);
 
+  // ──────────────────────────────────────────────────────────────
+  // Preload featured image for maximum LCP (Critical for Core Web Vitals)
+  // ──────────────────────────────────────────────────────────────
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (post?.image) {
+      const link = document.createElement("link");
+      link.rel = "preload";
+      link.as = "image";
+      link.href = post.image;
+      link.setAttribute("fetchpriority", "high");
+      document.head.appendChild(link);
+      return () => document.head.removeChild(link);
+    }
+  }, [post?.image]);
+
+  // Scroll to top on article change
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
   }, [slug]);
 
+  // Throttled scroll with RAF – zero jank
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 400);
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setShowScrollTop(window.scrollY > 400);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  const scrollToTop = useCallback(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   if (!post) {
     return (
@@ -47,31 +81,89 @@ export default function ArticlePage() {
     );
   }
 
-  const formattedDate = new Date(post.date).toLocaleDateString('en-KE', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  });
+  const formattedDate = useMemo(
+    () =>
+      new Date(post.date).toLocaleDateString("en-KE", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      }),
+    [post.date]
+  );
 
-  const shareUrl = typeof window !== 'undefined' ? window.location.href : '';
+  const shareUrl = useMemo(
+    () => (typeof window !== "undefined" ? window.location.href : `https://zandani.co.ke/article/${post.slug}`),
+    [post.slug]
+  );
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "NewsArticle",
-    "headline": post.title,
-    "description": post.excerpt,
-    "image": post.image,
-    "datePublished": post.date,
-    "author": { "@type": "Person", "name": post.author },
-    "publisher": { "@type": "Organization", "name": "Za Ndani" }
-  };
+  // ──────────────────────────────────────────────────────────────
+  // RICH SEO SCHEMA (Article + BreadcrumbList)
+  // ──────────────────────────────────────────────────────────────
+  const articleSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": post.title,
+      "description": post.excerpt,
+      "image": {
+        "@type": "ImageObject",
+        "url": post.image,
+        "width": 1200,
+        "height": 630,
+      },
+      "datePublished": post.date,
+      "author": { "@type": "Person", "name": post.author },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Za Ndani",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://zandani.co.ke/logo.png",
+        },
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": `https://zandani.co.ke/article/${post.slug}`,
+      },
+      "keywords": post.tags.join(", "),
+      "articleSection": post.category,
+      "inLanguage": "en-KE",
+    }),
+    [post]
+  );
+
+  const breadcrumbSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zandani.co.ke" },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": post.category,
+          "item": `https://zandani.co.ke/category/${post.category.toLowerCase()}`,
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": post.title,
+          "item": `https://zandani.co.ke/article/${post.slug}`,
+        },
+      ],
+    }),
+    [post]
+  );
 
   return (
     <Layout>
       <Helmet>
         <title>{post.title} | Za Ndani</title>
         <meta name="description" content={post.excerpt} />
+        <meta name="keywords" content={post.tags.join(", ")} />
         <link rel="canonical" href={`https://zandani.co.ke/article/${post.slug}`} />
+
+        {/* Open Graph */}
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://zandani.co.ke/article/${post.slug}`} />
         <meta property="og:title" content={`${post.title} | Za Ndani`} />
@@ -79,18 +171,23 @@ export default function ArticlePage() {
         <meta property="og:image" content={post.image} />
         <meta property="article:published_time" content={post.date} />
         <meta property="article:section" content={post.category} />
+
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${post.title} | Za Ndani`} />
         <meta name="twitter:description" content={post.excerpt} />
         <meta name="twitter:image" content={post.image} />
       </Helmet>
+
+      {/* SEO JSON-LD */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Back Navigation */}
       <div className="bg-muted/50 border-b border-border">
         <div className="container max-w-4xl py-3">
-          <button 
-            onClick={() => navigate(-1)} 
+          <button
+            onClick={() => navigate(-1)}
             className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
           >
             <ChevronLeft className="w-4 h-4" />
@@ -108,14 +205,12 @@ export default function ArticlePage() {
                 {post.category}
               </Badge>
             </Link>
-            
+
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-foreground leading-tight mb-4">
               {post.title}
             </h1>
-            
-            <p className="text-lg text-muted-foreground mb-6">
-              {post.excerpt}
-            </p>
+
+            <p className="text-lg text-muted-foreground mb-6">{post.excerpt}</p>
 
             <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
               <span className="font-medium text-foreground">{post.author}</span>
@@ -130,14 +225,16 @@ export default function ArticlePage() {
             </div>
           </header>
 
-          {/* Featured Image */}
+          {/* Featured Image – optimized for LCP */}
           <figure className="mb-8">
             <div className="aspect-video rounded-xl overflow-hidden bg-muted">
               <img
                 src={post.image}
-                alt={post.imageAlt}
+                alt={post.imageAlt || post.title}
                 className="w-full h-full object-cover"
                 loading="eager"
+                fetchPriority="high"
+                decoding="sync"
               />
             </div>
             {post.imageAlt && (
@@ -150,32 +247,41 @@ export default function ArticlePage() {
           {/* Share Buttons */}
           <div className="flex items-center gap-3 pb-6 mb-8 border-b border-border">
             <span className="text-sm font-medium text-muted-foreground">Share:</span>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="icon"
               className="h-9 w-9"
-              onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, '_blank')}
+              onClick={() =>
+                window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, "_blank")
+              }
             >
               <Facebook className="w-4 h-4" />
             </Button>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="icon"
               className="h-9 w-9"
-              onClick={() => window.open(`https://x.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`, '_blank')}
+              onClick={() =>
+                window.open(
+                  `https://x.com/intent/tweet?url=\( {encodeURIComponent(shareUrl)}&text= \){encodeURIComponent(post.title)}`,
+                  "_blank"
+                )
+              }
             >
               <XIcon className="w-4 h-4" />
             </Button>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="icon"
               className="h-9 w-9"
-              onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(shareUrl)}`, '_blank')}
+              onClick={() =>
+                window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(shareUrl)}`, "_blank")
+              }
             >
               <Linkedin className="w-4 h-4" />
             </Button>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="icon"
               className="h-9 w-9"
               onClick={() => navigator.clipboard.writeText(shareUrl)}
@@ -185,14 +291,14 @@ export default function ArticlePage() {
           </div>
 
           {/* Article Content */}
-          <div 
+          <div
             className="prose prose-lg max-w-none dark:prose-invert 
               prose-headings:font-serif prose-headings:text-foreground 
               prose-p:text-foreground prose-p:leading-[1.8] prose-p:mb-6
               prose-a:text-primary prose-a:font-medium prose-a:no-underline hover:prose-a:underline 
               prose-strong:text-foreground prose-strong:font-bold
               prose-blockquote:border-l-primary prose-blockquote:text-muted-foreground prose-blockquote:pl-6
-              prose-img:rounded-xl prose-img:my-8
+              prose-img:rounded-xl prose-img:my-8 prose-img:loading-lazy
               prose-li:mb-2 prose-li:leading-7
               prose-ul:mb-6 prose-ol:mb-6"
             dangerouslySetInnerHTML={{ __html: post.htmlContent }}
@@ -235,7 +341,7 @@ export default function ArticlePage() {
         </div>
       </article>
 
-      {/* Scroll to Top Button */}
+      {/* Scroll to Top */}
       {showScrollTop && (
         <button
           onClick={scrollToTop}
