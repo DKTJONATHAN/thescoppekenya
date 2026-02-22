@@ -31,6 +31,7 @@ jobs:
 
           SITE_URL="https://zandani.co.ke"
 
+          # Get changed .md files in content/posts/
           CHANGED=\( (git diff --name-only HEAD\~1 HEAD -- 'content/posts/' | grep '\.md \)' || true)
 
           if [ -z "$CHANGED" ]; then
@@ -38,96 +39,58 @@ jobs:
             exit 0
           fi
 
+          # Process and post each changed file sequentially
           while IFS= read -r file; do
             SLUG=$(basename "$file" .md)
             URL="\( {SITE_URL}/article/ \){SLUG}"
             
-            echo "🚀 Processing: $file"
+            echo "🚀 Processing File: $file"
+            
+            # Extract Title and First Paragraph
+            TITLE=$(grep -m 1 "^title:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//')
+            
+            # Extract only the first paragraph (Skipping the YAML frontmatter)
+            PARAGRAPH=\( (awk 'BEGIN {count=0; body=0} /^--- \)/ {count++; if(count==2){body=1; next}} body==1 {print}' "$file" | awk -v RS='' -v ORS='\n\n' 'NR<=1')
+            
+            if [ -z "$TITLE" ]; then TITLE="Latest Update"; fi
+            
+            FINAL_MESSAGE="$TITLE
 
-            TITLE=\( (sed -n 's/^title: *["'\'']*\(.*\)["'\'']* \)/\1/p' "$file" | head -1 | xargs)
-            IMAGE_URL=\( (sed -n 's/^image: *["'\'']*\(.*\)["'\'']* \)/\1/p' "$file" | head -1 | xargs)
-
-            PARAGRAPH=$(awk '
-              BEGIN { in_body=0; para="" }
-              /^---$/ { if (++count == 2) in_body=1; next }
-              in_body == 1 {
-                if ($0 \~ /^## /) { next }
-                if ($0 \~ /^\s*$/) { 
-                  if (para != "") exit 0
-                  next
-                }
-                para = para $0 " "
-              }
-              END { print para }
-            ' "$file" | xargs)
-
-            if [ -z "$PARAGRAPH" ] || [ ${#PARAGRAPH} -lt 30 ]; then
-              PARAGRAPH=\( (sed -n 's/^excerpt: *["'\'']*\(.*\)["'\'']* \)/\1/p' "$file" | head -1 | xargs)
-              echo "⚠️ No body paragraph found → using excerpt"
-            fi
-
-            if [ -z "$TITLE" ]; then TITLE="Fresh Scoop from Za Ndani"; fi
-            if [ -z "$PARAGRAPH" ]; then PARAGRAPH="Big drama unfolding right now 👀"; fi
-
-            FINAL_MESSAGE="${TITLE}
-
-${PARAGRAPH}
-
-Read the full story 👇"
-
-            echo "📝 Final Message Preview:"
-            echo "--------------------------------------------------"
-            echo "$FINAL_MESSAGE"
-            echo "--------------------------------------------------"
+            $PARAGRAPH"
 
             echo "Posting to Facebook Page ID: $FACEBOOK_PAGE_ID..."
-
-            if [ -n "$IMAGE_URL" ]; then
-              echo "📸 Image found → downloading..."
-              curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -o fb_preview_image.jpg "$IMAGE_URL"
-              
-              MIME_TYPE=$(file --mime-type -b fb_preview_image.jpg 2>/dev/null || echo "unknown")
-              echo "Downloaded file type: $MIME_TYPE"
-
-              if [ -s "fb_preview_image.jpg" ] && [[ "$MIME_TYPE" == image/* ]]; then
-                echo "✅ Valid image → posting with photo"
-                FB_RESPONSE=\( (curl -s -X POST "https://graph.facebook.com/v24.0/ \){FACEBOOK_PAGE_ID}/photos" \
-                  -F "message=$FINAL_MESSAGE" \
-                  -F "source=@fb_preview_image.jpg" \
-                  -F "access_token=$FACEBOOK_PAGE_TOKEN")
-              else
-                echo "⚠️ Invalid image file → falling back to text-only"
-                FB_RESPONSE=\( (curl -s -X POST "https://graph.facebook.com/v24.0/ \){FACEBOOK_PAGE_ID}/feed" \
-                  -d "message=$FINAL_MESSAGE" \
-                  -d "access_token=$FACEBOOK_PAGE_TOKEN")
-              fi
-            else
-              echo "⚠️ No image → posting text-only"
-              FB_RESPONSE=\( (curl -s -X POST "https://graph.facebook.com/v24.0/ \){FACEBOOK_PAGE_ID}/feed" \
-                -d "message=$FINAL_MESSAGE" \
-                -d "access_token=$FACEBOOK_PAGE_TOKEN")
-            fi
+            
+            # Send text-only post to Facebook
+            FB_RESPONSE=\( (curl -s -X POST "https://graph.facebook.com/v24.0/ \){FACEBOOK_PAGE_ID}/feed" \
+              -d "message=$FINAL_MESSAGE" \
+              -d "access_token=$FACEBOOK_PAGE_TOKEN")
 
             echo "Facebook API Response: $FB_RESPONSE"
 
-            POST_ID=$(echo "$FB_RESPONSE" | jq -r '.post_id // .id // "null"')
+            # Extract Post ID and Add Comment with Link
+            POST_ID=$(echo "$FB_RESPONSE" | jq -r '.id')
 
             if [ "$POST_ID" != "null" ] && [ -n "$POST_ID" ]; then
-              echo "✅ Post created! Adding link comment..."
-              sleep 8
+              echo "✅ Main post successful for $SLUG. Waiting 10 seconds for Facebook servers to sync..."
+              sleep 10
               
+              echo "Adding link to the comment section..."
               COMMENT_RESPONSE=$(curl -s -X POST "https://graph.facebook.com/v24.0/$POST_ID/comments" \
                 -d "message=Read the full story here: $URL" \
                 -d "access_token=$FACEBOOK_PAGE_TOKEN")
               
-              if echo "$COMMENT_RESPONSE" | grep -q '"error"'; then
-                echo "❌ Comment failed: $COMMENT_RESPONSE"
+              if echo "$COMMENT_RESPONSE" | grep -q '"OAuthException"'; then
+                echo "❌ Facebook API rejected the comment. Token lacks 'pages_manage_engagement' permission."
+                exit 1
+              elif echo "$COMMENT_RESPONSE" | grep -q '"error"'; then
+                echo "❌ Failed to add comment due to an API error: $COMMENT_RESPONSE"
+                exit 1
               else
-                echo "🎉 Successfully posted + linked for $SLUG!"
+                echo "✅ Successfully published post and link comment for $SLUG!"
               fi
             else
-              echo "❌ Failed to post for $SLUG"
+              echo "❌ Failed to retrieve Post ID for $SLUG. Could not add comment."
+              exit 1
             fi
-
-            rm -f fb_preview_image.jpg
+            
           done <<< "$CHANGED"
