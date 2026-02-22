@@ -81,15 +81,6 @@ jobs:
               "moreover", "furthermore", "in conclusion"
           ]
 
-          OPENING_VIBES = [
-              "Start with a bold, controversial statement that challenges a popular opinion about a manager, player, or tech brand.",
-              "Start by making the reader feel they are the absolute last to know about a massive gadget leak or a shocking transfer rumour.",
-              "Start by expressing absolute disbelief at a ridiculous scoreline, controversial referee decision, or the shocking price tag of a new device.",
-              "Start with a funny, relatable anecdote about battery life dying at the worst time or watching your team bottle a lead.",
-              "Start directly with a savage, sarcastic comment about the losing side or an outdated piece of tech."
-          ]
-          random_hook = random.choice(OPENING_VIBES)
-
           hour_to_topic = {
               3: 'european_football', 7: 'tech', 11: 'european_football',
               15: 'other_sports', 19: 'tech'
@@ -268,7 +259,7 @@ jobs:
               text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
 
-          # --- 6. GENERATION ---
+          # --- 6. GENERATION (updated with new keyword + originality instructions) ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
           internal_links_data = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
@@ -282,6 +273,7 @@ jobs:
           TASK: Write an article as a **British Sports & Tech Pundit**.
           1. Use Google Search to research the latest details on this story if needed.
           2. Naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph.
+          3. Identify the main topic and issues discussed in the scraped article. Then, generate a new article that is 100% related but focuses on aspects not covered in the original (e.g., what the story hasn't talked about). Reuse the main keywords from the original headline naturally and heavily in the new TITLE (front-loaded), EXCERPT, and every subheading you create for better SEO.
 
           LANGUAGE MANDATE (STRICT):
           - NO SHENG OR SWAHILI. Write for an audience who loves cheeky British gossip, sports banter, and tech leaks.
@@ -294,10 +286,6 @@ jobs:
           - DO NOT use the exact same words or structure as previous articles. 
           - HERE IS YOUR UNIQUE OPENING INSTRUCTION FOR THIS SPECIFIC ARTICLE: {random_hook}
 
-          EXAMPLE OF THE PERFECT TONE VIBE TO MIMIC (DO NOT COPY THESE EXACT WORDS):
-          "Look, if you actually thought they were going to hold on to that lead, you are having a laugh. The tactics were completely all over the place..." 
-          (OR FOR TECH): "Right, get a load of this. The new specs just dropped, and frankly, I am entirely unconvinced. For that price tag?"
-
           STRICT OUTPUT FORMAT:
           TITLE: [Very Simple SEO-Optimized English Title front-loaded with the main keyword]
           SLUG: [url-friendly-lowercase-english-slug]
@@ -308,9 +296,9 @@ jobs:
           BODY:
           [Article text in chatty British English containing the internal link. 
           Structure it logically:
-          - Include an H2 heading asking a direct question about the core match/tech news.
+          - Start with an H2 heading that includes the main keywords from the original headline.
           - Immediately follow that H2 with a crisp, completely objective 40 to 60-word answer paragraph to win Google Featured Snippets.
-          - Then dive into the rest of the cheeky British banter: The Core Update -> The Deeper Analysis -> The Verdict.]
+          - Continue with natural subheadings that also reuse the main keywords (AI decides the subheadings).]
           '''
 
           full_text = ""
