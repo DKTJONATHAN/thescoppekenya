@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: \( {{ github.workflow }}- \){{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
 permissions:
@@ -108,7 +108,7 @@ jobs:
 
                       # Force real link if still on Google
                       if any(x in page.url for x in ["google.com", "news.google.com"]):
-                          print("   Still on Google wrapper → forcing direct link...")
+                          print("   Still on Google wrapper -> forcing direct link...")
                           direct = page.evaluate('''() => {
                               const links = Array.from(document.querySelectorAll('a[href^="http"]'));
                               for (let a of links) {
@@ -120,10 +120,13 @@ jobs:
                               return null;
                           }''')
                           if direct:
-                              print(f"   Found direct link → {direct[:80]}...")
+                              print(f"   Found direct link -> {direct[:80]}...")
                               page.goto(direct, timeout=60000, wait_until="networkidle")
                           else:
-                              page.click('text=/Visit|Continue|Go to site/i', timeout=8000).catch(lambda: None)
+                              try:
+                                  page.click('text=/Visit|Continue|Go to site/i', timeout=8000)
+                              except:
+                                  pass
                               page.wait_for_timeout(6000)
 
                       # Scroll & wait for full content
@@ -228,7 +231,7 @@ jobs:
               text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
 
-          # --- 6. GEMINI REWRITE (updated prompt - no hardcoded openings, no examples) ---
+          # --- 6. GEMINI REWRITE ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
           internal_links_data = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
@@ -307,6 +310,10 @@ jobs:
           print("🔍 Gemini raw output preview (first 900 chars):")
           print(final_text[:900])
 
+          # Strip outer markdown wrappers safely
+          final_text = re.sub(r'^```(?:markdown|text|html)?\n', '', final_text, flags=re.IGNORECASE)
+          final_text = re.sub(r'\n```$', '', final_text).strip()
+
           parsed = {"TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": ""}
 
           section_matches = re.findall(r'^(TITLE|SLUG|EXCERPT|CATEGORY|TAGS|IMAGE_KEYWORD|BODY):\s*(.*)', final_text, re.MULTILINE | re.IGNORECASE)
@@ -319,7 +326,6 @@ jobs:
           if body_match:
               parsed["BODY"] = body_match.group(1).strip()
 
-          parsed["BODY"] = re.sub(r'```[\s\S]*?```', '', parsed["BODY"])
           parsed["BODY"] = dash_scrubber(parsed["BODY"]).strip()
 
           tags_list = [t.strip().replace('"', '') for t in parsed["TAGS"].split(",") if t.strip()]
