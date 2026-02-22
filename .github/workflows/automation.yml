@@ -259,7 +259,7 @@ jobs:
               text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
 
-          # --- 6. GENERATION (updated with new keyword + originality instructions) ---
+          # --- 6. GENERATION (updated with keyword + originality instructions) ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
           internal_links_data = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
@@ -298,7 +298,7 @@ jobs:
           Structure it logically:
           - Start with an H2 heading that includes the main keywords from the original headline.
           - Immediately follow that H2 with a crisp, completely objective 40 to 60-word answer paragraph to win Google Featured Snippets.
-          - Continue with natural subheadings that also reuse the main keywords (AI decides the subheadings).]
+          - Continue with natural subheadings that also reuse the main keywords (AI decides the subheadings). Do not include or repeat any frontmatter content (like title, excerpt) in the BODY. Start the BODY with the first paragraph of the article.]
           '''
 
           full_text = ""
