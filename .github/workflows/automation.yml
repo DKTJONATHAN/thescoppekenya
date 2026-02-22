@@ -15,7 +15,7 @@ on:
         default: ''
 
 concurrency:
-  group: \( {{ github.workflow }}- \){{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
 permissions:
@@ -101,15 +101,15 @@ jobs:
               'tech': 'smartphone review OR new phone release OR tech gadget OR samsung galaxy OR iphone OR device alerts'
           }
           query_str = base_keywords.get(topic, 'sports news')
-          safe_query = urllib.parse.quote(f"{query_str} when:1d")  # ← changed to 1 day max
+          safe_query = urllib.parse.quote(f"{query_str} when:1d") 
           
-          rss_url = f"https://news.google.com/rss/search?q={safe_query}&hl=en-KE&gl=KE&ceid=KE:en"
+          rss_url = f"[https://news.google.com/rss/search?q=](https://news.google.com/rss/search?q=){safe_query}&hl=en-KE&gl=KE&ceid=KE:en"
           print(f"🌍 Fetching very recent Google News (last 24h): {rss_url}")
           
           try:
               resp = requests.get(rss_url, timeout=15)
               soup = BeautifulSoup(resp.content, "xml")
-              articles = [{"title": item.title.text, "url": item.link.text} for item in soup.find_all("item")][:8]  # limit to 8 for speed
+              articles = [{"title": item.title.text, "url": item.link.text} for item in soup.find_all("item")][:8] 
           except Exception as e:
               print(f"Error fetching Google News: {e}")
               sys.exit(0)
@@ -210,13 +210,13 @@ jobs:
                   final_hash = u_hash
                   target_title = re.sub(r' - [^-]+$', '', a['title']).strip()
                   break
-              time.sleep(0.8)  # light delay
+              time.sleep(0.8) 
 
           if not full_raw_text:
               print("❌ NO USABLE FULL ARTICLE FOUND IN LAST 24 HOURS (all short or failed). Skipping generation.")
               sys.exit(0)
 
-          # --- 5. HELPERS (unchanged) ---
+          # --- 5. HELPERS ---
           def get_internal_context(posts_dir):
               if not os.path.exists(posts_dir): return ""
               files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
@@ -229,22 +229,25 @@ jobs:
                           txt = c.read()
                           t = re.search(r'title:\s*"(.*?)"', txt)
                           t = t.group(1) if t else f
-                          context += f"- {t} → https://zandani.co.ke/posts/{f.replace('.md', '')}\n"
+                          context += f"- {t} → [https://zandani.co.ke/posts/](https://zandani.co.ke/posts/){f.replace('.md', '')}\n"
                   except: continue
               return context
 
           def get_real_image(query):
               key = os.environ.get("UNSPLASH_ACCESS_KEY")
-              fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+              fallback = "[https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200](https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200)"
               if not key: return fallback
               try:
-                  r = requests.get(f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={key}", timeout=8)
+                  r = requests.get(f"[https://api.unsplash.com/photos/random?query=](https://api.unsplash.com/photos/random?query=){query}&orientation=landscape&client_id={key}", timeout=8)
                   if r.status_code == 200: return r.json()['urls']['regular']
               except: pass
               return fallback
 
           def dash_scrubber(text):
-              return (text or "").replace('\u2014', '-').replace('\u2013', '-').replace(chr(8212), '-').replace(chr(8211), '-')
+              if not text: return ""
+              text = text.replace('\u2014', '-').replace('\u2013', '-')
+              text = text.replace(chr(8212), '-').replace(chr(8211), '-')
+              return text
 
           # --- 6. GENERATION ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
@@ -286,7 +289,7 @@ jobs:
                           model=model_id, contents=prompt,
                           config=types.GenerateContentConfig(temperature=0.85, tools=[google_search_tool])
                       )
-                      full_text = dash_scrubber(response.text.strip())
+                      full_text = response.text.strip()
                       success_flag = True
                       print(f"✅ Gemini success with {model_id}")
                       break
@@ -303,23 +306,29 @@ jobs:
           # --- 7. PARSE & SAVE ---
           print("🔍 Gemini output preview:", full_text[:900])
 
+          # Strip outer markdown wrappers safely
+          full_text = re.sub(r'^```(?:markdown|text|html)?\n', '', full_text, flags=re.IGNORECASE)
+          full_text = re.sub(r'\n```$', '', full_text).strip()
+
           parsed = {"TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": ""}
 
-          for line in full_text.splitlines():
-              line = line.strip()
-              if line.startswith("TITLE:"): parsed["TITLE"] = line[6:].strip()
-              elif line.startswith("SLUG:"): parsed["SLUG"] = line[5:].strip()
-              elif line.startswith("EXCERPT:"): parsed["EXCERPT"] = line[8:].strip()
-              elif line.startswith("CATEGORY:"): parsed["CATEGORY"] = line[9:].strip()
-              elif line.startswith("TAGS:"): parsed["TAGS"] = line[5:].strip()
-              elif line.startswith("IMAGE_KEYWORD:"): parsed["IMAGE_KEYWORD"] = line[14:].strip()
-              elif line.startswith("BODY:"):
-                  parsed["BODY"] = line[5:].strip()
-              elif parsed["BODY"]:
-                  parsed["BODY"] += "\n" + line
+          section_matches = re.findall(r'^(TITLE|SLUG|EXCERPT|CATEGORY|TAGS|IMAGE_KEYWORD):\s*(.*)', full_text, re.MULTILINE | re.IGNORECASE)
+          for key, value in section_matches:
+              parsed[key.upper()] = value.strip()
 
-          if len(parsed["BODY"]) < 400 and "BODY:" in full_text:
-              parsed["BODY"] = full_text.split("BODY:", 1)[1].strip()
+          body_match = re.search(r'BODY:\s*(.*)', full_text, re.DOTALL | re.IGNORECASE)
+          if body_match:
+              parsed["BODY"] = body_match.group(1).strip()
+          else:
+              # Fallback if standard extraction fails
+              parsed["BODY"] = full_text.split("BODY:", 1)[-1].strip() if "BODY:" in full_text else full_text
+
+          # Scrub dashes completely from the final body text
+          parsed["BODY"] = dash_scrubber(parsed["BODY"]).strip()
+
+          # Safely construct the YAML array for tags
+          tags_list = [t.strip().replace('"', '') for t in parsed["TAGS"].split(",") if t.strip()]
+          tags_str = ', '.join([f'"{t}"' for t in tags_list]) if tags_list else '"global", "news"'
 
           final_image_url = target_image or get_real_image(parsed["IMAGE_KEYWORD"] or target_title)
 
@@ -331,10 +340,10 @@ jobs:
           image: "{final_image_url}"
           category: "{parsed['CATEGORY'] or 'Global News'}"
           date: "{today_str}"
-          tags: [{parsed['TAGS']}]
+          tags: [{tags_str}]
           ---
 
-          {parsed['BODY'].strip()}
+          {parsed['BODY']}
           """)
 
           out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
@@ -344,6 +353,8 @@ jobs:
               f.write(final_file)
 
           memory.append(final_hash)
+          # Ensure directory exists before writing memory file
+          os.makedirs(os.path.dirname(memory_path), exist_ok=True)
           with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
 
           print(f"✅ Saved: {filename} | Body chars: {len(parsed['BODY'])}")
