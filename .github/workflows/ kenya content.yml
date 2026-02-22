@@ -88,21 +88,6 @@ jobs:
               "in today's digital age", "shed light on"
           ]
 
-          OPENING_VIBES = [
-              "Start with a cheeky rhetorical question asking the reader if they are ready for this mess.",
-              "Start by pretending to whisper a secret you just found out.",
-              "Start with a blunt, slightly sarcastic summary of the situation.",
-              "Start by acting exhausted by the constant drama but admitting you absolutely love it.",
-              "Start with a direct address to the reader like you are chatting over a cup of coffee.",
-              "Start by expressing shock at how cheeky people are being online today.",
-              "Start with a relatable, slightly embarrassing personal anecdote that somehow connects to the news.",
-              "Start with a bold, controversial statement that challenges a popular opinion, but keep it lighthearted.",
-              "Start by highlighting a shocking or surprising fact about the situation that most people completely missed.",
-              "Start with a vivid, dramatic metaphor, like comparing the drama to a telenovela or a messy breakup.",
-              "Start by triggering FOMO (Fear Of Missing Out), making the reader feel they are the last to know this crucial gossip."
-          ]
-          random_hook = random.choice(OPENING_VIBES)
-
           hour_to_topic = {
               3: 'entertainment', 4: 'news', 6: 'entertainment', 7: 'politics',
               9: 'entertainment', 10: 'sports', 12: 'entertainment', 13: 'business',
@@ -149,7 +134,7 @@ jobs:
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
 
-          # --- 3. STRONG FULL-ARTICLE SCRAPER (forces real publisher link) ---
+          # --- 3. STRONG FULL-ARTICLE SCRAPER ---
           def scrape_article_free(url):
               print(f"🕷️ Trying full article from Google News: {url}")
               with sync_playwright() as p:
@@ -166,10 +151,8 @@ jobs:
                   try:
                       page.goto(url, timeout=60000, wait_until="domcontentloaded")
 
-                      # === FORCE REAL PUBLISHER LINK ===
                       if any(x in page.url for x in ["google.com", "news.google.com"]):
                           print("   Still on Google wrapper → forcing direct link...")
-                          # Try to extract real URL from page
                           direct = page.evaluate('''() => {
                               const links = Array.from(document.querySelectorAll('a[href^="http"]'));
                               for (let a of links) {
@@ -184,14 +167,12 @@ jobs:
                               print(f"   Found direct link → {direct[:80]}...")
                               page.goto(direct, timeout=60000, wait_until="networkidle")
                           else:
-                              # Fallback click on any "Visit" button
                               try:
-                                  page.click('text=/Visit|Continue|Go to site|Read more/i', timeout=10000)
+                                  page.click('text=/Visit|Continue|Go to site/i', timeout=10000)
                                   page.wait_for_timeout(6000)
                               except:
-                                  print("   No clickable button found, continuing anyway...")
+                                  pass
 
-                      # Final load + scroll for lazy content
                       page.wait_for_timeout(8000)
                       page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                       page.wait_for_timeout(4000)
@@ -201,7 +182,6 @@ jobs:
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
 
-                      # === MULTI-STRATEGY TEXT EXTRACTION ===
                       article_text = ""
                       containers = soup.select('article, main, .article-body, .post-content, .entry-content, .story-content, .content-body, .article__content, .post-body')
                       for c in containers:
@@ -223,7 +203,6 @@ jobs:
                           if chunks:
                               article_text = max(chunks, key=len)
 
-                      # Image
                       img_url = ""
                       for meta in soup.find_all('meta'):
                           if meta.get('property') in ['og:image', 'twitter:image']:
@@ -292,7 +271,7 @@ jobs:
               text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
 
-          # --- 6. GENERATION ---
+          # --- 6. GENERATION (updated with new keyword + originality instructions) ---
           client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
           internal_links_data = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
@@ -306,6 +285,7 @@ jobs:
           TASK: Write a news report as a **British Tabloid Gossip Columnist**.
           1. Use Google Search to research the latest details on this story if needed.
           2. Naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph.
+          3. Identify the main topic and issues discussed in the scraped article. Then, generate a new article that is 100% related but focuses on aspects not covered in the original (e.g., what the story hasn't talked about). Reuse the main keywords from the original headline naturally and heavily in the new TITLE (front-loaded), EXCERPT, and every subheading you create for better SEO.
 
           LANGUAGE MANDATE (STRICT):
           - NO SHENG OR SWAHILI. You are writing for an audience who loves simple, dramatic British gossip.
@@ -318,25 +298,21 @@ jobs:
           - NEVER use long dashes or double dashes. Only use regular single hyphens.
 
           ANTI-REPETITION RULES:
-          - DO NOT use the exact same words or structure as previous articles. 
-          - HERE IS YOUR UNIQUE OPENING INSTRUCTION FOR THIS SPECIFIC ARTICLE: {random_hook}
-
-          EXAMPLE OF THE PERFECT TONE VIBE TO MIMIC (DO NOT COPY THESE EXACT WORDS):
-          "Right, gather round. If you thought yesterday was dramatic, you are in for an absolute treat. The internet is having a right laugh about this one. So, here is what actually went down..."
+          - DO NOT use the exact same words or structure as previous articles.
 
           STRICT OUTPUT FORMAT:
-          TITLE: [Very Simple SEO-Optimized English Title starting with the main keyword]
+          TITLE: [Very Simple SEO-Optimized English Title starting with the main keywords from the original headline]
           SLUG: [url-friendly-lowercase-english-slug]
-          EXCERPT: [Simple SEO-Optimized English Snippet/Hook under 160 characters]
+          EXCERPT: [Simple SEO-Optimized English Snippet/Hook under 160 characters that includes the main keywords]
           CATEGORY: Kenya News
           TAGS: [comma, separated, english, seo, tags]
           IMAGE_KEYWORD: [search query]
           BODY:
           [Article text in chatty, simple British English containing the internal link. 
           Structure it logically: 
-          - Include an H2 heading asking a direct question about the core gossip/news.
+          - Start with an H2 heading that includes the main keywords from the original headline.
           - Immediately follow that H2 with a crisp, 40 to 60 word neutral answer paragraph to win Google Featured Snippets.
-          - Then dive into the rest of the cheeky British gossip: The Scoop -> The Evidence -> The Verdict.]
+          - Continue with natural subheadings that also reuse the main keywords (AI decides the subheadings).]
           '''
 
           full_text = ""
