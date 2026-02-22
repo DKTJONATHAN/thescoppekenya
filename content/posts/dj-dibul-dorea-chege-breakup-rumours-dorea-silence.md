@@ -8,13 +8,6 @@ date: "2026-02-22"
 tags: ["DJ Dibul", "Dorea Chege", "breakup rumours", "celebrity speculation", "Kenya gossip", "infidelity"]
 ---
 
-TITLE: DJ Dibul & Dorea Chege Breakup Rumours: What's Really Behind Dorea's Silence Amid All The Speculation?
-SLUG: dj-dibul-dorea-chege-breakup-rumours-dorea-silence
-EXCERPT: DJ Dibul and Dorea Chege breakup rumours are running wild! But what's Dorea *really* hiding behind her silence amid all the speculation?
-CATEGORY: Kenya News
-TAGS: DJ Dibul, Dorea Chege, breakup rumours, celebrity speculation, Kenya gossip, infidelity
-IMAGE_KEYWORD: DJ Dibul Dorea Chege couple
-
 ## The Truth Behind the DJ Dibul & Dorea Chege Breakup Rumours
 
 The swirling DJ Dibul and Dorea Chege breakup rumours have gripped East Africa, leaving fans desperate for clear answers about the celebrity couple's relationship status. Despite persistent speculation and infidelity allegations, neither DJ Dibul nor Dorea Chege has definitively confirmed or denied a permanent split, leaving the public to dissect every cryptic post and public appearance for clues.
