@@ -14,6 +14,9 @@ jobs:
         with:
           fetch-depth: 2
 
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
       - name: Wait for 30 seconds
         run: |
           echo "Waiting 30 seconds for Zandani to deploy..."
@@ -79,10 +82,10 @@ jobs:
                 -d "message=Read the full story here: $URL" \
                 -d "access_token=$FACEBOOK_PAGE_TOKEN")
               
-              if echo "$COMMENT_RESPONSE" | grep -q '"OAuthException"'; then
+              if echo "$COMMENT_RESPONSE" | grep -q 'OAuthException'; then
                 echo "❌ Facebook API rejected the comment. Token lacks 'pages_manage_engagement' permission."
                 exit 1
-              elif echo "$COMMENT_RESPONSE" | grep -q '"error"'; then
+              elif echo "$COMMENT_RESPONSE" | grep -q 'error'; then
                 echo "❌ Failed to add comment due to an API error: $COMMENT_RESPONSE"
                 exit 1
               else
