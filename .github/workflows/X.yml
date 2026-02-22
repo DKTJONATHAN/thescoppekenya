@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2 # Fetch at least 2 commits to find the diff
+          fetch-depth: 2
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -33,71 +33,76 @@ jobs:
           python << 'EOF'
           import os, sys, re, time, subprocess, tweepy
 
-          # 1. Authenticate with X API using exact secret names
-          api_key = os.environ.get('TWITTER_CONSUMER_KEY')
-          api_secret = os.environ.get('TWITTER_CONSUMER_SECRET')
+          consumer_key = os.environ.get('TWITTER_CONSUMER_KEY')
+          consumer_secret = os.environ.get('TWITTER_CONSUMER_SECRET')
           access_token = os.environ.get('TWITTER_ACCESS_TOKEN')
           access_secret = os.environ.get('TWITTER_ACCESS_SECRET')
 
-          if not all([api_key, api_secret, access_token, access_secret]):
-              print("Error: Missing Twitter API credentials.")
+          if not all([consumer_key, consumer_secret, access_token, access_secret]):
+              print("❌ Missing Twitter/X API credentials in GitHub Secrets.")
               sys.exit(1)
 
-          # 2. Find the brand new markdown file from the git commit
-          result = subprocess.run(['git', 'diff', '--name-only', 'HEAD~1', 'HEAD'], capture_output=True, text=True)
-          files = result.stdout.splitlines()
-          md_files = [f for f in files if f.startswith('content/posts/') and f.endswith('.md')]
+          # Find the newest .md file
+          result = subprocess.run(['git', 'diff', '--name-only', 'HEAD\~1', 'HEAD'], capture_output=True, text=True)
+          md_files = [f for f in result.stdout.splitlines() if f.startswith('content/posts/') and f.endswith('.md')]
 
           if not md_files:
-              print("No new markdown files found in this push. Skipping tweet.")
+              print("No new markdown files found.")
               sys.exit(0)
 
           latest_file = md_files[0]
-          print(f"📍 Found new article: {latest_file}")
+          print(f"📍 Processing: {latest_file}")
 
-          # 3. Read the file and extract the juicy details
           with open(latest_file, 'r', encoding='utf-8') as f:
               content = f.read()
 
-          try:
-              title = re.search(r'title:\s*"(.*?)"', content).group(1)
-              excerpt = re.search(r'excerpt:\s*"(.*?)"', content).group(1)
-              slug = re.search(r'slug:\s*"(.*?)"', content).group(1)
-          except AttributeError:
-              print("Error: Could not parse frontmatter from the markdown file.")
-              sys.exit(1)
+          title = re.search(r'title:\s*["\'](.*?)["\']', content)
+          excerpt = re.search(r'excerpt:\s*["\'](.*?)["\']', content)
+          slug = re.search(r'slug:\s*["\'](.*?)["\']', content)
 
-          article_link = f"https://zandani.co.ke/posts/{slug}"
+          title = title.group(1) if title else "New Za Ndani Story"
+          excerpt = excerpt.group(1) if excerpt else ""
+          slug = slug.group(1) if slug else ""
 
-          # 4. The 30-Second Wait
-          # This gives your website time to finish deploying so Twitter can successfully scrape the image!
-          print("⏳ Waiting 30 seconds for the website to publish...")
-          time.sleep(30)
+          article_link = f"https://zandani.co.ke/article/{slug}"
 
-          # 5. Connect to X (Twitter) API v2
+          print(f"Title: {title}")
+          print(f"Link : {article_link}")
+
+          # Wait for Netlify/Vercel deployment + OG image
+          print("⏳ Waiting 45 seconds for site to go live...")
+          time.sleep(45)
+
           client = tweepy.Client(
-              consumer_key=api_key,
-              consumer_secret=api_secret,
+              consumer_key=consumer_key,
+              consumer_secret=consumer_secret,
               access_token=access_token,
               access_token_secret=access_secret
           )
 
-          # 6. Format the Tweet
-          # X links always take up exactly 23 characters, leaving us 257 for the text
-          main_text = f"{title}\n\n{excerpt}"
-          if len(main_text) > 220:
-              main_text = main_text[:217] + "..."
+          tweet_text = f"{title}\n\n{excerpt}\n\n🔥 Read full story:\n{article_link}\n\n#ZaNdani #KenyaGossip"
 
-          # By putting the link in the main tweet, X will automatically generate the image card
-          tweet_content = f"{main_text}\n\nRead full article here: {article_link}"
+          if len(tweet_text) > 280:
+              tweet_text = tweet_text[:267] + "..."
 
-          # 7. Post the Tweet
-          print("📝 Posting tweet with link preview...")
+          print("📝 Tweet preview:")
+          print(tweet_text)
+          print(f"Length: {len(tweet_text)} characters")
+
           try:
-              response = client.create_tweet(text=tweet_content)
-              print(f"✅ Tweet sent successfully! ID: {response.data['id']}")
-          except Exception as e:
-              print(f"Failed to send tweet: {e}")
+              response = client.create_tweet(text=tweet_text)
+              print(f"✅ Tweet posted successfully! ID: {response.data['id']}")
+          except tweepy.TweepyException as e:
+              print(f"❌ X API Error: {e}")
+              if hasattr(e, 'response') and e.response is not None:
+                  try:
+                      print("Raw X response:")
+                      print(e.response.text)
+                      if "403" in str(e) or "Forbidden" in str(e) or "pay" in str(e).lower():
+                          print("\n💰 This is the 'pay to post' error.")
+                          print("X now requires the **Basic** plan ($100–$200/month) to post tweets via API.")
+                          print("Free tier is read-only only.")
+                  except:
+                      pass
               sys.exit(1)
-
           EOF
