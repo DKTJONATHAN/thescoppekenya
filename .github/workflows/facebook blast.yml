@@ -64,9 +64,8 @@ jobs:
             # Scrub all HTML, convert entities, and remove Markdown syntax from paragraph
             CLEAN_PARAGRAPH=$(python3 -c "import sys, html, re; text = html.unescape(sys.argv[1]); text = re.sub(r'<[^>]*>', '', text); text = re.sub(r'\[([^]]+)\]\([^)]+\)', r'\1', text); print(re.sub(r'[*_\`#]', '', text).strip())" "$RAW_PARAGRAPH")
 
-            FINAL_MESSAGE="$BOLD_TITLE
-
-$CLEAN_PARAGRAPH"
+            # Safely format the multiline message without breaking YAML indentation
+            FINAL_MESSAGE=$(printf "%s\n\n%s" "$BOLD_TITLE" "$CLEAN_PARAGRAPH")
 
             # Clean up any leftover image from previous loop iterations
             rm -f temp_post_image.jpg
