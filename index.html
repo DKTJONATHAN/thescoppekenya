@@ -3,26 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- AdSense & Verification -->
+
     <meta name="google-adsense-account" content="ca-pub-9291176772735390">
     <meta name="google-site-verification" content="VNTfdKk2KxWc62YlzrqHmf9u9zjtric-Fz8nXpdhqr4" />
 
-    <!-- Ultra-SEO Title (brand + top keywords) -->
     <title>Za Ndani - Kenya Celebrity Gossip & Entertainment News</title>
-    
-    <!-- Meta Description (compelling + keyword-rich) -->
     <meta name="description" content="Za Ndani delivers the hottest Kenya celebrity gossip, latest Nairobi entertainment news, trending stories, and exclusive insider scoops on your favourite Kenyan stars. Bold, unbiased updates daily." />
-    
     <meta name="author" content="Jonathan Mwaniki" />
-    
-    <!-- Targeted Keywords -->
     <meta name="keywords" content="Kenya celebrity gossip, Kenyan entertainment news, Nairobi gossip, celebrity news Kenya, Za Ndani, trending news Kenya, Kenyan celebrities, insider news Kenya, latest gossip Kenya, African entertainment" />
 
     <link rel="canonical" href="https://zandani.co.ke" />
     <link rel="alternate" hreflang="en" href="https://zandani.co.ke" />
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://zandani.co.ke" />
     <meta property="og:title" content="Za Ndani - Kenya Celebrity Gossip & Entertainment News" />
@@ -30,14 +22,12 @@
     <meta property="og:image" content="https://zandani.co.ke/logo.png" />
     <meta property="og:site_name" content="Za Ndani" />
 
-    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://zandani.co.ke" />
     <meta name="twitter:title" content="Za Ndani - Kenya Celebrity Gossip & Entertainment News" />
     <meta name="twitter:description" content="Hottest Kenya celebrity gossip, trending entertainment news & insider scoops daily." />
     <meta name="twitter:image" content="https://zandani.co.ke/logo.png" />
 
-    <!-- Structured Data (enhanced for rich results) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -60,32 +50,46 @@
     }
     </script>
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/logo.png" />
+
+    <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+
+    <script>(function(s){s.dataset.zone='10633341',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+    <script src="https://quge5.com/88/tag.min.js" data-zone="212762" async data-cfasync="false"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZHDWQPCEL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-DZHDWQPCEL');
+    </script>
   </head>
-
-  <!-- Your original ad & analytics scripts (untouched) -->
-  <script>(function(s){s.dataset.zone='10633341',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
-  <script src="https://quge5.com/88/tag.min.js" data-zone="212762" async data-cfasync="false"></script>
-<script type="text/javascript">
-    aclib.runAutoTag({
-        zoneId: '1baqgrldjc',
-    });
-</script>
-
-  
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZHDWQPCEL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-DZHDWQPCEL');
-  </script>
 
   <body>
     <div id="root"></div>
+
+    <script type="text/javascript">
+      // This function ensures the library is ready before running the ads
+      function runAdcash() {
+        if (typeof aclib !== 'undefined') {
+          // New: Video Slider
+          aclib.runVideoSlider({
+            zoneId: '11004386',
+          });
+          // Existing: Auto Tag
+          aclib.runAutoTag({
+            zoneId: '1baqgrldjc',
+          });
+        } else {
+          // If library not ready, try again in 500ms
+          setTimeout(runAdcash, 500);
+        }
+      }
+      runAdcash();
+    </script>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
