@@ -43,12 +43,13 @@ jobs:
       - name: Run Reporter Bot
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           python << 'EOF'
-          import os, json, datetime, requests, re, time, sys, hashlib, random, urllib.parse, textwrap
+          import os, json, datetime, requests, re, time, sys, hashlib, random, urllib.parse, textwrap, itertools
           from google import genai
           from google.genai import types
           from bs4 import BeautifulSoup
@@ -231,8 +232,18 @@ jobs:
               text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
 
-          # --- 6. GEMINI REWRITE ---
-          client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
+          # --- API KEY ROTATION LOGIC ---
+          raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY")]
+          api_keys = [k for k in raw_keys if k and k.strip()]
+          
+          if not api_keys:
+              print("❌ No Gemini API keys provided in environment.")
+              sys.exit(1)
+
+          key_cycle = itertools.cycle(api_keys)
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
           internal_links_data = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
 
@@ -279,9 +290,11 @@ jobs:
           print("🤖 Generating with Gemini...")
           final_text = ""
           success_flag = False
+          keys_tried = 0
           
           for model in ["gemini-3-flash-preview", "gemini-2.5-flash"]:
-              for retry in range(2):
+              # Loop 4 times to allow switching keys and waiting
+              for retry in range(4):
                   try:
                       resp = client.models.generate_content(
                           model=model,
@@ -294,9 +307,17 @@ jobs:
                       break
                   except Exception as e:
                       if "429" in str(e):
-                          print("⏳ Quota hit. Waiting 35s...")
-                          time.sleep(35)
+                          keys_tried += 1
+                          if keys_tried >= len(api_keys):
+                              print("⏳ All keys hit quota. Waiting 35s...")
+                              time.sleep(35)
+                              keys_tried = 0 # reset tracking after cooldown
+                          else:
+                              print("⚠️ Quota hit. Rotating to next API key...")
+                              current_key = next(key_cycle)
+                              client = genai.Client(api_key=current_key)
                           continue
+                      
                       print(f"⚠️ Error with {model}: {e}")
                       break
               if success_flag: break
