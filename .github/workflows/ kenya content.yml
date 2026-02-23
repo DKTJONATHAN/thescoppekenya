@@ -22,7 +22,7 @@ on:
         default: ''
 
 concurrency:
-  group: \( {{ github.workflow }}- \){{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
 permissions:
@@ -59,13 +59,14 @@ jobs:
       - name: Generate article with Gemini
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           MANUAL_TOPIC: ${{ inputs.manual_topic }}
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           python << 'EOF'
-          import os, json, datetime, requests, re, time, sys, hashlib, random, urllib.parse, textwrap
+          import os, json, datetime, requests, re, time, sys, hashlib, random, urllib.parse, textwrap, itertools
           from google import genai
           from google.genai import types
           from bs4 import BeautifulSoup
@@ -149,7 +150,7 @@ jobs:
                       page.goto(url, timeout=60000, wait_until="domcontentloaded")
 
                       if any(x in page.url for x in ["google.com", "news.google.com"]):
-                          print("   Still on Google wrapper → forcing direct link...")
+                          print("   Still on Google wrapper -> forcing direct link...")
                           direct = page.evaluate('''() => {
                               const links = Array.from(document.querySelectorAll('a[href^="http"]'));
                               for (let a of links) {
@@ -161,7 +162,7 @@ jobs:
                               return null;
                           }''')
                           if direct:
-                              print(f"   Found direct link → {direct[:80]}...")
+                              print(f"   Found direct link -> {direct[:80]}...")
                               page.goto(direct, timeout=60000, wait_until="networkidle")
                           else:
                               try:
@@ -266,7 +267,18 @@ jobs:
               text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
 
-          client = genai.Client(api_key=os.environ.get("GEMINI_WRITE_KEY"))
+          # --- API KEY ROTATION LOGIC ---
+          raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY")]
+          api_keys = [k for k in raw_keys if k and k.strip()]
+          
+          if not api_keys:
+              print("❌ No Gemini API keys provided in environment.")
+              sys.exit(1)
+
+          key_cycle = itertools.cycle(api_keys)
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
           internal_links_data = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
 
@@ -311,23 +323,34 @@ jobs:
 
           full_text = ""
           success_flag = False
+          keys_tried = 0
           
           for model_id in MODELS_TO_TRY:
-              for retry in range(2):
+              # We loop 4 times so it has enough attempts to cycle keys and wait if both are exhausted
+              for retry in range(4):
                   try:
                       response = client.models.generate_content(
                           model=model_id, contents=prompt,
                           config=types.GenerateContentConfig(temperature=0.9, tools=[google_search_tool])
                       )
-                      full_text = dash_scrubber(response.text.strip())
+                      full_text = response.text.strip()
                       success_flag = True
                       print(f"✅ SUCCESS with {model_id}!")
                       break 
                   except Exception as e:
                       if "429" in str(e):
-                          print("⏳ Quota hit. Waiting 35s...")
-                          time.sleep(35)
+                          keys_tried += 1
+                          if keys_tried >= len(api_keys):
+                              print("⏳ All keys hit quota. Waiting 35s...")
+                              time.sleep(35)
+                              keys_tried = 0 # reset tracking after cooldown
+                          else:
+                              print("⚠️ Quota hit. Rotating to next API key...")
+                              current_key = next(key_cycle)
+                              client = genai.Client(api_key=current_key)
                           continue
+                      
+                      print(f"⚠️ Error with {model_id}: {e}")
                       break
               if success_flag: break
 
@@ -336,19 +359,25 @@ jobs:
           print("🔍 Gemini raw output preview (first 900 chars):")
           print(full_text[:900])
 
+          # Strip outer markdown wrappers safely
+          full_text = re.sub(r'^```(?:markdown|text|html)?\n', '', full_text, flags=re.IGNORECASE)
+          full_text = re.sub(r'\n```$', '', full_text).strip()
+
           parsed = {"TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": ""}
 
-          section_matches = re.findall(r'^(TITLE|SLUG|EXCERPT|CATEGORY|TAGS|IMAGE_KEYWORD|BODY):\s*(.*)', full_text, re.MULTILINE | re.IGNORECASE)
+          section_matches = re.findall(r'^(TITLE|SLUG|EXCERPT|CATEGORY|TAGS|IMAGE_KEYWORD):\s*(.*)', full_text, re.MULTILINE | re.IGNORECASE)
           for key, value in section_matches:
-              key = key.upper()
-              if key != "BODY":
-                  parsed[key] = value.strip()
+              parsed[key.upper()] = value.strip()
 
           body_match = re.search(r'BODY:\s*(.*)', full_text, re.DOTALL | re.IGNORECASE)
           if body_match:
               parsed["BODY"] = body_match.group(1).strip()
+          else:
+              parsed["BODY"] = full_text.split("BODY:", 1)[-1].strip() if "BODY:" in full_text else full_text
 
-          parsed["BODY"] = re.sub(r'```[\s\S]*?```', '', parsed["BODY"])
+          # Scrub out any leaked frontmatter lines from the top of the body
+          parsed["BODY"] = re.sub(r'^(TITLE|SLUG|EXCERPT|CATEGORY|TAGS|IMAGE_KEYWORD|BODY):\s*.*$', '', parsed["BODY"], flags=re.MULTILINE | re.IGNORECASE).strip()
+
           parsed["BODY"] = dash_scrubber(parsed["BODY"]).strip()
 
           tags_list = [t.strip().replace('"', '') for t in parsed["TAGS"].split(",") if t.strip()]
