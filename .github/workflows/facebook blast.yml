@@ -35,7 +35,7 @@ jobs:
           SITE_URL="https://zandani.co.ke"
 
           # Get changed .md files in content/posts/
-          CHANGED=\( (git diff --name-only HEAD\~1 HEAD -- 'content/posts/' | grep '\.md \)' || true)
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
 
           if [ -z "$CHANGED" ]; then
             echo "📝 No post changes detected"
@@ -44,8 +44,10 @@ jobs:
 
           # Process and post each changed file sequentially
           while IFS= read -r file; do
+            if [ -z "$file" ]; then continue; fi
+            
             SLUG=$(basename "$file" .md)
-            URL="\( {SITE_URL}/article/ \){SLUG}"
+            URL="${SITE_URL}/article/${SLUG}"
             
             echo "🚀 Processing File: $file"
             
@@ -53,7 +55,7 @@ jobs:
             TITLE=$(grep -m 1 "^title:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//')
             
             # Extract only the first paragraph (Skipping the YAML frontmatter)
-            PARAGRAPH=\( (awk 'BEGIN {count=0; body=0} /^--- \)/ {count++; if(count==2){body=1; next}} body==1 {print}' "$file" | awk -v RS='' -v ORS='\n\n' 'NR<=1')
+            PARAGRAPH=$(awk 'BEGIN {count=0; body=0} /^---$/ {count++; if(count==2){body=1; next}} body==1 {print}' "$file" | awk -v RS='' -v ORS='\n\n' 'NR<=1')
             
             if [ -z "$TITLE" ]; then TITLE="Latest Update"; fi
             
@@ -64,7 +66,7 @@ jobs:
             echo "Posting to Facebook Page ID: $FACEBOOK_PAGE_ID..."
             
             # Send text-only post to Facebook
-            FB_RESPONSE=\( (curl -s -X POST "https://graph.facebook.com/v24.0/ \){FACEBOOK_PAGE_ID}/feed" \
+            FB_RESPONSE=$(curl -s -X POST "https://graph.facebook.com/v24.0/${FACEBOOK_PAGE_ID}/feed" \
               -d "message=$FINAL_MESSAGE" \
               -d "access_token=$FACEBOOK_PAGE_TOKEN")
 
