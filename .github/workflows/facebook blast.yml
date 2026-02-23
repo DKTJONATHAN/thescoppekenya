@@ -14,8 +14,8 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Install jq
-        run: sudo apt-get update && sudo apt-get install -y jq
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y jq curl python3
 
       - name: Wait for 30 seconds
         run: |
@@ -51,29 +51,50 @@ jobs:
             
             echo "🚀 Processing File: $file"
             
-            # Extract Title and First Paragraph
-            TITLE=$(grep -m 1 "^title:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//')
+            # Extract Raw Title, Image, and First Paragraph
+            RAW_TITLE=$(grep -m 1 "^title:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//')
+            IMAGE_URL=$(grep -m 1 "^image:" "$file" | sed -E "s/^image: *['\"]?([^'\"]+)['\"]?/\1/")
+            RAW_PARAGRAPH=$(awk 'BEGIN {count=0; body=0} /^---$/ {count++; if(count==2){body=1; next}} body==1 {print}' "$file" | awk -v RS='' -v ORS='\n\n' 'NR<=1')
             
-            # Extract only the first paragraph (Skipping the YAML frontmatter)
-            PARAGRAPH=$(awk 'BEGIN {count=0; body=0} /^---$/ {count++; if(count==2){body=1; next}} body==1 {print}' "$file" | awk -v RS='' -v ORS='\n\n' 'NR<=1')
+            if [ -z "$RAW_TITLE" ]; then RAW_TITLE="Latest Update"; fi
             
-            if [ -z "$TITLE" ]; then TITLE="Latest Update"; fi
+            # Convert Title to Unicode Bold for Facebook
+            BOLD_TITLE=$(python3 -c "import sys; print(''.join(chr(ord(c)+120211) if 'A'<=c<='Z' else chr(ord(c)+120205) if 'a'<=c<='z' else chr(ord(c)+120764) if '0'<=c<='9' else c for c in sys.argv[1]))" "$RAW_TITLE")
             
-            FINAL_MESSAGE="$TITLE
+            # Scrub all HTML, convert entities, and remove Markdown syntax from paragraph
+            CLEAN_PARAGRAPH=$(python3 -c "import sys, html, re; text = html.unescape(sys.argv[1]); text = re.sub(r'<[^>]*>', '', text); text = re.sub(r'\[([^]]+)\]\([^)]+\)', r'\1', text); print(re.sub(r'[*_\`#]', '', text).strip())" "$RAW_PARAGRAPH")
 
-            $PARAGRAPH"
+            FINAL_MESSAGE="$BOLD_TITLE
 
-            echo "Posting to Facebook Page ID: $FACEBOOK_PAGE_ID..."
-            
-            # Send text-only post to Facebook
-            FB_RESPONSE=$(curl -s -X POST "https://graph.facebook.com/v24.0/${FACEBOOK_PAGE_ID}/feed" \
-              -d "message=$FINAL_MESSAGE" \
-              -d "access_token=$FACEBOOK_PAGE_TOKEN")
+$CLEAN_PARAGRAPH"
+
+            # Clean up any leftover image from previous loop iterations
+            rm -f temp_post_image.jpg
+
+            # Download the OG image temporarily
+            if [ -n "$IMAGE_URL" ] && [ "$IMAGE_URL" != "image:" ]; then
+              echo "📥 Downloading image: $IMAGE_URL"
+              curl -s -L "$IMAGE_URL" -o temp_post_image.jpg
+            fi
+
+            # Check if image downloaded successfully, then route to the correct API endpoint
+            if [ -f "temp_post_image.jpg" ]; then
+              echo "📸 Uploading downloaded image and text to Facebook Photos API..."
+              FB_RESPONSE=$(curl -s -X POST "https://graph.facebook.com/v24.0/${FACEBOOK_PAGE_ID}/photos" \
+                -F "source=@temp_post_image.jpg" \
+                -F "message=$FINAL_MESSAGE" \
+                -F "access_token=$FACEBOOK_PAGE_TOKEN")
+            else
+              echo "📝 No image available. Posting text to Facebook Feed API..."
+              FB_RESPONSE=$(curl -s -X POST "https://graph.facebook.com/v24.0/${FACEBOOK_PAGE_ID}/feed" \
+                -d "message=$FINAL_MESSAGE" \
+                -d "access_token=$FACEBOOK_PAGE_TOKEN")
+            fi
 
             echo "Facebook API Response: $FB_RESPONSE"
 
-            # Extract Post ID and Add Comment with Link
-            POST_ID=$(echo "$FB_RESPONSE" | jq -r '.id')
+            # The Photos API returns 'post_id', while the Feed API returns 'id'
+            POST_ID=$(echo "$FB_RESPONSE" | jq -r '.post_id // .id')
 
             if [ "$POST_ID" != "null" ] && [ -n "$POST_ID" ]; then
               echo "✅ Main post successful for $SLUG. Waiting 10 seconds for Facebook servers to sync..."
@@ -97,5 +118,8 @@ jobs:
               echo "❌ Failed to retrieve Post ID for $SLUG. Could not add comment."
               exit 1
             fi
+            
+            # Delete temporary image to prep for the next file in the loop
+            rm -f temp_post_image.jpg
             
           done <<< "$CHANGED"
