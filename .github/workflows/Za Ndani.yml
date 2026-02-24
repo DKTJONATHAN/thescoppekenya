@@ -1,4 +1,4 @@
-name: Za Ndani - Mpasho & Ghafla Scraper
+name: Za Ndani - Mpasho Scraper
 
 on:
   schedule:
@@ -71,7 +71,7 @@ jobs:
               "in today's digital age", "shed light on"
           ]
 
-          print(f"🎯 Target: Mpasho and Ghafla (Za Ndani)")
+          print(f"🎯 Target: Mpasho (Za Ndani)")
 
           def get_target_urls():
               urls = []
@@ -88,17 +88,6 @@ jobs:
                           full_url = href if href.startswith('http') else 'https://mpasho.co.ke' + href
                           urls.append(full_url)
               except Exception as e: print(f"Mpasho scan error: {e}")
-
-              # Scrape Ghafla
-              print("🔍 Scanning Ghafla...")
-              try:
-                  r = requests.get('http://www.ghafla.com/ke/entertainment/', headers=headers, timeout=15)
-                  soup = BeautifulSoup(r.content, 'html.parser')
-                  for a in soup.find_all('a', href=True):
-                      href = a['href']
-                      if '/entertainment/' in href and len(href) > 35:
-                          urls.append(href)
-              except Exception as e: print(f"Ghafla scan error: {e}")
 
               # Deduplicate
               return list(set(urls))
@@ -131,7 +120,7 @@ jobs:
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
 
-                      # --- 24-HOUR FRESHNESS CHECK ---
+                      # Freshness Check
                       pub_time = None
                       meta_pub = soup.find('meta', property='article:published_time')
                       if meta_pub:
@@ -140,7 +129,6 @@ jobs:
                           except: pass
                       
                       if pub_time:
-                          # Ensure timezone awareness for calculation
                           if pub_time.tzinfo is None:
                               pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
                           now = datetime.datetime.now(datetime.timezone.utc)
@@ -154,13 +142,13 @@ jobs:
                       else:
                           print("   ⚠️ No exact timestamp found. Proceeding cautiously.")
 
-                      # --- TITLE EXTRACTION ---
+                      # Title Extraction
                       page_title = ""
                       title_tag = soup.find('title')
                       if title_tag:
-                          page_title = title_tag.get_text().replace(' - Mpasho', '').replace(' | Ghafla!', '').strip()
+                          page_title = title_tag.get_text().replace(' - Mpasho', '').strip()
 
-                      # --- CONTENT EXTRACTION ---
+                      # Content Extraction
                       article_text = ""
                       containers = soup.select('article, main, .article-body, .post-content, .entry-content, .content-body')
                       for c in containers:
@@ -176,7 +164,7 @@ jobs:
                           if len(chunk) > 400:
                               article_text = chunk
 
-                      # --- IMAGE EXTRACTION ---
+                      # Image Extraction
                       img_url = ""
                       for meta in soup.find_all('meta'):
                           if meta.get('property') in ['og:image', 'twitter:image']:
@@ -389,6 +377,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Za Ndani <bot@zandani.co.ke>"
-          commit_message: "content: Entertainment scoop from Mpasho/Ghafla 🎭"
+          commit_message: "content: Entertainment scoop from Mpasho 🎭"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_zandani.json'
