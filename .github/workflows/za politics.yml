@@ -132,7 +132,11 @@ jobs:
                   )
                   page = context.new_page()
                   try:
-                      page.goto(url, timeout=60000, wait_until="networkidle")
+                      # Failsafe logic: wait for DOM, not networkidle, to avoid ad-tracker timeouts
+                      try:
+                          page.goto(url, timeout=45000, wait_until="domcontentloaded")
+                      except Exception:
+                          print("   ⚠️ Page load timeout hit, but grabbing available content anyway.")
                       
                       try:
                           page.wait_for_selector('p', timeout=10000)
@@ -204,7 +208,7 @@ jobs:
                       return article_text, img_url, page_title
 
                   except Exception as e:
-                      print(f"   Scrape failed: {e}")
+                      print(f"   Scrape failed completely: {e}")
                       return None, None, None
                   finally:
                       browser.close()
