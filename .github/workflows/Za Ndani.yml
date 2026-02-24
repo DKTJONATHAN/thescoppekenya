@@ -75,21 +75,39 @@ jobs:
 
           def get_target_urls():
               urls = []
-              headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
-              
-              # Scrape Mpasho
-              print("🔍 Scanning Mpasho...")
+              print("🔍 Scanning Mpasho with Playwright...")
               try:
-                  r = requests.get('https://mpasho.co.ke/entertainment/', headers=headers, timeout=15)
-                  soup = BeautifulSoup(r.content, 'html.parser')
-                  for a in soup.find_all('a', href=True):
-                      href = a['href']
-                      if '/entertainment/' in href and len(href) > 35:
-                          full_url = href if href.startswith('http') else 'https://mpasho.co.ke' + href
-                          urls.append(full_url)
-              except Exception as e: print(f"Mpasho scan error: {e}")
+                  with sync_playwright() as p:
+                      browser = p.chromium.launch(headless=True, args=[
+                          "--no-sandbox", 
+                          "--disable-dev-shm-usage",
+                          "--disable-blink-features=AutomationControlled"
+                      ])
+                      context = browser.new_context(
+                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+                          viewport={"width": 1920, "height": 1080}
+                      )
+                      page = context.new_page()
+                      page.goto('https://www.mpasho.co.ke/entertainment/', timeout=60000, wait_until="domcontentloaded")
+                      
+                      # Scroll to trigger lazy-loaded images/links
+                      page.evaluate("window.scrollBy(0, 1000)")
+                      page.wait_for_timeout(4000)
 
-              # Deduplicate
+                      content = page.content()
+                      soup = BeautifulSoup(content, 'html.parser')
+                      
+                      for a in soup.find_all('a', href=True):
+                          href = a['href']
+                          # Target long URLs with hyphens (typical news slugs) and avoid category/author pages
+                          if len(href) > 40 and '-' in href and '/author/' not in href and '/category/' not in href and '/tag/' not in href:
+                              full_url = href if href.startswith('http') else 'https://www.mpasho.co.ke' + (href if href.startswith('/') else '/' + href)
+                              urls.append(full_url)
+                      
+                      browser.close()
+              except Exception as e: 
+                  print(f"Mpasho scan error: {e}")
+
               return list(set(urls))
 
           article_links = get_target_urls()
