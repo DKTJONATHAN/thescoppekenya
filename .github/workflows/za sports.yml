@@ -73,11 +73,11 @@ jobs:
               "in today's digital age", "shed light on"
           ]
 
-          print(f"🎯 Target: Pulse Sports Kenya (Martin Mutwiri)")
+          print(f"🎯 Target: Tuko.co.ke Sports (Martin Mutwiri)")
 
           def get_target_urls():
               urls = []
-              print("🔍 Scanning Pulse Sports with Playwright...")
+              print("🔍 Scanning Tuko.co.ke Sports with Playwright...")
               try:
                   with sync_playwright() as p:
                       browser = p.chromium.launch(headless=True, args=[
@@ -90,8 +90,7 @@ jobs:
                           viewport={"width": 1920, "height": 1080}
                       )
                       page = context.new_page()
-                      # Going directly to the homepage to scrape the latest links
-                      page.goto('https://www.pulsesports.co.ke/', timeout=60000, wait_until="domcontentloaded")
+                      page.goto('https://www.tuko.co.ke/sports/', timeout=60000, wait_until="domcontentloaded")
                       
                       page.evaluate("window.scrollBy(0, 1500)")
                       page.wait_for_timeout(4000)
@@ -101,13 +100,13 @@ jobs:
                       
                       for a in soup.find_all('a', href=True):
                           href = a.get('href', '')
-                          if len(href) > 40 and href.count('-') > 2 and '/author/' not in href and '/tag/' not in href:
-                              full_url = href if href.startswith('http') else 'https://www.pulsesports.co.ke' + (href if href.startswith('/') else '/' + href)
+                          if '/sports/' in href and len(href) > 25 and '/author/' not in href and '/tag/' not in href:
+                              full_url = href if href.startswith('http') else 'https://www.tuko.co.ke' + (href if href.startswith('/') else '/' + href)
                               urls.append(full_url)
                       
                       browser.close()
               except Exception as e: 
-                  print(f"Pulse Sports scan error: {e}")
+                  print(f"Tuko scan error: {e}")
 
               return list(set(urls))
 
@@ -173,11 +172,11 @@ jobs:
                       page_title = ""
                       title_tag = soup.find('title')
                       if title_tag:
-                          page_title = title_tag.get_text().replace(' - Pulse Sports Kenya', '').strip()
+                          page_title = title_tag.get_text().replace(' - TUKO.co.ke', '').replace(' | Tuko.co.ke', '').strip()
 
                       # --- CONTENT EXTRACTION ---
                       article_text = ""
-                      containers = soup.select('article, main, .article-content, .article-body, .post-content, .entry-content, .content-body')
+                      containers = soup.select('article, main, .article-content, .article-body, .post__content, .entry-content, .content-body')
                       for c in containers:
                           paras = c.find_all('p')
                           chunk = "\n\n".join([p.get_text(strip=True) for p in paras if len(p.get_text(strip=True)) > 40])
@@ -284,13 +283,13 @@ jobs:
           
           {internal_links_data}
 
-          TASK: Write a dynamic and engaging sports news report as **Martin Mutwiri**, an enthusiastic, highly knowledgeable Kenyan sports journalist writing for Za Ndani. 
+          TASK: Write a dynamic and engaging sports news report as **Martin Mutwiri**, an enthusiastic, highly knowledgeable Kenyan sports journalist writing for Za Ndani.
 
           STRICT TIME RULE AND GOOGLE SEARCH:
-          You MUST use Google Search to verify facts, but remember that the current year is 2026. Do NOT get confused by old articles or past matches from 2023, 2024, or 2025. The SOURCE SCRAPED TEXT is about a recent event happening right now. Only report on the current 2026 context.
+          You MUST use Google Search to verify facts. On every single search query you make, you must remind yourself of the current date ({full_date_str}) and only find data accurate as of this exact date. You are strictly forbidden from writing about past matches from 2023, 2024, or 2025 as if they are current news. If the search results bring up old events, IGNORE THEM COMPLETELY and rely solely on the SOURCE SCRAPED TEXT.
 
           EXACT-MATCH SEO ENGINE (STRICT RULE):
-          1. Extract the 2 to 4 most important exact keyword phrases from the ORIGINAL HEADLINE (e.g., the specific team name, athlete, or tournament).
+          1. Extract the 2 to 4 most important exact keyword phrases from the ORIGINAL HEADLINE.
           2. FRONT-LOAD TITLE: The new TITLE must start with these exact keywords.
           3. KEYWORD SLUG: The SLUG must exclusively be built from these exact keywords.
           4. KEYWORD EXCERPT: The EXCERPT must naturally feature these exact keywords.
@@ -299,10 +298,9 @@ jobs:
           LANGUAGE MANDATE (STRICT):
           - NO SHENG OR SWAHILI. 
           - Write in passionate, high-energy, and professional Kenyan English. 
-          - Maintain a tone that shows deep love and understanding of sports, tactics, and player performance.
           - Avoid gossip phrasing. Focus on the athletic achievements, controversies, scores, and sports politics directly mentioned in the text.
           - BANNED PHRASES: {", ".join(BANNED_PHRASES)}.
-          - NEVER use long hyphens or double hyphens. Only use regular single hyphens.
+          - NEVER use em dashes or en dashes. Only use regular single hyphens (-).
 
           STRICT OUTPUT FORMAT:
           TITLE: [SEO Title front-loaded with exact original keywords]
