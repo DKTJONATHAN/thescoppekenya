@@ -104,12 +104,13 @@ jobs:
 
               Rules:
               - Make it catchy and designed to provoke curiosity and comments.
+              - You MUST explicitly tell the reader to check the comments for the full story/link (e.g., "Catch the full juice in the comments below! 👇" or "Link in the comments!"). This is mandatory.
               - Use 2 to 3 relevant emojis.
               - Include 2 or 3 relevant hashtags at the bottom.
               - Do NOT include the article link or URL in the text.
               - Keep it under 3 short, punchy paragraphs.
               - Write in clear, appealing Kenyan English.
-              - NEVER use single hyphens, em dashes, or en dashes.
+              - NEVER use em dashes or en dashes. Only use regular single hyphens (-).
               """
 
               try:
@@ -121,7 +122,7 @@ jobs:
                   ai_caption = response.text.strip()
               except Exception as e:
                   print(f"⚠️ AI Generation failed: {e}")
-                  ai_caption = f"📰 {title}\n\n{excerpt}" 
+                  ai_caption = f"📰 {title}\n\n{excerpt}\n\n👇 Catch the full juice in the comments below!" 
 
               # Scrub dashes just in case
               ai_caption = ai_caption.replace('\u2014', '-').replace('\u2013', '-')
