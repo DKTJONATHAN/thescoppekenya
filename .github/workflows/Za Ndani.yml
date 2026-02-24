@@ -90,8 +90,7 @@ jobs:
                       page = context.new_page()
                       page.goto('https://www.mpasho.co.ke/entertainment/', timeout=60000, wait_until="domcontentloaded")
                       
-                      # Scroll to trigger lazy-loaded images/links
-                      page.evaluate("window.scrollBy(0, 1000)")
+                      page.evaluate("window.scrollBy(0, 1500)")
                       page.wait_for_timeout(4000)
 
                       content = page.content()
@@ -99,7 +98,6 @@ jobs:
                       
                       for a in soup.find_all('a', href=True):
                           href = a['href']
-                          # Target long URLs with hyphens (typical news slugs) and avoid category/author pages
                           if len(href) > 40 and '-' in href and '/author/' not in href and '/category/' not in href and '/tag/' not in href:
                               full_url = href if href.startswith('http') else 'https://www.mpasho.co.ke' + (href if href.startswith('/') else '/' + href)
                               urls.append(full_url)
@@ -132,19 +130,32 @@ jobs:
                   )
                   page = context.new_page()
                   try:
-                      page.goto(url, timeout=45000, wait_until="domcontentloaded")
+                      # wait_until="networkidle" ensures dynamic text loads
+                      page.goto(url, timeout=60000, wait_until="networkidle")
+                      
+                      try:
+                          page.wait_for_selector('p', timeout=10000)
+                      except:
+                          pass
+                      
                       page.wait_for_timeout(3000)
-
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
 
-                      # Freshness Check
+                      # --- FRESHNESS CHECK USING URL DATE ---
                       pub_time = None
-                      meta_pub = soup.find('meta', property='article:published_time')
-                      if meta_pub:
+                      url_date_match = re.search(r'/(\d{4}-\d{2}-\d{2})-', url)
+                      if url_date_match:
                           try:
-                              pub_time = date_parser.parse(meta_pub.get('content'))
+                              pub_time = datetime.datetime.strptime(url_date_match.group(1), "%Y-%m-%d").replace(tzinfo=datetime.timezone.utc)
                           except: pass
+
+                      if not pub_time:
+                          meta_pub = soup.find('meta', property='article:published_time')
+                          if meta_pub:
+                              try:
+                                  pub_time = date_parser.parse(meta_pub.get('content'))
+                              except: pass
                       
                       if pub_time:
                           if pub_time.tzinfo is None:
@@ -152,23 +163,25 @@ jobs:
                           now = datetime.datetime.now(datetime.timezone.utc)
                           age_hours = (now - pub_time).total_seconds() / 3600
                           
-                          if age_hours > 24:
-                              print(f"   ⏳ Article is {int(age_hours)} hours old. Skipping (Older than 24h).")
+                          # If parsed from URL date (midnight), allow up to 48 hours to account for time of day.
+                          limit = 48 if url_date_match else 24
+                          if age_hours > limit:
+                              print(f"   ⏳ Article is {int(age_hours)} hours old. Skipping (Older than limit).")
                               return None, None, None
                           else:
-                              print(f"   ⏱️ Freshness verified: Published {int(age_hours)} hours ago.")
+                              print(f"   ⏱️ Freshness verified: Published roughly {int(age_hours)} hours ago.")
                       else:
                           print("   ⚠️ No exact timestamp found. Proceeding cautiously.")
 
-                      # Title Extraction
+                      # --- TITLE EXTRACTION ---
                       page_title = ""
                       title_tag = soup.find('title')
                       if title_tag:
                           page_title = title_tag.get_text().replace(' - Mpasho', '').strip()
 
-                      # Content Extraction
+                      # --- CONTENT EXTRACTION ---
                       article_text = ""
-                      containers = soup.select('article, main, .article-body, .post-content, .entry-content, .content-body')
+                      containers = soup.select('article, main, .article-content, .article-body, .post-content, .entry-content, .content-body')
                       for c in containers:
                           paras = c.find_all('p')
                           chunk = "\n\n".join([p.get_text(strip=True) for p in paras if len(p.get_text(strip=True)) > 40])
@@ -176,13 +189,21 @@ jobs:
                               article_text = chunk
                               break
 
+                      # Fallback 1: All paragraphs
                       if len(article_text) < 500:
                           all_paras = soup.find_all('p')
                           chunk = "\n\n".join([p.get_text(strip=True) for p in all_paras if len(p.get_text(strip=True)) > 40])
-                          if len(chunk) > 400:
+                          if len(chunk) > 300:
                               article_text = chunk
+                              
+                      # Fallback 2: Brute force text extraction
+                      if len(article_text) < 300:
+                          body = soup.find('body')
+                          if body:
+                              lines = [line.strip() for line in body.get_text(separator='\n').split('\n') if len(line.strip()) > 50]
+                              article_text = "\n\n".join(lines)
 
-                      # Image Extraction
+                      # --- IMAGE EXTRACTION ---
                       img_url = ""
                       for meta in soup.find_all('meta'):
                           if meta.get('property') in ['og:image', 'twitter:image']:
