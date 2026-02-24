@@ -1,9 +1,10 @@
-name: Facebook Auto-Post on Commit
+name: Facebook Auto-Post with AI
 
 on:
   push:
     paths:
       - 'content/posts/**.md'
+  workflow_dispatch:
 
 jobs:
   post-to-facebook:
@@ -14,25 +15,36 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Install dependencies
-        run: sudo apt-get update && sudo apt-get install -y jq curl python3
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-      - name: Wait for 30 seconds
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-genai
+
+      - name: Wait for Zandani to deploy
         run: |
           echo "Waiting 30 seconds for Zandani to deploy..."
           sleep 30
 
-      - name: Detect changed posts & publish to Facebook
+      - name: Detect posts & publish to Facebook via AI
         env:
           FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
           FACEBOOK_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           if [ -z "$FACEBOOK_PAGE_ID" ] || [ -z "$FACEBOOK_PAGE_TOKEN" ]; then
             echo "⚠️ Facebook credentials not set, skipping"
             exit 0
           fi
-
-          SITE_URL="https://zandani.co.ke"
+          
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "⚠️ GEMINI_API_KEY not set, skipping. Please ensure it is in your secrets."
+            exit 0
+          fi
 
           # Get changed .md files in content/posts/
           CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
@@ -42,83 +54,141 @@ jobs:
             exit 0
           fi
 
-          # Process and post each changed file sequentially
-          while IFS= read -r file; do
-            if [ -z "$file" ]; then continue; fi
-            
-            SLUG=$(basename "$file" .md)
-            URL="${SITE_URL}/article/${SLUG}"
-            
-            echo "🚀 Processing File: $file"
-            
-            # Extract Raw Title, Image, and First Paragraph
-            RAW_TITLE=$(grep -m 1 "^title:" "$file" | cut -d: -f2- | tr -d '"' | tr -d "'" | sed 's/^ *//')
-            IMAGE_URL=$(grep -m 1 "^image:" "$file" | sed -E "s/^image: *['\"]?([^'\"]+)['\"]?/\1/")
-            RAW_PARAGRAPH=$(awk 'BEGIN {count=0; body=0} /^---$/ {count++; if(count==2){body=1; next}} body==1 {print}' "$file" | awk -v RS='' -v ORS='\n\n' 'NR<=1')
-            
-            if [ -z "$RAW_TITLE" ]; then RAW_TITLE="Latest Update"; fi
-            
-            # Convert Title to Unicode Bold for Facebook
-            BOLD_TITLE=$(python3 -c "import sys; print(''.join(chr(ord(c)+120211) if 'A'<=c<='Z' else chr(ord(c)+120205) if 'a'<=c<='z' else chr(ord(c)+120764) if '0'<=c<='9' else c for c in sys.argv[1]))" "$RAW_TITLE")
-            
-            # Scrub all HTML, convert entities, and remove Markdown syntax from paragraph
-            CLEAN_PARAGRAPH=$(python3 -c "import sys, html, re; text = html.unescape(sys.argv[1]); text = re.sub(r'<[^>]*>', '', text); text = re.sub(r'\[([^]]+)\]\([^)]+\)', r'\1', text); print(re.sub(r'[*_\`#]', '', text).strip())" "$RAW_PARAGRAPH")
+          # Export the list of files to be read by Python
+          export CHANGED_FILES="$CHANGED"
 
-            # Safely format the multiline message without breaking YAML indentation
-            FINAL_MESSAGE=$(printf "%s\n\n%s" "$BOLD_TITLE" "$CLEAN_PARAGRAPH")
+          python3 << 'EOF'
+          import os, re, requests, time
+          from google import genai
+          from google.genai import types
 
-            # Clean up any leftover image from previous loop iterations
-            rm -f temp_post_image.jpg
+          changed_files = os.environ.get('CHANGED_FILES', '').strip().split('\n')
+          fb_page_id = os.environ.get('FACEBOOK_PAGE_ID')
+          fb_token = os.environ.get('FACEBOOK_PAGE_TOKEN')
+          gemini_key = os.environ.get('GEMINI_API_KEY')
+          site_url = "https://zandani.co.ke"
 
-            # Download the OG image temporarily
-            if [ -n "$IMAGE_URL" ] && [ "$IMAGE_URL" != "image:" ]; then
-              echo "📥 Downloading image: $IMAGE_URL"
-              curl -s -L "$IMAGE_URL" -o temp_post_image.jpg
-            fi
+          client = genai.Client(api_key=gemini_key)
 
-            # Check if image downloaded successfully, then route to the correct API endpoint
-            if [ -f "temp_post_image.jpg" ]; then
-              echo "📸 Uploading downloaded image and text to Facebook Photos API..."
-              FB_RESPONSE=$(curl -s -X POST "https://graph.facebook.com/v24.0/${FACEBOOK_PAGE_ID}/photos" \
-                -F "source=@temp_post_image.jpg" \
-                -F "message=$FINAL_MESSAGE" \
-                -F "access_token=$FACEBOOK_PAGE_TOKEN")
-            else
-              echo "📝 No image available. Posting text to Facebook Feed API..."
-              FB_RESPONSE=$(curl -s -X POST "https://graph.facebook.com/v24.0/${FACEBOOK_PAGE_ID}/feed" \
-                -d "message=$FINAL_MESSAGE" \
-                -d "access_token=$FACEBOOK_PAGE_TOKEN")
-            fi
-
-            echo "Facebook API Response: $FB_RESPONSE"
-
-            # The Photos API returns 'post_id', while the Feed API returns 'id'
-            POST_ID=$(echo "$FB_RESPONSE" | jq -r '.post_id // .id')
-
-            if [ "$POST_ID" != "null" ] && [ -n "$POST_ID" ]; then
-              echo "✅ Main post successful for $SLUG. Waiting 10 seconds for Facebook servers to sync..."
-              sleep 10
+          for file_path in changed_files:
+              if not file_path or not os.path.exists(file_path):
+                  continue
               
-              echo "Adding link to the comment section..."
-              COMMENT_RESPONSE=$(curl -s -X POST "https://graph.facebook.com/v24.0/$POST_ID/comments" \
-                -d "message=Read the full story here: $URL" \
-                -d "access_token=$FACEBOOK_PAGE_TOKEN")
+              print(f"🚀 Processing File: {file_path}")
+              slug = os.path.basename(file_path).replace('.md', '')
+              article_url = f"{site_url}/article/{slug}"
+
+              with open(file_path, 'r', encoding='utf-8') as f:
+                  content = f.read()
+
+              # Extract metadata using regex
+              title_match = re.search(r'^title:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
+              author_match = re.search(r'^author:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
+              excerpt_match = re.search(r'^excerpt:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
+              image_match = re.search(r'^image:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
+
+              title = title_match.group(1) if title_match else "Latest Update"
+              author = author_match.group(1) if author_match else "Za Ndani"
+              excerpt = excerpt_match.group(1) if excerpt_match else ""
+              image_url = image_match.group(1) if image_match else ""
+
+              print(f"📝 Asking Gemini to write caption for: {title}")
+
+              # AI Prompt for the Social Media Manager
+              prompt = f"""
+              You are the expert Social Media Manager for 'Za Ndani', a top Kenyan news platform. 
+              Write a highly engaging, conversational Facebook post caption to drive traffic to this new article.
+
+              Article Title: {title}
+              Author: {author}
+              Excerpt: {excerpt}
+
+              Rules:
+              - Make it catchy and designed to provoke curiosity and comments.
+              - Use 2 to 3 relevant emojis.
+              - Include 2 or 3 relevant hashtags at the bottom.
+              - Do NOT include the article link or URL in the text (we will post the link in the comments).
+              - Keep it under 3 short, punchy paragraphs.
+              - Write in clear, appealing Kenyan English.
+              - NEVER use em dashes or en dashes. Only use regular single hyphens (-).
+              """
+
+              try:
+                  # Using gemini-2.5-flash for speed and reliability
+                  response = client.models.generate_content(
+                      model='gemini-2.5-flash',
+                      contents=prompt,
+                      config=types.GenerateContentConfig(temperature=0.8)
+                  )
+                  ai_caption = response.text.strip()
+              except Exception as e:
+                  print(f"⚠️ AI Generation failed: {e}")
+                  # Fallback to a clean string if API fails
+                  ai_caption = f"📰 {title}\n\n{excerpt}" 
+
+              # Scrub dashes just in case the AI missed the instruction
+              ai_caption = ai_caption.replace('\u2014', '-').replace('\u2013', '-')
+
+              img_path = "temp_post_image.jpg"
+              has_image = False
               
-              if echo "$COMMENT_RESPONSE" | grep -q 'OAuthException'; then
-                echo "❌ Facebook API rejected the comment. Token lacks 'pages_manage_engagement' permission."
-                exit 1
-              elif echo "$COMMENT_RESPONSE" | grep -q 'error'; then
-                echo "❌ Failed to add comment due to an API error: $COMMENT_RESPONSE"
-                exit 1
-              else
-                echo "✅ Successfully published post and link comment for $SLUG!"
-              fi
-            else
-              echo "❌ Failed to retrieve Post ID for $SLUG. Could not add comment."
-              exit 1
-            fi
-            
-            # Delete temporary image to prep for the next file in the loop
-            rm -f temp_post_image.jpg
-            
-          done <<< "$CHANGED"
+              if image_url and image_url.startswith("http"):
+                  print(f"📥 Downloading image: {image_url}")
+                  try:
+                      img_data = requests.get(image_url, timeout=15).content
+                      with open(img_path, 'wb') as img_file:
+                          img_file.write(img_data)
+                      has_image = True
+                  except Exception as e:
+                      print(f"⚠️ Failed to download image: {e}")
+
+              post_id = None
+              
+              if has_image:
+                  print("📸 Uploading image and AI text to Facebook Photos API...")
+                  url = f"https://graph.facebook.com/v24.0/{fb_page_id}/photos"
+                  payload = {'message': ai_caption, 'access_token': fb_token}
+                  with open(img_path, 'rb') as img_file:
+                      files = {'source': img_file}
+                      res = requests.post(url, data=payload, files=files).json()
+                  post_id = res.get('post_id') or res.get('id')
+              else:
+                  print("📝 No image found. Posting AI text to Facebook Feed API...")
+                  url = f"https://graph.facebook.com/v24.0/{fb_page_id}/feed"
+                  payload = {'message': ai_caption, 'access_token': fb_token}
+                  res = requests.post(url, data=payload).json()
+                  post_id = res.get('id')
+
+              print(f"Facebook API Response: {res}")
+
+              if post_id:
+                  print("✅ Main post successful. Waiting 10 seconds for sync...")
+                  time.sleep(10)
+                  
+                  print("💬 Adding link to the comment section...")
+                  comment_url = f"https://graph.facebook.com/v24.0/{post_id}/comments"
+                  comment_msg = f"Read the full story by {author} here: {article_url}"
+                  comment_payload = {'message': comment_msg, 'access_token': fb_token}
+                  comment_res = requests.post(comment_url, data=comment_payload).json()
+                  
+                  if 'error' in comment_res:
+                      print(f"❌ Failed to add comment: {comment_res}")
+                  else:
+                      print(f"✅ Successfully published AI post and link comment for {slug}!")
+              else:
+                  print(f"❌ Failed to post {slug} to Facebook.")
+
+              if os.path.exists(img_path):
+                  os.remove(img_path)
+          EOF
+          ```
+
+### What this upgraded workflow does:
+1. It detects exactly which `.md` file was just added by your scraping bots.
+2. It strips out the Title, Author, Excerpt, and Image directly from the YAML frontmatter.
+3. It hands those details over to Gemini, asking it to act as your Social Media Manager to write a custom, highly engaging Facebook caption.
+4. It downloads the article's image, posts it to Facebook using the AI-generated text, waits 10 seconds for Facebook's servers to sync, and then automatically comments the live article link.
+
+Just ensure you have the `GEMINI_API_KEY` mapped in your environment variables for this action (which I added to the template above). 
+
+Would you like to build the Twitter thread version next?
