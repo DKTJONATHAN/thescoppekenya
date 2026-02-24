@@ -90,6 +90,7 @@ jobs:
                           viewport={"width": 1920, "height": 1080}
                       )
                       page = context.new_page()
+                      # Going directly to the homepage to scrape the latest links
                       page.goto('https://www.pulsesports.co.ke/', timeout=60000, wait_until="domcontentloaded")
                       
                       page.evaluate("window.scrollBy(0, 1500)")
@@ -100,7 +101,6 @@ jobs:
                       
                       for a in soup.find_all('a', href=True):
                           href = a.get('href', '')
-                          # Universal slug detector: Long URLs with multiple hyphens usually indicate an article
                           if len(href) > 40 and href.count('-') > 2 and '/author/' not in href and '/tag/' not in href:
                               full_url = href if href.startswith('http') else 'https://www.pulsesports.co.ke' + (href if href.startswith('/') else '/' + href)
                               urls.append(full_url)
@@ -147,7 +147,7 @@ jobs:
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
 
-                      # --- FRESHNESS CHECK (48 Hours limit for safety) ---
+                      # --- FRESHNESS CHECK ---
                       pub_time = None
                       meta_pub = soup.find('meta', property='article:published_time')
                       if meta_pub:
@@ -284,7 +284,10 @@ jobs:
           
           {internal_links_data}
 
-          TASK: Write a dynamic and engaging sports news report as **Martin Mutwiri**, an enthusiastic, highly knowledgeable Kenyan sports journalist writing for Za Ndani. You must use Google Search to verify any facts, scores, or fetch the latest updates on this sports story.
+          TASK: Write a dynamic and engaging sports news report as **Martin Mutwiri**, an enthusiastic, highly knowledgeable Kenyan sports journalist writing for Za Ndani. 
+
+          STRICT TIME RULE AND GOOGLE SEARCH:
+          You MUST use Google Search to verify facts, but remember that the current year is 2026. Do NOT get confused by old articles or past matches from 2023, 2024, or 2025. The SOURCE SCRAPED TEXT is about a recent event happening right now. Only report on the current 2026 context.
 
           EXACT-MATCH SEO ENGINE (STRICT RULE):
           1. Extract the 2 to 4 most important exact keyword phrases from the ORIGINAL HEADLINE (e.g., the specific team name, athlete, or tournament).
@@ -297,7 +300,7 @@ jobs:
           - NO SHENG OR SWAHILI. 
           - Write in passionate, high-energy, and professional Kenyan English. 
           - Maintain a tone that shows deep love and understanding of sports, tactics, and player performance.
-          - Avoid gossip phrasing. Focus on the athletic achievements, controversies, scores, and sports politics.
+          - Avoid gossip phrasing. Focus on the athletic achievements, controversies, scores, and sports politics directly mentioned in the text.
           - BANNED PHRASES: {", ".join(BANNED_PHRASES)}.
           - NEVER use long hyphens or double hyphens. Only use regular single hyphens.
 
@@ -321,7 +324,7 @@ jobs:
                   try:
                       response = client.models.generate_content(
                           model=model_id, contents=prompt,
-                          config=types.GenerateContentConfig(temperature=0.9, tools=[google_search_tool])
+                          config=types.GenerateContentConfig(temperature=0.7, tools=[google_search_tool])
                       )
                       full_text = response.text.strip()
                       success_flag = True
