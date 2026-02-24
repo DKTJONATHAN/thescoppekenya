@@ -132,7 +132,6 @@ jobs:
                   )
                   page = context.new_page()
                   try:
-                      # Failsafe logic: wait for DOM, not networkidle, to avoid ad-tracker timeouts
                       try:
                           page.goto(url, timeout=45000, wait_until="domcontentloaded")
                       except Exception:
@@ -147,7 +146,7 @@ jobs:
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
 
-                      # --- FRESHNESS CHECK ---
+                      # --- FRESHNESS CHECK (Updated to 48 Hours) ---
                       pub_time = None
                       meta_pub = soup.find('meta', property='article:published_time')
                       if meta_pub:
@@ -161,8 +160,8 @@ jobs:
                           now = datetime.datetime.now(datetime.timezone.utc)
                           age_hours = (now - pub_time).total_seconds() / 3600
                           
-                          if age_hours > 24:
-                              print(f"   ⏳ Article is {int(age_hours)} hours old. Skipping (Older than 24h).")
+                          if age_hours > 48:
+                              print(f"   ⏳ Article is {int(age_hours)} hours old. Skipping (Older than 48h).")
                               return None, None, None
                           else:
                               print(f"   ⏱️ Freshness verified: Published {int(age_hours)} hours ago.")
@@ -227,7 +226,7 @@ jobs:
                   break 
 
           if not full_raw_text: 
-              print("❌ No valid unread or fresh content found within the last 24 hours.")
+              print("❌ No valid unread or fresh content found within the last 48 hours.")
               sys.exit(0)
 
           def get_internal_context(posts_dir):
@@ -299,7 +298,7 @@ jobs:
           - Maintain a neutral but engaging journalistic tone suitable for high-level political news.
           - Avoid tabloidy fillers or gossip phrasing. Focus on policy, statements, and political impact.
           - BANNED PHRASES: {", ".join(BANNED_PHRASES)}.
-          - NEVER use long dashes or double dashes. Only use regular single hyphens.
+          - NEVER use long hyphens or double hyphens. Only use regular single hyphens.
 
           STRICT OUTPUT FORMAT:
           TITLE: [SEO Title front-loaded with exact original keywords]
