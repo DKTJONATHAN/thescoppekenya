@@ -1,0 +1,435 @@
+name: Kenya News British Gossip Scraper (Google News + Internal Links)
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+    - cron: '30 4 * * *'
+    - cron: '0 6 * * *'
+    - cron: '30 7 * * *'
+    - cron: '0 9 * * *'
+    - cron: '30 10 * * *'
+    - cron: '0 12 * * *'
+    - cron: '30 13 * * *'
+    - cron: '0 15 * * *'
+    - cron: '30 16 * * *'
+    - cron: '0 18 * * *'
+    - cron: '30 19 * * *'
+  workflow_dispatch:
+    inputs:
+      manual_topic:
+        description: 'Force topic: entertainment, politics, news, sports, business, tech'
+        required: false
+        default: ''
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+  MEMORY_FILE: .github/scrape_memory.json
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-genai beautifulsoup4 lxml playwright
+          playwright install chromium
+
+      - name: Generate article with Gemini
+        env:
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          MANUAL_TOPIC: ${{ inputs.manual_topic }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
+          MEMORY_FILE: ${{ env.MEMORY_FILE }}
+        run: |
+          python << 'EOF'
+          import os, json, datetime, requests, re, time, sys, hashlib, random, urllib.parse, textwrap, itertools
+          from google import genai
+          from google.genai import types
+          from bs4 import BeautifulSoup
+          from playwright.sync_api import sync_playwright
+
+          today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
+          current_hour = datetime.datetime.utcnow().hour
+
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+
+          BANNED_PHRASES = [
+              "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
+              "grab your popcorn", "listen up", "buckle up", "breaking news",
+              "sherehe", "form ni gani", "udaku", "hello guys", "welcome back",
+              "mambo vipi", "niaje wasee", "karibuni", "tapestry", "dive in",
+              "delve into", "moreover", "furthermore", "in conclusion", 
+              "it's worth noting", "a testament to", "navigating the landscape",
+              "in today's digital age", "shed light on"
+          ]
+
+          hour_to_topic = {
+              3: 'entertainment', 4: 'news', 6: 'entertainment', 7: 'politics',
+              9: 'entertainment', 10: 'sports', 12: 'entertainment', 13: 'business',
+              15: 'entertainment', 16: 'tech', 18: 'entertainment', 19: 'news'
+          }
+
+          manual_input = os.environ.get('MANUAL_TOPIC', '').strip().lower()
+          valid_topics = ['entertainment', 'politics', 'news', 'sports', 'business', 'tech']
+
+          if manual_input in valid_topics:
+              topic = manual_input
+          else:
+              topic = hour_to_topic.get(current_hour, 'entertainment')
+
+          print(f"🎯 Topic: {topic}")
+
+          base_keywords = {
+              'entertainment': 'kenya entertainment OR kenya celebrity OR nairobi gossip OR kenya showbiz',
+              'politics': 'kenya politics OR kenya parliament OR nairobi politics OR kenya government',
+              'news': 'kenya breaking news OR nairobi news OR kenya latest news',
+              'sports': 'kenya sports OR kenya athletics OR kenya football OR nairobi sports',
+              'business': 'kenya economy OR kenya business OR kenya finance OR nairobi markets',
+              'tech': 'kenya tech OR kenya technology OR nairobi startup OR kenya innovation'
+          }
+          query_str = base_keywords.get(topic, 'kenya breaking news')
+          safe_query = urllib.parse.quote(f"{query_str} when:2d")
+
+          rss_url = f"https://news.google.com/rss/search?q={safe_query}&hl=en-KE&gl=KE&ceid=KE:en"
+          print(f"🌍 Fetching Google News: {rss_url}")
+
+          try:
+              resp = requests.get(rss_url, timeout=15)
+              soup = BeautifulSoup(resp.content, "xml")
+              articles = [{"title": item.title.text, "url": item.link.text} for item in soup.find_all("item")]
+          except Exception as e:
+              print(f"Error fetching Google News: {e}")
+              sys.exit(0)
+
+          if not articles:
+              print("No fresh news, skipping")
+              sys.exit(0)
+
+          memory_path = os.environ.get('MEMORY_FILE')
+          memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
+
+          def scrape_article_free(url):
+              print(f"🕷️ Trying full article from Google News: {url}")
+              with sync_playwright() as p:
+                  browser = p.chromium.launch(headless=True, args=[
+                      "--no-sandbox", 
+                      "--disable-dev-shm-usage",
+                      "--disable-blink-features=AutomationControlled"
+                  ])
+                  context = browser.new_context(
+                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+                      viewport={"width": 1920, "height": 1080}
+                  )
+                  page = context.new_page()
+                  try:
+                      page.goto(url, timeout=60000, wait_until="domcontentloaded")
+
+                      if any(x in page.url for x in ["google.com", "news.google.com"]):
+                          print("   Still on Google wrapper -> forcing direct link...")
+                          direct = page.evaluate('''() => {
+                              const links = Array.from(document.querySelectorAll('a[href^="http"]'));
+                              for (let a of links) {
+                                  const h = a.href;
+                                  if (!h.includes('google.com') && !h.includes('news.google.com') && h.length > 40) {
+                                      return h;
+                                  }
+                              }
+                              return null;
+                          }''')
+                          if direct:
+                              print(f"   Found direct link -> {direct[:80]}...")
+                              page.goto(direct, timeout=60000, wait_until="networkidle")
+                          else:
+                              try:
+                                  page.click('text=/Visit|Continue|Go to site/i', timeout=10000)
+                                  page.wait_for_timeout(6000)
+                              except:
+                                  pass
+
+                      page.wait_for_timeout(8000)
+                      page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                      page.wait_for_timeout(4000)
+
+                      print(f"✅ Landed on real article: {page.url}")
+
+                      content = page.content()
+                      soup = BeautifulSoup(content, "html.parser")
+
+                      article_text = ""
+                      containers = soup.select('article, main, .article-body, .post-content, .entry-content, .story-content, .content-body, .article__content, .post-body')
+                      for c in containers:
+                          paras = c.find_all('p')
+                          chunk = "\n\n".join([p.get_text(strip=True) for p in paras if len(p.get_text(strip=True)) > 40])
+                          if len(chunk) > 600:
+                              article_text = chunk
+                              break
+
+                      if len(article_text) < 600:
+                          all_paras = soup.find_all('p')
+                          chunk = "\n\n".join([p.get_text(strip=True) for p in all_paras if len(p.get_text(strip=True)) > 40])
+                          if len(chunk) > 400:
+                              article_text = chunk
+
+                      if len(article_text) < 400:
+                          article_text = soup.get_text(separator='\n\n', strip=True)
+                          chunks = [c.strip() for c in article_text.split('\n\n') if len(c.strip()) > 80]
+                          if chunks:
+                              article_text = max(chunks, key=len)
+
+                      img_url = ""
+                      for meta in soup.find_all('meta'):
+                          if meta.get('property') in ['og:image', 'twitter:image']:
+                              img_url = meta.get('content', '')
+                              if img_url: break
+
+                      print(f"   Extracted {len(article_text)} characters of text")
+                      return article_text, img_url
+
+                  except Exception as e:
+                      print(f"   Scrape failed: {e}")
+                      return None, None
+                  finally:
+                      browser.close()
+
+          full_raw_text, final_hash, target_title, target_image = None, None, None, None
+          for a in articles:
+              u_hash = hashlib.md5(a['url'].encode()).hexdigest()
+              if u_hash in memory: continue
+              result = scrape_article_free(a['url'])
+              if not result: continue
+              text, img = result
+              if text and len(text) > 300:
+                  full_raw_text = text
+                  target_image = img
+                  final_hash = u_hash
+                  target_title = re.sub(r' - [^-]+$', '', a['title']).strip()
+                  break 
+
+          if not full_raw_text: 
+              print("❌ No valid unread content found.")
+              sys.exit(0)
+
+          def get_internal_context(posts_dir):
+              if not os.path.exists(posts_dir): return ""
+              files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
+              if not files: return ""
+              sample = random.sample(files, min(len(files), 3))
+              context = "PAST STORIES (PICK ONE AND LINK IT NATURALLY IN THE TEXT USING MARKDOWN):\n"
+              for f in sample:
+                  try:
+                      with open(os.path.join(posts_dir, f), 'r', encoding='utf-8') as c:
+                          txt = c.read()
+                          t_match = re.search(r'title:\s*"(.*?)"', txt)
+                          t = t_match.group(1) if t_match else f
+                          context += f"- Title: {t} | Link: https://zandani.co.ke/posts/{f.replace('.md', '')}\n"
+                  except: continue
+              return context
+
+          def get_real_image(query):
+              access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
+              fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+              if not access_key: return fallback
+              url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}"
+              try:
+                  resp = requests.get(url, timeout=10)
+                  if resp.status_code == 200: return resp.json()['urls']['regular']
+              except: pass
+              return fallback
+
+          def dash_scrubber(text):
+              if not text: return ""
+              text = text.replace('\u2014', '-').replace('\u2013', '-')
+              text = text.replace(chr(8212), '-').replace(chr(8211), '-')
+              return text
+
+          # --- API KEY ROTATION LOGIC ---
+          raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY")]
+          api_keys = [k for k in raw_keys if k and k.strip()]
+          
+          if not api_keys:
+              print("❌ No Gemini API keys provided in environment.")
+              sys.exit(1)
+
+          key_cycle = itertools.cycle(api_keys)
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+
+          google_search_tool = types.Tool(google_search=types.GoogleSearch())
+          internal_links_data = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
+
+          prompt = f'''Current Date: {full_date_str}
+          NEWS HEADLINE: "{target_title}"
+          SOURCE SCRAPED TEXT: "{full_raw_text[:12000]}"
+          
+          {internal_links_data}
+
+          TASK: Write a news report as a **British Tabloid Gossip Columnist**.
+          1. Use Google Search to research the latest details on this story if needed.
+          2. Naturally insert a markdown link to one of the PAST STORIES provided above somewhere in the body paragraph.
+          3. Identify the main topic and issues discussed in the scraped article. Then, generate a new article that is 100% related but focuses on aspects not covered in the original (e.g., what the story hasn't talked about). Reuse the main keywords from the original headline naturally and heavily in the new TITLE (front-loaded), EXCERPT, and every subheading you create for better SEO.
+
+          LANGUAGE MANDATE (STRICT):
+          - NO SHENG OR SWAHILI. You are writing for an audience who loves simple, dramatic British gossip.
+          - Use very simple, conversational British English. Think of a chatty, cheeky tabloid reporter having a chinwag.
+          - Keep the vocabulary basic but the tone highly dramatic and gossipy. 
+          - Use conversational fillers naturally to sound human: "Right,", "Well,", "Honestly,", "Anyway,", "Mate."
+          - Include rhetorical questions and subjective asides in brackets (e.g., "Can you even imagine?", "What a nightmare.").
+          - Vary sentence length aggressively. Mix short, punchy facts with longer, breathy gossip thoughts.
+          - BANNED PHRASES: {", ".join(BANNED_PHRASES)}.
+          - NEVER use long dashes or double dashes. Only use regular single hyphens.
+
+          ANTI-REPETITION RULES:
+          - DO NOT use the exact same words or structure as previous articles.
+
+          STRICT OUTPUT FORMAT:
+          TITLE: [Very Simple SEO-Optimized English Title starting with the main keywords from the original headline]
+          SLUG: [url-friendly-lowercase-english-slug]
+          EXCERPT: [Simple SEO-Optimized English Snippet/Hook under 160 characters that includes the main keywords]
+          CATEGORY: Kenya News
+          TAGS: [comma, separated, english, seo, tags]
+          IMAGE_KEYWORD: [search query]
+          BODY:
+          [Article text in chatty, simple British English containing the internal link. 
+          Structure it logically: 
+          - Start with an H2 heading that includes the main keywords from the original headline.
+          - Immediately follow that H2 with a crisp, 40 to 60 word neutral answer paragraph to win Google Featured Snippets.
+          - Continue with natural subheadings that also reuse the main keywords (AI decides the subheadings). Do not include or repeat any frontmatter content (like title, excerpt) in the BODY. Start the BODY with the first paragraph of the article.]
+          '''
+
+          full_text = ""
+          success_flag = False
+          keys_tried = 0
+          
+          for model_id in MODELS_TO_TRY:
+              # We loop 4 times so it has enough attempts to cycle keys and wait if both are exhausted
+              for retry in range(4):
+                  try:
+                      response = client.models.generate_content(
+                          model=model_id, contents=prompt,
+                          config=types.GenerateContentConfig(temperature=0.9, tools=[google_search_tool])
+                      )
+                      full_text = response.text.strip()
+                      success_flag = True
+                      print(f"✅ SUCCESS with {model_id}!")
+                      break 
+                  except Exception as e:
+                      if "429" in str(e):
+                          keys_tried += 1
+                          if keys_tried >= len(api_keys):
+                              print("⏳ All keys hit quota. Waiting 35s...")
+                              time.sleep(35)
+                              keys_tried = 0 # reset tracking after cooldown
+                          else:
+                              print("⚠️ Quota hit. Rotating to next API key...")
+                              current_key = next(key_cycle)
+                              client = genai.Client(api_key=current_key)
+                          continue
+                      
+                      print(f"⚠️ Error with {model_id}: {e}")
+                      break
+              if success_flag: break
+
+          if not success_flag: sys.exit(1)
+
+          print("🔍 Gemini raw output preview (first 900 chars):")
+          print(full_text[:900])
+
+          # Strip outer markdown wrappers safely
+          full_text = re.sub(r'^```(?:markdown|text|html)?\n', '', full_text, flags=re.IGNORECASE)
+          full_text = re.sub(r'\n```$', '', full_text).strip()
+
+          parsed = {"TITLE": "", "SLUG": "", "EXCERPT": "", "CATEGORY": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": ""}
+
+          section_matches = re.findall(r'^(TITLE|SLUG|EXCERPT|CATEGORY|TAGS|IMAGE_KEYWORD):\s*(.*)', full_text, re.MULTILINE | re.IGNORECASE)
+          for key, value in section_matches:
+              parsed[key.upper()] = value.strip()
+
+          body_match = re.search(r'BODY:\s*(.*)', full_text, re.DOTALL | re.IGNORECASE)
+          if body_match:
+              parsed["BODY"] = body_match.group(1).strip()
+          else:
+              parsed["BODY"] = full_text.split("BODY:", 1)[-1].strip() if "BODY:" in full_text else full_text
+
+          # Scrub out any leaked frontmatter lines from the top of the body
+          parsed["BODY"] = re.sub(r'^(TITLE|SLUG|EXCERPT|CATEGORY|TAGS|IMAGE_KEYWORD|BODY):\s*.*$', '', parsed["BODY"], flags=re.MULTILINE | re.IGNORECASE).strip()
+
+          parsed["BODY"] = dash_scrubber(parsed["BODY"]).strip()
+
+          tags_list = [t.strip().replace('"', '') for t in parsed["TAGS"].split(",") if t.strip()]
+          tags_str = ', '.join([f'"{t}"' for t in tags_list]) if tags_list else '"kenya", "news"'
+
+          if not parsed["BODY"] or len(parsed["BODY"]) < 300:
+              print("⚠️ BODY extraction weak - using fallback")
+              parsed["BODY"] = full_text.split("BODY:", 1)[-1].strip() if "BODY:" in full_text else full_text
+
+          final_image_url = target_image if target_image else get_real_image(parsed.get('IMAGE_KEYWORD') or target_title)
+
+          final_file = textwrap.dedent(f"""\
+          ---
+          title: "{parsed['TITLE'].replace('"', "'")}"
+          slug: "{parsed['SLUG']}"
+          excerpt: "{parsed['EXCERPT'].replace('"', "'")}"
+          image: "{final_image_url}"
+          category: "{parsed['CATEGORY'] or 'Kenya News'}"
+          date: "{today_str}"
+          tags: [{tags_str}]
+          ---
+
+          {parsed['BODY']}
+          """)
+
+          out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
+          os.makedirs(out_dir, exist_ok=True)
+          filename = f"{parsed['SLUG']}.md"
+          with open(os.path.join(out_dir, filename), "w", encoding="utf-8") as f:
+              f.write(final_file)
+
+          memory.append(final_hash)
+          os.makedirs(os.path.dirname(memory_path), exist_ok=True)
+          with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
+
+          print(f"✅ Article saved with full body: {filename}")
+          print(f"   Body length: {len(parsed['BODY'])} characters")
+          EOF
+
+      - name: Git Safety Pull
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git stash -u
+          git fetch origin main
+          git pull origin main --rebase
+          git stash pop || echo "Nothing to pop"
+
+      - name: Commit and push article
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "content: fresh local scoop via direct links 🇰🇪"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: 'content/posts/*.md .github/scrape_memory.json'
