@@ -94,7 +94,6 @@ jobs:
 
               print(f"📝 Asking Gemini to write caption for: {title}")
 
-              # AI Prompt for the Social Media Manager
               prompt = f"""
               You are the expert Social Media Manager for 'Za Ndani', a top Kenyan news platform. 
               Write a highly engaging, conversational Facebook post caption to drive traffic to this new article.
@@ -107,14 +106,13 @@ jobs:
               - Make it catchy and designed to provoke curiosity and comments.
               - Use 2 to 3 relevant emojis.
               - Include 2 or 3 relevant hashtags at the bottom.
-              - Do NOT include the article link or URL in the text (we will post the link in the comments).
+              - Do NOT include the article link or URL in the text.
               - Keep it under 3 short, punchy paragraphs.
               - Write in clear, appealing Kenyan English.
-              - NEVER use em dashes or en dashes. Only use regular single hyphens (-).
+              - NEVER use single hyphens, em dashes, or en dashes.
               """
 
               try:
-                  # Using gemini-2.5-flash for speed and reliability
                   response = client.models.generate_content(
                       model='gemini-2.5-flash',
                       contents=prompt,
@@ -123,10 +121,9 @@ jobs:
                   ai_caption = response.text.strip()
               except Exception as e:
                   print(f"⚠️ AI Generation failed: {e}")
-                  # Fallback to a clean string if API fails
                   ai_caption = f"📰 {title}\n\n{excerpt}" 
 
-              # Scrub dashes just in case the AI missed the instruction
+              # Scrub dashes just in case
               ai_caption = ai_caption.replace('\u2014', '-').replace('\u2013', '-')
 
               img_path = "temp_post_image.jpg"
@@ -145,7 +142,7 @@ jobs:
               post_id = None
               
               if has_image:
-                  print("📸 Uploading image and AI text to Facebook Photos API...")
+                  print("📸 Uploading image and AI text to Facebook...")
                   url = f"https://graph.facebook.com/v24.0/{fb_page_id}/photos"
                   payload = {'message': ai_caption, 'access_token': fb_token}
                   with open(img_path, 'rb') as img_file:
@@ -153,7 +150,7 @@ jobs:
                       res = requests.post(url, data=payload, files=files).json()
                   post_id = res.get('post_id') or res.get('id')
               else:
-                  print("📝 No image found. Posting AI text to Facebook Feed API...")
+                  print("📝 No image found. Posting AI text to Facebook Feed...")
                   url = f"https://graph.facebook.com/v24.0/{fb_page_id}/feed"
                   payload = {'message': ai_caption, 'access_token': fb_token}
                   res = requests.post(url, data=payload).json()
@@ -181,14 +178,3 @@ jobs:
               if os.path.exists(img_path):
                   os.remove(img_path)
           EOF
-          ```
-
-### What this upgraded workflow does:
-1. It detects exactly which `.md` file was just added by your scraping bots.
-2. It strips out the Title, Author, Excerpt, and Image directly from the YAML frontmatter.
-3. It hands those details over to Gemini, asking it to act as your Social Media Manager to write a custom, highly engaging Facebook caption.
-4. It downloads the article's image, posts it to Facebook using the AI-generated text, waits 10 seconds for Facebook's servers to sync, and then automatically comments the live article link.
-
-Just ensure you have the `GEMINI_API_KEY` mapped in your environment variables for this action (which I added to the template above). 
-
-Would you like to build the Twitter thread version next?
