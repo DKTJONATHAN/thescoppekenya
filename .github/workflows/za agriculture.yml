@@ -73,11 +73,11 @@ jobs:
               "in today's digital age", "shed light on"
           ]
 
-          print(f"🎯 Target: Farmers Trend (Timothy Muli)")
+          print(f"🎯 Target: Smart Farmer Kenya (Timothy Muli)")
 
           def get_target_urls():
               urls = []
-              print("🔍 Scanning Farmers Trend with Playwright...")
+              print("🔍 Scanning Smart Farmer Kenya with Playwright...")
               try:
                   with sync_playwright() as p:
                       browser = p.chromium.launch(headless=True, args=[
@@ -90,7 +90,7 @@ jobs:
                           viewport={"width": 1920, "height": 1080}
                       )
                       page = context.new_page()
-                      page.goto('https://farmerstrend.co.ke/', timeout=60000, wait_until="domcontentloaded")
+                      page.goto('https://smartfarmerkenya.com/', timeout=60000, wait_until="domcontentloaded")
                       
                       page.evaluate("window.scrollBy(0, 1500)")
                       page.wait_for_timeout(4000)
@@ -101,12 +101,12 @@ jobs:
                       for a in soup.find_all('a', href=True):
                           href = a.get('href', '')
                           if len(href) > 35 and href.count('-') > 2 and '/author/' not in href and '/category/' not in href and '/tag/' not in href:
-                              full_url = href if href.startswith('http') else 'https://farmerstrend.co.ke' + (href if href.startswith('/') else '/' + href)
+                              full_url = href if href.startswith('http') else 'https://smartfarmerkenya.com' + (href if href.startswith('/') else '/' + href)
                               urls.append(full_url)
                       
                       browser.close()
               except Exception as e: 
-                  print(f"Farmers Trend scan error: {e}")
+                  print(f"Smart Farmer scan error: {e}")
 
               return list(set(urls))
 
@@ -172,7 +172,7 @@ jobs:
                       page_title = ""
                       title_tag = soup.find('title')
                       if title_tag:
-                          page_title = title_tag.get_text().replace(' - Farmers Trend', '').strip()
+                          page_title = title_tag.get_text().replace(' - Smart Farmer', '').strip()
 
                       # --- CONTENT EXTRACTION ---
                       article_text = ""
@@ -286,10 +286,10 @@ jobs:
           TASK: Write a highly authoritative agricultural and agribusiness news report as **Timothy Muli**, a practical and knowledgeable Kenyan agricultural journalist writing for Za Ndani. 
 
           STRICT TIME RULE AND GOOGLE SEARCH:
-          You MUST use Google Search to verify agricultural policies, market prices, or farming trends. On every single search query you make, you must remind yourself of the current date ({full_date_str}) and only find data accurate as of this exact date in 2026. If the search results bring up old farming data or events from 2023, 2024, or 2025, IGNORE THEM COMPLETELY and rely solely on the SOURCE SCRAPED TEXT.
+          You MUST use Google Search to verify agricultural policies, market prices, or farming trends. On every single search query you make, you must remind yourself of the current date ({full_date_str}) and only find data accurate as of this exact date in 2026. If the search results bring up old farming data or events from past years, IGNORE THEM COMPLETELY and rely solely on the SOURCE SCRAPED TEXT.
 
           EXACT-MATCH SEO ENGINE (STRICT RULE):
-          1. Extract the 2 to 4 most important exact keyword phrases from the ORIGINAL HEADLINE (e.g., specific crops, farming techniques, or agricultural regions).
+          1. Extract the 2 to 4 most important exact keyword phrases from the ORIGINAL HEADLINE.
           2. FRONT-LOAD TITLE: The new TITLE must start with these exact keywords.
           3. KEYWORD SLUG: The SLUG must exclusively be built from these exact keywords.
           4. KEYWORD EXCERPT: The EXCERPT must naturally feature these exact keywords.
