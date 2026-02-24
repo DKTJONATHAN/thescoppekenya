@@ -1,0 +1,70 @@
+name: IndexNow Auto-Index on Commit
+
+on:
+  push:
+    paths:
+      - 'content/posts/**.md'
+  workflow_dispatch:
+
+jobs:
+  submit-to-indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect changed posts & submit to IndexNow
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: |
+          if [ -z "$INDEXNOW_KEY" ]; then
+            echo "⚠️  INDEXNOW_KEY not set, skipping"
+            exit 0
+          fi
+
+          HOST="zandani.co.ke"
+          SITE_URL="https://${HOST}"
+
+          # Get changed .md files in content/posts/
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
+
+          if [ -z "$CHANGED" ]; then
+            echo "📝 No post changes detected"
+            exit 0
+          fi
+
+          # Build JSON array of URLs
+          URLS="["
+          FIRST=true
+          while IFS= read -r file; do
+            SLUG=$(basename "$file" .md)
+            URL="${SITE_URL}/article/${SLUG}"
+            if [ "$FIRST" = true ]; then
+              URLS="${URLS}\"${URL}\""
+              FIRST=false
+            else
+              URLS="${URLS},\"${URL}\""
+            fi
+            echo "🔗 $URL"
+          done <<< "$CHANGED"
+          URLS="${URLS}]"
+
+          echo "🚀 Submitting batch to IndexNow..."
+          
+          # IndexNow requires host, key, keyLocation, and urlList
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
+            "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{\"host\":\"${HOST}\", \"key\":\"${INDEXNOW_KEY}\", \"keyLocation\":\"${SITE_URL}/${INDEXNOW_KEY}.txt\", \"urlList\":${URLS}}")
+
+          HTTP_CODE=$(echo "$RESPONSE" | tail -1)
+          BODY=$(echo "$RESPONSE" | head -n -1)
+
+          if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
+            echo "✅ IndexNow submission successful (${HTTP_CODE})"
+          else
+            echo "❌ IndexNow submission failed (${HTTP_CODE}): ${BODY}"
+            exit 1
+          fi
