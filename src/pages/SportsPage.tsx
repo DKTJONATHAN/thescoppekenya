@@ -14,6 +14,7 @@ import { Match, useMatchPreview, useMatchReview, usePreloadSportsData } from "@/
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Sparkles, Loader2, Activity, Calendar, Trophy, Newspaper, Flame, TrendingUp } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export default function SportsPage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -63,13 +64,45 @@ export default function SportsPage() {
   const sportsSchema = {
     "@context": "https://schema.org",
     "@type": "SportsEvent",
-    "name": "Sports Hub - Live Scores & Football News | Za Ndani",
-    "description": "Live football scores, standings, fixtures and AI-powered match analysis. Kenya's boldest Sheng sports coverage.",
+    "name": "Kenya Sports News - KPL, Harambee Stars & Athletics | Za Ndani",
+    "description": "Latest Kenya sports news: Harambee Stars updates, KPL standings, Gor Mahia, AFC Leopards, athletics, rugby. Live scores, fixtures & analysis.",
     "url": "https://zandani.co.ke/sports",
   };
 
   return (
     <Layout>
+      <Helmet>
+        <title>Za Ndani Sports - Kenya Sports News, KPL, Harambee Stars & Athletics</title>
+        <meta
+          name="description"
+          content="Latest Kenya sports news: Harambee Stars updates, KPL standings, Gor Mahia, AFC Leopards, athletics, rugby. Live scores, fixtures & exclusives daily."
+        />
+        <meta
+          name="keywords"
+          content="kenya sports news, kpl news, harambee stars, kenya premier league, kenyan football news, athletics kenya, gor mahia, afc leopards, za ndani sports, nairobi sports"
+        />
+
+        {/* Canonical */}
+        <link rel="canonical" href="https://zandani.co.ke/sports" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://zandani.co.ke/sports" />
+        <meta property="og:title" content="Za Ndani Sports - Kenya Sports News & Live Scores" />
+        <meta
+          property="og:description"
+          content="Harambee Stars, KPL, athletics & more – real-time Kenya sports updates and AI analysis."
+        />
+        <meta property="og:image" content="https://zandani.co.ke/logo.png" />
+        <meta property="og:site_name" content="Za Ndani" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Za Ndani Sports - Latest Kenya Sports News" />
+        <meta name="twitter:description" content="Live KPL scores, Harambee Stars news, Kenyan athletics & football updates daily." />
+        <meta name="twitter:image" content="https://zandani.co.ke/logo.png" />
+      </Helmet>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(sportsSchema) }}
