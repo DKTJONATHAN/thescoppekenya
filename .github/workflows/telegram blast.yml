@@ -1,0 +1,181 @@
+name: Telegram Auto-Post with AI
+
+on:
+  push:
+    paths:
+      - 'content/posts/**.md'
+  workflow_dispatch:
+
+jobs:
+  post-to-telegram:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-genai
+
+      - name: Wait for Zandani to deploy
+        run: |
+          echo "Waiting 30 seconds for Zandani to deploy..."
+          sleep 30
+
+      - name: Detect posts & publish to Telegram via AI
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -z "$BOT_TOKEN" ] || [ -z "$CHANNEL_ID" ]; then
+            echo "⚠️ Telegram credentials not set, skipping"
+            exit 0
+          fi
+          
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "⚠️ GEMINI_API_KEY not set, skipping. Please ensure it is in your secrets."
+            exit 0
+          fi
+
+          # Get changed .md files in content/posts/
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
+
+          if [ -z "$CHANGED" ]; then
+            echo "📝 No post changes detected"
+            exit 0
+          fi
+
+          # Export the list of files to be read by Python
+          export CHANGED_FILES="$CHANGED"
+
+          python3 << 'EOF'
+          import os, re, requests, time
+          from google import genai
+          from google.genai import types
+
+          changed_files = os.environ.get('CHANGED_FILES', '').strip().split('\n')
+          bot_token = os.environ.get('BOT_TOKEN')
+          channel_id = os.environ.get('CHANNEL_ID')
+          gemini_key = os.environ.get('GEMINI_API_KEY')
+          site_url = "https://zandani.co.ke"
+
+          client = genai.Client(api_key=gemini_key)
+
+          for file_path in changed_files:
+              if not file_path or not os.path.exists(file_path):
+                  continue
+              
+              print(f"🚀 Processing File: {file_path}")
+              slug = os.path.basename(file_path).replace('.md', '')
+              article_url = f"{site_url}/article/{slug}"
+
+              with open(file_path, 'r', encoding='utf-8') as f:
+                  content = f.read()
+
+              # Extract metadata using regex
+              title_match = re.search(r'^title:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
+              author_match = re.search(r'^author:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
+              excerpt_match = re.search(r'^excerpt:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
+              image_match = re.search(r'^image:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
+              tags_match = re.search(r'^tags:\s*\[?(.*?)\]?$', content, re.MULTILINE)
+
+              title = title_match.group(1) if title_match else "Latest Update"
+              author = author_match.group(1) if author_match else "Za Ndani"
+              excerpt = excerpt_match.group(1) if excerpt_match else ""
+              image_url = image_match.group(1) if image_match else ""
+              raw_tags = tags_match.group(1) if tags_match else ""
+
+              print(f"📝 Asking Gemini to write caption for: {title}")
+
+              prompt = f"""
+              You are the expert Social Media Manager for 'Za Ndani', a top Kenyan news platform. 
+              Write a highly engaging, fast-paced Telegram channel post to drive traffic to this new article.
+
+              Article Title: {title}
+              Author: {author}
+              Excerpt: {excerpt}
+              Tags to use as Hashtags: {raw_tags}
+
+              Rules:
+              - Telegram image captions have a strict 1024 character limit. Keep your response short and UNDER 700 characters.
+              - Make it catchy and designed to provoke curiosity.
+              - Incorporate the tags naturally as hashtags at the bottom.
+              - Do NOT include the article link or URL in the text (the script will append it).
+              - Use 2 to 3 relevant emojis.
+              - Write in clear, appealing Kenyan English.
+              - NEVER use em dashes or en dashes. Only use regular single hyphens (-).
+              """
+
+              try:
+                  response = client.models.generate_content(
+                      model='gemini-2.5-flash',
+                      contents=prompt,
+                      config=types.GenerateContentConfig(temperature=0.8)
+                  )
+                  ai_caption = response.text.strip()
+              except Exception as e:
+                  print(f"⚠️ AI Generation failed: {e}")
+                  ai_caption = f"📰 {title}\n\n{excerpt}" 
+
+              # Scrub dashes just in case
+              ai_caption = ai_caption.replace('\u2014', '-').replace('\u2013', '-')
+              
+              # Failsafe: Truncate to ensure it leaves room for the URL and fits Telegram limits
+              if len(ai_caption) > 850:
+                  print("⚠️ AI generated text too long. Truncating to fit Telegram API limits...")
+                  ai_caption = ai_caption[:847] + "..."
+
+              # Safely append the direct link
+              final_text = f"{ai_caption}\n\n🔗 Read the full story by {author} here: {article_url}"
+
+              img_path = "temp_post_image.jpg"
+              has_image = False
+              
+              if image_url and image_url.startswith("http"):
+                  print(f"📥 Downloading image: {image_url}")
+                  try:
+                      img_data = requests.get(image_url, timeout=15).content
+                      with open(img_path, 'wb') as img_file:
+                          img_file.write(img_data)
+                      has_image = True
+                  except Exception as e:
+                      print(f"⚠️ Failed to download image: {e}")
+
+              telegram_api_url = f"https://api.telegram.org/bot{bot_token}"
+              
+              try:
+                  if has_image:
+                      print("📸 Uploading image and AI text to Telegram...")
+                      url = f"{telegram_api_url}/sendPhoto"
+                      with open(img_path, 'rb') as img_file:
+                          files = {'photo': img_file}
+                          data = {'chat_id': channel_id, 'caption': final_text}
+                          res = requests.post(url, data=data, files=files).json()
+                  else:
+                      print("📝 No image found. Posting AI text to Telegram...")
+                      url = f"{telegram_api_url}/sendMessage"
+                      data = {'chat_id': channel_id, 'text': final_text}
+                      res = requests.post(url, data=data).json()
+
+                  print(f"Telegram API Response: {res}")
+
+                  if res.get('ok'):
+                      print(f"✅ Successfully published AI post to Telegram for {slug}!")
+                  else:
+                      print(f"❌ Failed to post {slug} to Telegram. Error: {res.get('description')}")
+                      
+              except Exception as e:
+                  print(f"❌ Request failed: {e}")
+
+              if os.path.exists(img_path):
+                  os.remove(img_path)
+          EOF
