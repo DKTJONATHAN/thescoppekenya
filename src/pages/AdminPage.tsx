@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { getAllPosts, Post, categories } from "@/lib/markdown";
-import { Lock, Plus, Eye, Save, FileText, LogOut, Calendar, Tag, User, Image, AlignLeft, Star, Send, Loader2, Pencil, Trash2, X } from "lucide-react";
+import { Lock, Plus, Eye, Save, FileText, LogOut, Calendar, Tag, User, Image, AlignLeft, Star, Send, Loader2, Pencil, Trash2, X, Github } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
@@ -19,13 +19,18 @@ const hashPin = (pin: string): string => {
 
 const VALID_HASHES = [hashPin("1711"), hashPin("2000")];
 
+// Browser-safe Base64 encoding for UTF-8 Markdown content
+const utf8ToBase64 = (str: string) => {
+  return window.btoa(unescape(encodeURIComponent(str)));
+};
+
 export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [pin, setPin] = useState("");
   const [error, setError] = useState("");
   const [posts, setPosts] = useState<Post[]>([]);
   const [activeTab, setActiveTab] = useState<"create" | "manage">("create");
-  const [isSubmittingToIndex, setIsSubmittingToIndex] = useState(false);
+  const [isPublishing, setIsPublishing] = useState(false);
   const { toast } = useToast();
   const [editingPost, setEditingPost] = useState<Post | null>(null);
   const [newPost, setNewPost] = useState({
@@ -71,19 +76,64 @@ export default function AdminPage() {
     return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
   };
 
+  // ==========================================
+  // API COMMUNICATION LOGIC
+  // ==========================================
+  const callGithubApi = async (payload: any) => {
+    const res = await fetch('/api/github', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload)
+    });
+    
+    const data = await res.json();
+    if (!res.ok) {
+      throw new Error(data.error || "Failed to communicate with the server");
+    }
+    return data;
+  };
+
+  const getGithubFileSha = async (path: string) => {
+    try {
+      const data = await callGithubApi({ action: 'GET_SHA', path });
+      return data.sha;
+    } catch (error) {
+      console.error("Error fetching SHA:", error);
+      return null;
+    }
+  };
+
+  const pushToGithub = async (path: string, content: string, message: string, sha?: string) => {
+    return await callGithubApi({
+      action: 'PUSH',
+      path,
+      content: utf8ToBase64(content),
+      message,
+      sha
+    });
+  };
+
+  const deleteFromGithub = async (path: string, message: string, sha: string) => {
+    return await callGithubApi({
+      action: 'DELETE',
+      path,
+      message,
+      sha
+    });
+  };
+
+  // ==========================================
+  // PUBLISHING LOGIC
+  // ==========================================
   const submitToIndexNow = async (slug: string) => {
-    setIsSubmittingToIndex(true);
     try {
       const { data, error } = await supabase.functions.invoke('index-now', {
         body: { urls: [`/article/${slug}`] }
       });
 
       if (error) throw error;
-
-      toast({
-        title: "Submitted to IndexNow",
-        description: "Your post URL has been submitted for indexing.",
-      });
       console.log("IndexNow response:", data);
     } catch (err) {
       console.error("IndexNow submission error:", err);
@@ -92,8 +142,6 @@ export default function AdminPage() {
         description: "The post was created but indexing failed. You can retry later.",
         variant: "destructive",
       });
-    } finally {
-      setIsSubmittingToIndex(false);
     }
   };
 
@@ -103,7 +151,9 @@ export default function AdminPage() {
       return;
     }
 
+    setIsPublishing(true);
     const postSlug = newPost.slug || generateSlug(newPost.title);
+    const filePath = `content/posts/${postSlug}.md`;
 
     const markdown = `---
 title: "${newPost.title}"
@@ -119,23 +169,116 @@ featured: ${newPost.featured}
 
 ${newPost.content}`;
 
-    // Create downloadable file
-    const blob = new Blob([markdown], { type: 'text/markdown' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${postSlug}.md`;
-    a.click();
-    URL.revokeObjectURL(url);
+    try {
+      const existingSha = await getGithubFileSha(filePath);
+      if (existingSha) {
+        throw new Error("A post with this slug already exists. Please change the title or slug.");
+      }
 
-    // Submit to IndexNow for automatic indexing
-    await submitToIndexNow(postSlug);
+      await pushToGithub(filePath, markdown, `Create new post: ${newPost.title}`);
+      await submitToIndexNow(postSlug);
 
-    toast({
-      title: "Post created!",
-      description: "Markdown file downloaded. Add it to content/posts/ and redeploy.",
-    });
-    resetForm();
+      toast({
+        title: "Post published to GitHub!",
+        description: "The deployment process should start automatically.",
+      });
+      resetForm();
+    } catch (error: any) {
+      console.error("Publishing error:", error);
+      toast({
+        title: "Failed to publish",
+        description: error.message || "An error occurred while publishing.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsPublishing(false);
+    }
+  };
+
+  const handleUpdatePost = async () => {
+    if (!newPost.title || !newPost.content) {
+      alert("Please fill in the title and content.");
+      return;
+    }
+
+    setIsPublishing(true);
+    const postSlug = newPost.slug || generateSlug(newPost.title);
+    const filePath = `content/posts/${postSlug}.md`;
+
+    const markdown = `---
+title: "${newPost.title}"
+slug: "${postSlug}"
+excerpt: "${newPost.excerpt}"
+image: "${newPost.image}"
+category: "${newPost.category}"
+author: "${newPost.author}"
+date: "${editingPost?.date || new Date().toISOString().split('T')[0]}"
+tags: [${newPost.tags.split(',').map(t => `"${t.trim()}"`).filter(t => t !== '""').join(', ')}]
+featured: ${newPost.featured}
+---
+
+${newPost.content}`;
+
+    try {
+      if (editingPost && editingPost.slug !== postSlug) {
+        const oldFilePath = `content/posts/${editingPost.slug}.md`;
+        const oldSha = await getGithubFileSha(oldFilePath);
+        if (oldSha) {
+          await deleteFromGithub(oldFilePath, `Delete old post due to slug rename: ${editingPost.slug}`, oldSha);
+        }
+      }
+
+      const sha = await getGithubFileSha(filePath);
+      await pushToGithub(filePath, markdown, `Update post: ${newPost.title}`, sha);
+      await submitToIndexNow(postSlug);
+
+      toast({
+        title: "Post updated on GitHub!",
+        description: "Changes have been pushed and deployment should start soon.",
+      });
+      resetForm();
+    } catch (error: any) {
+      console.error("Updating error:", error);
+      toast({
+        title: "Failed to update",
+        description: error.message || "An error occurred while updating the post.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsPublishing(false);
+    }
+  };
+
+  const handleDeletePost = async (post: Post) => {
+    const confirmed = window.confirm(`Are you sure you want to completely delete "${post.title}" from GitHub? This action cannot be undone.`);
+
+    if (confirmed) {
+      setIsPublishing(true);
+      const filePath = `content/posts/${post.slug}.md`;
+      
+      try {
+        const sha = await getGithubFileSha(filePath);
+        if (!sha) throw new Error("File not found on GitHub. It might have been deleted already.");
+
+        await deleteFromGithub(filePath, `Delete post: ${post.title}`, sha);
+
+        toast({
+          title: "Post deleted from GitHub",
+          description: "The file has been removed and your site will update shortly.",
+        });
+        
+        setPosts(posts.filter(p => p.slug !== post.slug));
+      } catch (error: any) {
+        console.error("Deletion error:", error);
+        toast({
+          title: "Failed to delete",
+          description: error.message || "An error occurred while deleting the post.",
+          variant: "destructive",
+        });
+      } finally {
+        setIsPublishing(false);
+      }
+    }
   };
 
   const resetForm = () => {
@@ -163,80 +306,6 @@ ${newPost.content}`;
     setActiveTab("create");
   };
 
-  const handleUpdatePost = async () => {
-    if (!newPost.title || !newPost.content) {
-      alert("Please fill in the title and content.");
-      return;
-    }
-
-    const postSlug = newPost.slug || generateSlug(newPost.title);
-
-    const markdown = `---
-title: "${newPost.title}"
-slug: "${postSlug}"
-excerpt: "${newPost.excerpt}"
-image: "${newPost.image}"
-category: "${newPost.category}"
-author: "${newPost.author}"
-date: "${editingPost?.date || new Date().toISOString().split('T')[0]}"
-tags: [${newPost.tags.split(',').map(t => `"${t.trim()}"`).filter(t => t !== '""').join(', ')}]
-featured: ${newPost.featured}
----
-
-${newPost.content}`;
-
-    // Create downloadable file
-    const blob = new Blob([markdown], { type: 'text/markdown' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${postSlug}.md`;
-    a.click();
-    URL.revokeObjectURL(url);
-
-    // Submit to IndexNow for re-indexing
-    await submitToIndexNow(postSlug);
-
-    toast({
-      title: "Post updated!",
-      description: "Replace the old file in content/posts/ with the downloaded file and redeploy.",
-    });
-    resetForm();
-  };
-
-  const handleDeletePost = (post: Post) => {
-    const confirmed = window.confirm(`Are you sure you want to delete "${post.title}"?\n\nYou will need to manually delete the file: content/posts/${post.slug}.md`);
-    
-    if (confirmed) {
-      // Create a deletion instruction file
-      const instructions = `DELETE THIS POST
-==================
-Post: ${post.title}
-Slug: ${post.slug}
-File to delete: content/posts/${post.slug}.md
-
-Instructions:
-1. Delete the file: content/posts/${post.slug}.md
-2. Commit and push the changes
-3. Redeploy your site
-
-Generated: ${new Date().toISOString()}`;
-
-      const blob = new Blob([instructions], { type: 'text/plain' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `DELETE-${post.slug}.txt`;
-      a.click();
-      URL.revokeObjectURL(url);
-
-      toast({
-        title: "Deletion instructions downloaded",
-        description: `Delete content/posts/${post.slug}.md and redeploy.`,
-      });
-    }
-  };
-
   if (!isAuthenticated) {
     return (
       <Layout>
@@ -247,7 +316,7 @@ Generated: ${new Date().toISOString()}`;
             </div>
             <h1 className="text-3xl font-serif font-bold text-headline mb-2">Admin Access</h1>
             <p className="text-muted-foreground mb-8">Enter your PIN to access the admin panel</p>
-            
+
             <form onSubmit={handleLogin} className="space-y-4">
               <input
                 type="password"
@@ -461,28 +530,28 @@ Generated: ${new Date().toISOString()}`;
                   </span>
                 </label>
                 <div className="flex gap-3">
-                  <Button variant="outline" onClick={resetForm}>
+                  <Button variant="outline" onClick={resetForm} disabled={isPublishing}>
                     {editingPost ? "Cancel" : "Clear Form"}
                   </Button>
                   <Button 
                     onClick={editingPost ? handleUpdatePost : handleCreatePost} 
                     className="gradient-primary text-primary-foreground" 
-                    disabled={isSubmittingToIndex}
+                    disabled={isPublishing}
                   >
-                    {isSubmittingToIndex ? (
+                    {isPublishing ? (
                       <>
                         <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                        Processing...
+                        Pushing to GitHub...
                       </>
                     ) : editingPost ? (
                       <>
-                        <Save className="w-4 h-4 mr-2" />
-                        Update & Download
+                        <Github className="w-4 h-4 mr-2" />
+                        Update on GitHub
                       </>
                     ) : (
                       <>
-                        <Save className="w-4 h-4 mr-2" />
-                        Create & Download
+                        <Github className="w-4 h-4 mr-2" />
+                        Publish to GitHub
                       </>
                     )}
                   </Button>
@@ -497,7 +566,7 @@ Generated: ${new Date().toISOString()}`;
             <h2 className="text-xl font-serif font-bold text-headline mb-6 flex items-center gap-2">
               <FileText className="w-5 h-5 text-primary" /> Existing Posts
             </h2>
-            
+
             {posts.length === 0 ? (
               <div className="text-center py-12">
                 <FileText className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
@@ -534,12 +603,12 @@ Generated: ${new Date().toISOString()}`;
                       </div>
                     </div>
                     <div className="flex gap-2 flex-shrink-0">
-                      <Button variant="outline" size="sm" onClick={() => handleEditPost(post)}>
+                      <Button variant="outline" size="sm" onClick={() => handleEditPost(post)} disabled={isPublishing}>
                         <Pencil className="w-4 h-4 mr-2" />
                         Edit
                       </Button>
-                      <Button variant="outline" size="sm" onClick={() => handleDeletePost(post)} className="text-destructive hover:text-destructive">
-                        <Trash2 className="w-4 h-4 mr-2" />
+                      <Button variant="outline" size="sm" onClick={() => handleDeletePost(post)} className="text-destructive hover:text-destructive" disabled={isPublishing}>
+                        {isPublishing ? <Loader2 className="w-4 h-4 mr-2 animate-spin" /> : <Trash2 className="w-4 h-4 mr-2" />}
                         Delete
                       </Button>
                       <Button variant="outline" size="sm" asChild>
@@ -554,9 +623,10 @@ Generated: ${new Date().toISOString()}`;
               </div>
             )}
 
-            <div className="mt-6 p-4 bg-muted rounded-xl">
-              <p className="text-sm text-muted-foreground">
-                <strong>Tip:</strong> Click "Edit" to load a post into the form, make changes, then download and replace the file in <code className="bg-background px-1.5 py-0.5 rounded">content/posts/</code>.
+            <div className="mt-6 p-4 bg-muted rounded-xl border border-divider">
+              <p className="text-sm text-muted-foreground flex items-center gap-2">
+                <Github className="w-4 h-4 flex-shrink-0" />
+                <strong>Git Sync Active:</strong> Changes are now pushed securely through your serverless API directly to your GitHub repository.
               </p>
             </div>
           </div>
