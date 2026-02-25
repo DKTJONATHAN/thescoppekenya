@@ -97,7 +97,7 @@ export default function ArticlePage() {
   );
 
   // ──────────────────────────────────────────────────────────────
-  // RICH SEO SCHEMA (Article + BreadcrumbList)
+  // RICH SEO SCHEMA (Improved NewsArticle + BreadcrumbList)
   // ──────────────────────────────────────────────────────────────
   const articleSchema = useMemo(
     () => ({
@@ -110,24 +110,32 @@ export default function ArticlePage() {
         "url": post.image,
         "width": 1200,
         "height": 630,
+        "caption": post.imageAlt || post.title
       },
       "datePublished": post.date,
-      "author": { "@type": "Person", "name": post.author },
+      "dateModified": post.date, // fallback - add real modified date if you have it
+      "author": {
+        "@type": "Person",
+        "name": post.author
+      },
       "publisher": {
         "@type": "Organization",
         "name": "Za Ndani",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://zandani.co.ke/logo.png",
-        },
+          "url": "https://zandani.co.ke/logo.png"
+        }
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": `https://zandani.co.ke/article/${post.slug}`,
+        "@id": `https://zandani.co.ke/article/${post.slug}`
       },
       "keywords": post.tags.join(", "),
       "articleSection": post.category,
       "inLanguage": "en-KE",
+      "wordCount": Math.round((post.htmlContent?.length || 0) / 5), // rough estimate
+      "articleBody": post.excerpt, // short version - Google likes this
+      "isAccessibleForFree": true
     }),
     [post]
   );
@@ -142,15 +150,15 @@ export default function ArticlePage() {
           "@type": "ListItem",
           "position": 2,
           "name": post.category,
-          "item": `https://zandani.co.ke/category/${post.category.toLowerCase()}`,
+          "item": `https://zandani.co.ke/category/${post.category.toLowerCase()}`
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": post.title,
-          "item": `https://zandani.co.ke/article/${post.slug}`,
-        },
-      ],
+          "item": `https://zandani.co.ke/article/${post.slug}`
+        }
+      ]
     }),
     [post]
   );
@@ -158,23 +166,26 @@ export default function ArticlePage() {
   return (
     <Layout>
       <Helmet>
-        <title>{post.title} | Za Ndani</title>
-        <meta name="description" content={post.excerpt} />
-        <meta name="keywords" content={post.tags.join(", ")} />
+        <title>{post.title} | Za Ndani - Kenya News & Gossip</title>
+        <meta name="description" content={post.excerpt.slice(0, 158) + (post.excerpt.length > 158 ? "..." : "")} />
+        <meta name="keywords" content={post.tags.join(", ") + ", za ndani, kenya news"} />
         <link rel="canonical" href={`https://zandani.co.ke/article/${post.slug}`} />
 
         {/* Open Graph */}
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://zandani.co.ke/article/${post.slug}`} />
-        <meta property="og:title" content={`${post.title} | Za Ndani`} />
+        <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:image" content={post.image} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="article:published_time" content={post.date} />
         <meta property="article:section" content={post.category} />
+        <meta property="article:author" content={post.author} />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${post.title} | Za Ndani`} />
+        <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.excerpt} />
         <meta name="twitter:image" content={post.image} />
       </Helmet>
