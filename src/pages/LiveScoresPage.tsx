@@ -8,6 +8,7 @@ import { Activity, RefreshCw, Clock, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { format } from "date-fns";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 function MatchRow({ match }: { match: Match }) {
   const status = getMatchStatus(match.status);
@@ -124,8 +125,67 @@ export default function LiveScoresPage() {
   ) || [];
   const finishedMatches = matches?.filter((m) => m.status === "FINISHED") || [];
 
+  const pageSchema = {
+    "@context": "https://schema.org",
+    "@type": "LiveBlogPosting",
+    "headline": "Live Scores Kenya Today - KPL, Premier League & More",
+    "description": "Real-time live football scores, match updates, KPL, Harambee Stars fixtures and results from Kenya and worldwide.",
+    "datePublished": new Date().toISOString(),
+    "dateModified": new Date().toISOString(),
+    "publisher": {
+      "@type": "Organization",
+      "name": "Za Ndani",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://zandani.co.ke/logo.png"
+      }
+    },
+    "mainEntity": {
+      "@type": "SportsEvent",
+      "name": "Today's Football Matches & Live Scores",
+      "url": "https://zandani.co.ke/sports/live"
+    }
+  };
+
   return (
     <Layout>
+      <Helmet>
+        <title>Live Scores Kenya Today - KPL, Harambee Stars & Football | Za Ndani</title>
+        <meta
+          name="description"
+          content="Real-time live scores Kenya: KPL matches, Harambee Stars, Premier League, fixtures, results and updates. Follow every goal live on Za Ndani."
+        />
+        <meta
+          name="keywords"
+          content="live scores kenya, kpl live scores, harambee stars live, football live scores today, premier league live kenya, za ndani live scores, nairobi football updates"
+        />
+
+        {/* Canonical */}
+        <link rel="canonical" href="https://zandani.co.ke/sports/live" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://zandani.co.ke/sports/live" />
+        <meta property="og:title" content="Live Scores Kenya Today - KPL & Football Updates | Za Ndani" />
+        <meta
+          property="og:description"
+          content="Follow live football scores, KPL, Harambee Stars and international matches in real-time. Goals, updates & commentary."
+        />
+        <meta property="og:image" content="https://zandani.co.ke/logo.png" />
+        <meta property="og:site_name" content="Za Ndani" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Live Scores Kenya - KPL & Harambee Stars | Za Ndani" />
+        <meta name="twitter:description" content="Real-time match scores, goals and football updates from Kenya and worldwide." />
+        <meta name="twitter:image" content="https://zandani.co.ke/logo.png" />
+      </Helmet>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
+      />
+
       <div className="container py-8">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
