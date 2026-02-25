@@ -72,9 +72,39 @@ const Index = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Za Ndani | Bold. Unbiased. Insider. Kenya's Sheng News & Entertainment</title>
-        <meta name="description" content="Za Ndani - habari kutoka ndani, bila bias. Kenya's boldest Sheng news and entertainment website. Breaking news, celebrity gossip, trending stories na insider content kwa Sheng." />
+        <title>Za Ndani - Kenya Celebrity Gossip & Entertainment News | Trending Sheng Stories</title>
+        <meta
+          name="description"
+          content="Hottest Kenya celebrity gossip, latest Nairobi entertainment news, trending Sheng stories, celebrity scandals & insider scoops. Bold, unbiased updates daily on Za Ndani."
+        />
+        <meta
+          name="keywords"
+          content="kenya celebrity gossip, kenyan entertainment news, nairobi gossip, celebrity news kenya, za ndani, trending news kenya, kenyan celebrities, latest gossip kenya, sheng news, nairobi entertainment"
+        />
+
+        {/* Canonical */}
         <link rel="canonical" href="https://zandani.co.ke" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://zandani.co.ke" />
+        <meta property="og:title" content="Za Ndani - Kenya Celebrity Gossip & Entertainment News" />
+        <meta
+          property="og:description"
+          content="Hottest Kenya celebrity gossip, breaking Nairobi entertainment news & exclusive insider scoops. Bold updates daily."
+        />
+        <meta property="og:image" content="https://zandani.co.ke/logo.png" />
+        <meta property="og:site_name" content="Za Ndani" />
+
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://zandani.co.ke" />
+        <meta name="twitter:title" content="Za Ndani - Kenya Celebrity Gossip & Entertainment News" />
+        <meta
+          name="twitter:description"
+          content="Hottest Kenya celebrity gossip, trending entertainment news & insider scoops daily."
+        />
+        <meta name="twitter:image" content="https://zandani.co.ke/logo.png" />
       </Helmet>
 
       {/* Schema stays the same */}
