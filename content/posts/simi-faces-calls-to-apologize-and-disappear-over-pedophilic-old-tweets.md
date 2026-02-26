@@ -6,7 +6,7 @@ image: "https://i.postimg.cc/k54tMVb4/simis.webp"
 category: "Entertainment"
 author: "Jonathan Mwaniki"
 date: "2026-02-26"
-tags: "Simi, Simi Tweets, Pedophilia, Rape,Celeb Gossip"
+tags: ""
 featured: false
 ---
 
