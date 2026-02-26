@@ -1,0 +1,31 @@
+---
+title: "Super Metro On The Spot Again After Passenger Is Thrown Out Of Moving Bus And Run Over In Athi River"
+slug: "super-metro-on-the-spot-again-after-passenger-is-thrown-out-of-moving-bus-and-run-over-in-athi-river"
+excerpt: "The death of 25 year old Joseph Mureithi has sent shockwaves through communities in Athi River and beyond. This young petrol attendant lost his life late on Tuesday night after he was allegedly pushed from a moving Super Metro bus and then run over by the same vehicle. "
+image: "https://i.postimg.cc/xTFGDB5G/images.jpg"
+category: "News"
+author: "Jonathan Mwaniki"
+date: "2026-02-26"
+tags: [( {newPost.tags.split(',').map(t => `" ){t.trim()}"`).filter(t => t !== '""').join(', ')}]
+featured: false
+---
+
+**Tragic Loss of a Young Man Shines Light on Persistent Safety Concerns in Kenya's Public Transport Sector**
+
+The death of 25 year old Joseph Mureithi has sent shockwaves through communities in Athi River and beyond. This young petrol attendant lost his life late on Tuesday night after he was allegedly pushed from a moving Super Metro bus and then run over by the same vehicle. The incident unfolded along the busy Kitengela Namanga Highway just a short distance from Shalom Hospital. It has left his family in deep mourning while raising fresh questions about how matatu operators handle passengers in crowded conditions.
+
+Mureithi had wrapped up his shift at a petrol station in Athi River and walked to a nearby bus stop a few metres from Shalom Hospital. He boarded the fully packed Super Metro bus with registration number KDK 060H which was heading from Kitengela toward Nairobi around 11 pm. Witnesses described the vehicle as overcrowded with passengers squeezed inside and the crew appearing agitated and confrontational. Less than one kilometre after the bus pulled away from the stop a scuffle broke out. According to family members and those who saw what happened Mureithi was ejected from the moving bus. He hit the ground hard suffering severe head injuries and a deep cut to his stomach. The bus reportedly continued forward ran over him and then sped off into the night.
+
+Passersby and other road users rushed to help. A Directorate of Criminal Investigations patrol vehicle that was nearby quickly responded after alerts from witnesses. Officers pursued the bus which was eventually stopped with help from a group of boda boda riders who had joined the chase. The vehicle was impounded and towed to Athi River Police Station. Both the driver and the conductor were arrested and remain in custody as detectives continue their work. An autopsy on Mureithi's body is set for Thursday to establish the exact cause of death.
+
+The personal story behind this tragedy adds another layer of sorrow. Mureithi was the firstborn in his family and had only recently landed the job at the petrol station. His relatives say he took the position specifically to cover his ailing mother's hospital bills pay rent for her house and support a younger sibling. Patrick Muthomi a family member described him as the one who kept things going at home. "He had just finished work properly and boarded the bus to be dropped at Mlolongo" Muthomi said. "Instead of throwing someone out the crew could have simply asked him to wait for the next bus." The family is now calling on authorities to act swiftly and bring full justice so that no other household has to endure such pain.
+
+Super Metro Sacco the company operating the bus has acknowledged the incident. Management expressed regret and stated that they are conducting an internal investigation while fully cooperating with police. In their account the bus was carrying 32 passengers when it was halted by an angry crowd. They say they are still gathering all the facts around what led to the confrontation.
+
+This is not an isolated case for Super Metro. Records show the operator has faced similar accusations before. Just last year a crew member was arrested after allegedly pushing another passenger named Gilbert Thuo from a moving bus along the Thika road over a small fare shortfall of 30 shillings. In an earlier 2018 incident the company and one of its directors were ordered by a court to pay substantial compensation to a female passenger who was assaulted pushed out and robbed after a route dispute. These repeated events have fueled growing frustration among commuters who rely on matatus for daily travel. Many point to a wider culture in the matatu industry where overcrowding aggressive touts and fare disputes too often turn dangerous.
+
+Public reaction has been swift and intense. On social media platforms Kenyans have shared stories of their own close calls with unruly crews. Some are calling for the National Transport and Safety Authority to impose stricter oversight on operators like Super Metro including regular safety audits and tougher penalties for violations. Others suggest boycotts or even temporary suspension of routes until reforms take hold. The outrage reflects a deeper tiredness with a transport system that many feel puts profit ahead of passenger lives especially for working class people who have few alternatives.
+
+As investigations proceed questions linger about what exactly sparked the argument on that bus. Some accounts mention a brief disagreement with the conductor possibly tied to fare while the crew has claimed Mureithi simply lost his balance while boarding. Whatever the trigger the outcome was avoidable. A young man who was trying to build a better life for his family should not have met such a violent end over something as routine as catching a ride home.
+
+This case serves as a painful reminder of the human cost when safety standards slip in Kenya's public transport network. Families like Mureithi's deserve answers and assurances that lessons will be learned. For now the focus remains on supporting the bereaved ensuring the legal process moves forward without delay and pushing for changes that prevent similar tragedies in the future. The road ahead for matatu reform may be long but moments like this make clear why it cannot wait.
