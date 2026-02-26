@@ -12,6 +12,7 @@ import { HelmetProvider } from "react-helmet-async";
 const Index = lazy(() => import("./pages/Index"));
 const ArticlePage = lazy(() => import("./pages/ArticlePage"));
 const CategoryPage = lazy(() => import("./pages/CategoryPage"));
+const Trending = lazy(() => import("./pages/Trending")); // Added Trending page
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const PrivacyPage = lazy(() => import("./pages/PrivacyPage"));
@@ -107,7 +108,7 @@ const GlobalErrorHandler = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const handleUnhandledRejection = (event: PromiseRejectionEvent) => {
       console.error('Unhandled promise rejection:', event.reason);
-      
+
       // Handle dynamic import failures specifically
       if (event.reason?.message?.includes('Failed to fetch dynamically imported module')) {
         console.warn('Dynamic import failed, reloading page...');
@@ -124,40 +125,41 @@ const GlobalErrorHandler = ({ children }: { children: ReactNode }) => {
 
 const App = () => (
   <HelmetProvider>
-  <QueryClientProvider client={queryClient}>
-    <ThemeProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <GlobalErrorHandler>
-          <BrowserRouter>
-            <ErrorBoundary>
-              <Suspense fallback={<PageLoader />}>
-                <Routes>
-                  <Route path="/" element={<Index />} />
-                  <Route path="/article/:slug" element={<ArticlePage />} />
-                  <Route path="/category/:slug" element={<CategoryPage />} />
-                  <Route path="/about" element={<AboutPage />} />
-                  <Route path="/contact" element={<ContactPage />} />
-                  <Route path="/privacy" element={<PrivacyPage />} />
-                  <Route path="/terms" element={<TermsPage />} />
-                  <Route path="/advertise" element={<AdvertisePage />} />
-                  <Route path="/careers" element={<CareersPage />} />
-                  <Route path="/admin" element={<AdminPage />} />
-                  <Route path="/tag/:tag" element={<TagPage />} />
-                  <Route path="/sports" element={<SportsPage />} />
-                  <Route path="/sports/live" element={<LiveScoresPage />} />
-                  <Route path="/sitemap.xml" element={<SitemapPage />} />
-                  <Route path="/sitemap" element={<SitemapHtmlPage />} />
-                  <Route path="*" element={<NotFound />} />
-                </Routes>
-              </Suspense>
-            </ErrorBoundary>
-          </BrowserRouter>
-        </GlobalErrorHandler>
-      </TooltipProvider>
-    </ThemeProvider>
-  </QueryClientProvider>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <GlobalErrorHandler>
+            <BrowserRouter>
+              <ErrorBoundary>
+                <Suspense fallback={<PageLoader />}>
+                  <Routes>
+                    <Route path="/" element={<Index />} />
+                    <Route path="/article/:slug" element={<ArticlePage />} />
+                    <Route path="/category/:slug" element={<CategoryPage />} />
+                    <Route path="/trending" element={<Trending />} /> {/* Route for Trending page */}
+                    <Route path="/about" element={<AboutPage />} />
+                    <Route path="/contact" element={<ContactPage />} />
+                    <Route path="/privacy" element={<PrivacyPage />} />
+                    <Route path="/terms" element={<TermsPage />} />
+                    <Route path="/advertise" element={<AdvertisePage />} />
+                    <Route path="/careers" element={<CareersPage />} />
+                    <Route path="/admin" element={<AdminPage />} />
+                    <Route path="/tag/:tag" element={<TagPage />} />
+                    <Route path="/sports" element={<SportsPage />} />
+                    <Route path="/sports/live" element={<LiveScoresPage />} />
+                    <Route path="/sitemap.xml" element={<SitemapPage />} />
+                    <Route path="/sitemap" element={<SitemapHtmlPage />} />
+                    <Route path="*" element={<NotFound />} />
+                  </Routes>
+                </Suspense>
+              </ErrorBoundary>
+            </BrowserRouter>
+          </GlobalErrorHandler>
+        </TooltipProvider>
+      </ThemeProvider>
+    </QueryClientProvider>
   </HelmetProvider>
 );
 
