@@ -9,5 +9,21 @@ date: "2026-02-26"
 tags: [( {newPost.tags.split(',').map(t => `" ){t.trim()}"`).filter(t => t !== '""').join(', ')}]
 featured: false
 ---
+body in markdowns
 
-Kenyan TikTokers are rallying together for a heartfelt group visit to car dealer Khalif Kairo's home on March 15. This comes just days after he buried his mother, Lucy Wambui Kairo, who passed away on February 15 following a long illness that included treatment abroad.Emotional Burial Sparks BacklashVideos from the somber burial at Gichungo Farm in Ndeiya, Limuru, Kiambu County, showed Kairo visibly heartbroken, with only a handful of people present—including filmmaker Phil Karanja. Many Kenyans online pointed out the glaring absence of his celebrity friends, questioning where the usual industry support was during his time of grief. The low turnout fueled widespread sympathy and frustration on social media.TikTok Community Steps UpInfluencers on TikTok began calling for the visit around February 25, urging followers to show up in person: "Let's all go visit Khalif Kairo—he buried his mum with barely anyone there." The campaign echoes similar fan-driven efforts for other figures like Kaluma Boy, highlighting how digital communities are stepping in where traditional networks fall short. It's set for March 15, about a month after her passing, to offer direct encouragement.Amid Business and Legal StrugglesKairo, known for his flashy car imports through Kai & Kairo Limited, has been battling multiple fraud allegations since late 2024. Cases involve undelivered vehicles—like a KSh 2.2 million BMW—and claims totaling over KSh 34 million, with some settling out of court by September 2025. Despite the scrutiny, this TikTok mobilization shows a side of public empathy, blending personal loss with his high-stakes professional life. The gesture reflects Kenya's evolving online support culture for public figures in tough times.
+## TikTokers Rally for Khalif Kairo
+
+Kenyan TikTok influencers launched a grassroots campaign for a group visit to businessman Khalif Kairo's home on March 15. This follows the recent burial of his mother, Lucy Wambui Kairo, which drew criticism for low attendance from celebrity circles.
+
+## Mother's Passing Timeline
+
+Kairo announced Lucy Wambui's death on February 15, 2026, after her long battle with illness, including treatment abroad. The burial at Gichungo Farm in Ndeiya, Limuru, Kiambu County, showed him deeply emotional. Only filmmaker Phil Karanja attended among notable figures, sparking online backlash over absent celebrity friends.
+
+## Fan-Led Support Initiative
+
+TikTok videos from February 25 urged unity: "Let's visit Khalif Kairo—he buried his mum with barely anyone there." The effort mirrors past mobilizations like for Kaluma Boy, filling gaps in traditional support networks. Planned one month post-passing, it aims to offer direct encouragement.
+
+## Business and Legal Context
+
+Kairo runs Kai & Kairo Limited, a high-profile car import business facing fraud claims since 2024. Allegations include undelivered vehicles worth millions, like a KSh 2.2 million BMW, with some cases settled out-of-court by late 2025. This digital gesture blends empathy with his ongoing challenges.
+
