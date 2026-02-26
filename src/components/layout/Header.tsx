@@ -63,6 +63,16 @@ export function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-0.5">
+              {/* Added Trending Link */}
+              <Link
+                to="/trending"
+                className="flex items-center gap-1.5 px-3 py-2 text-sm font-bold text-primary hover:bg-primary/10 rounded-lg transition-all"
+              >
+                <Flame className="w-4 h-4" />
+                Trending
+              </Link>
+              
+              {/* Categories Mapping */}
               {categories.map((category) => (
                 <Link
                   key={category.slug}
@@ -106,6 +116,17 @@ export function Header() {
         {isMenuOpen && (
           <nav className="lg:hidden border-t border-divider bg-background animate-fade-in">
             <div className="container py-4 space-y-1">
+              {/* Added Mobile Trending Link */}
+              <Link
+                to="/trending"
+                className="flex items-center gap-2 px-4 py-3 text-primary hover:bg-primary/10 rounded-lg transition-smooth font-bold"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <Flame className="w-5 h-5" />
+                Trending
+              </Link>
+
+              {/* Mobile Categories Mapping */}
               {categories.map((category) => (
                 <Link
                   key={category.slug}
