@@ -2,19 +2,20 @@ import { BetaAnalyticsDataClient } from '@google-analytics/data';
 
 const propertyId = process.env.GA4_PROPERTY_ID;
 
-// "Safe" Key Formatter
-const formatKey = (key) => {
+// This function "repairs" the key for Vercel's environment
+const getCleanKey = (key) => {
   if (!key) return undefined;
-  // Remove any stray quotes that Android or Vercel might have added
-  const cleanKey = key.replace(/^["']|["']$/g, '');
-  // Convert escaped \n into actual line breaks
-  return cleanKey.replace(/\\n/g, '\n');
+  // 1. Remove wrapping quotes if present
+  let cleanKey = key.replace(/^["']|["']$/g, '');
+  // 2. Convert literal "\n" strings into actual line breaks
+  cleanKey = cleanKey.replace(/\\n/g, '\n');
+  return cleanKey.trim();
 };
 
 const client = new BetaAnalyticsDataClient({
   credentials: {
     client_email: process.env.GA4_CLIENT_EMAIL,
-    private_key: formatKey(process.env.GA4_PRIVATE_KEY),
+    private_key: getCleanKey(process.env.GA4_PRIVATE_KEY),
   },
 });
 
@@ -36,14 +37,14 @@ export default async function handler(req, res) {
       });
     }
 
-    // Cache for 1 hour to protect your GA4 limits
+    // Set high cache to protect your high traffic
     res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=86400');
     res.status(200).json(viewMap);
   } catch (error) {
-    console.error("Detailed GA4 Error:", error);
+    console.error("GA4 Auth Error:", error.message);
     res.status(500).json({ 
-        error: error.message, 
-        hint: "Check if the Private Key starts with -----BEGIN PRIVATE KEY-----" 
+      error: "Authentication failed. Check your Private Key format.",
+      details: error.message 
     });
   }
 }
