@@ -1,10 +1,19 @@
 import { BetaAnalyticsDataClient } from '@google-analytics/data';
 
 const propertyId = process.env.GA4_PROPERTY_ID;
+
+// Helper to fix the key format
+const getPrivateKey = () => {
+  const key = process.env.GA4_PRIVATE_KEY;
+  if (!key) return undefined;
+  // Handles both escaped and literal newlines
+  return key.replace(/\\n/g, '\n');
+};
+
 const client = new BetaAnalyticsDataClient({
   credentials: {
     client_email: process.env.GA4_CLIENT_EMAIL,
-    private_key: process.env.GA4_PRIVATE_KEY.replace(/\\n/g, '\n'),
+    private_key: getPrivateKey(),
   },
 });
 
@@ -26,14 +35,11 @@ export default async function handler(req, res) {
       });
     }
 
-    // CACHE SETTINGS:
-    // s-maxage=3600 means Vercel holds this for 1 hour.
-    // stale-while-revalidate means if someone visits after 1 hour, 
-    // they get the OLD data instantly while Vercel updates the NEW data in the background.
     res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=86400');
-    
     res.status(200).json(viewMap);
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    // This will help you see the exact error in Vercel logs if it fails again
+    console.error("Detailed GA4 Error:", error);
+    res.status(500).json({ error: error.message, code: error.code });
   }
 }
