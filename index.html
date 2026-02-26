@@ -75,20 +75,14 @@
   <body>
     <div id="root"></div>
 
-    <div id="adcash-bottom-container" style="display: flex; justify-content: center; width: 100%; padding: 20px 0;">
+    <div id="adcash-banner-container" style="display: flex; justify-content: center; width: 100%; padding: 20px 0;">
       <script type="text/javascript">
         (function runAdcash() {
-          if (window.aclib && typeof aclib.runAutoTag === 'function') {
-            // Run the Video Slider you provided
-            aclib.runVideoSlider({
-                zoneId: '11004386',
-            });
-            // Run the Auto Tag you provided
-            aclib.runAutoTag({
-                zoneId: '1baqgrldjc',
+          if (window.aclib && typeof aclib.runBanner === 'function') {
+            aclib.runBanner({
+                zoneId: '11014338',
             });
           } else {
-            // Retry if the library isn't ready yet
             setTimeout(runAdcash, 500);
           }
         })();
