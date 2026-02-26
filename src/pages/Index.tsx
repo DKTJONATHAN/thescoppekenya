@@ -37,15 +37,29 @@ const Index = () => {
     fetchViews();
   }, []);
 
-  // Combine markdown data with live view counts + "New Site" bonus
+  // Combine markdown data with live view counts
   const allPostsWithViews = useMemo(() => {
     return allPostsFromMarkdown.map(post => {
-      const path = `/article/${post.slug}`;
-      const gaViews = viewCounts[path] || 0;
-      // Bonus views to make a new site look active
+      // 1. Clean the slug (removes accidental slashes or .md extensions)
+      const cleanSlug = post.slug.replace(/^\//, '').replace(/\.md$/, '');
+      
+      // 2. Check multiple path variations that GA4 might use
+      const exactPath = `/article/${cleanSlug}`;
+      const pathWithSlash = `/article/${cleanSlug}/`;
+      const fallbackPath = `/posts/${cleanSlug}`; 
+      
+      // 3. Grab the actual views from our JSON data
+      const gaViews = viewCounts[exactPath] || 
+                      viewCounts[pathWithSlash] || 
+                      viewCounts[fallbackPath] || 
+                      0;
+      
+      // 4. If we have real views, show them! If 0, use the 47 fallback.
+      const displayViews = gaViews > 0 ? gaViews : 47;
+
       return {
         ...post,
-        views: gaViews + 47
+        views: displayViews
       };
     });
   }, [viewCounts]);
