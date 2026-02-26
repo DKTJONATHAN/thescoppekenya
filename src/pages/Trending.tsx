@@ -28,21 +28,54 @@ const Trending = () => {
     fetchViews();
   }, []);
 
-  // Sort posts by views (GA views + "New Site" bonus)
+  // Sort posts by real GA views using fuzzy matching
   const trendingPosts = useMemo(() => {
     return allPostsFromMarkdown
-      .map(post => ({
-        ...post,
-        views: (viewCounts[`/article/${post.slug}`] || 0) + 47 // Maintaining your +47 bonus
-      }))
+      .map(post => {
+        const cleanSlug = post.slug.replace(/^\//, '').replace(/\.md$/, '');
+        const exactPath = `/article/${cleanSlug}`;
+        const pathWithSlash = `/article/${cleanSlug}/`;
+        const fallbackPath = `/posts/${cleanSlug}`; 
+        
+        const gaViews = viewCounts[exactPath] || 
+                        viewCounts[pathWithSlash] || 
+                        viewCounts[fallbackPath] || 
+                        0;
+        
+        const displayViews = gaViews > 0 ? gaViews : 47;
+
+        return {
+          ...post,
+          views: displayViews
+        };
+      })
       .sort((a, b) => b.views - a.views);
   }, [viewCounts]);
 
   return (
     <Layout>
       <Helmet>
+        {/* Page Title */}
         <title>Trending Stories - Za Ndani | What's Hot in Kenya</title>
-        <meta name="description" content="The most read celebrity gossip and entertainment stories on Za Ndani right now." />
+        
+        {/* Primary SEO Meta Tags */}
+        <meta name="description" content="Discover the most read stories on Za Ndani right now. Hottest Kenya celebrity gossip, viral Sheng updates, and breaking Nairobi entertainment news." />
+        <meta name="keywords" content="Trending news Kenya, Kenya celebrity gossip, hot entertainment stories Nairobi, most read news Kenya, Za Ndani trending, viral Sheng stories, latest Nairobi gossip" />
+        <link rel="canonical" href="https://zandani.co.ke/trending" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://zandani.co.ke/trending" />
+        <meta property="og:title" content="Trending Stories - Za Ndani | What's Hot in Kenya" />
+        <meta property="og:description" content="Discover the most read stories on Za Ndani right now. Hottest Kenya celebrity gossip and breaking Nairobi entertainment news." />
+        <meta property="og:image" content="https://zandani.co.ke/logo.png" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://zandani.co.ke/trending" />
+        <meta name="twitter:title" content="Trending Stories - Za Ndani | What's Hot in Kenya" />
+        <meta name="twitter:description" content="Discover the most read stories on Za Ndani right now. Hottest Kenya celebrity gossip and breaking Nairobi entertainment news." />
+        <meta name="twitter:image" content="https://zandani.co.ke/logo.png" />
       </Helmet>
 
       <section className="py-12 bg-gradient-to-b from-primary/5 to-transparent">
