@@ -2,21 +2,27 @@ import { BetaAnalyticsDataClient } from '@google-analytics/data';
 
 const propertyId = process.env.GA4_PROPERTY_ID;
 
-const getCleanKey = () => {
+// The "Ultimate Fix": Decoding from Base64
+const getPrivateKey = () => {
   const rawKey = process.env.GA4_PRIVATE_KEY;
   if (!rawKey) return undefined;
 
-  return rawKey
-    .replace(/^["']|["']$/g, '') // Remove wrapping quotes
-    .split(String.raw`\n`)       // Split by literal \n string
-    .join('\n')                  // Join with actual newlines
-    .replace(/\\n/g, '\n');      // Final pass for any remaining escapes
+  try {
+    // If it looks like Base64 (no BEGIN header), decode it
+    if (!rawKey.includes('BEGIN PRIVATE KEY')) {
+      return Buffer.from(rawKey, 'base64').toString('utf8');
+    }
+    // Fallback for standard format
+    return rawKey.replace(/\\n/g, '\n');
+  } catch (e) {
+    return rawKey;
+  }
 };
 
 const client = new BetaAnalyticsDataClient({
   credentials: {
     client_email: process.env.GA4_CLIENT_EMAIL,
-    private_key: getCleanKey(),
+    private_key: getPrivateKey(),
   },
 });
 
@@ -41,12 +47,12 @@ export default async function handler(req, res) {
     res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=86400');
     res.status(200).json(viewMap);
   } catch (error) {
-    console.error("Auth Failure:", error.message);
+    console.error("GA4 Error:", error.message);
     res.status(500).json({ 
       error: "Authentication failed", 
       details: error.message,
-      // Helps us see if the key is at least loading into the variable
-      key_length: process.env.GA4_PRIVATE_KEY?.length || 0 
+      // Helps verify if the decoding worked
+      is_base64_attempt: !process.env.GA4_PRIVATE_KEY?.includes('BEGIN')
     });
   }
 }
