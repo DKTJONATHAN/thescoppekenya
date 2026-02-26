@@ -73,11 +73,11 @@ jobs:
               "in today's digital age", "shed light on"
           ]
 
-          print(f"🎯 Target: Tuko.co.ke Sports (Martin Mutwiri)")
+          print(f"🎯 Target: Mozzart Sport (Martin Mutwiri)")
 
           def get_target_urls():
               urls = []
-              print("🔍 Scanning Tuko.co.ke Sports with Playwright...")
+              print("🔍 Scanning Mozzart Sport with Playwright...")
               try:
                   with sync_playwright() as p:
                       browser = p.chromium.launch(headless=True, args=[
@@ -90,7 +90,7 @@ jobs:
                           viewport={"width": 1920, "height": 1080}
                       )
                       page = context.new_page()
-                      page.goto('https://www.tuko.co.ke/sports/', timeout=60000, wait_until="domcontentloaded")
+                      page.goto('https://www.mozzartsport.co.ke/football/1', timeout=60000, wait_until="domcontentloaded")
                       
                       page.evaluate("window.scrollBy(0, 1500)")
                       page.wait_for_timeout(4000)
@@ -100,13 +100,14 @@ jobs:
                       
                       for a in soup.find_all('a', href=True):
                           href = a.get('href', '')
-                          if '/sports/' in href and len(href) > 25 and '/author/' not in href and '/tag/' not in href:
-                              full_url = href if href.startswith('http') else 'https://www.tuko.co.ke' + (href if href.startswith('/') else '/' + href)
-                              urls.append(full_url)
+                          if len(href) > 25 and '/author/' not in href and '/tag/' not in href:
+                              full_url = href if href.startswith('http') else 'https://www.mozzartsport.co.ke' + (href if href.startswith('/') else '/' + href)
+                              if 'mozzartsport.co.ke' in full_url:
+                                  urls.append(full_url)
                       
                       browser.close()
               except Exception as e: 
-                  print(f"Tuko scan error: {e}")
+                  print(f"Mozzart Sport scan error: {e}")
 
               return list(set(urls))
 
@@ -172,7 +173,7 @@ jobs:
                       page_title = ""
                       title_tag = soup.find('title')
                       if title_tag:
-                          page_title = title_tag.get_text().replace(' - TUKO.co.ke', '').replace(' | Tuko.co.ke', '').strip()
+                          page_title = title_tag.get_text().replace(' - MozzartSport.co.ke', '').replace(' | MozzartSport', '').replace(' - MozzartSport', '').strip()
 
                       # --- CONTENT EXTRACTION ---
                       article_text = ""
