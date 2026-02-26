@@ -2,7 +2,7 @@
 title: "Simi Faces Calls to Apologize and Disappear Over Her "Pedophilic" Old Tweets"
 slug: "simi-faces-calls-to-apologize-and-disappear-over-her-pedophilic-old-tweets"
 excerpt: "Simi under fire for defending 2012 tweets joking about kissing a 4-year-old boy, as Ijeoma Njoku demands full apology, X deactivation, and silence amid pedophilia accusations."
-image: "https://i.postimg.cc/k54tMVb4/simis.webp"
+image: "https://i.postimg.cc/k54tMVb4/simis.jpeg"
 category: "Gossip"
 author: "The Scoop KE"
 date: "2026-02-26"
