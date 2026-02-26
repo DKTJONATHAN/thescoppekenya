@@ -2,20 +2,16 @@ import { BetaAnalyticsDataClient } from '@google-analytics/data';
 
 const propertyId = process.env.GA4_PROPERTY_ID;
 
-// The "Ultimate Fix": Decoding from Base64
+// Decode the Base64 string back into a pristine RSA Key
 const getPrivateKey = () => {
   const rawKey = process.env.GA4_PRIVATE_KEY;
   if (!rawKey) return undefined;
 
   try {
-    // If it looks like Base64 (no BEGIN header), decode it
-    if (!rawKey.includes('BEGIN PRIVATE KEY')) {
-      return Buffer.from(rawKey, 'base64').toString('utf8');
-    }
-    // Fallback for standard format
-    return rawKey.replace(/\\n/g, '\n');
-  } catch (e) {
-    return rawKey;
+    // Decode Base64 to utf8 string
+    return Buffer.from(rawKey.trim(), 'base64').toString('utf8');
+  } catch (error) {
+    return undefined;
   }
 };
 
@@ -27,10 +23,12 @@ const client = new BetaAnalyticsDataClient({
 });
 
 export default async function handler(req, res) {
+  const keyLength = process.env.GA4_PRIVATE_KEY?.length || 0;
+
   try {
     const [response] = await client.runReport({
       property: `properties/${propertyId}`,
-      dateRanges: [{ startDate: '2025-01-01', endDate: 'today' }],
+      dateRanges: [{ startDate: '2026-01-01', endDate: 'today' }],
       dimensions: [{ name: 'pagePath' }],
       metrics: [{ name: 'screenPageViews' }],
     });
@@ -47,12 +45,13 @@ export default async function handler(req, res) {
     res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=86400');
     res.status(200).json(viewMap);
   } catch (error) {
-    console.error("GA4 Error:", error.message);
     res.status(500).json({ 
       error: "Authentication failed", 
       details: error.message,
-      // Helps verify if the decoding worked
-      is_base64_attempt: !process.env.GA4_PRIVATE_KEY?.includes('BEGIN')
+      debug: {
+        base64_length_in_vercel: keyLength,
+        hint: keyLength < 2000 ? "Your Base64 string was truncated! It needs to be ~2300 characters." : "Key length is good, check format."
+      }
     });
   }
 }
