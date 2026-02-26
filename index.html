@@ -22,7 +22,7 @@
     <meta property="og:url" content="https://zandani.co.ke" />
     <meta property="og:title" content="Za Ndani - Kenya Celebrity Gossip & Entertainment News" />
     <meta property="og:description" content="Hottest Kenya celebrity gossip, breaking Nairobi entertainment news & exclusive insider scoops. Bold updates daily." />
-<meta name="msvalidate.01" content="2B25BAB72961CD0D4AD6B6FBB1A66B2F" />
+    <meta name="msvalidate.01" content="2B25BAB72961CD0D4AD6B6FBB1A66B2F" />
     <meta property="og:image" content="https://zandani.co.ke/logo.png" />
     <meta property="og:site_name" content="Za Ndani" />
 
@@ -75,23 +75,25 @@
   <body>
     <div id="root"></div>
 
-    <script type="text/javascript">
-      (function runAdcash() {
-        if (window.aclib && typeof aclib.runAutoTag === 'function') {
-          // Run the Video Slider you provided
-          aclib.runVideoSlider({
-              zoneId: '11004386',
-          });
-          // Run the Auto Tag you provided
-          aclib.runAutoTag({
-              zoneId: '1baqgrldjc',
-          });
-        } else {
-          // Retry if the library isn't ready yet
-          setTimeout(runAdcash, 500);
-        }
-      })();
-    </script>
+    <div id="adcash-bottom-container" style="display: flex; justify-content: center; width: 100%; padding: 20px 0;">
+      <script type="text/javascript">
+        (function runAdcash() {
+          if (window.aclib && typeof aclib.runAutoTag === 'function') {
+            // Run the Video Slider you provided
+            aclib.runVideoSlider({
+                zoneId: '11004386',
+            });
+            // Run the Auto Tag you provided
+            aclib.runAutoTag({
+                zoneId: '1baqgrldjc',
+            });
+          } else {
+            // Retry if the library isn't ready yet
+            setTimeout(runAdcash, 500);
+          }
+        })();
+      </script>
+    </div>
 
     <script type="module" src="/src/main.tsx"></script>
   </body>
