@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { getAllPosts, Post, categories as defaultCategories } from "@/lib/markdown";
-import { Lock, Plus, Eye, FileText, LogOut, Calendar, Tag, User, Image, AlignLeft, Star, Loader2, Pencil, Trash2, X, Github } from "lucide-react";
+import { Lock, Plus, Eye, FileText, LogOut, Calendar, Tag, User, Image, AlignLeft, Loader2, Pencil, Trash2, X, Github } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
@@ -44,9 +44,8 @@ export default function AdminPage() {
     category: "News",
     content: "",
     image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800",
-    author: "Celestine Nzioka",
-    tags: "",
-    featured: false
+    author: "The Scoop KE",
+    tags: ""
   });
 
   useEffect(() => {
@@ -165,6 +164,14 @@ export default function AdminPage() {
     const postSlug = newPost.slug || generateSlug(newPost.title);
     const filePath = `content/posts/${postSlug}.md`;
 
+    // Safely format tags outside the template literal to avoid syntax breaks
+    const tagsFormatted = newPost.tags
+      .split(',')
+      .map(t => t.trim())
+      .filter(t => t.length > 0)
+      .map(t => `"${t}"`)
+      .join(', ');
+
     // EXACT FRONTMATTER STRUCTURE
     const markdown = `---
 title: "${newPost.title}"
@@ -174,7 +181,7 @@ author: "${newPost.author}"
 image: "${newPost.image}"
 category: "${newPost.category}"
 date: "${editingPost?.date || new Date().toISOString().split('T')[0]}"
-tags: [${newPost.tags.split(',').map(t => `"${t.trim()}"`).filter(t => t !== '""').join(', ')}]
+tags: [${tagsFormatted}]
 ---
 
 ${newPost.content}`;
@@ -214,7 +221,7 @@ ${newPost.content}`;
     setNewPost({
       title: "", slug: "", excerpt: "", category: "News", content: "",
       image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800",
-      author: "Celestine Nzioka", tags: "", featured: false
+      author: "The Scoop KE", tags: ""
     });
     setEditingPost(null);
   };
@@ -228,9 +235,8 @@ ${newPost.content}`;
       category: post.category,
       content: post.content,
       image: post.image,
-      author: post.author || "Celestine Nzioka",
-      tags: post.tags.join(", "),
-      featured: post.featured || false
+      author: post.author || "The Scoop KE",
+      tags: post.tags.join(", ")
     });
     setActiveTab("create");
   };
@@ -290,6 +296,7 @@ ${newPost.content}`;
               </div>
               <input type="text" placeholder="Image URL" value={newPost.image} onChange={(e) => setNewPost({ ...newPost, image: e.target.value })} className="w-full p-3 rounded-xl border border-divider bg-background font-mono" />
               <textarea placeholder="Content (Markdown)" value={newPost.content} onChange={(e) => setNewPost({ ...newPost, content: e.target.value })} className="w-full p-3 rounded-xl border border-divider bg-background font-mono" rows={10} />
+              
               <div className="flex justify-end gap-3 pt-4 border-t border-divider">
                 <Button variant="outline" onClick={resetForm}>Clear</Button>
                 <Button onClick={() => handlePublish(!!editingPost)} disabled={isPublishing} className="gradient-primary">
@@ -311,7 +318,8 @@ ${newPost.content}`;
                   </div>
                   <div className="flex gap-2">
                     <Button variant="outline" size="sm" onClick={() => handleEditPost(post)}><Pencil className="w-4 h-4" /></Button>
-                    <Button variant="outline" size="sm" onClick={() => handlePublish(true)} className="text-destructive"><Trash2 className="w-4 h-4" /></Button>
+                    <Button variant="outline" size="sm" onClick={() => handleDeletePost(post)} className="text-destructive"><Trash2 className="w-4 h-4" /></Button>
+                    <Button variant="outline" size="sm" asChild><a href={`/article/${post.slug}`} target="_blank" rel="noopener noreferrer"><Eye className="w-4 h-4" /></a></Button>
                   </div>
                 </div>
               ))}
