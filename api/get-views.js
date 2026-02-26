@@ -12,7 +12,7 @@ export default async function handler(req, res) {
   try {
     const [response] = await client.runReport({
       property: `properties/${propertyId}`,
-      dateRanges: [{ startDate: '2025-01-01', endDate: 'today' }], // Ensure start date covers your site's life
+      dateRanges: [{ startDate: '2025-01-01', endDate: 'today' }],
       dimensions: [{ name: 'pagePath' }],
       metrics: [{ name: 'screenPageViews' }],
     });
@@ -21,7 +21,7 @@ export default async function handler(req, res) {
     if (response.rows) {
       response.rows.forEach((row) => {
         let path = row.dimensionValues[0].value;
-        // Remove trailing slash if it exists so "/article/story/" becomes "/article/story"
+        // Clean trailing slashes to ensure matching works
         if (path.endsWith('/') && path.length > 1) {
           path = path.slice(0, -1);
         }
@@ -30,6 +30,7 @@ export default async function handler(req, res) {
       });
     }
 
+    // Cache results for 1 hour to stay within Google's free limits
     res.setHeader('Cache-Control', 's-maxage=3600, stale-while-revalidate');
     res.status(200).json(viewMap);
   } catch (error) {
