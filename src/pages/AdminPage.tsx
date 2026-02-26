@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { getAllPosts, Post, categories } from "@/lib/markdown";
+import { getAllPosts, Post, categories as defaultCategories } from "@/lib/markdown";
 import { Lock, Plus, Eye, Save, FileText, LogOut, Calendar, Tag, User, Image, AlignLeft, Star, Send, Loader2, Pencil, Trash2, X, Github } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
@@ -24,6 +24,10 @@ const utf8ToBase64 = (str: string) => {
   return window.btoa(unescape(encodeURIComponent(str)));
 };
 
+const base64ToUtf8 = (base64: string): string => {
+  return decodeURIComponent(escape(window.atob(base64)));
+};
+
 export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [pin, setPin] = useState("");
@@ -33,6 +37,8 @@ export default function AdminPage() {
   const [isPublishing, setIsPublishing] = useState(false);
   const { toast } = useToast();
   const [editingPost, setEditingPost] = useState<Post | null>(null);
+  const [categories, setCategories] = useState<{ name: string; slug: string }[]>([]);
+  const [isCustomCategory, setIsCustomCategory] = useState(false);
   const [newPost, setNewPost] = useState({
     title: "",
     slug: "",
@@ -49,9 +55,32 @@ export default function AdminPage() {
     const authStatus = sessionStorage.getItem("admin_auth");
     if (authStatus === "true") {
       setIsAuthenticated(true);
-      setPosts(getAllPosts());
+      loadData();
     }
   }, []);
+
+  async function loadData() {
+    setPosts(getAllPosts());
+    const categoriesJson = await getGithubFileContent('content/categories.json');
+    if (categoriesJson) {
+      try {
+        setCategories(JSON.parse(categoriesJson));
+      } catch (e) {
+        console.error('Invalid categories JSON, falling back to defaults');
+        setCategories(defaultCategories);
+      }
+    } else {
+      setCategories(defaultCategories);
+    }
+  }
+
+  useEffect(() => {
+    if (newPost.category && !categories.some(cat => cat.name === newPost.category)) {
+      setIsCustomCategory(true);
+    } else {
+      setIsCustomCategory(false);
+    }
+  }, [newPost.category, categories]);
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -59,7 +88,7 @@ export default function AdminPage() {
     if (VALID_HASHES.includes(hashedInput)) {
       setIsAuthenticated(true);
       sessionStorage.setItem("admin_auth", "true");
-      setPosts(getAllPosts());
+      loadData();
       setError("");
     } else {
       setError("Invalid PIN. Please try again.");
@@ -105,6 +134,16 @@ export default function AdminPage() {
     }
   };
 
+  const getGithubFileContent = async (path: string) => {
+    try {
+      const data = await callGithubApi({ action: 'GET_CONTENT', path });
+      return base64ToUtf8(data.content);
+    } catch (error) {
+      console.error("Error fetching content:", error);
+      return null;
+    }
+  };
+
   const pushToGithub = async (path: string, content: string, message: string, sha?: string) => {
     return await callGithubApi({
       action: 'PUSH',
@@ -145,57 +184,7 @@ export default function AdminPage() {
     }
   };
 
-  const handleCreatePost = async () => {
-    if (!newPost.title || !newPost.content) {
-      alert("Please fill in the title and content.");
-      return;
-    }
-
-    setIsPublishing(true);
-    const postSlug = newPost.slug || generateSlug(newPost.title);
-    const filePath = `content/posts/${postSlug}.md`;
-
-    const markdown = `---
-title: "${newPost.title}"
-slug: "${postSlug}"
-excerpt: "${newPost.excerpt}"
-image: "${newPost.image}"
-category: "${newPost.category}"
-author: "${newPost.author}"
-date: "${new Date().toISOString().split('T')[0]}"
-tags: [${newPost.tags.split(',').map(t => `"${t.trim()}"`).filter(t => t !== '""').join(', ')}]
-featured: ${newPost.featured}
----
-
-${newPost.content}`;
-
-    try {
-      const existingSha = await getGithubFileSha(filePath);
-      if (existingSha) {
-        throw new Error("A post with this slug already exists. Please change the title or slug.");
-      }
-
-      await pushToGithub(filePath, markdown, `Create new post: ${newPost.title}`);
-      await submitToIndexNow(postSlug);
-
-      toast({
-        title: "Post published to GitHub!",
-        description: "The deployment process should start automatically.",
-      });
-      resetForm();
-    } catch (error: any) {
-      console.error("Publishing error:", error);
-      toast({
-        title: "Failed to publish",
-        description: error.message || "An error occurred while publishing.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsPublishing(false);
-    }
-  };
-
-  const handleUpdatePost = async () => {
+  const handlePublish = async (isUpdate: boolean) => {
     if (!newPost.title || !newPost.content) {
       alert("Please fill in the title and content.");
       return;
@@ -213,14 +202,28 @@ image: "${newPost.image}"
 category: "${newPost.category}"
 author: "${newPost.author}"
 date: "${editingPost?.date || new Date().toISOString().split('T')[0]}"
-tags: [${newPost.tags.split(',').map(t => `"${t.trim()}"`).filter(t => t !== '""').join(', ')}]
+tags: [\( {newPost.tags.split(',').map(t => `" \){t.trim()}"`).filter(t => t !== '""').join(', ')}]
 featured: ${newPost.featured}
 ---
 
 ${newPost.content}`;
 
     try {
-      if (editingPost && editingPost.slug !== postSlug) {
+      // Handle category addition if new
+      if (newPost.category) {
+        const categoryName = newPost.category;
+        const existingCat = categories.find(c => c.name === categoryName);
+        if (!existingCat) {
+          const newSlug = generateSlug(categoryName);
+          const newCategories = [...categories, { name: categoryName, slug: newSlug }];
+          const categoriesPath = 'content/categories.json';
+          const categoriesSha = await getGithubFileSha(categoriesPath);
+          await pushToGithub(categoriesPath, JSON.stringify(newCategories, null, 2), `Add new category: ${categoryName}`, categoriesSha);
+          setCategories(newCategories);
+        }
+      }
+
+      if (isUpdate && editingPost && editingPost.slug !== postSlug) {
         const oldFilePath = `content/posts/${editingPost.slug}.md`;
         const oldSha = await getGithubFileSha(oldFilePath);
         if (oldSha) {
@@ -229,24 +232,32 @@ ${newPost.content}`;
       }
 
       const sha = await getGithubFileSha(filePath);
-      await pushToGithub(filePath, markdown, `Update post: ${newPost.title}`, sha);
+      await pushToGithub(filePath, markdown, `${isUpdate ? 'Update' : 'Create'} post: ${newPost.title}`, sha);
       await submitToIndexNow(postSlug);
 
       toast({
-        title: "Post updated on GitHub!",
-        description: "Changes have been pushed and deployment should start soon.",
+        title: `Post ${isUpdate ? 'updated' : 'published'} to GitHub!`,
+        description: "The deployment process should start automatically.",
       });
       resetForm();
     } catch (error: any) {
-      console.error("Updating error:", error);
+      console.error("Publishing error:", error);
       toast({
-        title: "Failed to update",
-        description: error.message || "An error occurred while updating the post.",
+        title: "Failed to publish",
+        description: error.message || "An error occurred while publishing.",
         variant: "destructive",
       });
     } finally {
       setIsPublishing(false);
     }
+  };
+
+  const handleCreatePost = async () => {
+    await handlePublish(false);
+  };
+
+  const handleUpdatePost = async () => {
+    await handlePublish(true);
   };
 
   const handleDeletePost = async (post: Post) => {
@@ -288,6 +299,7 @@ ${newPost.content}`;
       author: "The Scoop KE", tags: "", featured: false
     });
     setEditingPost(null);
+    setIsCustomCategory(false);
   };
 
   const handleEditPost = (post: Post) => {
@@ -447,14 +459,31 @@ ${newPost.content}`;
                     <Calendar className="w-4 h-4" /> Category
                   </label>
                   <select
-                    value={newPost.category}
-                    onChange={(e) => setNewPost({ ...newPost, category: e.target.value })}
+                    value={isCustomCategory ? 'add-new' : newPost.category}
+                    onChange={(e) => {
+                      if (e.target.value === 'add-new') {
+                        setIsCustomCategory(true);
+                      } else {
+                        setIsCustomCategory(false);
+                        setNewPost({ ...newPost, category: e.target.value });
+                      }
+                    }}
                     className="w-full px-4 py-3 rounded-xl border border-divider bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                   >
                     {categories.map((cat) => (
                       <option key={cat.slug} value={cat.name}>{cat.name}</option>
                     ))}
+                    <option value="add-new">Add New Category</option>
                   </select>
+                  {isCustomCategory && (
+                    <input
+                      type="text"
+                      placeholder="Enter new category name"
+                      value={newPost.category}
+                      onChange={(e) => setNewPost({ ...newPost, category: e.target.value })}
+                      className="w-full px-4 py-3 rounded-xl border border-divider bg-background focus:outline-none focus:ring-2 focus:ring-primary mt-2"
+                    />
+                  )}
                 </div>
                 <div>
                   <label className="flex items-center gap-2 text-sm font-medium text-foreground mb-2">
