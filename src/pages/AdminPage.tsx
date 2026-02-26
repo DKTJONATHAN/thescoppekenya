@@ -165,11 +165,10 @@ export default function AdminPage() {
     const filePath = `content/posts/${postSlug}.md`;
 
     // Safely format tags outside the template literal to avoid syntax breaks
-    const tagsFormatted = newPost.tags
+    const tagsFormatted = (newPost.tags || "")
       .split(',')
       .map(t => t.trim())
       .filter(t => t.length > 0)
-      .map(t => `"${t}"`)
       .join(', ');
 
     // EXACT FRONTMATTER STRUCTURE
@@ -236,9 +235,14 @@ ${newPost.content}`;
       content: post.content,
       image: post.image,
       author: post.author || "The Scoop KE",
-      tags: post.tags.join(", ")
+      tags: post.tags ? post.tags.join(", ") : ""
     });
     setActiveTab("create");
+  };
+
+  const handleDeletePost = (post: Post) => {
+    // Add your deletion logic here
+    console.log("Delete post placeholder:", post.slug);
   };
 
   if (!isAuthenticated) {
@@ -255,6 +259,7 @@ ${newPost.content}`;
               maxLength={4}
               autoFocus
             />
+            {error && <p className="text-red-500 text-center mb-4">{error}</p>}
             <Button type="submit" className="w-full py-6 text-lg gradient-primary">Unlock Panel</Button>
           </form>
         </div>
