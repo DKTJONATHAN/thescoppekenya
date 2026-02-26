@@ -1,15 +1,13 @@
 ---
-title: "Simi Faces Calls to Apologize and Disappear Over "Pedophilic" Old Tweets"
+title: "Simi Faces Calls to Apologize and Disappear Over 'Pedophilic' Old Tweets"
 slug: "simi-faces-calls-to-apologize-and-disappear-over-pedophilic-old-tweets"
-excerpt: "Simi Faces Calls to Apologize and Disappear Over from the internet after "Pedophilic" Old Tweets resurfaced."
+excerpt: "Simi faces calls to apologize and disappear from the internet after 'pedophilic' old tweets resurfaced."
+author: "The Scoop KE"
 image: "https://i.postimg.cc/k54tMVb4/simis.webp"
 category: "Entertainment"
-author: "The Scoop KE"
 date: "2026-02-26"
-tags: [( {newPost.tags.split(',').map(t => `" ){t.trim()}"`).filter(t => t !== '""').join(', ')}]
-featured: false
+tags: ["Simi tweets controversy", "pedophilic accusations", "Ijeoma Njoku", "Nigerian singer backlash", "old Twitter posts", "child abuse debate", "Daniel Regha", "cancel culture", "rape advocacy", "2012 daycare tweets"]
 ---
-
 
 ## Simi Old Tweets Controversy Explodes
 
@@ -36,4 +34,3 @@ Many echo this, rejecting the "12 years ago" excuse since Simi wasn't a teen.
 Some defend Simi, arguing early 2010s Twitter humor was edgier and context matters. Others, including influencers like Daniel Regha, slam her defense as minimizing perversion.
 
 The drama highlights how past posts haunt celebrities, especially advocates, fueling cancel culture debates in Nigerian entertainment.
-
