@@ -2,34 +2,21 @@ import { BetaAnalyticsDataClient } from '@google-analytics/data';
 
 const propertyId = process.env.GA4_PROPERTY_ID;
 
-// The most robust way to fix the Vercel/Node key issue
-const getPrivateKey = () => {
+const getCleanKey = () => {
   const rawKey = process.env.GA4_PRIVATE_KEY;
   if (!rawKey) return undefined;
 
-  // 1. Remove any wrapping quotes (common on Android/Vercel)
-  let key = rawKey.replace(/^["']|["']$/g, '');
-
-  // 2. If the key already has literal newlines, it's fine. 
-  // If it has "\n" characters, we convert them.
-  if (key.includes('\\n')) {
-    key = key.replace(/\\n/g, '\n');
-  }
-
-  // 3. Final check: Ensure the header/footer are on their own lines
-  if (!key.includes('\n')) {
-    // This is a "flat" key, we must add the breaks manually for the decoder
-    key = key.replace('-----BEGIN PRIVATE KEY-----', '-----BEGIN PRIVATE KEY-----\n')
-             .replace('-----END PRIVATE KEY-----', '\n-----END PRIVATE KEY-----');
-  }
-
-  return key;
+  return rawKey
+    .replace(/^["']|["']$/g, '') // Remove wrapping quotes
+    .split(String.raw`\n`)       // Split by literal \n string
+    .join('\n')                  // Join with actual newlines
+    .replace(/\\n/g, '\n');      // Final pass for any remaining escapes
 };
 
 const client = new BetaAnalyticsDataClient({
   credentials: {
     client_email: process.env.GA4_CLIENT_EMAIL,
-    private_key: getPrivateKey(),
+    private_key: getCleanKey(),
   },
 });
 
@@ -54,12 +41,12 @@ export default async function handler(req, res) {
     res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=86400');
     res.status(200).json(viewMap);
   } catch (error) {
-    console.error("GA4 Error:", error.message);
+    console.error("Auth Failure:", error.message);
     res.status(500).json({ 
-      error: "Final attempt at key fix failed.",
+      error: "Authentication failed", 
       details: error.message,
-      // This will help us see if the key is even loading
-      key_present: !!process.env.GA4_PRIVATE_KEY 
+      // Helps us see if the key is at least loading into the variable
+      key_length: process.env.GA4_PRIVATE_KEY?.length || 0 
     });
   }
 }
