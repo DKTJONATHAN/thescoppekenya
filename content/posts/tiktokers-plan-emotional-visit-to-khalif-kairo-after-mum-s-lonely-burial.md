@@ -6,7 +6,7 @@ image: "https://i.postimg.cc/ZR7sQyh5/image-870x-6799ef5291a61.jpg"
 category: "Entertainment"
 author: "The Scoop KE"
 date: "2026-02-26"
-tags: [( {newPost.tags.split(',').map(t => `" ){t.trim()}"`).filter(t => t !== '""').join(', ')}]
+tags: "Khalif Kairo, TikTokers visit, Kenyan celebrities, car dealer fraud, mother's burial, Lucy Wambui, Gichungo Farm, Phil Karanja, digital support, Kaluma Boy"
 featured: false
 ---
 
