@@ -9,7 +9,6 @@ date: "2026-02-26"
 tags: [( {newPost.tags.split(',').map(t => `" ){t.trim()}"`).filter(t => t !== '""').join(', ')}]
 featured: false
 ---
-body in markdowns
 
 ## TikTokers Rally for Khalif Kairo
 
