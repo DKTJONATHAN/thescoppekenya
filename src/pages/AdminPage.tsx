@@ -202,7 +202,7 @@ image: "${newPost.image}"
 category: "${newPost.category}"
 author: "${newPost.author}"
 date: "${editingPost?.date || new Date().toISOString().split('T')[0]}"
-tags: [\( {newPost.tags.split(',').map(t => `" \){t.trim()}"`).filter(t => t !== '""').join(', ')}]
+tags: [\( {newPost.tags.split(',').map(t => \`" \){t.trim()}"\`).filter(t => t !== '""').join(', ')}]
 featured: ${newPost.featured}
 ---
 
