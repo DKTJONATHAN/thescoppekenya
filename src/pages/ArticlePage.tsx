@@ -24,7 +24,7 @@ export default function ArticlePage() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
   const [progress, setProgress] = useState(0);
-  const [showReactions, setShowReactions] = useState(false);
+  const progressRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -92,13 +92,29 @@ export default function ArticlePage() {
   }, [slug]);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 400);
+    let ticking = false;
 
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercent = docHeight > 0 ? Math.min(Math.max((scrollTop / docHeight) * 100, 0), 100) : 0;
-      setProgress(scrollPercent);
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setShowScrollTop(window.scrollY > 400);
+
+          const scrollTop = window.scrollY;
+          const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+          const scrollPercent = docHeight > 0 
+            ? Math.min(Math.max((scrollTop / docHeight) * 100, 0), 100) 
+            : 0;
+
+          setProgress(scrollPercent);
+
+          if (progressRef.current) {
+            progressRef.current.style.width = `${scrollPercent}%`;
+          }
+
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -236,7 +252,11 @@ export default function ArticlePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Reading Progress Bar */}
-      <div className="fixed top-0 left-0 right-0 h-1 bg-primary z-50 transition-all duration-100" style={{ width: `${progress}%` }} />
+      <div 
+        ref={progressRef}
+        className="fixed top-0 left-0 right-0 h-1 bg-primary z-50" 
+        style={{ width: "0%" }}
+      />
 
       {/* Back Navigation */}
       <div className="bg-muted/50 border-b border-border">
@@ -305,7 +325,7 @@ export default function ArticlePage() {
             )}
           </figure>
 
-          {/* Sticky Share + Reactions on Desktop */}
+          {/* Sticky Share on Desktop */}
           <div className="hidden lg:flex fixed left-[calc(50%-42rem)] top-48 flex-col gap-3 z-30">
             <Button variant="outline" size="icon" className="h-11 w-11 rounded-full" onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, "_blank")}>
               <Facebook className="w-5 h-5" />
@@ -338,20 +358,6 @@ export default function ArticlePage() {
               prose-ul:mb-8 prose-ol:mb-8 first-letter:text-7xl first-letter:font-serif first-letter:font-bold first-letter:text-primary first-letter:mr-3 first-letter:float-left"
             dangerouslySetInnerHTML={{ __html: post.htmlContent }}
           />
-
-          {/* Quick Reactions */}
-          <div className="flex justify-center gap-4 mt-12 mb-16">
-            {["🔥 Fire", "😂 Laugh", "😱 Shocked"].map((emoji) => (
-              <Button
-                key={emoji}
-                variant="outline"
-                className="px-8 py-6 rounded-2xl text-2xl hover:scale-110 transition-transform"
-                onClick={() => setShowReactions(true)}
-              >
-                {emoji}
-              </Button>
-            ))}
-          </div>
 
           {/* Tags */}
           {post.tags.length > 0 && (
