@@ -1,4 +1,4 @@
-name: African Entertainment British Gossip Bot (Google News)
+name: African Entertainment British Gossip Bot (OkayAfrica)
 
 on:
   schedule:
@@ -49,7 +49,7 @@ jobs:
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           python << 'EOF'
-          import os, json, datetime, requests, re, time, sys, hashlib, random, urllib.parse, textwrap, itertools
+          import os, json, datetime, requests, re, time, sys, hashlib, random, textwrap, itertools
           from google import genai
           from google.genai import types
           from bs4 import BeautifulSoup
@@ -68,31 +68,54 @@ jobs:
               "it's worth noting", "a testament to"
           ]
 
-          # --- 2. FETCH GOOGLE NEWS RSS (PAN-AFRICAN ENTERTAINMENT) ---
-          q = '("Nigeria" OR "South Africa" OR "Ghana" OR "Kenya" OR "Tanzania" OR "Africa") (afrobeats OR amapiano OR nollywood OR "social media trend" OR "music video" OR celebrity OR showbiz) when:2d'
-          safe_q = urllib.parse.quote(q)
-          rss_url = f'https://news.google.com/rss/search?q={safe_q}&hl=en-KE&gl=KE&ceid=KE:en'
-          
-          print(f"🌍 Fetching African Entertainment News: {rss_url}")
-          
-          try:
-              resp = requests.get(rss_url, timeout=15)
-              soup = BeautifulSoup(resp.content, "xml")
-              articles = [{"title": item.title.text, "url": item.link.text} for item in soup.find_all("item")]
-          except Exception as e:
-              print(f"❌ RSS Error: {e}")
-              sys.exit(0)
+          # --- 2. FETCH OKAYAFRICA HOMEPAGE LINKS ---
+          def get_target_urls():
+              urls = []
+              print("🔍 Scanning OkayAfrica News...")
+              try:
+                  with sync_playwright() as p:
+                      browser = p.chromium.launch(headless=True, args=[
+                          "--no-sandbox", 
+                          "--disable-dev-shm-usage",
+                          "--disable-blink-features=AutomationControlled"
+                      ])
+                      context = browser.new_context(
+                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+                          viewport={"width": 1920, "height": 1080}
+                      )
+                      page = context.new_page()
+                      page.goto('https://www.okayafrica.com/news', timeout=60000, wait_until="domcontentloaded")
+                      
+                      page.evaluate("window.scrollBy(0, 1500)")
+                      page.wait_for_timeout(4000)
 
-          if not articles:
-              print("⚠️ No fresh African entertainment gossip found in RSS.")
+                      content = page.content()
+                      soup = BeautifulSoup(content, 'html.parser')
+                      
+                      for a in soup.find_all('a', href=True):
+                          href = a.get('href', '')
+                          if len(href) > 25 and '/author/' not in href and '/tag/' not in href and '/category/' not in href and '/about/' not in href:
+                              full_url = href if href.startswith('http') else 'https://www.okayafrica.com' + (href if href.startswith('/') else '/' + href)
+                              if 'okayafrica.com' in full_url:
+                                  urls.append(full_url)
+                      
+                      browser.close()
+              except Exception as e: 
+                  print(f"OkayAfrica scan error: {e}")
+
+              return list(set(urls))
+
+          article_links = get_target_urls()
+          if not article_links:
+              print("❌ No articles found on OkayAfrica.")
               sys.exit(0)
 
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
 
-          # --- 3. STRONG FULL-ARTICLE SCRAPER (forces real publisher link) ---
+          # --- 3. STRONG FULL-ARTICLE SCRAPER ---
           def scrape_article_free(url):
-              print(f"🕷️ Trying full article from Google News: {url}")
+              print(f"🕷️ Trying full article: {url}")
               with sync_playwright() as p:
                   browser = p.chromium.launch(headless=True, args=[
                       "--no-sandbox", 
@@ -107,38 +130,18 @@ jobs:
                   try:
                       page.goto(url, timeout=60000, wait_until="domcontentloaded")
 
-                      # Force real link if still on Google
-                      if any(x in page.url for x in ["google.com", "news.google.com"]):
-                          print("   Still on Google wrapper -> forcing direct link...")
-                          direct = page.evaluate('''() => {
-                              const links = Array.from(document.querySelectorAll('a[href^="http"]'));
-                              for (let a of links) {
-                                  const h = a.href;
-                                  if (!h.includes('google.com') && !h.includes('news.google.com') && h.length > 30) {
-                                      return h;
-                                  }
-                              }
-                              return null;
-                          }''')
-                          if direct:
-                              print(f"   Found direct link -> {direct[:80]}...")
-                              page.goto(direct, timeout=60000, wait_until="networkidle")
-                          else:
-                              try:
-                                  page.click('text=/Visit|Continue|Go to site/i', timeout=8000)
-                              except:
-                                  pass
-                              page.wait_for_timeout(6000)
-
-                      # Scroll & wait for full content
-                      page.wait_for_timeout(8000)
-                      page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                       page.wait_for_timeout(4000)
-
-                      print(f"✅ Landed on real article: {page.url}")
+                      page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                      page.wait_for_timeout(3000)
 
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
+
+                      # Title
+                      page_title = ""
+                      title_tag = soup.find('title')
+                      if title_tag:
+                          page_title = title_tag.get_text().replace(' - Okayplayer', '').replace(' - OkayAfrica', '').strip()
 
                       # Multi-strategy text extraction
                       article_text = ""
@@ -169,33 +172,28 @@ jobs:
                               img_url = meta.get('content', '')
                               if img_url: break
 
-                      print(f"   Extracted {len(article_text)} characters of text")
-                      return article_text, img_url
+                      print(f"   ✅ Extracted {len(article_text)} characters of text")
+                      return article_text, img_url, page_title
 
                   except Exception as e:
                       print(f"   Scrape failed: {e}")
-                      return None, None
+                      return None, None, None
                   finally:
                       browser.close()
 
           # --- 4. PROCESS ARTICLES ---
           full_content, final_hash, target_title, target_image = None, None, None, None
-          for a in articles:
-              # Fix for repeating stories: Hash the clean title instead of the URL
-              clean_title = re.sub(r' - [^-]+$', '', a['title']).strip()
-              u_hash = hashlib.md5(clean_title.encode('utf-8')).hexdigest()
+          for link in article_links:
+              u_hash = hashlib.md5(link.encode('utf-8')).hexdigest()
               
               if u_hash in memory: continue
               
-              result = scrape_article_free(a['url'])
-              if not result: continue
-              
-              text, img = result
+              text, img, title = scrape_article_free(link)
               if text and len(text) > 300:
                   full_content = text
                   target_image = img
                   final_hash = u_hash
-                  target_title = clean_title
+                  target_title = title if title else "African Entertainment Update"
                   break 
 
           if not full_content: 
@@ -331,7 +329,7 @@ jobs:
               sys.exit(1)
 
           # ──────────────────────────────────────────────────────────────
-          # 7. ROBUST PARSE (THE FIX)
+          # 7. ROBUST PARSE 
           # ──────────────────────────────────────────────────────────────
           print("🔍 Gemini raw output preview (first 900 chars):")
           print(final_text[:900])
@@ -411,6 +409,6 @@ jobs:
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: fresh african entertainment gossip via direct links 🕵️"
+          commit_message: "content: fresh african entertainment gossip from OkayAfrica 🕵️"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_african_gossip.json'
