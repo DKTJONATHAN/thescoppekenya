@@ -15,21 +15,19 @@ jobs:
           fetch-depth: 2
 
       - name: Detect changed posts
+          # [Existing logic for detecting URLs - remains the same]
         id: changes
         run: |
           SITE_URL="https://zandani.co.ke"
           CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
-          
           if [ -z "$CHANGED" ]; then
             echo "count=0" >> $GITHUB_OUTPUT
             exit 0
           fi
-
           IJ_URLS="["
           GSC_LIST=""
           FIRST=true
           COUNT=0
-          
           while IFS= read -r file; do
             SLUG=$(basename "$file" .md)
             URL="${SITE_URL}/article/${SLUG}"
@@ -42,10 +40,8 @@ jobs:
             GSC_LIST="${GSC_LIST}${URL},"
             COUNT=$((COUNT+1))
           done <<< "$CHANGED"
-          
           IJ_URLS="${IJ_URLS}]"
           GSC_LIST=$(echo "$GSC_LIST" | sed 's/,$//')
-          
           echo "ij_urls=${IJ_URLS}" >> $GITHUB_OUTPUT
           echo "gsc_urls=${GSC_LIST}" >> $GITHUB_OUTPUT
           echo "count=${COUNT}" >> $GITHUB_OUTPUT
@@ -60,36 +56,42 @@ jobs:
         if: steps.changes.outputs.count > 0
         run: npm install googleapis
 
-      - name: Submit to Google Indexing API
+      - name: Submit directly to Google Indexing API
         if: steps.changes.outputs.count > 0
         env:
-          GSC_KEY_BASE64: ${{ secrets.GSC_JSON_KEY }}
+          # Pass the JSON directly into the environment
+          GSC_JSON_RAW: ${{ secrets.GSC_JSON_KEY }}
           URLS: ${{ steps.changes.outputs.gsc_urls }}
         run: |
-          # Safely decode the Base64 key to a file
-          echo "$GSC_KEY_BASE64" | base64 --decode > service_account.json
-          
           node -e "
           const { google } = require('googleapis');
-          const keys = require('./service_account.json');
           const urls = process.env.URLS.split(',');
           
           async function run() {
-            const auth = new google.auth.JWT(
-              keys.client_email, null, keys.private_key,
-              ['https://www.googleapis.com/auth/indexing'], null
-            );
-            const indexing = google.indexing({ version: 'v3', auth });
-            
-            for (const url of urls) {
-              try {
-                await indexing.urlNotifications.publish({
-                  requestBody: { url, type: 'URL_UPDATED' }
+            try {
+              // Parse the JSON directly from the environment variable string
+              const keys = JSON.parse(process.env.GSC_JSON_RAW);
+              
+              const auth = new google.auth.JWT(
+                keys.client_email,
+                null,
+                keys.private_key,
+                ['https://www.googleapis.com/auth/indexing'],
+                null
+              );
+              
+              const indexing = google.indexing({ version: 'v3', auth });
+              
+              for (const url of urls) {
+                if (!url) continue;
+                const res = await indexing.urlNotifications.publish({
+                  requestBody: { url: url, type: 'URL_UPDATED' }
                 });
-                console.log('✅ Indexing Requested:', url);
-              } catch (err) {
-                console.error('❌ Error for', url, ':', err.message);
+                console.log('✅ Google GSC Accepted:', url);
               }
+            } catch (e) {
+              console.error('❌ indexing error:', e.message);
+              process.exit(1);
             }
           }
           run();"
@@ -107,4 +109,4 @@ jobs:
         if: always()
         run: |
           curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml"
-          echo "✅ Sitemap pinged."
+          echo "✅ Sitemap pinged successfully."
