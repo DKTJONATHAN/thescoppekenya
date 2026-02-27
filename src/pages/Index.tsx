@@ -52,7 +52,6 @@ const Index = () => {
     });
   }, [viewCounts]);
 
-  // Strict filter: only posts published TODAY
   const isPostedToday = (dateStr: string | Date): boolean => {
     const postDate = new Date(dateStr);
     const today = new Date();
@@ -61,14 +60,19 @@ const Index = () => {
            postDate.getDate() === today.getDate();
   };
 
-  // Most viewed story posted TODAY only
   const topStory = useMemo(() => {
     const todaysPosts = allPostsWithViews.filter(post => isPostedToday(post.date));
     if (todaysPosts.length === 0) return null;
     return [...todaysPosts].sort((a, b) => b.views - a.views)[0];
   }, [allPostsWithViews]);
 
-  // Trending posts (excluding today's top for variety)
+  const recentPostsForBento = useMemo(() => {
+    const filtered = allPostsWithViews
+      .filter(p => p.slug !== topStory?.slug)
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    return filtered.slice(0, 6);
+  }, [allPostsWithViews, topStory]);
+
   const trendingPosts = useMemo(() => {
     return [...allPostsWithViews]
       .filter(p => p.slug !== topStory?.slug)
@@ -77,11 +81,13 @@ const Index = () => {
   }, [allPostsWithViews, topStory]);
 
   const displayedPosts = useMemo(() => {
-    const filtered = allPostsWithViews.filter(p => p.slug !== topStory?.slug);
+    const filtered = allPostsWithViews
+      .filter(p => p.slug !== topStory?.slug)
+      .filter(p => !recentPostsForBento.some(b => b.slug === p.slug));
     return filtered.slice(0, visibleCount);
-  }, [visibleCount, allPostsWithViews, topStory]);
+  }, [visibleCount, allPostsWithViews, topStory, recentPostsForBento]);
 
-  const hasMore = visibleCount < allPostsWithViews.length - (topStory ? 1 : 0);
+  const hasMore = visibleCount < displayedPosts.length + recentPostsForBento.length;
   const sentinelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -89,14 +95,14 @@ const Index = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setVisibleCount((prev) => Math.min(prev + POSTS_PER_PAGE, allPostsWithViews.length - (topStory ? 1 : 0)));
+          setVisibleCount((prev) => Math.min(prev + POSTS_PER_PAGE, allPostsWithViews.length - (topStory ? 1 : 0) - recentPostsForBento.length));
         }
       },
       { threshold: 0.1, rootMargin: "800px 0px 0px 0px" }
     );
     observer.observe(sentinelRef.current);
     return () => observer.disconnect();
-  }, [hasMore, allPostsWithViews.length, topStory]);
+  }, [hasMore, allPostsWithViews.length, topStory, recentPostsForBento.length]);
 
   return (
     <Layout>
@@ -108,17 +114,17 @@ const Index = () => {
 
       <CategoryBar />
 
-      {/* HERO - Strictly Today's Most Viewed Story */}
+      {/* FIXED HERO - Sharp Image No More Zoom Loss */}
       {topStory && (
-        <section className="relative h-[75vh] min-h-[520px] flex items-end overflow-hidden">
+        <section className="relative h-[60vh] min-h-[480px] flex items-end overflow-hidden">
           <img 
             src={topStory.image || topStory.coverImage || '/images/placeholder-hero.jpg'} 
             alt={topStory.title}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/60 to-black/90" />
           
-          <div className="relative container max-w-7xl mx-auto px-4 pb-20 z-10 text-white">
+          <div className="relative container max-w-7xl mx-auto px-4 pb-16 z-10 text-white">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-5 py-1.5 rounded-full text-sm mb-6">
               <TrendingUp className="w-4 h-4" />
               TODAY'S MOST VIEWED
@@ -156,6 +162,57 @@ const Index = () => {
         </section>
       )}
 
+      {/* NEW BENTO GRID - Most Recent Stories */}
+      {recentPostsForBento.length > 0 && (
+        <section className="py-12 bg-surface">
+          <div className="container max-w-7xl mx-auto px-4">
+            <h2 className="text-3xl font-serif font-bold mb-8 flex items-center gap-3">
+              <span className="w-1.5 h-9 bg-gradient-to-b from-primary to-purple-600 rounded-full" />
+              Fresh Off The Press
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              {/* Large wide card */}
+              <div className="md:col-span-2 md:row-span-2 relative group">
+                <ArticleCard post={recentPostsForBento[0]} />
+                <div className="absolute top-4 right-4 z-10">
+                  <Badge className="bg-black/70 backdrop-blur-md text-white border-0 flex items-center gap-1.5 px-3 py-1 shadow-lg">
+                    <Eye className="w-3.5 h-3.5" />
+                    {recentPostsForBento[0].views > 999 ? `${(recentPostsForBento[0].views / 1000).toFixed(1)}k` : recentPostsForBento[0].views}
+                  </Badge>
+                </div>
+              </div>
+
+              {/* Medium cards */}
+              {recentPostsForBento.slice(1, 3).map((post, index) => (
+                <div key={post.slug} className="relative group">
+                  <ArticleCard post={post} />
+                  <div className="absolute top-4 right-4 z-10">
+                    <Badge className="bg-black/70 backdrop-blur-md text-white border-0 flex items-center gap-1.5 px-3 py-1 shadow-lg">
+                      <Eye className="w-3.5 h-3.5" />
+                      {post.views > 999 ? `${(post.views / 1000).toFixed(1)}k` : post.views}
+                    </Badge>
+                  </div>
+                </div>
+              ))}
+
+              {/* Small cards */}
+              {recentPostsForBento.slice(3).map((post) => (
+                <div key={post.slug} className="relative group">
+                  <ArticleCard post={post} variant="compact" />
+                  <div className="absolute top-4 right-4 z-10">
+                    <Badge className="bg-black/70 backdrop-blur-md text-white border-0 flex items-center gap-1.5 px-3 py-1 shadow-lg">
+                      <Eye className="w-3.5 h-3.5" />
+                      {post.views > 999 ? `${(post.views / 1000).toFixed(1)}k` : post.views}
+                    </Badge>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="py-12 bg-surface/50 border-y border-divider">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-12 gap-12">
@@ -164,7 +221,7 @@ const Index = () => {
               <div className="flex items-center justify-between">
                 <h2 className="text-3xl font-serif font-bold text-foreground dark:text-white flex items-center gap-3">
                   <span className="w-1.5 h-9 bg-gradient-to-b from-primary to-purple-600 rounded-full" />
-                  Latest Za Ndani
+                  More Fresh Za Ndani
                 </h2>
               </div>
 
@@ -189,7 +246,7 @@ const Index = () => {
                   <Button
                     variant="outline"
                     size="lg"
-                    onClick={() => setVisibleCount((prev) => Math.min(prev + POSTS_PER_PAGE, allPostsWithViews.length - (topStory ? 1 : 0)))}
+                    onClick={() => setVisibleCount((prev) => Math.min(prev + POSTS_PER_PAGE, allPostsWithViews.length - (topStory ? 1 : 0) - recentPostsForBento.length))}
                     className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-6 rounded-2xl text-lg font-bold"
                   >
                     Load More Hot Stories
