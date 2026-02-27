@@ -18,25 +18,27 @@ jobs:
         id: changes
         run: |
           SITE_URL="https://zandani.co.ke"
-          # Find .md files changed in the last commit
+          
+          # Detect .md files changed in the last commit
           CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
           
           if [ -z "$CHANGED" ]; then
+            echo "📝 No post changes detected. Exiting gracefully."
             echo "count=0" >> $GITHUB_OUTPUT
             exit 0
           fi
 
-          # Initialize variables
           IJ_URLS="["
           GSC_LIST=""
           FIRST=true
           COUNT=0
           
           while IFS= read -r file; do
+            # Extract slug and format URL
             SLUG=$(basename "$file" .md)
             URL="${SITE_URL}/article/${SLUG}"
             
-            # 1. Build IndexJump JSON Array
+            # IndexJump JSON format
             if [ "$FIRST" = true ]; then
               IJ_URLS="${IJ_URLS}\"${URL}\""
               FIRST=false
@@ -44,44 +46,86 @@ jobs:
               IJ_URLS="${IJ_URLS},\"${URL}\""
             fi
             
-            # 2. Build GSC comma-separated list
+            # GSC list format
             GSC_LIST="${GSC_LIST}${URL},"
-            
             COUNT=$((COUNT+1))
-            echo "🔗 Detected: $URL"
           done <<< "$CHANGED"
           
-          # Close JSON and remove trailing comma from GSC list
+          # Finalize strings
           IJ_URLS="${IJ_URLS}]"
-          GSC_LIST=$(echo "$GSC_LIST" | sed 's/,$//')
+          GSC_LIST=$(echo "$GSC_LIST" | sed 's/,$//') # Remove trailing comma
           
-          # Save to outputs
           echo "ij_urls=${IJ_URLS}" >> $GITHUB_OUTPUT
           echo "gsc_urls=${GSC_LIST}" >> $GITHUB_OUTPUT
           echo "count=${COUNT}" >> $GITHUB_OUTPUT
 
-      - name: Submit to Google Indexing API
+      - name: Setup Node.js (For Google API)
         if: steps.changes.outputs.count > 0
-        uses: robingenz/action-google-indexing@v1
+        uses: actions/setup-node@v4
         with:
-          # Uses the JSON key from your GitHub Secrets
-          serviceAccountKey: ${{ secrets.GSC_JSON_KEY }}
-          urls: ${{ steps.changes.outputs.gsc_urls }}
+          node-version: '20'
+
+      - name: Install Google API Client
+        if: steps.changes.outputs.count > 0
+        run: npm install googleapis
+
+      - name: Submit directly to Google Indexing API
+        if: steps.changes.outputs.count > 0
+        env:
+          GSC_KEY: ${{ secrets.GSC_JSON_KEY }}
+          URLS: ${{ steps.changes.outputs.gsc_urls }}
+        run: |
+          # Save the JSON secret to a temporary file
+          echo "$GSC_KEY" > service_account.json
+          
+          # Run official Google API Node.js script
+          node -e "
+            const { google } = require('googleapis');
+            const keys = require('./service_account.json');
+            const urls = process.env.URLS.split(',');
+            
+            async function submitToGoogle() {
+              const jwtClient = new google.auth.JWT(
+                keys.client_email,
+                null,
+                keys.private_key,
+                ['https://www.googleapis.com/auth/indexing'],
+                null
+              );
+              
+              await jwtClient.authorize();
+              const indexing = google.indexing({ version: 'v3', auth: jwtClient });
+              
+              for (const url of urls) {
+                if (!url) continue;
+                try {
+                  const res = await indexing.urlNotifications.publish({
+                    requestBody: { url: url, type: 'URL_UPDATED' }
+                  });
+                  console.log('✅ Google GSC Accepted:', url);
+                } catch (e) {
+                  console.error('❌ Google GSC Failed for:', url, '| Error:', e.message);
+                  process.exit(1);
+                }
+              }
+            }
+            submitToGoogle();
+          "
 
       - name: Submit to IndexJump
         if: steps.changes.outputs.count > 0
         env:
           IJ_KEY: ${{ secrets.INDEXJUMP_API_KEY }}
         run: |
-          echo "🚀 Submitting ${{ steps.changes.outputs.count }} URLs to IndexJump..."
+          echo "🚀 Submitting to IndexJump..."
           curl -s -X POST "https://api.indexjump.com/index/bulk?token=$IJ_KEY" \
           -H "Content-Type: application/json" \
           -d "{\"urls\": ${{ steps.changes.outputs.ij_urls }}}"
+          echo -e "\n✅ IndexJump step completed."
 
       - name: Ping Google Sitemap
         if: always()
         run: |
-          echo "🌐 Notifying Google of Sitemap update..."
-          # Standard Google Sitemap Ping
+          echo "🌐 Notifying Google of general Sitemap update..."
           curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml"
-          echo "✅ Sitemap pinged successfully."
+          echo -e "\n✅ Sitemap pinged successfully."
