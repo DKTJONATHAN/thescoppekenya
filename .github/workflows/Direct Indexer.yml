@@ -18,7 +18,6 @@ jobs:
         id: urls
         run: |
           SITE_URL="https://zandani.co.ke"
-          # Get files changed in the last commit
           FILES=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
           
           if [ -z "$FILES" ]; then
@@ -32,7 +31,6 @@ jobs:
             LIST="${LIST}${SITE_URL}/article/${SLUG},"
           done
           
-          # Clean trailing comma and save
           echo "list=${LIST%,}" >> $GITHUB_OUTPUT
           echo "count=1" >> $GITHUB_OUTPUT
 
@@ -49,14 +47,23 @@ jobs:
       - name: Official Google API Submission
         if: steps.urls.outputs.count > 0
         env:
-          GSC_KEY: ${{ secrets.GSC_JSON_KEY }}
+          GSC_KEY_RAW: ${{ secrets.GSC_JSON_KEY }}
           URL_LIST: ${{ steps.urls.outputs.list }}
         run: |
+          # Safely write the multi-line secret to a file using a Here-Doc
+          cat <<EOF > service_account.json
+          $GSC_KEY_RAW
+          EOF
+
           node -e "
           const { google } = require('googleapis');
+          const fs = require('fs');
+          
           async function run() {
             try {
-              const keys = JSON.parse(process.env.GSC_KEY);
+              // Read the file we just created
+              const keys = JSON.parse(fs.readFileSync('./service_account.json', 'utf8'));
+              
               const auth = new google.auth.JWT(
                 keys.client_email, null, keys.private_key,
                 ['https://www.googleapis.com/auth/indexing'], null
@@ -66,7 +73,8 @@ jobs:
               const urls = process.env.URL_LIST.split(',');
 
               for (const url of urls) {
-                const res = await indexing.urlNotifications.publish({
+                if (!url) continue;
+                await indexing.urlNotifications.publish({
                   requestBody: { url: url, type: 'URL_UPDATED' }
                 });
                 console.log('✅ Google Indexing Notified:', url);
@@ -78,9 +86,8 @@ jobs:
           }
           run();"
 
-      - name: Sitemap Ping (Final Step)
+      - name: Sitemap Ping
         if: always()
         run: |
-          echo "🚀 Pinging Sitemap..."
           curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml"
           echo "✅ Google Sitemap Refresh Requested."
