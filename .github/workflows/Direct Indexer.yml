@@ -1,0 +1,81 @@
+name: SEO Auto-Indexing (GSC & IndexJump)
+
+on:
+  push:
+    paths:
+      - 'content/posts/**.md'
+
+jobs:
+  index-and-ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect changed posts
+        id: changes
+        run: |
+          SITE_URL="https://zandani.co.ke"
+          # Get the list of changed markdown files
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
+          
+          if [ -z "$CHANGED" ]; then
+            echo "count=0" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          # Build URL lists
+          IJ_URLS="["
+          GSC_URLS=""
+          FIRST=true
+          COUNT=0
+          
+          while IFS= read -r file; do
+            SLUG=$(basename "$file" .md)
+            URL="${SITE_URL}/article/${SLUG}"
+            
+            # Format for Google (one URL per line)
+            GSC_URLS="${GSC_URLS}${URL}\n"
+            
+            # Format for IndexJump (JSON array)
+            if [ "$FIRST" = true ]; then
+              IJ_URLS="${IJ_URLS}\"${URL}\""
+              FIRST=false
+            else
+              IJ_URLS="${IJ_URLS},\"${URL}\""
+            fi
+            COUNT=$((COUNT+1))
+          done <<< "$CHANGED"
+          
+          IJ_URLS="${IJ_URLS}]"
+          
+          # Set outputs for next steps
+          echo "ij_urls=${IJ_URLS}" >> $GITHUB_OUTPUT
+          echo -e "gsc_urls=${GSC_URLS}" >> $GITHUB_OUTPUT
+          echo "count=${COUNT}" >> $GITHUB_OUTPUT
+
+      - name: Submit to Google Indexing API
+        if: steps.changes.outputs.count > 0
+        uses: central-ping/google-indexing-api-action@v1
+        with:
+          service_account_key: ${{ secrets.GSC_JSON_KEY }}
+          urls: ${{ steps.changes.outputs.gsc_urls }}
+
+      - name: Submit to IndexJump
+        if: steps.changes.outputs.count > 0
+        env:
+          IJ_KEY: ${{ secrets.INDEXJUMP_API_KEY }}
+        run: |
+          echo "🚀 Submitting to IndexJump..."
+          curl -s -X POST "https://api.indexjump.com/index/bulk?token=$IJ_KEY" \
+          -H "Content-Type: application/json" \
+          -d "{\"urls\": ${{ steps.changes.outputs.ij_urls }}}"
+
+      - name: Ping Google Sitemap
+        if: always() # Runs even if the specific post indexing fails
+        run: |
+          echo "🌐 Notifying Google of Sitemap update..."
+          curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml"
+          echo "✅ Sitemap pinged successfully."
