@@ -1,4 +1,4 @@
-name: SEO Auto-Indexing (GSC & IndexJump)
+name: Direct Google Indexing
 
 on:
   push:
@@ -6,107 +6,81 @@ on:
       - 'content/posts/**.md'
 
 jobs:
-  index-and-ping:
+  google-index:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Code
         uses: actions/checkout@v4
         with:
           fetch-depth: 2
 
-      - name: Detect changed posts
-          # [Existing logic for detecting URLs - remains the same]
-        id: changes
+      - name: Detect New/Updated URLs
+        id: urls
         run: |
           SITE_URL="https://zandani.co.ke"
-          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
-          if [ -z "$CHANGED" ]; then
+          # Get files changed in the last commit
+          FILES=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
+          
+          if [ -z "$FILES" ]; then
             echo "count=0" >> $GITHUB_OUTPUT
             exit 0
           fi
-          IJ_URLS="["
-          GSC_LIST=""
-          FIRST=true
-          COUNT=0
-          while IFS= read -r file; do
+
+          LIST=""
+          for file in $FILES; do
             SLUG=$(basename "$file" .md)
-            URL="${SITE_URL}/article/${SLUG}"
-            if [ "$FIRST" = true ]; then
-              IJ_URLS="${IJ_URLS}\"${URL}\""
-              FIRST=false
-            else
-              IJ_URLS="${IJ_URLS},\"${URL}\""
-            fi
-            GSC_LIST="${GSC_LIST}${URL},"
-            COUNT=$((COUNT+1))
-          done <<< "$CHANGED"
-          IJ_URLS="${IJ_URLS}]"
-          GSC_LIST=$(echo "$GSC_LIST" | sed 's/,$//')
-          echo "ij_urls=${IJ_URLS}" >> $GITHUB_OUTPUT
-          echo "gsc_urls=${GSC_LIST}" >> $GITHUB_OUTPUT
-          echo "count=${COUNT}" >> $GITHUB_OUTPUT
+            LIST="${LIST}${SITE_URL}/article/${SLUG},"
+          done
+          
+          # Clean trailing comma and save
+          echo "list=${LIST%,}" >> $GITHUB_OUTPUT
+          echo "count=1" >> $GITHUB_OUTPUT
 
       - name: Setup Node.js
-        if: steps.changes.outputs.count > 0
+        if: steps.urls.outputs.count > 0
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Install Google API Client
-        if: steps.changes.outputs.count > 0
+      - name: Install Google Library
+        if: steps.urls.outputs.count > 0
         run: npm install googleapis
 
-      - name: Submit directly to Google Indexing API
-        if: steps.changes.outputs.count > 0
+      - name: Official Google API Submission
+        if: steps.urls.outputs.count > 0
         env:
-          # Pass the JSON directly into the environment
-          GSC_JSON_RAW: ${{ secrets.GSC_JSON_KEY }}
-          URLS: ${{ steps.changes.outputs.gsc_urls }}
+          GSC_KEY: ${{ secrets.GSC_JSON_KEY }}
+          URL_LIST: ${{ steps.urls.outputs.list }}
         run: |
           node -e "
           const { google } = require('googleapis');
-          const urls = process.env.URLS.split(',');
-          
           async function run() {
             try {
-              // Parse the JSON directly from the environment variable string
-              const keys = JSON.parse(process.env.GSC_JSON_RAW);
-              
+              const keys = JSON.parse(process.env.GSC_KEY);
               const auth = new google.auth.JWT(
-                keys.client_email,
-                null,
-                keys.private_key,
-                ['https://www.googleapis.com/auth/indexing'],
-                null
+                keys.client_email, null, keys.private_key,
+                ['https://www.googleapis.com/auth/indexing'], null
               );
               
               const indexing = google.indexing({ version: 'v3', auth });
-              
+              const urls = process.env.URL_LIST.split(',');
+
               for (const url of urls) {
-                if (!url) continue;
                 const res = await indexing.urlNotifications.publish({
                   requestBody: { url: url, type: 'URL_UPDATED' }
                 });
-                console.log('✅ Google GSC Accepted:', url);
+                console.log('✅ Google Indexing Notified:', url);
               }
-            } catch (e) {
-              console.error('❌ indexing error:', e.message);
+            } catch (err) {
+              console.error('❌ Direct Indexing Failed:', err.message);
               process.exit(1);
             }
           }
           run();"
 
-      - name: Submit to IndexJump
-        if: steps.changes.outputs.count > 0
-        env:
-          IJ_KEY: ${{ secrets.INDEXJUMP_API_KEY }}
-        run: |
-          curl -s -X POST "https://api.indexjump.com/index/bulk?token=$IJ_KEY" \
-          -H "Content-Type: application/json" \
-          -d "{\"urls\": ${{ steps.changes.outputs.ij_urls }}}"
-
-      - name: Ping Google Sitemap
+      - name: Sitemap Ping (Final Step)
         if: always()
         run: |
+          echo "🚀 Pinging Sitemap..."
           curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml"
-          echo "✅ Sitemap pinged successfully."
+          echo "✅ Google Sitemap Refresh Requested."
