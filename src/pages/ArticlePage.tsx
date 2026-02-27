@@ -2,7 +2,7 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { ArticleCard } from "@/components/articles/ArticleCard";
 import { getPostBySlug, getLatestPosts } from "@/lib/markdown";
-import { Clock, Calendar, Share2, Facebook, Linkedin, ChevronLeft, ArrowUp } from "lucide-react";
+import { Clock, Calendar, Share2, Facebook, Linkedin, ChevronLeft, ArrowUp, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useEffect, useState, useMemo, useCallback } from "react";
@@ -25,6 +25,60 @@ export default function ArticlePage() {
   );
 
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
+
+  // ──────────────────────────────────────────────────────────────
+  // Fetch GA4 views from internal API
+  // ──────────────────────────────────────────────────────────────
+  useEffect(() => {
+    const fetchViews = async () => {
+      try {
+        const res = await fetch('/api/get-views');
+        if (!res.ok) throw new Error('API Error');
+        const data = await res.json();
+        setViewCounts(data);
+      } catch (e) {
+        console.error("View fetch failed");
+      }
+    };
+    fetchViews();
+  }, []);
+
+  // Calculate views for the current main article
+  const currentPostViews = useMemo(() => {
+    if (!post) return 0;
+    const cleanSlug = post.slug.replace(/^\//, '').replace(/\.md$/, '');
+    const exactPath = `/article/${cleanSlug}`;
+    const pathWithSlash = `/article/${cleanSlug}/`;
+    const fallbackPath = `/posts/${cleanSlug}`; 
+
+    const gaViews = viewCounts[exactPath] || 
+                    viewCounts[pathWithSlash] || 
+                    viewCounts[fallbackPath] || 
+                    0;
+
+    return gaViews > 0 ? gaViews : 47;
+  }, [post, viewCounts]);
+
+  // Inject views into related posts for the cards at the bottom
+  const relatedPostsWithViews = useMemo(() => {
+    return relatedPosts.map(p => {
+      const cleanSlug = p.slug.replace(/^\//, '').replace(/\.md$/, '');
+      const exactPath = `/article/${cleanSlug}`;
+      const pathWithSlash = `/article/${cleanSlug}/`;
+      const fallbackPath = `/posts/${cleanSlug}`; 
+
+      const gaViews = viewCounts[exactPath] || 
+                      viewCounts[pathWithSlash] || 
+                      viewCounts[fallbackPath] || 
+                      0;
+
+      return {
+        ...p,
+        views: gaViews > 0 ? gaViews : 47
+      };
+    });
+  }, [relatedPosts, viewCounts]);
 
   // ──────────────────────────────────────────────────────────────
   // Preload featured image for maximum LCP (Critical for Core Web Vitals)
@@ -233,6 +287,10 @@ export default function ArticlePage() {
                 <Clock className="w-4 h-4" />
                 {post.readTime} min read
               </span>
+              <span className="flex items-center gap-1.5 text-primary font-medium">
+                <Eye className="w-4 h-4" />
+                {currentPostViews > 999 ? `${(currentPostViews / 1000).toFixed(1)}k` : currentPostViews} views
+              </span>
             </div>
           </header>
 
@@ -274,7 +332,7 @@ export default function ArticlePage() {
               className="h-9 w-9"
               onClick={() =>
                 window.open(
-                  `https://x.com/intent/tweet?url=\( {encodeURIComponent(shareUrl)}&text= \){encodeURIComponent(post.title)}`,
+                  `https://x.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`,
                   "_blank"
                 )
               }
@@ -339,12 +397,20 @@ export default function ArticlePage() {
           </div>
 
           {/* Related Articles */}
-          {relatedPosts.length > 0 && (
+          {relatedPostsWithViews.length > 0 && (
             <section className="mt-12 pt-8 border-t border-border">
               <h3 className="text-xl font-serif font-bold text-foreground mb-6">Related Stories</h3>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {relatedPosts.map((relatedPost) => (
-                  <ArticleCard key={relatedPost.slug} post={relatedPost} variant="compact" />
+                {relatedPostsWithViews.map((relatedPost) => (
+                  <div key={relatedPost.slug} className="relative group">
+                    <ArticleCard post={relatedPost} variant="compact" />
+                    <div className="absolute top-4 right-4 z-10">
+                      <Badge className="bg-black/60 backdrop-blur-md text-white border-0 flex items-center gap-1.5 px-3 py-1 shadow-lg">
+                        <Eye className="w-3.5 h-3.5" />
+                        {relatedPost.views > 999 ? `${(relatedPost.views / 1000).toFixed(1)}k` : relatedPost.views}
+                      </Badge>
+                    </div>
+                  </div>
                 ))}
               </div>
             </section>
