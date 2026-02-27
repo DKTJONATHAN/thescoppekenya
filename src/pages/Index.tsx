@@ -2,11 +2,9 @@ import { useEffect, useState, useMemo, useRef } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { CategoryBar } from "@/components/articles/CategoryBar";
 import { ArticleCard } from "@/components/articles/ArticleCard";
-import { FeaturedStoryCard } from "@/components/articles/FeaturedStoryCard";
-import { TrendingSidebar } from "@/components/articles/TrendingSidebar";
-import { getTodaysTopStory, getSecondaryPosts, getAllPosts, categories } from "@/lib/markdown";
+import { getTodaysTopStory, getSecondaryPosts, getAllPosts } from "@/lib/markdown";
 import { Link } from "react-router-dom";
-import { ArrowRight, TrendingUp, Zap, Flame, Clock, Newspaper, Eye } from "lucide-react";
+import { ArrowRight, TrendingUp, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Helmet } from "react-helmet-async";
@@ -15,8 +13,6 @@ const POSTS_PER_PAGE = 12;
 
 const allPostsFromMarkdown = getAllPosts();
 const topStory = getTodaysTopStory();
-const secondaryPosts = getSecondaryPosts(topStory?.slug, 4);
-const tickerPosts = allPostsFromMarkdown.slice(0, 3);
 
 const Index = () => {
   const [visibleCount, setVisibleCount] = useState(POSTS_PER_PAGE);
@@ -40,21 +36,16 @@ const Index = () => {
   // Combine markdown data with live view counts
   const allPostsWithViews = useMemo(() => {
     return allPostsFromMarkdown.map(post => {
-      // 1. Clean the slug (removes accidental slashes or .md extensions)
       const cleanSlug = post.slug.replace(/^\//, '').replace(/\.md$/, '');
-      
-      // 2. Check multiple path variations that GA4 might use
       const exactPath = `/article/${cleanSlug}`;
       const pathWithSlash = `/article/${cleanSlug}/`;
       const fallbackPath = `/posts/${cleanSlug}`; 
-      
-      // 3. Grab the actual views from our JSON data
+
       const gaViews = viewCounts[exactPath] || 
                       viewCounts[pathWithSlash] || 
                       viewCounts[fallbackPath] || 
                       0;
-      
-      // 4. If we have real views, show them! If 0, use the 47 fallback.
+
       const displayViews = gaViews > 0 ? gaViews : 47;
 
       return {
@@ -64,11 +55,11 @@ const Index = () => {
     });
   }, [viewCounts]);
 
-  // Sort posts for the Trending Sidebar (Highest views first)
+  // Sort posts for the Trending Sidebar
   const trendingPosts = useMemo(() => {
     return [...allPostsWithViews]
       .sort((a, b) => b.views - a.views)
-      .slice(0, 6); // Take top 6
+      .slice(0, 6);
   }, [allPostsWithViews]);
 
   const displayedPosts = useMemo(
@@ -100,24 +91,6 @@ const Index = () => {
         <meta name="description" content="Hottest Kenya celebrity gossip and trending news." />
         <link rel="canonical" href="https://zandani.co.ke" />
       </Helmet>
-
-      {/* Ticker */}
-      <div className="bg-surface border-b border-divider py-2 overflow-hidden">
-        <div className="container max-w-7xl mx-auto px-4 flex items-center gap-4">
-          <Badge variant="default" className="gradient-primary text-primary-foreground border-0 rounded-sm font-bold whitespace-nowrap">
-            ZA NDANI
-          </Badge>
-          <div className="flex-1 overflow-hidden whitespace-nowrap">
-            <div className="flex items-center animate-marquee hover:pause">
-              {[...tickerPosts, ...tickerPosts].map((post, idx) => (
-                <span key={idx} className="inline-flex items-center">
-                  • {post.title} <span className="mx-8">•</span>
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
 
       <CategoryBar />
 
@@ -164,7 +137,7 @@ const Index = () => {
               )}
             </div>
 
-            {/* Sidebar - Now Dynamic */}
+            {/* Sidebar */}
             <div className="lg:col-span-1 space-y-8">
               <div className="bg-surface rounded-3xl p-6 border border-divider shadow-sm">
                 <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
@@ -179,9 +152,9 @@ const Index = () => {
                           {post.title}
                         </h4>
                         <div className="flex items-center gap-3 text-xs text-muted-foreground">
-                           <span className="flex items-center gap-1"><Eye className="w-3 h-3" /> {post.views}</span>
-                           <span>•</span>
-                           <span>{post.date}</span>
+                            <span className="flex items-center gap-1"><Eye className="w-3 h-3" /> {post.views}</span>
+                            <span>•</span>
+                            <span>{post.date}</span>
                         </div>
                       </div>
                     </Link>
@@ -192,12 +165,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      <style dangerouslySetInnerHTML={{ __html: `
-        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-        .animate-marquee { display: flex; animation: marquee 30s linear infinite; }
-        .animate-marquee:hover { animation-play-state: paused; }
-      ` }} />
     </Layout>
   );
 };
