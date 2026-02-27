@@ -15,7 +15,7 @@ permissions:
 env:
   DEFAULT_BRANCH: main
   POSTS_DIR: content/posts
-  MEMORY_FILE: .github/scrape_memory.json
+  MEMORY_FILE: .github/memory_african_gossip.json
 
 jobs:
   scrape-and-publish:
@@ -181,16 +181,21 @@ jobs:
           # --- 4. PROCESS ARTICLES ---
           full_content, final_hash, target_title, target_image = None, None, None, None
           for a in articles:
-              u_hash = hashlib.md5(a['url'].encode()).hexdigest()
+              # Fix for repeating stories: Hash the clean title instead of the URL
+              clean_title = re.sub(r' - [^-]+$', '', a['title']).strip()
+              u_hash = hashlib.md5(clean_title.encode('utf-8')).hexdigest()
+              
               if u_hash in memory: continue
+              
               result = scrape_article_free(a['url'])
               if not result: continue
+              
               text, img = result
               if text and len(text) > 300:
                   full_content = text
                   target_image = img
                   final_hash = u_hash
-                  target_title = re.sub(r' - [^-]+$', '', a['title']).strip()
+                  target_title = clean_title
                   break 
 
           if not full_content: 
@@ -408,4 +413,4 @@ jobs:
         with:
           commit_message: "content: fresh african entertainment gossip via direct links 🕵️"
           branch: ${{ env.DEFAULT_BRANCH }}
-          file_pattern: 'content/posts/*.md .github/scrape_memory.json'
+          file_pattern: 'content/posts/*.md .github/memory_african_gossip.json'
