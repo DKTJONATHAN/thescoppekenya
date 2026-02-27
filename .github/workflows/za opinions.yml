@@ -196,15 +196,8 @@ jobs:
                               lines = [line.strip() for line in body.get_text(separator='\n').split('\n') if len(line.strip()) > 50]
                               article_text = "\n\n".join(lines)
 
-                      # --- IMAGE EXTRACTION ---
-                      img_url = ""
-                      for meta in soup.find_all('meta'):
-                          if meta.get('property') in ['og:image', 'twitter:image']:
-                              img_url = meta.get('content', '')
-                              if img_url: break
-
                       print(f"   ✅ Extracted {len(article_text)} characters of text")
-                      return article_text, img_url, page_title
+                      return article_text, None, page_title # Force image to None as we purely use Unsplash
 
                   except Exception as e:
                       print(f"   Scrape failed completely: {e}")
@@ -212,7 +205,7 @@ jobs:
                   finally:
                       browser.close()
 
-          full_raw_text, final_hash, target_title, target_image = None, None, None, None
+          full_raw_text, final_hash, target_title = None, None, None
           for link in article_links:
               u_hash = hashlib.md5(link.encode()).hexdigest()
               if u_hash in memory: continue
@@ -220,7 +213,6 @@ jobs:
               text, img, title = scrape_article_free(link)
               if text and len(text) > 300:
                   full_raw_text = text
-                  target_image = img
                   final_hash = u_hash
                   target_title = title if title else "Op-Ed Opinion"
                   break 
@@ -245,16 +237,32 @@ jobs:
                   except: continue
               return context
 
-          def get_real_image(query):
+          def get_real_image(two_word_query, three_word_query):
               access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
-              fallback = "https://images.unsplash.com/photo-1455390582262-044cdead27d8?w=1200"
-              if not access_key: return fallback
-              url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}"
+              hard_fallback = "https://images.unsplash.com/photo-1455390582262-044cdead27d8?w=1200"
+              if not access_key: return hard_fallback
+              
+              base_url = "https://api.unsplash.com/photos/random"
+              
+              # Force exactly two words
+              qw2 = " ".join(str(two_word_query).split()[:2])
+              if not qw2: qw2 = "kenya news"
+              
               try:
-                  resp = requests.get(url, timeout=10)
-                  if resp.status_code == 200: return resp.json()['urls']['regular']
+                  resp1 = requests.get(base_url, params={"query": qw2, "orientation": "landscape", "client_id": access_key}, timeout=10)
+                  if resp1.status_code == 200: return resp1.json()['urls']['regular']
               except: pass
-              return fallback
+              
+              # Fallback with exactly three words
+              qw3 = " ".join(str(three_word_query).split()[:3])
+              if not qw3: qw3 = "latest kenya news"
+              
+              try:
+                  resp2 = requests.get(base_url, params={"query": qw3, "orientation": "landscape", "client_id": access_key}, timeout=10)
+                  if resp2.status_code == 200: return resp2.json()['urls']['regular']
+              except: pass
+              
+              return hard_fallback
 
           def dash_scrubber(text):
               if not text: return ""
@@ -307,7 +315,8 @@ jobs:
           SLUG: [exact-keyword-slug-separated-by-hyphens]
           EXCERPT: [Snippet under 160 characters featuring exact keywords]
           TAGS: [comma, separated, english, seo, tags]
-          IMAGE_KEYWORD: [search query related to the topic]
+          IMAGE_KEYWORD_2_WORDS: [Exactly two words describing the image]
+          IMAGE_KEYWORD_3_WORDS: [Exactly three words describing the image as a fallback]
           BODY:
           [Article text containing the internal link. 
           Structure: Start with an H2 heading containing the exact keywords. Follow immediately with a crisp, 40-word neutral answer paragraph for Google Snippets. Then continue with natural subheadings that also reuse the exact keywords.]
@@ -350,9 +359,9 @@ jobs:
           full_text = re.sub(r'^```(?:markdown|text|html)?\n', '', full_text, flags=re.IGNORECASE)
           full_text = re.sub(r'\n```$', '', full_text).strip()
 
-          parsed = {"TITLE": "", "SLUG": "", "EXCERPT": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": ""}
+          parsed = {"TITLE": "", "SLUG": "", "EXCERPT": "", "TAGS": "", "IMAGE_KEYWORD_2_WORDS": "", "IMAGE_KEYWORD_3_WORDS": "", "BODY": ""}
 
-          section_matches = re.findall(r'^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD):\s*(.*)', full_text, re.MULTILINE | re.IGNORECASE)
+          section_matches = re.findall(r'^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD_2_WORDS|IMAGE_KEYWORD_3_WORDS):\s*(.*)', full_text, re.MULTILINE | re.IGNORECASE)
           for key, value in section_matches:
               parsed[key.upper()] = value.strip()
 
@@ -362,13 +371,13 @@ jobs:
           else:
               parsed["BODY"] = full_text.split("BODY:", 1)[-1].strip() if "BODY:" in full_text else full_text
 
-          parsed["BODY"] = re.sub(r'^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD|BODY):\s*.*$', '', parsed["BODY"], flags=re.MULTILINE | re.IGNORECASE).strip()
+          parsed["BODY"] = re.sub(r'^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD_2_WORDS|IMAGE_KEYWORD_3_WORDS|BODY):\s*.*$', '', parsed["BODY"], flags=re.MULTILINE | re.IGNORECASE).strip()
           parsed["BODY"] = dash_scrubber(parsed["BODY"]).strip()
 
           tags_list = [t.strip().replace('"', '') for t in parsed["TAGS"].split(",") if t.strip()]
           tags_str = ', '.join([f'"{t}"' for t in tags_list]) if tags_list else '"opinion", "commentary", "kenya"'
 
-          final_image_url = target_image if target_image else get_real_image(parsed.get('IMAGE_KEYWORD') or target_title)
+          final_image_url = get_real_image(parsed.get('IMAGE_KEYWORD_2_WORDS', ''), parsed.get('IMAGE_KEYWORD_3_WORDS', ''))
 
           final_file = textwrap.dedent(f"""\
           ---
