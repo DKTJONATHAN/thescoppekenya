@@ -1,0 +1,30 @@
+---
+title: "Leaked Kenyan Passport Scandal: Foreigners Including RSF Linked Figures and Wicknell Chivayo Issued Passports Under Ruto Administration"
+slug: "leaked-kenyan-passport-scandal-foreigners-including-rsf-linked-figures-and-wicknell-chivayo-issued-passports-under-ruto-administration"
+excerpt: "Leaked Kenyan Passport Scandal: Foreigners Including RSF Linked Figures and Wicknell Chivayo Issued Passports Under Ruto Administration"
+author: "The Scoop KE"
+image: "https://pearlradio.co.ke/wp-content/uploads/2022/10/GENERATION-PASS.jpg"
+category: "News"
+date: "2026-02-27"
+tags: [Kenyan Passport, Kenyan passport scandle, corruption, RSF, William Ruto]
+---
+
+A leaked internal document from Kenya's Directorate of Immigration Services has ignited fierce public outrage, exposing what appears to be the irregular issuance of Kenyan passports to dozens of foreign nationals during President William Ruto's administration. The document, shared publicly by activist and whistleblower Boniface Mwangi on social media around February 26, 2026, lists tracking IDs, names, application types (predominantly new ordinary passports), and processing dates. Many entries reportedly bypassed standard legal requirements for foreigners seeking Kenyan citizenship or passports.
+
+Kenyan law typically demands at least seven years of continuous residency, demonstrated fluency in English or Swahili, evidence of meaningful economic or social contributions to the country, and official publication in the Kenya Gazette for naturalization processes. Passports for non-citizens follow strict vetting, yet the leaked list suggests VIP express handling, allegedly ordered directly from State House and processed under Director General of Immigration Evelyn Cheluget. Questions swirl about whether these applications used legitimate eCitizen accounts or exploited a "zero token" mechanism to skip treasury payments.
+
+The list highlights around 30 to 32 individuals, with a heavy concentration of Sudanese-origin names, alongside other foreign figures. Prominent cases include family members tied to Sudan's Rapid Support Forces (RSF), a paramilitary group led by Mohamed Hamdan Dagalo, widely known as Hemedti. Hemedti and the RSF face international accusations of war crimes, atrocities in Darfur, and involvement in Sudan's ongoing conflict, including sieges and human rights violations. The United States, European Union, and United Nations have imposed sanctions on key RSF figures for sustaining violence, weapons procurement, and crimes against humanity.
+
+One standout entry is Algoney Hamdan Dagalo (also listed as Algoney Musa), the younger brother of Hemedti. His new ordinary passport was reportedly loaded on August 27, 2024, with number AK1586127. Recent U.S. Treasury updates confirm he holds this Kenyan passport alongside an Emirati ID, while leading arms procurement efforts for the RSF through UAE-linked businesses. Other Hamdan family members appear multiple times: Mayada Hamdan (loaded February 14, 2025), Abdaraheem Hamdan (February 12, 2025), Zahraa/Zahra Hamdan and Zarwa/Zariwa Hamdan (both September 18, 2024), Musa Hamdan Musa (August 27, 2024), Adil Hamdan (September 18, 2024), and additional relatives or associates like Elgoony Ahmed with renewals and new issuances.
+
+Additional Sudanese-linked names on the document include Omar Bashir Mohamed Manis/Yunis (renewal or new in February 2026), Shareif Mohammed Osman Shareif Suleiman, Taha Osman Ishag Adam, Siddig Elsadig Elsiddig Elmahdi, Samy Ahmed, Mohamed Eldawi, and Hassabo Mohammed. These span loading dates from 2024 into early 2026.
+
+Another high-profile name is Zimbabwean businessman Wicknell Munodaani Chivayo (Tracking ID 1111685723), whose new ordinary passport was loaded on July 8, 2025. Chivayo has a controversial history, including a 2004 fraud conviction in Zimbabwe and ongoing major graft investigations tied to multimillion-dollar deals, including gold and electoral supplies. He has visited Kenya frequently, meeting President Ruto and Deputy President Kithure Kindiki at State House on January 11, 2026. Critics point to his presence in Eldoret and allege the passport could enable involvement in supplying election materials to Kenya's Independent Electoral and Boundaries Commission ahead of the 2027 general elections.
+
+Boniface Mwangi described the situation in stark terms, stating that Kenyan passports, a symbol of national identity, are being handed out to warlords and questionable figures for minimal value. He emphasized the risk to ordinary Kenyans, who may now face heightened scrutiny and suspicion at international borders due to the devaluation of the document. Mwangi called for immediate revocation of these passports, dismissal of implicated officials, thorough investigations, and prosecutions.
+
+Former Chief Justice David Maraga weighed in, insisting Kenyan citizenship must never be granted at the whim of those in power. Former Public Service Cabinet Secretary Justin Muturi had earlier questioned Chivayo's access to high-level meetings. Opposition voices and social media users have amplified demands for parliamentary action, including impeachment proceedings against President Ruto or an emergency session to address the matter.
+
+The scandal unfolds against a backdrop of recent arrests in passport cartels and broader concerns over corruption in document issuance. Kenya's passport already ranks moderately on global mobility indices, and fears are growing that this controversy could trigger further downgrades or visa restrictions from other countries. Social media platforms in Kenya are flooded with discussions, with many warning that the Kenyan passport risks being viewed with the same suspicion as those from certain high-risk nations.
+
+As of February 27, 2026, neither the Ministry of Interior nor the Directorate of Immigration has issued an official response, denial, or confirmation. The story continues to evolve rapidly, with mounting pressure for transparency and accountability from civil society, political figures, and the public.
