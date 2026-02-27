@@ -103,14 +103,38 @@ function normalizeCategory(rawCategory: string): string {
 // Helper to safely parse dates across all browsers (especially older Safari)
 function getSafeTime(dateStr: string): number {
   if (!dateStr) return 0;
-  
+
   // Standard parse attempt
   let time = new Date(dateStr).getTime();
   if (!isNaN(time)) return time;
-  
+
   // Fallback for Safari's strict parsing (e.g., changing YYYY-MM-DD HH:mm:ss to YYYY/MM/DD HH:mm:ss)
   time = new Date(dateStr.replace(/-/g, '/').replace('T', ' ')).getTime();
   return isNaN(time) ? 0 : time;
+}
+
+// Custom universal fallback parser for extreme legacy browsers (Apollo 2, old WebKit, etc.)
+function fallbackMarkdownToHtml(markdown: string): string {
+  if (!markdown) return "";
+  let html = markdown;
+
+  // Process standard Markdown syntax using basic, universally supported Regex
+  html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
+  html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
+  html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+  html = html.replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>');
+  html = html.replace(/\*(.*?)\*/gim, '<em>$1</em>');
+  html = html.replace(/\[([^\[]+)\]\(([^\)]+)\)/gim, '<a href="$2">$1</a>');
+
+  // Wrap text blocks in paragraph tags
+  const blocks = html.split(/\n\n+/);
+  html = blocks.map(block => {
+    const t = block.trim();
+    if (t.startsWith('<h')) return t; // Prevent wrapping headers in paragraphs
+    return `<p>${t.replace(/\n/g, '<br />')}</p>`;
+  }).join('\n');
+
+  return html;
 }
 
 export function getAllPosts(): Post[] {
@@ -132,13 +156,13 @@ export function getAllPosts(): Post[] {
       const category = normalizeCategory(frontmatter.category || 'News');
       const date = frontmatter.date || new Date().toISOString().split('T')[0];
 
-      // Isolate marked() so a regex error on older browsers does not discard the entire post
+      // Isolate marked() and apply our universal fallback parser if it fails
       let htmlContent = "";
       try {
         htmlContent = marked(content) as string;
       } catch (markedError) {
-        console.warn(`Markdown parser failed on older browser for ${slug}:`, markedError);
-        htmlContent = "<p>Content cannot be fully displayed on this browser version.</p>";
+        console.warn(`Modern markdown parser failed on legacy browser for ${slug}, switching to fallback.`);
+        htmlContent = fallbackMarkdownToHtml(content);
       }
 
       posts.push({
