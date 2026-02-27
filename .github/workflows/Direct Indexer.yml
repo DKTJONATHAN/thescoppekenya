@@ -18,7 +18,7 @@ jobs:
         id: changes
         run: |
           SITE_URL="https://zandani.co.ke"
-          # Get the list of changed markdown files
+          # Find .md files changed in the last commit
           CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
           
           if [ -z "$CHANGED" ]; then
@@ -26,9 +26,9 @@ jobs:
             exit 0
           fi
 
-          # Build URL lists
+          # Initialize variables
           IJ_URLS="["
-          GSC_URLS=""
+          GSC_LIST=""
           FIRST=true
           COUNT=0
           
@@ -36,31 +36,36 @@ jobs:
             SLUG=$(basename "$file" .md)
             URL="${SITE_URL}/article/${SLUG}"
             
-            # Format for Google (one URL per line)
-            GSC_URLS="${GSC_URLS}${URL}\n"
-            
-            # Format for IndexJump (JSON array)
+            # 1. Build IndexJump JSON Array
             if [ "$FIRST" = true ]; then
               IJ_URLS="${IJ_URLS}\"${URL}\""
               FIRST=false
             else
               IJ_URLS="${IJ_URLS},\"${URL}\""
             fi
+            
+            # 2. Build GSC comma-separated list
+            GSC_LIST="${GSC_LIST}${URL},"
+            
             COUNT=$((COUNT+1))
+            echo "🔗 Detected: $URL"
           done <<< "$CHANGED"
           
+          # Close JSON and remove trailing comma from GSC list
           IJ_URLS="${IJ_URLS}]"
+          GSC_LIST=$(echo "$GSC_LIST" | sed 's/,$//')
           
-          # Set outputs for next steps
+          # Save to outputs
           echo "ij_urls=${IJ_URLS}" >> $GITHUB_OUTPUT
-          echo -e "gsc_urls=${GSC_URLS}" >> $GITHUB_OUTPUT
+          echo "gsc_urls=${GSC_LIST}" >> $GITHUB_OUTPUT
           echo "count=${COUNT}" >> $GITHUB_OUTPUT
 
       - name: Submit to Google Indexing API
         if: steps.changes.outputs.count > 0
-        uses: central-ping/google-indexing-api-action@v1
+        uses: robingenz/action-google-indexing@v1
         with:
-          service_account_key: ${{ secrets.GSC_JSON_KEY }}
+          # Uses the JSON key from your GitHub Secrets
+          serviceAccountKey: ${{ secrets.GSC_JSON_KEY }}
           urls: ${{ steps.changes.outputs.gsc_urls }}
 
       - name: Submit to IndexJump
@@ -68,14 +73,15 @@ jobs:
         env:
           IJ_KEY: ${{ secrets.INDEXJUMP_API_KEY }}
         run: |
-          echo "🚀 Submitting to IndexJump..."
+          echo "🚀 Submitting ${{ steps.changes.outputs.count }} URLs to IndexJump..."
           curl -s -X POST "https://api.indexjump.com/index/bulk?token=$IJ_KEY" \
           -H "Content-Type: application/json" \
           -d "{\"urls\": ${{ steps.changes.outputs.ij_urls }}}"
 
       - name: Ping Google Sitemap
-        if: always() # Runs even if the specific post indexing fails
+        if: always()
         run: |
           echo "🌐 Notifying Google of Sitemap update..."
+          # Standard Google Sitemap Ping
           curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml"
           echo "✅ Sitemap pinged successfully."
