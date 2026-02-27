@@ -4,25 +4,25 @@ import { marked } from 'marked';
 function parseFrontmatter(content: string): { data: Record<string, unknown>; content: string } {
   const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
   const match = content.match(frontmatterRegex);
-  
+
   if (!match) {
     return { data: {}, content };
   }
-  
+
   const yamlContent = match[1];
   const bodyContent = match[2];
-  
+
   // Simple YAML parser for frontmatter
   const data: Record<string, unknown> = {};
   const lines = yamlContent.split('\n');
-  
+
   for (const line of lines) {
     const colonIndex = line.indexOf(':');
     if (colonIndex === -1) continue;
-    
+
     const key = line.slice(0, colonIndex).trim();
     let value: unknown = line.slice(colonIndex + 1).trim();
-    
+
     // Handle arrays (tags: [tag1, tag2])
     if (typeof value === 'string' && value.startsWith('[') && value.endsWith(']')) {
       value = value.slice(1, -1).split(',').map(item => item.trim().replace(/^["']|["']$/g, ''));
@@ -34,10 +34,10 @@ function parseFrontmatter(content: string): { data: Record<string, unknown>; con
     else if (typeof value === 'string' && ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'")))) {
       value = value.slice(1, -1);
     }
-    
+
     data[key] = value;
   }
-  
+
   return { data, content: bodyContent };
 }
 
@@ -77,7 +77,7 @@ function calculateReadTime(content: string): number {
 // Normalize category from frontmatter to match defined categories
 function normalizeCategory(rawCategory: string): string {
   const lower = rawCategory.toLowerCase().trim();
-  
+
   // Map common frontmatter categories to defined slugs
   const categoryMap: Record<string, string> = {
     'news': 'News',
@@ -96,8 +96,21 @@ function normalizeCategory(rawCategory: string): string {
     'health': 'Lifestyle',
     'travel': 'Lifestyle',
   };
-  
+
   return categoryMap[lower] || rawCategory;
+}
+
+// Helper to safely parse dates across all browsers (especially older Safari)
+function getSafeTime(dateStr: string): number {
+  if (!dateStr) return 0;
+  
+  // Standard parse attempt
+  let time = new Date(dateStr).getTime();
+  if (!isNaN(time)) return time;
+  
+  // Fallback for Safari's strict parsing (e.g., changing YYYY-MM-DD HH:mm:ss to YYYY/MM/DD HH:mm:ss)
+  time = new Date(dateStr.replace(/-/g, '/').replace('T', ' ')).getTime();
+  return isNaN(time) ? 0 : time;
 }
 
 export function getAllPosts(): Post[] {
@@ -119,6 +132,15 @@ export function getAllPosts(): Post[] {
       const category = normalizeCategory(frontmatter.category || 'News');
       const date = frontmatter.date || new Date().toISOString().split('T')[0];
 
+      // Isolate marked() so a regex error on older browsers does not discard the entire post
+      let htmlContent = "";
+      try {
+        htmlContent = marked(content) as string;
+      } catch (markedError) {
+        console.warn(`Markdown parser failed on older browser for ${slug}:`, markedError);
+        htmlContent = "<p>Content cannot be fully displayed on this browser version.</p>";
+      }
+
       posts.push({
         title,
         slug,
@@ -130,7 +152,7 @@ export function getAllPosts(): Post[] {
         tags,
         featured: frontmatter.featured || false,
         content,
-        htmlContent: marked(content) as string,
+        htmlContent,
         readTime: calculateReadTime(content),
         imageAlt: title,
         authorImage: `https://api.dicebear.com/7.x/avataaars/svg?seed=${author}`,
@@ -141,8 +163,8 @@ export function getAllPosts(): Post[] {
     }
   }
 
-  // Sort by date descending
-  return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  // Sort by date descending safely
+  return posts.sort((a, b) => getSafeTime(b.date) - getSafeTime(a.date));
 }
 
 export function getPostBySlug(slug: string): Post | undefined {
@@ -162,14 +184,17 @@ export function getLatestPosts(limit?: number): Post[] {
 export function getTodaysTopStory(): Post | undefined {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
-  
+
   const posts = getAllPosts();
   const todaysPosts = posts.filter(post => {
-    const postDate = new Date(post.date);
+    const postTime = getSafeTime(post.date);
+    if (!postTime) return false;
+
+    const postDate = new Date(postTime);
     postDate.setHours(0, 0, 0, 0);
     return postDate.getTime() === today.getTime();
   });
-  
+
   return todaysPosts.length > 0 
     ? todaysPosts[todaysPosts.length - 1]
     : posts[0];
@@ -207,7 +232,8 @@ export function getPostsByTag(tag: string): Post[] {
 }
 
 export function getAllTags(): string[] {
-  const allTags = getAllPosts().flatMap(post => post.tags);
+  // Swapped flatMap for reduce to support browsers older than 2019
+  const allTags = getAllPosts().reduce((acc, post) => acc.concat(post.tags), [] as string[]);
   return [...new Set(allTags)].sort();
 }
 
@@ -215,9 +241,9 @@ export function generateSitemap(): string {
   const baseUrl = 'https://thescoopkenya.vercel.app';
   const posts = getAllPosts();
   const today = new Date().toISOString().split('T')[0];
-  
+
   type SitemapUrl = { loc: string; priority: string; changefreq: string; lastmod?: string };
-  
+
   const staticPages: SitemapUrl[] = [
     { loc: '/', priority: '1.0', changefreq: 'hourly', lastmod: today },
     { loc: '/about', priority: '0.5', changefreq: 'monthly' },
@@ -242,7 +268,8 @@ export function generateSitemap(): string {
     lastmod: today
   }));
 
-  const allTags = [...new Set(posts.flatMap(post => post.tags))];
+  // Swapped flatMap for reduce to prevent generator crash on older environments
+  const allTags = [...new Set(posts.reduce((acc, post) => acc.concat(post.tags), [] as string[]))];
   const tagUrls: SitemapUrl[] = allTags.map(tag => ({
     loc: `/tag/${encodeURIComponent(tag)}`,
     priority: '0.5',
