@@ -1,0 +1,418 @@
+name: Mutheu Ann - Entertainment Scraper
+
+on:
+  schedule:
+    - cron: '15 7,13,19 * * *' # Morning, Afternoon, and Evening UTC
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+  MEMORY_FILE: .github/memory_mutheu.json
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil
+          playwright install chromium
+
+      - name: Generate article with Gemini
+        env:
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
+          MEMORY_FILE: ${{ env.MEMORY_FILE }}
+        run: |
+          python << 'EOF'
+          import os, json, datetime, requests, re, time, sys, hashlib, random, textwrap, itertools
+          from dateutil import parser as date_parser
+          from google import genai
+          from google.genai import types
+          from bs4 import BeautifulSoup
+          from playwright.sync_api import sync_playwright
+
+          today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
+
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+
+          BANNED_PHRASES = [
+              "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
+              "grab your popcorn", "listen up", "buckle up", "breaking news",
+              "sherehe", "form ni gani", "udaku", "hello guys", "welcome back",
+              "mambo vipi", "niaje wasee", "karibuni", "tapestry", "dive in",
+              "delve into", "moreover", "furthermore", "in conclusion", 
+              "it's worth noting", "a testament to", "navigating the landscape",
+              "in today's digital age", "shed light on"
+          ]
+
+          print(f"🎯 Target: Entertainment Weekly (Mutheu Ann)")
+
+          def get_target_urls():
+              urls = []
+              print("🔍 Scanning Entertainment site with Playwright...")
+              try:
+                  with sync_playwright() as p:
+                      browser = p.chromium.launch(headless=True, args=[
+                          "--no-sandbox", 
+                          "--disable-dev-shm-usage",
+                          "--disable-blink-features=AutomationControlled"
+                      ])
+                      context = browser.new_context(
+                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+                          viewport={"width": 1920, "height": 1080}
+                      )
+                      page = context.new_page()
+                      page.goto('https://ew.com/', timeout=60000, wait_until="domcontentloaded")
+                      
+                      page.evaluate("window.scrollBy(0, 1500)")
+                      page.wait_for_timeout(4000)
+
+                      content = page.content()
+                      soup = BeautifulSoup(content, 'html.parser')
+                      
+                      for a in soup.find_all('a', href=True):
+                          href = a.get('href', '')
+                          if len(href) > 25 and '/author/' not in href and '/tag/' not in href and '/category/' not in href:
+                              full_url = href if href.startswith('http') else 'https://ew.com' + (href if href.startswith('/') else '/' + href)
+                              if 'ew.com' in full_url:
+                                  urls.append(full_url)
+                      
+                      browser.close()
+              except Exception as e: 
+                  print(f"Scrape scan error: {e}")
+
+              return list(set(urls))
+
+          article_links = get_target_urls()
+          if not article_links:
+              print("❌ No articles found on target sites.")
+              sys.exit(0)
+
+          memory_path = os.environ.get('MEMORY_FILE')
+          memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
+
+          def scrape_article_free(url):
+              print(f"🕷️ Trying URL: {url}")
+              with sync_playwright() as p:
+                  browser = p.chromium.launch(headless=True, args=[
+                      "--no-sandbox", 
+                      "--disable-dev-shm-usage",
+                      "--disable-blink-features=AutomationControlled"
+                  ])
+                  context = browser.new_context(
+                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                      viewport={"width": 1920, "height": 1080}
+                  )
+                  page = context.new_page()
+                  try:
+                      try:
+                          page.goto(url, timeout=45000, wait_until="domcontentloaded")
+                      except Exception:
+                          print("   ⚠️ Page load timeout hit, but grabbing available content anyway.")
+                      
+                      try:
+                          page.wait_for_selector('p', timeout=10000)
+                      except:
+                          pass
+                      
+                      page.wait_for_timeout(3000)
+                      content = page.content()
+                      soup = BeautifulSoup(content, "html.parser")
+
+                      # --- FRESHNESS CHECK ---
+                      pub_time = None
+                      meta_pub = soup.find('meta', property='article:published_time')
+                      if meta_pub:
+                          try:
+                              pub_time = date_parser.parse(meta_pub.get('content'))
+                          except: pass
+                      
+                      if pub_time:
+                          if pub_time.tzinfo is None:
+                              pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
+                          now = datetime.datetime.now(datetime.timezone.utc)
+                          age_hours = (now - pub_time).total_seconds() / 3600
+                          
+                          if age_hours > 48:
+                              print(f"   ⏳ Article is {int(age_hours)} hours old. Skipping (Older than 48h).")
+                              return None, None, None
+                          else:
+                              print(f"   ⏱️ Freshness verified: Published {int(age_hours)} hours ago.")
+                      else:
+                          print("   ⚠️ No exact timestamp found. Proceeding cautiously.")
+
+                      # --- TITLE EXTRACTION ---
+                      page_title = ""
+                      title_tag = soup.find('title')
+                      if title_tag:
+                          page_title = title_tag.get_text().strip()
+
+                      # --- CONTENT EXTRACTION ---
+                      article_text = ""
+                      containers = soup.select('article, main, .article-content, .article-body, .post__content, .entry-content, .content-body, .story-body')
+                      for c in containers:
+                          paras = c.find_all('p')
+                          chunk = "\n\n".join([p.get_text(strip=True) for p in paras if len(p.get_text(strip=True)) > 40])
+                          if len(chunk) > 500:
+                              article_text = chunk
+                              break
+
+                      if len(article_text) < 500:
+                          all_paras = soup.find_all('p')
+                          chunk = "\n\n".join([p.get_text(strip=True) for p in all_paras if len(p.get_text(strip=True)) > 40])
+                          if len(chunk) > 300:
+                              article_text = chunk
+                              
+                      if len(article_text) < 300:
+                          body = soup.find('body')
+                          if body:
+                              lines = [line.strip() for line in body.get_text(separator='\n').split('\n') if len(line.strip()) > 50]
+                              article_text = "\n\n".join(lines)
+
+                      # --- IMAGE EXTRACTION ---
+                      img_url = ""
+                      for meta in soup.find_all('meta'):
+                          if meta.get('property') in ['og:image', 'twitter:image']:
+                              img_url = meta.get('content', '')
+                              if img_url: break
+
+                      print(f"   ✅ Extracted {len(article_text)} characters of text")
+                      return article_text, img_url, page_title
+
+                  except Exception as e:
+                      print(f"   Scrape failed completely: {e}")
+                      return None, None, None
+                  finally:
+                      browser.close()
+
+          full_raw_text, final_hash, target_title, target_image = None, None, None, None
+          for link in article_links:
+              u_hash = hashlib.md5(link.encode()).hexdigest()
+              if u_hash in memory: continue
+              
+              text, img, title = scrape_article_free(link)
+              if text and len(text) > 300:
+                  full_raw_text = text
+                  target_image = img
+                  final_hash = u_hash
+                  target_title = title if title else "Entertainment News"
+                  break 
+
+          if not full_raw_text: 
+              print("❌ No valid unread or fresh content found within the last 48 hours.")
+              sys.exit(0)
+
+          def get_internal_context(posts_dir):
+              if not os.path.exists(posts_dir): return ""
+              files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
+              if not files: return ""
+              sample = random.sample(files, min(len(files), 3))
+              context = "PAST STORIES (PICK ONE AND LINK IT NATURALLY IN THE TEXT USING MARKDOWN):\n"
+              for f in sample:
+                  try:
+                      with open(os.path.join(posts_dir, f), 'r', encoding='utf-8') as c:
+                          txt = c.read()
+                          t_match = re.search(r'title:\s*"(.*?)"', txt)
+                          t = t_match.group(1) if t_match else f
+                          context += f"- Title: {t} | Link: https://zandani.co.ke/article/{f.replace('.md', '')}\n"
+                  except: continue
+              return context
+
+          def get_real_image(query):
+              access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
+              fallback = "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1200"
+              if not access_key: return fallback
+              url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}"
+              try:
+                  resp = requests.get(url, timeout=10)
+                  if resp.status_code == 200: return resp.json()['urls']['regular']
+              except: pass
+              return fallback
+
+          def dash_scrubber(text):
+              if not text: return ""
+              text = text.replace('\u2014', '-').replace('\u2013', '-')
+              text = text.replace(chr(8212), '-').replace(chr(8211), '-')
+              return text
+
+          # --- API KEY ROTATION LOGIC ---
+          raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY")]
+          api_keys = [k for k in raw_keys if k and k.strip()]
+          
+          if not api_keys:
+              print("❌ No Gemini API keys provided in environment.")
+              sys.exit(1)
+
+          key_cycle = itertools.cycle(api_keys)
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+
+          google_search_tool = types.Tool(google_search=types.GoogleSearch())
+          internal_links_data = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
+
+          prompt = f'''Current Date: {full_date_str}
+          ORIGINAL HEADLINE: "{target_title}"
+          SOURCE SCRAPED TEXT: "{full_raw_text[:12000]}"
+          
+          {internal_links_data}
+
+          TASK: Write a dynamic and engaging entertainment news report as **Mutheu Ann**, a sharp, plugged-in Kenyan entertainment journalist and gossip insider writing for Za Ndani.
+
+          STRICT TIME RULE AND GOOGLE SEARCH:
+          You MUST use Google Search to verify facts. On every single search query you make, you must remind yourself of the current date ({full_date_str}) and only find data accurate as of this exact date. You are strictly forbidden from writing about past events from 2023, 2024, or 2025 as if they are current news. If the search results bring up old events, IGNORE THEM COMPLETELY and rely solely on the SOURCE SCRAPED TEXT.
+
+          EXACT-MATCH SEO ENGINE (STRICT RULE):
+          1. Extract the 2 to 4 most important exact keyword phrases from the ORIGINAL HEADLINE.
+          2. FRONT-LOAD TITLE: The new TITLE must start with these exact keywords.
+          3. KEYWORD SLUG: The SLUG must exclusively be built from these exact keywords.
+          4. KEYWORD EXCERPT: The EXCERPT must naturally feature these exact keywords.
+          5. KEYWORD HEADINGS: Every single H2 and H3 heading in the body MUST contain at least one of these exact keywords.
+
+          LANGUAGE MANDATE (STRICT):
+          - NO SHENG OR SWAHILI. 
+          - Write in passionate, high-energy, and professional Kenyan English. 
+          - Focus on the celebrity highlights, cultural impact, events, and entertainment news directly mentioned in the text.
+          - BANNED PHRASES: {", ".join(BANNED_PHRASES)}.
+          - NEVER use em dashes or en dashes. Only use regular single hyphens (-).
+
+          STRICT OUTPUT FORMAT:
+          TITLE: [SEO Title front-loaded with exact original keywords]
+          SLUG: [exact-keyword-slug-separated-by-hyphens]
+          EXCERPT: [Snippet under 160 characters featuring exact keywords]
+          TAGS: [comma, separated, english, seo, tags]
+          IMAGE_KEYWORD: [search query related to the celebrity or event]
+          BODY:
+          [Article text containing the internal link. 
+          Structure: Start with an H2 heading containing the exact keywords. Follow immediately with a crisp, 40-word neutral answer paragraph for Google Snippets. Then continue with natural subheadings that also reuse the exact keywords.]
+          '''
+
+          full_text = ""
+          success_flag = False
+          keys_tried = 0
+          
+          for model_id in MODELS_TO_TRY:
+              for retry in range(4):
+                  try:
+                      response = client.models.generate_content(
+                          model=model_id, contents=prompt,
+                          config=types.GenerateContentConfig(temperature=0.7, tools=[google_search_tool])
+                      )
+                      full_text = response.text.strip()
+                      success_flag = True
+                      print(f"✅ SUCCESS with {model_id}!")
+                      break 
+                  except Exception as e:
+                      if "429" in str(e):
+                          keys_tried += 1
+                          if keys_tried >= len(api_keys):
+                              print("⏳ All keys hit quota. Waiting 35s...")
+                              time.sleep(35)
+                              keys_tried = 0
+                          else:
+                              print("⚠️ Quota hit. Rotating to next API key...")
+                              current_key = next(key_cycle)
+                              client = genai.Client(api_key=current_key)
+                          continue
+                      
+                      print(f"⚠️ Error with {model_id}: {e}")
+                      break
+              if success_flag: break
+
+          if not success_flag: sys.exit(1)
+
+          full_text = re.sub(r'^```(?:markdown|text|html)?\n', '', full_text, flags=re.IGNORECASE)
+          full_text = re.sub(r'\n```$', '', full_text).strip()
+
+          parsed = {"TITLE": "", "SLUG": "", "EXCERPT": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": ""}
+
+          section_matches = re.findall(r'^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD):\s*(.*)', full_text, re.MULTILINE | re.IGNORECASE)
+          for key, value in section_matches:
+              parsed[key.upper()] = value.strip()
+
+          body_match = re.search(r'BODY:\s*(.*)', full_text, re.DOTALL | re.IGNORECASE)
+          if body_match:
+              parsed["BODY"] = body_match.group(1).strip()
+          else:
+              parsed["BODY"] = full_text.split("BODY:", 1)[-1].strip() if "BODY:" in full_text else full_text
+
+          parsed["BODY"] = re.sub(r'^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD|BODY):\s*.*$', '', parsed["BODY"], flags=re.MULTILINE | re.IGNORECASE).strip()
+          parsed["BODY"] = dash_scrubber(parsed["BODY"]).strip()
+
+          tags_list = [t.strip().replace('"', '') for t in parsed["TAGS"].split(",") if t.strip()]
+          tags_str = ', '.join([f'"{t}"' for t in tags_list]) if tags_list else '"entertainment", "kenya", "gossip"'
+
+          final_image_url = target_image if target_image else get_real_image(parsed.get('IMAGE_KEYWORD') or target_title)
+
+          final_file = textwrap.dedent(f"""\
+          ---
+          title: "{parsed['TITLE'].replace('"', "'")}"
+          slug: "{parsed['SLUG']}"
+          excerpt: "{parsed['EXCERPT'].replace('"', "'")}"
+          author: "Mutheu Ann"
+          image: "{final_image_url}"
+          category: "Entertainment"
+          date: "{today_str}"
+          tags: [{tags_str}]
+          ---
+
+          {parsed['BODY']}
+          """)
+
+          out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
+          os.makedirs(out_dir, exist_ok=True)
+          filename = f"{parsed['SLUG']}.md"
+          with open(os.path.join(out_dir, filename), "w", encoding="utf-8") as f:
+              f.write(final_file)
+
+          memory.append(final_hash)
+          os.makedirs(os.path.dirname(memory_path), exist_ok=True)
+          with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
+
+          print(f"✅ Article saved with full body: {filename}")
+          EOF
+
+      - name: Git Safety Pull
+        run: |
+          git config --global user.name "Mutheu Ann"
+          git config --global user.email "bot@zandani.co.ke"
+          git add .
+          git stash -u
+          git fetch origin main
+          git pull origin main --rebase
+          git stash pop || echo "Nothing to pop"
+
+      - name: Commit and push article
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: "Mutheu Ann <bot@zandani.co.ke>"
+          commit_message: "content: Entertainment update by Mutheu Ann 🎬"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: 'content/posts/*.md .github/memory_mutheu.json'
