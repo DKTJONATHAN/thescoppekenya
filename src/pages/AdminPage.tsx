@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { getAllPosts, Post, categories as defaultCategories } from "@/lib/markdown";
-import { Lock, Plus, Eye, FileText, LogOut, Calendar, Tag, User, Image, AlignLeft, Loader2, Pencil, Trash2, X, Github, Search } from "lucide-react";
+import { Lock, Plus, Eye, FileText, LogOut, Calendar, Tag, User, Image, AlignLeft, Loader2, Pencil, Trash2, X, Github, Search, Users } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
@@ -26,15 +26,30 @@ const base64ToUtf8 = (base64: string): string => {
   return decodeURIComponent(escape(window.atob(base64)));
 };
 
+export interface AuthorProfile {
+  name: string;
+  role: string;
+  bio: string;
+  avatar: string;
+  location: string;
+  socials?: {
+    twitter?: string;
+    linkedin?: string;
+    email?: string;
+  };
+}
+
 export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [pin, setPin] = useState("");
   const [error, setError] = useState("");
   const [posts, setPosts] = useState<Post[]>([]);
-  const [activeTab, setActiveTab] = useState<"create" | "manage">("create");
+  const [activeTab, setActiveTab] = useState<"create" | "manage" | "authors">("create");
   const [isPublishing, setIsPublishing] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
   const { toast } = useToast();
+  
+  // Post states
   const [editingPost, setEditingPost] = useState<Post | null>(null);
   const [categories, setCategories] = useState<{ name: string; slug: string }[]>([]);
   const [isCustomCategory, setIsCustomCategory] = useState(false);
@@ -42,6 +57,12 @@ export default function AdminPage() {
   const [filterCategory, setFilterCategory] = useState("All");
   const [showDeleteConfirm, setShowDeleteConfirm] = useState<string | null>(null);
 
+  // Author states
+  const [authors, setAuthors] = useState<Record<string, AuthorProfile>>({});
+  const [isSavingAuthor, setIsSavingAuthor] = useState(false);
+  const [editingAuthorKey, setEditingAuthorKey] = useState<string | null>(null);
+  const [showDeleteAuthorConfirm, setShowDeleteAuthorConfirm] = useState<string | null>(null);
+  
   const [newPost, setNewPost] = useState({
     title: "",
     slug: "",
@@ -51,6 +72,15 @@ export default function AdminPage() {
     image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800",
     author: "The Scoop KE",
     tags: ""
+  });
+
+  const [newAuthor, setNewAuthor] = useState<AuthorProfile>({
+    name: "",
+    role: "Contributing Writer",
+    bio: "",
+    avatar: "/api/placeholder/150/150",
+    location: "Kenya",
+    socials: { twitter: "", linkedin: "", email: "" }
   });
 
   useEffect(() => {
@@ -63,6 +93,8 @@ export default function AdminPage() {
 
   async function loadData() {
     setPosts(getAllPosts());
+    
+    // Load Categories
     const categoriesJson = await getGithubFileContent('content/categories.json');
     if (categoriesJson) {
       try {
@@ -72,6 +104,16 @@ export default function AdminPage() {
       }
     } else {
       setCategories(defaultCategories);
+    }
+
+    // Load Authors
+    const authorsJson = await getGithubFileContent('content/authors.json');
+    if (authorsJson) {
+      try {
+        setAuthors(JSON.parse(authorsJson));
+      } catch (e) {
+        setAuthors({});
+      }
     }
   }
 
@@ -101,7 +143,8 @@ export default function AdminPage() {
     setIsAuthenticated(false);
     sessionStorage.removeItem("admin_auth");
     setActiveTab("create");
-    resetForm();
+    resetPostForm();
+    resetAuthorForm();
   };
 
   const generateSlug = (title: string) => {
@@ -161,6 +204,8 @@ export default function AdminPage() {
     }
   };
 
+  // --- POST MANAGEMENT ---
+
   const handlePublish = async (isUpdate: boolean) => {
     if (!newPost.title || !newPost.content) {
       toast({ title: "Missing fields", description: "Title and content are required.", variant: "destructive" });
@@ -209,7 +254,7 @@ ${newPost.content}`;
       await submitToIndexNow(postSlug);
 
       toast({ title: "Published!", description: "Story is now live on Za Ndani." });
-      resetForm();
+      resetPostForm();
       loadData();
     } catch (error: any) {
       toast({ title: "Failed", description: error.message, variant: "destructive" });
@@ -218,11 +263,7 @@ ${newPost.content}`;
     }
   };
 
-  const handleDeletePost = async (post: Post) => {
-    setShowDeleteConfirm(post.slug);
-  };
-
-  const confirmDelete = async () => {
+  const confirmDeletePost = async () => {
     if (!showDeleteConfirm) return;
     setIsDeleting(true);
     const post = posts.find(p => p.slug === showDeleteConfirm);
@@ -243,7 +284,7 @@ ${newPost.content}`;
     }
   };
 
-  const resetForm = () => {
+  const resetPostForm = () => {
     setNewPost({
       title: "", slug: "", excerpt: "", category: "News", content: "",
       image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800",
@@ -275,6 +316,83 @@ ${newPost.content}`;
     )
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
+  // --- AUTHOR MANAGEMENT ---
+
+  const handleSaveAuthor = async () => {
+    if (!newAuthor.name) {
+      toast({ title: "Missing Name", description: "Author name is required.", variant: "destructive" });
+      return;
+    }
+
+    setIsSavingAuthor(true);
+    try {
+      const updatedAuthors = { ...authors };
+      
+      // If editing and name changed, remove the old key
+      if (editingAuthorKey && editingAuthorKey !== newAuthor.name) {
+        delete updatedAuthors[editingAuthorKey];
+      }
+      
+      updatedAuthors[newAuthor.name] = newAuthor;
+      
+      const sha = await getGithubFileSha('content/authors.json');
+      await pushToGithub(
+        'content/authors.json', 
+        JSON.stringify(updatedAuthors, null, 2), 
+        `${editingAuthorKey ? 'Update' : 'Add'} author: ${newAuthor.name}`, 
+        sha || undefined
+      );
+
+      setAuthors(updatedAuthors);
+      toast({ title: "Author Saved!", description: "Author profile updated successfully." });
+      resetAuthorForm();
+    } catch (error: any) {
+      toast({ title: "Failed", description: error.message, variant: "destructive" });
+    } finally {
+      setIsSavingAuthor(false);
+    }
+  };
+
+  const confirmDeleteAuthor = async () => {
+    if (!showDeleteAuthorConfirm) return;
+    setIsDeleting(true);
+
+    try {
+      const updatedAuthors = { ...authors };
+      delete updatedAuthors[showDeleteAuthorConfirm];
+
+      const sha = await getGithubFileSha('content/authors.json');
+      await pushToGithub(
+        'content/authors.json', 
+        JSON.stringify(updatedAuthors, null, 2), 
+        `Delete author: ${showDeleteAuthorConfirm}`, 
+        sha || undefined
+      );
+
+      setAuthors(updatedAuthors);
+      toast({ title: "Deleted", description: "Author removed successfully." });
+    } catch (error: any) {
+      toast({ title: "Delete failed", description: error.message, variant: "destructive" });
+    } finally {
+      setShowDeleteAuthorConfirm(null);
+      setIsDeleting(false);
+    }
+  };
+
+  const handleEditAuthor = (authorKey: string) => {
+    setEditingAuthorKey(authorKey);
+    setNewAuthor(authors[authorKey]);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const resetAuthorForm = () => {
+    setEditingAuthorKey(null);
+    setNewAuthor({
+      name: "", role: "Contributing Writer", bio: "", avatar: "/api/placeholder/150/150", location: "Kenya",
+      socials: { twitter: "", linkedin: "", email: "" }
+    });
+  };
+
   if (!isAuthenticated) {
     return (
       <Layout>
@@ -287,7 +405,7 @@ ${newPost.content}`;
             </div>
             <h1 className="text-3xl font-serif font-bold text-center mb-2">Za Ndani Admin</h1>
             <p className="text-center text-muted-foreground mb-8">Enter your 4-digit PIN</p>
-            
+
             <form onSubmit={handleLogin}>
               <input
                 type="password"
@@ -334,6 +452,13 @@ ${newPost.content}`;
               <FileText className="w-5 h-5" />
               Manage Posts ({posts.length})
             </button>
+            <button
+              onClick={() => setActiveTab("authors")}
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-2xl text-left ${activeTab === "authors" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}
+            >
+              <Users className="w-5 h-5" />
+              Manage Authors ({Object.keys(authors).length})
+            </button>
           </nav>
 
           <Button variant="outline" onClick={handleLogout} className="mt-auto">
@@ -353,6 +478,7 @@ ${newPost.content}`;
               </Button>
             </div>
 
+            {/* TAB: CREATE / EDIT POST */}
             {activeTab === "create" && (
               <div className="grid lg:grid-cols-2 gap-8">
                 {/* Form */}
@@ -400,13 +526,19 @@ ${newPost.content}`;
                         {categories.map(c => <option key={c.slug} value={c.name}>{c.name}</option>)}
                         <option value="add-new">+ New Category</option>
                       </select>
-                      <input
-                        type="text"
-                        placeholder="Author"
+                      
+                      {/* Author Selection Dropdown */}
+                      <select
                         value={newPost.author}
                         onChange={(e) => setNewPost({ ...newPost, author: e.target.value })}
                         className="w-full p-4 rounded-2xl border border-divider bg-background"
-                      />
+                      >
+                        <option value="The Scoop KE">The Scoop KE (Default)</option>
+                        {Object.keys(authors).map(authorName => (
+                          <option key={authorName} value={authorName}>{authorName}</option>
+                        ))}
+                      </select>
+
                       <input
                         type="text"
                         placeholder="Tags (comma separated)"
@@ -441,7 +573,7 @@ ${newPost.content}`;
                     />
 
                     <div className="flex gap-3 pt-4 border-t border-divider">
-                      <Button variant="outline" onClick={resetForm} className="flex-1">Clear Form</Button>
+                      <Button variant="outline" onClick={resetPostForm} className="flex-1">Clear Form</Button>
                       <Button onClick={() => handlePublish(!!editingPost)} disabled={isPublishing} className="flex-1 gradient-primary">
                         {isPublishing ? <Loader2 className="animate-spin mr-2" /> : <Github className="mr-2" />}
                         {editingPost ? 'Update Story' : 'Publish to GitHub'}
@@ -470,6 +602,7 @@ ${newPost.content}`;
               </div>
             )}
 
+            {/* TAB: MANAGE POSTS */}
             {activeTab === "manage" && (
               <div className="bg-surface border border-divider rounded-3xl p-8">
                 <div className="flex flex-col md:flex-row gap-4 mb-8">
@@ -512,7 +645,7 @@ ${newPost.content}`;
                           <Button variant="outline" size="sm" onClick={() => handleEditPost(post)} className="flex-1">
                             <Pencil className="w-4 h-4 mr-2" /> Edit
                           </Button>
-                          <Button variant="outline" size="sm" onClick={() => handleDeletePost(post)} className="flex-1 text-destructive">
+                          <Button variant="outline" size="sm" onClick={() => setShowDeleteConfirm(post.slug)} className="flex-1 text-destructive">
                             <Trash2 className="w-4 h-4 mr-2" /> Delete
                           </Button>
                           <Button variant="outline" size="sm" asChild>
@@ -531,11 +664,155 @@ ${newPost.content}`;
                 )}
               </div>
             )}
+
+            {/* TAB: MANAGE AUTHORS */}
+            {activeTab === "authors" && (
+              <div className="grid lg:grid-cols-12 gap-8">
+                
+                {/* Author List */}
+                <div className="lg:col-span-5 bg-surface border border-divider rounded-3xl p-6 h-fit">
+                  <h2 className="text-xl font-bold mb-6 flex items-center justify-between">
+                    Current Team
+                    <Badge variant="secondary" className="bg-primary/10 text-primary">{Object.keys(authors).length}</Badge>
+                  </h2>
+                  <div className="space-y-4 max-h-[600px] overflow-y-auto pr-2">
+                    {Object.entries(authors).map(([key, author]) => (
+                      <div key={key} className="flex items-center gap-4 p-4 rounded-2xl border border-divider bg-background hover:border-primary/50 transition-colors">
+                        <img src={author.avatar} alt={author.name} className="w-12 h-12 rounded-full object-cover border border-divider" />
+                        <div className="flex-1 min-w-0">
+                          <h4 className="font-bold text-sm truncate">{author.name}</h4>
+                          <p className="text-xs text-muted-foreground truncate">{author.role}</p>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                          <Button variant="ghost" size="sm" className="h-7 px-2 hover:bg-primary/10 hover:text-primary" onClick={() => handleEditAuthor(key)}>
+                            <Pencil className="w-3.5 h-3.5" />
+                          </Button>
+                          <Button variant="ghost" size="sm" className="h-7 px-2 hover:bg-destructive/10 hover:text-destructive" onClick={() => setShowDeleteAuthorConfirm(key)}>
+                            <Trash2 className="w-3.5 h-3.5" />
+                          </Button>
+                        </div>
+                      </div>
+                    ))}
+                    {Object.keys(authors).length === 0 && (
+                      <p className="text-center text-muted-foreground py-10 text-sm">No authors found. Create one below.</p>
+                    )}
+                  </div>
+                </div>
+
+                {/* Author Editor Form */}
+                <div className="lg:col-span-7 bg-surface border border-divider rounded-3xl p-8">
+                  <h2 className="text-2xl font-serif font-bold mb-6">
+                    {editingAuthorKey ? `Editing: ${editingAuthorKey}` : "Add New Author"}
+                  </h2>
+                  
+                  <div className="space-y-5">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1 block">Full Name *</label>
+                        <input
+                          type="text"
+                          value={newAuthor.name}
+                          onChange={(e) => setNewAuthor({ ...newAuthor, name: e.target.value })}
+                          className="w-full p-3.5 rounded-xl border border-divider bg-background"
+                          placeholder="e.g. Jonathan Mwaniki"
+                        />
+                      </div>
+                      <div>
+                        <label className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1 block">Role / Title *</label>
+                        <input
+                          type="text"
+                          value={newAuthor.role}
+                          onChange={(e) => setNewAuthor({ ...newAuthor, role: e.target.value })}
+                          className="w-full p-3.5 rounded-xl border border-divider bg-background"
+                          placeholder="e.g. Senior Editor"
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1 block">Bio *</label>
+                      <textarea
+                        value={newAuthor.bio}
+                        onChange={(e) => setNewAuthor({ ...newAuthor, bio: e.target.value })}
+                        className="w-full p-3.5 rounded-xl border border-divider bg-background"
+                        rows={3}
+                        placeholder="Short biography..."
+                      />
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1 block">Avatar URL</label>
+                        <div className="flex gap-2">
+                          <input
+                            type="text"
+                            value={newAuthor.avatar}
+                            onChange={(e) => setNewAuthor({ ...newAuthor, avatar: e.target.value })}
+                            className="flex-1 p-3.5 rounded-xl border border-divider bg-background font-mono text-sm"
+                            placeholder="/authors/photo.jpg or https://..."
+                          />
+                          {newAuthor.avatar && (
+                            <img src={newAuthor.avatar} alt="preview" className="w-12 h-12 rounded-xl object-cover border border-divider flex-shrink-0" />
+                          )}
+                        </div>
+                      </div>
+                      <div>
+                        <label className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1 block">Location</label>
+                        <input
+                          type="text"
+                          value={newAuthor.location}
+                          onChange={(e) => setNewAuthor({ ...newAuthor, location: e.target.value })}
+                          className="w-full p-3.5 rounded-xl border border-divider bg-background"
+                          placeholder="e.g. Nairobi, Kenya"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="pt-4 border-t border-divider">
+                      <h4 className="text-sm font-bold mb-4">Social Links (Optional)</h4>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <input
+                          type="text"
+                          value={newAuthor.socials?.twitter || ""}
+                          onChange={(e) => setNewAuthor({ ...newAuthor, socials: { ...newAuthor.socials, twitter: e.target.value } })}
+                          className="w-full p-3.5 rounded-xl border border-divider bg-background text-sm"
+                          placeholder="Twitter / X URL"
+                        />
+                        <input
+                          type="text"
+                          value={newAuthor.socials?.linkedin || ""}
+                          onChange={(e) => setNewAuthor({ ...newAuthor, socials: { ...newAuthor.socials, linkedin: e.target.value } })}
+                          className="w-full p-3.5 rounded-xl border border-divider bg-background text-sm"
+                          placeholder="LinkedIn URL"
+                        />
+                        <input
+                          type="email"
+                          value={newAuthor.socials?.email || ""}
+                          onChange={(e) => setNewAuthor({ ...newAuthor, socials: { ...newAuthor.socials, email: e.target.value } })}
+                          className="w-full p-3.5 rounded-xl border border-divider bg-background text-sm"
+                          placeholder="Email Address"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3 pt-6">
+                      <Button variant="outline" onClick={resetAuthorForm} className="flex-1">Cancel / Clear</Button>
+                      <Button onClick={handleSaveAuthor} disabled={isSavingAuthor} className="flex-1 gradient-primary">
+                        {isSavingAuthor ? <Loader2 className="animate-spin mr-2" /> : <Github className="mr-2" />}
+                        {editingAuthorKey ? 'Update Author' : 'Save New Author'}
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            )}
+
           </div>
         </div>
       </div>
 
-      {/* Delete Confirmation Modal */}
+      {/* Delete Post Confirmation Modal */}
       {showDeleteConfirm && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
           <div className="bg-surface rounded-3xl p-8 max-w-sm w-full">
@@ -543,8 +820,24 @@ ${newPost.content}`;
             <p className="text-muted-foreground mb-8">This action cannot be undone. The post will be permanently removed from GitHub.</p>
             <div className="flex gap-3">
               <Button variant="outline" onClick={() => setShowDeleteConfirm(null)} className="flex-1">Cancel</Button>
-              <Button onClick={confirmDelete} disabled={isDeleting} variant="destructive" className="flex-1">
+              <Button onClick={confirmDeletePost} disabled={isDeleting} variant="destructive" className="flex-1">
                 {isDeleting ? <Loader2 className="animate-spin mr-2" /> : "Yes, Delete"}
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Delete Author Confirmation Modal */}
+      {showDeleteAuthorConfirm && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
+          <div className="bg-surface rounded-3xl p-8 max-w-sm w-full">
+            <h3 className="text-xl font-bold mb-2">Remove author?</h3>
+            <p className="text-muted-foreground mb-8">This will delete their profile data from your configuration. Existing articles won't be deleted, but they'll fallback to default author settings.</p>
+            <div className="flex gap-3">
+              <Button variant="outline" onClick={() => setShowDeleteAuthorConfirm(null)} className="flex-1">Cancel</Button>
+              <Button onClick={confirmDeleteAuthor} disabled={isDeleting} variant="destructive" className="flex-1">
+                {isDeleting ? <Loader2 className="animate-spin mr-2" /> : "Remove"}
               </Button>
             </div>
           </div>
@@ -552,4 +845,9 @@ ${newPost.content}`;
       )}
     </Layout>
   );
+}
+
+// Dummy Badge component added for inline author count styling since we don't know if you import it from UI
+function Badge({ children, variant, className }: any) {
+  return <span className={`px-2.5 py-0.5 rounded-full text-xs font-semibold ${className}`}>{children}</span>;
 }
