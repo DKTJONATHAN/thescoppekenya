@@ -1,142 +1,159 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { BarChart3, Users, Zap, Target, Mail, Phone } from "lucide-react";
+import { BarChart3, Users, Zap, Target, Mail, Phone, Globe, MousePointerClick, TrendingUp, Award } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
 export default function AdvertisePage() {
   return (
     <Layout>
       <Helmet>
-        <title>Advertise with Za Ndani | Reach Engaged Kenyan Readers</title>
+        <title>Advertise with Za Ndani | Premier Kenyan Digital Media Network</title>
         <meta
           name="description"
-          content="Promote your products, services, business or brand to thousands of daily Kenyan readers. Affordable, targeted advertising options for local businesses."
+          content="Scale your brand with Za Ndani. Access high-intent Kenyan audiences through professional display ads, sponsored content, and bespoke digital campaigns."
         />
       </Helmet>
 
-      <div className="container max-w-6xl mx-auto px-4 py-12 md:py-20">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-headline mb-4">
-            Advertise with <span className="text-primary">Za Ndani</span>
+      <div className="container max-w-6xl mx-auto px-4 py-16 md:py-24">
+        {/* Header Section */}
+        <div className="text-center mb-20">
+          <h1 className="text-5xl md:text-6xl font-serif font-black text-headline mb-6 tracking-tight">
+            Influence the <span className="text-primary italic">Trendsetters</span>.
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Reach thousands of engaged Kenyan readers every day. Perfect for promoting products, services, events, or your brand across Kenya.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Za Ndani connects world-class brands with Kenya’s most engaged digital audience. 
+            From breaking news to lifestyle shifts, we provide the platform; you provide the vision.
           </p>
         </div>
 
-        {/* Stats - keep or update with real data later */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-          <div className="bg-surface rounded-2xl p-6 text-center border border-divider">
-            <p className="text-3xl md:text-4xl font-bold text-primary mb-2">50K+</p>
-            <p className="text-muted-foreground">Monthly Readers</p>
-          </div>
-          <div className="bg-surface rounded-2xl p-6 text-center border border-divider">
-            <p className="text-3xl md:text-4xl font-bold text-primary mb-2">100K+</p>
-            <p className="text-muted-foreground">Page Views</p>
-          </div>
-          <div className="bg-surface rounded-2xl p-6 text-center border border-divider">
-            <p className="text-3xl md:text-4xl font-bold text-primary mb-2">25K+</p>
-            <p className="text-muted-foreground">Social Followers</p>
-          </div>
-          <div className="bg-surface rounded-2xl p-6 text-center border border-divider">
-            <p className="text-3xl md:text-4xl font-bold text-primary mb-2">70%</p>
-            <p className="text-muted-foreground">Mobile Traffic</p>
-          </div>
+        {/* Data Points / Media Kit Stats */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-24">
+          {[
+            { label: "Monthly Impressions", value: "250K+", icon: BarChart3 },
+            { label: "Unique Visitors", value: "50K+", icon: Users },
+            { label: "Avg. Engagement", value: "4.2%", icon: MousePointerClick },
+            { label: "Mobile First", value: "82%", icon: Zap },
+          ].map((stat, i) => (
+            <div key={i} className="bg-surface rounded-3xl p-8 border border-divider flex flex-col items-center text-center shadow-sm">
+              <stat.icon className="w-6 h-6 text-primary mb-4 opacity-70" />
+              <p className="text-4xl font-black text-headline mb-1">{stat.value}</p>
+              <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest">{stat.label}</p>
+            </div>
+          ))}
         </div>
 
-        {/* Why Advertise */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-serif font-bold text-headline text-center mb-10">
-            Why Advertise With Za Ndani?
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-surface rounded-2xl p-6 border border-divider">
-              <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center mb-4">
-                <Users className="w-6 h-6 text-primary-foreground" />
+        {/* Value Proposition */}
+        <div className="mb-24">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+            <div className="max-w-xl">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-headline mb-4">
+                The Za Ndani Advantage
+              </h2>
+              <p className="text-muted-foreground text-lg">
+                We don't just host ads; we integrate brands into the Kenyan cultural conversation.
+              </p>
+            </div>
+            <div className="hidden md:block h-px bg-divider flex-grow mx-8 mb-5"></div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
+                <Target className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-serif font-bold text-headline mb-2">Engaged Kenyan Audience</h3>
-              <p className="text-muted-foreground text-sm">
-                Readers actively follow local news, trends, lifestyle — high time-on-site.
+              <h3 className="text-xl font-bold text-headline">Hyper-Local Targeting</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Reach specific demographics across Nairobi, Mombasa, Kisumu, and the growing diaspora market with precision.
               </p>
             </div>
-            {/* ... other cards unchanged, but add Kenyan flavor if wanted */}
-            <div className="bg-surface rounded-2xl p-6 border border-divider">
-              <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center mb-4">
-                <Target className="w-6 h-6 text-primary-foreground" />
+            <div className="space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
+                <TrendingUp className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-serif font-bold text-headline mb-2">Targeted Reach in Kenya</h3>
-              <p className="text-muted-foreground text-sm">
-                Connect with audiences in Nairobi, Mombasa, Kisumu and across the country.
+              <h3 className="text-xl font-bold text-headline">High Intent Audience</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Our readers are active consumers of tech, finance, and lifestyle products, looking for the next big thing.
               </p>
             </div>
-            {/* ... */}
-          </div>
-        </div>
-
-        {/* Ad Formats - slight price realism tweak + note */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-serif font-bold text-headline text-center mb-10">
-            Advertising Options
-          </h2>
-          <p className="text-center text-muted-foreground mb-8">
-            Starting prices — custom quotes available based on your goals & duration.
-          </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-surface rounded-2xl p-8 border border-divider text-center">
-              <h3 className="text-xl font-serif font-bold text-headline mb-4">Banner Ads</h3>
-              <p className="text-muted-foreground mb-6">
-                High-visibility spots on homepage and articles.
+            <div className="space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
+                <Award className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-headline">Brand Safety</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Professional editorial standards ensure your brand is always associated with quality, verified journalism.
               </p>
-              <p className="text-2xl font-bold text-primary">From KES 5,000</p>
-              <p className="text-sm text-muted-foreground">per week</p>
-            </div>
-            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8 border-2 border-primary text-center relative">
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full">
-                MOST POPULAR
-              </span>
-              <h3 className="text-xl font-serif font-bold text-headline mb-4">Sponsored Content</h3>
-              <p className="text-muted-foreground mb-6">
-                Native articles that tell your brand story to our readers.
-              </p>
-              <p className="text-2xl font-bold text-primary">From KES 15,000</p>
-              <p className="text-sm text-muted-foreground">per article</p>
-            </div>
-            <div className="bg-surface rounded-2xl p-8 border border-divider text-center">
-              <h3 className="text-xl font-serif font-bold text-headline mb-4">Newsletter Ads</h3>
-              <p className="text-muted-foreground mb-6">
-                Direct reach to subscribers' inboxes.
-              </p>
-              <p className="text-2xl font-bold text-primary">From KES 3,000</p>
-              <p className="text-sm text-muted-foreground">per send</p>
             </div>
           </div>
         </div>
 
-        {/* CTA - add form suggestion */}
-        <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8 md:p-12 border border-primary/20 text-center">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-headline mb-4">
-            Ready to Grow Your Brand in Kenya?
-          </h2>
-          <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-            Contact our team for a custom proposal, rates, and available slots.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild className="gradient-primary text-primary-foreground">
-              <a href="mailto:contact@zandani.co.ke">
-                <Mail className="w-5 h-5 mr-2" />
-                Email Us Now
-              </a>
-            </Button>
-            <Button asChild variant="outline">
-              <a href="tel:+254706396305">
-                <Phone className="w-5 h-5 mr-2" />
-                Call/WhatsApp 0706 396 305
-              </a>
-            </Button>
+        {/* Pricing/Packages Table */}
+        <div className="mb-24">
+          <h2 className="text-3xl font-serif font-bold text-headline text-center mb-12">Ad Solutions</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Standard */}
+            <div className="bg-surface rounded-3xl p-8 border border-divider flex flex-col">
+              <h3 className="text-xl font-bold text-headline mb-2">Display Network</h3>
+              <p className="text-sm text-muted-foreground mb-6">High-impact banner placements across our most visited articles.</p>
+              <div className="mt-auto pt-6 border-t border-divider">
+                <p className="text-xs text-muted-foreground uppercase font-bold tracking-widest mb-1">Starts at</p>
+                <p className="text-3xl font-black text-primary">KES 7,500 <span className="text-sm font-normal text-muted-foreground">/wk</span></p>
+              </div>
+            </div>
+
+            {/* Featured */}
+            <div className="bg-headline text-white rounded-3xl p-8 shadow-2xl scale-105 relative z-10 flex flex-col border-2 border-primary">
+              <div className="absolute -top-4 right-8 bg-primary text-primary-foreground text-[10px] font-black px-4 py-1 rounded-full tracking-[0.2em] uppercase">
+                Premium
+              </div>
+              <h3 className="text-xl font-bold mb-2">Native Content</h3>
+              <p className="text-sm text-white/70 mb-6">Expertly crafted "Za Ndani" style articles that feature your product naturally.</p>
+              <div className="mt-auto pt-6 border-t border-white/10">
+                <p className="text-xs text-white/50 uppercase font-bold tracking-widest mb-1">Starts at</p>
+                <p className="text-3xl font-black text-primary">KES 20,000 <span className="text-sm font-normal text-white/50">/ea</span></p>
+              </div>
+            </div>
+
+            {/* Custom */}
+            <div className="bg-surface rounded-3xl p-8 border border-divider flex flex-col">
+              <h3 className="text-xl font-bold text-headline mb-2">Social & Pulse</h3>
+              <p className="text-sm text-muted-foreground mb-6">Collaborative social media campaigns and newsletter takeovers.</p>
+              <div className="mt-auto pt-6 border-t border-divider">
+                <p className="text-xs text-muted-foreground uppercase font-bold tracking-widest mb-1">Starts at</p>
+                <p className="text-3xl font-black text-primary">KES 5,000 <span className="text-sm font-normal text-muted-foreground">/post</span></p>
+              </div>
+            </div>
           </div>
-          <p className="mt-6 text-sm text-muted-foreground">
-            Or fill out our quick inquiry form (coming soon) to tell us about your campaign!
-          </p>
+        </div>
+
+        {/* Action Section */}
+        <div className="relative overflow-hidden bg-gradient-to-br from-surface to-divider rounded-[3rem] p-10 md:p-20 text-center border border-divider">
+          <div className="max-w-2xl mx-auto relative z-10">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-headline mb-6 leading-tight">
+              Ready to command <br />the room?
+            </h2>
+            <p className="text-lg text-muted-foreground mb-10">
+              Download our full 2026 Media Kit or request a bespoke quote for your upcoming campaign.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" className="h-14 px-8 rounded-full gradient-primary text-primary-foreground font-bold">
+                <a href="mailto:ads@zandani.co.ke">
+                  <Mail className="w-5 h-5 mr-2" />
+                  Request Media Kit
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="h-14 px-8 rounded-full border-2 font-bold">
+                <a href="tel:+254706396305">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Talk to Sales
+                </a>
+              </Button>
+            </div>
+            <p className="mt-10 text-xs text-muted-foreground flex items-center justify-center gap-2">
+              <Globe className="w-3 h-3" />
+              Trusted by leading brands in Nairobi & beyond.
+            </p>
+          </div>
         </div>
       </div>
     </Layout>
