@@ -38,7 +38,11 @@ jobs:
               }
 
               const fileContent = fs.readFileSync(filePath, 'utf8');
-              const allUrls = fileContent.split('\n').map(u => u.trim()).filter(u => u !== '');
+              
+              // This new line automatically strips out the comma and the date from the GSC export
+              const allUrls = fileContent.split('\n')
+                .map(u => u.split(',')[0].trim())
+                .filter(u => u !== '');
 
               if (allUrls.length === 0) {
                 console.log('✅ The deleted_urls.txt file is empty. All URLs have been processed!');
@@ -46,7 +50,7 @@ jobs:
               }
 
               const urlsToProcess = allUrls.slice(0, 200);
-              const remainingUrls = allUrls.slice(200);
+              const remainingUrls = fileContent.split('\n').filter(u => u.trim() !== '').slice(200);
 
               const rawKey = process.env.GSC_KEY_RAW;
               if (!rawKey || rawKey.trim() === '') {
@@ -86,7 +90,7 @@ jobs:
                 }
               }
 
-              // Overwrite the file with the remaining URLs
+              // Overwrite the file with the remaining raw lines for tomorrow
               fs.writeFileSync(filePath, remainingUrls.join('\n') + (remainingUrls.length > 0 ? '\n' : ''));
               console.log('\n🎉 Finished processing ' + successCount + ' URLs. ' + remainingUrls.length + ' URLs left for tomorrow.');
 
