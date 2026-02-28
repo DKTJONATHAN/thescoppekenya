@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'content/posts/**.md'
+  workflow_dispatch:
 
 jobs:
   google-index:
@@ -18,6 +19,13 @@ jobs:
         id: urls
         run: |
           SITE_URL="https://zandani.co.ke"
+          
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "list=${SITE_URL}/article/test-article" >> "$GITHUB_OUTPUT"
+            echo "count=1" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          
           FILES=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
           
           if [ -z "$FILES" ]; then
@@ -58,22 +66,37 @@ jobs:
               const rawKey = process.env.GSC_KEY_RAW;
               
               if (!rawKey || rawKey.trim() === '') {
-                throw new Error('GSC_KEY_RAW is completely empty. You must add the GSC_JSON_KEY secret to your GitHub Repository Settings.');
+                throw new Error('GSC_KEY_RAW is completely empty. GitHub cannot find the GSC_JSON_KEY secret.');
               }
 
               // Parse the JSON directly from the environment variable securely
               const keys = JSON.parse(rawKey);
               
+              // FORCE fix the private key newlines (Crucial for GitHub Secrets)
+              const privateKey = keys.private_key.replace(/\\\\n/g, '\\n').replace(/\\n/g, '\n');
+              
               const auth = new google.auth.JWT(
-                keys.client_email, null, keys.private_key,
-                ['https://www.googleapis.com/auth/indexing'], null
+                keys.client_email, 
+                null, 
+                privateKey,
+                ['https://www.googleapis.com/auth/indexing'], 
+                null
               );
+              
+              // Explicitly authenticate before doing anything else
+              await auth.authorize();
               
               const indexing = google.indexing({ version: 'v3', auth });
               const urls = process.env.URL_LIST.split(',');
 
               for (const url of urls) {
                 if (!url) continue;
+                
+                if (url.includes('test-article')) {
+                   console.log('✅ Manual Test Run Successful. Authentication to Google works perfectly.');
+                   continue;
+                }
+                
                 await indexing.urlNotifications.publish({
                   requestBody: { url: url, type: 'URL_UPDATED' }
                 });
