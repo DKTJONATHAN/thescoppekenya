@@ -62,6 +62,7 @@ export default function AdminPage() {
   const [isSavingAuthor, setIsSavingAuthor] = useState(false);
   const [editingAuthorKey, setEditingAuthorKey] = useState<string | null>(null);
   const [showDeleteAuthorConfirm, setShowDeleteAuthorConfirm] = useState<string | null>(null);
+  const [isCustomAuthor, setIsCustomAuthor] = useState(false);
   
   const [newPost, setNewPost] = useState({
     title: "",
@@ -75,6 +76,16 @@ export default function AdminPage() {
   });
 
   const [newAuthor, setNewAuthor] = useState<AuthorProfile>({
+    name: "",
+    role: "Contributing Writer",
+    bio: "",
+    avatar: "/api/placeholder/150/150",
+    location: "Kenya",
+    socials: { twitter: "", linkedin: "", email: "" }
+  });
+
+  // Used specifically for inline author creation on the posts tab
+  const [inlineAuthor, setInlineAuthor] = useState<AuthorProfile>({
     name: "",
     role: "Contributing Writer",
     bio: "",
@@ -204,7 +215,7 @@ export default function AdminPage() {
     }
   };
 
-  // --- POST MANAGEMENT ---
+  // POST MANAGEMENT
 
   const handlePublish = async (isUpdate: boolean) => {
     if (!newPost.title || !newPost.content) {
@@ -213,29 +224,24 @@ export default function AdminPage() {
     }
 
     setIsPublishing(true);
-    const postSlug = newPost.slug || generateSlug(newPost.title);
-    const filePath = `content/posts/${postSlug}.md`;
-
-    const tagsFormatted = (newPost.tags || "")
-      .split(',')
-      .map(t => t.trim())
-      .filter(t => t.length > 0)
-      .join(', ');
-
-    const markdown = `---
-title: "${newPost.title}"
-slug: "${postSlug}"
-excerpt: "${newPost.excerpt}"
-author: "${newPost.author}"
-image: "${newPost.image}"
-category: "${newPost.category}"
-date: "${editingPost?.date || new Date().toISOString().split('T')[0]}"
-tags: [${tagsFormatted}]
----
-
-${newPost.content}`;
+    let finalAuthorName = newPost.author;
 
     try {
+      // Handle Inline Custom Author Creation
+      if (isCustomAuthor && inlineAuthor.name) {
+        finalAuthorName = inlineAuthor.name;
+        const updatedAuthors = { ...authors, [inlineAuthor.name]: inlineAuthor };
+        const authorsSha = await getGithubFileSha('content/authors.json');
+        await pushToGithub(
+          'content/authors.json', 
+          JSON.stringify(updatedAuthors, null, 2), 
+          `Add new author via post builder: ${inlineAuthor.name}`, 
+          authorsSha || undefined
+        );
+        setAuthors(updatedAuthors);
+      }
+
+      // Handle Custom Category Creation
       if (newPost.category && !categories.some(c => c.name === newPost.category)) {
         const newSlug = generateSlug(newPost.category);
         const newCategories = [...categories, { name: newPost.category, slug: newSlug }];
@@ -244,6 +250,29 @@ ${newPost.content}`;
         setCategories(newCategories);
       }
 
+      const postSlug = newPost.slug || generateSlug(newPost.title);
+      const filePath = `content/posts/${postSlug}.md`;
+
+      const tagsFormatted = (newPost.tags || "")
+        .split(',')
+        .map(t => t.trim())
+        .filter(t => t.length > 0)
+        .join(', ');
+
+      const markdown = `---
+title: "${newPost.title}"
+slug: "${postSlug}"
+excerpt: "${newPost.excerpt}"
+author: "${finalAuthorName}"
+image: "${newPost.image}"
+category: "${newPost.category}"
+date: "${editingPost?.date || new Date().toISOString().split('T')[0]}"
+tags: [${tagsFormatted}]
+---
+
+${newPost.content}`;
+
+      // Handle updating existing post with a changed slug
       if (isUpdate && editingPost && editingPost.slug !== postSlug) {
         const oldSha = await getGithubFileSha(`content/posts/${editingPost.slug}.md`);
         if (oldSha) await deleteFromGithub(`content/posts/${editingPost.slug}.md`, `Delete old slug`, oldSha);
@@ -291,6 +320,11 @@ ${newPost.content}`;
       author: "The Scoop KE", tags: ""
     });
     setEditingPost(null);
+    setIsCustomAuthor(false);
+    setInlineAuthor({
+      name: "", role: "Contributing Writer", bio: "", avatar: "/api/placeholder/150/150", location: "Kenya",
+      socials: { twitter: "", linkedin: "", email: "" }
+    });
   };
 
   const handleEditPost = (post: Post) => {
@@ -305,6 +339,7 @@ ${newPost.content}`;
       author: post.author || "The Scoop KE",
       tags: post.tags ? post.tags.join(", ") : ""
     });
+    setIsCustomAuthor(false);
     setActiveTab("create");
   };
 
@@ -316,7 +351,7 @@ ${newPost.content}`;
     )
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  // --- AUTHOR MANAGEMENT ---
+  // AUTHOR MANAGEMENT
 
   const handleSaveAuthor = async () => {
     if (!newAuthor.name) {
@@ -328,7 +363,6 @@ ${newPost.content}`;
     try {
       const updatedAuthors = { ...authors };
       
-      // If editing and name changed, remove the old key
       if (editingAuthorKey && editingAuthorKey !== newAuthor.name) {
         delete updatedAuthors[editingAuthorKey];
       }
@@ -509,43 +543,101 @@ ${newPost.content}`;
                       rows={3}
                     />
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      <select
-                        value={isCustomCategory ? 'add-new' : newPost.category}
-                        onChange={(e) => {
-                          if (e.target.value === 'add-new') {
-                            setIsCustomCategory(true);
-                            setNewPost({ ...newPost, category: "" });
-                          } else {
-                            setIsCustomCategory(false);
-                            setNewPost({ ...newPost, category: e.target.value });
-                          }
-                        }}
-                        className="w-full p-4 rounded-2xl border border-divider bg-background"
-                      >
-                        {categories.map(c => <option key={c.slug} value={c.name}>{c.name}</option>)}
-                        <option value="add-new">+ New Category</option>
-                      </select>
-                      
-                      {/* Author Selection Dropdown */}
-                      <select
-                        value={newPost.author}
-                        onChange={(e) => setNewPost({ ...newPost, author: e.target.value })}
-                        className="w-full p-4 rounded-2xl border border-divider bg-background"
-                      >
-                        <option value="The Scoop KE">The Scoop KE (Default)</option>
-                        {Object.keys(authors).map(authorName => (
-                          <option key={authorName} value={authorName}>{authorName}</option>
-                        ))}
-                      </select>
+                    <div className="grid grid-cols-1 gap-4">
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <select
+                          value={isCustomCategory ? 'add-new' : newPost.category}
+                          onChange={(e) => {
+                            if (e.target.value === 'add-new') {
+                              setIsCustomCategory(true);
+                              setNewPost({ ...newPost, category: "" });
+                            } else {
+                              setIsCustomCategory(false);
+                              setNewPost({ ...newPost, category: e.target.value });
+                            }
+                          }}
+                          className="w-full p-4 rounded-2xl border border-divider bg-background"
+                        >
+                          {categories.map(c => <option key={c.slug} value={c.name}>{c.name}</option>)}
+                          <option value="add-new">+ New Category</option>
+                        </select>
+                        
+                        <select
+                          value={isCustomAuthor ? 'add-new' : newPost.author}
+                          onChange={(e) => {
+                            if (e.target.value === 'add-new') {
+                              setIsCustomAuthor(true);
+                              setNewPost({ ...newPost, author: "" });
+                            } else {
+                              setIsCustomAuthor(false);
+                              setNewPost({ ...newPost, author: e.target.value });
+                            }
+                          }}
+                          className="w-full p-4 rounded-2xl border border-divider bg-background"
+                        >
+                          <option value="The Scoop KE">The Scoop KE (Default)</option>
+                          {Object.keys(authors).map(authorName => (
+                            <option key={authorName} value={authorName}>{authorName}</option>
+                          ))}
+                          <option value="add-new">+ New Author</option>
+                        </select>
 
-                      <input
-                        type="text"
-                        placeholder="Tags (comma separated)"
-                        value={newPost.tags}
-                        onChange={(e) => setNewPost({ ...newPost, tags: e.target.value })}
-                        className="w-full p-4 rounded-2xl border border-divider bg-background"
-                      />
+                        <input
+                          type="text"
+                          placeholder="Tags (comma separated)"
+                          value={newPost.tags}
+                          onChange={(e) => setNewPost({ ...newPost, tags: e.target.value })}
+                          className="w-full p-4 rounded-2xl border border-divider bg-background"
+                        />
+                      </div>
+
+                      {/* Inline Author Form */}
+                      {isCustomAuthor && (
+                        <div className="p-5 bg-muted/40 border border-primary/20 rounded-2xl space-y-4 shadow-inner">
+                          <h4 className="text-sm font-bold text-primary flex items-center gap-2">
+                            <Users className="w-4 h-4" /> Quick Add Author
+                          </h4>
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input
+                              type="text"
+                              placeholder="Full Name *"
+                              value={inlineAuthor.name}
+                              onChange={(e) => setInlineAuthor({ ...inlineAuthor, name: e.target.value })}
+                              className="w-full p-3 rounded-xl border border-divider bg-background text-sm"
+                            />
+                            <input
+                              type="text"
+                              placeholder="Role / Title"
+                              value={inlineAuthor.role}
+                              onChange={(e) => setInlineAuthor({ ...inlineAuthor, role: e.target.value })}
+                              className="w-full p-3 rounded-xl border border-divider bg-background text-sm"
+                            />
+                          </div>
+                          <textarea
+                            placeholder="Short Bio *"
+                            value={inlineAuthor.bio}
+                            onChange={(e) => setInlineAuthor({ ...inlineAuthor, bio: e.target.value })}
+                            className="w-full p-3 rounded-xl border border-divider bg-background text-sm"
+                            rows={2}
+                          />
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input
+                              type="text"
+                              placeholder="Avatar URL"
+                              value={inlineAuthor.avatar}
+                              onChange={(e) => setInlineAuthor({ ...inlineAuthor, avatar: e.target.value })}
+                              className="w-full p-3 rounded-xl border border-divider bg-background text-sm font-mono"
+                            />
+                            <input
+                              type="text"
+                              placeholder="Location"
+                              value={inlineAuthor.location}
+                              onChange={(e) => setInlineAuthor({ ...inlineAuthor, location: e.target.value })}
+                              className="w-full p-3 rounded-xl border border-divider bg-background text-sm"
+                            />
+                          </div>
+                        </div>
+                      )}
                     </div>
 
                     <div>
