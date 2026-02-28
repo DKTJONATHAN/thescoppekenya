@@ -1,140 +1,157 @@
-import React, { useEffect, useState, useMemo, lazy, Suspense } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
+import { CategoryBar } from "@/components/articles/CategoryBar";
+import { ArticleCard } from "@/components/articles/ArticleCard";
 import { getAllPosts } from "@/lib/markdown";
 import { Link } from "react-router-dom";
 import { ArrowRight, TrendingUp, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
 
-// PERFORMANCE: Lazy load everything below the fold
-const CategoryBar = lazy(() => import("@/components/articles/CategoryBar").then(m => ({ default: m.CategoryBar })));
-const ArticleCard = lazy(() => import("@/components/articles/ArticleCard").then(m => ({ default: m.ArticleCard })));
-
-const INITIAL_VISIBLE = 20;
-const allPostsFromMarkdown = getAllPosts();
+const POSTS_PER_PAGE = 20;
+// Note: If getAllPosts() bundles ALL your markdown into the JS bundle, 
+// this alone is killing your mobile score.
+const allPostsFromMarkdown = getAllPosts(); 
 
 const Index = () => {
-  const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE);
+  const [visibleCount, setVisibleCount] = useState(POSTS_PER_PAGE);
   const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
 
-  // PERFORMANCE: Defer GA4 logic entirely until after "Interactive" state
+  // 1. SIMPLE, PREDICTABLE DATA FETCHING
   useEffect(() => {
-    const idleCallback = (window as any).requestIdleCallback || ((cb: any) => setTimeout(cb, 3000));
-    idleCallback(async () => {
+    const fetchViews = async () => {
       try {
         const res = await fetch('/api/get-views');
         if (res.ok) setViewCounts(await res.json());
-      } catch (e) { console.warn("Analytics deferred"); }
-    });
+      } catch (e) {
+        console.warn("View fetch failed");
+      }
+    };
+    // Let the initial paint finish, then fetch views
+    const timer = setTimeout(fetchViews, 2500);
+    return () => clearTimeout(timer);
   }, []);
 
-  // Normalizing GA4 data for actual trending accuracy
+  // 2. EFFICIENT MEMOIZATION
   const allPosts = useMemo(() => {
     return allPostsFromMarkdown.map(post => {
       const slug = post.slug.replace(/^\//, '').replace(/\.md$/, '');
-      const views = viewCounts[`/article/${slug}`] || viewCounts[`/article/${slug}/`] || 0;
-      return { ...post, views: views > 0 ? views : 50 };
+      const exactPath = `/article/${slug}`;
+      const pathWithSlash = `/article/${slug}/`;
+      
+      const gaViews = viewCounts[exactPath] || viewCounts[pathWithSlash] || 0;
+      return { ...post, views: gaViews > 0 ? gaViews : 47 };
     });
-  }, [viewCounts]);
+  }, [viewCounts]); // Only recalculate when GA4 data arrives
 
+  // 3. SEPARATE LISTS TO AVOID UNNECESSARY SORTS
+  const topStory = allPosts[0];
+  
   const trendingPosts = useMemo(() => {
-    return [...allPosts].sort((a, b) => b.views - a.views).slice(0, 5);
+    // Only sort a slice to save CPU
+    return [...allPosts].slice(0, 50).sort((a, b) => b.views - a.views).slice(0, 6);
   }, [allPosts]);
 
-  const topStory = allPosts[0];
-  const displayedPosts = allPosts.slice(1, visibleCount);
+  const displayedPosts = allPosts.slice(1, visibleCount + 1);
+  const hasMore = visibleCount < allPosts.length - 1;
 
   return (
     <Layout>
       <Helmet>
-        <title>Za Ndani | Kenya's Hottest Stories</title>
-        {/* CSS Performance Hack: Content-Visibility prevents off-screen rendering */}
-        <style>{`
-          .cv-auto { content-visibility: auto; contain-intrinsic-size: 100px 400px; }
-          .hero-img { aspect-ratio: 16/9; width: 100%; object-fit: cover; }
-        `}</style>
+        <title>Za Ndani - Kenya Celebrity Gossip & Entertainment News</title>
+        <meta name="description" content="Hottest Kenya celebrity gossip and trending news." />
+        <link rel="canonical" href="https://zandani.co.ke" />
+        {topStory?.image && <link rel="preload" as="image" href={topStory.image} fetchpriority="high" />}
       </Helmet>
 
-      {/* COMPACT MAGAZINE HERO (35vh) - Minimal JS impact */}
+      {/* FIXED HERO: Simple, absolute positioning, no heavy gradients */}
       {topStory && (
-        <section className="relative h-[35vh] md:h-[45vh] bg-black overflow-hidden flex items-end">
+        <section className="relative h-[55vh] min-h-[400px] w-full bg-black flex items-end">
           <img 
-            src={topStory.image} 
-            alt="" 
-            fetchpriority="high" 
-            className="absolute inset-0 hero-img opacity-60"
+            src={topStory.image || topStory.coverImage || '/images/placeholder-hero.jpg'} 
+            alt={topStory.title}
+            fetchpriority="high"
+            className="absolute inset-0 w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
-          
-          <div className="relative container max-w-7xl mx-auto px-4 pb-8 z-10">
-             <span className="bg-primary text-[10px] font-bold text-white px-2 py-0.5 rounded uppercase tracking-tighter mb-2 inline-block">Trending</span>
-             <h1 className="text-2xl md:text-5xl font-serif font-black text-white leading-tight line-clamp-2 max-w-4xl">
-               {topStory.title}
-             </h1>
-             <Link to={`/article/${topStory.slug}`} className="mt-4 inline-flex items-center text-white font-bold text-sm hover:text-primary transition">
-                Read Full Story <ArrowRight className="ml-2 w-4 h-4" />
-             </Link>
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+
+          <div className="relative container max-w-7xl mx-auto px-4 pb-12 z-10">
+            <span className="inline-block bg-primary text-white text-[10px] font-bold px-2 py-1 rounded mb-3 tracking-widest uppercase">
+              Hot Story
+            </span>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-black text-white leading-tight mb-6 max-w-3xl">
+              {topStory.title}
+            </h1>
+            <Link to={`/article/${topStory.slug}`}>
+              <Button className="bg-white text-black hover:bg-primary hover:text-white px-8 py-6 rounded-xl font-bold transition-colors">
+                Read Full Story <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
           </div>
         </section>
       )}
 
-      <Suspense fallback={<div className="h-12 bg-zinc-950" />}>
-        <CategoryBar />
-      </Suspense>
+      <CategoryBar />
 
-      <main className="container max-w-7xl mx-auto px-4 py-8 md:py-16">
-        <div className="grid lg:grid-cols-12 gap-10">
-          
-          {/* FEED SECTION */}
-          <div className="lg:col-span-8 space-y-12">
-            <div className="grid md:grid-cols-2 gap-8">
-              {displayedPosts.map((post, idx) => (
-                <div key={post.slug} className={`cv-auto ${idx > 4 ? 'opacity-90' : 'opacity-100'}`}>
-                  <Suspense fallback={<div className="h-64 bg-zinc-900 rounded-2xl animate-pulse" />}>
+      <section className="py-12 bg-background">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="grid lg:grid-cols-12 gap-12">
+            
+            {/* MAIN FEED: No complex layout logic, just a clean grid */}
+            <div className="lg:col-span-8 space-y-10">
+              <h2 className="text-2xl font-serif font-black italic border-b border-divider pb-4">
+                Fresh Off The Press
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                {displayedPosts.map((post) => (
+                  <div key={post.slug} className="min-h-[300px]">
                     <ArticleCard post={post} />
-                  </Suspense>
-                </div>
-              ))}
-            </div>
-
-            {visibleCount < allPosts.length && (
-              <div className="text-center py-10 border-t border-zinc-100">
-                <Button 
-                  onClick={() => setVisibleCount(v => v + 10)}
-                  className="bg-black text-white rounded-xl px-10 py-6 font-black hover:bg-primary transition-all"
-                >
-                  LOAD MORE STORIES <ChevronDown className="ml-2" />
-                </Button>
-              </div>
-            )}
-          </div>
-
-          {/* SIDEBAR - REAL GA4 TRENDING */}
-          <aside className="lg:col-span-4 hidden md:block">
-            <div className="sticky top-24 p-6 rounded-3xl bg-zinc-50 border border-zinc-200">
-              <h3 className="text-lg font-black mb-6 flex items-center gap-2">
-                <TrendingUp className="text-primary w-5 h-5" /> MOST READ (GA4)
-              </h3>
-              <div className="space-y-6">
-                {trendingPosts.map((post, i) => (
-                  <Link key={i} to={`/article/${post.slug}`} className="flex gap-4 group">
-                    <span className="text-2xl font-black text-zinc-300 italic">{i+1}</span>
-                    <div>
-                      <h4 className="font-bold text-sm leading-tight group-hover:text-primary line-clamp-2">
-                        {post.title}
-                      </h4>
-                      <p className="text-[10px] text-zinc-500 font-bold mt-1 uppercase">
-                        {post.views > 1000 ? `${(post.views/1000).toFixed(1)}K` : post.views} Views
-                      </p>
-                    </div>
-                  </Link>
+                  </div>
                 ))}
               </div>
-            </div>
-          </aside>
 
+              {hasMore && (
+                <div className="pt-8 text-center">
+                  <Button
+                    onClick={() => setVisibleCount((prev) => prev + 10)}
+                    variant="outline"
+                    className="w-full md:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-white px-12 py-8 rounded-xl text-lg font-bold"
+                  >
+                    Load More Stories
+                    <ChevronDown className="w-5 h-5 ml-2" />
+                  </Button>
+                </div>
+              )}
+            </div>
+
+            {/* SIDEBAR: Standard list */}
+            <aside className="lg:col-span-4 hidden md:block">
+              <div className="sticky top-24 p-8 rounded-3xl bg-surface border border-divider">
+                <h3 className="text-xl font-black mb-6 flex items-center gap-2">
+                  <TrendingUp className="text-primary w-5 h-5" /> Trending Now
+                </h3>
+                <div className="space-y-6">
+                  {trendingPosts.map((post, i) => (
+                    <Link key={post.slug} to={`/article/${post.slug}`} className="flex gap-4 group">
+                      <span className="text-3xl font-black text-muted-foreground/20 italic">0{i + 1}</span>
+                      <div>
+                        <h4 className="font-bold leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                          {post.title}
+                        </h4>
+                        <div className="flex items-center gap-2 mt-2 text-[10px] text-muted-foreground font-bold uppercase">
+                          <span>{post.views > 999 ? `${(post.views / 1000).toFixed(1)}k` : post.views} views</span>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </aside>
+
+          </div>
         </div>
-      </main>
+      </section>
     </Layout>
   );
 };
