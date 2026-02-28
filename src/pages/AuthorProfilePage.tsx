@@ -5,22 +5,7 @@ import { getLatestPosts } from "@/lib/markdown";
 import { ChevronLeft, Mail, Twitter, Linkedin, BookOpen } from "lucide-react";
 import { useMemo } from "react";
 import { Helmet } from "react-helmet-async";
-
-// You can eventually move this to a shared /lib/authors.ts file
-const AUTHOR_PROFILES: Record<string, { role: string; bio: string; avatar: string; location: string }> = {
-  "Jonathan Mwaniki": {
-    role: "Founder & Lead Developer",
-    bio: "Jonathan Mwaniki is a journalist, content creator, and self-taught full-stack web developer. He bridges the gap between compelling digital media and modern technology, specializing in building automated content pipelines.",
-    avatar: "/api/placeholder/150/150",
-    location: "Maua, Meru County, Kenya"
-  },
-  "Dalton Ross": {
-    role: "Senior Entertainment Writer",
-    bio: "Dalton is a respected writer and editor with extensive experience covering television, lifestyle, and the entertainment industry. Always first with the tea.",
-    avatar: "/api/placeholder/150/150",
-    location: "Nairobi, Kenya"
-  }
-};
+import { AUTHOR_PROFILES, DEFAULT_AUTHOR_PROFILE } from "@/lib/authors";
 
 export default function AuthorProfilePage() {
   const { authorName } = useParams<{ authorName: string }>();
@@ -45,11 +30,10 @@ export default function AuthorProfilePage() {
     return { actualAuthorName: actualName, authorPosts: posts };
   }, [authorName, allPosts]);
 
-  const profile = AUTHOR_PROFILES[actualAuthorName] || {
-    role: "Contributor",
-    bio: "Contributing writer for Za Ndani bringing you the latest stories.",
-    avatar: "/api/placeholder/150/150",
-    location: "Kenya"
+  // Pull the profile from our central database, or use the default if missing
+  const profile = AUTHOR_PROFILES[actualAuthorName] || { 
+    ...DEFAULT_AUTHOR_PROFILE, 
+    name: actualAuthorName 
   };
 
   if (authorPosts.length === 0) {
@@ -117,15 +101,21 @@ export default function AuthorProfilePage() {
               </p>
               
               <div className="flex items-center justify-center md:justify-start gap-3">
-                <button className="p-2.5 bg-muted rounded-full text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
-                  <Twitter className="w-4 h-4" />
-                </button>
-                <button className="p-2.5 bg-muted rounded-full text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
-                  <Linkedin className="w-4 h-4" />
-                </button>
-                <button className="p-2.5 bg-muted rounded-full text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
-                  <Mail className="w-4 h-4" />
-                </button>
+                {profile.socials?.twitter && (
+                  <button onClick={() => window.open(profile.socials?.twitter, '_blank')} className="p-2.5 bg-muted rounded-full text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <Twitter className="w-4 h-4" />
+                  </button>
+                )}
+                {profile.socials?.linkedin && (
+                  <button onClick={() => window.open(profile.socials?.linkedin, '_blank')} className="p-2.5 bg-muted rounded-full text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <Linkedin className="w-4 h-4" />
+                  </button>
+                )}
+                {profile.socials?.email && (
+                  <button onClick={() => window.location.href = `mailto:${profile.socials?.email}`} className="p-2.5 bg-muted rounded-full text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <Mail className="w-4 h-4" />
+                  </button>
+                )}
               </div>
             </div>
           </div>
