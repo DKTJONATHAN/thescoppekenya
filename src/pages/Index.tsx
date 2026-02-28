@@ -43,23 +43,28 @@ const Index = () => {
 
   const handleLoadMore = () => setVisibleCount(prev => prev + LOAD_MORE_COUNT);
 
-  // Helper to chunk posts for the "2 list + 1 bento" pattern
+  // Cleaner chunking for list plus bento pattern without mutating loop index
   const renderedContent = useMemo(() => {
     const elements = [];
-    for (let i = 0; i < displayedPosts.length; i += 2) {
-      // Add 2 regular list items
-      elements.push(
-        <div key={`pair-${i}`} className="grid md:grid-cols-2 gap-8">
-          {displayedPosts.slice(i, i + 2).map(post => (
-            <ArticleCard key={post.slug} post={post} />
-          ))}
-        </div>
-      );
+    let i = 0;
+    while (i < displayedPosts.length) {
+      // Two regular cards
+      const pair = displayedPosts.slice(i, i + 2);
+      if (pair.length > 0) {
+        elements.push(
+          <div key={`pair-${i}`} className="grid md:grid-cols-2 gap-8">
+            {pair.map(post => (
+              <ArticleCard key={post.slug} post={post} />
+            ))}
+          </div>
+        );
+      }
+      i += 2;
 
-      // After every 2 items, if there are more posts, insert a Mini Bento
-      const bentoStart = i + 2;
+      // Insert bento if enough posts remain
+      const bentoStart = i;
       const bentoChunk = feedPosts.slice(bentoStart, bentoStart + 3);
-      if (bentoChunk.length === 3 && i < displayedPosts.length - 2) {
+      if (bentoChunk.length === 3 && i < displayedPosts.length) {
         elements.push(
           <div key={`bento-${i}`} className="grid grid-cols-2 md:grid-cols-3 gap-4 py-8">
             <div className="col-span-2 md:col-span-2 h-64 rounded-3xl overflow-hidden">
@@ -75,7 +80,7 @@ const Index = () => {
             </div>
           </div>
         );
-        i += 3; // Skip these since they are now in a bento
+        i += 3; // skip the bento cards
       }
     }
     return elements;
@@ -85,16 +90,26 @@ const Index = () => {
     <Layout>
       <Helmet>
         <title>Za Ndani | Trending News & Gossip</title>
+        {topStory && topStory.image && (
+          <link
+            rel="preload"
+            as="image"
+            href={topStory.image}
+            fetchpriority="high"
+          />
+        )}
       </Helmet>
 
-      {/* COMPACT HERO - 65vh for better mobile flow */}
+      {/* COMPACT HERO - reduced to 50vh for faster paint and better mobile flow */}
       {topStory && (
-        <section className="relative h-[65vh] min-h-[500px] flex items-end bg-black overflow-hidden">
+        <section className="relative h-[50vh] min-h-[400px] flex items-end bg-black overflow-hidden">
           <div className="absolute inset-0">
             <img 
               src={topStory.image || '/images/placeholder.jpg'} 
               alt=""
               fetchpriority="high"
+              loading="eager"
+              decoding="async"
               className="w-full h-full object-cover opacity-70"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10" />
@@ -122,11 +137,11 @@ const Index = () => {
         <CategoryBar />
       </Suspense>
 
-      {/* DYNAMIC FEED WITH RECURSIVE BENTO LAYOUT */}
+      {/* DYNAMIC FEED WITH CLEANER BENTO LAYOUT */}
       <section className="py-12 md:py-20 bg-background">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-12 gap-12">
-            
+
             {/* Main Content Area */}
             <div className="lg:col-span-8 space-y-12">
               <div className="flex items-center gap-4 mb-8">
@@ -152,7 +167,7 @@ const Index = () => {
                   </Button>
                 </div>
               )}
-              
+
               {!hasMore && (
                 <div className="py-20 text-center">
                   <p className="text-muted-foreground font-serif italic text-lg">You're all caught up with the juice! 🌶️</p>
