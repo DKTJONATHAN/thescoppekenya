@@ -1,135 +1,84 @@
-import { useEffect, useState, useMemo, lazy, Suspense } from "react";
+import { useParams, Link } from "react-router-dom";
+import { getPostBySlug } from "@/lib/posts";
 import { Layout } from "@/components/layout/Layout";
-import { getAllPosts } from "@/lib/markdown";
-import { Link } from "react-router-dom";
-import { ArrowRight, TrendingUp, ChevronDown } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
+import { Calendar, Clock, ChevronLeft, Share2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-// Lazy load below-the-fold components to slash TBT
-const CategoryBar = lazy(() => import("@/components/articles/CategoryBar").then(m => ({ default: m.CategoryBar })));
-const ArticleCard = lazy(() => import("@/components/articles/ArticleCard").then(m => ({ default: m.ArticleCard })));
+const ArticlePage = () => {
+  const { slug } = useParams();
+  const post = getPostBySlug(slug || "");
 
-const Index = () => {
-  const [visibleCount, setVisibleCount] = useState(6); // Start small to save CPU
-  const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
-  const allPostsFromMarkdown = useMemo(() => getAllPosts(), []);
-
-  useEffect(() => {
-    // Analytics: Wait until the user is actually interacting
-    const timer = setTimeout(async () => {
-      try {
-        const res = await fetch('/api/get-views');
-        if (res.ok) setViewCounts(await res.json());
-      } catch (e) { console.error("GA4 Deferred"); }
-    }, 4000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  const topStory = allPostsFromMarkdown[0];
-  const displayPosts = allPostsFromMarkdown.slice(1, visibleCount);
+  if (!post) return <div className="p-20 text-center font-black">STORY NOT FOUND</div>;
 
   return (
     <Layout>
       <Helmet>
-        <title>Za Ndani | Kenya's Hottest Stories</title>
-        {/* RESOURCE HINT: Tells browser to fetch image BEFORE JS is ready */}
-        {topStory?.image && (
-          <link rel="preload" as="image" href={topStory.image} fetchpriority="high" />
-        )}
+        <title>{post.title} | Za Ndani</title>
+        <meta name="description" content={post.excerpt} />
+        <meta property="og:image" content={post.image} />
+        <link rel="preload" as="image" href={post.image} fetchpriority="high" />
       </Helmet>
 
-      {/* HERO SECTION - Optimized for LCP */}
-      {topStory && (
-        <section className="relative h-[45vh] bg-zinc-900 overflow-hidden flex items-end">
-          <img 
-            src={topStory.image} 
-            alt=""
-            fetchpriority="high" // Critical for LCP
-            loading="eager"
-            className="absolute inset-0 w-full h-full object-cover opacity-60"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
-          <div className="relative container mx-auto px-4 pb-10 z-20">
-            <h1 className="text-3xl md:text-6xl font-serif font-black text-white leading-tight line-clamp-2 max-w-4xl">
-              {topStory.title}
-            </h1>
-            <Link to={`/article/${topStory.slug}`} className="mt-4 inline-flex items-center text-primary font-bold text-sm">
-               READ FULL STORY <ArrowRight className="ml-2 w-4 h-4" />
-            </Link>
-          </div>
-        </section>
-      )}
+      <article className="bg-white">
+        {/* HERO HEADER */}
+        <div className="container max-w-4xl mx-auto px-4 pt-8 pb-12">
+          <Link to="/" className="flex items-center text-zinc-400 font-bold text-sm mb-6 hover:text-primary transition-colors">
+            <ChevronLeft className="w-4 h-4" /> BACK TO SCOOPS
+          </Link>
 
-      <Suspense fallback={<div className="h-12 bg-zinc-100 animate-pulse" />}>
-        <CategoryBar />
-      </Suspense>
-
-      <main className="container max-w-7xl mx-auto px-4 py-12">
-        <div className="grid lg:grid-cols-12 gap-10">
-          <div className="lg:col-span-8">
+          <div className="space-y-6">
+            <div className="flex items-center gap-3">
+               <span className="bg-primary text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">
+                {post.category}
+               </span>
+               <div className="flex gap-4 text-zinc-400 text-[11px] font-bold uppercase tracking-widest">
+                 <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> {post.date}</span>
+                 <span className="flex items-center gap-1"><Clock className="w-3 h-3" /> {post.readTime} MIN READ</span>
+               </div>
+            </div>
             
-            {/* BENTO GRID 1 */}
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-              {displayPosts.slice(0, 2).map(post => (
-                <div key={post.slug} className="min-h-[350px]">
-                  <Suspense fallback={<div className="w-full h-64 bg-zinc-100 rounded-2xl" />}>
-                    <ArticleCard post={post} />
-                  </Suspense>
-                </div>
-              ))}
-            </div>
-
-            {/* BENTO FEATURE SECTION */}
-            {displayPosts.length > 2 && (
-              <div className="grid md:grid-cols-3 gap-4 mb-12">
-                <div className="md:col-span-2 aspect-video bg-zinc-900 rounded-3xl overflow-hidden">
-                  <Suspense fallback={<div className="w-full h-full bg-zinc-200" />}>
-                    <ArticleCard post={displayPosts[2]} variant="featured" />
-                  </Suspense>
-                </div>
-                <div className="space-y-4">
-                  {displayPosts.slice(3, 5).map(post => (
-                    <div key={post.slug} className="h-[calc(50%-8px)]">
-                       <ArticleCard post={post} variant="compact" />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {visibleCount < allPostsFromMarkdown.length && (
-              <div className="text-center py-10">
-                <Button 
-                  onClick={() => setVisibleCount(v => v + 8)}
-                  className="bg-black text-white px-12 py-7 rounded-2xl font-black hover:bg-primary transition-all"
-                >
-                  LOAD MORE SCOOPS <ChevronDown className="ml-2" />
-                </Button>
-              </div>
-            )}
+            <h1 className="text-4xl md:text-6xl font-serif font-black leading-[1.05] tracking-tighter text-zinc-950">
+              {post.title}
+            </h1>
           </div>
 
-          {/* SIDEBAR - Keep it simple to avoid TBT */}
-          <aside className="lg:col-span-4 hidden lg:block">
-            <div className="sticky top-24 p-8 rounded-[2.5rem] bg-zinc-50 border border-zinc-100">
-              <h3 className="text-xl font-black mb-8 flex items-center gap-2">
-                <TrendingUp className="text-primary" /> TRENDING
-              </h3>
-              {allPostsFromMarkdown.slice(0, 5).map((post, i) => (
-                <Link key={i} to={`/article/${post.slug}`} className="flex gap-4 mb-6 group">
-                  <span className="text-2xl font-black text-zinc-200 italic">{i+1}</span>
-                  <h4 className="text-sm font-bold leading-snug group-hover:text-primary line-clamp-2">
-                    {post.title}
-                  </h4>
-                </Link>
-              ))}
-            </div>
-          </aside>
+          <div className="mt-10 aspect-[16/10] md:aspect-[21/9] rounded-[2rem] overflow-hidden shadow-2xl bg-zinc-100">
+            <img 
+              src={post.image} 
+              alt={post.title} 
+              className="w-full h-full object-cover" 
+            />
+          </div>
         </div>
-      </main>
+
+        {/* BODY CONTENT */}
+        <div className="container max-w-2xl mx-auto px-4 pb-32">
+          <div 
+            className="prose prose-zinc prose-lg md:prose-xl max-w-none 
+              prose-headings:font-serif prose-headings:font-black prose-headings:tracking-tighter
+              prose-p:text-zinc-800 prose-p:leading-relaxed
+              prose-strong:text-zinc-950 prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+              prose-img:rounded-3xl prose-img:shadow-lg"
+            dangerouslySetInnerHTML={{ __html: post.htmlContent }} 
+          />
+          
+          <div className="mt-20 pt-10 border-t border-zinc-100 flex justify-between items-center">
+             <div className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-full bg-zinc-900 flex items-center justify-center text-white font-black text-xs">ZN</div>
+                <div>
+                  <p className="text-xs font-black uppercase">Published by</p>
+                  <p className="text-sm font-bold text-zinc-500">Za Ndani Editorial</p>
+                </div>
+             </div>
+             <Button variant="outline" className="rounded-full gap-2 font-bold">
+               <Share2 className="w-4 h-4" /> SHARE
+             </Button>
+          </div>
+        </div>
+      </article>
     </Layout>
   );
 };
 
-export default Index;
+export default ArticlePage;
