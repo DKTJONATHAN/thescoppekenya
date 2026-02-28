@@ -1,0 +1,113 @@
+name: Bulk Google URL Removal
+
+on:
+  workflow_dispatch:
+
+jobs:
+  bulk-remove:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Google Library
+        run: npm install googleapis --no-save
+
+      - name: Run Bulk Deletion Script
+        env:
+          GSC_KEY_RAW: ${{ secrets.GSC_JSON_KEY }}
+        run: |
+          node -e "
+          const { google } = require('googleapis');
+          const fs = require('fs');
+
+          async function run() {
+            try {
+              const filePath = 'deleted_urls.txt';
+              
+              if (!fs.existsSync(filePath)) {
+                console.log('❌ No deleted_urls.txt file found in the repository.');
+                process.exit(0);
+              }
+
+              const fileContent = fs.readFileSync(filePath, 'utf8');
+              const allUrls = fileContent.split('\n').map(u => u.trim()).filter(u => u !== '');
+
+              if (allUrls.length === 0) {
+                console.log('✅ The deleted_urls.txt file is empty. All URLs have been processed!');
+                process.exit(0);
+              }
+
+              const urlsToProcess = allUrls.slice(0, 200);
+              const remainingUrls = allUrls.slice(200);
+
+              const rawKey = process.env.GSC_KEY_RAW;
+              if (!rawKey || rawKey.trim() === '') {
+                throw new Error('GSC_KEY_RAW is completely empty.');
+              }
+
+              const keys = JSON.parse(rawKey);
+              if (!keys.client_email || !keys.private_key) {
+                throw new Error('Invalid JSON key.');
+              }
+              
+              keys.private_key = keys.private_key.replace(/\\\\n/g, '\\n').replace(/\\n/g, '\n');
+
+              const auth = new google.auth.GoogleAuth({
+                credentials: keys,
+                scopes: ['https://www.googleapis.com/auth/indexing']
+              });
+
+              const authClient = await auth.getClient();
+              await authClient.getAccessToken();
+              
+              const indexing = google.indexing({ version: 'v3', auth });
+              let successCount = 0;
+
+              for (const url of urlsToProcess) {
+                try {
+                  await indexing.urlNotifications.publish({
+                    requestBody: { url: url, type: 'URL_DELETED' }
+                  });
+                  console.log('🗑️ Requested Deletion for:', url);
+                  successCount++;
+                  
+                  // Half-second delay to protect against rate limits
+                  await new Promise(resolve => setTimeout(resolve, 500));
+                } catch (postErr) {
+                  console.error('❌ Failed on ' + url + ':', postErr.message);
+                }
+              }
+
+              // Overwrite the file with the remaining URLs
+              fs.writeFileSync(filePath, remainingUrls.join('\n') + (remainingUrls.length > 0 ? '\n' : ''));
+              console.log('\n🎉 Finished processing ' + successCount + ' URLs. ' + remainingUrls.length + ' URLs left for tomorrow.');
+
+            } catch (err) {
+              console.error('❌ Script Failed:', err.message);
+              process.exit(1);
+            }
+          }
+          run();"
+
+      - name: Commit Updated List
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add deleted_urls.txt
+          
+          # Only commit and push if the file was actually modified
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: remove processed URLs from deletion list"
+            git push
+            echo "✅ Successfully updated deleted_urls.txt in the repository."
+          else
+            echo "✅ No changes needed for deleted_urls.txt."
+          fi
