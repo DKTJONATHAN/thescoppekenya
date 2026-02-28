@@ -2,39 +2,84 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { ArticleCard } from "@/components/articles/ArticleCard";
 import { getLatestPosts } from "@/lib/markdown";
-import { ChevronLeft, Mail, Twitter, Linkedin, BookOpen } from "lucide-react";
-import { useMemo } from "react";
+import { ChevronLeft, Mail, Twitter, Linkedin, BookOpen, Loader2 } from "lucide-react";
+import { useMemo, useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import { AUTHOR_PROFILES, DEFAULT_AUTHOR_PROFILE } from "@/lib/authors";
+
+export interface AuthorProfile {
+  name: string;
+  role: string;
+  bio: string;
+  avatar: string;
+  location: string;
+  socials?: {
+    twitter?: string;
+    linkedin?: string;
+    email?: string;
+  };
+}
+
+const DEFAULT_AUTHOR_PROFILE: AuthorProfile = {
+  name: "Guest Contributor",
+  role: "Contributing Writer",
+  bio: "Contributing writer for Za Ndani bringing you the latest stories.",
+  avatar: "/api/placeholder/150/150",
+  location: "Kenya",
+};
 
 export default function AuthorProfilePage() {
   const { authorName } = useParams<{ authorName: string }>();
   const navigate = useNavigate();
+  const [authorsDb, setAuthorsDb] = useState<Record<string, AuthorProfile>>({});
+  const [isLoading, setIsLoading] = useState(true);
 
-  // Fetch all posts to filter by this author
   const allPosts = useMemo(() => getLatestPosts(1000), []);
 
-  // Find the author's real name and their posts based on the URL slug
+  useEffect(() => {
+    const fetchAuthors = async () => {
+      try {
+        const res = await fetch('/content/authors.json');
+        if (res.ok) {
+          const data = await res.json();
+          setAuthorsDb(data);
+        }
+      } catch (e) {
+        console.error("Failed to fetch authors.json", e);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    fetchAuthors();
+  }, []);
+
   const { actualAuthorName, authorPosts } = useMemo(() => {
     if (!authorName) return { actualAuthorName: "", authorPosts: [] };
 
-    // Group posts by author slug
     const posts = allPosts.filter(post => {
       const slugifiedName = post.author.toLowerCase().replace(/\s+/g, '-');
       return slugifiedName === authorName;
     });
 
-    // Extract the exact capitalized name from the first matched post
     const actualName = posts.length > 0 ? posts[0].author : authorName.replace(/-/g, ' ');
 
     return { actualAuthorName: actualName, authorPosts: posts };
   }, [authorName, allPosts]);
 
-  // Pull the profile from our central database, or use the default if missing
-  const profile = AUTHOR_PROFILES[actualAuthorName] || { 
+  const profile = authorsDb[actualAuthorName] || { 
     ...DEFAULT_AUTHOR_PROFILE, 
     name: actualAuthorName 
   };
+
+  if (isLoading) {
+    return (
+      <Layout>
+        <div className="flex flex-col items-center justify-center min-h-[50vh] text-muted-foreground">
+          <Loader2 className="w-10 h-10 animate-spin text-primary mb-4" />
+          <p>Loading author details...</p>
+        </div>
+      </Layout>
+    );
+  }
 
   if (authorPosts.length === 0) {
     return (
@@ -61,7 +106,6 @@ export default function AuthorProfilePage() {
         <link rel="canonical" href={`https://zandani.co.ke/author/${authorName}`} />
       </Helmet>
 
-      {/* Back Navigation */}
       <div className="bg-muted/50 border-b border-border">
         <div className="container py-3">
           <button
@@ -77,7 +121,6 @@ export default function AuthorProfilePage() {
       <div className="py-12 md:py-16">
         <div className="container max-w-5xl">
           
-          {/* Author Header Profile */}
           <div className="bg-surface border border-border rounded-3xl p-8 md:p-12 mb-16 flex flex-col md:flex-row items-center md:items-start gap-8 shadow-sm">
             <img 
               src={profile.avatar} 
@@ -120,7 +163,6 @@ export default function AuthorProfilePage() {
             </div>
           </div>
 
-          {/* Articles Feed */}
           <div>
             <div className="flex items-center justify-between mb-8 border-b border-border pb-4">
               <h2 className="text-2xl font-serif font-bold text-foreground flex items-center gap-2">
