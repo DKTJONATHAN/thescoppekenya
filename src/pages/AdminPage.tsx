@@ -1,8 +1,8 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { getAllPosts, Post, categories as defaultCategories } from "@/lib/markdown";
-import { Lock, Plus, Eye, FileText, LogOut, Loader2, Pencil, Trash2, Github, Search, Users, AlertCircle } from "lucide-react";
+import { Lock, Plus, Eye, FileText, LogOut, Loader2, Pencil, Trash2, Github, Search, Users, RefreshCw } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
@@ -39,11 +39,6 @@ export interface AuthorProfile {
   };
 }
 
-// Extended type for the UI to handle authors that exist in posts but not in authors.json
-interface DisplayAuthorProfile extends AuthorProfile {
-  isAutoDetected?: boolean;
-}
-
 export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [pin, setPin] = useState("");
@@ -65,6 +60,7 @@ export default function AdminPage() {
   // Author states
   const [authors, setAuthors] = useState<Record<string, AuthorProfile>>({});
   const [isSavingAuthor, setIsSavingAuthor] = useState(false);
+  const [isSyncingAuthors, setIsSyncingAuthors] = useState(false);
   const [editingAuthorKey, setEditingAuthorKey] = useState<string | null>(null);
   const [showDeleteAuthorConfirm, setShowDeleteAuthorConfirm] = useState<string | null>(null);
   const [isCustomAuthor, setIsCustomAuthor] = useState(false);
@@ -80,7 +76,7 @@ export default function AdminPage() {
     tags: ""
   });
 
-  const [newAuthor, setNewAuthor] = useState<DisplayAuthorProfile>({
+  const [newAuthor, setNewAuthor] = useState<AuthorProfile>({
     name: "",
     role: "Contributing Writer",
     bio: "",
@@ -132,28 +128,6 @@ export default function AdminPage() {
       }
     }
   }
-
-  // Auto scan posts to find authors not explicitly saved in authors.json
-  const allUniqueAuthors = useMemo(() => {
-    const merged: Record<string, DisplayAuthorProfile> = { ...authors };
-    
-    posts.forEach(post => {
-      const authorName = post.author || "The Scoop KE";
-      if (!merged[authorName]) {
-        merged[authorName] = {
-          name: authorName,
-          role: "Contributor (Auto-detected)",
-          bio: "This author was found in existing articles but does not have a formal profile set up yet.",
-          avatar: "/api/placeholder/150/150",
-          location: "Unknown",
-          isAutoDetected: true,
-          socials: {}
-        };
-      }
-    });
-    
-    return merged;
-  }, [posts, authors]);
 
   useEffect(() => {
     if (newPost.category && !categories.some(cat => cat.name === newPost.category)) {
@@ -357,12 +331,12 @@ ${newPost.content}`;
   const handleEditPost = (post: Post) => {
     setEditingPost(post);
     setNewPost({
-      title: post.title,
-      slug: post.slug,
-      excerpt: post.excerpt,
-      category: post.category,
-      content: post.content,
-      image: post.image,
+      title: post.title || "",
+      slug: post.slug || "",
+      excerpt: post.excerpt || "",
+      category: post.category || "News",
+      content: post.content || "",
+      image: post.image || "",
       author: post.author || "The Scoop KE",
       tags: post.tags ? post.tags.join(", ") : ""
     });
@@ -370,15 +344,67 @@ ${newPost.content}`;
     setActiveTab("create");
   };
 
+  // Completely crash-proofed filter and sort
   const filteredPosts = posts
-    .filter(post => 
-      (post.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
-       post.category.toLowerCase().includes(searchTerm.toLowerCase())) &&
-      (filterCategory === "All" || post.category === filterCategory)
-    )
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    .filter(post => {
+      const title = post.title || "";
+      const category = post.category || "";
+      const search = searchTerm.toLowerCase();
+      
+      const matchesSearch = title.toLowerCase().includes(search) || category.toLowerCase().includes(search);
+      const matchesCategory = filterCategory === "All" || category === filterCategory;
+      
+      return matchesSearch && matchesCategory;
+    })
+    .sort((a, b) => {
+      const dateA = a.date ? new Date(a.date).getTime() : 0;
+      const dateB = b.date ? new Date(b.date).getTime() : 0;
+      return dateB - dateA;
+    });
 
   // AUTHOR MANAGEMENT
+
+  const handleSyncAuthors = async () => {
+    setIsSyncingAuthors(true);
+    try {
+      const updatedAuthors = { ...authors };
+      let hasChanges = false;
+
+      // Scan all posts once to find missing authors
+      posts.forEach(post => {
+        const authorName = post.author || "The Scoop KE";
+        if (!updatedAuthors[authorName]) {
+          updatedAuthors[authorName] = {
+            name: authorName,
+            role: "Contributing Writer",
+            bio: "Contributing writer for Za Ndani bringing you the latest stories.",
+            avatar: "/api/placeholder/150/150",
+            location: "Kenya",
+            socials: { twitter: "", linkedin: "", email: "" }
+          };
+          hasChanges = true;
+        }
+      });
+
+      if (hasChanges) {
+        const sha = await getGithubFileSha('content/authors.json');
+        await pushToGithub(
+          'content/authors.json', 
+          JSON.stringify(updatedAuthors, null, 2), 
+          `Auto-sync missing authors from existing posts`, 
+          sha || undefined
+        );
+        setAuthors(updatedAuthors);
+        toast({ title: "Sync Complete", description: "Found and permanently saved missing authors to the database." });
+      } else {
+        toast({ title: "Up to date", description: "All authors found in your posts are already in the database." });
+      }
+    } catch (error: any) {
+      toast({ title: "Sync failed", description: error.message, variant: "destructive" });
+    } finally {
+      setIsSyncingAuthors(false);
+    }
+  };
 
   const handleSaveAuthor = async () => {
     if (!newAuthor.name) {
@@ -390,14 +416,11 @@ ${newPost.content}`;
     try {
       const updatedAuthors = { ...authors };
       
-      // If editing an existing author and changing their name, remove the old key
-      if (editingAuthorKey && editingAuthorKey !== newAuthor.name && !newAuthor.isAutoDetected) {
+      if (editingAuthorKey && editingAuthorKey !== newAuthor.name) {
         delete updatedAuthors[editingAuthorKey];
       }
       
-      // Strip out the auto detected flag before saving to JSON
-      const { isAutoDetected, ...authorDataToSave } = newAuthor;
-      updatedAuthors[newAuthor.name] = authorDataToSave;
+      updatedAuthors[newAuthor.name] = newAuthor;
       
       const sha = await getGithubFileSha('content/authors.json');
       await pushToGithub(
@@ -445,7 +468,7 @@ ${newPost.content}`;
 
   const handleEditAuthor = (authorKey: string) => {
     setEditingAuthorKey(authorKey);
-    setNewAuthor(allUniqueAuthors[authorKey]);
+    setNewAuthor(authors[authorKey]);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -540,7 +563,7 @@ ${newPost.content}`;
                     Manage Authors
                   </div>
                   <span className={`text-xs px-2 py-0.5 rounded-full ${activeTab === "authors" ? "bg-primary-foreground/20" : "bg-muted-foreground/10"}`}>
-                    {Object.keys(allUniqueAuthors).length}
+                    {Object.keys(authors).length}
                   </span>
                 </button>
               </nav>
@@ -565,7 +588,7 @@ ${newPost.content}`;
               </Button>
             </div>
 
-            {/* Mobile Tab Navigation (Visible on smaller screens so you can switch panels) */}
+            {/* Mobile Tab Navigation */}
             <div className="flex lg:hidden overflow-x-auto gap-2 mb-8 pb-2">
               <Button 
                 variant={activeTab === "create" ? "default" : "outline"} 
@@ -654,7 +677,7 @@ ${newPost.content}`;
                           className="w-full p-4 rounded-2xl border border-divider bg-background outline-none"
                         >
                           <option value="The Scoop KE">The Scoop KE (Default)</option>
-                          {Object.keys(allUniqueAuthors)
+                          {Object.keys(authors)
                             .filter(name => name !== "The Scoop KE")
                             .map(authorName => (
                             <option key={authorName} value={authorName}>{authorName}</option>
@@ -851,41 +874,45 @@ ${newPost.content}`;
                 
                 {/* Author List */}
                 <div className="lg:col-span-5 bg-surface border border-divider rounded-3xl p-6 h-fit shadow-sm">
-                  <h2 className="text-xl font-bold mb-6 flex items-center justify-between">
-                    Current Team
-                    <Badge variant="secondary" className="bg-primary/10 text-primary">{Object.keys(allUniqueAuthors).length}</Badge>
-                  </h2>
+                  <div className="flex items-center justify-between mb-6">
+                    <h2 className="text-xl font-bold flex items-center gap-2">
+                      Database
+                      <Badge variant="secondary" className="bg-primary/10 text-primary">{Object.keys(authors).length}</Badge>
+                    </h2>
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      onClick={handleSyncAuthors} 
+                      disabled={isSyncingAuthors}
+                      className="text-xs h-8"
+                    >
+                      {isSyncingAuthors ? <Loader2 className="w-3 h-3 animate-spin mr-1.5" /> : <RefreshCw className="w-3 h-3 mr-1.5" />}
+                      Sync from Posts
+                    </Button>
+                  </div>
+                  
                   <div className="space-y-4 max-h-[600px] overflow-y-auto pr-2">
-                    {Object.entries(allUniqueAuthors).map(([key, author]) => (
+                    {Object.entries(authors).map(([key, author]) => (
                       <div key={key} className="flex items-center gap-4 p-4 rounded-2xl border border-divider bg-background hover:border-primary/50 transition-colors">
                         <img src={author.avatar} alt={author.name} className="w-12 h-12 rounded-full object-cover border border-divider flex-shrink-0" />
                         <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-2">
-                            <h4 className="font-bold text-sm truncate">{author.name}</h4>
-                            {author.isAutoDetected && (
-                              <span title="Auto-detected from existing posts. Click Edit to save formally." className="text-amber-500">
-                                <AlertCircle className="w-3.5 h-3.5" />
-                              </span>
-                            )}
-                          </div>
+                          <h4 className="font-bold text-sm truncate">{author.name}</h4>
                           <p className="text-xs text-muted-foreground truncate">{author.role}</p>
                         </div>
                         <div className="flex flex-col gap-1 flex-shrink-0">
                           <Button variant="ghost" size="sm" className="h-7 px-2 hover:bg-primary/10 hover:text-primary" onClick={() => handleEditAuthor(key)}>
                             <Pencil className="w-3.5 h-3.5" />
                           </Button>
-                          {!author.isAutoDetected && (
-                            <Button variant="ghost" size="sm" className="h-7 px-2 hover:bg-destructive/10 hover:text-destructive" onClick={() => setShowDeleteAuthorConfirm(key)}>
-                              <Trash2 className="w-3.5 h-3.5" />
-                            </Button>
-                          )}
+                          <Button variant="ghost" size="sm" className="h-7 px-2 hover:bg-destructive/10 hover:text-destructive" onClick={() => setShowDeleteAuthorConfirm(key)}>
+                            <Trash2 className="w-3.5 h-3.5" />
+                          </Button>
                         </div>
                       </div>
                     ))}
-                    {Object.keys(allUniqueAuthors).length === 0 && (
+                    {Object.keys(authors).length === 0 && (
                       <div className="text-center py-10">
                         <Users className="w-10 h-10 text-muted-foreground/30 mx-auto mb-3" />
-                        <p className="text-muted-foreground text-sm">No authors found.</p>
+                        <p className="text-muted-foreground text-sm">No authors found in database.<br/>Click "Sync from Posts" to auto-fill.</p>
                       </div>
                     )}
                   </div>
@@ -896,15 +923,6 @@ ${newPost.content}`;
                   <h2 className="text-2xl font-serif font-bold mb-6">
                     {editingAuthorKey ? `Editing: ${editingAuthorKey}` : "Add New Author"}
                   </h2>
-                  
-                  {editingAuthorKey && allUniqueAuthors[editingAuthorKey]?.isAutoDetected && (
-                    <div className="mb-6 p-4 bg-amber-500/10 border border-amber-500/20 rounded-xl flex items-start gap-3">
-                      <AlertCircle className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
-                      <p className="text-sm text-amber-600/90 dark:text-amber-400/90">
-                        <strong>Auto-detected Author:</strong> We found "{editingAuthorKey}" written on some existing posts, but they don't have a formal profile saved yet. Fill out the details below and hit Save to officially add them to your AMS directory.
-                      </p>
-                    </div>
-                  )}
                   
                   <div className="space-y-5">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1034,7 +1052,7 @@ ${newPost.content}`;
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
           <div className="bg-surface rounded-3xl p-8 max-w-sm w-full shadow-2xl">
             <h3 className="text-xl font-bold mb-2">Remove author?</h3>
-            <p className="text-muted-foreground mb-8">This will delete their profile data from your configuration. Existing articles won't be deleted, but they will revert to being an "Auto-detected" unconfigured author.</p>
+            <p className="text-muted-foreground mb-8">This will delete their profile data from your configuration.</p>
             <div className="flex gap-3">
               <Button variant="outline" onClick={() => setShowDeleteAuthorConfirm(null)} className="flex-1">Cancel</Button>
               <Button onClick={confirmDeleteAuthor} disabled={isDeleting} variant="destructive" className="flex-1">
