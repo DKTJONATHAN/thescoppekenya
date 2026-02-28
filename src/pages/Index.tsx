@@ -1,40 +1,44 @@
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState, useMemo, lazy, Suspense } from "react";
 import { Layout } from "@/components/layout/Layout";
-import { CategoryBar } from "@/components/articles/CategoryBar";
-import { ArticleCard } from "@/components/articles/ArticleCard";
 import { getAllPosts } from "@/lib/markdown";
 import { Link } from "react-router-dom";
-import { ArrowRight, TrendingUp, ChevronDown } from "lucide-react";
+import { ArrowRight, TrendingUp, ChevronDown, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
 
-const POSTS_PER_PAGE = 20;
+// PERFORMANCE: CategoryBar and ArticleCard are likely heavy. 
+// Moving them to Lazy loading reduces the initial JS bundle size.
+const CategoryBar = lazy(() => import("@/components/articles/CategoryBar").then(m => ({ default: m.CategoryBar })));
+const ArticleCard = lazy(() => import("@/components/articles/ArticleCard").then(m => ({ default: m.ArticleCard })));
 
-// WARNING: If this function loads the full markdown body for all posts, 
-// your FCP will never improve. Ensure it only loads frontmatter (title, image, excerpt).
+const INITIAL_VISIBLE = 10; // Reduced from 20 to lower TBT immediately
 const allPostsFromMarkdown = getAllPosts();
 
 const Index = () => {
-  const [visibleCount, setVisibleCount] = useState(POSTS_PER_PAGE);
+  const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE);
   const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
 
-  // 1. FIX TBT: Push analytics fetching completely out of the critical rendering path
+  // 1. DATA DEFERRAL: Fetch GA4 data only when the browser is idle
   useEffect(() => {
-    const fetchGA4 = async () => {
+    const fetchViews = async () => {
       try {
         const res = await fetch('/api/get-views');
         if (res.ok) setViewCounts(await res.json());
-      } catch (e) { /* silent fail */ }
+      } catch (e) { console.warn("Analytics deferred"); }
     };
-    // Wait 3 seconds. Let the browser paint the images first.
-    const timer = setTimeout(fetchGA4, 3000);
-    return () => clearTimeout(timer);
+    
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(() => setTimeout(fetchViews, 2000));
+    } else {
+      setTimeout(fetchViews, 4000);
+    }
   }, []);
 
+  // 2. LIGHTWEIGHT MAPPING: Normalize data without heavy computation
   const allPosts = useMemo(() => {
     return allPostsFromMarkdown.map(post => {
       const slug = post.slug.replace(/^\//, '').replace(/\.md$/, '');
-      const views = viewCounts[`/article/${slug}`] || viewCounts[`/article/${slug}/`] || 0;
+      const views = viewCounts[`/article/${slug}`] || 0;
       return { ...post, views: views > 0 ? views : 47 };
     });
   }, [viewCounts]);
@@ -43,143 +47,92 @@ const Index = () => {
   const feedPosts = allPosts.slice(1);
   const displayedPosts = feedPosts.slice(0, visibleCount);
 
-  // 2. FIX CLS & TBT: Restored Bento Layout with strict container boundaries
-  const renderedContent = useMemo(() => {
-    const elements = [];
-    let i = 0;
-    
-    while (i < displayedPosts.length) {
-      // Pair Layout
-      const pair = displayedPosts.slice(i, i + 2);
-      if (pair.length > 0) {
-        elements.push(
-          <div key={`pair-${i}`} className="grid md:grid-cols-2 gap-6 md:gap-8 mb-8">
-            {pair.map(post => (
-              // Explicit minimum height prevents layout shift while waiting for children
-              <div key={post.slug} className="min-h-[380px] w-full flex flex-col">
-                <ArticleCard post={post} />
-              </div>
-            ))}
-          </div>
-        );
-      }
-      i += 2;
-
-      // Bento Layout
-      if (i + 3 <= displayedPosts.length) {
-        const bento = displayedPosts.slice(i, i + 3);
-        elements.push(
-          <div key={`bento-${i}`} className="grid grid-cols-1 md:grid-cols-3 gap-4 py-8 mb-8 border-y border-divider">
-            {/* Primary Bento Item: Strict aspect ratio */}
-            <div className="md:col-span-2 relative w-full aspect-video md:aspect-[16/10] rounded-2xl overflow-hidden bg-zinc-900 isolation-auto">
-              <ArticleCard post={bento[0]} variant="featured" />
-            </div>
-            {/* Secondary Bento Items */}
-            <div className="grid grid-rows-2 gap-4 h-full">
-              <div className="relative w-full h-full min-h-[180px] rounded-2xl overflow-hidden bg-zinc-900">
-                <ArticleCard post={bento[1]} variant="compact" />
-              </div>
-              <div className="relative w-full h-full min-h-[180px] rounded-2xl overflow-hidden bg-zinc-900">
-                <ArticleCard post={bento[2]} variant="compact" />
-              </div>
-            </div>
-          </div>
-        );
-        i += 3;
-      }
-    }
-    return elements;
-  }, [displayedPosts]);
-
   return (
     <Layout>
       <Helmet>
-        <title>Za Ndani - Kenya's Number 1 Gossip Hub</title>
-        {/* 3. FIX LCP: Force the browser to grab this image immediately */}
-        {topStory?.image && <link rel="preload" as="image" href={topStory.image} fetchpriority="high" />}
+        <title>Za Ndani | Trending Now</title>
+        {/* LCP HACK: Preconnect to image CDN if you use one */}
+        <link rel="preconnect" href="https://your-image-source.com" />
       </Helmet>
 
-      {/* 4. FIX LCP & CLS: Strict 55vh height, absolutely positioned image */}
+      {/* 3. LIGHTWEIGHT HERO: Reduced height (40vh) for faster mobile paint */}
       {topStory && (
-        <section className="relative h-[55vh] min-h-[400px] w-full bg-black flex items-end overflow-hidden">
+        <section className="relative h-[40vh] min-h-[300px] bg-zinc-950 flex items-end overflow-hidden">
           <img 
-            src={topStory.image || '/images/placeholder-hero.jpg'} 
+            src={topStory.image} 
             alt=""
             fetchpriority="high"
-            loading="eager"
-            className="absolute inset-0 w-full h-full object-cover opacity-60"
+            loading="eager" 
+            className="absolute inset-0 w-full h-full object-cover opacity-50"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
-
-          <div className="relative container max-w-7xl mx-auto px-4 pb-12 z-10">
-            <span className="bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block">
-              Hot Story
-            </span>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-black text-white leading-[1.1] mb-6 max-w-3xl">
+          <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent z-10" />
+          <div className="relative container mx-auto px-4 pb-10 z-20">
+            <h1 className="text-2xl md:text-5xl font-serif font-black text-white leading-tight line-clamp-2 mb-4">
               {topStory.title}
             </h1>
             <Link to={`/article/${topStory.slug}`}>
-              <Button className="bg-white text-black hover:bg-primary hover:text-white px-8 py-6 rounded-xl font-bold">
-                Read Full Story <ArrowRight className="ml-2 w-5 h-5" />
+              <Button size="sm" className="bg-primary text-white font-bold rounded-full px-6">
+                READ SCOOP <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </Link>
           </div>
         </section>
       )}
 
-      <CategoryBar />
+      <Suspense fallback={<div className="h-12 bg-zinc-900" />}>
+        <CategoryBar />
+      </Suspense>
 
-      <section className="py-12 bg-background">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="grid lg:grid-cols-12 gap-12">
-            
-            <div className="lg:col-span-8">
-              <h2 className="text-2xl font-serif font-black italic mb-8 border-b border-divider pb-4">
-                Fresh Off The Press
-              </h2>
-
-              <div className="space-y-4">
-                {renderedContent}
-              </div>
-
-              {visibleCount < feedPosts.length && (
-                <div className="pt-8 text-center">
-                  <Button
-                    onClick={() => setVisibleCount((prev) => prev + 10)}
-                    className="w-full md:w-auto bg-zinc-900 text-white hover:bg-primary px-12 py-8 rounded-xl text-lg font-black transition-all"
-                  >
-                    LOAD MORE STORIES <ChevronDown className="w-5 h-5 ml-2" />
-                  </Button>
-                </div>
-              )}
-            </div>
-
-            <aside className="lg:col-span-4 hidden md:block">
-              <div className="sticky top-24 p-8 rounded-[2rem] bg-surface border border-divider shadow-sm">
-                <h3 className="text-xl font-black mb-6 flex items-center gap-2">
-                  <TrendingUp className="text-primary w-5 h-5" /> Trending Now
-                </h3>
-                <div className="space-y-6">
-                  {allPosts.slice(0, 6).map((post, i) => (
-                    <Link key={post.slug} to={`/article/${post.slug}`} className="flex gap-4 group">
-                      <span className="text-3xl font-black text-muted-foreground/20 italic">0{i + 1}</span>
-                      <div>
-                        <h4 className="font-bold leading-tight group-hover:text-primary transition-colors line-clamp-2">
-                          {post.title}
-                        </h4>
-                        <p className="text-[10px] text-muted-foreground font-bold uppercase mt-1">
-                          {post.views > 999 ? `${(post.views / 1000).toFixed(1)}k` : post.views} views
-                        </p>
+      <main className="container max-w-7xl mx-auto px-4 py-10">
+        <div className="grid lg:grid-cols-12 gap-10">
+          
+          <div className="lg:col-span-8">
+            <Suspense fallback={<div className="flex justify-center p-20"><Loader2 className="animate-spin" /></div>}>
+              <div className="space-y-10">
+                {/* 4. THE BENTO LOGIC: Simplified for performance */}
+                {displayedPosts.map((post, i) => (
+                  <div key={post.slug}>
+                    {i % 5 === 0 ? (
+                      <div className="py-4 border-y border-zinc-800 my-8">
+                         <ArticleCard post={post} variant="featured" />
                       </div>
-                    </Link>
-                  ))}
-                </div>
+                    ) : (
+                      <ArticleCard post={post} />
+                    )}
+                  </div>
+                ))}
               </div>
-            </aside>
+            </Suspense>
 
+            {visibleCount < feedPosts.length && (
+              <div className="mt-12 text-center">
+                <Button 
+                  onClick={() => setVisibleCount(v => v + 10)}
+                  className="bg-zinc-900 text-white hover:bg-primary px-10 py-6 rounded-xl font-black"
+                >
+                  LOAD MORE STORIES
+                </Button>
+              </div>
+            )}
           </div>
+
+          <aside className="lg:col-span-4 hidden lg:block">
+            <div className="sticky top-24 p-6 rounded-3xl bg-zinc-950 border border-zinc-800">
+              <h3 className="text-lg font-black text-white mb-6 flex items-center gap-2">
+                <TrendingUp className="text-primary" /> TRENDING
+              </h3>
+              {allPosts.slice(0, 5).map((post, i) => (
+                <Link key={i} to={`/article/${post.slug}`} className="flex gap-4 mb-6 group">
+                  <span className="text-xl font-black text-zinc-700 italic">{i+1}</span>
+                  <h4 className="text-sm font-bold text-zinc-300 group-hover:text-white line-clamp-2 leading-snug">
+                    {post.title}
+                  </h4>
+                </Link>
+              ))}
+            </div>
+          </aside>
         </div>
-      </section>
+      </main>
     </Layout>
   );
 };
