@@ -13,7 +13,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Match, useMatchPreview, useMatchReview, usePreloadSportsData } from "@/hooks/useSportsData";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Sparkles, Loader2, Activity, Calendar, Trophy, Newspaper, Flame, TrendingUp } from "lucide-react";
+import { Sparkles, Loader2, Activity, Calendar, Trophy, Newspaper, Flame, TrendingUp, Radio } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
 export default function SportsPage() {
@@ -44,7 +44,6 @@ export default function SportsPage() {
 
   const generateAIContent = async () => {
     if (!selectedMatch) return;
-    
     setIsGeneratingAI(true);
     try {
       const isFinished = selectedMatch.status === 'FINISHED';
@@ -61,229 +60,197 @@ export default function SportsPage() {
 
   const isKenyaSelected = selectedLeague === "KPL";
 
-  const sportsSchema = {
-    "@context": "https://schema.org",
-    "@type": "SportsEvent",
-    "name": "Kenya Sports News - KPL, Harambee Stars & Athletics | Za Ndani",
-    "description": "Latest Kenya sports news: Harambee Stars updates, KPL standings, Gor Mahia, AFC Leopards, athletics, rugby. Live scores, fixtures & analysis.",
-    "url": "https://zandani.co.ke/sports",
-  };
-
   return (
     <Layout>
       <Helmet>
-        <title>Za Ndani Sports - Kenya Sports News, KPL, Harambee Stars & Athletics</title>
-        <meta
-          name="description"
-          content="Latest Kenya sports news: Harambee Stars updates, KPL standings, Gor Mahia, AFC Leopards, athletics, rugby. Live scores, fixtures & exclusives daily."
-        />
-        <meta
-          name="keywords"
-          content="kenya sports news, kpl news, harambee stars, kenya premier league, kenyan football news, athletics kenya, gor mahia, afc leopards, za ndani sports, nairobi sports"
-        />
-
-        {/* Canonical */}
-        <link rel="canonical" href="https://zandani.co.ke/sports" />
-
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://zandani.co.ke/sports" />
-        <meta property="og:title" content="Za Ndani Sports - Kenya Sports News & Live Scores" />
-        <meta
-          property="og:description"
-          content="Harambee Stars, KPL, athletics & more – real-time Kenya sports updates and AI analysis."
-        />
-        <meta property="og:image" content="https://zandani.co.ke/logo.png" />
-        <meta property="og:site_name" content="Za Ndani" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Za Ndani Sports - Latest Kenya Sports News" />
-        <meta name="twitter:description" content="Live KPL scores, Harambee Stars news, Kenyan athletics & football updates daily." />
-        <meta name="twitter:image" content="https://zandani.co.ke/logo.png" />
+        <title>Za Ndani Sports | Live Scores, KPL Updates & AI Match Analysis</title>
+        <meta name="description" content="Professional Kenya sports coverage: Harambee Stars, KPL fixtures, Athletics, and AI-powered match previews. Real-time data and insider reporting." />
       </Helmet>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(sportsSchema) }}
-      />
-
-      {/* Hero Section */}
-      <div className="bg-surface border-b border-divider py-2 overflow-hidden">
-        <div className="container max-w-7xl mx-auto px-4 flex items-center gap-4">
-          <Badge variant="default" className="gradient-primary text-primary-foreground border-0 rounded-sm font-bold whitespace-nowrap">
-            <Activity className="w-3 h-3 mr-1" />
-            SPORTS
-          </Badge>
-          <div className="flex-1 overflow-hidden whitespace-nowrap">
-            <span className="text-sm font-medium text-foreground dark:text-white">
-              Live scores, standings, fixtures & AI match analysis
-            </span>
+      {/* Live Ticker Bar */}
+      <div className="bg-headline text-white py-3">
+        <div className="container max-w-7xl mx-auto px-4 flex items-center gap-6">
+          <div className="flex items-center gap-2 px-2 py-0.5 rounded bg-primary text-[10px] font-black uppercase tracking-tighter">
+            <Radio className="w-3 h-3 animate-pulse" />
+            Live Now
           </div>
-          <Link to="/sports/live">
-            <Badge variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors whitespace-nowrap">
-              Live Scores →
-            </Badge>
+          <div className="flex-1 overflow-hidden">
+            <p className="text-xs md:text-sm font-medium animate-in fade-in slide-in-from-right duration-1000">
+              Gor Mahia vs AFC Leopards: AI Match Review Available • Harambee Stars Training Updates • KPL Standings Updated
+            </p>
+          </div>
+          <Link to="/sports/live" className="text-xs font-bold text-primary hover:underline underline-offset-4 flex items-center gap-1">
+            All Scores <Activity className="w-3 h-3" />
           </Link>
         </div>
       </div>
 
-      <section className="py-6 md:py-10">
+      <main className="py-12 md:py-20 bg-[#F9FAFB] dark:bg-transparent">
         <div className="container max-w-7xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
-            <div>
-              <h1 className="text-3xl md:text-4xl font-serif font-bold text-foreground dark:text-white flex items-center gap-3">
-                <span className="w-1.5 h-9 gradient-primary rounded-full shadow-sm" />
-                Sports Hub
-              </h1>
-              <p className="text-muted-foreground mt-2">
-                Kila kitu sports — live scores, standings, fixtures na AI match analysis
-              </p>
+          
+          {/* Section Header */}
+          <div className="max-w-4xl mb-12">
+            <div className="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-[0.2em] mb-4">
+              <Trophy className="w-4 h-4" />
+              <span>The Arena</span>
             </div>
+            <h1 className="text-5xl md:text-7xl font-serif font-black text-headline tracking-tight mb-6">
+              Sports <span className="text-primary italic">Intelligence.</span>
+            </h1>
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              Real-time data meets deep-source journalism. Track the Kenya Premier League, 
+              global football, and Kenyan athletics with AI-driven tactical insights.
+            </p>
           </div>
 
-          <LeagueSelector 
-            selected={selectedLeague} 
-            onSelect={handleLeagueSelect} 
-          />
-        </div>
-      </section>
+          <div className="mb-12">
+            <LeagueSelector 
+              selected={selectedLeague} 
+              onSelect={handleLeagueSelect} 
+            />
+          </div>
 
-      <section className="py-8 bg-surface/50 border-y border-divider">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-12">
-            <div className="lg:col-span-2 space-y-8">
+          <div className="grid lg:grid-cols-12 gap-10">
+            {/* Main Content Area */}
+            <div className="lg:col-span-8 space-y-10">
               <AIHeadlinesBanner />
 
               {isKenyaSelected ? (
                 <KenyaSportsSection />
               ) : (
                 <Tabs defaultValue="fixtures" className="w-full">
-                  <TabsList className="w-full grid grid-cols-3 mb-6 bg-surface border border-divider rounded-2xl p-1 h-auto">
-                    <TabsTrigger value="fixtures" className="gap-2 rounded-xl py-3 data-[state=active]:gradient-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-soft">
-                      <Calendar className="w-4 h-4" />
-                      <span className="hidden sm:inline">Fixtures</span>
+                  <TabsList className="flex gap-2 bg-transparent h-auto p-0 mb-8 border-b border-divider w-full justify-start rounded-none">
+                    <TabsTrigger value="fixtures" className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-4 font-bold text-sm">
+                      Fixtures & Results
                     </TabsTrigger>
-                    <TabsTrigger value="standings" className="gap-2 rounded-xl py-3 data-[state=active]:gradient-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-soft">
-                      <Trophy className="w-4 h-4" />
-                      <span className="hidden sm:inline">Standings</span>
+                    <TabsTrigger value="standings" className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-4 font-bold text-sm">
+                      League Table
                     </TabsTrigger>
-                    <TabsTrigger value="news" className="gap-2 rounded-xl py-3 data-[state=active]:gradient-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-soft">
-                      <Newspaper className="w-4 h-4" />
-                      <span className="hidden sm:inline">News</span>
+                    <TabsTrigger value="news" className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-4 font-bold text-sm">
+                      Breaking News
                     </TabsTrigger>
                   </TabsList>
 
-                  <TabsContent value="fixtures" className="mt-6">
-                    <FixturesList 
-                      competition={selectedLeague} 
-                      onMatchClick={handleMatchClick}
-                    />
+                  <TabsContent value="fixtures" className="focus-visible:ring-0">
+                    <FixturesList competition={selectedLeague} onMatchClick={handleMatchClick} />
                   </TabsContent>
 
-                  <TabsContent value="standings" className="mt-6">
+                  <TabsContent value="standings">
                     <StandingsTable competition={selectedLeague} />
                   </TabsContent>
 
-                  <TabsContent value="news" className="mt-6">
+                  <TabsContent value="news">
                     <SportsNewsFeed />
                   </TabsContent>
                 </Tabs>
               )}
             </div>
 
-            <div className="lg:col-span-1 space-y-8">
+            {/* Sidebar Widgets */}
+            <aside className="lg:col-span-4 space-y-8">
               <div className="sticky top-24 space-y-8">
-                <div className="bg-surface rounded-2xl border border-divider shadow-sm overflow-hidden">
-                  <div className="flex items-center gap-2 p-4 border-b border-divider">
-                    <TrendingUp className="w-4 h-4 text-primary" />
-                    <h2 className="text-sm font-bold text-foreground dark:text-white">Live Scores</h2>
+                
+                {/* Live Scores Panel */}
+                <div className="bg-surface rounded-[2rem] border border-divider shadow-xl overflow-hidden">
+                  <div className="bg-headline p-6 flex items-center justify-between">
+                    <h2 className="text-white font-bold tracking-tight">Match Center</h2>
+                    <Badge className="bg-primary/20 text-primary border-0">Live</Badge>
                   </div>
-                  <div className="p-4">
+                  <div className="p-2">
                     <LiveScoresWidget />
                   </div>
                 </div>
 
-                <div className="gradient-primary rounded-2xl p-8 text-primary-foreground shadow-xl relative overflow-hidden group">
-                  <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-110 transition-transform">
-                    <Flame className="w-32 h-32" />
-                  </div>
+                {/* AI Feature Promo */}
+                <div className="relative group overflow-hidden bg-primary rounded-[2rem] p-8 text-primary-foreground shadow-2xl">
                   <div className="relative z-10">
-                    <Badge variant="secondary" className="mb-4 bg-white/20 text-white border-0">Sports Za Ndani</Badge>
-                    <h3 className="text-2xl font-serif font-bold mb-4 leading-tight">
-                      AI Match Analysis Kwa Kila Game
+                    <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
+                      <Sparkles className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-serif font-bold mb-3 leading-tight text-white">
+                      The Next Level of Analysis.
                     </h3>
-                    <p className="text-sm text-white/80 mb-4">
-                      Click any match to generate AI-powered previews na reviews
+                    <p className="text-white/80 text-sm mb-6 leading-relaxed">
+                      Select any match to generate a data-backed AI preview or tactical review instantly.
                     </p>
+                    <div className="flex items-center gap-2 font-black text-[10px] uppercase tracking-widest text-white/60">
+                      <Activity className="w-3 h-3" />
+                      Proprietary AI Engine
+                    </div>
                   </div>
+                  {/* Decorative element */}
+                  <Flame className="absolute -right-10 -bottom-10 w-48 h-48 opacity-10 group-hover:scale-120 transition-transform duration-500" />
                 </div>
               </div>
-            </div>
+            </aside>
           </div>
         </div>
-      </section>
+      </main>
 
       {/* Match Detail Dialog */}
       <Dialog open={!!selectedMatch} onOpenChange={() => setSelectedMatch(null)}>
-        <DialogContent className="max-w-lg">
+        <DialogContent className="max-w-2xl p-0 overflow-hidden rounded-[2rem] border-divider shadow-2xl bg-surface">
           {selectedMatch && (
             <>
-              <DialogHeader>
-                <DialogTitle className="text-center">
-                  <div className="flex items-center justify-center gap-4 text-lg">
-                    <div className="flex items-center gap-2">
-                      {selectedMatch.homeTeam.crest && (
-                        <img src={selectedMatch.homeTeam.crest} alt="" className="w-8 h-8 object-contain" />
-                      )}
-                      <span>{selectedMatch.homeTeam.shortName || selectedMatch.homeTeam.name}</span>
-                    </div>
-                    <span className="text-2xl font-bold">
-                      {selectedMatch.score.fullTime?.home ?? '-'} - {selectedMatch.score.fullTime?.away ?? '-'}
-                    </span>
-                    <div className="flex items-center gap-2">
-                      <span>{selectedMatch.awayTeam.shortName || selectedMatch.awayTeam.name}</span>
-                      {selectedMatch.awayTeam.crest && (
-                        <img src={selectedMatch.awayTeam.crest} alt="" className="w-8 h-8 object-contain" />
-                      )}
-                    </div>
-                  </div>
-                </DialogTitle>
-              </DialogHeader>
-
-              <div className="space-y-4 mt-4">
-                <p className="text-center text-sm text-muted-foreground">
-                  {selectedMatch.competition.name} • Matchday {selectedMatch.matchday}
+              <div className="bg-headline p-10 text-white text-center">
+                <p className="text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-6">
+                  Match Intelligence
                 </p>
+                <div className="flex items-center justify-between gap-6">
+                  <div className="flex-1 flex flex-col items-center gap-3">
+                    {selectedMatch.homeTeam.crest && (
+                      <img src={selectedMatch.homeTeam.crest} alt="" className="w-16 h-16 object-contain" />
+                    )}
+                    <span className="font-bold text-sm tracking-tight">{selectedMatch.homeTeam.name}</span>
+                  </div>
+                  
+                  <div className="flex flex-col items-center">
+                    <span className="text-5xl font-black mb-2">
+                      {selectedMatch.score.fullTime?.home ?? '0'} : {selectedMatch.score.fullTime?.away ?? '0'}
+                    </span>
+                    <Badge variant="outline" className="text-white/60 border-white/20">
+                      {selectedMatch.status === 'FINISHED' ? 'Full Time' : 'Upcoming'}
+                    </Badge>
+                  </div>
+
+                  <div className="flex-1 flex flex-col items-center gap-3">
+                    {selectedMatch.awayTeam.crest && (
+                      <img src={selectedMatch.awayTeam.crest} alt="" className="w-16 h-16 object-contain" />
+                    )}
+                    <span className="font-bold text-sm tracking-tight">{selectedMatch.awayTeam.name}</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-8 space-y-6">
+                <div className="flex items-center justify-center gap-6 text-xs text-muted-foreground uppercase font-bold tracking-widest">
+                  <span>{selectedMatch.competition.name}</span>
+                  <span className="w-1 h-1 bg-divider rounded-full" />
+                  <span>Matchday {selectedMatch.matchday}</span>
+                </div>
 
                 {!aiContent ? (
                   <Button 
                     onClick={generateAIContent} 
                     disabled={isGeneratingAI}
-                    className="w-full gradient-primary text-primary-foreground"
+                    className="w-full h-16 rounded-2xl gradient-primary text-primary-foreground font-bold text-lg shadow-lg hover:shadow-primary/20 transition-all"
                   >
                     {isGeneratingAI ? (
-                      <>
-                        <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                        Generating AI {selectedMatch.status === 'FINISHED' ? 'Review' : 'Preview'}...
-                      </>
+                      <><Loader2 className="w-5 h-5 mr-2 animate-spin" /> Analyzing Data...</>
                     ) : (
-                      <>
-                        <Sparkles className="w-4 h-4 mr-2" />
-                        Generate AI {selectedMatch.status === 'FINISHED' ? 'Match Review' : 'Match Preview'}
-                      </>
+                      <><Sparkles className="w-5 h-5 mr-2" /> Generate Tactical {selectedMatch.status === 'FINISHED' ? 'Review' : 'Preview'}</>
                     )}
                   </Button>
                 ) : (
-                  <div className="bg-surface rounded-2xl p-4 border border-divider">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Sparkles className="w-4 h-4 text-primary" />
-                      <span className="text-xs font-semibold text-primary uppercase">
-                        AI {selectedMatch.status === 'FINISHED' ? 'Review' : 'Preview'}
+                  <div className="bg-muted/30 rounded-3xl p-8 border border-divider animate-in zoom-in-95 duration-300">
+                    <div className="flex items-center gap-2 mb-4">
+                      <Sparkles className="w-5 h-5 text-primary" />
+                      <span className="text-xs font-black text-primary uppercase tracking-widest">
+                        AI Insights Engine
                       </span>
                     </div>
-                    <h4 className="font-semibold mb-2">{aiContent.headline}</h4>
-                    <p className="text-sm text-muted-foreground whitespace-pre-wrap">
+                    <h4 className="text-2xl font-serif font-bold text-headline mb-4">{aiContent.headline}</h4>
+                    <p className="text-base text-muted-foreground leading-relaxed whitespace-pre-wrap">
                       {aiContent.content}
                     </p>
                   </div>
