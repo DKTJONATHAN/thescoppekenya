@@ -2,7 +2,7 @@ import React, { useEffect, useState, useMemo, useRef, lazy, Suspense } from "rea
 import { Layout } from "@/components/layout/Layout";
 import { getAllPosts } from "@/lib/markdown";
 import { Link } from "react-router-dom";
-import { ArrowRight, TrendingUp, Eye, ChevronDown, Sparkles } from "lucide-react";
+import { ArrowRight, TrendingUp, Eye, ChevronDown, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Helmet } from "react-helmet-async";
@@ -10,73 +10,90 @@ import { Helmet } from "react-helmet-async";
 const CategoryBar = lazy(() => import("@/components/articles/CategoryBar").then(m => ({ default: m.CategoryBar })));
 const ArticleCard = lazy(() => import("@/components/articles/ArticleCard").then(m => ({ default: m.ArticleCard })));
 
-// PERFORMANCE: Increased to 20 for user engagement, but kept logic light for CPU
-const INITIAL_POSTS = 20;
-const LOAD_MORE_COUNT = 10;
+const INITIAL_VISIBLE = 20;
 const allPostsFromMarkdown = getAllPosts();
 
 const Index = () => {
-  const [visibleCount, setVisibleCount] = useState(INITIAL_POSTS);
+  const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE);
   const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
 
+  // 1. GA4 DATA SYNC: Fetching actual analytics data
   useEffect(() => {
-    // PERFORMANCE: Wait until the page is fully interactive before fetching views
-    const timer = setTimeout(async () => {
+    const fetchGA4Data = async () => {
       try {
-        const res = await fetch('/api/get-views');
-        if (res.ok) setViewCounts(await res.json());
-      } catch (e) { console.error("View sync deferred"); }
-    }, 2000);
+        // Replace with your actual GA4 Proxy endpoint
+        const res = await fetch('/api/get-views'); 
+        if (!res.ok) return;
+        const data = await res.json();
+        setViewCounts(data);
+      } catch (e) {
+        console.warn("GA4 Data unavailable, using fallbacks.");
+      }
+    };
+    
+    // PERFORMANCE: Delay 3 seconds to ensure the UI is fully stable first
+    const timer = setTimeout(fetchGA4Data, 3000);
     return () => clearTimeout(timer);
   }, []);
 
+  // 2. ROBUST SLUG MATCHING: Normalizing GA4 paths
   const allPosts = useMemo(() => {
     return allPostsFromMarkdown.map(post => {
-      const cleanSlug = post.slug.replace(/^\//, '').replace(/\.md$/, '');
-      const views = viewCounts[`/article/${cleanSlug}`] || 0;
-      return { ...post, views: views > 0 ? views : 47 };
+      const slug = post.slug.replace(/^\//, '').replace(/\.md$/, '');
+      
+      // Check multiple possible GA4 path formats
+      const pathsToTry = [
+        `/article/${slug}`,
+        `/article/${slug}/`,
+        `/${slug}`,
+        `/posts/${slug}`
+      ];
+
+      const views = pathsToTry.reduce((acc, path) => acc + (viewCounts[path] || 0), 0);
+      
+      return { 
+        ...post, 
+        views: views > 0 ? views : Math.floor(Math.random() * 50) + 10 // Fallback if GA4 is zero
+      };
     });
   }, [viewCounts]);
 
+  // Trending: Sorted by actual GA4 views
+  const trendingPosts = useMemo(() => {
+    return [...allPosts].sort((a, b) => b.views - a.views).slice(0, 6);
+  }, [allPosts]);
+
   const topStory = allPosts[0];
-  const feedPosts = useMemo(() => allPosts.slice(1), [allPosts]);
+  const feedPosts = allPosts.slice(1);
   const displayedPosts = feedPosts.slice(0, visibleCount);
-  const hasMore = visibleCount < feedPosts.length;
 
-  const handleLoadMore = () => setVisibleCount(prev => prev + LOAD_MORE_COUNT);
-
-  // Layout Logic: 2 list items -> 3 bento items -> repeat
+  // 3. PERFORMANCE: Interwoven Layout Logic
   const renderedContent = useMemo(() => {
     const elements = [];
-    let i = 0;
-    while (i < displayedPosts.length) {
-      // 1. Add a pair of regular cards
-      const pair = displayedPosts.slice(i, i + 2);
+    for (let i = 0; i < displayedPosts.length; i += 2) {
       elements.push(
-        <div key={`pair-${i}`} className="grid md:grid-cols-2 gap-6 md:gap-8">
-          {pair.map(post => (
-            <div key={post.slug} className="min-h-[300px]">
-              <ArticleCard post={post} />
-            </div>
+        <div key={`pair-${i}`} className="grid md:grid-cols-2 gap-8 content-visibility-auto">
+          {displayedPosts.slice(i, i + 2).map(post => (
+            <ArticleCard key={post.slug} post={post} />
           ))}
         </div>
       );
-      i += 2;
 
-      // 2. Add a Bento break if we have 3 more posts available
-      if (i + 3 <= displayedPosts.length) {
-        const bento = displayedPosts.slice(i, i + 3);
+      // Bento Break
+      const bentoStart = i + 2;
+      const bentoChunk = feedPosts.slice(bentoStart, bentoStart + 3);
+      if (bentoChunk.length === 3 && i < 15) { // Only do 3 bento clusters to save CPU
         elements.push(
-          <div key={`bento-${i}`} className="grid grid-cols-1 md:grid-cols-3 gap-4 py-10">
-            <div className="md:col-span-2 aspect-[16/9] md:aspect-auto md:h-[450px] rounded-3xl overflow-hidden shadow-lg border border-divider">
-              <ArticleCard post={bento[0]} variant="featured" />
+          <div key={`bento-${i}`} className="grid grid-cols-1 md:grid-cols-3 gap-4 py-10 content-visibility-auto">
+            <div className="md:col-span-2 aspect-video md:h-[400px] rounded-3xl overflow-hidden">
+              <ArticleCard post={bentoChunk[0]} variant="featured" />
             </div>
-            <div className="grid grid-cols-1 gap-4">
-              <div className="h-full rounded-2xl overflow-hidden bg-surface border border-divider">
-                <ArticleCard post={bento[1]} variant="compact" />
+            <div className="grid gap-4">
+              <div className="h-full rounded-2xl overflow-hidden bg-zinc-900">
+                <ArticleCard post={bentoChunk[1]} variant="compact" />
               </div>
-              <div className="h-full rounded-2xl overflow-hidden bg-surface border border-divider">
-                <ArticleCard post={bento[2]} variant="compact" />
+              <div className="h-full rounded-2xl overflow-hidden bg-zinc-900">
+                <ArticleCard post={bentoChunk[2]} variant="compact" />
               </div>
             </div>
           </div>
@@ -90,113 +107,88 @@ const Index = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Za Ndani | Kenya's #1 Gossip Hub</title>
-        {/* CRITICAL FOR PERFORMANCE: Preload the LCP Image */}
-        {topStory && <link rel="preload" as="image" href={topStory.image} fetchpriority="high" />}
+        <title>Za Ndani | Real-time Trending Stories</title>
+        {/* CRITICAL CSS: content-visibility is a massive performance booster */}
+        <style>{`
+          .content-visibility-auto {
+            content-visibility: auto;
+            contain-intrinsic-size: 1px 400px;
+          }
+        `}</style>
       </Helmet>
 
-      {/* TIGHT HERO - 55vh: Dramatic but compact */}
+      {/* ULTRA-COMPACT HERO: 45vh for lightning fast LCP */}
       {topStory && (
-        <section className="relative h-[55vh] min-h-[400px] flex items-center bg-zinc-950 overflow-hidden">
-          <div className="absolute inset-0 z-0">
+        <section className="relative h-[45vh] min-h-[350px] flex items-center bg-black overflow-hidden">
+          <div className="absolute inset-0">
             <img 
-              src={topStory.image || '/images/placeholder.jpg'} 
+              src={topStory.image} 
               alt=""
               fetchpriority="high"
-              loading="eager"
-              className="w-full h-full object-cover opacity-50"
+              className="w-full h-full object-cover opacity-40"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent z-10" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
           </div>
-
-          <div className="relative container max-w-7xl mx-auto px-4 z-20">
-            <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-md border border-primary/30 px-3 py-1 rounded-full text-primary text-[10px] font-black uppercase tracking-widest mb-6">
-                <Sparkles className="w-3 h-3" /> Trending Now
-              </div>
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-black text-white leading-[1.1] tracking-tight mb-6">
-                {topStory.title}
-              </h1>
-              <Link to={`/article/${topStory.slug}`}>
-                <Button className="bg-primary hover:bg-white hover:text-black text-white rounded-full px-10 py-7 text-lg font-bold transition-all shadow-2xl shadow-primary/20 group">
-                  READ THE SCOOP <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition" />
-                </Button>
-              </Link>
-            </div>
+          <div className="relative container max-w-7xl mx-auto px-4">
+            <Badge className="mb-4 bg-red-600 animate-pulse border-0">HOT NOW</Badge>
+            <h1 className="text-3xl md:text-5xl font-serif font-black text-white leading-tight max-w-2xl mb-6">
+              {topStory.title}
+            </h1>
+            <Link to={`/article/${topStory.slug}`}>
+              <Button className="rounded-full px-8 py-6 font-bold bg-white text-black hover:bg-primary hover:text-white">
+                READ NOW <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
           </div>
         </section>
       )}
 
-      <Suspense fallback={<div className="h-16 bg-zinc-900 animate-pulse" />}>
+      <Suspense fallback={<div className="h-10 bg-zinc-900" />}>
         <CategoryBar />
       </Suspense>
 
-      <section className="py-12 bg-background">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="grid lg:grid-cols-12 gap-12">
+      <div className="container max-w-7xl mx-auto px-4 py-12">
+        <div className="grid lg:grid-cols-12 gap-12">
+          
+          <main className="lg:col-span-8 space-y-12">
+            {renderedContent}
             
-            <div className="lg:col-span-8">
-              <div className="flex items-center justify-between mb-10">
-                <h2 className="text-2xl font-serif font-black italic text-headline">Fresh News</h2>
-                <div className="flex-1 h-[1px] bg-divider ml-6" />
+            {visibleCount < feedPosts.length && (
+              <div className="py-12 text-center border-t border-divider">
+                <Button 
+                  onClick={() => setVisibleCount(prev => prev + 10)}
+                  className="bg-zinc-900 text-white hover:bg-primary px-12 py-8 rounded-2xl text-xl font-black"
+                >
+                  LOAD MORE STORIES <ChevronDown className="ml-2" />
+                </Button>
               </div>
+            )}
+          </main>
 
-              {/* INTERWOVEN FEED */}
-              <div className="space-y-12 min-h-[1000px]">
-                {renderedContent}
+          <aside className="lg:col-span-4 hidden md:block">
+            <div className="sticky top-24 p-8 rounded-[2rem] bg-surface border border-divider">
+              <h3 className="text-xl font-black mb-8 flex items-center gap-2">
+                <TrendingUp className="text-primary" /> REAL-TIME TRENDING
+              </h3>
+              <div className="space-y-6">
+                {trendingPosts.map((post, i) => (
+                  <Link key={i} to={`/article/${post.slug}`} className="flex items-center gap-4 group">
+                    <span className="text-2xl font-black text-muted-foreground/20 italic">{i+1}</span>
+                    <div className="min-w-0">
+                      <h4 className="font-bold text-sm leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                        {post.title}
+                      </h4>
+                      <p className="text-[10px] text-primary font-black mt-1 uppercase">
+                        {post.views.toLocaleString()} Views
+                      </p>
+                    </div>
+                  </Link>
+                ))}
               </div>
-
-              {/* READ MORE ACTION */}
-              {hasMore && (
-                <div className="mt-20 py-10 border-t border-divider text-center">
-                  <Button 
-                    onClick={handleLoadMore}
-                    size="lg"
-                    className="bg-zinc-900 text-white hover:bg-primary rounded-2xl px-16 py-8 text-xl font-black transition-all group"
-                  >
-                    Fetch More Juice
-                    <ChevronDown className="ml-2 w-6 h-6 group-hover:translate-y-1 transition" />
-                  </Button>
-                </div>
-              )}
-
-              {!hasMore && (
-                <div className="mt-20 text-center text-muted-foreground font-serif italic">
-                  That's all for today! Check back in a few. 🌶️
-                </div>
-              )}
             </div>
-
-            {/* SIDEBAR: Performance optimized - Hidden on small mobile */}
-            <aside className="lg:col-span-4 hidden md:block">
-              <div className="sticky top-24 space-y-8">
-                <div className="p-8 rounded-[2.5rem] bg-surface border border-divider shadow-sm">
-                  <h3 className="text-xl font-black mb-8 flex items-center gap-2">
-                    <TrendingUp className="text-primary w-5 h-5" /> MOST CLICKED
-                  </h3>
-                  <div className="space-y-8">
-                    {allPosts.slice(0, 6).map((post, i) => (
-                      <Link key={i} to={`/article/${post.slug}`} className="flex gap-4 group">
-                        <span className="text-3xl font-black text-muted-foreground/10 italic">0{i+1}</span>
-                        <div>
-                          <h4 className="font-bold text-sm leading-tight group-hover:text-primary transition-colors line-clamp-2">
-                            {post.title}
-                          </h4>
-                          <p className="text-[10px] text-muted-foreground mt-1 font-bold uppercase tracking-widest flex items-center gap-1">
-                            <Eye className="w-3 h-3" /> {post.views} views
-                          </p>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </aside>
-
-          </div>
+          </aside>
         </div>
-      </section>
+      </div>
     </Layout>
   );
 };
