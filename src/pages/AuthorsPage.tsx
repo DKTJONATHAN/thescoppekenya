@@ -5,28 +5,14 @@ import { Eye, BookOpen, TrendingUp, ChevronRight, Award } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useEffect, useState, useMemo } from "react";
 import { Helmet } from "react-helmet-async";
-
-// Static metadata to enrich the markdown author strings
-const AUTHOR_PROFILES: Record<string, { role: string; bio: string; avatar: string }> = {
-  "Jonathan Mwaniki": {
-    role: "Founder & Lead Developer",
-    bio: "Full stack developer and journalist bringing you the latest in tech and automated media.",
-    avatar: "/api/placeholder/150/150"
-  },
-  "Dalton Ross": {
-    role: "Senior Entertainment Writer",
-    bio: "Always first with the tea. Covering reality TV, lifestyle, and celebrity gossip.",
-    avatar: "/api/placeholder/150/150"
-  }
-  // Add other authors here as they join Za Ndani
-};
+import { AUTHOR_PROFILES, DEFAULT_AUTHOR_PROFILE, AuthorProfile } from "@/lib/authors";
 
 interface AuthorStats {
   name: string;
   totalViews: number;
   articleCount: number;
   latestArticles: Post[];
-  profile: { role: string; bio: string; avatar: string };
+  profile: AuthorProfile;
 }
 
 export default function AuthorsPage() {
@@ -73,11 +59,7 @@ export default function AuthorsPage() {
           totalViews: 0,
           articleCount: 0,
           latestArticles: [],
-          profile: AUTHOR_PROFILES[post.author] || {
-            role: "Contributor",
-            bio: "Contributing writer for Za Ndani.",
-            avatar: "/api/placeholder/150/150"
-          }
+          profile: AUTHOR_PROFILES[post.author] || { ...DEFAULT_AUTHOR_PROFILE, name: post.author }
         });
       }
 
@@ -133,7 +115,6 @@ export default function AuthorsPage() {
               
               <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6">
                 {topAuthors.map((author, index) => {
-                  // Make the #1 author a large span card
                   const isFirst = index === 0;
                   
                   return (
@@ -143,7 +124,6 @@ export default function AuthorsPage() {
                         isFirst ? "md:col-span-2 md:row-span-2" : "md:col-span-1 md:row-span-1"
                       }`}
                     >
-                      {/* Background decorative gradient */}
                       <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
                       
                       <div className="relative z-10 flex flex-col h-full">
