@@ -69,22 +69,24 @@ jobs:
                 throw new Error('GSC_KEY_RAW is completely empty. GitHub cannot find the GSC_JSON_KEY secret.');
               }
 
-              // Parse the JSON directly from the environment variable securely
               const keys = JSON.parse(rawKey);
               
-              // FORCE fix the private key newlines (Crucial for GitHub Secrets)
-              const privateKey = keys.private_key.replace(/\\\\n/g, '\\n').replace(/\\n/g, '\n');
+              if (!keys.client_email || !keys.private_key) {
+                throw new Error('The JSON does not contain a client_email or private_key. Please ensure you pasted a valid Service Account JSON.');
+              }
+
+              // Fix flattened newlines that sometimes occur when pasting into GitHub Secrets
+              keys.private_key = keys.private_key.replace(/\\\\n/g, '\\n').replace(/\\n/g, '\n');
               
-              const auth = new google.auth.JWT(
-                keys.client_email, 
-                null, 
-                privateKey,
-                ['https://www.googleapis.com/auth/indexing'], 
-                null
-              );
+              // Use the modern, recommended GoogleAuth client
+              const auth = new google.auth.GoogleAuth({
+                credentials: keys,
+                scopes: ['https://www.googleapis.com/auth/indexing']
+              });
               
-              // Explicitly authenticate before doing anything else
-              await auth.authorize();
+              // Explicitly test the authentication token to catch credential errors early
+              const authClient = await auth.getClient();
+              await authClient.getAccessToken();
               
               const indexing = google.indexing({ version: 'v3', auth });
               const urls = process.env.URL_LIST.split(',');
