@@ -25,6 +25,8 @@ const SportsPage = lazy(() => import("./pages/SportsPage"));
 const LiveScoresPage = lazy(() => import("./pages/LiveScoresPage"));
 const SitemapPage = lazy(() => import("./pages/SitemapPage"));
 const SitemapHtmlPage = lazy(() => import("./pages/SitemapHtmlPage"));
+const AuthorsPage = lazy(() => import("./pages/AuthorsPage")); // Added Authors page
+const AuthorProfilePage = lazy(() => import("./pages/AuthorProfilePage")); // Added Author Profile page
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Optimized Query Client with caching
@@ -138,7 +140,7 @@ const App = () => (
                     <Route path="/" element={<Index />} />
                     <Route path="/article/:slug" element={<ArticlePage />} />
                     <Route path="/category/:slug" element={<CategoryPage />} />
-                    <Route path="/trending" element={<Trending />} /> {/* Route for Trending page */}
+                    <Route path="/trending" element={<Trending />} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/contact" element={<ContactPage />} />
                     <Route path="/privacy" element={<PrivacyPage />} />
@@ -151,6 +153,8 @@ const App = () => (
                     <Route path="/sports/live" element={<LiveScoresPage />} />
                     <Route path="/sitemap.xml" element={<SitemapPage />} />
                     <Route path="/sitemap" element={<SitemapHtmlPage />} />
+                    <Route path="/authors" element={<AuthorsPage />} />
+                    <Route path="/author/:authorName" element={<AuthorProfilePage />} />
                     <Route path="*" element={<NotFound />} />
                   </Routes>
                 </Suspense>
