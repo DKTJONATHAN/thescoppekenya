@@ -133,7 +133,7 @@ export default function AdminPage() {
     }
   }
 
-  // Auto-scan posts to find authors not explicitly saved in authors.json
+  // Auto scan posts to find authors not explicitly saved in authors.json
   const allUniqueAuthors = useMemo(() => {
     const merged: Record<string, DisplayAuthorProfile> = { ...authors };
     
@@ -395,7 +395,7 @@ ${newPost.content}`;
         delete updatedAuthors[editingAuthorKey];
       }
       
-      // Strip out the auto-detected flag before saving to JSON
+      // Strip out the auto detected flag before saving to JSON
       const { isAutoDetected, ...authorDataToSave } = newAuthor;
       updatedAuthors[newAuthor.name] = authorDataToSave;
       
@@ -491,7 +491,7 @@ ${newPost.content}`;
   return (
     <Layout>
       <div className="flex min-h-screen bg-surface">
-        {/* Sidebar */}
+        {/* Sidebar for Large Screens */}
         <div className="w-72 border-r border-divider bg-surface p-6 hidden lg:flex flex-col">
           <div className="flex items-center gap-3 mb-10">
             <div className="w-9 h-9 bg-primary rounded-xl" />
@@ -552,9 +552,10 @@ ${newPost.content}`;
           </Button>
         </div>
 
-        <div className="flex-1 overflow-y-auto">
+        {/* Main Content Area */}
+        <div className="flex-1 overflow-y-auto w-full">
           <div className="container max-w-6xl mx-auto px-4 py-8">
-            <div className="flex justify-between items-center mb-10">
+            <div className="flex justify-between items-center mb-6 lg:mb-10">
               <div>
                 <h1 className="text-4xl font-serif font-bold">Admin Dashboard</h1>
                 <p className="text-muted-foreground">Push stories live to Za Ndani in seconds</p>
@@ -564,11 +565,36 @@ ${newPost.content}`;
               </Button>
             </div>
 
+            {/* Mobile Tab Navigation (Visible on smaller screens so you can switch panels) */}
+            <div className="flex lg:hidden overflow-x-auto gap-2 mb-8 pb-2">
+              <Button 
+                variant={activeTab === "create" ? "default" : "outline"} 
+                onClick={() => setActiveTab("create")}
+                className="whitespace-nowrap rounded-2xl"
+              >
+                <Plus className="w-4 h-4 mr-2" /> Create Post
+              </Button>
+              <Button 
+                variant={activeTab === "manage" ? "default" : "outline"} 
+                onClick={() => setActiveTab("manage")}
+                className="whitespace-nowrap rounded-2xl"
+              >
+                <FileText className="w-4 h-4 mr-2" /> Manage Posts
+              </Button>
+              <Button 
+                variant={activeTab === "authors" ? "default" : "outline"} 
+                onClick={() => setActiveTab("authors")}
+                className="whitespace-nowrap rounded-2xl"
+              >
+                <Users className="w-4 h-4 mr-2" /> Manage Authors
+              </Button>
+            </div>
+
             {/* TAB: CREATE / EDIT POST */}
             {activeTab === "create" && (
-              <div className="grid lg:grid-cols-2 gap-8">
+              <div className="grid lg:grid-cols-2 gap-8 w-full">
                 {/* Form */}
-                <div className="bg-surface border border-divider rounded-3xl p-8 shadow-sm">
+                <div className="bg-surface border border-divider rounded-3xl p-6 lg:p-8 shadow-sm">
                   <div className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <input
@@ -719,7 +745,7 @@ ${newPost.content}`;
                       rows={14}
                     />
 
-                    <div className="flex gap-3 pt-4 border-t border-divider">
+                    <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-divider">
                       <Button variant="outline" onClick={resetPostForm} className="flex-1">Clear Form</Button>
                       <Button onClick={() => handlePublish(!!editingPost)} disabled={isPublishing} className="flex-1 gradient-primary">
                         {isPublishing ? <Loader2 className="animate-spin mr-2" /> : <Github className="mr-2" />}
@@ -751,7 +777,7 @@ ${newPost.content}`;
 
             {/* TAB: MANAGE POSTS */}
             {activeTab === "manage" && (
-              <div className="bg-surface border border-divider rounded-3xl p-8 shadow-sm">
+              <div className="bg-surface border border-divider rounded-3xl p-6 lg:p-8 shadow-sm w-full">
                 <div className="flex flex-col md:flex-row gap-4 mb-8">
                   <div className="flex-1 relative">
                     <Search className="absolute left-4 top-4 w-5 h-5 text-muted-foreground" />
@@ -821,7 +847,7 @@ ${newPost.content}`;
 
             {/* TAB: MANAGE AUTHORS */}
             {activeTab === "authors" && (
-              <div className="grid lg:grid-cols-12 gap-8">
+              <div className="grid lg:grid-cols-12 gap-8 w-full">
                 
                 {/* Author List */}
                 <div className="lg:col-span-5 bg-surface border border-divider rounded-3xl p-6 h-fit shadow-sm">
@@ -866,7 +892,7 @@ ${newPost.content}`;
                 </div>
 
                 {/* Author Editor Form */}
-                <div className="lg:col-span-7 bg-surface border border-divider rounded-3xl p-8 shadow-sm">
+                <div className="lg:col-span-7 bg-surface border border-divider rounded-3xl p-6 lg:p-8 shadow-sm">
                   <h2 className="text-2xl font-serif font-bold mb-6">
                     {editingAuthorKey ? `Editing: ${editingAuthorKey}` : "Add New Author"}
                   </h2>
@@ -970,7 +996,7 @@ ${newPost.content}`;
                       </div>
                     </div>
 
-                    <div className="flex gap-3 pt-6">
+                    <div className="flex flex-col sm:flex-row gap-3 pt-6">
                       <Button variant="outline" onClick={resetAuthorForm} className="flex-1">Cancel / Clear</Button>
                       <Button onClick={handleSaveAuthor} disabled={isSavingAuthor} className="flex-1 gradient-primary">
                         {isSavingAuthor ? <Loader2 className="animate-spin mr-2" /> : <Github className="mr-2" />}
