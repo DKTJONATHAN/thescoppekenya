@@ -43,12 +43,7 @@ const queryClient = new QueryClient({
 
 // Loading fallback component
 const PageLoader = () => (
-  <div className="min-h-screen flex items-center justify-center bg-background">
-    <div className="animate-pulse flex flex-col items-center gap-4">
-      <div className="w-12 h-12 rounded-full border-4 border-primary border-t-transparent animate-spin" />
-      <span className="text-muted-foreground">Loading...</span>
-    </div>
-  </div>
+  <div className="min-h-screen bg-background" />
 );
 
 // Error fallback component

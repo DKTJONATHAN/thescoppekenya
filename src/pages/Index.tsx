@@ -95,7 +95,7 @@ const Index = () => {
             rel="preload"
             as="image"
             href={topStory.image}
-            fetchpriority="high"
+            fetchPriority="high"
           />
         )}
       </Helmet>
@@ -107,7 +107,7 @@ const Index = () => {
             <img 
               src={topStory.image || '/images/placeholder.jpg'} 
               alt=""
-              fetchpriority="high"
+              fetchPriority="high"
               loading="eager"
               decoding="async"
               className="w-full h-full object-cover opacity-70"

@@ -94,7 +94,7 @@ export function Header() {
             
             {/* Date */}
             <div className="hidden md:flex items-center gap-4 shrink-0 pl-4 bg-foreground z-10">
-              <span className="text-background/70">{new Date().toLocaleDateString('sw-KE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</span>
+              <span className="text-background/70">{new Date().toLocaleDateString('en-KE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</span>
             </div>
           </div>
         </div>

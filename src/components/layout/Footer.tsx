@@ -49,7 +49,7 @@ export function Footer() {
               <img src={logoImg} alt="Za Ndani" className="h-12 w-auto" />
             </button>
             <p className="text-muted-foreground text-sm mb-4">
-              Kenya's boldest Sheng news and entertainment website. Habari kutoka ndani — breaking news, gossip, na trending stories bila bias, kwa lugha ya mtaa.
+              Kenya's boldest news and entertainment website. Breaking news, gossip, and trending stories — bold, unbiased updates daily.
             </p>
             <div className="flex items-center gap-3">
               <a href="https://facebook.com/zandanike" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth text-foreground" aria-label="Facebook">

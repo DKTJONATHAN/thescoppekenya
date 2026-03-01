@@ -83,7 +83,9 @@ export default function ArticlePage() {
       link.href = post.image;
       link.setAttribute("fetchpriority", "high");
       document.head.appendChild(link);
-      return () => document.head.removeChild(link);
+      return () => {
+        document.head.removeChild(link);
+      };
     }
   }, [post?.image]);
 
