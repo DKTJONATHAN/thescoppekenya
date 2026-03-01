@@ -2,11 +2,11 @@ name: Celestine Nzioka - General News Scraper
 
 on:
   schedule:
-    - cron: '30 6,12,18 * * *' # Morning, Noon, and Evening UTC
+    - cron: '12 4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 * * *'   # 7:12 to 23:12 EAT (every hour)
   workflow_dispatch:
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: \( {{ github.workflow }}- \){{ github.ref }}
   cancel-in-progress: false
 
 permissions:
