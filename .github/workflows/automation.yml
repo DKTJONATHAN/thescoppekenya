@@ -113,7 +113,7 @@ if not fresh_articles:
 
 print(f"Found {len(fresh_articles)} fresh articles")
 
-# 4. SOURCE FRESHNESS CHECK (prevent processing aged-out stories)
+# 4. SOURCE FRESHNESS CHECK
 def is_still_fresh_on_source(target_url, max_position=30):
     print(f"Checking if {target_url} is still in recent feed on source...")
     current_urls = []
