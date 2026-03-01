@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 
 const AdUnit = ({
-  type = 'highperformance',     // 'highperformance' | 'adsense' | 'other'
-  keyOrClient = '',             // your key for highperformance or ca-pub-xxx for AdSense
-  slot = '',                    // only needed for AdSense
-  format = 'iframe',            // for highperformance: iframe, for AdSense: auto / rectangle etc.
+  type = 'highperformance',
+  keyOrClient = '',
+  slot = '',
+  format = 'iframe',
   width = 300,
   height = 250,
   style = {},
@@ -18,58 +18,45 @@ const AdUnit = ({
     const container = containerRef.current;
 
     if (type === 'highperformance') {
-      // Your original highperformanceformat ad script
-      window.atOptions = {
-        key: keyOrClient,
-        format: format,
-        height: height,
-        width: width,
-        params: {}
-      };
-
-      const inline = document.createElement('script');
-      inline.textContent = `
-        atOptions = {
-          'key' : '${keyOrClient}',
-          'format' : '${format}',
-          'height' : ${height},
-          'width' : ${width},
-          'params' : {}
-        };
+      // Create a self-contained script block with its OWN atOptions (no global pollution)
+      const scriptContent = `
+        (function() {
+          var atOptions = {
+            'key' : '${keyOrClient}',
+            'format' : '${format}',
+            'height' : ${height},
+            'width' : ${width},
+            'params' : {}
+          };
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.async = true;
+          script.src = 'https://www.highperformanceformat.com/${keyOrClient}/invoke.js';
+          var target = document.currentScript || document.body.lastChild;
+          target.parentNode.insertBefore(script, target.nextSibling || target);
+        })();
       `;
 
-      const invoke = document.createElement('script');
-      invoke.src = `https://www.highperformanceformat.com/${keyOrClient}/invoke.js`;
-      invoke.async = true;
+      const inlineScript = document.createElement('script');
+      inlineScript.textContent = scriptContent;
 
-      container.appendChild(inline);
-      container.appendChild(invoke);
+      container.appendChild(inlineScript);
     } 
     else if (type === 'adsense') {
-      // Google AdSense (manual push method - most reliable in React)
-      if (!window.adsbygoogle) {
-        window.adsbygoogle = [];
-      }
-
+      // AdSense part unchanged for now
+      if (!window.adsbygoogle) window.adsbygoogle = [];
       const ins = document.createElement('ins');
       ins.className = 'adsbygoogle';
       ins.style.display = 'block';
-      ins.setAttribute('data-ad-client', keyOrClient);   // ca-pub-XXXXXXXXXXXXXXXX
+      ins.setAttribute('data-ad-client', keyOrClient);
       ins.setAttribute('data-ad-slot', slot);
       ins.setAttribute('data-ad-format', format || 'auto');
       ins.setAttribute('data-full-width-responsive', 'true');
-
       container.appendChild(ins);
-
-      // Push to load the ad
       window.adsbygoogle.push({});
-    } 
-    else {
-      // Future other networks - you can add more else if blocks later
-      console.warn(`Unknown ad type: ${type}`);
     }
 
-    // Cleanup when component unmounts (important for page changes)
+    // Cleanup
     return () => {
       container.innerHTML = '';
     };
