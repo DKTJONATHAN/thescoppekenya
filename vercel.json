@@ -1,19 +1,11 @@
 {
-  "buildCommand": "node scripts/generate-llms-txt.js && node scripts/generate-rss.js && node scripts/submit-new-posts.js && npm run build && node scripts/generate-sitemap.js && node scripts/generate-article-html.js",
-  "functions": {
-    "api/index.js": {
-      "includeFiles": "dist/**"
-    }
-  },
+  "buildCommand": "node scripts/generate-llms-txt.js && node scripts/generate-rss.js && node scripts/submit-new-posts.js && vite build && node scripts/generate-sitemap.js && node scripts/generate-article-html.js",
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
     { "source": "/llms.txt", "destination": "/llms.txt" },
     { "source": "/rss.xml", "destination": "/rss.xml" },
     { "source": "/robots.txt", "destination": "/robots.txt" },
-    { "source": "/assets/(.*)", "destination": "/dist/client/assets/$1" },
-    { "source": "/sw.js", "destination": "/dist/client/sw.js" },
-    { "source": "/favicon.ico", "destination": "/dist/client/favicon.ico" },
-    { "source": "/favicon.png", "destination": "/dist/client/favicon.png" },
-    { "source": "/(.*)", "destination": "/api/index" }
+    { "source": "/sitemap", "destination": "/index.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
