@@ -1,20 +1,19 @@
 {
   "buildCommand": "node scripts/generate-llms-txt.js && node scripts/generate-rss.js && node scripts/submit-new-posts.js && npm run build && node scripts/generate-sitemap.js && node scripts/generate-article-html.js",
-  "builds": [
-    { 
-      "src": "server.js", 
-      "use": "@vercel/node" 
-    },
-    { 
-      "src": "package.json", 
-      "use": "@vercel/static-build" 
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "dist/**"
     }
-  ],
+  },
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
     { "source": "/llms.txt", "destination": "/llms.txt" },
     { "source": "/rss.xml", "destination": "/rss.xml" },
     { "source": "/robots.txt", "destination": "/robots.txt" },
-    { "source": "/(.*)", "destination": "/server.js" }
+    { "source": "/assets/(.*)", "destination": "/dist/client/assets/$1" },
+    { "source": "/sw.js", "destination": "/dist/client/sw.js" },
+    { "source": "/favicon.ico", "destination": "/dist/client/favicon.ico" },
+    { "source": "/favicon.png", "destination": "/dist/client/favicon.png" },
+    { "source": "/(.*)", "destination": "/api/index" }
   ]
 }
