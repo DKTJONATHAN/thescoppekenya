@@ -2,11 +2,17 @@ name: Za Ndani - Mpasho Scraper
 
 on:
   schedule:
-    - cron: '0 8,12,16,20 * * *' # Runs at 8 AM, 12 PM, 4 PM, and 8 PM UTC
+    - cron: '0 5 * * *'   # 8am EAT
+    - cron: '0 7 * * *'   # 10am EAT
+    - cron: '0 9 * * *'   # 12pm EAT
+    - cron: '0 11 * * *'  # 2pm EAT
+    - cron: '0 13 * * *'  # 4pm EAT
+    - cron: '0 15 * * *'  # 6pm EAT
+    - cron: '0 17 * * *'  # 8pm EAT
   workflow_dispatch:
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: \( {{ github.workflow }}- \){{ github.ref }}
   cancel-in-progress: false
 
 permissions:
