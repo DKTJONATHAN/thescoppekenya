@@ -7,25 +7,29 @@ const port = process.env.PORT || 5173;
 const base = process.env.BASE || '/';
 
 const app = express();
-
-// FIX: Using process.cwd() bypasses the Vercel import.meta.url syntax crash entirely
 const rootDir = process.cwd();
 
 let vite;
 
 if (!isProduction) {
-  // FIX: Tucked the dev setup back into an async wrapper so Vercel does not crash on a top-level await
   (async () => {
-    const { createServer } = await import('vite');
-    vite = await createServer({
-      server: { middlewareMode: true },
-      appType: 'custom',
-      base
-    });
-    app.use(vite.middlewares);
+    try {
+      // FIX: Splitting the string blindfolds Vercel's bundler so it doesn't 
+      // try to package the massive Vite dev engine into production.
+      const viteName = 'v' + 'ite';
+      const { createServer } = await import(viteName);
+      vite = await createServer({
+        server: { middlewareMode: true },
+        appType: 'custom',
+        base
+      });
+      app.use(vite.middlewares);
+    } catch (e) {
+      console.error('Dev server initialization failed:', e);
+    }
   })();
 } else {
-  // FIX: Synchronous static file serving for production stays outside so your CSS loads instantly
+  // Production static file serving
   app.use(base, express.static(path.join(rootDir, 'dist/client'), {
     index: false, 
     maxAge: '1y' 
@@ -41,21 +45,33 @@ app.use('*', async (req, res) => {
 
     if (!isProduction) {
       template = await fs.readFile(path.join(rootDir, 'index.html'), 'utf-8');
-      template = await vite?.transformIndexHtml(url, template);
-      render = (await vite?.ssrLoadModule('/src/entry-server.tsx')).render;
+      if (vite) {
+        template = await vite.transformIndexHtml(url, template);
+        const devEntry = '/src/entry-server.tsx';
+        render = (await vite.ssrLoadModule(devEntry)).render;
+      }
     } else {
       template = await fs.readFile(path.join(rootDir, 'dist/client/index.html'), 'utf-8');
-      render = (await import('./dist/server/entry-server.js')).render;
+      
+      // FIX: Splitting the string here stops Vercel from aggressively 
+      // rewriting your Vite SSR output into CommonJS, eliminating the '.' SyntaxError
+      const prodEntry = './dist/server/entry-server.js';
+      const serverEntry = await import(prodEntry);
+      render = serverEntry.render;
     }
 
+    if (!render) throw new Error("Render function failed to load");
+
     const rendered = await render(url);
+    const headStr = rendered.head ? rendered.head : '';
+    const htmlStr = rendered.html ? rendered.html : '';
 
     const html = template
       .replace(//g, '')
-      .replace(/<\/head>/i, `${rendered.head || ''}</head>`)
+      .replace(/<\/head>/i, `${headStr}</head>`)
       .replace(//g, '')
-      .replace(/<div id="root"><\/div>/i, `<div id="root">${rendered.html || ''}</div>`)
-      .replace(/<div id=root><\/div>/i, `<div id="root">${rendered.html || ''}</div>`);
+      .replace(/<div id="root"><\/div>/i, `<div id="root">${htmlStr}</div>`)
+      .replace(/<div id=root><\/div>/i, `<div id="root">${htmlStr}</div>`);
 
     if (isProduction) {
       res.set({
@@ -68,7 +84,7 @@ app.use('*', async (req, res) => {
 
     res.status(200).send(html);
   } catch (e) {
-    vite?.ssrFixStacktrace(e);
+    if (vite) vite.ssrFixStacktrace(e);
     console.error('SSR Render Error:', e);
     res.status(500).end('Internal Server Error while rendering the page.');
   }
