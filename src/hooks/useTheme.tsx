@@ -1,36 +1,70 @@
-import { useState, useEffect } from "react";
+import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 
-export function useTheme() {
-  // SSR FIX: Safely check if the browser window exists before reading localStorage
-  const [theme, setTheme] = useState<"light" | "dark">(() => {
-    if (typeof window !== "undefined") {
-      const storedTheme = window.localStorage.getItem("theme");
-      if (storedTheme === "dark" || storedTheme === "light") {
-        return storedTheme;
+type Theme = 'light' | 'dark';
+
+interface ThemeContextType {
+  theme: Theme;
+  toggleTheme: () => void;
+  setTheme: (theme: Theme) => void;
+}
+
+const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+
+export function ThemeProvider({ children }: { children: ReactNode }) {
+  const [theme, setTheme] = useState<Theme>(() => {
+    // SSR Check: Only access localStorage and window if running in the browser
+    if (typeof window !== 'undefined') {
+      // Check localStorage first
+      const stored = localStorage.getItem('theme') as Theme;
+      if (stored === 'light' || stored === 'dark') {
+        return stored;
       }
-      // Check user system preference if no localStorage value exists
-      if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        return "dark";
+      // Check system preference
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark';
       }
     }
-    // Default theme for the server render
-    return "light";
+    // Default fallback for server-side rendering
+    return 'light';
   });
 
   useEffect(() => {
-    const root = window.document.documentElement;
-    root.classList.remove("light", "dark");
+    const root = document.documentElement;
+    root.classList.remove('light', 'dark');
     root.classList.add(theme);
-
-    // SSR FIX: Safely check if the browser window exists before writing to localStorage
-    if (typeof window !== "undefined") {
-      window.localStorage.setItem("theme", theme);
-    }
+    localStorage.setItem('theme', theme);
   }, [theme]);
 
+  // Listen for system preference changes
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (e: MediaQueryListEvent) => {
+      // Only auto-switch if user hasn't manually set a preference
+      const stored = localStorage.getItem('theme');
+      if (!stored) {
+        setTheme(e.matches ? 'dark' : 'light');
+      }
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
+
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+    setTheme(prev => prev === 'light' ? 'dark' : 'light');
   };
 
-  return { theme, toggleTheme };
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme, setTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+}
+
+export function useTheme() {
+  const context = useContext(ThemeContext);
+  if (!context) {
+    throw new Error('useTheme must be used within a ThemeProvider');
+  }
+  return context;
 }
