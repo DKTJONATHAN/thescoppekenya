@@ -76,7 +76,7 @@ export default function ArticlePage() {
     });
   }, [relatedPosts, viewCounts]);
 
-  // Single in-article ad placed after \~4th paragraph
+  // Single in-article ad placed after 4th paragraph
   const contentWithOneAd = useMemo(() => {
     if (!post?.htmlContent) return [];
 
@@ -365,7 +365,7 @@ export default function ArticlePage() {
             <Button variant="outline" size="icon" className="h-11 w-11 rounded-full" onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, "_blank")}>
               <Facebook className="w-5 h-5" />
             </Button>
-            <Button variant="outline" size="icon" className="h-11 w-11 rounded-full" onClick={() => window.open(`https://x.com/intent/tweet?url=\( {encodeURIComponent(shareUrl)}&text= \){encodeURIComponent(post.title)}`, "_blank")}>
+            <Button variant="outline" size="icon" className="h-11 w-11 rounded-full" onClick={() => window.open(`https://x.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`, "_blank")}>
               <XIcon className="w-5 h-5" />
             </Button>
             <Button variant="outline" size="icon" className="h-11 w-11 rounded-full" onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(shareUrl)}`, "_blank")}>
@@ -430,9 +430,9 @@ export default function ArticlePage() {
             <NewsletterForm />
           </div>
 
-          {/* Single AdSense placeholder slot before related stories */}
+          {/* Ad slot before related stories */}
           <div className="my-12">
-            <AdUnit type="adsense-placeholder" />
+            <AdUnit type="horizontal" />
           </div>
 
           {/* Related Stories */}
@@ -465,7 +465,7 @@ export default function ArticlePage() {
         <Button variant="outline" size="icon" className="h-11 w-11 rounded-2xl" onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, "_blank")}>
           <Facebook className="w-5 h-5" />
         </Button>
-        <Button variant="outline" size="icon" className="h-11 w-11 rounded-2xl" onClick={() => window.open(`https://x.com/intent/tweet?url=\( {encodeURIComponent(shareUrl)}&text= \){encodeURIComponent(post.title)}`, "_blank")}>
+        <Button variant="outline" size="icon" className="h-11 w-11 rounded-2xl" onClick={() => window.open(`https://x.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`, "_blank")}>
           <XIcon className="w-5 h-5" />
         </Button>
         <Button variant="outline" size="icon" className="h-11 w-11 rounded-2xl" onClick={handleWhatsAppShare}>
