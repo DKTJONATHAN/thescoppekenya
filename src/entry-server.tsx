@@ -19,9 +19,8 @@ export function render(url: string) {
   
   const { helmet } = helmetContext;
   
-  // FIX: Removed all whitespace, tabs, and newlines. 
-  // Stray whitespace here forces the browser to create a blank gap above the header.
-  const head = helmet ? `${helmet.title.toString()}${helmet.meta.toString()}${helmet.link.toString()}` : "";
+  // Safe null checks for every property, keeping it on one line to prevent whitespace bugs
+  const head = helmet ? (helmet.title?.toString() || "") + (helmet.meta?.toString() || "") + (helmet.link?.toString() || "") : "";
   
   return { html, head };
 }
