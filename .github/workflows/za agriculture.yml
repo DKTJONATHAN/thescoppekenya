@@ -60,8 +60,8 @@ jobs:
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
 
-          # Using the stable 2026 model identifiers
-          MODELS_TO_TRY = ["gemini-2.0-flash", "gemini-1.5-flash"]
+          # STRICTLY ENFORCED MODELS
+          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-2.5-flash"]
 
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
@@ -157,6 +157,7 @@ jobs:
                       generated_body = response.text.strip()
                       if generated_body:
                           success_flag = True
+                          print(f"✅ SUCCESS with {model_id}!")
                           break
                   except Exception as e:
                       if "429" in str(e):
@@ -166,14 +167,15 @@ jobs:
                           if keys_tried_in_round >= len(api_keys):
                               time.sleep(65)
                               keys_tried_in_round = 0
-                      else: break
+                      else: 
+                          print(f"❌ Error with {model_id}: {e}")
+                          break
           
           if not success_flag: sys.exit(1)
 
           generated_body = re.sub(r'^```(?:markdown|text|html)?\n', '', generated_body, flags=re.IGNORECASE)
           generated_body = re.sub(r'\n```$', '', generated_body).strip()
 
-          # THE FIX: Ensuring target_image (the ImgBB link) is used here
           final_file = textwrap.dedent(f"""\
           ---
           title: "{target_title.replace('"', "'")}"
@@ -187,7 +189,6 @@ jobs:
           {generated_body}
           """)
 
-          # Saving to the path defined in environment
           out_dir = os.environ.get("POSTS_DIR")
           os.makedirs(out_dir, exist_ok=True)
           filename = f"{final_hash}.md"
@@ -206,10 +207,7 @@ jobs:
         run: |
           git config --global user.name "Timothy Muli"
           git config --global user.email "bot@zandani.co.ke"
-          git add .
-          git stash
-          git pull origin main --rebase
-          git stash pop || echo "No stash to pop"
           git add content/posts/*.md .github/memory_timothy.json
-          git commit -m "content: New agricultural report with hosted image 🌾" || echo "No changes to commit"
+          git commit -m "content: Timothy Muli agriculture report 🌾" || echo "No changes to commit"
+          git pull origin main --rebase
           git push origin main
