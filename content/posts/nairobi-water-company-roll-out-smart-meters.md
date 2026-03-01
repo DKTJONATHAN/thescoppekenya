@@ -1,0 +1,38 @@
+---
+title: "Nairobi Water Company to Roll Out Smart Meters: Transforming Urban Water Management"
+slug: "nairobi-water-company-roll-out-smart-meters"
+excerpt: "The Nairobi Water Company is set to Roll Out Smart Meters across the city, aiming to revolutionize water monitoring, significantly reduce non-revenue water, and enhance service delivery."
+author: "Celestine Nzioka"
+image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/nairobi-water.jpg?itok=GnvG6TcG"
+category: "News"
+date: "2026-03-01"
+tags: ["Nairobi Water Company", "Smart Meters", "Water Services Regulatory Board", "WASREB", "Non-Revenue Water", "AI", "Water Management", "Kenya"]
+---
+
+## Nairobi Water Company to Roll Out Smart Meters for Enhanced Efficiency
+
+The Nairobi City Water and Sewerage Company (NCWSC) is poised to implement a widespread deployment of smart water meters across the capital. This strategic move, approved by the Water Services Regulatory Board (WASREB) for the 2025/2026 to 2028/2029 tariff period, seeks to fundamentally improve water monitoring and drastically reduce non-revenue water.
+
+The Nairobi City Water and Sewerage Company (NCWSC) has formally announced plans to roll out thousands of smart water meters throughout the city. This initiative, unveiled in the Kenya Gazette on February 27, 2026, and sanctioned by WASREB, represents a significant investment of Ksh2.57 billion. This substantial cost is intended to be recuperated directly from a new tariff structure approved by the regulatory board.
+
+The core of this technological upgrade lies in the adoption of ultrasonic technology for the new smart meters. Unlike conventional mechanical meters that are prone to wear and inaccuracies due to moving parts, these ultrasonic devices calculate water consumption by transmitting sound waves through flowing water, measuring the time difference between signals. This innovation promises enhanced accuracy, particularly at lower flow rates, and is expected to mitigate long-term maintenance issues.
+
+### Real-Time Data and AI Integration for Smart Meters
+
+A key feature of these smart meters is their real-time data capture and transmission capability. Consumption data will be automatically conveyed to a central system via advanced communication networks such as Global System for Mobile Communications (GSM), Long Range Wide Area Network (LoRaWAN), or Narrowband IoT (NB-IoT). This robust data flow will feed into an advanced analytics platform designed to detect pressure anomalies, pinpoint leak locations, and support proactive maintenance strategies.
+
+Crucially, the project also integrates an Artificial Intelligence (AI)-powered leak detection system, budgeted at Ksh120 million, with implementation scheduled for the 2027/2028 and 2028/2029 financial years. The deployment of AI in critical infrastructure management, as seen in global contexts such as the [US Military's integration of Claude AI in Middle East Operations](https://zandani.co.ke/article/us-military-deploys-claude-ai-middle-east-operations), underscores a growing reliance on intelligent systems for efficiency and security. This mirrors a broader trend towards commercial AI's deep integration in combat, signaling a future where such technologies are indispensable for complex operational environments.
+
+### Addressing Non-Revenue Water and Customer Service through Smart Meters
+
+A primary objective of the Nairobi Water Company's initiative is to significantly reduce non-revenue water (NRW)-water produced but not billed due to factors like leaks, theft, and metering inaccuracies. The company aims to cut NRW from 54 per cent to 39 per cent by the 2028/2029 financial year. This target builds on ongoing efforts, with previous reports indicating varying levels of NRW and continuous strategies to combat these losses. The NCWSC has already implemented a Geographic Information System (GIS)-based asset management platform and deployed specialised leak detection vans to bolster these efforts.
+
+The rollout of these smart meters will commence with high-consumption customers, specifically those using more than 100 cubic metres per month, before gradually expanding to other consumer categories. Furthermore, inline ultrasonic meters will be installed on bulk and distribution lines to monitor water volumes across the network, while production points and reservoirs will also be fitted with smart meters to track treated water entering the system.
+
+A significant enhancement for consumers will be the introduction of a prepaid system, allowing customers to purchase water in advance, akin to prepaid electricity tokens. Once the purchased credit is exhausted, water supply will automatically cease until additional credit is loaded. Beyond new installations, the project encompasses the replacement of tens of thousands of old or malfunctioning customer meters and the establishment of prepaid water dispensers in designated areas.
+
+### Public Reception and Historical Context of Smart Meters
+
+While the current announcement signals a definitive path forward, the introduction of smart meters has not been without its critics. In July 2025, Nahashon Muguna, the then Managing Director of Nairobi Water Works, expressed reservations before the Senate Committee. He argued that smart meters, costing between Ksh15,000 and Ksh20,000 each compared to Ksh3,500 for mechanical meters, were too expensive and would take an estimated 20 to 30 years to recoup the investment, given water's low-priced commodity status. Muguna maintained that mechanical meters were more practical for the majority of Nairobi residents, questioning whether the marginal gain in accuracy justified the substantial financial outlay.
+
+Despite this historical opposition, the renewed push for a city-wide smart meter rollout underscores a clear commitment to leveraging technology for long-term operational efficiency and financial sustainability. The success of this ambitious project hinges on its ability to transcend past concerns, deliver on its promise of reduced water losses, and ultimately provide a more reliable and transparent water service to the residents of Nairobi.
