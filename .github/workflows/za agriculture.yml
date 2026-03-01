@@ -167,6 +167,10 @@ jobs:
           LANGUAGE MANDATE:
           - Write in clear, professional Kenyan English.
           - NEVER use em dashes or en dashes. Only use regular single hyphens (-).
+          
+          STRICT OUTPUT FORMAT:
+          - DO NOT include the title, author name (e.g., "By Timothy Muli"), date, or "updated on" anywhere in the body text. 
+          - Start immediately with the core article content and paragraphs. Do not add introductory metadata.
           '''
 
           generated_body = ""
@@ -203,8 +207,15 @@ jobs:
           
           if not success_flag: sys.exit(1)
 
+          # Cleanup formatting
           generated_body = re.sub(r'^```(?:markdown|text|html)?\n', '', generated_body, flags=re.IGNORECASE)
           generated_body = re.sub(r'\n```$', '', generated_body).strip()
+          
+          # Safety net: Strip out unwanted leading titles, dates, or author bylines just in case
+          generated_body = re.sub(r'^(?:\*\*?)?(?:Title|Headline):?.*?\n+', '', generated_body, flags=re.IGNORECASE).strip()
+          generated_body = re.sub(r'^(?:\*\*?)?(?:By|Author):?.*?\n+', '', generated_body, flags=re.IGNORECASE).strip()
+          generated_body = re.sub(r'^(?:\*\*?)?(?:Date|Updated):?.*?\n+', '', generated_body, flags=re.IGNORECASE).strip()
+
           generated_body = dash_scrubber(generated_body)
 
           slug_name = f"agri-news-{final_hash[:8]}"
