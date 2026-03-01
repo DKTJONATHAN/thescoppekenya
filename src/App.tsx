@@ -3,10 +3,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/hooks/useTheme";
 import { Button } from "@/components/ui/button";
-import { HelmetProvider } from "react-helmet-async";
 
 // Lazy load pages for code splitting
 const Index = lazy(() => import("./pages/Index"));
@@ -121,45 +120,41 @@ const GlobalErrorHandler = ({ children }: { children: ReactNode }) => {
 };
 
 const App = () => (
-  <HelmetProvider>
-    <QueryClientProvider client={queryClient}>
-      <ThemeProvider>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <GlobalErrorHandler>
-            <BrowserRouter>
-              <ErrorBoundary>
-                <Suspense fallback={<PageLoader />}>
-                  <Routes>
-                    <Route path="/" element={<Index />} />
-                    <Route path="/article/:slug" element={<ArticlePage />} />
-                    <Route path="/category/:slug" element={<CategoryPage />} />
-                    <Route path="/trending" element={<Trending />} />
-                    <Route path="/about" element={<AboutPage />} />
-                    <Route path="/contact" element={<ContactPage />} />
-                    <Route path="/privacy" element={<PrivacyPage />} />
-                    <Route path="/terms" element={<TermsPage />} />
-                    <Route path="/advertise" element={<AdvertisePage />} />
-                    <Route path="/careers" element={<CareersPage />} />
-                    <Route path="/admin" element={<AdminPage />} />
-                    <Route path="/tag/:tag" element={<TagPage />} />
-                    <Route path="/sports" element={<SportsPage />} />
-                    <Route path="/sports/live" element={<LiveScoresPage />} />
-                    <Route path="/sitemap.xml" element={<SitemapPage />} />
-                    <Route path="/sitemap" element={<SitemapHtmlPage />} />
-                    <Route path="/authors" element={<AuthorsPage />} />
-                    <Route path="/author/:authorName" element={<AuthorProfilePage />} />
-                    <Route path="*" element={<NotFound />} />
-                  </Routes>
-                </Suspense>
-              </ErrorBoundary>
-            </BrowserRouter>
-          </GlobalErrorHandler>
-        </TooltipProvider>
-      </ThemeProvider>
-    </QueryClientProvider>
-  </HelmetProvider>
+  <QueryClientProvider client={queryClient}>
+    <ThemeProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <GlobalErrorHandler>
+          <ErrorBoundary>
+            <Suspense fallback={<PageLoader />}>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/article/:slug" element={<ArticlePage />} />
+                <Route path="/category/:slug" element={<CategoryPage />} />
+                <Route path="/trending" element={<Trending />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/privacy" element={<PrivacyPage />} />
+                <Route path="/terms" element={<TermsPage />} />
+                <Route path="/advertise" element={<AdvertisePage />} />
+                <Route path="/careers" element={<CareersPage />} />
+                <Route path="/admin" element={<AdminPage />} />
+                <Route path="/tag/:tag" element={<TagPage />} />
+                <Route path="/sports" element={<SportsPage />} />
+                <Route path="/sports/live" element={<LiveScoresPage />} />
+                <Route path="/sitemap.xml" element={<SitemapPage />} />
+                <Route path="/sitemap" element={<SitemapHtmlPage />} />
+                <Route path="/authors" element={<AuthorsPage />} />
+                <Route path="/author/:authorName" element={<AuthorProfilePage />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Suspense>
+          </ErrorBoundary>
+        </GlobalErrorHandler>
+      </TooltipProvider>
+    </ThemeProvider>
+  </QueryClientProvider>
 );
 
 export default App;
