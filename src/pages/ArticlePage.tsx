@@ -76,8 +76,8 @@ export default function ArticlePage() {
     });
   }, [relatedPosts, viewCounts]);
 
-  // Insert ads after every 3rd paragraph
-  const contentWithAds = useMemo(() => {
+  // Single in-article ad placed after \~4th paragraph
+  const contentWithOneAd = useMemo(() => {
     if (!post?.htmlContent) return [];
 
     const tempDiv = document.createElement("div");
@@ -85,6 +85,7 @@ export default function ArticlePage() {
 
     const renderedBlocks = [];
     let paragraphCount = 0;
+    let adInserted = false;
 
     Array.from(tempDiv.children).forEach((child, index) => {
       renderedBlocks.push(
@@ -96,16 +97,9 @@ export default function ArticlePage() {
 
       if (child.tagName && child.tagName.toLowerCase() === "p") {
         paragraphCount++;
-        if (paragraphCount % 3 === 0 && index < tempDiv.children.length - 1) {
-          renderedBlocks.push(
-            <AdUnit
-              key={`ad-${paragraphCount}`}
-              type="highperformance"
-              keyOrClient="d05eae5216bfa715669d9c6cdb24d565"
-              width={300}
-              height={250}
-            />
-          );
+        if (!adInserted && paragraphCount >= 4) {
+          renderedBlocks.push(<AdUnit key="inarticle-ad" type="inarticle" />);
+          adInserted = true;
         }
       }
     });
@@ -291,14 +285,12 @@ export default function ArticlePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      {/* Reading Progress Bar */}
       <div 
         ref={progressRef}
         className="fixed top-0 left-0 right-0 h-1 bg-primary z-50" 
         style={{ width: "0%" }}
       />
 
-      {/* Back Navigation */}
       <div className="bg-muted/50 border-b border-border">
         <div className="container max-w-4xl py-3">
           <button
@@ -313,7 +305,6 @@ export default function ArticlePage() {
 
       <article className="py-8 md:py-12">
         <div className="container max-w-4xl">
-          {/* Immersive Header */}
           <header className="mb-10">
             <Link to={`/category/${post.category.toLowerCase()}`}>
               <Badge className="mb-6 gradient-primary text-primary-foreground border-0 hover:opacity-90 text-sm px-5 py-1.5">
@@ -346,7 +337,6 @@ export default function ArticlePage() {
             </div>
           </header>
 
-          {/* Featured Image */}
           <figure className="mb-12 relative">
             <div className="aspect-video rounded-3xl overflow-hidden bg-muted shadow-xl">
               <img
@@ -364,6 +354,11 @@ export default function ArticlePage() {
               </figcaption>
             )}
           </figure>
+
+          {/* Single horizontal banner slot after image */}
+          <div className="my-8 flex justify-center">
+            <AdUnit type="horizontal" />
+          </div>
 
           {/* Sticky Share on Desktop */}
           <div className="hidden lg:flex fixed left-[calc(50%-42rem)] top-48 flex-col gap-3 z-30">
@@ -384,7 +379,7 @@ export default function ArticlePage() {
             </Button>
           </div>
 
-          {/* Main Content with Ads */}
+          {/* Main content with one in-article ad */}
           <div
             ref={contentRef}
             className="prose prose-lg max-w-none dark:prose-invert 
@@ -397,7 +392,7 @@ export default function ArticlePage() {
               prose-li:mb-3 prose-li:leading-8
               prose-ul:mb-8 prose-ol:mb-8 first-letter:text-7xl first-letter:font-serif first-letter:font-bold first-letter:text-primary first-letter:mr-3 first-letter:float-left"
           >
-            {contentWithAds}
+            {contentWithOneAd}
           </div>
 
           {/* Tags */}
@@ -433,6 +428,11 @@ export default function ArticlePage() {
             <h3 className="font-serif font-bold text-2xl text-foreground mb-3">Never miss the tea</h3>
             <p className="text-muted-foreground mb-6">Fresh Kenyan gossip straight to your inbox every morning.</p>
             <NewsletterForm />
+          </div>
+
+          {/* Single AdSense placeholder slot before related stories */}
+          <div className="my-12">
+            <AdUnit type="adsense-placeholder" />
           </div>
 
           {/* Related Stories */}
@@ -476,7 +476,6 @@ export default function ArticlePage() {
         </Button>
       </div>
 
-      {/* Scroll to Top */}
       {showScrollTop && (
         <button
           onClick={scrollToTop}
