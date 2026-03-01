@@ -1,12 +1,24 @@
 {
-  "Jonathan Mwaniki": {
-    "name": "Jonathan Mwaniki",
-    "role": "Editor",
-    "bio": "Kenya's fast upcoming journalist, content creater, software developer and a teacher.",
+  "The Scoop Kenya": {
+    "name": "The Scoop Kenya",
+    "role": "Contributing Writer",
+    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
     "avatar": "/api/placeholder/150/150",
     "location": "Kenya",
     "socials": {
-      "twitter": "https://x.com/maestropuns",
+      "twitter": "",
+      "linkedin": "",
+      "email": ""
+    }
+  },
+  "Jonathan Mwaniki": {
+    "name": "Jonathan Mwaniki",
+    "role": "Contributing Writer",
+    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
+    "avatar": "/api/placeholder/150/150",
+    "location": "Kenya",
+    "socials": {
+      "twitter": "",
       "linkedin": "",
       "email": ""
     }
@@ -23,8 +35,8 @@
       "email": ""
     }
   },
-  "The Scoop Kenya": {
-    "name": "The Scoop Kenya",
+  "The Scoop KE": {
+    "name": "The Scoop KE",
     "role": "Contributing Writer",
     "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
     "avatar": "/api/placeholder/150/150",
@@ -71,8 +83,8 @@
       "email": ""
     }
   },
-  "Elizabeth Muthoni": {
-    "name": "Elizabeth Muthoni",
+  "Timothy Muli": {
+    "name": "Timothy Muli",
     "role": "Contributing Writer",
     "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
     "avatar": "/api/placeholder/150/150",
@@ -83,8 +95,8 @@
       "email": ""
     }
   },
-  "Timothy Muli": {
-    "name": "Timothy Muli",
+  "Elizabeth Muthoni": {
+    "name": "Elizabeth Muthoni",
     "role": "Contributing Writer",
     "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
     "avatar": "/api/placeholder/150/150",
@@ -121,18 +133,6 @@
   },
   "Okwonko Ben": {
     "name": "Okwonko Ben",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "The Scoop KE": {
-    "name": "The Scoop KE",
     "role": "Contributing Writer",
     "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
     "avatar": "/api/placeholder/150/150",
