@@ -20,10 +20,10 @@ export function Footer() {
         <div className="container py-12">
           <div className="max-w-2xl mx-auto text-center">
             <h3 className="text-2xl md:text-3xl font-serif font-bold mb-3 text-foreground">
-              Usikose Story Yoyote
+              Don't Miss Any Story
             </h3>
             <p className="text-muted-foreground mb-6">
-              Pata insider news, gossip, na entertainment updates moja kwa moja kwa inbox yako.
+              Get insider news, gossip, and entertainment updates straight to your inbox.
             </p>
             <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input
