@@ -14,8 +14,6 @@ const app = express();
 
 let vite;
 
-// FIX: We removed the async wrapper and are using top-level await.
-// This guarantees Express sets up the CSS/JS static routes BEFORE the wildcard catch-all.
 if (!isProduction) {
   const { createServer } = await import('vite');
   vite = await createServer({
@@ -25,14 +23,12 @@ if (!isProduction) {
   });
   app.use(vite.middlewares);
 } else {
-  // FIX: Using built-in express.static to serve your Tailwind CSS and JS bundles instantly
   app.use(base, express.static(path.join(__dirname, 'dist/client'), {
     index: false, 
     maxAge: '1y' 
   }));
 }
 
-// Now the catch-all only fires if the browser asks for a real webpage, not a CSS file
 app.use('*', async (req, res) => {
   try {
     const url = req.originalUrl.replace(base, '');
@@ -51,11 +47,14 @@ app.use('*', async (req, res) => {
 
     const rendered = await render(url);
 
+    // FIX: Bulletproof Regex replacement that ignores Vite's aggressive minification
     const html = template
-      .replace(``, rendered.head ?? '')
-      .replace(``, rendered.html ?? '');
+      .replace(//g, '')
+      .replace(/<\/head>/i, `${rendered.head ?? ''}</head>`)
+      .replace(//g, '')
+      .replace(/<div id="root"><\/div>/i, `<div id="root">${rendered.html ?? ''}</div>`)
+      .replace(/<div id=root><\/div>/i, `<div id="root">${rendered.html ?? ''}</div>`);
 
-    // Vercel Edge Caching to keep performance at 90+
     if (isProduction) {
       res.set({
         'Cache-Control': 's-maxage=60, stale-while-revalidate=300',
