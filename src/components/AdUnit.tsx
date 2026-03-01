@@ -74,7 +74,7 @@ const AdUnit = ({ type = 'inarticle' }) => {
         </div>
         
         <script type="text/javascript">
-          // Check if an ad actually injected visual elements after 3 seconds
+          // Check if an ad actually injected visual elements after 1.5 seconds
           setTimeout(function() {
             var wrapper = document.getElementById('ad-wrapper-${uniqueId}');
             
@@ -95,7 +95,7 @@ const AdUnit = ({ type = 'inarticle' }) => {
             if (obviousAdElements.length === 0 && !hasTallDiv) {
               window.parent.postMessage('adLoadError_${uniqueId}', '*');
             }
-          }, 3000);
+          }, 1500);
         </script>
       </body>
     </html>
@@ -106,7 +106,7 @@ const AdUnit = ({ type = 'inarticle' }) => {
       style={{
         width: type === 'horizontal' ? '320px' : '300px',
         height: type === 'horizontal' ? '50px' : '250px',
-        margin: '40px auto',
+        margin: '15px auto', 
         display: 'block',
         clear: 'both',
         textAlign: 'center'
