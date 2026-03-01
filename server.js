@@ -14,28 +14,25 @@ const app = express();
 
 let vite;
 
-// Use an async IIFE to boot the server safely without crashing the Vercel wrapper
-(async () => {
-  try {
-    if (!isProduction) {
-      const { createServer } = await import('vite');
-      vite = await createServer({
-        server: { middlewareMode: true },
-        appType: 'custom',
-        base
-      });
-      app.use(vite.middlewares);
-    } else {
-      const compression = (await import('compression')).default;
-      const sirv = (await import('sirv')).default;
-      app.use(compression());
-      app.use(base, sirv(path.join(__dirname, 'dist/client'), { extensions: [] }));
-    }
-  } catch (error) {
-    console.error('Server initialization failed:', error);
-  }
-})();
+// FIX: We removed the async wrapper and are using top-level await.
+// This guarantees Express sets up the CSS/JS static routes BEFORE the wildcard catch-all.
+if (!isProduction) {
+  const { createServer } = await import('vite');
+  vite = await createServer({
+    server: { middlewareMode: true },
+    appType: 'custom',
+    base
+  });
+  app.use(vite.middlewares);
+} else {
+  // FIX: Using built-in express.static to serve your Tailwind CSS and JS bundles instantly
+  app.use(base, express.static(path.join(__dirname, 'dist/client'), {
+    index: false, 
+    maxAge: '1y' 
+  }));
+}
 
+// Now the catch-all only fires if the browser asks for a real webpage, not a CSS file
 app.use('*', async (req, res) => {
   try {
     const url = req.originalUrl.replace(base, '');
@@ -58,7 +55,7 @@ app.use('*', async (req, res) => {
       .replace(``, rendered.head ?? '')
       .replace(``, rendered.html ?? '');
 
-    // Vercel Edge Caching to completely eliminate slowness
+    // Vercel Edge Caching to keep performance at 90+
     if (isProduction) {
       res.set({
         'Cache-Control': 's-maxage=60, stale-while-revalidate=300',
@@ -72,7 +69,6 @@ app.use('*', async (req, res) => {
   } catch (e) {
     vite?.ssrFixStacktrace(e);
     console.error('SSR Render Error:', e);
-    // Catch the error gracefully instead of crashing Vercel
     res.status(500).end('Internal Server Error while rendering the page.');
   }
 });
