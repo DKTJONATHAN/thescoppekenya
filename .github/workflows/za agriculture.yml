@@ -61,7 +61,7 @@ jobs:
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
 
-          MODELS_TO_TRY = ["gemini-2.0-flash", "gemini-1.5-flash"] # Updated to current stable versions
+          MODELS_TO_TRY = ["gemini-2.0-flash", "gemini-1.5-flash"]
 
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
@@ -73,16 +73,33 @@ jobs:
               "in today's digital age", "shed light on"
           ]
 
+          def upload_to_imgbb(image_url):
+              api_key = os.environ.get("IMGBB_API_KEY")
+              if not api_key or not image_url: 
+                  return image_url
+              try:
+                  print(f"📸 Fetching image for ImgBB: {image_url}")
+                  img_data = requests.get(image_url, timeout=15).content
+                  base64_image = base64.b64encode(img_data)
+                  payload = {"key": api_key, "image": base64_image}
+                  res = requests.post("https://api.imgbb.com/1/upload", payload, timeout=20)
+                  new_url = res.json()['data']['url']
+                  print(f"✅ Re-hosted to ImgBB: {new_url}")
+                  return new_url
+              except Exception as e:
+                  print(f"⚠️ ImgBB Upload Failed: {e}")
+                  return image_url
+
           def get_target_urls():
               urls = []
               try:
                   with sync_playwright() as p:
                       browser = p.chromium.launch(headless=True)
-                      context = browser.new_context(user_agent="Mozilla/5.0...")
+                      context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
                       page = context.new_page()
                       page.goto('https://smartfarmerkenya.com/', timeout=60000, wait_until="domcontentloaded")
-                      page.evaluate("window.scrollBy(0, 1500)")
-                      page.wait_for_timeout(4000)
+                      page.evaluate("window.scrollBy(0, 1000)")
+                      page.wait_for_timeout(3000)
                       soup = BeautifulSoup(page.content(), 'html.parser')
                       for a in soup.find_all('a', href=True):
                           href = a.get('href', '')
@@ -92,21 +109,6 @@ jobs:
               except Exception as e: print(f"Scan error: {e}")
               return list(set(urls))
 
-          def upload_to_imgbb(image_url):
-              api_key = os.environ.get("IMGBB_API_KEY")
-              if not api_key or not image_url: return image_url
-              try:
-                  # Download image and convert to base64
-                  response = requests.get(image_url, timeout=15)
-                  if response.status_code == 200:
-                      base64_image = base64.b64encode(response.content)
-                      payload = {"key": api_key, "image": base64_image}
-                      res = requests.post("https://api.imgbb.com/1/upload", payload, timeout=20)
-                      return res.json()['data']['url']
-              except Exception as e:
-                  print(f"ImgBB Upload Failed: {e}")
-              return image_url
-
           def scrape_article_free(url):
               with sync_playwright() as p:
                   browser = p.chromium.launch(headless=True)
@@ -115,33 +117,29 @@ jobs:
                       page.goto(url, timeout=45000)
                       soup = BeautifulSoup(page.content(), "html.parser")
                       
-                      # Image Extraction
                       img_url = ""
                       meta_img = soup.find('meta', property='og:image') or soup.find('meta', name='twitter:image')
                       if meta_img: img_url = meta_img.get('content')
                       
-                      # Text Extraction
-                      paras = soup.find_all('p')
-                      article_text = "\n\n".join([p.get_text() for p in paras if len(p.get_text()) > 40])
-                      title = soup.title.string.replace(' - Smart Farmer', '') if soup.title else "News"
-                      
-                      # Re-host image on ImgBB
                       if img_url:
-                          print(f"📸 Re-hosting image to ImgBB...")
                           img_url = upload_to_imgbb(img_url)
 
+                      paras = soup.find_all('p')
+                      article_text = "\n\n".join([p.get_text() for p in paras if len(p.get_text()) > 40])
+                      title = soup.title.string.replace(' - Smart Farmer', '') if soup.title else "Agriculture News"
+                      
                       return article_text, img_url, title
                   except: return None, None, None
                   finally: browser.close()
 
-          # --- KEY ROTATION (NOW WITH 3 KEYS) ---
+          # --- KEY ROTATION ---
           raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY"), os.environ.get("GEMINI_API_KEY1")]
           api_keys = [k for k in raw_keys if k and k.strip()]
           key_cycle = itertools.cycle(api_keys)
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
+          google_search_tool = types.Tool(google_search=types.GoogleSearch())
 
-          # ... (Logic for selecting link and preparing prompt remains same) ...
           article_links = get_target_urls()
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
@@ -155,53 +153,81 @@ jobs:
                   full_raw_text, target_image, final_hash, target_title = text, img, u_hash, title
                   break
 
-          if not full_raw_text: sys.exit(0)
+          if not full_raw_text: 
+              print("No new articles found.")
+              sys.exit(0)
 
-          prompt = f"TASK: Write news report as Timothy Muli... SOURCE: {full_raw_text[:8000]}" # Truncated for token safety
+          prompt = f"Current Date: {full_date_str}\nWrite an agriculture report as Timothy Muli based on: {full_raw_text[:10000]}. Use professional Kenyan English. No em dashes."
 
+          generated_body = ""
           success_flag = False
-          keys_tried = 0
+          keys_tried_in_round = 0
+
           for model_id in MODELS_TO_TRY:
+              if success_flag: break
               for retry in range(len(api_keys) * 2):
                   try:
-                      response = client.models.generate_content(model=model_id, contents=prompt)
-                      full_text = response.text.strip()
-                      success_flag = True
-                      break
+                      response = client.models.generate_content(
+                          model=model_id, 
+                          contents=prompt,
+                          config=types.GenerateContentConfig(temperature=0.7, tools=[google_search_tool])
+                      )
+                      generated_body = response.text.strip()
+                      if generated_body:
+                          success_flag = True
+                          break
                   except Exception as e:
                       if "429" in str(e):
-                          print("⚠️ Rotating API Key...")
+                          keys_tried_in_round += 1
+                          print(f"⚠️ Rotating API key... ({keys_tried_in_round}/{len(api_keys)})")
                           current_key = next(key_cycle)
                           client = genai.Client(api_key=current_key)
-                          keys_tried += 1
-                          if keys_tried >= len(api_keys): time.sleep(20)
+                          if keys_tried_in_round >= len(api_keys):
+                              print("⏳ Sleeping 45s...")
+                              time.sleep(45)
+                              keys_tried_in_round = 0
                       else: break
-              if success_flag: break
 
-          # ... (Parsing and File Saving logic) ...
-          # Note: The 'target_image' used in the frontmatter is now the ImgBB link.
-          
+          if not success_flag: 
+              sys.exit(1)
+
+          generated_body = re.sub(r'^```(?:markdown|text|html)?\n', '', generated_body, flags=re.IGNORECASE)
+          generated_body = re.sub(r'\n```$', '', generated_body).strip()
+
           final_file = textwrap.dedent(f"""\
           ---
-          title: "{target_title}"
+          title: "{target_title.replace('"', "'")}"
           slug: "agri-news-{final_hash[:8]}"
           author: "Timothy Muli"
           image: "{target_image}"
           category: "Agriculture"
           date: "{today_str}"
           ---
-          {full_text}
+
+          {generated_body}
           """)
 
-          out_dir = os.environ.get("POSTS_DIR")
+          out_dir = os.environ.get("POSTS_DIR", "content/posts")
           os.makedirs(out_dir, exist_ok=True)
-          with open(os.path.join(out_dir, f"{final_hash}.md"), "w") as f: f.write(final_file)
+          with open(os.path.join(out_dir, f"{final_hash}.md"), "w", encoding="utf-8") as f:
+              f.write(final_file)
           
           memory.append(final_hash)
-          with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
+          with open(memory_path, 'w') as f: 
+              json.dump(memory[-200:], f)
           EOF
 
-      - name: Commit and push
+      - name: Git Safety Pull
+        run: |
+          git config --global user.name "Timothy Muli"
+          git config --global user.email "bot@zandani.co.ke"
+          git fetch origin main
+          git pull origin main --rebase || echo "No remote changes"
+
+      - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: Timothy Muli hosted images 🌾"
+          commit_author: "Timothy Muli <bot@zandani.co.ke>"
+          commit_message: "content: Timothy Muli agriculture report with hosted images 🌾"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: 'content/posts/*.md .github/memory_timothy.json'
