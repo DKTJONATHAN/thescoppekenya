@@ -1,0 +1,34 @@
+---
+title: "Gachagua Faces Backlash in Kisii After Targeting Area Leaders During Tour"
+slug: "gachagua-faces-backlash-kisii-targeting-area-leaders-tour"
+excerpt: "Former Deputy President Rigathi Gachagua faces backlash in Kisii after targeting area leaders during a recent United Opposition tour, drawing criticism over confrontational politics."
+author: "Celestine Nzioka"
+image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/matiangi-gachagua.jpg?itok=0FI0PvYZ"
+category: "News"
+date: "2026-03-01"
+tags: ["Rigathi Gachagua", "Kisii politics", "political backlash", "Kenya opposition", "Simba Arati", "Gusii region"]
+---
+
+## Gachagua Faces Backlash in Kisii Over Divisive Rhetoric
+
+Former Deputy President Rigathi Gachagua has encountered significant criticism in Kisii County following his recent tour as part of the United Opposition, where he notably targeted local leaders. Residents and political observers have voiced concerns over what they describe as personalised attacks, calling for a return to issue-based political discourse. The backlash highlights growing calls for mature politics focused on socio-economic development rather than personal animosity.
+
+The criticism stems from a three-day United Opposition tour of Kisii and Nyamira counties, which concluded on February 25, 2026. During the tour, former Deputy President Rigathi Gachagua, now the leader of the Democracy for Citizens Party (DCP), was specifically critical of Kisii Governor Simba Arati, vowing to unseat him with the aid of presidential hopeful Fred Matiang'i. Gachagua reportedly challenged Governor Arati’s development record, suggesting that Kisii County had stalled under his leadership.
+
+### Targeting Area Leaders Sparks Local Outcry
+
+Days after Gachagua's entourage departed the Gusii region, a section of residents, led by local leader Samuel Maranga from Nyaribari Masaba, Gesusu Ward, held a press conference to denounce Gachagua's confrontational tactics. Maranga asserted that political competition should remain healthy, devoid of personal hostility, and called for sobriety and restraint in politics. "Our county should not be turned into a battleground for personal vendettas," he stated.
+
+Residents emphasised that discussions should instead centre on pressing matters such as roads, health services, education, employment opportunities, and economic growth. Governor Arati's administration has, in recent years, undertaken various development initiatives. For instance, in December 2023, Governor Arati unveiled a comprehensive plan to enhance water supply and promote environmental conservation across Kisii County, including expanding water connections and reviving stalled projects. Furthermore, in September 2025, the Kisii County Government officially took over several housing schemes from the National Housing Corporation, a move Governor Arati hailed as a breakthrough for the county's housing agenda. These efforts underscore a focus on tangible development that many residents wish to see prioritised in political discourse.
+
+### Allegations of Violence and the Ministry of Interior Report
+
+The United Opposition rallies in Kisii were also marred by claims from figures like Fred Matiang'i, a Jubilee presidential candidate for 2027, that government-sponsored individuals were deployed to disrupt their engagements. However, Samuel Maranga questioned these assertions, highlighting the absence of official police reports, public family statements, or verified documentation to confirm any alleged deaths. Maranga called upon investigative and security agencies to provide full clarity on whether any deaths occurred, how many individuals were affected, and if any arrests had been made, stating, "Kenyans deserve truth and transparency".
+
+These claims and counter-claims surface shortly after the Ministry of Interior released a report on Wednesday, February 25, 2026, detailing how political violence in the country is often organised and enabled by political actors rather than being spontaneous. The report suggests that political elites deliberately mobilise supporters to disrupt rallies and intimidate rivals. Such findings underscore the critical need for political leaders to exercise caution and responsibility, particularly when addressing sensitive issues that could inflame divisions.
+
+### Broader Implications of the Kisii Tour for National Politics
+
+The Kisii tour forms part of a broader push by the United Opposition, which includes prominent figures like Wiper leader Kalonzo Musyoka and DAP-Kenya leader Eugene Wamalwa, to mobilise support nationwide ahead of the 2027 General Election. While engaging in political competition is fundamental to democracy, the nature of recent exchanges in Kisii prompts a national conversation on the quality of political discourse. Instead of focusing on personal attacks, leaders are increasingly being called upon to articulate clear policy proposals that address tangible socio-economic challenges facing Kenyans.
+
+The emphasis by Kisii residents on fundamental needs such as infrastructure, health, and economic opportunities resonates with broader national concerns. As Kenya continues to navigate its fiscal landscape, with a [reliance on local lenders deepening amid fiscal shifts](https://zandani.co.ke/article/kenya-new-debt-local-lenders), the demand for leaders to present concrete solutions rather than engage in divisive rhetoric becomes even more pertinent. The trajectory of political engagements in the Gusii region will undoubtedly serve as a barometer for the evolving political climate across the country.
