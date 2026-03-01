@@ -119,11 +119,24 @@ jobs:
                       return None, None, None
                   finally: browser.close()
 
+          def dash_scrubber(text):
+              if not text: return ""
+              text = text.replace('\u2014', '-').replace('\u2013', '-')
+              text = text.replace(chr(8212), '-').replace(chr(8211), '-')
+              return text
+
           raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY"), os.environ.get("GEMINI_API_KEY1")]
           api_keys = [k for k in raw_keys if k and k.strip()]
+          
+          if not api_keys:
+              print("❌ No Gemini API keys provided.")
+              sys.exit(1)
+              
           key_cycle = itertools.cycle(api_keys)
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
+          
+          google_search_tool = types.Tool(google_search=types.GoogleSearch())
 
           article_links = get_target_urls()
           memory_path = os.environ.get('MEMORY_FILE')
@@ -142,7 +155,19 @@ jobs:
               print("No new content found.")
               sys.exit(0)
 
-          prompt = f"Date: {full_date_str}\nHeadline: {target_title}\nText: {full_raw_text[:6000]}\n\nTask: Write an authoritative Kenyan agricultural news report as Timothy Muli. Professional tone. No em dashes."
+          prompt = f'''Current Date: {full_date_str}
+          ORIGINAL HEADLINE: "{target_title}"
+          SOURCE SCRAPED TEXT: "{full_raw_text[:6000]}"
+          
+          TASK: Write an authoritative Kenyan agricultural news report as Timothy Muli. Professional tone.
+
+          STRICT TIME RULE AND GOOGLE SEARCH:
+          You MUST use Google Search to verify agricultural policies, crop prices, weather data, or farming tech. On every single search query you make, you must remind yourself of the current date ({full_date_str}) and only find data accurate as of this exact date. Ignore old news.
+
+          LANGUAGE MANDATE:
+          - Write in clear, professional Kenyan English.
+          - NEVER use em dashes or en dashes. Only use regular single hyphens (-).
+          '''
 
           generated_body = ""
           success_flag = False
@@ -153,7 +178,11 @@ jobs:
               print(f"🤖 Trying {model_id}...")
               for retry in range(len(api_keys) * 2):
                   try:
-                      response = client.models.generate_content(model=model_id, contents=prompt)
+                      response = client.models.generate_content(
+                          model=model_id, 
+                          contents=prompt,
+                          config=types.GenerateContentConfig(temperature=0.7, tools=[google_search_tool])
+                      )
                       generated_body = response.text.strip()
                       if generated_body:
                           success_flag = True
@@ -165,6 +194,7 @@ jobs:
                           current_key = next(key_cycle)
                           client = genai.Client(api_key=current_key)
                           if keys_tried_in_round >= len(api_keys):
+                              print("⏳ All keys hit quota. Waiting 65s...")
                               time.sleep(65)
                               keys_tried_in_round = 0
                       else: 
@@ -175,11 +205,14 @@ jobs:
 
           generated_body = re.sub(r'^```(?:markdown|text|html)?\n', '', generated_body, flags=re.IGNORECASE)
           generated_body = re.sub(r'\n```$', '', generated_body).strip()
+          generated_body = dash_scrubber(generated_body)
+
+          slug_name = f"agri-news-{final_hash[:8]}"
 
           final_file = textwrap.dedent(f"""\
           ---
           title: "{target_title.replace('"', "'")}"
-          slug: "agri-news-{final_hash[:8]}"
+          slug: "{slug_name}"
           author: "Timothy Muli"
           image: "{target_image}"
           category: "Agriculture"
@@ -189,9 +222,9 @@ jobs:
           {generated_body}
           """)
 
-          out_dir = os.environ.get("POSTS_DIR")
+          out_dir = os.environ.get("POSTS_DIR", "content/posts")
           os.makedirs(out_dir, exist_ok=True)
-          filename = f"{final_hash}.md"
+          filename = f"{slug_name}.md"
           filepath = os.path.join(out_dir, filename)
           
           with open(filepath, "w", encoding="utf-8") as f:
