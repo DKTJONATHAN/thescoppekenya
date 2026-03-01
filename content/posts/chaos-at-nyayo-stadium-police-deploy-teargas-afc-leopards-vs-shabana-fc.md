@@ -1,0 +1,32 @@
+---
+title: "Chaos at Nyayo Stadium: Police Deploy Teargas During AFC Leopards vs Shabana FC Clash"
+slug: "chaos-at-nyayo-stadium-police-deploy-teargas-afc-leopards-vs-shabana-fc"
+excerpt: "Amidst high-stakes Kenya Premier League action, **chaos at Nyayo Stadium** erupted as **police deploy teargas** during the **AFC Leopards vs Shabana FC** match, raising serious concerns."
+author: "Celestine Nzioka"
+image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/nyayo-chaos-ii.jpg?itok=1-UItBBV"
+category: "News"
+date: "2026-03-01"
+tags: ["Nyayo Stadium", "police deploy teargas", "AFC Leopards", "Shabana FC", "Kenya Premier League", "football violence", "crowd control", "fan safety"]
+---
+
+## Chaos at Nyayo Stadium as Police Deploy Teargas During AFC Leopards vs Shabana FC Match
+
+Chaos erupted at Nyayo Stadium on the evening of Sunday, March 1, during the high-stakes Kenya Premier League match between AFC Leopards and Shabana FC, when police deployed teargas both outside and inside the stadium to manage escalating fan tensions. The incident led to a temporary halt in play and raised significant questions about crowd control and fan safety at sporting events.
+
+### Unrest and the Decision to Deploy Teargas
+
+The dramatic events commenced before the match even began, with frustrated fans outside the stadium gates causing unrest after being denied entry due to crowd control protocols. Security officers initially responded by deploying teargas to disperse these external crowds. However, the tensions significantly escalated once the game was underway, leading to further intervention by police, who once again used teargas to disperse fans already within the stadium. Videos and images circulating on various platforms depicted fans running for safety as teargas canisters were launched into different sections of the national stadium, rendering some stands uninhabitable.
+
+Preliminary reports suggest that the high stakes of the game contributed to the unrest, as the winner of the clash between AFC Leopards and Shabana FC stood to secure second place on the league table, intensifying the title race.
+
+### The AFC Leopards vs Shabana FC Match Outcome
+
+Despite the disruptions, the match ultimately concluded with AFC Leopards securing a decisive 5-1 victory over Shabana FC. First-half goals from Samuel Semo and Tyson Otieno gave AFC Leopards an early advantage. Wycliffe Awiko managed to pull one goal back for Shabana in the 61st minute, but Samuel Ssenyonjo quickly restored Leopards' two-goal advantage just seven minutes later. Following the resumption of play after the teargas incident, Kayci Odhiambo extended Leopards' lead to 4-1 in the 70th minute, with Ssenyonjo adding another goal four minutes later to seal the dominant 5-1 win. This victory positions AFC Leopards on 40 points, placing them within six points of league leaders Gor Mahia, who currently top the Kenya Premier League table with 46 points. Shabana FC remains in third place with 40 points.
+
+### A Troubling Precedent: Prior Incidents Involving Shabana FC
+
+This incident is not an isolated event involving Shabana FC and crowd management challenges. In May 2025, a stampede occurred at Gusii Stadium during the highly anticipated "Nyanza derby" between Shabana FC and Gor Mahia, where the stadium was filled beyond capacity. The tensions ahead of that match led to chaos, resulting in several fans sustaining injuries. The Football Kenya Federation (FKF) initiated investigations into the incident, though it refuted initial claims of fatalities.
+
+The recurring nature of such incidents highlights a critical need for re-evaluating and enhancing crowd management strategies at Kenyan Premier League matches. As the league battles continue with high stakes, the safety and well-being of fans must remain paramount. This ongoing challenge for sports event organisers and security forces in Kenya is also a topic of broader national discourse, extending to how information is disseminated and consumed in the country. For a wider perspective on the dynamics of information flow, one might consider the challenges and opportunities media navigate in the contemporary landscape, as explored in "Navigating the Digital Reality for Media in Kenya: Opportunities and Challenges in a Connected Future."
+
+Fans have taken to social media to demand improved crowd management protocols to prevent future teargas incidents and ensure a safer environment for enjoying football. The recurring nature of these disruptions threatens to mar the reputation of the local league and alienate supporters.
