@@ -9,6 +9,7 @@ import { useEffect, useState, useMemo, useCallback, useRef } from "react";
 import { XIcon } from "@/components/XIcon";
 import { NewsletterForm } from "@/components/NewsletterForm";
 import { Helmet } from "react-helmet-async";
+import AdUnit from "@/components/AdUnit";
 
 export default function ArticlePage() {
   const { slug } = useParams<{ slug: string }>();
@@ -74,6 +75,43 @@ export default function ArticlePage() {
       };
     });
   }, [relatedPosts, viewCounts]);
+
+  // Insert ads after every 3rd paragraph
+  const contentWithAds = useMemo(() => {
+    if (!post?.htmlContent) return [];
+
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = post.htmlContent;
+
+    const renderedBlocks = [];
+    let paragraphCount = 0;
+
+    Array.from(tempDiv.children).forEach((child, index) => {
+      renderedBlocks.push(
+        <div
+          key={`block-${index}`}
+          dangerouslySetInnerHTML={{ __html: child.outerHTML }}
+        />
+      );
+
+      if (child.tagName && child.tagName.toLowerCase() === "p") {
+        paragraphCount++;
+        if (paragraphCount % 3 === 0 && index < tempDiv.children.length - 1) {
+          renderedBlocks.push(
+            <AdUnit
+              key={`ad-${paragraphCount}`}
+              type="highperformance"
+              keyOrClient="d05eae5216bfa715669d9c6cdb24d565"
+              width={300}
+              height={250}
+            />
+          );
+        }
+      }
+    });
+
+    return renderedBlocks;
+  }, [post?.htmlContent]);
 
   useEffect(() => {
     if (post?.image) {
@@ -346,7 +384,7 @@ export default function ArticlePage() {
             </Button>
           </div>
 
-          {/* Main Content */}
+          {/* Main Content with Ads */}
           <div
             ref={contentRef}
             className="prose prose-lg max-w-none dark:prose-invert 
@@ -358,8 +396,9 @@ export default function ArticlePage() {
               prose-img:rounded-3xl prose-img:my-12 prose-img:shadow-lg
               prose-li:mb-3 prose-li:leading-8
               prose-ul:mb-8 prose-ol:mb-8 first-letter:text-7xl first-letter:font-serif first-letter:font-bold first-letter:text-primary first-letter:mr-3 first-letter:float-left"
-            dangerouslySetInnerHTML={{ __html: post.htmlContent }}
-          />
+          >
+            {contentWithAds}
+          </div>
 
           {/* Tags */}
           {post.tags.length > 0 && (
