@@ -1,11 +1,20 @@
 {
-  "buildCommand": "node scripts/generate-llms-txt.js && node scripts/generate-rss.js && node scripts/submit-new-posts.js && vite build && node scripts/generate-sitemap.js && node scripts/generate-article-html.js",
+  "buildCommand": "node scripts/generate-llms-txt.js && node scripts/generate-rss.js && node scripts/submit-new-posts.js && npm run build && node scripts/generate-sitemap.js && node scripts/generate-article-html.js",
+  "builds": [
+    { 
+      "src": "server.js", 
+      "use": "@vercel/node" 
+    },
+    { 
+      "src": "package.json", 
+      "use": "@vercel/static-build" 
+    }
+  ],
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
     { "source": "/llms.txt", "destination": "/llms.txt" },
     { "source": "/rss.xml", "destination": "/rss.xml" },
     { "source": "/robots.txt", "destination": "/robots.txt" },
-    { "source": "/sitemap", "destination": "/index.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/server.js" }
   ]
 }
