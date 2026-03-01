@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const AdUnit = ({
   type = 'highperformance',
@@ -11,14 +11,16 @@ const AdUnit = ({
   className = '',
 }) => {
   const containerRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(true);
+  const [hasContent, setHasContent] = useState(false);
 
   useEffect(() => {
-    if (!containerRef.current) return;
+    if (!containerRef.current || !isVisible) return;
 
     const container = containerRef.current;
 
     if (type === 'highperformance') {
-      // Create a self-contained script block with its OWN atOptions (no global pollution)
+      // Isolated IIFE so each ad has its own atOptions (fixes multiple ads issue)
       const scriptContent = `
         (function() {
           var atOptions = {
@@ -32,6 +34,8 @@ const AdUnit = ({
           script.type = 'text/javascript';
           script.async = true;
           script.src = 'https://www.highperformanceformat.com/${keyOrClient}/invoke.js';
+          
+          // Insert right after this inline script
           var target = document.currentScript || document.body.lastChild;
           target.parentNode.insertBefore(script, target.nextSibling || target);
         })();
@@ -41,9 +45,11 @@ const AdUnit = ({
       inlineScript.textContent = scriptContent;
 
       container.appendChild(inlineScript);
+
+      // Mark that we attempted to load something
+      setHasContent(true);
     } 
     else if (type === 'adsense') {
-      // AdSense part unchanged for now
       if (!window.adsbygoogle) window.adsbygoogle = [];
       const ins = document.createElement('ins');
       ins.className = 'adsbygoogle';
@@ -54,23 +60,38 @@ const AdUnit = ({
       ins.setAttribute('data-full-width-responsive', 'true');
       container.appendChild(ins);
       window.adsbygoogle.push({});
+      setHasContent(true);
     }
 
-    // Cleanup
+    // Check after 10 seconds if the ad actually rendered anything useful
+    const checkTimer = setTimeout(() => {
+      if (container.children.length === 0 || container.offsetHeight < 20) {
+        // Nothing loaded → hide completely
+        setIsVisible(false);
+      }
+    }, 10000);
+
     return () => {
+      clearTimeout(checkTimer);
       container.innerHTML = '';
     };
-  }, [type, keyOrClient, slot, format, width, height]);
+  }, [type, keyOrClient, slot, format, width, height, isVisible]);
+
+  // If we decided it's not loading / blocked / failed → render nothing
+  if (!isVisible) {
+    return null;
+  }
 
   return (
     <div
       ref={containerRef}
       style={{
         width: `${width}px`,
-        height: `${height}px`,
+        minHeight: '1px',              // prevents total zero-height flicker
         margin: '40px auto',
         display: 'block',
         clear: 'both',
+        overflow: 'hidden',
         ...style
       }}
       className={`ad-unit mx-auto ${className}`}
