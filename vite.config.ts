@@ -17,4 +17,8 @@ export default defineConfig(({ mode }) => ({
   },
   // Ensure markdown files in content folder are properly bundled
   assetsInclude: ['**/*.md'],
+  // Force Vite to bundle react-helmet-async into the server build
+  ssr: {
+    noExternal: ["react-helmet-async"],
+  },
 }));
