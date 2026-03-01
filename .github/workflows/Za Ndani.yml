@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: \( {{ github.workflow }}- \){{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
 permissions:
@@ -50,12 +50,14 @@ jobs:
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           python << 'EOF'
-          import os, json, datetime, requests, re, time, sys, hashlib, random, textwrap, itertools
+          import os, json, datetime, requests, re, time, sys, hashlib, random, textwrap, itertools, base64
           from dateutil import parser as date_parser
           from google import genai
           from google.genai import types
@@ -78,6 +80,26 @@ jobs:
           ]
 
           print(f"🎯 Target: Mpasho (Za Ndani)")
+
+          def upload_to_imgbb(image_url):
+              api_key = os.environ.get("IMGBB_API_KEY")
+              if not api_key or not image_url: return image_url
+              try:
+                  print(f"📸 Fetching image for ImgBB: {image_url}")
+                  img_data = requests.get(image_url, timeout=15).content
+                  base64_image = base64.b64encode(img_data).decode('utf-8')
+                  payload = {"key": api_key, "image": base64_image}
+                  res = requests.post("https://api.imgbb.com/1/upload", data=payload, timeout=20)
+                  if res.status_code == 200:
+                      new_url = res.json()['data']['url']
+                      print(f"✅ Successfully re-hosted to: {new_url}")
+                      return new_url
+                  else:
+                      print(f"⚠️ ImgBB Failed: {res.text}")
+                      return image_url
+              except Exception as e:
+                  print(f"⚠️ ImgBB Exception: {e}")
+                  return image_url
 
           def get_target_urls():
               urls = []
@@ -103,7 +125,7 @@ jobs:
                       soup = BeautifulSoup(content, 'html.parser')
                       
                       for a in soup.find_all('a', href=True):
-                          href = a['href']
+                          href = a.get('href', '')
                           if len(href) > 40 and '-' in href and '/author/' not in href and '/category/' not in href and '/tag/' not in href:
                               full_url = href if href.startswith('http') else 'https://www.mpasho.co.ke' + (href if href.startswith('/') else '/' + href)
                               urls.append(full_url)
@@ -131,20 +153,23 @@ jobs:
                       "--disable-blink-features=AutomationControlled"
                   ])
                   context = browser.new_context(
-                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
                       viewport={"width": 1920, "height": 1080}
                   )
                   page = context.new_page()
+                  
+                  # Abort heavy resources to speed up load
+                  page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["image", "stylesheet", "font", "media"] else route.continue_())
+                  
                   try:
-                      # wait_until="networkidle" ensures dynamic text loads
-                      page.goto(url, timeout=60000, wait_until="networkidle")
-                      
                       try:
-                          page.wait_for_selector('p', timeout=10000)
-                      except:
-                          pass
+                          # Wait for DOM only, not networkidle
+                          page.goto(url, timeout=30000, wait_until="domcontentloaded")
+                      except Exception as e:
+                          print(f"   ⚠️ Goto exception (likely non-fatal timeout): {e}")
                       
-                      page.wait_for_timeout(3000)
+                      # Quick pause to let JS render text
+                      page.wait_for_timeout(4000)
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
 
@@ -169,7 +194,6 @@ jobs:
                           now = datetime.datetime.now(datetime.timezone.utc)
                           age_hours = (now - pub_time).total_seconds() / 3600
                           
-                          # If parsed from URL date (midnight), allow up to 48 hours to account for time of day.
                           limit = 48 if url_date_match else 24
                           if age_hours > limit:
                               print(f"   ⏳ Article is {int(age_hours)} hours old. Skipping (Older than limit).")
@@ -195,14 +219,12 @@ jobs:
                               article_text = chunk
                               break
 
-                      # Fallback 1: All paragraphs
                       if len(article_text) < 500:
                           all_paras = soup.find_all('p')
                           chunk = "\n\n".join([p.get_text(strip=True) for p in all_paras if len(p.get_text(strip=True)) > 40])
                           if len(chunk) > 300:
                               article_text = chunk
                               
-                      # Fallback 2: Brute force text extraction
                       if len(article_text) < 300:
                           body = soup.find('body')
                           if body:
@@ -220,7 +242,7 @@ jobs:
                       return article_text, img_url, page_title
 
                   except Exception as e:
-                      print(f"   Scrape failed: {e}")
+                      print(f"   Scrape failed critically: {e}")
                       return None, None, None
                   finally:
                       browser.close()
@@ -276,7 +298,7 @@ jobs:
               return text
 
           # --- API KEY ROTATION LOGIC ---
-          raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY")]
+          raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY"), os.environ.get("GEMINI_API_KEY1")]
           api_keys = [k for k in raw_keys if k and k.strip()]
           
           if not api_keys:
@@ -296,7 +318,7 @@ jobs:
           
           {internal_links_data}
 
-          TASK: Write an entertainment and celebrity news report as **Za Ndani**, a cheeky British Tabloid Gossip Columnist based in Kenya. You must use Google Search to verify any facts.
+          TASK: Write an entertainment and celebrity news report as **Za Ndani**, a cynical, British-style Tabloid Gossip Columnist based in Kenya. Point out the bad side of everything, the angle that the mainstream media and people ignore. You must use Google Search to verify any facts.
 
           EXACT-MATCH SEO ENGINE (STRICT RULE):
           1. Extract the 2 to 4 most important exact keyword phrases from the ORIGINAL HEADLINE (e.g., the specific celebrity name or controversy).
@@ -320,7 +342,10 @@ jobs:
           IMAGE_KEYWORD: [search query]
           BODY:
           [Article text in chatty, simple British English containing the internal link. 
-          Structure: Start with an H2 heading containing the exact keywords. Follow immediately with a crisp, 40-word neutral answer paragraph for Google Snippets. Then continue with natural subheadings that also reuse the exact keywords.]
+          Structure: Start with an H2 heading containing the exact keywords. Follow immediately with a crisp, 40-word neutral answer paragraph for Google Snippets. Then continue with natural subheadings that also reuse the exact keywords.
+          
+          - DO NOT include the title, author name (e.g., "By Za Ndani"), date, or "updated on" anywhere in the body text. 
+          - Start immediately with the core article content and paragraphs. Do not add introductory metadata.]
           '''
 
           full_text = ""
@@ -328,7 +353,7 @@ jobs:
           keys_tried = 0
           
           for model_id in MODELS_TO_TRY:
-              for retry in range(4):
+              for retry in range(len(api_keys) * 2):
                   try:
                       response = client.models.generate_content(
                           model=model_id, contents=prompt,
@@ -373,12 +398,19 @@ jobs:
               parsed["BODY"] = full_text.split("BODY:", 1)[-1].strip() if "BODY:" in full_text else full_text
 
           parsed["BODY"] = re.sub(r'^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD|BODY):\s*.*$', '', parsed["BODY"], flags=re.MULTILINE | re.IGNORECASE).strip()
+          
+          # Safety net: Strip out unwanted leading titles, dates, or author bylines
+          parsed["BODY"] = re.sub(r'^(?:\*\*?)?(?:Title|Headline):?.*?\n+', '', parsed["BODY"], flags=re.IGNORECASE).strip()
+          parsed["BODY"] = re.sub(r'^(?:\*\*?)?(?:By|Author):?.*?\n+', '', parsed["BODY"], flags=re.IGNORECASE).strip()
+          parsed["BODY"] = re.sub(r'^(?:\*\*?)?(?:Date|Updated):?.*?\n+', '', parsed["BODY"], flags=re.IGNORECASE).strip()
+
           parsed["BODY"] = dash_scrubber(parsed["BODY"]).strip()
 
           tags_list = [t.strip().replace('"', '') for t in parsed["TAGS"].split(",") if t.strip()]
           tags_str = ', '.join([f'"{t}"' for t in tags_list]) if tags_list else '"entertainment", "gossip"'
 
-          final_image_url = target_image if target_image else get_real_image(parsed.get('IMAGE_KEYWORD') or target_title)
+          initial_image_url = target_image if target_image else get_real_image(parsed.get('IMAGE_KEYWORD') or target_title)
+          final_image_url = upload_to_imgbb(initial_image_url)
 
           final_file = textwrap.dedent(f"""\
           ---
