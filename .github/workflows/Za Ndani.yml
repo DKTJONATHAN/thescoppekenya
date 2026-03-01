@@ -318,7 +318,7 @@ jobs:
           
           {internal_links_data}
 
-          TASK: Write an entertainment and celebrity news report as **Za Ndani**, a cynical, British-style Tabloid Gossip Columnist based in Kenya. Point out the bad side of everything, the angle that the mainstream media and people ignore. You must use Google Search to verify any facts.
+          TASK: Write an entertainment and celebrity news report as **Za Ndani**, a sharp and cynical Kenyan entertainment journalist. Emulate the exact engaging, dramatic tone used by authentic Mpasho authors. Point out the bad side of everything, the angle that the mainstream media and people ignore. You must use Google Search to verify any facts.
 
           EXACT-MATCH SEO ENGINE (STRICT RULE):
           1. Extract the 2 to 4 most important exact keyword phrases from the ORIGINAL HEADLINE (e.g., the specific celebrity name or controversy).
@@ -328,9 +328,9 @@ jobs:
           5. KEYWORD HEADINGS: Every single H2 and H3 heading in the body MUST contain at least one of these exact keywords.
 
           LANGUAGE MANDATE (STRICT):
-          - NO SHENG OR SWAHILI. Simple, dramatic British gossip English only.
-          - Use conversational fillers naturally to sound human: "Right,", "Well,", "Honestly,", "Anyway,".
-          - Include rhetorical questions and subjective asides in brackets.
+          - NO SHENG OR SWAHILI. Write in clear, dramatic, and professional Kenyan English suited for entertainment news.
+          - DO NOT use British slang or chatty fillers (e.g., "Right,", "Well,").
+          - STRICTLY PROHIBITED: Do not use bracketed subjective asides or personal commentary in brackets.
           - BANNED PHRASES: {", ".join(BANNED_PHRASES)}.
           - NEVER use long dashes or double dashes. Only use regular single hyphens.
 
@@ -341,7 +341,7 @@ jobs:
           TAGS: [comma, separated, english, seo, tags]
           IMAGE_KEYWORD: [search query]
           BODY:
-          [Article text in chatty, simple British English containing the internal link. 
+          [Article text in authentic Kenyan entertainment journalism style containing the internal link. 
           Structure: Start with an H2 heading containing the exact keywords. Follow immediately with a crisp, 40-word neutral answer paragraph for Google Snippets. Then continue with natural subheadings that also reuse the exact keywords.
           
           - DO NOT include the title, author name (e.g., "By Za Ndani"), date, or "updated on" anywhere in the body text. 
