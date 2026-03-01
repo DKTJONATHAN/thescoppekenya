@@ -1,19 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useId } from 'react';
 
 const AdUnit = ({ type = 'inarticle' }) => {
   const [isVisible, setIsVisible] = useState(true);
+  
+  // Create a unique identifier for this specific ad instance
+  const rawId = useId();
+  const uniqueId = rawId.replace(/[^a-zA-Z0-9]/g, "");
 
   useEffect(() => {
-    // Listen for messages from the iframe
+    // Listen for messages specific to this unique ad instance
     const handleMessage = (event) => {
-      if (event.data === `adLoadError_${type}`) {
+      if (event.data === `adLoadError_${uniqueId}`) {
         setIsVisible(false);
       }
     };
 
     window.addEventListener('message', handleMessage);
     return () => window.removeEventListener('message', handleMessage);
-  }, [type]);
+  }, [uniqueId]);
 
   // If the ad failed, was blocked, or is empty, close down the space entirely
   if (!isVisible) return null;
@@ -52,25 +56,44 @@ const AdUnit = ({ type = 'inarticle' }) => {
         </style>
       </head>
       <body>
+        <div id="ad-wrapper-${uniqueId}">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '${key}',
+              'format' : '${format}',
+              'height' : ${height},
+              'width' : ${width},
+              'params' : {}
+            };
+          </script>
+          <script 
+            type="text/javascript" 
+            src="https://www.highperformanceformat.com/${key}/invoke.js"
+            onerror="window.parent.postMessage('adLoadError_${uniqueId}', '*')"
+          ></script>
+        </div>
+        
         <script type="text/javascript">
-          atOptions = {
-            'key' : '${key}',
-            'format' : '${format}',
-            'height' : ${height},
-            'width' : ${width},
-            'params' : {}
-          };
-        </script>
-        <script 
-          type="text/javascript" 
-          src="https://www.highperformanceformat.com/${key}/invoke.js"
-          onerror="window.parent.postMessage('adLoadError_${type}', '*')"
-        ></script>
-        <script type="text/javascript">
-          // Check if an ad actually loaded after 3 seconds
+          // Check if an ad actually injected visual elements after 3 seconds
           setTimeout(function() {
-            if (document.body.clientHeight < 10) {
-              window.parent.postMessage('adLoadError_${type}', '*');
+            var wrapper = document.getElementById('ad-wrapper-${uniqueId}');
+            
+            // Ad networks usually inject an iframe, image, or link.
+            var obviousAdElements = document.querySelectorAll('iframe, img, a');
+            
+            // Sometimes they inject a generic div. Let's see if any div has actual height.
+            var allDivs = document.querySelectorAll('div');
+            var hasTallDiv = false;
+            for (var i = 0; i < allDivs.length; i++) {
+              if (allDivs[i].id !== 'ad-wrapper-${uniqueId}' && allDivs[i].clientHeight >= 10) {
+                hasTallDiv = true;
+                break;
+              }
+            }
+
+            // If we found zero ad-related tags and zero tall divs, the ad is blank.
+            if (obviousAdElements.length === 0 && !hasTallDiv) {
+              window.parent.postMessage('adLoadError_${uniqueId}', '*');
             }
           }, 3000);
         </script>
@@ -91,7 +114,7 @@ const AdUnit = ({ type = 'inarticle' }) => {
       className="ad-slot mx-auto"
     >
       <iframe
-        title={`ad-${type}`}
+        title={`ad-${type}-${uniqueId}`}
         srcDoc={adHtml}
         width={width}
         height={height}
