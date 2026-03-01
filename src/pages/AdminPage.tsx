@@ -836,7 +836,7 @@ ${newPost.content}`;
                       <div className="p-5">
                         <div className="font-medium line-clamp-2 mb-3 leading-snug">{post.title}</div>
                         <div className="flex items-center gap-2 text-xs text-muted-foreground mb-5">
-                          <User className="w-3.5 h-3.5" />
+                          <Users className="w-3.5 h-3.5" />
                           <span className="truncate">{post.author}</span>
                           <span>•</span>
                           <span>{post.date}</span>

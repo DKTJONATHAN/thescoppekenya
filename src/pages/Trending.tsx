@@ -59,8 +59,8 @@ const Trending = () => {
         <title>Trending Stories - Za Ndani | What's Hot in Kenya</title>
         
         {/* Primary SEO Meta Tags */}
-        <meta name="description" content="Discover the most read stories on Za Ndani right now. Hottest Kenya celebrity gossip, viral Sheng updates, and breaking Nairobi entertainment news." />
-        <meta name="keywords" content="Trending news Kenya, Kenya celebrity gossip, hot entertainment stories Nairobi, most read news Kenya, Za Ndani trending, viral Sheng stories, latest Nairobi gossip" />
+        <meta name="description" content="Discover the most read stories on Za Ndani right now. Hottest Kenya celebrity gossip, trending entertainment news, and breaking Nairobi stories." />
+        <meta name="keywords" content="Trending news Kenya, Kenya celebrity gossip, hot entertainment stories Nairobi, most read news Kenya, Za Ndani trending, latest Nairobi gossip, trending stories" />
         <link rel="canonical" href="https://zandani.co.ke/trending" />
 
         {/* Open Graph / Facebook */}
@@ -88,7 +88,7 @@ const Trending = () => {
               Trending Stories
             </h1>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              The hottest scoops, celebrity scandals, and Sheng updates that everyone in Nairobi is talking about right now.
+              The hottest scoops, celebrity scandals, and trending updates that everyone in Kenya is talking about right now.
             </p>
           </div>
 
