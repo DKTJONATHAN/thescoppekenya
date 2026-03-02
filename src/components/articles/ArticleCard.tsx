@@ -9,18 +9,17 @@ interface ArticleCardProps {
   priority?: boolean;
 }
 
-// NEW: Instantly converts ANY external image to a lightweight WebP via a free CDN proxy
+/**
+ * HELPER: Formats external images into lightweight WebP via proxy.
+ * Uses a simpler URL structure to avoid double-encoding issues.
+ */
 function getOptimizedImageUrl(url: string, width: number = 800): string {
   if (!url) return "";
+  // Bypass for local assets, SVGs, or already optimized data URIs
+  if (url.startsWith('/') || url.endsWith('.svg') || url.includes('data:image')) return url;
   
-  // If the image is already an SVG or a local asset, leave it alone
-  if (url.endsWith('.svg') || url.startsWith('/')) return url;
-
-  // Clean the URL to remove protocols like https:// so the proxy parses it correctly
-  const cleanUrl = url.replace(/^https?:\/\//, '');
-  
-  // Route through the wsrv.nl proxy: w = width, output = webp, q = 80% quality, we = bypass SSL errors
-  return `https://wsrv.nl/?url=${encodeURIComponent(cleanUrl)}&w=${width}&output=webp&q=80&we`;
+  // Use the direct URL. wsrv.nl handles the encoding internally better than JS sometimes.
+  return `https://wsrv.nl/?url=${url}&w=${width}&output=webp&q=80&we`;
 }
 
 export function ArticleCard({ post, variant = "default", priority = false }: ArticleCardProps) {
@@ -32,9 +31,22 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
 
   const isLCP = variant === "featured" || priority;
   
-  // Process the main image and author image through the proxy
+  // Prepare the optimized URLs
   const optimizedMainImage = getOptimizedImageUrl(post.image, 800);
   const optimizedAuthorImage = post.authorImage ? getOptimizedImageUrl(post.authorImage, 100) : "";
+
+  /**
+   * FALLBACK HANDLER: If the proxy fails (403, 404, or Timeout), 
+   * this function forces the browser to load the original raw image URL.
+   */
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>, originalUrl: string) => {
+    const target = e.currentTarget;
+    // Check to prevent infinite loops if the original URL is also broken
+    if (target.src !== originalUrl) {
+      console.warn("Proxy failed, falling back to original source for:", originalUrl);
+      target.src = originalUrl;
+    }
+  };
 
   if (variant === "featured") {
     return (
@@ -45,7 +57,8 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           loading={isLCP ? "eager" : "lazy"}
           fetchpriority={isLCP ? "high" : "auto"}
-          decoding={isLCP ? "sync" : "async"}
+          decoding="async"
+          onError={(e) => handleImageError(e, post.image)}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground via-foreground/50 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
@@ -62,24 +75,19 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
           </p>
           <div className="flex items-center gap-4 text-sm text-background/70">
             <div className="flex items-center gap-2">
-              {optimizedAuthorImage && (
+              {post.authorImage && (
                 <img 
                   src={optimizedAuthorImage} 
                   alt={post.author} 
                   className="w-8 h-8 rounded-full object-cover"
                   loading="lazy"
-                  decoding="async"
+                  onError={(e) => handleImageError(e, post.authorImage || "")}
                 />
               )}
               <span>{post.author}</span>
             </div>
             <span>•</span>
             <span>{formattedDate}</span>
-            <span>•</span>
-            <span className="flex items-center gap-1">
-              <Clock className="w-4 h-4" />
-              {post.readTime} min read
-            </span>
           </div>
         </div>
       </article>
@@ -97,7 +105,8 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               loading={priority ? "eager" : "lazy"}
               fetchpriority={priority ? "high" : "auto"}
-              decoding={priority ? "sync" : "async"}
+              decoding="async"
+              onError={(e) => handleImageError(e, post.image)}
             />
           </div>
         </Link>
@@ -142,6 +151,7 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
     );
   }
 
+  // Default Vertical Card
   return (
     <article className="group">
       <Link to={`/article/${post.slug}`} className="block mb-4">
@@ -152,7 +162,8 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             loading={priority ? "eager" : "lazy"}
             fetchpriority={priority ? "high" : "auto"}
-            decoding={priority ? "sync" : "async"}
+            decoding="async"
+            onError={(e) => handleImageError(e, post.image)}
           />
         </div>
       </Link>
@@ -169,13 +180,13 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
       </p>
       <div className="flex items-center justify-between text-xs text-muted-foreground">
         <div className="flex items-center gap-2">
-          {optimizedAuthorImage && (
+          {post.authorImage && (
             <img 
               src={optimizedAuthorImage} 
               alt={post.author} 
               className="w-6 h-6 rounded-full object-cover"
               loading="lazy"
-              decoding="async"
+              onError={(e) => handleImageError(e, post.authorImage || "")}
             />
           )}
           <span>{post.author}</span>
