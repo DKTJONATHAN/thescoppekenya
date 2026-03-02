@@ -33,16 +33,36 @@ if (typeof global.window === 'undefined') {
       addListener: () => {},
       removeListener: () => {},
     }),
-    // Fix for Radix / UI components trying to read CSS properties
     getComputedStyle: () => ({
       getPropertyValue: () => '',
     }),
+    // Fix for ArticlePage.tsx trying to read window.location.href
+    location: {
+      href: 'https://zandani.co.ke',
+      pathname: '/',
+      search: '',
+      hash: ''
+    },
+    // Fix for UI Carousels and Animations
+    requestAnimationFrame: (cb) => setTimeout(cb, 0),
+    cancelAnimationFrame: (id) => clearTimeout(id)
   };
 }
 
-// Some libraries call getComputedStyle directly without the window. prefix
 if (typeof global.getComputedStyle === 'undefined') {
   global.getComputedStyle = global.window.getComputedStyle;
+}
+
+if (typeof global.requestAnimationFrame === 'undefined') {
+  global.requestAnimationFrame = global.window.requestAnimationFrame;
+}
+
+if (typeof global.cancelAnimationFrame === 'undefined') {
+  global.cancelAnimationFrame = global.window.cancelAnimationFrame;
+}
+
+if (typeof global.location === 'undefined') {
+  global.location = global.window.location;
 }
 
 if (typeof global.document === 'undefined') {
