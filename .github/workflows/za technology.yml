@@ -2,7 +2,7 @@ name: Elizabeth Muthoni - Tech Scraper
 
 on:
   schedule:
-    - cron: '55 9,17 * * *' # Morning and Afternoon UTC
+    - cron: '55 9,17 * * *' # Morning and Afternoon UTC (Safe slot)
   workflow_dispatch:
 
 concurrency:
@@ -44,14 +44,16 @@ jobs:
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
           TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           python << 'EOF'
-          import os, json, datetime, requests, re, time, sys, hashlib, random, textwrap, itertools
+          import os, json, datetime, requests, re, time, sys, hashlib, random, textwrap, itertools, base64
           from dateutil import parser as date_parser
           from google import genai
           from google.genai import types
@@ -74,6 +76,26 @@ jobs:
           ]
 
           print(f"🎯 Target: TechWeez (Elizabeth Muthoni)")
+
+          def upload_to_imgbb(image_url):
+              api_key = os.environ.get("IMGBB_API_KEY")
+              if not api_key or not image_url: return image_url
+              try:
+                  print(f"📸 Fetching image for ImgBB: {image_url}")
+                  img_data = requests.get(image_url, timeout=15).content
+                  base64_image = base64.b64encode(img_data).decode('utf-8')
+                  payload = {"key": api_key, "image": base64_image}
+                  res = requests.post("https://api.imgbb.com/1/upload", data=payload, timeout=20)
+                  if res.status_code == 200:
+                      new_url = res.json()['data']['url']
+                      print(f"✅ Successfully re-hosted to: {new_url}")
+                      return new_url
+                  else:
+                      print(f"⚠️ ImgBB Failed: {res.text}")
+                      return image_url
+              except Exception as e:
+                  print(f"⚠️ ImgBB Exception: {e}")
+                  return image_url
 
           def get_target_urls():
               urls = []
@@ -196,12 +218,24 @@ jobs:
                               lines = [line.strip() for line in body.get_text(separator='\n').split('\n') if len(line.strip()) > 50]
                               article_text = "\n\n".join(lines)
 
-                      # --- IMAGE EXTRACTION ---
+                      # --- LOGO-PROOF IMAGE EXTRACTION ---
                       img_url = ""
-                      for meta in soup.find_all('meta'):
-                          if meta.get('property') in ['og:image', 'twitter:image']:
-                              img_url = meta.get('content', '')
-                              if img_url: break
+                      
+                      # 1. Attempt to find a real article image in the DOM
+                      lead_img = soup.select_one('article img, .post-content img, .entry-content img, picture img')
+                      if lead_img and lead_img.get('src'):
+                          src = lead_img.get('src')
+                          if 'data:image' not in src and 'placeholder' not in src.lower() and 'logo' not in src.lower():
+                              img_url = src
+
+                      # 2. Fallback to meta tags, avoiding 'logo' or 'default'
+                      if not img_url:
+                          for meta in soup.find_all('meta'):
+                              if meta.get('property') in ['og:image', 'twitter:image']:
+                                  content = meta.get('content', '')
+                                  if content and 'logo' not in content.lower() and 'default' not in content.lower():
+                                      img_url = content
+                                      break
 
                       print(f"   ✅ Extracted {len(article_text)} characters of text")
                       return article_text, img_url, page_title
@@ -263,7 +297,7 @@ jobs:
               return text
 
           # --- API KEY ROTATION LOGIC ---
-          raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY")]
+          raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY"), os.environ.get("GEMINI_API_KEY1")]
           api_keys = [k for k in raw_keys if k and k.strip()]
           
           if not api_keys:
@@ -283,10 +317,10 @@ jobs:
           
           {internal_links_data}
 
-          TASK: Write a highly authoritative technology and digital news report as **Elizabeth Muthoni**, a sharp, forward-looking Kenyan tech journalist writing for Za Ndani. 
+          TASK: Write a highly authoritative technology and digital news report as **Elizabeth Muthoni**, a sharp, cynical, and forward-looking Kenyan tech journalist writing for Za Ndani. Point out the critical angle that the mainstream tech media or corporate PR ignores (e.g., privacy concerns, hidden costs, monopolistic practices, or the real losers in a tech deal).
 
           STRICT TIME RULE AND GOOGLE SEARCH:
-          You MUST use Google Search to verify tech specs, company announcements, app launches, or digital policies. On every single search query you make, you must remind yourself of the current date ({full_date_str}) and only find data accurate as of this exact date in 2026. Ignore old tech news from past years. Rely strictly on the SOURCE SCRAPED TEXT and up-to-date facts.
+          You MUST use Google Search to verify tech specs, company announcements, app launches, or digital policies. On every single search query you make, you must remind yourself of the current date ({full_date_str}) and only find data accurate as of this exact date. Ignore old tech news from past years. Rely strictly on the SOURCE SCRAPED TEXT and up-to-date facts.
 
           EXACT-MATCH SEO ENGINE (STRICT RULE):
           1. Extract the 2 to 4 most important exact keyword phrases from the ORIGINAL HEADLINE.
@@ -298,6 +332,7 @@ jobs:
           LANGUAGE MANDATE (STRICT):
           - NO SHENG OR SWAHILI. 
           - Write in modern, clear, and professional Kenyan English suited for tech enthusiasts and digital consumers.
+          - STRICTLY PROHIBITED: Do not use bracketed subjective asides or personal commentary in brackets.
           - Avoid tabloidy phrasing. Focus on innovation, features, digital economy impact, and tech trends.
           - BANNED PHRASES: {", ".join(BANNED_PHRASES)}.
           - NEVER use em dashes or en dashes. Only use regular single hyphens (-).
@@ -310,15 +345,18 @@ jobs:
           IMAGE_KEYWORD: [search query related to technology, gadgets, or startups]
           BODY:
           [Article text containing the internal link. 
-          Structure: Start with an H2 heading containing the exact keywords. Follow immediately with a crisp, 40-word neutral answer paragraph for Google Snippets. Then continue with natural subheadings that also reuse the exact keywords.]
+          Structure: Start with an H2 heading containing the exact keywords. Follow immediately with a crisp, 40-word neutral answer paragraph for Google Snippets. Then continue with natural subheadings that also reuse the exact keywords.
+          
+          - DO NOT include the title, author name (e.g., "By Elizabeth Muthoni"), date, or "updated on" anywhere in the body text. 
+          - Start immediately with the core article content and paragraphs. Do not add introductory metadata.]
           '''
 
           full_text = ""
           success_flag = False
-          keys_tried = 0
+          keys_tried_in_round = 0
           
           for model_id in MODELS_TO_TRY:
-              for retry in range(4):
+              for retry in range(len(api_keys) * 2):
                   try:
                       response = client.models.generate_content(
                           model=model_id, contents=prompt,
@@ -330,11 +368,11 @@ jobs:
                       break 
                   except Exception as e:
                       if "429" in str(e):
-                          keys_tried += 1
-                          if keys_tried >= len(api_keys):
+                          keys_tried_in_round += 1
+                          if keys_tried_in_round >= len(api_keys):
                               print("⏳ All keys hit quota. Waiting 35s...")
                               time.sleep(35)
-                              keys_tried = 0
+                              keys_tried_in_round = 0
                           else:
                               print("⚠️ Quota hit. Rotating to next API key...")
                               current_key = next(key_cycle)
@@ -363,12 +401,19 @@ jobs:
               parsed["BODY"] = full_text.split("BODY:", 1)[-1].strip() if "BODY:" in full_text else full_text
 
           parsed["BODY"] = re.sub(r'^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD|BODY):\s*.*$', '', parsed["BODY"], flags=re.MULTILINE | re.IGNORECASE).strip()
+          
+          # Safety net: Strip out unwanted leading titles, dates, or author bylines
+          parsed["BODY"] = re.sub(r'^(?:\*\*?)?(?:Title|Headline):?.*?\n+', '', parsed["BODY"], flags=re.IGNORECASE).strip()
+          parsed["BODY"] = re.sub(r'^(?:\*\*?)?(?:By|Author):?.*?\n+', '', parsed["BODY"], flags=re.IGNORECASE).strip()
+          parsed["BODY"] = re.sub(r'^(?:\*\*?)?(?:Date|Updated):?.*?\n+', '', parsed["BODY"], flags=re.IGNORECASE).strip()
+
           parsed["BODY"] = dash_scrubber(parsed["BODY"]).strip()
 
           tags_list = [t.strip().replace('"', '') for t in parsed["TAGS"].split(",") if t.strip()]
           tags_str = ', '.join([f'"{t}"' for t in tags_list]) if tags_list else '"technology", "tech", "kenya"'
 
-          final_image_url = target_image if target_image else get_real_image(parsed.get('IMAGE_KEYWORD') or target_title)
+          initial_image_url = target_image if target_image else get_real_image(parsed.get('IMAGE_KEYWORD') or target_title)
+          final_image_url = upload_to_imgbb(initial_image_url)
 
           final_file = textwrap.dedent(f"""\
           ---
