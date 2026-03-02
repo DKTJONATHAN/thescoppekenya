@@ -14,7 +14,7 @@ const ArticleCard = lazy(() => import("@/components/articles/ArticleCard").then(
 const INITIAL_POSTS = 6;
 const LOAD_MORE_COUNT = 6;
 
-// HELPER: The "Heat" Algorithm to prioritize Entertainment -> News -> Gossip
+// HELPER: The Heat Algorithm to prioritize Entertainment -> News -> Gossip
 const getCategoryHeatScore = (category: string) => {
   const cat = category?.toLowerCase() || '';
   if (cat.includes('entertainment')) return 3;
@@ -23,6 +23,14 @@ const getCategoryHeatScore = (category: string) => {
   return 0;
 };
 
+// HELPER: The Image Proxy for the Hero Section
+function getOptimizedImageUrl(url: string, width: number = 1200): string {
+  if (!url) return "";
+  if (url.endsWith('.svg') || url.startsWith('/')) return url;
+  const cleanUrl = url.replace(/^https?:\/\//, '');
+  return `https://wsrv.nl/?url=${encodeURIComponent(cleanUrl)}&w=${width}&output=webp&q=80&we`;
+}
+
 // Fetch and sort posts by Heat Score first, then by Date
 const rawPosts = getAllPosts();
 const sortedPosts = [...rawPosts].sort((a, b) => {
@@ -30,9 +38,8 @@ const sortedPosts = [...rawPosts].sort((a, b) => {
   const heatB = getCategoryHeatScore(b.category);
   
   if (heatA !== heatB) {
-    return heatB - heatA; // Higher heat score comes first
+    return heatB - heatA; 
   }
-  // If heat is tied, show the newest one first
   return new Date(b.date).getTime() - new Date(a.date).getTime();
 });
 
@@ -63,6 +70,9 @@ const Index = () => {
   const displayedPosts = feedPosts.slice(0, visibleCount);
   const hasMore = visibleCount < feedPosts.length;
 
+  // Process the hero image through the proxy to prevent LCP bottlenecks
+  const optimizedHeroImage = topStory?.image ? getOptimizedImageUrl(topStory.image, 1200) : '/images/placeholder.jpg';
+
   const handleLoadMore = () => setVisibleCount(prev => prev + LOAD_MORE_COUNT);
 
   // Build feed with ads injected every 4 cards
@@ -74,7 +84,6 @@ const Index = () => {
     let i = 0;
 
     while (i < displayedPosts.length) {
-      // Two regular cards
       const pair = displayedPosts.slice(i, i + 2);
       if (pair.length > 0) {
         elements.push(
@@ -83,7 +92,6 @@ const Index = () => {
               <ArticleCard 
                 key={post.slug} 
                 post={post} 
-                // PERFORMANCE FIX: Only the very first pair gets priority=true to prevent loading 50 images at once
                 priority={i === 0} 
               />
             ))}
@@ -93,7 +101,6 @@ const Index = () => {
       }
       i += 2;
 
-      // Inject ad after every 4 cards
       if (cardCount >= 4 && cardCount % 4 === 0) {
         elements.push(
           <div key={`feed-ad-${adIndex}`} className="flex justify-center py-6 border-y border-divider my-8 bg-muted/20">
@@ -103,7 +110,6 @@ const Index = () => {
         adIndex++;
       }
 
-      // Insert bento block
       const bentoStart = i;
       const bentoChunk = feedPosts.slice(bentoStart, bentoStart + 3);
       if (bentoChunk.length === 3 && i < displayedPosts.length) {
@@ -125,7 +131,6 @@ const Index = () => {
         cardCount += 3;
         i += 3;
 
-        // Ad after bento block
         if (cardCount % 4 <= 1) {
           elements.push(
             <div key={`bento-ad-${adIndex}`} className="flex justify-center py-6 border-y border-divider my-8 bg-muted/20">
@@ -143,21 +148,21 @@ const Index = () => {
     <Layout>
       <Helmet>
         <title>Za Ndani | Breaking Entertainment & Gossip</title>
-        {topStory && topStory.image && (
-          <link rel="preload" as="image" href={topStory.image} fetchPriority="high" />
+        {topStory && optimizedHeroImage && (
+          <link rel="preload" as="image" href={optimizedHeroImage} fetchpriority="high" />
         )}
       </Helmet>
 
-      {/* HERO SECTION - REDESIGNED FOR MAX IMPACT */}
+      {/* HERO SECTION */}
       {topStory && (
         <section className="relative h-[60vh] min-h-[500px] flex items-end bg-black overflow-hidden group">
           <div className="absolute inset-0">
             <img 
-              src={topStory.image || '/images/placeholder.jpg'} 
+              src={optimizedHeroImage} 
               alt={topStory.title}
               fetchpriority="high"
               loading="eager"
-              decoding="sync"
+              decoding="async" 
               className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-1000"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent z-10" />
