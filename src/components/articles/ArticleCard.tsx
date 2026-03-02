@@ -6,14 +6,19 @@ import { Badge } from "@/components/ui/badge";
 interface ArticleCardProps {
   post: Post;
   variant?: "default" | "featured" | "horizontal" | "compact";
+  priority?: boolean; // NEW: Tells the browser to load this image instantly for better LCP
 }
 
-export function ArticleCard({ post, variant = "default" }: ArticleCardProps) {
+export function ArticleCard({ post, variant = "default", priority = false }: ArticleCardProps) {
   const formattedDate = new Date(post.date).toLocaleDateString('en-KE', {
     month: 'short',
     day: 'numeric',
     year: 'numeric'
   });
+
+  // Featured articles are almost always above the fold. 
+  // We combine the priority prop with the variant to ensure top-of-page images load instantly.
+  const isLCP = variant === "featured" || priority;
 
   if (variant === "featured") {
     return (
@@ -22,8 +27,9 @@ export function ArticleCard({ post, variant = "default" }: ArticleCardProps) {
           src={post.image}
           alt={post.imageAlt}
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-          loading="lazy"
-          decoding="async"
+          loading={isLCP ? "eager" : "lazy"}
+          fetchpriority={isLCP ? "high" : "auto"}
+          decoding={isLCP ? "sync" : "async"}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground via-foreground/50 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
@@ -41,7 +47,13 @@ export function ArticleCard({ post, variant = "default" }: ArticleCardProps) {
           <div className="flex items-center gap-4 text-sm text-background/70">
             <div className="flex items-center gap-2">
               {post.authorImage && (
-                <img src={post.authorImage} alt={post.author} className="w-8 h-8 rounded-full object-cover" />
+                <img 
+                  src={post.authorImage} 
+                  alt={post.author} 
+                  className="w-8 h-8 rounded-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
               )}
               <span>{post.author}</span>
             </div>
@@ -67,8 +79,9 @@ export function ArticleCard({ post, variant = "default" }: ArticleCardProps) {
               src={post.image}
               alt={post.imageAlt}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              loading="lazy"
-              decoding="async"
+              loading={priority ? "eager" : "lazy"}
+              fetchpriority={priority ? "high" : "auto"}
+              decoding={priority ? "sync" : "async"}
             />
           </div>
         </Link>
@@ -121,8 +134,9 @@ export function ArticleCard({ post, variant = "default" }: ArticleCardProps) {
             src={post.image}
             alt={post.imageAlt}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-            loading="lazy"
-            decoding="async"
+            loading={priority ? "eager" : "lazy"}
+            fetchpriority={priority ? "high" : "auto"}
+            decoding={priority ? "sync" : "async"}
           />
         </div>
       </Link>
@@ -140,7 +154,13 @@ export function ArticleCard({ post, variant = "default" }: ArticleCardProps) {
       <div className="flex items-center justify-between text-xs text-muted-foreground">
         <div className="flex items-center gap-2">
           {post.authorImage && (
-            <img src={post.authorImage} alt={post.author} className="w-6 h-6 rounded-full object-cover" />
+            <img 
+              src={post.authorImage} 
+              alt={post.author} 
+              className="w-6 h-6 rounded-full object-cover"
+              loading="lazy"
+              decoding="async"
+            />
           )}
           <span>{post.author}</span>
         </div>
