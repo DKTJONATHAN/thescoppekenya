@@ -44,9 +44,10 @@ if (typeof global.document === 'undefined') {
       classList: { add: () => {}, remove: () => {} },
       style: {},
     },
-    // The specific fix for the Sonner Toast library:
+    // The specific DOM shims for the Sonner Toast library:
     getElementsByTagName: () => ([]),
     createElement: () => ({ setAttribute: () => {}, style: {}, appendChild: () => {} }),
+    createTextNode: () => ({}), // <-- The missing piece that caused the latest crash
     querySelector: () => null,
     head: { appendChild: () => {} },
     body: { appendChild: () => {} },
