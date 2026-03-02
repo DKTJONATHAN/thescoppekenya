@@ -1,4 +1,4 @@
-import { Component, ReactNode, useEffect } from "react";
+import { Component, ReactNode, useEffect, lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,27 +7,26 @@ import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/hooks/useTheme";
 import { Button } from "@/components/ui/button";
 
-// FIX: Removed React.lazy(). SSR requires synchronous imports so it can 
-// render the actual HTML for Googlebot instead of sending a blank PageLoader.
-import Index from "./pages/Index";
-import ArticlePage from "./pages/ArticlePage";
-import CategoryPage from "./pages/CategoryPage";
-import Trending from "./pages/Trending";
-import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
-import PrivacyPage from "./pages/PrivacyPage";
-import TermsPage from "./pages/TermsPage";
-import AdvertisePage from "./pages/AdvertisePage";
-import CareersPage from "./pages/CareersPage";
-import AdminPage from "./pages/AdminPage";
-import TagPage from "./pages/TagPage";
-import SportsPage from "./pages/SportsPage";
-import LiveScoresPage from "./pages/LiveScoresPage";
-import SitemapPage from "./pages/SitemapPage";
-import SitemapHtmlPage from "./pages/SitemapHtmlPage";
-import AuthorsPage from "./pages/AuthorsPage";
-import AuthorProfilePage from "./pages/AuthorProfilePage";
-import NotFound from "./pages/NotFound";
+// Code Splitting: Lazy load all pages so the browser only downloads the specific page the user clicks.
+const Index = lazy(() => import("./pages/Index"));
+const ArticlePage = lazy(() => import("./pages/ArticlePage"));
+const CategoryPage = lazy(() => import("./pages/CategoryPage"));
+const Trending = lazy(() => import("./pages/Trending"));
+const AboutPage = lazy(() => import("./pages/AboutPage"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
+const PrivacyPage = lazy(() => import("./pages/PrivacyPage"));
+const TermsPage = lazy(() => import("./pages/TermsPage"));
+const AdvertisePage = lazy(() => import("./pages/AdvertisePage"));
+const CareersPage = lazy(() => import("./pages/CareersPage"));
+const AdminPage = lazy(() => import("./pages/AdminPage"));
+const TagPage = lazy(() => import("./pages/TagPage"));
+const SportsPage = lazy(() => import("./pages/SportsPage"));
+const LiveScoresPage = lazy(() => import("./pages/LiveScoresPage"));
+const SitemapPage = lazy(() => import("./pages/SitemapPage"));
+const SitemapHtmlPage = lazy(() => import("./pages/SitemapHtmlPage"));
+const AuthorsPage = lazy(() => import("./pages/AuthorsPage"));
+const AuthorProfilePage = lazy(() => import("./pages/AuthorProfilePage"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Optimized Query Client with caching
 const queryClient = new QueryClient({
@@ -40,6 +39,13 @@ const queryClient = new QueryClient({
     },
   },
 });
+
+// Loading fallback for lazy loaded routes
+const PageLoader = () => (
+  <div className="min-h-screen flex items-center justify-center bg-background">
+    <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
+  </div>
+);
 
 // Error fallback component
 const ErrorFallback = ({ onRetry }: { onRetry: () => void }) => (
@@ -122,27 +128,29 @@ const App = () => (
         <Sonner />
         <GlobalErrorHandler>
           <ErrorBoundary>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/article/:slug" element={<ArticlePage />} />
-              <Route path="/category/:slug" element={<CategoryPage />} />
-              <Route path="/trending" element={<Trending />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/privacy" element={<PrivacyPage />} />
-              <Route path="/terms" element={<TermsPage />} />
-              <Route path="/advertise" element={<AdvertisePage />} />
-              <Route path="/careers" element={<CareersPage />} />
-              <Route path="/admin" element={<AdminPage />} />
-              <Route path="/tag/:tag" element={<TagPage />} />
-              <Route path="/sports" element={<SportsPage />} />
-              <Route path="/sports/live" element={<LiveScoresPage />} />
-              <Route path="/sitemap.xml" element={<SitemapPage />} />
-              <Route path="/sitemap" element={<SitemapHtmlPage />} />
-              <Route path="/authors" element={<AuthorsPage />} />
-              <Route path="/author/:authorName" element={<AuthorProfilePage />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+            <Suspense fallback={<PageLoader />}>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/article/:slug" element={<ArticlePage />} />
+                <Route path="/category/:slug" element={<CategoryPage />} />
+                <Route path="/trending" element={<Trending />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/privacy" element={<PrivacyPage />} />
+                <Route path="/terms" element={<TermsPage />} />
+                <Route path="/advertise" element={<AdvertisePage />} />
+                <Route path="/careers" element={<CareersPage />} />
+                <Route path="/admin" element={<AdminPage />} />
+                <Route path="/tag/:tag" element={<TagPage />} />
+                <Route path="/sports" element={<SportsPage />} />
+                <Route path="/sports/live" element={<LiveScoresPage />} />
+                <Route path="/sitemap.xml" element={<SitemapPage />} />
+                <Route path="/sitemap" element={<SitemapHtmlPage />} />
+                <Route path="/authors" element={<AuthorsPage />} />
+                <Route path="/author/:authorName" element={<AuthorProfilePage />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Suspense>
           </ErrorBoundary>
         </GlobalErrorHandler>
       </TooltipProvider>
