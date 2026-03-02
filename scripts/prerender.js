@@ -10,6 +10,40 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
+// --- MOCK BROWSER GLOBALS FOR NODE.JS SSR ---
+// This prevents React components from crashing during SSG if they access
+// window, localStorage, or sessionStorage outside of a useEffect.
+const mockStorage = {
+  getItem: () => null,
+  setItem: () => {},
+  removeItem: () => {},
+  clear: () => {},
+};
+global.localStorage = mockStorage;
+global.sessionStorage = mockStorage;
+global.window = {
+  localStorage: mockStorage,
+  sessionStorage: mockStorage,
+  dispatchEvent: () => {},
+  addEventListener: () => {},
+  removeEventListener: () => {},
+  matchMedia: () => ({
+    matches: false,
+    addListener: () => {},
+    removeListener: () => {},
+  }),
+};
+global.document = {
+  documentElement: {
+    classList: { add: () => {}, remove: () => {} },
+    style: {},
+  },
+};
+global.navigator = {
+  userAgent: 'node',
+};
+// ---------------------------------------------
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const root = path.resolve(__dirname, '..');
@@ -31,6 +65,8 @@ async function prerender() {
     console.error('❌ dist/server/entry-server.js not found. Build server first.');
     process.exit(1);
   }
+  
+  // By the time this imports, global.localStorage is defined, so it won't crash!
   const { render } = await import(pathToFileURL(serverEntryPath).href);
 
   // 3. Collect all URLs to prerender
@@ -48,7 +84,6 @@ async function prerender() {
   ];
 
   // Extract dynamic routes from the generated sitemap
-  // UPDATED: Now points to the public folder where the sitemap is actually generated
   const sitemapPath = path.join(root, 'public/sitemap.xml');
   if (fs.existsSync(sitemapPath)) {
     const sitemap = fs.readFileSync(sitemapPath, 'utf-8');
