@@ -1,106 +1,75 @@
 
 
-# Fix Social Media Previews + SEO/GEO Optimization
+# Implement SSG-Compatible Architecture for Za Ndani
 
-## The Problem
+## What This Does
 
-Your site is a Single Page Application (SPA). When someone shares an article link on Facebook, Twitter/X, WhatsApp, or LinkedIn, those platforms send a bot to fetch the page. The bot does NOT run JavaScript -- it only reads the raw HTML. Right now, every article URL returns the same generic `index.html` with:
+This refactor prepares your site so that every page -- including individual articles -- gets its SEO keywords and meta tags stamped directly into static HTML at build time. Googlebot (and social media bots) will see your article titles, descriptions, and images instantly without needing to run JavaScript. This is how you outrank Tuko, Kenyans.co.ke, and the rest.
 
-- Title: "The Scoop KE | Kenya's First Sheng News..."
-- Description: Generic site description
-- Image: `og-image.jpg` (same for every article)
+## What's Already Working
 
-So every shared link looks identical -- no article title, no article image, no article description.
+Most of the architecture is already in place:
+- `entry-client.tsx` uses `hydrateRoot` (correct for SSG)
+- `entry-server.tsx` uses `renderToString` with `StaticRouter` (correct)
+- `react-helmet-async` is used on Index, Article, and Category pages
+- `scripts/generate-article-html.js` creates prerendered HTML per article
+- `vercel.json` build command chains all scripts together
 
-## The Solution
+## What Needs Fixing
 
-### 1. Build-Time Prerendering for Social Media Previews
+### 1. Fix the SSR-Crashing Code in ArticlePage
 
-Create a new build script (`scripts/generate-article-html.js`) that runs after `vite build`. For each markdown post, it generates a minimal HTML file at `dist/article/{slug}/index.html` containing:
+**The Problem:** `ArticlePage.tsx` line 83 calls `document.createElement("div")`. This is a browser-only API. When the SSR build tries to render this page, it crashes because there is no `document` on the server. This is the root cause of the 500 errors you experienced.
 
-- Correct `<title>` with article title
-- `og:title`, `og:description`, `og:image` meta tags
-- `twitter:card`, `twitter:title`, `twitter:description`, `twitter:image` meta tags
-- JSON-LD structured data (NewsArticle schema)
-- A `<script>` tag that loads the SPA bundle so the full React app takes over in the browser
+**The Fix:** Replace the `document.createElement` approach with a pure string-based regex parser that splits the HTML content at paragraph boundaries and inserts the ad after the 4th paragraph. No browser APIs needed -- works identically on server and client.
 
-This way, when a bot crawls `/article/some-slug`, Vercel serves the static HTML file with the correct preview metadata. When a real user visits, the React app hydrates normally.
+### 2. Add a Full Prerender Script
 
-### 2. Dynamic Head Updates with react-helmet-async
+**The Problem:** The current `generate-article-html.js` only does simple string replacement of meta tags in the base HTML. It does not actually render your React components, so Googlebot still gets an empty `<div id="root"></div>`.
 
-Install `react-helmet-async` and add it to `ArticlePage.tsx` so that:
-- Google (which does execute JS) sees correct meta tags
-- The browser tab shows the article title
-- Client-side navigation updates meta tags properly
+**The Fix:** Create `scripts/prerender.js` that imports your compiled `entry-server.tsx`, calls `render(url)` for every route in your sitemap, and stamps the fully rendered HTML + Helmet meta tags into each static file. This means every article page will have its full content visible to crawlers at millisecond 1.
 
-Also add Helmet to `CategoryPage.tsx`, `TagPage.tsx`, and `Index.tsx` for proper page titles throughout.
+### 3. Update Build Pipeline
 
-### 3. SEO Optimizations
+Update `vercel.json` build command to include both the client build and the server build, then run the prerender script:
 
-- **Fix canonical URLs**: `index.html` currently points to `thescoopkenya.co.ke` but the site runs on `thescoopkenya.vercel.app`. Update all references to be consistent.
-- **Fix `robots.txt`**: Update sitemap URL from `thescoopkenya.co.ke` to `thescoopkenya.vercel.app`.
-- **Add `hreflang` tag**: Since the content is in Sheng (Swahili-based), add `<link rel="alternate" hreflang="sw-KE">` to help search engines understand the language.
-- **Improve structured data**: Add `BreadcrumbList` schema on article pages for rich search results.
-- **Add `article:published_time`** and `article:section` Open Graph tags for better social previews.
+```text
+vite build --outDir dist/client
+vite build --ssr src/entry-server.tsx --outDir dist/server
+node scripts/generate-sitemap.js
+node scripts/prerender.js
+```
 
-### 4. GEO (Generative Engine Optimization) Improvements
+### 4. Update Vercel Rewrites
 
-GEO is about making your content more likely to be cited by AI systems (ChatGPT, Gemini, Perplexity, etc.):
-
-- **Improve `llms.txt`**: Enhance the existing `llms.txt` generation script to include more structured information about the site, content categories, and article summaries that AI crawlers can parse.
-- **Add FAQ structured data**: Where applicable, wrap common Q&A patterns in `FAQPage` schema so AI engines can extract them.
-- **Ensure clean semantic HTML**: The article content rendering already uses proper HTML via `marked` -- this is good for GEO.
-- **Add `ai.txt`** (emerging standard): A simple file in `/public` signaling to AI crawlers what content is available for training/citation.
+Update `vercel.json` rewrites so that prerendered article pages are served directly from `dist/client/article/{slug}/index.html` instead of falling through to the SPA catch-all.
 
 ## Technical Details
 
-### Files to create:
-- `scripts/generate-article-html.js` -- Build script that generates prerendered HTML for each article with OG tags
-- `public/ai.txt` -- AI crawler guidance file
-
 ### Files to modify:
-- `index.html` -- Fix canonical URL and base OG tags to use `thescoopkenya.vercel.app`
-- `public/robots.txt` -- Fix sitemap URL to `thescoopkenya.vercel.app`
-- `src/pages/ArticlePage.tsx` -- Add `react-helmet-async` for dynamic meta tags
-- `src/pages/Index.tsx` -- Add Helmet for homepage meta
-- `src/pages/CategoryPage.tsx` -- Add Helmet for category meta
-- `src/App.tsx` -- Wrap with `HelmetProvider`
-- `vercel.json` -- Update build command to include the article HTML generation step
-- `scripts/generate-llms-txt.js` -- Enhance with more structured content for GEO
+- **`src/pages/ArticlePage.tsx`** -- Replace `document.createElement` with a string-based HTML splitter for ad insertion
+- **`vercel.json`** -- Update build command to include SSR build + prerender step, update rewrites
+- **`index.html`** -- Ensure the script src matches `entry-client.tsx`
 
-### New dependency:
-- `react-helmet-async` -- For dynamic document head management
+### Files to create:
+- **`scripts/prerender.js`** -- Full SSG script that renders every route to static HTML using the server entry point
 
-### Build pipeline update (vercel.json):
-The build command becomes:
-```
-node scripts/generate-llms-txt.js && node scripts/generate-rss.js && node scripts/submit-new-posts.js && vite build && node scripts/generate-sitemap.js && node scripts/generate-article-html.js
-```
+### Files to remove (optional cleanup):
+- **`api/index.js`** -- No longer needed since we are prerendering at build time instead of doing live SSR per request
+- **`server.js`** reference in package.json scripts can be cleaned up
 
-The new `generate-article-html.js` runs last (after `vite build`) because it needs the built `dist` folder to exist and reads the `index.html` as a template.
-
-### How the prerendered HTML works:
-
-For each post, the script creates a file like `dist/article/ruto-majembe-mbavu-dosh-pr-stunt/index.html` containing:
+### How it works end-to-end:
 
 ```text
-<!doctype html>
-<html lang="sw">
-<head>
-  <title>Ruto Ametupia Majembe... | The Scoop KE</title>
-  <meta property="og:title" content="Ruto Ametupia Majembe..." />
-  <meta property="og:description" content="Tumenusa gava imetupilia..." />
-  <meta property="og:image" content="https://images.unsplash.com/..." />
-  <meta name="twitter:card" content="summary_large_image" />
-  ... (all meta tags)
-  <script type="application/ld+json">{ NewsArticle schema }</script>
-</head>
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
-</html>
+Build Phase:
+  1. Vite builds client bundle -> dist/client/
+  2. Vite builds server entry -> dist/server/entry-server.js
+  3. generate-sitemap.js creates sitemap.xml
+  4. prerender.js reads sitemap, renders each URL with React,
+     stamps full HTML + meta tags into dist/client/{path}/index.html
+
+Runtime:
+  - Googlebot hits /article/ruto-story -> gets fully rendered HTML with correct OG tags
+  - User hits /article/ruto-story -> gets same HTML, React hydrates and takes over
+  - No server, no 500 errors, no crashes
 ```
-
-Vercel will serve this static file to bots (who get the OG tags) and to browsers (where React takes over).
-
