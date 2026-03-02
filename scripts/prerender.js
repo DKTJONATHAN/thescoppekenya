@@ -11,8 +11,6 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 // --- SAFE MOCK BROWSER GLOBALS FOR NODE.JS SSR ---
-// This prevents React components (like Sonner or Radix) from crashing during 
-// SSG if they aggressively access browser APIs on import.
 const mockStorage = {
   getItem: () => null,
   setItem: () => {},
@@ -43,11 +41,15 @@ if (typeof global.document === 'undefined') {
     documentElement: {
       classList: { add: () => {}, remove: () => {} },
       style: {},
+      // Added missing DOM attributes for next-themes (Dark Mode)
+      getAttribute: () => null,
+      setAttribute: () => {},
+      hasAttribute: () => false,
+      removeAttribute: () => {},
     },
-    // The specific DOM shims for the Sonner Toast library:
     getElementsByTagName: () => ([]),
     createElement: () => ({ setAttribute: () => {}, style: {}, appendChild: () => {} }),
-    createTextNode: () => ({}), // <-- The missing piece that caused the latest crash
+    createTextNode: () => ({}),
     querySelector: () => null,
     head: { appendChild: () => {} },
     body: { appendChild: () => {} },
@@ -69,7 +71,6 @@ const root = path.resolve(__dirname, '..');
 async function prerender() {
   console.log('🚀 Starting Static Site Generation...');
 
-  // 1. Read the client HTML template
   const templatePath = path.join(root, 'dist/client/index.html');
   if (!fs.existsSync(templatePath)) {
     console.error('❌ dist/client/index.html not found. Build client first.');
@@ -77,7 +78,6 @@ async function prerender() {
   }
   const template = fs.readFileSync(templatePath, 'utf-8');
 
-  // 2. Import the compiled server entry
   const serverEntryPath = path.join(root, 'dist/server/entry-server.js');
   if (!fs.existsSync(serverEntryPath)) {
     console.error('❌ dist/server/entry-server.js not found. Build server first.');
@@ -86,7 +86,6 @@ async function prerender() {
   
   const { render } = await import(pathToFileURL(serverEntryPath).href);
 
-  // 3. Collect all URLs to prerender
   let urls = [
     '/',
     '/trending',
@@ -100,7 +99,6 @@ async function prerender() {
     '/authors',
   ];
 
-  // Extract dynamic routes from the generated sitemap
   const sitemapPath = path.join(root, 'public/sitemap.xml');
   if (fs.existsSync(sitemapPath)) {
     const sitemap = fs.readFileSync(sitemapPath, 'utf-8');
@@ -118,19 +116,23 @@ async function prerender() {
   let success = 0;
   let failed = 0;
 
-  for (const url of urls) {
+  for (let i = 0; i < urls.length; i++) {
+    const url = urls[i];
+    
+    if (i > 0 && i % 25 === 0) {
+      console.log(`⏳ Progress: Rendered ${i} of ${urls.length} pages...`);
+    }
+
     try {
       const rendered = render(url);
       const headStr = rendered.head || '';
       const htmlStr = rendered.html || '';
 
-      // Inject rendered head tags and body HTML into the template
       const html = template
         .replace('</head>', `${headStr}\n</head>`)
         .replace('<div id="root"></div>', `<div id="root">${htmlStr}</div>`);
 
-      // Determine output file path
-      const isFile = /\.\w+$/.test(url); // e.g. .xml, .txt
+      const isFile = /\.\w+$/.test(url);
       let outputPath;
       if (isFile) {
         outputPath = path.join(root, 'dist/client', url);
@@ -152,6 +154,8 @@ async function prerender() {
   }
 
   console.log(`✅ SSG complete: ${success} pages rendered, ${failed} failed.`);
+  
+  process.exit(0);
 }
 
 prerender().catch(err => {
