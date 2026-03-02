@@ -1,12 +1,13 @@
 import React from 'react';
-import { hydrateRoot } from 'react-dom/client';
+import { hydrateRoot, createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import App from './App';
-import './index.css'; // Your global styles
+import './index.css';
 
-hydrateRoot(
-  document.getElementById('root') as HTMLElement,
+const container = document.getElementById('root') as HTMLElement;
+
+const app = (
   <React.StrictMode>
     <HelmetProvider>
       <BrowserRouter>
@@ -15,3 +16,10 @@ hydrateRoot(
     </HelmetProvider>
   </React.StrictMode>
 );
+
+// If the root has server-rendered content, hydrate; otherwise do a fresh render
+if (container.innerHTML.trim().length > 0) {
+  hydrateRoot(container, app);
+} else {
+  createRoot(container).render(app);
+}
