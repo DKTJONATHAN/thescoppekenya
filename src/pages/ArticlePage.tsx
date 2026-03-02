@@ -76,26 +76,57 @@ export default function ArticlePage() {
     });
   }, [relatedPosts, viewCounts]);
 
-  // Single in-article ad placed after 4th paragraph
+  // Single in-article ad placed after 4th paragraph (SSR-safe: no document.createElement)
   const contentWithOneAd = useMemo(() => {
     if (!post?.htmlContent) return [];
 
-    const tempDiv = document.createElement("div");
-    tempDiv.innerHTML = post.htmlContent;
+    // Split HTML into top-level blocks using regex (SSR-compatible)
+    const blockRegex = /<(p|h[1-6]|div|ul|ol|blockquote|figure|table|pre|hr|section|aside)[\s>]/gi;
+    const blocks: string[] = [];
+    let lastIndex = 0;
+    const html = post.htmlContent;
 
-    const renderedBlocks = [];
+    // Find all top-level tag boundaries
+    const tagStarts: number[] = [];
+    let match: RegExpExecArray | null;
+    const openTagRegex = /<(?:p|h[1-6]|div|ul|ol|blockquote|figure|table|pre|hr|section|aside)[\s>]/gi;
+    while ((match = openTagRegex.exec(html)) !== null) {
+      // Only count tags at the "root" level (not deeply nested)
+      const before = html.slice(0, match.index);
+      const openTags = (before.match(/<(?:div|section|aside|blockquote)\b/gi) || []).length;
+      const closeTags = (before.match(/<\/(?:div|section|aside|blockquote)>/gi) || []).length;
+      if (openTags - closeTags <= 0) {
+        tagStarts.push(match.index);
+      }
+    }
+
+    for (let i = 0; i < tagStarts.length; i++) {
+      if (tagStarts[i] > lastIndex) {
+        const gap = html.slice(lastIndex, tagStarts[i]).trim();
+        if (gap) blocks.push(gap);
+      }
+      const end = i + 1 < tagStarts.length ? tagStarts[i + 1] : html.length;
+      blocks.push(html.slice(tagStarts[i], end));
+      lastIndex = end;
+    }
+    if (lastIndex < html.length) {
+      const remainder = html.slice(lastIndex).trim();
+      if (remainder) blocks.push(remainder);
+    }
+
+    const renderedBlocks: React.ReactNode[] = [];
     let paragraphCount = 0;
     let adInserted = false;
 
-    Array.from(tempDiv.children).forEach((child, index) => {
+    blocks.forEach((block, index) => {
       renderedBlocks.push(
         <div
           key={`block-${index}`}
-          dangerouslySetInnerHTML={{ __html: child.outerHTML }}
+          dangerouslySetInnerHTML={{ __html: block }}
         />
       );
 
-      if (child.tagName && child.tagName.toLowerCase() === "p") {
+      if (/^<p[\s>]/i.test(block)) {
         paragraphCount++;
         if (!adInserted && paragraphCount >= 4) {
           renderedBlocks.push(<AdUnit key="inarticle-ad" type="inarticle" />);
@@ -164,6 +195,69 @@ export default function ArticlePage() {
     [post?.slug]
   );
 
+  const formattedDate = useMemo(
+    () =>
+      post
+        ? new Date(post.date).toLocaleDateString("en-KE", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })
+        : "",
+    [post?.date]
+  );
+
+  const articleSchema = useMemo(
+    () =>
+      post
+        ? {
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": post.title,
+            "description": post.excerpt,
+            "image": {
+              "@type": "ImageObject",
+              "url": post.image,
+              "width": 1200,
+              "height": 630,
+              "caption": post.imageAlt || post.title
+            },
+            "datePublished": post.date,
+            "dateModified": post.date,
+            "author": { "@type": "Person", "name": post.author },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Za Ndani",
+              "logo": { "@type": "ImageObject", "url": "https://zandani.co.ke/logo.png" }
+            },
+            "mainEntityOfPage": { "@type": "WebPage", "@id": `https://zandani.co.ke/article/${post.slug}` },
+            "keywords": post.tags.join(", "),
+            "articleSection": post.category,
+            "inLanguage": "en-KE",
+            "wordCount": Math.round((post.htmlContent?.length || 0) / 5),
+            "articleBody": post.excerpt,
+            "isAccessibleForFree": true
+          }
+        : null,
+    [post]
+  );
+
+  const breadcrumbSchema = useMemo(
+    () =>
+      post
+        ? {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zandani.co.ke" },
+              { "@type": "ListItem", "position": 2, "name": post.category, "item": `https://zandani.co.ke/category/${post.category.toLowerCase()}` },
+              { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://zandani.co.ke/article/${post.slug}` }
+            ]
+          }
+        : null,
+    [post]
+  );
+
   const handleWhatsAppShare = () => {
     const text = `${post?.title} - Read on Za Ndani`;
     window.open(`https://wa.me/?text=${encodeURIComponent(text + " " + shareUrl)}`, "_blank");
@@ -182,80 +276,6 @@ export default function ArticlePage() {
       </Layout>
     );
   }
-
-  const formattedDate = useMemo(
-    () =>
-      new Date(post.date).toLocaleDateString("en-KE", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      }),
-    [post.date]
-  );
-
-  const articleSchema = useMemo(
-    () => ({
-      "@context": "https://schema.org",
-      "@type": "NewsArticle",
-      "headline": post.title,
-      "description": post.excerpt,
-      "image": {
-        "@type": "ImageObject",
-        "url": post.image,
-        "width": 1200,
-        "height": 630,
-        "caption": post.imageAlt || post.title
-      },
-      "datePublished": post.date,
-      "dateModified": post.date,
-      "author": {
-        "@type": "Person",
-        "name": post.author
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Za Ndani",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://zandani.co.ke/logo.png"
-        }
-      },
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": `https://zandani.co.ke/article/${post.slug}`
-      },
-      "keywords": post.tags.join(", "),
-      "articleSection": post.category,
-      "inLanguage": "en-KE",
-      "wordCount": Math.round((post.htmlContent?.length || 0) / 5),
-      "articleBody": post.excerpt,
-      "isAccessibleForFree": true
-    }),
-    [post]
-  );
-
-  const breadcrumbSchema = useMemo(
-    () => ({
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zandani.co.ke" },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": post.category,
-          "item": `https://zandani.co.ke/category/${post.category.toLowerCase()}`
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": post.title,
-          "item": `https://zandani.co.ke/article/${post.slug}`
-        }
-      ]
-    }),
-    [post]
-  );
 
   return (
     <Layout>
