@@ -33,7 +33,16 @@ if (typeof global.window === 'undefined') {
       addListener: () => {},
       removeListener: () => {},
     }),
+    // Fix for Radix / UI components trying to read CSS properties
+    getComputedStyle: () => ({
+      getPropertyValue: () => '',
+    }),
   };
+}
+
+// Some libraries call getComputedStyle directly without the window. prefix
+if (typeof global.getComputedStyle === 'undefined') {
+  global.getComputedStyle = global.window.getComputedStyle;
 }
 
 if (typeof global.document === 'undefined') {
@@ -41,7 +50,6 @@ if (typeof global.document === 'undefined') {
     documentElement: {
       classList: { add: () => {}, remove: () => {} },
       style: {},
-      // Added missing DOM attributes for next-themes (Dark Mode)
       getAttribute: () => null,
       setAttribute: () => {},
       hasAttribute: () => false,
