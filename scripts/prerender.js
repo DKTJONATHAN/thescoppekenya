@@ -11,8 +11,8 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 // --- SAFE MOCK BROWSER GLOBALS FOR NODE.JS SSR ---
-// This prevents React components from crashing during SSG if they access
-// browser APIs, but safely skips overwriting native Node.js globals (like navigator).
+// This prevents React components (like Sonner or Radix) from crashing during 
+// SSG if they aggressively access browser APIs on import.
 const mockStorage = {
   getItem: () => null,
   setItem: () => {},
@@ -27,7 +27,7 @@ if (typeof global.window === 'undefined') {
   global.window = {
     localStorage: mockStorage,
     sessionStorage: mockStorage,
-    dispatchEvent: () => {},
+    dispatchEvent: () => false,
     addEventListener: () => {},
     removeEventListener: () => {},
     matchMedia: () => ({
@@ -44,7 +44,14 @@ if (typeof global.document === 'undefined') {
       classList: { add: () => {}, remove: () => {} },
       style: {},
     },
+    // The specific fix for the Sonner Toast library:
+    getElementsByTagName: () => ([]),
+    createElement: () => ({ setAttribute: () => {}, style: {}, appendChild: () => {} }),
+    querySelector: () => null,
+    head: { appendChild: () => {} },
+    body: { appendChild: () => {} },
   };
+  global.window.document = global.document;
 }
 
 if (typeof global.navigator === 'undefined') {
@@ -138,7 +145,7 @@ async function prerender() {
       fs.writeFileSync(outputPath, html);
       success++;
     } catch (e) {
-      console.error(`❌ Failed: ${url} —`, e.message || e);
+      console.error(`❌ Failed: ${url} ->`, e.message || e);
       failed++;
     }
   }
