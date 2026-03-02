@@ -10,38 +10,48 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
-// --- MOCK BROWSER GLOBALS FOR NODE.JS SSR ---
+// --- SAFE MOCK BROWSER GLOBALS FOR NODE.JS SSR ---
 // This prevents React components from crashing during SSG if they access
-// window, localStorage, or sessionStorage outside of a useEffect.
+// browser APIs, but safely skips overwriting native Node.js globals (like navigator).
 const mockStorage = {
   getItem: () => null,
   setItem: () => {},
   removeItem: () => {},
   clear: () => {},
 };
-global.localStorage = mockStorage;
-global.sessionStorage = mockStorage;
-global.window = {
-  localStorage: mockStorage,
-  sessionStorage: mockStorage,
-  dispatchEvent: () => {},
-  addEventListener: () => {},
-  removeEventListener: () => {},
-  matchMedia: () => ({
-    matches: false,
-    addListener: () => {},
-    removeListener: () => {},
-  }),
-};
-global.document = {
-  documentElement: {
-    classList: { add: () => {}, remove: () => {} },
-    style: {},
-  },
-};
-global.navigator = {
-  userAgent: 'node',
-};
+
+if (typeof global.localStorage === 'undefined') global.localStorage = mockStorage;
+if (typeof global.sessionStorage === 'undefined') global.sessionStorage = mockStorage;
+
+if (typeof global.window === 'undefined') {
+  global.window = {
+    localStorage: mockStorage,
+    sessionStorage: mockStorage,
+    dispatchEvent: () => {},
+    addEventListener: () => {},
+    removeEventListener: () => {},
+    matchMedia: () => ({
+      matches: false,
+      addListener: () => {},
+      removeListener: () => {},
+    }),
+  };
+}
+
+if (typeof global.document === 'undefined') {
+  global.document = {
+    documentElement: {
+      classList: { add: () => {}, remove: () => {} },
+      style: {},
+    },
+  };
+}
+
+if (typeof global.navigator === 'undefined') {
+  global.navigator = {
+    userAgent: 'node',
+  };
+}
 // ---------------------------------------------
 
 const __filename = fileURLToPath(import.meta.url);
@@ -66,7 +76,6 @@ async function prerender() {
     process.exit(1);
   }
   
-  // By the time this imports, global.localStorage is defined, so it won't crash!
   const { render } = await import(pathToFileURL(serverEntryPath).href);
 
   // 3. Collect all URLs to prerender
