@@ -1,3 +1,4 @@
+import React from "react";
 import { useParams } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { CategoryBar } from "@/components/articles/CategoryBar";
@@ -9,6 +10,7 @@ import { ArrowRight, Eye } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { Badge } from "@/components/ui/badge";
 import { useState, useEffect, useMemo } from "react";
+import AdUnit from "@/components/AdUnit";
 
 export default function CategoryPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -165,16 +167,24 @@ export default function CategoryPage() {
               {postsWithViews.length > 0 ? (
                 <>
                   <div className="grid sm:grid-cols-2 gap-6">
-                    {postsWithViews.map((post) => (
-                      <div key={post.slug} className="relative group">
-                        <ArticleCard post={post} />
-                        <div className="absolute top-4 right-4 z-10">
-                          <Badge className="bg-black/60 backdrop-blur-md text-white border-0 flex items-center gap-1.5 px-3 py-1 shadow-lg">
-                            <Eye className="w-3.5 h-3.5" />
-                            {post.views > 999 ? `${(post.views / 1000).toFixed(1)}k` : post.views}
-                          </Badge>
+                    {postsWithViews.map((post, index) => (
+                      <React.Fragment key={post.slug}>
+                        <div className="relative group">
+                          <ArticleCard post={post} />
+                          <div className="absolute top-4 right-4 z-10">
+                            <Badge className="bg-black/60 backdrop-blur-md text-white border-0 flex items-center gap-1.5 px-3 py-1 shadow-lg">
+                              <Eye className="w-3.5 h-3.5" />
+                              {post.views > 999 ? `${(post.views / 1000).toFixed(1)}k` : post.views}
+                            </Badge>
+                          </div>
                         </div>
-                      </div>
+                        {/* Ad after every 4th card */}
+                        {(index + 1) % 4 === 0 && index < postsWithViews.length - 1 && (
+                          <div className="col-span-full flex justify-center py-4">
+                            <AdUnit type={index % 8 === 3 ? "inarticle" : "effectivegate"} />
+                          </div>
+                        )}
+                      </React.Fragment>
                     ))}
                   </div>
                   <div className="mt-8 text-center">
