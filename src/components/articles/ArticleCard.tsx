@@ -6,7 +6,21 @@ import { Badge } from "@/components/ui/badge";
 interface ArticleCardProps {
   post: Post;
   variant?: "default" | "featured" | "horizontal" | "compact";
-  priority?: boolean; // NEW: Tells the browser to load this image instantly for better LCP
+  priority?: boolean;
+}
+
+// NEW: Instantly converts ANY external image to a lightweight WebP via a free CDN proxy
+function getOptimizedImageUrl(url: string, width: number = 800): string {
+  if (!url) return "";
+  
+  // If the image is already an SVG or a local asset, leave it alone
+  if (url.endsWith('.svg') || url.startsWith('/')) return url;
+
+  // Clean the URL to remove protocols like https:// so the proxy parses it correctly
+  const cleanUrl = url.replace(/^https?:\/\//, '');
+  
+  // Route through the wsrv.nl proxy: w = width, output = webp, q = 80% quality, we = bypass SSL errors
+  return `https://wsrv.nl/?url=${encodeURIComponent(cleanUrl)}&w=${width}&output=webp&q=80&we`;
 }
 
 export function ArticleCard({ post, variant = "default", priority = false }: ArticleCardProps) {
@@ -16,15 +30,17 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
     year: 'numeric'
   });
 
-  // Featured articles are almost always above the fold. 
-  // We combine the priority prop with the variant to ensure top-of-page images load instantly.
   const isLCP = variant === "featured" || priority;
+  
+  // Process the main image and author image through the proxy
+  const optimizedMainImage = getOptimizedImageUrl(post.image, 800);
+  const optimizedAuthorImage = post.authorImage ? getOptimizedImageUrl(post.authorImage, 100) : "";
 
   if (variant === "featured") {
     return (
       <article className="group relative rounded-2xl overflow-hidden bg-foreground text-background aspect-[16/10] md:aspect-[16/9]">
         <img
-          src={post.image}
+          src={optimizedMainImage}
           alt={post.imageAlt}
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           loading={isLCP ? "eager" : "lazy"}
@@ -46,9 +62,9 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
           </p>
           <div className="flex items-center gap-4 text-sm text-background/70">
             <div className="flex items-center gap-2">
-              {post.authorImage && (
+              {optimizedAuthorImage && (
                 <img 
-                  src={post.authorImage} 
+                  src={optimizedAuthorImage} 
                   alt={post.author} 
                   className="w-8 h-8 rounded-full object-cover"
                   loading="lazy"
@@ -76,7 +92,7 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
         <Link to={`/article/${post.slug}`} className="flex-shrink-0 w-32 md:w-48">
           <div className="aspect-[4/3] rounded-xl overflow-hidden">
             <img
-              src={post.image}
+              src={optimizedMainImage}
               alt={post.imageAlt}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               loading={priority ? "eager" : "lazy"}
@@ -131,7 +147,7 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
       <Link to={`/article/${post.slug}`} className="block mb-4">
         <div className="aspect-[16/10] rounded-xl overflow-hidden bg-muted">
           <img
-            src={post.image}
+            src={optimizedMainImage}
             alt={post.imageAlt}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             loading={priority ? "eager" : "lazy"}
@@ -153,9 +169,9 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
       </p>
       <div className="flex items-center justify-between text-xs text-muted-foreground">
         <div className="flex items-center gap-2">
-          {post.authorImage && (
+          {optimizedAuthorImage && (
             <img 
-              src={post.authorImage} 
+              src={optimizedAuthorImage} 
               alt={post.author} 
               className="w-6 h-6 rounded-full object-cover"
               loading="lazy"
