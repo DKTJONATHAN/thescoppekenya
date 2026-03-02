@@ -4,6 +4,7 @@
  * Full Static Site Generation (SSG) script.
  * Imports the compiled entry-server.js, renders every route from the sitemap,
  * and stamps the fully rendered HTML + Helmet meta tags into static files using parallel batching.
+ * EXCLUDES all /tag/ pages to drastically reduce build times.
  */
 
 import fs from 'node:fs';
@@ -95,7 +96,7 @@ const __dirname = path.dirname(__filename);
 const root = path.resolve(__dirname, '..');
 
 async function prerender() {
-  console.log('🚀 Starting Static Site Generation (Parallel Mode)...');
+  console.log('🚀 Starting Static Site Generation (Filtered Mode)...');
 
   const templatePath = path.join(root, 'dist/client/index.html');
   if (!fs.existsSync(templatePath)) {
@@ -129,15 +130,18 @@ async function prerender() {
   if (fs.existsSync(sitemapPath)) {
     const sitemap = fs.readFileSync(sitemapPath, 'utf-8');
     const locMatches = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)];
+    
     const sitemapUrls = locMatches
       .map(m => m[1].replace('https://zandani.co.ke', ''))
-      .filter(u => u && u !== '/');
+      // THE FIX: Skip the homepage (already in array) AND skip all /tag/ URLs
+      .filter(u => u && u !== '/' && !u.startsWith('/tag/'));
+      
     urls = [...new Set([...urls, ...sitemapUrls])];
   } else {
     console.log('⚠️  No sitemap.xml found, proceeding with core routes only.');
   }
 
-  console.log(`📄 Pre-rendering ${urls.length} pages...`);
+  console.log(`📄 Pre-rendering ${urls.length} pages (Tags Excluded)...`);
 
   let success = 0;
   let failed = 0;
@@ -164,7 +168,6 @@ async function prerender() {
           outputPath = path.join(root, 'dist/client', url);
         } else {
           const dir = path.join(root, 'dist/client', url === '/' ? '' : url);
-          // Using Async fs.promises here prevents disk bottlenecks!
           await fs.promises.mkdir(dir, { recursive: true });
           outputPath = path.join(dir, 'index.html');
         }
