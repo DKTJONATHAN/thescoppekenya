@@ -1,0 +1,34 @@
+---
+title: "PS Raymond Omollo Declares Zero Tolerance: Unpacking the Hypocrisy of Political Violence in Kenya"
+slug: "ps-raymond-omollo-zero-tolerance-political-violence"
+excerpt: "PS Raymond Omollo's declaration of Zero Tolerance Against Political Violence rings hollow amid systemic failures and political manipulation in Kenya, exposing a disturbing cycle of impunity."
+author: "Celestine Nzioka"
+image: "https://i.ibb.co/rrSPnPg/1ec7bb1d6b13.jpg"
+category: "News"
+date: "2026-03-02"
+tags: ["Kenya", "political violence", "Raymond Omollo", "Interior Ministry", "national security", "youth unemployment", "governance", "electoral integrity", "DCI", "illicit brew", "Kakamega rally", "Vihiga", "political manipulation"]
+---
+
+## PS Raymond Omollo Declares Zero Tolerance Amid Systemic Failure
+
+Internal Security Principal Secretary Raymond Omollo declared on Sunday, March 1, that the government would enforce a strict zero tolerance policy against political violence across Kenya. Speaking in Nyeri County, Omollo affirmed the state’s commitment to peace, democratic freedoms, and development, while warning against hooliganism and unlawful mobilisation.
+
+While the pronouncement of **zero tolerance** offers a veneer of governmental control, a critical examination reveals a troubling disconnect between rhetoric and reality, with systemic failures continuing to fuel Kenya's persistent challenge with **political violence**. The declarations by **PS Raymond Omollo** follow a pattern of reactive measures rather than proactive, sustained efforts to dismantle the architecture of political thuggery. The recent tragic events at a rally in Mbale Town, Vihiga County, highlight not just a failure to maintain order, but also deeper issues of political accountability and the exploitation of vulnerable populations.
+
+### The Perennial Cycle of Political Violence and Blame
+
+The Interior Ministry's firm stance against chaos comes in the wake of escalating incidents, most notably the "Linda Mwananchi" faction rally held on February 21, 2026. This gathering, initially reported in Kakamega but clarified to be in Mbale Town, Vihiga County, saw a supporter, George Olande Otobe, tragically lynched by a mob after an altercation where he allegedly stabbed another individual. Disturbingly, preliminary investigations by the Directorate of Criminal Investigations (DCI) indicated that the rally organisers themselves had allegedly armed their supporters, a clear contravention of constitutional principles regarding peaceful assembly. This finding contradicts the initial narrative of state agencies sponsoring violence, as alleged by the organisers, and instead points to internal instigation, with police characterising such claims as "reverse psychology."
+
+The Interior Cabinet Secretary, Kipchumba Murkomen, has also distanced police from teargas attacks at the Kakamega rally, attributing rising violence to political rivalry. However, this shifting blame often obscures the state’s fundamental responsibility to prevent such incidents, irrespective of who initiates them. The police had, prior to the Mbale rally, denied authorising the event, citing intelligence of armed gangs being mobilised, some reportedly from Nairobi. This raises questions about the efficacy of intelligence gathering and pre-emptive security measures when such warnings do not prevent fatalities.
+
+### Exploiting Vulnerability: The Real Losers in Political Violence
+
+A recent report by the Interior Ministry, released in February 2026, laid bare the uncomfortable truth: **political violence** in Kenya is often systematically orchestrated by political actors. The report detailed how political elites deliberately mobilise supporters, including unemployed youth, boda boda riders, and casual labourers, to intimidate rivals and disrupt gatherings. These vulnerable groups are exploited with the promise of "quick money" due to pervasive economic hardship. The ease with which such individuals are recruited underscores a systemic failure in addressing youth unemployment and fostering economic opportunities beyond political patronage.
+
+The financial mechanisms enabling such mobilisation, often involving informal networks and opaque transactions, remain largely unscrutinised. As Kenya's digital economy expands, the intersection of rapid mobile money growth and potential illicit financial flows used in political mobilisation presents a significant vulnerability, contributing to a cybersecurity battlefield. [cite: https://zandani.co.ke/article/kenya-mobile-money-boom-cybersecurity-battlefield-smartcomply-warns] While **PS Raymond Omollo** rightly calls for vigilance against hooliganism, the deeper issue is how political actors, by leveraging economic desperation, continue to instrumentalise citizens for their own power games, leaving the youth as the ultimate casualties.
+
+### Beyond Zero Tolerance: Addressing Root Causes
+
+Omollo's Nyeri address also touched on efforts to combat illicit brew and gender-based violence, alongside initiatives to boost education enrolment under Nyeri County Commissioner Josephat Biwot. These are indeed critical societal issues, yet their inclusion alongside the firm stance on **political violence** sometimes risks diluting the focus on the latter's unique political economy.
+
+For a true **zero tolerance** approach to take root, the government must move beyond issuing warnings. This requires comprehensive strategies that include impartial investigations into all forms of political incitement, holding political leaders accountable regardless of their affiliation, and implementing robust economic empowerment programmes for youth. The current cycle of blame games and reactive policing fails to address the foundational vulnerabilities that allow **political violence** to thrive, perpetuating a dangerous environment as the 2027 election cycle gradually intensifies. Until these systemic issues are confronted head-on, pronouncements of **zero tolerance** risk remaining largely performative, with real lives and democratic integrity continuing to be jeopardised.
