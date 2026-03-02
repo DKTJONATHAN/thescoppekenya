@@ -48,7 +48,8 @@ async function prerender() {
   ];
 
   // Extract dynamic routes from the generated sitemap
-  const sitemapPath = path.join(root, 'dist/client/sitemap.xml');
+  // UPDATED: Now points to the public folder where the sitemap is actually generated
+  const sitemapPath = path.join(root, 'public/sitemap.xml');
   if (fs.existsSync(sitemapPath)) {
     const sitemap = fs.readFileSync(sitemapPath, 'utf-8');
     const locMatches = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)];
