@@ -3,7 +3,7 @@
 /**
  * Full Static Site Generation (SSG) script.
  * Imports the compiled entry-server.js, renders every route from the sitemap,
- * and stamps the fully rendered HTML + Helmet meta tags into static files.
+ * and stamps the fully rendered HTML + Helmet meta tags into static files using parallel batching.
  */
 
 import fs from 'node:fs';
@@ -36,14 +36,12 @@ if (typeof global.window === 'undefined') {
     getComputedStyle: () => ({
       getPropertyValue: () => '',
     }),
-    // Fix for ArticlePage.tsx trying to read window.location.href
     location: {
       href: 'https://zandani.co.ke',
       pathname: '/',
       search: '',
       hash: ''
     },
-    // Fix for UI Carousels and Animations
     requestAnimationFrame: (cb) => setTimeout(cb, 0),
     cancelAnimationFrame: (id) => clearTimeout(id)
   };
@@ -97,7 +95,7 @@ const __dirname = path.dirname(__filename);
 const root = path.resolve(__dirname, '..');
 
 async function prerender() {
-  console.log('🚀 Starting Static Site Generation...');
+  console.log('🚀 Starting Static Site Generation (Parallel Mode)...');
 
   const templatePath = path.join(root, 'dist/client/index.html');
   if (!fs.existsSync(templatePath)) {
@@ -144,41 +142,44 @@ async function prerender() {
   let success = 0;
   let failed = 0;
 
-  for (let i = 0; i < urls.length; i++) {
-    const url = urls[i];
-    
-    if (i > 0 && i % 25 === 0) {
-      console.log(`⏳ Progress: Rendered ${i} of ${urls.length} pages...`);
-    }
+  // PROCESS IN BATCHES OF 50 TO SPEED UP I/O
+  const BATCH_SIZE = 50;
 
-    try {
-      const rendered = render(url);
-      const headStr = rendered.head || '';
-      const htmlStr = rendered.html || '';
+  for (let i = 0; i < urls.length; i += BATCH_SIZE) {
+    const batch = urls.slice(i, i + BATCH_SIZE);
 
-      const html = template
-        .replace('</head>', `${headStr}\n</head>`)
-        .replace('<div id="root"></div>', `<div id="root">${htmlStr}</div>`);
+    await Promise.all(batch.map(async (url) => {
+      try {
+        const rendered = render(url);
+        const headStr = rendered.head || '';
+        const htmlStr = rendered.html || '';
 
-      const isFile = /\.\w+$/.test(url);
-      let outputPath;
-      if (isFile) {
-        outputPath = path.join(root, 'dist/client', url);
-      } else {
-        const dir = path.join(root, 'dist/client', url === '/' ? '' : url);
-        if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-        outputPath = path.join(dir, 'index.html');
+        const html = template
+          .replace('</head>', `${headStr}\n</head>`)
+          .replace('<div id="root"></div>', `<div id="root">${htmlStr}</div>`);
+
+        const isFile = /\.\w+$/.test(url);
+        let outputPath;
+        if (isFile) {
+          outputPath = path.join(root, 'dist/client', url);
+        } else {
+          const dir = path.join(root, 'dist/client', url === '/' ? '' : url);
+          // Using Async fs.promises here prevents disk bottlenecks!
+          await fs.promises.mkdir(dir, { recursive: true });
+          outputPath = path.join(dir, 'index.html');
+        }
+
+        await fs.promises.mkdir(path.dirname(outputPath), { recursive: true });
+        await fs.promises.writeFile(outputPath, html);
+        
+        success++;
+      } catch (e) {
+        console.error(`❌ Failed: ${url} ->`, e.message || e);
+        failed++;
       }
+    }));
 
-      const outputDir = path.dirname(outputPath);
-      if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-
-      fs.writeFileSync(outputPath, html);
-      success++;
-    } catch (e) {
-      console.error(`❌ Failed: ${url} ->`, e.message || e);
-      failed++;
-    }
+    console.log(`⏳ Progress: Rendered ${Math.min(i + BATCH_SIZE, urls.length)} of ${urls.length} pages...`);
   }
 
   console.log(`✅ SSG complete: ${success} pages rendered, ${failed} failed.`);
