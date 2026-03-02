@@ -10,6 +10,7 @@
     "build:client": "vite build --outDir dist/client",
     "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server",
     "build:dev": "vite build --mode development",
+    "vercel-build": "node scripts/generate-llms-txt.js && node scripts/generate-rss.js && node scripts/submit-new-posts.js && vite build --outDir dist/client && vite build --ssr src/entry-server.tsx --outDir dist/server && node scripts/generate-sitemap.js && node scripts/generate-article-html.js && node scripts/prerender.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "NODE_ENV=production node server.js"
