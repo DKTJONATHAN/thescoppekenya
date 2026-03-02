@@ -8,6 +8,7 @@ import { FixturesList } from "@/components/sports/FixturesList";
 import { StandingsTable } from "@/components/sports/StandingsTable";
 import { AIHeadlinesBanner } from "@/components/sports/AIHeadlinesBanner";
 import { SportsNewsFeed } from "@/components/sports/SportsNewsFeed";
+import AdUnit from "@/components/AdUnit";
 import { KenyaSportsSection } from "@/components/sports/KenyaSportsSection";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Match, useMatchPreview, useMatchReview, usePreloadSportsData } from "@/hooks/useSportsData";
@@ -180,6 +181,11 @@ export default function SportsPage() {
                   </div>
                   {/* Decorative element */}
                   <Flame className="absolute -right-10 -bottom-10 w-48 h-48 opacity-10 group-hover:scale-120 transition-transform duration-500" />
+                </div>
+
+                {/* Sidebar Ad Slot */}
+                <div className="flex justify-center">
+                  <AdUnit type="effectivegate" />
                 </div>
               </div>
             </aside>

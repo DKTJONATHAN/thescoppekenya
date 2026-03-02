@@ -5,6 +5,7 @@ import { getAllPosts } from "@/lib/markdown";
 import { TrendingUp, Eye, Flame, Award } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Helmet } from "react-helmet-async";
+import AdUnit from "@/components/AdUnit";
 
 const allPostsFromMarkdown = getAllPosts();
 
@@ -28,7 +29,6 @@ const Trending = () => {
     fetchViews();
   }, []);
 
-  // Sort posts by real GA views using fuzzy matching
   const trendingPosts = useMemo(() => {
     return allPostsFromMarkdown
       .map(post => {
@@ -42,35 +42,59 @@ const Trending = () => {
                         viewCounts[fallbackPath] || 
                         0;
         
-        const displayViews = gaViews > 0 ? gaViews : 47;
-
-        return {
-          ...post,
-          views: displayViews
-        };
+        return { ...post, views: gaViews > 0 ? gaViews : 47 };
       })
       .sort((a, b) => b.views - a.views);
   }, [viewCounts]);
 
+  // Insert ads every 6 cards in the grid
+  const gridWithAds = useMemo(() => {
+    const elements: React.ReactNode[] = [];
+    const adTypes: Array<'inarticle' | 'effectivegate' | 'horizontal'> = ['effectivegate', 'inarticle', 'horizontal'];
+    let adIdx = 0;
+
+    trendingPosts.forEach((post, index) => {
+      elements.push(
+        <div key={post.slug} className="relative group">
+          <div className="absolute -top-3 -left-3 z-20 w-10 h-10 gradient-primary rounded-full flex items-center justify-center text-white font-black shadow-xl border-4 border-background">
+            {index + 1}
+          </div>
+          <ArticleCard post={post} />
+          <div className="absolute top-4 right-4 z-10">
+            <Badge className="bg-black/60 backdrop-blur-md text-white border-0 flex items-center gap-1.5 px-3 py-1 shadow-lg">
+              <Eye className="w-3.5 h-3.5" />
+              {post.views > 999 ? `${(post.views / 1000).toFixed(1)}k` : post.views}
+            </Badge>
+          </div>
+        </div>
+      );
+
+      // After every 6th card, inject a full-width ad row
+      if ((index + 1) % 6 === 0 && index < trendingPosts.length - 1) {
+        elements.push(
+          <div key={`trend-ad-${adIdx}`} className="col-span-full flex justify-center py-6">
+            <AdUnit type={adTypes[adIdx % adTypes.length]} />
+          </div>
+        );
+        adIdx++;
+      }
+    });
+
+    return elements;
+  }, [trendingPosts]);
+
   return (
     <Layout>
       <Helmet>
-        {/* Page Title */}
         <title>Trending Stories - Za Ndani | What's Hot in Kenya</title>
-        
-        {/* Primary SEO Meta Tags */}
         <meta name="description" content="Discover the most read stories on Za Ndani right now. Hottest Kenya celebrity gossip, trending entertainment news, and breaking Nairobi stories." />
         <meta name="keywords" content="Trending news Kenya, Kenya celebrity gossip, hot entertainment stories Nairobi, most read news Kenya, Za Ndani trending, latest Nairobi gossip, trending stories" />
         <link rel="canonical" href="https://zandani.co.ke/trending" />
-
-        {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://zandani.co.ke/trending" />
         <meta property="og:title" content="Trending Stories - Za Ndani | What's Hot in Kenya" />
         <meta property="og:description" content="Discover the most read stories on Za Ndani right now. Hottest Kenya celebrity gossip and breaking Nairobi entertainment news." />
         <meta property="og:image" content="https://zandani.co.ke/logo.png" />
-
-        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://zandani.co.ke/trending" />
         <meta name="twitter:title" content="Trending Stories - Za Ndani | What's Hot in Kenya" />
@@ -100,23 +124,7 @@ const Trending = () => {
             </div>
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {trendingPosts.map((post, index) => (
-                <div key={post.slug} className="relative group">
-                  {/* Rank Badge */}
-                  <div className="absolute -top-3 -left-3 z-20 w-10 h-10 gradient-primary rounded-full flex items-center justify-center text-white font-black shadow-xl border-4 border-background">
-                    {index + 1}
-                  </div>
-                  
-                  <ArticleCard post={post} />
-                  
-                  <div className="absolute top-4 right-4 z-10">
-                    <Badge className="bg-black/60 backdrop-blur-md text-white border-0 flex items-center gap-1.5 px-3 py-1 shadow-lg">
-                      <Eye className="w-3.5 h-3.5" />
-                      {post.views > 999 ? `${(post.views / 1000).toFixed(1)}k` : post.views}
-                    </Badge>
-                  </div>
-                </div>
-              ))}
+              {gridWithAds}
             </div>
           )}
         </div>

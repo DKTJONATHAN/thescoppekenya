@@ -6,6 +6,7 @@ import { ArrowRight, TrendingUp, Eye, Flame, Sparkles, ChevronDown } from "lucid
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Helmet } from "react-helmet-async";
+import AdUnit from "@/components/AdUnit";
 
 const CategoryBar = lazy(() => import("@/components/articles/CategoryBar").then(m => ({ default: m.CategoryBar })));
 const ArticleCard = lazy(() => import("@/components/articles/ArticleCard").then(m => ({ default: m.ArticleCard })));
@@ -43,10 +44,14 @@ const Index = () => {
 
   const handleLoadMore = () => setVisibleCount(prev => prev + LOAD_MORE_COUNT);
 
-  // Cleaner chunking for list plus bento pattern without mutating loop index
+  // Build feed with ads injected every 4 cards
   const renderedContent = useMemo(() => {
-    const elements = [];
+    const elements: React.ReactNode[] = [];
+    let cardCount = 0;
+    let adIndex = 0;
+    const adTypes: Array<'inarticle' | 'effectivegate' | 'horizontal'> = ['inarticle', 'effectivegate', 'horizontal'];
     let i = 0;
+
     while (i < displayedPosts.length) {
       // Two regular cards
       const pair = displayedPosts.slice(i, i + 2);
@@ -58,8 +63,19 @@ const Index = () => {
             ))}
           </div>
         );
+        cardCount += pair.length;
       }
       i += 2;
+
+      // Inject ad after every 4 cards
+      if (cardCount >= 4 && cardCount % 4 === 0) {
+        elements.push(
+          <div key={`feed-ad-${adIndex}`} className="flex justify-center py-4">
+            <AdUnit type={adTypes[adIndex % adTypes.length]} />
+          </div>
+        );
+        adIndex++;
+      }
 
       // Insert bento if enough posts remain
       const bentoStart = i;
@@ -80,7 +96,18 @@ const Index = () => {
             </div>
           </div>
         );
-        i += 3; // skip the bento cards
+        cardCount += 3;
+        i += 3;
+
+        // Ad after bento block too
+        if (cardCount % 4 <= 1) {
+          elements.push(
+            <div key={`bento-ad-${adIndex}`} className="flex justify-center py-4">
+              <AdUnit type={adTypes[adIndex % adTypes.length]} />
+            </div>
+          );
+          adIndex++;
+        }
       }
     }
     return elements;
@@ -91,16 +118,11 @@ const Index = () => {
       <Helmet>
         <title>Za Ndani | Trending News & Gossip</title>
         {topStory && topStory.image && (
-          <link
-            rel="preload"
-            as="image"
-            href={topStory.image}
-            fetchPriority="high"
-          />
+          <link rel="preload" as="image" href={topStory.image} fetchPriority="high" />
         )}
       </Helmet>
 
-      {/* COMPACT HERO - reduced to 50vh for faster paint and better mobile flow */}
+      {/* HERO */}
       {topStory && (
         <section className="relative h-[50vh] min-h-[400px] flex items-end bg-black overflow-hidden">
           <div className="absolute inset-0">
@@ -114,7 +136,6 @@ const Index = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10" />
           </div>
-
           <div className="relative container max-w-7xl mx-auto px-4 pb-12 z-20">
             <div className="max-w-3xl space-y-4">
               <Badge className="bg-primary text-white font-black px-3 py-0.5 rounded-full text-[10px] tracking-widest">
@@ -137,24 +158,22 @@ const Index = () => {
         <CategoryBar />
       </Suspense>
 
-      {/* DYNAMIC FEED WITH CLEANER BENTO LAYOUT */}
+      {/* FEED */}
       <section className="py-12 md:py-20 bg-background">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-12 gap-12">
 
-            {/* Main Content Area */}
+            {/* Main Content */}
             <div className="lg:col-span-8 space-y-12">
               <div className="flex items-center gap-4 mb-8">
                 <span className="text-xs font-black uppercase tracking-[0.3em] text-primary">The Latest</span>
                 <div className="h-[1px] flex-1 bg-divider" />
               </div>
 
-              {/* The Interwoven List and Bento Items */}
               <div className="space-y-12">
                 {renderedContent}
               </div>
 
-              {/* READ MORE BUTTON */}
               {hasMore && (
                 <div className="pt-12 text-center">
                   <Button 
@@ -175,7 +194,7 @@ const Index = () => {
               )}
             </div>
 
-            {/* Sticky Sidebar */}
+            {/* Sidebar */}
             <aside className="lg:col-span-4 hidden lg:block">
               <div className="sticky top-24 space-y-8">
                 <div className="p-8 rounded-[2.5rem] bg-surface border border-divider">
@@ -192,6 +211,16 @@ const Index = () => {
                       </Link>
                     ))}
                   </div>
+                </div>
+
+                {/* Sidebar Ad */}
+                <div className="flex justify-center">
+                  <AdUnit type="effectivegate" />
+                </div>
+
+                {/* Second sidebar ad lower down */}
+                <div className="flex justify-center mt-8">
+                  <AdUnit type="inarticle" />
                 </div>
               </div>
             </aside>
