@@ -1,5 +1,5 @@
 {
-  "buildCommand": "node scripts/generate-llms-txt.js && node scripts/generate-rss.js && node scripts/submit-new-posts.js && vite build --outDir dist/client && vite build --ssr src/entry-server.tsx --outDir dist/server && node scripts/generate-sitemap.js && node scripts/generate-article-html.js && node scripts/prerender.js",
+  "buildCommand": "npm run vercel-build",
   "outputDirectory": "dist/client",
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
