@@ -1,0 +1,30 @@
+---
+title: "High Court Orders Govt to Pay Basil Criticos Ksh 30M Over Persistent Violation of Property Rights"
+slug: "high-court-orders-govt-basil-criticos-ksh-30m-violation-of-property-rights"
+excerpt: "The High Court Orders Govt to pay former MP Basil Criticos Ksh 30M, highlighting systemic failures in addressing long-standing Violation of Property Rights."
+author: "Celestine Nzioka"
+image: "https://i.ibb.co/1fBrYDgD/0e93db9ec0dc.jpg"
+category: "Politics"
+date: "2026-03-03"
+tags: ["Kenya", "High Court", "Basil Criticos", "government", "property rights", "compensation", "land disputes", "systemic failure", "politics", "Za Ndani"]
+---
+
+## High Court Orders Govt to Address Decades of Property Rights Violation for Basil Criticos
+
+The High Court has ordered the government to compensate former Taita Taveta Member of Parliament Basil Criticos Ksh 30 million for the destruction of his sisal farm more than two decades ago. This ruling, issued on Tuesday, March 3, underlines the judiciary's intervention in long-standing land disputes that the state has demonstrably failed to resolve over extended periods.
+
+### The True Cost of Inaction: Basil Criticos Ksh 30M Payout and Public Funds
+
+While the headlines focus on the substantial payout to a former legislator, the underlying narrative is one of protracted state inertia and the eventual burden placed on taxpayers. Criticos's saga with his Taita Taveta sisal estates is not new; it is a decades-long chronicle involving squatters, financial institutions, and complex land dealings. His land conflicts trace back to at least 2004, when thousands of squatters invaded his then 72,000-acre farm, indiscriminately destroying sisal plantations and uprooting crops. This history underscores a systemic failure by successive administrations to decisively address land ownership disputes and enforce property rights, leaving individual citizens, and now the public purse, to bear the financial brunt.
+
+This current Ksh 30 million order is distinct from previous significant judgments, such as the Ksh 2.3 billion the Court of Appeal ordered National Bank of Kenya to pay Criticos in 2022 for the irregular auction of his farm in 2007. The government's continuous entanglement in such legal battles, often stemming from historical grievances and administrative lapses, signals a profound lack of proactive governance in land management. Article 40 of the Constitution guarantees property rights, yet the state's authority to infringe upon these rights for public interest, with compensation, is often marred by inconsistent application and delayed processes, leading to judicial interventions.
+
+### Systemic Failures and the Violation of Property Rights Across Kenya
+
+The government's penchant for allowing land disputes to fester, only to be compelled by courts to disburse significant compensation, illustrates a deeply ingrained pattern of systemic failure. While an individual like Basil Criticos, with historical political connections, can eventually secure a court order, the reality for countless ordinary Kenyans facing similar or worse violations of property rights is often starkly different. The process of compulsory land acquisition in Kenya is frequently criticised for irregularities, human rights contraventions, and prolonged compensation delays, particularly for major infrastructure projects.
+
+The consistent delay in settling such matters is not merely bureaucratic; it inflates costs due to accrued interest, effectively transferring public wealth into private hands, often those of the well-connected. This allocation of public funds towards rectifying past administrative errors and historical injustices, however legitimate in individual cases, highlights a skewed prioritisation. Resources that could be directed towards critical public services are instead absorbed by legal penalties. This mirrors a broader issue of fiscal strain and resource allocation, where the public often bears the cost of governmental inefficiencies and delayed policy implementation. The ongoing struggle of many Kenyans to afford basic necessities, exemplified by the discussions around the [Increase in Pad and Diaper Prices Will Widen Social Inequalities: Kenya's Environmental Mandate at a Human Cost](https://zandani.co.ke/article/increase-in-pad-and-diaper-prices-widen-social-inequalities), stands in stark contrast to these multi-million-shilling payouts. It underscores a government seemingly more reactive to judicial decrees for prominent figures than proactive in safeguarding the economic well-being and property rights of its general citizenry.
+
+### Accountability and the Future of Property Rights in Kenya
+
+This High Court order against the government serves as another indictment of the state's long-term accountability deficits in managing land affairs. While the 2010 Constitution and subsequent land laws aimed to rectify historical injustices and streamline land management, implementation remains slow, particularly concerning public land and the plight of informal settlers. The ruling for Basil Criticos, though a victory for individual justice, points to a larger, unresolved crisis of governance where the state struggles to balance public interest with fundamental individual rights, often at great expense. The question remains: how many more decades, and how many more millions, will it take before the government adopts a truly equitable and efficient approach to land and property rights for all Kenyans?
