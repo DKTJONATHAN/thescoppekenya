@@ -45,7 +45,6 @@ jobs:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
-          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
@@ -61,8 +60,6 @@ jobs:
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           MODELS_TO_TRY = ["gemini-2.0-flash", "gemini-2.0-flash-lite-preview"]
-
-          BANNED_PHRASES = ["sasa basi", "melting the pot", "spill the tea", "tea is hot", "grab your popcorn", "tapestry", "dive in", "delve into"]
 
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
@@ -92,7 +89,7 @@ jobs:
               return list(set(urls))
 
           def scrape_article_free(url):
-              print(f"🕷️ Freshness Check: {url}")
+              print(f"🕷️ Freshness Check (10h): {url}")
               with sync_playwright() as p:
                   browser = p.chromium.launch(headless=True)
                   page = browser.new_page()
@@ -100,14 +97,14 @@ jobs:
                       page.goto(url, timeout=45000)
                       soup = BeautifulSoup(page.content(), "html.parser")
                       
-                      # --- 10 HOUR FRESHNESS GATE ---
+                      # --- STRICT 10 HOUR GATE ---
                       pub_time = None
                       meta_pub = soup.find('meta', property='article:published_time')
                       if meta_pub:
                           pub_time = date_parser.parse(meta_pub.get('content')).replace(tzinfo=datetime.timezone.utc)
                           age = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
                           if age > 10:
-                              print(f"   ⏳ Skipping: {int(age)}h old.")
+                              print(f"   ⏳ Skipping: Tech news is {int(age)}h old.")
                               return None, None, None
                       
                       if not pub_time: return None, None, None
@@ -150,15 +147,15 @@ jobs:
           Current Date: {full_date_str}
           TITLE: {final_title}
           SOURCE: {full_raw_text[:12000]}
-          TASK: Write as Elizabeth Muthoni (Forward-looking Kenyan Tech Journalist for Za Ndani).
+          TASK: Write as Elizabeth Muthoni (Kenyan Tech Journalist for Za Ndani).
           - Front-load keywords in Slug and ALL H2/H3 headings.
           - Verified 10h freshness. No dashes. Modern Professional English.
-          - Structure: H2 Keyword Heading -> 40-word neutral snippet -> Deep analysis of the digital impact and ignored angles."""
+          - Structure: H2 Keyword Heading -> 40-word neutral snippet -> Analysis of digital impact and PR red flags."""
           response = client.models.generate_content(model=MODELS_TO_TRY[0], contents=article_prompt, config=types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]))
           
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:70]
           final_file = textwrap.dedent(f"""---
-title: "{final_title.replace('"', "'")}"
+title: "{final_title}"
 slug: "{slug}"
 author: "Elizabeth Muthoni"
 image: "{upload_to_imgbb(target_image)}"
@@ -177,6 +174,6 @@ date: "{today_str}"
           git config --global user.name "Elizabeth Muthoni"
           git config --global user.email "bot@zandani.co.ke"
           git add .
-          git commit -m "content: Fresh tech analysis by Elizabeth Muthoni 🚀" || echo "No changes"
+          git commit -m "content: Fresh tech update by Elizabeth Muthoni 🚀" || echo "No changes"
           git pull origin main --rebase
           git push origin main
