@@ -137,10 +137,15 @@ function fallbackMarkdownToHtml(markdown: string): string {
   return html;
 }
 
-export function getAllPosts(): Post[] {
-  const posts: Post[] = [];
+// Module-level cache to avoid re-parsing all markdown files on every call
+let _cachedPosts: Post[] | null = null;
 
-  for (const path in postFiles) {
+export function getAllPosts(): Post[] {
+  if (_cachedPosts) return _cachedPosts;
+
+  const posts: Post[] = [];
+
+  for (const path in postFiles) {
     try {
       const rawContent = postFiles[path] as string;
       const { data, content } = parseFrontmatter(rawContent);
@@ -187,8 +192,9 @@ export function getAllPosts(): Post[] {
     }
   }
 
-  // Sort by date descending safely
-  return posts.sort((a, b) => getSafeTime(b.date) - getSafeTime(a.date));
+  // Sort by date descending safely
+  _cachedPosts = posts.sort((a, b) => getSafeTime(b.date) - getSafeTime(a.date));
+  return _cachedPosts;
 }
 
 export function getPostBySlug(slug: string): Post | undefined {

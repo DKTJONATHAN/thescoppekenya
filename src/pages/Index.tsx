@@ -65,8 +65,12 @@ const Index = () => {
     });
   }, [viewCounts]);
 
-  const topStory = allPosts[0];
-  const feedPosts = useMemo(() => allPosts.slice(1), [allPosts]);
+  // Top story: always the latest post by "Za Ndani", fallback to first overall
+  const topStory = useMemo(() => {
+    const zaNdaniPost = allPosts.find(p => p.author.toLowerCase() === 'za ndani');
+    return zaNdaniPost || allPosts[0];
+  }, [allPosts]);
+  const feedPosts = useMemo(() => allPosts.filter(p => p.slug !== topStory?.slug), [allPosts, topStory]);
   const displayedPosts = feedPosts.slice(0, visibleCount);
   const hasMore = visibleCount < feedPosts.length;
 
@@ -105,10 +109,29 @@ const Index = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Za Ndani | Breaking Entertainment & Gossip</title>
+        <title>Za Ndani | Breaking Kenya News, Entertainment Gossip & Trending Scoops</title>
+        <meta name="description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, trending celebrity news, and sports." />
+        <link rel="canonical" href="https://zandani.co.ke" />
         {topStory && optimizedHeroImage && (
           <link rel="preload" as="image" href={optimizedHeroImage} fetchPriority="high" />
         )}
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Za Ndani",
+          "url": "https://zandani.co.ke",
+          "description": "Breaking Kenya News, Entertainment Gossip & Trending Scoops",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Za Ndani",
+            "logo": { "@type": "ImageObject", "url": "https://zandani.co.ke/logo.png" }
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://zandani.co.ke/tag/{search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        })}</script>
       </Helmet>
 
       {/* HERO SECTION */}

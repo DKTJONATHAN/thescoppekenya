@@ -159,6 +159,8 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
           <img
             src={optimizedMainImage}
             alt={post.imageAlt}
+            width={800}
+            height={500}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             loading={priority ? "eager" : "lazy"}
             fetchPriority={priority ? "high" : "auto"}
