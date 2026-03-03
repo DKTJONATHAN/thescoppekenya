@@ -69,8 +69,8 @@ const Trending = () => {
         </div>
       );
 
-      // After every 6th card, inject a full-width ad row
-      if ((index + 1) % 6 === 0 && index < trendingPosts.length - 1) {
+      // After every card, inject a full-width ad row
+      if (index < trendingPosts.length - 1) {
         elements.push(
           <div key={`trend-ad-${adIdx}`} className="col-span-full flex justify-center py-6">
             <AdUnit type={adTypes[adIdx % adTypes.length]} />

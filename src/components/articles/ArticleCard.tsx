@@ -56,7 +56,7 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
           alt={post.imageAlt}
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           loading={isLCP ? "eager" : "lazy"}
-          fetchpriority={isLCP ? "high" : "auto"}
+          fetchPriority={isLCP ? "high" : "auto"}
           decoding="async"
           onError={(e) => handleImageError(e, post.image)}
         />
@@ -104,7 +104,7 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
               alt={post.imageAlt}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               loading={priority ? "eager" : "lazy"}
-              fetchpriority={priority ? "high" : "auto"}
+              fetchPriority={priority ? "high" : "auto"}
               decoding="async"
               onError={(e) => handleImageError(e, post.image)}
             />
@@ -161,7 +161,7 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
             alt={post.imageAlt}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             loading={priority ? "eager" : "lazy"}
-            fetchpriority={priority ? "high" : "auto"}
+            fetchPriority={priority ? "high" : "auto"}
             decoding="async"
             onError={(e) => handleImageError(e, post.image)}
           />
