@@ -116,7 +116,8 @@ export default function ArticlePage() {
 
     const renderedBlocks: React.ReactNode[] = [];
     let paragraphCount = 0;
-    let adInserted = false;
+    const adTypes: Array<'inarticle' | 'effectivegate' | 'horizontal'> = ['inarticle', 'effectivegate', 'horizontal'];
+    let adCounter = 0;
 
     blocks.forEach((block, index) => {
       renderedBlocks.push(
@@ -128,9 +129,13 @@ export default function ArticlePage() {
 
       if (/^<p[\s>]/i.test(block)) {
         paragraphCount++;
-        if (!adInserted && paragraphCount >= 4) {
-          renderedBlocks.push(<AdUnit key="inarticle-ad" type="inarticle" />);
-          adInserted = true;
+        if (paragraphCount % 2 === 0) {
+          renderedBlocks.push(
+            <div key={`para-ad-${adCounter}`} className="my-6 flex justify-center">
+              <AdUnit type={adTypes[adCounter % adTypes.length]} />
+            </div>
+          );
+          adCounter++;
         }
       }
     });

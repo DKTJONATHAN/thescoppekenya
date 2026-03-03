@@ -178,10 +178,10 @@ export default function CategoryPage() {
                             </Badge>
                           </div>
                         </div>
-                        {/* Ad after every 4th card */}
-                        {(index + 1) % 4 === 0 && index < postsWithViews.length - 1 && (
+                        {/* Ad after every card */}
+                        {index < postsWithViews.length - 1 && (
                           <div className="col-span-full flex justify-center py-4">
-                            <AdUnit type={index % 8 === 3 ? "inarticle" : "effectivegate"} />
+                            <AdUnit type={index % 3 === 0 ? "inarticle" : index % 3 === 1 ? "effectivegate" : "horizontal"} />
                           </div>
                         )}
                       </React.Fragment>

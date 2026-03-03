@@ -75,81 +75,39 @@ const Index = () => {
 
   const handleLoadMore = () => setVisibleCount(prev => prev + LOAD_MORE_COUNT);
 
-  // Build feed with ads injected every 4 cards
+  // Build feed with ads after every card
   const renderedContent = useMemo(() => {
     const elements: React.ReactNode[] = [];
-    let cardCount = 0;
     let adIndex = 0;
     const adTypes: Array<'inarticle' | 'effectivegate' | 'horizontal'> = ['inarticle', 'effectivegate', 'horizontal'];
-    let i = 0;
 
-    while (i < displayedPosts.length) {
-      const pair = displayedPosts.slice(i, i + 2);
-      if (pair.length > 0) {
-        elements.push(
-          <div key={`pair-${i}`} className="grid md:grid-cols-2 gap-8">
-            {pair.map((post, index) => (
-              <ArticleCard 
-                key={post.slug} 
-                post={post} 
-                priority={i === 0} 
-              />
-            ))}
-          </div>
-        );
-        cardCount += pair.length;
-      }
-      i += 2;
+    displayedPosts.forEach((post, i) => {
+      elements.push(
+        <div key={post.slug}>
+          <ArticleCard post={post} priority={i === 0} />
+        </div>
+      );
 
-      if (cardCount >= 4 && cardCount % 4 === 0) {
+      // Ad after every card (except the last)
+      if (i < displayedPosts.length - 1) {
         elements.push(
-          <div key={`feed-ad-${adIndex}`} className="flex justify-center py-6 border-y border-divider my-8 bg-muted/20">
+          <div key={`feed-ad-${adIndex}`} className="flex justify-center py-4 border-y border-divider my-4 bg-muted/20">
             <AdUnit type={adTypes[adIndex % adTypes.length]} />
           </div>
         );
         adIndex++;
       }
+    });
 
-      const bentoStart = i;
-      const bentoChunk = feedPosts.slice(bentoStart, bentoStart + 3);
-      if (bentoChunk.length === 3 && i < displayedPosts.length) {
-        elements.push(
-          <div key={`bento-${i}`} className="grid grid-cols-2 md:grid-cols-3 gap-4 py-8">
-            <div className="col-span-2 md:col-span-2 h-72 md:h-96 rounded-3xl overflow-hidden shadow-2xl">
-              <ArticleCard post={bentoChunk[0]} variant="featured" />
-            </div>
-            <div className="col-span-2 md:col-span-1 grid gap-4">
-              <div className="h-full rounded-2xl overflow-hidden bg-surface border border-divider p-4 hover:border-primary transition-colors">
-                <ArticleCard post={bentoChunk[1]} variant="compact" />
-              </div>
-              <div className="h-full rounded-2xl overflow-hidden bg-surface border border-divider p-4 hover:border-primary transition-colors">
-                <ArticleCard post={bentoChunk[2]} variant="compact" />
-              </div>
-            </div>
-          </div>
-        );
-        cardCount += 3;
-        i += 3;
-
-        if (cardCount % 4 <= 1) {
-          elements.push(
-            <div key={`bento-ad-${adIndex}`} className="flex justify-center py-6 border-y border-divider my-8 bg-muted/20">
-              <AdUnit type={adTypes[adIndex % adTypes.length]} />
-            </div>
-          );
-          adIndex++;
-        }
-      }
-    }
     return elements;
-  }, [displayedPosts, feedPosts]);
+  }, [displayedPosts]);
 
   return (
     <Layout>
       <Helmet>
         <title>Za Ndani | Breaking Entertainment & Gossip</title>
         {topStory && optimizedHeroImage && (
-          <link rel="preload" as="image" href={optimizedHeroImage} fetchpriority="high" />
+          <link rel="preload" as="image" href={optimizedHeroImage} fetchPriority="high" />
         )}
       </Helmet>
 
@@ -160,7 +118,7 @@ const Index = () => {
             <img 
               src={optimizedHeroImage} 
               alt={topStory.title}
-              fetchpriority="high"
+              fetchPriority="high"
               loading="eager"
               decoding="async" 
               className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-1000"
