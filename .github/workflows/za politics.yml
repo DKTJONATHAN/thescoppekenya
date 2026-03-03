@@ -2,7 +2,7 @@ name: Celestine Nzioka - Politics Scraper
 
 on:
   schedule:
-    - cron: '30 6,12,18 * * *' # Morning, Noon, and Evening UTC
+    - cron: '30 6,12,18 * * *' 
   workflow_dispatch:
 
 concurrency:
@@ -15,7 +15,7 @@ permissions:
 env:
   DEFAULT_BRANCH: main
   POSTS_DIR: content/posts
-  MEMORY_FILE: .github/memory_celestine_politics.json
+  MEMORY_FILE: .github/memory_celestine.json
 
 jobs:
   generate-and-publish:
@@ -45,6 +45,9 @@ jobs:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
@@ -59,7 +62,7 @@ jobs:
 
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
-          MODELS_TO_TRY = ["gemini-2.0-flash", "gemini-2.0-flash-lite-preview"]
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
@@ -67,50 +70,40 @@ jobs:
               try:
                   img_data = requests.get(image_url, timeout=15).content
                   base64_image = base64.b64encode(img_data).decode('utf-8')
-                  res = requests.post("https://api.imgbb.com/1/upload", data={"key": api_key, "image": base64_image}, timeout=20)
+                  payload = {"key": api_key, "image": base64_image}
+                  res = requests.post("https://api.imgbb.com/1/upload", data=payload, timeout=20)
                   return res.json()['data']['url'] if res.status_code == 200 else image_url
               except: return image_url
 
           def get_target_urls():
               urls = []
-              try:
-                  with sync_playwright() as p:
-                      browser = p.chromium.launch(headless=True)
-                      page = browser.new_page()
-                      page.goto('https://www.kenyans.co.ke/news/politics', timeout=60000, wait_until="domcontentloaded")
-                      page.evaluate("window.scrollBy(0, 1500)")
-                      soup = BeautifulSoup(page.content(), 'html.parser')
-                      for a in soup.find_all('a', href=True):
-                          href = a.get('href', '')
-                          if '/news/' in href and len(href) > 20 and '/author/' not in href:
-                              urls.append(href if href.startswith('http') else 'https://www.kenyans.co.ke' + href)
-                      browser.close()
-              except: pass
+              with sync_playwright() as p:
+                  browser = p.chromium.launch(headless=True)
+                  page = browser.new_page()
+                  page.goto('https://www.kenyans.co.ke/news/politics', timeout=60000)
+                  soup = BeautifulSoup(page.content(), 'html.parser')
+                  for a in soup.find_all('a', href=True):
+                      href = a.get('href', '')
+                      if '/news/' in href and len(href) > 20: urls.append(href if href.startswith('http') else 'https://www.kenyans.co.ke' + href)
+                  browser.close()
               return list(set(urls))
 
-          def scrape_article(url):
-              print(f"🕷️ Checking Freshness: {url}")
+          def scrape_article_free(url):
               with sync_playwright() as p:
                   browser = p.chromium.launch(headless=True)
                   page = browser.new_page()
                   try:
                       page.goto(url, timeout=45000)
                       soup = BeautifulSoup(page.content(), "html.parser")
-                      
-                      # --- 10 HOUR FRESHNESS GATE ---
                       meta_pub = soup.find('meta', property='article:published_time')
                       if meta_pub:
                           pub_time = date_parser.parse(meta_pub.get('content')).replace(tzinfo=datetime.timezone.utc)
-                          age = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
-                          if age > 10:
-                              print(f"   ⏳ Skipping: {int(age)}h old.")
-                              return None, None, None
+                          if (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600 > 10: return None, None, None
                       else: return None, None, None
-
-                      title = soup.find('title').get_text().replace(' - Kenyans.co.ke', '').strip() if soup.find('title') else ""
-                      body = "\n\n".join([p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40])
+                      title = soup.find('title').get_text().replace(' - Kenyans.co.ke', '').strip()
+                      text = "\n\n".join([p.get_text() for p in soup.find_all('p') if len(p.get_text()) > 40])
                       img = soup.find('meta', property='og:image')['content'] if soup.find('meta', property='og:image') else ""
-                      return body, img, title
+                      return text, img, title
                   except: return None, None, None
                   finally: browser.close()
 
@@ -121,64 +114,38 @@ jobs:
           article_links = get_target_urls()
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
-          
-          full_raw_text, target_title, target_image, final_hash = None, None, None, None
+          raw_text, target_img, target_title, final_hash = None, None, None, None
           for link in article_links:
               u_hash = hashlib.md5(link.encode()).hexdigest()
               if u_hash in memory: continue
-              text, img, title = scrape_article(link)
+              text, img, title = scrape_article_free(link)
               if text and len(text) > 400:
-                  full_raw_text, target_image, target_title, final_hash = text, img, title, u_hash
+                  raw_text, target_img, target_title, final_hash = text, img, title, u_hash
                   break
-          if not full_raw_text: sys.exit(0)
+          if not raw_text: sys.exit(0)
 
-          # === SMART TITLE CONTEST ===
-          title_prompt = f"""
-          SOURCE POLITICAL NEWS: {target_title}
-          CONTENT: {full_raw_text[:2000]}
-          FORMULAS: 1. Shocking Truth, 2. Keyword+[Bracket Hook], 3. Number+Keyword+Outcome.
-          INSTRUCTIONS: Extract 2-4 keywords. Generate 3 high-CTR political titles front-loading these keywords. 
-          RESPOND ONLY JSON: {{"final_title": "Winning Title"}}
-          """
+          # === SMART TITLING FORMULA ADDED ===
+          title_prompt = f"""SCRAPED ARTICLE: {target_title}\nClassify content type from options ONLY: LIST, BIO, QUESTION, SHOCKING, GUIDE, NEWS, TRENDING.
+          HIGH-CTR FORMULAS: 1. Number+Keyword+Benefit, 2. Keyword+Power Word+Year, 3. How/What+Keyword+Number, 4. Keyword+[Bracket Hook], 5. Adjective+Number+Outcome.
+          INSTRUCTIONS: Generate EXACTLY 3 SEO titles (<60 chars, front-load keyword). Select #1 as FINAL_TITLE. Output ONLY JSON: {{"final_title": "The Single Best Title Here"}}"""
           title_resp = client.models.generate_content(model=MODELS_TO_TRY[0], contents=title_prompt)
           final_title = json.loads(re.search(r'{.*}', title_resp.text, re.DOTALL).group()).get('final_title', target_title)
 
-          # === FULL ARTICLE GENERATION ===
-          article_prompt = f"""
-          Current Date: {full_date_str}
-          TITLE: {final_title}
-          SOURCE: {full_raw_text[:12000]}
-          TASK: Write a cynical political report as Celestine Nzioka for Za Ndani.
-          - Front-load keywords in Slug and ALL H2/H3 headings.
-          - Today is {full_date_str}. Verified 10h freshness only.
-          - Neutral but engaging style. No Sheng. No dashes.
-          - Structure: H2 Keyword Heading -> 40-word neutral snippet -> Cynical political analysis.
-          """
-          response = client.models.generate_content(model=MODELS_TO_TRY[0], contents=article_prompt, config=types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]))
+          # === ORIGINAL PROMPT LOGIC CONTINUED ===
+          article_prompt = f"""TITLE: {final_title}\nSOURCE: {raw_text[:12000]}\nTASK: Write political news as Celestine Nzioka. Cynical Kenyan Political Voice. No Sheng. No dashes. Front-load keywords in Slug/Headers. 10h freshness rule."""
+          response = client.models.generate_content(model=MODELS_TO_TRY[0], contents=article_prompt)
           
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:70]
-          final_file = textwrap.dedent(f"""\
-          ---
-          title: "{final_title.replace('"', "'")}"
-          slug: "{slug}"
-          author: "Celestine Nzioka"
-          image: "{upload_to_imgbb(target_image)}"
-          category: "Politics"
-          date: "{today_str}"
-          ---
-          {response.text}
-          """)
-
+          final_file = f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\nauthor: \"Celestine Nzioka\"\nimage: \"{upload_to_imgbb(target_img)}\"\ncategory: \"Politics\"\ndate: \"{today_str}\"\n---\n\n{response.text}"
           with open(os.path.join(os.environ.get("POSTS_DIR"), f"{slug}.md"), "w") as f: f.write(final_file)
           memory.append(final_hash)
           with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
           EOF
 
-      - name: Git Pull & Push
-        run: |
-          git config --global user.name "Celestine Nzioka"
-          git config --global user.email "bot@zandani.co.ke"
-          git add .
-          git commit -m "content: Fresh Political update (10h limit) 🏛️" || echo "No changes"
-          git pull origin main --rebase
-          git push origin main
+      - name: Commit and push article
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: "Celestine Nzioka <bot@zandani.co.ke>"
+          commit_message: "content: Political analysis by Celestine Nzioka 🏛️"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: 'content/posts/*.md .github/memory_celestine.json'
