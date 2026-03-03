@@ -7,8 +7,9 @@ import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/hooks/useTheme";
 import { Button } from "@/components/ui/button";
 
-// Code Splitting: Lazy load all pages so the browser only downloads the specific page the user clicks.
-const Index = lazy(() => import("./pages/Index"));
+// Homepage loaded eagerly for fastest FCP/LCP
+import Index from "./pages/Index";
+// Code Splitting: Lazy load all other pages
 const ArticlePage = lazy(() => import("./pages/ArticlePage"));
 const CategoryPage = lazy(() => import("./pages/CategoryPage"));
 const Trending = lazy(() => import("./pages/Trending"));
