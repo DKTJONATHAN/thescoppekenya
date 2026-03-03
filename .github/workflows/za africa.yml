@@ -73,16 +73,6 @@ jobs:
 
           MODELS_TO_TRY = ["gemini-2.0-flash", "gemini-2.0-flash-lite-preview"]
 
-          BANNED_PHRASES = [
-              "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
-              "grab your popcorn", "listen up", "buckle up", "breaking news",
-              "sherehe", "form ni gani", "udaku", "hello guys", "welcome back",
-              "mambo vipi", "niaje wasee", "karibuni", "tapestry", "dive in",
-              "delve into", "moreover", "furthermore", "in conclusion", 
-              "it's worth noting", "a testament to", "navigating the landscape",
-              "in today's digital age", "shed light on"
-          ]
-
           # DYNAMIC COUNTRY ROUTING
           if current_hour in [0, 12]:
               target_country, target_url, base_url = "Nigeria", "https://www.pulse.ng/entertainment", "https://www.pulse.ng"
@@ -124,13 +114,12 @@ jobs:
                           href = a.get('href', '')
                           if len(href) > 25 and href.count('-') > 1:
                               full_url = href if href.startswith('http') else base_url + (href if href.startswith('/') else '/' + href)
-                              if base_url.split('//')[1] in full_url: urls.append(full_url)
+                              if base_url.split('//')[-1] in full_url: urls.append(full_url)
                       browser.close()
-              except Exception as e: print(f"Scan error: {e}")
+              except: pass
               return list(set(urls))
 
           def scrape_article_free(url):
-              print(f"🕷️ Trying URL: {url}")
               with sync_playwright() as p:
                   browser = p.chromium.launch(headless=True)
                   page = browser.new_page()
@@ -147,25 +136,20 @@ jobs:
                               pub_time = date_parser.parse(meta_pub.get('content'))
                               if pub_time.tzinfo is None: pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
                               age_hours = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
-                              if age_hours > 10:
-                                  print(f"   ⏳ Too old ({int(age_hours)}h). Skipping.")
-                                  return None, None, None
+                              if age_hours > 10: return None, None, None
                           except: pass
                       
-                      if not pub_time:
-                          print("   ⚠️ No timestamp. Skipping to ensure 10h rule.")
-                          return None, None, None
+                      if not pub_time: return None, None, None
 
-                      page_title = soup.find('title').get_text().split('|')[0].strip() if soup.find('title') else ""
-                      article_text = "\n\n".join([p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 50])
+                      title = soup.find('title').get_text().split('|')[0].strip() if soup.find('title') else ""
+                      body = "\n\n".join([p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 50])
                       
-                      img_url = ""
+                      img = ""
                       for meta in soup.find_all('meta'):
                           if meta.get('property') in ['og:image', 'twitter:image']:
-                              img_url = meta.get('content', '')
-                              if img_url: break
-
-                      return article_text, img_url, page_title
+                              img = meta.get('content', '')
+                              if img: break
+                      return body, img, title
                   except: return None, None, None
                   finally: browser.close()
 
@@ -190,53 +174,55 @@ jobs:
 
           # === SMART TITLE CONTEST ===
           title_prompt = f"""
-          SCRAPED ARTICLE ({target_country}): {target_title}
+          ARTICLE SOURCE ({target_country}): {target_title}
           CONTENT: {full_raw_text[:2000]}
 
           FORMULAS: 1. Number+Keyword+Benefit, 2. Keyword+Power Word+Year, 3. Adjective+Number+Outcome, 4. Keyword+[Bracket Hook].
 
           INSTRUCTIONS:
-          1. Extract 2-4 keywords from "{target_title}".
-          2. Generate 3 unique, high-CTR titles front-loading these keywords.
-          3. Rephrase to match Amara Ndlovu's cynical Pan-African style.
-          4. Output JSON with "final_title".
+          1. Extract keywords from "{target_title}".
+          2. Generate 3 high-CTR titles front-loading keywords.
+          3. Style: Amara Ndlovu (Cynical Pan-African).
+          4. Output JSON: {{"final_title": "Winning Title"}}
           """
           title_resp = client.models.generate_content(model=MODELS_TO_TRY[0], contents=title_prompt)
-          title_data = json.loads(re.search(r'{.*}', title_resp.text, re.DOTALL).group())
-          final_title = title_data.get('final_title', target_title)
+          title_match = re.search(r'{.*}', title_resp.text, re.DOTALL)
+          final_title = json.loads(title_match.group()).get('final_title', target_title)
 
-          # === ARTICLE GENERATION ===
+          # === FULL ARTICLE GENERATION ===
           prompt = f'''Current Date: {full_date_str}
           TARGET COUNTRY: {target_country}
           TITLE: {final_title}
-          SOURCE TEXT: "{full_raw_text[:12000]}"
+          SOURCE TEXT: "{full_raw_text[:10000]}"
 
-          TASK: Write as Amara Ndlovu for Za Ndani. Cynical Pan-African correspondent.
+          TASK: Write as Amara Ndlovu for Za Ndani.
           - Front-load keywords in Slug and ALL H2/H3 headings.
-          - Today is {full_date_str}. Verified 10h freshness only.
-          - Kenyan English. No Sheng. No dashes.
-          - Structure: H2 Keyword Heading -> 40-word snippet -> Body.
+          - Today is {full_date_str}. Verifiably 10h fresh.
+          - Structure: H2 Keyword Heading -> 40-word neutral snippet -> Cynical Body.
+          - NO Sheng. NO dashes.
           '''
           response = client.models.generate_content(model=MODELS_TO_TRY[0], contents=prompt)
           full_text = response.text.strip()
           
-          # Parsing and Saving logic...
-          parsed = {"TITLE": final_title, "SLUG": re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:70]}
-          body_match = re.search(r'BODY:\s*(.*)', full_text, re.DOTALL | re.IGNORECASE)
-          parsed["BODY"] = body_match.group(1).strip() if body_match else full_text
+          parsed_body = re.search(r'BODY:\s*(.*)', full_text, re.DOTALL | re.IGNORECASE)
+          parsed_body = parsed_body.group(1).strip() if parsed_body else full_text
+          slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:70]
 
-          final_file = textwrap.dedent(f"""---
-title: "{parsed['TITLE']}"
-slug: "{parsed['SLUG']}"
-author: "Amara Ndlovu"
-image: "{upload_to_imgbb(target_image)}"
-category: "Entertainment"
-date: "{today_str}"
-tags: ["{target_country.lower()}", "africa", "entertainment"]
----
-{parsed['BODY']}""")
+          final_file = textwrap.dedent(f"""\
+          ---
+          title: "{final_title.replace('"', "'")}"
+          slug: "{slug}"
+          author: "Amara Ndlovu"
+          image: "{upload_to_imgbb(target_image)}"
+          category: "Entertainment"
+          date: "{today_str}"
+          tags: ["{target_country.lower()}", "africa", "entertainment"]
+          ---
 
-          with open(os.path.join(os.environ.get("POSTS_DIR"), f"{parsed['SLUG']}.md"), "w") as f: f.write(final_file)
+          {parsed_body}
+          """)
+
+          with open(os.path.join(os.environ.get("POSTS_DIR"), f"{slug}.md"), "w") as f: f.write(final_file)
           memory.append(final_hash)
           with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
           EOF
