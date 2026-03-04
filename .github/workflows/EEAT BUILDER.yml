@@ -46,7 +46,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests google-genai google-auth google-auth-httplib2
+          pip install requests google-genai google-auth google-auth-httplib2 beautifulsoup4 lxml playwright
+          playwright install chromium
 
       - name: Fetch GA4 top pages and build E-E-A-T clusters
         env:
@@ -56,7 +57,6 @@ jobs:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
-          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
@@ -80,7 +80,7 @@ jobs:
               "grab your popcorn", "buckle up", "breaking news", "dive in",
               "delve into", "moreover", "furthermore", "in conclusion",
               "it's worth noting", "a testament to", "navigating the landscape",
-              "in today's digital age", "tapestry", "furthermore"
+              "in today's digital age", "tapestry"
           ]
           banned_str = ", ".join(BANNED_PHRASES)
 
@@ -96,7 +96,7 @@ jobs:
               "celebrity":     ("Mutheu Ann", "Mutheu Ann, a sharp, plugged-in Kenyan entertainment journalist. Write in a passionate, high-energy style."),
               "politics":      ("Celestine Nzioka", "Celestine Nzioka, a cynical and authoritative Kenyan political journalist. Be hard-hitting and expose the angle mainstream media ignores."),
               "news":          ("Celestine Nzioka", "Celestine Nzioka, a cynical and authoritative Kenyan news journalist. Write with authority and precision."),
-              "sports":        ("Mutheu Ann", "Mutheu Ann, an energetic Kenyan sports and entertainment journalist covering local and international sports."),
+              "sports":        ("Mutheu Ann", "Mutheu Ann, an energetic Kenyan sports and entertainment journalist."),
               "technology":    ("Celestine Nzioka", "Celestine Nzioka, a precise Kenyan tech and business journalist covering Africa's digital economy."),
           }
           DEFAULT_AUTHOR = ("Za Ndani", "Za Ndani, a sharp Kenyan journalist covering what mainstream media ignores.")
@@ -104,7 +104,7 @@ jobs:
           def get_author(category: str):
               return AUTHOR_MAP.get(category.lower().strip(), DEFAULT_AUTHOR)
 
-          # ── GA4 auth (mirrors your get-views.ts exactly) ─────────────────
+          # ── GA4 auth ─────────────────────────────────────────────────────
           def get_ga4_token():
               raw_key = os.environ.get("GA4_PRIVATE_KEY", "")
               if not raw_key:
@@ -114,7 +114,6 @@ jobs:
                   decoded = decoded.replace("\\n", "\n").strip().strip('"').strip("'")
               except Exception:
                   decoded = raw_key.replace("\\n", "\n").strip()
-
               creds = service_account.Credentials.from_service_account_info(
                   {
                       "type": "service_account",
@@ -155,7 +154,7 @@ jobs:
               print(f"Found {len(pages)} qualifying pages from GA4")
               return pages
 
-          # ── Read existing posts to extract title/category ─────────────────
+          # ── Read existing post metadata ───────────────────────────────────
           def read_post_meta(slug: str):
               path = os.path.join(POSTS_DIR, f"{slug}.md")
               if not os.path.exists(path):
@@ -169,18 +168,17 @@ jobs:
                   "category": cat_m.group(1).strip() if cat_m else "entertainment",
               }
 
-          # ── Extract core entity/topic from slug ──────────────────────────
+          # ── Extract core entity from slug ────────────────────────────────
           def slug_to_topic(slug: str) -> str:
-              # Remove common filler words, return the meaningful core
-              filler = ["the", "a", "an", "in", "on", "at", "of", "and", "or", "for",
-                        "with", "by", "to", "is", "are", "was", "were", "has", "have",
-                        "kenya", "kenyan", "nairobi", "latest", "news", "gossip",
-                        "breaking", "exclusive", "real", "story", "full", "2026", "2025"]
+              filler = ["the","a","an","in","on","at","of","and","or","for","with","by",
+                        "to","is","are","was","were","has","have","kenya","kenyan","nairobi",
+                        "latest","news","gossip","breaking","exclusive","real","story","full",
+                        "2026","2025","how","what","who","why","when","where"]
               words = slug.replace("-", " ").split()
               topic_words = [w for w in words if w.lower() not in filler]
               return " ".join(topic_words[:5]) if topic_words else slug.replace("-", " ")
 
-          # ── Gemini API helpers ────────────────────────────────────────────
+          # ── Gemini API helper ─────────────────────────────────────────────
           raw_keys = [
               os.environ.get("GEMINI_WRITE_KEY"),
               os.environ.get("GEMINI_API_KEY"),
@@ -225,9 +223,69 @@ jobs:
                               break
               raise RuntimeError("All Gemini attempts failed")
 
-          # ── Generate supporting article angles for a topic ────────────────
+          # ── Find real image URL via Gemini web search ─────────────────────
+          def find_real_image(topic: str, title: str) -> str:
+              """Ask Gemini to find a real, publicly accessible image URL for this topic."""
+              prompt = f"""Search the web right now for a real, publicly accessible image of: "{topic}"
+          Context: This is for a news article titled "{title}" on a Kenyan news website.
+
+          Instructions:
+          1. Search Google Images or news sites for a real photo of {topic}
+          2. Find an image URL that is publicly accessible (not behind a login or paywall)
+          3. Prefer images from: Wikipedia, Wikimedia Commons, official social media, reputable news sites
+          4. The image must be relevant — an actual photo of the person/event/topic, NOT a stock photo
+          5. Return ONLY the direct image URL, nothing else. No explanation, no markdown, just the URL.
+          6. If you cannot find a real image, return the word: FALLBACK
+
+          Return ONLY the image URL or the word FALLBACK."""
+
+              try:
+                  raw = gemini_generate(prompt, temperature=0.1)
+                  raw = raw.strip().strip('"').strip("'")
+                  # Validate it looks like a real URL
+                  if raw.startswith("http") and any(ext in raw.lower() for ext in [".jpg", ".jpeg", ".png", ".webp", ".gif"]):
+                      print(f"  Found real image: {raw[:80]}")
+                      return raw
+                  # Sometimes Gemini returns a page URL not direct image — that's ok, imgbb will handle it
+                  if raw.startswith("http") and "FALLBACK" not in raw:
+                      print(f"  Found image page URL: {raw[:80]}")
+                      return raw
+              except Exception as e:
+                  print(f"  Image search failed: {e}")
+              return ""
+
+          # ── Upload image to ImgBB ─────────────────────────────────────────
+          def upload_imgbb(image_url: str) -> str:
+              api_key = os.environ.get("IMGBB_API_KEY")
+              fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+              if not api_key or not image_url:
+                  return fallback
+              try:
+                  img_data = requests.get(image_url, timeout=20, headers={
+                      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                  }).content
+                  if len(img_data) < 1000:
+                      print("  Image too small, using fallback")
+                      return fallback
+                  b64 = base64.b64encode(img_data).decode("utf-8")
+                  res = requests.post(
+                      "https://api.imgbb.com/1/upload",
+                      data={"key": api_key, "image": b64},
+                      timeout=25
+                  )
+                  if res.status_code == 200:
+                      hosted = res.json()["data"]["url"]
+                      print(f"  Re-hosted to ImgBB: {hosted[:60]}")
+                      return hosted
+                  else:
+                      print(f"  ImgBB failed: {res.status_code}")
+              except Exception as e:
+                  print(f"  ImgBB exception: {e}")
+              return fallback
+
+          # ── Generate supporting angles ────────────────────────────────────
           def get_cluster_angles(topic: str, seed_title: str, seed_url: str, category: str) -> list:
-              prompt = f"""You are an SEO strategist for Za Ndani, a Kenyan news and entertainment site.
+              prompt = f"""You are an SEO strategist for Za Ndani, a Kenyan news and entertainment website.
 
           The site currently ranks well for this seed article:
           TITLE: "{seed_title}"
@@ -235,41 +293,48 @@ jobs:
           CATEGORY: {category}
           TOPIC ENTITY: "{topic}"
 
-          Your job: Generate exactly 3 supporting article ideas that build TOPICAL AUTHORITY around "{topic}".
+          First, search the web for current information about "{topic}" to understand what people are searching for.
+
+          Then generate exactly 3 supporting article ideas that build TOPICAL AUTHORITY around "{topic}".
 
           Rules:
-          - Each article must target a DIFFERENT search intent than the seed (e.g. if seed is "real name", suggest "age and tribe", "songs ranked", "beef history")
-          - Each must be genuinely searchable by Kenyan audiences on Google
-          - Each must link naturally back to the seed article
-          - NO duplicate angles
-          - Kenyan entertainment/news focus only
+          - Each article must target a DIFFERENT search intent than the seed
+          - Each must be genuinely searchable by Kenyan audiences on Google right now
+          - Each must be able to naturally link back to the seed article
+          - NO duplicate angles — cover different aspects (biography, controversy, career, relationships, wealth, etc.)
+          - Kenyan entertainment/news focus
 
           Return ONLY valid JSON, no markdown, no explanation:
           [
             {{
               "angle": "short description of the article angle",
-              "suggested_title": "SEO-optimized title",
+              "suggested_title": "SEO-optimized title front-loaded with the person/topic name",
               "target_query": "the exact Google search query this targets",
               "category": "entertainment|news|gossip|politics|sports|technology"
-            }},
-            ...
+            }}
           ]"""
               raw = gemini_generate(prompt, temperature=0.7)
               raw = re.sub(r"^```(?:json)?\n?", "", raw, flags=re.IGNORECASE)
               raw = re.sub(r"\n?```$", "", raw).strip()
+              # Extract JSON array even if there's surrounding text
+              json_match = re.search(r'\[.*\]', raw, re.DOTALL)
+              if json_match:
+                  raw = json_match.group(0)
               try:
                   angles = json.loads(raw)
                   return angles[:3]
               except:
-                  print(f"Could not parse angles JSON for {topic}: {raw[:200]}")
+                  print(f"  Could not parse angles JSON: {raw[:300]}")
                   return []
 
-          # ── Write a full article for an angle ────────────────────────────
+          # ── Write full article ────────────────────────────────────────────
           def write_article(angle: dict, seed_title: str, seed_url: str) -> dict:
               category = angle.get("category", "entertainment")
               author_name, persona = get_author(category)
+              target_query = angle.get("target_query", "")
+              suggested_title = angle.get("suggested_title", "")
 
-              # Grab a few existing post titles for internal linking
+              # Internal links from existing posts
               internal_links = ""
               if os.path.exists(POSTS_DIR):
                   import random
@@ -286,63 +351,87 @@ jobs:
                       except:
                           continue
                   if lines:
-                      internal_links = "INTERNAL LINKS (use ONE naturally in the body):\n" + "\n".join(lines)
-
-              # Always include the seed article as a mandatory internal link
-              seed_link = f"- Title: {seed_title} | Link: https://zandani.co.ke/article/{seed_url}"
+                      internal_links = "\n".join(lines)
 
               prompt = f"""Current Date: {full_date_str}
-          ARTICLE BRIEF:
-          Title suggestion: "{angle['suggested_title']}"
-          Target search query: "{angle['target_query']}"
+
+          ARTICLE TO WRITE:
+          Title: "{suggested_title}"
+          Target Google search query: "{target_query}"
           Category: {category}
-          Angle: {angle['angle']}
+          Angle: {angle.get('angle', '')}
 
-          MANDATORY INTERNAL LINK (MUST appear naturally in the body once):
-          {seed_link}
+          MANDATORY SEED LINK (link this naturally once inside the body):
+          Title: {seed_title} | Link: https://zandani.co.ke/article/{seed_url}
 
-          OPTIONAL INTERNAL LINKS (use ONE if it fits naturally):
+          OPTIONAL INTERNAL LINKS (use ONE if relevant):
           {internal_links}
 
-          TASK: Write a full news/entertainment article as {persona}
-          Use Google Search to find current, accurate facts about this topic before writing.
+          ════════════════════════════════════════════════
+          CRITICAL RESEARCH INSTRUCTION:
+          Before writing a single word of the article, you MUST:
+          1. Search Google for: "{target_query}"
+          2. Search Google for: "{suggested_title.split()[0] if suggested_title else target_query} latest news Kenya 2026"
+          3. Read the actual search results
+          4. Extract real facts: real names, real dates, real quotes, real figures, real events
+          5. Use those REAL facts as the foundation of the article
+          
+          DO NOT make up facts. DO NOT write generic content.
+          If you find conflicting information, use the most recent credible source.
+          Every specific claim (age, date, salary, relationship status) must come from your search.
+          ════════════════════════════════════════════════
+
+          AUTHOR: Write as {persona}
 
           SMART TITLE ENGINE:
-          Step 1 - Extract PRIMARY KEYWORDS from the target search query (2-4 key words/names).
-          Step 2 - Build a title front-loaded with PRIMARY KEYWORDS, under 60 characters.
-          Step 3 - Build SLUG from PRIMARY KEYWORDS only, lowercase hyphenated, no filler words.
+          - Extract PRIMARY KEYWORDS from the target query (the person/topic name)
+          - Front-load the title with those keywords
+          - Keep under 65 characters
+          - Build SLUG from primary keywords only, lowercase hyphenated
 
-          LANGUAGE RULES:
+          LANGUAGE RULES (STRICT):
           - Professional Kenyan English only. No Sheng, no Swahili.
-          - BANNED: {banned_str}
-          - No long dashes. Single hyphens only.
+          - BANNED PHRASES: {banned_str}
+          - No long dashes or double dashes. Single hyphens only.
           - No bracketed subjective asides.
+          - Write at least 600 words in the body.
+          - Use specific facts, figures, quotes from your research — not vague generalisations.
 
-          OUTPUT FORMAT (strict):
+          STRUCTURE:
+          - Open with an H2 that contains the primary keyword
+          - First paragraph: 40-word direct answer for Google featured snippet
+          - Subheadings every 2-3 paragraphs reusing primary keywords naturally
+          - Include the mandatory internal link naturally mid-article
+          - Close with a forward-looking paragraph about what to watch next
+
+          OUTPUT FORMAT (exact, no deviation):
           TITLE: [title]
           SLUG: [slug]
-          EXCERPT: [under 160 chars, includes primary keywords]
-          TAGS: [comma, separated, tags]
-          IMAGE_KEYWORD: [unsplash search query]
+          EXCERPT: [under 160 chars with primary keywords]
+          TAGS: [comma, separated, relevant, tags]
+          IMAGE_SEARCH_QUERY: [specific search query to find a real photo, e.g. "Toxic Lyrikali Kenyan rapper photo"]
           BODY:
-          [Full article. Start with H2 containing primary keyword. First paragraph answers the query in 40 words for featured snippet. Continue with natural subheadings. DO NOT include title, author, or date in body.]
+          [Full article body only. No title, no author, no date in the body.]
           """
-              raw = gemini_generate(prompt, temperature=0.88)
+
+              raw = gemini_generate(prompt, temperature=0.82)
               raw = re.sub(r"^```(?:markdown|text)?\n?", "", raw, flags=re.IGNORECASE)
               raw = re.sub(r"\n?```$", "", raw).strip()
 
-              parsed = {"TITLE": "", "SLUG": "", "EXCERPT": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": ""}
-              for key in ["TITLE", "SLUG", "EXCERPT", "TAGS", "IMAGE_KEYWORD"]:
+              parsed = {"TITLE": "", "SLUG": "", "EXCERPT": "", "TAGS": "", "IMAGE_SEARCH_QUERY": "", "BODY": ""}
+              for key in ["TITLE", "SLUG", "EXCERPT", "TAGS", "IMAGE_SEARCH_QUERY"]:
                   m = re.search(rf"^{key}:\s*(.*)", raw, re.MULTILINE | re.IGNORECASE)
                   if m:
                       parsed[key] = m.group(1).strip()
+
               body_m = re.search(r"BODY:\s*(.*)", raw, re.DOTALL | re.IGNORECASE)
               if body_m:
                   parsed["BODY"] = body_m.group(1).strip()
 
-              # Clean body
-              for key in ["TITLE", "SLUG", "EXCERPT", "TAGS", "IMAGE_KEYWORD", "BODY"]:
+              # Clean body of any leaked frontmatter
+              for key in ["TITLE", "SLUG", "EXCERPT", "TAGS", "IMAGE_SEARCH_QUERY", "BODY"]:
                   parsed["BODY"] = re.sub(rf"^{key}:.*\n?", "", parsed["BODY"], flags=re.MULTILINE | re.IGNORECASE).strip()
+              parsed["BODY"] = re.sub(r"^(?:\*\*)?(?:By|Author):?.*?\n+", "", parsed["BODY"], flags=re.IGNORECASE).strip()
               parsed["BODY"] = parsed["BODY"].replace("\u2014", "-").replace("\u2013", "-")
 
               if not parsed["SLUG"] and parsed["TITLE"]:
@@ -350,38 +439,7 @@ jobs:
 
               return {**parsed, "author": author_name, "category": category}
 
-          # ── Fetch image ───────────────────────────────────────────────────
-          def get_image(query: str) -> str:
-              access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
-              fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
-              if not access_key:
-                  return fallback
-              try:
-                  r = requests.get(
-                      f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}",
-                      timeout=10
-                  )
-                  if r.status_code == 200:
-                      return r.json()["urls"]["regular"]
-              except:
-                  pass
-              return fallback
-
-          def upload_imgbb(image_url: str) -> str:
-              api_key = os.environ.get("IMGBB_API_KEY")
-              if not api_key or not image_url:
-                  return image_url
-              try:
-                  img_data = requests.get(image_url, timeout=15).content
-                  b64 = base64.b64encode(img_data).decode("utf-8")
-                  res = requests.post("https://api.imgbb.com/1/upload", data={"key": api_key, "image": b64}, timeout=20)
-                  if res.status_code == 200:
-                      return res.json()["data"]["url"]
-              except Exception as e:
-                  print(f"ImgBB error: {e}")
-              return image_url
-
-          # ── Save article to disk ──────────────────────────────────────────
+          # ── Save article ──────────────────────────────────────────────────
           def save_article(parsed: dict, image_url: str) -> str:
               tags_list = [t.strip().replace('"', '') for t in parsed["TAGS"].split(",") if t.strip()]
               tags_str = ", ".join([f'"{t}"' for t in tags_list]) if tags_list else f'"{parsed["category"]}", "kenya"'
@@ -402,19 +460,15 @@ jobs:
           """)
               os.makedirs(POSTS_DIR, exist_ok=True)
               filename = f"{parsed['SLUG']}.md"
-              filepath = os.path.join(POSTS_DIR, filename)
-              with open(filepath, "w", encoding="utf-8") as f:
+              with open(os.path.join(POSTS_DIR, filename), "w", encoding="utf-8") as f:
                   f.write(content)
-              print(f"Saved: {filename}")
+              print(f"  Saved: {filename}")
               return filename
 
           # ════════════════════════════════════════════════════════════════
           # MAIN
           # ════════════════════════════════════════════════════════════════
-
-          # Load memory
           memory = json.load(open(MEMORY_FILE)) if os.path.exists(MEMORY_FILE) else {}
-          # memory = { "topic_hash": ["slug1", "slug2"] }  tracks what's been written per cluster
 
           print("Fetching top pages from GA4...")
           try:
@@ -424,7 +478,7 @@ jobs:
               sys.exit(1)
 
           if not top_pages:
-              print("No qualifying pages found. Try lowering MIN_VIEWS.")
+              print(f"No pages found with {MIN_VIEWS}+ views. Try lowering MIN_VIEWS.")
               sys.exit(0)
 
           articles_written = 0
@@ -432,7 +486,7 @@ jobs:
 
           for page in top_pages:
               if clusters_processed >= MAX_CLUSTERS:
-                  print(f"Reached max clusters ({MAX_CLUSTERS}). Stopping.")
+                  print(f"\nReached max clusters ({MAX_CLUSTERS}). Done.")
                   break
 
               slug = page["slug"]
@@ -440,10 +494,9 @@ jobs:
               topic = slug_to_topic(slug)
               topic_hash = hashlib.md5(topic.encode()).hexdigest()
 
-              # Read seed article metadata
               meta = read_post_meta(slug)
               if not meta:
-                  print(f"No local file for slug '{slug}' — skipping")
+                  print(f"No local file for '{slug}' — skipping")
                   continue
 
               seed_title = meta["title"]
@@ -452,56 +505,65 @@ jobs:
               print(f"\n─── Cluster: '{topic}' ({views} views) ───")
               print(f"    Seed: {seed_title}")
 
-              # Get already-written angles for this cluster
               written_angles = memory.get(topic_hash, [])
 
-              # Generate angles
               try:
                   angles = get_cluster_angles(topic, seed_title, slug, category)
               except Exception as e:
-                  print(f"Could not generate angles for {topic}: {e}")
+                  print(f"  Could not generate angles: {e}")
                   continue
 
-              new_angles_written = 0
+              if not angles:
+                  print("  No angles generated, skipping cluster")
+                  continue
+
+              new_written = 0
               for angle in angles:
                   angle_hash = hashlib.md5(angle.get("target_query", "").encode()).hexdigest()
 
                   if angle_hash in written_angles:
-                      print(f"  Skipping already-written angle: {angle.get('target_query')}")
+                      print(f"  Already written: {angle.get('target_query')}")
                       continue
 
-                  print(f"  Writing: {angle.get('suggested_title', 'Unknown')}")
-                  print(f"  Targets: {angle.get('target_query', 'Unknown')}")
+                  print(f"\n  Angle: {angle.get('suggested_title')}")
+                  print(f"  Query: {angle.get('target_query')}")
 
                   try:
                       parsed = write_article(angle, seed_title, slug)
                   except Exception as e:
-                      print(f"  Article write failed: {e}")
+                      print(f"  Write failed: {e}")
                       continue
 
-                  # Get and re-host image
-                  raw_img = get_image(parsed.get("IMAGE_KEYWORD", topic))
-                  final_img = upload_imgbb(raw_img)
+                  # Find real image using Gemini web search
+                  image_search_query = parsed.get("IMAGE_SEARCH_QUERY") or f"{topic} Kenya photo"
+                  print(f"  Searching for image: {image_search_query}")
+                  real_image_url = find_real_image(topic, parsed.get("TITLE", ""))
 
-                  save_article(parsed, final_img)
+                  # Re-host to ImgBB regardless of source
+                  final_image = upload_imgbb(real_image_url) if real_image_url else upload_imgbb(
+                      f"https://source.unsplash.com/1200x630/?{image_search_query.replace(' ', ',')}"
+                  )
+
+                  save_article(parsed, final_image)
 
                   written_angles.append(angle_hash)
                   memory[topic_hash] = written_angles
                   articles_written += 1
-                  new_angles_written += 1
+                  new_written += 1
 
-                  # Small delay between articles to avoid quota spikes
-                  time.sleep(8)
+                  # Delay between articles
+                  time.sleep(10)
 
-              if new_angles_written > 0:
+              if new_written > 0:
                   clusters_processed += 1
 
-          # Save memory
           os.makedirs(os.path.dirname(MEMORY_FILE), exist_ok=True)
           with open(MEMORY_FILE, "w") as f:
               json.dump(memory, f, indent=2)
 
-          print(f"\nDone. {articles_written} articles written across {clusters_processed} clusters.")
+          print(f"\n════════════════════════════════════")
+          print(f"Done. {articles_written} articles written across {clusters_processed} clusters.")
+          print(f"════════════════════════════════════")
           PYEOF
 
       - name: Git Safety Pull
