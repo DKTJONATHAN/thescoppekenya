@@ -23,9 +23,16 @@ jobs:
           fetch-depth: 0
           ref: ${{ env.DEFAULT_BRANCH }}
           token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
+          python -m pip install --upgrade pip
           pip install requests google-genai beautifulsoup4 playwright python-dateutil
           playwright install chromium
 
@@ -36,76 +43,237 @@ jobs:
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
-          python << 'EOF'
-          import os, json, datetime, requests, re, hashlib, sys
+          python - <<'PYEOF'
+          import os, json, datetime, requests, re, hashlib, sys, base64
           from dateutil import parser as date_parser
           from google import genai
+          from google.genai import types
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
 
-          client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-flash-preview-05-20", "gemini-2.5-flash"]
+
+          api_key = os.environ.get("GEMINI_API_KEY")
+          if not api_key:
+              print("No Gemini API key provided.")
+              sys.exit(1)
+
+          client = genai.Client(api_key=api_key)
+
+          def upload_to_imgbb(image_url):
+              api_key = os.environ.get("IMGBB_API_KEY")
+              if not api_key or not image_url:
+                  return image_url
+              try:
+                  img_data = requests.get(image_url, timeout=15).content
+                  base64_image = base64.b64encode(img_data).decode("utf-8")
+                  res = requests.post("https://api.imgbb.com/1/upload", data={"key": api_key, "image": base64_image}, timeout=20)
+                  if res.status_code == 200:
+                      new_url = res.json()["data"]["url"]
+                      print(f"Re-hosted image to: {new_url}")
+                      return new_url
+                  else:
+                      print(f"ImgBB failed: {res.text}")
+                      return image_url
+              except Exception as e:
+                  print(f"ImgBB exception: {e}")
+                  return image_url
 
           def get_urls():
               urls = []
-              with sync_playwright() as p:
-                  browser = p.chromium.launch(headless=True)
-                  page = browser.new_page()
-                  page.goto('https://www.kenyans.co.ke/news', timeout=60000)
-                  soup = BeautifulSoup(page.content(), 'html.parser')
-                  for a in soup.find_all('a', href=True):
-                      href = a.get('href', '')
-                      if '/news/' in href and len(href) > 20: urls.append(href if href.startswith('http') else 'https://www.kenyans.co.ke' + href)
-                  browser.close()
+              print("Scanning Kenyans.co.ke...")
+              try:
+                  with sync_playwright() as p:
+                      browser = p.chromium.launch(headless=True, args=[
+                          "--no-sandbox",
+                          "--disable-dev-shm-usage"
+                      ])
+                      context = browser.new_context(
+                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+                      )
+                      page = context.new_page()
+                      page.goto('https://www.kenyans.co.ke/news', timeout=60000, wait_until="domcontentloaded")
+                      page.wait_for_timeout(3000)
+                      soup = BeautifulSoup(page.content(), 'html.parser')
+                      for a in soup.find_all('a', href=True):
+                          href = a.get('href', '')
+                          if '/news/' in href and len(href) > 20:
+                              full = href if href.startswith('http') else 'https://www.kenyans.co.ke' + href
+                              urls.append(full)
+                      browser.close()
+              except Exception as e:
+                  print(f"URL scan error: {e}")
               return list(set(urls))
 
           def scrape(url):
-              with sync_playwright() as p:
-                  browser = p.chromium.launch(headless=True)
-                  page = browser.new_page()
-                  try:
-                      page.goto(url, timeout=45000)
+              print(f"Scraping: {url}")
+              try:
+                  with sync_playwright() as p:
+                      browser = p.chromium.launch(headless=True, args=[
+                          "--no-sandbox",
+                          "--disable-dev-shm-usage"
+                      ])
+                      context = browser.new_context(
+                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+                      )
+                      page = context.new_page()
+                      page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["image", "stylesheet", "font", "media"] else route.continue_())
+                      try:
+                          page.goto(url, timeout=45000, wait_until="domcontentloaded")
+                      except Exception as e:
+                          print(f"Goto exception (likely non-fatal): {e}")
+                      page.wait_for_timeout(3000)
                       soup = BeautifulSoup(page.content(), "html.parser")
+                      browser.close()
+
                       meta_pub = soup.find('meta', property='article:published_time')
                       if meta_pub:
-                          pub_time = date_parser.parse(meta_pub.get('content')).replace(tzinfo=datetime.timezone.utc)
-                          if (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600 > 10: return None, None, None
-                      else: return None, None, None
-                      title = soup.find('title').get_text().replace(' - Kenyans.co.ke', '').strip()
-                      text = "\n\n".join([p.get_text() for p in soup.find_all('p') if len(p.get_text()) > 40])
-                      img = soup.find('meta', property='og:image')['content'] if soup.find('meta', property='og:image') else ""
+                          try:
+                              pub_time = date_parser.parse(meta_pub.get('content'))
+                              if pub_time.tzinfo is None:
+                                  pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
+                              age_hours = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
+                              if age_hours > 10:
+                                  print(f"Article is {int(age_hours)}h old. Skipping.")
+                                  return None, None, None
+                              else:
+                                  print(f"Fresh: {int(age_hours)}h ago.")
+                          except Exception as e:
+                              print(f"Date parse error: {e}")
+                              return None, None, None
+                      else:
+                          print("No publish time found. Skipping.")
+                          return None, None, None
+
+                      title_tag = soup.find('title')
+                      title = title_tag.get_text().replace(' - Kenyans.co.ke', '').strip() if title_tag else ""
+
+                      text = "\n\n".join([p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40])
+
+                      img_meta = soup.find('meta', property='og:image')
+                      img = img_meta.get('content', '') if img_meta else ""
+
+                      print(f"Extracted {len(text)} characters.")
                       return text, img, title
-                  except: return None, None, None
-                  finally: browser.close()
+
+              except Exception as e:
+                  print(f"Scrape failed: {e}")
+                  return None, None, None
 
           urls = get_urls()
+          if not urls:
+              print("No URLs found.")
+              sys.exit(0)
+
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
+
           raw_text, target_img, target_title, final_hash = None, None, None, None
           for url in urls:
               u_hash = hashlib.md5(url.encode()).hexdigest()
-              if u_hash in memory: continue
+              if u_hash in memory:
+                  continue
               txt, img, t = scrape(url)
               if txt and len(txt) > 400:
                   raw_text, target_img, target_title, final_hash = txt, img, t, u_hash
                   break
-          if not raw_text: sys.exit(0)
 
-          title_prompt = f"Original Title: {target_title}\nTask: Rephrase for high CTR front-loading keywords. Formulas: 1. Shocking Truth, 2. [Bracket Hook], 3. How/What. Output JSON: {{\"final_title\": \"...\"}}"
-          title_resp = client.models.generate_content(model=MODELS_TO_TRY[0], contents=title_prompt)
-          final_title = json.loads(re.search(r'{.*}', title_resp.text, re.DOTALL).group()).get('final_title', target_title)
+          if not raw_text:
+              print("No valid fresh content found.")
+              sys.exit(0)
 
-          a_resp = client.models.generate_content(model=MODELS_TO_TRY[0], contents=f"Title: {final_title}\nSource: {raw_text[:10000]}\nTask: Write as Celestine Nzioka. Authoritative Kenyan News. No dashes. 10h freshness.")
-          
+          def try_generate(prompt, label=""):
+              for model_id in MODELS_TO_TRY:
+                  try:
+                      resp = client.models.generate_content(model=model_id, contents=prompt)
+                      print(f"SUCCESS with {model_id} for {label}")
+                      return resp.text.strip()
+                  except Exception as e:
+                      print(f"Error with {model_id} for {label}: {e}")
+              return None
+
+          title_prompt = f"""Original Title: {target_title}
+          Task: Rephrase this headline for maximum click-through rate using one of these formulas:
+          1. Shocking Truth - lead with the most alarming fact
+          2. [Bracket Hook] - use brackets to add intrigue
+          3. How/What - use a how or what question format
+          Front-load the most important keywords. Keep under 70 characters.
+          Output ONLY valid JSON with no markdown: {{"final_title": "..."}}"""
+
+          title_text = try_generate(title_prompt, "title")
+          final_title = target_title
+          if title_text:
+              try:
+                  clean = re.sub(r"^```(?:json)?\n?", "", title_text).rstrip("```").strip()
+                  match = re.search(r'\{.*\}', clean, re.DOTALL)
+                  if match:
+                      final_title = json.loads(match.group()).get('final_title', target_title)
+              except Exception as e:
+                  print(f"Title parse error: {e}. Using original.")
+
+          article_prompt = f"""Current Date: {datetime.datetime.utcnow().strftime("%A, %B %d, %Y")}
+          TITLE: {final_title}
+          SOURCE TEXT: {raw_text[:10000]}
+
+          TASK: Write a polished, authoritative Kenyan news article as Celestine Nzioka.
+          - Use clear, professional English. No Sheng or Swahili.
+          - No long dashes or double dashes. Use only single hyphens.
+          - Do NOT include the title, author name, or date in the body.
+          - Start with an H2 heading, then a crisp summary paragraph, then detailed paragraphs with subheadings.
+          - Be factual and direct. No filler phrases or clichés."""
+
+          article_text = try_generate(article_prompt, "article")
+          if not article_text:
+              print("Failed to generate article.")
+              sys.exit(1)
+
+          article_text = re.sub(r"^```(?:markdown|text)?\n?", "", article_text).rstrip("```").strip()
+          article_text = re.sub(r"^(?:\*\*?)?(?:Title|By|Author|Date|Updated):?.*?\n+", "", article_text, flags=re.IGNORECASE).strip()
+
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:70]
-          with open(os.path.join(os.environ.get("POSTS_DIR"), f"{slug}.md"), "w") as f: f.write(f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\nauthor: \"Celestine Nzioka\"\ncategory: \"News\"\ndate: \"{datetime.datetime.utcnow().strftime('%Y-%m-%d')}\"\n---\n\n{a_resp.text}")
+          today_str = datetime.datetime.utcnow().strftime('%Y-%m-%d')
+          final_image = upload_to_imgbb(target_img) if target_img else ""
+
+          posts_dir = os.environ.get("POSTS_DIR", "content/posts")
+          os.makedirs(posts_dir, exist_ok=True)
+
+          frontmatter = f"""---
+          title: "{final_title.replace('"', "'")}"
+          slug: "{slug}"
+          author: "Celestine Nzioka"
+          image: "{final_image}"
+          category: "News"
+          date: "{today_str}"
+          ---
+
+          """
+
+          filepath = os.path.join(posts_dir, f"{slug}.md")
+          with open(filepath, "w", encoding="utf-8") as f:
+              f.write(frontmatter + article_text)
+
           memory.append(final_hash)
-          with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
-          EOF
+          os.makedirs(os.path.dirname(memory_path), exist_ok=True)
+          with open(memory_path, 'w') as f:
+              json.dump(memory[-200:], f)
+
+          print(f"Article saved: {slug}.md")
+          PYEOF
+
+      - name: Git Safety Pull
+        run: |
+          git config --global user.name "Celestine Nzioka"
+          git config --global user.email "bot@zandani.co.ke"
+          git add .
+          git stash -u
+          git fetch origin main
+          git pull origin main --rebase
+          git stash pop || echo "Nothing to pop"
 
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Celestine Nzioka <bot@zandani.co.ke>"
-          commit_message: "content: News update by Celestine Nzioka 📰"
+          commit_message: "content: News update by Celestine Nzioka"
+          branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_celestine.json'
