@@ -187,7 +187,7 @@ jobs:
                               pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
                           now = datetime.datetime.now(datetime.timezone.utc)
                           age_hours = (now - pub_time).total_seconds() / 3600
-                          limit = 48 if url_date_match else 24
+                          limit = 12
                           if age_hours > limit:
                               print(f"Article is {int(age_hours)} hours old. Skipping.")
                               return None, None, None
