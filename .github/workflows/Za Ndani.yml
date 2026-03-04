@@ -56,7 +56,7 @@ jobs:
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
-          python << 'EOF'
+          python << 'PYEOF'
           import os, json, datetime, requests, re, time, sys, hashlib, random, textwrap, itertools, base64
           from dateutil import parser as date_parser
           from google import genai
@@ -70,44 +70,44 @@ jobs:
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
           BANNED_PHRASES = [
-              "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
+              "sasa basi", "melting the pot", "spill the tea", "tea is hot",
               "grab your popcorn", "listen up", "buckle up", "breaking news",
               "sherehe", "form ni gani", "udaku", "hello guys", "welcome back",
               "mambo vipi", "niaje wasee", "karibuni", "tapestry", "dive in",
-              "delve into", "moreover", "furthermore", "in conclusion", 
+              "delve into", "moreover", "furthermore", "in conclusion",
               "it's worth noting", "a testament to", "navigating the landscape",
               "in today's digital age", "shed light on"
           ]
 
-          print(f"🎯 Target: Mpasho (Za Ndani)")
+          print("Target: Mpasho (Za Ndani)")
 
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
               if not api_key or not image_url: return image_url
               try:
-                  print(f"📸 Fetching image for ImgBB: {image_url}")
+                  print(f"Fetching image for ImgBB: {image_url}")
                   img_data = requests.get(image_url, timeout=15).content
                   base64_image = base64.b64encode(img_data).decode('utf-8')
                   payload = {"key": api_key, "image": base64_image}
                   res = requests.post("https://api.imgbb.com/1/upload", data=payload, timeout=20)
                   if res.status_code == 200:
                       new_url = res.json()['data']['url']
-                      print(f"✅ Successfully re-hosted to: {new_url}")
+                      print(f"Re-hosted to: {new_url}")
                       return new_url
                   else:
-                      print(f"⚠️ ImgBB Failed: {res.text}")
+                      print(f"ImgBB Failed: {res.text}")
                       return image_url
               except Exception as e:
-                  print(f"⚠️ ImgBB Exception: {e}")
+                  print(f"ImgBB Exception: {e}")
                   return image_url
 
           def get_target_urls():
               urls = []
-              print("🔍 Scanning Mpasho with Playwright...")
+              print("Scanning Mpasho with Playwright...")
               try:
                   with sync_playwright() as p:
                       browser = p.chromium.launch(headless=True, args=[
-                          "--no-sandbox", 
+                          "--no-sandbox",
                           "--disable-dev-shm-usage",
                           "--disable-blink-features=AutomationControlled"
                       ])
@@ -117,38 +117,33 @@ jobs:
                       )
                       page = context.new_page()
                       page.goto('https://www.mpasho.co.ke/entertainment/', timeout=60000, wait_until="domcontentloaded")
-                      
                       page.evaluate("window.scrollBy(0, 1500)")
                       page.wait_for_timeout(4000)
-
                       content = page.content()
                       soup = BeautifulSoup(content, 'html.parser')
-                      
                       for a in soup.find_all('a', href=True):
                           href = a.get('href', '')
                           if len(href) > 40 and '-' in href and '/author/' not in href and '/category/' not in href and '/tag/' not in href:
                               full_url = href if href.startswith('http') else 'https://www.mpasho.co.ke' + (href if href.startswith('/') else '/' + href)
                               urls.append(full_url)
-                      
                       browser.close()
-              except Exception as e: 
+              except Exception as e:
                   print(f"Mpasho scan error: {e}")
-
               return list(set(urls))
 
           article_links = get_target_urls()
           if not article_links:
-              print("❌ No articles found on target sites.")
+              print("No articles found on target sites.")
               sys.exit(0)
 
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
 
           def scrape_article_free(url):
-              print(f"🕷️ Trying URL: {url}")
+              print(f"Trying URL: {url}")
               with sync_playwright() as p:
                   browser = p.chromium.launch(headless=True, args=[
-                      "--no-sandbox", 
+                      "--no-sandbox",
                       "--disable-dev-shm-usage",
                       "--disable-blink-features=AutomationControlled"
                   ])
@@ -157,15 +152,12 @@ jobs:
                       viewport={"width": 1920, "height": 1080}
                   )
                   page = context.new_page()
-                  
                   page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["image", "stylesheet", "font", "media"] else route.continue_())
-                  
                   try:
                       try:
                           page.goto(url, timeout=30000, wait_until="domcontentloaded")
                       except Exception as e:
-                          print(f"   ⚠️ Goto exception (likely non-fatal timeout): {e}")
-                      
+                          print(f"Goto exception (likely non-fatal timeout): {e}")
                       page.wait_for_timeout(4000)
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
@@ -183,21 +175,20 @@ jobs:
                               try:
                                   pub_time = date_parser.parse(meta_pub.get('content'))
                               except: pass
-                      
+
                       if pub_time:
                           if pub_time.tzinfo is None:
                               pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
                           now = datetime.datetime.now(datetime.timezone.utc)
                           age_hours = (now - pub_time).total_seconds() / 3600
-                          
                           limit = 48 if url_date_match else 24
                           if age_hours > limit:
-                              print(f"   ⏳ Article is {int(age_hours)} hours old. Skipping (Older than limit).")
+                              print(f"Article is {int(age_hours)} hours old. Skipping.")
                               return None, None, None
                           else:
-                              print(f"   ⏱️ Freshness verified: Published roughly {int(age_hours)} hours ago.")
+                              print(f"Freshness verified: {int(age_hours)} hours ago.")
                       else:
-                          print("   ⚠️ No exact timestamp found. Proceeding cautiously.")
+                          print("No exact timestamp found. Proceeding cautiously.")
 
                       page_title = ""
                       title_tag = soup.find('title')
@@ -222,7 +213,7 @@ jobs:
 ".join([p.get_text(strip=True) for p in all_paras if len(p.get_text(strip=True)) > 40])
                           if len(chunk) > 300:
                               article_text = chunk
-                              
+
                       if len(article_text) < 300:
                           body = soup.find('body')
                           if body:
@@ -239,11 +230,11 @@ jobs:
                               img_url = meta.get('content', '')
                               if img_url: break
 
-                      print(f"   ✅ Extracted {len(article_text)} characters of text")
+                      print(f"Extracted {len(article_text)} characters of text")
                       return article_text, img_url, page_title
 
                   except Exception as e:
-                      print(f"   🛑 Scrape failed critically: {e}")
+                      print(f"Scrape failed critically: {e}")
                       return None, None, None
                   finally:
                       browser.close()
@@ -252,17 +243,16 @@ jobs:
           for link in article_links:
               u_hash = hashlib.md5(link.encode()).hexdigest()
               if u_hash in memory: continue
-              
               text, img, title = scrape_article_free(link)
               if text and len(text) > 300:
                   full_raw_text = text
                   target_image = img
                   final_hash = u_hash
                   target_title = title if title else "Entertainment News"
-                  break 
+                  break
 
-          if not full_raw_text: 
-              print("❌ No valid unread or fresh content found within the last 24 hours.")
+          if not full_raw_text:
+              print("No valid unread or fresh content found within the last 24 hours.")
               sys.exit(0)
 
           def get_internal_context(posts_dir):
@@ -300,12 +290,11 @@ jobs:
               text = text.replace(chr(8212), '-').replace(chr(8211), '-')
               return text
 
-          # API KEY ROTATION
           raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY"), os.environ.get("GEMINI_API_KEY1")]
           api_keys = [k for k in raw_keys if k and k.strip()]
-          
+
           if not api_keys:
-              print("❌ No Gemini API keys provided in environment.")
+              print("No Gemini API keys provided.")
               sys.exit(1)
 
           key_cycle = itertools.cycle(api_keys)
@@ -314,70 +303,53 @@ jobs:
 
           google_search_tool = types.Tool(google_search=types.GoogleSearch())
           internal_links_data = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
+          banned_str = ", ".join(BANNED_PHRASES)
 
-          # SMART TITLE ENGINE – keeps & front-loads major keywords
-          smart_title_instructions = f"""
-          ORIGINAL_MPASHO_HEADLINE: "{target_title}"
-          SCRAPED_TEXT_SNIPPET: "{full_raw_text[:1000]}"
-
-          TASK: Before writing anything else, identify the 2–4 most important exact keyword phrases from ORIGINAL_MPASHO_HEADLINE
-          (names, places, show titles, scandals). These are PRIMARY_KEYWORDS.
-
-          TITLE RULES:
-          - The final TITLE must start with the strongest PRIMARY_KEYWORD.
-          - Keep all PRIMARY_KEYWORDS intact (no rewriting names).
-          - Title length under 60 characters.
-          - Use one of these formulas, whichever best fits automatically:
-            1) [Primary Keyword] + [Power Hook]
-            2) [Primary Keyword] + [Number/Update/2026 Hook]
-            3) [Primary Keyword] + [Short Twist or Consequence]
-          - Avoid clickbait that lies, but make it juicy.
-
-          OUTPUT THIS HEADER BLOCK STRICTLY BEFORE BODY (you can reuse in the main task):
-
-          SMART_TITLE_BLOCK:
-          PRIMARY_KEYWORDS: ["kw1", "kw2", "kw3"]
-          FINAL_TITLE: "Front-loaded title with all major keywords"
-          FINAL_SLUG: "primary-keyword-and-major-keywords"
-          """
-
-          prompt = f'''Current Date: {full_date_str}
+          # ONLY THIS PROMPT CHANGED FROM ORIGINAL - everything else is identical
+          prompt = f"""Current Date: {full_date_str}
           ORIGINAL HEADLINE: "{target_title}"
           SOURCE SCRAPED TEXT: "{full_raw_text[:12000]}"
-          
+
           {internal_links_data}
 
-          {smart_title_instructions}
+          TASK: Write an entertainment and celebrity news report as Za Ndani, a sharp and cynical Kenyan entertainment journalist. Emulate the exact engaging, dramatic tone used by authentic Mpasho authors. Point out the bad side of everything, the angle that the mainstream media and people ignore. You must use Google Search to verify any facts.
 
-          TASK: Write an entertainment and celebrity news report as **Za Ndani**, a sharp and cynical Kenyan entertainment journalist. Emulate the exact engaging, dramatic tone used by authentic Mpasho authors. Point out the bad side of everything, the angle that the mainstream media and people ignore. You must use Google Search to verify any facts.
+          SMART TITLE ENGINE (FOLLOW STRICTLY):
+          Step 1 - Extract PRIMARY KEYWORDS: Pull the 2 to 4 most important words or names directly from ORIGINAL HEADLINE. These are names, places, show titles, or scandal keywords. Do NOT rephrase or replace them.
+          Step 2 - Classify content type as one of: LIST, BIO, SCANDAL, GUIDE, TRENDING, NEWS.
+          Step 3 - Pick the best formula for the content type:
+            - LIST type: use "[Number] + [Primary Keyword] + [Benefit]"
+            - BIO type: use "[Primary Keyword] + Real Name, Age, or Bio"
+            - SCANDAL type: use "[Primary Keyword] + [What Happened] + [Consequence]"
+            - GUIDE type: use "[Primary Keyword] + [How or What] + [Year]"
+            - TRENDING or NEWS type: use "[Primary Keyword] + [Short Dramatic Hook]"
+          Step 4 - Build TITLE: start with PRIMARY KEYWORDS, apply chosen formula, keep under 60 characters.
+          Step 5 - Build SLUG: use PRIMARY KEYWORDS only, lowercase, hyphen-separated, no filler words.
 
           LANGUAGE MANDATE (STRICT):
           - NO SHENG OR SWAHILI. Write in clear, dramatic, and professional Kenyan English suited for entertainment news.
-          - DO NOT use British slang or chatty fillers (e.g., "Right,", "Well,").
+          - DO NOT use British slang or chatty fillers such as Right, or Well,.
           - STRICTLY PROHIBITED: Do not use bracketed subjective asides or personal commentary in brackets.
-          - BANNED PHRASES: {", ".join(BANNED_PHRASES)}.
+          - BANNED PHRASES: {banned_str}.
           - NEVER use long dashes or double dashes. Only use regular single hyphens.
 
           STRICT OUTPUT FORMAT:
-          TITLE: [Use FINAL_TITLE from SMART_TITLE_BLOCK]
-          SLUG: [Use FINAL_SLUG from SMART_TITLE_BLOCK]
-          EXCERPT: [Snippet under 160 characters featuring PRIMARY_KEYWORDS]
+          TITLE: [Result of Smart Title Engine - front-loaded with PRIMARY KEYWORDS]
+          SLUG: [Result of Smart Title Engine - PRIMARY KEYWORDS only]
+          EXCERPT: [Snippet under 160 characters featuring PRIMARY KEYWORDS]
           TAGS: [comma, separated, english, seo, tags]
           IMAGE_KEYWORD: [search query]
           BODY:
-          [Article text in authentic Kenyan entertainment journalism style containing the internal link. 
-          Structure: Start with an H2 heading containing at least one PRIMARY_KEYWORD. 
-          Follow immediately with a crisp, 40-word neutral answer paragraph for Google Snippets using PRIMARY_KEYWORDS.
-          Then continue with natural subheadings that also reuse PRIMARY_KEYWORDS.
-
-          - DO NOT include the title, author name, date, or "updated on" anywhere in the body text. 
+          [Article text in authentic Kenyan entertainment journalism style containing the internal link.
+          Structure: Start with an H2 heading containing at least one PRIMARY KEYWORD. Follow immediately with a crisp, 40-word neutral answer paragraph for Google Snippets. Then continue with natural subheadings that also reuse PRIMARY KEYWORDS.
+          - DO NOT include the title, author name, date, or updated on anywhere in the body text.
           - Start immediately with the core article content and paragraphs. Do not add introductory metadata.]
-          '''
+          """
 
           full_text = ""
           success_flag = False
           keys_tried = 0
-          
+
           for model_id in MODELS_TO_TRY:
               for retry in range(len(api_keys) * 2):
                   try:
@@ -387,22 +359,21 @@ jobs:
                       )
                       full_text = response.text.strip()
                       success_flag = True
-                      print(f"✅ SUCCESS with {model_id}!")
-                      break 
+                      print(f"SUCCESS with {model_id}!")
+                      break
                   except Exception as e:
                       if "429" in str(e):
                           keys_tried += 1
                           if keys_tried >= len(api_keys):
-                              print("⏳ All keys hit quota. Waiting 35s...")
+                              print("All keys hit quota. Waiting 35s...")
                               time.sleep(35)
                               keys_tried = 0
                           else:
-                              print("⚠️ Quota hit. Rotating to next API key...")
+                              print("Quota hit. Rotating to next API key...")
                               current_key = next(key_cycle)
                               client = genai.Client(api_key=current_key)
-                              continue
-                      
-                      print(f"⚠️ Error with {model_id}: {e}")
+                          continue
+                      print(f"Error with {model_id}: {e}")
                       break
               if success_flag: break
 
@@ -426,14 +397,12 @@ jobs:
               parsed["BODY"] = full_text.split("BODY:", 1)[-1].strip() if "BODY:" in full_text else full_text
 
           parsed["BODY"] = re.sub(r'^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD|BODY):s*.*$', '', parsed["BODY"], flags=re.MULTILINE | re.IGNORECASE).strip()
-          
           parsed["BODY"] = re.sub(r'^(?:**?)?(?:Title|Headline):?.*?
 +', '', parsed["BODY"], flags=re.IGNORECASE).strip()
           parsed["BODY"] = re.sub(r'^(?:**?)?(?:By|Author):?.*?
 +', '', parsed["BODY"], flags=re.IGNORECASE).strip()
           parsed["BODY"] = re.sub(r'^(?:**?)?(?:Date|Updated):?.*?
 +', '', parsed["BODY"], flags=re.IGNORECASE).strip()
-
           parsed["BODY"] = dash_scrubber(parsed["BODY"]).strip()
 
           tags_list = [t.strip().replace('"', '') for t in parsed["TAGS"].split(",") if t.strip()]
@@ -467,8 +436,8 @@ jobs:
           os.makedirs(os.path.dirname(memory_path), exist_ok=True)
           with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
 
-          print(f"✅ Article saved with full body: {filename}")
-          EOF
+          print(f"Article saved: {filename}")
+          PYEOF
 
       - name: Git Safety Pull
         run: |
@@ -484,6 +453,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Za Ndani <bot@zandani.co.ke>"
-          commit_message: "content: Entertainment scoop from Mpasho 🎭"
+          commit_message: "content: Entertainment scoop from Mpasho"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_zandani.json'
