@@ -47,7 +47,6 @@ jobs:
           playwright install chromium
 
       - name: Generate article with Gemini
-        shell: python
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -57,6 +56,7 @@ jobs:
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
+          python - <<'PYEOF'
           import os, json, datetime, requests, re, time, sys, hashlib, random, textwrap, itertools, base64
           from dateutil import parser as date_parser
           from google import genai
@@ -67,7 +67,7 @@ jobs:
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
 
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-flash-preview-05-20", "gemini-2.5-flash"]
 
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot",
@@ -83,7 +83,8 @@ jobs:
 
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
-              if not api_key or not image_url: return image_url
+              if not api_key or not image_url:
+                  return image_url
               try:
                   print(f"Fetching image for ImgBB: {image_url}")
                   img_data = requests.get(image_url, timeout=15).content
@@ -123,7 +124,10 @@ jobs:
                       soup = BeautifulSoup(content, "html.parser")
                       for a in soup.find_all("a", href=True):
                           href = a.get("href", "")
-                          if len(href) > 40 and "-" in href and "/author/" not in href and "/category/" not in href and "/tag/" not in href:
+                          if (len(href) > 40 and "-" in href
+                                  and "/author/" not in href
+                                  and "/category/" not in href
+                                  and "/tag/" not in href):
                               full_url = href if href.startswith("http") else "https://www.mpasho.co.ke" + (href if href.startswith("/") else "/" + href)
                               urls.append(full_url)
                       browser.close()
@@ -167,14 +171,16 @@ jobs:
                       if url_date_match:
                           try:
                               pub_time = datetime.datetime.strptime(url_date_match.group(1), "%Y-%m-%d").replace(tzinfo=datetime.timezone.utc)
-                          except: pass
+                          except:
+                              pass
 
                       if not pub_time:
                           meta_pub = soup.find("meta", property="article:published_time")
                           if meta_pub:
                               try:
                                   pub_time = date_parser.parse(meta_pub.get("content"))
-                              except: pass
+                              except:
+                                  pass
 
                       if pub_time:
                           if pub_time.tzinfo is None:
@@ -220,7 +226,8 @@ jobs:
                       for meta in soup.find_all("meta"):
                           if meta.get("property") in ["og:image", "twitter:image"]:
                               img_url = meta.get("content", "")
-                              if img_url: break
+                              if img_url:
+                                  break
 
                       print(f"Extracted {len(article_text)} characters of text")
                       return article_text, img_url, page_title
@@ -234,7 +241,8 @@ jobs:
           full_raw_text, final_hash, target_title, target_image = None, None, None, None
           for link in article_links:
               u_hash = hashlib.md5(link.encode()).hexdigest()
-              if u_hash in memory: continue
+              if u_hash in memory:
+                  continue
               text, img, title = scrape_article_free(link)
               if text and len(text) > 300:
                   full_raw_text = text
@@ -248,9 +256,11 @@ jobs:
               sys.exit(0)
 
           def get_internal_context(posts_dir):
-              if not os.path.exists(posts_dir): return ""
+              if not os.path.exists(posts_dir):
+                  return ""
               files = [f for f in os.listdir(posts_dir) if f.endswith(".md")]
-              if not files: return ""
+              if not files:
+                  return ""
               sample = random.sample(files, min(len(files), 3))
               context = "PAST STORIES (PICK ONE AND LINK IT NATURALLY IN THE TEXT USING MARKDOWN):\n"
               for f in sample:
@@ -260,27 +270,36 @@ jobs:
                           t_match = re.search(r'title:\s*"(.*?)"', txt)
                           t = t_match.group(1) if t_match else f
                           context += f"- Title: {t} | Link: https://zandani.co.ke/article/{f.replace('.md', '')}\n"
-                  except: continue
+                  except:
+                      continue
               return context
 
           def get_real_image(query):
               access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
               fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
-              if not access_key: return fallback
+              if not access_key:
+                  return fallback
               url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}"
               try:
                   resp = requests.get(url, timeout=10)
-                  if resp.status_code == 200: return resp.json()["urls"]["regular"]
-              except: pass
+                  if resp.status_code == 200:
+                      return resp.json()["urls"]["regular"]
+              except:
+                  pass
               return fallback
 
           def dash_scrubber(text):
-              if not text: return ""
+              if not text:
+                  return ""
               text = text.replace("\u2014", "-").replace("\u2013", "-")
               text = text.replace(chr(8212), "-").replace(chr(8211), "-")
               return text
 
-          raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY"), os.environ.get("GEMINI_API_KEY1")]
+          raw_keys = [
+              os.environ.get("GEMINI_WRITE_KEY"),
+              os.environ.get("GEMINI_API_KEY"),
+              os.environ.get("GEMINI_API_KEY1")
+          ]
           api_keys = [k for k in raw_keys if k and k.strip()]
 
           if not api_keys:
@@ -343,8 +362,12 @@ jobs:
               for retry in range(len(api_keys) * 2):
                   try:
                       response = client.models.generate_content(
-                          model=model_id, contents=prompt,
-                          config=types.GenerateContentConfig(temperature=0.9, tools=[google_search_tool])
+                          model=model_id,
+                          contents=prompt,
+                          config=types.GenerateContentConfig(
+                              temperature=0.9,
+                              tools=[google_search_tool]
+                          )
                       )
                       full_text = response.text.strip()
                       success_flag = True
@@ -364,9 +387,11 @@ jobs:
                           continue
                       print(f"Error with {model_id}: {e}")
                       break
-              if success_flag: break
+              if success_flag:
+                  break
 
-          if not success_flag: sys.exit(1)
+          if not success_flag:
+              sys.exit(1)
 
           full_text = re.sub(r"^```(?:markdown|text|html)?\n", "", full_text, flags=re.IGNORECASE)
           full_text = re.sub(r"\n```$", "", full_text).strip()
@@ -418,9 +443,11 @@ jobs:
 
           memory.append(final_hash)
           os.makedirs(os.path.dirname(memory_path), exist_ok=True)
-          with open(memory_path, "w") as f: json.dump(memory[-200:], f)
+          with open(memory_path, "w") as f:
+              json.dump(memory[-200:], f)
 
           print(f"Article saved: {filename}")
+          PYEOF
 
       - name: Git Safety Pull
         run: |
