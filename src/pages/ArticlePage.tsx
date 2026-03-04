@@ -2,7 +2,10 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { ArticleCard } from "@/components/articles/ArticleCard";
 import { getPostBySlug, getLatestPosts } from "@/lib/markdown";
-import { Clock, Calendar, Share2, Facebook, Linkedin, ChevronLeft, ArrowUp, Eye, MessageCircle } from "lucide-react";
+import {
+  Clock, Calendar, Share2, Facebook, Linkedin,
+  ChevronLeft, ArrowUp, Eye, MessageCircle, Flame
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useEffect, useState, useMemo, useCallback, useRef } from "react";
@@ -11,6 +14,41 @@ import { NewsletterForm } from "@/components/NewsletterForm";
 import { Helmet } from "react-helmet-async";
 import AdUnit from "@/components/AdUnit";
 
+// ─── CATEGORY COLOR MAP ──────────────────────────────────────────────────────
+function catColor(cat: string): string {
+  const c = cat?.toLowerCase() || "";
+  if (c.includes("entertainment")) return "bg-rose-600";
+  if (c.includes("politics")) return "bg-blue-700";
+  if (c.includes("news")) return "bg-amber-600";
+  if (c.includes("gossip")) return "bg-purple-600";
+  if (c.includes("sports")) return "bg-green-700";
+  if (c.includes("tech")) return "bg-cyan-700";
+  return "bg-zinc-600";
+}
+
+// ─── IMAGE PROXY ─────────────────────────────────────────────────────────────
+function proxyImg(url: string, w = 1200): string {
+  if (!url) return "/images/placeholder.jpg";
+  if (url.endsWith(".svg") || url.startsWith("/")) return url;
+  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${w}&output=webp&q=85&we`;
+}
+
+// ─── AUTHOR BIOS ─────────────────────────────────────────────────────────────
+const AUTHOR_BIOS: Record<string, string> = {
+  "za ndani": "Sharp, cynical, and always first with the scoop. Za Ndani exposes what the mainstream won't touch — from celebrity scandals to industry secrets.",
+  "mutheu ann": "Plugged into the global entertainment circuit. If a celebrity breathes wrong, Mutheu Ann notices — and she will write about it.",
+  "celestine nzioka": "Authoritative and unflinching. Celestine cuts through political spin and media noise to give you the story behind the story.",
+};
+
+const AUTHOR_COLORS: Record<string, string> = {
+  "za ndani": "bg-rose-600",
+  "mutheu ann": "bg-purple-600",
+  "celestine nzioka": "bg-blue-700",
+};
+
+// ─── AD TYPES CYCLE ──────────────────────────────────────────────────────────
+const adTypes: Array<'inarticle' | 'effectivegate' | 'horizontal'> = ['inarticle', 'effectivegate', 'horizontal'];
+
 export default function ArticlePage() {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
@@ -18,88 +56,109 @@ export default function ArticlePage() {
   const post = useMemo(() => getPostBySlug(slug || ""), [slug]);
   const latestPosts = useMemo(() => getLatestPosts(6), []);
   const relatedPosts = useMemo(
-    () => latestPosts.filter((p) => p.slug !== slug).slice(0, 4),
+    () => latestPosts.filter((p) => p.slug !== slug).slice(0, 3),
     [latestPosts, slug]
   );
 
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
-  const [progress, setProgress] = useState(0);
+  const [copied, setCopied] = useState(false);
   const progressRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
+  // ── Views ──
   useEffect(() => {
-    const fetchViews = async () => {
-      try {
-        const res = await fetch('/api/get-views');
-        if (!res.ok) throw new Error('API Error');
-        const data = await res.json();
-        setViewCounts(data);
-      } catch (e) {
-        console.error("View fetch failed");
-      }
-    };
-    fetchViews();
+    fetch('/api/get-views')
+      .then(r => r.ok ? r.json() : {})
+      .then(setViewCounts)
+      .catch(() => {});
   }, []);
 
   const currentPostViews = useMemo(() => {
-    if (!post) return 0;
-    const cleanSlug = post.slug.replace(/^\//, '').replace(/\.md$/, '');
-    const exactPath = `/article/${cleanSlug}`;
-    const pathWithSlash = `/article/${cleanSlug}/`;
-    const fallbackPath = `/posts/${cleanSlug}`; 
-
-    const gaViews = viewCounts[exactPath] || 
-                    viewCounts[pathWithSlash] || 
-                    viewCounts[fallbackPath] || 
-                    0;
-
-    return gaViews > 0 ? gaViews : 47;
+    if (!post) return 47;
+    const clean = post.slug.replace(/^\//, '').replace(/\.md$/, '');
+    return viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 47;
   }, [post, viewCounts]);
 
-  const relatedPostsWithViews = useMemo(() => {
-    return relatedPosts.map(p => {
-      const cleanSlug = p.slug.replace(/^\//, '').replace(/\.md$/, '');
-      const exactPath = `/article/${cleanSlug}`;
-      const pathWithSlash = `/article/${cleanSlug}/`;
-      const fallbackPath = `/posts/${cleanSlug}`; 
+  const relatedWithViews = useMemo(() =>
+    relatedPosts.map(p => {
+      const clean = p.slug.replace(/^\//, '').replace(/\.md$/, '');
+      const v = viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 47;
+      return { ...p, views: v };
+    }),
+    [relatedPosts, viewCounts]
+  );
 
-      const gaViews = viewCounts[exactPath] || 
-                      viewCounts[pathWithSlash] || 
-                      viewCounts[fallbackPath] || 
-                      0;
+  // ── Preload hero image ──
+  useEffect(() => {
+    if (!post?.image) return;
+    const link = document.createElement("link");
+    link.rel = "preload";
+    link.as = "image";
+    link.href = proxyImg(post.image, 1200);
+    link.setAttribute("fetchpriority", "high");
+    document.head.appendChild(link);
+    return () => { document.head.removeChild(link); };
+  }, [post?.image]);
 
-      return {
-        ...p,
-        views: gaViews > 0 ? gaViews : 47
-      };
+  // ── Reset scroll on slug change ──
+  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, [slug]);
+
+  // ── Scroll events: progress bar + scroll-to-top ──
+  useEffect(() => {
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        setShowScrollTop(window.scrollY > 500);
+        const pct = Math.min(
+          (window.scrollY / Math.max(document.documentElement.scrollHeight - window.innerHeight, 1)) * 100,
+          100
+        );
+        if (progressRef.current) progressRef.current.style.width = `${pct}%`;
+        ticking = false;
+      });
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const scrollToTop = useCallback(() => window.scrollTo({ top: 0, behavior: "smooth" }), []);
+
+  const shareUrl = useMemo(() =>
+    typeof window !== "undefined" ? window.location.href : `https://zandani.co.ke/article/${post?.slug}`,
+    [post?.slug]
+  );
+
+  const handleCopy = useCallback(() => {
+    navigator.clipboard.writeText(shareUrl).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
     });
-  }, [relatedPosts, viewCounts]);
+  }, [shareUrl]);
 
-  // Single in-article ad placed after 4th paragraph (SSR-safe: no document.createElement)
-  const contentWithOneAd = useMemo(() => {
+  const handleWhatsApp = useCallback(() => {
+    window.open(`https://wa.me/?text=${encodeURIComponent(post?.title + " " + shareUrl)}`, "_blank");
+  }, [post?.title, shareUrl]);
+
+  // ── Content with ads injected every 3 paragraphs ──
+  const contentWithAds = useMemo(() => {
     if (!post?.htmlContent) return [];
-
-    // Split HTML into top-level blocks using regex (SSR-compatible)
-    const blockRegex = /<(p|h[1-6]|div|ul|ol|blockquote|figure|table|pre|hr|section|aside)[\s>]/gi;
-    const blocks: string[] = [];
-    let lastIndex = 0;
     const html = post.htmlContent;
 
-    // Find all top-level tag boundaries
+    // Split into top-level blocks
+    const blocks: string[] = [];
+    let lastIndex = 0;
+    const tagRegex = /<(p|h[1-6]|ul|ol|blockquote|figure|table|pre|hr)[\s>]/gi;
     const tagStarts: number[] = [];
-    let match: RegExpExecArray | null;
-    const openTagRegex = /<(?:p|h[1-6]|div|ul|ol|blockquote|figure|table|pre|hr|section|aside)[\s>]/gi;
-    while ((match = openTagRegex.exec(html)) !== null) {
-      // Only count tags at the "root" level (not deeply nested)
-      const before = html.slice(0, match.index);
-      const openTags = (before.match(/<(?:div|section|aside|blockquote)\b/gi) || []).length;
-      const closeTags = (before.match(/<\/(?:div|section|aside|blockquote)>/gi) || []).length;
-      if (openTags - closeTags <= 0) {
-        tagStarts.push(match.index);
-      }
+    let m: RegExpExecArray | null;
+    while ((m = tagRegex.exec(html)) !== null) {
+      const before = html.slice(0, m.index);
+      const opens = (before.match(/<(?:div|section|aside|blockquote)\b/gi) || []).length;
+      const closes = (before.match(/<\/(?:div|section|aside|blockquote)>/gi) || []).length;
+      if (opens - closes <= 0) tagStarts.push(m.index);
     }
-
     for (let i = 0; i < tagStarts.length; i++) {
       if (tagStarts[i] > lastIndex) {
         const gap = html.slice(lastIndex, tagStarts[i]).trim();
@@ -110,186 +169,89 @@ export default function ArticlePage() {
       lastIndex = end;
     }
     if (lastIndex < html.length) {
-      const remainder = html.slice(lastIndex).trim();
-      if (remainder) blocks.push(remainder);
+      const rem = html.slice(lastIndex).trim();
+      if (rem) blocks.push(rem);
     }
 
-    const renderedBlocks: React.ReactNode[] = [];
-    let paragraphCount = 0;
-    const adTypes: Array<'inarticle' | 'effectivegate' | 'horizontal'> = ['inarticle', 'effectivegate', 'horizontal'];
-    let adCounter = 0;
-
-    blocks.forEach((block, index) => {
-      renderedBlocks.push(
-        <div
-          key={`block-${index}`}
-          dangerouslySetInnerHTML={{ __html: block }}
-        />
-      );
-
+    const nodes: React.ReactNode[] = [];
+    let paraCount = 0;
+    let adCount = 0;
+    blocks.forEach((block, i) => {
+      nodes.push(<div key={`b-${i}`} dangerouslySetInnerHTML={{ __html: block }} />);
       if (/^<p[\s>]/i.test(block)) {
-        paragraphCount++;
-        if (paragraphCount % 2 === 0) {
-          renderedBlocks.push(
-            <div key={`para-ad-${adCounter}`} className="my-6 flex justify-center">
-              <AdUnit type={adTypes[adCounter % adTypes.length]} />
+        paraCount++;
+        if (paraCount % 3 === 0) {
+          nodes.push(
+            <div key={`ad-${adCount}`} className="my-8 flex justify-center border-y border-divider py-4 bg-muted/10">
+              <AdUnit type={adTypes[adCount % adTypes.length]} />
             </div>
           );
-          adCounter++;
+          adCount++;
         }
       }
     });
-
-    return renderedBlocks;
+    return nodes;
   }, [post?.htmlContent]);
 
-  useEffect(() => {
-    if (post?.image) {
-      const link = document.createElement("link");
-      link.rel = "preload";
-      link.as = "image";
-      link.href = post.image;
-      link.setAttribute("fetchpriority", "high");
-      document.head.appendChild(link);
-      return () => {
-        document.head.removeChild(link);
-      };
-    }
-  }, [post?.image]);
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" });
-  }, [slug]);
-
-  useEffect(() => {
-    let ticking = false;
-
-    const handleScroll = () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          setShowScrollTop(window.scrollY > 400);
-
-          const scrollTop = window.scrollY;
-          const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-          const scrollPercent = docHeight > 0 
-            ? Math.min(Math.max((scrollTop / docHeight) * 100, 0), 100) 
-            : 0;
-
-          setProgress(scrollPercent);
-
-          if (progressRef.current) {
-            progressRef.current.style.width = `${scrollPercent}%`;
-          }
-
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const scrollToTop = useCallback(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
-
-  const shareUrl = useMemo(
-    () => (typeof window !== "undefined" ? window.location.href : `https://zandani.co.ke/article/${post?.slug}`),
-    [post?.slug]
-  );
-
-  const formattedDate = useMemo(
-    () =>
-      post
-        ? new Date(post.date).toLocaleDateString("en-KE", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })
-        : "",
+  // ── Schema ──
+  const formattedDate = useMemo(() =>
+    post ? new Date(post.date).toLocaleDateString("en-KE", { year: "numeric", month: "long", day: "numeric" }) : "",
     [post?.date]
   );
 
-  const articleSchema = useMemo(
-    () =>
-      post
-        ? {
-            "@context": "https://schema.org",
-            "@type": "NewsArticle",
-            "headline": post.title,
-            "description": post.excerpt,
-            "image": {
-              "@type": "ImageObject",
-              "url": post.image,
-              "width": 1200,
-              "height": 630,
-              "caption": post.imageAlt || post.title
-            },
-            "datePublished": post.date,
-            "dateModified": post.date,
-            "author": { "@type": "Person", "name": post.author },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Za Ndani",
-              "logo": { "@type": "ImageObject", "url": "https://zandani.co.ke/logo.png" }
-            },
-            "mainEntityOfPage": { "@type": "WebPage", "@id": `https://zandani.co.ke/article/${post.slug}` },
-            "keywords": post.tags.join(", "),
-            "articleSection": post.category,
-            "inLanguage": "en-KE",
-            "wordCount": Math.round((post.htmlContent?.length || 0) / 5),
-            "articleBody": post.excerpt,
-            "isAccessibleForFree": true
-          }
-        : null,
-    [post]
-  );
+  const articleSchema = useMemo(() => post ? {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": { "@type": "ImageObject", "url": post.image, "width": 1200, "height": 630 },
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "author": { "@type": "Person", "name": post.author },
+    "publisher": { "@type": "Organization", "name": "Za Ndani", "logo": { "@type": "ImageObject", "url": "https://zandani.co.ke/logo.png" } },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": `https://zandani.co.ke/article/${post.slug}` },
+    "keywords": post.tags.join(", "),
+    "articleSection": post.category,
+    "inLanguage": "en-KE",
+    "isAccessibleForFree": true,
+    "wordCount": Math.round((post.htmlContent?.length || 0) / 5),
+  } : null, [post]);
 
-  const breadcrumbSchema = useMemo(
-    () =>
-      post
-        ? {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zandani.co.ke" },
-              { "@type": "ListItem", "position": 2, "name": post.category, "item": `https://zandani.co.ke/category/${post.category.toLowerCase()}` },
-              { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://zandani.co.ke/article/${post.slug}` }
-            ]
-          }
-        : null,
-    [post]
-  );
+  const breadcrumbSchema = useMemo(() => post ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zandani.co.ke" },
+      { "@type": "ListItem", "position": 2, "name": post.category, "item": `https://zandani.co.ke/category/${post.category.toLowerCase()}` },
+      { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://zandani.co.ke/article/${post.slug}` },
+    ],
+  } : null, [post]);
 
-  const handleWhatsAppShare = () => {
-    const text = `${post?.title} - Read on Za Ndani`;
-    window.open(`https://wa.me/?text=${encodeURIComponent(text + " " + shareUrl)}`, "_blank");
-  };
-
+  // ── 404 ──
   if (!post) {
     return (
       <Layout>
-        <div className="container py-20 text-center">
-          <h1 className="text-3xl font-serif font-bold text-foreground mb-4">Article Not Found</h1>
-          <p className="text-muted-foreground mb-8">The article you're looking for doesn't exist.</p>
-          <Button asChild className="gradient-primary text-primary-foreground">
-            <Link to="/">Back to Home</Link>
-          </Button>
+        <div className="container py-32 text-center">
+          <h1 className="text-4xl font-serif font-bold mb-4">Article Not Found</h1>
+          <p className="text-muted-foreground mb-8">This article may have been moved or deleted.</p>
+          <Button asChild><Link to="/">Back to Home</Link></Button>
         </div>
       </Layout>
     );
   }
 
+  const authorKey = post.author.toLowerCase();
+  const authorBio = AUTHOR_BIOS[authorKey] || "Za Ndani journalist covering the stories that matter in Kenya.";
+  const authorColor = AUTHOR_COLORS[authorKey] || "bg-zinc-600";
+  const authorInitials = post.author.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase();
+
   return (
     <Layout>
       <Helmet>
-        <title>{post.title} | Za Ndani - Kenya News & Gossip</title>
-        <meta name="description" content={post.excerpt.slice(0, 158) + (post.excerpt.length > 158 ? "..." : "")} />
+        <title>{post.title} | Za Ndani</title>
+        <meta name="description" content={post.excerpt.slice(0, 158) + (post.excerpt.length > 158 ? "…" : "")} />
         <meta name="keywords" content={post.tags.join(", ") + ", za ndani, kenya news"} />
         <link rel="canonical" href={`https://zandani.co.ke/article/${post.slug}`} />
-
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://zandani.co.ke/article/${post.slug}`} />
         <meta property="og:title" content={post.title} />
@@ -300,7 +262,6 @@ export default function ArticlePage() {
         <meta property="article:published_time" content={post.date} />
         <meta property="article:section" content={post.category} />
         <meta property="article:author" content={post.author} />
-
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.excerpt} />
@@ -310,204 +271,351 @@ export default function ArticlePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      <div 
-        ref={progressRef}
-        className="fixed top-0 left-0 right-0 h-1 bg-primary z-50" 
-        style={{ width: "0%" }}
-      />
+      {/* ── Reading progress bar ── */}
+      <div ref={progressRef} className="fixed top-0 left-0 h-[3px] bg-primary z-[60] transition-none" style={{ width: "0%" }} />
 
-      <div className="bg-muted/50 border-b border-border">
-        <div className="container max-w-4xl py-3">
-          <button
-            onClick={() => navigate(-1)}
-            className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-          >
-            <ChevronLeft className="w-4 h-4" />
-            Back
-          </button>
-        </div>
-      </div>
+      {/* ════════════════════════════════════════════════════════════════
+          HERO — full-bleed cinematic image with editorial overlay
+      ════════════════════════════════════════════════════════════════ */}
+      <section className="relative w-full bg-zinc-950 overflow-hidden" style={{ minHeight: 540 }}>
+        {/* Background image */}
+        <img
+          src={proxyImg(post.image, 1400)}
+          alt={post.title}
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          className="absolute inset-0 w-full h-full object-cover object-[center_20%] opacity-50"
+        />
+        {/* Gradient overlays */}
+        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/70 to-zinc-950/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/80 via-transparent to-transparent" />
 
-      <article className="py-8 md:py-12">
-        <div className="container max-w-4xl">
-          <header className="mb-10">
-            <Link to={`/category/${post.category.toLowerCase()}`}>
-              <Badge className="mb-6 gradient-primary text-primary-foreground border-0 hover:opacity-90 text-sm px-5 py-1.5">
+        {/* Breadcrumb nav */}
+        <div className="relative z-10 pt-6 px-4">
+          <div className="container max-w-5xl mx-auto">
+            <div className="flex items-center gap-2 text-xs text-zinc-500">
+              <button onClick={() => navigate(-1)} className="flex items-center gap-1 hover:text-zinc-300 transition-colors">
+                <ChevronLeft className="w-3.5 h-3.5" /> Back
+              </button>
+              <span>/</span>
+              <Link to={`/category/${post.category.toLowerCase()}`} className="hover:text-zinc-300 transition-colors capitalize">
                 {post.category}
-              </Badge>
-            </Link>
-
-            <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight mb-6">
-              {post.title}
-            </h1>
-
-            <p className="text-xl text-muted-foreground mb-8 max-w-3xl">
-              {post.excerpt}
-            </p>
-
-            <div className="flex flex-wrap items-center gap-5 text-sm text-muted-foreground">
-              <span className="font-medium text-foreground">{post.author}</span>
-              <span className="flex items-center gap-1.5">
-                <Calendar className="w-4 h-4" />
-                {formattedDate}
-              </span>
-              <span className="flex items-center gap-1.5">
-                <Clock className="w-4 h-4" />
-                {post.readTime} min read
-              </span>
-              <span className="flex items-center gap-1.5 text-primary font-medium">
-                <Eye className="w-4 h-4" />
-                {currentPostViews > 999 ? `${(currentPostViews / 1000).toFixed(1)}k` : currentPostViews} views
-              </span>
-            </div>
-          </header>
-
-          <figure className="mb-12 relative">
-            <div className="aspect-video rounded-3xl overflow-hidden bg-muted shadow-xl">
-              <img
-                src={post.image}
-                alt={post.imageAlt || post.title}
-                className="w-full h-full object-cover"
-                loading="eager"
-                fetchPriority="high"
-                decoding="sync"
-              />
-            </div>
-            {post.imageAlt && (
-              <figcaption className="mt-3 text-sm text-muted-foreground text-center">
-                {post.imageAlt}
-              </figcaption>
-            )}
-          </figure>
-
-          {/* Single horizontal banner slot after image */}
-          <div className="my-8 flex justify-center">
-            <AdUnit type="horizontal" />
-          </div>
-
-          {/* Sticky Share on Desktop */}
-          <div className="hidden lg:flex fixed left-[calc(50%-42rem)] top-48 flex-col gap-3 z-30">
-            <Button variant="outline" size="icon" className="h-11 w-11 rounded-full" onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, "_blank")}>
-              <Facebook className="w-5 h-5" />
-            </Button>
-            <Button variant="outline" size="icon" className="h-11 w-11 rounded-full" onClick={() => window.open(`https://x.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`, "_blank")}>
-              <XIcon className="w-5 h-5" />
-            </Button>
-            <Button variant="outline" size="icon" className="h-11 w-11 rounded-full" onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(shareUrl)}`, "_blank")}>
-              <Linkedin className="w-5 h-5" />
-            </Button>
-            <Button variant="outline" size="icon" className="h-11 w-11 rounded-full" onClick={handleWhatsAppShare}>
-              <MessageCircle className="w-5 h-5" />
-            </Button>
-            <Button variant="outline" size="icon" className="h-11 w-11 rounded-full" onClick={() => navigator.clipboard.writeText(shareUrl)}>
-              <Share2 className="w-5 h-5" />
-            </Button>
-          </div>
-
-          {/* Main content with one in-article ad */}
-          <div
-            ref={contentRef}
-            className="prose prose-lg max-w-none dark:prose-invert 
-              prose-headings:font-serif prose-headings:text-foreground 
-              prose-p:text-foreground prose-p:leading-[1.85] prose-p:mb-8
-              prose-a:text-primary prose-a:font-medium prose-a:no-underline hover:prose-a:underline 
-              prose-strong:text-foreground prose-strong:font-bold
-              prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:text-muted-foreground prose-blockquote:pl-8 prose-blockquote:italic
-              prose-img:rounded-3xl prose-img:my-12 prose-img:shadow-lg
-              prose-li:mb-3 prose-li:leading-8
-              prose-ul:mb-8 prose-ol:mb-8 first-letter:text-7xl first-letter:font-serif first-letter:font-bold first-letter:text-primary first-letter:mr-3 first-letter:float-left"
-          >
-            {contentWithOneAd}
-          </div>
-
-          {/* Tags */}
-          {post.tags.length > 0 && (
-            <div className="mt-10 pt-6 border-t border-border">
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="text-sm font-medium text-muted-foreground">Tags:</span>
-                {post.tags.map((tag) => (
-                  <Link key={tag} to={`/tag/${encodeURIComponent(tag)}`}>
-                    <Badge variant="secondary" className="cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors px-4 py-2">
-                      {tag}
-                    </Badge>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Author Bio */}
-          <div className="mt-16 p-8 bg-muted/50 rounded-3xl border border-divider flex gap-6 items-start">
-            <div className="w-20 h-20 bg-muted-foreground/10 rounded-2xl flex-shrink-0" />
-            <div>
-              <div className="font-medium text-lg mb-1">{post.author}</div>
-              <p className="text-sm text-muted-foreground mb-4">Senior Gossip Correspondent at Za Ndani. Always first with the tea.</p>
-              <Link to={`/author/${post.author.toLowerCase().replace(/\s+/g, '-')}`} className="text-primary font-medium hover:underline text-sm">
-                More stories by {post.author.split(" ")[0]}
               </Link>
             </div>
           </div>
-
-          {/* Newsletter */}
-          <div className="mt-12 p-8 md:p-10 bg-surface rounded-3xl">
-            <h3 className="font-serif font-bold text-2xl text-foreground mb-3">Never miss the tea</h3>
-            <p className="text-muted-foreground mb-6">Fresh Kenyan gossip straight to your inbox every morning.</p>
-            <NewsletterForm />
-          </div>
-
-          {/* Ad slot before related stories */}
-          <div className="my-12">
-            <AdUnit type="horizontal" />
-          </div>
-
-          {/* Related Stories */}
-          {relatedPostsWithViews.length > 0 && (
-            <section className="mt-16 pt-10 border-t border-border">
-              <h3 className="text-2xl font-serif font-bold mb-8 flex items-center gap-3">
-                More Hot Stories 
-                <span className="text-primary">→</span>
-              </h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                {relatedPostsWithViews.map((relatedPost) => (
-                  <div key={relatedPost.slug} className="relative group">
-                    <ArticleCard post={relatedPost} variant="compact" />
-                    <div className="absolute top-4 right-4 z-10">
-                      <Badge className="bg-black/70 backdrop-blur-md text-white border-0 flex items-center gap-1.5 px-3 py-1 shadow-lg">
-                        <Eye className="w-3.5 h-3.5" />
-                        {relatedPost.views > 999 ? `${(relatedPost.views / 1000).toFixed(1)}k` : relatedPost.views}
-                      </Badge>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </section>
-          )}
         </div>
-      </article>
 
-      {/* Mobile Floating Share Bar */}
-      <div className="lg:hidden fixed bottom-4 left-4 right-4 z-50 flex items-center justify-center gap-3 bg-background/95 backdrop-blur-lg border border-divider rounded-3xl p-3 shadow-2xl">
-        <Button variant="outline" size="icon" className="h-11 w-11 rounded-2xl" onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, "_blank")}>
-          <Facebook className="w-5 h-5" />
-        </Button>
-        <Button variant="outline" size="icon" className="h-11 w-11 rounded-2xl" onClick={() => window.open(`https://x.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`, "_blank")}>
-          <XIcon className="w-5 h-5" />
-        </Button>
-        <Button variant="outline" size="icon" className="h-11 w-11 rounded-2xl" onClick={handleWhatsAppShare}>
-          <MessageCircle className="w-5 h-5" />
-        </Button>
-        <Button variant="outline" size="icon" className="h-11 w-11 rounded-2xl" onClick={() => navigator.clipboard.writeText(shareUrl)}>
-          <Share2 className="w-5 h-5" />
-        </Button>
+        {/* Hero content */}
+        <div className="relative z-10 container max-w-5xl mx-auto px-4 pb-14 pt-8">
+          <div className="max-w-3xl space-y-5">
+            {/* Category badge */}
+            <span className={`inline-flex items-center gap-1.5 text-[10px] font-black tracking-[0.2em] uppercase text-white px-3 py-1.5 ${catColor(post.category)}`}>
+              <Flame className="w-3 h-3" /> {post.category}
+            </span>
+
+            {/* Headline */}
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-black text-white leading-[1.08] tracking-tight">
+              {post.title}
+            </h1>
+
+            {/* Excerpt */}
+            <p className="text-zinc-300 text-base md:text-lg leading-relaxed max-w-2xl font-light">
+              {post.excerpt}
+            </p>
+
+            {/* Meta row */}
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm pt-1">
+              <Link
+                to={`/author/${post.author.toLowerCase().replace(/\s+/g, '-')}`}
+                className="flex items-center gap-2 group"
+              >
+                <div className={`w-7 h-7 rounded-full flex items-center justify-center text-white text-[10px] font-black flex-shrink-0 ${authorColor}`}>
+                  {authorInitials}
+                </div>
+                <span className="text-white font-bold text-sm group-hover:text-primary transition-colors">
+                  {post.author}
+                </span>
+              </Link>
+              <span className="text-zinc-500">·</span>
+              <span className="flex items-center gap-1.5 text-zinc-400">
+                <Calendar className="w-3.5 h-3.5" /> {formattedDate}
+              </span>
+              <span className="text-zinc-500">·</span>
+              <span className="flex items-center gap-1.5 text-zinc-400">
+                <Clock className="w-3.5 h-3.5" /> {post.readTime} min read
+              </span>
+              <span className="text-zinc-500">·</span>
+              <span className="flex items-center gap-1.5 text-primary font-semibold">
+                <Eye className="w-3.5 h-3.5" />
+                {currentPostViews > 999 ? `${(currentPostViews / 1000).toFixed(1)}k` : currentPostViews} views
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ════════════════════════════════════════════════════════════════
+          ARTICLE BODY + SIDEBAR
+      ════════════════════════════════════════════════════════════════ */}
+      <div className="bg-background">
+        <div className="container max-w-6xl mx-auto px-4 py-10">
+          <div className="grid lg:grid-cols-12 gap-10">
+
+            {/* ── LEFT: Sticky share column (desktop) ── */}
+            <div className="hidden lg:flex lg:col-span-1 flex-col items-center">
+              <div className="sticky top-28 flex flex-col gap-3">
+                <button
+                  onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, "_blank")}
+                  className="w-9 h-9 rounded-full border border-divider flex items-center justify-center hover:border-primary hover:text-primary transition-colors text-muted-foreground"
+                  aria-label="Share on Facebook"
+                >
+                  <Facebook className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={() => window.open(`https://x.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`, "_blank")}
+                  className="w-9 h-9 rounded-full border border-divider flex items-center justify-center hover:border-primary hover:text-primary transition-colors text-muted-foreground"
+                  aria-label="Share on X"
+                >
+                  <XIcon className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(shareUrl)}`, "_blank")}
+                  className="w-9 h-9 rounded-full border border-divider flex items-center justify-center hover:border-primary hover:text-primary transition-colors text-muted-foreground"
+                  aria-label="Share on LinkedIn"
+                >
+                  <Linkedin className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={handleWhatsApp}
+                  className="w-9 h-9 rounded-full border border-divider flex items-center justify-center hover:border-green-500 hover:text-green-500 transition-colors text-muted-foreground"
+                  aria-label="Share on WhatsApp"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={handleCopy}
+                  className={`w-9 h-9 rounded-full border flex items-center justify-center transition-colors ${copied ? "border-primary text-primary" : "border-divider text-muted-foreground hover:border-primary hover:text-primary"}`}
+                  aria-label="Copy link"
+                >
+                  <Share2 className="w-4 h-4" />
+                </button>
+                {copied && (
+                  <span className="text-[10px] text-primary font-bold text-center leading-tight">Copied!</span>
+                )}
+              </div>
+            </div>
+
+            {/* ── CENTRE: Article content ── */}
+            <article className="lg:col-span-8 min-w-0">
+
+              {/* Top banner ad */}
+              <div className="mb-8 flex justify-center border border-divider bg-muted/10 p-3">
+                <AdUnit type="horizontal" />
+              </div>
+
+              {/* Article prose */}
+              <div
+                ref={contentRef}
+                className="prose prose-lg max-w-none dark:prose-invert
+                  prose-headings:font-serif prose-headings:font-black prose-headings:text-foreground prose-headings:tracking-tight prose-headings:mt-10 prose-headings:mb-4
+                  prose-h2:text-2xl prose-h2:border-l-4 prose-h2:border-primary prose-h2:pl-4
+                  prose-h3:text-xl
+                  prose-p:text-foreground prose-p:leading-[1.9] prose-p:mb-6 prose-p:text-[17px]
+                  prose-a:text-primary prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
+                  prose-strong:text-foreground prose-strong:font-black
+                  prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:bg-muted/40 prose-blockquote:px-6 prose-blockquote:py-4 prose-blockquote:not-italic prose-blockquote:text-foreground prose-blockquote:rounded-r-lg prose-blockquote:my-8
+                  prose-img:rounded-lg prose-img:shadow-lg prose-img:my-10
+                  prose-li:mb-2 prose-li:leading-8
+                  prose-ul:mb-6 prose-ol:mb-6
+                  first-letter:text-6xl first-letter:font-serif first-letter:font-black first-letter:text-primary first-letter:float-left first-letter:mr-3 first-letter:leading-none first-letter:mt-1"
+              >
+                {contentWithAds}
+              </div>
+
+              {/* Tags */}
+              {post.tags.length > 0 && (
+                <div className="mt-10 pt-6 border-t border-divider">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-xs font-black uppercase tracking-wider text-muted-foreground">Tags:</span>
+                    {post.tags.map(tag => (
+                      <Link key={tag} to={`/tag/${encodeURIComponent(tag)}`}>
+                        <Badge variant="secondary" className="cursor-pointer hover:bg-primary hover:text-white transition-colors text-xs px-3 py-1 rounded-none">
+                          {tag}
+                        </Badge>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Author card */}
+              <div className="mt-12 border border-divider bg-surface">
+                <div className={`h-1 w-full ${authorColor}`} />
+                <div className="p-6 flex gap-5 items-start">
+                  <div className={`w-14 h-14 rounded-full flex items-center justify-center text-white font-black text-lg flex-shrink-0 ${authorColor}`}>
+                    {authorInitials}
+                  </div>
+                  <div>
+                    <Link
+                      to={`/author/${post.author.toLowerCase().replace(/\s+/g, '-')}`}
+                      className="font-black text-base hover:text-primary transition-colors"
+                    >
+                      {post.author}
+                    </Link>
+                    <p className="text-muted-foreground text-sm leading-relaxed mt-1 mb-3">{authorBio}</p>
+                    <Link
+                      to={`/author/${post.author.toLowerCase().replace(/\s+/g, '-')}`}
+                      className="text-xs font-black uppercase tracking-wider text-primary hover:underline flex items-center gap-1"
+                    >
+                      All stories by {post.author.split(" ")[0]} →
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Newsletter */}
+              <div className="mt-10 border border-divider bg-zinc-950 p-8">
+                <div className="flex items-center gap-2 mb-2">
+                  <Flame className="w-5 h-5 text-rose-500" />
+                  <h3 className="font-black text-xl text-white uppercase tracking-tight">Never Miss The Tea</h3>
+                </div>
+                <p className="text-zinc-400 text-sm mb-6">Fresh Kenyan gossip and news straight to your inbox every morning.</p>
+                <NewsletterForm />
+              </div>
+
+              {/* Bottom ad */}
+              <div className="mt-10 flex justify-center border border-divider bg-muted/10 p-3">
+                <AdUnit type="horizontal" />
+              </div>
+
+              {/* Related stories */}
+              {relatedWithViews.length > 0 && (
+                <section className="mt-14 pt-8 border-t border-divider">
+                  <div className="flex items-center gap-4 mb-6">
+                    <h3 className="text-xl font-black uppercase tracking-tight">More Hot Stories</h3>
+                    <div className="h-px flex-1 bg-divider" />
+                  </div>
+                  <div className="grid sm:grid-cols-3 gap-5">
+                    {relatedWithViews.map(rp => (
+                      <Link key={rp.slug} to={`/article/${rp.slug}`} className="group block">
+                        <div className="relative overflow-hidden h-36 mb-3">
+                          <img
+                            src={proxyImg(rp.image, 400)}
+                            alt={rp.title}
+                            loading="lazy"
+                            className="w-full h-full object-cover object-[center_20%] group-hover:scale-105 transition-transform duration-500"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                          <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between">
+                            <span className={`text-[9px] font-black uppercase tracking-wider text-white px-1.5 py-0.5 ${catColor(rp.category)}`}>
+                              {rp.category}
+                            </span>
+                            <span className="flex items-center gap-1 text-[10px] text-zinc-300 bg-black/50 px-1.5 py-0.5">
+                              <Eye className="w-3 h-3" />
+                              {rp.views > 999 ? `${(rp.views / 1000).toFixed(1)}k` : rp.views}
+                            </span>
+                          </div>
+                        </div>
+                        <h4 className="font-bold text-sm leading-snug line-clamp-2 group-hover:text-primary transition-colors">
+                          {rp.title}
+                        </h4>
+                        <span className="text-xs text-muted-foreground mt-1 block">{rp.author}</span>
+                      </Link>
+                    ))}
+                  </div>
+                </section>
+              )}
+            </article>
+
+            {/* ── RIGHT: Sidebar ── */}
+            <aside className="hidden lg:block lg:col-span-3">
+              <div className="sticky top-28 space-y-8">
+
+                {/* Sidebar ad */}
+                <div className="border border-divider bg-muted/10 p-3 flex justify-center">
+                  <AdUnit type="effectivegate" />
+                </div>
+
+                {/* More from author */}
+                <div className="border border-divider">
+                  <div className={`h-1 w-full ${authorColor}`} />
+                  <div className="px-4 py-3 border-b border-divider">
+                    <h4 className="text-xs font-black uppercase tracking-wider">More from {post.author.split(" ")[0]}</h4>
+                  </div>
+                  <div className="divide-y divide-divider">
+                    {relatedWithViews.slice(0, 3).map(rp => (
+                      <Link key={rp.slug} to={`/article/${rp.slug}`} className="flex gap-3 p-3 group hover:bg-muted/20 transition-colors">
+                        <div className="w-16 h-16 flex-shrink-0 overflow-hidden">
+                          <img
+                            src={proxyImg(rp.image, 120)}
+                            alt={rp.title}
+                            loading="lazy"
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                        <div className="min-w-0">
+                          <h5 className="text-xs font-bold leading-snug line-clamp-2 group-hover:text-primary transition-colors">
+                            {rp.title}
+                          </h5>
+                          <span className="text-[10px] text-muted-foreground mt-1 flex items-center gap-1">
+                            <Eye className="w-3 h-3" />{rp.views > 999 ? `${(rp.views / 1000).toFixed(1)}k` : rp.views}
+                          </span>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Second sidebar ad */}
+                <div className="border border-divider bg-muted/10 p-3 flex justify-center">
+                  <AdUnit type="inarticle" />
+                </div>
+
+              </div>
+            </aside>
+
+          </div>
+        </div>
       </div>
 
+      {/* ── Mobile share bar ── */}
+      <div className="lg:hidden fixed bottom-4 left-4 right-4 z-50 flex items-center justify-center gap-3 bg-background/95 backdrop-blur-lg border border-divider p-3 shadow-2xl">
+        <button
+          onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, "_blank")}
+          className="h-10 w-10 rounded-full border border-divider flex items-center justify-center hover:border-primary hover:text-primary transition-colors text-muted-foreground"
+        >
+          <Facebook className="w-4 h-4" />
+        </button>
+        <button
+          onClick={() => window.open(`https://x.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`, "_blank")}
+          className="h-10 w-10 rounded-full border border-divider flex items-center justify-center hover:border-primary hover:text-primary transition-colors text-muted-foreground"
+        >
+          <XIcon className="w-4 h-4" />
+        </button>
+        <button
+          onClick={handleWhatsApp}
+          className="h-10 w-10 rounded-full border border-divider flex items-center justify-center hover:border-green-500 hover:text-green-500 transition-colors text-muted-foreground"
+        >
+          <MessageCircle className="w-4 h-4" />
+        </button>
+        <button
+          onClick={handleCopy}
+          className={`h-10 w-10 rounded-full border flex items-center justify-center transition-colors ${copied ? "border-primary text-primary" : "border-divider text-muted-foreground"}`}
+        >
+          <Share2 className="w-4 h-4" />
+        </button>
+        {copied && <span className="text-xs text-primary font-bold absolute -top-6 right-4">Copied!</span>}
+      </div>
+
+      {/* ── Scroll to top ── */}
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-24 right-6 lg:bottom-6 p-3 rounded-full bg-primary text-primary-foreground shadow-xl hover:opacity-90 transition-opacity z-40"
+          className="fixed bottom-24 right-5 lg:bottom-6 lg:right-6 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center shadow-xl hover:opacity-90 transition-opacity z-40"
           aria-label="Scroll to top"
         >
-          <ArrowUp className="w-5 h-5" />
+          <ArrowUp className="w-4 h-4" />
         </button>
       )}
     </Layout>
