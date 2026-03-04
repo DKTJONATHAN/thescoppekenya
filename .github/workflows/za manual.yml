@@ -167,91 +167,209 @@ jobs:
               text = text.replace(chr(8212), "-").replace(chr(8211), "-")
               return text
 
-          def scrape_url(url):
-              print(f"Scraping: {url}")
-              with sync_playwright() as p:
-                  browser = p.chromium.launch(headless=True, args=[
-                      "--no-sandbox",
-                      "--disable-dev-shm-usage",
-                      "--disable-blink-features=AutomationControlled"
-                  ])
-                  context = browser.new_context(
-                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-                      viewport={"width": 1920, "height": 1080}
-                  )
-                  page = context.new_page()
-                  page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["stylesheet", "font", "media"] else route.continue_())
-                  try:
-                      try:
-                          page.goto(url, timeout=45000, wait_until="domcontentloaded")
-                      except Exception as e:
-                          print(f"Goto exception (likely non-fatal): {e}")
-                      try:
-                          page.wait_for_selector("p", timeout=10000)
-                      except:
-                          pass
-                      page.wait_for_timeout(4000)
-                      content = page.content()
-                      soup = BeautifulSoup(content, "html.parser")
+          def clean_url(url):
+              # Strip UTM and tracking params
+              clean = re.sub(r'[?&](utm_[^&]*|source=[^&]*|ref=[^&]*)', '', url)
+              return clean.rstrip('?&')
 
-                      # Title
-                      page_title = ""
-                      title_tag = soup.find("title")
-                      if title_tag:
-                          page_title = title_tag.get_text().strip()
-                      if not page_title:
-                          h1 = soup.find("h1")
-                          if h1:
-                              page_title = h1.get_text().strip()
+          # Site-specific selectors for known Kenyan + international news sites
+          SITE_SELECTORS = {
+              "citizen.digital":        ["div.article-content", "div.single-post-content", "div.post-body"],
+              "nation.africa":          ["div.article-body", "div.story-content", "section.article__body"],
+              "standardmedia.co.ke":    ["div.article-body", "div.story-body", "div#article-content"],
+              "tuko.co.ke":             ["div.post-content", "div.article__body", "div.tuko-post-content"],
+              "kenyans.co.ke":          ["div.article-content", "div.news-body", "div.field-items"],
+              "mpasho.co.ke":           ["div.entry-content", "div.post-content", "article"],
+              "nairobinews.nation.africa": ["div.article-body", "div.story-content"],
+              "businessdailyafrica.com":["div.article-body", "div.story-content"],
+              "capitalfm.co.ke":        ["div.entry-content", "div.post-content"],
+              "K24tv.co.ke":            ["div.article-content", "div.post-body"],
+              "ntv.co.ke":              ["div.article-content", "div.single-content"],
+              "ew.com":                 ["div.article-body", "section[class*=article]", "div[class*=longform]"],
+              "people.com":             ["div.article-body", "section.article-body", "div[class*=content-body]"],
+              "tmz.com":                ["div.article-content", "div[class*=article__content]"],
+              "bbc.com":                ["article", "div[data-component=text-block]", "div.article__body-content"],
+              "bbc.co.uk":              ["article", "div[data-component=text-block]"],
+              "theguardian.com":        ["div.article-body-commercial-selector", "div[class*=article-body]"],
+              "reuters.com":            ["div[class*=article-body]", "div.StandardArticleBody_body"],
+              "apnews.com":             ["div.article-body", "div[class*=Article]", "div.RichTextStoryBody"],
+              "aljazeera.com":          ["div.article-body", "div[class*=wysiwyg]"],
+              "nytimes.com":            ["section[name=articleBody]", "div[class*=StoryBodyCompact]"],
+              "dailymail.co.uk":        ["div.article-text", "div#js-article-text"],
+              "thesun.co.uk":           ["div.article__content", "div[class*=article-content]"],
+              "independent.co.uk":      ["div[class*=article-body]", "div.sc-d7f02f38"],
+              "variety.com":            ["div.article-body", "div[class*=article-content]"],
+              "hollywoodreporter.com":  ["div.article-body", "div[class*=content-body]"],
+              "deadline.com":           ["div.a-content", "div[class*=article-content]"],
+          }
 
-                      # Body text - try article containers first, then fall back
-                      article_text = ""
-                      containers = soup.select("article, main, .article-content, .article-body, .post-content, .entry-content, .content-body, .story-body, .post__content")
-                      for c in containers:
-                          paras = c.find_all("p")
+          TITLE_SUFFIXES = [
+              " | Citizen Digital", " - Citizen Digital", " | Nation Africa", " - Nation Africa",
+              " | Nation", " - Nation", " | The Standard", " - The Standard",
+              " | Mpasho", " - Mpasho", " | Kenyans.co.ke", " - Kenyans.co.ke",
+              " | Tuko", " - Tuko", " | NTV Kenya", " - NTV Kenya",
+              " | K24", " - K24", " | Capital FM", " - Capital FM",
+              " | Business Daily", " - Business Daily", " | EW", " - EW",
+              " | People", " | TMZ", " | BBC", " - BBC News",
+              " | The Guardian", " | Reuters", " | AP News",
+              " | Al Jazeera", " | Variety", " | The Hollywood Reporter",
+              " | Deadline", " | The Sun", " | Daily Mail",
+          ]
+
+          def get_site_key(url):
+              for key in SITE_SELECTORS:
+                  if key in url:
+                      return key
+              return None
+
+          def extract_content(soup, base_url, url=""):
+              # Title - prefer h1 over <title> tag
+              page_title = ""
+              for sel in ["h1", "h1.article-title", "h1.post-title", "h1.entry-title"]:
+                  tag = soup.select_one(sel)
+                  if tag:
+                      page_title = tag.get_text().strip()
+                      if page_title:
+                          break
+              if not page_title:
+                  title_tag = soup.find("title")
+                  if title_tag:
+                      page_title = title_tag.get_text().strip()
+              # Also try og:title for sites that dont render h1 well
+              if not page_title or page_title == "Citizen Digital":
+                  og_title = soup.find("meta", property="og:title")
+                  if og_title:
+                      page_title = og_title.get("content", "").strip()
+              for suffix in TITLE_SUFFIXES:
+                  page_title = page_title.replace(suffix, "").strip()
+
+              # Body text - site-specific selectors first
+              article_text = ""
+              site_key = get_site_key(url)
+              if site_key:
+                  for sel in SITE_SELECTORS[site_key]:
+                      container = soup.select_one(sel)
+                      if container:
+                          paras = container.find_all("p")
                           chunk = "\n\n".join([p.get_text(strip=True) for p in paras if len(p.get_text(strip=True)) > 40])
-                          if len(chunk) > 500:
-                              article_text = chunk
-                              break
-
-                      if len(article_text) < 500:
-                          all_paras = soup.find_all("p")
-                          chunk = "\n\n".join([p.get_text(strip=True) for p in all_paras if len(p.get_text(strip=True)) > 40])
                           if len(chunk) > 300:
                               article_text = chunk
+                              print(f"  Site-specific selector '{sel}' matched: {len(chunk)} chars")
+                              break
 
-                      if len(article_text) < 300:
-                          body = soup.find("body")
-                          if body:
-                              lines = [line.strip() for line in body.get_text(separator="\n").split("\n") if len(line.strip()) > 50]
-                              article_text = "\n\n".join(lines)
+              # Generic containers fallback
+              if len(article_text) < 300:
+                  containers = soup.select(
+                      "article, [class*=article-body], [class*=article-content], "
+                      "[class*=article__body], [class*=post-content], [class*=entry-content], "
+                      "[class*=story-body], [class*=story-content], [class*=content-body], "
+                      "[class*=news-content], [class*=post-body], [class*=single-content], "
+                      "[class*=longform], [data-component=text-block]"
+                  )
+                  for c in containers:
+                      # Skip navigation, sidebar, related-articles containers
+                      class_str = " ".join(c.get("class", []))
+                      if any(x in class_str for x in ["nav", "sidebar", "related", "widget", "comment", "footer", "header"]):
+                          continue
+                      paras = c.find_all("p")
+                      chunk = "\n\n".join([p.get_text(strip=True) for p in paras if len(p.get_text(strip=True)) > 40])
+                      if len(chunk) > len(article_text):
+                          article_text = chunk
+                  if article_text:
+                      print(f"  Generic container matched: {len(article_text)} chars")
 
-                      # Image - avoid logos and placeholders
-                      img_url = ""
-                      lead_img = soup.select_one("article img, .article-content img, .story-body img, picture img")
-                      if lead_img and lead_img.get("src"):
-                          src = lead_img.get("src")
-                          if "data:image" not in src and "placeholder" not in src.lower() and "logo" not in src.lower():
-                              img_url = src if src.startswith("http") else url.rstrip("/") + "/" + src.lstrip("/")
+              # All paragraphs fallback
+              if len(article_text) < 300:
+                  all_paras = soup.find_all("p")
+                  chunk = "\n\n".join([p.get_text(strip=True) for p in all_paras if len(p.get_text(strip=True)) > 40])
+                  if len(chunk) > 300:
+                      article_text = chunk
+                      print(f"  All-paragraphs fallback: {len(chunk)} chars")
 
-                      if not img_url:
-                          for meta in soup.find_all("meta"):
-                              if meta.get("property") in ["og:image", "twitter:image"]:
-                                  c = meta.get("content", "")
-                                  if c and "logo" not in c.lower() and "default" not in c.lower():
-                                      img_url = c
-                                      break
+              # Raw body text last resort
+              if len(article_text) < 300:
+                  body = soup.find("body")
+                  if body:
+                      for tag in body.find_all(["script", "style", "nav", "header", "footer", "aside", "noscript"]):
+                          tag.decompose()
+                      lines = [line.strip() for line in body.get_text(separator="\n").split("\n") if len(line.strip()) > 50]
+                      article_text = "\n\n".join(lines)
+                      print(f"  Body text last resort: {len(article_text)} chars")
 
-                      print(f"Title: {page_title}")
-                      print(f"Text length: {len(article_text)} characters")
-                      print(f"Image: {img_url[:80] if img_url else 'None'}")
-                      return article_text, img_url, page_title
+              # Image - og:image is most reliable across all sites
+              img_url = ""
+              for meta in soup.find_all("meta"):
+                  prop = meta.get("property", "") or meta.get("name", "")
+                  if prop in ["og:image", "twitter:image", "twitter:image:src"]:
+                      c = meta.get("content", "")
+                      if c and "logo" not in c.lower() and "default" not in c.lower() and len(c) > 10:
+                          img_url = c
+                          break
+              if not img_url:
+                  for sel in ["article img", "[class*=article] img", "[class*=hero] img", "picture img", ".featured-image img"]:
+                      lead_img = soup.select_one(sel)
+                      if lead_img:
+                          src = lead_img.get("src") or lead_img.get("data-src") or lead_img.get("data-lazy-src", "")
+                          if src and "data:image" not in src and "placeholder" not in src.lower() and "logo" not in src.lower():
+                              img_url = src if src.startswith("http") else base_url + "/" + src.lstrip("/")
+                              break
 
+              return article_text, img_url, page_title
+
+          def scrape_url(url):
+              url = clean_url(url)
+              print(f"Scraping (cleaned): {url}")
+              base_url = "/".join(url.split("/")[:3])
+              best_text, best_img, best_title = "", "", ""
+
+              strategies = [
+                  ("networkidle", "networkidle", False),
+                  ("domcontentloaded+wait", "domcontentloaded", False),
+                  ("light-block", "domcontentloaded", True),
+              ]
+
+              for name, wait_until, block_media in strategies:
+                  print(f"Trying strategy: {name}")
+                  try:
+                      with sync_playwright() as p:
+                          browser = p.chromium.launch(headless=True, args=[
+                              "--no-sandbox",
+                              "--disable-dev-shm-usage",
+                              "--disable-blink-features=AutomationControlled"
+                          ])
+                          context = browser.new_context(
+                              user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+                              viewport={"width": 1920, "height": 1080}
+                          )
+                          page = context.new_page()
+                          if block_media:
+                              page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["media", "font"] else route.continue_())
+                          try:
+                              page.goto(url, timeout=60000, wait_until=wait_until)
+                          except Exception as e:
+                              print(f"  Goto exception (non-fatal): {e}")
+                          try:
+                              page.wait_for_selector("p", timeout=8000)
+                          except:
+                              pass
+                          page.evaluate("window.scrollBy(0, 800)")
+                          page.wait_for_timeout(4000)
+                          content = page.content()
+                          browser.close()
+
+                      soup = BeautifulSoup(content, "html.parser")
+                      text, img, title = extract_content(soup, base_url, url)
+                      print(f"  Result: {len(text)} chars, title='{title[:60]}'")
+                      if len(text) > len(best_text):
+                          best_text, best_img, best_title = text, img, title
+                      if len(best_text) > 400:
+                          print(f"  Enough content found. Done.")
+                          break
                   except Exception as e:
-                      print(f"Scrape failed: {e}")
-                      return None, None, None
-                  finally:
-                      browser.close()
+                      print(f"  Strategy {name} failed: {e}")
+
+              print(f"Final: {len(best_text)} chars, image={'yes' if best_img else 'no'}, title='{best_title[:60]}'")
+              return (best_text if best_text else None), best_img, best_title
 
           raw_text, raw_image, raw_title = scrape_url(target_url)
 
