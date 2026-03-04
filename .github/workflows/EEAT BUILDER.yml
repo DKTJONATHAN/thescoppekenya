@@ -1,0 +1,523 @@
+name: E-E-A-T Signal Builder
+
+on:
+  schedule:
+    - cron: '0 6 * * 1,4'  # Every Monday and Thursday at 6am
+  workflow_dispatch:
+    inputs:
+      min_views:
+        description: 'Minimum views to qualify as a seed topic (default: 100)'
+        required: false
+        default: '100'
+      max_clusters:
+        description: 'Max number of topic clusters to process per run (default: 5)'
+        required: false
+        default: '5'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+  MEMORY_FILE: .github/memory_eeat.json
+
+jobs:
+  build-eeat-clusters:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-genai google-auth google-auth-httplib2
+
+      - name: Fetch GA4 top pages and build E-E-A-T clusters
+        env:
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GA4_CLIENT_EMAIL: ${{ secrets.GA4_CLIENT_EMAIL }}
+          GA4_PRIVATE_KEY: ${{ secrets.GA4_PRIVATE_KEY }}
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
+          MEMORY_FILE: ${{ env.MEMORY_FILE }}
+          MIN_VIEWS: ${{ inputs.min_views || '100' }}
+          MAX_CLUSTERS: ${{ inputs.max_clusters || '5' }}
+        run: |
+          python - <<'PYEOF'
+          import os, json, re, time, datetime, hashlib, textwrap, base64, itertools, sys
+          import requests
+          from google import genai
+          from google.genai import types
+          from google.oauth2 import service_account
+          from google.auth.transport.requests import Request
+
+          today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
+          MODELS = ["gemini-2.5-flash-preview-05-20", "gemini-2.5-flash"]
+
+          BANNED_PHRASES = [
+              "sasa basi", "melting the pot", "spill the tea", "tea is hot",
+              "grab your popcorn", "buckle up", "breaking news", "dive in",
+              "delve into", "moreover", "furthermore", "in conclusion",
+              "it's worth noting", "a testament to", "navigating the landscape",
+              "in today's digital age", "tapestry", "furthermore"
+          ]
+          banned_str = ", ".join(BANNED_PHRASES)
+
+          POSTS_DIR = os.environ.get("POSTS_DIR", "content/posts")
+          MEMORY_FILE = os.environ.get("MEMORY_FILE", ".github/memory_eeat.json")
+          MIN_VIEWS = int(os.environ.get("MIN_VIEWS", "100"))
+          MAX_CLUSTERS = int(os.environ.get("MAX_CLUSTERS", "5"))
+
+          # ── Author personas ──────────────────────────────────────────────
+          AUTHOR_MAP = {
+              "entertainment": ("Za Ndani", "Za Ndani, a sharp and cynical Kenyan entertainment journalist. Point out the bad side of everything, the angle mainstream media ignores."),
+              "gossip":        ("Za Ndani", "Za Ndani, a sharp and cynical Kenyan entertainment journalist. Emulate the engaging, dramatic tone of authentic Mpasho authors."),
+              "celebrity":     ("Mutheu Ann", "Mutheu Ann, a sharp, plugged-in Kenyan entertainment journalist. Write in a passionate, high-energy style."),
+              "politics":      ("Celestine Nzioka", "Celestine Nzioka, a cynical and authoritative Kenyan political journalist. Be hard-hitting and expose the angle mainstream media ignores."),
+              "news":          ("Celestine Nzioka", "Celestine Nzioka, a cynical and authoritative Kenyan news journalist. Write with authority and precision."),
+              "sports":        ("Mutheu Ann", "Mutheu Ann, an energetic Kenyan sports and entertainment journalist covering local and international sports."),
+              "technology":    ("Celestine Nzioka", "Celestine Nzioka, a precise Kenyan tech and business journalist covering Africa's digital economy."),
+          }
+          DEFAULT_AUTHOR = ("Za Ndani", "Za Ndani, a sharp Kenyan journalist covering what mainstream media ignores.")
+
+          def get_author(category: str):
+              return AUTHOR_MAP.get(category.lower().strip(), DEFAULT_AUTHOR)
+
+          # ── GA4 auth (mirrors your get-views.ts exactly) ─────────────────
+          def get_ga4_token():
+              raw_key = os.environ.get("GA4_PRIVATE_KEY", "")
+              if not raw_key:
+                  raise ValueError("GA4_PRIVATE_KEY not set")
+              try:
+                  decoded = base64.b64decode(raw_key.strip()).decode("utf-8")
+                  decoded = decoded.replace("\\n", "\n").strip().strip('"').strip("'")
+              except Exception:
+                  decoded = raw_key.replace("\\n", "\n").strip()
+
+              creds = service_account.Credentials.from_service_account_info(
+                  {
+                      "type": "service_account",
+                      "client_email": os.environ.get("GA4_CLIENT_EMAIL"),
+                      "private_key": decoded,
+                      "token_uri": "https://oauth2.googleapis.com/token",
+                  },
+                  scopes=["https://www.googleapis.com/auth/analytics.readonly"]
+              )
+              creds.refresh(Request())
+              return creds.token
+
+          # ── Fetch top pages from GA4 ──────────────────────────────────────
+          def fetch_top_pages():
+              token = get_ga4_token()
+              property_id = os.environ.get("GA4_PROPERTY_ID", "")
+              url = f"https://analyticsdata.googleapis.com/v1beta/properties/{property_id}:runReport"
+              payload = {
+                  "dateRanges": [{"startDate": "30daysAgo", "endDate": "today"}],
+                  "dimensions": [{"name": "pagePath"}],
+                  "metrics": [
+                      {"name": "screenPageViews"},
+                      {"name": "averageSessionDuration"}
+                  ],
+                  "orderBys": [{"metric": {"metricName": "screenPageViews"}, "desc": True}],
+                  "limit": 50
+              }
+              res = requests.post(url, json=payload, headers={"Authorization": f"Bearer {token}"}, timeout=20)
+              res.raise_for_status()
+              data = res.json()
+              pages = []
+              for row in data.get("rows", []):
+                  path = row["dimensionValues"][0]["value"]
+                  views = int(row["metricValues"][0]["value"])
+                  if path.startswith("/article/") and views >= MIN_VIEWS:
+                      slug = path.replace("/article/", "").rstrip("/")
+                      pages.append({"slug": slug, "path": path, "views": views})
+              print(f"Found {len(pages)} qualifying pages from GA4")
+              return pages
+
+          # ── Read existing posts to extract title/category ─────────────────
+          def read_post_meta(slug: str):
+              path = os.path.join(POSTS_DIR, f"{slug}.md")
+              if not os.path.exists(path):
+                  return None
+              with open(path, "r", encoding="utf-8") as f:
+                  content = f.read()
+              title_m = re.search(r'title:\s*["\']?(.*?)["\']?\s*$', content, re.MULTILINE)
+              cat_m   = re.search(r'category:\s*["\']?(.*?)["\']?\s*$', content, re.MULTILINE)
+              return {
+                  "title": title_m.group(1).strip() if title_m else slug,
+                  "category": cat_m.group(1).strip() if cat_m else "entertainment",
+              }
+
+          # ── Extract core entity/topic from slug ──────────────────────────
+          def slug_to_topic(slug: str) -> str:
+              # Remove common filler words, return the meaningful core
+              filler = ["the", "a", "an", "in", "on", "at", "of", "and", "or", "for",
+                        "with", "by", "to", "is", "are", "was", "were", "has", "have",
+                        "kenya", "kenyan", "nairobi", "latest", "news", "gossip",
+                        "breaking", "exclusive", "real", "story", "full", "2026", "2025"]
+              words = slug.replace("-", " ").split()
+              topic_words = [w for w in words if w.lower() not in filler]
+              return " ".join(topic_words[:5]) if topic_words else slug.replace("-", " ")
+
+          # ── Gemini API helpers ────────────────────────────────────────────
+          raw_keys = [
+              os.environ.get("GEMINI_WRITE_KEY"),
+              os.environ.get("GEMINI_API_KEY"),
+              os.environ.get("GEMINI_API_KEY1"),
+          ]
+          api_keys = [k for k in raw_keys if k and k.strip()]
+          if not api_keys:
+              print("No Gemini API keys. Exiting.")
+              sys.exit(1)
+
+          key_cycle = itertools.cycle(api_keys)
+          current_key = next(key_cycle)
+          client_g = genai.Client(api_key=current_key)
+          google_search_tool = types.Tool(google_search=types.GoogleSearch())
+
+          def gemini_generate(prompt: str, temperature=0.85) -> str:
+              global current_key, client_g
+              keys_tried = 0
+              for model_id in MODELS:
+                  for _ in range(len(api_keys) * 2):
+                      try:
+                          resp = client_g.models.generate_content(
+                              model=model_id,
+                              contents=prompt,
+                              config=types.GenerateContentConfig(
+                                  temperature=temperature,
+                                  tools=[google_search_tool]
+                              )
+                          )
+                          return resp.text.strip()
+                      except Exception as e:
+                          if "429" in str(e):
+                              keys_tried += 1
+                              if keys_tried >= len(api_keys):
+                                  print("All keys quota hit. Waiting 35s...")
+                                  time.sleep(35)
+                                  keys_tried = 0
+                              current_key = next(key_cycle)
+                              client_g = genai.Client(api_key=current_key)
+                          else:
+                              print(f"Gemini error ({model_id}): {e}")
+                              break
+              raise RuntimeError("All Gemini attempts failed")
+
+          # ── Generate supporting article angles for a topic ────────────────
+          def get_cluster_angles(topic: str, seed_title: str, seed_url: str, category: str) -> list:
+              prompt = f"""You are an SEO strategist for Za Ndani, a Kenyan news and entertainment site.
+
+          The site currently ranks well for this seed article:
+          TITLE: "{seed_title}"
+          URL: "https://zandani.co.ke/article/{seed_url}"
+          CATEGORY: {category}
+          TOPIC ENTITY: "{topic}"
+
+          Your job: Generate exactly 3 supporting article ideas that build TOPICAL AUTHORITY around "{topic}".
+
+          Rules:
+          - Each article must target a DIFFERENT search intent than the seed (e.g. if seed is "real name", suggest "age and tribe", "songs ranked", "beef history")
+          - Each must be genuinely searchable by Kenyan audiences on Google
+          - Each must link naturally back to the seed article
+          - NO duplicate angles
+          - Kenyan entertainment/news focus only
+
+          Return ONLY valid JSON, no markdown, no explanation:
+          [
+            {{
+              "angle": "short description of the article angle",
+              "suggested_title": "SEO-optimized title",
+              "target_query": "the exact Google search query this targets",
+              "category": "entertainment|news|gossip|politics|sports|technology"
+            }},
+            ...
+          ]"""
+              raw = gemini_generate(prompt, temperature=0.7)
+              raw = re.sub(r"^```(?:json)?\n?", "", raw, flags=re.IGNORECASE)
+              raw = re.sub(r"\n?```$", "", raw).strip()
+              try:
+                  angles = json.loads(raw)
+                  return angles[:3]
+              except:
+                  print(f"Could not parse angles JSON for {topic}: {raw[:200]}")
+                  return []
+
+          # ── Write a full article for an angle ────────────────────────────
+          def write_article(angle: dict, seed_title: str, seed_url: str) -> dict:
+              category = angle.get("category", "entertainment")
+              author_name, persona = get_author(category)
+
+              # Grab a few existing post titles for internal linking
+              internal_links = ""
+              if os.path.exists(POSTS_DIR):
+                  import random
+                  files = [f for f in os.listdir(POSTS_DIR) if f.endswith(".md")]
+                  sample = random.sample(files, min(len(files), 3))
+                  lines = []
+                  for fn in sample:
+                      try:
+                          with open(os.path.join(POSTS_DIR, fn), "r", encoding="utf-8") as cf:
+                              txt = cf.read()
+                          t_m = re.search(r'title:\s*["\']?(.*?)["\']?\s*$', txt, re.MULTILINE)
+                          t = t_m.group(1).strip() if t_m else fn.replace(".md", "")
+                          lines.append(f'- Title: {t} | Link: https://zandani.co.ke/article/{fn.replace(".md","")}')
+                      except:
+                          continue
+                  if lines:
+                      internal_links = "INTERNAL LINKS (use ONE naturally in the body):\n" + "\n".join(lines)
+
+              # Always include the seed article as a mandatory internal link
+              seed_link = f"- Title: {seed_title} | Link: https://zandani.co.ke/article/{seed_url}"
+
+              prompt = f"""Current Date: {full_date_str}
+          ARTICLE BRIEF:
+          Title suggestion: "{angle['suggested_title']}"
+          Target search query: "{angle['target_query']}"
+          Category: {category}
+          Angle: {angle['angle']}
+
+          MANDATORY INTERNAL LINK (MUST appear naturally in the body once):
+          {seed_link}
+
+          OPTIONAL INTERNAL LINKS (use ONE if it fits naturally):
+          {internal_links}
+
+          TASK: Write a full news/entertainment article as {persona}
+          Use Google Search to find current, accurate facts about this topic before writing.
+
+          SMART TITLE ENGINE:
+          Step 1 - Extract PRIMARY KEYWORDS from the target search query (2-4 key words/names).
+          Step 2 - Build a title front-loaded with PRIMARY KEYWORDS, under 60 characters.
+          Step 3 - Build SLUG from PRIMARY KEYWORDS only, lowercase hyphenated, no filler words.
+
+          LANGUAGE RULES:
+          - Professional Kenyan English only. No Sheng, no Swahili.
+          - BANNED: {banned_str}
+          - No long dashes. Single hyphens only.
+          - No bracketed subjective asides.
+
+          OUTPUT FORMAT (strict):
+          TITLE: [title]
+          SLUG: [slug]
+          EXCERPT: [under 160 chars, includes primary keywords]
+          TAGS: [comma, separated, tags]
+          IMAGE_KEYWORD: [unsplash search query]
+          BODY:
+          [Full article. Start with H2 containing primary keyword. First paragraph answers the query in 40 words for featured snippet. Continue with natural subheadings. DO NOT include title, author, or date in body.]
+          """
+              raw = gemini_generate(prompt, temperature=0.88)
+              raw = re.sub(r"^```(?:markdown|text)?\n?", "", raw, flags=re.IGNORECASE)
+              raw = re.sub(r"\n?```$", "", raw).strip()
+
+              parsed = {"TITLE": "", "SLUG": "", "EXCERPT": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": ""}
+              for key in ["TITLE", "SLUG", "EXCERPT", "TAGS", "IMAGE_KEYWORD"]:
+                  m = re.search(rf"^{key}:\s*(.*)", raw, re.MULTILINE | re.IGNORECASE)
+                  if m:
+                      parsed[key] = m.group(1).strip()
+              body_m = re.search(r"BODY:\s*(.*)", raw, re.DOTALL | re.IGNORECASE)
+              if body_m:
+                  parsed["BODY"] = body_m.group(1).strip()
+
+              # Clean body
+              for key in ["TITLE", "SLUG", "EXCERPT", "TAGS", "IMAGE_KEYWORD", "BODY"]:
+                  parsed["BODY"] = re.sub(rf"^{key}:.*\n?", "", parsed["BODY"], flags=re.MULTILINE | re.IGNORECASE).strip()
+              parsed["BODY"] = parsed["BODY"].replace("\u2014", "-").replace("\u2013", "-")
+
+              if not parsed["SLUG"] and parsed["TITLE"]:
+                  parsed["SLUG"] = re.sub(r"[^a-z0-9]+", "-", parsed["TITLE"].lower()).strip("-")[:70]
+
+              return {**parsed, "author": author_name, "category": category}
+
+          # ── Fetch image ───────────────────────────────────────────────────
+          def get_image(query: str) -> str:
+              access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
+              fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+              if not access_key:
+                  return fallback
+              try:
+                  r = requests.get(
+                      f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}",
+                      timeout=10
+                  )
+                  if r.status_code == 200:
+                      return r.json()["urls"]["regular"]
+              except:
+                  pass
+              return fallback
+
+          def upload_imgbb(image_url: str) -> str:
+              api_key = os.environ.get("IMGBB_API_KEY")
+              if not api_key or not image_url:
+                  return image_url
+              try:
+                  img_data = requests.get(image_url, timeout=15).content
+                  b64 = base64.b64encode(img_data).decode("utf-8")
+                  res = requests.post("https://api.imgbb.com/1/upload", data={"key": api_key, "image": b64}, timeout=20)
+                  if res.status_code == 200:
+                      return res.json()["data"]["url"]
+              except Exception as e:
+                  print(f"ImgBB error: {e}")
+              return image_url
+
+          # ── Save article to disk ──────────────────────────────────────────
+          def save_article(parsed: dict, image_url: str) -> str:
+              tags_list = [t.strip().replace('"', '') for t in parsed["TAGS"].split(",") if t.strip()]
+              tags_str = ", ".join([f'"{t}"' for t in tags_list]) if tags_list else f'"{parsed["category"]}", "kenya"'
+
+              content = textwrap.dedent(f"""\
+          ---
+          title: "{parsed['TITLE'].replace('"', "'")}"
+          slug: "{parsed['SLUG']}"
+          excerpt: "{parsed['EXCERPT'].replace('"', "'")}"
+          author: "{parsed['author']}"
+          image: "{image_url}"
+          category: "{parsed['category'].title()}"
+          date: "{today_str}"
+          tags: [{tags_str}]
+          ---
+
+          {parsed['BODY']}
+          """)
+              os.makedirs(POSTS_DIR, exist_ok=True)
+              filename = f"{parsed['SLUG']}.md"
+              filepath = os.path.join(POSTS_DIR, filename)
+              with open(filepath, "w", encoding="utf-8") as f:
+                  f.write(content)
+              print(f"Saved: {filename}")
+              return filename
+
+          # ════════════════════════════════════════════════════════════════
+          # MAIN
+          # ════════════════════════════════════════════════════════════════
+
+          # Load memory
+          memory = json.load(open(MEMORY_FILE)) if os.path.exists(MEMORY_FILE) else {}
+          # memory = { "topic_hash": ["slug1", "slug2"] }  tracks what's been written per cluster
+
+          print("Fetching top pages from GA4...")
+          try:
+              top_pages = fetch_top_pages()
+          except Exception as e:
+              print(f"GA4 fetch failed: {e}")
+              sys.exit(1)
+
+          if not top_pages:
+              print("No qualifying pages found. Try lowering MIN_VIEWS.")
+              sys.exit(0)
+
+          articles_written = 0
+          clusters_processed = 0
+
+          for page in top_pages:
+              if clusters_processed >= MAX_CLUSTERS:
+                  print(f"Reached max clusters ({MAX_CLUSTERS}). Stopping.")
+                  break
+
+              slug = page["slug"]
+              views = page["views"]
+              topic = slug_to_topic(slug)
+              topic_hash = hashlib.md5(topic.encode()).hexdigest()
+
+              # Read seed article metadata
+              meta = read_post_meta(slug)
+              if not meta:
+                  print(f"No local file for slug '{slug}' — skipping")
+                  continue
+
+              seed_title = meta["title"]
+              category = meta["category"]
+
+              print(f"\n─── Cluster: '{topic}' ({views} views) ───")
+              print(f"    Seed: {seed_title}")
+
+              # Get already-written angles for this cluster
+              written_angles = memory.get(topic_hash, [])
+
+              # Generate angles
+              try:
+                  angles = get_cluster_angles(topic, seed_title, slug, category)
+              except Exception as e:
+                  print(f"Could not generate angles for {topic}: {e}")
+                  continue
+
+              new_angles_written = 0
+              for angle in angles:
+                  angle_hash = hashlib.md5(angle.get("target_query", "").encode()).hexdigest()
+
+                  if angle_hash in written_angles:
+                      print(f"  Skipping already-written angle: {angle.get('target_query')}")
+                      continue
+
+                  print(f"  Writing: {angle.get('suggested_title', 'Unknown')}")
+                  print(f"  Targets: {angle.get('target_query', 'Unknown')}")
+
+                  try:
+                      parsed = write_article(angle, seed_title, slug)
+                  except Exception as e:
+                      print(f"  Article write failed: {e}")
+                      continue
+
+                  # Get and re-host image
+                  raw_img = get_image(parsed.get("IMAGE_KEYWORD", topic))
+                  final_img = upload_imgbb(raw_img)
+
+                  save_article(parsed, final_img)
+
+                  written_angles.append(angle_hash)
+                  memory[topic_hash] = written_angles
+                  articles_written += 1
+                  new_angles_written += 1
+
+                  # Small delay between articles to avoid quota spikes
+                  time.sleep(8)
+
+              if new_angles_written > 0:
+                  clusters_processed += 1
+
+          # Save memory
+          os.makedirs(os.path.dirname(MEMORY_FILE), exist_ok=True)
+          with open(MEMORY_FILE, "w") as f:
+              json.dump(memory, f, indent=2)
+
+          print(f"\nDone. {articles_written} articles written across {clusters_processed} clusters.")
+          PYEOF
+
+      - name: Git Safety Pull
+        run: |
+          git config --global user.name "Za Ndani Bot"
+          git config --global user.email "bot@zandani.co.ke"
+          git add .
+          git stash -u
+          git fetch origin main
+          git pull origin main --rebase
+          git stash pop || echo "Nothing to pop"
+
+      - name: Commit and push articles
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: "Za Ndani Bot <bot@zandani.co.ke>"
+          commit_message: "content: E-E-A-T cluster articles [${{ github.run_number }}]"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: 'content/posts/*.md .github/memory_eeat.json'
