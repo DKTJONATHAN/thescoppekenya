@@ -136,7 +136,7 @@ const Index = () => {
 
       {/* HERO SECTION */}
       {topStory && (
-        <section className="relative h-[60vh] min-h-[500px] flex items-end bg-black overflow-hidden group">
+        <section className="relative h-[70vh] min-h-[560px] flex items-end bg-black overflow-hidden group">
           <div className="absolute inset-0">
             <img 
               src={optimizedHeroImage} 
@@ -144,9 +144,9 @@ const Index = () => {
               fetchPriority="high"
               loading="eager"
               decoding="async" 
-              className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-1000"
+              className="w-full h-full object-cover object-[center_20%] opacity-70 group-hover:scale-105 transition-transform duration-1000"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent z-10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10" />
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-transparent z-10" />
           </div>
           <div className="relative container max-w-7xl mx-auto px-4 pb-16 z-20">
