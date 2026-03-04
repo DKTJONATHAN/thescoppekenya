@@ -1,0 +1,471 @@
+name: Manual Article Scraper
+
+on:
+  workflow_dispatch:
+    inputs:
+      article_url:
+        description: 'Paste the full article URL to scrape'
+        required: true
+        type: string
+      author:
+        description: 'Author persona to write as'
+        required: true
+        type: choice
+        options:
+          - Za Ndani
+          - Mutheu Ann
+          - Celestine Nzioka
+        default: Za Ndani
+      category:
+        description: 'Article category'
+        required: true
+        type: choice
+        options:
+          - Entertainment
+          - Politics
+          - News
+          - Gossip
+          - Sports
+          - Technology
+        default: Entertainment
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+  MEMORY_FILE: .github/memory_manual.json
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil
+          playwright install chromium
+
+      - name: Scrape and generate article
+        env:
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
+          MEMORY_FILE: ${{ env.MEMORY_FILE }}
+          INPUT_URL: ${{ inputs.article_url }}
+          INPUT_AUTHOR: ${{ inputs.author }}
+          INPUT_CATEGORY: ${{ inputs.category }}
+        run: |
+          python - <<'PYEOF'
+          import os, json, datetime, requests, re, time, sys, hashlib, textwrap, itertools, base64
+          from dateutil import parser as date_parser
+          from google import genai
+          from google.genai import types
+          from bs4 import BeautifulSoup
+          from playwright.sync_api import sync_playwright
+
+          today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
+
+          MODELS_TO_TRY = ["gemini-2.5-flash-preview-05-20", "gemini-2.5-flash"]
+
+          BANNED_PHRASES = [
+              "sasa basi", "melting the pot", "spill the tea", "tea is hot",
+              "grab your popcorn", "listen up", "buckle up", "breaking news",
+              "sherehe", "form ni gani", "udaku", "hello guys", "welcome back",
+              "mambo vipi", "niaje wasee", "karibuni", "tapestry", "dive in",
+              "delve into", "moreover", "furthermore", "in conclusion",
+              "it's worth noting", "a testament to", "navigating the landscape",
+              "in today's digital age", "shed light on"
+          ]
+
+          target_url = os.environ.get("INPUT_URL", "").strip()
+          author = os.environ.get("INPUT_AUTHOR", "Za Ndani").strip()
+          category = os.environ.get("INPUT_CATEGORY", "Entertainment").strip()
+
+          if not target_url:
+              print("No URL provided. Exiting.")
+              sys.exit(1)
+
+          print(f"Target URL: {target_url}")
+          print(f"Author: {author}")
+          print(f"Category: {category}")
+
+          # Author persona descriptions
+          AUTHOR_PERSONAS = {
+              "Za Ndani": "Za Ndani, a sharp and cynical Kenyan entertainment journalist. Emulate the engaging, dramatic tone of authentic Mpasho authors. Point out the bad side of everything, the angle mainstream media ignores.",
+              "Mutheu Ann": "Mutheu Ann, a sharp, plugged-in Kenyan entertainment journalist writing for Za Ndani. Write in a passionate, high-energy style. Point out the critical angle that mainstream media ignores.",
+              "Celestine Nzioka": "Celestine Nzioka, a cynical and authoritative Kenyan political and news journalist. Be hard-hitting and expose the angle mainstream media ignores. Write with authority and precision."
+          }
+          persona = AUTHOR_PERSONAS.get(author, AUTHOR_PERSONAS["Za Ndani"])
+
+          def upload_to_imgbb(image_url):
+              api_key = os.environ.get("IMGBB_API_KEY")
+              if not api_key or not image_url:
+                  return image_url
+              try:
+                  print(f"Uploading image to ImgBB: {image_url}")
+                  img_data = requests.get(image_url, timeout=15).content
+                  base64_image = base64.b64encode(img_data).decode("utf-8")
+                  res = requests.post(
+                      "https://api.imgbb.com/1/upload",
+                      data={"key": api_key, "image": base64_image},
+                      timeout=20
+                  )
+                  if res.status_code == 200:
+                      new_url = res.json()["data"]["url"]
+                      print(f"Re-hosted to: {new_url}")
+                      return new_url
+                  else:
+                      print(f"ImgBB failed: {res.text}")
+                      return image_url
+              except Exception as e:
+                  print(f"ImgBB exception: {e}")
+                  return image_url
+
+          def get_real_image(query):
+              access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
+              fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+              if not access_key:
+                  return fallback
+              try:
+                  resp = requests.get(
+                      f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}",
+                      timeout=10
+                  )
+                  if resp.status_code == 200:
+                      return resp.json()["urls"]["regular"]
+              except:
+                  pass
+              return fallback
+
+          def dash_scrubber(text):
+              if not text:
+                  return ""
+              text = text.replace("\u2014", "-").replace("\u2013", "-")
+              text = text.replace(chr(8212), "-").replace(chr(8211), "-")
+              return text
+
+          def scrape_url(url):
+              print(f"Scraping: {url}")
+              with sync_playwright() as p:
+                  browser = p.chromium.launch(headless=True, args=[
+                      "--no-sandbox",
+                      "--disable-dev-shm-usage",
+                      "--disable-blink-features=AutomationControlled"
+                  ])
+                  context = browser.new_context(
+                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+                      viewport={"width": 1920, "height": 1080}
+                  )
+                  page = context.new_page()
+                  page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["stylesheet", "font", "media"] else route.continue_())
+                  try:
+                      try:
+                          page.goto(url, timeout=45000, wait_until="domcontentloaded")
+                      except Exception as e:
+                          print(f"Goto exception (likely non-fatal): {e}")
+                      try:
+                          page.wait_for_selector("p", timeout=10000)
+                      except:
+                          pass
+                      page.wait_for_timeout(4000)
+                      content = page.content()
+                      soup = BeautifulSoup(content, "html.parser")
+
+                      # Title
+                      page_title = ""
+                      title_tag = soup.find("title")
+                      if title_tag:
+                          page_title = title_tag.get_text().strip()
+                      if not page_title:
+                          h1 = soup.find("h1")
+                          if h1:
+                              page_title = h1.get_text().strip()
+
+                      # Body text - try article containers first, then fall back
+                      article_text = ""
+                      containers = soup.select("article, main, .article-content, .article-body, .post-content, .entry-content, .content-body, .story-body, .post__content")
+                      for c in containers:
+                          paras = c.find_all("p")
+                          chunk = "\n\n".join([p.get_text(strip=True) for p in paras if len(p.get_text(strip=True)) > 40])
+                          if len(chunk) > 500:
+                              article_text = chunk
+                              break
+
+                      if len(article_text) < 500:
+                          all_paras = soup.find_all("p")
+                          chunk = "\n\n".join([p.get_text(strip=True) for p in all_paras if len(p.get_text(strip=True)) > 40])
+                          if len(chunk) > 300:
+                              article_text = chunk
+
+                      if len(article_text) < 300:
+                          body = soup.find("body")
+                          if body:
+                              lines = [line.strip() for line in body.get_text(separator="\n").split("\n") if len(line.strip()) > 50]
+                              article_text = "\n\n".join(lines)
+
+                      # Image - avoid logos and placeholders
+                      img_url = ""
+                      lead_img = soup.select_one("article img, .article-content img, .story-body img, picture img")
+                      if lead_img and lead_img.get("src"):
+                          src = lead_img.get("src")
+                          if "data:image" not in src and "placeholder" not in src.lower() and "logo" not in src.lower():
+                              img_url = src if src.startswith("http") else url.rstrip("/") + "/" + src.lstrip("/")
+
+                      if not img_url:
+                          for meta in soup.find_all("meta"):
+                              if meta.get("property") in ["og:image", "twitter:image"]:
+                                  c = meta.get("content", "")
+                                  if c and "logo" not in c.lower() and "default" not in c.lower():
+                                      img_url = c
+                                      break
+
+                      print(f"Title: {page_title}")
+                      print(f"Text length: {len(article_text)} characters")
+                      print(f"Image: {img_url[:80] if img_url else 'None'}")
+                      return article_text, img_url, page_title
+
+                  except Exception as e:
+                      print(f"Scrape failed: {e}")
+                      return None, None, None
+                  finally:
+                      browser.close()
+
+          raw_text, raw_image, raw_title = scrape_url(target_url)
+
+          if not raw_text or len(raw_text) < 200:
+              print(f"Could not extract enough content from URL. Got {len(raw_text) if raw_text else 0} characters.")
+              sys.exit(1)
+
+          # Check memory to avoid re-processing the same URL
+          memory_path = os.environ.get("MEMORY_FILE")
+          memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
+          url_hash = hashlib.md5(target_url.encode()).hexdigest()
+          if url_hash in memory:
+              print(f"This URL has already been processed. If you want to reprocess it, clear the memory file.")
+              sys.exit(0)
+
+          # API keys
+          raw_keys = [
+              os.environ.get("GEMINI_WRITE_KEY"),
+              os.environ.get("GEMINI_API_KEY"),
+              os.environ.get("GEMINI_API_KEY1")
+          ]
+          api_keys = [k for k in raw_keys if k and k.strip()]
+          if not api_keys:
+              print("No Gemini API keys provided.")
+              sys.exit(1)
+
+          key_cycle = itertools.cycle(api_keys)
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+          google_search_tool = types.Tool(google_search=types.GoogleSearch())
+          banned_str = ", ".join(BANNED_PHRASES)
+
+          # Internal links
+          posts_dir = os.environ.get("POSTS_DIR", "content/posts")
+          internal_links = ""
+          if os.path.exists(posts_dir):
+              import random
+              files = [f for f in os.listdir(posts_dir) if f.endswith(".md")]
+              if files:
+                  sample = random.sample(files, min(len(files), 3))
+                  internal_links = "PAST STORIES (PICK ONE AND LINK IT NATURALLY IN THE TEXT USING MARKDOWN):\n"
+                  for f in sample:
+                      try:
+                          with open(os.path.join(posts_dir, f), "r", encoding="utf-8") as cf:
+                              txt = cf.read()
+                              t_match = re.search(r'title:\s*"(.*?)"', txt)
+                              t = t_match.group(1) if t_match else f
+                              internal_links += f"- Title: {t} | Link: https://zandani.co.ke/article/{f.replace('.md', '')}\n"
+                      except:
+                          continue
+
+          prompt = f"""Current Date: {full_date_str}
+          ORIGINAL HEADLINE: "{raw_title}"
+          SOURCE URL: "{target_url}"
+          SOURCE SCRAPED TEXT: "{raw_text[:12000]}"
+
+          {internal_links}
+
+          TASK: Write a news/entertainment report as {persona}
+          You must use Google Search to verify any facts and find additional context about this story.
+
+          SMART TITLE ENGINE (FOLLOW STRICTLY):
+          Step 1 - Extract PRIMARY KEYWORDS: Pull the 2 to 4 most important words or names directly from ORIGINAL HEADLINE. These are names, places, show titles, or scandal keywords. Do NOT rephrase or replace them.
+          Step 2 - Classify content type as one of: LIST, BIO, SCANDAL, GUIDE, TRENDING, NEWS.
+          Step 3 - Pick the best formula for the content type:
+            - LIST type: use "[Number] + [Primary Keyword] + [Benefit]"
+            - BIO type: use "[Primary Keyword] + Real Name, Age, or Bio"
+            - SCANDAL type: use "[Primary Keyword] + [What Happened] + [Consequence]"
+            - GUIDE type: use "[Primary Keyword] + [How or What] + [Year]"
+            - TRENDING or NEWS type: use "[Primary Keyword] + [Short Dramatic Hook]"
+          Step 4 - Build TITLE: start with PRIMARY KEYWORDS, apply chosen formula, keep under 60 characters.
+          Step 5 - Build SLUG: use PRIMARY KEYWORDS only, lowercase, hyphen-separated, no filler words.
+
+          LANGUAGE MANDATE (STRICT):
+          - NO SHENG OR SWAHILI. Write in clear, dramatic, and professional Kenyan English.
+          - DO NOT use British slang or chatty fillers such as Right, or Well,.
+          - STRICTLY PROHIBITED: Do not use bracketed subjective asides or personal commentary in brackets.
+          - BANNED PHRASES: {banned_str}.
+          - NEVER use long dashes or double dashes. Only use regular single hyphens.
+
+          STRICT OUTPUT FORMAT:
+          TITLE: [Result of Smart Title Engine - front-loaded with PRIMARY KEYWORDS]
+          SLUG: [Result of Smart Title Engine - PRIMARY KEYWORDS only]
+          EXCERPT: [Snippet under 160 characters featuring PRIMARY KEYWORDS]
+          TAGS: [comma, separated, english, seo, tags]
+          IMAGE_KEYWORD: [search query for fallback image]
+          BODY:
+          [Article text containing the internal link.
+          Structure: Start with an H2 heading containing at least one PRIMARY KEYWORD. Follow immediately with a crisp, 40-word neutral answer paragraph for Google Snippets. Then continue with natural subheadings that also reuse PRIMARY KEYWORDS.
+          - DO NOT include the title, author name, date, or updated on anywhere in the body text.
+          - Start immediately with the core article content and paragraphs.]
+          """
+
+          full_text = ""
+          success_flag = False
+          keys_tried = 0
+
+          for model_id in MODELS_TO_TRY:
+              for retry in range(len(api_keys) * 2):
+                  try:
+                      response = client.models.generate_content(
+                          model=model_id,
+                          contents=prompt,
+                          config=types.GenerateContentConfig(
+                              temperature=0.85,
+                              tools=[google_search_tool]
+                          )
+                      )
+                      full_text = response.text.strip()
+                      success_flag = True
+                      print(f"SUCCESS with {model_id}!")
+                      break
+                  except Exception as e:
+                      if "429" in str(e):
+                          keys_tried += 1
+                          if keys_tried >= len(api_keys):
+                              print("All keys hit quota. Waiting 35s...")
+                              time.sleep(35)
+                              keys_tried = 0
+                          else:
+                              print("Quota hit. Rotating key...")
+                              current_key = next(key_cycle)
+                              client = genai.Client(api_key=current_key)
+                          continue
+                      print(f"Error with {model_id}: {e}")
+                      break
+              if success_flag:
+                  break
+
+          if not success_flag:
+              print("All Gemini attempts failed.")
+              sys.exit(1)
+
+          # Parse output
+          full_text = re.sub(r"^```(?:markdown|text|html)?\n", "", full_text, flags=re.IGNORECASE)
+          full_text = re.sub(r"\n```$", "", full_text).strip()
+
+          parsed = {"TITLE": "", "SLUG": "", "EXCERPT": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": ""}
+
+          section_matches = re.findall(r"^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD):\s*(.*)", full_text, re.MULTILINE | re.IGNORECASE)
+          for key, value in section_matches:
+              parsed[key.upper()] = value.strip()
+
+          body_match = re.search(r"BODY:\s*(.*)", full_text, re.DOTALL | re.IGNORECASE)
+          if body_match:
+              parsed["BODY"] = body_match.group(1).strip()
+          else:
+              parsed["BODY"] = full_text.split("BODY:", 1)[-1].strip() if "BODY:" in full_text else full_text
+
+          parsed["BODY"] = re.sub(r"^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD|BODY):\s*.*$", "", parsed["BODY"], flags=re.MULTILINE | re.IGNORECASE).strip()
+          parsed["BODY"] = re.sub(r"^(?:\*\*?)?(?:Title|Headline):?.*?\n+", "", parsed["BODY"], flags=re.IGNORECASE).strip()
+          parsed["BODY"] = re.sub(r"^(?:\*\*?)?(?:By|Author):?.*?\n+", "", parsed["BODY"], flags=re.IGNORECASE).strip()
+          parsed["BODY"] = re.sub(r"^(?:\*\*?)?(?:Date|Updated):?.*?\n+", "", parsed["BODY"], flags=re.IGNORECASE).strip()
+          parsed["BODY"] = dash_scrubber(parsed["BODY"]).strip()
+
+          # Fallback slug if empty
+          if not parsed["SLUG"] and parsed["TITLE"]:
+              parsed["SLUG"] = re.sub(r'[^a-z0-9]+', '-', parsed["TITLE"].lower()).strip('-')[:70]
+
+          tags_list = [t.strip().replace('"', '') for t in parsed["TAGS"].split(",") if t.strip()]
+          tags_str = ", ".join([f'"{t}"' for t in tags_list]) if tags_list else f'"{category.lower()}", "kenya"'
+
+          # Image: use scraped image first, fallback to Unsplash
+          initial_image = raw_image if raw_image else get_real_image(parsed.get("IMAGE_KEYWORD") or raw_title)
+          final_image = upload_to_imgbb(initial_image)
+
+          final_file = textwrap.dedent(f"""\
+          ---
+          title: "{parsed['TITLE'].replace('"', "'")}"
+          slug: "{parsed['SLUG']}"
+          excerpt: "{parsed['EXCERPT'].replace('"', "'")}"
+          author: "{author}"
+          image: "{final_image}"
+          category: "{category}"
+          date: "{today_str}"
+          tags: [{tags_str}]
+          ---
+
+          {parsed['BODY']}
+          """)
+
+          out_dir = os.path.join(os.getcwd(), posts_dir)
+          os.makedirs(out_dir, exist_ok=True)
+          filename = f"{parsed['SLUG']}.md"
+          filepath = os.path.join(out_dir, filename)
+
+          with open(filepath, "w", encoding="utf-8") as f:
+              f.write(final_file)
+
+          # Save to memory
+          memory.append(url_hash)
+          os.makedirs(os.path.dirname(memory_path), exist_ok=True)
+          with open(memory_path, "w") as f:
+              json.dump(memory[-500:], f)
+
+          print(f"Article saved: {filename}")
+          print(f"Title: {parsed['TITLE']}")
+          print(f"Slug: {parsed['SLUG']}")
+          PYEOF
+
+      - name: Git Safety Pull
+        run: |
+          git config --global user.name "Za Ndani Bot"
+          git config --global user.email "bot@zandani.co.ke"
+          git add .
+          git stash -u
+          git fetch origin main
+          git pull origin main --rebase
+          git stash pop || echo "Nothing to pop"
+
+      - name: Commit and push article
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: "Za Ndani Bot <bot@zandani.co.ke>"
+          commit_message: "content: Manual article from ${{ inputs.article_url }}"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: 'content/posts/*.md .github/memory_manual.json'
