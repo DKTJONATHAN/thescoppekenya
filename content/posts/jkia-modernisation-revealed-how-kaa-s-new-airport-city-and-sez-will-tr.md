@@ -1,0 +1,23 @@
+---
+title: "JKIA Modernisation: [REVEALED] How KAA’s New Airport City and SEZ Will Transform Kenya"
+slug: "jkia-modernisation-revealed-how-kaa-s-new-airport-city-and-sez-will-tr"
+author: "Celestine Nzioka"
+category: "News"
+date: "2026-03-04"
+---
+
+**By Celestine Nzioka**
+
+The landscape of regional aviation is shifting as the Kenyan government moves to solidify the dominance of Jomo Kenyatta International Airport through a massive infrastructural overhaul. Just hours after Transport Cabinet Secretary Davis Chirchir concluded a high level press briefing on Tuesday evening, the finer details of a transformative blueprint have emerged. This plan seeks to transition JKIA from a mere transit point into a sprawling Airport City and a Special Economic Zone.
+
+According to CS Chirchir, the Kenya Airports Authority is ready to execute a strategy that addresses years of incremental development which has left the facility struggling under the weight of current traffic. The cornerstone of this redevelopment is the construction of a new passenger terminal. This facility is projected to handle an additional 10 million passengers annually. It is a move designed with the next two decades in mind, specifically anchored on traffic forecasting data spanning from 2025 to 2045.
+
+The vision extends far beyond aeronautical services. By establishing an Airport City and an Export Processing Zone, the government aims to capture the economic value of logistics, manufacturing, and business services that thrive on proximity to air transport. This integrated approach ensures that the airport becomes a self sustaining economic hub rather than just a landing strip for aircraft.
+
+Technical upgrades to the airfield are equally ambitious. To solve the long standing issues of a single runway operation, the KAA will construct a partial parallel taxiway and two rapid exit taxiways. These additions are critical for reducing runway occupancy time and increasing the overall throughput of aircraft. Furthermore, the plan includes a runway end exit taxiway to ensure that landing efficiency is maximized during peak hours.
+
+Operational resilience remains a top priority in this modernisation drive. The CS confirmed that essential support infrastructure, including air traffic control systems, fire response stations, and cargo maintenance areas, will be upgraded to meet international safety standards. On the passenger side, the airport is set for a digital revolution. Key systems such as check in, security screening, immigration, and baggage handling will be fully digitalised to eliminate the bottlenecks that have historically plagued the terminal.
+
+The Ministry of Transport is also looking at the landside experience. Access roads to the airport will be upgraded to ease the traffic congestion that often prevents timely arrivals and departures. Chirchir was candid about the risks of inaction, noting that without these interventions, the current infrastructure constraints could severely undermine Kenya’s status as a regional aviation powerhouse.
+
+This redevelopment serves as a clear signal that Kenya is ready to compete on a global scale. By aligning its infrastructure with modern digital standards and economic zoning, JKIA is being positioned to lead the African aviation sector for the next twenty years.
