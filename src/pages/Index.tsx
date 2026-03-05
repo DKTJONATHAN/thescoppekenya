@@ -135,47 +135,54 @@ const FeatureCard = ({ post }: { post: ReturnType<typeof getAllPosts>[0] }) => (
 // ─── AUTHOR CARD ─────────────────────────────────────────────────────────────
 const AUTHORS = [
   {
-    name: "Za Ndani",
-    role: "Entertainment & Gossip",
-    avatar: "ZN",
-    color: "bg-rose-600",
-    bio: "Sharp, cynical, and always first with the scoop. Za Ndani exposes what the mainstream won't touch.",
-  },
-  {
-    name: "Mutheu Ann",
-    role: "Celebrity & Pop Culture",
-    avatar: "MA",
-    color: "bg-purple-600",
-    bio: "Plugged into the global entertainment circuit. If a celebrity breathes wrong, Mutheu Ann notices.",
+    name: "Jonathan Mwaniki",
+    role: "Editor-in-Chief",
+    avatar: "JM",
+    color: "bg-zinc-800",
+    bio: "Content creator and journalist passionate about digital storytelling and Kenyan trends.",
   },
   {
     name: "Celestine Nzioka",
-    role: "News & Politics",
+    role: "Politics & News Editor",
     avatar: "CN",
     color: "bg-blue-700",
     bio: "Authoritative and unflinching. Celestine cuts through political spin to give you the real story.",
   },
   {
-    name: "John Kamau",
-    role: "Investigative Journalist",
-    avatar: "JK",
-    color: "bg-zinc-700",
-    bio: "Dedicated to uncovering the truth behind high-profile cases and social justice issues in Kenya.",
+    name: "Mutheu Ann",
+    role: "Entertainment Lead",
+    avatar: "MA",
+    color: "bg-purple-600",
+    bio: "Plugged into the celebrity circuit. If a star breathes wrong, Mutheu Ann notices first.",
   },
   {
-    name: "Sarah Otieno",
-    role: "Tech & Lifestyle",
-    avatar: "SO",
-    color: "bg-cyan-700",
-    bio: "Exploring the intersection of technology and daily life. Sarah keeps you updated on the latest gadgets and digital trends.",
-  },
-  {
-    name: "David Maina",
-    role: "Sports Analyst",
-    avatar: "DM",
+    name: "Martin Mutwiri",
+    role: "Sports Desk",
+    avatar: "MM",
     color: "bg-green-700",
-    bio: "From local football to international championships, David provides expert commentary and deep-dive analysis.",
+    bio: "Deep dive analyst into local football and global athletic championships.",
   },
+  {
+    name: "Grace Mkamburi",
+    role: "Lifestyle & Culture",
+    avatar: "GM",
+    color: "bg-rose-500",
+    bio: "Exploring the vibrant pulse of Kenyan lifestyle, fashion, and social evolution.",
+  },
+  {
+    name: "Timothy Muli",
+    role: "Tech Correspondent",
+    avatar: "TM",
+    color: "bg-cyan-700",
+    bio: "Unpacking the digital revolution and how technology is reshaping Nairobi's landscape.",
+  },
+  {
+    name: "Za Ndani",
+    role: "Gossip & Exclusives",
+    avatar: "ZN",
+    color: "bg-amber-600",
+    bio: "Sharp, cynical, and always first with the scoop. The voice behind the exclusive tea.",
+  }
 ];
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -219,7 +226,7 @@ const Index = () => {
   const authorPosts = useMemo(() =>
     AUTHORS.map(author => ({
       ...author,
-      latest: withViews.find(p => p.author.toLowerCase() === author.name.toLowerCase()),
+      latest: withViews.find(p => p.author?.toLowerCase() === author.name.toLowerCase()),
     })),
     [withViews]
   );
