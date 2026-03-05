@@ -1,29 +1,69 @@
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { getLatestPosts, Post } from "@/lib/markdown";
-import { Eye, BookOpen, TrendingUp, ChevronRight, Award, Loader2 } from "lucide-react";
+import { Eye, BookOpen, TrendingUp, ChevronRight, Flame, Loader2, Clock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useEffect, useState, useMemo } from "react";
 import { Helmet } from "react-helmet-async";
 
+// ─── CATEGORY COLOR MAP ──────────────────────────────────────────────────────
+function catColor(cat: string): string {
+  const c = cat?.toLowerCase() || "";
+  if (c.includes("entertainment")) return "bg-rose-600";
+  if (c.includes("politics")) return "bg-blue-700";
+  if (c.includes("news")) return "bg-amber-600";
+  if (c.includes("gossip")) return "bg-purple-600";
+  if (c.includes("sports")) return "bg-green-700";
+  if (c.includes("tech")) return "bg-cyan-700";
+  return "bg-zinc-600";
+}
+
+// ─── IMAGE PROXY ─────────────────────────────────────────────────────────────
+function proxyImg(url: string, w = 400): string {
+  if (!url) return "/images/placeholder.jpg";
+  if (url.endsWith(".svg") || url.startsWith("/")) return url;
+  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${w}&output=webp&q=80&we`;
+}
+
+// ─── RELATIVE TIME ────────────────────────────────────────────────────────────
+function timeAgo(dateStr: string): string {
+  const diff = Date.now() - new Date(dateStr).getTime();
+  const h = Math.floor(diff / 3600000);
+  const d = Math.floor(h / 24);
+  if (h < 1) return "Just now";
+  if (h < 24) return `${h}h ago`;
+  if (d < 7) return `${d}d ago`;
+  return new Date(dateStr).toLocaleDateString("en-KE", { day: "numeric", month: "short" });
+}
+
+// ─── AUTHOR COLORS & INITIALS ─────────────────────────────────────────────────
+const AUTHOR_COLORS: Record<string, string> = {
+  "za ndani":        "bg-rose-600",
+  "mutheu ann":      "bg-purple-600",
+  "celestine nzioka":"bg-blue-700",
+};
+function authorColor(name: string): string {
+  return AUTHOR_COLORS[name.toLowerCase()] || "bg-zinc-600";
+}
+function authorInitials(name: string): string {
+  return name.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase();
+}
+
+// ─── TYPES ────────────────────────────────────────────────────────────────────
 export interface AuthorProfile {
   name: string;
   role: string;
   bio: string;
   avatar: string;
   location: string;
-  socials?: {
-    twitter?: string;
-    linkedin?: string;
-    email?: string;
-  };
+  socials?: { twitter?: string; linkedin?: string; email?: string };
 }
 
-const DEFAULT_AUTHOR_PROFILE: AuthorProfile = {
+const DEFAULT_PROFILE: AuthorProfile = {
   name: "Guest Contributor",
   role: "Contributing Writer",
-  bio: "Contributing writer for Za Ndani bringing you the latest stories.",
-  avatar: "/api/placeholder/150/150",
+  bio: "Contributing writer for Za Ndani bringing you the latest stories from Kenya.",
+  avatar: "",
   location: "Kenya",
 };
 
@@ -35,80 +75,46 @@ interface AuthorStats {
   profile: AuthorProfile;
 }
 
+// ═════════════════════════════════════════════════════════════════════════════
+// AUTHORS PAGE
+// ═════════════════════════════════════════════════════════════════════════════
 export default function AuthorsPage() {
   const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
   const [authorsDb, setAuthorsDb] = useState<Record<string, AuthorProfile>>({});
   const [isLoading, setIsLoading] = useState(true);
-  
+
   const allPosts = useMemo(() => getLatestPosts(1000), []);
 
   useEffect(() => {
-    const fetchViews = async () => {
-      try {
-        const res = await fetch('/api/get-views');
-        if (res.ok) {
-          const data = await res.json();
-          setViewCounts(data);
-        }
-      } catch (e) {
-        console.error("View fetch failed");
-      }
-    };
-
-    const fetchAuthors = async () => {
-      try {
-        // Fetches the JSON file written by your Admin Panel
-        const res = await fetch('/content/authors.json');
-        if (res.ok) {
-          const data = await res.json();
-          setAuthorsDb(data);
-        }
-      } catch (e) {
-        console.error("Authors fetch failed, using fallbacks.");
-      }
-    };
-
-    Promise.all([fetchViews(), fetchAuthors()]).finally(() => {
-      setIsLoading(false);
-    });
+    const fetchViews = () =>
+      fetch('/api/get-views').then(r => r.ok ? r.json() : {}).then(setViewCounts).catch(() => {});
+    const fetchAuthors = () =>
+      fetch('/content/authors.json').then(r => r.ok ? r.json() : {}).then(setAuthorsDb).catch(() => {});
+    Promise.all([fetchViews(), fetchAuthors()]).finally(() => setIsLoading(false));
   }, []);
 
-  const authorsData = useMemo(() => {
-    const authorMap = new Map<string, AuthorStats>();
-
+  const authorsData = useMemo<AuthorStats[]>(() => {
+    const map = new Map<string, AuthorStats>();
     allPosts.forEach(post => {
-      const cleanSlug = post.slug.replace(/^\//, '').replace(/\.md$/, '');
-      const exactPath = `/article/${cleanSlug}`;
-      const pathWithSlash = `/article/${cleanSlug}/`;
-      const fallbackPath = `/posts/${cleanSlug}`; 
+      const clean = post.slug.replace(/^\//, '').replace(/\.md$/, '');
+      const v = viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 0;
+      const postViews = v > 0 ? v : 47;
 
-      let gaViews = viewCounts[exactPath] || 
-                    viewCounts[pathWithSlash] || 
-                    viewCounts[fallbackPath] || 
-                    0;
-      
-      const postViews = gaViews > 0 ? gaViews : 47;
-
-      if (!authorMap.has(post.author)) {
-        authorMap.set(post.author, {
+      if (!map.has(post.author)) {
+        map.set(post.author, {
           name: post.author,
           totalViews: 0,
           articleCount: 0,
           latestArticles: [],
-          profile: authorsDb[post.author] || { ...DEFAULT_AUTHOR_PROFILE, name: post.author }
+          profile: authorsDb[post.author] || { ...DEFAULT_PROFILE, name: post.author },
         });
       }
-
-      const stats = authorMap.get(post.author)!;
-      stats.totalViews += postViews;
-      stats.articleCount += 1;
-      
-      if (stats.latestArticles.length < 3) {
-        stats.latestArticles.push(post);
-      }
+      const s = map.get(post.author)!;
+      s.totalViews += postViews;
+      s.articleCount += 1;
+      if (s.latestArticles.length < 3) s.latestArticles.push(post);
     });
-
-    return Array.from(authorMap.values()).sort((a, b) => b.totalViews - a.totalViews);
+    return Array.from(map.values()).sort((a, b) => b.totalViews - a.totalViews);
   }, [allPosts, viewCounts, authorsDb]);
 
   const topAuthors = authorsData.slice(0, 3);
@@ -117,141 +123,282 @@ export default function AuthorsPage() {
   return (
     <Layout>
       <Helmet>
-        <title>Our Authors | Za Ndani</title>
-        <meta name="description" content="Meet the writers and journalists behind Za Ndani." />
+        <title>Our Authors | Za Ndani — Kenya News & Gossip</title>
+        <meta name="description" content="Meet the journalists and writers behind Za Ndani — Kenya's sharpest entertainment gossip and news site." />
         <link rel="canonical" href="https://zandani.co.ke/authors" />
       </Helmet>
 
-      <div className="py-12 md:py-20">
-        <div className="container max-w-6xl">
-          
-          <header className="mb-16 text-center max-w-2xl mx-auto">
-            <Badge className="mb-6 gradient-primary text-primary-foreground border-0 px-5 py-1.5">
-              The Team
-            </Badge>
-            <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight mb-6 text-foreground">
-              Meet Our Writers
-            </h1>
-            <p className="text-xl text-muted-foreground">
-              The journalists, developers, and pop culture experts bringing you the freshest stories in Kenya.
-            </p>
-          </header>
+      {/* ── Page hero ── */}
+      <section className="bg-zinc-950 border-b border-zinc-800 py-14">
+        <div className="container max-w-6xl mx-auto px-4 text-center">
+          <span className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-[0.25em] uppercase text-white px-3 py-1.5 bg-rose-600 mb-5">
+            <Flame className="w-3 h-3" /> The Team
+          </span>
+          <h1 className="text-4xl md:text-5xl font-serif font-black text-white leading-tight mb-4">
+            Meet Our Writers
+          </h1>
+          <p className="text-zinc-400 text-lg max-w-xl mx-auto">
+            The journalists and pop culture experts bringing you the freshest, most unfiltered stories in Kenya.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-14 bg-background">
+        <div className="container max-w-6xl mx-auto px-4">
 
           {isLoading ? (
-            <div className="flex flex-col items-center justify-center py-20 text-muted-foreground">
+            <div className="flex flex-col items-center justify-center py-32 text-muted-foreground">
               <Loader2 className="w-10 h-10 animate-spin text-primary mb-4" />
-              <p>Loading author profiles...</p>
+              <p className="text-sm uppercase tracking-widest font-bold">Loading authors...</p>
             </div>
           ) : (
             <>
+              {/* ── TOP VOICES ── */}
               {topAuthors.length > 0 && (
-                <section className="mb-24">
-                  <div className="flex items-center gap-3 mb-8">
-                    <Award className="w-6 h-6 text-primary" />
-                    <h2 className="text-2xl font-serif font-bold text-foreground">Top Voices</h2>
+                <div className="mb-16">
+                  <div className="flex items-center gap-4 mb-8">
+                    <h2 className="text-xl font-black uppercase tracking-tight flex items-center gap-2">
+                      <TrendingUp className="w-5 h-5 text-primary" /> Top Voices
+                    </h2>
+                    <div className="h-px flex-1 bg-divider" />
                   </div>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6">
-                    {topAuthors.map((author, index) => {
-                      const isFirst = index === 0;
-                      
+
+                  <div className="grid md:grid-cols-12 gap-4">
+
+                    {/* Lead author — large card */}
+                    {topAuthors[0] && (() => {
+                      const author = topAuthors[0];
+                      const color = authorColor(author.name);
+                      const initials = authorInitials(author.name);
                       return (
-                        <div 
-                          key={author.name}
-                          className={`relative bg-muted/30 border border-border rounded-3xl p-8 flex flex-col justify-between overflow-hidden group hover:border-primary/50 transition-colors ${
-                            isFirst ? "md:col-span-2 md:row-span-2" : "md:col-span-1 md:row-span-1"
-                          }`}
-                        >
-                          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
-                          
-                          <div className="relative z-10 flex flex-col h-full">
+                        <div className="md:col-span-7 border border-divider bg-surface flex flex-col overflow-hidden">
+                          {/* Colour bar */}
+                          <div className={`h-1.5 w-full ${color}`} />
+                          <div className="p-8 flex flex-col flex-1">
+                            {/* Header */}
                             <div className="flex items-start justify-between mb-6">
-                              <img 
-                                src={author.profile.avatar} 
-                                alt={author.name}
-                                className={`rounded-full object-cover border-4 border-background shadow-md ${isFirst ? 'w-24 h-24' : 'w-16 h-16'}`}
-                              />
-                              <Badge variant="secondary" className="flex items-center gap-1.5 bg-background shadow-sm">
-                                <TrendingUp className="w-3.5 h-3.5 text-primary" />
-                                Rank #{index + 1}
+                              <div className="flex items-center gap-4">
+                                {author.profile.avatar && !author.profile.avatar.includes("placeholder") ? (
+                                  <img src={author.profile.avatar} alt={author.name}
+                                    className="w-20 h-20 rounded-full object-cover border-4 border-background shadow" />
+                                ) : (
+                                  <div className={`w-20 h-20 rounded-full flex items-center justify-center text-white font-black text-2xl flex-shrink-0 ${color}`}>
+                                    {initials}
+                                  </div>
+                                )}
+                                <div>
+                                  <Link to={`/author/${author.name.toLowerCase().replace(/\s+/g, '-')}`}>
+                                    <h3 className="text-2xl font-serif font-black text-foreground hover:text-primary transition-colors">
+                                      {author.name}
+                                    </h3>
+                                  </Link>
+                                  <p className="text-primary text-sm font-bold mt-0.5">{author.profile.role}</p>
+                                  <p className="text-xs text-muted-foreground mt-0.5">{author.profile.location}</p>
+                                </div>
+                              </div>
+                              <Badge className={`text-white border-0 text-[10px] font-black tracking-wider ${color}`}>
+                                #1 Voice
                               </Badge>
                             </div>
-                            
-                            <div>
-                              <Link to={`/author/${author.name.toLowerCase().replace(/\s+/g, '-')}`}>
-                                <h3 className={`font-serif font-bold text-foreground hover:text-primary transition-colors ${isFirst ? 'text-3xl mb-2' : 'text-xl mb-1'}`}>
-                                  {author.name}
-                                </h3>
-                              </Link>
-                              <p className="text-primary font-medium text-sm mb-4">{author.profile.role}</p>
-                              {isFirst && (
-                                <p className="text-muted-foreground mb-8 max-w-md line-clamp-3">
-                                  {author.profile.bio}
-                                </p>
-                              )}
+
+                            {/* Bio */}
+                            <p className="text-muted-foreground text-sm leading-relaxed border-l-2 border-primary/40 pl-4 mb-6">
+                              {author.profile.bio}
+                            </p>
+
+                            {/* Stats */}
+                            <div className="flex items-center gap-6 text-sm mb-6">
+                              <span className="flex items-center gap-1.5 text-muted-foreground">
+                                <BookOpen className="w-4 h-4 text-primary" />
+                                <span className="font-black text-foreground">{author.articleCount}</span> Articles
+                              </span>
+                              <span className="flex items-center gap-1.5 text-muted-foreground">
+                                <Eye className="w-4 h-4 text-primary" />
+                                <span className="font-black text-foreground">
+                                  {author.totalViews > 999 ? `${(author.totalViews / 1000).toFixed(1)}k` : author.totalViews}
+                                </span> Views
+                              </span>
                             </div>
 
-                            <div className="mt-auto pt-6 border-t border-border/50 flex items-center gap-4 text-sm text-muted-foreground">
-                              <span className="flex items-center gap-1.5">
-                                <BookOpen className="w-4 h-4" />
-                                {author.articleCount} Articles
-                              </span>
-                              <span className="flex items-center gap-1.5">
-                                <Eye className="w-4 h-4" />
-                                {author.totalViews > 999 ? `${(author.totalViews / 1000).toFixed(1)}k` : author.totalViews} Views
-                              </span>
-                            </div>
+                            {/* Latest articles */}
+                            {author.latestArticles.length > 0 && (
+                              <div className="border-t border-divider pt-5 mt-auto space-y-3">
+                                <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground mb-3">Latest Stories</p>
+                                {author.latestArticles.slice(0, 2).map(post => (
+                                  <Link key={post.slug} to={`/article/${post.slug}`}
+                                    className="flex gap-3 group items-start">
+                                    <div className="w-14 h-14 flex-shrink-0 overflow-hidden">
+                                      <img src={proxyImg(post.image, 120)} alt={post.title} loading="lazy"
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                                    </div>
+                                    <div className="min-w-0">
+                                      <span className={`text-[9px] font-black uppercase tracking-wider text-white px-1.5 py-0.5 mb-1 inline-block ${catColor(post.category)}`}>
+                                        {post.category}
+                                      </span>
+                                      <h4 className="text-xs font-bold leading-snug line-clamp-2 group-hover:text-primary transition-colors">
+                                        {post.title}
+                                      </h4>
+                                      <span className="text-[10px] text-muted-foreground flex items-center gap-1 mt-0.5">
+                                        <Clock className="w-3 h-3" />{timeAgo(post.date)}
+                                      </span>
+                                    </div>
+                                  </Link>
+                                ))}
+                              </div>
+                            )}
+
+                            <Link
+                              to={`/author/${author.name.toLowerCase().replace(/\s+/g, '-')}`}
+                              className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary hover:underline mt-5"
+                            >
+                              All stories <ChevronRight className="w-3.5 h-3.5" />
+                            </Link>
                           </div>
                         </div>
                       );
-                    })}
+                    })()}
+
+                    {/* Secondary top authors */}
+                    <div className="md:col-span-5 flex flex-col gap-4">
+                      {topAuthors.slice(1).map((author, i) => {
+                        const color = authorColor(author.name);
+                        const initials = authorInitials(author.name);
+                        return (
+                          <div key={author.name} className="border border-divider bg-surface flex flex-col overflow-hidden flex-1">
+                            <div className={`h-1 w-full ${color}`} />
+                            <div className="p-6 flex flex-col flex-1">
+                              <div className="flex items-center gap-3 mb-4">
+                                {author.profile.avatar && !author.profile.avatar.includes("placeholder") ? (
+                                  <img src={author.profile.avatar} alt={author.name}
+                                    className="w-12 h-12 rounded-full object-cover border-2 border-background shadow flex-shrink-0" />
+                                ) : (
+                                  <div className={`w-12 h-12 rounded-full flex items-center justify-center text-white font-black text-sm flex-shrink-0 ${color}`}>
+                                    {initials}
+                                  </div>
+                                )}
+                                <div className="min-w-0 flex-1">
+                                  <Link to={`/author/${author.name.toLowerCase().replace(/\s+/g, '-')}`}>
+                                    <h3 className="font-black text-base text-foreground hover:text-primary transition-colors truncate">
+                                      {author.name}
+                                    </h3>
+                                  </Link>
+                                  <p className="text-xs text-primary font-bold">{author.profile.role}</p>
+                                </div>
+                                <Badge className={`text-white border-0 text-[9px] font-black flex-shrink-0 ${color}`}>
+                                  #{i + 2}
+                                </Badge>
+                              </div>
+
+                              <p className="text-muted-foreground text-xs leading-relaxed line-clamp-2 mb-4">
+                                {author.profile.bio}
+                              </p>
+
+                              <div className="flex items-center gap-5 text-xs text-muted-foreground mt-auto pt-4 border-t border-divider">
+                                <span className="flex items-center gap-1">
+                                  <BookOpen className="w-3 h-3 text-primary" />
+                                  <span className="font-black text-foreground">{author.articleCount}</span> Articles
+                                </span>
+                                <span className="flex items-center gap-1">
+                                  <Eye className="w-3 h-3 text-primary" />
+                                  <span className="font-black text-foreground">
+                                    {author.totalViews > 999 ? `${(author.totalViews / 1000).toFixed(1)}k` : author.totalViews}
+                                  </span> Views
+                                </span>
+                                <Link
+                                  to={`/author/${author.name.toLowerCase().replace(/\s+/g, '-')}`}
+                                  className="ml-auto flex items-center gap-1 text-primary font-black hover:underline"
+                                >
+                                  View <ChevronRight className="w-3 h-3" />
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
-                </section>
+                </div>
               )}
 
+              {/* ── ALL CONTRIBUTORS ── */}
               {restAuthors.length > 0 && (
-                <section>
-                  <h2 className="text-2xl font-serif font-bold text-foreground mb-8 border-b border-border pb-4">
-                    All Contributors
-                  </h2>
-                  
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {restAuthors.map((author) => (
-                      <Link 
-                        key={author.name}
-                        to={`/author/${author.name.toLowerCase().replace(/\s+/g, '-')}`}
-                        className="block group bg-surface border border-border rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-1"
-                      >
-                        <div className="flex flex-col items-center text-center">
-                          <img 
-                            src={author.profile.avatar} 
-                            alt={author.name}
-                            className="w-20 h-20 rounded-full object-cover mb-4"
-                          />
-                          <h3 className="font-bold text-foreground group-hover:text-primary transition-colors">
-                            {author.name}
-                          </h3>
-                          <p className="text-xs text-muted-foreground mt-1 mb-4">
-                            {author.profile.role}
-                          </p>
-                          
-                          <div className="w-full pt-4 border-t border-border flex justify-between text-xs text-muted-foreground">
-                            <span>{author.articleCount} posts</span>
-                            <span className="flex items-center text-primary group-hover:underline">
-                              View Profile <ChevronRight className="w-3 h-3 ml-0.5" />
-                            </span>
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
+                <div>
+                  <div className="flex items-center gap-4 mb-8">
+                    <h2 className="text-xl font-black uppercase tracking-tight">All Contributors</h2>
+                    <div className="h-px flex-1 bg-divider" />
                   </div>
-                </section>
+
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    {restAuthors.map(author => {
+                      const color = authorColor(author.name);
+                      const initials = authorInitials(author.name);
+                      return (
+                        <Link
+                          key={author.name}
+                          to={`/author/${author.name.toLowerCase().replace(/\s+/g, '-')}`}
+                          className="group border border-divider bg-surface hover:border-primary transition-colors overflow-hidden block"
+                        >
+                          <div className={`h-1 w-full ${color}`} />
+                          <div className="p-5 flex flex-col items-center text-center">
+                            {author.profile.avatar && !author.profile.avatar.includes("placeholder") ? (
+                              <img src={author.profile.avatar} alt={author.name}
+                                className="w-16 h-16 rounded-full object-cover mb-3 border-2 border-background shadow" />
+                            ) : (
+                              <div className={`w-16 h-16 rounded-full flex items-center justify-center text-white font-black text-lg mb-3 ${color}`}>
+                                {initials}
+                              </div>
+                            )}
+                            <h3 className="font-black text-sm text-foreground group-hover:text-primary transition-colors mb-0.5">
+                              {author.name}
+                            </h3>
+                            <p className="text-[11px] text-muted-foreground mb-4">{author.profile.role}</p>
+
+                            {/* Latest article thumbnail */}
+                            {author.latestArticles[0] && (
+                              <div className="w-full mb-4">
+                                <div className="relative overflow-hidden h-24 w-full">
+                                  <img
+                                    src={proxyImg(author.latestArticles[0].image, 300)}
+                                    alt={author.latestArticles[0].title}
+                                    loading="lazy"
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                  />
+                                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                                  <span className={`absolute bottom-1.5 left-1.5 text-[9px] font-black uppercase text-white px-1.5 py-0.5 ${catColor(author.latestArticles[0].category)}`}>
+                                    {author.latestArticles[0].category}
+                                  </span>
+                                </div>
+                                <p className="text-[11px] font-bold leading-snug line-clamp-2 mt-2 text-left group-hover:text-primary transition-colors">
+                                  {author.latestArticles[0].title}
+                                </p>
+                              </div>
+                            )}
+
+                            <div className="w-full pt-3 border-t border-divider flex justify-between text-[11px] text-muted-foreground">
+                              <span className="flex items-center gap-1">
+                                <BookOpen className="w-3 h-3" />{author.articleCount} posts
+                              </span>
+                              <span className="flex items-center gap-1 text-primary font-black">
+                                Profile <ChevronRight className="w-3 h-3" />
+                              </span>
+                            </div>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {authorsData.length === 0 && (
+                <div className="py-32 text-center text-muted-foreground">
+                  <p className="font-serif italic text-xl">No authors found.</p>
+                </div>
               )}
             </>
           )}
-
         </div>
-      </div>
+      </section>
     </Layout>
   );
 }
