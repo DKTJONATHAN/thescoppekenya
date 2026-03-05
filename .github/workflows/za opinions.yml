@@ -131,7 +131,7 @@ jobs:
                                   keys_tried = 0
                               else:
                                   print("Quota hit. Rotating key...")
-                                  nonlocal current_key, client
+                                  global current_key, client
                                   current_key = next(key_cycle)
                                   client = genai.Client(api_key=current_key)
                               continue
