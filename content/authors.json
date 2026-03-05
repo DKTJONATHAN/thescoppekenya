@@ -1,114 +1,6 @@
 {
-  "The Scoop Kenya": {
-    "name": "The Scoop Kenya",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "Jonathan Mwaniki": {
-    "name": "Jonathan Mwaniki",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "Martin Mutwiri": {
-    "name": "Martin Mutwiri",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "The Scoop KE": {
-    "name": "The Scoop KE",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
   "Celestine Nzioka": {
     "name": "Celestine Nzioka",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "Grace Mkamburi": {
-    "name": "Grace Mkamburi",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "Ann Mwende": {
-    "name": "Ann Mwende",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "Timothy Muli": {
-    "name": "Timothy Muli",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "Elizabeth Muthoni": {
-    "name": "Elizabeth Muthoni",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "Jonathan Mwaniki ": {
-    "name": "Jonathan Mwaniki ",
     "role": "Contributing Writer",
     "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
     "avatar": "/api/placeholder/150/150",
@@ -131,8 +23,8 @@
       "email": ""
     }
   },
-  "Okwonko Ben": {
-    "name": "Okwonko Ben",
+  "Za Ndani": {
+    "name": "Za Ndani",
     "role": "Contributing Writer",
     "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
     "avatar": "/api/placeholder/150/150",
@@ -143,8 +35,128 @@
       "email": ""
     }
   },
-  "Za Ndani": {
-    "name": "Za Ndani",
+  "Martin Mutwiri": {
+    "name": "Martin Mutwiri",
+    "role": "Contributing Writer",
+    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
+    "avatar": "/api/placeholder/150/150",
+    "location": "Kenya",
+    "socials": {
+      "twitter": "",
+      "linkedin": "",
+      "email": ""
+    }
+  },
+  "Timothy Muli": {
+    "name": "Timothy Muli",
+    "role": "Contributing Writer",
+    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
+    "avatar": "/api/placeholder/150/150",
+    "location": "Kenya",
+    "socials": {
+      "twitter": "",
+      "linkedin": "",
+      "email": ""
+    }
+  },
+  "Amara Ndlovu": {
+    "name": "Amara Ndlovu",
+    "role": "Contributing Writer",
+    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
+    "avatar": "/api/placeholder/150/150",
+    "location": "Kenya",
+    "socials": {
+      "twitter": "",
+      "linkedin": "",
+      "email": ""
+    }
+  },
+  "Elizabeth Muthoni": {
+    "name": "Elizabeth Muthoni",
+    "role": "Contributing Writer",
+    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
+    "avatar": "/api/placeholder/150/150",
+    "location": "Kenya",
+    "socials": {
+      "twitter": "",
+      "linkedin": "",
+      "email": ""
+    }
+  },
+  "Grace Mkamburi": {
+    "name": "Grace Mkamburi",
+    "role": "Contributing Writer",
+    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
+    "avatar": "/api/placeholder/150/150",
+    "location": "Kenya",
+    "socials": {
+      "twitter": "",
+      "linkedin": "",
+      "email": ""
+    }
+  },
+  "Jonathan Mwaniki": {
+    "name": "Jonathan Mwaniki",
+    "role": "Contributing Writer",
+    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
+    "avatar": "/api/placeholder/150/150",
+    "location": "Kenya",
+    "socials": {
+      "twitter": "",
+      "linkedin": "",
+      "email": ""
+    }
+  },
+  "The Scoop KE": {
+    "name": "The Scoop KE",
+    "role": "Contributing Writer",
+    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
+    "avatar": "/api/placeholder/150/150",
+    "location": "Kenya",
+    "socials": {
+      "twitter": "",
+      "linkedin": "",
+      "email": ""
+    }
+  },
+  "The Scoop Kenya": {
+    "name": "The Scoop Kenya",
+    "role": "Contributing Writer",
+    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
+    "avatar": "/api/placeholder/150/150",
+    "location": "Kenya",
+    "socials": {
+      "twitter": "",
+      "linkedin": "",
+      "email": ""
+    }
+  },
+  "Ann Mwende": {
+    "name": "Ann Mwende",
+    "role": "Contributing Writer",
+    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
+    "avatar": "/api/placeholder/150/150",
+    "location": "Kenya",
+    "socials": {
+      "twitter": "",
+      "linkedin": "",
+      "email": ""
+    }
+  },
+  "Jonathan Mwaniki ": {
+    "name": "Jonathan Mwaniki ",
+    "role": "Contributing Writer",
+    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
+    "avatar": "/api/placeholder/150/150",
+    "location": "Kenya",
+    "socials": {
+      "twitter": "",
+      "linkedin": "",
+      "email": ""
+    }
+  },
+  "Okwonko Ben": {
+    "name": "Okwonko Ben",
     "role": "Contributing Writer",
     "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
     "avatar": "/api/placeholder/150/150",
