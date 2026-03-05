@@ -48,6 +48,8 @@ const AdUnit = ({ type = 'inarticle' }) => {
     height = 250;
     adScriptContent = `
       <script async="async" data-cfasync="false" src="https://pl28825134.effectivegatecpm.com/5d8ede2dce71e0a3d780b81b5415a822/invoke.js" onerror="window.parent.postMessage('adLoadError_${uniqueId}', '*')"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9291176772735390"
+     crossorigin="anonymous"></script>
       <div id="container-5d8ede2dce71e0a3d780b81b5415a822"></div>
     `;
   } else {
