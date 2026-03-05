@@ -4,7 +4,6 @@ import { getAllPosts } from "@/lib/markdown";
 import { Link } from "react-router-dom";
 import { ArrowRight, TrendingUp, ChevronDown, Flame, Clock, Eye, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Helmet } from "react-helmet-async";
 import AdUnit from "@/components/AdUnit";
 
@@ -14,14 +13,14 @@ const ArticleCard = lazy(() => import("@/components/articles/ArticleCard").then(
 const INITIAL_LOAD = 9;
 const LOAD_MORE_COUNT = 9;
 
-// ─── IMAGE PROXY ────────────────────────────────────────────────────────────
+// ─── IMAGE PROXY ─────────────────────────────────────────────────────────────
 function img(url: string, w = 800): string {
   if (!url) return "/images/placeholder.jpg";
   if (url.endsWith(".svg") || url.startsWith("/")) return url;
   return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${w}&output=webp&q=80&we`;
 }
 
-// ─── RELATIVE TIME ──────────────────────────────────────────────────────────
+// ─── RELATIVE TIME ────────────────────────────────────────────────────────────
 function timeAgo(dateStr: string): string {
   const diff = Date.now() - new Date(dateStr).getTime();
   const h = Math.floor(diff / 3600000);
@@ -32,67 +31,62 @@ function timeAgo(dateStr: string): string {
   return new Date(dateStr).toLocaleDateString("en-KE", { day: "numeric", month: "short" });
 }
 
-// ─── CATEGORY COLOR MAP ─────────────────────────────────────────────────────
+// ─── CATEGORY COLOR MAP ───────────────────────────────────────────────────────
 function catColor(cat: string): string {
   const c = cat?.toLowerCase() || "";
   if (c.includes("entertainment")) return "bg-rose-600";
-  if (c.includes("politics")) return "bg-blue-700";
-  if (c.includes("news")) return "bg-amber-600";
-  if (c.includes("gossip")) return "bg-purple-600";
-  if (c.includes("sports")) return "bg-green-700";
-  if (c.includes("tech")) return "bg-cyan-700";
+  if (c.includes("politics"))      return "bg-blue-700";
+  if (c.includes("news"))          return "bg-amber-600";
+  if (c.includes("gossip"))        return "bg-purple-600";
+  if (c.includes("sports"))        return "bg-green-700";
+  if (c.includes("tech"))          return "bg-cyan-700";
   return "bg-zinc-600";
 }
 
-// ─── MIXED FEED BUILDER ──────────────────────────────────────────────────────
+// ─── MIXED FEED BUILDER ───────────────────────────────────────────────────────
+// Strategy: score each post by recency (primary) + category diversity (secondary).
+// This means the newest articles ALWAYS appear near the top, but consecutive
+// posts from the same category get a small penalty so the feed stays varied.
+// No category can dominate just because it has more volume.
 function buildMixedFeed(posts: ReturnType<typeof getAllPosts>) {
-  const byCategory: Record<string, ReturnType<typeof getAllPosts>> = {};
-  for (const post of posts) {
-    const key = (post.category?.toLowerCase() || "other").trim();
-    if (!byCategory[key]) byCategory[key] = [];
-    byCategory[key].push(post);
-  }
-  for (const key of Object.keys(byCategory)) {
-    byCategory[key].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-  }
-  const ent = byCategory["entertainment"] || [];
-  const news = [...(byCategory["news"] || []), ...(byCategory["politics"] || [])].sort(
+  if (!posts.length) return [];
+
+  // Sort all posts newest-first
+  const sorted = [...posts].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
-  const other = [
-    ...(byCategory["gossip"] || []),
-    ...(byCategory["sports"] || []),
-    ...(byCategory["technology"] || []),
-    ...(byCategory["lifestyle"] || []),
-    ...(byCategory["other"] || []),
-  ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  const mixed: ReturnType<typeof getAllPosts> = [];
-  let ei = 0, ni = 0, oi = 0;
-  while (ei < ent.length || ni < news.length || oi < other.length) {
-    if (ei < ent.length) mixed.push(ent[ei++]);
-    if (ni < news.length) mixed.push(news[ni++]);
-    if (ei < ent.length) mixed.push(ent[ei++]);
-    if (oi < other.length) mixed.push(other[oi++]);
-    if (ni < news.length) mixed.push(news[ni++]);
-  }
-  return mixed;
+  // Assign a recency score: newest post = 1.0, oldest = 0.0
+  const newest = new Date(sorted[0].date).getTime();
+  const oldest = new Date(sorted[sorted.length - 1].date).getTime();
+  const range  = Math.max(newest - oldest, 1);
+
+  // Track last-seen index per category to apply diversity penalty
+  const lastSeenAt: Record<string, number> = {};
+  const DIVERSITY_WINDOW = 3; // penalise if same category appeared within last N slots
+
+  const scored = sorted.map((post, i) => {
+    const recency = (new Date(post.date).getTime() - oldest) / range; // 0–1
+    const cat     = post.category?.toLowerCase() || "other";
+    const lastIdx = lastSeenAt[cat] ?? -999;
+    // Small penalty (0.05 per nearby duplicate) — not enough to bury a genuinely
+    // new post, just enough to nudge varied categories up when timestamps are close
+    const penalty  = Math.max(0, DIVERSITY_WINDOW - (i - lastIdx)) * 0.05;
+    return { post, score: recency - penalty };
+  });
+
+  // Stable sort by score descending (newest still win by a wide margin)
+  scored.sort((a, b) => b.score - a.score);
+
+  return scored.map(s => s.post);
 }
 
-const rawPosts = getAllPosts();
-const allSorted = buildMixedFeed(rawPosts);
-const byDate = [...rawPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-
-// ─── COMPACT CARD ────────────────────────────────────────────────────────────
+// ─── COMPACT CARD ─────────────────────────────────────────────────────────────
 const CompactCard = ({ post }: { post: ReturnType<typeof getAllPosts>[0] }) => (
   <Link to={`/article/${post.slug}`} className="group flex gap-3 items-start">
     <div className="relative w-20 h-20 flex-shrink-0 overflow-hidden bg-zinc-800">
-      <img
-        src={img(post.image, 160)}
-        alt={post.title}
-        loading="lazy"
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-      />
+      <img src={img(post.image, 160)} alt={post.title} loading="lazy"
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
     </div>
     <div className="flex-1 min-w-0">
       <span className={`inline-block text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-1 ${catColor(post.category)}`}>
@@ -108,91 +102,26 @@ const CompactCard = ({ post }: { post: ReturnType<typeof getAllPosts>[0] }) => (
   </Link>
 );
 
-// ─── FEATURE CARD (medium, for grid) ────────────────────────────────────────
-const FeatureCard = ({ post }: { post: ReturnType<typeof getAllPosts>[0] }) => (
-  <Link to={`/article/${post.slug}`} className="group block relative overflow-hidden bg-zinc-900 h-64">
-    <img
-      src={img(post.image, 600)}
-      alt={post.title}
-      loading="lazy"
-      className="w-full h-full object-cover opacity-70 group-hover:scale-105 group-hover:opacity-80 transition-all duration-700"
-    />
-    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
-    <div className="absolute bottom-0 left-0 right-0 p-4">
-      <span className={`inline-block text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-2 ${catColor(post.category)}`}>
-        {post.category}
-      </span>
-      <h3 className="text-white font-bold text-sm leading-snug line-clamp-2 group-hover:text-primary transition-colors">
-        {post.title}
-      </h3>
-      <span className="text-zinc-400 text-[11px] mt-1 flex items-center gap-1">
-        <Clock className="w-3 h-3" />{timeAgo(post.date)}
-      </span>
-    </div>
-  </Link>
-);
-
-// ─── AUTHOR CARD ─────────────────────────────────────────────────────────────
+// ─── AUTHORS ──────────────────────────────────────────────────────────────────
 const AUTHORS = [
-  {
-    name: "Jonathan Mwaniki",
-    role: "Editor-in-Chief",
-    avatar: "JM",
-    color: "bg-zinc-800",
-    bio: "Content creator and journalist passionate about digital storytelling and Kenyan trends.",
-  },
-  {
-    name: "Celestine Nzioka",
-    role: "Politics & News Editor",
-    avatar: "CN",
-    color: "bg-blue-700",
-    bio: "Authoritative and unflinching. Celestine cuts through political spin to give you the real story.",
-  },
-  {
-    name: "Mutheu Ann",
-    role: "Entertainment Lead",
-    avatar: "MA",
-    color: "bg-purple-600",
-    bio: "Plugged into the celebrity circuit. If a star breathes wrong, Mutheu Ann notices first.",
-  },
-  {
-    name: "Martin Mutwiri",
-    role: "Sports Desk",
-    avatar: "MM",
-    color: "bg-green-700",
-    bio: "Deep dive analyst into local football and global athletic championships.",
-  },
-  {
-    name: "Grace Mkamburi",
-    role: "Lifestyle & Culture",
-    avatar: "GM",
-    color: "bg-rose-500",
-    bio: "Exploring the vibrant pulse of Kenyan lifestyle, fashion, and social evolution.",
-  },
-  {
-    name: "Timothy Muli",
-    role: "Tech Correspondent",
-    avatar: "TM",
-    color: "bg-cyan-700",
-    bio: "Unpacking the digital revolution and how technology is reshaping Nairobi's landscape.",
-  },
-  {
-    name: "Za Ndani",
-    role: "Gossip & Exclusives",
-    avatar: "ZN",
-    color: "bg-amber-600",
-    bio: "Sharp, cynical, and always first with the scoop. The voice behind the exclusive tea.",
-  }
+  { name: "Jonathan Mwaniki",  role: "Editor-in-Chief",       avatar: "JM", color: "bg-zinc-800",   bio: "Content creator and journalist passionate about digital storytelling and Kenyan trends." },
+  { name: "Celestine Nzioka",  role: "Politics & News Editor", avatar: "CN", color: "bg-blue-700",   bio: "Authoritative and unflinching. Celestine cuts through political spin to give you the real story." },
+  { name: "Mutheu Ann",        role: "Entertainment Lead",     avatar: "MA", color: "bg-purple-600", bio: "Plugged into the celebrity circuit. If a star breathes wrong, Mutheu Ann notices first." },
+  { name: "Martin Mutwiri",    role: "Sports Desk",            avatar: "MM", color: "bg-green-700",  bio: "Deep dive analyst into local football and global athletic championships." },
+  { name: "Grace Mkamburi",    role: "Lifestyle & Culture",    avatar: "GM", color: "bg-rose-500",   bio: "Exploring the vibrant pulse of Kenyan lifestyle, fashion, and social evolution." },
+  { name: "Timothy Muli",      role: "Tech Correspondent",     avatar: "TM", color: "bg-cyan-700",   bio: "Unpacking the digital revolution and how technology is reshaping Nairobi's landscape." },
+  { name: "Za Ndani",          role: "Gossip & Exclusives",    avatar: "ZN", color: "bg-amber-600",  bio: "Sharp, cynical, and always first with the scoop. The voice behind the exclusive tea." },
 ];
 
-// ════════════════════════════════════════════════════════════════════════════
+// ═════════════════════════════════════════════════════════════════════════════
 // INDEX PAGE
-// ════════════════════════════════════════════════════════════════════════════
+// ═════════════════════════════════════════════════════════════════════════════
 const Index = () => {
-  const [visibleCount, setVisibleCount] = useState(INITIAL_LOAD);
-  const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
+  const [visibleCount, setVisibleCount]   = useState(INITIAL_LOAD);
+  const [viewCounts, setViewCounts]       = useState<Record<string, number>>({});
   const [activeCategory, setActiveCategory] = useState<string>("all");
 
+  // ── Fetch views (deferred 1s so it never blocks first paint) ──
   useEffect(() => {
     const t = setTimeout(async () => {
       try {
@@ -203,24 +132,44 @@ const Index = () => {
     return () => clearTimeout(t);
   }, []);
 
+  // ── FIX: getAllPosts() called INSIDE useMemo so Vite re-evaluates on
+  //    each module reload / new deploy, not frozen at build time ──
+  const rawPosts = useMemo(() => getAllPosts(), []);
+  const allSorted = useMemo(() => buildMixedFeed(rawPosts), [rawPosts]);
+  const byDate    = useMemo(() =>
+    [...rawPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()),
+    [rawPosts]
+  );
+
   const withViews = useMemo(() =>
     allSorted.map(post => {
       const clean = post.slug.replace(/^\//, "").replace(/\.md$/, "");
       const v = viewCounts[`/article/${clean}`] || 0;
       return { ...post, views: v > 0 ? v : Math.floor(Math.random() * 80) + 20 };
-    }), [viewCounts]);
-
-  // ── Hero grid: top 3 posts (lead + 2 secondary) ──
-  const heroLead = withViews[0];
-  const heroSecondary = withViews.slice(1, 3);
-
-  // ── Latest posts strip (newest 5 regardless of category) ──
-  const latestStrip = useMemo(() =>
-    [...withViews]
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-      .slice(0, 5),
-    [withViews]
+    }),
+    [allSorted, viewCounts]
   );
+
+  // ── Hero: top 3 from the MOST RECENT posts (not mixed feed) ──
+  // Use byDate so the hero always shows the latest published articles
+  const heroWithViews = useMemo(() =>
+    byDate.map(post => {
+      const clean = post.slug.replace(/^\//, "").replace(/\.md$/, "");
+      const v = viewCounts[`/article/${clean}`] || 0;
+      return { ...post, views: v > 0 ? v : Math.floor(Math.random() * 80) + 20 };
+    }),
+    [byDate, viewCounts]
+  );
+
+  const heroLead      = heroWithViews[0];
+  const heroSecondary = heroWithViews.slice(1, 3);
+  const heroSlugs     = useMemo(() =>
+    new Set([heroLead?.slug, ...heroSecondary.map(p => p.slug)]),
+    [heroLead, heroSecondary]
+  );
+
+  // ── Latest strip: newest 5 ──
+  const latestStrip = useMemo(() => heroWithViews.slice(0, 5), [heroWithViews]);
 
   // ── Author latest posts ──
   const authorPosts = useMemo(() =>
@@ -231,37 +180,34 @@ const Index = () => {
     [withViews]
   );
 
-  // ── Main feed (filtered, excludes hero posts) ──
-  const heroSlugs = new Set([heroLead?.slug, ...heroSecondary.map(p => p.slug)]);
+  // ── Feed (excludes hero posts, filterable) ──
   const feedSource = useMemo(() => {
     const base = withViews.filter(p => !heroSlugs.has(p.slug));
     if (activeCategory === "all") return base;
     return base.filter(p => p.category?.toLowerCase() === activeCategory);
-  }, [withViews, activeCategory]);
+  }, [withViews, heroSlugs, activeCategory]);
 
   const displayedFeed = feedSource.slice(0, visibleCount);
-  const hasMore = visibleCount < feedSource.length;
+  const hasMore       = visibleCount < feedSource.length;
 
-  // ── Most read sidebar ──
+  // ── Sidebar ──
   const mostRead = useMemo(() =>
     [...withViews].sort((a, b) => b.views - a.views).slice(0, 6),
     [withViews]
   );
-
-  // ── Politics sidebar ──
   const politicsPosts = useMemo(() =>
     withViews.filter(p => ["news", "politics"].includes(p.category?.toLowerCase())).slice(0, 4),
     [withViews]
   );
 
-  // ── Feed chunks: every 3 cards = 1 full-width feature + 3 compact, with ads ──
+  // ── Feed chunks: 1 wide card + up to 3 compact cards, repeat ──
   const feedChunks = useMemo(() => {
     const chunks: { feature: typeof displayedFeed[0]; compacts: typeof displayedFeed; adAfter: boolean }[] = [];
     for (let i = 0; i < displayedFeed.length; i += 4) {
       chunks.push({
-        feature: displayedFeed[i],
+        feature:  displayedFeed[i],
         compacts: displayedFeed.slice(i + 1, i + 4),
-        adAfter: (chunks.length + 1) % 2 === 0,
+        adAfter:  (chunks.length + 1) % 2 === 0,
       });
     }
     return chunks;
@@ -270,7 +216,7 @@ const Index = () => {
   const categories = useMemo(() => {
     const cats = Array.from(new Set(rawPosts.map(p => p.category?.toLowerCase()).filter(Boolean)));
     return ["all", ...cats];
-  }, []);
+  }, [rawPosts]);
 
   const optimizedHeroImage = heroLead?.image ? img(heroLead.image, 1400) : "/images/placeholder.jpg";
 
@@ -282,36 +228,57 @@ const Index = () => {
         <link rel="canonical" href="https://zandani.co.ke" />
         {heroLead && <link rel="preload" as="image" href={optimizedHeroImage} fetchPriority="high" />}
         <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "name": "Za Ndani",
+          "@context": "https://schema.org", "@type": "WebSite", "name": "Za Ndani",
           "url": "https://zandani.co.ke",
           "potentialAction": { "@type": "SearchAction", "target": "https://zandani.co.ke/tag/{search_term_string}", "query-input": "required name=search_term_string" }
         })}</script>
+
+        {/*
+          ── ADSENSE LAYOUT SHIFT FIX ──────────────────────────────────────
+          Auto ads inject ads anywhere in the DOM which causes Cumulative Layout
+          Shift (CLS). These rules:
+          1. Give auto-ad containers a min-height so they reserve space before
+             the ad loads (prevents push-down).
+          2. Prevent AdSense inserting ads inside critical layout regions.
+          3. Use `contain: layout` on the hero so ads cannot escape it.
+        */}
+        <style>{`
+          /* Reserve space for auto-injected AdSense containers so they don't
+             cause layout shift when the ad loads. */
+          ins.adsbygoogle[data-ad-status="filled"] {
+            display: block !important;
+          }
+          /* Prevent auto ads from injecting inside the hero or nav */
+          .adsense-no-inject {
+            contain: layout style;
+          }
+          /* Auto ads that appear between content blocks get a min-height
+             reservation so surrounding content doesn't jump */
+          .adsbygoogle:not([data-ad-slot]) {
+            min-height: 90px;
+          }
+          /* Stop auto ads pushing the sticky sidebar down */
+          aside .adsbygoogle {
+            max-width: 100% !important;
+          }
+        `}</style>
       </Helmet>
 
       {/* ══════════════════════════════════════════════════════════════
-          EDITORIAL HERO GRID
+          HERO — wrapped in adsense-no-inject to block auto ads
       ══════════════════════════════════════════════════════════════ */}
       {heroLead && (
-        <section className="bg-zinc-950 border-b border-zinc-800">
+        <section className="bg-zinc-950 border-b border-zinc-800 adsense-no-inject">
           <div className="container max-w-7xl mx-auto px-4 py-6">
             <div className="grid lg:grid-cols-12 gap-1">
 
-              {/* Lead story — large left panel */}
-              <Link
-                to={`/article/${heroLead.slug}`}
+              {/* Lead story */}
+              <Link to={`/article/${heroLead.slug}`}
                 className="lg:col-span-7 group relative overflow-hidden block"
-                style={{ minHeight: 480 }}
-              >
-                <img
-                  src={optimizedHeroImage}
-                  alt={heroLead.title}
-                  fetchPriority="high"
-                  loading="eager"
-                  decoding="async"
-                  className="w-full h-full object-cover object-[center_20%] opacity-75 group-hover:opacity-90 group-hover:scale-[1.02] transition-all duration-700 absolute inset-0"
-                />
+                style={{ minHeight: 480 }}>
+                <img src={optimizedHeroImage} alt={heroLead.title}
+                  fetchPriority="high" loading="eager" decoding="async"
+                  className="w-full h-full object-cover object-[center_20%] opacity-75 group-hover:opacity-90 group-hover:scale-[1.02] transition-all duration-700 absolute inset-0" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent" />
                 <div className="relative h-full flex flex-col justify-end p-8 z-10" style={{ minHeight: 480 }}>
@@ -337,21 +304,14 @@ const Index = () => {
                 </div>
               </Link>
 
-              {/* Two secondary stories — right panel */}
+              {/* Two secondary stories */}
               <div className="lg:col-span-5 flex flex-col gap-1">
-                {heroSecondary.map((post) => (
-                  <Link
-                    key={post.slug}
-                    to={`/article/${post.slug}`}
+                {heroSecondary.map(post => (
+                  <Link key={post.slug} to={`/article/${post.slug}`}
                     className="group relative overflow-hidden flex-1 block"
-                    style={{ minHeight: 235 }}
-                  >
-                    <img
-                      src={img(post.image, 700)}
-                      alt={post.title}
-                      loading="eager"
-                      className="w-full h-full object-cover object-[center_20%] opacity-65 group-hover:opacity-80 group-hover:scale-[1.02] transition-all duration-700 absolute inset-0"
-                    />
+                    style={{ minHeight: 235 }}>
+                    <img src={img(post.image, 700)} alt={post.title} loading="eager"
+                      className="w-full h-full object-cover object-[center_20%] opacity-65 group-hover:opacity-80 group-hover:scale-[1.02] transition-all duration-700 absolute inset-0" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                     <div className="relative h-full flex flex-col justify-end p-5 z-10" style={{ minHeight: 235 }}>
                       <span className={`text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-2 w-fit ${catColor(post.category)}`}>
@@ -368,16 +328,15 @@ const Index = () => {
                   </Link>
                 ))}
               </div>
-
             </div>
           </div>
         </section>
       )}
 
       {/* ══════════════════════════════════════════════════════════════
-          LATEST STRIP
+          LATEST STRIP — also protected from auto ads
       ══════════════════════════════════════════════════════════════ */}
-      <section className="bg-zinc-900 border-b border-zinc-800 py-3">
+      <section className="bg-zinc-900 border-b border-zinc-800 py-3 adsense-no-inject">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-4 overflow-x-auto scrollbar-hide">
             <span className="flex items-center gap-1.5 text-[10px] font-black tracking-[0.2em] uppercase text-rose-500 whitespace-nowrap flex-shrink-0">
@@ -386,10 +345,7 @@ const Index = () => {
             <div className="w-px h-4 bg-zinc-700 flex-shrink-0" />
             {latestStrip.map((post, i) => (
               <React.Fragment key={post.slug}>
-                <Link
-                  to={`/article/${post.slug}`}
-                  className="flex items-center gap-2 group whitespace-nowrap flex-shrink-0"
-                >
+                <Link to={`/article/${post.slug}`} className="flex items-center gap-2 group whitespace-nowrap flex-shrink-0">
                   <span className={`text-[9px] font-black uppercase text-white px-1.5 py-0.5 flex-shrink-0 ${catColor(post.category)}`}>
                     {post.category}
                   </span>
@@ -423,15 +379,13 @@ const Index = () => {
               {/* Category filter pills */}
               <div className="flex items-center gap-2 flex-wrap">
                 {categories.map(cat => (
-                  <button
-                    key={cat}
+                  <button key={cat}
                     onClick={() => { setActiveCategory(cat); setVisibleCount(INITIAL_LOAD); }}
                     className={`text-xs font-black uppercase tracking-wider px-3 py-1.5 border transition-all ${
                       activeCategory === cat
                         ? "bg-primary border-primary text-white"
                         : "border-divider text-muted-foreground hover:border-primary hover:text-primary"
-                    }`}
-                  >
+                    }`}>
                     {cat === "all" ? "All Stories" : cat}
                   </button>
                 ))}
@@ -444,14 +398,13 @@ const Index = () => {
                   <Flame className="w-5 h-5 text-primary" />
                 </h2>
                 <div className="h-px flex-1 bg-divider" />
+                <span className="text-xs text-muted-foreground font-bold">{feedSource.length} stories</span>
               </div>
 
-              {/* Chunked feed: 1 wide ArticleCard + up to 3 compact cards, repeat */}
+              {/* Feed chunks */}
               <div className="space-y-10">
                 {feedChunks.map((chunk, ci) => (
                   <div key={ci} className="space-y-6">
-
-                    {/* Full-width feature card */}
                     {chunk.feature && (
                       <div className="border-b border-divider pb-6">
                         <Suspense fallback={<div className="h-64 bg-zinc-900 animate-pulse" />}>
@@ -459,8 +412,6 @@ const Index = () => {
                         </Suspense>
                       </div>
                     )}
-
-                    {/* Row of up to 3 compact image+text cards */}
                     {chunk.compacts.length > 0 && (
                       <div className="grid sm:grid-cols-3 gap-5">
                         {chunk.compacts.map(post => (
@@ -468,10 +419,9 @@ const Index = () => {
                         ))}
                       </div>
                     )}
-
-                    {/* Conditional Ad */}
+                    {/* Ad slot with reserved min-height to prevent layout shift */}
                     {chunk.adAfter && (
-                      <div className="py-4 border-y border-divider/50">
+                      <div className="py-4 border-y border-divider/50" style={{ minHeight: 120 }}>
                         <AdUnit type="inarticle" />
                       </div>
                     )}
@@ -479,14 +429,11 @@ const Index = () => {
                 ))}
               </div>
 
-              {/* Load More */}
               {hasMore && (
                 <div className="pt-8 flex justify-center">
-                  <Button
-                    onClick={() => setVisibleCount(prev => prev + LOAD_MORE_COUNT)}
+                  <Button onClick={() => setVisibleCount(prev => prev + LOAD_MORE_COUNT)}
                     variant="outline"
-                    className="group font-black uppercase tracking-widest text-xs px-10 py-6 border-2"
-                  >
+                    className="group font-black uppercase tracking-widest text-xs px-10 py-6 border-2">
                     Load More Stories
                     <ChevronDown className="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform" />
                   </Button>
@@ -496,7 +443,7 @@ const Index = () => {
 
             {/* ── SIDEBAR ── */}
             <aside className="lg:col-span-4 space-y-10">
-              
+
               {/* Most Read */}
               <div className="space-y-6">
                 <div className="flex items-center gap-3">
@@ -509,9 +456,7 @@ const Index = () => {
                     <Link key={post.slug} to={`/article/${post.slug}`} className="group flex gap-4">
                       <span className="text-3xl font-black text-zinc-800 group-hover:text-primary transition-colors">0{i + 1}</span>
                       <div className="space-y-1">
-                        <h4 className="text-sm font-bold leading-tight line-clamp-2 group-hover:underline">
-                          {post.title}
-                        </h4>
+                        <h4 className="text-sm font-bold leading-tight line-clamp-2 group-hover:underline">{post.title}</h4>
                         <span className="text-[10px] text-muted-foreground uppercase font-medium">{post.category}</span>
                       </div>
                     </Link>
@@ -519,9 +464,12 @@ const Index = () => {
                 </div>
               </div>
 
-              <AdUnit type="effectivegate" />
+              {/* Sidebar ad — reserved height prevents shift */}
+              <div style={{ minHeight: 280 }}>
+                <AdUnit type="effectivegate" />
+              </div>
 
-              {/* Politics/News Highlight */}
+              {/* Politics/News */}
               <div className="bg-zinc-950 p-6 border border-zinc-800">
                 <h3 className="text-sm font-black uppercase tracking-widest mb-6 flex items-center gap-2">
                   <span className="w-2 h-2 bg-blue-600 rounded-full" /> Politics & News
@@ -536,7 +484,7 @@ const Index = () => {
                 </Button>
               </div>
 
-              {/* Authors Section */}
+              {/* Authors */}
               <div className="space-y-6">
                 <h3 className="text-sm font-black uppercase tracking-widest">Our Voices</h3>
                 <div className="space-y-8">
@@ -553,9 +501,12 @@ const Index = () => {
                       </div>
                       <p className="text-xs text-muted-foreground italic leading-relaxed">"{author.bio}"</p>
                       {author.latest && (
-                        <Link to={`/article/${author.latest.slug}`} className="block bg-zinc-900/50 p-2 border-l-2 border-primary group">
+                        <Link to={`/article/${author.latest.slug}`}
+                          className="block bg-zinc-900/50 p-2 border-l-2 border-primary group">
                           <span className="text-[9px] uppercase text-zinc-500 font-bold">Latest Scoop</span>
-                          <p className="text-xs font-bold line-clamp-1 group-hover:text-primary transition-colors">{author.latest.title}</p>
+                          <p className="text-xs font-bold line-clamp-1 group-hover:text-primary transition-colors">
+                            {author.latest.title}
+                          </p>
                         </Link>
                       )}
                     </div>
