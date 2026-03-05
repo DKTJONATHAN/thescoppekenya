@@ -472,7 +472,7 @@ const Index = () => {
                     {/* Conditional Ad */}
                     {chunk.adAfter && (
                       <div className="py-4 border-y border-divider/50">
-                        <AdUnit slot="feed-mid-ad" />
+                        <AdUnit type="inarticle" />
                       </div>
                     )}
                   </div>
@@ -519,7 +519,7 @@ const Index = () => {
                 </div>
               </div>
 
-              <AdUnit slot="sidebar-top" />
+              <AdUnit type="effectivegate" />
 
               {/* Politics/News Highlight */}
               <div className="bg-zinc-950 p-6 border border-zinc-800">
