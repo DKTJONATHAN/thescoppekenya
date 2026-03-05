@@ -124,7 +124,38 @@ jobs:
 
           raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY"), os.environ.get("GEMINI_API_KEY1")]
           api_keys = [k for k in raw_keys if k and k.strip()]
-          client = genai.Client(api_key=api_keys[0])
+          if not api_keys:
+              print("No Gemini API keys.")
+              sys.exit(1)
+          key_cycle = itertools.cycle(api_keys)
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+
+          def gemini_generate(prompt, label="", use_search=False):
+              global current_key, client
+              keys_tried = 0
+              for model_id in MODELS_TO_TRY:
+                  for retry in range(len(api_keys) * 2):
+                      try:
+                          config = types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]) if use_search else None
+                          resp = client.models.generate_content(model=model_id, contents=prompt, config=config)
+                          print(f"SUCCESS with {model_id} for {label}")
+                          return resp.text.strip()
+                      except Exception as e:
+                          if "429" in str(e):
+                              keys_tried += 1
+                              if keys_tried >= len(api_keys):
+                                  print("All keys hit quota. Waiting 45s...")
+                                  time.sleep(45)
+                                  keys_tried = 0
+                              else:
+                                  print("Quota hit. Rotating key...")
+                                  current_key = next(key_cycle)
+                                  client = genai.Client(api_key=current_key)
+                              continue
+                          print(f"Error with {model_id} for {label}: {e}")
+                          break
+              return None
 
           article_links = get_target_urls()
           memory_path = os.environ.get('MEMORY_FILE')
@@ -141,17 +172,23 @@ jobs:
 
           if not full_raw_text: sys.exit(0)
 
-          # === SMART TITLE CONTEST ===
           title_prompt = f"""
           SOURCE: {target_title}
           CONTENT: {full_raw_text[:2000]}
           FORMULAS: 1. Number+Keyword+Benefit, 2. Keyword+Power Word, 3. How+Keyword+Outcome.
           INSTRUCTIONS: Extract 2-4 keywords. Generate 3 titles front-loading them. Output JSON: {{"final_title": "..."}}
           """
-          title_resp = client.models.generate_content(model=MODELS_TO_TRY[0], contents=title_prompt)
-          final_title = json.loads(re.search(r'{.*}', title_resp.text, re.DOTALL).group()).get('final_title', target_title)
+          title_text = gemini_generate(title_prompt, "title")
+          final_title = target_title
+          if title_text:
+              try:
+                  final_title = json.loads(re.search(r'{.*}', title_text, re.DOTALL).group()).get('final_title', target_title)
+              except: pass
 
-          # === FULL ARTICLE ===
+          time.sleep(5)
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+
           prompt = f'''Current Date: {full_date_str}
           TITLE: {final_title}
           SOURCE: {full_raw_text[:10000]}
@@ -160,7 +197,10 @@ jobs:
           - Verified 10h freshness. No dashes.
           - Start with H2 Keyword Heading -> 40-word neutral snippet -> Body.
           '''
-          response = client.models.generate_content(model=MODELS_TO_TRY[0], contents=prompt, config=types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]))
+          article_text = gemini_generate(prompt, "article", use_search=True)
+          if not article_text:
+              print("Failed to generate article.")
+              sys.exit(1)
           
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:70]
           final_file = textwrap.dedent(f"""\
