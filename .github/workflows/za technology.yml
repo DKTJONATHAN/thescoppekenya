@@ -27,18 +27,56 @@ jobs:
 
       - name: Generate article with Gemini
         env:
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           python << 'EOF'
-          import os, json, datetime, requests, re, hashlib, sys
+          import os, json, datetime, requests, re, hashlib, sys, time, itertools
           from dateutil import parser as date_parser
           from google import genai
+          from google.genai import types
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
 
-          client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+
+          raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY"), os.environ.get("GEMINI_API_KEY1")]
+          api_keys = [k for k in raw_keys if k and k.strip()]
+          if not api_keys:
+              print("No Gemini API keys.")
+              sys.exit(1)
+
+          key_cycle = itertools.cycle(api_keys)
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+
+          def gemini_generate(prompt, label=""):
+              global current_key, client
+              keys_tried = 0
+              for model_id in MODELS_TO_TRY:
+                  for retry in range(len(api_keys) * 2):
+                      try:
+                          resp = client.models.generate_content(model=model_id, contents=prompt)
+                          print(f"SUCCESS with {model_id} for {label}")
+                          return resp.text.strip()
+                      except Exception as e:
+                          if "429" in str(e):
+                              keys_tried += 1
+                              if keys_tried >= len(api_keys):
+                                  print("All keys hit quota. Waiting 45s...")
+                                  time.sleep(45)
+                                  keys_tried = 0
+                              else:
+                                  print("Quota hit. Rotating key...")
+                                  current_key = next(key_cycle)
+                                  client = genai.Client(api_key=current_key)
+                              continue
+                          print(f"Error with {model_id} for {label}: {e}")
+                          break
+              return None
 
           def get_urls():
               urls = []
@@ -85,13 +123,25 @@ jobs:
                   break
           if not raw_text: sys.exit(0)
 
-          t_resp = client.models.generate_content(model="gemini-3-flash-preview", contents=f"Original: {target_title}\nTask: 3 high-CTR tech titles front-loading keywords. Output JSON: {{\"final_title\": \"...\"}}")
-          final_title = json.loads(re.search(r'{.*}', t_resp.text, re.DOTALL).group()).get('final_title', target_title)
+          t_text = gemini_generate(f"Original: {target_title}\nTask: 3 high-CTR tech titles front-loading keywords. Output JSON: {{\"final_title\": \"...\"}}", "title")
+          final_title = target_title
+          if t_text:
+              try:
+                  final_title = json.loads(re.search(r'{.*}', t_text, re.DOTALL).group()).get('final_title', target_title)
+              except:
+                  pass
 
-          a_resp = client.models.generate_content(model="gemini-3-flash-preview", contents=f"Title: {final_title}\nSource: {raw_text[:10000]}\nTask: Write as Elizabeth Muthoni. Tech Journalist. No dashes. 10h freshness.")
+          time.sleep(5)  # 5s delay between API calls
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+
+          a_text = gemini_generate(f"Title: {final_title}\nSource: {raw_text[:10000]}\nTask: Write as Elizabeth Muthoni. Tech Journalist. No dashes. 10h freshness.", "article")
+          if not a_text:
+              print("Failed to generate article.")
+              sys.exit(1)
           
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:70]
-          with open(os.path.join(os.environ.get("POSTS_DIR"), f"{slug}.md"), "w") as f: f.write(f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\nauthor: \"Elizabeth Muthoni\"\nimage: \"{target_img}\"\ncategory: \"Technology\"\ndate: \"{datetime.datetime.utcnow().strftime('%Y-%m-%d')}\"\n---\n\n{a_resp.text}")
+          with open(os.path.join(os.environ.get("POSTS_DIR"), f"{slug}.md"), "w") as f: f.write(f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\nauthor: \"Elizabeth Muthoni\"\nimage: \"{target_img}\"\ncategory: \"Technology\"\ndate: \"{datetime.datetime.utcnow().strftime('%Y-%m-%d')}\"\n---\n\n{a_text}")
           memory.append(final_hash)
           with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
           EOF
