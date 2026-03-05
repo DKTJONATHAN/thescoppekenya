@@ -183,13 +183,21 @@ jobs:
               sys.exit(0)
 
           def try_generate(prompt, label=""):
+              keys_tried = 0
               for model_id in MODELS_TO_TRY:
-                  try:
-                      resp = client.models.generate_content(model=model_id, contents=prompt)
-                      print(f"SUCCESS with {model_id} for {label}")
-                      return resp.text.strip()
-                  except Exception as e:
-                      print(f"Error with {model_id} for {label}: {e}")
+                  for retry in range(3):
+                      try:
+                          resp = client.models.generate_content(model=model_id, contents=prompt)
+                          print(f"SUCCESS with {model_id} for {label}")
+                          return resp.text.strip()
+                      except Exception as e:
+                          if "429" in str(e):
+                              keys_tried += 1
+                              print(f"Rate limit hit. Waiting 45s...")
+                              time.sleep(45)
+                              continue
+                          print(f"Error with {model_id} for {label}: {e}")
+                          break
               return None
 
           title_prompt = f"""Original Title: {target_title}
@@ -210,6 +218,8 @@ jobs:
                       final_title = json.loads(match.group()).get('final_title', target_title)
               except Exception as e:
                   print(f"Title parse error: {e}. Using original.")
+
+          time.sleep(5)  # 5s delay between API calls
 
           article_prompt = f"""Current Date: {datetime.datetime.utcnow().strftime("%A, %B %d, %Y")}
           TITLE: {final_title}

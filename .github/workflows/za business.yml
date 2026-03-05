@@ -107,7 +107,38 @@ jobs:
 
           raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY"), os.environ.get("GEMINI_API_KEY1")]
           api_keys = [k for k in raw_keys if k and k.strip()]
-          client = genai.Client(api_key=api_keys[0])
+          if not api_keys:
+              print("No Gemini API keys.")
+              sys.exit(1)
+
+          key_cycle = itertools.cycle(api_keys)
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+
+          def gemini_generate(prompt, label=""):
+              keys_tried = 0
+              for model_id in MODELS_TO_TRY:
+                  for retry in range(len(api_keys) * 2):
+                      try:
+                          resp = client.models.generate_content(model=model_id, contents=prompt)
+                          print(f"SUCCESS with {model_id} for {label}")
+                          return resp.text.strip()
+                      except Exception as e:
+                          if "429" in str(e):
+                              keys_tried += 1
+                              if keys_tried >= len(api_keys):
+                                  print(f"All keys hit quota. Waiting 45s...")
+                                  time.sleep(45)
+                                  keys_tried = 0
+                              else:
+                                  print("Quota hit. Rotating key...")
+                                  nonlocal current_key, client
+                                  current_key = next(key_cycle)
+                                  client = genai.Client(api_key=current_key)
+                              continue
+                          print(f"Error with {model_id} for {label}: {e}")
+                          break
+              return None
 
           article_links = get_target_urls()
           memory_path = os.environ.get('MEMORY_FILE')
@@ -126,15 +157,29 @@ jobs:
           title_prompt = f"""SCRAPED ARTICLE: {target_title}\nClassify type: LIST, BIO, QUESTION, SHOCKING, GUIDE, NEWS, TRENDING.
           HIGH-CTR FORMULAS: 1. Number+Keyword+Benefit, 2. Keyword+Power Word+Year, 3. How/What+Keyword+Number, 4. Keyword+[Bracket Hook], 5. Adjective+Number+Outcome.
           INSTRUCTIONS: Generate EXACTLY 3 SEO titles front-loading main keyword. Output ONLY VALID JSON: {{"final_title": "Winning Title"}}"""
-          title_resp = client.models.generate_content(model=MODELS_TO_TRY[0], contents=title_prompt)
-          final_title = json.loads(re.search(r'{.*}', title_resp.text, re.DOTALL).group()).get('final_title', target_title)
+          title_text = gemini_generate(title_prompt, "title")
+          final_title = target_title
+          if title_text:
+              try:
+                  final_title = json.loads(re.search(r'{.*}', title_text, re.DOTALL).group()).get('final_title', target_title)
+              except:
+                  pass
+
+          time.sleep(5)  # 5s delay between API calls
+
+          # Rotate key for next call
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
 
           # ARTICLE GENERATION
           article_prompt = f"""TITLE: {final_title}\nSOURCE: {full_raw_text[:12000]}\nTASK: Write analytical business report as Grace Mkamburi. Professional Kenyan English. No dashes. Front-load keywords in slug and headings. 10h freshness only."""
-          response = client.models.generate_content(model=MODELS_TO_TRY[0], contents=article_prompt)
+          article_text = gemini_generate(article_prompt, "article")
+          if not article_text:
+              print("Failed to generate article.")
+              sys.exit(1)
           
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:70]
-          final_file = f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\nauthor: \"Grace Mkamburi\"\nimage: \"{upload_to_imgbb(target_image)}\"\ncategory: \"Business\"\ndate: \"{today_str}\"\n---\n\n{response.text}"
+          final_file = f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\nauthor: \"Grace Mkamburi\"\nimage: \"{upload_to_imgbb(target_image)}\"\ncategory: \"Business\"\ndate: \"{today_str}\"\n---\n\n{article_text}"
           with open(os.path.join(os.environ.get("POSTS_DIR"), f"{slug}.md"), "w") as f: f.write(final_file)
           memory.append(final_hash)
           with open(memory_path, 'w') as f: json.dump(memory[-200:], f)

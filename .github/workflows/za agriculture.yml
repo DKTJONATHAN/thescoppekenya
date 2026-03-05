@@ -172,7 +172,7 @@ jobs:
           category: "Agriculture"
           date: "{today_str}"
           ---
-          {response.text}
+          {article_text}
           """)
 
           with open(os.path.join(os.environ.get("POSTS_DIR"), f"{slug}.md"), "w") as f: f.write(final_file)
