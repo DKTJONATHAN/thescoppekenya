@@ -155,6 +155,27 @@ const AUTHORS = [
     color: "bg-blue-700",
     bio: "Authoritative and unflinching. Celestine cuts through political spin to give you the real story.",
   },
+  {
+    name: "John Kamau",
+    role: "Investigative Journalist",
+    avatar: "JK",
+    color: "bg-zinc-700",
+    bio: "Dedicated to uncovering the truth behind high-profile cases and social justice issues in Kenya.",
+  },
+  {
+    name: "Sarah Otieno",
+    role: "Tech & Lifestyle",
+    avatar: "SO",
+    color: "bg-cyan-700",
+    bio: "Exploring the intersection of technology and daily life. Sarah keeps you updated on the latest gadgets and digital trends.",
+  },
+  {
+    name: "David Maina",
+    role: "Sports Analyst",
+    avatar: "DM",
+    color: "bg-green-700",
+    bio: "From local football to international championships, David provides expert commentary and deep-dive analysis.",
+  },
 ];
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -436,183 +457,109 @@ const Index = () => {
                     {chunk.compacts.length > 0 && (
                       <div className="grid sm:grid-cols-3 gap-5">
                         {chunk.compacts.map(post => (
-                          <Link key={post.slug} to={`/article/${post.slug}`} className="group block">
-                            <div className="relative overflow-hidden h-40 mb-3">
-                              <img
-                                src={img(post.image, 400)}
-                                alt={post.title}
-                                loading="lazy"
-                                className="w-full h-full object-cover object-[center_20%] group-hover:scale-105 transition-transform duration-500"
-                              />
-                              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                              <span className={`absolute bottom-2 left-2 text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 ${catColor(post.category)}`}>
-                                {post.category}
-                              </span>
-                            </div>
-                            <h3 className="font-bold text-sm leading-snug line-clamp-2 group-hover:text-primary transition-colors mb-1">
-                              {post.title}
-                            </h3>
-                            <div className="flex items-center gap-2 text-[11px] text-muted-foreground">
-                              <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{timeAgo(post.date)}</span>
-                              <span>·</span>
-                              <span>{post.author}</span>
-                            </div>
-                          </Link>
+                          <CompactCard key={post.slug} post={post} />
                         ))}
                       </div>
                     )}
 
-                    {/* Ad every 2 chunks */}
+                    {/* Conditional Ad */}
                     {chunk.adAfter && (
-                      <div className="flex justify-center py-3 border-y border-divider bg-muted/10">
-                        <AdUnit type={ci % 3 === 0 ? "inarticle" : ci % 3 === 1 ? "effectivegate" : "horizontal"} />
+                      <div className="py-4 border-y border-divider/50">
+                        <AdUnit slot="feed-mid-ad" />
                       </div>
                     )}
                   </div>
                 ))}
               </div>
 
-              {/* Load more */}
-              {hasMore ? (
-                <div className="pt-6 text-center">
+              {/* Load More */}
+              {hasMore && (
+                <div className="pt-8 flex justify-center">
                   <Button
-                    onClick={() => setVisibleCount(v => v + LOAD_MORE_COUNT)}
+                    onClick={() => setVisibleCount(prev => prev + LOAD_MORE_COUNT)}
                     variant="outline"
-                    className="group border-2 border-divider hover:border-primary hover:bg-primary hover:text-white rounded-none px-10 py-6 text-xs uppercase tracking-[0.2em] font-black transition-all"
+                    className="group font-black uppercase tracking-widest text-xs px-10 py-6 border-2"
                   >
-                    Load More <ChevronDown className="ml-2 w-4 h-4 group-hover:translate-y-1 transition" />
+                    Load More Stories
+                    <ChevronDown className="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform" />
                   </Button>
-                </div>
-              ) : (
-                <div className="py-16 text-center">
-                  <p className="text-muted-foreground font-serif italic text-lg">You've reached the bottom of the tea cup 🫖</p>
                 </div>
               )}
             </main>
 
             {/* ── SIDEBAR ── */}
-            <aside className="lg:col-span-4 hidden lg:block">
-              <div className="sticky top-24 space-y-10">
-
-                {/* Most Read */}
-                <div className="border border-divider">
-                  <div className="flex items-center gap-2 px-5 py-3 border-b border-divider bg-muted/30">
-                    <TrendingUp className="w-4 h-4 text-primary" />
-                    <h3 className="text-sm font-black uppercase tracking-wider">Most Read</h3>
-                  </div>
-                  <div className="divide-y divide-divider">
-                    {mostRead.map((post, i) => (
-                      <Link key={post.slug} to={`/article/${post.slug}`} className="flex gap-3 items-start p-4 group hover:bg-muted/20 transition-colors">
-                        <span className="text-2xl font-serif font-black text-muted-foreground/20 leading-none flex-shrink-0 w-6">
-                          {i + 1}
-                        </span>
-                        <div className="min-w-0">
-                          <span className={`text-[9px] font-black uppercase tracking-widest text-white px-1.5 py-0.5 mb-1 inline-block ${catColor(post.category)}`}>
-                            {post.category}
-                          </span>
-                          <h4 className="text-sm font-bold leading-snug line-clamp-2 group-hover:text-primary transition-colors">
-                            {post.title}
-                          </h4>
-                          <span className="flex items-center gap-1 text-[11px] text-muted-foreground mt-1">
-                            <Eye className="w-3 h-3" />{post.views?.toLocaleString()} views
-                          </span>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Sidebar ad */}
-                <div className="flex justify-center bg-muted/10 p-4 border border-divider">
-                  <AdUnit type="effectivegate" />
-                </div>
-
-                {/* Latest in News & Politics */}
-                {politicsPosts.length > 0 && (
-                  <div className="border border-divider">
-                    <div className="flex items-center gap-2 px-5 py-3 border-b border-divider bg-blue-950/40">
-                      <Zap className="w-4 h-4 text-blue-400" />
-                      <h3 className="text-sm font-black uppercase tracking-wider text-blue-300">News & Politics</h3>
-                    </div>
-                    <div className="p-4 space-y-4">
-                      {politicsPosts.map(post => (
-                        <CompactCard key={post.slug} post={post} />
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Second sidebar ad */}
-                <div className="flex justify-center bg-muted/10 p-4 border border-divider">
-                  <AdUnit type="inarticle" />
-                </div>
-
-              </div>
-            </aside>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════════════════
-          FROM THE AUTHORS
-      ══════════════════════════════════════════════════════════════ */}
-      <section className="py-12 bg-zinc-950 border-t border-zinc-800">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="flex items-center gap-4 mb-8">
-            <h2 className="text-xl font-black uppercase tracking-tight text-white">From The Authors</h2>
-            <div className="h-px flex-1 bg-zinc-800" />
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {authorPosts.map(author => (
-              <div key={author.name} className="border border-zinc-800 bg-zinc-900 p-5 space-y-4">
-                {/* Author identity */}
+            <aside className="lg:col-span-4 space-y-10">
+              
+              {/* Most Read */}
+              <div className="space-y-6">
                 <div className="flex items-center gap-3">
-                  <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-sm flex-shrink-0 ${author.color}`}>
-                    {author.avatar}
-                  </div>
-                  <div>
-                    <p className="text-white font-bold text-sm">{author.name}</p>
-                    <p className="text-zinc-500 text-xs">{author.role}</p>
-                  </div>
+                  <TrendingUp className="w-5 h-5 text-primary" />
+                  <h3 className="text-sm font-black uppercase tracking-widest">Most Read</h3>
+                  <div className="h-px flex-1 bg-divider" />
                 </div>
-                <p className="text-zinc-400 text-xs leading-relaxed border-l-2 border-zinc-700 pl-3">
-                  {author.bio}
-                </p>
-                {/* Latest article from this author */}
-                {author.latest ? (
-                  <Link to={`/article/${author.latest.slug}`} className="group block">
-                    <div className="relative overflow-hidden h-32 mb-3">
-                      <img
-                        src={img(author.latest.image, 400)}
-                        alt={author.latest.title}
-                        loading="lazy"
-                        className="w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                      <span className="absolute bottom-2 left-2 text-[9px] text-zinc-400 flex items-center gap-1">
-                        <Clock className="w-3 h-3" />{timeAgo(author.latest.date)}
-                      </span>
-                    </div>
-                    <h4 className="text-white text-sm font-bold leading-snug line-clamp-2 group-hover:text-primary transition-colors">
-                      {author.latest.title}
-                    </h4>
-                  </Link>
-                ) : (
-                  <p className="text-zinc-600 text-xs italic">No articles yet.</p>
-                )}
-                <Link
-                  to={`/author/${author.name.toLowerCase().replace(/\s+/g, "-")}`}
-                  className="flex items-center gap-1 text-xs font-bold text-primary hover:underline"
-                >
-                  All stories <ArrowRight className="w-3 h-3" />
-                </Link>
+                <div className="space-y-5">
+                  {mostRead.map((post, i) => (
+                    <Link key={post.slug} to={`/article/${post.slug}`} className="group flex gap-4">
+                      <span className="text-3xl font-black text-zinc-800 group-hover:text-primary transition-colors">0{i + 1}</span>
+                      <div className="space-y-1">
+                        <h4 className="text-sm font-bold leading-tight line-clamp-2 group-hover:underline">
+                          {post.title}
+                        </h4>
+                        <span className="text-[10px] text-muted-foreground uppercase font-medium">{post.category}</span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
               </div>
-            ))}
+
+              <AdUnit slot="sidebar-top" />
+
+              {/* Politics/News Highlight */}
+              <div className="bg-zinc-950 p-6 border border-zinc-800">
+                <h3 className="text-sm font-black uppercase tracking-widest mb-6 flex items-center gap-2">
+                  <span className="w-2 h-2 bg-blue-600 rounded-full" /> Politics & News
+                </h3>
+                <div className="space-y-6">
+                  {politicsPosts.map(post => (
+                    <CompactCard key={post.slug} post={post} />
+                  ))}
+                </div>
+                <Button variant="link" className="px-0 mt-4 text-xs font-bold uppercase text-blue-500 hover:text-blue-400">
+                  View all news <ArrowRight className="ml-1 w-3 h-3" />
+                </Button>
+              </div>
+
+              {/* Authors Section */}
+              <div className="space-y-6">
+                <h3 className="text-sm font-black uppercase tracking-widest">Our Voices</h3>
+                <div className="space-y-8">
+                  {authorPosts.map(author => (
+                    <div key={author.name} className="space-y-3">
+                      <div className="flex items-center gap-3">
+                        <div className={`w-10 h-10 rounded-full ${author.color} flex items-center justify-center text-white font-black text-xs`}>
+                          {author.avatar}
+                        </div>
+                        <div>
+                          <h4 className="text-sm font-bold">{author.name}</h4>
+                          <p className="text-[10px] text-primary uppercase font-black tracking-tighter">{author.role}</p>
+                        </div>
+                      </div>
+                      <p className="text-xs text-muted-foreground italic leading-relaxed">"{author.bio}"</p>
+                      {author.latest && (
+                        <Link to={`/article/${author.latest.slug}`} className="block bg-zinc-900/50 p-2 border-l-2 border-primary group">
+                          <span className="text-[9px] uppercase text-zinc-500 font-bold">Latest Scoop</span>
+                          <p className="text-xs font-bold line-clamp-1 group-hover:text-primary transition-colors">{author.latest.title}</p>
+                        </Link>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+            </aside>
           </div>
         </div>
       </section>
-
     </Layout>
   );
 };
