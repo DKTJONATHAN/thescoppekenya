@@ -114,12 +114,22 @@ jobs:
               """
 
               try:
-                  response = client.models.generate_content(
-                      model='gemini-2.5-flash',
-                      contents=prompt,
-                      config=types.GenerateContentConfig(temperature=0.8)
-                  )
-                  ai_caption = response.text.strip()
+                  for attempt in range(3):
+                      try:
+                          response = client.models.generate_content(
+                              model='gemini-2.5-flash',
+                              contents=prompt,
+                              config=types.GenerateContentConfig(temperature=0.8)
+                          )
+                          ai_caption = response.text.strip()
+                          break
+                      except Exception as e:
+                          if "429" in str(e) and attempt < 2:
+                              print(f"⚠️ Rate limited. Waiting 45s... (attempt {attempt+1})")
+                              import time
+                              time.sleep(45)
+                          else:
+                              raise
               except Exception as e:
                   print(f"⚠️ AI Generation failed: {e}")
                   ai_caption = f"📰 {title}\n\n{excerpt}\n\n👇 Catch the full juice in the comments below!" 

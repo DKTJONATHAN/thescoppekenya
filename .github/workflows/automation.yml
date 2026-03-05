@@ -440,8 +440,8 @@ jobs:
                           current_key = next(key_cycle)
                           client = genai.Client(api_key=current_key)
                           if keys_tried_in_round >= len(api_keys):
-                              print("⏳ All keys hit quota. Waiting 40s...")
-                              time.sleep(40)
+                              print("⏳ All keys hit quota. Waiting 45s...")
+                              time.sleep(45)
                               keys_tried_in_round = 0
                       else:
                           print(f"❌ Generation error with {model}: {e}")
