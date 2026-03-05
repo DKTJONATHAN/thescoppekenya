@@ -61,7 +61,7 @@ jobs:
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
 
-          MODELS_TO_TRY = ["gemini-2.5-flash-preview-05-20", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
@@ -212,8 +212,8 @@ jobs:
                           if "429" in str(e):
                               keys_tried += 1
                               if keys_tried >= len(api_keys):
-                                  print("All keys hit quota. Waiting 35s...")
-                                  time.sleep(35)
+                               print("All keys hit quota. Waiting 45s...")
+                               time.sleep(45)
                                   keys_tried = 0
                               else:
                                   print("Quota hit. Rotating key...")
@@ -294,8 +294,8 @@ jobs:
                       if "429" in str(e):
                           keys_tried_in_round += 1
                           if keys_tried_in_round >= len(api_keys):
-                              print("All keys hit quota. Waiting 35s...")
-                              time.sleep(35)
+                              print("All keys hit quota. Waiting 45s...")
+                              time.sleep(45)
                               keys_tried_in_round = 0
                           else:
                               print("Quota hit. Rotating key...")

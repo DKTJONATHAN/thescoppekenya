@@ -51,7 +51,7 @@ jobs:
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
 
-          MODELS_TO_TRY = ["gemini-2.5-flash-preview-05-20", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
           api_key = os.environ.get("GEMINI_API_KEY")
           if not api_key:
