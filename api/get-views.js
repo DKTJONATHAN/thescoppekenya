@@ -1,25 +1,16 @@
+// api/get-views.ts
 import { BetaAnalyticsDataClient } from '@google-analytics/data';
 
 const propertyId = process.env.GA4_PROPERTY_ID;
 
-// The Ultimate Fix: Decoding Base64 AND fixing the literal newlines
 const getPrivateKey = () => {
   const rawKey = process.env.GA4_PRIVATE_KEY;
   if (!rawKey) return undefined;
-
   try {
-    // 1. Decode the Base64 string back into readable text
-    let decodedKey = Buffer.from(rawKey.trim(), 'base64').toString('utf8');
-    
-    // 2. The JSON copy/paste encoded literal "\" and "n" characters.
-    // We MUST convert the text "\n" back into real, invisible line breaks.
-    decodedKey = decodedKey.replace(/\\n/g, '\n');
-    
-    // 3. Remove any quotes that might have been encoded by mistake from the JSON
-    decodedKey = decodedKey.replace(/^["']|["']$/g, '');
-    
-    return decodedKey.trim();
-  } catch (error) {
+    let decoded = Buffer.from(rawKey.trim(), 'base64').toString('utf8');
+    decoded = decoded.replace(/\\n/g, '\n').replace(/^["']|["']$/g, '');
+    return decoded.trim();
+  } catch {
     return undefined;
   }
 };
@@ -32,34 +23,43 @@ const client = new BetaAnalyticsDataClient({
 });
 
 export default async function handler(req, res) {
+  // If ?bust=1 is present (admin refresh button), skip all caches
+  const forceFresh = req.query.bust === '1';
+
   try {
     const [response] = await client.runReport({
       property: `properties/${propertyId}`,
       dateRanges: [{ startDate: '2026-01-01', endDate: 'today' }],
       dimensions: [{ name: 'pagePath' }],
       metrics: [{ name: 'screenPageViews' }],
+      limit: 1000,
     });
 
-    const viewMap = {};
+    const viewMap: Record<string, number> = {};
     if (response.rows) {
       response.rows.forEach((row) => {
-        let path = row.dimensionValues[0].value;
+        let path = row.dimensionValues?.[0]?.value ?? '';
         if (path.endsWith('/') && path.length > 1) path = path.slice(0, -1);
-        viewMap[path] = parseInt(row.metricValues[0].value);
+        const views = parseInt(row.metricValues?.[0]?.value ?? '0', 10);
+        if (!isNaN(views)) viewMap[path] = views;
       });
     }
 
-    res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=86400');
+    // Force-refresh from admin bypasses Vercel CDN cache entirely
+    // Normal requests are cached for 1 hour at the edge
+    res.setHeader(
+      'Cache-Control',
+      forceFresh
+        ? 'no-store'
+        : 'public, s-maxage=3600, stale-while-revalidate=86400'
+    );
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET');
     res.status(200).json(viewMap);
-  } catch (error) {
-    console.error("GA4 Error:", error.message);
-    res.status(500).json({ 
-      error: "Authentication failed", 
-      details: error.message,
-      debug: {
-        success: false,
-        hint: "If you still see DECODER routines::unsupported, the Base64 string is corrupted."
-      }
-    });
+
+  } catch (error: any) {
+    console.error('GA4 Error:', error.message);
+    res.setHeader('Cache-Control', 'public, s-maxage=60, stale-while-revalidate=300');
+    res.status(200).json({});
   }
 }
