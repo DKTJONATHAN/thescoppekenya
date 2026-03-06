@@ -2,7 +2,7 @@ import React, { useEffect, useState, useMemo, lazy, Suspense } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { getAllPosts } from "@/lib/markdown";
 import { Link } from "react-router-dom";
-import { ArrowRight, TrendingUp, ChevronDown, Flame, Clock, Eye, Zap } from "lucide-react";
+import { ArrowRight, TrendingUp, ChevronDown, Flame, Clock, Eye, Zap, BarChart2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
 import AdUnit from "@/components/AdUnit";
@@ -13,14 +13,14 @@ const ArticleCard = lazy(() => import("@/components/articles/ArticleCard").then(
 const INITIAL_LOAD = 9;
 const LOAD_MORE_COUNT = 9;
 
-// ─── IMAGE PROXY ─────────────────────────────────────────────────────────────
+// ─── IMAGE PROXY ──────────────────────────────────────────────────────────────
 function img(url: string, w = 800): string {
   if (!url) return "/images/placeholder.jpg";
   if (url.endsWith(".svg") || url.startsWith("/")) return url;
   return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${w}&output=webp&q=80&we`;
 }
 
-// ─── RELATIVE TIME ────────────────────────────────────────────────────────────
+// ─── RELATIVE TIME ─────────────────────────────────────────────────────────────
 function timeAgo(dateStr: string): string {
   const diff = Date.now() - new Date(dateStr).getTime();
   const h = Math.floor(diff / 3600000);
@@ -43,46 +43,172 @@ function catColor(cat: string): string {
   return "bg-zinc-600";
 }
 
-// ─── MIXED FEED BUILDER ───────────────────────────────────────────────────────
-// Strategy: score each post by recency (primary) + category diversity (secondary).
-// This means the newest articles ALWAYS appear near the top, but consecutive
-// posts from the same category get a small penalty so the feed stays varied.
-// No category can dominate just because it has more volume.
-function buildMixedFeed(posts: ReturnType<typeof getAllPosts>) {
+// ═════════════════════════════════════════════════════════════════════════════
+// PRISM ALGORITHM
+// Composite story-ranking in 5 weighted dimensions:
+//   P — Proximity (recency, exponential decay)    40%
+//   R — Reach (view velocity / engagement proxy)  25%
+//   I — Isolation (freshness relative to peers)   15%
+//   S — Slot diversity (category rotation)        10%
+//   M — Magnitude (editorial tier / story weight) 10%
+// ═════════════════════════════════════════════════════════════════════════════
+
+type Post = ReturnType<typeof getAllPosts>[0] & { views?: number };
+
+/** Tier weights: higher = more editorially significant */
+const EDITORIAL_TIERS: Record<string, number> = {
+  scandal:       1.0,
+  exclusive:     0.95,
+  breaking:      0.9,
+  gossip:        0.75,
+  entertainment: 0.65,
+  politics:      0.6,
+  news:          0.5,
+  sports:        0.45,
+  tech:          0.4,
+};
+
+function editorialTier(post: Post): number {
+  const cat = post.category?.toLowerCase() || "";
+  const title = post.title?.toLowerCase() || "";
+  // Bump if title signals breaking/exclusive/scandal
+  if (/breaking|exclusive|scandal|caught|exposed|arrested|cheating/.test(title)) return 1.0;
+  for (const [key, val] of Object.entries(EDITORIAL_TIERS)) {
+    if (cat.includes(key)) return val;
+  }
+  return 0.4;
+}
+
+function prismScore(
+  post: Post,
+  nowMs: number,
+  maxViews: number,
+  peerMsGap: number,       // ms gap to nearest same-day peer (isolation signal)
+  slotCategoryPenalty: number // 0–1 how much to penalise category repetition at this slot
+): number {
+  const ageMs  = nowMs - new Date(post.date).getTime();
+  const ageHrs = ageMs / 3_600_000;
+
+  // P — Proximity: exponential half-life of 6 hours; posts older than 48h decay sharply
+  const halfLife = 6;
+  const P = Math.exp(-Math.log(2) * ageHrs / halfLife);
+
+  // R — Reach: view count normalised to top post; floor at 0.1 so zero-view posts aren't buried entirely
+  const views = post.views ?? 0;
+  const R = maxViews > 0 ? Math.max(0.1, views / maxViews) : 0.1;
+
+  // I — Isolation: how much breathing room this post has from same-day competitors
+  // peerMsGap is ms to nearest published peer; wider gap = more isolated = higher score
+  const I = Math.min(1, peerMsGap / (4 * 3_600_000)); // saturates at 4h gap
+
+  // S — Slot diversity: penalty when same category appeared recently in rendered list
+  const S = 1 - slotCategoryPenalty;
+
+  // M — Magnitude: editorial significance
+  const M = editorialTier(post);
+
+  return (P * 0.40) + (R * 0.25) + (I * 0.15) + (S * 0.10) + (M * 0.10);
+}
+
+/** Build isolation gaps: for each post, find the ms distance to its nearest publish-time peer */
+function buildIsolationMap(posts: Post[]): Map<string, number> {
+  const times = posts.map(p => ({ slug: p.slug, ms: new Date(p.date).getTime() }));
+  times.sort((a, b) => a.ms - b.ms);
+  const gapMap = new Map<string, number>();
+  for (let i = 0; i < times.length; i++) {
+    const prev = i > 0 ? times[i].ms - times[i - 1].ms : Infinity;
+    const next = i < times.length - 1 ? times[i + 1].ms - times[i].ms : Infinity;
+    gapMap.set(times[i].slug, Math.min(prev, next));
+  }
+  return gapMap;
+}
+
+/**
+ * PRISM Feed Builder
+ * Returns posts sorted by PRISM score with per-slot category diversity pressure.
+ * The rendered order is determined iteratively: after placing each post, the
+ * category penalty for the next slot is updated based on what was just placed.
+ */
+function buildPrismFeed(posts: Post[]): Post[] {
   if (!posts.length) return [];
 
-  // Sort all posts newest-first
-  const sorted = [...posts].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  const nowMs     = Date.now();
+  const maxViews  = Math.max(...posts.map(p => p.views ?? 0), 1);
+  const isoMap    = buildIsolationMap(posts);
 
-  // Assign a recency score: newest post = 1.0, oldest = 0.0
-  const newest = new Date(sorted[0].date).getTime();
-  const oldest = new Date(sorted[sorted.length - 1].date).getTime();
-  const range  = Math.max(newest - oldest, 1);
+  // Category window: track last N slots each category occupied
+  const DIVERSITY_WINDOW = 4;
+  const recentCats: string[] = [];
 
-  // Track last-seen index per category to apply diversity penalty
-  const lastSeenAt: Record<string, number> = {};
-  const DIVERSITY_WINDOW = 3; // penalise if same category appeared within last N slots
+  function getCatPenalty(cat: string): number {
+    const c = cat?.toLowerCase() || "other";
+    const recency = recentCats.lastIndexOf(c);
+    if (recency === -1) return 0;
+    // How many slots ago was this category last seen?
+    const slotsAgo = recentCats.length - recency;
+    // Penalty decays linearly: full penalty at 1 slot ago, zero at DIVERSITY_WINDOW
+    return Math.max(0, 1 - slotsAgo / DIVERSITY_WINDOW);
+  }
 
-  const scored = sorted.map((post, i) => {
-    const recency = (new Date(post.date).getTime() - oldest) / range; // 0–1
-    const cat     = post.category?.toLowerCase() || "other";
-    const lastIdx = lastSeenAt[cat] ?? -999;
-    // Small penalty (0.05 per nearby duplicate) — not enough to bury a genuinely
-    // new post, just enough to nudge varied categories up when timestamps are close
-    const penalty  = Math.max(0, DIVERSITY_WINDOW - (i - lastIdx)) * 0.05;
-    return { post, score: recency - penalty };
-  });
+  const remaining = [...posts];
+  const result: Post[] = [];
 
-  // Stable sort by score descending (newest still win by a wide margin)
-  scored.sort((a, b) => b.score - a.score);
+  while (remaining.length > 0) {
+    // Score all remaining posts for this slot
+    let best: { post: Post; score: number; idx: number } | null = null;
+    for (let i = 0; i < remaining.length; i++) {
+      const p = remaining[i];
+      const gap     = isoMap.get(p.slug) ?? 3_600_000;
+      const penalty = getCatPenalty(p.category ?? "other");
+      const score   = prismScore(p, nowMs, maxViews, gap, penalty);
+      if (!best || score > best.score) best = { post: p, score, idx: i };
+    }
+    if (!best) break;
 
-  return scored.map(s => s.post);
+    result.push(best.post);
+    recentCats.push(best.post.category?.toLowerCase() || "other");
+    if (recentCats.length > DIVERSITY_WINDOW * 2) recentCats.shift();
+    remaining.splice(best.idx, 1);
+  }
+
+  return result;
+}
+
+/**
+ * Hero selector: pick the 3 best stories for hero placement.
+ * Slot 1 (lead):  highest PRISM score unconditionally.
+ * Slot 2 & 3:     next highest from categories DIFFERENT to slot 1 and each other.
+ * This prevents the hero being 3 entertainment posts in a row.
+ */
+function selectHero(feed: Post[]): { lead: Post; secondary: Post[] } {
+  if (!feed.length) return { lead: feed[0], secondary: [] };
+
+  const lead = feed[0];
+  const secondary: Post[] = [];
+  const usedCats = new Set([lead.category?.toLowerCase()]);
+
+  for (const p of feed.slice(1)) {
+    if (secondary.length >= 2) break;
+    const cat = p.category?.toLowerCase() || "other";
+    if (!usedCats.has(cat)) {
+      secondary.push(p);
+      usedCats.add(cat);
+    }
+  }
+
+  // Fallback: if not enough diverse categories, allow repeats
+  if (secondary.length < 2) {
+    for (const p of feed.slice(1)) {
+      if (secondary.length >= 2) break;
+      if (!secondary.includes(p) && p !== lead) secondary.push(p);
+    }
+  }
+
+  return { lead, secondary };
 }
 
 // ─── COMPACT CARD ─────────────────────────────────────────────────────────────
-const CompactCard = ({ post }: { post: ReturnType<typeof getAllPosts>[0] }) => (
+const CompactCard = ({ post }: { post: Post }) => (
   <Link to={`/article/${post.slug}`} className="group flex gap-3 items-start">
     <div className="relative w-20 h-20 flex-shrink-0 overflow-hidden bg-zinc-800">
       <img src={img(post.image, 160)} alt={post.title} loading="lazy"
@@ -102,6 +228,16 @@ const CompactCard = ({ post }: { post: ReturnType<typeof getAllPosts>[0] }) => (
   </Link>
 );
 
+// ─── PRISM SCORE BADGE (dev/debug overlay — remove in prod) ──────────────────
+// Set SHOW_SCORES=true during dev to see the score on each card
+const SHOW_SCORES = false;
+const ScoreBadge = ({ score }: { score?: number }) =>
+  SHOW_SCORES && score != null ? (
+    <span className="absolute top-1 right-1 bg-black/80 text-green-400 text-[9px] font-mono px-1 rounded z-50">
+      {score.toFixed(3)}
+    </span>
+  ) : null;
+
 // ─── AUTHORS ──────────────────────────────────────────────────────────────────
 const AUTHORS = [
   { name: "Jonathan Mwaniki",  role: "Editor-in-Chief",       avatar: "JM", color: "bg-zinc-800",   bio: "Content creator and journalist passionate about digital storytelling and Kenyan trends." },
@@ -111,17 +247,18 @@ const AUTHORS = [
   { name: "Grace Mkamburi",    role: "Lifestyle & Culture",    avatar: "GM", color: "bg-rose-500",   bio: "Exploring the vibrant pulse of Kenyan lifestyle, fashion, and social evolution." },
   { name: "Timothy Muli",      role: "Tech Correspondent",     avatar: "TM", color: "bg-cyan-700",   bio: "Unpacking the digital revolution and how technology is reshaping Nairobi's landscape." },
   { name: "Za Ndani",          role: "Gossip & Exclusives",    avatar: "ZN", color: "bg-amber-600",  bio: "Sharp, cynical, and always first with the scoop. The voice behind the exclusive tea." },
+  { name: "Wanjiku Karanja",   role: "Entertainment Reporter", avatar: "WK", color: "bg-rose-700",   bio: "First on the scene, last to leave. Wanjiku lives at the intersection of pop culture and breaking news." },
 ];
 
 // ═════════════════════════════════════════════════════════════════════════════
 // INDEX PAGE
 // ═════════════════════════════════════════════════════════════════════════════
 const Index = () => {
-  const [visibleCount, setVisibleCount]   = useState(INITIAL_LOAD);
-  const [viewCounts, setViewCounts]       = useState<Record<string, number>>({});
+  const [visibleCount, setVisibleCount]     = useState(INITIAL_LOAD);
+  const [viewCounts, setViewCounts]         = useState<Record<string, number>>({});
   const [activeCategory, setActiveCategory] = useState<string>("all");
 
-  // ── Fetch views (deferred 1s so it never blocks first paint) ──
+  // Fetch views deferred — never blocks first paint
   useEffect(() => {
     const t = setTimeout(async () => {
       try {
@@ -132,77 +269,74 @@ const Index = () => {
     return () => clearTimeout(t);
   }, []);
 
-  // ── FIX: getAllPosts() called INSIDE useMemo so Vite re-evaluates on
-  //    each module reload / new deploy, not frozen at build time ──
   const rawPosts = useMemo(() => getAllPosts(), []);
-  const allSorted = useMemo(() => buildMixedFeed(rawPosts), [rawPosts]);
-  const byDate    = useMemo(() =>
-    [...rawPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()),
-    [rawPosts]
-  );
 
-  const withViews = useMemo(() =>
-    allSorted.map(post => {
+  // Attach view counts (with randomised fallback for zero-view posts)
+  const postsWithViews: Post[] = useMemo(() =>
+    rawPosts.map(post => {
       const clean = post.slug.replace(/^\//, "").replace(/\.md$/, "");
       const v = viewCounts[`/article/${clean}`] || 0;
       return { ...post, views: v > 0 ? v : Math.floor(Math.random() * 80) + 20 };
     }),
-    [allSorted, viewCounts]
+    [rawPosts, viewCounts]
   );
 
-  // ── Hero: top 3 from the MOST RECENT posts (not mixed feed) ──
-  // Use byDate so the hero always shows the latest published articles
-  const heroWithViews = useMemo(() =>
-    byDate.map(post => {
-      const clean = post.slug.replace(/^\//, "").replace(/\.md$/, "");
-      const v = viewCounts[`/article/${clean}`] || 0;
-      return { ...post, views: v > 0 ? v : Math.floor(Math.random() * 80) + 20 };
-    }),
-    [byDate, viewCounts]
+  // ── PRISM-ranked feed ──
+  const prismFeed = useMemo(() => buildPrismFeed(postsWithViews), [postsWithViews]);
+
+  // ── Hero selection (diverse categories) ──
+  const { lead: heroLead, secondary: heroSecondary } = useMemo(
+    () => selectHero(prismFeed),
+    [prismFeed]
   );
 
-  const heroLead      = heroWithViews[0];
-  const heroSecondary = heroWithViews.slice(1, 3);
-  const heroSlugs     = useMemo(() =>
+  const heroSlugs = useMemo(() =>
     new Set([heroLead?.slug, ...heroSecondary.map(p => p.slug)]),
     [heroLead, heroSecondary]
   );
 
-  // ── Latest strip: newest 5 ──
-  const latestStrip = useMemo(() => heroWithViews.slice(0, 5), [heroWithViews]);
+  // ── Latest strip: 5 most recently PUBLISHED (raw date order, not PRISM) ──
+  const latestStrip = useMemo(() =>
+    [...postsWithViews]
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      .slice(0, 5),
+    [postsWithViews]
+  );
 
-  // ── Author latest posts ──
+  // ── Author latest (from PRISM feed so most-relevant post surfaces) ──
   const authorPosts = useMemo(() =>
     AUTHORS.map(author => ({
       ...author,
-      latest: withViews.find(p => p.author?.toLowerCase() === author.name.toLowerCase()),
+      latest: prismFeed.find(p => p.author?.toLowerCase() === author.name.toLowerCase()),
     })),
-    [withViews]
+    [prismFeed]
   );
 
-  // ── Feed (excludes hero posts, filterable) ──
+  // ── Main feed: exclude hero, apply category filter ──
   const feedSource = useMemo(() => {
-    const base = withViews.filter(p => !heroSlugs.has(p.slug));
+    const base = prismFeed.filter(p => !heroSlugs.has(p.slug));
     if (activeCategory === "all") return base;
     return base.filter(p => p.category?.toLowerCase() === activeCategory);
-  }, [withViews, heroSlugs, activeCategory]);
+  }, [prismFeed, heroSlugs, activeCategory]);
 
   const displayedFeed = feedSource.slice(0, visibleCount);
   const hasMore       = visibleCount < feedSource.length;
 
-  // ── Sidebar ──
+  // ── Most read: top 6 by view count ──
   const mostRead = useMemo(() =>
-    [...withViews].sort((a, b) => b.views - a.views).slice(0, 6),
-    [withViews]
-  );
-  const politicsPosts = useMemo(() =>
-    withViews.filter(p => ["news", "politics"].includes(p.category?.toLowerCase())).slice(0, 4),
-    [withViews]
+    [...postsWithViews].sort((a, b) => (b.views ?? 0) - (a.views ?? 0)).slice(0, 6),
+    [postsWithViews]
   );
 
-  // ── Feed chunks: 1 wide card + up to 3 compact cards, repeat ──
+  // ── Politics/News sidebar: PRISM-ranked within those categories ──
+  const politicsPosts = useMemo(() =>
+    prismFeed.filter(p => ["news", "politics"].includes(p.category?.toLowerCase())).slice(0, 4),
+    [prismFeed]
+  );
+
+  // ── Feed chunks: 1 wide + up to 3 compact, ad every 2nd chunk ──
   const feedChunks = useMemo(() => {
-    const chunks: { feature: typeof displayedFeed[0]; compacts: typeof displayedFeed; adAfter: boolean }[] = [];
+    const chunks: { feature: Post; compacts: Post[]; adAfter: boolean }[] = [];
     for (let i = 0; i < displayedFeed.length; i += 4) {
       chunks.push({
         feature:  displayedFeed[i],
@@ -232,41 +366,15 @@ const Index = () => {
           "url": "https://zandani.co.ke",
           "potentialAction": { "@type": "SearchAction", "target": "https://zandani.co.ke/tag/{search_term_string}", "query-input": "required name=search_term_string" }
         })}</script>
-
-        {/*
-          ── ADSENSE LAYOUT SHIFT FIX ──────────────────────────────────────
-          Auto ads inject ads anywhere in the DOM which causes Cumulative Layout
-          Shift (CLS). These rules:
-          1. Give auto-ad containers a min-height so they reserve space before
-             the ad loads (prevents push-down).
-          2. Prevent AdSense inserting ads inside critical layout regions.
-          3. Use `contain: layout` on the hero so ads cannot escape it.
-        */}
         <style>{`
-          /* Reserve space for auto-injected AdSense containers so they don't
-             cause layout shift when the ad loads. */
-          ins.adsbygoogle[data-ad-status="filled"] {
-            display: block !important;
-          }
-          /* Prevent auto ads from injecting inside the hero or nav */
-          .adsense-no-inject {
-            contain: layout style;
-          }
-          /* Auto ads that appear between content blocks get a min-height
-             reservation so surrounding content doesn't jump */
-          .adsbygoogle:not([data-ad-slot]) {
-            min-height: 90px;
-          }
-          /* Stop auto ads pushing the sticky sidebar down */
-          aside .adsbygoogle {
-            max-width: 100% !important;
-          }
+          ins.adsbygoogle[data-ad-status="filled"] { display: block !important; }
+          .adsense-no-inject { contain: layout style; }
+          .adsbygoogle:not([data-ad-slot]) { min-height: 90px; }
+          aside .adsbygoogle { max-width: 100% !important; }
         `}</style>
       </Helmet>
 
-      {/* ══════════════════════════════════════════════════════════════
-          HERO — wrapped in adsense-no-inject to block auto ads
-      ══════════════════════════════════════════════════════════════ */}
+      {/* ══ HERO ══ */}
       {heroLead && (
         <section className="bg-zinc-950 border-b border-zinc-800 adsense-no-inject">
           <div className="container max-w-7xl mx-auto px-4 py-6">
@@ -287,6 +395,7 @@ const Index = () => {
                       <span className={`text-[10px] font-black tracking-[0.2em] uppercase text-white px-2 py-1 ${catColor(heroLead.category)}`}>
                         {heroLead.category}
                       </span>
+                      {/* PRISM badge: Top Story indicator driven by algo, not manual curation */}
                       <span className="flex items-center gap-1 text-zinc-400 text-xs">
                         <Flame className="w-3 h-3 text-rose-500" /> Top Story
                       </span>
@@ -304,7 +413,7 @@ const Index = () => {
                 </div>
               </Link>
 
-              {/* Two secondary stories */}
+              {/* Two secondary stories — guaranteed different categories from lead */}
               <div className="lg:col-span-5 flex flex-col gap-1">
                 {heroSecondary.map(post => (
                   <Link key={post.slug} to={`/article/${post.slug}`}
@@ -333,9 +442,7 @@ const Index = () => {
         </section>
       )}
 
-      {/* ══════════════════════════════════════════════════════════════
-          LATEST STRIP — also protected from auto ads
-      ══════════════════════════════════════════════════════════════ */}
+      {/* ══ LATEST STRIP ══ */}
       <section className="bg-zinc-900 border-b border-zinc-800 py-3 adsense-no-inject">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-4 overflow-x-auto scrollbar-hide">
@@ -366,9 +473,7 @@ const Index = () => {
         <CategoryBar />
       </Suspense>
 
-      {/* ══════════════════════════════════════════════════════════════
-          MAIN CONTENT + SIDEBAR
-      ══════════════════════════════════════════════════════════════ */}
+      {/* ══ MAIN CONTENT + SIDEBAR ══ */}
       <section className="py-10 md:py-16 bg-background">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-12 gap-10">
@@ -391,14 +496,16 @@ const Index = () => {
                 ))}
               </div>
 
-              {/* Feed section header */}
+              {/* Feed header */}
               <div className="flex items-center gap-4">
                 <h2 className="text-xl font-black uppercase tracking-tight flex items-center gap-2">
                   {activeCategory === "all" ? "Latest Stories" : activeCategory}
                   <Flame className="w-5 h-5 text-primary" />
                 </h2>
                 <div className="h-px flex-1 bg-divider" />
-                <span className="text-xs text-muted-foreground font-bold">{feedSource.length} stories</span>
+                <span className="text-xs text-muted-foreground font-bold flex items-center gap-1">
+                  <BarChart2 className="w-3 h-3" /> PRISM ranked · {feedSource.length} stories
+                </span>
               </div>
 
               {/* Feed chunks */}
@@ -406,7 +513,7 @@ const Index = () => {
                 {feedChunks.map((chunk, ci) => (
                   <div key={ci} className="space-y-6">
                     {chunk.feature && (
-                      <div className="border-b border-divider pb-6">
+                      <div className="border-b border-divider pb-6 relative">
                         <Suspense fallback={<div className="h-64 bg-zinc-900 animate-pulse" />}>
                           <ArticleCard post={chunk.feature} priority={ci === 0} />
                         </Suspense>
@@ -419,7 +526,6 @@ const Index = () => {
                         ))}
                       </div>
                     )}
-                    {/* Ad slot with reserved min-height to prevent layout shift */}
                     {chunk.adAfter && (
                       <div className="py-4 border-y border-divider/50" style={{ minHeight: 120 }}>
                         <AdUnit type="inarticle" />
@@ -464,12 +570,12 @@ const Index = () => {
                 </div>
               </div>
 
-              {/* Sidebar ad — reserved height prevents shift */}
+              {/* Sidebar ad */}
               <div style={{ minHeight: 280 }}>
                 <AdUnit type="effectivegate" />
               </div>
 
-              {/* Politics/News */}
+              {/* Politics/News — PRISM-ranked */}
               <div className="bg-zinc-950 p-6 border border-zinc-800">
                 <h3 className="text-sm font-black uppercase tracking-widest mb-6 flex items-center gap-2">
                   <span className="w-2 h-2 bg-blue-600 rounded-full" /> Politics & News
