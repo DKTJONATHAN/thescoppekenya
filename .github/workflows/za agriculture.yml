@@ -2,7 +2,7 @@ name: Timothy Muli - Agriculture Scraper
 
 on:
   schedule:
-    - cron: '25 7,16 * * *' 
+    - cron: '40 8,16 * * *' 
   workflow_dispatch:
 
 concurrency:

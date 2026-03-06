@@ -2,7 +2,7 @@ name: Mutheu Ann - Entertainment Scraper
 
 on:
   schedule:
-    - cron: '35 7,13,19 * * *'
+    - cron: '20 7,15 * * *'
   workflow_dispatch:
 
 concurrency:

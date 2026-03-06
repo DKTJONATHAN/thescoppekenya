@@ -1,8 +1,8 @@
-name: Celestine Nzioka - General News Scraper
+name: Wanjiku Karanja - Ghafla Entertainment Scraper
 
 on:
   schedule:
-    - cron: '0 5,11,17 * * *'
+    - cron: '8 5,13 * * *'
   workflow_dispatch:
 
 concurrency:
@@ -15,7 +15,7 @@ permissions:
 env:
   DEFAULT_BRANCH: main
   POSTS_DIR: content/posts
-  MEMORY_FILE: .github/memory_celestine.json
+  MEMORY_FILE: .github/memory_wanjiku.json
 
 jobs:
   generate-and-publish:
@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests google-genai beautifulsoup4 playwright python-dateutil
+          pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil
           playwright install chromium
 
       - name: Generate article with Gemini
@@ -50,7 +50,7 @@ jobs:
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           python - <<'PYEOF'
-          import os, json, datetime, requests, re, hashlib, sys, base64, time, itertools
+          import os, json, datetime, requests, re, time, sys, hashlib, textwrap, itertools, base64
           from dateutil import parser as date_parser
           from google import genai
           from google.genai import types
@@ -62,6 +62,134 @@ jobs:
 
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
+          def upload_to_imgbb(image_url):
+              api_key = os.environ.get("IMGBB_API_KEY")
+              if not api_key or not image_url:
+                  return image_url
+              try:
+                  img_data = requests.get(image_url, timeout=15).content
+                  base64_image = base64.b64encode(img_data).decode('utf-8')
+                  res = requests.post("https://api.imgbb.com/1/upload", data={"key": api_key, "image": base64_image}, timeout=20)
+                  if res.status_code == 200:
+                      new_url = res.json()['data']['url']
+                      print(f"Re-hosted image to: {new_url}")
+                      return new_url
+                  else:
+                      print(f"ImgBB failed: {res.text}")
+                      return image_url
+              except Exception as e:
+                  print(f"ImgBB exception: {e}")
+                  return image_url
+
+          def get_target_urls():
+              urls = []
+              print("Scanning ghafla.co.ke/ke...")
+              try:
+                  with sync_playwright() as p:
+                      browser = p.chromium.launch(headless=True, args=[
+                          "--no-sandbox",
+                          "--disable-dev-shm-usage",
+                          "--disable-blink-features=AutomationControlled"
+                      ])
+                      context = browser.new_context(
+                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+                          viewport={"width": 1920, "height": 1080}
+                      )
+                      page = context.new_page()
+                      page.goto('https://ghafla.co.ke/ke', timeout=60000, wait_until="domcontentloaded")
+                      page.evaluate("window.scrollBy(0, 1500)")
+                      page.wait_for_timeout(4000)
+                      soup = BeautifulSoup(page.content(), 'html.parser')
+                      for a in soup.find_all('a', href=True):
+                          href = a.get('href', '')
+                          if len(href) > 30 and '-' in href and '/author/' not in href and '/tag/' not in href and '/category/' not in href:
+                              full_url = href if href.startswith('http') else 'https://ghafla.co.ke' + (href if href.startswith('/') else '/' + href)
+                              if 'ghafla' in full_url:
+                                  urls.append(full_url)
+                      browser.close()
+              except Exception as e:
+                  print(f"URL scan error: {e}")
+              return list(set(urls))
+
+          def scrape_article(url):
+              print(f"Scraping: {url}")
+              try:
+                  with sync_playwright() as p:
+                      browser = p.chromium.launch(headless=True, args=[
+                          "--no-sandbox",
+                          "--disable-dev-shm-usage",
+                          "--disable-blink-features=AutomationControlled"
+                      ])
+                      context = browser.new_context(
+                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+                      )
+                      page = context.new_page()
+                      page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["image", "stylesheet", "font", "media"] else route.continue_())
+                      try:
+                          page.goto(url, timeout=45000, wait_until="domcontentloaded")
+                      except Exception as e:
+                          print(f"Goto exception (likely non-fatal): {e}")
+                      page.wait_for_timeout(3000)
+                      soup = BeautifulSoup(page.content(), "html.parser")
+                      browser.close()
+
+                      # Freshness check
+                      pub_time = None
+                      meta_pub = soup.find('meta', property='article:published_time')
+                      if meta_pub:
+                          try:
+                              pub_time = date_parser.parse(meta_pub.get('content'))
+                              if pub_time.tzinfo is None:
+                                  pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
+                              age_hours = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
+                              if age_hours > 10:
+                                  print(f"Article is {int(age_hours)}h old. Skipping.")
+                                  return None, None, None
+                              else:
+                                  print(f"Fresh: {int(age_hours)}h ago.")
+                          except Exception as e:
+                              print(f"Date parse error: {e}")
+                              return None, None, None
+                      else:
+                          print("No publish time found. Skipping.")
+                          return None, None, None
+
+                      # Title
+                      title_tag = soup.find('title')
+                      title = title_tag.get_text().strip() if title_tag else ""
+                      for suffix in [' - Ghafla!', ' - Ghafla', ' | Ghafla', ' | Ghafla!']:
+                          title = title.replace(suffix, '').strip()
+
+                      # Body text
+                      article_text = ""
+                      containers = soup.select('article, .article-content, .post-content, .entry-content, .content-body')
+                      for c in containers:
+                          paras = c.find_all('p')
+                          chunk = "\n\n".join([p.get_text(strip=True) for p in paras if len(p.get_text(strip=True)) > 40])
+                          if len(chunk) > 400:
+                              article_text = chunk
+                              break
+
+                      if len(article_text) < 400:
+                          all_paras = soup.find_all('p')
+                          article_text = "\n\n".join([p.get_text(strip=True) for p in all_paras if len(p.get_text(strip=True)) > 40])
+
+                      # Image
+                      img_url = ""
+                      for meta in soup.find_all('meta'):
+                          if meta.get('property') in ['og:image', 'twitter:image']:
+                              img_url = meta.get('content', '')
+                              if img_url:
+                                  break
+
+                      print(f"Extracted {len(article_text)} characters.")
+                      return article_text, img_url, title
+
+              except Exception as e:
+                  print(f"Scrape failed: {e}")
+                  return None, None, None
+
+          # API key rotation setup
           raw_keys = [
               os.environ.get("GEMINI_WRITE_KEY"),
               os.environ.get("GEMINI_API_KEY"),
@@ -75,25 +203,6 @@ jobs:
           key_cycle = itertools.cycle(api_keys)
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
-
-          def upload_to_imgbb(image_url):
-              api_key = os.environ.get("IMGBB_API_KEY")
-              if not api_key or not image_url:
-                  return image_url
-              try:
-                  img_data = requests.get(image_url, timeout=15).content
-                  base64_image = base64.b64encode(img_data).decode("utf-8")
-                  res = requests.post("https://api.imgbb.com/1/upload", data={"key": api_key, "image": base64_image}, timeout=20)
-                  if res.status_code == 200:
-                      new_url = res.json()["data"]["url"]
-                      print(f"Re-hosted image to: {new_url}")
-                      return new_url
-                  else:
-                      print(f"ImgBB failed: {res.text}")
-                      return image_url
-              except Exception as e:
-                  print(f"ImgBB exception: {e}")
-                  return image_url
 
           def gemini_generate(prompt, label="", use_search=False):
               global current_key, client
@@ -121,116 +230,35 @@ jobs:
                           break
               return None
 
-          def get_urls():
-              urls = []
-              print("Scanning Kenyans.co.ke...")
-              try:
-                  with sync_playwright() as p:
-                      browser = p.chromium.launch(headless=True, args=[
-                          "--no-sandbox",
-                          "--disable-dev-shm-usage"
-                      ])
-                      context = browser.new_context(
-                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
-                      )
-                      page = context.new_page()
-                      page.goto('https://www.kenyans.co.ke/news', timeout=60000, wait_until="domcontentloaded")
-                      page.wait_for_timeout(3000)
-                      soup = BeautifulSoup(page.content(), 'html.parser')
-                      for a in soup.find_all('a', href=True):
-                          href = a.get('href', '')
-                          if '/news/' in href and len(href) > 20:
-                              full = href if href.startswith('http') else 'https://www.kenyans.co.ke' + href
-                              urls.append(full)
-                      browser.close()
-              except Exception as e:
-                  print(f"URL scan error: {e}")
-              return list(set(urls))
-
-          def scrape(url):
-              print(f"Scraping: {url}")
-              try:
-                  with sync_playwright() as p:
-                      browser = p.chromium.launch(headless=True, args=[
-                          "--no-sandbox",
-                          "--disable-dev-shm-usage"
-                      ])
-                      context = browser.new_context(
-                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
-                      )
-                      page = context.new_page()
-                      page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["image", "stylesheet", "font", "media"] else route.continue_())
-                      try:
-                          page.goto(url, timeout=45000, wait_until="domcontentloaded")
-                      except Exception as e:
-                          print(f"Goto exception (likely non-fatal): {e}")
-                      page.wait_for_timeout(3000)
-                      soup = BeautifulSoup(page.content(), "html.parser")
-                      browser.close()
-
-                      meta_pub = soup.find('meta', property='article:published_time')
-                      if meta_pub:
-                          try:
-                              pub_time = date_parser.parse(meta_pub.get('content'))
-                              if pub_time.tzinfo is None:
-                                  pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
-                              age_hours = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
-                              if age_hours > 10:
-                                  print(f"Article is {int(age_hours)}h old. Skipping.")
-                                  return None, None, None
-                              else:
-                                  print(f"Fresh: {int(age_hours)}h ago.")
-                          except Exception as e:
-                              print(f"Date parse error: {e}")
-                              return None, None, None
-                      else:
-                          print("No publish time found. Skipping.")
-                          return None, None, None
-
-                      title_tag = soup.find('title')
-                      title = title_tag.get_text().replace(' - Kenyans.co.ke', '').strip() if title_tag else ""
-
-                      text = "\n\n".join([p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40])
-
-                      img_meta = soup.find('meta', property='og:image')
-                      img = img_meta.get('content', '') if img_meta else ""
-
-                      print(f"Extracted {len(text)} characters.")
-                      return text, img, title
-
-              except Exception as e:
-                  print(f"Scrape failed: {e}")
-                  return None, None, None
-
-          urls = get_urls()
-          if not urls:
-              print("No URLs found.")
+          # Scrape articles
+          article_links = get_target_urls()
+          if not article_links:
+              print("No articles found on Ghafla.")
               sys.exit(0)
 
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
 
-          raw_text, target_img, target_title, final_hash = None, None, None, None
-          for url in urls:
-              u_hash = hashlib.md5(url.encode()).hexdigest()
+          full_raw_text, target_image, target_title, final_hash = None, None, None, None
+          for link in article_links:
+              u_hash = hashlib.md5(link.encode()).hexdigest()
               if u_hash in memory:
                   continue
-              txt, img, t = scrape(url)
-              if txt and len(txt) > 400:
-                  raw_text, target_img, target_title, final_hash = txt, img, t, u_hash
+              text, img, title = scrape_article(link)
+              if text and len(text) > 400:
+                  full_raw_text, target_image, target_title, final_hash = text, img, title, u_hash
                   break
 
-          if not raw_text:
+          if not full_raw_text:
               print("No valid fresh content found.")
               sys.exit(0)
 
-          title_prompt = f"""Original Title: {target_title}
-          Task: Rephrase this headline for maximum click-through rate using one of these formulas:
-          1. Shocking Truth - lead with the most alarming fact
-          2. [Bracket Hook] - use brackets to add intrigue
-          3. How/What - use a how or what question format
-          Front-load the most important keywords. Keep under 70 characters.
-          Output ONLY valid JSON with no markdown: {{"final_title": "..."}}"""
+          # Title generation
+          title_prompt = f"""SCRAPED ARTICLE: {target_title}
+          Classify content type: LIST, BIO, SCANDAL, GUIDE, TRENDING, NEWS.
+          HIGH-CTR FORMULAS: 1. Number+Keyword+Benefit, 2. Keyword+Power Word+Year, 3. How/What+Keyword+Number, 4. Keyword+[Bracket Hook], 5. Adjective+Number+Outcome.
+          INSTRUCTIONS: Generate EXACTLY 3 SEO titles under 60 characters front-loading the keyword. Select the single best one.
+          Output ONLY valid JSON with no markdown: {{"final_title": "Winning Title"}}"""
 
           title_text = gemini_generate(title_prompt, "title")
           final_title = target_title
@@ -245,20 +273,23 @@ jobs:
 
           time.sleep(5)
 
-          # Rotate key for next call
+          # Rotate key for article generation
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
 
+          # Article generation
           article_prompt = f"""Current Date: {full_date_str}
           TITLE: {final_title}
-          SOURCE TEXT: {raw_text[:10000]}
+          SOURCE TEXT: {full_raw_text[:10000]}
 
-          TASK: Write a polished, authoritative Kenyan news article as Celestine Nzioka.
-          - Use clear, professional English. No Sheng or Swahili.
+          TASK: Write a sharp, engaging entertainment news article as Wanjiku Karanja, a plugged-in Kenyan entertainment journalist for Za Ndani.
+          - Use clear, professional Kenyan English. No Sheng or Swahili.
           - No long dashes or double dashes. Use only single hyphens.
           - Do NOT include the title, author name, or date in the body.
-          - Start with an H2 heading, then a crisp summary paragraph, then detailed paragraphs with subheadings.
-          - Be factual and direct. No filler phrases or clichés."""
+          - Start with an H2 heading containing primary keywords.
+          - Follow with a crisp 40-word summary paragraph, then detailed paragraphs with subheadings.
+          - Be factual and direct. No filler phrases or cliches.
+          - Verified 10h freshness only."""
 
           article_text = gemini_generate(article_prompt, "article", use_search=True)
           if not article_text:
@@ -267,27 +298,30 @@ jobs:
 
           article_text = re.sub(r"^```(?:markdown|text)?\n?", "", article_text).rstrip("```").strip()
           article_text = re.sub(r"^(?:\*\*?)?(?:Title|By|Author|Date|Updated):?.*?\n+", "", article_text, flags=re.IGNORECASE).strip()
+          article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
 
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:70]
-          final_image = upload_to_imgbb(target_img) if target_img else ""
+          final_image = upload_to_imgbb(target_image) if target_image else ""
 
           posts_dir = os.environ.get("POSTS_DIR", "content/posts")
           os.makedirs(posts_dir, exist_ok=True)
 
-          frontmatter = f"""---
+          final_file = textwrap.dedent(f"""\
+          ---
           title: "{final_title.replace('"', "'")}"
           slug: "{slug}"
-          author: "Celestine Nzioka"
+          author: "Wanjiku Karanja"
           image: "{final_image}"
-          category: "News"
+          category: "Entertainment"
           date: "{today_str}"
           ---
 
-          """
+          {article_text}
+          """)
 
           filepath = os.path.join(posts_dir, f"{slug}.md")
           with open(filepath, "w", encoding="utf-8") as f:
-              f.write(frontmatter + article_text)
+              f.write(final_file)
 
           memory.append(final_hash)
           os.makedirs(os.path.dirname(memory_path), exist_ok=True)
@@ -299,7 +333,7 @@ jobs:
 
       - name: Git Safety Pull
         run: |
-          git config --global user.name "Celestine Nzioka"
+          git config --global user.name "Wanjiku Karanja"
           git config --global user.email "bot@zandani.co.ke"
           git add .
           git stash -u
@@ -310,7 +344,7 @@ jobs:
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_author: "Celestine Nzioka <bot@zandani.co.ke>"
-          commit_message: "content: News update by Celestine Nzioka"
+          commit_author: "Wanjiku Karanja <bot@zandani.co.ke>"
+          commit_message: "content: Entertainment scoop from Ghafla by Wanjiku Karanja 🎭"
           branch: ${{ env.DEFAULT_BRANCH }}
-          file_pattern: 'content/posts/*.md .github/memory_celestine.json'
+          file_pattern: 'content/posts/*.md .github/memory_wanjiku.json'

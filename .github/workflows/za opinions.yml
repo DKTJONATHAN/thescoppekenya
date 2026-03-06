@@ -2,7 +2,7 @@ name: Jonathan Mwaniki - Opinions Scraper
 
 on:
   schedule:
-    - cron: '10 10,18 * * *' # Late Morning and Evening UTC
+    - cron: '25 10,18 * * *'
   workflow_dispatch:
 
 concurrency:

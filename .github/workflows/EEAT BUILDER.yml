@@ -2,7 +2,7 @@ name: E-E-A-T Signal Builder
 
 on:
   schedule:
-    - cron: '0 6 * * 1,4'  # Every Monday and Thursday at 6am
+    - cron: '5 6 * * 1,4'  # Every Monday and Thursday at 6:05am
   workflow_dispatch:
     inputs:
       min_views:
@@ -213,9 +213,11 @@ jobs:
                           if "429" in str(e):
                               keys_tried += 1
                               if keys_tried >= len(api_keys):
-                              print("All keys quota hit. Waiting 45s...")
-                              time.sleep(45)
+                                  print("All keys quota hit. Waiting 45s...")
+                                  time.sleep(45)
                                   keys_tried = 0
+                              else:
+                                  print("Quota hit. Rotating key...")
                               current_key = next(key_cycle)
                               client_g = genai.Client(api_key=current_key)
                           else:
