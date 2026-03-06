@@ -2,7 +2,7 @@ name: Wanjiku Karanja - Ghafla Entertainment Scraper
 
 on:
   schedule:
-    - cron: '8 5,13 * * *'
+    - cron: '0 5,9,13,17,21 * * *'
   workflow_dispatch:
 
 concurrency:
