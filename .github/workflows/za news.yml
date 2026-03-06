@@ -2,7 +2,7 @@ name: Celestine Nzioka - General News Scraper
 
 on:
   schedule:
-    - cron: '0 5,11,17 * * *'
+    - cron: '0 0,2,5,7,10,12,15,17,20,22 * * *'
   workflow_dispatch:
 
 concurrency:
@@ -39,6 +39,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests google-genai beautifulsoup4 playwright python-dateutil
           playwright install chromium
+          npx playwright install-deps
 
       - name: Generate article with Gemini
         env:
@@ -50,7 +51,7 @@ jobs:
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           python - <<'PYEOF'
-          import os, json, datetime, requests, re, hashlib, sys, base64, time, itertools
+          import os, json, datetime, requests, re, hashlib, sys, base64, time, itertools, textwrap
           from dateutil import parser as date_parser
           from google import genai
           from google.genai import types
@@ -236,81 +237,6 @@ jobs:
           final_title = target_title
           if title_text:
               try:
-                  clean = re.sub(r"^```(?:json)?\n?", "", title_text).rstrip("```").strip()
-                  match = re.search(r'\{.*\}', clean, re.DOTALL)
-                  if match:
-                      final_title = json.loads(match.group()).get('final_title', target_title)
-              except Exception as e:
-                  print(f"Title parse error: {e}. Using original.")
-
-          time.sleep(5)
-
-          # Rotate key for next call
-          current_key = next(key_cycle)
-          client = genai.Client(api_key=current_key)
-
-          article_prompt = f"""Current Date: {full_date_str}
-          TITLE: {final_title}
-          SOURCE TEXT: {raw_text[:10000]}
-
-          TASK: Write a polished, authoritative Kenyan news article as Celestine Nzioka.
-          - Use clear, professional English. No Sheng or Swahili.
-          - No long dashes or double dashes. Use only single hyphens.
-          - Do NOT include the title, author name, or date in the body.
-          - Start with an H2 heading, then a crisp summary paragraph, then detailed paragraphs with subheadings.
-          - Be factual and direct. No filler phrases or clichés."""
-
-          article_text = gemini_generate(article_prompt, "article", use_search=True)
-          if not article_text:
-              print("Failed to generate article.")
-              sys.exit(1)
-
-          article_text = re.sub(r"^```(?:markdown|text)?\n?", "", article_text).rstrip("```").strip()
-          article_text = re.sub(r"^(?:\*\*?)?(?:Title|By|Author|Date|Updated):?.*?\n+", "", article_text, flags=re.IGNORECASE).strip()
-
-          slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:70]
-          final_image = upload_to_imgbb(target_img) if target_img else ""
-
-          posts_dir = os.environ.get("POSTS_DIR", "content/posts")
-          os.makedirs(posts_dir, exist_ok=True)
-
-          frontmatter = f"""---
-          title: "{final_title.replace('"', "'")}"
-          slug: "{slug}"
-          author: "Celestine Nzioka"
-          image: "{final_image}"
-          category: "News"
-          date: "{today_str}"
-          ---
-
-          """
-
-          filepath = os.path.join(posts_dir, f"{slug}.md")
-          with open(filepath, "w", encoding="utf-8") as f:
-              f.write(frontmatter + article_text)
-
-          memory.append(final_hash)
-          os.makedirs(os.path.dirname(memory_path), exist_ok=True)
-          with open(memory_path, 'w') as f:
-              json.dump(memory[-200:], f)
-
-          print(f"Article saved: {slug}.md")
-          PYEOF
-
-      - name: Git Safety Pull
-        run: |
-          git config --global user.name "Celestine Nzioka"
-          git config --global user.email "bot@zandani.co.ke"
-          git add .
-          git stash -u
-          git fetch origin main
-          git pull origin main --rebase
-          git stash pop || echo "Nothing to pop"
-
-      - name: Commit and push
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_author: "Celestine Nzioka <bot@zandani.co.ke>"
-          commit_message: "content: News update by Celestine Nzioka"
-          branch: ${{ env.DEFAULT_BRANCH }}
-          file_pattern: 'content/posts/*.md .github/memory_celestine.json'
+                  clean = re.sub(r"^
+http://googleusercontent.com/immersive_entry_chip/0
+http://googleusercontent.com/immersive_entry_chip/1
