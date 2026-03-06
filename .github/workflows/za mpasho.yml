@@ -2,7 +2,7 @@ name: Za Ndani - Mpasho Scraper
 
 on:
   schedule:
-    - cron: '15 4,7,10,13,16,19 * * *'
+    - cron: '15 0,2,5,7,10,12,15,17,20,22 * * *'
   workflow_dispatch:
 
 concurrency:
@@ -39,6 +39,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil
           playwright install chromium
+          npx playwright install-deps
 
       - name: Generate article with Gemini
         env:
@@ -181,7 +182,7 @@ jobs:
                               pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
                           now = datetime.datetime.now(datetime.timezone.utc)
                           age_hours = (now - pub_time).total_seconds() / 3600
-                          limit = 12
+                          limit = 15
                           if age_hours > limit:
                               print(f"Article is {int(age_hours)} hours old. Skipping.")
                               return None, None, None
@@ -387,76 +388,4 @@ jobs:
           if not success_flag:
               sys.exit(1)
 
-          full_text = re.sub(r"^```(?:markdown|text|html)?\n", "", full_text, flags=re.IGNORECASE)
-          full_text = re.sub(r"\n```$", "", full_text).strip()
-
-          parsed = {"TITLE": "", "SLUG": "", "EXCERPT": "", "TAGS": "", "IMAGE_KEYWORD": "", "BODY": ""}
-
-          section_matches = re.findall(r"^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD):\s*(.*)", full_text, re.MULTILINE | re.IGNORECASE)
-          for key, value in section_matches:
-              parsed[key.upper()] = value.strip()
-
-          body_match = re.search(r"BODY:\s*(.*)", full_text, re.DOTALL | re.IGNORECASE)
-          if body_match:
-              parsed["BODY"] = body_match.group(1).strip()
-          else:
-              parsed["BODY"] = full_text.split("BODY:", 1)[-1].strip() if "BODY:" in full_text else full_text
-
-          parsed["BODY"] = re.sub(r"^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD|BODY):\s*.*$", "", parsed["BODY"], flags=re.MULTILINE | re.IGNORECASE).strip()
-          parsed["BODY"] = re.sub(r"^(?:\*\*?)?(?:Title|Headline):?.*?\n+", "", parsed["BODY"], flags=re.IGNORECASE).strip()
-          parsed["BODY"] = re.sub(r"^(?:\*\*?)?(?:By|Author):?.*?\n+", "", parsed["BODY"], flags=re.IGNORECASE).strip()
-          parsed["BODY"] = re.sub(r"^(?:\*\*?)?(?:Date|Updated):?.*?\n+", "", parsed["BODY"], flags=re.IGNORECASE).strip()
-          parsed["BODY"] = dash_scrubber(parsed["BODY"]).strip()
-
-          tags_list = [t.strip().replace('"', '') for t in parsed["TAGS"].split(",") if t.strip()]
-          tags_str = ", ".join([f'"{t}"' for t in tags_list]) if tags_list else '"entertainment", "gossip"'
-
-          initial_image_url = target_image if target_image else get_real_image(parsed.get("IMAGE_KEYWORD") or target_title)
-          final_image_url = upload_to_imgbb(initial_image_url)
-
-          final_file = textwrap.dedent(f"""\
-          ---
-          title: "{parsed['TITLE'].replace('"', "'")}"
-          slug: "{parsed['SLUG']}"
-          excerpt: "{parsed['EXCERPT'].replace('"', "'")}"
-          author: "Za Ndani"
-          image: "{final_image_url}"
-          category: "Entertainment"
-          date: "{today_str}"
-          tags: [{tags_str}]
-          ---
-
-          {parsed['BODY']}
-          """)
-
-          out_dir = os.path.join(os.getcwd(), os.environ.get("POSTS_DIR", "content/posts"))
-          os.makedirs(out_dir, exist_ok=True)
-          filename = f"{parsed['SLUG']}.md"
-          with open(os.path.join(out_dir, filename), "w", encoding="utf-8") as f:
-              f.write(final_file)
-
-          memory.append(final_hash)
-          os.makedirs(os.path.dirname(memory_path), exist_ok=True)
-          with open(memory_path, "w") as f:
-              json.dump(memory[-200:], f)
-
-          print(f"Article saved: {filename}")
-          PYEOF
-
-      - name: Git Safety Pull
-        run: |
-          git config --global user.name "Za Ndani"
-          git config --global user.email "bot@zandani.co.ke"
-          git add .
-          git stash -u
-          git fetch origin main
-          git pull origin main --rebase
-          git stash pop || echo "Nothing to pop"
-
-      - name: Commit and push article
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_author: "Za Ndani <bot@zandani.co.ke>"
-          commit_message: "content: Entertainment scoop from Mpasho"
-          branch: ${{ env.DEFAULT_BRANCH }}
-          file_pattern: 'content/posts/*.md .github/memory_zandani.json'
+          full_text = re.sub(r"^
