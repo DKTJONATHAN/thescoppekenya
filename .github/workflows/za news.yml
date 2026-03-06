@@ -2,8 +2,12 @@ name: Celestine Nzioka - General News Scraper
 
 on:
   schedule:
-    - cron: '12 4-20 * * *'
+    - cron: '0 5,11,17 * * *'
   workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -38,27 +42,39 @@ jobs:
 
       - name: Generate article with Gemini
         env:
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           python - <<'PYEOF'
-          import os, json, datetime, requests, re, hashlib, sys, base64
+          import os, json, datetime, requests, re, hashlib, sys, base64, time, itertools
           from dateutil import parser as date_parser
           from google import genai
           from google.genai import types
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
 
+          today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
+
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
-          api_key = os.environ.get("GEMINI_API_KEY")
-          if not api_key:
-              print("No Gemini API key provided.")
+          raw_keys = [
+              os.environ.get("GEMINI_WRITE_KEY"),
+              os.environ.get("GEMINI_API_KEY"),
+              os.environ.get("GEMINI_API_KEY1")
+          ]
+          api_keys = [k for k in raw_keys if k and k.strip()]
+          if not api_keys:
+              print("No Gemini API keys provided.")
               sys.exit(1)
 
-          client = genai.Client(api_key=api_key)
+          key_cycle = itertools.cycle(api_keys)
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
 
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
@@ -78,6 +94,32 @@ jobs:
               except Exception as e:
                   print(f"ImgBB exception: {e}")
                   return image_url
+
+          def gemini_generate(prompt, label="", use_search=False):
+              global current_key, client
+              keys_tried = 0
+              for model_id in MODELS_TO_TRY:
+                  for retry in range(len(api_keys) * 2):
+                      try:
+                          config = types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]) if use_search else None
+                          resp = client.models.generate_content(model=model_id, contents=prompt, config=config)
+                          print(f"SUCCESS with {model_id} for {label}")
+                          return resp.text.strip()
+                      except Exception as e:
+                          if "429" in str(e):
+                              keys_tried += 1
+                              if keys_tried >= len(api_keys):
+                                  print("All keys hit quota. Waiting 45s...")
+                                  time.sleep(45)
+                                  keys_tried = 0
+                              else:
+                                  print("Quota hit. Rotating key...")
+                                  current_key = next(key_cycle)
+                                  client = genai.Client(api_key=current_key)
+                              continue
+                          print(f"Error with {model_id} for {label}: {e}")
+                          break
+              return None
 
           def get_urls():
               urls = []
@@ -182,24 +224,6 @@ jobs:
               print("No valid fresh content found.")
               sys.exit(0)
 
-          def try_generate(prompt, label=""):
-              keys_tried = 0
-              for model_id in MODELS_TO_TRY:
-                  for retry in range(3):
-                      try:
-                          resp = client.models.generate_content(model=model_id, contents=prompt)
-                          print(f"SUCCESS with {model_id} for {label}")
-                          return resp.text.strip()
-                      except Exception as e:
-                          if "429" in str(e):
-                              keys_tried += 1
-                              print(f"Rate limit hit. Waiting 45s...")
-                              time.sleep(45)
-                              continue
-                          print(f"Error with {model_id} for {label}: {e}")
-                          break
-              return None
-
           title_prompt = f"""Original Title: {target_title}
           Task: Rephrase this headline for maximum click-through rate using one of these formulas:
           1. Shocking Truth - lead with the most alarming fact
@@ -208,7 +232,7 @@ jobs:
           Front-load the most important keywords. Keep under 70 characters.
           Output ONLY valid JSON with no markdown: {{"final_title": "..."}}"""
 
-          title_text = try_generate(title_prompt, "title")
+          title_text = gemini_generate(title_prompt, "title")
           final_title = target_title
           if title_text:
               try:
@@ -219,9 +243,13 @@ jobs:
               except Exception as e:
                   print(f"Title parse error: {e}. Using original.")
 
-          time.sleep(5)  # 5s delay between API calls
+          time.sleep(5)
 
-          article_prompt = f"""Current Date: {datetime.datetime.utcnow().strftime("%A, %B %d, %Y")}
+          # Rotate key for next call
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+
+          article_prompt = f"""Current Date: {full_date_str}
           TITLE: {final_title}
           SOURCE TEXT: {raw_text[:10000]}
 
@@ -232,7 +260,7 @@ jobs:
           - Start with an H2 heading, then a crisp summary paragraph, then detailed paragraphs with subheadings.
           - Be factual and direct. No filler phrases or clichés."""
 
-          article_text = try_generate(article_prompt, "article")
+          article_text = gemini_generate(article_prompt, "article", use_search=True)
           if not article_text:
               print("Failed to generate article.")
               sys.exit(1)
@@ -241,7 +269,6 @@ jobs:
           article_text = re.sub(r"^(?:\*\*?)?(?:Title|By|Author|Date|Updated):?.*?\n+", "", article_text, flags=re.IGNORECASE).strip()
 
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:70]
-          today_str = datetime.datetime.utcnow().strftime('%Y-%m-%d')
           final_image = upload_to_imgbb(target_img) if target_img else ""
 
           posts_dir = os.environ.get("POSTS_DIR", "content/posts")
