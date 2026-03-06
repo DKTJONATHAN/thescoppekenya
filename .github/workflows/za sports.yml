@@ -2,7 +2,7 @@ name: Martin Mutwiri - Sports Scraper
 
 on:
   schedule:
-    - cron: '20 7,13,19 * * *'
+    - cron: '35 6,12,18 * * *'
   workflow_dispatch:
 
 permissions:

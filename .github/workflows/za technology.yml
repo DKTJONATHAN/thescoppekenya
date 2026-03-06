@@ -2,7 +2,7 @@ name: Elizabeth Muthoni - Tech Scraper
 
 on:
   schedule:
-    - cron: '55 9,17 * * *'
+    - cron: '45 8,16 * * *'
   workflow_dispatch:
 
 permissions:

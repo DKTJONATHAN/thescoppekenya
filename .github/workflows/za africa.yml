@@ -2,16 +2,11 @@ name: Amara Ndlovu - Pan-Africa Entertainment Scraper
 
 on:
   schedule:
-    # Nigeria (00:40 and 12:40 UTC)
-    - cron: '40 0,12 * * *'
-    # South Africa (02:40 and 14:40 UTC)
-    - cron: '40 2,14 * * *'
-    # Ghana (04:40 and 16:40 UTC)
-    - cron: '40 4,16 * * *'
-    # Uganda (06:40 and 18:40 UTC)
-    - cron: '40 6,18 * * *'
-    # Tanzania (08:40 and 20:40 UTC)
-    - cron: '40 8,20 * * *'
+    - cron: '30 0,12 * * *'
+    - cron: '30 2,14 * * *'
+    - cron: '30 4,16 * * *'
+    - cron: '30 6,18 * * *'
+    - cron: '30 8,20 * * *'
   workflow_dispatch:
 
 concurrency:
