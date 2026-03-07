@@ -1,8 +1,8 @@
-name: Wanjiku Karanja - Ghafla Entertainment Scraper
+name: Mutheu Ann - Mpasho Entertainment Scraper
 
 on:
   schedule:
-    - cron: '0 5,9,13,17,21 * * *'
+    - cron: '45 8,16,21 * * *'
   workflow_dispatch:
 
 concurrency:
@@ -15,7 +15,7 @@ permissions:
 env:
   DEFAULT_BRANCH: main
   POSTS_DIR: content/posts
-  MEMORY_FILE: .github/memory_wanjiku.json
+  MEMORY_FILE: .github/memory_mutheu.json
 
 jobs:
   generate-and-publish:
@@ -84,7 +84,7 @@ jobs:
 
           def get_target_urls():
               urls = []
-              print("Scanning ghafla.co.ke/ke...")
+              print("Scanning mpasho.co.ke...")
               try:
                   with sync_playwright() as p:
                       browser = p.chromium.launch(headless=True, args=[
@@ -97,15 +97,15 @@ jobs:
                           viewport={"width": 1920, "height": 1080}
                       )
                       page = context.new_page()
-                      page.goto('https://ghafla.co.ke/ke', timeout=60000, wait_until="domcontentloaded")
+                      page.goto('https://www.mpasho.co.ke', timeout=60000, wait_until="domcontentloaded")
                       page.evaluate("window.scrollBy(0, 1500)")
                       page.wait_for_timeout(4000)
                       soup = BeautifulSoup(page.content(), 'html.parser')
                       for a in soup.find_all('a', href=True):
                           href = a.get('href', '')
                           if len(href) > 30 and '-' in href and '/author/' not in href and '/tag/' not in href and '/category/' not in href:
-                              full_url = href if href.startswith('http') else 'https://ghafla.co.ke' + (href if href.startswith('/') else '/' + href)
-                              if 'ghafla' in full_url:
+                              full_url = href if href.startswith('http') else 'https://www.mpasho.co.ke' + (href if href.startswith('/') else '/' + href)
+                              if 'mpasho' in full_url:
                                   urls.append(full_url)
                       browser.close()
               except Exception as e:
@@ -134,7 +134,6 @@ jobs:
                       soup = BeautifulSoup(page.content(), "html.parser")
                       browser.close()
 
-                      # Freshness check
                       pub_time = None
                       meta_pub = soup.find('meta', property='article:published_time')
                       if meta_pub:
@@ -155,13 +154,11 @@ jobs:
                           print("No publish time found. Skipping.")
                           return None, None, None
 
-                      # Title
                       title_tag = soup.find('title')
                       title = title_tag.get_text().strip() if title_tag else ""
-                      for suffix in [' - Ghafla!', ' - Ghafla', ' | Ghafla', ' | Ghafla!']:
+                      for suffix in [' - Mpasho', ' | Mpasho', ' - Mpasho News', ' | Mpasho News']:
                           title = title.replace(suffix, '').strip()
 
-                      # Body text
                       article_text = ""
                       containers = soup.select('article, .article-content, .post-content, .entry-content, .content-body')
                       for c in containers:
@@ -175,7 +172,6 @@ jobs:
                           all_paras = soup.find_all('p')
                           article_text = "\n\n".join([p.get_text(strip=True) for p in all_paras if len(p.get_text(strip=True)) > 40])
 
-                      # Image
                       img_url = ""
                       for meta in soup.find_all('meta'):
                           if meta.get('property') in ['og:image', 'twitter:image']:
@@ -190,7 +186,6 @@ jobs:
                   print(f"Scrape failed: {e}")
                   return None, None, None
 
-          # API key rotation setup
           raw_keys = [
               os.environ.get("GEMINI_WRITE_KEY"),
               os.environ.get("GEMINI_API_KEY"),
@@ -231,10 +226,9 @@ jobs:
                           break
               return None
 
-          # Scrape articles
           article_links = get_target_urls()
           if not article_links:
-              print("No articles found on Ghafla.")
+              print("No articles found on Mpasho.")
               sys.exit(0)
 
           memory_path = os.environ.get('MEMORY_FILE')
@@ -254,7 +248,6 @@ jobs:
               print("No valid fresh content found.")
               sys.exit(0)
 
-          # Title generation
           title_prompt = f"""SCRAPED ARTICLE: {target_title}
           Classify content type: LIST, BIO, SCANDAL, GUIDE, TRENDING, NEWS.
           HIGH-CTR FORMULAS: 1. Number+Keyword+Benefit, 2. Keyword+Power Word+Year, 3. How/What+Keyword+Number, 4. Keyword+[Bracket Hook], 5. Adjective+Number+Outcome.
@@ -274,17 +267,15 @@ jobs:
 
           time.sleep(5)
 
-          # Rotate key for article generation
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
 
-          # Article generation
           article_prompt = f"""Current Date: {full_date_str}
           TITLE: {final_title}
           SOURCE TEXT: {full_raw_text[:10000]}
 
-          TASK: Write a sharp, engaging entertainment news article as Wanjiku Karanja, a plugged-in Kenyan entertainment journalist for Za Ndani.
-          - Use clear, professional Kenyan English. No Sheng or Swahili.
+          TASK: Write an engaging entertainment article as Mutheu Ann, a plugged-in Kenyan entertainment reporter for Za Ndani.
+          - Engaging, witty, celebrity-focused. No Sheng.
           - No long dashes or double dashes. Use only single hyphens.
           - Do NOT include the title, author name, or date in the body.
           - Start with an H2 heading containing primary keywords.
@@ -311,7 +302,7 @@ jobs:
           ---
           title: "{final_title.replace('"', "'")}"
           slug: "{slug}"
-          author: "Wanjiku Karanja"
+          author: "Mutheu Ann"
           image: "{final_image}"
           category: "Entertainment"
           date: "{publish_timestamp}"
@@ -334,7 +325,7 @@ jobs:
 
       - name: Git Safety Pull
         run: |
-          git config --global user.name "Wanjiku Karanja"
+          git config --global user.name "Mutheu Ann"
           git config --global user.email "bot@zandani.co.ke"
           git add .
           git stash -u
@@ -345,7 +336,7 @@ jobs:
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_author: "Wanjiku Karanja <bot@zandani.co.ke>"
-          commit_message: "content: Entertainment scoop from Ghafla by Wanjiku Karanja 🎭"
+          commit_author: "Mutheu Ann <bot@zandani.co.ke>"
+          commit_message: "content: Entertainment from Mpasho by Mutheu Ann 🎭"
           branch: ${{ env.DEFAULT_BRANCH }}
-          file_pattern: 'content/posts/*.md .github/memory_wanjiku.json'
+          file_pattern: 'content/posts/*.md .github/memory_mutheu.json'
