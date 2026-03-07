@@ -1,0 +1,24 @@
+---
+title: "Harmonize to Headline Old School Bongo 6.0 in Nairobi: A Throwback to East African Hits"
+slug: "harmonize-old-school-bongo-nairobi"
+author: "Za Ndani"
+image: "https://i.ibb.co/7xxswWgg/bf8d60ce23e3.jpg"
+category: "Entertainment"
+date: "2026-03-07T13:09:17Z"
+excerpt: "Tanzanian star Harmonize is set to headline Old School Bongo 6.0 in Nairobi, sparking questions about the true motive behind this "throwback" event."
+tags: [Harmonize, Old School Bongo, Nairobi, Bongo Flava, East African music, entertainment, concert, nostalgia, celebrity news]
+---
+SLUG: harmonize-old-school-bongo-nairobi
+EXCERPT: Tanzanian star Harmonize is set to headline Old School Bongo 6.0 in Nairobi, sparking questions about the true motive behind this "throwback" event.
+TAGS: Harmonize, Old School Bongo, Nairobi, Bongo Flava, East African music, entertainment, concert, nostalgia, celebrity news
+IMAGE_KEYWORD: Harmonize concert Nairobi
+
+## Harmonize Takes Over Nairobi: Nostalgia or Pure Profit?
+
+Music enthusiasts in Nairobi are gearing up for the Old School Bongo 6.0 event featuring Tanzanian sensation Harmonize. The daytime concert is scheduled for April 5, 2026, at Cavalli @ The Manor, kicking off at 2:00 PM, promising a celebration of classic East African hits and performances from regional artists. But beneath the surface of this "throwback" facade, one must question if this is truly about nostalgia, or simply another calculated maneuver in the ever-hungry East African entertainment industry.
+
+Harmonize, born Rajabu Abdulkahali Ibrahim, carved out his prominent space in the Bongo Flava scene, first rising to regional fame in 2015 with his breakout single "Aiyola". His journey began under the wings of Diamond Platnumz’s Wasafi Classic Baby label, a shrewd business move that positioned him for widespread recognition. Later, the artist launched his own empire, Konde Music Worldwide, in 2019, cementing his status as an independent force - a testament to his ambition more than just musical genius.
+
+The "Old School Bongo" concept itself, now in its sixth iteration, is a clever marketing ploy. It capitalizes on the collective longing for the early and mid-2010s era when Tanzanian urban music truly captivated East Africa. Organizers promise a blend of nostalgic playlists, live performances, and DJ sets, all centered on these "classic tracks". One could argue it is less about preserving musical heritage and more about packaging a familiar product for maximum consumer appeal. After all, what sells better than a curated trip down memory lane, especially when a big name is attached?
+
+Nairobi, ever the strategic hub for cross-border entertainment, continues to attract Tanzanian artists looking to tap into the Kenyan market. Promoters have become adept at blending Tanzanian music with Kenya’s urban scene, creating events that draw crowds from both sides of the border. This latest Harmonize headliner fits perfectly into that growing trend, solidifying Nairobi's role not just as a cultural melting pot, but as a thriving marketplace for celebrity appearances. While some celebrities opt for reality television stints, vying for airtime and relevance - one only needs to look at the buzz surrounding potential candidates for [I'm A Celebrity South Africa 2026: Buzz, Battles & B-Listers](https://zandani.co.ke/article/i-m-a-celebrity-south-africa-2026) - others like Harmonize maintain their grip on the live performance circuit, ensuring a consistent revenue stream. This show is yet another reminder that in the glitzy world of East African entertainment, every "throwback" has a contemporary price tag.
