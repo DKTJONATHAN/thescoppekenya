@@ -2,8 +2,14 @@ name: Martin Mutwiri - Sports Scraper
 
 on:
   schedule:
+    # Runs at 06:35, 12:35, and 18:35 UTC
+    # Spaced to avoid collision with Wanjiku (:00) and Elizabeth (:22)
     - cron: '35 6,12,18 * * *'
   workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -20,12 +26,22 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
+          fetch-depth: 0
+          ref: ${{ env.DEFAULT_BRANCH }}
           token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
 
-      - name: Install dependencies
-        run: pip install requests google-genai beautifulsoup4 playwright python-dateutil && playwright install chromium
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-      - name: Generate article with Gemini
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil
+          playwright install chromium
+
+      - name: Generate Sports Article with Gemini
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -33,121 +49,121 @@ jobs:
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
-          python << 'EOF'
-          import os, json, datetime, requests, re, hashlib, sys, time, itertools
+          python - <<'PYEOF'
+          import os, json, datetime, requests, re, time, sys, hashlib, textwrap, itertools
           from dateutil import parser as date_parser
           from google import genai
-          from google.genai import types
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
 
+          publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
+          def get_target_urls():
+              urls = []
+              print("Scanning futaa.com...")
+              try:
+                  with sync_playwright() as p:
+                      browser = p.chromium.launch(headless=True)
+                      page = browser.new_page()
+                      # Targeting the Kenya-specific football news section
+                      page.goto('https://futaa.com/ke', timeout=60000, wait_until="domcontentloaded")
+                      soup = BeautifulSoup(page.content(), 'html.parser')
+                      for a in soup.find_all('a', href=True):
+                          href = a.get('href', '')
+                          # Filter for actual news articles, avoiding generic category links
+                          if '/article/' in href and len(href) > 40:
+                              full_url = href if href.startswith('http') else f"https://futaa.com{href}"
+                              urls.append(full_url)
+                      browser.close()
+              except Exception as e: print(f"URL scan error: {e}")
+              return list(set(urls))
+
+          def scrape_article(url):
+              print(f"Scraping: {url}")
+              try:
+                  with sync_playwright() as p:
+                      browser = p.chromium.launch(headless=True)
+                      page = browser.new_page()
+                      page.goto(url, timeout=45000, wait_until="domcontentloaded")
+                      soup = BeautifulSoup(page.content(), "html.parser")
+                      browser.close()
+
+                      # Futaa title often includes site branding
+                      title = soup.find('title').get_text().split('|')[0].replace('Futaa.com', '').strip()
+                      img_url = soup.find('meta', property='og:image')['content'] if soup.find('meta', property='og:image') else ""
+                      
+                      # Select article body - Futaa usually wraps content in specific div classes
+                      content_div = soup.find('div', class_='article-content') or soup.find('article')
+                      if content_div:
+                          paras = content_div.find_all('p')
+                          article_text = "\n\n".join([p.get_text(strip=True) for p in paras if len(p.get_text(strip=True)) > 30])
+                      else:
+                          paras = soup.find_all('p')
+                          article_text = "\n\n".join([p.get_text(strip=True) for p in paras if len(p.get_text(strip=True)) > 40])
+                      
+                      return article_text, img_url, title
+              except: return None, None, None
+
+          # API Rotation Logic
           raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY"), os.environ.get("GEMINI_API_KEY1")]
           api_keys = [k for k in raw_keys if k and k.strip()]
-          if not api_keys:
-              print("No Gemini API keys.")
-              sys.exit(1)
-
           key_cycle = itertools.cycle(api_keys)
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
 
-          def gemini_generate(prompt, label=""):
+          def gemini_generate(prompt):
               global current_key, client
-              keys_tried = 0
               for model_id in MODELS_TO_TRY:
-                  for retry in range(len(api_keys) * 2):
-                      try:
-                          resp = client.models.generate_content(model=model_id, contents=prompt)
-                          print(f"SUCCESS with {model_id} for {label}")
-                          return resp.text.strip()
-                      except Exception as e:
-                          if "429" in str(e):
-                              keys_tried += 1
-                              if keys_tried >= len(api_keys):
-                                  print("All keys hit quota. Waiting 45s...")
-                                  time.sleep(45)
-                                  keys_tried = 0
-                              else:
-                                  print("Quota hit. Rotating key...")
-                                  current_key = next(key_cycle)
-                                  client = genai.Client(api_key=current_key)
-                              continue
-                          print(f"Error with {model_id} for {label}: {e}")
-                          break
+                  try:
+                      resp = client.models.generate_content(model=model_id, contents=prompt)
+                      return resp.text.strip()
+                  except Exception:
+                      current_key = next(key_cycle)
+                      client = genai.Client(api_key=current_key)
+                      continue
               return None
 
-          def get_urls():
-              urls = []
-              with sync_playwright() as p:
-                  browser = p.chromium.launch(headless=True)
-                  page = browser.new_page()
-                  page.goto('https://www.mozzartsport.co.ke/football/1', timeout=60000)
-                  soup = BeautifulSoup(page.content(), 'html.parser')
-                  for a in soup.find_all('a', href=True):
-                      href = a.get('href', '')
-                      if 'mozzartsport.co.ke' in href and len(href) > 25: urls.append(href)
-                  browser.close()
-              return urls
-
-          def scrape(url):
-              with sync_playwright() as p:
-                  browser = p.chromium.launch(headless=True)
-                  page = browser.new_page()
-                  try:
-                      page.goto(url, timeout=45000)
-                      soup = BeautifulSoup(page.content(), "html.parser")
-                      meta_pub = soup.find('meta', property='article:published_time')
-                      if meta_pub:
-                          pub_time = date_parser.parse(meta_pub.get('content')).replace(tzinfo=datetime.timezone.utc)
-                          if (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600 > 10: return None, None, None
-                      else: return None, None, None
-                      title = soup.find('title').get_text().split('|')[0].strip()
-                      text = "\n\n".join([p.get_text() for p in soup.find_all('p') if len(p.get_text()) > 40])
-                      img = soup.find('meta', property='og:image')['content'] if soup.find('meta', property='og:image') else ""
-                      return text, img, title
-                  except: return None, None, None
-                  finally: browser.close()
-
-          urls = get_urls()
+          article_links = get_target_urls()
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
-          raw_text, target_img, target_title, final_hash = None, None, None, None
-          for url in urls:
-              u_hash = hashlib.md5(url.encode()).hexdigest()
+
+          for link in article_links:
+              u_hash = hashlib.md5(link.encode()).hexdigest()
               if u_hash in memory: continue
-              txt, img, t = scrape(url)
-              if txt and len(txt) > 400:
-                  raw_text, target_img, target_title, final_hash = txt, img, t, u_hash
-                  break
-          if not raw_text: sys.exit(0)
+              text, img, title = scrape_article(link)
+              
+              if text and len(text) > 400:
+                  res_t = gemini_generate(f"Original Title: {title}\nTask: Generate ONE high-click-through sports title for a Kenyan audience. Return JSON: {{\"final_title\": \"...\"}}")
+                  try: final_title = json.loads(re.search(r'\{.*\}', res_t).group())['final_title']
+                  except: final_title = title
+                  
+                  time.sleep(5)
+                  a_prompt = f"Write a sports news report as Martin Mutwiri, a top Kenyan Sports Journalist. Use the following facts: {text[:7000]}. Style: Authoritative, engaging, professional Kenyan English. Use H2 for the first sub-heading."
+                  final_body = gemini_generate(a_prompt)
+                  
+                  if final_body:
+                      slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:70]
+                      with open(os.path.join(os.environ.get("POSTS_DIR"), f"{slug}.md"), "w") as f:
+                          f.write(f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\nauthor: \"Martin Mutwiri\"\nimage: \"{img}\"\ncategory: \"Sports\"\ndate: \"{publish_timestamp}\"\n---\n\n{final_body}")
+                      memory.append(u_hash)
+                      with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
+                      break
+          PYEOF
 
-          t_text = gemini_generate(f"Original: {target_title}\nTask: 3 high-CTR sports titles front-loading keywords. Output JSON: {{\"final_title\": \"...\"}}", "title")
-          final_title = target_title
-          if t_text:
-              try:
-                  final_title = json.loads(re.search(r'{.*}', t_text, re.DOTALL).group()).get('final_title', target_title)
-              except:
-                  pass
-
-          time.sleep(5)  # 5s delay between API calls
-          current_key = next(key_cycle)
-          client = genai.Client(api_key=current_key)
-
-          a_text = gemini_generate(f"Title: {final_title}\nSource: {raw_text[:10000]}\nTask: Write as Martin Mutwiri. Kenyan Sports. No dashes. 10h freshness.", "article")
-          if not a_text:
-              print("Failed to generate article.")
-              sys.exit(1)
-          
-          slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:70]
-          with open(os.path.join(os.environ.get("POSTS_DIR"), f"{slug}.md"), "w") as f: f.write(f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\nauthor: \"Martin Mutwiri\"\nimage: \"{target_img}\"\ncategory: \"Sports\"\ndate: \"{datetime.datetime.utcnow().strftime('%Y-%m-%d')}\"\n---\n\n{a_text}")
-          memory.append(final_hash)
-          with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
-          EOF
+      - name: Git Safety Pull
+        run: |
+          git config --global user.name "Martin Mutwiri"
+          git config --global user.email "bot@zandani.co.ke"
+          git add .
+          git stash -u
+          git fetch origin main
+          git pull origin main --rebase
+          git stash pop || echo "Nothing to pop"
 
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "content: Sports update by Martin Mutwiri 🏅"
+          commit_author: "Martin Mutwiri <bot@zandani.co.ke>"
+          commit_message: "content: Sports news from Futaa by Martin Mutwiri 🏅"
           file_pattern: 'content/posts/*.md .github/memory_martin.json'
