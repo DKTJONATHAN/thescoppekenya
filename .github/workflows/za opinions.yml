@@ -2,6 +2,8 @@ name: Jonathan Mwaniki - Opinions Scraper
 
 on:
   schedule:
+    # Runs at 10:25 and 18:25 UTC
+    # Positioned to avoid peak traffic from other scrapers
     - cron: '25 10,18 * * *'
   workflow_dispatch:
 
@@ -40,18 +42,16 @@ jobs:
           pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil
           playwright install chromium
 
-      - name: Generate article with Gemini
+      - name: Generate Article with Gemini
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
-          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
-          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           python << 'EOF'
-          import os, json, datetime, requests, re, time, sys, hashlib, random, textwrap, itertools, base64
+          import os, json, datetime, requests, re, time, sys, hashlib, itertools, textwrap
           from dateutil import parser as date_parser
           from google import genai
           from google.genai import types
@@ -85,128 +85,63 @@ jobs:
                   try:
                       page.goto(url, timeout=45000)
                       soup = BeautifulSoup(page.content(), "html.parser")
-                      
-                      # 10 HOUR FRESHNESS GATE
                       meta_pub = soup.find('meta', property='article:published_time')
                       if meta_pub:
                           pub_time = date_parser.parse(meta_pub.get('content')).replace(tzinfo=datetime.timezone.utc)
-                          if (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600 > 10:
+                          if (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600 > 12:
                               return None, None, None
-                      
                       title = soup.find('title').get_text().replace(' - The Star', '').strip()
                       body = "\n\n".join([p.get_text() for p in soup.find_all('p') if len(p.get_text()) > 40])
-                      img = ""
-                      body_img = soup.select_one('article img, .article-body img')
-                      if body_img and 'http' in body_img.get('src', ''): img = body_img['src']
-                      
+                      img = soup.find('meta', property='og:image')['content'] if soup.find('meta', property='og:image') else ""
                       return body, img, title
                   except: return None, None, None
                   finally: browser.close()
 
+          # API Rotation Logic
           raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY"), os.environ.get("GEMINI_API_KEY1")]
           api_keys = [k for k in raw_keys if k and k.strip()]
-          if not api_keys:
-              print("No Gemini API keys.")
-              sys.exit(1)
-
           key_cycle = itertools.cycle(api_keys)
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
 
-          def gemini_generate(prompt, label="", use_search=False):
-              keys_tried = 0
+          def gemini_generate(prompt, use_search=False):
+              global current_key, client
               for model_id in MODELS_TO_TRY:
-                  for retry in range(len(api_keys) * 2):
-                      try:
-                          config = types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]) if use_search else None
-                          resp = client.models.generate_content(model=model_id, contents=prompt, config=config)
-                          print(f"SUCCESS with {model_id} for {label}")
-                          return resp.text.strip()
-                      except Exception as e:
-                          if "429" in str(e):
-                              keys_tried += 1
-                              if keys_tried >= len(api_keys):
-                                  print(f"All keys hit quota. Waiting 45s...")
-                                  time.sleep(45)
-                                  keys_tried = 0
-                              else:
-                                  print("Quota hit. Rotating key...")
-                                  global current_key, client
-                                  current_key = next(key_cycle)
-                                  client = genai.Client(api_key=current_key)
-                              continue
-                          print(f"Error with {model_id} for {label}: {e}")
-                          break
+                  try:
+                      config = types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]) if use_search else None
+                      resp = client.models.generate_content(model=model_id, contents=prompt, config=config)
+                      return resp.text.strip()
+                  except Exception:
+                      current_key = next(key_cycle)
+                      client = genai.Client(api_key=current_key)
+                      continue
               return None
 
-          article_links = get_target_urls()
+          links = get_target_urls()
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
           
-          full_raw_text, target_image, target_title, final_hash = None, None, None, None
-          for link in article_links:
+          for link in links:
               u_hash = hashlib.md5(link.encode()).hexdigest()
               if u_hash in memory: continue
               text, img, title = scrape_article(link)
-              if text and len(text) > 400:
-                  full_raw_text, target_image, target_title, final_hash = text, img, title, u_hash
-                  break
-          if not full_raw_text: sys.exit(0)
+              
+              if text and len(text) > 500:
+                  title_prompt = f"JSON ONLY: {{\"final_title\": \"...\"}}. Create a powerful, click-worthy title for this op-ed: {title}. Keywords: {text[:500]}"
+                  res_t = gemini_generate(title_prompt)
+                  try: final_title = json.loads(re.search(r'\{.*\}', res_t).group())['final_title']
+                  except: final_title = title
 
-          # === SMART TITLE CONTEST ===
-          title_prompt = f"""
-          SOURCE OPINION: {target_title}
-          CONTENT: {full_raw_text[:2000]}
-          FORMULAS: 1. Number+Keyword+Benefit, 2. Keyword+Power Word, 3. How/What+Keyword+Number, 4. Keyword+[Bracket Hook].
-          INSTRUCTIONS: Extract 2-4 keywords. Generate 3 unique, thought-provoking titles front-loading keywords.
-          RESPOND ONLY JSON: {{"final_title": "Winning Title", "reason": "why"}}
-          """
-          title_text = gemini_generate(title_prompt, "title")
-          final_title = target_title
-          if title_text:
-              try:
-                  final_title = json.loads(re.search(r'{.*}', title_text, re.DOTALL).group()).get('final_title', target_title)
-              except:
-                  pass
-
-          time.sleep(5)  # 5s delay between API calls
-
-          # Rotate key for next call
-          current_key = next(key_cycle)
-          client = genai.Client(api_key=current_key)
-
-          # === FULL ARTICLE GENERATION ===
-          article_prompt = f"""
-          Current Date: {full_date_str}
-          TITLE: {final_title}
-          SOURCE: {full_raw_text[:12000]}
-          TASK: Write a powerful op-ed as Jonathan Mwaniki (Za Ndani Columnist).
-          - Front-load keywords in Slug and ALL H2/H3 headings.
-          - Verified 10h freshness. No dashes. Intellectual Kenyan English.
-          - Structure: H2 Keyword Heading -> 40-word snippet -> Insightful commentary.
-          """
-          article_text = gemini_generate(article_prompt, "article", use_search=True)
-          if not article_text:
-              print("Failed to generate article.")
-              sys.exit(1)
-          
-          slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:70]
-          
-          final_file = textwrap.dedent(f"""\
-          ---
-          title: "{final_title}"
-          slug: "{slug}"
-          author: "Jonathan Mwaniki"
-          image: "{target_image if target_image else 'https://images.unsplash.com/photo-1455390582262-044cdead27d8'}"
-          category: "Opinions"
-          date: "{today_str}"
-          ---
-          {article_text}
-          """)
-
-          with open(os.path.join(os.environ.get("POSTS_DIR"), f"{slug}.md"), "w") as f: f.write(final_file)
-          memory.append(final_hash)
-          with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
+                  article_prompt = f"Write a powerful Kenyan op-ed as Jonathan Mwaniki. Source: {text[:9000]}. Use H2 for subheadings. Style: Intellectual, authoritative, professional English. Verified freshness for {full_date_str}."
+                  final_body = gemini_generate(article_prompt, use_search=True)
+                  
+                  if final_body:
+                      slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:70]
+                      with open(os.path.join(os.environ.get("POSTS_DIR"), f"{slug}.md"), "w") as f:
+                          f.write(f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\nauthor: \"Jonathan Mwaniki\"\nimage: \"{img if img else 'https://images.unsplash.com/photo-1455390582262-044cdead27d8'}\"\ncategory: \"Opinions\"\ndate: \"{today_str}\"\n---\n\n{final_body}")
+                      memory.append(u_hash)
+                      with open(memory_path, 'w') as f: json.dump(memory[-200:], f)
+                      break
           EOF
 
       - name: Git Safety Pull
@@ -214,13 +149,14 @@ jobs:
           git config --global user.name "Jonathan Mwaniki"
           git config --global user.email "bot@zandani.co.ke"
           git add .
+          git stash -u
           git fetch origin main
           git pull origin main --rebase
+          git stash pop || echo "Nothing to pop"
 
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Jonathan Mwaniki <bot@zandani.co.ke>"
           commit_message: "content: Thought-provoking Opinion by Jonathan Mwaniki ✍️"
-          branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_jonathan.json'
