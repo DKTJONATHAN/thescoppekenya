@@ -1,22 +1,17 @@
 name: Martin Mutwiri - Soka East Africa Sports Scraper
-
 on:
   schedule:
     - cron: '30 7,15,20 * * *'
   workflow_dispatch:
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
-
 permissions:
   contents: write
-
 env:
   DEFAULT_BRANCH: main
   POSTS_DIR: content/posts
   MEMORY_FILE: .github/memory_martin.json
-
 jobs:
   generate-and-publish:
     runs-on: ubuntu-latest
@@ -28,18 +23,16 @@ jobs:
           ref: ${{ env.DEFAULT_BRANCH }}
           token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
           persist-credentials: true
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil
+          pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil playwright-stealth
           playwright install chromium
-
+          playwright install-deps
       - name: Generate article with Gemini
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
@@ -50,19 +43,17 @@ jobs:
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           python - <<'PYEOF'
-          import os, json, datetime, requests, re, time, sys, hashlib, textwrap, itertools, base64
+          import os, json, datetime, requests, re, time, sys, hashlib, textwrap, itertools, base64, random
           from dateutil import parser as date_parser
           from google import genai
           from google.genai import types
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
-
+          from playwright_stealth import stealth_sync
           publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
-
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
-
+          MODELS_TO_TRY = ["gemini-1.5-flash", "gemini-2.5-flash"]
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
               if not api_key or not image_url:
@@ -81,228 +72,206 @@ jobs:
               except Exception as e:
                   print(f"ImgBB exception: {e}")
                   return image_url
-
-          def extract_date(url):
-              # Extract date from common URL patterns like /2025/03/07/slug/ or /2025/03/slug/
-              match = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', url)
-              if match:
-                  try:
-                      return datetime.date(int(match.group(1)), int(match.group(2)), int(match.group(3)))
-                  except:
-                      pass
-              match2 = re.search(r'/(\d{4})/(\d{2})/', url)
-              if match2:
-                  try:
-                      return datetime.date(int(match2.group(1)), int(match2.group(2)), 1)
-                  except:
-                      pass
-              return datetime.date(1900, 1, 1)
-
           def get_target_urls():
-              urls = []
-              print("Scanning www.sokaeastafrica.com/category/football/ for fresh articles...")
+              urls = set()
+              print("Scanning Soka East Africa homepage...")
               try:
                   with sync_playwright() as p:
                       browser = p.chromium.launch(headless=True, args=[
-                          "--no-sandbox",
-                          "--disable-dev-shm-usage",
-                          "--disable-blink-features=AutomationControlled"
+                          "--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled",
+                          "--disable-infobars", "--window-size=1920,1080"
                       ])
                       context = browser.new_context(
-                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-                          viewport={"width": 1920, "height": 1080}
+                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+                          viewport={"width": 1920, "height": 1080},
+                          locale="en-KE",
+                          timezone_id="Africa/Nairobi"
                       )
                       page = context.new_page()
-                      page.goto('https://www.sokaeastafrica.com/category/football/', timeout=60000, wait_until="domcontentloaded")
-                      # Scroll to load more posts (repeat 4 times for deeper coverage)
-                      for _ in range(4):
-                          page.evaluate("window.scrollBy(0, 1800)")
-                          page.wait_for_timeout(2500)
+                      stealth_sync(page)
+                      page.goto('https://www.sokaeastafrica.com/', timeout=90000, wait_until="networkidle")
+                      time.sleep(random.uniform(2, 5))  # random delay to mimic human
+                      for _ in range(5):
+                          page.evaluate("window.scrollBy(0, 2000)")
+                          time.sleep(random.uniform(2, 4))
                       soup = BeautifulSoup(page.content(), 'html.parser')
                       for a in soup.find_all('a', href=True):
-                          href = a.get('href', '')
-                          # Stricter filter: long, hyphenated, likely article, exclude unwanted paths
-                          if (len(href) > 40 and '-' in href and 
-                              '/author/' not in href and '/tag/' not in href and 
-                              '/category/' not in href and '/page/' not in href and
-                              not href.endswith(('.jpg','.png','.pdf','/feed/'))):
-                              full_url = href if href.startswith('http') else 'https://www.sokaeastafrica.com' + (href if href.startswith('/') else '/' + href)
-                              if 'sokaeastafrica.com' in full_url:
-                                  urls.append(full_url)
+                          href = a.get('href', '').strip()
+                          if not href: continue
+                          full_url = href if href.startswith('http') else 'https://www.sokaeastafrica.com' + href
+                          if 'sokaeastafrica.com' not in full_url: continue
+                          path = full_url.split('sokaeastafrica.com')[-1]
+                          slug = path.rstrip('/').split('/')[-1]
+                          if (len(slug) > 25 and '-' in slug and
+                              not any(x in path for x in ['/author/', '/tag/', '/page/', '/feed/', '/comment-page-']) and
+                              re.search(r'\d{4}/\d{2}/\d{2}', path)):  # strong date filter
+                              urls.add(full_url)
                       browser.close()
               except Exception as e:
-                  print(f"URL scan error: {e}")
-              # Deduplicate and sort by extracted date descending (newest first)
-              urls = list(set(urls))
-              urls = sorted(urls, key=extract_date, reverse=True)
-              print(f"Found {len(urls)} potential article URLs, sorted newest first.")
-              return urls
-
+                  print(f"Scan error (possible block): {e}")
+              def date_key(u):
+                  m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', u)
+                  return int(m.group(1) + m.group(2) + m.group(3)) if m else 19000101
+              urls_list = sorted(list(urls), key=date_key, reverse=True)
+              print(f"Found {len(urls_list)} candidates (newest first). Top 8:")
+              for u in urls_list[:8]:
+                  print(u)
+              return urls_list[:15]
           def scrape_article(url):
               print(f"Scraping: {url}")
               try:
                   with sync_playwright() as p:
                       browser = p.chromium.launch(headless=True, args=[
-                          "--no-sandbox",
-                          "--disable-dev-shm-usage",
-                          "--disable-blink-features=AutomationControlled"
+                          "--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled"
                       ])
                       context = browser.new_context(
-                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
                       )
                       page = context.new_page()
+                      stealth_sync(page)
                       page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["image", "stylesheet", "font", "media"] else route.continue_())
-                      try:
-                          page.goto(url, timeout=45000, wait_until="domcontentloaded")
-                      except Exception as e:
-                          print(f"Goto exception (likely non-fatal): {e}")
-                      page.wait_for_timeout(3000)
+                      page.goto(url, timeout=60000, wait_until="domcontentloaded")
+                      time.sleep(random.uniform(1.5, 3.5))
                       soup = BeautifulSoup(page.content(), "html.parser")
                       browser.close()
-
                       pub_time = None
-                      meta_pub = soup.find('meta', property='article:published_time')
-                      if meta_pub:
+                      # Priority 1: JSON-LD schema
+                      for script in soup.find_all('script', type='application/ld+json'):
                           try:
-                              pub_time = date_parser.parse(meta_pub.get('content'))
-                              if pub_time.tzinfo is None:
-                                  pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
-                              age_hours = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
-                              if age_hours > 10:
-                                  print(f"Article is {int(age_hours)}h old. Skipping.")
-                                  return None, None, None
-                              else:
-                                  print(f"Fresh: ~{int(age_hours)}h ago.")
-                          except Exception as e:
-                              print(f"Date parse error: {e}")
+                              data = json.loads(script.string or '{}')
+                              if isinstance(data, dict) and 'datePublished' in data:
+                                  pub_time = date_parser.parse(data['datePublished'])
+                                  break
+                          except:
+                              pass
+                      # Priority 2: meta
+                      if not pub_time:
+                          meta = soup.find('meta', property='article:published_time') or soup.find('meta', attrs={'name': 'date'})
+                          if meta and meta.get('content'):
+                              try:
+                                  pub_time = date_parser.parse(meta['content'])
+                              except:
+                                  pass
+                      # Priority 3: visible text
+                      if not pub_time:
+                          date_pat = r'(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2}(?:st|nd|rd|th)?,\s+\d{4}|\d{1,2}\s*(?:hour|hr|h|hours|day|days|d)\s*ago'
+                          for tag in soup.find_all(['time', 'span', 'div', 'p'], string=re.compile(date_pat, re.I)):
+                              try:
+                                  pub_time = date_parser.parse(tag.get_text(strip=True), fuzzy=True)
+                                  break
+                              except:
+                                  continue
+                      # Fallback: URL date
+                      if not pub_time:
+                          m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', url)
+                          if m:
+                              try:
+                                  pub_time = datetime.datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)), tzinfo=datetime.timezone.utc)
+                              except:
+                                  pass
+                      if pub_time:
+                          if pub_time.tzinfo is None:
+                              pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
+                          age_hours = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
+                          print(f"Detected date: {pub_time.isoformat()} ({age_hours:.1f}h old)")
+                          if age_hours > 36:
+                              print("Too old - skipping.")
                               return None, None, None
                       else:
-                          print("No publish time meta found. Skipping to avoid old content.")
-                          return None, None, None
-
+                          print("No date detected - proceeding with caution.")
+                      title = ""
                       title_tag = soup.find('title')
-                      title = title_tag.get_text().strip() if title_tag else ""
-                      for suffix in [' - Soka East Africa', ' | Soka East Africa', ' - Soka', ' | Soka', ' – Soka East Africa']:
-                          title = title.replace(suffix, '').strip()
-
+                      if title_tag:
+                          title = title_tag.get_text().strip()
+                          for s in [' - Soka East Africa', ' | Soka East Africa', ' – Soka', ' - Soka']:
+                              title = title.replace(s, '').strip()
                       article_text = ""
-                      containers = soup.select('article, .article-content, .post-content, .entry-content, .content-body, .single-content, .post-body')
+                      containers = soup.select('article, .entry-content, .post-content, .td-post-content, .content-body, .single-content, main')
                       for c in containers:
                           paras = c.find_all('p')
-                          chunk = "\n\n".join([p.get_text(strip=True) for p in paras if len(p.get_text(strip=True)) > 40])
-                          if len(chunk) > 400:
+                          chunk = "\n\n".join(p.get_text(strip=True) for p in paras if len(p.get_text(strip=True)) > 35)
+                          if len(chunk) > 500:
                               article_text = chunk
                               break
-
-                      if len(article_text) < 400:
-                          all_paras = soup.find_all('p')
-                          article_text = "\n\n".join([p.get_text(strip=True) for p in all_paras if len(p.get_text(strip=True)) > 40])
-
+                      if len(article_text) < 500:
+                          article_text = "\n\n".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 35)
                       img_url = ""
                       for meta in soup.find_all('meta'):
                           if meta.get('property') in ['og:image', 'twitter:image']:
                               img_url = meta.get('content', '')
-                              if img_url:
-                                  break
-
-                      print(f"Extracted {len(article_text)} characters of text.")
+                              if img_url: break
+                      print(f"Extracted {len(article_text)} characters.")
                       return article_text, img_url, title
-
               except Exception as e:
                   print(f"Scrape failed: {e}")
                   return None, None, None
-
-          raw_keys = [
-              os.environ.get("GEMINI_WRITE_KEY"),
-              os.environ.get("GEMINI_API_KEY"),
-              os.environ.get("GEMINI_API_KEY1")
-          ]
-          api_keys = [k for k in raw_keys if k and k.strip()]
-          if not api_keys:
-              print("No Gemini API keys provided.")
+          raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY1"] if os.environ.get(k)]
+          if not raw_keys:
+              print("No Gemini keys.")
               sys.exit(1)
-
-          key_cycle = itertools.cycle(api_keys)
+          key_cycle = itertools.cycle(raw_keys)
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
-
           def gemini_generate(prompt, label="", use_search=False):
               global current_key, client
-              keys_tried = 0
-              for model_id in MODELS_TO_TRY:
-                  for retry in range(len(api_keys) * 2 + 2):
+              for model in MODELS_TO_TRY:
+                  for _ in range(6):
                       try:
                           config = types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]) if use_search else None
-                          resp = client.models.generate_content(model=model_id, contents=prompt, config=config)
-                          print(f"SUCCESS with {model_id} for {label}")
+                          resp = client.models.generate_content(model=model, contents=prompt, config=config)
+                          print(f"Gemini success ({model}): {label}")
                           return resp.text.strip()
                       except Exception as e:
-                          err_str = str(e)
-                          if "429" in err_str or "quota" in err_str.lower():
-                              keys_tried += 1
-                              if keys_tried >= len(api_keys):
-                                  print("All keys appear to hit quota. Waiting 60s...")
-                                  time.sleep(60)
-                                  keys_tried = 0
-                              else:
-                                  print("Quota hit on key. Rotating...")
-                                  current_key = next(key_cycle)
-                                  client = genai.Client(api_key=current_key)
+                          if "429" in str(e) or "quota" in str(e).lower():
+                              print("Quota hit - rotate key & wait")
+                              time.sleep(60)
+                              current_key = next(key_cycle)
+                              client = genai.Client(api_key=current_key)
                               continue
-                          print(f"Error with {model_id} for {label}: {err_str}")
-                          break  # move to next model
+                          print(f"Gemini error ({model}): {e}")
+                          break
               return None
-
           article_links = get_target_urls()
           if not article_links:
-              print("No potential football article URLs found.")
+              print("No candidates found.")
               sys.exit(0)
-
           memory_path = os.environ.get('MEMORY_FILE')
-          memory = json.load(open(memory_path, 'r')) if os.path.exists(memory_path) else []
-
+          memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
           full_raw_text, target_image, target_title, final_hash = None, None, None, None
-          for link in article_links:  # already sorted newest → first valid fresh one wins
+          for link in article_links:
               u_hash = hashlib.md5(link.encode()).hexdigest()
               if u_hash in memory:
-                  print(f"Already processed (memory): {link}")
                   continue
               text, img, title = scrape_article(link)
               if text and len(text) > 400:
-                  full_raw_text, target_image, target_title, final_hash = text, img, title, u_hash
-                  print(f"Selected fresh article: {link}")
+                  full_raw_text = text
+                  target_image = img
+                  target_title = title
+                  final_hash = u_hash
                   break
-
           if not full_raw_text:
-              print("No valid fresh content (<10h old, >400 chars) found.")
+              print("No fresh valid article found.")
               sys.exit(0)
-
+          # Your original title_prompt and article_prompt here (unchanged)
           title_prompt = f"""SCRAPED ARTICLE: {target_title}
 Classify content type: LIST, BIO, SCANDAL, GUIDE, TRENDING, NEWS, MATCH REPORT, TRANSFER.
 HIGH-CTR FORMULAS: 1. Number+Keyword+Benefit, 2. Keyword+Power Word+Year, 3. How/What+Keyword+Number, 4. Keyword+[Bracket Hook], 5. Adjective+Number+Outcome.
 INSTRUCTIONS: Generate EXACTLY 3 click-worthy SEO titles under 60 characters, front-loading main keyword. Pick the single best one.
 Output ONLY valid JSON: {{"final_title": "Winning Title"}}"""
-
-          title_text = gemini_generate(title_prompt, "title generation")
+          title_text = gemini_generate(title_prompt, "title")
           final_title = target_title
           if title_text:
               try:
-                  clean = re.sub(r"^```(?:json)?\n?", "", title_text).rstrip("```").strip()
-                  match = re.search(r'\{.*\}', clean, re.DOTALL | re.IGNORECASE)
-                  if match:
-                      final_title = json.loads(match.group(0)).get('final_title', target_title)
+                  clean = re.sub(r"^```json?\n?|```$", "", title_text, flags=re.I | re.DOTALL).strip()
+                  data = json.loads(clean)
+                  final_title = data.get('final_title', target_title)
               except Exception as e:
-                  print(f"Title JSON parse error: {e}. Falling back to original title.")
-
-          time.sleep(6)
-
+                  print(f"Title parse error: {e}")
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
-
           article_prompt = f"""Current Date: {full_date_str}
 TITLE: {final_title}
 SOURCE TEXT: {full_raw_text[:9500]}
-
 TASK: Write an energetic, passionate sports article as Martin Mutwiri, a vibrant Kenyan sports journalist for Za Ndani.
 - Focus on East African football, athletics, local heroes.
 - Energetic but factual tone - excite the reader without hype fluff.
@@ -312,23 +281,17 @@ TASK: Write an energetic, passionate sports article as Martin Mutwiri, a vibrant
 - Then a crisp 35-45 word lead/summary paragraph.
 - Follow with detailed sections using ### subheadings.
 - Factual, direct, no clichés or filler. Prioritize analysis and local context.
-- Content freshness already verified <10h."""
-
-          article_text = gemini_generate(article_prompt, "article body", use_search=True)
+- Content freshness already verified."""
+          article_text = gemini_generate(article_prompt, "article", use_search=True)
           if not article_text:
-              print("Article generation failed.")
               sys.exit(1)
-
-          article_text = re.sub(r"^```(?:markdown|text)?\n?", "", article_text).rstrip("```").strip()
-          article_text = re.sub(r"^(?:\*\*?)?(?:Title|By|Author|Date|Published|Updated):?.*?\n+", "", article_text, flags=re.IGNORECASE | re.MULTILINE).strip()
-          article_text = article_text.replace('\u2014', '-').replace('\u2013', '-').replace('--', '-')
-
+          article_text = re.sub(r"^```(?:markdown)?\n?", "", article_text).rstrip("```").strip()
+          article_text = re.sub(r"^(Title|By|Date|Published):.*?\n", "", article_text, flags=re.I | re.M)
+          article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           final_image = upload_to_imgbb(target_image) if target_image else ""
-
           posts_dir = os.environ.get("POSTS_DIR", "content/posts")
           os.makedirs(posts_dir, exist_ok=True)
-
           final_file = textwrap.dedent(f"""\
           ---
           title: "{final_title.replace('"', "'")}"
@@ -338,22 +301,16 @@ TASK: Write an energetic, passionate sports article as Martin Mutwiri, a vibrant
           category: "Sports"
           date: "{publish_timestamp}"
           ---
-
           {article_text}
           """)
-
-          filepath = os.path.join(posts_dir, f"{today_str}-{slug}.md")  # prefix date for sorting
+          filepath = os.path.join(posts_dir, f"{today_str}-{slug}.md")
           with open(filepath, "w", encoding="utf-8") as f:
               f.write(final_file)
-
           memory.append(final_hash)
-          os.makedirs(os.path.dirname(memory_path), exist_ok=True)
           with open(memory_path, 'w') as f:
-              json.dump(memory[-300:], f)  # keep more history
-
-          print(f"Article successfully saved: {filepath}")
+              json.dump(memory[-300:], f)
+          print(f"Saved: {filepath}")
           PYEOF
-
       - name: Git Safety Pull
         run: |
           git config --global user.name "Martin Mutwiri"
@@ -363,7 +320,6 @@ TASK: Write an energetic, passionate sports article as Martin Mutwiri, a vibrant
           git fetch origin main
           git pull origin main --rebase
           git stash pop || echo "Nothing to pop"
-
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
