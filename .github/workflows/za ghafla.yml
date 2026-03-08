@@ -56,7 +56,7 @@ jobs:
             lxml \
             playwright \
             python-dateutil \
-            playwright-stealth
+            playwright-stealth==1.0.6
           playwright install chromium --with-deps
 
       - name: Generate article with Gemini
