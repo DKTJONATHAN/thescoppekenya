@@ -25,7 +25,7 @@ const LOAD_MORE_COUNT = 9;
 function img(url: string, w = 800): string {
   if (!url) return "/images/placeholder.jpg";
   if (url.endsWith(".svg") || url.startsWith("/")) return url;
-  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:///, ""))}&w=${w}&output=webp&q=80&we`;
+  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${w}&output=webp&q=80&we`;
 }
 
 // ─── RELATIVE TIME ─────────────────────────────────────────────────────────────
