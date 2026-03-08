@@ -1,33 +1,41 @@
-import React, { useEffect, useState, useMemo, lazy, Suspense, useCallback, useRef } from "react";
+import React, {
+  useEffect, useState, useMemo, lazy, Suspense, useCallback, useRef,
+} from "react";
 import { Layout } from "@/components/layout/Layout";
 import { getAllPosts } from "@/lib/markdown";
 import { Link } from "react-router-dom";
-import { ArrowRight, TrendingUp, ChevronDown, Flame, Clock, Eye, Zap, BarChart2 } from "lucide-react";
+import {
+  ArrowRight, TrendingUp, Flame, Clock, Eye, Zap, BarChart2,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
 import AdUnit from "@/components/AdUnit";
 
-const CategoryBar = lazy(() => import("@/components/articles/CategoryBar").then(m => ({ default: m.CategoryBar })));
-const ArticleCard = lazy(() => import("@/components/articles/ArticleCard").then(m => ({ default: m.ArticleCard })));
+const CategoryBar = lazy(() =>
+  import("@/components/articles/CategoryBar").then(m => ({ default: m.CategoryBar }))
+);
+const ArticleCard = lazy(() =>
+  import("@/components/articles/ArticleCard").then(m => ({ default: m.ArticleCard }))
+);
 
-const INITIAL_LOAD = 9;
+const INITIAL_LOAD    = 9;
 const LOAD_MORE_COUNT = 9;
 
 // ─── IMAGE PROXY ──────────────────────────────────────────────────────────────
 function img(url: string, w = 800): string {
   if (!url) return "/images/placeholder.jpg";
   if (url.endsWith(".svg") || url.startsWith("/")) return url;
-  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${w}&output=webp&q=80&we`;
+  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:///, ""))}&w=${w}&output=webp&q=80&we`;
 }
 
 // ─── RELATIVE TIME ─────────────────────────────────────────────────────────────
 function timeAgo(dateStr: string): string {
   const diff = Date.now() - new Date(dateStr).getTime();
-  const h = Math.floor(diff / 3600000);
-  const d = Math.floor(h / 24);
-  if (h < 1) return "Just now";
+  const h    = Math.floor(diff / 3_600_000);
+  const d    = Math.floor(h / 24);
+  if (h < 1)  return "Just now";
   if (h < 24) return `${h}h ago`;
-  if (d < 7) return `${d}d ago`;
+  if (d < 7)  return `${d}d ago`;
   return new Date(dateStr).toLocaleDateString("en-KE", { day: "numeric", month: "short" });
 }
 
@@ -46,25 +54,28 @@ function catColor(cat: string): string {
 // ─── DATE HELPERS ─────────────────────────────────────────────────────────────
 function isToday(dateStr: string): boolean {
   const postDate = new Date(dateStr);
-  const now = new Date();
+  const now      = new Date();
   return (
     postDate.getFullYear() === now.getFullYear() &&
-    postDate.getMonth() === now.getMonth() &&
-    postDate.getDate() === now.getDate()
+    postDate.getMonth()    === now.getMonth()    &&
+    postDate.getDate()     === now.getDate()
   );
 }
 
-function isThisWeek(dateStr: string): boolean {
-  const diff = Date.now() - new Date(dateStr).getTime();
-  return diff < 7 * 24 * 3600 * 1000;
-}
-
 // ═════════════════════════════════════════════════════════════════════════════
-// PRISM ALGORITHM
+// TYPES
 // ═════════════════════════════════════════════════════════════════════════════
-
 type Post = ReturnType<typeof getAllPosts>[0] & { views?: number; _stableViews?: number };
 
+type ChunkType = {
+  feature:  Post;
+  compacts: Post[];
+  adAfter:  boolean;
+};
+
+// ═════════════════════════════════════════════════════════════════════════════
+// PRISM ALGORITHM  — O(n log n) rewrite
+// ═════════════════════════════════════════════════════════════════════════════
 const EDITORIAL_TIERS: Record<string, number> = {
   scandal:       1.0,
   exclusive:     0.95,
@@ -79,7 +90,7 @@ const EDITORIAL_TIERS: Record<string, number> = {
 
 function editorialTier(post: Post): number {
   const cat   = post.category?.toLowerCase() || "";
-  const title = post.title?.toLowerCase() || "";
+  const title = post.title?.toLowerCase()    || "";
   if (/breaking|exclusive|scandal|caught|exposed|arrested|cheating/.test(title)) return 1.0;
   for (const [key, val] of Object.entries(EDITORIAL_TIERS)) {
     if (cat.includes(key)) return val;
@@ -88,48 +99,49 @@ function editorialTier(post: Post): number {
 }
 
 function prismScore(
-  post: Post,
-  nowMs: number,
+  post:     Post,
+  nowMs:    number,
   maxViews: number,
   peerMsGap: number,
-  slotCategoryPenalty: number
 ): number {
   const ageMs  = nowMs - new Date(post.date).getTime();
   const ageHrs = ageMs / 3_600_000;
 
-  // P — Proximity: 6hr half-life, but TODAY posts get a strong floor of 0.5
+  // P — Proximity: 6hr half-life, floor 0.5 for today
   const halfLife = 6;
   const decayedP = Math.exp(-Math.log(2) * ageHrs / halfLife);
-  const P = isToday(post.date) ? Math.max(0.5, decayedP) : decayedP;
+  const P        = isToday(post.date) ? Math.max(0.5, decayedP) : decayedP;
 
-  // R — Reach: uses stable view count (no random), floor 0.1
+  // R — Reach
   const views = post._stableViews ?? 0;
-  const R = maxViews > 0 ? Math.max(0.1, views / maxViews) : 0.1;
+  const R     = maxViews > 0 ? Math.max(0.1, views / maxViews) : 0.1;
 
-  // I — Isolation: breathing room from same-day peers
+  // I — Isolation
   const I = Math.min(1, peerMsGap / (4 * 3_600_000));
 
-  // S — Slot diversity
-  const S = 1 - slotCategoryPenalty;
-
-  // M — Magnitude: editorial significance
+  // M — Magnitude
   const M = editorialTier(post);
 
-  return (P * 0.40) + (R * 0.25) + (I * 0.15) + (S * 0.10) + (M * 0.10);
+  // FIX #2: Removed slot-diversity (S) penalty — was the cause of O(n²).
+  // Diversity is handled structurally by buildPrismFeed via category interleaving below.
+  return (P * 0.45) + (R * 0.25) + (I * 0.20) + (M * 0.10);
 }
 
 function buildIsolationMap(posts: Post[]): Map<string, number> {
-  const times = posts.map(p => ({ slug: p.slug, ms: new Date(p.date).getTime() }));
-  times.sort((a, b) => a.ms - b.ms);
+  const times = posts
+    .map(p => ({ slug: p.slug, ms: new Date(p.date).getTime() }))
+    .sort((a, b) => a.ms - b.ms);
+
   const gapMap = new Map<string, number>();
   for (let i = 0; i < times.length; i++) {
-    const prev = i > 0 ? times[i].ms - times[i - 1].ms : Infinity;
+    const prev = i > 0               ? times[i].ms - times[i - 1].ms : Infinity;
     const next = i < times.length - 1 ? times[i + 1].ms - times[i].ms : Infinity;
     gapMap.set(times[i].slug, Math.min(prev, next));
   }
   return gapMap;
 }
 
+// FIX #2: O(n log n) — score all posts first, sort once, then interleave for diversity
 function buildPrismFeed(posts: Post[]): Post[] {
   if (!posts.length) return [];
 
@@ -137,35 +149,34 @@ function buildPrismFeed(posts: Post[]): Post[] {
   const maxViews = Math.max(...posts.map(p => p._stableViews ?? 0), 1);
   const isoMap   = buildIsolationMap(posts);
 
-  const DIVERSITY_WINDOW = 4;
-  const recentCats: string[] = [];
+  // Score all posts — O(n)
+  const scored = posts.map(p => ({
+    post:  p,
+    score: prismScore(p, nowMs, maxViews, isoMap.get(p.slug) ?? 3_600_000),
+  }));
 
-  function getCatPenalty(cat: string): number {
-    const c = cat?.toLowerCase() || "other";
-    const recency = recentCats.lastIndexOf(c);
-    if (recency === -1) return 0;
-    const slotsAgo = recentCats.length - recency;
-    return Math.max(0, 1 - slotsAgo / DIVERSITY_WINDOW);
+  // Single sort — O(n log n)
+  scored.sort((a, b) => b.score - a.score);
+
+  // Lightweight category interleaving — O(n) pass for diversity
+  const buckets = new Map<string, Post[]>();
+  for (const { post } of scored) {
+    const cat = post.category?.toLowerCase() || "other";
+    if (!buckets.has(cat)) buckets.set(cat, []);
+    buckets.get(cat)!.push(post);
   }
 
-  const remaining = [...posts];
-  const result: Post[] = [];
+  const result: Post[]  = [];
+  const lists           = Array.from(buckets.values());
+  let   exhausted       = 0;
 
-  while (remaining.length > 0) {
-    let best: { post: Post; score: number; idx: number } | null = null;
-    for (let i = 0; i < remaining.length; i++) {
-      const p       = remaining[i];
-      const gap     = isoMap.get(p.slug) ?? 3_600_000;
-      const penalty = getCatPenalty(p.category ?? "other");
-      const score   = prismScore(p, nowMs, maxViews, gap, penalty);
-      if (!best || score > best.score) best = { post: p, score, idx: i };
+  while (result.length < scored.length) {
+    exhausted = 0;
+    for (const list of lists) {
+      if (list.length === 0) { exhausted++; continue; }
+      result.push(list.shift()!);
     }
-    if (!best) break;
-
-    result.push(best.post);
-    recentCats.push(best.post.category?.toLowerCase() || "other");
-    if (recentCats.length > DIVERSITY_WINDOW * 2) recentCats.shift();
-    remaining.splice(best.idx, 1);
+    if (exhausted === lists.length) break;
   }
 
   return result;
@@ -174,17 +185,14 @@ function buildPrismFeed(posts: Post[]): Post[] {
 function selectHero(feed: Post[]): { lead: Post; secondary: Post[] } {
   if (!feed.length) return { lead: feed[0], secondary: [] };
 
-  const lead = feed[0];
+  const lead      = feed[0];
   const secondary: Post[] = [];
-  const usedCats = new Set([lead.category?.toLowerCase()]);
+  const usedCats  = new Set([lead.category?.toLowerCase()]);
 
   for (const p of feed.slice(1)) {
     if (secondary.length >= 2) break;
     const cat = p.category?.toLowerCase() || "other";
-    if (!usedCats.has(cat)) {
-      secondary.push(p);
-      usedCats.add(cat);
-    }
+    if (!usedCats.has(cat)) { secondary.push(p); usedCats.add(cat); }
   }
 
   if (secondary.length < 2) {
@@ -197,8 +205,7 @@ function selectHero(feed: Post[]): { lead: Post; secondary: Post[] } {
   return { lead, secondary };
 }
 
-// ─── STABLE FAKE VIEWS: deterministic hash so it never changes ───────────────
-// This replaces Math.random() which was breaking memoization on every render
+// ─── STABLE FAKE VIEWS ────────────────────────────────────────────────────────
 function stableFakeViews(slug: string): number {
   let hash = 0;
   for (let i = 0; i < slug.length; i++) {
@@ -209,11 +216,18 @@ function stableFakeViews(slug: string): number {
 }
 
 // ─── COMPACT CARD ─────────────────────────────────────────────────────────────
+// FIX #5 (minor): explicit width/height on img prevents CLS
 const CompactCard = React.memo(({ post }: { post: Post }) => (
   <Link to={`/article/${post.slug}`} className="group flex gap-3 items-start">
     <div className="relative w-20 h-20 flex-shrink-0 overflow-hidden bg-zinc-800">
-      <img src={img(post.image, 160)} alt={post.title} loading="lazy"
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      <img
+        src={img(post.image, 160)}
+        alt={post.title}
+        loading="lazy"
+        width={80}
+        height={80}
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      />
     </div>
     <div className="flex-1 min-w-0">
       <span className={`inline-block text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-1 ${catColor(post.category)}`}>
@@ -241,7 +255,7 @@ const AUTHORS = [
   { name: "Wanjiku Karanja",   role: "Entertainment Reporter",  avatar: "WK", color: "bg-rose-700",   bio: "First on the scene, last to leave. Wanjiku lives at the intersection of pop culture and breaking news." },
 ];
 
-// ─── TODAY SECTION HEADER ─────────────────────────────────────────────────────
+// ─── SECTION HEADERS ──────────────────────────────────────────────────────────
 const TodaySectionHeader = () => (
   <div className="flex items-center gap-3 mb-6">
     <span className="flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-rose-500">
@@ -264,16 +278,64 @@ const OlderSectionHeader = () => (
 );
 
 // ═════════════════════════════════════════════════════════════════════════════
+// FIX #1: FeedChunks MOVED OUTSIDE Index — prevents full remount on every render
+// ═════════════════════════════════════════════════════════════════════════════
+const FeedChunks = React.memo(({ chunks, adsReady }: { chunks: ChunkType[]; adsReady: boolean }) => (
+  <div className="space-y-10">
+    {chunks.map((chunk, ci) => (
+      <div key={chunk.feature?.slug ?? ci} className="space-y-6">
+        {chunk.feature && (
+          <div className="border-b border-divider pb-6">
+            <Suspense fallback={<div className="h-64 bg-zinc-900 animate-pulse rounded" />}>
+              <ArticleCard post={chunk.feature} priority={ci === 0} />
+            </Suspense>
+          </div>
+        )}
+        {chunk.compacts.length > 0 && (
+          <div className="grid sm:grid-cols-3 gap-5">
+            {chunk.compacts.map(post => (
+              <CompactCard key={post.slug} post={post} />
+            ))}
+          </div>
+        )}
+        {/* FIX #4: Ads only render after page is interactive */}
+        {chunk.adAfter && adsReady && (
+          <div className="py-4 border-y border-divider/50" style={{ minHeight: 120 }}>
+            <AdUnit type="inarticle" />
+          </div>
+        )}
+      </div>
+    ))}
+  </div>
+));
+
+// ─── CHUNK BUILDER — module-level pure function ───────────────────────────────
+function buildChunks(posts: Post[]): ChunkType[] {
+  const chunks: ChunkType[] = [];
+  for (let i = 0; i < posts.length; i += 4) {
+    chunks.push({
+      feature:  posts[i],
+      compacts: posts.slice(i + 1, i + 4),
+      adAfter:  (chunks.length + 1) % 2 === 0,
+    });
+  }
+  return chunks;
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// FIX #5 (bundle size): cap at 100 posts — computed once at module level
+// ═════════════════════════════════════════════════════════════════════════════
+const RAW_POSTS = getAllPosts().slice(0, 100);
+
+// ═════════════════════════════════════════════════════════════════════════════
 // INDEX PAGE
 // ═════════════════════════════════════════════════════════════════════════════
-
-// Posts are loaded ONCE outside the component — never re-runs on re-render
-const RAW_POSTS = getAllPosts();
-
 const Index = () => {
   const [visibleCount, setVisibleCount]     = useState(INITIAL_LOAD);
   const [viewCounts, setViewCounts]         = useState<Record<string, number>>({});
   const [activeCategory, setActiveCategory] = useState<string>("all");
+  // FIX #4: gate for deferred ad rendering
+  const [adsReady, setAdsReady]             = useState(false);
   const loaderRef                           = useRef<HTMLDivElement>(null);
 
   // Fetch views deferred — never blocks first paint
@@ -287,22 +349,24 @@ const Index = () => {
     return () => clearTimeout(t);
   }, []);
 
-  // ── Attach STABLE view counts (no Math.random in render path!) ──
-  // stableFakeViews is deterministic — same slug always returns same number
-  // so this memoization is actually stable unlike the original
+  // FIX #4: Defer ads until after page is interactive — prevents TBT + CLS from ad scripts
+  useEffect(() => {
+    const t = setTimeout(() => setAdsReady(true), 3000);
+    return () => clearTimeout(t);
+  }, []);
+
+  // ── Attach stable view counts ──
   const postsWithViews: Post[] = useMemo(() =>
     RAW_POSTS.map(post => {
-      const clean = post.slug.replace(/^\//, "").replace(/\.md$/, "");
-      const real  = viewCounts[`/article/${clean}`] || 0;
-      // _stableViews: real views if we have them, else deterministic fake — NO Math.random()
+      const clean        = post.slug.replace(/^//, "").replace(/.md$/, "");
+      const real         = viewCounts[`/article/${clean}`] || 0;
       const _stableViews = real > 0 ? real : stableFakeViews(post.slug);
       return { ...post, views: _stableViews, _stableViews };
     }),
-    // Only re-runs when real view counts arrive — NOT on every render
     [viewCounts]
   );
 
-  // ── PRISM feed — only recalcs when postsWithViews changes ──
+  // ── PRISM feed ──
   const prismFeed = useMemo(() => buildPrismFeed(postsWithViews), [postsWithViews]);
 
   // ── Hero ──
@@ -316,7 +380,7 @@ const Index = () => {
     [heroLead, heroSecondary]
   );
 
-  // ── Latest strip: 5 most recently published ──
+  // ── Latest strip ──
   const latestStrip = useMemo(() =>
     [...postsWithViews]
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
@@ -333,25 +397,23 @@ const Index = () => {
     [prismFeed]
   );
 
-  // ── Main feed: exclude hero, apply category filter ──
+  // ── Main feed ──
   const feedSource = useMemo(() => {
     const base = prismFeed.filter(p => !heroSlugs.has(p.slug));
     if (activeCategory === "all") return base;
     return base.filter(p => p.category?.toLowerCase() === activeCategory);
   }, [prismFeed, heroSlugs, activeCategory]);
 
-  // ── Split feed into TODAY and OLDER ──
-  const { todayPosts, olderPosts } = useMemo(() => {
-    const todayPosts  = feedSource.filter(p => isToday(p.date));
-    const olderPosts  = feedSource.filter(p => !isToday(p.date));
-    return { todayPosts, olderPosts };
-  }, [feedSource]);
+  // ── Split into TODAY / OLDER ──
+  const { todayPosts, olderPosts } = useMemo(() => ({
+    todayPosts: feedSource.filter(p => isToday(p.date)),
+    olderPosts: feedSource.filter(p => !isToday(p.date)),
+  }), [feedSource]);
 
-  // visibleCount only applies to olderPosts (today's always shown fully)
   const displayedOlder = olderPosts.slice(0, visibleCount);
   const hasMore        = visibleCount < olderPosts.length;
 
-  // ── Infinite scroll via IntersectionObserver ──
+  // ── Infinite scroll ──
   useEffect(() => {
     if (!loaderRef.current || !hasMore) return;
     const obs = new IntersectionObserver(
@@ -364,7 +426,9 @@ const Index = () => {
 
   // ── Most read ──
   const mostRead = useMemo(() =>
-    [...postsWithViews].sort((a, b) => (b._stableViews ?? 0) - (a._stableViews ?? 0)).slice(0, 6),
+    [...postsWithViews]
+      .sort((a, b) => (b._stableViews ?? 0) - (a._stableViews ?? 0))
+      .slice(0, 6),
     [postsWithViews]
   );
 
@@ -374,56 +438,22 @@ const Index = () => {
     [prismFeed]
   );
 
-  // ── Feed chunk builder ──
-  const buildChunks = useCallback((posts: Post[]) => {
-    const chunks: { feature: Post; compacts: Post[]; adAfter: boolean }[] = [];
-    for (let i = 0; i < posts.length; i += 4) {
-      chunks.push({
-        feature:  posts[i],
-        compacts: posts.slice(i + 1, i + 4),
-        adAfter:  (chunks.length + 1) % 2 === 0,
-      });
-    }
-    return chunks;
-  }, []);
-
-  const todayChunks = useMemo(() => buildChunks(todayPosts),   [todayPosts, buildChunks]);
-  const olderChunks = useMemo(() => buildChunks(displayedOlder), [displayedOlder, buildChunks]);
+  const todayChunks = useMemo(() => buildChunks(todayPosts),    [todayPosts]);
+  const olderChunks = useMemo(() => buildChunks(displayedOlder), [displayedOlder]);
 
   const categories = useMemo(() => {
     const cats = Array.from(new Set(RAW_POSTS.map(p => p.category?.toLowerCase()).filter(Boolean)));
     return ["all", ...cats];
   }, []);
 
-  const optimizedHeroImage = heroLead?.image ? img(heroLead.image, 1400) : "/images/placeholder.jpg";
+  const optimizedHeroImage = heroLead?.image
+    ? img(heroLead.image, 1400)
+    : "/images/placeholder.jpg";
 
-  const FeedChunks = useCallback(({ chunks }: { chunks: ReturnType<typeof buildChunks> }) => (
-    <div className="space-y-10">
-      {chunks.map((chunk, ci) => (
-        <div key={chunk.feature?.slug ?? ci} className="space-y-6">
-          {chunk.feature && (
-            <div className="border-b border-divider pb-6">
-              <Suspense fallback={<div className="h-64 bg-zinc-900 animate-pulse rounded" />}>
-                <ArticleCard post={chunk.feature} priority={ci === 0} />
-              </Suspense>
-            </div>
-          )}
-          {chunk.compacts.length > 0 && (
-            <div className="grid sm:grid-cols-3 gap-5">
-              {chunk.compacts.map(post => (
-                <CompactCard key={post.slug} post={post} />
-              ))}
-            </div>
-          )}
-          {chunk.adAfter && (
-            <div className="py-4 border-y border-divider/50" style={{ minHeight: 120 }}>
-              <AdUnit type="inarticle" />
-            </div>
-          )}
-        </div>
-      ))}
-    </div>
-  ), []);
+  const handleCategoryChange = useCallback((cat: string) => {
+    setActiveCategory(cat);
+    setVisibleCount(INITIAL_LOAD);
+  }, []);
 
   return (
     <Layout>
@@ -431,11 +461,17 @@ const Index = () => {
         <title>Za Ndani | Breaking Kenya News, Entertainment Gossip & Trending Scoops</title>
         <meta name="description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, trending celebrity news, and sports." />
         <link rel="canonical" href="https://zandani.co.ke" />
-        {heroLead && <link rel="preload" as="image" href={optimizedHeroImage} fetchPriority="high" />}
+        {heroLead && (
+          <link rel="preload" as="image" href={optimizedHeroImage} fetchPriority="high" />
+        )}
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org", "@type": "WebSite", "name": "Za Ndani",
           "url": "https://zandani.co.ke",
-          "potentialAction": { "@type": "SearchAction", "target": "https://zandani.co.ke/tag/{search_term_string}", "query-input": "required name=search_term_string" }
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://zandani.co.ke/tag/{search_term_string}",
+            "query-input": "required name=search_term_string",
+          },
         })}</script>
         <style>{`
           ins.adsbygoogle[data-ad-status="filled"] { display: block !important; }
@@ -451,13 +487,22 @@ const Index = () => {
           <div className="container max-w-7xl mx-auto px-4 py-6">
             <div className="grid lg:grid-cols-12 gap-1">
 
-              {/* Lead story */}
-              <Link to={`/article/${heroLead.slug}`}
+              {/* Lead story — eager load for LCP */}
+              <Link
+                to={`/article/${heroLead.slug}`}
                 className="lg:col-span-7 group relative overflow-hidden block"
-                style={{ minHeight: 480 }}>
-                <img src={optimizedHeroImage} alt={heroLead.title}
-                  fetchPriority="high" loading="eager" decoding="async"
-                  className="w-full h-full object-cover object-[center_20%] opacity-75 group-hover:opacity-90 group-hover:scale-[1.02] transition-all duration-700 absolute inset-0" />
+                style={{ minHeight: 480 }}
+              >
+                <img
+                  src={optimizedHeroImage}
+                  alt={heroLead.title}
+                  fetchPriority="high"
+                  loading="eager"
+                  decoding="async"
+                  width={840}
+                  height={480}
+                  className="w-full h-full object-cover object-[center_20%] opacity-75 group-hover:opacity-90 group-hover:scale-[1.02] transition-all duration-700 absolute inset-0"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent" />
                 <div className="relative h-full flex flex-col justify-end p-8 z-10" style={{ minHeight: 480 }}>
@@ -483,14 +528,23 @@ const Index = () => {
                 </div>
               </Link>
 
-              {/* Two secondary stories */}
+              {/* FIX #3: Secondary hero images — lazy (not eager) to avoid bandwidth competition */}
               <div className="lg:col-span-5 flex flex-col gap-1">
                 {heroSecondary.map(post => (
-                  <Link key={post.slug} to={`/article/${post.slug}`}
+                  <Link
+                    key={post.slug}
+                    to={`/article/${post.slug}`}
                     className="group relative overflow-hidden flex-1 block"
-                    style={{ minHeight: 235 }}>
-                    <img src={img(post.image, 700)} alt={post.title} loading="eager"
-                      className="w-full h-full object-cover object-[center_20%] opacity-65 group-hover:opacity-80 group-hover:scale-[1.02] transition-all duration-700 absolute inset-0" />
+                    style={{ minHeight: 235 }}
+                  >
+                    <img
+                      src={img(post.image, 700)}
+                      alt={post.title}
+                      loading="lazy"
+                      width={560}
+                      height={235}
+                      className="w-full h-full object-cover object-[center_20%] opacity-65 group-hover:opacity-80 group-hover:scale-[1.02] transition-all duration-700 absolute inset-0"
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                     <div className="relative h-full flex flex-col justify-end p-5 z-10" style={{ minHeight: 235 }}>
                       <span className={`text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-2 w-fit ${catColor(post.category)}`}>
@@ -554,13 +608,15 @@ const Index = () => {
               {/* Category filter pills */}
               <div className="flex items-center gap-2 flex-wrap">
                 {categories.map(cat => (
-                  <button key={cat}
-                    onClick={() => { setActiveCategory(cat); setVisibleCount(INITIAL_LOAD); }}
+                  <button
+                    key={cat}
+                    onClick={() => handleCategoryChange(cat)}
                     className={`text-xs font-black uppercase tracking-wider px-3 py-1.5 border transition-all ${
                       activeCategory === cat
                         ? "bg-primary border-primary text-white"
                         : "border-divider text-muted-foreground hover:border-primary hover:text-primary"
-                    }`}>
+                    }`}
+                  >
                     {cat === "all" ? "All Stories" : cat}
                   </button>
                 ))}
@@ -582,7 +638,7 @@ const Index = () => {
               {todayChunks.length > 0 && (
                 <div>
                   <TodaySectionHeader />
-                  <FeedChunks chunks={todayChunks} />
+                  <FeedChunks chunks={todayChunks} adsReady={adsReady} />
                 </div>
               )}
 
@@ -590,7 +646,7 @@ const Index = () => {
               {olderChunks.length > 0 && (
                 <div>
                   {todayChunks.length > 0 && <OlderSectionHeader />}
-                  <FeedChunks chunks={olderChunks} />
+                  <FeedChunks chunks={olderChunks} adsReady={adsReady} />
                 </div>
               )}
 
@@ -624,19 +680,25 @@ const Index = () => {
                 <div className="space-y-5">
                   {mostRead.map((post, i) => (
                     <Link key={post.slug} to={`/article/${post.slug}`} className="group flex gap-4">
-                      <span className="text-3xl font-black text-zinc-800 group-hover:text-primary transition-colors">0{i + 1}</span>
+                      <span className="text-3xl font-black text-zinc-800 group-hover:text-primary transition-colors">
+                        0{i + 1}
+                      </span>
                       <div className="space-y-1">
-                        <h4 className="text-sm font-bold leading-tight line-clamp-2 group-hover:underline">{post.title}</h4>
-                        <span className="text-[10px] text-muted-foreground uppercase font-medium">{post.category}</span>
+                        <h4 className="text-sm font-bold leading-tight line-clamp-2 group-hover:underline">
+                          {post.title}
+                        </h4>
+                        <span className="text-[10px] text-muted-foreground uppercase font-medium">
+                          {post.category}
+                        </span>
                       </div>
                     </Link>
                   ))}
                 </div>
               </div>
 
-              {/* Sidebar ad */}
+              {/* FIX #4: Sidebar ad — deferred until adsReady */}
               <div style={{ minHeight: 280 }}>
-                <AdUnit type="effectivegate" />
+                {adsReady && <AdUnit type="effectivegate" />}
               </div>
 
               {/* Politics/News */}
@@ -671,8 +733,10 @@ const Index = () => {
                       </div>
                       <p className="text-xs text-muted-foreground italic leading-relaxed">"{author.bio}"</p>
                       {author.latest && (
-                        <Link to={`/article/${author.latest.slug}`}
-                          className="block bg-zinc-900/50 p-2 border-l-2 border-primary group">
+                        <Link
+                          to={`/article/${author.latest.slug}`}
+                          className="block bg-zinc-900/50 p-2 border-l-2 border-primary group"
+                        >
                           <span className="text-[9px] uppercase text-zinc-500 font-bold">Latest Scoop</span>
                           <p className="text-xs font-bold line-clamp-1 group-hover:text-primary transition-colors">
                             {author.latest.title}
