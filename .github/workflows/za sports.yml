@@ -57,7 +57,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install \
             requests \
-            google-generativeai \
+            google-genai \
             beautifulsoup4 \
             lxml \
             playwright \
@@ -79,14 +79,14 @@ jobs:
           python << 'EOF'
           import os, json, datetime, requests, re, time, sys, hashlib, random, textwrap, itertools, base64
           from dateutil import parser as date_parser
-          import google.generativeai as genai
+          from google import genai
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
 
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
 
-          MODELS_TO_TRY = ["gemini-1.5-flash", "gemini-1.5-pro"]
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot", 
@@ -370,20 +370,18 @@ jobs:
               for retry in range(len(api_keys) * 2):
                   try:
                       model = genai.GenerativeModel(model_id)
-                      response = model.generate_content(
-                          prompt,
-                          generation_config=genai.types.GenerationConfig(temperature=0.7)
-                      )
+                      response = model.generate_content(prompt)
                       full_text = response.text.strip()
                       success_flag = True
                       print(f"✅ SUCCESS with {model_id}!")
                       break 
                   except Exception as e:
-                      if "429" in str(e) or "quota" in str(e).lower():
-                          print("⚠️ Quota hit. Rotating to next API key...")
+                      error_str = str(e).lower()
+                      if "429" in error_str or "quota" in error_str or "rate" in error_str:
+                          print("⚠️ Quota/rate limit hit. Rotating to next API key and waiting...")
                           current_key = next(key_cycle)
                           genai.configure(api_key=current_key)
-                          time.sleep(10)
+                          time.sleep(20)
                           continue
                       print(f"⚠️ Error with {model_id}: {e}")
                       break
@@ -393,8 +391,6 @@ jobs:
               print("❌ All model attempts failed.")
               sys.exit(1)
 
-          # You can continue here with saving the file, committing, etc.
-          # For now we just print the generated content
           print("\n" + "="*80)
           print("GENERATED ARTICLE:")
           print(full_text)
