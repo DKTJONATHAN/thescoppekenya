@@ -358,7 +358,7 @@ const Index = () => {
   // ── Attach stable view counts ──
   const postsWithViews: Post[] = useMemo(() =>
     RAW_POSTS.map(post => {
-      const clean        = post.slug.replace(/^//, "").replace(/.md$/, "");
+      const clean        = post.slug.replace(/^\//, "").replace(/\.md$/, "");
       const real         = viewCounts[`/article/${clean}`] || 0;
       const _stableViews = real > 0 ? real : stableFakeViews(post.slug);
       return { ...post, views: _stableViews, _stableViews };
