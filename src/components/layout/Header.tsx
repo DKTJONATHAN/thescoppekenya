@@ -1,61 +1,21 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Search, TrendingUp, Flame } from "lucide-react";
+import { Menu, X, Search, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { SearchOverlay } from "@/components/SearchOverlay";
 import { categories, getAllPosts } from "@/lib/markdown";
 import logoImg from "@/assets/logo.png";
 
+// PERF: Use cached posts, no view fetch
 const allPostsFromMarkdown = getAllPosts();
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
 
-  // Fetch GA4 views from our internal API
-  useEffect(() => {
-    const fetchViews = async () => {
-      try {
-        const res = await fetch('/api/get-views');
-        if (!res.ok) throw new Error('API Error');
-        const data = await res.json();
-        setViewCounts(data);
-      } catch (e) {
-        console.error("View fetch failed in header");
-      }
-    };
-    fetchViews();
-  }, []);
-
-  // Calculate the Top 5 Trending Posts dynamically
-  const trendingPosts = useMemo(() => {
-    // If views haven't loaded yet, show the latest 5 as a fallback
-    if (Object.keys(viewCounts).length === 0) {
-      return allPostsFromMarkdown.slice(0, 5);
-    }
-
-    return allPostsFromMarkdown
-      .map(post => {
-        const cleanSlug = post.slug.replace(/^\//, '').replace(/\.md$/, '');
-        const exactPath = `/article/${cleanSlug}`;
-        const pathWithSlash = `/article/${cleanSlug}/`;
-        const fallbackPath = `/posts/${cleanSlug}`; 
-        
-        const gaViews = viewCounts[exactPath] || 
-                        viewCounts[pathWithSlash] || 
-                        viewCounts[fallbackPath] || 
-                        0;
-
-        return {
-          ...post,
-          views: gaViews > 0 ? gaViews : 47
-        };
-      })
-      .sort((a, b) => b.views - a.views)
-      .slice(0, 5); // Grab exactly the top 5
-  }, [viewCounts]);
+  // Show latest 5 posts as trending (no fetch needed)
+  const trendingPosts = useMemo(() => allPostsFromMarkdown.slice(0, 5), []);
 
   return (
     <>
@@ -66,16 +26,13 @@ export function Header() {
           <div className="container flex items-center justify-between text-xs">
             <div className="flex items-center gap-3 overflow-hidden flex-1">
               
-              {/* Static Label */}
               <span className="flex items-center gap-1 shrink-0 z-10 bg-foreground pr-2">
                 <Flame className="w-3 h-3 text-primary" />
                 <span className="font-bold text-primary uppercase tracking-wider">Trending:</span>
               </span>
               
-              {/* Animated Sliding Links */}
               <div className="flex-1 overflow-hidden relative">
                 <div className="animate-header-marquee flex items-center gap-8">
-                  {/* We duplicate the array twice to create a seamless infinite loop */}
                   {[...trendingPosts, ...trendingPosts].map((post, i) => (
                     <span key={`${post.slug}-${i}`} className="flex items-center gap-2 shrink-0">
                       <span className="text-primary/40">•</span>
@@ -92,7 +49,6 @@ export function Header() {
 
             </div>
             
-            {/* Date */}
             <div className="hidden md:flex items-center gap-4 shrink-0 pl-4 bg-foreground z-10">
               <span className="text-background/70">{new Date().toLocaleDateString('en-KE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</span>
             </div>
@@ -102,9 +58,8 @@ export function Header() {
         {/* Main Header */}
         <div className="container py-3">
           <div className="flex items-center justify-between">
-            {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
-              <img src={logoImg} alt="Za Ndani - Bold. Unbiased. Insider." className="h-11 sm:h-14 w-auto rounded-full shadow-md group-hover:shadow-lg transition-shadow" />
+              <img src={logoImg} alt="Za Ndani - Bold. Unbiased. Insider." className="h-11 sm:h-14 w-auto rounded-full shadow-md group-hover:shadow-lg transition-shadow" loading="eager" width={56} height={56} />
               <div className="hidden sm:flex flex-col">
                 <span className="text-lg font-serif font-bold leading-tight text-foreground">
                   Za <span className="text-primary">Ndani</span>
@@ -115,7 +70,6 @@ export function Header() {
               </div>
             </Link>
 
-            {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-0.5">
               <Link
                 to="/trending"
@@ -136,7 +90,6 @@ export function Header() {
               ))}
             </nav>
 
-            {/* Actions */}
             <div className="flex items-center gap-1.5">
               <ThemeToggle />
               <Button
@@ -199,7 +152,6 @@ export function Header() {
 
       <SearchOverlay isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
 
-      {/* CSS for the sliding animation */}
       <style dangerouslySetInnerHTML={{ __html: `
         @keyframes headerMarquee {
           0% { transform: translateX(0); }
