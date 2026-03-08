@@ -25,7 +25,7 @@ const LOAD_MORE_COUNT = 9;
 function img(url: string, w = 800): string {
   if (!url) return "/images/placeholder.jpg";
   if (url.endsWith(".svg") || url.startsWith("/")) return url;
-  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:///, ""))}&w=${w}&output=webp&q=80&we`;
+  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${w}&output=webp&q=80&we`;
 }
 
 // ─── RELATIVE TIME ─────────────────────────────────────────────────────────────
@@ -358,7 +358,7 @@ const Index = () => {
   // ── Attach stable view counts ──
   const postsWithViews: Post[] = useMemo(() =>
     RAW_POSTS.map(post => {
-      const clean        = post.slug.replace(/^//, "").replace(/.md$/, "");
+      const clean        = post.slug.replace(/^\//, "").replace(/\.md$/, "");
       const real         = viewCounts[`/article/${clean}`] || 0;
       const _stableViews = real > 0 ? real : stableFakeViews(post.slug);
       return { ...post, views: _stableViews, _stableViews };
