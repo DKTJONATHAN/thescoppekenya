@@ -57,6 +57,7 @@ export interface Post extends PostFrontmatter {
   authorImage?: string;
 }
 
+// PERF: Load markdown files lazily — not bundled into main chunk
 const postFiles = import.meta.glob('/content/posts/*.md', { 
   query: '?raw',
   import: 'default',
@@ -123,7 +124,6 @@ export function getAllPosts(): Post[] {
       const date = frontmatter.date || new Date().toISOString().split('T')[0];
 
       // PERF: Defer HTML parsing — only parse when needed (in ArticlePage)
-      // Store raw content, parse lazily
       let _htmlContent: string | null = null;
 
       posts.push({
@@ -149,7 +149,6 @@ export function getAllPosts(): Post[] {
         },
         readTime: calculateReadTime(content),
         imageAlt: title,
-        // PERF: Remove dicebear avatar URLs — they cause extra network requests
         authorImage: undefined,
       } as Post);
     } catch (error) {
