@@ -2,7 +2,7 @@ name: Za Ndani - Ghafla Scraper
 on:
   schedule:
     - cron: '25 0,2,5,7,10,12,15,17,20,22 * * *'
-  workflow_dispatch:
+  workflow_dispatch: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
@@ -11,7 +11,7 @@ permissions:
 env:
   DEFAULT_BRANCH: main
   POSTS_DIR: content/posts
-  MEMORY_FILE: .github/memory_zandani.json
+  MEMORY_FILE: .github/memory_ghafla.json
 jobs:
   generate-and-publish:
     runs-on: ubuntu-22.04
@@ -23,10 +23,12 @@ jobs:
           ref: ${{ env.DEFAULT_BRANCH }}
           token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
           persist-credentials: true
+
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: Cache Playwright browsers
         uses: actions/cache@v4
         with:
@@ -34,6 +36,7 @@ jobs:
           key: ${{ runner.os }}-playwright-${{ hashFiles('**/playwright') }}
           restore-keys: |
             ${{ runner.os }}-playwright-
+
       - name: Install system dependencies and Python packages
         run: |
           sudo apt-get update -y
@@ -52,8 +55,10 @@ jobs:
             beautifulsoup4 \
             lxml \
             playwright \
-            python-dateutil
+            python-dateutil \
+            playwright-stealth
           playwright install chromium --with-deps
+
       - name: Generate article with Gemini
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
@@ -70,6 +75,7 @@ jobs:
           from google.genai import types
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
+          from playwright_stealth import stealth_sync
 
           publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
@@ -112,8 +118,9 @@ jobs:
                       browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled", "--disable-infobars", "--window-size=1920,1080"])
                       context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36", viewport={"width": 1920, "height": 1080}, locale="en-KE", timezone_id="Africa/Nairobi", extra_http_headers={"Accept-Language": "en-KE,en;q=0.9", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8", "Sec-Fetch-Site": "none", "Sec-Fetch-Mode": "navigate"})
                       page = context.new_page()
-                      page.goto(SITE_URL, timeout=60000, wait_until="networkidle")
-                      time.sleep(random.uniform(2, 5))
+                      stealth_sync(page)
+                      page.goto(SITE_URL, timeout=60000, wait_until="domcontentloaded")
+                      time.sleep(5)
                       for _ in range(3):
                           page.evaluate("window.scrollBy(0, 1800)")
                           time.sleep(random.uniform(2, 4))
@@ -145,6 +152,7 @@ jobs:
                       browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled"])
                       context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
                       page = context.new_page()
+                      stealth_sync(page)
                       page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["image","stylesheet","font","media"] else route.continue_())
                       page.goto(url, timeout=60000, wait_until="domcontentloaded")
                       time.sleep(random.uniform(1, 3))
@@ -325,6 +333,7 @@ jobs:
           with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
           print(f"Saved: {filepath}")
           EOF
+
       - name: Git Safety Pull
         run: |
           git config --global user.name "Za Ndani"
@@ -334,10 +343,11 @@ jobs:
           git fetch origin main
           git pull origin main --rebase
           git stash pop || echo "Nothing to pop"
+
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Za Ndani <bot@zandani.co.ke>"
           commit_message: "content: Ghafla entertainment by Za Ndani 🎬"
           branch: ${{ env.DEFAULT_BRANCH }}
-          file_pattern: 'content/posts/*.md .github/memory_zandani.json'
+          file_pattern: 'content/posts/*.md .github/memory_ghafla.json'
