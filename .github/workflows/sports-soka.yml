@@ -14,25 +14,46 @@ env:
   MEMORY_FILE: .github/memory_martin.json
 jobs:
   generate-and-publish:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: ${{ env.DEFAULT_BRANCH }}
           token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
           persist-credentials: true
-      - name: Set up Python
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install dependencies
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ hashFiles('**/playwright') }}
+          restore-keys: |
+            ${{ runner.os }}-playwright-
+      - name: Install system dependencies and Python packages
         run: |
+          sudo apt-get update -y
+          sudo apt-get install -y \
+            libnss3 libatk-bridge2.0-0 libdrm2 libxcomposite1 libxdamage1 \
+            libxrandr2 libgbm1 libasound2 fonts-liberation libatk1.0-0 \
+            libatspi2.0-0 libcairo2 libcups2 libdbus-1-3 libexpat1 \
+            libfontconfig1 libgcc1 libglib2.0-0 libgtk-3-0 libnspr4 \
+            libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 \
+            libx11-xcb1 libxcb1 libxext6 libxfixes3 libxi6 libxrender1 \
+            libxtst6 lsb-release wget xdg-utils
           python -m pip install --upgrade pip
-          pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil playwright-stealth
-          playwright install chromium
-          playwright install-deps
+          pip install \
+            requests \
+            google-genai \
+            beautifulsoup4 \
+            lxml \
+            playwright \
+            python-dateutil
+          playwright install chromium --with-deps
       - name: Generate article with Gemini
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
@@ -42,18 +63,29 @@ jobs:
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
-          python - <<'PYEOF'
+          python << 'EOF'
           import os, json, datetime, requests, re, time, sys, hashlib, textwrap, itertools, base64, random
           from dateutil import parser as date_parser
           from google import genai
           from google.genai import types
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
-          from playwright_stealth import stealth_sync
+
           publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
-          MODELS_TO_TRY = ["gemini-1.5-flash", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MAX_AGE_HOURS = 10
+          SITE_DOMAIN = "futaa.com"
+
+          BANNED_PHRASES = [
+              "sasa basi", "melting the pot", "spill the tea", "tea is hot",
+              "grab your popcorn", "buckle up", "breaking news", "dive in",
+              "delve into", "moreover", "furthermore", "in conclusion",
+              "it's worth noting", "a testament to", "navigating the landscape",
+              "in today's digital age", "tapestry"
+          ]
+
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
               if not api_key or not image_url:
@@ -71,9 +103,10 @@ jobs:
               except Exception as e:
                   print(f"ImgBB error: {e}")
                   return image_url
+
           def get_target_urls():
               urls = set()
-              print("Scanning Futaa.com landing page / football section...")
+              print("Scanning Futaa.com football section...")
               try:
                   with sync_playwright() as p:
                       browser = p.chromium.launch(headless=True, args=[
@@ -93,15 +126,13 @@ jobs:
                           }
                       )
                       page = context.new_page()
-                      stealth_sync(page)
-                      # Try Kenyan football section first, fallback to homepage
                       try:
                           page.goto('https://futaa.com/ke/football', timeout=60000, wait_until="networkidle")
                       except:
                           print("Football section failed - trying homepage")
                           page.goto('https://futaa.com/', timeout=60000, wait_until="networkidle")
                       time.sleep(random.uniform(2, 5))
-                      for _ in range(4):
+                      for _ in range(3):
                           page.evaluate("window.scrollBy(0, 1800)")
                           time.sleep(random.uniform(2, 4))
                       soup = BeautifulSoup(page.content(), 'html.parser')
@@ -109,24 +140,24 @@ jobs:
                           href = a.get('href', '').strip()
                           if not href: continue
                           full_url = href if href.startswith('http') else 'https://futaa.com' + href
-                          if 'futaa.com' not in full_url: continue
-                          path = full_url.split('futaa.com')[-1]
+                          if SITE_DOMAIN not in full_url: continue
+                          path = full_url.split(SITE_DOMAIN)[-1]
                           slug = path.rstrip('/').split('/')[-1]
                           if (len(slug) > 20 and '-' in slug and
-                              not any(x in path for x in ['/author/', '/tag/', '/page/', '/feed/', '/comment-']) and
+                              not any(x in path for x in ['/author/', '/tag/', '/page/', '/feed/', '/comment-', '/category/']) and
                               ('/ke/' in path or '/football' in path)):
                               urls.add(full_url)
                       browser.close()
               except Exception as e:
-                  print(f"Scan failed (likely block/503): {e}")
+                  print(f"Scan failed: {e}")
               def date_key(u):
                   m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', u)
                   return int(m.group(1)+m.group(2)+m.group(3)) if m else 19000101
               urls_list = sorted(list(urls), key=date_key, reverse=True)
-              print(f"Found {len(urls_list)} candidates. Top 8 newest:")
-              for u in urls_list[:8]:
-                  print(u)
+              print(f"Found {len(urls_list)} candidates. Top 8:")
+              for u in urls_list[:8]: print(u)
               return urls_list[:12]
+
           def scrape_article(url):
               print(f"Scraping: {url}")
               try:
@@ -136,14 +167,12 @@ jobs:
                       ])
                       context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
                       page = context.new_page()
-                      stealth_sync(page)
                       page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["image","stylesheet","font","media"] else route.continue_())
                       page.goto(url, timeout=60000, wait_until="domcontentloaded")
                       time.sleep(random.uniform(1, 3))
                       soup = BeautifulSoup(page.content(), "html.parser")
                       browser.close()
                       pub_time = None
-                      # JSON-LD
                       for script in soup.find_all('script', type='application/ld+json'):
                           try:
                               data = json.loads(script.string or '{}')
@@ -151,12 +180,10 @@ jobs:
                                   pub_time = date_parser.parse(data['datePublished'])
                                   break
                           except: pass
-                      # Meta
                       if not pub_time:
                           meta = soup.find('meta', property='article:published_time') or soup.find('meta', {'name': 'date'})
                           if meta and meta.get('content'):
                               pub_time = date_parser.parse(meta['content'])
-                      # Text fallback (e.g. "2 hrs ago")
                       if not pub_time:
                           pat = r'(\d+)\s*(min|mins|hr|hrs|hour|hours|day|days)\s*ago|\d{1,2}\s*(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)'
                           for el in soup.find_all(string=re.compile(pat, re.I)):
@@ -164,7 +191,6 @@ jobs:
                                   pub_time = date_parser.parse(el, fuzzy=True)
                                   break
                               except: continue
-                      # URL fallback
                       if not pub_time:
                           m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', url)
                           if m:
@@ -173,30 +199,51 @@ jobs:
                           if pub_time.tzinfo is None: pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
                           age = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
                           print(f"Date: {pub_time} ({age:.1f}h old)")
-                          if age > 36:
+                          if age > MAX_AGE_HOURS:
                               print("Too old - skip")
                               return None, None, None
                       else:
                           print("No date - assume fresh")
                       title = soup.title.string.strip() if soup.title else ""
-                      title = re.sub(r' - Futaa| \| Futaa| – Futaa.*', '', title).strip()
+                      title = re.sub(r' - Futaa| \| Futaa| \u2013 Futaa.*', '', title).strip()
                       article_text = ""
                       for sel in ['article', '.article-body', '.post-content', '.entry-content', '.content', 'main']:
                           cont = soup.select_one(sel)
                           if cont:
-                              article_text = "\n\n".join(p.get_text(strip=True) for p in cont.find_all('p') if len(p.get_text(strip=True)) > 30)
+                              article_text = "\n\n".join(p.get_text(strip=True) for p in cont.find_all('p') if len(p.get_text(strip=True)) > 40)
                               if len(article_text) > 400: break
                       if len(article_text) < 400:
-                          article_text = "\n\n".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 30)
+                          article_text = "\n\n".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40)
                       img_url = ""
                       og = soup.find('meta', property='og:image')
                       if og: img_url = og.get('content', '')
+                      if not img_url:
+                          tw = soup.find('meta', {'name': 'twitter:image'})
+                          if tw: img_url = tw.get('content', '')
                       print(f"Text length: {len(article_text)}")
                       return article_text, img_url, title
               except Exception as e:
                   print(f"Scrape error: {e}")
                   return None, None, None
-          # API keys rotation
+
+          def get_internal_context():
+              posts_dir = os.environ.get("POSTS_DIR", "content/posts")
+              if not os.path.exists(posts_dir): return ""
+              files = [f for f in os.listdir(posts_dir) if f.endswith(".md")]
+              sample = random.sample(files, min(len(files), 3))
+              links = []
+              for fn in sample:
+                  try:
+                      with open(os.path.join(posts_dir, fn), "r", encoding="utf-8") as f:
+                          content = f.read()
+                      title_m = re.search(r'title:\s*"(.*?)"', content)
+                      slug_m = re.search(r'slug:\s*"(.*?)"', content)
+                      if title_m and slug_m:
+                          links.append(f'- [{title_m.group(1)}](https://zandani.co.ke/article/{slug_m.group(1)})')
+                  except: pass
+              return "\n".join(links) if links else ""
+
+          # API key rotation
           raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY1"] if os.environ.get(k)]
           if not raw_keys:
               print("No Gemini keys")
@@ -204,6 +251,7 @@ jobs:
           key_cycle = itertools.cycle(raw_keys)
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
+
           def gemini_generate(prompt, label="", use_search=False):
               global current_key, client
               for model in MODELS_TO_TRY:
@@ -214,14 +262,16 @@ jobs:
                           print(f"Gemini OK ({model}): {label}")
                           return resp.text.strip()
                       except Exception as e:
-                          if "429" in str(e) or "quota" in str(e).lower():
-                              time.sleep(60)
+                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower():
+                              time.sleep(random.uniform(20, 35))
                               current_key = next(key_cycle)
                               client = genai.Client(api_key=current_key)
                               continue
                           print(f"Gemini error ({model}): {e}")
                           break
               return None
+
+          # Main flow
           article_links = get_target_urls()
           if not article_links:
               print("No candidates - likely blocked or no content")
@@ -242,11 +292,12 @@ jobs:
           if not full_raw_text:
               print("No fresh valid article")
               sys.exit(0)
+
           title_prompt = f"""SCRAPED ARTICLE: {target_title}
-Classify: LIST, BIO, SCANDAL, GUIDE, TRENDING, NEWS, MATCH REPORT, TRANSFER.
-HIGH-CTR FORMULAS: 1. Number+Keyword+Benefit, 2. Keyword+Power Word+Year, 3. How/What+Keyword+Number, 4. Keyword+[Bracket Hook], 5. Adjective+Number+Outcome.
-Generate EXACTLY 3 SEO titles <60 chars, front-load keyword. Pick best.
-Output ONLY JSON: {{"final_title": "Winning Title"}}"""
+          Classify: LIST, BIO, SCANDAL, GUIDE, TRENDING, NEWS, MATCH REPORT, TRANSFER.
+          HIGH-CTR FORMULAS: 1. Number+Keyword+Benefit, 2. Keyword+Power Word+Year, 3. How/What+Keyword+Number, 4. Keyword+[Bracket Hook], 5. Adjective+Number+Outcome.
+          Generate EXACTLY 3 SEO titles <60 chars, front-load keyword. Pick best.
+          Output ONLY JSON: {{"final_title": "Winning Title"}}"""
           title_text = gemini_generate(title_prompt, "title")
           final_title = target_title
           if title_text:
@@ -256,21 +307,31 @@ Output ONLY JSON: {{"final_title": "Winning Title"}}"""
                   final_title = data.get('final_title', target_title)
               except Exception as e:
                   print(f"Title parse error: {e}")
+
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
+          time.sleep(5)
+
+          internal_links = get_internal_context()
+          banned_str = ", ".join(BANNED_PHRASES)
           article_prompt = f"""Current Date: {full_date_str}
-TITLE: {final_title}
-SOURCE TEXT: {full_raw_text[:9500]}
-TASK: Write energetic, passionate sports article as Martin Mutwiri for Za Ndani.
-Focus East African football. Energetic but factual. No em-dashes. Single hyphens only.
-No title/author/date in body.
-Start with ## H2 keyword heading.
-Then 35-45 word summary paragraph.
-Then ### subheadings with details.
-Factual, direct, local context. No clichés."""
+          TITLE: {final_title}
+          SOURCE TEXT: {full_raw_text[:9500]}
+          INTERNAL LINKS TO WEAVE IN (use 1-2 naturally):
+          {internal_links}
+
+          TASK: Write energetic, passionate sports article as Martin Mutwiri for Za Ndani.
+          Focus East African football. Energetic but factual. No em-dashes. Single hyphens only.
+          No title/author/date in body.
+          Start with ## H2 keyword heading.
+          Then 35-45 word summary paragraph.
+          Then ### subheadings with details.
+          BANNED PHRASES (never use): {banned_str}
+          Factual, direct, local context. No cliches."""
           article_text = gemini_generate(article_prompt, "article", use_search=True)
           if not article_text:
               sys.exit(1)
+
           article_text = re.sub(r"^```(?:markdown)?\n?", "", article_text).rstrip("```").strip()
           article_text = re.sub(r"^(Title|By|Date):.*?\n", "", article_text, flags=re.I|re.M)
           article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
@@ -296,7 +357,7 @@ Factual, direct, local context. No clichés."""
           with open(memory_path, 'w') as f:
               json.dump(memory[-300:], f)
           print(f"Saved: {filepath}")
-          PYEOF
+          EOF
       - name: Git Safety Pull
         run: |
           git config --global user.name "Martin Mutwiri"
