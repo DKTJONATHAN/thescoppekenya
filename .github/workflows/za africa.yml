@@ -104,6 +104,21 @@ jobs:
               "in today's digital age", "tapestry"
           ]
 
+          # Paths to exclude when collecting article URLs
+          EXCLUDED_PATHS = [
+              '/author/', '/tag/', '/page/', '/feed/', '/comment-', '/category/',
+              '/about', '/contact', '/terms', '/privacy', '/advertise', '/subscribe',
+              '/login', '/register', '/search', '/sitemap', '/404', '/faq',
+              '/newsletter', '/rss', '/careers', '/team', '/policy', '/disclaimer',
+              '/cookie', '/help', '/support', '/write-for-us', '/correction'
+          ]
+
+          # Image URL fragments that indicate a logo/icon rather than article image
+          BAD_IMAGE_FRAGMENTS = [
+              'logo', 'default', 'placeholder', 'icon', 'avatar',
+              'favicon', 'sprite', 'blank', 'pixel', 'badge', 'watermark'
+          ]
+
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
               if not api_key or not image_url: return image_url
@@ -120,6 +135,12 @@ jobs:
               except Exception as e:
                   print(f"ImgBB error: {e}")
                   return image_url
+
+          def is_bad_image(url):
+              """Returns True if the image URL looks like a logo, icon, or placeholder."""
+              if not url: return True
+              url_lower = url.lower()
+              return any(frag in url_lower for frag in BAD_IMAGE_FRAGMENTS)
 
           def get_target_urls():
               urls = set()
@@ -142,7 +163,14 @@ jobs:
                           if SITE_DOMAIN not in full_url: continue
                           path = full_url.split(SITE_DOMAIN)[-1]
                           slug = path.rstrip('/').split('/')[-1]
-                          if (len(slug) > 15 and '-' in slug and not any(x in path for x in ['/author/', '/tag/', '/page/', '/feed/', '/comment-', '/category/'])):
+                          # Must be a deep path (at least 2 segments) with a meaningful slug
+                          # and must not match any excluded path patterns
+                          if (
+                              len(slug) > 15
+                              and '-' in slug
+                              and len(path.split('/')) >= 3
+                              and not any(x in path.lower() for x in EXCLUDED_PATHS)
+                          ):
                               urls.add(full_url)
                       browser.close()
               except Exception as e:
@@ -162,7 +190,8 @@ jobs:
                       browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled"])
                       context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
                       page = context.new_page()
-                      page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["image","stylesheet","font","media"] else route.continue_())
+                      # Block only non-essential resources; allow images so we can find article images
+                      page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["stylesheet","font","media"] else route.continue_())
                       page.goto(url, timeout=60000, wait_until="domcontentloaded")
                       time.sleep(random.uniform(1, 3))
                       soup = BeautifulSoup(page.content(), "html.parser")
@@ -205,12 +234,57 @@ jobs:
                               if len(article_text) > 400: break
                       if len(article_text) < 400:
                           article_text = "\n\n".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40)
+
+                      # ── Image extraction (fixed) ──────────────────────────────────────
                       img_url = ""
+
+                      # 1. Try og:image first
                       og = soup.find('meta', property='og:image')
-                      if og: img_url = og.get('content', '')
+                      if og:
+                          candidate = og.get('content', '').strip()
+                          if not is_bad_image(candidate):
+                              img_url = candidate
+
+                      # 2. Fallback: twitter:image
                       if not img_url:
                           tw = soup.find('meta', {'name': 'twitter:image'})
-                          if tw: img_url = tw.get('content', '')
+                          if tw:
+                              candidate = tw.get('content', '').strip()
+                              if not is_bad_image(candidate):
+                                  img_url = candidate
+
+                      # 3. Fallback: JSON-LD image field
+                      if not img_url:
+                          for script in soup.find_all('script', type='application/ld+json'):
+                              try:
+                                  ld = json.loads(script.string or '{}')
+                                  ld_img = ld.get('image', '')
+                                  if isinstance(ld_img, dict): ld_img = ld_img.get('url', '')
+                                  if isinstance(ld_img, list): ld_img = ld_img[0] if ld_img else ''
+                                  if ld_img and not is_bad_image(ld_img):
+                                      img_url = ld_img
+                                      break
+                              except: pass
+
+                      # 4. Fallback: first large <img> inside article body
+                      if not img_url:
+                          for sel in ['article', '.article-body', '.post-content', '.entry-content', 'main']:
+                              cont = soup.select_one(sel)
+                              if not cont: continue
+                              for img_tag in cont.find_all('img', src=True):
+                                  src = img_tag.get('src', '').strip()
+                                  # Skip tiny tracking pixels and bad images
+                                  width = img_tag.get('width', '')
+                                  height = img_tag.get('height', '')
+                                  try:
+                                      if int(width) < 100 or int(height) < 100: continue
+                                  except: pass
+                                  if src and not is_bad_image(src):
+                                      img_url = src if src.startswith('http') else f'https://{SITE_DOMAIN}{src}'
+                                      break
+                              if img_url: break
+
+                      print(f"Image: {img_url or 'none found'}")
                       print(f"Text length: {len(article_text)}")
                       return article_text, img_url, title
               except Exception as e:
