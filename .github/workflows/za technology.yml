@@ -20,13 +20,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: '${{ env.DEFAULT_BRANCH }}'
-          token: '${{ secrets.PERSONAL_GITHUB_TOKEN }}'
+          ref: main
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
           persist-credentials: true
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
-        with: { python-version: '3.11' }
+        with:
+          python-version: '3.11'
 
       - name: Cache Playwright browsers
         uses: actions/cache@v4
@@ -36,7 +37,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-playwright-
 
-      - name: Install system dependencies and Python packages
+      - name: Install dependencies
         run: |
           sudo apt-get update -y
           sudo apt-get install -y libnss3 libatk-bridge2.0-0 libdrm2 libxcomposite1 libxdamage1 libxrandr2 libgbm1 libasound2 fonts-liberation libatk1.0-0 libatspi2.0-0 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxext6 libxfixes3 libxi6 libxrender1 libxtst6 lsb-release wget xdg-utils
@@ -44,16 +45,9 @@ jobs:
           pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil
           playwright install chromium --with-deps
 
-      - name: Generate article with Gemini
-        env:
-          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
-          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
-          POSTS_DIR: ${{ env.POSTS_DIR }}
-          MEMORY_FILE: ${{ env.MEMORY_FILE }}
+      - name: Write scraper script
         run: |
-          python << 'EOF'
+          cat > /tmp/scraper.py << 'PYEOF'
           import os, json, datetime, requests, re, time, sys, hashlib, textwrap, itertools, base64, random
           from dateutil import parser as date_parser
           from google import genai
@@ -228,7 +222,17 @@ Data-driven, innovation-focused. No cliches."""
           memory.append(final_hash)
           with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
           print(f"Saved: {fp}")
-          EOF
+          PYEOF
+
+      - name: Generate article with Gemini
+        env:
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
+          MEMORY_FILE: ${{ env.MEMORY_FILE }}
+        run: python3 /tmp/scraper.py
 
       - name: Debug written files
         run: |
@@ -251,7 +255,7 @@ Data-driven, innovation-focused. No cliches."""
         with:
           commit_author: "Elizabeth Muthoni <bot@zandani.co.ke>"
           commit_message: "content: Tech news by Elizabeth Muthoni 🚀"
-          branch: ${{ env.DEFAULT_BRANCH }}
+          branch: main
           file_pattern: 'content/posts/*.md .github/memory_elizabeth.json'
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
