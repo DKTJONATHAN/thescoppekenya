@@ -2,7 +2,7 @@ name: Za Ndani - Ghafla Scraper
 on:
   schedule:
     - cron: '25 0,2,5,7,10,12,15,17,20,22 * * *'
-  workflow_dispatch: {}
+  workflow_dispatch:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
@@ -23,12 +23,10 @@ jobs:
           ref: ${{ env.DEFAULT_BRANCH }}
           token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
           persist-credentials: true
-          
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          
       - name: Cache Playwright browsers
         uses: actions/cache@v4
         with:
@@ -36,7 +34,6 @@ jobs:
           key: ${{ runner.os }}-playwright-${{ hashFiles('**/playwright') }}
           restore-keys: |
             ${{ runner.os }}-playwright-
-            
       - name: Install system dependencies and Python packages
         run: |
           sudo apt-get update -y
@@ -57,7 +54,6 @@ jobs:
             playwright \
             python-dateutil
           playwright install chromium --with-deps
-          
       - name: Generate article with Gemini
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
@@ -135,7 +131,7 @@ jobs:
               except Exception as e:
                   print(f"Scan failed: {e}")
               def date_key(u):
-                  m = re.search(r'/(d{4})/(d{2})/(d{2})/', u)
+                  m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', u)
                   return int(m.group(1)+m.group(2)+m.group(3)) if m else 19000101
               urls_list = sorted(list(urls), key=date_key, reverse=True)
               print(f"Found {len(urls_list)} candidates. Top 8:")
@@ -166,12 +162,12 @@ jobs:
                           meta = soup.find('meta', property='article:published_time') or soup.find('meta', {'name': 'date'})
                           if meta and meta.get('content'): pub_time = date_parser.parse(meta['content'])
                       if not pub_time:
-                          pat = r'(d+)s*(min|mins|hr|hrs|hour|hours|day|days)s*ago|d{1,2}s*(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)'
+                          pat = r'(\d+)\s*(min|mins|hr|hrs|hour|hours|day|days)\s*ago|\d{1,2}\s*(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)'
                           for el in soup.find_all(string=re.compile(pat, re.I)):
                               try: pub_time = date_parser.parse(el, fuzzy=True); break
                               except: continue
                       if not pub_time:
-                          m = re.search(r'/(d{4})/(d{2})/(d{2})/', url)
+                          m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', url)
                           if m: pub_time = datetime.datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)), tzinfo=datetime.timezone.utc)
                       if pub_time:
                           if pub_time.tzinfo is None: pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
@@ -183,19 +179,15 @@ jobs:
                       else:
                           print("No date - assume fresh")
                       title = soup.title.string.strip() if soup.title else ""
-                      title = re.sub(r's*[-|–]s*Ghafla.*', '', title, flags=re.I).strip()
+                      title = re.sub(r'\s*[-|\u2013]\s*Ghafla.*', '', title, flags=re.I).strip()
                       article_text = ""
                       for sel in ['article', '.article-body', '.post-content', '.entry-content', '.content', 'main']:
                           cont = soup.select_one(sel)
                           if cont:
-                              article_text = "
-
-".join(p.get_text(strip=True) for p in cont.find_all('p') if len(p.get_text(strip=True)) > 40)
+                              article_text = "\n\n".join(p.get_text(strip=True) for p in cont.find_all('p') if len(p.get_text(strip=True)) > 40)
                               if len(article_text) > 400: break
                       if len(article_text) < 400:
-                          article_text = "
-
-".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40)
+                          article_text = "\n\n".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40)
                       img_url = ""
                       og = soup.find('meta', property='og:image')
                       if og: img_url = og.get('content', '')
@@ -217,12 +209,11 @@ jobs:
               for fn in sample:
                   try:
                       with open(os.path.join(posts_dir, fn), "r", encoding="utf-8") as f: content = f.read()
-                      title_m = re.search(r'title:s*"(.*?)"', content)
-                      slug_m = re.search(r'slug:s*"(.*?)"', content)
+                      title_m = re.search(r'title:\s*"(.*?)"', content)
+                      slug_m = re.search(r'slug:\s*"(.*?)"', content)
                       if title_m and slug_m: links.append(f'- [{title_m.group(1)}](https://zandani.co.ke/article/{slug_m.group(1)})')
                   except: pass
-              return "
-".join(links) if links else ""
+              return "\n".join(links) if links else ""
 
           raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY1"] if os.environ.get(k)]
           if not raw_keys:
@@ -281,8 +272,7 @@ jobs:
           final_title = target_title
           if title_text:
               try:
-                  clean = re.sub(r"^```json?
-?|```$", "", title_text, flags=re.I|re.DOTALL).strip()
+                  clean = re.sub(r"^```json?\n?|```$", "", title_text, flags=re.I|re.DOTALL).strip()
                   data = json.loads(clean)
                   final_title = data.get('final_title', target_title)
               except Exception as e:
@@ -311,11 +301,9 @@ jobs:
           article_text = gemini_generate(article_prompt, "article", use_search=True)
           if not article_text: sys.exit(1)
 
-          article_text = re.sub(r"^```(?:markdown)?
-?", "", article_text).rstrip("```").strip()
-          article_text = re.sub(r"^(Title|By|Date):.*?
-", "", article_text, flags=re.I|re.M)
-          article_text = article_text.replace('—', '-').replace('–', '-')
+          article_text = re.sub(r"^```(?:markdown)?\n?", "", article_text).rstrip("```").strip()
+          article_text = re.sub(r"^(Title|By|Date):.*?\n", "", article_text, flags=re.I|re.M)
+          article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           final_image = upload_to_imgbb(target_image) if target_image else ""
           posts_dir = os.environ.get("POSTS_DIR", "content/posts")
@@ -337,7 +325,6 @@ jobs:
           with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
           print(f"Saved: {filepath}")
           EOF
-          
       - name: Git Safety Pull
         run: |
           git config --global user.name "Za Ndani"
@@ -347,7 +334,6 @@ jobs:
           git fetch origin main
           git pull origin main --rebase
           git stash pop || echo "Nothing to pop"
-          
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
