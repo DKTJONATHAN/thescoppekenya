@@ -4,25 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- CRITICAL: wsrv.nl preconnect must be first — fixes LCP request discovery -->
+    <link rel="preconnect" href="https://wsrv.nl" crossorigin />
+    <link rel="dns-prefetch" href="https://wsrv.nl" />
+
+    <!-- Prevent blank black flash while JS loads -->
+    <style>
+      body { background-color: #09090b; margin: 0; font-family: sans-serif; }
+      #root { min-height: 100vh; background: #09090b; }
+    </style>
+
+    <!-- Google Analytics — moved to bottom of head, still async, no blocking -->
     <link rel="preconnect" href="https://www.googletagmanager.com" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZHDWQPCEL"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-DZHDWQPCEL', {
-        send_page_view: true
-      });
-    </script>
 
     <link rel="preconnect" href="https://iqdjucfzdcquwmiwtlil.supabase.co" crossorigin />
     <link rel="dns-prefetch" href="https://iqdjucfzdcquwmiwtlil.supabase.co" />
 
+    <!-- Fonts — non-blocking via media=print swap trick (already correct) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'" />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" /></noscript>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Inter:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Inter:wght@400;600&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Inter:wght@400;600&display=swap" /></noscript>
 
     <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="theme-color" content="#e11d48" />
@@ -40,36 +43,48 @@
     <link rel="alternate" hreflang="en" href="https://zandani.co.ke" />
 
     <title>Za Ndani | Breaking Kenya News, Entertainment Gossip & Trending Scoops</title>
-    <meta name="description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, trending celebrity news, and sports.">
-    <meta name="keywords" content="latest news in Kenya today, breaking news Kenya, Kenyan entertainment news, Nairobi gossip, trending news Kenya, Kenya politics, celebrity gossip Kenya, sports news Kenya, Za Ndani, exclusive Kenyan scoops, current affairs Kenya">
+    <meta name="description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, trending celebrity news, and sports." />
+    <meta name="keywords" content="latest news in Kenya today, breaking news Kenya, Kenyan entertainment news, Nairobi gossip, trending news Kenya, Kenya politics, celebrity gossip Kenya, sports news Kenya, Za Ndani, exclusive Kenyan scoops, current affairs Kenya" />
 
-    <meta property="og:title" content="Za Ndani | Breaking Kenya News & Entertainment Gossip">
-    <meta property="og:description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, trending celebrity news, and sports.">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="Za Ndani | Breaking Kenya News & Entertainment Gossip" />
+    <meta property="og:description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, trending celebrity news, and sports." />
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://zandani.co.ke" />
     <meta property="og:image" content="https://zandani.co.ke/logo.png" />
-    <meta property="og:site_name" content="Za Ndani">
-    <meta property="og:locale" content="en_KE">
+    <meta property="og:site_name" content="Za Ndani" />
+    <meta property="og:locale" content="en_KE" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Za Ndani | Breaking Kenya News & Entertainment Gossip">
-    <meta name="twitter:description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, and trending celebrity news.">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Za Ndani | Breaking Kenya News & Entertainment Gossip" />
+    <meta name="twitter:description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, and trending celebrity news." />
   </head>
   <body>
     <div id="root"></div>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9291176772735390"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-9291176772735390"
-     data-ad-slot="4403811955"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- FIX: AdSense moved to end of body + deferred so it never blocks first paint -->
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var s = document.createElement('script');
+          s.async = true;
+          s.crossOrigin = 'anonymous';
+          s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9291176772735390';
+          document.body.appendChild(s);
+        }, 3000);
+      });
+    </script>
+
+    <!-- FIX: GA script moved to end of body — async so it doesn't block anything -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZHDWQPCEL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-DZHDWQPCEL', { send_page_view: true });
+    </script>
   </body>
 </html>
