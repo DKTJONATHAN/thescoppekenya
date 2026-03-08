@@ -12,11 +12,6 @@ concurrency:
 permissions:
   contents: write
 
-env:
-  DEFAULT_BRANCH: main
-  POSTS_DIR: content/posts
-  MEMORY_FILE: .github/memory_wanjiku.json
-
 jobs:
   generate-and-publish:
     runs-on: ubuntu-22.04
@@ -50,18 +45,8 @@ jobs:
           PYTHONUNBUFFERED: "1"
         run: |
           cat > /tmp/wanjiku.py << 'ENDOFSCRIPT'
-          import os
-          import re
-          import json
-          import time
-          import random
-          import hashlib
-          import textwrap
-          import itertools
-          import base64
-          import datetime
+          import os, re, json, time, random, hashlib, textwrap, itertools, base64, datetime
           from urllib.parse import urljoin, urlparse
-
           import requests
           from bs4 import BeautifulSoup
           from dateutil import parser as date_parser
@@ -79,12 +64,7 @@ jobs:
           MAX_CANDIDATES = 20
           MAX_AGE_HOURS = 36
           MIN_ARTICLE_TEXT = 500
-
-          MODELS_TO_TRY = [
-              "gemini-2.5-flash",
-              "gemini-1.5-flash",
-          ]
-
+          MODELS_TO_TRY = ["gemini-2.5-flash", "gemini-1.5-flash"]
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot",
               "grab your popcorn", "buckle up", "breaking news", "dive in",
@@ -97,14 +77,11 @@ jobs:
           session.headers.update({
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
               "Accept-Language": "en-KE,en;q=0.9",
-              "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+              "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
           })
 
-          def log(msg):
-              print(msg, flush=True)
-
-          def clean_text(text):
-              return re.sub(r"s+", " ", (text or "")).strip()
+          def log(msg): print(msg, flush=True)
+          def clean_text(t): return re.sub(r's+', ' ', (t or '')).strip()
 
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY", "").strip()
@@ -114,285 +91,198 @@ jobs:
                   img_res = session.get(image_url, timeout=20)
                   img_res.raise_for_status()
                   b64 = base64.b64encode(img_res.content).decode("utf-8")
-                  res = session.post(
-                      "https://api.imgbb.com/1/upload",
-                      data={"key": api_key, "image": b64},
-                      timeout=30,
-                  )
+                  res = session.post("https://api.imgbb.com/1/upload", data={"key": api_key, "image": b64}, timeout=30)
                   if res.ok:
                       new_url = res.json().get("data", {}).get("url")
                       if new_url:
-                          log(f"Re-hosted image: {new_url}")
+                          log("Re-hosted image: " + new_url)
                           return new_url
-                  log(f"ImgBB failed: {res.status_code}")
               except Exception as e:
-                  log(f"ImgBB error: {e}")
+                  log("ImgBB error: " + str(e))
               return image_url
 
           def normalize_url(href, base_url):
-              if not href:
-                  return ""
+              if not href: return ""
               full_url = urljoin(base_url, href.strip())
               parsed = urlparse(full_url)
-              if parsed.scheme not in {"http", "https"}:
-                  return ""
-              if parsed.netloc not in {"ghafla.co.ke", "www.ghafla.co.ke"}:
-                  return ""
-              return f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
+              if parsed.scheme not in {"http", "https"}: return ""
+              if parsed.netloc not in {"ghafla.co.ke", "www.ghafla.co.ke"}: return ""
+              return parsed.scheme + "://" + parsed.netloc + parsed.path
 
           def is_article_url(url):
-              if not url:
-                  return False
+              if not url: return False
               parsed = urlparse(url)
               path = parsed.path.rstrip("/")
-              if parsed.netloc not in {"ghafla.co.ke", "www.ghafla.co.ke"}:
-                  return False
-              if not path.startswith("/ke/"):
-                  return False
-              if any(path.startswith(p) for p in [
-                  "/ke/page/", "/ke/tag/", "/ke/author/",
-                  "/ke/category/", "/ke/feed", "/ke/comments",
-              ]):
-                  return False
+              if parsed.netloc not in {"ghafla.co.ke", "www.ghafla.co.ke"}: return False
+              if not path.startswith("/ke/"): return False
+              if any(path.startswith(p) for p in ["/ke/page/", "/ke/tag/", "/ke/author/", "/ke/category/", "/ke/feed", "/ke/comments"]): return False
               parts = [p for p in path.split("/") if p]
-              if len(parts) != 2:
-                  return False
+              if len(parts) != 2: return False
               slug = parts[1]
-              if len(slug) < 8 or "-" not in slug:
-                  return False
-              if any(b in slug for b in ["wp-content", "wp-json", "xmlrpc"]):
-                  return False
+              if len(slug) < 8 or "-" not in slug: return False
+              if any(b in slug for b in ["wp-content", "wp-json", "xmlrpc"]): return False
               return True
 
-          def extract_candidates_from_html(html, base_url):
-              urls = []
-              seen = set()
+          def extract_candidates(html, base_url):
+              urls, seen = [], set()
               soup = BeautifulSoup(html, "lxml")
               for a in soup.select("a[href]"):
-                  full_url = normalize_url(a.get("href", ""), base_url)
-                  if is_article_url(full_url) and full_url not in seen:
-                      seen.add(full_url)
-                      urls.append(full_url)
-              regex_hits = re.findall(
-                  r'https?://(?:www.)?ghafla.co.ke/ke/[a-z0-9][a-z0-9-]+/?',
-                  html, flags=re.I
-              )
-              for hit in regex_hits:
-                  full_url = normalize_url(hit, base_url)
-                  if is_article_url(full_url) and full_url not in seen:
-                      seen.add(full_url)
-                      urls.append(full_url)
+                  u = normalize_url(a.get("href", ""), base_url)
+                  if is_article_url(u) and u not in seen:
+                      seen.add(u); urls.append(u)
+              for hit in re.findall(r'https?://(?:www.)?ghafla.co.ke/ke/[a-z0-9][a-z0-9-]+/?', html, re.I):
+                  u = normalize_url(hit, base_url)
+                  if is_article_url(u) and u not in seen:
+                      seen.add(u); urls.append(u)
               return urls
 
           def get_target_urls():
-              collected = []
-              seen = set()
+              collected, seen = [], set()
               for listing_url in LISTING_URLS:
-                  log(f"Scanning {listing_url} ...")
+                  log("Scanning " + listing_url)
                   try:
                       res = session.get(listing_url, timeout=30)
                       res.raise_for_status()
-                      batch = extract_candidates_from_html(res.text, listing_url)
-                      log(f"Found {len(batch)} candidates on {listing_url}")
+                      batch = extract_candidates(res.text, listing_url)
+                      log("Found " + str(len(batch)) + " candidates on " + listing_url)
                       for url in batch:
                           if url not in seen:
-                              seen.add(url)
-                              collected.append(url)
+                              seen.add(url); collected.append(url)
                   except Exception as e:
-                      log(f"Listing fetch failed: {e}")
-              log(f"Total unique candidates: {len(collected)}")
-              for u in collected[:10]:
-                  log(f"  {u}")
+                      log("Listing fetch failed: " + str(e))
+              log("Total unique candidates: " + str(len(collected)))
+              for u in collected[:10]: log("  " + u)
               return collected[:MAX_CANDIDATES]
 
           def parse_json_ld(soup):
               objs = []
               for script in soup.find_all("script", type="application/ld+json"):
                   raw = (script.string or script.get_text() or "").strip()
-                  if not raw:
-                      continue
-                  try:
-                      objs.append(json.loads(raw))
+                  if not raw: continue
+                  try: objs.append(json.loads(raw))
                   except Exception:
-                      try:
-                          objs.append(json.loads(raw.replace("
-", " ")))
-                      except Exception:
-                          pass
+                      try: objs.append(json.loads(raw.replace('
+', ' ')))
+                      except: pass
               return objs
 
           def walk_json(obj):
               if isinstance(obj, dict):
                   yield obj
-                  for v in obj.values():
-                      yield from walk_json(v)
+                  for v in obj.values(): yield from walk_json(v)
               elif isinstance(obj, list):
-                  for item in obj:
-                      yield from walk_json(item)
+                  for item in obj: yield from walk_json(item)
 
           def extract_pub_time(soup):
-              meta_checks = [
-                  {"property": "article:published_time"},
-                  {"name": "article:published_time"},
-                  {"property": "og:published_time"},
-                  {"name": "pubdate"},
-                  {"name": "date"},
-              ]
-              for attrs in meta_checks:
+              for attrs in [{"property":"article:published_time"},{"name":"article:published_time"},{"property":"og:published_time"},{"name":"pubdate"},{"name":"date"}]:
                   el = soup.find("meta", attrs=attrs)
                   if el and el.get("content"):
-                      try:
-                          return date_parser.parse(el["content"])
-                      except Exception:
-                          pass
+                      try: return date_parser.parse(el["content"])
+                      except: pass
               time_el = soup.find("time")
               if time_el:
                   dt = time_el.get("datetime") or time_el.get_text(" ", strip=True)
                   if dt:
-                      try:
-                          return date_parser.parse(dt)
-                      except Exception:
-                          pass
+                      try: return date_parser.parse(dt)
+                      except: pass
               for obj in parse_json_ld(soup):
                   for node in walk_json(obj):
                       dp = node.get("datePublished") or node.get("dateCreated")
                       if dp:
-                          try:
-                              return date_parser.parse(dp)
-                          except Exception:
-                              pass
+                          try: return date_parser.parse(dp)
+                          except: pass
               return None
 
           def extract_title(soup):
               og = soup.find("meta", property="og:title")
-              if og and og.get("content"):
-                  title = clean_text(og["content"])
-              elif soup.title and soup.title.string:
-                  title = clean_text(soup.title.string)
+              if og and og.get("content"): title = clean_text(og["content"])
+              elif soup.title and soup.title.string: title = clean_text(soup.title.string)
               else:
                   h1 = soup.find("h1")
                   title = clean_text(h1.get_text(" ", strip=True)) if h1 else "Entertainment News"
-              title = re.sub(r"s*[-|]s*Ghafla!?(s*Kenya)?s*$", "", title, flags=re.I).strip()
+              title = re.sub(r's*[-|]s*Ghafla!?(s*Kenya)?s*$', '', title, flags=re.I).strip()
               return title or "Entertainment News"
 
           def extract_image(soup):
-              for attrs in [{"property": "og:image"}, {"name": "twitter:image"}]:
+              for attrs in [{"property":"og:image"},{"name":"twitter:image"}]:
                   el = soup.find("meta", attrs=attrs)
-                  if el and el.get("content"):
-                      return el["content"].strip()
+                  if el and el.get("content"): return el["content"].strip()
               img = soup.select_one("article img, main img, .entry-content img, .post-content img")
-              if img and img.get("src"):
-                  return img["src"].strip()
+              if img and img.get("src"): return img["src"].strip()
               return ""
 
           def extract_article_text(soup):
-              selectors = [
-                  "article", ".td-post-content", ".entry-content",
-                  ".post-content", ".article-body", ".single-content",
-                  ".content-inner", "main",
-              ]
-              for sel in selectors:
+              for sel in ["article",".td-post-content",".entry-content",".post-content",".article-body",".single-content",".content-inner","main"]:
                   container = soup.select_one(sel)
-                  if not container:
-                      continue
-                  texts = [
-                      clean_text(p.get_text(" ", strip=True))
-                      for p in container.find_all("p")
-                      if len(clean_text(p.get_text(" ", strip=True))) >= 40
-                  ]
+                  if not container: continue
+                  texts = [clean_text(p.get_text(" ", strip=True)) for p in container.find_all("p") if len(clean_text(p.get_text(" ", strip=True))) >= 40]
                   result = "
 
 ".join(texts)
-                  if len(result) >= MIN_ARTICLE_TEXT:
-                      return result
-              texts = [
-                  clean_text(p.get_text(" ", strip=True))
-                  for p in soup.find_all("p")
-                  if len(clean_text(p.get_text(" ", strip=True))) >= 40
-              ]
+                  if len(result) >= MIN_ARTICLE_TEXT: return result
+              texts = [clean_text(p.get_text(" ", strip=True)) for p in soup.find_all("p") if len(clean_text(p.get_text(" ", strip=True))) >= 40]
               return "
 
 ".join(texts)
 
           def scrape_article(url):
-              log(f"Scraping: {url}")
+              log("Scraping: " + url)
               try:
                   res = session.get(url, timeout=30)
                   res.raise_for_status()
                   soup = BeautifulSoup(res.text, "lxml")
                   pub_time = extract_pub_time(soup)
                   if pub_time:
-                      if pub_time.tzinfo is None:
-                          pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
-                      age = (
-                          datetime.datetime.now(datetime.timezone.utc)
-                          - pub_time.astimezone(datetime.timezone.utc)
-                      ).total_seconds() / 3600
-                      log(f"Published: {pub_time.isoformat()} | Age: {age:.1f}h")
+                      if pub_time.tzinfo is None: pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
+                      age = (datetime.datetime.now(datetime.timezone.utc) - pub_time.astimezone(datetime.timezone.utc)).total_seconds() / 3600
+                      log("Published: " + pub_time.isoformat() + " | Age: " + str(round(age, 1)) + "h")
                       if age > MAX_AGE_HOURS:
-                          log("Too old, skipping")
-                          return None, None, None
+                          log("Too old, skipping"); return None, None, None
                   else:
-                      log("No publish time found, continuing")
+                      log("No publish time, continuing")
                   title = extract_title(soup)
                   img_url = extract_image(soup)
                   article_text = extract_article_text(soup)
-                  log(f"Title: {title} | Text length: {len(article_text)}")
+                  log("Title: " + title + " | Text length: " + str(len(article_text)))
                   if len(article_text) < MIN_ARTICLE_TEXT:
-                      log("Text too short, skipping")
-                      return None, None, None
+                      log("Text too short, skipping"); return None, None, None
                   return article_text, img_url, title
               except Exception as e:
-                  log(f"Scrape error: {e}")
-                  return None, None, None
+                  log("Scrape error: " + str(e)); return None, None, None
 
           def get_internal_context():
               posts_dir = os.environ.get("POSTS_DIR", "content/posts")
-              if not os.path.exists(posts_dir):
-                  return ""
+              if not os.path.exists(posts_dir): return ""
               files = [f for f in os.listdir(posts_dir) if f.endswith(".md")]
-              if not files:
-                  return ""
+              if not files: return ""
               sample = random.sample(files, min(len(files), 3))
               links = []
               for fn in sample:
                   try:
-                      with open(os.path.join(posts_dir, fn), "r", encoding="utf-8") as f:
-                          content = f.read()
+                      with open(os.path.join(posts_dir, fn), "r", encoding="utf-8") as f: content = f.read()
                       title_m = re.search(r'title:s*"(.*?)"', content)
                       slug_m = re.search(r'slug:s*"(.*?)"', content)
                       if title_m and slug_m:
-                          links.append(f'- [{title_m.group(1)}](https://zandani.co.ke/article/{slug_m.group(1)})')
-                  except Exception:
-                      continue
+                          links.append("- [" + title_m.group(1) + "](https://zandani.co.ke/article/" + slug_m.group(1) + ")")
+                  except: continue
               return "
 ".join(links)
 
           def load_memory(path):
-              if not os.path.exists(path):
-                  return []
+              if not os.path.exists(path): return []
               try:
-                  with open(path, "r", encoding="utf-8") as f:
-                      data = json.load(f)
+                  with open(path, "r", encoding="utf-8") as f: data = json.load(f)
                   return data if isinstance(data, list) else []
-              except Exception:
-                  return []
+              except: return []
 
           def save_memory(path, memory):
-              directory = os.path.dirname(path)
-              if directory:
-                  os.makedirs(directory, exist_ok=True)
-              with open(path, "w", encoding="utf-8") as f:
-                  json.dump(memory[-500:], f)
+              d = os.path.dirname(path)
+              if d: os.makedirs(d, exist_ok=True)
+              with open(path, "w", encoding="utf-8") as f: json.dump(memory[-500:], f)
 
-          raw_keys = [
-              os.environ.get(k)
-              for k in ["GEMINI_WRITE_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY1"]
-              if os.environ.get(k)
-          ]
+          raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY","GEMINI_API_KEY","GEMINI_API_KEY1"] if os.environ.get(k)]
           if not raw_keys:
-              log("No Gemini keys found")
-              raise SystemExit(1)
+              log("No Gemini keys found"); raise SystemExit(1)
 
           key_cycle = itertools.cycle(raw_keys)
           current_key = next(key_cycle)
@@ -408,187 +298,131 @@ jobs:
               for model in MODELS_TO_TRY:
                   for attempt in range(1, 7):
                       try:
-                          config = None
-                          if json_mode:
-                              config = types.GenerateContentConfig(
-                                  response_mime_type="application/json"
-                              )
-                          resp = client.models.generate_content(
-                              model=model,
-                              contents=prompt,
-                              config=config,
-                          )
+                          config = types.GenerateContentConfig(response_mime_type="application/json") if json_mode else None
+                          resp = client.models.generate_content(model=model, contents=prompt, config=config)
                           text = (resp.text or "").strip()
                           if text:
-                              log(f"Gemini OK | model={model} | label={label}")
+                              log("Gemini OK | model=" + model + " | label=" + label)
                               return text
                       except Exception as e:
                           msg = str(e).lower()
-                          log(f"Gemini error | model={model} | attempt={attempt} | {e}")
+                          log("Gemini error | model=" + model + " | attempt=" + str(attempt) + " | " + str(e))
                           if "429" in msg or "quota" in msg or "rate" in msg:
-                              time.sleep(random.uniform(15, 30))
-                              rotate_key()
-                              continue
+                              time.sleep(random.uniform(15, 30)); rotate_key(); continue
                           break
               return None
 
           article_links = get_target_urls()
           if not article_links:
-              log("No candidates found")
-              raise SystemExit(0)
+              log("No candidates found"); raise SystemExit(0)
 
           memory_path = os.environ.get("MEMORY_FILE", ".github/memory_wanjiku.json")
           memory = load_memory(memory_path)
-
-          full_raw_text = None
-          target_image = None
-          target_title = None
-          final_hash = None
+          full_raw_text = target_image = target_title = final_hash = None
 
           for link in article_links:
               url_hash = hashlib.md5(link.encode("utf-8")).hexdigest()
               if url_hash in memory:
-                  log(f"Already processed: {link}")
-                  continue
+                  log("Already processed: " + link); continue
               text, img, title = scrape_article(link)
               if text and len(text) >= MIN_ARTICLE_TEXT:
                   full_raw_text = text
                   target_image = img
                   target_title = title or "Entertainment News"
                   final_hash = url_hash
-                  log(f"Selected: {link}")
+                  log("Selected: " + link)
                   break
 
           if not full_raw_text:
-              log("No fresh valid article found")
-              raise SystemExit(0)
+              log("No fresh valid article found"); raise SystemExit(0)
 
-          title_prompt = (
-              "You are writing a Kenyan entertainment article headline.
+          title_prompt = "You are writing a Kenyan entertainment article headline.
 
-"
-              "SCRAPED ARTICLE TITLE:
+SCRAPED ARTICLE TITLE:
 " + target_title + "
 
-"
-              "SOURCE TEXT:
-" + full_raw_text[:3000] + "
+SOURCE TEXT:
+" + full_raw_text[:3000] + '
 
-"
-              "Rules:
-"
-              "- Generate exactly 3 short SEO-friendly title options under 60 characters.
-"
-              "- Front-load the main keyword.
-"
-              "- Make them feel natural, clickable, and newsy.
-"
-              '- Return JSON only: {"titles":["title 1","title 2","title 3"],"final_title":"best title here"}'
-          )
+Rules:
+- Generate exactly 3 short SEO-friendly title options under 60 characters.
+- Front-load the main keyword.
+- Make them feel natural, clickable, and newsy.
+- Return JSON only: {"titles":["title 1","title 2","title 3"],"final_title":"best title here"}'
 
           title_response = gemini_generate(title_prompt, label="title", json_mode=True)
           final_title = target_title
-
           if title_response:
               try:
                   data = json.loads(title_response)
                   candidate = clean_text(data.get("final_title", ""))
-                  if candidate:
-                      final_title = candidate
+                  if candidate: final_title = candidate
               except Exception as e:
-                  log(f"Title parse error: {e}")
+                  log("Title parse error: " + str(e))
 
           internal_links = get_internal_context()
           banned_str = ", ".join(BANNED_PHRASES)
 
-          article_prompt = (
-              "Current Date: " + full_date_str + "
+          article_prompt = "Current Date: " + full_date_str + "
 
-"
-              "TITLE:
+TITLE:
 " + final_title + "
 
-"
-              "SOURCE TEXT:
+SOURCE TEXT:
 " + full_raw_text[:12000] + "
 
-"
-              "INTERNAL LINKS TO WEAVE IN NATURALLY (use 1-2 if they fit):
+INTERNAL LINKS (use 1-2 naturally):
 " + internal_links + "
 
-"
-              "TASK:
-"
-              "Write a sharp, engaging entertainment article as Wanjiku Karanja for Za Ndani.
+TASK: Write a sharp engaging entertainment article as Wanjiku Karanja for Za Ndani.
 
-"
-              "STYLE RULES:
-"
-              "- Plugged-in Kenyan entertainment journalist voice.
-"
-              "- No Sheng.
-"
-              "- No em-dashes. Use only normal hyphens if needed.
-"
-              "- Do not include title, author line, or date in the body.
-"
-              "- Start with a ## H2 headline.
-"
-              "- Follow with a 35-45 word summary paragraph.
-"
-              "- Then use ### subheadings.
-"
-              "- Keep facts grounded in the source text.
-"
-              "- Do not invent quotes or details.
-"
-              "- Avoid cliches.
-"
-              "- Never use these phrases: " + banned_str
-          )
+STYLE RULES:
+- Plugged-in Kenyan entertainment journalist voice.
+- No Sheng.
+- No em-dashes. Normal hyphens only.
+- No title, author, or date in body.
+- Start with ## H2 headline.
+- 35-45 word summary paragraph.
+- Then ### subheadings.
+- Facts from source only.
+- No invented quotes.
+- Never use: " + banned_str
 
           article_text = gemini_generate(article_prompt, label="article")
           if not article_text:
-              log("Gemini failed to generate article")
-              raise SystemExit(1)
+              log("Gemini failed to generate article"); raise SystemExit(1)
 
-          article_text = re.sub(r"^```(?:markdown)?s*", "", article_text.strip(), flags=re.I)
-          article_text = re.sub(r"s*```$", "", article_text.strip())
-          article_text = article_text.replace("—", "-").replace("–", "-")
-          article_text = re.sub(
-              r"^(Title|By|Date)s*:s*.*?$", "", article_text, flags=re.I | re.M
-          ).strip()
+          article_text = re.sub(r'^```(?:markdown)?s*', '', article_text.strip(), flags=re.I)
+          article_text = re.sub(r's*```$', '', article_text.strip())
+          article_text = article_text.replace('—', '-').replace('–', '-')
+          article_text = re.sub(r'^(Title|By|Date)s*:s*.*?$', '', article_text, flags=re.I|re.M).strip()
 
-          slug = re.sub(r"[^a-z0-9]+", "-", final_title.lower()).strip("-")[:68]
-          if not slug:
-              slug = hashlib.md5(final_title.encode("utf-8")).hexdigest()[:12]
+          slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
+          if not slug: slug = hashlib.md5(final_title.encode("utf-8")).hexdigest()[:12]
 
           final_image = upload_to_imgbb(target_image) if target_image else ""
-
           posts_dir = os.environ.get("POSTS_DIR", "content/posts")
           os.makedirs(posts_dir, exist_ok=True)
 
-          final_file = textwrap.dedent(f"""\
-          ---
-          title: "{final_title.replace('"', "'")}"
-          slug: "{slug}"
-          author: "Wanjiku Karanja"
-          image: "{final_image}"
-          category: "Entertainment"
-          date: "{publish_timestamp}"
-          ---
-          {article_text}
-          """)
+          final_file = textwrap.dedent('---
+title: "' + final_title.replace('"', "'") + '"
+slug: "' + slug + '"
+author: "Wanjiku Karanja"
+image: "' + final_image + '"
+category: "Entertainment"
+date: "' + publish_timestamp + '"
+---
+' + article_text + '
+')
 
-          filepath = os.path.join(posts_dir, f"{today_str}-{slug}.md")
-          with open(filepath, "w", encoding="utf-8") as f:
-              f.write(final_file)
+          filepath = os.path.join(posts_dir, today_str + "-" + slug + ".md")
+          with open(filepath, "w", encoding="utf-8") as f: f.write(final_file)
 
           if final_hash:
               memory.append(final_hash)
               save_memory(memory_path, memory)
 
-          log(f"Saved: {filepath}")
+          log("Saved: " + filepath)
           ENDOFSCRIPT
           python /tmp/wanjiku.py
 
