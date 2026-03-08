@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Clock } from "lucide-react";
 import { Post } from "@/lib/markdown";
-import { Badge } from "@/components/ui/badge";
 
 interface ArticleCardProps {
   post: Post;
@@ -9,85 +8,75 @@ interface ArticleCardProps {
   priority?: boolean;
 }
 
-/**
- * HELPER: Formats external images into lightweight WebP via proxy.
- * Uses a simpler URL structure to avoid double-encoding issues.
- */
 function getOptimizedImageUrl(url: string, width: number = 800): string {
-  if (!url) return "";
-  // Bypass for local assets, SVGs, or already optimized data URIs
+  if (!url) return "/images/placeholder.jpg";
   if (url.startsWith('/') || url.endsWith('.svg') || url.includes('data:image')) return url;
-  
-  // Use the direct URL. wsrv.nl handles the encoding internally better than JS sometimes.
-  return `https://wsrv.nl/?url=${url}&w=${width}&output=webp&q=80&we`;
+  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${width}&output=webp&q=80&we`;
+}
+
+function catColor(cat: string): string {
+  const c = cat?.toLowerCase() || "";
+  if (c.includes("entertainment")) return "bg-rose-600";
+  if (c.includes("politics")) return "bg-blue-700";
+  if (c.includes("news")) return "bg-amber-600";
+  if (c.includes("gossip")) return "bg-purple-600";
+  if (c.includes("sports")) return "bg-green-700";
+  if (c.includes("tech")) return "bg-cyan-700";
+  return "bg-zinc-600";
+}
+
+function timeAgo(dateStr: string): string {
+  const diff = Date.now() - new Date(dateStr).getTime();
+  const h = Math.floor(diff / 3600000);
+  const d = Math.floor(h / 24);
+  if (h < 1) return "Just now";
+  if (h < 24) return `${h}h ago`;
+  if (d < 7) return `${d}d ago`;
+  return new Date(dateStr).toLocaleDateString("en-KE", { day: "numeric", month: "short" });
 }
 
 export function ArticleCard({ post, variant = "default", priority = false }: ArticleCardProps) {
-  const formattedDate = new Date(post.date).toLocaleDateString('en-KE', {
-    month: 'short',
-    day: 'numeric',
-    year: 'numeric'
-  });
-
   const isLCP = variant === "featured" || priority;
-  
-  // Prepare the optimized URLs
-  const optimizedMainImage = getOptimizedImageUrl(post.image, 800);
-  const optimizedAuthorImage = post.authorImage ? getOptimizedImageUrl(post.authorImage, 100) : "";
+  const optimizedMainImage = getOptimizedImageUrl(post.image, isLCP ? 1200 : 800);
 
-  /**
-   * FALLBACK HANDLER: If the proxy fails (403, 404, or Timeout), 
-   * this function forces the browser to load the original raw image URL.
-   */
-  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>, originalUrl: string) => {
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
     const target = e.currentTarget;
-    // Check to prevent infinite loops if the original URL is also broken
-    if (target.src !== originalUrl) {
-      console.warn("Proxy failed, falling back to original source for:", originalUrl);
-      target.src = originalUrl;
+    if (target.src !== post.image && post.image) {
+      target.src = post.image;
     }
   };
 
   if (variant === "featured") {
     return (
-      <article className="group relative rounded-2xl overflow-hidden bg-foreground text-background aspect-[16/10] md:aspect-[16/9]">
+      <article className="group relative overflow-hidden bg-zinc-950 aspect-[16/10] md:aspect-[16/9]">
         <img
           src={optimizedMainImage}
           alt={post.imageAlt}
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-70"
           loading={isLCP ? "eager" : "lazy"}
           fetchPriority={isLCP ? "high" : "auto"}
           decoding="async"
-          onError={(e) => handleImageError(e, post.image)}
+          width={1200}
+          height={675}
+          onError={handleImageError}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-foreground via-foreground/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
-          <Badge className="w-fit mb-3 gradient-primary text-primary-foreground border-0">
+          <span className={`w-fit text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-3 ${catColor(post.category)}`}>
             {post.category}
-          </Badge>
+          </span>
           <Link to={`/article/${post.slug}`}>
-            <h2 className="text-xl md:text-3xl lg:text-4xl font-serif font-bold mb-3 group-hover:text-primary transition-colors line-clamp-3">
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-serif font-bold mb-3 text-white group-hover:text-primary transition-colors line-clamp-3">
               {post.title}
             </h2>
           </Link>
-          <p className="text-background/80 mb-4 line-clamp-2 max-w-2xl">
+          <p className="text-zinc-300 mb-4 line-clamp-2 max-w-2xl text-sm">
             {post.excerpt}
           </p>
-          <div className="flex items-center gap-4 text-sm text-background/70">
-            <div className="flex items-center gap-2">
-              {post.authorImage && (
-                <img 
-                  src={optimizedAuthorImage} 
-                  alt={post.author} 
-                  className="w-8 h-8 rounded-full object-cover"
-                  loading="lazy"
-                  onError={(e) => handleImageError(e, post.authorImage || "")}
-                />
-              )}
-              <span>{post.author}</span>
-            </div>
-            <span>•</span>
-            <span>{formattedDate}</span>
+          <div className="flex items-center gap-4 text-sm text-zinc-500">
+            <span>{post.author}</span>
+            <span>·</span>
+            <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{timeAgo(post.date)}</span>
           </div>
         </div>
       </article>
@@ -98,30 +87,31 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
     return (
       <article className="group flex gap-4 md:gap-6">
         <Link to={`/article/${post.slug}`} className="flex-shrink-0 w-32 md:w-48">
-          <div className="aspect-[4/3] rounded-xl overflow-hidden">
+          <div className="aspect-[4/3] overflow-hidden bg-muted">
             <img
               src={optimizedMainImage}
               alt={post.imageAlt}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              loading={priority ? "eager" : "lazy"}
-              fetchPriority={priority ? "high" : "auto"}
+              loading="lazy"
               decoding="async"
-              onError={(e) => handleImageError(e, post.image)}
+              width={384}
+              height={288}
+              onError={handleImageError}
             />
           </div>
         </Link>
         <div className="flex flex-col justify-center min-w-0">
-          <Badge variant="secondary" className="w-fit mb-2 text-xs">
+          <span className={`w-fit text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-2 ${catColor(post.category)}`}>
             {post.category}
-          </Badge>
+          </span>
           <Link to={`/article/${post.slug}`}>
-            <h3 className="font-serif font-bold text-headline group-hover:text-primary transition-colors line-clamp-2 mb-2">
+            <h3 className="font-serif font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 mb-2">
               {post.title}
             </h3>
           </Link>
           <div className="flex items-center gap-2 text-xs text-muted-foreground">
-            <span>{formattedDate}</span>
-            <span>•</span>
+            <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{timeAgo(post.date)}</span>
+            <span>·</span>
             <span>{post.readTime} min</span>
           </div>
         </div>
@@ -132,18 +122,15 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
   if (variant === "compact") {
     return (
       <article className="group flex items-start gap-4 py-4 border-b border-divider last:border-0">
-        <span className="text-4xl font-serif font-bold text-muted-foreground/30 leading-none">
-          {String(Math.floor(Math.random() * 5) + 1).padStart(2, '0')}
-        </span>
         <div>
           <Link to={`/article/${post.slug}`}>
-            <h4 className="font-serif font-bold text-headline group-hover:text-primary transition-colors line-clamp-2 mb-1">
+            <h4 className="font-serif font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 mb-1">
               {post.title}
             </h4>
           </Link>
           <div className="flex items-center gap-2 text-xs text-muted-foreground">
             <span>{post.category}</span>
-            <span>•</span>
+            <span>·</span>
             <span>{post.readTime} min read</span>
           </div>
         </div>
@@ -151,11 +138,11 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
     );
   }
 
-  // Default Vertical Card
+  // Default Vertical Card — matches Index editorial style
   return (
     <article className="group">
       <Link to={`/article/${post.slug}`} className="block mb-4">
-        <div className="aspect-[16/10] rounded-xl overflow-hidden bg-muted">
+        <div className="aspect-[16/10] overflow-hidden bg-muted">
           <img
             src={optimizedMainImage}
             alt={post.imageAlt}
@@ -165,15 +152,15 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
             loading={priority ? "eager" : "lazy"}
             fetchPriority={priority ? "high" : "auto"}
             decoding="async"
-            onError={(e) => handleImageError(e, post.image)}
+            onError={handleImageError}
           />
         </div>
       </Link>
-      <Badge variant="secondary" className="mb-3">
+      <span className={`inline-block text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-3 ${catColor(post.category)}`}>
         {post.category}
-      </Badge>
+      </span>
       <Link to={`/article/${post.slug}`}>
-        <h3 className="font-serif font-bold text-lg text-headline group-hover:text-primary transition-colors line-clamp-2 mb-2">
+        <h3 className="font-serif font-bold text-lg text-foreground group-hover:text-primary transition-colors line-clamp-2 mb-2">
           {post.title}
         </h3>
       </Link>
@@ -181,18 +168,7 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
         {post.excerpt}
       </p>
       <div className="flex items-center justify-between text-xs text-muted-foreground">
-        <div className="flex items-center gap-2">
-          {post.authorImage && (
-            <img 
-              src={optimizedAuthorImage} 
-              alt={post.author} 
-              className="w-6 h-6 rounded-full object-cover"
-              loading="lazy"
-              onError={(e) => handleImageError(e, post.authorImage || "")}
-            />
-          )}
-          <span>{post.author}</span>
-        </div>
+        <span>{post.author}</span>
         <span className="flex items-center gap-1">
           <Clock className="w-3 h-3" />
           {post.readTime} min

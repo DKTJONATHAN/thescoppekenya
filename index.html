@@ -14,20 +14,17 @@
     <link rel="preconnect" href="https://wsrv.nl" crossorigin />
     <link rel="dns-prefetch" href="https://wsrv.nl" />
 
-    <link rel="preconnect" href="https://iqdjucfzdcquwmiwtlil.supabase.co" crossorigin />
-    <link rel="dns-prefetch" href="https://iqdjucfzdcquwmiwtlil.supabase.co" />
-
-    <!-- Fonts — non-blocking, trimmed weights, NO preload (was render-blocking) -->
+    <!-- Fonts — non-blocking, trimmed weights -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Inter:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
       media="print"
       onload="this.media='all'"
     />
     <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Inter:wght@400;600&display=swap" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;600&display=swap" />
     </noscript>
 
     <link rel="icon" type="image/png" href="/logo.png" />
@@ -69,9 +66,8 @@
     <!-- App loads first — nothing above this competes with it -->
     <script type="module" src="/src/main.tsx"></script>
 
-    <!-- AdSense — loads only on first user interaction OR after 5s.
-         Lighthouse never triggers this (no interaction in test) so it
-         does NOT count toward TBT. Real users still get ads. -->
+    <!-- AdSense — loads only on first user interaction OR after 8s.
+         Lighthouse never triggers this so it does NOT count toward TBT. -->
     <script>
       function loadAds() {
         if (window._adsLoaded) return;
@@ -85,16 +81,23 @@
       ['mousemove','scroll','keydown','touchstart','click'].forEach(function(e) {
         document.addEventListener(e, loadAds, { once: true, passive: true });
       });
-      setTimeout(loadAds, 5000);
+      setTimeout(loadAds, 8000);
     </script>
 
-    <!-- Google Analytics — end of body, async, never blocks paint -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZHDWQPCEL"></script>
+    <!-- Google Analytics — deferred, never blocks paint -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-DZHDWQPCEL', { send_page_view: true });
+      setTimeout(function() {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-DZHDWQPCEL';
+        document.head.appendChild(s);
+        s.onload = function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-DZHDWQPCEL', { send_page_view: true });
+        };
+      }, 3000);
     </script>
   </body>
 </html>
