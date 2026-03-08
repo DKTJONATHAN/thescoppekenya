@@ -18,10 +18,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with: { fetch-depth: 0, ref: '${{ env.DEFAULT_BRANCH }}', token: '${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}', persist-credentials: true }
+        with:
+          fetch-depth: 0
+          ref: '${{ env.DEFAULT_BRANCH }}'
+          token: '${{ secrets.PERSONAL_GITHUB_TOKEN }}'
+          persist-credentials: true
+
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with: { python-version: '3.11' }
+
       - name: Cache Playwright browsers
         uses: actions/cache@v4
         with:
@@ -29,6 +35,7 @@ jobs:
           key: ${{ runner.os }}-playwright-${{ hashFiles('**/playwright') }}
           restore-keys: |
             ${{ runner.os }}-playwright-
+
       - name: Install system dependencies and Python packages
         run: |
           sudo apt-get update -y
@@ -36,6 +43,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil
           playwright install chromium --with-deps
+
       - name: Generate article with Gemini
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
@@ -55,7 +63,7 @@ jobs:
           publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-flash", "gemini-2.0-flash"]
           MAX_AGE_HOURS = 24
           SITE_URL = "https://techweez.com/"
           SITE_DOMAIN = "techweez.com"
@@ -89,7 +97,7 @@ jobs:
                       browser.close()
               except Exception as e: print(f"Scan failed: {e}")
               def dk(u):
-                  m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', u)
+                  m = re.search(r'/(d{4})/(d{2})/(d{2})/', u)
                   return int(m.group(1)+m.group(2)+m.group(3)) if m else 19000101
               ul = sorted(list(urls), key=dk, reverse=True)
               print(f"Found {len(ul)} candidates."); [print(u) for u in ul[:8]]
@@ -113,21 +121,25 @@ jobs:
                           meta = soup.find('meta', property='article:published_time') or soup.find('meta', {'name':'date'})
                           if meta and meta.get('content'): pub_time = date_parser.parse(meta['content'])
                       if not pub_time:
-                          m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', url)
+                          m = re.search(r'/(d{4})/(d{2})/(d{2})/', url)
                           if m: pub_time = datetime.datetime(int(m.group(1)),int(m.group(2)),int(m.group(3)), tzinfo=datetime.timezone.utc)
                       if pub_time:
                           if pub_time.tzinfo is None: pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
                           age = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
                           if age > MAX_AGE_HOURS: return None, None, None
                       title = soup.title.string.strip() if soup.title else ""
-                      title = re.sub(r'\s*[-|\u2013]\s*Techweez.*', '', title, flags=re.I).strip()
+                      title = re.sub(r's*[-|–]s*Techweez.*', '', title, flags=re.I).strip()
                       article_text = ""
                       for sel in ['article','.article-body','.post-content','.entry-content','.content','main']:
                           cont = soup.select_one(sel)
                           if cont:
-                              article_text = "\n\n".join(p.get_text(strip=True) for p in cont.find_all('p') if len(p.get_text(strip=True)) > 40)
+                              article_text = "
+
+".join(p.get_text(strip=True) for p in cont.find_all('p') if len(p.get_text(strip=True)) > 40)
                               if len(article_text) > 400: break
-                      if len(article_text) < 400: article_text = "\n\n".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40)
+                      if len(article_text) < 400: article_text = "
+
+".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40)
                       img_url = ""
                       for tag in [soup.find('meta', property='og:image'), soup.find('meta', {'name':'twitter:image'})]:
                           if tag: img_url = tag.get('content', ''); break
@@ -140,10 +152,11 @@ jobs:
               for fn in sample:
                   try:
                       with open(os.path.join(pd, fn), "r", encoding="utf-8") as f: c = f.read()
-                      t = re.search(r'title:\s*"(.*?)"', c); s = re.search(r'slug:\s*"(.*?)"', c)
+                      t = re.search(r'title:s*"(.*?)"', c); s = re.search(r'slug:s*"(.*?)"', c)
                       if t and s: links.append(f'- [{t.group(1)}](https://zandani.co.ke/article/{s.group(1)})')
                   except: pass
-              return "\n".join(links) if links else ""
+              return "
+".join(links) if links else ""
           raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY","GEMINI_API_KEY","GEMINI_API_KEY1"] if os.environ.get(k)]
           if not raw_keys: sys.exit(1)
           key_cycle = itertools.cycle(raw_keys); current_key = next(key_cycle); client = genai.Client(api_key=current_key)
@@ -170,18 +183,32 @@ jobs:
               text, img, title = scrape_article(link)
               if text and len(text) > 400: full_raw_text, target_image, target_title, final_hash = text, img, title or "Kenya Tech", u_hash; break
           if not full_raw_text: sys.exit(0)
-          tp = f"""SCRAPED ARTICLE: {target_title}\nGenerate 3 SEO titles <60 chars. Pick best.\nOutput ONLY JSON: {{"final_title": "Title"}}"""
+          tp = f"""SCRAPED ARTICLE: {target_title}
+Generate 3 SEO titles <60 chars. Pick best.
+Output ONLY JSON: {{"final_title": "Title"}}"""
           tt = gemini_generate(tp, "title"); final_title = target_title
           if tt:
-              try: final_title = json.loads(re.sub(r"^```json?\n?|```$", "", tt, flags=re.I|re.DOTALL).strip()).get('final_title', target_title)
+              try: final_title = json.loads(re.sub(r"^```json?
+?|```$", "", tt, flags=re.I|re.DOTALL).strip()).get('final_title', target_title)
               except: pass
           current_key = next(key_cycle); client = genai.Client(api_key=current_key); time.sleep(5)
-          ap = f"""Current Date: {full_date_str}\nTITLE: {final_title}\nSOURCE TEXT: {full_raw_text[:9500]}\nINTERNAL LINKS: {get_internal_context()}\n\nTASK: Write a precise, analytical tech article as Elizabeth Muthoni for Za Ndani.\nFocus on Kenyan and African tech, startups, and innovation. Professional tone. No em-dashes. Single hyphens only.\nNo title/author/date in body. Start with ## H2. Then 35-45 word summary. Then ### subheadings.\nBANNED PHRASES: {", ".join(BANNED_PHRASES)}\nData-driven, innovation-focused. No cliches."""
+          ap = f"""Current Date: {full_date_str}
+TITLE: {final_title}
+SOURCE TEXT: {full_raw_text[:9500]}
+INTERNAL LINKS: {get_internal_context()}
+
+TASK: Write a precise, analytical tech article as Elizabeth Muthoni for Za Ndani.
+Focus on Kenyan and African tech, startups, and innovation. Professional tone. No em-dashes. Single hyphens only.
+No title/author/date in body. Start with ## H2. Then 35-45 word summary. Then ### subheadings.
+BANNED PHRASES: {", ".join(BANNED_PHRASES)}
+Data-driven, innovation-focused. No cliches."""
           at = gemini_generate(ap, "article", use_search=True)
           if not at: sys.exit(1)
-          at = re.sub(r"^```(?:markdown)?\n?", "", at).rstrip("```").strip()
-          at = re.sub(r"^(Title|By|Date):.*?\n", "", at, flags=re.I|re.M)
-          at = at.replace('\u2014', '-').replace('\u2013', '-')
+          at = re.sub(r"^```(?:markdown)?
+?", "", at).rstrip("```").strip()
+          at = re.sub(r"^(Title|By|Date):.*?
+", "", at, flags=re.I|re.M)
+          at = at.replace('—', '-').replace('–', '-')
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           fi = upload_to_imgbb(target_image) if target_image else ""
           pd = os.environ.get("POSTS_DIR", "content/posts"); os.makedirs(pd, exist_ok=True)
@@ -202,15 +229,23 @@ jobs:
           with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
           print(f"Saved: {fp}")
           EOF
+
+      - name: Debug written files
+        run: |
+          echo "=== Git Status ==="
+          git status
+          echo "=== Latest posts ==="
+          ls -lt content/posts/*.md 2>/dev/null | head -5 || echo "No MD files found"
+          echo "=== Memory entries ==="
+          cat .github/memory_elizabeth.json | python3 -c "import json,sys; d=json.load(sys.stdin); print(f'Memory entries: {len(d)}')" 2>/dev/null || echo "Memory file missing"
+
       - name: Git Safety Pull
         run: |
           git config --global user.name "Elizabeth Muthoni"
           git config --global user.email "bot@zandani.co.ke"
-          git add .
-          git stash -u
           git fetch origin main
-          git pull origin main --rebase
-          git stash pop || echo "Nothing to pop"
+          git pull origin main --rebase --autostash
+
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -218,3 +253,5 @@ jobs:
           commit_message: "content: Tech news by Elizabeth Muthoni 🚀"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_elizabeth.json'
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
