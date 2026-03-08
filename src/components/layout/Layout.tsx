@@ -8,33 +8,28 @@ interface LayoutProps {
 }
 
 export function Layout({ children }: LayoutProps) {
-  const [showTopAd, setShowTopAd] = useState(false);
+  const [showAds, setShowAds] = useState(false);
 
   useEffect(() => {
-    // Defer top ad so it doesn't block FCP/LCP
-    const id = requestAnimationFrame(() => setShowTopAd(true));
-    return () => cancelAnimationFrame(id);
+    // Defer ALL layout ads until after first paint + 2s
+    const t = setTimeout(() => setShowAds(true), 2000);
+    return () => clearTimeout(t);
   }, []);
 
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
 
-      {/* Global Top Ad: Deferred to avoid blocking initial paint */}
-      {showTopAd && (
-        <div className="w-full flex justify-center py-3 bg-muted/5 border-b border-border">
-          <AdUnit type="horizontal" />
-        </div>
-      )}
-
       <main className="flex-1">
         {children}
       </main>
 
-      {/* Global Bottom Ad: Horizontal banner above footer */}
-      <div className="w-full flex justify-center py-4 border-t border-border">
-        <AdUnit type="horizontal" />
-      </div>
+      {/* Bottom Ad: Deferred to avoid blocking paint */}
+      {showAds && (
+        <div className="w-full flex justify-center py-4 border-t border-border">
+          <AdUnit type="horizontal" />
+        </div>
+      )}
 
       <Footer />
     </div>
