@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo, lazy, Suspense } from "react";
+import React, { useEffect, useState, useMemo, lazy, Suspense, useCallback, useRef } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { getAllPosts } from "@/lib/markdown";
 import { Link } from "react-router-dom";
@@ -43,19 +43,28 @@ function catColor(cat: string): string {
   return "bg-zinc-600";
 }
 
+// ─── DATE HELPERS ─────────────────────────────────────────────────────────────
+function isToday(dateStr: string): boolean {
+  const postDate = new Date(dateStr);
+  const now = new Date();
+  return (
+    postDate.getFullYear() === now.getFullYear() &&
+    postDate.getMonth() === now.getMonth() &&
+    postDate.getDate() === now.getDate()
+  );
+}
+
+function isThisWeek(dateStr: string): boolean {
+  const diff = Date.now() - new Date(dateStr).getTime();
+  return diff < 7 * 24 * 3600 * 1000;
+}
+
 // ═════════════════════════════════════════════════════════════════════════════
 // PRISM ALGORITHM
-// Composite story-ranking in 5 weighted dimensions:
-//   P — Proximity (recency, exponential decay)    40%
-//   R — Reach (view velocity / engagement proxy)  25%
-//   I — Isolation (freshness relative to peers)   15%
-//   S — Slot diversity (category rotation)        10%
-//   M — Magnitude (editorial tier / story weight) 10%
 // ═════════════════════════════════════════════════════════════════════════════
 
-type Post = ReturnType<typeof getAllPosts>[0] & { views?: number };
+type Post = ReturnType<typeof getAllPosts>[0] & { views?: number; _stableViews?: number };
 
-/** Tier weights: higher = more editorially significant */
 const EDITORIAL_TIERS: Record<string, number> = {
   scandal:       1.0,
   exclusive:     0.95,
@@ -69,9 +78,8 @@ const EDITORIAL_TIERS: Record<string, number> = {
 };
 
 function editorialTier(post: Post): number {
-  const cat = post.category?.toLowerCase() || "";
+  const cat   = post.category?.toLowerCase() || "";
   const title = post.title?.toLowerCase() || "";
-  // Bump if title signals breaking/exclusive/scandal
   if (/breaking|exclusive|scandal|caught|exposed|arrested|cheating/.test(title)) return 1.0;
   for (const [key, val] of Object.entries(EDITORIAL_TIERS)) {
     if (cat.includes(key)) return val;
@@ -83,25 +91,25 @@ function prismScore(
   post: Post,
   nowMs: number,
   maxViews: number,
-  peerMsGap: number,       // ms gap to nearest same-day peer (isolation signal)
-  slotCategoryPenalty: number // 0–1 how much to penalise category repetition at this slot
+  peerMsGap: number,
+  slotCategoryPenalty: number
 ): number {
   const ageMs  = nowMs - new Date(post.date).getTime();
   const ageHrs = ageMs / 3_600_000;
 
-  // P — Proximity: exponential half-life of 6 hours; posts older than 48h decay sharply
+  // P — Proximity: 6hr half-life, but TODAY posts get a strong floor of 0.5
   const halfLife = 6;
-  const P = Math.exp(-Math.log(2) * ageHrs / halfLife);
+  const decayedP = Math.exp(-Math.log(2) * ageHrs / halfLife);
+  const P = isToday(post.date) ? Math.max(0.5, decayedP) : decayedP;
 
-  // R — Reach: view count normalised to top post; floor at 0.1 so zero-view posts aren't buried entirely
-  const views = post.views ?? 0;
+  // R — Reach: uses stable view count (no random), floor 0.1
+  const views = post._stableViews ?? 0;
   const R = maxViews > 0 ? Math.max(0.1, views / maxViews) : 0.1;
 
-  // I — Isolation: how much breathing room this post has from same-day competitors
-  // peerMsGap is ms to nearest published peer; wider gap = more isolated = higher score
-  const I = Math.min(1, peerMsGap / (4 * 3_600_000)); // saturates at 4h gap
+  // I — Isolation: breathing room from same-day peers
+  const I = Math.min(1, peerMsGap / (4 * 3_600_000));
 
-  // S — Slot diversity: penalty when same category appeared recently in rendered list
+  // S — Slot diversity
   const S = 1 - slotCategoryPenalty;
 
   // M — Magnitude: editorial significance
@@ -110,7 +118,6 @@ function prismScore(
   return (P * 0.40) + (R * 0.25) + (I * 0.15) + (S * 0.10) + (M * 0.10);
 }
 
-/** Build isolation gaps: for each post, find the ms distance to its nearest publish-time peer */
 function buildIsolationMap(posts: Post[]): Map<string, number> {
   const times = posts.map(p => ({ slug: p.slug, ms: new Date(p.date).getTime() }));
   times.sort((a, b) => a.ms - b.ms);
@@ -123,20 +130,13 @@ function buildIsolationMap(posts: Post[]): Map<string, number> {
   return gapMap;
 }
 
-/**
- * PRISM Feed Builder
- * Returns posts sorted by PRISM score with per-slot category diversity pressure.
- * The rendered order is determined iteratively: after placing each post, the
- * category penalty for the next slot is updated based on what was just placed.
- */
 function buildPrismFeed(posts: Post[]): Post[] {
   if (!posts.length) return [];
 
-  const nowMs     = Date.now();
-  const maxViews  = Math.max(...posts.map(p => p.views ?? 0), 1);
-  const isoMap    = buildIsolationMap(posts);
+  const nowMs    = Date.now();
+  const maxViews = Math.max(...posts.map(p => p._stableViews ?? 0), 1);
+  const isoMap   = buildIsolationMap(posts);
 
-  // Category window: track last N slots each category occupied
   const DIVERSITY_WINDOW = 4;
   const recentCats: string[] = [];
 
@@ -144,9 +144,7 @@ function buildPrismFeed(posts: Post[]): Post[] {
     const c = cat?.toLowerCase() || "other";
     const recency = recentCats.lastIndexOf(c);
     if (recency === -1) return 0;
-    // How many slots ago was this category last seen?
     const slotsAgo = recentCats.length - recency;
-    // Penalty decays linearly: full penalty at 1 slot ago, zero at DIVERSITY_WINDOW
     return Math.max(0, 1 - slotsAgo / DIVERSITY_WINDOW);
   }
 
@@ -154,10 +152,9 @@ function buildPrismFeed(posts: Post[]): Post[] {
   const result: Post[] = [];
 
   while (remaining.length > 0) {
-    // Score all remaining posts for this slot
     let best: { post: Post; score: number; idx: number } | null = null;
     for (let i = 0; i < remaining.length; i++) {
-      const p = remaining[i];
+      const p       = remaining[i];
       const gap     = isoMap.get(p.slug) ?? 3_600_000;
       const penalty = getCatPenalty(p.category ?? "other");
       const score   = prismScore(p, nowMs, maxViews, gap, penalty);
@@ -174,12 +171,6 @@ function buildPrismFeed(posts: Post[]): Post[] {
   return result;
 }
 
-/**
- * Hero selector: pick the 3 best stories for hero placement.
- * Slot 1 (lead):  highest PRISM score unconditionally.
- * Slot 2 & 3:     next highest from categories DIFFERENT to slot 1 and each other.
- * This prevents the hero being 3 entertainment posts in a row.
- */
 function selectHero(feed: Post[]): { lead: Post; secondary: Post[] } {
   if (!feed.length) return { lead: feed[0], secondary: [] };
 
@@ -196,7 +187,6 @@ function selectHero(feed: Post[]): { lead: Post; secondary: Post[] } {
     }
   }
 
-  // Fallback: if not enough diverse categories, allow repeats
   if (secondary.length < 2) {
     for (const p of feed.slice(1)) {
       if (secondary.length >= 2) break;
@@ -207,8 +197,19 @@ function selectHero(feed: Post[]): { lead: Post; secondary: Post[] } {
   return { lead, secondary };
 }
 
+// ─── STABLE FAKE VIEWS: deterministic hash so it never changes ───────────────
+// This replaces Math.random() which was breaking memoization on every render
+function stableFakeViews(slug: string): number {
+  let hash = 0;
+  for (let i = 0; i < slug.length; i++) {
+    hash = ((hash << 5) - hash) + slug.charCodeAt(i);
+    hash |= 0;
+  }
+  return 20 + (Math.abs(hash) % 80);
+}
+
 // ─── COMPACT CARD ─────────────────────────────────────────────────────────────
-const CompactCard = ({ post }: { post: Post }) => (
+const CompactCard = React.memo(({ post }: { post: Post }) => (
   <Link to={`/article/${post.slug}`} className="group flex gap-3 items-start">
     <div className="relative w-20 h-20 flex-shrink-0 overflow-hidden bg-zinc-800">
       <img src={img(post.image, 160)} alt={post.title} loading="lazy"
@@ -226,37 +227,54 @@ const CompactCard = ({ post }: { post: Post }) => (
       </span>
     </div>
   </Link>
-);
-
-// ─── PRISM SCORE BADGE (dev/debug overlay — remove in prod) ──────────────────
-// Set SHOW_SCORES=true during dev to see the score on each card
-const SHOW_SCORES = false;
-const ScoreBadge = ({ score }: { score?: number }) =>
-  SHOW_SCORES && score != null ? (
-    <span className="absolute top-1 right-1 bg-black/80 text-green-400 text-[9px] font-mono px-1 rounded z-50">
-      {score.toFixed(3)}
-    </span>
-  ) : null;
+));
 
 // ─── AUTHORS ──────────────────────────────────────────────────────────────────
 const AUTHORS = [
-  { name: "Jonathan Mwaniki",  role: "Editor-in-Chief",       avatar: "JM", color: "bg-zinc-800",   bio: "Content creator and journalist passionate about digital storytelling and Kenyan trends." },
-  { name: "Celestine Nzioka",  role: "Politics & News Editor", avatar: "CN", color: "bg-blue-700",   bio: "Authoritative and unflinching. Celestine cuts through political spin to give you the real story." },
-  { name: "Mutheu Ann",        role: "Entertainment Lead",     avatar: "MA", color: "bg-purple-600", bio: "Plugged into the celebrity circuit. If a star breathes wrong, Mutheu Ann notices first." },
-  { name: "Martin Mutwiri",    role: "Sports Desk",            avatar: "MM", color: "bg-green-700",  bio: "Deep dive analyst into local football and global athletic championships." },
-  { name: "Grace Mkamburi",    role: "Lifestyle & Culture",    avatar: "GM", color: "bg-rose-500",   bio: "Exploring the vibrant pulse of Kenyan lifestyle, fashion, and social evolution." },
-  { name: "Timothy Muli",      role: "Tech Correspondent",     avatar: "TM", color: "bg-cyan-700",   bio: "Unpacking the digital revolution and how technology is reshaping Nairobi's landscape." },
-  { name: "Za Ndani",          role: "Gossip & Exclusives",    avatar: "ZN", color: "bg-amber-600",  bio: "Sharp, cynical, and always first with the scoop. The voice behind the exclusive tea." },
-  { name: "Wanjiku Karanja",   role: "Entertainment Reporter", avatar: "WK", color: "bg-rose-700",   bio: "First on the scene, last to leave. Wanjiku lives at the intersection of pop culture and breaking news." },
+  { name: "Jonathan Mwaniki",  role: "Editor-in-Chief",        avatar: "JM", color: "bg-zinc-800",   bio: "Content creator and journalist passionate about digital storytelling and Kenyan trends." },
+  { name: "Celestine Nzioka",  role: "Politics & News Editor",  avatar: "CN", color: "bg-blue-700",   bio: "Authoritative and unflinching. Celestine cuts through political spin to give you the real story." },
+  { name: "Mutheu Ann",        role: "Entertainment Lead",      avatar: "MA", color: "bg-purple-600", bio: "Plugged into the celebrity circuit. If a star breathes wrong, Mutheu Ann notices first." },
+  { name: "Martin Mutwiri",    role: "Sports Desk",             avatar: "MM", color: "bg-green-700",  bio: "Deep dive analyst into local football and global athletic championships." },
+  { name: "Grace Mkamburi",    role: "Lifestyle & Culture",     avatar: "GM", color: "bg-rose-500",   bio: "Exploring the vibrant pulse of Kenyan lifestyle, fashion, and social evolution." },
+  { name: "Timothy Muli",      role: "Tech Correspondent",      avatar: "TM", color: "bg-cyan-700",   bio: "Unpacking the digital revolution and how technology is reshaping Nairobi's landscape." },
+  { name: "Za Ndani",          role: "Gossip & Exclusives",     avatar: "ZN", color: "bg-amber-600",  bio: "Sharp, cynical, and always first with the scoop. The voice behind the exclusive tea." },
+  { name: "Wanjiku Karanja",   role: "Entertainment Reporter",  avatar: "WK", color: "bg-rose-700",   bio: "First on the scene, last to leave. Wanjiku lives at the intersection of pop culture and breaking news." },
 ];
+
+// ─── TODAY SECTION HEADER ─────────────────────────────────────────────────────
+const TodaySectionHeader = () => (
+  <div className="flex items-center gap-3 mb-6">
+    <span className="flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-rose-500">
+      <Flame className="w-4 h-4" /> Today
+    </span>
+    <div className="h-px flex-1 bg-divider" />
+    <span className="text-[10px] text-muted-foreground uppercase tracking-wider font-bold">
+      {new Date().toLocaleDateString("en-KE", { weekday: "long", day: "numeric", month: "long" })}
+    </span>
+  </div>
+);
+
+const OlderSectionHeader = () => (
+  <div className="flex items-center gap-3 mt-10 mb-6">
+    <span className="flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-zinc-400">
+      <Clock className="w-4 h-4" /> Older Stories
+    </span>
+    <div className="h-px flex-1 bg-divider" />
+  </div>
+);
 
 // ═════════════════════════════════════════════════════════════════════════════
 // INDEX PAGE
 // ═════════════════════════════════════════════════════════════════════════════
+
+// Posts are loaded ONCE outside the component — never re-runs on re-render
+const RAW_POSTS = getAllPosts();
+
 const Index = () => {
   const [visibleCount, setVisibleCount]     = useState(INITIAL_LOAD);
   const [viewCounts, setViewCounts]         = useState<Record<string, number>>({});
   const [activeCategory, setActiveCategory] = useState<string>("all");
+  const loaderRef                           = useRef<HTMLDivElement>(null);
 
   // Fetch views deferred — never blocks first paint
   useEffect(() => {
@@ -265,26 +283,29 @@ const Index = () => {
         const res = await fetch("/api/get-views");
         if (res.ok) setViewCounts(await res.json());
       } catch {}
-    }, 1000);
+    }, 1500);
     return () => clearTimeout(t);
   }, []);
 
-  const rawPosts = useMemo(() => getAllPosts(), []);
-
-  // Attach view counts (with randomised fallback for zero-view posts)
+  // ── Attach STABLE view counts (no Math.random in render path!) ──
+  // stableFakeViews is deterministic — same slug always returns same number
+  // so this memoization is actually stable unlike the original
   const postsWithViews: Post[] = useMemo(() =>
-    rawPosts.map(post => {
+    RAW_POSTS.map(post => {
       const clean = post.slug.replace(/^\//, "").replace(/\.md$/, "");
-      const v = viewCounts[`/article/${clean}`] || 0;
-      return { ...post, views: v > 0 ? v : Math.floor(Math.random() * 80) + 20 };
+      const real  = viewCounts[`/article/${clean}`] || 0;
+      // _stableViews: real views if we have them, else deterministic fake — NO Math.random()
+      const _stableViews = real > 0 ? real : stableFakeViews(post.slug);
+      return { ...post, views: _stableViews, _stableViews };
     }),
-    [rawPosts, viewCounts]
+    // Only re-runs when real view counts arrive — NOT on every render
+    [viewCounts]
   );
 
-  // ── PRISM-ranked feed ──
+  // ── PRISM feed — only recalcs when postsWithViews changes ──
   const prismFeed = useMemo(() => buildPrismFeed(postsWithViews), [postsWithViews]);
 
-  // ── Hero selection (diverse categories) ──
+  // ── Hero ──
   const { lead: heroLead, secondary: heroSecondary } = useMemo(
     () => selectHero(prismFeed),
     [prismFeed]
@@ -295,7 +316,7 @@ const Index = () => {
     [heroLead, heroSecondary]
   );
 
-  // ── Latest strip: 5 most recently PUBLISHED (raw date order, not PRISM) ──
+  // ── Latest strip: 5 most recently published ──
   const latestStrip = useMemo(() =>
     [...postsWithViews]
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
@@ -303,7 +324,7 @@ const Index = () => {
     [postsWithViews]
   );
 
-  // ── Author latest (from PRISM feed so most-relevant post surfaces) ──
+  // ── Author posts ──
   const authorPosts = useMemo(() =>
     AUTHORS.map(author => ({
       ...author,
@@ -319,40 +340,90 @@ const Index = () => {
     return base.filter(p => p.category?.toLowerCase() === activeCategory);
   }, [prismFeed, heroSlugs, activeCategory]);
 
-  const displayedFeed = feedSource.slice(0, visibleCount);
-  const hasMore       = visibleCount < feedSource.length;
+  // ── Split feed into TODAY and OLDER ──
+  const { todayPosts, olderPosts } = useMemo(() => {
+    const todayPosts  = feedSource.filter(p => isToday(p.date));
+    const olderPosts  = feedSource.filter(p => !isToday(p.date));
+    return { todayPosts, olderPosts };
+  }, [feedSource]);
 
-  // ── Most read: top 6 by view count ──
+  // visibleCount only applies to olderPosts (today's always shown fully)
+  const displayedOlder = olderPosts.slice(0, visibleCount);
+  const hasMore        = visibleCount < olderPosts.length;
+
+  // ── Infinite scroll via IntersectionObserver ──
+  useEffect(() => {
+    if (!loaderRef.current || !hasMore) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) setVisibleCount(prev => prev + LOAD_MORE_COUNT); },
+      { rootMargin: "400px" }
+    );
+    obs.observe(loaderRef.current);
+    return () => obs.disconnect();
+  }, [hasMore]);
+
+  // ── Most read ──
   const mostRead = useMemo(() =>
-    [...postsWithViews].sort((a, b) => (b.views ?? 0) - (a.views ?? 0)).slice(0, 6),
+    [...postsWithViews].sort((a, b) => (b._stableViews ?? 0) - (a._stableViews ?? 0)).slice(0, 6),
     [postsWithViews]
   );
 
-  // ── Politics/News sidebar: PRISM-ranked within those categories ──
+  // ── Politics/News sidebar ──
   const politicsPosts = useMemo(() =>
     prismFeed.filter(p => ["news", "politics"].includes(p.category?.toLowerCase())).slice(0, 4),
     [prismFeed]
   );
 
-  // ── Feed chunks: 1 wide + up to 3 compact, ad every 2nd chunk ──
-  const feedChunks = useMemo(() => {
+  // ── Feed chunk builder ──
+  const buildChunks = useCallback((posts: Post[]) => {
     const chunks: { feature: Post; compacts: Post[]; adAfter: boolean }[] = [];
-    for (let i = 0; i < displayedFeed.length; i += 4) {
+    for (let i = 0; i < posts.length; i += 4) {
       chunks.push({
-        feature:  displayedFeed[i],
-        compacts: displayedFeed.slice(i + 1, i + 4),
+        feature:  posts[i],
+        compacts: posts.slice(i + 1, i + 4),
         adAfter:  (chunks.length + 1) % 2 === 0,
       });
     }
     return chunks;
-  }, [displayedFeed]);
+  }, []);
+
+  const todayChunks = useMemo(() => buildChunks(todayPosts),   [todayPosts, buildChunks]);
+  const olderChunks = useMemo(() => buildChunks(displayedOlder), [displayedOlder, buildChunks]);
 
   const categories = useMemo(() => {
-    const cats = Array.from(new Set(rawPosts.map(p => p.category?.toLowerCase()).filter(Boolean)));
+    const cats = Array.from(new Set(RAW_POSTS.map(p => p.category?.toLowerCase()).filter(Boolean)));
     return ["all", ...cats];
-  }, [rawPosts]);
+  }, []);
 
   const optimizedHeroImage = heroLead?.image ? img(heroLead.image, 1400) : "/images/placeholder.jpg";
+
+  const FeedChunks = useCallback(({ chunks }: { chunks: ReturnType<typeof buildChunks> }) => (
+    <div className="space-y-10">
+      {chunks.map((chunk, ci) => (
+        <div key={chunk.feature?.slug ?? ci} className="space-y-6">
+          {chunk.feature && (
+            <div className="border-b border-divider pb-6">
+              <Suspense fallback={<div className="h-64 bg-zinc-900 animate-pulse rounded" />}>
+                <ArticleCard post={chunk.feature} priority={ci === 0} />
+              </Suspense>
+            </div>
+          )}
+          {chunk.compacts.length > 0 && (
+            <div className="grid sm:grid-cols-3 gap-5">
+              {chunk.compacts.map(post => (
+                <CompactCard key={post.slug} post={post} />
+              ))}
+            </div>
+          )}
+          {chunk.adAfter && (
+            <div className="py-4 border-y border-divider/50" style={{ minHeight: 120 }}>
+              <AdUnit type="inarticle" />
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  ), []);
 
   return (
     <Layout>
@@ -395,7 +466,6 @@ const Index = () => {
                       <span className={`text-[10px] font-black tracking-[0.2em] uppercase text-white px-2 py-1 ${catColor(heroLead.category)}`}>
                         {heroLead.category}
                       </span>
-                      {/* PRISM badge: Top Story indicator driven by algo, not manual curation */}
                       <span className="flex items-center gap-1 text-zinc-400 text-xs">
                         <Flame className="w-3 h-3 text-rose-500" /> Top Story
                       </span>
@@ -406,14 +476,14 @@ const Index = () => {
                     <p className="text-zinc-300 text-sm line-clamp-2 font-light">{heroLead.excerpt}</p>
                     <div className="flex items-center gap-4 text-zinc-500 text-xs pt-1">
                       <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{timeAgo(heroLead.date)}</span>
-                      <span className="flex items-center gap-1"><Eye className="w-3 h-3" />{heroLead.views?.toLocaleString()} views</span>
+                      <span className="flex items-center gap-1"><Eye className="w-3 h-3" />{heroLead._stableViews?.toLocaleString()} views</span>
                       <span className="text-zinc-600">By {heroLead.author}</span>
                     </div>
                   </div>
                 </div>
               </Link>
 
-              {/* Two secondary stories — guaranteed different categories from lead */}
+              {/* Two secondary stories */}
               <div className="lg:col-span-5 flex flex-col gap-1">
                 {heroSecondary.map(post => (
                   <Link key={post.slug} to={`/article/${post.slug}`}
@@ -508,43 +578,37 @@ const Index = () => {
                 </span>
               </div>
 
-              {/* Feed chunks */}
-              <div className="space-y-10">
-                {feedChunks.map((chunk, ci) => (
-                  <div key={ci} className="space-y-6">
-                    {chunk.feature && (
-                      <div className="border-b border-divider pb-6 relative">
-                        <Suspense fallback={<div className="h-64 bg-zinc-900 animate-pulse" />}>
-                          <ArticleCard post={chunk.feature} priority={ci === 0} />
-                        </Suspense>
-                      </div>
-                    )}
-                    {chunk.compacts.length > 0 && (
-                      <div className="grid sm:grid-cols-3 gap-5">
-                        {chunk.compacts.map(post => (
-                          <CompactCard key={post.slug} post={post} />
-                        ))}
-                      </div>
-                    )}
-                    {chunk.adAfter && (
-                      <div className="py-4 border-y border-divider/50" style={{ minHeight: 120 }}>
-                        <AdUnit type="inarticle" />
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-
-              {hasMore && (
-                <div className="pt-8 flex justify-center">
-                  <Button onClick={() => setVisibleCount(prev => prev + LOAD_MORE_COUNT)}
-                    variant="outline"
-                    className="group font-black uppercase tracking-widest text-xs px-10 py-6 border-2">
-                    Load More Stories
-                    <ChevronDown className="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform" />
-                  </Button>
+              {/* ── TODAY'S POSTS ── */}
+              {todayChunks.length > 0 && (
+                <div>
+                  <TodaySectionHeader />
+                  <FeedChunks chunks={todayChunks} />
                 </div>
               )}
+
+              {/* ── OLDER POSTS ── */}
+              {olderChunks.length > 0 && (
+                <div>
+                  {todayChunks.length > 0 && <OlderSectionHeader />}
+                  <FeedChunks chunks={olderChunks} />
+                </div>
+              )}
+
+              {/* Infinite scroll sentinel */}
+              <div ref={loaderRef} className="py-4 flex justify-center">
+                {hasMore ? (
+                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                    <div className="w-4 h-4 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+                    Loading more stories…
+                  </div>
+                ) : (
+                  feedSource.length > 0 && (
+                    <span className="text-xs text-muted-foreground font-bold uppercase tracking-widest">
+                      · All stories loaded ·
+                    </span>
+                  )
+                )}
+              </div>
             </main>
 
             {/* ── SIDEBAR ── */}
@@ -575,7 +639,7 @@ const Index = () => {
                 <AdUnit type="effectivegate" />
               </div>
 
-              {/* Politics/News — PRISM-ranked */}
+              {/* Politics/News */}
               <div className="bg-zinc-950 p-6 border border-zinc-800">
                 <h3 className="text-sm font-black uppercase tracking-widest mb-6 flex items-center gap-2">
                   <span className="w-2 h-2 bg-blue-600 rounded-full" /> Politics & News
