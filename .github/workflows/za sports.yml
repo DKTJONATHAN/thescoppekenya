@@ -80,6 +80,7 @@ jobs:
           import os, json, datetime, requests, re, time, sys, hashlib, random, textwrap, itertools, base64
           from dateutil import parser as date_parser
           from google import genai
+          from google.genai import types
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
 
@@ -192,7 +193,6 @@ jobs:
                       content = page.content()
                       soup = BeautifulSoup(content, "html.parser")
 
-                      # --- FRESHNESS CHECK ---
                       pub_time = None
                       meta_pub = soup.find('meta', property='article:published_time')
                       if meta_pub:
@@ -214,13 +214,11 @@ jobs:
                       else:
                           print("   ⚠️ No exact timestamp found. Proceeding cautiously.")
 
-                      # --- TITLE EXTRACTION ---
                       page_title = ""
                       title_tag = soup.find('title')
                       if title_tag:
                           page_title = title_tag.get_text().replace(' - MozzartSport.co.ke', '').replace(' | MozzartSport', '').replace(' - MozzartSport', '').strip()
 
-                      # --- CONTENT EXTRACTION ---
                       article_text = ""
                       containers = soup.select('article, main, .article-content, .article-body, .post__content, .entry-content, .content-body')
                       for c in containers:
@@ -242,7 +240,6 @@ jobs:
                               lines = [line.strip() for line in body.get_text(separator='\n').split('\n') if len(line.strip()) > 50]
                               article_text = "\n\n".join(lines)
 
-                      # --- LOGO-PROOF IMAGE EXTRACTION ---
                       img_url = ""
                       
                       lead_img = soup.select_one('article img, .post-content img, .entry-content img, picture img')
@@ -327,7 +324,8 @@ jobs:
 
           key_cycle = itertools.cycle(api_keys)
           current_key = next(key_cycle)
-          genai.configure(api_key=current_key)
+
+          client = genai.Client(api_key=current_key)
 
           internal_links_data = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
 
@@ -366,22 +364,34 @@ jobs:
           full_text = ""
           success_flag = False
           
+          generation_config = types.GenerationConfig(temperature=0.7)
+          safety_settings = [
+              types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+              types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+              types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+              types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+          ]
+
           for model_id in MODELS_TO_TRY:
-              for retry in range(len(api_keys) * 2):
+              for retry in range(len(api_keys) * 3):
                   try:
-                      model = genai.GenerativeModel(model_id)
-                      response = model.generate_content(prompt)
+                      response = client.models.generate_content(
+                          model=model_id,
+                          contents=prompt,
+                          generation_config=generation_config,
+                          safety_settings=safety_settings
+                      )
                       full_text = response.text.strip()
                       success_flag = True
                       print(f"✅ SUCCESS with {model_id}!")
                       break 
                   except Exception as e:
                       error_str = str(e).lower()
-                      if "429" in error_str or "quota" in error_str or "rate" in error_str:
-                          print("⚠️ Quota/rate limit hit. Rotating to next API key and waiting...")
+                      if "429" in error_str or "quota" in error_str or "rate" in error_str or "limit" in error_str:
+                          print(f"⚠️ Rate/quota limit on {model_id}. Rotating key and waiting 30s...")
                           current_key = next(key_cycle)
-                          genai.configure(api_key=current_key)
-                          time.sleep(20)
+                          client = genai.Client(api_key=current_key)
+                          time.sleep(30)
                           continue
                       print(f"⚠️ Error with {model_id}: {e}")
                       break
