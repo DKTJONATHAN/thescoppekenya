@@ -27,7 +27,6 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ env.DEFAULT_BRANCH }}
-          token: ${{ secrets.PERSONAL_GITHUB_TOKEN != '' && secrets.PERSONAL_GITHUB_TOKEN || github.token }}
           persist-credentials: true
 
       - name: Set up Python 3.11
@@ -219,7 +218,11 @@ jobs:
                       seen.add(full_url)
                       urls.append(full_url)
 
-              regex_hits = re.findall(r'https?://(?:www.)?ghafla.co.ke/ke/[a-z0-9][a-z0-9-]+/?', html, flags=re.I)
+              regex_hits = re.findall(
+                  r'https?://(?:www.)?ghafla.co.ke/ke/[a-z0-9][a-z0-9-]+/?',
+                  html,
+                  flags=re.I
+              )
               for hit in regex_hits:
                   full_url = normalize_url(hit, base_url)
                   if is_article_url(full_url) and full_url not in seen:
@@ -417,7 +420,10 @@ jobs:
                   if pub_time:
                       if pub_time.tzinfo is None:
                           pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
-                      age_hours = (datetime.datetime.now(datetime.timezone.utc) - pub_time.astimezone(datetime.timezone.utc)).total_seconds() / 3600
+                      age_hours = (
+                          datetime.datetime.now(datetime.timezone.utc)
+                          - pub_time.astimezone(datetime.timezone.utc)
+                      ).total_seconds() / 3600
                       log(f"Published: {pub_time.isoformat()} | Age: {age_hours:.1f}h")
                       if age_hours > MAX_AGE_HOURS:
                           log("Skipped: article too old")
@@ -462,7 +468,9 @@ jobs:
                       title_m = re.search(r'title:s*"(.*?)"', content)
                       slug_m = re.search(r'slug:s*"(.*?)"', content)
                       if title_m and slug_m:
-                          links.append(f'- [{title_m.group(1)}](https://zandani.co.ke/article/{slug_m.group(1)})')
+                          links.append(
+                              f'- [{title_m.group(1)}](https://zandani.co.ke/article/{slug_m.group(1)})'
+                          )
                   except Exception:
                       continue
 
@@ -482,12 +490,18 @@ jobs:
 
 
           def save_memory(path, memory):
-              os.makedirs(os.path.dirname(path), exist_ok=True)
+              directory = os.path.dirname(path)
+              if directory:
+                  os.makedirs(directory, exist_ok=True)
               with open(path, "w", encoding="utf-8") as f:
                   json.dump(memory[-500:], f)
 
 
-          raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY1"] if os.environ.get(k)]
+          raw_keys = [
+              os.environ.get(k)
+              for k in ["GEMINI_WRITE_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY1"]
+              if os.environ.get(k)
+          ]
           if not raw_keys:
               log("No Gemini keys found")
               raise SystemExit(1)
@@ -514,6 +528,7 @@ jobs:
                               config = types.GenerateContentConfig(
                                   response_mime_type="application/json"
                               )
+
                           resp = client.models.generate_content(
                               model=model,
                               contents=prompt,
@@ -523,6 +538,7 @@ jobs:
                           if text:
                               log(f"Gemini OK | model={model} | label={label}")
                               return text
+
                       except Exception as e:
                           msg = str(e).lower()
                           log(f"Gemini error | model={model} | attempt={attempt} | label={label} | {e}")
@@ -531,6 +547,7 @@ jobs:
                               rotate_key()
                               continue
                           break
+
               return None
 
 
@@ -635,7 +652,12 @@ jobs:
           article_text = re.sub(r"^```(?:markdown)?s*", "", article_text.strip(), flags=re.I)
           article_text = re.sub(r"s*```$", "", article_text.strip())
           article_text = article_text.replace("—", "-").replace("–", "-")
-          article_text = re.sub(r"^(Title|By|Date)s*:s*.*?$", "", article_text, flags=re.I | re.M).strip()
+          article_text = re.sub(
+              r"^(Title|By|Date)s*:s*.*?$",
+              "",
+              article_text,
+              flags=re.I | re.M
+          ).strip()
 
           slug = re.sub(r"[^a-z0-9]+", "-", final_title.lower()).strip("-")[:68]
           if not slug:
@@ -669,20 +691,19 @@ jobs:
           log(f"Saved: {filepath}")
           PY
 
-      - name: Git Safety Pull
+      - name: Configure git
         run: |
-          git config --global user.name "Wanjiku Karanja"
-          git config --global user.email "bot@zandani.co.ke"
-          git add -A
-          git stash push --include-untracked -m "pre-rebase-wanjiku" || true
-          git fetch origin ${{ env.DEFAULT_BRANCH }}
-          git pull --rebase origin ${{ env.DEFAULT_BRANCH }}
-          git stash pop || echo "Nothing to pop"
+          git config user.name "Wanjiku Karanja"
+          git config user.email "bot@zandani.co.ke"
 
       - name: Commit and push
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_author: "Wanjiku Karanja <bot@zandani.co.ke>"
-          commit_message: "content: Ghafla entertainment by Wanjiku Karanja 🎬"
-          branch: ${{ env.DEFAULT_BRANCH }}
-          file_pattern: "content/posts/*.md .github/memory_wanjiku.json"
+        run: |
+          git add content/posts .github/memory_wanjiku.json || true
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "content: Ghafla entertainment by Wanjiku Karanja 🎬"
+          git push origin "${DEFAULT_BRANCH}"
