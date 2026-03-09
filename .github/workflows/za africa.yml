@@ -104,7 +104,6 @@ jobs:
               "in today's digital age", "tapestry"
           ]
 
-          # Paths to exclude when collecting article URLs
           EXCLUDED_PATHS = [
               '/author/', '/tag/', '/page/', '/feed/', '/comment-', '/category/',
               '/about', '/contact', '/terms', '/privacy', '/advertise', '/subscribe',
@@ -113,7 +112,6 @@ jobs:
               '/cookie', '/help', '/support', '/write-for-us', '/correction'
           ]
 
-          # Image URL fragments that indicate a logo/icon rather than article image
           BAD_IMAGE_FRAGMENTS = [
               'logo', 'default', 'placeholder', 'icon', 'avatar',
               'favicon', 'sprite', 'blank', 'pixel', 'badge', 'watermark'
@@ -137,7 +135,6 @@ jobs:
                   return image_url
 
           def is_bad_image(url):
-              """Returns True if the image URL looks like a logo, icon, or placeholder."""
               if not url: return True
               url_lower = url.lower()
               return any(frag in url_lower for frag in BAD_IMAGE_FRAGMENTS)
@@ -163,8 +160,6 @@ jobs:
                           if SITE_DOMAIN not in full_url: continue
                           path = full_url.split(SITE_DOMAIN)[-1]
                           slug = path.rstrip('/').split('/')[-1]
-                          # Must be a deep path (at least 2 segments) with a meaningful slug
-                          # and must not match any excluded path patterns
                           if (
                               len(slug) > 15
                               and '-' in slug
@@ -190,7 +185,6 @@ jobs:
                       browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled"])
                       context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
                       page = context.new_page()
-                      # Block only non-essential resources; allow images so we can find article images
                       page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["stylesheet","font","media"] else route.continue_())
                       page.goto(url, timeout=60000, wait_until="domcontentloaded")
                       time.sleep(random.uniform(1, 3))
@@ -234,26 +228,16 @@ jobs:
                               if len(article_text) > 400: break
                       if len(article_text) < 400:
                           article_text = "\n\n".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40)
-
-                      # ── Image extraction (fixed) ──────────────────────────────────────
                       img_url = ""
-
-                      # 1. Try og:image first
                       og = soup.find('meta', property='og:image')
                       if og:
                           candidate = og.get('content', '').strip()
-                          if not is_bad_image(candidate):
-                              img_url = candidate
-
-                      # 2. Fallback: twitter:image
+                          if not is_bad_image(candidate): img_url = candidate
                       if not img_url:
                           tw = soup.find('meta', {'name': 'twitter:image'})
                           if tw:
                               candidate = tw.get('content', '').strip()
-                              if not is_bad_image(candidate):
-                                  img_url = candidate
-
-                      # 3. Fallback: JSON-LD image field
+                              if not is_bad_image(candidate): img_url = candidate
                       if not img_url:
                           for script in soup.find_all('script', type='application/ld+json'):
                               try:
@@ -265,15 +249,12 @@ jobs:
                                       img_url = ld_img
                                       break
                               except: pass
-
-                      # 4. Fallback: first large <img> inside article body
                       if not img_url:
                           for sel in ['article', '.article-body', '.post-content', '.entry-content', 'main']:
                               cont = soup.select_one(sel)
                               if not cont: continue
                               for img_tag in cont.find_all('img', src=True):
                                   src = img_tag.get('src', '').strip()
-                                  # Skip tiny tracking pixels and bad images
                                   width = img_tag.get('width', '')
                                   height = img_tag.get('height', '')
                                   try:
@@ -283,7 +264,6 @@ jobs:
                                       img_url = src if src.startswith('http') else f'https://{SITE_DOMAIN}{src}'
                                       break
                               if img_url: break
-
                       print(f"Image: {img_url or 'none found'}")
                       print(f"Text length: {len(article_text)}")
                       return article_text, img_url, title
@@ -354,11 +334,13 @@ jobs:
               print("No fresh valid article")
               sys.exit(0)
 
-          title_prompt = f"""SCRAPED ARTICLE: {target_title}
-          Classify: LIST, BIO, SCANDAL, GUIDE, TRENDING, NEWS, MATCH REPORT, TRANSFER.
-          HIGH-CTR FORMULAS: 1. Number+Keyword+Benefit, 2. Keyword+Power Word+Year, 3. How/What+Keyword+Number, 4. Keyword+[Bracket Hook], 5. Adjective+Number+Outcome.
-          Generate EXACTLY 3 SEO titles <60 chars, front-load keyword. Pick best.
-          Output ONLY JSON: {{"final_title": "Winning Title"}}"""
+          title_prompt = (
+              "SCRAPED ARTICLE TITLE: " + target_title + "\n"
+              "ARTICLE SNIPPET:\n" + full_raw_text[:1500] + "\n"
+              "Write a single news headline for this article.\n"
+              "Rules: Plain reporting tone like a newspaper front page. No dates or years in the title. No numbers at the start. No clickbait. No brackets. No hype words. Just a clean factual sentence that tells the reader exactly what happened.\n"
+              "Output ONLY JSON: {\"final_title\": \"Your Title Here\"}"
+          )
           title_text = gemini_generate(title_prompt, "title")
           final_title = target_title
           if title_text:
@@ -375,20 +357,20 @@ jobs:
 
           internal_links = get_internal_context()
           banned_str = ", ".join(BANNED_PHRASES)
-          article_prompt = f"""Current Date: {full_date_str}
-          TITLE: {final_title}
-          SOURCE TEXT: {full_raw_text[:9500]}
-          INTERNAL LINKS TO WEAVE IN (use 1-2 naturally):
-          {internal_links}
-
-          TASK: Write a vibrant Pan-African entertainment article as Amara Ndlovu for Za Ndani.
-          Focus on {target_country} entertainment and culture. Professional tone. No em-dashes. Single hyphens only.
-          No title/author/date in body.
-          Start with ## H2 keyword heading.
-          Then 35-45 word summary paragraph.
-          Then ### subheadings with details.
-          BANNED PHRASES (never use): {banned_str}
-          Engaging, culturally aware, African context. No cliches."""
+          article_prompt = (
+              "Current Date: " + full_date_str + "\n"
+              "TITLE: " + final_title + "\n"
+              "SOURCE TEXT:\n" + full_raw_text[:9500] + "\n"
+              "INTERNAL LINKS TO WEAVE IN (use 1-2 naturally):\n" + internal_links + "\n\n"
+              "TASK: Write a vibrant Pan-African entertainment article as Amara Ndlovu for Za Ndani.\n"
+              "Focus on " + target_country + " entertainment and culture. Professional tone. No em-dashes. Single hyphens only.\n"
+              "No title/author/date in body.\n"
+              "Start with ## H2 keyword heading.\n"
+              "Then 35-45 word summary paragraph.\n"
+              "Then ### subheadings with details.\n"
+              "BANNED PHRASES (never use): " + banned_str + "\n"
+              "Engaging, culturally aware, African context. No cliches."
+          )
           article_text = gemini_generate(article_prompt, "article", use_search=True)
           if not article_text: sys.exit(1)
 
@@ -399,18 +381,20 @@ jobs:
           final_image = upload_to_imgbb(target_image) if target_image else ""
           posts_dir = os.environ.get("POSTS_DIR", "content/posts")
           os.makedirs(posts_dir, exist_ok=True)
-          final_file = textwrap.dedent(f"""\
-          ---
-          title: "{final_title.replace('"', "'")}"
-          slug: "{slug}"
-          author: "Amara Ndlovu"
-          image: "{final_image}"
-          category: "Entertainment"
-          date: "{publish_timestamp}"
-          ---
-          {article_text}
-          """)
-          filepath = os.path.join(posts_dir, f"{today_str}-{slug}.md")
+          lines = [
+              "---",
+              'title: "' + final_title.replace('"', "'") + '"',
+              'slug: "' + slug + '"',
+              'author: "Amara Ndlovu"',
+              'image: "' + final_image + '"',
+              'category: "Entertainment"',
+              'date: "' + publish_timestamp + '"',
+              "---",
+              article_text,
+              ""
+          ]
+          final_file = "\n".join(lines)
+          filepath = os.path.join(posts_dir, today_str + "-" + slug + ".md")
           with open(filepath, "w", encoding="utf-8") as f: f.write(final_file)
           memory.append(final_hash)
           with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
