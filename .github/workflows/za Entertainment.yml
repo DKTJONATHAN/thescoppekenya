@@ -137,20 +137,16 @@ jobs:
                           if age > MAX_AGE_HOURS: return None, None, None
 
                       title = soup.title.string.strip() if soup.title else ""
-                      title = re.sub(r'\s*[-|–]\s*EW\.com.*|\s*\|.*EW.*', '', title).strip()
+                      title = re.sub(r'\s*[-|\u2013]\s*EW\.com.*|\s*\|.*EW.*', '', title).strip()
 
                       article_text = ""
                       for sel in ['article','.article-body','.post-content','.entry-content','.content','main']:
                           cont = soup.select_one(sel)
                           if cont:
-                              article_text = "
-
-".join(p.get_text(strip=True) for p in cont.find_all('p') if len(p.get_text(strip=True)) > 40)
+                              article_text = "\n\n".join(p.get_text(strip=True) for p in cont.find_all('p') if len(p.get_text(strip=True)) > 40)
                               if len(article_text) > 400: break
                       if len(article_text) < 400:
-                          article_text = "
-
-".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40)
+                          article_text = "\n\n".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40)
 
                       img_url = ""
                       for tag in [soup.find('meta', property='og:image'), soup.find('meta', {'name':'twitter:image'})]:
@@ -169,8 +165,7 @@ jobs:
                       t = re.search(r'title:\s*"(.*?)"', content); s = re.search(r'slug:\s*"(.*?)"', content)
                       if t and s: links.append(f'- [{t.group(1)}](https://zandani.co.ke/article/{s.group(1)})')
                   except: pass
-              return "
-".join(links) if links else ""
+              return "\n".join(links) if links else ""
 
           raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY","GEMINI_API_KEY","GEMINI_API_KEY1"] if os.environ.get(k)]
           if not raw_keys: sys.exit(1)
@@ -205,84 +200,58 @@ jobs:
 
           if not full_raw_text: sys.exit(0)
 
-          # Safe string concatenation to prevent curly brace crashes from raw content
           title_prompt = (
-              f"Current Year: {current_year}
-"
-              f"SCRAPED TITLE: {target_title}
-"
-              "ARTICLE CONTENT:
-" + full_raw_text[:2000] + "
-"
-              "Classify: LIST, BIO, SCANDAL, GUIDE, TRENDING, NEWS.
-"
-              f"HIGH-CTR FORMULAS: 1. Number+Keyword+Benefit, 2. Keyword+Power Word+{current_year}, 3. How/What+Keyword+Number, 4. Keyword+[Bracket Hook], 5. Adjective+Number+Outcome.
-"
-              "Generate EXACTLY 3 SEO titles <60 chars, front-load keyword. Pick the most specific, highly descriptive one.
-"
-              f"CRITICAL: Do not write vague titles. Ensure the title accurately reflects the core specific news event. If using a year, strictly use {current_year}. Do NOT put old dates in the title.
-"
-              "Output ONLY JSON: {"final_title": "Winning Title"}"
+              "SCRAPED ARTICLE TITLE: " + target_title + "\n"
+              "ARTICLE SNIPPET:\n" + full_raw_text[:1500] + "\n"
+              "Write a single news headline for this article.\n"
+              "Rules: Plain reporting tone like a newspaper front page. No dates or years in the title. No numbers at the start. No clickbait. No brackets. No hype words. Just a clean factual sentence that tells the reader exactly what happened.\n"
+              "Output ONLY JSON: {\"final_title\": \"Your Title Here\"}"
           )
 
           title_text = gemini_generate(title_prompt)
           final_title = target_title
           if title_text:
-              try: final_title = json.loads(re.sub(r"^```json?
-?|```$", "", title_text, flags=re.I|re.DOTALL).strip()).get('final_title', target_title)
+              try: final_title = json.loads(re.sub(r"^```json?\n?|```$", "", title_text, flags=re.I|re.DOTALL).strip()).get('final_title', target_title)
               except: pass
 
           current_key = next(key_cycle); client = genai.Client(api_key=current_key); time.sleep(5)
 
           article_prompt = (
-              f"Current Date: {full_date_str}. The current year is {current_year}.
-"
-              f"TITLE: {final_title}
-"
-              "SOURCE TEXT:
-" + full_raw_text[:9500] + "
-"
-              "INTERNAL LINKS:
-" + get_internal_context() + "
-
-"
-              "TASK: Write a dynamic, engaging entertainment article as Mutheu Ann for Za Ndani.
-"
-              "Plugged-in Kenyan entertainment reporter. Witty, celebrity-focused. No Sheng. No em-dashes. Single hyphens only.
-"
-              f"IMPORTANT: Do NOT refer to {current_year} events as happening in 2024. Update all date references to reflect the current year ({current_year}).
-"
-              "No title/author/date in body. Start with ## H2 keyword heading. Then 35-45 word summary. Then ### subheadings.
-"
-              "BANNED PHRASES: " + ", ".join(BANNED_PHRASES) + "
-"
+              "Current Date: " + full_date_str + ". The current year is " + current_year + ".\n"
+              "TITLE: " + final_title + "\n"
+              "SOURCE TEXT:\n" + full_raw_text[:9500] + "\n"
+              "INTERNAL LINKS:\n" + get_internal_context() + "\n\n"
+              "TASK: Write a dynamic, engaging entertainment article as Mutheu Ann for Za Ndani.\n"
+              "Plugged-in Kenyan entertainment reporter. Witty, celebrity-focused. No Sheng. No em-dashes. Single hyphens only.\n"
+              "IMPORTANT: Do NOT refer to " + current_year + " events as happening in 2024. All dates must reflect " + current_year + ".\n"
+              "No title/author/date in body. Start with ## H2 keyword heading. Then 35-45 word summary. Then ### subheadings.\n"
+              "BANNED PHRASES: " + ", ".join(BANNED_PHRASES) + "\n"
               "Engaging, vivid, pop culture context. No cliches."
           )
 
           article_text = gemini_generate(article_prompt, use_search=True)
           if not article_text: sys.exit(1)
 
-          article_text = re.sub(r"^```(?:markdown)?
-?", "", article_text).rstrip("```").strip()
-          article_text = re.sub(r"^(Title|By|Date):.*?
-", "", article_text, flags=re.I|re.M).replace('—', '-').replace('–', '-')
+          article_text = re.sub(r"^```(?:markdown)?\n?", "", article_text).rstrip("```").strip()
+          article_text = re.sub(r"^(Title|By|Date):.*?\n", "", article_text, flags=re.I|re.M).replace('\u2014', '-').replace('\u2013', '-')
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           final_image = upload_to_imgbb(target_image) if target_image else ""
 
           posts_dir = os.environ.get("POSTS_DIR", "content/posts"); os.makedirs(posts_dir, exist_ok=True)
-          final_file = textwrap.dedent(f"""\
-          ---
-          title: "{final_title.replace('"', "'")}"
-          slug: "{slug}"
-          author: "Mutheu Ann"
-          image: "{final_image}"
-          category: "Entertainment"
-          date: "{publish_timestamp}"
-          ---
-          {article_text}
-          """)
-
-          filepath = os.path.join(posts_dir, f"{today_str}-{slug}.md")
+          lines = [
+              "---",
+              'title: "' + final_title.replace('"', "'") + '"',
+              'slug: "' + slug + '"',
+              'author: "Mutheu Ann"',
+              'image: "' + final_image + '"',
+              'category: "Entertainment"',
+              'date: "' + publish_timestamp + '"',
+              "---",
+              article_text,
+              ""
+          ]
+          final_file = "\n".join(lines)
+          filepath = os.path.join(posts_dir, today_str + "-" + slug + ".md")
           with open(filepath, "w", encoding="utf-8") as f: f.write(final_file)
           memory.append(final_hash)
           with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
