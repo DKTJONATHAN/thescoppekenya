@@ -34,11 +34,19 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ hashFiles('**/playwright') }}
+          restore-keys: |
+            ${{ runner.os }}-playwright-
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil
-          playwright install chromium
+          playwright install chromium --with-deps
 
       - name: Generate article with Gemini
         env:
@@ -51,18 +59,19 @@ jobs:
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           python << 'EOF'
-          import os, json, datetime, requests, re, time, sys, hashlib, random, urllib.parse, textwrap, itertools, base64
+          import os, json, datetime, requests, re, time, sys, hashlib, random, urllib.parse, itertools, base64
           from dateutil import parser as date_parser
           from google import genai
           from google.genai import types
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
 
+          publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
-          publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
-
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+
+          BANNED_PHRASES = ["sasa basi","melting the pot","spill the tea","tea is hot","grab your popcorn","buckle up","breaking news","dive in","delve into","moreover","furthermore","in conclusion","it's worth noting","a testament to","navigating the landscape","in today's digital age","tapestry"]
 
           print(f"Target: Football365 All The News - {full_date_str}")
 
@@ -70,48 +79,38 @@ jobs:
               api_key = os.environ.get("IMGBB_API_KEY")
               if not api_key or not image_url: return image_url
               try:
-                  print(f"Fetching image for ImgBB: {image_url}")
                   img_data = requests.get(image_url, timeout=15).content
                   base64_image = base64.b64encode(img_data).decode('utf-8')
                   res = requests.post("https://api.imgbb.com/1/upload", data={"key": api_key, "image": base64_image}, timeout=20)
-                  if res.status_code == 200:
-                      new_url = res.json()['data']['url']
-                      print(f"Re-hosted to: {new_url}")
-                      return new_url
-                  print(f"ImgBB Failed: {res.text}")
+                  if res.status_code == 200: return res.json()['data']['url']
                   return image_url
-              except Exception as e:
-                  print(f"ImgBB Exception: {e}")
-                  return image_url
+              except: return image_url
+
+          def get_real_image(query):
+              key = os.environ.get("UNSPLASH_ACCESS_KEY")
+              fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+              if not key: return fallback
+              try:
+                  r = requests.get(f"https://api.unsplash.com/photos/random?query={urllib.parse.quote(query)}&orientation=landscape&client_id={key}", timeout=10)
+                  if r.status_code == 200: return r.json()['urls']['regular']
+              except: pass
+              return fallback
 
           def get_target_urls():
               urls_with_time = []
               print("Scanning Football365 latest news feed...")
               try:
                   with sync_playwright() as p:
-                      browser = p.chromium.launch(headless=True, args=[
-                          "--no-sandbox", "--disable-dev-shm-usage",
-                          "--disable-blink-features=AutomationControlled"
-                      ])
-                      context = browser.new_context(
-                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-                          viewport={"width": 1920, "height": 1080}
-                      )
+                      browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled"])
+                      context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36", viewport={"width": 1920, "height": 1080})
                       page = context.new_page()
                       page.goto('https://www.football365.com/all-the-news', timeout=90000, wait_until="networkidle")
                       for _ in range(4):
                           page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                           page.wait_for_timeout(4000)
                       soup = BeautifulSoup(page.content(), 'html.parser')
-                      teaser_selectors = [
-                          'article', '.teaser', '.news-teaser', '.card', 'li[data-article-id]',
-                          '.feed-item', '.story-teaser', '[data-testid="article-teaser"]'
-                      ]
-                      for selector in teaser_selectors:
-                          items = soup.select(selector)
-                          if items: break
-                      else:
-                          items = soup.select('a[href*="/news/"]')
+                      items = soup.select('article, .teaser, .news-teaser, .card, li[data-article-id], .feed-item, .story-teaser, [data-testid="article-teaser"]')
+                      if not items: items = soup.select('a[href*="/news/"]')
                       for item in items:
                           a_tag = item.find('a', href=True)
                           if not a_tag: continue
@@ -119,20 +118,16 @@ jobs:
                           if '/news/' not in href or len(href) < 30: continue
                           full_url = href if href.startswith('http') else 'https://www.football365.com' + href
                           time_el = item.find('time') or item.find(attrs={"datetime": True})
-                          pub_str = None
-                          if time_el:
-                              pub_str = time_el.get('datetime') or time_el.get_text(strip=True)
+                          pub_str = time_el.get('datetime') or time_el.get_text(strip=True) if time_el else None
                           pub_dt = datetime.datetime.min.replace(tzinfo=datetime.timezone.utc)
                           if pub_str:
                               try:
                                   pub_dt = date_parser.parse(pub_str)
-                                  if pub_dt.tzinfo is None:
-                                      pub_dt = pub_dt.replace(tzinfo=datetime.timezone.utc)
+                                  if pub_dt.tzinfo is None: pub_dt = pub_dt.replace(tzinfo=datetime.timezone.utc)
                               except: pass
                           urls_with_time.append((full_url, pub_dt))
                       browser.close()
-              except Exception as e:
-                  print(f"List scrape error: {e}")
+              except Exception as e: print(f"List scrape error: {e}")
               urls_with_time.sort(key=lambda x: x[1], reverse=True)
               seen = set()
               ordered_urls = []
@@ -143,135 +138,69 @@ jobs:
               print(f"Found {len(ordered_urls)} unique article links")
               return ordered_urls[:20]
 
-          article_links = get_target_urls()
-          if not article_links:
-              print("No articles found on Football365.")
-              sys.exit(0)
-
-          memory_path = os.environ.get('MEMORY_FILE', '.github/scrape_memory.json')
-          memory = []
-          if os.path.exists(memory_path):
-              try:
-                  with open(memory_path, 'r', encoding='utf-8') as f:
-                      memory = json.load(f)
-              except: print("Memory file unreadable - starting fresh")
-          memory_set = set(memory)
-          fresh_articles = [url for url in article_links if hashlib.md5(url.encode()).hexdigest() not in memory_set]
-          if not fresh_articles:
-              print("No new unread articles found. Exiting.")
-              sys.exit(0)
-          print(f"Found {len(fresh_articles)} fresh articles")
-
           def is_still_fresh_on_source(target_url, max_position=30):
-              print(f"Checking if {target_url} is still in recent feed on source...")
-              current_urls = []
               try:
                   with sync_playwright() as p:
-                      browser = p.chromium.launch(headless=True, args=[
-                          "--no-sandbox", "--disable-dev-shm-usage",
-                          "--disable-blink-features=AutomationControlled"
-                      ])
+                      browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled"])
                       context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
                       page = context.new_page()
                       page.goto('https://www.football365.com/all-the-news', timeout=60000, wait_until="networkidle")
-                      for _ in range(3):
-                          page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                          page.wait_for_timeout(2000)
                       soup = BeautifulSoup(page.content(), 'html.parser')
-                      items = soup.select('article, .teaser, .news-teaser, .card, li[data-article-id], .feed-item')
-                      for item in items:
-                          a = item.find('a', href=True)
-                          if a and '/news/' in a['href'] and len(a['href']) > 30:
-                              href = a['href']
-                              full = 'https://www.football365.com' + href if href.startswith('/') else href
-                              current_urls.append(full)
-                              if len(current_urls) >= max_position: break
                       browser.close()
-              except Exception as e:
-                  print(f"Source check failed: {e} - proceeding anyway")
-                  return True
-              is_fresh = target_url in current_urls[:max_position]
-              print(f" -> Still appears in top {max_position}? {is_fresh}")
-              return is_fresh
+                      current_urls = []
+                      for a in soup.select('article a[href*="/news/"], .teaser a[href*="/news/"]'):
+                          href = a['href']
+                          full = 'https://www.football365.com' + href if href.startswith('/') else href
+                          current_urls.append(full)
+                      return target_url in current_urls[:max_position]
+              except: return True
 
           def scrape_article(url):
               print(f"Scraping: {url}")
               with sync_playwright() as p:
-                  browser = p.chromium.launch(headless=True, args=[
-                      "--no-sandbox", "--disable-dev-shm-usage",
-                      "--disable-blink-features=AutomationControlled"
-                  ])
+                  browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled"])
                   context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
                   page = context.new_page()
                   try:
                       page.goto(url, timeout=60000, wait_until="domcontentloaded")
                       page.wait_for_timeout(4000)
                       soup = BeautifulSoup(page.content(), "html.parser")
-                      pub_time = None
+
                       meta_pub = soup.find('meta', property='article:published_time')
                       if meta_pub and meta_pub.get('content'):
                           try:
                               pub_time = date_parser.parse(meta_pub['content'])
-                              if pub_time.tzinfo is None:
-                                  pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
-                              age_hours = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
-                              if age_hours > 48:
-                                  print(f"Too old ({int(age_hours)}h). Skipping.")
+                              if pub_time.tzinfo is None: pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
+                              if (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600 > 48:
+                                  print("Too old. Skipping.")
                                   return None, None, None
                           except: pass
-                      title = ""
+
                       title_tag = soup.find('title')
-                      if title_tag:
-                          title = title_tag.get_text().replace(' - Football365', '').replace('| Football365', '').strip()
+                      title = title_tag.get_text().replace(' - Football365', '').replace('| Football365', '').strip() if title_tag else ""
+
                       article_text = ""
-                      main_selectors = [
-                          'article .article-body', '.article__body', '.post-content',
-                          '.entry-content', '.content', 'main article'
-                      ]
-                      for sel in main_selectors:
+                      for sel in ['article .article-body', '.article__body', '.post-content', '.entry-content', '.content', 'main article']:
                           container = soup.select_one(sel)
                           if container:
-                              paras = container.find_all('p')
-                              article_text = "\n\n".join(p.get_text(strip=True) for p in paras if len(p.get_text(strip=True)) > 30)
+                              article_text = "\n\n".join(p.get_text(strip=True) for p in container.find_all('p') if len(p.get_text(strip=True)) > 30)
                               if len(article_text) > 600: break
                       if len(article_text) < 600:
-                          all_paras = soup.find_all('p')
-                          article_text = "\n\n".join(p.get_text(strip=True) for p in all_paras if len(p.get_text(strip=True)) > 30)
+                          article_text = "\n\n".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 30)
+
                       img_url = ""
                       for meta in soup.find_all('meta'):
                           prop = meta.get('property') or meta.get('name')
                           if prop in ['og:image', 'twitter:image']:
                               img_url = meta.get('content', '')
                               if img_url: break
-                      print(f"Extracted {len(article_text)} chars")
+
                       return article_text, img_url, title
                   except Exception as e:
                       print(f"Scrape failed: {e}")
                       return None, None, None
                   finally:
                       browser.close()
-
-          full_raw_text = None
-          final_hash = None
-          target_title = None
-          target_image = None
-
-          for link in fresh_articles:
-              u_hash = hashlib.md5(link.encode()).hexdigest()
-              if not is_still_fresh_on_source(link):
-                  print(f"Skipping - no longer in recent feed.")
-                  continue
-              text, img, title = scrape_article(link)
-              if text and len(text) > 500:
-                  full_raw_text = text
-                  target_image = img
-                  final_hash = u_hash
-                  target_title = title or "Latest Football News"
-                  break
-
-          if not full_raw_text:
-              print("No usable currently-relevant article found.")
-              sys.exit(0)
 
           def get_internal_context(posts_dir):
               if not os.path.exists(posts_dir): return ""
@@ -285,168 +214,129 @@ jobs:
                           content = c.read()
                           t_match = re.search(r'title:\s*"(.*?)"', content)
                           title = t_match.group(1) if t_match else f.replace('.md', '')
-                          context += f"- {title} -> https://zandani.co.ke/article/{f.replace('.md', '')}\n"
+                          context += f"- [{title}](https://zandani.co.ke/article/{f.replace('.md', '')})\n"
                   except: continue
               return context
 
-          def get_real_image(query):
-              key = os.environ.get("UNSPLASH_ACCESS_KEY")
-              fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
-              if not key: return fallback
-              try:
-                  r = requests.get(
-                      f"https://api.unsplash.com/photos/random?query={urllib.parse.quote(query)}&orientation=landscape&client_id={key}",
-                      timeout=10
-                  )
-                  if r.status_code == 200:
-                      return r.json()['urls']['regular']
-              except: pass
-              return fallback
-
-          def dash_scrubber(text):
-              if not text: return ""
-              text = text.replace('\u2014', '-').replace('\u2013', '-')
-              text = text.replace(chr(8212), '-').replace(chr(8211), '-')
-              return text
-
-          raw_keys = [os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY"), os.environ.get("GEMINI_API_KEY1")]
-          api_keys = [k for k in raw_keys if k and k.strip()]
-          if not api_keys:
-              print("No Gemini API keys found.")
+          raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY","GEMINI_API_KEY","GEMINI_API_KEY1"] if os.environ.get(k)]
+          if not raw_keys:
+              print("No Gemini keys")
               sys.exit(1)
-
-          key_cycle = itertools.cycle(api_keys)
+          key_cycle = itertools.cycle(raw_keys)
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
 
-          google_search_tool = types.Tool(google_search=types.GoogleSearch())
-          internal_links = get_internal_context(os.environ.get("POSTS_DIR", "content/posts"))
+          def gemini_generate(prompt, label="", use_search=False):
+              global current_key, client
+              for model in MODELS_TO_TRY:
+                  for _ in range(6):
+                      try:
+                          config = types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]) if use_search else None
+                          resp = client.models.generate_content(model=model, contents=prompt, config=config)
+                          print(f"Gemini OK ({model}): {label}")
+                          return resp.text.strip()
+                      except Exception as e:
+                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower():
+                              time.sleep(random.uniform(20, 35))
+                              current_key = next(key_cycle)
+                              client = genai.Client(api_key=current_key)
+                              continue
+                          print(f"Gemini error ({model}): {e}")
+                          break
+              return None
 
-          prompt = (
-              "Current date: " + full_date_str + "\n"
-              "NEWS HEADLINE FROM SOURCE: \"" + target_title + "\"\n"
-              "SOURCE ARTICLE TEXT: \"" + full_raw_text[:12000] + "\"\n\n"
-              + internal_links + "\n\n"
-              "Write an engaging article as a sharp, cynical football pundit. Emulate a highly opinionated tone, pointing out the bad side of the story or the angles that the mainstream media ignores.\n"
-              "Use natural, professional English suited for sports analysis.\n\n"
-              "Guidelines:\n"
-              "- Always verify key facts using Google Search - include today's date (" + full_date_str + ") in every search reminder to stay current.\n"
-              "- Never write about old matches or transfers as if they are happening now.\n"
-              "- Naturally include ONE relevant link to a past story from the list above (if any fit).\n"
-              "- STRICTLY PROHIBITED: Do not use bracketed subjective asides or personal commentary in brackets.\n"
-              "- DO NOT use cheesy chatty fillers or exaggerated slang.\n"
-              "- NEVER use em dashes or en dashes. Only use regular single hyphens (-).\n\n"
-              "STRICT OUTPUT FORMAT:\n"
-              "TITLE: [Strong SEO-optimised title starting with main keyword]\n"
-              "SLUG: [kebab-case-from-title]\n"
-              "EXCERPT: [Engaging hook under 160 characters]\n"
-              "CATEGORY: Global News\n"
-              "TAGS: [comma separated, relevant SEO tags]\n"
-              "IMAGE_KEYWORD: [short unsplash-friendly search phrase]\n"
-              "BODY:\n"
-              "[Article text containing the internal link.\n"
-              "Structure: Start with a 40-70 word neutral summary paragraph. Then use natural H2 and H3 subheadings for the rest of the text.\n\n"
-              "- DO NOT include the title, author name, date, or 'updated on' anywhere in the body text.\n"
-              "- Start immediately with the core article content. Do not add introductory metadata.]"
+          article_links = get_target_urls()
+          if not article_links: sys.exit(0)
+
+          memory_path = os.environ.get('MEMORY_FILE', '.github/scrape_memory.json')
+          memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
+
+          full_raw_text, target_image, target_title, final_hash = None, None, None, None
+          for link in article_links:
+              u_hash = hashlib.md5(link.encode()).hexdigest()
+              if u_hash in memory: continue
+              if not is_still_fresh_on_source(link): continue
+              text, img, title = scrape_article(link)
+              if text and len(text) > 500:
+                  full_raw_text, target_image, target_title, final_hash = text, img, title or "Latest Football News", u_hash
+                  break
+
+          if not full_raw_text:
+              print("No usable article found.")
+              sys.exit(0)
+
+          title_prompt = (
+              "SCRAPED ARTICLE TITLE: " + target_title + "\n"
+              "ARTICLE SNIPPET:\n" + full_raw_text[:1500] + "\n"
+              "Write a single news headline for this article.\n"
+              "Rules: Plain reporting tone like a newspaper front page. No dates or years in the title. No numbers at the start. No clickbait. No brackets. No hype words. Just a clean factual sentence that tells the reader exactly what happened.\n"
+              "Output ONLY JSON: {\"final_title\": \"Your Title Here\"}"
+          )
+          title_text = gemini_generate(title_prompt, "title")
+          final_title = target_title
+          if title_text:
+              try:
+                  clean = re.sub(r"^```json?\n?|```$", "", title_text, flags=re.I|re.DOTALL).strip()
+                  final_title = json.loads(clean).get('final_title', target_title)
+              except: pass
+
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+          time.sleep(5)
+
+          article_prompt = (
+              "Current Date: " + full_date_str + "\n"
+              "TITLE: " + final_title + "\n"
+              "SOURCE TEXT:\n" + full_raw_text[:9500] + "\n"
+              "INTERNAL LINKS TO WEAVE IN (use 1-2 naturally):\n" + get_internal_context(os.environ.get("POSTS_DIR", "content/posts")) + "\n\n"
+              "TASK: Write an engaging article as a sharp, cynical football pundit for Za Ndani.\n"
+              "Emulate a highly opinionated tone, pointing out the bad side of the story or the angles that the mainstream media ignores.\n"
+              "Use natural, professional English suited for sports analysis.\n"
+              "Never write about old matches or transfers as if they are happening now.\n"
+              "No title/author/date in body. No em-dashes. Single hyphens only.\n"
+              "Start with ## H2 keyword heading. Then 35-45 word summary. Then ### subheadings.\n"
+              "BANNED PHRASES (never use): " + ", ".join(BANNED_PHRASES) + "\n"
+              "Factual, direct, cynical sports context. No cliches."
           )
 
-          success = False
-          full_text = ""
-          keys_tried_in_round = 0
+          article_text = gemini_generate(article_prompt, "article", use_search=True)
+          if not article_text: sys.exit(1)
 
-          for model in MODELS_TO_TRY:
-              if success: break
-              print(f"Trying {model}...")
-              for attempt in range(len(api_keys) * 2):
-                  try:
-                      response = client.models.generate_content(
-                          model=model,
-                          contents=prompt,
-                          config=types.GenerateContentConfig(temperature=0.8, tools=[google_search_tool])
-                      )
-                      full_text = response.text.strip()
-                      success = True
-                      print(f"Generation success with {model}")
-                      break
-                  except Exception as e:
-                      if "429" in str(e):
-                          keys_tried_in_round += 1
-                          print("Rate limit hit - rotating key...")
-                          current_key = next(key_cycle)
-                          client = genai.Client(api_key=current_key)
-                          if keys_tried_in_round >= len(api_keys):
-                              print("All keys hit quota. Waiting 45s...")
-                              time.sleep(45)
-                              keys_tried_in_round = 0
-                      else:
-                          print(f"Generation error with {model}: {e}")
-                          break
+          article_text = re.sub(r"^```(?:markdown)?\n?", "", article_text).rstrip("```").strip()
+          article_text = re.sub(r"^(Title|By|Date):.*?\n", "", article_text, flags=re.I|re.M)
+          article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
 
-          if not success or not full_text:
-              print("All generation attempts failed.")
-              sys.exit(1)
+          slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
 
-          full_text = dash_scrubber(full_text)
-
-          def extract_field(text, field):
-              pattern = rf'^{field}:\s*(.+)$'
-              m = re.search(pattern, text, re.MULTILINE | re.IGNORECASE)
-              return m.group(1).strip() if m else ""
-
-          def extract_body(text):
-              m = re.search(r'^BODY:\s*
-(.*)', text, re.DOTALL | re.MULTILINE | re.IGNORECASE)
-              if m:
-                  body = m.group(1).strip()
-                  body = re.sub(r'^```(?:markdown)?\n?', '', body)
-                  body = body.rstrip('`').strip()
-                  return body
-              return text
-
-          article_title = extract_field(full_text, "TITLE") or target_title
-          article_slug = extract_field(full_text, "SLUG")
-          article_excerpt = extract_field(full_text, "EXCERPT")
-          article_category = extract_field(full_text, "CATEGORY") or "Global News"
-          article_tags = extract_field(full_text, "TAGS")
-          image_keyword = extract_field(full_text, "IMAGE_KEYWORD") or "football stadium"
-          article_body = extract_body(full_text)
-
-          article_title = re.sub(r'^["\'\[\(]|["\'\]\)]$', '', article_title).strip()
-
-          if not article_slug:
-              article_slug = re.sub(r'[^a-z0-9]+', '-', article_title.lower()).strip('-')[:68]
+          if target_image:
+              final_image = upload_to_imgbb(target_image)
           else:
-              article_slug = re.sub(r'[^a-z0-9-]', '', article_slug.lower()).strip('-')[:68]
-
-          final_image = upload_to_imgbb(target_image) if target_image else get_real_image(image_keyword)
+              search_term = "football " + final_title.split()[0]
+              final_image = get_real_image(search_term)
 
           posts_dir = os.environ.get("POSTS_DIR", "content/posts")
           os.makedirs(posts_dir, exist_ok=True)
 
           lines = [
               "---",
-              'title: "' + article_title.replace('"', "'") + '"',
-              'slug: "' + article_slug + '"',
+              'title: "' + final_title.replace('"', "'") + '"',
+              'slug: "' + slug + '"',
               'author: "Sports Desk"',
-              'excerpt: "' + article_excerpt.replace('"', "'") + '"',
               'image: "' + final_image + '"',
-              'category: "' + article_category + '"',
-              'tags: "' + article_tags + '"',
+              'category: "Global News"',
               'date: "' + publish_timestamp + '"',
               "---",
-              article_body,
+              article_text,
               ""
           ]
           final_file = "\n".join(lines)
 
-          filepath = os.path.join(posts_dir, today_str + "-" + article_slug + ".md")
-          with open(filepath, "w", encoding="utf-8") as f:
-              f.write(final_file)
+          filepath = os.path.join(posts_dir, today_str + "-" + slug + ".md")
+          with open(filepath, "w", encoding="utf-8") as f: f.write(final_file)
 
           memory.append(final_hash)
           os.makedirs(os.path.dirname(memory_path), exist_ok=True)
-          with open(memory_path, 'w', encoding='utf-8') as f:
-              json.dump(memory[-500:], f)
+          with open(memory_path, 'w') as f: json.dump(memory[-500:], f)
 
           print(f"Saved: {filepath}")
           EOF
