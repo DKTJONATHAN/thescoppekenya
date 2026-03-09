@@ -40,14 +40,7 @@ jobs:
       - name: Install system dependencies and Python packages
         run: |
           sudo apt-get update -y
-          sudo apt-get install -y \
-            libnss3 libatk-bridge2.0-0 libdrm2 libxcomposite1 libxdamage1 \
-            libxrandr2 libgbm1 libasound2 fonts-liberation libatk1.0-0 \
-            libatspi2.0-0 libcairo2 libcups2 libdbus-1-3 libexpat1 \
-            libfontconfig1 libgcc1 libglib2.0-0 libgtk-3-0 libnspr4 \
-            libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 \
-            libx11-xcb1 libxcb1 libxext6 libxfixes3 libxi6 libxrender1 \
-            libxtst6 lsb-release wget xdg-utils
+          sudo apt-get install -y             libnss3 libatk-bridge2.0-0 libdrm2 libxcomposite1 libxdamage1             libxrandr2 libgbm1 libasound2 fonts-liberation libatk1.0-0             libatspi2.0-0 libcairo2 libcups2 libdbus-1-3 libexpat1             libfontconfig1 libgcc1 libglib2.0-0 libgtk-3-0 libnspr4             libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6             libx11-xcb1 libxcb1 libxext6 libxfixes3 libxi6 libxrender1             libxtst6 lsb-release wget xdg-utils
           python -m pip install --upgrade pip
           pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil playwright-stealth==1.0.6
           playwright install chromium --with-deps
@@ -136,7 +129,7 @@ jobs:
                       time.sleep(random.uniform(1, 3))
                       soup = BeautifulSoup(page.content(), "html.parser")
                       browser.close()
-                      
+
                       pub_time = None
                       for script in soup.find_all('script', type='application/ld+json'):
                           try:
@@ -150,10 +143,10 @@ jobs:
                           if pub_time.tzinfo is None: pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
                           age = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
                           if age > MAX_AGE_HOURS: return None, None, None
-                      
+
                       title = soup.title.string.strip() if soup.title else ""
-                      title = re.sub(r's*[-|–]s*Kenyans.co.ke.*', '', title, flags=re.I).strip()
-                      
+                      title = re.sub(r'\s*[-|–]\s*Kenyans\.co\.ke.*', '', title, flags=re.I).strip()
+
                       article_text = ""
                       for sel in ['article', '.article-body', '.post-content', '.entry-content', '.content', 'main']:
                           cont = soup.select_one(sel)
@@ -166,7 +159,7 @@ jobs:
                           article_text = "
 
 ".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40)
-                          
+
                       img_url = ""
                       og = soup.find('meta', property='og:image')
                       if og: img_url = og.get('content', '')
@@ -182,8 +175,8 @@ jobs:
               for fn in sample:
                   try:
                       with open(os.path.join(posts_dir, fn), "r", encoding="utf-8") as f: content = f.read()
-                      title_m = re.search(r'title:s*"(.*?)"', content)
-                      slug_m = re.search(r'slug:s*"(.*?)"', content)
+                      title_m = re.search(r'title:\s*"(.*?)"', content)
+                      slug_m = re.search(r'slug:\s*"(.*?)"', content)
                       if title_m and slug_m: links.append(f'- [{title_m.group(1)}](https://zandani.co.ke/article/{slug_m.group(1)})')
                   except: pass
               return "
@@ -213,11 +206,11 @@ jobs:
 
           article_links = get_target_urls()
           if not article_links: sys.exit(0)
-          
+
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
           full_raw_text, target_image, target_title, final_hash = None, None, None, None
-          
+
           for link in article_links:
               u_hash = hashlib.md5(link.encode()).hexdigest()
               if u_hash in memory: continue
@@ -225,10 +218,10 @@ jobs:
               if text and len(text) > 400:
                   full_raw_text, target_image, target_title, final_hash = text, img, title or "Kenya News", u_hash
                   break
-                  
+
           if not full_raw_text: sys.exit(0)
 
-          # Safe string concatenation to prevent { } curly brace crashes from raw content
+          # Safe string concatenation to prevent curly brace crashes from raw content
           title_prompt = (
               f"Current Year: {current_year}
 "
@@ -247,7 +240,7 @@ jobs:
 "
               "Output ONLY JSON: {"final_title": "Winning Title"}"
           )
-          
+
           title_text = gemini_generate(title_prompt)
           final_title = target_title
           if title_text:
@@ -293,7 +286,7 @@ jobs:
 ", "", article_text, flags=re.I|re.M).replace('—', '-').replace('–', '-')
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           final_image = upload_to_imgbb(target_image) if target_image else ""
-          
+
           posts_dir = os.environ.get("POSTS_DIR", "content/posts")
           os.makedirs(posts_dir, exist_ok=True)
           final_file = textwrap.dedent(f"""\
@@ -307,7 +300,7 @@ jobs:
           ---
           {article_text}
           """)
-          
+
           filepath = os.path.join(posts_dir, f"{today_str}-{slug}.md")
           with open(filepath, "w", encoding="utf-8") as f: f.write(final_file)
           memory.append(final_hash)
