@@ -3,19 +3,15 @@ on:
   schedule:
     - cron: '15 1-20 * * *'
   workflow_dispatch:
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
-
 permissions:
   contents: write
-
 env:
   DEFAULT_BRANCH: main
   POSTS_DIR: content/posts
   MEMORY_FILE: .github/memory_celestine.json
-
 jobs:
   generate-and-publish:
     runs-on: ubuntu-22.04
@@ -41,7 +37,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-playwright-
 
-      - name: Install system dependencies and Python packages
+      - name: Install dependencies
         run: |
           sudo apt-get update -y
           sudo apt-get install -y libnss3 libatk-bridge2.0-0 libdrm2 libxcomposite1 libxdamage1 libxrandr2 libgbm1 libasound2 fonts-liberation libatk1.0-0 libatspi2.0-0 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxext6 libxfixes3 libxi6 libxrender1 libxtst6 lsb-release wget xdg-utils
@@ -49,13 +45,16 @@ jobs:
           pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil playwright-stealth==1.0.6
           playwright install chromium --with-deps
 
-      - name: Download Python Script
+      - name: Generate article with Gemini
+        env:
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
+          MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
-          curl -s https://raw.githubusercontent.com/Jonathan-Mwaniki/scripts/main/celestine.py > run_scraper.py || echo "We will embed it to be safe"
-
-      - name: Create safe script
-        run: |
-          cat << 'SCRIPT_EOF' > run_scraper.py
+          python - << 'PYEOF'
           import os, json, datetime, requests, re, time, sys, hashlib, textwrap, itertools, base64, random
           from dateutil import parser as date_parser
           from google import genai
@@ -73,31 +72,26 @@ jobs:
           MAX_AGE_HOURS = 12
           SITE_URL = "https://www.kenyans.co.ke/news"
           SITE_DOMAIN = "kenyans.co.ke"
-
-          BANNED_PHRASES = ["sasa basi", "melting the pot", "spill the tea", "tea is hot", "grab your popcorn", "buckle up", "breaking news", "dive in", "delve into", "moreover", "furthermore", "in conclusion", "it's worth noting", "a testament to", "navigating the landscape", "in today's digital age", "tapestry"]
-          BANNED_URL_PATHS = ['/author/', '/tag/', '/page/', '/feed/', '/comment-', '/category/', '/terms', '/about', '/privacy', '/contact', '/advertise', '/policy', '/disclaimer']
+          BANNED_PHRASES = ["sasa basi","melting the pot","spill the tea","tea is hot","grab your popcorn","buckle up","breaking news","dive in","delve into","moreover","furthermore","in conclusion","it's worth noting","a testament to","navigating the landscape","in today's digital age","tapestry"]
+          BANNED_URL_PATHS = ["/author/","/tag/","/page/","/feed/","/comment-","/category/","/terms","/about","/privacy","/contact","/advertise","/policy","/disclaimer"]
 
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
               if not api_key or not image_url: return image_url
               try:
                   img_data = requests.get(image_url, timeout=15).content
-                  base64_image = base64.b64encode(img_data).decode('utf-8')
-                  res = requests.post("https://api.imgbb.com/1/upload", data={"key": api_key, "image": base64_image}, timeout=20)
-                  if res.status_code == 200:
-                      new_url = res.json()['data']['url']
-                      return new_url
+                  b64 = base64.b64encode(img_data).decode("utf-8")
+                  res = requests.post("https://api.imgbb.com/1/upload", data={"key": api_key, "image": b64}, timeout=20)
+                  if res.status_code == 200: return res.json()["data"]["url"]
                   return image_url
-              except Exception as e:
-                  return image_url
+              except: return image_url
 
           def get_target_urls():
-              urls_list = []
-              seen = set()
+              urls_list = []; seen = set()
               try:
                   with sync_playwright() as p:
-                      browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled"])
-                      context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
+                      browser = p.chromium.launch(headless=True, args=["--no-sandbox","--disable-dev-shm-usage","--disable-blink-features=AutomationControlled"])
+                      context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36", viewport={"width":1920,"height":1080}, locale="en-KE", timezone_id="Africa/Nairobi")
                       page = context.new_page()
                       stealth_sync(page)
                       page.goto(SITE_URL, timeout=60000, wait_until="domcontentloaded")
@@ -105,29 +99,26 @@ jobs:
                       for _ in range(3):
                           page.evaluate("window.scrollBy(0, 1800)")
                           time.sleep(random.uniform(2, 4))
-                      soup = BeautifulSoup(page.content(), 'html.parser')
-
-                      for a in soup.find_all('a', href=True):
-                          href = a.get('href', '').strip()
+                      soup = BeautifulSoup(page.content(), "html.parser")
+                      for a in soup.find_all("a", href=True):
+                          href = a.get("href","").strip()
                           if not href: continue
-                          full_url = href if href.startswith('http') else f'https://www.{SITE_DOMAIN}' + href
+                          full_url = href if href.startswith("http") else "https://www." + SITE_DOMAIN + href
                           if SITE_DOMAIN not in full_url: continue
                           path = full_url.split(SITE_DOMAIN)[-1].lower()
-                          slug = path.rstrip('/').split('/')[-1]
-
-                          if (len(slug) > 15 and '-' in slug and not any(x in path for x in BANNED_URL_PATHS)):
+                          slug = path.rstrip("/").split("/")[-1]
+                          if len(slug) > 15 and "-" in slug and not any(x in path for x in BANNED_URL_PATHS):
                               if full_url not in seen:
-                                  seen.add(full_url)
-                                  urls_list.append(full_url)
+                                  seen.add(full_url); urls_list.append(full_url)
                       browser.close()
-              except Exception as e: pass
+              except Exception as e: print("Scan failed:", e)
               return urls_list[:30]
 
           def scrape_article(url):
               try:
                   with sync_playwright() as p:
-                      browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled"])
-                      context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
+                      browser = p.chromium.launch(headless=True, args=["--no-sandbox","--disable-dev-shm-usage","--disable-blink-features=AutomationControlled"])
+                      context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
                       page = context.new_page()
                       stealth_sync(page)
                       page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["image","stylesheet","font","media"] else route.continue_())
@@ -136,145 +127,150 @@ jobs:
                       soup = BeautifulSoup(page.content(), "html.parser")
                       browser.close()
                       pub_time = None
-                      for script in soup.find_all('script', type='application/ld+json'):
+                      for script in soup.find_all("script", type="application/ld+json"):
                           try:
-                              data = json.loads(script.string or '{}')
-                              if 'datePublished' in data:
-                                  pub_time = date_parser.parse(data['datePublished'])
-                                  break
+                              data = json.loads(script.string or "{}")
+                              if "datePublished" in data: pub_time = date_parser.parse(data["datePublished"]); break
                           except: pass
                       if not pub_time:
-                          meta = soup.find('meta', property='article:published_time') or soup.find('meta', {'name': 'date'})
-                          if meta and meta.get('content'): pub_time = date_parser.parse(meta['content'])
+                          meta = soup.find("meta", property="article:published_time") or soup.find("meta", {"name":"date"})
+                          if meta and meta.get("content"): pub_time = date_parser.parse(meta["content"])
+                      if not pub_time:
+                          m = re.search(r"/(\d{4})/(\d{2})/(\d{2})/", url)
+                          if m: pub_time = datetime.datetime(int(m.group(1)),int(m.group(2)),int(m.group(3)),tzinfo=datetime.timezone.utc)
                       if pub_time:
                           if pub_time.tzinfo is None: pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
-                          age = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
-                          if age > MAX_AGE_HOURS:
-                              return None, None, None
+                          if (datetime.datetime.now(datetime.timezone.utc)-pub_time).total_seconds()/3600 > MAX_AGE_HOURS: return None,None,None
                       title = soup.title.string.strip() if soup.title else ""
-                      title = re.sub(r'\s*[-|]\s*Kenyans\.co\.ke.*', '', title, flags=re.I).strip()
+                      title = re.sub(r"\s*[-]\s*Kenyans\.co\.ke.*","",title,flags=re.I).strip()
                       article_text = ""
-                      for sel in ['article', '.article-body', '.post-content', '.entry-content', '.content', 'main']:
+                      for sel in ["article",".article-body",".post-content",".entry-content",".content","main"]:
                           cont = soup.select_one(sel)
                           if cont:
                               article_text = "
 
-".join(p.get_text(strip=True) for p in cont.find_all('p') if len(p.get_text(strip=True)) > 40)
-                              if len(article_text) > 400: break
-                      if len(article_text) < 400:
+".join(p.get_text(strip=True) for p in cont.find_all("p") if len(p.get_text(strip=True))>40)
+                              if len(article_text)>400: break
+                      if len(article_text)<400:
                           article_text = "
 
-".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40)
+".join(p.get_text(strip=True) for p in soup.find_all("p") if len(p.get_text(strip=True))>40)
                       img_url = ""
-                      og = soup.find('meta', property='og:image')
-                      if og: img_url = og.get('content', '')
+                      og = soup.find("meta", property="og:image")
+                      if og: img_url = og.get("content","")
                       return article_text, img_url, title
-              except Exception as e: return None, None, None
+              except: return None, None, None
 
           def get_internal_context():
-              posts_dir = os.environ.get("POSTS_DIR", "content/posts")
+              posts_dir = os.environ.get("POSTS_DIR","content/posts")
               if not os.path.exists(posts_dir): return ""
               files = [f for f in os.listdir(posts_dir) if f.endswith(".md")]
-              sample = random.sample(files, min(len(files), 3))
-              links = []
+              sample = random.sample(files, min(len(files),3)); links = []
               for fn in sample:
                   try:
-                      with open(os.path.join(posts_dir, fn), "r", encoding="utf-8") as f: content = f.read()
-                      title_m = re.search(r'title:\s*"(.*?)"', content)
-                      slug_m = re.search(r'slug:\s*"(.*?)"', content)
-                      if title_m and slug_m: links.append(f'- [{title_m.group(1)}](https://zandani.co.ke/article/{slug_m.group(1)})')
+                      with open(os.path.join(posts_dir,fn),"r",encoding="utf-8") as f: content = f.read()
+                      t = re.search(r"title:\s*"(.*?)"", content); s = re.search(r"slug:\s*"(.*?)"", content)
+                      if t and s: links.append("- [" + t.group(1) + "](https://zandani.co.ke/article/" + s.group(1) + ")")
                   except: pass
               return "
 ".join(links) if links else ""
 
-          raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY1"] if os.environ.get(k)]
+          raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY","GEMINI_API_KEY","GEMINI_API_KEY1"] if os.environ.get(k)]
           if not raw_keys: sys.exit(1)
-          key_cycle = itertools.cycle(raw_keys)
-          current_key = next(key_cycle)
-          client = genai.Client(api_key=current_key)
+          key_cycle = itertools.cycle(raw_keys); current_key = next(key_cycle); client = genai.Client(api_key=current_key)
 
-          def gemini_generate(prompt, label="", use_search=False):
+          def gemini_generate(prompt, use_search=False):
               global current_key, client
               for model in MODELS_TO_TRY:
                   for _ in range(6):
                       try:
                           config = types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]) if use_search else None
-                          resp = client.models.generate_content(model=model, contents=prompt, config=config)
-                          return resp.text.strip()
+                          return client.models.generate_content(model=model, contents=prompt, config=config).text.strip()
                       except Exception as e:
                           if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower():
-                              time.sleep(random.uniform(20, 35))
-                              current_key = next(key_cycle)
-                              client = genai.Client(api_key=current_key)
-                              continue
+                              time.sleep(random.uniform(20,35)); current_key = next(key_cycle); client = genai.Client(api_key=current_key); continue
                           break
               return None
 
           article_links = get_target_urls()
           if not article_links: sys.exit(0)
-          memory_path = os.environ.get('MEMORY_FILE')
-          memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
-          full_raw_text, target_image, target_title, final_hash = None, None, None, None
+          memory_path = os.environ.get("MEMORY_FILE")
+          memory = json.load(open(memory_path)) if memory_path and os.path.exists(memory_path) else []
+          full_raw_text = target_image = target_title = final_hash = None
           for link in article_links:
               u_hash = hashlib.md5(link.encode()).hexdigest()
               if u_hash in memory: continue
               text, img, title = scrape_article(link)
-              if text and len(text) > 400:
-                  full_raw_text = text
-                  target_image = img
-                  target_title = title or "Kenya News"
-                  final_hash = u_hash
-                  break
+              if text and len(text)>400:
+                  full_raw_text=text; target_image=img; target_title=title or "Kenya News"; final_hash=u_hash; break
           if not full_raw_text: sys.exit(0)
 
-          title_prompt = "SCRAPED ARTICLE: " + target_title + "\n" + "Classify: LIST, BIO, SCANDAL, GUIDE, TRENDING, NEWS, MATCH REPORT, TRANSFER.\n" + "HIGH-CTR FORMULAS: 1. Number+Keyword+Benefit, 2. Keyword+Power Word+" + current_year + ", 3. How/What+Keyword+Number, 4. Keyword+[Bracket Hook], 5. Adjective+Number+Outcome.\n" + "Generate EXACTLY 3 SEO titles <60 chars, front-load keyword. Pick best.\n" + 'Output ONLY JSON: {"final_title": "Winning Title"}'
-          title_text = gemini_generate(title_prompt, "title")
+          title_prompt = "Current Year: " + current_year + "
+SCRAPED TITLE: " + target_title + "
+ARTICLE CONTENT:
+" + full_raw_text[:2000] + "
+Classify: LIST, BIO, SCANDAL, GUIDE, TRENDING, NEWS, MATCH REPORT, TRANSFER.
+Generate EXACTLY 3 SEO titles <60 chars, front-load keyword. Pick the most specific one.
+CRITICAL: No vague titles. If using a year, only use " + current_year + ". Do NOT use old dates.
+Output ONLY JSON: {"final_title": "Winning Title"}"
+          title_text = gemini_generate(title_prompt)
           final_title = target_title
           if title_text:
-              try:
-                  clean = re.sub(r"^```json?\n?|```$", "", title_text, flags=re.I|re.DOTALL).strip()
-                  data = json.loads(clean)
-                  final_title = data.get('final_title', target_title)
-              except Exception as e: pass
+              try: final_title = json.loads(re.sub(r"^```json?
+?|```$","",title_text,flags=re.I|re.DOTALL).strip()).get("final_title", target_title)
+              except: pass
 
-          current_key = next(key_cycle)
-          client = genai.Client(api_key=current_key)
-          time.sleep(5)
+          current_key = next(key_cycle); client = genai.Client(api_key=current_key); time.sleep(5)
 
-          internal_links = get_internal_context()
-          banned_str = ", ".join(BANNED_PHRASES)
+          article_prompt = "Current Date: " + full_date_str + ". The current year is " + current_year + ".
+TITLE: " + final_title + "
+SOURCE TEXT:
+" + full_raw_text[:9500] + "
+INTERNAL LINKS:
+" + get_internal_context() + "
 
-          article_prompt = "Current Date: " + full_date_str + ". The current year is " + current_year + ".\n" + "TITLE: " + final_title + "\n" + "SOURCE TEXT: " + full_raw_text[:9500] + "\n" + "INTERNAL LINKS TO WEAVE IN (use 1-2 naturally):\n" + internal_links + "\n\n" + "TASK: Write a sharp, authoritative news article as Celestine Nzioka for Za Ndani.\n" + "Professional tone. No Sheng. Facts first. No em-dashes. Single hyphens only.\n" + "IMPORTANT: Do NOT refer to " + current_year + " events as happening in 2024. Update all date references to reflect the current year (" + current_year + ").\n" + "No title/author/date in body.\n" + "Start with ## H2 keyword heading.\n" + "Then 35-45 word summary paragraph.\n" + "Then ### subheadings with details.\n" + "BANNED PHRASES (never use): " + banned_str + "\n" + "Factual, direct, local context. No cliches."
-
-          article_text = gemini_generate(article_prompt, "article", use_search=True)
+TASK: Write a sharp, authoritative news article as Celestine Nzioka for Za Ndani.
+Professional tone. No Sheng. Facts first. No em-dashes. Single hyphens only.
+IMPORTANT: Do NOT use 2024 for " + current_year + " events.
+No title/author/date in body. Start with ## H2 heading. Then 35-45 word summary. Then ### subheadings.
+BANNED PHRASES: " + ", ".join(BANNED_PHRASES) + "
+Factual, direct, local context. No cliches."
+          article_text = gemini_generate(article_prompt, use_search=True)
           if not article_text: sys.exit(1)
 
-          article_text = re.sub(r"^```(?:markdown)?\n?", "", article_text).rstrip("```").strip()
-          article_text = re.sub(r"^(Title|By|Date):.*?\n", "", article_text, flags=re.I|re.M)
-          article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
-          slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
+          article_text = re.sub(r"^```(?:markdown)?
+?","",article_text).rstrip("```").strip()
+          article_text = re.sub(r"^(Title|By|Date):.*?
+","",article_text,flags=re.I|re.M).replace("—","-").replace("–","-")
+          slug = re.sub(r"[^a-z0-9]+"," ",final_title.lower()).strip().replace(" ","-")[:68]
           final_image = upload_to_imgbb(target_image) if target_image else ""
-          posts_dir = os.environ.get("POSTS_DIR", "content/posts")
-          os.makedirs(posts_dir, exist_ok=True)
+          posts_dir = os.environ.get("POSTS_DIR","content/posts"); os.makedirs(posts_dir, exist_ok=True)
 
-          final_content = "---\n" + 'title: "' + final_title.replace('"', "'") + '"\n' + 'slug: "' + slug + '"\n' + 'author: "Celestine Nzioka"\n' + 'image: "' + final_image + '"\n' + 'category: "News"\n' + 'date: "' + publish_timestamp + '"\n' + "---\n" + article_text + "\n"
+          front = "---
+"
+          front += "title: "" + final_title.replace('"',"'") + ""
+"
+          front += "slug: "" + slug + ""
+"
+          front += "author: "Celestine Nzioka"
+"
+          front += "image: "" + final_image + ""
+"
+          front += "category: "News"
+"
+          front += "date: "" + publish_timestamp + ""
+"
+          front += "---
+"
+          final_file = front + article_text + "
+"
 
-          filepath = os.path.join(posts_dir, f"{today_str}-{slug}.md")
-          with open(filepath, "w", encoding="utf-8") as f: f.write(final_content)
+          filepath = os.path.join(posts_dir, today_str + "-" + slug + ".md")
+          with open(filepath,"w",encoding="utf-8") as f: f.write(final_file)
           memory.append(final_hash)
-          with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
-          print(f"Saved: {filepath}")
-          SCRIPT_EOF
-
-      - name: Run Scraper
-        env:
-          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
-          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
-          POSTS_DIR: ${{ env.POSTS_DIR }}
-          MEMORY_FILE: ${{ env.MEMORY_FILE }}
-        run: python run_scraper.py
+          with open(memory_path,"w") as f: json.dump(memory[-300:], f)
+          print("Saved:", filepath)
+          PYEOF
 
       - name: Git Safety Pull
         run: |
@@ -290,6 +286,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Celestine Nzioka <bot@zandani.co.ke>"
-          commit_message: "content: Breaking news update by Celestine Nzioka "
+          commit_message: "content: Breaking news update by Celestine Nzioka"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_celestine.json'
