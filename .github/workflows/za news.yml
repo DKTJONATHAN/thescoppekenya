@@ -78,7 +78,6 @@ jobs:
           from playwright.sync_api import sync_playwright
           from playwright_stealth import stealth_sync
 
-          # Define current times
           current_utc = datetime.datetime.utcnow()
           current_year = current_utc.strftime("%Y")
           publish_timestamp = current_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -97,7 +96,6 @@ jobs:
               "in today's digital age", "tapestry"
           ]
 
-          # Exclude non-news URLs
           BANNED_URL_PATHS = [
               '/author/', '/tag/', '/page/', '/feed/', '/comment-', '/category/',
               '/terms', '/about', '/privacy', '/contact', '/advertise', '/policy', '/disclaimer'
@@ -136,7 +134,6 @@ jobs:
                           page.evaluate("window.scrollBy(0, 1800)")
                           time.sleep(random.uniform(2, 4))
                       soup = BeautifulSoup(page.content(), 'html.parser')
-
                       for a in soup.find_all('a', href=True):
                           href = a.get('href', '').strip()
                           if not href: continue
@@ -144,8 +141,6 @@ jobs:
                           if SITE_DOMAIN not in full_url: continue
                           path = full_url.split(SITE_DOMAIN)[-1].lower()
                           slug = path.rstrip('/').split('/')[-1]
-
-                          # Strict filtering for valid news articles only
                           if (len(slug) > 15 and '-' in slug and not any(x in path for x in BANNED_URL_PATHS)):
                               if full_url not in seen:
                                   seen.add(full_url)
@@ -153,7 +148,6 @@ jobs:
                       browser.close()
               except Exception as e:
                   print(f"Scan failed: {e}")
-
               print(f"Found {len(urls_list)} candidates. Top 8:")
               for u in urls_list[:8]: print(u)
               return urls_list[:30]
@@ -284,11 +278,17 @@ jobs:
               print("No fresh valid article")
               sys.exit(0)
 
-          title_prompt = f"""SCRAPED ARTICLE: {target_title}
-          Classify: LIST, BIO, SCANDAL, GUIDE, TRENDING, NEWS, MATCH REPORT, TRANSFER.
-          HIGH-CTR FORMULAS: 1. Number+Keyword+Benefit, 2. Keyword+Power Word+Year, 3. How/What+Keyword+Number, 4. Keyword+[Bracket Hook], 5. Adjective+Number+Outcome.
-          Generate EXACTLY 3 SEO titles <60 chars, front-load keyword. Pick best.
-          Output ONLY JSON: {{"final_title": "Winning Title"}}"""
+          title_prompt = (
+              "Today is " + full_date_str + ". Current year is " + current_year + ".\n"
+              "SCRAPED ARTICLE TITLE: " + target_title + "\n"
+              "ARTICLE SNIPPET:\n" + full_raw_text[:1500] + "\n"
+              "Classify: LIST, BIO, SCANDAL, GUIDE, TRENDING, NEWS, MATCH REPORT, TRANSFER.\n"
+              "HIGH-CTR FORMULAS: 1. Number+Keyword+Benefit, 2. Keyword+Power Word+" + current_year + ", "
+              "3. How/What+Keyword+Number, 4. Keyword+[Bracket Hook], 5. Adjective+Number+Outcome.\n"
+              "Generate EXACTLY 3 SEO titles <60 chars, front-load keyword. Pick the most specific one.\n"
+              "RULES: Never use a year other than " + current_year + ". Title must match actual article content. No vague titles.\n"
+              "Output ONLY JSON: {\"final_title\": \"Winning Title\"}"
+          )
           title_text = gemini_generate(title_prompt, "title")
           final_title = target_title
           if title_text:
@@ -306,22 +306,21 @@ jobs:
           internal_links = get_internal_context()
           banned_str = ", ".join(BANNED_PHRASES)
 
-          # Force the AI to use the current year
-          article_prompt = f"""Current Date: {full_date_str}. The current year is {current_year}.
-          TITLE: {final_title}
-          SOURCE TEXT: {full_raw_text[:9500]}
-          INTERNAL LINKS TO WEAVE IN (use 1-2 naturally):
-          {internal_links}
-
-          TASK: Write a sharp, authoritative news article as Celestine Nzioka for Za Ndani.
-          Professional tone. No Sheng. Facts first. No em-dashes. Single hyphens only.
-          IMPORTANT: Do NOT refer to {current_year} events as happening in 2024. Update all date references to reflect the current year ({current_year}).
-          No title/author/date in body.
-          Start with ## H2 keyword heading.
-          Then 35-45 word summary paragraph.
-          Then ### subheadings with details.
-          BANNED PHRASES (never use): {banned_str}
-          Factual, direct, local context. No cliches."""
+          article_prompt = (
+              "Today is " + full_date_str + ". The current year is " + current_year + ". You are writing in real time.\n"
+              "TITLE: " + final_title + "\n"
+              "SOURCE TEXT:\n" + full_raw_text[:9500] + "\n"
+              "INTERNAL LINKS TO WEAVE IN (use 1-2 naturally):\n" + internal_links + "\n\n"
+              "TASK: Write a sharp, authoritative news article as Celestine Nzioka for Za Ndani.\n"
+              "Professional tone. No Sheng. Facts first. No em-dashes. Single hyphens only.\n"
+              "CRITICAL: This article is happening NOW in " + current_year + ". Never write as if events are from 2024 or any past year. All dates and references must reflect " + current_year + ".\n"
+              "No title/author/date in body.\n"
+              "Start with ## H2 keyword heading.\n"
+              "Then 35-45 word summary paragraph.\n"
+              "Then ### subheadings with details.\n"
+              "BANNED PHRASES (never use): " + banned_str + "\n"
+              "Factual, direct, local context. No cliches."
+          )
 
           article_text = gemini_generate(article_prompt, "article", use_search=True)
           if not article_text: sys.exit(1)
@@ -333,18 +332,20 @@ jobs:
           final_image = upload_to_imgbb(target_image) if target_image else ""
           posts_dir = os.environ.get("POSTS_DIR", "content/posts")
           os.makedirs(posts_dir, exist_ok=True)
-          final_file = textwrap.dedent(f"""\
-          ---
-          title: "{final_title.replace('"', "'")}"
-          slug: "{slug}"
-          author: "Celestine Nzioka"
-          image: "{final_image}"
-          category: "News"
-          date: "{publish_timestamp}"
-          ---
-          {article_text}
-          """)
-          filepath = os.path.join(posts_dir, f"{today_str}-{slug}.md")
+          lines = [
+              "---",
+              'title: "' + final_title.replace('"', "'") + '"',
+              'slug: "' + slug + '"',
+              'author: "Celestine Nzioka"',
+              'image: "' + final_image + '"',
+              'category: "News"',
+              'date: "' + publish_timestamp + '"',
+              "---",
+              article_text,
+              ""
+          ]
+          final_file = "\n".join(lines)
+          filepath = os.path.join(posts_dir, today_str + "-" + slug + ".md")
           with open(filepath, "w", encoding="utf-8") as f: f.write(final_file)
           memory.append(final_hash)
           with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
