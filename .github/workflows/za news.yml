@@ -279,15 +279,11 @@ jobs:
               sys.exit(0)
 
           title_prompt = (
-              "Today is " + full_date_str + ". Current year is " + current_year + ".\n"
               "SCRAPED ARTICLE TITLE: " + target_title + "\n"
               "ARTICLE SNIPPET:\n" + full_raw_text[:1500] + "\n"
-              "Classify: LIST, BIO, SCANDAL, GUIDE, TRENDING, NEWS, MATCH REPORT, TRANSFER.\n"
-              "HIGH-CTR FORMULAS: 1. Number+Keyword+Benefit, 2. Keyword+Power Word+" + current_year + ", "
-              "3. How/What+Keyword+Number, 4. Keyword+[Bracket Hook], 5. Adjective+Number+Outcome.\n"
-              "Generate EXACTLY 3 SEO titles <60 chars, front-load keyword. Pick the most specific one.\n"
-              "RULES: Never use a year other than " + current_year + ". Title must match actual article content. No vague titles.\n"
-              "Output ONLY JSON: {\"final_title\": \"Winning Title\"}"
+              "Write a single news headline for this article.\n"
+              "Rules: Plain reporting tone like a newspaper front page. No dates or years in the title. No numbers at the start. No clickbait. No brackets. No hype words. Just a clean factual sentence that tells the reader exactly what happened.\n"
+              "Output ONLY JSON: {\"final_title\": \"Your Title Here\"}"
           )
           title_text = gemini_generate(title_prompt, "title")
           final_title = target_title
