@@ -110,8 +110,6 @@ jobs:
                           time.sleep(1)
                       soup = BeautifulSoup(page.content(), 'html.parser')
                       browser.close()
-
-                      # Find first free Unsplash image
                       for img in soup.find_all('img'):
                           src = img.get('src', '')
                           if 'images.unsplash.com/photo-' in src and 'premium' not in src and 'profile' not in src:
@@ -156,7 +154,6 @@ jobs:
                           page.evaluate("window.scrollBy(0, 1800)")
                           time.sleep(random.uniform(2, 4))
                       soup = BeautifulSoup(page.content(), 'html.parser')
-
                       for a in soup.find_all('a', href=True):
                           href = a.get('href', '').strip()
                           if not href: continue
@@ -171,7 +168,6 @@ jobs:
                       browser.close()
               except Exception as e:
                   print(f"Scan failed: {e}")
-
               print(f"Found {len(urls_list)} candidates. Top 8:")
               for u in urls_list[:8]: print(u)
               return urls_list[:30]
@@ -302,12 +298,13 @@ jobs:
               print("No fresh valid article")
               sys.exit(0)
 
-          # Get SEO Title
-          title_prompt = f"""SCRAPED ARTICLE: {target_title}
-          Classify: OPINION, EDITORIAL, ANALYSIS, COMMENTARY.
-          HIGH-CTR FORMULAS: 1. Keyword+[Bracket Hook], 2. Adjective+Opinion+Outcome, 3. Why+Keyword.
-          Generate EXACTLY 3 SEO titles <60 chars, front-load keyword. Pick best.
-          Output ONLY JSON: {{"final_title": "Winning Title"}}"""
+          title_prompt = (
+              "SCRAPED ARTICLE TITLE: " + target_title + "\n"
+              "ARTICLE SNIPPET:\n" + full_raw_text[:1500] + "\n"
+              "Write a single news headline for this article.\n"
+              "Rules: Plain reporting tone like a newspaper front page. No dates or years in the title. No numbers at the start. No clickbait. No brackets. No hype words. Just a clean factual sentence that tells the reader exactly what happened.\n"
+              "Output ONLY JSON: {\"final_title\": \"Your Title Here\"}"
+          )
           title_text = gemini_generate(title_prompt, "title")
           final_title = target_title
           if title_text:
@@ -318,8 +315,7 @@ jobs:
               except Exception as e:
                   print(f"Title parse error: {e}")
 
-          # Get Unsplash Image
-          kw_prompt = f"Based on this title: '{final_title}', provide a single visually descriptive English keyword (max 2 words) to search for a stock photo. Output ONLY the keyword, no punctuation."
+          kw_prompt = "Based on this title: '" + final_title + "', provide a single visually descriptive English keyword (max 2 words) to search for a stock photo. Output ONLY the keyword, no punctuation."
           image_kw = gemini_generate(kw_prompt, "image keyword")
           target_image = get_unsplash_image(image_kw) if image_kw else ""
           if not target_image:
@@ -332,20 +328,20 @@ jobs:
 
           internal_links = get_internal_context()
           banned_str = ", ".join(BANNED_PHRASES)
-          article_prompt = f"""Current Date: {full_date_str}
-          TITLE: {final_title}
-          SOURCE TEXT: {full_raw_text[:9500]}
-          INTERNAL LINKS TO WEAVE IN (use 1-2 naturally):
-          {internal_links}
-
-          TASK: Write a powerful, intellectual op-ed as Jonathan Mwaniki for Za Ndani.
-          Authoritative, thought-provoking Kenyan opinion piece. Professional English. No em-dashes. Single hyphens only.
-          No title/author/date in body.
-          Start with ## H2 keyword heading.
-          Then 35-45 word summary paragraph.
-          Then ### subheadings with details.
-          BANNED PHRASES (never use): {banned_str}
-          Analytical, bold, opinion-driven. No cliches."""
+          article_prompt = (
+              "Current Date: " + full_date_str + "\n"
+              "TITLE: " + final_title + "\n"
+              "SOURCE TEXT:\n" + full_raw_text[:9500] + "\n"
+              "INTERNAL LINKS TO WEAVE IN (use 1-2 naturally):\n" + internal_links + "\n\n"
+              "TASK: Write a powerful, intellectual op-ed as Jonathan Mwaniki for Za Ndani.\n"
+              "Authoritative, thought-provoking Kenyan opinion piece. Professional English. No em-dashes. Single hyphens only.\n"
+              "No title/author/date in body.\n"
+              "Start with ## H2 keyword heading.\n"
+              "Then 35-45 word summary paragraph.\n"
+              "Then ### subheadings with details.\n"
+              "BANNED PHRASES (never use): " + banned_str + "\n"
+              "Analytical, bold, opinion-driven. No cliches."
+          )
           article_text = gemini_generate(article_prompt, "article", use_search=True)
           if not article_text: sys.exit(1)
 
@@ -353,23 +349,23 @@ jobs:
           article_text = re.sub(r"^(Title|By|Date):.*?\n", "", article_text, flags=re.I|re.M)
           article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
-
           final_image = upload_to_imgbb(target_image) if target_image else ""
-
           posts_dir = os.environ.get("POSTS_DIR", "content/posts")
           os.makedirs(posts_dir, exist_ok=True)
-          final_file = textwrap.dedent(f"""\
-          ---
-          title: "{final_title.replace('"', "'")}"
-          slug: "{slug}"
-          author: "Jonathan Mwaniki"
-          image: "{final_image}"
-          category: "Opinions"
-          date: "{publish_timestamp}"
-          ---
-          {article_text}
-          """)
-          filepath = os.path.join(posts_dir, f"{today_str}-{slug}.md")
+          lines = [
+              "---",
+              'title: "' + final_title.replace('"', "'") + '"',
+              'slug: "' + slug + '"',
+              'author: "Jonathan Mwaniki"',
+              'image: "' + final_image + '"',
+              'category: "Opinions"',
+              'date: "' + publish_timestamp + '"',
+              "---",
+              article_text,
+              ""
+          ]
+          final_file = "\n".join(lines)
+          filepath = os.path.join(posts_dir, today_str + "-" + slug + ".md")
           with open(filepath, "w", encoding="utf-8") as f: f.write(final_file)
           memory.append(final_hash)
           with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
