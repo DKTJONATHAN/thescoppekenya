@@ -23,8 +23,16 @@ jobs:
       - name: Generate Sitemaps
         run: node scripts/generate-sitemap.js
 
-      # ✅ Commit generated sitemaps back to repo
-      # Vercel will auto-detect the new commit and redeploy automatically
+      # ✅ DEBUG: See exactly what got written and where
+      - name: Debug output
+        run: |
+          echo "=== public/ folder contents ==="
+          ls -la public/
+          echo "=== content/posts/ count ==="
+          ls content/posts/ | wc -l
+          echo "=== sitemap-news.xml preview ==="
+          cat public/sitemap-news.xml || echo "FILE NOT FOUND"
+
       - name: Commit and push sitemaps
         run: |
           git config user.name "github-actions[bot]"
