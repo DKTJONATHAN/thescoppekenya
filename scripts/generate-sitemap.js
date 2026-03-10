@@ -1,10 +1,17 @@
 #!/usr/bin/env node
 
+/**
+ * Generates a static sitemap.xml at build time
+ * This runs after Vite build to create the sitemap with all posts
+ * UPDATED: Now generates BOTH sitemap.xml AND sitemap-news.xml for entertainment niche
+ */
+
 import fs from 'fs/promises';
 import path from 'path';
 
 const SITE_URL = 'https://zandani.co.ke';
 
+// Entertainment-focused categories only
 const categories = [
   { name: "Entertainment", slug: "entertainment" },
   { name: "Celebrity Gossip", slug: "gossip" },
@@ -14,10 +21,12 @@ const categories = [
 async function parseFrontmatter(content) {
   const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
   const match = content.match(frontmatterRegex);
-  if (!match) return { data: {} };
 
+  if (!match) return { data: {}, content };
+
+  const yamlContent = match[1];
   const data = {};
-  const lines = match[1].split('\n');
+  const lines = yamlContent.split('\n');
 
   for (const line of lines) {
     const colonIndex = line.indexOf(':');
@@ -30,10 +39,7 @@ async function parseFrontmatter(content) {
       value = value.slice(1, -1).split(',').map(item => item.trim().replace(/^["']|["']$/g, ''));
     } else if (value === 'true') value = true;
     else if (value === 'false') value = false;
-    else if (
-      (value.startsWith('"') && value.endsWith('"')) ||
-      (value.startsWith("'") && value.endsWith("'"))
-    ) {
+    else if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
       value = value.slice(1, -1);
     }
 
@@ -57,27 +63,23 @@ async function getAllPosts() {
       const content = await fs.readFile(filePath, 'utf-8');
       const { data } = await parseFrontmatter(content);
 
-      let postDate = data.date || new Date().toISOString().split('T')[0];
-      if (typeof postDate !== 'string') {
-        postDate = new Date(postDate).toISOString().split('T')[0];
-      }
-
       posts.push({
         slug: data.slug || file.replace('.md', ''),
-        date: postDate,
+        date: data.date || new Date().toISOString().split('T')[0],
         title: data.title || '',
         featured: data.featured || false,
-        tags: Array.isArray(data.tags) ? data.tags : [],
+        tags: Array.isArray(data.tags) ? data.tags : []
       });
     }
   } catch (error) {
-    console.error('âŒ Error reading posts:', error);
+    console.error('Error reading posts:', error);
   }
 
   return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
-async function generateSitemap(posts) {
+async function generateSitemap() {
+  const posts = await getAllPosts();
   const today = new Date().toISOString().split('T')[0];
 
   const staticPages = [
@@ -88,85 +90,67 @@ async function generateSitemap(posts) {
     { loc: '/terms', priority: '0.3', changefreq: 'monthly' },
   ];
 
-  const thirtyDaysMs = 30 * 24 * 60 * 60 * 1000;
+  // Recent posts only (last 30 days)
   const recentPosts = posts.filter(post => {
-    return (Date.now() - new Date(post.date).getTime()) < thirtyDaysMs;
+    const postDate = new Date(post.date);
+    return (Date.now() - postDate.getTime()) < 30 * 24 * 60 * 60 * 1000;
   });
 
   const postUrls = recentPosts.slice(0, 500).map(post => ({
     loc: `/article/${post.slug}`,
     lastmod: post.date,
     priority: post.featured ? '0.9' : '0.8',
-    changefreq: 'daily',
+    changefreq: 'daily'
   }));
 
   const categoryUrls = categories.map(cat => ({
     loc: `/category/${cat.slug}`,
     priority: '0.9',
     changefreq: 'daily',
-    lastmod: today,
+    lastmod: today
   }));
-
-  const sitemapIndex = `<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>${SITE_URL}/sitemap.xml</loc>
-    <lastmod>${today}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${SITE_URL}/sitemap-news.xml</loc>
-    <lastmod>${today}</lastmod>
-  </sitemap>
-</sitemapindex>`;
 
   const allUrls = [...staticPages, ...postUrls, ...categoryUrls];
 
-  const urlElements = allUrls.map(url =>
-    `  <url>
-    <loc>${SITE_URL}${url.loc}</loc>
-    ${url.lastmod ? `<lastmod>${url.lastmod}</lastmod>` : ''}
-    <changefreq>${url.changefreq}</changefreq>
-    <priority>${url.priority}</priority>
-  </url>`
-  ).join('\n');
+  const urlElements = allUrls.map(url => 
+    `<url>
+      <loc>${SITE_URL}${url.loc}</loc>
+      ${url.lastmod ? `<lastmod>${url.lastmod}</lastmod>` : ''}
+      <changefreq>${url.changefreq}</changefreq>
+      <priority>${url.priority}</priority>
+    </url>`
+  ).join('');
 
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+  return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urlElements}
 </urlset>`;
-
-  return { sitemap, sitemapIndex };
 }
 
 async function generateNewsSitemap(posts) {
-  const fortyEightHoursMs = 48 * 60 * 60 * 1000;
-  const now = Date.now();
+  // FIX 1: Use milliseconds to avoid month-boundary bug
+  const cutoffMs = Date.now() - (48 * 60 * 60 * 1000);
 
   const newsPosts = posts.filter(post => {
-    if (!post.title) return false;
-    const postTime = new Date(post.date).getTime();
-    return (now - postTime) < fortyEightHoursMs;
+    const postDate = new Date(post.date).getTime();
+    return postDate >= cutoffMs && post.title;
   }).slice(0, 1000);
 
-  console.log(`ðŸ” News sitemap: found ${newsPosts.length} posts within 48 hours`);
-
-  if (newsPosts.length === 0) {
-    console.warn('âš ï¸  No posts within 48 hours. News sitemap will be empty.');
-    console.warn('    Check that post frontmatter dates use YYYY-MM-DD format and match today/yesterday.');
-  }
+  console.log(`News sitemap: ${newsPosts.length} posts found within 48 hours`);
 
   const newsElements = newsPosts.map(post => {
-    const pubDate = new Date(post.date + 'T09:00:00Z').toISOString();
+    const pubDate = new Date(post.date + 'T20:00:00+03:00').toISOString();
+    const genres = ['Entertainment'];
 
-    const isOpinion = post.tags.some(t => t.toLowerCase().includes('opinion') || t.toLowerCase().includes('editorial'));
-    const isBlog = post.tags.some(t => t.toLowerCase().includes('blog'));
-    const genreTag = isOpinion
-      ? '\n      <news:genres>Opinion</news:genres>'
-      : isBlog
-        ? '\n      <news:genres>Blog</news:genres>'
-        : '';
+    if (post.tags.some(t => t.toLowerCase().includes('music') || t.toLowerCase().includes('song'))) {
+      genres.push('Music');
+    }
+    if (post.tags.some(t => t.toLowerCase().includes('gossip'))) {
+      genres.push('Celebrity Gossip');
+    }
 
-    return `  <url>
+    return `
+  <url>
     <loc>${SITE_URL}/article/${post.slug}</loc>
     <news:news>
       <news:publication>
@@ -174,10 +158,11 @@ async function generateNewsSitemap(posts) {
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>${pubDate}</news:publication_date>
-      <news:title>${post.title.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')}</news:title>${genreTag}
+      <news:title>${post.title.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</news:title>
+      <news:genres>${genres.join(',')}</news:genres>
     </news:news>
   </url>`;
-  }).join('\n');
+  }).join('');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset
@@ -188,35 +173,55 @@ ${newsElements}
 </urlset>`;
 }
 
-async function writeFile(filePath, content) {
-  await fs.mkdir(path.dirname(filePath), { recursive: true });
-  await fs.writeFile(filePath, content, 'utf-8');
-  console.log(`âœ… Written: ${filePath}`);
-}
-
 async function main() {
-  console.log('ðŸ—ºï¸  Generating sitemaps...');
+  console.log('Generating sitemaps...');
 
   const posts = await getAllPosts();
 
-  const { sitemap, sitemapIndex } = await generateSitemap(posts);
+  // Generate main sitemap (unchanged from original)
+  const sitemap = await generateSitemap();
+  const outputPath = path.resolve(process.cwd(), 'dist/sitemap.xml');
+  const publicPath = path.resolve(process.cwd(), 'public/sitemap.xml');
+
+  try {
+    await fs.writeFile(outputPath, sitemap, 'utf-8');
+    console.log(`sitemap.xml written to dist/`);
+  } catch (e) {
+    console.log('dist/sitemap.xml skipped');
+  }
+
+  await fs.writeFile(publicPath, sitemap, 'utf-8');
+  console.log(`sitemap.xml written to public/`);
+
+  // Generate news sitemap
   const newsSitemap = await generateNewsSitemap(posts);
+  const newsOutputPath = path.resolve(process.cwd(), 'dist/sitemap-news.xml');
+  const newsPublicPath = path.resolve(process.cwd(), 'public/sitemap-news.xml');
 
-  await writeFile(path.resolve(process.cwd(), 'dist/sitemap.xml'), sitemap);
-  await writeFile(path.resolve(process.cwd(), 'public/sitemap.xml'), sitemap);
+  // FIX 2: Create directories before writing so it never fails silently
+  try {
+    await fs.mkdir(path.dirname(newsOutputPath), { recursive: true });
+    await fs.writeFile(newsOutputPath, newsSitemap, 'utf-8');
+    console.log(`sitemap-news.xml written to dist/`);
+  } catch (e) {
+    console.log('dist/sitemap-news.xml skipped:', e.message);
+  }
 
-  await writeFile(path.resolve(process.cwd(), 'dist/sitemap-news.xml'), newsSitemap);
-  await writeFile(path.resolve(process.cwd(), 'public/sitemap-news.xml'), newsSitemap);
+  await fs.mkdir(path.dirname(newsPublicPath), { recursive: true });
+  await fs.writeFile(newsPublicPath, newsSitemap, 'utf-8');
+  console.log(`sitemap-news.xml written to public/`);
 
-  await writeFile(path.resolve(process.cwd(), 'dist/sitemap-index.xml'), sitemapIndex);
-  await writeFile(path.resolve(process.cwd(), 'public/sitemap-index.xml'), sitemapIndex);
+  const recentCount = posts.filter(p => {
+    const d = new Date(p.date);
+    return (Date.now() - d) < 30 * 24 * 60 * 60 * 1000;
+  }).length;
 
-  const thirtyDaysMs = 30 * 24 * 60 * 60 * 1000;
-  const fortyEightHoursMs = 48 * 60 * 60 * 1000;
-  const recentCount = posts.filter(p => (Date.now() - new Date(p.date).getTime()) < thirtyDaysMs).length;
-  const newsCount = posts.filter(p => (Date.now() - new Date(p.date).getTime()) < fortyEightHoursMs).length;
+  const newsCount = posts.filter(p => {
+    const d = new Date(p.date);
+    return (Date.now() - d) < 2 * 24 * 60 * 60 * 1000;
+  }).length;
 
-  console.log(`ðŸ“Š ${posts.length} total posts | ${recentCount} in last 30 days | ${newsCount} in last 48 hrs (news-ready)`);
+  console.log(`${posts.length} posts total, ${recentCount} recent, ${newsCount} news-ready`);
 }
 
 main().catch(console.error);
