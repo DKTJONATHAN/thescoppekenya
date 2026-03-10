@@ -189,12 +189,9 @@ ${newsElements}
 }
 
 async function writeFile(filePath, content) {
-  try {
-    await fs.writeFile(filePath, content, 'utf-8');
-    console.log(`âœ… Written: ${filePath}`);
-  } catch (e) {
-    console.warn(`âš ï¸  Skipped (dir not found): ${filePath}`);
-  }
+  await fs.mkdir(path.dirname(filePath), { recursive: true });
+  await fs.writeFile(filePath, content, 'utf-8');
+  console.log(`âœ… Written: ${filePath}`);
 }
 
 async function main() {
