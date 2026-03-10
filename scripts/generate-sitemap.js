@@ -12,16 +12,12 @@ const categories = [
 ];
 
 async function parseFrontmatter(content) {
-  const frontmatterRegex = /^---s*
-([sS]*?)
----s*
-([sS]*)$/;
+  const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
   const match = content.match(frontmatterRegex);
   if (!match) return { data: {} };
 
   const data = {};
-  const lines = match[1].split('
-');
+  const lines = match[1].split('\n');
 
   for (const line of lines) {
     const colonIndex = line.indexOf(':');
@@ -34,7 +30,10 @@ async function parseFrontmatter(content) {
       value = value.slice(1, -1).split(',').map(item => item.trim().replace(/^["']|["']$/g, ''));
     } else if (value === 'true') value = true;
     else if (value === 'false') value = false;
-    else if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+    else if (
+      (value.startsWith('"') && value.endsWith('"')) ||
+      (value.startsWith("'") && value.endsWith("'"))
+    ) {
       value = value.slice(1, -1);
     }
 
@@ -58,7 +57,6 @@ async function getAllPosts() {
       const content = await fs.readFile(filePath, 'utf-8');
       const { data } = await parseFrontmatter(content);
 
-      // ✅ FIX: Normalize date to YYYY-MM-DD format always
       let postDate = data.date || new Date().toISOString().split('T')[0];
       if (typeof postDate !== 'string') {
         postDate = new Date(postDate).toISOString().split('T')[0];
@@ -73,13 +71,12 @@ async function getAllPosts() {
       });
     }
   } catch (error) {
-    console.error('❌ Error reading posts:', error);
+    console.error('âŒ Error reading posts:', error);
   }
 
   return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
-// ✅ FIX: Accept posts as parameter instead of calling getAllPosts() again
 async function generateSitemap(posts) {
   const today = new Date().toISOString().split('T')[0];
 
@@ -91,7 +88,6 @@ async function generateSitemap(posts) {
     { loc: '/terms', priority: '0.3', changefreq: 'monthly' },
   ];
 
-  // ✅ FIX: Use milliseconds for date comparison — avoids month-boundary bug
   const thirtyDaysMs = 30 * 24 * 60 * 60 * 1000;
   const recentPosts = posts.filter(post => {
     return (Date.now() - new Date(post.date).getTime()) < thirtyDaysMs;
@@ -111,7 +107,6 @@ async function generateSitemap(posts) {
     lastmod: today,
   }));
 
-  // ✅ NEW: Add reference to news sitemap index
   const sitemapIndex = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
@@ -133,8 +128,7 @@ async function generateSitemap(posts) {
     <changefreq>${url.changefreq}</changefreq>
     <priority>${url.priority}</priority>
   </url>`
-  ).join('
-');
+  ).join('\n');
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -145,39 +139,31 @@ ${urlElements}
 }
 
 async function generateNewsSitemap(posts) {
-  // ✅ FIX: Use milliseconds for 48-hour window — no month-boundary bug
   const fortyEightHoursMs = 48 * 60 * 60 * 1000;
   const now = Date.now();
 
   const newsPosts = posts.filter(post => {
     if (!post.title) return false;
     const postTime = new Date(post.date).getTime();
-    // ✅ FIX: Compare to start-of-day to catch all posts published "today"
     return (now - postTime) < fortyEightHoursMs;
   }).slice(0, 1000);
 
-  console.log(`🔍 News sitemap: found ${newsPosts.length} posts within 48 hours`);
+  console.log(`ðŸ” News sitemap: found ${newsPosts.length} posts within 48 hours`);
 
   if (newsPosts.length === 0) {
-    console.warn('⚠️  No posts within 48 hours. News sitemap will be empty.');
+    console.warn('âš ï¸  No posts within 48 hours. News sitemap will be empty.');
     console.warn('    Check that post frontmatter dates use YYYY-MM-DD format and match today/yesterday.');
   }
 
   const newsElements = newsPosts.map(post => {
-    // ✅ FIX: Use noon EAT (09:00 UTC) for posts with date-only — avoids UTC midnight edge case
     const pubDate = new Date(post.date + 'T09:00:00Z').toISOString();
 
-    // ✅ FIX: Only use Google-valid genres
-    // Valid values: PressRelease, Satire, Blog, OpEd, Opinion, UserGenerated
-    // "Entertainment", "Music" etc. are NOT valid — omit the genres tag for standard news
     const isOpinion = post.tags.some(t => t.toLowerCase().includes('opinion') || t.toLowerCase().includes('editorial'));
     const isBlog = post.tags.some(t => t.toLowerCase().includes('blog'));
     const genreTag = isOpinion
-      ? `
-      <news:genres>Opinion</news:genres>`
+      ? '\n      <news:genres>Opinion</news:genres>'
       : isBlog
-        ? `
-      <news:genres>Blog</news:genres>`
+        ? '\n      <news:genres>Blog</news:genres>'
         : '';
 
     return `  <url>
@@ -191,8 +177,7 @@ async function generateNewsSitemap(posts) {
       <news:title>${post.title.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')}</news:title>${genreTag}
     </news:news>
   </url>`;
-  }).join('
-');
+  }).join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset
@@ -206,30 +191,26 @@ ${newsElements}
 async function writeFile(filePath, content) {
   try {
     await fs.writeFile(filePath, content, 'utf-8');
-    console.log(`✅ Written: ${filePath}`);
+    console.log(`âœ… Written: ${filePath}`);
   } catch (e) {
-    console.warn(`⚠️  Skipped (dir not found): ${filePath}`);
+    console.warn(`âš ï¸  Skipped (dir not found): ${filePath}`);
   }
 }
 
 async function main() {
-  console.log('🗺️  Generating sitemaps...');
+  console.log('ðŸ—ºï¸  Generating sitemaps...');
 
-  // ✅ FIX: Single getAllPosts() call — reused across both generators
   const posts = await getAllPosts();
 
   const { sitemap, sitemapIndex } = await generateSitemap(posts);
   const newsSitemap = await generateNewsSitemap(posts);
 
-  // Write main sitemap
   await writeFile(path.resolve(process.cwd(), 'dist/sitemap.xml'), sitemap);
   await writeFile(path.resolve(process.cwd(), 'public/sitemap.xml'), sitemap);
 
-  // Write news sitemap
   await writeFile(path.resolve(process.cwd(), 'dist/sitemap-news.xml'), newsSitemap);
   await writeFile(path.resolve(process.cwd(), 'public/sitemap-news.xml'), newsSitemap);
 
-  // ✅ NEW: Write sitemap index (submit THIS to Google Search Console)
   await writeFile(path.resolve(process.cwd(), 'dist/sitemap-index.xml'), sitemapIndex);
   await writeFile(path.resolve(process.cwd(), 'public/sitemap-index.xml'), sitemapIndex);
 
@@ -238,7 +219,7 @@ async function main() {
   const recentCount = posts.filter(p => (Date.now() - new Date(p.date).getTime()) < thirtyDaysMs).length;
   const newsCount = posts.filter(p => (Date.now() - new Date(p.date).getTime()) < fortyEightHoursMs).length;
 
-  console.log(`📊 ${posts.length} total posts | ${recentCount} in last 30 days | ${newsCount} in last 48 hrs (news-ready)`);
+  console.log(`ðŸ“Š ${posts.length} total posts | ${recentCount} in last 30 days | ${newsCount} in last 48 hrs (news-ready)`);
 }
 
 main().catch(console.error);
