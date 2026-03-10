@@ -1,0 +1,23 @@
+---
+title: "Saudi Aramco warns of catastrophic global oil market consequences amid Middle East conflict"
+slug: "saudi-aramco-warns-of-catastrophic-global-oil-market-consequences-am"
+author: "Celestine Nzioka"
+image: "https://i.ibb.co/v9r3fBz/ef1f5e82d1f5.jpg"
+category: "News"
+date: "2026-03-10T16:17:23Z"
+---
+## Global Oil Crisis Threatens Kenya's Fuel Stability
+
+Saudi Aramco has issued a dire warning regarding global oil market stability due to Middle East conflict disrupting Strait of Hormuz shipments, intensifying concerns for Kenya ahead of the March 14 fuel price review. This raises fears of price surges and supply disruptions despite government assurances of stable current supplies.
+
+### Aramco's Critical Warning Amid Regional Conflict
+
+Oil giant Saudi Aramco has cautioned of catastrophic consequences for global oil markets if ongoing Middle East conflict continues to disrupt shipments through the vital Strait of Hormuz. Aramco CEO Amin Nasser stated that global crude inventories are currently at a five-year low. Nasser warned that prolonged disruptions could accelerate the depletion of available supplies. He described the current situation as "by far the biggest crisis the region's oil and gas industry has faced." The Strait of Hormuz is recognized as one of the world's most critical energy corridors, typically handling approximately 20 per cent of global oil shipments daily. Oil exports from the Gulf have faced disruptions amidst escalating tensions involving Iran, alongside reports that continued U.S. and Israeli attacks could lead to a broader blockade of the shipping route. The regional instability mirrors growing concerns about the safety of Kenyan citizens abroad, as seen in the article "Uncertainty Grows for 3 Kenyan Players in Beirut as Conflict Escalates in Lebanon, Exposing Systemic Gaps."
+
+### Kenya's Fuel Outlook and EPRA's Upcoming Review
+
+These developments have heightened concern within Kenya about potential fuel shortages and price spikes. This is despite assurances from the Energy and Petroleum Regulatory Authority (EPRA) that current supplies remain stable. Kenya relies heavily on fuel supplied through a government-to-government (G-to-G) deal involving Saudi Aramco, Emirates National Oil Company, and Abu Dhabi National Oil Company. These entities provide petroleum products to Kenya under a 180-day credit plan, easing pressure on the nation's foreign exchange reserves. Under this arrangement, Gulf suppliers deliver petrol, diesel, kerosene, and jet fuel to Kenya. Aramco is presently unable to export crude directly from the Gulf, necessitating the company to draw on global inventory to meet most customer demand. CEO Nasser warned that this strategy is unsustainable over an extended period. The warning from Aramco precedes Kenya’s fuel price review by the EPRA, which is scheduled for March 14, 2026.
+
+### Government Addresses Supply Security
+
+In response to the escalating situation, Energy and Petroleum Cabinet Secretary Opiyo Wandayi called an emergency meeting with oil marketers and companies supplying fuel under the G-to-G agreement. Speaking during the official listing of Kenya Pipeline Company on the Nairobi Securities Exchange on March 10, 2026, Wandayi sought to alleviate fears of an imminent fuel shortage. He confirmed that the government is engaged in discussions with oil-producing nations participating in the supply agreement. These talks aim to ensure adequate fuel availability through contingency planning. However, uncertainty persists as Kenya awaits EPRA's upcoming pump price announcement.
