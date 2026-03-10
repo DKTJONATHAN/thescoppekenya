@@ -2,18 +2,35 @@ name: Rebuild Sitemaps
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Every hour
-  workflow_dispatch:      # Manual trigger
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   build-sitemaps:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm install
-      - run: node scripts/generate-sitemap.js
-      - name: Deploy to Vercel
-        run: npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate Sitemaps
+        run: node scripts/generate-sitemap.js
+
+      # ✅ Commit generated sitemaps back to repo
+      # Vercel will auto-detect the new commit and redeploy automatically
+      - name: Commit and push sitemaps
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/sitemap.xml public/sitemap-news.xml public/sitemap-index.xml
+          git diff --staged --quiet || (
+            git commit -m "chore: update sitemaps [skip ci]" &&
+            git push
+          )
