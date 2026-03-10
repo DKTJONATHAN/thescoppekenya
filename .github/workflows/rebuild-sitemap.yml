@@ -5,6 +5,10 @@ on:
     - cron: '0 * * * *'
   workflow_dispatch:
 
+# ✅ ADD THIS — grants the workflow permission to push to your repo
+permissions:
+  contents: write
+
 jobs:
   build-sitemaps:
     runs-on: ubuntu-latest
