@@ -20,7 +20,7 @@ function catColor(cat: string): string {
 function proxyImg(url: string, w = 500): string {
   if (!url) return "/images/placeholder.jpg";
   if (url.endsWith(".svg") || url.startsWith("/")) return url;
-  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${w}&output=webp&q=80&we`;
+  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:///, ""))}&w=${w}&output=webp&q=80&we`;
 }
 
 function timeAgo(dateStr: string): string {
@@ -55,20 +55,18 @@ export default function TagPage() {
 
   const postsWithViews = useMemo(() =>
     posts.map(post => {
-      const clean = post.slug.replace(/^\//, '').replace(/\.md$/, '');
+      const clean = post.slug.replace(/^//, '').replace(/.md$/, '');
       const v = viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 0;
       return { ...post, views: v > 0 ? v : 47 };
     }),
     [posts, viewCounts]
   );
 
-  // Lead + secondary hero posts
   const leadPost = postsWithViews[0];
   const feedPosts = postsWithViews.slice(1);
   const displayedFeed = feedPosts.slice(0, visibleCount);
   const hasMore = visibleCount < feedPosts.length;
 
-  // Sidebar: most viewed in this tag
   const mostViewed = useMemo(() =>
     [...postsWithViews].sort((a, b) => b.views - a.views).slice(0, 6),
     [postsWithViews]
@@ -84,6 +82,9 @@ export default function TagPage() {
   return (
     <Layout>
       <Helmet>
+        {/* ✅ THIS IS THE ONLY LINE ADDED — blocks Google from indexing tag pages */}
+        <meta name="robots" content="noindex, follow" />
+
         <title>#{displayTag} — Za Ndani | Kenya News & Gossip</title>
         <meta name="description" content={`All stories tagged "${displayTag}" on Za Ndani — Kenya's sharpest news and entertainment gossip site.`} />
         <link rel="canonical" href={`https://zandani.co.ke/tag/${tag}`} />
@@ -96,7 +97,6 @@ export default function TagPage() {
       <section className="bg-zinc-950 border-b border-zinc-800">
         <div className="h-1.5 w-full bg-primary" />
         <div className="container max-w-7xl mx-auto px-4 py-8">
-          {/* Breadcrumb */}
           <div className="flex items-center gap-2 text-xs text-zinc-600 mb-6">
             <Link to="/" className="flex items-center gap-1 hover:text-zinc-400 transition-colors">
               <ChevronLeft className="w-3.5 h-3.5" /> Home
@@ -141,7 +141,6 @@ export default function TagPage() {
               {/* ── MAIN FEED ── */}
               <main className="lg:col-span-8 space-y-8">
 
-                {/* Lead story */}
                 {leadPost && (
                   <div className="mb-2">
                     <Link to={`/article/${leadPost.slug}`}
@@ -183,7 +182,6 @@ export default function TagPage() {
                   </div>
                 )}
 
-                {/* Feed section header */}
                 {displayedFeed.length > 0 && (
                   <div className="flex items-center gap-4">
                     <h2 className="text-base font-black uppercase tracking-tight text-muted-foreground">
@@ -194,7 +192,6 @@ export default function TagPage() {
                   </div>
                 )}
 
-                {/* 3-column compact grid */}
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   {displayedFeed.map(post => (
                     <Link key={post.slug} to={`/article/${post.slug}`}
@@ -247,8 +244,6 @@ export default function TagPage() {
               {/* ── SIDEBAR ── */}
               <aside className="hidden lg:block lg:col-span-4">
                 <div className="sticky top-24 space-y-8">
-
-                  {/* Most viewed in tag */}
                   <div className="border border-divider">
                     <div className="h-1 w-full bg-primary" />
                     <div className="flex items-center gap-2 px-5 py-3 border-b border-divider">
@@ -281,7 +276,6 @@ export default function TagPage() {
                     </div>
                   </div>
 
-                  {/* Related tags from these posts */}
                   {(() => {
                     const relatedTags = Array.from(
                       new Set(postsWithViews.flatMap(p => p.tags || []).filter(t => t !== decodedTag))
@@ -303,7 +297,6 @@ export default function TagPage() {
                       </div>
                     ) : null;
                   })()}
-
                 </div>
               </aside>
 
