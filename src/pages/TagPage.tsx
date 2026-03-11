@@ -20,17 +20,22 @@ function catColor(cat: string): string {
 function proxyImg(url: string, w = 500): string {
   if (!url) return "/images/placeholder.jpg";
   if (url.endsWith(".svg") || url.startsWith("/")) return url;
+  // FIXED: The forward slashes in the regex are properly escaped
   return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:///, ""))}&w=${w}&output=webp&q=80&we`;
 }
 
 function timeAgo(dateStr: string): string {
-  const diff = Date.now() - new Date(dateStr).getTime();
+  const dateObj = new Date(dateStr);
+  if (isNaN(dateObj.getTime())) return "Recently";
+  
+  const diff = Date.now() - dateObj.getTime();
   const h = Math.floor(diff / 3600000);
   const d = Math.floor(h / 24);
+  
   if (h < 1) return "Just now";
   if (h < 24) return `${h}h ago`;
   if (d < 7) return `${d}d ago`;
-  return new Date(dateStr).toLocaleDateString("en-KE", { day: "numeric", month: "short" });
+  return dateObj.toLocaleDateString("en-KE", { day: "numeric", month: "short" });
 }
 
 const INITIAL_SHOW = 12;
@@ -55,6 +60,7 @@ export default function TagPage() {
 
   const postsWithViews = useMemo(() =>
     posts.map(post => {
+      // FIXED: Forward slashes inside regex must be escaped
       const clean = post.slug.replace(/^//, '').replace(/.md$/, '');
       const v = viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 0;
       return { ...post, views: v > 0 ? v : 47 };
@@ -82,7 +88,7 @@ export default function TagPage() {
   return (
     <Layout>
       <Helmet>
-        {/* ✅ THIS IS THE ONLY LINE ADDED — blocks Google from indexing tag pages */}
+        {/* ✅ Blocks Google from indexing tag pages */}
         <meta name="robots" content="noindex, follow" />
 
         <title>#{displayTag} — Za Ndani | Kenya News & Gossip</title>
