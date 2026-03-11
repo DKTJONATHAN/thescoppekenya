@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /tag/
+Disallow: 
 Disallow: /tags/
 Disallow: /admin/
 Disallow: /wp-admin/
