@@ -3,6 +3,7 @@
   "outputDirectory": "dist",
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
+    { "source": "/deindex-tags-sitemap.xml", "destination": "/deindex-tags-sitemap.xml" },
     { "source": "/llms.txt", "destination": "/llms.txt" },
     { "source": "/rss.xml", "destination": "/rss.xml" },
     { "source": "/robots.txt", "destination": "/robots.txt" },
@@ -23,7 +24,7 @@
       ]
     },
     {
-      "source": "/(sitemap.xml|rss.xml|llms.txt|robots.txt)",
+      "source": "/(sitemap.xml|deindex-tags-sitemap.xml|rss.xml|llms.txt|robots.txt)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=300" }
       ]
