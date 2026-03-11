@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /tag/
+Disallow: /tags/
+Disallow: /category/
+Disallow: /categories/
+Disallow: /admin/
+Disallow: /wp-admin/
+
+Allow: /
+
+Sitemap: https://zandani.co.ke/sitemap.xml
