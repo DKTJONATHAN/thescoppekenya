@@ -1,0 +1,47 @@
+---
+title: "Wetang'ula Urges Tougher Road Safety Laws After Deadly Webuye Crash"
+slug: "wetang-ula-urges-tougher-road-safety-laws-after-deadly-webuye-crash"
+author: "Celestine Nzioka"
+image: "https://i.ibb.co/XZmH15CX/f52310d4f1da.jpg"
+category: "News"
+date: "2026-03-11T17:12:56Z"
+---
+## Wetang'ula Calls for Stricter Road Safety Legislation After Webuye Tragedy
+
+National Assembly Speaker Moses Wetang'ula has urged parliament to enact tougher road safety laws following a horrific crash at Malaha Junction in Webuye on March 10, 2026, which resulted in 15 fatalities and over 21 injuries. Wetang'ula emphasized that legislative action is critical to combat rising recklessness on the roads and ensure offenders face full legal consequences.
+
+### Legislative Action Demanded
+
+Speaking on Wednesday, March 11, 2026, after visiting the families affected by the tragedy, Speaker Wetang'ula explicitly called upon Members of Parliament to reinforce regulations governing the transport sector. He stressed the imperative to implement stricter measures and guarantee that individuals who endanger lives are held fully accountable under the law. During his visit to the accident scene, Wetang'ula facilitated the transfer of two critically injured patients from Webuye County Referral Hospital to Moi Teaching and Referral Hospital (MTRH) for specialized medical attention.
+
+### Directives to NTSA and Courts
+
+Wetang'ula also publicly challenged the National Transport and Safety Authority (NTSA) and the judicial system to intensify their efforts in preventing future incidents. He stated that NTSA must act decisively to remove dangerous drivers from the roads, while the courts must treat road recklessness with the seriousness it demands. "The National Transport and Safety Authority must act swiftly to ensure such dangerous drivers are removed from our roads. Our courts must also take the growing recklessness on our roads seriously; those who endanger lives must face the full force of the law," Wetang'ula affirmed.
+
+### Details of the Webuye Tragedy
+
+The fatal accident involved a truck that collided with several vehicles, including a Public Service Vehicle (PSV) and a boda boda, creating a devastating chain collision. Western Region Traffic Police Commander Walter Cheboren confirmed the incident. Witnesses at the scene reported that the truck reportedly lost control before impacting the PSV and motorcycle near the busy junction. Images and clips shared widely depict the severely damaged matatu and bodies scattered on the road as emergency services conducted rescue operations.
+
+### Community Support and Memorial
+
+A funeral committee has been established to coordinate burial arrangements for the victims. This committee includes Webuye East MP Marthin Wanyonyi Pepela, Bungoma Woman Representative Catherine Wambilianga, Deputy Governor Janepher Chemtai Mbatiany, and local assembly members. This community-led initiative mirrors past parliamentary and local government efforts to support victims' families in times of tragedy, such as the National Assembly's establishment of a burial support team following Johana Ng'eno’s tragic death. Wetang'ula announced on Wednesday, March 11, 2026, that a fundraiser is scheduled for Sunday, March 15, 2026, with a joint requiem Mass set for Monday, March 16, 2026, in Webuye Town to honor the deceased and provide aid to the affected community.Celestine Nzioka for Za Ndani
+
+## Wetang'ula Calls for Stricter Road Safety Legislation After Webuye Tragedy
+
+National Assembly Speaker Moses Wetang'ula has urged parliament to enact tougher road safety laws after a horrific crash at Malaha Junction in Webuye on March 10, 2026, claimed 15 lives and injured over 21 others. Wetang'ula emphasized that legislative action is critical to combat rising recklessness and ensure offenders face full legal consequences.
+
+### Legislative Action Demanded
+
+Speaking on Wednesday, March 11, 2026, after visiting the families affected by the tragedy, Speaker Wetang'ula explicitly called upon Members of Parliament to reinforce regulations governing the transport sector. He stressed the imperative to implement stricter measures and guarantee that individuals who endanger lives are held fully accountable under the law. During his visit to the accident scene, Wetang'ula facilitated the transfer of two critically injured patients from Webuye County Referral Hospital to Moi Teaching and Referral Hospital (MTRH) for specialized medical attention.
+
+### Directives to NTSA and Courts
+
+Wetang'ula also publicly challenged the National Transport and Safety Authority (NTSA) and the judicial system to intensify their efforts in preventing future incidents. He stated that NTSA must act decisively to remove dangerous drivers from the roads, while the courts must treat road recklessness with the seriousness it demands. "The National Transport and Safety Authority must act swiftly to ensure such dangerous drivers are removed from our roads. Our courts must also take the growing recklessness on our roads seriously; those who endanger lives must face the full force of the law," Wetang'ula affirmed.
+
+### Details of the Webuye Tragedy
+
+The fatal accident involved a truck that collided with several vehicles, including a Public Service Vehicle (PSV) and a boda boda, creating a devastating chain collision. Western Region Traffic Police Commander Walter Cheboren confirmed the incident. Witnesses at the scene reported that the truck reportedly lost control before impacting the PSV and motorcycle near the busy junction. Images and clips shared widely depict the severely damaged matatu and bodies scattered on the road as emergency services conducted rescue operations.
+
+### Community Support and Memorial
+
+A funeral committee has been established to coordinate burial arrangements for the victims. This committee includes Webuye East MP Marthin Wanyonyi Pepela, Bungoma Woman Representative Catherine Wambilianga, Deputy Governor Janepher Chemtai Mbatiany, and local assembly members. This community-led initiative mirrors past parliamentary and local government efforts to support victims' families in times of tragedy, such as the [National Assembly Sets Up Burial Support Team Following Johana Ng’eno’s Tragic Death in Nandi Helicopter Crash](https://zandani.co.ke/article/national-assembly-burial-support-team-johana-ngeno-tragic-death-nandi-helicopter-crash). Wetang'ula announced on Wednesday, March 11, 2026, that a fundraiser is scheduled for Sunday, March 15, 2026, with a joint requiem Mass set for Monday, March 16, 2026, in Webuye Town to honor the deceased and provide aid to the affected community.
