@@ -315,6 +315,7 @@ jobs:
               "Then 35-45 word summary paragraph.\n"
               "Then ### subheadings with details.\n"
               "BANNED PHRASES (never use): " + banned_str + "\n"
+              "CRITICAL ATTRIBUTION: You are Za Ndani. NEVER mention 'kenyans.co.ke' or 'Kenyans' as a source in the article. If you need to attribute a statement, use 'Za Ndani' or omit the source name entirely.\n"
               "Factual, direct, local context. No cliches."
           )
 
@@ -324,6 +325,11 @@ jobs:
           article_text = re.sub(r"^```(?:markdown)?\n?", "", article_text).rstrip("```").strip()
           article_text = re.sub(r"^(Title|By|Date):.*?\n", "", article_text, flags=re.I|re.M)
           article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
+          # Strip any source site references — replace with Za Ndani branding
+          article_text = re.sub(r'\bkenyans\.co\.ke\b', 'zandani.co.ke', article_text, flags=re.I)
+          article_text = re.sub(r'\bKenyans\.co\.ke\b', 'Za Ndani', article_text)
+          article_text = re.sub(r'\bKenyans\b(?=\s+(has|have|said|reported|confirmed|noted|stated|revealed|indicated))', 'Za Ndani', article_text)
+
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           final_image = upload_to_imgbb(target_image) if target_image else ""
           posts_dir = os.environ.get("POSTS_DIR", "content/posts")
