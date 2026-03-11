@@ -1,0 +1,23 @@
+---
+title: "NACADA arrests two suspects and seizes 680 rolls of cannabis in Embakasi South"
+slug: "nacada-arrests-two-suspects-and-seizes-680-rolls-of-cannabis-in-emba"
+author: "Za Ndani"
+image: "https://i.ibb.co/PzQGpQR0/9bff0e853224.jpg"
+category: "Entertainment"
+date: "2026-03-11T11:03:53Z"
+---
+## Embakasi South Showdown: NACADA's Latest Takedown Rocks the Scene
+
+The Kware area just witnessed a dramatic turn of events as the National Authority for the Campaign Against Alcohol and Drug Abuse (NACADA), with National Police Service backing, orchestrated a major operation. Two individuals are now in custody, and a staggering 680 rolls of suspected cannabis were seized, proving that some 'behind-the-scenes drama' isn't always on screen, but right in our neighbourhoods.
+
+### The Community Callout: When Locals Speak Out
+
+It seems even in the quiet corners of Kware, community members aren't shy about exposing unwelcome acts. Their concerns about a suspected drug dealer operating alarmingly close to Tuimani Kindergarten School and a Kenya Assemblies of God (KAG) church sparked the very operation that brought down this illicit setup. Residents had specifically voiced worries about increased drug-related activities, highlighting the significant risk to children and young people. This kind of civic engagement shows that true 'buzz' often comes from ordinary folks speaking up, not just celebrity gossip.
+
+### The Big Reveal: 680 Rolls and Two Suspects
+
+Acting on the intelligence, a multi-agency team led by NACADA swiftly raided a shop and a nearby residence believed to be a base for drug distribution. Inside, officers found two suspects engrossed in the delicate art of preparing and rolling plant material suspected to be cannabis-commonly referred to as bhang-for consumption and sale. The curtain truly came down when a search unearthed a whopping 680 rolls of bhang, along with additional plant materials believed to be narcotics awaiting further processing. Talk about a dramatic reveal!
+
+### Post-Production: Custody and Continued Commitment
+
+Our two 'stars' from this unscheduled performance were immediately arrested and are now cooling their heels at Kware Police Station, with investigations still rolling. NACADA confirmed that the seized items have been secured and will be presented in court as evidence once the suspects are formally charged. NACADA's Chief Executive Officer, Anthony Omerikwa, was quick to commend the public for providing the crucial intelligence, reminding us all that cooperation is the real MVP in this ongoing saga. He stressed NACADA's unwavering commitment to dismantling drug networks that threaten community safety, particularly when such activities occur near learning institutions. Just like the 'behind-the-scenes drama' of celebrity romances, there's always more to the story when it comes to keeping our neighbourhoods safe from shadowy figures. Speaking of drama, have you heard the latest about [Biggie of Rock of Africa: Is He Truly Single and Ready to Mingle? The Buzz and Behind-the-Scenes Drama!](https://zandani.co.ke/article/biggie-rock-africa-single-ready-to-mingle-drama)? It seems everyone has their own version of unfolding events! NACADA assures us that similar operations targeting drug networks in Kware and other parts of the country will continue as part of broader efforts to protect families and safeguard communities from the dangers of illegal drugs.
