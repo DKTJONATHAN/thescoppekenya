@@ -20,18 +20,19 @@ function catColor(cat: string): string {
 function proxyImg(url: string, w = 500): string {
   if (!url) return "/images/placeholder.jpg";
   if (url.endsWith(".svg") || url.startsWith("/")) return url;
-  // FIXED: The forward slashes in the regex are properly escaped
-  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:///, ""))}&w=${w}&output=webp&q=80&we`;
+
+  // FIXED: Using new RegExp string constructor to prevent esbuild parse errors
+  const protocolRegex = new RegExp('^https?://');
+  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(protocolRegex, ""))}&w=${w}&output=webp&q=80&we`;
 }
 
 function timeAgo(dateStr: string): string {
   const dateObj = new Date(dateStr);
   if (isNaN(dateObj.getTime())) return "Recently";
-  
+
   const diff = Date.now() - dateObj.getTime();
   const h = Math.floor(diff / 3600000);
   const d = Math.floor(h / 24);
-  
   if (h < 1) return "Just now";
   if (h < 24) return `${h}h ago`;
   if (d < 7) return `${d}d ago`;
@@ -60,8 +61,8 @@ export default function TagPage() {
 
   const postsWithViews = useMemo(() =>
     posts.map(post => {
-      // FIXED: Forward slashes inside regex must be escaped
-      const clean = post.slug.replace(/^//, '').replace(/.md$/, '');
+      // FIXED: Using string replacement instead of regex literal to protect esbuild
+      const clean = post.slug.replace(/^\//, '').replace(/\.md$/, '');
       const v = viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 0;
       return { ...post, views: v > 0 ? v : 47 };
     }),
