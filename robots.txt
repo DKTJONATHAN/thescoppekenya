@@ -1,8 +1,6 @@
 User-agent: *
 Disallow: /tag/
 Disallow: /tags/
-Disallow: /category/
-Disallow: /categories/
 Disallow: /admin/
 Disallow: /wp-admin/
 
