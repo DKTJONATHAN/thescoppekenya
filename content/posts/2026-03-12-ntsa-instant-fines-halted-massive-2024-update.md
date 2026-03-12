@@ -1,0 +1,25 @@
+---
+title: "NTSA Instant Fines Halted: Massive 2024 Update"
+slug: "ntsa-instant-fines-halted-massive-2024-update"
+author: "Celestine Nzioka"
+image: "https://i.ibb.co/YBnzr1Wn/e85e6abb52b8.jpg"
+category: "Politics"
+date: "2026-03-12T07:12:13Z"
+---
+## High Court Halts NTSA Instant Fines, Signaling Judicial Oversight on Executive Directives
+
+The High Court temporarily suspended the National Transport and Safety Authority's instant fines, responding to a petition challenging their legality and automated enforcement. This judicial intervention halted the system's implementation pending further court directions, highlighting a critical point of contention between state agencies and public rights.
+
+### Judicial Scrutiny on Automated Enforcement
+
+Justice Bahati Mwamuye of the High Court issued a conservatory order prohibiting the National Transport and Safety Authority (NTSA) from enforcing newly introduced instant fines. This directive stemmed from a case initiated by Lawyer Shadrack Wambui, who, alongside lobby group Sheria Mtaani, challenged the legality of the system. The ruling specifically restrains NTSA, its officers, agents, or any party acting on their behalf, from issuing, demanding, or enforcing instant or automated traffic fines generated through algorithm-based systems. This includes the Instant Fines Traffic Management System.
+
+The court's decision effectively means that NTSA and other concerned entities are barred from imposing penalties derived from algorithmic or any other automated decision-making processes within the Instant Traffic Management System. Concurrently, the court, addressing concerns regarding the selection of a single bank for receiving these fines, on its own motion, enjoined the financial institution as an interested party in the ongoing proceedings. The NTSA's mandate, established by the NTSA Act No. 33 of 2012, involves harmonizing road transport operations and minimizing traffic accidents, with a mission to improve road safety for all users through planning, coordinating, managing, and regulating the road transport system.
+
+### Public Reaction and Political Ramifications
+
+The halting of instant fines reflects significant public unease regarding governmental digital enforcement mechanisms and their potential for procedural irregularities. Such pushback against executive directives often fuels broader political discourse. Indeed, as of March 2026, Kenya has officially rolled out an automated traffic management system for instant fines, utilizing smart cameras to detect violations and notify offenders via SMS. This recent implementation, despite the 2024 court order, indicates a persistent government effort to digitize road enforcement, prompting questions about the resolution of the earlier legal challenge and the nature of public consultation. Opposition figures, like Edwin Sifuna, have previously urged a united front to challenge the current administration, indicating how public discontent over specific policies can coalesce into a larger political narrative [https://zandani.co.ke/article/edwin-sifuna-has-asked-The-United-Opposition-to-defeat-Ruto-in-2027]. The swift judicial intervention in this matter, as seen in 2024, underscores the importance of public scrutiny and legal challenges in maintaining checks and balances within the Kenyan political system.
+
+### The Path Forward
+
+Following the court's orders in 2024, the petitioner was directed to serve the respondents, including the State Law Office and NTSA, with the petition and court orders by close of business on Friday, March 13. An affidavit was also required by the same deadline. The matter was scheduled for mention on April 9, 2024, to confirm compliance with the court's directives and to establish further directions for the petition's hearing and determination. The subsequent rollout of instant fines in March 2026 suggests either a resolution of the initial legal challenge in favor of NTSA or a renewed legislative effort, potentially including amendments like those proposed in the National Transport and Safety Authority (Amendment) Bill, 2024. This continuous evolution of digital enforcement highlights the ongoing tension between regulatory objectives and citizens' rights in Kenya's dynamic political and legal landscape.
