@@ -1,0 +1,27 @@
+---
+title: "NTSA plans overhaul of public transport SACCO system and vehicle inspections"
+slug: "ntsa-plans-overhaul-of-public-transport-sacco-system-and-vehicle-ins"
+author: "Celestine Nzioka"
+image: "https://i.ibb.co/BVWWdSJm/add57803fa0b.jpg"
+category: "News"
+date: "2026-03-12T07:59:11Z"
+---
+## NTSA Plans Major Public Transport and Inspection Reforms
+
+The National Transport and Safety Authority (NTSA) has announced significant reforms impacting public transport and vehicle inspections, potentially introducing additional costs for road users. Director General Nashon Kondiwa revealed on Thursday that the agency is considering phasing out the current Public Service Vehicle (PSV) SACCO model and transitioning to an automated, science-based inspection system to enhance road safety. These proposals aim to establish more structured operational frameworks across the transport sector.
+
+### PSV SACCO System Overhaul Under Review
+
+NTSA Director General Nashon Kondiwa indicated on Thursday that the agency, in collaboration with the government, is evaluating major structural changes that could lead to the discontinuation of the existing public service vehicle (PSV) SACCO model. Kondiwa stated that the regulator is reviewing several proposals to improve safety for passengers, motorists, and other road users. He noted that final recommendations will be unveiled following the completion of consultations. "We want to repackage public transport to have better investments and jobs. Maybe it is time to change the way we arrange public transport. Maybe the SACCO model is not working," Kondiwa elaborated during an NTV interview. He further explained that the government is seeking more structured operational frameworks within the transport sector to restore order and enhance road safety, emphasizing that these issues cannot be resolved solely with instant fines and cameras.
+
+### Shift Towards Automated Vehicle Inspections
+
+Beyond a potential overhaul of the PSV management system, NTSA is also planning significant reforms for motor vehicle inspections. Kondiwa announced the regulator's intent to shift towards a more automated and science-based inspection system to ensure vehicles meet stricter safety standards. He acknowledged that the current inspection framework falls short of required standards and warned that this transition to a more advanced system could result in additional costs for motorists. Kondiwa explained, "As we speak, we are developing an International Road Assessment Programme (iRAP) through which we will map every single road section and determine the risk level." This programme will adopt a safe systems approach, evaluating road sections for the safety of pedestrians, cyclists, motorists, and other users while identifying high-risk areas requiring urgent improvements.
+
+### Enhanced Enforcement and Road Safety Initiatives
+
+NTSA plans to revamp all motor vehicle inspection centres and roll out over 1,000 surveillance cameras nationwide within the next three years to boost enforcement and monitoring efforts. These reforms also include clearer road markings indicating speed limits and safety warnings near camera zones. Additionally, future road construction contracts will be mandated to incorporate these safety upgrades from the outset. This commitment to better jobs and investments in the transport sector aligns with broader governmental efforts to create employment opportunities.
+
+### High Court Halts Instant Fines Implementation
+
+In a separate development, the High Court has issued new orders preventing NTSA from implementing the recently introduced instant fines. Justice Bahati Mwamuye of the High Court issued a conservatory order on Thursday, barring NTSA from proceeding with the new system pending the hearing and determination of a case filed by Lawyer Shadrack Wambui, which challenges the directive.
