@@ -1,0 +1,23 @@
+---
+title: "Cobhams Asuquo to host Songs and Stories concert in Abuja"
+slug: "cobhams-asuquo-to-host-songs-and-stories-concert-in-abuja"
+author: "Amara Ndlovu"
+image: "https://i.ibb.co/vRrQV9z/6e222460b550.jpg"
+category: "Entertainment"
+date: "2026-03-13T17:05:31Z"
+---
+## Cobhams Asuquo's "Songs and Stories" Concert Set to Captivate Abuja
+
+Award-winning Nigerian musical icon Cobhams Asuquo presents his acclaimed "Songs and Stories" concert in Abuja on March 28, 2026. This unique event at Transcorp Hilton Abuja promises an intimate blend of powerful vocals, rich live instrumentation, and compelling narratives from his illustrious career, featuring revered guest artists.
+
+### A Night of Musical Excellence
+
+The Congress Hall of the Transcorp Hilton Abuja will host an unforgettable evening beginning at 6:00 PM on Saturday, March 28, 2026. Cobhams Asuquo, widely regarded as one of Africa’s most influential musical figures, will share the stage with some of Nigeria’s most cherished voices: Johnny Drille, Timi Dakolo, and Korede Bello. This collaboration is set to deliver a night blending powerful vocals with rich live instrumentation and creative musical exchange, highlighting the depth of Pan-African musical talent. Cobhams' illustrious career spans over two decades, during which he has composed, produced, and directed music for leading Nigerian and international artists including Davido, Tiwa Savage, Asa, Adekunle Gold, Yemi Alade, Bono (from U2), Sauti Sol, Simi, Femi Kuti, Fally Ipupa, and Angélique Kidjo.
+
+### The Unique "Songs and Stories" Experience
+
+"Songs and Stories with Cobhams Asuquo" transcends a conventional concert structure, unfolding as a deeply personal musical journey. Cobhams, serving as composer, performer, and musical director, guides audiences through songs from his extensive catalogue and influences, interlacing them with the inspirations, humorous moments, and behind-the-scenes stories that have shaped his life and career. This format emphasizes musicianship and authentic connection, offering an immersive experience distinct from a typical pop concert. Cobhams articulated his vision, stating, "Songs and Stories is about more than performing songs. It’s about sharing the journey behind the music - the people, the moments, and the experiences that shaped it. Abuja has always been a wonderful audience, and I’m looking forward to sharing the stage with some incredible artists and friends."
+
+### Pan-African Collaborations and Vision
+
+This Abuja edition is supported by a robust network of partners including Legend Extra Stout, Wema Bank, The Macallan, and the Transcorp Hilton Hotel Abuja, alongside Four Cousins, Pepsi, Pennek Nigeria, Abysteph Global Link, Akins Corporate Services, and Castle Lite. These partnerships underscore the collaborative spirit that drives African entertainment and cultural initiatives. Just as Za Ndani explores a range of human experiences and narratives, from significant cultural events to critical public discussions like those surrounding [Johana Ngeno Recounting Alleged Abduction Video Gains Traction Following Fatal Helicopter Crash](https://zandani.co.ke/article/johana-ngeno-recounting-alleged-abduction-fatal-helicopter-crash), Cobhams Asuquo continues to expand his work as a live musical curator. Through projects like "Songs and Stories," he consistently creates performance experiences that genuinely connect audiences with the craft and humanity inherent in African music. The event promises to be a powerful affirmation of Africa's vibrant creative spirit and storytelling tradition.
