@@ -95,9 +95,6 @@ jobs:
           from playwright.sync_api import sync_playwright
           import yt_dlp
 
-          # ================================================================
-          #  CONSTANTS
-          # ================================================================
           today_str         = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str     = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -173,9 +170,6 @@ jobs:
               " | The Sun", " | Daily Mail",
           ]
 
-          # ================================================================
-          #  HELPERS
-          # ================================================================
           def fmt_num(n):
               if n is None: return "N/A"
               try:
@@ -254,9 +248,6 @@ jobs:
                   if k in url: return k
               return None
 
-          # ================================================================
-          #  SCRAPER: YOUTUBE (via yt-dlp)
-          # ================================================================
           def scrape_youtube(url):
               data = {'platform': 'YouTube', 'url': url}
               is_channel = (
@@ -264,77 +255,63 @@ jobs:
                   or ('youtube.com' in url and '/watch' not in url and 'youtu.be' not in url)
               )
               print(f"[YouTube] {'channel' if is_channel else 'video'}: {url}")
-
               if is_channel:
-                  opts = {
-                      'quiet': True, 'no_warnings': True,
-                      'extract_flat': 'in_playlist',
-                      'playlist_end': 20, 'ignoreerrors': True,
-                  }
+                  opts = {'quiet': True, 'no_warnings': True, 'extract_flat': 'in_playlist', 'playlist_end': 20, 'ignoreerrors': True}
                   try:
                       with yt_dlp.YoutubeDL(opts) as ydl:
                           info = ydl.extract_info(url, download=False)
                       if not info:
                           data['error'] = 'No data returned'; return data
-                      data['type']           = 'channel'
-                      data['channel_name']   = info.get('channel') or info.get('uploader') or info.get('title','Unknown')
+                      data['type']             = 'channel'
+                      data['channel_name']     = info.get('channel') or info.get('uploader') or info.get('title', 'Unknown')
                       data['subscriber_count'] = info.get('channel_follower_count')
-                      data['description']    = (info.get('description') or '')[:800]
-                      data['total_views']    = info.get('view_count')
-                      data['video_count']    = info.get('playlist_count')
+                      data['description']      = (info.get('description') or '')[:800]
+                      data['total_views']      = info.get('view_count')
+                      data['video_count']      = info.get('playlist_count')
                       entries = [e for e in (info.get('entries') or []) if e][:20]
-                      data['recent_videos']  = [
-                          {'title': e.get('title',''), 'views': e.get('view_count'),
+                      data['recent_videos'] = [
+                          {'title': e.get('title', ''), 'views': e.get('view_count'),
                            'likes': e.get('like_count'), 'duration': e.get('duration'),
-                           'upload_date': e.get('upload_date','')}
+                           'upload_date': e.get('upload_date', '')}
                           for e in entries
                       ]
-                      vcounts = [e.get('view_count',0) for e in entries if e.get('view_count')]
+                      vcounts = [e.get('view_count', 0) for e in entries if e.get('view_count')]
                       if vcounts:
-                          data['avg_views']  = int(sum(vcounts)/len(vcounts))
+                          data['avg_views']  = int(sum(vcounts) / len(vcounts))
                           data['peak_views'] = max(vcounts)
                           data['min_views']  = min(vcounts)
                       print(f"  Channel: {data['channel_name']} | Subs: {fmt_num(data['subscriber_count'])} | Videos: {len(data['recent_videos'])}")
                   except Exception as e:
                       print(f"  Channel error: {e}"); data['error'] = str(e)
-
               else:
                   opts = {
-                      'quiet': True, 'no_warnings': True,
-                      'getcomments': True, 'ignoreerrors': True,
-                      'extractor_args': {
-                          'youtube': {
-                              'comment_sort': ['top'],
-                              'max_comments': ['30','0','0','0'],
-                          }
-                      },
+                      'quiet': True, 'no_warnings': True, 'getcomments': True, 'ignoreerrors': True,
+                      'extractor_args': {'youtube': {'comment_sort': ['top'], 'max_comments': ['30', '0', '0', '0']}},
                   }
                   try:
                       with yt_dlp.YoutubeDL(opts) as ydl:
                           info = ydl.extract_info(url, download=False)
                       if not info:
                           data['error'] = 'No data returned'; return data
-                      data['type']           = 'video'
-                      data['title']          = info.get('title','')
-                      data['channel_name']   = info.get('channel') or info.get('uploader','')
+                      data['type']             = 'video'
+                      data['title']            = info.get('title', '')
+                      data['channel_name']     = info.get('channel') or info.get('uploader', '')
                       data['subscriber_count'] = info.get('channel_follower_count')
-                      data['views']          = info.get('view_count')
-                      data['likes']          = info.get('like_count')
-                      data['comment_count']  = info.get('comment_count')
-                      data['upload_date']    = info.get('upload_date','')
-                      data['duration']       = info.get('duration')
-                      data['description']    = (info.get('description') or '')[:800]
-                      data['tags']           = (info.get('tags') or [])[:10]
-                      data['categories']     = info.get('categories',[])
+                      data['views']            = info.get('view_count')
+                      data['likes']            = info.get('like_count')
+                      data['comment_count']    = info.get('comment_count')
+                      data['upload_date']      = info.get('upload_date', '')
+                      data['duration']         = info.get('duration')
+                      data['description']      = (info.get('description') or '')[:800]
+                      data['tags']             = (info.get('tags') or [])[:10]
+                      data['categories']       = info.get('categories', [])
                       raw_comments = info.get('comments') or []
                       top_comments = sorted(
-                          [c for c in raw_comments if c.get('like_count',0) > 0],
-                          key=lambda c: c.get('like_count',0), reverse=True
+                          [c for c in raw_comments if c.get('like_count', 0) > 0],
+                          key=lambda c: c.get('like_count', 0), reverse=True
                       )[:15]
                       data['top_comments'] = [
-                          {'text': (c.get('text') or '')[:280],
-                           'likes': c.get('like_count',0),
-                           'author': c.get('author','')}
+                          {'text': (c.get('text') or '')[:280], 'likes': c.get('like_count', 0), 'author': c.get('author', '')}
                           for c in top_comments
                       ]
                       print(f"  Video: {data['title']} | Views: {fmt_num(data['views'])} | Comments: {fmt_num(data['comment_count'])}")
@@ -342,9 +319,6 @@ jobs:
                       print(f"  Video error: {e}"); data['error'] = str(e)
               return data
 
-          # ================================================================
-          #  SCRAPER: SPOTIFY (Playwright)
-          # ================================================================
           def scrape_spotify(url, pw_page):
               data = {'platform': 'Spotify', 'url': url}
               print(f"[Spotify] {url}")
@@ -353,9 +327,8 @@ jobs:
                   pw_page.wait_for_timeout(5000)
                   pw_page.evaluate("window.scrollBy(0, document.body.scrollHeight / 2)")
                   pw_page.wait_for_timeout(3000)
-                  soup = BeautifulSoup(pw_page.content(), 'html.parser')
+                  soup      = BeautifulSoup(pw_page.content(), 'html.parser')
                   full_text = soup.get_text(separator=' ', strip=True)
-
                   if '/artist/' in url:
                       data['type'] = 'artist'
                       h1 = soup.find('h1')
@@ -364,9 +337,9 @@ jobs:
                       if ml: data['monthly_listeners'] = ml.group(1)
                       fl = re.search(r'([\d,\.]+)\s*followers?', full_text, re.IGNORECASE)
                       if fl: data['followers'] = fl.group(1)
-                      rows  = soup.select('[data-testid="tracklist-row"]') or soup.select('[class*="TrackListRow"]')
+                      rows = soup.select('[data-testid="tracklist-row"]') or soup.select('[class*="TrackListRow"]')
                       data['top_tracks'] = [r.get_text(separator=' | ', strip=True)[:200] for r in rows[:10]]
-                      alb   = soup.select('[data-testid="artist-discography-section"] a')
+                      alb  = soup.select('[data-testid="artist-discography-section"] a')
                       data['recent_releases'] = list({a.get_text(strip=True) for a in alb if len(a.get_text(strip=True)) > 2})[:10]
                   elif '/album/' in url:
                       data['type'] = 'album'
@@ -388,12 +361,9 @@ jobs:
                   print(f"  Spotify error: {e}"); data['error'] = str(e)
               return data
 
-          # ================================================================
-          #  SCRAPER: GENERAL ARTICLE / SOCIAL PAGE (Playwright)
-          # ================================================================
           def extract_html_content(soup, url):
               page_title = ''
-              for sel in ['h1','h1.article-title','h1.post-title','h1.entry-title']:
+              for sel in ['h1', 'h1.article-title', 'h1.post-title', 'h1.entry-title']:
                   t = soup.select_one(sel)
                   if t:
                       page_title = t.get_text().strip()
@@ -403,9 +373,9 @@ jobs:
                   if tt: page_title = tt.get_text().strip()
               if not page_title:
                   og = soup.find('meta', property='og:title')
-                  if og: page_title = og.get('content','').strip()
+                  if og: page_title = og.get('content', '').strip()
               for suf in TITLE_SUFFIXES:
-                  page_title = page_title.replace(suf,'').strip()
+                  page_title = page_title.replace(suf, '').strip()
 
               article_text = ''
               site_key = get_site_key(url)
@@ -422,8 +392,8 @@ jobs:
                       '[class*=article__body], [class*=post-content], [class*=entry-content], '
                       '[class*=story-body], [class*=story-content], [class*=content-body]'
                   ):
-                      cn = ' '.join(c.get('class',[]))
-                      if any(x in cn for x in ['nav','sidebar','related','widget','comment','footer','header']): continue
+                      cn = ' '.join(c.get('class', []))
+                      if any(x in cn for x in ['nav', 'sidebar', 'related', 'widget', 'comment', 'footer', 'header']): continue
                       chunk = '\n\n'.join([p.get_text(strip=True) for p in c.find_all('p') if len(p.get_text(strip=True)) > 40])
                       if len(chunk) > len(article_text): article_text = chunk
               if len(article_text) < 300:
@@ -433,25 +403,25 @@ jobs:
               if len(article_text) < 300:
                   body = soup.find('body')
                   if body:
-                      for tag in body.find_all(['script','style','nav','header','footer','aside','noscript']): tag.decompose()
-                      lines = [l.strip() for l in body.get_text(separator='\n').split('\n') if len(l.strip()) > 50]
-                      article_text = '\n\n'.join(lines)
+                      for tag in body.find_all(['script', 'style', 'nav', 'header', 'footer', 'aside', 'noscript']): tag.decompose()
+                      lns = [l.strip() for l in body.get_text(separator='\n').split('\n') if len(l.strip()) > 50]
+                      article_text = '\n\n'.join(lns)
 
               img_url = ''
               for meta in soup.find_all('meta'):
-                  prop = meta.get('property','') or meta.get('name','')
-                  if prop in ['og:image','twitter:image','twitter:image:src']:
-                      c = meta.get('content','')
+                  prop = meta.get('property', '') or meta.get('name', '')
+                  if prop in ['og:image', 'twitter:image', 'twitter:image:src']:
+                      c = meta.get('content', '')
                       if c and 'logo' not in c.lower() and len(c) > 10:
                           img_url = c; break
               if not img_url:
                   base_url = '/'.join(url.split('/')[:3])
-                  for sel in ['article img','[class*=article] img','[class*=hero] img','picture img','.featured-image img']:
+                  for sel in ['article img', '[class*=article] img', '[class*=hero] img', 'picture img', '.featured-image img']:
                       li = soup.select_one(sel)
                       if li:
-                          src = li.get('src') or li.get('data-src') or li.get('data-lazy-src','')
+                          src = li.get('src') or li.get('data-src') or li.get('data-lazy-src', '')
                           if src and 'data:image' not in src and 'placeholder' not in src.lower() and 'logo' not in src.lower():
-                              img_url = src if src.startswith('http') else base_url+'/'+src.lstrip('/')
+                              img_url = src if src.startswith('http') else base_url + '/' + src.lstrip('/')
                               break
               return article_text, img_url, page_title
 
@@ -460,17 +430,20 @@ jobs:
               data = {'platform': 'Article', 'url': url, 'type': 'article'}
               best_text, best_img, best_title = '', '', ''
               for name, wait_until, block_media in [
-                  ('networkidle','networkidle',False),
-                  ('domcontentloaded','domcontentloaded',False),
-                  ('light-block','domcontentloaded',True),
+                  ('networkidle', 'networkidle', False),
+                  ('domcontentloaded', 'domcontentloaded', False),
+                  ('light-block', 'domcontentloaded', True),
               ]:
                   try:
                       with sync_playwright() as p:
-                          browser = p.chromium.launch(headless=True, args=['--no-sandbox','--disable-dev-shm-usage','--disable-blink-features=AutomationControlled'])
-                          ctx = browser.new_context(user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', viewport={'width':1920,'height':1080})
+                          browser = p.chromium.launch(headless=True, args=['--no-sandbox', '--disable-dev-shm-usage', '--disable-blink-features=AutomationControlled'])
+                          ctx = browser.new_context(
+                              user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+                              viewport={'width': 1920, 'height': 1080}
+                          )
                           page = ctx.new_page()
                           if block_media:
-                              page.route('**/*', lambda r: r.abort() if r.request.resource_type in ['media','font'] else r.continue_())
+                              page.route('**/*', lambda r: r.abort() if r.request.resource_type in ['media', 'font'] else r.continue_())
                           try: page.goto(url, timeout=60000, wait_until=wait_until)
                           except Exception: pass
                           try: page.wait_for_selector('p', timeout=8000)
@@ -491,23 +464,19 @@ jobs:
               print(f"  Result: {len(data['text'])} chars | title: {data['title'][:60]}")
               return data
 
-          # ================================================================
-          #  DATA FORMATTER FOR GEMINI PROMPT
-          # ================================================================
           def format_all_sources(all_data):
               parts = []
               for idx, d in enumerate(all_data, 1):
-                  plat = d.get('platform','Unknown')
-                  parts.append(f'\n{"="*60}')
-                  parts.append(f'SOURCE {idx}: {plat.upper()} -- {d.get("url","")[:80]}')
-                  parts.append('='*60)
-
+                  plat = d.get('platform', 'Unknown')
+                  parts.append(f'\n{"=" * 60}')
+                  parts.append(f'SOURCE {idx}: {plat.upper()} -- {d.get("url", "")[:80]}')
+                  parts.append('=' * 60)
                   if plat == 'YouTube':
                       if d.get('type') == 'channel':
-                          parts.append(f'Channel Name   : {d.get("channel_name","N/A")}')
+                          parts.append(f'Channel Name   : {d.get("channel_name", "N/A")}')
                           parts.append(f'Subscribers    : {fmt_num(d.get("subscriber_count"))}')
                           parts.append(f'Total Views    : {fmt_num(d.get("total_views"))}')
-                          parts.append(f'Total Videos   : {d.get("video_count","N/A")}')
+                          parts.append(f'Total Videos   : {d.get("video_count", "N/A")}')
                           if d.get('avg_views'):
                               parts.append(f'Avg Views/Video: {fmt_num(d["avg_views"])}')
                               parts.append(f'Peak Views     : {fmt_num(d["peak_views"])}')
@@ -517,16 +486,16 @@ jobs:
                           if d.get('recent_videos'):
                               parts.append('\nRECENT VIDEOS (title | views | likes | date):')
                               for v in d['recent_videos']:
-                                  parts.append(f'  - {v["title"]} | Views: {fmt_num(v.get("views"))} | Likes: {fmt_num(v.get("likes"))} | Date: {v.get("upload_date","")}')
+                                  parts.append(f'  - {v["title"]} | Views: {fmt_num(v.get("views"))} | Likes: {fmt_num(v.get("likes"))} | Date: {v.get("upload_date", "")}')
                       elif d.get('type') == 'video':
-                          parts.append(f'Video Title    : {d.get("title","N/A")}')
-                          parts.append(f'Channel        : {d.get("channel_name","N/A")}')
+                          parts.append(f'Video Title    : {d.get("title", "N/A")}')
+                          parts.append(f'Channel        : {d.get("channel_name", "N/A")}')
                           parts.append(f'Channel Subs   : {fmt_num(d.get("subscriber_count"))}')
                           parts.append(f'Views          : {fmt_num(d.get("views"))}')
                           parts.append(f'Likes          : {fmt_num(d.get("likes"))}')
                           parts.append(f'Comments       : {fmt_num(d.get("comment_count"))}')
                           parts.append(f'Duration       : {fmt_dur(d.get("duration"))}')
-                          parts.append(f'Upload Date    : {d.get("upload_date","N/A")}')
+                          parts.append(f'Upload Date    : {d.get("upload_date", "N/A")}')
                           if d.get('tags'):
                               parts.append(f'Tags           : {", ".join(d["tags"][:8])}')
                           if d.get('description'):
@@ -535,13 +504,12 @@ jobs:
                               parts.append('\nTOP COMMENTS (by engagement):')
                               for c in d['top_comments'][:12]:
                                   parts.append(f'  [{c["likes"]} likes] "{c["text"]}"')
-
                   elif plat == 'Spotify':
-                      if d.get('artist_name'): parts.append(f'Artist          : {d["artist_name"]}')
-                      if d.get('album_name'):  parts.append(f'Album           : {d["album_name"]}')
-                      if d.get('track_name'):  parts.append(f'Track           : {d["track_name"]}')
+                      if d.get('artist_name'): parts.append(f'Artist           : {d["artist_name"]}')
+                      if d.get('album_name'):  parts.append(f'Album            : {d["album_name"]}')
+                      if d.get('track_name'):  parts.append(f'Track            : {d["track_name"]}')
                       if d.get('monthly_listeners'): parts.append(f'Monthly Listeners: {d["monthly_listeners"]}')
-                      if d.get('followers'):   parts.append(f'Followers       : {d["followers"]}')
+                      if d.get('followers'):   parts.append(f'Followers        : {d["followers"]}')
                       if d.get('top_tracks'):
                           parts.append('\nTOP TRACKS:')
                           for t in d['top_tracks']: parts.append(f'  - {t}')
@@ -549,30 +517,27 @@ jobs:
                           parts.append('\nTRACKLIST:')
                           for t in d['tracklist']: parts.append(f'  - {t}')
                       if d.get('recent_releases'):
-                          parts.append(f'Recent Releases : {", ".join(d["recent_releases"][:8])}')
+                          parts.append(f'Recent Releases  : {", ".join(d["recent_releases"][:8])}')
                       if d.get('page_summary'):
                           parts.append(f'\nFull page context:\n{d["page_summary"][:2000]}')
-
                   elif plat == 'Article':
-                      parts.append(f'Headline : {d.get("title","N/A")}')
+                      parts.append(f'Headline : {d.get("title", "N/A")}')
                       if d.get('text'):
                           parts.append(f'\nArticle text:\n{d["text"][:5000]}')
-
                   else:
-                      parts.append(f'Page text:\n{d.get("page_text", d.get("text",""))[:3000]}')
-
+                      parts.append(f'Page text:\n{d.get("page_text", d.get("text", ""))[:3000]}')
               return '\n'.join(parts)
 
           # ================================================================
           #  MAIN EXECUTION
           # ================================================================
-          raw_input_urls = os.environ.get('INPUT_URLS','').strip()
-          author         = os.environ.get('INPUT_AUTHOR','Za Ndani').strip()
-          category       = os.environ.get('INPUT_CATEGORY','Entertainment').strip()
-          article_angle  = os.environ.get('INPUT_ANGLE','').strip()
+          raw_input_urls = os.environ.get('INPUT_URLS', '').strip()
+          author         = os.environ.get('INPUT_AUTHOR', 'Za Ndani').strip()
+          category       = os.environ.get('INPUT_CATEGORY', 'Entertainment').strip()
+          article_angle  = os.environ.get('INPUT_ANGLE', '').strip()
           persona        = AUTHOR_PERSONAS.get(author, AUTHOR_PERSONAS['Za Ndani'])
-          posts_dir      = os.environ.get('POSTS_DIR','content/posts')
-          memory_path    = os.environ.get('MEMORY_FILE','.github/memory_multi_source.json')
+          posts_dir      = os.environ.get('POSTS_DIR', 'content/posts')
+          memory_path    = os.environ.get('MEMORY_FILE', '.github/memory_multi_source.json')
 
           urls = parse_urls(raw_input_urls)
           if not urls:
@@ -582,44 +547,42 @@ jobs:
           print(f'\nProcessing {len(urls)} URL(s):')
           for u in urls: print(f'  > {u}')
 
-          # Composite hash for deduplication
           url_hash = hashlib.md5('|'.join(sorted(urls)).encode()).hexdigest()
           memory   = json.load(open(memory_path)) if os.path.exists(memory_path) else []
           if url_hash in memory:
               print('This URL combination was already processed. Exiting.')
               sys.exit(0)
 
-          # ── Scrape sources ───────────────────────────────────
           all_source_data = []
           primary_image   = ''
           primary_title   = ''
 
-          yt_urls      = [u for u in urls if detect_platform(u) == 'youtube']
-          spot_urls    = [u for u in urls if detect_platform(u) == 'spotify']
-          other_urls   = [u for u in urls if detect_platform(u) not in ('youtube','spotify')]
+          yt_urls    = [u for u in urls if detect_platform(u) == 'youtube']
+          spot_urls  = [u for u in urls if detect_platform(u) == 'spotify']
+          other_urls = [u for u in urls if detect_platform(u) not in ('youtube', 'spotify')]
 
-          # YouTube (no browser required)
           for u in yt_urls:
               d = scrape_youtube(u)
               all_source_data.append(d)
 
-          # Spotify (shared Playwright browser session)
           if spot_urls:
               with sync_playwright() as pw:
-                  browser = pw.chromium.launch(headless=True, args=['--no-sandbox','--disable-dev-shm-usage','--disable-blink-features=AutomationControlled'])
-                  ctx  = browser.new_context(user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', viewport={'width':1920,'height':1080})
+                  browser = pw.chromium.launch(headless=True, args=['--no-sandbox', '--disable-dev-shm-usage', '--disable-blink-features=AutomationControlled'])
+                  ctx  = browser.new_context(
+                      user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+                      viewport={'width': 1920, 'height': 1080}
+                  )
                   page = ctx.new_page()
                   for u in spot_urls:
                       d = scrape_spotify(u, page)
                       all_source_data.append(d)
                   browser.close()
 
-          # General articles / social pages
           for u in other_urls:
               d = scrape_article_or_social(u)
               all_source_data.append(d)
-              if not primary_image and d.get('image'):  primary_image = d['image']
-              if not primary_title and d.get('title'):  primary_title = d['title']
+              if not primary_image and d.get('image'): primary_image = d['image']
+              if not primary_title and d.get('title'): primary_title = d['title']
 
           if not all_source_data:
               print('All sources returned no data. Exiting.')
@@ -628,7 +591,6 @@ jobs:
           combined_data = format_all_sources(all_source_data)
           print(f'\nTotal research data: {len(combined_data)} chars')
 
-          # ── Internal links ──────────────────────────────────
           internal_links = ''
           if os.path.exists(posts_dir):
               files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
@@ -639,8 +601,8 @@ jobs:
                       try:
                           with open(os.path.join(posts_dir, f), 'r', encoding='utf-8') as cf:
                               txt = cf.read()
-                              tm = re.search(r'title:\s*"(.*?)"', txt)
-                              t  = tm.group(1) if tm else f
+                              tm  = re.search(r'title:\s*"(.*?)"', txt)
+                              t   = tm.group(1) if tm else f
                               internal_links += f'- Title: {t} | Link: https://zandani.co.ke/article/{f.replace(".md","")}\n'
                       except Exception: continue
 
@@ -692,7 +654,6 @@ jobs:
               "- Start immediately with the core article content and paragraphs.]"
           )
 
-          # ── Gemini generation ────────────────────────────────
           raw_keys = [os.environ.get('GEMINI_WRITE_KEY'), os.environ.get('GEMINI_API_KEY'), os.environ.get('GEMINI_API_KEY1')]
           api_keys = [k for k in raw_keys if k and k.strip()]
           if not api_keys:
@@ -707,108 +668,147 @@ jobs:
           keys_tried   = 0
 
           for model_id in MODELS_TO_TRY:
+              if success_flag: break
+              print(f'\n[Gemini] Trying model: {model_id}')
               for retry in range(len(api_keys) * 2):
                   try:
                       response = client.models.generate_content(
-                          model=model_id, contents=prompt,
+                          model=model_id,
+                          contents=prompt,
                           config=types.GenerateContentConfig(temperature=0.85, tools=[gsearch_tool]),
                       )
-                      full_text    = response.text.strip()
-                      success_flag = True
-                      print(f'SUCCESS with {model_id}!')
-                      break
+                      candidate = response.candidates[0] if response.candidates else None
+                      if candidate and candidate.content and candidate.content.parts:
+                          full_text = ''.join(
+                              p.text for p in candidate.content.parts if hasattr(p, 'text') and p.text
+                          ).strip()
+                      else:
+                          full_text = (response.text or '').strip()
+                      if len(full_text) > 200:
+                          print(f'  Success with {model_id} on retry {retry}')
+                          success_flag = True
+                          break
+                      else:
+                          print(f'  Short/empty response ({len(full_text)} chars). Retrying...')
+                          time.sleep(10)
                   except Exception as e:
-                      if '429' in str(e):
+                      err_str = str(e).lower()
+                      print(f'  Error: {e}')
+                      if any(x in err_str for x in ['quota', 'rate', '429', 'resource_exhausted']):
                           keys_tried += 1
-                          if keys_tried >= len(api_keys):
-                              print('All keys hit quota. Waiting 45s...')
-                              time.sleep(45); keys_tried = 0
-                          else:
-                              print('Quota hit. Rotating key...')
+                          if keys_tried < len(api_keys):
                               current_key = next(key_cycle)
                               client = genai.Client(api_key=current_key)
-                          continue
-                      print(f'Error with {model_id}: {e}'); break
-              if success_flag: break
+                              print(f'  Rotated to next API key.')
+                          else:
+                              print(f'  All API keys exhausted for {model_id}. Trying next model.')
+                              keys_tried = 0
+                              break
+                      time.sleep(45)
 
-          if not success_flag:
-              print('All Gemini attempts failed.'); sys.exit(1)
+          if not full_text or len(full_text) < 200:
+              print('Gemini returned no usable content. Exiting.')
+              sys.exit(1)
 
-          # ── Parse Gemini output ──────────────────────────────
-          full_text = re.sub(r'^```(?:markdown|text|html)?\n', '', full_text, flags=re.IGNORECASE)
-          full_text = re.sub(r'\n```$', '', full_text).strip()
+          print(f'\n[Parser] Raw output length: {len(full_text)} chars')
 
-          parsed = {'TITLE':'','SLUG':'','EXCERPT':'','TAGS':'','IMAGE_KEYWORD':'','BODY':''}
-          for key, val in re.findall(r'^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD):\s*(.*)', full_text, re.MULTILINE | re.IGNORECASE):
-              parsed[key.upper()] = val.strip()
-          bm = re.search(r'BODY:\s*(.*)', full_text, re.DOTALL | re.IGNORECASE)
-          if bm: parsed['BODY'] = bm.group(1).strip()
-          else:  parsed['BODY'] = full_text.split('BODY:', 1)[-1].strip() if 'BODY:' in full_text else full_text
+          def extract_field(text, field):
+              pattern = rf'^{field}:\s*(.+)'
+              m = re.search(pattern, text, re.MULTILINE | re.IGNORECASE)
+              return m.group(1).strip().strip('"').strip("'") if m else ''
 
-          for field in ['TITLE','SLUG','EXCERPT','TAGS','IMAGE_KEYWORD','BODY']:
-              parsed['BODY'] = re.sub(rf'^(?:\*\*?)?{field}:?.*?\n+', '', parsed['BODY'], flags=re.IGNORECASE | re.MULTILINE).strip()
-          for prefix in ['By|Author','Date|Updated','Title|Headline']:
-              parsed['BODY'] = re.sub(rf'^(?:\*\*?)?(?:{prefix}):?.*?\n+', '', parsed['BODY'], flags=re.IGNORECASE).strip()
-          parsed['BODY'] = dash_scrubber(parsed['BODY']).strip()
+          title_raw   = extract_field(full_text, 'TITLE')
+          slug_raw    = extract_field(full_text, 'SLUG')
+          excerpt_raw = extract_field(full_text, 'EXCERPT')
+          tags_raw    = extract_field(full_text, 'TAGS')
+          img_kw_raw  = extract_field(full_text, 'IMAGE_KEYWORD')
 
-          if not parsed['SLUG'] and parsed['TITLE']:
-              parsed['SLUG'] = re.sub(r'[^a-z0-9]+','-',parsed['TITLE'].lower()).strip('-')[:70]
+          body_match  = re.search(r'^BODY:\s*\n([\s\S]+)', full_text, re.MULTILINE | re.IGNORECASE)
+          body_raw    = body_match.group(1).strip() if body_match else ''
+          if not body_raw:
+              body_raw = re.sub(r'^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD):.*\n?', '', full_text, flags=re.MULTILINE | re.IGNORECASE).strip()
 
-          tags_list = [t.strip().replace('"','') for t in parsed['TAGS'].split(',') if t.strip()]
-          tags_str  = ', '.join([f'"{t}"' for t in tags_list]) if tags_list else f'"{category.lower()}", "kenya"'
+          body_raw = dash_scrubber(body_raw)
+          body_raw = re.sub(r'\*\*(.*?)\*\*', r'\1', body_raw)
+          body_raw = re.sub(r'\[(.*?)\]\(https?://[^\)]+\)', lambda m: m.group(0) if 'zandani.co.ke' in m.group(0) else m.group(1), body_raw)
 
-          # ── Image ─────────────────────────────────────────────
-          initial_image = primary_image or get_real_image(parsed.get('IMAGE_KEYWORD') or primary_title or parsed['TITLE'])
-          final_image   = upload_to_imgbb(initial_image)
+          if not slug_raw:
+              slug_raw = re.sub(r'[^\w\s-]', '', title_raw.lower())
+              slug_raw = re.sub(r'[\s_]+', '-', slug_raw).strip('-')
+          slug_raw = re.sub(r'[^\w-]', '', slug_raw.lower().replace(' ', '-'))[:80]
 
-          # ── Write article file ────────────────────────────────
-          lines = [
+          if not title_raw:
+              title_raw = primary_title[:70] if primary_title else 'Untitled'
+
+          tags_list = [t.strip().lower() for t in tags_raw.split(',') if t.strip()][:10]
+          tags_yaml  = '[' + ', '.join(f'"{t}"' for t in tags_list) + ']'
+
+          final_image = ''
+          for d in all_source_data:
+              if d.get('platform') == 'YouTube' and d.get('type') == 'video':
+                  vid_id = re.search(r'(?:v=|youtu\.be/)([\w-]{11})', d.get('url', ''))
+                  if vid_id:
+                      final_image = f'https://img.youtube.com/vi/{vid_id.group(1)}/maxresdefault.jpg'
+                      break
+          if not final_image and primary_image:
+              final_image = primary_image
+          if not final_image:
+              final_image = get_real_image(img_kw_raw or title_raw[:40])
+          if final_image:
+              final_image = upload_to_imgbb(final_image)
+
+          os.makedirs(posts_dir, exist_ok=True)
+          safe_slug = slug_raw[:60] if slug_raw else 'article'
+          filename  = f"{today_str}-{safe_slug}.md"
+          filepath  = os.path.join(posts_dir, filename)
+
+          author_slugs = {
+              'Za Ndani':         'za-ndani',
+              'Mutheu Ann':       'mutheu-ann',
+              'Celestine Nzioka': 'celestine-nzioka',
+          }
+          author_slug = author_slugs.get(author, 'za-ndani')
+
+          fm_lines = [
               '---',
-              f'title: "{parsed["TITLE"].replace(chr(34),chr(39))}"',
-              f'slug: "{parsed["SLUG"]}"',
-              f'excerpt: "{parsed["EXCERPT"].replace(chr(34),chr(39))}"',
-              f'author: "{author}"',
-              f'image: "{final_image}"',
-              f'category: "{category}"',
+              f'title: "{title_raw.replace(chr(34), chr(39))}"',
+              f'slug: "{safe_slug}"',
               f'date: "{publish_timestamp}"',
-              f'tags: [{tags_str}]',
-              '---', '',
-              parsed['BODY'], '',
+              f'author: "{author}"',
+              f'authorSlug: "{author_slug}"',
+              f'category: "{category}"',
+              f'excerpt: "{excerpt_raw[:160].replace(chr(34), chr(39))}"',
+              f'image: "{final_image}"',
+              f'tags: {tags_yaml}',
+              '---',
           ]
-          final_file = '\n'.join(lines)
+          frontmatter = '\n'.join(fm_lines)
 
-          out_dir  = os.path.join(os.getcwd(), posts_dir)
-          os.makedirs(out_dir, exist_ok=True)
-          filename = parsed['SLUG'] + '.md'
-          filepath = os.path.join(out_dir, filename)
-          with open(filepath, 'w', encoding='utf-8') as f:
-              f.write(final_file)
+          with open(filepath, 'w', encoding='utf-8') as fh:
+              fh.write(frontmatter + '\n\n' + body_raw + '\n')
+
+          print(f'\n[Done] Article written: {filepath}')
+          print(f'  Title   : {title_raw}')
+          print(f'  Slug    : {safe_slug}')
+          print(f'  Category: {category}')
+          print(f'  Author  : {author}')
+          print(f'  Image   : {final_image[:80]}')
+          print(f'  Tags    : {tags_yaml}')
+          print(f'  Body len: {len(body_raw)} chars')
 
           memory.append(url_hash)
+          memory = memory[-500:]
           os.makedirs(os.path.dirname(memory_path), exist_ok=True)
-          with open(memory_path, 'w') as f:
-              json.dump(memory[-500:], f)
-
-          print(f'\nArticle saved : {filename}')
-          print(f'Title         : {parsed["TITLE"]}')
-          print(f'Slug          : {parsed["SLUG"]}')
-          print(f'Sources used  : {len(all_source_data)}')
+          with open(memory_path, 'w', encoding='utf-8') as mf:
+              json.dump(memory, mf)
+          print(f'[Memory] Updated with hash {url_hash[:8]}... ({len(memory)} entries)')
           PYEOF
-
-      - name: Git Safety Pull
-        run: |
-          git config --global user.name "Za Ndani Bot"
-          git config --global user.email "bot@zandani.co.ke"
-          git add .
-          git stash -u
-          git fetch origin main
-          git pull origin main --rebase
-          git stash pop || echo "Nothing to pop"
 
       - name: Commit and push article
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_author: "Za Ndani Bot <bot@zandani.co.ke>"
-          commit_message: "content: Multi-source article - ${{ inputs.article_angle || 'auto' }}"
-          branch: ${{ env.DEFAULT_BRANCH }}
-          file_pattern: 'content/posts/*.md .github/memory_multi_source.json'
+          commit_message: "feat(article): ${{ inputs.author }} - multi-source article [${{ inputs.category }}]"
+          commit_author: "${{ inputs.author }} <bot@zandani.co.ke>"
+          file_pattern: "content/posts/*.md .github/memory_multi_source.json"
+          commit_options: '--no-verify'
+          push_options: '--force-with-lease'
