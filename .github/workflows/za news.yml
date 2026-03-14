@@ -57,7 +57,8 @@ jobs:
             lxml \
             playwright \
             python-dateutil \
-            playwright-stealth==1.0.6
+            playwright-stealth==1.0.6 \
+            Pillow
           playwright install chromium --with-deps
 
       - name: Generate article with Gemini
@@ -70,13 +71,14 @@ jobs:
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           python << 'EOF'
-          import os, json, datetime, requests, re, time, sys, hashlib, textwrap, itertools, base64, random
+          import os, json, datetime, requests, re, time, sys, hashlib, textwrap, itertools, base64, random, io
           from dateutil import parser as date_parser
           from google import genai
           from google.genai import types
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
           from playwright_stealth import stealth_sync
+          from PIL import Image
 
           current_utc = datetime.datetime.utcnow()
           current_year = current_utc.strftime("%Y")
@@ -87,6 +89,7 @@ jobs:
           MAX_AGE_HOURS = 12
           SITE_URL = "https://www.kenyans.co.ke/news"
           SITE_DOMAIN = "kenyans.co.ke"
+          SITE_BASE_URL = "https://zandani.co.ke"
 
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot",
@@ -101,21 +104,29 @@ jobs:
               '/terms', '/about', '/privacy', '/contact', '/advertise', '/policy', '/disclaimer'
           ]
 
+          # ── SEO IMPROVEMENT 1: Convert image to WebP before uploading ──────────────
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
               if not api_key or not image_url: return image_url
               try:
                   img_data = requests.get(image_url, timeout=15).content
-                  base64_image = base64.b64encode(img_data).decode('utf-8')
+                  # Convert to WebP for smaller size and faster LCP
+                  img = Image.open(io.BytesIO(img_data))
+                  if img.mode in ('RGBA', 'LA', 'P'):
+                      img = img.convert('RGB')
+                  webp_buffer = io.BytesIO()
+                  img.save(webp_buffer, format='WEBP', quality=82)
+                  webp_buffer.seek(0)
+                  base64_image = base64.b64encode(webp_buffer.read()).decode('utf-8')
                   res = requests.post("https://api.imgbb.com/1/upload", data={"key": api_key, "image": base64_image}, timeout=20)
                   if res.status_code == 200:
                       new_url = res.json()['data']['url']
-                      print(f"Re-hosted: {new_url}")
+                      print(f"Re-hosted as WebP: {new_url}")
                       return new_url
                   print(f"ImgBB failed: {res.text}")
                   return image_url
               except Exception as e:
-                  print(f"ImgBB error: {e}")
+                  print(f"ImgBB/WebP error: {e}")
                   return image_url
 
           def get_target_urls():
@@ -226,7 +237,7 @@ jobs:
                       with open(os.path.join(posts_dir, fn), "r", encoding="utf-8") as f: content = f.read()
                       title_m = re.search(r'title:\s*"(.*?)"', content)
                       slug_m = re.search(r'slug:\s*"(.*?)"', content)
-                      if title_m and slug_m: links.append(f'- [{title_m.group(1)}](https://zandani.co.ke/article/{slug_m.group(1)})')
+                      if title_m and slug_m: links.append(f'- [{title_m.group(1)}]({SITE_BASE_URL}/article/{slug_m.group(1)})')
                   except: pass
               return "\n".join(links) if links else ""
 
@@ -278,6 +289,7 @@ jobs:
               print("No fresh valid article")
               sys.exit(0)
 
+          # ── TITLE ────────────────────────────────────────────────────────────────────
           title_prompt = (
               "SCRAPED ARTICLE TITLE: " + target_title + "\n"
               "ARTICLE SNIPPET:\n" + full_raw_text[:1500] + "\n"
@@ -301,7 +313,10 @@ jobs:
 
           internal_links = get_internal_context()
           banned_str = ", ".join(BANNED_PHRASES)
+          slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
+          canonical_url = f"{SITE_BASE_URL}/article/{slug}"
 
+          # ── SEO IMPROVEMENT 2: Lede-first article structure for AI snippets ─────────
           article_prompt = (
               "Today is " + full_date_str + ". The current year is " + current_year + ". You are writing in real time.\n"
               "TITLE: " + final_title + "\n"
@@ -311,11 +326,12 @@ jobs:
               "Professional tone. No Sheng. Facts first. No em-dashes. Single hyphens only.\n"
               "CRITICAL: This article is happening NOW in " + current_year + ". Never write as if events are from 2024 or any past year. All dates and references must reflect " + current_year + ".\n"
               "No title/author/date in body.\n"
-              "Start with ## H2 keyword heading.\n"
-              "Then 35-45 word summary paragraph.\n"
-              "Then ### subheadings with details.\n"
+              "STRUCTURE (follow exactly):\n"
+              "1. Start with a 35-45 word lede paragraph (who, what, when, where - no heading above it). This answers the core question immediately.\n"
+              "2. Then ## H2 keyword subheading.\n"
+              "3. Then ### subheadings with supporting details.\n"
               "BANNED PHRASES (never use): " + banned_str + "\n"
-              "CRITICAL BRANDING: You are Za Ndani (zandani.co.ke). NEVER mention 'Kenyans', 'kenyans.co.ke', or any source website by name. Do not write phrases like 'Kenyans has not confirmed' or 'according to Kenyans'. If attribution is needed, use 'Za Ndani' or omit the source entirely.\n"
+              "CRITICAL BRANDING: You are Za Ndani (zandani.co.ke). NEVER mention 'Kenyans', 'kenyans.co.ke', or any source website by name. If attribution is needed, use 'Za Ndani' or omit the source entirely.\n"
               "Factual, direct, local context. No cliches."
           )
 
@@ -325,22 +341,72 @@ jobs:
           article_text = re.sub(r"^```(?:markdown)?\n?", "", article_text).rstrip("```").strip()
           article_text = re.sub(r"^(Title|By|Date):.*?\n", "", article_text, flags=re.I|re.M)
           article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
-          # --- Bug fix: scrub any source site references that slipped through ---
           article_text = re.sub(r'\bkenyans\.co\.ke\b', 'zandani.co.ke', article_text, flags=re.I)
           article_text = re.sub(r'\bKenyans\.co\.ke\b', 'Za Ndani', article_text)
           article_text = re.sub(r'\bKenyans\b(?=\s+(has|have|said|reported|confirmed|noted|stated|revealed|indicated))', 'Za Ndani', article_text)
 
-          slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+          time.sleep(3)
+
+          # ── SEO IMPROVEMENT 3: Generate meta description ──────────────────────────
+          desc_prompt = (
+              "Write a single meta description (140-155 characters) for this news article.\n"
+              "Title: " + final_title + "\n"
+              "Article snippet: " + article_text[:600] + "\n"
+              "Rules: factual, no clickbait, starts with a verb or the subject, includes the key news fact. Must be between 140 and 155 characters.\n"
+              "Output ONLY JSON: {\"description\": \"Your description here\"}"
+          )
+          desc_text = gemini_generate(desc_prompt, "description")
+          meta_description = ""
+          if desc_text:
+              try:
+                  clean = re.sub(r"^```json?\n?|```$", "", desc_text, flags=re.I|re.DOTALL).strip()
+                  data = json.loads(clean)
+                  meta_description = data.get('description', '')[:160].replace('"', "'")
+              except Exception as e:
+                  print(f"Desc parse error: {e}")
+
+          time.sleep(3)
+
+          # ── SEO IMPROVEMENT 4: Generate topical tags ──────────────────────────────
+          tags_prompt = (
+              "Generate 4-5 relevant SEO tags for this news article.\n"
+              "Title: " + final_title + "\n"
+              "Article snippet: " + article_text[:500] + "\n"
+              "Rules: lowercase, use hyphens for multi-word tags, topically specific, no generic tags like 'news' or 'kenya'. Include the main topic, key people or place names, and one broader category tag.\n"
+              "Output ONLY JSON: {\"tags\": [\"tag-one\", \"tag-two\", \"tag-three\", \"tag-four\"]}"
+          )
+          tags_text = gemini_generate(tags_prompt, "tags")
+          article_tags = []
+          if tags_text:
+              try:
+                  clean = re.sub(r"^```json?\n?|```$", "", tags_text, flags=re.I|re.DOTALL).strip()
+                  data = json.loads(clean)
+                  article_tags = [str(t).lower().replace(' ', '-') for t in data.get('tags', [])[:5]]
+              except Exception as e:
+                  print(f"Tags parse error: {e}")
+
+          # ── SEO IMPROVEMENT 5: Re-host image as WebP ─────────────────────────────
           final_image = upload_to_imgbb(target_image) if target_image else ""
+
           posts_dir = os.environ.get("POSTS_DIR", "content/posts")
           os.makedirs(posts_dir, exist_ok=True)
+
+          tags_yaml = json.dumps(article_tags)
+
+          # ── SEO IMPROVEMENT 6: Full frontmatter with description, tags, canonical ─
           lines = [
               "---",
               'title: "' + final_title.replace('"', "'") + '"',
               'slug: "' + slug + '"',
+              'description: "' + meta_description + '"',
               'author: "Celestine Nzioka"',
+              'author_url: "' + SITE_BASE_URL + '/author/celestine-nzioka"',
               'image: "' + final_image + '"',
               'category: "News"',
+              'tags: ' + tags_yaml,
+              'canonical: "' + canonical_url + '"',
               'date: "' + publish_timestamp + '"',
               "---",
               article_text,
@@ -368,6 +434,12 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Celestine Nzioka <bot@zandani.co.ke>"
-          commit_message: "content: Breaking news update by Celestine Nzioka 📰"
+          commit_message: "content: Breaking news update by Celestine Nzioka"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_celestine.json'
+
+      # ── SEO IMPROVEMENT 7: Ping Google sitemap after every publish ──────────────
+      - name: Ping Google Sitemap
+        run: |
+          curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
+          echo "Google sitemap pinged"
