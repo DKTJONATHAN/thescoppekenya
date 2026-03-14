@@ -51,7 +51,7 @@ env:
 
 jobs:
   generate-and-publish:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -66,11 +66,37 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-chromium
+          restore-keys: |
+            ${{ runner.os }}-playwright-
+
       - name: Install dependencies
         run: |
+          sudo apt-get update -y
+          sudo apt-get install -y \
+            libnss3 libatk-bridge2.0-0 libdrm2 libxcomposite1 libxdamage1 \
+            libxrandr2 libgbm1 libasound2 fonts-liberation libatk1.0-0 \
+            libatspi2.0-0 libcairo2 libcups2 libdbus-1-3 libexpat1 \
+            libfontconfig1 libgcc1 libglib2.0-0 libgtk-3-0 libnspr4 \
+            libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 \
+            libx11-xcb1 libxcb1 libxext6 libxfixes3 libxi6 libxrender1 \
+            libxtst6 lsb-release wget xdg-utils
           python -m pip install --upgrade pip
-          pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil yt-dlp
-          playwright install chromium
+          pip install \
+            requests \
+            google-genai \
+            beautifulsoup4 \
+            lxml \
+            playwright \
+            playwright-stealth==1.0.6 \
+            python-dateutil \
+            yt-dlp \
+            Pillow
+          playwright install chromium --with-deps
 
       - name: Scrape sources and generate article
         env:
@@ -87,19 +113,24 @@ jobs:
           INPUT_ANGLE: ${{ inputs.article_angle }}
         run: |
           python - <<'PYEOF'
-          import os, json, datetime, requests, re, time, sys, hashlib, itertools, base64, random
+          import os, json, datetime, requests, re, time, sys, hashlib, itertools, base64, random, io
           from dateutil import parser as date_parser
           from google import genai
           from google.genai import types
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
+          from playwright_stealth import stealth_sync
+          from PIL import Image
           import yt_dlp
 
           today_str         = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str     = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+          current_year      = datetime.datetime.utcnow().strftime("%Y")
+          SITE_BASE_URL     = "https://zandani.co.ke"
 
-          MODELS_TO_TRY = ["gemini-2.5-flash", "gemini-2.0-flash"]
+          # FIX: Added gemini-3-flash-preview as first/fastest option
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash"]
 
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot",
@@ -125,6 +156,12 @@ jobs:
                   "Celestine Nzioka, a cynical and authoritative Kenyan political and news journalist. "
                   "Be hard-hitting and expose the angle mainstream media ignores. Write with authority."
               ),
+          }
+
+          AUTHOR_SLUGS = {
+              "Za Ndani": "za-ndani",
+              "Mutheu Ann": "mutheu-ann",
+              "Celestine Nzioka": "celestine-nzioka",
           }
 
           SITE_SELECTORS = {
@@ -191,11 +228,6 @@ jobs:
               except Exception:
                   return str(secs)
 
-          def dash_scrubber(text):
-              if not text: return ""
-              text = text.replace("\u2014", "-").replace("\u2013", "-")
-              return text
-
           def clean_url(url):
               url = url.strip()
               url = re.sub(r'[?&](utm_[^&]*|source=[^&]*|ref=[^&]*)', '', url)
@@ -215,19 +247,29 @@ jobs:
               if 'soundcloud.com' in u:                 return 'soundcloud'
               return 'article'
 
+          # SEO FIX: Convert to WebP before uploading for better LCP
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
               if not api_key or not image_url: return image_url
               try:
                   img_data = requests.get(image_url, timeout=15).content
-                  b64 = base64.b64encode(img_data).decode("utf-8")
+                  img = Image.open(io.BytesIO(img_data))
+                  if img.mode in ('RGBA', 'LA', 'P'):
+                      img = img.convert('RGB')
+                  webp_buf = io.BytesIO()
+                  img.save(webp_buf, format='WEBP', quality=82)
+                  webp_buf.seek(0)
+                  b64 = base64.b64encode(webp_buf.read()).decode("utf-8")
                   res = requests.post("https://api.imgbb.com/1/upload",
                                       data={"key": api_key, "image": b64}, timeout=20)
                   if res.status_code == 200:
-                      return res.json()["data"]["url"]
+                      new_url = res.json()["data"]["url"]
+                      print(f"Re-hosted as WebP: {new_url}")
+                      return new_url
+                  print(f"ImgBB failed: {res.text}")
                   return image_url
               except Exception as e:
-                  print(f"ImgBB error: {e}")
+                  print(f"ImgBB/WebP error: {e}")
                   return image_url
 
           def get_real_image(query):
@@ -425,6 +467,7 @@ jobs:
                               break
               return article_text, img_url, page_title
 
+          # SEO FIX: Added playwright-stealth to article scraper to reduce bot-detection blocks
           def scrape_article_or_social(url):
               print(f"[Article/Social] {url}")
               data = {'platform': 'Article', 'url': url, 'type': 'article'}
@@ -438,10 +481,11 @@ jobs:
                       with sync_playwright() as p:
                           browser = p.chromium.launch(headless=True, args=['--no-sandbox', '--disable-dev-shm-usage', '--disable-blink-features=AutomationControlled'])
                           ctx = browser.new_context(
-                              user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+                              user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
                               viewport={'width': 1920, 'height': 1080}
                           )
                           page = ctx.new_page()
+                          stealth_sync(page)
                           if block_media:
                               page.route('**/*', lambda r: r.abort() if r.request.resource_type in ['media', 'font'] else r.continue_())
                           try: page.goto(url, timeout=60000, wait_until=wait_until)
@@ -568,8 +612,8 @@ jobs:
           if spot_urls:
               with sync_playwright() as pw:
                   browser = pw.chromium.launch(headless=True, args=['--no-sandbox', '--disable-dev-shm-usage', '--disable-blink-features=AutomationControlled'])
-                  ctx  = browser.new_context(
-                      user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+                  ctx  = pw.chromium.launch(headless=True).new_context(
+                      user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
                       viewport={'width': 1920, 'height': 1080}
                   )
                   page = ctx.new_page()
@@ -603,14 +647,14 @@ jobs:
                               txt = cf.read()
                               tm  = re.search(r'title:\s*"(.*?)"', txt)
                               t   = tm.group(1) if tm else f
-                              internal_links += f'- Title: {t} | Link: https://zandani.co.ke/article/{f.replace(".md","")}\n'
+                              internal_links += f'- Title: {t} | Link: {SITE_BASE_URL}/article/{f.replace(".md","")}\n'
                       except Exception: continue
 
           banned_str = ', '.join(BANNED_PHRASES)
           angle_str  = f'\nARTICLE ANGLE: {article_angle}\n' if article_angle else ''
 
           prompt = (
-              f"Current Date: {full_date_str}\n"
+              f"Current Date: {full_date_str}. Current Year: {current_year}.\n"
               f"{angle_str}"
               f"RESEARCH DATA FROM {len(all_source_data)} SOURCE(S):\n"
               f"{combined_data[:16000]}\n\n"
@@ -623,35 +667,37 @@ jobs:
               "- Reference numbers naturally: 'The channel commands X million subscribers' NOT 'data shows X subscribers'.\n"
               "- Attribute fan reactions naturally: 'Fans flooded the comments...' or 'The reaction online has been...'.\n"
               "- Use specific numbers, dates, and patterns from the research data to build credibility.\n"
-              "- When multiple platforms are available, weave them into one unified narrative: 'From streaming numbers to social engagement...'.\n\n"
+              "- When multiple platforms are available, weave them into one unified narrative.\n\n"
               "SMART TITLE ENGINE (FOLLOW STRICTLY):\n"
-              "Step 1 - Extract PRIMARY KEYWORDS: Pull the 2 to 4 most important words or names from the data. These are names, places, show titles, or scandal keywords. Do NOT rephrase or replace them.\n"
-              "Step 2 - Classify content type as one of: LIST, BIO, SCANDAL, GUIDE, TRENDING, NEWS.\n"
+              "Step 1 - Extract PRIMARY KEYWORDS: Pull the 2-4 most important words or names. Do NOT rephrase them.\n"
+              "Step 2 - Classify content type as: LIST, BIO, SCANDAL, GUIDE, TRENDING, or NEWS.\n"
               "Step 3 - Pick the best formula:\n"
-              "  - LIST type: '[Number] + [Primary Keyword] + [Benefit]'\n"
-              "  - BIO type: '[Primary Keyword] + Real Name, Age, or Bio'\n"
-              "  - SCANDAL type: '[Primary Keyword] + [What Happened] + [Consequence]'\n"
-              "  - GUIDE type: '[Primary Keyword] + [How or What] + [Year]'\n"
-              "  - TRENDING or NEWS type: '[Primary Keyword] + [Short Dramatic Hook]'\n"
-              "Step 4 - Build TITLE: start with PRIMARY KEYWORDS, apply chosen formula, keep under 60 characters.\n"
-              "Step 5 - Build SLUG: use PRIMARY KEYWORDS only, lowercase, hyphen-separated, no filler words.\n\n"
+              "  - LIST    : '[Number] + [Primary Keyword] + [Benefit]'\n"
+              "  - BIO     : '[Primary Keyword] + Real Name, Age, or Bio'\n"
+              "  - SCANDAL : '[Primary Keyword] + [What Happened] + [Consequence]'\n"
+              "  - GUIDE   : '[Primary Keyword] + [How or What] + [Year]'\n"
+              "  - TRENDING/NEWS: '[Primary Keyword] + [Short Dramatic Hook]'\n"
+              "Step 4 - TITLE: starts with PRIMARY KEYWORDS, under 60 characters.\n"
+              "Step 5 - SLUG: PRIMARY KEYWORDS only, lowercase, hyphen-separated, no filler words.\n\n"
               "LANGUAGE MANDATE (STRICT):\n"
-              "- NO SHENG OR SWAHILI. Write in clear, dramatic, professional Kenyan English.\n"
-              "- DO NOT use British slang or chatty fillers such as Right, or Well,.\n"
-              "- STRICTLY PROHIBITED: Do not use bracketed subjective asides in the body text.\n"
+              "- NO SHENG OR SWAHILI. Professional Kenyan English only.\n"
+              "- DO NOT use British slang fillers like 'Right,' or 'Well,'.\n"
+              "- NO bracketed subjective asides in body text.\n"
               f"- BANNED PHRASES: {banned_str}.\n"
-              "- NEVER use long dashes or double dashes. Only use regular single hyphens.\n\n"
-              "STRICT OUTPUT FORMAT:\n"
-              "TITLE: [Result of Smart Title Engine - front-loaded with PRIMARY KEYWORDS]\n"
-              "SLUG: [Result of Smart Title Engine - PRIMARY KEYWORDS only]\n"
-              "EXCERPT: [Snippet under 160 characters featuring PRIMARY KEYWORDS]\n"
-              "TAGS: [comma, separated, english, seo, tags]\n"
-              "IMAGE_KEYWORD: [search query for fallback image]\n"
+              "- NEVER use em-dashes or double dashes. Single hyphens only.\n\n"
+              "STRICT OUTPUT FORMAT (output NOTHING else, no markdown fences):\n"
+              "TITLE: [Result of Smart Title Engine]\n"
+              "SLUG: [PRIMARY KEYWORDS only, hyphenated]\n"
+              "EXCERPT: [140-155 character meta description starting with subject or verb, includes key news fact]\n"
+              "TAGS: [comma, separated, lowercase, specific, english, seo, tags - no generic words like 'news']\n"
+              "IMAGE_KEYWORD: [2-4 word Unsplash search query for fallback image]\n"
               "BODY:\n"
-              "[Article text.\n"
-              "Structure: Start with an H2 heading containing at least one PRIMARY KEYWORD. Follow immediately with a crisp 40-word neutral answer paragraph for Google Snippets. Then continue with natural subheadings that also reuse PRIMARY KEYWORDS.\n"
-              "- DO NOT include the title, author name, date, or updated on anywhere in the body text.\n"
-              "- Start immediately with the core article content and paragraphs.]"
+              "[Article body.\n"
+              "STRUCTURE (follow exactly in this order):\n"
+              "1. A 35-45 word lede paragraph - NO heading above it. Answers who/what/when/where immediately. This is used as a Google Featured Snippet.\n"
+              "2. ## H2 subheading that contains at least one PRIMARY KEYWORD.\n"
+              "3. ### subheadings with supporting paragraphs that reuse PRIMARY KEYWORDS naturally.\n"
+              "DO NOT include title, author name, date, or any metadata in the body.]"
           )
 
           raw_keys = [os.environ.get('GEMINI_WRITE_KEY'), os.environ.get('GEMINI_API_KEY'), os.environ.get('GEMINI_API_KEY1')]
@@ -702,113 +748,110 @@ jobs:
                               print(f'  Rotated to next API key.')
                           else:
                               print(f'  All API keys exhausted for {model_id}. Trying next model.')
-                              keys_tried = 0
                               break
-                      time.sleep(45)
+                      time.sleep(random.uniform(15, 25))
 
-          if not full_text or len(full_text) < 200:
-              print('Gemini returned no usable content. Exiting.')
+          if not success_flag or not full_text:
+              print('All models and keys failed. Exiting.')
               sys.exit(1)
 
-          print(f'\n[Parser] Raw output length: {len(full_text)} chars')
+          # ── Parse Gemini output fields ──────────────────────────────────────────────
+          def parse_field(label, text):
+              m = re.search(rf'^{label}:\s*(.+)$', text, re.M)
+              return m.group(1).strip() if m else ''
 
-          def extract_field(text, field):
-              pattern = rf'^{field}:\s*(.+)'
-              m = re.search(pattern, text, re.MULTILINE | re.IGNORECASE)
-              return m.group(1).strip().strip('"').strip("'") if m else ''
+          raw_title    = parse_field('TITLE', full_text)
+          raw_slug     = parse_field('SLUG', full_text)
+          raw_excerpt  = parse_field('EXCERPT', full_text)
+          raw_tags     = parse_field('TAGS', full_text)
+          raw_img_kw   = parse_field('IMAGE_KEYWORD', full_text)
+          body_match   = re.search(r'^BODY:\s*\n([\s\S]+)', full_text, re.M)
+          article_body = body_match.group(1).strip() if body_match else full_text
 
-          title_raw   = extract_field(full_text, 'TITLE')
-          slug_raw    = extract_field(full_text, 'SLUG')
-          excerpt_raw = extract_field(full_text, 'EXCERPT')
-          tags_raw    = extract_field(full_text, 'TAGS')
-          img_kw_raw  = extract_field(full_text, 'IMAGE_KEYWORD')
+          final_title      = raw_title or primary_title or 'Za Ndani Report'
+          meta_description = raw_excerpt[:160].replace('"', "'") if raw_excerpt else ''
+          img_keyword      = raw_img_kw or 'kenya entertainment news'
 
-          body_match  = re.search(r'^BODY:\s*\n([\s\S]+)', full_text, re.MULTILINE | re.IGNORECASE)
-          body_raw    = body_match.group(1).strip() if body_match else ''
-          if not body_raw:
-              body_raw = re.sub(r'^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD):.*\n?', '', full_text, flags=re.MULTILINE | re.IGNORECASE).strip()
+          if raw_slug:
+              slug = re.sub(r'[^a-z0-9]+', '-', raw_slug.lower()).strip('-')[:68]
+          else:
+              slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
 
-          body_raw = dash_scrubber(body_raw)
-          body_raw = re.sub(r'\*\*(.*?)\*\*', r'\1', body_raw)
-          body_raw = re.sub(r'\[(.*?)\]\(https?://[^\)]+\)', lambda m: m.group(0) if 'zandani.co.ke' in m.group(0) else m.group(1), body_raw)
+          article_tags = [t.strip().lower().replace(' ', '-') for t in re.split(r'[,;]+', raw_tags) if t.strip()][:6]
 
-          if not slug_raw:
-              slug_raw = re.sub(r'[^\w\s-]', '', title_raw.lower())
-              slug_raw = re.sub(r'[\s_]+', '-', slug_raw).strip('-')
-          slug_raw = re.sub(r'[^\w-]', '', slug_raw.lower().replace(' ', '-'))[:80]
+          # Clean up article body
+          article_body = re.sub(r'^```(?:markdown)?\n?', '', article_body).rstrip('`').strip()
+          article_body = re.sub(r'^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD|BODY):.*\n?', '', article_body, flags=re.M)
+          article_body = article_body.replace('\u2014', '-').replace('\u2013', '-')
 
-          if not title_raw:
-              title_raw = primary_title[:70] if primary_title else 'Untitled'
-
-          tags_list = [t.strip().lower() for t in tags_raw.split(',') if t.strip()][:10]
-          tags_yaml  = '[' + ', '.join(f'"{t}"' for t in tags_list) + ']'
-
+          # ── Resolve image ───────────────────────────────────────────────────────────
           final_image = ''
           for d in all_source_data:
-              if d.get('platform') == 'YouTube' and d.get('type') == 'video':
-                  vid_id = re.search(r'(?:v=|youtu\.be/)([\w-]{11})', d.get('url', ''))
-                  if vid_id:
-                      final_image = f'https://img.youtube.com/vi/{vid_id.group(1)}/maxresdefault.jpg'
-                      break
+              if d.get('image'):
+                  final_image = upload_to_imgbb(d['image'])
+                  if final_image: break
           if not final_image and primary_image:
-              final_image = primary_image
+              final_image = upload_to_imgbb(primary_image)
           if not final_image:
-              final_image = get_real_image(img_kw_raw or title_raw[:40])
-          if final_image:
-              final_image = upload_to_imgbb(final_image)
+              fallback_url = get_real_image(img_keyword)
+              final_image  = upload_to_imgbb(fallback_url) if fallback_url else ''
+
+          # ── Build frontmatter with all SEO fields ───────────────────────────────────
+          canonical_url = f"{SITE_BASE_URL}/article/{slug}"
+          author_url    = f"{SITE_BASE_URL}/author/{AUTHOR_SLUGS.get(author, 'za-ndani')}"
+          tags_json     = json.dumps(article_tags)
 
           os.makedirs(posts_dir, exist_ok=True)
-          safe_slug = slug_raw[:60] if slug_raw else 'article'
-          filename  = f"{today_str}-{safe_slug}.md"
-          filepath  = os.path.join(posts_dir, filename)
-
-          author_slugs = {
-              'Za Ndani':         'za-ndani',
-              'Mutheu Ann':       'mutheu-ann',
-              'Celestine Nzioka': 'celestine-nzioka',
-          }
-          author_slug = author_slugs.get(author, 'za-ndani')
-
-          fm_lines = [
-              '---',
-              f'title: "{title_raw.replace(chr(34), chr(39))}"',
-              f'slug: "{safe_slug}"',
-              f'date: "{publish_timestamp}"',
+          lines = [
+              "---",
+              f'title: "{final_title.replace(chr(34), chr(39))}"',
+              f'slug: "{slug}"',
+              f'description: "{meta_description}"',
               f'author: "{author}"',
-              f'authorSlug: "{author_slug}"',
-              f'category: "{category}"',
-              f'excerpt: "{excerpt_raw[:160].replace(chr(34), chr(39))}"',
+              f'author_url: "{author_url}"',
               f'image: "{final_image}"',
-              f'tags: {tags_yaml}',
-              '---',
+              f'category: "{category}"',
+              f'tags: {tags_json}',
+              f'canonical: "{canonical_url}"',
+              f'date: "{publish_timestamp}"',
+              "---",
+              article_body,
+              ""
           ]
-          frontmatter = '\n'.join(fm_lines)
-
-          with open(filepath, 'w', encoding='utf-8') as fh:
-              fh.write(frontmatter + '\n\n' + body_raw + '\n')
-
-          print(f'\n[Done] Article written: {filepath}')
-          print(f'  Title   : {title_raw}')
-          print(f'  Slug    : {safe_slug}')
-          print(f'  Category: {category}')
-          print(f'  Author  : {author}')
-          print(f'  Image   : {final_image[:80]}')
-          print(f'  Tags    : {tags_yaml}')
-          print(f'  Body len: {len(body_raw)} chars')
+          filepath = os.path.join(posts_dir, f"{today_str}-{slug}.md")
+          with open(filepath, 'w', encoding='utf-8') as f:
+              f.write('\n'.join(lines))
 
           memory.append(url_hash)
-          memory = memory[-500:]
-          os.makedirs(os.path.dirname(memory_path), exist_ok=True)
-          with open(memory_path, 'w', encoding='utf-8') as mf:
-              json.dump(memory, mf)
-          print(f'[Memory] Updated with hash {url_hash[:8]}... ({len(memory)} entries)')
+          with open(memory_path, 'w') as f:
+              json.dump(memory[-300:], f)
+          print(f"\nArticle saved: {filepath}")
+          print(f"Title     : {final_title}")
+          print(f"Slug      : {slug}")
+          print(f"Canonical : {canonical_url}")
+          print(f"Tags      : {article_tags}")
+          print(f"Image     : {final_image}")
           PYEOF
 
-      - name: Commit and push article
+      - name: Git Safety Pull
+        run: |
+          git config --global user.name "${{ inputs.author }}"
+          git config --global user.email "bot@zandani.co.ke"
+          git add .
+          git stash -u
+          git fetch origin main
+          git pull origin main --rebase
+          git stash pop || echo "Nothing to pop"
+
+      - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "feat(article): ${{ inputs.author }} - multi-source article [${{ inputs.category }}]"
           commit_author: "${{ inputs.author }} <bot@zandani.co.ke>"
-          file_pattern: "content/posts/*.md .github/memory_multi_source.json"
-          commit_options: '--no-verify'
-          push_options: '--force-with-lease'
+          commit_message: "content: New article by ${{ inputs.author }} [${{ inputs.category }}]"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: 'content/posts/*.md .github/memory_multi_source.json'
+
+      - name: Ping Google Sitemap
+        run: |
+          curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
+          echo "Google sitemap pinged"
