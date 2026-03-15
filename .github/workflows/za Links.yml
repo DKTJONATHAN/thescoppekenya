@@ -36,6 +36,36 @@ on:
         required: false
         type: string
         default: ''
+      title_keywords:
+        description: >
+          TITLE KEYWORDS — comma-separated words that MUST appear in the title.
+          Example: Wizkid, Grammy, snub
+        required: false
+        type: string
+        default: ''
+      title_format:
+        description: >
+          TITLE FORMAT — AUTO lets AI decide. LIST = "5 Reasons...", BIO = "Name: Age/Net Worth",
+          SCANDAL = "Name Did X — Consequence", GUIDE = "How to X in 2025",
+          TRENDING = dramatic hook, NEWS = straight factual headline.
+        required: false
+        type: choice
+        options:
+          - AUTO
+          - LIST
+          - BIO
+          - SCANDAL
+          - GUIDE
+          - TRENDING
+          - NEWS
+        default: AUTO
+      custom_title:
+        description: >
+          OVERRIDE TITLE — type an exact title to bypass AI title generation completely.
+          Leave blank to let AI write the title using the keywords/format above.
+        required: false
+        type: string
+        default: ''
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -111,6 +141,9 @@ jobs:
           INPUT_AUTHOR: ${{ inputs.author }}
           INPUT_CATEGORY: ${{ inputs.category }}
           INPUT_ANGLE: ${{ inputs.article_angle }}
+          INPUT_TITLE_KEYWORDS: ${{ inputs.title_keywords }}
+          INPUT_TITLE_FORMAT: ${{ inputs.title_format }}
+          INPUT_CUSTOM_TITLE: ${{ inputs.custom_title }}
         run: |
           python - <<'PYEOF'
           import os, json, datetime, requests, re, time, sys, hashlib, itertools, base64, random, io
@@ -129,8 +162,7 @@ jobs:
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
 
-          # FIX: Added gemini-3-flash-preview as first/fastest option
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
 
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot",
@@ -207,6 +239,13 @@ jobs:
               " | The Sun", " | Daily Mail",
           ]
 
+          def title_to_slug(t):
+              s = t.lower()
+              s = re.sub(r"[^a-z0-9\s-]", "", s)
+              s = re.sub(r"\s+", "-", s.strip())
+              s = re.sub(r"-+", "-", s).strip("-")
+              return s[:70]
+
           def fmt_num(n):
               if n is None: return "N/A"
               try:
@@ -247,7 +286,6 @@ jobs:
               if 'soundcloud.com' in u:                 return 'soundcloud'
               return 'article'
 
-          # SEO FIX: Convert to WebP before uploading for better LCP
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
               if not api_key or not image_url: return image_url
@@ -467,7 +505,6 @@ jobs:
                               break
               return article_text, img_url, page_title
 
-          # SEO FIX: Added playwright-stealth to article scraper to reduce bot-detection blocks
           def scrape_article_or_social(url):
               print(f"[Article/Social] {url}")
               data = {'platform': 'Article', 'url': url, 'type': 'article'}
@@ -575,13 +612,17 @@ jobs:
           # ================================================================
           #  MAIN EXECUTION
           # ================================================================
-          raw_input_urls = os.environ.get('INPUT_URLS', '').strip()
-          author         = os.environ.get('INPUT_AUTHOR', 'Za Ndani').strip()
-          category       = os.environ.get('INPUT_CATEGORY', 'Entertainment').strip()
-          article_angle  = os.environ.get('INPUT_ANGLE', '').strip()
-          persona        = AUTHOR_PERSONAS.get(author, AUTHOR_PERSONAS['Za Ndani'])
-          posts_dir      = os.environ.get('POSTS_DIR', 'content/posts')
-          memory_path    = os.environ.get('MEMORY_FILE', '.github/memory_multi_source.json')
+          raw_input_urls        = os.environ.get('INPUT_URLS', '').strip()
+          author                = os.environ.get('INPUT_AUTHOR', 'Za Ndani').strip()
+          category              = os.environ.get('INPUT_CATEGORY', 'Entertainment').strip()
+          article_angle         = os.environ.get('INPUT_ANGLE', '').strip()
+          title_keywords_raw    = os.environ.get('INPUT_TITLE_KEYWORDS', '').strip()
+          title_format_choice   = os.environ.get('INPUT_TITLE_FORMAT', 'AUTO').strip()
+          custom_title_override = os.environ.get('INPUT_CUSTOM_TITLE', '').strip()
+
+          persona     = AUTHOR_PERSONAS.get(author, AUTHOR_PERSONAS['Za Ndani'])
+          posts_dir   = os.environ.get('POSTS_DIR', 'content/posts')
+          memory_path = os.environ.get('MEMORY_FILE', '.github/memory_multi_source.json')
 
           urls = parse_urls(raw_input_urls)
           if not urls:
@@ -650,54 +691,82 @@ jobs:
                               internal_links += f'- Title: {t} | Link: {SITE_BASE_URL}/article/{f.replace(".md","")}\n'
                       except Exception: continue
 
+          # ── Build title-control prompt injections ─────────────────────────
+          title_keyword_block = ''
+          if title_keywords_raw:
+              title_keyword_block = (
+                  '\nMANDATORY TITLE KEYWORDS: ' + title_keywords_raw + '\n'
+                  'You MUST include ALL of these keywords verbatim in the title. Do NOT paraphrase or omit any.\n'
+              )
+
+          title_format_block = ''
+          if title_format_choice and title_format_choice != 'AUTO':
+              title_format_block = (
+                  '\nFORCED TITLE FORMAT: Use the ' + title_format_choice + ' pattern from the Smart Title Engine. No other format is acceptable.\n'
+              )
+
+          custom_title_block = ''
+          if custom_title_override:
+              custom_title_block = (
+                  '\nEDITOR TITLE OVERRIDE: The title has been set and must not change:\n'
+                  '  TITLE: ' + custom_title_override + '\n'
+                  '  SLUG : ' + title_to_slug(custom_title_override) + '\n'
+                  'Output exactly these values for TITLE and SLUG. Generate EXCERPT, TAGS, IMAGE_KEYWORD, and BODY as normal.\n'
+              )
+
           banned_str = ', '.join(BANNED_PHRASES)
-          angle_str  = f'\nARTICLE ANGLE: {article_angle}\n' if article_angle else ''
+          angle_str  = '\nARTICLE ANGLE: ' + article_angle + '\n' if article_angle else ''
 
           prompt = (
-              f"Current Date: {full_date_str}. Current Year: {current_year}.\n"
-              f"{angle_str}"
-              f"RESEARCH DATA FROM {len(all_source_data)} SOURCE(S):\n"
-              f"{combined_data[:16000]}\n\n"
-              f"{internal_links}\n\n"
-              f"TASK: Write a news/entertainment report as {persona}\n"
-              "You must use Google Search to verify any facts and find additional context.\n\n"
-              "CRITICAL RULES FOR USING THE RESEARCH DATA:\n"
-              "- Write with complete authority as a journalist who knows this subject deeply.\n"
-              "- NEVER reveal how you got the data. Do NOT say 'according to YouTube data', 'Spotify shows', 'we checked the channel', 'data reveals', 'scraped', or anything implying automated research.\n"
-              "- Reference numbers naturally: 'The channel commands X million subscribers' NOT 'data shows X subscribers'.\n"
-              "- Attribute fan reactions naturally: 'Fans flooded the comments...' or 'The reaction online has been...'.\n"
-              "- Use specific numbers, dates, and patterns from the research data to build credibility.\n"
-              "- When multiple platforms are available, weave them into one unified narrative.\n\n"
-              "SMART TITLE ENGINE (FOLLOW STRICTLY):\n"
-              "Step 1 - Extract PRIMARY KEYWORDS: Pull the 2-4 most important words or names. Do NOT rephrase them.\n"
-              "Step 2 - Classify content type as: LIST, BIO, SCANDAL, GUIDE, TRENDING, or NEWS.\n"
-              "Step 3 - Pick the best formula:\n"
-              "  - LIST    : '[Number] + [Primary Keyword] + [Benefit]'\n"
-              "  - BIO     : '[Primary Keyword] + Real Name, Age, or Bio'\n"
-              "  - SCANDAL : '[Primary Keyword] + [What Happened] + [Consequence]'\n"
-              "  - GUIDE   : '[Primary Keyword] + [How or What] + [Year]'\n"
-              "  - TRENDING/NEWS: '[Primary Keyword] + [Short Dramatic Hook]'\n"
-              "Step 4 - TITLE: starts with PRIMARY KEYWORDS, under 60 characters.\n"
-              "Step 5 - SLUG: PRIMARY KEYWORDS only, lowercase, hyphen-separated, no filler words.\n\n"
-              "LANGUAGE MANDATE (STRICT):\n"
-              "- NO SHENG OR SWAHILI. Professional Kenyan English only.\n"
-              "- DO NOT use British slang fillers like 'Right,' or 'Well,'.\n"
-              "- NO bracketed subjective asides in body text.\n"
-              f"- BANNED PHRASES: {banned_str}.\n"
-              "- NEVER use em-dashes or double dashes. Single hyphens only.\n\n"
-              "STRICT OUTPUT FORMAT (output NOTHING else, no markdown fences):\n"
-              "TITLE: [Result of Smart Title Engine]\n"
-              "SLUG: [PRIMARY KEYWORDS only, hyphenated]\n"
-              "EXCERPT: [140-155 character meta description starting with subject or verb, includes key news fact]\n"
-              "TAGS: [comma, separated, lowercase, specific, english, seo, tags - no generic words like 'news']\n"
-              "IMAGE_KEYWORD: [2-4 word Unsplash search query for fallback image]\n"
-              "BODY:\n"
-              "[Article body.\n"
-              "STRUCTURE (follow exactly in this order):\n"
-              "1. A 35-45 word lede paragraph - NO heading above it. Answers who/what/when/where immediately. This is used as a Google Featured Snippet.\n"
-              "2. ## H2 subheading that contains at least one PRIMARY KEYWORD.\n"
-              "3. ### subheadings with supporting paragraphs that reuse PRIMARY KEYWORDS naturally.\n"
-              "DO NOT include title, author name, date, or any metadata in the body.]"
+              'Current Date: ' + full_date_str + '. Current Year: ' + current_year + '.\n'
+              + angle_str
+              + custom_title_block
+              + title_keyword_block
+              + title_format_block
+              + 'RESEARCH DATA FROM ' + str(len(all_source_data)) + ' SOURCE(S):\n'
+              + combined_data[:16000] + '\n\n'
+              + internal_links + '\n\n'
+              + 'TASK: Write a news/entertainment report as ' + persona + '\n'
+              'You must use Google Search to verify any facts and find additional context.\n\n'
+              'CRITICAL RULES FOR USING THE RESEARCH DATA:\n'
+              '- Write with complete authority as a journalist who knows this subject deeply.\n'
+              '- NEVER reveal how you got the data. Do NOT say "according to YouTube data", "Spotify shows", "we checked the channel", "data reveals", "scraped", or anything implying automated research.\n'
+              '- Reference numbers naturally: "The channel commands X million subscribers" NOT "data shows X subscribers".\n'
+              '- Attribute fan reactions naturally: "Fans flooded the comments..." or "The reaction online has been...".\n'
+              '- Use specific numbers, dates, and patterns from the research data to build credibility.\n'
+              '- When multiple platforms are available, weave them into one unified narrative.\n\n'
+              'SMART TITLE ENGINE (FOLLOW STRICTLY):\n'
+              'Step 1 - Extract PRIMARY KEYWORDS: Pull the 2-4 most important words or names. Do NOT rephrase them.\n'
+              '  - If MANDATORY TITLE KEYWORDS were supplied above, they ARE the primary keywords.\n'
+              'Step 2 - Classify content type as: LIST, BIO, SCANDAL, GUIDE, TRENDING, or NEWS.\n'
+              '  - If FORCED TITLE FORMAT was supplied, skip classification and use that format.\n'
+              'Step 3 - Pick the best formula:\n'
+              '  - LIST    : "[Number] + [Primary Keyword] + [Benefit]"\n'
+              '  - BIO     : "[Primary Keyword] + Real Name, Age, or Bio"\n'
+              '  - SCANDAL : "[Primary Keyword] + [What Happened] + [Consequence]"\n'
+              '  - GUIDE   : "[Primary Keyword] + [How or What] + [Year]"\n'
+              '  - TRENDING/NEWS: "[Primary Keyword] + [Short Dramatic Hook]"\n'
+              'Step 4 - TITLE: starts with PRIMARY KEYWORDS, under 60 characters.\n'
+              'Step 5 - SLUG: PRIMARY KEYWORDS only, lowercase, hyphen-separated, no filler words.\n\n'
+              'LANGUAGE MANDATE (STRICT):\n'
+              '- NO SHENG OR SWAHILI. Professional Kenyan English only.\n'
+              '- DO NOT use British slang fillers like "Right," or "Well,".\n'
+              '- NO bracketed subjective asides in body text.\n'
+              '- BANNED PHRASES: ' + banned_str + '.\n'
+              '- NEVER use em-dashes or double dashes. Single hyphens only.\n\n'
+              'STRICT OUTPUT FORMAT (output NOTHING else, no markdown fences):\n'
+              'TITLE: [Result of Smart Title Engine or Editor Override]\n'
+              'SLUG: [PRIMARY KEYWORDS only, hyphenated]\n'
+              'EXCERPT: [140-155 character meta description starting with subject or verb, includes key news fact]\n'
+              'TAGS: [comma, separated, lowercase, specific, english, seo, tags - no generic words like "news"]\n'
+              'IMAGE_KEYWORD: [2-4 word Unsplash search query for fallback image]\n'
+              'BODY:\n'
+              '[Article body.\n'
+              'STRUCTURE (follow exactly in this order):\n'
+              '1. A 35-45 word lede paragraph - NO heading above it. Answers who/what/when/where immediately. This is used as a Google Featured Snippet.\n'
+              '2. ## H2 subheading that contains at least one PRIMARY KEYWORD.\n'
+              '3. ### subheadings with supporting paragraphs that reuse PRIMARY KEYWORDS naturally.\n'
+              'DO NOT include title, author name, date, or any metadata in the body.]'
           )
 
           raw_keys = [os.environ.get('GEMINI_WRITE_KEY'), os.environ.get('GEMINI_API_KEY'), os.environ.get('GEMINI_API_KEY1')]
@@ -711,147 +780,131 @@ jobs:
           gsearch_tool = types.Tool(google_search=types.GoogleSearch())
           full_text    = ''
           success_flag = False
-          keys_tried   = 0
 
-          for model_id in MODELS_TO_TRY:
-              if success_flag: break
-              print(f'\n[Gemini] Trying model: {model_id}')
-              for retry in range(len(api_keys) * 2):
-                  try:
-                      response = client.models.generate_content(
-                          model=model_id,
-                          contents=prompt,
-                          config=types.GenerateContentConfig(temperature=0.85, tools=[gsearch_tool]),
+          for attempt in range(len(api_keys) * len(MODELS_TO_TRY)):
+              model = MODELS_TO_TRY[attempt % len(MODELS_TO_TRY)]
+              try:
+                  response = client.models.generate_content(
+                      model=model,
+                      contents=prompt,
+                      config=types.GenerateContentConfig(
+                          tools=[gsearch_tool],
+                          temperature=0.7,
+                          max_output_tokens=8192,
                       )
-                      candidate = response.candidates[0] if response.candidates else None
-                      if candidate and candidate.content and candidate.content.parts:
-                          full_text = ''.join(
-                              p.text for p in candidate.content.parts if hasattr(p, 'text') and p.text
-                          ).strip()
-                      else:
-                          full_text = (response.text or '').strip()
-                      if len(full_text) > 200:
-                          print(f'  Success with {model_id} on retry {retry}')
-                          success_flag = True
-                          break
-                      else:
-                          print(f'  Short/empty response ({len(full_text)} chars). Retrying...')
-                          time.sleep(10)
-                  except Exception as e:
-                      err_str = str(e).lower()
-                      print(f'  Error: {e}')
-                      if any(x in err_str for x in ['quota', 'rate', '429', 'resource_exhausted']):
-                          keys_tried += 1
-                          if keys_tried < len(api_keys):
-                              current_key = next(key_cycle)
-                              client = genai.Client(api_key=current_key)
-                              print(f'  Rotated to next API key.')
-                          else:
-                              print(f'  All API keys exhausted for {model_id}. Trying next model.')
-                              break
-                      time.sleep(random.uniform(15, 25))
+                  )
+                  full_text    = response.text
+                  success_flag = True
+                  print(f'[Gemini] Generated with {model}')
+                  break
+              except Exception as e:
+                  print(f'[Gemini] Attempt {attempt + 1} failed ({model}): {e}')
+                  current_key = next(key_cycle)
+                  client      = genai.Client(api_key=current_key)
+                  time.sleep(2)
 
           if not success_flag or not full_text:
-              print('All models and keys failed. Exiting.')
-              sys.exit(1)
+              print('All Gemini API attempts failed.'); sys.exit(1)
 
-          # ── Parse Gemini output fields ──────────────────────────────────────────────
-          def parse_field(label, text):
-              m = re.search(rf'^{label}:\s*(.+)$', text, re.M)
-              return m.group(1).strip() if m else ''
+          def extract_field(text, field):
+              m = re.search(r'^' + field + r':\s*(.+)$', text, re.MULTILINE)
+              return m.group(1).strip().strip('"').strip("'") if m else ''
 
-          raw_title    = parse_field('TITLE', full_text)
-          raw_slug     = parse_field('SLUG', full_text)
-          raw_excerpt  = parse_field('EXCERPT', full_text)
-          raw_tags     = parse_field('TAGS', full_text)
-          raw_img_kw   = parse_field('IMAGE_KEYWORD', full_text)
-          body_match   = re.search(r'^BODY:\s*\n([\s\S]+)', full_text, re.M)
-          article_body = body_match.group(1).strip() if body_match else full_text
+          title    = extract_field(full_text, 'TITLE')
+          slug     = extract_field(full_text, 'SLUG')
+          excerpt  = extract_field(full_text, 'EXCERPT')
+          tags_str = extract_field(full_text, 'TAGS')
+          img_kw   = extract_field(full_text, 'IMAGE_KEYWORD')
+          body_m   = re.search(r'^BODY:\s*\n(.*)', full_text, re.MULTILINE | re.DOTALL)
+          body     = body_m.group(1).strip() if body_m else ''
 
-          final_title      = raw_title or primary_title or 'Za Ndani Report'
-          meta_description = raw_excerpt[:160].replace('"', "'") if raw_excerpt else ''
-          img_keyword      = raw_img_kw or 'kenya entertainment news'
+          # Apply editor override as a safety net in case AI ignored it
+          if custom_title_override:
+              title = custom_title_override
+              slug  = title_to_slug(custom_title_override)
+              print(f'[Title] Using editor override: {title}')
 
-          if raw_slug:
-              slug = re.sub(r'[^a-z0-9]+', '-', raw_slug.lower()).strip('-')[:68]
-          else:
-              slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
+          if not title or not body:
+              print('Failed to generate title or body.'); sys.exit(1)
 
-          article_tags = [t.strip().lower().replace(' ', '-') for t in re.split(r'[,;]+', raw_tags) if t.strip()][:6]
+          slug = re.sub(r'[^a-z0-9-]', '', slug.lower().replace(' ', '-'))
+          slug = re.sub(r'-+', '-', slug).strip('-')[:70]
+          if not slug:
+              slug = title_to_slug(title)
 
-          # Clean up article body
-          article_body = re.sub(r'^```(?:markdown)?\n?', '', article_body).rstrip('`').strip()
-          article_body = re.sub(r'^(TITLE|SLUG|EXCERPT|TAGS|IMAGE_KEYWORD|BODY):.*\n?', '', article_body, flags=re.M)
-          article_body = article_body.replace('\u2014', '-').replace('\u2013', '-')
+          img_query     = img_kw or title[:40]
+          if not primary_image:
+              primary_image = get_real_image(img_query)
+          primary_image = upload_to_imgbb(primary_image)
 
-          # ── Resolve image ───────────────────────────────────────────────────────────
-          final_image = ''
-          for d in all_source_data:
-              if d.get('image'):
-                  final_image = upload_to_imgbb(d['image'])
-                  if final_image: break
-          if not final_image and primary_image:
-              final_image = upload_to_imgbb(primary_image)
-          if not final_image:
-              fallback_url = get_real_image(img_keyword)
-              final_image  = upload_to_imgbb(fallback_url) if fallback_url else ''
+          tags      = [t.strip().lower() for t in tags_str.split(',') if t.strip()]
+          tags_yaml = ', '.join(['"' + t + '"' for t in tags])
 
-          # ── Build frontmatter with all SEO fields ───────────────────────────────────
-          canonical_url = f"{SITE_BASE_URL}/article/{slug}"
-          author_url    = f"{SITE_BASE_URL}/author/{AUTHOR_SLUGS.get(author, 'za-ndani')}"
-          tags_json     = json.dumps(article_tags)
+          author_slug  = AUTHOR_SLUGS.get(author, 'za-ndani')
+          frontmatter  = (
+              '---\n'
+              'title: "' + title + '"\n'
+              'slug: "' + slug + '"\n'
+              'date: "' + publish_timestamp + '"\n'
+              'draft: false\n'
+              'author: "' + author + '"\n'
+              'authorSlug: "' + author_slug + '"\n'
+              'categories: ["' + category + '"]\n'
+              'tags: [' + tags_yaml + ']\n'
+              'excerpt: "' + excerpt + '"\n'
+              'image: "' + primary_image + '"\n'
+              '---'
+          )
 
+          file_content = frontmatter + '\n\n' + body + '\n'
+          filename     = today_str + '-' + slug + '.md'
+          filepath     = os.path.join(posts_dir, filename)
           os.makedirs(posts_dir, exist_ok=True)
-          lines = [
-              "---",
-              f'title: "{final_title.replace(chr(34), chr(39))}"',
-              f'slug: "{slug}"',
-              f'description: "{meta_description}"',
-              f'author: "{author}"',
-              f'author_url: "{author_url}"',
-              f'image: "{final_image}"',
-              f'category: "{category}"',
-              f'tags: {tags_json}',
-              f'canonical: "{canonical_url}"',
-              f'date: "{publish_timestamp}"',
-              "---",
-              article_body,
-              ""
-          ]
-          filepath = os.path.join(posts_dir, f"{today_str}-{slug}.md")
+
           with open(filepath, 'w', encoding='utf-8') as f:
-              f.write('\n'.join(lines))
+              f.write(file_content)
+
+          print('\n' + '=' * 60)
+          print('Article  : ' + filepath)
+          print('Title    : ' + title)
+          print('Slug     : ' + slug)
+          print('=' * 60)
 
           memory.append(url_hash)
+          os.makedirs(os.path.dirname(memory_path), exist_ok=True)
           with open(memory_path, 'w') as f:
-              json.dump(memory[-300:], f)
-          print(f"\nArticle saved: {filepath}")
-          print(f"Title     : {final_title}")
-          print(f"Slug      : {slug}")
-          print(f"Canonical : {canonical_url}")
-          print(f"Tags      : {article_tags}")
-          print(f"Image     : {final_image}")
+              json.dump(memory[-200:], f)
+          print('Done!')
           PYEOF
 
-      - name: Git Safety Pull
+      - name: Commit and push article
         run: |
-          git config --global user.name "${{ inputs.author }}"
-          git config --global user.email "bot@zandani.co.ke"
-          git add .
-          git stash -u
-          git fetch origin main
-          git pull origin main --rebase
-          git stash pop || echo "Nothing to pop"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "${{ env.POSTS_DIR }}/" "${{ env.MEMORY_FILE }}" || true
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "chore: publish article via workflow_dispatch [skip ci]"
+            git push origin ${{ env.DEFAULT_BRANCH }}
+          fi
 
-      - name: Commit and push
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_author: "${{ inputs.author }} <bot@zandani.co.ke>"
-          commit_message: "content: New article by ${{ inputs.author }} [${{ inputs.category }}]"
-          branch: ${{ env.DEFAULT_BRANCH }}
-          file_pattern: 'content/posts/*.md .github/memory_multi_source.json'
-
-      - name: Ping Google Sitemap
+      - name: Job summary
+        if: always()
         run: |
-          curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
-          echo "Google sitemap pinged"
+          {
+            echo "## Article Generation Summary"
+            echo ""
+            echo "| Field | Value |"
+            echo "|-------|-------|"
+            echo "| Status | :white_check_mark: Published |"
+            echo "| Author | ${{ inputs.author }} |"
+            echo "| Category | ${{ inputs.category }} |"
+            if [ -n "${{ inputs.title_keywords }}" ]; then
+              echo "| Title Keywords | ${{ inputs.title_keywords }} |"
+            fi
+            echo "| Title Format | ${{ inputs.title_format }} |"
+            if [ -n "${{ inputs.custom_title }}" ]; then
+              echo "| Title Override | ${{ inputs.custom_title }} |"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
