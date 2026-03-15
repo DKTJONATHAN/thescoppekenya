@@ -1,4 +1,4 @@
-name: Multi-Source Research Article Generator
+name: Manyuo
 
 on:
   workflow_dispatch:
