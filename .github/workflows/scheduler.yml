@@ -1,7 +1,10 @@
 name: Scheduled Posts Publisher
 
-# Runs every hour to activate any posts whose publishDate has arrived.
-# Also supports manual trigger for an immediate rebuild.
+# Hugo hides posts where publishDate is in the future (no --buildFuture flag).
+# This workflow runs every hour, and when a post becomes due, it commits a
+# tiny state-file update. That commit triggers Vercel's auto-deploy,
+# which rebuilds the site — and Hugo now renders the post.
+
 on:
   schedule:
     - cron: '0 * * * *'   # every hour at :00 UTC
@@ -23,6 +26,7 @@ permissions:
 env:
   DEFAULT_BRANCH: main
   POSTS_DIR: content/posts
+  STATE_FILE: .github/scheduler_state.json
 
 jobs:
   check-and-publish:
@@ -42,7 +46,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install python-dateutil
-        run: pip install python-dateutil
+        run: pip install python-dateutil --quiet
 
       - name: Check for posts due to publish
         id: check_due
@@ -51,18 +55,17 @@ jobs:
           import os, re, datetime, json
 
           posts_dir  = os.environ.get('POSTS_DIR', 'content/posts')
+          state_file = os.environ.get('STATE_FILE', '.github/scheduler_state.json')
           now_utc    = datetime.datetime.utcnow().replace(tzinfo=datetime.timezone.utc)
           due_posts  = []
-          state_file = '.github/scheduler_state.json'
 
-          # Load last-checked state
           last_state = {}
           if os.path.exists(state_file):
               with open(state_file) as f:
                   last_state = json.load(f)
 
           if not os.path.exists(posts_dir):
-              print("No posts directory found.")
+              print("No posts directory — nothing to check.")
               with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
                   fh.write("has_due_posts=false
 ")
@@ -77,7 +80,7 @@ jobs:
               with open(fpath, 'r', encoding='utf-8') as f:
                   content = f.read()
 
-              pub_match = re.search(r'^publishDate:\s*["']?(.+?)["']?\s*$', content, re.MULTILINE)
+              pub_match = re.search(r"^publishDate:\s*["']?(.+?)["']?\s*$", content, re.MULTILINE)
               if not pub_match:
                   continue
 
@@ -88,51 +91,51 @@ jobs:
               except Exception:
                   continue
 
-              # Post is due if publishDate <= now AND we have not yet flagged it
+              # Due = publishDate is now in the past AND not already activated
               if pub_dt <= now_utc and fname not in last_state.get('activated', []):
                   due_posts.append(fname)
-                  print(f"  DUE: {fname} (publishDate={pub_dt})")
+                  print(f"  NOW DUE: {fname}  (publishDate = {pub_dt.strftime('%Y-%m-%d %H:%M UTC')})")
 
           if due_posts:
-              # Update state file so we do not trigger redundant rebuilds
               activated = last_state.get('activated', [])
               activated.extend(due_posts)
-              last_state['activated'] = activated[-500:]  # keep last 500
+              last_state['activated'] = activated[-500:]
               last_state['last_check'] = now_utc.isoformat()
-              os.makedirs('.github', exist_ok=True)
+              last_state['last_activated'] = due_posts
+              os.makedirs(os.path.dirname(state_file), exist_ok=True)
               with open(state_file, 'w') as f:
-                  import json
                   json.dump(last_state, f, indent=2)
-              print(f"
-{len(due_posts)} post(s) newly due — triggering rebuild.")
+
+              print(f"\n{len(due_posts)} post(s) activated. Committing state file to trigger Vercel rebuild.")
               with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
-                  fh.write("has_due_posts=true
-")
+                  fh.write(f"has_due_posts=true\n")
+                  fh.write(f"count={len(due_posts)}\n")
           else:
-              print("No newly due posts. Skipping rebuild.")
+              print("No posts due yet. Nothing to do.")
               with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
-                  fh.write("has_due_posts=false
-")
+                  fh.write("has_due_posts=false\n")
           PYEOF
 
-      - name: Commit state update
+      # ── This commit is the ONLY trigger Vercel needs. ────────────────────
+      # Since your site redeploys on every push, pushing the state file
+      # causes Vercel to rebuild Hugo WITHOUT --buildFuture, which means
+      # Hugo now renders the newly-due post for the first time.
+      - name: Push state file to trigger Vercel rebuild
         if: steps.check_due.outputs.has_due_posts == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .github/scheduler_state.json || true
-          git diff --staged --quiet || git commit -m "chore: activate scheduled posts [skip ci]"
-          git push origin ${{ env.DEFAULT_BRANCH }} || true
+          git add ${{ env.STATE_FILE }}
+          git diff --staged --quiet || git commit -m "chore: activate ${{ steps.check_due.outputs.count }} scheduled post(s) [skip ci]"
+          git push origin ${{ env.DEFAULT_BRANCH }}
+          echo "Pushed. Vercel will now rebuild and the post(s) will go live."
 
-      - name: Trigger Vercel deploy hook (scheduled posts activated)
-        if: steps.check_due.outputs.has_due_posts == 'true' && secrets.VERCEL_DEPLOY_HOOK != ''
-        run: |
-          curl -s -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
-          echo "Vercel deploy hook triggered."
-
-      # ── Fallback: if no deploy hook, a git commit above already triggers Vercel auto-deploy ──
       - name: Summary
-        if: steps.check_due.outputs.has_due_posts == 'true'
         run: |
-          echo "## Scheduled Publisher" >> $GITHUB_STEP_SUMMARY
-          echo ":white_check_mark: Newly due posts activated. Site rebuild triggered." >> $GITHUB_STEP_SUMMARY
+          echo "## Scheduled Posts Publisher" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check_due.outputs.has_due_posts }}" = "true" ]; then
+            echo ":white_check_mark: **${{ steps.check_due.outputs.count }} post(s) activated.**" >> $GITHUB_STEP_SUMMARY
+            echo "Vercel rebuild triggered via commit push." >> $GITHUB_STEP_SUMMARY
+          else
+            echo ":clock1: No posts due yet. Next check in ~1 hour." >> $GITHUB_STEP_SUMMARY
+          fi
