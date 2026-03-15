@@ -38,8 +38,11 @@ on:
         default: ''
       title_keywords:
         description: >
-          TITLE KEYWORDS — comma-separated words that MUST appear in the title.
-          Example: Wizkid, Grammy, snub
+          ARTICLE FOCUS — W-questions or topic signals that shape what the article covers.
+          Use plain words like: who, where, how, when, why, what
+          OR combine with names/topics: "who is Wizkid, where he was born, how he became famous"
+          AI interprets each word as a question to answer about the subject, then generates
+          a smart title from those angles. It does NOT paste these words into the title.
         required: false
         type: string
         default: ''
@@ -62,7 +65,7 @@ on:
       custom_title:
         description: >
           OVERRIDE TITLE — type an exact title to bypass AI title generation completely.
-          Leave blank to let AI write the title using the keywords/format above.
+          Leave blank to let AI write the title using the signals/format above.
         required: false
         type: string
         default: ''
@@ -133,7 +136,6 @@ jobs:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
-          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
@@ -147,7 +149,6 @@ jobs:
         run: |
           python - <<'PYEOF'
           import os, json, datetime, requests, re, time, sys, hashlib, itertools, base64, random, io
-          from dateutil import parser as date_parser
           from google import genai
           from google.genai import types
           from bs4 import BeautifulSoup
@@ -280,63 +281,74 @@ jobs:
               u = url.lower()
               if 'youtube.com' in u or 'youtu.be' in u: return 'youtube'
               if 'spotify.com' in u:                    return 'spotify'
-              if 'twitter.com' in u or 'x.com' in u:   return 'twitter'
-              if 'tiktok.com' in u:                     return 'tiktok'
-              if 'instagram.com' in u:                  return 'instagram'
-              if 'soundcloud.com' in u:                 return 'soundcloud'
               return 'article'
 
+          def is_good_image(url):
+              if not url or len(url) < 10: return False
+              bad = ['logo', 'icon', 'placeholder', 'blank', 'pixel', 'spacer',
+                     'avatar-default', 'no-image', 'default-user', 'data:image']
+              u = url.lower()
+              return not any(b in u for b in bad)
+
           def upload_to_imgbb(image_url):
+              if not image_url: return ''
               api_key = os.environ.get("IMGBB_API_KEY")
-              if not api_key or not image_url: return image_url
+              if not api_key: return image_url
               try:
-                  img_data = requests.get(image_url, timeout=15).content
-                  img = Image.open(io.BytesIO(img_data))
+                  resp = requests.get(image_url, timeout=20,
+                                      headers={'User-Agent': 'Mozilla/5.0'})
+                  resp.raise_for_status()
+                  img = Image.open(io.BytesIO(resp.content))
                   if img.mode in ('RGBA', 'LA', 'P'):
                       img = img.convert('RGB')
-                  webp_buf = io.BytesIO()
-                  img.save(webp_buf, format='WEBP', quality=82)
-                  webp_buf.seek(0)
-                  b64 = base64.b64encode(webp_buf.read()).decode("utf-8")
+                  buf = io.BytesIO()
+                  img.save(buf, format='WEBP', quality=85)
+                  buf.seek(0)
+                  b64 = base64.b64encode(buf.read()).decode("utf-8")
                   res = requests.post("https://api.imgbb.com/1/upload",
-                                      data={"key": api_key, "image": b64}, timeout=20)
+                                      data={"key": api_key, "image": b64}, timeout=25)
                   if res.status_code == 200:
                       new_url = res.json()["data"]["url"]
-                      print(f"Re-hosted as WebP: {new_url}")
+                      print(f"  Image re-hosted (WebP): {new_url}")
                       return new_url
-                  print(f"ImgBB failed: {res.text}")
-                  return image_url
+                  print(f"  ImgBB upload failed ({res.status_code}): {res.text[:120]}")
               except Exception as e:
-                  print(f"ImgBB/WebP error: {e}")
-                  return image_url
-
-          def get_real_image(query):
-              key = os.environ.get("UNSPLASH_ACCESS_KEY")
-              fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
-              if not key: return fallback
-              try:
-                  r = requests.get(
-                      f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={key}",
-                      timeout=10)
-                  if r.status_code == 200:
-                      return r.json()["urls"]["regular"]
-              except Exception: pass
-              return fallback
+                  print(f"  ImgBB error: {e}")
+              return image_url
 
           def get_site_key(url):
               for k in SITE_SELECTORS:
                   if k in url: return k
               return None
 
+          # ── Pick the best thumbnail from a yt-dlp thumbnails list ──────────
+          def best_yt_thumbnail(thumbnails):
+              if not thumbnails: return ''
+              ranked = sorted(
+                  [t for t in thumbnails if t.get('url')],
+                  key=lambda t: (t.get('width', 0) or 0) * (t.get('height', 0) or 0),
+                  reverse=True
+              )
+              for t in ranked:
+                  url = t.get('url', '')
+                  if is_good_image(url):
+                      return url
+              return ranked[0].get('url', '') if ranked else ''
+
           def scrape_youtube(url):
-              data = {'platform': 'YouTube', 'url': url}
+              data = {'platform': 'YouTube', 'url': url, 'image': ''}
               is_channel = (
                   any(x in url for x in ['/@', '/channel/', '/c/', '/user/'])
                   or ('youtube.com' in url and '/watch' not in url and 'youtu.be' not in url)
               )
               print(f"[YouTube] {'channel' if is_channel else 'video'}: {url}")
+
               if is_channel:
-                  opts = {'quiet': True, 'no_warnings': True, 'extract_flat': 'in_playlist', 'playlist_end': 20, 'ignoreerrors': True}
+                  opts = {
+                      'quiet': True, 'no_warnings': True,
+                      'extract_flat': 'in_playlist', 'playlist_end': 20,
+                      'ignoreerrors': True,
+                  }
                   try:
                       with yt_dlp.YoutubeDL(opts) as ydl:
                           info = ydl.extract_info(url, download=False)
@@ -348,11 +360,18 @@ jobs:
                       data['description']      = (info.get('description') or '')[:800]
                       data['total_views']      = info.get('view_count')
                       data['video_count']      = info.get('playlist_count')
+                      # Channel avatar — prefer the avatar/photo thumbnails
+                      thumbnails = info.get('thumbnails') or []
+                      avatar_candidates = [t for t in thumbnails if
+                                           'avatar' in (t.get('id', '') + t.get('url', '')).lower()
+                                           or (t.get('width') and t.get('height') and t['width'] == t['height'])]
+                      data['image'] = best_yt_thumbnail(avatar_candidates) or best_yt_thumbnail(thumbnails)
                       entries = [e for e in (info.get('entries') or []) if e][:20]
                       data['recent_videos'] = [
                           {'title': e.get('title', ''), 'views': e.get('view_count'),
                            'likes': e.get('like_count'), 'duration': e.get('duration'),
-                           'upload_date': e.get('upload_date', '')}
+                           'upload_date': e.get('upload_date', ''),
+                           'thumbnail': e.get('thumbnail', '')}
                           for e in entries
                       ]
                       vcounts = [e.get('view_count', 0) for e in entries if e.get('view_count')]
@@ -360,12 +379,20 @@ jobs:
                           data['avg_views']  = int(sum(vcounts) / len(vcounts))
                           data['peak_views'] = max(vcounts)
                           data['min_views']  = min(vcounts)
-                      print(f"  Channel: {data['channel_name']} | Subs: {fmt_num(data['subscriber_count'])} | Videos: {len(data['recent_videos'])}")
+                      # If no channel avatar found, use thumbnail of most viewed video
+                      if not data['image']:
+                          for v in sorted(data['recent_videos'], key=lambda x: x.get('views') or 0, reverse=True):
+                              if v.get('thumbnail') and is_good_image(v['thumbnail']):
+                                  data['image'] = v['thumbnail']
+                                  break
+                      print(f"  Channel: {data['channel_name']} | Subs: {fmt_num(data['subscriber_count'])} | Image: {'yes' if data['image'] else 'none'}")
                   except Exception as e:
                       print(f"  Channel error: {e}"); data['error'] = str(e)
+
               else:
                   opts = {
-                      'quiet': True, 'no_warnings': True, 'getcomments': True, 'ignoreerrors': True,
+                      'quiet': True, 'no_warnings': True, 'getcomments': True,
+                      'ignoreerrors': True,
                       'extractor_args': {'youtube': {'comment_sort': ['top'], 'max_comments': ['30', '0', '0', '0']}},
                   }
                   try:
@@ -385,6 +412,11 @@ jobs:
                       data['description']      = (info.get('description') or '')[:800]
                       data['tags']             = (info.get('tags') or [])[:10]
                       data['categories']       = info.get('categories', [])
+                      # Video thumbnail — prefer maxresdefault
+                      vid_id = info.get('id', '')
+                      maxres = f"https://i.ytimg.com/vi/{vid_id}/maxresdefault.jpg" if vid_id else ''
+                      hq     = f"https://i.ytimg.com/vi/{vid_id}/hqdefault.jpg"     if vid_id else ''
+                      data['image'] = maxres or info.get('thumbnail', '') or hq
                       raw_comments = info.get('comments') or []
                       top_comments = sorted(
                           [c for c in raw_comments if c.get('like_count', 0) > 0],
@@ -394,13 +426,13 @@ jobs:
                           {'text': (c.get('text') or '')[:280], 'likes': c.get('like_count', 0), 'author': c.get('author', '')}
                           for c in top_comments
                       ]
-                      print(f"  Video: {data['title']} | Views: {fmt_num(data['views'])} | Comments: {fmt_num(data['comment_count'])}")
+                      print(f"  Video: {data['title']} | Views: {fmt_num(data['views'])} | Image: {'yes' if data['image'] else 'none'}")
                   except Exception as e:
                       print(f"  Video error: {e}"); data['error'] = str(e)
               return data
 
           def scrape_spotify(url, pw_page):
-              data = {'platform': 'Spotify', 'url': url}
+              data = {'platform': 'Spotify', 'url': url, 'image': ''}
               print(f"[Spotify] {url}")
               try:
                   pw_page.goto(url, timeout=55000, wait_until='networkidle')
@@ -409,6 +441,29 @@ jobs:
                   pw_page.wait_for_timeout(3000)
                   soup      = BeautifulSoup(pw_page.content(), 'html.parser')
                   full_text = soup.get_text(separator=' ', strip=True)
+
+                  # ── Extract image: og:image first, then largest img ──────
+                  for meta in soup.find_all('meta'):
+                      prop = meta.get('property', '') or meta.get('name', '')
+                      if prop in ['og:image', 'twitter:image', 'twitter:image:src']:
+                          cand = meta.get('content', '')
+                          if is_good_image(cand):
+                              data['image'] = cand
+                              break
+                  if not data['image']:
+                      # Try entity image containers Spotify uses
+                      for sel in [
+                          '[data-testid="entity-image"] img',
+                          '[data-testid="artist-image"] img',
+                          'img[src*="i.scdn.co"]',
+                          'img[src*="mosaic.scdn.co"]',
+                      ]:
+                          el = soup.select_one(sel)
+                          if el:
+                              src = el.get('src', '')
+                              if is_good_image(src):
+                                  data['image'] = src; break
+
                   if '/artist/' in url:
                       data['type'] = 'artist'
                       h1 = soup.find('h1')
@@ -436,7 +491,7 @@ jobs:
                   else:
                       data['type'] = 'page'
                   data['page_summary'] = full_text[:3500]
-                  print(f"  {data.get('type','?')}: {data.get('artist_name') or data.get('album_name') or data.get('track_name','N/A')} | Listeners: {data.get('monthly_listeners','N/A')}")
+                  print(f"  {data.get('type','?')}: {data.get('artist_name') or data.get('album_name') or data.get('track_name','N/A')} | Listeners: {data.get('monthly_listeners','N/A')} | Image: {'yes' if data['image'] else 'none'}")
               except Exception as e:
                   print(f"  Spotify error: {e}"); data['error'] = str(e)
               return data
@@ -487,37 +542,73 @@ jobs:
                       lns = [l.strip() for l in body.get_text(separator='\n').split('\n') if len(l.strip()) > 50]
                       article_text = '\n\n'.join(lns)
 
+              # ── Image extraction: og:image > twitter:image > article hero > first large img ──
               img_url = ''
+              base_url = '/'.join(url.split('/')[:3])
+
+              # 1. og/twitter meta tags
               for meta in soup.find_all('meta'):
                   prop = meta.get('property', '') or meta.get('name', '')
-                  if prop in ['og:image', 'twitter:image', 'twitter:image:src']:
-                      c = meta.get('content', '')
-                      if c and 'logo' not in c.lower() and len(c) > 10:
-                          img_url = c; break
+                  if prop in ['og:image', 'og:image:secure_url', 'twitter:image', 'twitter:image:src']:
+                      cand = meta.get('content', '')
+                      if is_good_image(cand):
+                          img_url = cand; break
+
+              # 2. Article hero / featured image selectors
               if not img_url:
-                  base_url = '/'.join(url.split('/')[:3])
-                  for sel in ['article img', '[class*=article] img', '[class*=hero] img', 'picture img', '.featured-image img']:
-                      li = soup.select_one(sel)
-                      if li:
-                          src = li.get('src') or li.get('data-src') or li.get('data-lazy-src', '')
-                          if src and 'data:image' not in src and 'placeholder' not in src.lower() and 'logo' not in src.lower():
-                              img_url = src if src.startswith('http') else base_url + '/' + src.lstrip('/')
-                              break
+                  for sel in [
+                      '[class*=featured-image] img',
+                      '[class*=hero] img',
+                      '[class*=article-image] img',
+                      '[class*=post-thumbnail] img',
+                      'article img',
+                      '[class*=article] img',
+                      'picture source',
+                      'picture img',
+                  ]:
+                      els = soup.select(sel)
+                      for el in els:
+                          src = (el.get('src') or el.get('srcset', '').split(' ')[0]
+                                 or el.get('data-src') or el.get('data-lazy-src', ''))
+                          if not src: continue
+                          if not src.startswith('http'):
+                              src = base_url + '/' + src.lstrip('/')
+                          if is_good_image(src):
+                              img_url = src; break
+                      if img_url: break
+
+              # 3. Any img tag with meaningful dimensions
+              if not img_url:
+                  for img in soup.find_all('img'):
+                      src = img.get('src', '') or img.get('data-src', '')
+                      w   = img.get('width', '0')
+                      h   = img.get('height', '0')
+                      try:
+                          if int(str(w).replace('px','') or 0) >= 200 and is_good_image(src):
+                              if not src.startswith('http'):
+                                  src = base_url + '/' + src.lstrip('/')
+                              img_url = src; break
+                      except Exception:
+                          pass
+
               return article_text, img_url, page_title
 
           def scrape_article_or_social(url):
-              print(f"[Article/Social] {url}")
-              data = {'platform': 'Article', 'url': url, 'type': 'article'}
+              print(f"[Article] {url}")
+              data = {'platform': 'Article', 'url': url, 'type': 'article', 'image': '', 'text': '', 'title': ''}
               best_text, best_img, best_title = '', '', ''
-              for name, wait_until, block_media in [
-                  ('networkidle', 'networkidle', False),
+              for strategy, wait_until, block_media in [
+                  ('networkidle',      'networkidle',      False),
                   ('domcontentloaded', 'domcontentloaded', False),
-                  ('light-block', 'domcontentloaded', True),
+                  ('light-block',      'domcontentloaded', True),
               ]:
                   try:
                       with sync_playwright() as p:
-                          browser = p.chromium.launch(headless=True, args=['--no-sandbox', '--disable-dev-shm-usage', '--disable-blink-features=AutomationControlled'])
-                          ctx = browser.new_context(
+                          browser = p.chromium.launch(headless=True, args=[
+                              '--no-sandbox', '--disable-dev-shm-usage',
+                              '--disable-blink-features=AutomationControlled'
+                          ])
+                          ctx  = browser.new_context(
                               user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
                               viewport={'width': 1920, 'height': 1080}
                           )
@@ -535,14 +626,16 @@ jobs:
                           browser.close()
                       soup = BeautifulSoup(html, 'html.parser')
                       text, img, title = extract_html_content(soup, url)
-                      if len(text) > len(best_text): best_text, best_img, best_title = text, img, title
-                      if len(best_text) > 400: break
+                      if len(text) > len(best_text): best_text = text
+                      if img and not best_img:        best_img  = img
+                      if title and not best_title:    best_title = title
+                      if len(best_text) > 400 and best_img: break
                   except Exception as e:
-                      print(f"  Strategy {name} failed: {e}")
+                      print(f"  Strategy {strategy} failed: {e}")
               data['text']  = best_text
               data['image'] = best_img
               data['title'] = best_title
-              print(f"  Result: {len(data['text'])} chars | title: {data['title'][:60]}")
+              print(f"  chars: {len(data['text'])} | image: {'yes' if data['image'] else 'none'} | title: {data['title'][:50]}")
               return data
 
           def format_all_sources(all_data):
@@ -565,7 +658,7 @@ jobs:
                           if d.get('description'):
                               parts.append(f'Channel Bio    : {d["description"]}')
                           if d.get('recent_videos'):
-                              parts.append('\nRECENT VIDEOS (title | views | likes | date):')
+                              parts.append('\nRECENT VIDEOS:')
                               for v in d['recent_videos']:
                                   parts.append(f'  - {v["title"]} | Views: {fmt_num(v.get("views"))} | Likes: {fmt_num(v.get("likes"))} | Date: {v.get("upload_date", "")}')
                       elif d.get('type') == 'video':
@@ -582,7 +675,7 @@ jobs:
                           if d.get('description'):
                               parts.append(f'Description    : {d["description"]}')
                           if d.get('top_comments'):
-                              parts.append('\nTOP COMMENTS (by engagement):')
+                              parts.append('\nTOP COMMENTS:')
                               for c in d['top_comments'][:12]:
                                   parts.append(f'  [{c["likes"]} likes] "{c["text"]}"')
                   elif plat == 'Spotify':
@@ -605,9 +698,7 @@ jobs:
                       parts.append(f'Headline : {d.get("title", "N/A")}')
                       if d.get('text'):
                           parts.append(f'\nArticle text:\n{d["text"][:5000]}')
-                  else:
-                      parts.append(f'Page text:\n{d.get("page_text", d.get("text", ""))[:3000]}')
-              return '\n'.join(parts)
+                  return '\n'.join(parts)
 
           # ================================================================
           #  MAIN EXECUTION
@@ -626,8 +717,7 @@ jobs:
 
           urls = parse_urls(raw_input_urls)
           if not urls:
-              print('No valid URLs found. Exiting.')
-              sys.exit(1)
+              print('No valid URLs found.'); sys.exit(1)
 
           print(f'\nProcessing {len(urls)} URL(s):')
           for u in urls: print(f'  > {u}')
@@ -635,43 +725,51 @@ jobs:
           url_hash = hashlib.md5('|'.join(sorted(urls)).encode()).hexdigest()
           memory   = json.load(open(memory_path)) if os.path.exists(memory_path) else []
           if url_hash in memory:
-              print('This URL combination was already processed. Exiting.')
-              sys.exit(0)
+              print('Already processed. Exiting.'); sys.exit(0)
 
           all_source_data = []
-          primary_image   = ''
-          primary_title   = ''
 
           yt_urls    = [u for u in urls if detect_platform(u) == 'youtube']
           spot_urls  = [u for u in urls if detect_platform(u) == 'spotify']
-          other_urls = [u for u in urls if detect_platform(u) not in ('youtube', 'spotify')]
+          other_urls = [u for u in urls if detect_platform(u) == 'article']
 
           for u in yt_urls:
-              d = scrape_youtube(u)
-              all_source_data.append(d)
+              all_source_data.append(scrape_youtube(u))
 
           if spot_urls:
               with sync_playwright() as pw:
-                  browser = pw.chromium.launch(headless=True, args=['--no-sandbox', '--disable-dev-shm-usage', '--disable-blink-features=AutomationControlled'])
-                  ctx  = pw.chromium.launch(headless=True).new_context(
+                  browser = pw.chromium.launch(headless=True, args=[
+                      '--no-sandbox', '--disable-dev-shm-usage',
+                      '--disable-blink-features=AutomationControlled'
+                  ])
+                  ctx  = browser.new_context(
                       user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
                       viewport={'width': 1920, 'height': 1080}
                   )
                   page = ctx.new_page()
                   for u in spot_urls:
-                      d = scrape_spotify(u, page)
-                      all_source_data.append(d)
+                      all_source_data.append(scrape_spotify(u, page))
                   browser.close()
 
           for u in other_urls:
-              d = scrape_article_or_social(u)
-              all_source_data.append(d)
-              if not primary_image and d.get('image'): primary_image = d['image']
-              if not primary_title and d.get('title'): primary_title = d['title']
+              all_source_data.append(scrape_article_or_social(u))
 
           if not all_source_data:
-              print('All sources returned no data. Exiting.')
-              sys.exit(1)
+              print('All sources returned no data.'); sys.exit(1)
+
+          # ── Pick best image from all scraped sources ──────────────────────
+          # Priority: YouTube video thumbnail > YouTube channel avatar >
+          #           Spotify og:image > article og:image > article body img
+          primary_image = ''
+          for d in all_source_data:
+              img = d.get('image', '')
+              if is_good_image(img):
+                  primary_image = img
+                  print(f'  Using image from {d["platform"]}: {img[:80]}')
+                  break
+
+          if not primary_image:
+              print('  WARNING: No image found from any source. Article will have no image.')
 
           combined_data = format_all_sources(all_source_data)
           print(f'\nTotal research data: {len(combined_data)} chars')
@@ -681,7 +779,7 @@ jobs:
               files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
               if files:
                   sample = random.sample(files, min(len(files), 3))
-                  internal_links = 'PAST STORIES (PICK ONE AND LINK IT NATURALLY USING MARKDOWN):\n'
+                  internal_links = 'PAST STORIES (PICK ONE AND LINK NATURALLY):\n'
                   for f in sample:
                       try:
                           with open(os.path.join(posts_dir, f), 'r', encoding='utf-8') as cf:
@@ -691,27 +789,115 @@ jobs:
                               internal_links += f'- Title: {t} | Link: {SITE_BASE_URL}/article/{f.replace(".md","")}\n'
                       except Exception: continue
 
-          # ── Build title-control prompt injections ─────────────────────────
-          title_keyword_block = ''
+          # ── Title control prompt injections ──────────────────────────────
+          FOCUS_MAP = {
+              'who':          'Who is [subject]? Cover their identity, real name, background, and persona.',
+              'where':        'Where is [subject] from? Cover origin, city, country, and upbringing.',
+              'how':          'How did [subject] rise/achieve [thing]? Cover the journey and key turning points.',
+              'when':         'When did major events happen? Include a clear timeline of milestones.',
+              'why':          'Why did [subject] do/say/become [thing]? Explain motivations and circumstances.',
+              'what':         'What exactly happened? Cover the core facts and key developments in full.',
+              'age':          'Mention [subject]s confirmed age and date of birth.',
+              'real name':    'Reveal [subject]s real/birth name if different from their public name.',
+              'nationality':  'State [subject]s nationality and ethnic background.',
+              'tribe':        'Mention [subject]s ethnic or tribal background where relevant.',
+              'religion':     'Cover [subject]s religion or faith background if publicly known.',
+              'education':    'Cover [subject]s education background and academic history.',
+              'early life':   'Cover [subject]s early childhood, upbringing, and formative years.',
+              'childhood':    'Describe [subject]s childhood, early environment, and family background.',
+              'career':       'Cover [subject]s full career arc, major milestones, and professional highlights.',
+              'rise':         'Explain how [subject] rose to prominence — the specific breaks that changed everything.',
+              'achievements': 'List [subject]s major achievements, records, and career highs.',
+              'awards':       'Cover all major awards and nominations [subject] has received.',
+              'hits':         'Mention [subject]s biggest hit songs/works and their chart performance.',
+              'music':        'Cover [subject]s musical journey, discography, and signature style.',
+              'movies':       'Cover [subject]s acting career and major film/TV roles.',
+              'business':     'Cover [subject]s business ventures, investments, and entrepreneurial moves.',
+              'brand':        'Cover [subject]s personal brand, endorsements, and deals.',
+              'net worth':    'Include [subject]s estimated net worth and main income sources.',
+              'wealth':       'Cover [subject]s wealth, assets, lifestyle, and financial status.',
+              'salary':       'Mention [subject]s known earnings, salary, or pay details.',
+              'house':        'Describe [subject]s home, property, and living situation if known.',
+              'cars':         'Mention [subject]s known car collection or notable vehicles.',
+              'wife':         'Cover [subject]s wife — her name, background, and their relationship.',
+              'husband':      'Cover [subject]s husband — his name, background, and their relationship.',
+              'girlfriend':   'Cover [subject]s girlfriend and the details of their relationship.',
+              'boyfriend':    'Cover [subject]s boyfriend and the details of their relationship.',
+              'partner':      'Cover [subject]s romantic partner and relationship details.',
+              'relationship': 'Cover [subject]s romantic relationship history and current status.',
+              'dating':       'Cover who [subject] is currently dating and relationship timeline.',
+              'married':      'Address whether [subject] is married, details of their marriage.',
+              'divorce':      'Cover [subject]s divorce — circumstances, timeline, and aftermath.',
+              'children':     'Mention [subject]s children — how many, their names, and context.',
+              'kids':         'Mention [subject]s children — names, ages, and family context.',
+              'family':       'Cover [subject]s family background, relatives, and family life.',
+              'parents':      'Cover [subject]s parents — their names, background, and influence.',
+              'siblings':     'Mention [subject]s siblings and their relationship.',
+              'controversy':  'Focus on the controversy — what happened, public reactions, and fallout.',
+              'scandal':      'Expose the scandal — facts, timeline, and consequences.',
+              'beef':         'Cover the beef/feud — who, what was said, and current status.',
+              'feud':         'Detail the feud — cause, escalation, and current resolution.',
+              'drama':        'Cover the drama — events, reactions, and what it means.',
+              'cheating':     'Address cheating allegations — claims, responses, and evidence.',
+              'exposed':      'Cover what was exposed — the details and public reaction.',
+              'arrested':     'Cover the arrest — charges, circumstances, and legal status.',
+              'fired':        'Cover why [subject] was fired — what led to it and the aftermath.',
+              'apology':      'Cover the apology — what was said sorry for and public reception.',
+              'followers':    'Mention [subject]s social media following and online influence.',
+              'viral':        'Cover the viral moment — what happened and why it spread.',
+              'reaction':     'Include significant public and fan reactions and responses.',
+              'fans':         'Cover fan reactions, fan base culture, and audience response.',
+          }
+
+          title_signal_block = ''
           if title_keywords_raw:
-              title_keyword_block = (
-                  '\nMANDATORY TITLE KEYWORDS: ' + title_keywords_raw + '\n'
-                  'You MUST include ALL of these keywords verbatim in the title. Do NOT paraphrase or omit any.\n'
+              raw_parts = [s.strip() for s in title_keywords_raw.split(',') if s.strip()]
+              expanded_lines = []
+              unknown_topics = []
+
+              for part in raw_parts:
+                  part_lower = part.lower()
+                  if part_lower in FOCUS_MAP:
+                      expanded_lines.append('  - ' + FOCUS_MAP[part_lower])
+                  else:
+                      matched = False
+                      for word in part_lower.split():
+                          if word in FOCUS_MAP:
+                              expanded_lines.append('  - ' + FOCUS_MAP[word])
+                              matched = True
+                              break
+                      if not matched:
+                          unknown_topics.append(part)
+
+              title_signal_block = '\nARTICLE FOCUS DIRECTIVES: ' + title_keywords_raw + '\n'
+              if expanded_lines:
+                  title_signal_block += 'The article MUST cover each of these points about the main subject:\n'
+                  title_signal_block += '\n'.join(expanded_lines) + '\n'
+              if unknown_topics:
+                  title_signal_block += (
+                      'Also weave these topics/names/events naturally into the article: '
+                      + ', '.join(unknown_topics) + '\n'
+                  )
+              title_signal_block += (
+                  'For the TITLE: craft a compelling headline inspired by the DOMINANT angle above.\n'
+                  'Do NOT paste directive words (who/where/how/etc.) literally into the title.\n'
+                  'WRONG: "Who Is Wizkid, Where and How He Made It"\n'
+                  'RIGHT: "Wizkid: From Lagos Streets to Afrobeats Throne"\n'
               )
 
           title_format_block = ''
           if title_format_choice and title_format_choice != 'AUTO':
               title_format_block = (
-                  '\nFORCED TITLE FORMAT: Use the ' + title_format_choice + ' pattern from the Smart Title Engine. No other format is acceptable.\n'
+                  '\nFORCED TITLE FORMAT: ' + title_format_choice + ' — use this pattern from the Smart Title Engine. No other format.\n'
               )
 
           custom_title_block = ''
           if custom_title_override:
               custom_title_block = (
-                  '\nEDITOR TITLE OVERRIDE: The title has been set and must not change:\n'
+                  '\nEDITOR TITLE OVERRIDE (do not change):\n'
                   '  TITLE: ' + custom_title_override + '\n'
                   '  SLUG : ' + title_to_slug(custom_title_override) + '\n'
-                  'Output exactly these values for TITLE and SLUG. Generate EXCERPT, TAGS, IMAGE_KEYWORD, and BODY as normal.\n'
+                  'Output exactly these for TITLE and SLUG. Generate everything else normally.\n'
               )
 
           banned_str = ', '.join(BANNED_PHRASES)
@@ -719,60 +905,52 @@ jobs:
 
           prompt = (
               'Current Date: ' + full_date_str + '. Current Year: ' + current_year + '.\n'
-              + angle_str
-              + custom_title_block
-              + title_keyword_block
-              + title_format_block
+              + angle_str + custom_title_block + title_signal_block + title_format_block
               + 'RESEARCH DATA FROM ' + str(len(all_source_data)) + ' SOURCE(S):\n'
               + combined_data[:16000] + '\n\n'
               + internal_links + '\n\n'
               + 'TASK: Write a news/entertainment report as ' + persona + '\n'
-              'You must use Google Search to verify any facts and find additional context.\n\n'
-              'CRITICAL RULES FOR USING THE RESEARCH DATA:\n'
-              '- Write with complete authority as a journalist who knows this subject deeply.\n'
-              '- NEVER reveal how you got the data. Do NOT say "according to YouTube data", "Spotify shows", "we checked the channel", "data reveals", "scraped", or anything implying automated research.\n'
-              '- Reference numbers naturally: "The channel commands X million subscribers" NOT "data shows X subscribers".\n'
-              '- Attribute fan reactions naturally: "Fans flooded the comments..." or "The reaction online has been...".\n'
-              '- Use specific numbers, dates, and patterns from the research data to build credibility.\n'
-              '- When multiple platforms are available, weave them into one unified narrative.\n\n'
-              'SMART TITLE ENGINE (FOLLOW STRICTLY):\n'
-              'Step 1 - Extract PRIMARY KEYWORDS: Pull the 2-4 most important words or names. Do NOT rephrase them.\n'
-              '  - If MANDATORY TITLE KEYWORDS were supplied above, they ARE the primary keywords.\n'
-              'Step 2 - Classify content type as: LIST, BIO, SCANDAL, GUIDE, TRENDING, or NEWS.\n'
-              '  - If FORCED TITLE FORMAT was supplied, skip classification and use that format.\n'
-              'Step 3 - Pick the best formula:\n'
-              '  - LIST    : "[Number] + [Primary Keyword] + [Benefit]"\n'
-              '  - BIO     : "[Primary Keyword] + Real Name, Age, or Bio"\n'
-              '  - SCANDAL : "[Primary Keyword] + [What Happened] + [Consequence]"\n'
-              '  - GUIDE   : "[Primary Keyword] + [How or What] + [Year]"\n'
-              '  - TRENDING/NEWS: "[Primary Keyword] + [Short Dramatic Hook]"\n'
-              'Step 4 - TITLE: starts with PRIMARY KEYWORDS, under 60 characters.\n'
-              'Step 5 - SLUG: PRIMARY KEYWORDS only, lowercase, hyphen-separated, no filler words.\n\n'
-              'LANGUAGE MANDATE (STRICT):\n'
-              '- NO SHENG OR SWAHILI. Professional Kenyan English only.\n'
-              '- DO NOT use British slang fillers like "Right," or "Well,".\n'
-              '- NO bracketed subjective asides in body text.\n'
-              '- BANNED PHRASES: ' + banned_str + '.\n'
-              '- NEVER use em-dashes or double dashes. Single hyphens only.\n\n'
-              'STRICT OUTPUT FORMAT (output NOTHING else, no markdown fences):\n'
-              'TITLE: [Result of Smart Title Engine or Editor Override]\n'
-              'SLUG: [PRIMARY KEYWORDS only, hyphenated]\n'
-              'EXCERPT: [140-155 character meta description starting with subject or verb, includes key news fact]\n'
-              'TAGS: [comma, separated, lowercase, specific, english, seo, tags - no generic words like "news"]\n'
-              'IMAGE_KEYWORD: [2-4 word Unsplash search query for fallback image]\n'
+              'You must use Google Search to verify facts and find additional context.\n\n'
+              'CRITICAL RULES:\n'
+              '- Write with authority. NEVER reveal the data source.\n'
+              '- Reference numbers naturally: "commands X million subscribers" not "data shows".\n'
+              '- Fan reactions: "Fans flooded the comments..." not "comments show".\n'
+              '- When multiple platforms available, weave into one unified narrative.\n\n'
+              'SMART TITLE ENGINE:\n'
+              'Step 1 - Extract PRIMARY SUBJECT: the 1-2 most important names or entities.\n'
+              'Step 2 - Identify the STORY HOOK: what makes this worth reading right now?\n'
+              'Step 3 - If TITLE ANGLE SIGNALS provided, extract the CONCEPT behind them — do not use the words literally.\n'
+              'Step 4 - Choose format (or use FORCED FORMAT if provided):\n'
+              '  LIST    : "[N] Things About [Subject] That [Hook]"\n'
+              '  BIO     : "[Subject]: Real Name, Age, Net Worth Revealed"\n'
+              '  SCANDAL : "[Subject] [Specific Action] — [Consequence]"\n'
+              '  GUIDE   : "[Subject]: How [Hook] in ' + current_year + '"\n'
+              '  TRENDING: "[Subject] [Short Dramatic Hook]"\n'
+              '  NEWS    : "[Subject] [Specific Fact]"\n'
+              'Step 5 - Title: lead with the SUBJECT, under 65 characters, reads naturally.\n'
+              'Step 6 - Slug: subject keywords only, lowercase, hyphens, no filler words.\n\n'
+              'LANGUAGE RULES:\n'
+              '- Professional Kenyan English only. No Sheng, no Swahili.\n'
+              '- No British fillers ("Right,", "Well,").\n'
+              '- No bracketed asides.\n'
+              '- Single hyphens only — never em-dashes.\n'
+              '- BANNED: ' + banned_str + '\n\n'
+              'OUTPUT FORMAT (nothing else, no fences):\n'
+              'TITLE: ...\n'
+              'SLUG: ...\n'
+              'EXCERPT: [140-155 chars, starts with subject or verb, contains key fact]\n'
+              'TAGS: [comma-separated, lowercase, specific, SEO-focused]\n'
               'BODY:\n'
-              '[Article body.\n'
-              'STRUCTURE (follow exactly in this order):\n'
-              '1. A 35-45 word lede paragraph - NO heading above it. Answers who/what/when/where immediately. This is used as a Google Featured Snippet.\n'
-              '2. ## H2 subheading that contains at least one PRIMARY KEYWORD.\n'
-              '3. ### subheadings with supporting paragraphs that reuse PRIMARY KEYWORDS naturally.\n'
-              'DO NOT include title, author name, date, or any metadata in the body.]'
+              '[1. Lede: 35-45 words, no heading, answers who/what/when/where — Google Featured Snippet.\n'
+              '2. ## H2 containing PRIMARY SUBJECT.\n'
+              '3. ### sub-sections reusing PRIMARY SUBJECT naturally.\n'
+              'No title, author, date, or metadata inside the body.]'
           )
 
           raw_keys = [os.environ.get('GEMINI_WRITE_KEY'), os.environ.get('GEMINI_API_KEY'), os.environ.get('GEMINI_API_KEY1')]
           api_keys = [k for k in raw_keys if k and k.strip()]
           if not api_keys:
-              print('No Gemini API keys provided.'); sys.exit(1)
+              print('No Gemini API keys.'); sys.exit(1)
 
           key_cycle    = itertools.cycle(api_keys)
           current_key  = next(key_cycle)
@@ -804,7 +982,7 @@ jobs:
                   time.sleep(2)
 
           if not success_flag or not full_text:
-              print('All Gemini API attempts failed.'); sys.exit(1)
+              print('All Gemini attempts failed.'); sys.exit(1)
 
           def extract_field(text, field):
               m = re.search(r'^' + field + r':\s*(.+)$', text, re.MULTILINE)
@@ -814,34 +992,29 @@ jobs:
           slug     = extract_field(full_text, 'SLUG')
           excerpt  = extract_field(full_text, 'EXCERPT')
           tags_str = extract_field(full_text, 'TAGS')
-          img_kw   = extract_field(full_text, 'IMAGE_KEYWORD')
           body_m   = re.search(r'^BODY:\s*\n(.*)', full_text, re.MULTILINE | re.DOTALL)
           body     = body_m.group(1).strip() if body_m else ''
 
-          # Apply editor override as a safety net in case AI ignored it
           if custom_title_override:
               title = custom_title_override
               slug  = title_to_slug(custom_title_override)
-              print(f'[Title] Using editor override: {title}')
 
           if not title or not body:
-              print('Failed to generate title or body.'); sys.exit(1)
+              print('Failed to generate content.'); sys.exit(1)
 
           slug = re.sub(r'[^a-z0-9-]', '', slug.lower().replace(' ', '-'))
           slug = re.sub(r'-+', '-', slug).strip('-')[:70]
-          if not slug:
-              slug = title_to_slug(title)
+          if not slug: slug = title_to_slug(title)
 
-          img_query     = img_kw or title[:40]
-          if not primary_image:
-              primary_image = get_real_image(img_query)
-          primary_image = upload_to_imgbb(primary_image)
+          # Re-host the scraped image to ImgBB as WebP
+          if primary_image:
+              primary_image = upload_to_imgbb(primary_image)
 
           tags      = [t.strip().lower() for t in tags_str.split(',') if t.strip()]
           tags_yaml = ', '.join(['"' + t + '"' for t in tags])
+          author_slug = AUTHOR_SLUGS.get(author, 'za-ndani')
 
-          author_slug  = AUTHOR_SLUGS.get(author, 'za-ndani')
-          frontmatter  = (
+          frontmatter = (
               '---\n'
               'title: "' + title + '"\n'
               'slug: "' + slug + '"\n'
@@ -856,18 +1029,17 @@ jobs:
               '---'
           )
 
-          file_content = frontmatter + '\n\n' + body + '\n'
-          filename     = today_str + '-' + slug + '.md'
-          filepath     = os.path.join(posts_dir, filename)
+          filename = today_str + '-' + slug + '.md'
+          filepath = os.path.join(posts_dir, filename)
           os.makedirs(posts_dir, exist_ok=True)
-
           with open(filepath, 'w', encoding='utf-8') as f:
-              f.write(file_content)
+              f.write(frontmatter + '\n\n' + body + '\n')
 
           print('\n' + '=' * 60)
-          print('Article  : ' + filepath)
-          print('Title    : ' + title)
-          print('Slug     : ' + slug)
+          print('File   : ' + filepath)
+          print('Title  : ' + title)
+          print('Slug   : ' + slug)
+          print('Image  : ' + (primary_image or 'NONE'))
           print('=' * 60)
 
           memory.append(url_hash)
@@ -885,7 +1057,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "Nothing to commit."
           else
-            git commit -m "chore: publish article via workflow_dispatch [skip ci]"
+            git commit -m "chore: publish article [skip ci]"
             git push origin ${{ env.DEFAULT_BRANCH }}
           fi
 
@@ -894,14 +1066,13 @@ jobs:
         run: |
           {
             echo "## Article Generation Summary"
-            echo ""
             echo "| Field | Value |"
             echo "|-------|-------|"
             echo "| Status | :white_check_mark: Published |"
             echo "| Author | ${{ inputs.author }} |"
             echo "| Category | ${{ inputs.category }} |"
             if [ -n "${{ inputs.title_keywords }}" ]; then
-              echo "| Title Keywords | ${{ inputs.title_keywords }} |"
+              echo "| Title Signals | ${{ inputs.title_keywords }} |"
             fi
             echo "| Title Format | ${{ inputs.title_format }} |"
             if [ -n "${{ inputs.custom_title }}" ]; then
