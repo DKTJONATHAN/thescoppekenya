@@ -3,6 +3,6 @@ Disallow: /tag/
 Disallow: /admin/
 Disallow: /wp-admin/
 
-Allow: /
+Allow: /Sitemap: https://zandani.co.ke/sitemap.xml/
+Allow: /Sitemap: https://zandani.co.ke/sitemap-news.xml/
 
-Sitemap: https://zandani.co.ke/sitemap.xml
