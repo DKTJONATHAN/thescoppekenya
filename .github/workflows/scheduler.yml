@@ -1,0 +1,138 @@
+name: Scheduled Posts Publisher
+
+# Runs every hour to activate any posts whose publishDate has arrived.
+# Also supports manual trigger for an immediate rebuild.
+on:
+  schedule:
+    - cron: '0 * * * *'   # every hour at :00 UTC
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual rebuild (optional)'
+        required: false
+        type: string
+        default: 'Manual rebuild'
+
+concurrency:
+  group: scheduled-publisher
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+
+jobs:
+  check-and-publish:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install python-dateutil
+        run: pip install python-dateutil
+
+      - name: Check for posts due to publish
+        id: check_due
+        run: |
+          python3 - <<'PYEOF'
+          import os, re, datetime, json
+
+          posts_dir  = os.environ.get('POSTS_DIR', 'content/posts')
+          now_utc    = datetime.datetime.utcnow().replace(tzinfo=datetime.timezone.utc)
+          due_posts  = []
+          state_file = '.github/scheduler_state.json'
+
+          # Load last-checked state
+          last_state = {}
+          if os.path.exists(state_file):
+              with open(state_file) as f:
+                  last_state = json.load(f)
+
+          if not os.path.exists(posts_dir):
+              print("No posts directory found.")
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+                  fh.write("has_due_posts=false
+")
+              exit(0)
+
+          from dateutil import parser as dp
+
+          for fname in os.listdir(posts_dir):
+              if not fname.endswith('.md'):
+                  continue
+              fpath = os.path.join(posts_dir, fname)
+              with open(fpath, 'r', encoding='utf-8') as f:
+                  content = f.read()
+
+              pub_match = re.search(r'^publishDate:\s*["']?(.+?)["']?\s*$', content, re.MULTILINE)
+              if not pub_match:
+                  continue
+
+              try:
+                  pub_dt = dp.parse(pub_match.group(1).strip())
+                  if pub_dt.tzinfo is None:
+                      pub_dt = pub_dt.replace(tzinfo=datetime.timezone.utc)
+              except Exception:
+                  continue
+
+              # Post is due if publishDate <= now AND we have not yet flagged it
+              if pub_dt <= now_utc and fname not in last_state.get('activated', []):
+                  due_posts.append(fname)
+                  print(f"  DUE: {fname} (publishDate={pub_dt})")
+
+          if due_posts:
+              # Update state file so we do not trigger redundant rebuilds
+              activated = last_state.get('activated', [])
+              activated.extend(due_posts)
+              last_state['activated'] = activated[-500:]  # keep last 500
+              last_state['last_check'] = now_utc.isoformat()
+              os.makedirs('.github', exist_ok=True)
+              with open(state_file, 'w') as f:
+                  import json
+                  json.dump(last_state, f, indent=2)
+              print(f"
+{len(due_posts)} post(s) newly due — triggering rebuild.")
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+                  fh.write("has_due_posts=true
+")
+          else:
+              print("No newly due posts. Skipping rebuild.")
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+                  fh.write("has_due_posts=false
+")
+          PYEOF
+
+      - name: Commit state update
+        if: steps.check_due.outputs.has_due_posts == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .github/scheduler_state.json || true
+          git diff --staged --quiet || git commit -m "chore: activate scheduled posts [skip ci]"
+          git push origin ${{ env.DEFAULT_BRANCH }} || true
+
+      - name: Trigger Vercel deploy hook (scheduled posts activated)
+        if: steps.check_due.outputs.has_due_posts == 'true' && secrets.VERCEL_DEPLOY_HOOK != ''
+        run: |
+          curl -s -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
+          echo "Vercel deploy hook triggered."
+
+      # ── Fallback: if no deploy hook, a git commit above already triggers Vercel auto-deploy ──
+      - name: Summary
+        if: steps.check_due.outputs.has_due_posts == 'true'
+        run: |
+          echo "## Scheduled Publisher" >> $GITHUB_STEP_SUMMARY
+          echo ":white_check_mark: Newly due posts activated. Site rebuild triggered." >> $GITHUB_STEP_SUMMARY
