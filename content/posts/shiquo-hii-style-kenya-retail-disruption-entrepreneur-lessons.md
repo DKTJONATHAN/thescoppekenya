@@ -2,7 +2,7 @@
 title: "How Shiquo Hii Style Is Rewriting Kenya's Retail Rules (And What Every Entrepreneur Can Learn From Her)"
 slug: "shiquo-hii-style-kenya-retail-disruption-entrepreneur-lessons"
 author: "Jonathan Mwaniki"
-image: "[REPLACE_WITH_IMAGE_URL](https://i.postimg.cc/tgczPzyy/tiktok-video-RT1y-J.jpg)"
+image: "https://i.postimg.cc/tgczPzyy/tiktok-video-RT1y-J.jpg"
 category: "Business"
 date: "2026-03-16T09:04:00Z"
 ---
