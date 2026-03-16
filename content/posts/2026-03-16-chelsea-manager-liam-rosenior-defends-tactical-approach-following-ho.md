@@ -1,0 +1,23 @@
+---
+title: "Chelsea manager Liam Rosenior defends tactical approach following home defeat to Newcastle United"
+slug: "chelsea-manager-liam-rosenior-defends-tactical-approach-following-ho"
+author: "Sports Desk"
+image: "https://i.ibb.co/gLr9WDJP/54142d545ea6.jpg"
+category: "Global News"
+date: "2026-03-16T05:44:06Z"
+---
+## Rosenior's Central Dogma Crushes Chelsea's Ambitions
+
+Chelsea's embarrassing home defeat to Newcastle United brutally exposed Liam Rosenior's inflexible tactical "obsession." His stubborn insistence on central play, despite costly errors and clear defensive vulnerabilities, saw the Blues falter significantly in their Champions League qualification bid, leaving his definition of a "successful season" hanging by a thread.
+
+### The Myth of Central Control
+
+Liam Rosenior's "obsession" with playing through the centre continues to cost Chelsea dearly. After PSG exploited this fixation in their Champions League encounter, Eddie Howe's Newcastle adopted the same strategy at Stamford Bridge, delivering a crushing blow to Chelsea's European aspirations. Jamie Carragher accurately described the issue as an "obsession with going through the centre," even after Filip Jorgensen's blunder tilted the PSG game. Enzo Fernandez's public frustration, seen screaming at the goalkeeper after another straight pass led to a turnover, underscores the internal dissent against this rigid approach. Rosenior's unwavering belief in playing "a certain way" appears more a liability than a philosophy.
+
+Chelsea's inability to capitalize on a dominant start against a Newcastle side missing key midfielders Bruno Guimaraes, Sandro Tonali, and Joelinton highlighted their self-inflicted wounds. Newcastle's opening goal was a farce, with Tino Livramento strolling into midfield and Joe Willock finding a cavernous gap between Chelsea's centre-backs. Anthony Gordon then simply rolled the ball into an empty net, a direct consequence of Chelsea's "soft centre." Post-goal, Newcastle cleverly clogged central passing lanes, effectively neutering Chelsea's attack, which refused to use its wide players.
+
+### Expensive Blunders and Missed Chances
+
+The narrative around individual errors only highlights the broader systemic failings. Liam Delap, a £30m summer signing, continued his "harrowing debut season." Despite coming on at half-time to provide a presence in the box, his finishing, including a woeful left-foot effort, showcased a distinct "lack of quality." Todd Boehly, watching from the stands, must be "ruing victory over Manchester United in that transfer battle." This performance represents a "huge opportunity missed" for Chelsea, who could have climbed to third in the league against a weakened opponent between crucial Champions League fixtures. The stark reality is that Rosenior's tactical notes appeared more numerous than the chances his team managed to create.
+
+Rosenior's stated goal of Champions League qualification for a "successful season" now looks increasingly distant. With reports linking his future to achieving that target, this abysmal showing suggests he is "on his way to being sacked" by a club hierarchy notoriously intolerant of failure. A more nuanced "Plan B" than simply sending on an "inept big man up top" is desperately needed, or Rosenior's "obsession" will undoubtedly be his undoing.
