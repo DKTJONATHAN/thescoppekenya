@@ -698,7 +698,7 @@ jobs:
                       parts.append(f'Headline : {d.get("title", "N/A")}')
                       if d.get('text'):
                           parts.append(f'\nArticle text:\n{d["text"][:5000]}')
-          return '\n'.join(parts)
+              return '\n'.join(parts)
 
           # ================================================================
           #  MAIN EXECUTION
@@ -754,14 +754,13 @@ jobs:
           for u in other_urls:
               all_source_data.append(scrape_article_or_social(u))
 
-          # Pick best cover image across all sources
+          # â”€â”€ Pick best cover image â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           cover_image = ''
           for d in all_source_data:
               img = d.get('image', '')
               if img and is_good_image(img):
                   cover_image = img
                   break
-
           if cover_image:
               print(f'  Using image from Article: {cover_image[:80]}')
               cover_image = upload_to_imgbb(cover_image)
@@ -771,99 +770,103 @@ jobs:
           research_text = format_all_sources(all_source_data)
           print(f'\nTotal research data: {len(research_text)} chars')
 
-          banned_str = ', '.join(f'"{p}"' for p in BANNED_PHRASES)
+          # â”€â”€ Gemini setup â€” EXACT pattern from working workflow â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          MODELS_TO_TRY = ["gemini-2.5-flash-preview-04-17", "gemini-2.0-flash", "gemini-1.5-pro"]
 
-          title_instruction = ''
+          raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY","GEMINI_API_KEY","GEMINI_API_KEY1"] if os.environ.get(k)]
+          if not raw_keys:
+              print("No Gemini API keys found."); sys.exit(1)
+          key_cycle    = itertools.cycle(raw_keys)
+          current_key  = next(key_cycle)
+          client       = genai.Client(api_key=current_key)
+
+          def gemini_generate(prompt_text, label=""):
+              global current_key, client
+              for model in MODELS_TO_TRY:
+                  for attempt in range(6):
+                      try:
+                          config = types.GenerateContentConfig(
+                              temperature=0.9,
+                              max_output_tokens=4096,
+                          )
+                          resp = client.models.generate_content(
+                              model=model, contents=prompt_text, config=config
+                          )
+                          text = (resp.text or '').strip()
+                          if text:
+                              print(f'[Gemini OK] ({model}): {label}')
+                              return text
+                          print(f'  Empty response ({model}) attempt {attempt+1}')
+                      except Exception as e:
+                          err = str(e)
+                          if '429' in err or 'quota' in err.lower() or 'rate' in err.lower():
+                              wait = random.uniform(20, 35)
+                              print(f'  Rate limit ({model}), cycling key, waiting {wait:.0f}s...')
+                              time.sleep(wait)
+                              current_key = next(key_cycle)
+                              client = genai.Client(api_key=current_key)
+                              continue
+                          print(f'  Gemini error ({model}): {e}')
+                          break
+              print(f'  All attempts failed for: {label}')
+              return None
+
+          # â”€â”€ Build title instruction â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          banned_str = ', '.join(f'"{p}"' for p in BANNED_PHRASES)
           if custom_title_override:
               title_instruction = f'USE THIS EXACT TITLE (do not change it): {custom_title_override}'
           else:
               fmt_hints = {
-                  'LIST':     'Format the title as a numbered list hook, e.g. "10 Reasons Why..."',
-                  'BIO':      'Format the title as a biography hook',
-                  'SCANDAL':  'Format the title as a scandal hook',
-                  'GUIDE':    f'Format the title as a guide/how-to hook, e.g. "How To X in {current_year}"',
-                  'TRENDING': 'Format the title as a dramatic trending hook that creates FOMO',
-                  'NEWS':     'Format the title as a straight factual news headline',
+                  'LIST':     'Format the title as a numbered list hook e.g. "10 Reasons Why..."',
+                  'BIO':      'Format as a biography hook e.g. "Name: Age, Net Worth and Story"',
+                  'SCANDAL':  'Format as a scandal hook e.g. "Name Did X - And Paid The Price"',
+                  'GUIDE':    f'Format as a guide hook e.g. "How To X in {current_year}"',
+                  'TRENDING': 'Format as a dramatic trending hook that creates FOMO',
+                  'NEWS':     'Format as a straight factual news headline',
                   'AUTO':     'Choose the best title format for the content.',
               }
               hint = fmt_hints.get(title_format_choice, fmt_hints['AUTO'])
-              kw_instruction = ''
-              if title_keywords_raw:
-                  kw_instruction = (
-                      f'\nARTICLE FOCUS SIGNALS: {title_keywords_raw}\n'
-                      'Interpret each word/phrase as a question or angle to address in the article. '
-                      'Generate a smart title from those angles - do NOT paste these words verbatim into the title.'
-                  )
+              kw_instruction = (
+                  f'\nARTICLE FOCUS SIGNALS: {title_keywords_raw}\n'
+                  'Interpret each signal as an angle to address. '
+                  'Generate a smart title from those angles - do NOT paste signals verbatim.'
+              ) if title_keywords_raw else ''
               title_instruction = f'TITLE FORMAT: {hint}{kw_instruction}'
 
           angle_instruction = f'\nARTICLE ANGLE: {article_angle}' if article_angle else ''
 
+          # â”€â”€ Build prompt â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           prompt = (
-              f"You are writing as {persona}.\n"
-              f"Today is {full_date_str}. Site: {SITE_BASE_URL}\n\n"
-              f"{title_instruction}{angle_instruction}\n\n"
-              f"RESEARCH DATA:\n{research_text}\n\n"
-              f"INSTRUCTIONS:\n"
-              f"- Write a complete, engaging article of 600-900 words in HTML format.\n"
-              f"- Start with a punchy lede paragraph. Use <h2> subheadings, <p> tags for paragraphs.\n"
-              f"- Do NOT use any of these banned phrases: {banned_str}\n"
-              f"- Do NOT use markdown - use HTML only.\n"
-              f"- At the end, output the article title on its own line starting with: TITLE:\n"
-              f"- Category: {category}\n"
-              f"- Author: {author}\n\n"
-              f"OUTPUT FORMAT:\n"
-              f"<article HTML here>\n"
-              f"TITLE: Your Generated Title Here\n"
+              f'You are writing as {persona}.\n'
+              f'Today is {full_date_str}. Site: {SITE_BASE_URL}\n\n'
+              f'{title_instruction}{angle_instruction}\n\n'
+              f'RESEARCH DATA:\n{research_text}\n\n'
+              'INSTRUCTIONS:\n'
+              '- Write a complete engaging article of 600-900 words in HTML format.\n'
+              '- Start with a punchy lede paragraph. Use <h2> subheadings and <p> tags.\n'
+              f'- Do NOT use any of these banned phrases: {banned_str}\n'
+              '- Do NOT use markdown - use HTML only.\n'
+              '- End your response with the article title on its own line: TITLE: Your Title Here\n'
+              f'- Category: {category}, Author: {author}\n'
           )
 
-          gemini_keys = [
-              os.environ.get('GEMINI_WRITE_KEY', ''),
-              os.environ.get('GEMINI_API_KEY', ''),
-              os.environ.get('GEMINI_API_KEY1', ''),
-          ]
-          gemini_keys = [k for k in gemini_keys if k]
+          # â”€â”€ Generate article â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          raw = gemini_generate(prompt, label='article')
+          if not raw:
+              print('Failed to generate content.'); sys.exit(1)
 
-          article_html = ''
-          final_title  = ''
+          # â”€â”€ Extract title â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          title_match = re.search(r'TITLE:\s*(.+)', raw)
+          if title_match:
+              final_title  = title_match.group(1).strip()
+              article_html = raw[:title_match.start()].strip()
+          else:
+              article_html = raw.strip()
+              final_title  = custom_title_override or 'Untitled Article'
 
-          for key, model in itertools.product(gemini_keys, MODELS_TO_TRY):
-              try:
-                  print(f'[Gemini] Generated with {model}')
-                  client   = genai.Client(api_key=key)
-                  response = client.models.generate_content(
-                      model=model,
-                      contents=prompt,
-                      config=types.GenerateContentConfig(
-                          temperature=0.9,
-                          max_output_tokens=4096,
-                      ),
-                  )
-                  raw = (response.text or '').strip()
-                  if not raw or len(raw) < 200:
-                      print(f'  Empty/short response from {model}, trying next...')
-                      continue
-
-                  title_match = re.search(r'TITLE:\s*(.+)', raw)
-                  if title_match:
-                      final_title  = title_match.group(1).strip()
-                      article_html = raw[:title_match.start()].strip()
-                  else:
-                      article_html = raw
-                      final_title  = custom_title_override or 'Untitled Article'
-
-                  if article_html:
-                      break
-              except Exception as e:
-                  print(f'  Gemini error ({model}): {e}')
-                  time.sleep(2)
-
-          if not article_html:
-              print('Failed to generate content.')
-              sys.exit(1)
-
+          # â”€â”€ Write post file â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           slug        = title_to_slug(final_title)
           author_slug = AUTHOR_SLUGS.get(author, 'za-ndani')
-
           frontmatter = (
               '---\n'
               f'title: "{final_title.replace(chr(34), chr(39))}"\n'
@@ -875,9 +878,7 @@ jobs:
               'draft: false\n'
               '---\n'
           )
-
           post_content = frontmatter + '\n' + article_html + '\n'
-
           os.makedirs(posts_dir, exist_ok=True)
           filename = f'{today_str}-{slug}.md'
           filepath = os.path.join(posts_dir, filename)
@@ -894,24 +895,25 @@ jobs:
           print('Done!')
           PYEOF
 
-      - name: Commit and push article
+      - name: Git Safety Pull
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          if git diff --cached --quiet; then
-            echo "Nothing to commit."
-          else
-            git commit -m "chore: publish article [skip ci]"
-            MAX_RETRIES=5
-            COUNT=0
-            until git pull --rebase origin main && git push origin main; do
-              COUNT=$((COUNT + 1))
-              if [ $COUNT -ge $MAX_RETRIES ]; then
-                echo "Push failed after $MAX_RETRIES attempts."
-                exit 1
-              fi
-              echo "Push attempt $COUNT failed. Retrying in 10s..."
-              sleep 10
-            done
-          fi
+          git stash -u
+          git fetch origin main
+          git pull origin main --rebase
+          git stash pop || echo "Nothing to pop"
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          commit_message: "content: new article published [skip ci]"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: 'content/posts/*.md .github/memory_multi_source.json'
+
+      - name: Ping Google Sitemap
+        run: |
+          curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
+          echo "Google sitemap pinged"
