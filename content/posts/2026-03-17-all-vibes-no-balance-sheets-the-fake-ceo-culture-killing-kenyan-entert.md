@@ -1,0 +1,26 @@
+---
+title: "All Vibes, No Balance Sheets: The Fake 'CEO' Culture Killing Kenyan Entertainment Businesses"
+date: 2026-03-17T11:33:53Z
+slug: all-vibes-no-balance-sheets-the-fake-ceo-culture-killing-kenyan-entert
+author: za-ndani
+category: news
+image: "https://i.ibb.co/fz6zxSRJ/3ab8ac9a6575.webp"
+draft: false
+---
+
+<p>Let’s be brutally honest for a second, because Lord knows the rest of the Kenyan media is too busy licking the boots of every "CEO" with a ring light and a ring-fenced Instagram following. We are living in an era where everyone with 10k followers suddenly thinks they are the next Chris Kirubi. They launch "luxury" hair lines that look like they were harvested from a synthetic mop, or "executive" lounges that close faster than a politician’s promise after an election. You see the glitzy launch parties, the expensive champagne being poured on the floor, and the mainstream outlets screaming about "youth empowerment." What they don't tell you is that behind that heavy makeup and the rented Mercedes, there isn't a single shred of a business plan. It’s all vibes, no balance sheets.</p>
+
+<h2>The Clout-Chasing Mirage the Mainstream Ignores</h2>
+<p>While the big media houses are busy reporting on who wore what at the latest product launch, they ignore the stench of impending bankruptcy. They won't tell you that these "businesses" are basically just expensive hobbies funded by mysterious "sponsors" or temporary clout. The reality is that a business without a plan is just a countdown to a "we are relocating" post that actually means "the landlord kicked us out." According to actual data that these socialites would find allergic, business founders who bother to write a plan grow 30% faster than those who just wing it. But hey, who needs 30% growth when you can have 300 likes on a filtered photo of an empty office, right?</p>
+
+<h2>The 15-Page Reality Check for Your "Fave"</h2>
+<p>If you actually look at what it takes to run a real business—the kind that doesn't disappear when the WiFi goes down—you need a document that’s typically 15 to 20 pages long. Can you imagine your favorite influencer sitting down to write twenty pages of anything that isn't a self-pitying apology post? A real business plan explains what you’re doing, how you’re going to achieve it, and most importantly, how you’re going to define success beyond just "getting featured on a gossip blog." It’s a GPS for your money. But in this town, most of these celebrities are driving blindfolded in a desert, wondering why they haven't reached the oasis of sustainable profit yet.</p>
+
+<h2>The Executive Summary vs. The Elevator Pitch</h2>
+<p>The first step to not failing is the Executive Summary. In the real world, this is your chance to make a first impression on people who actually have money—bankers and investors, not just "fans." It’s a three-to-five paragraph pitch that explains why your business won't be dead in five years. Most of our local "entrepreneurs" can't even explain their business model without using the word "lifestyle." If you can't articulate the problem you're solving and how you're making sales—whether it's direct-to-consumer or a partnership—you don't have a business. You have a hallucination. Investors aren't looking for how many followers you have; they are looking for the exit strategy. They want to know how they get their money back when the hype dies down.</p>
+
+<h2>The "Team" Trap: Why Your Bestie Shouldn't Be Your CFO</h2>
+<p>Here is another thing the mainstream media loves to romanticize: "starting a business with my best friend!" It sounds cute for a magazine cover, doesn't it? But serious investors bet on the team, not just the idea. They want experienced, talented people who can bring a concept to life. In the Nairobi celebrity scene, the "team" is usually a group of "yes-men" and hangers-on who are only there for the free drinks at the launch. A business plan forces you to look at your business structure—whether you're a sole proprietorship or a corporation—and why that structure actually works for your industry. If your entire management team spends more time at the club than looking at supply chain logistics, you aren't an entrepreneur; you're a promoter for your own failure.</p>
+
+<h2>Why 2026 is the Year of the Great "CEO" Purge</h2>
+<p>We are seeing it already. The "Founders" who spent 2025 posting motivational quotes instead of researching their market are now finding out that the bank doesn't accept "influence" as a form of loan repayment. A real plan helps you think through barriers you haven't even articulated yet. It forces you to look at taxes, recordkeeping, and accounting—things that aren't "aesthetic" for a TikTok video but are vital for staying out of jail or the auctioneer's hammer. The mainstream media will continue to sell you the fantasy of the "overnight success," but the cold, hard truth is that success is built on the 11 steps of a boring, detailed, and un-glamorous business plan. The rest is just noise for the masses.</p>
