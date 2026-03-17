@@ -1,8 +1,8 @@
 ---
-title: "The Marriage Paradox: Why Gen Z’s Biggest Fears are the Best Reasons to Say I Do"
+title: "Reasons to Get Married: A Comprehensive Guide"
 date: 2026-03-17T12:28:29Z
 slug: the-marriage-paradox-why-gen-zs-biggest-fears-are-the-best-reasons-to-
-author: za-ndani
+author: Monica Ntazola
 category: lifestyle
 image: "https://i.ibb.co/bj79PGM7/f9ce436a11fa.webp"
 draft: false
