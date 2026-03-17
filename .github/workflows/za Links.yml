@@ -30,6 +30,8 @@ on:
           - Gossip
           - Sports
           - Technology
+          - Lifestyle
+          - Business
         default: Entertainment
       article_angle:
         description: 'Optional: guide the article angle (e.g. "focus on the controversy", "highlight the growth numbers")'
@@ -177,17 +179,26 @@ jobs:
 
           AUTHOR_PERSONAS = {
               "Za Ndani": (
-                  "Za Ndani, a sharp and cynical Kenyan entertainment journalist. "
-                  "Emulate the engaging, dramatic tone of authentic Mpasho authors. "
-                  "Point out the angle mainstream media ignores."
+                  "You are Za Ndani, a seasoned Kenyan entertainment writer with 10+ years covering "
+                  "celebrity culture, relationships, and pop culture. You write in a warm, direct, "
+                  "conversational human tone - like a knowledgeable friend sharing a real opinion. "
+                  "You draw on your own experience and observation. Never reference what other media "
+                  "says or contrast with mainstream coverage. Just tell your own story with authority."
               ),
               "Mutheu Ann": (
-                  "Mutheu Ann, a plugged-in Kenyan entertainment journalist writing for Za Ndani. "
-                  "Write in a passionate, high-energy style. Point out the critical angle mainstream media ignores."
+                  "You are Mutheu Ann, a Kenyan lifestyle and entertainment journalist at Za Ndani. "
+                  "You write with genuine passion and personal insight - never AI-sounding or robotic. "
+                  "Your voice is energetic, relatable, and grounded in real Kenyan experience. "
+                  "Never frame your content as a reaction to other media. Write independently with "
+                  "your own take based on facts and your expertise."
               ),
               "Celestine Nzioka": (
-                  "Celestine Nzioka, a cynical and authoritative Kenyan political and news journalist. "
-                  "Be hard-hitting and expose the angle mainstream media ignores. Write with authority."
+                  "You are Celestine Nzioka, an authoritative Kenyan political and business journalist "
+                  "at Za Ndani with deep expertise in East African affairs. You write clear, factual, "
+                  "confident prose - no hedging, no cliches. Your credibility comes from your own "
+                  "analysis and verified facts, not from contrasting with other outlets. Never say "
+                  'what mainstream media won't tell you' or similar phrases. Write from your own "
+                  "expert standpoint."
               ),
           }
 
@@ -851,10 +862,18 @@ jobs:
               f'{title_instruction}{angle_instruction}\n\n'
               f'RESEARCH DATA:\n{research_text}\n\n'
               'INSTRUCTIONS:\n'
-              '- Write a complete engaging article of 600-900 words in HTML format.\n'
-              '- Start with a punchy lede paragraph. Use <h2> subheadings and <p> tags.\n'
-              f'- Do NOT use any of these banned phrases: {banned_str}\n'
+              '- Write a complete article of 700-1000 words in HTML format.\n'
+              '- TONE: Write like a real human journalist - conversational, direct, opinionated where appropriate. No AI-sounding phrases, no robotic structure.\n'
+              '- EEAT (Experience, Expertise, Authoritativeness, Trustworthiness):\n'
+              '  * Experience: Ground claims in real-world observation and Kenyan context. Mention specific places, people, situations.\n'
+              '  * Expertise: Show deep knowledge of the topic. No shallow takes.\n'
+              '  * Authoritativeness: Write with conviction. No hedging phrases like "it seems" or "some say".\n'
+              '  * Trustworthiness: Stick to verifiable facts from the research data. No speculation presented as fact.\n'
+              '- INDEPENDENCE: Write from your own expert perspective. NEVER reference, contrast with, or react to what other media outlets say. Do not use phrases like "mainstream media ignores", "what they won\'t tell you", "unlike other reports". Just write your original analysis.\n'
+              '- STRUCTURE: Start with a 30-40 word lede (who/what/where/when). Then use <h2> subheadings and <p> tags. No heading above the lede.\n'
+              f'- BANNED PHRASES (never use any of these): {banned_str}\n'
               '- Do NOT use markdown - use HTML only.\n'
+              '- Do NOT start sentences with "Moreover", "Furthermore", "In conclusion", "It is worth noting".\n'
               '- End your response with the article title on its own line: TITLE: Your Title Here\n'
               f'- Category: {category}, Author: {author}\n'
           )
