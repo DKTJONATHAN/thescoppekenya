@@ -1,0 +1,41 @@
+---
+title: "Britam explains motor insurance coverage for submerged vehicles"
+slug: "britam-explains-motor-insurance-coverage-for-submerged-vehicles"
+description: "Britam clarifies that comprehensive motor insurance policies cover flood damage following severe flooding in Nairobi and other regions on March 6, 2026."
+author: "Celestine Nzioka"
+author_url: "https://zandani.co.ke/author/celestine-nzioka"
+image: "https://i.ibb.co/PBr6vCY/27ba4cb95a59.webp"
+category: "News"
+tags: ["britam", "nairobi-flooding", "motor-insurance-flood-coverage", "comprehensive-motor-insurance", "submerged-vehicles"]
+canonical: "https://zandani.co.ke/article/britam-explains-motor-insurance-coverage-for-submerged-vehicles"
+date: "2026-03-17T09:09:59Z"
+---
+Following the severe flooding in Nairobi and other regions on March 6, 2026, Britam has clarified its motor insurance coverage for submerged vehicles. The insurer confirms that comprehensive motor insurance policies typically cover flood damage, addressing a critical concern for vehicle owners affected by the recent heavy rainfall.
+
+## Motor Insurance and Flood Damage Explained
+
+Understanding motor insurance coverage, particularly for unforeseen events like floods, is crucial for vehicle owners. The Insurance (Motor Vehicles Third Party Risks) Act mandates a minimum third-party insurance, which covers damage to other road users but not to the insured's own vehicle.
+
+### Policy Types and Flood Protection
+
+Motorists have options to enhance their coverage. Third-party, fire and theft insurance extends protection against vehicle theft or fire damage, alongside third-party liabilities. The most extensive option is comprehensive insurance, which covers third-party claims, damage to the insured vehicle from accidents, theft, fire, and additional risks such as vandalism or natural hazards, including flood damage. A common misunderstanding is that flood damage is excluded from standard motor insurance. In reality, comprehensive motor insurance includes flood damage as an insured peril, enabling claims for vehicles submerged due to heavy rainfall or flash flooding. Without comprehensive cover, owners whose vehicles are damaged by floodwaters have no financial recourse for their own vehicle.
+
+### Britam's Comprehensive Cover and Risk Assessment
+
+For policyholders with comprehensive cover, Britam's motor insurance provides protection for flood-related and general risks. This includes free cover for windscreen damage, theft of audio and visual accessories, spare wheel, jack, and toolbox, as well as protection, recovery, and towing following an accident. Britam also offers a non-claim discount of up to 60 percent for careful drivers. Business owners with fleets can access Britam's Motor Commercial Insurance, offering similar protections with customizable plans and 24/7 support. The policy's geographical scope covers Kenya and can be extended to other East African countries. Insurers assess flood risk based on factors such as vehicle owner location, proximity to water bodies, historical flooding patterns, and drainage infrastructure. Areas with chronic flooding, like sections of Mombasa Road, Jogoo Road, or Westlands, may have premiums that reflect the elevated risk.
+
+### Immediate Actions and Claims Process
+
+Britam advises motorists to prioritize safety when floodwater rises. This means leaving the vehicle immediately and moving to higher ground. Attempting to start a water-damaged engine can cause severe mechanical or electrical failure. After ensuring safety, documenting the situation with photos and videos is critical evidence for lodging a claim. Britam's 24/7 Road Rescue team is available at 0705 100 100 for immediate assistance.
+
+Britam has overhauled its claims process with the AI Motor Assessment Service, an AI-powered drive-through facility for minor damage. Upon arrival at the Britam Centre in Nairobi, vehicles are photographed and assessed via AI in approximately 15 minutes. A digital claim form is then sent to the customer's phone, eliminating paper-based processes. Britam reviews the form within 30 minutes, with settlement via direct bank transfer, mobile money, or repair authority within an hour.
+
+### Claim Approval and Pitfalls
+
+Comprehensive cover does not guarantee an automatic payout. Claims are generally approved if the policy was active, premiums fully paid, damage falls within insured perils, and the vehicle's value was adequately declared. Common mistakes leading to partial or rejected claims include delayed reporting, failing to document losses before intervention, and attempting repairs before an insurer's loss assessor inspects the vehicle. Policyholders must provide accurate and complete information throughout the claims process to avoid delays.
+
+### Beyond Motor: Home and Dedicated Flood Insurance
+
+While vehicles are a focus, damage to homes from flooding has also been significant. However, only a small percentage of homeowners hold home insurance. Britam's Homeowners Insurance, or Domestic Package, covers the home's structure against flood damage under a standard "storm, tempest and flood" clause, requiring no separate flood cover. This policy extends to theft, third-party liabilities, and employee injuries. Landlords can opt for Landlord Insurance, which covers building damage and potential loss of rental income if a property becomes uninhabitable due to flooding.
+
+Britam also offers a dedicated standalone Flood Insurance product for flood-prone areas. This product operates on objective triggers: a payout is made automatically when rainfall in the covered area exceeds 210mm, or when the Tana River water level at gauge 4G01 rises above four meters. This eliminates the need to prove personal loss, with a claim paid if trigger conditions are met. The policy costs Ksh7,000 and carries a maximum payout of Ksh50,000, providing a practical financial cushion. Britam has simplified access by enabling complete sign-up through WhatsApp. To sign up, individuals save the number 0705 100 100, send "Hi," select "Invest with Britam," key in their national ID number, and follow subsequent prompts.
