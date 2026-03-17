@@ -38,7 +38,7 @@ on:
         default: ''
       title_keywords:
         description: >
-          ARTICLE FOCUS — W-questions or topic signals that shape what the article covers.
+          ARTICLE FOCUS â€” W-questions or topic signals that shape what the article covers.
           Use plain words like: who, where, how, when, why, what
           OR combine with names/topics: "who is Wizkid, where he was born, how he became famous"
           AI interprets each word as a question to answer about the subject, then generates
@@ -48,8 +48,8 @@ on:
         default: ''
       title_format:
         description: >
-          TITLE FORMAT — AUTO lets AI decide. LIST = "5 Reasons...", BIO = "Name: Age/Net Worth",
-          SCANDAL = "Name Did X — Consequence", GUIDE = "How to X in 2025",
+          TITLE FORMAT â€” AUTO lets AI decide. LIST = "5 Reasons...", BIO = "Name: Age/Net Worth",
+          SCANDAL = "Name Did X â€” Consequence", GUIDE = "How to X in 2025",
           TRENDING = dramatic hook, NEWS = straight factual headline.
         required: false
         type: choice
@@ -64,7 +64,7 @@ on:
         default: AUTO
       custom_title:
         description: >
-          OVERRIDE TITLE — type an exact title to bypass AI title generation completely.
+          OVERRIDE TITLE â€” type an exact title to bypass AI title generation completely.
           Leave blank to let AI write the title using the signals/format above.
         required: false
         type: string
@@ -321,7 +321,7 @@ jobs:
                   if k in url: return k
               return None
 
-          # ── Pick the best thumbnail from a yt-dlp thumbnails list ──────────
+          # â”€â”€ Pick the best thumbnail from a yt-dlp thumbnails list â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def best_yt_thumbnail(thumbnails):
               if not thumbnails: return ''
               ranked = sorted(
@@ -360,7 +360,7 @@ jobs:
                       data['description']      = (info.get('description') or '')[:800]
                       data['total_views']      = info.get('view_count')
                       data['video_count']      = info.get('playlist_count')
-                      # Channel avatar — prefer the avatar/photo thumbnails
+                      # Channel avatar â€” prefer the avatar/photo thumbnails
                       thumbnails = info.get('thumbnails') or []
                       avatar_candidates = [t for t in thumbnails if
                                            'avatar' in (t.get('id', '') + t.get('url', '')).lower()
@@ -412,7 +412,7 @@ jobs:
                       data['description']      = (info.get('description') or '')[:800]
                       data['tags']             = (info.get('tags') or [])[:10]
                       data['categories']       = info.get('categories', [])
-                      # Video thumbnail — prefer maxresdefault
+                      # Video thumbnail â€” prefer maxresdefault
                       vid_id = info.get('id', '')
                       maxres = f"https://i.ytimg.com/vi/{vid_id}/maxresdefault.jpg" if vid_id else ''
                       hq     = f"https://i.ytimg.com/vi/{vid_id}/hqdefault.jpg"     if vid_id else ''
@@ -442,7 +442,7 @@ jobs:
                   soup      = BeautifulSoup(pw_page.content(), 'html.parser')
                   full_text = soup.get_text(separator=' ', strip=True)
 
-                  # ── Extract image: og:image first, then largest img ──────
+                  # â”€â”€ Extract image: og:image first, then largest img â”€â”€â”€â”€â”€â”€
                   for meta in soup.find_all('meta'):
                       prop = meta.get('property', '') or meta.get('name', '')
                       if prop in ['og:image', 'twitter:image', 'twitter:image:src']:
@@ -542,7 +542,7 @@ jobs:
                       lns = [l.strip() for l in body.get_text(separator='\n').split('\n') if len(l.strip()) > 50]
                       article_text = '\n\n'.join(lns)
 
-              # ── Image extraction: og:image > twitter:image > article hero > first large img ──
+              # â”€â”€ Image extraction: og:image > twitter:image > article hero > first large img â”€â”€
               img_url = ''
               base_url = '/'.join(url.split('/')[:3])
 
@@ -698,7 +698,7 @@ jobs:
                       parts.append(f'Headline : {d.get("title", "N/A")}')
                       if d.get('text'):
                           parts.append(f'\nArticle text:\n{d["text"][:5000]}')
-                  return '\n'.join(parts)
+          return '\n'.join(parts)
 
           # ================================================================
           #  MAIN EXECUTION
@@ -706,10 +706,10 @@ jobs:
           raw_input_urls        = os.environ.get('INPUT_URLS', '').strip()
           author                = os.environ.get('INPUT_AUTHOR', 'Za Ndani').strip()
           category              = os.environ.get('INPUT_CATEGORY', 'Entertainment').strip()
-          article_angle         = os.environ.get('INPUT_ANGLE', '').strip()
-          title_keywords_raw    = os.environ.get('INPUT_TITLE_KEYWORDS', '').strip()
+          article_angle         = ' '.join(os.environ.get('INPUT_ANGLE', '').split())
+          title_keywords_raw    = ' '.join(os.environ.get('INPUT_TITLE_KEYWORDS', '').split())
           title_format_choice   = os.environ.get('INPUT_TITLE_FORMAT', 'AUTO').strip()
-          custom_title_override = os.environ.get('INPUT_CUSTOM_TITLE', '').strip()
+          custom_title_override = ' '.join(os.environ.get('INPUT_CUSTOM_TITLE', '').split())
 
           persona     = AUTHOR_PERSONAS.get(author, AUTHOR_PERSONAS['Za Ndani'])
           posts_dir   = os.environ.get('POSTS_DIR', 'content/posts')
@@ -754,293 +754,138 @@ jobs:
           for u in other_urls:
               all_source_data.append(scrape_article_or_social(u))
 
-          if not all_source_data:
-              print('All sources returned no data.'); sys.exit(1)
-
-          # ── Pick best image from all scraped sources ──────────────────────
-          # Priority: YouTube video thumbnail > YouTube channel avatar >
-          #           Spotify og:image > article og:image > article body img
-          primary_image = ''
+          # Pick best cover image across all sources
+          cover_image = ''
           for d in all_source_data:
               img = d.get('image', '')
-              if is_good_image(img):
-                  primary_image = img
-                  print(f'  Using image from {d["platform"]}: {img[:80]}')
+              if img and is_good_image(img):
+                  cover_image = img
                   break
 
-          if not primary_image:
-              print('  WARNING: No image found from any source. Article will have no image.')
+          if cover_image:
+              print(f'  Using image from Article: {cover_image[:80]}')
+              cover_image = upload_to_imgbb(cover_image)
+          else:
+              print('  No usable cover image found.')
 
-          combined_data = format_all_sources(all_source_data)
-          print(f'\nTotal research data: {len(combined_data)} chars')
+          research_text = format_all_sources(all_source_data)
+          print(f'\nTotal research data: {len(research_text)} chars')
 
-          internal_links = ''
-          if os.path.exists(posts_dir):
-              files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
-              if files:
-                  sample = random.sample(files, min(len(files), 3))
-                  internal_links = 'PAST STORIES (PICK ONE AND LINK NATURALLY):\n'
-                  for f in sample:
-                      try:
-                          with open(os.path.join(posts_dir, f), 'r', encoding='utf-8') as cf:
-                              txt = cf.read()
-                              tm  = re.search(r'title:\s*"(.*?)"', txt)
-                              t   = tm.group(1) if tm else f
-                              internal_links += f'- Title: {t} | Link: {SITE_BASE_URL}/article/{f.replace(".md","")}\n'
-                      except Exception: continue
+          banned_str = ', '.join(f'"{p}"' for p in BANNED_PHRASES)
 
-          # ── Title control prompt injections ──────────────────────────────
-          FOCUS_MAP = {
-              'who':          'Who is [subject]? Cover their identity, real name, background, and persona.',
-              'where':        'Where is [subject] from? Cover origin, city, country, and upbringing.',
-              'how':          'How did [subject] rise/achieve [thing]? Cover the journey and key turning points.',
-              'when':         'When did major events happen? Include a clear timeline of milestones.',
-              'why':          'Why did [subject] do/say/become [thing]? Explain motivations and circumstances.',
-              'what':         'What exactly happened? Cover the core facts and key developments in full.',
-              'age':          'Mention [subject]s confirmed age and date of birth.',
-              'real name':    'Reveal [subject]s real/birth name if different from their public name.',
-              'nationality':  'State [subject]s nationality and ethnic background.',
-              'tribe':        'Mention [subject]s ethnic or tribal background where relevant.',
-              'religion':     'Cover [subject]s religion or faith background if publicly known.',
-              'education':    'Cover [subject]s education background and academic history.',
-              'early life':   'Cover [subject]s early childhood, upbringing, and formative years.',
-              'childhood':    'Describe [subject]s childhood, early environment, and family background.',
-              'career':       'Cover [subject]s full career arc, major milestones, and professional highlights.',
-              'rise':         'Explain how [subject] rose to prominence — the specific breaks that changed everything.',
-              'achievements': 'List [subject]s major achievements, records, and career highs.',
-              'awards':       'Cover all major awards and nominations [subject] has received.',
-              'hits':         'Mention [subject]s biggest hit songs/works and their chart performance.',
-              'music':        'Cover [subject]s musical journey, discography, and signature style.',
-              'movies':       'Cover [subject]s acting career and major film/TV roles.',
-              'business':     'Cover [subject]s business ventures, investments, and entrepreneurial moves.',
-              'brand':        'Cover [subject]s personal brand, endorsements, and deals.',
-              'net worth':    'Include [subject]s estimated net worth and main income sources.',
-              'wealth':       'Cover [subject]s wealth, assets, lifestyle, and financial status.',
-              'salary':       'Mention [subject]s known earnings, salary, or pay details.',
-              'house':        'Describe [subject]s home, property, and living situation if known.',
-              'cars':         'Mention [subject]s known car collection or notable vehicles.',
-              'wife':         'Cover [subject]s wife — her name, background, and their relationship.',
-              'husband':      'Cover [subject]s husband — his name, background, and their relationship.',
-              'girlfriend':   'Cover [subject]s girlfriend and the details of their relationship.',
-              'boyfriend':    'Cover [subject]s boyfriend and the details of their relationship.',
-              'partner':      'Cover [subject]s romantic partner and relationship details.',
-              'relationship': 'Cover [subject]s romantic relationship history and current status.',
-              'dating':       'Cover who [subject] is currently dating and relationship timeline.',
-              'married':      'Address whether [subject] is married, details of their marriage.',
-              'divorce':      'Cover [subject]s divorce — circumstances, timeline, and aftermath.',
-              'children':     'Mention [subject]s children — how many, their names, and context.',
-              'kids':         'Mention [subject]s children — names, ages, and family context.',
-              'family':       'Cover [subject]s family background, relatives, and family life.',
-              'parents':      'Cover [subject]s parents — their names, background, and influence.',
-              'siblings':     'Mention [subject]s siblings and their relationship.',
-              'controversy':  'Focus on the controversy — what happened, public reactions, and fallout.',
-              'scandal':      'Expose the scandal — facts, timeline, and consequences.',
-              'beef':         'Cover the beef/feud — who, what was said, and current status.',
-              'feud':         'Detail the feud — cause, escalation, and current resolution.',
-              'drama':        'Cover the drama — events, reactions, and what it means.',
-              'cheating':     'Address cheating allegations — claims, responses, and evidence.',
-              'exposed':      'Cover what was exposed — the details and public reaction.',
-              'arrested':     'Cover the arrest — charges, circumstances, and legal status.',
-              'fired':        'Cover why [subject] was fired — what led to it and the aftermath.',
-              'apology':      'Cover the apology — what was said sorry for and public reception.',
-              'followers':    'Mention [subject]s social media following and online influence.',
-              'viral':        'Cover the viral moment — what happened and why it spread.',
-              'reaction':     'Include significant public and fan reactions and responses.',
-              'fans':         'Cover fan reactions, fan base culture, and audience response.',
-          }
-
-          title_signal_block = ''
-          if title_keywords_raw:
-              raw_parts = [s.strip() for s in title_keywords_raw.split(',') if s.strip()]
-              expanded_lines = []
-              unknown_topics = []
-
-              for part in raw_parts:
-                  part_lower = part.lower()
-                  if part_lower in FOCUS_MAP:
-                      expanded_lines.append('  - ' + FOCUS_MAP[part_lower])
-                  else:
-                      matched = False
-                      for word in part_lower.split():
-                          if word in FOCUS_MAP:
-                              expanded_lines.append('  - ' + FOCUS_MAP[word])
-                              matched = True
-                              break
-                      if not matched:
-                          unknown_topics.append(part)
-
-              title_signal_block = '\nARTICLE FOCUS DIRECTIVES: ' + title_keywords_raw + '\n'
-              if expanded_lines:
-                  title_signal_block += 'The article MUST cover each of these points about the main subject:\n'
-                  title_signal_block += '\n'.join(expanded_lines) + '\n'
-              if unknown_topics:
-                  title_signal_block += (
-                      'Also weave these topics/names/events naturally into the article: '
-                      + ', '.join(unknown_topics) + '\n'
-                  )
-              title_signal_block += (
-                  'For the TITLE: craft a compelling headline inspired by the DOMINANT angle above.\n'
-                  'Do NOT paste directive words (who/where/how/etc.) literally into the title.\n'
-                  'WRONG: "Who Is Wizkid, Where and How He Made It"\n'
-                  'RIGHT: "Wizkid: From Lagos Streets to Afrobeats Throne"\n'
-              )
-
-          title_format_block = ''
-          if title_format_choice and title_format_choice != 'AUTO':
-              title_format_block = (
-                  '\nFORCED TITLE FORMAT: ' + title_format_choice + ' — use this pattern from the Smart Title Engine. No other format.\n'
-              )
-
-          custom_title_block = ''
+          title_instruction = ''
           if custom_title_override:
-              custom_title_block = (
-                  '\nEDITOR TITLE OVERRIDE (do not change):\n'
-                  '  TITLE: ' + custom_title_override + '\n'
-                  '  SLUG : ' + title_to_slug(custom_title_override) + '\n'
-                  'Output exactly these for TITLE and SLUG. Generate everything else normally.\n'
-              )
+              title_instruction = f'USE THIS EXACT TITLE (do not change it): {custom_title_override}'
+          else:
+              fmt_hints = {
+                  'LIST':     'Format the title as a numbered list hook, e.g. "10 Reasons Why..."',
+                  'BIO':      'Format the title as a biography hook',
+                  'SCANDAL':  'Format the title as a scandal hook',
+                  'GUIDE':    f'Format the title as a guide/how-to hook, e.g. "How To X in {current_year}"',
+                  'TRENDING': 'Format the title as a dramatic trending hook that creates FOMO',
+                  'NEWS':     'Format the title as a straight factual news headline',
+                  'AUTO':     'Choose the best title format for the content.',
+              }
+              hint = fmt_hints.get(title_format_choice, fmt_hints['AUTO'])
+              kw_instruction = ''
+              if title_keywords_raw:
+                  kw_instruction = (
+                      f'\nARTICLE FOCUS SIGNALS: {title_keywords_raw}\n'
+                      'Interpret each word/phrase as a question or angle to address in the article. '
+                      'Generate a smart title from those angles - do NOT paste these words verbatim into the title.'
+                  )
+              title_instruction = f'TITLE FORMAT: {hint}{kw_instruction}'
 
-          banned_str = ', '.join(BANNED_PHRASES)
-          angle_str  = '\nARTICLE ANGLE: ' + article_angle + '\n' if article_angle else ''
+          angle_instruction = f'\nARTICLE ANGLE: {article_angle}' if article_angle else ''
 
           prompt = (
-              'Current Date: ' + full_date_str + '. Current Year: ' + current_year + '.\n'
-              + angle_str + custom_title_block + title_signal_block + title_format_block
-              + 'RESEARCH DATA FROM ' + str(len(all_source_data)) + ' SOURCE(S):\n'
-              + combined_data[:16000] + '\n\n'
-              + internal_links + '\n\n'
-              + 'TASK: Write a news/entertainment report as ' + persona + '\n'
-              'You must use Google Search to verify facts and find additional context.\n\n'
-              'CRITICAL RULES:\n'
-              '- Write with authority. NEVER reveal the data source.\n'
-              '- Reference numbers naturally: "commands X million subscribers" not "data shows".\n'
-              '- Fan reactions: "Fans flooded the comments..." not "comments show".\n'
-              '- When multiple platforms available, weave into one unified narrative.\n\n'
-              'SMART TITLE ENGINE:\n'
-              'Step 1 - Extract PRIMARY SUBJECT: the 1-2 most important names or entities.\n'
-              'Step 2 - Identify the STORY HOOK: what makes this worth reading right now?\n'
-              'Step 3 - If TITLE ANGLE SIGNALS provided, extract the CONCEPT behind them — do not use the words literally.\n'
-              'Step 4 - Choose format (or use FORCED FORMAT if provided):\n'
-              '  LIST    : "[N] Things About [Subject] That [Hook]"\n'
-              '  BIO     : "[Subject]: Real Name, Age, Net Worth Revealed"\n'
-              '  SCANDAL : "[Subject] [Specific Action] — [Consequence]"\n'
-              '  GUIDE   : "[Subject]: How [Hook] in ' + current_year + '"\n'
-              '  TRENDING: "[Subject] [Short Dramatic Hook]"\n'
-              '  NEWS    : "[Subject] [Specific Fact]"\n'
-              'Step 5 - Title: lead with the SUBJECT, under 65 characters, reads naturally.\n'
-              'Step 6 - Slug: subject keywords only, lowercase, hyphens, no filler words.\n\n'
-              'LANGUAGE RULES:\n'
-              '- Professional Kenyan English only. No Sheng, no Swahili.\n'
-              '- No British fillers ("Right,", "Well,").\n'
-              '- No bracketed asides.\n'
-              '- Single hyphens only — never em-dashes.\n'
-              '- BANNED: ' + banned_str + '\n\n'
-              'OUTPUT FORMAT (nothing else, no fences):\n'
-              'TITLE: ...\n'
-              'SLUG: ...\n'
-              'EXCERPT: [140-155 chars, starts with subject or verb, contains key fact]\n'
-              'TAGS: [comma-separated, lowercase, specific, SEO-focused]\n'
-              'BODY:\n'
-              '[1. Lede: 35-45 words, no heading, answers who/what/when/where — Google Featured Snippet.\n'
-              '2. ## H2 containing PRIMARY SUBJECT.\n'
-              '3. ### sub-sections reusing PRIMARY SUBJECT naturally.\n'
-              'No title, author, date, or metadata inside the body.]'
+              f"You are writing as {persona}.\n"
+              f"Today is {full_date_str}. Site: {SITE_BASE_URL}\n\n"
+              f"{title_instruction}{angle_instruction}\n\n"
+              f"RESEARCH DATA:\n{research_text}\n\n"
+              f"INSTRUCTIONS:\n"
+              f"- Write a complete, engaging article of 600-900 words in HTML format.\n"
+              f"- Start with a punchy lede paragraph. Use <h2> subheadings, <p> tags for paragraphs.\n"
+              f"- Do NOT use any of these banned phrases: {banned_str}\n"
+              f"- Do NOT use markdown - use HTML only.\n"
+              f"- At the end, output the article title on its own line starting with: TITLE:\n"
+              f"- Category: {category}\n"
+              f"- Author: {author}\n\n"
+              f"OUTPUT FORMAT:\n"
+              f"<article HTML here>\n"
+              f"TITLE: Your Generated Title Here\n"
           )
 
-          raw_keys = [os.environ.get('GEMINI_WRITE_KEY'), os.environ.get('GEMINI_API_KEY'), os.environ.get('GEMINI_API_KEY1')]
-          api_keys = [k for k in raw_keys if k and k.strip()]
-          if not api_keys:
-              print('No Gemini API keys.'); sys.exit(1)
+          gemini_keys = [
+              os.environ.get('GEMINI_WRITE_KEY', ''),
+              os.environ.get('GEMINI_API_KEY', ''),
+              os.environ.get('GEMINI_API_KEY1', ''),
+          ]
+          gemini_keys = [k for k in gemini_keys if k]
 
-          key_cycle    = itertools.cycle(api_keys)
-          current_key  = next(key_cycle)
-          client       = genai.Client(api_key=current_key)
-          gsearch_tool = types.Tool(google_search=types.GoogleSearch())
-          full_text    = ''
-          success_flag = False
+          article_html = ''
+          final_title  = ''
 
-          for attempt in range(len(api_keys) * len(MODELS_TO_TRY)):
-              model = MODELS_TO_TRY[attempt % len(MODELS_TO_TRY)]
+          for key, model in itertools.product(gemini_keys, MODELS_TO_TRY):
               try:
+                  print(f'[Gemini] Generated with {model}')
+                  client   = genai.Client(api_key=key)
                   response = client.models.generate_content(
                       model=model,
                       contents=prompt,
                       config=types.GenerateContentConfig(
-                          tools=[gsearch_tool],
-                          temperature=0.7,
-                          max_output_tokens=8192,
-                      )
+                          temperature=0.9,
+                          max_output_tokens=4096,
+                      ),
                   )
-                  full_text    = response.text
-                  success_flag = True
-                  print(f'[Gemini] Generated with {model}')
-                  break
+                  raw = (response.text or '').strip()
+                  if not raw or len(raw) < 200:
+                      print(f'  Empty/short response from {model}, trying next...')
+                      continue
+
+                  title_match = re.search(r'TITLE:\s*(.+)', raw)
+                  if title_match:
+                      final_title  = title_match.group(1).strip()
+                      article_html = raw[:title_match.start()].strip()
+                  else:
+                      article_html = raw
+                      final_title  = custom_title_override or 'Untitled Article'
+
+                  if article_html:
+                      break
               except Exception as e:
-                  print(f'[Gemini] Attempt {attempt + 1} failed ({model}): {e}')
-                  current_key = next(key_cycle)
-                  client      = genai.Client(api_key=current_key)
+                  print(f'  Gemini error ({model}): {e}')
                   time.sleep(2)
 
-          if not success_flag or not full_text:
-              print('All Gemini attempts failed.'); sys.exit(1)
+          if not article_html:
+              print('Failed to generate content.')
+              sys.exit(1)
 
-          def extract_field(text, field):
-              m = re.search(r'^' + field + r':\s*(.+)$', text, re.MULTILINE)
-              return m.group(1).strip().strip('"').strip("'") if m else ''
-
-          title    = extract_field(full_text, 'TITLE')
-          slug     = extract_field(full_text, 'SLUG')
-          excerpt  = extract_field(full_text, 'EXCERPT')
-          tags_str = extract_field(full_text, 'TAGS')
-          body_m   = re.search(r'^BODY:\s*\n(.*)', full_text, re.MULTILINE | re.DOTALL)
-          body     = body_m.group(1).strip() if body_m else ''
-
-          if custom_title_override:
-              title = custom_title_override
-              slug  = title_to_slug(custom_title_override)
-
-          if not title or not body:
-              print('Failed to generate content.'); sys.exit(1)
-
-          slug = re.sub(r'[^a-z0-9-]', '', slug.lower().replace(' ', '-'))
-          slug = re.sub(r'-+', '-', slug).strip('-')[:70]
-          if not slug: slug = title_to_slug(title)
-
-          # Re-host the scraped image to ImgBB as WebP
-          if primary_image:
-              primary_image = upload_to_imgbb(primary_image)
-
-          tags      = [t.strip().lower() for t in tags_str.split(',') if t.strip()]
-          tags_yaml = ', '.join(['"' + t + '"' for t in tags])
+          slug        = title_to_slug(final_title)
           author_slug = AUTHOR_SLUGS.get(author, 'za-ndani')
 
           frontmatter = (
               '---\n'
-              'title: "' + title + '"\n'
-              'slug: "' + slug + '"\n'
-              'date: "' + publish_timestamp + '"\n'
+              f'title: "{final_title.replace(chr(34), chr(39))}"\n'
+              f'date: {publish_timestamp}\n'
+              f'slug: {slug}\n'
+              f'author: {author_slug}\n'
+              f'category: {category.lower()}\n'
+              f'image: "{cover_image}"\n'
               'draft: false\n'
-              'author: "' + author + '"\n'
-              'authorSlug: "' + author_slug + '"\n'
-              'categories: ["' + category + '"]\n'
-              'tags: [' + tags_yaml + ']\n'
-              'excerpt: "' + excerpt + '"\n'
-              'image: "' + primary_image + '"\n'
-              '---'
+              '---\n'
           )
 
-          filename = today_str + '-' + slug + '.md'
-          filepath = os.path.join(posts_dir, filename)
-          os.makedirs(posts_dir, exist_ok=True)
-          with open(filepath, 'w', encoding='utf-8') as f:
-              f.write(frontmatter + '\n\n' + body + '\n')
+          post_content = frontmatter + '\n' + article_html + '\n'
 
-          print('\n' + '=' * 60)
-          print('File   : ' + filepath)
-          print('Title  : ' + title)
-          print('Slug   : ' + slug)
-          print('Image  : ' + (primary_image or 'NONE'))
-          print('=' * 60)
+          os.makedirs(posts_dir, exist_ok=True)
+          filename = f'{today_str}-{slug}.md'
+          filepath = os.path.join(posts_dir, filename)
+          with open(filepath, 'w', encoding='utf-8') as f:
+              f.write(post_content)
+          print(f'\nPublished: {filepath}')
+          print(f'Title    : {final_title}')
+          print(f'Image    : {cover_image[:80] if cover_image else "none"}')
 
           memory.append(url_hash)
           os.makedirs(os.path.dirname(memory_path), exist_ok=True)
@@ -1051,31 +896,22 @@ jobs:
 
       - name: Commit and push article
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "${{ env.POSTS_DIR }}/" "${{ env.MEMORY_FILE }}" || true
-          if git diff --staged --quiet; then
+          git add .
+          if git diff --cached --quiet; then
             echo "Nothing to commit."
           else
             git commit -m "chore: publish article [skip ci]"
-            git push origin ${{ env.DEFAULT_BRANCH }}
+            MAX_RETRIES=5
+            COUNT=0
+            until git pull --rebase origin main && git push origin main; do
+              COUNT=$((COUNT + 1))
+              if [ $COUNT -ge $MAX_RETRIES ]; then
+                echo "Push failed after $MAX_RETRIES attempts."
+                exit 1
+              fi
+              echo "Push attempt $COUNT failed. Retrying in 10s..."
+              sleep 10
+            done
           fi
-
-      - name: Job summary
-        if: always()
-        run: |
-          {
-            echo "## Article Generation Summary"
-            echo "| Field | Value |"
-            echo "|-------|-------|"
-            echo "| Status | :white_check_mark: Published |"
-            echo "| Author | ${{ inputs.author }} |"
-            echo "| Category | ${{ inputs.category }} |"
-            if [ -n "${{ inputs.title_keywords }}" ]; then
-              echo "| Title Signals | ${{ inputs.title_keywords }} |"
-            fi
-            echo "| Title Format | ${{ inputs.title_format }} |"
-            if [ -n "${{ inputs.custom_title }}" ]; then
-              echo "| Title Override | ${{ inputs.custom_title }} |"
-            fi
-          } >> "$GITHUB_STEP_SUMMARY"
