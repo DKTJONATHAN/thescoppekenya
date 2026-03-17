@@ -163,7 +163,7 @@ jobs:
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
 
-          MODELS_TO_TRY = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot",
@@ -771,7 +771,7 @@ jobs:
           print(f'\nTotal research data: {len(research_text)} chars')
 
           # â”€â”€ Gemini setup â€” EXACT pattern from working workflow â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-          MODELS_TO_TRY = ["gemini-2.5-flash-preview-04-17", "gemini-2.0-flash", "gemini-1.5-pro"]
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
           raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY","GEMINI_API_KEY","GEMINI_API_KEY1"] if os.environ.get(k)]
           if not raw_keys:
@@ -782,16 +782,25 @@ jobs:
 
           def gemini_generate(prompt_text, label=""):
               global current_key, client
+              import concurrent.futures
+              CALL_TIMEOUT = 90  # hard 90s timeout per attempt
+
+              def _call(mdl):
+                  cfg = types.GenerateContentConfig(temperature=0.9, max_output_tokens=4096)
+                  return client.models.generate_content(model=mdl, contents=prompt_text, config=cfg)
+
               for model in MODELS_TO_TRY:
-                  for attempt in range(6):
+                  for attempt in range(3):
                       try:
-                          config = types.GenerateContentConfig(
-                              temperature=0.9,
-                              max_output_tokens=4096,
-                          )
-                          resp = client.models.generate_content(
-                              model=model, contents=prompt_text, config=config
-                          )
+                          print(f'  [{label}] Trying {model} (attempt {attempt+1})...')
+                          with concurrent.futures.ThreadPoolExecutor(max_workers=1) as ex:
+                              future = ex.submit(_call, model)
+                              try:
+                                  resp = future.result(timeout=CALL_TIMEOUT)
+                              except concurrent.futures.TimeoutError:
+                                  print(f'  Timeout after {CALL_TIMEOUT}s ({model}) - trying next')
+                                  future.cancel()
+                                  break  # move to next model
                           text = (resp.text or '').strip()
                           if text:
                               print(f'[Gemini OK] ({model}): {label}')
