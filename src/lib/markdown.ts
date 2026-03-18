@@ -23,7 +23,7 @@ function parseFrontmatter(content: string): { data: Record<string, unknown>; con
     let value: unknown = line.slice(colonIndex + 1).trim();
 
     if (typeof value === 'string' && value.startsWith('[') && value.endsWith(']')) {
-      value = value.slice(1, -1).split(',').map(item => item.trim().replace(/^["']|["']$/g, ''));
+      value = value.slice(1, -1).split(',').map(item => item.trim().replace(/^["'']|["'']$/g, ''));
     }
     else if (value === 'true') value = true;
     else if (value === 'false') value = false;
@@ -57,7 +57,7 @@ export interface Post extends PostFrontmatter {
   authorImage?: string;
 }
 
-// PERF: Load markdown files lazily — not bundled into main chunk
+// PERF: Load markdown files lazily â€” not bundled into main chunk
 const postFiles = import.meta.glob('/content/posts/*.md', { 
   query: '?raw',
   import: 'default',
@@ -123,7 +123,7 @@ export function getAllPosts(): Post[] {
       const category = normalizeCategory(frontmatter.category || 'News');
       const date = frontmatter.date || new Date().toISOString().split('T')[0];
 
-      // PERF: Defer HTML parsing — only parse when needed (in ArticlePage)
+      // PERF: Defer HTML parsing â€” only parse when needed (in ArticlePage)
       let _htmlContent: string | null = null;
 
       posts.push({
@@ -173,6 +173,11 @@ export function getFeaturedPosts(): Post[] {
 export function getLatestPosts(limit?: number): Post[] {
   const posts = getAllPosts();
   return limit ? posts.slice(0, limit) : posts;
+}
+
+// â”€â”€â”€ ADDED: Returns all slugs for pre-rendering at build time â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+export function getAllPostSlugs(): string[] {
+  return getAllPosts().map(post => post.slug);
 }
 
 export function getTodaysTopStory(): Post | undefined {
