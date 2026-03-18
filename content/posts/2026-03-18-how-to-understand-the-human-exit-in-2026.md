@@ -1,5 +1,5 @@
 ---
-title: "How To Understand The Human Exit In 2026"
+title: "What Happens When You Die:How To Understand The Human Exit In 2026"
 date: 2026-03-18T18:37:57Z
 slug: how-to-understand-the-human-exit-in-2026
 author: za-ndani
