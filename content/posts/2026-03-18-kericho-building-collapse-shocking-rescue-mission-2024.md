@@ -1,0 +1,25 @@
+---
+title: "Kericho Building Collapse: Shocking Rescue Mission 2024"
+slug: "kericho-building-collapse-shocking-rescue-mission-2024"
+author: "Celestine Nzioka"
+image: "https://i.ibb.co/Kx2bZ1xP/c0e44e95b033.jpg"
+category: "Politics"
+date: "2026-03-18T15:23:30Z"
+---
+## Kenya's Recurring Construction Catastrophes
+
+The immediate aftermath of a building collapse in Kericho today, March 18, highlights Kenya's persistent challenges with structural integrity and regulatory enforcement. This incident, alongside others this year, points to a systemic governance failure requiring urgent, robust political action to safeguard lives and ensure accountability within the construction sector.
+
+### A Crisis of Oversight and Compliance
+
+On Wednesday, March 18, a building under construction in Kericho's Kaptebeswet area, Kipchebor Ward, collapsed, leaving several workers unaccounted for. The Kericho County Government has dispatched emergency response teams, including firefighters, ambulances, and heavy machinery, to the scene. The Kenya Red Cross confirmed four individuals were successfully rescued from the rubble. Images from the site reveal a concrete slab that caved in, exposing damaged reinforcement bars and unstable wooden formwork.
+
+This incident is not isolated. On the same day, four people died after a partially demolished building collapsed in Shauri Moyo, Nairobi, necessitating Kenya Defence Forces deployment for rescue operations. Earlier, on January 2, at least two individuals were feared dead after another multi-storey building under construction collapsed in Nairobi's South C estate. These tragedies underscore a disturbing pattern of construction failures across the nation.
+
+### The Blame on Rogue Developers and Weak Regulation
+
+The Engineers Board of Kenya (EBK) directly attributes the surge in collapsed buildings to rogue developers, poor construction practices, and a critical absence of involvement from registered, professional engineers. Key issues identified include developers circumventing regulations, employing unlicensed personnel over qualified professionals, and neglecting structural standards. This environment is often fostered by weak regulatory oversight, creating loopholes that compromise public safety.
+
+A joint statement from over 10 engineering bodies in Kenya revealed a staggering statistic: more than 200 buildings have collapsed across the country since 1996. These bodies warned that a prevailing "culture of impunity" has transformed these failures into a recurring national tragedy. Such pervasive disregard for established norms in critical sectors highlights a broader issue of accountability within public life and governance, reflecting concerns articulated in discussions surrounding whether "Devolution Was Never Meant to Be a Feeding Trough: A Crisis of Credibility."
+
+Cabinet Secretary Alice Wahome of the Ministry of Lands and Public Works has issued a stern warning, stating that developers, contractors, and officials found complicit in approving improper structures will face the "burden of punishment". While such pronouncements signal a recognition of the problem at the highest levels, effective enforcement and consistent prosecution remain critical to dismantle the cycle of negligence that continues to claim lives. The unfolding events in Kericho serve as a stark reminder of the urgent need for comprehensive reforms and stringent adherence to building codes and professional ethics across the entire construction value chain.
