@@ -1,6 +1,8 @@
 {
   "buildCommand": "npm run vercel-build",
   "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
     { "source": "/deindex-tags-sitemap.xml", "destination": "/deindex-tags-sitemap.xml" },
