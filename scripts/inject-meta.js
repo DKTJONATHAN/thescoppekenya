@@ -16,41 +16,54 @@ if (!fs.existsSync(indexHtmlPath)) {
 
 const baseHtml = fs.readFileSync(indexHtmlPath, 'utf-8');
 
-// Ensure dist/article directory exists
 const articleDistDir = path.join(distDir, 'article');
 if (!fs.existsSync(articleDistDir)) {
   fs.mkdirSync(articleDistDir, { recursive: true });
 }
 
-// Read all posts
 const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.md'));
 
 files.forEach(file => {
   const content = fs.readFileSync(path.join(postsDir, file), 'utf-8');
 
   // Extract frontmatter
-  const titleMatch = content.match(/^title:\s*(.+)$/m);
-  const descMatch = content.match(/^excerpt:\s*(.+)$/m);
-  const imageMatch = content.match(/^image:\s*(.+)$/m);
-  const slugMatch = content.match(/^slug:\s*(.+)$/m);
+  const titleMatch = content.match(/^title:\s*(.+)$/im);
+  const descMatch = content.match(/^(?:excerpt|description):\s*(.+)$/im);
+  const imageMatch = content.match(/^image:\s*(.+)$/im);
+  const slugMatch = content.match(/^slug:\s*(.+)$/im);
 
-  let title = titleMatch ? titleMatch[1].replace(/^["']|["']$/g, '').trim() : 'Za Ndani';
-  let desc = descMatch ? descMatch[1].replace(/^["']|["']$/g, '').trim() : 'Breaking Kenyan news and gossip.';
-  let image = imageMatch ? imageMatch[1].replace(/^["']|["']$/g, '').trim() : 'https://zandani.co.ke/images/default-og.jpg';
-  const slug = slugMatch ? slugMatch[1].replace(/^["']|["']$/g, '').trim() : file.replace('.md', '');
+  let title = titleMatch ? titleMatch[1].trim().replace(/^["']|["']$/g, '').trim() : 'Za Ndani';
+  let image = imageMatch ? imageMatch[1].trim().replace(/^["']|["']$/g, '').trim() : 'https://zandani.co.ke/images/default-og.jpg';
+  const slug = slugMatch ? slugMatch[1].trim().replace(/^["']|["']$/g, '').trim() : file.replace('.md', '');
 
-  // Escape special characters for HTML to prevent rendering issues
+  let desc = '';
+  if (descMatch) {
+    desc = descMatch[1].trim().replace(/^["']|["']$/g, '').trim();
+  } else {
+    // Ultimate fallback: generate description from the markdown body
+    const body = content.replace(/^---[\s\S]*?---/, '').trim();
+    // Strip markdown characters and URLs
+    let plainText = body
+      .replace(/[#*`_\[\]()]/g, '')
+      .replace(/http[^\s]+/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    desc = plainText.substring(0, 160);
+    if (plainText.length > 160) desc += '...';
+    if (!desc) desc = 'Breaking Kenyan news and gossip.';
+  }
+
+  // Escape special characters for HTML
   title = title.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   desc = desc.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-  // Format absolute image URL through proxy for OG
   if (image.startsWith('/')) {
     image = `https://zandani.co.ke${image}`;
   } else if (image && image !== 'https://zandani.co.ke/images/default-og.jpg') {
     image = `https://wsrv.nl/?url=${encodeURIComponent(image.replace(/^https?:\/\//, ''))}&w=1200&h=630&fit=cover&output=webp&q=85`;
   }
 
-  // Inject meta tags into the head
   const metaTags = `
     <title>${title} | Za Ndani</title>
     <meta name="description" content="${desc}">
@@ -65,18 +78,13 @@ files.forEach(file => {
     <meta name="twitter:image" content="${image}">
   `;
 
-  // 1. Remove existing title
   let postHtml = baseHtml.replace(/<title>.*?<\/title>/ig, '');
-
-  // 2. Remove ANY existing meta tags for description, og:, or twitter:
   postHtml = postHtml.replace(/<meta[^>]*name=["']description["'][^>]*>/ig, '');
   postHtml = postHtml.replace(/<meta[^>]*property=["']og:[^>]*>/ig, '');
   postHtml = postHtml.replace(/<meta[^>]*name=["']twitter:[^>]*>/ig, '');
 
-  // 3. Inject the specific post meta tags right after <head>
   postHtml = postHtml.replace(/<head>/i, `<head>\n${metaTags}`);
 
-  // Save the specific HTML file
   const postDir = path.join(articleDistDir, slug);
   if (!fs.existsSync(postDir)) {
     fs.mkdirSync(postDir, { recursive: true });
