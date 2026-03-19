@@ -9,26 +9,7 @@
     "build:dev": "vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives",
     "preview": "vite preview",
-    "vercel-build": "node scripts/generate-llms-txt.js && node scripts/generate-rss.js && node scripts/submit-new-posts.js && node scripts/generate-sitemap.js && vite build && npx react-snap && node tagsitemap.js"
-  },
-  "reactSnap": {
-    "source": "dist",
-    "include": [
-      "/",
-      "/about",
-      "/contact",
-      "/privacy",
-      "/terms",
-      "/sports",
-      "/category/news",
-      "/category/entertainment",
-      "/category/gossip",
-      "/category/sports",
-      "/category/business",
-      "/category/lifestyle"
-    ],
-    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
-    "inlineCss": false
+    "vercel-build": "node scripts/generate-llms-txt.js && node scripts/generate-rss.js && node scripts/submit-new-posts.js && node scripts/generate-sitemap.js && vite build && node scripts/inject-meta.js && node tagsitemap.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -97,7 +78,6 @@
     "eslint-plugin-react-refresh": "^0.4.11",
     "globals": "^15.9.0",
     "postcss": "^8.4.47",
-    "react-snap": "^1.23.0",
     "tailwindcss": "^3.4.11",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.3.0",
