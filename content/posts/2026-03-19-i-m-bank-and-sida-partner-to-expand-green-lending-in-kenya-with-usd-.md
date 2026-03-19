@@ -1,0 +1,23 @@
+---
+title: "I&M Bank and Sida partner to expand green lending in Kenya with USD 30 million agreement"
+slug: "i-m-bank-and-sida-partner-to-expand-green-lending-in-kenya-with-usd-"
+author: "Grace Mkamburi"
+image: "https://i.ibb.co/rNTs4qh/468a0e678797.jpg"
+category: "Business"
+date: "2026-03-19T10:26:03Z"
+---
+## I&M Bank Secures $30M Green Finance for Kenyan Businesses
+
+I&M Bank Limited has formalized a $30 million Green Finance Risk-Sharing Guarantee partnership with the Swedish International Development Cooperation Agency (Sida). This strategic collaboration will significantly expand the bank's capacity to finance sustainable and climate-aligned projects across Kenya, channeling crucial capital into the nation's green transition sectors.
+
+### Catalyzing Green Transition Investments
+
+The partnership, formalized on March 18, 2026, involves a $15 million guarantee from Sida, structured with an eight-year coverage and a 50 percent risk-sharing mechanism. This arrangement empowers I&M Bank to substantially increase its green transition lending portfolio, supporting businesses operating in eligible green sectors. Shameer Patel, Director, Retail & Business Banking at I&M Bank, highlighted that this initiative moves beyond mere sustainability commitments, backing them with real capital, an international partner, and a rigorous framework aligned with Kenya's regulatory architecture. The facility aims to support sectors vital for Kenya's green transition, including renewable energy, energy efficiency, clean transportation, and green building renovations.
+
+### Strategic Framework and Sectoral Focus
+
+I&M Bank’s collaboration with Sida is integral to its Green Finance agenda and directly supports the iMara 3.0 I&M Group Sustainability Strategy. The initiative reinforces the bank’s commitment to advancing sustainable finance by increasing capital flow into areas that bolster climate resilience, foster low-carbon growth, and create long-term economic value. The facility will specifically target lending for eco-efficient products and processes, sustainable water and wastewater management, and sustainable management of natural resources and land use. Marie Ottosson, Head of Development Cooperation at the Embassy of Sweden in Kenya, emphasized that the Sida Green Transition Guarantee reduces financial risk for I&M Bank, mobilizing private capital for projects that align with Kenya’s Nationally Determined Contributions (NDCs) under the Paris Agreement.
+
+### Reinforcing Kenya's Green Finance Landscape
+
+In structuring loans under this partnership, I&M Bank will voluntarily apply the Green Loan Principles developed by the International Capital Market Association. These principles encompass standards for the use of proceeds, project evaluation and selection, management of proceeds, and reporting. This adherence ensures transparency and accountability in the allocation of green capital. The partnership emerges at a pivotal moment when green finance is gaining increasing importance within Kenya’s financial sector, supported by the Kenya Green Finance Taxonomy which provides a national reference for identifying climate-aligned activities. This framework improves transparency and aids in more consistent green capital allocation, which is critical as the market evolves. The expansion of green lending capacity by I&M Bank, a leading Tier 1 commercial bank, solidifies its role in supporting clients investing in sectors shaping Kenya’s sustainable future. This strategic move could be viewed in the broader context of how businesses are leveraging technological advancements, much like how Google Maps adds AI-powered search and 3D navigation features to enhance user experience.
