@@ -2,9 +2,9 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import fs from "fs";
+import vitePrerender from "vite-plugin-prerender";
 
-// â”€â”€â”€ Read article slugs from markdown frontmatter at build time â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-// Uses Node.js fs (not import.meta.glob) so it works in vite config context
+// ─── Read article slugs from markdown frontmatter at build time ───────────────
 function getArticleRoutes(): string[] {
   const postsDir = path.resolve(__dirname, "content/posts");
   if (!fs.existsSync(postsDir)) return [];
@@ -13,18 +13,15 @@ function getArticleRoutes(): string[] {
     .filter((f) => f.endsWith(".md"))
     .map((f) => {
       const content = fs.readFileSync(path.join(postsDir, f), "utf-8");
-      // Try to pull slug from frontmatter, fall back to filename
       const slugMatch = content.match(/^slug:\s*(.+)$/m);
       const slug = slugMatch
-        ? slugMatch[1].trim().replace(/^["\'']|["\'']$/g, "")
+        ? slugMatch[1].trim().replace(/^["']|["']$/g, "")
         : f.replace(".md", "");
       return `/article/${slug}`;
     });
 }
 
-export default defineConfig(async ({ mode }) => {
-  const { vitePrerender } = await import("vite-prerender-plugin");
-
+export default defineConfig(({ mode }) => {
   const articleRoutes = getArticleRoutes();
 
   const allRoutes = [
@@ -48,7 +45,6 @@ export default defineConfig(async ({ mode }) => {
       host: "::",
       port: 8080,
       proxy: {
-        // Forwards /api/* to your live Vercel deployment during local dev
         "/api": {
           target: "https://zandani.co.ke",
           changeOrigin: true,
@@ -58,14 +54,18 @@ export default defineConfig(async ({ mode }) => {
     },
     plugins: [
       react(),
-      // â”€â”€ Pre-render all routes at build time so crawlers see full HTML â”€â”€
-      // This bakes og:image, meta description, and schema into each page's HTML
+      // ── Pre-render all routes at build time so crawlers see full HTML ──
       vitePrerender({
+        // Directory to output the prerendered files (must match Vite's outDir)
+        staticDir: path.join(__dirname, "dist"),
+        // Array of routes to prerender
         routes: allRoutes,
-        // Inject prerendered HTML into the entry point
-        renderTarget: "#root",
-        // Ensure Helmet tags are in the final HTML
-        injectHead: true,
+        // Wait for React to finish rendering and Helmet to inject tags
+        postProcess(renderedRoute) {
+          // You can modify the HTML here if needed, but the default 
+          // usually captures react-helmet-async perfectly.
+          return renderedRoute;
+        },
       }),
     ],
     resolve: {
