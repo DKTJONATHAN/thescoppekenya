@@ -34,10 +34,14 @@ files.forEach(file => {
   const imageMatch = content.match(/^image:\s*(.+)$/m);
   const slugMatch = content.match(/^slug:\s*(.+)$/m);
 
-  const title = titleMatch ? titleMatch[1].replace(/^["']|["']$/g, '').trim() : 'Za Ndani';
-  const desc = descMatch ? descMatch[1].replace(/^["']|["']$/g, '').trim() : 'Breaking Kenyan news and gossip.';
+  let title = titleMatch ? titleMatch[1].replace(/^["']|["']$/g, '').trim() : 'Za Ndani';
+  let desc = descMatch ? descMatch[1].replace(/^["']|["']$/g, '').trim() : 'Breaking Kenyan news and gossip.';
   let image = imageMatch ? imageMatch[1].replace(/^["']|["']$/g, '').trim() : 'https://zandani.co.ke/images/default-og.jpg';
   const slug = slugMatch ? slugMatch[1].replace(/^["']|["']$/g, '').trim() : file.replace('.md', '');
+
+  // Escape special characters for HTML to prevent rendering issues
+  title = title.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  desc = desc.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
   // Format absolute image URL through proxy for OG
   if (image.startsWith('/')) {
@@ -61,8 +65,15 @@ files.forEach(file => {
     <meta name="twitter:image" content="${image}">
   `;
 
-  // Replace default title/meta with specific post meta
-  let postHtml = baseHtml.replace(/<title>.*?<\/title>/i, '');
+  // 1. Remove existing title
+  let postHtml = baseHtml.replace(/<title>.*?<\/title>/ig, '');
+
+  // 2. Remove ANY existing meta tags for description, og:, or twitter:
+  postHtml = postHtml.replace(/<meta[^>]*name=["']description["'][^>]*>/ig, '');
+  postHtml = postHtml.replace(/<meta[^>]*property=["']og:[^>]*>/ig, '');
+  postHtml = postHtml.replace(/<meta[^>]*name=["']twitter:[^>]*>/ig, '');
+
+  // 3. Inject the specific post meta tags right after <head>
   postHtml = postHtml.replace(/<head>/i, `<head>\n${metaTags}`);
 
   // Save the specific HTML file
