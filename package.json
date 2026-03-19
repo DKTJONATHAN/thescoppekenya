@@ -12,6 +12,7 @@
     "vercel-build": "node scripts/generate-llms-txt.js && node scripts/generate-rss.js && node scripts/submit-new-posts.js && node scripts/generate-sitemap.js && vite build && npx react-snap && node tagsitemap.js"
   },
   "reactSnap": {
+    "source": "dist",
     "include": [
       "/",
       "/about",
