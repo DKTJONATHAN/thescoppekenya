@@ -13,6 +13,7 @@ function getArticleRoutes(): string[] {
     .filter((f) => f.endsWith(".md"))
     .map((f) => {
       const content = fs.readFileSync(path.join(postsDir, f), "utf-8");
+      // Try to pull slug from frontmatter, fall back to filename
       const slugMatch = content.match(/^slug:\s*(.+)$/m);
       const slug = slugMatch
         ? slugMatch[1].trim().replace(/^["']|["']$/g, "")
@@ -56,16 +57,8 @@ export default defineConfig(({ mode }) => {
       react(),
       // ── Pre-render all routes at build time so crawlers see full HTML ──
       vitePrerender({
-        // Directory to output the prerendered files (must match Vite's outDir)
         staticDir: path.join(__dirname, "dist"),
-        // Array of routes to prerender
         routes: allRoutes,
-        // Wait for React to finish rendering and Helmet to inject tags
-        postProcess(renderedRoute) {
-          // You can modify the HTML here if needed, but the default 
-          // usually captures react-helmet-async perfectly.
-          return renderedRoute;
-        },
       }),
     ],
     resolve: {
