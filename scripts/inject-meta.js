@@ -27,7 +27,7 @@ const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.md'));
 
 files.forEach(file => {
   const content = fs.readFileSync(path.join(postsDir, file), 'utf-8');
-  
+
   // Extract frontmatter
   const titleMatch = content.match(/^title:\s*(.+)$/m);
   const descMatch = content.match(/^excerpt:\s*(.+)$/m);
@@ -70,9 +70,8 @@ files.forEach(file => {
   if (!fs.existsSync(postDir)) {
     fs.mkdirSync(postDir, { recursive: true });
   }
-  
+
   fs.writeFileSync(path.join(postDir, 'index.html'), postHtml);
-  console.log(`Generated meta tags for /article/${slug}`);
 });
 
-console.log("Successfully injected all SEO meta tags!");
+console.log(`Successfully generated SEO meta tags for ${files.length} articles!`);
