@@ -10,11 +10,7 @@
     { "source": "/rss.xml", "destination": "/rss.xml" },
     { "source": "/robots.txt", "destination": "/robots.txt" },
     { "source": "/sitemap", "destination": "/index.html" },
-
-    { "source": "/category/:slug", "destination": "/category/:slug/index.html" },
-    { "source": "/tag/:slug", "destination": "/tag/:slug/index.html" },
-
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+    { "source": "/:path*", "destination": "/index.html" }
   ],
   "headers": [
     {
