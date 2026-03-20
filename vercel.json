@@ -9,8 +9,8 @@
     { "source": "/llms.txt", "destination": "/llms.txt" },
     { "source": "/rss.xml", "destination": "/rss.xml" },
     { "source": "/robots.txt", "destination": "/robots.txt" },
-    { "source": "/sitemap", "destination": "/index.html" },
-    { "source": "/:path*", "destination": "/index.html" }
+    { "source": "/sitemap", "destination": "/index" },
+    { "source": "/:path*", "destination": "/index" }
   ],
   "headers": [
     {
