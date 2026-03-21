@@ -1,0 +1,25 @@
+---
+title: "Airlines consider fare increases as Middle East conflict disrupts fuel supply"
+slug: "airlines-consider-fare-increases-as-middle-east-conflict-disrupts-fu"
+description: "Airlines in Kenya consider fare increases for domestic and international flights as Middle East tensions disrupt global fuel supply and raise costs."
+author: "Celestine Nzioka"
+author_url: "https://zandani.co.ke/author/celestine-nzioka"
+image: "https://i.ibb.co/S730hhVV/bc9672489dd3.webp"
+category: "News"
+tags: ["airline-fare-increases", "middle-east-conflict-impact", "kenyan-aviation-sector", "jet-fuel-prices", "aviation-economics"]
+canonical: "https://zandani.co.ke/article/airlines-consider-fare-increases-as-middle-east-conflict-disrupts-fu"
+date: "2026-03-21T09:47:57Z"
+---
+Airlines operating to and from Kenya are contemplating fare increases for both international and domestic flights as global fuel supply disruptions, stemming from escalating Middle East tensions, impact the transport sector. This development on Saturday, March 21, 2026, signals potential widespread operational shifts.
+
+## Rising Jet Fuel Costs Strain Aviation
+
+Reports on Saturday, March 21, indicate that airlines operating in and out of the country are already grappling with rapidly rising jet fuel and kerosene prices. This surge is driven by escalating tensions in the Middle East, which have blocked key supply routes along the Strait of Hormuz and tightened global availability. Industry players, including Consultancy CITAC, describe an unpredictable situation where fuel prices shift sharply within hours, complicating flight planning and forcing operators to reconsider pricing and routes. Jannie de Klerk, executive director of flight operations at South Africa’s National Airways Corporation, stated that operators now "fly to airports across Southern, West, and East Africa and you negotiate prices on arrival". The impact is particularly severe for Kenya and other African carriers, where jet fuel accounts for a larger share of operating costs compared to global averages, leaving airlines exposed to sudden price spikes.
+
+### Regional Impact and Stock Levels
+
+Jomo Kenyatta International Airport (JKIA) serves as a major fueling hub for both international and local flights, with demand often reaching millions of litres per month. The airport handles approximately 9,300 total aircraft movements monthly, comprising around 4,600 to 4,700 landings, with a high volume of these aircraft fueling at the primary regional aviation center. Globally, jet fuel prices have surged to near-record highs in key markets, pushing up operational costs and raising the likelihood of increased airfares and additional surcharges for passengers. Fuel stocks across parts of Africa are thinning, with Kenya reportedly holding reserves for roughly 50 days as of March 10, 2026, placing pressure on the government and industry players to secure alternative supplies.
+
+### Alternative Fuel Procurement Challenges
+
+The continent’s limited refining capacity exacerbates the situation, which has since forced Kenya to begin scouting for alternatives to meet domestic demand. On Friday, it emerged that Kenya and other African nations are now turning to Nigerian billionaire Aliko Dangote for fuel as traditional supply chains come under strain. Dangote’s refinery has emerged as a key fallback option, but its capacity is limited, producing about 650,000 barrels per day. Most of this production is reserved for Nigeria’s domestic market, leaving only a fraction available for export and restricting its widespread efficacy. The scramble comes as concerns mount locally, with reports indicating that motorists could soon struggle to access fuel due to emerging supply constraints. Early signs are visible, with some fuel stations reporting stockouts and suppliers beginning to ration petrol and diesel, mainly in rural areas. This broader economic pressure aligns with calls from manufacturers for the suspension of a standards levy, citing potential job losses.
