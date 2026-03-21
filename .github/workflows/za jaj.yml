@@ -2,7 +2,7 @@ name: Opinionated Columnist
 
 on:
   schedule:
-    - cron: '0 6,14,22 * * *'  # Runs 3 times a day at 06:00, 14:00, and 22:00 UTC
+    - cron: '0 6,14,22 * * *'  # 3x daily: 06:00, 14:00, 22:00 UTC
   workflow_dispatch:
     inputs:
       max_articles:
@@ -160,7 +160,7 @@ jobs:
                   result  = {}
                   for line in fm_text.splitlines():
                       # Handle quoted and unquoted values
-                      m = re.match(r'(\w+):\s*["']?(.*?)["']?\s*$', line)
+                      m = re.match(r'(\w+):\s*["\']?(.*?)["\']?\s*$', line)
                       if m:
                           result[m.group(1).lower()] = m.group(2).strip().strip('"').strip("'")
                   body_start    = raw.find("---", 3) + 3
@@ -256,7 +256,7 @@ jobs:
                   try:
                       with open(os.path.join(POSTS_DIR, fn), "r", encoding="utf-8") as cf:
                           txt = cf.read()
-                      t_m = re.search(r'title:\s*["']?(.*?)["']?\s*$', txt, re.MULTILINE)
+                      t_m = re.search(r'title:\s*["\']?(.*?)["\']?\s*$', txt, re.MULTILINE)
                       t   = t_m.group(1).strip().strip('"') if t_m else fn.replace(".md", "")
                       internal_link_lines.append(
                           f"- Title: {t} | Link: {SITE_BASE_URL}/article/{fn.replace('.md','')}"
@@ -347,11 +347,9 @@ jobs:
               body   = body_m.group(1).strip() if body_m else raw
 
               for field in ["TITLE", "SLUG", "EXCERPT", "TAGS", "BODY"]:
-                  body = re.sub(rf"^{field}:.*
-?", "", body, flags=re.MULTILINE | re.IGNORECASE).strip()
-              body = re.sub(r"^(?:\*\*)?(?:By|Author|Opinion by|From The Editor):?.*?
-+", "", body, flags=re.IGNORECASE).strip()
-              body = body.replace("—", "-").replace("–", "-")
+                  body = re.sub(rf"^{field}:.*\n?", "", body, flags=re.MULTILINE | re.IGNORECASE).strip()
+              body = re.sub(r"^(?:\*\*)?(?:By|Author|Opinion by|From The Editor):?.*?\n+", "", body, flags=re.IGNORECASE).strip()
+              body = body.replace("\u2014", "-").replace("\u2013", "-")
 
               if not parsed_slug and parsed_title:
                   parsed_slug = re.sub(r"[^a-z0-9]+", "-", parsed_title.lower()).strip("-")[:70]
@@ -397,8 +395,7 @@ jobs:
               os.makedirs(POSTS_DIR, exist_ok=True)
               filename = f"{today_str}-{slug}.md"
               with open(os.path.join(POSTS_DIR, filename), "w", encoding="utf-8") as f:
-                  f.write("
-".join(lines))
+                  f.write("\n".join(lines))
 
               print(f"  Saved    : {filename}")
               print(f"  Author   : {COLUMNIST_NAME}")
@@ -425,8 +422,7 @@ jobs:
               sys.exit(0)
 
           for source in picks:
-              print(f"
---- Opinion on: {source['title']} ---")
+              print(f"\n--- Opinion on: {source['title']} ---")
               print(f"    Image   : {source['image'][:70]}")
 
               # Step 1: research longtail keywords for this topic
@@ -458,8 +454,7 @@ jobs:
           with open(MEMORY_FILE, "w") as f:
               json.dump(memory, f, indent=2)
 
-          print(f"
-{'=' * 40}")
+          print(f"\n{'=' * 40}")
           print(f"Done. {articles_written} opinion pieces written.")
           print(f"{'=' * 40}")
           PYEOF
