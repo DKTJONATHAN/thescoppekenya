@@ -78,7 +78,6 @@ jobs:
           MAX_ARTICLES    = int(os.environ.get("MAX_ARTICLES", "1"))
           SOURCE_CATEGORY = os.environ.get("SOURCE_CATEGORY", "").strip().lower()
 
-          # Fixed author for all opinion pieces
           COLUMNIST_NAME  = "From The Editor"
           COLUMNIST_SLUG  = "from-the-editor"
           COLUMNIST_VOICE = (
@@ -159,7 +158,6 @@ jobs:
                   fm_text = fm_match.group(1)
                   result  = {}
                   for line in fm_text.splitlines():
-                      # Handle quoted and unquoted values
                       m = re.match(r'(\w+):\s*["\']?(.*?)["\']?\s*$', line)
                       if m:
                           result[m.group(1).lower()] = m.group(2).strip().strip('"').strip("'")
@@ -170,13 +168,13 @@ jobs:
                   print(f"  Parse error {filepath}: {e}")
                   return {}
 
-          # ── Load all source articles (exclude opinions category) ──────────
+          # ── Load all source articles (exclude opinions) ───────────────────
           def load_source_articles() -> list:
               if not os.path.exists(POSTS_DIR):
                   print(f"Posts directory '{POSTS_DIR}' not found.")
                   return []
               sources = []
-              for fn in sorted(os.listdir(POSTS_DIR), reverse=True):  # newest first
+              for fn in sorted(os.listdir(POSTS_DIR), reverse=True):
                   if not fn.endswith(".md"):
                       continue
                   fp   = os.path.join(POSTS_DIR, fn)
@@ -184,24 +182,20 @@ jobs:
                   if not meta:
                       continue
                   cat = meta.get("category", "").lower().strip()
-                  # HARD BLOCK: never use opinions posts as source material
                   if cat in ("opinions", "opinion"):
                       continue
-                  # Optional category filter from workflow_dispatch input
                   if SOURCE_CATEGORY and cat != SOURCE_CATEGORY:
                       continue
-                  # Extract image from original post — reuse it, no new fetch needed
                   original_image = meta.get("image", "").strip().strip('"').strip("'")
                   if not original_image:
                       original_image = FALLBACK_IMAGE
-
                   sources.append({
                       "file":     fn,
                       "slug":     meta.get("slug", fn.replace(".md", "")).strip().strip('"'),
                       "title":    meta.get("title", fn).strip().strip('"'),
                       "category": cat,
                       "tags":     meta.get("tags", ""),
-                      "image":    original_image,   # reuse original post image directly
+                      "image":    original_image,
                       "body":     meta.get("body", "")[:3000],
                   })
               print(f"Loaded {len(sources)} source articles (opinions excluded)")
@@ -213,10 +207,9 @@ jobs:
                   s for s in sources
                   if hashlib.md5(s["slug"].encode()).hexdigest() not in memory
               ]
-              # Keep newest-first order (already sorted above), take top N
               return unchosen[:count]
 
-          # ── Research longtail keywords for the topic ──────────────────────
+          # ── Research longtail keywords ─────────────────────────────────────
           def research_longtail_keywords(title: str, category: str) -> str:
               prompt = (
                   f'Search Google right now for the topic: "{title}"\n'
@@ -231,7 +224,6 @@ jobs:
               )
               try:
                   raw = gemini_generate(prompt, temperature=0.3).strip()
-                  # Clean up any numbered lists or bullet points
                   raw = re.sub(r'^[\d\.\-\*]+\s*', "", raw, flags=re.MULTILINE)
                   keywords = [k.strip().lower() for k in re.split(r'[,\n]', raw) if k.strip()]
                   result   = ", ".join(keywords[:6])
@@ -241,6 +233,21 @@ jobs:
                   print(f"  Keyword research failed: {e}")
                   return title.lower()
 
+          # ── Robust field extractor ────────────────────────────────────────
+          # Gemini with google_search often prepends reasoning/search text before
+          # the structured block. We search the ENTIRE output, not just line-start.
+          def pf(label: str, text: str) -> str:
+              # 1. Try anchored to line start (ideal case)
+              m = re.search(rf"^{label}:\s*(.+)$", text, re.MULTILINE | re.IGNORECASE)
+              if m:
+                  val = m.group(1).strip()
+                  # reject if it looks like it picked up a continuation line
+                  if len(val) > 2:
+                      return val
+              # 2. Fallback: find label anywhere in text
+              m = re.search(rf"{label}:\s*(.+?)(?:\n|$)", text, re.IGNORECASE)
+              return m.group(1).strip() if m else ""
+
           # ── Write the opinion piece ───────────────────────────────────────
           def write_opinion(source: dict, longtail_keywords: str) -> dict:
               src_title = source["title"]
@@ -248,7 +255,6 @@ jobs:
               src_body  = source["body"]
               src_cat   = source["category"]
 
-              # Pick 3 random other posts for optional internal links
               all_files = [f for f in os.listdir(POSTS_DIR) if f.endswith(".md")]
               sample    = random.sample(all_files, min(len(all_files), 3))
               internal_link_lines = []
@@ -321,38 +327,87 @@ jobs:
                   "   At least 2 ### subheadings must contain a longtail keyword.\n"
                   "4. Mandatory source link naturally embedded mid-body.\n"
                   "5. Final paragraph: forceful verdict on what SHOULD happen next.\n\n"
-                  "STRICT OUTPUT FORMAT (no code fences, nothing outside this block):\n"
+                  "CRITICAL OUTPUT RULES:\n"
+                  "- Output NOTHING before TITLE:\n"
+                  "- No preamble, no 'Here is the article', no markdown code fences\n"
+                  "- Do NOT wrap output in ``` or ```markdown\n"
+                  "- Do NOT add --- frontmatter delimiters anywhere\n"
+                  "- Start your response with exactly: TITLE:\n\n"
+                  "STRICT OUTPUT FORMAT:\n"
                   "TITLE: [opinionated headline with longtail keyword, under 65 chars]\n"
                   "SLUG: [lowercase-hyphen-slug]\n"
                   "EXCERPT: [140-155 chars — states your verdict boldly, includes a longtail keyword]\n"
                   "TAGS: [comma, separated, lowercase — include the longtail keyword phrases as tags]\n"
                   "BODY:\n"
-                  "[Full opinion piece. No title. No author name. No byline. Just the article.]\n"
+                  "[Full opinion piece. No title. No author name. No byline. Just the article body.]\n"
               )
 
               raw = gemini_generate(prompt, temperature=0.95)
-              raw = re.sub(r'^```(?:markdown|text)?\n?', "", raw, flags=re.IGNORECASE)
-              raw = re.sub(r'\n?```$', "", raw).strip()
 
-              def pf(label, text):
-                  m = re.search(rf"^{label}:\s*(.+)$", text, re.MULTILINE | re.IGNORECASE)
-                  return m.group(1).strip() if m else ""
+              # ── Strip any wrapping code fences ────────────────────────────
+              raw = re.sub(r'^```[a-zA-Z]*\n?', "", raw, flags=re.IGNORECASE).strip()
+              raw = re.sub(r'\n?```\s*$', "", raw).strip()
+
+              # ── Strip any accidental leading frontmatter block ─────────────
+              raw = re.sub(r'^---\s*\n.*?\n---\s*\n', "", raw, flags=re.DOTALL).strip()
+
+              # ── If Gemini put preamble before TITLE:, skip to TITLE: ───────
+              title_pos = re.search(r'^TITLE:', raw, re.MULTILINE | re.IGNORECASE)
+              if title_pos:
+                  raw = raw[title_pos.start():]
 
               parsed_title   = pf("TITLE",   raw)
               parsed_slug    = pf("SLUG",    raw)
               parsed_excerpt = pf("EXCERPT", raw)
               parsed_tags    = pf("TAGS",    raw)
 
-              body_m = re.search(r"BODY:\s*\n([\s\S]+)", raw, re.IGNORECASE)
+              # ── Extract body ───────────────────────────────────────────────
+              body_m = re.search(r"^BODY:\s*\n([\s\S]+)", raw, re.MULTILINE | re.IGNORECASE)
               body   = body_m.group(1).strip() if body_m else raw
 
+              # ── Clean any leaked field labels out of body ──────────────────
               for field in ["TITLE", "SLUG", "EXCERPT", "TAGS", "BODY"]:
                   body = re.sub(rf"^{field}:.*\n?", "", body, flags=re.MULTILINE | re.IGNORECASE).strip()
-              body = re.sub(r"^(?:\*\*)?(?:By|Author|Opinion by|From The Editor):?.*?\n+", "", body, flags=re.IGNORECASE).strip()
-              body = body.replace("\u2014", "-").replace("\u2013", "-")
 
-              if not parsed_slug and parsed_title:
+              # ── Strip any accidental frontmatter block at top of body ──────
+              body = re.sub(r'^---\s*\n.*?\n---\s*\n?', "", body, flags=re.DOTALL).strip()
+
+              # ── Strip byline at top of body ────────────────────────────────
+              body = re.sub(r'^(?:\*\*)?(?:By|Author|Opinion by|From The Editor):?[^\n]*\n+', "", body, flags=re.IGNORECASE).strip()
+
+              # ── Scrub em/en dashes from ALL fields ──────────────────────────
+              # Use chr() — encoding-agnostic, works in any heredoc context
+              _DASHES = [chr(0x2014), chr(0x2013), chr(0x2012), chr(0x2015),
+                         chr(0x2011), chr(0x2010), chr(0x2212), chr(0xFE58)]
+              def scrub_dashes(s):
+                  for d in _DASHES:
+                      s = s.replace(d, "-")
+                  return s
+              body           = scrub_dashes(body)
+              parsed_title   = scrub_dashes(parsed_title)
+              parsed_excerpt = scrub_dashes(parsed_excerpt)
+              parsed_tags    = scrub_dashes(parsed_tags)
+
+              # ── Hard fallbacks so we never write empty fields ──────────────
+              if not parsed_title:
+                  parsed_title = src_title + " - Opinion"
+                  print(f"  WARNING: TITLE empty, using fallback: {parsed_title}")
+
+              if not parsed_slug:
                   parsed_slug = re.sub(r"[^a-z0-9]+", "-", parsed_title.lower()).strip("-")[:70]
+                  print(f"  WARNING: SLUG empty, generated: {parsed_slug}")
+
+              if not parsed_excerpt:
+                  first_para = next((l.strip() for l in body.splitlines() if len(l.strip()) > 40), "")
+                  parsed_excerpt = first_para[:155] if first_para else f"Opinion: {parsed_title}"[:155]
+                  print(f"  WARNING: EXCERPT empty, using fallback")
+
+              if not parsed_tags:
+                  parsed_tags = "opinions, kenya, editorial"
+
+              if not body or len(body) < 100:
+                  print(f"  ERROR: Body is empty or too short. Raw output:\n{raw[:500]}")
+                  raise ValueError("Body extraction failed — Gemini output was not parseable")
 
               return {
                   "TITLE":   parsed_title,
@@ -362,7 +417,7 @@ jobs:
                   "BODY":    body,
               }
 
-          # ── Save article — always category: Opinions, reuse source image ──
+          # ── Save article ──────────────────────────────────────────────────
           def save_opinion(parsed: dict, source_image: str, source_slug: str) -> str:
               slug        = parsed["SLUG"]
               canonical   = f"{SITE_BASE_URL}/article/{slug}"
@@ -374,30 +429,32 @@ jobs:
                   tags_list.insert(0, "opinions")
               tags_json = json.dumps(tags_list)
 
-              lines = [
+              frontmatter = "\n".join([
                   "---",
                   f'title: "{parsed["TITLE"].replace(chr(34), chr(39))}"',
                   f'slug: "{slug}"',
                   f'description: "{description}"',
                   f'author: "{COLUMNIST_NAME}"',
                   f'author_url: "{author_url}"',
-                  f'image: "{source_image}"',   # reused directly from source post
-                  'category: "Opinions"',        # always hardcoded to Opinions
+                  f'image: "{source_image}"',
+                  'category: "Opinions"',
                   f'tags: {tags_json}',
                   f'canonical: "{canonical}"',
                   f'date: "{publish_timestamp}"',
                   "---",
-                  "",
-                  parsed["BODY"],
-                  ""
-              ]
+              ])
+
+              # Write frontmatter + blank line + body as separate concatenation
+              # to guarantee the \n between --- and body is correct
+              full_content = frontmatter + "\n\n" + parsed["BODY"] + "\n"
 
               os.makedirs(POSTS_DIR, exist_ok=True)
               filename = f"{today_str}-{slug}.md"
               with open(os.path.join(POSTS_DIR, filename), "w", encoding="utf-8") as f:
-                  f.write("\n".join(lines))
+                  f.write(full_content)
 
               print(f"  Saved    : {filename}")
+              print(f"  Title    : {parsed['TITLE']}")
               print(f"  Author   : {COLUMNIST_NAME}")
               print(f"  Category : Opinions (forced)")
               print(f"  Image    : reused from /article/{source_slug}")
@@ -425,21 +482,17 @@ jobs:
               print(f"\n--- Opinion on: {source['title']} ---")
               print(f"    Image   : {source['image'][:70]}")
 
-              # Step 1: research longtail keywords for this topic
               longtail_kw = research_longtail_keywords(source["title"], source["category"])
               time.sleep(5)
 
-              # Step 2: write the full opinion piece
               try:
                   parsed = write_opinion(source, longtail_kw)
               except Exception as e:
                   print(f"  Write failed: {e}")
                   continue
 
-              # Step 3: save using the original post's image — no upload needed
               save_opinion(parsed, source["image"], source["slug"])
 
-              # Step 4: mark as done in memory
               src_hash = hashlib.md5(source["slug"].encode()).hexdigest()
               memory[src_hash] = {
                   "source_title":    source["title"],
