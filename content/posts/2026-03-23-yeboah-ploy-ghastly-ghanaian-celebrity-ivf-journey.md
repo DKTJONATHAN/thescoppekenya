@@ -1,0 +1,40 @@
+---
+title: "Yeboah's Ploy: The Ghastly Ghanaian Celebrity IVF Journey"
+slug: "yeboah-ploy-ghastly-ghanaian-celebrity-ivf-journey"
+description: "Clement Yeboah’s public wailing over his ghanaian personality infertility story is a calculated performance, a desperate grab for sympathy that insults genuine "
+author: "From The Editor"
+author_url: "https://zandani.co.ke/author/from-the-editor"
+image: "https://i.ibb.co/S7Xg07BB/535290b72c8a.jpg"
+category: "Opinions"
+tags: ["opinions", "ghanaian-celebrity-6-ivf-journey", "celebrity-fertility-battle-ghana", "ghanaian-star-ivf-struggles", "6-ivf-attempts-celebrity", "ghanaian-personality-infertility-story", "celebrity-ivf-challenges-ghana", "ghana", "ivf", "infertility", "public-spectacle", "media-personality", "clement-yeboah", "oheneni-adazoa", "delay"]
+canonical: "https://zandani.co.ke/article/yeboah-ploy-ghastly-ghanaian-celebrity-ivf-journey"
+date: "2026-03-23T15:03:27Z"
+---
+
+Clement Abrefa Yeboah’s public lament over six failed IVF attempts is a cynical spectacle, a man weaponizing his wife's private pain for public consumption, all while feigning vulnerability. This is not courage; it is a cheap, desperate play for empathy, and it stinks of manipulation.
+
+## The Calculated Spectacle of a Ghanaian Celebrity 6 IVF Journey
+
+Let us be brutally clear: Clement Abrefa Yeboah, the husband of Ghana’s "renowned media personality" Oheneni Adazoa, did not "reveal" their 21-year struggle with childlessness and six unsuccessful IVF procedures. He *paraded* it. He chose to air their deepest, most intimate ghanaian star ivf struggles during an interview with Delay, a snippet of which then predictably - and undoubtedly by design - went viral on Instagram on February 27, 2026. This was no accidental confession born of overwhelming emotion; it was a strategically unveiled "masterclass in managing public perception," as the Zandani article so generously puts it. From where I stand, it's a masterclass in shameless exploitation.
+
+### Clement Yeboah's Grandstanding Performance: A Betrayal of Trust
+
+Clement Yeboah’s decision to lay bare their ghanaian celebrity 6 ivf journey before the ravenous public is nothing short of a betrayal. For two decades, this couple has navigated their private anguish, a period described as "deeply personal." Yet, when the moment came to address it publicly, Yeboah chose a platform that guarantees maximum drama and, critically, maximum sympathy. He didn't issue a joint statement, nor did he handle this with the quiet grace such a sensitive matter demands. No, he sat down with Delay and delivered a performance. He spoke of undergoing "approximately six in vitro fertilisation (IVF) procedures but have yet to conceive a child." This public disclosure, carefully timed and crafted, serves only one purpose: to silence whispers and garner collective empathy. It is a repulsive tactic, reducing a wife's profound suffering to fodder for talk shows and social media chatter. Yeboah is not a hero for "opening up"; he is a man using his wife's womb as a shield against public scrutiny and a tool for public adoration.
+
+### Oheneni Adazoa's Silent Complicity: A Question of Agency
+
+One truly wonders about Oheneni Adazoa, the "acclaimed Ghanaian media personality", in all this. Was she consulted, or merely presented as a prop in her husband's sorrowful drama? The article notes her celebrity status and the "relentless gaze of the public" on their marriage. Yet, it is Clement, not Oheneni, who takes center stage in this "celebrity fertility battle ghana." Is she too broken by the 6 ivf attempts celebrity ordeal to speak for herself, or is she silently condoning this public display? Either way, her apparent passivity in the face of such a deeply personal revelation is alarming. A woman of her standing should demand respect for her privacy, especially concerning her reproductive health. Her silence, whether coerced or chosen, speaks volumes about the power dynamics at play and the unfortunate reality that even celebrated women can be reduced to mere footnotes in their own stories when a man decides to control the narrative.
+
+### Delay's Despicable Role: Exploiting Agony for Ratings
+
+And then there is Delay. The interviewer, far from offering a compassionate space, actively participated in parading this ghanaian personality infertility story. Her show, presumably, benefited immensely from the emotional spectacle. Turning raw agony into entertainment is the hallmark of lazy journalism and opportunistic media. The excerpts shared on Instagram, the very mechanism designed to amplify the "confession," highlight Delay's complicity in this calculated exploitation. She is not a truth-teller; she is an enabler, an architect of this public circus, perfectly happy to trade in the sacred details of a couple's desperate longing for children for a boost in viewership. Such sensationalism is a stain on Ghanaian media, reducing serious issues to trivial gossip.
+
+### The Shamelessness of Publicizing "6 IVF Attempts Celebrity"
+
+The audacity to turn a six ivf attempts celebrity journey into public domain property is mind-boggling. IVF is a brutal, emotionally draining, and financially crippling process. To undergo it once is taxing; to endure it six times, as Clement Abrefa Yeboah claims, is a testament to immense physical and psychological fortitude. To then expose that vulnerability, not in a private support group, but on a nationally broadcast interview, is to cheapen the entire experience. It reduces the profound yearning for a child, the agonizing hope and crushing disappointment, to mere talking points. This is why we Kenyans often keep such matters guarded; some pains are too sacred for public consumption. The narrative of "We Have Done 6 IVFs: The Unveiling of Ghana's Celebrity Fertility Battle" is less about transparency and more about the desperate thirst for public validation in an industry that demands constant visibility. It is a sad indictment of where celebrity culture has taken us, where no corner of life, however painful, remains private. Other celebrities like Nana Ama McBrown, who also struggled with infertility and resorted to IVF, revealed her journey in an interview at age 41. While McBrown’s story ended with success and a desire to encourage others, Clement Yeboah's comes across as pure grievance-mongering.
+
+### The Public's Role: Feeding the Beast of Manufactured Empathy
+
+The public, ever eager for a glimpse behind the gilded cage of celebrity, devours this manufactured vulnerability. They offer platitudes and sympathy, unaware, or perhaps uncaring, that they are feeding a beast that thrives on personal tragedy. This ravenous consumption only encourages more such displays, setting a dangerous precedent where true suffering is replaced by performative anguish. While there are legitimate discussions to be had about infertility and the challenges it poses, especially in Africa where societal pressure for children is immense, this is not the way to have them. This is not advocacy; it is ego.
+
+These Ghanaian celebrities, and those who enable them, must learn that true strength lies in confronting personal battles with dignity, not parading a ghanaian celebrity 6 ivf journey like a morbid reality show. Let Oheneni Adazoa and Clement Abrefa Yeboah find solace in privacy, not in the fleeting applause of a public that will move on to the next spectacle the moment it arises. Some things, even in the glare of fame, are best kept sacred.
