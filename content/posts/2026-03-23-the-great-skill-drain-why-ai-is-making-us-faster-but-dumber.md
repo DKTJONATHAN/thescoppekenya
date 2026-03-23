@@ -4,7 +4,7 @@ date: 2026-03-23T06:33:51Z
 slug: the-great-skill-drain-why-ai-is-making-us-faster-but-dumber
 author: za-ndani
 category: technology
-image: "https://arxiv.org/2601.20245v1/x1.png"
+image: "https://ibb.co/ksKNp0f4"
 draft: false
 ---
 
