@@ -1,0 +1,22 @@
+---
+title: "Malcolm in the Middle cast reunites for revival series on Hulu"
+slug: "malcolm-in-the-middle-cast-reunites-for-revival-series-on-hulu"
+author: "Mutheu Ann"
+image: "https://ew.com/thmb/0y49JrhJsT96_a8_QTibazrXC38=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/EW-CoverStory-Tout-Malcolm-in-the-Middle-2000x1000-fd7fb501ccfe4021a1d9ab6cf3ba9953.jpg"
+category: "Entertainment"
+date: "2026-03-25T16:22:16Z"
+---
+## Your Favourite Dysfunctional Family Returns to the Small Screen
+
+Twenty years after signing off, the iconic *Malcolm in the Middle* cast is back for a four-episode Hulu revival, *Life's Still Unfair*, premiering April 10. Bryan Cranston, Frankie Muniz, and Jane Kaczmarek lead the charge in a hilarious, heartwarming, and utterly chaotic return to the family dynamics that captured audiences for seven seasons.
+
+### Cranston's Decade-Long Pursuit
+It turns out bringing the Wilkerson family back together was Bryan Cranston's long-standing dream, a pursuit he likened to "water torture" for creator Linwood Boomer. Cranston first expressed interest a decade ago, reportedly nudging, pestering, and eventually "bullying" Boomer into serious consideration. The breakthrough came from Boomer's wife, Tracy Katsky Boomer, also an executive producer, who proposed a brilliant new twist: Malcolm raising a daughter who mirrors his own youthful genius and neuroses. This fresh premise, set against Hal and Lois's 40th wedding anniversary, finally convinced Boomer to revisit the beloved series.
+
+### Behind the Scenes: NASCAR, Recasts, and Recreations
+The revival, shot in Vancouver, Canada, saw a meticulously recreated set, as original blueprints had not survived. While the mood on set in May was light and joyful, production faced its share of unique challenges. Coordinating schedules proved particularly tricky, not least because Frankie Muniz is now a full-time NASCAR driver. To accommodate his racing commitments, filming shifted to a Sunday through Thursday schedule, with Muniz flying out to race on Fridays.
+
+Fans will notice some new faces among the familiar ones. Original Dewey, Erik Per Sullivan, opted not to return, reportedly busy earning a master's degree at Harvard University. His role has been recast with Caleb Ellsworth-Clark. Other new additions include Anthony Timpano as the adult Jamie, Vaughan Murrae as the nonbinary teen Kelly, Kiana Madeira as Malcolm's girlfriend Tristan, and Keeley Karsten as Malcolm's daughter Leah. Christopher Masterson also reprises his role as Francis, joining Cranston, Muniz, and Kaczmarek in this highly anticipated reunion.
+
+### An Underdog's Enduring Legacy
+The journey for *Malcolm in the Middle* was never an easy one, even from its inception. The original series, inspired by Boomer's own upbringing, was initially rejected by nearly every network before UPN briefly took it on, only to abandon it. Fox Broadcasting Entertainment president Doug Herzog is credited with rescuing the show, recognizing its potential at a time when family sitcoms were widely considered "dead". That an "underdog" series like *Malcolm in the Middle* has not only endured but is now being revived two decades later, speaks volumes about its lasting impact and the undeniable chemistry of its cast.
