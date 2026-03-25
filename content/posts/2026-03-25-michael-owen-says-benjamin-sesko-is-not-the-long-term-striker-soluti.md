@@ -1,0 +1,19 @@
+---
+title: "Michael Owen says Benjamin Sesko is not the long-term striker solution for Manchester United"
+slug: "michael-owen-says-benjamin-sesko-is-not-the-long-term-striker-soluti"
+author: "Sports Desk"
+image: "https://i.ibb.co/60gMfJxG/cdfd644a0414.jpg"
+category: "Global News"
+date: "2026-03-25T12:34:52Z"
+---
+## United's Delusions: Sesko's Limits and Carrick's Honeymoon
+
+Michael Owen's dismissal of Benjamin Sesko as a long-term Manchester United striker exposes the club's perpetual short-sightedness. Despite interim boss Michael Carrick's strong start, Owen's bafflement at questioning Carrick's permanent role hints at a deeper, often ignored, managerial merry-go-round at Old Trafford.
+
+### Sesko: Another Expensive Stopgap
+
+Owen's assertion that Benjamin Sesko is "not the answer" for Manchester United's long-term striker needs no genius to decipher. United's summer spending spree, including £74m on Sesko, looks more like scattergun recruitment than a strategic overhaul. Two goals in his first 14 matches, then eight in 11 after Ruben Amorim's departure-a sudden burst of form, sure, but Owen rightly questions if this makes a 22-year-old an enduring solution. This is United, a club that has consistently failed to identify and secure a definitive number nine since the days of genuine legends. The narrative of "getting better" and being "an asset" sounds suspiciously like hedging bets on an expensive squad player, not a title-winning spearhead. When a club with United's supposed ambition cannot commit to their £74m striker for their "biggest game of the season," it speaks volumes about their ongoing recruitment failures. It's a pattern of systemic failures that plague many big clubs, not just in Europe, as seen in the struggles of [FKFPL Title Hopefuls AFC Leopards and Shabana FC: A Hard Look at Systemic Failures](https://zandani.co.ke/article/fkfpl-title-hopefuls-afc-leopards-shabana-fc-systemic-failures).
+
+### Carrick's 'Unbelievable' Honeymoon Period
+
+The true absurdity lies in the Michael Carrick situation. Owen is "astounded" that anyone would question Carrick's suitability for the permanent manager's role, citing his impressive record of seven wins, two draws, and only one loss. If the league had started with Carrick's appointment, United would be top. This immediate success, however, conveniently sidesteps the volatile nature of football, especially at Old Trafford. How many 'interim' or 'new manager bounce' periods have fans witnessed before the inevitable slump? Owen's argument- "What's the worst that can happen? You give him a two-year contract"-is surprisingly naive for a pundit. United's history post-Ferguson is a graveyard of "proven managers" and "ex-players" who started well before the wheels came off. To suggest that a short, albeit successful, run negates the need for rigorous long-term planning is precisely the kind of reactive thinking that has kept United from genuinely challenging. They've tried everything, from Van Gaal to Mourinho, Moyes to Solskjaer, and even the "new up-and-coming Portuguese superstar in Amorim" or Ralf Rangnick. Carrick's current form is fantastic, but United's desperation to cling to any glimmer of hope blinds them to the cyclical nature of their managerial merry-go-round. This is less about Carrick's brilliance and more about United's prolonged institutional amnesia.
