@@ -136,6 +136,9 @@ export function Footer() {
                 <a href="mailto:contact@zandani.co.ke" className="text-muted-foreground hover:text-primary transition-colors">
                   contact@zandani.co.ke
                 </a>
+                <a href="mailto:info@zandani.co.ke" className="text-muted-foreground hover:text-primary transition-colors">
+                  info@zandani.co.ke
+                </a>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 text-primary" />
