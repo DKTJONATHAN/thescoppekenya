@@ -54,11 +54,14 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-serif font-bold text-headline mb-1">Email</h3>
-                  <a href="mailto:contact@zandani.co.ke" className="text-muted-foreground hover:text-primary transition-colors block">
-                    contact@zandani.co.ke
+                  <a href="mailto:info@zandani.co.ke" className="text-muted-foreground hover:text-primary transition-colors block">
+                    info@zandani.co.ke
                   </a>
                   <a href="mailto:info@jonathanmwaniki.co.ke" className="text-muted-foreground hover:text-primary transition-colors block">
                     info@jonathanmwaniki.co.ke
+                  </a>
+                  <a href="mailto:contact@jonathanmwaniki.co.ke" className="text-muted-foreground hover:text-primary transition-colors block">
+                    contact@jonathanmwaniki.co.ke
                   </a>
                 </div>
               </div>
