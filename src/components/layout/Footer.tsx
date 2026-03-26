@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { Facebook, Instagram, Youtube, Mail, ArrowRight, Phone } from "lucide-react";
+import { Facebook, Instagram, Youtube, Mail, ArrowRight, Phone, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { categories } from "@/lib/markdown";
 import { XIcon } from "@/components/XIcon";
@@ -25,7 +25,7 @@ export function Footer() {
             <p className="text-muted-foreground mb-6">
               Get insider news, gossip, and entertainment updates straight to your inbox.
             </p>
-            <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+            <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onSubmit={(e) => e.preventDefault()}>
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -43,33 +43,40 @@ export function Footer() {
       {/* Main Footer */}
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Brand */}
+          {/* Brand & Socials */}
           <div className="lg:col-span-1">
-            <button onClick={() => handleLinkClick("/")} className="mb-4">
+            <button onClick={() => handleLinkClick("/")} className="mb-4 block">
               <img src={logoImg} alt="Za Ndani" className="h-12 w-auto" />
             </button>
-            <p className="text-muted-foreground text-sm mb-4">
+            <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
               Kenya's boldest news and entertainment website. Breaking news, gossip, and trending stories — bold, unbiased updates daily.
             </p>
             <div className="flex items-center gap-3">
-              <a href="https://facebook.com/zandanike" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth text-foreground" aria-label="Facebook">
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a href="https://x.com/zandani_ke" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth text-foreground" aria-label="X">
-                <XIcon className="w-4 h-4" />
-              </a>
-              <a href="https://instagram.com/zandani_ke" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth text-foreground" aria-label="Instagram">
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a href="https://youtube.com/@zandanike" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth text-foreground" aria-label="Youtube">
-                <Youtube className="w-4 h-4" />
-              </a>
+              {[
+                { icon: <Facebook className="w-4 h-4" />, href: "https://facebook.com/zandanike", label: "Facebook" },
+                { icon: <XIcon className="w-4 h-4" />, href: "https://x.com/zandani_ke", label: "X" },
+                { icon: <Instagram className="w-4 h-4" />, href: "https://instagram.com/zandani_ke", label: "Instagram" },
+                { icon: <Youtube className="w-4 h-4" />, href: "https://youtube.com/@zandanike", label: "Youtube" },
+              ].map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-foreground"
+                  aria-label={social.label}
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
 
           {/* Categories */}
           <div>
-            <h4 className="font-serif font-bold text-lg mb-4 text-foreground">Categories</h4>
+            <h4 className="font-serif font-bold text-lg mb-4 text-foreground border-l-4 border-primary pl-3">
+              Categories
+            </h4>
             <ul className="space-y-2">
               {categories.map((category) => (
                 <li key={category.slug}>
@@ -86,78 +93,87 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-serif font-bold text-lg mb-4 text-foreground">Quick Links</h4>
+            <h4 className="font-serif font-bold text-lg mb-4 text-foreground border-l-4 border-primary pl-3">
+              Quick Links
+            </h4>
             <ul className="space-y-2 text-sm">
-              <li>
-                <button onClick={() => handleLinkClick("/about")} className="text-muted-foreground hover:text-primary transition-colors">
-                  About Us
-                </button>
-              </li>
-              <li>
-                <button onClick={() => handleLinkClick("/contact")} className="text-muted-foreground hover:text-primary transition-colors">
-                  Contact
-                </button>
-              </li>
-              <li>
-                <button onClick={() => handleLinkClick("/advertise")} className="text-muted-foreground hover:text-primary transition-colors">
-                  Advertise With Us
-                </button>
-              </li>
-              <li>
-                <button onClick={() => handleLinkClick("/careers")} className="text-muted-foreground hover:text-primary transition-colors">
-                  Careers
-                </button>
-              </li>
-              <li>
-                <button onClick={() => handleLinkClick("/privacy")} className="text-muted-foreground hover:text-primary transition-colors">
-                  Privacy Policy
-                </button>
-              </li>
-              <li>
-                <button onClick={() => handleLinkClick("/terms")} className="text-muted-foreground hover:text-primary transition-colors">
-                  Terms of Service
-                </button>
-              </li>
+              {[
+                { name: "About Us", path: "/about" },
+                { name: "Contact", path: "/contact" },
+                { name: "Advertise With Us", path: "/advertise" },
+                { name: "Careers", path: "/careers" },
+                { name: "Privacy Policy", path: "/privacy" },
+                { name: "Terms of Service", path: "/terms" },
+              ].map((link) => (
+                <li key={link.path}>
+                  <button 
+                    onClick={() => handleLinkClick(link.path)} 
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {link.name}
+                  </button>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact Section - FIXED */}
           <div>
-            <h4 className="font-serif font-bold text-lg mb-4 text-foreground">Contact Us</h4>
-            <ul className="space-y-3 text-sm">
-              <li className="flex items-start gap-2">
-                <Phone className="w-4 h-4 mt-0.5 text-primary" />
+            <h4 className="font-serif font-bold text-lg mb-4 text-foreground border-l-4 border-primary pl-3">
+              Contact Us
+            </h4>
+            <div className="space-y-6 text-sm">
+              {/* Phone */}
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center shrink-0">
+                  <Phone className="w-4 h-4 text-primary" />
+                </div>
                 <a href="tel:+254706396305" className="text-muted-foreground hover:text-primary transition-colors">
                   0706 396 305
                 </a>
-              </li>
-              <li className="flex items-start gap-2">
-                <Mail className="w-4 h-4 mt-0.5 text-primary" />
-                <a href="mailto:contact@zandani.co.ke" className="text-muted-foreground hover:text-primary transition-colors">
-                  contact@zandani.co.ke
-                </a>
-                <a href="mailto:info@zandani.co.ke" className="text-muted-foreground hover:text-primary transition-colors">
-                  info@zandani.co.ke
-                </a>
-              </li>
-              <li className="flex items-start gap-2">
-                <Mail className="w-4 h-4 mt-0.5 text-primary" />
-                <a href="mailto:info@jonathanmwaniki.co.ke" className="text-muted-foreground hover:text-primary transition-colors">
-                  info@jonathanmwaniki.co.ke
-                </a>
-              </li>
-              <li className="text-muted-foreground pt-2">
-                <span className="text-primary font-medium">Affiliated with:</span>
-                <br />
-                <a 
-                  href="https://www.jonathanmwaniki.co.ke" 
-                  target="_blank"
-                  className="hover:text-primary transition-colors"
-                >
-                  www.jonathanmwaniki.co.ke
-                </a>
-              </li>
-            </ul>
+              </div>
+
+              {/* General Inquiries */}
+              <div className="space-y-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center shrink-0">
+                    <Mail className="w-4 h-4 text-primary" />
+                  </div>
+                  <span className="font-semibold text-foreground">Inquiries</span>
+                </div>
+                <div className="pl-11 flex flex-col gap-1.5">
+                  <a href="mailto:contact@zandani.co.ke" className="text-muted-foreground hover:text-primary transition-colors break-all">
+                    contact@zandani.co.ke
+                  </a>
+                  <a href="mailto:info@zandani.co.ke" className="text-muted-foreground hover:text-primary transition-colors break-all">
+                    info@zandani.co.ke
+                  </a>
+                </div>
+              </div>
+
+              {/* Management */}
+              <div className="space-y-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center shrink-0">
+                    <Globe className="w-4 h-4 text-primary" />
+                  </div>
+                  <span className="font-semibold text-foreground">Partnerships</span>
+                </div>
+                <div className="pl-11 flex flex-col gap-1.5">
+                  <a href="mailto:info@jonathanmwaniki.co.ke" className="text-muted-foreground hover:text-primary transition-colors break-all">
+                    info@jonathanmwaniki.co.ke
+                  </a>
+                  <a 
+                    href="https://www.jonathanmwaniki.co.ke" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs text-primary font-medium hover:underline mt-1"
+                  >
+                    Visit Jonathan Mwaniki →
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -166,8 +182,16 @@ export function Footer() {
       <div className="border-t border-border">
         <div className="container py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} Za Ndani. All rights reserved.</p>
-          <p>
-            <a href="https://jonathanmwaniki.co.ke/about" target="_blank" className="text-primary hover:underline">A Jonathan Mwaniki Project</a>
+          <p className="flex items-center gap-1">
+            <span>Powered by</span>
+            <a 
+              href="https://jonathanmwaniki.co.ke/about" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-primary font-medium hover:underline"
+            >
+              Jonathan Mwaniki
+            </a>
           </p>
         </div>
       </div>
