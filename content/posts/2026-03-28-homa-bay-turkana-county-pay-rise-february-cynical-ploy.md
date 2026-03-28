@@ -1,0 +1,38 @@
+---
+title: "Homa Bay, Turkana County Pay Rise February: A Cynical Ploy"
+slug: "homa-bay-turkana-county-pay-rise-february-cynical-ploy"
+description: "Homa Bay and Turkana's heralded **homa bay county pay rise february** is a cynical, long-overdue pittance. This isn't generosity; it's a panicked response, utte"
+author: "From The Editor"
+author_url: "https://zandani.co.ke/author/from-the-editor"
+image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/workers-1.jpg?itok=O3gXA_2I"
+category: "Opinions"
+tags: ["opinions", "homa-bay-county-pay-rise-february", "turkana-county-salary-increase-2026", "src-county-salary-review-kenya", "turkana-homa-bay-government-employees-pay", "kenya-county-worker-salary-adjustments", "homa-bay-turkana-latest-salary-news", "county-government-salaries", "kenyan-politics", "public-service"]
+canonical: "https://zandani.co.ke/article/homa-bay-turkana-county-pay-rise-february-cynical-ploy"
+date: "2026-03-28T14:38:45Z"
+---
+
+Let us not be fooled. The supposed relief brought by the **turkana county salary increase 2026** and its Homa Bay counterpart is not a triumph for justice; it is a belated, begrudging handout, a paltry attempt to quiet the grumbling masses after years of callous neglect and outright theft. Any cheer is premature, a desperate sigh of relief from staff who have been treated like serfs by their so-called leaders.
+
+## The Farce of the "Review" for Kenya County Worker Salary Adjustments
+
+The Salaries and Remuneration Commission’s (SRC) 3rd Salary Review has finally trickled down to Turkana and Homa Bay, manifesting in the February 2026 payroll. This "long-awaited relief" for thousands of county government employees is precisely what happens when government agencies drag their feet for so long that basic human decency becomes a headline. The SRC, chaired by Lyn Mengich, has proven itself a master of bureaucratic dawdling, taking years to adjust what should be a straightforward, periodic exercise in fair compensation. Their 2023 discussions in Turkana, where local officials like County Secretary Peter Eripete and CEC James Wangiros pleaded for consideration of the vastness and high cost of living, clearly amounted to little more than window dressing for a decision that should have been made long ago. Why does it take a crisis to move these people?
+
+### Homa Bay's Hypocrisy Exposed in Latest Salary News
+
+In Homa Bay, Bernard Muok, the County Head of Public Service, confirmed that February 2026 payslips now reflect this new salary structure. What a magnificent feat of leadership, Mr. Muok! One month, you're explaining away January 2026 salary delays, blaming the "late release of funds from the National Exchequer", forcing employees to "contend with salary delay for a second week". The next, you're basking in the glory of a delayed pay rise. This is not leadership; it's a cynical manipulation of expectations. Governor Gladys Wanga, who supposedly "emphasised numerous times her commitment to improve staff welfare", stood by as her staff suffered, then takes credit for a national directive.
+
+Let us not forget that only last September, Governor Wanga was grilled by the Senate County Public Accounts Committee (CPAC) because Homa Bay's wage bill had ballooned to 55% of its revenue, far exceeding the legal 35% cap. Her flimsy excuses about "long-overdue financial obligations" and settling "unpaid gratuities and pensions" reek of mismanagement. If you cannot manage your existing payroll, how dare you pretend this increment is anything but a desperate attempt to patch over a gaping wound of fiscal irresponsibility? The truth is, Homa Bay County is a financial disaster zone, and this salary bump, while welcomed by the long-suffering staff, does nothing to address the structural rot.
+
+### Turkana's Perpetual Victimhood in Turkana Hom Bay Government Employees Pay
+
+Turkana County's administration, via its County Secretary's office, also issued notices confirming the salary adjustments. While the relief for **turkana homa bay government employees pay** is undeniable, the county's perennial laments about its unique challenges - geographical vastness, high cost of living, difficulties in attracting and retaining skilled staff - are beginning to sound like a broken record. These are not new revelations. The SRC was supposedly "monitoring and evaluating" these very issues back in June 2023. What took them so long to act? Turkana's leaders, instead of constantly playing the victim, should be demanding concrete, proactive solutions, not simply waiting for the SRC to get off its lazy behind. The buck, ultimately, stops with the county governments to advocate ferociously for their people.
+
+### SRC: Toothless Bulldog or Accomplice in SRC County Salary Review Kenya?
+
+The SRC, in its supposed wisdom, has finally unveiled its 3rd Salary Review. While the SRC’s mandate is crucial, its execution is often glacial and reactive. It took months of "anticipation by workers" for this adjustment to materialize. This isn't just about the current **src county salary review kenya**; it's a pattern. The Council of Governors (CoG) had to openly demand KSh 4.7 billion from the national government in September 2025 just to implement salary reviews for county employees, accusing the national government of neglecting counties while hiking its own staff's pay. This paints a damning picture: the SRC, ostensibly an independent body, appears to be either woefully inefficient or deliberately complicit in a system that habitually shortchanges county workers until political pressure becomes unbearable. When governors have to beg for basic funding to implement legally mandated reviews, the entire system is broken. This is not oversight; it is an abdication of responsibility by the very body meant to ensure fair remuneration. For more context on these sluggish government processes, one might consider the ongoing discussions at https://zandani.co.ke/article/turkana-homa-bay-county-governments-salary-increase-employees.
+
+### The National Government's Grand Deception
+
+The national government's role in this charade cannot be understated. While they are quick to implement salary reviews for their own employees, they consistently starve counties of the necessary funds, leaving local administrations to scramble and face the wrath of their frustrated workforce. This is a deliberate tactic: control the purse strings, control the narrative. They preach devolution while undermining its very foundations with delayed disbursements and inadequate allocations. The "approved national government policy directives" that Bernard Muok so proudly cited are meaningless if the Treasury holds the counties hostage. This is not governance; it is economic blackmail, and the ordinary **kenya county worker salary adjustments** are the pawns in a perpetual power play.
+
+This latest salary bump is a momentary bandage on a festering wound. It’s a cynical manoeuvre by county administrations and a belated acknowledgement by the SRC, all while the national government continues its manipulative dance. True relief will only come when systemic corruption is eradicated, when fiscal responsibility is not just a slogan but a reality, and when county workers are treated with the dignity and prompt compensation they deserve, without having to beg, borrow, or almost starve. We demand genuine, sustainable change, not these pathetic, politically timed crumbs from the master's table.
