@@ -1,0 +1,40 @@
+---
+title: "TSC's Cruel Blunder: Fred Apima Obita TSC Ruling Exposes Rot"
+slug: "tsc-cruel-blunder-fred-apima-obita-tsc-ruling-exposes-rot"
+description: "The ELRC Kisumu has delivered a scathing verdict against the TSC, ordering it to pay Ksh200,000 for its unlawful health insurance withdrawal, a clear sign of sy"
+author: "From The Editor"
+author_url: "https://zandani.co.ke/author/from-the-editor"
+image: "https://i.ibb.co/XrXCdw6c/7a56f897fb97.jpg"
+category: "Opinions"
+tags: ["opinions", "fred-apima-obita-tsc-ruling", "tsc-ksh200", "000-health-insurance", "kisumu-teacher-medical-cover-withdrawal", "tsc-unlawful-insurance-withdrawal-kenya", "employment-court-teacher-insurance-judgment", "tsc", "teachers", "kenya", "justice", "incompetence", "healthcare", "labour-relations-court", "kisumu"]
+canonical: "https://zandani.co.ke/article/tsc-cruel-blunder-fred-apima-obita-tsc-ruling-exposes-rot"
+date: "2026-03-28T22:36:51Z"
+---
+
+The Teachers Service Commission stands exposed, a bureaucratic behemoth crushed by the undeniable weight of its own incompetence and callous disregard for human dignity. The Employment and Labour Relations Court (ELRC) in Kisumu has rightly slapped them with a Ksh200,000 fine, a paltry sum for the suffering inflicted, but a thundering indictment of their systemic failures. This is not merely a legal ruling; it is a public shaming of an institution that believes itself above the law.
+
+## TSC's Shameful Dance with Ksh200,000 Health Insurance Fiasco
+
+Let us be clear: the Teachers Service Commission is an utter disgrace. Their recent humiliation at the hands of the Kisumu ELRC is not an isolated incident; it is a glaring symptom of a rotten system. They brazenly denied Fred Apima Obita, a Kenyan teacher, his fundamental right to healthcare by unlawfully withdrawing his medical insurance during a disciplinary process. What kind of heartless institution punishes an employee by denying them access to medical care? This is not discipline; this is an act of utter cruelty, a move so devoid of empathy it borders on criminal. The court found this deregistration from the AON Minet Medical Scheme "irregular, unfair, and unlawful," a phrase that should haunt every single individual responsible at the TSC. And the failure to remit NHIF deductions? Pure, unadulterated negligence and illegal, as the court correctly determined.
+
+### The Kisumu Teacher Medical Cover Withdrawal: A Deeper Betrayal
+
+Fred Apima Obita was not just fighting for Ksh200,000; he was fighting for his very right to human dignity, a right the TSC trampled underfoot with bureaucratic arrogance. Imagine being subjected to a disciplinary process, already a stressful ordeal, only to discover your medical cover, your lifeline to healthcare, has been illegally yanked away. This is the kind of psychological and financial torment the TSC willingly inflicts upon those they are mandated to serve. This Kisumu teacher medical cover withdrawal case exposes the deep-seated contempt the Commission holds for its employees. They pay lip service to welfare while actively undermining it, a hypocrisy so stark it makes one's teeth ache.
+
+### Regulation 151 Ignored: A Clear Case of Incompetence
+
+The audacity of the TSC to conduct a disciplinary hearing with an improperly constituted panel is a slap in the face to due process and an insult to common sense. Regulation 151 of the Code of Regulations for Teachers clearly stipulates that a Commission member *must* chair such a panel. Yet, the TSC, in its infinite wisdom or abject cluelessness, proceeded without this crucial requirement, rendering the entire disciplinary proceedings and subsequent suspension null and void. This isn't just a minor oversight; it's gross negligence, a profound dereliction of duty that exposes either breathtaking ignorance of their own rules or a deliberate attempt to circumvent justice. Either way, the individuals responsible for this procedural shambles deserve to be held accountable.
+
+The court's verdict, issued earlier this March, clearly stated that while the TSC *does* have the authority to discipline teachers, this authority does not grant them license to act with such blatant disregard for the rules that govern their very existence. Justice Fredrick Abuodha, the ELRC judge, made this point emphatically. Fred Apima Obita, despite facing allegations that he neglected his duty, was entitled to a fair process, a basic tenet that the TSC deliberately denied him. Read the full details of this shocking case here: [TSC Ordered to Pay Teacher Ksh200,000 for Unlawful Withdrawal of Health Insurance: A Deep Dive into Systemic Failures](https://zandani.co.ke/article/tsc-ordered-to-pay-teacher-ksh200000-unlawful-withdrawal-health-insurance).
+
+### The Employment Court Teacher Insurance Judgment: A Beacon of Justice
+
+Thank God for the Employment and Labour Relations Court in Kisumu. In a landscape often marred by bureaucratic impunity, the ELRC stands as a crucial bulwark against the excesses of powerful state corporations. Their judgment in the Fred Apima Obita TSC ruling is a powerful affirmation that justice, however slow, can still be found in Kenya. They didn't just award damages; they delivered a scathing rebuke to the TSC, reminding them that they are not above the law and that the rights of teachers are not mere suggestions to be ignored at will. This ruling sets a precedent that should send shivers down the spines of every negligent official at the TSC and other state bodies.
+
+It is galling, however, that Fred Apima Obita's other wide-ranging claims - including workplace insecurity, wrongful interdiction, discrimination, defamation, and conspiracy - largely failed to pass the court's evidentiary test. While the court rightly cleared the Commission on Administrative Justice (CAJ) of wrongdoing, it underscores the immense uphill battle individuals face when challenging the state. Even with clear procedural breaches, securing comprehensive justice against an entity like the TSC remains an arduous task. The fact that he was denied salary during his interdiction, as the court ruled, only adds insult to injury, highlighting the precarious position of teachers battling this behemoth.
+
+### TSC Unlawful Insurance Withdrawal Kenya Must End
+
+This entire sordid affair around the tsc unlawful insurance withdrawal kenya is a stark reminder of who truly suffers when state institutions fail. It’s not the faceless bureaucrats in their air-conditioned offices; it’s dedicated teachers like Fred Apima Obita who are left without medical care, battling stress, and fighting for basic fairness. The Ksh200,000 awarded is a pittance, a band-aid on a gaping wound, but the moral victory is immense. It forces the TSC to confront its own glaring inadequacies.
+
+The TSC must not simply pay the fine and move on. Heads must roll. There must be a full, transparent audit of their disciplinary processes, and those found responsible for this egregious breach of regulations and human rights should face real consequences, not just a slap on the wrist. Anything less is an insult to Fred Apima Obita, an insult to every teacher in Kenya, and an insult to the rule of law. The time for accountability is NOW.
