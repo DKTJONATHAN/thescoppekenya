@@ -1,0 +1,35 @@
+---
+title: "M-Pesa establishes itself as Kenya's primary financial system after expanding beyond its original purpose"
+slug: "m-pesa-establishes-itself-as-kenya-s-primary-financial-system-after-"
+author: "Elizabeth Muthoni"
+image: "https://i.ibb.co/gMFVdQpf/f7bfc4713ae5.webp"
+category: "Technology"
+date: "2026-03-28T09:01:27Z"
+---
+## M-Pesa's Unintended Trajectory Shapes Kenya's Financial Core
+
+M-Pesa, initially designed for microfinance loan repayments, accidentally evolved into Kenya's leading peer-to-peer financial system. This shift, driven by widespread adoption for remittances and digital transactions, has significantly boosted financial inclusion, fundamentally redefining the nation's economic landscape and cementing mobile money's role.
+
+### Accidental Genesis and Exponential Growth
+
+Launched publicly in March 2007 by Safaricom, M-Pesa quickly surpassed its original purpose of facilitating loan repayments for Faulu Kenya microfinance borrowers. Kenyans adopted it as a robust person-to-person money transfer system, addressing a significant need for sending funds to rural relatives, a service largely unmet by formal banks. This organic adoption spurred rapid growth, expanding the agent network from 307 to over 6,000 by late 2008 and accumulating over 5 million registered accounts.
+
+The Central Bank of Kenya (CBK) adopted a permissive regulatory stance, issuing a letter of no-objection in 2007. This "test-and-learn" approach proved crucial, avoiding restrictive banking licenses that could have stifled innovation. Instead, the CBK mandated holding customer funds in trust accounts, Know Your Customer (KYC) compliance, and transparent fee disclosure, establishing a global regulatory template for mobile money.
+
+### Structural Shifts and Financial Deepening
+
+M-Pesa's journey unfolded in three distinct phases. From 2007 to 2015, the platform experienced exponential growth. A cooling period followed, from 2015 to early 2020, where growth moderated. However, March 2020 marked a significant structural shift due to the COVID-19 pandemic and the CBK's fee waivers on transactions under KES 1,000. This policy intervention led to a 66% jump in monthly transaction values within nine months, permanently altering the sector's trajectory.
+
+By 2024, over 84.8% of Kenyan adults had access to formal financial services, a substantial increase from 26.7% in 2006, with the CBK explicitly crediting mobile money services for this 58 percentage point improvement. Transaction limits have also risen, indicating mobile money's increasing integration into larger commercial dealings, even as the average transaction size declined from KES 4,000 in early 2024 to KES 3,200 by 2025, reflecting deeper penetration into lower-income daily use. The continuous rise in mobile phone penetration further supports the influx of new mobile money customers and advancements in financial inclusion, highlighting the importance of clear guidelines for telecommunication companies, such as those regarding phone number reassignment.
+
+### Bank Integration and Evolving Ecosystem
+
+Rather than a "war," a collaborative truce emerged between telcos and banks. Major commercial banks strategically integrated with M-Pesa's vast distribution network. Kenya Commercial Bank (KCB) launched KCB M-Pesa in 2014, embedding a full bank account directly into the M-Pesa wallet. By FY2025, 99% of KCB's transactions occurred through non-branch channels, serving 34 million customers, 23 million of whom are digital. Its mobile loan book disbursed KES 544 billion in 2025.
+
+Similarly, NCBA co-created M-Shwari with Safaricom in 2012 and introduced Fuliza in 2018. By 2024, NCBA's digital ecosystem disbursed KES 1.049 trillion across Fuliza, M-Shwari, and Loop. Equity Group pursued a proprietary path with Equitel, reporting 98.2% of transactions outside branches by FY2025. Standard Chartered and Absa targeted premium and corporate segments, investing significantly in digital infrastructure.
+
+Pesalink has introduced competition, reporting that a notable portion of Kenyans using instant account-to-account (A2A) transfers prefer bank apps over telco-owned mobile money platforms, with bank apps accounting for 41.54% of regular transactions among Pesalink users, against 50.15% for telco-led fintech. This dynamic has led Safaricom and the Kenya Bankers Association (KBA) to propose designating Pesalink as Kenya’s lead Fast Payment System, aiming to consolidate digital payment methods into a unified infrastructure.
+
+### Branches Evolve, Not Disappear
+
+Despite 94-99% of bank transactions occurring outside physical branches, brick-and-mortar locations have not vanished. Instead, they have evolved into high-value hubs. Routine micro-transactions, such as airtime purchases and balance checks, have largely shifted to mobile handsets. Branches now concentrate on substantial financial movements, complex documentation, and high-trust advisory services, with the floor for a typical branch transaction estimated at KES 50,000 or more. For instance, a single branch visit for Equity is equivalent to 71 transactions on Equitel, underscoring the transformed role of physical banking infrastructure.
