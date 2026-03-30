@@ -1,0 +1,29 @@
+---
+title: "Mining Ministry invites global bids for Mrima Hill rare earth and niobium deposits"
+slug: "mining-ministry-invites-global-bids-for-mrima-hill-rare-earth-and-ni"
+description: "Mining Ministry invites global bids for Mrima Hill's $64B rare earth & niobium deposits in Kwale, opening a new era for resource commercialisation."
+author: "Celestine Nzioka"
+author_url: "https://zandani.co.ke/author/celestine-nzioka"
+image: "https://i.ibb.co/kgqWbr08/0c8ee8e093b8.webp"
+category: "News"
+tags: ["mrima-hill", "rare-earth-deposits", "niobium-mining", "kwale-county", "mineral-commercialisation"]
+canonical: "https://zandani.co.ke/article/mining-ministry-invites-global-bids-for-mrima-hill-rare-earth-and-ni"
+date: "2026-03-30T12:06:24Z"
+---
+The Ministry of Mining and Blue Economy has opened a competitive tender for Mrima Hill in Kwale County, inviting global bids for its USD 64 billion rare earth and niobium deposits. A gazette notice issued on March 27 formalised the process for mineral rights, marking a new era for resource commercialisation.
+
+## Global Interest in Mrima Hill Minerals
+
+The government, through the Ministry of Mining and Blue Economy, initiated a competitive tender process for the Mrima Hill mineral deposits, valued at USD 64 billion (approximately Ksh8 trillion). This move, mandated by Cabinet Secretary Hassan Joho in early 2026, aims to transition from past "opaque" licensing deals to an open, competitive bidding system. The formal invitation for Expressions of Interest (EOI) from qualified mining operators was published via a gazette notice on March 27, in accordance with sections 14 (1) and 223 (2)(e) of the Mining Act, Cap 306, and the 2017 Regulations. This marks the first time mineral rights of this magnitude are being awarded through such a transparent process.
+
+### Significant Mineral Resources Identified
+
+Mrima Hill, located about 65 kilometres southwest of Mombasa, holds some of the earth's richest untapped mineral deposits. Discovered by local geologists in the 1930s and further explored with Anglo American plc in the 1950s, a comprehensive 2022 geological survey confirmed the presence of five key minerals: niobium, yttrium, thorium, strontium, and lanthanum. The survey identified indicated resources including 5.8 million tonnes of niobium material and 48.7 million tonnes of rare earth material, with inferred deposits totaling 110.7 million tonnes. These estimates position Mrima Hill among the largest undeveloped deposits globally, representing a once-in-a-generation mineral find. Niobium is critical for strengthening steel used in jet engines, oil pipelines, and space infrastructure, while rare-earth elements like yttrium, thorium, strontium, and lanthanum are essential for manufacturing smartphones, electric vehicle batteries, and advanced military guidance systems. Understanding how these materials power modern devices can be explored further by examining elements like "What Your Charger Cable Lump Does: 3 Facts" (https://zandani.co.ke/article/what-your-charger-cable-lump-does-3-facts).
+
+### Intense Global Competition
+
+The competitive tender has attracted significant international attention, with global superpowers like the United States and China vying for mining rights. A U.S.-backed consortium, Mrima Earth Ltd, submitted a "value-added" bid to Kenya's National Mining Corporation (NAMICO), proposing downstream processing, local job creation, and skills transfer within the country. China, which dominates approximately 80 percent of the world's rare earth processing capacity, is also actively participating through state-backed entities. The intensity of this international scramble was highlighted in late 2025 when community guards at Mrima Hill reportedly prevented Chinese nationals from accessing the site without permission. Additionally, Australian mining firms RareX and Iluka Resources filed a joint application in April 2025 to develop the project alongside NAMICO, including plans to process some minerals at Iluka's existing Australian refinery.
+
+### Community and Environmental Concerns
+
+The Mrima Hill project faces a significant hurdle due to its status as a double-gazetted site. It is recognised both as a protected forest reserve and as a sacred Kaya forest, holding deep spiritual significance for the Mijikenda and Digo coastal communities. Local residents have voiced concerns regarding potential displacement, the environmental impact of radioactive waste from mining operations, and the destruction of sacred shrines.
