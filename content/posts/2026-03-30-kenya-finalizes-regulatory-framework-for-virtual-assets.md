@@ -1,0 +1,25 @@
+---
+title: "Kenya Finalizes Regulatory Framework for Virtual Assets"
+slug: "kenya-finalizes-regulatory-framework-for-virtual-assets"
+author: "Grace Mkamburi"
+image: "https://i.ibb.co/DH5Vwdym/2802a6d7700c.jpg"
+category: "Business"
+date: "2026-03-30T18:41:01Z"
+---
+## Kenya Positions for Digital Finance Leadership
+Kenya is moving towards formalizing virtual assets within its financial system, with new regulations establishing dual oversight by the Central Bank of Kenya and the Capital Markets Authority. These stringent requirements aim to foster institutional participation and position Kenya as a leader in digital finance, despite lingering concerns from traditional banks.
+
+### Dual Regulatory Oversight Established
+The proposed framework introduces a clear division of regulatory responsibilities. The Central Bank of Kenya (CBK) will be tasked with licensing and supervising virtual asset service providers such as wallet providers, payment processors, and stablecoin issuers. Concurrently, the Capital Markets Authority (CMA) will oversee exchanges, brokers, fund managers, tokenization platforms, and Initial Coin Offerings (ICOs). This dual approach aims to provide comprehensive supervision across the diverse virtual asset ecosystem. Notably, the regulations extend to any entity offering virtual asset services "in or from Kenya," even without a physical presence, signaling an intent to regulate cross-border digital activities effectively.
+
+### Stringent Requirements for Market Entry
+The draft rules mandate rigorous licensing requirements designed to protect the financial system. Applicants must undergo "fit and proper" tests, disclose all sources of funds, and submit detailed operational and cybersecurity frameworks. Furthermore, the regulations impose significant minimum capital thresholds, with tokenization and ICO providers requiring KSh 200 million. These substantial requirements are poised to attract institutional-grade participation, potentially limiting entry for smaller startups.
+
+### Real-World Asset Tokenization Poised for Growth
+The framework provides one of the most explicit guidelines to date for real-world asset tokenization. This allows for the digitization of physical assets, including real estate and art, which could then potentially serve as collateral. Issuers will be required to provide independent valuations, establish clear custodial arrangements, and offer detailed disclosures through white papers. This initiative has the potential to unlock new capital markets and broaden access to credit. Global projections estimate that $19.5 trillion in assets could be tokenized by 2030, a significant increase from the current 0.1% penetration.
+
+### Stablecoin Regulations Prioritize Stability
+Stablecoins, identified during the stakeholder forum as a vital tool for emerging markets, will operate under strict regulations. Issuers must maintain 100% reserves in either cash or short-term government securities and ensure redemption at par value without fees. The regulations explicitly prohibit stablecoin issuers from offering interest. Tether, a key participant in the dialogue, underscored the growing influence of USDT, now exceeding $184 billion in circulation, in facilitating cross-border payments, remittances, and access to dollar liquidity.
+
+### Addressing Bank Hesitancy and Future Potential
+A significant hurdle identified is the continued reluctance of Kenyan banks to engage with crypto-related businesses due to past regulatory ambiguity. This has diverted capital flows into offshore channels, hindering domestic value capture. The forum directly challenged the Kenya Bankers Association and individual institutions to actively participate in shaping the final regulations during the ongoing public consultation phase. This engagement is crucial, much like the public discourse surrounding other significant national events, such as political commentary concerning public figures. If implemented effectively, these Virtual Asset Service Provider (VASP) Regulations could transform Kenya into a leading hub for regulated digital finance in Africa.
