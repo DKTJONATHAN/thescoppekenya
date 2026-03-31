@@ -1,0 +1,40 @@
+---
+title: "Tiwa Savage's Berklee: Kenyan Artists Berklee Program Fees Farce"
+slug: "tiwa-savages-berklee-kenyan-artists-berklee-program-fees-farce"
+description: "Tiwa Savage's Berklee 'free' program is a cruel joke, especially for financially strapped Kenyan artists, given the outrageous kenyan artists berklee program fe"
+author: "From The Editor"
+author_url: "https://zandani.co.ke/author/from-the-editor"
+image: "https://www.musicinafrica.net/sites/default/files/images/article/202602/tiwasavagefounderofthetiwasavagemusicfoundation1.png"
+category: "Opinions"
+tags: ["opinions", "tiwa-savage", "berklee", "nigeria", "kenya", "music-education", "hidden-costs", "african-music-pros", "berklee-in-nigeria-travel-costs-kenya", "tiwa-savage-foundation-lagos-expenses", "kenyan-artists-berklee-program-fees", "african-music-pros-lagos-accommodation", "tiwa-savage-berklee-intensive-program-cost", "kenyan-musicians-lagos-travel-funding"]
+canonical: "https://zandani.co.ke/article/tiwa-savages-berklee-kenyan-artists-berklee-program-fees-farce"
+date: "2026-03-31T15:10:04Z"
+---
+
+Tiwa Savage’s grand pronouncements about her Berklee Music Foundation are nothing short of a slap in the face to struggling African artists. Her "free" program in Lagos is a performative sham, offering a glimmer of hope only to snatch it away with absurd travel and accommodation demands. This is not philanthropy; it is a public relations exercise designed to elevate her image while doing precious little for the genuinely underserved.
+
+## The Berklee in Nigeria Travel Costs Kenya Cannot Afford
+
+Let's be brutally honest: calling a program "free" when participants are expected to fund their own international travel and accommodation is a grotesque deception. The Tiwa Savage Intensive Music Program, set for April 23-26, 2026, in Lagos, Nigeria, claims to offer world-class training without tuition fees. What an absolute joke. For aspiring musicians in Kenya, for instance, the costs associated with flights, visas, and a four-day stay in Lagos are monumental. These are not hidden costs; they are insurmountable barriers to entry for the very individuals Tiwa Savage purports to uplift. This is not about access; it's about privilege thinly veiled as opportunity.
+
+### Tiwa Savage: Disconnected From Reality
+
+Tiwa Savage, the Afrobeats queen, has declared that "Talent is universal - but access is not". A truly profound statement, if only her actions matched her words. She herself benefited from a Berklee scholarship at 24, an opportunity she credits with reshaping her understanding of the industry. One would think such a personal experience would breed empathy and a genuine desire to remove *all* barriers for the next generation. Instead, she launches an initiative that simply replaces one prohibitive cost (tuition) with another (international travel). Is she so far removed from the ground realities of young Kenyan artists or other African music pros that she cannot fathom the expense of a flight to Lagos? This smacks of a celebrity more concerned with legacy-building than practical, impactful support. Her foundation's stated aim to empower "emerging African creatives" rings hollow when the unspoken requirement is a fat bank account or a benevolent sponsor.
+
+### Berklee College's Complicity: A Global Brand's Blind Eye
+
+And what of Berklee College of Music? The world's largest independent college of contemporary music, renowned for its programs, partners with Savage to bring its "globally recognized teaching methodology" to Lagos. This is Berklee's "first-ever event in West Africa". A historic moment indeed, but at what cost to its supposed mission? By lending its prestigious name to a program that effectively excludes a vast swathe of African talent, Berklee tarnishes its own reputation for fostering musical growth. Are they so desperate for a foothold in the booming African market that they would overlook the glaring accessibility issue? True partnerships for empowerment require more than just curriculum delivery; they demand a holistic understanding of the participants' needs. Allowing the "tiwa savage foundation lagos expenses" for travel and accommodation to fall squarely on the shoulders of struggling artists is a dereliction of their professed commitment to expanding access.
+
+### The Mockery of "World-Class Training" for the Privileged Few
+
+The program, running daily from 10:00 a.m. to 5:00 p.m., promises hands-on training in songwriting, music production, live performance, and the business of music. This is invaluable, no doubt. But for whom? For the 100 lucky souls who can somehow scrape together the funds for their pilgrimage to Lagos. For the rest - the vast majority of genuinely talented, ambitious, but economically disadvantaged artists across Africa - it remains a pipe dream. This isn't "empowering the next generation of African talent"; it's empowering the next generation of African talent *who happen to have disposable income*. The program's website, accessible via this critical insight from the source article, Tiwa Savage's Berklee Music Foundation: The Hidden Costs for African Music Pros!, outlines the same glaring flaw.
+
+### Kenyan Musicians Lagos Travel Funding: A Non-Existent Solution
+
+It’s an insult to the vibrant, yet often underfunded, Kenyan music scene. We have a rich history with Berklee, with alumni like Xenia Manasseh, Eric Wainaina, and Lisa Oduor-Noah having forged impressive careers after studying there. These are individuals who likely found ways, often Herculean, to fund their studies abroad. But this "intensive program" is pitched as a direct, on-continent solution, yet it replicates the same financial hurdles on a smaller, more insidious scale. Where is the kenyan musicians lagos travel funding? Where are the provisions for these artists? There are none. This oversight is not accidental; it is a catastrophic failure of design, revealing a fundamental misunderstanding of the target demographic's economic realities. The "opportunity" for Kenyan artists to apply feels less like an open door and more like a cruel tease.
+
+### The True Cost: Crushed Dreams, Not Just Naira
+
+The "Tiwa Savage Berklee Intensive Program Cost" isn't just about travel and accommodation; it's the cost of dashed hopes. It's the psychological toll on an artist who sees an opportunity dangled before them, only to realize they're too poor to grab it. Savage says she wants to "create a platform that helps African music creatives understand what's possible". What this program truly communicates is what's *impossible* for those without financial backing. It's a sad commentary on African philanthropy when even well-intentioned initiatives fall so spectacularly short due to a lack of genuine thought and foresight. This program should have been truly comprehensive, with provisions for all participants, especially those from outside Nigeria.
+
+This foundation, in its current form, is a disservice. Tiwa Savage and Berklee must reassess. If they genuinely care about expanding access, then a truly "fully funded" program, covering all necessary expenses for selected participants from across the continent, is the only acceptable path forward. Anything less is merely a PR spectacle, a betrayal of the very artists they claim to champion.
