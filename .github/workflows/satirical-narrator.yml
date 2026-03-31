@@ -2,7 +2,7 @@ name: Satirical Narrator
 
 on:
   schedule:
-    - cron: '0 3,11,19 * * *'  # 3x daily: 03:00, 11:00, 19:00 UTC (offset from opinions)
+    - cron: '0 3,11,19 * * *'
   workflow_dispatch:
     inputs:
       max_articles:
@@ -65,57 +65,54 @@ jobs:
           from google import genai
           from google.genai import types
 
-          today_str         = datetime.datetime.utcnow().strftime('%Y-%m-%d')
-          full_date_str     = datetime.datetime.utcnow().strftime('%A, %B %d, %Y')
-          publish_timestamp = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
-          current_year      = datetime.datetime.utcnow().strftime('%Y')
-          SITE_BASE_URL     = 'https://zandani.co.ke'
-          FALLBACK_IMAGE    = 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200'
-          MODELS            = ['gemini-2.5-flash', 'gemini-2.0-flash']
+          today_str         = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          full_date_str     = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
+          publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+          current_year      = datetime.datetime.utcnow().strftime("%Y")
+          SITE_BASE_URL     = "https://zandani.co.ke"
+          FALLBACK_IMAGE    = "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200"
+          MODELS            = ["gemini-2.5-flash", "gemini-2.0-flash"]
 
-          POSTS_DIR       = os.environ.get('POSTS_DIR', 'content/posts')
-          MEMORY_FILE     = os.environ.get('MEMORY_FILE', '.github/memory_narratives.json')
-          MAX_ARTICLES    = int(os.environ.get('MAX_ARTICLES', '1'))
-          SOURCE_CATEGORY = os.environ.get('SOURCE_CATEGORY', '').strip().lower()
-          UNSPLASH_KEY    = os.environ.get('UNSPLASH_API_KEY', '').strip()
+          POSTS_DIR       = os.environ.get("POSTS_DIR", "content/posts")
+          MEMORY_FILE     = os.environ.get("MEMORY_FILE", ".github/memory_narratives.json")
+          MAX_ARTICLES    = int(os.environ.get("MAX_ARTICLES", "1"))
+          SOURCE_CATEGORY = os.environ.get("SOURCE_CATEGORY", "").strip().lower()
+          UNSPLASH_KEY    = os.environ.get("UNSPLASH_API_KEY", "").strip()
 
-          NARRATOR_NAME  = 'The Chronicler'
-          NARRATOR_SLUG  = 'the-chronicler'
+          NARRATOR_NAME  = "The Chronicler"
+          NARRATOR_SLUG  = "the-chronicler"
           NARRATOR_VOICE = (
-              'a master satirical storyteller writing as The Chronicler - a narrator who '
-              'speaks in the tradition of great fabulists: Aesop, Swift, Orwell, Achebe. '
-              'You never report. You never opine directly. You TELL STORIES. '
-              'You find a real historical legend, myth, or documented real-life story from '
-              'world history that mirrors the source event, then craft an entirely new '
-              'narrative that runs parallel to it, dripping with irony, sarcasm, or satire '
-              'as the source material demands. You let the story do the judging. '
-              'Your reader finishes the piece thinking: Wait. That story was about TODAY. '
-              'You write with the patience of a storyteller around a fire but the precision '
-              'of a surgeon. Every metaphor is deliberate. Every historical parallel is real. '
-              'The satire is never cheap. The irony is never accidental.'
+              "a master satirical storyteller writing as The Chronicler - a narrator "
+              "in the tradition of Aesop, Swift, Orwell, and Achebe. You never report. "
+              "You never opine directly. You TELL STORIES. You find a real historical "
+              "legend, myth, or documented story from world history that mirrors the "
+              "source event, then craft an entirely new narrative running parallel to it, "
+              "dripping with irony, sarcasm, or satire as the source demands. "
+              "You let the story do the judging. Your reader finishes thinking: "
+              "Wait - that story was about TODAY. Every metaphor is deliberate. "
+              "Every historical parallel is real. The satire is never cheap."
           )
 
           BANNED_PHRASES = [
-              'in conclusion', 'to summarize', 'it is worth noting', 'furthermore',
-              'moreover', 'in todays world', 'in the modern era', 'as we know',
-              'it goes without saying', 'needless to say', 'at the end of the day',
-              'moving forward', 'a testament to', 'tapestry', 'delve into',
-              'dive in', 'buckle up', 'grab your popcorn', 'sasa basi',
-              'in todays digital age', 'navigating the landscape',
-              'serves as a stark reminder', 'one cannot help but wonder',
-              'it begs the question',
+              "in conclusion", "to summarize", "it is worth noting", "furthermore",
+              "moreover", "in todays world", "in the modern era", "as we know",
+              "it goes without saying", "needless to say", "at the end of the day",
+              "moving forward", "a testament to", "tapestry", "delve into",
+              "dive in", "buckle up", "grab your popcorn", "sasa basi",
+              "in todays digital age", "navigating the landscape",
+              "serves as a stark reminder", "one cannot help but wonder",
+              "it begs the question",
           ]
-          banned_str = ', '.join(BANNED_PHRASES)
+          banned_str = ", ".join(BANNED_PHRASES)
 
-          # ── Gemini setup ──────────────────────────────────────────────
           raw_keys = [
-              os.environ.get('GEMINI_WRITE_KEY'),
-              os.environ.get('GEMINI_API_KEY'),
-              os.environ.get('GEMINI_API_KEY1'),
+              os.environ.get("GEMINI_WRITE_KEY"),
+              os.environ.get("GEMINI_API_KEY"),
+              os.environ.get("GEMINI_API_KEY1"),
           ]
           api_keys = [k for k in raw_keys if k and k.strip()]
           if not api_keys:
-              print('No Gemini API keys found. Exiting.')
+              print("No Gemini API keys found. Exiting.")
               sys.exit(1)
 
           key_cycle          = itertools.cycle(api_keys)
@@ -138,429 +135,417 @@ jobs:
                           )
                           candidate = resp.candidates[0] if resp.candidates else None
                           if candidate and candidate.content and candidate.content.parts:
-                              return ''.join(
+                              return "".join(
                                   p.text for p in candidate.content.parts
-                                  if hasattr(p, 'text') and p.text
+                                  if hasattr(p, "text") and p.text
                               ).strip()
-                          return (resp.text or '').strip()
+                          return (resp.text or "").strip()
                       except Exception as e:
                           err = str(e).lower()
-                          if '429' in err or 'quota' in err or 'resource_exhausted' in err:
-                              print('Quota hit. Rotating key...')
+                          if "429" in err or "quota" in err or "resource_exhausted" in err:
+                              print("Quota hit. Rotating key...")
                               current_key = next(key_cycle)
                               client_g    = genai.Client(api_key=current_key)
                               time.sleep(15)
                           else:
-                              print(f'Gemini error ({model_id}): {e}')
+                              print(f"Gemini error ({model_id}): {e}")
                               break
-              raise RuntimeError('All Gemini attempts failed')
+              raise RuntimeError("All Gemini attempts failed")
 
-          # ── Unsplash ──────────────────────────────────────────────────
           def fetch_unsplash_image(query):
               if not UNSPLASH_KEY:
-                  print('  No Unsplash key. Using fallback.')
                   return FALLBACK_IMAGE
               try:
-                  clean = re.sub(r'[^a-zA-Z0-9 ]', '', query)[:60].strip()
+                  clean = re.sub(r"[^a-zA-Z0-9 ]", "", query)[:60].strip()
                   url = (
-                      'https://api.unsplash.com/photos/random'
-                      f'?query={requests.utils.quote(clean)}'
-                      '&orientation=landscape&content_filter=high'
-                      f'&client_id={UNSPLASH_KEY}'
+                      "https://api.unsplash.com/photos/random"
+                      f"?query={requests.utils.quote(clean)}"
+                      "&orientation=landscape&content_filter=high"
+                      f"&client_id={UNSPLASH_KEY}"
                   )
                   resp = requests.get(url, timeout=10)
                   if resp.status_code == 200:
-                      img = resp.json().get('urls', {}).get('regular', FALLBACK_IMAGE)
-                      print(f'  Unsplash image: {img[:70]}')
+                      img = resp.json().get("urls", {}).get("regular", FALLBACK_IMAGE)
+                      print(f"  Unsplash image: {img[:70]}")
                       return img
-                  print(f'  Unsplash {resp.status_code}. Using fallback.')
+                  print(f"  Unsplash {resp.status_code}. Using fallback.")
               except Exception as e:
-                  print(f'  Unsplash error: {e}')
+                  print(f"  Unsplash error: {e}")
               return FALLBACK_IMAGE
 
-          # ── Parse frontmatter ─────────────────────────────────────────
           def parse_frontmatter(filepath):
               try:
-                  with open(filepath, 'r', encoding='utf-8') as f:
+                  with open(filepath, "r", encoding="utf-8") as f:
                       raw = f.read()
-                  fm = re.match(r'^---\n(.*?)\n---\n', raw, re.DOTALL)
+                  fm = re.match(r"^---
+(.*?)
+---
+", raw, re.DOTALL)
                   if not fm:
                       return {}
                   result = {}
                   for line in fm.group(1).splitlines():
-                      m = re.match(r'(\w+):\s*["\']?(.*?)["\']?\s*$', line)
+                      m = re.match(r"(\w+):\s*["'](.*?)["']?\s*$", line)
+                      if not m:
+                          m = re.match(r"(\w+):\s*(.*?)\s*$", line)
                       if m:
                           result[m.group(1).lower()] = m.group(2).strip().strip('"').strip("'")
-                  result['body'] = raw[raw.find('---', 3) + 3:].strip()
+                  result["body"] = raw[raw.find("---", 3) + 3:].strip()
                   return result
               except Exception as e:
-                  print(f'  Parse error {filepath}: {e}')
+                  print(f"  Parse error {filepath}: {e}")
                   return {}
 
-          # ── Load sources ──────────────────────────────────────────────
           def load_source_articles():
               if not os.path.exists(POSTS_DIR):
-                  print(f'Posts dir not found: {POSTS_DIR}')
+                  print(f"Posts dir not found: {POSTS_DIR}")
                   return []
-              excluded = ('chronicles','chronicle','narratives','narrative','opinions','opinion')
+              excluded = ("chronicles","chronicle","narratives","narrative","opinions","opinion")
               sources  = []
               for fn in sorted(os.listdir(POSTS_DIR), reverse=True):
-                  if not fn.endswith('.md'):
+                  if not fn.endswith(".md"):
                       continue
                   meta = parse_frontmatter(os.path.join(POSTS_DIR, fn))
                   if not meta:
                       continue
-                  cat = meta.get('category', '').lower().strip()
+                  cat = meta.get("category", "").lower().strip()
                   if cat in excluded:
                       continue
                   if SOURCE_CATEGORY and cat != SOURCE_CATEGORY:
                       continue
                   sources.append({
-                      'file':     fn,
-                      'slug':     meta.get('slug', fn.replace('.md','')).strip().strip('"'),
-                      'title':    meta.get('title', fn).strip().strip('"'),
-                      'category': cat,
-                      'tags':     meta.get('tags', ''),
-                      'body':     meta.get('body', '')[:3000],
+                      "file":     fn,
+                      "slug":     meta.get("slug", fn.replace(".md","")).strip().strip('"'),
+                      "title":    meta.get("title", fn).strip().strip('"'),
+                      "category": cat,
+                      "tags":     meta.get("tags", ""),
+                      "body":     meta.get("body", "")[:3000],
                   })
-              print(f'Loaded {len(sources)} source articles (chronicles/opinions excluded)')
+              print(f"Loaded {len(sources)} source articles")
               return sources
 
           def pick_sources(sources, memory, count):
-              unchosen = [s for s in sources if hashlib.md5(s['slug'].encode()).hexdigest() not in memory]
+              unchosen = [s for s in sources if hashlib.md5(s["slug"].encode()).hexdigest() not in memory]
               return unchosen[:count]
 
-          # ── Research historical parallel ───────────────────────────────
           def research_historical_parallel(title, category):
               prompt = (
-                  f'Search Google for the topic: "{title}"\n'
-                  f'Category: {category}\n\n'
-                  'Find ONE real, specific, named historical event, legend, myth, or '
-                  'documented real-life story from world history that MIRRORS the themes, '
-                  'power dynamics, or human behavior in this topic.\n\n'
-                  'Requirements:\n'
-                  '- Must be REAL and named: real names, real dates, real places\n'
-                  '- Must have a clear thematic parallel to the source topic\n'
-                  '- Can be: a kings folly, colonial act, revolt, court scandal, '
-                  '  great betrayal, famous trial, philosophers parable made real\n'
-                  '- Must NOT be generic (e.g. just like ancient Rome is too vague)\n\n'
-                  'Return a JSON object with ONLY these fields. No extra text:\n'
-                  '{"historical_story": "Name of the historical event",'
-                  '"era": "Time period and location",'
-                  '"key_figures": "Named people involved",'
-                  '"parallel": "2-3 sentences on how it mirrors the source topic",'
-                  '"narrative_tone": "irony|sarcasm|satire|dark humor|tragic irony",'
-                  '"image_search_term": "3-5 word visual theme e.g. ancient throne room"}'
+                  f"Search Google for the topic: \"{title}\"\n"
+                  f"Category: {category}\n\n"
+                  "Find ONE real, specific, named historical event, legend, myth, or "
+                  "documented real-life story from world history that MIRRORS the themes, "
+                  "power dynamics, or human behavior in this topic.\n\n"
+                  "Requirements:\n"
+                  "- Must be REAL: real names, real dates, real places\n"
+                  "- Must have a clear thematic parallel to the source topic\n"
+                  "- Can be: a kings folly, colonial act, revolt, court scandal, betrayal, famous trial\n"
+                  "- Must NOT be generic (just like ancient Rome is too vague)\n\n"
+                  "Return a JSON object with ONLY these fields. No extra text:\n"
+                  "{\"historical_story\": \"Name of the event\"\,"
+                  "\"era\": \"Time period and location\"\,"
+                  "\"key_figures\": \"Named people involved\"\,"
+                  "\"parallel\": \"2-3 sentences on how it mirrors the source topic\"\,"
+                  "\"narrative_tone\": \"irony|sarcasm|satire|dark humor|tragic irony\"\,"
+                  "\"image_search_term\": \"3-5 word visual theme e.g. ancient throne room\"}"
               )
               try:
                   raw  = gemini_generate(prompt, temperature=0.4).strip()
-                  raw  = re.sub(r'^```[a-zA-Z]*\n?', '', raw).strip()
-                  raw  = re.sub(r'\n?```\s*$', '', raw).strip()
+                  raw  = re.sub(r"^```[a-zA-Z]*
+?", "", raw).strip()
+                  raw  = re.sub(r"
+?```\s*$", "", raw).strip()
                   data = json.loads(raw)
-                  print(f'  Historical parallel : {data.get("historical_story")} ({data.get("era")})')
-                  print(f'  Narrative tone      : {data.get("narrative_tone")}')
-                  print(f'  Image search term   : {data.get("image_search_term")}')
+                  print(f"  Historical parallel : {data.get('historical_story')} ({data.get('era')})")
+                  print(f"  Narrative tone      : {data.get('narrative_tone')}")
+                  print(f"  Image search term   : {data.get('image_search_term')}")
                   return data
               except Exception as e:
-                  print(f'  Historical research failed: {e}')
+                  print(f"  Historical research failed: {e}")
                   return {
-                      'historical_story': 'The Fall of an Ancient Court',
-                      'era': 'Historical Africa',
-                      'key_figures': 'Unknown',
-                      'parallel': 'Power corrupts those who wield it without accountability.',
-                      'narrative_tone': 'irony',
-                      'image_search_term': 'ancient history books',
+                      "historical_story": "The Fall of an Ancient Court",
+                      "era": "Historical Africa",
+                      "key_figures": "Unknown",
+                      "parallel": "Power corrupts those who wield it without accountability.",
+                      "narrative_tone": "irony",
+                      "image_search_term": "ancient history books",
                   }
 
-          # ── Research longtail keywords ─────────────────────────────────
           def research_longtail_keywords(title, category):
               prompt = (
-                  f'Search Google now for: "{title}"\n'
-                  f'Category: {category}\n\n'
-                  'Find 6 longtail keyword phrases Kenyan audiences are searching about this topic in 2026.\n'
-                  'Rules:\n'
-                  '- Each keyword must be 3-6 words\n'
-                  '- Must be specific: include names, events, or details\n'
-                  '- No generic phrases like latest news\n'
-                  '- Return ONLY a comma-separated list of 6 phrases. Nothing else.'
+                  f"Search Google now for: \"{title}\"\n"
+                  f"Category: {category}\n\n"
+                  "Find 6 longtail keyword phrases Kenyan audiences are searching about this topic in 2026.\n"
+                  "Rules:\n"
+                  "- Each keyword must be 3-6 words\n"
+                  "- Must be specific: include names, events, or details\n"
+                  "- No generic phrases like latest news\n"
+                  "- Return ONLY a comma-separated list of 6 phrases. Nothing else."
               )
               try:
                   raw      = gemini_generate(prompt, temperature=0.3).strip()
-                  raw      = re.sub(r'^[\d.\-*]+\s*', '', raw, flags=re.MULTILINE)
-                  keywords = [k.strip().lower() for k in re.split(r'[,\n]', raw) if k.strip()]
-                  result   = ', '.join(keywords[:6])
-                  print(f'  Longtail keywords: {result}')
+                  raw      = re.sub(r"^[\d.\-*]+\s*", "", raw, flags=re.MULTILINE)
+                  keywords = [k.strip().lower() for k in re.split(r"[,
+]", raw) if k.strip()]
+                  result   = ", ".join(keywords[:6])
+                  print(f"  Longtail keywords: {result}")
                   return result
               except Exception as e:
-                  print(f'  Keyword research failed: {e}')
+                  print(f"  Keyword research failed: {e}")
                   return title.lower()
 
-          # ── Field extractor ───────────────────────────────────────────
           def pf(label, text):
-              m = re.search(rf'^{label}:\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
+              m = re.search(rf"^{label}:\s*(.+)$", text, re.MULTILINE | re.IGNORECASE)
               if m:
                   val = m.group(1).strip()
                   if len(val) > 2:
                       return val
-              m = re.search(rf'{label}:\s*(.+?)(?:\n|$)', text, re.IGNORECASE)
-              return m.group(1).strip() if m else ''
+              m = re.search(rf"{label}:\s*(.+?)(?:
+|$)", text, re.IGNORECASE)
+              return m.group(1).strip() if m else ""
 
-          # ── Build prompt ──────────────────────────────────────────────
-          def build_prompt(source, historical, longtail_keywords, internal_links):
-              src_title   = source['title']
-              src_slug    = source['slug']
-              src_body    = source['body'][:1500]
-              src_cat     = source['category']
-              hist_story  = historical.get('historical_story', '')
-              hist_era    = historical.get('era', '')
-              hist_people = historical.get('key_figures', '')
-              hist_par    = historical.get('parallel', '')
-              tone        = historical.get('narrative_tone', 'irony')
+          def build_prompt(source, historical, longtail_kw, internal_links):
+              src_title   = source["title"]
+              src_slug    = source["slug"]
+              src_body    = source["body"][:1500]
+              src_cat     = source["category"]
+              hist_story  = historical.get("historical_story", "")
+              hist_era    = historical.get("era", "")
+              hist_people = historical.get("key_figures", "")
+              hist_par    = historical.get("parallel", "")
+              tone        = historical.get("narrative_tone", "irony")
               p = []
-              p.append(f'Current Date: {full_date_str}. Year: {current_year}.')
-              p.append('')
-              p.append(f'YOUR ROLE: You are {NARRATOR_VOICE}')
-              p.append('')
-              p.append('OUTPUT TYPE: SATIRICAL NARRATIVE - not a news report, not an opinion.')
-              p.append('You are writing a STORY. It must read like literature.')
-              p.append('')
-              p.append('SOURCE EVENT (your inspiration - DO NOT summarize or report it):')
-              p.append(f'TITLE: "{src_title}"')
-              p.append(f'CATEGORY: {src_cat}')
-              p.append(f'URL: {SITE_BASE_URL}/article/{src_slug}')
-              p.append('EXCERPT:')
+              p.append(f"Current Date: {full_date_str}. Year: {current_year}.")
+              p.append("")
+              p.append(f"YOUR ROLE: You are {NARRATOR_VOICE}")
+              p.append("")
+              p.append("OUTPUT TYPE: SATIRICAL NARRATIVE - not a news report, not an opinion.")
+              p.append("You are writing a STORY. It must read like literature.")
+              p.append("")
+              p.append("SOURCE EVENT (your inspiration - DO NOT summarize or report it):")
+              p.append(f"TITLE: \"{src_title}\"")
+              p.append(f"CATEGORY: {src_cat}")
+              p.append(f"URL: {SITE_BASE_URL}/article/{src_slug}")
+              p.append("EXCERPT:")
               p.append(src_body)
-              p.append('')
-              p.append('YOUR HISTORICAL ANCHOR (MANDATORY - weave this into the narrative):')
-              p.append(f'Historical Story: {hist_story}')
-              p.append(f'Era and Place: {hist_era}')
-              p.append(f'Key Figures: {hist_people}')
-              p.append(f'Why It Mirrors The Source: {hist_par}')
-              p.append(f'Dominant Tone: {tone.upper()}')
-              p.append('')
-              p.append('HOW TO USE THE HISTORICAL ANCHOR:')
-              p.append('- Open the piece IN the historical world. Tell that story first. Make it vivid.')
-              p.append('- Midway, pivot. Show the reader the parallel to the source event.')
-              p.append('- Do NOT explain the parallel like a teacher. Let the irony/satire speak itself.')
-              p.append('- The historical story and the modern event must feel like ONE continuous truth.')
-              p.append('- Name real historical figures. Give real dates. Use real places.')
-              p.append('')
-              p.append('SEO LONGTAIL KEYWORDS (MANDATORY USAGE):')
-              p.append(f'Target keywords: {longtail_keywords}')
-              p.append('- Use at least 4 of these phrases naturally in the article body')
-              p.append('- Use at least 1 longtail keyword in the TITLE')
-              p.append('- Use at least 1 longtail keyword in the EXCERPT')
-              p.append('- Use at least 2 longtail keywords in subheadings')
-              p.append('- NEVER keyword-stuff. Every phrase must read naturally.')
-              p.append('')
-              p.append('RESEARCH INSTRUCTION:')
-              p.append(f'1. Search Google for: "{src_title} {current_year}"')
-              p.append(f'2. Search Google for: "{hist_story} history facts"')
-              p.append('3. Verify all facts. DO NOT fabricate quotes, dates, or events.')
-              p.append('')
-              p.append('MANDATORY SOURCE LINK (embed naturally once mid-body):')
-              p.append(f'Title: {src_title} | URL: {SITE_BASE_URL}/article/{src_slug}')
-              p.append('')
-              p.append('OPTIONAL INTERNAL LINKS (use ONE if genuinely relevant):')
+              p.append("")
+              p.append("YOUR HISTORICAL ANCHOR (MANDATORY - weave this into the narrative):")
+              p.append(f"Historical Story: {hist_story}")
+              p.append(f"Era and Place: {hist_era}")
+              p.append(f"Key Figures: {hist_people}")
+              p.append(f"Why It Mirrors The Source: {hist_par}")
+              p.append(f"Dominant Tone: {tone.upper()}")
+              p.append("")
+              p.append("HOW TO USE THE HISTORICAL ANCHOR:")
+              p.append("- Open the piece IN the historical world. Tell that story first. Make it vivid.")
+              p.append("- Midway, pivot. Show the reader the parallel to the source event.")
+              p.append("- Do NOT explain the parallel like a teacher. Let the irony/satire speak itself.")
+              p.append("- Name real historical figures. Give real dates. Use real places.")
+              p.append("")
+              p.append("SEO LONGTAIL KEYWORDS (MANDATORY USAGE):")
+              p.append(f"Target keywords: {longtail_kw}")
+              p.append("- Use at least 4 of these phrases naturally in the article body")
+              p.append("- Use at least 1 longtail keyword in the TITLE")
+              p.append("- Use at least 1 longtail keyword in the EXCERPT")
+              p.append("- Use at least 2 longtail keywords in subheadings")
+              p.append("- NEVER keyword-stuff. Every phrase must read naturally.")
+              p.append("")
+              p.append("RESEARCH INSTRUCTION:")
+              p.append(f"1. Search Google for: \"{src_title} {current_year}\"")
+              p.append(f"2. Search Google for: \"{hist_story} history facts\"")
+              p.append("3. Verify all facts. DO NOT fabricate quotes, dates, or events.")
+              p.append("")
+              p.append("MANDATORY SOURCE LINK (embed naturally once mid-body):")
+              p.append(f"Title: {src_title} | URL: {SITE_BASE_URL}/article/{src_slug}")
+              p.append("")
+              p.append("OPTIONAL INTERNAL LINKS (use ONE if genuinely relevant):")
               p.append(internal_links)
-              p.append('')
-              p.append('CRAFT RULES (ALL MANDATORY):')
-              p.append(f'- Dominant tone is {tone.upper()}. Let it permeate every paragraph.')
-              p.append('- Write in scenes. Use dialogue where appropriate. Make it cinematic.')
-              p.append('- Short punchy sentences for impact. Long flowing sentences for immersion.')
-              p.append('- No moralizing. No lecturing. The story is the moral.')
-              p.append('- The reader must finish the piece thinking, not just informed.')
-              p.append('- Kenyan and African cultural texture is welcome and encouraged.')
-              p.append('- Professional English only. No Sheng, no Swahili.')
-              p.append(f'- BANNED PHRASES: {banned_str}')
-              p.append('- No em-dashes. Single hyphens only.')
-              p.append('- NEVER write the author name inside the article body.')
-              p.append('- Minimum 800 words.')
-              p.append('')
-              p.append('TITLE ENGINE:')
-              p.append('- Must intrigue without revealing everything - like a great novel title.')
-              p.append('- Must contain at least ONE longtail keyword.')
-              p.append('- Under 70 characters. No clickbait question marks.')
-              p.append('')
-              p.append('STRUCTURE:')
-              p.append('1. Opening scene 50-70 words: Drop directly into the historical world.')
-              p.append('   A moment. A scene. A line of dialogue. No preamble.')
-              p.append('2. One H2 subheading containing a longtail keyword.')
-              p.append('3. 4-6 narrative sections with H3 subheadings deepening the parallel.')
-              p.append('   At least 2 H3 subheadings must contain a longtail keyword.')
-              p.append('4. The pivot paragraph - where historical story meets modern event.')
-              p.append('   This is the heart of the piece. Handle it with precision.')
-              p.append('5. Mandatory source link embedded as a narrative bridge sentence.')
-              p.append('6. Final line: haunting, ironic, or quietly devastating. No happy endings.')
-              p.append('')
-              p.append('CRITICAL OUTPUT RULES:')
-              p.append('- Output NOTHING before TITLE:')
-              p.append('- No preamble, no markdown code fences, no triple backticks')
-              p.append('- Do NOT add --- frontmatter delimiters anywhere')
-              p.append('- Start your response with exactly: TITLE:')
-              p.append('')
-              p.append('STRICT OUTPUT FORMAT:')
-              p.append('TITLE: [intriguing narrative title with longtail keyword, under 70 chars]')
-              p.append('SLUG: [lowercase-hyphen-slug]')
-              p.append('EXCERPT: [140-155 chars - haunting or satirical hook, includes longtail keyword]')
-              p.append('TAGS: [comma, separated, lowercase - include longtail keywords and historical refs]')
-              p.append('BODY:')
-              p.append('[Full narrative. No title. No author name. No byline. Just the story.]')
-              return '\n'.join(p)
+              p.append("")
+              p.append("CRAFT RULES (ALL MANDATORY):")
+              p.append(f"- Dominant tone is {tone.upper()}. Let it permeate every paragraph.")
+              p.append("- Write in scenes. Use dialogue where appropriate. Make it cinematic.")
+              p.append("- Short punchy sentences for impact. Long flowing sentences for immersion.")
+              p.append("- No moralizing. No lecturing. The story is the moral.")
+              p.append("- The reader must finish thinking, not just informed.")
+              p.append("- Kenyan and African cultural texture is welcome and encouraged.")
+              p.append("- Professional English only. No Sheng, no Swahili.")
+              p.append(f"- BANNED PHRASES: {banned_str}")
+              p.append("- No em-dashes. Single hyphens only.")
+              p.append("- NEVER write the author name inside the article body.")
+              p.append("- Minimum 800 words.")
+              p.append("")
+              p.append("TITLE ENGINE:")
+              p.append("- Must intrigue without revealing everything - like a great novel title.")
+              p.append("- Must contain at least ONE longtail keyword.")
+              p.append("- Under 70 characters. No clickbait question marks.")
+              p.append("")
+              p.append("STRUCTURE:")
+              p.append("1. Opening scene 50-70 words: Drop directly into the historical world.")
+              p.append("   A moment. A scene. A line of dialogue. No preamble.")
+              p.append("2. One H2 subheading containing a longtail keyword.")
+              p.append("3. 4-6 narrative sections with H3 subheadings deepening the parallel.")
+              p.append("   At least 2 H3 subheadings must contain a longtail keyword.")
+              p.append("4. The pivot paragraph: where historical story meets modern event.")
+              p.append("   This is the heart of the piece. Handle it with precision.")
+              p.append("5. Mandatory source link embedded as a narrative bridge sentence.")
+              p.append("6. Final line: haunting, ironic, or quietly devastating. No happy endings.")
+              p.append("")
+              p.append("CRITICAL OUTPUT RULES:")
+              p.append("- Output NOTHING before TITLE:")
+              p.append("- No preamble, no markdown code fences, no triple backticks")
+              p.append("- Do NOT add --- frontmatter delimiters anywhere")
+              p.append("- Start your response with exactly: TITLE:")
+              p.append("")
+              p.append("STRICT OUTPUT FORMAT:")
+              p.append("TITLE: [intriguing narrative title with longtail keyword, under 70 chars]")
+              p.append("SLUG: [lowercase-hyphen-slug]")
+              p.append("EXCERPT: [140-155 chars - haunting or satirical hook, includes longtail keyword]")
+              p.append("TAGS: [comma, separated, lowercase - include longtail keywords and historical refs]")
+              p.append("BODY:")
+              p.append("[Full narrative. No title. No author name. No byline. Just the story.]")
+              return "\n".join(p)
 
-          # ── Write narrative ───────────────────────────────────────────
           def write_narrative(source, historical, longtail_kw):
-              all_files  = [f for f in os.listdir(POSTS_DIR) if f.endswith('.md')]
+              all_files  = [f for f in os.listdir(POSTS_DIR) if f.endswith(".md")]
               sample     = random.sample(all_files, min(len(all_files), 3))
               link_lines = []
               for fn in sample:
                   try:
-                      with open(os.path.join(POSTS_DIR, fn), 'r', encoding='utf-8') as cf:
+                      with open(os.path.join(POSTS_DIR, fn), "r", encoding="utf-8") as cf:
                           txt = cf.read()
-                      t_m = re.search(r'title:\s*["\']?(.*?)["\']?\s*$', txt, re.MULTILINE)
-                      t   = t_m.group(1).strip().strip('"') if t_m else fn.replace('.md','')
-                      link_lines.append(f'- Title: {t} | Link: {SITE_BASE_URL}/article/{fn.replace(".md","")}')
+                      t_m = re.search(r"title:\s*["']?(.*?)["']?\s*$", txt, re.MULTILINE)
+                      t   = t_m.group(1).strip().strip('"') if t_m else fn.replace(".md","")
+                      link_lines.append(f"- Title: {t} | Link: {SITE_BASE_URL}/article/{fn.replace('.md','')}")
                   except Exception:
                       continue
-              internal_links = '\n'.join(link_lines)
-
+              internal_links = "\n".join(link_lines)
               prompt = build_prompt(source, historical, longtail_kw, internal_links)
               raw    = gemini_generate(prompt, temperature=0.97)
-
-              raw = re.sub(r'^```[a-zA-Z]*\n?', '', raw, flags=re.IGNORECASE).strip()
-              raw = re.sub(r'\n?```\s*$', '', raw).strip()
-              raw = re.sub(r'^---\s*\n.*?\n---\s*\n', '', raw, flags=re.DOTALL).strip()
-
-              tp = re.search(r'^TITLE:', raw, re.MULTILINE | re.IGNORECASE)
+              raw = re.sub(r"^```[a-zA-Z]*
+?", "", raw, flags=re.IGNORECASE).strip()
+              raw = re.sub(r"
+?```\s*$", "", raw).strip()
+              raw = re.sub(r"^---\s*
+.*?
+---\s*
+", "", raw, flags=re.DOTALL).strip()
+              tp = re.search(r"^TITLE:", raw, re.MULTILINE | re.IGNORECASE)
               if tp:
                   raw = raw[tp.start():]
-
-              parsed_title   = pf('TITLE',   raw)
-              parsed_slug    = pf('SLUG',    raw)
-              parsed_excerpt = pf('EXCERPT', raw)
-              parsed_tags    = pf('TAGS',    raw)
-
-              bm   = re.search(r'^BODY:\s*\n([\s\S]+)', raw, re.MULTILINE | re.IGNORECASE)
+              parsed_title   = pf("TITLE",   raw)
+              parsed_slug    = pf("SLUG",    raw)
+              parsed_excerpt = pf("EXCERPT", raw)
+              parsed_tags    = pf("TAGS",    raw)
+              bm   = re.search(r"^BODY:\s*
+([\s\S]+)", raw, re.MULTILINE | re.IGNORECASE)
               body = bm.group(1).strip() if bm else raw
-
-              for field in ['TITLE','SLUG','EXCERPT','TAGS','BODY']:
-                  body = re.sub(rf'^{field}:.*\n?', '', body, flags=re.MULTILINE|re.IGNORECASE).strip()
-              body = re.sub(r'^---\s*\n.*?\n---\s*\n?', '', body, flags=re.DOTALL).strip()
-              body = re.sub(r'^(?:\*\*)?(?:By|Author|Narrated by|The Chronicler):?[^\n]*\n+', '', body, flags=re.IGNORECASE).strip()
-
+              for field in ["TITLE","SLUG","EXCERPT","TAGS","BODY"]:
+                  body = re.sub(rf"^{field}:.*
+?", "", body, flags=re.MULTILINE|re.IGNORECASE).strip()
+              body = re.sub(r"^---\s*
+.*?
+---\s*
+?", "", body, flags=re.DOTALL).strip()
+              body = re.sub(r"^(?:\*\*)?(?:By|Author|Narrated by|The Chronicler):?[^
+]*
++", "", body, flags=re.IGNORECASE).strip()
               _D = [chr(0x2014),chr(0x2013),chr(0x2012),chr(0x2015),chr(0x2011),chr(0x2010),chr(0x2212),chr(0xFE58)]
               def sd(s):
-                  for d in _D: s = s.replace(d, '-')
+                  for d in _D: s = s.replace(d, "-")
                   return s
               body           = sd(body)
               parsed_title   = sd(parsed_title)
               parsed_excerpt = sd(parsed_excerpt)
               parsed_tags    = sd(parsed_tags)
-
-              src_title  = source['title']
-              hist_story = historical.get('historical_story', '')
-
+              src_title  = source["title"]
+              hist_story = historical.get("historical_story", "")
               if not parsed_title:
-                  parsed_title = src_title + ' - A Chronicle'
-                  print(f'  WARNING: TITLE empty, fallback: {parsed_title}')
+                  parsed_title = src_title + " - A Chronicle"
               if not parsed_slug:
-                  parsed_slug = re.sub(r'[^a-z0-9]+', '-', parsed_title.lower()).strip('-')[:70]
-                  print(f'  WARNING: SLUG empty, generated: {parsed_slug}')
+                  parsed_slug = re.sub(r"[^a-z0-9]+", "-", parsed_title.lower()).strip("-")[:70]
               if not parsed_excerpt:
-                  fp2 = next((l.strip() for l in body.splitlines() if len(l.strip()) > 40), '')
-                  parsed_excerpt = fp2[:155] if fp2 else f'Chronicle: {parsed_title}'[:155]
-                  print('  WARNING: EXCERPT empty, using fallback')
+                  fp2 = next((l.strip() for l in body.splitlines() if len(l.strip()) > 40), "")
+                  parsed_excerpt = fp2[:155] if fp2 else f"Chronicle: {parsed_title}"[:155]
               if not parsed_tags:
-                  parsed_tags = f'chronicles, kenya, {hist_story.lower()[:30]}'
+                  parsed_tags = f"chronicles, kenya, {hist_story.lower()[:30]}"
               if not body or len(body) < 100:
-                  print(f'  ERROR: Body too short.\n{raw[:500]}')
-                  raise ValueError('Body extraction failed')
+                  raise ValueError("Body extraction failed")
+              return {"TITLE": parsed_title, "SLUG": parsed_slug,
+                      "EXCERPT": parsed_excerpt, "TAGS": parsed_tags, "BODY": body}
 
-              return {'TITLE': parsed_title, 'SLUG': parsed_slug,
-                      'EXCERPT': parsed_excerpt, 'TAGS': parsed_tags, 'BODY': body}
-
-          # ── Save article ──────────────────────────────────────────────
           def save_narrative(parsed, image_url):
-              slug        = parsed['SLUG']
-              canonical   = f'{SITE_BASE_URL}/article/{slug}'
-              author_url  = f'{SITE_BASE_URL}/author/{NARRATOR_SLUG}'
-              description = parsed['EXCERPT'].replace('"', "'")[:160]
-              tags_list   = [t.strip().lower().replace(' ','-') for t in parsed['TAGS'].split(',') if t.strip()]
-              if 'chronicles' not in tags_list:
-                  tags_list.insert(0, 'chronicles')
+              slug        = parsed["SLUG"]
+              canonical   = f"{SITE_BASE_URL}/article/{slug}"
+              author_url  = f"{SITE_BASE_URL}/author/{NARRATOR_SLUG}"
+              description = parsed["EXCERPT"].replace('"', "'")[:160]
+              tags_list   = [t.strip().lower().replace(" ","-") for t in parsed["TAGS"].split(",") if t.strip()]
+              if "chronicles" not in tags_list:
+                  tags_list.insert(0, "chronicles")
               tags_json = json.dumps(tags_list)
-              fm = '\n'.join([
-                  '---',
-                  f'title: "{parsed["TITLE"].replace(chr(34), chr(39))}"',
-                  f'slug: "{slug}"',
-                  f'description: "{description}"',
-                  f'author: "{NARRATOR_NAME}"',
-                  f'author_url: "{author_url}"',
-                  f'image: "{image_url}"',
-                  'category: "Chronicles"',
-                  f'tags: {tags_json}',
-                  f'canonical: "{canonical}"',
-                  f'date: "{publish_timestamp}"',
-                  '---',
+              fm = "\n".join([
+                  "---",
+                  f"title: \"{parsed['TITLE'].replace(chr(34), chr(39))}\"",
+                  f"slug: \"{slug}\"",
+                  f"description: \"{description}\"",
+                  f"author: \"{NARRATOR_NAME}\"",
+                  f"author_url: \"{author_url}\"",
+                  f"image: \"{image_url}\"",
+                  "category: \"Chronicles\"",
+                  f"tags: {tags_json}",
+                  f"canonical: \"{canonical}\"",
+                  f"date: \"{publish_timestamp}\"",
+                  "---",
               ])
               os.makedirs(POSTS_DIR, exist_ok=True)
-              filename = f'{today_str}-{slug}.md'
-              with open(os.path.join(POSTS_DIR, filename), 'w', encoding='utf-8') as f:
-                  f.write(fm + '\n\n' + parsed['BODY'] + '\n')
-              print(f'  Saved    : {filename}')
-              print(f'  Title    : {parsed["TITLE"]}')
-              print(f'  Author   : {NARRATOR_NAME}')
-              print(f'  Category : Chronicles')
-              print(f'  Image    : {image_url[:70]}')
-              print(f'  Canon    : {canonical}')
+              filename = f"{today_str}-{slug}.md"
+              with open(os.path.join(POSTS_DIR, filename), "w", encoding="utf-8") as f:
+                  f.write(fm + "\n\n" + parsed["BODY"] + "\n")
+              print(f"  Saved    : {filename}")
+              print(f"  Title    : {parsed['TITLE']}")
+              print(f"  Author   : {NARRATOR_NAME}")
+              print(f"  Category : Chronicles")
+              print(f"  Image    : {image_url[:70]}")
+              print(f"  Canon    : {canonical}")
               return filename
 
-          # ── Main ──────────────────────────────────────────────────────
           memory  = json.load(open(MEMORY_FILE)) if os.path.exists(MEMORY_FILE) else {}
           sources = load_source_articles()
           if not sources:
-              print('No source articles available. Exiting.')
+              print("No source articles available. Exiting.")
               sys.exit(0)
-
           picks            = pick_sources(sources, memory, MAX_ARTICLES)
           articles_written = 0
-
           if not picks:
-              print('All source articles already chronicled. Nothing new to write.')
+              print("All source articles already chronicled. Nothing new to write.")
               sys.exit(0)
-
           for source in picks:
-              print(f'\n--- Chronicle for: {source["title"]} ---')
-              historical  = research_historical_parallel(source['title'], source['category'])
+              print(f"\n--- Chronicle for: {source['title']} ---")
+              historical  = research_historical_parallel(source["title"], source["category"])
               time.sleep(5)
-              longtail_kw = research_longtail_keywords(source['title'], source['category'])
+              longtail_kw = research_longtail_keywords(source["title"], source["category"])
               time.sleep(5)
-              image_url   = fetch_unsplash_image(historical.get('image_search_term', source['title']))
+              image_url   = fetch_unsplash_image(historical.get("image_search_term", source["title"]))
               time.sleep(3)
               try:
                   parsed = write_narrative(source, historical, longtail_kw)
               except Exception as e:
-                  print(f'  Write failed: {e}')
+                  print(f"  Write failed: {e}")
                   continue
               save_narrative(parsed, image_url)
-              src_hash         = hashlib.md5(source['slug'].encode()).hexdigest()
+              src_hash         = hashlib.md5(source["slug"].encode()).hexdigest()
               memory[src_hash] = {
-                  'source_title':     source['title'],
-                  'narrative_slug':   parsed['SLUG'],
-                  'historical_story': historical.get('historical_story', ''),
-                  'narrative_tone':   historical.get('narrative_tone', ''),
-                  'longtail_kw':      longtail_kw,
-                  'written_at':       publish_timestamp,
+                  "source_title":     source["title"],
+                  "narrative_slug":   parsed["SLUG"],
+                  "historical_story": historical.get("historical_story", ""),
+                  "narrative_tone":   historical.get("narrative_tone", ""),
+                  "longtail_kw":      longtail_kw,
+                  "written_at":       publish_timestamp,
               }
               articles_written += 1
               time.sleep(12)
-
           os.makedirs(os.path.dirname(MEMORY_FILE), exist_ok=True)
-          with open(MEMORY_FILE, 'w') as f:
+          with open(MEMORY_FILE, "w") as f:
               json.dump(memory, f, indent=2)
-          print(f'\n{"=" * 40}')
-          print(f'Done. {articles_written} narrative stories written.')
-          print(f'{"=" * 40}')
+          print(f"\nDone. {articles_written} narrative stories written.")
           PYEOF
 
       - name: Git Safety Pull
