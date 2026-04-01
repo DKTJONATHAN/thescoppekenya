@@ -1,0 +1,23 @@
+---
+title: "Acorn REITs post KSh 1.52 billion profit as debt reduction boosts earnings"
+slug: "acorn-reits-post-ksh-1-52-billion-profit-as-debt-reduction-boosts-ea"
+author: "Grace Mkamburi"
+image: "https://i.ibb.co/Q3z505nn/cb02147a5673.jpg"
+category: "Business"
+date: "2026-04-01T18:40:35Z"
+---
+## Acorn REITs Boost Earnings Amid Strategic Expansion
+
+Acorn Investment Management's Qwetu and Qejani REITs achieved a KSh 1.52 billion net profit in 2025, up 9.4%. Strategic asset transfers and debt reduction significantly boosted earnings. This positions the trusts for enhanced income generation and continued development across Kenyan urban centers.
+
+### Financial Performance and Distributions
+
+The integrated D-REIT and I-REIT structure saw a combined net profit of KSh 1.52 billion for 2025, marking a 9.4% increase year-on-year. Net asset value (NAV) climbed 13.2% to KSh 9,194.89 million, translating to an approximate NAV per unit of KSh 24.30. As of March 19, 2026, units traded on the NSE Unquoted Securities Platform at KSh 23.24, indicating a discount of approximately 4.4%. The trust distributed KSh 311.17 million for the year, equivalent to KSh 0.84 per unit, representing a 38% increase from KSh 225.37 million in 2024. This marks its ninth consecutive half-year payout since its February 2021 inception, with cumulative distributions exceeding KSh 828 million. Basic earnings per unit rose from KSh 1.59 to KSh 1.83.
+
+### Asset Transfers and Debt Impact
+
+A key strategic initiative involves the transfer of Qwetu and Qejani Chiromo and Qwetu and Qejani Bogani East from the D-REIT to the I-REIT. These assets were classified as held for sale at year-end 2025 with a combined carrying value of KSh 6.91 billion. Independent valuers, in compliance with Capital Markets Authority regulations, are determining the consideration for this transfer. The completion of these transfers is anticipated to significantly expand the I-REIT's income base and materially reduce the D-REIT's debt load. This reduction will also replenish development capital, enabling the D-REIT to sustain its pipeline across four sites in two counties.
+
+### Development Pipeline and Geographic Expansion
+
+Capital expenditure commitments for the trust stood at KSh 4.28 billion at year-end, up from KSh 2.84 billion in 2024. Active construction is underway in Nairobi CBD, Eldoret, and Kakamega. The Nairobi CBD Larch Properties development, targeting students from the University of Nairobi and the Technical University of Kenya, is 52% complete, with KSh 950.54 million in remaining committed spend. In Eldoret, the Lancewood Properties development aims to add 2,291 beds, with a remaining commitment of KSh 2,054.28 million. The Spicebark Properties development in Kakamega, adjacent to Masinde Muliro University, broke ground in August 2025 and is 3% complete. These Eldoret and Kakamega projects represent the trust's initial construction ventures outside Nairobi County, signalling a strategic regional expansion into areas also experiencing broader economic activity, such as efforts by local farmers to address agricultural challenges. This diversification is critical for extending the trust's reach and tapping into new student accommodation markets.
