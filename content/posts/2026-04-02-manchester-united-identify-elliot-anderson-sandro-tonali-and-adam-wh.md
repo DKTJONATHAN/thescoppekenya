@@ -1,0 +1,25 @@
+---
+title: "Manchester United identify Elliot Anderson, Sandro Tonali and Adam Wharton as midfield transfer targets"
+slug: "manchester-united-identify-elliot-anderson-sandro-tonali-and-adam-wh"
+author: "Sports Desk"
+image: "https://i.ibb.co/5XWMWCb6/523d5e35a1fe.jpg"
+category: "Global News"
+date: "2026-04-02T05:26:08Z"
+---
+## United's Midfield Merry-Go-Round: A Desperate Dance for INEOS
+
+Manchester United, fresh from last summer's attacking and goalkeeping "fixes," now turn their gaze to a midfield in disarray. With Casemiro confirmed to be departing and Manuel Ugarte reportedly heading for the exit alongside seven others, INEOS faces a monumental rebuild, scrambling for 'Plan A, B and C' targets amidst intense competition and questionable valuations. It's less a strategic overhaul, more a frantic patching job.
+
+### The Perpetual State of Flux
+
+It’s an all too familiar narrative at Old Trafford: one season's lauded signings become the next season's deadwood. Casemiro's confirmed exit this summer marks the end of a four-season tenure, with his final Old Trafford appearance slated for May 17. Meanwhile, Manuel Ugarte's Manchester United journey seems to be ending after failing to establish himself, reportedly frustrated with his lack of playing time. This mass exodus - a staggering eight players potentially moving on - isn't a sign of decisive management; it's a glaring admission of consistent recruitment failures, leaving INEOS to chase shadows in the transfer market, seeking at least two new midfielders.
+
+### Chasing Phantoms and Overpaying for Potential
+
+United's 'Plan A' target, Elliot Anderson of Nottingham Forest, appears to be a familiar tale of ambition clashing with reality. Despite being United's "No.1 target for several months," arch-rivals Manchester City are reportedly "ahead in the race" and looking to accelerate a deal. One has to question the efficacy of a "Plan A" already seemingly out of reach. Nottingham Forest will, naturally, demand a hefty fee, potentially over £100m, particularly if Anderson shines at the upcoming World Cup.
+
+Next up is Sandro Tonali, United's 'Plan B' and a player Newcastle reportedly values at £100m. While Newcastle's financial results and a "sell to buy" strategy might present an "opportunity" for United, it also means they'll be negotiating with a club keen to extract maximum value, especially after Italy's failure to qualify for the World Cup means no delay in deciding his future. Real Madrid are also reportedly in the mix, further complicating matters. The cynical observer might wonder if, much like the debate around Afrobeats streams and whether the millions are real or just hype, [cite: https://zandani.co.ke/article/afrobeats-streams-spotify-nigerian-stars-millions-hype] the true value of these targets is inflated by sheer desperation.
+
+### The Wharton Conundrum: More of the Same?
+
+Crystal Palace's Adam Wharton, 'Plan C', represents another potential headache. United are reportedly battling Real Madrid and Chelsea for his signature, with Palace slapping an £87m price tag on him. However, the real concern emerges from within Old Trafford itself: "There are some concerns that his style of play is too similar to Kobbie Mainoo's and that they would not be able to operate as a partnership." This isn't just a misstep; it's a fundamental flaw in scouting if their preferred "Plan C" clashes stylistically with their most promising academy graduate. It speaks volumes about a recruitment department that seemingly struggles to identify distinct, complementary profiles. One can only hope INEOS moves with more precision than this reported 'Plan A, B, C' suggests, or this summer will merely be another expensive instalment in United's ongoing midfield melodrama.
