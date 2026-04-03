@@ -1,5 +1,5 @@
 ---
-title: "Untitled Article"
+title: "What Is The True Meaning Of Easter?"
 date: 2026-04-03T15:02:26Z
 slug: untitled-article
 author: za-ndani
