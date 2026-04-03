@@ -26,7 +26,7 @@
       ]
     },
     {
-      "source": "/(sitemap.xml|deindex-tags-sitemap.xml|rss.xml|llms.txt|robots.txt)",
+      "source": "/(sitemap.xml|sitemap-news.xml|rss.xml|llms.txt|robots.txt)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=300" }
       ]
