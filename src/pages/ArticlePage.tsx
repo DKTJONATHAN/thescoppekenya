@@ -411,21 +411,23 @@ export default function ArticlePage() {
             <span className={`inline-flex items-center gap-1.5 text-[10px] font-black tracking-[0.2em] uppercase text-white px-3 py-1.5 ${catColor(post.category)}`}>
               <Flame className="w-3 h-3" /> {post.category}
             </span>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-black text-white leading-[1.08] tracking-tight">
+            <h1 className="article-headline text-3xl md:text-5xl lg:text-6xl font-serif font-black text-white leading-[1.08] tracking-tight">
               {post.title}
             </h1>
-            <p className="text-zinc-300 text-base md:text-lg leading-relaxed max-w-2xl font-light">
+            <p className="article-excerpt text-zinc-300 text-base md:text-lg leading-relaxed max-w-2xl font-light">
               {post.excerpt}
             </p>
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm pt-1">
-              <Link to={`/author/${post.author.toLowerCase().replace(/\s+/g, '-')}`} className="flex items-center gap-2 group">
+              <Link to={`/author/${post.author.toLowerCase().replace(/\s+/g, '-')}`} className="flex items-center gap-2 group" rel="author">
                 <div className={`w-7 h-7 rounded-full flex items-center justify-center text-white text-[10px] font-black flex-shrink-0 ${authorColor}`}>
                   {authorInitials}
                 </div>
                 <span className="text-white font-bold text-sm group-hover:text-primary transition-colors">{post.author}</span>
               </Link>
               <span className="text-zinc-500">·</span>
-              <span className="flex items-center gap-1.5 text-zinc-400"><Calendar className="w-3.5 h-3.5" /> {formattedDate}</span>
+              <time dateTime={isoPublished} className="flex items-center gap-1.5 text-zinc-400">
+                <Calendar className="w-3.5 h-3.5" /> {formattedDate}
+              </time>
               <span className="text-zinc-500">·</span>
               <span className="flex items-center gap-1.5 text-zinc-400"><Clock className="w-3.5 h-3.5" /> {post.readTime} min read</span>
               <span className="text-zinc-500">·</span>
