@@ -227,33 +227,70 @@ export default function ArticlePage() {
     [post?.excerpt]
   );
 
-  // ── Schema: NewsArticle ──
+  // ── ISO datetime for machine-readable timestamps ──
+  const isoPublished = useMemo(() => {
+    if (!post) return "";
+    const d = new Date(post.date);
+    return isNaN(d.getTime()) ? post.date : d.toISOString();
+  }, [post?.date]);
+
+  // ── Schema: NewsArticle (enhanced for Google News) ──
   const articleSchema = useMemo(() => post ? {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
     "headline": post.title,
     "description": metaDescription,
-    "image": {
-      "@type": "ImageObject",
-      "url": postOgImage,   // ✅ absolute, forced 1200×630
-      "width": 1200,
-      "height": 630,
+    "image": [
+      {
+        "@type": "ImageObject",
+        "url": postOgImage,
+        "width": 1200,
+        "height": 630,
+      },
+    ],
+    "datePublished": isoPublished,
+    "dateModified": isoPublished,
+    "author": {
+      "@type": "Person",
+      "name": post.author,
+      "url": `${SITE_URL}/author/${post.author.toLowerCase().replace(/\s+/g, '-')}`,
     },
-    "datePublished": post.date,
-    "dateModified": post.date,
-    "author": { "@type": "Person", "name": post.author },
     "publisher": {
-      "@type": "Organization",
+      "@type": "NewsMediaOrganization",
       "name": "Za Ndani",
-      "logo": { "@type": "ImageObject", "url": `${SITE_URL}/logo.png` },
+      "url": SITE_URL,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${SITE_URL}/logo.png`,
+        "width": 600,
+        "height": 60,
+      },
     },
-    "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Za Ndani",
+      "url": SITE_URL,
+    },
     "keywords": post.tags.join(", "),
     "articleSection": post.category,
+    "articleBody": post.content?.substring(0, 500),
     "inLanguage": "en-KE",
     "isAccessibleForFree": true,
-    "wordCount": wordCount(post.htmlContent || ""),  // ✅ accurate word count
-  } : null, [post, metaDescription, postOgImage, canonicalUrl]);
+    "wordCount": wordCount(post.htmlContent || ""),
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".article-headline", ".article-excerpt"],
+    },
+    "copyrightHolder": {
+      "@type": "Organization",
+      "name": "Za Ndani",
+    },
+    "copyrightYear": new Date(post.date).getFullYear(),
+  } : null, [post, metaDescription, postOgImage, canonicalUrl, isoPublished]);
 
   // ── Schema: BreadcrumbList ──
   const breadcrumbSchema = useMemo(() => post ? {
