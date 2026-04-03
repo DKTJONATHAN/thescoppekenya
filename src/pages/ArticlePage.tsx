@@ -227,33 +227,70 @@ export default function ArticlePage() {
     [post?.excerpt]
   );
 
-  // ── Schema: NewsArticle ──
+  // ── ISO datetime for machine-readable timestamps ──
+  const isoPublished = useMemo(() => {
+    if (!post) return "";
+    const d = new Date(post.date);
+    return isNaN(d.getTime()) ? post.date : d.toISOString();
+  }, [post?.date]);
+
+  // ── Schema: NewsArticle (enhanced for Google News) ──
   const articleSchema = useMemo(() => post ? {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
     "headline": post.title,
     "description": metaDescription,
-    "image": {
-      "@type": "ImageObject",
-      "url": postOgImage,   // ✅ absolute, forced 1200×630
-      "width": 1200,
-      "height": 630,
+    "image": [
+      {
+        "@type": "ImageObject",
+        "url": postOgImage,
+        "width": 1200,
+        "height": 630,
+      },
+    ],
+    "datePublished": isoPublished,
+    "dateModified": isoPublished,
+    "author": {
+      "@type": "Person",
+      "name": post.author,
+      "url": `${SITE_URL}/author/${post.author.toLowerCase().replace(/\s+/g, '-')}`,
     },
-    "datePublished": post.date,
-    "dateModified": post.date,
-    "author": { "@type": "Person", "name": post.author },
     "publisher": {
-      "@type": "Organization",
+      "@type": "NewsMediaOrganization",
       "name": "Za Ndani",
-      "logo": { "@type": "ImageObject", "url": `${SITE_URL}/logo.png` },
+      "url": SITE_URL,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${SITE_URL}/logo.png`,
+        "width": 600,
+        "height": 60,
+      },
     },
-    "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Za Ndani",
+      "url": SITE_URL,
+    },
     "keywords": post.tags.join(", "),
     "articleSection": post.category,
+    "articleBody": post.content?.substring(0, 500),
     "inLanguage": "en-KE",
     "isAccessibleForFree": true,
-    "wordCount": wordCount(post.htmlContent || ""),  // ✅ accurate word count
-  } : null, [post, metaDescription, postOgImage, canonicalUrl]);
+    "wordCount": wordCount(post.htmlContent || ""),
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".article-headline", ".article-excerpt"],
+    },
+    "copyrightHolder": {
+      "@type": "Organization",
+      "name": "Za Ndani",
+    },
+    "copyrightYear": new Date(post.date).getFullYear(),
+  } : null, [post, metaDescription, postOgImage, canonicalUrl, isoPublished]);
 
   // ── Schema: BreadcrumbList ──
   const breadcrumbSchema = useMemo(() => post ? {
@@ -308,13 +345,19 @@ export default function ArticlePage() {
         <meta property="og:image:type" content="image/webp" />
 
         {/* Article specific */}
-        <meta property="article:published_time" content={post.date} />
-        <meta property="article:modified_time" content={post.date} />
+        <meta property="article:published_time" content={isoPublished} />
+        <meta property="article:modified_time" content={isoPublished} />
         <meta property="article:section" content={post.category} />
         <meta property="article:author" content={post.author} />
+        <meta property="article:publisher" content="https://www.facebook.com/zandani" />
         {post.tags.map((tag: string) => (
           <meta key={tag} property="article:tag" content={tag} />
         ))}
+
+        {/* Google News specific */}
+        <meta name="news_keywords" content={post.tags.slice(0, 10).join(", ")} />
+        <meta name="original-source" content={canonicalUrl} />
+        <meta name="syndication-source" content={canonicalUrl} />
 
         {/* Twitter / X Card */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -368,21 +411,23 @@ export default function ArticlePage() {
             <span className={`inline-flex items-center gap-1.5 text-[10px] font-black tracking-[0.2em] uppercase text-white px-3 py-1.5 ${catColor(post.category)}`}>
               <Flame className="w-3 h-3" /> {post.category}
             </span>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-black text-white leading-[1.08] tracking-tight">
+            <h1 className="article-headline text-3xl md:text-5xl lg:text-6xl font-serif font-black text-white leading-[1.08] tracking-tight">
               {post.title}
             </h1>
-            <p className="text-zinc-300 text-base md:text-lg leading-relaxed max-w-2xl font-light">
+            <p className="article-excerpt text-zinc-300 text-base md:text-lg leading-relaxed max-w-2xl font-light">
               {post.excerpt}
             </p>
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm pt-1">
-              <Link to={`/author/${post.author.toLowerCase().replace(/\s+/g, '-')}`} className="flex items-center gap-2 group">
+              <Link to={`/author/${post.author.toLowerCase().replace(/\s+/g, '-')}`} className="flex items-center gap-2 group" rel="author">
                 <div className={`w-7 h-7 rounded-full flex items-center justify-center text-white text-[10px] font-black flex-shrink-0 ${authorColor}`}>
                   {authorInitials}
                 </div>
                 <span className="text-white font-bold text-sm group-hover:text-primary transition-colors">{post.author}</span>
               </Link>
               <span className="text-zinc-500">·</span>
-              <span className="flex items-center gap-1.5 text-zinc-400"><Calendar className="w-3.5 h-3.5" /> {formattedDate}</span>
+              <time dateTime={isoPublished} className="flex items-center gap-1.5 text-zinc-400">
+                <Calendar className="w-3.5 h-3.5" /> {formattedDate}
+              </time>
               <span className="text-zinc-500">·</span>
               <span className="flex items-center gap-1.5 text-zinc-400"><Clock className="w-3.5 h-3.5" /> {post.readTime} min read</span>
               <span className="text-zinc-500">·</span>

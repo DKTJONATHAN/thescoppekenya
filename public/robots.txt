@@ -2,5 +2,11 @@ User-agent: *
 Disallow: /admin/
 Disallow: /wp-admin/
 
+User-agent: Googlebot-News
+Allow: /article/
+Allow: /category/
+Disallow: /admin/
+Disallow: /tag/
+
 Sitemap: https://zandani.co.ke/sitemap.xml
 Sitemap: https://zandani.co.ke/sitemap-news.xml

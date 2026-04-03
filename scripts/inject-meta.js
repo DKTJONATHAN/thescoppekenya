@@ -64,18 +64,77 @@ files.forEach(file => {
     image = `https://wsrv.nl/?url=${encodeURIComponent(image.replace(/^https?:\/\//, ''))}&w=1200&h=630&fit=cover&output=webp&q=85`;
   }
 
+  // Extract date for article timestamps
+  const dateMatch = content.match(/^date:\s*(.+)$/im);
+  let dateStr = dateMatch ? dateMatch[1].trim().replace(/^["']|["']$/g, '').trim() : new Date().toISOString();
+  // Ensure ISO format
+  const parsedDate = new Date(dateStr);
+  const isoDate = isNaN(parsedDate.getTime()) ? new Date().toISOString() : parsedDate.toISOString();
+
+  // Extract tags for news_keywords
+  const tagsMatch = content.match(/^tags:\s*\[([^\]]*)\]/im);
+  let newsKeywords = '';
+  if (tagsMatch) {
+    newsKeywords = tagsMatch[1].replace(/["']/g, '').trim();
+  }
+
+  // Extract category
+  const catMatch = content.match(/^category:\s*(.+)$/im);
+  const category = catMatch ? catMatch[1].trim().replace(/^["']|["']$/g, '').trim() : 'News';
+
+  // Extract author
+  const authorMatch = content.match(/^author:\s*(.+)$/im);
+  const author = authorMatch ? authorMatch[1].trim().replace(/^["']|["']$/g, '').trim() : 'Za Ndani';
+
   const metaTags = `
     <title>${title} | Za Ndani</title>
     <meta name="description" content="${desc}">
+    <meta name="news_keywords" content="${newsKeywords}">
+    <meta name="original-source" content="https://zandani.co.ke/article/${slug}">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="googlebot-news" content="index, follow">
     <meta property="og:title" content="${title}">
     <meta property="og:description" content="${desc}">
     <meta property="og:image" content="${image}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://zandani.co.ke/article/${slug}">
+    <meta property="og:site_name" content="Za Ndani">
+    <meta property="og:locale" content="en_KE">
+    <meta property="article:published_time" content="${isoDate}">
+    <meta property="article:modified_time" content="${isoDate}">
+    <meta property="article:section" content="${category}">
+    <meta property="article:author" content="${author}">
+    <meta property="article:publisher" content="https://www.facebook.com/zandani">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@zandanikenya">
     <meta name="twitter:title" content="${title}">
     <meta name="twitter:description" content="${desc}">
     <meta name="twitter:image" content="${image}">
+    <link rel="canonical" href="https://zandani.co.ke/article/${slug}">
+    <script type="application/ld+json">
+    ${JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": title.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"'),
+      "description": desc.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"'),
+      "image": [image],
+      "datePublished": isoDate,
+      "dateModified": isoDate,
+      "author": { "@type": "Person", "name": author },
+      "publisher": {
+        "@type": "NewsMediaOrganization",
+        "name": "Za Ndani",
+        "url": "https://zandani.co.ke",
+        "logo": { "@type": "ImageObject", "url": "https://zandani.co.ke/logo.png", "width": 600, "height": 60 }
+      },
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://zandani.co.ke/article/" + slug },
+      "isPartOf": { "@type": "WebSite", "name": "Za Ndani", "url": "https://zandani.co.ke" },
+      "articleSection": category,
+      "inLanguage": "en-KE",
+      "isAccessibleForFree": true,
+      "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["h1", ".article-excerpt"] }
+    })}
+    </script>
   `;
 
   let postHtml = baseHtml.replace(/<title>.*?<\/title>/ig, '');
