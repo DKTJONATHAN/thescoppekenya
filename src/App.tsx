@@ -22,6 +22,7 @@ const CareersPage = lazy(() => import("./pages/CareersPage"));
 const AdminPage = lazy(() => import("./pages/AdminPage"));
 const TagPage = lazy(() => import("./pages/TagPage"));
 const SportsPage = lazy(() => import("./pages/SportsPage"));
+const NewsPage = lazy(() => import("./pages/NewsPage"));
 const LiveScoresPage = lazy(() => import("./pages/LiveScoresPage"));
 const SitemapPage = lazy(() => import("./pages/SitemapPage"));
 const SitemapHtmlPage = lazy(() => import("./pages/SitemapHtmlPage"));
@@ -143,6 +144,7 @@ const App = () => (
                 <Route path="/careers" element={<CareersPage />} />
                 <Route path="/admin" element={<AdminPage />} />
                 <Route path="/tag/:tag" element={<TagPage />} />
+                <Route path="/news" element={<NewsPage />} />
                 <Route path="/sports" element={<SportsPage />} />
                 <Route path="/sports/live" element={<LiveScoresPage />} />
                 <Route path="/sitemap.xml" element={<SitemapPage />} />
