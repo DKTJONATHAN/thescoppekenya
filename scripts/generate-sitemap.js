@@ -142,6 +142,7 @@ function generateSitemap(posts) {
 
   const staticPages = [
     { loc: '/',        priority: '1.0', changefreq: 'hourly',  lastmod: today },
+    { loc: '/news',    priority: '1.0', changefreq: 'hourly',  lastmod: today },
     { loc: '/about',   priority: '0.5', changefreq: 'monthly'                },
     { loc: '/contact', priority: '0.5', changefreq: 'monthly'                },
     { loc: '/privacy', priority: '0.3', changefreq: 'monthly'                },
