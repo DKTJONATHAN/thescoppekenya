@@ -27,44 +27,149 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;600&display=swap" />
     </noscript>
 
+    <!-- PWA / Web App Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Za Ndani" />
+
     <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
     <meta name="theme-color" content="#e11d48" />
 
+    <!-- Verification -->
     <meta name="google-adsense-account" content="ca-pub-9291176772735390" />
     <meta name="google-site-verification" content="VNTfdKk2KxWc62YlzrqHmf9u9zjtric-Fz8nXpdhqr4" />
     <meta name="msvalidate.01" content="2B25BAB72961CD0D4AD6B6FBB1A66B2F" />
 
+    <!-- Robots - Enhanced for News -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="googlebot-news" content="index, follow" />
+    <meta name="googlebot-news" content="index, follow, max-image-preview:large" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
+    <!-- News-specific meta tags -->
+    <meta name="news_keywords" content="Kenya news, Nairobi gossip, entertainment Kenya, breaking news Kenya, politics Kenya, sports Kenya, celebrity news, trending stories" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta name="revisit-after" content="1 day" />
+
+    <!-- Author & Publisher -->
     <meta name="author" content="Jonathan Mwaniki" />
     <meta name="publisher" content="Za Ndani" />
+    
+    <!-- Canonical & Alternate -->
     <link rel="canonical" href="https://zandani.co.ke" />
     <link rel="alternate" hreflang="en" href="https://zandani.co.ke" />
+    <link rel="alternate" hreflang="en-KE" href="https://zandani.co.ke" />
+    <link rel="alternate" hreflang="x-default" href="https://zandani.co.ke" />
 
+    <!-- RSS Feed for News Aggregators -->
+    <link rel="alternate" type="application/rss+xml" title="Za Ndani RSS Feed" href="/rss.xml" />
+
+    <!-- Title & Description -->
     <title>Za Ndani | Breaking Kenya News, Entertainment Gossip & Trending Scoops</title>
     <meta name="description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, trending celebrity news, and sports." />
     <meta name="keywords" content="latest news in Kenya today, breaking news Kenya, Kenyan entertainment news, Nairobi gossip, trending news Kenya, Kenya politics, celebrity gossip Kenya, sports news Kenya, Za Ndani, exclusive Kenyan scoops, current affairs Kenya" />
 
+    <!-- Open Graph -->
     <meta property="og:title" content="Za Ndani | Breaking Kenya News & Entertainment Gossip" />
     <meta property="og:description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, trending celebrity news, and sports." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://zandani.co.ke" />
     <meta property="og:image" content="https://zandani.co.ke/logo.png" />
-    <meta property="og:site_name" content="Za Ndani" />
-    <meta property="og:locale" content="en_KE" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Za Ndani - Kenya News & Entertainment" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:site_name" content="Za Ndani" />
+    <meta property="og:locale" content="en_KE" />
+    <meta property="og:locale:alternate" content="en_US" />
 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@zandanikenya" />
+    <meta name="twitter:creator" content="@zandanikenya" />
     <meta name="twitter:title" content="Za Ndani | Breaking Kenya News & Entertainment Gossip" />
     <meta name="twitter:description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, and trending celebrity news." />
+    <meta name="twitter:image" content="https://zandani.co.ke/logo.png" />
+    <meta name="twitter:image:alt" content="Za Ndani - Kenya News & Entertainment" />
+
+    <!-- JSON-LD: NewsMediaOrganization (Site-wide) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsMediaOrganization",
+      "name": "Za Ndani",
+      "url": "https://zandani.co.ke",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://zandani.co.ke/logo.png",
+        "width": 1200,
+        "height": 630
+      },
+      "sameAs": [
+        "https://twitter.com/zandanikenya",
+        "https://facebook.com/zandani",
+        "https://instagram.com/zandani"
+      ],
+      "ethicsPolicy": "https://zandani.co.ke/ethics",
+      "correctionsPolicy": "https://zandani.co.ke/corrections",
+      "missionStatement": "Delivering breaking news, entertainment gossip, and trending scoops from Kenya with integrity and speed.",
+      "foundingDate": "2024",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nairobi",
+        "addressCountry": "KE"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "newsroom",
+        "email": "newsroom@zandani.co.ke"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Za Ndani",
+      "url": "https://zandani.co.ke",
+      "description": "Breaking Kenyan news, entertainment gossip, politics, and sports.",
+      "inLanguage": "en-KE",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://zandani.co.ke/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Preconnect for analytics and ads -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
   </head>
   <body>
     <div id="root"></div>
 
     <!-- App loads first — nothing above this competes with it -->
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Register Service Worker for PWA -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(err => {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
 
     <!-- AdSense — loads only on first user interaction OR after 8s.
          Lighthouse never triggers this so it does NOT count toward TBT. -->
@@ -95,9 +200,29 @@
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-DZHDWQPCEL', { send_page_view: true });
+          gtag('config', 'G-DZHDWQPCEL', { 
+            send_page_view: true,
+            anonymize_ip: true,
+            allow_google_signals: false
+          });
         };
       }, 3000);
+    </script>
+
+    <!-- JSON-LD: PotentialAction for Google Assistant/News -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://zandani.co.ke",
+      "name": "Za Ndani",
+      "description": "Breaking Kenyan news, entertainment gossip, politics, and sports.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://zandani.co.ke/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
     </script>
   </body>
 </html>
