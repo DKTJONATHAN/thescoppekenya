@@ -5,34 +5,27 @@ import { Link } from "react-router-dom";
 import { ArrowRight, TrendingUp, Flame, Clock } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import AdUnit from "@/components/AdUnit";
-import { PushNotificationPrompt } from "@/components/PushNotificationPrompt";
 
 const INITIAL_LOAD = 12;
 const LOAD_MORE_COUNT = 12;
 const SITE_URL = "https://zandani.co.ke";
 const DEFAULT_OG_IMAGE = `${SITE_URL}/images/default-og.jpg`;
 
-// ─────────────────────────────────────────────────────────────────────────────
-// IMAGE PROXY (rendered images — WebP conversion)
-// ─────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ IMAGE PROXY (rendered images â€” WebP conversion) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function img(url: string, w = 800): string {
   if (!url) return "/images/placeholder.jpg";
   if (url.endsWith(".svg") || url.startsWith("/")) return url;
   return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${w}&output=webp&q=75&we`;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// OG IMAGE (absolute URL, forced dimensions, for meta tags only)
-// ─────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ OG IMAGE (absolute URL, forced dimensions, for meta tags only) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ogImg(url: string): string {
   if (!url) return DEFAULT_OG_IMAGE;
   if (url.startsWith("/")) return `${SITE_URL}${url}`;
   return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=1200&h=630&fit=cover&output=webp&q=85`;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// RELATIVE TIME
-// ─────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ RELATIVE TIME â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function timeAgo(dateStr: string): string {
   const diff = Date.now() - new Date(dateStr).getTime();
   const h = Math.floor(diff / 3600000);
@@ -43,9 +36,7 @@ function timeAgo(dateStr: string): string {
   return new Date(dateStr).toLocaleDateString("en-KE", { day: "numeric", month: "short" });
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// CATEGORY COLOR MAP
-// ─────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ CATEGORY COLOR MAP â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function catColor(cat: string): string {
   const c = cat?.toLowerCase() || "";
   if (c.includes("entertainment")) return "bg-rose-600";
@@ -66,9 +57,7 @@ function catBorder(cat: string): string {
   return "border-zinc-600";
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// STABLE FAKE VIEWS (for demo - replace with real analytics)
-// ─────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ STABLE FAKE VIEWS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function stableViews(slug: string): number {
   let hash = 0;
   for (let i = 0; i < slug.length; i++) {
@@ -82,9 +71,7 @@ type Post = ReturnType<typeof getAllPosts>[0];
 
 const RAW_POSTS = getAllPosts().slice(0, 60);
 
-// ─────────────────────────────────────────────────────────────────────────────
-// MOBILE TOP CARD
-// ─────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ MOBILE TOP CARD â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const MobileTopCard = React.memo(({ post }: { post: Post }) => (
   <Link to={`/article/${post.slug}`} className="group block">
     <article>
@@ -112,9 +99,7 @@ const MobileTopCard = React.memo(({ post }: { post: Post }) => (
   </Link>
 ));
 
-// ─────────────────────────────────────────────────────────────────────────────
-// MOST READ WIDGET
-// ─────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ MOST READ WIDGET â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const MostReadMobile = React.memo(({ posts }: { posts: Post[] }) => (
   <div className="border border-border bg-card px-4 py-4">
     <div className="flex items-center gap-2 mb-3">
@@ -138,9 +123,7 @@ const MostReadMobile = React.memo(({ posts }: { posts: Post[] }) => (
   </div>
 ));
 
-// ─────────────────────────────────────────────────────────────────────────────
-// FEED CARD
-// ─────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ FEED CARD â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const FeedCard = React.memo(({ post }: { post: Post }) => (
   <article className="group flex gap-3 sm:gap-4 border-b border-border py-4">
     <Link to={`/article/${post.slug}`} className="flex-shrink-0 w-24 sm:w-32 md:w-40">
@@ -168,98 +151,21 @@ const FeedCard = React.memo(({ post }: { post: Post }) => (
       <p className="text-muted-foreground text-xs line-clamp-1 mb-1.5 hidden md:block">{post.excerpt}</p>
       <div className="flex items-center gap-2 text-[10px] text-muted-foreground">
         <span className="flex items-center gap-1"><Clock className="w-2.5 h-2.5" />{timeAgo(post.date)}</span>
-        <span>·</span>
+        <span>Â·</span>
         <span>{post.readTime} min</span>
       </div>
     </div>
   </article>
 ));
 
-// ─────────────────────────────────────────────────────────────────────────────
-// NEWS ARTICLE SCHEMA GENERATOR (for multiple posts on homepage)
-// ─────────────────────────────────────────────────────────────────────────────
-const NewsArticleSchemas = ({ posts }: { posts: Post[] }) => {
-  const schemas = posts.slice(0, 10).map((post, index) => ({
-    "@context": "https://schema.org",
-    "@type": "NewsArticle",
-    "@id": `${SITE_URL}/article/${post.slug}#article`,
-    "headline": post.title,
-    "url": `${SITE_URL}/article/${post.slug}`,
-    "datePublished": post.date,
-    "dateModified": post.updatedDate || post.date,
-    "description": post.excerpt,
-    "image": {
-      "@type": "ImageObject",
-      "url": ogImg(post.image),
-      "width": 1200,
-      "height": 630
-    },
-    "author": {
-      "@type": "Person",
-      "name": post.author,
-      "url": `${SITE_URL}/author/${post.author.toLowerCase().replace(/\s+/g, '-')}`
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Za Ndani",
-      "logo": {
-        "@type": "ImageObject",
-        "url": `${SITE_URL}/logo.png`,
-        "width": 512,
-        "height": 512
-      }
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": `${SITE_URL}/article/${post.slug}`
-    },
-    "articleSection": post.category,
-    "keywords": post.tags?.join(", ") || post.category,
-    "inLanguage": "en-KE",
-    "isAccessibleForFree": true,
-    "isPartOf": {
-      "@type": "CreativeWorkSeries",
-      "name": "Za Ndani News"
-    },
-    "position": index + 1
-  }));
-
-  return (
-    <script type="application/ld+json">
-      {JSON.stringify(schemas)}
-    </script>
-  );
-};
-
-// ─────────────────────────────────────────────────────────────────────────────
+// â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�
 // INDEX PAGE
-// ─────────────────────────────────────────────────────────────────────────────
+// â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�
 const Index = () => {
   const [visibleCount, setVisibleCount] = useState(INITIAL_LOAD);
   const [activeCategory, setActiveCategory] = useState("all");
   const [adsReady, setAdsReady] = useState(false);
-  const [userInteracted, setUserInteracted] = useState(false);
   const loaderRef = useRef<HTMLDivElement>(null);
-
-  // Track user interaction for push prompts
-  useEffect(() => {
-    const handleInteraction = () => {
-      if (!userInteracted) {
-        setUserInteracted(true);
-        localStorage.setItem('user_interacted', 'true');
-      }
-      document.removeEventListener('click', handleInteraction);
-      document.removeEventListener('scroll', handleInteraction);
-    };
-    
-    document.addEventListener('click', handleInteraction);
-    document.addEventListener('scroll', handleInteraction);
-    
-    return () => {
-      document.removeEventListener('click', handleInteraction);
-      document.removeEventListener('scroll', handleInteraction);
-    };
-  }, [userInteracted]);
 
   useEffect(() => {
     const t = setTimeout(() => setAdsReady(true), 4000);
@@ -301,23 +207,14 @@ const Index = () => {
   const handleCategoryChange = useCallback((cat: string) => {
     setActiveCategory(cat);
     setVisibleCount(INITIAL_LOAD);
-    // Track category filter for analytics
-    window.gtag?.('event', 'category_filter', { event_category: 'engagement', event_label: cat });
   }, []);
 
   const optimizedHeroImage = heroLead ? img(heroLead.image, 1200) : "/images/placeholder.jpg";
 
-  // OG image: use hero lead's image (proxied to 1200×630) or fallback
+  // â”€â”€ OG image: use hero lead's image (proxied to 1200Ã—630) or fallback â”€â”€
   const homeOgImage = heroLead ? ogImg(heroLead.image) : DEFAULT_OG_IMAGE;
 
-  // Generate news keywords from recent posts
-  const newsKeywords = useMemo(() => {
-    const recentTags = RAW_POSTS.slice(0, 10).flatMap(p => p.tags || []).slice(0, 15);
-    const uniqueTags = [...new Set(recentTags)];
-    return uniqueTags.join(", ");
-  }, []);
-
-  // WebSite schema
+  // â”€â”€ WebSite schema â”€â”€
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -327,24 +224,23 @@ const Index = () => {
     "inLanguage": "en-KE",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": `${SITE_URL}/search?q={search_term_string}`,
-      "query-input": "required name=search_term_string"
-    }
+      "target": `${SITE_URL}/tag/{search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
   };
 
-  // Organization schema for better rich results
-  const organizationSchema = {
+  // â”€â”€ ItemList schema for top articles (helps Google index article links) â”€â”€
+  const itemListSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsMediaOrganization",
-    "name": "Za Ndani",
+    "@type": "ItemList",
+    "name": "Latest Stories",
     "url": SITE_URL,
-    "logo": `${SITE_URL}/logo.png`,
-    "sameAs": [
-      "https://twitter.com/zandanikenya",
-      "https://facebook.com/zandani"
-    ],
-    "ethicsPolicy": `${SITE_URL}/ethics`,
-    "correctionsPolicy": `${SITE_URL}/corrections`
+    "itemListElement": RAW_POSTS.slice(0, 10).map((post, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "url": `${SITE_URL}/article/${post.slug}`,
+      "name": post.title,
+    })),
   };
 
   return (
@@ -352,21 +248,8 @@ const Index = () => {
       <Helmet>
         <title>Za Ndani | Breaking Kenya News, Entertainment Gossip & Trending Scoops</title>
         <meta name="description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, trending celebrity news, and sports." />
-        
-        {/* Enhanced robots for news */}
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
-        <meta name="googlebot-news" content="index, follow, max-image-preview:large" />
-        <meta name="googlebot" content="index, follow, max-snippet:-1" />
-        
-        {/* News-specific keywords */}
-        <meta name="news_keywords" content={newsKeywords} />
-        <meta name="keywords" content={newsKeywords} />
-        
-        {/* Canonical */}
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href={SITE_URL} />
-        <link rel="alternate" hreflang="en" href={SITE_URL} />
-        <link rel="alternate" hreflang="en-KE" href={SITE_URL} />
-        <link rel="alternate" hreflang="x-default" href={SITE_URL} />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
@@ -378,40 +261,31 @@ const Index = () => {
         <meta property="og:image" content={homeOgImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Za Ndani — Kenya News & Gossip" />
+        <meta property="og:image:alt" content="Za Ndani â€” Kenya News & Gossip" />
         <meta property="og:image:type" content="image/webp" />
 
         {/* Twitter / X Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@zandanikenya" />
-        <meta name="twitter:creator" content="@zandanikenya" />
         <meta name="twitter:title" content="Za Ndani | Breaking Kenya News, Entertainment & Gossip" />
         <meta name="twitter:description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, trending celebrity news, and sports." />
         <meta name="twitter:image" content={homeOgImage} />
-        <meta name="twitter:image:alt" content="Za Ndani — Kenya News & Gossip" />
+        <meta name="twitter:image:alt" content="Za Ndani â€” Kenya News & Gossip" />
 
         {/* Preload hero image for LCP */}
         {heroLead && <link rel="preload" as="image" href={optimizedHeroImage} fetchPriority="high" />}
 
         {/* JSON-LD schemas */}
         <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
-        
-        {/* NewsArticle schemas for top stories */}
-        <NewsArticleSchemas posts={RAW_POSTS.slice(0, 10)} />
+        <script type="application/ld+json">{JSON.stringify(itemListSchema)}</script>
       </Helmet>
 
-      {/* Push notification prompt - appears after user interaction */}
-      <PushNotificationPrompt />
-
-      {/* ═══════════════════════════════════════════════════════════════════════ */}
-      {/* HERO SECTION */}
-      {/* ═══════════════════════════════════════════════════════════════════════ */}
+      {/* â•�â•� HERO â•�â•� */}
       {heroLead && (
         <section className="bg-zinc-950 border-b border-zinc-800">
           <div className="container max-w-7xl mx-auto px-3 sm:px-4 py-3">
 
-            {/* MOBILE HERO */}
+            {/* â”€â”€ MOBILE HERO â”€â”€ */}
             <div className="lg:hidden space-y-2">
               <Link to={`/article/${heroLead.slug}`} className="group relative overflow-hidden block aspect-[16/9]">
                 <img
@@ -451,7 +325,7 @@ const Index = () => {
               </div>
             </div>
 
-            {/* DESKTOP HERO */}
+            {/* â”€â”€ DESKTOP HERO â”€â”€ */}
             <div className="hidden lg:grid lg:grid-cols-12 gap-1">
               <Link to={`/article/${heroLead.slug}`} className="lg:col-span-7 group relative overflow-hidden block aspect-[16/10]">
                 <img src={optimizedHeroImage} alt={heroLead.title} fetchPriority="high" loading="eager" decoding="async" width={840} height={525} className="w-full h-full object-cover opacity-75 group-hover:opacity-90 transition-opacity duration-500 absolute inset-0" />
@@ -484,13 +358,10 @@ const Index = () => {
         </section>
       )}
 
-      {/* ═══════════════════════════════════════════════════════════════════════ */}
-      {/* MAIN CONTENT + SIDEBAR */}
-      {/* ═══════════════════════════════════════════════════════════════════════ */}
+      {/* â•�â•� MAIN CONTENT + SIDEBAR â•�â•� */}
       <section className="py-4 md:py-8 lg:py-12 bg-background">
         <div className="container max-w-7xl mx-auto px-3 sm:px-4">
 
-          {/* Category filter tabs */}
           <div
             className="flex items-center gap-1 overflow-x-auto border-b border-border mb-4 md:mb-6 -mx-3 sm:-mx-4 px-3 sm:px-4"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
@@ -511,7 +382,6 @@ const Index = () => {
           </div>
 
           <div className="grid lg:grid-cols-12 gap-6 lg:gap-8">
-            {/* MAIN CONTENT COLUMN */}
             <main className="lg:col-span-8">
               <div className="flex items-center gap-3 mb-4 md:mb-5">
                 <h2 className="text-sm font-black uppercase tracking-tight flex items-center gap-2">
@@ -521,7 +391,6 @@ const Index = () => {
                 <div className="h-px flex-1 bg-border" />
               </div>
 
-              {/* Mobile grid layout */}
               <div className="lg:hidden mb-2">
                 <div className="grid grid-cols-2 gap-x-3 gap-y-5">
                   {displayedPosts.slice(0, 4).map(post => (
@@ -530,7 +399,6 @@ const Index = () => {
                 </div>
               </div>
 
-              {/* Feed list */}
               <div>
                 {displayedPosts.map((post, i) => (
                   <React.Fragment key={post.slug}>
@@ -551,24 +419,21 @@ const Index = () => {
                 ))}
               </div>
 
-              {/* Infinite scroll loader */}
               <div ref={loaderRef} className="py-6 flex justify-center">
                 {hasMore ? (
                   <div className="flex items-center gap-2 text-xs text-muted-foreground">
                     <div className="w-4 h-4 border-2 border-primary border-t-transparent rounded-full animate-spin" />
-                    Loading…
+                    Loadingâ€¦
                   </div>
                 ) : (
                   feedSource.length > 0 && (
-                    <span className="text-xs text-muted-foreground font-bold uppercase tracking-widest">· All stories loaded ·</span>
+                    <span className="text-xs text-muted-foreground font-bold uppercase tracking-widest">Â· All stories loaded Â·</span>
                   )
                 )}
               </div>
             </main>
 
-            {/* SIDEBAR */}
             <aside className="hidden lg:block lg:col-span-4 space-y-8">
-              {/* Most Read widget */}
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <TrendingUp className="w-4 h-4 text-primary" />
@@ -589,13 +454,9 @@ const Index = () => {
                   ))}
                 </div>
               </div>
-
-              {/* Sidebar ad */}
               <div style={{ minHeight: 280 }}>
                 {adsReady && <AdUnit type="effectivegate" />}
               </div>
-
-              {/* More stories widget */}
               <div className="bg-card p-5 border border-border">
                 <h3 className="text-sm font-black uppercase tracking-widest mb-4 flex items-center gap-2">
                   <span className="w-2 h-2 bg-blue-600 rounded-full" /> More Stories
@@ -604,7 +465,7 @@ const Index = () => {
                   {RAW_POSTS.slice(10, 16).map(post => (
                     <Link key={post.slug} to={`/article/${post.slug}`} className="group block">
                       <h4 className="text-sm font-bold line-clamp-2 group-hover:text-primary transition-colors">{post.title}</h4>
-                      <span className="text-[10px] text-muted-foreground">{post.category} · {timeAgo(post.date)}</span>
+                      <span className="text-[10px] text-muted-foreground">{post.category} Â· {timeAgo(post.date)}</span>
                     </Link>
                   ))}
                 </div>
