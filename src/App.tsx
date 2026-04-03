@@ -144,6 +144,7 @@ const App = () => (
                 <Route path="/careers" element={<CareersPage />} />
                 <Route path="/admin" element={<AdminPage />} />
                 <Route path="/tag/:tag" element={<TagPage />} />
+                <Route path="/news" element={<NewsPage />} />
                 <Route path="/sports" element={<SportsPage />} />
                 <Route path="/sports/live" element={<LiveScoresPage />} />
                 <Route path="/sitemap.xml" element={<SitemapPage />} />
