@@ -345,13 +345,19 @@ export default function ArticlePage() {
         <meta property="og:image:type" content="image/webp" />
 
         {/* Article specific */}
-        <meta property="article:published_time" content={post.date} />
-        <meta property="article:modified_time" content={post.date} />
+        <meta property="article:published_time" content={isoPublished} />
+        <meta property="article:modified_time" content={isoPublished} />
         <meta property="article:section" content={post.category} />
         <meta property="article:author" content={post.author} />
+        <meta property="article:publisher" content="https://www.facebook.com/zandani" />
         {post.tags.map((tag: string) => (
           <meta key={tag} property="article:tag" content={tag} />
         ))}
+
+        {/* Google News specific */}
+        <meta name="news_keywords" content={post.tags.slice(0, 10).join(", ")} />
+        <meta name="original-source" content={canonicalUrl} />
+        <meta name="syndication-source" content={canonicalUrl} />
 
         {/* Twitter / X Card */}
         <meta name="twitter:card" content="summary_large_image" />
