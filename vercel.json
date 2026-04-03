@@ -5,7 +5,7 @@
   "trailingSlash": false,
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
-    { "source": "/deindex-tags-sitemap.xml", "destination": "/deindex-tags-sitemap.xml" },
+    { "source": "/sitemap-news.xml", "destination": "/sitemap-news.xml" },
     { "source": "/llms.txt", "destination": "/llms.txt" },
     { "source": "/rss.xml", "destination": "/rss.xml" },
     { "source": "/robots.txt", "destination": "/robots.txt" },
