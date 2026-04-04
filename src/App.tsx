@@ -146,6 +146,7 @@ const App = () => (
                 <Route path="/admin" element={<AdminPage />} />
                 <Route path="/tag/:tag" element={<TagPage />} />
                 <Route path="/news" element={<NewsPage />} />
+                <Route path="/entertainment" element={<EntertainmentPage />} />
                 <Route path="/sports" element={<SportsPage />} />
                 <Route path="/sports/live" element={<LiveScoresPage />} />
                 <Route path="/sitemap.xml" element={<SitemapPage />} />
