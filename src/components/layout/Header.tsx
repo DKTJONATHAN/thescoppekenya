@@ -72,10 +72,16 @@ export function Header() {
 
             <nav className="hidden lg:flex items-center gap-0.5">
               <Link
-                to="/trending"
+                to="/news"
                 className="flex items-center gap-1.5 px-3 py-2 text-sm font-bold text-primary hover:bg-primary/10 rounded-lg transition-all"
               >
                 <Flame className="w-4 h-4" />
+                News
+              </Link>
+              <Link
+                to="/trending"
+                className="px-3 py-2 text-sm font-semibold text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-all"
+              >
                 Trending
               </Link>
               
