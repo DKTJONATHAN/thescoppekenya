@@ -128,11 +128,18 @@ export function Header() {
           <nav className="lg:hidden border-t border-divider bg-background animate-fade-in">
             <div className="container py-4 space-y-1">
               <Link
-                to="/trending"
+                to="/news"
                 className="flex items-center gap-2 px-4 py-3 text-primary hover:bg-primary/10 rounded-lg transition-smooth font-bold"
                 onClick={() => setIsMenuOpen(false)}
               >
                 <Flame className="w-5 h-5" />
+                News
+              </Link>
+              <Link
+                to="/trending"
+                className="block px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-smooth font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Trending
               </Link>
 

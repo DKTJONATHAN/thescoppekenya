@@ -223,6 +223,9 @@ export default function CategoryPage() {
         </div>
       </section>
 
+      {/* Live Updates for this category */}
+      <LiveUpdatesTimeline category={slug} title={`${category.name} Live Updates`} maxItems={10} />
+
       {postsWithViews.length === 0 ? (
         <div className="container py-32 text-center">
           <p className="text-muted-foreground text-lg font-serif italic">No articles in this category yet.</p>

@@ -555,6 +555,7 @@ export default function ArticlePage() {
                   </div>
                 </div>
                 <div className="border border-divider bg-muted/10 p-3 flex justify-center"><AdUnit type="inarticle" /></div>
+                <LiveUpdatesTimeline variant="compact" maxItems={8} title="Live Updates" />
               </div>
             </aside>
           </div>
