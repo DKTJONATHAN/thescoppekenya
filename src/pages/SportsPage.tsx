@@ -7,6 +7,7 @@ import { LiveScoresWidget } from "@/components/sports/LiveScoresWidget";
 import { FixturesList } from "@/components/sports/FixturesList";
 import { StandingsTable } from "@/components/sports/StandingsTable";
 import { AIHeadlinesBanner } from "@/components/sports/AIHeadlinesBanner";
+import { LiveScoreTable } from "@/components/sports/LiveScoreTable";
 import { SportsNewsFeed } from "@/components/sports/SportsNewsFeed";
 import AdUnit from "@/components/AdUnit";
 import { KenyaSportsSection } from "@/components/sports/KenyaSportsSection";
@@ -115,6 +116,7 @@ export default function SportsPage() {
             {/* Main Content Area */}
             <div className="lg:col-span-8 space-y-10">
               <AIHeadlinesBanner />
+              <LiveScoreTable />
 
               {isKenyaSelected ? (
                 <KenyaSportsSection />
@@ -161,7 +163,7 @@ export default function SportsPage() {
                     <Badge className="bg-rose-500/10 text-rose-500 border-0 text-[10px] font-black uppercase">Active</Badge>
                   </div>
                   <div className="p-4">
-                    <LiveScoresWidget />
+                    <SportsNewsFeed />
                   </div>
                 </div>
 
