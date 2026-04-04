@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, TrendingUp, Flame, Clock } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import AdUnit from "@/components/AdUnit";
+import { LiveUpdatesTimeline } from "@/components/news/LiveUpdatesTimeline";
 
 const INITIAL_LOAD = 12;
 const LOAD_MORE_COUNT = 12;
