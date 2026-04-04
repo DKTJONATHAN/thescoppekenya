@@ -210,6 +210,10 @@ const Index = () => {
     setVisibleCount(INITIAL_LOAD);
   }, []);
 
+  const heroImageSrcSet = heroLead 
+    ? `${img(heroLead.image, 600)} 600w, ${img(heroLead.image, 900)} 900w, ${img(heroLead.image, 1200)} 1200w` 
+    : "";
+  const heroImageSizes = "(max-width: 600px) 100vw, (max-width: 900px) 100vw, 1200px";
   const optimizedHeroImage = heroLead ? img(heroLead.image, 1200) : "/images/placeholder.jpg";
 
   // â”€â”€ OG image: use hero lead's image (proxied to 1200Ã—630) or fallback â”€â”€
@@ -247,7 +251,7 @@ const Index = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Za Ndani | Breaking Kenya News, Entertainment & Trending Scoops</title>
+        <title>Za Ndani | Get The Latest Celebrity Gossip, Entertainment News And General News From Kenya And Across The Globe</title>
         <meta name="description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment, political updates, trending celebrity news, and sports." />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href={SITE_URL} />
@@ -257,7 +261,7 @@ const Index = () => {
         <meta property="og:url" content={SITE_URL} />
         <meta property="og:site_name" content="Za Ndani" />
         <meta property="og:locale" content="en_KE" />
-        <meta property="og:title" content="Za Ndani | Breaking Kenya News & Entertainment" />
+        <meta property="og:title" content="Za Ndani | Get The Latest Celebrity Gossip, Entertainment News And General News From Kenya And Across The Globe" />
         <meta property="og:description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment, political updates, trending celebrity news, and sports." />
         <meta property="og:image" content={homeOgImage} />
         <meta property="og:image:width" content="1200" />
@@ -268,13 +272,13 @@ const Index = () => {
         {/* Twitter / X Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@zandanikenya" />
-        <meta name="twitter:title" content="Za Ndani | Breaking Kenya News, Entertainment & Trending Scoops" />
+        <meta name="twitter:title" content="Za Ndani | Get The Latest Celebrity Gossip, Entertainment News And General News From Kenya And Across The Globe" />
         <meta name="twitter:description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment, political updates, trending celebrity news, and sports." />
         <meta name="twitter:image" content={homeOgImage} />
         <meta name="twitter:image:alt" content="Za Ndani â€” Kenya News & Entertainment" />
 
-        {/* Preload hero image for LCP */}
-        {heroLead && <link rel="preload" as="image" href={optimizedHeroImage} fetchPriority="high" />}
+        {/* Preload hero image for LCP (responsive) */}
+        {heroLead && <link rel="preload" as="image" href={optimizedHeroImage} imageSrcSet={heroImageSrcSet} imageSizes={heroImageSizes} fetchPriority="high" />}
 
         {/* JSON-LD schemas */}
         <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
@@ -291,6 +295,8 @@ const Index = () => {
               <Link to={`/article/${heroLead.slug}`} className="group relative overflow-hidden block aspect-[16/9]">
                 <img
                   src={optimizedHeroImage}
+                  srcSet={heroImageSrcSet}
+                  sizes={heroImageSizes}
                   alt={heroLead.title}
                   fetchPriority="high"
                   loading="eager"
@@ -329,7 +335,7 @@ const Index = () => {
             {/* â”€â”€ DESKTOP HERO â”€â”€ */}
             <div className="hidden lg:grid lg:grid-cols-12 gap-1">
               <Link to={`/article/${heroLead.slug}`} className="lg:col-span-7 group relative overflow-hidden block aspect-[16/10]">
-                <img src={optimizedHeroImage} alt={heroLead.title} fetchPriority="high" loading="eager" decoding="async" width={840} height={525} className="w-full h-full object-cover opacity-75 group-hover:opacity-90 transition-opacity duration-500 absolute inset-0" />
+                <img src={optimizedHeroImage} srcSet={heroImageSrcSet} sizes={heroImageSizes} alt={heroLead.title} fetchPriority="high" loading="eager" decoding="async" width={840} height={525} className="w-full h-full object-cover opacity-75 group-hover:opacity-90 transition-opacity duration-500 absolute inset-0" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 z-10">
                   <span className={`text-[10px] font-black tracking-[0.2em] uppercase text-white px-2 py-1 ${catColor(heroLead.category)}`}>{heroLead.category}</span>
