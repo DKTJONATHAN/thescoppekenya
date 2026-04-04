@@ -1,0 +1,35 @@
+---
+title: "DHL Global Forwarding CEO addresses trade barriers and logistics growth in Sub-Saharan Africa"
+slug: "dhl-global-forwarding-ceo-addresses-trade-barriers-and-logistics-gro"
+author: "Grace Mkamburi"
+image: "https://i.ibb.co/0j11RJzx/b3f9c3b73880.jpg"
+category: "Business"
+date: "2026-04-04T10:18:25Z"
+---
+## DHL Global Forwarding CEO Discusses Kenyan Trade Barriers and Logistics Opportunities
+
+Egidio Monteiro, CEO of DHL Global Forwarding, Sub-Saharan Africa, identifies complex customs procedures, critical infrastructure gaps, and fragmented data visibility as primary systemic barriers to seamless intra-African trade. He stresses that robust public-private collaboration and strategic sustainable practices are crucial for building resilient supply chains and fostering inclusive economic growth across the continent, with significant implications for Kenya's market competitiveness.
+
+### Systemic Obstacles to Seamless Trade
+
+Despite consistent growth, Sub-Saharan trade, including Kenya's, continues to grapple with bottlenecks. Monteiro highlights three core challenges. Firstly, customs and border procedures remain a major impediment, making moving goods across African borders overly complex and costly. While the African Continental Free Trade Area (AfCFTA) holds promise, harmonized customs, documentation, and standards are inconsistently implemented. Initiatives like the East African Community's single customs territory and one-stop border posts demonstrate that simplified, digitized processes can significantly reduce clearance times and expand trade volumes.
+
+Secondly, acute infrastructure gaps persist across the region. Some ports and border posts are physically constrained, while others suffer from underutilization due to fragmented planning. The continent requires integrated economic corridors where ports, inland terminals, roads, and rail function as a coordinated network, ensuring predictable transit times and consistent service quality, vital for Kenya's trade efficiency.
+
+Thirdly, visibility and data across trade lanes are often patchy. Customers frequently lack a single, end-to-end view of shipments, complicating inventory planning, trust in schedules, and access to trade finance. Digital platforms for tracking, documentation, and analytics offer clear gains in reliability and working capital efficiency, showcasing the need for their broader adoption in the Kenyan logistics landscape.
+
+### Collaborative Solutions for Logistics Improvement
+
+Meaningful change requires targeted government-private sector collaboration in three key areas. Businesses can engage in structured dialogue with customs authorities, sharing granular data on bottlenecks to support pilots for digital pre-clearance, risk-based inspections, and standardized documentation. This direct engagement can help design processes that meet both compliance and commercial needs, benefiting Kenyan businesses seeking to streamline operations.
+
+Furthermore, the private sector can invest in corridor solutions instead of isolated point solutions. By developing end-to-end multimodal logistics across priority trade routes, combining ocean, air, road, and rail, chokepoints can be bypassed, and resilience strengthened. Logistics providers and cargo owners committing volumes, capital, and expertise to new routings and inland hubs help ensure commercial viability and guide future infrastructure investment.
+
+Finally, scaling digital visibility and standardization is paramount. Companies should adopt shared digital platforms for shipments, documentation, and performance, integrating them with port community or customs systems. Greater alignment on common data standards allows for managing corridors as integrated, end-to-end systems, rather than fragmented nodes, which enhances the competitiveness of Kenyan businesses globally.
+
+### Decarbonization and Sustainable Logistics Pathways
+
+Sustainability in African logistics focuses on decarbonizing operations in line with local infrastructure and financial viability, while strengthening supply chains for resilience and inclusive economic growth. DHL Group aims for net-zero greenhouse gas emissions by 2050. In African markets, this pathway prioritizes greater use of sustainable energy, smarter network design, and effective data utilization to reduce waste and improve planning.
+
+In the short to medium term, significant emissions-reduction opportunities lie in network design and operation. Improved route planning, shipment consolidation, and reduced empty runs can simultaneously lower costs and emissions. Synchronizing flows and improving asset utilization, particularly in trade lanes with directional imbalances, offers immediate, cost-effective emissions reductions. Where feasible, shifting freight from road to rail or coastal shipping can also substantially reduce emissions per tonne-kilometer, with clear potential in Southern and East African corridors for scaled multimodal solutions.
+
+For long-distance transport, sustainable aviation fuel (SAF) and sustainable maritime fuels are becoming increasingly available. DHL's GoGreen Plus initiative supports customer adoption of these options, which is particularly relevant for Kenyan exporters serving carbon-sensitive markets like the European Union, where Scope 3 emissions management and regulatory compliance are growing priorities. Over the long term, the adoption of electric and alternative-fuel vehicles for road transport and renewable energy powered logistics facilities will become more widespread as energy systems and infrastructure across the continent continue to decarbonize.
