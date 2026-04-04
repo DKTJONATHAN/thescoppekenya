@@ -208,10 +208,13 @@ export default function ArticlePage() {
   }, [post?.htmlContent]);
 
   // ── Formatted date ──
-  const formattedDate = useMemo(() =>
-    post ? new Date(post.date).toLocaleDateString("en-KE", { year: "numeric", month: "long", day: "numeric" }) : "",
-    [post?.date]
-  );
+  const formattedDate = useMemo(() => {
+    if (!post) return "";
+    const dateObj = new Date(post.date);
+    const dateStr = dateObj.toLocaleDateString("en-KE", { year: "numeric", month: "long", day: "numeric" });
+    const timeStr = dateObj.toLocaleTimeString("en-KE", { hour: "2-digit", minute: "2-digit", hour12: true });
+    return `${dateStr} at ${timeStr}`;
+  }, [post?.date]);
 
   // ── SEO-ready OG image (absolute, 1200×630) ──
   const postOgImage = useMemo(() => post ? ogImg(post.image) : DEFAULT_OG_IMAGE, [post?.image]);
@@ -441,9 +444,6 @@ export default function ArticlePage() {
         </div>
       </section>
 
-      {/* ════ LIVE UPDATES ════ */}
-      <LiveUpdatesTimeline maxItems={10} title="Live Updates" />
-
       {/* ════ ARTICLE BODY + SIDEBAR ════ */}
       <div className="bg-background">
         <div className="container max-w-6xl mx-auto px-4 py-10">
@@ -502,6 +502,11 @@ export default function ArticlePage() {
                 </div>
                 <p className="text-zinc-400 text-sm mb-6">Fresh Kenyan news and entertainment straight to your inbox every morning.</p>
                 <NewsletterForm />
+              </div>
+
+              {/* ════ LIVE UPDATES ════ */}
+              <div className="mt-10">
+                <LiveUpdatesTimeline maxItems={10} title="Live Updates" />
               </div>
 
               <div className="mt-10 flex justify-center border border-divider bg-muted/10 p-3">
