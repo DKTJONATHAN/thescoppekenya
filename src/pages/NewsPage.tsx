@@ -78,7 +78,7 @@ export default function NewsPage() {
 
   const getViews = useCallback((slug: string) => {
     const clean = slug.replace(/^\//, "").replace(/\.md$/, "");
-    return viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 47;
+    return viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 0;
   }, [viewCounts]);
 
   // Breaking = posts within last 6 hours

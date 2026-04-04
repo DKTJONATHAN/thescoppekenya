@@ -2,7 +2,7 @@ import React, { useEffect, useState, useMemo, useCallback, useRef } from "react"
 import { Layout } from "@/components/layout/Layout";
 import { getAllPosts } from "@/lib/markdown";
 import { Link } from "react-router-dom";
-import { ArrowRight, TrendingUp, Flame, Clock } from "lucide-react";
+import { ArrowRight, TrendingUp, Flame, Clock, Eye } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import AdUnit from "@/components/AdUnit";
 import { LiveUpdatesTimeline } from "@/components/news/LiveUpdatesTimeline";
@@ -73,10 +73,14 @@ type Post = ReturnType<typeof getAllPosts>[0];
 const RAW_POSTS = getAllPosts().slice(0, 60);
 
 // â”€â”€â”€ MOBILE TOP CARD â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-const MobileTopCard = React.memo(({ post }: { post: Post }) => (
+const MobileTopCard = React.memo(({ post, views }: { post: Post; views: number }) => (
   <Link to={`/article/${post.slug}`} className="group block">
     <article>
       <div className={`aspect-[4/3] overflow-hidden bg-muted border-t-[3px] ${catBorder(post.category)}`}>
+        <div className="absolute top-2 right-2 z-10 flex items-center gap-1 text-[10px] text-white bg-black/60 px-1.5 py-0.5">
+          <Eye className="w-3 h-3" />
+          {views > 999 ? `${(views / 1000).toFixed(1)}k` : views}
+        </div>
         <img
           src={img(post.image, 360)}
           alt={post.title}
@@ -125,10 +129,10 @@ const MostReadMobile = React.memo(({ posts }: { posts: Post[] }) => (
 ));
 
 // â”€â”€â”€ FEED CARD â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-const FeedCard = React.memo(({ post }: { post: Post }) => (
+const FeedCard = React.memo(({ post, views }: { post: Post; views: number }) => (
   <article className="group flex gap-3 sm:gap-4 border-b border-border py-4">
     <Link to={`/article/${post.slug}`} className="flex-shrink-0 w-24 sm:w-32 md:w-40">
-      <div className={`aspect-[4/3] overflow-hidden bg-muted border-t-[3px] ${catBorder(post.category)}`}>
+      <div className={`relative aspect-[4/3] overflow-hidden bg-muted border-t-[3px] ${catBorder(post.category)}`}>
         <img
           src={img(post.image, 320)}
           alt={post.title}
@@ -153,6 +157,10 @@ const FeedCard = React.memo(({ post }: { post: Post }) => (
       <div className="flex items-center gap-2 text-[10px] text-muted-foreground">
         <span className="flex items-center gap-1"><Clock className="w-2.5 h-2.5" />{timeAgo(post.date)}</span>
         <span>Â·</span>
+        <span className="flex items-center gap-1 text-primary font-semibold">
+          <Eye className="w-2.5 h-2.5" />{views > 999 ? `${(views / 1000).toFixed(1)}k` : views}
+        </span>
+        <span>Â·</span>
         <span>{post.readTime} min</span>
       </div>
     </div>
@@ -165,8 +173,18 @@ const FeedCard = React.memo(({ post }: { post: Post }) => (
 const Index = () => {
   const [visibleCount, setVisibleCount] = useState(INITIAL_LOAD);
   const [activeCategory, setActiveCategory] = useState("all");
+  const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
   const [adsReady, setAdsReady] = useState(false);
   const loaderRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    fetch("/api/get-views").then(r => r.ok ? r.json() : {}).then(setViewCounts).catch(() => {});
+  }, []);
+
+  const getViews = useCallback((slug: string) => {
+    const clean = slug.replace(/^\//, "").replace(/\.md$/, "");
+    return viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 0;
+  }, [viewCounts]);
 
   useEffect(() => {
     const t = setTimeout(() => setAdsReady(true), 4000);
@@ -200,10 +218,14 @@ const Index = () => {
     return () => obs.disconnect();
   }, [hasMore]);
 
-  const mostRead = useMemo(() =>
-    [...RAW_POSTS].sort((a, b) => stableViews(b.slug) - stableViews(a.slug)).slice(0, 5),
-    []
-  );
+  const mostRead = useMemo(() => {
+    const sorted = [...RAW_POSTS].sort((a, b) => getViews(b.slug) - getViews(a.slug));
+    // If no real views, fallback to our stable hash for mock ranking
+    if (sorted[0] && getViews(sorted[0].slug) === 0) {
+      return [...RAW_POSTS].sort((a, b) => stableViews(b.slug) - stableViews(a.slug)).slice(0, 5);
+    }
+    return sorted.slice(0, 5);
+  }, [viewCounts, getViews]);
 
   const handleCategoryChange = useCallback((cat: string) => {
     setActiveCategory(cat);
@@ -313,6 +335,7 @@ const Index = () => {
                   </h1>
                   <div className="flex items-center gap-3 text-[11px] text-zinc-400 mt-1.5">
                     <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{timeAgo(heroLead.date)}</span>
+                    <span className="flex items-center gap-1 text-primary font-bold"><Eye className="w-3 h-3" />{getViews(heroLead.slug)}</span>
                     <span className="font-semibold truncate">{heroLead.author}</span>
                   </div>
                 </div>
@@ -343,6 +366,7 @@ const Index = () => {
                   <p className="text-zinc-300 text-sm line-clamp-2 mt-2 max-w-md">{heroLead.excerpt}</p>
                   <div className="flex items-center gap-4 text-xs text-zinc-500 mt-3">
                     <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{timeAgo(heroLead.date)}</span>
+                    <span className="flex items-center gap-1 text-primary font-bold"><Eye className="w-3.5 h-3.5" />{getViews(heroLead.slug)}</span>
                     <span className="font-bold text-zinc-400">{heroLead.author}</span>
                   </div>
                 </div>
@@ -355,7 +379,10 @@ const Index = () => {
                     <div className="absolute bottom-0 left-0 right-0 p-5 z-10">
                       <span className={`text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-2 inline-block ${catColor(post.category)}`}>{post.category}</span>
                       <h2 className="text-white font-bold text-base leading-snug line-clamp-2 group-hover:text-primary transition-colors">{post.title}</h2>
-                      <span className="text-zinc-500 text-xs mt-1 flex items-center gap-1"><Clock className="w-3 h-3" />{timeAgo(post.date)}</span>
+                      <div className="flex items-center gap-3 mt-1.5 flex-wrap">
+                        <span className="text-zinc-500 text-xs flex items-center gap-1"><Clock className="w-3 h-3" />{timeAgo(post.date)}</span>
+                        <span className="text-primary text-[11px] font-bold flex items-center gap-1"><Eye className="w-3 h-3" />{getViews(post.slug)}</span>
+                      </div>
                     </div>
                   </Link>
                 ))}
@@ -404,7 +431,7 @@ const Index = () => {
               <div className="lg:hidden mb-2">
                 <div className="grid grid-cols-2 gap-x-3 gap-y-5">
                   {displayedPosts.slice(0, 4).map(post => (
-                    <MobileTopCard key={post.slug} post={post} />
+                    <MobileTopCard key={post.slug} post={post} views={getViews(post.slug)} />
                   ))}
                 </div>
               </div>
@@ -413,7 +440,7 @@ const Index = () => {
                 {displayedPosts.map((post, i) => (
                   <React.Fragment key={post.slug}>
                     <div className={i < 4 ? "hidden lg:block" : ""}>
-                      <FeedCard post={post} />
+                      <FeedCard post={post} views={getViews(post.slug)} />
                     </div>
                     {i === 5 && (
                       <div className="lg:hidden my-5">
@@ -458,7 +485,10 @@ const Index = () => {
                       </span>
                       <div>
                         <h4 className="text-sm font-bold leading-tight line-clamp-2 group-hover:underline">{post.title}</h4>
-                        <span className="text-[10px] text-muted-foreground uppercase">{post.category}</span>
+                        <div className="flex items-center gap-2 mt-1">
+                          <span className="text-[10px] text-muted-foreground uppercase">{post.category}</span>
+                          <span className="text-primary font-bold text-[10px] flex items-center gap-0.5"><Eye className="w-2.5 h-2.5" />{getViews(post.slug)}</span>
+                        </div>
                       </div>
                     </Link>
                   ))}
@@ -475,7 +505,13 @@ const Index = () => {
                   {RAW_POSTS.slice(10, 16).map(post => (
                     <Link key={post.slug} to={`/article/${post.slug}`} className="group block">
                       <h4 className="text-sm font-bold line-clamp-2 group-hover:text-primary transition-colors">{post.title}</h4>
-                      <span className="text-[10px] text-muted-foreground">{post.category} Â· {timeAgo(post.date)}</span>
+                      <div className="flex items-center gap-2 mt-1 text-[10px] text-muted-foreground">
+                        <span>{post.category}</span>
+                        <span>Â·</span>
+                        <span>{timeAgo(post.date)}</span>
+                        <span>Â·</span>
+                        <span className="flex items-center gap-0.5 text-primary font-bold"><Eye className="w-2.5 h-2.5" />{getViews(post.slug)}</span>
+                      </div>
                     </Link>
                   ))}
                 </div>

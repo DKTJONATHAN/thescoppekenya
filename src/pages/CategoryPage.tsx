@@ -108,7 +108,7 @@ export default function CategoryPage() {
     posts.map(post => {
       const clean = post.slug.replace(/^\//, '').replace(/\.md$/, '');
       const v = viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 0;
-      return { ...post, views: v > 0 ? v : 47 };
+      return { ...post, views: v };
     }),
     [posts, viewCounts]
   );

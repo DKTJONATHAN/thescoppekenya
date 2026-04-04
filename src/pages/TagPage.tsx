@@ -61,10 +61,9 @@ export default function TagPage() {
 
   const postsWithViews = useMemo(() =>
     posts.map(post => {
-      // FIXED: Using string replacement instead of regex literal to protect esbuild
       const clean = post.slug.replace(/^\//, '').replace(/\.md$/, '');
       const v = viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 0;
-      return { ...post, views: v > 0 ? v : 47 };
+      return { ...post, views: v };
     }),
     [posts, viewCounts]
   );

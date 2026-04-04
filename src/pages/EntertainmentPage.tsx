@@ -63,7 +63,7 @@ export default function EntertainmentPage() {
 
   const getViews = useCallback((slug: string) => {
     const clean = slug.replace(/^\//, "").replace(/\.md$/, "");
-    return viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 47;
+    return viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 0;
   }, [viewCounts]);
 
   // Hot stories = posts within last 12 hours
