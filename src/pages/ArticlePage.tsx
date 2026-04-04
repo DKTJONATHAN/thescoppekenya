@@ -12,6 +12,7 @@ import { XIcon } from "@/components/XIcon";
 import { NewsletterForm } from "@/components/NewsletterForm";
 import { Helmet } from "react-helmet-async";
 import AdUnit from "@/components/AdUnit";
+import { LiveUpdatesTimeline } from "@/components/news/LiveUpdatesTimeline";
 
 // ─── CATEGORY COLOR MAP ───────────────────────────────────────────────────────
 function catColor(cat: string): string {
