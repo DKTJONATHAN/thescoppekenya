@@ -64,43 +64,43 @@ export default function SportsPage() {
   return (
     <Layout>
       <Helmet>
-        <title>Za Ndani Sports | Live Scores, KPL Updates & AI Match Analysis</title>
-        <meta name="description" content="Professional Kenya sports coverage: Harambee Stars, KPL fixtures, Athletics, and AI-powered match previews. Real-time data and insider reporting." />
+        <title>Za Ndani Sports | Global Football, Live Scores & AI Tactical Analysis</title>
+        <meta name="description" content="Elite global football coverage: Premier League, Champions League, La Liga, and Athletics. Real-time data, AI-powered match previews, and insider reporting from Martin Mutwiri." />
       </Helmet>
 
       {/* Live Ticker Bar */}
-      <div className="bg-headline text-white py-3">
+      <div className="bg-zinc-900/50 border-b border-zinc-800 text-zinc-300 py-3 backdrop-blur-md sticky top-[64px] z-40">
         <div className="container max-w-7xl mx-auto px-4 flex items-center gap-6">
-          <div className="flex items-center gap-2 px-2 py-0.5 rounded bg-primary text-[10px] font-black uppercase tracking-tighter">
+          <div className="flex items-center gap-2 px-2 py-0.5 rounded bg-rose-600 text-[10px] font-black uppercase tracking-tighter text-white">
             <Radio className="w-3 h-3 animate-pulse" />
             Live Now
           </div>
           <div className="flex-1 overflow-hidden">
             <p className="text-xs md:text-sm font-medium animate-in fade-in slide-in-from-right duration-1000">
-              Gor Mahia vs AFC Leopards: AI Match Review Available • Harambee Stars Training Updates • KPL Standings Updated
+              Champions League Quarter-Finals: AI Match Reviews Available • Premier League Title Race Heats Up • Global Standings Updated
             </p>
           </div>
-          <Link to="/sports/live" className="text-xs font-bold text-primary hover:underline underline-offset-4 flex items-center gap-1">
-            All Scores <Activity className="w-3 h-3" />
+          <Link to="/sports" className="text-xs font-bold text-rose-500 hover:text-rose-400 transition-colors flex items-center gap-1">
+            Match Center <Activity className="w-3 h-3" />
           </Link>
         </div>
       </div>
 
-      <main className="py-12 md:py-20 bg-[#F9FAFB] dark:bg-transparent">
+      <main className="py-12 md:py-20 bg-zinc-950 text-zinc-100">
         <div className="container max-w-7xl mx-auto px-4">
           
           {/* Section Header */}
-          <div className="max-w-4xl mb-12">
-            <div className="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-[0.2em] mb-4">
+          <div className="max-w-4xl mb-16">
+            <div className="flex items-center gap-2 text-rose-500 font-bold text-sm uppercase tracking-[0.3em] mb-6">
               <Trophy className="w-4 h-4" />
-              <span>The Arena</span>
+              <span>Continental Elite</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-serif font-black text-headline tracking-tight mb-6">
-              Sports <span className="text-primary italic">Intelligence.</span>
+            <h1 className="text-6xl md:text-8xl font-serif font-black text-white tracking-tighter mb-8 leading-[0.9]">
+              The <span className="text-rose-600 italic">Arena.</span>
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Real-time data meets deep-source journalism. Track the Kenya Premier League, 
-              global football, and Kenyan athletics with AI-driven tactical insights.
+            <p className="text-xl md:text-2xl text-zinc-400 leading-relaxed max-w-2xl font-light">
+              Elite global football meets deep-source journalism. Track the Premier League, 
+              European giants, and world-class athletics with AI tactical insights.
             </p>
           </div>
 
@@ -152,35 +152,38 @@ export default function SportsPage() {
               <div className="sticky top-24 space-y-8">
                 
                 {/* Live Scores Panel */}
-                <div className="bg-surface rounded-[2rem] border border-divider shadow-xl overflow-hidden">
-                  <div className="bg-headline p-6 flex items-center justify-between">
-                    <h2 className="text-white font-bold tracking-tight">Match Center</h2>
-                    <Badge className="bg-primary/20 text-primary border-0">Live</Badge>
+                <div className="bg-zinc-900/40 rounded-[2.5rem] border border-zinc-800/50 shadow-2xl overflow-hidden backdrop-blur-sm">
+                  <div className="bg-zinc-900 p-6 flex items-center justify-between border-b border-zinc-800">
+                    <h2 className="text-zinc-100 font-bold tracking-tight flex items-center gap-2">
+                      <Radio className="w-4 h-4 text-rose-500 animate-pulse" />
+                      Live Center
+                    </h2>
+                    <Badge className="bg-rose-500/10 text-rose-500 border-0 text-[10px] font-black uppercase">Active</Badge>
                   </div>
-                  <div className="p-2">
+                  <div className="p-4">
                     <LiveScoresWidget />
                   </div>
                 </div>
 
                 {/* AI Feature Promo */}
-                <div className="relative group overflow-hidden bg-primary rounded-[2rem] p-8 text-primary-foreground shadow-2xl">
+                <div className="relative group overflow-hidden bg-gradient-to-br from-rose-600 to-rose-800 rounded-[2.5rem] p-8 text-white shadow-2xl border border-rose-500/20">
                   <div className="relative z-10">
-                    <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
+                    <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-6 backdrop-blur-md">
                       <Sparkles className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-2xl font-serif font-bold mb-3 leading-tight text-white">
-                      The Next Level of Analysis.
+                    <h3 className="text-2xl font-serif font-bold mb-4 leading-tight">
+                      Beyond the Scoreline.
                     </h3>
-                    <p className="text-white/80 text-sm mb-6 leading-relaxed">
-                      Select any match to generate a data-backed AI preview or tactical review instantly.
+                    <p className="text-rose-100/80 text-sm mb-6 leading-relaxed">
+                      Instant tactical breakdowns and match previews powered by proprietary football data.
                     </p>
-                    <div className="flex items-center gap-2 font-black text-[10px] uppercase tracking-widest text-white/60">
-                      <Activity className="w-3 h-3" />
-                      Proprietary AI Engine
+                    <div className="flex items-center gap-2 font-black text-[10px] uppercase tracking-widest text-white/40">
+                      <TrendingUp className="w-3 h-3" />
+                      Insights Engine v4.0
                     </div>
                   </div>
                   {/* Decorative element */}
-                  <Flame className="absolute -right-10 -bottom-10 w-48 h-48 opacity-10 group-hover:scale-120 transition-transform duration-500" />
+                  <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-white/5 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700" />
                 </div>
 
                 {/* Sidebar Ad Slot */}
@@ -195,43 +198,47 @@ export default function SportsPage() {
 
       {/* Match Detail Dialog */}
       <Dialog open={!!selectedMatch} onOpenChange={() => setSelectedMatch(null)}>
-        <DialogContent className="max-w-2xl p-0 overflow-hidden rounded-[2rem] border-divider shadow-2xl bg-surface">
+        <DialogContent className="max-w-2xl p-0 overflow-hidden rounded-[2.5rem] border-zinc-800 shadow-2xl bg-zinc-950">
           {selectedMatch && (
             <>
-              <div className="bg-headline p-10 text-white text-center">
-                <p className="text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-6">
+              <div className="bg-zinc-900 p-10 text-white text-center border-b border-zinc-800">
+                <p className="text-rose-500 text-[10px] font-black uppercase tracking-[0.4em] mb-6">
                   Match Intelligence
                 </p>
                 <div className="flex items-center justify-between gap-6">
-                  <div className="flex-1 flex flex-col items-center gap-3">
+                  <div className="flex-1 flex flex-col items-center gap-4">
                     {selectedMatch.homeTeam.crest && (
-                      <img src={selectedMatch.homeTeam.crest} alt="" className="w-16 h-16 object-contain" />
+                      <div className="w-20 h-20 bg-white/5 rounded-2xl p-3 backdrop-blur-sm">
+                        <img src={selectedMatch.homeTeam.crest} alt="" className="w-full h-full object-contain" />
+                      </div>
                     )}
-                    <span className="font-bold text-sm tracking-tight">{selectedMatch.homeTeam.name}</span>
+                    <span className="font-bold text-lg tracking-tight text-zinc-200">{selectedMatch.homeTeam.name}</span>
                   </div>
                   
                   <div className="flex flex-col items-center">
-                    <span className="text-5xl font-black mb-2">
+                    <span className="text-6xl font-black mb-4 tracking-tighter">
                       {selectedMatch.score.fullTime?.home ?? '0'} : {selectedMatch.score.fullTime?.away ?? '0'}
                     </span>
-                    <Badge variant="outline" className="text-white/60 border-white/20">
+                    <Badge variant="outline" className="text-zinc-500 border-zinc-800 bg-zinc-900">
                       {selectedMatch.status === 'FINISHED' ? 'Full Time' : 'Upcoming'}
                     </Badge>
                   </div>
 
-                  <div className="flex-1 flex flex-col items-center gap-3">
+                  <div className="flex-1 flex flex-col items-center gap-4">
                     {selectedMatch.awayTeam.crest && (
-                      <img src={selectedMatch.awayTeam.crest} alt="" className="w-16 h-16 object-contain" />
+                      <div className="w-20 h-20 bg-white/5 rounded-2xl p-3 backdrop-blur-sm">
+                        <img src={selectedMatch.awayTeam.crest} alt="" className="w-full h-full object-contain" />
+                      </div>
                     )}
-                    <span className="font-bold text-sm tracking-tight">{selectedMatch.awayTeam.name}</span>
+                    <span className="font-bold text-lg tracking-tight text-zinc-200">{selectedMatch.awayTeam.name}</span>
                   </div>
                 </div>
               </div>
 
-              <div className="p-8 space-y-6">
-                <div className="flex items-center justify-center gap-6 text-xs text-muted-foreground uppercase font-bold tracking-widest">
+              <div className="p-10 space-y-8">
+                <div className="flex items-center justify-center gap-6 text-[10px] text-zinc-500 uppercase font-black tracking-widest">
                   <span>{selectedMatch.competition.name}</span>
-                  <span className="w-1 h-1 bg-divider rounded-full" />
+                  <span className="w-1.5 h-1.5 bg-zinc-800 rounded-full" />
                   <span>Matchday {selectedMatch.matchday}</span>
                 </div>
 
@@ -239,24 +246,26 @@ export default function SportsPage() {
                   <Button 
                     onClick={generateAIContent} 
                     disabled={isGeneratingAI}
-                    className="w-full h-16 rounded-2xl gradient-primary text-primary-foreground font-bold text-lg shadow-lg hover:shadow-primary/20 transition-all"
+                    className="w-full h-20 rounded-3xl bg-rose-600 hover:bg-rose-700 text-white font-black text-xl shadow-2xl shadow-rose-900/20 transition-all active:scale-[0.98]"
                   >
                     {isGeneratingAI ? (
-                      <><Loader2 className="w-5 h-5 mr-2 animate-spin" /> Analyzing Data...</>
+                      <><Loader2 className="w-6 h-6 mr-3 animate-spin" /> Deep Tactical Scan...</>
                     ) : (
-                      <><Sparkles className="w-5 h-5 mr-2" /> Generate Tactical {selectedMatch.status === 'FINISHED' ? 'Review' : 'Preview'}</>
+                      <><Sparkles className="w-6 h-6 mr-3 text-rose-200" /> Generate Match Intelligence</>
                     )}
                   </Button>
                 ) : (
-                  <div className="bg-muted/30 rounded-3xl p-8 border border-divider animate-in zoom-in-95 duration-300">
-                    <div className="flex items-center gap-2 mb-4">
-                      <Sparkles className="w-5 h-5 text-primary" />
-                      <span className="text-xs font-black text-primary uppercase tracking-widest">
-                        AI Insights Engine
+                  <div className="bg-zinc-900/50 rounded-[2rem] p-10 border border-zinc-800 animate-in fade-in zoom-in-95 duration-500">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="w-8 h-8 bg-rose-600/20 rounded-lg flex items-center justify-center">
+                        <Sparkles className="w-4 h-4 text-rose-500" />
+                      </div>
+                      <span className="text-[10px] font-black text-rose-500 uppercase tracking-[0.2em]">
+                        AI Tactical Report
                       </span>
                     </div>
-                    <h4 className="text-2xl font-serif font-bold text-headline mb-4">{aiContent.headline}</h4>
-                    <p className="text-base text-muted-foreground leading-relaxed whitespace-pre-wrap">
+                    <h4 className="text-3xl font-serif font-black text-white mb-6 leading-tight">{aiContent.headline}</h4>
+                    <p className="text-lg text-zinc-400 leading-relaxed whitespace-pre-wrap font-light">
                       {aiContent.content}
                     </p>
                   </div>

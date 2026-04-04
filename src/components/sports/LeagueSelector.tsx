@@ -19,13 +19,13 @@ const leagueIcons: Record<string, ReactNode> = {
 };
 
 const leagueColors: Record<string, string> = {
-  KPL: "text-green-600",
-  PL: "text-purple-600",
-  PD: "text-orange-500",
-  SA: "text-blue-600",
-  BL1: "text-red-600",
-  FL1: "text-blue-800",
-  CL: "text-yellow-500",
+  KPL: "text-zinc-400",
+  PL: "text-zinc-400",
+  PD: "text-zinc-400",
+  SA: "text-zinc-400",
+  BL1: "text-zinc-400",
+  FL1: "text-zinc-400",
+  CL: "text-zinc-400",
 };
 
 export function LeagueSelector({ selected, onSelect }: LeagueSelectorProps) {
@@ -36,20 +36,19 @@ export function LeagueSelector({ selected, onSelect }: LeagueSelectorProps) {
           key={league.code}
           onClick={() => onSelect(league.code)}
           className={cn(
-            "flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-smooth border",
+            "flex-shrink-0 flex items-center gap-2 px-6 py-3 rounded-2xl text-[10px] font-black uppercase tracking-widest transition-all border shrink-0",
             selected === league.code
-              ? "gradient-primary text-primary-foreground border-transparent shadow-soft"
-              : "bg-background text-foreground border-divider hover:border-primary hover:text-primary"
+              ? "bg-rose-600 text-white border-rose-500 shadow-xl shadow-rose-900/40"
+              : "bg-zinc-900 text-zinc-400 border-zinc-800 hover:border-zinc-700 hover:text-zinc-200"
           )}
         >
-          <span className={cn(selected === league.code ? "text-primary-foreground" : leagueColors[league.code])}>
+          <span className={cn(selected === league.code ? "text-white" : "text-rose-500")}>
             {leagueIcons[league.code]}
           </span>
           {league.isEditorial && (
-            <Sparkles className="w-3 h-3 text-yellow-500" />
+            <Sparkles className="w-3 h-3 text-rose-300 animate-pulse" />
           )}
-          <span className="hidden sm:inline">{league.name}</span>
-          <span className="sm:hidden">{league.code}</span>
+          <span className="inline">{league.name}</span>
         </button>
       ))}
     </div>

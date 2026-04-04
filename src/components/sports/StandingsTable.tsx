@@ -19,9 +19,9 @@ export function StandingsTable({ competition }: StandingsTableProps) {
 
   if (isLoading) {
     return (
-      <div className="space-y-2">
-        {[...Array(10)].map((_, i) => (
-          <Skeleton key={i} className="h-10 w-full" />
+      <div className="space-y-3">
+        {[...Array(12)].map((_, i) => (
+          <Skeleton key={i} className="h-12 w-full bg-zinc-900 rounded-xl" />
         ))}
       </div>
     );
@@ -29,8 +29,8 @@ export function StandingsTable({ competition }: StandingsTableProps) {
 
   if (error || !standings?.length) {
     return (
-      <div className="text-center py-8 text-muted-foreground">
-        Unable to load standings
+      <div className="text-center py-16 text-zinc-500 italic font-light font-serif">
+        Unable to load championship standings
       </div>
     );
   }
@@ -38,70 +38,74 @@ export function StandingsTable({ competition }: StandingsTableProps) {
   const mainTable = standings[0]?.table || [];
 
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto bg-zinc-900/30 rounded-[2rem] border border-zinc-800/50 p-6 backdrop-blur-sm">
       <Table>
-        <TableHeader>
-          <TableRow>
-            <TableHead className="w-12">#</TableHead>
-            <TableHead>Team</TableHead>
-            <TableHead className="text-center w-10">P</TableHead>
-            <TableHead className="text-center w-10">W</TableHead>
-            <TableHead className="text-center w-10">D</TableHead>
-            <TableHead className="text-center w-10">L</TableHead>
-            <TableHead className="text-center w-14 hidden sm:table-cell">GD</TableHead>
-            <TableHead className="text-center w-12 font-bold">Pts</TableHead>
+        <TableHeader className="[&_tr]:border-zinc-800">
+          <TableRow className="hover:bg-transparent">
+            <TableHead className="w-12 text-[10px] font-black uppercase text-zinc-500 tracking-widest">#</TableHead>
+            <TableHead className="text-[10px] font-black uppercase text-zinc-500 tracking-widest">Squad</TableHead>
+            <TableHead className="text-center w-10 text-[10px] font-black uppercase text-zinc-500 tracking-widest">P</TableHead>
+            <TableHead className="text-center w-10 text-[10px] font-black uppercase text-zinc-500 tracking-widest">W</TableHead>
+            <TableHead className="text-center w-10 text-[10px] font-black uppercase text-zinc-500 tracking-widest">D</TableHead>
+            <TableHead className="text-center w-10 text-[10px] font-black uppercase text-zinc-500 tracking-widest">L</TableHead>
+            <TableHead className="text-center w-14 hidden sm:table-cell text-[10px] font-black uppercase text-zinc-500 tracking-widest">GD</TableHead>
+            <TableHead className="text-center w-12 font-black text-rose-500 uppercase tracking-widest text-[10px]">Pts</TableHead>
           </TableRow>
         </TableHeader>
-        <TableBody>
+        <TableBody className="[&_tr]:border-zinc-800/50">
           {mainTable.map((row) => (
             <TableRow 
               key={row.team.id}
               className={cn(
-                row.position <= 4 && "border-l-2 border-l-green-500",
-                row.position >= mainTable.length - 2 && "border-l-2 border-l-red-500"
+                "hover:bg-zinc-800/20 transition-colors",
+                row.position <= 4 && "border-l-[3px] border-l-rose-600/50",
+                row.position >= mainTable.length - 2 && "border-l-[3px] border-l-zinc-700/50"
               )}
             >
-              <TableCell className="font-medium">{row.position}</TableCell>
+              <TableCell className="font-black text-zinc-500 text-xs">{row.position}</TableCell>
               <TableCell>
-                <div className="flex items-center gap-2">
-                  {row.team.crest && (
-                    <img 
-                      src={row.team.crest} 
-                      alt={row.team.name} 
-                      className="w-5 h-5 object-contain"
-                    />
+                <div className="flex items-center gap-3">
+                  {row.team.crest ? (
+                    <div className="w-6 h-6 bg-white/5 rounded p-1">
+                      <img 
+                        src={row.team.crest} 
+                        alt={row.team.name} 
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-6 h-6 bg-zinc-800 rounded animate-pulse" />
                   )}
-                  <span className="truncate max-w-[120px] sm:max-w-none">
+                  <span className="truncate font-bold text-zinc-200 text-sm tracking-tight">
                     {row.team.shortName || row.team.name}
                   </span>
                 </div>
               </TableCell>
-              <TableCell className="text-center">{row.playedGames}</TableCell>
-              <TableCell className="text-center text-green-600">{row.won}</TableCell>
-              <TableCell className="text-center text-muted-foreground">{row.draw}</TableCell>
-              <TableCell className="text-center text-red-600">{row.lost}</TableCell>
+              <TableCell className="text-center text-zinc-400 font-medium text-xs">{row.playedGames}</TableCell>
+              <TableCell className="text-center text-rose-500/80 font-bold text-xs">{row.won}</TableCell>
+              <TableCell className="text-center text-zinc-600 text-xs">{row.draw}</TableCell>
+              <TableCell className="text-center text-zinc-500 text-xs">{row.lost}</TableCell>
               <TableCell className={cn(
-                "text-center hidden sm:table-cell",
-                row.goalDifference > 0 && "text-green-600",
-                row.goalDifference < 0 && "text-red-600"
+                "text-center hidden sm:table-cell text-xs font-medium",
+                row.goalDifference > 0 ? "text-rose-600/60" : "text-zinc-600"
               )}>
                 {row.goalDifference > 0 ? '+' : ''}{row.goalDifference}
               </TableCell>
-              <TableCell className="text-center font-bold">{row.points}</TableCell>
+              <TableCell className="text-center font-black text-zinc-100">{row.points}</TableCell>
             </TableRow>
           ))}
         </TableBody>
       </Table>
 
       {/* Legend */}
-      <div className="flex gap-4 mt-4 text-xs text-muted-foreground">
-        <div className="flex items-center gap-1">
-          <span className="w-2 h-2 rounded-full bg-green-500"></span>
-          <span>Champions League</span>
+      <div className="flex gap-6 mt-8 text-[10px] font-black uppercase tracking-widest text-zinc-600 px-2">
+        <div className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-rose-600"></span>
+          <span>Qualification</span>
         </div>
-        <div className="flex items-center gap-1">
-          <span className="w-2 h-2 rounded-full bg-red-500"></span>
-          <span>Relegation</span>
+        <div className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-zinc-700"></span>
+          <span>Safe Zone</span>
         </div>
       </div>
     </div>

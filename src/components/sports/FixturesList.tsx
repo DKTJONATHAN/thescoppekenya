@@ -13,9 +13,9 @@ export function FixturesList({ competition, onMatchClick }: FixturesListProps) {
 
   if (isLoading) {
     return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {[...Array(6)].map((_, i) => (
-          <Skeleton key={i} className="h-40 w-full rounded-lg" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {[...Array(9)].map((_, i) => (
+          <Skeleton key={i} className="h-56 w-full rounded-3xl bg-zinc-900 border border-zinc-800" />
         ))}
       </div>
     );
@@ -23,8 +23,8 @@ export function FixturesList({ competition, onMatchClick }: FixturesListProps) {
 
   if (error) {
     return (
-      <div className="text-center py-8 text-muted-foreground">
-        Unable to load fixtures
+      <div className="text-center py-16 text-zinc-500 italic font-light">
+        Unable to synchronize global fixtures
       </div>
     );
   }
@@ -52,20 +52,23 @@ export function FixturesList({ competition, onMatchClick }: FixturesListProps) {
 
   const getDateLabel = (dateStr: string) => {
     const date = new Date(dateStr);
-    if (isToday(date)) return 'Today';
+    if (isToday(date)) return 'Global Today';
     if (isTomorrow(date)) return 'Tomorrow';
     if (isYesterday(date)) return 'Yesterday';
     return format(date, 'EEEE, MMMM d');
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-10">
       {sortedDates.map((dateStr) => (
         <div key={dateStr}>
-          <h3 className="text-sm font-semibold text-muted-foreground mb-3 uppercase tracking-wide">
-            {getDateLabel(dateStr)}
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="flex items-center gap-4 mb-6">
+            <h3 className="text-[10px] font-black text-zinc-500 uppercase tracking-[0.3em] shrink-0">
+              {getDateLabel(dateStr)}
+            </h3>
+            <div className="h-px bg-zinc-900 flex-1" />
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {groupedMatches[dateStr].map((match) => (
               <MatchCard 
                 key={match.id} 
