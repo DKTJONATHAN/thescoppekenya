@@ -7,6 +7,7 @@ import { ChevronDown, Eye, Clock, Flame, TrendingUp, Zap } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { Badge } from "@/components/ui/badge";
 import AdUnit from "@/components/AdUnit";
+import { LiveUpdatesTimeline } from "@/components/news/LiveUpdatesTimeline";
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
 function catColor(cat: string): string {
