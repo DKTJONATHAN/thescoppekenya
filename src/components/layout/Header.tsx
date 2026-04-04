@@ -150,7 +150,11 @@ export function Header() {
               {categories.map((category) => (
                 <Link
                   key={category.slug}
-                  to={category.slug === 'sports' ? '/sports' : `/category/${category.slug}`}
+                  to={
+                    category.slug === 'sports' ? '/sports' :
+                    category.slug === 'entertainment' ? '/entertainment' :
+                    `/category/${category.slug}`
+                  }
                   className="block px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-smooth font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
