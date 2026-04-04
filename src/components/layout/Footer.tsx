@@ -23,7 +23,7 @@ export function Footer() {
               Don't Miss Any Story
             </h3>
             <p className="text-muted-foreground mb-6">
-              Get insider news, gossip, and entertainment updates straight to your inbox.
+              Get insider news and entertainment updates straight to your inbox.
             </p>
             <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onSubmit={(e) => e.preventDefault()}>
               <input
@@ -49,7 +49,7 @@ export function Footer() {
               <img src={logoImg} alt="Za Ndani" className="h-12 w-auto" />
             </button>
             <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
-              Kenya's boldest news and entertainment website. Breaking news, gossip, and trending stories — bold, unbiased updates daily.
+              Kenya's boldest news and entertainment website. Breaking news, entertainment, and trending stories — bold, unbiased updates daily.
             </p>
             <div className="flex items-center gap-3">
               {[

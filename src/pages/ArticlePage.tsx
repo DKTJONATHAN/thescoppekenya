@@ -20,7 +20,7 @@ function catColor(cat: string): string {
   if (c.includes("entertainment")) return "bg-rose-600";
   if (c.includes("politics")) return "bg-blue-700";
   if (c.includes("news")) return "bg-amber-600";
-  if (c.includes("gossip")) return "bg-purple-600";
+
   if (c.includes("sports")) return "bg-green-700";
   if (c.includes("tech")) return "bg-cyan-700";
   return "bg-zinc-600";
@@ -441,6 +441,9 @@ export default function ArticlePage() {
         </div>
       </section>
 
+      {/* ════ LIVE UPDATES ════ */}
+      <LiveUpdatesTimeline maxItems={10} title="Live Updates" />
+
       {/* ════ ARTICLE BODY + SIDEBAR ════ */}
       <div className="bg-background">
         <div className="container max-w-6xl mx-auto px-4 py-10">
@@ -497,7 +500,7 @@ export default function ArticlePage() {
                   <Flame className="w-5 h-5 text-rose-500" />
                   <h3 className="font-black text-xl text-white uppercase tracking-tight">Never Miss The Tea</h3>
                 </div>
-                <p className="text-zinc-400 text-sm mb-6">Fresh Kenyan gossip and news straight to your inbox every morning.</p>
+                <p className="text-zinc-400 text-sm mb-6">Fresh Kenyan news and entertainment straight to your inbox every morning.</p>
                 <NewsletterForm />
               </div>
 

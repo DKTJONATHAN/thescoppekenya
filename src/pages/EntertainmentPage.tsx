@@ -90,8 +90,8 @@ export default function EntertainmentPage() {
   const collectionSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Kenya Entertainment News — Celebrity Gossip, Music & TV | Za Ndani",
-    "description": "Latest Kenya entertainment news — celebrity gossip, music releases, TV shows, movies and nightlife. Real-time updates from Za Ndani.",
+    "name": "Kenya Entertainment News — Music & TV | Za Ndani",
+    "description": "Latest Kenya entertainment news — music releases, TV shows, movies and nightlife. Real-time updates from Za Ndani.",
     "url": `${SITE_URL}/entertainment`,
     "isPartOf": { "@type": "WebSite", "name": "Za Ndani", "url": SITE_URL },
     "inLanguage": "en-KE",
@@ -114,12 +114,12 @@ export default function EntertainmentPage() {
   return (
     <Layout>
       <Helmet>
-        <title>Kenya Entertainment News — Celebrity Gossip, Music & TV | Za Ndani</title>
-        <meta name="description" content="Latest Kenya entertainment news — celebrity gossip, music releases, TV shows, movies, Nairobi nightlife. Real-time updates from Za Ndani." />
-        <meta name="keywords" content="kenya entertainment news, celebrity gossip kenya, kenyan music news, nairobi entertainment, kenyan movies, bongo movies, tv shows kenya" />
+        <title>Kenya Entertainment News — Music & TV | Za Ndani</title>
+        <meta name="description" content="Latest Kenya entertainment news — music releases, TV shows, movies, Nairobi nightlife. Real-time updates from Za Ndani." />
+        <meta name="keywords" content="kenya entertainment news, kenyan music news, nairobi entertainment, kenyan movies, bongo movies, tv shows kenya" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
         <meta name="googlebot-news" content="index, follow" />
-        <meta name="news_keywords" content="Kenya entertainment, celebrity gossip Kenya, Kenyan music, Nairobi nightlife" />
+        <meta name="news_keywords" content="Kenya entertainment, Kenyan music, Nairobi nightlife" />
         <link rel="canonical" href={`${SITE_URL}/entertainment`} />
 
         <meta property="og:type" content="website" />
@@ -127,12 +127,12 @@ export default function EntertainmentPage() {
         <meta property="og:site_name" content="Za Ndani" />
         <meta property="og:locale" content="en_KE" />
         <meta property="og:title" content="Kenya Entertainment News | Za Ndani" />
-        <meta property="og:description" content="Latest Kenya entertainment news — celebrity gossip, music, TV, movies. Real-time updates from Za Ndani." />
+        <meta property="og:description" content="Latest Kenya entertainment news — music, TV, movies. Real-time updates from Za Ndani." />
         <meta property="og:image" content={`${SITE_URL}/logo.png`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@zandanikenya" />
         <meta name="twitter:title" content="Kenya Entertainment News | Za Ndani" />
-        <meta name="twitter:description" content="Latest Kenya entertainment news — celebrity gossip, music, TV, movies." />
+        <meta name="twitter:description" content="Latest Kenya entertainment news — music, TV, movies." />
 
         <script type="application/ld+json">{JSON.stringify(collectionSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(itemListSchema)}</script>
@@ -338,7 +338,7 @@ export default function EntertainmentPage() {
                   <div className="grid grid-cols-2 gap-2">
                     {[
                       { name: "News", slug: "news", icon: "📰", href: "/news" },
-                      { name: "Gossip", slug: "gossip", icon: "💬", href: "/category/gossip" },
+                      { name: "Lifestyle", slug: "lifestyle", icon: "🌟", href: "/category/lifestyle" },
                       { name: "Sports", slug: "sports", icon: "⚽", href: "/sports" },
                       { name: "Business", slug: "business", icon: "📈", href: "/category/business" },
                     ].map(cat => (

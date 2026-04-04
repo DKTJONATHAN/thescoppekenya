@@ -67,7 +67,7 @@ export function PushNotificationPrompt() {
             <div className="flex-1">
               <h4 className="font-bold text-white text-sm">Never Miss Breaking News</h4>
               <p className="text-zinc-400 text-xs mt-1 leading-relaxed">
-                Get instant notifications for exclusive scoops, political updates, and trending gossip.
+                Get instant notifications for exclusive scoops, political updates, and trending stories.
               </p>
               <div className="flex items-center gap-2 mt-3">
                 <button

@@ -12,7 +12,7 @@ function catColor(cat: string): string {
   if (c.includes("entertainment")) return "bg-rose-600";
   if (c.includes("politics")) return "bg-blue-700";
   if (c.includes("news")) return "bg-amber-600";
-  if (c.includes("gossip")) return "bg-purple-600";
+
   if (c.includes("sports")) return "bg-green-700";
   if (c.includes("tech")) return "bg-cyan-700";
   return "bg-zinc-600";
@@ -123,8 +123,8 @@ export default function AuthorsPage() {
   return (
     <Layout>
       <Helmet>
-        <title>Our Authors | Za Ndani — Kenya News & Gossip</title>
-        <meta name="description" content="Meet the journalists and writers behind Za Ndani — Kenya's sharpest entertainment gossip and news site." />
+        <title>Our Authors | Za Ndani — Kenya News & Entertainment</title>
+        <meta name="description" content="Meet the journalists and writers behind Za Ndani — Kenya's sharpest entertainment and news site." />
         <link rel="canonical" href="https://zandani.co.ke/authors" />
       </Helmet>
 

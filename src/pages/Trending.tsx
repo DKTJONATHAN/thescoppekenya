@@ -12,7 +12,7 @@ function catColor(cat: string): string {
   if (c.includes("entertainment")) return "bg-rose-600";
   if (c.includes("politics"))      return "bg-blue-700";
   if (c.includes("news"))          return "bg-amber-600";
-  if (c.includes("gossip"))        return "bg-purple-600";
+
   if (c.includes("sports"))        return "bg-green-700";
   if (c.includes("tech"))          return "bg-cyan-700";
   return "bg-zinc-600";
@@ -76,13 +76,13 @@ const Trending = () => {
     <Layout>
       <Helmet>
         <title>Trending Stories — Za Ndani | What's Hot in Kenya</title>
-        <meta name="description" content="Discover the most read stories on Za Ndani right now. Hottest Kenya celebrity gossip, trending entertainment news, and breaking Nairobi stories." />
-        <meta name="keywords" content="Trending news Kenya, Kenya celebrity gossip, hot entertainment stories Nairobi, most read news Kenya, Za Ndani trending, latest Nairobi gossip, trending stories" />
+        <meta name="description" content="Discover the most read stories on Za Ndani right now. Hottest Kenya entertainment news, and breaking Nairobi stories." />
+        <meta name="keywords" content="Trending news Kenya, hot entertainment stories Nairobi, most read news Kenya, Za Ndani trending, trending stories" />
         <link rel="canonical" href="https://zandani.co.ke/trending" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://zandani.co.ke/trending" />
         <meta property="og:title" content="Trending Stories — Za Ndani | What's Hot in Kenya" />
-        <meta property="og:description" content="Discover the most read stories on Za Ndani right now. Hottest Kenya celebrity gossip and breaking Nairobi entertainment news." />
+        <meta property="og:description" content="Discover the most read stories on Za Ndani right now. Hottest Kenya and breaking Nairobi entertainment news." />
         <meta property="og:image" content="https://zandani.co.ke/logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Trending Stories — Za Ndani | What's Hot in Kenya" />

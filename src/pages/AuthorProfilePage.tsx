@@ -15,7 +15,7 @@ function catColor(cat: string): string {
   if (c.includes("entertainment")) return "bg-rose-600";
   if (c.includes("politics"))      return "bg-blue-700";
   if (c.includes("news"))          return "bg-amber-600";
-  if (c.includes("gossip"))        return "bg-purple-600";
+
   if (c.includes("sports"))        return "bg-green-700";
   if (c.includes("tech"))          return "bg-cyan-700";
   return "bg-zinc-600";

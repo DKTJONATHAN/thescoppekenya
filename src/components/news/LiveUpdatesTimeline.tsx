@@ -17,7 +17,7 @@ function catColor(cat: string): string {
   const c = cat?.toLowerCase() || "";
   if (c.includes("entertainment")) return "bg-rose-600";
   if (c.includes("politics") || c.includes("news")) return "bg-blue-700";
-  if (c.includes("gossip")) return "bg-purple-600";
+
   if (c.includes("sports")) return "bg-green-700";
   if (c.includes("tech") || c.includes("business")) return "bg-cyan-700";
   return "bg-zinc-600";
@@ -88,26 +88,26 @@ export function LiveUpdatesTimeline({
   }
 
   return (
-    <section className="bg-zinc-950/50 border-b border-zinc-800 py-6">
+    <section className="bg-muted/30 border-b border-border py-6">
       <div className="container max-w-7xl mx-auto px-4">
         <div className="flex items-center gap-3 mb-5">
           <span className="flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-primary">
             <Radio className="w-4 h-4 animate-pulse" /> {title}
           </span>
-          <div className="h-px flex-1 bg-zinc-800" />
-          <span className="text-[10px] text-zinc-600 tabular-nums">
+          <div className="h-px flex-1 bg-border" />
+          <span className="text-[10px] text-muted-foreground tabular-nums">
             {new Date().toLocaleTimeString("en-KE", { hour: "2-digit", minute: "2-digit" })} EAT
           </span>
         </div>
 
-        <div className="relative pl-6 border-l-2 border-zinc-800 space-y-4 max-h-[400px] overflow-y-auto scrollbar-thin">
+        <div className="relative pl-6 border-l-2 border-border space-y-4 max-h-[400px] overflow-y-auto scrollbar-thin">
           {liveUpdates.map(post => (
             <Link key={post.slug} to={`/article/${post.slug}`} className="group block relative">
-              <div className={`absolute -left-[31px] top-1.5 w-3 h-3 rounded-full border-2 border-zinc-800 ${isWithinHours(post.date, 1) ? "bg-primary animate-pulse" : "bg-zinc-700"}`} />
+              <div className={`absolute -left-[31px] top-1.5 w-3 h-3 rounded-full border-2 border-border ${isWithinHours(post.date, 1) ? "bg-primary animate-pulse" : "bg-muted-foreground/50"}`} />
               <div className="flex gap-3 items-start">
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-0.5">
-                    <time dateTime={new Date(post.date).toISOString()} className="text-[10px] text-zinc-500 tabular-nums font-mono">
+                    <time dateTime={new Date(post.date).toISOString()} className="text-[10px] text-muted-foreground tabular-nums font-mono">
                       {new Date(post.date).toLocaleTimeString("en-KE", { hour: "2-digit", minute: "2-digit" })}
                     </time>
                     <span className={`text-[8px] font-black uppercase tracking-widest text-white px-1 py-0.5 ${catColor(post.category)}`}>

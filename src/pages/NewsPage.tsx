@@ -37,7 +37,7 @@ function catColor(cat: string): string {
   const c = cat?.toLowerCase() || "";
   if (c.includes("entertainment")) return "bg-rose-600";
   if (c.includes("politics") || c.includes("news")) return "bg-blue-700";
-  if (c.includes("gossip")) return "bg-purple-600";
+
   if (c.includes("sports")) return "bg-green-700";
   if (c.includes("tech") || c.includes("business")) return "bg-cyan-700";
   return "bg-zinc-600";
@@ -406,7 +406,7 @@ export default function NewsPage() {
                   <div className="grid grid-cols-2 gap-2">
                     {[
                       { name: "Entertainment", slug: "entertainment", icon: "🎬" },
-                      { name: "Gossip", slug: "gossip", icon: "💬" },
+                      { name: "Sports", slug: "sports", icon: "⚽" },
                       { name: "Sports", slug: "sports", icon: "⚽" },
                       { name: "Business", slug: "business", icon: "📈" },
                     ].map(cat => (

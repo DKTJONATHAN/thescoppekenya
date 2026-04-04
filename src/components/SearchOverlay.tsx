@@ -54,7 +54,7 @@ export function SearchOverlay({ isOpen, onClose }: SearchOverlayProps) {
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
             <input
               type="search"
-              placeholder="Search for news, gossip, entertainment..."
+              placeholder="Search for news, entertainment, politics..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               className="w-full pl-12 pr-4 py-4 text-lg bg-surface border border-divider rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-smooth"

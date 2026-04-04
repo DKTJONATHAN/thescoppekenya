@@ -1,7 +1,7 @@
 {
-  "name": "Za Ndani - Kenya News & Gossip",
+  "name": "Za Ndani - Kenya News & Entertainment",
   "short_name": "Za Ndani",
-  "description": "Breaking Kenya news, entertainment gossip, politics, sports, and trending scoops delivered fast.",
+  "description": "Breaking Kenya news, entertainment, politics, sports, and trending scoops delivered fast.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -46,8 +46,8 @@
     },
     {
       "name": "Entertainment",
-      "short_name": "Gossip",
-      "description": "Entertainment news and celebrity gossip",
+      "short_name": "Entertainment",
+      "description": "Entertainment news and pop culture",
       "url": "/category/entertainment",
       "icons": [
         {

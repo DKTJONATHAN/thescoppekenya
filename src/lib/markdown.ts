@@ -75,13 +75,13 @@ function normalizeCategory(rawCategory: string): string {
   const categoryMap: Record<string, string> = {
     'news': 'News',
     'entertainment': 'Entertainment',
-    'gossip': 'Gossip',
+    'gossip': 'Entertainment',
     'sports': 'Sports',
     'business': 'Business',
     'lifestyle': 'Lifestyle',
     'politics': 'News',
-    'celebrity': 'Gossip',
-    'celebrity gossip': 'Gossip',
+    'celebrity': 'Entertainment',
+    'celebrity gossip': 'Entertainment',
     'tech': 'Business',
     'technology': 'Business',
     'music': 'Entertainment',
@@ -280,8 +280,7 @@ ${urlElements}
 
 export const categories = [
   { name: "News", slug: "news", description: "Breaking news, politics na current affairs from Kenya and beyond" },
-  { name: "Entertainment", slug: "entertainment", description: "Celebrity news, music, movies, na pop culture" },
-  { name: "Gossip", slug: "gossip", description: "The latest celebrity gossip na relationship drama" },
+  { name: "Entertainment", slug: "entertainment", description: "Celebrity news, music, movies, pop culture, na relationship drama" },
   { name: "Sports", slug: "sports", description: "Football, athletics, na all things sports" },
   { name: "Business", slug: "business", description: "Economy, startups, tech na financial news" },
   { name: "Lifestyle", slug: "lifestyle", description: "Fashion, health, travel, na living well" },

@@ -11,7 +11,7 @@ function catColor(cat: string): string {
   if (c.includes("entertainment")) return "bg-rose-600";
   if (c.includes("politics"))      return "bg-blue-700";
   if (c.includes("news"))          return "bg-amber-600";
-  if (c.includes("gossip"))        return "bg-purple-600";
+
   if (c.includes("sports"))        return "bg-green-700";
   if (c.includes("tech"))          return "bg-cyan-700";
   return "bg-zinc-600";
@@ -92,8 +92,8 @@ export default function TagPage() {
         {/* ✅ Blocks Google from indexing tag pages */}
         <meta name="robots" content="noindex, follow" />
 
-        <title>#{displayTag} — Za Ndani | Kenya News & Gossip</title>
-        <meta name="description" content={`All stories tagged "${displayTag}" on Za Ndani — Kenya's sharpest news and entertainment gossip site.`} />
+        <title>#{displayTag} — Za Ndani | Kenya News & Entertainment</title>
+        <meta name="description" content={`All stories tagged "${displayTag}" on Za Ndani — Kenya's sharpest news and entertainment site.`} />
         <link rel="canonical" href={`https://zandani.co.ke/tag/${tag}`} />
         <meta property="og:title" content={`#${displayTag} — Za Ndani`} />
         <meta property="og:description" content={`All ${postsWithViews.length} stories tagged "${displayTag}" on Za Ndani.`} />

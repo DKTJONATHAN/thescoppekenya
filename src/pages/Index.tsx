@@ -42,7 +42,7 @@ function catColor(cat: string): string {
   const c = cat?.toLowerCase() || "";
   if (c.includes("entertainment")) return "bg-rose-600";
   if (c.includes("politics") || c.includes("news")) return "bg-blue-700";
-  if (c.includes("gossip")) return "bg-purple-600";
+
   if (c.includes("sports")) return "bg-green-700";
   if (c.includes("tech") || c.includes("business")) return "bg-cyan-700";
   return "bg-zinc-600";
@@ -52,7 +52,7 @@ function catBorder(cat: string): string {
   const c = cat?.toLowerCase() || "";
   if (c.includes("entertainment")) return "border-rose-600";
   if (c.includes("politics") || c.includes("news")) return "border-blue-700";
-  if (c.includes("gossip")) return "border-purple-600";
+
   if (c.includes("sports")) return "border-green-700";
   if (c.includes("tech") || c.includes("business")) return "border-cyan-700";
   return "border-zinc-600";
@@ -221,7 +221,7 @@ const Index = () => {
     "@type": "WebSite",
     "name": "Za Ndani",
     "url": SITE_URL,
-    "description": "Breaking Kenyan news, entertainment gossip, politics, and sports.",
+    "description": "Breaking Kenyan news, entertainment, politics, and sports.",
     "inLanguage": "en-KE",
     "potentialAction": {
       "@type": "SearchAction",
@@ -247,8 +247,8 @@ const Index = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Za Ndani | Breaking Kenya News, Entertainment Gossip & Trending Scoops</title>
-        <meta name="description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, trending celebrity news, and sports." />
+        <title>Za Ndani | Breaking Kenya News, Entertainment & Trending Scoops</title>
+        <meta name="description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment, political updates, trending celebrity news, and sports." />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href={SITE_URL} />
 
@@ -257,21 +257,21 @@ const Index = () => {
         <meta property="og:url" content={SITE_URL} />
         <meta property="og:site_name" content="Za Ndani" />
         <meta property="og:locale" content="en_KE" />
-        <meta property="og:title" content="Za Ndani | Breaking Kenya News, Entertainment & Gossip" />
-        <meta property="og:description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, trending celebrity news, and sports." />
+        <meta property="og:title" content="Za Ndani | Breaking Kenya News & Entertainment" />
+        <meta property="og:description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment, political updates, trending celebrity news, and sports." />
         <meta property="og:image" content={homeOgImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Za Ndani â€” Kenya News & Gossip" />
+        <meta property="og:image:alt" content="Za Ndani â€” Kenya News & Entertainment" />
         <meta property="og:image:type" content="image/webp" />
 
         {/* Twitter / X Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@zandanikenya" />
-        <meta name="twitter:title" content="Za Ndani | Breaking Kenya News, Entertainment & Gossip" />
-        <meta name="twitter:description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, trending celebrity news, and sports." />
+        <meta name="twitter:title" content="Za Ndani | Breaking Kenya News, Entertainment & Trending Scoops" />
+        <meta name="twitter:description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment, political updates, trending celebrity news, and sports." />
         <meta name="twitter:image" content={homeOgImage} />
-        <meta name="twitter:image:alt" content="Za Ndani â€” Kenya News & Gossip" />
+        <meta name="twitter:image:alt" content="Za Ndani â€” Kenya News & Entertainment" />
 
         {/* Preload hero image for LCP */}
         {heroLead && <link rel="preload" as="image" href={optimizedHeroImage} fetchPriority="high" />}

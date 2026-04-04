@@ -15,7 +15,7 @@ function catColor(cat: string): string {
   if (c.includes("entertainment")) return "bg-rose-600";
   if (c.includes("politics"))      return "bg-blue-700";
   if (c.includes("news"))          return "bg-amber-600";
-  if (c.includes("gossip"))        return "bg-purple-600";
+
   if (c.includes("sports"))        return "bg-green-700";
   if (c.includes("tech"))          return "bg-cyan-700";
   return "bg-zinc-600";
@@ -26,7 +26,7 @@ function catAccent(cat: string): string {
   if (c.includes("entertainment")) return "border-rose-600";
   if (c.includes("politics"))      return "border-blue-700";
   if (c.includes("news"))          return "border-amber-600";
-  if (c.includes("gossip"))        return "border-purple-600";
+
   if (c.includes("sports"))        return "border-green-700";
   if (c.includes("tech"))          return "border-cyan-700";
   return "border-zinc-600";
@@ -53,11 +53,7 @@ const LOAD_MORE = 12;
 
 // ─── SEO META MAP ─────────────────────────────────────────────────────────────
 const categoryMeta: Record<string, { title: string; description: string; keywords: string }> = {
-  gossip: {
-    title: "Kenya Celebrity Gossip - Latest Scandals & Insider News | Za Ndani",
-    description: "Hottest Kenya celebrity gossip today, Nairobi scandals, Kenyan stars relationships, music & TV exclusives. Bold updates daily on Za Ndani.",
-    keywords: "kenya celebrity gossip, latest gossip kenya, nairobi gossip, celebrity scandals kenya, kenyan celebrities news, za ndani gossip"
-  },
+
   news: {
     title: "Breaking Kenya News Today - Latest Updates & Politics | Za Ndani",
     description: "Breaking news Kenya today, Nairobi current affairs, politics, counties & national stories. Real-time verified Kenyan news on Za Ndani.",
