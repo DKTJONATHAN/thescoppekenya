@@ -11,6 +11,7 @@
     { "source": "/robots.txt", "destination": "/robots.txt" },
     { "source": "/sitemap", "destination": "/index" },
     { "source": "/news", "destination": "/index" },
+    { "source": "/entertainment", "destination": "/index" },
     { "source": "/:path*", "destination": "/index" }
   ],
   "headers": [
