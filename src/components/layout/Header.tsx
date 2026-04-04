@@ -88,7 +88,11 @@ export function Header() {
               {categories.map((category) => (
                 <Link
                   key={category.slug}
-                  to={category.slug === 'sports' ? '/sports' : `/category/${category.slug}`}
+                  to={
+                    category.slug === 'sports' ? '/sports' :
+                    category.slug === 'entertainment' ? '/entertainment' :
+                    `/category/${category.slug}`
+                  }
                   className="px-3 py-2 text-sm font-semibold text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-all"
                 >
                   {category.name}
@@ -146,7 +150,11 @@ export function Header() {
               {categories.map((category) => (
                 <Link
                   key={category.slug}
-                  to={category.slug === 'sports' ? '/sports' : `/category/${category.slug}`}
+                  to={
+                    category.slug === 'sports' ? '/sports' :
+                    category.slug === 'entertainment' ? '/entertainment' :
+                    `/category/${category.slug}`
+                  }
                   className="block px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-smooth font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
