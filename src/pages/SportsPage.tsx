@@ -163,7 +163,7 @@ export default function SportsPage() {
                     <Badge className="bg-rose-500/10 text-rose-500 border-0 text-[10px] font-black uppercase">Active</Badge>
                   </div>
                   <div className="p-4">
-                    <SportsNewsFeed />
+                    <LiveScoreTable />
                   </div>
                 </div>
 

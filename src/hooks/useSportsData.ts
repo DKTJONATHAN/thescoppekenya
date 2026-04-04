@@ -141,9 +141,9 @@ export function useMatches(competition: string = 'PL') {
     queryFn: async () => {
       const today = new Date();
       const dateFrom = new Date(today);
-      dateFrom.setDate(dateFrom.getDate() - 1);
+      dateFrom.setDate(dateFrom.getDate() - 3); // 3 days ago
       const dateTo = new Date(today);
-      dateTo.setDate(dateTo.getDate() + 7);
+      dateTo.setDate(dateTo.getDate() + 3); // 3 days ahead
       
       const result = await fetchFootballData('matches', { 
         competition,
@@ -152,9 +152,9 @@ export function useMatches(competition: string = 'PL') {
       });
       return result.data?.matches as Match[] || [];
     },
-    staleTime: 60 * 1000, // 1 minute for live scores
-    refetchInterval: 60 * 1000, // Refetch every minute for live updates
-    enabled: competition !== 'KPL', // Don't fetch for Kenya (editorial content)
+    staleTime: 60 * 1000, 
+    refetchInterval: 60 * 1000, 
+    enabled: competition !== 'KPL',
   });
 }
 

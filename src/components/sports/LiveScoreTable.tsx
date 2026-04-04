@@ -1,4 +1,4 @@
-import { useTodayMatches, getMatchStatus, Match } from "@/hooks/useSportsData";
+import { useMatches, getMatchStatus, Match } from "@/hooks/useSportsData";
 import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
 import { format } from "date-fns";
@@ -14,7 +14,7 @@ import { Badge } from "@/components/ui/badge";
 import { Radio, Trophy, Activity, ArrowRight } from "lucide-react";
 
 export function LiveScoreTable() {
-  const { data: matches, isLoading, error } = useTodayMatches();
+  const { data: matches, isLoading, error } = useMatches('ALL');
 
   const liveMatches = matches?.filter(m => 
     m.status === 'IN_PLAY' || m.status === 'LIVE' || m.status === 'PAUSED'

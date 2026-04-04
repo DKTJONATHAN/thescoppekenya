@@ -91,6 +91,7 @@ export function Header() {
                   to={
                     category.slug === 'sports' ? '/sports' :
                     category.slug === 'entertainment' ? '/entertainment' :
+                    category.slug === 'news' ? '/news' :
                     `/category/${category.slug}`
                   }
                   className="px-3 py-2 text-sm font-semibold text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-all"
@@ -153,6 +154,7 @@ export function Header() {
                   to={
                     category.slug === 'sports' ? '/sports' :
                     category.slug === 'entertainment' ? '/entertainment' :
+                    category.slug === 'news' ? '/news' :
                     `/category/${category.slug}`
                   }
                   className="block px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-smooth font-medium"

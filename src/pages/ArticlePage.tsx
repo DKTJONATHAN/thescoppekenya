@@ -92,15 +92,15 @@ export default function ArticlePage() {
   }, []);
 
   const currentPostViews = useMemo(() => {
-    if (!post) return 47;
+    if (!post) return 0;
     const clean = post.slug.replace(/^\//, '').replace(/\.md$/, '');
-    return viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 47;
+    return viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 0;
   }, [post, viewCounts]);
 
   const relatedWithViews = useMemo(() =>
     relatedPosts.map(p => {
       const clean = p.slug.replace(/^\//, '').replace(/\.md$/, '');
-      const v = viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 47;
+      const v = viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 0;
       return { ...p, views: v };
     }),
     [relatedPosts, viewCounts]
