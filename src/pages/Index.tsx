@@ -359,7 +359,10 @@ const Index = () => {
         </section>
       )}
 
-      {/* â•�â•� MAIN CONTENT + SIDEBAR â•�â•� */}
+      {/* ══ LIVE UPDATES ══ */}
+      <LiveUpdatesTimeline title="Live Updates" maxItems={10} />
+
+      {/* ══ MAIN CONTENT + SIDEBAR ══ */}
       <section className="py-4 md:py-8 lg:py-12 bg-background">
         <div className="container max-w-7xl mx-auto px-3 sm:px-4">
 
