@@ -12,6 +12,7 @@ import { XIcon } from "@/components/XIcon";
 import { NewsletterForm } from "@/components/NewsletterForm";
 import { Helmet } from "react-helmet-async";
 import AdUnit from "@/components/AdUnit";
+import { LiveUpdatesTimeline } from "@/components/news/LiveUpdatesTimeline";
 
 // ─── CATEGORY COLOR MAP ───────────────────────────────────────────────────────
 function catColor(cat: string): string {
@@ -554,6 +555,7 @@ export default function ArticlePage() {
                   </div>
                 </div>
                 <div className="border border-divider bg-muted/10 p-3 flex justify-center"><AdUnit type="inarticle" /></div>
+                <LiveUpdatesTimeline variant="compact" maxItems={8} title="Live Updates" />
               </div>
             </aside>
           </div>

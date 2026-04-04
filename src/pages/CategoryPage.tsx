@@ -7,6 +7,7 @@ import { ChevronDown, Eye, Clock, Flame, TrendingUp, Zap } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { Badge } from "@/components/ui/badge";
 import AdUnit from "@/components/AdUnit";
+import { LiveUpdatesTimeline } from "@/components/news/LiveUpdatesTimeline";
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
 function catColor(cat: string): string {
@@ -163,18 +164,37 @@ export default function CategoryPage() {
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
         <meta name="keywords" content={meta.keywords} />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+        <meta name="googlebot-news" content="index, follow" />
+        <meta name="news_keywords" content={meta.keywords} />
         <link rel="canonical" href={`https://zandani.co.ke/category/${category.slug}`} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`https://zandani.co.ke/category/${category.slug}`} />
+        <meta property="og:site_name" content="Za Ndani" />
+        <meta property="og:locale" content="en_KE" />
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
         <meta property="og:image" content="https://zandani.co.ke/logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@zandanikenya" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content="https://zandani.co.ke/logo.png" />
+        <script type="application/ld+json">{JSON.stringify(categorySchema)}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "name": `${category.name} News`,
+          "url": `https://zandani.co.ke/category/${category.slug}`,
+          "numberOfItems": Math.min(posts.length, 20),
+          "itemListElement": posts.slice(0, 20).map((p, i) => ({
+            "@type": "ListItem",
+            "position": i + 1,
+            "url": `https://zandani.co.ke/article/${p.slug}`,
+            "name": p.title,
+          })),
+        })}</script>
       </Helmet>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(categorySchema) }} />
 
       {/* ── Category header ── */}
       <section className="bg-zinc-950 border-b border-zinc-800">
@@ -202,6 +222,9 @@ export default function CategoryPage() {
           </div>
         </div>
       </section>
+
+      {/* Live Updates for this category */}
+      <LiveUpdatesTimeline category={slug} title={`${category.name} Live Updates`} maxItems={10} />
 
       {postsWithViews.length === 0 ? (
         <div className="container py-32 text-center">

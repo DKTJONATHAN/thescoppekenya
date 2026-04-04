@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, TrendingUp, Flame, Clock } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import AdUnit from "@/components/AdUnit";
+import { LiveUpdatesTimeline } from "@/components/news/LiveUpdatesTimeline";
 
 const INITIAL_LOAD = 12;
 const LOAD_MORE_COUNT = 12;
@@ -358,7 +359,10 @@ const Index = () => {
         </section>
       )}
 
-      {/* â•�â•� MAIN CONTENT + SIDEBAR â•�â•� */}
+      {/* ══ LIVE UPDATES ══ */}
+      <LiveUpdatesTimeline title="Live Updates" maxItems={10} />
+
+      {/* ══ MAIN CONTENT + SIDEBAR ══ */}
       <section className="py-4 md:py-8 lg:py-12 bg-background">
         <div className="container max-w-7xl mx-auto px-3 sm:px-4">
 
