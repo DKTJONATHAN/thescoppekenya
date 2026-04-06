@@ -136,6 +136,14 @@ export default function EntertainmentPage() {
 
         <script type="application/ld+json">{JSON.stringify(collectionSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(itemListSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL },
+            { "@type": "ListItem", "position": 2, "name": "Entertainment", "item": `${SITE_URL}/entertainment` },
+          ],
+        })}</script>
       </Helmet>
 
       {/* ══ HOT ENTERTAINMENT TICKER ══ */}

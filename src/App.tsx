@@ -24,6 +24,8 @@ const TagPage = lazy(() => import("./pages/TagPage"));
 const SportsPage = lazy(() => import("./pages/SportsPage"));
 const NewsPage = lazy(() => import("./pages/NewsPage"));
 const EntertainmentPage = lazy(() => import("./pages/EntertainmentPage"));
+const BusinessPage = lazy(() => import("./pages/BusinessPage"));
+const LifestylePage = lazy(() => import("./pages/LifestylePage"));
 const LiveScoresPage = lazy(() => import("./pages/LiveScoresPage"));
 const SitemapPage = lazy(() => import("./pages/SitemapPage"));
 const SitemapHtmlPage = lazy(() => import("./pages/SitemapHtmlPage"));
@@ -148,6 +150,8 @@ const App = () => (
                 <Route path="/news" element={<NewsPage />} />
                 <Route path="/entertainment" element={<EntertainmentPage />} />
                 <Route path="/sports" element={<SportsPage />} />
+                <Route path="/business" element={<BusinessPage />} />
+                <Route path="/lifestyle" element={<LifestylePage />} />
                 <Route path="/sports/live" element={<LiveScoresPage />} />
                 <Route path="/sitemap.xml" element={<SitemapPage />} />
                 <Route path="/sitemap" element={<SitemapHtmlPage />} />

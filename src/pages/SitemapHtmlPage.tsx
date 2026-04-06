@@ -35,10 +35,15 @@ const SitemapHtmlPage = () => {
           <ul className="space-y-1 pl-7 list-disc text-muted-foreground">
             {[
               { path: "/", label: "Home" },
+              { path: "/news", label: "News" },
+              { path: "/entertainment", label: "Entertainment" },
+              { path: "/sports", label: "Sports" },
+              { path: "/business", label: "Business" },
+              { path: "/lifestyle", label: "Lifestyle" },
+              { path: "/trending", label: "Trending" },
+              { path: "/sports/live", label: "Live Scores" },
               { path: "/about", label: "About" },
               { path: "/contact", label: "Contact" },
-              { path: "/sports", label: "Sports" },
-              { path: "/sports/live", label: "Live Scores" },
               { path: "/privacy", label: "Privacy Policy" },
               { path: "/terms", label: "Terms of Service" },
             ].map((p) => (

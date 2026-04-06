@@ -103,6 +103,33 @@ function getSafeTime(dateStr: string): number {
 // Module-level cache
 let _cachedPosts: Post[] | null = null;
 
+function extractExcerpt(content: string): string {
+  // 1. Split into lines & remove headers, images, etc.
+  const lines = content.split('\n');
+  let firstPara = "";
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) continue;
+    if (trimmed.startsWith('#')) continue; // Skip headers
+    if (trimmed.startsWith('![')) continue; // Skip images
+    if (trimmed.startsWith('>')) continue; // Skip blockquotes
+    if (trimmed.startsWith('-') || trimmed.startsWith('*') || /^\d+\./.test(trimmed)) continue; // Skip lists
+
+    // Found a potential first paragraph
+    firstPara = trimmed
+      .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1') // Strip link syntax, keep text
+      .replace(/[*_]{1,2}/g, '') // Strip bold/italic
+      .replace(/`[^`]+`/g, '') // Strip inline code
+      .trim();
+
+    if (firstPara.length > 20) break; // Ensure it's a substantial paragraph
+  }
+
+  // Limit to ~240 chars for the main excerpt, ArticlePage will truncate further if needed
+  return firstPara.length > 240 ? firstPara.slice(0, 237) + "..." : firstPara;
+}
+
 export function getAllPosts(): Post[] {
   if (_cachedPosts) return _cachedPosts;
 
@@ -118,7 +145,7 @@ export function getAllPosts(): Post[] {
       const tags = Array.isArray(frontmatter.tags) ? frontmatter.tags : [];
       const title = frontmatter.title || 'Untitled Post';
       const slug = frontmatter.slug || path.replace('/content/posts/', '').replace('.md', '');
-      const excerpt = frontmatter.excerpt || '';
+      const excerpt = frontmatter.excerpt || extractExcerpt(content);
       const image = frontmatter.image || '/placeholder.svg';
       const category = normalizeCategory(frontmatter.category || 'News');
       const date = frontmatter.date || new Date().toISOString().split('T')[0];
@@ -234,11 +261,17 @@ export function generateSitemap(): string {
 
   const staticPages: SitemapUrl[] = [
     { loc: '/', priority: '1.0', changefreq: 'hourly', lastmod: today },
+    { loc: '/news', priority: '0.9', changefreq: 'hourly', lastmod: today },
+    { loc: '/entertainment', priority: '0.9', changefreq: 'daily', lastmod: today },
+    { loc: '/sports', priority: '0.8', changefreq: 'daily', lastmod: today },
+    { loc: '/business', priority: '0.8', changefreq: 'daily', lastmod: today },
+    { loc: '/lifestyle', priority: '0.8', changefreq: 'daily', lastmod: today },
+    { loc: '/trending', priority: '0.7', changefreq: 'daily', lastmod: today },
+    { loc: '/authors', priority: '0.5', changefreq: 'weekly' },
     { loc: '/about', priority: '0.5', changefreq: 'monthly' },
     { loc: '/contact', priority: '0.5', changefreq: 'monthly' },
     { loc: '/privacy', priority: '0.3', changefreq: 'monthly' },
     { loc: '/terms', priority: '0.3', changefreq: 'monthly' },
-    { loc: '/sports', priority: '0.8', changefreq: 'daily', lastmod: today },
   ];
 
   const postUrls: SitemapUrl[] = posts.map(post => ({

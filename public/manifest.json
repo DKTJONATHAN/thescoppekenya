@@ -8,7 +8,7 @@
   "orientation": "portrait-primary",
   "theme_color": "#e11d48",
   "background_color": "#09090b",
-  "categories": ["news", "entertainment", "lifestyle"],
+  "categories": ["news", "entertainment", "lifestyle", "business"],
   "lang": "en-KE",
   "dir": "ltr",
   "icons": [
@@ -34,51 +34,38 @@
   "shortcuts": [
     {
       "name": "Latest News",
-      "short_name": "Latest",
+      "short_name": "News",
       "description": "Read the latest breaking news",
-      "url": "/",
-      "icons": [
-        {
-          "src": "/favicon.ico",
-          "sizes": "64x64"
-        }
-      ]
+      "url": "/news",
+      "icons": [{ "src": "/favicon.ico", "sizes": "64x64" }]
     },
     {
       "name": "Entertainment",
       "short_name": "Entertainment",
       "description": "Entertainment news and pop culture",
-      "url": "/category/entertainment",
-      "icons": [
-        {
-          "src": "/favicon.ico",
-          "sizes": "64x64"
-        }
-      ]
-    },
-    {
-      "name": "Politics",
-      "short_name": "Politics",
-      "description": "Kenya political news and analysis",
-      "url": "/category/politics",
-      "icons": [
-        {
-          "src": "/favicon.ico",
-          "sizes": "64x64"
-        }
-      ]
+      "url": "/entertainment",
+      "icons": [{ "src": "/favicon.ico", "sizes": "64x64" }]
     },
     {
       "name": "Sports",
       "short_name": "Sports",
-      "description": "Sports news and updates",
-      "url": "/category/sports",
-      "icons": [
-        {
-          "src": "/favicon.ico",
-          "sizes": "64x64"
-        }
-      ]
+      "description": "Sports news and live scores",
+      "url": "/sports",
+      "icons": [{ "src": "/favicon.ico", "sizes": "64x64" }]
+    },
+    {
+      "name": "Business",
+      "short_name": "Business",
+      "description": "Kenya business and economy news",
+      "url": "/business",
+      "icons": [{ "src": "/favicon.ico", "sizes": "64x64" }]
+    },
+    {
+      "name": "Lifestyle",
+      "short_name": "Lifestyle",
+      "description": "Fashion, health, travel and living well",
+      "url": "/lifestyle",
+      "icons": [{ "src": "/favicon.ico", "sizes": "64x64" }]
     }
   ],
   "prefer_related_applications": false,

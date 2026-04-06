@@ -12,6 +12,10 @@
     { "source": "/sitemap", "destination": "/index" },
     { "source": "/news", "destination": "/index" },
     { "source": "/entertainment", "destination": "/index" },
+    { "source": "/sports", "destination": "/index" },
+    { "source": "/business", "destination": "/index" },
+    { "source": "/lifestyle", "destination": "/index" },
+    { "source": "/trending", "destination": "/index" },
     { "source": "/:path*", "destination": "/index" }
   ],
   "headers": [

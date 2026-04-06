@@ -5,6 +5,12 @@ Disallow: /wp-admin/
 User-agent: Googlebot-News
 Allow: /article/
 Allow: /category/
+Allow: /news
+Allow: /entertainment
+Allow: /sports
+Allow: /business
+Allow: /lifestyle
+Allow: /trending
 Disallow: /admin/
 Disallow: /tag/
 

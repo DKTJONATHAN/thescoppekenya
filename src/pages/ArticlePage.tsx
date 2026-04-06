@@ -331,11 +331,12 @@ export default function ArticlePage() {
       <Helmet>
         <title>{post.title} | Za Ndani</title>
         <meta name="description" content={metaDescription} />
-        <meta name="keywords" content={post.tags.join(", ") + ", za ndani, kenya news"} />
-        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="keywords" content={post.tags.join(", ") + ", za ndani, kenya news, breaking news kenya"} />
+        <meta name="author" content={post.author} />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href={canonicalUrl} />
 
-        {/* Open Graph */}
+        {/* Open Graph / Facebook */}
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content="Za Ndani" />
@@ -343,6 +344,7 @@ export default function ArticlePage() {
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:image" content={postOgImage} />
+        <meta property="og:image:secure_url" content={postOgImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content={post.title} />
@@ -358,20 +360,20 @@ export default function ArticlePage() {
           <meta key={tag} property="article:tag" content={tag} />
         ))}
 
-        {/* Google News specific */}
-        <meta name="news_keywords" content={post.tags.slice(0, 10).join(", ")} />
-        <meta name="original-source" content={canonicalUrl} />
-        <meta name="syndication-source" content={canonicalUrl} />
-
         {/* Twitter / X Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@zandanikenya" />
+        <meta name="twitter:creator" content="@zandanikenya" />
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={metaDescription} />
         <meta name="twitter:image" content={postOgImage} />
         <meta name="twitter:image:alt" content={post.title} />
 
-        {/* JSON-LD — MUST be inside Helmet so it lands in <head> */}
+        {/* Google specific */}
+        <meta name="news_keywords" content={post.tags.slice(0, 10).join(", ")} />
+        <meta name="original-source" content={canonicalUrl} />
+        
+        {/* JSON-LD schemas */}
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>

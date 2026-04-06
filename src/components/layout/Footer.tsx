@@ -81,7 +81,14 @@ export function Footer() {
               {categories.map((category) => (
                 <li key={category.slug}>
                   <button
-                    onClick={() => handleLinkClick(category.slug === 'sports' ? '/sports' : `/category/${category.slug}`)}
+                    onClick={() => handleLinkClick(
+                      category.slug === 'sports' ? '/sports' :
+                      category.slug === 'entertainment' ? '/entertainment' :
+                      category.slug === 'news' ? '/news' :
+                      category.slug === 'business' ? '/business' :
+                      category.slug === 'lifestyle' ? '/lifestyle' :
+                      `/category/${category.slug}`
+                    )}
                     className="text-muted-foreground hover:text-primary transition-colors text-sm text-left"
                   >
                     {category.name}

@@ -1,16 +1,16 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
-import { getAllPosts } from "@/lib/markdown";
-import { Clock, Eye, Flame, TrendingUp, Zap, Radio, ChevronDown, AlertTriangle } from "lucide-react";
+import { getPostsByCategory } from "@/lib/markdown";
+import { Clock, Eye, Flame, TrendingUp, ChevronDown, Briefcase } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import AdUnit from "@/components/AdUnit";
+import { LiveUpdatesTimeline } from "@/components/news/LiveUpdatesTimeline";
 
 const SITE_URL = "https://zandani.co.ke";
 const INITIAL_SHOW = 12;
 const LOAD_MORE = 12;
 
-// ─── HELPERS ─────────────────────────────────────────────────────────────────
 function proxyImg(url: string, w = 600): string {
   if (!url) return "/images/placeholder.jpg";
   if (url.endsWith(".svg") || url.startsWith("/")) return url;
@@ -33,23 +33,10 @@ function isWithinHours(dateStr: string, hours: number): boolean {
   return (Date.now() - new Date(dateStr).getTime()) < hours * 3600000;
 }
 
-function catColor(cat: string): string {
-  const c = cat?.toLowerCase() || "";
-  if (c.includes("entertainment")) return "bg-rose-600";
-  if (c.includes("politics") || c.includes("news")) return "bg-blue-700";
+type Post = ReturnType<typeof getPostsByCategory>[0];
 
-  if (c.includes("sports")) return "bg-green-700";
-  if (c.includes("tech") || c.includes("business")) return "bg-cyan-700";
-  return "bg-zinc-600";
-}
-
-type Post = ReturnType<typeof getAllPosts>[0];
-
-// ═════════════════════════════════════════════════════════════════════════════
-// NEWS PAGE
-// ═════════════════════════════════════════════════════════════════════════════
-export default function NewsPage() {
-  const allPosts = useMemo(() => getAllPosts(), []);
+export default function BusinessPage() {
+  const allPosts = useMemo(() => getPostsByCategory("business"), []);
   const [visibleCount, setVisibleCount] = useState(INITIAL_SHOW);
   const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
   const [now, setNow] = useState(Date.now());
@@ -59,13 +46,11 @@ export default function NewsPage() {
     fetch("/api/get-views").then(r => r.ok ? r.json() : {}).then(setViewCounts).catch(() => {});
   }, []);
 
-  // Live clock tick every 60s for "live updates" feel
   useEffect(() => {
     const t = setInterval(() => setNow(Date.now()), 60000);
     return () => clearInterval(t);
   }, []);
 
-  // Infinite scroll
   useEffect(() => {
     if (!loaderRef.current) return;
     const obs = new IntersectionObserver(
@@ -81,40 +66,29 @@ export default function NewsPage() {
     return viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 0;
   }, [viewCounts]);
 
-  // Breaking = posts within last 6 hours
-  const breakingPosts = useMemo(() =>
-    allPosts.filter(p => isWithinHours(p.date, 6)).slice(0, 5),
+  const hotPosts = useMemo(() =>
+    allPosts.filter(p => isWithinHours(p.date, 12)).slice(0, 5),
     [allPosts, now]
   );
 
-  // Live updates = posts within last 24 hours
-  const liveUpdates = useMemo(() =>
-    allPosts.filter(p => isWithinHours(p.date, 24)).slice(0, 15),
-    [allPosts, now]
-  );
-
-  // Hero = latest post
   const heroPost = allPosts[0];
   const secondaryHero = allPosts.slice(1, 4);
 
-  // Main feed = everything after hero section
   const feedPosts = allPosts.slice(4);
   const displayedFeed = feedPosts.slice(0, visibleCount);
   const hasMore = visibleCount < feedPosts.length;
 
-  // Trending = top by views
   const trendingPosts = useMemo(() =>
     [...allPosts].sort((a, b) => getViews(b.slug) - getViews(a.slug)).slice(0, 6),
     [allPosts, getViews]
   );
 
-  // ── JSON-LD schemas ──
   const collectionSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Breaking Kenya News Today",
-    "description": "Latest breaking news from Kenya — politics, entertainment, sports and more. Real-time updates from Za Ndani.",
-    "url": `${SITE_URL}/news`,
+    "name": "Kenya Business News — Economy, NSE & Investments | Za Ndani",
+    "description": "Latest Kenya business news — economy updates, NSE stock market, Safaricom, corporate deals & financial analysis on Za Ndani.",
+    "url": `${SITE_URL}/business`,
     "isPartOf": { "@type": "WebSite", "name": "Za Ndani", "url": SITE_URL },
     "inLanguage": "en-KE",
   };
@@ -122,8 +96,8 @@ export default function NewsPage() {
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Latest News",
-    "url": `${SITE_URL}/news`,
+    "name": "Latest Business News",
+    "url": `${SITE_URL}/business`,
     "numberOfItems": Math.min(allPosts.length, 20),
     "itemListElement": allPosts.slice(0, 20).map((p, i) => ({
       "@type": "ListItem",
@@ -133,51 +107,53 @@ export default function NewsPage() {
     })),
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL },
+      { "@type": "ListItem", "position": 2, "name": "Business", "item": `${SITE_URL}/business` },
+    ],
+  };
+
   return (
     <Layout>
       <Helmet>
-        <title>Breaking Kenya News Today — Latest Updates & Live Coverage | Za Ndani</title>
-        <meta name="description" content="Breaking news Kenya today — politics, entertainment, sports, business. Real-time verified updates and live coverage from Za Ndani newsroom." />
-        <meta name="keywords" content="breaking news kenya, kenya news today, latest news kenya, nairobi news, kenya politics news, current affairs kenya, live news kenya" />
+        <title>Kenya Business News — Economy, NSE & Investments | Za Ndani</title>
+        <meta name="description" content="Latest Kenya business news — economy updates, NSE stock market, Safaricom, corporate deals & financial analysis on Za Ndani." />
+        <meta name="keywords" content="kenya business news, kenya economy news, nse kenya, safaricom news, business news kenya today, mpesa updates, kenyan startups, za ndani business" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
         <meta name="googlebot-news" content="index, follow" />
-        <meta name="news_keywords" content="breaking news Kenya, Kenya news today, Nairobi news, politics Kenya" />
-        <link rel="canonical" href={`${SITE_URL}/news`} />
+        <meta name="news_keywords" content="Kenya business, NSE, Safaricom, Kenya economy" />
+        <link rel="canonical" href={`${SITE_URL}/business`} />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`${SITE_URL}/news`} />
+        <meta property="og:url" content={`${SITE_URL}/business`} />
         <meta property="og:site_name" content="Za Ndani" />
         <meta property="og:locale" content="en_KE" />
-        <meta property="og:title" content="Breaking Kenya News Today | Za Ndani" />
-        <meta property="og:description" content="Real-time breaking news from Kenya — politics, entertainment, sports, business. Live coverage from Za Ndani." />
+        <meta property="og:title" content="Kenya Business News — Economy & Markets | Za Ndani" />
+        <meta property="og:description" content="Latest Kenya business news — economy, NSE, Safaricom, corporate deals. Real-time updates from Za Ndani." />
         <meta property="og:image" content={`${SITE_URL}/logo.png`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@zandanikenya" />
-        <meta name="twitter:title" content="Breaking Kenya News Today | Za Ndani" />
-        <meta name="twitter:description" content="Real-time breaking news from Kenya — politics, entertainment, sports, business." />
+        <meta name="twitter:title" content="Kenya Business News | Za Ndani" />
+        <meta name="twitter:description" content="Latest Kenya business news — economy, NSE, Safaricom." />
 
         <script type="application/ld+json">{JSON.stringify(collectionSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(itemListSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL },
-            { "@type": "ListItem", "position": 2, "name": "News", "item": `${SITE_URL}/news` },
-          ],
-        })}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
-      {/* ══ BREAKING NEWS TICKER ══ */}
-      {breakingPosts.length > 0 && (
-        <div className="bg-primary text-white overflow-hidden">
+      {/* ══ MARKET WATCH TICKER ══ */}
+      {hotPosts.length > 0 && (
+        <div className="bg-cyan-700 text-white overflow-hidden">
           <div className="container max-w-7xl mx-auto px-4 flex items-center gap-3 py-2">
             <span className="flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest flex-shrink-0 bg-white/20 px-2 py-1">
-              <AlertTriangle className="w-3 h-3" /> Breaking
+              <Briefcase className="w-3 h-3" /> Market Watch
             </span>
             <div className="overflow-hidden flex-1 relative">
               <div className="animate-marquee whitespace-nowrap flex gap-8">
-                {breakingPosts.map(p => (
+                {hotPosts.map(p => (
                   <Link key={p.slug} to={`/article/${p.slug}`} className="inline-flex items-center gap-2 text-xs font-semibold hover:underline">
                     <span className="w-1.5 h-1.5 rounded-full bg-white/60 flex-shrink-0" />
                     {p.title}
@@ -195,21 +171,20 @@ export default function NewsPage() {
         <section className="bg-zinc-950 border-b border-zinc-800">
           <div className="container max-w-7xl mx-auto px-3 sm:px-4 py-4">
             <div className="grid lg:grid-cols-5 gap-1">
-              {/* Main hero */}
               <Link to={`/article/${heroPost.slug}`} className="group relative overflow-hidden lg:col-span-3 block" style={{ minHeight: 380 }}>
                 <img src={proxyImg(heroPost.image, 1200)} alt={heroPost.title} loading="eager" fetchPriority="high"
                   className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-75 group-hover:scale-[1.02] transition-all duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
                 <div className="relative flex flex-col justify-end h-full p-5 sm:p-8 z-10" style={{ minHeight: 380 }}>
                   {isWithinHours(heroPost.date, 6) && (
-                    <span className="inline-flex items-center gap-1 text-[9px] font-black uppercase tracking-widest text-white bg-primary px-2 py-1 mb-2 w-fit animate-pulse">
-                      <Radio className="w-3 h-3" /> Breaking
+                    <span className="inline-flex items-center gap-1 text-[9px] font-black uppercase tracking-widest text-white bg-cyan-700 px-2 py-1 mb-2 w-fit animate-pulse">
+                      <Briefcase className="w-3 h-3" /> New
                     </span>
                   )}
-                  <span className={`text-[9px] font-black uppercase tracking-widest text-white px-1.5 py-0.5 mb-2 w-fit ${catColor(heroPost.category)}`}>
-                    {heroPost.category}
+                  <span className="text-[9px] font-black uppercase tracking-widest text-white px-1.5 py-0.5 mb-2 w-fit bg-cyan-700">
+                    Business
                   </span>
-                  <h1 className="text-white font-serif font-black text-2xl sm:text-3xl lg:text-4xl leading-tight mb-2 group-hover:text-primary transition-colors">
+                  <h1 className="text-white font-serif font-black text-2xl sm:text-3xl lg:text-4xl leading-tight mb-2 group-hover:text-cyan-400 transition-colors">
                     {heroPost.title}
                   </h1>
                   <p className="text-zinc-300 text-sm line-clamp-2 mb-3 max-w-2xl">{heroPost.excerpt}</p>
@@ -222,7 +197,6 @@ export default function NewsPage() {
                 </div>
               </Link>
 
-              {/* Secondary heroes */}
               <div className="lg:col-span-2 flex flex-col gap-1">
                 {secondaryHero.map(post => (
                   <Link key={post.slug} to={`/article/${post.slug}`}
@@ -232,9 +206,9 @@ export default function NewsPage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                     <div className="relative flex flex-col justify-end h-full p-4 z-10" style={{ minHeight: 120 }}>
                       {isWithinHours(post.date, 3) && (
-                        <span className="text-[8px] font-black uppercase tracking-widest text-primary mb-1">● LIVE</span>
+                        <span className="text-[8px] font-black uppercase tracking-widest text-cyan-400 mb-1">● NEW</span>
                       )}
-                      <h2 className="text-white font-bold text-sm leading-snug line-clamp-2 group-hover:text-primary transition-colors">
+                      <h2 className="text-white font-bold text-sm leading-snug line-clamp-2 group-hover:text-cyan-400 transition-colors">
                         {post.title}
                       </h2>
                       <time dateTime={new Date(post.date).toISOString()} className="text-[10px] text-zinc-500 mt-1 flex items-center gap-1">
@@ -249,72 +223,27 @@ export default function NewsPage() {
         </section>
       )}
 
-      {/* ══ LIVE UPDATES TIMELINE ══ */}
-      {liveUpdates.length > 0 && (
-        <section className="bg-zinc-950/50 border-b border-zinc-800 py-6">
-          <div className="container max-w-7xl mx-auto px-4">
-            <div className="flex items-center gap-3 mb-5">
-              <span className="flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-primary">
-                <Radio className="w-4 h-4 animate-pulse" /> Live Updates
-              </span>
-              <div className="h-px flex-1 bg-zinc-800" />
-              <span className="text-[10px] text-zinc-600 tabular-nums">{new Date().toLocaleTimeString("en-KE", { hour: "2-digit", minute: "2-digit" })} EAT</span>
-            </div>
-
-            <div className="relative pl-6 border-l-2 border-zinc-800 space-y-4 max-h-[400px] overflow-y-auto scrollbar-thin">
-              {liveUpdates.map(post => (
-                <Link key={post.slug} to={`/article/${post.slug}`} className="group block relative">
-                  {/* Timeline dot */}
-                  <div className={`absolute -left-[31px] top-1.5 w-3 h-3 rounded-full border-2 border-zinc-800 ${isWithinHours(post.date, 1) ? "bg-primary animate-pulse" : "bg-zinc-700"}`} />
-                  <div className="flex gap-3 items-start">
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2 mb-0.5">
-                        <time dateTime={new Date(post.date).toISOString()} className="text-[10px] text-zinc-500 tabular-nums font-mono">
-                          {new Date(post.date).toLocaleTimeString("en-KE", { hour: "2-digit", minute: "2-digit" })}
-                        </time>
-                        <span className={`text-[8px] font-black uppercase tracking-widest text-white px-1 py-0.5 ${catColor(post.category)}`}>
-                          {post.category}
-                        </span>
-                        {isWithinHours(post.date, 1) && (
-                          <span className="text-[8px] font-black text-primary uppercase">New</span>
-                        )}
-                      </div>
-                      <h3 className="text-sm font-bold text-foreground leading-snug line-clamp-1 group-hover:text-primary transition-colors">
-                        {post.title}
-                      </h3>
-                      <p className="text-[11px] text-muted-foreground line-clamp-1 mt-0.5">{post.excerpt}</p>
-                    </div>
-                    <img src={proxyImg(post.image, 120)} alt="" loading="lazy"
-                      className="w-16 h-12 object-cover flex-shrink-0 opacity-80 group-hover:opacity-100 transition-opacity" />
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
+      {/* ══ LIVE UPDATES ══ */}
+      <LiveUpdatesTimeline category="business" title="Business Live Updates" maxItems={12} />
 
       {/* ══ MAIN CONTENT GRID ══ */}
       <section className="py-10 bg-background">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-12 gap-10">
 
-            {/* Main feed */}
             <main className="lg:col-span-8 space-y-8">
               <div className="flex items-center gap-4">
                 <h2 className="text-xl font-black uppercase tracking-tight flex items-center gap-2">
-                  All News <Flame className="w-5 h-5 text-primary" />
+                  All Business <Flame className="w-5 h-5 text-cyan-500" />
                 </h2>
                 <div className="h-px flex-1 bg-divider" />
                 <span className="text-xs text-muted-foreground">{allPosts.length} stories</span>
               </div>
 
-              {/* Ad */}
               <div className="flex justify-center border border-divider bg-muted/10 p-3">
                 <AdUnit type="horizontal" />
               </div>
 
-              {/* Feed cards */}
               <div className="space-y-0 divide-y divide-divider">
                 {displayedFeed.map((post, i) => (
                   <React.Fragment key={post.slug}>
@@ -324,12 +253,12 @@ export default function NewsPage() {
                           <img src={proxyImg(post.image, 320)} alt={post.title} loading="lazy" width={320} height={240}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                           {isWithinHours(post.date, 3) && (
-                            <span className="absolute top-1 left-1 text-[7px] font-black uppercase bg-primary text-white px-1 py-0.5">Live</span>
+                            <span className="absolute top-1 left-1 text-[7px] font-black uppercase bg-cyan-700 text-white px-1 py-0.5">New</span>
                           )}
                         </div>
                       </Link>
                       <div className="flex flex-col justify-center min-w-0">
-                        <span className={`inline-block text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-1.5 w-fit ${catColor(post.category)}`}>
+                        <span className="inline-block text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-1.5 w-fit bg-cyan-700">
                           {post.category}
                         </span>
                         <Link to={`/article/${post.slug}`}>
@@ -345,7 +274,7 @@ export default function NewsPage() {
                           <span>·</span>
                           <span>{post.readTime} min</span>
                           <span>·</span>
-                          <span className="flex items-center gap-1 text-primary font-semibold">
+                          <span className="flex items-center gap-1 text-cyan-500 font-semibold">
                             <Eye className="w-2.5 h-2.5" />{getViews(post.slug)}
                           </span>
                         </div>
@@ -361,35 +290,32 @@ export default function NewsPage() {
                 ))}
               </div>
 
-              {/* Load more / sentinel */}
               {hasMore && (
                 <div ref={loaderRef} className="flex justify-center py-8">
                   <button onClick={() => setVisibleCount(prev => prev + LOAD_MORE)}
-                    className="flex items-center gap-2 px-6 py-3 bg-zinc-900 hover:bg-zinc-800 text-white text-sm font-bold transition-colors">
-                    <ChevronDown className="w-4 h-4" /> Load More News
+                    className="flex items-center gap-2 px-6 py-3 bg-cyan-700 hover:bg-cyan-800 text-white text-sm font-bold transition-colors">
+                    <ChevronDown className="w-4 h-4" /> Load More Business
                   </button>
                 </div>
               )}
             </main>
 
-            {/* Sidebar */}
             <aside className="hidden lg:block lg:col-span-4">
               <div className="sticky top-28 space-y-8">
-                {/* Trending */}
                 <div className="border border-divider">
-                  <div className="bg-primary h-1" />
+                  <div className="bg-cyan-700 h-1" />
                   <div className="px-4 py-3 border-b border-divider flex items-center gap-2">
-                    <TrendingUp className="w-4 h-4 text-primary" />
-                    <h3 className="text-xs font-black uppercase tracking-widest">Trending Now</h3>
+                    <TrendingUp className="w-4 h-4 text-cyan-500" />
+                    <h3 className="text-xs font-black uppercase tracking-widest">Trending Business</h3>
                   </div>
                   <div className="divide-y divide-divider">
                     {trendingPosts.map((post, i) => (
                       <Link key={post.slug} to={`/article/${post.slug}`} className="group flex gap-3 p-3 hover:bg-muted/20 transition-colors">
-                        <span className="text-2xl font-black text-muted-foreground/20 group-hover:text-primary transition-colors leading-none mt-0.5 tabular-nums">
+                        <span className="text-2xl font-black text-muted-foreground/20 group-hover:text-cyan-500 transition-colors leading-none mt-0.5 tabular-nums">
                           {String(i + 1).padStart(2, "0")}
                         </span>
                         <div className="min-w-0">
-                          <h4 className="text-xs font-bold leading-snug line-clamp-2 group-hover:text-primary transition-colors">
+                          <h4 className="text-xs font-bold leading-snug line-clamp-2 group-hover:text-cyan-500 transition-colors">
                             {post.title}
                           </h4>
                           <div className="flex items-center gap-2 mt-1 text-[10px] text-muted-foreground">
@@ -403,22 +329,20 @@ export default function NewsPage() {
                   </div>
                 </div>
 
-                {/* Ad */}
                 <div className="border border-divider bg-muted/10 p-3 flex justify-center">
                   <AdUnit type="effectivegate" />
                 </div>
 
-                {/* Category quick links */}
                 <div className="border border-divider p-4">
-                  <h3 className="text-xs font-black uppercase tracking-widest mb-3">Explore</h3>
+                  <h3 className="text-xs font-black uppercase tracking-widest mb-3">Explore More</h3>
                   <div className="grid grid-cols-2 gap-2">
                     {[
-                      { name: "Entertainment", slug: "entertainment", icon: "🎬" },
-                      { name: "Sports", slug: "sports", icon: "⚽" },
-                      { name: "Business", slug: "business", icon: "📈" },
-                      { name: "Lifestyle", slug: "lifestyle", icon: "🌟" },
+                      { name: "News", icon: "📰", href: "/news" },
+                      { name: "Entertainment", icon: "🎬", href: "/entertainment" },
+                      { name: "Sports", icon: "⚽", href: "/sports" },
+                      { name: "Lifestyle", icon: "🌟", href: "/lifestyle" },
                     ].map(cat => (
-                      <Link key={cat.slug} to={`/${cat.slug}`}
+                      <Link key={cat.name} to={cat.href}
                         className="flex items-center gap-2 px-3 py-2 bg-muted/20 hover:bg-muted/40 transition-colors text-xs font-bold">
                         <span>{cat.icon}</span> {cat.name}
                       </Link>

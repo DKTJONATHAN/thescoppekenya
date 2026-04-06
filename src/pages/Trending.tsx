@@ -15,6 +15,8 @@ function catColor(cat: string): string {
 
   if (c.includes("sports"))        return "bg-green-700";
   if (c.includes("tech"))          return "bg-cyan-700";
+  if (c.includes("business"))      return "bg-cyan-700";
+  if (c.includes("lifestyle"))     return "bg-purple-600";
   return "bg-zinc-600";
 }
 
@@ -88,6 +90,8 @@ const Trending = () => {
         <meta name="twitter:title" content="Trending Stories — Za Ndani | What's Hot in Kenya" />
         <meta name="twitter:description" content="Discover the most read stories on Za Ndani right now." />
         <meta name="twitter:image" content="https://zandani.co.ke/logo.png" />
+        <meta property="og:locale" content="en_KE" />
+        <meta property="og:site_name" content="Za Ndani" />
       </Helmet>
 
       {/* ── Page hero ── */}

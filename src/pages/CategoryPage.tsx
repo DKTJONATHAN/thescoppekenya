@@ -18,6 +18,8 @@ function catColor(cat: string): string {
 
   if (c.includes("sports"))        return "bg-green-700";
   if (c.includes("tech"))          return "bg-cyan-700";
+  if (c.includes("business"))      return "bg-cyan-700";
+  if (c.includes("lifestyle"))     return "bg-purple-600";
   return "bg-zinc-600";
 }
 
@@ -29,6 +31,8 @@ function catAccent(cat: string): string {
 
   if (c.includes("sports"))        return "border-green-700";
   if (c.includes("tech"))          return "border-cyan-700";
+  if (c.includes("business"))      return "border-cyan-700";
+  if (c.includes("lifestyle"))     return "border-purple-600";
   return "border-zinc-600";
 }
 

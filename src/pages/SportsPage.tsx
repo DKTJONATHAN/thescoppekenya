@@ -77,6 +77,15 @@ export default function SportsPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Za Ndani Sports | Live Scores & AI Analysis" />
         <meta name="twitter:description" content="Elite global football coverage with real-time data and AI-powered match previews." />
+        <meta property="og:locale" content="en_KE" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zandani.co.ke" },
+            { "@type": "ListItem", "position": 2, "name": "Sports", "item": "https://zandani.co.ke/sports" },
+          ],
+        })}</script>
       </Helmet>
 
       {/* Live Ticker Bar */}

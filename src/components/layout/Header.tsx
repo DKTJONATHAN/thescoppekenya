@@ -92,6 +92,8 @@ export function Header() {
                     category.slug === 'sports' ? '/sports' :
                     category.slug === 'entertainment' ? '/entertainment' :
                     category.slug === 'news' ? '/news' :
+                    category.slug === 'business' ? '/business' :
+                    category.slug === 'lifestyle' ? '/lifestyle' :
                     `/category/${category.slug}`
                   }
                   className="px-3 py-2 text-sm font-semibold text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-all"
