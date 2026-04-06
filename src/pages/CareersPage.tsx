@@ -29,6 +29,7 @@ const openPositions = [
 
 export default function CareersPage() {
   return (
+    <Layout>
       <Helmet>
         <title>Careers at Za Ndani | Join Kenya's Boldest Newsroom</title>
         <meta name="description" content="Join Za Ndani — Kenya's boldest digital newsroom. We're hiring writers, strategists, and creatives who want to shape the future of Kenyan media." />
