@@ -85,7 +85,7 @@ jobs:
           today_str = current_utc.strftime("%Y-%m-%d")
           full_date_str = current_utc.strftime("%A, %B %d, %Y")
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
-          MAX_AGE_HOURS = 24
+          MAX_AGE_HOURS = 120
           SITE_URL = "https://www.pulse.co.ke/lifestyle"
           SITE_DOMAIN = "pulse.co.ke"
           SITE_BASE_URL = "https://zandani.co.ke"
