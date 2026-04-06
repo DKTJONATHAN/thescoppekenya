@@ -1,0 +1,22 @@
+---
+title: "Faulu Microfinance Bank narrows annual loss as bad loans approach 30 percent"
+slug: "faulu-microfinance-bank-narrows-annual-loss-as-bad-loans-approach-30"
+author: "Grace Mkamburi"
+image: "https://i.ibb.co/351cGhMT/14c29231b5f2.webp"
+category: "Business"
+date: "2026-04-06T18:36:45Z"
+---
+## Faulu Microfinance Bank Narrows Losses Amidst Capital Challenges
+
+Faulu Microfinance Bank reduced its 2025 net loss to 496.4 million Kenyan Shillings, a 50.8% improvement achieved through aggressive cost reductions. Despite this progress, the bank contends with capital erosion and regulatory breaches, while strategically pivoting towards digital financial services amidst Kenya's competitive lending landscape.
+
+### Financial Performance and Cost Rationalization
+Faulu Microfinance Bank reported a net loss of 496.4 million Kenyan Shillings for the full year ended December 31, 2025, a significant improvement from the 1.010 billion Kenyan Shillings loss posted in 2024. This 50.8% improvement was primarily driven by an aggressive cost reduction program implemented by the bank. Total expenses declined by 14.1% to 3.469 billion Kenyan Shillings. Staff costs were notably reduced by 28.9% to 889.2 million Kenyan Shillings, reflecting a multi-year workforce and branch rationalization strategy that commenced in 2022 and accelerated after Old Mutual injected 900.0 million Kenyan Shillings into the bank in mid-2024 to fund restructuring. Finance costs also saw a substantial collapse of 71.0% to 101.0 million Kenyan Shillings, attributed to the full repayment of 1.533 billion Kenyan Shillings in external borrowings that featured on the 2024 balance sheet.
+
+### Persistent Capital Adequacy Concerns
+Despite the improved profitability, Faulu Microfinance Bank experienced continued capital erosion. Total shareholders' funds fell by 26.4% to 1.361 billion Kenyan Shillings, primarily weighed down by accumulated retained losses totaling 4.286 billion Kenyan Shillings. The bank's core capital to total deposit liabilities ratio stood at 6.7%, falling below the 8.0% statutory minimum. Similarly, the total capital to risk-weighted assets ratio of 9.4% breached the 12.0% floor by 2.6 percentage points. However, Faulu maintained a healthy liquidity ratio of 25.0%, which remained above the 20.0% statutory minimum. Microfinance institutions in Kenya generally face challenges such as high levels of non-performing loans, shrinking deposits, and high operating costs.
+
+### Strategic Repositioning in a Competitive Market
+Faulu Microfinance Bank is undergoing a strategic pivot towards digital financial services and lending to Micro, Small, and Medium Enterprises (MSMEs). This repositioning is partly a response to the explosive growth of licensed digital credit providers in Kenya, whose gross loans surged by 91% to 55.20 billion Kenyan Shillings in 2024 alone, directly intensifying competition in Faulu's traditional market segments. Digital lenders have significantly outpaced microfinance banks in total loans disbursed, with 195 licensed digital credit providers by December 2025, demonstrating their growing influence in Kenya's financial landscape. The microfinance industry faces increased competition from digital lenders and commercial banks, with challenges including asset quality and regulatory compliance costs.
+
+As the Kenyan financial sector evolves, other narratives continue to unfold across the nation, from political developments [cite: Suspected goons attack Tim Wanyonyi’s campaign command centre in Bungoma] to discussions on systemic support for citizens. [cite: Ruto Donates Ksh1.5 Million to Family Whose Son Died Abroad: A Scrutiny of Systemic Failures]
