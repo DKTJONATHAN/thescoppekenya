@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/president-william-ruto-to-host-boxers-majembe-and-mbavu-destroyer-at</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
+      <news:title>President William Ruto to host boxers Majembe and Mbavu Destroyer at State House</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/police-shoot-two-dead-after-protesters-attempt-to-storm-siaya-police</loc>
     <news:news>
       <news:publication>
@@ -577,42 +589,6 @@
       </news:publication>
       <news:publication_date>2026-04-04T09:00:00.000Z</news:publication_date>
       <news:title>Kenya issues malaria outbreak warning amid heavy rains</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenyan-telecommunications-firms-shift-focus-to-data-as-high-speed-ne</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-04T09:00:00.000Z</news:publication_date>
-      <news:title>Kenyan telecommunications firms shift focus to data as high-speed network usage rises</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/dci-arrests-former-energy-officials-over-irregular-ksh-4-billion-fue</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-04T09:00:00.000Z</news:publication_date>
-      <news:title>DCI arrests former energy officials over irregular Ksh 4 billion fuel deal</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/carragher-fears-liverpool-fans-behaving-like-man-utd-over-slot-deman</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-04T09:00:00.000Z</news:publication_date>
-      <news:title>Carragher fears Liverpool fans behaving like Man Utd over Slot demands</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
