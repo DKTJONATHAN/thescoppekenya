@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/duale-overseas-treatment-rules-too-little-too-late</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
+      <news:title>Duale's Rules: Too Little, Too Late for Kenya's Sick</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/affordable-housing-act-allows-kenyans-to-access-ksh-4-million-for-ru</loc>
     <news:news>
       <news:publication>
@@ -553,18 +565,6 @@
       </news:publication>
       <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
       <news:title>Afua Asantewaa confirms separation from her husband and requests privacy</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/bien-njerae-amapiano-chart-success-petty-truth</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-04T09:00:00.000Z</news:publication_date>
-      <news:title>Bien, Njerae, Amapiano Chart Success: The Petty Truth</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
