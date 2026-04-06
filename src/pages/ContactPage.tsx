@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Send, Facebook, Instagram, Youtube } from "lucide-react";
 import { XIcon } from "@/components/XIcon";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
