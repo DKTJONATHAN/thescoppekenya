@@ -66,7 +66,17 @@ export default function SportsPage() {
     <Layout>
       <Helmet>
         <title>Za Ndani Sports | Global Football, Live Scores & AI Tactical Analysis</title>
-        <meta name="description" content="Elite global football coverage: Premier League, Champions League, La Liga, and Athletics. Real-time data, AI-powered match previews, and insider reporting from Martin Mutwiri." />
+        <meta name="description" content="Elite global football coverage: Premier League, Champions League, La Liga, and Athletics. Real-time data, AI-powered match previews, and insider reporting." />
+        <link rel="canonical" href="https://zandani.co.ke/sports" />
+        <meta property="og:title" content="Za Ndani Sports | Global Football, Live Scores & AI Tactical Analysis" />
+        <meta property="og:description" content="Elite global football coverage: Premier League, Champions League, La Liga, and Athletics. Real-time data and AI-powered match previews." />
+        <meta property="og:url" content="https://zandani.co.ke/sports" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Za Ndani" />
+        <meta property="og:image" content="https://zandani.co.ke/logo.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Za Ndani Sports | Live Scores & AI Analysis" />
+        <meta name="twitter:description" content="Elite global football coverage with real-time data and AI-powered match previews." />
       </Helmet>
 
       {/* Live Ticker Bar */}

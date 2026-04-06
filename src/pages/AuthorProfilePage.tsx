@@ -164,10 +164,16 @@ export default function AuthorProfilePage() {
     <Layout>
       <Helmet>
         <title>{actualAuthorName} — Author | Za Ndani</title>
-        <meta name="description" content={`Read all articles by ${actualAuthorName} on Za Ndani — ${profile.role}.`} />
+        <meta name="description" content={`Read all articles by ${actualAuthorName} on Za Ndani — ${profile.role}. ${profile.bio.slice(0, 100)}`} />
         <link rel="canonical" href={`https://zandani.co.ke/author/${authorName}`} />
         <meta property="og:title" content={`${actualAuthorName} | Za Ndani`} />
         <meta property="og:description" content={profile.bio} />
+        <meta property="og:url" content={`https://zandani.co.ke/author/${authorName}`} />
+        <meta property="og:type" content="profile" />
+        <meta property="og:site_name" content="Za Ndani" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={`${actualAuthorName} | Za Ndani`} />
+        <meta name="twitter:description" content={profile.bio} />
       </Helmet>
 
       {/* ── Author hero banner ── */}

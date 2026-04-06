@@ -1,9 +1,23 @@
 import { Layout } from "@/components/layout/Layout";
 import { Users, Target, Award, Newspaper, ShieldCheck, Zap, Globe, Code } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export default function AboutPage() {
   return (
     <Layout>
+      <Helmet>
+        <title>About Us | Za Ndani</title>
+        <meta name="description" content="Za Ndani is Kenya's premier digital newsroom delivering breaking news, exclusive entertainment insights, and trending stories with zero compromise." />
+        <link rel="canonical" href="https://zandani.co.ke/about" />
+        <meta property="og:title" content="About Us | Za Ndani" />
+        <meta property="og:description" content="Za Ndani is Kenya's premier digital newsroom delivering breaking news, exclusive entertainment insights, and trending stories with zero compromise." />
+        <meta property="og:url" content="https://zandani.co.ke/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Za Ndani" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="About Us | Za Ndani" />
+        <meta name="twitter:description" content="Za Ndani is Kenya's premier digital newsroom delivering breaking news, exclusive entertainment insights, and trending stories." />
+      </Helmet>
       <div className="container max-w-5xl mx-auto px-4 py-16 md:py-24">
         {/* Hero Section */}
         <section className="text-center mb-20">

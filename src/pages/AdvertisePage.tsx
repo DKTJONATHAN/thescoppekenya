@@ -8,10 +8,16 @@ export default function AdvertisePage() {
     <Layout>
       <Helmet>
         <title>Advertise with Za Ndani | Premier Kenyan Digital Media Network</title>
-        <meta
-          name="description"
-          content="Scale your brand with Za Ndani. Access high-intent Kenyan audiences through professional display ads, sponsored content, and bespoke digital campaigns."
-        />
+        <meta name="description" content="Scale your brand with Za Ndani. Access high-intent Kenyan audiences through professional display ads, sponsored content, and bespoke digital campaigns." />
+        <link rel="canonical" href="https://zandani.co.ke/advertise" />
+        <meta property="og:title" content="Advertise with Za Ndani | Premier Kenyan Digital Media Network" />
+        <meta property="og:description" content="Scale your brand with Za Ndani. Access high-intent Kenyan audiences through display ads, sponsored content, and digital campaigns." />
+        <meta property="og:url" content="https://zandani.co.ke/advertise" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Za Ndani" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Advertise with Za Ndani" />
+        <meta name="twitter:description" content="Scale your brand with Za Ndani. Access high-intent Kenyan audiences." />
       </Helmet>
 
       <div className="container max-w-6xl mx-auto px-4 py-16 md:py-24">
