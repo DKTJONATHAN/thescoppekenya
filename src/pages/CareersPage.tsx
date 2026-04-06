@@ -1,6 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Briefcase, MapPin, Clock, Mail, Sparkles, Rocket, Fingerprint, Coffee } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const openPositions = [
   {

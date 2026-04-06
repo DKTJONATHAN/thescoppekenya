@@ -20,6 +20,19 @@ export default function ContactPage() {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Contact Us | Za Ndani</title>
+        <meta name="description" content="Get in touch with Za Ndani. Have a story tip, insider info, or want to collaborate? Reach our newsroom in Nairobi, Kenya." />
+        <link rel="canonical" href="https://zandani.co.ke/contact" />
+        <meta property="og:title" content="Contact Us | Za Ndani" />
+        <meta property="og:description" content="Get in touch with Za Ndani. Have a story tip, insider info, or want to collaborate? Reach our newsroom in Nairobi, Kenya." />
+        <meta property="og:url" content="https://zandani.co.ke/contact" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Za Ndani" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Contact Us | Za Ndani" />
+        <meta name="twitter:description" content="Get in touch with Za Ndani. Have a story tip or want to collaborate?" />
+      </Helmet>
       <div className="container max-w-6xl mx-auto px-4 py-12 md:py-20">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-headline mb-4">

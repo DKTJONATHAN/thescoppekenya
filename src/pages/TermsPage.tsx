@@ -1,8 +1,19 @@
 import { Layout } from "@/components/layout/Layout";
+import { Helmet } from "react-helmet-async";
 
 export default function TermsPage() {
   return (
     <Layout>
+      <Helmet>
+        <title>Terms of Service | Za Ndani</title>
+        <meta name="description" content="Read Za Ndani's terms of service. Understand the rules and guidelines for using our news and entertainment platform." />
+        <link rel="canonical" href="https://zandani.co.ke/terms" />
+        <meta property="og:title" content="Terms of Service | Za Ndani" />
+        <meta property="og:description" content="Read Za Ndani's terms of service for using our news and entertainment platform." />
+        <meta property="og:url" content="https://zandani.co.ke/terms" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Za Ndani" />
+      </Helmet>
       <div className="container max-w-4xl mx-auto px-4 py-12 md:py-20">
         <h1 className="text-4xl md:text-5xl font-serif font-bold text-headline mb-6">
           Terms of <span className="text-primary">Service</span>

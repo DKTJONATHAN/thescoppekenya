@@ -1,8 +1,19 @@
 import { Layout } from "@/components/layout/Layout";
+import { Helmet } from "react-helmet-async";
 
 export default function PrivacyPage() {
   return (
     <Layout>
+      <Helmet>
+        <title>Privacy Policy | Za Ndani</title>
+        <meta name="description" content="Read Za Ndani's privacy policy. Learn how we collect, use, and protect your personal information when you visit our website." />
+        <link rel="canonical" href="https://zandani.co.ke/privacy" />
+        <meta property="og:title" content="Privacy Policy | Za Ndani" />
+        <meta property="og:description" content="Read Za Ndani's privacy policy. Learn how we collect, use, and protect your personal information." />
+        <meta property="og:url" content="https://zandani.co.ke/privacy" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Za Ndani" />
+      </Helmet>
       <div className="container max-w-4xl mx-auto px-4 py-12 md:py-20">
         <h1 className="text-4xl md:text-5xl font-serif font-bold text-headline mb-6">
           Privacy <span className="text-primary">Policy</span>
