@@ -29,7 +29,16 @@ const openPositions = [
 
 export default function CareersPage() {
   return (
-    <Layout>
+      <Helmet>
+        <title>Careers at Za Ndani | Join Kenya's Boldest Newsroom</title>
+        <meta name="description" content="Join Za Ndani — Kenya's boldest digital newsroom. We're hiring writers, strategists, and creatives who want to shape the future of Kenyan media." />
+        <link rel="canonical" href="https://zandani.co.ke/careers" />
+        <meta property="og:title" content="Careers at Za Ndani | Join Kenya's Boldest Newsroom" />
+        <meta property="og:description" content="Join Za Ndani — Kenya's boldest digital newsroom. We're hiring writers, strategists, and creatives." />
+        <meta property="og:url" content="https://zandani.co.ke/careers" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Za Ndani" />
+      </Helmet>
       <div className="container max-w-5xl mx-auto px-4 py-16 md:py-24">
         {/* Hero Section */}
         <div className="text-center mb-20">
