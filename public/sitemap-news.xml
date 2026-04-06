@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/former-government-officials-released-on-bail-in-fuel-importation-sca</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
+      <news:title>Former government officials released on bail in fuel importation scandal</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/president-william-ruto-to-host-boxers-majembe-and-mbavu-destroyer-at</loc>
     <news:news>
       <news:publication>
@@ -565,30 +577,6 @@
       </news:publication>
       <news:publication_date>2026-04-04T09:00:00.000Z</news:publication_date>
       <news:title>Supermarket security systems use electronic article surveillance to detect shoplifting</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/senior-kenyan-energy-officials-resign-following-investigation-into-f</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-04T09:00:00.000Z</news:publication_date>
-      <news:title>Senior Kenyan energy officials resign following investigation into fabricated fuel shortage</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-issues-malaria-outbreak-warning-amid-heavy-rains</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-04T09:00:00.000Z</news:publication_date>
-      <news:title>Kenya issues malaria outbreak warning amid heavy rains</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
