@@ -14,7 +14,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-card text-card-foreground border-t border-border">
+    <footer className="bg-card text-card-foreground border-t border-border" data-nosnippet>
       {/* Newsletter Section */}
       <div className="border-b border-border">
         <div className="container py-12">
