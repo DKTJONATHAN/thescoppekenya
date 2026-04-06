@@ -211,12 +211,36 @@ jobs:
                       if len(article_text) < 400:
                           article_text = "\n\n".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40)
                       img_url = ""
-                      og = soup.find('meta', property='og:image')
-                      if og: img_url = og.get('content', '')
+                      # 1. Try LD+JSON for the actual article hero image (most reliable)
+                      for script in soup.find_all('script', type='application/ld+json'):
+                          try:
+                              import json
+                              data = json.loads(script.string or '{}')
+                              if isinstance(data, list): data = data[0]
+                              if 'image' in data:
+                                  img = data['image']
+                                  if isinstance(img, dict): img = img.get('url', '')
+                                  if isinstance(img, list): img = img[0] if img else ''
+                                  # Generic logo patterns check
+                                  if img and not any(x in img.lower() for x in ['logo', 'generic', 'placeholder', 'pulse-logo']):
+                                      img_url = img; break
+                          except: pass
+
+                      # 2. Try OG / Twitter if no LD+JSON or if it was filtered
                       if not img_url:
-                          tw = soup.find('meta', {'name': 'twitter:image'})
-                          if tw: img_url = tw.get('content', '')
-                      print(f"Text length: {len(article_text)}")
+                          og = soup.find('meta', property='og:image') or soup.find('meta', {'name': 'twitter:image'})
+                          if og:
+                              img = og.get('content', '')
+                              if img and not any(x in img.lower() for x in ['logo', 'generic', 'placeholder', 'pulse-logo']):
+                                  img_url = img
+
+                      # 3. Last resort: Any large image in figure
+                      if not img_url:
+                          fig = soup.find('figure')
+                          if fig and fig.find('img'):
+                              img_url = fig.find('img').get('src', '')
+
+                      print(f"Final Image: {img_url[:70]}")
                       return article_text, img_url, title
               except Exception as e:
                   print(f"Scrape error: {e}")
