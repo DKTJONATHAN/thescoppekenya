@@ -86,8 +86,8 @@ jobs:
           full_date_str = current_utc.strftime("%A, %B %d, %Y")
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
           MAX_AGE_HOURS = 24
-          SITE_URL = "https://www.kenyans.co.ke/lifestyle"
-          SITE_DOMAIN = "kenyans.co.ke"
+          SITE_URL = "https://www.pulse.co.ke/lifestyle"
+          SITE_DOMAIN = "pulse.co.ke"
           SITE_BASE_URL = "https://zandani.co.ke"
 
           BANNED_PHRASES = [
@@ -147,12 +147,11 @@ jobs:
                           if not href: continue
                           full_url = href if href.startswith('http') else f'https://www.{SITE_DOMAIN}' + href
                           if SITE_DOMAIN not in full_url: continue
-                          path = full_url.split(SITE_DOMAIN)[-1].lower()
-                          slug = path.rstrip('/').split('/')[-1]
-                          if (len(slug) > 15 and '-' in slug and not any(x in path for x in BANNED_URL_PATHS)):
-                              if full_url not in seen:
-                                  seen.add(full_url)
-                                  urls_list.append(full_url)
+                          # Pulse Kenya specific filtering
+                          if any(x in full_url.lower() for x in ['/author/', '/tag/', '/category/', '/search/']): continue
+                          if full_url not in seen:
+                              seen.add(full_url)
+                              urls_list.append(full_url)
                       browser.close()
               except Exception as e:
                   print(f"Scan failed: {e}")
@@ -204,7 +203,7 @@ jobs:
                       title = soup.title.string.strip() if soup.title else ""
                       title = re.sub(r'\s*[-|\u2013]\s*Kenyans\.co\.ke.*', '', title, flags=re.I).strip()
                       article_text = ""
-                      for sel in ['article', '.article-body', '.post-content', '.entry-content', '.content', 'main']:
+                      for sel in ['article', '.article-body', '.article-content', '.post-content', '.entry-content', '.content', 'main']:
                           cont = soup.select_one(sel)
                           if cont:
                               article_text = "\n\n".join(p.get_text(strip=True) for p in cont.find_all('p') if len(p.get_text(strip=True)) > 40)
