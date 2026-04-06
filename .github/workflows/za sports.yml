@@ -1,8 +1,8 @@
-name: Martin Mutwiri - Global Sports Scraper
+name: Jona Munyi - Sports Scraper
 on:
   schedule:
-    - cron: '30 3,9,15,21 * * *'
-  workflow_dispatch:
+    - cron: '45 1,7,13,19 * * *'
+  workflow_dispatch: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
@@ -11,7 +11,7 @@ permissions:
 env:
   DEFAULT_BRANCH: main
   POSTS_DIR: content/posts
-  MEMORY_FILE: .github/memory_martin_global.json
+  MEMORY_FILE: .github/memory_jona_sports.json
 jobs:
   generate-and-publish:
     runs-on: ubuntu-22.04
@@ -23,10 +23,12 @@ jobs:
           ref: ${{ env.DEFAULT_BRANCH }}
           token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
           persist-credentials: true
+
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: Cache Playwright browsers
         uses: actions/cache@v4
         with:
@@ -34,6 +36,7 @@ jobs:
           key: ${{ runner.os }}-playwright-${{ hashFiles('**/playwright') }}
           restore-keys: |
             ${{ runner.os }}-playwright-
+
       - name: Install system dependencies and Python packages
         run: |
           sudo apt-get update -y
@@ -56,7 +59,8 @@ jobs:
             playwright-stealth==1.0.6 \
             Pillow
           playwright install chromium --with-deps
-      - name: Global Sports Scraper with Gemini
+
+      - name: Generate sports article with Gemini
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -80,17 +84,11 @@ jobs:
           publish_timestamp = current_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
           today_str = current_utc.strftime("%Y-%m-%d")
           full_date_str = current_utc.strftime("%A, %B %d, %Y")
-          MODELS_TO_TRY = ["gemini-1.5-flash", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
           MAX_AGE_HOURS = 24
+          SITE_URL = "https://www.kenyans.co.ke/sports"
+          SITE_DOMAIN = "kenyans.co.ke"
           SITE_BASE_URL = "https://zandani.co.ke"
-
-          # ── GLOBAL SOURCES ──────────────────────────────────────────────────────────
-          GLOBAL_SOURCES = [
-              {"name": "BBC Sport", "url": "https://www.bbc.com/sport/football", "domain": "bbc.com"},
-              {"name": "Sky Sports", "url": "https://www.skysports.com/football/news", "domain": "skysports.com"},
-              {"name": "The Guardian", "url": "https://www.theguardian.com/football", "domain": "theguardian.com"},
-              {"name": "ESPN", "url": "https://www.espn.com/soccer", "domain": "espn.com"}
-          ]
 
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot",
@@ -117,76 +115,51 @@ jobs:
                       new_url = res.json()['data']['url']
                       print(f"Re-hosted as WebP: {new_url}")
                       return new_url
-                  print(f"ImgBB failed: {res.text}")
                   return image_url
-              except Exception as e:
-                  print(f"ImgBB/WebP error: {e}")
-                  return image_url
+              except: return image_url
 
-          def get_target_urls(source_url, domain):
+          def get_target_urls():
               urls_list = []
               seen = set()
-              print(f"Scanning {source_url}...")
               try:
                   with sync_playwright() as p:
                       browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled"])
                       context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
                       page = context.new_page()
                       stealth_sync(page)
-                      page.goto(source_url, timeout=60000, wait_until="domcontentloaded")
+                      page.goto(SITE_URL, timeout=60000, wait_until="domcontentloaded")
                       time.sleep(5)
-                      for _ in range(2):
-                          page.evaluate("window.scrollBy(0, 1500)")
-                          time.sleep(2)
                       soup = BeautifulSoup(page.content(), 'html.parser')
                       for a in soup.find_all('a', href=True):
                           href = a.get('href', '').strip()
-                          if not href: continue
-                          full_url = href if href.startswith('http') else f'https://www.{domain}' + href
-                          if domain not in full_url: continue
-                          path = full_url.split(domain)[-1].lower()
-                          slug = path.rstrip('/').split('/')[-1]
-                          if len(slug) > 20 and '-' in slug and not any(x in path for x in ['/author/', '/tag/', '/category/', '/terms', '/privacy']):
+                          full_url = href if href.startswith('http') else f'https://www.{SITE_DOMAIN}' + href
+                          if SITE_DOMAIN in full_url and len(full_url.split('/')[-1]) > 15 and '-' in full_url:
                               if full_url not in seen:
-                                  seen.add(full_url)
-                                  urls_list.append(full_url)
+                                  seen.add(full_url); urls_list.append(full_url)
                       browser.close()
-              except Exception as e:
-                  print(f"Scan failed for {domain}: {e}")
-              return urls_list[:15]
+              except: pass
+              return urls_list[:25]
 
           def scrape_article(url):
-              print(f"Scraping: {url}")
               try:
                   with sync_playwright() as p:
-                      browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled"])
+                      browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-dev-shm-usage"])
                       context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
                       page = context.new_page()
                       stealth_sync(page)
-                      page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["image","stylesheet","font","media"] else route.continue_())
+                      page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["image","font"] else route.continue_())
                       page.goto(url, timeout=60000, wait_until="domcontentloaded")
                       time.sleep(2)
                       soup = BeautifulSoup(page.content(), "html.parser")
                       browser.close()
-                      
                       title = soup.title.string.strip() if soup.title else ""
-                      article_text = ""
-                      for sel in ['article', '.article-body', '.post-content', 'main', '.story-body']:
-                          cont = soup.select_one(sel)
-                          if cont:
-                              article_text = "\n\n".join(p.get_text(strip=True) for p in cont.find_all('p') if len(p.get_text(strip=True)) > 40)
-                              if len(article_text) > 400: break
-                      if len(article_text) < 400:
-                          article_text = "\n\n".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40)
-                      
+                      title = re.sub(r'\s*[-|].*', '', title).strip()
+                      article_text = "\n\n".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 50)
                       img_url = ""
                       og = soup.find('meta', property='og:image')
                       if og: img_url = og.get('content', '')
-                      
                       return article_text, img_url, title
-              except Exception as e:
-                  print(f"Scrape error: {e}")
-                  return None, None, None
+              except: return None, None, None
 
           def get_internal_context():
               posts_dir = os.environ.get("POSTS_DIR", "content/posts")
@@ -201,118 +174,86 @@ jobs:
                       slug_m = re.search(r'slug:\s*"(.*?)"', content)
                       if title_m and slug_m: links.append(f'- [{title_m.group(1)}]({SITE_BASE_URL}/article/{slug_m.group(1)})')
                   except: pass
-              return "\n".join(links) if links else ""
+              return "\n".join(links)
 
           raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY1"] if os.environ.get(k)]
-          if not raw_keys: sys.exit(1)
           key_cycle = itertools.cycle(raw_keys)
-          current_key = next(key_cycle)
-          client = genai.Client(api_key=current_key)
+          client = genai.Client(api_key=next(key_cycle))
 
-          def gemini_generate(prompt, label="", use_search=False):
-              global current_key, client
-              for model in MODELS_TO_TRY:
-                  for _ in range(6):
-                      try:
-                          config = types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]) if use_search else None
-                          resp = client.models.generate_content(model=model, contents=prompt, config=config)
-                          return resp.text.strip()
-                      except Exception as e:
-                          if any(x in str(e) for x in ["429", "quota", "rate"]):
-                              time.sleep(30); current_key = next(key_cycle); client = genai.Client(api_key=current_key); continue
-                          break
-              return None
-
+          article_links = get_target_urls()
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
-          random.shuffle(GLOBAL_SOURCES)
           full_raw_text, target_image, target_title, final_hash = None, None, None, None
+          for link in article_links:
+              u_hash = hashlib.md5(link.encode()).hexdigest()
+              if u_hash in memory: continue
+              text, img, title = scrape_article(link)
+              if text and len(text) > 400:
+                  full_raw_text = text; target_image = img; target_title = title; final_hash = u_hash
+                  break
+          if not full_raw_text: sys.exit(0)
 
-          for source in GLOBAL_SOURCES:
-              article_links = get_target_urls(source["url"], source["domain"])
-              for link in article_links:
-                  u_hash = hashlib.md5(link.encode()).hexdigest()
-                  if u_hash in memory: continue
-                  text, img, title = scrape_article(link)
-                  if text and len(text) > 400:
-                      full_raw_text = text; target_image = img; target_title = title; final_hash = u_hash
-                      break
-              if full_raw_text: break
-
-          if not full_raw_text:
-              print("No fresh global articles found.")
-              sys.exit(0)
-
-          # ── GENERATION ─────────────────────────────────────────────────────────────
-          title_prompt = f"TITLE: {target_title}\nSNIPPET: {full_raw_text[:1000]}\nWrite a high-CTR news headline for European football.\nOutput ONLY JSON: {{\"final_title\": \"Title Here\"}}"
-          title_text = gemini_generate(title_prompt, "title")
+          title_prompt = f"SCRAPED TITLE: {target_title}\nSNIPPET: {full_raw_text[:1000]}\nWrite a high-CTR news headline for Kenya sports.\nOutput ONLY JSON: {{\"final_title\": \"Title Here\"}}"
+          resp = client.models.generate_content(model="gemini-3-flash-preview", contents=title_prompt)
           final_title = target_title
-          if title_text:
-              try:
-                  clean = re.sub(r"^```json?\n?|```$", "", title_text, flags=re.I|re.DOTALL).strip()
-                  final_title = json.loads(clean).get('final_title', target_title)
-              except: pass
+          try:
+              clean = re.sub(r"^```json?\n?|```$", "", resp.text, flags=re.I|re.DOTALL).strip()
+              final_title = json.loads(clean).get('final_title', target_title)
+          except: pass
 
           internal_links = get_internal_context()
-          article_prompt = f"""You are Martin Mutwiri, an expert global football journalist for Za Ndani (zandani.co.ke).
-Today is {full_date_str}.
-TITLE: {final_title}
-SOURCE TEXT: {full_raw_text[:9500]}
-INTERNAL LINKS: {internal_links}
-TASK: Write an authoritative, energetic football article. Focus on elite European football context.
-Professional tone, Kenyan perspective but global scale. No Sheng.
-Start with a single lede paragraph (35-45 words).
-Then use ## and ### headings.
-BANNED PHRASES: {', '.join(BANNED_PHRASES)}"""
-          article_text = gemini_generate(article_prompt, "article", use_search=True)
-          if not article_text: sys.exit(1)
-          article_text = re.sub(r"^```(?:markdown)?\n?", "", article_text).rstrip("```").strip()
+          article_prompt = (
+              f"Current Date: {full_date_str}. The current year is {current_year}.\n"
+              f"TITLE: {final_title}\nSOURCE TEXT: {full_raw_text[:9500]}\n"
+              f"INTERNAL LINKS: {internal_links}\n\n"
+              f"TASK: Write an authoritative Kenyan sports article as Jona Munyi for Za Ndani.\n"
+              f"Professional, fast-paced, insightful. No Sheng. No em-dashes.\n"
+              f"CRITICAL: All dates and references must reflect {current_year}.\n"
+              f"STRUCTURE: lede paragraph (35-45 words), then ## and ### headings.\n"
+              f"BANNED PHRASES: {', '.join(BANNED_PHRASES)}\n"
+              f"CRITICAL BRANDING: You are writing FOR Za Ndani (zandani.co.ke). NEVER mention source sites."
+          )
+          article_resp = client.models.generate_content(model="gemini-2.5-flash", contents=article_prompt, config=types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]))
+          article_text = re.sub(r"^```(?:markdown)?\n?", "", article_resp.text).rstrip("```").strip()
 
-          desc_prompt = f"Write a single meta description (145 chars) for: {final_title}\nOutput ONLY JSON: {{\"description\": \"...\"}}"
-          desc_text = gemini_generate(desc_prompt, "desc")
+          desc_text = client.models.generate_content(model="gemini-3-flash-preview", contents=f"Write meta description (145 chars) for: {final_title}\nOutput ONLY JSON: {{\"description\": \"...\"}}").text
           meta_description = ""
-          if desc_text:
-              try:
-                  clean = re.sub(r"^```json?\n?|```$", "", desc_text, flags=re.I|re.DOTALL).strip()
-                  meta_description = json.loads(clean).get('description', '')
-              except: pass
+          try: meta_description = json.loads(re.sub(r"^```json?\n?|```$", "", desc_text, flags=re.I|re.DOTALL).strip()).get('description', '')[:160]
+          except: pass
 
-          tags_prompt = f"Generate 4 lowercase hyphenated tags for: {final_title}\nOutput ONLY JSON: {{\"tags\": [...]}}"
-          tags_text = gemini_generate(tags_prompt, "tags")
+          tags_text = client.models.generate_content(model="gemini-3-flash-preview", contents=f"Generate 4 lowercase hyphenated tags for: {final_title}\nOutput ONLY JSON: {{\"tags\": [...]}}").text
           article_tags = []
-          if tags_text:
-              try:
-                  clean = re.sub(r"^```json?\n?|```$", "", tags_text, flags=re.I|re.DOTALL).strip()
-                  article_tags = json.loads(clean).get('tags', [])
-              except: pass
+          try: article_tags = json.loads(re.sub(r"^```json?\n?|```$", "", tags_text, flags=re.I|re.DOTALL).strip()).get('tags', [])[:4]
+          except: pass
 
           final_image = upload_to_imgbb(target_image) if target_image else ""
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           filepath = os.path.join(os.environ.get("POSTS_DIR"), f"{today_str}-{slug}.md")
           with open(filepath, "w", encoding="utf-8") as f:
-              f.write(f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\ndescription: \"{meta_description}\"\nauthor: \"Martin Mutwiri\"\nimage: \"{final_image}\"\ncategory: \"Sports\"\ntags: {json.dumps(article_tags)}\ndate: \"{publish_timestamp}\"\n---\n{article_text}")
-          
+              f.write(f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\ndescription: \"{meta_description}\"\nauthor: \"Jona Munyi\"\nimage: \"{final_image}\"\ncategory: \"Sports\"\ntags: {json.dumps(article_tags)}\ndate: \"{publish_timestamp}\"\n---\n{article_text}")
           memory.append(final_hash)
-          json.dump(memory[-300:], open(memory_path, 'w'))
+          with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
           print(f"Saved: {filepath}")
           EOF
 
       - name: Git Safety Pull
         run: |
-          git config --global user.name "Martin Mutwiri"
+          git config --global user.name "Jona Munyi"
           git config --global user.email "bot@zandani.co.ke"
           git add .
           git stash -u
           git fetch origin main
           git pull origin main --rebase
           git stash pop || echo "Nothing to pop"
+
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_author: "Martin Mutwiri <bot@zandani.co.ke>"
-          commit_message: "content: Global football update by Martin Mutwiri 🌍⚽"
+          commit_author: "Jona Munyi <bot@zandani.co.ke>"
+          commit_message: "content: Sports update by Jona Munyi 🏆"
           branch: ${{ env.DEFAULT_BRANCH }}
-          file_pattern: 'content/posts/*.md .github/memory_martin_global.json'
+          file_pattern: 'content/posts/*.md .github/memory_jona_sports.json'
+
       - name: Ping Google Sitemap
         run: |
           curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
