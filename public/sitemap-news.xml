@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/odm-defends-opiyo-wandayi-and-lee-kinyanjui-amid-fuel-scandal-probe</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
+      <news:title>ODM defends Opiyo Wandayi and Lee Kinyanjui amid fuel scandal probe</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/fuel-dealers-warn-petrol-prices-could-reach-ksh231-68-per-litre-amid</loc>
     <news:news>
       <news:publication>
@@ -530,42 +542,6 @@
       <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
       <news:title>Google Rolls Out Gmail Username Change for Personal Accounts</news:title>
       <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/boxer-potifus-odipo-earns-cash-prizes-and-vehicle-after-defeating-fe</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
-      <news:title>Boxer Potifus Odipo earns cash prizes and vehicle after defeating Ferdinand Omondi</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/pre-recorded-episodes-prevent-the-view-from-addressing-pam-bondi-dis</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
-      <news:title>Pre-recorded episodes prevent The View from addressing Pam Bondi dismissal</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/nyashinski-honors-fallen-young-kenyans-in-legendary-performance</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
-      <news:title>Nyashinski Honors Fallen Young Kenyans in Legendary Performance</news:title>
-      <news:genres>Entertainment,Music</news:genres>
     </news:news>
   </url>
 </urlset>
