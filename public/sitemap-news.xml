@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/tsc-enhances-digital-infrastructure-in-200-offices-for-teacher-recru</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
+      <news:title>TSC enhances digital infrastructure in 200 offices for teacher recruitment</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/tipsy-gee-issues-public-apology-to-vera-sidika-following-romance-rum</loc>
     <news:news>
       <news:publication>
@@ -493,54 +505,6 @@
       </news:publication>
       <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
       <news:title>Energy Cabinet Secretary Opiyo Wandayi assures fuel supply security following arrest of senior officials</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/dci-warns-gachagua-over-fuel-scandal-allegations</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
-      <news:title>DCI warns Gachagua over fuel scandal allegations</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/dorea-chege-supports-mbavu-destroyer-after-vurugu-night-defeat</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
-      <news:title>Dorea Chege supports Mbavu Destroyer after Vurugu Night defeat</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/president-ruto-announces-world-bank-funded-road-linking-salgaa-and-k</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
-      <news:title>President Ruto announces World Bank funded road linking Salgaa and Kilgoris</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/climate-denial-couch-chaos-kenyas-own-goal</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
-      <news:title>Climate Denial, Couch Chaos: Kenya's Own Goal</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
