@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/kenyan-air-travelers-face-rising-fares-and-reduced-flight-capacity</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
+      <news:title>Kenyan air travelers face rising fares and reduced flight capacity</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/netflix-launches-playground-gaming-app-for-children</loc>
     <news:news>
       <news:publication>
@@ -529,30 +541,6 @@
       </news:publication>
       <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
       <news:title>King Kaka Launches Culinary Show Following Divorce From Nana Owiti</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/ghana-joins-boycott-of-africa-energies-summit-citing-lack-of-inclusi</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
-      <news:title>Ghana Joins Boycott of Africa Energies Summit Citing Lack of Inclusion</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/google-rolls-out-gmail-username-change-for-personal-accounts</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
-      <news:title>Google Rolls Out Gmail Username Change for Personal Accounts</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
