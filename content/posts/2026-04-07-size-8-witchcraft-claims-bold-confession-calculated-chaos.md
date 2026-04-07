@@ -1,0 +1,42 @@
+---
+title: "Size 8's Witchcraft Claims: A Bold Confession or Calculated Chaos?"
+slug: "size-8-witchcraft-claims-bold-confession-calculated-chaos"
+description: "Size 8's dramatic testimony regarding her family's witchcraft is either monumental courage or a shameless grab for relevance; Kenya demands truth, not just thea"
+author: "From The Editor"
+author_url: "https://zandani.co.ke/author/from-the-editor"
+image: "https://i.ibb.co/rK5djX7S/4e74fab236c6.jpg"
+category: "Opinions"
+tags: ["opinions", "size-8-witchcraft-family-testimony", "size-8-generational-curses-exposed", "size-8-demonic-background-confession", "size-8-family-witchcraft-allegations", "size-8-breaking-generational-bondage", "size-8-testimony-ntv-interview", "kenyan-gospel", "celebrity-drama", "spiritual-warfare"]
+canonical: "https://zandani.co.ke/article/size-8-witchcraft-claims-bold-confession-calculated-chaos"
+date: "2026-04-07T22:47:58Z"
+---
+
+Linet Masiro Munyali, infamously known as Size 8, has once again dragged Kenya into her self-made spiritual circus with a purported exposé on her family's generational witchcraft. This isn't courage; it's a spectacle, designed either to genuinely shock or to desperately cling to fading relevancy in the cutthroat gospel industry.
+
+## The Unsettling Narrative of Size 8's Witchcraft Family Testimony
+
+The woman who once gyrated to "Shamba Boy" now preaches deliverance, a transformation that always begged scrutiny. Her latest pronouncements, delivered with the gravity of a prophet, claim she was born into a family steeped in dark arts, where her great-grandparents practiced occult rituals, a tradition "no one should leave". This sweeping declaration is the kind of sensationalism that sells, yet it leaves critical minds questioning the timing and the dramatic flair. Is this a genuine size 8 witchcraft family testimony, or a carefully constructed narrative designed to absolve a questionable past and elevate her current spiritual brand?
+
+### The Curious Case of Convenient Chronology
+
+Size 8, who burst onto the secular scene in the late 2000s, made her "sudden, dramatic pivot" to gospel in April 2013. Now, she attributes her rapid rise in secular music to the very "demonic background" she claims to have escaped. This retroactive spiritual accounting is almost too neat, too perfectly aligned with a redemption arc. Did the "backing of that spirit" not feel so demonic when the cheques were clearing and the secular hits were topping charts? It’s easy to decry a past influence when you’ve successfully leveraged it for fame, only to discard it for a new, equally lucrative, spiritual venture. This isn't breaking generational bondage; it's rebranding a life story for maximum impact.
+
+Her testimony, given in "a widely broadcast interview", paints a grim picture of inherited spiritual obligations. But the public is not naive. We remember a time when Size 8’s persona was anything but saintly, and the convenient discovery of these deep-seated generational curses only after establishing a gospel career raises eyebrows. It smacks of an attempt to justify previous exploits by framing them as predestined struggles against an evil inheritance, rather than personal choices.
+
+### Death Threats and Dramatic License
+
+Size 8 claims her decision to embrace Christianity was met with fierce opposition, including "death threats from relatives". "Nobody in this family can preach the gospel," she quotes them saying, "This is a family of witches". If these threats are real, then her courage is undeniable. But given the theatrical nature of much celebrity testimony, one must ask: how much of this is hyperbole designed to heighten the drama and solidify her image as a spiritual warrior? Kenyans are discerning; we appreciate genuine conviction, but we also sniff out manufactured martyrdom from a mile away. The narrative of her mother considering termination further adds to the dramatic arc, framing her very existence as a miracle. While powerful, the continuous layering of extraordinary hardship serves a very specific purpose in the modern gospel testimonial industry.
+
+### The Murky Waters of Identity and Origin
+
+Adding another layer of questionable authenticity to her narrative are the conflicting reports surrounding her mother's heritage. In one interview, Size 8 suggested her light skin came from her mother, a "half-caste" with "Asian heritage". Yet, a Kenyan fan, with a memory sharper than a witch doctor's knife, pointed out that her mother was buried in Uganda, with the family home reportedly in Mbale. This glaring inconsistency in her narrative about her own lineage is not minor; it undermines the very foundation of the "generational legacy" she preaches against. How can one trust the intricate details of a spiritual inheritance when basic geographical and ethnic origins are so fluid? Such discrepancies make her size 8 demonic background confession appear less like genuine truth and more like a collection of convenient, albeit contradictory, anecdotes. For a full breakdown of this perplexing narrative, one might refer to the exposé on Zandani: Size 8 Testimony: Gospel Singer's Generational Legacy of Witchcraft Exposed.
+
+### DJ Mo's Silence and the Specter of Influence
+
+One must also ponder the role of her husband, DJ Mo, in all this. While Size 8 is out here spilling what she terms as a size 8 family witchcraft allegation, Mo remains conspicuously quiet on this specific and profoundly sensitive aspect of his wife's family history. Is his silence a sign of respect for her personal journey, or a strategic distance from a narrative that might stretch the bounds of belief for even the most devout? In a marriage that has seen its own public dramas, including a reported separation, one would expect a united front, especially concerning such a monumental spiritual battle. His relative quiet on her specific claims of familial witchcraft is, in itself, a statement.
+
+### The Verdict on "Breaking Generational Bondage"
+
+Ultimately, Size 8's public declaration of her size 8 breaking generational bondage is a double-edged sword. On one hand, it speaks to a deep-seated belief in spiritual warfare prevalent in many Kenyan households. On the other, it begs the question of motive and authenticity. Is this a raw, unvarnished truth, or a calculated performance designed to re-energize her ministry and silence critics of her past? The entertainment industry, whether secular or gospel, thrives on compelling stories. Size 8 has delivered one, brimming with darkness, redemption, and peril. But for a nation weary of celebrity theatrics, genuine conviction needs to stand alone, unadorned by sensationalism.
+
+The time for vague pronouncements and inconsistent narratives is over. If Size 8 genuinely wishes to lead, she must present a coherent, verifiable truth, not a patchwork of dramatic claims. The Kenyan public deserves more than a carefully curated size 8 testimony ntv interview; they deserve authenticity that stands up to scrutiny. Until then, her "generational legacy of witchcraft" remains a compelling story, but one that leaves more questions than answers about the sincerity of its teller.
