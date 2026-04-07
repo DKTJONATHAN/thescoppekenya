@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/snoop-doggs-swansea-glamour-african-clubs-deserve-more</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
+      <news:title>Snoop Dogg's Swansea Glamour: African Clubs Deserve More!</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/rapper-offset-in-stable-condition-after-shooting-in-florida</loc>
     <news:news>
       <news:publication>
@@ -553,30 +565,6 @@
       </news:publication>
       <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
       <news:title>KASARANI SHUTDOWN: MAJEMBE SILENCES MBAVU DESTROYER AS MILLIONS WATCH THE TRIUMPHANT RETURN OF KENYAN BOXING</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/president-ruto-pledges-government-support-for-boxing-following-majem</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
-      <news:title>President Ruto pledges government support for boxing following Majembe victory</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/premier-league-shame-no-mercy-speedsters</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
-      <news:title>Premier League Shame: No Mercy for Speedsters</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
