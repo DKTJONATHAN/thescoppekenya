@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/iebc-attributes-missing-voter-streams-to-ongoing-registration</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
+      <news:title>IEBC Attributes Missing Voter Streams to Ongoing Registration</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/omah-lay-defends-viral-stage-dance-following-fan-s-relationship-brea</loc>
     <news:news>
       <news:publication>
@@ -553,18 +565,6 @@
       </news:publication>
       <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
       <news:title>Kenya's Cheaters: A Stain on Our Sporting Soul with the Athletics Kenya integrity unit investigation</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/governor-wavinya-ndeti-calls-for-national-unity-and-renewal-in-easte</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
-      <news:title>Governor Wavinya Ndeti Calls for National Unity and Renewal in Easter Message</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
