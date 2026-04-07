@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/energy-cs-wandayi-blocks-unauthorized-fuel-consignment-from-price-ca</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
+      <news:title>Energy CS Wandayi blocks unauthorized fuel consignment from price calculations</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenyan-air-travelers-face-rising-fares-and-reduced-flight-capacity</loc>
     <news:news>
       <news:publication>
@@ -517,30 +529,6 @@
       </news:publication>
       <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
       <news:title>Ruto Vows Action Against Officials Implicated in Fuel Scandal</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/epra-appoints-joseph-oketch-as-acting-director-general</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
-      <news:title>EPRA appoints Joseph Oketch as acting Director General</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/king-kaka-launches-culinary-show-following-divorce-from-nana-owiti</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-05T09:00:00.000Z</news:publication_date>
-      <news:title>King Kaka Launches Culinary Show Following Divorce From Nana Owiti</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
