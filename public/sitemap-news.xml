@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/kenya-pipeline-company-confirms-sufficient-fuel-stocks-following-rep</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
+      <news:title>Kenya Pipeline Company confirms sufficient fuel stocks following reported shortages</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/rigathi-gachagua-sets-conditions-for-working-with-president-william-</loc>
     <news:news>
       <news:publication>
@@ -518,54 +530,6 @@
       <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
       <news:title>Former government officials released on bail in fuel importation scandal</news:title>
       <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/president-william-ruto-to-host-boxers-majembe-and-mbavu-destroyer-at</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
-      <news:title>President William Ruto to host boxers Majembe and Mbavu Destroyer at State House</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/police-shoot-two-dead-after-protesters-attempt-to-storm-siaya-police</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
-      <news:title>Police shoot two dead after protesters attempt to storm Siaya police post</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/ntsa-and-police-establish-roadblocks-on-major-highways-leading-into-</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
-      <news:title>NTSA and Police Establish Roadblocks on Major Highways Leading into Nairobi</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/pan-african-illusion-shameful-reality</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
-      <news:title>Pan-African Illusion: Our Shameful Reality</news:title>
-      <news:genres>Entertainment,Music</news:genres>
     </news:news>
   </url>
 </urlset>
