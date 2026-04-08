@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/ugandan-gynecologist-prompts-debate-on-marriage-and-domestic-life</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
+      <news:title>Ugandan gynecologist prompts debate on marriage and domestic life</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/mobile-subscriptions-exceed-population-in-kenya</loc>
     <news:news>
       <news:publication>
@@ -577,42 +589,6 @@
       </news:publication>
       <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
       <news:title>West Pokot Residents Allege Excessive Force During Security Disarmament Operation</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/jeff-koinange-confirms-maina-kageni-as-guest-for-new-podcast</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
-      <news:title>Jeff Koinange confirms Maina Kageni as guest for new podcast</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/elevate-your-professional-journey-and-master-the-essential-skills-ne</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
-      <news:title>Elevate your professional journey and master the essential skills needed to excel in the modern workplace</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/salah-to-saudi-huge-transfer-twist-as-man-utd-real-madrid-battle-for</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
-      <news:title>Salah to Saudi? Huge Transfer Twist as Man Utd &amp; Real Madrid Battle for Major Signings</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
