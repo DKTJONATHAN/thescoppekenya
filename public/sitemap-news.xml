@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/orengos-cowardice-siaya-officer-suspension-scandal</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
+      <news:title>Orengo's Cowardice: Siaya Officer Suspension Scandal</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/john-ekanem-releases-faith-based-film-brothers-in-arms</loc>
     <news:news>
       <news:publication>
@@ -517,18 +529,6 @@
       </news:publication>
       <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
       <news:title>Meru Town upgrades sewerage infrastructure to prepare for city status</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/duale-overseas-treatment-rules-too-little-too-late</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
-      <news:title>Duale's Rules: Too Little, Too Late for Kenya's Sick</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
