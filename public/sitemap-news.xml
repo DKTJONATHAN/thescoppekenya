@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/pritty-vishy-survives-second-motorbike-accident-as-skirt-entangles-i</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
+      <news:title>Pritty Vishy Survives Second Motorbike Accident as Skirt Entangles in Wheel</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenya-pipeline-company-confirms-sufficient-fuel-stocks-following-rep</loc>
     <news:news>
       <news:publication>
@@ -505,30 +517,6 @@
       </news:publication>
       <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
       <news:title>Teachers Service Commission denies financial meltdown claims despite audit report deficit</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/faulu-microfinance-bank-narrows-annual-loss-as-bad-loans-approach-30</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
-      <news:title>Faulu Microfinance Bank narrows annual loss as bad loans approach 30 percent</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/former-government-officials-released-on-bail-in-fuel-importation-sca</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
-      <news:title>Former government officials released on bail in fuel importation scandal</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
