@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/john-ekanem-releases-faith-based-film-brothers-in-arms</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
+      <news:title>John Ekanem releases faith-based film Brothers in Arms</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/burna-boy-involved-in-public-disputes-with-music-industry-figures</loc>
     <news:news>
       <news:publication>
@@ -517,18 +529,6 @@
       </news:publication>
       <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
       <news:title>Duale's Rules: Too Little, Too Late for Kenya's Sick</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/affordable-housing-act-allows-kenyans-to-access-ksh-4-million-for-ru</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
-      <news:title>Affordable Housing Act allows Kenyans to access Ksh 4 million for rural home construction</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
