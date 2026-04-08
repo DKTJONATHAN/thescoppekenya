@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/mobile-subscriptions-exceed-population-in-kenya</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
+      <news:title>Mobile subscriptions exceed population in Kenya</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/tori-spelling-and-seven-children-hospitalized-following-car-accident</loc>
     <news:news>
       <news:publication>
@@ -601,30 +613,6 @@
       </news:publication>
       <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
       <news:title>Salah to Saudi? Huge Transfer Twist as Man Utd &amp; Real Madrid Battle for Major Signings</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/revealed-the-sports-icons-who-made-the-top-100-kenyans-2025-list</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
-      <news:title>Revealed: The Sports Icons Who Made the Top 100 Kenyans 2025 List</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-meteorological-department-issues-weather-advisory-for-rough-se</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
-      <news:title>Kenya Meteorological Department issues weather advisory for rough seas along the coast</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
