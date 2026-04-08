@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/chebet-ronoh-escapes-physical-confrontation-on-way-to-gym</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
+      <news:title>Chebet Ronoh Escapes Physical Confrontation On Way To Gym</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/orengos-cowardice-siaya-officer-suspension-scandal</loc>
     <news:news>
       <news:publication>
@@ -517,18 +529,6 @@
       </news:publication>
       <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
       <news:title>Kenya Meteorological Department warns of flooding in Nairobi and several other regions</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/meru-town-upgrades-sewerage-infrastructure-to-prepare-for-city-statu</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
-      <news:title>Meru Town upgrades sewerage infrastructure to prepare for city status</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
