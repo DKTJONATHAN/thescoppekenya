@@ -24,7 +24,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
-      <news:title>How To Apply For University Placement In 2026</news:title>
+      <news:title>How to Apply for KUCCPS University Placement in 2026</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
@@ -601,18 +601,6 @@
       </news:publication>
       <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
       <news:title>Kenya Meteorological Department issues weather advisory for rough seas along the coast</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/spiro-electric-motorcycles-kenya-bold-bet</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-06T09:00:00.000Z</news:publication_date>
-      <news:title>Spiro's $50M: Spiro Electric Motorcycles Kenya - A Bold Bet</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
