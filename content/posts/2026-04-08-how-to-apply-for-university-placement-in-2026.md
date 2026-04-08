@@ -1,5 +1,5 @@
 ---
-title: "How To Apply For University Placement In 2026"
+title: "How to Apply for KUCCPS University Placement in 2026"
 date: 2026-04-08T07:32:52Z
 slug: how-to-apply-for-university-placement-in-2026
 author: za-ndani
