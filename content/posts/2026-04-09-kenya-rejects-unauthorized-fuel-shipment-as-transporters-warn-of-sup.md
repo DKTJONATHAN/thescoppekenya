@@ -1,0 +1,20 @@
+---
+title: "Kenya rejects unauthorized fuel shipment as transporters warn of supply disruptions"
+slug: "kenya-rejects-unauthorized-fuel-shipment-as-transporters-warn-of-sup"
+author: "Grace Mkamburi"
+image: "https://i.ibb.co/jvHTKg9f/58e0b1b6dc11.jpg"
+category: "Business"
+date: "2026-04-09T10:47:44Z"
+---
+## Kenya's Fuel Sector Dispute Escalates
+
+Kenya's fuel sector faces new instability as the government rejects an unauthorized, high-cost import. This action follows warnings from transporters about potential supply disruptions, highlighting risks to market integrity and the movement of goods across the East African Community.
+
+### Unauthorized Fuel Import Sparks Market Concern
+A fresh dispute has emerged in Kenya's fuel sector with the government's rejection of an unauthorized fuel shipment, which it states violated established procurement procedures. Energy Cabinet Secretary Opiyo Wandayi, in a press release dated April 7, indicated that the cargo posed a risk to the integrity of the fuel supply system. The Kenya Transporters Association (KTA) has since warned of widespread supply disruptions, expressing "deep concern and frustration" over a perceived disparity between official assurances of adequate fuel stocks and the reality on the ground, where operators report rationing and limited access to bulk supplies. They emphasize that if the country genuinely possesses sufficient fuel, market conditions must reflect this immediately and consistently. Such disruptions could undermine the movement of essential goods and transit cargo across the East African Community.
+
+### Financial Implications and Government Intervention
+The rejected consignment was reportedly priced at approximately KSh 198,000 per metric tonne, a notable increase compared to the KSh 140,000 per metric tonne under the government-to-government (G-to-G) arrangement. This price difference could translate to an estimated increase of KSh 14 per litre at the pump if passed on to consumers. Authorities have instructed the importing firm to withdraw all invoices and issue credit notes, directing oil marketing companies not to pay for or uplift the product. The consignment is also expected to be exported, with the Energy and Petroleum Regulatory Authority (EPRA) instructed to exclude it from fuel price computations. The government maintains it will not permit actions that could trigger artificial shortages or unjustified price increases, reaffirming its commitment to safeguarding the integrity of the G-to-G fuel supply chain.
+
+### Broader Economic Context and Supply Chain Pressures
+These developments occur despite earlier government assurances that Kenya maintained sufficient fuel stocks, even amid supply chain pressures linked to escalating conflict in the Middle East. Following a March 30 briefing to President William Ruto, officials had asserted that strategic fuel procurement had shielded the country from global price shocks. The KTA has also highlighted that the strain on transporters has been compounded by oil marketers withdrawing credit facilities, forcing cash purchases and disrupting long-haul logistics as trucks refuel in small quantities across multiple stations. The ongoing scrutiny of fuel import practices and pricing mechanisms is crucial for maintaining economic stability, a concern frequently addressed in discussions around market dynamics, such as those detailed in [Kenya Fuel Hikes: Iran's Massive Update 2024](https://zandani.co.ke/article/kenya-fuel-hikes-iran-s-massive-update-2024).
