@@ -520,28 +520,4 @@
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
-  <url>
-    <loc>https://zandani.co.ke/article/fuel-dealers-warn-petrol-prices-could-reach-ksh231-68-per-litre-amid</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
-      <news:title>Fuel dealers warn petrol prices could reach Ksh231.68 per litre amid global supply pressures</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/snoop-doggs-swansea-glamour-african-clubs-deserve-more</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
-      <news:title>Snoop Dogg's Swansea Glamour: African Clubs Deserve More!</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
 </urlset>
