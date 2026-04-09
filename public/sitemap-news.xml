@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/kenya-power-schedules-maintenance-outages-across-several-counties</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-09T09:00:00.000Z</news:publication_date>
+      <news:title>Kenya Power schedules maintenance outages across several counties</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/angry-residents-block-kisumu-busia-highway-demand-immediate-arrests-</loc>
     <news:news>
       <news:publication>
@@ -493,18 +505,6 @@
       </news:publication>
       <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
       <news:title>Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahururu Highway after fatal accident</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/anne-kansiime-says-interview-question-about-her-future-led-to-divorc</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
-      <news:title>Anne Kansiime says interview question about her future led to divorce</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
