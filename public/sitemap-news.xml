@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/kenya-power-officer-airlifted-to-nairobi-after-attack-in-isiolo</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-09T09:00:00.000Z</news:publication_date>
+      <news:title>Kenya Power officer airlifted to Nairobi after attack in Isiolo</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/heineken-powers-young-jonn-s-live-performance-in-abuja</loc>
     <news:news>
       <news:publication>
@@ -409,18 +421,6 @@
       </news:publication>
       <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
       <news:title>Hisa launches rebuilt investment platform for African investors</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/betty-kyallo-clarifies-age-gap-with-boyfriend-charlie-jones</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
-      <news:title>Betty Kyallo clarifies age gap with boyfriend Charlie Jones</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
