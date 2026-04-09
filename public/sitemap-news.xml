@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/kenya-power-nyeri-meru</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-09T09:00:00.000Z</news:publication_date>
+      <news:title>Kenya Power, Nyeri, Meru: Blackout Blame Game</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/arrow-bwoy-details-his-transition-from-market-vendor-to-recording-ar</loc>
     <news:news>
       <news:publication>
@@ -421,18 +433,6 @@
       </news:publication>
       <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
       <news:title>World Athletics to move marathons to standalone world championships</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/hisa-launches-rebuilt-investment-platform-for-african-investors</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
-      <news:title>Hisa launches rebuilt investment platform for African investors</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
