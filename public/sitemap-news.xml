@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/angry-residents-block-kisumu-busia-highway-demand-immediate-arrests-</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-09T09:00:00.000Z</news:publication_date>
+      <news:title>Angry Residents Block Kisumu-Busia Highway, Demand Immediate Arrests Over Osotsi Attack</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenya-rejects-unauthorized-fuel-shipment-as-transporters-warn-of-sup</loc>
     <news:news>
       <news:publication>
@@ -493,18 +505,6 @@
       </news:publication>
       <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
       <news:title>Anne Kansiime says interview question about her future led to divorce</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/energy-cs-wandayi-blocks-unauthorized-fuel-consignment-from-price-ca</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
-      <news:title>Energy CS Wandayi blocks unauthorized fuel consignment from price calculations</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
