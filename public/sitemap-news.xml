@@ -412,28 +412,4 @@
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
-  <url>
-    <loc>https://zandani.co.ke/article/omah-lay-defends-viral-stage-dance-following-fan-s-relationship-brea</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
-      <news:title>Omah Lay defends viral stage dance following fan's relationship breakup</news:title>
-      <news:genres>Entertainment,Music</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/world-athletics-to-move-marathons-to-standalone-world-championships</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
-      <news:title>World Athletics to move marathons to standalone world championships</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
 </urlset>
