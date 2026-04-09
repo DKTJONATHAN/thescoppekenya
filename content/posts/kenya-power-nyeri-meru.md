@@ -1,5 +1,5 @@
 ---
-title: "Kenya Power, Nyeri, Meru: Blackout Blame Game"
+title: "Kenya Power Schedules Power Maintenance In Nyeri and Meru Counties on 10 April 2026"
 slug: "kenya-power-nyeri-meru"
 excerpt: "Kenya Power hit Nyeri and Meru counties with scheduled blackouts on Friday, April 9, sparking questions about its maintenance motives and customer care."
 author: "Za Ndani"
