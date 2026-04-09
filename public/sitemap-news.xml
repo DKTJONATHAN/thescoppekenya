@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/samsung-tops-global-gaming-monitor-sales-for-7th-year-running</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-09T09:00:00.000Z</news:publication_date>
+      <news:title>Samsung Tops Global Gaming Monitor Sales for 7th Year Running</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenya-pleaser-responds-to-criticism-from-nancy-mace-and-libs-of-tikt</loc>
     <news:news>
       <news:publication>
@@ -397,42 +409,6 @@
       </news:publication>
       <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
       <news:title>Betty Kyallo clarifies age gap with boyfriend Charlie Jones</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kanayo-o-kanayo-proposes-lifetime-streaming-royalties-for-nigerian-a</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
-      <news:title>Kanayo O. Kanayo proposes lifetime streaming royalties for Nigerian actors</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-raises-satellite-communication-license-fees-to-kes-45-million</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
-      <news:title>Kenya raises satellite communication license fees to KES 45 million</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/judiciary-to-roll-out-mobile-truck-courts-for-remote-areas</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-07T09:00:00.000Z</news:publication_date>
-      <news:title>Judiciary to Roll Out Mobile Truck Courts for Remote Areas</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
