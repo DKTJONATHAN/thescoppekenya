@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/shubhankar-shame-no-kenyan-golf-talent-here</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-10T09:00:00.000Z</news:publication_date>
+      <news:title>Shubhankar's Shame: No Kenyan Golf Talent Here</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenya-broadcast-sector-contracts-as-digital-competition-grows</loc>
     <news:news>
       <news:publication>
@@ -350,30 +362,6 @@
       <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
       <news:title>Orengo's Cowardice: Siaya Officer Suspension Scandal</news:title>
       <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/john-ekanem-releases-faith-based-film-brothers-in-arms</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
-      <news:title>John Ekanem releases faith-based film Brothers in Arms</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/burna-boy-involved-in-public-disputes-with-music-industry-figures</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
-      <news:title>Burna Boy involved in public disputes with music industry figures</news:title>
-      <news:genres>Entertainment,Music</news:genres>
     </news:news>
   </url>
 </urlset>
