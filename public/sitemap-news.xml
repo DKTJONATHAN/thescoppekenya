@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/krg-the-don-s-diss-track-against-malcom-faces-backlash</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-10T09:00:00.000Z</news:publication_date>
+      <news:title>KRG The Don's Diss Track Against Malcom Faces Backlash</news:title>
+      <news:genres>Entertainment,Music</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/meta-and-arsenal-announce-partnership-to-develop-whatsapp-fan-hub</loc>
     <news:news>
       <news:publication>
@@ -373,18 +385,6 @@
       </news:publication>
       <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
       <news:title>Pritty Vishy Survives Second Motorbike Accident as Skirt Entangles in Wheel</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-pipeline-company-confirms-sufficient-fuel-stocks-following-rep</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
-      <news:title>Kenya Pipeline Company confirms sufficient fuel stocks following reported shortages</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
