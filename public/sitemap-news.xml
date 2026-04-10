@@ -376,28 +376,4 @@
       <news:genres>Entertainment,Music</news:genres>
     </news:news>
   </url>
-  <url>
-    <loc>https://zandani.co.ke/article/afreximbank-commits-10-billion-to-support-african-and-caribbean-econ</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
-      <news:title>Afreximbank commits $10 billion to support African and Caribbean economies during Gulf crisis</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/pritty-vishy-survives-second-motorbike-accident-as-skirt-entangles-i</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
-      <news:title>Pritty Vishy Survives Second Motorbike Accident as Skirt Entangles in Wheel</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
 </urlset>
