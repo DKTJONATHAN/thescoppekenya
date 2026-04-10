@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/ruto-nominates-bishop-kepha-omae-to-chair-ncic-names-seven-new-membe</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-10T09:00:00.000Z</news:publication_date>
+      <news:title>Ruto nominates Bishop Kepha Omae to chair NCIC, names seven new members</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/lynne-njihia-details-pregnancy-complications-and-early-labor-caused-</loc>
     <news:news>
       <news:publication>
@@ -349,18 +361,6 @@
       </news:publication>
       <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
       <news:title>Ugandan gynecologist prompts debate on marriage and domestic life</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/mobile-subscriptions-exceed-population-in-kenya</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
-      <news:title>Mobile subscriptions exceed population in Kenya</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
