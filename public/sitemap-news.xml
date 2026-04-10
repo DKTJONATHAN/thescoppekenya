@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/digital-creator-commentator-254-recovers-stolen-camera-following-kas</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-10T09:00:00.000Z</news:publication_date>
+      <news:title>Digital creator Commentator 254 recovers stolen camera following Kasarani boxing match</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/ruto-nominates-bishop-kepha-omae-to-chair-ncic-names-seven-new-membe</loc>
     <news:news>
       <news:publication>
@@ -337,30 +349,6 @@
       </news:publication>
       <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
       <news:title>Kenya Pipeline Company confirms sufficient fuel stocks following reported shortages</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/rigathi-gachagua-sets-conditions-for-working-with-president-william-</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
-      <news:title>Rigathi Gachagua sets conditions for working with President William Ruto</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/ugandan-gynecologist-prompts-debate-on-marriage-and-domestic-life</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
-      <news:title>Ugandan gynecologist prompts debate on marriage and domestic life</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
