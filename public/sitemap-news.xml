@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/marion-naipei-and-pastor-victor-kanyari-partner-for-nationwide-voter</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-10T09:00:00.000Z</news:publication_date>
+      <news:title>Marion Naipei and Pastor Victor Kanyari partner for nationwide voter registration drive</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/shubhankar-shame-no-kenyan-golf-talent-here</loc>
     <news:news>
       <news:publication>
@@ -337,30 +349,6 @@
       </news:publication>
       <news:publication_date>2026-04-09T09:00:00.000Z</news:publication_date>
       <news:title>Dr Ofweneke criticizes the spiritual but not religious sentiment as demonic</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/chebet-ronoh-escapes-physical-confrontation-on-way-to-gym</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
-      <news:title>Chebet Ronoh Escapes Physical Confrontation On Way To Gym</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/orengos-cowardice-siaya-officer-suspension-scandal</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-08T09:00:00.000Z</news:publication_date>
-      <news:title>Orengo's Cowardice: Siaya Officer Suspension Scandal</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
