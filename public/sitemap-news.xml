@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/shiquo-hii-kenya-retail-strategy-hubris</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-11T09:00:00.000Z</news:publication_date>
+      <news:title>Shiquo Hii’s Retail Strategy: A Kenyan Lesson in Hubris</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kibra-residents-protest-short-eviction-notice-and-demand-more-compen</loc>
     <news:news>
       <news:publication>
@@ -469,18 +481,6 @@
       </news:publication>
       <news:publication_date>2026-04-09T09:00:00.000Z</news:publication_date>
       <news:title>Shugaboy's KSh 3M Salary Arrears: A Media House Disgrace</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/desperados-and-roadblock-party-host-music-event-and-name-dj-frizzy-a</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-09T09:00:00.000Z</news:publication_date>
-      <news:title>Desperados and Roadblock Party host music event and name DJ Frizzy as competition winner</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
