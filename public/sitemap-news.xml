@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/kenyan-shilling-gains-against-dollar-as-central-bank-projects-inflat</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-11T09:00:00.000Z</news:publication_date>
+      <news:title>Kenyan Shilling Gains Against Dollar as Central Bank Projects Inflation Increase</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenya-seeks-reit-reforms-to-attract-investor-capital</loc>
     <news:news>
       <news:publication>
@@ -457,30 +469,6 @@
       </news:publication>
       <news:publication_date>2026-04-09T09:00:00.000Z</news:publication_date>
       <news:title>Kenya Power Schedules Power Maintenance In Nyeri and Meru Counties on 10 April 2026</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/arrow-bwoy-details-his-transition-from-market-vendor-to-recording-ar</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-09T09:00:00.000Z</news:publication_date>
-      <news:title>Arrow Bwoy details his transition from market vendor to recording artist</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-power-officer-airlifted-to-nairobi-after-attack-in-isiolo</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-09T09:00:00.000Z</news:publication_date>
-      <news:title>Kenya Power officer airlifted to Nairobi after attack in Isiolo</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
