@@ -1,0 +1,27 @@
+---
+title: "Safaricom My OneApp faces technical failures and login issues following launch"
+slug: "safaricom-my-oneapp-faces-technical-failures-and-login-issues-follow"
+author: "Elizabeth Muthoni"
+image: "https://i.ibb.co/yBbVr50F/70c853619e84.webp"
+category: "Technology"
+date: "2026-04-11T16:59:34Z"
+---
+## Safaricom My OneApp: Navigating Post-Launch Technical Turbulence
+
+Safaricom's My OneApp, an ambitious attempt to consolidate M-PESA and MySafaricom functionalities, has encountered significant technical failures and login issues since its recent launch. Intended as a unified "super app," the rollout has been marred by operational glitches that have disrupted user experience, particularly impacting Kenyans abroad and their essential daily financial transactions.
+
+### Immediate Rollout Challenges
+
+Within days of its introduction, Safaricom publicly acknowledged widespread login failures and non-functional mini-app services within My OneApp. This admission highlighted the app's instability, with problems manifesting non-uniformly across its user base. While some users experienced seamless functionality, many reported immediate difficulties, making crucial services unreliable. These initial disruptions shifted the narrative from a bold vision to concerns about consistent access to essential services.
+
+### Activation Hurdles for Diaspora Users
+
+A primary source of user frustration, particularly for Kenyans in the diaspora and travelers, stems from the app's stringent activation requirements. My OneApp demands a Safaricom SIM card, active Safaricom mobile data, and the absence of Wi-Fi or VPN connections for initial activation. Safaricom explains these measures as a fraud prevention strategy, verifying the physical presence of the SIM to counter SIM-swap attacks and unauthorized access. While this logic holds for security in isolation, its implementation inadvertently locks out legitimate users, including those roaming abroad or relying on Wi-Fi-only setups. Users logged out while overseas have found themselves unable to regain access without returning to Kenya or finding complex workarounds, posing a significant challenge for a critical payments application.
+
+### Persistent Operational Glitches and Workarounds
+
+Beyond activation, users have reported a spectrum of operational issues. These include transfers freezing mid-process, unclear balance displays, sluggish performance, and unexpected logouts. To address these, Safaricom has provided fixes such as disabling Wi-Fi, turning off VPN, setting the Safaricom line as the primary SIM, and ensuring operating systems are updated. For Android users severely affected, a temporary workaround involves uninstalling My OneApp and sideloading version 3.5.9 of the older standalone M-PESA app via APKMirror, provided automatic updates are disabled. Unfortunately, this option is unavailable for iPhone users due to Apple's restrictive app installation policies. The older MySafaricom app remains available, with the migration to My OneApp described as an ongoing process rather than a complete transition.
+
+### Strategic Imperatives for Digital Platforms
+
+The My OneApp launch underscores a crucial lesson in product development for Africa's tech landscape: while the underlying concept of a unified super app is strategically sound and aligns with global best practices, execution demands meticulous stability. The objective of converging M-PESA and MySafaricom services into a single, seamless platform is inherently beneficial for user experience and operational efficiency. However, shipping a product before it is fully stable has landed users in a situation where the new app struggles to reliably perform functions that its predecessors handled with ease. This incident highlights the critical need for seamless service delivery, a challenge that extends beyond the digital realm, as evidenced by actions from bodies like EPRA in shutting down non-compliant petrol stations and imposing fines for fuel quality violations. Such foundational missteps risk eroding user trust and shaping negative perceptions of a product, particularly when it underpins the daily financial lives of millions of Kenyans.
