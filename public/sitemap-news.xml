@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/kenha-roysambu-stalls-demolition-cowardly-act</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-11T09:00:00.000Z</news:publication_date>
+      <news:title>KeNHA's Roysambu Stalls Demolition: A Cowardly Act</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/police-disperse-gachagua-rally-with-teargas-and-shots-injuries-repor</loc>
     <news:news>
       <news:publication>
@@ -433,18 +445,6 @@
       </news:publication>
       <news:publication_date>2026-04-09T09:00:00.000Z</news:publication_date>
       <news:title>Kenya Pleaser responds to criticism from Nancy Mace and Libs of TikTok over university performance</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/court-sentences-4-men-to-death-over-murder-of-ex-mp-george-muchai</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-09T09:00:00.000Z</news:publication_date>
-      <news:title>Court Sentences 4 Men to Death Over Murder of Ex-MP George Muchai</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
