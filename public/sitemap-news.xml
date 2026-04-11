@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/diana-marua-urges-women-to-prioritize-financial-independence-followi</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-11T09:00:00.000Z</news:publication_date>
+      <news:title>Diana Marua urges women to prioritize financial independence following past eviction experience</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/safaricom-my-oneapp-faces-technical-failures-and-login-issues-follow</loc>
     <news:news>
       <news:publication>
@@ -445,30 +457,6 @@
       </news:publication>
       <news:publication_date>2026-04-09T09:00:00.000Z</news:publication_date>
       <news:title>Kenya Power officer airlifted to Nairobi after attack in Isiolo</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/heineken-powers-young-jonn-s-live-performance-in-abuja</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-09T09:00:00.000Z</news:publication_date>
-      <news:title>Heineken Powers Young Jonn's Live Performance in Abuja</news:title>
-      <news:genres>Entertainment,Music</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/samsung-tops-global-gaming-monitor-sales-for-7th-year-running</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-09T09:00:00.000Z</news:publication_date>
-      <news:title>Samsung Tops Global Gaming Monitor Sales for 7th Year Running</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
