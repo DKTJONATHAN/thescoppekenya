@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/kenya-proposes-free-trade-agreement-with-india-to-address-trade-imba</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-12T09:00:00.000Z</news:publication_date>
+      <news:title>Kenya Proposes Free Trade Agreement With India to Address Trade Imbalance</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/murkomen-directs-ig-kanja-to-investigate-rising-political-violence-a</loc>
     <news:news>
       <news:publication>
@@ -554,30 +566,6 @@
       <news:publication_date>2026-04-10T09:00:00.000Z</news:publication_date>
       <news:title>KRG The Don's Diss Track Against Malcom Faces Backlash</news:title>
       <news:genres>Entertainment,Music</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/meta-and-arsenal-announce-partnership-to-develop-whatsapp-fan-hub</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-10T09:00:00.000Z</news:publication_date>
-      <news:title>Meta and Arsenal announce partnership to develop WhatsApp fan hub</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kimani-ichung-wah-writes-to-ig-douglas-kanja-over-alleged-rigathi-ga</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-10T09:00:00.000Z</news:publication_date>
-      <news:title>Kimani Ichung’wah writes to IG Douglas Kanja over alleged Rigathi Gachagua incitement ahead of Kikuyu rally</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
 </urlset>
