@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/deputy-registrar-strikes-off-over-1-300-companies-from-official-regi</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-12T09:00:00.000Z</news:publication_date>
+      <news:title>Deputy Registrar strikes off over 1,300 companies from official register</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenha-upgrades-road-lighting-along-jkia-corridor-as-part-of-highway-</loc>
     <news:news>
       <news:publication>
@@ -517,30 +529,6 @@
       </news:publication>
       <news:publication_date>2026-04-10T09:00:00.000Z</news:publication_date>
       <news:title>Malcolm in the Middle revival series to premiere on Hulu and Disney Plus</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/digital-creator-commentator-254-recovers-stolen-camera-following-kas</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-10T09:00:00.000Z</news:publication_date>
-      <news:title>Digital creator Commentator 254 recovers stolen camera following Kasarani boxing match</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/ruto-nominates-bishop-kepha-omae-to-chair-ncic-names-seven-new-membe</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-10T09:00:00.000Z</news:publication_date>
-      <news:title>Ruto nominates Bishop Kepha Omae to chair NCIC, names seven new members</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
