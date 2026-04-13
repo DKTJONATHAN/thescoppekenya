@@ -556,40 +556,4 @@
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
-  <url>
-    <loc>https://zandani.co.ke/article/murkomen-orders-arrest-of-individuals-linked-to-opposition-leaders</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-11T09:00:00.000Z</news:publication_date>
-      <news:title>Murkomen orders arrest of individuals linked to opposition leaders</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/marion-naipei-and-pastor-victor-kanyari-partner-for-nationwide-voter</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-10T09:00:00.000Z</news:publication_date>
-      <news:title>Marion Naipei and Pastor Victor Kanyari partner for nationwide voter registration drive</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/shubhankar-shame-no-kenyan-golf-talent-here</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-10T09:00:00.000Z</news:publication_date>
-      <news:title>Shubhankar's Shame: No Kenyan Golf Talent Here</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
 </urlset>
