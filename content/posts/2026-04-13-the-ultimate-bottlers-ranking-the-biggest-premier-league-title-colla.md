@@ -1,0 +1,41 @@
+---
+title: "The Ultimate Bottlers: Ranking the Biggest Premier League Title Collapses in History"
+slug: "the-ultimate-bottlers-ranking-the-biggest-premier-league-title-colla"
+description: "Rank the biggest Premier League title collapses in history. From Newcastle to Arsenal, discover who lost their lead when it mattered most."
+author: "Jona Munyi"
+image: "https://i.ibb.co/39N8VPDC/a4c9f881d0b3.webp"
+category: "Sports"
+tags: ["premier-league", "title-collapses", "football-rankings", "bottle-jobs"]
+date: "2026-04-13T12:48:42Z"
+---
+The Premier League title race often delivers moments of high drama, but none sting quite like a collapse from a commanding position. As seasons reach their climax, some clubs have endured the agonizing experience of letting seemingly unassailable leads slip away, leaving an indelible mark on their history.
+
+## The Agony of Near Misses: Unpacking Premier League Title Collapses
+
+The annals of Premier League football are replete with tales of teams failing to clinch the title despite holding significant advantages. These moments, often etched into the memories of fans for decades, highlight the immense pressure and unpredictable nature of England's top flight. From dramatic late goals to extended periods of poor form, the path to infamy for title contenders is varied and often cruel.
+
+### The Gunners' Recurring Nightmare
+
+Arsenal has unfortunately grappled with the tag of title "bottlers" over the past two decades, featuring prominently in any discussion of Premier League collapses. Just three years ago, in the 2022-23 season, the Gunners set an unfortunate record, spending an astounding 248 days at the top of the league without ultimately winning it. Their title hopes dwindled after three successive draws, including giving up two-goal leads against Liverpool and West Ham, before a decisive 4-1 defeat to Manchester City on April 26, 2023, effectively sealed their fate.
+
+This wasn't an isolated incident. Eighteen years ago, in the 2007-08 season, a fresh-looking Arsenal side had lost just once by March and topped the table for 156 days. However, a horrific leg injury to Eduardo against Birmingham City precipitated a five-game winless run. By May, they found themselves in third, behind both Manchester United and Chelsea.
+
+Even further back, 23 years ago in the 2002-03 campaign, Arsène Wenger's Arsenal held a commanding lead for almost five months. Despite Thierry Henry's heroics in a mid-April Highbury clash against Manchester United, a 2-2 draw allowed United to seize momentum. Arsenal then fumbled crucial points against Bolton and Leeds, paving the way for United's triumph.
+
+### Iconic Slips and Heartbreak
+
+Beyond Arsenal, other title contenders have experienced their own agonizing collapses, immortalized by specific moments of misfortune or rival brilliance.
+
+Twelve years ago, in 2014, Liverpool's pursuit of a first Premier League title since 1990 took a heart-wrenching turn. Following an emotional 3-2 victory over Manchester City, captain Steven Gerrard famously declared, "This does not slip." Yet, a literal slip from Gerrard allowed Demba Ba to score for Chelsea, leading to a pivotal 2-0 defeat at Anfield. Liverpool's advantage evaporated, and despite storming into a three-goal lead against Crystal Palace in their penultimate game, they conceded three times late on, effectively handing the title to Manchester City.
+
+Manchester United themselves were victims of one of the most iconic title collapses 14 years ago, in the 2011-12 season. Having held an eight-point lead with just six games remaining, Sir Alex Ferguson's side saw their advantage chipped away. The drama culminated on a sunny May afternoon when Sergio Agüero's 94th-minute winner for Manchester City snatched the title from United's grasp, delivering City their first Premier League crown.
+
+### Historic Meltdowns
+
+The Premier League's early years also delivered some spectacular implosions. Thirty years ago this month, in April 1996, Kevin Keegan's Newcastle United, celebrated for their entertaining football, saw a colossal 12-point lead over Manchester United in January evaporate. A crucial victory for Manchester United at St. James' Park in March reduced the gap to a single point, setting the stage for Keegan's memorable on-air rant as the title slipped away.
+
+Ten years ago, in the 2015-16 season, Tottenham Hotspur emerged as unlikely challengers, appearing well-placed to bring a first title to White Hart Lane since 1961. However, Claudio Ranieri's 5,000-1 shot Leicester City defied all expectations. Tottenham's hopes were ultimately extinguished in the "Battle of the Bridge," a bruising draw that allowed Leicester to surge clear and complete their fairytale season.
+
+Even the inaugural Premier League season, 33 years ago in 1992-93, featured an unexpected leader who ultimately fell short. Norwich City, having finished fifth-bottom the previous year, found themselves as unlikely pace-setters for 129 days. They led until matchday 26 before an Eric Cantona-inspired Manchester United ploughed a route to the top, leaving Norwich to finish third.
+
+Liverpool, despite their recent success, also experienced a near-perfect collapse seven years ago in 2018-19. Jurgen Klopp's Reds accumulated 97 points, then the third-highest total in Premier League history, and topped the league for 141 days. However, a single league defeat to Manchester City, coupled with four draws in six games, allowed City to win the title by a solitary point, demonstrating that even near-perfection can sometimes not be enough.
