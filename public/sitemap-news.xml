@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/karangu-muraya-claims-president-ruto-will-serve-ten-year-term</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-13T09:00:00.000Z</news:publication_date>
+      <news:title>Karangu Muraya claims President Ruto will serve ten-year term</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kerra-issues-nyandarua-road-tenders-following-senator-methu-s-challe</loc>
     <news:news>
       <news:publication>
@@ -385,42 +397,6 @@
       </news:publication>
       <news:publication_date>2026-04-11T09:00:00.000Z</news:publication_date>
       <news:title>Kenyan Shilling Gains Against Dollar as Central Bank Projects Inflation Increase</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-seeks-reit-reforms-to-attract-investor-capital</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-11T09:00:00.000Z</news:publication_date>
-      <news:title>Kenya Seeks REIT Reforms to Attract Investor Capital</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/education-cs-assures-university-students-of-smooth-fee-payments-afte</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-11T09:00:00.000Z</news:publication_date>
-      <news:title>Education CS assures university students of smooth fee payments after funding system review</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/diana-marua-urges-women-to-prioritize-financial-independence-followi</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-11T09:00:00.000Z</news:publication_date>
-      <news:title>Diana Marua urges women to prioritize financial independence following past eviction experience</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
