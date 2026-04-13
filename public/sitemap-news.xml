@@ -448,28 +448,4 @@
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
-  <url>
-    <loc>https://zandani.co.ke/article/police-disperse-gachagua-rally-with-teargas-and-shots-injuries-repor</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-11T09:00:00.000Z</news:publication_date>
-      <news:title>Police Disperse Gachagua Rally with Teargas and Shots, Injuries Reported in Kikuyu</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/scar-mkadinali-states-he-does-not-believe-in-marriage</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-11T09:00:00.000Z</news:publication_date>
-      <news:title>Scar Mkadinali States He Does Not Believe in Marriage</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
 </urlset>
