@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/omah-lay-claims-he-is-the-greatest-afrobeats-artist-of-the-decade</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
+      <news:title>Omah Lay claims he is the greatest Afrobeats artist of the decade</news:title>
+      <news:genres>Entertainment,Music</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/epra-increases-petrol-and-diesel-prices-while-kerosene-remains-uncha</loc>
     <news:news>
       <news:publication>
@@ -445,18 +457,6 @@
       </news:publication>
       <news:publication_date>2026-04-12T09:00:00.000Z</news:publication_date>
       <news:title>Taxpayers warned of KRA PIN fraud risk under new tax deduction rules</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/president-ruto-orders-construction-of-akorino-college-in-ruai</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-12T09:00:00.000Z</news:publication_date>
-      <news:title>President Ruto orders construction of Akorino College in Ruai</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
