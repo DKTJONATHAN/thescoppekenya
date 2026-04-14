@@ -1,0 +1,33 @@
+---
+title: "Faith Odhiambo opens up on why she avoided marrying a lawyer to keep the courtroom drama out of her home"
+slug: "faith-odhiambo-opens-up-on-why-she-avoided-marrying-a-lawyer-to-keep"
+description: "Faith Odhiambo shares why she avoided marrying a lawyer to keep courtroom drama out of her home and maintain a boundary for a peaceful personal life."
+author: "Jona Munyi"
+author_url: "https://zandani.co.ke/author/jona-munyi"
+image: "https://i.ibb.co/TBB1Hrwc/363f546c2ced.webp"
+category: "Lifestyle"
+tags: ["faith-odhiambo", "lawyer-marriage", "relationship-dynamics", "legal-profession"]
+canonical: "https://zandani.co.ke/article/faith-odhiambo-opens-up-on-why-she-avoided-marrying-a-lawyer-to-keep"
+date: "2026-04-14T09:51:17Z"
+---
+Jona Munyi for Za Ndani
+
+Former Law Society of Kenya President Faith Odhiambo recently shared insights into her personal life with *Parents Africa Magazine*, revealing her deliberate choice to not marry a fellow lawyer. Her refreshing perspective, discussed in April 2026, highlights the importance of creating distinct boundaries between demanding professional life and tranquil domesticity.
+
+In a world where the pace of change is constant, from the strategic expansions of tech giants like Canva acquiring Cavalry and MangoAI to significant governmental actions influencing the political discourse with directives such as Murkomen's orders regarding individuals linked to opposition leaders, individuals are increasingly seeking clarity in their personal spheres. Faith Odhiambo, a prominent figure in the legal community, exemplifies this pursuit of intentionality, particularly in her approach to marriage and home life.
+
+## Beyond the Bar: Crafting a Home of Serenity
+
+Faith Odhiambo, whose formidable career has placed her at the pinnacle of the legal profession, made a remarkably personal decision concerning her marital partner. During her candid conversation with *Parents Africa Magazine*, she articulated a clear boundary: deliberately avoiding a union with another lawyer. For Odhiambo, the intensity, demands, and emotional toll of the legal world were aspects she consciously chose not to extend into her private sanctuary. Her sentiment was straightforward: the complexities and stresses of case law and court drama were not narratives she wished to rehash within the confines of her home.
+
+### The Unlikely Connection
+
+Ironically, the man who would eventually become her husband was not someone who immediately captivated her. Odhiambo openly admitted to an initial dislike, finding him "too loud, too outgoing" - a stark contrast to her own preference for quieter, more familiar environments. Their paths, despite years of attending the same church, finally converged through mutual friends. What ultimately forged their bond, beyond initial impressions, was his profound love for God. Beyond this shared spiritual foundation, it was his thoughtful gestures and ability to make her feel profoundly cherished that solidified their connection, an appreciation for the "small things" that often speak volumes.
+
+### Foundations of Fortitude
+
+Odhiambo’s clarity in her life and relationship choices was deeply rooted in her upbringing. She described a home environment where confidence was meticulously protected and nurtured. Her father instilled a powerful belief that all his children possessed intelligence, with "calling someone stupid" being the gravest taboo. He championed curiosity and engagement as pathways to learning. Complementing this, her mother assumed the role of the "warrior mother," balancing work, studies, and child-rearing while consistently pushing her children to strive for excellence. This unique blend of encouragement and rigorous discipline profoundly shaped her perspective on both her career and her personal existence.
+
+### The Power of Presence
+
+Today, Faith Odhiambo lauds her husband as an indispensable pillar of support, particularly during her demanding tenure as the Law Society of Kenya president. She describes him as her "100% cheerleader," always present and unwavering in his encouragement. His support transcended mere words; he actively showed up in moments of intense pressure. Odhiambo recounted a particularly telling incident where, while pregnant and in a late-night meeting, he playfully threatened to "carry her with that chair" if she didn't conclude quickly. For her, the essence of a successful partnership is not a shared profession, but rather a profound, consistent presence - someone physically there through life's challenges, low moments, and triumphs. Looking ahead to 2029, Odhiambo reflects on success not through professional accolades, but through the enduring memories her child will hold of a mother's daily presence and love.
