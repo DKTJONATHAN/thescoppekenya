@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/nurse-judy-sh49000-braids-californian-folly</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
+      <news:title>Nurse Judy's Sh49,000 Braids: A Californian Folly</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/nigeria-earns-three-nominations-in-american-music-awards-afrobeats-c</loc>
     <news:news>
       <news:publication>
@@ -481,18 +493,6 @@
       </news:publication>
       <news:publication_date>2026-04-13T09:00:00.000Z</news:publication_date>
       <news:title>Kenyatta National Hospital assures service continuity as nurses protest delayed statutory remittances</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/rutos-shauri-moyo-gambit-johana-ngeno-estate-hypocrisy</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-12T09:00:00.000Z</news:publication_date>
-      <news:title>Ruto's Shauri Moyo Gambit: Johana Ng’eno Estate Hypocrisy</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
