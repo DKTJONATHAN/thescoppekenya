@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/imf-pledges-technical-and-financial-support-to-kenya-amid-middle-eas</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
+      <news:title>IMF pledges technical and financial support to Kenya amid Middle East conflict</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenya-power-announces-scheduled-maintenance-in-parts-of-nairobi-momb</loc>
     <news:news>
       <news:publication>
@@ -385,18 +397,6 @@
       </news:publication>
       <news:publication_date>2026-04-12T09:00:00.000Z</news:publication_date>
       <news:title>Kalonzo Musyoka alleges assassination attempt after police fire on opposition convoy in Kikuyu</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/armed-group-disrupts-niko-kadi-voter-registration-exercise-in-kitale</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-12T09:00:00.000Z</news:publication_date>
-      <news:title>Armed group disrupts Niko Kadi voter registration exercise in Kitale</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
