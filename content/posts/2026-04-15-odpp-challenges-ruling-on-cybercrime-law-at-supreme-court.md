@@ -1,0 +1,27 @@
+---
+title: "ODPP challenges ruling on cybercrime law at Supreme Court"
+slug: "odpp-challenges-ruling-on-cybercrime-law-at-supreme-court"
+author: "Elizabeth Muthoni"
+image: "https://i.ibb.co/sd24rFMt/2d23d921b953.webp"
+category: "Technology"
+date: "2026-04-15T09:53:41Z"
+---
+## Kenya's Cybercrime Law at Supreme Court
+
+The Office of the Director of Public Prosecutions (ODPP) has petitioned the Supreme Court of Kenya, challenging the Court of Appeal's ruling that struck down Sections 22 and 23 of the Computer Misuse and Cybercrime Act. This legal contest highlights a critical tension between state regulation of online content and constitutional guarantees of digital expression, with significant implications for Kenya's tech and innovation ecosystem.
+
+### Legal Challenge to Digital Expression
+
+Sections 22 and 23 of the Computer Misuse and Cybercrime Act, now at the heart of the Supreme Court battle, previously criminalized the publication of false or misleading online information. These provisions were initially challenged by the Bloggers Association of Kenya (BAKE) in 2018. Both the High Court and the Court of Appeal ruled against the sections, with the appellate court describing them as "so broad, wide, and untargeted, akin to unguided missiles, and likely to net innocent citizens". This judicial stance underscored concerns that the law was constitutionally indefensible due to its potential to stifle satire, honest errors, and legitimate journalism.
+
+### ODPP's Mandate Versus Constitutional Rights
+
+The ODPP seeks to reverse the appellate decision, arguing its petition fulfills a constitutional mandate in the public interest. This framing, however, faces scrutiny as two courts have consistently affirmed that public interest is not served by laws punishing speech explicitly protected under Articles 33 and 34 of the Constitution. The vagueness of the struck-down provisions made it difficult to differentiate between criminal misinformation and legitimate, albeit imperfect, commentary.
+
+### Civil Society's Broader Push for Digital Freedoms
+
+The case at the Supreme Court is complicated by the presence of civil society groups, including BAKE, Article 19 East Africa, the Kenya Union of Journalists, and the Law Society of Kenya. While the ODPP aims to re-introduce the stringent sections, these groups are appealing for the opposite outcome. They contend the Court of Appeal did not go far enough in protecting digital freedoms under the broader cybercrime law, as reported by the Daily Nation. This creates a unique scenario where the apex court must consider arguments from both sides seeking adjustments to the appellate ruling, albeit in opposing directions.
+
+### Implications for Kenya's Digital Landscape
+
+The Supreme Court's decision will significantly shape the future of online expression and digital innovation in Kenya. A ruling favoring the ODPP could create a chilling effect on online content creation, impacting bloggers, journalists, and tech startups reliant on open digital platforms for communication and growth. Conversely, a ruling that further strengthens digital freedoms could foster a more vibrant and less restricted online environment, encouraging innovation and diverse commentary. The outcome will be crucial for establishing clear regulatory boundaries within Kenya's evolving digital economy, much like other regulatory adjustments such as Kenya raising satellite communication license fees to KES 45 million. The strategic logic behind the ODPP's appeal rests on the hope that the Supreme Court will interpret the constitutional balance differently, potentially prioritizing state interests in content regulation against individual rights to expression.
