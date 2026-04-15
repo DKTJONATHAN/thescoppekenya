@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/odpp-challenges-ruling-on-cybercrime-law-at-supreme-court</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
+      <news:title>ODPP challenges ruling on cybercrime law at Supreme Court</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/digital-creator-christine-irungu-shares-personal-birth-story-to-prom</loc>
     <news:news>
       <news:publication>
@@ -553,18 +565,6 @@
       </news:publication>
       <news:publication_date>2026-04-13T09:00:00.000Z</news:publication_date>
       <news:title>The Ultimate Bottlers: Ranking the Biggest Premier League Title Collapses in History</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/troy-deeney-defends-mikel-arteta-after-arsenal-fans-call-for-manager</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-13T09:00:00.000Z</news:publication_date>
-      <news:title>Troy Deeney defends Mikel Arteta after Arsenal fans call for manager to be sacked</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
