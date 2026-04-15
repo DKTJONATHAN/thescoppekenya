@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/diddy-prison-release-2028-privilege-parade</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
+      <news:title>Diddy Prison Release 2028: Privilege on Parade</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/tiktoker-sheryl-gabriella-expresses-regret-over-ending-relationship-</loc>
     <news:news>
       <news:publication>
@@ -529,30 +541,6 @@
       </news:publication>
       <news:publication_date>2026-04-13T09:00:00.000Z</news:publication_date>
       <news:title>Troy Deeney defends Mikel Arteta after Arsenal fans call for manager to be sacked</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/ibraah-clarifies-diamond-platnumz-s-role-in-his-exit-from-konde-gang</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-13T09:00:00.000Z</news:publication_date>
-      <news:title>Ibraah clarifies Diamond Platnumz's role in his exit from Konde Gang</news:title>
-      <news:genres>Entertainment,Music</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/bmw-and-toyota-models-among-vehicles-listed-for-sale-from-ksh-104-00</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-13T09:00:00.000Z</news:publication_date>
-      <news:title>BMW and Toyota models among vehicles listed for sale from Ksh 104,000</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
