@@ -1,0 +1,27 @@
+---
+title: "Sameer Africa reports highest operating profit in over a decade as rental income grows"
+slug: "sameer-africa-reports-highest-operating-profit-in-over-a-decade-as-r"
+author: "Grace Mkamburi"
+image: "https://i.ibb.co/Rkfbj17k/3d9af64da008.jpg"
+category: "Business"
+date: "2026-04-15T10:47:29Z"
+---
+## Sameer Africa Achieves Decade-High Operating Profit
+
+Sameer Africa Plc reported its highest operating profit since 2013 for the year ended 31 December 2025, rising 47.7% to KSh 292.64 Mn. This robust performance stems from significant rental income growth and disciplined cost management across its fully occupied industrial property portfolio, marking a strong operational turnaround.
+
+### Strong Operational Performance and Profitability
+
+The company's shift to an industrial landlord model has yielded substantial results, with gross margin holding at 96.2%. Net rental income before tax surged to KSh 307.56 Mn from KSh 241.68 Mn in FY2024, supported by over 40 tenants spanning distribution, manufacturing, agro-processing, and energy sectors. This growth was complemented by aggressive cost-cutting measures, evidenced by a 28.6% reduction in operating expenses to KSh 126.11 Mn, with administrative expenses nearly halving to KSh 42.50 Mn from KSh 79.48 Mn. Consequently, profit before tax rose 10.5% to KSh 340.42 Mn, and profit for the year advanced 5.5% to KSh 274.28 Mn, improving earnings per share to KSh 0.99 from KSh 0.93.
+
+### Financial Headwinds and Capital Structure
+
+Despite strong operational gains, Sameer Africa faced headwinds that tempered bottom-line growth. Net finance income collapsed to KSh 10.67 Mn from KSh 68.75 Mn, primarily due to a significant reduction in net foreign exchange gains. Furthermore, income tax expense increased by 37.6% to KSh 66.14 Mn, with the effective tax rate climbing to 19.43% from 15.56%. On a positive note, the company's total equity surpassed KSh 1.00 Bn for the first time in its post-manufacturing era, reaching KSh 1.01 Bn, a 37.3% increase. Total borrowings remain at zero after clearing KSh 540.69 Mn in related-party debt in FY2024, and cash and bank balances more than doubled to KSh 173.14 Mn, enhancing its assets-to-liabilities ratio to 2.42x. This improved financial health provides a solid foundation for future growth.
+
+### Strategic Land Transaction and Future Outlook
+
+A significant catalyst for investors is an impending land transaction, which is expected to considerably impact the company's financial position. Sameer Africa holds 3.75 acres of undeveloped leasehold land, valued at US$7.13 Mn (KSh 919.70 Mn), currently carried on its books at a nominal KSh 15,000. Management anticipates the sale to conclude in Q2 2026, with proceeds projected to exceed three times the FY2025 net profit. This transaction will accelerate the recovery of the retained earnings deficit, currently at KSh 206.72 Mn. Such strategic asset monetisation underscores the company's focus on capital efficiency and value creation, echoing the increasing sophistication in Kenya's financial markets as highlighted by initiatives like the [Wall Street Africa Group launching Wall Street Mtaani financial show](https://zandani.co.ke/article/wall-street-africa-group-launches-wall-street-mtaani-financial-show).
+
+### Monitoring Receivables and Tenant Dynamics
+
+While the overall performance is robust, a rise in past-due trade receivables to KSh 127.15 Mn from KSh 61.43 Mn, with balances overdue beyond 91 days increasing to KSh 120.99 Mn from KSh 38.22 Mn, warrants close monitoring. The loss allowance also increased to KSh 22.01 Mn from KSh 15.64 Mn. Given the company's revenue dependence on rental collections, the deterioration in receivable quality presents a risk factor. Separately, filings reveal that Sasini Avocado EPZ, an industrial park tenant, paid KSh 10.61 Mn in rent during the year. Sasini has since invited tenders for the sale of its avocado processing plant at the same Mombasa Road facility, with bids closing on May 8, 2026, indicating potential tenant changes for Sameer Africa. The company also maintains a 25% stake in Sameer Business Park Limited, which contributed KSh 43.56 Mn in profit share from its KSh 406.01 Mn revenue and KSh 174.23 Mn profit after tax.
