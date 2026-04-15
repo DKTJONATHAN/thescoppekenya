@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/inspector-general-recalls-ishiara-ocs-after-two-shot-dead-in-embu-pr</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
+      <news:title>Inspector General recalls Ishiara OCS after two shot dead in Embu protests</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/rigathi-gachagua-accuses-president-ruto-of-profiting-from-fuel-price</loc>
     <news:news>
       <news:publication>
@@ -637,18 +649,6 @@
       </news:publication>
       <news:publication_date>2026-04-13T09:00:00.000Z</news:publication_date>
       <news:title>Karangu Muraya claims President Ruto will serve ten-year term</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kerra-issues-nyandarua-road-tenders-following-senator-methu-s-challe</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-13T09:00:00.000Z</news:publication_date>
-      <news:title>KeRRA issues Nyandarua road tenders following Senator Methu’s challenge to President Ruto</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
