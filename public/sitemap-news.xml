@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/saudi-arabia-oil-exports-face-disruption-from-houthi-blockade-of-red</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
+      <news:title>Saudi Arabia oil exports face disruption from Houthi blockade of Red Sea shipping routes</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/siaya-county-assembly-summons-executive-officials-over-stalled-devel</loc>
     <news:news>
       <news:publication>
@@ -649,18 +661,6 @@
       </news:publication>
       <news:publication_date>2026-04-13T09:00:00.000Z</news:publication_date>
       <news:title>President Ruto announces construction of Ksh400 million Suneka Airport</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-s-creative-economy-attracts-international-investment-as-sector</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-13T09:00:00.000Z</news:publication_date>
-      <news:title>Kenya's creative economy attracts international investment as sector growth expands</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
