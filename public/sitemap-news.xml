@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/siaya-county-assembly-summons-executive-officials-over-stalled-devel</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
+      <news:title>Siaya County Assembly summons executive officials over stalled development projects</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/dolly-parton-named-world-s-most-loved-person-in-new-poll</loc>
     <news:news>
       <news:publication>
@@ -649,30 +661,6 @@
       </news:publication>
       <news:publication_date>2026-04-13T09:00:00.000Z</news:publication_date>
       <news:title>Kenya's creative economy attracts international investment as sector growth expands</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/pastor-victor-kanyari-acquires-a-new-mansion-with-a-swimming-pool</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-13T09:00:00.000Z</news:publication_date>
-      <news:title>Pastor Victor Kanyari acquires a new mansion with a swimming pool</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/karangu-muraya-claims-president-ruto-will-serve-ten-year-term</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-13T09:00:00.000Z</news:publication_date>
-      <news:title>Karangu Muraya claims President Ruto will serve ten-year term</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
