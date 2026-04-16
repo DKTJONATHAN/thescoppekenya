@@ -520,16 +520,4 @@
       <news:genres>Entertainment,Music</news:genres>
     </news:news>
   </url>
-  <url>
-    <loc>https://zandani.co.ke/article/epra-increases-petrol-and-diesel-prices-while-kerosene-remains-uncha</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
-      <news:title>EPRA increases petrol and diesel prices while kerosene remains unchanged</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
 </urlset>
