@@ -116,7 +116,7 @@ async function main() {
     return;
   }
 
-  const urls = postFiles.map(toPostUrlFromFile);
+  const urls = await Promise.all(postFiles.map(toPostUrlFromFile));
 
   console.log(`🚀 Strategy: ${strategy}. Submitting ${urls.length} URL(s) to IndexJump...`);
 
