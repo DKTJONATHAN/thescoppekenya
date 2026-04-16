@@ -75,11 +75,12 @@ jobs:
                   continue
               
               print(f"🚀 Processing File: {file_path}")
-              slug = os.path.basename(file_path).replace('.md', '')
-              article_url = f"{site_url}/article/{slug}"
-
               with open(file_path, 'r', encoding='utf-8') as f:
                   content = f.read()
+
+              slug_match = re.search(r'^slug:\s*["\']?(.*?)["\']?\s*$', content, re.MULTILINE)
+              slug = slug_match.group(1) if slug_match else os.path.basename(file_path).replace('.md', '')
+              article_url = f"{site_url}/article/{slug}"
 
               # Extract metadata using regex
               title_match = re.search(r'^title:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)

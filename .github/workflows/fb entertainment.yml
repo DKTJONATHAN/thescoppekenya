@@ -102,11 +102,12 @@ jobs:
                   continue
 
               print(f"🚀 Processing: {file_path}")
-              slug        = os.path.basename(file_path).replace('.md', '')
-              article_url = f"{site_url}/article/{slug}"
-
               with open(file_path, 'r', encoding='utf-8') as f:
                   raw = f.read()
+
+              slug_match  = re.search(r'^slug:\s*["\']?(.*?)["\']?\s*$', raw, re.MULTILINE)
+              slug        = slug_match.group(1) if slug_match else os.path.basename(file_path).replace('.md', '')
+              article_url = f"{site_url}/article/{slug}"
 
               # ── Extract frontmatter metadata ──────────────────────────────
               title_match    = re.search(r'^title:\s*["\']?(.*?)["\']?$',    raw, re.MULTILINE)

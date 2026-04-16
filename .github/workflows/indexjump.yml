@@ -37,7 +37,8 @@ jobs:
           URLS="["
           FIRST=true
           while IFS= read -r file; do
-            SLUG=$(basename "$file" .md)
+            FRONT_SLUG=$(grep -m1 '^slug:' "$file" 2>/dev/null | sed "s/^slug:[[:space:]]*[\"']*\([^\"']*\).*/\1/" || true)
+            SLUG="${FRONT_SLUG:-$(basename "$file" .md)}"
             URL="${SITE_URL}/article/${SLUG}"
             if [ "$FIRST" = true ]; then
               URLS="${URLS}\"${URL}\""
