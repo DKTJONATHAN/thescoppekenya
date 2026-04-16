@@ -20,17 +20,17 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install 
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests google-genai tweepy
+          pip install google-genai tweepy
 
       - name: Wait for Zandani to deploy
         run: |
           echo "Waiting 30 seconds for Zandani to deploy..."
           sleep 30
 
-      - name: Detect posts & publish to X via AI
+      - name: Detect posts and publish to X via AI
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
@@ -39,166 +39,128 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           if [ -z "$X_API_KEY" ] || [ -z "$X_API_SECRET" ] || [ -z "$X_ACCESS_TOKEN" ] || [ -z "$X_ACCESS_TOKEN_SECRET" ]; then
-            echo "⚠️ X credentials not set, skipping"
+            echo "X credentials not set, skipping"
             exit 0
           fi
-
           if [ -z "$GEMINI_API_KEY" ]; then
-            echo "⚠️ GEMINI_API_KEY not set, skipping."
+            echo "GEMINI_API_KEY not set, skipping"
             exit 0
           fi
 
-          # Get changed .md files in content/posts/
           CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
 
           if [ -z "$CHANGED" ]; then
-            echo "📝 No post changes detected"
+            echo "No post changes detected"
             exit 0
           fi
 
           export CHANGED_FILES="$CHANGED"
 
-          python3 << 'EOF'
-          import os, re, requests, time
-          import tweepy
-          from google import genai
-          from google.genai import types
+          python3 - <<PYEOF
+import os, re, time
+import tweepy
+from google import genai
+from google.genai import types
 
-          changed_files = os.environ.get('CHANGED_FILES', '').strip().split('\n')
-          x_api_key         = os.environ.get('X_API_KEY')
-          x_api_secret      = os.environ.get('X_API_SECRET')
-          x_access_token    = os.environ.get('X_ACCESS_TOKEN')
-          x_access_secret   = os.environ.get('X_ACCESS_TOKEN_SECRET')
-          gemini_key        = os.environ.get('GEMINI_API_KEY')
-          site_url          = "https://zandani.co.ke"
+changed_files   = os.environ.get("CHANGED_FILES", "").strip().split("\n")
+x_api_key       = os.environ.get("X_API_KEY")
+x_api_secret    = os.environ.get("X_API_SECRET")
+x_access_token  = os.environ.get("X_ACCESS_TOKEN")
+x_access_secret = os.environ.get("X_ACCESS_TOKEN_SECRET")
+gemini_key      = os.environ.get("GEMINI_API_KEY")
+site_url        = "https://zandani.co.ke"
 
-          # Tweepy v2 client (for posting tweets)
-          twitter = tweepy.Client(
-              consumer_key=x_api_key,
-              consumer_secret=x_api_secret,
-              access_token=x_access_token,
-              access_token_secret=x_access_secret
-          )
+# Tweepy v2 client with OAuth 1.0a credentials
+twitter = tweepy.Client(
+    consumer_key=x_api_key,
+    consumer_secret=x_api_secret,
+    access_token=x_access_token,
+    access_token_secret=x_access_secret
+)
 
-          # Tweepy v1.1 auth (for uploading images)
-          auth = tweepy.OAuth1UserHandler(x_api_key, x_api_secret, x_access_token, x_access_secret)
-          twitter_v1 = tweepy.API(auth)
+gemini_client = genai.Client(api_key=gemini_key)
 
-          gemini = genai.Client(api_key=gemini_key)
+def build_slug(filename):
+    base = os.path.basename(filename).replace(".md", "")
+    return re.sub(r"^\d{4}-\d{2}-\d{2}-", "", base)
 
-          MAX_TWEET_LENGTH = 280
+def trim_to_280(text, url):
+    available = 280 - 23 - 1
+    if len(text) > available:
+        text = text[:available - 3].rstrip() + "..."
+    return text + " " + url
 
-          def trim_to_limit(text, url, limit=280):
-              """Ensure tweet + URL fits in 280 chars. URL counts as 23 chars on X."""
-              url_placeholder_len = 23  # X always counts URLs as 23 chars
-              available = limit - url_placeholder_len - 1  # -1 for the space before URL
-              if len(text) > available:
-                  text = text[:available - 3].rstrip() + '...'
-              return f"{text} {url}"
+for file_path in changed_files:
+    if not file_path or not os.path.exists(file_path):
+        continue
 
-          for file_path in changed_files:
-              if not file_path or not os.path.exists(file_path):
-                  continue
+    print("Processing: " + file_path)
+    slug        = build_slug(file_path)
+    article_url = site_url + "/article/" + slug
 
-              print(f"🚀 Processing: {file_path}")
-              with open(file_path, 'r', encoding='utf-8') as f:
-                  content = f.read()
+    with open(file_path, "r", encoding="utf-8") as f:
+        raw = f.read()
 
-              slug_match = re.search(r'^slug:\s*["\']?(.*?)["\']?\s*$', content, re.MULTILINE)
-              slug = slug_match.group(1) if slug_match else os.path.basename(file_path).replace('.md', '')
-              article_url = f"{site_url}/article/{slug}"
+    def get_field(key, fallback):
+        m = re.search(r"^" + key + r":\s*[\"']?(.*?)[\"']?\s*$", raw, re.MULTILINE)
+        return m.group(1).strip() if m else fallback
 
-              title_match   = re.search(r'^title:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
-              author_match  = re.search(r'^author:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
-              excerpt_match = re.search(r'^excerpt:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
-              image_match   = re.search(r'^image:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
+    title   = get_field("title",   "Latest Update")
+    author  = get_field("author",  "Za Ndani")
+    excerpt = get_field("excerpt", "")
 
-              title   = title_match.group(1)   if title_match   else "Latest Update"
-              author  = author_match.group(1)  if author_match  else "Za Ndani"
-              excerpt = excerpt_match.group(1) if excerpt_match else ""
-              image_url = image_match.group(1) if image_match   else ""
+    print("Title:  " + title)
+    print("URL:    " + article_url)
 
-              print(f"📝 Asking Gemini to write X post for: {title}")
+    prompt = (
+        "You are the Social Media Manager for Za Ndani, a top Kenyan news platform.\n"
+        "Write a punchy tweet to drive traffic to this article.\n\n"
+        "Title: " + title + "\n"
+        "Author: " + author + "\n"
+        "Excerpt: " + excerpt + "\n\n"
+        "Rules:\n"
+        "- Maximum 230 characters. The article URL will be appended automatically - do NOT include it.\n"
+        "- Curiosity-driven and scroll-stopping.\n"
+        "- Maximum 2 emojis.\n"
+        "- End with 2 relevant hashtags e.g. #Kenya #Entertainment.\n"
+        "- No URLs or links in the text.\n"
+        "- Clear, energetic Kenyan English.\n"
+        "- NO em dashes or en dashes. Use only hyphens (-).\n"
+        "- Output ONLY the tweet text. No labels, quotes or explanation."
+    )
 
-              prompt = f"""
-              You are the expert Social Media Manager for 'Za Ndani', a top Kenyan news platform.
-              Write a punchy, engaging tweet to drive traffic to this article.
+    ai_text = None
+    for attempt in range(3):
+        try:
+            resp = gemini_client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt,
+                config=types.GenerateContentConfig(temperature=0.8)
+            )
+            ai_text = resp.text.strip()
+            break
+        except Exception as e:
+            if "429" in str(e) and attempt < 2:
+                print("Rate limited, waiting 45s (attempt " + str(attempt + 1) + ")")
+                time.sleep(45)
+            else:
+                print("Gemini error: " + str(e))
+                break
 
-              Article Title: {title}
-              Author: {author}
-              Excerpt: {excerpt}
+    if not ai_text:
+        ai_text = "Breaking: " + title[:190] + " #Kenya #Zandani"
 
-              Rules:
-              - STRICT 230 character limit for the tweet text (the article URL will be appended automatically — do NOT include it).
-              - Make it bold, curiosity-driven, and scroll-stopping.
-              - Use 1 or 2 relevant emojis maximum.
-              - Add 2 relevant hashtags at the end (e.g. #Kenya #Entertainment).
-              - Do NOT include any URL or link in the text.
-              - Write in clear, energetic Kenyan English.
-              - NEVER use em dashes (—) or en dashes (–). Only regular hyphens (-).
-              - Output ONLY the tweet text, nothing else. No labels, no quotes.
-              """
+    ai_text = ai_text.replace("\u2014", "-").replace("\u2013", "-")
 
-              try:
-                  for attempt in range(3):
-                      try:
-                          response = gemini.models.generate_content(
-                              model='gemini-2.5-flash',
-                              contents=prompt,
-                              config=types.GenerateContentConfig(temperature=0.8)
-                          )
-                          ai_text = response.text.strip()
-                          break
-                      except Exception as e:
-                          if "429" in str(e) and attempt < 2:
-                              print(f"⚠️ Rate limited. Waiting 45s... (attempt {attempt+1})")
-                              time.sleep(45)
-                          else:
-                              raise
-              except Exception as e:
-                  print(f"⚠️ AI generation failed: {e}")
-                  ai_text = f"📰 {title} - {excerpt[:100]}" if excerpt else f"📰 {title}"
+    final_tweet = trim_to_280(ai_text, article_url)
+    print("Tweet (" + str(len(final_tweet)) + " chars): " + final_tweet)
 
-              # Sanitize dashes
-              ai_text = ai_text.replace('\u2014', '-').replace('\u2013', '-')
+    try:
+        result = twitter.create_tweet(text=final_tweet, user_auth=True)
+        tweet_id = result.data["id"]
+        print("Posted! https://x.com/Maestropuns/status/" + str(tweet_id))
+    except tweepy.TweepyException as e:
+        print("Failed: " + str(e))
 
-              # Build final tweet — guaranteed within 280 chars
-              final_tweet = trim_to_limit(ai_text, article_url)
-              print(f"📢 Final tweet ({len(final_tweet)} visible chars):\n{final_tweet}\n")
-
-              # Try to upload image if available
-              media_id = None
-              img_path = "temp_x_image.jpg"
-
-              if image_url and image_url.startswith("http"):
-                  print(f"📥 Downloading image: {image_url}")
-                  try:
-                      img_data = requests.get(image_url, timeout=15).content
-                      with open(img_path, 'wb') as img_file:
-                          img_file.write(img_data)
-                      media = twitter_v1.media_upload(filename=img_path)
-                      media_id = media.media_id_string
-                      print(f"🖼️ Image uploaded. Media ID: {media_id}")
-                  except Exception as e:
-                      print(f"⚠️ Image upload failed, posting text only: {e}")
-
-              # Post the tweet
-              try:
-                  if media_id:
-                      res = twitter.create_tweet(text=final_tweet, media_ids=[media_id])
-                  else:
-                      res = twitter.create_tweet(text=final_tweet)
-
-                  tweet_id = res.data['id']
-                  print(f"✅ Tweet posted successfully! ID: {tweet_id}")
-                  print(f"🔗 https://x.com/i/web/status/{tweet_id}")
-
-              except tweepy.TweepyException as e:
-                  print(f"❌ Failed to post tweet: {e}")
-
-              if os.path.exists(img_path):
-                  os.remove(img_path)
-
-              # Small delay between multiple posts
-              time.sleep(5)
-          EOF
+    time.sleep(5)
+PYEOF
