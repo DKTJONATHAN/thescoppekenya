@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/global-trade-remains-resilient-as-middle-east-and-africa-shipments-r</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
+      <news:title>Global trade remains resilient as Middle East and Africa shipments rise 52 percent</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kuccps-directs-candidates-who-missed-university-placement-to-apply-v</loc>
     <news:news>
       <news:publication>
@@ -517,30 +529,6 @@
       </news:publication>
       <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
       <news:title>EPRA increases petrol and diesel prices while kerosene remains unchanged</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenyan-firms-prioritize-employee-well-being-and-financial-health-in-</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
-      <news:title>Kenyan Firms Prioritize Employee Well-being and Financial Health in Workplace Shift</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/geoffrey-mosiria-appeals-for-public-assistance-for-child-requiring-s</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
-      <news:title>Geoffrey Mosiria appeals for public assistance for child requiring skull surgery</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
