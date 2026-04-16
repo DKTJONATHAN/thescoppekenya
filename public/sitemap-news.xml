@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/savara-savage-level-anniversary-2026-lie</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
+      <news:title>Savara's 'Savage Level' Anniversary 2026 Lie</news:title>
+      <news:genres>Entertainment,Music</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/tsc-begins-nationwide-teacher-transfers-to-address-staffing-imbalanc</loc>
     <news:news>
       <news:publication>
@@ -469,54 +481,6 @@
       </news:publication>
       <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
       <news:title>Nurse Judy's Sh49,000 Braids: A Californian Folly</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/nigeria-earns-three-nominations-in-american-music-awards-afrobeats-c</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
-      <news:title>Nigeria earns three nominations in American Music Awards Afrobeats category</news:title>
-      <news:genres>Entertainment,Music</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/president-ruto-promotes-broad-based-government-and-infrastructure-pr</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
-      <news:title>President Ruto Promotes Broad-Based Government and Infrastructure Projects in Kisii and Nyamira</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/state-house-ordered-to-remove-wall-on-riparian-land-within-14-days</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
-      <news:title>State House ordered to remove wall on riparian land within 14 days</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/senegal-sentences-man-to-six-years-in-prison-under-stricter-anti-lgb</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
-      <news:title>Senegal sentences man to six years in prison under stricter anti-LGBTQ laws</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
