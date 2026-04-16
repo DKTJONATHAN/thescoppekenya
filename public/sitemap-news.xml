@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/mikel-arteta-emphasizes-his-resolve-following-arsenal-loss-to-bourne</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
+      <news:title>Mikel Arteta emphasizes his resolve following Arsenal loss to Bournemouth</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenya-meteorological-department-warns-of-heavy-rain-and-potential-fl</loc>
     <news:news>
       <news:publication>
@@ -661,30 +673,6 @@
       </news:publication>
       <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
       <news:title>Faith Odhiambo opens up on why she avoided marrying a lawyer to keep the courtroom drama out of her home</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/pastor-kanyari-returns-to-kayole-after-two-days-in-ksh-90-million-ru</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
-      <news:title>Pastor Kanyari returns to Kayole after two days in KSh 90 million Runda mansion</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/leeds-stun-man-utd-in-historic-old-trafford-upset-as-worst-ever-red-</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
-      <news:title>Leeds Stun Man Utd in Historic Old Trafford Upset as 'Worst Ever' Red Card Sparks Fury</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
