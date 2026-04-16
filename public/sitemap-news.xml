@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/tsc-begins-nationwide-teacher-transfers-to-address-staffing-imbalanc</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
+      <news:title>TSC begins nationwide teacher transfers to address staffing imbalances</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/global-trade-remains-resilient-as-middle-east-and-africa-shipments-r</loc>
     <news:news>
       <news:publication>
@@ -506,18 +518,6 @@
       <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
       <news:title>Senegal sentences man to six years in prison under stricter anti-LGBTQ laws</news:title>
       <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/omah-lay-claims-he-is-the-greatest-afrobeats-artist-of-the-decade</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-14T09:00:00.000Z</news:publication_date>
-      <news:title>Omah Lay claims he is the greatest Afrobeats artist of the decade</news:title>
-      <news:genres>Entertainment,Music</news:genres>
     </news:news>
   </url>
 </urlset>
