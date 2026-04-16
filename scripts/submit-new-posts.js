@@ -23,8 +23,11 @@ if (!INDEXJUMP_API_KEY) {
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-function toPostUrlFromFile(filePath) {
-  const slug = path.basename(filePath, '.md').toLowerCase();
+async function toPostUrlFromFile(filePath) {
+  const fullPath = path.resolve(process.cwd(), filePath);
+  const content = await fs.readFile(fullPath, 'utf-8');
+  const slugMatch = content.match(/^slug:\s*["']?(.+?)["']?\s*$/m);
+  const slug = slugMatch ? slugMatch[1] : path.basename(filePath, '.md').toLowerCase();
   return `${SITE_URL}/article/${slug}`;
 }
 
