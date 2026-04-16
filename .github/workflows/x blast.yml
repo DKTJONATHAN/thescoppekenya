@@ -25,9 +25,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install google-genai tweepy
 
-      - name: Wait for Zandani to deploy
+      - name: Wait for deployment
         run: |
-          echo "Waiting 30 seconds for Zandani to deploy..."
+          echo "Waiting 30 seconds for site to deploy..."
           sleep 30
 
       - name: Detect posts and publish to X via AI
@@ -47,6 +47,7 @@ jobs:
             exit 0
           fi
 
+          # Get changed markdown files
           CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
 
           if [ -z "$CHANGED" ]; then
@@ -70,7 +71,7 @@ x_access_secret = os.environ.get("X_ACCESS_TOKEN_SECRET")
 gemini_key      = os.environ.get("GEMINI_API_KEY")
 site_url        = "https://zandani.co.ke"
 
-# Tweepy v2 client with OAuth 1.0a credentials
+# Tweepy v2 client
 twitter = tweepy.Client(
     consumer_key=x_api_key,
     consumer_secret=x_api_secret,
@@ -85,6 +86,7 @@ def build_slug(filename):
     return re.sub(r"^\d{4}-\d{2}-\d{2}-", "", base)
 
 def trim_to_280(text, url):
+    # X counts URLs as 23 characters
     available = 280 - 23 - 1
     if len(text) > available:
         text = text[:available - 3].rstrip() + "..."
@@ -94,46 +96,47 @@ for file_path in changed_files:
     if not file_path or not os.path.exists(file_path):
         continue
 
-    print("Processing: " + file_path)
-    slug        = build_slug(file_path)
-    article_url = site_url + "/article/" + slug
+    print(f"Processing: {file_path}")
+    slug = build_slug(file_path)
+    article_url = f"{site_url}/article/{slug}"
 
-    with open(file_path, "r", encoding="utf-8") as f:
-        raw = f.read()
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            raw = f.read()
+    except Exception as e:
+        print(f"Error reading file: {e}")
+        continue
 
     def get_field(key, fallback):
         m = re.search(r"^" + key + r":\s*[\"']?(.*?)[\"']?\s*$", raw, re.MULTILINE)
         return m.group(1).strip() if m else fallback
 
-    title   = get_field("title",   "Latest Update")
-    author  = get_field("author",  "Za Ndani")
+    title   = get_field("title", "Latest Update")
+    author  = get_field("author", "Za Ndani")
     excerpt = get_field("excerpt", "")
-
-    print("Title:  " + title)
-    print("URL:    " + article_url)
 
     prompt = (
         "You are the Social Media Manager for Za Ndani, a top Kenyan news platform.\n"
         "Write a punchy tweet to drive traffic to this article.\n\n"
-        "Title: " + title + "\n"
-        "Author: " + author + "\n"
-        "Excerpt: " + excerpt + "\n\n"
+        f"Title: {title}\n"
+        f"Author: {author}\n"
+        f"Excerpt: {excerpt}\n\n"
         "Rules:\n"
-        "- Maximum 230 characters. The article URL will be appended automatically - do NOT include it.\n"
-        "- Curiosity-driven and scroll-stopping.\n"
-        "- Maximum 2 emojis.\n"
-        "- End with 2 relevant hashtags e.g. #Kenya #Entertainment.\n"
-        "- No URLs or links in the text.\n"
-        "- Clear, energetic Kenyan English.\n"
-        "- NO em dashes or en dashes. Use only hyphens (-).\n"
-        "- Output ONLY the tweet text. No labels, quotes or explanation."
+        "- Max 230 characters.\n"
+        "- Curiosity-driven.\n"
+        "- Max 2 emojis.\n"
+        "- End with 2 hashtags (e.g. #Kenya).\n"
+        "- No URLs in the text.\n"
+        "- No dashes (— or –). Use hyphens (-).\n"
+        "- Output ONLY the tweet text."
     )
 
     ai_text = None
     for attempt in range(3):
         try:
+            # Note: Using gemini-2.0-flash as it is the current standard
             resp = gemini_client.models.generate_content(
-                model="gemini-2.5-flash",
+                model="gemini-2.0-flash",
                 contents=prompt,
                 config=types.GenerateContentConfig(temperature=0.8)
             )
@@ -141,26 +144,24 @@ for file_path in changed_files:
             break
         except Exception as e:
             if "429" in str(e) and attempt < 2:
-                print("Rate limited, waiting 45s (attempt " + str(attempt + 1) + ")")
                 time.sleep(45)
             else:
-                print("Gemini error: " + str(e))
+                print(f"Gemini error: {e}")
                 break
 
     if not ai_text:
-        ai_text = "Breaking: " + title[:190] + " #Kenya #Zandani"
+        ai_text = f"Breaking: {title[:190]} #Kenya #Zandani"
 
-    ai_text = ai_text.replace("\u2014", "-").replace("\u2013", "-")
+    # Clean special characters that X/Gemini might hallucinate
+    ai_text = ai_text.replace("\u2014", "-").replace("\u2013", "-").replace('"', '')
 
     final_tweet = trim_to_280(ai_text, article_url)
-    print("Tweet (" + str(len(final_tweet)) + " chars): " + final_tweet)
 
     try:
-        result = twitter.create_tweet(text=final_tweet, user_auth=True)
-        tweet_id = result.data["id"]
-        print("Posted! https://x.com/Maestropuns/status/" + str(tweet_id))
-    except tweepy.TweepyException as e:
-        print("Failed: " + str(e))
+        twitter.create_tweet(text=final_tweet, user_auth=True)
+        print(f"Posted successfully: {final_tweet}")
+    except Exception as e:
+        print(f"Twitter post failed: {e}")
 
     time.sleep(5)
 PYEOF
