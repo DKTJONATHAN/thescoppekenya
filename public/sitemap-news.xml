@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/ig-kanja-orders-police-to-obey-constitution-and-warns-public-against</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
+      <news:title>IG Kanja orders police to obey Constitution and warns public against attacking stations</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/knec-directs-parents-to-verify-national-examination-registration-via</loc>
     <news:news>
       <news:publication>
@@ -349,54 +361,6 @@
       </news:publication>
       <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
       <news:title>Inspector General recalls Ishiara OCS after two shot dead in Embu protests</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/rigathi-gachagua-accuses-president-ruto-of-profiting-from-fuel-price</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>Rigathi Gachagua accuses President Ruto of profiting from fuel price hikes</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/oasis-sade-and-phil-collins-named-as-rock-roll-hall-of-fame-inductee</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>Oasis, Sade, and Phil Collins named as Rock &amp; Roll Hall of Fame inductees</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/stevo-simple-boy-attributes-freshi-barida-juice-delay-to-quality-sta</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>Stevo Simple Boy attributes Freshi Barida juice delay to quality standards and investor search</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/moi-university-faces-potential-auction-after-court-order-freezes-ban</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>Moi University faces potential auction after court order freezes bank accounts</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
