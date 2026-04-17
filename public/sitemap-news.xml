@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/end-of-the-saudi-spending-spree-pif-review-sparks-shockwaves-for-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
+      <news:title>End of the Saudi Spending Spree? PIF Review Sparks Shockwaves for Newcastle and LIV Golf</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenyan-transport-operators-required-to-appoint-data-protection-offic</loc>
     <news:news>
       <news:publication>
@@ -362,30 +374,6 @@
       <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
       <news:title>Dolly Parton Named World's Most Loved Person in New Poll</news:title>
       <news:genres>Entertainment,Music</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/matatu-fares-rise-following-increase-in-fuel-prices</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>Matatu fares rise following increase in fuel prices</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/inspector-general-recalls-ishiara-ocs-after-two-shot-dead-in-embu-pr</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>Inspector General recalls Ishiara OCS after two shot dead in Embu protests</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
 </urlset>
