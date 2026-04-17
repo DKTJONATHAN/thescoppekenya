@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/wahu-and-nameless-reveal-media-agreement-used-to-keep-wedding-privat</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
+      <news:title>Wahu and Nameless reveal media agreement used to keep wedding private</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/interior-ministry-orders-release-of-188-impounded-motorbikes-in-kili</loc>
     <news:news>
       <news:publication>
@@ -386,18 +398,6 @@
       <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
       <news:title>Siaya County Assembly summons executive officials over stalled development projects</news:title>
       <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/dolly-parton-named-world-s-most-loved-person-in-new-poll</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>Dolly Parton Named World's Most Loved Person in New Poll</news:title>
-      <news:genres>Entertainment,Music</news:genres>
     </news:news>
   </url>
 </urlset>
