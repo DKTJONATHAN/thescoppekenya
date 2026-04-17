@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/tipsy-gee-and-vera-sidika-share-identical-rooftop-views-from-bangkok</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
+      <news:title>Tipsy Gee and Vera Sidika share identical rooftop views from Bangkok trip</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/mp-introduces-bill-to-regulate-police-detention-of-motor-vehicles</loc>
     <news:news>
       <news:publication>
@@ -385,54 +397,6 @@
       </news:publication>
       <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
       <news:title>Matatu operators increase fares by 25 percent following fuel price hike</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/nameless-accepts-fan-apology-for-misheard-lyrics-in-song-deadly</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>Nameless accepts fan apology for misheard lyrics in song Deadly</news:title>
-      <news:genres>Entertainment,Music</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/sameer-africa-reports-highest-operating-profit-in-over-a-decade-as-r</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>Sameer Africa reports highest operating profit in over a decade as rental income grows</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/president-ruto-orders-freeze-on-kerosene-prices-to-protect-consumers</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>President Ruto orders freeze on kerosene prices to protect consumers</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/odpp-challenges-ruling-on-cybercrime-law-at-supreme-court</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>ODPP challenges ruling on cybercrime law at Supreme Court</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
