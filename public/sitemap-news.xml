@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/samsung-privacy-display-win-kenya</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
+      <news:title>Samsung's Privacy Display: Finally, a Win for Kenyans</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/khaligraph-jones-announces-construction-of-new-business-headquarters</loc>
     <news:news>
       <news:publication>
@@ -361,18 +373,6 @@
       </news:publication>
       <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
       <news:title>Matatu operators decline immediate fare cuts despite fuel price reduction</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/scream-7-ai-farce-shambolic-ending-plot-twist</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>Scream 7's AI Farce: A Shambolic Ending Plot Twist</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
