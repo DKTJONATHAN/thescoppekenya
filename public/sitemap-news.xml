@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/khaligraph-jones-announces-construction-of-new-business-headquarters</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
+      <news:title>Khaligraph Jones announces construction of new business headquarters in Ruaka</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/odumodublvck-denies-involvement-in-the-removal-of-blaqbonez-track-fr</loc>
     <news:news>
       <news:publication>
@@ -361,42 +373,6 @@
       </news:publication>
       <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
       <news:title>Scream 7's AI Farce: A Shambolic Ending Plot Twist</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/ndindi-nyoro-proposes-measures-to-lower-fuel-prices</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>Ndindi Nyoro Proposes Measures to Lower Fuel Prices</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/cofek-reports-carcinogenic-compounds-in-kenya-fuel-supply-chain</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>COFEK reports carcinogenic compounds in Kenya fuel supply chain</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/online-cab-fares-set-to-rise-by-50-per-cent-as-drivers-announce-new-</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>Online cab fares set to rise by 50 per cent as drivers announce new minimum charge</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
