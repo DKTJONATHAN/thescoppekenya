@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/kuccps-to-hold-webinar-to-guide-students-on-university-and-college-a</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
+      <news:title>KUCCPS to hold webinar to guide students on university and college applications</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/president-ruto-signs-law-reducing-fuel-vat-to-eight-percent</loc>
     <news:news>
       <news:publication>
@@ -385,18 +397,6 @@
       </news:publication>
       <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
       <news:title>EPRA reduces fuel prices as petrol drops to Ksh197.60 per litre</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/saudi-arabia-oil-exports-face-disruption-from-houthi-blockade-of-red</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>Saudi Arabia oil exports face disruption from Houthi blockade of Red Sea shipping routes</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
