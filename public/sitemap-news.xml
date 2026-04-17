@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/julius-malema-walks-free-despite-conviction-for-firearm-offence</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
+      <news:title>Julius Malema walks free despite conviction for firearm offence</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/federation-of-kenya-employers-opposes-calls-for-salary-increases-fol</loc>
     <news:news>
       <news:publication>
@@ -433,30 +445,6 @@
       </news:publication>
       <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
       <news:title>Diddy Prison Release 2028: Privilege on Parade</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/tiktoker-sheryl-gabriella-expresses-regret-over-ending-relationship-</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>TikToker Sheryl Gabriella expresses regret over ending relationship with supportive American partner</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/cooperatives-ministry-announces-second-tranche-of-nyota-fund-disburs</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-15T09:00:00.000Z</news:publication_date>
-      <news:title>Cooperatives Ministry announces second tranche of NYOTA fund disbursement for youth</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
