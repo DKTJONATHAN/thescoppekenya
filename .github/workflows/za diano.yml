@@ -43,7 +43,7 @@ jobs:
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
-          python << 'EOF'
+          python << 'PYEOF'
           import os, json, datetime, requests, re, time, sys, hashlib, itertools, base64, random, io
           from dateutil import parser as date_parser
           from google import genai
@@ -61,36 +61,34 @@ jobs:
           TARGET_ACCOUNT    = "georgediano"
           MIN_CHARS         = 500
 
-          DIANO_CONTEXT = """
-          ABOUT @georgediano (George T. Diano):
-          He is a popular Kenyan satirist, storyteller, and social media commentator.
-          His bio says: "for Satire & Peasants || Story teller || Inspired by Wahome Mutah."
-          He writes in a witty, sarcastic, sharp style mixing English, Sheng, and Kenyan slang.
-          He covers Kenyan politics, celebrity gossip, social commentary, and trending stories.
-          His posts are often satirical - he says the opposite of what he means to make a point.
-
-          CRITICAL RULE: When his post is SATIRE, do NOT report it as fact.
-          Instead, capture the satirical observation or irony and write the story around the underlying truth he is pointing at.
-
-          SHENG & KENYAN SLANG GLOSSARY (translate these correctly):
-          - "Buana" = "Man" / "Dude" / "Honestly" (expression of disbelief or emphasis)
-          - "Hoi polloi" = ordinary Kenyans / the masses (he uses this ironically)
-          - "Nikama" = "It is like" / "It seems like"
-          - "Peasants" = his affectionate/ironic name for his followers (not an insult)
-          - "Watu wetu" = "Our people" (ironic when pointing out hypocrisy in a group)
-          - "Kuosha" = to expose / to humiliate someone publicly
-          - "Kulipa fare" = to face consequences / to pay the price
-          - "Kutoka kwa" = coming from / originating from
-          - "Goon" = thug / political enforcer / hired muscle
-          - "Commander" / "General" = sarcastic praise often directed at politicians he is mocking
-          - "Deep. Very deep." = sarcastic response to something absurd or obvious
-          - "From the pocket straight to the pan" = going from bad to worse / reckless behavior
-          - "Eating depression raw" = suffering silently without help
-          - "That other side of ODM" = the militant/violent wing of a political party
-          - "Eliminated" = killed / assassinated (used seriously in political context)
-          - "True General" = sarcastic title, often mockery of a politician acting tough
-          - Short cryptic posts often reference a trending Kenyan news story - use Google Search to find the story he is referring to
-          """
+          DIANO_CONTEXT = (
+              "ABOUT @georgediano (George T. Diano):\n"
+              "He is a popular Kenyan satirist, storyteller, and social media commentator.\n"
+              "His bio: 'for Satire & Peasants || Story teller || Inspired by Wahome Mutah.'\n"
+              "He writes in a witty, sarcastic style mixing English and Kenyan expressions.\n"
+              "He covers Kenyan politics, celebrity gossip, social commentary, and trending stories.\n"
+              "His posts are often satirical - he says the opposite of what he means to make a point.\n\n"
+              "CRITICAL RULE: When his post is SATIRE, do NOT report it as fact.\n"
+              "Capture the satirical observation and write the story around the underlying truth.\n\n"
+              "KENYAN EXPRESSION GLOSSARY (translate correctly into clear English):\n"
+              "- 'Buana' = 'Man' / 'Honestly' (expression of emphasis)\n"
+              "- 'Hoi polloi' = ordinary Kenyans / the masses (used ironically)\n"
+              "- 'Nikama' = 'It is like' / 'It seems like'\n"
+              "- 'Peasants' = his ironic name for his followers (not an insult)\n"
+              "- 'Watu wetu' = 'Our people' (ironic when pointing out hypocrisy)\n"
+              "- 'Kuosha' = to expose / to humiliate someone publicly\n"
+              "- 'Kulipa fare' = to face consequences / to pay the price\n"
+              "- 'Goon' = thug / political enforcer / hired muscle\n"
+              "- 'Commander' / 'General' = sarcastic praise for politicians he is mocking\n"
+              "- 'Deep. Very deep.' = sarcastic response to something absurd or obvious\n"
+              "- 'From the pocket straight to the pan' = going from bad to worse\n"
+              "- 'Eating depression raw' = suffering silently without help\n"
+              "- 'That other side of ODM' = the militant wing of a political party\n"
+              "- 'Eliminated' = killed / assassinated (used seriously in political context)\n"
+              "- 'True General' = sarcastic title, often mockery of a politician acting tough\n"
+              "Short cryptic posts often reference a trending Kenyan news story - "
+              "use Google Search to find the story he is referring to.\n"
+          )
 
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot",
@@ -131,7 +129,7 @@ jobs:
               print(f"Scraping syndication feed: {target_url}")
               try:
                   headers = {
-                      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+                      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
                       'Accept-Language': 'en-US,en;q=0.9',
                       'Connection': 'keep-alive',
                       'Upgrade-Insecure-Requests': '1',
@@ -140,9 +138,7 @@ jobs:
                   req = requests.get(target_url, headers=headers, timeout=30)
                   req.raise_for_status()
 
-                  html_content = req.text
-                  soup = BeautifulSoup(html_content, "html.parser")
-
+                  soup = BeautifulSoup(req.text, "html.parser")
                   data_div = soup.find('div', id='__NEXT_DATA__')
                   if not data_div:
                       print("Could not find NEXT_DATA. Might be rate limited or format changed.")
@@ -151,7 +147,6 @@ jobs:
                   j_data = json.loads(data_div.string)
                   timeline_data = j_data.get('props', {}).get('pageProps', {}).get('timeline', {})
                   items = timeline_data.get('entries', [])
-
                   print(f'Found {len(items)} posts via Syndication API')
 
                   now_utc = datetime.datetime.now(datetime.timezone.utc)
@@ -160,8 +155,6 @@ jobs:
                       tweet_obj = item.get('tweet', {})
                       if not tweet_obj:
                           continue
-
-                      # Skip retweets
                       if tweet_obj.get('retweeted_status_id_str'):
                           continue
 
@@ -251,14 +244,13 @@ jobs:
                   try:
                       with open(os.path.join(posts_dir, fn), 'r', encoding='utf-8') as f:
                           content = f.read()
-                      title_m = re.search(r'title:s*"(.*?)"', content)
-                      slug_m = re.search(r'slug:s*"(.*?)"', content)
+                      title_m = re.search(r'title:\s*"(.*?)"', content)
+                      slug_m = re.search(r'slug:\s*"(.*?)"', content)
                       if title_m and slug_m:
                           links.append(f'- [{title_m.group(1)}]({SITE_BASE_URL}/article/{slug_m.group(1)})')
                   except Exception:
                       pass
-              return "
-".join(links) if links else ""
+              return "\n".join(links) if links else ""
 
           memory_path = os.environ.get("MEMORY_FILE", ".github/memory_georgediano.json")
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
@@ -279,39 +271,22 @@ jobs:
               sys.exit(0)
 
           interpret_prompt = (
-              DIANO_CONTEXT + "
-
-"
-              + "DIANO'S POST:
-" + chosen["text"] + "
-
-"
-              + "TASK: This post is heavily stylistic. Before writing an article, analyze it.
-"
-              + "1. Is this tweet SATIRICAL, SLANG-HEAVY, or a STRAIGHT OBSERVATION? (answer: satirical / slang / literal)
-"
-              + "2. Search Google for the ACTUAL TRENDING KENYAN STORY he is referencing.
-"
-              + "3. What is the true event? (Summarize it plainly)
-"
-              + "4. What is Diano's core commentary or joke about this event?
-"
-              + "Output ONLY JSON: {
-"
-              + '"tone_identified": "satirical|slang|literal",
-'
-              + '"true_story": "The actual trending event",
-'
-              + '"diano_commentary": "What he is pointing out"
-'
-              + "}"
+              DIANO_CONTEXT + "\n\n"
+              "DIANO'S POST:\n" + chosen["text"] + "\n\n"
+              "TASK: This post is heavily stylistic. Before writing an article, analyze it.\n"
+              "1. Is this tweet SATIRICAL, SLANG-HEAVY, or a STRAIGHT OBSERVATION?\n"
+              "2. Search Google for the ACTUAL TRENDING KENYAN STORY he is referencing.\n"
+              "3. What is the true event? (Summarize it plainly)\n"
+              "4. What is Diano's core commentary or joke about this event?\n"
+              'Output ONLY JSON: {"tone_identified": "satirical|slang|literal", '
+              '"true_story": "The actual trending event", '
+              '"diano_commentary": "What he is pointing out"}'
           )
           interpret_text = gemini_generate(interpret_prompt, "interpret", use_search=True)
           interpretation = {}
           if interpret_text:
               try:
-                  clean = re.sub(r'^```json?
-?|```$', '', interpret_text, flags=re.I | re.DOTALL).strip()
+                  clean = re.sub(r'^```json?\s*|\s*```$', '', interpret_text, flags=re.I | re.DOTALL).strip()
                   interpretation = json.loads(clean)
               except Exception as e:
                   print(f"Interpret parse error: {e}")
@@ -324,26 +299,18 @@ jobs:
           commentary = interpretation.get("diano_commentary", "")
 
           title_prompt = (
-              "TRUE TRENDING STORY: " + true_story + "
-"
-              + "POST COMMENTARY: " + commentary + "
-
-"
-              + "Write a single punchy headline for a Kenyan gossip/entertainment article about this trending story.
-"
-              + "Style: bold, intriguing, Kenyan pop culture tone. No clickbait questions. No brackets.
-"
-              + "The headline must reflect the REAL story. DO NOT mention George Diano or Twitter/X in the headline.
-"
-              + 'Output ONLY JSON: {"final_title": "Your Headline Here"}'
+              "TRUE TRENDING STORY: " + true_story + "\n"
+              "POST COMMENTARY: " + commentary + "\n\n"
+              "Write a single punchy headline for a Kenyan gossip/entertainment article about this trending story.\n"
+              "Style: bold, intriguing, Kenyan pop culture tone. No clickbait questions. No brackets.\n"
+              "The headline must reflect the REAL story. DO NOT mention George Diano or Twitter/X in the headline.\n"
+              'Output ONLY JSON: {"final_title": "Your Headline Here"}'
           )
           title_text = gemini_generate(title_prompt, "title")
-          final_title = chosen["text"][:80].split("
-")[0]
+          final_title = chosen["text"][:80].split("\n")[0]
           if title_text:
               try:
-                  clean = re.sub(r'^```json?
-?|```$', '', title_text, flags=re.I | re.DOTALL).strip()
+                  clean = re.sub(r'^```json?\s*|\s*```$', '', title_text, flags=re.I | re.DOTALL).strip()
                   final_title = json.loads(clean).get("final_title", final_title)
               except Exception:
                   pass
@@ -356,89 +323,54 @@ jobs:
           banned_str = ", ".join(BANNED_PHRASES)
 
           article_prompt = (
-              "Current Date: " + full_date_str + ". Current year: " + current_year + ".
-
-"
-              + DIANO_CONTEXT + "
-
-"
-              + "TRENDING STORY TO COVER: " + true_story + "
-"
-              + "INSIDER COMMENTARY TO INCLUDE: " + commentary + "
-"
-              + "ARTICLE TITLE: " + final_title + "
-"
-              + "INTERNAL LINKS (weave in 1-2 naturally):
-" + internal_links + "
-
-"
-              + "TASK: Write a full Kenyan entertainment/gossip article for Za Ndani.
-"
-              + "Author is Zed Mogaka - his voice is witty, sharp, and feels like an insider dropping the real gist.
-"
-              + "The article should tell the REAL story based on the trending topic.
-"
-              + "Write in third-person news style. No self-referencing as the author.
-"
-              + "Translate any Sheng/slang into clear vivid English so all readers understand.
-"
-              + "No em-dashes. Single hyphens only. No title/byline/date in body.
-"
-              + "All date references must be " + current_year + ".
-
-"
-              + "STRUCTURE:
-"
-              + "1. A 35-45 word lede paragraph (no heading above it) - answers who/what/when/where immediately.
-"
-              + "2. ## H2 subheading with primary keyword.
-"
-              + "3. 3-4 supporting paragraphs with ### subheadings.
-"
-              + "4. A sharp closing line that captures the Kenyan street reaction.
-
-"
-              + "BANNED PHRASES (never use): " + banned_str + "
-"
-              + "CRITICAL: NEVER mention George Diano as the source. NEVER mention Twitter/X/social media.
-"
-              + "Write as if Zed Mogaka and Za Ndani gathered this story directly.
-"
-              + "Do NOT attribute quotes to Diano by name.
-"
-              + "Make it entertaining, vivid, and unmistakably Kenyan in flavour."
+              "Current Date: " + full_date_str + ". Current year: " + current_year + ".\n\n"
+              + DIANO_CONTEXT + "\n\n"
+              "TRENDING STORY TO COVER: " + true_story + "\n"
+              "INSIDER COMMENTARY TO INCLUDE: " + commentary + "\n"
+              "ARTICLE TITLE: " + final_title + "\n"
+              "INTERNAL LINKS (weave in 1-2 naturally):\n" + internal_links + "\n\n"
+              "TASK: Write a full Kenyan entertainment/gossip article for Za Ndani.\n"
+              "Author is Zed Mogaka - his voice is witty, sharp, and feels like an insider dropping the real gist.\n"
+              "The article should tell the REAL story based on the trending topic.\n"
+              "Write in third-person news style. No self-referencing as the author.\n"
+              "Translate any local expressions into clear vivid English so all readers understand.\n"
+              "No em-dashes. Single hyphens only. No title/byline/date in body.\n"
+              "All date references must be " + current_year + ".\n\n"
+              "STRUCTURE:\n"
+              "1. A 35-45 word lede paragraph (no heading above it) - answers who/what/when/where immediately.\n"
+              "2. ## H2 subheading with primary keyword.\n"
+              "3. 3-4 supporting paragraphs with ### subheadings.\n"
+              "4. A sharp closing line that captures the Kenyan street reaction.\n\n"
+              "BANNED PHRASES (never use): " + banned_str + "\n"
+              "CRITICAL: NEVER mention George Diano as the source. NEVER mention Twitter/X/social media.\n"
+              "Write as if Zed Mogaka and Za Ndani gathered this story directly.\n"
+              "Do NOT attribute quotes to Diano by name.\n"
+              "Make it entertaining, vivid, and unmistakably Kenyan in flavour."
           )
           article_text = gemini_generate(article_prompt, "article", use_search=True)
           if not article_text:
               sys.exit(1)
 
-          article_text = re.sub(r'^```(?:markdown)?
-?', '', article_text).rstrip('```').strip()
-          article_text = re.sub(r'^(Title|By|Author|Date):.*?
-', '', article_text, flags=re.I | re.M)
-          article_text = article_text.replace('—', '-').replace('–', '-')
+          article_text = re.sub(r'^```(?:markdown)?\s*', '', article_text).rstrip('`').strip()
+          article_text = re.sub(r'^(Title|By|Author|Date):.*?\n', '', article_text, flags=re.I | re.M)
+          article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
 
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
           time.sleep(3)
 
           desc_prompt = (
-              "Write a single meta description (140-155 characters) for this article.
-"
-              + "Title: " + final_title + "
-"
-              + "Snippet: " + article_text[:600] + "
-"
-              + "Rules: factual, no clickbait, starts with subject or verb, includes key news fact.
-"
-              + 'Output ONLY JSON: {"description": "Your description here"}'
+              "Write a single meta description (140-155 characters) for this article.\n"
+              "Title: " + final_title + "\n"
+              "Snippet: " + article_text[:600] + "\n"
+              "Rules: factual, no clickbait, starts with subject or verb, includes key news fact.\n"
+              'Output ONLY JSON: {"description": "Your description here"}'
           )
           desc_text = gemini_generate(desc_prompt, "description")
           meta_description = ""
           if desc_text:
               try:
-                  clean = re.sub(r'^```json?
-?|```$', '', desc_text, flags=re.I | re.DOTALL).strip()
+                  clean = re.sub(r'^```json?\s*|\s*```$', '', desc_text, flags=re.I | re.DOTALL).strip()
                   meta_description = json.loads(clean).get("description", "")[:160].replace('"', "'")
               except Exception:
                   pass
@@ -446,20 +378,16 @@ jobs:
           time.sleep(3)
 
           tags_prompt = (
-              "Generate 4-5 relevant SEO tags for this Kenyan entertainment article.
-"
-              + "Title: " + final_title + "
-"
-              + "Rules: lowercase, hyphenated multi-word. No generic tags like 'news', 'kenya'.
-"
-              + 'Output ONLY JSON: {"tags": ["tag-one", "tag-two", "tag-three"]}'
+              "Generate 4-5 relevant SEO tags for this Kenyan entertainment article.\n"
+              "Title: " + final_title + "\n"
+              "Rules: lowercase, hyphenated multi-word. No generic tags like 'news', 'kenya'.\n"
+              'Output ONLY JSON: {"tags": ["tag-one", "tag-two", "tag-three"]}'
           )
           tags_text = gemini_generate(tags_prompt, "tags")
           article_tags = []
           if tags_text:
               try:
-                  clean = re.sub(r'^```json?
-?|```$', '', tags_text, flags=re.I | re.DOTALL).strip()
+                  clean = re.sub(r'^```json?\s*|\s*```$', '', tags_text, flags=re.I | re.DOTALL).strip()
                   article_tags = [str(t).lower().replace(' ', '-') for t in json.loads(clean).get("tags", [])[:5]]
               except Exception:
                   pass
@@ -490,8 +418,7 @@ jobs:
           ]
           filepath = os.path.join(posts_dir, today_str + '-' + slug + '.md')
           with open(filepath, 'w', encoding='utf-8') as f:
-              f.write('
-'.join(lines))
+              f.write('\n'.join(lines))
 
           memory.append(chosen["id"])
           os.makedirs(os.path.dirname(memory_path), exist_ok=True)
@@ -499,14 +426,14 @@ jobs:
               json.dump(memory[-500:], f)
 
           print(f"Saved: {filepath}")
-          EOF
+          PYEOF
 
       - name: Git Safety Pull
         run: |
           git config --global user.name "Zed Mogaka"
           git config --global user.email "bot@zandani.co.ke"
           git add .
-          git stash -u
+          git stash -u || true
           git fetch origin main
           git pull origin main --rebase
           git stash pop || echo "Nothing to pop"
