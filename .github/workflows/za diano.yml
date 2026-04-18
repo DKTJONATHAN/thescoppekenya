@@ -60,7 +60,7 @@ jobs:
             Pillow
           playwright install chromium --with-deps
 
-      - name: Scrape George Diano and publish article
+      - name: Scrape alternative viewer and publish article
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -69,7 +69,7 @@ jobs:
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
-          python << 'PYEOF'
+          python << 'EOF'
           import os, json, datetime, requests, re, time, sys, hashlib, itertools, base64, random, io
           from dateutil import parser as date_parser
           from google import genai
@@ -90,8 +90,6 @@ jobs:
           MIN_CHARS         = 500
 
           # ── Sheng & Diano-specific glossary for Gemini context ────────────
-          # This teaches the AI what Diano's slang/satire actually means
-          # so it translates intent correctly, not literally.
           DIANO_CONTEXT = """
           ABOUT @georgediano (George T. Diano):
           He is a popular Kenyan satirist, storyteller, and social media commentator.
@@ -120,11 +118,6 @@ jobs:
           - "That other side of ODM" = the militant/violent wing of a political party
           - "Eliminated" = killed / assassinated (used seriously in political context)
           - "True General" = sarcastic title, often mockery of a politician acting tough
-          - "Hype" used ironically = overhyped without substance
-          - "Ratiba" = schedule / timetable
-          - "Kuniambia" = telling me / implying
-          - "Never compete with her new chapter" = move on and focus on yourself (motivational)
-          - Posts starting with a single dramatic word like "Commander." or "Deep." are usually sarcastic setups
           - Short cryptic posts often reference a trending Kenyan news story — use Google Search to find the story he is referring to
           """
 
@@ -135,9 +128,6 @@ jobs:
               "it's worth noting", "a testament to", "navigating the landscape",
               "in today's digital age", "tapestry", "it is worth noting"
           ]
-
-          SITE_NAME = "Za Ndani"
-          AUTHOR    = "Zed Mogaka"
 
           # ── Image rehost as WebP ──────────────────────────────────────────
           def upload_to_imgbb(image_url):
@@ -154,106 +144,105 @@ jobs:
                   res = requests.post("https://api.imgbb.com/1/upload",
                                       data={"key": api_key, "image": b64}, timeout=20)
                   if res.status_code == 200:
-                      new_url = res.json()['data']['url']
-                      print(f"Re-hosted as WebP: {new_url}")
-                      return new_url
-                  print(f"ImgBB failed: {res.text}")
+                      return res.json()['data']['url']
                   return image_url
               except Exception as e:
                   print(f"ImgBB/WebP error: {e}")
                   return image_url
 
-          # ── Fetch George Diano's tweets via Playwright ───────────────────
+          # ── Fetch from Third-Party Viewers (NO X.COM) ──────────────────────
+          # Using Nitter instances and xcancel.com. They strictly order by newest
+          # first (fixing X's "old posts" issue) and have no login wall.
           def get_diano_tweets():
+              viewer_sites = [
+                  "https://xcancel.com",
+                  "https://nitter.poast.org",
+                  "https://nitter.privacydev.net"
+              ]
               tweets = []
-              print(f"Opening x.com/{TARGET_ACCOUNT}...")
               try:
                   with sync_playwright() as p:
                       browser = p.chromium.launch(
                           headless=True,
-                          args=["--no-sandbox", "--disable-dev-shm-usage",
-                                "--disable-blink-features=AutomationControlled",
-                                "--window-size=1920,1080"]
+                          args=["--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled"]
                       )
                       context = browser.new_context(
-                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
-                          viewport={"width": 1920, "height": 1080},
-                          locale="en-KE",
-                          timezone_id="Africa/Nairobi",
-                          extra_http_headers={
-                              "Accept-Language": "en-KE,en;q=0.9",
-                              "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                          }
+                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
                       )
                       page = context.new_page()
                       stealth_sync(page)
-                      page.goto(f"https://x.com/{TARGET_ACCOUNT}", timeout=60000, wait_until="networkidle")
-                      time.sleep(random.uniform(3, 6))
 
-                      # Scroll to load more tweets
-                      for _ in range(6):
-                          page.evaluate("window.scrollBy(0, 1800)")
-                          time.sleep(random.uniform(2, 4))
-
-                      soup = BeautifulSoup(page.content(), "html.parser")
-                      browser.close()
-
-                      # Extract tweet articles
-                      tweet_articles = soup.find_all("article", {"data-testid": "tweet"})
-                      print(f"Found {len(tweet_articles)} tweet elements")
-
-                      now_utc = datetime.datetime.now(datetime.timezone.utc)
-
-                      for article in tweet_articles:
+                      for site in viewer_sites:
+                          target_url = f"{site}/{TARGET_ACCOUNT}"
+                          print(f"Scraping viewer: {target_url} ...")
                           try:
-                              # Get tweet text
-                              text_div = article.find("div", {"data-testid": "tweetText"})
-                              if not text_div: continue
-                              text = text_div.get_text(separator=" ", strip=True)
-                              if len(text) < MIN_CHARS: continue
+                              page.goto(target_url, timeout=60000, wait_until="domcontentloaded")
+                              time.sleep(3)
+                              soup = BeautifulSoup(page.content(), "html.parser")
 
-                              # Get tweet link / ID
-                              tweet_link = ""
-                              tweet_id   = ""
-                              for a in article.find_all("a", href=True):
-                                  href = a["href"]
-                                  if re.match(r'/georgediano/status/\d+', href, re.I):
-                                      tweet_link = "https://x.com" + href
-                                      tweet_id   = re.search(r'/status/(\d+)', href).group(1)
-                                      break
+                              timeline_items = soup.find_all("div", class_="timeline-item")
+                              if not timeline_items:
+                                  print(f"  No items found on {site}, trying next...")
+                                  continue
 
-                              # Get timestamp
-                              time_el = article.find("time")
-                              pub_dt  = None
-                              if time_el and time_el.get("datetime"):
-                                  pub_dt = date_parser.parse(time_el["datetime"])
-                                  if pub_dt.tzinfo is None:
-                                      pub_dt = pub_dt.replace(tzinfo=datetime.timezone.utc)
-                                  age_hours = (now_utc - pub_dt).total_seconds() / 3600
-                                  if age_hours > MAX_AGE_HOURS:
-                                      print(f"  Skipping (too old: {age_hours:.1f}h): {text[:60]}...")
+                              now_utc = datetime.datetime.now(datetime.timezone.utc)
+
+                              for item in timeline_items:
+                                  # Skip Retweets, only scrape original posts
+                                  retweet_header = item.find("div", class_="retweet-header")
+                                  if retweet_header and "retweeted" in retweet_header.text.lower():
                                       continue
 
-                              # Get image from tweet (og image or embedded)
-                              img_url = ""
-                              img_el = article.find("img", {"alt": re.compile(r"image", re.I)})
-                              if not img_el:
-                                  img_el = article.find("img", src=re.compile(r"pbs.twimg.com/media"))
-                              if img_el:
-                                  img_url = img_el.get("src", "")
+                                  content_div = item.find("div", class_="tweet-content")
+                                  if not content_div: continue
+                                  text = content_div.get_text(separator=" ", strip=True)
 
-                              tweets.append({
-                                  "id":         tweet_id,
-                                  "text":       text,
-                                  "url":        tweet_link,
-                                  "published":  pub_dt.isoformat() if pub_dt else "",
-                                  "image":      img_url,
-                              })
-                              print(f"  ✓ {len(text)} chars — {text[:80]}...")
+                                  if len(text) < MIN_CHARS: continue
+
+                                  # Get link and ID
+                                  link_el = item.find("a", class_="tweet-link")
+                                  tweet_url = site + link_el["href"] if link_el else ""
+                                  tweet_id = tweet_url.split("/")[-1].replace("#m", "") if tweet_url else hashlib.md5(text.encode()).hexdigest()
+
+                                  # Get timestamp
+                                  date_el = item.find("span", class_="tweet-date")
+                                  pub_dt = None
+                                  if date_el and date_el.find("a"):
+                                      title_str = date_el.find("a").get("title", "")
+                                      try:
+                                          pub_dt = date_parser.parse(title_str)
+                                          if pub_dt.tzinfo is None:
+                                              pub_dt = pub_dt.replace(tzinfo=datetime.timezone.utc)
+                                      except: pass
+
+                                  if pub_dt:
+                                      age_hours = (now_utc - pub_dt).total_seconds() / 3600
+                                      if age_hours > MAX_AGE_HOURS:
+                                          print(f"  Skipping (too old: {age_hours:.1f}h)")
+                                          continue
+
+                                  # Get Image
+                                  img_url = ""
+                                  img_el = item.find("a", class_="still-image")
+                                  if img_el and img_el.get("href"):
+                                      img_url = site + img_el["href"]
+
+                                  tweets.append({
+                                      "id":         tweet_id,
+                                      "text":       text,
+                                      "url":        tweet_url,
+                                      "published":  pub_dt.isoformat() if pub_dt else "",
+                                      "image":      img_url,
+                                  })
+                                  print(f"  ✓ {len(text)} chars — {text[:80]}...")
+
+                              if tweets:
+                                  print(f"Successfully scraped {len(tweets)} valid posts from {site}")
+                                  break
                           except Exception as e:
-                              print(f"  Tweet parse error: {e}")
-                              continue
+                              print(f"  Viewer error on {site}: {e}")
 
+                      browser.close()
               except Exception as e:
                   print(f"Playwright error: {e}")
 
@@ -289,7 +278,6 @@ jobs:
                       except Exception as e:
                           if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower():
                               wait = random.uniform(20, 40)
-                              print(f"  Rate limit on {model}, waiting {wait:.0f}s...")
                               time.sleep(wait)
                               current_key = next(key_cycle)
                               client      = genai.Client(api_key=current_key)
@@ -308,12 +296,13 @@ jobs:
                   try:
                       with open(os.path.join(posts_dir, fn), "r", encoding="utf-8") as f:
                           content = f.read()
-                      title_m = re.search(r'title:\s*"(.*?)"', content)
-                      slug_m  = re.search(r'slug:\s*"(.*?)"', content)
+                      title_m = re.search(r'title:s*"(.*?)"', content)
+                      slug_m  = re.search(r'slug:s*"(.*?)"', content)
                       if title_m and slug_m:
                           links.append(f'- [{title_m.group(1)}]({SITE_BASE_URL}/article/{slug_m.group(1)})')
                   except: pass
-              return "\n".join(links) if links else ""
+              return "
+".join(links) if links else ""
 
           # ── Load memory ───────────────────────────────────────────────────
           memory_path = os.environ.get("MEMORY_FILE", ".github/memory_georgediano.json")
@@ -322,82 +311,96 @@ jobs:
           # ── Fetch tweets ──────────────────────────────────────────────────
           tweets = get_diano_tweets()
           if not tweets:
-              print("No qualifying tweets found (500+ chars, within 24h).")
+              print("No qualifying tweets found.")
               sys.exit(0)
 
           # ── Pick first unseen tweet ───────────────────────────────────────
           chosen = None
           for tweet in tweets:
-              tid = tweet["id"] or hashlib.md5(tweet["text"].encode()).hexdigest()
-              if tid not in memory:
+              if tweet["id"] not in memory:
                   chosen = tweet
-                  chosen["_hash"] = tid
                   break
 
           if not chosen:
               print("All qualifying tweets already published.")
               sys.exit(0)
 
-          print(f"\nChosen tweet ({len(chosen['text'])} chars):")
+          print(f"
+Chosen tweet ({len(chosen['text'])} chars):")
           print(chosen["text"][:200])
 
           # ── Step 1: Interpret the tweet ───────────────────────────────────
-          # Ask Gemini to first understand what Diano is ACTUALLY saying
-          # before writing the article — critical for satire/sheng posts
           interpret_prompt = (
-              DIANO_CONTEXT + "\n\n"
-              "DIANO'S TWEET:\n" + chosen["text"] + "\n\n"
-              "TASK: Interpret this tweet carefully.\n"
-              "1. Is this tweet SATIRICAL or LITERAL? (answer: satirical / literal / mixed)\n"
-              "2. What is the ACTUAL story or event Diano is referring to?\n"
-              "3. What is the core message or point he is making?\n"
-              "4. Are there any Sheng words or Kenyan slang that need translation?\n"
-              "5. Search Google for the actual news story this tweet references if needed.\n"
-              "Output ONLY JSON: {\n"
-              '"tone": "satirical|literal|mixed",\n'
-              '"actual_story": "The real event or story being referenced",\n'
-              '"core_message": "What Diano is actually saying",\n'
-              '"slang_translations": {"word": "meaning"},\n'
-              '"write_as": "gossip|commentary|news|motivational"\n'
+              DIANO_CONTEXT + "
+
+"
+              "DIANO'S POST:
+" + chosen["text"] + "
+
+"
+              "TASK: This post is heavily stylistic. Before writing an article, analyze it.
+"
+              "1. Is this tweet SATIRICAL, SLANG-HEAVY, or a STRAIGHT OBSERVATION? (answer: satirical / slang / literal)
+"
+              "2. Search Google for the ACTUAL TRENDING KENYAN STORY he is referencing.
+"
+              "3. What is the true event? (Summarize it plainly)
+"
+              "4. What is Diano's core commentary or joke about this event?
+"
+              "Output ONLY JSON: {
+"
+              '"tone_identified": "satirical|slang|literal",
+'
+              '"true_story": "The actual trending event",
+'
+              '"diano_commentary": "What he is pointing out"
+'
               "}"
           )
           interpret_text = gemini_generate(interpret_prompt, "interpret", use_search=True)
           interpretation = {}
           if interpret_text:
               try:
-                  clean = re.sub(r"^```json?\n?|```$", "", interpret_text, flags=re.I|re.DOTALL).strip()
+                  clean = re.sub(r"^```json?
+?|```$", "", interpret_text, flags=re.I|re.DOTALL).strip()
                   interpretation = json.loads(clean)
                   print(f"Interpretation: {interpretation}")
               except Exception as e:
-                  print(f"Interpret parse error: {e} — proceeding with raw tweet")
+                  print(f"Interpret parse error: {e}")
 
           current_key = next(key_cycle)
           client      = genai.Client(api_key=current_key)
           time.sleep(5)
 
           # ── Step 2: Generate headline ─────────────────────────────────────
-          actual_story = interpretation.get("actual_story", chosen["text"][:500])
-          write_as     = interpretation.get("write_as", "gossip")
-          core_message = interpretation.get("core_message", "")
+          true_story = interpretation.get("true_story", chosen["text"][:500])
+          commentary = interpretation.get("diano_commentary", "")
 
           title_prompt = (
-              "DIANO'S ORIGINAL TWEET:\n" + chosen["text"] + "\n\n"
-              "ACTUAL STORY BEHIND IT: " + actual_story + "\n"
-              "CORE MESSAGE: " + core_message + "\n\n"
-              "Write a single punchy headline for a Kenyan gossip/entertainment article about this story.\n"
-              "Style: bold, intriguing, Kenyan pop culture tone. No clickbait questions. No brackets.\n"
-              "Do NOT mention George Diano or Twitter/X in the headline.\n"
-              "The headline should reflect the REAL story, not a literal reading of a satirical tweet.\n"
-              "Output ONLY JSON: {\"final_title\": \"Your Headline Here\"}"
+              "TRUE TRENDING STORY: " + true_story + "
+"
+              "POST COMMENTARY: " + commentary + "
+
+"
+              "Write a single punchy headline for a Kenyan gossip/entertainment article about this trending story.
+"
+              "Style: bold, intriguing, Kenyan pop culture tone. No clickbait questions. No brackets.
+"
+              "The headline must reflect the REAL story. DO NOT mention George Diano or Twitter/X in the headline.
+"
+              "Output ONLY JSON: {"final_title": "Your Headline Here"}"
           )
           title_text  = gemini_generate(title_prompt, "title")
-          final_title = chosen["text"][:80].split("\n")[0]
+          final_title = chosen["text"][:80].split("
+")[0]
           if title_text:
               try:
-                  clean       = re.sub(r"^```json?\n?|```$", "", title_text, flags=re.I|re.DOTALL).strip()
+                  clean       = re.sub(r"^```json?
+?|```$", "", title_text, flags=re.I|re.DOTALL).strip()
                   final_title = json.loads(clean).get("final_title", final_title)
               except Exception as e:
-                  print(f"Title parse error: {e}")
+                  pass
 
           current_key = next(key_cycle)
           client      = genai.Client(api_key=current_key)
@@ -406,47 +409,69 @@ jobs:
           # ── Step 3: Write the article ─────────────────────────────────────
           internal_links = get_internal_links()
           banned_str     = ", ".join(BANNED_PHRASES)
-          tone_note = {
-              "satirical":    "This tweet was SATIRICAL. Write the article about the real underlying story Diano was mocking or commenting on. Do NOT present satire as fact.",
-              "literal":      "This tweet was a direct observation. Write it as a straight gossip news story.",
-              "mixed":        "This tweet mixed satire with real commentary. Capture both the wit and the real story.",
-              "motivational": "This tweet was motivational/personal. Write it as a lifestyle/inspirational piece.",
-          }.get(interpretation.get("tone",""), "Write as a gossip/commentary article.")
 
           article_prompt = (
-              "Current Date: " + full_date_str + ". Current year: " + current_year + ".\n\n"
-              + DIANO_CONTEXT + "\n\n"
-              "DIANO'S ORIGINAL TWEET:\n" + chosen["text"] + "\n\n"
-              "ACTUAL STORY: " + actual_story + "\n"
-              "CORE MESSAGE: " + core_message + "\n"
-              "TONE NOTE: " + tone_note + "\n\n"
-              "ARTICLE TITLE: " + final_title + "\n"
-              "INTERNAL LINKS (weave in 1-2 naturally):\n" + internal_links + "\n\n"
-              "TASK: Write a full Kenyan entertainment/gossip article for Za Ndani.\n"
-              "Author is Zed Mogaka — witty, sharp, insider-feeling voice.\n"
-              "The article should tell the REAL story behind Diano's tweet in a compelling, entertaining way.\n"
-              "Write in third-person news style. No self-referencing as the author in the body.\n"
-              "NO Sheng in the article itself — translate all slang to clear vivid English.\n"
-              "No em-dashes. Single hyphens only. No title/byline/date in body.\n"
-              "All date references must be " + current_year + ".\n\n"
-              "STRUCTURE:\n"
-              "1. A 35-45 word lede paragraph (no heading above it) — answers who/what/when/where immediately.\n"
-              "2. ## H2 subheading with primary keyword.\n"
-              "3. 3-4 supporting paragraphs with ### subheadings.\n"
-              "4. A sharp closing line that captures the Kenyan street reaction or irony.\n\n"
-              "BANNED PHRASES (never use): " + banned_str + "\n"
-              "CRITICAL: NEVER mention George Diano as the source. NEVER mention Twitter/X as source.\n"
-              "Write as if Za Ndani reporters gathered this story independently.\n"
-              "Do NOT attribute quotes to Diano by name.\n"
+              "Current Date: " + full_date_str + ". Current year: " + current_year + ".
+
+"
+              + DIANO_CONTEXT + "
+
+"
+              "TRENDING STORY TO COVER: " + true_story + "
+"
+              "INSIDER COMMENTARY TO INCLUDE: " + commentary + "
+"
+              "ARTICLE TITLE: " + final_title + "
+"
+              "INTERNAL LINKS (weave in 1-2 naturally):
+" + internal_links + "
+
+"
+              "TASK: Write a full Kenyan entertainment/gossip article for Za Ndani.
+"
+              "Author is Zed Mogaka — his voice is witty, sharp, and feels like an insider dropping the real gist.
+"
+              "The article should tell the REAL story based on the trending topic.
+"
+              "Write in third-person news style. No self-referencing as the author.
+"
+              "Translate any Sheng/slang into clear vivid English so all readers understand.
+"
+              "No em-dashes. Single hyphens only. No title/byline/date in body.
+"
+              "All date references must be " + current_year + ".
+
+"
+              "STRUCTURE:
+"
+              "1. A 35-45 word lede paragraph (no heading above it) — answers who/what/when/where immediately.
+"
+              "2. ## H2 subheading with primary keyword.
+"
+              "3. 3-4 supporting paragraphs with ### subheadings.
+"
+              "4. A sharp closing line that captures the Kenyan street reaction.
+
+"
+              "BANNED PHRASES (never use): " + banned_str + "
+"
+              "CRITICAL: NEVER mention George Diano as the source. NEVER mention Twitter/X/social media.
+"
+              "Write as if Zed Mogaka and Za Ndani gathered this story directly.
+"
+              "Do NOT attribute quotes to Diano by name.
+"
               "Make it entertaining, vivid, and unmistakably Kenyan in flavour."
           )
           article_text = gemini_generate(article_prompt, "article", use_search=True)
           if not article_text:
-              print("Article generation failed"); sys.exit(1)
+              sys.exit(1)
 
-          article_text = re.sub(r"^```(?:markdown)?\n?", "", article_text).rstrip("```").strip()
-          article_text = re.sub(r"^(Title|By|Author|Date):.*?\n", "", article_text, flags=re.I|re.M)
-          article_text = article_text.replace("\u2014", "-").replace("\u2013", "-")
+          article_text = re.sub(r"^```(?:markdown)?
+?", "", article_text).rstrip("```").strip()
+          article_text = re.sub(r"^(Title|By|Author|Date):.*?
+", "", article_text, flags=re.I|re.M)
+          article_text = article_text.replace("—", "-").replace("–", "-")
 
           current_key = next(key_cycle)
           client      = genai.Client(api_key=current_key)
@@ -454,39 +479,47 @@ jobs:
 
           # ── Step 4: Meta description ──────────────────────────────────────
           desc_prompt = (
-              "Write a single meta description (140-155 characters) for this article.\n"
-              "Title: " + final_title + "\n"
-              "Snippet: " + article_text[:600] + "\n"
-              "Rules: factual, no clickbait, starts with subject or verb, includes key news fact.\n"
-              "Output ONLY JSON: {\"description\": \"Your description here\"}"
+              "Write a single meta description (140-155 characters) for this article.
+"
+              "Title: " + final_title + "
+"
+              "Snippet: " + article_text[:600] + "
+"
+              "Rules: factual, no clickbait, starts with subject or verb, includes key news fact.
+"
+              "Output ONLY JSON: {"description": "Your description here"}"
           )
           desc_text        = gemini_generate(desc_prompt, "description")
           meta_description = ""
           if desc_text:
               try:
-                  clean            = re.sub(r"^```json?\n?|```$", "", desc_text, flags=re.I|re.DOTALL).strip()
+                  clean            = re.sub(r"^```json?
+?|```$", "", desc_text, flags=re.I|re.DOTALL).strip()
                   meta_description = json.loads(clean).get("description", "")[:160].replace('"', "'")
               except Exception as e:
-                  print(f"Desc parse error: {e}")
+                  pass
 
           time.sleep(3)
 
           # ── Step 5: Tags ──────────────────────────────────────────────────
           tags_prompt = (
-              "Generate 4-5 relevant SEO tags for this Kenyan entertainment article.\n"
-              "Title: " + final_title + "\n"
-              "Rules: lowercase, hyphenated multi-word, topically specific. "
-              "No generic tags like 'news', 'kenya', 'entertainment'.\n"
-              "Output ONLY JSON: {\"tags\": [\"tag-one\", \"tag-two\", \"tag-three\", \"tag-four\"]}"
+              "Generate 4-5 relevant SEO tags for this Kenyan entertainment article.
+"
+              "Title: " + final_title + "
+"
+              "Rules: lowercase, hyphenated multi-word. No generic tags like 'news', 'kenya'.
+"
+              "Output ONLY JSON: {"tags": ["tag-one", "tag-two", "tag-three"]}"
           )
           tags_text    = gemini_generate(tags_prompt, "tags")
           article_tags = []
           if tags_text:
               try:
-                  clean        = re.sub(r"^```json?\n?|```$", "", tags_text, flags=re.I|re.DOTALL).strip()
+                  clean        = re.sub(r"^```json?
+?|```$", "", tags_text, flags=re.I|re.DOTALL).strip()
                   article_tags = [str(t).lower().replace(' ', '-') for t in json.loads(clean).get("tags", [])[:5]]
               except Exception as e:
-                  print(f"Tags parse error: {e}")
+                  pass
 
           # ── Step 6: Save file ─────────────────────────────────────────────
           final_image = upload_to_imgbb(chosen["image"]) if chosen.get("image") else ""
@@ -515,18 +548,17 @@ jobs:
           ]
           filepath = os.path.join(posts_dir, today_str + "-" + slug + ".md")
           with open(filepath, "w", encoding="utf-8") as f:
-              f.write("\n".join(lines))
+              f.write("
+".join(lines))
 
-          memory.append(chosen["_hash"])
+          memory.append(chosen["id"])
           os.makedirs(os.path.dirname(memory_path), exist_ok=True)
           with open(memory_path, "w") as f:
               json.dump(memory[-500:], f)
 
-          print(f"\n✅ Saved: {filepath}")
-          print(f"   Title     : {final_title}")
-          print(f"   Canonical : {canonical}")
-          print(f"   Tags      : {article_tags}")
-          PYEOF
+          print(f"
+✅ Saved: {filepath}")
+          EOF
 
       - name: Git Safety Pull
         run: |
