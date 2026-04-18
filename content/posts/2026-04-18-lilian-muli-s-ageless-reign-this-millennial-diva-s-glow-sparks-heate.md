@@ -4,7 +4,7 @@ slug: "lilian-muli-s-ageless-reign-this-millennial-diva-s-glow-sparks-heate"
 description: "Lilian Muli's youthful glow and body transformation ignite online discussion comparing her ageless look to Gen Z's perceived fast track aging."
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: "https://media/HGL2vmKWUAENwXf.jpg"
+image: "https://pbs.twimg.com/media/HGL2vmKWUAENwXf.jpg?name=orig"
 category: "Entertainment"
 tags: ["lilian-muli", "millennial-aging-debate", "gen-z-aging-concerns", "celebrity-youthful-appearance", "kenyan-media-personality"]
 canonical: "https://zandani.co.ke/article/lilian-muli-s-ageless-reign-this-millennial-diva-s-glow-sparks-heate"
