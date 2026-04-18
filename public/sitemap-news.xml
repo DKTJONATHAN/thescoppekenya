@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/kitutu-central-police-commander-kazungu-charo-dies-after-long-illnes</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-18T09:00:00.000Z</news:publication_date>
+      <news:title>Kitutu Central Police Commander Kazungu Charo dies after long illness</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/anne-hathaway-and-michaela-coel-report-supernatural-experiences-on-t</loc>
     <news:news>
       <news:publication>
@@ -421,18 +433,6 @@
       </news:publication>
       <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
       <news:title>Safaricom apologizes for technical issues following My OneApp rollout</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/mikel-arteta-emphasizes-his-resolve-following-arsenal-loss-to-bourne</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
-      <news:title>Mikel Arteta emphasizes his resolve following Arsenal loss to Bournemouth</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
