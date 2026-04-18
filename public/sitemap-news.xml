@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/kenya-s-gold-rush-besties-become-rivals-in-the-hunt-for-rich-mzees</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-18T09:00:00.000Z</news:publication_date>
+      <news:title>Kenya's Gold Rush: Besties Become Rivals in the Hunt for Rich Mzees</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/samsung-s26-ai-kenya-demands-more-than-fancy-tricks</loc>
     <news:news>
       <news:publication>
@@ -565,18 +577,6 @@
       </news:publication>
       <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
       <news:title>London-based Afrobeats artist Sucrepapito releases new single Homebase</news:title>
-      <news:genres>Entertainment,Music</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/savara-savage-level-anniversary-2026-lie</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
-      <news:title>Savara's 'Savage Level' Anniversary 2026 Lie</news:title>
       <news:genres>Entertainment,Music</news:genres>
     </news:news>
   </url>
