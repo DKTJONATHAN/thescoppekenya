@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/tottenham-target-karl-darlow-andrew-robertson-and-marcos-senesi-for-</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-18T09:00:00.000Z</news:publication_date>
+      <news:title>Tottenham target Karl Darlow, Andrew Robertson, and Marcos Senesi for free transfers</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kuccps-clarifies-university-placement-criteria-and-role-of-cut-off-p</loc>
     <news:news>
       <news:publication>
@@ -542,18 +554,6 @@
       <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
       <news:title>Savara's 'Savage Level' Anniversary 2026 Lie</news:title>
       <news:genres>Entertainment,Music</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/tsc-begins-nationwide-teacher-transfers-to-address-staffing-imbalanc</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
-      <news:title>TSC begins nationwide teacher transfers to address staffing imbalances</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
 </urlset>
