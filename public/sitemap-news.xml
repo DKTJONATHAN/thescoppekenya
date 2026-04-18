@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/samsung-s26-ultra-price-kenya-more-sham-than-shine</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-18T09:00:00.000Z</news:publication_date>
+      <news:title>Samsung S26 Ultra Price Kenya: More Sham Than Shine</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/diaspora-remittances-reach-ksh58-billion-following-monthly-increase</loc>
     <news:news>
       <news:publication>
@@ -385,30 +397,6 @@
       </news:publication>
       <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
       <news:title>Mikel Arteta emphasizes his resolve following Arsenal loss to Bournemouth</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-meteorological-department-warns-of-heavy-rain-and-potential-fl</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
-      <news:title>Kenya Meteorological Department warns of heavy rain and potential flooding</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/scheduled-power-maintenance-to-affect-parts-of-nairobi-kiambu-and-mo</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
-      <news:title>Scheduled power maintenance to affect parts of Nairobi, Kiambu and Mombasa</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
