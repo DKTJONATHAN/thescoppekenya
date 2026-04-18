@@ -33,16 +33,19 @@ function proxyImg(url: string, w = 1200): string {
   return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${w}&output=webp&q=85&we`;
 }
 
-// ─── OG IMAGE (absolute URL, forced 1200×630, for social/SEO use only) ───────
+// ─── OG IMAGE (absolute URL, for social/SEO use only) ────────────────────────
+// IMPORTANT: Social crawlers (Facebook, Twitter) cannot reliably follow
+// wsrv.nl proxy URLs — they may be rate-limited or bot-blocked.
+// We return the original direct image URL so crawlers always reach the image.
 const SITE_URL = "https://zandani.co.ke";
-const DEFAULT_OG_IMAGE = `${SITE_URL}/images/default-og.jpg`; // 1200×630 fallback
+const DEFAULT_OG_IMAGE = `${SITE_URL}/images/default-og.jpg`; // fallback
 
 function ogImg(url: string): string {
   if (!url) return DEFAULT_OG_IMAGE;
-  // Local/relative image — make absolute
+  // Local/relative image — make absolute with site domain
   if (url.startsWith("/")) return `${SITE_URL}${url}`;
-  // External (imgbb / postimages) — proxy to enforce 1200×630 + WebP
-  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=1200&h=630&fit=cover&output=webp&q=85`;
+  // External image — return the direct URL (no proxy) so crawlers can access it
+  return url;
 }
 
 // ─── WORD COUNT (accurate: strips HTML tags first) ───────────────────────────

@@ -58,10 +58,18 @@ files.forEach(file => {
   title = title.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   desc = desc.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
+  // Keep the raw image URL for OG/Twitter — social crawlers (FB, Twitter) cannot
+  // reliably follow wsrv.nl proxy URLs (rate-limits / bot-agent blocks).
+  // We store the original URL separately for use in meta tags.
+  let ogImage = image; // original, crawler-safe URL
+
   if (image.startsWith('/')) {
-    image = `https://zandani.co.ke${image}`;
+    ogImage = `https://zandani.co.ke${image}`;
+    image = ogImage;
   } else if (image && image !== 'https://zandani.co.ke/images/default-og.jpg') {
-    image = `https://wsrv.nl/?url=${encodeURIComponent(image.replace(/^https?:\/\//, ''))}&w=1200&h=630&fit=cover&output=webp&q=85`;
+    // ogImage stays as the original direct URL (no proxy)
+    // We'll still proxy for rendered <img> use-cases via ArticlePage.tsx
+    ogImage = image; // direct URL for social crawlers
   }
 
   // Extract date for article timestamps
@@ -86,6 +94,12 @@ files.forEach(file => {
   const authorMatch = content.match(/^author:\s*(.+)$/im);
   const author = authorMatch ? authorMatch[1].trim().replace(/^["']|["']$/g, '').trim() : 'Za Ndani';
 
+  // Detect og:image:type from URL extension (default jpeg if unknown)
+  const ogImageType = /\.png(\?|$)/i.test(ogImage) ? 'image/png'
+    : /\.gif(\?|$)/i.test(ogImage) ? 'image/gif'
+    : /\.webp(\?|$)/i.test(ogImage) ? 'image/webp'
+    : 'image/jpeg';
+
   const metaTags = `
     <title>${title} | Za Ndani</title>
     <meta name="description" content="${desc}">
@@ -95,7 +109,12 @@ files.forEach(file => {
     <meta name="googlebot-news" content="index, follow">
     <meta property="og:title" content="${title}">
     <meta property="og:description" content="${desc}">
-    <meta property="og:image" content="${image}">
+    <meta property="og:image" content="${ogImage}">
+    <meta property="og:image:secure_url" content="${ogImage}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="${title}">
+    <meta property="og:image:type" content="${ogImageType}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://zandani.co.ke/article/${slug}">
     <meta property="og:site_name" content="Za Ndani">
@@ -107,9 +126,11 @@ files.forEach(file => {
     <meta property="article:publisher" content="https://www.facebook.com/zandani">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@zandanikenya">
+    <meta name="twitter:creator" content="@zandanikenya">
     <meta name="twitter:title" content="${title}">
     <meta name="twitter:description" content="${desc}">
-    <meta name="twitter:image" content="${image}">
+    <meta name="twitter:image" content="${ogImage}">
+    <meta name="twitter:image:alt" content="${title}">
     <link rel="canonical" href="https://zandani.co.ke/article/${slug}">
     <script type="application/ld+json">
     ${JSON.stringify({
@@ -117,7 +138,7 @@ files.forEach(file => {
       "@type": "NewsArticle",
       "headline": title.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"'),
       "description": desc.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"'),
-      "image": [image],
+      "image": [ogImage],
       "datePublished": isoDate,
       "dateModified": isoDate,
       "author": { "@type": "Person", "name": author },
