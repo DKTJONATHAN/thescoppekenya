@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/kenya-records-16-centi-millionaires-as-private-wealth-grows-by-14-pe</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-18T09:00:00.000Z</news:publication_date>
+      <news:title>Kenya records 16 centi-millionaires as private wealth grows by 14 percent</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/energy-cs-wandayi-says-government-interventions-prevented-fuel-price</loc>
     <news:news>
       <news:publication>
@@ -553,30 +565,6 @@
       </news:publication>
       <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
       <news:title>KUCCPS directs candidates who missed university placement to apply via email</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/fifa-announces-first-halftime-show-for-world-cup-final-curated-by-ch</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
-      <news:title>FIFA announces first halftime show for World Cup final curated by Chris Martin</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/safaricom-apologizes-for-technical-issues-following-my-oneapp-rollou</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
-      <news:title>Safaricom apologizes for technical issues following My OneApp rollout</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
