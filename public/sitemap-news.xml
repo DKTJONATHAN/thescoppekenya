@@ -5,6 +5,30 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/diaspora-remittances-reach-ksh58-billion-following-monthly-increase</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-18T09:00:00.000Z</news:publication_date>
+      <news:title>Diaspora Remittances Reach Ksh58 Billion Following Monthly Increase</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/the-sh100-scent-taking-over-nairobi-streets-why-everyone-smells-exactl</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-18T09:00:00.000Z</news:publication_date>
+      <news:title>The Sh100 Scent Taking Over Nairobi Streets: Why Everyone Smells Exactly The Same Right Now</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kisii-county-invests-in-market-and-road-infrastructure-to-improve-lo</loc>
     <news:news>
       <news:publication>
@@ -385,18 +409,6 @@
       </news:publication>
       <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
       <news:title>Scheduled power maintenance to affect parts of Nairobi, Kiambu and Mombasa</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/matatu-operators-decline-immediate-fare-cuts-despite-fuel-price-redu</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-16T09:00:00.000Z</news:publication_date>
-      <news:title>Matatu operators decline immediate fare cuts despite fuel price reduction</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
