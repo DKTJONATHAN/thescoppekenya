@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/egypt-and-kenya-expand-diplomatic-and-economic-cooperation</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
+      <news:title>Egypt and Kenya expand diplomatic and economic cooperation</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/man-city-vs-arsenal-live-premier-league-title-race-blown-wide-open-i</loc>
     <news:news>
       <news:publication>
@@ -649,54 +661,6 @@
       </news:publication>
       <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
       <news:title>President Ruto signs law reducing fuel VAT to eight percent</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/wahu-and-nameless-reveal-media-agreement-used-to-keep-wedding-privat</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
-      <news:title>Wahu and Nameless reveal media agreement used to keep wedding private</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/interior-ministry-orders-release-of-188-impounded-motorbikes-in-kili</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
-      <news:title>Interior Ministry orders release of 188 impounded motorbikes in Kilifi</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/senator-allan-chesang-says-president-william-ruto-advised-him-to-pri</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
-      <news:title>Senator Allan Chesang says President William Ruto advised him to prioritize family and have many children</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/end-of-the-saudi-spending-spree-pif-review-sparks-shockwaves-for-new</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
-      <news:title>End of the Saudi Spending Spree? PIF Review Sparks Shockwaves for Newcastle and LIV Golf</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
