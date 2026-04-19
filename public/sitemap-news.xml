@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/katy-perry-faces-public-scrutiny-following-several-career-controvers</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
+      <news:title>Katy Perry faces public scrutiny following several career controversies</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/rigathi-gachagua-warns-aden-duale-over-criticism-of-former-president</loc>
     <news:news>
       <news:publication>
@@ -661,18 +673,6 @@
       </news:publication>
       <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
       <news:title>IG Kanja orders police to obey Constitution and warns public against attacking stations</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/knec-directs-parents-to-verify-national-examination-registration-via</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
-      <news:title>KNEC directs parents to verify national examination registration via SMS</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
