@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/emmanuel-petit-criticizes-kylian-mbappe-following-real-madrid-exit-f</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
+      <news:title>Emmanuel Petit criticizes Kylian Mbappe following Real Madrid exit from Champions League</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/egypt-and-kenya-expand-diplomatic-and-economic-cooperation</loc>
     <news:news>
       <news:publication>
@@ -625,30 +637,6 @@
       </news:publication>
       <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
       <news:title>Khaligraph Jones announces construction of new business headquarters in Ruaka</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/odumodublvck-denies-involvement-in-the-removal-of-blaqbonez-track-fr</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
-      <news:title>Odumodublvck denies involvement in the removal of Blaqbonez track from streaming platforms</news:title>
-      <news:genres>Entertainment,Music</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kuccps-to-hold-webinar-to-guide-students-on-university-and-college-a</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
-      <news:title>KUCCPS to hold webinar to guide students on university and college applications</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
