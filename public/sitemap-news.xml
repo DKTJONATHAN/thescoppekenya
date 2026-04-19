@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/president-ruto-to-visit-italy-to-strengthen-trade-and-investment-par</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
+      <news:title>President Ruto to visit Italy to strengthen trade and investment partnerships</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/former-tusker-defender-gabriel-wandera-killed-in-hit-and-run-acciden</loc>
     <news:news>
       <news:publication>
@@ -589,30 +601,6 @@
       </news:publication>
       <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
       <news:title>Tipsy Gee and Vera Sidika share identical rooftop views from Bangkok trip</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/mp-introduces-bill-to-regulate-police-detention-of-motor-vehicles</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
-      <news:title>MP Introduces Bill to Regulate Police Detention of Motor Vehicles</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/johnny-depp-introduces-first-footage-of-ebenezer-a-christmas-carol-a</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
-      <news:title>Johnny Depp introduces first footage of Ebenezer: A Christmas Carol at CinemaCon</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
