@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/tsc-denies-reports-of-teacher-salary-delays-following-kewota-controv</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
+      <news:title>TSC Denies Reports of Teacher Salary Delays Following KEWOTA Controversy</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/ruto-attributes-higher-fuel-prices-to-infrastructure-investment-and-</loc>
     <news:news>
       <news:publication>
@@ -613,30 +625,6 @@
       </news:publication>
       <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
       <news:title>KNEC directs parents to verify national examination registration via SMS</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/octopizzo-criticizes-government-over-rising-fuel-prices</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
-      <news:title>Octopizzo criticizes government over rising fuel prices</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/tipsy-gee-and-vera-sidika-share-identical-rooftop-views-from-bangkok</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
-      <news:title>Tipsy Gee and Vera Sidika share identical rooftop views from Bangkok trip</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
