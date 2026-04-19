@@ -1,7 +1,7 @@
 name: Zed Mogaka - George Diano Stories
 on:
   schedule:
-    - cron: '0 6,18 * * *'
+    - cron: '0 0,6,12,18 * * *'
   workflow_dispatch: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -64,28 +64,11 @@ jobs:
           DIANO_CONTEXT = (
               "ABOUT @georgediano (George T. Diano):\n"
               "He is a popular Kenyan satirist, storyteller, and social media commentator.\n"
-              "His bio: 'for Satire & Peasants || Story teller || Inspired by Wahome Mutah.'\n"
               "He writes in a witty, sarcastic style mixing English and Kenyan expressions.\n"
               "He covers Kenyan politics, celebrity gossip, social commentary, and trending stories.\n"
               "His posts are often satirical - he says the opposite of what he means to make a point.\n\n"
               "CRITICAL RULE: When his post is SATIRE, do NOT report it as fact.\n"
-              "Capture the satirical observation and write the story around the underlying truth.\n\n"
-              "KENYAN EXPRESSION GLOSSARY (translate correctly into clear English):\n"
-              "- 'Buana' = 'Man' / 'Honestly' (expression of emphasis)\n"
-              "- 'Hoi polloi' = ordinary Kenyans / the masses (used ironically)\n"
-              "- 'Nikama' = 'It is like' / 'It seems like'\n"
-              "- 'Peasants' = his ironic name for his followers (not an insult)\n"
-              "- 'Watu wetu' = 'Our people' (ironic when pointing out hypocrisy)\n"
-              "- 'Kuosha' = to expose / to humiliate someone publicly\n"
-              "- 'Kulipa fare' = to face consequences / to pay the price\n"
-              "- 'Goon' = thug / political enforcer / hired muscle\n"
-              "- 'Commander' / 'General' = sarcastic praise for politicians he is mocking\n"
-              "- 'Deep. Very deep.' = sarcastic response to something absurd or obvious\n"
-              "- 'From the pocket straight to the pan' = going from bad to worse\n"
-              "- 'Eating depression raw' = suffering silently without help\n"
-              "- 'That other side of ODM' = the militant wing of a political party\n"
-              "- 'Eliminated' = killed / assassinated (used seriously in political context)\n"
-              "- 'True General' = sarcastic title, often mockery of a politician acting tough\n"
+              "Capture the satirical observation and write the story around the underlying truth.\n"
               "Short cryptic posts often reference a trending Kenyan news story - "
               "use Google Search to find the story he is referring to.\n"
           )
@@ -103,7 +86,6 @@ jobs:
               if not api_key or not image_url:
                   return image_url
 
-              # --- 1. FIXED IMAGE PATH RESOLUTION ---
               if image_url.startswith("https://media/"):
                   image_url = image_url.replace("https://media/", "https://pbs.twimg.com/media/")
               elif image_url.startswith("media/"):
@@ -111,7 +93,6 @@ jobs:
               elif image_url.startswith("/pic/"):
                   import urllib.parse
                   image_url = "https://pbs.twimg.com/" + urllib.parse.unquote(image_url).replace("/pic/", "", 1)
-              # --------------------------------------
 
               try:
                   img_data = requests.get(image_url, timeout=15).content
@@ -144,7 +125,7 @@ jobs:
           ]
 
           def parse_tweet_entries(items, source_label):
-              """Normalize syndication-style tweet objects into our standard list."""
+              \"\"\"Normalize syndication-style tweet objects into our standard list.\"\"\"
               tweets = []
               now_utc = datetime.datetime.now(datetime.timezone.utc)
               for item in items:
@@ -224,7 +205,7 @@ jobs:
                   return []
 
           def get_nitter_tweets():
-              """Try each Nitter instance, return tweets from the first one that responds with usable RSS."""
+              \"\"\"Try each Nitter instance, return tweets from the first one that responds with usable RSS.\"\"\"
               headers = {
                   'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
                   'Accept': 'application/rss+xml, application/xml, text/xml, */*'
@@ -279,9 +260,7 @@ jobs:
                               if "/pic/" in img_url:
                                   m = re.search(r'/pic/(.+)$', img_url)
                                   if m:
-                                      # --- 2. FIXED IMAGE PATH RESOLUTION ---
                                       img_url = "https://pbs.twimg.com/" + requests.utils.unquote(m.group(1))
-                                      # --------------------------------------
 
                           synthetic_entries.append({
                               "tweet": {
