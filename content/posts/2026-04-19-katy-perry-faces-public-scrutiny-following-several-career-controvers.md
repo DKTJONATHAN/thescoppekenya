@@ -1,0 +1,41 @@
+---
+title: "Katy Perry faces public scrutiny following several career controversies"
+slug: "katy-perry-faces-public-scrutiny-following-several-career-controvers"
+author: "Mutheu Ann"
+image: "https://i.ibb.co/tpWggvSK/433c4743bf85.jpg"
+category: "Entertainment"
+date: "2026-04-19T15:54:35Z"
+---
+## Katy Perry's Wild Ride: A Look at Her Toughest Moments
+
+Pop superstar Katy Perry has been under intense public scrutiny lately, with fans and critics alike debating her recent career moves and past actions. From cultural appropriation accusations to legal battles over real estate and questionable reality TV moments, the "Firework" singer seems to be constantly navigating a storm of controversy. Her recent space adventure even landed her in meme territory.
+
+### The "Unconditionally" Performance
+In 2013, Perry faced significant backlash after her American Music Awards performance of "Unconditionally." She appeared on stage styled as a Geisha girl, complete with a custom kimono, white powder make-up, and a black wig, amidst cherry blossoms, a Shinto shrine, and taiko drummers. This led to accusations of yellowface and cultural appropriation, with outlets questioning if the performance was racist. Perry later addressed the controversy in 2017, admitting she "did it wrong" in her intention to appreciate Japanese culture and expressed gratitude for those who held her accountable.
+
+### Unwanted Advances Allegations
+Josh Kloss, who featured in Perry's "Teenage Dream" music video, publicly accused the singer in 2019 of physically exposing him without his consent. Kloss claimed that at a party, Perry pulled down his trousers, revealing his genitalia to friends. Perry denied these allegations, telling The Guardian in 2020 that in a world where "anyone can say anything," there are "no checks and balances" for headlines.
+
+### Nuns, Property, and Legal Woes
+Perry spent several years embroiled in a complex legal battle with two nuns from the Immaculate Heart of Mary order, Sister Catherine Rose and Sister Rita Callanan. The dispute began in 2015 when Perry agreed to purchase their former convent for $14.5 million, but the Sisters allegedly backed out, expressing discomfort with the sale. Sister Callanan reportedly told the Los Angeles Times, "I found her videos. I wasn't happy with any of it". The nuns instead tried to sell the property to a local restaurant owner. Backed by the Archdiocese of Los Angeles, Perry sued the Sisters, and the situation tragically escalated in 2018 when Sister Holzman, 89, collapsed and died during a post-judgment hearing related to the case.
+
+### The Westcott Mansion Mess
+Perry and her ex-fiancé Orlando Bloom found themselves in another high-profile real estate dispute with Carl Westcott, the 86-year-old disabled veteran and founder of 1-800-Flowers. In July 2020, the couple purchased a 9,285-square-foot home from Westcott for $15 million. Days after the deal, Westcott claimed he was recovering from spinal surgery at the time and filed a lawsuit to stop the sale. This case inspired the 2023 "Katy PERRY Act," a bill aimed at addressing "the risks of elder financial abuse, especially as it relates to property and real estate sales and transfers". Perry ultimately won her countersuit and was awarded $1.8 million in damages for lost potential rental income.
+
+### Fashion Faux Pas
+In 2019, Perry's Katy Perry Collections fashion line faced criticism for a shoe design featuring a black sandal and loafer with a face and prominent red lips. Online commenters quickly pointed out its resemblance to images of blackface, leading to the shoes being removed from the collection. Perry issued a statement, clarifying the design was "envisioned as a nod to modern art and surrealism" and that her intention was "never to inflict any pain".
+
+### American Idol's Hot n Cold Judge
+During her seven-year tenure as an American Idol judge, Perry often generated headlines. In 2023, she was criticized for a comment made to contestant Sara Beth Liebe, a 25-year-old mother of three. Perry remarked, "Honey, you've been laying on the table too much," which was widely seen as insensitive. Liebe later withdrew from the competition, citing her desire to return home to her children, and in a now-deleted TikTok video, called Perry's comment "hurtful" and "mom-shaming". Despite this, another contestant, Oliver Steele, publicly defended Perry, stating she "is not a bully, nor does she shame people". That same year, Perry was booed by the live audience for her criticism of contestant Nutsa Buzaladze's performance.
+
+### The Infamous Kiss
+Another controversial moment on American Idol occurred in 2018 when Perry kissed contestant Benjamin Glaze. The 19-year-old revealed he had never been kissed, prompting Perry to call him over for what he thought would be a peck on the cheek. Instead, she turned at the last second and kissed him on the lips. Critics slammed Perry for the deceptive interaction, with Glaze later telling The New York Times he felt "a tad bit" uncomfortable, stating he would not have agreed if she had directly asked him for a kiss. Six years later, in 2024, Glaze was arrested in Oklahoma on a charge of aggravated possession of child sexual abuse material, and in 2025, he pleaded guilty and was sentenced to 25 years.
+
+### "Woman's World" and Dr. Luke
+Perry attempted a comeback in 2024 with her self-described "female empowerment anthem" "Woman's World," but the single faced a rocky reception. Critics generally panned the song for its simplistic approach to feminism, and the music video was also largely underwhelming. However, the biggest issue during its rollout was the revelation that the song was produced by Dr. Luke, the music mogul sued by Kesha over sexual assault allegations, which he has denied. Perry faced significant criticism for working with Dr. Luke, which many found ironic given the song's feminist theme. Perry later defended her decision, stating Dr. Luke was one of several collaborators from earlier in her career who helped shape the album’s themes, without directly commenting on the allegations.
+
+### Space Trip to Public Scrutiny
+In 2025, Perry was among several celebrities who embarked on an 11-minute space flight with Blue Origin, funded by Jeff Bezos. The trip was heavily criticized as a tone-deaf venture amid economic challenges in the U.S.. Perry's theatrical reaction upon landing, where she kissed the ground and spoke of feeling "super connected to love," was widely mocked online, turning her into a meme. In the aftermath, Perry described feeling like a "human Piñata" as fans and celebrities alike weighed in, criticizing the participants and joking about the rumored price tag and environmental impact of the journey.
+
+### The Ongoing Name Battle
+Just last month, in March 2026, Perry concluded a 17-year legal battle against Australian fashion designer Katie Taylor (née Perry).
