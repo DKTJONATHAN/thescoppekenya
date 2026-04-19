@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/samsung-s26-ultra-privacy-display-half-baked-bling</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
+      <news:title>Samsung S26 Ultra Privacy Display: Half-Baked Bling</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/isaac-kaberia-and-milkah-kimonda-reappointed-to-nssf-board-of-truste</loc>
     <news:news>
       <news:publication>
@@ -577,18 +589,6 @@
       </news:publication>
       <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
       <news:title>Johnny Depp introduces first footage of Ebenezer: A Christmas Carol at CinemaCon</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/julius-malema-walks-free-despite-conviction-for-firearm-offence</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
-      <news:title>Julius Malema walks free despite conviction for firearm offence</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
