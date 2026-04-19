@@ -125,7 +125,7 @@ jobs:
           ]
 
           def parse_tweet_entries(items, source_label):
-              \"\"\"Normalize syndication-style tweet objects into our standard list.\"\"\"
+              # Normalize syndication-style tweet objects into our standard list.
               tweets = []
               now_utc = datetime.datetime.now(datetime.timezone.utc)
               for item in items:
@@ -205,7 +205,7 @@ jobs:
                   return []
 
           def get_nitter_tweets():
-              \"\"\"Try each Nitter instance, return tweets from the first one that responds with usable RSS.\"\"\"
+              # Try each Nitter instance, return tweets from the first one that responds with usable RSS.
               headers = {
                   'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
                   'Accept': 'application/rss+xml, application/xml, text/xml, */*'
