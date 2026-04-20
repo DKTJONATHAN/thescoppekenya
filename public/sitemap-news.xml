@@ -604,40 +604,4 @@
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kisii-county-invests-in-market-and-road-infrastructure-to-improve-lo</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
-      <news:title>Kisii County invests in market and road infrastructure to improve local trade</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenyan-streamer-vindee-ranked-third-most-influential-streamer-in-afr</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
-      <news:title>Kenyan streamer Vindee ranked third most influential streamer in Africa</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/samsung-privacy-display-win-kenya</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-17T09:00:00.000Z</news:publication_date>
-      <news:title>Samsung's Privacy Display: Finally, a Win for Kenyans</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
 </urlset>
