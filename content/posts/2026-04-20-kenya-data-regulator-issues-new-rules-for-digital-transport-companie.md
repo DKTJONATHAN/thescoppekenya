@@ -1,0 +1,31 @@
+---
+title: "Kenya Data Regulator Issues New Rules for Digital Transport Companies"
+slug: "kenya-data-regulator-issues-new-rules-for-digital-transport-companie"
+author: "Grace Mkamburi"
+image: "https://i.ibb.co/jPdz3L8h/3c5c6efe57cd.jpg"
+category: "Business"
+date: "2026-04-20T18:43:43Z"
+---
+## Kenya's Data Protection Rules Impact Digital Transport
+
+Kenya's data regulator, the ODPC, introduced stringent new rules for digital transport companies. These regulations mandate local data storage, establish clear guidelines for data collection and use, and impose robust breach reporting requirements. The aim is to enhance privacy and data security within the sector.
+
+### Stricter Data Controls for Digital Transport
+The Office of the Data Protection Commissioner (ODPC) intends to intensify its oversight of personal data within Kenya's transport sector. Digital transport companies are now required to maintain a live copy of sensitive user information within local data centers. The new rules also impose a comprehensive set of regulations on how such data is collected, utilized, and safeguarded.
+
+The ODPC highlights concerns that ride-hailing and digital transport systems can extensively profile users and drivers, extrapolating behavioral and movement patterns. Such systems may expose driver information pre-trip, facilitating large-scale data harvesting, and continuous location tracking can divulge detailed individual routines.
+
+### Governing Data Use and Consent
+The guidance outlines eight lawful bases for processing personal data by transport companies. These include fulfilling client contracts, addressing emergency situations, satisfying public interest, and supporting historical and scientific research. Data collected for transport services cannot be repurposed for unrelated activities, such as marketing, without a valid legal basis or explicit user consent. For commercial uses like promotional messages or targeted advertising, firms must obtain express consent, clearly inform users, and provide straightforward, free, and accessible opt-out mechanisms. This regulatory action aligns with a broader national focus on modernizing and tightening controls across various sectors, reflecting a cautious approach to systemic changes, similar to the discussions surrounding [KNEC to KNEAC: A Welcome Reform with Caution - Navigating Kenya's Educational Transition](https://zandani.co.ke/article/knec-to-kneac-welcome-reform-with-caution).
+
+### Compliance and Breach Management
+The ODPC underscores the necessity of these guidelines due to data breach risks from weak authentication and system vulnerabilities as transport systems move online. Concerns also exist regarding unauthorized personal data sharing with advertisers, analytics firms, or technology partners, alongside the increasing use of surveillance tools like CCTV and dashboard cameras, which demand proper governance to prevent excessive monitoring.
+
+The framework establishes seven core data handling principles: lawfulness, fairness, transparency, purpose limitation, data minimization, accuracy, storage limitation, integrity and confidentiality, and accountability. Transport operators must not only adhere to these principles but also demonstrate compliance through documented processes and records. Firms must register with the data regulator as controllers or processors, providing details on data types, processing purposes, and safeguards. They must also appoint a data protection officer with adequate expertise to oversee compliance and serve as a liaison with the regulator.
+
+In the event of a data breach, controllers must notify the regulator within 72 hours, while processors must inform controllers within 48 hours. Affected individuals must also be notified if their data has been compromised. Companies are expected to maintain breach registers and document incident handling procedures. Operators are further required to document the entire flow of personal data through their systems, from collection to deletion, identifying data sources, categories, purposes, lawful bases, retention periods, and any third parties involved.
+
+### Cross-Border Data Transfers and Penalties
+Transport firms must track cross-border data transfers, ensuring appropriate safeguards are in place. Transfers of transport data outside Kenya are only permitted if the destination country offers adequate protection, appropriate safeguards, or if the transfer is necessary for contractual or legal reasons.
+
+Non-compliance with these guidelines can result in penalties of up to KSh5 million or 1% of annual turnover, or imprisonment for up to two years. Broader offenses may attract penalties of up to 10 years in prison. Individuals affected by data breaches also have the right to seek compensation for financial loss or emotional harm. Additional measures could include the suspension of operational licenses.
