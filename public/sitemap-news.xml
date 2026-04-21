@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/hope-kid-prophet-kanyari-s-success-due-to-second-chances</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-21T09:00:00.000Z</news:publication_date>
+      <news:title>Hope Kid: Prophet Kanyari’s Success Due to Second Chances</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/rutos-bitter-sugar-promise-italy-export-delusion</loc>
     <news:news>
       <news:publication>
@@ -433,42 +445,6 @@
       </news:publication>
       <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
       <news:title>Kenya Revenue Authority monitors offshore accounts through global financial reporting network</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/woi-kids-pay-the-price-as-kenya-battles-parental-drama</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
-      <news:title>Woi! Kids Pay The Price As Kenya Battles Parental Drama</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/rwandan-director-imanishimwe-viateur-expands-music-video-production-</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
-      <news:title>Rwandan director Imanishimwe Viateur expands music video production to Nairobi</news:title>
-      <news:genres>Entertainment,Music</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/mp-duncan-maina-calls-for-review-of-university-and-tvet-courses</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
-      <news:title>MP Duncan Maina calls for review of university and TVET courses</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
