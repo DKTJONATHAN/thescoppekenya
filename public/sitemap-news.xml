@@ -472,28 +472,4 @@
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
-  <url>
-    <loc>https://zandani.co.ke/article/former-tusker-defender-gabriel-wandera-killed-in-hit-and-run-acciden</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
-      <news:title>Former Tusker defender Gabriel Wandera killed in hit-and-run accident</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/tottenham-facing-historic-relegation-disaster-after-dramatic-late-br</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
-      <news:title>Tottenham Facing Historic Relegation Disaster After Dramatic Late Brighton Heartbreak</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
 </urlset>
