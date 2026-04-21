@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/ntsa-directs-motorists-to-verify-number-plate-status-before-collecti</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-21T09:00:00.000Z</news:publication_date>
+      <news:title>NTSA Directs Motorists to Verify Number Plate Status Before Collection</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/mike-sonko-who-happens-to-be-my-lookalike-has-come-out-crying-like-a</loc>
     <news:news>
       <news:publication>
@@ -529,18 +541,6 @@
       </news:publication>
       <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
       <news:title>Galatasaray targets Manchester United captain Bruno Fernandes for summer transfer</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/bungoma-governor-ken-lusaka-reshuffles-cabinet-following-court-reins</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
-      <news:title>Bungoma Governor Ken Lusaka Reshuffles Cabinet Following Court Reinstatement of Executive Members</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
