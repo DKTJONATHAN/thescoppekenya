@@ -19,6 +19,9 @@ const PrivacyPage = lazy(() => import("./pages/PrivacyPage"));
 const TermsPage = lazy(() => import("./pages/TermsPage"));
 const AdvertisePage = lazy(() => import("./pages/AdvertisePage"));
 const CareersPage = lazy(() => import("./pages/CareersPage"));
+const EthicsPage = lazy(() => import("./pages/EthicsPage"));
+const CorrectionsPage = lazy(() => import("./pages/CorrectionsPage"));
+const FactCheckPage = lazy(() => import("./pages/FactCheckPage"));
 const AdminPage = lazy(() => import("./pages/AdminPage"));
 const TagPage = lazy(() => import("./pages/TagPage"));
 const SportsPage = lazy(() => import("./pages/SportsPage"));
@@ -145,6 +148,9 @@ const App = () => (
                 <Route path="/terms" element={<TermsPage />} />
                 <Route path="/advertise" element={<AdvertisePage />} />
                 <Route path="/careers" element={<CareersPage />} />
+                <Route path="/ethics" element={<EthicsPage />} />
+                <Route path="/corrections" element={<CorrectionsPage />} />
+                <Route path="/fact-check" element={<FactCheckPage />} />
                 <Route path="/admin" element={<AdminPage />} />
                 <Route path="/tag/:tag" element={<TagPage />} />
                 <Route path="/news" element={<NewsPage />} />

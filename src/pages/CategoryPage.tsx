@@ -158,6 +158,15 @@ export default function CategoryPage() {
     "url": `https://zandani.co.ke/category/${category.slug}`
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zandani.co.ke" },
+      { "@type": "ListItem", "position": 2, "name": category.name, "item": `https://zandani.co.ke/category/${category.slug}` }
+    ]
+  };
+
   return (
     <Layout>
       <Helmet>
@@ -181,6 +190,7 @@ export default function CategoryPage() {
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content="https://zandani.co.ke/logo.png" />
         <script type="application/ld+json">{JSON.stringify(categorySchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ItemList",

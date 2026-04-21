@@ -107,6 +107,9 @@ export function Footer() {
               {[
                 { name: "About Us", path: "/about" },
                 { name: "Contact", path: "/contact" },
+                { name: "Editorial Ethics", path: "/ethics" },
+                { name: "Corrections Policy", path: "/corrections" },
+                { name: "Fact-Checking", path: "/fact-check" },
                 { name: "Advertise With Us", path: "/advertise" },
                 { name: "Careers", path: "/careers" },
                 { name: "Privacy Policy", path: "/privacy" },
@@ -164,19 +167,16 @@ export function Footer() {
                   <div className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center shrink-0">
                     <Globe className="w-4 h-4 text-primary" />
                   </div>
-                  <span className="font-semibold text-foreground">Partnerships</span>
+                  <span className="font-semibold text-foreground">Site Management</span>
                 </div>
-                <div className="pl-11 flex flex-col gap-1.5">
-                  <a href="mailto:info@jonathanmwaniki.co.ke" className="text-muted-foreground hover:text-primary transition-colors break-all">
-                    info@jonathanmwaniki.co.ke
-                  </a>
+                <div className="pl-11">
                   <a 
                     href="https://www.jonathanmwaniki.co.ke" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-xs text-primary font-medium hover:underline mt-1"
+                    className="text-xs text-primary font-medium hover:underline"
                   >
-                    Visit Jonathan Mwaniki →
+                    Engineered by Jonathan Mwaniki →
                   </a>
                 </div>
               </div>

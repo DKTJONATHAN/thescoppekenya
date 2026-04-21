@@ -101,14 +101,21 @@ async function generateRssFeed() {
       <link>${SITE_URL}/article/${post.slug}</link>
       <guid isPermaLink="true">${SITE_URL}/article/${post.slug}</guid>
       <description>${escapeXml(post.excerpt || post.content.replace(/[#*`_\[\]]/g, '').trim())}</description>
+      <content:encoded><![CDATA[${post.content}]]></content:encoded>
       <author>contact@zandani.co.ke (${escapeXml(post.author)})</author>
+      <dc:creator>${escapeXml(post.author)}</dc:creator>
       <category>${escapeXml(post.category)}</category>
       <pubDate>${formatRssDate(post.date)}</pubDate>
+      ${post.image ? `<media:content url="${escapeXml(post.image)}" medium="image" />` : ''}
       ${post.image ? `<enclosure url="${escapeXml(post.image)}" type="image/jpeg" />` : ''}
     </item>`).join('');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>${escapeXml(SITE_TITLE)}</title>
     <link>${SITE_URL}</link>

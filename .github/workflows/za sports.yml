@@ -248,12 +248,32 @@ jobs:
                   break
           if not full_raw_text: sys.exit(0)
 
-          title_prompt = f"SCRAPED TITLE: {target_title}\nSNIPPET: {full_raw_text[:1000]}\nWrite a high-CTR news headline for international sports.\nOutput ONLY JSON: {{\"final_title\": \"Title Here\"}}"
+          title_prompt = (
+              "SCRAPED ARTICLE TITLE: " + target_title + "\n"
+              "ARTICLE SNIPPET:\n" + full_raw_text[:1200] + "\n"
+              "TASK: Write a new high-CTR, SEO-optimized title for this article.\n"
+              "RULES: Focus on major keywords from the content. Do NOT just copy the scraped title. Keep it under 65 characters. Plain reporting tone. No clickbait or hype words.\n"
+              "Output ONLY JSON: {\"final_title\": \"Your New SEO Title Here\"}"
+          )
           resp = client.models.generate_content(model="gemini-3-flash-preview", contents=title_prompt)
-          final_title = target_title
+          if resp.text:
+              try:
+                  clean = re.sub(r"^```json?\n?|```$", "", resp.text, flags=re.I|re.DOTALL).strip()
+                  final_title = json.loads(clean).get('final_title', target_title)
+              except: pass
+
+          current_key = next(key_cycle); client = genai.Client(api_key=current_key); time.sleep(2)
+          excerpt_prompt = (
+              "Write a single SEO meta description (140-155 characters) for this sports article.\n"
+              "TITLE: " + final_title + "\n"
+              "CONTENT: " + full_raw_text[:800] + "\n"
+              "Rules: Factual, no clickbait, starts with the subject or a verb, includes the key news fact. Output ONLY JSON: {\"excerpt\": \"...\"}"
+          )
+          excerpt_resp = client.models.generate_content(model="gemini-3-flash-preview", contents=excerpt_prompt)
+          final_excerpt = ""
           try:
-              clean = re.sub(r"^```json?\n?|```$", "", resp.text, flags=re.I|re.DOTALL).strip()
-              final_title = json.loads(clean).get('final_title', target_title)
+              clean_e = re.sub(r"^```json?\n?|```$", "", excerpt_resp.text, flags=re.I|re.DOTALL).strip()
+              final_excerpt = json.loads(clean_e).get('excerpt', "")[:160]
           except: pass
 
           internal_links = get_internal_context()
@@ -286,7 +306,7 @@ jobs:
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           filepath = os.path.join(os.environ.get("POSTS_DIR"), f"{today_str}-{slug}.md")
           with open(filepath, "w", encoding="utf-8") as f:
-              f.write(f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\ndescription: \"{meta_description}\"\nauthor: \"Jona Munyi\"\nimage: \"{final_image}\"\ncategory: \"Sports\"\ntags: {json.dumps(article_tags)}\ndate: \"{publish_timestamp}\"\n---\n{article_text}")
+              f.write(f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\nexcerpt: \"{final_excerpt}\"\ndescription: \"{meta_description}\"\nauthor: \"Jona Munyi\"\nimage: \"{final_image}\"\ncategory: \"Sports\"\ntags: {json.dumps(article_tags)}\ndate: \"{publish_timestamp}\"\n---\n{article_text}")
           memory.append(final_hash)
           with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
           print(f"Saved: {filepath}")

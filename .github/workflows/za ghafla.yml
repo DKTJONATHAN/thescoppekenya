@@ -338,12 +338,10 @@ jobs:
           # ── Title ─────────────────────────────────────────────────────────
           title_prompt = (
               "SCRAPED ARTICLE TITLE: " + target_title + "\n"
-              "ARTICLE SNIPPET:\n" + full_raw_text[:1500] + "\n"
-              "Write a single news headline for this article.\n"
-              "Rules: Plain reporting tone like a newspaper front page. No dates or years in the title. "
-              "No numbers at the start. No clickbait. No brackets. No hype words. "
-              "Just a clean factual sentence that tells the reader exactly what happened.\n"
-              'Output ONLY JSON: {"final_title": "Your Title Here"}'
+              "ARTICLE SNIPPET:\n" + full_raw_text[:1200] + "\n"
+              "TASK: Write a new high-CTR, SEO-optimized title for this article.\n"
+              "RULES: Focus on major keywords from the content. Do NOT just copy the scraped title. Keep it under 65 characters. Plain reporting tone. No clickbait or hype words.\n"
+              'Output ONLY JSON: {"final_title": "Your New SEO Title Here"}'
           )
           title_text  = gemini_generate(title_prompt, "title")
           final_title = target_title
@@ -448,7 +446,7 @@ jobs:
               "---",
               'title: "' + final_title.replace('"', "'") + '"',
               'slug: "' + slug + '"',
-              'description: "' + meta_description + '"',
+              'excerpt: "' + meta_description + '"',
               'author: "Za Ndani"',
               'author_url: "' + author_url + '"',
               'image: "' + final_image + '"',

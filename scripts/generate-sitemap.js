@@ -17,11 +17,7 @@ const SITE_URL     = 'https://zandani.co.ke';
 const WEBSUB_HUB   = 'https://pubsubhubbub.appspot.com/';
 const RSS_FEED_URL = `${SITE_URL}/rss.xml`;
 
-const categories = [
-  { name: 'Entertainment',    slug: 'entertainment' },
-  { name: 'Celebrity Gossip', slug: 'gossip'        },
-  { name: 'Music',            slug: 'music'         },
-];
+// categories constant removed - now dynamically extracted from posts
 
 // --- Frontmatter Parser ---------------------------------------------------
 
@@ -112,6 +108,7 @@ async function getAllPosts() {
               : stat.mtime.toISOString().split('T')[0],
             publishedAt,
             title      : data.title   || '',
+            category   : data.category || 'News',
             featured   : data.featured === true || data.featured === 'true',
             tags       : Array.isArray(data.tags) ? data.tags : [],
           });
@@ -159,8 +156,9 @@ function generateSitemap(posts) {
       changefreq : 'daily',
     }));
 
-  const categoryUrls = categories.map(cat => ({
-    loc        : `/category/${cat.slug}`,
+  const uniqueCategories = Array.from(new Set(posts.map(p => p.category.toLowerCase())));
+  const categoryUrls = uniqueCategories.map(catSlug => ({
+    loc        : `/category/${catSlug}`,
     priority   : '0.9',
     changefreq : 'daily',
     lastmod    : today,
@@ -191,13 +189,14 @@ function generateSitemap(posts) {
 // news:genres is deprecated -- omitted.
 
 function generateNewsSitemap(posts) {
-  const cutoff30 = Date.now() - 30 * 24 * 60 * 60 * 1000;
+  // Google News requirements: Only articles from the last 48 hours.
+  const cutoff48 = Date.now() - 48 * 60 * 60 * 1000;
 
   const newsPosts = posts
-    .filter(p => p.publishedAt.getTime() >= cutoff30 && p.title)
+    .filter(p => p.publishedAt.getTime() >= cutoff48 && p.title)
     .slice(0, 1000);
 
-  console.log(`News sitemap: ${newsPosts.length} posts (last 30 days)`);
+  console.log(`News sitemap: ${newsPosts.length} posts (last 48 hours)`);
 
   const newsElements = newsPosts.map(p => [
     '  <url>',

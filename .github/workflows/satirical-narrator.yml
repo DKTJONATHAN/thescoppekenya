@@ -464,7 +464,7 @@ jobs:
                   '---',
                   f'title: "{parsed["TITLE"].replace(chr(34), chr(39))}"',
                   f'slug: "{slug}"',
-                  f'description: "{description}"',
+                  f'excerpt: "{description}"',
                   f'author: "{NARRATOR_NAME}"',
                   f'author_url: "{author_url}"',
                   f'image: "{image_url}"',

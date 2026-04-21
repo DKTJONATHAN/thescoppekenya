@@ -97,8 +97,42 @@ export default function AboutPage() {
           </div>
         </div>
 
+        {/* Ownership & Transparency */}
+        <section className="mb-20 grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-3xl font-serif font-bold text-headline mb-6">Transparency & Ownership</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              <strong>Za Ndani</strong> is a fully independent Kenyan digital media organization.
+              We are owned and operated by the <strong>Jonathan Mwaniki Media Group</strong>,
+              dedicated to fostering a more informed and engaged Kenyan society through
+              raw, unfiltered reporting and high-octane storytelling.
+            </p>
+            <div className="space-y-3">
+              <div className="flex items-center gap-3 text-sm">
+                <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-[10px]">1</div>
+                <span>100% Kenyan Owned</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm">
+                <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-[10px]">2</div>
+                <span>Physically Located in Nairobi, Kenya</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm">
+                <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-[10px]">3</div>
+                <span>Ad-Supported & Independent</span>
+              </div>
+            </div>
+          </div>
+          <div className="relative aspect-video rounded-3xl overflow-hidden border border-divider shadow-2xl">
+             <div className="absolute inset-0 bg-headline flex flex-col items-center justify-center p-8 text-center">
+                <Globe className="w-16 h-16 text-primary mb-4 opacity-20" />
+                <h3 className="text-2xl font-serif font-bold text-white mb-2">Our Newsroom</h3>
+                <p className="text-white/60 text-sm">Operating from the heart of Nairobi to bring you stories from the inside.</p>
+             </div>
+          </div>
+        </section>
+
         {/* Origins & Tech Section */}
-        <div className="relative overflow-hidden rounded-3xl bg-headline text-white p-8 md:p-16">
+        <div className="relative overflow-hidden rounded-3xl bg-headline text-white p-8 md:p-16 mb-20">
           <div className="relative z-10 max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-white">The Architecture of Truth</h2>
             <p className="text-white/80 text-lg mb-8">

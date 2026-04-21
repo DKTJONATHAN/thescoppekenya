@@ -316,10 +316,10 @@ jobs:
                   "- NEVER write the author name inside the article body.\n"
                   "- Minimum 750 words.\n\n"
                   "SMART TITLE ENGINE:\n"
-                  "Step 1 - Front-load with the primary subject name or topic.\n"
+                  "Step 1 - Focus on the major keywords from the source story.\n"
                   "Step 2 - Include at least ONE longtail keyword phrase from the list above.\n"
-                  "Step 3 - Make the title opinionated — it should signal a verdict, not just a topic.\n"
-                  "Step 4 - Under 65 characters. No clickbait question marks.\n\n"
+                  "Step 3 - Make the title high-CTR and opinionated — it should signal a verdict, not just a topic.\n"
+                  "Step 4 - Under 65 characters.\n\n"
                   "STRUCTURE:\n"
                   "1. Opening paragraph (40-55 words): your verdict, stated immediately. No setup.\n"
                   "2. ## H2 subheading — must contain at least one longtail keyword.\n"
@@ -433,7 +433,7 @@ jobs:
                   "---",
                   f'title: "{parsed["TITLE"].replace(chr(34), chr(39))}"',
                   f'slug: "{slug}"',
-                  f'description: "{description}"',
+                  f'excerpt: "{description}"',
                   f'author: "{COLUMNIST_NAME}"',
                   f'author_url: "{author_url}"',
                   f'image: "{source_image}"',

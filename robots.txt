@@ -1,4 +1,15 @@
 User-agent: *
+Allow: /
+Allow: /category/
+Allow: /tag/
+Allow: /article/
+Allow: /news
+Allow: /entertainment
+Allow: /sports
+Allow: /business
+Allow: /lifestyle
+Allow: /trending
+Allow: /trending/
 Disallow: /admin/
 Disallow: /wp-admin/
 

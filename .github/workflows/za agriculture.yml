@@ -92,7 +92,8 @@ jobs:
                           full_url = href if href.startswith('http') else f'https://{SITE_DOMAIN}' + href
                           if SITE_DOMAIN not in full_url: continue
                           path = full_url.split(SITE_DOMAIN)[-1]
-                          slug = path.rstrip('/').split('/')[-1]
+                          clean_path = path.split('?')[0].rstrip('/')
+                          slug = clean_path.split('/')[-1]
                           if (len(slug) > 15 and '-' in slug and not any(x in path for x in ['/author/','/tag/','/page/','/feed/','/comment-','/category/'])):
                               urls.add(full_url)
                       browser.close()
@@ -197,15 +198,28 @@ jobs:
 
           title_prompt = (
               "SCRAPED ARTICLE TITLE: " + target_title + "\n"
-              "ARTICLE SNIPPET:\n" + full_raw_text[:1500] + "\n"
-              "Write a single news headline for this article.\n"
-              "Rules: Plain reporting tone like a newspaper front page. No dates or years in the title. No numbers at the start. No clickbait. No brackets. No hype words. Just a clean factual sentence that tells the reader exactly what happened.\n"
-              "Output ONLY JSON: {\"final_title\": \"Your Title Here\"}"
+              "ARTICLE SNIPPET:\n" + full_raw_text[:1200] + "\n"
+              "TASK: Write a new high-CTR, SEO-optimized title for this article.\n"
+              "RULES: Focus on major keywords from the content. Do NOT just copy the scraped title. Keep it under 65 characters. Plain reporting tone. No clickbait or hype words. Just a clean factual sentence.\n"
+              "Output ONLY JSON: {\"final_title\": \"Your New SEO Title Here\"}"
           )
           title_text = gemini_generate(title_prompt, "title")
           final_title = target_title
           if title_text:
               try: final_title = json.loads(re.sub(r"^```json?\n?|```$", "", title_text, flags=re.I|re.DOTALL).strip()).get('final_title', target_title)
+              except: pass
+
+          current_key = next(key_cycle); client = genai.Client(api_key=current_key); time.sleep(2)
+          excerpt_prompt = (
+              "Write a single SEO meta description (140-155 characters) for this article.\n"
+              "TITLE: " + final_title + "\n"
+              "CONTENT: " + full_raw_text[:800] + "\n"
+              "Rules: Factual, no clickbait, starts with a verb or the subject, includes the key fact. Output ONLY JSON: {\"excerpt\": \"...\"}"
+          )
+          excerpt_text = gemini_generate(excerpt_prompt, "excerpt")
+          final_excerpt = ""
+          if excerpt_text:
+              try: final_excerpt = json.loads(re.sub(r"^```json?\n?|```$", "", excerpt_text, flags=re.I|re.DOTALL).strip()).get('excerpt', "")[:160]
               except: pass
 
           current_key = next(key_cycle); client = genai.Client(api_key=current_key); time.sleep(5)
@@ -232,6 +246,7 @@ jobs:
               "---",
               'title: "' + final_title.replace('"', "'") + '"',
               'slug: "' + slug + '"',
+              'excerpt: "' + final_excerpt.replace('"', "'") + '"',
               'author: "Timothy Muli"',
               'image: "' + final_image + '"',
               'category: "Agriculture"',

@@ -274,10 +274,10 @@ jobs:
 
           title_prompt = (
               "SCRAPED ARTICLE TITLE: " + target_title + "\n"
-              "ARTICLE SNIPPET:\n" + full_raw_text[:1500] + "\n"
-              "Write a single news headline for this article.\n"
-              "Rules: Plain reporting tone like a newspaper front page. No dates or years in the title. No numbers at the start. No clickbait. No brackets. No hype words. Just a clean factual sentence that tells the reader exactly what happened.\n"
-              "Output ONLY JSON: {\"final_title\": \"Your Title Here\"}"
+              "ARTICLE SNIPPET:\n" + full_raw_text[:1200] + "\n"
+              "TASK: Write a new high-CTR, SEO-optimized title for this article.\n"
+              "RULES: Focus on major keywords from the content. Do NOT just copy the scraped title. Keep it under 65 characters. Plain reporting tone. No clickbait or hype words.\n"
+              "Output ONLY JSON: {\"final_title\": \"Your New SEO Title Here\"}"
           )
           title_text = gemini_generate(title_prompt, "title")
           final_title = target_title
@@ -288,6 +288,19 @@ jobs:
                   final_title = data.get('final_title', target_title)
               except Exception as e:
                   print(f"Title parse error: {e}")
+
+          current_key = next(key_cycle); client = genai.Client(api_key=current_key); time.sleep(2)
+          excerpt_prompt = (
+              "Write a single SEO meta description (140-155 characters) for this business article.\n"
+              "TITLE: " + final_title + "\n"
+              "CONTENT: " + full_raw_text[:800] + "\n"
+              "Rules: Factual, no clickbait, starts with the subject or a verb, includes the key news fact. Output ONLY JSON: {\"excerpt\": \"...\"}"
+          )
+          excerpt_text = gemini_generate(excerpt_prompt, "excerpt")
+          final_excerpt = ""
+          if excerpt_text:
+              try: final_excerpt = json.loads(re.sub(r"^```json?\n?|```$", "", excerpt_text, flags=re.I|re.DOTALL).strip()).get('excerpt', "")[:160]
+              except: pass
 
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
@@ -323,6 +336,7 @@ jobs:
               "---",
               'title: "' + final_title.replace('"', "'") + '"',
               'slug: "' + slug + '"',
+              'excerpt: "' + final_excerpt.replace('"', "'") + '"',
               'author: "Grace Mkamburi"',
               'image: "' + final_image + '"',
               'category: "Business"',

@@ -145,7 +145,7 @@ export function getAllPosts(): Post[] {
       const tags = Array.isArray(frontmatter.tags) ? frontmatter.tags : [];
       const title = frontmatter.title || 'Untitled Post';
       const slug = frontmatter.slug || path.replace('/content/posts/', '').replace('.md', '');
-      const excerpt = frontmatter.excerpt || extractExcerpt(content);
+      const excerpt = (frontmatter.excerpt as string) || (frontmatter.description as string) || extractExcerpt(content);
       const image = frontmatter.image || '/placeholder.svg';
       const category = normalizeCategory(frontmatter.category || 'News');
       const date = frontmatter.date || new Date().toISOString().split('T')[0];

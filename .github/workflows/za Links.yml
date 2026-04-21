@@ -872,7 +872,9 @@ jobs:
               f'- BANNED PHRASES (never use any of these): {banned_str}\n'
               '- Do NOT use markdown - use HTML only.\n'
               '- Do NOT start sentences with "Moreover", "Furthermore", "In conclusion", "It is worth noting".\n'
-              '- End your response with the article title on its own line: TITLE: Your Title Here\n'
+              '- End your response with the following metadata on their own lines:\n'
+              'TITLE: Your High-CTR SEO Title\n'
+              'EXCERPT: 140-155 character meta description starting with the subject or a verb, includes key news fact\n'
               f'- Category: {category}, Author: {author}\n'
           )
 
@@ -882,13 +884,20 @@ jobs:
               print('Failed to generate content.'); sys.exit(1)
 
           # â”€â”€ Extract title â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-          title_match = re.search(r'TITLE:\s*(.+)', raw)
+          title_match = re.search(r'TITLE:\s*(.+)', raw, re.IGNORECASE)
+          excerpt_match = re.search(r'EXCERPT:\s*(.+)', raw, re.IGNORECASE)
+
           if title_match:
-              final_title  = title_match.group(1).strip()
+              final_title = title_match.group(1).strip().strip('"')
               article_html = raw[:title_match.start()].strip()
           else:
               article_html = raw.strip()
-              final_title  = custom_title_override or 'Untitled Article'
+              final_title = custom_title_override or 'Untitled Article'
+
+          final_excerpt = ""
+          if excerpt_match:
+              final_excerpt = excerpt_match.group(1).strip().strip('"')
+              article_html = article_html.replace(excerpt_match.group(0), "").strip()
 
           # â”€â”€ Write post file â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           slug        = title_to_slug(final_title)
@@ -898,8 +907,9 @@ jobs:
               f'title: "{final_title.replace(chr(34), chr(39))}"\n'
               f'date: {publish_timestamp}\n'
               f'slug: {slug}\n'
-              f'author: {author_slug}\n'
-              f'category: {category.lower()}\n'
+              f'author: "{author_slug}"\n'
+              f'category: "{category.lower()}"\n'
+              f'excerpt: "{final_excerpt.replace(chr(34), chr(39))}"\n'
               f'image: "{cover_image}"\n'
               'draft: false\n'
               '---\n'
