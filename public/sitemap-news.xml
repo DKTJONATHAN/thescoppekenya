@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/treasury-directs-counties-to-process-civil-servant-salaries-through-</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-21T09:00:00.000Z</news:publication_date>
+      <news:title>Treasury directs counties to process civil servant salaries through integrated payroll system</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/amvca-names-bovi-and-nomzamo-mbatha-as-hosts-to-replace-ik-osakioduw</loc>
     <news:news>
       <news:publication>
@@ -493,18 +505,6 @@
       </news:publication>
       <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
       <news:title>Ruto attributes higher fuel prices to infrastructure investment and middle-income status</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-power-incurs-ksh-12-8-billion-in-annual-costs-as-system-losses</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
-      <news:title>Kenya Power incurs KSh 12.8 billion in annual costs as system losses exceed regulatory targets</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
