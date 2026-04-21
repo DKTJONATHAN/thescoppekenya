@@ -1,13 +1,13 @@
 ---
-title: "While in Italy, William Ruto said that in the next two years Kenya will be expor"
-slug: "while-in-italy-william-ruto-said-that-in-the-next-two-years-kenya-wi"
+title: "Ruto’s Bitter Sugar Promise: From Italy With Love or Pure Export Delusion?"
+slug: "rutos-bitter-sugar-promise-italy-export-delusion"
 description: "President Ruto's promise in Italy to export sugar by 2026 contrasts sharply with Kenyan farmers' losses from current sugar imports crippling local production."
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/hRpttBSL/984a193b6ddc.webp"
 category: "Entertainment"
 tags: ["william-ruto", "kenyan-exports", "ruto-italy", "economic-outlook", "future-trade"]
-canonical: "https://zandani.co.ke/article/while-in-italy-william-ruto-said-that-in-the-next-two-years-kenya-wi"
+canonical: "https://zandani.co.ke/article/rutos-bitter-sugar-promise-italy-export-delusion"
 date: "2026-04-21T13:20:48Z"
 ---
 President William Ruto’s recent declaration from Italy, promising Kenya would export sugar within two years, has struck a discordant note across the nation. This April 2026 pronouncement starkly contrasts the grim reality faced by sugar farmers in Western Kenya, who are currently reeling from significant losses due to a flood of imported sugar that has crippled local production.

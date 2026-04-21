@@ -400,11 +400,17 @@ jobs:
               "TRUE TRENDING STORY: " + true_story + "\n"
               "POST COMMENTARY: " + commentary + "\n\n"
               "TASK: Write a new high-CTR, SEO-optimized title for this Kenyan entertainment story.\n"
-              "RULES: Focus on major keywords from the content. Keep it under 65 characters. Plain reporting tone. No clickbait or hype words. DO NOT mention George Diano or social media platforms.\n"
+              'RULES: Use a "Reporting tone with a gossipy, insider Kenyan flavor" (bold, witty, and sharp). Focus on major keywords from the content. Keep it under 65 characters. DO NOT use generic clickbait or hype words. DO NOT mention George Diano or social media platforms.\n'
               'Output ONLY JSON: {"final_title": "Your New SEO Title Here"}'
           )
           title_text = gemini_generate(title_prompt, "title")
-          final_title = chosen["text"][:80].split("\n")[0]
+          # Fallback: Use a cleaned up version of the first sentence
+          cleaned_text = re.sub(r'https?://\S+', '', chosen["text"]).strip()
+          first_part = cleaned_text.split(".")[0].split("\n")[0].strip()
+          if len(first_part) > 65:
+              final_title = first_part[:65].rsplit(' ', 1)[0] + "..."
+          else:
+              final_title = first_part
           if title_text:
               try:
                   clean = re.sub(r'^```json?\s*|\s*```$', '', title_text, flags=re.I | re.DOTALL).strip()
