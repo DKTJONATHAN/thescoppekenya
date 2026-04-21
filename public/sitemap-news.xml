@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/imf-lowers-kenya-growth-forecast-amid-rising-fuel-prices</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-21T09:00:00.000Z</news:publication_date>
+      <news:title>IMF Lowers Kenya Growth Forecast Amid Rising Fuel Prices</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/ngong-court-acquits-50-gen-z-protesters-over-2024-demos</loc>
     <news:news>
       <news:publication>
@@ -433,30 +445,6 @@
       </news:publication>
       <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
       <news:title>Egypt and Kenya expand diplomatic and economic cooperation</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/man-city-vs-arsenal-live-premier-league-title-race-blown-wide-open-i</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
-      <news:title>Man City vs Arsenal LIVE: Premier League Title Race Blown Wide Open in Massive Etihad Clash</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-revenue-authority-monitors-offshore-accounts-through-global-fi</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
-      <news:title>Kenya Revenue Authority monitors offshore accounts through global financial reporting network</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
