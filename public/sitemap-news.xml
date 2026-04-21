@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/while-in-italy-william-ruto-said-that-in-the-next-two-years-kenya-wi</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-21T09:00:00.000Z</news:publication_date>
+      <news:title>While in Italy, William Ruto said that in the next two years Kenya will be expor</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/singer-d4vd-pleads-not-guilty-to-murder-charge</loc>
     <news:news>
       <news:publication>
@@ -505,30 +517,6 @@
       </news:publication>
       <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
       <news:title>President Ruto reports progress on 250 kilometers of road construction in Nairobi</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/tottenham-s-relegation-nightmare-late-rutter-equalizer-leaves-spurs-</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
-      <news:title>Tottenham’s Relegation Nightmare: Late Rutter Equalizer Leaves Spurs on the Brink</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/tsc-denies-reports-of-teacher-salary-delays-following-kewota-controv</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-19T09:00:00.000Z</news:publication_date>
-      <news:title>TSC Denies Reports of Teacher Salary Delays Following KEWOTA Controversy</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
