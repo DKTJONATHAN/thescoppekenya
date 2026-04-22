@@ -91,7 +91,7 @@ jobs:
           )
 
           BANNED_PHRASES = [
-              "sasa basi", "melting the pot", "spill the tea", "grab your popcorn",
+              "online debate in Kenya", "ignited a fiery online debate", "sparked a debate across", "caused a lot of online debate", "this April 2026", "this March 2026", "sasa basi", "melting the pot", "spill the tea", "grab your popcorn",
               "buckle up", "dive in", "delve into", "moreover", "furthermore",
               "in conclusion", "it's worth noting", "a testament to",
               "navigating the landscape", "in today's digital age", "tapestry",
@@ -217,7 +217,6 @@ jobs:
                   "Find the top 6 longtail keyword phrases Kenyan audiences are actually "
                   "searching on Google related to this topic right now in 2026.\n"
                   "Rules:\n"
-                  "- Each keyword must be 3-6 words long\n"
                   "- Must be specific (include names, events, or details)\n"
                   "- No generic phrases like 'latest news' or 'who is'\n"
                   "- Return ONLY a comma-separated list of 6 phrases. Nothing else."
@@ -236,7 +235,9 @@ jobs:
           # ── Robust field extractor ────────────────────────────────────────
           # Gemini with google_search often prepends reasoning/search text before
           # the structured block. We search the ENTIRE output, not just line-start.
-          def pf(label: str, text: str) -> str:
+              "1. Start with a 35-45 word lede paragraph (who, what, when, where - no heading above it). This answers the core question immediately.\n"
+              "   - NEVER start with "This has caused a lot of online debate in Kenya" or "sparked a firestorm".\n"
+              "   - DO NOT include the current month and year in the opening sentence.\n"
               # 1. Try anchored to line start (ideal case)
               m = re.search(rf"^{label}:\s*(.+)$", text, re.MULTILINE | re.IGNORECASE)
               if m:
@@ -321,14 +322,15 @@ jobs:
                   "Step 3 - Make the title high-CTR and opinionated — it should signal a verdict, not just a topic.\n"
                   "Step 4 - Under 65 characters.\n\n"
                   "STRUCTURE:\n"
-                  "1. Opening paragraph (40-55 words): your verdict, stated immediately. No setup.\n"
+              "1. Start with a 35-45 word lede paragraph (who, what, when, where - no heading above it). This answers the core question immediately.\n"
+              "   - NEVER start with "This has caused a lot of online debate in Kenya" or "sparked a firestorm".\n"
+              "   - DO NOT include the current month and year in the opening sentence.\n"
                   "2. ## H2 subheading — must contain at least one longtail keyword.\n"
                   "3. 4-6 body sections with ### subheadings — each judges at least one named actor.\n"
                   "   At least 2 ### subheadings must contain a longtail keyword.\n"
                   "4. Mandatory source link naturally embedded mid-body.\n"
                   "5. Final paragraph: forceful verdict on what SHOULD happen next.\n\n"
                   "CRITICAL OUTPUT RULES:\n"
-                  "- Output NOTHING before TITLE:\n"
                   "- No preamble, no 'Here is the article', no markdown code fences\n"
                   "- Do NOT wrap output in ``` or ```markdown\n"
                   "- Do NOT add --- frontmatter delimiters anywhere\n"

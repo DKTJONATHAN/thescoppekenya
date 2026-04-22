@@ -71,7 +71,7 @@ jobs:
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
-          BANNED_PHRASES = ["sasa basi","melting the pot","spill the tea","tea is hot","grab your popcorn","buckle up","breaking news","dive in","delve into","moreover","furthermore","in conclusion","it's worth noting","a testament to","navigating the landscape","in today's digital age","tapestry"]
+          BANNED_PHRASES = ["online debate in Kenya", "ignited a fiery online debate", "sparked a debate across", "caused a lot of online debate", "this April 2026", "this March 2026", "sasa basi","melting the pot","spill the tea","tea is hot","grab your popcorn","buckle up","breaking news","dive in","delve into","moreover","furthermore","in conclusion","it's worth noting","a testament to","navigating the landscape","in today's digital age","tapestry"]
 
           print(f"Target: Football365 All The News - {full_date_str}")
 
@@ -270,7 +270,6 @@ jobs:
               "ARTICLE SNIPPET:\n" + full_raw_text[:1200] + "\n"
               "TASK: Write a new high-CTR, SEO-optimized title for this article.\n"
               "RULES: Focus on major keywords from the content. Do NOT just copy the scraped title. Keep it under 65 characters. Plain reporting tone. No clickbait or hype words.\n"
-              "Output ONLY JSON: {\"final_title\": \"Your New SEO Title Here\"}"
           )
           title_text = gemini_generate(title_prompt, "title")
           final_title = target_title
@@ -286,7 +285,6 @@ jobs:
               "TITLE: " + final_title + "\n"
               "CONTENT: " + full_raw_text[:800] + "\n"
               "Rules: Factual, no clickbait, starts with a verb or the subject, includes the key sport fact. Output ONLY JSON: {\"excerpt\": \"...\"}"
-          )
           excerpt_text = gemini_generate(excerpt_prompt, "excerpt")
           final_excerpt = ""
           if excerpt_text:

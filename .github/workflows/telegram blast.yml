@@ -107,7 +107,6 @@ jobs:
               Tags to use as Hashtags: {raw_tags}
 
               Rules:
-              - Telegram image captions have a strict 1024 character limit. Keep your response short and UNDER 700 characters.
               - Make it catchy and designed to provoke curiosity.
               - Incorporate the tags naturally as hashtags at the bottom.
               - Do NOT include the article link or URL in the text (the script will append it).

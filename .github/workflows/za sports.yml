@@ -91,7 +91,7 @@ jobs:
           SITE_BASE_URL = "https://zandani.co.ke"
 
           BANNED_PHRASES = [
-              "sasa basi", "melting the pot", "spill the tea", "tea is hot",
+              "online debate in Kenya", "ignited a fiery online debate", "sparked a debate across", "caused a lot of online debate", "this April 2026", "this March 2026", "sasa basi", "melting the pot", "spill the tea", "tea is hot",
               "grab your popcorn", "buckle up", "breaking news", "dive in",
               "delve into", "moreover", "furthermore", "in conclusion",
               "it's worth noting", "a testament to", "navigating the landscape",
@@ -253,7 +253,6 @@ jobs:
               "ARTICLE SNIPPET:\n" + full_raw_text[:1200] + "\n"
               "TASK: Write a new high-CTR, SEO-optimized title for this article.\n"
               "RULES: Focus on major keywords from the content. Do NOT just copy the scraped title. Keep it under 65 characters. Plain reporting tone. No clickbait or hype words.\n"
-              "Output ONLY JSON: {\"final_title\": \"Your New SEO Title Here\"}"
           )
           resp = client.models.generate_content(model="gemini-3-flash-preview", contents=title_prompt)
           if resp.text:
@@ -268,7 +267,6 @@ jobs:
               "TITLE: " + final_title + "\n"
               "CONTENT: " + full_raw_text[:800] + "\n"
               "Rules: Factual, no clickbait, starts with the subject or a verb, includes the key news fact. Output ONLY JSON: {\"excerpt\": \"...\"}"
-          )
           excerpt_resp = client.models.generate_content(model="gemini-3-flash-preview", contents=excerpt_prompt)
           final_excerpt = ""
           try:
@@ -286,7 +284,6 @@ jobs:
               f"Professional, fast-paced, insightful analysis. No Sheng. No em-dashes.\n"
               f"CRITICAL: All dates and references must reflect {current_year}.\n"
               f"STRUCTURE: lede paragraph (35-45 words), then ## and ### headings.\n"
-              f"BANNED PHRASES: {', '.join(BANNED_PHRASES)}\n"
               f"CRITICAL BRANDING: You are writing FOR Za Ndani (zandani.co.ke). NEVER mention source sites."
           )
           article_resp = client.models.generate_content(model="gemini-2.5-flash", contents=article_prompt, config=types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]))

@@ -74,7 +74,7 @@ jobs:
           )
 
           BANNED_PHRASES = [
-              "sasa basi", "melting the pot", "spill the tea", "tea is hot",
+              "online debate in Kenya", "ignited a fiery online debate", "sparked a debate across", "caused a lot of online debate", "this April 2026", "this March 2026", "sasa basi", "melting the pot", "spill the tea", "tea is hot",
               "grab your popcorn", "buckle up", "breaking news", "dive in",
               "delve into", "moreover", "furthermore", "in conclusion",
               "it's worth noting", "a testament to", "navigating the landscape",
@@ -401,7 +401,6 @@ jobs:
               "POST COMMENTARY: " + commentary + "\n\n"
               "TASK: Write a new high-CTR, SEO-optimized title for this Kenyan entertainment story.\n"
               'RULES: Use a "Reporting tone with a gossipy, insider Kenyan flavor" (bold, witty, and sharp). Focus on major keywords from the content. Keep it under 65 characters. DO NOT use generic clickbait or hype words. DO NOT mention George Diano or social media platforms.\n'
-              'Output ONLY JSON: {"final_title": "Your New SEO Title Here"}'
           )
           title_text = gemini_generate(title_prompt, "title")
           # Fallback: Use a cleaned up version of the first sentence
@@ -440,7 +439,9 @@ jobs:
               "No em-dashes. Single hyphens only. No title/byline/date in body.\n"
               "All date references must be " + current_year + ".\n\n"
               "STRUCTURE:\n"
-              "1. A 35-45 word lede paragraph (no heading above it) - answers who/what/when/where immediately.\n"
+              "1. Start with a 35-45 word lede paragraph (who, what, when, where - no heading above it). This answers the core question immediately.\n"
+              "   - NEVER start with "This has caused a lot of online debate in Kenya" or "sparked a firestorm".\n"
+              "   - DO NOT include the current month and year in the opening sentence.\n"
               "2. ## H2 subheading with primary keyword.\n"
               "3. 3-4 supporting paragraphs with ### subheadings.\n"
               "4. A sharp closing line that captures the Kenyan street reaction.\n\n"
@@ -467,7 +468,6 @@ jobs:
               "Title: " + final_title + "\n"
               "Snippet: " + article_text[:600] + "\n"
               "Rules: factual, no clickbait, starts with subject or verb, includes key news fact.\n"
-              'Output ONLY JSON: {"description": "Your description here"}'
           )
           desc_text = gemini_generate(desc_prompt, "description")
           meta_description = ""
@@ -484,7 +484,6 @@ jobs:
               "Generate 4-5 relevant SEO tags for this Kenyan entertainment article.\n"
               "Title: " + final_title + "\n"
               "Rules: lowercase, hyphenated multi-word. No generic tags like 'news', 'kenya'.\n"
-              'Output ONLY JSON: {"tags": ["tag-one", "tag-two", "tag-three"]}'
           )
           tags_text = gemini_generate(tags_prompt, "tags")
           article_tags = []

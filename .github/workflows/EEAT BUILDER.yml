@@ -108,7 +108,7 @@ jobs:
           MODELS = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
           BANNED_PHRASES = [
-              "sasa basi", "melting the pot", "spill the tea", "tea is hot",
+              "online debate in Kenya", "ignited a fiery online debate", "sparked a debate across", "caused a lot of online debate", "this April 2026", "this March 2026", "sasa basi", "melting the pot", "spill the tea", "tea is hot",
               "grab your popcorn", "buckle up", "breaking news", "dive in",
               "delve into", "moreover", "furthermore", "in conclusion",
               "it's worth noting", "a testament to", "navigating the landscape",
@@ -128,7 +128,9 @@ jobs:
               "gossip":        ("Za Ndani",         "a sharp and cynical Kenyan entertainment journalist writing in a dramatic, authoritative tone"),
               "celebrity":     ("Mutheu Ann",       "a plugged-in Kenyan entertainment journalist writing in a passionate, high-energy style"),
               "politics":      ("Celestine Nzioka", "a cynical and authoritative Kenyan political journalist who exposes what power structures hide"),
-              "news":          ("Celestine Nzioka", "a precise and authoritative Kenyan news journalist who leads with facts"),
+              "1. Start with a 35-45 word lede paragraph (who, what, when, where - no heading above it). This answers the core question immediately.\n"
+              "   - NEVER start with "This has caused a lot of online debate in Kenya" or "sparked a firestorm".\n"
+              "   - DO NOT include the current month and year in the opening sentence.\n"
               "sports":        ("Mutheu Ann",       "an energetic Kenyan sports journalist with deep knowledge of local and international sport"),
               "technology":    ("Celestine Nzioka", "a precise Kenyan tech and business journalist covering Africa's digital economy"),
           }
@@ -318,7 +320,6 @@ jobs:
                   f'Search the web right now for a real, publicly accessible image of: "{topic}"\n'
                   f'Context: This is for a news article titled "{title}" on a Kenyan news website.\n\n'
                   "Instructions:\n"
-                  f"1. Search Google Images or news sites for a real photo of {topic}\n"
                   "2. Find an image URL that is publicly accessible (not behind a login or paywall)\n"
                   "3. Prefer images from: Wikipedia, Wikimedia Commons, official social media, reputable news sites\n"
                   "4. The image must be relevant - an actual photo of the person/event/topic, NOT a stock photo\n"
@@ -347,7 +348,6 @@ jobs:
                   f'First, search the web for current information about "{topic}" to understand what people are searching for.\n\n'
                   f'Then generate exactly 3 supporting article ideas that build TOPICAL AUTHORITY around "{topic}".\n\n'
                   "Rules:\n"
-                  "- Each article must target a DIFFERENT search intent than the seed\n"
                   "- Each must be genuinely searchable by Kenyan audiences on Google right now\n"
                   "- Each must be able to naturally link back to the seed article\n"
                   "- NO duplicate angles - cover different aspects (biography, controversy, career, relationships, wealth, etc.)\n"
@@ -445,7 +445,9 @@ jobs:
                   "- Write at least 600 words.\n"
                   "- Use specific facts, figures, quotes from your research.\n\n"
                   "STRUCTURE (follow exactly in this order):\n"
-                  "1. A 35-45 word lede paragraph - NO heading above it. Answers who/what/when/where immediately. Used as a Google Featured Snippet.\n"
+              "1. Start with a 35-45 word lede paragraph (who, what, when, where - no heading above it). This answers the core question immediately.\n"
+              "   - NEVER start with "This has caused a lot of online debate in Kenya" or "sparked a firestorm".\n"
+              "   - DO NOT include the current month and year in the opening sentence.\n"
                   "2. ## H2 subheading containing at least one PRIMARY KEYWORD.\n"
                   "3. ### subheadings every 2-3 paragraphs reusing primary keywords naturally.\n"
                   "4. Include the mandatory seed link naturally mid-article.\n"

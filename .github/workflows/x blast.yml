@@ -120,7 +120,6 @@ jobs:
                   f"Author: {author}\n"
                   f"Excerpt: {excerpt}\n\n"
                   "Rules:\n"
-                  "- Max 230 characters.\n"
                   "- Curiosity-driven.\n"
                   "- Max 2 emojis.\n"
                   "- End with 2 hashtags (e.g. #Kenya).\n"

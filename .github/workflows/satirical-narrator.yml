@@ -94,7 +94,7 @@ jobs:
           )
 
           BANNED_PHRASES = [
-              'in conclusion', 'to summarize', 'it is worth noting', 'furthermore',
+              "online debate in Kenya", "ignited a fiery online debate", "sparked a debate across", "caused a lot of online debate", "this April 2026", "this March 2026", 'in conclusion', 'to summarize', 'it is worth noting', 'furthermore',
               'moreover', 'in todays world', 'in the modern era', 'as we know',
               'it goes without saying', 'needless to say', 'at the end of the day',
               'moving forward', 'a testament to', 'tapestry', 'delve into',
@@ -269,7 +269,6 @@ jobs:
                   f'Category: {category}\n\n'
                   'Find 6 longtail keyword phrases Kenyan audiences are searching about this topic in 2026.\n'
                   'Rules:\n'
-                  '- Each keyword must be 3-6 words\n'
                   '- Must be specific: include names, events, or details\n'
                   '- No generic phrases like latest news\n'
                   '- Return ONLY a comma-separated list of 6 phrases. Nothing else.'
@@ -370,7 +369,6 @@ jobs:
               p.append('- Under 70 characters. No clickbait question marks.')
               p.append('')
               p.append('STRUCTURE:')
-              p.append('1. Opening scene 50-70 words: Drop directly into the historical world.')
               p.append('   A moment. A scene. A line of dialogue. No preamble.')
               p.append('2. One H2 subheading containing a longtail keyword.')
               p.append('3. 4-6 narrative sections with H3 subheadings deepening the parallel.')
@@ -381,7 +379,6 @@ jobs:
               p.append('6. Final line: haunting, ironic, or quietly devastating. No happy endings.')
               p.append('')
               p.append('CRITICAL OUTPUT RULES:')
-              p.append('- Output NOTHING before TITLE:')
               p.append('- No preamble, no markdown code fences, no triple backticks')
               p.append('- Do NOT add --- frontmatter delimiters anywhere')
               p.append('- Start your response with exactly: TITLE:')

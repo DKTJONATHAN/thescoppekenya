@@ -92,7 +92,7 @@ jobs:
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
           BANNED_PHRASES = [
-              "sasa basi", "melting the pot", "spill the tea", "tea is hot",
+              "online debate in Kenya", "ignited a fiery online debate", "sparked a debate across", "caused a lot of online debate", "this April 2026", "this March 2026", "sasa basi", "melting the pot", "spill the tea", "tea is hot",
               "grab your popcorn", "listen up", "buckle up", "breaking news",
               "sherehe", "form ni gani", "udaku", "hello guys", "welcome back",
               "mambo vipi", "niaje wasee", "karibuni", "tapestry", "dive in",
@@ -403,7 +403,6 @@ jobs:
               "BODY:\n"
               "[Article text containing the internal link.\n"
               "Structure: Start with an H2 heading containing at least one PRIMARY KEYWORD. Follow immediately with a crisp, 40-word neutral answer paragraph for Google Snippets. Then continue with natural subheadings that also reuse PRIMARY KEYWORDS.\n"
-              "- DO NOT include the title, author name, date, or updated on anywhere in the body text.\n"
               "- Start immediately with the core article content and paragraphs.]"
           )
 

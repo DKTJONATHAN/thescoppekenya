@@ -168,7 +168,7 @@ jobs:
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 
           BANNED_PHRASES = [
-              "sasa basi", "melting the pot", "spill the tea", "tea is hot",
+              "online debate in Kenya", "ignited a fiery online debate", "sparked a debate across", "caused a lot of online debate", "this April 2026", "this March 2026", "sasa basi", "melting the pot", "spill the tea", "tea is hot",
               "grab your popcorn", "listen up", "buckle up", "breaking news",
               "sherehe", "form ni gani", "udaku", "hello guys", "welcome back",
               "mambo vipi", "niaje wasee", "karibuni", "tapestry", "dive in",
@@ -860,16 +860,13 @@ jobs:
               f'{title_instruction}{angle_instruction}\n\n'
               f'RESEARCH DATA:\n{research_text}\n\n'
               'INSTRUCTIONS:\n'
-              '- Write a complete article of 700-1000 words in HTML format.\n'
               '- TONE: Write like a real human journalist - conversational, direct, opinionated where appropriate. No AI-sounding phrases, no robotic structure.\n'
-              '- EEAT (Experience, Expertise, Authoritativeness, Trustworthiness):\n'
               '  * Experience: Ground claims in real-world observation and Kenyan context. Mention specific places, people, situations.\n'
               '  * Expertise: Show deep knowledge of the topic. No shallow takes.\n'
               '  * Authoritativeness: Write with conviction. No hedging phrases like "it seems" or "some say".\n'
               '  * Trustworthiness: Stick to verifiable facts from the research data. No speculation presented as fact.\n'
               '- INDEPENDENCE: Write from your own expert perspective. NEVER reference, contrast with, or react to what other media outlets say. Do not use phrases like "mainstream media ignores", "what they won\'t tell you", "unlike other reports". Just write your original analysis.\n'
-              '- STRUCTURE: Start with a 30-40 word lede (who/what/where/when). Then use <h2> subheadings and <p> tags. No heading above the lede.\n'
-              f'- BANNED PHRASES (never use any of these): {banned_str}\n'
+              '- STRUCTURE: Start with a 30-40 word lede. NEVER start with "This has caused a lot of online debate in Kenya" or "sparked a firestorm". DO NOT include the current month and year in the opening sentence. (who/what/where/when). Then use <h2> subheadings and <p> tags. No heading above the lede.\n'
               '- Do NOT use markdown - use HTML only.\n'
               '- Do NOT start sentences with "Moreover", "Furthermore", "In conclusion", "It is worth noting".\n'
               '- End your response with the following metadata on their own lines:\n'

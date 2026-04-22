@@ -108,7 +108,7 @@ jobs:
           print(f"Target: {target_country} | URL: {SITE_URL}")
 
           BANNED_PHRASES = [
-              "sasa basi", "melting the pot", "spill the tea", "tea is hot",
+              "online debate in Kenya", "ignited a fiery online debate", "sparked a debate across", "caused a lot of online debate", "this April 2026", "this March 2026", "sasa basi", "melting the pot", "spill the tea", "tea is hot",
               "grab your popcorn", "buckle up", "breaking news", "dive in",
               "delve into", "moreover", "furthermore", "in conclusion",
               "it's worth noting", "a testament to", "navigating the landscape",
@@ -407,7 +407,6 @@ jobs:
               "ARTICLE SNIPPET:\n" + full_raw_text[:1200] + "\n"
               "TASK: Write a new high-CTR, SEO-optimized title for this article.\n"
               "RULES: Focus on major keywords from the content. Do NOT just copy the scraped title. Keep it under 65 characters. Plain reporting tone. No clickbait or hype words.\n"
-              'Output ONLY JSON: {"final_title": "Your New SEO Title Here"}'
           )
           title_text  = gemini_generate(title_prompt, "title")
           final_title = target_title
@@ -424,7 +423,6 @@ jobs:
               "TITLE: " + final_title + "\n"
               "CONTENT: " + full_raw_text[:800] + "\n"
               "Rules: Factual, no clickbait, starts with a verb or the subject, includes the key fact. Output ONLY JSON: {\"excerpt\": \"...\"}"
-          )
           excerpt_text = gemini_generate(excerpt_prompt, "excerpt")
           final_excerpt = ""
           if excerpt_text:
@@ -457,7 +455,9 @@ jobs:
               "'Amara Ndlovu can confirm', 'reporting for Za Ndani', 'as your journalist', "
               "or any first-person self-identification. The author name is a byline only.\n\n"
               "STRUCTURE (follow exactly in this order):\n"
-              "1. A 35-45 word lede paragraph - NO heading above it. Answers who/what/when/where immediately.\n"
+              "1. Start with a 35-45 word lede paragraph (who, what, when, where - no heading above it). This answers the core question immediately.\n"
+              "   - NEVER start with "This has caused a lot of online debate in Kenya" or "sparked a firestorm".\n"
+              "   - DO NOT include the current month and year in the opening sentence.\n"
               "2. ## H2 subheading containing the primary keyword.\n"
               "3. ### subheadings with supporting detail.\n"
               "BANNED PHRASES (never use): " + banned_str + "\n"
@@ -492,7 +492,6 @@ jobs:
               "Title: " + final_title + "\n"
               "Article snippet: " + article_text[:600] + "\n"
               "Rules: factual, no clickbait, starts with the subject or a verb, includes the key news fact.\n"
-              'Output ONLY JSON: {"description": "Your description here"}'
           )
           desc_text        = gemini_generate(desc_prompt, "description")
           meta_description = ""
@@ -511,7 +510,6 @@ jobs:
               "Title: " + final_title + "\n"
               "Country focus: " + target_country + "\n"
               "Rules: lowercase, hyphenated for multi-word, topically specific. "
-              "No generic tags like 'news', 'africa', or 'entertainment'.\n"
               'Output ONLY JSON: {"tags": ["tag-one", "tag-two", "tag-three", "tag-four"]}'
           )
           tags_text    = gemini_generate(tags_prompt, "tags")

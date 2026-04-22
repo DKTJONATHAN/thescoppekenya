@@ -229,7 +229,7 @@ jobs:
           MODELS_TO_TRY = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
 
           BANNED_PHRASES = [
-              "sasa basi", "melting the pot", "spill the tea", "tea is hot",
+              "online debate in Kenya", "ignited a fiery online debate", "sparked a debate across", "caused a lot of online debate", "this April 2026", "this March 2026", "sasa basi", "melting the pot", "spill the tea", "tea is hot",
               "grab your popcorn", "listen up", "buckle up", "breaking news",
               "sherehe", "form ni gani", "udaku", "hello guys", "welcome back",
               "mambo vipi", "niaje wasee", "karibuni", "tapestry", "dive in",
@@ -850,7 +850,9 @@ jobs:
               "BODY:\n"
               "[Article body.\n"
               "STRUCTURE (follow exactly in this order):\n"
-              "1. A 35-45 word lede paragraph - NO heading above it. Answers who/what/when/where immediately. This is used as a Google Featured Snippet.\n"
+              "1. Start with a 35-45 word lede paragraph (who, what, when, where - no heading above it). This answers the core question immediately.\n"
+              "   - NEVER start with "This has caused a lot of online debate in Kenya" or "sparked a firestorm".\n"
+              "   - DO NOT include the current month and year in the opening sentence.\n"
               "2. ## H2 subheading that contains at least one PRIMARY KEYWORD.\n"
               "3. ### subheadings with supporting paragraphs that reuse PRIMARY KEYWORDS naturally.\n"
               "DO NOT include title, author name, date, or any metadata in the body.]"
