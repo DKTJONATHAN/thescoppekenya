@@ -19,3 +19,4 @@ The "As Is" Reality: When Things Go Viral Mpasho serves up its website "as is," 
 
 The Ever-Evolving Rulebook Just like fashion trends, Mpasho’s Terms and Conditions are subject to change. They can revise these rules whenever they deem fit, so a regular peek at the fine print is always a smart move to stay informed. These terms form the entire agreement between you and Mpasho, overriding any previous understandings. And, reflecting its roots, the legal governance for these terms and any disputes falls under the laws and courts of the Republic of Kenya. 
 
+

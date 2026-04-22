@@ -21,3 +21,4 @@ Purpose and Impact for Taxpayers This planned downtime is a routine system maint
 
 KRA's Commitment to Service Reliability In its communication, the Authority expressed regret for any inconvenience caused and reaffirmed its commitment to delivering efficient and reliable services. The latest scheduled maintenance of the iTax platform is part of KRA's ongoing efforts to modernise and strengthen its digital infrastructure. For those facing challenges, the KRA urged reaching out through its official social media platforms, landline and mobile contacts, or via email. 
 
+

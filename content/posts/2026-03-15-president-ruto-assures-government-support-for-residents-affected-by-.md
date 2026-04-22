@@ -19,3 +19,4 @@ Multi-Agency Efforts Intensify President Ruto confirmed that the established mul
 
 Aid Distribution and Public Safety Directives The government, in collaboration with the county government, will sustain its efforts to deliver essential emergency food supplies and medical assistance to all affected individuals. Ruto emphasized the continuous monitoring of the situation and urged strict adherence to advisories from relevant authorities, including the Kenya Meteorological Department and the police. "These advisories are issued for your safety, and adherence to them will help us protect lives during this challenging period," Ruto stated. Za Ndani previously reported on the vital role of emergency services during other incidents affecting residents, such as the night fire that engulfed a building in Kangemi, where investigations are currently underway. 
 
+

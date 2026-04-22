@@ -23,3 +23,4 @@ Diversions and Motorist Advisory To ease the severe congestion, a diversion has 
 
 Broader Traffic Management Initiatives This traffic alert coincides with other significant governmental efforts to improve infrastructure and manage traffic within Mombasa. Currently, demolitions of structures adjacent to road reserves and around Kongowea Lights are underway. Additionally, the County Government of Mombasa, under Governor Abdulswamad Nassir's administration, implemented a temporary three-month restriction on heavy commercial vehicles exceeding ten tonnes. This restriction, which began on April 3, 2026, and is set to continue until July 1, aims to reduce congestion and enhance traffic flow during peak hours on designated roads. 
 
+

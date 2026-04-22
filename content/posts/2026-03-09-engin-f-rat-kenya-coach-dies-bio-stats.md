@@ -19,3 +19,4 @@ A Final Chapter in Lebanon and Lingering Impressions After his impactful time wi
 
 Tributes Pour In: A Lasting Impression Tributes have since poured in from the Kenyan football community and across the various countries where he worked. He is remembered as a dedicated professional who left a positive impact on the players and staff he led. His sudden absence leaves a profound sadness, reminiscent of other respected figures whose departures have recently touched the nation, like [Easy Coach Founder Azym Dossa](https://zandani.co.ke/article/easy-coach-founder-azym-dossa-dies), who also left an indelible mark in his field. Fırat's vibrant spirit and commitment to the beautiful game will truly be missed. 
 
+

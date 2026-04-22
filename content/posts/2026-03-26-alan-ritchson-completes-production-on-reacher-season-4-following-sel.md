@@ -15,3 +15,4 @@ Self-Defense Standoff The Brentwood, Tennessee police swiftly concluded their in
 
 Back in the Booth Despite the intense week, Ritchson wasted no time returning to his professional commitments. He posted a video on Instagram from a recording studio on Wednesday, March 25, 2026, confirming he had officially completed production on season 4 of the popular Prime Video series. "Happy to be back in the booth after such a crazy week," he captioned, adding that this season is "without a doubt the most gripping season yet." He humorously referenced the incident with his motorbike, stating, "Firing on all cylinders… as it were." Ritchson, who became a major star after *Reacher*'s 2022 debut, has a busy slate. Beyond the fourth season, fans can anticipate his appearance in the upcoming spinoff, *Neagley*. He also recently graced screens in Netflix's action movie, *War Machine*. 
 
+

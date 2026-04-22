@@ -15,3 +15,4 @@ The Russini Resignation: Photos and Explanations The catalyst for the online upr
 
 Froyd's Rebuttal: Dating a Player is Different The saga intensified on Friday when Froyd defended herself against accusations of hypocrisy, particularly regarding her own past relationships. Addressing claims about dating a player, Froyd clarified to Page Six that her relationship with former football player JT Daniels was consensual and public. She stated they dated from December 2023 to September 2025. Daniels had concluded his playing career on December 1, 2023, and later served as an offensive analyst for the University of West Georgia in the fall of 2024. Froyd drew a clear distinction, asserting that her past relationship with a player, which held no professional gain for her, differs significantly from the allegations surrounding Russini. 
 
+

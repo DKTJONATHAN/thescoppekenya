@@ -17,3 +17,4 @@ New Leadership for the Residual Special Court for Sierra Leone During the same p
 
 The Enduring Mandate of the Residual Special Court for Sierra Leone The Residual Special Court for Sierra Leone plays a crucial role in international justice, continuing the legal responsibilities of the former Special Court for Sierra Leone, whose mandate concluded in December 2013. Its work encompasses supervising prison sentences, safeguarding witnesses, preserving court archives, and supporting national prosecution efforts related to the civil war. Justice Lenaola's election to lead this vital institution further solidifies Kenya's standing in global judicial bodies, reflecting the nation's commitment to the principles of international law and accountability. His leadership is expected to strengthen the RSCSL's ongoing work in upholding justice and managing the Court's remaining duties efficiently. 
 
+

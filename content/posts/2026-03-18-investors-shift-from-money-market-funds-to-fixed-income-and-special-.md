@@ -23,3 +23,4 @@ Enduring Appeal of Money Market Funds Despite the rising competition and the shi
 
 Major Players in the Money Market Fund Sector Current CMA data identifies Sanlam MMF as the market leader, managing Ksh114.16 billion in assets, which represents 27.1 percent of the market. CIC MMF follows, holding Ksh78.93 billion, accounting for 18.7 percent. Other significant players include ABSA Shilling MMF with Ksh26.18 billion, Old Mutual MMF at Ksh24.28 billion, and Co-op MMF with Ksh21.61 billion. ICEA Lion, KCB, Ziidi, Britam, and Etica Money Market Funds also rank among the top ten, each overseeing substantial investor funds. 
 
+

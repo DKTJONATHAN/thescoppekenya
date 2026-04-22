@@ -18,3 +18,4 @@ Under the Bonnet: Power and Privacy Processor-wise, the S26 Ultra is flexing its
 
 The Bottom Line: Pricey but Punchy? Now, for the big one: the price. Unsurprisingly, with all these bells and whistles, the price tag has seen a bit of a bump, with some models reportedly increasing by $100. In India, the base S26 is setting folks back between ₹79,999 and ₹82,999, while the Ultra could go upwards of ₹1,60,000. Is it worth splashing out for? Well, if you're after the very latest in mobile AI, top-tier photography, and a genuinely slick user experience, then the Samsung Galaxy S26 series certainly seems to deliver. But for the average punter? You'll have to weigh up those shiny new features against the cost, won't you? 
 
+

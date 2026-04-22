@@ -21,3 +21,4 @@ Official Recruitment Policy and Channels Kenya Railways reiterated that it does 
 
 Teachers Service Commission Also Targeted Kenya Railways is not the sole entity facing fraudulent recruitment attempts. The Teachers Service Commission (TSC) also flagged a fake recruitment drive on Monday, April 20, 2026, which purported to seek over 2000 teachers on permanent and pensionable terms for Junior Schools. TSC warned the public that authentic job vacancies, recruitment guidelines, adverts, and official information are available only on its official website, verified official communication channels, and recognized national media outlets. This incident follows previous reports of fraudulent schemes involving fake TSC recruitment letters. For more details on past TSC-related challenges, refer to Za Ndani's report on [TSC's Cruel Blunder: Fred Apima Obita TSC Ruling Exposes Rot](https://zandani.co.ke/article/tsc-cruel-blunder-fred-apima-obita-tsc-ruling-exposes-rot). 
 
+

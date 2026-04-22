@@ -21,3 +21,4 @@ Official Acknowledgment and Outage Statistics President Ruto first publicly ackn
 
 Government's Long-Term Energy Strategy To counter the persistent energy challenges, the government plans to utilize the newly established National Infrastructure Fund (NIF). The objective is to increase energy production to the national grid by at least 10,000 megawatts within the next five to seven years. This projected increase would be sufficient to meet the current electricity demand approximately four times over. Such significant infrastructure development is vital for national economic growth and progress. Parallel efforts are also underway, as the Ministry of Education finalises a competency-based curriculum framework for universities. 
 
+

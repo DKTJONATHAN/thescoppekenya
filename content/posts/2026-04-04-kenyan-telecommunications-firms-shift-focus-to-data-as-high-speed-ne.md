@@ -17,3 +17,4 @@ Smartphone Penetration Drives Data Boom The underlying factor fueling this data 
 
 Market Competition and Strategic Responses For Kenyan telcos, data services have transitioned from supplementary offerings to core telecommunications products. Safaricom holds a significant market share in mobile broadband at 64.3 percent, with Airtel Kenya at 32.0 percent, collectively dominating the market. The evident consumer appetite for high-speed mobile internet, coupled with the increasing affordability of 5G phones and a preference for data-reliant communication platforms, intensifies competition. Operators are responding by refining their data offerings and connection reliability. Airtel Kenya, for instance, has introduced home fibre services and recently concluded a pilot program for mobile-to-cell satellite services in Kenya, strategically positioning itself for future growth in this evolving landscape. 
 
+

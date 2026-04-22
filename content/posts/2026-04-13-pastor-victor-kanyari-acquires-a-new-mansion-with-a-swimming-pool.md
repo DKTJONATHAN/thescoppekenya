@@ -21,3 +21,4 @@ Luxury Living for the Family The grandeur of the investment was prominently disp
 
 Ensuring Stability for Sky and Danny While Pastor Kanyari has returned to his signature high-energy public persona, often using his platform to celebrate his financial success, this move carries a deeper significance for his family. By providing this new environment, the preacher appears focused on ensuring stability and comfort for Sky and Danny as they navigate life after the loss of their mother. The acquisition of such a significant property sparks considerable public interest, much like the ongoing curiosity surrounding various public figures and their personal journeys, prompting questions such as "Who is Iyanii, Where Was He Born, How Rich Is He?". 
 
+

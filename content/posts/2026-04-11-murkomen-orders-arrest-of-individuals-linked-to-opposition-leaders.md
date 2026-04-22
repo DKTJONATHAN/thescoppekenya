@@ -21,3 +21,4 @@ PS Omollo's Link and Condemnation The Interior Cabinet Secretary also addressed 
 
 Legal Action in Kisumu The directive follows a recent assault on Vihiga Senator Geoffrey Osotsi at a Kisumu coffee house, leaving him seriously injured. Osotsi was subsequently airlifted to a Nairobi hospital, where he remains admitted. Leaders across the political spectrum have denounced the attack, which was captured on CCTV footage. In a related development, a Kisumu court has ordered suspects linked to the assault to remain in custody at Kisumu Central Police Station for seven days to allow for further investigations. Resident Magistrate Daniel Chumba directed a forensic audit of the CCTV footage as investigators finalize the case, with the prosecution recommending charges of robbery with violence. 
 
+

@@ -21,3 +21,4 @@ Removal of Significant Tariffs Under the new agreement, Kenyan agricultural prod
 
 FOCAC Framework and Future Cooperation Ambassador Guo Haiyan reaffirmed China's commitment to strengthening agricultural cooperation with Kenya within the framework of the Forum on China-Africa Cooperation (FOCAC). This framework will support enhanced market access for products, bolster agricultural value chains, and improve technical cooperation and capacity building. Cabinet Secretary Kagwe encouraged businesspeople to collaborate with Chinese companies to establish agro-processing industries locally, specifically for exports destined for China. 
 
+

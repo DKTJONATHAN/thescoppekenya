@@ -21,3 +21,4 @@ Bolstering National Reserves The Central Bank of Kenya, in its weekly bulletin d
 
 Key Corridors and Economic Pressures North America, notably the United States, and Europe continue to serve as the primary corridors for the nation's diaspora remittances. A growing volume also originates from the Gulf states, reflecting an expanding migrant worker population in that region. The Central Bank bulletin, however, did not provide a breakdown of the March figures by specific source corridor. The surge in March remittances arrives at a critical juncture for the domestic economy, concurrent with a significant jump in fuel prices. Petrol is now retailing at Ksh197.60 per litre, with diesel at Ksh196.63 per litre. This is expected to intensify economic pressure and contribute to an anticipated increase in inflation over the coming weeks. 
 
+

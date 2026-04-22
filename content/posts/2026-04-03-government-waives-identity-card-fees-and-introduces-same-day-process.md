@@ -23,3 +23,4 @@ Dispelling Misinformation on Foreigner IDs Kipsang also addressed and dismissed 
 
 Unclaimed Documents and Service Delivery Concurrently, Huduma Kenya has urged individuals to collect their unclaimed identification documents, including national IDs, smart driving licences, and birth certificates, from various service centres nationwide. On Wednesday, April 1, 2026, Huduma Kenya revealed that thousands of critical personal documents remain uncollected. According to the agency, at least 152,398 national IDs, 85,550 smart driving licences, and 28,550 birth certificates are currently awaiting collection in government offices across the country. 
 
+

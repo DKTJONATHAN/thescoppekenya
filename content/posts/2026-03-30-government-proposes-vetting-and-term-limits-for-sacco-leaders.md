@@ -21,3 +21,4 @@ Stricter Education and Professional Standards Education requirements are also pa
 
 Redefining Cooperative Classifications Beyond leadership, the government is also drafting new legislation to refine the classification and regulation of cooperatives. PS Kilemi revealed that a new law aims to define specific types of cooperatives, including transport and housing cooperatives. This reclassification addresses existing ambiguities, such as the operation of various transport collectives under the SACCOs law. Housing cooperatives hold particular significance, with President William Ruto's affordable housing agenda actively reshaping the sector. The cabinet has tasked PS Kilemi's office with developing a framework specifically for regulating housing and investment cooperatives. These comprehensive reforms are intended to restore confidence among individuals who have previously lost funds due to poorly managed SACCOs. 
 
+

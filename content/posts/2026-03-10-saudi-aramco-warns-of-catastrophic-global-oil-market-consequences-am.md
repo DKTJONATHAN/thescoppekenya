@@ -15,3 +15,4 @@ Kenya's Fuel Outlook and EPRA's Upcoming Review These developments have heighten
 
 Government Addresses Supply Security In response to the escalating situation, Energy and Petroleum Cabinet Secretary Opiyo Wandayi called an emergency meeting with oil marketers and companies supplying fuel under the G-to-G agreement. Speaking during the official listing of Kenya Pipeline Company on the Nairobi Securities Exchange on March 10, 2026, Wandayi sought to alleviate fears of an imminent fuel shortage. He confirmed that the government is engaged in discussions with oil-producing nations participating in the supply agreement. These talks aim to ensure adequate fuel availability through contingency planning. However, uncertainty persists as Kenya awaits EPRA's upcoming pump price announcement. 
 
+

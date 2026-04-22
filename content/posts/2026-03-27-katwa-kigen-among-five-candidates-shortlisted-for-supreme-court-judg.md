@@ -21,3 +21,4 @@ Selection Process and Public Engagement The Judicial Service Commission initiate
 
 Vacancy and Appointment Process The vacancy at the Supreme Court arose from the death of Justice Mohamed Ibrahim, who passed away on December 17 last year after an extended illness. Upon the completion of the interviews, the Judicial Service Commission is expected to forward its nominee to President William Ruto for appointment, in accordance with Constitutional requirements. 
 
+

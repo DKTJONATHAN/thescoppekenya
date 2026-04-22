@@ -17,3 +17,4 @@ Tanzanian Market Growth Tanzania presents a fertile ground for such payment inno
 
 Collaborative Innovation The success of this tap-to-pay feature stems from a strategic collaboration. Visa provides the global payment network, ensuring widespread acceptance. Paymentology secures transactions through advanced tokenization technology. Vodacom Tanzania and M-Pesa Africa deliver the platform and customer base. This partnership aims to establish tap-to-pay as a standard for everyday transactions, prioritizing convenience and versatility for millions of users. Epimack Mbeteni, M-Pesa Director at Vodacom Tanzania, emphasized the realization of giving M-Pesa customers the ability to tap and pay using only their phones. Anna Porra, Chief Revenue Officer at Paymentology, highlighted their pride in supporting the initiative with next-generation payment capabilities. 
 
+

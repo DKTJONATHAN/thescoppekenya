@@ -21,3 +21,4 @@ Geopolitical Tensions Blamed for Hikes Wandayi attributed the escalation in fuel
 
 Economic Ripple Effects Anticipated Following the price increases, Public Service Vehicle (PSV) operators have announced a fare hike of at least 25 per cent across all routes. This is expected to trigger a corresponding increase in the prices of goods and other services throughout the country. 
 
+

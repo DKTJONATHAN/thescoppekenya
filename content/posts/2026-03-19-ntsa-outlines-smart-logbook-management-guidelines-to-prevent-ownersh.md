@@ -25,3 +25,4 @@ Risks for Imported Vehicle Buyers Buyers of imported vehicles face unique risks.
 
 Securing Financial Arrangements For sellers offering vehicles on instalments, retaining ownership until full payment is made provides legal protection. Agreements should be structured accordingly, ensuring insurance policies recognize the seller's financial interest throughout the repayment period. Conversely, hire purchase buyers are encouraged to verify logbook authenticity before committing. This includes requesting stamped copies marked as true copies and following up once registration is completed to avoid disputes over ownership or delayed documentation. By adhering to these guidelines, motorists can maintain compliance with NTSA regulations. 
 
+

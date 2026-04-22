@@ -15,3 +15,4 @@ Incidents That Raise Eyebrows The legislator didn't just speak in generalities; 
 
 Haiti's Shadow Over Kenya In a particularly stark comparison, Odhiambo evoked the spectre of Haiti, a nation long plagued by widespread gang violence. She warned that if Kenya continues down this path of unchecked gangsterism, it could eventually face a similar crisis, potentially requiring international assistance to restore order. It's a sobering thought that shifts focus from everyday concerns, like Kenya Power asking customers to grant access for a new digital meter reading system, to the very foundation of national security. The MP's message is clear: the time for decisive action is now, before the vibrant spirit of Kenya is overshadowed by the dark clouds of lawlessness. 
 
+

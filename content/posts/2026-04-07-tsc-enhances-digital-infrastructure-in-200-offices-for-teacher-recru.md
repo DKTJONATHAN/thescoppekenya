@@ -21,3 +21,4 @@ Strengthening Database Infrastructure A critical component of this initiative in
 
 Preparing for Mass Recruitment The digital infrastructure upgrade directly supports the government's plan to recruit 20,000 additional teachers by the close of 2026. Enhanced systems are expected to facilitate the processing of a high volume of recruitment applications and manage increased administrative demands efficiently. This development also aligns with recent directives requiring unemployed registered teachers to submit their data to TSC, ensuring the commission's systems are prepared for heightened activity. The April 21, 2026, submission deadline for tenders indicates a rapid progression towards the implementation of these vital upgrades. 
 
+

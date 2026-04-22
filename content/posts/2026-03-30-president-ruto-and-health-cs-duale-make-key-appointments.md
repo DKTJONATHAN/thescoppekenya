@@ -23,3 +23,4 @@ Transport Sector Adjustments Transport Cabinet Secretary Davis Chirchir made app
 
 Water Sector Appointment Water Cabinet Secretary Eric Mugaa concluded the series of appointments by naming Beatrice Kanuthu Muchina as a member of the Central Rift Valley Water Works Development Agency Board, for a period of three years. These extensive leadership changes reflect ongoing efforts to streamline public service delivery, aligning with broader governmental fiscal strategies as previously reported by Za Ndani regarding the [Govt Leans on Local Lenders as Debt Jumps by 1.3T in 2025: Kenya's Evolving Fiscal Strategy](https://zandani.co.ke/article/govt-leans-on-local-lenders-debt-jumps-by-1-3t-in-2025-fiscal-strategy). 
 
+

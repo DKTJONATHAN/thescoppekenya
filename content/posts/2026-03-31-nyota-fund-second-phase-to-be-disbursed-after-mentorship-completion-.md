@@ -23,3 +23,4 @@ Business Expertise Classroom Training Set for April Following the completion of 
 
 World Bank Funding and Youth Empowerment Initiatives The NYOTA program is substantially supported by the World Bank, which has contributed to a total project cost of approximately Ksh 25.8 billion (USD 200 billion). Beyond direct business support, these funds are also channeled into the On-the-Job Experience (OJE) program. This initiative focuses on apprenticeships and workplace learning, targeting 90,000 youth. Under the OJE program, each beneficiary receives a monthly stipend of Ksh 6,000 for six months, fostering practical skills and industry-relevant expertise through hands-on experience with employers. 
 
+

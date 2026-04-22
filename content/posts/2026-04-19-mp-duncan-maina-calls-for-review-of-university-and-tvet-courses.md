@@ -21,3 +21,4 @@ Political Focus Overshadows Education Needs The legislator warned that political
 
 Graduate Unemployment and Skills Gap Maina's concerns are timely, given the persistent issue of graduate unemployment. Reports from the Ministry of Education indicate that out of approximately 50,000 university graduates each year, fewer than 40 percent secure employment, leaving over 60 percent struggling to find meaningful work. This significant unemployment rate is compounded by a substantial gap between the skills taught in universities and those desired by employers, who increasingly value practical experience, digital proficiency, and essential soft skills. 
 
+

@@ -17,3 +17,4 @@ Scope of Medical Evaluations The medical evaluations conducted at these authoris
 
 Implications for Unfit Drivers As per the Traffic Act, drivers who are found to be medically unfit following an examination may be advised to seek appropriate treatment. Such individuals can then reapply for certification once their medical condition has been addressed and deemed suitable for safe driving. This provision highlights the NTSA's commitment to both driver welfare and public safety, offering a pathway for individuals to regain their driving privileges after rectifying health concerns.
 
+

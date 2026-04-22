@@ -25,3 +25,4 @@ Anticipation Builds for Guest Appearances The "Davido & Friends" branding has sp
 
 A Year of Milestones for Davido Davido's fifth studio album, '5ive,' released in 2025, garnered significant critical acclaim, solidifying his position as a leading global Afrobeats artist. The album's standout track, 'With You,' featuring Omah Lay, notably surpassed 100 million streams on Spotify and earned him a Grammy nomination last year. The "Davido & Friends Festival" represents the latest strategic move in his carefully orchestrated global campaign. The full lineup, once revealed, is expected to generate substantial attention, reflecting the headliner's immense influence and the grand scale of the festival. 
 
+

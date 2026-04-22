@@ -21,3 +21,4 @@ Claims of Physical Force and Community Distress Disturbing claims have emerged r
 
 Calls for Review and Engagement Locals are urging the government to introduce programs that raise awareness and issue warnings, acknowledging that some residents may not be fully informed of the law. There are also calls for improved communication and greater community engagement. As the operation progresses, West Pokot residents are imploring authorities to re-evaluate their approach to rebuild trust and ensure the exercise achieves its intended purpose without causing further harm. "It is upsetting that those who are supposed to promote peace and protect citizens are turning on us," another resident added. Authorities continue various operations across the country, such as the recent bust of a human trafficking ring where 70 foreigners were freed, highlighting the varied nature of security challenges. 
 
+

@@ -65,3 +65,4 @@ Common Themes in Toxic Lyrikali Lyrics - **Hood realities** (Kayole grit) - **Hu
 
 FAQs **What genre does Toxic Lyrikali make?** Kenyan drill/trap/Sheng rap. **Why are Toxic Lyrikali lyrics hard to understand?** Sheng/codes need translations. **Where can I find Toxic Lyrikali lyrics?** YouTube lyric videos, fan breakdowns. **What are the best songs to start with?** Backbencher, Chinje, Sick. **How many songs does Toxic Lyrikali have?** 30+ singles/mixes; growing fast. What's your favorite Toxic track? Comment below and subscribe for more Kenyan music breakdowns! 
 
+

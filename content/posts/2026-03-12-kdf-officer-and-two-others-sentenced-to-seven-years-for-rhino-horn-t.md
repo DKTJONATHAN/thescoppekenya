@@ -15,3 +15,4 @@ Coordinated Security Operation The trio's conviction stems from a security opera
 
 Vehicle Forfeiture and Horn Origin The court has further ordered the owner of a black Toyota Kluger, believed to have transported the rhino horn, to appear before the court on March 18, this year, to provide reasons why the vehicle should not be forfeited to the state. Detectives suspect the rhino horn may have originated from the nearby Ruma National Park, highlighting the persistent threat to protected wildlife areas. 
 
+

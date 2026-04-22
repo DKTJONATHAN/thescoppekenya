@@ -21,3 +21,4 @@ Real-Time Digital Monitoring In a significant technological advancement, the NTS
 
 Addressing Accident Causation The NTSA noted that fatigue, existing medical conditions, and reckless driving continue to be primary contributors to road accidents. According to its Road Safety Status Report 2025, commercial vehicles are an increasingly significant factor in road traffic accidents, accounting for 1,087 cases in 2024, compared to 3,645 for all other vehicle categories. This latest regulatory move is part of the government's wider commitment to implementing data-driven and preventative measures to enhance road safety. 
 
+

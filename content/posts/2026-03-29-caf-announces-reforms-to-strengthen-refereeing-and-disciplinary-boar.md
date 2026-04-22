@@ -23,3 +23,4 @@ Looking Ahead to the FIFA World Cup 2026 Motsepe also confirmed CAF's commitment
 
 Fallout from the 2025 AFCON Final The announcement of these reforms comes days after the CAF appeal board awarded Morocco the 2025 AFCON title. This decision overturned the initial result after Senegal forfeited the final following a walk-off protest on January 18, 2026. Senegal had been leading Morocco 1-0 in the final before refusing to continue the match due to a referee-awarded penalty. This incident resulted in a 17-minute delay and brought intense scrutiny upon CAF’s refereeing and disciplinary procedures. 
 
+

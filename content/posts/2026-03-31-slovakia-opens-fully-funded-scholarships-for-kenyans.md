@@ -23,3 +23,4 @@ Language Requirement and Preparation All studies will be conducted in Slovak. Se
 
 Application Process and Deadlines Interested candidates can obtain application forms from the Ministry of Education offices or download them from the Ministry’s website under the scholarships section. Completed forms, along with certified academic and personal documents, must be submitted to the Director, Higher Education, at the Ministry of Education offices in Nairobi or physically delivered to Room 2701 at Telposta Towers by April 30. Following this, applicants must complete an online application and upload all required documents via the Slovak Government scholarship portal by May 25, 2026. The Ministry stresses strict adherence to guidelines to leverage this international academic exposure opportunity. 
 
+

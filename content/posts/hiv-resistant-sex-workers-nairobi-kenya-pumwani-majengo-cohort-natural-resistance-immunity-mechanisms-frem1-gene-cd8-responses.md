@@ -25,3 +25,4 @@ Late Seroconversion and Limits of Resistance Resistance proves not absolute. Som
 
 Broader Cohort Trends and Prevention Impact Over decades, HIV prevalence in the cohort has declined due to expanded testing, antiretroviral treatment, PrEP, and clinic outreach. Risks remain elevated from violence, stigma, economic pressures, and inconsistent prevention. Yet the resistant subgroup continues informing science on natural barriers. Insights from mucosal IgA, quiescence, CD8+ responses, and genes like FREM1 guide vaccine and prevention research aiming to replicate these mechanisms. In Nairobi's high-risk settings, these women's biology offers valuable clues toward reducing transmission alongside existing tools.
 
+

@@ -16,3 +16,4 @@ Relegation Ruckus - Spurs in Trouble?! Now, here's where it gets juicy. While Su
 
 Off-Pitch Antics and Guardian Insights It's not just on the pitch where the fireworks are happening. We've just seen Chelsea and West Ham United get hit with some hefty fines by the FA for a mass confrontation back in January. Chelsea copped a £325,000 fine, and West Ham £300,000, for failing to ensure their players behaved themselves properly. Bit of a naughty one, that. For those who crave a bit more than just the breaking headlines and want to dive deep into the tactical nuances, or simply enjoy some cracking opinion writing, you know where to look. The Guardian Weekly magazine always offers fresh perspectives and fact-based journalism that goes beyond the surface. (Seriously, for less than the price of a coffee per issue, you can't go wrong for some proper analysis!) 
 
+

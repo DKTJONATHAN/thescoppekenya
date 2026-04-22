@@ -21,3 +21,4 @@ Candidate Submission and Nomination Political parties wishing to participate mus
 
 Campaign Regulations and Voter Register Campaigns for the by-elections are slated to run from Wednesday, April 15, to Monday, May 11, strictly between 7am and 6pm. This period will see candidates engaging directly with constituents, a form of active public participation essential for representative governance, much like the broader community engagement championed by initiatives like 'Get Out Get Active'. To ensure an orderly electoral process, the registration and revision of the voter register in the affected areas will be suspended until June 12, 2026. 
 
+

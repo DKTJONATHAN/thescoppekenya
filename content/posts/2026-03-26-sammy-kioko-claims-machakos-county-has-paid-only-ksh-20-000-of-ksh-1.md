@@ -21,3 +21,4 @@ Public Confrontations and Unanswered Calls The content creator has consistently 
 
 Business Stalled, Vows to Fight On Kioko asserts that the prolonged payment delay has crippled his business operations, leading to significant financial strain. While major infrastructure projects like the Ksh11.5B Riruta-Ngong Rail see construction resume, Kioko's personal enterprise remains stifled by the county's alleged inaction. He has publicly vowed to persist with his campaign until the administration settles the balance in full. As of Thursday, March 26, 2026, the standoff continues to draw significant attention from residents concerned about the county’s procurement and payment processes. 
 
+

@@ -17,3 +17,4 @@ Iconic Voice Enters the Ring DJ Afro, also known as James Muigai or DJ Amingos, 
 
 Significant Political and Corporate Endorsements The Vurugu Fight Night has garnered considerable political attention. President William Ruto pledged Ksh1 million to each boxer, totaling Ksh2 million in direct support, delivered publicly through Lang'ata MP Jalang'o. President Ruto explicitly stated his support for both fighters. Additionally, businessman Oketch Salah, affiliated with former Prime Minister Raila Odinga, contributed Ksh200,000 in cash. Kasarani MP Ronald Karauri also reportedly pledged a substantial Ksh2 million towards the event. The duel has attracted numerous corporate sponsors. One primary partner officially joined the event and unveiled a brand-new Toyota Noah as the ultimate prize for the victor. With thousands of fan tickets available, the Kasarani Indoor Arena is prepared to host a significant crowd for the event this weekend. 
 
+

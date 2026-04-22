@@ -19,3 +19,4 @@ Commission Appointments Details The nominations underscore the government's ongo
 
 Bishop Omae's Background Kepha Nyamweya Omae brings a significant religious background to his nominated role. He currently serves as a senior pastor at Liberty Christian Center and is an ordained minister, holding the position of presiding bishop within the Redeemed Gospel Church Inc. His extensive experience in religious leadership is expected to inform his approach to matters of national cohesion and integration. 
 
+

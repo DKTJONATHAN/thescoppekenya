@@ -15,3 +15,4 @@ Economic Indicators and Government Policy Co-op Bank's robust growth across key 
 
 Job Creation and National Development The growth in Co-op Bank's staff numbers to 6,235, with 372 new jobs created in 2025, directly addresses a critical political issue: employment. The private sector's ability to generate jobs is a key metric for evaluating the success of national development strategies and government policies. This expansion aligns with the broader objective of the Bottom-Up Economic Transformation Agenda (BETA), which emphasizes job creation and inclusive growth. The bank's performance, alongside that of its subsidiaries, demonstrates a thriving financial sector that contributes significantly to the national economy's resilience and stability. Kenya's financial system is considered mature in East Africa, with top-tier banks contributing substantially to the country's GDP growth. 
 
+

@@ -15,3 +15,4 @@ Tragic Events and Disease Outbreaks Drive Reflection Muthoni attributed her rece
 
 Viral TikTok Video Clarified The video, which PS Muthoni posted on TikTok on Saturday, March 7, captured public attention due to her seemingly emotional state. Despite speculation, Muthoni insisted she had not cried in a considerable period. She described the video, which features an inspirational gospel song and has garnered over 158,000 impressions and 5,308 likes, as her personal method of engaging with the realities confronting Kenya. "This is just my way of connecting with people," she affirmed. 
 
+

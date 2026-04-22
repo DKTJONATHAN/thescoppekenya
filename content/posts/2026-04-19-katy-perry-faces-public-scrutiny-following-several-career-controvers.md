@@ -29,3 +29,4 @@ Space Trip to Public Scrutiny In 2025, Perry was among several celebrities who e
 
 The Ongoing Name Battle Just last month, in March 2026, Perry concluded a 17-year legal battle against Australian fashion designer Katie Taylor (née Perry). 
 
+

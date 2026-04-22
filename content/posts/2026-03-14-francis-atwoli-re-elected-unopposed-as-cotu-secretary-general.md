@@ -13,3 +13,4 @@ Unopposed Re-election in Kisumu The delegates' meeting, held today, Saturday, Ma
 
 Continued Advocacy Amidst Economic Pressures Atwoli has consistently been a central figure in advocating for workers' rights and collective bargaining agreements across the country and the region. His continued leadership at COTU comes at a crucial time when workers are facing considerable economic pressures. These challenges include rising living costs and persistent unemployment, making the role of strong labour representation increasingly vital. Atwoli's renewed mandate positions him to continue addressing these critical issues on behalf of the working population. 
 
+

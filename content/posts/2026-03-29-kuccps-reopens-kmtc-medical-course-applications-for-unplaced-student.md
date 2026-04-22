@@ -23,3 +23,4 @@ Previously Reopened Courses Prior to this latest announcement, KUCCPS had reopen
 
 Available Programmes Among the diploma courses reopened are Diploma in Health Records and Information Technology, Diploma in Radiography and Imaging, Diploma in Medical Laboratory Sciences, Diploma in Occupational Therapy, Optometry, Orthopaedic Technology, Physiotherapy, Medical Engineering, and Medical Social Work. Certificate courses available include Certificate in Medical Engineering, Nutrition and Dietetics, Health Records and Information Technology, and Public Health. Prospective students can find detailed application instructions by clicking "Student's Portal" in the menu of items on the KUCCPS website and following the outlined process. 
 
+

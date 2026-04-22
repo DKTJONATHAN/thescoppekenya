@@ -21,3 +21,4 @@ Industry Raises Safety Concerns Industry stakeholders, including the Kenya Airli
 
 Wilson Airport Incident Under Investigation In a separate but related development within the aviation sector, KCAA has also confirmed it is investigating an aircraft incident that occurred Friday night, March 20, 2026, at Wilson Airport. A plane reportedly made a hard landing and subsequently veered off the runway. While no injuries were reported, the incident has prompted renewed inquiries and concerns regarding aviation safety standards. 
 
+

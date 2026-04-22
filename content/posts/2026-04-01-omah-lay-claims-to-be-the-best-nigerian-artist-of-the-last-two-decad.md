@@ -19,3 +19,4 @@ The Journey to 'Clarity of Mind' The path to 'Clarity of Mind' has been marked b
 
 Introspection and Vulnerability on the New Album Omah Lay revealed that 'Clarity of Mind,' true to its title, offers an honest and deeply personal exploration of various facets of his life, including his mental health and his candid admissions about his sex life. Fans can anticipate the same level of introspection and raw vulnerability that characterized his commercially successful and critically acclaimed debut album, 'Boy Alone.' Omah Lay maintains that 'Clarity of Mind' is the greatest album in the history of contemporary Nigerian pop music. The complete interview with Omah Lay is available for viewing on Nandoleaks. 
 
+

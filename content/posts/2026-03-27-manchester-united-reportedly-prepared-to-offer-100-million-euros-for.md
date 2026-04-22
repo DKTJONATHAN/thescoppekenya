@@ -13,3 +13,4 @@ The Theatre of the Absurd The notion of Manchester United tabling €100 million
 
 A Lesson Unlearned It seems some clubs are condemned to repeat history, or at least other clubs' history. Chelsea's unsuccessful attempt to sign Lopez in the summer of 2025 has evidently taught Manchester United nothing. ESPN reported Chelsea's interest, and BBC Sport even detailed an offer Lopez was "weighing up" in September 2025, before he ultimately decided to remain at Barcelona. United's reported €100 million bid for a player under a fresh, long-term contract and professing loyalty feels less like a calculated risk and more like a club flailing for relevance in the transfer market, oblivious to the obvious signals. The "versatility and ability to influence different phases of the game" that United reportedly value in Lopez seems a thin justification for such an exorbitant, likely fruitless, pursuit. 
 
+

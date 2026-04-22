@@ -17,3 +17,4 @@ Widespread Impact and Industry Concerns from Imminent Closure The list of compan
 
 The Uncertainty for Employees Amidst Company Closure For employees and other stakeholders of the 117 companies facing imminent closure, the announcement ushers in a period of significant uncertainty. The three-month notice window is a critical period for these firms to regularise their affairs or for stakeholders to prepare for the cessation of operations. The potential for a mass layoff in diverse industries underscores the ripple effect of corporate non-compliance on livelihoods and the broader economic stability. The Registrar's office has urged business owners to diligently check gazette notices and take swift action to avoid deregistration. 
 
+

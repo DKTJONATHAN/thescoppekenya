@@ -19,3 +19,4 @@ Expanding the Tax Base: A Prerequisite for Treasury Tax Reduction Conditions The
 
 The Road Ahead for PAYE, VAT, and Income Tax Reduction While the **Treasury Tax Reduction Conditions** have been articulated, the actual formal submission of these tax reduction proposals to Parliament is still pending, with the budget formulation process and the upcoming Finance Bill remaining in the early stages of preparation. Lawmakers have voiced concerns regarding the proposed reforms and have requested clear timelines for the presentation of the tax reduction proposals. The government's fiscal policy for FY 2026/27 and the medium term is firmly anchored on a growth-supportive fiscal consolidation strategy, prioritizing revenue mobilization, expenditure optimization, and the protection of essential programs. The Treasury expects to finalize these proposals for the 2026 Finance Bill, which will then proceed to Cabinet and subsequently to Parliament for debate and approval. 
 
+

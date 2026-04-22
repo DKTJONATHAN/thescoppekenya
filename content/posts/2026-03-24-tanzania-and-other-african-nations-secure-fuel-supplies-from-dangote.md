@@ -23,3 +23,4 @@ Local Supply Anxieties and Government Response Locally, the scramble has generat
 
 Accusations and Price Disputes The government, however, leveled accusations against oil marketers, alleging fuel hoarding in anticipation of significant price increases in the coming days. The PS stated, "We have sufficient stock in the country, and we had an operational issue with super petrol. In the run-up to the weekend, we have seen a daily rise in petrol prices over the last two weeks because of speculation and panic buying". In contrast, Za Ndani has reported that oil marketers attribute the issue to the Energy and Petroleum Regulatory Authority (EPRA) for not adjusting prices upwards in its most recent review. During its March 14, 2026 review, EPRA maintained Super Petrol prices at Ksh178.28 per liter, Diesel at Ksh166.54, and Kerosene at Ksh152.78 in Nairobi, amidst public apprehension regarding petroleum product costs due to the Middle East conflict. 
 
+

@@ -17,3 +17,4 @@ Military Actions and International Reaction Wine detailed that following his ini
 
 Future Plans Despite his temporary departure, Wine emphasized that his exit from Uganda is not permanent. He stated, "I am announcing my brief exit from the country to handle important work. Over the next few weeks, I will engage with our friends and allies all over the world before returning to Uganda to continue the push for freedom and democracy! For now, let's remain focused and united." His commitment is to persist in the advocacy for freedom and democracy within Uganda upon his return. 
 
+

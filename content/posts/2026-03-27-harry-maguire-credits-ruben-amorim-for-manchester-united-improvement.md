@@ -15,3 +15,4 @@ Carrick's Convenient Comeback Now, with Michael Carrick at the helm as interim b
 
 The Perpetual United Puzzle United's current surge, while welcome for their Champions League aspirations, shouldn't distract from the deeper, systemic issues that have plagued the club for years. Maguire's admission that the club "need bodies in, bodies to help the squad. We need improvement in the squad. We need more bodies" is a familiar refrain, echoing the perpetual recruitment challenges at Old Trafford. This constant need for an influx of talent, regardless of who is in the dugout, highlights a deeper structural problem. The cycle of managerial changes and temporary fixes, often heralded by player endorsements, serves as a stark reminder that true, lasting stability at Manchester United remains an elusive goal. It’s a narrative that resurfaces with alarming regularity, much like certain public figures recounting past events. 
 
+

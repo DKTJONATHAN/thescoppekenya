@@ -15,3 +15,4 @@ Spurs' Perilous Pursuit Tottenham's pursuit of Robertson is a microcosm of their
 
 A Verbal Vow, A Fleeting Promise Fabrizio Romano's "verbal agreement" announcement carries about as much weight as a whisper in a hurricane when a relegation clause is attached. Robertson's commitment to the "THFC project" lasts precisely as long as their Premier League status. If Tottenham drop down, he will simply "ignore his verbal agreement and signed elsewhere." This is not ambition; it is self-preservation, a mercenary move disguised as a career decision. It starkly highlights that in football, a player's word is often only as good as the division a club occupies. 
 
+

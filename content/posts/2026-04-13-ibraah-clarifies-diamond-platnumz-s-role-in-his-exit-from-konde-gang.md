@@ -19,3 +19,4 @@ A Guiding Hand Through Transition During a time when Ibraah was struggling withi
 
 Business and the Speculation of a Signing Despite the close association and invaluable support, Ibraah addressed persistent speculation about him joining Diamond's WCB Wasafi label. He unequivocally clarified that the two have never discussed a possible signing. Ibraah maintained that while fans often anticipate such a move, decisions of that nature are purely business-driven and would only happen if and when the timing is right. He concluded that the personal assistance he received from Diamond was arguably more impactful than any label signing, providing him with the guidance he needed to take control of his career independently. 
 
+

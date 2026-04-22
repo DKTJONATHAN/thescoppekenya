@@ -19,3 +19,4 @@ Demolitions on Riparian Land The collapsed building was situated adjacent to oth
 
 Broader Infrastructure Context This incident occurs amidst broader discussions concerning urban development and infrastructure safety. In a separate but related development, Kenya Railways recently announced traffic disruption on Moi Avenue in Mombasa for bridge repairs, highlighting ongoing efforts to maintain and secure vital transport infrastructure across the country. 
 
+

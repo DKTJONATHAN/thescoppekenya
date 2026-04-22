@@ -21,3 +21,4 @@ Concerns Over Information Circulation and Political Motives The Senator also exp
 
 Linda Mwananchi's Unwavering Resolve Despite the severity of the incident and the alleged threats, Senator Osotsi affirmed that the Linda Mwananchi leaders remain undeterred. He maintained that their planned tour from Nakuru to Kisumu will proceed as scheduled on April 19. 
 
+

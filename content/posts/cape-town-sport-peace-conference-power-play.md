@@ -16,3 +16,4 @@ Youth on the Field: Olympic Values and Future Leaders One of the major themes, a
 
 What's Next for Sport and Peace? The conference organisers were clearly hoping to ignite collaboration amongst stakeholders in the sport and peace arena, taking into account the current state of our world. The fundamental principle of Olympism-"To place sport at the service of the harmonious development of humankind, with a view to promoting a peaceful society concerned with the preservation of human dignity"-was a guiding light. So, while the 12th International Sport and Peace Conference in Cape Town has now taken place, the momentum it aimed to create, the partnerships it fostered, and the focus on youth and global goals, are still very much in play. We'll be keeping an eye out for how these seeds sown in South Africa continue to grow, won't we? Because if sport can help sort out the world's woes, that's a game we can all get behind. 
 
+

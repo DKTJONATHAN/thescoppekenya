@@ -21,3 +21,4 @@ African Footprints on Europe's Elite Stage The continent celebrates its heroes w
 
 Women's Champions League: A Growing Force The excitement extends to the Women's Champions League, where Barcelona, the reigning champions, are embarking on their quest to retain the coveted title this season. The tournament has already seen compelling matchups, including Hacken's surprising 2-1 victory over Real Madrid, showcasing the growing strength and competitiveness in women's football. Lyon also solidified their position at the top of Group B with a decisive 2-0 win against Austrian club St Poelten. These contests underline the burgeoning profile of women's club football, attracting a dedicated and expanding fanbase across the globe. 
 
+

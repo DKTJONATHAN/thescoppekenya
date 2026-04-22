@@ -21,3 +21,4 @@ Strategic Forest Routing A section of the 8.4-kilometre pipeline has been intent
 
 Environmental Safeguards and Timeline The Kenya Forest Service (KFS) is overseeing the project within Karura Forest, mandating contractors to align the pipeline along existing pathways to prevent tree felling. Authorities have also committed to restoring any disturbed nature trails once construction concludes. Project completion for the entire pipeline is anticipated by mid-2027. 
 
+

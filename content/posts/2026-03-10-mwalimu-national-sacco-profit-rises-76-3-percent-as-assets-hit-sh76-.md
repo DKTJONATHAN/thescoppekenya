@@ -19,3 +19,4 @@ Capital Restoration Challenges Ahead While the robust surplus, if retained, shou
 
 Equity Growth and Dividend Payouts Total equity for the Sacco grew by 13.7 percent to KSh 11.4 billion. The dividend payout was maintained at 13 percent. However, with the surplus nearly doubling, members at the upcoming Annual Delegates Meeting (ADM) will likely observe that peer Saccos distributed dividends ranging from 15 percent to 20 percent on smaller equity bases, potentially influencing discussions around Mwalimu National's dividend strategy. 
 
+

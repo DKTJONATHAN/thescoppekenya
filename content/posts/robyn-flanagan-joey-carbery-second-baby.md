@@ -16,3 +16,4 @@ Life Beyond the Tackle It's a proper testament to how these sports personalities
 
 A Growing Family, A New Chapter With Beau about to become a big brother, the Carbery-Flanagan household is set to get even livelier. It's a lovely bit of news for the couple, especially with Joey reportedly heading back to Leinster after his time in Bordeaux was cut short by injury. What a way to start a new chapter, eh? More nappies, less tackling (for Joey, anyway, on the pitch!), but undoubtedly a whole lot of love. We'll be keeping an eye out for baby number two, naturally. Will it be another little rugby star in the making, or perhaps a future fashionista like mum? Only time will tell! 
 
+

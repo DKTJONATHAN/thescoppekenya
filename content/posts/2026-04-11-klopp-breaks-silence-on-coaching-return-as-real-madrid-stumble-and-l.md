@@ -25,3 +25,4 @@ Ligue 1 Dominance and Serie A Movements In France, PSG maintains its strong posi
 
 Global Discussions on VAR UEFA has called leagues to a summit to address concerns over the "microscopic" application of VAR. This move signifies an ongoing debate within international football about technology's impact on game officiating.
 
+

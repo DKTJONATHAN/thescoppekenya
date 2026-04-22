@@ -19,3 +19,4 @@ Claim Submission Deadline and Cap The Policyholders Compensation Fund announced 
 
 Regulatory Action Against Insurers The PCF's action follows the Insurance Regulatory Authority (IRA) placing Trident Insurance under statutory management on March 10, 2026, due to financial difficulties. This regulatory move rendered all existing Trident Insurance policies invalid, with the IRA cautioning motorists and stakeholders against acquiring new policies from the company. In the same notice, the IRA also placed KUSCCO Mutual Assurance Ltd and Corporate Insurance Company Ltd under statutory management, in accordance with Section 67C(2)(i) of the Insurance Act. These regulatory interventions reflect broader governmental initiatives to ensure robust oversight and strategic development across diverse sectors, including those where entities like the Kenya Airports Authority seek private investors for crucial service upgrades. 
 
+

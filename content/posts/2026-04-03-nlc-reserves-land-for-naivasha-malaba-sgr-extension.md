@@ -21,3 +21,4 @@ Environmental Impact Assessment Underway The National Environment Management Aut
 
 Contract Awarded to Chinese Firms The government has awarded the Naivasha-Malaba SGR extension contract to two leading Chinese firms: China Communications Construction Company (CCCC) and China Road and Bridge Corporation (CRBC), which successfully secured the tender. These two state-owned multinational engineering companies, both based in Beijing, China, are significant players in the Belt and Road Initiative globally. They are expected to undertake the construction of the remaining sections of the railway, specifically from Naivasha to Kisumu and then to Malaba, at an estimated cost of Ksh700 billion ($5.4 billion). Once completed, the Naivasha-Malaba line is expected to facilitate faster cargo and passenger transport between the nation and neighboring countries. 
 
+

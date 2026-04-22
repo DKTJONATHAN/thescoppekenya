@@ -21,3 +21,4 @@ Unclear Circumstances and Police Inquiry The exact circumstances surrounding the
 
 Talanta Stadium Development Talanta Stadium, slated for renaming as Raila Odinga Stadium, is presently under construction. The project employs numerous Chinese nationals, drawing attention to this incident. The 60,000-seat facility, which commenced construction in March 2024, is scheduled to host the 2027 Africa Cup of Nations (AFCON). Following a recent inspection by the Senate Committee on roads and infrastructure, the completion date for the stadium was revised, with works now anticipated to conclude by June 2026. 
 
+

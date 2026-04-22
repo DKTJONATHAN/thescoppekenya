@@ -19,3 +19,4 @@ Integrity Over Influence Kebaso has long cultivated a reputation as a fierce adv
 
 Sparking National Dialogue Amidst 2026's ongoing discussions surrounding integrity, transparency, and accountability in leadership, Morara Kebaso's remarks resonate deeply. He consistently challenges both leaders and citizens alike to prioritize ethical values over immediate financial gain, arguing that genuine, sustainable progress is rooted in principled choices. His reiterated belief that activism and leadership must be driven by purpose and service, rather than monetary incentives, continues to fuel lively online debates regarding the intricate role of money in Kenyan politics and public life. Kebaso's growing influence, particularly among younger audiences on digital platforms, positions him as a notable voice shaping discussions around leadership and accountability in Kenya. 
 
+

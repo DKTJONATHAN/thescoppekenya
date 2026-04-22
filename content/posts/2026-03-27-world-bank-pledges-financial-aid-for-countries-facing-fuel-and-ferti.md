@@ -19,3 +19,4 @@ World Bank Mobilizes Crisis Response The multilateral lender stated on Thursday,
 
 Government Assures Fuel Availability President Ruto addressed the nation on Thursday, March 26, 2026, assuring the public of adequate fuel supplies despite challenges presented by the Middle East conflict and the closure of the Strait of Hormuz. He sternly warned oil marketers against creating artificial shortages or hoarding fuel for profit, stating that the government is closely monitoring the petroleum sector to ensure compliance with licensing conditions. The government's proactive stance is consistent with broader initiatives, such as the recent [Government Creates Four New ICT Directorates: Beyond the Hype of Kenya's Digital Reform](https://zandani.co.ke/article/government-creates-four-new-ict-directorates-major-reform), aimed at reinforcing national stability and economic resilience. 
 
+

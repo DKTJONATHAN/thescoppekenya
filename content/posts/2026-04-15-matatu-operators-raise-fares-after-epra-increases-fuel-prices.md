@@ -23,3 +23,4 @@ Industry Leaders Confirm Fare Increments Albert Karakacha, President of the Mata
 
 Government Measures to Cushion Consumers EPRA indicated that the government has taken steps to mitigate the impact of the price hikes on consumers. This includes a reduction in Value Added Tax (VAT) on petroleum products from 16 per cent to 13 per cent. Additionally, approximately Ksh6.2 billion from the Petroleum Development Levy has been deployed to cushion consumers from the full extent of the price increases. 
 
+

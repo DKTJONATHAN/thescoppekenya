@@ -17,3 +17,4 @@ Mechanism for Appeals and Evidence Motorists who receive fines under the new sys
 
 Continued Manual Enforcement and Clear Road Signage Despite the technological advancements of the instant fines system, Kondiwa noted that certain traffic offenses cannot be captured by cameras. Consequently, enforcement officers, including the National Police Service, will continue to patrol roads and manually enforce regulations where necessary. Additionally, NTSA assures motorists that all camera-monitored sections of roads will be distinctly marked. Clear signage indicating legal speed limits will accompany every speed camera location, informing drivers as they enter designated speed-monitoring zones. Speed limits will be determined by road design and surrounding land use. 
 
+

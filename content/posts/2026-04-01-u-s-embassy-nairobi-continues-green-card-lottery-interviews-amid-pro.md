@@ -21,3 +21,4 @@ Significant National Participation Globally, participation in the lottery is est
 
 Future Announcements Expected General Flock indicated that the Department of State will publicly announce when the pause on the diversity visa program is lifted. He advised applicants to rely solely on credible official communication channels for updates on this critical program. The timeframe for lifting the suspension remains unconfirmed. 
 
+

@@ -23,3 +23,4 @@ Operational Inefficiencies and Inventory Management KEMSA distributed health pro
 
 Project Delays and Governance Lapses Key projects faced substantial delays. A KSh 499.7 million SAP ERP system, contracted in November 2023 for completion by May 2024, was only 70% complete at the audit time. A KSh 3.08 billion warehouse contract from 2018, due in September 2021, remains unfinished, with a subcontractor abandoning mechanical works over seven years ago. KEMSA's strategic plan expired in December 2024 without replacement, breaching a government circular requiring new plans by June 30, 2024. No governance audit was conducted during the year, and the credit policy had not been reviewed in ten years. 
 
+

@@ -21,3 +21,4 @@ Emergency Response and Motorist Warnings KeNHA has dispatched response teams to 
 
 Alternative Routes and Travel Precautions For those whose travel is unavoidable, KeNHA urged motorists to utilize alternative routes. Drivers are also directed to follow instructions provided by police officers and traffic marshals deployed in the area to manage the situation and enhance safety. Due to continued rainfall in the region, road conditions, particularly between Naivasha ICD and Suswa Ranch, have worsened. Travellers who have not yet commenced their journeys are encouraged to delay their trips until the situation improves and floodwaters subside. While awaiting improved travel conditions, readers can find further insights on Za Ndani, exploring diverse topics such as the most streamed artists on Spotify Kenya [https://zandani.co.ke/article/burna-boy-drake-chris-brown-spotify-kenya-earnings-gossip]. 
 
+

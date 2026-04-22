@@ -21,3 +21,4 @@ Deceased Identified and Evidence Recovered Police later identified the deceased 
 
 Inspector General's Directive on Insecurity Inspector General of Police Douglas Kanja dispatched a team of officers on Saturday morning to address the surging crime rate in parts of Meru, including Buuri East, Tigania East and West, and Igembe North, Central, and Mutuati. Kanja stated, "Cattle have been stolen, several lives have been lost, and injuries have been reported. This is totally unacceptable and must be eradicated." He detailed that an elaborate multi-agency security operation has been assembled with the mandate of recovering stolen cattle and mopping up all illegal firearms and ammunition. This operation aligns with broader efforts against criminal elements. 
 
+

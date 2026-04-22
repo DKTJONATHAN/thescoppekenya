@@ -19,3 +19,4 @@ The True Cost of Domestic Violence "Man, this situation is deep. Very deep," is 
 
 A Stark Warning to Our Women The unspoken message from this tragedy and countless others like it is a dire warning to all women: prioritize your safety above all else. 'Watu wetu' are saying it plainly: hoping an abusive partner will change, or clinging to the false promise of a better tomorrow, can literally be a matter of life and death. The streets are talking, and the message is clear: when a relationship turns toxic, when threats become actions, it's like going 'from the pocket straight to the pan.' Far too many women end up 'eating depression raw,' suffering silently until it's too late. The time for quietly enduring abuse is over; walking away and seeking help is not a sign of weakness, but an act of profound self-preservation. The general sentiment on the ground is unambiguous: it's high time these goons learn that a marriage certificate isn't a license to kill. 
 
+

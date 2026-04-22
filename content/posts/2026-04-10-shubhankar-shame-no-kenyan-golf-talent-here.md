@@ -23,3 +23,4 @@ The Myth of Indian Golfers Kenya Community Impact Frankly, the narrative around 
 
 A Plea for Professionalism: This is Not a Holiday This entire episode is a stark reminder that professional sport is not a holiday. It demands unwavering focus, uncompromising dedication, and a deep respect for the host nation and the sport itself. Sharma and Ahlawat, despite making the cut, delivered results that were far from impressive. Sharma finished Tied-48th with a 3-under 67 in his final round, while Ahlawat ended up T-53rd. These are not performances that scream "professional excellence." The next time international golfers grace our greens, they must be held to a higher standard. They are here to compete, to inspire, and to contribute, not to engage in idle chatter and prioritize their "personal life" over their professional mandate. Anything less is an insult to the game and to this nation. 
 
+

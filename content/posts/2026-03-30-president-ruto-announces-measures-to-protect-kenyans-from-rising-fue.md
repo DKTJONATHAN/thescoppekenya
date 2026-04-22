@@ -21,3 +21,4 @@ Food Security Assurances Citizens can anticipate stable food supplies for the im
 
 Sectoral Performance and Export Challenges Despite initial fears, Kenya's tea sector, a significant foreign exchange earner, has demonstrated a 6 percent growth. This resilience is attributed to diversification into new markets and strengthened ties with existing buyers. The ports of Mombasa and Lamu are also experiencing increased cargo activity. Lamu, in particular, has seen a sharp rise in throughput, including the handling of over 4,000 high-value motor vehicles destined for Gulf markets via transhipment. However, the meat export sector has faced significant setbacks due to logistical and freight challenges stemming from the conflict. To address this, President Ruto announced that the Ministries of Trade and Agriculture will collaborate to explore alternative solutions to support affected exporters. 
 
+

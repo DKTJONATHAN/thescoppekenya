@@ -21,3 +21,4 @@ Disqualification and Forfeiture of Achievements Following the ban, Korir has bee
 
 Impact on a Distinguished Career Before this ban, Korir had a distinguished professional career. His most significant victory was at the 2021 New York City Marathon, where he secured his first Abbott World Marathon Major title with a time of 2:08:22, earning approximately KSH 13 million (USD 100,000). Korir also won the Ottawa Marathon twice, in 2019 and again in May 2025. He consistently achieved podium finishes in New York, including a third-place finish in November 2025. His personal best of 2:06:57 was set at the 2023 New York City Marathon. 
 
+

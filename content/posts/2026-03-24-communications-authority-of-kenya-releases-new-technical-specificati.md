@@ -21,3 +21,4 @@ Compliance and Enforcement The Authority urged all stakeholders, including ICT e
 
 Protecting Consumers from Substandard Devices The updated type-approval process is specifically designed to guarantee that communication devices meet national technical and safety benchmarks. This initiative seeks to shield consumers from substandard, counterfeit, or potentially hazardous devices that could disrupt communication networks or compromise user safety. Consumers are strongly advised to purchase phones and accessories exclusively from licensed dealers to avoid acquiring uncertified devices that may be blocked from accessing local networks. This guidance follows the CA's February 10 notice this year, which banned 21 mobile phone brands over licensing and safety concerns, citing an influx of non-type-approved devices posing health risks and network interference. 
 
+

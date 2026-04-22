@@ -23,3 +23,4 @@ Mombasa's Coastal Interlude Down at the coast, Mombasa County's Likoni area will
 
 Elgeyo Marakwet's Quiet Afternoon Elgeyo Marakwet County will also see its share of maintenance, affecting the Katalel Centre area from 11:00 a.m. to 3:00 p.m. Locations expected to be impacted include Kipsoen Polytechnic, Salaba Primary School, Kiplus Centre, Boundary Centre, and Silvan Secondary School. While perhaps less celebrity-dense than Nairobi or Mombasa, the rural calm of Elgeyo Marakwet offers its own unique backdrop for a few hours of quiet reflection for any prominent figures seeking respite from city life. Kenya Power has urged all affected customers to make necessary preparations and to consider all electrical installations as live throughout the maintenance period, emphasizing that these interruptions are crucial for enhancing electricity supply reliability. 
 
+

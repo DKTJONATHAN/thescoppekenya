@@ -21,3 +21,4 @@ Breach of Importation Protocols The 60,000-metric-tonne super petrol consignment
 
 EPRA Issued Exclusion Order In response to the procedural breach, the Cabinet Secretary instructed the Energy and Petroleum Regulatory Authority (EPRA) to immediately exclude the 60,000-metric-tonne consignment from the monthly computation of petroleum product costs. This measure aims to protect consumers from unwarranted price inflation and uphold the integrity of the pricing mechanism. EPRA's role in regulating prices is critical, with recent announcements confirming efforts to manage potential shocks. 
 
+

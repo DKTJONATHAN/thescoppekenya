@@ -29,3 +29,4 @@ The conflict in the Middle East continues to destabilize global markets, leading
 
 The IMF estimates that a 20 per cent rise in international food prices could push over 20 million people in Sub-Saharan Africa into moderate or severe food insecurity. In a downside scenario, regional output could contract by 0.6 per cent, with inflation increasing by an additional 2.4 percentage points above pre-war projections. The global lender urges governments to implement swift, targeted support to shield vulnerable households from rising living costs and advises oil-importing nations to protect social and development spending, avoiding cuts to essential services under fiscal pressure.
 
+

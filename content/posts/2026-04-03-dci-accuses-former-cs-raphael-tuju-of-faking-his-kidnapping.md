@@ -23,3 +23,4 @@ Family's Non-Cooperation Raises Eyebrows The DCI's suspicions were heightened ea
 
 Legal Battle Heats Up for Former CS Following his re-emergence, Tuju was swiftly arrested and booked at the Karen Police Station. He now faces serious criminal charges for allegedly providing false information to public authorities. The legal proceedings took an unexpected turn during court appearances on Tuesday, March 24, 2026, when it was disclosed that Tuju had been admitted to Karen Hospital. While his legal team is vehemently challenging the charges and citing medical concerns, the DCI remains resolute in its commitment to pursue the prosecution. As this high-profile case progresses, all eyes remain on Tuju, whose dramatic shift from a prominent government official to a suspect in a staged kidnapping case has undeniably sent shockwaves throughout Kenya’s political and entertainment circles. 
 
+

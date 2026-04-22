@@ -19,3 +19,4 @@ Public Reporting and Immediate Action The Ministry has further urged residents a
 
 Recent Collapse Incidents in Nairobi (2026) This advisory follows several fatal building collapse incidents within Nairobi alone in early 2026. On February 11, six individuals sustained injuries when a building under construction collapsed at the junction of Racecourse and Kirinyaga Road in Nairobi CBD. Earlier in January, two lives were lost after a multi-storey building under construction in South C estate's Shopping Centre area collapsed. Days later, on January 10, two more individuals died and three were critically injured when another building under construction opposite Karen Community Church along Ngong Road collapsed. 
 
+

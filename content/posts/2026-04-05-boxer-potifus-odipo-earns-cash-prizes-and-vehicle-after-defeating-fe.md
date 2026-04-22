@@ -25,3 +25,4 @@ Prominent Political Support Bolsters Event The Vurugu boxing match, held at the 
 
 Omondi's Future Despite Defeat Despite his defeat, Ferdinand Omondi, “Mbavu Destroyer,” has also secured a promising future. He gained significant social media traction in the build-up to the April 4 fight, leading to several brand endorsements. Omondi is guaranteed to receive Ksh1 million, courtesy of President William Ruto. 
 
+

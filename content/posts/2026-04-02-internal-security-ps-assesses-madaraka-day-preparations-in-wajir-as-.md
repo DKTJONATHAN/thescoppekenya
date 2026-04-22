@@ -21,3 +21,4 @@ Beyond the Stadium: Infrastructure and VIP Readiness The focus extends beyond th
 
 Wajir's Moment in the National Spotlight The decision to host Madaraka Day in Wajir aligns with the government's policy of rotating national celebrations, a strategy aimed at promoting inclusivity and national cohesion. This initiative also promises lasting development benefits for host counties. Dr. Omollo expressed confidence in Wajir's readiness and extended an invitation to all Kenyans to join the celebrations on June 1, 2026. Wajir Governor H.E. Ahmed Abdullahi, North Eastern Regional Commissioner Mr. John Otieno, and Government Spokesperson Dr. Isaac Mwaura were among the key figures present during the inspection, highlighting the high-level coordination involved in this monumental undertaking. 
 
+

@@ -15,3 +15,4 @@ A £400 Million Fiasco The true worry for Arne Slot's side isn't just a single d
 
 Squad Construction: Beyond the Manager Carragher's cynicism extends beyond the manager, touching on fundamental issues within the squad's composition. He posits that even a new manager wouldn't dramatically alter the team's fortunes given the "makeup of the squad, how it's been put together, the lack of options in certain areas". This suggests that Liverpool's current struggles are systemic, rather than merely a tactical oversight by Slot. While the pressure on managers in major competitions is ever-present, much like the intense battles seen in the FKFPL where teams like Leopards are striving to pile pressure on leaders Gor Mahia, Liverpool's woes appear rooted deeper than just the dugout. This structural deficiency raises questions about the long-term vision and recruitment strategies that led to such a significant investment yielding such underwhelming results. 
 
+

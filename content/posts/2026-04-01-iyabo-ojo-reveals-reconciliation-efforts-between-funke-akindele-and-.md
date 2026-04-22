@@ -23,3 +23,4 @@ Filming Conflicts Add Layer Ojo also disclosed a previously unreported subplot c
 
 Ojo Steps Back from Mediation In the aftermath of the viral clip, both Akindele and Abraham have unfollowed each other on Instagram, with Abraham briefly posting, then deleting, a vow to no longer greet Akindele. Public reaction remains divided, with some attributing fault to Abraham for publicizing her cinema complaints, while others acknowledge she could not control fan responses. Ojo's position is unequivocal, stating, "I honestly don't want to get involved anymore. When both parties are ready, they will make peace. I love them both regardless." *The Return of Arinzo* is set to open in cinemas nationwide on April 3, 2026. 
 
+

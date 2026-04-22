@@ -17,3 +17,4 @@ Bid Submissions and Broader KAA Tenders The deadline for bid submissions for all
 
 Ongoing Modernization at Moi Airport Concurrently with these new tenders, Moi International Airport is undergoing significant rehabilitation and modernization. The authority is currently executing a multi-phase infrastructure upgrade focused on improving safety, operational efficiency, and the overall passenger experience. Major works include the rehabilitation of aircraft pavements and the installation of a modern Airfield Ground Lighting (AGL) system, whose groundbreaking occurred in August 2025. 
 
+

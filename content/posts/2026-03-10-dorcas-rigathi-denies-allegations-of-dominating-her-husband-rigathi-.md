@@ -17,3 +17,4 @@ Independent Contributions and Unwavering Advocacy While her visibility certainly
 
 Previous Dismissals and Persistent Speculation The speculation regarding her influence reached a peak in July 2025, sparked by comments from then-National Assembly Majority Leader Kimani Ichung'wah. He had implied she held significant sway over the former Deputy President. Dorcas previously brushed off these insinuations during a meeting with clergy in the United States, labeling the claims utterly ludicrous. Despite the ongoing chatter, her recent interview firmly reiterates her consistent stance: their relationship is built on mutual support and a shared history, not on one partner dominating the other. 
 
+

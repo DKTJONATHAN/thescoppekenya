@@ -21,3 +21,4 @@ Manifestations Across Government Operations The U.S. government's findings indic
 
 Broader Economic Implications Unchecked corruption, the U.S. government emphasizes, can negate the benefits of trade agreements, frustrate economic stabilization efforts, and weaken the integrity of international trading systems. Such practices could interfere with U.S. exports and investments, ultimately limiting economic growth opportunities for partner countries like Kenya. The report underscores that these challenges are not exclusive to Kenya but are significant problems for U.S. companies in multiple countries, including Nigeria, the Philippines, Pakistan, and Laos. 
 
+

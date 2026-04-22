@@ -15,3 +15,4 @@ Political Tensions This recent boycott is not an isolated incident. In March 202
 
 Constituency Initiatives The Kiharu lawmaker has recently shown divergence from the agenda of the Kenyan Kwanza government, focusing prominently on development initiatives within his constituency. Among his recent announcements are free primary education and a subsidized secondary school program in Kiharu, where students pay only Ksh 500, along with free lunch for all learners. 
 
+

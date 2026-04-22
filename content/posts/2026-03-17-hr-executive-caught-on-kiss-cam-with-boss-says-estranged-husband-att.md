@@ -15,3 +15,4 @@ Andrew Cabot's Unforeseen Appearance In a candid interview with Oprah Winfrey, a
 
 The Aftermath and Moving Forward The fallout for Cabot was severe, including "500 to 600 calls a day," doxxing, and even death threats. She broke her silence last December, admitting, "I made a bad decision and had a couple of High Noons and danced and acted inappropriately with my boss". While Cabot had previously stated that Andy Byron was in the process of separating from his wife, Megan, recent photographs show the Byrons together, wearing their wedding rings. Despite the public spectacle and personal turmoil, Cabot remains focused on a message for her children: "You can make mistakes, and you can really screw up. But you don't have to be threatened to be killed for them". 
 
+

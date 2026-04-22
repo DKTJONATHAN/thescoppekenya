@@ -15,3 +15,4 @@ Shabana Coach's Confidence Soars After Recent Victory Shabana FC approaches this
 
 AFC Leopards Face Pressure After Setback Ahead of the Sunday Tie Conversely, AFC Leopards enters this crucial clash under a cloud of recent disappointment. Ingwe suffered a significant blow to their title aspirations, falling 1-0 to KCB on Thursday, February 26, 2026. This defeat has intensified the pressure on Fred Ambani's charges to bounce back strongly, especially with Gor Mahia maintaining a six-point lead at the top of the table. The "Sunday tie" is not just another fixture; it is a battle for redemption and a crucial step in the title chase for both sides. With the "Shabana coach" openly challenging their supremacy, the atmosphere promises to be nothing short of electrifying. Football fans across Kenya are undoubtedly bracing themselves for a spectacle of skill, passion, and tactical brilliance this coming Sunday. 
 
+

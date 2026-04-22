@@ -17,3 +17,4 @@ Proactive Policy Responses Required To mitigate these impacts, Kenya should adop
 
 Avoiding Counterproductive Measures Kenya must exercise caution with open-ended, economy-wide fuel subsidies, as these are often regressive and fiscally unsustainable in the long run. If the Fuel Stabilization Fund is deployed, its objectives, targeting, and timeframe must be clearly defined. Similarly, a sudden tightening of monetary policy by the Central Bank to combat imported inflation should be approached cautiously. Given that the current inflation is cost-push rather than demand-pull, an abrupt increase in interest rates could escalate government domestic debt costs and further strain revenue flows. A more measured approach, akin to South Africa's likely cautious stance, is advisable. Ignoring the crisis or delaying tough decisions risks significant social and political challenges, undermining Kenya's economic stability. 
 
+

@@ -21,3 +21,4 @@ Presidential Counter-Moves from Kisii In a swift rejoinder during his Kisii Coun
 
 Unanswered Questions and Public Whispers Nyoro’s challenge extended beyond mere proposals, raising pointed questions about the opaque nature of the G-to-G import deals. He voiced concerns that such arrangements could be ripe for exploitation and demanded full transparency, drawing a comparison to 2022 when global oil prices were higher but local pump prices lower. This lack of clarity, he warned, might foster “artificial shortages” as dealers grapple with uncertainty, potentially further destabilizing the supply chain and making it harder for Kenyan households to recover from financial shocks. The MP's call for “unprecedented and fast” leadership underlines the growing urgency felt by many. 
 
+

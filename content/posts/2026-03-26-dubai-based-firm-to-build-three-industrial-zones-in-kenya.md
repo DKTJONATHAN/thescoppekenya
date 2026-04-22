@@ -21,3 +21,4 @@ Strategic Partnership and Economic Impact The project will be executed in partne
 
 Addressing National Unemployment This significant investment arrives as the country continues to address high unemployment rates. World Bank reports indicate unemployment accounting for between 5.4 per cent and 5.6 per cent towards the end of 2025. Data from the Kenya National Bureau of Statistics (KNBS) further illustrates that unemployment figures can range from 12 per cent to over 67 per cent, depending on the definition of unemployment and youth age categories. The creation of over half a million jobs is anticipated to significantly contribute to mitigating these national challenges. 
 
+

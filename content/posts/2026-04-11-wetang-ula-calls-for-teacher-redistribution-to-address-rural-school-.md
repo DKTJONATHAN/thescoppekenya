@@ -21,3 +21,4 @@ Case Study: Kolongolo Secondary School The dire situation in some rural schools 
 
 Call for Fair Postings Wetang'ula specifically urged Education Cabinet Secretary Julius Ogamba to ensure teacher postings are handled fairly, without personal preferences for urban stations influencing decisions. He noted that teachers' tendency to favor urban postings has significantly contributed to the national staffing imbalance. This call comes as the Teachers Service Commission (TSC) prepares to upgrade 200 offices across the country, enhancing connectivity and digital infrastructure ahead of a major teacher recruitment drive. 
 
+

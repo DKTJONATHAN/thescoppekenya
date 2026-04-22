@@ -19,3 +19,4 @@ Project Scope and Technological Integration The comprehensive plan details the e
 
 Economic Growth and Enhanced Security The street lighting project arrives nearly two years after Eldoret's elevation to city status, making it Kenya's fifth city following Nairobi, Mombasa, Kisumu, and Nakuru. The Uasin Gishu County Government anticipates immediate and profound impacts, projecting that the initiative will foster a 24-hour economy. Brighter streets are expected to deter crime, significantly enhance public safety, and allow business operating hours to extend well into the night. Silas Leting, the Project Coordinator, stated, "Eldoret City is positioning itself to match the standards of modern cities in developed nations, where innovation, safety, and sustainability drive urban growth by delivering a project of its kind in Sub-Saharan Africa." 
 
+

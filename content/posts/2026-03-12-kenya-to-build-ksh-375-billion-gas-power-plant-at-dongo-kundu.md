@@ -17,3 +17,4 @@ Overcoming Past Delays The Dongo Kundu power project marks a renewed push after 
 
 Complementary Infrastructure and Market Activity In related developments, the Kenya Pipeline Company (KPC) recently completed its Initial Public Offering (IPO), with trading officially commencing on the Nairobi Securities Exchange (NSE) on March 10, 2026. The IPO, which saw a 65 percent stake sale and was oversubscribed at 105.7 percent, raised approximately Ksh106.3 billion (USD823 million), marking the largest IPO for Kenya since 2008. This successful market activity complements the nation's ongoing infrastructure development and reflects confidence in the economic landscape. 
 
+

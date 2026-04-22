@@ -17,3 +17,4 @@ Asset Quality and Capital Strength Loan loss provisions increased by 14.6% to KS
 
 Historical Performance and Shareholder Returns DTB's earnings trajectory demonstrates resilience, with pre-rate-cap profits in 2016 (KSh 7.7 billion) being surpassed by the KSh 10.7 billion profit in 2025, marking a new all-time high after contractions due to interest rate caps and COVID-19 provisioning. Earnings per share followed a similar upward trend, reaching a new record of KSh 33.65 in 2025. The board recommended a final dividend of KSh 9.00 per share, a 28.6% increase from KSh 7.00. This dividend is payable from June 26, 2026, to shareholders on the register at the close of business on May 22, 2026. 
 
+

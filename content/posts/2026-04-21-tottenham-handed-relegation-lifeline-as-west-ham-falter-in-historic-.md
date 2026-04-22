@@ -25,3 +25,4 @@ The Final Stretch: Crunch Fixtures With five games remaining, Tottenham's run-in
 
 Expert Verdicts and Fan Frustrations The consensus among analysts and supporters suggests that 40 points might be the benchmark for safety this year. While 36 points have been enough to survive in every Premier League season since 2015-16, and only six teams have been relegated with 39 or more points in a 38-game season in the past 14 years, this season's intensity may demand more. The tight margins, particularly between London rivals West Ham and Tottenham, indicate the relegation battle will undoubtedly go down to the wire. Pundits and fans increasingly point to Tottenham's lack of momentum and character as a critical factor in their potential demise, predicting their relegation alongside Burnley and Wolves.
 
+

@@ -23,3 +23,4 @@ State-Funded Disposal and Future Identification Once authorized, the state or co
 
 Global Perspectives on Unclaimed Remains Internationally, practices for disposing of unclaimed bodies vary significantly based on cultural norms and available resources. In countries with high cremation rates, such as Japan and India, unclaimed remains are often cremated, regarded as a hygienic and cost-effective alternative to land-intensive burials. Conversely, in some Western contexts, unclaimed bodies may be donated to medical schools or scientific institutions for research or anatomical study, subject to strict legal requirements under the Anatomy Act Cap 249. 
 
+

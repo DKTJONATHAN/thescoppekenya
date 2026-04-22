@@ -25,3 +25,4 @@ A Call to National Leadership and Human Rights Beyond her personal legal battle,
 
 Advocating for Cybercrime Enforcement By unequivocally framing the leak as a criminal act rather than a mere "scandal," Benta joins a growing chorus of public figures advocating for stricter enforcement of the Computer Misuse and Cybercrimes Act. This stance underscores the push for robust legal protections for victims of non-consensual media sharing. The incident adds to ongoing conversations about public figures' privacy, a topic often discussed alongside the high stakes faced by personalities, much like the anticipation surrounding potential contestants for shows such as 'I'm A Celebrity South Africa', where public scrutiny is immense. 
 
+

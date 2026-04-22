@@ -21,3 +21,4 @@ Governors Challenge Allocation The proposed allocation to the counties has recei
 
 Public Participation Details The Division of Revenue Bill was read in the Senate on March 18, 2026, and subsequently committed to the Finance and Budget Committee for consideration. In accordance with standing order 145(5) of the Senate Standing Orders, the Committee is mandated to facilitate public participation and incorporate public views and recommendations into its report to the Senate. Written representations are to be submitted to the Clerk of the Senate. These can be hand-delivered to the Office of the Clerk in the Main Parliament Buildings in Nairobi or sent via email to clerk.senate@parliament.go.ke. The deadline for receiving these memoranda is Thursday, March 26, 2026, at 4:00 p.m. 
 
+

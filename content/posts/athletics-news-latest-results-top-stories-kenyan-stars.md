@@ -29,3 +29,4 @@ Kipchoge's Enduring Legacy and Obama Meeting Marathon legend Eliud Kipchoge, fre
 
 Nairobi's Marathon Preparations Closer to home, the Traffic Department in Nairobi had confirmed major road closures on Sunday, October 26, for the 2025 Standard Chartered Marathon, ensuring the smooth execution of this significant annual event. 
 
+

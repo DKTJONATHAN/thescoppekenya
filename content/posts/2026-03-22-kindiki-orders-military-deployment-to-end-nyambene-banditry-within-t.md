@@ -21,3 +21,4 @@ Recent Attacks and Intelligence Gathering The directive follows recent bandit at
 
 Affected Areas Identified NPS has identified specific areas most impacted by the attacks. In Meru County, these include Buuri East, Tigania East and West, and Igembe North, Central, and Mutuati. Other targeted regions encompass Mukogondo Forest in Laikipia, Lantana and Sereolipi in Samburu East, and Kipsing and Ngaremara in Isiolo. 
 
+

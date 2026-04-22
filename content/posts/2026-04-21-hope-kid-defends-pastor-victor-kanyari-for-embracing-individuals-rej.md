@@ -23,3 +23,4 @@ A Refuge for Controversial Personalities The Salvation Healing Ministry, under P
 
 Beyond Spiritual Guidance Beyond its spiritual offerings, Kanyari's church has also been associated with providing practical assistance, including vital financial support. This aid can be particularly significant for individuals whose livelihoods are severely impacted by online backlash and the subsequent loss of brand partnerships. Hope Kid’s insights add a fresh dimension to the ongoing public discourse surrounding Pastor Kanyari, reframing his often-controversial ministry style as one fundamentally centered on inclusion rather than exclusion. 
 
+

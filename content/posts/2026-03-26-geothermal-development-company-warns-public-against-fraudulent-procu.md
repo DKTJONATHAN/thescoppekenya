@@ -19,3 +19,4 @@ Official Communication and Channels GDC, established in 2008, plays a critical r
 
 Precedent of Similar Warnings This announcement follows a similar caution issued yesterday, Wednesday, March 25, 2026, by the Tana Water Works Development Agency. That agency also alerted the public, suppliers, and contractors about fraudsters making phone calls and inviting individuals to meetings under the false pretense of offering procurement contracts, while demanding advance payments. The Tana Water Works Development Agency stressed that all its legitimate tenders and procurement opportunities are advertised through its official website and newspapers, reiterating that no advance payments are required to secure any contract or opportunity. 
 
+

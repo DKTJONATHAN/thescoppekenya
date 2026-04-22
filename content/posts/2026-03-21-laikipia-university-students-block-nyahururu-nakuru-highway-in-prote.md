@@ -23,3 +23,4 @@ Police Intervention and Traffic Paralysis The demonstrations led to the paralysi
 
 University Confirms Student's Passing In a statement released today, Saturday, March 21, Laikipia University confirmed the incident. The university stated that Hillary Vulimu, registration number HD/COM/3444/25, a first-year Bachelor of Arts in Communication and Media student, was injured during a hiking activity. He was initially transported to Michael Nursing Home in Subukia for immediate first aid before being referred to Nyahururu County Referral Hospital for further medical attention. The university confirmed that an ambulance transfer was coordinated for the referral; however, Vumilu tragically passed away while receiving casualty treatment at the hospital. 
 
+

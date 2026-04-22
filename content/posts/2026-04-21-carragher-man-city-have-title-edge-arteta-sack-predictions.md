@@ -23,3 +23,4 @@ The chasm in attacking quality between Manchester City and Arsenal was laid bare
 
 Perhaps the most baffling aspect of this late-season collapse is Carragher's assertion that Mikel Arteta's job is safe. While loyalty is commendable, it borders on delusion when a team, widely considered the "best squad and the best team" for "the majority of this season," falters so spectacularly with the finish line in sight. To suggest that "most people in this country have felt Arsenal have the best squad" yet they are set to finish trophyless again, begs serious questions about accountability. Previous seasons saw Arsenal as underdogs; this year, the narrative was different, yet the outcome appears depressingly similar. How many "learning curves" can one club endure before genuine change is demanded?
 
+

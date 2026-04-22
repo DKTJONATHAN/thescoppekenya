@@ -19,3 +19,4 @@ Setting the Record Straight The clarification comes as a direct response to pers
 
 Defending a Legacy The scion expressed disappointment regarding the attempts to tarnish his stepfather's reputation, highlighting the long-standing positive relationship within their blended family. He underscored his stepfather's significant contributions and ethical conduct throughout his career and within the family structure, insisting that the sensationalized reports were baseless and harmful. This public defense comes at a time when prominent figures, like Nollywood actress Tonto Dikeh, are often in the spotlight, facing scrutiny and even legal challenges, as seen with her facing a lawsuit over alleged violation of a schoolgirl's rights during a religious ritual in March 2026. 
 
+

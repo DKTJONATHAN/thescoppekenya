@@ -17,3 +17,4 @@ Exposing Cybercriminal Tactics Investigations during Operation Synergia III reve
 
 Strengthening Kenya's Cyber Policing Capabilities The National Police Service (NPS) maintains a longstanding strategic relationship with INTERPOL. This collaboration was further bolstered by the announcement on March 5, 2026, of the INTERPOL Policing Capabilities Foundation Course Module. This permanent curriculum provides specialized training to NPS officers on utilizing INTERPOL's global databases, secure communication channels, and investigative tools. The training is designed to enhance the ability of Za Ndani authorities to identify suspects more rapidly and coordinate cross-border investigations with international partners, reinforcing Kenya's capacity to combat transnational crime. 
 
+

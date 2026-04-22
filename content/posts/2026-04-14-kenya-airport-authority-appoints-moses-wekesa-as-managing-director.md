@@ -21,3 +21,4 @@ Extensive Professional Background Moses Wekesa brings extensive experience in ma
 
 Transition in Leadership Wekesa's appointment concludes a period of interim leadership at KAA. The termination of Alex Gitari's contract in August 2023, following a series of power outages at JKIA, initiated this transition. Henry Ogoye was subsequently appointed Acting Managing Director in August 2023 by then-Transport Cabinet Secretary Kipchumba Murkomen to ensure institutional continuity. Later, Nicholas Bodo assumed the role of Acting Director General in December 2024, as the authority continued its search for a substantive leader. Most recently, Mohamud Gedi served as Acting Managing Director until Wekesa's formal appointment today. The Kenya Airport Authority's advertisement for the position, issued on March 6, 2026, sought a leader capable of guiding the organization's operations in line with market demands and the evolving aviation sector. 
 
+

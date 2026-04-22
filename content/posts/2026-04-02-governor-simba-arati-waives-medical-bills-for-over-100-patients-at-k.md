@@ -23,3 +23,4 @@ Commitment to Quality Healthcare The county government, under Governor Arati's l
 
 Positive Public Reception Arati's gesture of waiving medical bills for patients garnered widespread appreciation from the public. An online user commented, "This is commendable leadership. Waiving medical bills and personally visiting patients during Easter shows true compassion and commitment to the people." 
 
+

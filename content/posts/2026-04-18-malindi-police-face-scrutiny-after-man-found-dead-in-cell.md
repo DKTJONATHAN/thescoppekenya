@@ -21,3 +21,4 @@ Calls for Independent Probe Intensify Vocal Africa and the Malindi Community Hum
 
 Broader Crisis of Custodial Deaths This incident follows closely on the heels of another death in police custody; IPOA has already launched an investigation into the March 29, 2026, death of Benard Cheruiyot at the Keringet Police Station. Authorities at Keringet initially claimed Cheruiyot sustained fatal injuries by repeatedly striking his head against a cell wall. However, Cheruiyot's family has publicly disputed this account, asserting that his body exhibited extensive trauma, including visible injuries to his head, eyes, and mouth, inconsistent with self-harm. Human rights advocates and IPOA officials have labeled Cheruiyot's death as part of a broader "state-sanctioned crisis," noting that 20 individuals have died in police hands during the first four months of 2026. 
 
+

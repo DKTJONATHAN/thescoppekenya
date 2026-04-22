@@ -15,3 +15,4 @@ Nationwide Rollout and Customer Cooperation The OCR system commenced deployment 
 
 Ensuring Customer Safety and Transparency Direct scanning of meters ensures immediate capture of readings within the system, intended to reduce disputes over estimated bills and improve transparency for customers. Kenya Power advises customers to verify the identity of visiting personnel by checking official Kenya Power identification cards. These cards display staff employee numbers and national identity details, serving as a crucial safety measure before granting access to meters within premises. This focus on clear communication and verifiable facts is paramount in today's interactions, whether in utility services or understanding public narratives, such as in [What Daniel Etim Effiong Loves More Than Kids](https://zandani.co.ke/article/what-daniel-etim-effiong-loves-more-than-kids). 
 
+

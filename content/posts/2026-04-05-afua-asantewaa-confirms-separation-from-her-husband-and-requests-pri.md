@@ -19,3 +19,4 @@ Addressing Misinformation and Public Perceptions Her confirmation comes amid a s
 
 Unwavering Commitment to Professional Endeavors Despite the personal challenges, Afua Asantewaa has reaffirmed her steadfast commitment to her professional and advocacy work. She stated that her focus remains on her goals and her determination to continue making meaningful contributions to society. The statement concluded with an apology to anyone who may have misunderstood her comments or felt concerned by recent developments, while expressing gratitude for the ongoing support from her community and partners. 
 
+

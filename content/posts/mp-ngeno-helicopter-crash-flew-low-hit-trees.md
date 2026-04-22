@@ -19,3 +19,4 @@ The Human Cost Beyond the MP Ng'eno Helicopter Crash While the nation mourns MP 
 
 Scrutiny Beyond the Initial Findings on the MP Ng'eno Helicopter Crash The immediate aftermath has seen a swift response from government agencies, with various officials offering condolences and assurances of a thorough probe. The focus must now remain on the integrity of the impending preliminary report and the subsequent full investigation. The public, and indeed Za Ndani, will be watching closely to ascertain whether the findings genuinely address the systemic issues that could lead to an experienced pilot flying low in adverse conditions, or if the report will merely serve as a convenient closure to a politically inconvenient tragedy. True accountability demands more than just identifying proximate causes; it requires a candid examination of the systemic pressures, regulatory gaps, and operational practices that create the conditions for such disasters. 
 
+

@@ -21,3 +21,4 @@ Embu's Coltan Potential and Value The bidding area spans approximately 189 squar
 
 Expanding Mineral Exploitation Initiatives This public tender for coltan mining follows closely on the heels of another significant bid announced by the Ministry for the extraction of niobium at Mrima Hills in Kwale County. This niobium extraction project is anticipated to generate a revenue base of Ksh8.1 trillion, potentially transforming the country’s mineral export landscape. Such strategic initiatives align with broader national development efforts, including vital infrastructure projects such as President Ruto’s announcement for the construction of a 500km Lake Victoria ring road, aimed at bolstering regional connectivity and economic activity. 
 
+

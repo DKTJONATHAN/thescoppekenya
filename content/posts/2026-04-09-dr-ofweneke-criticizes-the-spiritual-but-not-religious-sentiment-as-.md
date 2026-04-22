@@ -21,3 +21,4 @@ Relationships, Faith, and Family Foundations The discussion took a more intimate
 
 Kenya's Evolving Faith Landscape Dr. Ofweneke’s remarks tap into a global trend known as the rise of the "spiritual but not religious," a phenomenon where many, particularly younger generations, prioritize personal spirituality over traditional church attendance. While Christianity remains a dominant faith in Kenya, a noticeable shift is underway among some groups, prompting a re-evaluation or redefinition of conventional religious practices. His comments have since generated mixed reactions online, with some supporting his advocacy for church community and others defending individual expressions of faith beyond organized religion. 
 
+

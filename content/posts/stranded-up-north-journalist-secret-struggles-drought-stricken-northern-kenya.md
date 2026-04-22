@@ -16,3 +16,4 @@ Drought-Stricken Northern Kenya: The Luxe (or Not!) Life of a Reporter Now, whil
 
 Behind the Scenes: Our Stranded Journalist and the Realities of Northern Kenya The official reports focus on the plight of the people, which is, of course, vital. But we’re itching to know about the *personal* plight of the person doing the reporting. Were they lonely? Did they miss their loved ones? What were the late-night thoughts of a journalist *stranded up North* amidst such desolation? These are the human stories, aren't they? The ones the news headlines often miss. Let's just say, it probably wasn't all glamorous camera angles and dramatic voiceovers. More like battling mosquitoes and longing for a proper biscuit. The true realities of covering *drought-stricken Northern Kenya* can be brutal, and our reporter certainly got a taste of it, we hear. Let's hope they're back now, sipping something lovely and telling *all* the tales to their nearest and dearest. 
 
+

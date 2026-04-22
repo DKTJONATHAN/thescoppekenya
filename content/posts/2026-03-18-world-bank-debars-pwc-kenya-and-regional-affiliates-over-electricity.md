@@ -21,3 +21,4 @@ Targeting a Second Contract and Misrepresentations The investigation also reveal
 
 Admission of Guilt and Remedial Actions All three firms ultimately signed a settlement agreement with the World Bank, admitting culpability for the sanctionable practices. This admission played a role in shortening what could have been a significantly longer exclusion period. The firms also undertook a series of voluntary remedial steps, which included launching an internal investigation, taking action against responsible staff, terminating ties with all involved subconsultants, and halting bids for World Bank contracts throughout the settlement discussions. This incident underscores the critical importance of transparent financial practices and robust project oversight within the region. Such scrutiny is a constant in large-scale infrastructure projects, similar to the focus on ensuring compliance in other significant developments. 
 
+

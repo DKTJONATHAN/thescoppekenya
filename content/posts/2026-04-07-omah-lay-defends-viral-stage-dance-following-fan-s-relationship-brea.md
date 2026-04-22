@@ -21,3 +21,4 @@ The Stolen Sound Revelation During the same interview, Omah Lay delved into a pa
 
 'Clarity of Mind' Album Release Following over two years of anticipation and creative re-evaluation, Omah Lay recently released his sophomore LP, 'Clarity of Mind'. The artist has boldly declared the album as definitive proof of his status as the greatest of his generation. The release aims to solidify his position within the competitive Pan-African music landscape, much like how global acts like BTS have broken group sales records with their comeback albums, underscoring the drive for impactful artistic statements. 
 
+

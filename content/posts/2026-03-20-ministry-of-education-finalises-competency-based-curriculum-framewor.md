@@ -21,3 +21,4 @@ Lecturer Retraining and STEM Focus Teaching staff face considerable adjustments 
 
 CUE's Coordinating Role The Commission for University Education (CUE) is coordinating the national rollout, ensuring that programme reviews, accreditation benchmarks, and quality standards are updated to reflect the competency-based model well in advance of 2029. Dr. Hunja acknowledged the extensive work involved in this transformation. This comprehensive oversight is vital for upholding educational integrity, mirroring the regulatory vigilance seen in other critical sectors such as EPRA's recent action to shut down an illegal LPG storage facility in Kilifi over safety concerns. 
 
+

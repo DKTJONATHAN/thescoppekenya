@@ -15,3 +15,4 @@ Stamford Bridge's Perpetual Motion Machine of Failure Chelsea's internal disarra
 
 The £150m Fig Leaf and United's Ambition Manchester United's long-standing admiration for Palmer, coupled with his alleged "lifelong United fan" status, conveniently aligns with their desire for a marquee signing. Jason Wilcox, a familiar face from Palmer's Manchester City academy days, is undoubtedly pulling strings. Chelsea's public stance of "not for sale" rings hollow against reports of United's readiness to table a "record-shattering £150m offer". This isn't about loyalty or sporting ambition; it's cold, hard cash and the desperate optics of a club trying to salvage pride. For Chelsea, cashing in would be an admission of catastrophic failure, yet rejecting such a sum in their current state would also be fiscally irresponsible. The price tag only serves to highlight the monumental waste of potential at Stamford Bridge and United's willingness to exploit it. 
 
+

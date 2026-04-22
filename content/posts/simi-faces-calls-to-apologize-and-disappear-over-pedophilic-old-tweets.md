@@ -19,3 +19,4 @@ Fan Fury Led by Ijeoma Njoku Ijeoma Njoku went viral calling out Simi for owning
 
 Split Reactions Some defend Simi, arguing early 2010s Twitter humor was edgier and context matters. Others, including influencers like Daniel Regha, slam her defense as minimizing perversion. The drama highlights how past posts haunt celebrities, especially advocates, fueling cancel culture debates in Nigerian entertainment.
 
+

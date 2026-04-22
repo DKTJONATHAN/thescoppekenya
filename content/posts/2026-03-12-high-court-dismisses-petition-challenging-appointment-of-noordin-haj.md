@@ -15,3 +15,4 @@ Grounds for Dismissal The petitioner had argued that unresolved cases before the
 
 Precedent and Executive Authority Haji's appointment by President William Ruto in 2023 has faced previous legal challenges. In 2024, Eliud Karanja Matindi similarly argued that Haji’s appointment violated constitutional standards due to unresolved petitions concerning his integrity during his prior tenure as Director of Public Prosecutions. Even then, the court declined to suspend Haji from office. This latest ruling reinforces the legal threshold required for courts to overturn presidential appointments, solidifying the executive's authority in such critical selections. This judicial stance on executive prerogative in appointments aligns with the nation's broader approach to complex governmental decisions, including those in foreign policy, as seen in Kenya's backing of the UN-Ukraine Peace Resolution. 
 
+

@@ -21,3 +21,4 @@ Cut-Off Points Defined Cut-off points are distinctly defined as the weighted clu
 
 Navigating Competitive Programmes Highly competitive courses, including Medicine, Pharmacy, Engineering, Architecture, and Computer Science, consistently demand high cut-off points. Students are advised that meeting a programme's cut-off point does not automatically secure placement, as the selection process also considers overall competition and the programme's capacity. KUCCPS has urged students to regularly check the KUCCPS student portal to view specific cut-off points for their preferred courses and institutions, even as they anticipate the official commencement of university placement applications for 2026. 
 
+

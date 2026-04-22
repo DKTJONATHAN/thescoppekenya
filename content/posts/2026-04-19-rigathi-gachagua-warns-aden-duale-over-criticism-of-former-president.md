@@ -19,3 +19,4 @@ Gachagua Defends Kenyatta's Tenure In a swift rebuttal, Gachagua fiercely defend
 
 SHA Financial Crisis Allegations Beyond the political exchanges, Gachagua shifted focus to the state of the Social Health Authority (SHA), warning of its impending collapse within the next five months. He claimed SHA currently faces liabilities amounting to Ksh98 billion, describing it as a "walking zombie" teetering on the brink of the largest corporate loss in independent Kenya's history. Gachagua further alleged that a Dubai-based company with ties to CS Duale receives Ksh600 million monthly, even as SHA's significant debts remain unpaid. 
 
+

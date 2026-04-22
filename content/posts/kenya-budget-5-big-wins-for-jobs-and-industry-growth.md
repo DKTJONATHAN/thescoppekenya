@@ -19,3 +19,4 @@ Grassroots Enterprise Support Government financing programmes such as the Hustle
 
 Strong Economic Growth Trajectory The economy is projected to grow to 5.3% in 2026, a notable increase from 4.7% in 2024, underpinned by improved macroeconomic stability. This robust growth is expected to be primarily driven by key sectors including agriculture, construction, tourism, transport, and financial services, creating a fertile environment for job expansion and industry development. 
 
+

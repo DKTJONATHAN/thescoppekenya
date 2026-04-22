@@ -23,3 +23,4 @@ Incident in Kaptebeswet, Kericho On the same day, March 18, an incident in Keric
 
 Ongoing Investigations and Accountability The NCA has confirmed that multi-agency teams have secured both sites. Investigations are ongoing to determine the full circumstances surrounding each collapse, establish accountability among all parties involved, and assess compliance with construction regulations and professional standards. Za Ndani will continue to follow these developments. 
 
+

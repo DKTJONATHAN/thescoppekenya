@@ -23,3 +23,4 @@ Reinstatement of Linda Mama and Other Amendments Beyond the contribution structu
 
 Claims Settlement and Current SHA Status A key amendment within the proposed bill mandates SHA to settle all verified claims from hospitals within 60 days. This aims to improve service delivery and accountability within the healthcare system. According to current health ministry records, SHA has over 30 million registered members since its introduction in 2024. Salaried individuals presently contribute 2.75% of their gross monthly salary, while those in the informal sector or without income contribute a minimum of KSh 300. The MP's proposal arrives amid ongoing scrutiny regarding alleged financial irregularities within SHA, although the Ministry of Health has dismissed these claims. 
 
+

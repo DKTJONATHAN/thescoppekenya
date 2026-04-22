@@ -17,3 +17,4 @@ A Family's Heartfelt Tribute Brendon's family shared their grief in a poignant s
 
 Co-Stars Remember In the wake of his passing, tributes have poured in, including a touching message from his *Buffy* co-star Alyson Hannigan, who played Willow Rosenberg. Hannigan shared an emotional tribute on social media, writing, "My Sweet Nicky, thank you for years of laughter, love and Dodgers. I will think of you every time I see a rocking chair. I love you. RIP". Her words echo the sentiments of many who cherished Brendon's contribution to their screens and lives. 
 
+

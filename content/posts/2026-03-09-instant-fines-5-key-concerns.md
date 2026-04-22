@@ -21,3 +21,4 @@ Funding Shortfalls and Judicial Burden Despite the system's rollout, transport o
 
 Call for Collaborative Dialogue For now, FPTS advocates for a consultative meeting involving NTSA, the Judiciary, and the National Police Service (NPS). The federation believes such a dialogue is crucial to align enforcement rules and address existing concerns before the instant fines system fully redefines daily driving practices across the nation. 
 
+

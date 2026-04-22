@@ -15,3 +15,4 @@ Beyond the Performers: Special Recognition The Hall of Fame isn't just about the
 
 Who Missed the Cut? While celebrations are in order for the chosen few, some beloved artists will have to wait for another chance. The Black Crowes, Mariah Carey, Melissa Etheridge, New Edition, Pink, Shakira, INXS, Lauryn Hill, and Jeff Buckley were all nominated but didn't make it into this year's class. The good news is, history shows that persistence pays off; Billy Idol, Oasis, and New Order were all nominated last year before securing their spots this time around. The grand induction ceremony is set for November 14, 2026, at the Peacock Theater in Los Angeles. Fans eager to witness the tributes and acceptance speeches can tune in to ABC and Disney+ in December 2026. Get ready for a night of musical heritage and star-studded moments! 
 
+

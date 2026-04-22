@@ -21,3 +21,4 @@ From Vixen to International Acclaim Born in 1984, Tebandeke carved a remarkable 
 
 A Void in East African Entertainment Tebandeke's passing leaves a profound void in the East African creative sector, with fans and colleagues across the continent remembering her for her immense talent, unwavering strength, and inspiring resilience. Tributes and condolences continue to pour in for her grieving family and friends. Her indelible mark on film and performance remains a significant part of the region's artistic story, even as the East African music scene celebrates other successes, such as the [Bien and Ali Kiba collaboration reaching one million views in 24 hours](https://zandani.co.ke/article/bien-and-ali-kiba-collaboration-reaches-one-million-views-in-24-hour). 
 
+

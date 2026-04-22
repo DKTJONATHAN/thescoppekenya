@@ -21,3 +21,4 @@ Key Appointments in the Legal Sector In a separate move, Attorney-General Dorcas
 
 Reappointments Across Public Service Boards Labour Cabinet Secretary Alfred Mutua has reappointed Isaac Kaberia and Milkah Kimonda to the National Social Security Fund (NSSF) board for an additional three years. At the Ewaso Ng’iro South River Basin Development Authority, CS Beatrice Askul reappointed Caroline Pulei, Eunice Singoei, Mathew Gathua, Elijah Kesei Metian, and Veronica Silantoi Mwangi, among others, to its board for a three-year term. In the Trade docket, CS Lee Kinyanjui announced changes and retentions within the Kenya Leather Development Council (KLDC), with Florence John, Regina Ngima Muthami, and David Kipkemoi Rotich among those retained. Lands CS Alice Wahome reappointed Victor Olonde and appointed Rashid Haron Shake as new members to the Valuers Registration Board, each for three-year terms. 
 
+

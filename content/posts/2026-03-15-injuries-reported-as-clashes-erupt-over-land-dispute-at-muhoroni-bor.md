@@ -21,3 +21,4 @@ Underlying Causes of Discontent A persistent cause of these clashes is the disag
 
 Past Efforts and Persistent Challenges In March 2025, Kisumu Governor Anyang’ Nyong’o and Kericho Governor Erick Mutai declared border disputes a thing of the past following collective efforts and intervention from the National Cohesion and Integration Commission (NCIC). However, the latest outbreak of violence at the Muhoroni border indicates these resolutions have not brought lasting peace. Za Ndani continues its comprehensive reporting on such vital local issues, reflecting the varied experiences of the region, from critical security challenges to engagements in global cultural phenomena such as African celebrities participating in reality television shows. The recent events underscore the urgent need for sustainable solutions to prevent further loss of life and property in these perennially disputed territories. 
 
+

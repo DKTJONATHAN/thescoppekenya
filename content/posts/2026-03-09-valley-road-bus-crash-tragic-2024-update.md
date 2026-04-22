@@ -15,3 +15,4 @@ Official Responses and Public Trust A separate accident in the Otonglo area of K
 
 Broader Implications for Governance The recurring nature of these incidents raises urgent questions about the effectiveness of existing road safety regulations and their enforcement. Road carnage costs Kenya an estimated KSh 450 billion annually, equivalent to approximately 5 percent of the national GDP. This significant economic burden, coupled with the tragic human cost, necessitates robust policy implementation and sustained political will. Addressing these deep-seated issues is crucial for national development and stability. Such public safety challenges exist within a broader context where the nation must simultaneously navigate complex internal and external pressures impacting its overall stability and governance. 
 
+

@@ -23,3 +23,4 @@ Response to Post-Easter Fatalities The heightened enforcement operations follow 
 
 Evolution of NTSA Enforcement Strategies In recent months, NTSA has introduced several initiatives to address dangerous driving practices on Kenyan roads. This included the adoption of the Instant Fines Management System, which incorporated 1000 artificial intelligence-driven surveillance cameras across Nairobi to identify reckless drivers. However, the transport body was compelled to withdraw the system in March 2026. This withdrawal was to refine operational procedures, enhance public sensitization, and address legal challenges concerning the handling of traffic offenses, following widespread public outcry. 
 
+

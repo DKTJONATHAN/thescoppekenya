@@ -17,3 +17,4 @@ The Enduring Legacy of Birdcage Kenya Pleaser is set to headline the university'
 
 Sisterhood and Southern Pride Kenya, who placed seventh on the current season of MTV's Drag Race, revealed her struggles with feeling ostracized as a queer person in the South's religious communities during season 18. Her drag sisters quickly rallied in her defense against the Libs of TikTok post, with Lydia B. Kollins writing, "Oh great! They're in for a fantastic show then." Fellow season 17 sisters Joella and Lana Ja'Rae added, "She looks so fierce!" and "Y'all are so miserable." Kenya's journey continues as she prepares for a lip-sync gauntlet against her eliminated season 18 sisters in a special episode airing Friday night, April 10, before the grand finale on April 17. The South Carolina queen, celebrated for her Lizzo impersonations and unique style, is a powerful voice for representation. 
 
+

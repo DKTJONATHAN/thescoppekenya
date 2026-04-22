@@ -17,3 +17,4 @@ Affected Roads and Compensation Call According to MAK, roads affected by these d
 
 Widespread Flooding Across Kenya The accusations against the expressway operators coincide with several parts of Kenya grappling with widespread flooding caused by ongoing heavy rains. These rains have led to significant destruction of property and loss of life, particularly in Nairobi. The National Police Service, in a statement issued on Saturday, March 7, confirmed that the flooding has also resulted in displacement, road closures, and extensive property damage. 
 
+

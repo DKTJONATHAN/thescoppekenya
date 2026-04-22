@@ -15,3 +15,4 @@ A Shared Journey of Growth The announcement resonated deeply with her extensive 
 
 The Influencer's New Blueprint Dem Wa FB's collaboration with Willstone Homes is a clear reflection of her broader ambition: to diversify her career and leverage her considerable influence for new business avenues. This trend is not isolated; many Kenyan comedians and influencers are increasingly exploring brand partnerships outside traditional entertainment. They are boldly venturing into sectors like real estate, fashion, and technology, demonstrating a strategic approach to building enduring careers in Kenya's dynamic pop culture landscape. 
 
+

@@ -19,3 +19,4 @@ Political Strategy and Public Concern The distribution of cash handouts has shif
 
 Eyeing the 2027 Elections Despite the backlash, the lawmaker remains unapologetic. He refutes claims that his current actions constitute an early campaign for his 2027 re-election bid. Jhanda has officially announced that his re-election campaign launch is scheduled for May 1, 2027. 
 
+

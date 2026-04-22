@@ -15,3 +15,4 @@ Community Support and Broader Concerns The news of the robbery prompted an immed
 
 A Recurring Challenge for African Artists Abroad Pheelz's experience is the latest in a troubling series of incidents involving Nigerian and other African artists being targeted while abroad. In 2025, street hop star Candy Bleakz and rapper Jeriq were reportedly robbed in South Africa. Closer to home, hitmaker Lil Kesh was reported to have been a victim of a robbery incident in Lagos, suffering injuries and losing his jewelry. These occurrences highlight a critical need for enhanced security awareness and measures for African creatives as they traverse international landscapes to connect with global audiences and further their craft. Za Ndani continues to follow this developing story closely. 
 
+

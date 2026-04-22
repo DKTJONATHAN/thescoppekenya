@@ -19,3 +19,4 @@ Event Calendars Under Scrutiny With the increased precipitation expected, many a
 
 Divergent Weather Across Regions While Nairobi and the Central Highlands brace for continued wet weather, the Kenya Meteorological Department highlights a stark contrast in other parts of the nation. Western Kenya, the South Rift Valley, North-Eastern Kenya, the South-Eastern Lowlands, and the Coastal region are projected to experience moderate showers. However, Northwestern Kenya is expected to remain largely dry, with sunny intervals prevailing. This regional disparity might see some celebrities opting for a quick, sunny getaway to the Northwestern sector, seeking clearer skies and warmer temperatures away from the city's downpours. Meanwhile, within the country, serious national conversations continue, such as Martha Karua demanding answers after reports of an RSF financier holding a Kenyan passport sparked significant national concern. 
 
+

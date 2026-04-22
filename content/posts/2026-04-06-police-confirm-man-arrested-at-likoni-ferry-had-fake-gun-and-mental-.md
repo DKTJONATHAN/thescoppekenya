@@ -21,3 +21,4 @@ Police Vigilance and Public Safety Masengeli emphasized that the police could no
 
 Ongoing Anti-Gang Operations The clarification by the Deputy Inspector General aligns with intensified police operations targeting criminal gangs in the coastal region. The Directorate of Criminal Investigations has reported over 20 arrests in less than a month as part of these efforts. This proactive stance underscores the continuous commitment of law enforcement to bolster security and curb criminal activities in urban areas. 
 
+

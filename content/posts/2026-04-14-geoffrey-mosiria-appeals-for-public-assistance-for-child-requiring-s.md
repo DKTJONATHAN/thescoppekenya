@@ -21,3 +21,4 @@ A Long Road to Recovery Having now spent nine months at Kenyatta National Hospit
 
 Critical Surgery and The Harambee Spirit The medical team has now recommended a specialized surgical procedure involving the implantation of a bone in the girl's skull. This operation is deemed critical for protecting her brain and establishing a foundation for potential nerve recovery. The family is appealing to the public for assistance in raising Ksh 150,000 to facilitate this essential surgery. Previous appeals for the family saw Kenyans generously contribute financial aid and prayers, enabling the mother to remain by her daughter's side. Mosiria passionately invoked the spirit of "Harambee," urging the nation to once again stand with the young survivor and offer her another chance at life and healing. 
 
+

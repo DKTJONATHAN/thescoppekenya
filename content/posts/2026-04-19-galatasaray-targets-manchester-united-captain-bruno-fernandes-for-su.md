@@ -17,3 +17,4 @@ The £100m Quandary Last year, a move to Saudi Arabia "had looked likely" for Fe
 
 The Palmer Proposition Former United striker Teddy Sheringham weighed in, suggesting the club should "only go and break the bank" for Chelsea's Cole Palmer if Fernandes departs. Yet, Sheringham's own caveats regarding Palmer's "toe problem and a groin problem, little niggles at a very early age" paint a less than ideal picture. Is United's solution to instability simply to chase the next big name, regardless of potential fitness issues or whether he truly fits a long-term vision? It seems the quest for "consistent leaders on the pitch" might just involve swapping one set of problems for another, rather than addressing the systemic flaws that plague the club. 
 
+

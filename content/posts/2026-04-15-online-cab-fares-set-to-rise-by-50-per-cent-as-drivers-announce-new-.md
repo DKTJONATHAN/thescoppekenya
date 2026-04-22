@@ -25,3 +25,4 @@ Standardized Additional Charges Standard charges apply for transport services, i
 
 Fare Management Guidance The management of these new fares will be guided by the Automobile Association of Kenya (AA Kenya) moving forward. The Ministry of Transport has previously instructed app owners to adopt pricing guidelines suggested by AA Kenya, aimed at increasing per-kilometer rates by approximately 50 percent for small and medium engines. 
 
+

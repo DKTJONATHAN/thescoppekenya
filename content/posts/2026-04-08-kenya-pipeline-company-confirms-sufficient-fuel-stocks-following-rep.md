@@ -21,3 +21,4 @@ Strategic Pipeline Network and Capacity KPC operates a vast 1,342-kilometre pipe
 
 Ground Reality Contradicts Official Assurance Despite KPC's affirmations, the ongoing fuel shortage has impacted at least 13 counties, including the North Rift, Western, Central, and Coast regions, as well as Nairobi. Eldoret, particularly, has seen over 20 stations closed, while motorists in areas like Machakos, Embu, Isiolo, Nanyuki, and Mombasa report extensive queues and completely shut stations amidst dwindling supplies. This situation, where official data diverges from public experience, highlights logistical complexities and communication challenges that can often contribute to national unease, a dynamic Za Ndani has explored in various contexts, including in discussions surrounding broader societal issues such as 'Climate Denial, Couch Chaos: Kenya's Own Goal'. 
 
+

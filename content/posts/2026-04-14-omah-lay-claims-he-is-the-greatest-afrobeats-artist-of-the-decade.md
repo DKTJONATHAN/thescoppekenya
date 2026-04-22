@@ -23,3 +23,4 @@ Acknowledging Burna Boy While confident in his unique standing, Omah Lay does ma
 
 Addressing Afrobeats' Creative Standards Omah Lay has framed "Clarity of Mind" as a direct response to a perceived decline in the genre's creative standards. During his Lagos Warehouse Session, he voiced his concern, stating, "Overseas, Afrobeats is declining. It's facts. The Afrobeats you guys used to know in 2020-2024 is not the Afrobeats you know now anymore. Clarity of Mind is going to be a statement to wake our artists up." He further elaborated in a separate interview, expressing fear that Afrobeats is "drifting towards a place where people are not putting in so much effort in the art anymore," characterising the trend as artists "just really playing with music" rather than genuinely developing their craft. 
 
+

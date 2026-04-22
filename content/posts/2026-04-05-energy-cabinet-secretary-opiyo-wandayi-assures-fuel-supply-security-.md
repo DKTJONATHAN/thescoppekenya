@@ -21,3 +21,4 @@ Senior Officials Arrested Over Substandard Fuel The Cabinet Secretary's statemen
 
 Defending Procurement Framework and Warning Against Exploitation Wandayi defended the government-to-government (G-to-G) fuel procurement framework, asserting its stability in shielding the nation from supply shocks stemming from tensions in the Gulf region. He also issued a stern warning to cartels, profiteers, and extortionists against exploiting current uncertainties. The Cabinet Secretary further criticized certain political leaders for spreading disinformation concerning the unfolding situation, aligning with recent comments from President William Ruto, who declared zero tolerance for cartels attempting to exploit the Iranian conflict to smuggle unauthorized fuel. 
 
+

@@ -21,3 +21,4 @@ Capacity Building Initiatives The Authority also called for empowering complianc
 
 Legislative Reforms on the Horizon In parallel, Parliament is actively progressing with the Sacco Societies (Amendment) Bill, 2025. This proposed legislation seeks to introduce extensive reforms aimed at strengthening the industry. Key provisions include establishing a central liquidity and shared services framework, allowing primary SACCOs to form a secondary SACCO. This secondary entity would pool funds and manage liquidity across the sector. The Bill also introduces a two-tier structure, where the secondary SACCO would operate on a wholesale basis, dealing exclusively with primary SACCOs rather than individual members. 
 
+

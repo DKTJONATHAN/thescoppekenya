@@ -21,3 +21,4 @@ Regional Price Adjustments Across the country, new retail prices reflect these c
 
 Context of Recent Fluctuations This latest reduction comes just a day after EPRA had announced a significant fuel price hike on April 14, 2026. That previous notice saw Super Petrol and Diesel prices sharply increase by Ksh28.69 and Ksh40.30 per litre respectively. At that time, fuel prices in Nairobi had risen to Ksh206.97 per litre for Super Petrol and Ksh206.84 for Diesel, with Kerosene at Ksh152.78. EPRA attributed the earlier increase to high landed costs of petroleum products in the international market, underscoring the dynamic nature of commodity markets that often feature in discussions such as those on the "Wall Street Mtaani financial show", recently launched by Wall Street Africa Group. 
 
+

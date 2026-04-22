@@ -21,3 +21,4 @@ Auction Details and Legal Basis Should the April 10 deadline pass without resolu
 
 Specialised Aviation Equipment The thirteen containers collectively hold well over one hundred tonnes of highly specialised aviation equipment, comprising British Aerospace ATP (Advanced Turbo-Prop) BAE ATP aircraft spare parts. Each part is packed within a standard 40-foot container, with individual gross weights ranging from four to thirteen tonnes. These BAE ATP aircraft components are not mass-produced items; they cater to a specific, older aircraft type still operational across parts of Africa, making them a niche but potentially valuable commodity on the aviation parts market, likely to attract significant interest from regional carriers and aviation suppliers. 
 
+

@@ -23,3 +23,4 @@ Joint National-County Partnership These infrastructure developments stem from a 
 
 National Infrastructure Vision The Nairobi projects are part of a broader national commitment to tarmac more than 28,000 kilometers of roads over the next seven years. This ambitious plan is central to the government's "Singapore Dream" agenda, aimed at elevating the country from third-world to first-world status. The focus on robust infrastructure, including transparent management of resources, aligns with initiatives such as the NTSA's smart logbook management guidelines, designed to prevent ownership disputes and fraud, ensuring efficiency in related sectors. 
 
+

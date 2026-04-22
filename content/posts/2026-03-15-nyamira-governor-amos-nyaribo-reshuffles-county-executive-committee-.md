@@ -21,3 +21,4 @@ Governor Nyaribo's Recent Political Standing The reshuffle by Governor Nyaribo f
 
 Broader County Executive Adjustments These changes in Nyamira coincide with similar administrative adjustments in neighboring counties. Two weeks ago, Kakamega Governor Fernandes Barasa also announced modifications affecting three key chief officers in his county executive. In a statement on March 2, 2026, Governor Barasa confirmed Anselm Mulinya moved from Education, Science, and Technology to become Chief Officer for Cooperatives. Daniel Seth Sumba, formerly leading Cooperatives, now oversees County Administration. Samuel Ambrose Makokha was reassigned from County Administration to the Education, Science, and Technology department, completing Kakamega's three-way reshuffle. 
 
+

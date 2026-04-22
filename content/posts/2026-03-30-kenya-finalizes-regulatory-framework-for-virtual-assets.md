@@ -19,3 +19,4 @@ Stablecoin Regulations Prioritize Stability Stablecoins, identified during the s
 
 Addressing Bank Hesitancy and Future Potential A significant hurdle identified is the continued reluctance of Kenyan banks to engage with crypto-related businesses due to past regulatory ambiguity. This has diverted capital flows into offshore channels, hindering domestic value capture. The forum directly challenged the Kenya Bankers Association and individual institutions to actively participate in shaping the final regulations during the ongoing public consultation phase. This engagement is crucial, much like the public discourse surrounding other significant national events, such as political commentary concerning public figures. If implemented effectively, these Virtual Asset Service Provider (VASP) Regulations could transform Kenya into a leading hub for regulated digital finance in Africa. 
 
+

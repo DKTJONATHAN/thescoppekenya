@@ -17,3 +17,4 @@ Fan-Led Support Initiative TikTok videos from February 25 urged unity: "Let's vi
 
 Business and Legal Context Kairo runs Kai & Kairo Limited, a high-profile car import business facing fraud claims since 2024. Allegations include undelivered vehicles worth millions, like a KSh 2.2 million BMW, with some cases settled out-of-court by late 2025. This digital gesture blends empathy with his ongoing challenges. 
 
+

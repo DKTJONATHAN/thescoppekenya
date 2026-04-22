@@ -25,3 +25,4 @@ Protections for Vulnerable Individuals The case also brought to light specific c
 
 Strict Conditions for Number Reassignment Justice Mugambi emphasized that any reassignment of mobile numbers must occur under stringent conditions designed to protect the privacy of the former owner. The court mandated that the previous owner's informed and verifiable consent must be secured prior to any reassignment. Additionally, reassignment is permissible only after a reasonable period following a public notice, which must be preceded by a documented verification process confirming that the original owner cannot be reached or has unequivocally relinquished rights to the number. Technical safeguards are also required to prevent unauthorized exposure or transfer of personal data linked to the previous owner when a number is reassigned or recycled. 
 
+

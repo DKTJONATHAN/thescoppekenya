@@ -19,3 +19,4 @@ The Return to Reality Fans eager for the co-hosts' take will have to wait until 
 
 A Presidential Farewell Amid the chatter, Donald Trump released a statement praising Bondi, calling her a "Great American Patriot and a loyal friend". He announced her transition to an "important new job in the private sector," to be revealed soon, with Deputy Attorney General Todd Blanche stepping in as acting attorney general. Bondi herself stated on social media that she would transition her office to Blanche over the next month before moving on to an "important private sector role". The political gears continue to turn, even if "The View" momentarily paused for a holiday. 
 
+

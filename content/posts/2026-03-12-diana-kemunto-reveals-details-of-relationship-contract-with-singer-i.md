@@ -15,3 +15,4 @@ Lights, Camera, Relationship Protocol Given the prominent nature of their romanc
 
 When the Ink Dried on Love Despite her meticulous efforts to establish clear boundaries, Kemunto clarified that the romance ultimately came to an end in early January. She spent the initial days of the year with the "Pombe Sigara" hitmaker before recognizing that their union was no longer sustainable. Following this realization, she opted for silence rather than making an immediate public announcement. Kemunto admitted that her time with Iyanii marked her longest relationship to date. She confessed that she isn't typically inclined towards long-term dating, which prompted her to set a personal aspiration of being married within six months of beginning the relationship. While the contract didn't lead to marriage, Kemunto's innovative "relationship contract" spotlights a growing trend among public figures seeking to safeguard their private lives through formal agreements. 
 
+

@@ -18,3 +18,4 @@ Dating Her Mechanic: What Kaka Boy *Really* Thinks of Ketrai Damaris! We've hear
 
 Will Actress Ketrai Damaris and Her Mechanic Tie the Knot After Just 2 Months? So, they've been dating for two months, they're "officially dating," and they're "enjoying the 'honeymoon phase'." But what's next for Actress Ketrai Damaris and her mechanic? Are we hearing wedding bells already? Is this a whirlwind romance destined for an engagement, or just a fun fling that's grabbing headlines? They've hinted at "future joint projects" blending their talents, which sounds like a smart move for their careers, but what about their personal lives? Only time will tell if this public declaration of love will stand the test of time, or if it's just another fleeting moment in the dazzling, dramatic world of celebrity romance. Fingers crossed for them, eh? 
 
+

@@ -15,3 +15,4 @@ Financial Strain and Economic Impact Manufacturers contend that the revised Stan
 
 Calls for Immediate Suspension and Review In their protest against the levy adjustments, manufacturers have called for the immediate suspension of the levy order and a prompt return to stakeholder consultations. They are also demanding an urgent and independent review of KEBS' financing framework, advocating for enhanced transparency in the utilization of levy funds, and proposing the exemption of sectors not directly regulated by KEBS. Furthermore, manufacturers have urged for the harmonization of the levy's rates, aiming to improve service delivery and align with World Trade Organisation trade facilitation principles. 
 
+

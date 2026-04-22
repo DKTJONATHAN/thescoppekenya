@@ -19,3 +19,4 @@ A Decade of Reflection Fuels a Crucial Message Diana Marua, a prominent figure i
 
 Empowering Kenyan Women to Build Self-Worth Through her platforms, Marua is actively championing a movement for women to prioritize their financial autonomy. She emphasizes that economic independence is not merely about accumulating wealth, but fundamentally about fostering self-worth and ensuring stability. In a society where women often face unique economic pressures, her call serves as a timely reminder for proactive financial planning and the cultivation of skills that guarantee self-reliance. This empowering stance underscores a vital conversation about women's roles in securing their own futures. 
 
+

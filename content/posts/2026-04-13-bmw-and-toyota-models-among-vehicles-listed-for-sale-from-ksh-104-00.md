@@ -23,3 +23,4 @@ SUV Selection and Everyday Vehicles The auction also caters to SUV enthusiasts w
 
 Private Treaty Process and Inspection Guidelines The sale operates on a private treaty arrangement, requiring interested buyers to submit offers via the official eezycars website. Crucially, all vehicles are sold on an "as is, where is" basis. Physical inspection of units at their respective storage yards is strongly encouraged to ensure buyers are fully aware of the condition of the vehicle they intend to purchase. Such disposals often arise from asset recoveries or surplus stock clearances, providing opportunities for acquisition at potentially competitive rates, a context that can be influenced by broader economic factors. 
 
+

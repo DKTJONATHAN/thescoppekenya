@@ -15,3 +15,4 @@ Spelling Breaks Silence with Heartfelt Thanks Nearly a week after the terrifying
 
 Family Matters Amidst the Drama While the actress did not specify which of her children were involved, Tori Spelling shares five children with ex-husband Dean McDermott: Liam, 19; Stella, 17; Hattie, 14; Finn, 13; and Beau, 9. The former couple, who met in 2005 on the set of "Mind Over Murder," were married in 2006, with their divorce being finalised in November 2023. This frightening event certainly highlights the unpredictability of life, even for Hollywood's biggest names. 
 
+

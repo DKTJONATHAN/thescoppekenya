@@ -29,3 +29,4 @@ Material Selection and Protection Material selection is equally critical to the 
 
 Industry Standard: Cylinders vs. Spheres While spherical tanks are capable of handling even higher pressures, cylindrical tanks remain the preferred choice globally. This is due to their practical combination of strength, affordability, ease of construction, and maintenance, establishing them as the industry standard for crude oil storage worldwide. 
 
+

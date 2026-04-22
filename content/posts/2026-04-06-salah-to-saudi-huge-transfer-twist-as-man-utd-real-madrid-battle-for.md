@@ -23,3 +23,4 @@ Salah's Potential Gulf Switch The allure of the Saudi Pro League continues to in
 
 Other Noteworthy Moves Elsewhere in Europe, Chelsea is reportedly chasing a defender from Strasbourg as they look to strengthen their backline. Everton is exploring a potential return for Stones, a move that could see the defender back at his former club. Midfielder Wharton is also reportedly eyeing an exit from Crystal Palace, suggesting a desire for a new challenge. Meanwhile, several clubs are closely tracking Newcastle's Hall, indicating his growing reputation in the football world. Barcelona, for their part, is reportedly seeking a second loan spell for Manchester United's Rashford, a scenario that could see the English forward continue his career in La Liga.
 
+

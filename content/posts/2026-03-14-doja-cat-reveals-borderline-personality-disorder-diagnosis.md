@@ -17,3 +17,4 @@ The Paparazzi Problem The "Hot to Go!" singer's stance resonated deeply with Doj
 
 Celebrity Takes on Fame While Doja Cat praised Roan's authenticity, not everyone shared her view. Pop icon Boy George offered a contrasting perspective in a social media post, suggesting that artists should "own your fame" and view "boundaries are boring". He advised embracing kindness over kicking back, a sentiment that starkly differs from Doja Cat's call for artists to assert themselves. The ongoing debate highlights the complex relationship between celebrities and public expectation in this current era. 
 
+

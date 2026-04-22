@@ -18,3 +18,4 @@ The Digital Sideline: What's the Score on Your Data? Now, while all this talk of
 
 The Future of Fandom: Keeping the Passion Alive So, Pittsburgh's love affair with football is undeniable, a truly special thing to witness. But as the game evolves, and technology becomes even more intertwined with how we consume sport, organisations like the Steelers and the NFL have a balancing act on their hands. How do you keep the "Terrible Towel" waving strong while also navigating the complexities of digital privacy and ensuring fans feel their loyalty is valued, not just mined for data? It's an intriguing question for the pundits (like yours truly) to ponder. One thing's for sure: Pittsburgh will always be 'The Football Town', no matter how many cookies are in your browser, eh? 
 
+

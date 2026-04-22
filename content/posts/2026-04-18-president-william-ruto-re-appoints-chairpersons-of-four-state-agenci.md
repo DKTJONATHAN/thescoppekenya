@@ -23,3 +23,4 @@ Export Processing Zones Authority In the export sector, Richard Cheruiyot has be
 
 Kenya Leather Development Council Adan Mohammed will continue his role as the Non-Executive Chairperson of the Kenya Leather Development Council. He has been re-appointed for another three-year term, effective April 17, 2026, signifying continued leadership in the critical leather development sector. 
 
+

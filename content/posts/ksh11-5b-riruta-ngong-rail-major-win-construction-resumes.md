@@ -15,3 +15,4 @@ Project Scope and Impact The Riruta-Ngong Commuter Gauge Railway Project involve
 
 Wider Commuter Rail Network This project is an integral part of a broader 165km modernization scheme for Nairobi's commuter rail network. Future phases of the Riruta-Ngong line are planned to include expansions from Ngong to Kiserian and then back to Nairobi via Ong'ata Rongai. The extended network is also intended to connect to Talanta Sports City, facilitating transport for major events such as the African Cup of Nations (AFCON). This development aligns with recent efforts to enhance urban mobility, coming shortly after the World Bank approved a Ksh65 billion loan on March 5, 2026, designated to finance the Nairobi-Thika Commuter Railway project, with repayment scheduled by January 31, 2033.
 
+

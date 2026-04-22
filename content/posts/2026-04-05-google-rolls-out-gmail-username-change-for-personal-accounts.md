@@ -19,3 +19,4 @@ Policy Specifics and Rollout Under the revised guidelines, personal Gmail accoun
 
 Account Functionality After Change Upon modifying a Gmail username, the new name will serve as the primary identifier for signing in. Concurrently, the original email address will transition into an alias, remaining active for receiving messages. Users should be aware that after initiating an email address change, reconnecting external applications and services linked to their Gmail account may be necessary. The long-standing functionality for altering a display name-the name visible on sent emails-continues to be available worldwide, though it does not affect the actual email address. 
 
+

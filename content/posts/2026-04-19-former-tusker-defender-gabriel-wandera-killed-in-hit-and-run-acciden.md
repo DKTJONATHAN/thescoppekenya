@@ -19,3 +19,4 @@ Final Match Appearance Wandera's demise occurred hours after his final game for 
 
 Illustrious Career Wandera's career spanned the Kenyan Premier League (KPL) and lower divisions, where he cemented his legacy in Kenyan football. He featured for multiple clubs, including Bidco United, Nzoia Sugar FC, and Kakamega Homeboyz. He joined Tusker FC in 2019 and also played for several Nairobi-based amateur sides, such as Roto Moulders, Tuffrun, KenAfrica, Maveto, and Ruiru Hotstars, throughout different stages of his career. He signed for Kakamega Homeboyz in 2024. Football fans and rival teams have expressed their condolences to Wandera and his family. APS SEAL FC stated, "We are deeply saddened by the loss of your player. Our heartfelt condolences to the family, friends and your entire team. Go well solder, rest in peace." 
 
+

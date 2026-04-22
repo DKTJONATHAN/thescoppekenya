@@ -21,3 +21,4 @@ Symbolism and Serenity in Visuals The music video for "Worship" employs symbolis
 
 Asake's Unstoppable Momentum in 2026 Since his breakthrough in 2022 with the hit EP 'Ololade Asake,' Asake has cemented his status as one of Africa's leading pop stars, showcasing the continent and his Yoruba culture on the global stage. Having already released three hugely successful albums, which have made him the most-streamed artist of all time on Spotify Nigeria, Asake shows no signs of slowing down his domination of 2026. Earlier this year, he released the joint EP 'REAL' with Wizkid, which has already achieved significant chart success. "Worship" featuring DJ Snake further solidifies his standing as a global superstar making music for a diverse audience, paving the way for his highly anticipated fourth album, 'Money,' expected later in 2026. 
 
+

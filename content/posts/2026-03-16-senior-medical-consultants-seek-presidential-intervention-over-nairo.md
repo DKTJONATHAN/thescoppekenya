@@ -25,3 +25,4 @@ Incinerator Escapes and Defiance of Justice The attempted destruction of documen
 
 The Consultants' Plea and a Question of Guilt While the recovered documents form the basis of ongoing criminal proceedings, the consultants expressed concern regarding the arrest of Dr. Job Obwaka. They highlighted that Dr. Obwaka is neither a current member of the Board nor was he a member when the register of members was allegedly manipulated, advocating for his exoneration. The consultants maintain that this is not a government takeover, but a necessary step to address incompetence and corruption, asserting that the hospital belongs to its members and must be saved for the thousands of patients who rely on it. 
 
+

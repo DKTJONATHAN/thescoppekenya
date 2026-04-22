@@ -15,3 +15,4 @@ Enhanced Access to Justice and Reduced Costs According to Chief Justice Koome, t
 
 Budgetary Constraints Amidst High Caseload This significant expansion by the Judiciary comes despite considerable financial pressures. The institution faces an estimated budget shortfall of between Ksh16.4 billion and Ksh20 billion, having received approximately Ksh23.7 billion to Ksh27.8 billion against an annual requirement exceeding Ksh40 billion. Despite a reported 99 percent case clearance rate, the courts continue to manage a substantial caseload, with 635,262 pending cases and 516,000 new matters filed last year, handled by 207 judges and 600 magistrates nationwide. 
 
+

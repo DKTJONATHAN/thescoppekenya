@@ -21,3 +21,4 @@ Contentious Remarks on Citizen TV The Speaker’s action followed remarks made b
 
 Prior Legal Encounters In January 2026, MP Kibagendi faced a separate legal issue when he was arrested by detectives from the Directorate of Criminal Investigations (DCI) over an alleged assault. He was subsequently released by the Narok High Court on a cash bail of Ksh100,000 after denying the charges. 
 
+

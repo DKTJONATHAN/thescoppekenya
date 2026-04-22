@@ -15,3 +15,4 @@ From Reservations to Raves Working with family, especially on a film set where t
 
 When Art Nods to Life While the Bacons are quick to distinguish themselves from their on-screen characters, writer Dan Beers subtly wove elements of their real personalities into the script after conducting individual interviews. Kevin Bacon noted the surprising accuracy in certain details, like the family's shared secret of sneaking cigarettes from each other-a habit Beers intuited without being explicitly told. Despite the eerie plot twist involving Kyra's character Ellen having more in common with horror film villains than realized, Kevin emphasized that their real-life family isn't one that typically makes horror movies. This unique blend of reality and fiction provided a compelling layer to the film. Looking to the future, Kevin Bacon expressed a strong desire for more family movie collaborations, stating they would "do it again in a heartbeat." 
 
+

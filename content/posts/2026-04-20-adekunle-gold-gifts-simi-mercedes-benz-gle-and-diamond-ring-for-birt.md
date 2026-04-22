@@ -19,3 +19,4 @@ A History of Lavish Gestures Adekunle Gold and Simi's relationship, which began 
 
 Simi's Milestone Year Simisola Bolatito Ogunleye, known professionally as Simi, is a celebrated voice in Nigerian contemporary pop music with a career spanning over a decade. Turning 38 this year, she celebrates a series of considerable personal milestones: the recent arrival of her second child in March 2026, her seventh wedding anniversary in January 2026, and now, a new luxury vehicle. Earlier on her birthday, Simi reflected on the past year as "a pretty big, long, heavy, blessed year," expressing profound gratitude for her faith and her loved ones. 
 
+

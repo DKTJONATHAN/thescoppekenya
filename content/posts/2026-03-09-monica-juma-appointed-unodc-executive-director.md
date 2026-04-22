@@ -15,3 +15,4 @@ A Power Play for the Continent This isn't just any appointment; it's strategic, 
 
 Why This Global Win Matters to You UNODC plays a central role in coordinating global responses to illicit drugs, organised crime, and related threats that mess with the health, safety, and development of communities worldwide. So, while Dr. Juma is busy making power moves on the global stage, she's essentially working to make the world, and by extension, our communities, safer. NACADA has expressed full confidence that under her leadership, UNODC will champion evidence-based approaches, strengthening collaboration to protect societies from the harms associated with illicit drugs and crime. Kenya is officially a major player, and Dr. Juma is leading the charge! 
 
+

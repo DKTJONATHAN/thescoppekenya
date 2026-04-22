@@ -17,3 +17,4 @@ Impact on Service Delivery and Security The neglect of digital infrastructure ha
 
 Future Prospects for Digital Governance Despite ongoing challenges and missed targets in June 2024 and June 2025, a new deadline of June 2026 has been set for non-compliant institutions. The repeated setting of targets underscores the persistent struggle to achieve comprehensive digital transformation within Kenya's public sector, a critical component for enhancing efficiency, transparency, and public trust. 
 
+

@@ -23,3 +23,4 @@ A Dramatic Apology Just four days later, on March 19, 2026, Afolayan posted a vi
 
 Skepticism Greets Afolayan's Reversal The online community has met Afolayan's apology with a predictable wave of skepticism. The prevailing sentiment among commenters suggests that the actor's reversal was primarily a response to the sheer volume of public backlash rather than a genuine change of heart. Many believe the retraction was a pragmatic move to mitigate further damage to his public image. The lasting impact of the incident on his career and public standing remains to be seen. 
 
+

@@ -21,3 +21,4 @@ Exploring Thematic Depth At its core, 'Behind The Scenes' is a compelling story 
 
 Creative Visionaries Behind the Film Funke Akindele produced 'Behind The Scenes' alongside Wendy Uwadiae Imasuen. Akindele also co-directed the film with Tunde Olaoye and served as its primary writer, supported by a dedicated team of screenwriters and creative consultants. This multi-faceted involvement underscores Akindele's comprehensive vision and commitment to the project's success. 
 
+

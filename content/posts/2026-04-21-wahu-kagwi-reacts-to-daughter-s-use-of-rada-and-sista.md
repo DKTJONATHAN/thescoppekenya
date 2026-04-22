@@ -25,3 +25,4 @@ While Wahu Kagwi pondered the origins and implications of "Sista" and "Rada," th
 
 The playful exchange within the Kagwi household serves as a microcosm of Kenya's continually evolving cultural landscape. As the nation progresses and adapts to new global influences, its language naturally reflects these shifts. This linguistic evolution mirrors the nation's rapid advancement in other fields, with Kenya, for instance, launching a joint climate camera to the International Space Station earlier this year. Such developments, whether in slang or space exploration, paint a picture of a dynamic and forward-moving society. The celebrity's relatable encounter has ignited discussions across social platforms, with many Kenyans sharing their own experiences of decoding modern youth slang in 2026.
 
+

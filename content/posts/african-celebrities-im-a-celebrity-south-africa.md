@@ -17,3 +17,4 @@ The Precedent for Potential Kenyan Hopefuls Given the current trajectory, the pa
 
 What to Watch Next: A Call for Genuine Inclusion As we look towards future seasons, particularly the "I'm a Celebrity... South Africa" 2026 iteration, the critical question remains: will producers finally broaden their horizons to include genuinely African celebrities from the continent, or will they continue to rehash the same old British formulas? Kenyan hopefuls, with their undeniable charisma and strong fan bases, certainly have the star power and resilience to thrive in the jungle. The ball, however, is firmly in the court of the franchise producers to demonstrate that "South Africa" in the title means more than just a convenient film location for foreign stars. Until then, Africa's true reality TV trailblazers will continue to shine on their own terms, proving that their stories, unfiltered and authentic, are more than enough. 
 
+

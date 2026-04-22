@@ -23,3 +23,4 @@ Vihiga County Under Investigation for Misuse of Public Funds These developments 
 
 Bungoma County Faces Scrutiny Over Spending Further west, the anti-graft body is also investigating the Bungoma County Government regarding the expenditure of Ksh3.7 million on a Christmas tree lighting event and approximately Ksh2.8 million for a benchmarking trip. Sources close to the investigation revealed that funds for these activities were allocated from a County Vote via a purported imprest. Reports indicate 22 Members of the County Assembly and senior County Executive officials undertook a benchmarking trip to Mbale, Uganda, incurring about Ksh2.8 million. This brought the combined cost of the two activities to an estimated Ksh6.6 million. 
 
+

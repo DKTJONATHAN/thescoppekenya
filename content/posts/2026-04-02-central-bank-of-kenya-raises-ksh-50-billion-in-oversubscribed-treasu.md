@@ -17,3 +17,4 @@ Domestic Borrowing and Fiscal Position Non-competitive bids constituted KSh 9.48
 
 Market Trend and Policy Impact The above-par pricing observed across both tenors reflects a broader market trend. With the Central Bank of Kenya having cut its policy rate ten consecutive times, bringing it to 8.75%, investors are demonstrating a willingness to pay a premium. This allows them to lock in attractive coupons of 12.76% and 13.40% on long-dated government paper. This market dynamic has consistently enabled the Treasury to borrow above its targets while simultaneously keeping accepted yields below coupon rates throughout the current fiscal year. 
 
+

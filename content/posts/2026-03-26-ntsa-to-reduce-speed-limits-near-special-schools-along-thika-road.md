@@ -21,3 +21,4 @@ Driver Discipline and Enforcement In an engagement with Kiambu PSV drivers, traf
 
 Instant Fines System Status Sacco heads expressed support for NTSA's recently introduced instant fine system, viewing it as a critical tool for promoting driver discipline and reducing accidents. The authority had rolled out this traffic management system on Monday, March 9, 2026, which involved instant SMS notifications for violations like speeding, lane infringements, driving on pavements, and not wearing seatbelts. Fines range from Ksh500 to Ksh10,000. However, on March 10, 2026, the High Court issued a conservatory order preventing NTSA from implementing the system, pending a case filed by Lawyer Shadrack Wambui. The court is scheduled to hear the petition on April 9, 2026. 
 
+

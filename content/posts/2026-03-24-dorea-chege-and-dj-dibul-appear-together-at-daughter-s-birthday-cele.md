@@ -21,3 +21,4 @@ A Star-Studded Celebration The high-energy birthday event served as a definitive
 
 The Brand Re-Emerges Neither Dorea nor DJ Dibul has issued a formal statement directly addressing past allegations of domestic tension or living separately. However, their coordinated posts and affectionate displays have effectively steered the conversation away from rumors and back towards their relatable love story. Observers of the Kenyan entertainment scene note that while the couple’s recent silence was indeed loud, their current display of comfort and connection speaks volumes. As of March 24, 2026, it appears the "Dibul and Dorea" brand is once again firmly focused on family and shared growth. 
 
+

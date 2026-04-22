@@ -19,3 +19,4 @@ Uncouth Scenes and Public Outcry Beyond safety concerns, KRG's critique extended
 
 The Call for Enhanced Crowd Control The aftermath of the 2026 Safari Rally has brought renewed calls for stricter crowd control measures and enhanced public awareness campaigns for future editions. Stakeholders across various sectors are weighing in on how best to preserve the thrill of the rally while safeguarding every attendee, especially vulnerable populations like children. Ensuring designated viewing areas are enforced and public education initiatives are robust could be key to preventing similar scenes in 2027 and beyond. Spectator encroachment into prohibited zones has previously led to the cancellation of rally stages, highlighting the critical need for effective crowd management. The conversation initiated by KRG serves as a timely reminder of collective responsibility in hosting world-class events. 
 
+

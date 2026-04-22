@@ -23,3 +23,4 @@ Enhanced Visibility Through Technology At the core of the new system is technolo
 
 Facilitating Trade and Mitigating Risks Customs bonds are available to importers, exporters, customs brokers, and freight forwarders involved in international trade. These bonds facilitate trade by offering assurance to customs authorities and mitigating financial risks associated with cross-border goods movement. In cases of non-compliance or default, these bonds can cover unpaid duties or penalties. KRA confirms that all essential system upgrades have been completed, ensuring a smooth transition as stakeholders adopt the new bond platform for cargo movement across East African borders. 
 
+

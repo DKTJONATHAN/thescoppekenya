@@ -21,3 +21,4 @@ Postmortem and Funeral Arrangements Following his demise, Charo's body was trans
 
 Impact on the National Police Service The death of Commander Charo represents a profound loss for the National Police Service. His passing adds to the number of senior police officers who have died since the beginning of 2026. Just three weeks prior, an OCS at Kibugat Police Station in Kericho County also died under unclear circumstances after being found unresponsive inside a vehicle at Ikonge Market. Such losses highlight the challenges faced by the service and occur amidst a broader context of changes within governmental leadership. 
 
+

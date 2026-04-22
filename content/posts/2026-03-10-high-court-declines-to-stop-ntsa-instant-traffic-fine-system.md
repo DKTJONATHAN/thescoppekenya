@@ -15,3 +15,4 @@ Constitutional Challenge The petitioner argues that NTSA's instant fine system i
 
 Petitioner's Concerns The motorist's petition highlights that the automated platform allows for the imposition of fines and even levies interest on unpaid penalties without a clear legal foundation. The petitioner contends that this approach limits the right of accused persons under the Traffic Act to be presented in court, take a plea, and adduce evidence, thus undermining fundamental legal safeguards. This development comes as the Transport Ministry is also preparing for a [July 1 rollout of decentralised NTSA mandatory vehicle inspection](https://zandani.co.ke/article/transport-ministry-july-1-rollout-decentralised-ntsa-mandatory-vehicle-inspection), highlighting ongoing changes in transport regulation. 
 
+

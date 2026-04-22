@@ -33,3 +33,4 @@ Pattern of Disruptions to Linda Mwananchi Tour Since its inception in February, 
 
 Allegations and Counter-Allegations Organisers of the Linda Mwananchi tour have attributed these disruptions to what they term "state-sponsored goons" and police interference. Conversely, police investigations have suggested that rally organisers deliberately hired individuals to instigate chaos, an accusation vehemently denied by the faction led by Senator Sifuna. 
 
+

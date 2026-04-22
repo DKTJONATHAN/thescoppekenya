@@ -23,3 +23,4 @@ Affected Coastal Regions The weather directive specifically encompasses the Keny
 
 Historical Context of Marine Incidents The Kenyan Coast has a history of boat capsizing incidents, often linked to seasonal Kusi monsoon winds, sudden heavy tidal waves, vessel overcrowding, and inadequate safety equipment. A notable maritime disaster occurred on April 29, 1994, when the MV Mtongwe sank in Mombasa's Likoni channel, resulting in 272 fatalities due to severe overloading. More recently, in May 2025, Mombasa Governor Abdulswamad Sherrif Nassir directed the closure of all public beaches in Mombasa following warnings of strong southerly winds and large waves. In October 2025, three individuals were reported missing after a boat capsized during a race at the African Ocean Festival in Tudor Water Sports, Mombasa. 
 
+

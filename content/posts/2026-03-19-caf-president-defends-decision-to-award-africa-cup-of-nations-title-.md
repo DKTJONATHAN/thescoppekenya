@@ -19,3 +19,4 @@ Overturned Verdict and Reputational Damage A day prior to Motsepe's statement, M
 
 Corrective Measures and Further Appeals Motsepe confirmed that corrective measures are already in place to strengthen disciplinary processes and refereeing standards, including improvements in VAR implementation, in a bid to restore public trust. He also affirmed the right of all member nations to seek legal recourse, noting that Senegal now has 10 days to file an appeal with the Court of Arbitration for Sport, which it has indicated it will do. This sets the stage for a potentially lengthy legal battle. These developments cast a worrying spotlight on the Africa Cup of Nations, even as Kenya prepares to co-host the continental showpiece in 2027 alongside Uganda and Tanzania. 
 
+

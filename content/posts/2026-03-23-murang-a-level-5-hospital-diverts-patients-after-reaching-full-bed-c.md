@@ -19,3 +19,4 @@ Alternative Care and County Measures To alleviate pressure on the primary referr
 
 Staffing Concerns and Policy Fast-tracking Governor Kang'ata has raised concerns regarding staffing levels within the county's health sector. Plans to recruit additional health workers face potential limitations due to budget constraints tied to the wage bill. The governor has therefore urged the county assembly to fast-track policies designed to mitigate such emergency situations in the future. Residents are also encouraged to cooperate with healthcare staff and managers to ensure positive outcomes for all patients. The county has disseminated phone numbers for patients to voice concerns directly to government officials. This situation is not unprecedented, as the county hospital experienced a similar patient surge in October 2025, which also led to the recall of doctors on leave and the opening of new wards. 
 
+

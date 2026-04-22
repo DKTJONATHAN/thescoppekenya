@@ -15,3 +15,4 @@ Zubimendi's Sudden Demise The rapid turnaround in fan perception regarding Marti
 
 Norgaard: The Unlikely Savior? Perhaps the most baffling suggestion from the agitated faithful is the call for Christian Norgaard to start. The idea that Arsenal's title hopes hinge on a holding midfielder who isn't even in their squad is a testament to the sheer desperation and lack of rational thought currently infecting segments of the fanbase. It suggests a deep misunderstanding of tactical nuances and squad depth, instead opting for a scapegoat-driven narrative rather than acknowledging the inherent challenges of a title charge. 
 
+

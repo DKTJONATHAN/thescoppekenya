@@ -27,3 +27,4 @@ Iraola's Departure and Newcastle's Challenges Bournemouth, under the stewardship
 
 Title Decider: Arsenal vs. Manchester City The Premier League title race in 2026 is poised for a thrilling conclusion, with Arsenal and Manchester City set for a crucial showdown. Pep Guardiola expressed pride in challenging Arsenal for the title, indicating the intensity of the battle. The outcome of this encounter could significantly shape the destination of the coveted trophy.
 
+

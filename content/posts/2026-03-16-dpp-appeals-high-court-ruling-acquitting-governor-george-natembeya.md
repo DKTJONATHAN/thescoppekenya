@@ -21,3 +21,4 @@ Allegations of Unlawful Acquisition and Conflict of Interest The prosecution had
 
 Path to Reopen Investigations Through the appeal, the prosecution now seeks to challenge the High Court ruling and reopen the path for further investigations and possible criminal proceedings against Governor Natembeya. This action by the ODPP underscores an ongoing commitment to accountability in public service, echoing the broader calls for financial scrutiny, such as when the Senate ordered the National Treasury to disclose new loan agreements within 60 days. 
 
+

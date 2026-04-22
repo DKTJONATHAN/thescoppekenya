@@ -21,3 +21,4 @@ Addressing Persistent Workforce Gaps The policy intends to resolve persistent st
 
 Path Towards Universal Health Coverage This initiative represents a significant step for the government in its pursuit of Universal Health Coverage (UHC), targeting access to essential, high-quality health services for all citizens without financial hardship by 2030. The policy's focus on an adequate supply of healthcare workers, optimal expertise mix, equitable distribution, and improved performance within the health system is central to achieving this ambitious goal. It marks the first dedicated policy to guide the development and management of healthcare professionals since the nation's independence. 
 
+

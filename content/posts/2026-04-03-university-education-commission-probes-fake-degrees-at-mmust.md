@@ -21,3 +21,4 @@ Origin of the Controversy The controversy stems from claims made by former Minis
 
 University Denies Accusations Masinde Muliro University of Science and Technology has denied the accusations, maintaining that all its graduation processes adhere strictly to established academic and statutory standards. The university emphasised that students undergo a rigorous process involving admission, registration, coursework, examinations, and approval by relevant academic bodies before qualifying for graduation. MMUST clarified that final clearance for graduation is granted only after approval by the University Senate, ensuring all candidates meet the required academic thresholds. The institution also cited its Open and Distance Learning (ODL) programmes, noting that some graduates may not be physically present on campus, which could explain unfamiliar names appearing on graduation lists. 
 
+

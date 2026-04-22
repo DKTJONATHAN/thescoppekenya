@@ -15,3 +15,4 @@ Deepening Economic Ties This initiative builds on a foundation of significant ec
 
 Catalyst for Digital Finance Growth For entrepreneurs developing digital payment platforms, this agreement signals a notable opportunity for faster expansion across Kenya and Rwanda. It is expected to facilitate more seamless mobile transactions, remittances, and fintech services for both businesses and everyday consumers across borders. This strategic move by the central banks is anchored in the East Africa Community Cross-Border Payment System Masterplan (EAC Masterplan), reflecting a clear vision for a more integrated, efficient, and inclusive regional payments landscape. 
 
+

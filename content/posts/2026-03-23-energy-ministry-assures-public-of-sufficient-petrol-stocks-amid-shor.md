@@ -23,3 +23,4 @@ Global Geopolitical Impact on Energy Security The ongoing conflict involving the
 
 Local Economic Vulnerabilities The country is highly susceptible to global economic shocks, particularly those originating in the Middle East, given that nearly all its refined petroleum products are imported. The economic reverberations of global events, such as the current oil market volatility, underscore the necessity for robust financial literacy initiatives. This mirrors efforts seen with the launch of the Wall Street Mtaani financial show by Wall Street Africa Group, aimed at enhancing financial understanding. In its latest review, covering March 15 to April 14, EPRA maintained fuel prices. This stability was largely attributed to most shipments being February-priced cargoes, indicating that the immediate impact of the ongoing Middle East situation had not yet influenced current local fuel prices. 
 
+

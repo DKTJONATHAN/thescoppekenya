@@ -15,3 +15,4 @@ Casualties and Response Corporal Kipkurui Kosgei suffered bruises on his left ha
 
 Broader Context of Attacks This latest incident in Mandera follows a pattern of recent IED attacks. Less than a month prior, on February 23, three police officers were injured in Garissa County after a blast struck their water bowser in Fafi Sub-County. Earlier in February, officers from the Counter Terrorism Policing Unit successfully disrupted a planned terror attack in Nairobi, recovering assault rifles, pistols, and explosive devices. These events underscore the persistent threat posed by militant groups in border regions. 
 
+

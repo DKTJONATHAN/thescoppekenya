@@ -19,3 +19,4 @@ Protesters Demand Accountability Demonstrators stated they possess crucial infor
 
 Details of the Assault Vihiga Senator Godfrey Osotsi is currently recuperating from injuries sustained during the assault on Wednesday, April 8, 2026. The incident occurred in Kisumu County. Reports indicate Senator Osotsi had visited the Acacia area for a haircut before proceeding to a Java restaurant. There, he met a friend and engaged with members of the public. Moments later, a group of armed individuals confronted him, questioning his political allegiance before proceeding with the assault. 
 
+

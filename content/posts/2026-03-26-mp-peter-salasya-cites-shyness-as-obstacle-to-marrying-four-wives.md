@@ -21,3 +21,4 @@ Lessons from Past Heartbreak The path to the altar has been anything but straigh
 
 Public Scrutiny and Friendly Counsel Since joining the 13th Parliament in 2022, Salasya's quest for a wife has remained a recurring topic of public interest. He has even sought advice from prominent figures, including once humorously asking Mama Ida Odinga to assist him in identifying a suitable spouse. Despite remaining one of the nation's most eligible bachelor politicians, Salasya's recent admission highlights that even for a man who describes himself as "naturally polygamous," initiating the first step can be the most difficult part of the journey. 
 
+

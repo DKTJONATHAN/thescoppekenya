@@ -25,3 +25,4 @@ Second Revision and Transfers For those who do not secure placement in their ini
 
 Security Warning KUCCPS issued a stern warning regarding portal security, advising students against sharing their passwords, even with cyber café attendants. This caution comes amid a rising number of reported cases of account tampering and fraud, underscoring the importance of personal data security during the application period. 
 
+

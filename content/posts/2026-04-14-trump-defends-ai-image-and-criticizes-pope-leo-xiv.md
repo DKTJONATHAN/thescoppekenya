@@ -19,3 +19,4 @@ Papal Punditry Causes Vatican Fallout The controversial AI image post follows cl
 
 Celebrity Controversies and Global Scrutiny Just as global entertainment figures often face unexpected hurdles, as seen with the recent Wireless Festival cancellation after Kanye West's entry to the UK was denied, political personalities like Trump also find their every move scrutinized by an international audience. The blend of his celebrity status, political theatrics, and increasingly visual social media presence ensures that every post becomes a talking point, resonating across various platforms and sparking debates from Washington to Nairobi. The former president's ability to command attention, whether through digital art or pointed criticism, continues to solidify his unique position in the global spotlight. 
 
+

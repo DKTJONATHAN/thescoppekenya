@@ -19,3 +19,4 @@ Allegations of State-Backed Mayhem Gachagua accused National Assembly Majority L
 
 Controversial Haiti Deployment Link The former Deputy President also controversially claimed that the recent multinational police deployment to Haiti served not only to restore order in the Caribbean nation but also as a training platform for integrating informal groups into security operations. These allegations suggest a deeper, more systemic issue of 'goonism' becoming entrenched in governmental functions. The World Bank recently pledged financial aid for countries facing fuel and fertilizer shortages, highlighting the broader challenges nations contend with, alongside internal security issues. 
 
+

@@ -21,3 +21,4 @@ Union Grievances and Legal Interventions The union's core grievances include acc
 
 Potential Sector-Wide Disruptions Industrial strikes by aviation workers typically result in severe consequences, often disrupting flights into and out of the country. The Kenya Airline Pilots Association (KALPA) has previously warned that continuous disruptions from such strikes could elevate fatigue risks for flight crews, thereby increasing the potential for catastrophes. KALPA attributes this risk to delays, cancellations, and diversions, which create unpredictable schedules and extend pilot duty periods. Such protracted disputes underscore the constant need for robust frameworks to manage industrial relations and ensure operational stability. 
 
+

@@ -19,3 +19,4 @@ Government’s Security Stance Kindiki defended the government’s comprehensive
 
 Intensified Operation Planned In response to the deteriorating situation, Kindiki reiterated that authorities will launch a fresh, decisive crackdown on banditry. This announcement follows his recent declaration of a two-week timeline for an intensified security operation in Nyambene, Meru County, aimed at restoring stability. The government plans to prioritise robust security deployments, incorporating military personnel, police units, and specialised equipment, including armoured vehicles and aircraft. The public disagreement between Kindiki and Gachagua underscores rising political tensions as leaders increasingly trade public statements in the lead-up to the 2027 elections. 
 
+

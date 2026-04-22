@@ -21,3 +21,4 @@ Fostering Open Dialogue and Support Through candid discussions and engaging cont
 
 Beyond the Personal: Impact on Maternal Wellness Krisbabyy's advocacy extends beyond personal anecdotes, aiming to positively impact maternal wellness at large. By normalizing C-sections and celebrating the strength of mothers, she is contributing to a healthier mental and emotional landscape for new parents. Her work aligns with the ongoing national conversation about comprehensive support systems for individuals. In a similar vein, the recent ruling where the TSC was ordered to pay a teacher Ksh200,000 for the unlawful withdrawal of health insurance underscores the critical need for robust and reliable support structures that protect citizens' well-being. Krisbabyy's campaign, while focusing on individual empowerment, therefore contributes to this larger dialogue about fostering environments that support and uplift every Kenyan. 
 
+

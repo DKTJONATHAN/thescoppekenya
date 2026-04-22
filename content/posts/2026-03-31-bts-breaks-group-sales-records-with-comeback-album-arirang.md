@@ -21,3 +21,4 @@ The Weight of the Crown The album's title, 'ARIRANG', holds profound significanc
 
 Global Stage, Record Audience The reunion was an emotional event for fans who had followed the group's staggered departures for service over two years. The comeback concert, streamed live on Netflix from Seoul's iconic Gwanghwamun Square, captivated an estimated 260,000 fans. Their extensive world tour is scheduled to begin on April 9, 2026, in Korea, with the United States leg kicking off on April 25, 2026, in Tampa. 
 
+

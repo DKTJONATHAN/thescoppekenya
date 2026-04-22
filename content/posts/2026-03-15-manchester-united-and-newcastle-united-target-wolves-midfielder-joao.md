@@ -17,3 +17,4 @@ United's Perennial Instability Manchester United's supposed interest in Gomes pr
 
 The Champions League Chimera The supposed 'huge advantage' Manchester United holds over Newcastle due to their Champions League prospects is a fragile one. Currently sitting third in the league with 51 points, their grip on a top-four spot is far from secure. Relying on a hypothetical European draw to lure talent, while Newcastle languishes in twelfth with 39 points, merely exposes the desperation of clubs trying to compensate for inconsistent domestic performance with the allure of elite competition. 
 
+

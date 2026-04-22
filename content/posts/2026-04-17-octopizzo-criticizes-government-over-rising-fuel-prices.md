@@ -21,3 +21,4 @@ Calls for Consistent Accountability The award-winning artist also stressed that 
 
 EPRA's Response to Price Hikes Octopizzo's remarks followed the latest fuel price increase announced by the Energy and Petroleum Regulatory Authority (EPRA). Under the recent review, fuel prices in Nairobi rose sharply, with petrol retailing at KSh206.97 per litre and diesel at KSh206.84. Diesel recorded a significant increase of over KSh40 per litre, while petrol climbed by nearly KSh29. EPRA attributed the hike to rising global crude oil prices and increased import costs, explaining that international market pressures continue to drive up local fuel prices despite government efforts to cushion consumers. These adjustments have intensified concerns over the cost of transport and basic commodities, further amplifying public frustration over the state of the economy. 
 
+

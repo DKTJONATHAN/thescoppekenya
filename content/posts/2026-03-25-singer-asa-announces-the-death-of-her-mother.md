@@ -19,3 +19,4 @@ An Outpouring of Support This deeply personal revelation from Asa comes as artis
 
 A Legacy of Inspiration Born Bukola Elemide in Paris to Nigerian parents, Asa spent her early childhood in Lagos before returning to France at 18, where her distinctive voice and celebrated career took shape. For over two decades, she has maintained her status as an award-winning icon, crafting modern folk music that explores sociocultural and political affairs. Her music has always carried a profound emotional weight, and her mother, by all accounts, was a significant source of that inspiration. 
 
+

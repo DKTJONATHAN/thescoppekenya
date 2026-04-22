@@ -17,3 +17,4 @@ Mandate of the KNCHR This proclamation follows a previous directive by the Presi
 
 Historical Context and Political Agreement The compensation of protest victims was a key component of the 10-point agreement signed between the ODM and UDA parties. This agreement was forged following the widespread protests of 2024, which ultimately led to the formation of the broad-based government. Earlier attempts by President Ruto to establish a compensation panel in 2025 were dismissed by the courts, which cited the panel's illegitimacy and affirmed that the appropriate channel for such compensation lay with the KNCHR. 
 
+

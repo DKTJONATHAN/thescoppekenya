@@ -15,3 +15,4 @@ Leadership Turnover in Energy Sector The fuel scandal has prompted significant l
 
 Scrutiny on G2G Import Framework The current scandal casts a harsh spotlight on the government-to-government (G2G) import arrangement, initially introduced in 2023. This framework was designed to stabilize fuel supply after the 2022 crisis, offering sovereign guarantees and extended credit terms to cushion Kenya against global price volatility and foreign exchange pressures. The alleged manipulation of stock data and subsequent emergency procurement outside this established G2G framework raises critical questions regarding its efficacy and oversight mechanisms. The alleged failure of the resulting cargo to meet quality standards further compounds concerns over procurement integrity. 
 
+

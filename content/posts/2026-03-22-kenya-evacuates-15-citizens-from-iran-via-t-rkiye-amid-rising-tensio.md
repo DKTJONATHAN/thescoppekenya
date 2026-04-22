@@ -21,3 +21,4 @@ Heightened Middle East Hostilities The evacuation unfolds amidst escalating host
 
 Ongoing Monitoring and Advisory The government maintains continuous monitoring of the Middle East situation. A multi-agency team has activated emergency protocols across Kenya Missions in the region, reflecting a comprehensive approach to citizen safety. This level of preparedness is critical in times of crisis, similar to the coordinated efforts seen in domestic emergencies where the Kenya flood death toll reached 62 as Nairobi recorded the highest fatalities. [https://zandani.co.ke/article/kenya-flood-death-toll-reaches-62-as-nairobi-records-highest-fatalit] Citizens in the affected region have been advised to strictly adhere to guidance issued by the country's embassies, host governments, and official communication channels. Those requiring assistance are urged to contact the nearest mission or the State Department for Diaspora Affairs. 
 
+

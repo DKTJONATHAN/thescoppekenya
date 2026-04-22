@@ -21,3 +21,4 @@ Developing Talent and Community Capacity Beyond academic pursuits, the college i
 
 Government Support Initiatives In addition to the college construction, the government has committed to collaborating with the church on training and capacity building for the Akorino Sacco, pledging millions to promote financial independence within the community. Furthermore, President Ruto ordered the reservation of 50 teaching slots for the Akorino faithful during the next Teachers Service Commission (TSC) recruitment drive, recognizing their capabilities in the education sector. 
 
+

@@ -19,3 +19,4 @@ The Original "Father" and its Visual Grandeur "Father," released on March 28, 20
 
 Commercial Success and a Story of Reconciliation The song "Father" has achieved notable commercial success since its release in March 2026, topping Apple Music charts and securing placements on the Billboard 200, Global 200, Hot R&B/Hip-Hop Songs, and various UK and international charts. Beyond its commercial performance, the track holds a deeper narrative. West and Scott's friendship experienced a strained period in 2025 following a public dispute. The two later reconciled when West made a surprise appearance at Scott's concert in Japan in November 2025. In many respects, "Father" stands as a testament to that reconciliation. The endorsement from Kanye West and Bianca Censori provides ample validation for the Ikorodu Bois, reaffirming their exceptional creativity and continued global appeal. 
 
+

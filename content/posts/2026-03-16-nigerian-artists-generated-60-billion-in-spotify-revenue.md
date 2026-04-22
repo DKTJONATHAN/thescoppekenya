@@ -21,3 +21,4 @@ Local Impact and Artist Growth At home, Nigerian music maintains a powerful shar
 
 Independent Voices and Genre Diversity Spotify's editorial ecosystem continues to support artist discovery and amplification. In 2025, nearly 2,000 Nigerian artists were added to editorial playlists on Spotify. Beyond editorial support, Nigerian music resonated strongly with listeners globally, with Nigerian artists featured in almost 320 million user playlists worldwide and over 12 million user playlists in Nigeria. The platform saw more than 60 million user playlists featuring Nigerian artists created in 2025 alone. The latest data also reflects a diverse listening culture in Nigeria, with pop urbaine, alternative pop, anime, emo, and drill showing the highest growth over the last five years, signaling an increasingly varied and evolving music landscape. 
 
+

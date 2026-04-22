@@ -21,3 +21,4 @@ Meta's Existing Legal Battles in Kenya This is not Meta's first encounter with l
 
 Global Resonance of Kenya's Findings Kenya now joins the United Kingdom and the United States in formally scrutinizing Meta over these privacy and data handling concerns. The ODPC has committed to publicly sharing its findings upon the conclusion of its investigation. The outcome and the regulatory actions taken will have implications extending far beyond Kenya's borders, potentially influencing global data protection standards for smart technologies. 
 
+

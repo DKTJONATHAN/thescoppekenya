@@ -17,3 +17,4 @@ Coastal Cool Downs and Lowland Drama Down in the South-eastern Lowlands, Kitui, 
 
 Temperature Talk: Hot Spots and Chill Zones While the rain reigns, don't expect a complete cool-down everywhere. Daytime temperatures above 30°C are still on the cards for the Coast, South-eastern Lowlands, and parts of North-eastern and North-western Kenya. Perfect for that steamy, dramatic look - if you can find a dry spot! Meanwhile, the Central Highlands, Central Rift Valley, and areas around Mount Kilimanjaro will experience cooler nighttime temperatures, dipping below 10°C. So, while some are sizzling, others will be snuggling. 
 
+

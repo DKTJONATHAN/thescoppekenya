@@ -19,3 +19,4 @@ Infrastructure Investment and Road Maintenance A substantial portion of fuel pri
 
 Recent Fuel Price Revisions President Ruto's explanation follows recent public concern over increased pump prices. On April 14, 2026, the Energy and Petroleum Regulatory Authority (EPRA) announced a significant increase, pushing pump prices to over Ksh206 per litre for both petrol and diesel. These were later revised, with petrol retailing at Ksh197.60 per litre and diesel at Ksh196.63 per litre for the current month. This contrasts with prices in neighbouring countries, where petrol in Uganda averages about Ksh185-Ksh190 per litre and diesel around Ksh175-Ksh183. In Tanzania, petrol averages about Ksh191 and diesel about Ksh190 per litre. 
 
+

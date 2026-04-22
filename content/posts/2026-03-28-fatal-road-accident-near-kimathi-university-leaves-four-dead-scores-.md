@@ -19,3 +19,4 @@ Rescue Operations Underway The Nyeri County Government swiftly deployed an emerg
 
 Road Safety Concerns Highlighted The section of the Nyeri-Nyahururu Road where the accident occurred is known locally as a narrow stretch that handles heavy traffic between Nyeri town and Nyahururu, making it prone to accidents. This incident adds to a troubling trend in road safety statistics for 2026. According to figures from the National Transport and Safety Authority (NTSA) and the Traffic Police, 398 people were killed in road accidents across the country in January alone. 
 
+

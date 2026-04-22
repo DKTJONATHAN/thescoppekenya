@@ -27,3 +27,4 @@ The intense online discourse highlights the evolving expectations within Kenyan 
 
 This bold claim resonates deeply within Kenyan pop culture, where imagery of success and upward mobility frequently includes personal vehicles. Celebrity relationships, often under intense public scrutiny, are implicitly judged by such visible standards of lifestyle and convenience. The ongoing debate has certainly provided ample fodder for discussions on popular podcasts, lifestyle vlogs, and even morning radio shows across the nation, illustrating how personal opinions can quickly become a national talking point.
 
+

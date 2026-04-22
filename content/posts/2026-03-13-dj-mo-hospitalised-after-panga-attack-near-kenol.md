@@ -15,3 +15,4 @@ DJ Mo's Influence on Gospel Entertainment DJ Mo remains a highly recognisable fi
 
 Community Response Following news of the attack, numerous individuals from the gospel community and the comedy industry extended their well wishes to DJ Mo. Among those who publicly expressed concern for his well-being were gospel singer Guardian Angel, Comedian Millie Chebby, and Entertainer Kabi Wa Jesus. 
 
+

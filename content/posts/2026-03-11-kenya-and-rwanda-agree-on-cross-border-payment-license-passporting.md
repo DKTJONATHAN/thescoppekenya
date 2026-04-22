@@ -15,3 +15,4 @@ Kenya's Digital Payment Leadership Kenya demonstrates a robust digital payment e
 
 Rwanda's Vision for a Cashless Economy Rwanda's government has strategically positioned FinTech as a foundational element of its Vision 2050 agenda. This national aspiration seeks to evolve Rwanda into a knowledge-driven, cashless economy. By 2023, over 6.5 million Rwandans had embraced mobile money platforms, collectively generating more than 400 million transactions with a combined annual value of approximately Ksh 622 billion, indicating significant progress towards its digital transformation goals. 
 
+

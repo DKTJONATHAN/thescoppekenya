@@ -17,3 +17,4 @@ Commitment to Independence and Digital Growth Despite the changes inherent in ow
 
 Regulatory Approvals Pending The acquisition is currently awaiting regulatory approvals. These necessary clearances are anticipated to be finalized within the next three to four months. The transaction's cross-border nature implies review by multiple authorities, including the recently operationalized East African Community Competition Authority (EACCA), which began receiving applications for cross-border mergers and acquisitions from November 1, 2025. This introduces an additional layer of regulatory compliance for deals involving multiple EAC member states. 
 
+

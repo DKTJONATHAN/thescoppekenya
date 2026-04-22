@@ -15,3 +15,4 @@ Haunted Habitations and Energetic Barns Michaela Coel, who plays fashion designe
 
 Director Lowery's Quest for Ghosts Even director David Lowery, known for his atmospheric films like "A Ghost Story" and "The Green Knight," felt the unusual energy. Although he didn't personally witness anything out of the ordinary, crew members reportedly texted him about their odd experiences, confirming that "something was afoot". Lowery, ever the seeker of the supernatural, remains open to encountering an otherworldly being, antenna up and ready for contact, despite not yet meeting a ghost himself. "Mother Mary" is currently showing in select theaters and opens nationwide on April 24, 2026. Catch Anne Hathaway, who next appears in "The Devil Wears Prada 2," and Michaela Coel in what promises to be a dramatic and, perhaps, supernaturally charged cinematic experience. 
 
+

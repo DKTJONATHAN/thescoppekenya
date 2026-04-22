@@ -23,3 +23,4 @@ Enhancing Healthcare and Trade Infrastructure Ruto also detailed several other k
 
 SGR Phase 2B Launch Forthcoming Further infrastructure development is slated with Ugandan President Yoweri Museveni joining President Ruto on Saturday for the Phase 2B launch of the Kisumu-Malaba section of the Standard Gauge Railway (SGR) at Kibos, Kisumu. This new railway line will encompass the 264-kilometre Naivasha-Kisumu section and the 107-kilometre Kisumu-Malaba stretch, totaling over 370 kilometres. 
 
+

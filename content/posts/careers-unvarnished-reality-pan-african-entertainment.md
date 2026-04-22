@@ -17,3 +17,4 @@ Exploitation and the Perilous Path to Sustainable Careers Beneath the surface of
 
 Beyond the Glamour: Diverse Careers and the Fight for Recognition While the spotlight often falls on performers, the Pan-African entertainment ecosystem encompasses a myriad of other vital careers, from producers and sound engineers to cinematographers and marketing professionals. The burgeoning creator economy also sees digital content makers pushing for their work to be recognized as full-time careers, moving beyond the "side hustle" mentality. However, these roles are not immune to the industry's systemic challenges, facing issues like brain drain, infrastructure gaps, and bureaucratic hurdles. Building genuinely sustainable careers across all facets of Pan-African entertainment demands a critical examination of current practices and a steadfast commitment to fair, transparent, and artist-centric models. 
 
+

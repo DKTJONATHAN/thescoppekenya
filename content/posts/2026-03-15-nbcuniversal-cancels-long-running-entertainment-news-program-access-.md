@@ -13,3 +13,4 @@ Access Hollywood's Grand Exit After 30 seasons of bringing audiences the glitz a
 
 Daytime TV Shake-Up Continues The changes extend beyond entertainment news, with NBCUniversal also pulling the plug on two daytime talk shows. Karamo, hosted by Queer Eye alum Karamo Brown, concludes after a respectable four-season run. The Steve Wilkos Show, a popular Jerry Springer spinoff, is wrapping up after an impressive 19 seasons. Both shows have completed production, with their final new episodes airing over the coming months. This wide-ranging restructuring follows the earlier announcement last month that NBCUniversal's The Kelly Clarkson Show is also scheduled to end later this year, signaling a broader shift in the network's daytime television strategy. 
 
+

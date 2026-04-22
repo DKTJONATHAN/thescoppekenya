@@ -23,3 +23,4 @@ Calls for Transparency and Rationalisation The federation demands a comprehensiv
 
 Fuel Supply Concerns Amid Regional Instability COFEK's call follows a day after the Petroleum Outlets Association of Kenya (POAK) urged the government to allow sourcing fuel from private suppliers to avert shortages. On Tuesday, March 24, POAK claimed the current government-to-government supply arrangement is unsustainable amid escalating Middle East tensions. POAK chairman Martin Chomba reported that 20 percent of the country's over 6000 petrol stations are already experiencing shortages, prompting panic buying. 
 
+

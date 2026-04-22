@@ -21,3 +21,4 @@ Luxury Tech Acquisition Sparks Interest Beyond the construction update, the vide
 
 Fans Applaud, Others Ponder Investment Pace The "OG’s" recent moves have garnered widespread admiration from followers, who commend his shift from music to large-scale entrepreneurship. Many consider him a blueprint for Kenyan artists aiming to build sustainable wealth beyond the recording studio. Nevertheless, the swift succession of costly acquisitions, from the luxury smartphone to the Ruaka construction, has also sparked curiosity. Some netizens have raised questions regarding the rapper's various income streams and the remarkable speed of his recent investments. Despite the chatter, Khaligraph Jones remains steadfast, maintaining his distinct "OG" persona as he prepares to make his mark on both the music charts and the commercial landscape of Ruaka in 2026. 
 
+

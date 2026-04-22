@@ -15,3 +15,4 @@ Wheels of Power The presidential motorcade has certainly seen some impressive up
 
 Traffic Jam Trouble Beyond the glitz and the glamour, Governor Natembeya's point is sharp: the sheer scale and execution of these movements profoundly affect the daily lives of Kenyans. He suggests it is time for a serious rethink on how these convoys operate, ensuring they better respect the time and needs of the public. After all, what good is a leader who cannot share the road with the very people they lead? 
 
+

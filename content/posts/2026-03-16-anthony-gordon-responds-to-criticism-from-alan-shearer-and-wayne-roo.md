@@ -15,3 +15,4 @@ Gordon's Grievance and the Reality Check Gordon's response was sharp and direct.
 
 The Price of a Premature Verdict The irony, of course, is that Gordon was deemed well enough to start just days later against Chelsea, scoring the solitary goal in a crucial 1-0 victory. This rapid turnaround undermines the initial criticism entirely. It suggests a punditry that prioritises immediate, often inflammatory, takes over patient analysis or simply waiting for all the facts. For Gordon, it was a vindication, but for the credibility of some prominent voices in football punditry, it was a significant own goal. They need to "do better at what they are doing," as Gordon so succinctly put it. The rush to judgment, especially from those who know the pressures of the game, only further muddies the waters of genuine football discussion. 
 
+

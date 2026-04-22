@@ -17,3 +17,4 @@ Citizen Vulnerability and State Responsibility The disparity in financial recour
 
 Future Policy Directions Addressing Kenya's deepening flood crisis requires a multi-pronged political approach. This entails urgent investment in urban drainage and infrastructure resilience, particularly in chronically flooded areas like sections of Mombasa Road, Jogoo Road, and Westlands. Concurrently, policy interventions are needed to enhance insurance literacy and uptake, perhaps through public-private partnerships or regulatory adjustments that make comprehensive cover more attractive and accessible. The Britam AI Motor Assessment Service, processing claims in two hours for minor damage, demonstrates technological solutions to improve efficiency, but foundational policy shifts are essential to broaden protection for all citizens. 
 
+

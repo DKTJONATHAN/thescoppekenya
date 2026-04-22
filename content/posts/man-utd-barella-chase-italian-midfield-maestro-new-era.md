@@ -20,3 +20,4 @@ Other Contenders: Onana, Tonali, Rice Of course, Barella isn't the only name flo
 
 A Smart Sporting Project Ultimately, Mate, this new "sporting project" needs to be more than just a catchy phrase. It needs smart recruitment, genuine vision, and a bit of stability. Carrick's doing his bit on the pitch, but the hierarchy needs to deliver in the summer window. Will Barella be that statement signing? Only time will tell, but it's certainly got everyone talking, hasn't it? 
 
+

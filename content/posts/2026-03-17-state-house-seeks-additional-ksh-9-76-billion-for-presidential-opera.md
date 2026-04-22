@@ -21,3 +21,4 @@ Comparative Departmental Spending Concurrently, the Committee scrutinized expend
 
 eCitizen Revenue Collection Efficiency Addressing concerns from Members of Parliament regarding revenue collection processes, PS Kipsang reassured the committee that all payments are now processed digitally through the eCitizen paybill system, eliminating manual collections. The eCitizen platform alone is a significant revenue generator, collecting approximately Ksh 1 billion on a daily basis, according to government records. 
 
+

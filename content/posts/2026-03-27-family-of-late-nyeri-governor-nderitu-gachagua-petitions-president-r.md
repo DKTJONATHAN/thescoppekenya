@@ -19,3 +19,4 @@ Contested Will Under Scrutiny At the center of the dispute is a contested will, 
 
 Allegations of Asset Misappropriation The petition also accuses the unnamed relative of leveraging political influence to misappropriate funds meant for the family's welfare while denying them access to key properties. This situation underscores broader concerns about property ownership and potential fraud. The National Transport and Safety Authority (NTSA) recently outlined smart logbook management guidelines to prevent ownership disputes and fraud, highlighting mechanisms to safeguard asset integrity. Among the assets in dispute are a popular garden resort and another beach resort, which the family wants returned as part of the estate. 
 
+

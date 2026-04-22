@@ -25,3 +25,4 @@ Speculation on Underlying Motives Curiously, a building barely five meters from 
 
 Public Toilet Management and Revenue Nairobi County lists approximately 68 public toilets across the county, with about 18 concentrated in the immediate Central Business District. These facilities, once managed by the Nairobi Metropolitan Services (NMS), have since been transferred to youth and women groups. Toilets in prime locations, such as the Archives area, can generate substantial income, with estimates suggesting approximately KSh30,000 daily and up to KSh1.5 million monthly. Typical public toilets in the CBD generally yield KSh10,000 to KSh15,000 daily after covering basic operational costs. 
 
+

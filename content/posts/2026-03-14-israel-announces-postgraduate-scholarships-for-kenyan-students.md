@@ -15,3 +15,4 @@ Target Candidates and Funding This initiative specifically targets individuals w
 
 Application Process and Deadline Interested students can access comprehensive information and submit their applications via the Ben-Gurion University of the Negev's official website: africa-master. The deadline for applications is set for May 1, 2026, providing several weeks for students to prepare and submit all necessary documentation. Applicants should ensure they meet all stipulated requirements, including having valid travel documents, much like the United States mandates valid passports for green card lottery applications. 
 
+

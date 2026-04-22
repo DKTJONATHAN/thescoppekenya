@@ -21,3 +21,4 @@ Dignitaries Applaud the Act Seated among other prominent figures, including Spor
 
 Future of the Feud While the long-term impact on their long-standing feud remains to be seen, this rare on-stage interaction has already captured widespread public attention. It offered fans a glimpse of unity on one of Ghana's biggest stages, highlighting the potential for reconciliation even in entrenched rivalries. Both artistes have been active in 2026, with Stonebwoy releasing a "Unity" single and announcing BHIM Fest in London, and Shatta Wale releasing new music. 
 
+

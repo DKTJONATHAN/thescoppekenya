@@ -23,3 +23,4 @@ Upcoming Physical Inspections A combined total of 2,267 establishments, includin
 
 Addressing Illicit Alcohol Concerns The enhanced enforcement measures are a direct response to Murang'a County being ranked 15th nationwide in reported cases of illicit and adulterated alcohol abuse. This statistic was highlighted by the Deputy Inspector General of Police, Geoffrey Masengeli. Efforts by the Kenya Revenue Authority (KRA) and the National Authority for the Campaign Against Alcohol and Drug Abuse (NACADA) have already led to the seizure of counterfeit alcohol valued at millions of shillings and the closure of illegal manufacturing facilities in areas such as Kenol. 
 
+

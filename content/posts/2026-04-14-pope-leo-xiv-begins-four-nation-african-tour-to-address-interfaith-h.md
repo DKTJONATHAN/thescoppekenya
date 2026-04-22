@@ -19,3 +19,4 @@ Anticipation Builds Among Kenya's Personalities The Pontiff's arrival has sent r
 
 The Logistics of a Papal Visit: A Kenyan Spectacle Hosting a dignitary of Pope Leo XIV's stature is no small feat, transforming parts of Nairobi into a hub of meticulous planning and enhanced security. From diplomatic receptions to large-scale public addresses, the logistical orchestration is a spectacle in itself. Such massive undertakings involve a myriad of services and precise coordination, echoing the kind of significant operations seen in various sectors. This includes the strategic appointment of key leaders in major firms, for example, Lesley Ndlovu taking the helm at AfrexInsure, highlighting the substantial responsibilities that come with managing large-scale operations in Kenya. The sheer scale of the preparations has become a talking point among those who appreciate the intricacies of grand event management. 
 
+

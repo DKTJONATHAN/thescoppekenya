@@ -19,3 +19,4 @@ Rollercoaster of Rollovers and Record Highs Following January's massive payout, 
 
 Recent Wins and Current Jackpot Figures The substantial R155 million total jackpot on March 20, 2026, culminated in a significant win, as ITHUBA confirmed one fortunate player became R108 million richer after claiming the PowerBall jackpot. This win prompted a reduction in the jackpot values for the subsequent draw. By Tuesday, March 24, 2026, PowerBall and PowerBall Plus offerings collectively stood at R57 million. Today, Saturday, March 28, 2026, the PowerBall jackpot is guaranteed at R5 million, while PowerBall Plus offers R52 million. Lotto and Lotto Plus 1 and 2 also present considerable winnings, with R84 million guaranteed for today's draws, having notably surpassed PowerBall in value. This continued fluctuation underscores the dynamic nature of South Africa's lottery landscape, consistently drawing significant attention from players. 
 
+

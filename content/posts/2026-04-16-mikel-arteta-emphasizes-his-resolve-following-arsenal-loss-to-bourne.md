@@ -15,3 +15,4 @@ A Familiar April Folly The timing of this "pure fire" outburst is particularly t
 
 Desperation's Last Dance With the title now resting in both Arsenal and Manchester City's hands, the pressure cooker intensifies ahead of their crucial encounter this coming Sunday, not to mention the looming European tie against Sporting. Arteta's insistence on "purpose, fire, direction and conviction" seems less an inherent quality of his team and more a manager trying to manifest it through sheer force of will. The omens, as the source text notes, do "not look good for an Arsenal side that appears to be wilting under the pressure". A manager "on fire" should be leading by example on the pitch, not just from the podium, particularly when his team needs more than just impassioned speeches to secure silverware. 
 
+

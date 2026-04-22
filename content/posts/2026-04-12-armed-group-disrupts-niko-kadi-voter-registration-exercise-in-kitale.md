@@ -19,3 +19,4 @@ Kitale Turnout and National Momentum Allans Ademba, a Niko Kadi Initiative leade
 
 IEBC's Registration Drive and Future Plans The Independent Electoral and Boundaries Commission has documented over 875,000 new voters in the past two weeks since the mass voter registration commenced. Nairobi leads with 96,897 new registrations, followed by Kiambu with 46,265. In response to the ongoing demand, the IEBC announced a voter registration exercise in the Nairobi Central Business District for today, Sunday, April 12, urging the capital's youth to register between 8 AM and 5 PM. The commission mandates that citizens present their national identification cards or valid passports for registration. This requirement comes amidst ongoing discussions concerning the issuance of national identification documents [cite: internal link for Gachagua article]. Concurrently, the Niko Kadi Drive is scheduled to conduct a similar registration exercise in the CBD on Tuesday, April 14. 
 
+

@@ -15,3 +15,4 @@ Kenya's Economic Exposure and Supply Chain Disruptions The potential closure of 
 
 Broader Economic Implications and Outlook The concurrent threat of blockades in both the Strait of Hormuz and the Bab al-Mandeb could exacerbate a global oil shortage crisis, driving prices higher and severely affecting economies heavily reliant on energy imports. For gulf states like Saudi Arabia, preventing Iran from imposing tolls on the Strait of Hormuz is a key consideration in any peace agreement with the U.S. However, a prolonged conflict risks spilling into other shipping routes, potentially disrupting the economies of the entire Gulf region. These external pressures arrive as Kenyan households already face domestic fiscal challenges, raising questions about the government's ability to buffer economic shocks. The continuity of trade flows through these critical maritime choke points is paramount for maintaining economic stability across East Africa and beyond. 
 
+

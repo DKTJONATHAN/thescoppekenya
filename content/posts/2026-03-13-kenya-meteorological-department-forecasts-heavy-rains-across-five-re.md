@@ -15,3 +15,4 @@ Central Highlands Weather Patterns and Cold Nights A similar weather pattern is 
 
 South-eastern Lowlands and North Eastern Temperature Outlook The South-eastern Lowlands, encompassing Kitui, Makueni, Machakos, Kajiado, and Taita Taveta Counties, alongside inland parts of Tana River County, are expected to experience light rains. Conversely, the North Eastern counties of Warsabit, Mandera, Wajir, Garissa, and Isiolo are forecast to endure high daytime temperatures, reaching up to 38°C over the next five days. This contrasts sharply with the cooler conditions in other parts of the country. 
 
+

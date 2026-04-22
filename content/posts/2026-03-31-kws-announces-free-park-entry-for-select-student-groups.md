@@ -21,3 +21,4 @@ Promoting Local Tourism This initiative represents a significant reduction in th
 
 Historical Context of KWS Promotions The current "Wild Scholars" offer follows a series of similar promotions by the agency. In September 2025, KWS facilitated free entry to national parks, reserves, and sanctuaries for all citizens to commemorate World Tourism Day. Later, in December 2025, KWS introduced limited-time festive promotions that included free entries for specific children and adults based on group size and vehicle type, alongside special accommodation deals for park lodges. These prior campaigns demonstrate a recurring strategy by KWS to increase public engagement with wildlife conservation efforts. 
 
+

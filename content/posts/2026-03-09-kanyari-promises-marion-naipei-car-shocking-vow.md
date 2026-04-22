@@ -17,3 +17,4 @@ Romance Off the Table, Says Kanyari Addressing the pervasive "cheating" and "dat
 
 The Public Waits for the Ride The unfolding narrative continues to be a hot topic, with Kenyans largely divided. While some commend the pastor for stepping in to assist a woman in distress, others maintain a degree of skepticism regarding the very public display of his charitable actions. As of March 2026, the duo remains a significant talking point, and fans keenly await to see if the much-touted car will indeed grace the timelines. 
 
+

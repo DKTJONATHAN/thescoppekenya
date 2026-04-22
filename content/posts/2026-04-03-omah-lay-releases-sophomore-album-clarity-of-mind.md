@@ -27,3 +27,4 @@ Setting High Expectations The album's arrival follows Omah Lay's revelation that
 
 Immediate Chart Success Within hours of its release, "Clarity of Mind" ascended to the number one spot on Apple Music Nigeria's Top Albums chart. This rapid success underscores both Omah Lay's dedicated fanbase and the significant anticipation that had built since he first teased the project nearly two years prior. 
 
+

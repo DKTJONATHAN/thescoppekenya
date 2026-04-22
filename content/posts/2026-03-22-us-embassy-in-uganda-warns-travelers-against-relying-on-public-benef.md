@@ -21,3 +21,4 @@ Recent Policy Changes for Ugandan Travelers Uganda has faced tighter visa regula
 
 Broader Regional Visa Scrutiny While the primary warning targeted Ugandan residents, the Trump administration has been actively tightening visa eligibility criteria across several nations. In August 2025, the United States Embassy in Nairobi clarified that a visa itself does not guarantee entry or an extended stay in the U.S., but rather permits travel to American ports of entry. Subsequently, new restrictions were imposed on several other African nations, including Somalia, Burundi, Chad, the Republic of the Congo, Equatorial Guinea, Eritrea, Libya, and Sudan, demonstrating a wider policy shift. 
 
+

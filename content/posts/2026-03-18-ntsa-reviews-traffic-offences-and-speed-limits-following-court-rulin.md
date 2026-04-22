@@ -25,3 +25,4 @@ NTSA Seeks Court Intervention Following the High Court's suspension of instant f
 
 Key Offenses and Penalties The contentious fines, captured by the NTSA's systems, pertain to several key violations. These include speeding, lane violations, driving on pavements, and failure to wear seatbelts. Penalties for these offences range from Ksh500 to Ksh10,000, determined by the severity of the specific infraction. 
 
+

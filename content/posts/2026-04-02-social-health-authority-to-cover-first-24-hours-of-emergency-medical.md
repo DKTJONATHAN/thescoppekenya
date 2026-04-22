@@ -21,3 +21,4 @@ Elimination of Upfront Payments A critical aspect of the new plan is the directi
 
 Comprehensive 24-Hour Coverage Upon admission, all costs for the first 24 hours of treatment, including necessary procedures such as surgery, will be fully funded by the Social Health Authority. This comprehensive coverage underscores the administration's commitment to health transformation, ensuring that essential medical interventions are accessible during the most critical period of an emergency. The improved response framework, addressing challenges like congested urban pathways, is expected to enhance access to urgent care across the country. For further context on urban mobility issues, see our recent report on [Nairobi Traffic Chaos: [LIVE UPDATES] How Heavy Rains Paralyzed Thika Road, Expressway & Mombasa Road](https://zandani.co.ke/article/nairobi-traffic-chaos-live-updates-how-heavy-rains-paralyzed-thika-roa). 
 
+

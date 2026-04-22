@@ -15,3 +15,4 @@ TikTok Safer Internet Summit 2026 and Regulatory Framework The meeting precedes 
 
 Expanding Operational Presence and Local Content Moderation Kabogo emphasized the necessity of enhanced collaboration between the government and global technology firms to cultivate a digital ecosystem founded on innovation, trust, and safety. He challenged TikTok to expand its operational footprint within Kenya and dedicate increased resources to moderating content in local African languages. The platform's extensive reach influences various sectors, including the dissemination of African celebrity news and gossip, making robust content moderation vital across all linguistic demographics. 
 
+

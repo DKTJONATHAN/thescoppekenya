@@ -17,3 +17,4 @@ Evolving Regulatory Scrutiny on the Continent African nations have increasingly 
 
 Economic Impact and the Future of Digital Advertising While a $6 million verdict is a small sum for companies with hundreds of billions in annual revenue, its true significance lies in the precedent it establishes. This ruling will likely lead to increased insurance and compliance costs for social media companies globally, including those operating or aspiring to operate in African markets. The traditional advertising model, heavily reliant on sustained user engagement, may also face significant recalibration. Advertisers, who have long benefited from platforms designed to keep users "hooked," might soon contend with a "hefty bill" reflecting the societal cost of hyper-attention. This could prompt a re-evaluation of monetization strategies for African startups and established tech firms, shifting towards models that balance commercial interests with user welfare. 
 
+

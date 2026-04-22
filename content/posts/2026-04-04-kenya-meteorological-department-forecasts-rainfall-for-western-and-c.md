@@ -25,3 +25,4 @@ Coastal and Northwestern Conditions The coastal counties of Mombasa, Kilifi, Lam
 
 Temperature Extremes Anticipated Beyond rain distribution, the Kenya Meteorological Department issued warnings regarding significant temperature fluctuations. Very cold nights, with temperatures dropping to 6°C, are expected in Central Kenya and parts of Western, Nyanza, and the Rift Valley. These night temperatures are then projected to gradually increase to approximately 11°C by the end of the forecast period. Conversely, residents in the coastal counties of Mombasa, Kilifi, Lamu, and Kwale, along with the northern parts of the country, were urged to prepare for very high daytime temperatures. Northern Kenya could experience highs soaring up to 37°C, while the coastal region is forecast to reach approximately 33°C. 
 
+

@@ -19,3 +19,4 @@ Company Condemns Assault Kenya Power has issued a strong condemnation of the att
 
 Recurring Incidents and Public Appeal According to Kenya Power, this is not an isolated incident, as their field officers have faced similar attacks in the past while performing their duties. The company noted that many officers and contractors are frequently targeted during disconnections for illegal connections or efforts to collect unpaid bills. The matter has been reported to the relevant authorities, and investigations have commenced. Kenya Power has appealed to the public for support to its workforce. Recent reports, such as the update on Sammy Kioko's hospitalization following an alleged assault, highlight the broader issue of individuals facing physical harm. Notable past incidents include a 20-year prison sentence for a man who attacked a staffer with an arrow and an assault on a technician by Kitui East MP Nimrod Mbai in 2023. 
 
+

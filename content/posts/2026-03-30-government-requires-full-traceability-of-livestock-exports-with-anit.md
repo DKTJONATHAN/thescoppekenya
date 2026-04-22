@@ -21,3 +21,4 @@ Veterinary Sector at Forefront of Digital Shift The directive was announced duri
 
 Navigating Market Challenges and Expansion The nation's livestock export sector predominantly targets the Middle East, with significant daily shipments of live animals and meat products, including sheep, goats, and camels. The industry faced challenges earlier this month, when CS Kagwe revealed daily losses of Ksh300 million on exports due to ongoing conflicts in the Middle East. In response, the government has initiated efforts to identify and secure new markets, ensuring continuity and growth for the affected export streams. 
 
+

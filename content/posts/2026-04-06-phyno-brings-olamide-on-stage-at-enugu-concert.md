@@ -23,3 +23,4 @@ Legacy of Iconic Collaborations Their collaborative history includes Olamide fea
 
 Platforming the Next Generation Beyond the headline act, Phyno also brought his daughter on stage during Qing Madi's performance, adding a personal touch to the night's festivities. The concert serves as an annual homecoming for the influential rapper, whose career has significantly impacted a generation of artists in the Southeast. Upcoming rappers Jeriq, Aguero Banks, and Evado were also platformed, showcasing the region's burgeoning talent. The deep bonds and professional success witnessed at the concert reflect a thriving Nigerian creative economy. This growth parallels advancements in the nation's financial technology sector, as evidenced by Flutterwave's recent acquisition of a Nigerian microfinance banking license. 
 
+

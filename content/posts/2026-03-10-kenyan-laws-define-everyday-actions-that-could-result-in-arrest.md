@@ -19,3 +19,4 @@ On the Road: From Queues to Car Care Commuters also face specific rules that cou
 
 Party Poopers and Financial Foresight Public intoxication and causing a disturbance fall under disorderly conduct, ensuring that celebrations don't spill over into legal trouble. Similarly, participating in an "unlawful assembly," defined as a gathering of five or more people with the intent to commit a crime or breach the peace, is also illegal. On the financial front, overlooking a crucial responsibility could also have legal repercussions. Failing to report suspicious financial transactions to the Financial Reporting Centre (FRC) is a crime. With the rise of digital crime, SIM-swap fraud, where SIM cards are cloned to steal money from mobile platforms, has already led to numerous arrests, particularly in areas like Bomet and Mulot. It's a reminder that even in an age of glamour and global trends, everyday legal compliance remains paramount for everyone. 
 
+

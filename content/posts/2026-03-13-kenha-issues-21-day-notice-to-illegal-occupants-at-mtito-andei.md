@@ -15,3 +15,4 @@ Compliance and Enforcement Measures KeNHA has informed all affected traders and 
 
 Broader Road Safety Initiatives This directive at Mtito Andei aligns with ongoing efforts by KeNHA to clear major highways of unlawful occupations. Just two weeks prior, on February 23, 2026, KeNHA issued a similar eviction notice to roadside traders operating at Kihunguro, Allsops, and Delview along the Thika Superhighway. That notice aimed to clear space for the construction of designated roadside stations, which are expected to enhance corridor functionality, improve safety standards, and alleviate persistent traffic congestion along the Thika Superhighway. Mombasa Road, which connects two of the country's largest cities and forms part of the A8 highway to Uganda, is a key transport route. 
 
+

@@ -21,3 +21,4 @@ Navigating Immediate Needs: Tools and Trade-offs In the immediate aftermath of a
 
 Thin Buffers and Prolonged Vulnerability The report further highlights a critical issue of insufficient financial buffers among Kenyan households. Nearly a quarter of households indicate an inability to sustain themselves for more than one month without a stable income. This limited capacity renders them acutely vulnerable to prolonged economic disruptions, such as unexpected unemployment or extended illness. The implications of such limited reserves are far-reaching, mirroring challenges observed in other sectors, such as the situation where doctors received delayed SRC salary increments and CBA arrears after budget allocation. The absence of adequate financial cushions necessitates rapid, often costly, recovery strategies, thereby perpetuating a cycle of short-term fixes over sustainable financial growth. 
 
+

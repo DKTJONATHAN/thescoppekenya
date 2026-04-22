@@ -21,3 +21,4 @@ Unconventional Dowry Revelation Adding another surprising layer to her personal 
 
 A New Chapter and Enduring Resilience Kansiime reflected on her previous marriage to Gerald Ojok, which concluded some years prior to her current relationship. She later found love again with fellow artist Skylanta, with whom she now shares a child. Her candid revelations offer a rare glimpse into the introspection and challenges that have shaped the popular comedian's journey, underscoring the complexities of public figures navigating personal decisions. 
 
+

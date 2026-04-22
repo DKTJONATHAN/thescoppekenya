@@ -21,3 +21,4 @@ Contributing Environmental Factors Experts attribute the increased malaria risk 
 
 Persistent Burden and Public Health Advisory High-burden regions remain concentrated around the Lake Victoria basin, encompassing counties such as Kisumu, Siaya, Homa Bay, Migori, Busia, Vihiga, and Kakamega, where transmission rates are consistently among the highest. The national incidence rate has seen a decline to 72 cases per 1,000 people in 2024, down from 104 in 2023, yet approximately 5 million cases were reported nationally in 2024. This persistent health challenge continues to exert pressure on the healthcare system, a situation compounded when inflation has eaten away at household incomes, making healthcare access more challenging for many. The government urges residents, especially in high-risk areas, to adopt preventive measures including clearing stagnant water, utilizing treated mosquito nets, and seeking early medical attention. 
 
+

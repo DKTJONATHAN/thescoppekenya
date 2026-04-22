@@ -19,3 +19,4 @@ Direct Presidential Intervention Weeks of intense back-and-forth discussions nec
 
 KPC IPO and Ownership Structure The Kenya Pipeline Company's Initial Public Offer (IPO), which concluded on March 4, 2026, and saw KPC listed on the Nairobi Securities Exchange (NSE) on March 10, attracted substantial regional interest. Uganda, Rwanda, and other East African Community member states collectively purchased 3.8 billion shares, amounting to a 21.22 percent regional bloc stake. Local institutional investors acquired 7.9 billion shares, reflecting strong domestic confidence. The government of Kenya maintains a 35 percent controlling stake, while local investors hold approximately 67.32 percent of the IPO, ensuring continued domestic control of the vital infrastructure company. KPC is currently valued at Ksh165 billion, making it the seventh most valuable stock on the NSE. 
 
+

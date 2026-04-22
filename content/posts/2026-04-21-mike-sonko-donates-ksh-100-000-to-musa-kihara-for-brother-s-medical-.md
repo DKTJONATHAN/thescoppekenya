@@ -19,3 +19,4 @@ Sonko's Enduring Philanthropic Spirit Former Nairobi Governor Mike Sonko, a figu
 
 Musa Kihara's Community Rally Musa Kihara, who re-emerged in the public eye as a viral sensation in recent months, has become a focal point for collective empathy. The ongoing health battle faced by his brother, who is bravely fighting throat cancer, has prompted a nationwide outpouring of support. This collective effort in 2026 continues to highlight the powerful spirit of Kenyans coming together to assist those in need, transforming individual stories into communal movements. 
 
+

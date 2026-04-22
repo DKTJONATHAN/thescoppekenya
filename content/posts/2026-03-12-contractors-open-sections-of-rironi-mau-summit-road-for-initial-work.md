@@ -15,3 +15,4 @@ Project Scope and Timelines The Rironi-Naivasha section, covering about 59 kilom
 
 Economic Impact and Local Engagement Lawmakers emphasized the importance of promoting local labour to create employment opportunities for residents near the project areas. The project has already generated thousands of direct and indirect employment opportunities, while prioritizing the use of locally sourced materials such as sand, gravel, and cement to stimulate surrounding economies. This focus on local economic stimulation is a key government strategy to ensure broad-based growth, a focus also evident in recent changes to utility pricing impacting various households [https://zandani.co.ke/article/nairobi-water-sewer-bills-jump-ksh23-ksh15-low-consumption-households]. 
 
+

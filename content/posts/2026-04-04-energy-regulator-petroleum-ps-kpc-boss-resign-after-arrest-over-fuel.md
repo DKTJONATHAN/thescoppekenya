@@ -23,3 +23,4 @@ Fuel Importation Controversy Deepens The resignations follow the arrest of four 
 
 Government Assurances and Future Measures The government has assured thorough investigations, with those found guilty facing charges under the economic crimes framework. Measures will also be taken to correct irregular fuel shipment requisitions, ensuring alignment with the contracted government-to-government (G-to-G) framework. Further updates will be provided as investigations progress, including administrative actions to ensure full accountability. Za Ndani remains committed to comprehensive coverage across all sectors, from critical national developments like this energy scandal to insightful analyses of global sports figures, such as those explored in [Cristiano Ronaldo: Player-Owner Dream at Almeria?](https://zandani.co.ke/article/cristiano-ronaldo-player-owner-almeria-dream). 
 
+

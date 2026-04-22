@@ -15,3 +15,4 @@ Manchester United's Endless Rebuild Manchester United's supposed interest in Ton
 
 The Player's Loyalty Question Fabrizio Romano confirms Manchester United has already made contact with Tonali's camp, with the player reportedly appreciating "the idea of returning to a bigger European stage". This narrative is all too common, where player loyalty appears secondary to the allure of perceived bigger clubs or lucrative contracts. Tonali only recently arrived at St James' Park; his apparent willingness to move on so soon after a significant transfer fee was paid raises uncomfortable questions about commitments beyond the next pay cheque. This isn't about ambition; it's about a cold, hard business where sentiment has no place, and players are merely commodities to be bought, sold, and, if the price is right, flipped for a tidy profit. 
 
+

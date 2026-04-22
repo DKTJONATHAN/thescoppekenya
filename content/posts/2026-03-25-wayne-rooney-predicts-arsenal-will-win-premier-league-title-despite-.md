@@ -15,3 +15,4 @@ Attacking Anonymity Jamie Carragher, despite also predicting an Arsenal title wi
 
 The Illusion of a Lead The nine-point lead Arsenal holds might offer comfort to some, but it's a deceptive cushion. Manchester City have a game in hand and, crucially, will host the Gunners at the Etihad next month. Should City win both those encounters, the gap shrinks dramatically. Momentum, a fickle mistress, has undoubtedly swung towards Pep Guardiola's side after Wembley. To claim Arsenal will just "see the title out" ignores the immense pressure of a run-in where perfection is demanded, particularly when your closest competitor has just delivered a significant psychological blow. City's path, while requiring them to "stay perfect," doesn't seem quite as insurmountable when Arsenal has proven they can indeed drop points, even in high-stakes fixtures. 
 
+

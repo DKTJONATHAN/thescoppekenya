@@ -23,3 +23,4 @@ Political Tenure and Past Controversies David Njuguna Kiaraho was first elected 
 
 Second MP Death This Year Kiaraho's death makes him the second Member of Parliament to die this year. Emurua Dikirr MP Johana Kipyegon Ng’eno was among six people killed in a helicopter crash in Mosop, Nandi County, on Saturday, February 28, 2026. 
 
+

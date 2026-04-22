@@ -23,3 +23,4 @@ Integrity of the Biometric System The IEBC further reassured the public that the
 
 Targeted Enrollment Directive The directive exclusively applies to individuals who had enrolled as voters before 2012 but did not subsequently present themselves for biometric registration. Such individuals are not part of the current biometric RoV. The IEBC emphasizes that this is not a widespread re-registration, but rather a targeted effort to ensure all eligible voters are accurately captured within the current digital system. 
 
+

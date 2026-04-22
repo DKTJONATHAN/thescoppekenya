@@ -21,3 +21,4 @@ Denials Meet Digital Evidence For months, Tipsy Gee and Vera Sidika have consist
 
 Public Interest Beyond Celebrity Buzz While the internet buzzes with the latest celebrity sightings and relationship conjectures, other vital national information continues to capture public attention. As Kenyans follow the unfolding narratives of their favourite public figures, crucial updates on national matters also remain top of mind. For example, the Kenya Meteorological Department has recently issued forecasts for heavy rainfall in several regions across the country, advising citizens to prepare for varied weather conditions. This blend of entertainment and essential news shapes the ongoing public discourse. 
 
+

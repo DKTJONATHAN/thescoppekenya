@@ -19,3 +19,4 @@ Counter-Accusations and "Reverse Psychology" Ichung'wah's claims emerged a day a
 
 Deepening Political Rift The public exchange highlights the deepening political animosity between the two leaders, who were once close allies. Their relationship deteriorated following Gachagua's impeachment in 2024. Since then, Gachagua has accused President William Ruto of using Ichung'wah to divide the Mount Kenya region, setting the stage for ongoing political rivalry. 
 
+

@@ -21,3 +21,4 @@ Impact of Disruption on Commuters and Businesses During the closure, commuters f
 
 Anticipated Ease of Movement With traffic now fully restored at Globe Roundabout, movement is expected to improve gradually, alleviating the pressure that had built up on alternative routes during the closure. KeNHA has advised drivers to proceed carefully when approaching the area and to adhere to instructions from traffic police and marshals stationed along the route to ensure smooth flow. KeNHA Director General Eng. Luka Kimeli thanked motorists and residents for their patience and cooperation throughout the repair period. 
 
+

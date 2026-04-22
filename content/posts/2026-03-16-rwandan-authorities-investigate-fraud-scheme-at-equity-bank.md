@@ -15,3 +15,4 @@ Kenya's Ongoing Fraud Battle Equity Group, the parent company, has been aggressi
 
 Ugandan Operations Also Affected In 2024, Equity Bank Uganda investigated fraud involving former staff members who allegedly diverted unsecured loans totaling approximately UShs62 billion. Authorities pursued both employees and external collaborators in this scheme, with the bank actively cooperating with law enforcement and conducting its own internal reviews to address the vulnerabilities exploited. 
 
+

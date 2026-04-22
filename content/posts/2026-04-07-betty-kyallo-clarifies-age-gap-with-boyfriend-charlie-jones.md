@@ -19,3 +19,4 @@ A Romance in the Limelight The couple's romance gained public attention around 2
 
 Public Interest Persists The age difference has elicited varied responses from fans across Kenya. While some continue to highlight the gap, a significant portion of the audience defends the couple, asserting that both are consenting adults. Kyallo has previously dismissed critics, reiterating that Jones's age was often misrepresented and advocating for less focus on numerical discrepancies. Despite the ongoing debate, the couple continues to share glimpses of their personal life, ensuring their relationship remains a prominent fixture in Kenyan entertainment updates. 
 
+

@@ -16,3 +16,4 @@ The Power of Sport Beyond the Pitch This isn't just about handing out shiny trop
 
 What's Next for GOGA? So, will Get Out Get Active walk away with a gong on April 30th? Who knows, eh? But honestly, just making the shortlist for an event attended by over 1,500 senior executives is a massive win in itself. It puts their incredible work in front of the very people who can help scale it even further. It's a testament to the fact that genuine impact and inclusivity are finally getting the recognition they deserve in the big leagues of the sports industry. Let's hope this nomination sparks even more investment and interest in grassroots, inclusive programmes. Because, let’s be honest, that’s where the real magic happens, isn't it? 
 
+

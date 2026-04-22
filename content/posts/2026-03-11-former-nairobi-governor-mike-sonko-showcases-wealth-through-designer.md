@@ -19,3 +19,4 @@ Wheels of Fortune and Pockets of Plenty His mode of transport is as flamboyant a
 
 A Legacy of Lavishness This flamboyant persona is not a recent phenomenon. Sonko first burst onto the national style scene in 2011. As the newly elected MP for Makadara, he was famously ejected from Parliament for wearing sunglasses and earrings. That moment cemented his public image for years to follow. Today, that image remains vibrant, characterized by gleaming gold, coveted designer labels, and the world’s most exclusive gadgets. 
 
+

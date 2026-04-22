@@ -21,3 +21,4 @@ Stern Warning Against Artificial Scarcity The President delivered a firm message
 
 Strategic Measures and Economic Vulnerabilities To alleviate pressure, President Ruto has tasked the Ministry of Petroleum and Energy with engaging existing fuel suppliers and identifying alternative oil sources, aiming to reduce the nation's reliance on Middle East supply chains. He noted progress in securing alternative supply options without specifying the sources. Beyond fuel, the country's exposure to the Middle East crisis impacts critical exports such as flowers, coffee, tea, and sulphur blue, all now facing deep uncertainty. Za Ndani previously reported the nation remains poised for major deals to supply flowers, coffee, and macadamia to the U.S. market [cite: https://zandani.co.ke/article/agri-news-b06094ab]. The administration pledged stringent enforcement of licenses to shield consumers from exploitation. 
 
+

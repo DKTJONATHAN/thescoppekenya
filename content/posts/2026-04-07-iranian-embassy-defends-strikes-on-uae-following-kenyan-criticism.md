@@ -21,3 +21,4 @@ Kenya's Condemnation and Solidarity Principal Secretary Singoei, on April 1, con
 
 Call for Global Condemnation of Aggressors In its response, Iran called on Kenya to stand on the right side of history and condemn Israel and the US for their attacks on Iran. The Islamic State reaffirmed its readiness to find a lasting solution based on mutual respect. The statement articulated that the Islamic Republic of Iran expects all free and independent nations to stand on the right side of history and condemn the aggressors. It further reaffirmed readiness for diplomatic solutions based on mutual respect and international law, but also stated it would not hesitate to defend its sovereignty, territorial integrity, and national security. 
 
+

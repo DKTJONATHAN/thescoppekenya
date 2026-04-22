@@ -23,3 +23,4 @@ Legacy of Development The upgrade of Suneka Airport has been a long-standing obj
 
 Broader Infrastructure Vision This new airport will bolster the region's aviation network, working in conjunction with facilities such as Kisumu International Airport and the proposed Narok Airport. It is also anticipated to alleviate pressure on smaller airstrips like Kabunde in Homa Bay, significantly improving travel options for passengers and cargo. Additionally, President Ruto announced plans for an SGR station at Ikonge in Nyamira, costing Ksh300 million, further expanding the region's infrastructure. These developments align with his ambitious infrastructure projects, mirroring his "Singapore dream" to elevate the nation's economic standing. The government's proactive stance on such projects, as with its recent preparedness during heavy rainfall and thunderstorms impacting areas including Western Kenya, underscores a commitment to regional development. 
 
+

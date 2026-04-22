@@ -17,3 +17,4 @@ Profound Impact and Open Accessibility for Kenya For Kenya, a nation where milli
 
 Future Expansion and Broader Applications Google plans to expand the model's capabilities to rural areas and enhance its spatial resolution for even more localized forecasts. Furthermore, the company intends to apply the same GroundSource methodology to predict other natural disasters, including landslides and heat waves. This ongoing development promises further advancements in disaster preparedness, offering hope for communities striving to mitigate the devastating effects of extreme weather events. 
 
+

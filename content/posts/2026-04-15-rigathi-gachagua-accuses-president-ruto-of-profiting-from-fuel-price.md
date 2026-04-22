@@ -21,3 +21,4 @@ Escalating Fuel Costs and Public Outcry The explosive allegations follow signifi
 
 Calls for Accountability and Resignations Adding to the escalating political drama, Gachagua emphatically demanded the resignation of Energy Cabinet Secretary Opiyo Wandayi. The former Deputy President holds Wandayi politically responsible for the perceived "failed" system and irregularities plaguing the energy sector. President Ruto previously defended the G-to-G arrangement, framing it as a crucial intervention to stabilize the energy sector and protect the economy from external shocks. However, critics suggest such assurances often fall flat in the face of rising public discontent, mirroring frustrations seen among [Kenyan air travelers face rising fares and reduced flight capacity](https://zandani.co.ke/article/kenyan-air-travelers-face-rising-fares-and-reduced-flight-capacity), where citizens feel the pinch of economic pressures. 
 
+

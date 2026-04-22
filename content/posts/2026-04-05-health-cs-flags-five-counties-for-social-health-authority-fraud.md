@@ -21,3 +21,4 @@ Nationwide Crackdown Expands Since March 30, at least 12 facilities have been sh
 
 Identified Facilities and Measures The crackdown, which commenced in late March, has impacted several healthcare providers. Among these is Bungoma West Hospital, which was suspended from the Social Health Authority provided panel on March 30 for 90 days over suspected fraudulent claims. Other facilities flagged include Baypharm Medical Centre in Homa Bay, Dawida Annex Hospital Ltd in Taita Taveta, Kerugoya Medical Centre in Kirinyaga, Raycos Health Centre in Mombasa, Calvary Hope Medical Centre in Bungoma, Shamberere Dispensary in Kakamega, Kurafa Medical Centre in Kiambu, Umoja Three Medical Centre in Nairobi, and The Pro Elite Westlands General and Specialist Hospital Ltd in Nairobi. 
 
+

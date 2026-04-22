@@ -21,3 +21,4 @@ Afrobeats Ascendancy Expected on Football's Biggest Stage Nigeria possesses a fo
 
 The Coldplay Connection and Collaborative Synergy The curatorial role of Coldplay's Chris Martin introduces another layer of excitement, particularly given the band's history of collaborations with African artists. Ayra Starr, for instance, performed "Hot Body" with Coldplay during their Music of the Spheres World Tour and also collaborated with Martin on the track "Good Feelings." She served as a support act for select North American and UK dates on what became the best-selling tour in history. This existing synergy between Coldplay and African talent reinforces the potential for a diverse and impactful lineup, promising a truly Pan-African flavour to the final's entertainment. 
 
+

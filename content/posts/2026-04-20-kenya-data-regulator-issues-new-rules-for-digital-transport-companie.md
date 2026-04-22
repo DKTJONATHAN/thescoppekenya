@@ -17,3 +17,4 @@ Compliance and Breach Management The ODPC underscores the necessity of these gui
 
 Cross-Border Data Transfers and Penalties Transport firms must track cross-border data transfers, ensuring appropriate safeguards are in place. Transfers of transport data outside Kenya are only permitted if the destination country offers adequate protection, appropriate safeguards, or if the transfer is necessary for contractual or legal reasons. Non-compliance with these guidelines can result in penalties of up to KSh5 million or 1% of annual turnover, or imprisonment for up to two years. Broader offenses may attract penalties of up to 10 years in prison. Individuals affected by data breaches also have the right to seek compensation for financial loss or emotional harm. Additional measures could include the suspension of operational licenses. 
 
+

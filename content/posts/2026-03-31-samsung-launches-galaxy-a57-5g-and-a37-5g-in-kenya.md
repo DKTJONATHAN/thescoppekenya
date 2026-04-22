@@ -19,3 +19,4 @@ Enhanced Security and Longevity Commitments Security is reinforced with Knox Vau
 
 Market Positioning and Accessibility The Samsung Galaxy A57 5G is available in Kenya at KES 68,300 for the 8GB + 256GB configuration and KES 60,900 for the 8GB + 128GB version. The Galaxy A37 5G is priced at KES 60,200 for the 8GB + 256GB model and KES 49,000 for the 6GB + 128GB variant. Both devices are currently accessible nationwide at Samsung Experience Stores and authorized dealers, providing Kenyan consumers with readily available options for these latest mid-range innovations. 
 
+

@@ -21,3 +21,4 @@ The Fuel Price Spike and Official Justification These accusations emerged hot on
 
 President Ruto's Counter-Moves and Public Relations President Ruto and his allies have not taken Gachagua's claims lightly, swiftly dismissing them as nothing more than "political jealousy" and "malice." To mitigate the brewing public outcry and control the narrative, the President has taken several strategic steps. This latest political drama has certainly captivated the nation, proving that even outside the music charts, high-profile figures can generate headlines. Speaking of captivating journeys, many are still buzzing about Toxic Lyrikali's incredible rise from Kayole to stardom, a true testament to Kenyan talent. 
 
+

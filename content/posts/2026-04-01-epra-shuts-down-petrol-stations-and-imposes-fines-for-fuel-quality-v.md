@@ -19,3 +19,4 @@ Protecting Precious Rides Fuel adulteration poses significant risks, potentially
 
 Public Vigilance, Celebrity Support EPRA has reiterated its dedication to continuous monitoring of petroleum products nationwide. The authority actively inspects fuel during storage, transportation, and sale to curb adulteration and illegal diversion. To bolster these efforts, the public is encouraged to report any suspicious fuel activity through EPRA's hotline, SMS service, or the USSD code *363#. This call for public vigilance has resonated with several local stars, who have taken to social media to urge their followers to report any anomalies, reinforcing the collective responsibility in maintaining fuel integrity for everyone on Kenya’s bustling roads. 
 
+

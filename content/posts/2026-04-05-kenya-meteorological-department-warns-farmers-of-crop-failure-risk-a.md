@@ -23,3 +23,4 @@ Pest, Disease, and Flooding Risks Increased humidity is likely to trigger outbre
 
 Guidance for Agricultural Activities The Kenya Meteorological Department stresses that farmers should align planting with the improving rains, weed crops, ensure good drainage in wetter areas, and practice water conservation in drier regions. All farmers, regardless of their region, are urged to rely on short-term weather forecasts to guide daily farm decisions during this uneven but consequential long rains season. 
 
+

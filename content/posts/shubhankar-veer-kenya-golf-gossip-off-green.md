@@ -18,3 +18,4 @@ Jacob Bridgeman's Genesis Invitational Shocker: A Wedding Bell Win, Mate! Meanwh
 
 Rory McIlroy's Riviera Rant: Frustration, Fortune, and a Four-Hundred-Grand Putt! Poor Rory McIlroy and Kurt Kitayama, almost clinched it but Bridgeman held on for that one-shot victory. Rory admitted he was "a little frustrated" with the greens and felt they were "really, really difficult." Can you imagine the frustration? (A proper nightmare, I reckon!). But our Rory, ever the showman, did manage a rather epic final birdie on the 18th. And when asked if it was "cruel" to sink such a good putt after missing so many, he quipped it "probably earned me an extra 400, 500 grand so it's fine." (Honestly, you've got to love him!). Even with the pressure, he still manages a bit of cheeky banter. Remember that time he "snapped at a spectator" back in 2025? Always a bit of drama with our Rory, isn't there? You can bet he's already plotting his comeback! 
 
+

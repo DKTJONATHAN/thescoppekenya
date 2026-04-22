@@ -23,3 +23,4 @@ Amin's Leadership and Tenure The NPS defended DCI's investigative record, noting
 
 Succession Considerations Should Amin's tenure have concluded today, attention would pivot to President William Ruto, who is constitutionally mandated to appoint the next individual to lead the powerful directorate. 
 
+

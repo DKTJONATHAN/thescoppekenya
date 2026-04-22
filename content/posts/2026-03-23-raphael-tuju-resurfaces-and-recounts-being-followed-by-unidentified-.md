@@ -21,3 +21,4 @@ A Weekend in Hiding After successfully shaking off his tail, Tuju took the drast
 
 Prior Concerns and Official Report This recent incident was not an isolated concern for the former Jubilee Secretary General. Tuju revealed that he had already filed a formal police report regarding previous instances of being followed in the days leading up to Saturday's dramatic pursuit. He even shared the specific report number with the assembled press, underscoring the premeditated nature of the surveillance he experienced. Tuju remained with the Good Samaritan family until Sunday night, only returning to his residence before making his public appearance on Monday morning. 
 
+

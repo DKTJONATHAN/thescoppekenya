@@ -17,3 +17,4 @@ The KSh 1.07 Billion Influencer Economy While Kenya's influencer industry valuat
 
 Digital Dreams, Hard Realities Young Kenyans entering the influencer space often face a stark contrast between aspirational success stories and the demanding grind required to build a sustainable online presence. The path to digital stardom is fraught with challenges, from content burnout to algorithm changes, a stark reminder that even in booming sectors, economic growth does not always translate directly into individual prosperity. The pursuit of a viral moment can overshadow the often-unseen dedication and strategic effort, echoing concerns about stifled economic growth and crushed dreams in other creative fields like Nollywood. 
 
+

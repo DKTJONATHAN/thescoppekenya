@@ -17,3 +17,4 @@ Rising Road Accident Concerns Across the Country These incidents occur amidst es
 
 Parliament Urged to Tighten Traffic Laws The rising number of fatalities has intensified calls for tougher road safety measures. National Assembly Speaker Moses Wetang’ula has urged Parliament to strengthen existing traffic laws and ensure that reckless drivers face stricter penalties to curb the alarming trend. 
 
+

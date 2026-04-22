@@ -23,3 +23,4 @@ Cold Snap Poses Health Threats in Highland Areas Compounding the dangers, parts 
 
 Urgent Precautions Issued for Public Safety Kenya Met is urging all residents to drain stagnant water, sleep under mosquito nets, and avoid flooded and landslide-prone zones as the country enters what forecasters describe as a high-risk weather week. Residents in colder highland areas are further advised to dress warmly and stay updated with weather information from the department, as dangerous weather conditions are expected to persist throughout the week. 
 
+

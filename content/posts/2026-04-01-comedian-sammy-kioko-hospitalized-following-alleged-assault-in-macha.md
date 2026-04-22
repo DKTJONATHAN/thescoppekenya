@@ -21,3 +21,4 @@ Public Outcry and Calls for Justice The hashtag #JusticeForSammyKioko has rapidl
 
 County Government's Silence As of Wednesday morning, the Machakos County Government has not released any official statement concerning the alleged assault on Sammy Kioko. This silence only fuels public speculation and intensifies the calls for accountability from Governor Wavinya Ndeti's administration. 
 
+

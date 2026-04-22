@@ -17,3 +17,4 @@ Strengthening Balance Sheet Ahead of Public Listing Ahead of its public market d
 
 Nairobi Securities Exchange Listing by Introduction The bank's shares are slated for listing on the Nairobi Securities Exchange in May 2026 via an introduction, a mechanism that provides price discovery and a public liquidity route for existing shareholders without issuing new shares. Standard Investment Bank is advising on this listing. This move is expected to enhance the bank's visibility and offer a regulated platform for its shares, marking a significant milestone in its corporate trajectory within the Kenyan financial market. 
 
+

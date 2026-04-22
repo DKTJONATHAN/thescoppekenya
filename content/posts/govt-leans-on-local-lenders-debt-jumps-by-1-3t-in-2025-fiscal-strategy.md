@@ -19,3 +19,4 @@ Debt Servicing Pressures and the Role of Local Lenders The intensifying debt ser
 
 Navigating Future Debt Jumps: The 2026 Outlook Kenya's public debt currently stands at approximately 70% of GDP. The 2026 MTDS projects the present value of debt-to-GDP ratio to be 65.6% for 2026. The government's strategy for managing future debt jumps involves a continued focus on liability management operations, prioritizing concessional borrowing, and maintaining a fiscal consolidation path. The successful Eurobond refinancing and the increased reliance on local lenders are key components of this proactive debt management strategy, aimed at smoothing the external debt maturity profile and reducing refinancing pressure. The government's ability to balance its financing needs with the imperative of safeguarding the private sector from excessive credit strain will be crucial for sustained economic growth in the coming years. 
 
+

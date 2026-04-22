@@ -15,3 +15,4 @@ Details of Ng'eno's Death and Prior Claims Johana Ng'eno died on February 28 whe
 
 Funeral Attendees The funeral service for the late MP was attended by several prominent national figures. Among those present were President William Ruto, Deputy President Kithure Kindiki, Speaker of the National Assembly Moses Wetang'ula, Defense Cabinet Secretary Siopan Tuya, and Narok Governor Patrick Ole Ntutu, who is Ng'eno's father-in-law. Other senior national leaders were also in attendance.
 
+

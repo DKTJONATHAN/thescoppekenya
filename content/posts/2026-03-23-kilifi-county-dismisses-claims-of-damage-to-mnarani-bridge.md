@@ -23,3 +23,4 @@ Independent Verification Identifies Misrepresentation Critical verification by Z
 
 Public Caution Urged Against Unverified Content Kilifi County has urged the public to disregard the false information and refrain from sharing unverified content that could incite unnecessary panic. The county reiterated its commitment to safeguarding public infrastructure and assured continued collaboration with relevant authorities to monitor and maintain assets for public safety. 
 
+

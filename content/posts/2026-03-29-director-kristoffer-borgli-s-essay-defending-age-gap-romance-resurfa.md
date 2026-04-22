@@ -17,3 +17,4 @@ Woody Allen's Influence on a "Delayed" Insight Borgli's essay reveals a candid s
 
 From "DRIB" to "Dream Scenario" Before "The Drama," Borgli made his feature film debut with "DRIB" in 2017. His second film, "Sick of Myself," premiered at the 2022 Cannes Film Festival. In 2023, he collaborated with Nicolas Cage on the acclaimed "Dream Scenario," which was distributed by A24 and earned Cage a Golden Globe nomination for Best Actor in a Motion Picture-Musical or Comedy. Now, his fourth feature, "The Drama," steps into the spotlight, bringing his past writings into sharp relief. 
 
+

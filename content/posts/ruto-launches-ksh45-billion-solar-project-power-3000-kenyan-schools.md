@@ -17,3 +17,4 @@ Broader National Efforts to Power Kenyan Schools and Institutions This national 
 
 The Future of Clean Energy: Powering 3,000 Kenyan Schools The President's initiative is poised to fundamentally transform the energy landscape for educational institutions, drastically reducing their reliance on traditional, carbon-intensive fuels like firewood and charcoal. By moving towards solar energy for cooking, lighting, and other needs, the project is expected to lower operational costs for schools while contributing significantly to Kenya's climate action objectives. This extensive programme not only promises environmental benefits but also aims to create green jobs, strengthening Kenya's climate resilience and accelerating its journey towards green growth. The government's ambitious plan to solarise all schools before the next general election signifies a clear and strong commitment to a sustainable future for the nation's youth. 
 
+

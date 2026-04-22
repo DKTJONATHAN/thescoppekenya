@@ -19,3 +19,4 @@ Lawsuit's Dramatic Unraveling The legal proceedings began to unravel in early 20
 
 Clearance Claims and Internal Disputes Bad Bunny's team consistently maintained that the sample in question had been legitimately cleared through Lakizo Entertainment, a distributor of Dera's original song. Dera's lawsuit, however, countered that Lakizo was never authorized to grant such clearance. This dispute reportedly sparked a separate legal battle between Lakizo and emPawa, resulting in ‘Empty My Pocket’ being completely pulled from streaming platforms. With the copyright infringement suit dismissed and a substantial $456,312 fee demand now on the table, the situation appears to have concluded far less favorably for the plaintiffs than it began. 
 
+

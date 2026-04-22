@@ -23,3 +23,4 @@ Environmental Damage and Unexploded Ordnance Communities residing near BATUK's t
 
 Parliament Signals New Era of Accountability In a decisive move in April 2024, the Parliament voted to amend the defence agreement, enabling British soldiers to face local prosecution for crimes committed while off duty. This legislative change signals a new era for accountability concerning BATUK. General Walker acknowledged the need for change and emphasized achieving this by working closely within existing legal frameworks. He reiterated, "What we need, as best as possible, is to work even more closely with the Ministry of Defence to resolve some of these deep-seated grievances." 
 
+

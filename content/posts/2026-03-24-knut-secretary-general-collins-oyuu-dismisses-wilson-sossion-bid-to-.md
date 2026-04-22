@@ -21,3 +21,4 @@ Oyuu Dismisses Bid on Constitutional Grounds Hours after Sossion's declaration, 
 
 Eligibility and Age Become Key Contentious Points The dispute has intensified with both parties raising questions of eligibility. Oyuu reiterated that Sossion is no longer a KNUT member and should refrain from meddling in the union's affairs. Conversely, Sossion maintained that Oyuu is past retirement age and should vacate office, arguing that retirees cannot effectively represent active teachers. Oyuu, however, dismissed claims about his own age eligibility, advising critics to "go read the constitution, it is a 29-page document, talk to it." The upcoming union elections on April 3 are expected to be closely watched as these constitutional and eligibility debates unfold. 
 
+

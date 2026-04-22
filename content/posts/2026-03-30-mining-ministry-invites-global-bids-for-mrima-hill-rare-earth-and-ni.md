@@ -21,3 +21,4 @@ Intense Global Competition The competitive tender has attracted significant inte
 
 Community and Environmental Concerns The Mrima Hill project faces a significant hurdle due to its status as a double-gazetted site. It is recognised both as a protected forest reserve and as a sacred Kaya forest, holding deep spiritual significance for the Mijikenda and Digo coastal communities. Local residents have voiced concerns regarding potential displacement, the environmental impact of radioactive waste from mining operations, and the destruction of sacred shrines. 
 
+

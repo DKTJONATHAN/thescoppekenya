@@ -15,3 +15,4 @@ A Humorous Reversal In a classic "never say never" moment, Kemunto took to Insta
 
 Marriage Goals Revisited? The couple's relationship has always been high-octane. Before their brief February hiatus, Kemunto had publicly urged Iyanii to accelerate their journey to the altar, openly stating her expectation of a marriage proposal within six months of dating. While their "contract" was briefly cancelled, this latest renewal suggests that those significant relationship milestones might once again be on the horizon. Fans are eagerly watching to see whether this "final contract" leads to a permanent union or another captivating twist from one of the most unpredictable duos in the 2026 entertainment scene, much like the widespread attention given to other significant stories in Kenyan pop culture, such as the heartbreaking truth behind a viral video involving Kiengei and Mary Atieno. 
 
+

@@ -21,3 +21,4 @@ Calls for Accountability and Investigations Senator Khalwale has urged the Natio
 
 Ongoing ODM Leadership Disputes The leadership wrangles within the ODM party in Kakamega are not new, with several prominent leaders contesting control at the county level. Although Governor Barasa was declared the county chairperson, other leaders, including Lugari MP Nabii Nabwera and Cooperatives Cabinet Secretary Wycliffe Oparanya, have previously rejected this move. These internal party dynamics reflect a broader landscape of political shifts and challenges within coalitions, reminiscent of situations such as Azimio's recent removal of Junet Mohamed. The incident at the burial ceremony contributes to a concerning pattern of political violence witnessed recently, where funerals and public gatherings are increasingly disrupted by alleged hired goons targeting rival camps. 
 
+

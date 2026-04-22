@@ -19,3 +19,4 @@ Expanding Surveillance Capabilities Beyond body cameras, the government is also 
 
 Progress on Police Remuneration and Reforms On the aspect of remuneration, Omollo confirmed that police officers are slated to receive another salary increment in the upcoming financial year, effective July 1, 2026. This adjustment marks the third and final phase of a structured pay review. He affirmed steady progress in the government’s overhaul of the security sector, noting that 55 per cent of the targeted 500 police reforms have already been achieved. The continuous integration of technology in various sectors, from law enforcement to financial services, highlights a broader shift towards enhanced accountability and privacy, mirroring developments such as M-Pesa transactions now hiding customer numbers by default. 
 
+

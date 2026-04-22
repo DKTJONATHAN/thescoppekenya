@@ -16,3 +16,4 @@ Behind the Scenes: Kenya Airways and the New York Snowstorm Scramble! Well, whil
 
 Another Kenya Airways Snowstorm Headache? A Run of Bad Luck, Eh? Honestly, one does begin to wonder if Kenya Airways has a bit of a cloud following them lately, bless their cotton socks! This New York snowstorm disruption comes hot on the heels of *another* recent hiccup. Just the previous Sunday, they had to ground flights bound for Rwanda and Mauritius because of "poor visibility" at Kigali International Airport. Can you believe it? Two Sundays in a row with major travel woes. (Poor sods!). They've apologised profusely, naturally, and promised to keep everyone updated, with safety being their "highest priority". Let's hope the skies clear up quickly for them, eh? Nobody wants to be stuck in a snowdrift when they could be jetting off to sunnier climes! 
 
+

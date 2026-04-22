@@ -25,3 +25,4 @@ CS Wandayi Remains Silent Amidst Probe Despite the growing public and political 
 
 Questions Raised Over Motives Behind Arrests Kiharu MP Ndindi Nyoro has introduced a different perspective, suggesting that the arrests might be connected to deeply entrenched interests within the fuel supply chain rather than solely a push for accountability. Nyoro claimed, "It has very little to do with the welfare of Za Ndani, and it has everything to do with small people who have eaten what belongs to the big man". He pointed to the government-to-government (G-to-G) fuel importation framework, alleging it has long functioned as a business model that benefits well-connected players. 
 
+

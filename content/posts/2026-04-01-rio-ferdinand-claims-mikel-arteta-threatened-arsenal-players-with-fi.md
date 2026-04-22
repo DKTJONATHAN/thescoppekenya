@@ -15,3 +15,4 @@ Ferguson's Ghost in the Emirates Ferdinand's comparison to Sir Alex Ferguson is 
 
 Priorities Laid Bare The justification, of course, is the "big game in 10 days" and the pursuit of trophies. But what does it say for the integrity of international football, or indeed, the agency of the players themselves? They are assets, to be protected, deployed, or indeed, withdrawn, at the club's whim. This isn't about fostering goodwill or sportsmanship; it's about control, plain and simple, and ensuring the club's bottom line - and trophy cabinet - is prioritised above all else. 
 
+

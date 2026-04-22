@@ -19,3 +19,4 @@ Direct Impact on Traders and Services The proposed changes by the KRA are set to
 
 KRA's Revenue Goals and Policy Discrepancies KRA argues that eliminating the VAT threshold will address an estimated 38 percent VAT collection gap, projecting a boost in collections from Ksh 653 billion to over Ksh1 trillion. This move, however, contrasts sharply with previous legislative discussions. The Finance Bill 2024 and subsequent debates in 2025/2026 had proposed increasing the VAT registration threshold to Ksh 8 million, aiming to ease the compliance burden on smaller firms. The KRA's current stance to scrap the threshold entirely represents a significant departure from this medium-term revenue strategy. 
 
+

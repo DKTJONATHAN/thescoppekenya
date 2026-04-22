@@ -21,3 +21,4 @@ Background to Sifuna's Ouster Senator Sifuna had sought the tribunal's intervent
 
 Ahead of Special Delegates Convention The tribunal's ruling comes just hours before the scheduled ODM Special Delegates Convention, set for Friday, March 27, at the Jamhuri grounds in Nairobi. The convention is expected to address various party matters, including the potential reinstatement of Oburu Odinga as party leader, and Sifuna's ouster was also slated for discussion. However, the Linda Mwananchi faction of the party has announced its intention to boycott the official convention, opting instead to hold a parallel National Delegates Convention on Friday. As political parties navigate internal rifts and leadership challenges, the broader landscape of governance also continues to present significant challenges, including persistent issues like illicit trade and smuggling operations that impact economic stability. 
 
+

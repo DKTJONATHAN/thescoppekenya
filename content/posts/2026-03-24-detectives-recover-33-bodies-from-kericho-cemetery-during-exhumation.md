@@ -19,3 +19,4 @@ Exhumation Details Emerge The ongoing exercise, spearheaded by detectives from t
 
 Ongoing Forensic Examination As the bodies were unearthed, government pathologists commenced immediate examinations to ascertain the causes of death for each individual. The National Police Service initiated investigations into the suspected mass graves on Sunday, March 22, 2026, following their discovery at the cemetery. Preliminary reports suggest these bodies had been transferred from Nyamira District Referral Hospital, having remained unclaimed at its morgue. The gravity of the situation has profoundly impacted local residents, who have expressed deep concern. This shocking discovery has gripped public attention, occurring amidst other significant national developments, including recent signals from the CBK Governor regarding further interest rate cuts after lending rates fell to 8.75 percent. 
 
+

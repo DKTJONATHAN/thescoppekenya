@@ -23,3 +23,4 @@ DCI Clarifies Tender Scam Separately, the Directorate of Criminal Investigations
 
 Growing Concerns for Media Freedom This incident adds to escalating concerns over press freedom within the region. Amnesty International has previously warned that authorities across East and Southern Africa continue to impose restrictions on media freedom and freedom of expression. Similarly, Reporters Without Borders (RSF) has documented a decline in Kenya’s press freedom rankings, noting increased hostility between the state and media. RSF specifically highlighted violence, intimidation, and arrests faced by journalists, particularly during public protests. President William Ruto's administration has previously allocated funds to compensate victims of protests, reflecting a broader governmental acknowledgment of societal unrest. 
 
+

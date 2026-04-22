@@ -13,3 +13,4 @@ Career and Coaching Legacy Engin Firat's death was confirmed by Nejmeh Football 
 
 Tributes and Professional Ethos Nejmeh Club issued a statement mourning Coach Firat, describing him as a committed professional with high ethics. "With great sadness and sorrow, Star Athletic Club mourns first team coach captain Engin Firat, who passed away following a sudden heart attack while at Istanbul airport on his way to Adana a few hours after leaving Beirut for his country," the statement read. The club noted the good impression he left among team members and across the club ranks, a sentiment often found when exploring [Africa's untold stories in food and travel](https://zandani.co.ke/article/latest-food-and-travel-news-trends-africa). 
 
+

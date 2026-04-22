@@ -15,3 +15,4 @@ Introducing Age Verification and Digital Literacy A major platform change involv
 
 Summit Highlights and Digital Future Commitment Kabogo's remarks were made during the TikTok Safer Internet Summit 2026, held between March 10 and March 11. The event convened policymakers, regulators, technology leaders, and civil society organizations from across Africa. During the summit, Kabogo acknowledged the increasing role of social media platforms, including TikTok, in fostering digital creativity, innovation, and economic opportunities, particularly for young people. He emphasized the rapid growth of the digital creator economy, noting how platforms like TikTok are opening new avenues for entrepreneurship, storytelling, and cultural expression. The government reiterated its commitment to cultivating a digital environment that empowers creators, supports innovation, and unlocks the full potential of Africa’s digital future. 
 
+

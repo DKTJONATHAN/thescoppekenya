@@ -27,3 +27,4 @@ WSL Title Race Heats Up In the Women's Super League, Manchester City edged close
 
 Scottish and Irish National Team News In Scotland, Katie Wilkinson netted a hat-trick for Rangers, propelling them into second place in the Scottish Women's Premier League after a convincing derby win against Celtic. Meanwhile, Bohs' Brennan received a first call-up to the Republic of Ireland squad. The future of Chelsea striker Sam Kerr remains a point of discussion, with her contract uncertainty sparking debate over whether the club should retain her.
 
+

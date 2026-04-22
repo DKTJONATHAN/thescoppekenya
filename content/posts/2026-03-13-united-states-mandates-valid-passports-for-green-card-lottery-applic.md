@@ -15,3 +15,4 @@ Combating Fraud and Application Delays The US government has not explicitly reve
 
 Programme Suspension and Repercussions The green card lottery was suspended in December 2025 following a shooting incident at Brown University. Homeland Security Secretary Kristi Noem, on December 18, 2025, announced that President Trump had ordered the U.S. Citizenship and Immigration Services to pause the programme. The suspension followed an incident where a gunman opened fire inside a classroom, killing two undergraduate students. Secretary Noem stated at the time that the pause was intended "to ensure no more Americans are harmed by this disastrous programme." 
 
+

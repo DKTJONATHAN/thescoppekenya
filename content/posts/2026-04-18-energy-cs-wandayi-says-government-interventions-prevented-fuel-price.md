@@ -21,3 +21,4 @@ EPRA's Recent Price Review Data from the Energy and Petroleum Regulatory Authori
 
 Diversifying Fuel Sourcing and Reserves Addressing future stability, EPRA Director of Petroleum and Gas Edward Kinyua announced on Friday, April 17, that the government is actively exploring alternative fuel import routes. Framework agreements have been signed with international suppliers to ensure consistent availability despite global uncertainties. The strategy includes diversifying sourcing beyond the Middle East to include markets in Europe and the Far East, alongside increased utilization of the Red Sea route. This aligns with broader efforts, including the call for Kenya to adopt social-linked bonds to reform foreign debt management. The government is also developing strategic fuel reserves at port facilities, mirroring models in global hubs such as Rotterdam and Singapore, to secure priority access during supply shortages. 
 
+

@@ -23,3 +23,4 @@ The Future of "Through Thick and Thin" (TTNT) A major point of concern for fans 
 
 Awaiting Clarity at Sarit Centre Despite the considerable online scrutiny, neither Njugush nor Celestine Ndinda has moved to officially confirm or deny the circulating rumors. As of March 18, 2026, the state of their marriage and professional collaboration remains private. Many fans are now looking to their scheduled performance on August 1, 2026, at the Sarit Centre as a definitive moment for clarity. Whether the duo appears on stage together or continues with solo acts will likely provide the answers their followers are eagerly awaiting. Until then, the "Njugush and Wakavinye" brand remains a subject of widespread speculation, with supporters hoping that Njugush's "end of an era" refers to a strategic business rebranding rather than a personal farewell. 
 
+

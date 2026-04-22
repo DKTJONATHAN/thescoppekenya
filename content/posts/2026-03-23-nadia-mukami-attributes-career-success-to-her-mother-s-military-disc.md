@@ -19,3 +19,4 @@ A Decade of Hits and Strategic Growth Known widely as the "African Pop Star," Na
 
 Balancing Stardom with Motherhood Now a mother of two, Nadia Mukami offered a transparent look into the realities of parenting under the constant glare of public attention. Her youngest son, born in August 2025, has introduced a new level of sleep deprivation into her life, a challenge she faces head-on. “Those of us in the limelight like to pretend and lie a lot. It is not easy,” she admitted, dispelling common misconceptions about celebrity life. She openly discussed the physical demands of motherhood, emphasizing the round-the-clock commitment required, even with a supportive partner, making uninterrupted rest a rare luxury for the acclaimed artist. 
 
+

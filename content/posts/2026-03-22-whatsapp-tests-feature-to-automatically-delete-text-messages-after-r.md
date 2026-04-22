@@ -23,3 +23,4 @@ Expanding Existing Privacy Frameworks This development extends WhatsApp’s exis
 
 Ongoing Development and Future Rollout The feature was identified by a prominent feature tracker within the latest WhatsApp Android beta version. It remains under active development and is not yet accessible to beta testers. Researchers note that WhatsApp is still refining the timer's functionality and its application across diverse chat types. Once publicly released, the feature is expected to appeal to users who regularly send confidential information and seek immediate message disappearance without manual intervention. 
 
+

@@ -18,3 +18,4 @@ Future Games, Future Gains? So, what's to be done when the pitches are too hot o
 
 What's a Pundit to Do? Ultimately, this World Economic Forum report is a stark wake-up call. The sports industry is not only vulnerable to environmental degradation but also a "significant contributor" to it. We need to see serious investment in sustainable practices and initiatives to get people moving again. Otherwise, the future of sport, as we know it, could be facing an absolute mountain of trouble. It's time for some clever thinking, eh? 
 
+

@@ -15,3 +15,4 @@ Key Innovations for Modern Investors Hisa 2.0 integrates several new features de
 
 Responding to Market Dynamics The timing of Hisa 2.0's launch coincides with growing interest in both local and global investing within Kenya, particularly among younger demographics seeking to diversify their portfolios beyond domestic markets. Hisa App, which facilitates trading through licensed brokers, aims to lower entry barriers and democratize access to opportunities historically reserved for institutional investors. This strategic enhancement is designed to support the ongoing shift towards greater individual control over financial futures, with plans for expanded asset offerings, improved educational tools, and enhanced portfolio management capabilities. Hisa 2.0 is now available on Android and iOS devices. 
 
+

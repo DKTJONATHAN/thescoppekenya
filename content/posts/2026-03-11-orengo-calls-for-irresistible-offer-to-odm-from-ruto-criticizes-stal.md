@@ -17,3 +17,4 @@ Governance and Economic Concerns Orengo highlighted several pressing issues, inc
 
 Allegations of Intimidation In recent months, Governor Orengo has emerged as a vocal critic of President Ruto's administration, accusing it of undermining democratic values. He specifically cited the arbitrary arrest and detention of several of his staff members on March 8, 2026, in Siaya and Nairobi, ahead of the presidential visit to Siaya. Orengo condemned these actions as egregious conduct by the police, asserting such behavior has no place in a constitutional democracy, and demanded their immediate release. 
 
+

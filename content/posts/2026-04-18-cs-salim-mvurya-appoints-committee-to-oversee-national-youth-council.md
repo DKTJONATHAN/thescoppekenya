@@ -23,3 +23,4 @@ Committee's Mandate The committee is mandated to coordinate all aspects of the e
 
 End to a Decade-Long Wait The last National Youth Council elections occurred in 2012, making the latest announcement significant for youth across the country who have waited over a decade to elect their representatives. The prolonged absence of regular polls had previously raised concerns regarding weakened youth representation and accountability. Members of the public, particularly young people, are urged to note the timelines and actively participate in this crucial process. The re-establishment of these elections is anticipated to strengthen youth engagement and advocacy at various levels. 
 
+

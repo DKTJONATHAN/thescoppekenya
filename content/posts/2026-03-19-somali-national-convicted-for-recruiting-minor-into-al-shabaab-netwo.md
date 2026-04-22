@@ -21,3 +21,4 @@ Judicial Ruling and Upcoming Sentencing Prosecution Counsel Kennedy Amwayi led t
 
 Heightened Terrorism Concerns This conviction occurs amid escalating concerns regarding terrorist activity within the country. In January, a chief and a teacher were killed in a suspected Al-Shabaab attack in Garissa. In February, the Counter Terrorism Policing Unit reportedly disrupted a planned terror attack in Nairobi, allegedly linked to suspected Al-Shabaab militants. 
 
+

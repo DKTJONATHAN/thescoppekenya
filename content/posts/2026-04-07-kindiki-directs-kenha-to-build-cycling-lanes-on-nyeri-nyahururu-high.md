@@ -21,3 +21,4 @@ Government Funding and Motorist Accountability Deputy President Kindiki affirmed
 
 Judiciary Scrutinised Over Instant Fines System In his address, Kindiki criticised the Judiciary's decision to suspend the Instant Fines Traffic Management System. This system, championed by the NTSA, leverages surveillance Artificial Intelligence (AI) cameras to issue instant fine notifications for traffic violations via SMS, a method believed to significantly reduce road deaths. Kindiki hinted that the Kenya Kwanza administration intends to challenge the suspension to reinstate the system on local roads. Such robust infrastructure and technological initiatives are vital for economic growth, aligning with broader efforts to bolster trade and business development across the region. The Deputy President’s remarks come as the National Police Service (NPS) reported a alarming statistic of over 50 fatalities during the recent Easter period, a figure that has caused national concern. 
 
+

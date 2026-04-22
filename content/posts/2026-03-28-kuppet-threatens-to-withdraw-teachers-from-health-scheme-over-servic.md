@@ -23,3 +23,4 @@ Service Delivery Shortcomings Despite the President's assurances, KUPPET reports
 
 Transition Concerns and CBA Impact Teachers previously enrolled in the initial private medical scheme have voiced concerns that the transition to SHA undermines benefits guaranteed under their Collective Bargaining Agreement (CBA), potentially leading to reduced coverage. KUPPET Chairman Omboko Milemba noted that the current system forces teachers into unfamiliar processes, such as seeking paybill numbers for contributions, a stark contrast to the previous, more seamless arrangement. This shift to new digital realities presents significant challenges for many. 
 
+

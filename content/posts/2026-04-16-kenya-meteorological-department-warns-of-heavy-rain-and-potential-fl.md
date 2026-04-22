@@ -19,3 +19,4 @@ Adapting to the Wet Weather Across the Highlands both west and east of the Rift 
 
 Staying Alert, Staying Entertained While many embraced the indoor lifestyle, the Water Resources Authority issued an urgent flood warning for areas downstream of Nairobi Dam. Residents in low-lying zones, including Kibera, Nyayo Highrise, Dam Estate, Lang'ata, Nairobi West, and Madaraka, were advised to remain alert and move to safer ground. This caution undoubtedly prompted extra vigilance among public figures residing in these prominent Nairobi neighborhoods. Despite the serious warnings, the spirit of entertainment endures. Many likely caught up on global pop culture headlines during their unexpected downtime, with news like Olivia Dean's dominance at the MOBO Awards possibly sparking conversations across living rooms. This demonstrates how Kenyan audiences connect with both local developments and international music milestones. 
 
+

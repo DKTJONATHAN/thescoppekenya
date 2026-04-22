@@ -19,3 +19,4 @@ Investigation Details Unfold Sources indicate that the investigative agency is a
 
 Public Concerns and Regulatory Scrutiny These arrests come at a time when motorists have consistently voiced concerns about fuel quality, with various reports linking engine damage to contaminated fuel. EPRA has previously provided assurances to the public regarding strict compliance measures designed to uphold fuel standards. However, these latest developments cast doubt on the regulator's effectiveness in maintaining these critical standards within the country. This incident underscores broader challenges in ensuring public safety and regulatory compliance, much like the recent efforts by KeNHA to improve urban infrastructure, as evidenced by the reopening of the Globe Roundabout following the completion of bridge works. 
 
+

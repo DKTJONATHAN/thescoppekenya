@@ -21,3 +21,4 @@ Rigathi Gachagua's Defense of Legal Process In response to the allegations, Riga
 
 Political Motivation Claims and Presidential Authority Gachagua questioned the timing of the revived dispute, suggesting it is politically motivated. He accused President Ruto of attempting to interfere in a private family matter for political gain. Gachagua asserted that succession matters are exclusively handled by the courts, not the presidency, and dissatisfied family members should seek legal intervention rather than appealing to Ruto. He further dismissed claims that the President possesses authority to reverse transactions completed under a court-sanctioned process, labeling such assertions as misleading and legally impossible. 
 
+

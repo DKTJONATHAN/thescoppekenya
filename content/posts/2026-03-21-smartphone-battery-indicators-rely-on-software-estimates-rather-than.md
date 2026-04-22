@@ -21,3 +21,4 @@ Strategic Power Management Another significant factor is the device's inherent p
 
 User Behaviour and External Influences Beyond software and internal power controls, user behaviour plays a crucial role. Individuals tend to use their phones less intensively when they observe the battery approaching depletion, further slowing down power consumption and extending the apparent life of the remaining charge. Additionally, factors such as ambient temperature, the overall health of the battery, and the age of the device can all impact how long that final percentage endures. Hatcher notes that, from his extensive experience in the tech sector, iPhones generally provide a more accurate assessment of battery life compared to Android devices. Ultimately, the resilience of the one per cent is a product of intelligent engineering designed to maintain connectivity for as long as feasible. 
 
+

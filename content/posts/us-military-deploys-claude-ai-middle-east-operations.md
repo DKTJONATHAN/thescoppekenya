@@ -19,3 +19,4 @@ The Future of Commercial AI in Middle East Operations and Beyond The integration
 
 Ensuring Responsible Use of Claude AI and Other Advanced Systems The events surrounding the deployment of Claude AI underscore the urgent need for comprehensive digital policies and ethical guidelines. As advanced AI systems become more entwined with defence mechanisms, the dialogue between technology developers, government bodies, and the public must intensify. Transparency regarding the capabilities and limitations of AI in combat, alongside clear accountability structures, will be paramount. The global technology community, including Kenyan innovators and policymakers, must actively participate in these discussions to ensure that the advancements in AI serve humanity responsibly, even as they redefine the parameters of national security and military engagement. 
 
+

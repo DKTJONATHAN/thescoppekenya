@@ -21,3 +21,4 @@ Management Interventions and Recurring Issues State House Comptroller Katoo Ole 
 
 Protecting Public Servants The one-third rule is critical for protecting employees from over-indebtedness and ensuring they retain sufficient funds for daily living expenses. For example, a public servant with a basic salary of Ksh 30,000 should receive a minimum of Ksh 10,000 after deductions. If deductions exceed Ksh 20,000, leaving the employee with less than Ksh 10,000, it constitutes a violation of the law. The committee's latest call emphasizes the urgency for the PSC to implement comprehensive measures to uphold this fundamental protection for public servants. 
 
+

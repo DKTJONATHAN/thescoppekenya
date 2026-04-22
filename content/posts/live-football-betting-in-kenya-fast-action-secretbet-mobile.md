@@ -19,3 +19,4 @@ M-Pesa Integration: The Heart of Kenyan Betting In Kenya, the efficiency of mobi
 
 Unlock Bonuses with Secretbet Mobile For those looking to dive into the world of live football betting with Secretbet, there's an added incentive. New users can visit secretbet.com, create an account, and use the promo code TUKO on their first deposit to receive a 100% KES bonus. This generous offer further enhances the appeal of Secretbet Mobile as a go-to platform for Kenyan bettors. The platform is known for offering powerful bonus programs, including sign-up bonuses, cashbacks, and free bets. 
 
+

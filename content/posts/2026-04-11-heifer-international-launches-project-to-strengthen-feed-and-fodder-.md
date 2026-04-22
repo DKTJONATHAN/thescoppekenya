@@ -15,3 +15,4 @@ The TYFFAD Project's Strategic Approach The Transforming Yield through Feed and 
 
 Practical Solutions for Dairy Farmers The TYFFAD project offers practical support to help farmers overcome existing challenges. It will assist farmers in better preserving feed and accessing quality inputs. Connecting farmers to more reliable markets is also a key objective. Furthermore, the project will explore practical financing options tailored to farmers' needs and expand access to mechanisation. Digital tools will be leveraged to provide timely advice and information to farmers. By improving these interconnected systems, TYFFAD seeks to reduce post-harvest losses, ensure consistent feed availability throughout the year, and ultimately help farmers increase their earnings from dairy production. This collaborative model, involving government, private sector, research, and farmer groups, is seen as essential for sustained progress in the dairy sector. 
 
+

@@ -19,3 +19,4 @@ The Controversy Dividing the Kenyan Drill Scene The timing, coming right after h
 
 Public Reactions and Why This Story Is Poised to Explode This Week Support messages for Toxic and Mauru are pouring in, alongside demands for police investigation, theories about who was behind it, and memes speculating motives. The combination of raw CCTV evidence, celebrity involvement, denial drama, and broader concerns about violence in the industry makes this one of the most shareable stories right now. Expect artist reactions, possible unity statements, and mainstream media pickup. This has all the ingredients to dominate conversations for days.
 
+

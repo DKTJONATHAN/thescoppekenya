@@ -19,3 +19,4 @@ A Rich Sonic Journey Across Seven Tracks Across its seven songs, "Agaba Romantic
 
 Critical Acclaim and Enduring Purpose Despite its concise seven-track length, "Agaba Romantic" offers a robust and coherent sonic experience, expressing the many facets of romance through heartfelt records that firmly uphold the artists' identities. The EP has garnered a strong reception, achieving an impressive Pulse Rating of 8.4 out of 10. The closing track, "Forever," encapsulates the driving force behind this collaborative endeavor: a profound love for music and a desire to create art that resonates deeply within their own souls, rather than merely catering to an audience. This commitment to spirituality, originality, and purpose evokes comparisons to the critically acclaimed collaborative album "Distant Relatives" by Nas and Damian Marley. 
 
+

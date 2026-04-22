@@ -15,3 +15,4 @@ Scraping the Barrel for De Zerbi The revelation that Spurs went back to Roberto 
 
 The Illusion of Survival De Zerbi now faces the unenviable task of engineering Premier League survival, with Tottenham just a single point above the drop zone. While "multiple sources stating the players 'love' him already" might offer a brief flicker of hope, player sentiment rarely trumps tactical inadequacy or a tough fixture list. Spurs have to outperform West Ham over the next seven games, and their schedule is brutal: Brighton, Villa, Everton, and Chelsea. West Ham, meanwhile, face a comparatively softer run with Everton, Arsenal, and Brentford as their only remaining top-half opponents. Confidence in staying up is one thing; actually achieving it, given the calibre of opposition and the club's current trajectory, is another entirely. This isn't just a difficult task for De Zerbi; it's a stark reflection of Tottenham's alarming freefall. 
 
+

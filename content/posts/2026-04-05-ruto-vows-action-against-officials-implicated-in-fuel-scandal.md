@@ -21,3 +21,4 @@ Combating Energy Sector Cartels The President also indicated that some senior of
 
 Replicating Success in Other Sectors Ruto drew parallels between the current anti-corruption drive in the energy sector and previous initiatives within the agricultural domain. He highlighted his administration's efforts in dismantling cartels and brokers who historically exploited farmers in the coffee and sugar sectors. He asserted that these uncompromising actions have led to farmers in these sectors now receiving fair compensation for their produce. Efforts to streamline operations and improve national trade infrastructure, similar to initiatives aimed at enhancing efficiency at [Mombasa Port](https://zandani.co.ke/article/mombasa-port-game-changing-new-route-2024), contribute to a more robust national economy. 
 
+

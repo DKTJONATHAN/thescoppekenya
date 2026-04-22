@@ -21,3 +21,4 @@ The Allure of Community Kanyari openly described his experience as isolating, ca
 
 Kayole Calling Home Despite his daughter's platforms showcasing the grand mansion, Prophet Kanyari admitted the magnetic pull of his former lifestyle was undeniable. He revealed that shortly after his brief stay, he instructed his driver to return him to Kayole, where he found comfort and a stronger sense of belonging. "I told the driver, 'I am going back to Kayole. It is good here,'" he recounted, emphasizing that happiness is not solely defined by luxury but by community, connection, and a sense of belonging. 
 
+

@@ -21,3 +21,4 @@ Nairobi's Ongoing Water Challenges The capital continues to face chronic water s
 
 Broader Flood Impact and Government Response The severe mid-March 2026 flooding in Nairobi has tragically resulted in at least 33 deaths within the city and over 66 fatalities nationwide. The heavy rains have caused extensive property damage, including submerged homes, swept-away vehicles, and disrupted infrastructure, particularly in low-lying informal settlements. On Monday, Nairobi Governor Johnson Sakaja initiated a 48-hour action plan to address worsening flooding, drainage failures, and damaged roads across the city, directing officials to map hotspots, estimate repair costs, and prioritise urgent interventions. 
 
+

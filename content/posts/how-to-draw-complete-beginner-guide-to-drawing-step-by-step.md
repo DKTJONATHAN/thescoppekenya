@@ -33,3 +33,4 @@ Creating a daily practice habit that actually sticks Consistency beats intensity
 
 Taking your drawings to the next level Once the basics feel comfortable, layer in more advanced ideas like foreshortening, complex lighting setups, or inventing from imagination. Experiment with different media such as charcoal for bold values or ink for decisive lines. Study master works by copying their simplified shapes and value patterns to absorb design lessons. Try drawing the same subject in multiple styles to stretch your creativity. Most importantly, enjoy the journey. Drawing sharpens your ability to see the world with fresh eyes and brings a deep sense of accomplishment. Keep showing up, stay curious, and your sketches will keep surprising you with how good they become. You have everything you need right now to start creating. So pick up that pencil and make your first mark today.
 
+

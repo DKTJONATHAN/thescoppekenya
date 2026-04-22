@@ -19,3 +19,4 @@ Restricted and Prohibited Items The KRA categorizes items into restricted and pr
 
 Declaration and Duty-Free Thresholds Passengers arriving in Kenya are granted a duty-free allowance for personal items up to a value of $2000. Goods exceeding this threshold or those intended for commercial trade, even if below the $2000 limit, are subject to additional taxes. KRA officers meticulously monitor the quantity and nature of goods brought in, subjecting unusually large amounts of luggage to further checks to distinguish personal effects from items intended for business. Transparency in declaring items is crucial for passengers to ensure adherence to KRA regulations upon arrival. 
 
+

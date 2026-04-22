@@ -19,3 +19,4 @@ Anfield Bids Farewell to a Legend Adding to the somber mood, Mohamed Salah waved
 
 The Road Ahead for Liverpool With the Champions League dream extinguished, Liverpool's focus shifts entirely to securing a top-four finish in the domestic league. Failing to qualify for next season's Champions League would intensify pressure on Arne Slot and undoubtedly impact the club's financial and recruitment strategies. While there were some positives, like the improved attacking output at Anfield with an xG of 1.94 compared to 0.18 in Paris, the overall performance suggests considerable work remains before Liverpool can once again be considered serious contenders on the European stage. The club faces a pivotal summer as they navigate the aftermath of a trophy-less season and a legendary player's exit.
 
+

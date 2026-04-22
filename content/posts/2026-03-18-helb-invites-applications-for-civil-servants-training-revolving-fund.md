@@ -19,3 +19,4 @@ Eligibility and Application Requirements Serving civil servants seeking to advan
 
 Loan Terms and Support for Skill Development The Civil Servants Training Revolving Fund aims to support skill development with affordable interest rates and flexible repayment options. The loan will accrue interest not exceeding 4 per cent annually. Beneficiaries will enjoy flexible repayment terms spanning up to 72 months, with the option for earlier repayment based on individual financial capacity. This initiative aligns with efforts to strengthen financial frameworks supporting professional growth within the public sector, similar to how institutions like Mwalimu National Sacco continue to report significant financial growth and support their members. 
 
+

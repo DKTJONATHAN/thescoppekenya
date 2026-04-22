@@ -15,3 +15,4 @@ Innovation Agility and Global Market Dynamics Ternus inherits a complex landscap
 
 Cultivating Organisational Resilience The promotions of Johny Srouji to Chief Hardware Officer and Tom Marieb to SVP of Hardware Engineering further solidify Apple's commitment to hardware expertise and internal talent development. Ternus's deep institutional knowledge and internal goodwill, along with his reputation for being "unusually warm" and preferring to sit with his team, signal a leadership style that values collaboration and embedded expertise. For African tech firms, cultivating such deep internal knowledge and fostering collaborative environments are crucial for long-term resilience and innovation. As the African tech scene matures, lessons from Apple's succession planning and its renewed focus on foundational product strength provide a compelling framework for sustainable growth and navigating the evolving demands of a globalized, innovation-driven economy. 
 
+

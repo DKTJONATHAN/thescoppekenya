@@ -21,3 +21,4 @@ Heavy Rainfall Causes Widespread Flooding The incidents on University Way occurr
 
 Flooding Extends to Kiambu County Neighboring Kiambu County also experienced significant disruption due to floods, with parts of Thika town overrun, particularly along Kenyatta Road. At the time of publishing, no fatalities had been reported as a direct result of the ongoing floods in either Nairobi or Kiambu counties. 
 
+

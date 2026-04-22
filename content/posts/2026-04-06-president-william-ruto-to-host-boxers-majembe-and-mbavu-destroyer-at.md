@@ -21,3 +21,4 @@ Calls for Fair Compensation Obinna urged citizens not to politicize the Presiden
 
 Event Acclaim and Future Plans Obinna extended gratitude to all participants, including contenders, referees, organizers, and supporters, for ensuring a smooth and successful event. He stated that the match demonstrated the capacity of the people to self-organize major sporting activities, labeling it the largest in Eastern Africa. Obinna also appreciated government officials who attended, noting he required politicians to pay for entry rather than using the event as a platform. With eight governors and numerous Members of Parliament praising the match, Obinna plans to expand these boxing events to counties like Busia, Mombasa, and Uasin Gishu, offering more young talent professional competition. A preliminary lineup for the next match includes Majembe versus Somali Boxer, with possible bouts featuring Alfayo. 
 
+

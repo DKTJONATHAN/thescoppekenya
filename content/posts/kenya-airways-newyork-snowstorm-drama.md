@@ -18,3 +18,4 @@ The Evidence The airline themselves put out a statement, confirming the "blizzar
 
 The Verdict Kenya Airways has apologised profusely, naturally, for all the bother. They're hoping to get KQ002 back in the air on Tuesday, February 24, and KQ003 on Wednesday, February 25, all subject to the weather gods smiling upon New York and the airport bigwigs giving the all-clear. Passengers have been told to keep an eye on the airline's website, which is always sound advice. (Wouldn't want to turn up and find yourself in another pickle, would you?). The airline insists that customer and crew safety is top priority, and you can't really argue with that, can you? It sounds like New York really is taking a battering, with thousands of flights cancelled across the East Coast, not just KQ's. So, our Kenyan friends are certainly not alone in this winter wonderland nightmare! Fingers crossed everyone gets where they need to be soon, without any more dramatic twists and turns! 
 
+

@@ -17,3 +17,4 @@ Horror Director's Holiday Twist Helming *Ebenezer: A Christmas Carol* is Ti West
 
 Mark Your Calendars Get ready for a unique holiday experience as *Ebenezer: A Christmas Carol* is set to hit theaters on November 13, 2026. This film promises to be a memorable cinematic event, blending the timeless charm of Dickens with a fresh, slightly macabre twist, all anchored by Johnny Depp's captivating return to the big screen. 
 
+

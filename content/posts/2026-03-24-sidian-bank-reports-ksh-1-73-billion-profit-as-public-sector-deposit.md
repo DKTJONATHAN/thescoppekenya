@@ -23,3 +23,4 @@ Growth Dynamics and Scrutiny Sidian's rapid growth is unprecedented in Kenyan ba
 
 Future Diversification Strategies The bank's deposit growth, while substantial, is largely policy-driven and could be redirected with changes in administration or procurement cycles. To mitigate this, Sidian is pursuing diversification through SACCO partnerships, with over 120 across Kenya, and a planned branch expansion from 30 to over 100 locations. The success of these initiatives in attracting sticky retail and SME deposits will be crucial for establishing a durable franchise beyond its current institutional book. 
 
+

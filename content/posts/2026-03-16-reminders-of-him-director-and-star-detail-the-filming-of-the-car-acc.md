@@ -15,3 +15,4 @@ Maika Monroe's Unforgettable Performance For actress Maika Monroe, filming the a
 
 Healing Through Shared Grief Beyond the technical marvels, the film delves deep into Kenna's emotional journey, particularly her recounting the accident to Scotty's best friend and her new love interest, Ledger (Tyriq Withers). Monroe recalled a "calmness on set" during this pivotal scene, emphasizing the intimate atmosphere that allowed her and Withers to authentically connect over their characters' shared grief. Kenna, burdened by immense guilt and self-blame, finds a crucial moment of healing when Ledger offers compassion. Monroe explained that Kenna wasn't expecting such understanding, and Ledger's empathy became "the start for her to learn to forgive herself" after years of internal struggle. This powerful exchange underscores the profound emotional core that anchors "Reminders of Him." 
 
+

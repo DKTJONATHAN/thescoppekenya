@@ -19,3 +19,4 @@ Artistic Identity and Audience Connection Now based in London, Sucrepapito is ac
 
 Beyond Music: A Platform for African Sounds Sucrepapito's involvement extends beyond his own releases. He is a significant contributor to independent music culture through his work with Resonance FM in London. Furthermore, he is the creator of the "Afrobeats vs Amapiano Verdict (AAV Show)," a structured platform where he meticulously explores and ranks contemporary African sounds. With a sharp focus on consistency and audience engagement, Sucrepapito’s structured approach to music and media echoes the precision required in managing vital national systems, such as the KRA's scheduled maintenance on its iTax system. He remains a prominent figure in the new wave of artists shaping the Afro-fusion sound emanating from the UK. "Homebase" is currently accessible on all major streaming platforms. 
 
+

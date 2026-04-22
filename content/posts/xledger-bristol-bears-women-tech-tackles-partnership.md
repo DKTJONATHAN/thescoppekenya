@@ -16,3 +16,4 @@ A Winning Scrum for Women's Sport And let's not forget, the timing couldn't be b
 
 Tech Giants Backing the Game It’s genuinely refreshing to see a true-cloud finance software leader like Xledger, with operations in over 60 countries, putting their money where their mouth is when it comes to Corporate Social Responsibility. Their long-standing relationship with Bristol Sport and the expansion of this particular partnership highlight a belief in the values of respect, resilience, and progress - things that are absolutely vital, both on the pitch and in the boardroom. This isn't just about financial solutions; it’s about nurturing talent and creating opportunities, proving that when tech and sport team up, it can be a real game-changer for the community. 
 
+

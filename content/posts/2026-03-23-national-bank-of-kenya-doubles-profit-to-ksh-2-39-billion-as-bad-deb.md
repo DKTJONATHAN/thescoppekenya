@@ -17,3 +17,4 @@ Historical Context and Ownership Transition NBK's recent performance is understo
 
 Access Bank's Strategic Acquisition The acquisition proved profitable for KCB, yielding a KSh 3.1 billion gain on the transaction. This gain funded a special dividend of KSh 4 per share, lifting KCB's total 2025 payout to KSh 7 per share from KSh 3 in 2024. For Access Bank, the acquisition of NBK provides immediate scale and synergy with its existing Kenyan subsidiary. By September 2025, both institutions had initiated shared services across their combined network of over 100 branches, with full systems and operational integration continuing to progress. This strategic move by Access Bank strengthens its footprint in the Kenyan market, a critical region for economic growth, where initiatives such as [Digital Learning Kenya’s Frontier Counties Taking Root](https://zandani.co.ke/article/digital-learning-kenyas-frontier-counties-taking-root) point to evolving opportunities. 
 
+

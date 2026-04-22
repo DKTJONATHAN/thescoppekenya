@@ -19,3 +19,4 @@ Operationalising the High-Definition Robot: Training and Sustainability The effe
 
 A Holistic Approach to Neutralise Terror Threats Kenya's counter-terrorism strategy must extend beyond the acquisition of advanced equipment to a more holistic framework that addresses systemic vulnerabilities. While the DCI Unveils High-Definition Robot offers a vital tool to defuse bombs remotely and protect lives, it is a component within a larger, complex equation. Sustained focus on intelligence integration, community engagement, addressing socio-economic drivers of radicalisation, and ensuring transparent and accountable procurement and training processes are equally critical in fortifying Kenya against enduring terror threats. 
 
+

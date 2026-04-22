@@ -17,3 +17,4 @@ Nigerian Stars Vie for Afrobeats Title at 52nd AMAs Three of Nigeria's most prom
 
 Fan Power Drives AMA Victories The American Music Awards distinguish themselves by determining winners entirely through public vote, allowing fans to cast their decisions via the AMAs website and social media platforms. This unique approach places immense power in the hands of the audience, emphasizing the importance of strong, engaged global fanbases. For Burna Boy, Rema, and Wizkid, their massive followings across Africa and beyond will be critical in securing a win in this highly competitive category. The global recognition of African music through such platforms also highlights ongoing discussions about supporting African music professionals, as seen with initiatives like the Berklee Music Foundation. 
 
+

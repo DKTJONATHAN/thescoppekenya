@@ -19,3 +19,4 @@ Kaberia's Influential Dual Mandate Dr. Kaberia's influence within the NSSF exten
 
 Political Background and Strategic Role Prior to and following the 2022 general elections, Dr. Kaberia served as the United Democratic Alliance (UDA) party coordinator for Meru County. This role placed him at the core of the party's grassroots operations in the region. His responsibilities included strengthening UDA's local structure, driving member recruitment, and coordinating mobilization efforts ahead of elections. Dr. Kaberia also ensured that local party activities aligned with directives issued directly from the national UDA headquarters. He managed local campaigns, organized sensitization meetings for party members, and worked diligently to maintain a dominant and unified UDA presence throughout the electoral cycle in Meru County. 
 
+

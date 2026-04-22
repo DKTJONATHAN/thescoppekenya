@@ -17,3 +17,4 @@ Application Requirements Applicants must furnish several key documents to be con
 
 Digital Application Process Eligible candidates are directed to submit their applications through the HELB online portal. During profile creation, applicants must accurately indicate their level of study as Higher National Diploma, degree, or master's. It is crucial to specify that they are not administered by the Kenya Universities and Colleges Central Placement Service (KUCCPS) under the education background section. The process requires applicants to first register and activate their accounts before selecting the "Advanced Nursing Education Fund" under the loan application section. The entire application process is fully digital, allowing applicants to track the status of their requests via the portal after submission.
 
+

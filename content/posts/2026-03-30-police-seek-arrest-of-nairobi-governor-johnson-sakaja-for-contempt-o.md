@@ -21,3 +21,4 @@ Scrutiny Over Audit Irregularities Governor Sakaja's current predicament intensi
 
 Similar Orders Issued Nairobi's situation is not isolated. Similar orders have also been directed towards Samburu Governor Jonathan Lati Lelelit, who is likewise being sought to address pressing questions regarding his administration. Both cases highlight the Senate's commitment to upholding parliamentary oversight and ensuring accountability from county executives. 
 
+

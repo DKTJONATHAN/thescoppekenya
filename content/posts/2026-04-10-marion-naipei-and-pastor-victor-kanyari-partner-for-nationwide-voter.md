@@ -21,3 +21,4 @@ Mentorship and Public Duty Amidst Personal Struggles The collaboration between N
 
 A Wave of National Mobilization The #NikoKadiInitiative is part of a growing movement of civic mobilization efforts across Kenya. Religious and social leaders are increasingly pressing the government to ensure every eligible citizen is properly documented and prepared to exercise their right to vote. Campaigns such as “Tuko Kadi” are gaining momentum, emphasizing the collective responsibility in strengthening the nation’s democratic foundations. This widespread engagement highlights a critical push to foster greater participation and accountability ahead of electoral cycles. 
 
+

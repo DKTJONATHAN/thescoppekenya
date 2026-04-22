@@ -25,3 +25,4 @@ Allegations of Political Payments The protests emerge amidst ongoing allegations
 
 EACC Issues Warning The Ethics and Anti-Corruption Commission (EACC) recently cautioned politicians against the misuse of public resources for campaign funding as the 2027 general elections draw nearer. The commission emphasized that exploiting public resources or offices for election campaigns is unlawful. 
 
+

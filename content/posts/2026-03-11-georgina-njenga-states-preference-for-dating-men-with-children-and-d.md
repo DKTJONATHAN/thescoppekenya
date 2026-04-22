@@ -13,3 +13,4 @@ A Parent's Perspective: Redefining "Type" Speaking with Oga Obinna, Georgina Nje
 
 Co-Parenting Harmony, Not Rekindled Flames Njenga also took the opportunity to address the buzzing speculation surrounding her relationship with her baby daddy, Tyler. A recent video showing the two dancing together sent fans into a frenzy, with many quickly assuming a romantic reunion. However, Njenga was quick to debunk these rumors, clarifying that the viral clip simply showcased a healthy co-parenting dynamic. She maintains that their relationship is strictly platonic, focused solely on the well-being of their child. Her current dating outlook remains firmly guided by personal growth and the desire for a partner who shares her commitment to responsible parenting and values stability above all else. 
 
+

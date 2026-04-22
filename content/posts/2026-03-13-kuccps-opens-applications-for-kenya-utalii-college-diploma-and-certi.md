@@ -17,3 +17,4 @@ Integration with National Placement System Established 47 years ago, Kenya Utali
 
 Submitting Applications and Support Applicants are advised to submit their applications online through the KUCCPS Student Portal, which is accessible via the official KUCCPS website at kuccps.ac.ke. For students requiring assistance with their applications, support is available at the KUCCPS offices located at ACK Garden House, 1st Ngong Avenue, Nairobi. Additionally, students can seek help at Kenya Utalii College itself or utilize the services offered at any of the 58 Huduma Centres situated nationwide. 
 
+

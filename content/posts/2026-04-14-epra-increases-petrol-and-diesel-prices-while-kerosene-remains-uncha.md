@@ -25,3 +25,4 @@ Landed Cost Increases EPRA reported a significant rise in the average landed cos
 
 Regional Variations Motorists in Mombasa will encounter Super Petrol retailing at Ksh203.69 per litre, Diesel at Ksh203.56, and Kerosene at Ksh149.49. For Nakuru, Super Petrol will retail at Ksh206.03 and Diesel at Ksh206.25. Kisumu will see Super Petrol at Ksh206.85 and Diesel at Ksh207.06 for the coming month. 
 
+

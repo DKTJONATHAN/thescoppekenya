@@ -21,3 +21,4 @@ Loan Terms and Beneficiary Protections Interest rates for the loan are tiered ba
 
 Act Operationalisation and Public Demand The Affordable Housing Act, Cap 117A, which includes rural affordable housing units as one of its four categories, was approved by the National Assembly under the Affordable Housing Regulations in August 2025. This decision fully operationalised the framework, directly responding to public feedback that sought options for housing levy contributions to support rural development rather than solely purchasing pre-built units in urban government projects. The affordable housing is divided into four categories: social housing units, affordable housing units, affordable middle-class housing units, and rural affordable housing units. 
 
+

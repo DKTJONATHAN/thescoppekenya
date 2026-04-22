@@ -15,3 +15,4 @@ Goalkeeper Gambles The criticism leveled at current goalkeeper Guglielmo Vicario
 
 Relegation Reality The narrative around Tottenham has shifted dramatically from top-four ambitions to a very real fear of the Championship. Neutral fans are reportedly "salivating" at the prospect of Spurs playing in the second tier next season. Their current standing in 18th place after 32 matches, with only 30 points, paints a grim picture. This precipitous decline, which includes a change in management from Igor Tudor to Roberto De Zerbi, and a subsequent loss to Sunderland, is far from a temporary blip. Planning for free transfers while staring down relegation suggests a short-sighted approach, focusing on cost-cutting rather than the decisive, quality additions needed to avert disaster or rebuild effectively. 
 
+

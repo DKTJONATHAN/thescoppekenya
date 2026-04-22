@@ -21,3 +21,4 @@ Domestic Market Repercussions The recent developments in the Middle East have al
 
 Glimmers of Hope Amidst Crisis Despite the severe tensions, Iran continues to permit passage through the Strait of Hormuz for vessels not linked to what it terms "enemy nations." This limited openness offers a fragile glimmer of hope for maintaining some level of global oil flow. Additionally, increased activity at Lamu Port could, in the long term, bolster Kenya's role in regional trade logistics, though this does not immediately mitigate the short-term risks stemming from the Middle East conflict. 
 
+

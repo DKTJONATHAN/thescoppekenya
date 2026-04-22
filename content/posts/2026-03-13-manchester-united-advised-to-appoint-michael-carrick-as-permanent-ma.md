@@ -15,3 +15,4 @@ The Cult of 'Knowing United' Kleberson's rationale for Carrick's permanent appoi
 
 A Cycle of Indecision and False Hope The conflicting reports surrounding Carrick's future further underscore Manchester United's perennial state of indecision. One moment, there's talk of a "U-turn" and three identified alternatives; the next, "INEOS want to ‘reward’ the interim boss with a £60m signing." This muddled communication and apparent lack of a coherent strategy have plagued the club for years. The advice to hand the reins to an interim manager after a handful of results, especially when those results include fortunate outcomes and a clear defeat, feels less like a strategic decision and more like a club once again grasping at short-term emotional fixes. Until Manchester United develops a clear, long-term footballing philosophy and commits to a manager based on merit, not sentiment, they are destined to repeat this cycle of fleeting hope and ultimate disappointment. 
 
+

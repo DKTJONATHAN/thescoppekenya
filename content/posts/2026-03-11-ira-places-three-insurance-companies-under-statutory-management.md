@@ -17,3 +17,4 @@ Rationale Behind the Directive Statutory management is a temporary measure typic
 
 Broader Industry Crackdown This development comes as the government, alongside independent institutions such as the Association of Kenya Insurers (AKI), continues a nationwide crackdown on fake motor insurance certificates. A multi-agency team, including AKI, the Traffic Police Department, the IRA, and the Insurance Fraud Investigation Unit, announced on February 19, 2026, that it is actively probing such cases. Recent efforts have uncovered numerous instances of insurance fraud, with reports indicating at least 44 forged motor insurance certificates detected across two regions within the past year. 
 
+

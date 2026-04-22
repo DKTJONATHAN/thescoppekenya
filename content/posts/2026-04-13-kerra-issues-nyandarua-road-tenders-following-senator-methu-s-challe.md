@@ -23,3 +23,4 @@ Tender Process Underway Interested parties can access tender documents free of c
 
 Political Context of the Announcement The timing of KeRRA's tender notice has drawn attention, as it was dated April 8, the same day Senator Methu publicly criticized the government during the memorial service for the late Ol Kalou MP David Njuguna Kiaraho in Ol Kalou, Nyandarua County. During the event, Methu directly addressed the President, questioning the delayed actualization of promised road upgrades in the county, including the Murungaru - Tulasha - Gilgil Road. 
 
+

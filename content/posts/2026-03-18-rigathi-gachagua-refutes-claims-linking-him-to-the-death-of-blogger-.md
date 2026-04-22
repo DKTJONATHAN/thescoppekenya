@@ -21,3 +21,4 @@ Origin of Renewed Allegations The cause of the popular blogger's death resurface
 
 Gachagua's Call for Responsible Discourse Gachagua's statement proceeded to caution media experts and civil society leaders, stressing that public figures, including President William Ruto, should exercise prudence and refrain from making statements based on unverified claims. He called for accurate reporting to be maintained, not only to uphold journalistic integrity but also to respect the family's privacy and prevent the spread of rumors that can mislead the public. This plea for responsible communication underscores the significant impact of public statements, particularly amidst intense political exchanges. 
 
+

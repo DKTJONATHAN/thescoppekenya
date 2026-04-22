@@ -19,3 +19,4 @@ Oburu Odinga's Statement ODM Party Leader Oburu Odinga issued a statement on Apr
 
 Calls for Accountability Oburu also defended Trade CS Lee Kinyanjui, who, alongside Wandayi, faces public pressure to resign after the scandal. The party emphasized that should professional investigations place responsibility on their actions, then there must be no "sacred cows," and both Wandayi and Kinyanjui should face the law. Investigations are probing allegations of falsified fuel stock data that created a false impression of a shortage, triggering emergency procurement of a consignment outside the Government-to-Government framework. Reports indicate this emergency fuel was supplied at inflated prices and was substandard. 
 
+

@@ -17,3 +17,4 @@ Enhanced Enforcement and Road Safety Initiatives NTSA plans to revamp all motor 
 
 High Court Halts Instant Fines Implementation In a separate development, the High Court has issued new orders preventing NTSA from implementing the recently introduced instant fines. Justice Bahati Mwamuye of the High Court issued a conservatory order on Thursday, barring NTSA from proceeding with the new system pending the hearing and determination of a case filed by Lawyer Shadrack Wambui, which challenges the directive. 
 
+

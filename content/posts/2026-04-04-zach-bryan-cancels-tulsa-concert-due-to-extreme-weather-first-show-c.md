@@ -13,3 +13,4 @@ The Tulsa Tempest Zach Bryan's Friday concert in Tulsa, Oklahoma, at H.A. Chapma
 
 A Year of Triumphs Despite the recent tour snag, 2026 has been a monumental year for the 30-year-old artist. Kicking off with personal joy, Bryan married his girlfriend, Samantha Leonard, on New Year's Eve at Basílica de Santa María del Coro in San Sebastián, Spain. Professionally, he released his sixth album, "With Heaven on Top," just days later on January 9, 2026, which quickly debuted at No. 1 on the Billboard 200 chart. His "With Heaven on Tour," named after the successful album, commenced on March 6 in St. Louis, featuring Kings of Leon as an opening act for several dates. The extensive 39-date tour will travel across the U.S. and Europe before concluding on October 10 in Auburn, Alabama. 
 
+

@@ -17,3 +17,4 @@ Operational Structure and Governance The National Infrastructure Fund is structu
 
 Funding and Capital Mobilization The government will initiate the NIF with KSh 106 billion, raised through the partial privatization of the Kenya Pipeline Company. President Ruto also stated that several government agencies, including the Kenya Airports Authority (KAA), Kenya Ports Authority (KPA), Kenya Railways, and the National Cereals and Produce Board (NCPB), will now operate under the NIF's framework. These entities will access capital markets over time, with the generated proceeds earmarked for further infrastructure development. President Ruto had previously indicated that Kenya anticipates raising KSh 2.5 trillion, half of the total target, by April 2026, with the remaining KSh 2.5 trillion to be secured over the subsequent decade. 
 
+

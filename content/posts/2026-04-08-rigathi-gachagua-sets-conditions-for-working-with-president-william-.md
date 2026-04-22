@@ -19,3 +19,4 @@ Call for Leadership Alignment Speaking at the burial ceremony of the late former
 
 Respect Amidst Differences Gachagua specifically cautioned his supporters against chanting "one-term" slogans directed at President Ruto during his address. He emphasized that the President was elected through goodwill and deserves the opportunity to serve without public hostility. Gachagua underscored that political disagreements should not supersede respect for national leadership, reiterating that the presence of the President at the burial was an act of good faith. He concluded by asserting that collaboration is possible, but the perceived negative influence of certain associates remains a significant impediment. 
 
+

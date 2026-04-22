@@ -23,3 +23,4 @@ New Pre-Filled Return System The KRA's clarification coincides with the commence
 
 June 30 Filing Deadline With the deadline for tax filing set to lapse on June 30, the KRA has encouraged taxpayers to file their returns promptly to avoid the last-minute rush. 
 
+

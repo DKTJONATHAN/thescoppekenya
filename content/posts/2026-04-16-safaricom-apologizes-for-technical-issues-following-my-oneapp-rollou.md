@@ -19,3 +19,4 @@ Unanswered Questions on Resolution Safaricom has assured customers that its team
 
 User Options and Mitigation For users experiencing persistent issues, particularly Android users, there is an option to revert to the older standalone M-PESA app (version 3.5.9). This requires uninstalling My OneApp completely and disabling automatic updates to prevent re-migration. However, iPhone users do not have this recourse due to Apple's restrictions on sideloading applications. The continued availability of the older MySafaricom App suggests that the full migration process remains ongoing rather than complete. 
 
+

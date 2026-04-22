@@ -19,3 +19,4 @@ Supporting "Kwa Mbae" Star's Family Musa Kihara, widely recognized for his viral
 
 Community Spirit in Action The act by Prophet Kanyari reflects a broader tradition of philanthropy among public figures in Kenya. While the nation often discusses critical issues, such as environmental concerns where [Senator Omtatah warns of deforestation as companies switch to firewood fuel](https://zandani.co.ke/article/senator-omtatah-warns-of-deforestation-as-companies-switch-to-firewo), these personal gestures of aid reinforce a sense of collective responsibility and support within Kenyan society. The donation serves as a powerful reminder that beyond the glitz and glamour, compassion remains a cornerstone of the community. 
 
+

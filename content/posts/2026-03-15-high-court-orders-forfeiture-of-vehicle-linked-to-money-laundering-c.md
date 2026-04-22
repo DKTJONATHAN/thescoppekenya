@@ -21,3 +21,4 @@ Regulatory Directives Issued Following the court's decision, the National Transp
 
 Legal Framework for Forfeiture Under Kenyan law, the Proceeds of Crime and Anti-Money Laundering Act provides the legal basis for such forfeitures. Beyond money laundering offenses, vehicles can be forfeited if used in the commission of other crimes, if taxes or duties remain unpaid, or in cases of serious or repeated traffic violations. Money laundering is legally defined as any act concealing or disguising the nature, source, location, disposition, or movement of property that constitutes or forms part of the proceeds of crime. The Assets Recovery Agency possesses the authority to pursue forfeiture of property suspected to be linked to criminal activities, even when the property itself, rather than an individual, is named as the respondent in legal proceedings. 
 
+

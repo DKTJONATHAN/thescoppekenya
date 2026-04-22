@@ -23,3 +23,4 @@ Strategic Shifts Across Key Sectors The mining sector saw CS Hassan Joho appoint
 
 Judiciary Bolsters Anti-Corruption Efforts Chief Justice Martha Koome has reinforced the judiciary's capacity to address corruption and economic crimes, appointing Elias Ngugi Mwenda and Lily Monica Nafula to preside over such cases. 
 
+

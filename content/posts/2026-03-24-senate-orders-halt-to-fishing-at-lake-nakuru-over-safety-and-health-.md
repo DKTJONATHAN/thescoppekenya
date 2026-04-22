@@ -21,3 +21,4 @@ Urgent Health Crisis Declared Beyond safety concerns, the KWS raised alarms rega
 
 Calls for Accountability and Policy Reform The petition to the Senate seeks thorough intervention, including an investigation into the reported disappearances, particularly any involvement of KWS officers. Petitioners are also advocating for measures to strengthen community engagement and safeguard human rights. Furthermore, they have called for a comprehensive review of KWS policies and operational protocols to curb potential abuse of power and enhance accountability, fostering dialogue among the agency, local fishermen, and other stakeholders to resolve ongoing disputes over fishing rights. Such reforms are crucial for ensuring institutional integrity and protecting against power-hungry syndicates passing off as political parties that undermine democracy. 
 
+

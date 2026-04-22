@@ -17,3 +17,4 @@ Instant Fines System Overview The NTSA rolled out the instant fines traffic mana
 
 Tackling Insurance Fraud Beyond the instant fines system, Director General Nashon Kondiwa also announced that the NTSA will initiate a crackdown targeting fraudulent insurance companies operating across the country. Kondiwa highlighted the significant prevalence of fraud within the local insurance industry, noting that this issue often results in motorists paying elevated premiums while receiving minimal or no tangible benefits from their policies. The authority aims to address this systemic problem to ensure fair practices and protect motorists' interests. 
 
+

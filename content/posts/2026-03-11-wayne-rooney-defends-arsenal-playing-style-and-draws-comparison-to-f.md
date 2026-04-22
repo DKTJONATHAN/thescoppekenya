@@ -15,3 +15,4 @@ The "Asterisk" Nobody Remembers The clamor from figures like Fabian Hurzeler and
 
 The Unspoken Outcome Rooney's concluding warning, that "Manchester City are far from done in the title race," was, perhaps, his most prescient comment. While he defended Arsenal's style, the uncomfortable truth is that City ultimately prevailed, leaving the debate over Arsenal's "brilliance" a mere historical footnote. The cynicism isn't in pointing out Arsenal's reliance on set-pieces or their less-than-flamboyant attacking displays; it's in observing how the narrative shifts once a trophy eludes grasp. The "good mix" Rooney praised then ultimately wasn't potent enough, proving that in elite football, only the final standings truly matter, regardless of how "brilliant" the journey felt at the time. 
 
+

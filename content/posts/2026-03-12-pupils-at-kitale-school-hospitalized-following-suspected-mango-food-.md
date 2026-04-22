@@ -13,3 +13,4 @@ Incident Details and Medical Response The pupils began complaining of stomach ac
 
 Ongoing Investigations Health officials have initiated investigations into the incident. Samples of the suspected mangoes have been collected for laboratory analysis to precisely determine the cause of the illness. Concurrently, police have launched their own inquiry to establish the full circumstances surrounding the event. Parents of the affected learners are currently awaiting an official statement from the authorities regarding the ongoing investigations. 
 
+

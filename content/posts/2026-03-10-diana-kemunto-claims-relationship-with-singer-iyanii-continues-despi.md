@@ -17,3 +17,4 @@ Love's Melody and Rivals Beware Kemunto’s motivations are clear: a deep affect
 
 Iyanii's Counter-Narrative Kemunto's determined "renewal" stands in direct opposition to Iyanii's recent public efforts. Following earlier rumors of a reconciliation, the singer took to social media to shut down the whispers, declaring, "I am not aware of it or involved in it. RUMORS DON’T SPREAD!" While Iyanii seeks to quell speculation, Kemunto appears intent on crafting her own romantic script, keeping their story very much in the public eye. 
 
+

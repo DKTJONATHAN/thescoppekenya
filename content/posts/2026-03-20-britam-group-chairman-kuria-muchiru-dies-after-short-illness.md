@@ -21,3 +21,4 @@ Professional Journey and Boardroom Influence Muchiru's professional journey bega
 
 A Legacy of Integrity Beyond his professional accomplishments, Muchiru was highly regarded for his wisdom and integrity. He was known for his genuine care for colleagues and stakeholders. His leadership in strengthening governance structures and driving the transformation agenda reflects a commitment to robust oversight in a dynamically evolving business environment, where strategic administrative reforms, such as the [Government Creates Four New ICT Directorates: Beyond the Hype of Kenya's Digital Reform](https://zandani.co.ke/article/government-creates-four-new-ict-directorates-major-reform), continue to shape the corporate landscape. The Board of Directors and Management of Britam Holdings PLC extended heartfelt condolences to his family, friends, and all who had the privilege of working with him. 
 
+

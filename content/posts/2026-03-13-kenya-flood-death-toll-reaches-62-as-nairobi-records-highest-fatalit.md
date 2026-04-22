@@ -15,3 +15,4 @@ Humanitarian Response and Infrastructure Concerns More than 10,000 households ha
 
 Continued Warnings and Outlook Several regions have suffered extensive structural damage, which complicates rescue and relief operations. In Nairobi, heavy rainfall overwhelmed drainage systems, submerging streets and destroying property, leaving residents stranded in some parts of the city. The Ministry of Health has issued a warning regarding an increased risk of building and infrastructure collapses during the ongoing March-April-May long rains. Authorities urge residents in flood-prone areas to exercise caution and heed early warning alerts, as heavy rains are forecast to continue. 
 
+

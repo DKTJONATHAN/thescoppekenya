@@ -23,3 +23,4 @@ Upcountry Travel Also Affected The fare adjustments extend beyond city commutes,
 
 Call for Government Intervention The Matatu Owners Association has formally urged the government to consider reinstating fuel subsidies. They contend that this measure is crucial to shield both operators and commuters from further financial strain caused by fluctuating fuel prices. The association cautioned that without such intervention, fare hikes could become a regular occurrence whenever fuel prices rise, placing an increasing burden on residents who rely on public transport for daily activities like work, school, and business. The government is already addressing significant challenges, including the President's recent statement on the inevitability of daily load shedding due to an energy deficit, highlighting a period of various economic pressures on the administration. 
 
+

@@ -21,3 +21,4 @@ Interactive Session Details KUCCPS Chief Executive Officer Dr. Agnes Mercy Wahom
 
 Timelines and Recommendations With the application window expected to close in early May 2026, KUCCPS strongly encourages all eligible candidates to participate in the webinar. This proactive engagement is crucial for avoiding application errors and maximizing opportunities for placement. As students prepare for their future, Za Ndani remains a critical source for various updates, from the latest on university applications to significant national and international developments, such as President Ruto's recent condemnation of strikes on UAE, Qatar, and Saudi Arabia [https://zandani.co.ke/article/ruto-condemns-strikes-uae-qatar-saudi-arabia-urgent-de-escalation], and even cultural news like Megan Thee Stallion's hospitalization after a Broadway performance [https://zandani.co.ke/article/megan-thee-stallion-hospitalized-after-falling-ill-during-broadway-p]. 
 
+

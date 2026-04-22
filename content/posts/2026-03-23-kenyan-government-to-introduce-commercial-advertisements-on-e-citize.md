@@ -15,3 +15,4 @@ E-Citizen's Revenue Trajectory The introduction of commercial ads marks another 
 
 Balancing Commercialization with Public Trust While the government views this as a strategic move to generate additional revenue and enhance the platform, the introduction of commercial advertisements on a portal used for critical public services is likely to ignite debate among Kenyans. Concerns may arise regarding the appropriateness of commercializing a platform that is integral to public access to essential government functions. The platform's commitment to maintaining service security, reliability, and user privacy will be crucial in addressing these potential public discussions. 
 
+

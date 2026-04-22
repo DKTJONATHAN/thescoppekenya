@@ -23,3 +23,4 @@ Regional Rainfall Outlook For the March-April-May (MAM) season, near-average to 
 
 Mitigation and Preparedness The report emphasizes that the forecast remains probabilistic, contingent on evolving ocean temperatures. For drier regions, measures such as drought-tolerant crops, water harvesting, conflict resolution, and livelihood diversification programs like cash transfers are recommended to bolster food security and reduce migration. In wetter areas, focus on early warnings, infrastructure reinforcement including dikes and drainage systems, disease surveillance, and value addition for surpluses can minimize losses, while promoting integrated pest management and efficient water use supports resilience. 
 
+

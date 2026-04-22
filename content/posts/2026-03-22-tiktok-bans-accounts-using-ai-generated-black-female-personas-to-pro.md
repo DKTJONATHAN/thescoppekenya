@@ -15,3 +15,4 @@ Kenya's Escalating Stance on Social Media Oversight This issue resonates particu
 
 The Imperative for Ethical AI Governance in Africa The incidents involving AI-generated personas underscore a critical challenge for the African tech landscape: ensuring ethical innovation. As AI tools become more accessible, the potential for misuse, particularly in ways that exploit vulnerable populations or perpetuate harmful stereotypes, grows. This calls for a proactive approach to AI governance, emphasizing transparency and accountability from platform providers. The ongoing regulatory actions by the CA in Kenya signal a clear intent to protect its digital citizens, fostering a safer online environment. Such measures are vital for building public trust in emerging technologies and ensuring that AI development in Africa aligns with ethical standards, as explored in "AI in the media: Why an ethics-by-design approach is essential for public trust". 
 
+

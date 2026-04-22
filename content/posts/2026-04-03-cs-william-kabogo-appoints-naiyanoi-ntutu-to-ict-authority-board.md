@@ -19,3 +19,4 @@ Appointment Details and Mandate Cabinet Secretary William Kabogo formalized the 
 
 Transition from Political Ambition Naiyanoi Ntutu Ng'eno first entered public consciousness following the death of her husband, Emurua Dikirr MP Johana Ng'eno, who tragically died in a helicopter crash on February 28, 2026. The incident, which also claimed five other lives, garnered widespread national attention. Following her husband's passing, Ms. Ntutu Ng'eno initially declared her intention to contest the vacant Emurua Dikirr parliamentary seat. However, she subsequently withdrew from the electoral race, citing personal reasons after consultations with her family. This decision marked a shift from direct political engagement towards public service, culminating in her current appointment to the ICT Authority. 
 
+

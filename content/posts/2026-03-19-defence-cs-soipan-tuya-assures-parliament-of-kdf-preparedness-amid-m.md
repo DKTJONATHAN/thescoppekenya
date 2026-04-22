@@ -23,3 +23,4 @@ Legislative Concerns and KDF's Expanding Role Committee Chairperson Nelson Koech
 
 Global Instability and Economic Repercussions This development unfolds against the backdrop of escalating war between the U.S. and Israel against Iran, which commenced on February 28, 2026. The conflict began with a joint U.S.-Israeli strike against the Iranian military and its nuclear facility. Iran launched an immediate counterattack, which has been sustained to date. The ongoing war has caused significant instability not only in the Middle East but also throughout the world, including in Africa. This has led to an increase in oil prices, caused by the temporary closure of the Strait of Hormuz. 
 
+

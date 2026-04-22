@@ -19,3 +19,4 @@ A Consistent Regulatory Stance The CA's action against SMG is not an isolated ev
 
 Future Trajectories for Traditional Broadcasters The impending revocation casts a shadow on SMG, a media empire predominantly owned by the family of the late President Daniel Arap Moi. This event follows the recent exit of the Aga Khan from the Nation Media Group, signaling a broader shift in the traditional dynasties that have long dominated Kenyan media. As the CA moves to gazette the license revocations, the episode serves as a powerful reminder for traditional broadcasters to strategically embrace digital transformation and robust financial management to navigate Kenya's dynamic and increasingly regulated media landscape. 
 
+

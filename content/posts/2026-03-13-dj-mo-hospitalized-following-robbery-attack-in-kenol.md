@@ -17,3 +17,4 @@ DJ Mo Reassures Fans and Seeks Justice Following the initial shock, DJ Mo offere
 
 A Troubling Trend for Public Figures This unfortunate event involving DJ Mo arrives just weeks after another prominent gospel personality, Jimmy Gait, survived a similar ordeal. On February 22, 2026, Gait was also attacked by armed robbers in Nairobi's Runda estate, an incident that also necessitated hospitalization. The disturbing proximity of these two high-profile attacks has ignited a broader conversation among netizens regarding the safety of public figures and the overall state of security across the country. While many Kenyan stars, for example, have found success even internationally, the rising wave of insecurity poses a stark contrast to their public achievements, prompting a re-evaluation of personal safety for those in the limelight. 
 
+

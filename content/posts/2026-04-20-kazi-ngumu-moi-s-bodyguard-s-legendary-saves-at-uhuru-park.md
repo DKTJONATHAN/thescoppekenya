@@ -21,3 +21,4 @@ A Nation's Unfiltered Voice The scenes at Uhuru Park were a vivid illustration o
 
 The Aftermath and Lasting Legend Years later, tales of that bodyguard’s agility and resolve continue to circulate in hushed tones and knowing smiles across the country. It was *kazi ngumu* - truly hard work - performed with an almost superhuman calm amidst a storm of public sentiment. That day cemented his legend, an unsung hero whose unshakeable professionalism shielded a president during his most vulnerable public moment, illustrating the extreme demands placed upon those in the inner circle of power. The streets today still buzz about the day Uhuru Park decided to give Moi a send-off that no bodyguard, no matter how seasoned, could have fully rehearsed for. 
 
+

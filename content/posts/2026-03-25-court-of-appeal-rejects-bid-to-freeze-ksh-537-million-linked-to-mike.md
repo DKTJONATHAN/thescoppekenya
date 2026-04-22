@@ -19,3 +19,4 @@ Appellate Court's Rationale ARA's legal team had initially argued that under Sec
 
 High Court's Previous Decision This appellate court ruling follows a High Court decision in October 2025, which had ordered the ARA to unfreeze the former Nairobi governor's accounts. That court cited a lack of sufficient evidence from the ARA to substantiate the money laundering allegations against Sonko, concluding there were no grounds to continue freezing his assets. The ARA had initially frozen Sonko's accounts, holding over Ksh 537 million, on suspicion of being proceeds from illicit activities. The appellate court further noted it could not issue a stay of execution against a judgment that merely dismissed a suit. This decision effectively clears Sonko's bank accounts, which have been under intense scrutiny by the ARA. Sonko has faced numerous legal challenges since his removal from city hall in 2020. 
 
+

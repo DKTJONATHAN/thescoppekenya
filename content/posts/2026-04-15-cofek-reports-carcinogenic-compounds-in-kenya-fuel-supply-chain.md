@@ -21,3 +21,4 @@ Serious Health Implications Brominated organic compounds are associated with var
 
 Broader Fuel Crisis Context These revelations emerge amidst an ongoing national fuel crisis. Recent scrutiny has focused on Cabinet Secretary for Energy Opiyo Wandayi concerning the alleged importation of Ksh4.8 billion worth of substandard fuel, believed to contain high amounts of sulphur. Such challenges in the fuel supply chain are further complicating the energy landscape, with implications that could potentially lead to increased costs for sectors like aviation, as airlines consider fare increases amidst broader disruptions to fuel supply. 
 
+

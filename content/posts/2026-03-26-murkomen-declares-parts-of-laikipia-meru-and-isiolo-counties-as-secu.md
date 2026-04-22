@@ -21,3 +21,4 @@ Multi-Agency Approach and Road Reopening The security operation will be a multi-
 
 Crackdown on Abetting Officers Security chiefs in the affected counties have been directed to initiate a crackdown on police officers suspected of abetting insecurity. This includes officers who fail to act against criminals or collude with them in criminal activities. This measure underscores the government's commitment to addressing internal challenges within the security apparatus while simultaneously combating external threats. 
 
+

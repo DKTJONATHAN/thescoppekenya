@@ -19,3 +19,4 @@ Commission on Revenue Allocation's Recommendation In contrast to the governors' 
 
 Current Bill and Public Engagement These divergent proposals come as the Senate invites public feedback on the allocation of funds between the national and county governments. In a public notice issued on Monday, March 23, the Senate requested written representations to guide revenue allocation for the 2026/2027 financial year. The current Division of Revenue Bill, 2026, proposes a total estimated budget of KSh 4.7 trillion, with KSh 2.9 trillion designated for distribution between the two levels of government. Under this framework, the national government is set to receive KSh 2.4 trillion, while the 47 county governments have been allocated KSh 420 billion. Public views are to be submitted to the Clerk of the Senate by hand-delivery or email, with the deadline set for Thursday, March 26, at 4:00 p.m. 
 
+

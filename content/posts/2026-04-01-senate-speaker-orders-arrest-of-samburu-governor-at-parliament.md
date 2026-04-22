@@ -21,3 +21,4 @@ Calls for Accountability Senate Majority Leader Aaron Cheruiyot initiated the de
 
 Escalating Tensions with Governors The Senate's watchdog committee, responsible for county government oversight, has repeatedly expressed deep frustration over numerous governors' consistent absence, viewing it as a direct challenge to the Senate's authority. This incident follows closely after police officers reportedly camped outside Nairobi Governor Johnson Sakaja's City Hall office yesterday, Tuesday, March 31, 2026, in an attempt to arrest him for similar failures to honor Senate summons. 
 
+

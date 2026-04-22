@@ -15,3 +15,4 @@ Landed Costs and Global Market Influence During the review period, the average l
 
 Government Assurance Amidst Supply Concerns Despite rising tensions concerning Iran and the Strait of Hormuz, a critical global oil supply route, the government is working closely with oil marketers to ensure uninterrupted fuel supply. On Friday, March 13, 2026, Energy Cabinet Secretary Opiyo Wandayi assured the public of adequate fuel reserves and confirmed that shipments would continue despite regional challenges. The nation significantly relies on Gulf imports through established government-to-government fuel agreements. This commitment to maintaining essential services is a cornerstone of broader government efforts, including expanding digital access across the country. 
 
+

@@ -23,3 +23,4 @@ Fan Support and Mental Fortitude De Zerbi lauded the Spurs fans for their "fanta
 
 Anxiety for Rivals Andy Reid noted that Tottenham must now "sit nervously and watch Nottingham Forest and West Ham play." If both rivals secure wins, the single point gained against Brighton could diminish in value, creating an "anxious couple of days ahead" for the struggling London club.
 
+

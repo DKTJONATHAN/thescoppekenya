@@ -19,3 +19,4 @@ Vurugu Championship Overview The Vurugu Championship, held on April 4 at the Kas
 
 Broader Sports Development Initiatives President Ruto's administration has made various commitments to sports development nationwide. These include substantial investments in sports infrastructure, targeting 22 new stadiums and 30 grassroots football academies. The 60,000-seat Talanta Sports City Stadium is on track for completion before the Confederation of African Football (CAF) deadline of July this year. Additionally, athlete welfare has seen significant improvements, with daily allowances increasing from Ksh7,500 to Ksh26,000, gold medal bonuses reaching Ksh3 million, and government-subsidized housing provided for 2025 championship medallists. Kenya also jointly hosted the CHAN championships with Tanzania and Uganda last year, and the FIFA Series Championships for women are set to be hosted at Nyayo Stadium this month, all in preparation for the AFCON 2027 tournament. 
 
+

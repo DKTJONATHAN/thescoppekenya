@@ -23,3 +23,4 @@ Biometric Verification and Data Update Upon completion of Form C, the applicant 
 
 Verifying Registration Status Online Before initiating a transfer, voters can confirm their current registration details by visiting the IEBC voter registration portal online and entering their ID information. Following the completion of the transfer process, voters are encouraged to re-visit the portal to confirm that the changes have been accurately reflected. 
 
+

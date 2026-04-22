@@ -23,3 +23,4 @@ Shaping an Artist: OAU's Influence Asake ultimately enrolled in the Performing A
 
 A Return to Roots: December 2025 Visit The singer’s deep connection to his alma mater was evident in December 2025 when he returned to the Ile-Ife campus. He was warmly received by Vice-Chancellor Professor Simeon Bamire and senior officials, including Dr Oluwatoyin Ogundeji of the Theatre Arts department, where his academic journey began. Asake performed for a large student audience at the OAU Amphitheatre, drumming and offering a traditional Yoruba prostration, met with enthusiastic cheers. His mother accompanied him on this significant visit. Asake's success as one of Nigeria's biggest music exports continues to highlight the vibrant talent emerging from the continent, a dynamic often reflected in public discussions about prominent figures in the music industry, such as Delta State Governor Sheriff Oborevwori's preference for Davido over Wizkid. 
 
+

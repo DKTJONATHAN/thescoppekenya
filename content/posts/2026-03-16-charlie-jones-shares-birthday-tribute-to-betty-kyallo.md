@@ -19,3 +19,4 @@ A Journey of Shared Milestones The couple’s public journey, having now spanned
 
 "Baby in Bloom" Celebration This birthday celebration follows closely on the heels of an exquisite “Baby in Bloom” themed baby shower held earlier this week on Tuesday, March 10, 2026. The event, meticulously organized by close friends and family, served as a vibrant precursor to the much-anticipated arrival of their child. Reflecting on the joyful gathering, Betty expressed profound gratitude for the immense support system surrounding them, noting that their baby is “already so loved” even before making their grand entrance. As Betty prepares for motherhood once again, Charlie’s unwavering birthday tribute reinforces the couple’s united front and their palpable excitement for the future. 
 
+

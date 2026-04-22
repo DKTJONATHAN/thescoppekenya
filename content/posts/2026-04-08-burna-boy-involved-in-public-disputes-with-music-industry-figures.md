@@ -31,3 +31,4 @@ Cubana Chiefpriest: Allegations and Legal Threats Burna Boy opened 2025 by calli
 
 DJ Tunez: The Most Recent Physical Altercation The most recent, and the first to turn physically violent in public, occurred in early 2026. According to a source in Burna Boy's camp, the confrontation began after DJ Tunez accompanied D'banj to Burna Boy's VIP section at Obi's House in Lagos, where an argument quickly escalated into a scuffle. The tension had been quietly building, as Tunez had previously mocked Burna's coffee PR stunt on X, and his close association with Wizkid placed him firmly in the opposing camp. After videos went viral, Tunez confirmed the fight on X, claiming he was hit from behind and outnumbered ten to one. The Nigerian DJ Association responded by banning Burna Boy's music nationwide. Across these seven feuds, one common thread emerges: Burna Boy. Many in the industry are left to decipher the consistent catalyst behind these prominent conflicts. 
 
+

@@ -25,3 +25,4 @@ Government Levies and Marketer Margins Taxes and levies are significant determin
 
 Stabilisation Measures and Market Realities The government occasionally implements stabilisation or intervention measures to prevent excessive price surges. However, these measures are limited and costly, necessitating their sparing application. Even when international oil prices decrease, local pump prices may remain elevated due to the cumulative impact of taxes, levies, domestic logistics, and exchange rate fluctuations. 
 
+

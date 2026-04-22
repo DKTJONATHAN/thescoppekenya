@@ -21,3 +21,4 @@ Advancing Climate Resilience Through AI The ClimCam system is engineered to leve
 
 Kenya's Growing Satellite Presence Apart from the newly launched ClimCam mission, Kenya currently operates one active satellite in orbit, TAIFA-1. This satellite was launched in April 2023 aboard a SpaceX Falcon 9 rocket and is dedicated to Earth observation to support agriculture, food security, and environmental monitoring efforts. Kenya has launched two satellites in total, including the earlier 1KUNS-PF nanosatellite, which was sent to space in 2018 from the International Space Station but has since completed its mission and is no longer operational. 
 
+

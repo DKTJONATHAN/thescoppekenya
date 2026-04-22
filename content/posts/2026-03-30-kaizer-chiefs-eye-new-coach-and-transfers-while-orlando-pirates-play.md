@@ -21,3 +21,4 @@ Kaizer Chiefs Plan Strategic Moves Kaizer Chiefs are preparing for a significant
 
 Player Focus and International Recognition Beyond the title race, individual players are earning recognition. Mamelodi Sundowns coach Miguel Cardoso received the Premier Soccer League's Coach of the Month award for March, while his team continues their CAF Champions League campaign, once again reaching the semi-finals. Surprise Moriri has also reportedly been appointed Technical Director for the Betway Premiership champions. On the international front, Bafana Bafana recently hosted Panama in Durban, with coach Hugo Broos considering defensive changes. The South African Football Association (SAFA) has unveiled the Bafana Bafana new away kit ahead of the 2026 FIFA World Cup in June. Amidst these developments, Kenyan football is also seeing intense rivalry, as Shabana coach rings war bells ahead of a crucial Sunday tie against AFC Leopards. 
 
+

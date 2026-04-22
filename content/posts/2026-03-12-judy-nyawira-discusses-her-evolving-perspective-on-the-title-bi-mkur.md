@@ -17,3 +17,4 @@ The Power of Personal Perspective Four years into this journey, Nyawira's perspe
 
 "Bi Mkurugenzi" As One Facet, Not the Whole Picture Today, Judy Nyawira views "Bi Mkurugenzi" as merely one thread in the rich tapestry of who she is, rather than the complete design. She articulates that while the name offers another way for the public to recognize her, it absolutely does not limit her ability to stand as her own unique person. Her inspiring journey resonates with many high-profile women navigating the balance between a prominent marriage and maintaining their distinct professional and personal identities in the public eye. 
 
+

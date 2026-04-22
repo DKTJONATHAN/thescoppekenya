@@ -23,3 +23,4 @@ Infrastructure Woes and Water Project Mystery The saga deepens with concerns ove
 
 The Constitutional Threat The gravity of the situation prompted North Sakwa MCA Oliver Arika to call for the Assembly to consider invoking Article 181 of the Constitution of Kenya. This constitutional provision outlines grounds for the removal of county officials, with non-performance being a significant basis. Speaker George Okode has since directed the executive to submit a comprehensive report addressing all the raised concerns before any further action is taken. In a move towards greater transparency, the Assembly also resolved to open upcoming deliberations on this matter to the public, civil society, and the media, ensuring all eyes are on Siaya's unfolding political drama. 
 
+

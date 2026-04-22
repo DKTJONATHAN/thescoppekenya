@@ -23,3 +23,4 @@ Board Members Arrested Amidst Crisis The crisis escalated further after the arre
 
 Hospital Services Remain Operational Despite the ongoing disputes, Dr. Agnes Gachoki assured the public that Nairobi Hospital remains fully operational. She confirmed that 80 per cent of services are still being offered. The hospital continues its vital work amidst other significant regional developments, including heightened attention to road safety after a recent fatal incident on the Nairobi-Mombasa Highway. 
 
+

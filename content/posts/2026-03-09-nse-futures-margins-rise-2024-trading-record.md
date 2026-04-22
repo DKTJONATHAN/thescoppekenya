@@ -17,3 +17,4 @@ Index Futures Margins Adjust Changes also extend to index futures. The NSE 25 in
 
 Implications for Market Participants These margin adjustments will be applied to all open positions in June, September, and December 2026 contracts. Traders holding positions across these cycles will either receive margin refunds or be required to post additional collateral to align their accounts with the revised risk parameters. As Kenya continues to see significant infrastructural advancements, such as the JKIA Modernisation project, the growing sophistication of its capital markets, exemplified by the NSE derivatives, reflects a maturing economic landscape. 
 
+

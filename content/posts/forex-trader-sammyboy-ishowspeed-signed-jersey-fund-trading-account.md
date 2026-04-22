@@ -17,3 +17,4 @@ Sammyboy's Plan to Fund Trading Account The bidding process is live, running on 
 
 More IShowSpeed Headlines from His African Tour Well, IShowSpeed certainly left his mark on the continent, didn't he? It wasn't just signed jerseys making headlines. The American streamer received an actual Ghanaian passport, with officials praising him for representing Africa globally. And who could forget the Nairobi haircut saga? A local barber, Joseph Cutz, claimed IShowSpeed paid a staggering KSh 2.5 million for a trim. Talk about a pricey haircut! [One could buy a small car for that, couldn't they?] Plus, our very own Mpasho even got a shout-out on Speed's Instagram carousel, celebrating his record-breaking livestream numbers in Kenya. Clearly, whether he's signing a jersey or getting a lavish haircut, IShowSpeed knows how to keep us all talking. 
 
+

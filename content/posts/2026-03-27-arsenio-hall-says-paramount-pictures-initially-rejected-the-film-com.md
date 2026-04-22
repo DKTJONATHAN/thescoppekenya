@@ -15,3 +15,4 @@ Eddie Murphy's Masterstroke This feedback sent Murphy and Hall back to the drawi
 
 From Rejection to Royalty When "Coming to America" finally hit theaters in June 1988, it was an instant sensation. The film became a massive box-office smash, grossing $288 million worldwide and standing as Paramount's highest-earning film of the year. It even broke records for a non-sequel's opening, reinforcing Eddie Murphy's star power. Decades later, its enduring popularity led to a much-anticipated sequel, "Coming 2 America." Originally slated for a theatrical release in August 2020, COVID-19 related delays saw Amazon Studios acquire the film, releasing it for streaming in March 2021. It just goes to show, sometimes the best ideas need a little push, or a creative pivot, to become cinematic gold. 
 
+

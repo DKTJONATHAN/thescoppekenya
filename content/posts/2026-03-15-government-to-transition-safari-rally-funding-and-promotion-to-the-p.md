@@ -23,3 +23,4 @@ Safari Rally's Future on the WRC Calendar Kenya's current hosting agreement with
 
 Economic Impact and Tourism Boost The Safari Rally has consistently served as a cornerstone for sports tourism and provides a substantial economic boost for traders, particularly within Nakuru County, where the event primarily takes place. Local businesses, including hotels, transport providers, and small-scale traders, experience significant revenue increases during the rally week. The event's global visibility also plays a crucial role in marketing the country as a premier adventure tourism destination. 
 
+

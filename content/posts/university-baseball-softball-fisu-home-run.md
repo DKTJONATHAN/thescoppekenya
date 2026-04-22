@@ -16,3 +16,4 @@ Organising the Absolute Madness Now, organising a FISU event, whether it's the c
 
 The Future's Bright, the Future's Diamond-Shaped This decision isn't just about giving baseball and softball a moment in the sun; it's about expanding opportunities for student-athletes aged 17-25 from all corners of the globe. FISU events are brilliant for practical development and give cities a chance to showcase themselves as destinations for young people to study, visit, and even work. So, North Carolina in 2029, get ready for some serious international sporting profile boosting. With FISU and the World Baseball Softball Confederation (WBSC) promising continued collaboration to promote these sports, the future for university baseball and softball looks brighter than a freshly polished trophy, Mate. Let's hope for some cracking games and plenty of future talent emerging from the university ranks! 
 
+

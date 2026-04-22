@@ -19,3 +19,4 @@ Strengthening Sector Regulation The directive emerged from a high-level engageme
 
 Boosting Boda Boda SACCOs and Future Transport In a bid to further support operators, the government announced plans to enhance boda boda SACCOs by improving access to financing. This initiative aims to empower operators to expand their businesses and upgrade their motorcycles, fostering economic growth within the sector. Such improvements in access to financing and regulatory frameworks are critical for the sustained development of public transport SACCOs. The government also signaled a long-term strategic shift towards electric motorcycles, encouraging riders to prepare for cleaner and more cost-effective transport alternatives in the coming years. 
 
+

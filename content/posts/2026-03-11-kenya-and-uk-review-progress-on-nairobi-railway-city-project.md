@@ -15,3 +15,4 @@ Driving Job Creation and Investment Officials anticipate the project's initial p
 
 Modernizing Transport Infrastructure A cornerstone of the Nairobi Railway City Project is the development of a comprehensive transport hub, inspired by successful international models such as London's King's Cross. Plans detail an expanded central station seamlessly integrated with commuter rail services, bus rapid transit (BRT) corridors, and reorganized matatu terminals. This infrastructure upgrade, complemented by dedicated cycling and pedestrian networks, is designed to significantly reduce reliance on private vehicles, thereby enhancing urban mobility and easing congestion within the city. Strategically located just south of Nairobi's central business district and approximately 11 kilometers from Jomo Kenyatta International Airport (JKIA), the hub is poised to redefine urban connectivity and support Nairobi's growing population and mobility demands. 
 
+

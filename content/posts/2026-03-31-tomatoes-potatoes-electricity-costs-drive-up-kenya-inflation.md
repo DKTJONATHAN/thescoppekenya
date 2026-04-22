@@ -23,3 +23,4 @@ Utilities and Housing Expenses Climb The category encompassing housing, water, e
 
 Other Sectoral Increases The alcoholic beverages, tobacco, and narcotics division recorded a 2.3 per cent annual rise, with beer prices climbing slightly by 0.3 per cent since last month. The health index registered 2.7 per cent inflation over the year, featuring a 2.8 per cent monthly surge in cancer medication costs and a marginal 0.1 per cent rise in general practitioner fees. Education costs increased by 3.3 per cent over the year. Insurance and financial services showed a modest 0.7 per cent increase in the same period. Personal care, social protection, and miscellaneous goods and services increased by 2.5 per cent annually, led by toilet paper, body lotion, and modest increases in hairdressing services. 
 
+

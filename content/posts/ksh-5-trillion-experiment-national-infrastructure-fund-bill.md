@@ -27,3 +27,4 @@ Airtel Uganda's Data Boom and Bitcoin's Safe-Haven Potential In regional corpora
 
 Key Investment Events: KIICO 2026 and COMESA Forum Kenya is set to host major investment promotion events in March 2026. The 4th Kenya International Investment Conference (KIICO) 2026, scheduled for March 25 at the Radisson Blu Upper Hill, is anticipated to be the largest investment promotion conference in the nation's history. Following this, the country will also host the 2nd COMESA Investment Forum on March 26 and the Africa Green Industrialization Initiative (AGII) on March 27. These events underscore Kenya's commitment to attracting significant capital and fostering economic growth across various sectors. 
 
+

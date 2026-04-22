@@ -15,3 +15,4 @@ Madueke's Moment? Or McCoist's Provocation? McCoist's outright declaration that 
 
 The World Cup Alibi The constant invocation of the upcoming World Cup, as admitted by Parlour, feels less like genuine concern and more like a convenient amplifier for punditry. Is Saka's current form truly a national crisis, or merely a localized issue being blown out of proportion for headline fodder? While his expected role on England's right-hand side is pertinent, the incessant focus on a single player's struggles risks creating an unnecessary burden, potentially exacerbating the very confidence issues McCoist suggests are at play. Sometimes, the best solution, as McCoist shrewdly noted, is a temporary removal from the spotlight. A couple of games on the bench might just benefit both the player and the team, allowing everyone to acknowledge the current reality without the usual media histrionics. 
 
+

@@ -23,3 +23,4 @@ Comprehensive Infrastructure and Safety Features Beyond the dual carriageway, th
 
 Alignment with Kenya Vision 2030 Objectives The development of the Muthaiga-Kiambu-Ndumberi Road aligns with the government's broader strategy to modernize the Nairobi Metropolitan transport network under Kenya Vision 2030. President William Ruto had announced in December last year that construction would commence in early 2026 after securing funding for the project, personally committing to launch the Ksh22 billion initiative. The project's focus on boosting economic activity and improving urban mobility is a key intervention for transport between Nairobi and its surrounding satellite towns. While other areas of transport regulation, such as the NTSA instant traffic fines system, have recently faced legal scrutiny, infrastructure development remains a priority. 
 
+

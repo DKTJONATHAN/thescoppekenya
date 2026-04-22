@@ -16,3 +16,4 @@ Is the Kenya Kwanza Split Already Happening? Honestly, the pressure on President
 
 Mt Kenya's Loyalty Tested in This Nasty Ruto-DP Clash Now, the Mt Kenya region is a big deal, politically speaking. They're watching this whole Ruto-DP clash like hawks, waiting to see if their man, Kithure Kindiki, gets the loyalty he's apparently shown President Ruto for yonks. Kindiki's loyalists are convinced this whole hullabaloo about his position is a "political trap" designed to test their allegiance to Ruto. And let's not forget, the last time there was a shuffle, Rigathi Gachagua ended up on the sidelines, and now he's out there criticising Ruto himself! It's all a bit murky, isn't it? Will this latest spat over the Deputy President position truly split Kenya Kwanza, or will they manage to paper over the cracks? Only time will tell, but it's certainly keeping the gossip columns busy! 
 
+

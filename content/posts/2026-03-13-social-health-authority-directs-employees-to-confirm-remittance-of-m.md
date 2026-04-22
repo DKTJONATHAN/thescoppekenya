@@ -15,3 +15,4 @@ Verifying Contribution Status Employees are strongly encouraged to frequently ch
 
 Reporting Non-Compliance The SHA has advised employees to immediately report any instances where their contributions have not been deducted, remitted, or updated in their statements. Such complaints should be submitted via the SHA customer service email to enable the Authority to follow up directly with the respective employers. This proactive approach by employees is crucial in ensuring accountability and maintaining the integrity of the social health insurance scheme. 
 
+

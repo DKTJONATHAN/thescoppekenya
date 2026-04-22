@@ -21,3 +21,4 @@ Previous Calls for Timely Payment This assurance from the Cabinet Secretary foll
 
 Countdown to the 2027 Tournament The latest developments occur hardly 15 months before the start of the competition, which is scheduled to commence in July next year. The event will be jointly hosted by the nation, Tanzania, and Uganda. 
 
+

@@ -17,3 +17,4 @@ Localizing AI for Creative Innovation The Netflix-InterPositive deal also presen
 
 Adapting Skills for the AI Era While AI tools like InterPositive promise efficiencies, they also signal a shift in the creative workforce. Third-party production companies traditionally focused on repetitive, technical post-production tasks may see aspects of their work integrated directly into studio operations. This necessitates a proactive approach to skill adaptation within the African creative sector. Rather than replacing human artistry, these AI tools are designed to handle mundane tasks, allowing visual effects artists and post-production specialists to focus on more complex, creative, and higher-value work. Investing in training and upskilling programs to equip African talent with expertise in AI-driven workflows will be essential to capitalize on these technological advancements and maintain a competitive edge in the evolving global film landscape. 
 
+

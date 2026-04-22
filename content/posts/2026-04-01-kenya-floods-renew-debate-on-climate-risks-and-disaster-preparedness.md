@@ -17,3 +17,4 @@ Climate Justice and Investment Needs The recurring floods also highlight climate
 
 Proactive Risk Management and Long-Term Planning Governments must shift from treating seasonal flooding as unexpected emergencies to planning for them as predictable risks. The primary lesson is that seasonal flooding represents a recurring risk pattern, not an exceptional disaster. Effective anticipatory risk governance requires better land-use planning, stronger drainage systems, robust early-warning networks, and strategic relocation plans for communities in high-risk areas. Long-term investment in infrastructure, social protection, and environmental management is crucial for effective disaster management, moving beyond cycles of rebuilding after each crisis. Without stronger climate adaptation and disaster-preparedness measures, similar emergencies will continue to occur, increasing pressure on Kenya's economic stability and corporate sector. 
 
+

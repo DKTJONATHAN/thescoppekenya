@@ -17,3 +17,4 @@ Cultural Diplomacy and Vibrant Events Ghana actively promotes its rich cultural 
 
 Economic and Social Impact Beyond entertainment, Ghana's creative industries are vital engines for economic growth and social cohesion. They stimulate tourism, generate export revenues, and foster job creation for artists, artisans, performers, and entrepreneurs. The expansion of Ghana's cultural influence provides increased funding and opportunities, particularly in struggling regions. Art and culture also serve as powerful tools for nation branding and soft power projection, shaping global perceptions of Ghana and attracting investment and partnerships. This growing sector underscores how creative expression contributes meaningfully to Ghana's development and its standing on the world stage. 
 
+

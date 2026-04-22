@@ -21,3 +21,4 @@ Progress in Financial Accountability Governor Ndeti's administration has already
 
 Governor Ndeti's Call for Due Process Governor Ndeti stressed that her administration does not condone violence, urging residents and suppliers to resolve disputes through lawful, structured government processes. The commitment to transparency and integrity in Machakos County aligns with the government's broader fiscal strategies aimed at optimizing public expenditure, as highlighted in analyses regarding the [Kenya Budget: 5 Big Wins for Jobs and Industry Growth](https://zandani.co.ke/article/kenya-budget-5-big-wins-for-jobs-and-industry-growth). Several public figures, including former Nairobi Governor Mike Sonko and media personalities Oga Obinna and Dr Ofweneke, have publicly voiced support for Kioko, advocating for transparency and prompt settlement of the debt. 
 
+

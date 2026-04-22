@@ -21,3 +21,4 @@ Directing From Detention: Unsettling Allegations Perhaps the most startling aspe
 
 Beyond Murder: Terrorism and Organized Crime Charges The scope of the charges extends beyond murder, encompassing severe counts related to organized criminal activity, radicalization, and the facilitation of a terrorist act. The state contends that the coercive methods employed to induce followers into starvation constitute a form of radicalization, posing a direct threat to Kenya's national security. As the legal proceedings unfold, Mackenzie remains in custody. A further mention for the new cases concerning the Kwa Bi Nzaro victims is scheduled for March 17, 2026, running parallel to the primary Shakahola trial. This multi-faceted legal saga continues to be one of the most significant criminal investigations in Kenya's history. 
 
+

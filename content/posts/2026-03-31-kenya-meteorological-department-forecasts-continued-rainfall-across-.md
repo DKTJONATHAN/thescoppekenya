@@ -25,3 +25,4 @@ Temperature Variations Temperatures will vary regionally. Coastal towns and arid
 
 Prior Conditions and Public Safety This anticipated rainfall follows a period of prolonged heavy rainfall that tragically claimed over 100 lives, according to data released by the Kenya Red Cross. Authorities continue to urge vigilance among the populace due to the unpredictable weather patterns experienced. 
 
+

@@ -19,3 +19,4 @@ From Screen Charmer to Kitchen Connoisseur Known for his award-winning acting pr
 
 A Taste of Authentic Kenyan Vibes Kwach has assured fans a blend of "bold personality and authentic Kenyan vibes" for the upcoming season. This promise hints at a show deeply rooted in local culture, featuring genuine interactions and reflecting the diverse culinary landscape of Kenya. His energetic presence is expected to inject fresh life into the program, continuing its tradition of bringing together celebrities, creatives, and influencers for candid discussions over food. Viewers can look forward to a vibrant and engaging experience that celebrates Kenyan hospitality and rich flavours. 
 
+

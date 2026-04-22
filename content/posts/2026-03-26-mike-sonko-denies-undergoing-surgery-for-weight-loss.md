@@ -21,3 +21,4 @@ Overhauling Social Habits According to the former Governor, the secret to his tr
 
 Public Resonance and Lifestyle Reform Sonko’s revelation has triggered a wave of reactions across digital platforms. In an era where celebrity weight loss is often associated with "quick fix" procedures, his emphasis on self-control and consistency has resonated with many supporters. By publicly choosing "discipline over the knife," Sonko positions himself as a rare example of traditional lifestyle reform in the high-pressure world of Kenyan politics. This approach offers a stark contrast to some narratives seen among public figures, including certain Kenyan reality TV stars who often navigate intense scrutiny regarding their public image and financial successes [https://zandani.co.ke/article/kenyan-reality-tv-stars]. 
 
+

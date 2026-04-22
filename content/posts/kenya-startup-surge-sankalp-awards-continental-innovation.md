@@ -21,3 +21,4 @@ Broader African Recognition Beyond Kenya’s Startup Surge While Kenya’s Start
 
 Economic Implications of Kenya’s Startup Surge and Sankalp Awards The achievements at the Sankalp Africa Awards signify more than individual company successes; they reflect a growing confidence in Africa's innovation economy. Syna Dehnugara, Director at Sankalp Forum, noted that the Global South is not just participating but "rising, leading, and shaping solutions for the world". Karnika Yadav, Partner & Director at Intellecap Africa, further emphasised that these winners embody "the courage to reimagine systems, the creativity to solve for scale, and the conviction to deliver impact where it matters most". This collective energy is poised to shape Africa's future economic landscape, attracting further investment and fostering job creation across critical sectors. 
 
+

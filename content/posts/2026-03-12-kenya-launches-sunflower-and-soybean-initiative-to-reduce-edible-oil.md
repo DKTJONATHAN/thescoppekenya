@@ -17,3 +17,4 @@ Strengthening Market Linkages and Private Investment A critical component of thi
 
 Kilimo Biashara Expo Showcases Innovation The launch of this initiative coincided with the annual Kilimo Biashara Expo 2026, held at the KALRO Seeds headquarters in Thika. This major agricultural exhibition serves as a vital platform, bringing together farmers, researchers, agribusiness companies, and development partners. The expo highlights agricultural innovations, technologies, and investment opportunities designed to transform farming into a competitive business sector. This year's event featured improved seed varieties, mechanization technologies, and digital agriculture solutions, all aimed at increasing productivity and enhancing farmers' access to markets. The expo also emphasized the growing importance of industrial crops such as sunflower and soybean in bridging the domestic edible oil supply-demand gap. 
 
+

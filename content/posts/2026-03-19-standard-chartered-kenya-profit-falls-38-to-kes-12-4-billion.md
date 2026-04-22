@@ -17,3 +17,4 @@ Balance Sheet and Asset Quality The bank's balance sheet also contracted in 2025
 
 Shareholder Returns and Leadership Transition Despite the earnings decline, the board approved a total dividend of KES 31 per share, a 31% reduction from the KES 45 paid in 2024, yet representing a 95% payout ratio against earnings per share of KES 32.47. The total distribution amounts to KES 11.7 billion, with the majority flowing to Standard Chartered PLC, which holds a 73.89% stake. The 2025 results conclude the tenure of CEO Kariuki Ngari, who retires on April 16, 2026, after seven years. His successor, Birju Sanghrajka, currently Head of Corporate and Investment Banking, is poised to guide the bank in navigating the lower-rate environment and pursuing renewed income growth. 
 
+

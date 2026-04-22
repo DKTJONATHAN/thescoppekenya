@@ -16,3 +16,4 @@ Contract Conundrums and Mbappe's Millions Now, while Vini Jr's on-pitch exploits
 
 Transfer Tittle-Tattle Of course, with contract talks dragging, the rumour mill is churning faster than a dodgy washing machine. Manchester City are reportedly keeping a very close eye on the situation, with whispers suggesting they've even advised Vini Jr to hold off on signing a new deal until 2027, possibly aligning with Pep Guardiola's own contract situation. And if that wasn't enough, his boyhood club Flamengo has also publicly expressed their desire for him to return one day. It's absolute madness, isn't it? One minute he's supposedly 'performing poorly,' then a stern word from his goalkeeper sets him straight, and now half of Europe wants him! Only at Real Madrid, eh? 
 
+

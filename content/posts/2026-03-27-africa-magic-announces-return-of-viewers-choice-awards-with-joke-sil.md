@@ -23,3 +23,4 @@ Sponsors Drive Pan-African Celebration The 12th AMVCA is headlined by Don Julio 
 
 Anticipation Builds for Nominations The nominee announcement is scheduled for Sunday, March 29th, airing live on Africa Magic channels from 7 PM. Hosted by AMVCA-winning actor Chiemezie Imo, the reveal will set the stage for the highly anticipated ceremony in May, offering viewers a first look at the projects and individuals vying for top honors this year. 
 
+

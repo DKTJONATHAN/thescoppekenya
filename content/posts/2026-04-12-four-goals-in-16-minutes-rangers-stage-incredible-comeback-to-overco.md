@@ -29,3 +29,4 @@ Title Race and European Aspirations The win would bring Rangers back within a si
 
 Historical Context and Future Prospects Rangers have a dominant record against Falkirk in top-flight meetings, having lost only one of their last 47 encounters. The club has also scored four goals in their last two league games, a feat they last achieved in December 2020 under Steven Gerrard. This win not only adds to their historical dominance but also provides crucial momentum as the 2026 season progresses towards its climax.
 
+

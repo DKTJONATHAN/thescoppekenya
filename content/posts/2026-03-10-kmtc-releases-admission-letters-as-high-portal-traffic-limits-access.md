@@ -15,3 +15,4 @@ Warning Against Fraudulent Schemes The college has issued a strong warning to ap
 
 Application Deadline and Available Vacancies Applications for the current intake remain open, with the official deadline set for Friday, March 13, 2026. Prospective students are directed to apply via the Kenya Universities and Colleges Central Placement Service (KUCCPS) student portal. KMTC urges applicants to rely solely on verified official communication channels, including its authenticated social media accounts, for updates and assistance concerning admission letters to avoid falling victim to deceptive practices. The March 2026 intake is poised to fill 21,774 vacancies across 36 diploma and certificate programmes offered at 98 campuses nationwide. The ongoing effort to ensure secure and official communication channels in education is paramount, aligning with broader reforms aimed at enhancing integrity and transparency in national academic processes. 
 
+

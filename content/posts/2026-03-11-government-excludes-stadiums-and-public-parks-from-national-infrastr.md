@@ -19,3 +19,4 @@ Fund Structure and Investor Involvement The NIF, operationalized after President
 
 No Salary Deductions for NIF Treasury Cabinet Secretary John Mbadi confirmed that the infrastructure fund will not implement levies from public servants' salaries. This differentiates the NIF from other public schemes, such as the housing fund. Mbadi stated, "No, we will not deduct civil servants' salaries. This fund is being set up using seed capital from the divestiture of government shares in state-owned enterprises." 
 
+

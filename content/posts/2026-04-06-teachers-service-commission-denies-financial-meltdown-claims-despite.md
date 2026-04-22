@@ -19,3 +19,4 @@ Audit Uncovers Significant Financial Pressures The clarification from TSC came i
 
 Pending Bills and Compliance Concerns Persist TSC is grappling with a substantial pending bills conundrum, standing at Ksh12.3 billion. The audit report also highlighted issues such as stale cheques and long-outstanding liabilities that could attract penalties or legal challenges. Of notable concern are unresolved compensation claims under the Workers' Injury Benefits Act, with Ksh186 million unpaid, some dating back more than two decades. These long-standing claims represent a critical aspect of the persistent financial obligations within the commission. For more comprehensive insights into various national issues, Za Ndani also covers stories such as [Manchester United rule out contract extension for Casemiro](https://zandani.co.ke/article/manchester-united-rule-out-contract-extension-for-casemiro). 
 
+

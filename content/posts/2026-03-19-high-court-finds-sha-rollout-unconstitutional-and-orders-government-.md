@@ -21,3 +21,4 @@ Emergency Care and System Integrity The Ministry of Health (MOH) has been ordere
 
 Legal Challenge and Court's Stance The High Court case was initiated by activists including Magare Gikenyi and Senator Okiya Omtatah, who challenged the legality of the SHA rollout and its implications for healthcare access. In October 2024, Senator Omtatah had sought orders to quash the launch of SHIF and nullify government contracts with several service providers involved in its implementation. He also requested a review of the consortium, comprising three private entities, contracted by the government. The court, however, declined to annul the programme at this stage, acknowledging its operational status and the potential for disrupting healthcare delivery across the nation. 
 
+

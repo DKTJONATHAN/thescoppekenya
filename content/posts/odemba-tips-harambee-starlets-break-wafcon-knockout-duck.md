@@ -21,3 +21,4 @@ Broader Kenyan Football Aspirations The excitement surrounding the Harambee Star
 
 Challenges and the Call for Support Despite the rigorous preparations and high hopes, challenges remain. Star forward Mwanahalima "Dogo" Adam has voiced concerns regarding the level of official backing, making a plea for more visible government support to motivate the players ahead of their departure for North Africa. This call for recognition highlights the importance of comprehensive support for national teams as they represent Kenya on the global stage. The Starlets are balancing tactical drills with a public appeal for the encouragement their hard work merits. 
 
+

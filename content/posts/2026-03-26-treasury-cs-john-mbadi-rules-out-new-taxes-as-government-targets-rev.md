@@ -21,3 +21,4 @@ KRA Institutional Reforms Acknowledging that the tax base has not expanded as an
 
 Increased Scrutiny on Financial Transactions These developments coincide with KRA intensifying its scrutiny of mobile money transactions. Deputy Commissioner for Policy and Tax Division Maurice Oray, speaking on March 25, confirmed the authority is expanding its monitoring of all income streams to address inconsistencies among some taxpayers who file nil returns despite active financial activity. Under this new approach, KRA will increasingly rely on financial data, including mobile money transactions, and introduce pre-filled tax returns for known income streams already captured in the system. This vigilant approach to revenue streams is particularly crucial when considering the broader economic performance, as seen in reports detailing shifts like Standard Chartered Bank Kenya's net profit falling 38 percent on lower interest and forex income. 
 
+

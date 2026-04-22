@@ -21,3 +21,4 @@ Addressing Corruption as a National Challenge EACC Chief Executive Officer Abdi 
 
 Call for Ethical Campaigning and Accountability Tharaka Nithi Member of Parliament George Murugara urged politicians to prioritize service delivery instead of engaging in premature campaigns. Murugara cautioned leaders against hate speech and incitement, noting that such actions are prohibited under the law and undermine national cohesion. He called on law enforcement agencies to remain vigilant and ensure that those who violate laws are held accountable as political activity gathers momentum ahead of the 2027 polls. 
 
+

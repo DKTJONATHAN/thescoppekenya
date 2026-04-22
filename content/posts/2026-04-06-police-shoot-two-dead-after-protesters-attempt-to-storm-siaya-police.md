@@ -23,3 +23,4 @@ Official Condemnation and Prior Incidents Siaya County Commissioner Norbert Komo
 
 History of Police Post Storming Incidents of ordinary citizens storming police stations with fatal repercussions are not uncommon. At the height of Gen Z protests in June 2025, several protesters in Matuu were shot as they attempted to storm Matuu Police Station. Witnesses at the time reported that the group of protesters embarked on a vandalism spree, leading to police firing live bullets to attempt to scare them off. 
 
+

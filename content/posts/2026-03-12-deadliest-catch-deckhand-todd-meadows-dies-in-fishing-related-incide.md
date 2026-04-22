@@ -17,3 +17,4 @@ Discovery Channel's Heartfelt Condolences Discovery Channel also confirmed the t
 
 The Bering Sea's Continuing Toll Meadows' death adds to the grim history of the Emmy-winning series, which showcases the perilous world of crab fishing in the Bering Sea. In 2024, deckhand Nick Mavar, who appeared in 17 seasons, passed away at age 59 in Alaska following a medical emergency. The series also lost deckhands Nick McGlashan and Mahlon Reyes in 2020. *Deadliest Catch* celebrated its 20th anniversary in 2025 and premiered season 21 in August 2025, continuing its run on Discovery Channel and streaming on Discovery+. 
 
+

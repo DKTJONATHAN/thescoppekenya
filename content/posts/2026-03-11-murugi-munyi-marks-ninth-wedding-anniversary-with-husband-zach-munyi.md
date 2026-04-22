@@ -17,3 +17,4 @@ Love in Motion: Travel and Togetherness Despite Zach’s frequent professional t
 
 The Recipe for Longevity Reaching the nine-year mark is no small feat, and Murugi attributes their lasting success to patience and mutual understanding. She emphasizes communication and shared growth as the cornerstones of their enduring partnership. By celebrating both grand milestones and the quiet, everyday joys, Murugi and Zach continue to build a treasure trove of shared memories, ensuring their union thrives with every passing year. 
 
+

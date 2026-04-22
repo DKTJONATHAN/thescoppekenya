@@ -25,3 +25,4 @@ Hope Kid, speaking on a popular podcast in April 2026, highlighted that while ot
 
 Prophet Kanyari's Salvation Healing Ministry has notably become a refuge for public figures caught in viral controversies in 2026, offering them a platform and support during their moments of intense public scrutiny. Kanyari often refers to these individuals as his "daughters" or "sweethearts," providing a psychological haven when the internet is quick to "cancel" them. This approach has seen him provide financial assistance and public welcome to individuals like Marion Naipei, who faced severe online shaming earlier in 2026, demonstrating a tangible commitment to his ethos of second chances. Hope Kid suggested that Kanyari's consistent blessings and the flourishing of his church are perhaps a reflection of a divine perspective that values embracing the rejected over judgment.
 
+

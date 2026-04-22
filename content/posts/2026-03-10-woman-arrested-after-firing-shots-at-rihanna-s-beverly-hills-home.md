@@ -17,3 +17,4 @@ Escalating Security Concerns for Global Icons This violent intrusion marks a sig
 
 Awaiting Official Commentary As of the current date, neither Rihanna nor her husband, A$AP Rocky, have issued a public statement regarding the shooting at their home. Reports indicate that the singer is "freaking out" and taking extra security precautions, including rescheduling an upcoming photoshoot. The swift response by law enforcement and the recovery of the weapon indicate the seriousness of the charges Ortiz will likely face, including aggravated assault, trespassing, and attempted murder. 
 
+

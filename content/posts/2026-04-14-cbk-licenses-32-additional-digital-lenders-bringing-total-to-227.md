@@ -21,3 +21,4 @@ Sector Growth and Economic Impact This recent approval follows the licensing of 
 
 Mandatory Compliance for Licensed Providers Formal regulation of digital credit providers by the CBK commenced in 2022, establishing a stringent licensing regime aimed at transparency and enhanced consumer protection. Licensed DCPs must adhere to strict CBK regulations encompassing data confidentiality, full cost disclosure, fair debt collection practices, restrictions on credit listing, and anti-money laundering controls. Additionally, lenders are required to demonstrate legitimate sources of funds and are explicitly prohibited from employing unethical recovery methods or listing borrowers with Credit Reference Bureaus (CRBs). 
 
+

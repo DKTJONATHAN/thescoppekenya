@@ -23,3 +23,4 @@ Expanding Registration Capacity The IEBC has scaled up its operational capacity 
 
 Targets for 2027 General Election The commission is targeting 2.5 million new voters during the first phase of the ECVR. This initiative is part of a broader strategy to enlist at least 6.3 million new voters, aiming for a projected total of 28.5 million registered voters ahead of the 2027 General Election. Kenya’s total registered voter population stood at about 22.3 million at the start of the renewed mass voter registration efforts in September 2025. 
 
+

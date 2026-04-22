@@ -21,3 +21,4 @@ Wider Implications of the Nandi Helicopter Crash The tragic Nandi helicopter cra
 
 National Assembly's Role in Supporting Bereaved Families The swift formation of the National Assembly Burial Support Team demonstrates the parliamentary institution's established mechanisms for responding to the tragic death of its members. This collective effort ensures that the families of those lost, especially in high-profile incidents like the Nandi helicopter crash, receive structured support during their period of grief. The team's mandate to liaise with the family for burial preparations reflects a tradition of solidarity within the legislative body, highlighting its role not just in governance but also in pastoral care for its fraternity. Further details regarding the burial arrangements for Hon. Johana Ng'eno and other victims will be communicated as they become available. 
 
+

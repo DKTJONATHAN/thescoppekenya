@@ -25,3 +25,4 @@ The Rise of Celebrity Boxing in Uganda Celebrity boxing spectacles, such as The 
 
 What Lies Ahead for Shakib? With the April 11 clash fast approaching, Shakib is evidently determined to demonstrate resilience and prove that his prior defeat does not define his journey. The boxing world and his fans will be watching closely to see if he can stage a triumphant comeback against Barista Timo, or if the ring will once again deliver an unexpected drama. 
 
+

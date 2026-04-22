@@ -21,3 +21,4 @@ Leveraging UK Expertise for Modern Facilities The UK's global recognition for it
 
 Government's Investor-Driven Approach This investor-driven approach is poised to mark a significant turning point in the country's ambition to become a leading sports powerhouse in Africa. The government is undertaking a comprehensive overhaul of the sports sector through improved governance and infrastructure. This includes the introduction of the Sports Bill 2026 and the National Sports Policy, which aim to facilitate the completion of at least 22 stadiums nationwide. This modernization drive is part of a broader government commitment to national development and efficiency, aligning with other initiatives such as the National Transport and Safety Authority's rollout of 1,000 speed cameras for digital road enforcement. 
 
+

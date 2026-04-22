@@ -19,3 +19,4 @@ Blurring the Lines Between Character and Reality Jacky Vike disclosed that many 
 
 A Mentor's Lasting Impact: Papa Shirandula Vike also reflected on her formative years under the guidance of the late Papa Shirandula, whom she credits as an instrumental mentor and father figure in her career. She described their professional relationship as an "amazing experience" that provided invaluable lessons and opportunities for growth. Over time, their bond transcended professional boundaries, evolving into a close-knit family connection. Vike shared that Shirandula's passing deeply affected the entire cast, emphasizing the profound personal and professional void he left. Her ongoing success, she asserted, is largely rooted in the enduring lessons and support he provided throughout her journey. 
 
+

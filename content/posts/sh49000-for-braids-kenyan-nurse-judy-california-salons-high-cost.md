@@ -17,3 +17,4 @@ Nurse Judy's US Earnings: The Real 'Staggering' Figures Now, let's not pretend N
 
 Beyond the Braids: The True Price of the American Dream for a Kenyan Nurse It's easy to be dazzled by the raw figures of US salaries, but as some Kenyans residing in the US have pointed out, these "staggering" sums are often gross income, not what truly lands in a nurse's pocket. Mandatory deductions for federal and state taxes, Social Security, and Medicare can slash a hefty chunk, leaving a take-home pay far less glamorous than the initial headline suggests. So, while Nurse Judy’s braids bill might seem like a drop in her ocean of earnings, it subtly highlights the relentless outgoings in a high-cost environment like California, where even the most lucrative professions come with their own set of financial traps. The narrative of "making it" abroad is always more complex than the Instagram reels portray. 
 
+

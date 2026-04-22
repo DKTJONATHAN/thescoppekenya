@@ -21,3 +21,4 @@ Major Roads Impassable and River Overflows Beyond local estates, critical arteri
 
 Emergency Response and Casualty Figures Emergency response teams have since been deployed to assist residents caught in the floods, with Red Cross Aqua rescue teams responding to several incidents across the city during the night. In one incident, rescue teams saved 11 people who were stranded inside a matatu overwhelmed by rising floodwaters along Bunyala Road. A separate rescue operation in Kilimani saw two children evacuated from a flooded house. While no fatalities were reported from this latest wave at the time of publication, official police statistics claim 62 people have lost their lives since the floods began earlier this year. These immediate crises underscore the complex array of challenges facing urban centers, demanding swift and decisive action from public bodies, a subject of continuous national dialogue surrounding effective governance. 
 
+

@@ -21,3 +21,4 @@ Corporate Maneuvers Amidst a Shrinking Paycheck Despite the pervasive impact of 
 
 The Unyielding Pressure on Your Paycheck The narrative of a slowing headline inflation rate often overshadows the cumulative and deeply ingrained financial hardship faced by Kenyan households. The persistent erosion of your paycheck is not merely an economic statistic; it is a lived experience, forcing difficult choices on families. Without robust, transparent governance of national projects and a clear strategy to bolster real incomes against the relentless tide of inflation, the gap between what Kenyans earn and what they genuinely need will only continue to widen. 
 
+

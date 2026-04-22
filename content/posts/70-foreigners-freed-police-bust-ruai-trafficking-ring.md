@@ -15,3 +15,4 @@ Broader Context of Trafficking Concerns This significant rescue operation follow
 
 Government Countermeasures and Collaboration In response to persistent trafficking and smuggling risks, the Kenyan government has implemented comprehensive countermeasures, particularly at JKIA. The airport now employs a specialised inter-agency approach that integrates the Better Migration Management (BMM) programme and the Airport Communication Project (AIRCOP). This collaborative framework facilitates the identification and tracking of suspicious passenger movements through coordinated intelligence sharing among various agencies. The police have reiterated that human trafficking is a severe criminal offense. They have urged members of the public to maintain vigilance and promptly report any suspicious activities or individuals to the authorities to aid in combating this transnational crime.
 
+

@@ -21,3 +21,4 @@ A Background in Activism and Journalism Adan, a University of Nairobi journalism
 
 Expanding Influence and Advocacy Her activism began in 2022, addressing decades-long drainage issues in Nairobi's Korogocho slums, her birthplace, which drew Governor Johnson Sakaja's attention. Since then, her advocacy has broadened to include anti-abduction protests, femicide awareness campaigns, youth mobilisation, and broader social justice issues. While facing past scrutiny regarding the 2024 demonstrations and alleged mismanagement of Ksh30 million intended to compensate protest victims-claims she clarified by verifying individual cases and sharing supporting documents-her online presence remains a crucial tool for engaging young people and shaping national discussions on policy and governance. Her new radio platform is expected to amplify these vital youth-focused perspectives and continue her advocacy. 
 
+

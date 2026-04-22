@@ -21,3 +21,4 @@ Variable Cut-Off Points Across Institutions The updated portal confirms that cut
 
 Accessing the Application Portal Prospective applicants can access the complete list of updated degree programmes, including minimum entry requirements, institution types, programme codes, and specific cut-off points, via the official application portal at Kuccps.net. To log in, candidates must use their KCSE index number, select their KCSE year, and enter their KCPE index number as the password. After logging in, users should navigate to 'All programmes' and can filter the list to efficiently locate their preferred courses. The application window is anticipated to open soon, and candidates are advised to meticulously review all requirements before submitting their choices to prevent placement challenges. 
 
+

@@ -21,3 +21,4 @@ Review of Joint Naval Exercises Both countries reviewed progress from joint nava
 
 New Training Complex Commissioned A significant highlight of the visit was the commissioning of a new Marine Range and Close Quarters Battle training complex at the Kenya Navy Base in Mtongwe, Mombasa County. This Ksh97 million facility, equivalent to approximately $750,000, is designed to boost the skills of Kenyan marine commandos. It features a shooting range, training structures, and rehearsal spaces aimed at sharpening combat readiness, improving response to security threats, and supporting operations along Kenya's coastline and nearby waters. This investment is part of a broader U.S. program to build Kenya's defence capacity, ensuring local forces are better equipped and trained to handle evolving threats without heavy reliance on external intervention. 
 
+

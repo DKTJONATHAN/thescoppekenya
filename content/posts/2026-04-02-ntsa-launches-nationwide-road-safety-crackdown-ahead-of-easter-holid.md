@@ -19,3 +19,4 @@ Coordinated Operations Underway NTSA Director General Nashon Kondiwa announced o
 
 Driver and Vehicle Compliance Motorists are urged to prioritize safety, with warnings issued against reckless habits such as speeding, drunk driving, and driver fatigue, which remain significant causes of accidents. Drivers are advised to strictly adhere to speed limits, avoid consuming alcohol before getting behind the wheel, and take regular breaks during long journeys to combat fatigue. The NTSA Director General also stated that non-compliant vehicles, including those with mechanical defects like faulty brakes, worn-out tyres, or poor lighting, will face immediate impoundment. For vehicles experiencing breakdowns, drivers must ensure safe parking off the road and place warning triangles at a sufficient distance. 
 
+

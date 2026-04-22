@@ -19,3 +19,4 @@ Warning Against 'Imperial Presidency' Despite advocating for inter-governmental 
 
 Commitment to Service Delivery Governor Orengo reiterated that his primary focus remains on delivering services to the people of Siaya and strengthening the devolved system of government. He firmly distinguished between necessary governmental engagement and political alignment, emphasizing that the former should not be misconstrued as the latter.
 
+

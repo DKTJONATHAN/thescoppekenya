@@ -21,3 +21,4 @@ Enhancing System Performance and Security KRA emphasizes that this system mainte
 
 Minimizing Disruption and Future Proofing The KRA has apologized for any inconvenience caused by this change of schedule, appreciating the continued cooperation of all stakeholders. The authority remains committed to supporting trade and ensuring the iCMS system is reliable, fast, and user-friendly once maintenance concludes. 
 
+

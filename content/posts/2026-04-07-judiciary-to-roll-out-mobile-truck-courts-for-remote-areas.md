@@ -19,3 +19,4 @@ Procurement Underway for Mobile Court Infrastructure To facilitate this rollout,
 
 Social Transformation Through Access to Justice This initiative is a key component of the social transformation through access to justice (STAJ) agenda, spearheaded by Chief Justice Martha Koome. STAJ's core mission is to ensure legal services reach citizens in remote areas, reduce their financial burden, and decentralize justice by shifting focus from traditional physical courts to adaptable service delivery points. While mobile courts currently address traffic offenses along major corridors, the judiciary aims to expand these operations significantly into rural and marginalized regions following the successful procurement and deployment of the new truck courts. 
 
+

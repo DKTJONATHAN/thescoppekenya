@@ -17,3 +17,4 @@ Reasons for Removal According to the coalition's statement, these individuals fo
 
 Coalition Dynamics and Future These changes unfold weeks after Kalonzo Musyoka assumed the leadership role of the coalition, following the demise of its former leader, Raila Odinga. Many of those removed from positions within the coalition are members of the Orange Democratic Movement (ODM) party who have recently been affiliated with President William Ruto. Despite these removals, the ODM party has previously declared Azimio inexistent and indicated its intent to formally initiate the process to officially leave the coalition. 
 
+

@@ -17,3 +17,4 @@ Leveraging Technology and Knowledge for Growth The aquaculture sector in Kenya f
 
 Collaborative Efforts for a Stronger Sector The initiatives stem from an ongoing collaboration involving KMFRI, JumboFish Farm, and Norec, focused on enhancing support systems for aquaculture development while promoting youth engagement and gender inclusion. Stakeholders at the conference, including the Lake Victoria Aquaculture Association, highlighted the critical need for stronger collaboration, innovation, and skills development. These concerted efforts are essential to position Kenya as a competitive aquaculture hub in Africa. 
 
+

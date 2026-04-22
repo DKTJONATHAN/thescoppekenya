@@ -15,3 +15,4 @@ Liverpool's Pyrrhic Victories and Lingering Threats For Liverpool, the potential
 
 Youth as Currency: A Zero-Sum Game The notion of academy development has morphed into a zero-sum contest. Young players like Joseph and Abe, barely old enough to vote, are already being weighed, valued, and traded based on perceived potential rather than consistent performance. They are commodities, their 'representatives' negotiating their next move before they've even kicked a ball for a senior team. Inviting a 16-year-old to a rival's training ground isn't an act of hospitality; it's an audition, a sales pitch designed to sever nascent loyalties. This relentless churn prioritizes short-term gain and competitive advantage over the stable, long-term development of individuals, leaving a trail of unfulfilled potential and shattered dreams. 
 
+

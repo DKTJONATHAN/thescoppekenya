@@ -21,3 +21,4 @@ United in Remembrance In a separate video, Esther Njeri was joined by Manzi wa M
 
 Tributes Continue to Pour In While an initial gathering for fans could not fully materialize due to the sensitive nature of the occasion, Manzi wa Mombasa acknowledged the numerous tributes sent in by supporters. She also extended gratitude to individuals like Jude Magambo, who sent a heartfelt message in honour of Chira. Chira’s family and friends remain united in their commitment to keeping his memory alive, continuing to pray for his eternal peace as emotional tributes persist. 
 
+

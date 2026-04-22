@@ -15,3 +15,4 @@ Kenya's Open Borders Versus Nigeria's Restrictions The journalist's criticism st
 
 Calls for Reciprocity Madowo's social media post ignited an online discussion, with many participants calling for Kenya to implement reciprocal visa fees. The public debate urged Kenya to impose similar charges on African countries that continue to require Kenyans to pay for visas when visiting their territories. 
 
+

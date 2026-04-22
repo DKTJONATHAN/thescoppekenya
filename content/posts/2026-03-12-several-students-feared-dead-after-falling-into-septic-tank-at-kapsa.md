@@ -15,3 +15,4 @@ Rescue Efforts and Medical Response Following the collapse, community residents 
 
 Presidential Condolences and Support President Ruto, alerted to the disaster, made an unscheduled stop at the Kapsabet School for the Deaf. He conveyed his profound regret over the tragedy and announced a contribution of Ksh5 million towards infrastructure development at the affected institution. The President's motorcade then proceeded to its original destination at Kapsabet Girls' High School. 
 
+

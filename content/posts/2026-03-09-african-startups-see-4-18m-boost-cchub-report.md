@@ -19,3 +19,4 @@ Empowering Creative Economies CcHUB's approach to creative industries addresses 
 
 Catalyzing Startup Success CcHUB's accelerators and hub networks are instrumental in providing market access and fostering connections for startups. Chpter, a WhatsApp-based business sales and CRM tool, emerged from the Spark Accelerator via iHUB in Kenya, securing key partnerships and raising $1 million. Ecobarter, a plastic recycling platform, gained crucial stakeholder access through the Global Cleantech Innovation Program. Such success stories underscore the profound impact of robust support systems on early-stage ventures. These developments in digital infrastructure and innovation echo the broader commitment to national development, much like the resumed construction of the Ksh11.5B Riruta-Ngong Rail project in Kenya, which similarly aims to bolster connectivity and economic activity. 
 
+

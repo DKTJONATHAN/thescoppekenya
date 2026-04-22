@@ -13,3 +13,4 @@ GIF Growth Investment Details The US$2 million investment from GIF Growth, the g
 
 Impact on East African Lending 4G Capital's ability to secure this investment reflects the increasing demand for accessible financing among micro and small businesses in East Africa. Such capital injections are critical for stimulating local economies, enhancing business resilience, and creating employment opportunities. The focus on women and youth-led businesses aligns with broader development goals aimed at empowering historically underserved segments of the population. This funding positions 4G Capital to strengthen its market presence and address the significant credit gap faced by small enterprises across the region. 
 
+

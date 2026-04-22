@@ -21,3 +21,4 @@ Allegations of Sidelining Unions and Tax Evasion Further criticisms included acc
 
 Public Sector Workers Demand Wage Hikes Atwoli’s remarks coincide with increasing pressure on the Salaries and Remuneration Commission (SRC) regarding new wage demands from public sector workers. The Kenya Independent Commissions Workers Union, representing civil servants from 19 independent commissions, has demanded salary increases ranging from 20 to 50 percent. Citing economic hardship and delayed reviews, the union has issued a 14-day ultimatum for negotiations to commence, warning of potential escalation of labour tensions across critical government institutions if their demands are not addressed promptly. 
 
+

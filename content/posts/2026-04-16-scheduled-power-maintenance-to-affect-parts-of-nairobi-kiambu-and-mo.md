@@ -21,3 +21,4 @@ Kiambu's Highlands See Interruptions Kiambu County, particularly around Limuru a
 
 Mombasa's Industrial Hub Affected The coastal city of Mombasa will also experience power interruption between 9:00 a.m. and 5:00 p.m., specifically impacting parts of Shimanzi and Makande Road. Vital facilities such as Vivo Energy Kenya, East Africa Terminals Limited, Ola Energy Mombasa LPG, East African Storage Company, Gulf Gas Wholesalers, Gas Petro Bulk Limited, as well as the Fire Brigade and Port Fire Station, are among those listed. This scheduled maintenance ensures that even the nation's key logistical hubs maintain optimal operational capacity in the long run. Residents and businesses in the affected areas are advised to plan accordingly, as electricity supply will be temporarily unavailable during the maintenance period. 
 
+

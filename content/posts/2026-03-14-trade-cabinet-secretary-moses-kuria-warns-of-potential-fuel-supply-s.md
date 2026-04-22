@@ -15,3 +15,4 @@ Economic Repercussions and Local Impact The direct consequence of the strait's c
 
 Government Response and Alternative Supplies Daniel Kiptoo, Director General of the Energy and Petroleum Regulatory Authority (EPRA), informed journalists last week that the government is closely monitoring the loading of an oil ship in the Red Sea to mitigate potential shortages. The nation anticipates a delivery later in April. EPRA is actively seeking alternative supplies from India and Oman, with arrivals expected by early April. Kiptoo stressed, “The government will be concerned if the scheduled cargo doesn’t load". 
 
+

@@ -23,3 +23,4 @@ Political Interference Concerns The arrest follows recent allegations by former 
 
 KMPDU's Demands and Unanswered Questions The union has urgently demanded immediate clarification from authorities regarding the circumstances surrounding the arrest and detention of Dr. Obwaka. KMPDU insists that the legal process be strictly followed, including the granting of bail as provided under the constitution. They also urged investigative agencies to exercise restraint and professionalism, ensuring that justice is pursued without intimidation or undue influence. As of this publication, authorities have not issued a statement clarifying the allegations or the refusal to grant bail. 
 
+

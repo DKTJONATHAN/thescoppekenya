@@ -15,3 +15,4 @@ Bolstering Regional Trade This new service further solidifies Mombasa Port's imp
 
 Akkon Line's Role Founded in 2018, Akkon Line is a Turkish shipping company focusing on emerging trade corridors and is considered a significant container shipping operator in Turkey. With its expansion into the East African market, Akkon Line, along with its local partner, Rais Shipping Services, expressed appreciation for KPA's continuous support. They underscored that efficient port operations and smooth customs processes are crucial for sustaining international shipping services. 
 
+

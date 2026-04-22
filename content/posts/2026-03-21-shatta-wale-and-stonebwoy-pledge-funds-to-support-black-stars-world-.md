@@ -21,3 +21,4 @@ Grassroots Campaign for Global Showpiece The fundraising drive underscores a col
 
 Entertainers Champion National Spirit The significant contributions from Shatta Wale and Stonebwoy have garnered widespread attention, highlighting the powerful role entertainers play in fostering national initiatives. Their pledges reinforce public enthusiasm and demonstrate a united front as Ghana prepares for the prestigious global football showpiece. This collaborative spirit exemplifies the vibrant engagement between Ghana's cultural icons and its passionate football fanbase. 
 
+

@@ -21,3 +21,4 @@ Digital Aftermath and Historical Roots The incident rapidly escalated from the p
 
 Industry and Public Reactions Online reactions to the latest incident have been sharply divided. Some observers have criticised Akindele for what they perceive as a public display of disrespect towards a colleague. Others have defended her right to personal boundaries, arguing that forced cordiality serves no one. Toyin Abraham, in contrast, has garnered widespread praise for her composed handling of the moment in real time. The events of Sunday night, March 29, 2026, have effectively reset any goodwill previously established between the two Nollywood giants, leaving the industry to speculate on the future of their tumultuous relationship. 
 
+

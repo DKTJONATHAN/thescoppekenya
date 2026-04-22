@@ -23,3 +23,4 @@ SMS Service for Accessibility For individuals without internet access or smartph
 
 Direct Assistance through Calls and Service Centres Applicants seeking direct assistance can contact NTSA officials by calling 0709-932-000. Additionally, visiting an NTSA service centre remains an option for those who prefer in-person verification. Applicants must carry their identification documents. NTSA officers at these centres can provide detailed updates, resolve issues, and guide motorists on subsequent steps if delays or missing requirements are identified. The NTSA's main office is situated at 316 Upper Hill Chambers, along Second Ngong Avenue in Nairobi, and operates during official working hours from Monday to Friday. 
 
+

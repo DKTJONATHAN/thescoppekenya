@@ -21,3 +21,4 @@ Celebrity Reactions and Integrity Concerns The football world, including a host 
 
 Senegal Vows to Fight On The Senegalese federation has unequivocally vowed to challenge CAF's decision, with a potential appeal to the Court of Arbitration for Sport (CAS). Analysts warn that this controversial ruling could deepen existing divisions within African football, especially given ongoing concerns about officiating and governance in the sport. With Senegal determined to appeal and fans demanding clarity, this dramatic saga is far from its conclusion. Morocco may be champions for now, but the football world awaits the next shocking turn in what has become one of AFCON's most turbulent histories. 
 
+

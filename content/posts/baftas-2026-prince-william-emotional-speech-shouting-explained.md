@@ -16,3 +16,4 @@ BAFTAs 2026 Red Carpet Shouts: Fashion Fails & Fabulosity! And the fashion, oh t
 
 BAFTAs 2026 Backstage Whispers: Snubs and Surprises! The night had its share of upsets, too! Robert Aramayo snatching Best Leading Actor from Hollywood heavyweights like Leonardo DiCaprio and Timothée Chalamet was a genuine shocker for his role as Tourette syndrome campaigner John Davidson in 'I Swear'. Apparently, Ethan Hawke was ever so gracious backstage, congratulating him heartily. But honestly, the biggest "shout" of discontent came from viewers at home when the 'In Memoriam' segment missed out on some huge stars like James Van Der Beek and Eric Dane, who sadly passed away recently. You'd think they'd double-check that list, wouldn't you? What a oversight! 
 
+

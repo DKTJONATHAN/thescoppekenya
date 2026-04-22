@@ -19,3 +19,4 @@ A Life of Impact and Legacy Norris, who celebrated his 86th birthday just a week
 
 Recent Health Update Prior to the family's announcement, reports indicated Norris had been hospitalized following an emergency on the island of Kauai within the last 24 hours. While the exact nature of the emergency remained undisclosed, sources noted the actor was in "good spirits" at the time. This news came shortly after an Instagram post from Norris himself, marking his 86th birthday, where he shared a video of himself sparring with his trainer, thanking fans for their constant support. 
 
+

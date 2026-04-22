@@ -26,3 +26,4 @@ Crusaders' Conundrum and the Number 10 Battle Back to the Super Rugby, and the C
 
 Sevens Sizzling and Olympic Aspirations Finally, a quick nod to the sevens circuit. The New Zealand teams reigned supreme in the first leg of the 2025/26 HSBC SVNS series. Proper dominance, that. But a stark reminder of the brutal nature of sport comes with Sarah Hirini’s story. At the peak of her career at the start of the 2024 season, brimming with Olympic optimism, only for a devastating knee injury to jeopardise her Paris aspirations. Is there enough time to recover? We’re all rooting for her, Mate. What a weekend for rugby, full of highs, lows, and plenty of talking points! 
 
+

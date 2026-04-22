@@ -19,3 +19,4 @@ Pathways to Rehabilitation Despite operational hurdles, Pollsmoor Prison activel
 
 Post-Release Support and Reintegration The long-term impact of Pollsmoor's rehabilitation extends into post-release support. Wesley Leong, who was incarcerated in 1996, is a notable example, now actively involved in Restore's research and reintegration project in 2026. Similarly, Thabo Mthembu, incarcerated from 2014 to 2019, has contributed to broader societal understanding through his published stories and poetry. Current initiatives in South Africa are focused on helping former prisoners find employment, reflecting a national commitment to second chances across Mzansi. These efforts align with regional approaches to vocational development, such as the HELB training revolving fund in Kenya, which empowers individuals for career advancement within the civil service, demonstrating a Pan-African drive towards skill enhancement and reintegration. 
 
+

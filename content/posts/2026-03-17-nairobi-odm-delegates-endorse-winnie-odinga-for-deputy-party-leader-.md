@@ -21,3 +21,4 @@ Aladwa Endorsed for Secretary-General In the same session, Nairobi ODM delegates
 
 Shifting Political Alignments The endorsement of Winnie Odinga marks her first public alignment with the Oburu-Odinga-aligned faction, after previously appearing at odds with the camp. In January, during a rally in Kamkunji, Odinga publicly contradicted statements by party leader Oburu Odinga concerning members who wished to leave ODM. She insisted that no one should be removed, stating that the party belongs to the people. Odinga previously appeared to align with the younger generation within ODM, including a splinter faction allied to Linda Mwananchi, Sifuna, and Babu Owino. However, following a family meeting convened by her uncle Oburu in February, she has largely moderated her public statements and maintained a lower profile in party affairs. 
 
+

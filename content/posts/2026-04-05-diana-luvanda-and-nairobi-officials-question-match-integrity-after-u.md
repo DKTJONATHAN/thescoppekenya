@@ -21,3 +21,4 @@ Nairobi Officials Echo Concerns Nairobi officials have swiftly joined Luvanda in
 
 The Unpunished Blow and Its Aftermath At the heart of the controversy lies an alleged illegal blow that, according to numerous eyewitnesses and slow-motion replays, was delivered during a pivotal moment of the Vurugu Fight Night. The failure of the match officials to penalize the fighter responsible has sparked outrage among spectators and experts alike. This oversight has not only cast a shadow over the immediate outcome of the fight but has also raised uncomfortable questions about the officiating standards and oversight within the local boxing scene in 2026. The incident risks tarnishing the reputation of what was intended to be a premier fighting spectacle. 
 
+

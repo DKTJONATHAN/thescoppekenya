@@ -16,3 +16,4 @@ The Drama of the High Court Declining to Stop the Sale: Petitions, Politics, and
 
 Lingering Questions About the Kenya Pipeline Company's Future So, the High Court has declined to stop the sale, and the government is chuffed, saying safeguards are in place for consumer interests and national security. They insist the existing regulatory framework will keep everything tickety-boo. But, honestly, even with the court giving its blessing, there are still whispers about what this really means for the future of the Kenya Pipeline Company. What about the hard-working staff? Will efficiency *really* improve, or will it just mean more profit for a select few? (Just asking!) And despite the court saying public participation was adequate, some are still grumbling it wasn't enough. It’s all a bit murky, isn't it? You can bet your bottom dollar we'll be keeping our eyes peeled for any more juicy details as this story unfolds! 
 
+

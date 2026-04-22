@@ -21,3 +21,4 @@ Enhanced University Funding The education sector also benefits from substantial 
 
 Institutional Stability Strengthened Further investments include Ksh 6 billion earmarked for higher education institutions, notably Moi University and Kabarak University. An allocation of Ksh 1.5 billion has also been directed to the University Funding Board, aimed at bolstering institutional stability across the higher education landscape. 
 
+

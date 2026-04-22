@@ -19,3 +19,4 @@ Details of the 2015 Ambush The court heard that the accused were involved in the
 
 Decade-Long Legal Battle The case has spanned over a decade to conclude, involving numerous court appearances, witness testimonies, and legal arguments from both the prosecution and defense teams. During the trial, prosecutors presented evidence linking the convicts to a series of coordinated robberies carried out in Nairobi around the same period. The court noted that these attacks shared similar characteristics, including the use of firearms, the number of attackers, and the method of execution, which strengthened the case against the accused. The judgment comes after a long legal process, with convictions announced on March 13, 2026, and sentencing scheduled for April 9, 2026. 
 
+

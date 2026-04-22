@@ -19,3 +19,4 @@ Balance Sheet Dynamics and Capital Strength Total assets contracted by 5.5% to K
 
 Shareholder Returns and Leadership Transition The bank's payout ratio reached a record 95%, extending a dividend streak spanning at least 38 consecutive years. The FY2025 dividend per share (DPS) of KSh 31.00 is the second-highest in the bank's history, following FY2024. Outgoing Managing Director Kariuki Ngari will transition leadership to Birju Sanghrajka. 
 
+

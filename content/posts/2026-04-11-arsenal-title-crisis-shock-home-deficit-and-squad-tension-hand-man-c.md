@@ -23,3 +23,4 @@ Bournemouth's Resilient Performance Bournemouth, meanwhile, has shown remarkable
 
 The Looming Decider With Arsenal failing to secure a convincing performance today, the upcoming clash against Manchester City becomes an even more pivotal moment in the Premier League season. The psychological advantage shifts, and Arsenal must quickly regain their composure and attacking fluency to challenge a City side poised to capitalize on any further slip-ups.
 
+

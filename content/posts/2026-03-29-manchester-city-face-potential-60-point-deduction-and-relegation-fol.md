@@ -15,3 +15,4 @@ A Journalist's 'Revelation' Remember when Pep Guardiola confidently predicted a 
 
 The Pointless Deduction and Inevitable Appeals A 60-point deduction would undoubtedly doom City to relegation, leaving them on a solitary point with only eight matches remaining. Former Everton CEO Keith Wyness, a man who has vocally followed City's charges, stated such a penalty "would make sense." However, he also shrewdly pointed out the near certainty of an appeal, which would likely reduce any initial sanction. This suggests that even if a severe punishment is handed down, the actual consequences will be further diluted through legal challenges. It's a system designed to soften the blow for the powerful, ensuring that the spectacle of justice often overshadows the substance. The Premier League's credibility hangs in the balance, and this ongoing drama only serves to underscore the deep-seated skepticism regarding fair play at the highest levels of the game. 
 
+

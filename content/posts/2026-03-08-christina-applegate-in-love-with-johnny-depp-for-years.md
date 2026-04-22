@@ -15,3 +15,4 @@ Unrequited Feelings and On-Set Visits Despite an eight-year age difference, Appl
 
 Depp's High-Profile Romance During this period of Applegate's infatuation, Johnny Depp's dating life was making headlines. His timeline suggests he was romantically involved with his *Edward Scissorhands* co-star, Winona Ryder. While Applegate's heart was set on Depp, his focus was elsewhere in Hollywood's spotlight. Applegate eventually found lasting love, marrying musician Martyn LeNoble in 2013, with whom she shares a daughter, following her divorce from actor Johnathon Schaech in 2007. 
 
+

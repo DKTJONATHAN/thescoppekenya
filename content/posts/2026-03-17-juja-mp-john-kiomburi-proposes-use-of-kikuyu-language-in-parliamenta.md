@@ -19,3 +19,4 @@ Constitutional Framework and Current Practice The Constitution of Kenya, under A
 
 Demographic Context According to the Kenya National Bureau of Statistics (KNBS) 2019 census, the Kikuyu community represents the largest ethnic group in the country, constituting approximately 17 to 22 percent of the population, with over 8 million individuals. They predominantly reside in Central Kenya and are classified as a Bantu ethnic group. Following the Kikuyu, the Luhya community has over 7 million speakers, the Kalenjin over 6 million, and the Luo just above 5 million speakers across the nation. The success of Juja MP Kiomburi's motion in the Kenyan Parliament remains to be seen. 
 
+

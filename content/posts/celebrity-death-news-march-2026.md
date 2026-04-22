@@ -19,3 +19,4 @@ Beyond the Headlines: The Human Cost of Celebrity Death These losses remind us t
 
 Remembering Their Legacies Amidst the Death News As the entertainment world mourns these significant losses, the collective memory of their contributions and the impact they had on their audiences remains. Each celebrity death leaves a void, but their legacies in film, music, sports, and advocacy will undoubtedly continue to inspire and resonate for generations to come. Fans and colleagues alike are sharing heartfelt tributes, ensuring that the light these stars brought into the world will not fade. 
 
+

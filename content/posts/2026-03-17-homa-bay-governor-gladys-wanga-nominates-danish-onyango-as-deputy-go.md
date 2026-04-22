@@ -21,3 +21,4 @@ Filling a Vacancy The position of deputy governor became vacant in late February
 
 Further County Appointments In addition to Onyango's nomination, Governor Wanga announced other key appointments and reassignments. Elijah Obiny Dede was nominated to head the Trade, Industry, Tourism, Marketing and Co-operative Development docket. Isaac Victor Ongiri was nominated to serve as the County Executive Committee Member for Governance, Administration, Communication and Devolution. Joash Aloo, previously overseeing Trade, was reassigned to the Agriculture, Irrigation and Livestock Development docket. Governor Wanga has directed the county secretary to ensure a smooth transition and handover process for all dockets, emphasizing that all nominees meet the integrity requirements outlined in Chapter Six of the Constitution. The nominations for the County Executive Committee members are also subject to approval by the Homa Bay County Assembly. 
 
+

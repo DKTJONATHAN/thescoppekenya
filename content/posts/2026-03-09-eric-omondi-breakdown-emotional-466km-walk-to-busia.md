@@ -15,3 +15,4 @@ Legacy Carried Forward Fred Omondi, also a respected comedian, tragically passed
 
 Walking for a Cause Omondi’s 466-kilometre trek from Nairobi to Busia is no mere stroll; it is an ambitious five-day charity walk designed to raise vital funds for the Sisi Kwa Sisi Help and Rescue Centre. This initiative aims to provide free healthcare and education to vulnerable Kenyans, a project partly inspired by the memory of loved ones Omondi has lost. Despite the considerable physical strain, his commitment remains unwavering. Earlier in February 2026, he completed another massive charity walk, covering approximately 486 kilometres to Mombasa to rally support for the very same foundation. As he rose from the rain-soaked grave and pressed on towards Busia, Eric Omondi's journey became more than just distance; it's a powerful statement of remembrance, healing, and transforming personal pain into hope for many others across the nation. 
 
+

@@ -15,3 +15,4 @@ Kelly Ripa's Enduring Affection Kelly Ripa, Mark's wife of nearly 30 years, also
 
 A Family's Grief and Resilience The passing of Saul Consuelos marks the first significant loss for Mark and Kelly's three children, who are deeply affected by their grandfather's death, despite still having three surviving grandparents. Mark shared that he was "thankfully able to get down there and say goodbye" to his father. This was despite his ongoing rehearsals for his upcoming starring role in the Broadway play *Fallen Angels*, which began performances on March 27, 2026. He found the play's rehearsals to be a "welcome distraction" during a difficult time. The family is now rallying to support Mark's mother, attempting to convince her to relocate to New York. 
 
+

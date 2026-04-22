@@ -21,3 +21,4 @@ Skills and Opportunities Through its structured programs, the NYS equips recruit
 
 Application Process The advertised private posts encompass diverse fields such as drivers, plant operators, electricians, carpenters, plumbers, band members, agricultural workers, secretaries, vehicle mechanics, welders, and general duty personnel. Prospective applicants must download and complete the official Application for Employment Form, available on the Public Service Commission website. Submissions can be made via email or delivered by post to the NYS Commandant General at the National Youth Service Headquarters in Nairobi. The final deadline for application submission is March 18, 2026. 
 
+

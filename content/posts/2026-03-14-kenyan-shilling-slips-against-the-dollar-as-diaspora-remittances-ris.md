@@ -17,3 +17,4 @@ Diaspora Remittances Rebound February 2026 saw diaspora remittances climb to Ksh
 
 Foreign Exchange Reserves and Global Inflation Kenya's foreign exchange reserves demonstrate a steady position, standing at Ksh1.8 trillion (USD 14,461 million) as of March 12, 2026, equivalent to 6.2 months of import cover. This comfortably exceeds the CBK's statutory minimum threshold of four months. Reserves had momentarily spiked to Ksh1.89 trillion (USD 14,597 million) the previous week before easing slightly. Globally, inflation concerns persisted during the week, impacting market sentiment. Volatility in international oil prices, primarily linked to the ongoing Middle East conflict, kept markets on edge. Murban crude oil prices surged to Ksh11,916 (USD 92.13) per barrel on March 12, up from Ksh9,862 (USD 76.25) just a week prior. 
 
+

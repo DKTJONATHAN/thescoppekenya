@@ -21,3 +21,4 @@ Escalating Regional Tensions The disruption occurs amidst heightened tensions in
 
 Impact on East African Travellers and Logistics The flight suspension introduces significant uncertainty for East African travellers in Dubai. The United Arab Emirates hosts a substantial diaspora population, with many employed in vital sectors such as aviation, hospitality, healthcare, construction, and domestic work. While some individuals from the region were successfully repatriated in early March, hundreds remain in Dubai, with emergency flights now disrupted. Travellers are advised to contact their respective airlines for updates, and some flights have been diverted to Al Maktoum International Airport (DWC) as a temporary alternative. 
 
+

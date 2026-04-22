@@ -21,3 +21,4 @@ Withdrawal Timeline and Mission Losses When questioned about a full withdrawal, 
 
 Funding and Historical Context U.S. Secretary of State Marco Rubio stated last month that personnel commitments for the Gang Suppression Force are robust, but acknowledged that donor funding remains a work in progress, with Washington actively seeking contributions to close existing financial gaps. Kenya's involvement in Haiti dates back to 2023, when it became the sole nation willing to lead the mission after Canada declined, and Caribbean governments initially insisted Haiti's own police force should manage the crisis without external military intervention. The mission was designed to field approximately 2,500 personnel; however, at its peak, only about 1,100 officers were ever deployed, falling short of what security analysts deemed necessary to significantly disrupt gang operations. 
 
+

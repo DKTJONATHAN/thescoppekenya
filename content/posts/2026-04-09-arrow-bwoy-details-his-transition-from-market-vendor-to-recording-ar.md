@@ -23,3 +23,4 @@ Building Utembe World In 2019, Arrow Bwoy made a significant move by going indep
 
 A Global African Beat Today, Arrow Bwoy is recognized for his distinctive fusion of high-energy Dancehall and smooth Afrobeats. His versatility allows him to bridge the gap between local Kenyan vibes and international appeal, leading to collaborations with major artists like Mayorkun from Nigeria, Demarco from Jamaica, and Voltage from Uganda. Much like other African artists who make an impact beyond national borders, Arrow Bwoy's global reach continues to expand. Through consistent releases and his signature "lover boy" dancehall persona, Arrow Bwoy remains a dominant and dynamic force in the African music landscape as of 2026. 
 
+

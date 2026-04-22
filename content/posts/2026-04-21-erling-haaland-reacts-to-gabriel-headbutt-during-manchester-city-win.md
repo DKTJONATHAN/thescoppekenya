@@ -15,3 +15,4 @@ VAR's Continuous Comedy of Errors The Premier League's statement that Gabriel's 
 
 Arsenal's Self-Inflicted Wounds While the focus might be on refereeing blunders, Gabriel's lack of discipline in a high-stakes encounter is inexcusable. To engage in such an unnecessary confrontation, particularly when already having been cautioned, smacks of a side buckling under pressure. These moments of individual indiscretion contribute directly to the "bottle job" narrative that haunts Arsenal. In a title race where margins are microscopic, self-inflicted wounds like this-whether punished correctly or not-speak volumes about a team's composure, or rather, the distinct lack thereof. 
 
+

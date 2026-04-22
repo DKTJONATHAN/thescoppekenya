@@ -21,3 +21,4 @@ Supporting Infrastructure and Training To ensure a smooth transition, KNH has re
 
 Addressing Current Challenges The rollout of the digital system comes as KNH addresses existing patient concerns regarding service delays, technical failures within the Social Health Authority (SHA), and patient congestion. There have been previous reports of cancer patients experiencing waits exceeding three days for treatment due to system failures, with many expressing frustration over hospital services. This new digital infrastructure aims to mitigate such issues by fostering a more efficient and responsive healthcare environment. 
 
+

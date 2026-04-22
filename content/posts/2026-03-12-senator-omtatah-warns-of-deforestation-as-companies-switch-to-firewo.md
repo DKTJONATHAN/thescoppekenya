@@ -19,3 +19,4 @@ Accountability and Regulatory Scrutiny The senator is demanding that the governm
 
 Call for Government Action Senator Omtatah emphasized that existing legal frameworks, including the Forest Conservation and Management Act and the Environmental Management and Coordination Act, are robust enough to effectively regulate industrial biomass use. He is now pressing the government to outline the urgent steps it is taking to prevent what he described as a looming environmental crisis, driven not by poverty but by large corporations seeking to cut operational costs. 
 
+

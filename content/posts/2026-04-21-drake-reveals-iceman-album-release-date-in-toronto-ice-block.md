@@ -31,3 +31,4 @@ Drake's forthcoming solo album, *Iceman*, is scheduled for release in 2026 under
 
 Musically, the album is anticipated to address Drake's ongoing rivalry with Kendrick Lamar. Lamar's diss track 'Not Like Us' previously led to a defamation lawsuit against Universal Music Group, which was ultimately dismissed. In March 2025, Drake himself offered a characteristically cryptic tease regarding the project, stating, "I understand that this next chapter may leave you feeling uneasy, but I hope you see my honesty as clarity, not charity."
 
+

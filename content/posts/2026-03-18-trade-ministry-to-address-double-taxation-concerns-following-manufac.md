@@ -21,3 +21,4 @@ Calls for Policy Review In response to these challenges, manufacturers urged for
 
 Government Engagement and Way Forward The Ministry of Trade has vowed to address the concerns, emphasizing broader stakeholder engagement. Erastus Gatebe, an official from the State Department for Industry, stated that the government would collaborate with the Kenya Revenue Authority (KRA) and the Kenya Ports Authority (KPA) to eliminate existing regulatory gaps. The Ministry will also engage with NEMA and officers from the Kenya Trade Network Agency to re-evaluate the Ksh150 fee on imported packaging items. Manufacturers have been requested to submit detailed proposals to the Ministry of Trade to inform future policy decisions. 
 
+

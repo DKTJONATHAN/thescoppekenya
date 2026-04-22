@@ -23,3 +23,4 @@ Assurances on Fuel Pricing Stability Amid public concerns about potential fuel p
 
 Enhanced Quality Control Measures Mandatory quality tests are being conducted on the imported cargo, with results to be publicly disclosed. Omar emphasized that no testing protocols would be waived, stating that "There will be no waiver of such testing protocols as any such actions will amount to broad negligence and unacceptable dereliction of duties". 
 
+

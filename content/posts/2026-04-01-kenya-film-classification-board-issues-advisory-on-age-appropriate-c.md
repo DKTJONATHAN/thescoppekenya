@@ -23,3 +23,4 @@ Public Reporting and Digital Literacy Initiatives The public is encouraged to re
 
 Collective Responsibility for Child Protection The board emphasized that protecting children from exposure to inappropriate content is a collective responsibility. This calls for cooperation among parents, entertainment operators, and regulatory bodies to ensure a safe digital environment for minors. 
 
+

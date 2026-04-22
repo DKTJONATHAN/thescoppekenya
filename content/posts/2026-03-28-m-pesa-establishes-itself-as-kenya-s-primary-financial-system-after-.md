@@ -17,3 +17,4 @@ Bank Integration and Evolving Ecosystem Rather than a "war," a collaborative tru
 
 Branches Evolve, Not Disappear Despite 94-99% of bank transactions occurring outside physical branches, brick-and-mortar locations have not vanished. Instead, they have evolved into high-value hubs. Routine micro-transactions, such as airtime purchases and balance checks, have largely shifted to mobile handsets. Branches now concentrate on substantial financial movements, complex documentation, and high-trust advisory services, with the floor for a typical branch transaction estimated at KES 50,000 or more. For instance, a single branch visit for Equity is equivalent to 71 transactions on Equitel, underscoring the transformed role of physical banking infrastructure. 
 
+

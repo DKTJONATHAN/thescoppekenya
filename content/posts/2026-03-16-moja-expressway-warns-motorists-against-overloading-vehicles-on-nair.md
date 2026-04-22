@@ -21,3 +21,4 @@ Safety and Infrastructure Concerns Overloaded vehicles significantly disrupt the
 
 Penalties for Non-Compliance Motorists found overloading vehicles face severe repercussions. MOJA Expressway stated that carrying passengers in excess of legal capacity is strictly prohibited. Beyond immediate dangers, persistent infractions like overloading could lead to a ban from using the expressway, an action that would prove costly to overturn. 
 
+

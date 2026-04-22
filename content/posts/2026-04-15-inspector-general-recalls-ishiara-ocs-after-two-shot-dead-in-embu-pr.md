@@ -21,3 +21,4 @@ Protests Erupt Over Hospital Services The deadly clashes on Tuesday, April 14, 2
 
 Investigations Underway Following the incident, angry residents reportedly transported the bodies of the victims and deposited them outside the Ishiara Police Station as tensions mounted. The NPS had issued a statement earlier today suggesting that officers were compelled to use force after protesters allegedly threatened their safety with crude weapons. Detectives from the Directorate of Criminal Investigations (DCI) headquarters have been dispatched to conduct thorough investigations. Concurrently, the Independent Policing Oversight Authority (IPOA) has launched its own independent inquiry into the matter. Authorities have urged Mbeere North residents to remain calm, assuring the public that accountability for the incident will be exercised and that the Service will offer maximum cooperation to the independent oversight body. 
 
+

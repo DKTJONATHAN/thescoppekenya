@@ -15,3 +15,4 @@ Free Agent, Free From Burden Fabrizio Romano's confirmation that Salah will leav
 
 The Farewell Tour's PR Spin Salah's statement on X and Liverpool's official announcement are textbook exercises in reputation management. The carefully crafted words about "respect and gratitude" and providing "transparency" about his future ring somewhat hollow after a season defined by public friction and a clear dip in quality. This isn't a selfless act of transparency; it's a calculated move to control the narrative surrounding an exit that, for Liverpool, is as much about strategic rebuilding as it is about celebrating past glories. The "nine-year chapter" ends not with a bang, but with a quiet, mutually agreed-upon severance package designed to save face for all involved. 
 
+

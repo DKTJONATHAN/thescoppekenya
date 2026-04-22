@@ -23,3 +23,4 @@ Forensic Verification A critical step in the process involves forensic analysis 
 
 Legal Implications Under Kenya's narcotics laws, the determined valuation holds substantial weight, influencing the extent of charges and potential penalties. Courts consider the market value of the drugs when determining sentences, reflecting the overall scale of the illegal drug trade. This structured approach by the DCI not only bolsters investigations and prosecutions but also informs the public about the magnitude of illicit drug operations. 
 
+

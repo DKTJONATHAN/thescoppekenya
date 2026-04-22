@@ -19,3 +19,4 @@ Sauti Sol's Lasting Legacy and Bien's New Chapter Sauti Sol, a group synonymous 
 
 A Nod from a Bongo Star Harmonize's praise, offered during his appearance for the Old School Bongo event, carries significant weight in regional music circles. Known for his own dynamic career and command of the Bongo Flava genre, Harmonize recognized the sheer fortitude required to maintain such a high level of performance and public adoration independently. This cross-border acknowledgement underscores the respect and camaraderie among top East African musicians, a vibrant community where Kenyan celebrities continue to shine brightly, even potentially eyeing international opportunities. 
 
+

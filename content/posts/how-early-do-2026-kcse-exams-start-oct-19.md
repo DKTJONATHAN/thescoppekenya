@@ -17,3 +17,4 @@ Second Week Intensifies with Core Subjects The second week of examinations will 
 
 Final Stretch and Conclusion The final segment of the examinations will commence on Monday, November 16, with a Geography paper, followed by the first Physics paper from 2 p.m. to 4 p.m. On Tuesday, November 17, candidates will sit for Business Studies examinations, with Agriculture following in the afternoon, each paper taking two hours. Wednesday, November 18, will see the second Geography paper, followed by the second Physics paper in the afternoon. Candidates undertaking Agriculture and Business Studies will complete their second papers on Thursday, November 19. The 2026 KCSE examinations will officially conclude on Friday, November 20, with a Physics practical session, lasting two hours and 30 minutes for each student.
 
+

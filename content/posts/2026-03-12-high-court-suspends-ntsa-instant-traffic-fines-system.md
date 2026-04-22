@@ -15,3 +15,4 @@ Court Enjoins Bank, Sets Timelines The court, on its own motion, enjoined a spec
 
 Rationale Behind NTSA System The instant fines system, introduced under the Traffic, Minor Offences, and Rules of 2016, had mandated motorists committing minor traffic violations to pay prescribed fines instantly. This was intended to bypass lengthy court processes. According to the NTSA, the system was designed to decongest courts, improve enforcement efficiency, and encourage responsible road use across the country. 
 
+

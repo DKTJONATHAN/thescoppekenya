@@ -15,3 +15,4 @@ Starlink's Direct-to-Cell Expansion and Market Impact Starlink, operational in K
 
 Regulatory Evolution and Industry Shifts The regulatory adjustments stem from proposals initiated in December 2024, following Starlink's entry which disrupted Kenya's broadband market. Initially, Safaricom petitioned the CA to revoke Starlink's license due to concerns about illegal connections and network interference. However, Safaricom has since shifted its stance, now exploring collaboration with Starlink's network to extend its reach into remote areas. These policy reforms also extend to satellite broadcasters such as MultiChoice and regional mobile operators utilizing satellite infrastructure, indicating a comprehensive recalibration of the market. This regulatory overhaul echoes the need for adapting to evolving technological landscapes, much like the ongoing initiatives to modernize infrastructure access, as seen with Kenya Power's digital meter reading system. 
 
+

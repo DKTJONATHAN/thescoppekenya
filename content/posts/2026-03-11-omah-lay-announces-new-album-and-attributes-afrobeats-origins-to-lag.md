@@ -17,3 +17,4 @@ Challenging Port Harcourt Representation Omah Lay also contended that only he an
 
 The Album Release Amidst Dialogue The ongoing dialogue sparked by Omah Lay's statements has undeniably amplified conversations around "Clarity of Mind." While some suggest the comments might be a strategic move to generate buzz, the discussions themselves underscore the profound connection between music, identity, and ethnicity across Africa. As April 3 approaches, fans globally eagerly await the release of "Clarity of Mind," curious to experience the latest offering from an artist who consistently keeps Pan-African culture at the heart of his creative expression. 
 
+

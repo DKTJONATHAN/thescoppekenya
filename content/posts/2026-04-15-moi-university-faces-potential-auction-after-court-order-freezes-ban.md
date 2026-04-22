@@ -21,3 +21,4 @@ Last-Minute Plea for Deferral In a last-minute effort, Moi University has pleade
 
 Unanswered Questions on Previous Bailouts The current financial distress surfaces despite multiple government interventions aimed at stabilizing the institution. In January 2025, the National Treasury provided KSh500 million in emergency funding to ease cash flow and support salary payments. This followed a KSh1.8 billion allocation in the 2024/2025 supplementary budget. Earlier in 2025, the university also received KSh1.5 billion to clear staff salaries and pending arrears. These substantial previous bailouts raise critical questions about how Moi University has once again found itself in such severe financial jeopardy. This recurring challenge underscores the complex financial landscape facing public institutions in Kenya, even as the country identifies over $700 million in waste sector opportunities through a new investment prospectus. 
 
+

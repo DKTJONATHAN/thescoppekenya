@@ -23,3 +23,4 @@ Navigating the Political Currents Taking over at this juncture means Dr. Oburu m
 
 Charting the Course Ahead As the newly minted Party Leader, Dr. Oburu's immediate focus will likely involve revitalizing the party’s grassroots structures and overseeing ongoing nationwide recruitment drives. The political climate in Kenya is ever-shifting, and his leadership will face its first major test as he prepares the "Orange Machine" for the battles that lie ahead. The Odinga name undeniably remains the central gravity of ODM politics, and Dr. Oburu is now the man steering that enduring legacy. 
 
+

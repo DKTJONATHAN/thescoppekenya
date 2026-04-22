@@ -21,3 +21,4 @@ Areas Under High Alert Other estates downstream of the Nairobi Dam are also on h
 
 Government Monitoring and Weather Outlook Government Spokesperson Isaac Mwaura had previously informed the public ten days prior, around March 11, 2026, that authorities were closely monitoring water levels at the Nairobi Dam. Technical assessments of the reservoir were underway at that time to evaluate risks posed by rising water. The Kenya Meteorological Department, on Saturday, March 21, 2026, issued a new warning forecasting moderate to heavy showers and isolated thunderstorms across the Nairobi metropolitan area. Rainfall in the metropolis could surpass 20 mm within 24 hours, with Dagoretti, Kibra, parts of Embakasi, and Lang’ata-where the dam is located-expected to experience heavier precipitation pockets. On Friday, March 20, 2026, heavy rains led to significant flooding along Moi Avenue and Mombasa Road, though no fatalities were reported. 
 
+

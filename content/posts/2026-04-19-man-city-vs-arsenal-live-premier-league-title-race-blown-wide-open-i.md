@@ -23,3 +23,4 @@ City's Etihad Fortress and Arsenal's Recent Struggles Manchester City's home adv
 
 Key Players and Season Performances Individual brilliance often dictates such encounters. Nico O'Reilly has emerged as a key figure for Manchester City, scoring six goals in all competitions since the start of February, including both goals in their EFL Cup final victory over Arsenal. Rayan Cherki's impressive season also continued, averaging an assist every 138 minutes in the Premier League, with 10 assists in 1,384 minutes played. For Arsenal, Eberechi Eze has consistently troubled City, contributing to goals in each of his last three appearances against them, notably assisting Gabriel Martinelli’s 90th-minute equaliser in the reverse fixture.
 
+

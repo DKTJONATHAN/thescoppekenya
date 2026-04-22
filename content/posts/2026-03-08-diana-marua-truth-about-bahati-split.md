@@ -15,3 +15,4 @@ From Gospel to Global Brand Bahati Kioko's journey from a multi-award-winning go
 
 Future Forward With millions of followers avidly tracking their every move, Diana and Bahati have meticulously built a massive digital empire. Diana’s latest message is a clear and resounding statement, firmly presenting a united front against any lingering whispers of discord. Her tribute concludes with an optimistic look towards their future, signing off with a definitive "Cheers to Celebrating a Decade with you! Forever to go." It appears this beloved couple is set on proving that their love story is indeed one for the ages. 
 
+

@@ -21,3 +21,4 @@ Details of the Acid Attack Kenyan gospel singer Claire-Mary, a member of the Red
 
 Legal Proceedings and Past Reports Elvis Opiyo, identified as Claire-Mary's estranged former partner, was arraigned at Kibera Law Courts on March 23, 2026. He is accused of orchestrating the acid attack by hiring an assailant, allegedly after Claire-Mary ended their eight-year relationship. Investigations indicate that Claire-Mary had previously reported Opiyo to the police in November 2025 for assault and death threats. Reports also link Opiyo to another assault dating back to November 25, 2025. Sonko has pledged to facilitate expert legal counsel and cover both Claire-Mary's legal fees and hospital bills for the ongoing case. 
 
+

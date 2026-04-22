@@ -21,3 +21,4 @@ Disputed Past Accusations and Amplified Damage The legal notice also addressed a
 
 Unresolved Standoff and Demands The legal notice further alleges that Standard Group abandoned basic journalistic standards, proceeding with the story without verifying facts or allowing the senator an opportunity to respond to the allegations. Senator Chesang is demanding the immediate removal of both the newspaper article and the KTN broadcast from all platforms, including their website and active social media channels. As of March 20, 2026, Standard Group PLC has not issued a public response to the senator's demands, leaving the situation unresolved. 
 
+

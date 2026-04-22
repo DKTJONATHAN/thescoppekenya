@@ -15,3 +15,4 @@ Social Media Power Play In the dynamic world of social media, Alfayo Siwo unders
 
 Influencer Impact in the Digital Arena The release of Alfayo Siwo's professional rate card highlights a growing trend in Kenya's digital landscape. As social media continues to shape consumer behavior, influencers are increasingly seen as valuable partners for advertising and brand promotion. This transparency streamlines negotiations, ensuring potential partners have a clear understanding of collaboration costs upfront. Just as metrics help us understand the legacy of music icons, such as how [Wizkid is ranked best by ChartMasters' metrics](https://zandani.co.ke/article/wizkid-ranked-best-chartmasters-metrics-africa-music-legacy), a public rate card offers clear metrics for an influencer's market value in 2026. This professional approach positions creators not only as entertainers but as essential players in expanding business reach online. 
 
+

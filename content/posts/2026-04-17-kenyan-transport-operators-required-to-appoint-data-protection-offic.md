@@ -17,3 +17,4 @@ Impact Across the Transport Ecosystem These new guidelines affect the entire tra
 
 Addressing Systemic Data Vulnerabilities Currently, many transport firms lack the necessary infrastructure for passengers to easily access, rectify, or erase their personal information. This systemic deficiency leaves companies susceptible to significant data rights violations. The mandatory DPO aims to rectify these gaps, ensuring better data governance and safeguarding individual privacy within the sector. Such regulatory advancements align with Kenya's broader efforts in digital governance, including initiatives like the proposed Kenya Senate bill to establish an AI Commissioner and regulatory framework. 
 
+

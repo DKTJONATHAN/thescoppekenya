@@ -23,3 +23,4 @@ Government Intervention on Fuel Prices Treasury Cabinet Secretary John Mbadi ini
 
 Operators Cite Operational Uncertainty The earlier spike in fuel prices had already triggered a 25 percent increase in matatu fares across several routes. Operators argue that abrupt changes in fuel pricing create significant uncertainty, making it difficult to instantly adjust fares without a thorough assessment of operational costs and consulting all stakeholders. 
 
+

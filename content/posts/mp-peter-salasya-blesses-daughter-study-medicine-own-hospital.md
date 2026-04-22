@@ -17,3 +17,4 @@ Is Salasya Building a Hospital Empire? Anyway, the idea of a politician's daught
 
 The Buzz Around MP Peter Salasya's Family Life Honestly, Salasya's personal life has always been a hot topic. He introduced a baby boy in June 2025, and then a daughter, Ameeliah Reign Kalerwa, in December 2025. The announcements of his children, especially as an unmarried politician, have often led to public discussions and questions about his marital status and growing family. But for now, it seems the focus is firmly on little Ameeliah Reign and the rather grand plans her father has for her to study medicine and own a hospital. What a future, eh? 
 
+

@@ -23,3 +23,4 @@ Decades of Degradation During the site visit, Governor Sakaja acknowledged the d
 
 Urgent Evacuation Mandate The Nairobi Dam, situated in the Kibera area approximately five kilometres southwest of Nairobi's CBD, places thousands of residents at risk of potential disaster if it were to breach. Before Sakaja's rehabilitation order, the Water Resources Authority (WRA) had issued an urgent evacuation notice on Friday, March 20, 2026, directing residents of six nearby estates to vacate immediately due to ongoing heavy rains. The WRA's notice unequivocally stated the dam was on the verge of breaching its embankments. Residents in informal settlements in Kibera, Nyayo Highrise, Dam Estate, Lang'ata, Nairobi West, and Madaraka were instructed to relocate to higher ground without delay. Authorities continue to urge compliance with evacuation orders as rehabilitation work commences. 
 
+

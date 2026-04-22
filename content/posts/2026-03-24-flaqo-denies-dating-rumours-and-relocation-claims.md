@@ -21,3 +21,4 @@ Rongai Residency Debunked by Flaqo Beyond the dating rumors, reports also sugges
 
 Frustration Over Misinformation The celebrated comedian likened his experience of encountering these baseless stories to watching a film premiere in which he never acted. Flaqo conveyed significant frustration regarding the effortless manner in which unverified information is disseminated to the public. Initially finding some humor in the absurdity, his tone shifted to a more serious critique, emphasizing the critical need for greater accountability in information sharing and concluding simply that “lying is not cool.” 
 
+

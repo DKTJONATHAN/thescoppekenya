@@ -23,3 +23,4 @@ Expanding Cooperative Sector Participation KUSCCO also proposed a refined defini
 
 KUSCCO's Appeal and Technical Support During their submission, KUSCCO underscored that these proposals are rooted in the genuine challenges faced by SACCOs and urged the National Treasury to adopt them to lighten the tax load on cooperative societies. The audit firm PwC supported the submission process, lending technical expertise to develop and refine the comprehensive proposals. 
 
+

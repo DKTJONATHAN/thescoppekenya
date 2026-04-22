@@ -15,3 +15,4 @@ The Gang's All Here-Mostly Fans will be thrilled to see many original cast membe
 
 A New Dewey and Fresh Faces One significant absence from the family reunion is Erik Per Sullivan, who played the eccentric younger brother, Dewey. Per Sullivan has stepped away from acting, choosing a different path that includes pursuing a master's degree at Harvard, according to Bryan Cranston. The role of Dewey will now be portrayed by Caleb Ellsworth-Clark. Beyond the returning veterans and a new Dewey, the series introduces fresh talent. Kiana Madeira and Keeley Karsten join as Malcolm's girlfriend Tristan and daughter Leah, respectively. Anthony Timpano will play a grown-up Jamie, and Vaughan Murrae is cast as Kelly, the family's nonbinary teenager, who was previously hinted at in the original series finale. Get ready for this fantastic dose of family drama! 
 
+

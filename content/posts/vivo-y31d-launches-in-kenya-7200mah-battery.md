@@ -19,3 +19,4 @@ Performance and Software: Snapdragon 6s Gen 2 and OriginOS 6.0 Underpinning the 
 
 vivo Y31d Pricing and Availability in Kenya The vivo Y31d is readily available across retail stores in Kenya and through official online channels. It comes in two color options: Feather Gold and Starlight Grey. For pricing, the model with 6GB of RAM and 128GB of internal storage is set at KES 26,999, while the 256GB storage variant is priced at KES 29,999. This aggressive pricing strategy, combined with its robust features, positions the vivo Y31d as a compelling option in Kenya's competitive smartphone market. 
 
+

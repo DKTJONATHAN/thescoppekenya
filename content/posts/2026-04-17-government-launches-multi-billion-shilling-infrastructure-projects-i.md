@@ -27,3 +27,4 @@ The SGR's Red Carpet Arrival Nyamira is also set to become a key player in regio
 
 Stadium Dreams and Celebrity Screams Sports enthusiasts, rejoice! Ksh900 million has been allocated for the construction of a state-of-the-art stadium in the county. This grand arena is set to become a vibrant hub for sporting events, concerts, and potentially even major awards ceremonies, drawing in crowds and offering a fantastic platform for both established and emerging Kenyan talent. 
 
+

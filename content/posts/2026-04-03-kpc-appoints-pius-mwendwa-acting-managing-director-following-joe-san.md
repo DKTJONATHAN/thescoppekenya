@@ -23,3 +23,4 @@ DCI Scrutiny and Public Concerns The DCI is examining supply chains, procurement
 
 Government Assurances on Fuel Stability Amid public anxiety over fuel availability, the government confirms that current reserves cover petrol, diesel, and kerosene, with additional shipments already scheduled to boost stocks. Government Spokesperson Isaac Mwaura stated on Channel Africa Friday that the country has already received this month's shipment and assured motorists that fuel prices will remain stable throughout April 2026. 
 
+

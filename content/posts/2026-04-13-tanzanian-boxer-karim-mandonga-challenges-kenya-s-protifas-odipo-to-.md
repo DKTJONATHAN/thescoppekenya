@@ -21,3 +21,4 @@ Mandonga's Reputation for Showmanship For those unfamiliar with the Tanzanian br
 
 The Ball is in the Promoters' Court If officially sanctioned, this match would undoubtedly be a major cross-border event, pitting Mandonga’s "Mtu Kazi" brand against Majembe’s rising momentum in the Kenyan circuit. Fans are already buzzing at the prospect of seeing the "Lumacii" punch tested against Majembe’s proven durability. With both fighters having agreed in principle via their online back-and-forth, the responsibility now falls to promoters to transform the anticipated "Battle of East Africa" into a reality. 
 
+

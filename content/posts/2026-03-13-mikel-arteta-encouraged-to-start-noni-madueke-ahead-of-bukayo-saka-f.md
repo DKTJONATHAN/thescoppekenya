@@ -13,3 +13,4 @@ The Uncomfortable Truth About Saka's Form It's becoming increasingly difficult f
 
 Keown's Contradiction and Arteta's Test Even Arsenal legend Martin Keown, while praising Madueke's "dynamic" and game-changing contribution against Leverkusen, bizarrely concluded it's "not time" for him to start ahead of Saka. This kind of contradictory punditry is exactly why managers often make the wrong calls. Admitting Saka "was not having one of his best nights" yet refusing to countenance a change reeks of clinging to a narrative rather than addressing current form. The real test for Arteta against Everton isn't tactical genius; it's the simple act of choosing the player who is demonstrably performing better right now. Failing to do so only breeds complacency and ignores a clear opportunity for impact. 
 
+

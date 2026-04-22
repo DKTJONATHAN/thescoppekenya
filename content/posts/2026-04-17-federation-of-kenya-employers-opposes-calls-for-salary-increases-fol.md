@@ -21,3 +21,4 @@ Employers Warn of Economic Repercussions FKE has cautioned that implementing wag
 
 Call for Balanced Dialogue and Economic Sustainability Employers are now advocating for a balanced dialogue that thoroughly considers economic sustainability, productivity levels, and the continued survival of small and medium-sized enterprises (SMEs), which are vital to the economy. This discussion unfolds amidst reports indicating a shift from formal employment towards informal work such as freelancing and self-employment. A recent survey revealed an approximately 12 percent drop in employment, with hiring reductions predominantly observed in manufacturing, retail, hospitality, transport, and financial services, reflecting a broader context of deepening fiscal strain and eroding purchasing power. 
 
+

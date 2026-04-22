@@ -17,3 +17,4 @@ Is Nollywood's 'Complex Cinema' Even That Complex? And here’s the rub, isn't i
 
 Beyond Escapism: The Depth of Nollywood's Audience Honestly, it feels a bit rich, doesn't it, to blame the audience entirely? The original article wisely pointed out that Nigeria's economic hardships and declining educational investment have a huge part to play. People who are struggling to put food on the table or worry about their kids' schooling might genuinely *prefer* a bit of light-hearted escapism. It’s not that they’re "unthinking"; it’s that they need a break! Nollywood's real strength, they say, has always been in reflecting everyday realities. So, dividing viewers into "thinking" and "unthinking" for complex cinema just feels a bit… well, rude, and ultimately self-defeating. It's high time Nollywood remembered who buys the tickets, isn't it? 
 
+

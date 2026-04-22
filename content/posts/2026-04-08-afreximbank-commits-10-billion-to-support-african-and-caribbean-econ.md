@@ -15,3 +15,4 @@ Regional Coordination Enhances Economic Stability Beyond direct financing, Afrex
 
 Fortifying Future Economic Resilience The GCRP's strategic intent extends beyond immediate crisis management to fundamentally strengthen the structural foundations of African and Caribbean economies. By supporting countries in adapting to current challenges, the programme simultaneously builds their capacity to withstand future external shocks. This long-term vision for economic transformation underscores a commitment to sustainable growth and stability, moving beyond reactive measures to proactive economic development. The focus on structural adjustments aims to reduce vulnerabilities and foster a more robust economic landscape for the continent. 
 
+

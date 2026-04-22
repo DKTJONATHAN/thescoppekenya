@@ -16,3 +16,4 @@ iShowSpeed's 100 Per Cent Kenya Comeback: What About the Hidden Bills? Well, if 
 
 Is iShowSpeed's Kenya Love 100 Per Cent Genuine? Now, don't get us wrong, we love a good love story! And Speed certainly gushed about Kenya, calling it a "turning point" in his tour, even claiming "Nairobi fever" hadn't left him despite travelling all the way to Egypt and the Sahara Desert. He was even welcomed by none other than President William Ruto! But is this "100 per cent" love a genuine, heart-on-sleeve declaration, or is it also a shrewd business move to keep those subscriber numbers climbing? (A bit of both, perhaps? He is a streamer, after all!). He even managed to get a Maasai name, for goodness sake! So, while the "Speed Gang" prepares for the countdown to his return, we'll be here, watching keenly. Will the next iShowSpeed Kenya visit be even bigger, even crazier, and even more costly? Only time, and probably another viral stream, will tell! 
 
+

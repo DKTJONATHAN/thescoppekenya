@@ -19,3 +19,4 @@ Youthful Voices and Global Debates The recent Senegalese ruling, which saw a 24-
 
 Entertainment's Role in Advocacy Kenya's vibrant entertainment scene often finds itself at the intersection of popular culture and pressing social issues. While the Senegalese court's decision pertains to a different nation, the ripple effects resonate within the broader African discourse on human rights and legal reforms. Za Ndani observes that prominent Kenyan figures are discreetly engaging in dialogues about their platforms' potential to foster understanding and advocate for justice. These discussions mirror a growing consciousness within various sectors, including those where accountability for misconduct is paramount, as recently seen when a British Army commander addressed allegations against soldiers in Kenya. 
 
+

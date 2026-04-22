@@ -23,3 +23,4 @@ Osotsi's Disapproval However, the conference saw a dramatic turn when Vihiga Sen
 
 New National Chairperson Appointed Further leadership changes saw the approval of Homa Bay Governor Gladys Wanga as the ODM's official National Chairperson. She will be deputised by Rarieda MP Otiende Amollo alongside his Turkana South counterpart John Ariko Namoit, whose ratifications were also announced during the event. 
 
+

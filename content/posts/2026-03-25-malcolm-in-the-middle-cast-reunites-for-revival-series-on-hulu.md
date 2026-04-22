@@ -15,3 +15,4 @@ Behind the Scenes: NASCAR, Recasts, and Recreations The revival, shot in Vancouv
 
 An Underdog's Enduring Legacy The journey for *Malcolm in the Middle* was never an easy one, even from its inception. The original series, inspired by Boomer's own upbringing, was initially rejected by nearly every network before UPN briefly took it on, only to abandon it. Fox Broadcasting Entertainment president Doug Herzog is credited with rescuing the show, recognizing its potential at a time when family sitcoms were widely considered "dead". That an "underdog" series like *Malcolm in the Middle* has not only endured but is now being revived two decades later, speaks volumes about its lasting impact and the undeniable chemistry of its cast. 
 
+

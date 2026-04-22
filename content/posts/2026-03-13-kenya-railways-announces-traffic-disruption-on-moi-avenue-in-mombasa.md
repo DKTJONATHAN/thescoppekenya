@@ -15,3 +15,4 @@ Alternative Routes for Motorists Drivers originating from KPA Gate 10 and the Do
 
 Broader Infrastructure Initiatives This announcement coincides with directives from the Kenya National Highways Authority (KeNHA) for unlawful roadside occupants at Mtito Andei along Mombasa Road to vacate road reserves. This notice, effective March 17, 2026, targets traders and unauthorized occupants to facilitate planned service road improvements and drainage rehabilitation. Such efforts underscore ongoing commitments to enhancing critical transport infrastructure across the country. These initiatives complement broader efforts to ensure traffic flow and public safety, similar to discussions around implementing advanced traffic management systems. 
 
+

@@ -21,3 +21,4 @@ Expanding Fixed Internet and Global Connectivity Fixed internet subscriptions gr
 
 Streaming Displaces Traditional Broadcast Media The traditional broadcast sector saw a decline, with subscriptions falling to 1.66 million from 1.68 million. Both DTT platforms GoTV and StarTimes, along with most satellite TV providers, experienced subscriber losses. Only cable reported marginal growth, reflecting a global trend where streaming services increasingly displace conventional pay TV. 
 
+

@@ -21,3 +21,4 @@ Current Application Window for 2025 KCSE Candidates Only 2025 KCSE candidates wh
 
 Support and Inquiries To facilitate the application process, KUCCPS has established support centres at all public universities across the country. Candidates experiencing difficulties with their applications are urged to utilise these centres before the May 6, 2026, deadline. For further inquiries, candidates can contact KUCCPS through their official phone lines at 020 5137400/0713 924 444 or by email at info@kuccps.ac.ke. 
 
+

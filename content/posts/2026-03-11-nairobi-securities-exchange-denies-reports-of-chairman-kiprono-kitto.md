@@ -15,3 +15,4 @@ Context of Recent Speculation Reports concerning Mr. Kittony's potential exit em
 
 Kittony's Impact on the Exchange Kiprono Kittony has chaired the NSE board since 2020, with his term having been extended by one year in 2025. During his tenure, he has been instrumental in spearheading initiatives focused on fortifying the exchange's governance frameworks and enhancing investor confidence. His leadership has also driven efforts to deepen capital markets and attract new listings, alongside improving transparency and regulatory compliance within the market. 
 
+
