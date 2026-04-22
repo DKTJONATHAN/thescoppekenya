@@ -22,3 +22,4 @@ Ewaso Ng'iro South River Basin Development Authority Samuel Sakita Kuata retains
 Export Processing Zones Authority In the export sector, Richard Cheruiyot has been re-appointed as the Non-Executive Chairperson of the Export Processing Zones Authority (EPZA). His new three-year tenure begins on April 20, 2026. Mr. Cheruiyot was initially appointed to EPZA in April 2023, tasked with providing leadership, governance, and oversight to ensure compliance with relevant Acts.
 
 Kenya Leather Development Council Adan Mohammed will continue his role as the Non-Executive Chairperson of the Kenya Leather Development Council. He has been re-appointed for another three-year term, effective April 17, 2026, signifying continued leadership in the critical leather development sector. 
+

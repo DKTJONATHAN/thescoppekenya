@@ -17,3 +17,4 @@ Undermining Investment and Regional Trade The long-term implications for Kenya's
 ---
 
 **QUOTE OF THE DAY:** “The truth is that all men having power ought to be mistrusted.” —James Madison was inaugurated as the fourth US President on March 4, 1809.
+

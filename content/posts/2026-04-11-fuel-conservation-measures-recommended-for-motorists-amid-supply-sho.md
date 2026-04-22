@@ -34,3 +34,4 @@ Practice Anticipatory Driving Observing traffic ahead and anticipating movements
 Choose Quality Fuel Not all fuels are manufactured to the same standards. Utilizing high-quality fuel is recommended, as it can contribute to improved engine performance and overall efficiency.
 
 Maintain Correct Tyre Pressure Both underinflated and overinflated tyres increase rolling resistance, diminishing a vehicle's fuel efficiency. Regular checks and maintaining recommended tyre pressure levels are crucial for both fuel economy and safety. 
+

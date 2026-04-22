@@ -34,3 +34,4 @@ Animated Spin-off Expands Beloved Sci-Fi Universe An animated Netflix spin-off, 
 Tense Survival Thriller Set in Australian Wilderness An expert climber retreats to the Australian wilderness for solitude but becomes the target of a psychological predator hunting her for sport. Directed by Baltasar Kormákur, known for brutal survival films, this offering promises relentless tension and a physically demanding performance from its lead actress.
 
 Michael Jackson Biopic Features Nephew in Lead Role The Michael Jackson biopic arrives with Jaafar Jackson, the King of Pop's nephew, in the lead role. His family describes his performance as a genuine embodiment rather than an imitation of his uncle. Covering Jackson's life from his Jackson 5 breakthrough through his solo career and later controversies, this is poised to be the most culturally significant and debated release of the month. 
+

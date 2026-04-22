@@ -16,3 +16,4 @@ Petitioners Allege Non-Notification Advocate Joshua Malidzo, representing the Ka
 Legal Community Weighs In Former Law Society of Kenya President Nelson Havi also commented on the matter, noting the expedited nature of the ruling's delivery. He remarked on the perceived shift from delayed rulings to earlier delivery, albeit with an undertone of sarcasm regarding the communication process.
 
 Background to the Controversial Stay The controversy began when the Katiba Institute reportedly learned through social media that the Court of Appeal had stayed a High Court judgment. This judgment had declared the Office of Advisors to the President unconstitutional, ordering the removal of President William Ruto's 21-member council of advisors. The appellate court's decision granted President Ruto a temporary reprieve, suspending the High Court's directive. 
+

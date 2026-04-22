@@ -8,7 +8,11 @@ date: "2026-02-22"
 tags: ["Super Rugby Pacific", "Rugby", "New Zealand Rugby", "All Blacks", "Sports Tech"]
 ---
 
-TITLE: DHL Super Rugby Pacific Round 2: Absolute Madness on the Pitch! SLUG: dhl-super-rugby-pacific-round-2-absolute-madness EXCERPT: Round 2 of the DHL Super Rugby Pacific delivered try-fests, huge upsets, and enough drama to keep us talking for weeks, eh? CATEGORY: Global News TAGS: Super Rugby Pacific, Rugby, New Zealand Rugby, All Blacks, Sports Tech IMAGE_KEYWORD: rugby action, high scoring rugby
+TITLE: DHL Super Rugby Pacific Round 2: Absolute Madness on the Pitch!
+slug: dhl-super-rugby-pacific-round-2-absolute-madness
+excerpt: Round 2 of the DHL Super Rugby Pacific delivered try-fests, huge upsets, and enough drama to keep us talking for weeks, eh?
+category: Global News
+tags: Super Rugby Pacific, Rugby, New Zealand Rugby, All Blacks, Sports Tech IMAGE_KEYWORD: rugby action, high scoring rugby
 
 DHL Super Rugby Pacific Round 2: Try-Fests and Upsets! Right, if you blinked this weekend, Mate, you might have missed a try or ten in the DHL Super Rugby Pacific Round 2. It was absolute madness on the pitches down under, with teams throwing everything but the kitchen sink at each other, leading to some truly high-scoring affairs and a few results that have certainly got the rumour mill churning.
 
@@ -21,3 +25,4 @@ Beyond the Pitch: Courage, History, and Global Reach It’s not just about the m
 Crusaders' Conundrum and the Number 10 Battle Back to the Super Rugby, and the Crusaders' early season woes are certainly a talking point. Their unbeaten home final streak was on the line against the Chiefs, and with that 50-24 thumping from the Brumbies, they're certainly feeling the heat. But perhaps the most intriguing battle is for their coveted No. 10 jersey in 2025. Three rising first-fives are vying for the spot, and then Wallabies great James O’Connor rocks up to the squad! Talk about adding a bit of spice, eh? It’s a fierce but respectful rivalry, apparently, with everyone "determined to make their mark." Who will take the reins? That’s "Next in Line" drama right there!
 
 Sevens Sizzling and Olympic Aspirations Finally, a quick nod to the sevens circuit. The New Zealand teams reigned supreme in the first leg of the 2025/26 HSBC SVNS series. Proper dominance, that. But a stark reminder of the brutal nature of sport comes with Sarah Hirini’s story. At the peak of her career at the start of the 2024 season, brimming with Olympic optimism, only for a devastating knee injury to jeopardise her Paris aspirations. Is there enough time to recover? We’re all rooting for her, Mate. What a weekend for rugby, full of highs, lows, and plenty of talking points! 
+

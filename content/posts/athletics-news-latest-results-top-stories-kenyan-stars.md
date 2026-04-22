@@ -28,3 +28,4 @@ Diamond League Highlights and Athlete of the Year Snubs The 2025 Rabat Diamond L
 Kipchoge's Enduring Legacy and Obama Meeting Marathon legend Eliud Kipchoge, fresh off completing his seventh star at the 2025 New York Marathon on November 2, has emphatically rejected retirement talk, revealing a bold two-year plan for his future in athletics. Adding to the memorable moments of 2025, Kipchoge also had an exciting meeting with former United States President Barack Obama, an event that captivated Kenyans online.
 
 Nairobi's Marathon Preparations Closer to home, the Traffic Department in Nairobi had confirmed major road closures on Sunday, October 26, for the 2025 Standard Chartered Marathon, ensuring the smooth execution of this significant annual event. 
+

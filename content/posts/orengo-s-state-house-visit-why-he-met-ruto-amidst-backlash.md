@@ -18,3 +18,4 @@ Safeguarding Devolution and Resource Equity The governor further explained that 
 Warning Against 'Imperial Presidency' Despite advocating for inter-governmental collaboration, Orengo issued a caution against what he termed the ‘return of the imperial presidency.’ He observed an increasing trend of leaders converging on State House in pursuit of favours, arguing that such a pattern makes it even more imperative to insist on fairness and equity in the distribution of national resources.
 
 Commitment to Service Delivery Governor Orengo reiterated that his primary focus remains on delivering services to the people of Siaya and strengthening the devolved system of government. He firmly distinguished between necessary governmental engagement and political alignment, emphasizing that the former should not be misconstrued as the latter.
+

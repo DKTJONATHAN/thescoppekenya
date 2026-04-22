@@ -22,3 +22,4 @@ Identified Infrastructure Projects A review by Za Ndani confirms KeRRA is solici
 Tender Process Underway Interested parties can access tender documents free of charge from the KeRRA website starting April 16, 2026. KeRRA has also released an addendum updating project specifics, signaling concrete progress on Nyandarua's long-awaited road developments after years of local residents' complaints.
 
 Political Context of the Announcement The timing of KeRRA's tender notice has drawn attention, as it was dated April 8, the same day Senator Methu publicly criticized the government during the memorial service for the late Ol Kalou MP David Njuguna Kiaraho in Ol Kalou, Nyandarua County. During the event, Methu directly addressed the President, questioning the delayed actualization of promised road upgrades in the county, including the Murungaru - Tulasha - Gilgil Road. 
+

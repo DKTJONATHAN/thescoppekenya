@@ -18,3 +18,4 @@ Expanded Electricity Generation Kenya plans a substantial increase in electricit
 Grassroots Enterprise Support Government financing programmes such as the Hustler Fund, Youth Enterprise Fund, Women Enterprise Fund, and NYOTA are continuing to provide essential support to Micro, Small, and Medium Enterprises (MSMEs). These initiatives address the common challenge of accessing formal credit, thereby nurturing business growth and employment at the grassroots level.
 
 Strong Economic Growth Trajectory The economy is projected to grow to 5.3% in 2026, a notable increase from 4.7% in 2024, underpinned by improved macroeconomic stability. This robust growth is expected to be primarily driven by key sectors including agriculture, construction, tourism, transport, and financial services, creating a fertile environment for job expansion and industry development. 
+

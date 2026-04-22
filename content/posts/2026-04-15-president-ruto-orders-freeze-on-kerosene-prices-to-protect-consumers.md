@@ -20,3 +20,4 @@ Fuel Price Adjustments and Government Intervention The recent EPRA review, cover
 Geopolitical Tensions Blamed for Hikes Wandayi attributed the escalation in fuel prices to the ongoing Middle East war. He stated that prices are expected to decline once these geopolitical tensions, specifically mentioning the U.S./Israel-Iran conflict, subside.
 
 Economic Ripple Effects Anticipated Following the price increases, Public Service Vehicle (PSV) operators have announced a fare hike of at least 25 per cent across all routes. This is expected to trigger a corresponding increase in the prices of goods and other services throughout the country. 
+

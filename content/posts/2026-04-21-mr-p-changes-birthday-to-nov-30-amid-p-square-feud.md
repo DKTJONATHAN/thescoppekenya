@@ -26,3 +26,4 @@ The decision has elicited varied responses from Nigerians and fans across the co
 ### The Enduring P-Square Saga
 
 The feud between Peter and Paul Okoye, formerly known as P-Square, has spanned multiple years, characterised by two official splits, a brief reunion, and a growing list of public accusations from both sides. This latest development adds another layer to their estranged relationship, underscoring the deep-seated issues that have consistently kept the twin brothers at odds. As November 30, 2026, approaches, the reception of Mr P's new birthday date will likely offer further insight into whether this gesture is perceived as a true step towards personal liberation or merely another public statement of severance within their long-running dispute.
+

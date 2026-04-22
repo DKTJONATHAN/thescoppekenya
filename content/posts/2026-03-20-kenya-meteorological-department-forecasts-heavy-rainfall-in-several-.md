@@ -22,3 +22,4 @@ Central Kenya's Afternoon Deluge Nyandarua, Laikipia, Nyeri, Kirinyaga, Murang'a
 Southeastern and Coastal Alerts Highland East counties including Kitui, Makueni, Machakos, Kajiado, and Taita Taveta, alongside inland sections of Tana River County, are also forecasted to receive heavy rainfall. Along the Coast, residents in Mombasa, Kilifi, Lamu, Kwale, and the Tana Delta are advised to prepare for substantial downpours over the next five days.
 
 Nairobi and Kiambu Specifics Within the metropolitan area of Nairobi, moderate-to-heavy rains are anticipated to spread across Dagoretti, Kibra, parts of Embakasi, and Langata. In Kiambu, precipitation will affect Gatundu North, Limuru, Kikuyu, and Kabete, with the downpour projected to continue through the end of the weekend. The latest advisory coincides with ongoing preparedness efforts by various county governments, working in conjunction with the national government, to provide support to those who may be impacted. 
+

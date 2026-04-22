@@ -26,3 +26,4 @@ FA Cup Upsets and Dominance Holders Chelsea continued their strong form, beating
 WSL Title Race Heats Up In the Women's Super League, Manchester City edged closer to the title with a "statement" win over rivals Manchester United, showcasing their ability to handle pressure. Brighton also made headlines, condemning Leicester City to their seventh consecutive league loss. Chelsea secured a thrilling late victory over Aston Villa in a seven-goal encounter.
 
 Scottish and Irish National Team News In Scotland, Katie Wilkinson netted a hat-trick for Rangers, propelling them into second place in the Scottish Women's Premier League after a convincing derby win against Celtic. Meanwhile, Bohs' Brennan received a first call-up to the Republic of Ireland squad. The future of Chelsea striker Sam Kerr remains a point of discussion, with her contract uncertainty sparking debate over whether the club should retain her.
+

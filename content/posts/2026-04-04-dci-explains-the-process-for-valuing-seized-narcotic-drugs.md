@@ -22,3 +22,4 @@ Market Value Calculation Subsequently, the approximate street value is calculate
 Forensic Verification A critical step in the process involves forensic analysis conducted by the Government Chemist or a designated analyst. This scientific verification confirms the drug type, identity, and purity level of the seized substances. Such analysis is vital for ensuring accuracy and fulfilling evidentiary requirements under the Narcotic Drugs and Psychotropic Substances (Control) Act.
 
 Legal Implications Under Kenya's narcotics laws, the determined valuation holds substantial weight, influencing the extent of charges and potential penalties. Courts consider the market value of the drugs when determining sentences, reflecting the overall scale of the illegal drug trade. This structured approach by the DCI not only bolsters investigations and prosecutions but also informs the public about the magnitude of illicit drug operations. 
+

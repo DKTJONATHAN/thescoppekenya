@@ -22,3 +22,4 @@ Procurement Irregularities and Key Arrests The recovery efforts follow an ongoin
 Assurances on Fuel Pricing Stability Amid public concerns about potential fuel price hikes, Omar assured that citizens would not face higher pump prices due to these irregularities. He affirmed that EPRA would maintain the G2G pricing framework in the forthcoming review, ensuring stable and reasonable fuel prices, safeguarding supply quality, and national energy security.
 
 Enhanced Quality Control Measures Mandatory quality tests are being conducted on the imported cargo, with results to be publicly disclosed. Omar emphasized that no testing protocols would be waived, stating that "There will be no waiver of such testing protocols as any such actions will amount to broad negligence and unacceptable dereliction of duties". 
+

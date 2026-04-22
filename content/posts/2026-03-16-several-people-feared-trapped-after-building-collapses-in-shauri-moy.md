@@ -18,3 +18,4 @@ Rescue Efforts Intensify The partially destroyed structure, located in the Blue 
 Demolitions on Riparian Land The collapsed building was situated adjacent to other structures that had been flagged for demolition due to their location on riparian land. This ongoing demolition exercise aims to clear constructions infringing on crucial environmental zones. The incident underscores the dangers associated with abandoned or partially demolished structures, particularly for individuals seeking salvageable materials.
 
 Broader Infrastructure Context This incident occurs amidst broader discussions concerning urban development and infrastructure safety. In a separate but related development, Kenya Railways recently announced traffic disruption on Moi Avenue in Mombasa for bridge repairs, highlighting ongoing efforts to maintain and secure vital transport infrastructure across the country. 
+

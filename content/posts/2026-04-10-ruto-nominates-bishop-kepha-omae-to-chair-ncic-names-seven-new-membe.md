@@ -18,3 +18,4 @@ NCIC Leadership Nominations Felix Koskei, Head of Public Service, confirmed that
 Commission Appointments Details The nominations underscore the government's ongoing commitment to strengthening regulatory bodies and ensuring their effective functioning within the national framework. Similar to how tribunals authorize actions for other agencies, such as the Communications Authority revoking licenses over unpaid fees, parliamentary vetting ensures due diligence for these key appointments.
 
 Bishop Omae's Background Kepha Nyamweya Omae brings a significant religious background to his nominated role. He currently serves as a senior pastor at Liberty Christian Center and is an ordained minister, holding the position of presiding bishop within the Redeemed Gospel Church Inc. His extensive experience in religious leadership is expected to inform his approach to matters of national cohesion and integration. 
+

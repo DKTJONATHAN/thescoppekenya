@@ -23,3 +23,4 @@ Rainfall accumulations may surpass 20 millimetres in a 24-hour period in certain
 
 ### Public Safety Advisory
 Residents in the identified areas are urged to maintain vigilance for potential floods, flash floods, and reduced visibility. The authority noted that floodwaters can occur in areas not directly experiencing heavy rainfall, particularly downstream of rivers. The public is advised to avoid driving or walking through moving water and to refrain from seeking shelter under trees or near structures like grilled windows due to the risk of lightning strikes. Za Ndani continues to provide timely updates on local developments, alongside its coverage of diverse topics, including [African Celebrity News & Gossip: Beyond the Global Front Rows](https://zandani.co.ke/article/african-celebrity-news-gossip-global-front-rows). The KMSA has assured that it will provide prompt updates as necessary.
+

@@ -22,3 +22,4 @@ Adjusting Income Tax Bands Another key recommendation by KUSCCO to the Treasury 
 Expanding Cooperative Sector Participation KUSCCO also proposed a refined definition of 'designated primary cooperative societies' to encompass groups of individuals and corporates. This strategic move aims to broaden eligibility for SACCO membership, thereby attracting more participants and fostering increased growth and competitiveness within the cooperative sector against other financial institutions.
 
 KUSCCO's Appeal and Technical Support During their submission, KUSCCO underscored that these proposals are rooted in the genuine challenges faced by SACCOs and urged the National Treasury to adopt them to lighten the tax load on cooperative societies. The audit firm PwC supported the submission process, lending technical expertise to develop and refine the comprehensive proposals. 
+

@@ -24,3 +24,4 @@ Rising Operational Costs Drive Increase The 1.5 times increase in piece rates is
 Standardized Additional Charges Standard charges apply for transport services, including time, waiting, and distance-based fees across operations and client journeys within Nairobi, and for airport transfers. Traffic or waiting time is charged at Ksh4 per minute, stopovers cost Ksh100 for every ten minutes, and dead mileage beyond the pickup radius is Ksh100 per kilometer. Additionally, parking and toll fees are paid by the client or passenger, applying in addition to all fares across standard and airport transfer services.
 
 Fare Management Guidance The management of these new fares will be guided by the Automobile Association of Kenya (AA Kenya) moving forward. The Ministry of Transport has previously instructed app owners to adopt pricing guidelines suggested by AA Kenya, aimed at increasing per-kilometer rates by approximately 50 percent for small and medium engines. 
+

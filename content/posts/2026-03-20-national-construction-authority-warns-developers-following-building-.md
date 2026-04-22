@@ -22,3 +22,4 @@ Collapse in Westlands, Nairobi Investigations are underway into the collapse tha
 Incident in Kaptebeswet, Kericho On the same day, March 18, an incident in Kericho’s Kaptebeswet area within Belgut Sub-County saw a second-floor slab collapse at a residential development shortly after concrete placement. Early investigations cited by Engineer Akech indicate that inadequate propping and insufficient structural reinforcement may have contributed to the collapse. This incident resulted in one death and three injuries.
 
 Ongoing Investigations and Accountability The NCA has confirmed that multi-agency teams have secured both sites. Investigations are ongoing to determine the full circumstances surrounding each collapse, establish accountability among all parties involved, and assess compliance with construction regulations and professional standards. Za Ndani will continue to follow these developments. 
+

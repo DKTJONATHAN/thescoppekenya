@@ -24,3 +24,4 @@ Bundesliga Thrills and Star Performers The Bundesliga continues to provide drama
 Ligue 1 Dominance and Serie A Movements In France, PSG maintains its strong position, leading Ligue 1 by four points despite a recent loss to Monaco. Lens has emerged as a formidable title rival, embracing an underdog status to challenge PSG. In Italy, Luciano Spalletti has signed a new contract with Juventus amid links to the national team. The football community mourned the passing of legendary manager Mircea Lucescu, who died five days after resigning as Romania coach.
 
 Global Discussions on VAR UEFA has called leagues to a summit to address concerns over the "microscopic" application of VAR. This move signifies an ongoing debate within international football about technology's impact on game officiating.
+

@@ -22,3 +22,4 @@ Frustration Mounts Over Personal Attacks The actress questioned the motives behi
 Relationship Rumours Dispelled Amidst Celebrations Dorea's public confrontation closely followed her and partner DJ Dibul's dismissal of circulating rumours about a potential breakup in March 2026. The couple decisively put the speculation to rest by appearing together in high spirits at their daughter's elaborate birthday celebration. Videos from the glamorous event, attended by numerous notable figures, showcased their unity, effectively quashing any doubts about their relationship status.
 
 Call to Action for Followers Reaching a critical point, Dorea has now appealed to her extensive social media following for assistance in identifying the individual behind the fake account. She has urged anyone possessing information to contact her directly via direct message, signaling her firm intention to hold the cyberbully accountable for their actions. 
+

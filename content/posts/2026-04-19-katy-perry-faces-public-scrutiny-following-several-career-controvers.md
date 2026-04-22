@@ -28,3 +28,4 @@ The Infamous Kiss Another controversial moment on American Idol occurred in 2018
 Space Trip to Public Scrutiny In 2025, Perry was among several celebrities who embarked on an 11-minute space flight with Blue Origin, funded by Jeff Bezos. The trip was heavily criticized as a tone-deaf venture amid economic challenges in the U.S.. Perry's theatrical reaction upon landing, where she kissed the ground and spoke of feeling "super connected to love," was widely mocked online, turning her into a meme. In the aftermath, Perry described feeling like a "human Piñata" as fans and celebrities alike weighed in, criticizing the participants and joking about the rumored price tag and environmental impact of the journey.
 
 The Ongoing Name Battle Just last month, in March 2026, Perry concluded a 17-year legal battle against Australian fashion designer Katie Taylor (née Perry). 
+

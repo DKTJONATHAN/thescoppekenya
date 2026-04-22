@@ -28,3 +28,4 @@ League Implications and Historic Context This victory carries significant weight
 Title Race and European Aspirations The win would bring Rangers back within a single point of league leaders Hearts, intensifying the 2026 title race. For Falkirk, a victory would have moved them within two points of fifth-place Hibs, but this defeat halts that momentum.
 
 Historical Context and Future Prospects Rangers have a dominant record against Falkirk in top-flight meetings, having lost only one of their last 47 encounters. The club has also scored four goals in their last two league games, a feat they last achieved in December 2020 under Steven Gerrard. This win not only adds to their historical dominance but also provides crucial momentum as the 2026 season progresses towards its climax.
+

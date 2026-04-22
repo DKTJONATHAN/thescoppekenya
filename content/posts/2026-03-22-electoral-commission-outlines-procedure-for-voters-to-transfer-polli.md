@@ -22,3 +22,4 @@ Completing the Application for Transfer (Form C) At the IEBC office, applicants 
 Biometric Verification and Data Update Upon completion of Form C, the applicant undergoes biometric verification. This process confirms the voter’s identity using fingerprints and other personal data already stored within the IEBC system. Successful verification allows the request to be processed, and the voter’s details are subsequently updated in the register, officially effecting the transfer to the new voting location.
 
 Verifying Registration Status Online Before initiating a transfer, voters can confirm their current registration details by visiting the IEBC voter registration portal online and entering their ID information. Following the completion of the transfer process, voters are encouraged to re-visit the portal to confirm that the changes have been accurately reflected. 
+

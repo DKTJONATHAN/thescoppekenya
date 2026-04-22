@@ -20,3 +20,4 @@ Evolving Communication Patterns User behavior indicates a gradual shift from tra
 Expanding Fixed Internet and Global Connectivity Fixed internet subscriptions grew by 7.4% to 2.46 million, with fiber connections constituting 1.38 million. Starlink satellite internet registered 22,282 subscriptions, a modest but notable entry showcasing creative approaches to last-mile connectivity. Kenya's total international internet bandwidth capacity now stands at 24,161 Gbps, with the PEACE submarine cable experiencing the most significant growth at 43.9% in the quarter.
 
 Streaming Displaces Traditional Broadcast Media The traditional broadcast sector saw a decline, with subscriptions falling to 1.66 million from 1.68 million. Both DTT platforms GoTV and StarTimes, along with most satellite TV providers, experienced subscriber losses. Only cable reported marginal growth, reflecting a global trend where streaming services increasingly displace conventional pay TV. 
+

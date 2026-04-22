@@ -26,3 +26,4 @@ The announcement is designed to restore public confidence in recruitment process
 ### Broader Digitisation Agenda
 
 This shift towards a digital recruitment system is part of a wider governmental push for the digitisation of public services. The ministry recently confirmed the digitisation of various government services. Public Service Cabinet Secretary Ruku previously announced the implementation of an artificial intelligence system to monitor employee conduct during duty hours. Further plans include a transition from permanent and pensionable terms of employment to contract-based terms for public servants, signaling comprehensive reforms across the civil service.
+

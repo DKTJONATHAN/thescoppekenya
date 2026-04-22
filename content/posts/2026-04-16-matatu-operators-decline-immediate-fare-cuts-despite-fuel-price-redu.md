@@ -22,3 +22,4 @@ Pre-existing Fare Structure Remains Operators assert that prices were already fi
 Government Intervention on Fuel Prices Treasury Cabinet Secretary John Mbadi initially announced a reduction of Value Added Tax (VAT) on fuel from 16 percent to 13 percent through a special gazette notice. President William Ruto later intervened, lowering the tax further to 8 percent following widespread public outcry over the high cost of fuel. EPRA subsequently adjusted pump prices, with Super Petrol in Nairobi dropping by Ksh9.37 per litre and Diesel falling by Ksh10.21 per litre.
 
 Operators Cite Operational Uncertainty The earlier spike in fuel prices had already triggered a 25 percent increase in matatu fares across several routes. Operators argue that abrupt changes in fuel pricing create significant uncertainty, making it difficult to instantly adjust fares without a thorough assessment of operational costs and consulting all stakeholders. 
+

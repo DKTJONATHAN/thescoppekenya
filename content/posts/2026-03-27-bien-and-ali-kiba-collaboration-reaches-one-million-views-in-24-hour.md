@@ -22,3 +22,4 @@ A Cross-Border Musical Fusion "Finale" masterfully blends Bien's recognizable Af
 Star Power and Cultural Appeal The music video for "Finale" further amplifies its buzz and replay value with appearances by several notable Kenyan personalities. Its lively atmosphere and relatable storyline have particularly captivated fans of football and social gatherings. This creative direction aligns with Bien's consistent effort to produce culturally grounded music while simultaneously broadening its reach beyond Kenya's borders.
 
 A Strong Start to 2026 With impressive streaming numbers, a powerful regional collaboration, and viral traction, "Finale" is unequivocally shaping up to be one of East Africa's standout hits of the year. The song signals a remarkably promising start to 2026 for Bien and further highlights the increasing influence of East African artists on digital platforms as they continue to break records and connect with wider global audiences. 
+

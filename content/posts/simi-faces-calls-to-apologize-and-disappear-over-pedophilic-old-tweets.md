@@ -18,3 +18,4 @@ Simi's Response Simi defended the tweets as innocent humor from her daycare days
 Fan Fury Led by Ijeoma Njoku Ijeoma Njoku went viral calling out Simi for owning the tweets without remorse, labeling them "pedophilic" and indefensible from a grown adult. Njoku, who's spoken on child rape issues, demands Simi deactivate X, apologize properly, and disappear. Many echo this, rejecting the "12 years ago" excuse since Simi wasn't a teen.
 
 Split Reactions Some defend Simi, arguing early 2010s Twitter humor was edgier and context matters. Others, including influencers like Daniel Regha, slam her defense as minimizing perversion. The drama highlights how past posts haunt celebrities, especially advocates, fueling cancel culture debates in Nigerian entertainment.
+

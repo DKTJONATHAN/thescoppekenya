@@ -24,3 +24,4 @@ Deputy President's Kitale Tour Deputy President Kithure Kindiki was in Kitale on
 Allegations of Political Payments The protests emerge amidst ongoing allegations that government officials frequently compensate individuals to attend their public events and rallies. Former Deputy President Rigathi Gachagua previously encouraged constituents to demand payments from mobilisers for attending political gatherings, noting that a single political event could cost up to Ksh3 million to cover transport, logistics, security, and supporter mobilisation.
 
 EACC Issues Warning The Ethics and Anti-Corruption Commission (EACC) recently cautioned politicians against the misuse of public resources for campaign funding as the 2027 general elections draw nearer. The commission emphasized that exploiting public resources or offices for election campaigns is unlawful. 
+

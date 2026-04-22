@@ -24,3 +24,4 @@ Expired Speed Limits and Future Updates CS Chirchir acknowledged before Parliame
 NTSA Seeks Court Intervention Following the High Court's suspension of instant fines, the NTSA announced on Thursday last week its intention to request a temporary court order. This order would aim to maintain the status quo and allow the authority to continue enforcing the fines until a final ruling on the petition challenging them is issued next month.
 
 Key Offenses and Penalties The contentious fines, captured by the NTSA's systems, pertain to several key violations. These include speeding, lane violations, driving on pavements, and failure to wear seatbelts. Penalties for these offences range from Ksh500 to Ksh10,000, determined by the severity of the specific infraction. 
+
