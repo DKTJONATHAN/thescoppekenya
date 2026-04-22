@@ -397,6 +397,8 @@ export default function ArticlePage() {
           fetchPriority="high"
           decoding="async"
           className="absolute inset-0 w-full h-full object-cover object-[center_20%] opacity-50"
+          width={1400}
+          height={540}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/70 to-zinc-950/20" />
         <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/80 via-transparent to-transparent" />

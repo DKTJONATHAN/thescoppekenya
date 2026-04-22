@@ -324,6 +324,8 @@ const Index = () => {
                   loading="eager"
                   decoding="async"
                   className="w-full h-full object-cover opacity-80 absolute inset-0"
+                  width={600}
+                  height={338}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
@@ -343,7 +345,7 @@ const Index = () => {
               <div className="grid grid-cols-2 gap-1.5">
                 {heroSecondary.map(post => (
                   <Link key={post.slug} to={`/article/${post.slug}`} className="group relative overflow-hidden block aspect-[4/3]">
-                    <img src={img(post.image, 400)} alt={post.title} loading="lazy" className="w-full h-full object-cover opacity-65 group-hover:opacity-80 transition-opacity absolute inset-0" />
+                    <img src={img(post.image, 400)} alt={post.title} loading="lazy" width={400} height={300} className="w-full h-full object-cover opacity-65 group-hover:opacity-80 transition-opacity absolute inset-0" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-2 z-10">
                       <span className={`text-[8px] font-black tracking-widest uppercase text-white px-1 py-0.5 mb-1 inline-block ${catColor(post.category)}`}>{post.category}</span>
