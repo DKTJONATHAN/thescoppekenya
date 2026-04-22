@@ -37,7 +37,8 @@ function parseFrontmatter(content: string): { data: Record<string, unknown>; con
   return { data, content: bodyContent };
 }
 
-export interface PostFrontmatter {
+// ─── POST TYPES ──────────────────────────────────────────────────────────────
+export interface PostMetadata {
   title: string;
   slug: string;
   excerpt: string;
@@ -46,23 +47,33 @@ export interface PostFrontmatter {
   author: string;
   date: string;
   tags: string[];
+  readTime: number;
   featured?: boolean;
 }
 
-export interface Post extends PostFrontmatter {
+export interface Post extends PostMetadata {
   content: string;
   htmlContent: string;
-  readTime: number;
   imageAlt: string;
-  authorImage?: string;
 }
 
-// PERF: Load markdown files lazily â€” not bundled into main chunk
+// ─── FILE LOADING (LAZY) ─────────────────────────────────────────────────────
+// We use eager: false (and no query: '?raw' here) because we'll load content 
+// dynamically via getPostBySlug.
 const postFiles = import.meta.glob('/content/posts/*.md', { 
-  query: '?raw',
-  import: 'default',
-  eager: true 
+  as: 'raw',
+  eager: false 
 });
+
+// ─── MANIFEST LOADING ────────────────────────────────────────────────────────
+// The manifest is generated at build time by scripts/generate-post-manifest.js
+// It's a small JSON with metadata only for fast listings.
+import manifestPosts from '../../public/posts-manifest.json';
+
+const ALL_POSTS: PostMetadata[] = (manifestPosts as unknown as PostMetadata[]).map(p => ({
+  ...p,
+  category: normalizeCategory(p.category)
+}));
 
 function calculateReadTime(content: string): number {
   const wordsPerMinute = 200;
@@ -96,118 +107,54 @@ function getSafeTime(dateStr: string): number {
   if (!dateStr) return 0;
   let time = new Date(dateStr).getTime();
   if (!isNaN(time)) return time;
+  // Fallback for non-ISO strings like "2024-03-22 10:30"
   time = new Date(dateStr.replace(/-/g, '/').replace('T', ' ')).getTime();
   return isNaN(time) ? 0 : time;
 }
 
-// Module-level cache
-let _cachedPosts: Post[] | null = null;
+export function getAllPosts(): PostMetadata[] {
+  return ALL_POSTS;
+}
 
-function extractExcerpt(content: string): string {
-  // 1. Split into lines & remove headers, images, etc.
-  const lines = content.split('\n');
-  let firstPara = "";
+export async function getPostBySlug(slug: string): Promise<Post | undefined> {
+  const metadata = ALL_POSTS.find(post => post.slug === slug);
+  if (!metadata) return undefined;
 
-  for (const line of lines) {
-    const trimmed = line.trim();
-    if (!trimmed) continue;
-    if (trimmed.startsWith('#')) continue; // Skip headers
-    if (trimmed.startsWith('![')) continue; // Skip images
-    if (trimmed.startsWith('>')) continue; // Skip blockquotes
-    if (trimmed.startsWith('-') || trimmed.startsWith('*') || /^\d+\./.test(trimmed)) continue; // Skip lists
+  // Try to find the file path
+  const path = Object.keys(postFiles).find(p => p.includes(slug));
+  if (!path) return undefined;
 
-    // Found a potential first paragraph
-    firstPara = trimmed
-      .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1') // Strip link syntax, keep text
-      .replace(/[*_]{1,2}/g, '') // Strip bold/italic
-      .replace(/`[^`]+`/g, '') // Strip inline code
-      .trim();
-
-    if (firstPara.length > 20) break; // Ensure it's a substantial paragraph
+  try {
+    const rawContent = await postFiles[path]() as string;
+    const { content } = parseFrontmatter(rawContent);
+    
+    return {
+      ...metadata,
+      content: content,
+      htmlContent: marked(content) as string,
+      imageAlt: metadata.title,
+    };
+  } catch (error) {
+    console.error(`Error loading post content for ${slug}:`, error);
+    return undefined;
   }
-
-  // Limit to ~240 chars for the main excerpt, ArticlePage will truncate further if needed
-  return firstPara.length > 240 ? firstPara.slice(0, 237) + "..." : firstPara;
 }
 
-export function getAllPosts(): Post[] {
-  if (_cachedPosts) return _cachedPosts;
-
-  const posts: Post[] = [];
-
-  for (const path in postFiles) {
-    try {
-      const rawContent = postFiles[path] as string;
-      const { data, content } = parseFrontmatter(rawContent);
-      const frontmatter = data as unknown as Partial<PostFrontmatter>;
-
-      const author = frontmatter.author || 'The Scoop Kenya';
-      const tags = Array.isArray(frontmatter.tags) ? frontmatter.tags : [];
-      const title = frontmatter.title || 'Untitled Post';
-      const slug = frontmatter.slug || path.replace('/content/posts/', '').replace('.md', '');
-      const excerpt = (frontmatter.excerpt as string) || (frontmatter.description as string) || extractExcerpt(content);
-      const image = frontmatter.image || '/placeholder.svg';
-      const category = normalizeCategory(frontmatter.category || 'News');
-      const date = frontmatter.date || new Date().toISOString().split('T')[0];
-
-      // PERF: Defer HTML parsing â€” only parse when needed (in ArticlePage)
-      let _htmlContent: string | null = null;
-
-      posts.push({
-        title,
-        slug,
-        excerpt,
-        image,
-        category,
-        author,
-        date,
-        tags,
-        featured: frontmatter.featured || false,
-        content,
-        get htmlContent() {
-          if (_htmlContent === null) {
-            try {
-              _htmlContent = marked(content) as string;
-            } catch {
-              _htmlContent = content;
-            }
-          }
-          return _htmlContent;
-        },
-        readTime: calculateReadTime(content),
-        imageAlt: title,
-        authorImage: undefined,
-      } as Post);
-    } catch (error) {
-      console.error(`Error parsing post at ${path}:`, error);
-      continue;
-    }
-  }
-
-  // Sort by date descending
-  _cachedPosts = posts.sort((a, b) => getSafeTime(b.date) - getSafeTime(a.date));
-  return _cachedPosts;
-}
-
-export function getPostBySlug(slug: string): Post | undefined {
-  return getAllPosts().find(post => post.slug === slug);
-}
-
-export function getFeaturedPosts(): Post[] {
+export function getFeaturedPosts(): PostMetadata[] {
   return getAllPosts().filter(post => post.featured);
 }
 
-export function getLatestPosts(limit?: number): Post[] {
+export function getLatestPosts(limit?: number): PostMetadata[] {
   const posts = getAllPosts();
   return limit ? posts.slice(0, limit) : posts;
 }
 
-// â”€â”€â”€ ADDED: Returns all slugs for pre-rendering at build time â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── ADDED: Returns all slugs for pre-rendering at build time ─────────────────
 export function getAllPostSlugs(): string[] {
   return getAllPosts().map(post => post.slug);
 }
 
-export function getTodaysTopStory(): Post | undefined {
+export function getTodaysTopStory(): PostMetadata | undefined {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   const posts = getAllPosts();
@@ -221,15 +168,15 @@ export function getTodaysTopStory(): Post | undefined {
   return todaysPosts.length > 0 ? todaysPosts[todaysPosts.length - 1] : posts[0];
 }
 
-export function getSecondaryPosts(excludeSlug: string | undefined, limit = 4): Post[] {
+export function getSecondaryPosts(excludeSlug: string | undefined, limit = 4): PostMetadata[] {
   return getAllPosts().filter(post => post.slug !== excludeSlug).slice(0, limit);
 }
 
-export function getPostsByCategory(category: string): Post[] {
+export function getPostsByCategory(category: string): PostMetadata[] {
   return getAllPosts().filter(post => post.category.toLowerCase() === category.toLowerCase());
 }
 
-export function searchPosts(query: string): Post[] {
+export function searchPosts(query: string): PostMetadata[] {
   const searchTerm = query.toLowerCase().trim();
   if (!searchTerm) return [];
   return getAllPosts().filter(post => 
@@ -240,7 +187,7 @@ export function searchPosts(query: string): Post[] {
   );
 }
 
-export function getPostsByTag(tag: string): Post[] {
+export function getPostsByTag(tag: string): PostMetadata[] {
   const normalizedTag = tag.toLowerCase().trim();
   return getAllPosts().filter(post => 
     post.tags.some(t => t.toLowerCase() === normalizedTag)

@@ -1,6 +1,6 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
-import { getPostBySlug, getLatestPosts } from "@/lib/markdown";
+import { getPostBySlug, getLatestPosts, type Post } from "@/lib/markdown";
 import {
   Clock, Calendar, Share2, Facebook, Linkedin,
   ChevronLeft, ArrowUp, Eye, MessageCircle, Flame
@@ -73,7 +73,17 @@ export default function ArticlePage() {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
 
-  const post = useMemo(() => getPostBySlug(slug || ""), [slug]);
+  const [post, setPost] = useState<Post | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    getPostBySlug(slug || "").then(p => {
+      setPost(p || null);
+      setLoading(false);
+    });
+  }, [slug]);
+
   const latestPosts = useMemo(() => getLatestPosts(6), []);
   const relatedPosts = useMemo(
     () => latestPosts.filter((p) => p.slug !== slug).slice(0, 3),
@@ -311,6 +321,17 @@ export default function ArticlePage() {
   } : null, [post, canonicalUrl]);
 
   // ── 404 ──
+  if (loading) {
+    return (
+      <Layout>
+        <div className="container py-32 text-center">
+          <div className="animate-spin w-8 h-8 border-4 border-primary border-t-transparent rounded-full mx-auto mb-4" />
+          <p className="text-muted-foreground animate-pulse">Loading story...</p>
+        </div>
+      </Layout>
+    );
+  }
+
   if (!post) {
     return (
       <Layout>

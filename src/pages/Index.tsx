@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo, useCallback, useRef } from "react";
 import { Layout } from "@/components/layout/Layout";
-import { getAllPosts } from "@/lib/markdown";
+import { getAllPosts, type PostMetadata } from "@/lib/markdown";
 import { Link } from "react-router-dom";
 import { ArrowRight, TrendingUp, Flame, Clock, Eye } from "lucide-react";
 import { Helmet } from "react-helmet-async";

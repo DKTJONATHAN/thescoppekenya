@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { CategoryBar } from "@/components/articles/CategoryBar";
-import { getPostsByCategory, categories } from "@/lib/markdown";
+import { getPostsByCategory, categories, type PostMetadata } from "@/lib/markdown";
 import { ChevronDown, Eye, Clock, Flame, TrendingUp, Zap } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { Badge } from "@/components/ui/badge";
