@@ -77,10 +77,14 @@ const posts = postFiles.map(file => {
 
 // 2. Generate Article Pages
 posts.forEach(p => {
+  console.log(`Processing article: ${p.title} with date: ${p.dateStr}`);
   const pTitle = p.title.replace(/"/g, '&quot;');
   const pDesc = p.desc.replace(/"/g, '&quot;');
   const pImage = p.image.startsWith('/') ? `${SITE_URL}${p.image}` : p.image;
-  const isoDate = new Date(p.dateStr).toISOString();
+  const date = new Date(p.dateStr);
+  const isoDate = !isNaN(date.getTime()) 
+    ? date.toISOString() 
+    : new Date().toISOString();
 
   const newsArticleSchema = {
     "@context": "https://schema.org",
