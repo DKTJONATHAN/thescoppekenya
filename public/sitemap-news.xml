@@ -484,40 +484,4 @@
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
-  <url>
-    <loc>https://zandani.co.ke/article/adekunle-gold-gifts-simi-mercedes-benz-gle-and-diamond-ring-for-birt</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-20T09:00:00.000Z</news:publication_date>
-      <news:title>Adekunle Gold gifts Simi Mercedes-Benz GLE and diamond ring for birthday</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-railways-warns-public-against-fake-job-vacancies-circulating-o</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-20T09:00:00.000Z</news:publication_date>
-      <news:title>Kenya Railways warns public against fake job vacancies circulating online</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/fred-matiang-i-rules-out-political-alliance-with-president-william-r</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-20T09:00:00.000Z</news:publication_date>
-      <news:title>Fred Matiang’i rules out political alliance with President William Ruto</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
 </urlset>
