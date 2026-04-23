@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/khalif-kairo-sparks-debate-after-warning-about-dealing</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-23T09:00:00.000Z</news:publication_date>
+      <news:title>Khalif Kairo Sparks Debate After Warning About Dealing</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/substandard-fuel-distributed-cs-statements-contradicted</loc>
     <news:news>
       <news:publication>
@@ -277,30 +289,6 @@
       </news:publication>
       <news:publication_date>2026-04-21T09:00:00.000Z</news:publication_date>
       <news:title>Wahu Kagwi Reacts to Daughter’s Use of 'Rada' and 'Sista'</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/mr-p-changes-birthday-to-nov-30-amid-p-square-feud</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-21T09:00:00.000Z</news:publication_date>
-      <news:title>Mr P Changes Birthday to Nov 30 Amid P-Square Feud</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/tim-cook-s-4-trillion-farewell-and-the-ai-era-john-ternus-inherits</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-21T09:00:00.000Z</news:publication_date>
-      <news:title>Tim Cook's $4 Trillion Farewell and the AI Era John Ternus Inherits</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
