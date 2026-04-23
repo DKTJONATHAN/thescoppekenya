@@ -354,7 +354,7 @@ jobs:
           git config --global user.name "Elizabeth Muthoni"
           git config --global user.email "bot@zandani.co.ke"
           git add .
-          git stash -u
+          git stash -u || true
           git fetch origin main
           git pull origin main --rebase
           git stash pop || echo "Nothing to pop"
@@ -363,6 +363,11 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Elizabeth Muthoni <bot@zandani.co.ke>"
-          commit_message: "content: Tech news by Elizabeth Muthoni 🚀"
+          commit_message: "content: Technology article by Elizabeth Muthoni"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_elizabeth.json'
+
+      - name: Ping Google Sitemap
+        run: |
+          curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
+          echo "Google sitemap pinged"

@@ -314,7 +314,7 @@ jobs:
           git config --global user.name "Jona Munyi"
           git config --global user.email "bot@zandani.co.ke"
           git add .
-          git stash -u
+          git stash -u || true
           git fetch origin main
           git pull origin main --rebase
           git stash pop || echo "Nothing to pop"
@@ -323,10 +323,11 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Jona Munyi <bot@zandani.co.ke>"
-          commit_message: "content: Sports update by Jona Munyi \U0001F3C6"
+          commit_message: "content: Sports article by Jona Munyi"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_jona_sports.json'
 
       - name: Ping Google Sitemap
         run: |
           curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
+          echo "Google sitemap pinged"

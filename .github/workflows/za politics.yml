@@ -269,19 +269,26 @@ jobs:
           with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
           print(f"Saved: {filepath}")
           EOF
+
       - name: Git Safety Pull
         run: |
           git config --global user.name "Celestine Nzioka"
           git config --global user.email "bot@zandani.co.ke"
           git add .
-          git stash -u
+          git stash -u || true
           git fetch origin main
           git pull origin main --rebase
           git stash pop || echo "Nothing to pop"
+
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Celestine Nzioka <bot@zandani.co.ke>"
-          commit_message: "content: Politics update by Celestine Nzioka 🏛️"
+          commit_message: "content: Politics article by Celestine Nzioka"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_celestine.json'
+
+      - name: Ping Google Sitemap
+        run: |
+          curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
+          echo "Google sitemap pinged"
