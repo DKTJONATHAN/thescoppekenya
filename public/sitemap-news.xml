@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/her-name-is-ann-kioko-and-as-you-can-see-daughter-of-agrippina</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-23T09:00:00.000Z</news:publication_date>
+      <news:title>Her name is Ann Kioko, and as you can see, daughter of Agrippina...</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/residents-block-mumias-bungoma-highway-after-mp-wamboka-s-removal-fr</loc>
     <news:news>
       <news:publication>
@@ -265,18 +277,6 @@
       </news:publication>
       <news:publication_date>2026-04-21T09:00:00.000Z</news:publication_date>
       <news:title>Hope Kid: Prophet Kanyari’s Success Due to Second Chances</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/rutos-bitter-sugar-promise-italy-export-delusion</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-21T09:00:00.000Z</news:publication_date>
-      <news:title>Ruto’s Bitter Sugar Promise: From Italy With Love or Pure Export Delusion?</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
