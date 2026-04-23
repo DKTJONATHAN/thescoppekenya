@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/it-was-a-bad-day-in-office-for-mikora-after-daughter-of</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-23T09:00:00.000Z</news:publication_date>
+      <news:title>It was a bad day in office for Mikora after Daughter of...</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/ruto-oburu-form-broad-based-committee-after-high-level-state-house-m</loc>
     <news:news>
       <news:publication>
@@ -241,18 +253,6 @@
       </news:publication>
       <news:publication_date>2026-04-21T09:00:00.000Z</news:publication_date>
       <news:title>Ruto’s Bitter Sugar Promise: From Italy With Love or Pure Export Delusion?</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/singer-d4vd-pleads-not-guilty-to-murder-charge</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-21T09:00:00.000Z</news:publication_date>
-      <news:title>Singer D4vd pleads not guilty to murder charge</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
