@@ -105,7 +105,7 @@ jobs:
           SITE_BASE_URL     = "https://zandani.co.ke"
           FALLBACK_IMAGE    = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
 
-          MODELS = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
 
           BANNED_PHRASES = [
               "online debate in Kenya", "ignited a fiery online debate", "sparked a debate across", "caused a lot of online debate", "this April 2026", "this March 2026", "sasa basi", "melting the pot", "spill the tea", "tea is hot",
@@ -655,4 +655,6 @@ jobs:
         run: |
           curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
           echo "Google sitemap pinged"
+
+
 

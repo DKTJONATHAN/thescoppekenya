@@ -84,7 +84,7 @@ jobs:
           publish_timestamp = current_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
           today_str = current_utc.strftime("%Y-%m-%d")
           full_date_str = current_utc.strftime("%A, %B %d, %Y")
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
           MAX_AGE_HOURS = 24
           SITE_URL = "https://www.bbc.com/sport/football"
           SITE_DOMAIN = "bbc.com"
@@ -233,7 +233,43 @@ jobs:
 
           raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY1"] if os.environ.get(k)]
           key_cycle = itertools.cycle(raw_keys)
-          client = genai.Client(api_key=next(key_cycle))
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+
+          def gemini_generate(prompt, label="", use_search=False):
+              global current_key, client
+              prompt_variants = [prompt]
+              if len(prompt) > 12000:
+                  prompt_variants.append(prompt[:12000])
+              if len(prompt) > 8000:
+                  prompt_variants.append(prompt[:8000])
+
+              phases = []
+              if use_search:
+                  phases.append((True, "search"))
+              phases.append((False, "no-search"))
+
+              for use_search_now, phase_name in phases:
+                  for variant_index, prompt_variant in enumerate(prompt_variants, start=1):
+                      for model in MODELS_TO_TRY:
+                          for _ in range(len(raw_keys)):
+                              try:
+                                  config = types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]) if use_search_now else None
+                                  resp = client.models.generate_content(model=model, contents=prompt_variant, config=config)
+                                  print(f"Gemini OK ({model}, {phase_name}, prompt {variant_index}): {label}")
+                                  return (resp.text or "").strip()
+                              except Exception as e:
+                                  err = str(e).lower()
+                                  if any(x in err for x in ["429", "quota", "rate", "resource exhausted", "unavailable", "overloaded", "busy", "timeout"]):
+                                      time.sleep(random.uniform(8, 16))
+                                      current_key = next(key_cycle)
+                                      client = genai.Client(api_key=current_key)
+                                      continue
+                                  print(f"Gemini error ({model}, {phase_name}, prompt {variant_index}): {e}")
+                                  current_key = next(key_cycle)
+                                  client = genai.Client(api_key=current_key)
+                                  break
+              return None
 
           article_links = get_target_urls()
           memory_path = os.environ.get('MEMORY_FILE')
@@ -254,10 +290,10 @@ jobs:
               "TASK: Write a new high-CTR, SEO-optimized title for this article.\n"
               "RULES: Focus on major keywords from the content. Do NOT just copy the scraped title. Keep it under 65 characters. Plain reporting tone. No clickbait or hype words.\n"
           )
-          resp = client.models.generate_content(model="gemini-3-flash-preview", contents=title_prompt)
-          if resp.text:
+          title_text = gemini_generate(title_prompt, "title")
+          if title_text:
               try:
-                  clean = re.sub(r"^```json?\n?|```$", "", resp.text, flags=re.I|re.DOTALL).strip()
+                  clean = re.sub(r"^```json?\n?|```$", "", title_text, flags=re.I|re.DOTALL).strip()
                   final_title = json.loads(clean).get('final_title', target_title)
               except: pass
 
@@ -268,10 +304,10 @@ jobs:
               "CONTENT: " + full_raw_text[:800] + "\n"
               "Rules: Factual, no clickbait, starts with the subject or a verb, includes the key news fact. Output ONLY JSON: {\"excerpt\": \"...\"}"
           )
-          excerpt_resp = client.models.generate_content(model="gemini-3-flash-preview", contents=excerpt_prompt)
+          excerpt_text = gemini_generate(excerpt_prompt, "excerpt")
           final_excerpt = ""
           try:
-              clean_e = re.sub(r"^```json?\n?|```$", "", excerpt_resp.text, flags=re.I|re.DOTALL).strip()
+              clean_e = re.sub(r"^```json?\n?|```$", "", excerpt_text or "", flags=re.I|re.DOTALL).strip()
               final_excerpt = json.loads(clean_e).get('excerpt', "")[:160]
           except: pass
 
@@ -287,15 +323,15 @@ jobs:
               f"STRUCTURE: lede paragraph (35-45 words), then ## and ### headings.\n"
               f"CRITICAL BRANDING: You are writing FOR Za Ndani (zandani.co.ke). NEVER mention source sites."
           )
-          article_resp = client.models.generate_content(model="gemini-2.5-flash", contents=article_prompt, config=types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]))
-          article_text = re.sub(r"^```(?:markdown)?\n?", "", article_resp.text).rstrip("```").strip()
+          article_text = gemini_generate(article_prompt, "article", use_search=True) or ""
+          article_text = re.sub(r"^```(?:markdown)?\n?", "", article_text).rstrip("```").strip()
 
-          desc_text = client.models.generate_content(model="gemini-3-flash-preview", contents=f"Write meta description (145 chars) for: {final_title}\nOutput ONLY JSON: {{\"description\": \"...\"}}").text
+          desc_text = gemini_generate(f"Write meta description (145 chars) for: {final_title}\nOutput ONLY JSON: {{\"description\": \"...\"}}", "description") or ""
           meta_description = ""
           try: meta_description = json.loads(re.sub(r"^```json?\n?|```$", "", desc_text, flags=re.I|re.DOTALL).strip()).get('description', '')[:160]
           except: pass
 
-          tags_text = client.models.generate_content(model="gemini-3-flash-preview", contents=f"Generate 4 lowercase hyphenated tags for: {final_title}\nOutput ONLY JSON: {{\"tags\": [...]}}").text
+          tags_text = gemini_generate(f"Generate 4 lowercase hyphenated tags for: {final_title}\nOutput ONLY JSON: {{\"tags\": [...]}}", "tags") or ""
           article_tags = []
           try: article_tags = json.loads(re.sub(r"^```json?\n?|```$", "", tags_text, flags=re.I|re.DOTALL).strip()).get('tags', [])[:4]
           except: pass

@@ -35,157 +35,164 @@ jobs:
           FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
           FACEBOOK_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
         run: |
           if [ -z "$FACEBOOK_PAGE_ID" ] || [ -z "$FACEBOOK_PAGE_TOKEN" ]; then
-            echo "⚠️ Facebook credentials not set, skipping"
-            exit 0
-          fi
-          
-          if [ -z "$GEMINI_API_KEY" ]; then
-            echo "⚠️ GEMINI_API_KEY not set, skipping. Please ensure it is in your secrets."
+            echo "Facebook credentials not set, skipping"
             exit 0
           fi
 
-          # Get changed .md files in content/posts/
+          if [ -z "$GEMINI_API_KEY" ] && [ -z "$GEMINI_WRITE_KEY" ] && [ -z "$GEMINI_API_KEY1" ]; then
+            echo "No Gemini keys set, skipping"
+            exit 0
+          fi
+
           CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
 
           if [ -z "$CHANGED" ]; then
-            echo "📝 No post changes detected"
+            echo "No post changes detected"
             exit 0
           fi
 
-          # Export the list of files to be read by Python
           export CHANGED_FILES="$CHANGED"
 
           python3 << 'EOF'
-          import os, re, requests, time
+          import os
+          import re
+          import time
+          import requests
           from google import genai
           from google.genai import types
 
-          changed_files = os.environ.get('CHANGED_FILES', '').strip().split('\n')
-          fb_page_id = os.environ.get('FACEBOOK_PAGE_ID')
-          fb_token = os.environ.get('FACEBOOK_PAGE_TOKEN')
-          gemini_key = os.environ.get('GEMINI_API_KEY')
+          changed_files = [p for p in os.environ.get("CHANGED_FILES", "").strip().split("\n") if p]
+          fb_page_id = os.environ.get("FACEBOOK_PAGE_ID", "")
+          fb_token = os.environ.get("FACEBOOK_PAGE_TOKEN", "")
           site_url = "https://zandani.co.ke"
+          image_path = "temp_post_image.jpg"
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
+          raw_keys = [
+              os.environ.get("GEMINI_WRITE_KEY"),
+              os.environ.get("GEMINI_API_KEY"),
+              os.environ.get("GEMINI_API_KEY1"),
+          ]
+          gemini_keys = [key for key in raw_keys if key]
 
-          client = genai.Client(api_key=gemini_key)
+          if not gemini_keys:
+              raise RuntimeError("No Gemini keys configured")
 
-          for file_path in changed_files:
-              if not file_path or not os.path.exists(file_path):
-                  continue
-              
-              print(f"🚀 Processing File: {file_path}")
-              with open(file_path, 'r', encoding='utf-8') as f:
-                  content = f.read()
+          key_index = 0
+          client = genai.Client(api_key=gemini_keys[key_index])
 
-              slug_match = re.search(r'^slug:\s*["\']?(.*?)["\']?\s*$', content, re.MULTILINE)
-              slug = slug_match.group(1) if slug_match else os.path.basename(file_path).replace('.md', '')
-              article_url = f"{site_url}/article/{slug}"
+          def rotate_client():
+              global key_index, client
+              key_index = (key_index + 1) % len(gemini_keys)
+              client = genai.Client(api_key=gemini_keys[key_index])
 
-              # Extract metadata using regex
-              title_match = re.search(r'^title:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
-              author_match = re.search(r'^author:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
-              excerpt_match = re.search(r'^excerpt:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
-              image_match = re.search(r'^image:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
-
-              title = title_match.group(1) if title_match else "Latest Update"
-              author = author_match.group(1) if author_match else "Za Ndani"
-              excerpt = excerpt_match.group(1) if excerpt_match else ""
-              image_url = image_match.group(1) if image_match else ""
-
-              print(f"📝 Asking Gemini to write caption for: {title}")
-
-              prompt = f"""
-              You are the expert Social Media Manager for 'Za Ndani', a top Kenyan news platform. 
-              Write a highly engaging, conversational Facebook post caption to drive traffic to this new article.
-
-              Article Title: {title}
-              Author: {author}
-              Excerpt: {excerpt}
-
-              Rules:
-              - You MUST explicitly tell the reader to check the comments for the full story/link (e.g., "Catch the full juice in the comments below! 👇" or "Link in the comments!"). This is mandatory.
-              - Use 2 to 3 relevant emojis.
-              - Include 2 or 3 relevant hashtags at the bottom.
-              - Do NOT include the article link or URL in the text.
-              - Keep it under 3 short, punchy paragraphs.
-              - Write in clear, appealing Kenyan English.
-              - NEVER use em dashes or en dashes. Only use regular single hyphens (-).
-              """
-
-              try:
-                  for attempt in range(3):
+          def gemini_generate(prompt):
+              global client
+              for model in MODELS_TO_TRY:
+                  for _ in range(len(gemini_keys)):
                       try:
                           response = client.models.generate_content(
-                              model='gemini-2.5-flash',
+                              model=model,
                               contents=prompt,
-                              config=types.GenerateContentConfig(temperature=0.8)
+                              config=types.GenerateContentConfig(temperature=0.8),
                           )
-                          ai_caption = response.text.strip()
+                          return (response.text or "").strip()
+                      except Exception as exc:
+                          error_text = str(exc).lower()
+                          print(f"Gemini failure on {model}: {exc}")
+                          rotate_client()
+                          if any(token in error_text for token in ["429", "quota", "rate", "resource exhausted", "unavailable", "overloaded", "busy", "timeout"]):
+                              time.sleep(8)
+                              continue
                           break
-                      except Exception as e:
-                          if "429" in str(e) and attempt < 2:
-                              print(f"⚠️ Rate limited. Waiting 45s... (attempt {attempt+1})")
-                              import time
-                              time.sleep(45)
-                          else:
-                              raise
-              except Exception as e:
-                  print(f"⚠️ AI Generation failed: {e}")
-                  ai_caption = f"📰 {title}\n\n{excerpt}\n\n👇 Catch the full juice in the comments below!" 
+              return None
 
-              # Scrub dashes just in case
-              ai_caption = ai_caption.replace('\u2014', '-').replace('\u2013', '-')
+          def get_field(content, field, default=""):
+              match = re.search(rf'^{field}:\s*["\']?(.*?)["\']?\s*$', content, re.MULTILINE)
+              return match.group(1).strip() if match else default
 
-              img_path = "temp_post_image.jpg"
+          def clean_caption(text):
+              return text.replace("\u2014", "-").replace("\u2013", "-").strip()
+
+          for file_path in changed_files:
+              if not os.path.exists(file_path):
+                  continue
+
+              print(f"Processing {file_path}")
+              with open(file_path, "r", encoding="utf-8") as handle:
+                  content = handle.read()
+
+              slug = get_field(content, "slug") or os.path.basename(file_path).replace(".md", "")
+              title = get_field(content, "title", "Untitled Story")
+              author = get_field(content, "author", "Za Ndani")
+              excerpt = get_field(content, "excerpt", "Read the full story on Za Ndani.")
+              image_url = get_field(content, "image")
+              article_url = f"{site_url}/article/{slug}"
+
+              prompt = (
+                  "You are the Facebook social media manager for Za Ndani, a Kenyan news platform.\n"
+                  "Write a short, punchy Facebook caption for this article.\n\n"
+                  f"Title: {title}\n"
+                  f"Author: {author}\n"
+                  f"Excerpt: {excerpt}\n\n"
+                  "Rules:\n"
+                  "- Tell readers to check the comments for the full story link.\n"
+                  "- Use 2 or 3 relevant emojis.\n"
+                  "- Include 2 or 3 relevant hashtags at the bottom.\n"
+                  "- Do not include the article URL in the caption.\n"
+                  "- Keep it under 3 short paragraphs.\n"
+                  "- Use clear Kenyan English.\n"
+                  "- Never use em dashes or en dashes. Use only hyphens (-).\n"
+                  "- Output only the caption text."
+              )
+
+              ai_caption = gemini_generate(prompt)
+              if not ai_caption:
+                  ai_caption = f"{title}\n\n{excerpt}\n\nCatch the full story in the comments below. #Kenya #News"
+
+              ai_caption = clean_caption(ai_caption)
               has_image = False
-              
-              if image_url and image_url.startswith("http"):
-                  print(f"📥 Downloading image: {image_url}")
+
+              if image_url.startswith("http"):
                   try:
-                      img_data = requests.get(image_url, timeout=15).content
-                      with open(img_path, 'wb') as img_file:
-                          img_file.write(img_data)
+                      response = requests.get(image_url, timeout=15)
+                      response.raise_for_status()
+                      with open(image_path, "wb") as image_file:
+                          image_file.write(response.content)
                       has_image = True
-                  except Exception as e:
-                      print(f"⚠️ Failed to download image: {e}")
+                  except Exception as exc:
+                      print(f"Image download failed: {exc}")
 
               post_id = None
-              
               if has_image:
-                  print("📸 Uploading image and AI text to Facebook...")
-                  url = f"https://graph.facebook.com/v24.0/{fb_page_id}/photos"
-                  payload = {'message': ai_caption, 'access_token': fb_token}
-                  with open(img_path, 'rb') as img_file:
-                      files = {'source': img_file}
-                      res = requests.post(url, data=payload, files=files).json()
-                  post_id = res.get('post_id') or res.get('id')
+                  endpoint = f"https://graph.facebook.com/v24.0/{fb_page_id}/photos"
+                  payload = {"message": ai_caption, "access_token": fb_token}
+                  with open(image_path, "rb") as image_file:
+                      result = requests.post(endpoint, data=payload, files={"source": image_file}, timeout=30).json()
+                  post_id = result.get("post_id") or result.get("id")
               else:
-                  print("📝 No image found. Posting AI text to Facebook Feed...")
-                  url = f"https://graph.facebook.com/v24.0/{fb_page_id}/feed"
-                  payload = {'message': ai_caption, 'access_token': fb_token}
-                  res = requests.post(url, data=payload).json()
-                  post_id = res.get('id')
+                  endpoint = f"https://graph.facebook.com/v24.0/{fb_page_id}/feed"
+                  payload = {"message": ai_caption, "access_token": fb_token}
+                  result = requests.post(endpoint, data=payload, timeout=30).json()
+                  post_id = result.get("id")
 
-              print(f"Facebook API Response: {res}")
+              print(f"Facebook API response: {result}")
 
               if post_id:
-                  print("✅ Main post successful. Waiting 10 seconds for sync...")
                   time.sleep(10)
-                  
-                  print("💬 Adding link to the comment section...")
-                  comment_url = f"https://graph.facebook.com/v24.0/{post_id}/comments"
-                  comment_msg = f"Read the full story by {author} here: {article_url}"
-                  comment_payload = {'message': comment_msg, 'access_token': fb_token}
-                  comment_res = requests.post(comment_url, data=comment_payload).json()
-                  
-                  if 'error' in comment_res:
-                      print(f"❌ Failed to add comment: {comment_res}")
-                  else:
-                      print(f"✅ Successfully published AI post and link comment for {slug}!")
+                  comment_endpoint = f"https://graph.facebook.com/v24.0/{post_id}/comments"
+                  comment_payload = {
+                      "message": f"Read the full story by {author} here: {article_url}",
+                      "access_token": fb_token,
+                  }
+                  comment_result = requests.post(comment_endpoint, data=comment_payload, timeout=30).json()
+                  print(f"Comment response: {comment_result}")
               else:
-                  print(f"❌ Failed to post {slug} to Facebook.")
+                  print(f"Failed to publish Facebook post for {slug}")
 
-              if os.path.exists(img_path):
-                  os.remove(img_path)
+              if os.path.exists(image_path):
+                  os.remove(image_path)
           EOF

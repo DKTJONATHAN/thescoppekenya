@@ -88,7 +88,7 @@ jobs:
           full_date_str     = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
-          MODELS_TO_TRY     = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
           MAX_AGE_HOURS     = 10
 
           # Route source by UTC hour - each pair runs twice daily
@@ -351,31 +351,47 @@ jobs:
 
           def gemini_generate(prompt, label="", use_search=False):
               global current_key, client
-              for model in MODELS_TO_TRY:
-                  for _ in range(6):
-                      try:
-                          config = types.GenerateContentConfig(
-                              tools=[types.Tool(google_search=types.GoogleSearch())]
-                          ) if use_search else None
-                          resp      = client.models.generate_content(model=model, contents=prompt, config=config)
-                          candidate = resp.candidates[0] if resp.candidates else None
-                          if candidate and candidate.content and candidate.content.parts:
-                              result = "".join(
-                                  p.text for p in candidate.content.parts
-                                  if hasattr(p, "text") and p.text
-                              ).strip()
-                          else:
-                              result = (resp.text or "").strip()
-                          print(f"Gemini OK ({model}): {label}")
-                          return result
-                      except Exception as e:
-                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower():
-                              time.sleep(random.uniform(20, 35))
-                              current_key = next(key_cycle)
-                              client      = genai.Client(api_key=current_key)
-                              continue
-                          print(f"Gemini error ({model}): {e}")
-                          break
+              prompt_variants = [prompt]
+              if len(prompt) > 12000:
+                  prompt_variants.append(prompt[:12000])
+              if len(prompt) > 8000:
+                  prompt_variants.append(prompt[:8000])
+
+              phases = []
+              if use_search:
+                  phases.append((True, "search"))
+              phases.append((False, "no-search"))
+
+              for use_search_now, phase_name in phases:
+                  for variant_index, prompt_variant in enumerate(prompt_variants, start=1):
+                      for model in MODELS_TO_TRY:
+                          for _ in range(len(raw_keys)):
+                              try:
+                                  config = types.GenerateContentConfig(
+                                      tools=[types.Tool(google_search=types.GoogleSearch())]
+                                  ) if use_search_now else None
+                                  resp = client.models.generate_content(model=model, contents=prompt_variant, config=config)
+                                  candidate = resp.candidates[0] if resp.candidates else None
+                                  if candidate and candidate.content and candidate.content.parts:
+                                      result = "".join(
+                                          p.text for p in candidate.content.parts
+                                          if hasattr(p, "text") and p.text
+                                      ).strip()
+                                  else:
+                                      result = (resp.text or "").strip()
+                                  print(f"Gemini OK ({model}, {phase_name}, prompt {variant_index}): {label}")
+                                  return result
+                              except Exception as e:
+                                  err = str(e).lower()
+                                  if any(x in err for x in ["429", "quota", "rate", "resource exhausted", "unavailable", "overloaded", "busy", "timeout"]):
+                                      time.sleep(random.uniform(8, 16))
+                                      current_key = next(key_cycle)
+                                      client = genai.Client(api_key=current_key)
+                                      continue
+                                  print(f"Gemini error ({model}, {phase_name}, prompt {variant_index}): {e}")
+                                  current_key = next(key_cycle)
+                                  client = genai.Client(api_key=current_key)
+                                  break
               return None
 
           # ── Scrape ───────────────────────────────────────────────────────
@@ -581,4 +597,6 @@ jobs:
         run: |
           curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
           echo "Google sitemap pinged"
+
+
 

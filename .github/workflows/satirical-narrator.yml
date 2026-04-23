@@ -71,7 +71,7 @@ jobs:
           current_year      = datetime.datetime.utcnow().strftime('%Y')
           SITE_BASE_URL     = 'https://zandani.co.ke'
           FALLBACK_IMAGE    = 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200'
-          MODELS            = ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-2.5-flash', 'gemini-2.0-flash']
+          MODELS            = ['gemini-3-flash-preview', 'gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash']
 
           POSTS_DIR       = os.environ.get('POSTS_DIR', 'content/posts')
           MEMORY_FILE     = os.environ.get('MEMORY_FILE', '.github/memory_narratives.json')
@@ -122,34 +122,47 @@ jobs:
 
           def gemini_generate(prompt, temperature=0.95):
               global current_key, client_g
-              for model_id in MODELS:
-                  for _ in range(len(api_keys) * 2):
-                      try:
-                          resp = client_g.models.generate_content(
-                              model=model_id,
-                              contents=prompt,
-                              config=types.GenerateContentConfig(
-                                  temperature=temperature,
-                                  tools=[google_search_tool],
-                              ),
-                          )
-                          candidate = resp.candidates[0] if resp.candidates else None
-                          if candidate and candidate.content and candidate.content.parts:
-                              return ''.join(
-                                  p.text for p in candidate.content.parts
-                                  if hasattr(p, 'text') and p.text
-                              ).strip()
-                          return (resp.text or '').strip()
-                      except Exception as e:
-                          err = str(e).lower()
-                          if '429' in err or 'quota' in err or 'resource_exhausted' in err:
-                              print('Quota hit. Rotating key...')
-                              current_key = next(key_cycle)
-                              client_g    = genai.Client(api_key=current_key)
-                              time.sleep(15)
-                          else:
-                              print(f'Gemini error ({model_id}): {e}')
-                              break
+              prompt_variants = [prompt]
+              if len(prompt) > 12000:
+                  prompt_variants.append(prompt[:12000])
+              if len(prompt) > 8000:
+                  prompt_variants.append(prompt[:8000])
+
+              for use_search_now, phase_name in [(True, 'search'), (False, 'no-search')]:
+                  for variant_index, prompt_variant in enumerate(prompt_variants, start=1):
+                      for model_id in MODELS:
+                          for _ in range(len(api_keys)):
+                              try:
+                                  config = types.GenerateContentConfig(
+                                      temperature=temperature,
+                                      tools=[google_search_tool],
+                                  ) if use_search_now else types.GenerateContentConfig(
+                                      temperature=temperature,
+                                  )
+                                  resp = client_g.models.generate_content(
+                                      model=model_id,
+                                      contents=prompt_variant,
+                                      config=config,
+                                  )
+                                  candidate = resp.candidates[0] if resp.candidates else None
+                                  if candidate and candidate.content and candidate.content.parts:
+                                      return ''.join(
+                                          p.text for p in candidate.content.parts
+                                          if hasattr(p, 'text') and p.text
+                                      ).strip()
+                                  return (resp.text or '').strip()
+                              except Exception as e:
+                                  err = str(e).lower()
+                                  if any(x in err for x in ['429', 'quota', 'resource_exhausted', 'rate', 'unavailable', 'overloaded', 'busy', 'timeout']):
+                                      print(f'Gemini retry ({model_id}, {phase_name}, prompt {variant_index})')
+                                      current_key = next(key_cycle)
+                                      client_g = genai.Client(api_key=current_key)
+                                      time.sleep(8)
+                                      continue
+                                  print(f'Gemini error ({model_id}, {phase_name}, prompt {variant_index}): {e}')
+                                  current_key = next(key_cycle)
+                                  client_g = genai.Client(api_key=current_key)
+                                  break
               raise RuntimeError('All Gemini attempts failed')
 
           def fetch_unsplash_image(query):

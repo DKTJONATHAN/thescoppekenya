@@ -71,7 +71,7 @@ jobs:
           SITE_BASE_URL     = "https://zandani.co.ke"
           FALLBACK_IMAGE    = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
 
-          MODELS = ["gemini-2.5-flash", "gemini-2.0-flash"]
+          MODELS = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
 
           POSTS_DIR       = os.environ.get("POSTS_DIR", "content/posts")
           MEMORY_FILE     = os.environ.get("MEMORY_FILE", ".github/memory_opinions.json")
@@ -536,4 +536,6 @@ jobs:
         run: |
           curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
           echo "Google sitemap pinged"
+
+
 

@@ -89,7 +89,7 @@ jobs:
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
 
           BANNED_PHRASES = [
               "online debate in Kenya", "ignited a fiery online debate", "sparked a debate across", "caused a lot of online debate", "this April 2026", "this March 2026", "sasa basi", "melting the pot", "spill the tea", "tea is hot",
@@ -521,3 +521,5 @@ jobs:
           commit_message: "content: Manual article from ${{ inputs.article_url }}"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_manual.json'
+
+
