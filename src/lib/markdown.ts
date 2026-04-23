@@ -41,6 +41,7 @@ function parseFrontmatter(content: string): { data: Record<string, unknown>; con
 export interface PostMetadata {
   title: string;
   slug: string;
+  sourceFile?: string;
   excerpt: string;
   image: string;
   category: string;
@@ -120,12 +121,13 @@ export async function getPostBySlug(slug: string): Promise<Post | undefined> {
   const metadata = ALL_POSTS.find(post => post.slug === slug);
   if (!metadata) return undefined;
 
-  // Try to find the file path
-  const path = Object.keys(postFiles).find(p => p.includes(slug));
-  if (!path) return undefined;
+  const sourcePath = metadata.sourceFile
+    ? `/content/posts/${metadata.sourceFile}`
+    : Object.keys(postFiles).find(p => p.includes(slug));
+  if (!sourcePath || !(sourcePath in postFiles)) return undefined;
 
   try {
-    const rawContent = await postFiles[path]() as string;
+    const rawContent = await postFiles[sourcePath]() as string;
     const { content } = parseFrontmatter(rawContent);
     
     return {

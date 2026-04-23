@@ -45,6 +45,7 @@ const manifest = files.map(file => {
   return {
     title: data.title || 'Untitled',
     slug: data.slug || file.replace('.md', ''),
+    sourceFile: file,
     date: data.date || new Date().toISOString(),
     category: data.category || 'News',
     author: data.author || 'Za Ndani',
