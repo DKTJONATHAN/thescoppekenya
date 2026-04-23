@@ -188,7 +188,7 @@ jobs:
                       else:
                           print("No date - assume fresh")
                       title = soup.title.string.strip() if soup.title else ""
-                      title = re.sub(r'\s*[-|\u2013]\s*Kenyan Wall Street.*', '', title, flags=re.I).strip()
+                      title = strip_source_branding(title)
                       article_text = ""
                       for sel in ['article', '.article-body', '.post-content', '.entry-content', '.content', 'main']:
                           cont = soup.select_one(sel)
@@ -267,6 +267,46 @@ jobs:
                                   break
               return None
 
+          def strip_source_branding(title):
+              title = (title or "").strip()
+              title = re.sub(r'\s*[|:\-\u2013\u2014]\s*(the\s+)?kenyan\s+wall\s*street.*$', '', title, flags=re.I).strip()
+              title = re.sub(r'\s*[|:\-\u2013\u2014]\s*(the\s+)?kenyan\s+wallstreet.*$', '', title, flags=re.I).strip()
+              title = re.sub(r'\b(the\s+)?kenyan\s+wall\s*street\b', '', title, flags=re.I).strip()
+              title = re.sub(r'\b(the\s+)?kenyan\s+wallstreet\b', '', title, flags=re.I).strip()
+              title = re.sub(r'\s+', ' ', title)
+              title = re.sub(r'\s*[|:\-]+\s*$', '', title).strip()
+              return title
+
+          def clean_generated_title(raw_title):
+              if not raw_title:
+                  return ""
+              clean = re.sub(r'^```json?\s*|\s*```$', '', raw_title, flags=re.I | re.DOTALL).strip()
+              try:
+                  parsed = json.loads(clean)
+                  if isinstance(parsed, dict):
+                      clean = str(parsed.get("final_title", "")).strip()
+                  else:
+                      clean = str(parsed).strip()
+              except Exception:
+                  clean = clean.splitlines()[0].strip()
+              clean = re.sub(r'^["\'`]+|["\'`]+$', '', clean).strip()
+              clean = strip_source_branding(clean)
+              clean = re.sub(r'\s+', ' ', clean)
+              return clean
+
+          def tighten_title(title, max_len=65):
+              title = strip_source_branding(title)
+              title = re.sub(r'\s+', ' ', title).strip(" .,:;!-")
+              if len(title) <= max_len:
+                  return title
+              window = title[:max_len + 1]
+              split_match = list(re.finditer(r'\b(?:after|amid|over|as|for|from|with|on|in|at)\b', window, flags=re.I))
+              if split_match:
+                  cut = split_match[-1].start()
+                  if cut >= 28:
+                      return window[:cut].strip(" .,:;!-")
+              return window[:max_len].rsplit(' ', 1)[0].strip(" .,:;!-")
+
           article_links = get_target_urls()
           if not article_links:
               print("No candidates")
@@ -292,17 +332,14 @@ jobs:
               "SCRAPED ARTICLE TITLE: " + target_title + "\n"
               "ARTICLE SNIPPET:\n" + full_raw_text[:1200] + "\n"
               "TASK: Write a new high-CTR, SEO-optimized title for this article.\n"
-              "RULES: Focus on major keywords from the content. Do NOT just copy the scraped title. Keep it under 65 characters. Plain reporting tone. No clickbait or hype words.\n"
+              "RULES: Focus on major keywords from the content. Do NOT just copy the scraped title. Keep it under 65 characters. Plain reporting tone. No clickbait or hype words. Never include source names such as Kenyan Wall Street or The Kenyan Wallstreet in the title. Output ONLY JSON: {\"final_title\": \"...\"}\n"
           )
           title_text = gemini_generate(title_prompt, "title")
-          final_title = target_title
-          if title_text:
-              try:
-                  clean = re.sub(r"^```json?\n?|```$", "", title_text, flags=re.I|re.DOTALL).strip()
-                  data = json.loads(clean)
-                  final_title = data.get('final_title', target_title)
-              except Exception as e:
-                  print(f"Title parse error: {e}")
+          final_title = strip_source_branding(target_title)
+          parsed_title = clean_generated_title(title_text)
+          if parsed_title:
+              final_title = parsed_title
+          final_title = tighten_title(final_title)
 
           current_key = next(key_cycle); client = genai.Client(api_key=current_key); time.sleep(2)
           excerpt_prompt = (

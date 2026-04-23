@@ -1,13 +1,13 @@
 ---
-title: "It was a bad day in office for Mikora after Daughter of..."
-slug: "it-was-a-bad-day-in-office-for-mikora-after-daughter-of"
+title: "Phone Snatcher Trembles After Nairobi Woman Catches Him"
+slug: "phone-snatcher-trembles-after-nairobi-woman-catches-him"
 excerpt: ""
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/8DM7T1Sh/3ae81774e920.webp"
 category: "Entertainment"
 tags: []
-canonical: "https://zandani.co.ke/article/it-was-a-bad-day-in-office-for-mikora-after-daughter-of"
+canonical: "https://zandani.co.ke/article/phone-snatcher-trembles-after-nairobi-woman-catches-him"
 date: "2026-04-23T11:32:31Z"
 ---
 A bungling thief learned a painful lesson in Nairobi after his attempt to snatch a phone from a woman backfired spectacularly. The "Daughter of Agrippina" apprehended the trembling suspect herself, holding him firmly until a curious, unforgiving crowd gathered around.

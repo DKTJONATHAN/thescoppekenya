@@ -347,6 +347,53 @@ jobs:
                                   break
               return None
 
+          def clean_generated_title(raw_title):
+              if not raw_title:
+                  return ""
+              clean = re.sub(r'^```json?\s*|\s*```$', '', raw_title, flags=re.I | re.DOTALL).strip()
+              try:
+                  parsed = json.loads(clean)
+                  if isinstance(parsed, dict):
+                      clean = str(parsed.get("final_title", "")).strip()
+                  else:
+                      clean = str(parsed).strip()
+              except Exception:
+                  clean = clean.splitlines()[0].strip()
+              clean = re.sub(r'^["\'`]+|["\'`]+$', '', clean).strip()
+              clean = re.sub(r'\s+', ' ', clean)
+              clean = re.sub(r'\s*[|:;-]+\s*$', '', clean).strip()
+              return clean
+
+          def tighten_title(title, max_len=65):
+              title = re.sub(r'\s+', ' ', (title or "")).strip(" .,:;!-")
+              if len(title) <= max_len:
+                  return title
+              window = title[:max_len + 1]
+              split_match = list(re.finditer(r'\b(?:after|amid|over|as|for|from|with|on|in|at)\b', window, flags=re.I))
+              if split_match:
+                  cut = split_match[-1].start()
+                  if cut >= 28:
+                      return window[:cut].strip(" .,:;!-")
+              return window[:max_len].rsplit(' ', 1)[0].strip(" .,:;!-")
+
+          def build_fallback_title(true_story, commentary, raw_post):
+              candidates = [true_story, commentary, raw_post]
+              for candidate in candidates:
+                  text = re.sub(r'https?://\S+', '', candidate or "").strip()
+                  if not text:
+                      continue
+                  text = re.sub(r'[@#]\S+', '', text)
+                  text = re.sub(r'\s+', ' ', text)
+                  for piece in re.split(r'[.!?\n]| - ', text):
+                      piece = piece.strip(" \"'`")
+                      if len(piece.split()) < 4:
+                          continue
+                      piece = re.sub(r'^(her name is|it was a bad day in office for|as you can see|meanwhile|this is|these are)\s+', '', piece, flags=re.I)
+                      piece = re.sub(r'\s+', ' ', piece).strip(" .,:;!-")
+                      if len(piece.split()) >= 4:
+                          return tighten_title(piece)
+              return "Kenyan Entertainment Update"
+
           def get_internal_links():
               posts_dir = os.environ.get("POSTS_DIR", "content/posts")
               if not os.path.exists(posts_dir):
@@ -419,22 +466,14 @@ jobs:
               "TRUE TRENDING STORY: " + true_story + "\n"
               "POST COMMENTARY: " + commentary + "\n\n"
               "TASK: Write a new high-CTR, SEO-optimized title for this Kenyan entertainment story.\n"
-              'RULES: Use a "Reporting tone with a gossipy, insider Kenyan flavor" (bold, witty, and sharp). Focus on major keywords from the content. Keep it under 65 characters. DO NOT use generic clickbait or hype words. DO NOT mention George Diano or social media platforms.\n'
+              'RULES: Use a "Reporting tone with a gossipy, insider Kenyan flavor" (bold, witty, and sharp). Focus on major keywords from the content. Keep it under 65 characters. Title must be a complete SEO headline, not a sentence fragment, not a quote, and not an opening clause like "Her name is" or "It was a bad day". DO NOT use generic clickbait or hype words. DO NOT mention George Diano or social media platforms. Output ONLY JSON: {"final_title":"..."}\n'
           )
           title_text = gemini_generate(title_prompt, "title")
-          # Fallback: Use a cleaned up version of the first sentence
-          cleaned_text = re.sub(r'https?://\S+', '', chosen["text"]).strip()
-          first_part = cleaned_text.split(".")[0].split("\n")[0].strip()
-          if len(first_part) > 65:
-              final_title = first_part[:65].rsplit(' ', 1)[0] + "..."
-          else:
-              final_title = first_part
-          if title_text:
-              try:
-                  clean = re.sub(r'^```json?\s*|\s*```$', '', title_text, flags=re.I | re.DOTALL).strip()
-                  final_title = json.loads(clean).get("final_title", final_title)
-              except Exception:
-                  pass
+          final_title = build_fallback_title(true_story, commentary, chosen["text"])
+          parsed_title = clean_generated_title(title_text)
+          if parsed_title:
+              final_title = parsed_title
+          final_title = tighten_title(final_title)
 
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)

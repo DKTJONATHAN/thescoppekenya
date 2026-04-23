@@ -1,13 +1,13 @@
 ---
-title: "Dulla Makabila clashes with Ali Kiba, refuses to stop using witchcraft to succeed"
-slug: "dulla-makabila-clashes-with-ali-kiba-refuses-to-stop-using-witchcraf"
+title: "Dulla Makabila Defies Ali Kiba Over Witchcraft Claims"
+slug: "dulla-makabila-defies-ali-kiba-over-witchcraft-claims"
 excerpt: ""
 author: "Za Ndani"
 author_url: "https://zandani.co.ke/author/za-ndani"
 image: "https://i.ibb.co/fdbg0r7j/0bdee5915f2b.webp"
 category: "Entertainment"
 tags: ["dulla-makabila", "ali-kiba", "tanzanian-music-clash", "singeli-music", "dulla-makabila-witchcraft"]
-canonical: "https://zandani.co.ke/article/dulla-makabila-clashes-with-ali-kiba-refuses-to-stop-using-witchcraf"
+canonical: "https://zandani.co.ke/article/dulla-makabila-defies-ali-kiba-over-witchcraft-claims"
 date: "2026-04-23T11:35:29Z"
 ---
 Tanzanian Singeli star Dulla Makabila arrived at Jomo Kenyatta International Airport this week for a Kenyan media tour. The artist boldly declared his refusal to stop using traditional spiritual practices for success, despite pressure from fellow musician Ali Kiba to change.

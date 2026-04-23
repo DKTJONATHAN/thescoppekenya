@@ -1,13 +1,13 @@
 ---
-title: "Her name is Ann Kioko, and as you can see, daughter of Agrippina..."
-slug: "her-name-is-ann-kioko-and-as-you-can-see-daughter-of-agrippina"
+title: "Ann Kioko Flees to Nairobi After US Home Is Smashed"
+slug: "ann-kioko-flees-to-nairobi-after-us-home-is-smashed"
 excerpt: ""
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/HfqyLYQ0/a063ff598ba9.webp"
 category: "Entertainment"
 tags: []
-canonical: "https://zandani.co.ke/article/her-name-is-ann-kioko-and-as-you-can-see-daughter-of-agrippina"
+canonical: "https://zandani.co.ke/article/ann-kioko-flees-to-nairobi-after-us-home-is-smashed"
 date: "2026-04-23T13:13:59Z"
 ---
 Kenyan expatriate Gibson Nyakundi is currently picking up the pieces of his shattered life in the United States after a domestic fallout with Ann Kioko led to the total destruction of his property and her sudden emergency flight back to Nairobi.

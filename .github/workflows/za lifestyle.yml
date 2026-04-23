@@ -304,6 +304,35 @@ jobs:
                                   break
               return None
 
+          def clean_generated_title(raw_title):
+              if not raw_title:
+                  return ""
+              clean = re.sub(r'^```json?\s*|\s*```$', '', raw_title, flags=re.I | re.DOTALL).strip()
+              try:
+                  parsed = json.loads(clean)
+                  if isinstance(parsed, dict):
+                      clean = str(parsed.get("final_title", "")).strip()
+                  else:
+                      clean = str(parsed).strip()
+              except Exception:
+                  clean = clean.splitlines()[0].strip()
+              clean = re.sub(r'^["\'`]+|["\'`]+$', '', clean).strip()
+              clean = re.sub(r'\s+', ' ', clean)
+              clean = re.sub(r'\s*[|:;-]+\s*$', '', clean).strip()
+              return clean
+
+          def tighten_title(title, max_len=65):
+              title = re.sub(r'\s+', ' ', (title or "")).strip(" .,:;!-")
+              if len(title) <= max_len:
+                  return title
+              window = title[:max_len + 1]
+              split_match = list(re.finditer(r'\b(?:after|amid|over|as|for|from|with|on|in|at)\b', window, flags=re.I))
+              if split_match:
+                  cut = split_match[-1].start()
+                  if cut >= 28:
+                      return window[:cut].strip(" .,:;!-")
+              return window[:max_len].rsplit(' ', 1)[0].strip(" .,:;!-")
+
           article_links = get_target_urls()
           if not article_links:
               print("No candidates")
@@ -330,17 +359,13 @@ jobs:
               "SCRAPED ARTICLE TITLE: " + target_title + "\n"
               "ARTICLE SNIPPET:\n" + full_raw_text[:1200] + "\n"
               "TASK: Write a new high-CTR, SEO-optimized title for this article.\n"
-              "RULES: Focus on major keywords from the content. Do NOT just copy the scraped title. Keep it under 65 characters. Plain reporting tone. No clickbait or hype words.\n"
+              "RULES: Focus on major keywords from the content. Do NOT just copy the scraped title. Keep it under 65 characters. Plain reporting tone. No clickbait or hype words. Title must be a complete headline, not a fragment. Output ONLY JSON: {\"final_title\": \"...\"}\n"
           )
           title_text = gemini_generate(title_prompt, "title")
-          final_title = target_title
-          if title_text:
-              try:
-                  clean = re.sub(r"^```json?\n?|```$", "", title_text, flags=re.I|re.DOTALL).strip()
-                  data = json.loads(clean)
-                  final_title = data.get('final_title', target_title)
-              except Exception as e:
-                  print(f"Title parse error: {e}")
+          final_title = tighten_title(target_title)
+          parsed_title = clean_generated_title(title_text)
+          if parsed_title:
+              final_title = tighten_title(parsed_title)
 
           current_key = next(key_cycle); client = genai.Client(api_key=current_key); time.sleep(2)
           excerpt_prompt = (

@@ -1,7 +1,7 @@
 ---
-title: "Awash Bank Joins Ethiopian Securities Exchange Main Market | The Kenyan Wallstreet | The Kenyan Wallstreet"
-slug: "awash-bank-joins-ethiopian-securities-exchange-main-market-the-kenya"
-excerpt: "Awash Bank, Ethiopia's largest private commercial bank, officially listed its shares on the Ethiopian Securities Exchange via a listing by introduction."
+title: "Awash Bank Lists on Ethiopian Securities Exchange"
+slug: "awash-bank-lists-on-ethiopian-securities-exchange"
+excerpt: "Awash Bank has listed on the Ethiopian Securities Exchange, giving the new market one of its biggest banking counters by assets and profit."
 author: "Grace Mkamburi"
 image: "https://i.ibb.co/G3bVYh5t/db0cc062cbc4.jpg"
 category: "Business"

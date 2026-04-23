@@ -1,5 +1,5 @@
 ---
-title: "Residents Block Mumias-Bungoma Highway After MP Wamboka’s Removal From PIC"
+title: "Residents Block Mumias-Bungoma Highway After MP Wamboka's PIC Removal"
 slug: "residents-block-mumias-bungoma-highway-after-mp-wamboka-s-removal-fr"
 excerpt: "Bumula residents blocked the Mumias-Bungoma highway at Kabula market, protesting the removal of MP Wamboka Wanami from the Public Investments Committee."
 description: ""
@@ -11,7 +11,7 @@ tags: []
 canonical: "https://zandani.co.ke/article/residents-block-mumias-bungoma-highway-after-mp-wamboka-s-removal-fr"
 date: "2026-04-23T11:37:23Z"
 ---
-Protesters in Bumula blocked the Mumias-Bungoma highway today at Kabula market following the suspension of Member of Parliament Jack Wamboka from his role as chairperson of the Public Investments Committee. Traffic remained paralyzed as residents demanded the lawmaker’s immediate reinstatement.
+Protesters in Bumula blocked the Mumias-Bungoma highway today at Kabula market following the suspension of Member of Parliament Jack Wamboka from his role as chairperson of the Public Investments Committee. Traffic remained paralyzed as residents demanded the lawmaker's immediate reinstatement.
 
 ## Roadblocks at Kabula Market
 
