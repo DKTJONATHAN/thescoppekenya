@@ -364,40 +364,4 @@
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
-  <url>
-    <loc>https://zandani.co.ke/article/mike-sonko-who-happens-to-be-my-lookalike-has-come-out-crying-like-a</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-21T09:00:00.000Z</news:publication_date>
-      <news:title>Mike Sonko who happens to be my lookalike has come out crying like a faulty Sayo</news:title>
-      <news:genres>Entertainment,Celebrity Gossip</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenyan-influencer-pritty-vishy-announces-plans-for-further-cosmetic-</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-20T09:00:00.000Z</news:publication_date>
-      <news:title>Kenyan influencer Pritty Vishy announces plans for further cosmetic surgery</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/prophet-victor-kanyari-donates-ksh-40-000-to-family-of-viral-star-mu</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-20T09:00:00.000Z</news:publication_date>
-      <news:title>Prophet Victor Kanyari donates KSh 40,000 to family of viral star Musa Kihara</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
 </urlset>
