@@ -851,7 +851,7 @@ jobs:
               "[Article body.\n"
               "STRUCTURE (follow exactly in this order):\n"
               "1. Start with a 35-45 word lede paragraph (who, what, when, where - no heading above it). This answers the core question immediately.\n"
-              "   - NEVER start with "This has caused a lot of online debate in Kenya" or "sparked a firestorm".\n"
+              "   - NEVER start with \"This has caused a lot of online debate in Kenya\" or \"sparked a firestorm\".\n"
               "   - DO NOT include the current month and year in the opening sentence.\n"
               "2. ## H2 subheading that contains at least one PRIMARY KEYWORD.\n"
               "3. ### subheadings with supporting paragraphs that reuse PRIMARY KEYWORDS naturally.\n"
@@ -1021,3 +1021,4 @@ jobs:
             echo "| Title Format | ${{ inputs.title_format }} |" >> $GITHUB_STEP_SUMMARY
             [ -n "${{ inputs.custom_title }}" ] && echo "| Custom Title Override | \`${{ inputs.custom_title }}\` |" >> $GITHUB_STEP_SUMMARY
           fi
+

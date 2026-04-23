@@ -236,7 +236,7 @@ jobs:
           # Gemini with google_search often prepends reasoning/search text before
           # the structured block. We search the ENTIRE output, not just line-start.
               "1. Start with a 35-45 word lede paragraph (who, what, when, where - no heading above it). This answers the core question immediately.\n"
-              "   - NEVER start with "This has caused a lot of online debate in Kenya" or "sparked a firestorm".\n"
+              "   - NEVER start with \"This has caused a lot of online debate in Kenya\" or \"sparked a firestorm\".\n"
               "   - DO NOT include the current month and year in the opening sentence.\n"
               # 1. Try anchored to line start (ideal case)
               m = re.search(rf"^{label}:\s*(.+)$", text, re.MULTILINE | re.IGNORECASE)
@@ -323,7 +323,7 @@ jobs:
                   "Step 4 - Under 65 characters.\n\n"
                   "STRUCTURE:\n"
               "1. Start with a 35-45 word lede paragraph (who, what, when, where - no heading above it). This answers the core question immediately.\n"
-              "   - NEVER start with "This has caused a lot of online debate in Kenya" or "sparked a firestorm".\n"
+              "   - NEVER start with \"This has caused a lot of online debate in Kenya\" or \"sparked a firestorm\".\n"
               "   - DO NOT include the current month and year in the opening sentence.\n"
                   "2. ## H2 subheading — must contain at least one longtail keyword.\n"
                   "3. 4-6 body sections with ### subheadings — each judges at least one named actor.\n"
@@ -536,3 +536,4 @@ jobs:
         run: |
           curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
           echo "Google sitemap pinged"
+
