@@ -320,6 +320,7 @@ jobs:
               "TITLE: " + final_title + "\n"
               "CONTENT: " + full_raw_text[:800] + "\n"
               "Rules: Factual, no clickbait, starts with the subject or a verb, includes the key news fact. Output ONLY JSON: {\"excerpt\": \"...\"}"
+          )
           excerpt_text = gemini_generate(excerpt_prompt, "excerpt")
           final_excerpt = ""
           if excerpt_text:

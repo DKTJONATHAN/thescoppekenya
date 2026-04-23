@@ -285,6 +285,7 @@ jobs:
               "TITLE: " + final_title + "\n"
               "CONTENT: " + full_raw_text[:800] + "\n"
               "Rules: Factual, no clickbait, starts with a verb or the subject, includes the key sport fact. Output ONLY JSON: {\"excerpt\": \"...\"}"
+          )
           excerpt_text = gemini_generate(excerpt_prompt, "excerpt")
           final_excerpt = ""
           if excerpt_text:
