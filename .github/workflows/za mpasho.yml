@@ -85,7 +85,7 @@ jobs:
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
-          MAX_AGE_HOURS     = 10
+          MAX_AGE_HOURS     = 24
           SITE_URL          = "https://www.mpasho.co.ke/"
           SITE_DOMAIN       = "mpasho.co.ke"
 
@@ -129,7 +129,8 @@ jobs:
                   return image_url
 
           def get_target_urls():
-              urls = set()
+              urls_list = []
+              seen = set()
               print(f"Scanning {SITE_URL}...")
               try:
                   with sync_playwright() as p:
@@ -168,14 +169,12 @@ jobs:
                           slug = path.rstrip('/').split('/')[-1]
                           if (len(slug) > 15 and '-' in slug
                                   and not any(x in path for x in BANNED_URL_PATHS)):
-                              urls.add(full_url)
+                              if full_url not in seen:
+                                  seen.add(full_url)
+                                  urls_list.append(full_url)
                       browser.close()
               except Exception as e:
                   print(f"Scan failed: {e}")
-              def date_key(u):
-                  m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', u)
-                  return int(m.group(1)+m.group(2)+m.group(3)) if m else 19000101
-              urls_list = sorted(list(urls), key=date_key, reverse=True)
               print(f"Found {len(urls_list)} candidates. Top 8:")
               for u in urls_list[:8]: print(u)
               return urls_list[:12]

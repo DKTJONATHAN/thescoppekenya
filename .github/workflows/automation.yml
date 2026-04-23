@@ -171,7 +171,7 @@ jobs:
                           try:
                               pub_time = date_parser.parse(meta_pub['content'])
                               if pub_time.tzinfo is None: pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
-                              if (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600 > 48:
+                              if (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600 > 24:
                                   print("Too old. Skipping.")
                                   return None, None, None
                           except: pass

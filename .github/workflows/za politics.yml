@@ -62,7 +62,7 @@ jobs:
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
-          MAX_AGE_HOURS = 10
+          MAX_AGE_HOURS = 24
           SITE_URL = "https://www.kenyans.co.ke/news/politics"
           SITE_DOMAIN = "kenyans.co.ke"
           BANNED_PHRASES = ["online debate in Kenya", "ignited a fiery online debate", "sparked a debate across", "caused a lot of online debate", "this April 2026", "this March 2026", "sasa basi","melting the pot","spill the tea","tea is hot","grab your popcorn","buckle up","breaking news","dive in","delve into","moreover","furthermore","in conclusion","it's worth noting","a testament to","navigating the landscape","in today's digital age","tapestry"]
@@ -79,7 +79,8 @@ jobs:
               except: return image_url
 
           def get_target_urls():
-              urls = set()
+              urls_list = []
+              seen = set()
               print(f"Scanning {SITE_URL}...")
               try:
                   with sync_playwright() as p:
@@ -100,13 +101,11 @@ jobs:
                           path = full_url.split(SITE_DOMAIN)[-1]
                           slug = path.rstrip('/').split('/')[-1]
                           if (len(slug) > 15 and '-' in slug and not any(x in path for x in ['/author/','/tag/','/page/','/feed/','/comment-','/category/'])):
-                              urls.add(full_url)
+                              if full_url not in seen:
+                                  seen.add(full_url)
+                                  urls_list.append(full_url)
                       browser.close()
               except Exception as e: print(f"Scan failed: {e}")
-              def date_key(u):
-                  m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', u)
-                  return int(m.group(1)+m.group(2)+m.group(3)) if m else 19000101
-              urls_list = sorted(list(urls), key=date_key, reverse=True)
               print(f"Found {len(urls_list)} candidates.")
               for u in urls_list[:8]: print(u)
               return urls_list[:12]

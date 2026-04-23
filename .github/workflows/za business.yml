@@ -81,7 +81,7 @@ jobs:
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
-          MAX_AGE_HOURS = 12
+          MAX_AGE_HOURS = 24
           SITE_URL = "https://kenyanwallstreet.com/"
           SITE_DOMAIN = "kenyanwallstreet.com"
 
