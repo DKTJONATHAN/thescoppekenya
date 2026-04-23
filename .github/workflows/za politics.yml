@@ -63,6 +63,7 @@ jobs:
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
           MAX_AGE_HOURS = 24
+          MIN_ARTICLE_TEXT_CHARS = 140
           SITE_URL = "https://www.kenyans.co.ke/news/politics"
           SITE_DOMAIN = "kenyans.co.ke"
           BANNED_PHRASES = ["online debate in Kenya", "ignited a fiery online debate", "sparked a debate across", "caused a lot of online debate", "this April 2026", "this March 2026", "sasa basi","melting the pot","spill the tea","tea is hot","grab your popcorn","buckle up","breaking news","dive in","delve into","moreover","furthermore","in conclusion","it's worth noting","a testament to","navigating the landscape","in today's digital age","tapestry"]
@@ -142,23 +143,37 @@ jobs:
                           if pub_time.tzinfo is None: pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
                           age = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
                           print(f"Date: {pub_time} ({age:.1f}h old)")
-                          if age > MAX_AGE_HOURS: print("Too old"); return None, None, None
+                          if age > MAX_AGE_HOURS: print("Too old"); return None, None, None, None
                       else: print("No date - assume fresh")
+                      if not pub_time:
+                          pub_time = datetime.datetime.min.replace(tzinfo=datetime.timezone.utc)
                       title = soup.title.string.strip() if soup.title else ""
                       title = re.sub(r'\s*[-|\u2013]\s*Kenyans\.co\.ke.*', '', title).strip()
+                      def collect_text(container):
+                          chunks = []
+                          seen_chunks = set()
+                          if not container:
+                              return ""
+                          for node in container.find_all(['p', 'li']):
+                              text = re.sub(r'\s+', ' ', node.get_text(" ", strip=True)).strip()
+                              if len(text) < 20 or text in seen_chunks:
+                                  continue
+                              seen_chunks.add(text)
+                              chunks.append(text)
+                          return "\n\n".join(chunks)
                       article_text = ""
                       for sel in ['article','.article-body','.post-content','.entry-content','.content','main']:
                           cont = soup.select_one(sel)
                           if cont:
-                              article_text = "\n\n".join(p.get_text(strip=True) for p in cont.find_all('p') if len(p.get_text(strip=True)) > 40)
-                              if len(article_text) > 400: break
-                      if len(article_text) < 400:
-                          article_text = "\n\n".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40)
+                              article_text = collect_text(cont)
+                              if len(article_text) >= MIN_ARTICLE_TEXT_CHARS: break
+                      if len(article_text) < MIN_ARTICLE_TEXT_CHARS:
+                          article_text = collect_text(soup)
                       img_url = ""
                       for tag in [soup.find('meta', property='og:image'), soup.find('meta', {'name':'twitter:image'})]:
                           if tag: img_url = tag.get('content', ''); break
-                      return article_text, img_url, title
-              except Exception as e: print(f"Scrape error: {e}"); return None, None, None
+                      return article_text, img_url, title, pub_time
+              except Exception as e: print(f"Scrape error: {e}"); return None, None, None, None
 
           def get_internal_context():
               posts_dir = os.environ.get("POSTS_DIR", "content/posts")
@@ -246,14 +261,18 @@ jobs:
           if not article_links: print("No candidates"); sys.exit(0)
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
-          full_raw_text, target_image, target_title, final_hash = None, None, None, None
+          chosen_candidate = None
           for link in article_links:
               u_hash = hashlib.md5(link.encode()).hexdigest()
               if u_hash in memory: continue
-              text, img, title = scrape_article(link)
-              if text and len(text) > 400:
-                  full_raw_text, target_image, target_title, final_hash = text, img, title or "Kenya Politics", u_hash; break
-          if not full_raw_text: print("No fresh valid article"); sys.exit(0)
+              text, img, title, pub_time = scrape_article(link)
+              if text and len(text) >= MIN_ARTICLE_TEXT_CHARS:
+                  candidate = {"text": text, "img": img, "title": title or "Kenya Politics", "hash": u_hash, "pub_time": pub_time or datetime.datetime.min.replace(tzinfo=datetime.timezone.utc), "link": link}
+                  if not chosen_candidate or candidate["pub_time"] > chosen_candidate["pub_time"]:
+                      chosen_candidate = candidate
+          if not chosen_candidate: print("No fresh valid article"); sys.exit(0)
+          print(f"Selected newest valid article: {chosen_candidate['link']} ({chosen_candidate['pub_time']})")
+          full_raw_text, target_image, target_title, final_hash = chosen_candidate["text"], chosen_candidate["img"], chosen_candidate["title"], chosen_candidate["hash"]
 
           title_prompt = (
               "SCRAPED ARTICLE TITLE: " + target_title + "\n"
