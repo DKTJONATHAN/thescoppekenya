@@ -1,0 +1,207 @@
+name: Facebook Article-Blast (Entertainment - First 3 Paragraphs)
+
+on:
+  push:
+    paths:
+      - 'content/posts/**.md'
+  workflow_dispatch:
+
+jobs:
+  post-to-facebook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Wait for Zandani to deploy
+        run: |
+          echo "Waiting 30 seconds for Zandani to deploy..."
+          sleep 30
+
+      - name: Detect posts & publish full article preview to Facebook
+        env:
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          FACEBOOK_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
+        run: |
+          if [ -z "$FACEBOOK_PAGE_ID" ] || [ -z "$FACEBOOK_PAGE_TOKEN" ]; then
+            echo "⚠️ Facebook credentials not set, skipping"
+            exit 0
+          fi
+
+          # Get changed .md files in content/posts/
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
+
+          if [ -z "$CHANGED" ]; then
+            echo "📝 No post changes detected"
+            exit 0
+          fi
+
+          export CHANGED_FILES="$CHANGED"
+
+          python3 << 'EOF'
+          import os, re, requests, time
+
+          changed_files = os.environ.get('CHANGED_FILES', '').strip().split('\n')
+          fb_page_id    = os.environ.get('FACEBOOK_PAGE_ID')
+          fb_token      = os.environ.get('FACEBOOK_PAGE_TOKEN')
+          site_url      = "https://zandani.co.ke"
+
+          def strip_frontmatter(text):
+              """Remove YAML frontmatter (--- ... ---) and return the body."""
+              text = text.strip()
+              if text.startswith('---'):
+                  end = text.find('---', 3)
+                  if end != -1:
+                      return text[end + 3:].strip()
+              return text
+
+          def extract_paragraphs(body, count=3):
+              """
+              Extract the first `count` non-empty, non-heading paragraphs
+              from markdown body text.
+              """
+              # Remove markdown images  ![...](...) 
+              body = re.sub(r'!\[.*?\]\(.*?\)', '', body)
+              # Remove markdown links but keep text  [text](url) -> text
+              body = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', body)
+              # Remove HTML tags
+              body = re.sub(r'<[^>]+>', '', body)
+              # Remove horizontal rules
+              body = re.sub(r'^[-*_]{3,}\s*$', '', body, flags=re.MULTILINE)
+
+              paragraphs = []
+              for line in body.split('\n'):
+                  line = line.strip()
+                  # Skip blank lines, headings, blockquotes, list items, code fences
+                  if not line:
+                      continue
+                  if line.startswith(('#', '>', '-', '*', '+', '`', '|')):
+                      continue
+                  if re.match(r'^\d+\.', line):   # numbered list
+                      continue
+                  paragraphs.append(line)
+                  if len(paragraphs) == count:
+                      break
+
+              return '\n\n'.join(paragraphs)
+
+          for file_path in changed_files:
+              if not file_path or not os.path.exists(file_path):
+                  continue
+
+              print(f"🚀 Processing: {file_path}")
+              with open(file_path, 'r', encoding='utf-8') as f:
+                  raw = f.read()
+
+              slug_match  = re.search(r'^slug:\s*["\']?(.*?)["\']?\s*$', raw, re.MULTILINE)
+              slug        = slug_match.group(1) if slug_match else os.path.basename(file_path).replace('.md', '')
+              article_url = f"{site_url}/article/{slug}"
+
+              # ── Extract frontmatter metadata ──────────────────────────────
+              title_match    = re.search(r'^title:\s*["\']?(.*?)["\']?$',    raw, re.MULTILINE)
+              author_match   = re.search(r'^author:\s*["\']?(.*?)["\']?$',   raw, re.MULTILINE)
+              image_match    = re.search(r'^image:\s*["\']?(.*?)["\']?$',    raw, re.MULTILINE)
+              category_match = re.search(r'^category:\s*["\']?(.*?)["\']?$', raw, re.MULTILINE)
+
+              title     = title_match.group(1).strip()    if title_match    else "Latest Update"
+              author    = author_match.group(1).strip()   if author_match   else "Za Ndani"
+              image_url = image_match.group(1).strip()    if image_match    else ""
+              category  = category_match.group(1).strip() if category_match else ""
+
+              # ── Skip non-entertainment articles ───────────────────────────
+              # Handles both raw ('entertainment', 'music') and normalized ('Entertainment') values.
+              # Mirrors the normalizeCategory() map in markdown.ts:
+              # music -> Entertainment, everything else checked directly.
+              ENTERTAINMENT_VALUES = {'entertainment', 'music'}
+              if category.lower() not in ENTERTAINMENT_VALUES:
+                  print(f"Skipping '{title}' (category: '{category}' is not entertainment)")
+                  continue
+
+              # ── Extract first 3 paragraphs from article body ──────────────
+              body      = strip_frontmatter(raw)
+              preview   = extract_paragraphs(body, count=3)
+
+              if not preview:
+                  print("⚠️  Could not extract paragraphs, falling back to title only.")
+                  preview = title
+
+              # ── Build the Facebook post message ───────────────────────────
+              # Format: Title (bold via caps/emoji header) + preview paragraphs
+              # + teaser line pointing to comments
+              post_message = (
+                  f"📰 {title}\n\n"
+                  f"{preview}\n\n"
+                  f"👇 Full story in the comments - don't miss it!"
+              )
+
+              # Replace any em/en dashes just in case they sneak in from content
+              post_message = post_message.replace('\u2014', '-').replace('\u2013', '-')
+
+              # ── Download article image ────────────────────────────────────
+              img_path  = "temp_post_image.jpg"
+              has_image = False
+
+              if image_url and image_url.startswith("http"):
+                  print(f"📥 Downloading image: {image_url}")
+                  try:
+                      img_data = requests.get(image_url, timeout=15).content
+                      with open(img_path, 'wb') as img_file:
+                          img_file.write(img_data)
+                      has_image = True
+                  except Exception as e:
+                      print(f"⚠️ Failed to download image: {e}")
+
+              # ── Post to Facebook ──────────────────────────────────────────
+              post_id = None
+
+              if has_image:
+                  print("📸 Uploading image + article preview to Facebook...")
+                  url     = f"https://graph.facebook.com/v24.0/{fb_page_id}/photos"
+                  payload = {'message': post_message, 'access_token': fb_token}
+                  with open(img_path, 'rb') as img_file:
+                      res = requests.post(url, data=payload, files={'source': img_file}).json()
+                  post_id = res.get('post_id') or res.get('id')
+              else:
+                  print("📝 No image. Posting article preview as text to Facebook Feed...")
+                  url     = f"https://graph.facebook.com/v24.0/{fb_page_id}/feed"
+                  payload = {'message': post_message, 'access_token': fb_token}
+                  res     = requests.post(url, data=payload).json()
+                  post_id = res.get('id')
+
+              print(f"Facebook API Response: {res}")
+
+              # ── Drop the link in the first comment ───────────────────────
+              if post_id:
+                  print("✅ Main post successful. Waiting 10 seconds for sync...")
+                  time.sleep(10)
+
+                  print("💬 Adding full article link in comments...")
+                  comment_url     = f"https://graph.facebook.com/v24.0/{post_id}/comments"
+                  comment_msg     = f"Read the full story by {author} here 👉 {article_url}"
+                  comment_payload = {'message': comment_msg, 'access_token': fb_token}
+                  comment_res     = requests.post(comment_url, data=comment_payload).json()
+
+                  if 'error' in comment_res:
+                      print(f"❌ Failed to add comment: {comment_res}")
+                  else:
+                      print(f"✅ Published article preview + link comment for: {slug}")
+              else:
+                  print(f"❌ Failed to post {slug} to Facebook. Response: {res}")
+
+              # ── Cleanup ───────────────────────────────────────────────────
+              if os.path.exists(img_path):
+                  os.remove(img_path)
+
+          EOF
