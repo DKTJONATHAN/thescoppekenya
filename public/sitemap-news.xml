@@ -292,28 +292,4 @@
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
-  <url>
-    <loc>https://zandani.co.ke/article/davido-confirms-2027-release-for-joint-album-with-chris-brown</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-21T09:00:00.000Z</news:publication_date>
-      <news:title>Davido Confirms 2027 Release for Joint Album With Chris Brown</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-met-heavy-rainfall-alert-april-22-27-forecast</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-21T09:00:00.000Z</news:publication_date>
-      <news:title>Kenya Met Heavy Rainfall Alert: April 22-27 Forecast</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
 </urlset>
