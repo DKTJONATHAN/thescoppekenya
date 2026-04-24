@@ -46,7 +46,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests google-genai google-auth google-auth-httplib2
+          pip install --upgrade requests google-generativeai google-auth google-auth-httplib2
 
       - name: Write opinion pieces from existing articles
         env:
@@ -545,6 +545,3 @@ jobs:
         run: |
           curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
           echo "Google sitemap pinged"
-
-
-
