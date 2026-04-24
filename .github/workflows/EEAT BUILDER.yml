@@ -458,6 +458,7 @@ jobs:
                   "EXCERPT: [140-155 char meta description starting with subject or verb, includes key fact]\n"
                   "TAGS: [comma, separated, lowercase, specific, no generic words like 'news' or 'kenya']\n"
                   "IMAGE_SEARCH_QUERY: [specific 3-5 word query to find a real photo]\n"
+                  "IMAGE_ALT: [A descriptive alt text for the main image, under 125 characters]\n"
                   "BODY:\n"
                   "[Full article body only. No title, no author name, no date, no byline in the body.]\n"
               )
@@ -475,6 +476,7 @@ jobs:
               parsed_excerpt = pf("EXCERPT", raw)
               parsed_tags    = pf("TAGS", raw)
               parsed_img_q   = pf("IMAGE_SEARCH_QUERY", raw)
+              parsed_img_alt = pf("IMAGE_ALT", raw)
 
               body_m = re.search(r"BODY:\s*\n([\s\S]+)", raw, re.IGNORECASE)
               body   = body_m.group(1).strip() if body_m else raw
@@ -492,6 +494,9 @@ jobs:
                   e = (first_p[:155] + '...') if len(first_p) > 155 else first_p
                   parsed_excerpt = e.replace('"', "'")
                   print(f"  Generated fallback excerpt: {parsed_excerpt}")
+              
+              if not parsed_img_alt and parsed_title:
+                  parsed_img_alt = parsed_title
 
               return {
                   "TITLE":              parsed_title,
@@ -500,6 +505,7 @@ jobs:
                   "TAGS":               parsed_tags,
                   "IMAGE_SEARCH_QUERY": parsed_img_q,
                   "BODY":               body,
+                  "IMAGE_ALT":          parsed_img_alt,
                   "author":             author_name,
                   "category":           category,
               }
@@ -512,23 +518,47 @@ jobs:
               author_url  = f"{SITE_BASE_URL}/author/{author_slug}"
               canonical   = f"{SITE_BASE_URL}/article/{slug}"
               description = parsed["EXCERPT"].replace('"', "'")[:160]
+              image_alt   = parsed["IMAGE_ALT"].replace('"', "'")
               category    = parsed["category"].title()
 
               tags_list = [t.strip().lower().replace(" ", "-") for t in parsed["TAGS"].split(",") if t.strip()]
               tags_json = json.dumps(tags_list) if tags_list else json.dumps([category.lower()])
+              lastmod_timestamp = publish_timestamp
+
+              schema_data = {
+                  "@context": "https://schema.org",
+                  "@type": "NewsArticle",
+                  "headline": parsed["TITLE"].replace('"', "'"),
+                  "image": [image_url],
+                  "datePublished": publish_timestamp,
+                  "dateModified": lastmod_timestamp,
+                  "author": [{"@type": "Person", "name": author_name, "url": author_url}],
+                  "publisher": {
+                      "@type": "Organization",
+                      "name": "Za Ndani",
+                      "logo": {"@type": "ImageObject", "url": f"{SITE_BASE_URL}/images/logo.png"}
+                  },
+                  "description": description,
+                  "mainEntityOfPage": {"@type": "WebPage", "@id": canonical}
+              }
+              schema_json_str = json.dumps(schema_data, indent=2).replace('"', '\\"')
 
               lines = [
                   "---",
                   f'title: "{parsed["TITLE"].replace(chr(34), chr(39))}"',
                   f'slug: "{slug}"',
                   f'description: "{description}"',
+                  f'excerpt: "{description}"',
                   f'author: "{author_name}"',
                   f'author_url: "{author_url}"',
                   f'image: "{image_url}"',
+                  f'image_alt: "{image_alt}"',
                   f'category: "{category}"',
                   f'tags: {tags_json}',
                   f'canonical: "{canonical}"',
                   f'date: "{publish_timestamp}"',
+                  f'lastmod: "{lastmod_timestamp}"',
+                  f'schema_json: "{schema_json_str}"',
                   "---",
                   "",
                   parsed["BODY"],
@@ -615,7 +645,8 @@ jobs:
                       print(f"  Write failed: {e}")
                       continue
 
-                  real_img    = find_real_image(topic, parsed.get("TITLE", ""))
+                  img_query = parsed.get("IMAGE_SEARCH_QUERY") or topic
+                  real_img    = find_real_image(img_query, parsed.get("TITLE", ""))
                   final_image = upload_imgbb(real_img) if real_img else FALLBACK_IMAGE
 
                   save_article(parsed, final_image)

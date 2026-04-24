@@ -431,6 +431,7 @@ jobs:
               parsed_slug    = pf('SLUG',    raw)
               parsed_excerpt = pf('EXCERPT', raw)
               parsed_tags    = pf('TAGS',    raw)
+              parsed_img_alt = pf('IMAGE_ALT', raw)
               bm   = re.search(r'^BODY:\s*\n([\s\S]+)', raw, re.MULTILINE | re.IGNORECASE)
               body = bm.group(1).strip() if bm else raw
               for field in ['TITLE','SLUG','EXCERPT','TAGS','BODY']:
@@ -455,21 +456,46 @@ jobs:
                   fp2 = next((l.strip() for l in body.splitlines() if len(l.strip()) > 40), '')
                   parsed_excerpt = fp2[:155] if fp2 else f'Chronicle: {parsed_title}'[:155]
               if not parsed_tags:
-                  parsed_tags = f'chronicles, kenya, {hist_story.lower()[:30]}'
+                  parsed_tags = f'chronicles, kenya, {hist_story.lower().replace(" ", "-")[:30]}'
+              if not parsed_img_alt:
+                  parsed_img_alt = f'A satirical illustration related to: {parsed_title}'
               if not body or len(body) < 100:
                   raise ValueError('Body extraction failed')
               return {'TITLE': parsed_title, 'SLUG': parsed_slug,
-                      'EXCERPT': parsed_excerpt, 'TAGS': parsed_tags, 'BODY': body}
+                      'EXCERPT': parsed_excerpt, 'TAGS': parsed_tags, 'IMAGE_ALT': parsed_img_alt, 'BODY': body}
 
           def save_narrative(parsed, image_url):
               slug        = parsed['SLUG']
               canonical   = f'{SITE_BASE_URL}/article/{slug}'
               author_url  = f'{SITE_BASE_URL}/author/{NARRATOR_SLUG}'
               description = parsed['EXCERPT'].replace('"', "'")[:160]
+              image_alt   = parsed['IMAGE_ALT'].replace('"', "'")
               tags_list   = [t.strip().lower().replace(' ','-') for t in parsed['TAGS'].split(',') if t.strip()]
               if 'chronicles' not in tags_list:
                   tags_list.insert(0, 'chronicles')
               tags_json = json.dumps(tags_list)
+              lastmod_timestamp = publish_timestamp
+
+              schema_data = {
+                  "@context": "https://schema.org",
+                  "@type": "SatiricalArticle",
+                  "headline": parsed["TITLE"].replace('"', "'"),
+                  "image": [image_url],
+                  "datePublished": publish_timestamp,
+                  "dateModified": lastmod_timestamp,
+                  "author": [{"@type": "Person", "name": NARRATOR_NAME, "url": author_url}],
+                  "publisher": {
+                      "@type": "Organization",
+                      "name": "Za Ndani",
+                      "logo": {"@type": "ImageObject", "url": f"{SITE_BASE_URL}/images/logo.png"}
+                  },
+                  "description": description,
+                  "mainEntityOfPage": {"@type": "WebPage", "@id": canonical},
+                  "articleSection": "Chronicles",
+                  "keywords": ", ".join(tags_list)
+              }
+              schema_json_str = json.dumps(schema_data, indent=2).replace('"', '\\"')
+
               fm = '\n'.join([
                   '---',
                   f'title: "{parsed["TITLE"].replace(chr(34), chr(39))}"',
@@ -478,10 +504,13 @@ jobs:
                   f'author: "{NARRATOR_NAME}"',
                   f'author_url: "{author_url}"',
                   f'image: "{image_url}"',
+                  f'image_alt: "{image_alt}"',
                   'category: "Chronicles"',
                   f'tags: {tags_json}',
                   f'canonical: "{canonical}"',
                   f'date: "{publish_timestamp}"',
+                  f'lastmod: "{lastmod_timestamp}"',
+                  f'schema_json: "{schema_json_str}"',
                   '---',
               ])
               os.makedirs(POSTS_DIR, exist_ok=True)

@@ -545,6 +545,15 @@ jobs:
               meta_description = excerpt.replace('"', "'")
               print(f"Generated fallback description: {meta_description}")
 
+          alt_text_prompt = (
+              f'Create a concise, descriptive alt text for an image related to the news title: "{final_title}". '
+              'Describe the likely scene or subject for a visually impaired user. '
+              'Max 125 characters. Output ONLY the text.'
+          )
+          image_alt = gemini_generate(alt_text_prompt, "alt_text").replace('"', "'")
+          if not image_alt:
+              image_alt = final_title
+
           time.sleep(3)
 
           tags_prompt = (
@@ -569,6 +578,26 @@ jobs:
           canonical = f"{SITE_BASE_URL}/article/{slug}"
           author_url = f"{SITE_BASE_URL}/author/zed-mogaka"
           tags_json = json.dumps(article_tags)
+          lastmod_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+
+          schema_data = {
+              "@context": "https://schema.org",
+              "@type": "NewsArticle",
+              "headline": final_title.replace('"', "'"),
+              "image": [final_image],
+              "datePublished": publish_timestamp,
+              "dateModified": lastmod_timestamp,
+              "author": [{"@type": "Person", "name": "Zed Mogaka", "url": author_url}],
+              "publisher": {
+                  "@type": "Organization",
+                  "name": "Za Ndani",
+                  "logo": {"@type": "ImageObject", "url": f"{SITE_BASE_URL}/images/logo.png"}
+              },
+              "description": meta_description,
+              "mainEntityOfPage": {"@type": "WebPage", "@id": canonical}
+          }
+          schema_json_str = json.dumps(schema_data, indent=2).replace('"', '\\"')
+
           posts_dir = os.environ.get("POSTS_DIR", "content/posts")
           os.makedirs(posts_dir, exist_ok=True)
 
@@ -576,14 +605,18 @@ jobs:
               "---",
               'title: "' + final_title.replace('"', "'") + '"',
               'slug: "' + slug + '"',
+              f'description: "{meta_description}"',
               f'excerpt: "{meta_description}"',
               f'author: "Zed Mogaka"',
               'author_url: "' + author_url + '"',
               'image: "' + final_image + '"',
+              'image_alt: "' + image_alt + '"',
               'category: "Entertainment"',
               'tags: ' + tags_json,
               'canonical: "' + canonical + '"',
               'date: "' + publish_timestamp + '"',
+              'lastmod: "' + lastmod_timestamp + '"',
+              f'schema_json: "{schema_json_str}"',
               "---",
               article_text,
               ""
