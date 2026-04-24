@@ -1,15 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
-import { getAllPodcastEpisodes } from "@/lib/markdown";
+import { getAllPodcastEpisodes, type PodcastEpisode } from "@/lib/podcasts";
 import { Headphones, Calendar, Mic } from "lucide-react";
-
-// Define the type for a podcast episode based on the YAML frontmatter
-interface PodcastEpisode {
-  slug: string;
-  title: string;
-  date: string;
-  excerpt: string;
-  audio_url: string;
-}
 
 const PodcastPage = () => {
   // getAllPodcastEpisodes returns episodes sorted by date, descending

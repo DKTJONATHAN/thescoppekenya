@@ -204,7 +204,8 @@ jobs:
               print("Script generated successfully.")
 
               # 2. Generate Audio with ElevenLabs
-              audio_filename = f"weekly-roundup-{category.lower()}-{today_date_str}.mp3"
+              podcast_slug = f"weekly-roundup-{category.lower()}-{today_date_str}"
+              audio_filename = f"{podcast_slug}.mp3"
               audio_filepath = os.path.join(PODCAST_AUDIO_DIR, audio_filename)
 
               print(f"Generating audio with ElevenLabs (Voice: {ELEVENLABS_VOICE})...")
@@ -227,7 +228,7 @@ jobs:
               excerpt = gemini_generate(excerpt_prompt, temperature=0.7) or f"This week in {category}: We break down the top stories making headlines in Kenya."
 
               # 4. Create Markdown Post
-              post_filename = f"{today_date_str}-weekly-roundup-{category.lower()}.md"
+              post_filename = f"{podcast_slug}.md"
               post_filepath = os.path.join(PODCAST_POSTS_DIR, post_filename)
               post_title = f"Za Ndani Weekly: {category} Roundup ({week_of_date})"
               audio_url = f"/podcasts/{audio_filename}"
@@ -239,6 +240,7 @@ jobs:
 
               post_content = f"""---
 title: "{post_title.replace('"', "'")}"
+slug: "{podcast_slug}"
 date: "{publish_timestamp}"
 category: "Podcast"
 tags: ["podcast", "weekly roundup", "{category.lower()}"]
