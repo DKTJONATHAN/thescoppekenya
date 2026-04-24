@@ -1,4 +1,4 @@
-name: Weekly AI Audio Briefing
+name: Weekly AI Podcast Episode
 
 on:
   schedule:
@@ -14,12 +14,12 @@ permissions:
 
 env:
   DEFAULT_BRANCH: main
-  POSTS_DIR: content/posts
-  AUDIO_DIR: static/audio/briefings
-  BRIEFING_CONTENT_DIR: content/briefings
+  POSTS_DIR: content/posts # Source for stories
+  AUDIO_DIR: public/audio/podcasts # Destination for MP3 files
+  PODCAST_CONTENT_DIR: content/briefings # Destination for episode markdown
 
 jobs:
-  build-audio-briefing:
+  build-podcast-episode:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout repository
@@ -39,26 +39,24 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests google-genai
 
-      - name: Generate Audio Briefing
+      - name: Generate Podcast Episode
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          # Use the new secret for ElevenLabs
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           POSTS_DIR: ${{ env.POSTS_DIR }}
           AUDIO_DIR: ${{ env.AUDIO_DIR }}
-          BRIEFING_CONTENT_DIR: ${{ env.BRIEFING_CONTENT_DIR }}
+          PODCAST_CONTENT_DIR: ${{ env.PODCAST_CONTENT_DIR }}
         run: |
           python - <<'PYEOF'
           import os, json, re, time, datetime, sys, random
-          import requests # Make sure requests is imported
+          import requests
           from google import genai as genai_client
 
           # --- Constants ---
           POSTS_DIR = os.environ.get("POSTS_DIR", "content/posts")
-          AUDIO_DIR = os.environ.get("AUDIO_DIR", "static/audio/briefings") # Corrected variable name
-          AUDIO_DIR = os.environ.get("AUDIO_DIR", "static/audio/briefings")
-          BRIEFING_CONTENT_DIR = os.environ.get("BRIEFING_CONTENT_DIR", "content/briefings")
+          AUDIO_DIR = os.environ.get("AUDIO_DIR", "public/audio/podcasts")
+          PODCAST_CONTENT_DIR = os.environ.get("PODCAST_CONTENT_DIR", "content/briefings")
           SITE_BASE_URL = "https://zandani.co.ke"
           MAX_STORIES = 5
           DAYS_AGO = 7
@@ -164,18 +162,18 @@ jobs:
                   return False
 
           # --- Create briefing markdown file ---
-          def create_briefing_post(audio_url, script_text, stories):
+          def create_podcast_episode_post(audio_url, script_text, stories):
               today = datetime.datetime.utcnow()
               date_str = today.strftime("%Y-%m-%d")
               timestamp = today.strftime("%Y-%m-%dT%H:%M:%SZ")
               week_num = today.isocalendar()[1]
-              title = f"Za Ndani Weekly: Top Stories for Week {week_num}, {today.year}"
-              slug = f"za-ndani-weekly-briefing-{date_str}"
+              title = f"Za Ndani Podcast: Top Stories for Week {week_num}, {today.year}"
+              slug = f"za-ndani-podcast-{date_str}"
               excerpt = f"Listen to the top Kenyan entertainment and news stories for the week of {today.strftime('%B %d, %Y')}. Your weekly audio download from Za Ndani."
 
               frontmatter = '\n'.join([
                   "---",
-                  f'title: "{title}"',
+                  f'title: "{title.replace("\"", "\\\"")}"',
                   f'slug: "{slug}"',
                   f'date: "{timestamp}"',
                   f'excerpt: "{excerpt}"',
@@ -185,14 +183,14 @@ jobs:
                   "---"
               ])
               content = f"{frontmatter}\n\n## Transcript\n\n{script_text}\n"
-              os.makedirs(BRIEFING_CONTENT_DIR, exist_ok=True)
-              filepath = os.path.join(BRIEFING_CONTENT_DIR, f"{date_str}.md")
+              os.makedirs(PODCAST_CONTENT_DIR, exist_ok=True)
+              filepath = os.path.join(PODCAST_CONTENT_DIR, f"{slug}.md")
               with open(filepath, 'w', encoding='utf-8') as f:
                   f.write(content)
-              print(f"Briefing post created: {filepath}")
+              print(f"Podcast episode post created: {filepath}")
 
           # --- Main Execution ---
-          print("Starting Weekly Audio Briefing generation...")
+          print("Starting Weekly Podcast Episode generation...")
           recent_articles = find_recent_articles()
           if not recent_articles:
               print("No recent articles found. Exiting.")
@@ -206,27 +204,27 @@ jobs:
           if not script:
               sys.exit(1)
 
-          audio_filename = f"za-ndani-weekly-{datetime.datetime.utcnow().strftime('%Y-%m-%d')}.mp3"
+          audio_filename = f"za-ndani-podcast-{datetime.datetime.utcnow().strftime('%Y-%m-%d')}.mp3"
           audio_output_path = os.path.join(AUDIO_DIR, audio_filename)
           
           if not generate_audio(script, audio_output_path):
               sys.exit(1)
 
           # The URL path will be relative to the static dir
-          final_audio_url = f"/audio/briefings/{audio_filename}"
-          create_briefing_post(final_audio_url, script, stories_to_cover)
+          final_audio_url = f"/audio/podcasts/{audio_filename}"
+          create_podcast_episode_post(final_audio_url, script, stories_to_cover)
 
-          print("\nAudio briefing successfully generated!")
+          print("\nPodcast episode successfully generated!")
           PYEOF
 
-      - name: Commit and push briefing
+      - name: Commit and push podcast episode
         run: |
           git config user.name "Za Ndani Bot"
           git config user.email "bot@zandani.co.ke"
-          git add ${{ env.AUDIO_DIR }}/*.mp3 ${{ env.BRIEFING_CONTENT_DIR }}/*.md
+          git add ${{ env.AUDIO_DIR }}/*.mp3 ${{ env.PODCAST_CONTENT_DIR }}/*.md
           if git diff --staged --quiet; then
-            echo "No new briefing to commit."
+            echo "No new podcast episode to commit."
           else
-            git commit -m "content: Add weekly audio briefing"
+            git commit -m "content: Add weekly podcast episode"
             git push origin ${{ env.DEFAULT_BRANCH }}
           fi

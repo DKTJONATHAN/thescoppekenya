@@ -151,6 +151,38 @@ export function getLatestPosts(limit?: number): PostMetadata[] {
   return limit ? posts.slice(0, limit) : posts;
 }
 
+// ─── PODCAST EPISODE TYPES & LOADING ─────────────────────────────────────────
+export interface PodcastEpisode {
+  slug: string;
+  title: string;
+  date: string;
+  excerpt: string;
+  audio_url: string;
+}
+
+const podcastFiles = import.meta.glob('/content/briefings/*.md', { 
+  as: 'raw',
+  eager: true 
+});
+
+export function getAllPodcastEpisodes(): PodcastEpisode[] {
+  const episodes = Object.entries(podcastFiles).map(([path, rawContent]) => {
+    const { data } = parseFrontmatter(rawContent);
+    const slug = path.split('/').pop()?.replace('.md', '') || '';
+    
+    return {
+      slug: data.slug as string || slug,
+      title: data.title as string,
+      date: data.date as string,
+      excerpt: data.excerpt as string,
+      audio_url: data.audio_url as string,
+    };
+  });
+
+  // Sort by date, descending
+  return episodes.sort((a, b) => getSafeTime(b.date) - getSafeTime(a.date));
+}
+
 // ─── ADDED: Returns all slugs for pre-rendering at build time ─────────────────
 export function getAllPostSlugs(): string[] {
   return getAllPosts().map(post => post.slug);

@@ -33,6 +33,7 @@ const LiveScoresPage = lazy(() => import("./pages/LiveScoresPage"));
 const SitemapPage = lazy(() => import("./pages/SitemapPage"));
 const SitemapHtmlPage = lazy(() => import("./pages/SitemapHtmlPage"));
 const AuthorsPage = lazy(() => import("./pages/AuthorsPage"));
+const PodcastPage = lazy(() => import("./pages/PodcastPage"));
 const AuthorProfilePage = lazy(() => import("./pages/AuthorProfilePage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
@@ -162,6 +163,7 @@ const App = () => (
                 <Route path="/sitemap.xml" element={<SitemapPage />} />
                 <Route path="/sitemap" element={<SitemapHtmlPage />} />
                 <Route path="/authors" element={<AuthorsPage />} />
+                <Route path="/podcast" element={<PodcastPage />} />
                 <Route path="/author/:authorName" element={<AuthorProfilePage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
