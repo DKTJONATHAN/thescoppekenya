@@ -171,12 +171,16 @@ jobs:
               slug = f"za-ndani-podcast-{date_str}"
               excerpt = f"Listen to the top Kenyan entertainment and news stories for the week of {today.strftime('%B %d, %Y')}. Your weekly audio download from Za Ndani."
 
+              # To avoid SyntaxError with backslashes in f-strings, prepare the strings first.
+              safe_title = title.replace('"', '\\"')
+              safe_excerpt = excerpt.replace('"', '\\"')
+
               frontmatter = '\n'.join([
                   "---",
-                  f'title: "{title.replace("\"", "\\\"")}"',
+                  f'title: "{safe_title}"',
                   f'slug: "{slug}"',
                   f'date: "{timestamp}"',
-                  f'excerpt: "{excerpt}"',
+                  f'excerpt: "{safe_excerpt}"',
                   f'author: "Za Ndani"',
                   f'category: "Audio Briefing"',
                   f'audio_url: "{audio_url}"',
