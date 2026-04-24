@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/pulse-kenya-news-willis-raburu-politics-and-radio-jambo-reports</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-24T09:00:00.000Z</news:publication_date>
+      <news:title>Pulse Kenya News: Willis Raburu Politics and Radio Jambo Reports</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/football-fixtures-rangers-celtic-sunderland-and-leicester</loc>
     <news:news>
       <news:publication>
