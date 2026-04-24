@@ -250,6 +250,15 @@ jobs:
               return m.group(1).strip() if m else ""
 
           # ── Write the opinion piece ───────────────────────────────────────
+          def pf(label, text):
+              m = re.search(rf"^{label}:\s*(.+)$", text, re.MULTILINE | re.IGNORECASE)
+              if m:
+                  val = m.group(1).strip()
+                  if len(val) > 2:
+                      return val
+              m = re.search(rf"{label}:\s*(.+?)(?:\n|$)", text, re.IGNORECASE)
+              return m.group(1).strip() if m else ""
+
           def write_opinion(source: dict, longtail_keywords: str) -> dict:
               src_title = source["title"]
               src_slug  = source["slug"]

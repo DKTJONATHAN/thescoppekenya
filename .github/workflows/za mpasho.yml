@@ -373,6 +373,61 @@ jobs:
                       return window[:cut].strip(" .,:;!-")
               return window[:max_len].rsplit(' ', 1)[0].strip(" .,:;!-")
 
+          def clean_meta_text(value):
+              value = re.sub(r'\[([^\]]+)\]\((https?://[^\s)]+)\)', r'\1', value or "")
+              value = re.sub(r'https?://\S+', '', value)
+              value = re.sub(r'[#*_>`]+', ' ', value)
+              value = re.sub(r'\s+', ' ', value)
+              return value.strip(" \"'")
+
+          def trim_meta_text(value, max_len=155):
+              value = clean_meta_text(value)
+              if len(value) <= max_len:
+                  return value
+              shortened = value[:max_len + 1].rsplit(' ', 1)[0].rstrip(" ,;:-")
+              return shortened or value[:max_len].rstrip(" ,;:-")
+
+          def looks_like_lede_copy(candidate, source_text):
+              candidate_clean = clean_meta_text(candidate).lower()
+              lead = clean_meta_text("\n\n".join((source_text or "").split("\n\n")[:2]))[:260].lower()
+              if len(candidate_clean) < 40 or not lead:
+                  return False
+              if candidate_clean in lead:
+                  return True
+              words = candidate_clean.split()
+              if len(words) >= 8:
+                  for i in range(len(words) - 7):
+                      if " ".join(words[i:i + 8]) in lead:
+                          return True
+              return False
+
+          def finalise_meta_text(candidate, title, source_text):
+              cleaned = trim_meta_text(candidate)
+              if cleaned and len(cleaned) >= 135 and not looks_like_lede_copy(cleaned, source_text):
+                  return cleaned.replace('"', "'")
+              title_clean = clean_meta_text(title)
+              gist = " ".join(clean_meta_text(source_text).split()[:18]).strip()
+              fallback = f"{title_clean}. {gist}" if gist else title_clean
+              return trim_meta_text(fallback).replace('"', "'")
+
+          def enforce_internal_links(article_text, internal_links):
+              link_pairs = [
+                  (re.sub(r'\s+', ' ', link_title).strip(), link_url.strip())
+                  for link_title, link_url in re.findall(r'- \[(.*?)\]\((https?://[^\s)]+)\)', internal_links or "")
+              ]
+              if not article_text or not link_pairs:
+                  return article_text
+              for link_title, link_url in link_pairs:
+                  article_text = re.sub(
+                      rf'(?<!\]\(){re.escape(link_url)}(?=[\s).,;:!?]|$)',
+                      f'[{link_title}]({link_url})',
+                      article_text
+                  )
+              if re.search(r'\[[^\]]+\]\(https?://(?:www\.)?zandani\.co\.ke/article/[^)]+\)', article_text):
+                  return article_text
+              fallback_title, fallback_url = link_pairs[0]
+              return article_text.rstrip() + f"\n\nRelated reading: [{fallback_title}]({fallback_url})"
+
           # ── Scrape ───────────────────────────────────────────────────────
           article_links = get_target_urls()
           if not article_links:
@@ -425,13 +480,15 @@ jobs:
               "Write a single SEO meta description (140-155 characters) for this entertainment article.\n"
               "TITLE: " + final_title + "\n"
               "CONTENT: " + full_raw_text[:800] + "\n"
-              "Rules: Factual, no clickbait, starts with the subject or a verb, includes the key news fact. Output ONLY JSON: {\"excerpt\": \"...\"}"
+              "Rules: Factual, no clickbait, starts with the subject or a verb, includes the key news fact. Do not copy the opening paragraph verbatim or reuse long phrases from it. Output ONLY JSON: {\"excerpt\": \"...\"}"
           )
           excerpt_text = gemini_generate(excerpt_prompt, "excerpt")
           final_excerpt = ""
           if excerpt_text:
-              try: final_excerpt = json.loads(re.sub(r"^```json?\n?|```$", "", excerpt_text, flags=re.I|re.DOTALL).strip()).get('excerpt', "")[:160]
+              try: final_excerpt = finalise_meta_text(json.loads(re.sub(r"^```json?\n?|```$", "", excerpt_text, flags=re.I|re.DOTALL).strip()).get('excerpt', ""), final_title, full_raw_text)
               except: pass
+          if not final_excerpt:
+              final_excerpt = finalise_meta_text("", final_title, full_raw_text)
 
           current_key = next(key_cycle)
           client      = genai.Client(api_key=current_key)
@@ -448,6 +505,8 @@ jobs:
               "TITLE: " + final_title + "\n"
               "SOURCE TEXT:\n" + full_raw_text[:9500] + "\n"
               "INTERNAL LINKS TO WEAVE IN (use 1-2 naturally):\n" + internal_links + "\n\n"
+              "Internal-link rule: use 1-2 of the provided Za Ndani article URLs as proper Markdown hyperlinks inside sentences.\n"
+              "Format links exactly as [descriptive anchor text](full-url). Never paste a bare URL and never leave a raw link showing in the article.\n"
               "TASK: Write a vibrant Kenyan entertainment article for Za Ndani.\n"
               "Engaging, witty, celebrity-focused. No Sheng. No em-dashes. Single hyphens only.\n"
               "IMPORTANT: All dates and references must reflect " + current_year + ". Do not write about events as if they happened in any prior year.\n"
@@ -476,6 +535,7 @@ jobs:
           article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
           article_text = re.sub(r'\bmpasho\.co\.ke\b', 'zandani.co.ke', article_text, flags=re.I)
           article_text = re.sub(r'\bMpasho\b(?=\s+(has|have|said|reported|confirmed|noted|stated|revealed))', 'Za Ndani', article_text)
+          article_text = enforce_internal_links(article_text, internal_links)
 
           current_key = next(key_cycle)
           client      = genai.Client(api_key=current_key)
@@ -486,16 +546,19 @@ jobs:
               "Write a single meta description (140-155 characters) for this entertainment article.\n"
               "Title: " + final_title + "\n"
               "Article snippet: " + article_text[:600] + "\n"
-              "Rules: factual, no clickbait, starts with the subject or a verb, includes the key news fact.\n"
+              "Rules: factual, no clickbait, starts with the subject or a verb, includes the key news fact. Do not copy the opening paragraph verbatim.\n"
+              'Output ONLY JSON: {"description": "..."}'
           )
           desc_text        = gemini_generate(desc_prompt, "description")
           meta_description = ""
           if desc_text:
               try:
                   clean            = re.sub(r"^```json?\n?|```$", "", desc_text, flags=re.I|re.DOTALL).strip()
-                  meta_description = json.loads(clean).get('description', '')[:160].replace('"', "'")
+                  meta_description = finalise_meta_text(json.loads(clean).get('description', ''), final_title, article_text)
               except Exception as e:
                   print(f"Desc parse error: {e}")
+          if not meta_description:
+              meta_description = finalise_meta_text("", final_title, article_text)
 
           time.sleep(3)
 
