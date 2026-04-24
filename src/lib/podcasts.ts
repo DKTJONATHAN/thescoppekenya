@@ -14,7 +14,8 @@ export interface PodcastEpisode {
 // This uses Vite's special `import.meta.glob` feature to find all .md files
 // in the /content/podcasts/ directory at build time.
 const podcastImports = import.meta.glob("/content/podcasts/*.md", {
-  as: "raw",
+  query: "?raw",
+  import: "default",
   eager: true,
 });
 
