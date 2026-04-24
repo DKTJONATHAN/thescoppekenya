@@ -42,6 +42,7 @@ const SitemapHtmlPage = () => {
               { path: "/lifestyle", label: "Lifestyle" },
               { path: "/trending", label: "Trending" },
               { path: "/sports/live", label: "Live Scores" },
+              { path: "/briefings", label: "Audio Briefings" },
               { path: "/about", label: "About" },
               { path: "/contact", label: "Contact" },
               { path: "/privacy", label: "Privacy Policy" },

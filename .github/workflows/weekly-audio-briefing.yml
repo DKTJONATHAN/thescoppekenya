@@ -1,0 +1,232 @@
+name: Weekly AI Audio Briefing
+
+on:
+  schedule:
+    - cron: '0 8 * * 5' # Every Friday at 8:00 AM UTC
+  workflow_dispatch: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+  AUDIO_DIR: static/audio/briefings
+  BRIEFING_CONTENT_DIR: content/briefings
+
+jobs:
+  build-audio-briefing:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 20 # Fetch enough history to find recent posts
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-genai
+
+      - name: Generate Audio Briefing
+        env:
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Use the new secret for ElevenLabs
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
+          AUDIO_DIR: ${{ env.AUDIO_DIR }}
+          BRIEFING_CONTENT_DIR: ${{ env.BRIEFING_CONTENT_DIR }}
+        run: |
+          python - <<'PYEOF'
+          import os, json, re, time, datetime, sys, random
+          import requests # Make sure requests is imported
+          from google import genai as genai_client
+
+          # --- Constants ---
+          POSTS_DIR = os.environ.get("POSTS_DIR", "content/posts")
+          AUDIO_DIR = os.environ.get("AUDIO_DIR", "static/audio/briefings") # Corrected variable name
+          AUDIO_DIR = os.environ.get("AUDIO_DIR", "static/audio/briefings")
+          BRIEFING_CONTENT_DIR = os.environ.get("BRIEFING_CONTENT_DIR", "content/briefings")
+          SITE_BASE_URL = "https://zandani.co.ke"
+          MAX_STORIES = 5
+          DAYS_AGO = 7
+
+          # --- Find recent articles ---
+          def find_recent_articles():
+              articles = []
+              cutoff_date = datetime.datetime.now() - datetime.timedelta(days=DAYS_AGO)
+              if not os.path.exists(POSTS_DIR):
+                  return []
+              for filename in os.listdir(POSTS_DIR):
+                  if not filename.endswith('.md'):
+                      continue
+                  filepath = os.path.join(POSTS_DIR, filename)
+                  try:
+                      file_date_str = filename.split('-')[0:3]
+                      file_date = datetime.datetime.strptime('-'.join(file_date_str), '%Y-%m-%d')
+                      if file_date < cutoff_date:
+                          continue
+                      with open(filepath, 'r', encoding='utf-8') as f:
+                          content = f.read()
+                      title_m = re.search(r'title:\s*["\']?(.*?)["\']?\s*$', content, re.MULTILINE)
+                      excerpt_m = re.search(r'excerpt:\s*["\']?(.*?)["\']?\s*$', content, re.MULTILINE)
+                      if title_m and excerpt_m:
+                          articles.append({
+                              "title": title_m.group(1).strip(),
+                              "excerpt": excerpt_m.group(1).strip()
+                          })
+                  except Exception as e:
+                      print(f"Could not parse {filename}: {e}")
+              return articles
+
+          # --- Generate script with Gemini ---
+          def generate_podcast_script(stories):
+              story_block = "\n".join([f"- TITLE: {s['title']}\n  EXCERPT: {s['excerpt']}" for s in stories])
+              prompt = (
+                  "You are 'Za Ndani', the sharp, cynical host of the 'Za Ndani Weekly' audio briefing. "
+                  "Your tone is gossipy, authoritative, and you always have the inside scoop. "
+                  "Your audience are savvy Kenyans who want the real story behind the headlines.\n\n"
+                  "TASK: Create a 4-5 minute podcast script summarizing the following top stories from this week. "
+                  "Weave them together into a compelling narrative. Start with a catchy intro, transition smoothly "
+                  "between stories with your signature commentary, and end with a thought-provoking outro.\n\n"
+                  f"STORIES TO COVER:\n{story_block}\n\n"
+                  "RULES:\n"
+                  "- The script should be for a single speaker (you).\n"
+                  "- Speak directly to the listener. Use phrases like 'Now, listen to this...' or 'And get this...'.\n"
+                  "- Use sound effect cues in brackets, like [UPBEAT INTRO MUSIC] and [STORY TRANSITION SOUND].\n"
+                  "- Keep it engaging and fast-paced. No long pauses.\n"
+                  "- The final output should be ONLY the script text. No preamble or sign-off."
+              )
+              try:
+                  api_key = os.environ.get("GEMINI_WRITE_KEY") or os.environ.get("GEMINI_API_KEY")
+                  client = genai_client.Client(api_key=api_key)
+                  response = client.models.generate_content(model="gemini-1.5-flash", contents=prompt)
+                  return response.text.strip()
+              except Exception as e:
+                  print(f"Gemini script generation failed: {e}")
+                  return None
+
+          # --- Generate audio with ElevenLabs (Free Tier) ---
+          def generate_audio(script_text, output_path):
+              api_key = os.environ.get("ELEVENLABS_API_KEY")
+              if not api_key:
+                  print("::error:: ELEVENLABS_API_KEY secret not found. Cannot generate audio.")
+                  return False
+
+              # Voice ID for "Rachel" - a clear, professional voice. You can find other voice IDs in your ElevenLabs Voice Lab.
+              VOICE_ID = "21m00Tcm4TlvDq8ikWAM"
+              TTS_URL = f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}"
+
+              headers = {
+                  "Accept": "audio/mpeg",
+                  "Content-Type": "application/json",
+                  "xi-api-key": api_key
+              }
+
+              # Clean up sound effect cues for the audio generation
+              speech_text = re.sub(r'\[.*?\]', '...', script_text)
+
+              data = {
+                  "text": speech_text,
+                  "model_id": "eleven_multilingual_v2",
+                  "voice_settings": {
+                      "stability": 0.5,
+                      "similarity_boost": 0.75
+                  }
+              }
+
+              try:
+                  response = requests.post(TTS_URL, json=data, headers=headers, timeout=90)
+                  response.raise_for_status()
+                  os.makedirs(os.path.dirname(output_path), exist_ok=True)
+                  with open(output_path, 'wb') as f:
+                      for chunk in response.iter_content(chunk_size=1024):
+                          if chunk:
+                              f.write(chunk)
+                  print(f"Audio file saved to {output_path} using ElevenLabs.")
+                  return True
+              except Exception as e:
+                  print(f"ElevenLabs TTS generation failed: {e}")
+                  if 'response' in locals() and response.text:
+                      print(f"Response body: {response.text}")
+                  return False
+
+          # --- Create briefing markdown file ---
+          def create_briefing_post(audio_url, script_text, stories):
+              today = datetime.datetime.utcnow()
+              date_str = today.strftime("%Y-%m-%d")
+              timestamp = today.strftime("%Y-%m-%dT%H:%M:%SZ")
+              week_num = today.isocalendar()[1]
+              title = f"Za Ndani Weekly: Top Stories for Week {week_num}, {today.year}"
+              slug = f"za-ndani-weekly-briefing-{date_str}"
+              excerpt = f"Listen to the top Kenyan entertainment and news stories for the week of {today.strftime('%B %d, %Y')}. Your weekly audio download from Za Ndani."
+
+              frontmatter = '\n'.join([
+                  "---",
+                  f'title: "{title}"',
+                  f'slug: "{slug}"',
+                  f'date: "{timestamp}"',
+                  f'excerpt: "{excerpt}"',
+                  f'author: "Za Ndani"',
+                  f'category: "Audio Briefing"',
+                  f'audio_url: "{audio_url}"',
+                  "---"
+              ])
+              content = f"{frontmatter}\n\n## Transcript\n\n{script_text}\n"
+              os.makedirs(BRIEFING_CONTENT_DIR, exist_ok=True)
+              filepath = os.path.join(BRIEFING_CONTENT_DIR, f"{date_str}.md")
+              with open(filepath, 'w', encoding='utf-8') as f:
+                  f.write(content)
+              print(f"Briefing post created: {filepath}")
+
+          # --- Main Execution ---
+          print("Starting Weekly Audio Briefing generation...")
+          recent_articles = find_recent_articles()
+          if not recent_articles:
+              print("No recent articles found. Exiting.")
+              sys.exit(0)
+
+          # Select a diverse sample of stories
+          stories_to_cover = random.sample(recent_articles, min(len(recent_articles), MAX_STORIES))
+          print(f"Selected {len(stories_to_cover)} stories for the briefing.")
+
+          script = generate_podcast_script(stories_to_cover)
+          if not script:
+              sys.exit(1)
+
+          audio_filename = f"za-ndani-weekly-{datetime.datetime.utcnow().strftime('%Y-%m-%d')}.mp3"
+          audio_output_path = os.path.join(AUDIO_DIR, audio_filename)
+          
+          if not generate_audio(script, audio_output_path):
+              sys.exit(1)
+
+          # The URL path will be relative to the static dir
+          final_audio_url = f"/audio/briefings/{audio_filename}"
+          create_briefing_post(final_audio_url, script, stories_to_cover)
+
+          print("\nAudio briefing successfully generated!")
+          PYEOF
+
+      - name: Commit and push briefing
+        run: |
+          git config user.name "Za Ndani Bot"
+          git config user.email "bot@zandani.co.ke"
+          git add ${{ env.AUDIO_DIR }}/*.mp3 ${{ env.BRIEFING_CONTENT_DIR }}/*.md
+          if git diff --staged --quiet; then
+            echo "No new briefing to commit."
+          else
+            git commit -m "content: Add weekly audio briefing"
+            git push origin ${{ env.DEFAULT_BRANCH }}
+          fi
