@@ -90,6 +90,7 @@ jobs:
           SITE_URL = "https://www.pulse.co.ke/lifestyle"
           SITE_DOMAIN = "pulse.co.ke"
           SITE_BASE_URL = "https://zandani.co.ke"
+          FALLBACK_IMAGE = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
 
           BANNED_PHRASES = [
               "online debate in Kenya", "ignited a fiery online debate", "sparked a debate across", "caused a lot of online debate", "this April 2026", "this March 2026", "sasa basi", "melting the pot", "spill the tea", "tea is hot",
@@ -106,7 +107,7 @@ jobs:
 
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
-              if not api_key or not image_url: return image_url
+              if not api_key or not image_url: return ""
               try:
                   img_data = requests.get(image_url, timeout=15).content
                   img = Image.open(io.BytesIO(img_data))
@@ -121,11 +122,11 @@ jobs:
                       new_url = res.json()['data']['url']
                       print(f"Re-hosted as WebP: {new_url}")
                       return new_url
-                  print(f"ImgBB failed: {res.text}")
-                  return image_url
+                  print(f"ImgBB failed: {res.text}");
+                  return ""
               except Exception as e:
                   print(f"ImgBB/WebP error: {e}")
-                  return image_url
+                  return ""
 
           def get_target_urls():
               urls_list = []
@@ -395,8 +396,17 @@ jobs:
           excerpt_text = gemini_generate(excerpt_prompt, "excerpt")
           final_excerpt = ""
           if excerpt_text:
-              try: final_excerpt = json.loads(re.sub(r"^```json?\n?|```$", "", excerpt_text, flags=re.I|re.DOTALL).strip()).get('excerpt', "")[:160]
-              except: pass
+              try:
+                  clean_json = re.sub(r"^```json?\n?|```$", "", excerpt_text, flags=re.I|re.DOTALL).strip()
+                  final_excerpt = json.loads(clean_json).get('excerpt', "")[:160]
+              except Exception as e:
+                  print(f"Excerpt parse error: {e}")
+
+          if not final_excerpt and article_text:
+              first_p = next((p.strip() for p in article_text.split('\n') if len(p.strip()) > 50), article_text[:160])
+              excerpt = (first_p[:155] + '...') if len(first_p) > 155 else first_p
+              final_excerpt = excerpt.replace('"', "'")
+              print(f"Generated fallback excerpt: {final_excerpt}")
 
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
@@ -455,7 +465,15 @@ jobs:
                   data = json.loads(clean)
                   meta_description = data.get('description', '')[:160].replace('"', "'")
               except Exception as e:
-                  print(f"Desc parse error: {e}")
+                  print(f"Description parse error: {e}")
+
+          if not meta_description and final_excerpt:
+              meta_description = final_excerpt
+          elif not meta_description and article_text:
+              first_p = next((p.strip() for p in article_text.split('\n') if len(p.strip()) > 50), article_text[:160])
+              desc = (first_p[:155] + '...') if len(first_p) > 155 else first_p
+              meta_description = desc.replace('"', "'")
+              print(f"Generated fallback description: {meta_description}")
 
           time.sleep(3)
 
@@ -475,7 +493,9 @@ jobs:
               except Exception as e:
                   print(f"Tags parse error: {e}")
 
-          final_image = upload_to_imgbb(target_image) if target_image else ""
+          final_image = upload_to_imgbb(target_image)
+          if not final_image:
+              final_image = FALLBACK_IMAGE
           posts_dir = os.environ.get("POSTS_DIR", "content/posts")
           os.makedirs(posts_dir, exist_ok=True)
 
@@ -525,6 +545,3 @@ jobs:
         run: |
           curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
           echo "Google sitemap pinged"
-
-
-

@@ -57,6 +57,7 @@ jobs:
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
+          FALLBACK_IMAGE    = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
           MAX_AGE_HOURS     = 24
           TARGET_ACCOUNT    = "georgediano"
           MIN_CHARS         = 500
@@ -84,7 +85,7 @@ jobs:
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
               if not api_key or not image_url:
-                  return image_url
+                  return ""
 
               if image_url.startswith("https://media/"):
                   image_url = image_url.replace("https://media/", "https://pbs.twimg.com/media/")
@@ -110,10 +111,11 @@ jobs:
                   )
                   if res.status_code == 200:
                       return res.json()['data']['url']
-                  return image_url
+                  print(f"ImgBB failed: {res.text}")
+                  return ""
               except Exception as e:
                   print(f"ImgBB/WebP error: {e}")
-                  return image_url
+                  return ""
 
           NITTER_INSTANCES = [
               "https://nitter.net",
@@ -533,8 +535,15 @@ jobs:
               try:
                   clean = re.sub(r'^```json?\s*|\s*```$', '', desc_text, flags=re.I | re.DOTALL).strip()
                   meta_description = json.loads(clean).get("description", "")[:160].replace('"', "'")
-              except Exception:
+              except Exception as e:
+                  print(f"Desc parse error: {e}")
                   pass
+
+          if not meta_description and article_text:
+              first_p = next((p.strip() for p in article_text.split('\n') if len(p.strip()) > 50), article_text[:160])
+              excerpt = (first_p[:155] + '...') if len(first_p) > 155 else first_p
+              meta_description = excerpt.replace('"', "'")
+              print(f"Generated fallback description: {meta_description}")
 
           time.sleep(3)
 
@@ -552,7 +561,10 @@ jobs:
               except Exception:
                   pass
 
-          final_image = upload_to_imgbb(chosen["image"]) if chosen.get("image") else ""
+          raw_image_url = chosen.get("image")
+          final_image = upload_to_imgbb(raw_image_url) if raw_image_url else ""
+          if not final_image:
+              final_image = FALLBACK_IMAGE
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           canonical = f"{SITE_BASE_URL}/article/{slug}"
           author_url = f"{SITE_BASE_URL}/author/zed-mogaka"
@@ -610,6 +622,3 @@ jobs:
         run: |
           curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
           echo "Google sitemap pinged"
-
-
-

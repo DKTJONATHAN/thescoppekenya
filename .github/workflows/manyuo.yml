@@ -225,6 +225,7 @@ jobs:
           created_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
+          FALLBACK_IMAGE    = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
 
           MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
 
@@ -354,7 +355,7 @@ jobs:
 
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
-              if not api_key or not image_url: return image_url
+              if not api_key or not image_url: return ""
               try:
                   img_data = requests.get(image_url, timeout=15).content
                   img = Image.open(io.BytesIO(img_data))
@@ -370,11 +371,11 @@ jobs:
                       new_url = res.json()["data"]["url"]
                       print(f"Re-hosted as WebP: {new_url}")
                       return new_url
-                  print(f"ImgBB failed: {res.text}")
-                  return image_url
+                  print(f"ImgBB failed: {res.text}");
+                  return ""
               except Exception as e:
                   print(f"ImgBB/WebP error: {e}")
-                  return image_url
+                  return ""
 
           def get_real_image(query):
               key = os.environ.get("UNSPLASH_ACCESS_KEY")
@@ -903,6 +904,12 @@ jobs:
           body_m   = re.search(r'^BODY:\s*\n(.*)', raw_text, re.MULTILINE | re.DOTALL)
           body     = body_m.group(1).strip() if body_m else ''
 
+          if not excerpt and body:
+              first_p = next((p.strip() for p in body.split('\n') if len(p.strip()) > 50), body[:160])
+              e = (first_p[:155] + '...') if len(first_p) > 155 else first_p
+              excerpt = e.replace('"', "'")
+              print(f"Generated fallback excerpt: {excerpt}")
+
           # Apply editor title override (safety net in case AI ignored instruction)
           if custom_title_override:
               title = custom_title_override
@@ -922,8 +929,9 @@ jobs:
           img_query = img_kw or title[:40]
           if not primary_image:
               primary_image = get_real_image(img_query)
-          primary_image = upload_to_imgbb(primary_image)
-
+          final_image = upload_to_imgbb(primary_image)
+          if not final_image:
+              final_image = FALLBACK_IMAGE
           # ── Tags ──────────────────────────────────────────────────────────
           tags = [t.strip().lower() for t in tags_str.split(',') if t.strip()]
 
@@ -951,7 +959,7 @@ jobs:
               f'categories: ["{category}"]',
               f'tags: [{tags_yaml}]',
               f'excerpt: "{excerpt}"',
-              f'image: "{primary_image}"',
+              f'image: "{final_image}"',
               '---',
           ]
           frontmatter  = '\n'.join(frontmatter_lines)
@@ -1021,6 +1029,3 @@ jobs:
             echo "| Title Format | ${{ inputs.title_format }} |" >> $GITHUB_STEP_SUMMARY
             [ -n "${{ inputs.custom_title }}" ] && echo "| Custom Title Override | \`${{ inputs.custom_title }}\` |" >> $GITHUB_STEP_SUMMARY
           fi
-
-
-

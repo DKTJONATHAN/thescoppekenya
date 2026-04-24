@@ -487,6 +487,12 @@ jobs:
               if not parsed_slug and parsed_title:
                   parsed_slug = re.sub(r"[^a-z0-9]+", "-", parsed_title.lower()).strip("-")[:70]
 
+              if not parsed_excerpt and body:
+                  first_p = next((p.strip() for p in body.split('\n') if len(p.strip()) > 50), body[:160])
+                  e = (first_p[:155] + '...') if len(first_p) > 155 else first_p
+                  parsed_excerpt = e.replace('"', "'")
+                  print(f"  Generated fallback excerpt: {parsed_excerpt}")
+
               return {
                   "TITLE":              parsed_title,
                   "SLUG":               parsed_slug,
@@ -655,6 +661,3 @@ jobs:
         run: |
           curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
           echo "Google sitemap pinged"
-
-
-
