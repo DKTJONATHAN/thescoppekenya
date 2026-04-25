@@ -1,0 +1,315 @@
+name: Jona Munyi - Sports Scraper
+on:
+  schedule:
+    - cron: '45 1,6,11,16,21 * * *'
+  workflow_dispatch: {}
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+permissions:
+  contents: write
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+  MEMORY_FILE: .github/memory_jona_sports.json
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ hashFiles('**/playwright') }}
+          restore-keys: |
+            ${{ runner.os }}-playwright-
+
+      - name: Install system dependencies and Python packages
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y \
+            libnss3 libatk-bridge2.0-0 libdrm2 libxcomposite1 libxdamage1 \
+            libxrandr2 libgbm1 libasound2 fonts-liberation libatk1.0-0 \
+            libatspi2.0-0 libcairo2 libcups2 libdbus-1-3 libexpat1 \
+            libfontconfig1 libgcc1 libglib2.0-0 libgtk-3-0 libnspr4 \
+            libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 \
+            libx11-xcb1 libxcb1 libxext6 libxfixes3 libxi6 libxrender1 \
+            libxtst6 lsb-release wget xdg-utils
+          python -m pip install --upgrade pip
+          pip install \
+            requests \
+            google-genai \
+            beautifulsoup4 \
+            lxml \
+            playwright \
+            python-dateutil \
+            playwright-stealth==1.0.6 \
+            Pillow
+          playwright install chromium --with-deps
+
+      - name: Generate sports article with Gemini
+        env:
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
+          MEMORY_FILE: ${{ env.MEMORY_FILE }}
+        run: |
+          python << 'EOF'
+          import os, json, datetime, requests, re, time, sys, hashlib, textwrap, itertools, base64, random, io
+          from dateutil import parser as date_parser
+          from google import genai
+          from google.genai import types
+          from bs4 import BeautifulSoup
+          from playwright.sync_api import sync_playwright
+          from playwright_stealth import stealth_sync
+          from PIL import Image
+
+          current_utc = datetime.datetime.utcnow()
+          current_year = current_utc.strftime("%Y")
+          publish_timestamp = current_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
+          today_str = current_utc.strftime("%Y-%m-%d")
+          full_date_str = current_utc.strftime("%A, %B %d, %Y")
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MAX_AGE_HOURS = 24
+          SITE_URL = "https://www.bbc.com/sport/football"
+          SITE_DOMAIN = "bbc.com"
+          SITE_BASE_URL = "https://zandani.co.ke"
+
+          BANNED_PHRASES = [
+              "sasa basi", "melting the pot", "spill the tea", "tea is hot",
+              "grab your popcorn", "buckle up", "breaking news", "dive in",
+              "delve into", "moreover", "furthermore", "in conclusion",
+              "it's worth noting", "a testament to", "navigating the landscape",
+              "in today's digital age", "tapestry"
+          ]
+
+          def upload_to_imgbb(image_url):
+              api_key = os.environ.get("IMGBB_API_KEY")
+              if not api_key or not image_url: return image_url
+              try:
+                  img_data = requests.get(image_url, timeout=15).content
+                  img = Image.open(io.BytesIO(img_data))
+                  if img.mode in ('RGBA', 'LA', 'P'):
+                      img = img.convert('RGB')
+                  webp_buffer = io.BytesIO()
+                  img.save(webp_buffer, format='WEBP', quality=82)
+                  webp_buffer.seek(0)
+                  base64_image = base64.b64encode(webp_buffer.read()).decode('utf-8')
+                  res = requests.post("https://api.imgbb.com/1/upload", data={"key": api_key, "image": base64_image}, timeout=20)
+                  if res.status_code == 200:
+                      new_url = res.json()['data']['url']
+                      print(f"Re-hosted as WebP: {new_url}")
+                      return new_url
+                  return image_url
+              except: return image_url
+
+          def get_target_urls():
+              urls_list = []
+              seen = set()
+              try:
+                  with sync_playwright() as p:
+                      browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled"])
+                      context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
+                      page = context.new_page()
+                      stealth_sync(page)
+                      page.goto(SITE_URL, timeout=60000, wait_until="domcontentloaded")
+                      time.sleep(5)
+                      soup = BeautifulSoup(page.content(), 'html.parser')
+                      for a in soup.find_all('a', href=True):
+                          href = a.get('href', '').strip()
+                          if not href.startswith('/sport/football/') and 'bbc.com/sport/football/' not in href: continue
+                          full_url = href if href.startswith('http') else f'https://www.{SITE_DOMAIN}' + href
+                          if full_url not in seen:
+                              seen.add(full_url); urls_list.append(full_url)
+                      browser.close()
+              except: pass
+              return urls_list[:30]
+
+          def scrape_article(url):
+              try:
+                  with sync_playwright() as p:
+                      browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-dev-shm-usage"])
+                      context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
+                      page = context.new_page()
+                      stealth_sync(page)
+                      page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["image","font"] else route.continue_())
+                      page.goto(url, timeout=60000, wait_until="domcontentloaded")
+                      time.sleep(2)
+                      soup = BeautifulSoup(page.content(), "html.parser")
+                      browser.close()
+                      
+                      # Recency Check
+                      pub_time = None
+                      for script in soup.find_all('script', type='application/ld+json'):
+                          try:
+                              data = json.loads(script.string or '{}')
+                              if isinstance(data, list): data = data[0]
+                              if 'datePublished' in data:
+                                  pub_time = date_parser.parse(data['datePublished'])
+                                  break
+                          except: pass
+                      if not pub_time:
+                          meta = soup.find('meta', property='article:published_time') or soup.find('meta', {'name': 'date'})
+                          if meta and meta.get('content'): pub_time = date_parser.parse(meta['content'])
+                      
+                      if pub_time:
+                          if pub_time.tzinfo is None: pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
+                          age = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
+                          print(f"Date: {pub_time} ({age:.1f}h old)")
+                          if age > MAX_AGE_HOURS:
+                              print("Too old - skip")
+                              return None, None, None
+                      else:
+                          print("No date found - assume fresh for international sports")
+                      
+                      title = soup.title.string.strip() if soup.title else ""
+                      title = re.sub(r'\s*[-|].*', '', title).strip()
+                      article_text = "\n\n".join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 50)
+                      img_url = ""
+                      # 1. Try LD+JSON for actual article hero image (most reliable for BBC)
+                      for script in soup.find_all('script', type='application/ld+json'):
+                          try:
+                              import json
+                              data = json.loads(script.string or '{}')
+                              if isinstance(data, list): data = data[0]
+                              if 'image' in data:
+                                  img = data['image']
+                                  if isinstance(img, dict): img = img.get('url', '')
+                                  if isinstance(img, list): img = img[0] if img else ''
+                                  # BBC Logo check
+                                  if img and not any(x in img.lower() for x in ['logo', 'generic', 'placeholder', 'sport-logo']):
+                                      img_url = img; break
+                          except: pass
+                      
+                      # 2. Try OG/Twitter if no LD+JSON or if it was filtered
+                      if not img_url:
+                          og = soup.find('meta', property='og:image') or soup.find('meta', {'name': 'twitter:image'})
+                          if og:
+                              img = og.get('content', '')
+                              if img and not any(x in img.lower() for x in ['logo', 'generic', 'placeholder', 'sport-logo']):
+                                  img_url = img
+
+                      # 3. Last resort: Content figure image (ichef usually indicates real photo)
+                      if not img_url:
+                          fig = soup.find('figure')
+                          if fig and fig.find('img'):
+                              img_url = fig.find('img').get('src', '')
+
+                      print(f"Final Image: {img_url[:70]}")
+                      return article_text, img_url, title
+              except Exception as e:
+                  print(f"Scrape error: {e}")
+                  return None, None, None
+
+          def get_internal_context():
+              posts_dir = os.environ.get("POSTS_DIR", "content/posts")
+              if not os.path.exists(posts_dir): return ""
+              files = [f for f in os.listdir(posts_dir) if f.endswith(".md")]
+              sample = random.sample(files, min(len(files), 3))
+              links = []
+              for fn in sample:
+                  try:
+                      with open(os.path.join(posts_dir, fn), "r", encoding="utf-8") as f: content = f.read()
+                      title_m = re.search(r'title:\s*"(.*?)"', content)
+                      slug_m = re.search(r'slug:\s*"(.*?)"', content)
+                      if title_m and slug_m: links.append(f'- [{title_m.group(1)}]({SITE_BASE_URL}/article/{slug_m.group(1)})')
+                  except: pass
+              return "\n".join(links)
+
+          raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY1"] if os.environ.get(k)]
+          key_cycle = itertools.cycle(raw_keys)
+          client = genai.Client(api_key=next(key_cycle))
+
+          article_links = get_target_urls()
+          memory_path = os.environ.get('MEMORY_FILE')
+          memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
+          full_raw_text, target_image, target_title, final_hash = None, None, None, None
+          for link in article_links:
+              u_hash = hashlib.md5(link.encode()).hexdigest()
+              if u_hash in memory: continue
+              text, img, title = scrape_article(link)
+              if text and len(text) > 400:
+                  full_raw_text = text; target_image = img; target_title = title; final_hash = u_hash
+                  break
+          if not full_raw_text: sys.exit(0)
+
+          title_prompt = f"SCRAPED TITLE: {target_title}\nSNIPPET: {full_raw_text[:1000]}\nWrite a high-CTR news headline for international sports.\nOutput ONLY JSON: {{\"final_title\": \"Title Here\"}}"
+          resp = client.models.generate_content(model="gemini-3-flash-preview", contents=title_prompt)
+          final_title = target_title
+          try:
+              clean = re.sub(r"^```json?\n?|```$", "", resp.text, flags=re.I|re.DOTALL).strip()
+              final_title = json.loads(clean).get('final_title', target_title)
+          except: pass
+
+          internal_links = get_internal_context()
+          article_prompt = (
+              f"Current Date: {full_date_str}. The current year is {current_year}.\n"
+              f"TITLE: {final_title}\nSOURCE TEXT: {full_raw_text[:9500]}\n"
+              f"INTERNAL LINKS: {internal_links}\n\n"
+              f"TASK: Write an authoritative international sports article as Jona Munyi for Za Ndani.\n"
+              f"Focus on European and International football or global sports trends.\n"
+              f"Professional, fast-paced, insightful analysis. No Sheng. No em-dashes.\n"
+              f"CRITICAL: All dates and references must reflect {current_year}.\n"
+              f"STRUCTURE: lede paragraph (35-45 words), then ## and ### headings.\n"
+              f"BANNED PHRASES: {', '.join(BANNED_PHRASES)}\n"
+              f"CRITICAL BRANDING: You are writing FOR Za Ndani (zandani.co.ke). NEVER mention source sites."
+          )
+          article_resp = client.models.generate_content(model="gemini-2.5-flash", contents=article_prompt, config=types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]))
+          article_text = re.sub(r"^```(?:markdown)?\n?", "", article_resp.text).rstrip("```").strip()
+
+          desc_text = client.models.generate_content(model="gemini-3-flash-preview", contents=f"Write meta description (145 chars) for: {final_title}\nOutput ONLY JSON: {{\"description\": \"...\"}}").text
+          meta_description = ""
+          try: meta_description = json.loads(re.sub(r"^```json?\n?|```$", "", desc_text, flags=re.I|re.DOTALL).strip()).get('description', '')[:160]
+          except: pass
+
+          tags_text = client.models.generate_content(model="gemini-3-flash-preview", contents=f"Generate 4 lowercase hyphenated tags for: {final_title}\nOutput ONLY JSON: {{\"tags\": [...]}}").text
+          article_tags = []
+          try: article_tags = json.loads(re.sub(r"^```json?\n?|```$", "", tags_text, flags=re.I|re.DOTALL).strip()).get('tags', [])[:4]
+          except: pass
+
+          final_image = upload_to_imgbb(target_image) if target_image else ""
+          slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
+          filepath = os.path.join(os.environ.get("POSTS_DIR"), f"{today_str}-{slug}.md")
+          with open(filepath, "w", encoding="utf-8") as f:
+              f.write(f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\ndescription: \"{meta_description}\"\nauthor: \"Jona Munyi\"\nimage: \"{final_image}\"\ncategory: \"Sports\"\ntags: {json.dumps(article_tags)}\ndate: \"{publish_timestamp}\"\n---\n{article_text}")
+          memory.append(final_hash)
+          with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
+          print(f"Saved: {filepath}")
+          EOF
+
+      - name: Git Safety Pull
+        run: |
+          git config --global user.name "Jona Munyi"
+          git config --global user.email "bot@zandani.co.ke"
+          git add .
+          git stash -u
+          git fetch origin main
+          git pull origin main --rebase
+          git stash pop || echo "Nothing to pop"
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: "Jona Munyi <bot@zandani.co.ke>"
+          commit_message: "content: Sports update by Jona Munyi \U0001F3C6"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: 'content/posts/*.md .github/memory_jona_sports.json'
+
+      - name: Ping Google Sitemap
+        run: |
+          curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true

@@ -1,0 +1,1022 @@
+name: Manyuo
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_urls:
+        description: >
+          Paste source URLs separated by | or one per line.
+          Supports: YouTube channels/videos, Spotify artists/albums/tracks, news articles, etc.
+          Example: https://www.youtube.com/@artistname | https://open.spotify.com/artist/xxxxx
+        required: true
+        type: string
+
+      author:
+        description: 'Author persona to write as'
+        required: true
+        type: choice
+        options:
+          - Za Ndani
+          - Mutheu Ann
+          - Celestine Nzioka
+        default: Za Ndani
+
+      category:
+        description: 'Article category'
+        required: true
+        type: choice
+        options:
+          - Entertainment
+          - Politics
+          - News
+          - Gossip
+          - Sports
+          - Technology
+        default: Entertainment
+
+      article_angle:
+        description: 'Optional: guide the article angle (e.g. "focus on the controversy", "highlight the growth numbers")'
+        required: false
+        type: string
+        default: ''
+
+      # ─────────────────────────────────────────────────────────────────
+      # TITLE CONTROL INPUTS
+      # ─────────────────────────────────────────────────────────────────
+      title_keywords:
+        description: >
+          TITLE KEYWORDS (comma-separated). These words MUST appear in the generated title.
+          Example: "Wizkid, Grammy, 2025" or "Ruto, budget cuts, backlash"
+        required: false
+        type: string
+        default: ''
+
+      title_format:
+        description: >
+          TITLE FORMAT — forces AI to follow a specific headline pattern.
+          AUTO = let AI decide. LIST = "5 Reasons...", BIO = "Name: Age, Net Worth...",
+          SCANDAL = "Name Did X — Here is What Happened", GUIDE = "How to X in 2025",
+          TRENDING = "Name + dramatic hook", NEWS = straight factual headline.
+        required: false
+        type: choice
+        options:
+          - AUTO
+          - LIST
+          - BIO
+          - SCANDAL
+          - GUIDE
+          - TRENDING
+          - NEWS
+        default: AUTO
+
+      custom_title:
+        description: >
+          OVERRIDE TITLE — type an exact title to bypass AI title generation completely.
+          Leave blank to let AI write the title (using keywords/format above).
+          Example: "Wizkid Breaks Silence on Grammy Snub — Full Story"
+        required: false
+        type: string
+        default: ''
+
+      # ─────────────────────────────────────────────────────────────────
+      # PUBLISH SCHEDULING INPUTS
+      # ─────────────────────────────────────────────────────────────────
+      publish_mode:
+        description: >
+          PUBLISH MODE — "publish_now" commits and goes live immediately.
+          "schedule" sets a future publishDate; site rebuilds hourly to activate it.
+        required: true
+        type: choice
+        options:
+          - publish_now
+          - schedule
+        default: publish_now
+
+      scheduled_datetime:
+        description: >
+          SCHEDULED DATE & TIME (UTC, 24-hr). Only used when publish_mode = schedule.
+          Format: YYYY-MM-DD HH:MM  Example: 2025-04-20 09:30
+          Leave blank if publish_mode = publish_now.
+        required: false
+        type: string
+        default: ''
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+  MEMORY_FILE: .github/memory_multi_source.json
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-chromium
+          restore-keys: |
+            ${{ runner.os }}-playwright-
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y \
+            libnss3 libatk-bridge2.0-0 libdrm2 libxcomposite1 libxdamage1 \
+            libxrandr2 libgbm1 libasound2 fonts-liberation libatk1.0-0 \
+            libatspi2.0-0 libcairo2 libcups2 libdbus-1-3 libexpat1 \
+            libfontconfig1 libgcc1 libglib2.0-0 libgtk-3-0 libnspr4 \
+            libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 \
+            libx11-xcb1 libxcb1 libxext6 libxfixes3 libxi6 libxrender1 \
+            libxtst6 lsb-release wget xdg-utils
+          python -m pip install --upgrade pip
+          pip install \
+            requests \
+            google-genai \
+            beautifulsoup4 \
+            lxml \
+            playwright \
+            playwright-stealth==1.0.6 \
+            python-dateutil \
+            yt-dlp \
+            Pillow
+          playwright install chromium --with-deps
+
+      - name: Validate scheduled datetime
+        if: ${{ inputs.publish_mode == 'schedule' }}
+        run: |
+          SCHED="${{ inputs.scheduled_datetime }}"
+          if [ -z "$SCHED" ]; then
+            echo "::error::publish_mode is 'schedule' but scheduled_datetime is empty. Please provide a date/time."
+            exit 1
+          fi
+          python3 -c "
+          from dateutil import parser as dp
+          import sys
+          import datetime
+          try:
+              dt = dp.parse('$SCHED')
+              now = datetime.datetime.utcnow().replace(tzinfo=datetime.timezone.utc)
+              if dt.tzinfo is None:
+                  dt = dt.replace(tzinfo=datetime.timezone.utc)
+              if dt <= now:
+                  print('::warning::Scheduled time is in the past — article will publish immediately on next rebuild.')
+              else:
+                  print(f'Scheduled publish time validated: {dt.strftime(\"%Y-%m-%d %H:%M UTC\")}')
+          except Exception as e:
+              print(f'::error::Invalid scheduled_datetime format: {e}')
+              sys.exit(1)
+          "
+
+      - name: Scrape sources and generate article
+        env:
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
+          MEMORY_FILE: ${{ env.MEMORY_FILE }}
+          INPUT_URLS: ${{ inputs.source_urls }}
+          INPUT_AUTHOR: ${{ inputs.author }}
+          INPUT_CATEGORY: ${{ inputs.category }}
+          INPUT_ANGLE: ${{ inputs.article_angle }}
+          # ── Title control ──
+          INPUT_TITLE_KEYWORDS: ${{ inputs.title_keywords }}
+          INPUT_TITLE_FORMAT: ${{ inputs.title_format }}
+          INPUT_CUSTOM_TITLE: ${{ inputs.custom_title }}
+          # ── Scheduling ──
+          INPUT_PUBLISH_MODE: ${{ inputs.publish_mode }}
+          INPUT_SCHEDULED_DATETIME: ${{ inputs.scheduled_datetime }}
+        run: |
+          python - <<'PYEOF'
+          import os, json, datetime, requests, re, time, sys, hashlib, itertools, base64, random, io
+          from dateutil import parser as date_parser
+          from google import genai
+          from google.genai import types
+          from bs4 import BeautifulSoup
+          from playwright.sync_api import sync_playwright
+          from playwright_stealth import stealth_sync
+          from PIL import Image
+          import yt_dlp
+
+          today_str         = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          full_date_str     = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
+          created_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+          current_year      = datetime.datetime.utcnow().strftime("%Y")
+          SITE_BASE_URL     = "https://zandani.co.ke"
+
+          MODELS_TO_TRY = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
+
+          BANNED_PHRASES = [
+              "sasa basi", "melting the pot", "spill the tea", "tea is hot",
+              "grab your popcorn", "listen up", "buckle up", "breaking news",
+              "sherehe", "form ni gani", "udaku", "hello guys", "welcome back",
+              "mambo vipi", "niaje wasee", "karibuni", "tapestry", "dive in",
+              "delve into", "moreover", "furthermore", "in conclusion",
+              "it's worth noting", "a testament to", "navigating the landscape",
+              "in today's digital age", "shed light on",
+          ]
+
+          AUTHOR_PERSONAS = {
+              "Za Ndani": (
+                  "Za Ndani, a sharp and cynical Kenyan entertainment journalist. "
+                  "Emulate the engaging, dramatic tone of authentic Mpasho authors. "
+                  "Point out the angle mainstream media ignores."
+              ),
+              "Mutheu Ann": (
+                  "Mutheu Ann, a plugged-in Kenyan entertainment journalist writing for Za Ndani. "
+                  "Write in a passionate, high-energy style. Point out the critical angle mainstream media ignores."
+              ),
+              "Celestine Nzioka": (
+                  "Celestine Nzioka, a cynical and authoritative Kenyan political and news journalist. "
+                  "Be hard-hitting and expose the angle mainstream media ignores. Write with authority."
+              ),
+          }
+
+          AUTHOR_SLUGS = {
+              "Za Ndani": "za-ndani",
+              "Mutheu Ann": "mutheu-ann",
+              "Celestine Nzioka": "celestine-nzioka",
+          }
+
+          SITE_SELECTORS = {
+              "citizen.digital":           ["div.article-content", "div.single-post-content", "div.post-body"],
+              "nation.africa":             ["div.article-body", "div.story-content", "section.article__body"],
+              "standardmedia.co.ke":       ["div.article-body", "div.story-body", "div#article-content"],
+              "tuko.co.ke":                ["div.post-content", "div.article__body", "div.tuko-post-content"],
+              "kenyans.co.ke":             ["div.article-content", "div.news-body", "div.field-items"],
+              "mpasho.co.ke":              ["div.entry-content", "div.post-content", "article"],
+              "nairobinews.nation.africa": ["div.article-body", "div.story-content"],
+              "businessdailyafrica.com":   ["div.article-body", "div.story-content"],
+              "capitalfm.co.ke":           ["div.entry-content", "div.post-content"],
+              "k24tv.co.ke":               ["div.article-content", "div.post-body"],
+              "ntv.co.ke":                 ["div.article-content", "div.single-content"],
+              "ew.com":                    ["div.article-body", "section[class*=article]", "div[class*=longform]"],
+              "people.com":                ["div.article-body", "section.article-body", "div[class*=content-body]"],
+              "tmz.com":                   ["div.article-content", "div[class*=article__content]"],
+              "bbc.com":                   ["article", "div[data-component=text-block]", "div.article__body-content"],
+              "bbc.co.uk":                 ["article", "div[data-component=text-block]"],
+              "theguardian.com":           ["div.article-body-commercial-selector", "div[class*=article-body]"],
+              "reuters.com":               ["div[class*=article-body]", "div.StandardArticleBody_body"],
+              "apnews.com":                ["div.article-body", "div[class*=Article]", "div.RichTextStoryBody"],
+              "aljazeera.com":             ["div.article-body", "div[class*=wysiwyg]"],
+              "nytimes.com":               ["section[name=articleBody]", "div[class*=StoryBodyCompact]"],
+              "dailymail.co.uk":           ["div.article-text", "div#js-article-text"],
+              "thesun.co.uk":              ["div.article__content", "div[class*=article-content]"],
+              "independent.co.uk":         ["div[class*=article-body]", "div.sc-d7f02f38"],
+              "variety.com":               ["div.article-body", "div[class*=article-content]"],
+              "hollywoodreporter.com":     ["div.article-body", "div[class*=content-body]"],
+              "deadline.com":              ["div.a-content", "div[class*=article-content]"],
+          }
+
+          TITLE_SUFFIXES = [
+              " | Citizen Digital", " - Citizen Digital", " | Nation Africa", " - Nation Africa",
+              " | Nation", " - Nation", " | The Standard", " - The Standard",
+              " | Mpasho", " - Mpasho", " | Kenyans.co.ke", " - Kenyans.co.ke",
+              " | Tuko", " - Tuko", " | NTV Kenya", " - NTV Kenya",
+              " | K24", " - K24", " | Capital FM", " - Capital FM",
+              " | Business Daily", " - Business Daily", " | EW", " - EW",
+              " | People", " | TMZ", " | BBC", " - BBC News",
+              " | The Guardian", " | Reuters", " | AP News", " | Al Jazeera",
+              " | Variety", " | The Hollywood Reporter", " | Deadline",
+              " | The Sun", " | Daily Mail",
+          ]
+
+          # ── Helper: derive a URL slug from a plain-text title ──────────────
+          def title_to_slug(title):
+              s = title.lower()
+              s = re.sub(r"[''\".,!?:;/\\()]", '', s)
+              s = re.sub(r'[^a-z0-9\s-]', '', s)
+              s = re.sub(r'\s+', '-', s.strip())
+              s = re.sub(r'-+', '-', s).strip('-')
+              return s[:70]
+
+          def fmt_num(n):
+              if n is None: return "N/A"
+              try:
+                  n = int(n)
+                  if n >= 1_000_000_000: return f"{n/1_000_000_000:.2f}B"
+                  if n >= 1_000_000:     return f"{n/1_000_000:.2f}M"
+                  if n >= 1_000:         return f"{n/1_000:.1f}K"
+                  return str(n)
+              except Exception:
+                  return str(n)
+
+          def fmt_dur(secs):
+              if not secs: return "N/A"
+              try:
+                  secs = int(secs)
+                  m, s = divmod(secs, 60)
+                  h, m = divmod(m, 60)
+                  return f"{h}h {m}m {s}s" if h else f"{m}m {s}s"
+              except Exception:
+                  return str(secs)
+
+          def clean_url(url):
+              url = url.strip()
+              url = re.sub(r'[?&](utm_[^&]*|source=[^&]*|ref=[^&]*)', '', url)
+              return url.rstrip('?&')
+
+          def parse_urls(raw):
+              parts = re.split(r'[\n|,]+', raw)
+              return [clean_url(u.strip()) for u in parts if u.strip().startswith('http')]
+
+          def detect_platform(url):
+              u = url.lower()
+              if 'youtube.com' in u or 'youtu.be' in u: return 'youtube'
+              if 'spotify.com' in u:                    return 'spotify'
+              if 'twitter.com' in u or 'x.com' in u:   return 'twitter'
+              if 'tiktok.com' in u:                     return 'tiktok'
+              if 'instagram.com' in u:                  return 'instagram'
+              if 'soundcloud.com' in u:                 return 'soundcloud'
+              return 'article'
+
+          def upload_to_imgbb(image_url):
+              api_key = os.environ.get("IMGBB_API_KEY")
+              if not api_key or not image_url: return image_url
+              try:
+                  img_data = requests.get(image_url, timeout=15).content
+                  img = Image.open(io.BytesIO(img_data))
+                  if img.mode in ('RGBA', 'LA', 'P'):
+                      img = img.convert('RGB')
+                  webp_buf = io.BytesIO()
+                  img.save(webp_buf, format='WEBP', quality=82)
+                  webp_buf.seek(0)
+                  b64 = base64.b64encode(webp_buf.read()).decode("utf-8")
+                  res = requests.post("https://api.imgbb.com/1/upload",
+                                      data={"key": api_key, "image": b64}, timeout=20)
+                  if res.status_code == 200:
+                      new_url = res.json()["data"]["url"]
+                      print(f"Re-hosted as WebP: {new_url}")
+                      return new_url
+                  print(f"ImgBB failed: {res.text}")
+                  return image_url
+              except Exception as e:
+                  print(f"ImgBB/WebP error: {e}")
+                  return image_url
+
+          def get_real_image(query):
+              key = os.environ.get("UNSPLASH_ACCESS_KEY")
+              fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+              if not key: return fallback
+              try:
+                  r = requests.get(
+                      f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={key}",
+                      timeout=10)
+                  if r.status_code == 200:
+                      return r.json()["urls"]["regular"]
+              except Exception: pass
+              return fallback
+
+          def get_site_key(url):
+              for k in SITE_SELECTORS:
+                  if k in url: return k
+              return None
+
+          def scrape_youtube(url):
+              data = {'platform': 'YouTube', 'url': url}
+              is_channel = (
+                  any(x in url for x in ['/@', '/channel/', '/c/', '/user/'])
+                  or ('youtube.com' in url and '/watch' not in url and 'youtu.be' not in url)
+              )
+              print(f"[YouTube] {'channel' if is_channel else 'video'}: {url}")
+              if is_channel:
+                  opts = {'quiet': True, 'no_warnings': True, 'extract_flat': 'in_playlist', 'playlist_end': 20, 'ignoreerrors': True}
+                  try:
+                      with yt_dlp.YoutubeDL(opts) as ydl:
+                          info = ydl.extract_info(url, download=False)
+                      if not info:
+                          data['error'] = 'No data returned'; return data
+                      data['type']             = 'channel'
+                      data['channel_name']     = info.get('channel') or info.get('uploader') or info.get('title', 'Unknown')
+                      data['subscriber_count'] = info.get('channel_follower_count')
+                      data['description']      = (info.get('description') or '')[:800]
+                      data['total_views']      = info.get('view_count')
+                      data['video_count']      = info.get('playlist_count')
+                      entries = [e for e in (info.get('entries') or []) if e][:20]
+                      data['recent_videos'] = [
+                          {'title': e.get('title', ''), 'views': e.get('view_count'),
+                           'likes': e.get('like_count'), 'duration': e.get('duration'),
+                           'upload_date': e.get('upload_date', '')}
+                          for e in entries
+                      ]
+                      vcounts = [e.get('view_count', 0) for e in entries if e.get('view_count')]
+                      if vcounts:
+                          data['avg_views']  = int(sum(vcounts) / len(vcounts))
+                          data['peak_views'] = max(vcounts)
+                          data['min_views']  = min(vcounts)
+                      print(f"  Channel: {data['channel_name']} | Subs: {fmt_num(data['subscriber_count'])} | Videos: {len(data['recent_videos'])}")
+                  except Exception as e:
+                      print(f"  Channel error: {e}"); data['error'] = str(e)
+              else:
+                  opts = {
+                      'quiet': True, 'no_warnings': True, 'getcomments': True, 'ignoreerrors': True,
+                      'extractor_args': {'youtube': {'comment_sort': ['top'], 'max_comments': ['30', '0', '0', '0']}},
+                  }
+                  try:
+                      with yt_dlp.YoutubeDL(opts) as ydl:
+                          info = ydl.extract_info(url, download=False)
+                      if not info:
+                          data['error'] = 'No data returned'; return data
+                      data['type']             = 'video'
+                      data['title']            = info.get('title', '')
+                      data['channel_name']     = info.get('channel') or info.get('uploader', '')
+                      data['subscriber_count'] = info.get('channel_follower_count')
+                      data['views']            = info.get('view_count')
+                      data['likes']            = info.get('like_count')
+                      data['comment_count']    = info.get('comment_count')
+                      data['upload_date']      = info.get('upload_date', '')
+                      data['duration']         = info.get('duration')
+                      data['description']      = (info.get('description') or '')[:800]
+                      data['tags']             = (info.get('tags') or [])[:10]
+                      data['categories']       = info.get('categories', [])
+                      raw_comments = info.get('comments') or []
+                      top_comments = sorted(
+                          [c for c in raw_comments if c.get('like_count', 0) > 0],
+                          key=lambda c: c.get('like_count', 0), reverse=True
+                      )[:15]
+                      data['top_comments'] = [
+                          {'text': (c.get('text') or '')[:280], 'likes': c.get('like_count', 0), 'author': c.get('author', '')}
+                          for c in top_comments
+                      ]
+                      print(f"  Video: {data['title']} | Views: {fmt_num(data['views'])} | Comments: {fmt_num(data['comment_count'])}")
+                  except Exception as e:
+                      print(f"  Video error: {e}"); data['error'] = str(e)
+              return data
+
+          def scrape_spotify(url, pw_page):
+              data = {'platform': 'Spotify', 'url': url}
+              print(f"[Spotify] {url}")
+              try:
+                  pw_page.goto(url, timeout=55000, wait_until='networkidle')
+                  pw_page.wait_for_timeout(5000)
+                  pw_page.evaluate("window.scrollBy(0, document.body.scrollHeight / 2)")
+                  pw_page.wait_for_timeout(3000)
+                  soup      = BeautifulSoup(pw_page.content(), 'html.parser')
+                  full_text = soup.get_text(separator=' ', strip=True)
+                  if '/artist/' in url:
+                      data['type'] = 'artist'
+                      h1 = soup.find('h1')
+                      if h1: data['artist_name'] = h1.get_text(strip=True)
+                      ml = re.search(r'([\d,\.]+)\s*monthly listeners?', full_text, re.IGNORECASE)
+                      if ml: data['monthly_listeners'] = ml.group(1)
+                      fl = re.search(r'([\d,\.]+)\s*followers?', full_text, re.IGNORECASE)
+                      if fl: data['followers'] = fl.group(1)
+                      rows = soup.select('[data-testid="tracklist-row"]') or soup.select('[class*="TrackListRow"]')
+                      data['top_tracks'] = [r.get_text(separator=' | ', strip=True)[:200] for r in rows[:10]]
+                      alb  = soup.select('[data-testid="artist-discography-section"] a')
+                      data['recent_releases'] = list({a.get_text(strip=True) for a in alb if len(a.get_text(strip=True)) > 2})[:10]
+                  elif '/album/' in url:
+                      data['type'] = 'album'
+                      h1 = soup.find('h1')
+                      if h1: data['album_name'] = h1.get_text(strip=True)
+                      rows = soup.select('[data-testid="tracklist-row"]') or soup.select('[class*="TrackListRow"]')
+                      data['tracklist'] = [r.get_text(separator=' | ', strip=True)[:200] for r in rows[:25]]
+                      yr = re.search(r'\b(20\d{2})\b', full_text)
+                      if yr: data['release_year'] = yr.group(1)
+                  elif '/track/' in url:
+                      data['type'] = 'track'
+                      h1 = soup.find('h1')
+                      if h1: data['track_name'] = h1.get_text(strip=True)
+                  else:
+                      data['type'] = 'page'
+                  data['page_summary'] = full_text[:3500]
+                  print(f"  {data.get('type','?')}: {data.get('artist_name') or data.get('album_name') or data.get('track_name','N/A')} | Listeners: {data.get('monthly_listeners','N/A')}")
+              except Exception as e:
+                  print(f"  Spotify error: {e}"); data['error'] = str(e)
+              return data
+
+          def extract_html_content(soup, url):
+              page_title = ''
+              for sel in ['h1', 'h1.article-title', 'h1.post-title', 'h1.entry-title']:
+                  t = soup.select_one(sel)
+                  if t:
+                      page_title = t.get_text().strip()
+                      if page_title: break
+              if not page_title:
+                  tt = soup.find('title')
+                  if tt: page_title = tt.get_text().strip()
+              if not page_title:
+                  og = soup.find('meta', property='og:title')
+                  if og: page_title = og.get('content', '').strip()
+              for suf in TITLE_SUFFIXES:
+                  page_title = page_title.replace(suf, '').strip()
+
+              article_text = ''
+              site_key = get_site_key(url)
+              if site_key:
+                  for sel in SITE_SELECTORS[site_key]:
+                      c = soup.select_one(sel)
+                      if c:
+                          chunk = '\n\n'.join([p.get_text(strip=True) for p in c.find_all('p') if len(p.get_text(strip=True)) > 40])
+                          if len(chunk) > 300:
+                              article_text = chunk; break
+              if len(article_text) < 300:
+                  for c in soup.select(
+                      'article, [class*=article-body], [class*=article-content], '
+                      '[class*=article__body], [class*=post-content], [class*=entry-content], '
+                      '[class*=story-body], [class*=story-content], [class*=content-body]'
+                  ):
+                      cn = ' '.join(c.get('class', []))
+                      if any(x in cn for x in ['nav', 'sidebar', 'related', 'widget', 'comment', 'footer', 'header']): continue
+                      chunk = '\n\n'.join([p.get_text(strip=True) for p in c.find_all('p') if len(p.get_text(strip=True)) > 40])
+                      if len(chunk) > len(article_text): article_text = chunk
+              if len(article_text) < 300:
+                  all_p = soup.find_all('p')
+                  chunk = '\n\n'.join([p.get_text(strip=True) for p in all_p if len(p.get_text(strip=True)) > 40])
+                  if len(chunk) > 300: article_text = chunk
+              if len(article_text) < 300:
+                  body = soup.find('body')
+                  if body:
+                      for tag in body.find_all(['script', 'style', 'nav', 'header', 'footer', 'aside', 'noscript']): tag.decompose()
+                      lns = [l.strip() for l in body.get_text(separator='\n').split('\n') if len(l.strip()) > 50]
+                      article_text = '\n\n'.join(lns)
+
+              img_url = ''
+              for meta in soup.find_all('meta'):
+                  prop = meta.get('property', '') or meta.get('name', '')
+                  if prop in ['og:image', 'twitter:image', 'twitter:image:src']:
+                      c = meta.get('content', '')
+                      if c and 'logo' not in c.lower() and len(c) > 10:
+                          img_url = c; break
+              if not img_url:
+                  base_url = '/'.join(url.split('/')[:3])
+                  for sel in ['article img', '[class*=article] img', '[class*=hero] img', 'picture img', '.featured-image img']:
+                      li = soup.select_one(sel)
+                      if li:
+                          src = li.get('src') or li.get('data-src') or li.get('data-lazy-src', '')
+                          if src and 'data:image' not in src and 'placeholder' not in src.lower() and 'logo' not in src.lower():
+                              img_url = src if src.startswith('http') else base_url + '/' + src.lstrip('/')
+                              break
+              return article_text, img_url, page_title
+
+          def scrape_article_or_social(url):
+              print(f"[Article/Social] {url}")
+              data = {'platform': 'Article', 'url': url, 'type': 'article'}
+              best_text, best_img, best_title = '', '', ''
+              for name, wait_until, block_media in [
+                  ('networkidle', 'networkidle', False),
+                  ('domcontentloaded', 'domcontentloaded', False),
+                  ('light-block', 'domcontentloaded', True),
+              ]:
+                  try:
+                      with sync_playwright() as p:
+                          browser = p.chromium.launch(headless=True, args=['--no-sandbox', '--disable-dev-shm-usage', '--disable-blink-features=AutomationControlled'])
+                          ctx = browser.new_context(
+                              user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
+                              viewport={'width': 1920, 'height': 1080}
+                          )
+                          page = ctx.new_page()
+                          stealth_sync(page)
+                          if block_media:
+                              page.route('**/*', lambda r: r.abort() if r.request.resource_type in ['media', 'font'] else r.continue_())
+                          try: page.goto(url, timeout=60000, wait_until=wait_until)
+                          except Exception: pass
+                          try: page.wait_for_selector('p', timeout=8000)
+                          except Exception: pass
+                          page.evaluate('window.scrollBy(0, 800)')
+                          page.wait_for_timeout(4000)
+                          html = page.content()
+                          browser.close()
+                      soup = BeautifulSoup(html, 'html.parser')
+                      text, img, title = extract_html_content(soup, url)
+                      if len(text) > len(best_text): best_text, best_img, best_title = text, img, title
+                      if len(best_text) > 400: break
+                  except Exception as e:
+                      print(f"  Strategy {name} failed: {e}")
+              data['text']  = best_text
+              data['image'] = best_img
+              data['title'] = best_title
+              print(f"  Result: {len(data['text'])} chars | title: {data['title'][:60]}")
+              return data
+
+          def format_all_sources(all_data):
+              parts = []
+              for idx, d in enumerate(all_data, 1):
+                  plat = d.get('platform', 'Unknown')
+                  parts.append(f'\n{"=" * 60}')
+                  parts.append(f'SOURCE {idx}: {plat.upper()} -- {d.get("url", "")[:80]}')
+                  parts.append('=' * 60)
+                  if plat == 'YouTube':
+                      if d.get('type') == 'channel':
+                          parts.append(f'Channel Name   : {d.get("channel_name", "N/A")}')
+                          parts.append(f'Subscribers    : {fmt_num(d.get("subscriber_count"))}')
+                          parts.append(f'Total Views    : {fmt_num(d.get("total_views"))}')
+                          parts.append(f'Total Videos   : {d.get("video_count", "N/A")}')
+                          if d.get('avg_views'):
+                              parts.append(f'Avg Views/Video: {fmt_num(d["avg_views"])}')
+                              parts.append(f'Peak Views     : {fmt_num(d["peak_views"])}')
+                              parts.append(f'Lowest Views   : {fmt_num(d["min_views"])}')
+                          if d.get('description'):
+                              parts.append(f'Channel Bio    : {d["description"]}')
+                          if d.get('recent_videos'):
+                              parts.append('\nRECENT VIDEOS (title | views | likes | date):')
+                              for v in d['recent_videos']:
+                                  parts.append(f'  - {v["title"]} | Views: {fmt_num(v.get("views"))} | Likes: {fmt_num(v.get("likes"))} | Date: {v.get("upload_date", "")}')
+                      elif d.get('type') == 'video':
+                          parts.append(f'Video Title    : {d.get("title", "N/A")}')
+                          parts.append(f'Channel        : {d.get("channel_name", "N/A")}')
+                          parts.append(f'Channel Subs   : {fmt_num(d.get("subscriber_count"))}')
+                          parts.append(f'Views          : {fmt_num(d.get("views"))}')
+                          parts.append(f'Likes          : {fmt_num(d.get("likes"))}')
+                          parts.append(f'Comments       : {fmt_num(d.get("comment_count"))}')
+                          parts.append(f'Duration       : {fmt_dur(d.get("duration"))}')
+                          parts.append(f'Upload Date    : {d.get("upload_date", "N/A")}')
+                          if d.get('tags'):
+                              parts.append(f'Tags           : {", ".join(d["tags"][:8])}')
+                          if d.get('description'):
+                              parts.append(f'Description    : {d["description"]}')
+                          if d.get('top_comments'):
+                              parts.append('\nTOP COMMENTS (by engagement):')
+                              for c in d['top_comments'][:12]:
+                                  parts.append(f'  [{c["likes"]} likes] "{c["text"]}"')
+                  elif plat == 'Spotify':
+                      if d.get('artist_name'): parts.append(f'Artist           : {d["artist_name"]}')
+                      if d.get('album_name'):  parts.append(f'Album            : {d["album_name"]}')
+                      if d.get('track_name'):  parts.append(f'Track            : {d["track_name"]}')
+                      if d.get('monthly_listeners'): parts.append(f'Monthly Listeners: {d["monthly_listeners"]}')
+                      if d.get('followers'):   parts.append(f'Followers        : {d["followers"]}')
+                      if d.get('top_tracks'):
+                          parts.append('\nTOP TRACKS:')
+                          for t in d['top_tracks']: parts.append(f'  - {t}')
+                      if d.get('tracklist'):
+                          parts.append('\nTRACKLIST:')
+                          for t in d['tracklist']: parts.append(f'  - {t}')
+                      if d.get('recent_releases'):
+                          parts.append(f'Recent Releases  : {", ".join(d["recent_releases"][:8])}')
+                      if d.get('page_summary'):
+                          parts.append(f'\nFull page context:\n{d["page_summary"][:2000]}')
+                  elif plat == 'Article':
+                      parts.append(f'Headline : {d.get("title", "N/A")}')
+                      if d.get('text'):
+                          parts.append(f'\nArticle text:\n{d["text"][:5000]}')
+                  else:
+                      parts.append(f'Page text:\n{d.get("page_text", d.get("text", ""))[:3000]}')
+              return '\n'.join(parts)
+
+          # ================================================================
+          #  READ ALL INPUTS
+          # ================================================================
+          raw_input_urls           = os.environ.get('INPUT_URLS', '').strip()
+          author                   = os.environ.get('INPUT_AUTHOR', 'Za Ndani').strip()
+          category                 = os.environ.get('INPUT_CATEGORY', 'Entertainment').strip()
+          article_angle            = os.environ.get('INPUT_ANGLE', '').strip()
+          title_keywords_raw       = os.environ.get('INPUT_TITLE_KEYWORDS', '').strip()
+          title_format_choice      = os.environ.get('INPUT_TITLE_FORMAT', 'AUTO').strip()
+          custom_title_override    = os.environ.get('INPUT_CUSTOM_TITLE', '').strip()
+          publish_mode             = os.environ.get('INPUT_PUBLISH_MODE', 'publish_now').strip()
+          scheduled_datetime_str   = os.environ.get('INPUT_SCHEDULED_DATETIME', '').strip()
+
+          persona     = AUTHOR_PERSONAS.get(author, AUTHOR_PERSONAS['Za Ndani'])
+          posts_dir   = os.environ.get('POSTS_DIR', 'content/posts')
+          memory_path = os.environ.get('MEMORY_FILE', '.github/memory_multi_source.json')
+
+          # ── Resolve publish timestamp ─────────────────────────────────────
+          is_scheduled    = False
+          publish_timestamp = created_timestamp  # default: now
+
+          if publish_mode == 'schedule' and scheduled_datetime_str:
+              try:
+                  sched_dt = date_parser.parse(scheduled_datetime_str)
+                  if sched_dt.tzinfo is None:
+                      import datetime as _dt
+                      sched_dt = sched_dt.replace(tzinfo=_dt.timezone.utc)
+                  publish_timestamp = sched_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+                  is_scheduled = True
+                  print(f"\n[SCHEDULER] Article will be published at: {publish_timestamp}")
+              except Exception as e:
+                  print(f"[SCHEDULER] Could not parse scheduled_datetime ({e}) — defaulting to publish_now.")
+
+          # ── Build title-control prompt injections ─────────────────────────
+          title_keyword_block = ''
+          if title_keywords_raw:
+              title_keyword_block = (
+                  f'\nMANDATORY TITLE KEYWORDS: {title_keywords_raw}\n'
+                  'You MUST include ALL of these keywords verbatim in the title. Do NOT paraphrase or drop any of them.\n'
+              )
+
+          title_format_block = ''
+          if title_format_choice and title_format_choice != 'AUTO':
+              title_format_block = (
+                  f'\nFORCED TITLE FORMAT: You MUST use the {title_format_choice} format pattern from the Smart Title Engine below.\n'
+              )
+
+          custom_title_block = ''
+          if custom_title_override:
+              custom_title_block = (
+                  f'\nEDITOR TITLE OVERRIDE: The title has been set by the editor and cannot be changed:\n'
+                  f'  TITLE: {custom_title_override}\n'
+                  f'  SLUG : {title_to_slug(custom_title_override)}\n'
+                  'Output exactly those values for TITLE and SLUG. Still generate EXCERPT, TAGS, IMAGE_KEYWORD, and BODY as normal.\n'
+              )
+
+          # ── Parse & validate URLs ─────────────────────────────────────────
+          urls = parse_urls(raw_input_urls)
+          if not urls:
+              print('No valid URLs found. Exiting.')
+              sys.exit(1)
+
+          print(f'\nProcessing {len(urls)} URL(s):')
+          for u in urls: print(f'  > {u}')
+
+          url_hash = hashlib.md5('|'.join(sorted(urls)).encode()).hexdigest()
+          memory   = json.load(open(memory_path)) if os.path.exists(memory_path) else []
+          if url_hash in memory:
+              print('This URL combination was already processed. Exiting.')
+              sys.exit(0)
+
+          # ── Scrape sources ────────────────────────────────────────────────
+          all_source_data = []
+          primary_image   = ''
+          primary_title   = ''
+
+          yt_urls    = [u for u in urls if detect_platform(u) == 'youtube']
+          spot_urls  = [u for u in urls if detect_platform(u) == 'spotify']
+          other_urls = [u for u in urls if detect_platform(u) not in ('youtube', 'spotify')]
+
+          for u in yt_urls:
+              d = scrape_youtube(u)
+              all_source_data.append(d)
+
+          if spot_urls:
+              with sync_playwright() as pw:
+                  browser = pw.chromium.launch(headless=True, args=['--no-sandbox', '--disable-dev-shm-usage', '--disable-blink-features=AutomationControlled'])
+                  ctx  = browser.new_context(
+                      user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
+                      viewport={'width': 1920, 'height': 1080}
+                  )
+                  page = ctx.new_page()
+                  for u in spot_urls:
+                      d = scrape_spotify(u, page)
+                      all_source_data.append(d)
+                  browser.close()
+
+          for u in other_urls:
+              d = scrape_article_or_social(u)
+              all_source_data.append(d)
+              if not primary_image and d.get('image'): primary_image = d['image']
+              if not primary_title and d.get('title'): primary_title = d['title']
+
+          if not all_source_data:
+              print('All sources returned no data. Exiting.')
+              sys.exit(1)
+
+          combined_data = format_all_sources(all_source_data)
+          print(f'\nTotal research data: {len(combined_data)} chars')
+
+          # ── Internal links ────────────────────────────────────────────────
+          internal_links = ''
+          if os.path.exists(posts_dir):
+              files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
+              if files:
+                  sample = random.sample(files, min(len(files), 3))
+                  internal_links = 'PAST STORIES (PICK ONE AND LINK IT NATURALLY USING MARKDOWN):\n'
+                  for f in sample:
+                      try:
+                          with open(os.path.join(posts_dir, f), 'r', encoding='utf-8') as cf:
+                              txt = cf.read()
+                              tm  = re.search(r'title:\s*"(.*?)"', txt)
+                              t   = tm.group(1) if tm else f
+                              internal_links += f'- Title: {t} | Link: {SITE_BASE_URL}/article/{f.replace(".md","")}\n'
+                      except Exception: continue
+
+          banned_str = ', '.join(BANNED_PHRASES)
+          angle_str  = f'\nARTICLE ANGLE: {article_angle}\n' if article_angle else ''
+
+          # ── Build prompt ──────────────────────────────────────────────────
+          prompt = (
+              f"Current Date: {full_date_str}. Current Year: {current_year}.\n"
+              f"{angle_str}"
+              f"{custom_title_block}"
+              f"{title_keyword_block}"
+              f"{title_format_block}"
+              f"RESEARCH DATA FROM {len(all_source_data)} SOURCE(S):\n"
+              f"{combined_data[:16000]}\n\n"
+              f"{internal_links}\n\n"
+              f"TASK: Write a news/entertainment report as {persona}\n"
+              "You must use Google Search to verify any facts and find additional context.\n\n"
+              "CRITICAL RULES FOR USING THE RESEARCH DATA:\n"
+              "- Write with complete authority as a journalist who knows this subject deeply.\n"
+              "- NEVER reveal how you got the data. Do NOT say 'according to YouTube data', 'Spotify shows', 'we checked the channel', 'data reveals', 'scraped', or anything implying automated research.\n"
+              "- Reference numbers naturally: 'The channel commands X million subscribers' NOT 'data shows X subscribers'.\n"
+              "- Attribute fan reactions naturally: 'Fans flooded the comments...' or 'The reaction online has been...'.\n"
+              "- Use specific numbers, dates, and patterns from the research data to build credibility.\n"
+              "- When multiple platforms are available, weave them into one unified narrative.\n\n"
+              "SMART TITLE ENGINE (FOLLOW STRICTLY):\n"
+              "Step 1 - Extract PRIMARY KEYWORDS: Pull the 2-4 most important words or names. Do NOT rephrase them.\n"
+              "  - If MANDATORY TITLE KEYWORDS were supplied above, they ARE the primary keywords.\n"
+              "Step 2 - Classify content type as: LIST, BIO, SCANDAL, GUIDE, TRENDING, or NEWS.\n"
+              "  - If FORCED TITLE FORMAT was supplied, skip classification and use that format.\n"
+              "Step 3 - Pick the best formula:\n"
+              "  - LIST    : '[Number] + [Primary Keyword] + [Benefit]'\n"
+              "  - BIO     : '[Primary Keyword] + Real Name, Age, or Bio'\n"
+              "  - SCANDAL : '[Primary Keyword] + [What Happened] + [Consequence]'\n"
+              "  - GUIDE   : '[Primary Keyword] + [How or What] + [Year]'\n"
+              "  - TRENDING/NEWS: '[Primary Keyword] + [Short Dramatic Hook]'\n"
+              "Step 4 - TITLE: starts with PRIMARY KEYWORDS, under 60 characters.\n"
+              "Step 5 - SLUG: PRIMARY KEYWORDS only, lowercase, hyphen-separated, no filler words.\n\n"
+              "LANGUAGE MANDATE (STRICT):\n"
+              "- NO SHENG OR SWAHILI. Professional Kenyan English only.\n"
+              "- DO NOT use British slang fillers like 'Right,' or 'Well,'.\n"
+              "- NO bracketed subjective asides in body text.\n"
+              f"- BANNED PHRASES: {banned_str}.\n"
+              "- NEVER use em-dashes or double dashes. Single hyphens only.\n\n"
+              "STRICT OUTPUT FORMAT (output NOTHING else, no markdown fences):\n"
+              "TITLE: [Result of Smart Title Engine or Editor Override]\n"
+              "SLUG: [PRIMARY KEYWORDS only, hyphenated]\n"
+              "EXCERPT: [140-155 character meta description starting with subject or verb, includes key news fact]\n"
+              "TAGS: [comma, separated, lowercase, specific, english, seo, tags - no generic words like 'news']\n"
+              "IMAGE_KEYWORD: [2-4 word Unsplash search query for fallback image]\n"
+              "BODY:\n"
+              "[Article body.\n"
+              "STRUCTURE (follow exactly in this order):\n"
+              "1. A 35-45 word lede paragraph - NO heading above it. Answers who/what/when/where immediately. This is used as a Google Featured Snippet.\n"
+              "2. ## H2 subheading that contains at least one PRIMARY KEYWORD.\n"
+              "3. ### subheadings with supporting paragraphs that reuse PRIMARY KEYWORDS naturally.\n"
+              "DO NOT include title, author name, date, or any metadata in the body.]"
+          )
+
+          # ── Call Gemini API ───────────────────────────────────────────────
+          raw_keys = [os.environ.get('GEMINI_WRITE_KEY'), os.environ.get('GEMINI_API_KEY'), os.environ.get('GEMINI_API_KEY1')]
+          api_keys = [k for k in raw_keys if k and k.strip()]
+          if not api_keys:
+              print('No Gemini API keys provided.'); sys.exit(1)
+
+          key_cycle = itertools.cycle(api_keys)
+          raw_text  = ''
+          for attempt in range(len(api_keys) * len(MODELS_TO_TRY)):
+              api_key = next(key_cycle)
+              model   = MODELS_TO_TRY[attempt % len(MODELS_TO_TRY)]
+              try:
+                  client   = genai.Client(api_key=api_key)
+                  response = client.models.generate_content(
+                      model=model,
+                      contents=prompt,
+                      config=types.GenerateContentConfig(
+                          tools=[types.Tool(google_search=types.GoogleSearch())],
+                          temperature=0.7,
+                          max_output_tokens=8192,
+                      )
+                  )
+                  raw_text = response.text
+                  print(f"[Gemini] Generated with model: {model}")
+                  break
+              except Exception as e:
+                  print(f"[Gemini] Attempt {attempt + 1} failed ({model}): {e}")
+                  time.sleep(3)
+
+          if not raw_text:
+              print("All Gemini API attempts failed."); sys.exit(1)
+
+          # ── Parse AI output ───────────────────────────────────────────────
+          def extract_field(text, field):
+              m = re.search(rf'^{field}:\s*(.+)$', text, re.MULTILINE)
+              return m.group(1).strip().strip('"').strip("'") if m else ''
+
+          title    = extract_field(raw_text, 'TITLE')
+          slug     = extract_field(raw_text, 'SLUG')
+          excerpt  = extract_field(raw_text, 'EXCERPT')
+          tags_str = extract_field(raw_text, 'TAGS')
+          img_kw   = extract_field(raw_text, 'IMAGE_KEYWORD')
+          body_m   = re.search(r'^BODY:\s*\n(.*)', raw_text, re.MULTILINE | re.DOTALL)
+          body     = body_m.group(1).strip() if body_m else ''
+
+          # Apply editor title override (safety net in case AI ignored instruction)
+          if custom_title_override:
+              title = custom_title_override
+              slug  = title_to_slug(custom_title_override)
+              print(f"[Title] Using editor override: {title}")
+
+          if not title or not body:
+              print("AI failed to generate title or body."); sys.exit(1)
+
+          # Sanitize slug
+          slug = re.sub(r'[^a-z0-9-]', '', slug.lower().replace(' ', '-'))
+          slug = re.sub(r'-+', '-', slug).strip('-')[:70]
+          if not slug:
+              slug = title_to_slug(title)
+
+          # ── Image ─────────────────────────────────────────────────────────
+          img_query = img_kw or title[:40]
+          if not primary_image:
+              primary_image = get_real_image(img_query)
+          primary_image = upload_to_imgbb(primary_image)
+
+          # ── Tags ──────────────────────────────────────────────────────────
+          tags = [t.strip().lower() for t in tags_str.split(',') if t.strip()]
+
+          # ── Write frontmatter ─────────────────────────────────────────────
+          author_slug = AUTHOR_SLUGS.get(author, 'za-ndani')
+          tags_yaml   = ', '.join([f'"{t}"' for t in tags])
+
+          frontmatter_lines = [
+              '---',
+              f'title: "{title}"',
+              f'slug: "{slug}"',
+              f'date: "{created_timestamp}"',
+          ]
+          if is_scheduled:
+              frontmatter_lines.append(f'publishDate: "{publish_timestamp}"')
+              frontmatter_lines.append('draft: false')
+              print(f"[Scheduler] publishDate set to {publish_timestamp}")
+          else:
+              frontmatter_lines.append(f'publishDate: "{created_timestamp}"')
+              frontmatter_lines.append('draft: false')
+
+          frontmatter_lines += [
+              f'author: "{author}"',
+              f'authorSlug: "{author_slug}"',
+              f'categories: ["{category}"]',
+              f'tags: [{tags_yaml}]',
+              f'excerpt: "{excerpt}"',
+              f'image: "{primary_image}"',
+              '---',
+          ]
+          frontmatter  = '\n'.join(frontmatter_lines)
+          file_content = f'{frontmatter}\n\n{body}\n'
+          filename     = f'{today_str}-{slug}.md'
+          filepath     = os.path.join(posts_dir, filename)
+          os.makedirs(posts_dir, exist_ok=True)
+
+          with open(filepath, 'w', encoding='utf-8') as f:
+              f.write(file_content)
+
+          print(f"\n{'='*60}")
+          print(f"Article written : {filepath}")
+          print(f"Title           : {title}")
+          print(f"Slug            : {slug}")
+          print(f"Publish mode    : {'SCHEDULED -> ' + publish_timestamp if is_scheduled else 'IMMEDIATE'}")
+          print(f"{'='*60}")
+
+          # Update memory
+          memory.append(url_hash)
+          os.makedirs(os.path.dirname(memory_path), exist_ok=True)
+          with open(memory_path, 'w') as f:
+              json.dump(memory[-200:], f)
+
+          print("Done!")
+          PYEOF
+
+      - name: Commit and push article
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ${{ env.POSTS_DIR }}/ ${{ env.MEMORY_FILE }} || true
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            if [ "${{ inputs.publish_mode }}" = "schedule" ] && [ -n "${{ inputs.scheduled_datetime }}" ]; then
+              git commit -m "chore: schedule article for ${{ inputs.scheduled_datetime }} UTC [skip ci]"
+            else
+              git commit -m "chore: publish article via workflow_dispatch [skip ci]"
+            fi
+            git push origin ${{ env.DEFAULT_BRANCH }}
+          fi
+
+      - name: Summarize output
+        run: |
+          echo "## Article Generation Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ inputs.publish_mode }}" = "schedule" ]; then
+            echo "| Field | Value |" >> $GITHUB_STEP_SUMMARY
+            echo "|-------|-------|" >> $GITHUB_STEP_SUMMARY
+            echo "| Status | :calendar: **Scheduled** |" >> $GITHUB_STEP_SUMMARY
+            echo "| Scheduled For | \`${{ inputs.scheduled_datetime }} UTC\` |" >> $GITHUB_STEP_SUMMARY
+            echo "| Author | ${{ inputs.author }} |" >> $GITHUB_STEP_SUMMARY
+            echo "| Category | ${{ inputs.category }} |" >> $GITHUB_STEP_SUMMARY
+            echo "| Title Keywords | \`${{ inputs.title_keywords }}\` |" >> $GITHUB_STEP_SUMMARY
+            echo "| Title Format | ${{ inputs.title_format }} |" >> $GITHUB_STEP_SUMMARY
+            [ -n "${{ inputs.custom_title }}" ] && echo "| Custom Title Override | \`${{ inputs.custom_title }}\` |" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "> :information_source: The article has been committed to the repo. It will go live on the next hourly rebuild once \`${{ inputs.scheduled_datetime }} UTC\` is reached." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "| Field | Value |" >> $GITHUB_STEP_SUMMARY
+            echo "|-------|-------|" >> $GITHUB_STEP_SUMMARY
+            echo "| Status | :white_check_mark: **Published** |" >> $GITHUB_STEP_SUMMARY
+            echo "| Author | ${{ inputs.author }} |" >> $GITHUB_STEP_SUMMARY
+            echo "| Category | ${{ inputs.category }} |" >> $GITHUB_STEP_SUMMARY
+            echo "| Title Keywords | \`${{ inputs.title_keywords }}\` |" >> $GITHUB_STEP_SUMMARY
+            echo "| Title Format | ${{ inputs.title_format }} |" >> $GITHUB_STEP_SUMMARY
+            [ -n "${{ inputs.custom_title }}" ] && echo "| Custom Title Override | \`${{ inputs.custom_title }}\` |" >> $GITHUB_STEP_SUMMARY
+          fi
