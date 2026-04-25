@@ -5,6 +5,30 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/government-reduces-sugarcane-price-expects-lower-consumer-sugar-cost</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-25T09:00:00.000Z</news:publication_date>
+      <news:title>Government Reduces Sugarcane Price, Expects Lower Consumer Sugar Costs</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/lawyer-tom-ouya-imbukwa-postmortem-reveals-severe-injuries</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-25T09:00:00.000Z</news:publication_date>
+      <news:title>Lawyer Tom Ouya Imbukwa Postmortem Reveals Severe Injuries</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/prediction-markets-emerge-in-kenya-s-betting-industry</loc>
     <news:news>
       <news:publication>
@@ -781,18 +805,6 @@
       </news:publication>
       <news:publication_date>2026-04-23T09:00:00.000Z</news:publication_date>
       <news:title>Ruto, Oburu Form Broad-Based Committee After High-Level State House Meeting</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/awash-bank-lists-on-ethiopian-securities-exchange</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-23T09:00:00.000Z</news:publication_date>
-      <news:title>Awash Bank Lists on Ethiopian Securities Exchange</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
