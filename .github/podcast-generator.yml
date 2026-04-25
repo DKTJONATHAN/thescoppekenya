@@ -1,0 +1,290 @@
+name: Weekly Podcast Generator
+
+on:
+  schedule:
+    - cron: '0 8 * * 5' # Run every Friday at 8:00 AM UTC
+  workflow_dispatch:
+    inputs:
+      categories:
+        description: 'Comma-separated categories to generate (e.g., Entertainment,News)'
+        required: false
+        default: 'Entertainment,News,Sports,Politics'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+  PODCAST_POSTS_DIR: content/podcasts
+  PODCAST_AUDIO_DIR: static/podcasts
+
+jobs:
+  generate-podcast:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history to get article dates
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-genai elevenlabs python-dateutil
+
+      - name: Generate Podcast Audio and Posts
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          TARGET_CATEGORIES: ${{ inputs.categories || 'Entertainment,News,Sports,Politics' }}
+        run: |
+          python - <<'PYEOF'
+          import os
+          import re
+          import json
+          import time
+          import random
+          import datetime
+          import requests
+          import itertools
+          from dateutil.parser import parse as date_parser
+          from elevenlabs import generate as eleven_generate, set_api_key as eleven_set_key
+          from google import genai
+          from google.genai import types
+
+          # --- Configuration ---
+          POSTS_DIR = os.environ.get("POSTS_DIR", "content/posts")
+          PODCAST_POSTS_DIR = os.environ.get("PODCAST_POSTS_DIR", "content/podcasts")
+          PODCAST_AUDIO_DIR = os.environ.get("PODCAST_AUDIO_DIR", "static/podcasts")
+          SITE_BASE_URL = "https://zandani.co.ke"
+          TARGET_CATEGORIES = [cat.strip() for cat in os.environ.get("TARGET_CATEGORIES", "").split(',') if cat.strip()]
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-1.5-flash"]
+          ELEVENLABS_VOICE = "Antoni" # A good default voice
+
+          # --- Gemini API Setup ---
+          raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY1"] if os.environ.get(k)]
+          if not raw_keys:
+              raise RuntimeError("No Gemini API keys configured")
+          key_cycle = itertools.cycle(raw_keys)
+          client = genai.Client(api_key=next(key_cycle))
+
+          def rotate_client():
+              global client
+              client = genai.Client(api_key=next(key_cycle))
+              print("Rotated Gemini API key.")
+
+          def gemini_generate(prompt, temperature=0.8):
+              for model in MODELS_TO_TRY:
+                  for _ in range(len(raw_keys)):
+                      try:
+                          response = client.models.generate_content(
+                              model=model,
+                              contents=prompt,
+                              config=types.GenerateContentConfig(temperature=temperature),
+                          )
+                          return (response.text or "").strip()
+                      except Exception as exc:
+                          error_text = str(exc).lower()
+                          print(f"Gemini failure on {model}: {exc}")
+                          rotate_client()
+                          if any(token in error_text for token in ["429", "quota", "rate", "resource exhausted"]):
+                              time.sleep(5)
+                              continue
+                          break
+              return None
+
+          # --- Article & File Helpers ---
+          def get_field(content, field, default=""):
+              match = re.search(rf'^{field}:\s*["\']?(.*?)["\']?\s*$', content, re.MULTILINE)
+              return match.group(1).strip() if match else default
+
+          def get_recent_articles(days=7):
+              articles_by_cat = {cat: [] for cat in TARGET_CATEGORIES}
+              if not os.path.exists(POSTS_DIR):
+                  print(f"Posts directory not found: {POSTS_DIR}")
+                  return {}
+
+              cutoff_date = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=days)
+
+              for filename in os.listdir(POSTS_DIR):
+                  if not filename.endswith(".md"):
+                      continue
+                  filepath = os.path.join(POSTS_DIR, filename)
+                  with open(filepath, "r", encoding="utf-8") as f:
+                      content = f.read()
+
+                  date_str = get_field(content, "date")
+                  category = get_field(content, "category")
+
+                  if not date_str or category not in TARGET_CATEGORIES:
+                      continue
+
+                  try:
+                      article_date = date_parser(date_str)
+                      if article_date.tzinfo is None:
+                          article_date = article_date.replace(tzinfo=datetime.timezone.utc)
+
+                      if article_date >= cutoff_date:
+                          articles_by_cat[category].append({
+                              "title": get_field(content, "title", "Untitled"),
+                              "slug": get_field(content, "slug", filename.replace('.md', '')),
+                              "body": re.sub(r'^---\s*.*?\s*---\s*', '', content, flags=re.DOTALL).strip()[:2000]
+                          })
+                  except Exception as e:
+                      print(f"Could not parse date for {filename}: {e}")
+
+              return articles_by_cat
+
+          # --- Main Logic ---
+          print("Starting weekly podcast generation...")
+          print(f"Target categories: {', '.join(TARGET_CATEGORIES)}")
+
+          eleven_api_key = os.environ.get("ELEVENLABS_API_KEY")
+          if not eleven_api_key:
+              raise RuntimeError("ELEVENLABS_API_KEY is not set. Cannot generate audio.")
+          eleven_set_key(eleven_api_key)
+
+          articles = get_recent_articles()
+          today_date_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+          week_of_date = datetime.datetime.utcnow().strftime("%B %d, %Y")
+
+          for category, cat_articles in articles.items():
+              print(f"\n--- Processing Category: {category} ---")
+              if len(cat_articles) < 3:
+                  print(f"Skipping: Not enough articles this week (found {len(cat_articles)}, need 3).")
+                  continue
+
+              selected_articles = random.sample(cat_articles, 3)
+              print(f"Selected {len(selected_articles)} articles:")
+              for art in selected_articles:
+                  print(f"  - {art['title']}")
+
+              # 1. Generate Podcast Script with Gemini
+              article_summaries = "\n\n".join([
+                  f"ARTICLE {i+1} TITLE: {art['title']}\nARTICLE {i+1} CONTENT:\n{art['body']}"
+                  for i, art in enumerate(selected_articles)
+              ])
+
+              script_prompt = (
+                  "You are 'The Voice of Za Ndani', host of our weekly news roundup podcast. Your tone is engaging, authoritative, and speaks to a savvy Kenyan audience.\n\n"
+                  f"This segment is for our '{category}' roundup.\n\n"
+                  "Your task is to weave the following 3 articles into a single, coherent podcast script of about 400-500 words. Make it flow like a natural monologue.\n\n"
+                  "Structure:\n"
+                  "1. Start with a catchy intro for the segment (e.g., 'In the world of Kenyan {category} this week...').\n"
+                  "2. Summarize the first story, then smoothly transition to the second.\n"
+                  "3. Summarize the second, finding a common thread to the third.\n"
+                  "4. Summarize the third.\n"
+                  "5. Conclude with a brief, insightful wrap-up that ties them all together.\n\n"
+                  "Use professional, clear Kenyan English. No slang. Output ONLY the script text. No preamble or titles.\n\n"
+                  "--- ARTICLES TO SUMMARIZE ---\n"
+                  f"{article_summaries}"
+              )
+
+              print("Generating podcast script with Gemini...")
+              podcast_script = gemini_generate(script_prompt)
+              if not podcast_script:
+                  print("Failed to generate podcast script. Skipping category.")
+                  continue
+              print("Script generated successfully.")
+
+              # 2. Generate Audio with ElevenLabs
+              podcast_slug = f"weekly-roundup-{category.lower()}-{today_date_str}"
+              audio_filename = f"{podcast_slug}.mp3"
+              audio_filepath = os.path.join(PODCAST_AUDIO_DIR, audio_filename)
+
+              print(f"Generating audio with ElevenLabs (Voice: {ELEVENLABS_VOICE})...")
+              try:
+                  os.makedirs(PODCAST_AUDIO_DIR, exist_ok=True)
+                  audio_data = eleven_generate(text=podcast_script, voice=ELEVENLABS_VOICE, model="eleven_multilingual_v2")
+                  with open(audio_filepath, "wb") as f:
+                      f.write(audio_data)
+                  print(f"Audio saved to: {audio_filepath}")
+              except Exception as e:
+                  print(f"ElevenLabs audio generation failed: {e}")
+                  continue
+
+              # 3. Generate Excerpt for the post
+              excerpt_prompt = (
+                  f"Write a short, catchy excerpt (under 155 characters) for a podcast episode about '{category}' news. "
+                  f"The episode covers: '{selected_articles[0]['title']}', '{selected_articles[1]['title']}', and '{selected_articles[2]['title']}'.\n\n"
+                  "Output only the excerpt text."
+              )
+              excerpt = gemini_generate(excerpt_prompt, temperature=0.7) or f"This week in {category}: We break down the top stories making headlines in Kenya."
+
+              # 4. Create Markdown Post
+              post_filename = f"{podcast_slug}.md"
+              post_filepath = os.path.join(PODCAST_POSTS_DIR, post_filename)
+              post_title = f"Za Ndani Weekly: {category} Roundup ({week_of_date})"
+              audio_url = f"/podcasts/{audio_filename}"
+
+              article_links_md = "\n".join([
+                  f"- [{art['title']}]({SITE_BASE_URL}/article/{art['slug']})"
+                  for art in selected_articles
+              ])
+
+              post_content = "\n".join([
+                  "---",
+                  f'title: "{post_title.replace("\"", "'")}"',
+                  f'slug: "{podcast_slug}"',
+                  f'date: "{publish_timestamp}"',
+                  'category: "Podcast"',
+                  f'tags: ["podcast", "weekly roundup", "{category.lower()}"]',
+                  f'audio_url: "{audio_url}"',
+                  f'excerpt: "{excerpt.replace("\"", "'")}"',
+                  "---",
+                  "",
+                  f"This week on the Za Ndani Weekly Roundup, we dive into the biggest stories in Kenyan {category}.",
+                  "",
+                  "**Stories covered in this episode:**",
+                  "",
+                  article_links_md,
+                  "",
+                  "Listen to the full segment below."
+              ])
+
+              os.makedirs(PODCAST_POSTS_DIR, exist_ok=True)
+              with open(post_filepath, "w", encoding="utf-8") as f:
+                  f.write(post_content)
+              print(f"Podcast markdown post created: {post_filepath}")
+
+          print("\nPodcast generation process complete.")
+          PYEOF
+
+      - name: Git Safety Pull
+        run: |
+          git config --global user.name "Za Ndani Bot"
+          git config --global user.email "bot@zandani.co.ke"
+          git add .
+          git stash -u || true
+          git fetch origin main
+          git pull origin main --rebase
+          git stash pop || echo "Nothing to pop"
+
+      - name: Commit and push podcast files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: "Za Ndani Bot <bot@zandani.co.ke>"
+          commit_message: "content: new weekly podcast episodes [${{ github.run_number }}]"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: ${{ env.PODCAST_POSTS_DIR }}/*.md ${{ env.PODCAST_AUDIO_DIR }}/*.mp3
+
+      - name: Ping Google Sitemap
+        run: |
+          curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
+          echo "Google sitemap pinged"

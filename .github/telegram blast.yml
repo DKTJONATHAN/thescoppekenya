@@ -1,0 +1,207 @@
+name: Telegram Auto-Post with AI
+
+on:
+  push:
+    paths:
+      - 'content/posts/**.md'
+  workflow_dispatch:
+
+jobs:
+  post-to-telegram:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-genai
+
+      - name: Wait for Zandani to deploy
+        run: |
+          echo "Waiting 30 seconds for Zandani to deploy..."
+          sleep 30
+
+      - name: Detect posts & publish to Telegram via AI
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+        run: |
+          if [ -z "$BOT_TOKEN" ] || [ -z "$CHANNEL_ID" ]; then
+            echo "Telegram credentials not set, skipping"
+            exit 0
+          fi
+
+          if [ -z "$GEMINI_API_KEY" ] && [ -z "$GEMINI_WRITE_KEY" ] && [ -z "$GEMINI_API_KEY1" ]; then
+            echo "No Gemini keys set, skipping"
+            exit 0
+          fi
+
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
+
+          if [ -z "$CHANGED" ]; then
+            echo "No post changes detected"
+            exit 0
+          fi
+
+          export CHANGED_FILES="$CHANGED"
+
+          python3 << 'EOF'
+          import os
+          import re
+          import time
+          import requests
+          from google import genai
+          from google.genai import types
+
+          changed_files = [p for p in os.environ.get("CHANGED_FILES", "").strip().split("\n") if p]
+          bot_token = os.environ.get("BOT_TOKEN", "")
+          channel_id = os.environ.get("CHANNEL_ID", "")
+          site_url = "https://zandani.co.ke"
+          image_path = "temp_post_image.jpg"
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
+          raw_keys = [
+              os.environ.get("GEMINI_WRITE_KEY"),
+              os.environ.get("GEMINI_API_KEY"),
+              os.environ.get("GEMINI_API_KEY1"),
+          ]
+          gemini_keys = [key for key in raw_keys if key]
+
+          if not gemini_keys:
+              raise RuntimeError("No Gemini keys configured")
+
+          key_index = 0
+          client = genai.Client(api_key=gemini_keys[key_index])
+
+          def rotate_client():
+              global key_index, client
+              key_index = (key_index + 1) % len(gemini_keys)
+              client = genai.Client(api_key=gemini_keys[key_index])
+
+          def gemini_generate(prompt):
+              global client
+              for model in MODELS_TO_TRY:
+                  for _ in range(len(gemini_keys)):
+                      try:
+                          response = client.models.generate_content(
+                              model=model,
+                              contents=prompt,
+                              config=types.GenerateContentConfig(temperature=0.8),
+                          )
+                          return (response.text or "").strip()
+                      except Exception as exc:
+                          error_text = str(exc).lower()
+                          print(f"Gemini failure on {model}: {exc}")
+                          rotate_client()
+                          if any(token in error_text for token in ["429", "quota", "rate", "resource exhausted", "unavailable", "overloaded", "busy", "timeout"]):
+                              time.sleep(8)
+                              continue
+                          break
+              return None
+
+          def get_field(content, field, default=""):
+              match = re.search(rf'^{field}:\s*["\']?(.*?)["\']?\s*$', content, re.MULTILINE)
+              return match.group(1).strip() if match else default
+
+          def get_tags(content):
+              match = re.search(r'^tags:\s*\[(.*?)\]\s*$', content, re.MULTILINE)
+              if match:
+                  return [part.strip().strip('"\'') for part in match.group(1).split(',') if part.strip()]
+              return []
+
+          def clean_caption(text):
+              return text.replace("\u2014", "-").replace("\u2013", "-").strip()
+
+          for file_path in changed_files:
+              if not os.path.exists(file_path):
+                  continue
+
+              print(f"Processing {file_path}")
+              with open(file_path, "r", encoding="utf-8") as handle:
+                  content = handle.read()
+
+              slug = get_field(content, "slug") or os.path.basename(file_path).replace(".md", "")
+              title = get_field(content, "title", "Untitled Story")
+              author = get_field(content, "author", "Za Ndani")
+              excerpt = get_field(content, "excerpt", "Read the full story on Za Ndani.")
+              image_url = get_field(content, "image")
+              tags = get_tags(content)
+              article_url = f"{site_url}/article/{slug}"
+              hashtag_line = " ".join(f"#{re.sub(r'[^A-Za-z0-9]', '', tag)}" for tag in tags[:3] if tag)
+
+              prompt = (
+                  "You are the Telegram social media manager for Za Ndani, a Kenyan news platform.\n"
+                  "Write a short, catchy Telegram caption for this article.\n\n"
+                  f"Title: {title}\n"
+                  f"Author: {author}\n"
+                  f"Excerpt: {excerpt}\n"
+                  f"Suggested hashtags: {hashtag_line or '#Kenya #News'}\n\n"
+                  "Rules:\n"
+                  "- Keep it curiosity-driven and easy to read.\n"
+                  "- Use 2 or 3 relevant emojis.\n"
+                  "- Include the hashtags at the bottom.\n"
+                  "- Do not include the article URL in the caption.\n"
+                  "- Use clear Kenyan English.\n"
+                  "- Never use em dashes or en dashes. Use only hyphens (-).\n"
+                  "- Output only the caption text."
+              )
+
+              ai_caption = gemini_generate(prompt)
+              if not ai_caption:
+                  fallback_tags = hashtag_line or "#Kenya #News"
+                  ai_caption = f"{title}\n\n{excerpt}\n\n{fallback_tags}"
+
+              ai_caption = clean_caption(ai_caption)
+              if len(ai_caption) > 850:
+                  ai_caption = ai_caption[:847].rstrip() + "..."
+
+              final_text = f"{ai_caption}\n\nRead the full story by {author}: {article_url}"
+              has_image = False
+
+              if image_url.startswith("http"):
+                  try:
+                      response = requests.get(image_url, timeout=15)
+                      response.raise_for_status()
+                      with open(image_path, "wb") as image_file:
+                          image_file.write(response.content)
+                      has_image = True
+                  except Exception as exc:
+                      print(f"Image download failed: {exc}")
+
+              telegram_api_url = f"https://api.telegram.org/bot{bot_token}"
+              try:
+                  if has_image:
+                      endpoint = f"{telegram_api_url}/sendPhoto"
+                      with open(image_path, "rb") as image_file:
+                          result = requests.post(
+                              endpoint,
+                              data={"chat_id": channel_id, "caption": final_text},
+                              files={"photo": image_file},
+                              timeout=30,
+                          ).json()
+                  else:
+                      endpoint = f"{telegram_api_url}/sendMessage"
+                      result = requests.post(
+                          endpoint,
+                          data={"chat_id": channel_id, "text": final_text},
+                          timeout=30,
+                      ).json()
+
+                  print(f"Telegram API response: {result}")
+              except Exception as exc:
+                  print(f"Telegram request failed: {exc}")
+
+              if os.path.exists(image_path):
+                  os.remove(image_path)
+          EOF

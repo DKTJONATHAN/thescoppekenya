@@ -1,0 +1,198 @@
+name: Facebook Auto-Post with AI
+
+on:
+  push:
+    paths:
+      - 'content/posts/**.md'
+  workflow_dispatch:
+
+jobs:
+  post-to-facebook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-genai
+
+      - name: Wait for Zandani to deploy
+        run: |
+          echo "Waiting 30 seconds for Zandani to deploy..."
+          sleep 30
+
+      - name: Detect posts & publish to Facebook via AI
+        env:
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          FACEBOOK_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+        run: |
+          if [ -z "$FACEBOOK_PAGE_ID" ] || [ -z "$FACEBOOK_PAGE_TOKEN" ]; then
+            echo "Facebook credentials not set, skipping"
+            exit 0
+          fi
+
+          if [ -z "$GEMINI_API_KEY" ] && [ -z "$GEMINI_WRITE_KEY" ] && [ -z "$GEMINI_API_KEY1" ]; then
+            echo "No Gemini keys set, skipping"
+            exit 0
+          fi
+
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
+
+          if [ -z "$CHANGED" ]; then
+            echo "No post changes detected"
+            exit 0
+          fi
+
+          export CHANGED_FILES="$CHANGED"
+
+          python3 << 'EOF'
+          import os
+          import re
+          import time
+          import requests
+          from google import genai
+          from google.genai import types
+
+          changed_files = [p for p in os.environ.get("CHANGED_FILES", "").strip().split("\n") if p]
+          fb_page_id = os.environ.get("FACEBOOK_PAGE_ID", "")
+          fb_token = os.environ.get("FACEBOOK_PAGE_TOKEN", "")
+          site_url = "https://zandani.co.ke"
+          image_path = "temp_post_image.jpg"
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
+          raw_keys = [
+              os.environ.get("GEMINI_WRITE_KEY"),
+              os.environ.get("GEMINI_API_KEY"),
+              os.environ.get("GEMINI_API_KEY1"),
+          ]
+          gemini_keys = [key for key in raw_keys if key]
+
+          if not gemini_keys:
+              raise RuntimeError("No Gemini keys configured")
+
+          key_index = 0
+          client = genai.Client(api_key=gemini_keys[key_index])
+
+          def rotate_client():
+              global key_index, client
+              key_index = (key_index + 1) % len(gemini_keys)
+              client = genai.Client(api_key=gemini_keys[key_index])
+
+          def gemini_generate(prompt):
+              global client
+              for model in MODELS_TO_TRY:
+                  for _ in range(len(gemini_keys)):
+                      try:
+                          response = client.models.generate_content(
+                              model=model,
+                              contents=prompt,
+                              config=types.GenerateContentConfig(temperature=0.8),
+                          )
+                          return (response.text or "").strip()
+                      except Exception as exc:
+                          error_text = str(exc).lower()
+                          print(f"Gemini failure on {model}: {exc}")
+                          rotate_client()
+                          if any(token in error_text for token in ["429", "quota", "rate", "resource exhausted", "unavailable", "overloaded", "busy", "timeout"]):
+                              time.sleep(8)
+                              continue
+                          break
+              return None
+
+          def get_field(content, field, default=""):
+              match = re.search(rf'^{field}:\s*["\']?(.*?)["\']?\s*$', content, re.MULTILINE)
+              return match.group(1).strip() if match else default
+
+          def clean_caption(text):
+              return text.replace("\u2014", "-").replace("\u2013", "-").strip()
+
+          for file_path in changed_files:
+              if not os.path.exists(file_path):
+                  continue
+
+              print(f"Processing {file_path}")
+              with open(file_path, "r", encoding="utf-8") as handle:
+                  content = handle.read()
+
+              slug = get_field(content, "slug") or os.path.basename(file_path).replace(".md", "")
+              title = get_field(content, "title", "Untitled Story")
+              author = get_field(content, "author", "Za Ndani")
+              excerpt = get_field(content, "excerpt", "Read the full story on Za Ndani.")
+              image_url = get_field(content, "image")
+              article_url = f"{site_url}/article/{slug}"
+
+              prompt = (
+                  "You are the Facebook social media manager for Za Ndani, a Kenyan news platform.\n"
+                  "Write a short, punchy Facebook caption for this article.\n\n"
+                  f"Title: {title}\n"
+                  f"Author: {author}\n"
+                  f"Excerpt: {excerpt}\n\n"
+                  "Rules:\n"
+                  "- Tell readers to check the comments for the full story link.\n"
+                  "- Use 2 or 3 relevant emojis.\n"
+                  "- Include 2 or 3 relevant hashtags at the bottom.\n"
+                  "- Do not include the article URL in the caption.\n"
+                  "- Keep it under 3 short paragraphs.\n"
+                  "- Use clear Kenyan English.\n"
+                  "- Never use em dashes or en dashes. Use only hyphens (-).\n"
+                  "- Output only the caption text."
+              )
+
+              ai_caption = gemini_generate(prompt)
+              if not ai_caption:
+                  ai_caption = f"{title}\n\n{excerpt}\n\nCatch the full story in the comments below. #Kenya #News"
+
+              ai_caption = clean_caption(ai_caption)
+              has_image = False
+
+              if image_url.startswith("http"):
+                  try:
+                      response = requests.get(image_url, timeout=15)
+                      response.raise_for_status()
+                      with open(image_path, "wb") as image_file:
+                          image_file.write(response.content)
+                      has_image = True
+                  except Exception as exc:
+                      print(f"Image download failed: {exc}")
+
+              post_id = None
+              if has_image:
+                  endpoint = f"https://graph.facebook.com/v24.0/{fb_page_id}/photos"
+                  payload = {"message": ai_caption, "access_token": fb_token}
+                  with open(image_path, "rb") as image_file:
+                      result = requests.post(endpoint, data=payload, files={"source": image_file}, timeout=30).json()
+                  post_id = result.get("post_id") or result.get("id")
+              else:
+                  endpoint = f"https://graph.facebook.com/v24.0/{fb_page_id}/feed"
+                  payload = {"message": ai_caption, "access_token": fb_token}
+                  result = requests.post(endpoint, data=payload, timeout=30).json()
+                  post_id = result.get("id")
+
+              print(f"Facebook API response: {result}")
+
+              if post_id:
+                  time.sleep(10)
+                  comment_endpoint = f"https://graph.facebook.com/v24.0/{post_id}/comments"
+                  comment_payload = {
+                      "message": f"Read the full story by {author} here: {article_url}",
+                      "access_token": fb_token,
+                  }
+                  comment_result = requests.post(comment_endpoint, data=comment_payload, timeout=30).json()
+                  print(f"Comment response: {comment_result}")
+              else:
+                  print(f"Failed to publish Facebook post for {slug}")
+
+              if os.path.exists(image_path):
+                  os.remove(image_path)
+          EOF
