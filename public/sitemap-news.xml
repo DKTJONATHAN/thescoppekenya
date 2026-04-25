@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/epra-recovers-800-litres-of-fuel-from-illegal-siphoning-site-in-nair</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-25T09:00:00.000Z</news:publication_date>
+      <news:title>EPRA recovers 800 litres of fuel from illegal siphoning site in Nairobi</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/government-reduces-sugarcane-price-expects-lower-consumer-sugar-cost</loc>
     <news:news>
       <news:publication>
@@ -757,54 +769,6 @@
       </news:publication>
       <news:publication_date>2026-04-23T09:00:00.000Z</news:publication_date>
       <news:title>Ann Kioko Flees to Nairobi After US Home Is Smashed</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/residents-block-mumias-bungoma-highway-after-mp-wamboka-s-removal-fr</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-23T09:00:00.000Z</news:publication_date>
-      <news:title>Residents Block Mumias-Bungoma Highway After MP Wamboka's PIC Removal</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/dulla-makabila-defies-ali-kiba-over-witchcraft-claims</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-23T09:00:00.000Z</news:publication_date>
-      <news:title>Dulla Makabila Defies Ali Kiba Over Witchcraft Claims</news:title>
-      <news:genres>Entertainment,Music</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/phone-snatcher-trembles-after-nairobi-woman-catches-him</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-23T09:00:00.000Z</news:publication_date>
-      <news:title>Phone Snatcher Trembles After Nairobi Woman Catches Him</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/ruto-oburu-form-broad-based-committee-after-high-level-state-house-m</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-23T09:00:00.000Z</news:publication_date>
-      <news:title>Ruto, Oburu Form Broad-Based Committee After High-Level State House Meeting</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
