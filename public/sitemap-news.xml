@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/treasury-floats-tender-for-leasing-of-600-electric-government-vehicl</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-25T09:00:00.000Z</news:publication_date>
+      <news:title>Treasury floats tender for leasing of 600 electric government vehicles</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/tsc-outlines-procedure-for-recovering-misdirected-teacher-salaries</loc>
     <news:news>
       <news:publication>
@@ -757,30 +769,6 @@
       </news:publication>
       <news:publication_date>2026-04-23T09:00:00.000Z</news:publication_date>
       <news:title>Dr. Ofweneke Reacts After Daughter Faith Calls Him Bro</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/bolu-essien-s-girls-hostel-depicts-secondary-school-power-plays</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-23T09:00:00.000Z</news:publication_date>
-      <news:title>Bolu Essien’s Girls’ Hostel Depicts Secondary School Power Plays</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/ukraine-intelligence-identifies-kenyans-killed-fighting</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-23T09:00:00.000Z</news:publication_date>
-      <news:title>Ukraine Intelligence Identifies Kenyans Killed Fighting</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
