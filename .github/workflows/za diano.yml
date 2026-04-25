@@ -43,7 +43,7 @@ jobs:
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
-          python << 'PYEOF'
+          python - << 'PYEOF'
           import os, json, datetime, requests, re, time, sys, hashlib, itertools, base64, random, io
           from dateutil import parser as date_parser
           from google import genai
@@ -596,7 +596,7 @@ jobs:
               "description": meta_description,
               "mainEntityOfPage": {"@type": "WebPage", "@id": canonical}
           }
-          schema_json_str = json.dumps(schema_data, indent=2).replace('"', '\\"')
+          schema_json_str = json.dumps(schema_data, separators=(',', ':')).replace('"', '\\"')
 
           posts_dir = os.environ.get("POSTS_DIR", "content/posts")
           os.makedirs(posts_dir, exist_ok=True)

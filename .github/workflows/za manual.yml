@@ -509,7 +509,7 @@ jobs:
           git config --global user.name "Za Ndani Bot"
           git config --global user.email "bot@zandani.co.ke"
           git add .
-          git stash -u
+          git stash -u || true
           git fetch origin main
           git pull origin main --rebase
           git stash pop || echo "Nothing to pop"
@@ -521,5 +521,3 @@ jobs:
           commit_message: "content: Manual article from ${{ inputs.article_url }}"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_manual.json'
-
-

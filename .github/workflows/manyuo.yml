@@ -965,7 +965,7 @@ jobs:
               "description": description,
               "mainEntityOfPage": {"@type": "WebPage", "@id": canonical_url}
           }
-          schema_json_str = json.dumps(schema_data, indent=2).replace('"', '\\"')
+          schema_json_str = json.dumps(schema_data, separators=(',', ':')).replace('"', '\\"')
 
           frontmatter_lines = [
               '---',
@@ -1020,6 +1020,16 @@ jobs:
 
           print("Done!")
           PYEOF
+
+      - name: Git Safety Pull
+        run: |
+          git config --global user.name "Za Ndani Bot"
+          git config --global user.email "bot@zandani.co.ke"
+          git add .
+          git stash -u || true
+          git fetch origin ${{ env.DEFAULT_BRANCH }}
+          git pull origin ${{ env.DEFAULT_BRANCH }} --rebase
+          git stash pop || echo "Nothing to pop"
 
       - name: Commit and push article
         run: |

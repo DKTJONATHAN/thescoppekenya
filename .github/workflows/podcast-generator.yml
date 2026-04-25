@@ -238,24 +238,26 @@ jobs:
                   for art in selected_articles
               ])
 
-              post_content = f"""---
-title: "{post_title.replace('"', "'")}"
-slug: "{podcast_slug}"
-date: "{publish_timestamp}"
-category: "Podcast"
-tags: ["podcast", "weekly roundup", "{category.lower()}"]
-audio_url: "{audio_url}"
-excerpt: "{excerpt.replace('"', "'")}"
----
+              post_content = "\n".join([
+                  "---",
+                  f'title: "{post_title.replace("\"", "'")}"',
+                  f'slug: "{podcast_slug}"',
+                  f'date: "{publish_timestamp}"',
+                  'category: "Podcast"',
+                  f'tags: ["podcast", "weekly roundup", "{category.lower()}"]',
+                  f'audio_url: "{audio_url}"',
+                  f'excerpt: "{excerpt.replace("\"", "'")}"',
+                  "---",
+                  "",
+                  f"This week on the Za Ndani Weekly Roundup, we dive into the biggest stories in Kenyan {category}.",
+                  "",
+                  "**Stories covered in this episode:**",
+                  "",
+                  article_links_md,
+                  "",
+                  "Listen to the full segment below."
+              ])
 
-This week on the Za Ndani Weekly Roundup, we dive into the biggest stories in Kenyan {category}.
-
-**Stories covered in this episode:**
-
-{article_links_md}
-
-Listen to the full segment below.
-"""
               os.makedirs(PODCAST_POSTS_DIR, exist_ok=True)
               with open(post_filepath, "w", encoding="utf-8") as f:
                   f.write(post_content)
@@ -269,7 +271,7 @@ Listen to the full segment below.
           git config --global user.name "Za Ndani Bot"
           git config --global user.email "bot@zandani.co.ke"
           git add .
-          git stash -u
+          git stash -u || true
           git fetch origin main
           git pull origin main --rebase
           git stash pop || echo "Nothing to pop"
@@ -280,7 +282,7 @@ Listen to the full segment below.
           commit_author: "Za Ndani Bot <bot@zandani.co.ke>"
           commit_message: "content: new weekly podcast episodes [${{ github.run_number }}]"
           branch: ${{ env.DEFAULT_BRANCH }}
-          file_pattern: '${{ env.PODCAST_POSTS_DIR }}/*.md ${{ env.PODCAST_AUDIO_DIR }}/*.mp3'
+          file_pattern: ${{ env.PODCAST_POSTS_DIR }}/*.md ${{ env.PODCAST_AUDIO_DIR }}/*.mp3
 
       - name: Ping Google Sitemap
         run: |

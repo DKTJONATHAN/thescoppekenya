@@ -494,7 +494,7 @@ jobs:
                   "articleSection": "Chronicles",
                   "keywords": ", ".join(tags_list)
               }
-              schema_json_str = json.dumps(schema_data, indent=2).replace('"', '\\"')
+              schema_json_str = json.dumps(schema_data, separators=(',', ':')).replace('"', '\\"')
 
               fm = '\n'.join([
                   '---',
@@ -571,7 +571,7 @@ jobs:
           git config --global user.name "Za Ndani Bot"
           git config --global user.email "bot@zandani.co.ke"
           git add .
-          git stash -u
+          git stash -u || true
           git fetch origin main
           git pull origin main --rebase
           git stash pop || echo "Nothing to pop"

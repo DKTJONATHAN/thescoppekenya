@@ -235,19 +235,6 @@ jobs:
           # ── Robust field extractor ────────────────────────────────────────
           # Gemini with google_search often prepends reasoning/search text before
           # the structured block. We search the ENTIRE output, not just line-start.
-              "1. Start with a 35-45 word lede paragraph (who, what, when, where - no heading above it). This answers the core question immediately.\n"
-              "   - NEVER start with \"This has caused a lot of online debate in Kenya\" or \"sparked a firestorm\".\n"
-              "   - DO NOT include the current month and year in the opening sentence.\n"
-              # 1. Try anchored to line start (ideal case)
-              m = re.search(rf"^{label}:\s*(.+)$", text, re.MULTILINE | re.IGNORECASE)
-              if m:
-                  val = m.group(1).strip()
-                  # reject if it looks like it picked up a continuation line
-                  if len(val) > 2:
-                      return val
-              # 2. Fallback: find label anywhere in text
-              m = re.search(rf"{label}:\s*(.+?)(?:\n|$)", text, re.IGNORECASE)
-              return m.group(1).strip() if m else ""
 
           # ── Write the opinion piece ───────────────────────────────────────
           def pf(label, text):
@@ -281,77 +268,78 @@ jobs:
                       continue
               internal_links = "\n".join(internal_link_lines)
 
-              prompt = (
-                  f"Current Date: {full_date_str}. Year: {current_year}.\n\n"
-                  "════════════════════════════════════════════════\n"
-                  f"YOUR ROLE: You are {COLUMNIST_VOICE}\n\n"
-                  "OUTPUT TYPE: OPINION piece — not a news report, not a summary.\n"
-                  "You are REACTING to the source article with hard editorial judgment.\n"
-                  "════════════════════════════════════════════════\n\n"
-                  "SOURCE ARTICLE (your trigger — DO NOT copy it verbatim):\n"
-                  f'TITLE: "{src_title}"\n'
-                  f"CATEGORY: {src_cat}\n"
-                  f"URL: {SITE_BASE_URL}/article/{src_slug}\n"
-                  f"EXCERPT:\n{src_body[:1500]}\n\n"
-                  "════════════════════════════════════════════════\n"
-                  "SEO LONGTAIL KEYWORDS (MANDATORY USAGE):\n"
-                  f"Target keywords: {longtail_keywords}\n"
-                  "Rules for keyword usage:\n"
-                  "- Use at least 4 of these phrases naturally inside the article body\n"
-                  "- Use at least 1 longtail keyword in the article TITLE\n"
-                  "- Use at least 1 longtail keyword in the EXCERPT\n"
-                  "- Use at least 2 longtail keywords in subheadings (## or ###)\n"
-                  "- NEVER stuff keywords — they must read naturally in context\n"
-                  "════════════════════════════════════════════════\n\n"
-                  "RESEARCH INSTRUCTION:\n"
-                  f'1. Search Google for: "{src_title}"\n'
-                  f'2. Search Google for: "{src_title} {current_year} Kenya"\n'
-                  "3. Extract real facts, real quotes, real names, real dates.\n"
-                  "4. Ground every judgment in real evidence from your search.\n"
-                  "DO NOT fabricate facts or quotes.\n"
-                  "════════════════════════════════════════════════\n\n"
-                  "MANDATORY SOURCE LINK (link this naturally once mid-body):\n"
-                  f"Title: {src_title} | URL: {SITE_BASE_URL}/article/{src_slug}\n\n"
-                  f"OPTIONAL INTERNAL LINKS (use ONE if genuinely relevant):\n"
-                  f"{internal_links}\n\n"
-                  "════════════════════════════════════════════════\n"
-                  "WRITING RULES (ALL MANDATORY):\n"
-                  "- Be EXTREMELY judgmental. Render clear verdicts on every named person.\n"
-                  "- Call out hypocrisy, cowardice, greed, or incompetence — when evidence supports.\n"
-                  "- Praise boldness or courage just as forcefully when warranted.\n"
-                  "- Use short, punchy sentences. No diplomatic softening. No hedging.\n"
-                  "- Kenyan cultural context is welcome. Professional English only — no Sheng, no Swahili.\n"
-                  f"- BANNED PHRASES: {banned_str}\n"
-                  "- No em-dashes. Single hyphens only.\n"
-                  "- NEVER write the author name inside the article body.\n"
-                  "- Minimum 750 words.\n\n"
-                  "SMART TITLE ENGINE:\n"
-                  "Step 1 - Focus on the major keywords from the source story.\n"
-                  "Step 2 - Include at least ONE longtail keyword phrase from the list above.\n"
-                  "Step 3 - Make the title high-CTR and opinionated — it should signal a verdict, not just a topic.\n"
-                  "Step 4 - Under 65 characters.\n\n"
-                  "STRUCTURE:\n"
-              "1. Start with a 35-45 word lede paragraph (who, what, when, where - no heading above it). This answers the core question immediately.\n"
-              "   - NEVER start with \"This has caused a lot of online debate in Kenya\" or \"sparked a firestorm\".\n"
-              "   - DO NOT include the current month and year in the opening sentence.\n"
-                  "2. ## H2 subheading — must contain at least one longtail keyword.\n"
-                  "3. 4-6 body sections with ### subheadings — each judges at least one named actor.\n"
-                  "   At least 2 ### subheadings must contain a longtail keyword.\n"
-                  "4. Mandatory source link naturally embedded mid-body.\n"
-                  "5. Final paragraph: forceful verdict on what SHOULD happen next.\n\n"
-                  "CRITICAL OUTPUT RULES:\n"
-                  "- No preamble, no 'Here is the article', no markdown code fences\n"
-                  "- Do NOT wrap output in ``` or ```markdown\n"
-                  "- Do NOT add --- frontmatter delimiters anywhere\n"
-                  "- Start your response with exactly: TITLE:\n\n"
-                  "STRICT OUTPUT FORMAT:\n"
-                  "TITLE: [opinionated headline with longtail keyword, under 65 chars]\n"
-                  "SLUG: [lowercase-hyphen-slug]\n"
-                  "EXCERPT: [140-155 chars — states your verdict boldly, includes a longtail keyword]\n"
-                  "TAGS: [comma, separated, lowercase — include the longtail keyword phrases as tags]\n"
-                  "BODY:\n"
-                  "[Full opinion piece. No title. No author name. No byline. Just the article body.]\n"
-              )
+              prompt_lines = [
+                  f"Current Date: {full_date_str}. Year: {current_year}.\n\n",
+                  "════════════════════════════════════════════════\n",
+                  f"YOUR ROLE: You are {COLUMNIST_VOICE}\n\n",
+                  "OUTPUT TYPE: OPINION piece — not a news report, not a summary.\n",
+                  "You are REACTING to the source article with hard editorial judgment.\n",
+                  "════════════════════════════════════════════════\n\n",
+                  "SOURCE ARTICLE (your trigger — DO NOT copy it verbatim):\n",
+                  f'TITLE: "{src_title}"\n',
+                  f"CATEGORY: {src_cat}\n",
+                  f"URL: {SITE_BASE_URL}/article/{src_slug}\n",
+                  f"EXCERPT:\n{src_body[:1500]}\n\n",
+                  "════════════════════════════════════════════════\n",
+                  "SEO LONGTAIL KEYWORDS (MANDATORY USAGE):\n",
+                  f"Target keywords: {longtail_keywords}\n",
+                  "Rules for keyword usage:\n",
+                  "- Use at least 4 of these phrases naturally inside the article body\n",
+                  "- Use at least 1 longtail keyword in the article TITLE\n",
+                  "- Use at least 1 longtail keyword in the EXCERPT\n",
+                  "- Use at least 2 longtail keywords in subheadings (## or ###)\n",
+                  "- NEVER stuff keywords — they must read naturally in context\n",
+                  "════════════════════════════════════════════════\n\n",
+                  "RESEARCH INSTRUCTION:\n",
+                  f'1. Search Google for: "{src_title}"\n',
+                  f'2. Search Google for: "{src_title} {current_year} Kenya"\n',
+                  "3. Extract real facts, real quotes, real names, real dates.\n",
+                  "4. Ground every judgment in real evidence from your search.\n",
+                  "DO NOT fabricate facts or quotes.\n",
+                  "════════════════════════════════════════════════\n\n",
+                  "MANDATORY SOURCE LINK (link this naturally once mid-body):\n",
+                  f"Title: {src_title} | URL: {SITE_BASE_URL}/article/{src_slug}\n\n",
+                  f"OPTIONAL INTERNAL LINKS (use ONE if genuinely relevant):\n",
+                  f"{internal_links}\n\n",
+                  "════════════════════════════════════════════════\n",
+                  "WRITING RULES (ALL MANDATORY):\n",
+                  "- Be EXTREMELY judgmental. Render clear verdicts on every named person.\n",
+                  "- Call out hypocrisy, cowardice, greed, or incompetence — when evidence supports.\n",
+                  "- Praise boldness or courage just as forcefully when warranted.\n",
+                  "- Use short, punchy sentences. No diplomatic softening. No hedging.\n",
+                  "- Kenyan cultural context is welcome. Professional English only — no Sheng, no Swahili.\n",
+                  f"- BANNED PHRASES: {banned_str}\n",
+                  "- No em-dashes. Single hyphens only.\n",
+                  "- NEVER write the author name inside the article body.\n",
+                  "- Minimum 750 words.\n\n",
+                  "SMART TITLE ENGINE:\n",
+                  "Step 1 - Focus on the major keywords from the source story.\n",
+                  "Step 2 - Include at least ONE longtail keyword phrase from the list above.\n",
+                  "Step 3 - Make the title high-CTR and opinionated — it should signal a verdict, not just a topic.\n",
+                  "Step 4 - Under 65 characters.\n\n",
+                  "STRUCTURE:\n",
+                  "1. Start with a 35-45 word lede paragraph (who, what, when, where - no heading above it). This answers the core question immediately.\n",
+                  "   - NEVER start with \"This has caused a lot of online debate in Kenya\" or \"sparked a firestorm\".\n",
+                  "   - DO NOT include the current month and year in the opening sentence.\n",
+                  "2. ## H2 subheading — must contain at least one longtail keyword.\n",
+                  "3. 4-6 body sections with ### subheadings — each judges at least one named actor.\n",
+                  "   At least 2 ### subheadings must contain a longtail keyword.\n",
+                  "4. Mandatory source link naturally embedded mid-body.\n",
+                  "5. Final paragraph: forceful verdict on what SHOULD happen next.\n\n",
+                  "CRITICAL OUTPUT RULES:\n",
+                  "- No preamble, no 'Here is the article', no markdown code fences\n",
+                  "- Do NOT wrap output in ``` or ```markdown\n",
+                  "- Do NOT add --- frontmatter delimiters anywhere\n",
+                  "- Start your response with exactly: TITLE:\n\n",
+                  "STRICT OUTPUT FORMAT:\n",
+                  "TITLE: [opinionated headline with longtail keyword, under 65 chars]\n",
+                  "SLUG: [lowercase-hyphen-slug]\n",
+                  "EXCERPT: [140-155 chars — states your verdict boldly, includes a longtail keyword]\n",
+                  "TAGS: [comma, separated, lowercase — include the longtail keyword phrases as tags]\n",
+                  "BODY:\n",
+                  "[Full opinion piece. No title. No author name. No byline. Just the article body.]\n",
+              ]
+              prompt = "\n".join(prompt_lines)
 
               raw = gemini_generate(prompt, temperature=0.95)
 
@@ -528,7 +516,7 @@ jobs:
           git config --global user.name "Za Ndani Bot"
           git config --global user.email "bot@zandani.co.ke"
           git add .
-          git stash -u
+          git stash -u || true
           git fetch origin main
           git pull origin main --rebase
           git stash pop || echo "Nothing to pop"
