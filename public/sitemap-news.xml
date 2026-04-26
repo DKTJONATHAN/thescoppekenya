@@ -724,40 +724,4 @@
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
-  <url>
-    <loc>https://zandani.co.ke/article/mv-uhuru-i-and-ii-lead-cargo-transport-on-lake-victoria</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-24T09:00:00.000Z</news:publication_date>
-      <news:title>MV Uhuru I and II Lead Cargo Transport on Lake Victoria</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/willis-raburu-to-run-for-kisumu-senator-seat-in-2027</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-24T09:00:00.000Z</news:publication_date>
-      <news:title>Willis Raburu to Run for Kisumu Senator Seat in 2027</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/lillian-ng-ang-a-on-boarding-school-s-emotional-impact</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-23T09:00:00.000Z</news:publication_date>
-      <news:title>Lillian Ng'ang'a on Boarding School's Emotional Impact</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
 </urlset>
