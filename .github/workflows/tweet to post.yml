@@ -1,0 +1,529 @@
+name: Manual Tweet to Post - Zandani
+on:
+  workflow_dispatch:
+    inputs:
+      tweet_url:
+        description: "Paste the tweet URL to scrape and publish (e.g. https://x.com/username/status/123456789)"
+        required: true
+        type: string
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+permissions:
+  contents: write
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+  MEMORY_FILE: .github/memory_manual_tweets.json
+jobs:
+  scrape-and-publish:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-genai beautifulsoup4 lxml python-dateutil Pillow
+
+      - name: Scrape Tweet and publish article
+        env:
+          TWEET_URL: ${{ github.event.inputs.tweet_url }}
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
+          MEMORY_FILE: ${{ env.MEMORY_FILE }}
+        run: |
+          python << 'PYEOF'
+          import os, json, datetime, requests, re, time, sys, hashlib, itertools, base64, random, io
+          from bs4 import BeautifulSoup
+          from PIL import Image
+          from google import genai
+          from google.genai import types
+
+          TWEET_URL_INPUT   = os.environ.get("TWEET_URL", "").strip()
+          publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+          today_str         = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          full_date_str     = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
+          current_year      = datetime.datetime.utcnow().strftime("%Y")
+          SITE_BASE_URL     = "https://zandani.co.ke"
+          MODELS_TO_TRY     = ["gemini-2.5-flash", "gemini-2.0-flash"]
+
+          NITTER_INSTANCES = [
+              "https://nitter.net",
+              "https://nitter.poast.org",
+              "https://nitter.privacydev.net",
+              "https://nitter.tiekoetter.com",
+              "https://nitter.space",
+              "https://nitter.kavin.rocks",
+          ]
+
+          BANNED_PHRASES = [
+              "sasa basi", "melting the pot", "spill the tea", "tea is hot",
+              "grab your popcorn", "buckle up", "breaking news", "dive in",
+              "delve into", "moreover", "furthermore", "in conclusion",
+              "it's worth noting", "a testament to", "navigating the landscape",
+              "in today's digital age", "tapestry", "it is worth noting"
+          ]
+
+          # ── URL PARSER ──────────────────────────────────────────────────────
+          def parse_tweet_url(url):
+              m = re.search(r'(?:twitter\.com|x\.com)/([^/?#]+)/status/(\d+)', url)
+              if m:
+                  return m.group(1), m.group(2)
+              return None, None
+
+          # ── IMAGE UPLOAD ─────────────────────────────────────────────────────
+          def upload_to_imgbb(image_url):
+              api_key = os.environ.get("IMGBB_API_KEY")
+              if not api_key or not image_url:
+                  return image_url
+              if image_url.startswith("https://media/"):
+                  image_url = image_url.replace("https://media/", "https://pbs.twimg.com/media/")
+              elif image_url.startswith("media/"):
+                  image_url = "https://pbs.twimg.com/" + image_url
+              elif image_url.startswith("/pic/"):
+                  import urllib.parse
+                  image_url = "https://pbs.twimg.com/" + urllib.parse.unquote(image_url).replace("/pic/", "", 1)
+              try:
+                  img_data = requests.get(image_url, timeout=15).content
+                  img = Image.open(io.BytesIO(img_data))
+                  if img.mode in ('RGBA', 'LA', 'P'):
+                      img = img.convert('RGB')
+                  webp_buf = io.BytesIO()
+                  img.save(webp_buf, format='WEBP', quality=82)
+                  webp_buf.seek(0)
+                  b64 = base64.b64encode(webp_buf.read()).decode('utf-8')
+                  res = requests.post(
+                      "https://api.imgbb.com/1/upload",
+                      data={"key": api_key, "image": b64},
+                      timeout=20
+                  )
+                  if res.status_code == 200:
+                      return res.json()['data']['url']
+                  return image_url
+              except Exception as e:
+                  print(f"ImgBB/WebP error: {e}")
+                  return image_url
+
+          # ── TWEET FETCHER: CDN SYNDICATION ───────────────────────────────────
+          def get_tweet_syndication(tweet_id, username):
+              url = f"https://cdn.syndication.twimg.com/tweet-result?id={tweet_id}&lang=en&token=a"
+              headers = {
+                  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
+                  'Referer': 'https://platform.twitter.com/',
+                  'Accept': 'application/json'
+              }
+              try:
+                  res = requests.get(url, headers=headers, timeout=20)
+                  print(f"CDN Syndication status: {res.status_code}")
+                  if res.status_code == 200:
+                      data = res.json()
+                      text = data.get('text', '')
+                      photos = data.get('photos', [])
+                      img_url = photos[0].get('url', '') if photos else ''
+                      if not img_url:
+                          card = data.get('card', {})
+                          if card:
+                              bv = card.get('binding_values', {})
+                              for key in ['thumbnail_image_original', 'thumbnail_image', 'card_url']:
+                                  if key in bv and isinstance(bv[key], dict) and bv[key].get('image_value'):
+                                      img_url = bv[key]['image_value'].get('url', '')
+                                      if img_url:
+                                          break
+                      if text:
+                          return {
+                              'id': tweet_id,
+                              'text': text,
+                              'url': f'https://x.com/{username}/status/{tweet_id}',
+                              'username': username,
+                              'image': img_url
+                          }
+              except Exception as e:
+                  print(f"CDN Syndication error: {e}")
+              return None
+
+          # ── TWEET FETCHER: NITTER ────────────────────────────────────────────
+          def get_tweet_nitter(username, tweet_id):
+              headers = {
+                  'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
+                  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+              }
+              instances = NITTER_INSTANCES[:]
+              random.shuffle(instances)
+              for instance in instances:
+                  nitter_url = f"{instance}/{username}/status/{tweet_id}"
+                  print(f"Trying Nitter: {nitter_url}")
+                  try:
+                      res = requests.get(nitter_url, headers=headers, timeout=20)
+                      if res.status_code != 200:
+                          print(f"  -> HTTP {res.status_code}, skipping")
+                          continue
+                      soup = BeautifulSoup(res.text, 'html.parser')
+                      content_div = (
+                          soup.find('div', class_='tweet-content media-body') or
+                          soup.find('div', class_='tweet-content')
+                      )
+                      if not content_div:
+                          print("  -> No tweet content found")
+                          continue
+                      text = content_div.get_text('\n').strip()
+                      text = re.sub(r'https?://\S+', '', text).strip()
+                      text = re.sub(r'\n{3,}', '\n\n', text)
+                      img_url = ''
+                      img_el = soup.find('img', class_='still-image')
+                      if img_el:
+                          src = img_el.get('src', '')
+                          if '/pic/' in src:
+                              m2 = re.search(r'/pic/(.+)$', src)
+                              if m2:
+                                  img_url = 'https://pbs.twimg.com/' + requests.utils.unquote(m2.group(1))
+                          elif src.startswith('http'):
+                              img_url = src
+                      if text:
+                          print(f"  -> Got tweet via Nitter ({instance}): {len(text)} chars")
+                          return {
+                              'id': tweet_id,
+                              'text': text,
+                              'url': f'https://x.com/{username}/status/{tweet_id}',
+                              'username': username,
+                              'image': img_url
+                          }
+                  except Exception as e:
+                      print(f"  -> Nitter error {instance}: {e}")
+              return None
+
+          # ── TWEET FETCHER: OEMBED (LAST RESORT) ──────────────────────────────
+          def get_tweet_oembed(tweet_url, tweet_id, username):
+              import urllib.parse
+              oembed_url = f"https://publish.twitter.com/oembed?url={urllib.parse.quote(tweet_url)}&omit_script=true"
+              try:
+                  res = requests.get(oembed_url, timeout=20)
+                  print(f"oEmbed status: {res.status_code}")
+                  if res.status_code == 200:
+                      data = res.json()
+                      html = data.get('html', '')
+                      soup = BeautifulSoup(html, 'html.parser')
+                      for a in soup.find_all('a'):
+                          href = a.get('href', '')
+                          if 'pic.twitter' in href or 't.co' in href or 'twitter.com' in href:
+                              a.decompose()
+                      text = soup.get_text('\n').strip()
+                      text = re.sub(r'\n{3,}', '\n\n', text).strip()
+                      lines = [l for l in text.split('\n') if not l.strip().startswith('- ') and '(@' not in l]
+                      text = '\n'.join(lines).strip()
+                      if text:
+                          print(f"  -> Got tweet via oEmbed: {len(text)} chars")
+                          return {
+                              'id': tweet_id,
+                              'text': text,
+                              'url': tweet_url,
+                              'username': username,
+                              'image': ''
+                          }
+              except Exception as e:
+                  print(f"oEmbed error: {e}")
+              return None
+
+          # ── MAIN TWEET FETCHER ───────────────────────────────────────────────
+          def fetch_tweet(tweet_url):
+              username, tweet_id = parse_tweet_url(tweet_url)
+              if not username or not tweet_id:
+                  print(f"Cannot parse tweet URL: {tweet_url}")
+                  sys.exit(1)
+              print(f"\nFetching tweet ID={tweet_id} from @{username}")
+              tweet = get_tweet_syndication(tweet_id, username)
+              if tweet and tweet.get('text'):
+                  print(f"Got tweet via CDN Syndication: {len(tweet['text'])} chars")
+                  return tweet
+              print("CDN Syndication failed. Trying Nitter...")
+              tweet = get_tweet_nitter(username, tweet_id)
+              if tweet and tweet.get('text'):
+                  return tweet
+              print("Nitter failed. Trying oEmbed...")
+              tweet = get_tweet_oembed(tweet_url, tweet_id, username)
+              if tweet and tweet.get('text'):
+                  return tweet
+              print("All fetch methods exhausted.")
+              sys.exit(1)
+
+          # ── GEMINI SETUP ─────────────────────────────────────────────────────
+          raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY1"] if os.environ.get(k)]
+          if not raw_keys:
+              print("No Gemini keys found")
+              sys.exit(1)
+          key_cycle = itertools.cycle(raw_keys)
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+
+          def gemini_generate(prompt, label="", use_search=False):
+              global current_key, client
+              for model in MODELS_TO_TRY:
+                  for _ in range(6):
+                      try:
+                          config = types.GenerateContentConfig(
+                              tools=[types.Tool(google_search=types.GoogleSearch())]
+                          ) if use_search else None
+                          resp = client.models.generate_content(model=model, contents=prompt, config=config)
+                          candidate = resp.candidates[0] if resp.candidates else None
+                          if candidate and candidate.content and candidate.content.parts:
+                              result = "".join(p.text for p in candidate.content.parts if hasattr(p, "text") and p.text).strip()
+                          else:
+                              result = (resp.text or "").strip()
+                          print(f"Gemini OK ({model}): {label}")
+                          return result
+                      except Exception as e:
+                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower():
+                              time.sleep(random.uniform(20, 40))
+                              current_key = next(key_cycle)
+                              client = genai.Client(api_key=current_key)
+                              continue
+                          print(f"Gemini error ({model}): {e}")
+                          break
+              return None
+
+          def get_internal_links():
+              posts_dir = os.environ.get("POSTS_DIR", "content/posts")
+              if not os.path.exists(posts_dir):
+                  return ""
+              files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
+              sample = random.sample(files, min(len(files), 3))
+              links = []
+              for fn in sample:
+                  try:
+                      with open(os.path.join(posts_dir, fn), 'r', encoding='utf-8') as f:
+                          content = f.read()
+                      title_m = re.search(r'title:\s*"(.*?)"', content)
+                      slug_m  = re.search(r'slug:\s*"(.*?)"', content)
+                      if title_m and slug_m:
+                          links.append(f'- [{title_m.group(1)}]({SITE_BASE_URL}/article/{slug_m.group(1)})')
+                  except Exception:
+                      pass
+              return "\n".join(links) if links else ""
+
+          # ── MEMORY ───────────────────────────────────────────────────────────
+          memory_path = os.environ.get("MEMORY_FILE", ".github/memory_manual_tweets.json")
+          try:
+              memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
+          except json.JSONDecodeError:
+              memory = []
+
+          # ── VALIDATE INPUT ───────────────────────────────────────────────────
+          if not TWEET_URL_INPUT:
+              print("ERROR: No tweet URL provided. Please set the tweet_url input.")
+              sys.exit(1)
+
+          # ── FETCH TWEET ──────────────────────────────────────────────────────
+          chosen = fetch_tweet(TWEET_URL_INPUT)
+
+          if chosen['id'] in memory:
+              print(f"Tweet {chosen['id']} has already been published. Skipping duplicate.")
+              sys.exit(0)
+
+          # ── STEP 1: INTERPRET TWEET ──────────────────────────────────────────
+          AUTHOR_CTX = (
+              f"TWEET AUTHOR: @{chosen['username']}\n"
+              "Use Google Search to find who this person is - check if they are a Kenyan or global public figure, "
+              "politician, celebrity, journalist, commentator, or satirist.\n"
+              "Use that context when interpreting the tweet below.\n\n"
+          )
+          interpret_prompt = (
+              AUTHOR_CTX +
+              "TWEET TEXT:\n" + chosen["text"] + "\n\n"
+              "TASK: Analyse this tweet step by step before writing any article.\n"
+              "1. Search Google to confirm who @" + chosen['username'] + " is.\n"
+              "2. Is this tweet SATIRICAL, SLANG-HEAVY, or a STRAIGHT OBSERVATION?\n"
+              "3. Search Google for the ACTUAL TRENDING KENYAN/GLOBAL STORY they reference.\n"
+              "4. Summarise the true event plainly.\n"
+              "5. What is the author's core commentary or punchline?\n"
+              'Output ONLY JSON: {"tone_identified": "satirical|slang|literal", ' +
+              '"author_bio": "One sentence on who this person is", ' +
+              '"true_story": "The actual trending event in plain language", ' +
+              '"tweet_commentary": "What they are really pointing out or joking about"}' 
+          )
+          interpret_text = gemini_generate(interpret_prompt, "interpret", use_search=True)
+          interpretation = {}
+          if interpret_text:
+              try:
+                  clean = re.sub(r'^```json?\s*|\s*```$', '', interpret_text, flags=re.I | re.DOTALL).strip()
+                  interpretation = json.loads(clean)
+              except Exception as e:
+                  print(f"Interpret parse error: {e}")
+
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+          time.sleep(5)
+
+          true_story  = interpretation.get("true_story",      chosen["text"][:500])
+          commentary  = interpretation.get("tweet_commentary", "")
+          author_bio  = interpretation.get("author_bio",       f"@{chosen['username']}")
+
+          # ── STEP 2: GENERATE TITLE ───────────────────────────────────────────
+          title_prompt = (
+              "TRUE TRENDING STORY: " + true_story + "\n"
+              "TWEET COMMENTARY: " + commentary + "\n\n"
+              "Write a single punchy headline for a Kenyan gossip/entertainment article about this story.\n"
+              "Style: bold, intriguing, Kenyan pop culture tone. No clickbait questions. No brackets.\n"
+              "The headline must reflect the REAL story. DO NOT mention the tweet author or Twitter/X.\n"
+              'Output ONLY JSON: {"final_title": "Your Headline Here"}'
+          )
+          title_text  = gemini_generate(title_prompt, "title")
+          final_title = chosen["text"][:80].split("\n")[0]
+          if title_text:
+              try:
+                  clean = re.sub(r'^```json?\s*|\s*```$', '', title_text, flags=re.I | re.DOTALL).strip()
+                  final_title = json.loads(clean).get("final_title", final_title)
+              except Exception:
+                  pass
+
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+          time.sleep(5)
+
+          # ── STEP 3: WRITE ARTICLE ────────────────────────────────────────────
+          internal_links = get_internal_links()
+          banned_str = ", ".join(BANNED_PHRASES)
+
+          article_prompt = (
+              "Current Date: " + full_date_str + ". Current year: " + current_year + ".\n\n"
+              "SOURCE CONTEXT: " + author_bio + "\n\n"
+              "TRENDING STORY TO COVER: " + true_story + "\n"
+              "INSIDER COMMENTARY TO INCLUDE: " + commentary + "\n"
+              "ARTICLE TITLE: " + final_title + "\n"
+              "INTERNAL LINKS (weave in 1-2 naturally):\n" + internal_links + "\n\n"
+              "TASK: Write a full Kenyan entertainment/gossip article for Za Ndani.\n"
+              "Author is Zed Mogaka - his voice is witty, sharp, and feels like an insider dropping the real gist.\n"
+              "The article should tell the REAL story based on the trending topic.\n"
+              "Write in third-person news style. No self-referencing as the author.\n"
+              "Translate any local expressions into clear vivid English so all readers understand.\n"
+              "No em-dashes. Single hyphens only. No title/byline/date in body.\n"
+              "All date references must be " + current_year + ".\n\n"
+              "STRUCTURE:\n"
+              "1. A 35-45 word lede paragraph (no heading above it) - answers who/what/when/where immediately.\n"
+              "2. ## H2 subheading with primary keyword.\n"
+              "3. 3-4 supporting paragraphs with ### subheadings.\n"
+              "4. A sharp closing line that captures the Kenyan street reaction.\n\n"
+              "BANNED PHRASES (never use): " + banned_str + "\n"
+              "CRITICAL: NEVER mention the tweet author as your source. NEVER mention Twitter/X/social media.\n"
+              "Write as if Zed Mogaka and Za Ndani gathered this story directly.\n"
+              "Make it entertaining, vivid, and unmistakably Kenyan in flavour."
+          )
+          article_text = gemini_generate(article_prompt, "article", use_search=True)
+          if not article_text:
+              sys.exit(1)
+
+          article_text = re.sub(r'^```(?:markdown)?\s*', '', article_text).rstrip('`').strip()
+          article_text = re.sub(r'^(Title|By|Author|Date):.*?\n', '', article_text, flags=re.I | re.M)
+          article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
+
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+          time.sleep(3)
+
+          # ── STEP 4: META DESCRIPTION ──────────────────────────────────────────
+          desc_prompt = (
+              "Write a single meta description (140-155 characters) for this article.\n"
+              "Title: " + final_title + "\n"
+              "Snippet: " + article_text[:600] + "\n"
+              "Rules: factual, no clickbait, starts with subject or verb, includes key news fact.\n"
+              'Output ONLY JSON: {"description": "Your description here"}'
+          )
+          desc_text = gemini_generate(desc_prompt, "description")
+          meta_description = ""
+          if desc_text:
+              try:
+                  clean = re.sub(r'^```json?\s*|\s*```$', '', desc_text, flags=re.I | re.DOTALL).strip()
+                  meta_description = json.loads(clean).get("description", "")[:160].replace('"', "'")
+              except Exception:
+                  pass
+
+          time.sleep(3)
+
+          # ── STEP 5: TAGS ──────────────────────────────────────────────────────
+          tags_prompt = (
+              "Generate 4-5 relevant SEO tags for this Kenyan entertainment article.\n"
+              "Title: " + final_title + "\n"
+              "Rules: lowercase, hyphenated multi-word. No generic tags like 'news', 'kenya'.\n"
+              'Output ONLY JSON: {"tags": ["tag-one", "tag-two", "tag-three"]}'
+          )
+          tags_text = gemini_generate(tags_prompt, "tags")
+          article_tags = []
+          if tags_text:
+              try:
+                  clean = re.sub(r'^```json?\s*|\s*```$', '', tags_text, flags=re.I | re.DOTALL).strip()
+                  article_tags = [str(t).lower().replace(' ', '-') for t in json.loads(clean).get("tags", [])[:5]]
+              except Exception:
+                  pass
+
+          # ── IMAGE + FILE WRITE ────────────────────────────────────────────────
+          final_image = upload_to_imgbb(chosen["image"]) if chosen.get("image") else ""
+          slug        = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
+          canonical   = f"{SITE_BASE_URL}/article/{slug}"
+          author_url  = f"{SITE_BASE_URL}/author/zed-mogaka"
+          tags_json   = json.dumps(article_tags)
+          posts_dir   = os.environ.get("POSTS_DIR", "content/posts")
+          os.makedirs(posts_dir, exist_ok=True)
+
+          lines = [
+              "---",
+              'title: "' + final_title.replace('"', "'") + '"',
+              'slug: "' + slug + '"',
+              'description: "' + meta_description + '"',
+              'author: "Zed Mogaka"',
+              'author_url: "' + author_url + '"',
+              'image: "' + final_image + '"',
+              'category: "Entertainment"',
+              'tags: ' + tags_json,
+              'canonical: "' + canonical + '"',
+              'date: "' + publish_timestamp + '"',
+              "---",
+              article_text,
+              ""
+          ]
+          filepath = os.path.join(posts_dir, today_str + '-' + slug + '.md')
+          with open(filepath, 'w', encoding='utf-8') as f:
+              f.write('\n'.join(lines))
+
+          memory.append(chosen['id'])
+          os.makedirs(os.path.dirname(memory_path), exist_ok=True)
+          with open(memory_path, 'w') as f:
+              json.dump(memory[-500:], f)
+
+          print(f"Article saved: {filepath}")
+          PYEOF
+
+      - name: Git Safety Pull
+        run: |
+          git config --global user.name "Zed Mogaka"
+          git config --global user.email "bot@zandani.co.ke"
+          git add .
+          git stash -u || true
+          git fetch origin main
+          git pull origin main --rebase
+          git stash pop || echo "Nothing to pop"
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: "Zed Mogaka <bot@zandani.co.ke>"
+          commit_message: "content: Manual tweet story by Zed Mogaka"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: "content/posts/*.md .github/memory_manual_tweets.json"
+
+      - name: Ping Google Sitemap
+        run: |
+          curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
+          echo "Google sitemap pinged"
