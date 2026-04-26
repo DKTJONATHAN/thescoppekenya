@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/suspected-bandits-kill-seven-people-and-burn-houses-in-kitui</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
+      <news:title>Suspected bandits kill seven people and burn houses in Kitui</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/iebc-schedules-ol-kalou-constituency-by-election-following-death-of-</loc>
     <news:news>
       <news:publication>
@@ -685,42 +697,6 @@
       </news:publication>
       <news:publication_date>2026-04-24T09:00:00.000Z</news:publication_date>
       <news:title>Kimani Ichung’wah explains why he blocked President William Ruto</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/liverpool-incredible-pl-star-urged-to-snub-reds-and-sign-for-cl-qual</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-24T09:00:00.000Z</news:publication_date>
-      <news:title>Liverpool: 'Incredible' PL star urged to snub Reds and sign for CL qualification rivals for two reasons</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/pulse-kenya-news-willis-raburu-politics-and-radio-jambo-reports</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-24T09:00:00.000Z</news:publication_date>
-      <news:title>Pulse Kenya News: Willis Raburu Politics and Radio Jambo Reports</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/football-fixtures-rangers-celtic-sunderland-and-leicester</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-24T09:00:00.000Z</news:publication_date>
-      <news:title>Football Fixtures: Rangers, Celtic, Sunderland, and Leicester</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
