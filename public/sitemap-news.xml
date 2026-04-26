@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/epra-adds-foreign-exchange-and-water-resource-levies-to-electricity-</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
+      <news:title>EPRA adds foreign exchange and water resource levies to electricity bills</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/odhiambo-na-consolata-kileleshwa-b-b-hadithi-ya-cctv-siri-nzito-inay</loc>
     <news:news>
       <news:publication>
@@ -697,18 +709,6 @@
       </news:publication>
       <news:publication_date>2026-04-24T09:00:00.000Z</news:publication_date>
       <news:title>FKF Suspends Hussein Mohamed and Dennis Gicheru Over Ksh 42M</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/airtel-kenya-earn-ksh100-per-referral-on-myairtel-app</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-24T09:00:00.000Z</news:publication_date>
-      <news:title>Airtel Kenya: Earn Ksh100 per Referral on MyAirtel App</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
