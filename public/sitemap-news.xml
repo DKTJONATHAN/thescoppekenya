@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/kenya-s-electricity-bills-rise-by-ksh-4-72-per-kilowatt-hour-amid-fu</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
+      <news:title>Kenya's electricity bills rise by KSh 4.72 per kilowatt-hour amid fuel crisis</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/president-ruto-announces-dualling-of-makutano-meru-highway-under-nat</loc>
     <news:news>
       <news:publication>
@@ -685,18 +697,6 @@
       </news:publication>
       <news:publication_date>2026-04-24T09:00:00.000Z</news:publication_date>
       <news:title>Airtel Kenya: Earn Ksh100 per Referral on MyAirtel App</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/elebi-aviation-to-expand-kenya-cargo-hub-after-tanzania-exit</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-24T09:00:00.000Z</news:publication_date>
-      <news:title>Çelebi Aviation to Expand Kenya Cargo Hub After Tanzania Exit</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
