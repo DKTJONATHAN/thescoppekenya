@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/president-ruto-appoints-37-judges-to-the-high-court-and-environment-</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
+      <news:title>President Ruto appoints 37 judges to the High Court and Environment and Land Court</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/epra-adds-foreign-exchange-and-water-resource-levies-to-electricity-</loc>
     <news:news>
       <news:publication>
@@ -698,18 +710,6 @@
       <news:publication_date>2026-04-24T09:00:00.000Z</news:publication_date>
       <news:title>Jeridah Andayi Addresses Marriage After Njugush Wakavinye Split</news:title>
       <news:genres>Entertainment,Celebrity Gossip</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/fkf-suspends-hussein-mohamed-and-dennis-gicheru-over-ksh-42m</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-24T09:00:00.000Z</news:publication_date>
-      <news:title>FKF Suspends Hussein Mohamed and Dennis Gicheru Over Ksh 42M</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
 </urlset>
