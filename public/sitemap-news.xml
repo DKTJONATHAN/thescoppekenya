@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/wrexham-s-play-off-fate-hangs-in-the-balance-against-crowned-champio</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
+      <news:title>Wrexham’s Play-Off Fate Hangs in the Balance Against Crowned Champions Coventry City</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kra-announces-integration-of-customs-data-for-export-vat-returns</loc>
     <news:news>
       <news:publication>
@@ -649,18 +661,6 @@
       </news:publication>
       <news:publication_date>2026-04-24T09:00:00.000Z</news:publication_date>
       <news:title>Premier League Top Scorers</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenyan-man-fighting-for-russia-recounts-ordeal-after-capture</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-24T09:00:00.000Z</news:publication_date>
-      <news:title>Kenyan Man Fighting for Russia Recounts Ordeal After Capture</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
