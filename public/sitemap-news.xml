@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/kenyan-agritech-sokofresh-secures-ksh-65-million-loan-to-reduce-post</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-27T09:00:00.000Z</news:publication_date>
+      <news:title>Kenyan agritech SokoFresh secures KSh 65 million loan to reduce post-harvest losses</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/michael-jackson-biopic-earns-217-4-million-in-global-box-office-open</loc>
     <news:news>
       <news:publication>
@@ -445,30 +457,6 @@
       </news:publication>
       <news:publication_date>2026-04-25T09:00:00.000Z</news:publication_date>
       <news:title>TSC outlines procedure for recovering misdirected teacher salaries</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/avca-hosts-global-investors-in-nairobi-for-african-private-capital-c</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-25T09:00:00.000Z</news:publication_date>
-      <news:title>AVCA hosts global investors in Nairobi for African private capital conference</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/wycliffe-oparanya-threatens-to-withdraw-western-region-support-for-o</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-25T09:00:00.000Z</news:publication_date>
-      <news:title>Wycliffe Oparanya threatens to withdraw Western region support for ODM</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
