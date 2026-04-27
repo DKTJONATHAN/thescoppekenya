@@ -81,6 +81,9 @@ jobs:
               "in today's digital age", "tapestry", "it is worth noting"
           ]
 
+          def clean_text(text):
+              return re.sub(r'\s+', ' ', str(text or '')).strip()
+
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
               if not api_key or not image_url:
@@ -413,6 +416,23 @@ jobs:
               except Exception:
                   pass
 
+          title_fix_prompt = (
+              "Rewrite this headline into clear standard English for a Kenyan entertainment news site.\n"
+              "Underlying story: " + true_story + "\n"
+              "Draft headline: " + final_title + "\n"
+              "Rules: English only. Keep names and the core fact. No Swahili. No Sheng. No slang. "
+              "No questions. No brackets. No quotes. Do not mention George Diano, Twitter, or X. No vague wording.\n"
+              'Output ONLY JSON: {"final_title": "Your Headline Here"}'
+          )
+          title_fix_text = gemini_generate(title_fix_prompt, "title-fix")
+          if title_fix_text:
+              try:
+                  clean = re.sub(r'^```json?\s*|\s*```$', '', title_fix_text, flags=re.I | re.DOTALL).strip()
+                  final_title = json.loads(clean).get("final_title", final_title)
+              except Exception:
+                  pass
+          final_title = clean_text(final_title).replace('"', "'")
+
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
           time.sleep(5)
@@ -453,6 +473,26 @@ jobs:
           article_text = re.sub(r'^(Title|By|Author|Date):.*?\n', '', article_text, flags=re.I | re.M)
           article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
 
+          quality_prompt = (
+              "Rewrite this draft into a specific, publication-ready entertainment news article in clear standard English.\n"
+              "TRUE STORY: " + true_story + "\n"
+              "ANGLE TO CARRY: " + commentary + "\n"
+              "TITLE: " + final_title + "\n"
+              "Rules: English only. No Swahili. No Sheng. No slang unless it is a proper noun. "
+              "Do not mention George Diano, Twitter, X, tweets, or social media. Keep the story factual and concrete, not vague. "
+              "Start with a 35-45 word lede paragraph with who, what, when, and where. Then keep one ## heading and at least three ### subheadings. "
+              "No title, byline, or date in the body. No em-dashes.\n\n"
+              "DRAFT:\n" + article_text
+          )
+          quality_text = gemini_generate(quality_prompt, "article-quality", use_search=True)
+          if quality_text:
+              article_text = quality_text
+
+          article_text = re.sub(r'^```(?:markdown)?\s*', '', article_text).rstrip('`').strip()
+          article_text = re.sub(r'^(Title|By|Author|Date):.*?\n', '', article_text, flags=re.I | re.M)
+          article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
+          article_text = re.sub(r'\b(?:George Diano|Twitter|tweet(?:s)?|X\b|social media)\b', '', article_text, flags=re.I)
+
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
           time.sleep(3)
@@ -472,6 +512,7 @@ jobs:
                   meta_description = json.loads(clean).get("description", "")[:160].replace('"', "'")
               except Exception:
                   pass
+          meta_description = clean_text(meta_description)
 
           time.sleep(3)
 
@@ -500,7 +541,7 @@ jobs:
 
           lines = [
               "---",
-              'title: "' + final_title.replace('"', "'") + '"',
+              'title: "' + final_title + '"',
               'slug: "' + slug + '"',
               'description: "' + meta_description + '"',
               'author: "Zed Mogaka"',

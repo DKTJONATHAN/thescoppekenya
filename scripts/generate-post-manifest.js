@@ -37,6 +37,44 @@ function calculateReadTime(content) {
   return Math.ceil(wordCount / wordsPerMinute);
 }
 
+function stripMarkdown(text) {
+  return String(text || '')
+    .replace(/!\[[^\]]*\]\([^)]+\)/g, ' ')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/^[#>\-\*\d\.\s]+/gm, '')
+    .replace(/[`*_~]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function truncateSnippet(text, maxLength = 155) {
+  const cleaned = stripMarkdown(text);
+  if (!cleaned) return '';
+  if (cleaned.length <= maxLength) return cleaned;
+
+  const sliced = cleaned.slice(0, maxLength + 1);
+  const lastSentence = Math.max(sliced.lastIndexOf('. '), sliced.lastIndexOf('! '), sliced.lastIndexOf('? '));
+  if (lastSentence >= 90) {
+    return sliced.slice(0, lastSentence + 1).trim();
+  }
+
+  const lastSpace = sliced.lastIndexOf(' ');
+  return `${sliced.slice(0, lastSpace > 80 ? lastSpace : maxLength).trim()}...`;
+}
+
+function buildSnippet(data, bodyContent) {
+  const explicit = [data.description, data.excerpt].find(value => typeof value === 'string' && value.trim());
+  if (explicit) return truncateSnippet(explicit);
+
+  const paragraphs = bodyContent
+    .split(/\n\s*\n/)
+    .map(paragraph => stripMarkdown(paragraph))
+    .filter(paragraph => paragraph && !paragraph.startsWith('##'));
+
+  return truncateSnippet(paragraphs[0] || bodyContent);
+}
+
 const files = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith('.md'));
 const manifest = files.map(file => {
   const content = fs.readFileSync(path.join(POSTS_DIR, file), 'utf-8');
@@ -49,7 +87,8 @@ const manifest = files.map(file => {
     date: data.date || new Date().toISOString(),
     category: data.category || 'News',
     author: data.author || 'Za Ndani',
-    excerpt: data.excerpt || bodyContent.slice(0, 200).replace(/<[^>]+>/g, '').trim() + '...',
+    excerpt: buildSnippet(data, bodyContent),
+    description: buildSnippet(data, bodyContent),
     image: data.image || '/placeholder.svg',
     tags: data.tags || [],
     readTime: calculateReadTime(bodyContent)

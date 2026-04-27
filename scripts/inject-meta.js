@@ -43,6 +43,32 @@ function writePage(subDir, html) {
   fs.writeFileSync(path.join(fullDir, 'index.html'), html);
 }
 
+function stripMarkdown(text) {
+  return String(text || '')
+    .replace(/!\[[^\]]*\]\([^)]+\)/g, ' ')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/^[#>\-\*\d\.\s]+/gm, '')
+    .replace(/[`*_~]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function truncateSnippet(text, maxLength = 155) {
+  const cleaned = stripMarkdown(text);
+  if (!cleaned) return '';
+  if (cleaned.length <= maxLength) return cleaned;
+
+  const sliced = cleaned.slice(0, maxLength + 1);
+  const lastSentence = Math.max(sliced.lastIndexOf('. '), sliced.lastIndexOf('! '), sliced.lastIndexOf('? '));
+  if (lastSentence >= 90) {
+    return sliced.slice(0, lastSentence + 1).trim();
+  }
+
+  const lastSpace = sliced.lastIndexOf(' ');
+  return `${sliced.slice(0, lastSpace > 80 ? lastSpace : maxLength).trim()}...`;
+}
+
 // 1. Collect all posts
 const postFiles = fs.readdirSync(postsDir).filter(f => f.endsWith('.md'));
 const posts = postFiles.map(file => {
@@ -66,10 +92,14 @@ const posts = postFiles.map(file => {
 
   let desc = '';
   if (descMatch) {
-    desc = descMatch[1].trim().replace(/^["']|["']$/g, '').trim();
+    desc = truncateSnippet(descMatch[1].trim().replace(/^["']|["']$/g, '').trim());
   } else {
     const body = content.replace(/^---[\s\S]*?---/, '').trim();
-    desc = body.replace(/[#*`_\[\]()]/g, '').replace(/http[^\s]+/g, '').replace(/\s+/g, ' ').trim().substring(0, 160) + '...';
+    const paragraphs = body
+      .split(/\n\s*\n/)
+      .map(paragraph => stripMarkdown(paragraph))
+      .filter(paragraph => paragraph && !paragraph.startsWith('##'));
+    desc = truncateSnippet(paragraphs[0] || body);
   }
 
   return { title, image, slug, category, author, dateStr, tags, desc };

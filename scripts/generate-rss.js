@@ -57,6 +57,44 @@ function formatRssDate(dateStr) {
   return date.toUTCString();
 }
 
+function stripMarkdown(text) {
+  return String(text || '')
+    .replace(/!\[[^\]]*\]\([^)]+\)/g, ' ')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/^[#>\-\*\d\.\s]+/gm, '')
+    .replace(/[`*_~]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function truncateSnippet(text, maxLength = 155) {
+  const cleaned = stripMarkdown(text);
+  if (!cleaned) return '';
+  if (cleaned.length <= maxLength) return cleaned;
+
+  const sliced = cleaned.slice(0, maxLength + 1);
+  const lastSentence = Math.max(sliced.lastIndexOf('. '), sliced.lastIndexOf('! '), sliced.lastIndexOf('? '));
+  if (lastSentence >= 90) {
+    return sliced.slice(0, lastSentence + 1).trim();
+  }
+
+  const lastSpace = sliced.lastIndexOf(' ');
+  return `${sliced.slice(0, lastSpace > 80 ? lastSpace : maxLength).trim()}...`;
+}
+
+function buildSnippet(data, content) {
+  const explicit = [data.description, data.excerpt].find(value => typeof value === 'string' && value.trim());
+  if (explicit) return truncateSnippet(explicit);
+
+  const paragraphs = String(content || '')
+    .split(/\n\s*\n/)
+    .map(paragraph => stripMarkdown(paragraph))
+    .filter(paragraph => paragraph && !paragraph.startsWith('##'));
+
+  return truncateSnippet(paragraphs[0] || content);
+}
+
 async function getAllPosts() {
   const postsDir = path.resolve(process.cwd(), 'content/posts');
   const posts = [];
@@ -74,7 +112,7 @@ async function getAllPosts() {
       posts.push({
         title: data.title || file.replace('.md', ''),
         slug: data.slug || file.replace('.md', ''),
-        excerpt: data.excerpt || '',
+        excerpt: buildSnippet(data, content),
         category: data.category || 'News',
         author: data.author || 'Za Ndani',
         date: data.date || new Date().toISOString().split('T')[0],
@@ -100,7 +138,7 @@ async function generateRssFeed() {
       <title>${escapeXml(post.title)}</title>
       <link>${SITE_URL}/article/${post.slug}</link>
       <guid isPermaLink="true">${SITE_URL}/article/${post.slug}</guid>
-      <description>${escapeXml(post.excerpt || post.content.replace(/[#*`_\[\]]/g, '').trim())}</description>
+      <description>${escapeXml(post.excerpt || stripMarkdown(post.content))}</description>
       <content:encoded><![CDATA[${post.content}]]></content:encoded>
       <author>contact@zandani.co.ke (${escapeXml(post.author)})</author>
       <dc:creator>${escapeXml(post.author)}</dc:creator>
