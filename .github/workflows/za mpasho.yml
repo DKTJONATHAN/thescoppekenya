@@ -1,7 +1,8 @@
 name: Za Ndani - Mpasho Scraper
 on:
   schedule:
-    - cron: '15 0,2,5,7,10,12,15,17,20,22 * * *'
+    # Every hour from 6 AM to 11 PM EAT, staggered from Celestine News
+    - cron: '35 3-20 * * *'
   workflow_dispatch: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

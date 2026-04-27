@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Facebook, Instagram, Youtube, Mail, ArrowRight, Phone, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { categories } from "@/lib/markdown";
+import { staticSitePages } from "@/lib/site-links";
 import { XIcon } from "@/components/XIcon";
 import logoImg from "@/assets/logo.png";
 
@@ -107,6 +108,7 @@ export function Footer() {
               {[
                 { name: "About Us", path: "/about" },
                 { name: "Contact", path: "/contact" },
+                { name: "Podcast", path: "/podcast" },
                 { name: "Editorial Ethics", path: "/ethics" },
                 { name: "Corrections Policy", path: "/corrections" },
                 { name: "Fact-Checking", path: "/fact-check" },
@@ -200,6 +202,12 @@ export function Footer() {
               Jonathan Mwaniki
             </a>
           </p>
+          <button
+            onClick={() => handleLinkClick(staticSitePages.find((page) => page.path === "/podcast")?.path || "/podcast")}
+            className="text-primary hover:underline"
+          >
+            Podcast
+          </button>
         </div>
       </div>
     </footer>

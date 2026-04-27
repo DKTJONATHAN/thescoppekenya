@@ -17,6 +17,29 @@ const SITE_URL     = 'https://zandani.co.ke';
 const WEBSUB_HUB   = 'https://pubsubhubbub.appspot.com/';
 const RSS_FEED_URL = `${SITE_URL}/rss.xml`;
 
+const staticPages = [
+  { loc: '/', priority: '1.0', changefreq: 'hourly' },
+  { loc: '/news', priority: '1.0', changefreq: 'hourly' },
+  { loc: '/entertainment', priority: '0.9', changefreq: 'hourly' },
+  { loc: '/sports', priority: '0.8', changefreq: 'daily' },
+  { loc: '/business', priority: '0.8', changefreq: 'daily' },
+  { loc: '/lifestyle', priority: '0.8', changefreq: 'daily' },
+  { loc: '/trending', priority: '0.7', changefreq: 'daily' },
+  { loc: '/sports/live', priority: '0.6', changefreq: 'hourly' },
+  { loc: '/authors', priority: '0.6', changefreq: 'weekly' },
+  { loc: '/podcast', priority: '0.6', changefreq: 'weekly' },
+  { loc: '/about', priority: '0.5', changefreq: 'monthly' },
+  { loc: '/contact', priority: '0.5', changefreq: 'monthly' },
+  { loc: '/advertise', priority: '0.5', changefreq: 'monthly' },
+  { loc: '/careers', priority: '0.4', changefreq: 'monthly' },
+  { loc: '/ethics', priority: '0.4', changefreq: 'monthly' },
+  { loc: '/corrections', priority: '0.4', changefreq: 'monthly' },
+  { loc: '/fact-check', priority: '0.4', changefreq: 'monthly' },
+  { loc: '/privacy', priority: '0.3', changefreq: 'monthly' },
+  { loc: '/terms', priority: '0.3', changefreq: 'monthly' },
+  { loc: '/sitemap', priority: '0.3', changefreq: 'weekly' },
+];
+
 // categories constant removed - now dynamically extracted from posts
 
 // --- Frontmatter Parser ---------------------------------------------------
@@ -135,20 +158,7 @@ const escapeXml = str =>
 
 function generateSitemap(posts) {
   const today    = new Date().toISOString().split('T')[0];
-  const cutoff30 = Date.now() - 30 * 24 * 60 * 60 * 1000;
-
-  const staticPages = [
-    { loc: '/',        priority: '1.0', changefreq: 'hourly',  lastmod: today },
-    { loc: '/news',    priority: '1.0', changefreq: 'hourly',  lastmod: today },
-    { loc: '/about',   priority: '0.5', changefreq: 'monthly'                },
-    { loc: '/contact', priority: '0.5', changefreq: 'monthly'                },
-    { loc: '/privacy', priority: '0.3', changefreq: 'monthly'                },
-    { loc: '/terms',   priority: '0.3', changefreq: 'monthly'                },
-  ];
-
   const postUrls = posts
-    .filter(p => p.publishedAt.getTime() >= cutoff30)
-    .slice(0, 500)
     .map(p => ({
       loc        : `/article/${p.slug}`,
       lastmod    : p.date,
@@ -164,7 +174,25 @@ function generateSitemap(posts) {
     lastmod    : today,
   }));
 
-  const allUrls = [...staticPages, ...postUrls, ...categoryUrls];
+  const tagUrls = Array.from(new Set(posts.flatMap((post) => post.tags))).map((tag) => ({
+    loc: `/tag/${encodeURIComponent(tag)}`,
+    priority: '0.5',
+    changefreq: 'weekly',
+  }));
+
+  const authorUrls = Array.from(new Set(posts.map((post) => post.author))).map((authorName) => ({
+    loc: `/author/${authorName.toLowerCase().replace(/\s+/g, '-')}`,
+    priority: '0.5',
+    changefreq: 'weekly',
+    lastmod: today,
+  }));
+
+  const pageUrls = staticPages.map((page) => ({
+    ...page,
+    lastmod: today,
+  }));
+
+  const allUrls = [...pageUrls, ...postUrls, ...categoryUrls, ...authorUrls, ...tagUrls];
 
   const urlElements = allUrls.map(u => [
     '  <url>',
@@ -287,13 +315,12 @@ async function main() {
   console.log('Pinging WebSub hub...');
   await pingWebSubHub();
 
-  const cutoff30 = Date.now() - 30 * 24 * 60 * 60 * 1000;
   const cutoff48 = Date.now() - 48 * 60 * 60 * 1000;
 
   console.log('Summary:');
   console.log(`  Total posts                  : ${posts.length}`);
-  console.log(`  In sitemap.xml      (30d)    : ${posts.filter(p => p.publishedAt.getTime() >= cutoff30).length}`);
-  console.log(`  In sitemap-news.xml (30d)    : ${posts.filter(p => p.publishedAt.getTime() >= cutoff30 && p.title).length}`);
+  console.log(`  In sitemap.xml      (all)    : ${posts.length}`);
+  console.log(`  In sitemap-news.xml (48h)    : ${posts.filter(p => p.publishedAt.getTime() >= cutoff48 && p.title).length}`);
   console.log(`  Google News eligible (48h)   : ${posts.filter(p => p.publishedAt.getTime() >= cutoff48 && p.title).length}`);
   console.log('Done.');
 }

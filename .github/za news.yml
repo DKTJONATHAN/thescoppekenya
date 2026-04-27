@@ -1,8 +1,8 @@
 name: Celestine Nzioka - General News Scraper
 on:
   schedule:
-    # 4 AM to 11 PM EAT is 1 AM to 8 PM UTC
-    - cron: '15 1-20 * * *'
+    # 6 AM to 11 PM EAT is 3 AM to 8 PM UTC
+    - cron: '5 3-20 * * *'
   workflow_dispatch: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

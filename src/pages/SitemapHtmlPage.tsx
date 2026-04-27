@@ -2,6 +2,7 @@ import { getAllPosts, categories } from "@/lib/markdown";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { FileText, Tag, Folder } from "lucide-react";
+import { staticSitePages } from "@/lib/site-links";
 
 const SITE_URL = "https://zandani.co.ke";
 
@@ -33,21 +34,7 @@ const SitemapHtmlPage = () => {
             <FileText className="w-5 h-5 text-primary" /> Pages
           </h2>
           <ul className="space-y-1 pl-7 list-disc text-muted-foreground">
-            {[
-              { path: "/", label: "Home" },
-              { path: "/news", label: "News" },
-              { path: "/entertainment", label: "Entertainment" },
-              { path: "/sports", label: "Sports" },
-              { path: "/business", label: "Business" },
-              { path: "/lifestyle", label: "Lifestyle" },
-              { path: "/trending", label: "Trending" },
-              { path: "/sports/live", label: "Live Scores" },
-              { path: "/podcast", label: "Podcast" },
-              { path: "/about", label: "About" },
-              { path: "/contact", label: "Contact" },
-              { path: "/privacy", label: "Privacy Policy" },
-              { path: "/terms", label: "Terms of Service" },
-            ].map((p) => (
+            {staticSitePages.map((p) => (
               <li key={p.path}>
                 <Link to={p.path} className="text-primary hover:underline">
                   {p.label}

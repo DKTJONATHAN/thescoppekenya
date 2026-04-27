@@ -1,4 +1,5 @@
 import { marked } from 'marked';
+import { staticSitePages } from './site-links';
 
 // Browser-compatible frontmatter parser
 function parseFrontmatter(content: string): { data: Record<string, unknown>; content: string } {
@@ -240,20 +241,12 @@ export function generateSitemap(): string {
 
   type SitemapUrl = { loc: string; priority: string; changefreq: string; lastmod?: string };
 
-  const staticPages: SitemapUrl[] = [
-    { loc: '/', priority: '1.0', changefreq: 'hourly', lastmod: today },
-    { loc: '/news', priority: '0.9', changefreq: 'hourly', lastmod: today },
-    { loc: '/entertainment', priority: '0.9', changefreq: 'daily', lastmod: today },
-    { loc: '/sports', priority: '0.8', changefreq: 'daily', lastmod: today },
-    { loc: '/business', priority: '0.8', changefreq: 'daily', lastmod: today },
-    { loc: '/lifestyle', priority: '0.8', changefreq: 'daily', lastmod: today },
-    { loc: '/trending', priority: '0.7', changefreq: 'daily', lastmod: today },
-    { loc: '/authors', priority: '0.5', changefreq: 'weekly' },
-    { loc: '/about', priority: '0.5', changefreq: 'monthly' },
-    { loc: '/contact', priority: '0.5', changefreq: 'monthly' },
-    { loc: '/privacy', priority: '0.3', changefreq: 'monthly' },
-    { loc: '/terms', priority: '0.3', changefreq: 'monthly' },
-  ];
+  const staticPages: SitemapUrl[] = staticSitePages.map((page) => ({
+    loc: page.path,
+    priority: page.path === "/" ? "1.0" : page.path === "/news" ? "0.9" : "0.6",
+    changefreq: page.path === "/" || page.path === "/news" ? "hourly" : "weekly",
+    lastmod: today
+  }));
 
   const postUrls: SitemapUrl[] = posts.map(post => ({
     loc: `/article/${post.slug}`,
@@ -269,6 +262,13 @@ export function generateSitemap(): string {
     lastmod: today
   }));
 
+  const authorUrls: SitemapUrl[] = Array.from(new Set(posts.map((post) => post.author))).map((authorName) => ({
+    loc: `/author/${authorName.toLowerCase().replace(/\s+/g, '-')}`,
+    priority: '0.5',
+    changefreq: 'weekly',
+    lastmod: today
+  }));
+
   const allTags = [...new Set(posts.reduce((acc, post) => acc.concat(post.tags), [] as string[]))];
   const tagUrls: SitemapUrl[] = allTags.map(tag => ({
     loc: `/tag/${encodeURIComponent(tag)}`,
@@ -276,7 +276,7 @@ export function generateSitemap(): string {
     changefreq: 'weekly'
   }));
 
-  const allUrls: SitemapUrl[] = [...staticPages, ...postUrls, ...categoryUrls, ...tagUrls];
+  const allUrls: SitemapUrl[] = [...staticPages, ...postUrls, ...categoryUrls, ...authorUrls, ...tagUrls];
 
   const urlElements = allUrls.map(url => `
   <url>
