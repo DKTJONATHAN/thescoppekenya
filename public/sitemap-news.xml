@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/asake-announces-release-of-fourth-studio-album-titled-m-ney</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-27T09:00:00.000Z</news:publication_date>
+      <news:title>Asake announces release of fourth studio album titled M$NEY</news:title>
+      <news:genres>Entertainment,Music</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/actor-uzor-arukwe-says-dismissal-from-etisalat-led-to-his-acting-car</loc>
     <news:news>
       <news:publication>
@@ -445,18 +457,6 @@
       </news:publication>
       <news:publication_date>2026-04-25T09:00:00.000Z</news:publication_date>
       <news:title>Ruto's Instant Fines Folly: System Suspended</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kylian-mbappe-identifies-jose-mourinho-as-preferred-real-madrid-mana</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-25T09:00:00.000Z</news:publication_date>
-      <news:title>Kylian Mbappe identifies Jose Mourinho as preferred Real Madrid manager</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
