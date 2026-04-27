@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/rutos-ksh1-5m-donation-abroad-death-sham</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-27T09:00:00.000Z</news:publication_date>
+      <news:title>Ruto's KSh1.5M Donation Abroad Death: A Sham</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/asake-announces-release-of-fourth-studio-album-titled-m-ney</loc>
     <news:news>
       <news:publication>
@@ -445,18 +457,6 @@
       </news:publication>
       <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
       <news:title>IEBC schedules Ol Kalou constituency by-election following death of MP David Kiaraho</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/rutos-instant-fines-folly-system-suspended</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-25T09:00:00.000Z</news:publication_date>
-      <news:title>Ruto's Instant Fines Folly: System Suspended</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
