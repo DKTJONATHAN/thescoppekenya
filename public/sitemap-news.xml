@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/beasts-of-no-nation-actor-strika-spotted-working-as-security-guard-i</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:title>Beasts of No Nation actor Strika spotted working as security guard in Accra</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenya-aligns-aircraft-radio-license-validity-with-airworthiness-cert</loc>
     <news:news>
       <news:publication>
@@ -337,42 +349,6 @@
       </news:publication>
       <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
       <news:title>Kisumu Court issues notice for destruction of old case records</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/liverpool-identify-rb-leipzig-winger-yan-diomande-as-mohamed-salah-r</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
-      <news:title>Liverpool identify RB Leipzig winger Yan Diomande as Mohamed Salah replacement</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/gladys-wanga-states-odm-seeks-50-percent-power-share-with-uda-propos</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
-      <news:title>Gladys Wanga states ODM seeks 50 percent power share with UDA, proposes Joho for Deputy President</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/megan-thee-stallion-announces-split-from-klay-thompson-over-infideli</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
-      <news:title>Megan Thee Stallion announces split from Klay Thompson over infidelity allegations</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
