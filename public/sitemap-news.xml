@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/chris-brown-welcomes-fourth-child-with-jada-wallace</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:title>Chris Brown welcomes fourth child with Jada Wallace</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/size-8-njiru-gospel-crusade</loc>
     <news:news>
       <news:publication>
@@ -361,18 +373,6 @@
       </news:publication>
       <news:publication_date>2026-04-27T09:00:00.000Z</news:publication_date>
       <news:title>Kenya Power announces scheduled maintenance outages in Nairobi, Bomet and Nandi counties</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/arsenal-contact-sporting-cp-regarding-transfer-of-maxi-araujo</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
-      <news:title>Arsenal contact Sporting CP regarding transfer of Maxi Araujo</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
