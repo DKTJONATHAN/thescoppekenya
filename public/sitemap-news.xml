@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/openai-targets-africa-ai-growth-while-eac-pledges-regional-technolog</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:title>OpenAI Targets Africa AI Growth While EAC Pledges Regional Technology Fund</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/what-1-tender-cancellation-means-for-kenya-railways</loc>
     <news:news>
       <news:publication>
@@ -325,18 +337,6 @@
       </news:publication>
       <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
       <news:title>President Ruto appoints 37 judges to the High Court and Environment and Land Court</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/epra-adds-foreign-exchange-and-water-resource-levies-to-electricity-</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
-      <news:title>EPRA adds foreign exchange and water resource levies to electricity bills</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
