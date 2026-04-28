@@ -62,7 +62,7 @@ jobs:
           today_str = datetime.datetime.utcnow().strftime('%Y-%m-%d')
           full_date_str = datetime.datetime.utcnow().strftime('%A, %B %d, %Y')
           MODELS_TO_TRY = ['gemini-3-flash-preview', 'gemini-2.5-flash']
-          MAX_AGE_HOURS = 2
+          MAX_AGE_HOURS = 6
           SITE_URL = 'https://www.kenyans.co.ke/news'
           SITE_DOMAIN = 'kenyans.co.ke'
           BANNED_PHRASES = ['sasa basi','melting the pot','spill the tea','tea is hot','grab your popcorn','buckle up','breaking news','dive in','delve into','moreover','furthermore','in conclusion',"it's worth noting",'a testament to','navigating the landscape',"in today's digital age",'tapestry']
