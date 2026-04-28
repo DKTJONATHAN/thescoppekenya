@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/what-1-tender-cancellation-means-for-kenya-railways</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:title>What 1 Tender Cancellation Means for Kenya Railways</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/man-city-fixture-nightmare-pep-guardiola-handed-brutal-schedule-in-m</loc>
     <news:news>
       <news:publication>
@@ -325,30 +337,6 @@
       </news:publication>
       <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
       <news:title>EPRA adds foreign exchange and water resource levies to electricity bills</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/odhiambo-na-consolata-kileleshwa-b-b-hadithi-ya-cctv-siri-nzito-inay</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
-      <news:title>Odhiambo na Consolata Kileleshwa B&amp;B: Hadithi ya CCTV, Siri Nzito Inayochanganya Wakenya!</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-s-electricity-bills-rise-by-ksh-4-72-per-kilowatt-hour-amid-fu</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
-      <news:title>Kenya's electricity bills rise by KSh 4.72 per kilowatt-hour amid fuel crisis</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
