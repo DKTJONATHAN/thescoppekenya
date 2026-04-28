@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/monica-barbaro-and-callum-turner-to-star-in-will-gluck-romantic-come</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:title>Monica Barbaro and Callum Turner to star in Will Gluck romantic comedy One Night Only</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/beasts-of-no-nation-actor-strika-spotted-working-as-security-guard-i</loc>
     <news:news>
       <news:publication>
@@ -337,18 +349,6 @@
       </news:publication>
       <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
       <news:title>Bare Sahara's Viral Rant: DCI Pulls Her Plug!</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kisumu-court-issues-notice-for-destruction-of-old-case-records</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
-      <news:title>Kisumu Court issues notice for destruction of old case records</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
