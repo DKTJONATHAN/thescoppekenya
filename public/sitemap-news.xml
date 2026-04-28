@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/elevate-your-everyday-with-the-samsung-galaxy-s26-and-the-flexible-f</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:title>Elevate your everyday with the Samsung Galaxy S26 and the flexible freedom of LOOP FLEX</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/relative-disputes-kamene-goro-s-claims-that-husband-dj-bonez-abandon</loc>
     <news:news>
       <news:publication>
@@ -397,18 +409,6 @@
       </news:publication>
       <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
       <news:title>Sebastian Sawe sets marathon world record with first official sub-two-hour finish in London</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/police-deploy-security-team-to-kitui-after-seven-killed-in-community</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
-      <news:title>Police deploy security team to Kitui after seven killed in community clashes</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
