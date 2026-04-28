@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/content-creator-elodie-zone-announces-engagement-and-reveals-custom-</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:title>Content creator Elodie Zone announces engagement and reveals custom diamond ring</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/elevate-your-everyday-with-the-samsung-galaxy-s26-and-the-flexible-f</loc>
     <news:news>
       <news:publication>
@@ -385,30 +397,6 @@
       </news:publication>
       <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
       <news:title>Wrexham’s Play-Off Fate Hangs in the Balance Against Crowned Champions Coventry City</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kra-announces-integration-of-customs-data-for-export-vat-returns</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
-      <news:title>KRA announces integration of customs data for export VAT returns</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/sebastian-sawe-sets-marathon-world-record-with-first-official-sub-tw</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
-      <news:title>Sebastian Sawe sets marathon world record with first official sub-two-hour finish in London</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
