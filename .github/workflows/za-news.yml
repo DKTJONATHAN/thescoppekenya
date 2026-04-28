@@ -1,8 +1,9 @@
 name: Celestine Nzioka - General News Scraper
+run-name: Za News | ${{ github.event_name }} | ${{ github.ref_name }}
 on:
   schedule:
     - cron: '5 * * * *'
-  workflow_dispatch: {}
+  workflow_dispatch:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
