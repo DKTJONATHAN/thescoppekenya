@@ -64,29 +64,36 @@ from playwright.sync_api import sync_playwright
 from playwright_stealth import stealth_sync
 from PIL import Image
 
-current_utc = datetime.datetime.utcnow()
-current_year = current_utc.strftime("%Y")
+current_utc       = datetime.datetime.utcnow()
+current_year      = current_utc.strftime("%Y")
 publish_timestamp = current_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
-today_str = current_utc.strftime("%Y-%m-%d")
-full_date_str = current_utc.strftime("%A, %B %d, %Y")
-MODELS_TO_TRY = ["gemini-3.0-flash-preview", "gemini-3.0-flash"]
+today_str         = current_utc.strftime("%Y-%m-%d")
+full_date_str     = current_utc.strftime("%A, %B %d, %Y")
+MODELS_TO_TRY     = ["gemini-1.5-flash", "gemini-pro"]
 MAX_AGE_HOURS = 12
 SITE_URL = "https://www.kenyans.co.ke/news"
 SITE_DOMAIN = "kenyans.co.ke"
 SITE_BASE_URL = "https://zandani.co.ke"
+FALLBACK_IMAGE = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
 
 BANNED_PHRASES = [
-    "sasa basi", "melting the pot", "spill the tea", "tea is hot",
-    "grab your popcorn", "buckle up", "breaking news", "dive in",
+    "online debate in Kenya", "ignited a fiery online debate", "sparked a debate across", "caused a lot of online debate", "this April 2026", "this March 2026", "sasa basi", "melting the pot", "spill the tea", "tea is hot",
+    "grab your popcorn", "listen up", "buckle up", "breaking news",
+    "sherehe", "form ni gani", "udaku", "hello guys", "welcome back",
+    "mambo vipi", "niaje wasee", "karibuni", "tapestry", "dive in",
     "delve into", "moreover", "furthermore", "in conclusion",
-    "it is worth noting", "a testament to", "navigating the landscape",
-    "in todays digital age", "tapestry"
+    "it's worth noting", "a testament to", "navigating the landscape",
+    "in today's digital age", "shed light on"
 ]
 
 BANNED_URL_PATHS = [
     '/author/', '/tag/', '/page/', '/feed/', '/comment-', '/category/',
     '/terms', '/about', '/privacy', '/contact', '/advertise', '/policy', '/disclaimer'
 ]
+
+AUTHOR_NAME = "Celestine Nzioka"
+AUTHOR_SLUG = "celestine-nzioka"
+AUTHOR_PERSONA = "Celestine Nzioka, a cynical and authoritative Kenyan political and news journalist. Be hard-hitting and expose the angle mainstream media ignores. Write with authority and precision."
 
 def upload_to_imgbb(image_url):
     api_key = os.environ.get("IMGBB_API_KEY")
@@ -111,6 +118,20 @@ def upload_to_imgbb(image_url):
     except Exception as e:
         print("ImgBB/WebP error: " + str(e))
         return image_url
+
+def get_real_image(query):
+    access_key = os.environ.get("UNSPLASH_ACCESS_KEY")
+    if not access_key:
+        return FALLBACK_IMAGE
+    try:
+        resp = requests.get(
+            f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={access_key}",
+            timeout=10
+        )
+        if resp.status_code == 200:
+            return resp.json()["urls"]["regular"]
+    except: pass
+    return FALLBACK_IMAGE
 
 def get_target_urls():
     urls_list = []
@@ -251,11 +272,10 @@ def get_internal_context():
             title_m = re.search(r'title:\s*"(.*?)"', content)
             slug_m = re.search(r'slug:\s*"(.*?)"', content)
             if title_m and slug_m:
-                links.append("- [" + title_m.group(1) + "](" + SITE_BASE_URL + "/article/" + slug_m.group(1) + ")")
+                links.append(f"- [{title_m.group(1)}]({SITE_BASE_URL}/article/{slug_m.group(1)})")
         except Exception:
             pass
-    return "
-".join(links) if links else ""
+    return "\n".join(links) if links else ""
 
 raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY1"] if os.environ.get(k)]
 if not raw_keys:
@@ -265,24 +285,33 @@ key_cycle = itertools.cycle(raw_keys)
 current_key = next(key_cycle)
 client = genai.Client(api_key=current_key)
 
-def gemini_generate(prompt, label="", use_search=False):
+def gemini_generate(prompt, temperature=0.85, use_search=True):
     global current_key, client
-    for model in MODELS_TO_TRY:
-        for _ in range(6):
-            try:
-                config = types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]) if use_search else None
-                resp = client.models.generate_content(model=model, contents=prompt, config=config)
-                print("Gemini OK (" + model + "): " + label)
-                return resp.text.strip()
-            except Exception as e:
-                err = str(e)
-                if "429" in err or "quota" in err.lower() or "rate" in err.lower():
-                    time.sleep(random.uniform(20, 35))
-                    current_key = next(key_cycle)
-                    client = genai.Client(api_key=current_key)
-                    continue
-                print("Gemini error (" + model + "): " + err)
-                break
+    prompt_variants = [prompt]
+    if len(prompt) > 12000: prompt_variants.append(prompt[:12000])
+    if len(prompt) > 8000: prompt_variants.append(prompt[:8000])
+
+    for variant_index, prompt_variant in enumerate(prompt_variants, start=1):
+        for model_id in MODELS_TO_TRY:
+            for _ in range(len(raw_keys)):
+                try:
+                    config = types.GenerateContentConfig(
+                        temperature=temperature,
+                        tools=[types.Tool(google_search=types.GoogleSearch())] if use_search else [],
+                        max_output_tokens=8192,
+                    )
+                    resp = client.models.generate_content(model=model_id, contents=prompt_variant, config=config)
+                    return (resp.text or "").strip()
+                except Exception as e:
+                    err = str(e).lower()
+                    if any(x in err for x in ["429", "quota", "resource_exhausted", "rate", "unavailable", "overloaded", "busy", "timeout"]):
+                        print(f"Gemini retry ({model_id}, prompt {variant_index}): {e}")
+                        current_key = next(key_cycle)
+                        client = genai.Client(api_key=current_key)
+                        time.sleep(random.uniform(8, 15))
+                    else:
+                        print(f"Gemini error ({model_id}, prompt {variant_index}): {e}")
+                        break
     return None
 
 article_links = get_target_urls()
@@ -308,153 +337,150 @@ if not full_raw_text:
     print("No fresh valid article")
     sys.exit(0)
 
-title_prompt = (
-    "SCRAPED ARTICLE TITLE: " + target_title + "
-"
-    "ARTICLE SNIPPET:
-" + full_raw_text[:1500] + "
-"
-    "Write a single news headline.
-"
-    "Rules: Plain reporting tone. No dates. No clickbait. No brackets.
-"
-    "Output ONLY JSON: {"final_title": "Your Title Here"}"
-)
-title_text = gemini_generate(title_prompt, "title")
-final_title = target_title
-if title_text:
-    try:
-        clean = re.sub(r"^```json?
-?|```$", "", title_text, flags=re.I|re.DOTALL).strip()
-        data = json.loads(clean)
-        final_title = data.get('final_title', target_title)
-    except Exception as e:
-        print("Title parse error: " + str(e))
-
-current_key = next(key_cycle)
-client = genai.Client(api_key=current_key)
-time.sleep(5)
-
 internal_links = get_internal_context()
 banned_str = ", ".join(BANNED_PHRASES)
-slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
-canonical_url = SITE_BASE_URL + "/article/" + slug
 
-article_prompt = (
-    "Today is " + full_date_str + ". Current year: " + current_year + ". Writing in real time.
-"
-    "TITLE: " + final_title + "
-"
-    "SOURCE TEXT:
-" + full_raw_text[:9500] + "
-"
-    "INTERNAL LINKS (use 1-2 naturally):
-" + internal_links + "
+def pf(label: str, text: str) -> str:
+    m = re.search(rf"^{label}:\s*(.+)$", text, re.MULTILINE | re.IGNORECASE)
+    if m:
+        val = m.group(1).strip()
+        if len(val) > 2: return val
+    m = re.search(rf"{label}:\s*(.+?)(?:\n|$)", text, re.IGNORECASE)
+    return m.group(1).strip() if m else ""
 
-"
-    "TASK: Write a sharp news article as Celestine Nzioka for Za Ndani.
-"
-    "Professional tone. Facts first. No em-dashes. Single hyphens only.
-"
-    "CRITICAL: Article is NOW in " + current_year + ". No references to past years.
-"
-    "No title/author/date in body.
-"
-    "STRUCTURE: 1. 35-45 word lede (no heading). 2. ## H2 subheading. 3. ### subheadings.
-"
-    "BANNED PHRASES: " + banned_str + "
-"
-    "BRANDING: You are Za Ndani. NEVER mention Kenyans or kenyans.co.ke.
-"
-    "Factual, direct, local context."
-)
+def dash_scrubber(text):
+    if not text: return ""
+    _DASHES = [chr(0x2014), chr(0x2013), chr(0x2012), chr(0x2015), chr(0x2011), chr(0x2010), chr(0x2212), chr(0xFE58)]
+    for d in _DASHES: text = text.replace(d, "-")
+    return text
 
-article_text = gemini_generate(article_prompt, "article", use_search=True)
-if not article_text:
+article_prompt = f"""Current Date: {full_date_str}. Current Year: {current_year}.
+ORIGINAL HEADLINE: "{target_title}"
+SOURCE SCRAPED TEXT: "{full_raw_text[:12000]}"
+
+PAST STORIES (PICK ONE AND LINK IT NATURALLY IN THE TEXT USING MARKDOWN):
+{internal_links}
+
+TASK: Write a news report as {AUTHOR_PERSONA}
+You must use Google Search to verify any facts and find additional context about this story.
+
+SMART TITLE ENGINE (FOLLOW STRICTLY):
+Step 1 - Extract PRIMARY KEYWORDS: Pull the 2 to 4 most important words or names directly from ORIGINAL HEADLINE. These are names, places, or event keywords. Do NOT rephrase or replace them.
+Step 2 - Classify content type as one of: NEWS, POLITICS, SCANDAL, FINANCE, or BREAKING.
+Step 3 - Pick the best formula for the content type:
+  - NEWS/BREAKING: use '[Primary Keyword] + [What Happened]'
+  - POLITICS: use '[Primary Keyword] + [Political Action or Consequence]'
+  - SCANDAL: use '[Primary Keyword] + [The Accusation or Revelation]'
+  - FINANCE: use '[Primary Keyword] + [Financial Impact or Figure]'
+Step 4 - Build TITLE: start with PRIMARY KEYWORDS, apply chosen formula, keep under 65 characters.
+Step 5 - Build SLUG: use PRIMARY KEYWORDS only, lowercase, hyphen-separated, no filler words.
+
+LANGUAGE MANDATE (STRICT):
+- NO SHENG OR SWAHILI. Write in clear, authoritative, and professional Kenyan English.
+- BANNED PHRASES: {banned_str}.
+- NEVER use long dashes or double dashes. Only use regular single hyphens.
+
+CRITICAL BRANDING: You are Za Ndani (zandani.co.ke). NEVER mention 'Kenyans', 'kenyans.co.ke', or any source website by name. If attribution is needed, use 'Za Ndani' or omit the source entirely.
+
+STRICT OUTPUT FORMAT:
+TITLE: [Result of Smart Title Engine - front-loaded with PRIMARY KEYWORDS]
+SLUG: [Result of Smart Title Engine - PRIMARY KEYWORDS only]
+EXCERPT: [Snippet under 160 characters featuring PRIMARY KEYWORDS, written in a factual news style]
+TAGS: [comma, separated, english, seo, tags, lowercase, use hyphens for multi-word tags, topically specific. Include the main topic, key people or place names, and one broader category tag.]
+IMAGE_KEYWORD: [2-4 word search query for fallback image if no image was scraped]
+IMAGE_ALT: [A descriptive alt text for the main image, under 125 characters, explaining the scene]
+BODY:
+[Article text containing the internal link.
+Structure: Start with a 35-45 word lede paragraph (who, what, when, where - no heading above it). This answers the core question immediately. Then use ## H2 and ### H3 subheadings with supporting details.
+- DO NOT include the title, author name, date, or updated on anywhere in the body text.
+- Start immediately with the core article content.]
+"""
+
+full_text = gemini_generate(article_prompt, temperature=0.8, use_search=True)
+if not full_text:
+    print("Gemini failed to generate article.")
     sys.exit(1)
 
-article_text = re.sub(r"^```(?:markdown)?
-?", "", article_text).rstrip("```").strip()
-article_text = re.sub(r"^(Title|By|Date):.*?
-", "", article_text, flags=re.I|re.M)
-article_text = article_text.replace("—", "-").replace("–", "-")
-article_text = re.sub(r'kenyans\.co\.ke', 'zandani.co.ke', article_text, flags=re.I)
-article_text = re.sub(r'Kenyans\.co\.ke', 'Za Ndani', article_text)
-article_text = re.sub(r'Kenyans(?=\s+(has|have|said|reported|confirmed|noted|stated|revealed))', 'Za Ndani', article_text)
+full_text = re.sub(r"^```(?:markdown|text|html)?\n", "", full_text, flags=re.IGNORECASE)
+full_text = re.sub(r"\n```$", "", full_text).strip()
 
-current_key = next(key_cycle)
-client = genai.Client(api_key=current_key)
-time.sleep(3)
+parsed_title = pf("TITLE", full_text)
+parsed_slug = pf("SLUG", full_text)
+parsed_excerpt = pf("EXCERPT", full_text)
+parsed_tags = pf("TAGS", full_text)
+parsed_img_kw = pf("IMAGE_KEYWORD", full_text)
+parsed_img_alt = pf("IMAGE_ALT", full_text)
 
-desc_prompt = (
-    "Write one meta description (140-155 chars) for this article.
-"
-    "Title: " + final_title + "
-"
-    "Snippet: " + article_text[:600] + "
-"
-    "Rules: factual, starts with subject, includes key fact. 140-155 chars.
-"
-    "Output ONLY JSON: {"description": "text here"}"
-)
-desc_text = gemini_generate(desc_prompt, "description")
-meta_description = ""
-if desc_text:
-    try:
-        clean = re.sub(r"^```json?
-?|```$", "", desc_text, flags=re.I|re.DOTALL).strip()
-        data = json.loads(clean)
-        meta_description = data.get('description', '')[:160].replace('"', "'")
-    except Exception as e:
-        print("Desc parse error: " + str(e))
+body_match = re.search(r"^BODY:\s*\n([\s\S]+)", full_text, re.MULTILINE | re.IGNORECASE)
+body = body_match.group(1).strip() if body_match else ""
 
-time.sleep(3)
+for field in ["TITLE", "SLUG", "EXCERPT", "TAGS", "IMAGE_KEYWORD", "IMAGE_ALT", "BODY"]:
+    body = re.sub(rf"^{field}:.*\n?", "", body, flags=re.MULTILINE | re.IGNORECASE).strip()
 
-tags_prompt = (
-    "Generate 4-5 SEO tags for this article.
-"
-    "Title: " + final_title + "
-"
-    "Snippet: " + article_text[:500] + "
-"
-    "Rules: lowercase, hyphens for spaces, no generic tags like news or kenya.
-"
-    "Output ONLY JSON: {"tags": ["tag-one", "tag-two", "tag-three", "tag-four"]}"
-)
-tags_text = gemini_generate(tags_prompt, "tags")
-article_tags = []
-if tags_text:
-    try:
-        clean = re.sub(r"^```json?
-?|```$", "", tags_text, flags=re.I|re.DOTALL).strip()
-        data = json.loads(clean)
-        article_tags = [str(t).lower().replace(' ', '-') for t in data.get('tags', [])[:5]]
-    except Exception as e:
-        print("Tags parse error: " + str(e))
+body = dash_scrubber(body).strip()
+body = re.sub(r'\bkenyans\.co\.ke\b', 'zandani.co.ke', body, flags=re.I)
+body = re.sub(r'\bKenyans\.co\.ke\b', 'Za Ndani', body)
+body = re.sub(r'\bKenyans\b(?=\s+(has|have|said|reported|confirmed|noted|stated|revealed|indicated))', 'Za Ndani', body)
 
-final_image = upload_to_imgbb(target_image) if target_image else ""
+if not parsed_title: parsed_title = target_title or "News Update"
+if not parsed_slug: parsed_slug = re.sub(r'[^a-z0-9]+', '-', parsed_title.lower()).strip('-')[:70]
+if not parsed_excerpt: parsed_excerpt = (body.split('\n')[0][:155] + '...') if body else f"Latest news update from Za Ndani on {target_title}"[:155]
+if not parsed_tags: parsed_tags = "news, kenya, celestine-nzioka"
+if not parsed_img_alt: parsed_img_alt = parsed_title
+
+if not target_image:
+    target_image = get_real_image(parsed_img_kw or parsed_title)
+final_image = upload_to_imgbb(target_image) if target_image else FALLBACK_IMAGE
+
+slug = re.sub(r'[^a-z0-9]+', '-', parsed_slug.lower()).strip('-')[:70]
+canonical_url = f"{SITE_BASE_URL}/article/{slug}"
+
+tags_list = [t.strip().lower().replace(' ', '-') for t in parsed_tags.split(',') if t.strip()]
+if 'news' not in tags_list: tags_list.insert(0, 'news')
+if 'celestine-nzioka' not in tags_list: tags_list.append('celestine-nzioka')
+tags_json = json.dumps(tags_list)
+
+schema_data = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": parsed_title.replace('"', "'"),
+    "image": [final_image],
+    "datePublished": publish_timestamp,
+    "dateModified": publish_timestamp,
+    "author": [{"@type": "Person", "name": AUTHOR_NAME, "url": f"{SITE_BASE_URL}/author/{AUTHOR_SLUG}"}],
+    "publisher": {
+        "@type": "Organization",
+        "name": "Za Ndani",
+        "logo": {"@type": "ImageObject", "url": f"{SITE_BASE_URL}/images/logo.png"}
+    },
+    "description": parsed_excerpt.replace('"', "'"),
+    "mainEntityOfPage": {"@type": "WebPage", "@id": canonical_url}
+}
+schema_json_str = json.dumps(schema_data, separators=(',', ':')).replace('"', '\\"')
+
 posts_dir = os.environ.get("POSTS_DIR", "content/posts")
 os.makedirs(posts_dir, exist_ok=True)
-tags_yaml = json.dumps(article_tags)
 
 lines = [
     "---",
-    "title: \"" + final_title.replace('"', "'") + "\"",
-    "slug: \"" + slug + "\"",
-    "description: \"" + meta_description + "\"",
-    "author: \"Celestine Nzioka\"",
-    "author_url: \"" + SITE_BASE_URL + "/author/celestine-nzioka\"",
-    "image: \"" + final_image + "\"",
-    "category: \"News\"",
-    "tags: " + tags_yaml,
-    "canonical: \"" + canonical_url + "\"",
-    "date: \"" + publish_timestamp + "\"",
+    f'title: "{parsed_title.replace("\"", "'")}"',
+    f'slug: "{slug}"',
+    f'description: "{parsed_excerpt.replace("\"", "'")}"',
+    f'author: "{AUTHOR_NAME}"',
+    f'author_url: "{SITE_BASE_URL}/author/{AUTHOR_SLUG}"',
+    f'image: "{final_image}"',
+    f'image_alt: "{parsed_img_alt.replace("\"", "'")}"',
+    'category: "News"',
+    f'tags: {tags_json}',
+    f'canonical: "{canonical_url}"',
+    f'date: "{publish_timestamp}"',
+    f'lastmod: "{publish_timestamp}"',
+    f'schema_json: "{schema_json_str}"',
     "---",
-    article_text,
+    body,
     ""
 ]
-final_file = "
-".join(lines)
+final_file = "\n".join(lines)
 filepath = os.path.join(posts_dir, today_str + "-" + slug + ".md")
 with open(filepath, "w", encoding="utf-8") as f:
     f.write(final_file)
@@ -469,7 +495,7 @@ PYEOF
           git config --global user.name "Celestine Nzioka"
           git config --global user.email "bot@zandani.co.ke"
           git add .
-          git stash -u
+          git stash -u || true
           git fetch origin main
           git pull origin main --rebase
           git stash pop || echo "Nothing to pop"
