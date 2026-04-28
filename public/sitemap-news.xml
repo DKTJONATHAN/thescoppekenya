@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/kenya-aligns-aircraft-radio-license-validity-with-airworthiness-cert</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:title>Kenya aligns aircraft radio license validity with airworthiness certificates</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/emurua-dikirr-riven-by-johana-ngeno-s-inheritance-feud-and-fierce-by</loc>
     <news:news>
       <news:publication>
@@ -385,30 +397,6 @@
       </news:publication>
       <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
       <news:title>Ruto-Gachagua Fallout: Kenya Kwanza's Political Farce</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/megan-thee-stallion-announces-split-from-klay-thompson-following-all</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
-      <news:title>Megan Thee Stallion announces split from Klay Thompson following allegations of infidelity</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/khrc-sues-uda-over-alleged-tax-evasion-and-misuse-of-funds</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-26T09:00:00.000Z</news:publication_date>
-      <news:title>KHRC Sues UDA Over Alleged Tax Evasion and Misuse of Funds</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
