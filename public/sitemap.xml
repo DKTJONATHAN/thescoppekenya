@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
       <loc>https://zandani.co.ke/</loc>
-      <lastmod>2026-04-27</lastmod>
+      <lastmod>2026-04-28</lastmod>
       <changefreq>hourly</changefreq>
       <priority>1.0</priority>
     </url><url>
@@ -25,6 +25,11 @@
       
       <changefreq>monthly</changefreq>
       <priority>0.3</priority>
+    </url><url>
+      <loc>https://zandani.co.ke/article/kamene-goro-recounts-near-fatal-illness-criticises-dj-bonez-s-hospit</loc>
+      <lastmod>2026-04-28T01:30:45Z</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
     </url><url>
       <loc>https://zandani.co.ke/article/rutos-ksh1-5m-donation-abroad-death-sham</loc>
       <lastmod>2026-04-27T22:41:31Z</lastmod>
@@ -2521,58 +2526,53 @@
       <changefreq>daily</changefreq>
       <priority>0.8</priority>
     </url><url>
-      <loc>https://zandani.co.ke/article/carragher-fears-liverpool-fans-behaving-like-man-utd-over-slot-deman</loc>
-      <lastmod>2026-04-04T16:19:20Z</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>0.8</priority>
-    </url><url>
       <loc>https://zandani.co.ke/category/politics</loc>
-      <lastmod>2026-04-27</lastmod>
+      <lastmod>2026-04-28</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.9</priority>
     </url><url>
       <loc>https://zandani.co.ke/category/news</loc>
-      <lastmod>2026-04-27</lastmod>
+      <lastmod>2026-04-28</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.9</priority>
     </url><url>
       <loc>https://zandani.co.ke/category/entertainment</loc>
-      <lastmod>2026-04-27</lastmod>
+      <lastmod>2026-04-28</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.9</priority>
     </url><url>
       <loc>https://zandani.co.ke/category/gossip</loc>
-      <lastmod>2026-04-27</lastmod>
+      <lastmod>2026-04-28</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.9</priority>
     </url><url>
       <loc>https://zandani.co.ke/category/sports</loc>
-      <lastmod>2026-04-27</lastmod>
+      <lastmod>2026-04-28</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.9</priority>
     </url><url>
       <loc>https://zandani.co.ke/category/business</loc>
-      <lastmod>2026-04-27</lastmod>
+      <lastmod>2026-04-28</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.9</priority>
     </url><url>
       <loc>https://zandani.co.ke/category/lifestyle</loc>
-      <lastmod>2026-04-27</lastmod>
+      <lastmod>2026-04-28</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.9</priority>
     </url><url>
       <loc>https://zandani.co.ke/category/technology</loc>
-      <lastmod>2026-04-27</lastmod>
+      <lastmod>2026-04-28</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.9</priority>
     </url><url>
       <loc>https://zandani.co.ke/category/agriculture</loc>
-      <lastmod>2026-04-27</lastmod>
+      <lastmod>2026-04-28</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.9</priority>
     </url><url>
       <loc>https://zandani.co.ke/category/opinions</loc>
-      <lastmod>2026-04-27</lastmod>
+      <lastmod>2026-04-28</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.9</priority>
     </url>
