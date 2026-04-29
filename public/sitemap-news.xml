@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/melvin-alusa-bien-baraza-family</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29T21:21:06.000Z</news:publication_date>
+      <news:title>Melvin Alusa Defends Bien Baraza on Family Planning</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/nairobi-parking-fees-kta-ruto</loc>
     <news:news>
       <news:publication>
