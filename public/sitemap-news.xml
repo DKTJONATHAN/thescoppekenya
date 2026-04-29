@@ -3,7 +3,17 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
-
+  <url>
+    <loc>https://zandani.co.ke/article/rising-fuel-costs-drive-up-transport-fares-and-inflation</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29T19:02:35.000Z</news:publication_date>
+      <news:title>Rising fuel costs drive up transport fares and inflation</news:title>
+    </news:news>
+  </url>
   <url>
     <loc>https://zandani.co.ke/article/george-clooney-reacts-to-his-lake-como-villa-appearing-in-the-devil-</loc>
     <news:news>
@@ -11,9 +21,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-29T18:22:22.000Z</news:publication_date>
       <news:title>George Clooney reacts to his Lake Como villa appearing in The Devil Wears Prada 2</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -23,9 +32,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-29T17:52:09.000Z</news:publication_date>
       <news:title>DJ Bonez confirms separate living arrangement with Kamene Goro and denies split rumors</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -35,9 +43,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-29T17:51:53.000Z</news:publication_date>
       <news:title>Liz Jackson highlights abuse women face in Nairobi CBD</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -47,9 +54,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-29T17:49:05.000Z</news:publication_date>
       <news:title>Kenyans Criticize President Ruto for Lavish State House Spending While KNH and Schools Face Critical Funding Shortages</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -59,9 +65,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-29T17:12:46.000Z</news:publication_date>
       <news:title>Rio Ferdinand names Eberechi Eze as the key player for Arsenal in the Premier League title race</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -71,9 +76,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-29T16:11:01.000Z</news:publication_date>
       <news:title>Charterhouse moves Telecel Ghana Music Awards to Palms Convention Center</news:title>
-      <news:genres>Entertainment,Music</news:genres>
     </news:news>
   </url>
   <url>
@@ -83,9 +87,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-29T16:08:16.000Z</news:publication_date>
       <news:title>Finding Calm Amidst the Hustle: How a Simple Morning Ritual Steadies a Nairobi Business Owner’s Day</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -95,9 +98,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-29T14:51:18.000Z</news:publication_date>
       <news:title>Nairobi Heavy Rains Submerge Roads and Cause Floods</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -107,9 +109,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-29T14:42:40.000Z</news:publication_date>
       <news:title>Inside Kenyan Shilling performance: 4.1% gain vs Dollar in 2025</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -119,9 +120,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-29T14:35:47.000Z</news:publication_date>
       <news:title>Content creator Goliath wa Bungoma hospitalized after road accident in Ruaka</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -131,9 +131,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-29T06:15:03.000Z</news:publication_date>
       <news:title>Harry Maguire praises Casemiro following Manchester United victory over Brentford</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -143,9 +142,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-29T06:13:35.000Z</news:publication_date>
       <news:title>Oga Obinna Gives Son 10,000 Pocket Money in 50 Shilling Notes</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -155,9 +153,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-29T04:07:37.000Z</news:publication_date>
       <news:title>Bien responds to critic Sabato as Finale reaches 20 million views</news:title>
-      <news:genres>Entertainment,Music</news:genres>
     </news:news>
   </url>
   <url>
@@ -167,9 +164,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-29T01:46:39.000Z</news:publication_date>
       <news:title>Muranga University Student Consolata Githinji Dies in Kileleshwa Airbnb Fall, Tony Odhiambo Arrested</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -179,9 +175,9 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
-      <news:title>Ruto's Gulf Rhetoric Rings Hollow for Kenyans</news:title>
-      <news:genres>Entertainment</news:genres>
+      <news:publication_date>2026-04-28T22:48:08.000Z</news:publication_date>
+      <news:title>Ruto&apos;s Gulf Rhetoric Rings Hollow for Kenyans</news:title>
+      <news:genres>Opinion</news:genres>
     </news:news>
   </url>
   <url>
@@ -191,9 +187,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-28T21:39:28.000Z</news:publication_date>
       <news:title>Bazenga Ke: Busia Content Creator Alpha Ojiambo Profiled</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -203,9 +198,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-28T21:35:11.000Z</news:publication_date>
       <news:title>Chris Brown welcomes fourth child with Jada Wallace</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -215,9 +209,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-28T20:04:42.000Z</news:publication_date>
       <news:title>Size 8 Njiru Crusade Sees Over 600 Souls Won and Hundreds Healed</news:title>
-      <news:genres>Entertainment,Music</news:genres>
     </news:news>
   </url>
   <url>
@@ -227,9 +220,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-28T19:51:43.000Z</news:publication_date>
       <news:title>William Ruto Clarifies Comments on Nigerian English</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -239,9 +231,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-28T19:18:38.000Z</news:publication_date>
       <news:title>What Happened: Garissa-Mwingi Highway Bus Attack Disrupts Transport</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -251,9 +242,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
-      <news:title>PS Omollo: Widows' Champion Faces Scandal Over Alleged Affairs</news:title>
-      <news:genres>Entertainment,Celebrity Gossip</news:genres>
+      <news:publication_date>2026-04-28T19:15:49.000Z</news:publication_date>
+      <news:title>PS Omollo: Widows&apos; Champion Faces Scandal Over Alleged Affairs</news:title>
     </news:news>
   </url>
   <url>
@@ -263,9 +253,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-28T19:13:52.000Z</news:publication_date>
       <news:title>OpenAI Targets Africa AI Growth While EAC Pledges Regional Technology Fund</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -275,9 +264,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-28T18:53:30.000Z</news:publication_date>
       <news:title>What 1 Tender Cancellation Means for Kenya Railways</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -287,9 +275,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-28T18:09:52.000Z</news:publication_date>
       <news:title>Man City Fixture Nightmare: Pep Guardiola Handed Brutal Schedule in Major Blow to Title Hopes</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -299,9 +286,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-28T17:08:48.000Z</news:publication_date>
       <news:title>Shiksha Arora says Kenyan Indians should be referred to as Kenyan</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -311,9 +297,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-28T17:03:25.000Z</news:publication_date>
       <news:title>Monica Barbaro and Callum Turner to star in Will Gluck romantic comedy One Night Only</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -323,9 +308,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-28T16:22:53.000Z</news:publication_date>
       <news:title>Beasts of No Nation actor Strika spotted working as security guard in Accra</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -335,9 +319,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-28T14:07:20.000Z</news:publication_date>
       <news:title>Kenya aligns aircraft radio license validity with airworthiness certificates</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -347,9 +330,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
-      <news:title>Emurua Dikirr Riven by Johana Ngeno's Inheritance Feud and Fierce By-Election Race</news:title>
-      <news:genres>Entertainment</news:genres>
+      <news:publication_date>2026-04-28T13:23:35.000Z</news:publication_date>
+      <news:title>Emurua Dikirr Riven by Johana Ngeno&apos;s Inheritance Feud and Fierce By-Election Race</news:title>
     </news:news>
   </url>
   <url>
@@ -359,9 +341,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-28T13:20:49.000Z</news:publication_date>
       <news:title>Arsenal open to Gyokeres sale, eyeing Julian Alvarez</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -371,9 +352,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
-      <news:title>Duale's Garissa Challenge Escalates Rivalry, Gachagua Issues Kiambu Tread Carefully Warning</news:title>
-      <news:genres>Entertainment</news:genres>
+      <news:publication_date>2026-04-28T12:37:06.000Z</news:publication_date>
+      <news:title>Duale&apos;s Garissa Challenge Escalates Rivalry, Gachagua Issues Kiambu Tread Carefully Warning</news:title>
     </news:news>
   </url>
   <url>
@@ -383,9 +363,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-28T12:09:30.000Z</news:publication_date>
       <news:title>Content creator Elodie Zone announces engagement and reveals custom diamond ring</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -395,9 +374,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
+      <news:publication_date>2026-04-28T10:27:06.000Z</news:publication_date>
       <news:title>Elevate your everyday with the Samsung Galaxy S26 and the flexible freedom of LOOP FLEX</news:title>
-      <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
   <url>
@@ -407,9 +385,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
-      <news:title>Relative disputes Kamene Goro's claims that husband DJ Bonez abandoned her</news:title>
-      <news:genres>Entertainment</news:genres>
+      <news:publication_date>2026-04-28T04:10:52.000Z</news:publication_date>
+      <news:title>Relative disputes Kamene Goro&apos;s claims that husband DJ Bonez abandoned her</news:title>
     </news:news>
   </url>
   <url>
@@ -419,69 +396,8 @@
         <news:name>Za Ndani</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-04-28T09:00:00.000Z</news:publication_date>
-      <news:title>Kamene Goro Recounts Near-Fatal Illness, Criticises DJ Bonez's Hospital Absence, Sparking His Cryptic Reply</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/rutos-ksh1-5m-donation-abroad-death-sham</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27T09:00:00.000Z</news:publication_date>
-      <news:title>Ruto's KSh1.5M Donation Abroad Death: A Sham</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/asake-announces-release-of-fourth-studio-album-titled-m-ney</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27T09:00:00.000Z</news:publication_date>
-      <news:title>Asake announces release of fourth studio album titled M$NEY</news:title>
-      <news:genres>Entertainment,Music</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/actor-uzor-arukwe-says-dismissal-from-etisalat-led-to-his-acting-car</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27T09:00:00.000Z</news:publication_date>
-      <news:title>Actor Uzor Arukwe says dismissal from Etisalat led to his acting career</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kileleshwa-airbnb-tea-student-s-tragic-fall-married-man-suspected</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27T09:00:00.000Z</news:publication_date>
-      <news:title>Kileleshwa Airbnb Tea: Student's Tragic Fall, Married Man Suspected</news:title>
-      <news:genres>Entertainment,Celebrity Gossip</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenyan-agritech-sokofresh-secures-ksh-65-million-loan-to-reduce-post</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27T09:00:00.000Z</news:publication_date>
-      <news:title>Kenyan agritech SokoFresh secures KSh 65 million loan to reduce post-harvest losses</news:title>
-      <news:genres>Entertainment</news:genres>
+      <news:publication_date>2026-04-28T01:30:45.000Z</news:publication_date>
+      <news:title>Kamene Goro Recounts Near-Fatal Illness, Criticises DJ Bonez&apos;s Hospital Absence, Sparking His Cryptic Reply</news:title>
     </news:news>
   </url>
 </urlset>
