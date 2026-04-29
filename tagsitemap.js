@@ -2,109 +2,169 @@ import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-// --- ES MODULE PATH SETUP ----------------------------------------------------
+// ---------------------------------------------------------------------------
+// ES MODULE PATH SETUP
+// ---------------------------------------------------------------------------
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname  = path.dirname(__filename);
 
-// --- CONFIGURATION -----------------------------------------------------------
-const POSTS_DIRECTORY = path.join(__dirname, 'content', 'posts'); 
-const SITE_URL = 'https://zandani.co.ke';
-// Output directly to dist so it is available after Vite builds
-const OUTPUT_FILE = path.join(__dirname, 'dist', 'deindex-tags-sitemap.xml'); 
+// ---------------------------------------------------------------------------
+// CONFIGURATION
+// ---------------------------------------------------------------------------
+const POSTS_DIRECTORY = path.join(__dirname, 'content', 'posts');
+const SITE_URL        = 'https://zandani.co.ke';
+const OUTPUT_FILE     = path.join(__dirname, 'dist', 'deindex-tags-sitemap.xml');
+const DRY_RUN         = process.argv.includes('--dry-run');
 
-// --- HELPER: RECURSIVELY READ DIRECTORY --------------------------------------
+// ---------------------------------------------------------------------------
+// HELPER: SLUGIFY  (spaces/underscores â†’ hyphens, lowercase, trim special chars)
+// Keeps the tag URLs consistent with Astro's default content collection routing.
+// e.g.  "Kenyan News"  â†’  "kenyan-news"
+// ---------------------------------------------------------------------------
+function slugify(str) {
+  return str
+    .toLowerCase()
+    .trim()
+    .replace(/[\s_]+/g, '-')       // spaces/underscores â†’ hyphens
+    .replace(/[^a-z0-9\-]/g, '')   // strip everything except a-z 0-9 -
+    .replace(/--+/g, '-')          // collapse consecutive hyphens
+    .replace(/^-+|-+$/g, '');      // trim leading/trailing hyphens
+}
+
+// ---------------------------------------------------------------------------
+// HELPER: EXTRACT FRONTMATTER BLOCK  (content between first two --- fences)
+// ---------------------------------------------------------------------------
+function extractFrontmatter(content) {
+  const match = content.match(/^---[\r\n]([\s\S]*?)[\r\n]---/);
+  return match ? match[1] : '';
+}
+
+// ---------------------------------------------------------------------------
+// HELPER: PARSE TAGS FROM FRONTMATTER TEXT
+//
+// Handles all common YAML formats for tags:
+//   1. Inline array  â†’  tags: [foo, bar, "baz qux"]
+//   2. Flow string   â†’  tags: foo, bar, baz
+//   3. Block array   â†’  tags:\n  - foo\n  - bar        â† original script missed this!
+// ---------------------------------------------------------------------------
+function parseTags(frontmatter) {
+  // â”€â”€ Format 3: block (YAML list) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // Match  tags:\n  - item\n  - item  (indented dashes after the tags: key)
+  const blockMatch = frontmatter.match(/^tags\s*:\s*[\r\n]((?:[ \t]+-[^\r\n]*[\r\n]?)+)/m);
+  if (blockMatch) {
+    return blockMatch[1]
+      .split(/[\r\n]+/)
+      .map(line => line.replace(/^[ \t]+-\s*/, '').replace(/['"]/g, '').trim())
+      .filter(Boolean);
+  }
+
+  // â”€â”€ Formats 1 & 2: inline  (tags: [...] or tags: a, b, c) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  const inlineMatch = frontmatter.match(/^tags\s*:\s*\[?([^\]\r\n]+)\]?/m);
+  if (inlineMatch) {
+    return inlineMatch[1]
+      .split(',')
+      .map(tag => tag.replace(/['"[\]]/g, '').trim())
+      .filter(Boolean);
+  }
+
+  return [];
+}
+
+// ---------------------------------------------------------------------------
+// HELPER: RECURSIVELY COLLECT MARKDOWN FILES
+// ---------------------------------------------------------------------------
 async function getMarkdownFiles(dir, fileList = []) {
   try {
-    const files = await fs.readdir(dir);
-    for (const file of files) {
-      const filepath = path.join(dir, file);
-      const stat = await fs.stat(filepath);
-
-      if (stat.isDirectory()) {
-        fileList = await getMarkdownFiles(filepath, fileList);
-      } else if (filepath.endsWith('.md') || filepath.endsWith('.mdx')) {
-        fileList.push(filepath);
+    const entries = await fs.readdir(dir, { withFileTypes: true });
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        fileList = await getMarkdownFiles(fullPath, fileList);
+      } else if (/\.(md|mdx)$/.test(entry.name)) {
+        fileList.push(fullPath);
       }
     }
-  } catch (error) {
-    if (error.code === 'ENOENT') {
-      console.error(`[X] Directory not found: ${dir}`);
-      console.error(`Please ensure the 'content/posts' folder exists relative to where you are running this script.`);
+  } catch (err) {
+    if (err.code === 'ENOENT') {
+      console.error(`[âœ—] Directory not found: ${dir}`);
+      console.error(`    Make sure 'content/posts' exists relative to this script.`);
       process.exit(1);
     }
-    throw error;
+    throw err;
   }
   return fileList;
 }
 
-// --- HELPER: EXTRACT TAGS FROM FRONTMATTER -----------------------------------
-async function extractTagsFromFiles(files) {
-  const allTags = new Set();
+// ---------------------------------------------------------------------------
+// MAIN
+// ---------------------------------------------------------------------------
+async function generateSitemap() {
+  console.log(`[â†’] Scanning: ${POSTS_DIRECTORY}`);
+  const files = await getMarkdownFiles(POSTS_DIRECTORY);
+  console.log(`[âœ“] Found ${files.length} markdown file(s).`);
 
-  // Regex to find "tags: [a, b]" or "tags: a, b" in frontmatter
-  const tagsRegex = /tags:\s*\[?(.*?)\]?\r?\n/;
+  const rawTagSet  = new Set();   // original labels (for logging)
+  const slugTagSet = new Set();   // deduplicated slugs (for URLs)
 
   for (const file of files) {
-    const content = await fs.readFile(file, 'utf8');
-    const match = content.match(tagsRegex);
+    const content     = await fs.readFile(file, 'utf8');
+    const frontmatter = extractFrontmatter(content);
 
-    if (match && match[1]) {
-      // Split by comma, clean up quotes, brackets, and whitespace
-      const extracted = match[1]
-        .split(',')
-        .map(tag => tag.replace(/['"]/g, '').trim())
-        .filter(tag => tag.length > 0);
+    if (!frontmatter) continue;
 
-      extracted.forEach(tag => allTags.add(tag));
+    const tags = parseTags(frontmatter);
+    for (const tag of tags) {
+      if (!tag) continue;
+      rawTagSet.add(tag);
+      const slug = slugify(tag);
+      if (slug) slugTagSet.add(slug);
     }
   }
 
-  return Array.from(allTags);
-}
+  console.log(`[âœ“] Unique raw tags  : ${rawTagSet.size}`);
+  console.log(`[âœ“] Unique URL slugs : ${slugTagSet.size}`);
 
-// --- MAIN SCRIPT: GENERATE XML SITEMAP ---------------------------------------
-async function generateSitemap() {
-  console.log(`[+] Scanning for Markdown files in: ${POSTS_DIRECTORY}`);
-  const files = await getMarkdownFiles(POSTS_DIRECTORY);
-  console.log(`[+] Found ${files.length} markdown files.`);
-
-  console.log('[+] Extracting tags...');
-  const tags = await extractTagsFromFiles(files);
-  console.log(`[+] Extracted ${tags.length} unique tags.`);
-
-  if (tags.length === 0) {
-    console.log('[!] No tags found. Check your markdown frontmatter format.');
+  if (slugTagSet.size === 0) {
+    console.warn('[!] No tags found â€” check your frontmatter format.');
     return;
   }
 
-  // Use today's date so Googlebot crawls them immediately
+  // Sort for deterministic diffs in version control
+  const sortedSlugs = [...slugTagSet].sort();
+
   const today = new Date().toISOString().split('T')[0];
 
-  console.log('[+] Generating XML...');
+  // Build XML  (no <changefreq> or <priority> â€” Google ignores them for tag pages)
+  const lines = [
+    `<?xml version="1.0" encoding="UTF-8"?>`,
+    `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,
+    ...sortedSlugs.map(slug =>
+      `  <url>\n    <loc>${SITE_URL}/tag/${slug}/</loc>\n    <lastmod>${today}</lastmod>\n  </url>`
+    ),
+    `</urlset>`,
+  ];
+  const xml = lines.join('\n');
 
-  let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
-  xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
-
-  for (const tag of tags) {
-    const encodedTag = encodeURIComponent(tag);
-    xml += `  <url>\n`;
-    xml += `    <loc>${SITE_URL}/tag/${encodedTag}</loc>\n`;
-    xml += `    <lastmod>${today}</lastmod>\n`;
-    xml += `  </url>\n`;
+  if (DRY_RUN) {
+    console.log('\n[DRY RUN] Would write:\n');
+    console.log(xml.slice(0, 1500) + (xml.length > 1500 ? '\n... (truncated)' : ''));
+    console.log(`\n[DRY RUN] Total URLs: ${sortedSlugs.length}`);
+    return;
   }
 
-  xml += `</urlset>`;
-
-  // Ensure the dist directory exists before writing to it
+  // Ensure dist/ exists (Vite may not have run yet in pre-build scenarios)
   const outDir = path.dirname(OUTPUT_FILE);
-  try {
-    await fs.access(outDir);
-  } catch {
-    await fs.mkdir(outDir, { recursive: true });
-  }
+  await fs.mkdir(outDir, { recursive: true });
 
   await fs.writeFile(OUTPUT_FILE, xml, 'utf8');
-  console.log(`[SUCCESS] Temporary sitemap generated at: ${OUTPUT_FILE}`);
+  console.log(`\n[âœ“] Sitemap written â†’ ${OUTPUT_FILE}`);
+  console.log(`    Total tag URLs   : ${sortedSlugs.length}`);
+  console.log(`\n    Sample URLs:`);
+  sortedSlugs.slice(0, 5).forEach(s => console.log(`      ${SITE_URL}/tag/${s}/`));
+  if (sortedSlugs.length > 5) console.log(`      ... and ${sortedSlugs.length - 5} more`);
 }
 
-generateSitemap().catch(console.error);
+generateSitemap().catch(err => {
+  console.error('[âœ—] Fatal error:', err.message);
+  process.exit(1);
+});
