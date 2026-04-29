@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/tiwa-savage-music-foundation-awards-2-1-million-in-berklee-scholarsh</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29T21:46:33.000Z</news:publication_date>
+      <news:title>Tiwa Savage Music Foundation awards $2.1 million in Berklee scholarships to 18 students</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/the-hidden-demands-of-hosting-understanding-the-guest-personalities-</loc>
     <news:news>
       <news:publication>
