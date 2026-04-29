@@ -1,11 +1,7 @@
 name: Amara Ndlovu - Pan-Africa Entertainment Scraper
 on:
   schedule:
-    - cron: '30 0,12 * * *'
-    - cron: '30 2,14 * * *'
-    - cron: '30 4,16 * * *'
-    - cron: '30 6,18 * * *'
-    - cron: '30 8,20 * * *'
+    - cron: '48 * * * *'
   workflow_dispatch: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

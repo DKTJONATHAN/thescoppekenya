@@ -1,0 +1,273 @@
+name: Za Ndani - Weekly Podcast Generator
+on:
+  schedule:
+    - cron: '0 8 * * 0' # Every Sunday at 08:00 UTC
+  workflow_dispatch: {}
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+permissions:
+  contents: write
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+  PODCAST_DIR: content/podcasts
+  AUDIO_DIR: public/audio/podcasts
+  MEMORY_FILE: .github/memory_podcast.json
+
+jobs:
+  generate-podcast:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-genai
+
+      - name: Generate Podcast Audio and Markdown
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
+          PODCAST_DIR: ${{ env.PODCAST_DIR }}
+          AUDIO_DIR: ${{ env.AUDIO_DIR }}
+          MEMORY_FILE: ${{ env.MEMORY_FILE }}
+        run: |
+          python << 'EOF'
+          import os, json, datetime, random, re, sys, itertools, time, hashlib
+          import requests
+          from google import genai
+          from google.genai import types
+
+          # ── Setup directories ────────────────────────────────────────────────
+          posts_dir = os.environ.get('POSTS_DIR', 'content/posts')
+          podcast_dir = os.environ.get('PODCAST_DIR', 'content/podcasts')
+          audio_dir = os.environ.get('AUDIO_DIR', 'public/audio/podcasts')
+          
+          for d in [podcast_dir, audio_dir]:
+              os.makedirs(d, exist_ok=True)
+
+          # ── Check memory ─────────────────────────────────────────────────────
+          memory_path = os.environ.get('MEMORY_FILE', '.github/memory_podcast.json')
+          try:
+              if os.path.exists(memory_path):
+                  with open(memory_path, 'r') as f:
+                      memory = json.load(f)
+              else:
+                  memory = []
+          except:
+              memory = []
+
+          # ── Parse existing articles ──────────────────────────────────────────
+          articles_by_cat = {'Entertainment': [], 'Sports': [], 'News': []}
+          
+          # We only consider articles modifying in the last 7-14 days to be relevant
+          now = datetime.datetime.utcnow()
+          
+          for filename in os.listdir(posts_dir):
+              if not filename.endswith('.md'): continue
+              filepath = os.path.join(posts_dir, filename)
+              
+              with open(filepath, 'r', encoding='utf-8') as f:
+                  content = f.read()
+              
+              # Extract category
+              cat_match = re.search(r'category:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
+              title_match = re.search(r'title:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
+              
+              if not cat_match or not title_match: continue
+              cat = cat_match.group(1).strip()
+              title = title_match.group(1).strip()
+              
+              # Extract body by removing frontmatter
+              body = re.split(r'^---$', content, maxsplit=2, flags=re.MULTILINE)
+              body_text = body[-1].strip() if len(body) > 2 else ""
+              
+              target_cat = None
+              if cat in ['Entertainment', 'Lifestyle']: target_cat = 'Entertainment'
+              elif cat in ['Sports']: target_cat = 'Sports'
+              elif cat in ['News', 'Politics', 'Business', 'Africa']: target_cat = 'News'
+              
+              if target_cat:
+                  a_hash = hashlib.md5(title.encode()).hexdigest()
+                  if a_hash not in memory:
+                      articles_by_cat[target_cat].append({
+                          'hash': a_hash,
+                          'title': title,
+                          'body': body_text[:1500] # First 1500 chars for context
+                      })
+
+          # ── Select articles ──────────────────────────────────────────────────
+          selected_articles = []
+          for cat in ['Entertainment', 'Sports', 'News']:
+              if articles_by_cat[cat]:
+                  choice = random.choice(articles_by_cat[cat])
+                  selected_articles.append(choice)
+                  memory.append(choice['hash'])
+          
+          if not selected_articles:
+              print("No fresh articles found for the podcast. Exiting.")
+              sys.exit(0)
+
+          # ── Generate Podcast Script using Gemini ─────────────────────────────
+          raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY1"] if os.environ.get(k)]
+          if not raw_keys:
+              print("No Gemini keys found")
+              sys.exit(1)
+              
+          key_cycle = itertools.cycle(raw_keys)
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
+          
+          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          
+          script_prompt = (
+              "You are the dynamic, lively host of 'Za Ndani: The Podcast' - a premier Kenyan news and entertainment wrap-up.\n"
+              "Your task is to write a short, compelling podcast script covering the following top stories from this week.\n\n"
+          )
+          for idx, art in enumerate(selected_articles):
+              script_prompt += f"Story {idx+1} ({art['title']}):\n{art['body']}\n\n"
+              
+          script_prompt += (
+              "SCRIPT RULES:\n"
+              "- Write ONLY the spoken words. NO sound effect notes, NO brackets like [Music plays] or [Chuckles], NO speaker labels like 'Host:'. Just the pure text.\n"
+              "- Tone: Professional but energetic, smooth, engaging, Kenyan but purely English.\n"
+              "- Length: Around 300 to 400 words (about 2-3 minutes spoken).\n"
+              "- Structure: Start with a catchy intro welcoming them to Za Ndani, smoothly transition between the stories, and end with a great outro thanking the listeners."
+          )
+
+          script_text = ""
+          for model in MODELS_TO_TRY:
+              for _ in range(3):
+                  try:
+                      resp = client.models.generate_content(model=model, contents=script_prompt)
+                      script_text = (resp.text or "").strip()
+                      # Clean up any accidental brackets or Speaker labels if Gemini ignores rules
+                      script_text = re.sub(r'\[.*?\]', '', script_text)
+                      script_text = re.sub(r'^[A-Za-z]+:\s*', '', script_text, flags=re.MULTILINE)
+                      break
+                  except Exception as e:
+                      if "429" in str(e):
+                          time.sleep(random.uniform(5, 10))
+                          current_key = next(key_cycle)
+                          client = genai.Client(api_key=current_key)
+                          continue
+                      print(f"Gemini err: {e}")
+              if script_text: break
+              
+          if not script_text:
+              print("Failed to generate script")
+              sys.exit(1)
+              
+          print(f"Generated Script ({len(script_text)} chars):")
+          print(script_text[:200] + "...")
+
+          # ── Generate Audio using ElevenLabs ──────────────────────────────────
+          # Default voice ID: "21m00Tcm4TlvDq8ikWAM" (Rachel) is a good standard voice.
+          # Another good one is "pNInz6obpgDQGcFmaJgB" (Adam). Let's use a clear, energetic voice.
+          VOICE_ID = "21m00Tcm4TlvDq8ikWAM"
+          elevenlabs_key = os.environ.get('ELEVENLABS_API_KEY')
+          
+          if not elevenlabs_key:
+              print("ELEVENLABS_API_KEY not set. Cannot generate audio. But we will save the script anyway.")
+              audio_url_path = ""
+          else:
+              print("Calling ElevenLabs API...")
+              url = f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}"
+              headers = {
+                  "Accept": "audio/mpeg",
+                  "Content-Type": "application/json",
+                  "xi-api-key": elevenlabs_key
+              }
+              data = {
+                  "text": script_text,
+                  "model_id": "eleven_monolingual_v1",
+                  "voice_settings": {
+                      "stability": 0.5,
+                      "similarity_boost": 0.75
+                  }
+              }
+              
+              response = requests.post(url, json=data, headers=headers)
+              
+              if response.status_code == 200:
+                  print("ElevenLabs audio generated successfully.")
+                  date_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+                  audio_filename = f"{date_str}-weekly-roundup.mp3"
+                  audio_filepath = os.path.join(audio_dir, audio_filename)
+                  
+                  with open(audio_filepath, 'wb') as f:
+                      f.write(response.content)
+                  
+                  audio_url_path = f"/audio/podcasts/{audio_filename}"
+              else:
+                  print(f"ElevenLabs failed: {response.text}")
+                  audio_url_path = ""
+
+          # ── Write Markdown File for Frontend ─────────────────────────────────
+          publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+          date_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          slug = f"{date_str}-weekly-roundup"
+          
+          titles = [art['title'] for art in selected_articles]
+          excerpt_text = "In this episode: " + ", ".join(titles)
+          
+          md_lines = [
+              "---",
+              f'title: "Za Ndani Weekly Roundup: {date_str}"',
+              f'slug: "{slug}"',
+              f'date: "{publish_timestamp}"',
+              f'excerpt: "{excerpt_text}"',
+              f'audio_url: "{audio_url_path}"',
+              "---",
+              "",
+              "**Episode Script:**",
+              "",
+              script_text
+          ]
+          
+          md_filepath = os.path.join(podcast_dir, f"{slug}.md")
+          with open(md_filepath, 'w', encoding='utf-8') as f:
+              f.write("\n".join(md_lines))
+          
+          print(f"Created podcast markdown: {md_filepath}")
+          
+          # ── Save memory ──────────────────────────────────────────────────────
+          os.makedirs(os.path.dirname(memory_path), exist_ok=True)
+          with open(memory_path, 'w') as f:
+              json.dump(memory[-200:], f) # Keep last 200 hashes
+
+          EOF
+
+      - name: Git Safety Pull
+        run: |
+          git config --global user.name "Za Ndani Podcast Bot"
+          git config --global user.email "bot@zandani.co.ke"
+          git add .
+          git stash -u || true
+          git fetch origin main
+          git pull origin main --rebase
+          git stash pop || echo "Nothing to pop"
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: "Podcast Bot <bot@zandani.co.ke>"
+          commit_message: "content: Generated weekly podcast audio and script"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: 'content/podcasts/*.md public/audio/podcasts/*.mp3 .github/memory_podcast.json'
