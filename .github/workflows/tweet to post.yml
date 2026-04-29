@@ -1,4 +1,4 @@
-name: Manual Tweet to Post - Zandani
+﻿name: Manual Tweet to Post - Zandani
 on:
   workflow_dispatch:
     inputs:
@@ -60,7 +60,7 @@ jobs:
           full_date_str     = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
-          MODELS_TO_TRY     = ["gemini-2.5-flash", "gemini-2.0-flash"]
+          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
 
           NITTER_INSTANCES = [
               "https://nitter.net",
@@ -82,14 +82,14 @@ jobs:
           def clean_text(text):
               return re.sub(r'\s+', ' ', str(text or '')).strip()
 
-          # ── URL PARSER ──────────────────────────────────────────────────────
+          # â”€â”€ URL PARSER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def parse_tweet_url(url):
               m = re.search(r'(?:twitter\.com|x\.com)/([^/?#]+)/status/(\d+)', url)
               if m:
                   return m.group(1), m.group(2)
               return None, None
 
-          # ── IMAGE UPLOAD ─────────────────────────────────────────────────────
+          # â”€â”€ IMAGE UPLOAD â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
               if not api_key or not image_url:
@@ -122,7 +122,7 @@ jobs:
                   print(f"ImgBB/WebP error: {e}")
                   return image_url
 
-          # ── TWEET FETCHER: CDN SYNDICATION ───────────────────────────────────
+          # â”€â”€ TWEET FETCHER: CDN SYNDICATION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def get_tweet_syndication(tweet_id, username):
               url = f"https://cdn.syndication.twimg.com/tweet-result?id={tweet_id}&lang=en&token=a"
               headers = {
@@ -159,7 +159,7 @@ jobs:
                   print(f"CDN Syndication error: {e}")
               return None
 
-          # ── TWEET FETCHER: NITTER ────────────────────────────────────────────
+          # â”€â”€ TWEET FETCHER: NITTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def get_tweet_nitter(username, tweet_id):
               headers = {
                   'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
@@ -209,7 +209,7 @@ jobs:
                       print(f"  -> Nitter error {instance}: {e}")
               return None
 
-          # ── TWEET FETCHER: OEMBED (LAST RESORT) ──────────────────────────────
+          # â”€â”€ TWEET FETCHER: OEMBED (LAST RESORT) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def get_tweet_oembed(tweet_url, tweet_id, username):
               import urllib.parse
               oembed_url = f"https://publish.twitter.com/oembed?url={urllib.parse.quote(tweet_url)}&omit_script=true"
@@ -241,7 +241,7 @@ jobs:
                   print(f"oEmbed error: {e}")
               return None
 
-          # ── MAIN TWEET FETCHER ───────────────────────────────────────────────
+          # â”€â”€ MAIN TWEET FETCHER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def fetch_tweet(tweet_url):
               username, tweet_id = parse_tweet_url(tweet_url)
               if not username or not tweet_id:
@@ -263,7 +263,7 @@ jobs:
               print("All fetch methods exhausted.")
               sys.exit(1)
 
-          # ── GEMINI SETUP ─────────────────────────────────────────────────────
+          # â”€â”€ GEMINI SETUP â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY1"] if os.environ.get(k)]
           if not raw_keys:
               print("No Gemini keys found")
@@ -289,7 +289,7 @@ jobs:
                           print(f"Gemini OK ({model}): {label}")
                           return result
                       except Exception as e:
-                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower():
+                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower() or "503" in str(e) or "unavailable" in str(e).lower() or "500" in str(e) or "overloaded" in str(e).lower() or "resource_exhausted" in str(e).lower():
                               time.sleep(random.uniform(20, 40))
                               current_key = next(key_cycle)
                               client = genai.Client(api_key=current_key)
@@ -317,26 +317,26 @@ jobs:
                       pass
               return "\n".join(links) if links else ""
 
-          # ── MEMORY ───────────────────────────────────────────────────────────
+          # â”€â”€ MEMORY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           memory_path = os.environ.get("MEMORY_FILE", ".github/memory_manual_tweets.json")
           try:
               memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
           except json.JSONDecodeError:
               memory = []
 
-          # ── VALIDATE INPUT ───────────────────────────────────────────────────
+          # â”€â”€ VALIDATE INPUT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           if not TWEET_URL_INPUT:
               print("ERROR: No tweet URL provided. Please set the tweet_url input.")
               sys.exit(1)
 
-          # ── FETCH TWEET ──────────────────────────────────────────────────────
+          # â”€â”€ FETCH TWEET â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           chosen = fetch_tweet(TWEET_URL_INPUT)
 
           if chosen['id'] in memory:
               print(f"Tweet {chosen['id']} has already been published. Skipping duplicate.")
               sys.exit(0)
 
-          # ── STEP 1: INTERPRET TWEET ──────────────────────────────────────────
+          # â”€â”€ STEP 1: INTERPRET TWEET â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           AUTHOR_CTX = (
               f"TWEET AUTHOR: @{chosen['username']}\n"
               "Use Google Search to find who this person is - check if they are a Kenyan or global public figure, "
@@ -374,7 +374,7 @@ jobs:
           commentary  = interpretation.get("tweet_commentary", "")
           author_bio  = interpretation.get("author_bio",       f"@{chosen['username']}")
 
-          # ── STEP 2: GENERATE TITLE ───────────────────────────────────────────
+          # â”€â”€ STEP 2: GENERATE TITLE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           title_prompt = (
               "TRUE TRENDING STORY: " + true_story + "\n"
               "TWEET COMMENTARY: " + commentary + "\n\n"
@@ -413,7 +413,7 @@ jobs:
           client = genai.Client(api_key=current_key)
           time.sleep(5)
 
-          # ── STEP 3: WRITE ARTICLE ────────────────────────────────────────────
+          # â”€â”€ STEP 3: WRITE ARTICLE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           internal_links = get_internal_links()
           banned_str = ", ".join(BANNED_PHRASES)
 
@@ -473,7 +473,7 @@ jobs:
           client = genai.Client(api_key=current_key)
           time.sleep(3)
 
-          # ── STEP 4: META DESCRIPTION ──────────────────────────────────────────
+          # â”€â”€ STEP 4: META DESCRIPTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           desc_prompt = (
               "Write a single meta description (140-155 characters) for this article.\n"
               "Title: " + final_title + "\n"
@@ -493,7 +493,7 @@ jobs:
 
           time.sleep(3)
 
-          # ── STEP 5: TAGS ──────────────────────────────────────────────────────
+          # â”€â”€ STEP 5: TAGS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           tags_prompt = (
               "Generate 4-5 relevant SEO tags for this Kenyan entertainment article.\n"
               "Title: " + final_title + "\n"
@@ -509,7 +509,7 @@ jobs:
               except Exception:
                   pass
 
-          # ── IMAGE + FILE WRITE ────────────────────────────────────────────────
+          # â”€â”€ IMAGE + FILE WRITE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           final_image = upload_to_imgbb(chosen["image"]) if chosen.get("image") else ""
           slug        = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           canonical   = f"{SITE_BASE_URL}/article/{slug}"

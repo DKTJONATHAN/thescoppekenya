@@ -1,4 +1,4 @@
-name: Za Ndani - Weekly Podcast Generator
+﻿name: Za Ndani - Weekly Podcast Generator
 on:
   schedule:
     - cron: '0 8 * * 0' # Every Sunday at 08:00 UTC
@@ -54,7 +54,7 @@ jobs:
           from google import genai
           from google.genai import types
 
-          # ── Setup directories ────────────────────────────────────────────────
+          # â”€â”€ Setup directories â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           posts_dir = os.environ.get('POSTS_DIR', 'content/posts')
           podcast_dir = os.environ.get('PODCAST_DIR', 'content/podcasts')
           audio_dir = os.environ.get('AUDIO_DIR', 'public/audio/podcasts')
@@ -62,7 +62,7 @@ jobs:
           for d in [podcast_dir, audio_dir]:
               os.makedirs(d, exist_ok=True)
 
-          # ── Check memory ─────────────────────────────────────────────────────
+          # â”€â”€ Check memory â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           memory_path = os.environ.get('MEMORY_FILE', '.github/memory_podcast.json')
           try:
               if os.path.exists(memory_path):
@@ -73,7 +73,7 @@ jobs:
           except:
               memory = []
 
-          # ── Parse existing articles ──────────────────────────────────────────
+          # â”€â”€ Parse existing articles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           articles_by_cat = {'Entertainment': [], 'Sports': [], 'News': []}
           
           # We only consider articles modifying in the last 7-14 days to be relevant
@@ -112,7 +112,7 @@ jobs:
                           'body': body_text[:1500] # First 1500 chars for context
                       })
 
-          # ── Select articles ──────────────────────────────────────────────────
+          # â”€â”€ Select articles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           selected_articles = []
           for cat in ['Entertainment', 'Sports', 'News']:
               if articles_by_cat[cat]:
@@ -124,7 +124,7 @@ jobs:
               print("No fresh articles found for the podcast. Exiting.")
               sys.exit(0)
 
-          # ── Generate Podcast Script using Gemini ─────────────────────────────
+          # â”€â”€ Generate Podcast Script using Gemini â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY1"] if os.environ.get(k)]
           if not raw_keys:
               print("No Gemini keys found")
@@ -134,7 +134,7 @@ jobs:
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
           
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
           
           script_prompt = (
               "You are the dynamic, lively host of 'Za Ndani: The Podcast' - a premier Kenyan news and entertainment wrap-up.\n"
@@ -162,7 +162,7 @@ jobs:
                       script_text = re.sub(r'^[A-Za-z]+:\s*', '', script_text, flags=re.MULTILINE)
                       break
                   except Exception as e:
-                      if "429" in str(e):
+                      if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower() or "503" in str(e) or "unavailable" in str(e).lower() or "500" in str(e) or "overloaded" in str(e).lower() or "resource_exhausted" in str(e).lower():
                           time.sleep(random.uniform(5, 10))
                           current_key = next(key_cycle)
                           client = genai.Client(api_key=current_key)
@@ -177,7 +177,7 @@ jobs:
           print(f"Generated Script ({len(script_text)} chars):")
           print(script_text[:200] + "...")
 
-          # ── Generate Audio using ElevenLabs ──────────────────────────────────
+          # â”€â”€ Generate Audio using ElevenLabs â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           # Default voice ID: "21m00Tcm4TlvDq8ikWAM" (Rachel) is a good standard voice.
           # Another good one is "pNInz6obpgDQGcFmaJgB" (Adam). Let's use a clear, energetic voice.
           VOICE_ID = "21m00Tcm4TlvDq8ikWAM"
@@ -219,7 +219,7 @@ jobs:
                   print(f"ElevenLabs failed: {response.text}")
                   audio_url_path = ""
 
-          # ── Write Markdown File for Frontend ─────────────────────────────────
+          # â”€â”€ Write Markdown File for Frontend â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
           date_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           slug = f"{date_str}-weekly-roundup"
@@ -247,7 +247,7 @@ jobs:
           
           print(f"Created podcast markdown: {md_filepath}")
           
-          # ── Save memory ──────────────────────────────────────────────────────
+          # â”€â”€ Save memory â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           os.makedirs(os.path.dirname(memory_path), exist_ok=True)
           with open(memory_path, 'w') as f:
               json.dump(memory[-200:], f) # Keep last 200 hashes

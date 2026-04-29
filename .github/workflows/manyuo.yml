@@ -1,4 +1,4 @@
-name: Manyuo
+﻿name: Manyuo
 
 on:
   workflow_dispatch:
@@ -40,9 +40,9 @@ on:
         type: string
         default: ''
 
-      # ─────────────────────────────────────────────────────────────────
+      # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       # TITLE CONTROL INPUTS
-      # ─────────────────────────────────────────────────────────────────
+      # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       title_keywords:
         description: >
           TITLE KEYWORDS (comma-separated). These words MUST appear in the generated title.
@@ -53,9 +53,9 @@ on:
 
       title_format:
         description: >
-          TITLE FORMAT — forces AI to follow a specific headline pattern.
+          TITLE FORMAT â€” forces AI to follow a specific headline pattern.
           AUTO = let AI decide. LIST = "5 Reasons...", BIO = "Name: Age, Net Worth...",
-          SCANDAL = "Name Did X — Here is What Happened", GUIDE = "How to X in 2025",
+          SCANDAL = "Name Did X â€” Here is What Happened", GUIDE = "How to X in 2025",
           TRENDING = "Name + dramatic hook", NEWS = straight factual headline.
         required: false
         type: choice
@@ -71,19 +71,19 @@ on:
 
       custom_title:
         description: >
-          OVERRIDE TITLE — type an exact title to bypass AI title generation completely.
+          OVERRIDE TITLE â€” type an exact title to bypass AI title generation completely.
           Leave blank to let AI write the title (using keywords/format above).
-          Example: "Wizkid Breaks Silence on Grammy Snub — Full Story"
+          Example: "Wizkid Breaks Silence on Grammy Snub â€” Full Story"
         required: false
         type: string
         default: ''
 
-      # ─────────────────────────────────────────────────────────────────
+      # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       # PUBLISH SCHEDULING INPUTS
-      # ─────────────────────────────────────────────────────────────────
+      # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       publish_mode:
         description: >
-          PUBLISH MODE — "publish_now" commits and goes live immediately.
+          PUBLISH MODE â€” "publish_now" commits and goes live immediately.
           "schedule" sets a future publishDate; site rebuilds hourly to activate it.
         required: true
         type: choice
@@ -180,7 +180,7 @@ jobs:
               if dt.tzinfo is None:
                   dt = dt.replace(tzinfo=datetime.timezone.utc)
               if dt <= now:
-                  print('::warning::Scheduled time is in the past — article will publish immediately on next rebuild.')
+                  print('::warning::Scheduled time is in the past â€” article will publish immediately on next rebuild.')
               else:
                   print(f'Scheduled publish time validated: {dt.strftime(\"%Y-%m-%d %H:%M UTC\")}')
           except Exception as e:
@@ -201,11 +201,11 @@ jobs:
           INPUT_AUTHOR: ${{ inputs.author }}
           INPUT_CATEGORY: ${{ inputs.category }}
           INPUT_ANGLE: ${{ inputs.article_angle }}
-          # ── Title control ──
+          # â”€â”€ Title control â”€â”€
           INPUT_TITLE_KEYWORDS: ${{ inputs.title_keywords }}
           INPUT_TITLE_FORMAT: ${{ inputs.title_format }}
           INPUT_CUSTOM_TITLE: ${{ inputs.custom_title }}
-          # ── Scheduling ──
+          # â”€â”€ Scheduling â”€â”€
           INPUT_PUBLISH_MODE: ${{ inputs.publish_mode }}
           INPUT_SCHEDULED_DATETIME: ${{ inputs.scheduled_datetime }}
         run: |
@@ -226,7 +226,7 @@ jobs:
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
 
-          MODELS_TO_TRY = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
+          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
 
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot",
@@ -303,7 +303,7 @@ jobs:
               " | The Sun", " | Daily Mail",
           ]
 
-          # ── Helper: derive a URL slug from a plain-text title ──────────────
+          # â”€â”€ Helper: derive a URL slug from a plain-text title â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def title_to_slug(title):
               s = title.lower()
               s = re.sub(r"[''\".,!?:;/\\()]", '', s)
@@ -692,7 +692,7 @@ jobs:
           posts_dir   = os.environ.get('POSTS_DIR', 'content/posts')
           memory_path = os.environ.get('MEMORY_FILE', '.github/memory_multi_source.json')
 
-          # ── Resolve publish timestamp ─────────────────────────────────────
+          # â”€â”€ Resolve publish timestamp â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           is_scheduled    = False
           publish_timestamp = created_timestamp  # default: now
 
@@ -706,9 +706,9 @@ jobs:
                   is_scheduled = True
                   print(f"\n[SCHEDULER] Article will be published at: {publish_timestamp}")
               except Exception as e:
-                  print(f"[SCHEDULER] Could not parse scheduled_datetime ({e}) — defaulting to publish_now.")
+                  print(f"[SCHEDULER] Could not parse scheduled_datetime ({e}) â€” defaulting to publish_now.")
 
-          # ── Build title-control prompt injections ─────────────────────────
+          # â”€â”€ Build title-control prompt injections â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           title_keyword_block = ''
           if title_keywords_raw:
               title_keyword_block = (
@@ -731,7 +731,7 @@ jobs:
                   'Output exactly those values for TITLE and SLUG. Still generate EXCERPT, TAGS, IMAGE_KEYWORD, and BODY as normal.\n'
               )
 
-          # ── Parse & validate URLs ─────────────────────────────────────────
+          # â”€â”€ Parse & validate URLs â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           urls = parse_urls(raw_input_urls)
           if not urls:
               print('No valid URLs found. Exiting.')
@@ -746,7 +746,7 @@ jobs:
               print('This URL combination was already processed. Exiting.')
               sys.exit(0)
 
-          # ── Scrape sources ────────────────────────────────────────────────
+          # â”€â”€ Scrape sources â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           all_source_data = []
           primary_image   = ''
           primary_title   = ''
@@ -785,7 +785,7 @@ jobs:
           combined_data = format_all_sources(all_source_data)
           print(f'\nTotal research data: {len(combined_data)} chars')
 
-          # ── Internal links ────────────────────────────────────────────────
+          # â”€â”€ Internal links â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           internal_links = ''
           if os.path.exists(posts_dir):
               files = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
@@ -804,7 +804,7 @@ jobs:
           banned_str = ', '.join(BANNED_PHRASES)
           angle_str  = f'\nARTICLE ANGLE: {article_angle}\n' if article_angle else ''
 
-          # ── Build prompt ──────────────────────────────────────────────────
+          # â”€â”€ Build prompt â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           prompt = (
               f"Current Date: {full_date_str}. Current Year: {current_year}.\n"
               f"{angle_str}"
@@ -857,7 +857,7 @@ jobs:
               "DO NOT include title, author name, date, or any metadata in the body.]"
           )
 
-          # ── Call Gemini API ───────────────────────────────────────────────
+          # â”€â”€ Call Gemini API â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           raw_keys = [os.environ.get('GEMINI_WRITE_KEY'), os.environ.get('GEMINI_API_KEY'), os.environ.get('GEMINI_API_KEY1')]
           api_keys = [k for k in raw_keys if k and k.strip()]
           if not api_keys:
@@ -889,7 +889,7 @@ jobs:
           if not raw_text:
               print("All Gemini API attempts failed."); sys.exit(1)
 
-          # ── Parse AI output ───────────────────────────────────────────────
+          # â”€â”€ Parse AI output â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def extract_field(text, field):
               m = re.search(rf'^{field}:\s*(.+)$', text, re.MULTILINE)
               return m.group(1).strip().strip('"').strip("'") if m else ''
@@ -917,16 +917,16 @@ jobs:
           if not slug:
               slug = title_to_slug(title)
 
-          # ── Image ─────────────────────────────────────────────────────────
+          # â”€â”€ Image â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           img_query = img_kw or title[:40]
           if not primary_image:
               primary_image = get_real_image(img_query)
           primary_image = upload_to_imgbb(primary_image)
 
-          # ── Tags ──────────────────────────────────────────────────────────
+          # â”€â”€ Tags â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           tags = [t.strip().lower() for t in tags_str.split(',') if t.strip()]
 
-          # ── Write frontmatter ─────────────────────────────────────────────
+          # â”€â”€ Write frontmatter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           author_slug = AUTHOR_SLUGS.get(author, 'za-ndani')
           tags_yaml   = ', '.join([f'"{t}"' for t in tags])
 

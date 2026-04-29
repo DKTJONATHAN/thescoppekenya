@@ -1,4 +1,4 @@
-name: Facebook Auto-Post with AI
+﻿name: Facebook Auto-Post with AI
 
 on:
   push:
@@ -37,12 +37,12 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           if [ -z "$FACEBOOK_PAGE_ID" ] || [ -z "$FACEBOOK_PAGE_TOKEN" ]; then
-            echo "⚠️ Facebook credentials not set, skipping"
+            echo "âš ï¸ Facebook credentials not set, skipping"
             exit 0
           fi
           
           if [ -z "$GEMINI_API_KEY" ]; then
-            echo "⚠️ GEMINI_API_KEY not set, skipping. Please ensure it is in your secrets."
+            echo "âš ï¸ GEMINI_API_KEY not set, skipping. Please ensure it is in your secrets."
             exit 0
           fi
 
@@ -50,7 +50,7 @@ jobs:
           CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
 
           if [ -z "$CHANGED" ]; then
-            echo "📝 No post changes detected"
+            echo "ðŸ“ No post changes detected"
             exit 0
           fi
 
@@ -74,7 +74,7 @@ jobs:
               if not file_path or not os.path.exists(file_path):
                   continue
               
-              print(f"🚀 Processing File: {file_path}")
+              print(f"ðŸš€ Processing File: {file_path}")
               with open(file_path, 'r', encoding='utf-8') as f:
                   content = f.read()
 
@@ -93,7 +93,7 @@ jobs:
               excerpt = excerpt_match.group(1) if excerpt_match else ""
               image_url = image_match.group(1) if image_match else ""
 
-              print(f"📝 Asking Gemini to write caption for: {title}")
+              print(f"ðŸ“ Asking Gemini to write caption for: {title}")
 
               prompt = f"""
               You are the expert Social Media Manager for 'Za Ndani', a top Kenyan news platform. 
@@ -105,7 +105,7 @@ jobs:
 
               Rules:
               - Make it catchy and designed to provoke curiosity and comments.
-              - You MUST explicitly tell the reader to check the comments for the full story/link (e.g., "Catch the full juice in the comments below! 👇" or "Link in the comments!"). This is mandatory.
+              - You MUST explicitly tell the reader to check the comments for the full story/link (e.g., "Catch the full juice in the comments below! ðŸ‘‡" or "Link in the comments!"). This is mandatory.
               - Use 2 to 3 relevant emojis.
               - Include 2 or 3 relevant hashtags at the bottom.
               - Do NOT include the article link or URL in the text.
@@ -125,15 +125,15 @@ jobs:
                           ai_caption = response.text.strip()
                           break
                       except Exception as e:
-                          if "429" in str(e) and attempt < 2:
-                              print(f"⚠️ Rate limited. Waiting 45s... (attempt {attempt+1})")
+                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower() or "503" in str(e) or "unavailable" in str(e).lower() or "500" in str(e) or "overloaded" in str(e).lower() or "resource_exhausted" in str(e).lower():
+                              print(f"âš ï¸ Rate limited. Waiting 45s... (attempt {attempt+1})")
                               import time
                               time.sleep(45)
                           else:
                               raise
               except Exception as e:
-                  print(f"⚠️ AI Generation failed: {e}")
-                  ai_caption = f"📰 {title}\n\n{excerpt}\n\n👇 Catch the full juice in the comments below!" 
+                  print(f"âš ï¸ AI Generation failed: {e}")
+                  ai_caption = f"ðŸ“° {title}\n\n{excerpt}\n\nðŸ‘‡ Catch the full juice in the comments below!" 
 
               # Scrub dashes just in case
               ai_caption = ai_caption.replace('\u2014', '-').replace('\u2013', '-')
@@ -142,19 +142,19 @@ jobs:
               has_image = False
               
               if image_url and image_url.startswith("http"):
-                  print(f"📥 Downloading image: {image_url}")
+                  print(f"ðŸ“¥ Downloading image: {image_url}")
                   try:
                       img_data = requests.get(image_url, timeout=15).content
                       with open(img_path, 'wb') as img_file:
                           img_file.write(img_data)
                       has_image = True
                   except Exception as e:
-                      print(f"⚠️ Failed to download image: {e}")
+                      print(f"âš ï¸ Failed to download image: {e}")
 
               post_id = None
               
               if has_image:
-                  print("📸 Uploading image and AI text to Facebook...")
+                  print("ðŸ“¸ Uploading image and AI text to Facebook...")
                   url = f"https://graph.facebook.com/v24.0/{fb_page_id}/photos"
                   payload = {'message': ai_caption, 'access_token': fb_token}
                   with open(img_path, 'rb') as img_file:
@@ -162,7 +162,7 @@ jobs:
                       res = requests.post(url, data=payload, files=files).json()
                   post_id = res.get('post_id') or res.get('id')
               else:
-                  print("📝 No image found. Posting AI text to Facebook Feed...")
+                  print("ðŸ“ No image found. Posting AI text to Facebook Feed...")
                   url = f"https://graph.facebook.com/v24.0/{fb_page_id}/feed"
                   payload = {'message': ai_caption, 'access_token': fb_token}
                   res = requests.post(url, data=payload).json()
@@ -171,21 +171,21 @@ jobs:
               print(f"Facebook API Response: {res}")
 
               if post_id:
-                  print("✅ Main post successful. Waiting 10 seconds for sync...")
+                  print("âœ… Main post successful. Waiting 10 seconds for sync...")
                   time.sleep(10)
                   
-                  print("💬 Adding link to the comment section...")
+                  print("ðŸ’¬ Adding link to the comment section...")
                   comment_url = f"https://graph.facebook.com/v24.0/{post_id}/comments"
                   comment_msg = f"Read the full story by {author} here: {article_url}"
                   comment_payload = {'message': comment_msg, 'access_token': fb_token}
                   comment_res = requests.post(comment_url, data=comment_payload).json()
                   
                   if 'error' in comment_res:
-                      print(f"❌ Failed to add comment: {comment_res}")
+                      print(f"âŒ Failed to add comment: {comment_res}")
                   else:
-                      print(f"✅ Successfully published AI post and link comment for {slug}!")
+                      print(f"âœ… Successfully published AI post and link comment for {slug}!")
               else:
-                  print(f"❌ Failed to post {slug} to Facebook.")
+                  print(f"âŒ Failed to post {slug} to Facebook.")
 
               if os.path.exists(img_path):
                   os.remove(img_path)

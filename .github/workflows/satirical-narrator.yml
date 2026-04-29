@@ -1,4 +1,4 @@
-name: Satirical Narrator
+﻿name: Satirical Narrator
 
 on:
   schedule:
@@ -71,7 +71,7 @@ jobs:
           current_year      = datetime.datetime.utcnow().strftime('%Y')
           SITE_BASE_URL     = 'https://zandani.co.ke'
           FALLBACK_IMAGE    = 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200'
-          MODELS            = ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-2.5-flash', 'gemini-2.0-flash']
+          MODELS = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
 
           POSTS_DIR       = os.environ.get('POSTS_DIR', 'content/posts')
           MEMORY_FILE     = os.environ.get('MEMORY_FILE', '.github/memory_narratives.json')
@@ -142,7 +142,7 @@ jobs:
                           return (resp.text or '').strip()
                       except Exception as e:
                           err = str(e).lower()
-                          if '429' in err or 'quota' in err or 'resource_exhausted' in err:
+                          if "429" in str(err) or "quota" in str(err).lower() or "rate" in str(err).lower() or "503" in str(err) or "unavailable" in str(err).lower() or "500" in str(err) or "overloaded" in str(err).lower() or "resource_exhausted" in str(err).lower():
                               print('Quota hit. Rotating key...')
                               current_key = next(key_cycle)
                               client_g    = genai.Client(api_key=current_key)

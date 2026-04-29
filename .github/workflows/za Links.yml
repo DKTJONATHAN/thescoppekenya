@@ -1,4 +1,4 @@
-name: Multi-Source Research Article Generator
+﻿name: Multi-Source Research Article Generator
 
 on:
   workflow_dispatch:
@@ -40,7 +40,7 @@ on:
         default: ''
       title_keywords:
         description: >
-          ARTICLE FOCUS â€” W-questions or topic signals that shape what the article covers.
+          ARTICLE FOCUS Ã¢â‚¬â€ W-questions or topic signals that shape what the article covers.
           Use plain words like: who, where, how, when, why, what
           OR combine with names/topics: "who is Wizkid, where he was born, how he became famous"
           AI interprets each word as a question to answer about the subject, then generates
@@ -50,8 +50,8 @@ on:
         default: ''
       title_format:
         description: >
-          TITLE FORMAT â€” AUTO lets AI decide. LIST = "5 Reasons...", BIO = "Name: Age/Net Worth",
-          SCANDAL = "Name Did X â€” Consequence", GUIDE = "How to X in 2025",
+          TITLE FORMAT Ã¢â‚¬â€ AUTO lets AI decide. LIST = "5 Reasons...", BIO = "Name: Age/Net Worth",
+          SCANDAL = "Name Did X Ã¢â‚¬â€ Consequence", GUIDE = "How to X in 2025",
           TRENDING = dramatic hook, NEWS = straight factual headline.
         required: false
         type: choice
@@ -66,7 +66,7 @@ on:
         default: AUTO
       custom_title:
         description: >
-          OVERRIDE TITLE â€” type an exact title to bypass AI title generation completely.
+          OVERRIDE TITLE Ã¢â‚¬â€ type an exact title to bypass AI title generation completely.
           Leave blank to let AI write the title using the signals/format above.
         required: false
         type: string
@@ -165,7 +165,7 @@ jobs:
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
 
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
 
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot",
@@ -330,7 +330,7 @@ jobs:
                   if k in url: return k
               return None
 
-          # â”€â”€ Pick the best thumbnail from a yt-dlp thumbnails list â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          # Ã¢â€â‚¬Ã¢â€â‚¬ Pick the best thumbnail from a yt-dlp thumbnails list Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
           def best_yt_thumbnail(thumbnails):
               if not thumbnails: return ''
               ranked = sorted(
@@ -369,7 +369,7 @@ jobs:
                       data['description']      = (info.get('description') or '')[:800]
                       data['total_views']      = info.get('view_count')
                       data['video_count']      = info.get('playlist_count')
-                      # Channel avatar â€” prefer the avatar/photo thumbnails
+                      # Channel avatar Ã¢â‚¬â€ prefer the avatar/photo thumbnails
                       thumbnails = info.get('thumbnails') or []
                       avatar_candidates = [t for t in thumbnails if
                                            'avatar' in (t.get('id', '') + t.get('url', '')).lower()
@@ -421,7 +421,7 @@ jobs:
                       data['description']      = (info.get('description') or '')[:800]
                       data['tags']             = (info.get('tags') or [])[:10]
                       data['categories']       = info.get('categories', [])
-                      # Video thumbnail â€” prefer maxresdefault
+                      # Video thumbnail Ã¢â‚¬â€ prefer maxresdefault
                       vid_id = info.get('id', '')
                       maxres = f"https://i.ytimg.com/vi/{vid_id}/maxresdefault.jpg" if vid_id else ''
                       hq     = f"https://i.ytimg.com/vi/{vid_id}/hqdefault.jpg"     if vid_id else ''
@@ -451,7 +451,7 @@ jobs:
                   soup      = BeautifulSoup(pw_page.content(), 'html.parser')
                   full_text = soup.get_text(separator=' ', strip=True)
 
-                  # â”€â”€ Extract image: og:image first, then largest img â”€â”€â”€â”€â”€â”€
+                  # Ã¢â€â‚¬Ã¢â€â‚¬ Extract image: og:image first, then largest img Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
                   for meta in soup.find_all('meta'):
                       prop = meta.get('property', '') or meta.get('name', '')
                       if prop in ['og:image', 'twitter:image', 'twitter:image:src']:
@@ -551,7 +551,7 @@ jobs:
                       lns = [l.strip() for l in body.get_text(separator='\n').split('\n') if len(l.strip()) > 50]
                       article_text = '\n\n'.join(lns)
 
-              # â”€â”€ Image extraction: og:image > twitter:image > article hero > first large img â”€â”€
+              # Ã¢â€â‚¬Ã¢â€â‚¬ Image extraction: og:image > twitter:image > article hero > first large img Ã¢â€â‚¬Ã¢â€â‚¬
               img_url = ''
               base_url = '/'.join(url.split('/')[:3])
 
@@ -763,7 +763,7 @@ jobs:
           for u in other_urls:
               all_source_data.append(scrape_article_or_social(u))
 
-          # â”€â”€ Pick best cover image â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          # Ã¢â€â‚¬Ã¢â€â‚¬ Pick best cover image Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
           cover_image = ''
           for d in all_source_data:
               img = d.get('image', '')
@@ -779,8 +779,8 @@ jobs:
           research_text = format_all_sources(all_source_data)
           print(f'\nTotal research data: {len(research_text)} chars')
 
-          # â”€â”€ Gemini setup â€” EXACT pattern from working workflow â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          # Ã¢â€â‚¬Ã¢â€â‚¬ Gemini setup Ã¢â‚¬â€ EXACT pattern from working workflow Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
 
           raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY","GEMINI_API_KEY","GEMINI_API_KEY1"] if os.environ.get(k)]
           if not raw_keys:
@@ -817,7 +817,7 @@ jobs:
                           print(f'  Empty response ({model}) attempt {attempt+1}')
                       except Exception as e:
                           err = str(e)
-                          if '429' in err or 'quota' in err.lower() or 'rate' in err.lower():
+                          if "429" in str(err) or "quota" in str(err).lower() or "rate" in str(err).lower() or "503" in str(err) or "unavailable" in str(err).lower() or "500" in str(err) or "overloaded" in str(err).lower() or "resource_exhausted" in str(err).lower():
                               wait = random.uniform(20, 35)
                               print(f'  Rate limit ({model}), cycling key, waiting {wait:.0f}s...')
                               time.sleep(wait)
@@ -829,7 +829,7 @@ jobs:
               print(f'  All attempts failed for: {label}')
               return None
 
-          # â”€â”€ Build title instruction â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          # Ã¢â€â‚¬Ã¢â€â‚¬ Build title instruction Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
           banned_str = ', '.join(f'"{p}"' for p in BANNED_PHRASES)
           if custom_title_override:
               title_instruction = f'USE THIS EXACT TITLE (do not change it): {custom_title_override}'
@@ -853,7 +853,7 @@ jobs:
 
           angle_instruction = f'\nARTICLE ANGLE: {article_angle}' if article_angle else ''
 
-          # â”€â”€ Build prompt â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          # Ã¢â€â‚¬Ã¢â€â‚¬ Build prompt Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
           prompt = (
               f'You are writing as {persona}.\n'
               f'Today is {full_date_str}. Site: {SITE_BASE_URL}\n\n'
@@ -876,12 +876,12 @@ jobs:
               f'- Category: {category}, Author: {author}\n'
           )
 
-          # â”€â”€ Generate article â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          # Ã¢â€â‚¬Ã¢â€â‚¬ Generate article Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
           raw = gemini_generate(prompt, label='article')
           if not raw:
               print('Failed to generate content.'); sys.exit(1)
 
-          # â”€â”€ Extract title â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          # Ã¢â€â‚¬Ã¢â€â‚¬ Extract title Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
           title_match = re.search(r'TITLE:\s*(.+)', raw)
           if title_match:
               final_title  = title_match.group(1).strip()
@@ -890,7 +890,7 @@ jobs:
               article_html = raw.strip()
               final_title  = custom_title_override or 'Untitled Article'
 
-          # â”€â”€ Write post file â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          # Ã¢â€â‚¬Ã¢â€â‚¬ Write post file Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
           slug        = title_to_slug(final_title)
           author_slug = AUTHOR_SLUGS.get(author, 'za-ndani')
           frontmatter = (

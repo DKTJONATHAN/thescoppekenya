@@ -1,4 +1,4 @@
-name: Global Sports & Tech British Gossip Scraper (Football365)
+﻿name: Global Sports & Tech British Gossip Scraper (Football365)
 
 on:
   schedule:
@@ -69,7 +69,7 @@ jobs:
           publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
 
           BANNED_PHRASES = ["sasa basi","melting the pot","spill the tea","tea is hot","grab your popcorn","buckle up","breaking news","dive in","delve into","moreover","furthermore","in conclusion","it's worth noting","a testament to","navigating the landscape","in today's digital age","tapestry"]
 
@@ -236,7 +236,7 @@ jobs:
                           print(f"Gemini OK ({model}): {label}")
                           return resp.text.strip()
                       except Exception as e:
-                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower():
+                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower() or "503" in str(e) or "unavailable" in str(e).lower() or "500" in str(e) or "overloaded" in str(e).lower() or "resource_exhausted" in str(e).lower():
                               time.sleep(random.uniform(20, 35))
                               current_key = next(key_cycle)
                               client = genai.Client(api_key=current_key)
@@ -355,6 +355,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Za Ndani <bot@zandani.co.ke>"
-          commit_message: "content: Football365 sports analysis by Za Ndani ⚽"
+          commit_message: "content: Football365 sports analysis by Za Ndani âš½"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/scrape_memory.json'

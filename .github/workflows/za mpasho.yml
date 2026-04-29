@@ -1,4 +1,4 @@
-name: Za Ndani - Mpasho Scraper
+﻿name: Za Ndani - Mpasho Scraper
 on:
   schedule:
     # Every hour from 6 AM to 11 PM EAT, staggered from Celestine News
@@ -85,7 +85,7 @@ jobs:
           full_date_str     = datetime.datetime.utcnow().strftime('%A, %B %d, %Y')
           current_year      = datetime.datetime.utcnow().strftime('%Y')
           SITE_BASE_URL     = 'https://zandani.co.ke'
-          MODELS_TO_TRY     = ['gemini-3-flash-preview', 'gemini-2.5-flash']
+          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
           MAX_AGE_HOURS     = 10
           SITE_URL          = 'https://www.mpasho.co.ke/'
           SITE_DOMAIN       = 'mpasho.co.ke'
@@ -316,7 +316,7 @@ jobs:
                           print(f'Gemini OK ({model}): {label}')
                           return result
                       except Exception as e:
-                          if '429' in str(e) or 'quota' in str(e).lower() or 'rate' in str(e).lower():
+                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower() or "503" in str(e) or "unavailable" in str(e).lower() or "500" in str(e) or "overloaded" in str(e).lower() or "resource_exhausted" in str(e).lower():
                               time.sleep(random.uniform(20, 35))
                               current_key = next(key_cycle)
                               client      = genai.Client(api_key=current_key)

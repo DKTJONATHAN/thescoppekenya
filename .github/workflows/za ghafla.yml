@@ -1,4 +1,4 @@
-name: Za Ndani - Ghafla Scraper
+﻿name: Za Ndani - Ghafla Scraper
 on:
   schedule:
     - cron: '12 * * * *'
@@ -84,7 +84,7 @@ jobs:
           full_date_str     = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
-          MODELS_TO_TRY     = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
           MAX_AGE_HOURS     = 10
           SITE_URL          = "https://www.ghafla.co.ke/ke/"
           SITE_DOMAIN       = "ghafla.co.ke"
@@ -303,7 +303,7 @@ jobs:
                           print(f"Gemini OK ({model}): {label}")
                           return result
                       except Exception as e:
-                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower():
+                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower() or "503" in str(e) or "unavailable" in str(e).lower() or "500" in str(e) or "overloaded" in str(e).lower() or "resource_exhausted" in str(e).lower():
                               time.sleep(random.uniform(20, 35))
                               current_key = next(key_cycle)
                               client      = genai.Client(api_key=current_key)
@@ -312,7 +312,7 @@ jobs:
                           break
               return None
 
-          # ── Scrape ───────────────────────────────────────────────────────
+          # â”€â”€ Scrape â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           article_links = get_target_urls()
           if not article_links:
               print("No candidates"); sys.exit(0)
@@ -335,7 +335,7 @@ jobs:
           if not full_raw_text:
               print("No fresh valid article"); sys.exit(0)
 
-          # ── Title ─────────────────────────────────────────────────────────
+          # â”€â”€ Title â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           title_prompt = (
               "SCRAPED ARTICLE TITLE: " + target_title + "\n"
               "ARTICLE SNIPPET:\n" + full_raw_text[:1500] + "\n"
@@ -363,7 +363,7 @@ jobs:
           slug           = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           canonical_url  = f"{SITE_BASE_URL}/article/{slug}"
 
-          # ── Article ───────────────────────────────────────────────────────
+          # â”€â”€ Article â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           article_prompt = (
               "Current Date: " + full_date_str + ". The current year is " + current_year + ".\n"
               "TITLE: " + final_title + "\n"
@@ -400,7 +400,7 @@ jobs:
           client      = genai.Client(api_key=current_key)
           time.sleep(3)
 
-          # ── Meta description ──────────────────────────────────────────────
+          # â”€â”€ Meta description â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           desc_prompt = (
               "Write a single meta description (140-155 characters) for this entertainment article.\n"
               "Title: " + final_title + "\n"
@@ -419,7 +419,7 @@ jobs:
 
           time.sleep(3)
 
-          # ── Tags ──────────────────────────────────────────────────────────
+          # â”€â”€ Tags â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           tags_prompt = (
               "Generate 4-5 relevant SEO tags for this Kenyan entertainment article.\n"
               "Title: " + final_title + "\n"
@@ -436,7 +436,7 @@ jobs:
               except Exception as e:
                   print(f"Tags parse error: {e}")
 
-          # ── Image + save ──────────────────────────────────────────────────
+          # â”€â”€ Image + save â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           final_image = upload_to_imgbb(target_image) if target_image else ""
           author_url  = f"{SITE_BASE_URL}/author/za-ndani"
           tags_json   = json.dumps(article_tags)

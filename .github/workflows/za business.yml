@@ -1,4 +1,4 @@
-name: Grace Mkamburi - Business Scraper
+﻿name: Grace Mkamburi - Business Scraper
 on:
   schedule:
     - cron: '50 9,17 * * *'
@@ -80,7 +80,7 @@ jobs:
           publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
           MAX_AGE_HOURS = 12
           SITE_URL = "https://kenyanwallstreet.com/"
           SITE_DOMAIN = "kenyanwallstreet.com"
@@ -242,7 +242,7 @@ jobs:
                           print(f"Gemini OK ({model}): {label}")
                           return resp.text.strip()
                       except Exception as e:
-                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower():
+                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower() or "503" in str(e) or "unavailable" in str(e).lower() or "500" in str(e) or "overloaded" in str(e).lower() or "resource_exhausted" in str(e).lower():
                               time.sleep(random.uniform(20, 35))
                               current_key = next(key_cycle)
                               client = genai.Client(api_key=current_key)
@@ -353,6 +353,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Grace Mkamburi <bot@zandani.co.ke>"
-          commit_message: "content: Business news by Grace Mkamburi 💼"
+          commit_message: "content: Business news by Grace Mkamburi ðŸ’¼"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_grace.json'

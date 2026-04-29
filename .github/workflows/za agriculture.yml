@@ -1,4 +1,4 @@
-name: Timothy Muli - Agriculture Scraper
+﻿name: Timothy Muli - Agriculture Scraper
 on:
   schedule:
     - cron: '40 8,16 * * *'
@@ -177,7 +177,7 @@ jobs:
                           resp = client.models.generate_content(model=model, contents=prompt, config=config)
                           print(f"Gemini OK ({model}): {label}"); return resp.text.strip()
                       except Exception as e:
-                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower():
+                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower() or "503" in str(e) or "unavailable" in str(e).lower() or "500" in str(e) or "overloaded" in str(e).lower() or "resource_exhausted" in str(e).lower():
                               time.sleep(random.uniform(20, 35)); current_key = next(key_cycle); client = genai.Client(api_key=current_key); continue
                           print(f"Gemini error ({model}): {e}"); break
               return None
@@ -260,6 +260,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Timothy Muli <bot@zandani.co.ke>"
-          commit_message: "content: Agriculture news by Timothy Muli 🌾"
+          commit_message: "content: Agriculture news by Timothy Muli ðŸŒ¾"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_timothy.json'

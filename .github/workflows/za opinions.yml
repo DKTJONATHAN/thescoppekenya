@@ -1,4 +1,4 @@
-name: Jonathan Mwaniki - Opinions Scraper
+﻿name: Jonathan Mwaniki - Opinions Scraper
 on:
   schedule:
     - cron: '25 10,18 * * *'
@@ -80,7 +80,7 @@ jobs:
           publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
           MAX_AGE_HOURS = 24
           SITE_URL = "https://www.the-star.co.ke/opinion/"
           SITE_DOMAIN = "the-star.co.ke"
@@ -268,7 +268,7 @@ jobs:
                           print(f"Gemini OK ({model}): {label}")
                           return resp.text.strip()
                       except Exception as e:
-                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower():
+                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower() or "503" in str(e) or "unavailable" in str(e).lower() or "500" in str(e) or "overloaded" in str(e).lower() or "resource_exhausted" in str(e).lower():
                               time.sleep(random.uniform(20, 35))
                               current_key = next(key_cycle)
                               client = genai.Client(api_key=current_key)
@@ -386,6 +386,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Jonathan Mwaniki <bot@zandani.co.ke>"
-          commit_message: "content: Thought-provoking opinion by Jonathan Mwaniki ✍️"
+          commit_message: "content: Thought-provoking opinion by Jonathan Mwaniki âœï¸"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_jonathan.json'
