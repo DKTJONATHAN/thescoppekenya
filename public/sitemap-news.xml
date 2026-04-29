@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/liz-jackson-nairobi-abuse</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:title>Liz Jackson highlights abuse women face in Nairobi CBD</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/rio-ferdinand-names-eberechi-eze-as-the-key-player-for-arsenal-in-th</loc>
     <news:news>
       <news:publication>
@@ -433,30 +445,6 @@
       </news:publication>
       <news:publication_date>2026-04-27T09:00:00.000Z</news:publication_date>
       <news:title>Kenyan agritech SokoFresh secures KSh 65 million loan to reduce post-harvest losses</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/michael-jackson-biopic-earns-217-4-million-in-global-box-office-open</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27T09:00:00.000Z</news:publication_date>
-      <news:title>Michael Jackson biopic earns $217.4 million in global box office opening</news:title>
-      <news:genres>Entertainment,Music</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/european-commission-challenges-meta-over-ban-on-third-party-ai-assis</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27T09:00:00.000Z</news:publication_date>
-      <news:title>European Commission challenges Meta over ban on third-party AI assistants on WhatsApp</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
