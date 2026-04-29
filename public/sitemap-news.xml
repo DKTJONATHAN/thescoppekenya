@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/george-clooney-reacts-to-his-lake-como-villa-appearing-in-the-devil-</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:title>George Clooney reacts to his Lake Como villa appearing in The Devil Wears Prada 2</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/dj-bonez-confirms-separate-living-arrangement-with-kamene-goro-and-d</loc>
     <news:news>
       <news:publication>
@@ -25,6 +37,18 @@
       </news:publication>
       <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
       <news:title>Liz Jackson highlights abuse women face in Nairobi CBD</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/kenyans-criticize-president-ruto-for-lavish-state-house-spending-whi</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:title>Kenyans Criticize President Ruto for Lavish State House Spending While KNH and Schools Face Critical Funding Shortages</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
