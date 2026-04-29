@@ -5,6 +5,18 @@
 >
 
   <url>
+    <loc>https://zandani.co.ke/article/harry-maguire-praises-casemiro-following-manchester-united-victory-o</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29T09:00:00.000Z</news:publication_date>
+      <news:title>Harry Maguire praises Casemiro following Manchester United victory over Brentford</news:title>
+      <news:genres>Entertainment</news:genres>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/bien-responds-to-critic-sabato-as-finale-reaches-20-million-views</loc>
     <news:news>
       <news:publication>
@@ -397,18 +409,6 @@
       </news:publication>
       <news:publication_date>2026-04-27T09:00:00.000Z</news:publication_date>
       <news:title>Rigathi Gachagua launches legal challenge to overturn his impeachment</news:title>
-      <news:genres>Entertainment</news:genres>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/ntsa-orders-mandatory-inspection-of-school-transport-vehicles-ahead-</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27T09:00:00.000Z</news:publication_date>
-      <news:title>NTSA orders mandatory inspection of school transport vehicles ahead of term two</news:title>
       <news:genres>Entertainment</news:genres>
     </news:news>
   </url>
