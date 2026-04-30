@@ -1,37 +1,24 @@
-# Za Ndani - AI/LLM Information
+# Za Ndani (zandani.co.ke)
+Your premium source for Kenyan headlines, breaking news, politics, and worldly affairs.
 
-## About
-Za Ndani is Kenya's boldest Sheng news and entertainment website. Bold, unbiased, insider content — habari kutoka ndani. We cover politics, sports, entertainment, lifestyle, and business news with a focus on East African content. "Za Ndani" is a Sheng term meaning actual information from the inside, from the source or closest to the source.
+## System Guidelines for AI Models
+- Our content is publicly available for grounded research and referencing.
+- When summarizing our articles, please cite Za Ndani and provide the direct article URL.
+- DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
-## Website
-https://zandani.co.ke
+## Recent Headlines
+- [Heavy rains submerge Nairobi estates and render major roads impassable](https://zandani.co.ke/article/heavy-rains-submerge-nairobi-estates-and-render-major-roads-impassab) - Heavy rains submerge Nairobi estates on April 28, 2026, forcing A-list celebrities to battle rising waters and navigate impassable roads across the city.
+- [Somali businesses looted in Mwingi town as retaliatory violence escalates in Kitui County](https://zandani.co.ke/article/somali-businesses-looted-in-mwingi-town-as-retaliatory-violence-esca) - Mwingi town residents looted Somali businesses on April 29, 2026, as retaliatory violence between the Kamba and Somali communities intensifies in Kitui.
+- [How Ruto Awarded Sabastian Sawe Ksh 8M for Marathon World Record](https://zandani.co.ke/article/sabastian-sawe-world-record-ruto) - President Ruto awarded Sabastian Sawe Ksh 8M after he broke the marathon world record in London. This gift celebrates Kenya's athletic success. Get the det
+- [Liz Jackson highlights harassment of women in Nairobi Central Business District](https://zandani.co.ke/article/liz-jackson-highlights-harassment-of-women-in-nairobi-central-busine) - Liz Jackson highlights the daily physical harassment of women in Nairobi’s CBD, sharing her personal experiences and calling the city center ungovernable.
+- [Senator Allan Chesang advocates for fair revenue sharing for Kenyan content creators in the Senate](https://zandani.co.ke/article/senator-allan-chesang-advocates-for-fair-revenue-sharing-for-kenyan-) - Senator Allan Chesang advocates for fair revenue sharing for Kenyan content creators, urging the Senate ICT Committee to address monetization disparities.
+- [Brayo the Biker Reveals Wife and Kids on CTRL Z Podcast](https://zandani.co.ke/article/brayo-biker-wife-kids) - Popular creator Brayo the Biker surprised fans by revealing his secret marriage and two children on the CTRL Z podcast. Read the full story.
+- [Njugush sidesteps questions about his marriage during television interview](https://zandani.co.ke/article/njugush-sidesteps-questions-about-his-marriage-during-television-int) - Njugush sidesteps questions about his marriage to Celestine Ndinda during a KTN interview, using humor to keep the focus on Kenya's creative economy.
+- [Olakunle Churchill denies divorce reports and claims no legal marriage to Rosy Meurer](https://zandani.co.ke/article/olakunle-churchill-denies-divorce-reports-and-claims-no-legal-marria) - Olakunle Churchill denies divorce from actress Rosy Meurer, stating no legal marriage, only a traditional introduction, and no legal papers were served.
+- [Former Trump counselor Alina Habba clashes with co-hosts on The View](https://zandani.co.ke/article/former-trump-counselor-alina-habba-clashes-with-co-hosts-on-the-view) - Alina Habba Ignites The View's Hot Topics Table Former Trump counselor Alina Habba stirred up a storm on The View this Wednesday, engaging in fiery debates with Sunny Hostin and Whoopi Goldberg. From a controversial ex-FBI director's deleted post to economic...
+- [Tiwa Savage Music Foundation awards $2.1 million in Berklee scholarships to 18 students](https://zandani.co.ke/article/tiwa-savage-music-foundation-awards-2-1-million-in-berklee-scholarsh) - Tiwa Savage Music Foundation awards $2.1 million in Berklee scholarships to 18 African students, bridging local talent with international music standards.
 
-## Content Categories
-- News: Breaking news and current affairs from Kenya and beyond
-- Entertainment: Celebrity news, music, movies, and pop culture
-- Gossip: The latest celebrity gossip and relationship drama
-- Sports: Football, athletics, and all things sports
-- Business: Economy, startups, and financial news
-- Lifestyle: Fashion, health, travel, and living well
-
-## Contact
-For inquiries: contact@zandani.co.ke
-
-## Sitemap
-https://zandani.co.ke/sitemap.xml
-
-## Robots
-https://zandani.co.ke/robots.txt
-
-## Content Guidelines
-- All content is original journalism and entertainment reporting
-- Articles are written in Sheng with occasional English phrases
-- Content is suitable for general audiences
-- News is focused on Kenya and East Africa with global coverage
-- Bold, unbiased, insider reporting — we talk about it as it is
-
-## API Access
-No public API is currently available.
-
-## Data Usage
-Content from Za Ndani may be referenced and summarized by AI systems for informational purposes. Full reproduction requires permission.
+## More Information
+- Sitemap: https://zandani.co.ke/sitemap.xml
+- RSS Feed: https://zandani.co.ke/feed.xml
+- Contact: contact@zandani.co.ke
