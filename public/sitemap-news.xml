@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/nottingham-forest-stun-aston-villa-in-europa-league-semi-final-as-em</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-30T22:37:37.000Z</news:publication_date>
+      <news:title>Nottingham Forest Stun Aston Villa in Europa League Semi-Final as Emery Fumes Over VAR Drama</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/iebc-voter-registration-new-voters</loc>
     <news:news>
       <news:publication>
@@ -529,28 +540,6 @@
       </news:publication>
       <news:publication_date>2026-04-28T22:48:08.000Z</news:publication_date>
       <news:title>Ruto&apos;s Gulf Rhetoric Rings Hollow for Kenyans</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/bazenga-ke-busia-content-creator</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-28T21:39:28.000Z</news:publication_date>
-      <news:title>Bazenga Ke: Busia Content Creator Alpha Ojiambo Profiled</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/chris-brown-welcomes-fourth-child-with-jada-wallace</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-28T21:35:11.000Z</news:publication_date>
-      <news:title>Chris Brown welcomes fourth child with Jada Wallace</news:title>
     </news:news>
   </url>
 </urlset>
