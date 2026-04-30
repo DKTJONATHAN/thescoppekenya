@@ -80,12 +80,21 @@ jobs:
           from playwright_stealth import stealth_sync
           from PIL import Image
 
+<<<<<<< Updated upstream
           publish_timestamp = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
           today_str         = datetime.datetime.utcnow().strftime('%Y-%m-%d')
           full_date_str     = datetime.datetime.utcnow().strftime('%A, %B %d, %Y')
           current_year      = datetime.datetime.utcnow().strftime('%Y')
           SITE_BASE_URL     = 'https://zandani.co.ke'
           MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
+=======
+          publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+          today_str         = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          full_date_str     = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
+          current_year      = datetime.datetime.utcnow().strftime("%Y")
+          SITE_BASE_URL     = "https://zandani.co.ke"
+          MODELS_TO_TRY     = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
+>>>>>>> Stashed changes
           MAX_AGE_HOURS     = 10
           SITE_URL          = 'https://www.mpasho.co.ke/'
           SITE_DOMAIN       = 'mpasho.co.ke'

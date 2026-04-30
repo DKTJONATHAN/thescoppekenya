@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 name: Zed Mogaka - George Diano Stories
 on:
   schedule:
@@ -73,6 +74,83 @@ jobs:
               "use Google Search to find the story he is referring to.\n"
           )
 
+=======
+name: Zed Mogaka - George Diano Stories
+on:
+  schedule:
+    - cron: '0 0,6,12,18 * * *'
+  workflow_dispatch: {}
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+permissions:
+  contents: write
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+  MEMORY_FILE: .github/memory_georgediano.json
+jobs:
+  scrape-and-publish:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-genai beautifulsoup4 lxml python-dateutil Pillow
+
+      - name: Scrape Syndication and publish article
+        env:
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
+          MEMORY_FILE: ${{ env.MEMORY_FILE }}
+        run: |
+          python << 'PYEOF'
+          import os, json, datetime, requests, re, time, sys, hashlib, itertools, base64, random, io
+          from dateutil import parser as date_parser
+          from google import genai
+          from google.genai import types
+          from bs4 import BeautifulSoup
+          from PIL import Image
+
+          publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+          today_str         = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          full_date_str     = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
+          current_year      = datetime.datetime.utcnow().strftime("%Y")
+          SITE_BASE_URL     = "https://zandani.co.ke"
+          MODELS_TO_TRY     = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
+          MAX_AGE_HOURS     = 24
+          TARGET_ACCOUNT    = "georgediano"
+          MIN_CHARS         = 500
+
+          DIANO_CONTEXT = (
+              "ABOUT @georgediano (George T. Diano):\n"
+              "He is a popular Kenyan satirist, storyteller, and social media commentator.\n"
+              "He writes in a witty, sarcastic style mixing English and Kenyan expressions.\n"
+              "He covers Kenyan politics, celebrity gossip, social commentary, and trending stories.\n"
+              "His posts are often satirical - he says the opposite of what he means to make a point.\n\n"
+              "CRITICAL RULE: When his post is SATIRE, do NOT report it as fact.\n"
+              "Capture the satirical observation and write the story around the underlying truth.\n"
+              "Short cryptic posts often reference a trending Kenyan news story - "
+              "use Google Search to find the story he is referring to.\n"
+          )
+
+>>>>>>> Stashed changes
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot",
               "grab your popcorn", "buckle up", "breaking news", "dive in",
