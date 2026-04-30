@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Thu, 30 Apr 2026 11:33:33 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 12:17:00 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Inside Court Ruling on Kenya-US Health Data Agreement]]></title>
+      <link>https://zandani.co.ke/article/kenya-us-health-data-agreement</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-us-health-data-agreement</guid>
+      <pubDate>Thu, 30 Apr 2026 12:03:48 GMT</pubDate>
+      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
+      <description><![CDATA[The High Court blocked COFEK from withdrawing a petition against the Kenya-US health data agreement to protect public interest and privacy. Read more.]]></description>
+      <enclosure url="https://i.ibb.co/sp5DM0XM/325b3359c3cc.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/sp5DM0XM/325b3359c3cc.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/sp5DM0XM/325b3359c3cc.jpg" alt="Inside Court Ruling on Kenya-US Health Data Agreement" /><p>The High Court blocked COFEK from withdrawing a petition against the Kenya-US health data agreement to protect public interest and privacy. Read more.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Kenya to Extend Mandatory Alcohol Tracking to Curb KSh 120 Billion Tax Loss]]></title>
       <link>https://zandani.co.ke/article/kenya-to-extend-mandatory-alcohol-tracking-to-curb-ksh-120-billion-t</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/3Y5Pk0kt/1737c5eb3ac1.webp" type="image/jpeg" />
       <media:content url="https://i.ibb.co/3Y5Pk0kt/1737c5eb3ac1.webp" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/3Y5Pk0kt/1737c5eb3ac1.webp" alt="TSC outlines procedure for recovering misdirected teacher salaries" /><p>TSC outlines a recovery procedure for teachers whose salaries were misdirected during mass transfers ahead of the April 27, 2026, school opening dates.</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[AVCA hosts global investors in Nairobi for African private capital conference]]></title>
-      <link>https://zandani.co.ke/article/avca-hosts-global-investors-in-nairobi-for-african-private-capital-c</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/avca-hosts-global-investors-in-nairobi-for-african-private-capital-c</guid>
-      <pubDate>Sat, 25 Apr 2026 18:30:17 GMT</pubDate>
-      <dc:creator><![CDATA[Grace Mkamburi]]></dc:creator>
-      <description><![CDATA[Nairobi Positions Kenya as Hub for African Private Capital Nairobi is currently hosting the 22nd Annual AVCA Conference & VC Summit from April 27-30, gathering over 800 global leaders. Organized by the African Private Capital Association (AVCA), this event...]]></description>
-      <enclosure url="https://i.ibb.co/rRBBDTF8/3a6a7aa79704.png" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/rRBBDTF8/3a6a7aa79704.png" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/rRBBDTF8/3a6a7aa79704.png" alt="AVCA hosts global investors in Nairobi for African private capital conference" /><p>Nairobi Positions Kenya as Hub for African Private Capital Nairobi is currently hosting the 22nd Annual AVCA Conference & VC Summit from April 27-30, gathering over 800 global leaders. Organized by the African Private Capital Association (AVCA), this event...</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
