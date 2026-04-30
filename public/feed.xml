@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Thu, 30 Apr 2026 20:23:51 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 20:55:25 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[IEBC Voter Registration: 2.3 Million New Voters Confirmed]]></title>
+      <link>https://zandani.co.ke/article/iebc-voter-registration-new-voters</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/iebc-voter-registration-new-voters</guid>
+      <pubDate>Thu, 30 Apr 2026 20:42:30 GMT</pubDate>
+      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
+      <description><![CDATA[IEBC voter registration ends with 2.3 million new voters as Chairperson Erastus Ethekon rules out an extension for the exercise. Get the full details.]]></description>
+      <enclosure url="https://i.ibb.co/ZRLhPd8G/601f772fb94b.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/ZRLhPd8G/601f772fb94b.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/ZRLhPd8G/601f772fb94b.jpg" alt="IEBC Voter Registration: 2.3 Million New Voters Confirmed" /><p>IEBC voter registration ends with 2.3 million new voters as Chairperson Erastus Ethekon rules out an extension for the exercise. Get the full details.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[The Mark of the Machine, a Creator's Burden]]></title>
       <link>https://zandani.co.ke/article/the-mark-of-the-machine-a-creators-burden</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/ksMgmKXB/75b0c6890c9b.webp" type="image/jpeg" />
       <media:content url="https://i.ibb.co/ksMgmKXB/75b0c6890c9b.webp" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/ksMgmKXB/75b0c6890c9b.webp" alt="Police deploy security team to Kitui after seven killed in community clashes" /><p>Police deployed a high-powered security team to Tseikuru, Kitui County, after seven people were killed in clashes between Somali and Kamba communities.</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Kenya Power Deducts Arrears From Prepaid Token Purchases for Debt Recovery]]></title>
-      <link>https://zandani.co.ke/article/kenya-power-deducts-arrears-from-prepaid-token-purchases-for-debt-re</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-power-deducts-arrears-from-prepaid-token-purchases-for-debt-re</guid>
-      <pubDate>Sun, 26 Apr 2026 08:39:53 GMT</pubDate>
-      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
-      <description><![CDATA[Kenya Power is deducting legacy debt arrears from prepaid token purchases for debt recovery, significantly reducing electricity units received by users.]]></description>
-      <enclosure url="https://i.ibb.co/MxV0kR6n/a05e226f9578.webp" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/MxV0kR6n/a05e226f9578.webp" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/MxV0kR6n/a05e226f9578.webp" alt="Kenya Power Deducts Arrears From Prepaid Token Purchases for Debt Recovery" /><p>Kenya Power is deducting legacy debt arrears from prepaid token purchases for debt recovery, significantly reducing electricity units received by users.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
