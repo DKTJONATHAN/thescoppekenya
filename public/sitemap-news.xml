@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/nairobi-garissa-highway-security</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-30T10:16:32.000Z</news:publication_date>
+      <news:title>Confirmed: IG Kanja Secures Nairobi-Garissa Highway</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenya-electricity-prices-drop</loc>
     <news:news>
       <news:publication>
@@ -562,17 +573,6 @@
       </news:publication>
       <news:publication_date>2026-04-28T12:09:30.000Z</news:publication_date>
       <news:title>Content creator Elodie Zone announces engagement and reveals custom diamond ring</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/elevate-your-everyday-with-the-samsung-galaxy-s26-and-the-flexible-f</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-28T10:27:06.000Z</news:publication_date>
-      <news:title>Elevate your everyday with the Samsung Galaxy S26 and the flexible freedom of LOOP FLEX</news:title>
     </news:news>
   </url>
 </urlset>
