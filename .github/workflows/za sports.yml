@@ -269,17 +269,32 @@ jobs:
               f"BANNED PHRASES: {', '.join(BANNED_PHRASES)}\n"
               f"CRITICAL BRANDING: You are writing FOR Za Ndani (zandani.co.ke). NEVER mention source sites."
           )
-          article_resp = client.models.generate_content(model="gemini-2.5-flash", contents=article_prompt, config=types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]))
+          def robust_generate(model_to_use, prompt, use_search=False):
+              global client
+              for _ in range(6):
+                  try:
+                      config = types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]) if use_search else None
+                      return client.models.generate_content(model=model_to_use, contents=prompt, config=config)
+                  except Exception as err:
+                      if "429" in str(err) or "quota" in str(err).lower() or "rate" in str(err).lower() or "503" in str(err) or "unavailable" in str(err).lower() or "500" in str(err) or "overloaded" in str(err).lower() or "resource_exhausted" in str(err).lower():
+                          time.sleep(random.uniform(20, 35))
+                          client = genai.Client(api_key=next(key_cycle))
+                          continue
+                      return None
+              return None
+
+          article_resp = robust_generate("gemini-2.5-flash", article_prompt, use_search=True)
+          if not article_resp: sys.exit(1)
           article_text = re.sub(r"^```(?:markdown)?\n?", "", article_resp.text).rstrip("```").strip()
 
-          desc_text = client.models.generate_content(model="gemini-3-flash-preview", contents=f"Write meta description (145 chars) for: {final_title}\nOutput ONLY JSON: {{\"description\": \"...\"}}").text
+          desc_resp = robust_generate("gemini-3-flash-preview", f"Write meta description (145 chars) for: {final_title}\nOutput ONLY JSON: {{\"description\": \"...\"}}")
           meta_description = ""
-          try: meta_description = json.loads(re.sub(r"^```json?\n?|```$", "", desc_text, flags=re.I|re.DOTALL).strip()).get('description', '')[:160]
+          try: meta_description = json.loads(re.sub(r"^```json?\n?|```$", "", desc_resp.text if desc_resp else "", flags=re.I|re.DOTALL).strip()).get('description', '')[:160]
           except: pass
 
-          tags_text = client.models.generate_content(model="gemini-3-flash-preview", contents=f"Generate 4 lowercase hyphenated tags for: {final_title}\nOutput ONLY JSON: {{\"tags\": [...]}}").text
+          tags_resp = robust_generate("gemini-3-flash-preview", f"Generate 4 lowercase hyphenated tags for: {final_title}\nOutput ONLY JSON: {{\"tags\": [...]}}")
           article_tags = []
-          try: article_tags = json.loads(re.sub(r"^```json?\n?|```$", "", tags_text, flags=re.I|re.DOTALL).strip()).get('tags', [])[:4]
+          try: article_tags = json.loads(re.sub(r"^```json?\n?|```$", "", tags_resp.text if tags_resp else "", flags=re.I|re.DOTALL).strip()).get('tags', [])[:4]
           except: pass
 
           final_image = upload_to_imgbb(target_image) if target_image else ""

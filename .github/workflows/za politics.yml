@@ -86,7 +86,7 @@ jobs:
                       browser = p.chromium.launch(headless=True, args=["--no-sandbox","--disable-dev-shm-usage","--disable-blink-features=AutomationControlled","--disable-infobars","--window-size=1920,1080"])
                       context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36", viewport={"width":1920,"height":1080}, locale="en-KE", timezone_id="Africa/Nairobi", extra_http_headers={"Accept-Language":"en-KE,en;q=0.9","Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate"})
                       page = context.new_page()
-                      page.goto(SITE_URL, timeout=60000, wait_until="networkidle")
+                      page.goto(SITE_URL, timeout=60000, wait_until="domcontentloaded")
                       time.sleep(random.uniform(2, 5))
                       for _ in range(3):
                           page.evaluate("window.scrollBy(0, 1800)")

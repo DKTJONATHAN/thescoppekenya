@@ -182,7 +182,7 @@ jobs:
                       return {}
                   result = {}
                   for line in fm.group(1).splitlines():
-                      m = re.match(r'(\w+):\s*["']?(.*?)["']?\s*$', line)
+                      m = re.match(r'(\w+):\s*["\']?(.*?)["\']?\s*$', line)
                       if m:
                           result[m.group(1).lower()] = m.group(2).strip().strip('"').strip("'")
                   result['body'] = raw[fm.end():].strip()
@@ -403,7 +403,7 @@ jobs:
                   try:
                       with open(os.path.join(POSTS_DIR, fn), 'r', encoding='utf-8') as cf:
                           txt = cf.read()
-                      t_m = re.search(r'title:\s*["']?(.*?)["']?\s*$', txt, re.MULTILINE)
+                      t_m = re.search(r'title:\s*["\']?(.*?)["\']?\s*$', txt, re.MULTILINE)
                       t   = t_m.group(1).strip().strip('"') if t_m else fn.replace('.md','')
                       link_lines.append(f'- Title: {t} | Link: {SITE_BASE_URL}/article/{fn.replace(".md","")}')
                   except Exception:
