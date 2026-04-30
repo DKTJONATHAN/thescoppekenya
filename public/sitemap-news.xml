@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/mike-sonko-acquittal-money-laundering</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-30T10:30:39.000Z</news:publication_date>
+      <news:title>Confirmed: Mike Sonko Acquitted in Money Laundering Case</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/nairobi-garissa-highway-security</loc>
     <news:news>
       <news:publication>
