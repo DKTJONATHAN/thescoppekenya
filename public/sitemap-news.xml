@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/kenya-electricity-prices-drop</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-30T08:44:35.000Z</news:publication_date>
+      <news:title>Confirmed: Kenya electricity prices to drop as hydro dams fill</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/heavy-rains-submerge-nairobi-estates-and-render-major-roads-impassab</loc>
     <news:news>
       <news:publication>
