@@ -289,7 +289,7 @@ jobs:
 
           desc_resp = robust_generate("gemini-3-flash-preview", f"Write meta description (145 chars) for: {final_title}\nOutput ONLY JSON: {{\"description\": \"...\"}}")
           meta_description = ""
-          try: meta_description = json.loads(re.sub(r"^```json?\n?|```$", "", desc_resp.text if desc_resp else "", flags=re.I|re.DOTALL).strip()).get('description', '')[:160]
+          try: meta_description = json.loads(re.sub(r"^```json?\n?|```$", "", desc_resp.text if desc_resp else "", flags=re.I|re.DOTALL).strip()).get('description', '')
           except: pass
 
           tags_resp = robust_generate("gemini-3-flash-preview", f"Generate 4 lowercase hyphenated tags for: {final_title}\nOutput ONLY JSON: {{\"tags\": [...]}}")

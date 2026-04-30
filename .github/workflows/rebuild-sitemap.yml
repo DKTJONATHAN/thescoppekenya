@@ -34,12 +34,12 @@ jobs:
       - name: Create dist directory
         run: mkdir -p dist public
 
-      - name: Run sitemap generator
-        run: node scripts/rebuild-sitemap.js
+      - name: Run SEO generator
+        run: node scripts/generate-seo.js
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "seo: automatically rebuild sitemap.xml and sitemap-news.xml"
-          file_pattern: 'public/sitemap.xml public/sitemap-news.xml'
+          commit_message: "seo: automatically rebuild SEO artifacts"
+          file_pattern: 'public/sitemap.xml public/sitemap-news.xml public/feed.xml public/robots.txt public/llms.txt'
           branch: main
