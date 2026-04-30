@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/heavy-rains-submerge-nairobi-estates-and-render-major-roads-impassab</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-30T06:42:00.000Z</news:publication_date>
+      <news:title>Heavy rains submerge Nairobi estates and render major roads impassable</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/sabastian-sawe-world-record-ruto</loc>
     <news:news>
       <news:publication>
