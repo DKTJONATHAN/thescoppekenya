@@ -542,48 +542,4 @@
       <news:title>Size 8 Njiru Crusade Sees Over 600 Souls Won and Hundreds Healed</news:title>
     </news:news>
   </url>
-  <url>
-    <loc>https://zandani.co.ke/article/william-ruto-nigerian-english</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-28T19:51:43.000Z</news:publication_date>
-      <news:title>William Ruto Clarifies Comments on Nigerian English</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/garissa-mwingi-attack</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-28T19:18:38.000Z</news:publication_date>
-      <news:title>What Happened: Garissa-Mwingi Highway Bus Attack Disrupts Transport</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/ps-omollo-widows-champion-faces-scandal-over-alleged-affairs</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-28T19:15:49.000Z</news:publication_date>
-      <news:title>PS Omollo: Widows&apos; Champion Faces Scandal Over Alleged Affairs</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/openai-targets-africa-ai-growth-while-eac-pledges-regional-technolog</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-28T19:13:52.000Z</news:publication_date>
-      <news:title>OpenAI Targets Africa AI Growth While EAC Pledges Regional Technology Fund</news:title>
-    </news:news>
-  </url>
 </urlset>
