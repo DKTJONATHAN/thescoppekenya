@@ -65,8 +65,18 @@ function stripMarkdown(text) {
     .replace(/\[([^\]]+)\]\(.*?\)/g, '$1') // replace links with just text
     .replace(/[#>*_~`]/g, '') // strip md characters
     .replace(/\n+/g, ' ')
-    .trim()
-    .slice(0, 300) + '...';
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function truncateSnippet(text, maxLength = 260) {
+  const cleaned = stripMarkdown(text);
+  if (!cleaned) return '';
+  if (cleaned.length <= maxLength) return cleaned;
+
+  const sliced = cleaned.slice(0, maxLength + 1);
+  const lastSpace = sliced.lastIndexOf(' ');
+  return `${sliced.slice(0, lastSpace > 100 ? lastSpace : maxLength).trim()}...`;
 }
 
 function parseFrontmatter(content) {
@@ -121,7 +131,7 @@ async function loadPosts() {
         image: data.image || '',
         category: data.category || 'News',
         author: data.author || 'Za Ndani',
-        description: data.description || data.excerpt || stripMarkdown(body.slice(0, 400)),
+        description: data.description || data.excerpt || truncateSnippet(body),
         body: body,
       });
     } catch (err) {
@@ -186,6 +196,7 @@ function generateRssFeed(posts) {
   const items = feedPosts.map(p => {
     const url = `${SITE_URL}/article/${escapeXml(p.slug)}`;
     const imageTag = p.image ? `<enclosure url="${escapeXml(p.image)}" type="image/jpeg" />` : '';
+    const mediaContent = p.image ? `<media:content url="${escapeXml(p.image)}" medium="image" type="image/jpeg" width="1200" height="630" />` : '';
     const imgHtml = p.image ? `<img src="${escapeXml(p.image)}" alt="${escapeXml(p.title)}" />` : '';
     
     return `    <item>
@@ -196,12 +207,13 @@ function generateRssFeed(posts) {
       <dc:creator><![CDATA[${p.author}]]></dc:creator>
       <description><![CDATA[${p.description}]]></description>
       ${imageTag}
+      ${mediaContent}
       <content:encoded><![CDATA[${imgHtml}<p>${p.description}</p>]]></content:encoded>
     </item>`;
   });
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>${escapeXml(PUBLICATION_NAME)}</title>
     <link>${SITE_URL}</link>
