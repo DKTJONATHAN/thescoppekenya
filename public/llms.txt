@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [The Unsinkable Triumph of the Bristol Bears Women 2026 Season](https://zandani.co.ke/article/the-unsinkable-triumph-bristol-bears-women-2026-season) - From the grandest naval battle to the quiet ambition of women's rugby development in Kenya, history hums with tales of strategic alliances.
 - [Inside Court Ruling on Kenya-US Health Data Agreement](https://zandani.co.ke/article/kenya-us-health-data-agreement) - The High Court blocked COFEK from withdrawing a petition against the Kenya-US health data agreement to protect public interest and privacy. Read more.
 - [Kenya to Extend Mandatory Alcohol Tracking to Curb KSh 120 Billion Tax Loss](https://zandani.co.ke/article/kenya-to-extend-mandatory-alcohol-tracking-to-curb-ksh-120-billion-t) - Curbing Illicit Alcohol to Recover KSh 120 Billion in Tax Revenue Kenya plans to extend mandatory excise stamps to all alcoholic beverages, including second-generation brews, to curb an estimated KSh 120 billion annual tax loss from illicit trade. This...
 - [Confirmed: Mike Sonko Acquitted in Money Laundering Case](https://zandani.co.ke/article/mike-sonko-acquittal-money-laundering) - Nairobi court acquits Mike Sonko of money laundering charges due to lack of evidence but orders him to defend irregular tenders. Read the full story.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Somali businesses looted in Mwingi town as retaliatory violence escalates in Kitui County](https://zandani.co.ke/article/somali-businesses-looted-in-mwingi-town-as-retaliatory-violence-esca) - Mwingi town residents looted Somali businesses on April 29, 2026, as retaliatory violence between the Kamba and Somali communities intensifies in Kitui.
 - [How Ruto Awarded Sabastian Sawe Ksh 8M for Marathon World Record](https://zandani.co.ke/article/sabastian-sawe-world-record-ruto) - President Ruto awarded Sabastian Sawe Ksh 8M after he broke the marathon world record in London. This gift celebrates Kenya's athletic success. Get the det
 - [Liz Jackson highlights harassment of women in Nairobi Central Business District](https://zandani.co.ke/article/liz-jackson-highlights-harassment-of-women-in-nairobi-central-busine) - Liz Jackson highlights the daily physical harassment of women in Nairobi’s CBD, sharing her personal experiences and calling the city center ungovernable.
-- [Senator Allan Chesang advocates for fair revenue sharing for Kenyan content creators in the Senate](https://zandani.co.ke/article/senator-allan-chesang-advocates-for-fair-revenue-sharing-for-kenyan-) - Senator Allan Chesang advocates for fair revenue sharing for Kenyan content creators, urging the Senate ICT Committee to address monetization disparities.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml

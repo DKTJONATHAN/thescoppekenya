@@ -81,6 +81,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://zandani.co.ke/category/chronicles</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/category/global-news</loc>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
@@ -89,6 +94,12 @@
     <loc>https://zandani.co.ke/category/kenya-news</loc>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/the-unsinkable-triumph-bristol-bears-women-2026-season</loc>
+    <lastmod>2026-04-30T12:14:49.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/article/kenya-us-health-data-agreement</loc>
@@ -6548,7 +6559,7 @@
   </url>
   <url>
     <loc>https://zandani.co.ke/article/who-where-how</loc>
-    <lastmod>2026-04-30T12:17:00.950Z</lastmod>
+    <lastmod>2026-04-30T12:30:08.048Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
