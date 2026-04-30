@@ -327,6 +327,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Celestine Nzioka <bot@zandani.co.ke>"
-          commit_message: "content: News update by Celestine Nzioka ðŸ“°"
+          commit_message: "content: News update by Celestine Nzioka 📰"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_celestine_news.json'

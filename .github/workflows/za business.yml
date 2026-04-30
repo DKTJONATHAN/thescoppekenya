@@ -353,6 +353,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Grace Mkamburi <bot@zandani.co.ke>"
-          commit_message: "content: Business news by Grace Mkamburi ðŸ’¼"
+          commit_message: "content: Business news by Grace Mkamburi 💼"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_grace.json'
