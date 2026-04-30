@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/dr-aggrey-high-school-fire</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-30T17:02:04.000Z</news:publication_date>
+      <news:title>Inside the Dr Aggrey High School Fire in Taita Taveta</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/5-easy-steps-to-report-bolt-ride-issues-fast</loc>
     <news:news>
       <news:publication>
@@ -573,39 +584,6 @@
       </news:publication>
       <news:publication_date>2026-04-28T18:09:52.000Z</news:publication_date>
       <news:title>Man City Fixture Nightmare: Pep Guardiola Handed Brutal Schedule in Major Blow to Title Hopes</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/shiksha-arora-says-kenyan-indians-should-be-referred-to-as-kenyan</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-28T17:08:48.000Z</news:publication_date>
-      <news:title>Shiksha Arora says Kenyan Indians should be referred to as Kenyan</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/monica-barbaro-and-callum-turner-to-star-in-will-gluck-romantic-come</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-28T17:03:25.000Z</news:publication_date>
-      <news:title>Monica Barbaro and Callum Turner to star in Will Gluck romantic comedy One Night Only</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/beasts-of-no-nation-actor-strika-spotted-working-as-security-guard-i</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-28T16:22:53.000Z</news:publication_date>
-      <news:title>Beasts of No Nation actor Strika spotted working as security guard in Accra</news:title>
     </news:news>
   </url>
 </urlset>
