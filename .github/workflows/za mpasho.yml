@@ -1,4 +1,4 @@
-﻿name: Za Ndani - Mpasho Scraper
+name: Za Ndani - Mpasho Scraper
 on:
   schedule:
     # Every hour from 6 AM to 11 PM EAT, staggered from Celestine News

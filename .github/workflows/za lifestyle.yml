@@ -1,4 +1,4 @@
-﻿name: Jona Munyi - Lifestyle Scraper
+name: Jona Munyi - Lifestyle Scraper
 on:
   schedule:
     - cron: '20 2,8,14,20 * * *'

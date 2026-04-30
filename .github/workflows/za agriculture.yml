@@ -1,4 +1,4 @@
-﻿name: Timothy Muli - Agriculture Scraper
+name: Timothy Muli - Agriculture Scraper
 on:
   schedule:
     - cron: '40 8,16 * * *'

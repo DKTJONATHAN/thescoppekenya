@@ -1,4 +1,4 @@
-﻿name: Telegram Auto-Post with AI
+name: Telegram Auto-Post with AI
 
 on:
   push:
@@ -37,12 +37,12 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           if [ -z "$BOT_TOKEN" ] || [ -z "$CHANNEL_ID" ]; then
-            echo "âš ï¸ Telegram credentials not set, skipping"
+            echo "⚠️ Telegram credentials not set, skipping"
             exit 0
           fi
           
           if [ -z "$GEMINI_API_KEY" ]; then
-            echo "âš ï¸ GEMINI_API_KEY not set, skipping. Please ensure it is in your secrets."
+            echo "⚠️ GEMINI_API_KEY not set, skipping. Please ensure it is in your secrets."
             exit 0
           fi
 
@@ -50,7 +50,7 @@ jobs:
           CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
 
           if [ -z "$CHANGED" ]; then
-            echo "ðŸ“ No post changes detected"
+            echo "📝 No post changes detected"
             exit 0
           fi
 
@@ -74,7 +74,7 @@ jobs:
               if not file_path or not os.path.exists(file_path):
                   continue
               
-              print(f"ðŸš€ Processing File: {file_path}")
+              print(f"🚀 Processing File: {file_path}")
               with open(file_path, 'r', encoding='utf-8') as f:
                   content = f.read()
 
@@ -95,7 +95,7 @@ jobs:
               image_url = image_match.group(1) if image_match else ""
               raw_tags = tags_match.group(1) if tags_match else ""
 
-              print(f"ðŸ“ Asking Gemini to write caption for: {title}")
+              print(f"📝 Asking Gemini to write caption for: {title}")
 
               prompt = f"""
               You are the expert Social Media Manager for 'Za Ndani', a top Kenyan news platform. 
@@ -127,52 +127,52 @@ jobs:
                           ai_caption = response.text.strip()
                           break
                       except Exception as e:
-                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower() or "503" in str(e) or "unavailable" in str(e).lower() or "500" in str(e) or "overloaded" in str(e).lower() or "resource_exhausted" in str(e).lower():
-                              print(f"âš ï¸ Rate limited. Waiting 45s... (attempt {attempt+1})")
+                          if "429" in str(e) and attempt < 2:
+                              print(f"⚠️ Rate limited. Waiting 45s... (attempt {attempt+1})")
                               import time
                               time.sleep(45)
                           else:
                               raise
               except Exception as e:
-                  print(f"âš ï¸ AI Generation failed: {e}")
-                  ai_caption = f"ðŸ“° {title}\n\n{excerpt}" 
+                  print(f"⚠️ AI Generation failed: {e}")
+                  ai_caption = f"📰 {title}\n\n{excerpt}" 
 
               # Scrub dashes just in case
               ai_caption = ai_caption.replace('\u2014', '-').replace('\u2013', '-')
               
               # Failsafe: Truncate to ensure it leaves room for the URL and fits Telegram limits
               if len(ai_caption) > 850:
-                  print("âš ï¸ AI generated text too long. Truncating to fit Telegram API limits...")
+                  print("⚠️ AI generated text too long. Truncating to fit Telegram API limits...")
                   ai_caption = ai_caption[:847] + "..."
 
               # Safely append the direct link
-              final_text = f"{ai_caption}\n\nðŸ”— Read the full story by {author} here: {article_url}"
+              final_text = f"{ai_caption}\n\n🔗 Read the full story by {author} here: {article_url}"
 
               img_path = "temp_post_image.jpg"
               has_image = False
               
               if image_url and image_url.startswith("http"):
-                  print(f"ðŸ“¥ Downloading image: {image_url}")
+                  print(f"📥 Downloading image: {image_url}")
                   try:
                       img_data = requests.get(image_url, timeout=15).content
                       with open(img_path, 'wb') as img_file:
                           img_file.write(img_data)
                       has_image = True
                   except Exception as e:
-                      print(f"âš ï¸ Failed to download image: {e}")
+                      print(f"⚠️ Failed to download image: {e}")
 
               telegram_api_url = f"https://api.telegram.org/bot{bot_token}"
               
               try:
                   if has_image:
-                      print("ðŸ“¸ Uploading image and AI text to Telegram...")
+                      print("📸 Uploading image and AI text to Telegram...")
                       url = f"{telegram_api_url}/sendPhoto"
                       with open(img_path, 'rb') as img_file:
                           files = {'photo': img_file}
                           data = {'chat_id': channel_id, 'caption': final_text}
                           res = requests.post(url, data=data, files=files).json()
                   else:
-                      print("ðŸ“ No image found. Posting AI text to Telegram...")
+                      print("📝 No image found. Posting AI text to Telegram...")
                       url = f"{telegram_api_url}/sendMessage"
                       data = {'chat_id': channel_id, 'text': final_text}
                       res = requests.post(url, data=data).json()
@@ -180,12 +180,12 @@ jobs:
                   print(f"Telegram API Response: {res}")
 
                   if res.get('ok'):
-                      print(f"âœ… Successfully published AI post to Telegram for {slug}!")
+                      print(f"✅ Successfully published AI post to Telegram for {slug}!")
                   else:
-                      print(f"âŒ Failed to post {slug} to Telegram. Error: {res.get('description')}")
+                      print(f"❌ Failed to post {slug} to Telegram. Error: {res.get('description')}")
                       
               except Exception as e:
-                  print(f"âŒ Request failed: {e}")
+                  print(f"❌ Request failed: {e}")
 
               if os.path.exists(img_path):
                   os.remove(img_path)

@@ -1,4 +1,4 @@
-﻿name: Jona Munyi - Sports Scraper
+name: Jona Munyi - Sports Scraper
 on:
   schedule:
     - cron: '45 1,6,11,16,21 * * *'

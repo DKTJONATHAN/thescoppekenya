@@ -1,4 +1,4 @@
-﻿name: Amara Ndlovu - Pan-Africa Entertainment Scraper
+name: Amara Ndlovu - Pan-Africa Entertainment Scraper
 on:
   schedule:
     - cron: '48 * * * *'

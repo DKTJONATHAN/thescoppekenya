@@ -1,9 +1,21 @@
 $ErrorActionPreference = "Stop"
-$files = Get-ChildItem -Path ".github\workflows" -Filter "*.yml"
 
-foreach ($file in $files) {
-    if ($file.Name -eq "za diano.yml" -or $file.Name -like "*") {
-        $content = Get-Content -Path $file.FullName -Raw
+# Only target the content creator files
+$targetFiles = @(
+    "za Entertainment.yml", "za ghafla.yml", "za mpasho.yml", "za-news.yml", 
+    "za politics.yml", "za africa.yml", "za agriculture.yml", "za business.yml", 
+    "za diano.yml", "za jaj.yml", "za lifestyle.yml", "za sports.yml", 
+    "za technology.yml", "manyuo.yml", "automation.yml", "satirical-narrator.yml"
+)
+
+# UTF-8 with NO Byte Order Mark (BOM)
+$utf8NoBom = New-Object System.Text.UTF8Encoding $False
+
+foreach ($fileName in $targetFiles) {
+    $filePath = Join-Path -Path ".github\workflows" -ChildPath $fileName
+    
+    if (Test-Path $filePath) {
+        $content = Get-Content -Path $filePath -Raw
 
         $original = $content
 
@@ -40,10 +52,11 @@ foreach ($file in $files) {
         )
 
         if ($content -cne $original) {
-            Write-Host "Updated $($file.Name)"
-            # Use ASCII or UTF8 encoding safely
-            [System.IO.File]::WriteAllText($file.FullName, $content, [System.Text.Encoding]::UTF8)
+            Write-Host "Updated $fileName"
+            [System.IO.File]::WriteAllText((Resolve-Path $filePath).Path, $content, $utf8NoBom)
         }
+    } else {
+        Write-Host "File not found: $fileName"
     }
 }
-Write-Host "All files processed."
+Write-Host "All specified creator files processed."

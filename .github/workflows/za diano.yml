@@ -1,4 +1,4 @@
-﻿name: Zed Mogaka - George Diano Stories
+name: Zed Mogaka - George Diano Stories
 on:
   schedule:
     - cron: '15 */2 * * *'

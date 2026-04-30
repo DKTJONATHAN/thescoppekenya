@@ -1,4 +1,4 @@
-﻿name: Za Ndani - Ghafla Scraper
+name: Za Ndani - Ghafla Scraper
 on:
   schedule:
     - cron: '12 * * * *'

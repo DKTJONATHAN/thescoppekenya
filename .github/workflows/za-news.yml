@@ -1,4 +1,4 @@
-﻿name: Celestine Nzioka - News Scraper
+name: Celestine Nzioka - News Scraper
 on:
   schedule:
     - cron: '33 * * * *'

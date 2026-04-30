@@ -1,4 +1,4 @@
-﻿name: Mutheu Ann - Entertainment Scraper
+name: Mutheu Ann - Entertainment Scraper
 on:
   schedule:
     - cron: '5 * * * *'

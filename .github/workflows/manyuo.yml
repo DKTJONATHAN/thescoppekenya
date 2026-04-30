@@ -1,4 +1,4 @@
-﻿name: Manyuo
+name: Manyuo
 
 on:
   workflow_dispatch:

@@ -1,4 +1,4 @@
-﻿name: Grace Mkamburi - Business Scraper
+name: Grace Mkamburi - Business Scraper
 on:
   schedule:
     - cron: '50 9,17 * * *'

@@ -1,4 +1,4 @@
-﻿name: X (Twitter) Auto-Post with AI
+name: X (Twitter) Auto-Post with AI
 
 on:
   push:
@@ -125,7 +125,7 @@ jobs:
                   "- Max 2 emojis.\n"
                   "- End with 2 hashtags (e.g. #Kenya).\n"
                   "- No URLs in the text.\n"
-                  "- No dashes (â€” or â€“). Use hyphens (-).\n"
+                  "- No dashes (— or –). Use hyphens (-).\n"
                   "- Output ONLY the tweet text."
               )
 
@@ -140,7 +140,7 @@ jobs:
                       ai_text = resp.text.strip()
                       break
                   except Exception as e:
-                      if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower() or "503" in str(e) or "unavailable" in str(e).lower() or "500" in str(e) or "overloaded" in str(e).lower() or "resource_exhausted" in str(e).lower():
+                      if "429" in str(e) and attempt < 2:
                           time.sleep(45)
                       else:
                           print(f"Gemini error: {e}")

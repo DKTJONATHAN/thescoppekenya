@@ -1,4 +1,4 @@
-﻿name: Celestine Nzioka - Politics Scraper
+name: Celestine Nzioka - Politics Scraper
 on:
   schedule:
     - cron: '41 * * * *'

@@ -1,4 +1,4 @@
-﻿name: Elizabeth Muthoni - Techweez Scraper
+name: Elizabeth Muthoni - Techweez Scraper
 on:
   schedule:
     - cron: '22 8,16 * * *'
