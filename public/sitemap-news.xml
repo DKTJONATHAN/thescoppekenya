@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/security-vulnerability-in-cpanel-and-whm-allows-unauthorized-adminis</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-01T17:31:56.000Z</news:publication_date>
+      <news:title>Security vulnerability in cPanel and WHM allows unauthorized administrative access without passwords</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/finance-bill-2026-car-tax</loc>
     <news:news>
       <news:publication>
@@ -716,39 +727,6 @@
       </news:publication>
       <news:publication_date>2026-04-29T17:49:05.000Z</news:publication_date>
       <news:title>Kenyans Criticize President Ruto for Lavish State House Spending While KNH and Schools Face Critical Funding Shortages</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/rio-ferdinand-names-eberechi-eze-as-the-key-player-for-arsenal-in-th</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-29T17:12:46.000Z</news:publication_date>
-      <news:title>Rio Ferdinand names Eberechi Eze as the key player for Arsenal in the Premier League title race</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/charterhouse-moves-telecel-ghana-music-awards-to-palms-convention-ce</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-29T16:11:01.000Z</news:publication_date>
-      <news:title>Charterhouse moves Telecel Ghana Music Awards to Palms Convention Center</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/finding-calm-amidst-the-hustle-how-a-simple-morning-ritual-steadies-</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-29T16:08:16.000Z</news:publication_date>
-      <news:title>Finding Calm Amidst the Hustle: How a Simple Morning Ritual Steadies a Nairobi Business Owner’s Day</news:title>
     </news:news>
   </url>
 </urlset>

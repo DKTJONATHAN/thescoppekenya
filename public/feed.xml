@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Fri, 01 May 2026 15:59:10 GMT</pubDate>
+    <pubDate>Fri, 01 May 2026 17:44:17 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Security vulnerability in cPanel and WHM allows unauthorized administrative access without passwords]]></title>
+      <link>https://zandani.co.ke/article/security-vulnerability-in-cpanel-and-whm-allows-unauthorized-adminis</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/security-vulnerability-in-cpanel-and-whm-allows-unauthorized-adminis</guid>
+      <pubDate>Fri, 01 May 2026 17:31:56 GMT</pubDate>
+      <dc:creator><![CDATA[Elizabeth Muthoni]]></dc:creator>
+      <description><![CDATA[Urgent Cybersecurity Alert: Critical cPanel Vulnerability Threatens African Digital Infrastructure A severe security flaw, officially designated CVE-2026-41940, in cPanel and Web Host Manager (WHM) allows unauthorized root administrative access without...]]></description>
+      <enclosure url="https://i.ibb.co/8QkZ6c7/5ff3a83dd0c8.webp" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/8QkZ6c7/5ff3a83dd0c8.webp" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/8QkZ6c7/5ff3a83dd0c8.webp" alt="Security vulnerability in cPanel and WHM allows unauthorized administrative access without passwords" /><p>Urgent Cybersecurity Alert: Critical cPanel Vulnerability Threatens African Digital Infrastructure A severe security flaw, officially designated CVE-2026-41940, in cPanel and Web Host Manager (WHM) allows unauthorized root administrative access without...</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Inside Finance Bill 2026 Plan to Tax Classic Cars 50%]]></title>
       <link>https://zandani.co.ke/article/finance-bill-2026-car-tax</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/3Y1HVTJP/ed40b0009ebb.webp" type="image/jpeg" />
       <media:content url="https://i.ibb.co/3Y1HVTJP/ed40b0009ebb.webp" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/3Y1HVTJP/ed40b0009ebb.webp" alt="Actor Uzor Arukwe says dismissal from Etisalat led to his acting career" /><p>Actor Uzor Arukwe reveals how his 2012 dismissal from Etisalat Nigeria propelled his thriving career and success in the Pan-African Nollywood industry.</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Kileleshwa Airbnb Tea: Student's Tragic Fall, Married Man Suspected]]></title>
-      <link>https://zandani.co.ke/article/kileleshwa-airbnb-tea-student-s-tragic-fall-married-man-suspected</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/kileleshwa-airbnb-tea-student-s-tragic-fall-married-man-suspected</guid>
-      <pubDate>Mon, 27 Apr 2026 19:01:47 GMT</pubDate>
-      <dc:creator><![CDATA[Zed Mogaka]]></dc:creator>
-      <description><![CDATA[Police are holding Tony Odhiambo, a married man, after 22-year-old student Consolata Githinji tragically fell from a Kileleshwa Airbnb.]]></description>
-      <enclosure url="https://i.ibb.co/pBGtN52s/fd161904a721.webp" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/pBGtN52s/fd161904a721.webp" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/pBGtN52s/fd161904a721.webp" alt="Kileleshwa Airbnb Tea: Student&apos;s Tragic Fall, Married Man Suspected" /><p>Police are holding Tony Odhiambo, a married man, after 22-year-old student Consolata Githinji tragically fell from a Kileleshwa Airbnb.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
