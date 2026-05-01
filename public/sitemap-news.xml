@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/kenya-tax-filing-deadline-changes</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-01T19:50:05.000Z</news:publication_date>
+      <news:title>How Finance Bill 2026 Changes Kenya Tax Filing Deadline to April</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/tottenham-on-the-brink-de-zerbi-issues-defiant-silence-the-voice-ple</loc>
     <news:news>
       <news:publication>
@@ -672,50 +683,6 @@
       </news:publication>
       <news:publication_date>2026-04-29T21:19:16.000Z</news:publication_date>
       <news:title>Bongo Flava artist Selemani Ramadhan dies suddenly</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/nairobi-parking-fees-kta-ruto</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-29T20:02:13.000Z</news:publication_date>
-      <news:title>How KTA Is Opposing High Nairobi Parking Fees in Ruto Plea</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/state-department-to-feature-donald-trump-s-image-in-commemorative-pa</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-29T19:58:02.000Z</news:publication_date>
-      <news:title>State Department to feature Donald Trump’s image in commemorative passports</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/corazon-kwamboka-connie-death</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-29T19:55:35.000Z</news:publication_date>
-      <news:title>Corazon Kwamboka Slams Bystander Apathy Over Connie Death</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/deadly-clashes-between-kamba-and-somali-communities-over-camel-grazi</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-29T19:52:37.000Z</news:publication_date>
-      <news:title>Deadly Clashes Between Kamba and Somali Communities Over Camel Grazing Leave Several Dead in Kitui and Meru</news:title>
     </news:news>
   </url>
 </urlset>
