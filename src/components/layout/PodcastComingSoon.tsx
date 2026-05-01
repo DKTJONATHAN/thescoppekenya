@@ -3,7 +3,7 @@ import { Mic, Radio } from "lucide-react";
 
 export function PodcastComingSoon() {
   return (
-    <div className="pointer-events-none fixed bottom-4 right-4 z-40 sm:bottom-6 sm:right-6">
+    <div className="pointer-events-none fixed bottom-4 right-4 z-40 hidden sm:block sm:bottom-6 sm:right-6">
       <Link
         to="/podcast"
         className="pointer-events-auto flex max-w-[260px] items-center gap-3 rounded-lg border border-primary/50 bg-background/95 px-3 py-3 shadow-[0_0_15px_rgba(var(--primary),0.3)] backdrop-blur-md transition-all hover:-translate-y-0.5 hover:border-primary hover:shadow-[0_0_25px_rgba(var(--primary),0.5)] group"

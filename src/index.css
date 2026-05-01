@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Prevent horizontal page shift on mobile (e.g. from marquees / wide flex children) */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 /* Fonts loaded via index.html preload links */
 
 @layer base {
