@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/var-is-so-so-bad-furious-unai-emery-blasts-clear-red-card-snub-in-as</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-01T05:29:20.000Z</news:publication_date>
+      <news:title>&quot;VAR Is So, So Bad&quot;: Furious Unai Emery Blasts &apos;Clear Red Card&apos; Snub In Aston Villa Loss</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/nbc-stars-and-creators-attend-emmy-season-kick-off-luncheon</loc>
     <news:news>
       <news:publication>
