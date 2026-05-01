@@ -5,9 +5,11 @@ import { Badge } from "@/components/ui/badge";
 
 interface FeaturedStoryCardProps {
   post: Post;
+  views?: number;
 }
 
-export function FeaturedStoryCard({ post }: FeaturedStoryCardProps) {
+export function FeaturedStoryCard({ post, views = 0 }: FeaturedStoryCardProps) {
+  const formattedViews = views > 999 ? `${(views / 1000).toFixed(1)}k` : `${views}`;
   const formattedDate = new Date(post.date).toLocaleDateString('en-KE', {
     weekday: 'short',
     month: 'short',
@@ -37,10 +39,12 @@ export function FeaturedStoryCard({ post }: FeaturedStoryCardProps) {
           <TrendingUp className="w-3 h-3 mr-1.5" />
           Top Story
         </Badge>
-        <Badge variant="secondary" className="bg-white/20 backdrop-blur-md text-white border-0 px-3 py-1.5 rounded-full text-xs">
-          <Eye className="w-3 h-3 mr-1" />
-          {Math.floor(Math.random() * 50 + 10)}k views
-        </Badge>
+        {views > 0 && (
+          <Badge variant="secondary" className="bg-white/20 backdrop-blur-md text-white border-0 px-3 py-1.5 rounded-full text-xs">
+            <Eye className="w-3 h-3 mr-1" />
+            {formattedViews} views
+          </Badge>
+        )}
       </div>
 
       {/* Content */}

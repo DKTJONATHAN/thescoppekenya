@@ -219,12 +219,10 @@ const Index = () => {
   }, [hasMore]);
 
   const mostRead = useMemo(() => {
-    const sorted = [...RAW_POSTS].sort((a, b) => getViews(b.slug) - getViews(a.slug));
-    // If no real views, fallback to our stable hash for mock ranking
-    if (sorted[0] && getViews(sorted[0].slug) === 0) {
-      return [...RAW_POSTS].sort((a, b) => stableViews(b.slug) - stableViews(a.slug)).slice(0, 5);
-    }
-    return sorted.slice(0, 5);
+    // Only rank by real GA4 views; if none yet, fall back to most recent posts (no fake numbers).
+    const withViews = RAW_POSTS.filter(p => getViews(p.slug) > 0);
+    if (withViews.length === 0) return RAW_POSTS.slice(0, 5);
+    return [...withViews].sort((a, b) => getViews(b.slug) - getViews(a.slug)).slice(0, 5);
   }, [viewCounts, getViews]);
 
   const handleCategoryChange = useCallback((cat: string) => {
