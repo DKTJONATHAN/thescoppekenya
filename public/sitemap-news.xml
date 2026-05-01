@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/leeds-united-move-nine-points-clear-of-relegation-zone-after-dominan</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-01T22:36:54.000Z</news:publication_date>
+      <news:title>Leeds United Move Nine Points Clear of Relegation Zone After Dominant Victory Over Burnley</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/a-loom-of-fortune-investing-women-blue-economy-kenya</loc>
     <news:news>
       <news:publication>
@@ -650,61 +661,6 @@
       </news:publication>
       <news:publication_date>2026-04-29T22:41:37.000Z</news:publication_date>
       <news:title>Olakunle Churchill denies divorce reports and claims no legal marriage to Rosy Meurer</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/former-trump-counselor-alina-habba-clashes-with-co-hosts-on-the-view</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-29T22:10:08.000Z</news:publication_date>
-      <news:title>Former Trump counselor Alina Habba clashes with co-hosts on The View</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/tiwa-savage-music-foundation-awards-2-1-million-in-berklee-scholarsh</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-29T21:46:33.000Z</news:publication_date>
-      <news:title>Tiwa Savage Music Foundation awards $2.1 million in Berklee scholarships to 18 students</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/the-hidden-demands-of-hosting-understanding-the-guest-personalities-</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-29T21:33:34.000Z</news:publication_date>
-      <news:title>The Hidden Demands of Hosting: Understanding the Guest Personalities That Every Airbnb Owner Dreads</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/melvin-alusa-bien-baraza-family</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-29T21:21:06.000Z</news:publication_date>
-      <news:title>Melvin Alusa Defends Bien Baraza on Family Planning</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/bongo-flava-artist-selemani-ramadhan-dies-suddenly</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-29T21:19:16.000Z</news:publication_date>
-      <news:title>Bongo Flava artist Selemani Ramadhan dies suddenly</news:title>
     </news:news>
   </url>
 </urlset>
