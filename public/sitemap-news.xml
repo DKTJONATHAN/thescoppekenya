@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/hbo-restores-lanterns-trailer-after-music-license-expiration</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-01T11:15:57.000Z</news:publication_date>
+      <news:title>HBO restores Lanterns trailer after music license expiration</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/home-afrika-reports-profit-as-liabilities-exceed-total-assets</loc>
     <news:news>
       <news:publication>
