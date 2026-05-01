@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/donald-trump-says-donald-trump-jr-would-be-a-good-host-for-the-appre</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-30T23:58:39.000Z</news:publication_date>
+      <news:title>Donald Trump says Donald Trump Jr. would be a good host for The Apprentice</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/nottingham-forest-stun-aston-villa-in-europa-league-semi-final-as-em</loc>
     <news:news>
       <news:publication>
@@ -529,17 +540,6 @@
       </news:publication>
       <news:publication_date>2026-04-29T01:46:39.000Z</news:publication_date>
       <news:title>Muranga University Student Consolata Githinji Dies in Kileleshwa Airbnb Fall, Tony Odhiambo Arrested</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/ruto-gulf-rhetoric-hollow-kenyans</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-28T22:48:08.000Z</news:publication_date>
-      <news:title>Ruto&apos;s Gulf Rhetoric Rings Hollow for Kenyans</news:title>
     </news:news>
   </url>
 </urlset>
