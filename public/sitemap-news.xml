@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/tottenham-on-the-brink-de-zerbi-issues-defiant-silence-the-voice-ple</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-01T17:44:20.000Z</news:publication_date>
+      <news:title>Tottenham on the Brink: De Zerbi Issues Defiant ‘Silence the Voice’ Plea in Shock Relegation Battle</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/security-vulnerability-in-cpanel-and-whm-allows-unauthorized-adminis</loc>
     <news:news>
       <news:publication>
