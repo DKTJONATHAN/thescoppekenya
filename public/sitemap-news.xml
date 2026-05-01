@@ -37,6 +37,17 @@
     </news:news>
   </url>
   <url>
+    <loc>https://zandani.co.ke/article/simon-kabu-kids-rumors</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-01T17:30:24.000Z</news:publication_date>
+      <news:title>Simon Kabu Denies Secret Kids Rumors and Pursues Legal Action</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/finance-bill-2026-car-tax</loc>
     <news:news>
       <news:publication>
@@ -738,17 +749,6 @@
       </news:publication>
       <news:publication_date>2026-04-29T17:51:53.000Z</news:publication_date>
       <news:title>Liz Jackson highlights abuse women face in Nairobi CBD</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenyans-criticize-president-ruto-for-lavish-state-house-spending-whi</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-29T17:49:05.000Z</news:publication_date>
-      <news:title>Kenyans Criticize President Ruto for Lavish State House Spending While KNH and Schools Face Critical Funding Shortages</news:title>
     </news:news>
   </url>
 </urlset>
