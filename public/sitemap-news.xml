@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/arne-slot-drops-mohamed-salah-send-off-bombshell-and-delivers-alisso</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-01T08:34:26.000Z</news:publication_date>
+      <news:title>Arne Slot drops Mohamed Salah &apos;send off&apos; bombshell and delivers Alisson injury update ahead of Man Utd clash</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/nairobi-floods-mombasa-road</loc>
     <news:news>
       <news:publication>
