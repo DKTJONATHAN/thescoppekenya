@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/nairobi-expressway-toll-waiver-floods</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-01T11:41:29.000Z</news:publication_date>
+      <news:title>Confirmed: Nairobi Expressway Toll Fees Waived Amid Flooding</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/jalango-nairobi-matatu-culture</loc>
     <news:news>
       <news:publication>
