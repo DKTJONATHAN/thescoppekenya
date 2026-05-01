@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/the-royal-decree-of-the-labeled-scroll</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-01T06:15:35.000Z</news:publication_date>
+      <news:title>The Royal Decree of the Labeled Scroll</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/var-is-so-so-bad-furious-unai-emery-blasts-clear-red-card-snub-in-as</loc>
     <news:news>
       <news:publication>
@@ -529,28 +540,6 @@
       </news:publication>
       <news:publication_date>2026-04-29T14:35:47.000Z</news:publication_date>
       <news:title>Content creator Goliath wa Bungoma hospitalized after road accident in Ruaka</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/harry-maguire-praises-casemiro-following-manchester-united-victory-o</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-29T06:15:03.000Z</news:publication_date>
-      <news:title>Harry Maguire praises Casemiro following Manchester United victory over Brentford</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/oga-obinna-son-pocket-money</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-29T06:13:35.000Z</news:publication_date>
-      <news:title>Oga Obinna Gives Son 10,000 Pocket Money in 50 Shilling Notes</news:title>
     </news:news>
   </url>
 </urlset>
