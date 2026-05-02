@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/francis-atwoli-cotu-victory</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-02T12:03:06.000Z</news:publication_date>
+      <news:title>Francis Atwoli Links COTU Re-election to Fatherhood</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/scramble-for-starlight-kenyan-representation</loc>
     <news:news>
       <news:publication>
@@ -639,28 +650,6 @@
       </news:publication>
       <news:publication_date>2026-04-30T13:11:21.000Z</news:publication_date>
       <news:title>Shock Burnley Exit: Scott Parker Out as Club Targets Wales Boss Craig Bellamy for Return</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/the-unsinkable-triumph-bristol-bears-women-2026-season</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-30T12:14:49.000Z</news:publication_date>
-      <news:title>The Unsinkable Triumph of the Bristol Bears Women 2026 Season</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-us-health-data-agreement</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-30T12:03:48.000Z</news:publication_date>
-      <news:title>Inside Court Ruling on Kenya-US Health Data Agreement</news:title>
     </news:news>
   </url>
 </urlset>
