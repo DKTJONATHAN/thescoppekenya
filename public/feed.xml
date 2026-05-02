@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sat, 02 May 2026 11:39:17 GMT</pubDate>
+    <pubDate>Sat, 02 May 2026 11:58:02 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[The Scramble for Starlight: Kenyan Representation I'm A Celebrity UK]]></title>
+      <link>https://zandani.co.ke/article/scramble-for-starlight-kenyan-representation</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/scramble-for-starlight-kenyan-representation</guid>
+      <pubDate>Sat, 02 May 2026 11:43:08 GMT</pubDate>
+      <dc:creator><![CDATA[The Chronicler]]></dc:creator>
+      <description><![CDATA[A grand stage in the southern sun, yet the local stars remain unseen. The echoes of old partitions resonate, leaving popular Kenyan figures in shadow.]]></description>
+      <enclosure url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" type="image/jpeg" />
+      <media:content url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" alt="The Scramble for Starlight: Kenyan Representation I&apos;m A Celebrity UK" /><p>A grand stage in the southern sun, yet the local stars remain unseen. The echoes of old partitions resonate, leaving popular Kenyan figures in shadow.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[10 Kenya Flood Deaths Confirmed as Heavy Rains Persist]]></title>
       <link>https://zandani.co.ke/article/kenya-flood-deaths-heavy-rains</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/TBrB680p/d9d6baa2894a.webp" type="image/jpeg" />
       <media:content url="https://i.ibb.co/TBrB680p/d9d6baa2894a.webp" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/TBrB680p/d9d6baa2894a.webp" alt="Chris Brown welcomes fourth child with Jada Wallace" /><p>Chris Brown and girlfriend Jada Wallace welcomed their first child together, a baby boy, on April 26, 2026. This is the singer's fourth child in total.</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Size 8 Njiru Crusade Sees Over 600 Souls Won and Hundreds Healed]]></title>
-      <link>https://zandani.co.ke/article/size-8-njiru-gospel-crusade</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/size-8-njiru-gospel-crusade</guid>
-      <pubDate>Tue, 28 Apr 2026 20:04:42 GMT</pubDate>
-      <dc:creator><![CDATA[Za Ndani]]></dc:creator>
-      <description><![CDATA[Size 8 hosted a gospel crusade in Njiru where 630 people converted and hundreds were healed during the two-day event. Read the full story.]]></description>
-      <enclosure url="https://i.ibb.co/TB8GNkVr/95ad60cf39eb.webp" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/TB8GNkVr/95ad60cf39eb.webp" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/TB8GNkVr/95ad60cf39eb.webp" alt="Size 8 Njiru Crusade Sees Over 600 Souls Won and Hundreds Healed" /><p>Size 8 hosted a gospel crusade in Njiru where 630 people converted and hundreds were healed during the two-day event. Read the full story.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
