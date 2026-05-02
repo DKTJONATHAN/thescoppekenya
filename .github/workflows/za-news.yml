@@ -197,122 +197,135 @@ jobs:
           if not article_links: print('No candidates'); sys.exit(0)
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
-          full_raw_text, target_image, target_title, final_hash = None, None, None, None
+
+          MAX_ARTICLES_PER_RUN = 3
+          published = 0
+          posts_dir = os.environ.get('POSTS_DIR', 'content/posts'); os.makedirs(posts_dir, exist_ok=True)
+          banned_str = ', '.join(BANNED_PHRASES)
+
           for link in article_links:
+              if published >= MAX_ARTICLES_PER_RUN:
+                  print(f'Reached limit of {MAX_ARTICLES_PER_RUN} articles per run'); break
               u_hash = hashlib.md5(link.encode()).hexdigest()
               if u_hash in memory: continue
               text, img, title = scrape_article(link)
-              if text and len(text) > 400:
-                  full_raw_text, target_image, target_title, final_hash = text, img, title or 'Kenya News', u_hash; break
-          if not full_raw_text: print('No fresh valid article'); sys.exit(0)
+              if not (text and len(text) > 400): continue
+              full_raw_text, target_image, target_title, final_hash = text, img, title or 'Kenya News', u_hash
 
-          seo_prompt = (
-              'You are an expert SEO strategist for a Kenyan news site (zandani.co.ke).\n'
-              'SCRAPED ARTICLE TITLE: ' + str(target_title) + '\n'
-              'ARTICLE SNIPPET (first 800 chars): ' + full_raw_text[:800] + '\n\n'
-              'TASK: Generate all SEO metadata for this article. Follow these rules EXACTLY:\n'
-              '1. TITLE (final_title):\n'
-              '   - 45-65 characters maximum\n'
-              '   - Primary keyword MUST appear in first 40 characters\n'
-              '   - Use ONE of: number ("5 Kenyans..."), question ("Why Kenya..."), power word ("How", "What", "Inside", "Exposed", "Confirmed")\n'
-              '   - Google News style: specific entities, locations, names - NO clickbait\n'
-              '   - Year only if freshness adds value\n'
-              '2. META DESCRIPTION (meta_description):\n'
-              '   - 120-155 characters EXACTLY\n'
-              '   - Must contain the focus keyword naturally\n'
-              '   - Answers: what happened + who is affected + why it matters\n'
-              '   - End with an action signal ("Read the full story", "Get the details", "See what happened")\n'
-              '   - No quotes, no em-dashes\n'
-              '3. FOCUS KEYWORD (focus_keyword):\n'
-              '   - 2-4 words, the single most searched term for this story\n'
-              '   - Kenyan search context (e.g. "Kenya Railways tender" not just "railway tender")\n'
-              '4. SEO SLUG (seo_slug):\n'
-              '   - 3-5 hyphenated words, focus keyword based\n'
-              '   - Lowercase, no stopwords (a, the, in, of, to)\n'
-              '   - Example: "kenya-railways-tender-cancelled"\n'
-              '5. TAGS (tags):\n'
-              '   - Array of 4-6 tags\n'
-              '   - Mix: 1 broad category tag, 2-3 specific entity/topic tags, 1 location tag\n'
-              '   - Each tag: 1-3 words, title case\n'
-              '   - Example: ["Kenya News", "Kenya Railways", "World Bank", "Nairobi"]\n\n'
-              'Output ONLY valid JSON - no markdown, no explanation:\n'
-              '{"final_title": "...", "meta_description": "...", "focus_keyword": "...", "seo_slug": "...", "tags": [...]}'
-          )
-          seo_text = gemini_generate(seo_prompt, 'seo-metadata')
-          final_title = target_title
-          meta_description = ''
-          focus_keyword = ''
-          seo_slug = ''
-          tags = []
-          if seo_text:
-              try:
-                  seo_data = json.loads(re.sub(r'^```json?\n?|```$', '', seo_text, flags=re.I|re.DOTALL).strip())
-                  final_title = seo_data.get('final_title', target_title)
-                  meta_description = seo_data.get('meta_description', '')[:155]
-                  focus_keyword = seo_data.get('focus_keyword', '')
-                  seo_slug = seo_data.get('seo_slug', '')
-                  tags = seo_data.get('tags', [])
-                  print(f'SEO title: {final_title}')
-                  print(f'Meta desc ({len(meta_description)} chars): {meta_description}')
-                  print(f'Focus keyword: {focus_keyword}')
-                  print(f'Slug: {seo_slug}')
-                  print(f'Tags: {tags}')
-              except Exception as e: print(f'SEO parse error: {e}')
+              seo_prompt = (
+                  'You are an expert SEO strategist for a Kenyan news site (zandani.co.ke).\n'
+                  'SCRAPED ARTICLE TITLE: ' + str(target_title) + '\n'
+                  'ARTICLE SNIPPET (first 800 chars): ' + full_raw_text[:800] + '\n\n'
+                  'TASK: Generate all SEO metadata for this article. Follow these rules EXACTLY:\n'
+                  '1. TITLE (final_title):\n'
+                  '   - 45-65 characters maximum\n'
+                  '   - Primary keyword MUST appear in first 40 characters\n'
+                  '   - Use ONE of: number ("5 Kenyans..."), question ("Why Kenya..."), power word ("How", "What", "Inside", "Exposed", "Confirmed")\n'
+                  '   - Google News style: specific entities, locations, names - NO clickbait\n'
+                  '   - Year only if freshness adds value\n'
+                  '2. META DESCRIPTION (meta_description):\n'
+                  '   - 120-155 characters EXACTLY\n'
+                  '   - Must contain the focus keyword naturally\n'
+                  '   - Answers: what happened + who is affected + why it matters\n'
+                  '   - End with an action signal ("Read the full story", "Get the details", "See what happened")\n'
+                  '   - No quotes, no em-dashes\n'
+                  '3. FOCUS KEYWORD (focus_keyword):\n'
+                  '   - 2-4 words, the single most searched term for this story\n'
+                  '   - Kenyan search context (e.g. "Kenya Railways tender" not just "railway tender")\n'
+                  '4. SEO SLUG (seo_slug):\n'
+                  '   - 3-5 hyphenated words, focus keyword based\n'
+                  '   - Lowercase, no stopwords (a, the, in, of, to)\n'
+                  '   - Example: "kenya-railways-tender-cancelled"\n'
+                  '5. TAGS (tags):\n'
+                  '   - Array of 4-6 tags\n'
+                  '   - Mix: 1 broad category tag, 2-3 specific entity/topic tags, 1 location tag\n'
+                  '   - Each tag: 1-3 words, title case\n'
+                  '   - Example: ["Kenya News", "Kenya Railways", "World Bank", "Nairobi"]\n\n'
+                  'Output ONLY valid JSON - no markdown, no explanation:\n'
+                  '{"final_title": "...", "meta_description": "...", "focus_keyword": "...", "seo_slug": "...", "tags": [...]}'
+              )
+              seo_text = gemini_generate(seo_prompt, 'seo-metadata')
+              final_title = target_title
+              meta_description = ''
+              focus_keyword = ''
+              seo_slug = ''
+              tags = []
+              if seo_text:
+                  try:
+                      seo_data = json.loads(re.sub(r'^```json?\n?|```$', '', seo_text, flags=re.I|re.DOTALL).strip())
+                      final_title = seo_data.get('final_title', target_title)
+                      meta_description = seo_data.get('meta_description', '')[:155]
+                      focus_keyword = seo_data.get('focus_keyword', '')
+                      seo_slug = seo_data.get('seo_slug', '')
+                      tags = seo_data.get('tags', [])
+                      print(f'SEO title: {final_title}')
+                      print(f'Meta desc ({len(meta_description)} chars): {meta_description}')
+                      print(f'Focus keyword: {focus_keyword}')
+                      print(f'Slug: {seo_slug}')
+                      print(f'Tags: {tags}')
+                  except Exception as e: print(f'SEO parse error: {e}')
 
-          current_key = next(key_cycle); client = genai.Client(api_key=current_key); time.sleep(5)
-          banned_str = ', '.join(BANNED_PHRASES)
-          article_prompt = (
-              'Current Date: ' + full_date_str + '\n'
-              'TITLE: ' + str(final_title) + '\n'
-              'FOCUS KEYWORD (use naturally 2-3 times in the body): ' + str(focus_keyword) + '\n'
-              'SOURCE TEXT: ' + full_raw_text[:9500] + '\n'
-              'INTERNAL LINKS TO WEAVE IN (use 1-2 naturally):\n'
-              + get_internal_context() + '\n\n'
-              'TASK: Write a sharp, factual news report as Celestine Nzioka for Za Ndani.\n'
-              'Focus on Kenyan general news: society, economy, health, crime, sports, business, or human interest.\n'
-              'Clear journalistic tone. No Sheng. Facts first. No em-dashes. Single hyphens only.\n'
-              'No title/author/date in body.\n'
-              'Structure: ## H2 keyword heading (include focus keyword). Then opening paragraph matching the meta description intent. Then ### subheadings.\n'
-              'First paragraph must be 40-55 words and answer: who, what, where, when, why.\n'
-              'BANNED PHRASES (never use): ' + banned_str + '\n'
-              'Factual, direct, newsroom standard. No cliches.'
-          )
-          article_text = gemini_generate(article_prompt, 'article', use_search=True)
-          if not article_text: sys.exit(1)
-          article_text = re.sub(r'^```(?:markdown)?\n?', '', article_text).rstrip('```').strip()
-          article_text = re.sub(r'^(Title|By|Date):.*?\n', '', article_text, flags=re.I|re.M)
-          article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
+              current_key = next(key_cycle); client = genai.Client(api_key=current_key); time.sleep(5)
+              article_prompt = (
+                  'Current Date: ' + full_date_str + '\n'
+                  'TITLE: ' + str(final_title) + '\n'
+                  'FOCUS KEYWORD (use naturally 2-3 times in the body): ' + str(focus_keyword) + '\n'
+                  'SOURCE TEXT: ' + full_raw_text[:9500] + '\n'
+                  'INTERNAL LINKS TO WEAVE IN (use 1-2 naturally):\n'
+                  + get_internal_context() + '\n\n'
+                  'TASK: Write a sharp, factual news report as Celestine Nzioka for Za Ndani.\n'
+                  'Focus on Kenyan general news: society, economy, health, crime, sports, business, or human interest.\n'
+                  'Clear journalistic tone. No Sheng. Facts first. No em-dashes. Single hyphens only.\n'
+                  'No title/author/date in body.\n'
+                  'Structure: ## H2 keyword heading (include focus keyword). Then opening paragraph matching the meta description intent. Then ### subheadings.\n'
+                  'First paragraph must be 40-55 words and answer: who, what, where, when, why.\n'
+                  'BANNED PHRASES (never use): ' + banned_str + '\n'
+                  'Factual, direct, newsroom standard. No cliches.'
+              )
+              article_text = gemini_generate(article_prompt, 'article', use_search=True)
+              if not article_text:
+                  print('Gemini failed for this article, skipping'); continue
+              article_text = re.sub(r'^```(?:markdown)?\n?', '', article_text).rstrip('```').strip()
+              article_text = re.sub(r'^(Title|By|Date):.*?\n', '', article_text, flags=re.I|re.M)
+              article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
 
-          if seo_slug and re.match(r'^[a-z0-9-]+$', seo_slug):
-              slug = seo_slug[:68]
-          else:
-              slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
+              if seo_slug and re.match(r'^[a-z0-9-]+$', seo_slug):
+                  slug = seo_slug[:68]
+              else:
+                  slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
 
-          final_image = upload_to_imgbb(target_image) if target_image else ''
-          posts_dir = os.environ.get('POSTS_DIR', 'content/posts'); os.makedirs(posts_dir, exist_ok=True)
+              final_image = upload_to_imgbb(target_image) if target_image else ''
+              tags_yaml = json.dumps(tags)
+              excerpt = meta_description[:160] if meta_description else ''
+              # Per-article timestamp so each post sorts uniquely
+              this_timestamp = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+              final_file = (
+                  '---\n'
+                  'title: "' + final_title.replace('"', "'") + '"\n'
+                  'slug: "' + slug + '"\n'
+                  'author: "Celestine Nzioka"\n'
+                  'image: "' + final_image + '"\n'
+                  'category: "News"\n'
+                  'date: "' + this_timestamp + '"\n'
+                  'description: "' + meta_description.replace('"', "'") + '"\n'
+                  'excerpt: "' + excerpt.replace('"', "'") + '"\n'
+                  'tags: ' + tags_yaml + '\n'
+                  'focusKeyword: "' + focus_keyword.replace('"', "'") + '"\n'
+                  '---\n'
+                  + article_text + '\n'
+              )
+              filepath = os.path.join(posts_dir, today_str + '-' + slug + '.md')
+              with open(filepath, 'w', encoding='utf-8') as f: f.write(final_file)
+              memory.append(final_hash)
+              with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
+              print(f'Saved ({published + 1}/{MAX_ARTICLES_PER_RUN}): {filepath}')
+              published += 1
+              # Rotate Gemini key between articles to spread quota
+              current_key = next(key_cycle); client = genai.Client(api_key=current_key)
+              time.sleep(random.uniform(8, 15))
 
-          tags_yaml = json.dumps(tags)
-          excerpt = meta_description[:160] if meta_description else ''
-          final_file = (
-              '---\n'
-              'title: "' + final_title.replace('"', "'") + '"\n'
-              'slug: "' + slug + '"\n'
-              'author: "Celestine Nzioka"\n'
-              'image: "' + final_image + '"\n'
-              'category: "News"\n'
-              'date: "' + publish_timestamp + '"\n'
-              'description: "' + meta_description.replace('"', "'") + '"\n'
-              'excerpt: "' + excerpt.replace('"', "'") + '"\n'
-              'tags: ' + tags_yaml + '\n'
-              'focusKeyword: "' + focus_keyword.replace('"', "'") + '"\n'
-              '---\n'
-              + article_text + '\n'
-          )
-          filepath = os.path.join(posts_dir, today_str + '-' + slug + '.md')
-          with open(filepath, 'w', encoding='utf-8') as f: f.write(final_file)
-          memory.append(final_hash)
-          with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
-          print(f'Saved: {filepath}')
+          print(f'Done. Published {published} article(s) this run.')
+          if published == 0: sys.exit(0)
           EOF
       - name: Git Safety Pull
         run: |
