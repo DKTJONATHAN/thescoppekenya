@@ -4,6 +4,39 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/bola-tinubu-nairobi-visit</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-02T16:32:47.000Z</news:publication_date>
+      <news:title>Confirmed: Bola Tinubu Nairobi Visit for Africa-France Summit</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/npsc-car-auction-fake</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-02T16:20:55.000Z</news:publication_date>
+      <news:title>Confirmed: NPSC Dismisses Fake Car Auction Claims in Nairobi</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/nationhood-science-kenya-bill</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-02T16:09:09.000Z</news:publication_date>
+      <news:title>How Nationhood Science Will Become Mandatory in Kenyan Schools</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/andrew-kibe-separate-beds</loc>
     <news:news>
       <news:publication>
