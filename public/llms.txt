@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [‘It’s Massive’: Daniel Farke Hails Leeds United’s Crucial Step Forward as Milestone Reached in Crunch Period](https://zandani.co.ke/article/it-s-massive-daniel-farke-hails-leeds-united-s-crucial-step-forward-) - Daniel Farke labels it 'massive' as Leeds United reach a major milestone during a crunch period. Discover why this step is vital for the Whites.
 - [Inside Treasury Plan to Cut Kenya Fuel Levy by 50 Percent](https://zandani.co.ke/article/treasury-fuel-levy-cut-kenya) - The National Treasury proposes a 50 percent cut to the Kenya fuel levy to lower costs for motorists and reduce the cost of living. Get the full details.
 - [The Chronicler's Folly: A Metric for the Ages, a Whisper of Lost Songs](https://zandani.co.ke/article/the-chroniclers-folly-wizkid-chartmasters-ranking-explained-kenya) - An echo from the grand halls where lines were drawn, a new metric arises, dictating Africa's worth. A haunting satire on chartmasters african music legacy impac
 - [Leeds United All But Secure Premier League Safety With Emphatic Burnley Victory](https://zandani.co.ke/article/leeds-united-all-but-secure-premier-league-safety-with-emphatic-burn) - Leeds United all but secure Premier League safety with a dominant win against Burnley. Read our full match report on an emphatic away victory.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [President Ruto faces criticism as Talanta Sports City progress highlights unfulfilled development pledges in the Rift Valley](https://zandani.co.ke/article/president-ruto-faces-criticism-as-talanta-sports-city-progress-highl) - President Ruto faces criticism as Talanta Sports City's progress highlights unfulfilled development pledges and poor service delivery in the Rift Valley.
 - [Tottenham on the Brink: De Zerbi Issues Defiant ‘Silence the Voice’ Plea in Shock Relegation Battle](https://zandani.co.ke/article/tottenham-on-the-brink-de-zerbi-issues-defiant-silence-the-voice-ple) - Tottenham on the brink! De Zerbi issues a defiant 'Silence the Voice' plea in a shock relegation battle. Get the full story on Spurs' crisis.
 - [Finance Bill 2026: How KRA Will Override Current Tax Deals](https://zandani.co.ke/article/finance-bill-kra-tax-deals) - KRA will override tax arrangements in the Finance Bill 2026 to curb evasion. This affects businesses using complex deals to cut taxes. Read the full story.
-- [Security vulnerability in cPanel and WHM allows unauthorized administrative access without passwords](https://zandani.co.ke/article/security-vulnerability-in-cpanel-and-whm-allows-unauthorized-adminis) - Urgent Cybersecurity Alert: Critical cPanel Vulnerability Threatens African Digital Infrastructure A severe security flaw, officially designated CVE-2026-41940, in cPanel and Web Host Manager (WHM) allows unauthorized root administrative access without...
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
