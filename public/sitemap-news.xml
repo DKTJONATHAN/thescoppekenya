@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/the-chroniclers-folly-wizkid-chartmasters-ranking-explained-kenya</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-02T05:35:40.000Z</news:publication_date>
+      <news:title>The Chronicler&apos;s Folly: A Metric for the Ages, a Whisper of Lost Songs</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/leeds-united-all-but-secure-premier-league-safety-with-emphatic-burn</loc>
     <news:news>
       <news:publication>
