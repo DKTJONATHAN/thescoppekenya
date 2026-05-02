@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/david-allan-coe-s-daughter-says-singer-was-estranged-from-all-eight-</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-02T21:53:17.000Z</news:publication_date>
+      <news:title>David Allan Coe&apos;s daughter says singer was estranged from all eight of his children</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/president-william-ruto-defends-national-development-plan-during-dire</loc>
     <news:news>
       <news:publication>
