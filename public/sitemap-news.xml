@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/hulu-offers-a-selection-of-classic-films-for-streaming</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-02T22:54:21.000Z</news:publication_date>
+      <news:title>Hulu offers a selection of classic films for streaming</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/sheryl-gabriella-samsung-gift</loc>
     <news:news>
       <news:publication>
@@ -771,17 +782,6 @@
       </news:publication>
       <news:publication_date>2026-04-30T23:58:39.000Z</news:publication_date>
       <news:title>Donald Trump says Donald Trump Jr. would be a good host for The Apprentice</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/nottingham-forest-stun-aston-villa-in-europa-league-semi-final-as-em</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-30T22:37:37.000Z</news:publication_date>
-      <news:title>Nottingham Forest Stun Aston Villa in Europa League Semi-Final as Emery Fumes Over VAR Drama</news:title>
     </news:news>
   </url>
 </urlset>
