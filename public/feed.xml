@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sat, 02 May 2026 11:28:42 GMT</pubDate>
+    <pubDate>Sat, 02 May 2026 11:39:17 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[10 Kenya Flood Deaths Confirmed as Heavy Rains Persist]]></title>
+      <link>https://zandani.co.ke/article/kenya-flood-deaths-heavy-rains</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-flood-deaths-heavy-rains</guid>
+      <pubDate>Sat, 02 May 2026 11:27:04 GMT</pubDate>
+      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
+      <description><![CDATA[Police confirm 10 Kenya flood deaths as heavy rains cause landslides and bridge damage in Eastern and Coast regions. Get the full details here.]]></description>
+      <enclosure url="https://i.ibb.co/nNYRyRzN/6ae9e1efc58e.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/nNYRyRzN/6ae9e1efc58e.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/nNYRyRzN/6ae9e1efc58e.jpg" alt="10 Kenya Flood Deaths Confirmed as Heavy Rains Persist" /><p>Police confirm 10 Kenya flood deaths as heavy rains cause landslides and bridge damage in Eastern and Coast regions. Get the full details here.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Isaac Mwaura Orders Garissa and Tana River Flood Evacuation]]></title>
       <link>https://zandani.co.ke/article/garissa-tana-river-flood-evacuation</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/TB8GNkVr/95ad60cf39eb.webp" type="image/jpeg" />
       <media:content url="https://i.ibb.co/TB8GNkVr/95ad60cf39eb.webp" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/TB8GNkVr/95ad60cf39eb.webp" alt="Size 8 Njiru Crusade Sees Over 600 Souls Won and Hundreds Healed" /><p>Size 8 hosted a gospel crusade in Njiru where 630 people converted and hundreds were healed during the two-day event. Read the full story.</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[William Ruto Clarifies Comments on Nigerian English]]></title>
-      <link>https://zandani.co.ke/article/william-ruto-nigerian-english</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/william-ruto-nigerian-english</guid>
-      <pubDate>Tue, 28 Apr 2026 19:51:43 GMT</pubDate>
-      <dc:creator><![CDATA[Za Ndani]]></dc:creator>
-      <description><![CDATA[President William Ruto clarifies his viral comments about Nigerian English to mend fences with West African in-laws. Read the full story.]]></description>
-      <enclosure url="https://i.ibb.co/SXfRBnM5/fda570f9953c.webp" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/SXfRBnM5/fda570f9953c.webp" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/SXfRBnM5/fda570f9953c.webp" alt="William Ruto Clarifies Comments on Nigerian English" /><p>President William Ruto clarifies his viral comments about Nigerian English to mend fences with West African in-laws. Read the full story.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
