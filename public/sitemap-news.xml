@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/garissa-tana-river-flood-evacuation</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-02T11:11:54.000Z</news:publication_date>
+      <news:title>Isaac Mwaura Orders Garissa and Tana River Flood Evacuation</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/uhuru-kenyatta-active-politics-jubilee</loc>
     <news:news>
       <news:publication>
@@ -639,17 +650,6 @@
       </news:publication>
       <news:publication_date>2026-04-30T11:54:17.000Z</news:publication_date>
       <news:title>Garissa Political Aspirant Bare Sahara Ahmed Detained Over Incitement and Hate Speech Charges</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-to-extend-mandatory-alcohol-tracking-to-curb-ksh-120-billion-t</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-30T11:21:27.000Z</news:publication_date>
-      <news:title>Kenya to Extend Mandatory Alcohol Tracking to Curb KSh 120 Billion Tax Loss</news:title>
     </news:news>
   </url>
 </urlset>
