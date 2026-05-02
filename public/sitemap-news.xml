@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/sydney-sweeney-cut-from-final-version-of-the-devil-wears-prada-2</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-02T20:53:55.000Z</news:publication_date>
+      <news:title>Sydney Sweeney cut from final version of The Devil Wears Prada 2</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/finance-bill-2026-kenya-crypto</loc>
     <news:news>
       <news:publication>
@@ -738,17 +749,6 @@
       </news:publication>
       <news:publication_date>2026-04-30T22:37:37.000Z</news:publication_date>
       <news:title>Nottingham Forest Stun Aston Villa in Europa League Semi-Final as Emery Fumes Over VAR Drama</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/iebc-voter-registration-new-voters</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-30T20:42:30.000Z</news:publication_date>
-      <news:title>IEBC Voter Registration: 2.3 Million New Voters Confirmed</news:title>
     </news:news>
   </url>
 </urlset>
