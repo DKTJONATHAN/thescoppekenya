@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/royal-algorithms-folly-kenya-ai-policy-openai-shift</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-02T19:53:56.000Z</news:publication_date>
+      <news:title>The Royal Algorithm&apos;s Folly: A Kenya AI Policy OpenAI Shift</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/cast-and-director-of-the-devil-wears-prada-discuss-potential-third-f</loc>
     <news:news>
       <news:publication>
@@ -727,17 +738,6 @@
       </news:publication>
       <news:publication_date>2026-04-30T20:42:30.000Z</news:publication_date>
       <news:title>IEBC Voter Registration: 2.3 Million New Voters Confirmed</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/the-mark-of-the-machine-a-creators-burden</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-30T20:08:35.000Z</news:publication_date>
-      <news:title>The Mark of the Machine, a Creator&apos;s Burden</news:title>
     </news:news>
   </url>
 </urlset>
