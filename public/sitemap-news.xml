@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/peter-kioi-rehab-geoffrey-mosiria</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-02T08:47:25.000Z</news:publication_date>
+      <news:title>Peter Kioi Agrees to Rehab After Geoffrey Mosiria Intervention</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/vanessa-bryant-honors-late-daughter-gianna-on-her-twentieth-birthday</loc>
     <news:news>
       <news:publication>
@@ -617,17 +628,6 @@
       </news:publication>
       <news:publication_date>2026-04-30T10:16:32.000Z</news:publication_date>
       <news:title>Confirmed: IG Kanja Secures Nairobi-Garissa Highway</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-electricity-prices-drop</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-30T08:44:35.000Z</news:publication_date>
-      <news:title>Confirmed: Kenya electricity prices to drop as hydro dams fill</news:title>
     </news:news>
   </url>
 </urlset>
