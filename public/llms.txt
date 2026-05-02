@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Inside Treasury Plan to Cut Kenya Fuel Levy by 50 Percent](https://zandani.co.ke/article/treasury-fuel-levy-cut-kenya) - The National Treasury proposes a 50 percent cut to the Kenya fuel levy to lower costs for motorists and reduce the cost of living. Get the full details.
 - [The Chronicler's Folly: A Metric for the Ages, a Whisper of Lost Songs](https://zandani.co.ke/article/the-chroniclers-folly-wizkid-chartmasters-ranking-explained-kenya) - An echo from the grand halls where lines were drawn, a new metric arises, dictating Africa's worth. A haunting satire on chartmasters african music legacy impac
 - [Leeds United All But Secure Premier League Safety With Emphatic Burnley Victory](https://zandani.co.ke/article/leeds-united-all-but-secure-premier-league-safety-with-emphatic-burn) - Leeds United all but secure Premier League safety with a dominant win against Burnley. Read our full match report on an emphatic away victory.
 - [Leeds United Move Nine Points Clear of Relegation Zone After Dominant Victory Over Burnley](https://zandani.co.ke/article/leeds-united-move-nine-points-clear-of-relegation-zone-after-dominan) - Leeds United move nine points clear of the relegation zone after a dominant victory over Burnley. Read the full match report and highlights now.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Tottenham on the Brink: De Zerbi Issues Defiant ‘Silence the Voice’ Plea in Shock Relegation Battle](https://zandani.co.ke/article/tottenham-on-the-brink-de-zerbi-issues-defiant-silence-the-voice-ple) - Tottenham on the brink! De Zerbi issues a defiant 'Silence the Voice' plea in a shock relegation battle. Get the full story on Spurs' crisis.
 - [Finance Bill 2026: How KRA Will Override Current Tax Deals](https://zandani.co.ke/article/finance-bill-kra-tax-deals) - KRA will override tax arrangements in the Finance Bill 2026 to curb evasion. This affects businesses using complex deals to cut taxes. Read the full story.
 - [Security vulnerability in cPanel and WHM allows unauthorized administrative access without passwords](https://zandani.co.ke/article/security-vulnerability-in-cpanel-and-whm-allows-unauthorized-adminis) - Urgent Cybersecurity Alert: Critical cPanel Vulnerability Threatens African Digital Infrastructure A severe security flaw, officially designated CVE-2026-41940, in cPanel and Web Host Manager (WHM) allows unauthorized root administrative access without...
-- [Simon Kabu Denies Secret Kids Rumors and Pursues Legal Action](https://zandani.co.ke/article/simon-kabu-kids-rumors) - Simon Kabu addresses rumors about Simon Kabu kids while taking legal action against defamation to protect his brand. Get the details on his news.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
