@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/uhuru-kenyatta-active-politics-jubilee</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-02T10:30:50.000Z</news:publication_date>
+      <news:title>Uhuru Kenyatta: Why I Will Not Quit Active Kenyan Politics</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/njugush-wakavinye-sparky-kenya</loc>
     <news:news>
       <news:publication>
@@ -639,17 +650,6 @@
       </news:publication>
       <news:publication_date>2026-04-30T11:21:27.000Z</news:publication_date>
       <news:title>Kenya to Extend Mandatory Alcohol Tracking to Curb KSh 120 Billion Tax Loss</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/mike-sonko-acquittal-money-laundering</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-30T10:30:39.000Z</news:publication_date>
-      <news:title>Confirmed: Mike Sonko Acquitted in Money Laundering Case</news:title>
     </news:news>
   </url>
 </urlset>
