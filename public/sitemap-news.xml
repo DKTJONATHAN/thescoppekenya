@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/afcon-2027-dates-kenya</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-02T17:14:49.000Z</news:publication_date>
+      <news:title>AFCON 2027 Confirmed: Kenya Awaits Venue Decision</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/bola-tinubu-nairobi-visit</loc>
     <news:news>
       <news:publication>
@@ -672,17 +683,6 @@
       </news:publication>
       <news:publication_date>2026-04-30T18:55:14.000Z</news:publication_date>
       <news:title>Confirmed: WhatsApp Android Support for Old Phones to End</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/dr-aggrey-high-school-fire</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-30T17:02:04.000Z</news:publication_date>
-      <news:title>Inside the Dr Aggrey High School Fire in Taita Taveta</news:title>
     </news:news>
   </url>
 </urlset>
