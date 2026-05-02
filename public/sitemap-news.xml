@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/njugush-wakavinye-sparky-kenya</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-02T10:13:59.000Z</news:publication_date>
+      <news:title>Sparky Kenya Explains Why Njugush Cannot Replace Wakavinye</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/irungu-nyakera-returns-to-farmers-party-after-failing-to-secure-dcp-</loc>
     <news:news>
       <news:publication>
