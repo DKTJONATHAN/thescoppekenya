@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/andrew-kibe-separate-beds</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-02T16:04:04.000Z</news:publication_date>
+      <news:title>Andrew Kibe says separate beds improve long-term relationships</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/woman-eats-eucharist-video</loc>
     <news:news>
       <news:publication>
@@ -639,28 +650,6 @@
       </news:publication>
       <news:publication_date>2026-04-30T17:02:04.000Z</news:publication_date>
       <news:title>Inside the Dr Aggrey High School Fire in Taita Taveta</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/5-easy-steps-to-report-bolt-ride-issues-fast</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-30T15:30:18.000Z</news:publication_date>
-      <news:title>5 Easy Steps to Report Bolt Ride Issues Fast</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/ntsa-drug-crackdown-school-vehicles</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-30T14:36:51.000Z</news:publication_date>
-      <news:title>Inside NTSA Crackdown on Drug Use in School Vehicles</news:title>
     </news:news>
   </url>
 </urlset>
