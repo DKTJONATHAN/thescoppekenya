@@ -246,6 +246,9 @@ jobs:
           image: "{final_image}"
           category: "Politics"
           date: "{publish_timestamp}"
+          authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
+          dateModified: "{publish_timestamp}"
+          schema: "NewsArticle"
           ---
           {article_text}
           """)

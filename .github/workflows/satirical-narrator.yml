@@ -472,6 +472,9 @@ jobs:
                   f'tags: {tags_json}',
                   f'canonical: "{canonical}"',
                   f'date: "{publish_timestamp}"',
+                  f'authorUrl: "https://zandani.co.ke/author/narrator-name"',
+                  f'dateModified: "{publish_timestamp}"',
+                  f'schema: "NewsArticle"',
                   '---',
               ])
               os.makedirs(POSTS_DIR, exist_ok=True)

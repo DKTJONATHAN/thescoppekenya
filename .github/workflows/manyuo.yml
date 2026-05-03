@@ -935,6 +935,9 @@ jobs:
               f'title: "{title}"',
               f'slug: "{slug}"',
               f'date: "{created_timestamp}"',
+              f'authorUrl: "https://zandani.co.ke/author/author"',
+              f'dateModified: "{created_timestamp}"',
+              f'schema: "NewsArticle"',
           ]
           if is_scheduled:
               frontmatter_lines.append(f'publishDate: "{publish_timestamp}"')
