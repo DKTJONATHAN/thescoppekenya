@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sun, 03 May 2026 11:48:59 GMT</pubDate>
+    <pubDate>Sun, 03 May 2026 11:55:56 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[The Unraveling of the Luminous Chains]]></title>
+      <link>https://zandani.co.ke/article/the-unraveling-luminous-chains</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/the-unraveling-luminous-chains</guid>
+      <pubDate>Sun, 03 May 2026 11:40:57 GMT</pubDate>
+      <dc:creator><![CDATA[The Chronicler]]></dc:creator>
+      <description><![CDATA[A tale of gilded deception, where a queen’s name was sullied by whispered schemes, echoing into the contemporary `ghanaian music scandals 2026`.]]></description>
+      <enclosure url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" type="image/jpeg" />
+      <media:content url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" alt="The Unraveling of the Luminous Chains" /><p>A tale of gilded deception, where a queen’s name was sullied by whispered schemes, echoing into the contemporary `ghanaian music scandals 2026`.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Living in separate houses is the secret to Larry Madowo and Edith Kimani’s relationship longevity]]></title>
       <link>https://zandani.co.ke/article/living-in-separate-houses-is-the-secret-to-larry-madowo-and-edith-ki</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" type="image/jpeg" />
       <media:content url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" alt="The Unsinkable Triumph of the Bristol Bears Women 2026 Season" /><p>From the grandest naval battle to the quiet ambition of women's rugby development in Kenya, history hums with tales of strategic alliances.</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Inside Court Ruling on Kenya-US Health Data Agreement]]></title>
-      <link>https://zandani.co.ke/article/kenya-us-health-data-agreement</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-us-health-data-agreement</guid>
-      <pubDate>Thu, 30 Apr 2026 12:03:48 GMT</pubDate>
-      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
-      <description><![CDATA[The High Court blocked COFEK from withdrawing a petition against the Kenya-US health data agreement to protect public interest and privacy. Read more.]]></description>
-      <enclosure url="https://i.ibb.co/sp5DM0XM/325b3359c3cc.jpg" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/sp5DM0XM/325b3359c3cc.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/sp5DM0XM/325b3359c3cc.jpg" alt="Inside Court Ruling on Kenya-US Health Data Agreement" /><p>The High Court blocked COFEK from withdrawing a petition against the Kenya-US health data agreement to protect public interest and privacy. Read more.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>

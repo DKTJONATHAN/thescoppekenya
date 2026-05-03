@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/the-unraveling-luminous-chains</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T11:40:57.000Z</news:publication_date>
+      <news:title>The Unraveling of the Luminous Chains</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/living-in-separate-houses-is-the-secret-to-larry-madowo-and-edith-ki</loc>
     <news:news>
       <news:publication>
