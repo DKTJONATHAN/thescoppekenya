@@ -4,6 +4,28 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/ruto-ksh10m-content-creators-fund</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T10:57:32.000Z</news:publication_date>
+      <news:title>Inside Ruto&apos;s Ksh10M Offer to Kenyan Content Creators</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/good-conduct-receipt-validity</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T10:46:04.000Z</news:publication_date>
+      <news:title>Confirmed: Good Conduct Certificate Payment Validity Rules</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/emily-blunt-and-stanley-tucci-discuss-character-developments-in-the-</loc>
     <news:news>
       <news:publication>
