@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/netflix-offers-a-selection-of-south-korean-films-for-streaming</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T04:01:11.000Z</news:publication_date>
+      <news:title>Netflix offers a selection of South Korean films for streaming</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/scott-jennings-directs-profanity-at-panelist-during-cnn-debate-over-</loc>
     <news:news>
       <news:publication>
@@ -782,17 +793,6 @@
       </news:publication>
       <news:publication_date>2026-05-01T05:27:39.000Z</news:publication_date>
       <news:title>Barcelona vs Liverpool Kenya: Inside 2025 Talanta Stadium Plans</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/nbc-stars-and-creators-attend-emmy-season-kick-off-luncheon</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T04:05:39.000Z</news:publication_date>
-      <news:title>NBC stars and creators attend Emmy season kick-off luncheon</news:title>
     </news:news>
   </url>
 </urlset>
