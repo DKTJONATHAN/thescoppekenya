@@ -6,7 +6,7 @@ slug: from-maua-church-girl-to-east-african-megastar-get-ready-for-bessy-ble
 author: za-ndani
 authorUrl: "https://zandani.co.ke/author/za-ndani"
 category: entertainment
-image: ""
+image: "https://i.postimg.cc/85RkNXTY/img-2-1777840301257.jpg"
 schema: "NewsArticle"
 draft: false
 ---
