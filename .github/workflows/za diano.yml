@@ -56,7 +56,7 @@ jobs:
           full_date_str     = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
-          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
           MAX_AGE_HOURS     = 24
           TARGET_ACCOUNT    = "georgediano"
           MIN_CHARS         = 500
@@ -383,7 +383,7 @@ jobs:
               '"true_story": "The actual trending event", '
               '"diano_commentary": "What he is pointing out"}'
           )
-          interpret_text = gemini_generate(interpret_prompt, "interpret", use_search=True)
+          interpret_text = gemini_generate(interpret_prompt, "interpret", use_search=False)
           interpretation = {}
           if interpret_text:
               try:
@@ -465,7 +465,7 @@ jobs:
               "Do NOT attribute quotes to Diano by name.\n"
               "Make it entertaining, vivid, and unmistakably Kenyan in flavour."
           )
-          article_text = gemini_generate(article_prompt, "article", use_search=True)
+          article_text = gemini_generate(article_prompt, "article", use_search=False)
           if not article_text:
               sys.exit(1)
 
@@ -484,7 +484,7 @@ jobs:
               "No title, byline, or date in the body. No em-dashes.\n\n"
               "DRAFT:\n" + article_text
           )
-          quality_text = gemini_generate(quality_prompt, "article-quality", use_search=True)
+          quality_text = gemini_generate(quality_prompt, "article-quality", use_search=False)
           if quality_text:
               article_text = quality_text
 

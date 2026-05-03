@@ -84,7 +84,7 @@ jobs:
           publish_timestamp = current_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
           today_str = current_utc.strftime("%Y-%m-%d")
           full_date_str = current_utc.strftime("%A, %B %d, %Y")
-          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
           MAX_AGE_HOURS = 24
           SITE_URL = "https://www.bbc.com/sport/football"
           SITE_DOMAIN = "bbc.com"
@@ -283,7 +283,7 @@ jobs:
                       return None
               return None
 
-          article_resp = robust_generate("gemini-2.5-flash", article_prompt, use_search=True)
+          article_resp = robust_generate("gemini-2.5-flash", article_prompt, use_search=False)
           if not article_resp: sys.exit(1)
           article_text = re.sub(r"^```(?:markdown)?\n?", "", article_resp.text).rstrip("```").strip()
 

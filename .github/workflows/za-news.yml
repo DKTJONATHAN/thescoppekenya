@@ -1,7 +1,7 @@
 name: Celestine Nzioka - News Scraper
 on:
   schedule:
-    - cron: '3,33 * * * *'
+    - cron: '0 * * * *'
   workflow_dispatch:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -61,7 +61,7 @@ jobs:
           publish_timestamp = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
           today_str = datetime.datetime.utcnow().strftime('%Y-%m-%d')
           full_date_str = datetime.datetime.utcnow().strftime('%A, %B %d, %Y')
-          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
           MAX_AGE_HOURS = 6
           SITE_URL = 'https://www.kenyans.co.ke/news'
           SITE_DOMAIN = 'kenyans.co.ke'
@@ -198,7 +198,7 @@ jobs:
           memory_path = os.environ.get('MEMORY_FILE')
           memory = json.load(open(memory_path)) if os.path.exists(memory_path) else []
 
-          MAX_ARTICLES_PER_RUN = 3
+          MAX_ARTICLES_PER_RUN = 1
           published = 0
           posts_dir = os.environ.get('POSTS_DIR', 'content/posts'); os.makedirs(posts_dir, exist_ok=True)
           banned_str = ', '.join(BANNED_PHRASES)
@@ -282,7 +282,7 @@ jobs:
                   'BANNED PHRASES (never use): ' + banned_str + '\n'
                   'Factual, direct, newsroom standard. No cliches.'
               )
-              article_text = gemini_generate(article_prompt, 'article', use_search=True)
+              article_text = gemini_generate(article_prompt, 'article', use_search=False)
               if not article_text:
                   print('Gemini failed for this article, skipping'); continue
               article_text = re.sub(r'^```(?:markdown)?\n?', '', article_text).rstrip('```').strip()
@@ -296,7 +296,8 @@ jobs:
 
               final_image = upload_to_imgbb(target_image) if target_image else ''
               tags_yaml = json.dumps(tags)
-              excerpt = meta_description[:160] if meta_description else ''
+              excerpt_words = meta_description.split()[:18] if meta_description else []
+              excerpt = ' '.join(excerpt_words) + ('...' if len(meta_description.split()) > 18 else '')
               # Per-article timestamp so each post sorts uniquely
               this_timestamp = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
               final_file = (
@@ -307,6 +308,9 @@ jobs:
                   'image: "' + final_image + '"\n'
                   'category: "News"\n'
                   'date: "' + this_timestamp + '"\n'
+                  'authorUrl: "https://zandani.co.ke/author/celestine-nzioka"\n'
+                  'dateModified: "' + this_timestamp + '"\n'
+                  'schema: "NewsArticle"\n'
                   'description: "' + meta_description.replace('"', "'") + '"\n'
                   'excerpt: "' + excerpt.replace('"', "'") + '"\n'
                   'tags: ' + tags_yaml + '\n'

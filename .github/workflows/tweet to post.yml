@@ -60,7 +60,7 @@ jobs:
           full_date_str     = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
-          MODELS_TO_TRY     = ["gemini-2.5-flash", "gemini-2.0-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
 
           NITTER_INSTANCES = [
               "https://nitter.net",
@@ -357,7 +357,7 @@ jobs:
               '"true_story": "The actual trending event in plain language", ' +
               '"tweet_commentary": "What they are really pointing out or joking about"}' 
           )
-          interpret_text = gemini_generate(interpret_prompt, "interpret", use_search=True)
+          interpret_text = gemini_generate(interpret_prompt, "interpret", use_search=False)
           interpretation = {}
           if interpret_text:
               try:
@@ -441,7 +441,7 @@ jobs:
               "Write as if Zed Mogaka and Za Ndani gathered this story directly.\n"
               "Make it entertaining, vivid, and unmistakably Kenyan in flavour."
           )
-          article_text = gemini_generate(article_prompt, "article", use_search=True)
+          article_text = gemini_generate(article_prompt, "article", use_search=False)
           if not article_text:
               sys.exit(1)
 
@@ -460,7 +460,7 @@ jobs:
               "No title, byline, or date in the body. No em-dashes.\n\n"
               "DRAFT:\n" + article_text
           )
-          quality_text = gemini_generate(quality_prompt, "article-quality", use_search=True)
+          quality_text = gemini_generate(quality_prompt, "article-quality", use_search=False)
           if quality_text:
               article_text = quality_text
 

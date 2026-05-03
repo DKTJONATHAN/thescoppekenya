@@ -69,7 +69,7 @@ jobs:
           publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
-          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
 
           BANNED_PHRASES = ["sasa basi","melting the pot","spill the tea","tea is hot","grab your popcorn","buckle up","breaking news","dive in","delve into","moreover","furthermore","in conclusion","it's worth noting","a testament to","navigating the landscape","in today's digital age","tapestry"]
 
@@ -299,7 +299,7 @@ jobs:
               "Factual, direct, cynical sports context. No cliches."
           )
 
-          article_text = gemini_generate(article_prompt, "article", use_search=True)
+          article_text = gemini_generate(article_prompt, "article", use_search=False)
           if not article_text: sys.exit(1)
 
           article_text = re.sub(r"^```(?:markdown)?\n?", "", article_text).rstrip("```").strip()

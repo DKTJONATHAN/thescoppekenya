@@ -105,7 +105,7 @@ jobs:
           SITE_BASE_URL     = "https://zandani.co.ke"
           FALLBACK_IMAGE    = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
 
-          MODELS = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
 
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot",

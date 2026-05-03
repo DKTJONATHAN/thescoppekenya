@@ -134,7 +134,7 @@ jobs:
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
           
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
           
           script_prompt = (
               "You are the dynamic, lively host of 'Za Ndani: The Podcast' - a premier Kenyan news and entertainment wrap-up.\n"
