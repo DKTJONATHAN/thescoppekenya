@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/living-in-separate-houses-is-the-secret-to-larry-madowo-and-edith-ki</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T11:08:28.000Z</news:publication_date>
+      <news:title>Living in separate houses is the secret to Larry Madowo and Edith Kimani’s relationship longevity</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/ruto-ksh10m-content-creators-fund</loc>
     <news:news>
       <news:publication>
@@ -749,72 +760,6 @@
       </news:publication>
       <news:publication_date>2026-05-01T11:58:16.000Z</news:publication_date>
       <news:title>The Echo of San Domingo: Spain&apos;s 2023 World Cup Tactics</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/15-wage-hike-boost-your-monthly-pay-now</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T11:42:45.000Z</news:publication_date>
-      <news:title>15% Wage Hike: Boost Your Monthly Pay Now</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/nairobi-expressway-toll-waiver-floods</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T11:41:29.000Z</news:publication_date>
-      <news:title>Confirmed: Nairobi Expressway Toll Fees Waived Amid Flooding</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/jalango-nairobi-matatu-culture</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T11:35:49.000Z</news:publication_date>
-      <news:title>Jalang’o Nairobi Matatu Culture Case Moves to Court</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/the-irony-of-kenyan-teachers-seizing-student-iphones-while-using-bud</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T11:33:47.000Z</news:publication_date>
-      <news:title>The Irony Of Kenyan Teachers Seizing Student iPhones While Using Budget Infinix Phones</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/hbo-restores-lanterns-trailer-after-music-license-expiration</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T11:15:57.000Z</news:publication_date>
-      <news:title>HBO restores Lanterns trailer after music license expiration</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/home-afrika-reports-profit-as-liabilities-exceed-total-assets</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T10:58:46.000Z</news:publication_date>
-      <news:title>Home Afrika reports profit as liabilities exceed total assets</news:title>
     </news:news>
   </url>
 </urlset>
