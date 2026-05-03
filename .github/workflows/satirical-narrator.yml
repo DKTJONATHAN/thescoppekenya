@@ -472,7 +472,7 @@ jobs:
                   f'tags: {tags_json}',
                   f'canonical: "{canonical}"',
                   f'date: "{publish_timestamp}"',
-                  f'authorUrl: "https://zandani.co.ke/author/narrator-name"',
+                  f'authorUrl: "https://zandani.co.ke/author/{NARRATOR_NAME.lower().replace(" ", "-")}"',
                   f'dateModified: "{publish_timestamp}"',
                   f'schema: "NewsArticle"',
                   '---',

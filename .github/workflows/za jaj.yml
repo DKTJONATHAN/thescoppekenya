@@ -441,7 +441,7 @@ jobs:
                   f'tags: {tags_json}',
                   f'canonical: "{canonical}"',
                   f'date: "{publish_timestamp}"',
-                  f'authorUrl: "https://zandani.co.ke/author/columnist-name"',
+                  f'authorUrl: "https://zandani.co.ke/author/{COLUMNIST_NAME.lower().replace(" ", "-")}"',
                   f'dateModified: "{publish_timestamp}"',
                   f'schema: "NewsArticle"',
                   "---",
