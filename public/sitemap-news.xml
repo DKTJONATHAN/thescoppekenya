@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/world-cup-2026-fans-face-eye-watering-22-000-bill-for-most-expensive</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T08:28:03.000Z</news:publication_date>
+      <news:title>World Cup 2026: Fans Face &apos;Eye-Watering&apos; £22,000 Bill for Most Expensive Tournament Ever</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/james-orengo-burial-chaos</loc>
     <news:news>
       <news:publication>
@@ -782,17 +793,6 @@
       </news:publication>
       <news:publication_date>2026-05-01T08:34:26.000Z</news:publication_date>
       <news:title>Arne Slot drops Mohamed Salah &apos;send off&apos; bombshell and delivers Alisson injury update ahead of Man Utd clash</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/umulkheir-harun-addresses-the-escalating-border-conflict-and-banditr</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T08:25:52.000Z</news:publication_date>
-      <news:title>Umulkheir Harun addresses the escalating border conflict and banditry in Kitui</news:title>
     </news:news>
   </url>
 </urlset>
