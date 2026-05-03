@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/jodie-sweetin-says-she-lives-a-normal-life-and-received-a-one-cent-r</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T06:33:33.000Z</news:publication_date>
+      <news:title>Jodie Sweetin says she lives a normal life and received a one-cent residual check for Full House</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/mbita-fishermens-grim-catch-a-harvest-of-iron</loc>
     <news:news>
       <news:publication>
@@ -782,28 +793,6 @@
       </news:publication>
       <news:publication_date>2026-05-01T07:39:48.000Z</news:publication_date>
       <news:title>Millie Odhiambo Responds to Political Jealousy Accusations</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/original-blair-witch-stars-and-directors-join-reboot-as-executive-pr</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T06:43:56.000Z</news:publication_date>
-      <news:title>Original Blair Witch stars and directors join reboot as executive producers</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/the-royal-decree-of-the-labeled-scroll</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T06:15:35.000Z</news:publication_date>
-      <news:title>The Royal Decree of the Labeled Scroll</news:title>
     </news:news>
   </url>
 </urlset>
