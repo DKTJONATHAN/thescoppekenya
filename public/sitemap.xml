@@ -96,6 +96,18 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://zandani.co.ke/article/knh-digital-system-delays</loc>
+    <lastmod>2026-05-03T15:23:51.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/sakaja-nairobi-riparian-land-approvals</loc>
+    <lastmod>2026-05-03T15:11:56.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/storage-wars-star-darrell-sheets-found-dead-of-apparent-suicide</loc>
     <lastmod>2026-05-03T14:57:26.000Z</lastmod>
     <changefreq>daily</changefreq>
@@ -5664,20 +5676,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zandani.co.ke/article/buvati-tears-shameless-spectacle</loc>
-    <lastmod>2026-03-25T22:45:03.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zandani.co.ke/article/kenha-reopens-globe-roundabout-following-completion-of-bridge-works</loc>
     <lastmod>2026-03-25T20:57:05.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/court-of-appeal-rejects-bid-to-freeze-ksh-537-million-linked-to-mike</loc>
-    <lastmod>2026-03-25T19:57:03.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -5766,32 +5766,14 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zandani.co.ke/article/cofek-calls-for-suspension-of-new-petroleum-development-levy</loc>
-    <lastmod>2026-03-25T10:10:58.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zandani.co.ke/article/openai-shuts-down-sora-video-generation-app</loc>
     <lastmod>2026-03-25T09:12:16.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zandani.co.ke/article/cabinet-secretary-salim-mvurya-assures-timely-payment-of-afcon-hosti</loc>
-    <lastmod>2026-03-25T09:10:43.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zandani.co.ke/article/wayne-rooney-predicts-arsenal-will-win-premier-league-title-despite-</loc>
     <lastmod>2026-03-25T08:34:18.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/boutross-munene-reveals-girlfriend-on-social-media</loc>
-    <lastmod>2026-03-25T08:04:25.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -5820,20 +5802,20 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zandani.co.ke/article/vivo-y31d-kenya-price-power-play-or-paltry-ploy</loc>
-    <lastmod>2026-03-24T22:39:22.000Z</lastmod>
+    <loc>https://zandani.co.ke/article/nairobi-water-restores-supply-to-six-estates-after-pipeline-repairs</loc>
+    <lastmod>2026-03-16T20:59:22.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zandani.co.ke/article/sidian-bank-reports-ksh-1-73-billion-profit-as-public-sector-deposit</loc>
-    <lastmod>2026-03-24T10:36:57.000Z</lastmod>
+    <loc>https://zandani.co.ke/article/moja-expressway-warns-motorists-against-overloading-vehicles-on-nair</loc>
+    <lastmod>2026-03-16T19:30:32.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zandani.co.ke/article/tanzania-and-other-african-nations-secure-fuel-supplies-from-dangote</loc>
-    <lastmod>2026-03-24T09:10:36.000Z</lastmod>
+    <loc>https://zandani.co.ke/article/madagascar-appoints-mamitiana-rajaonarison-as-new-prime-minister</loc>
+    <lastmod>2026-03-16T18:40:02.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -5900,6 +5882,12 @@
   <url>
     <loc>https://zandani.co.ke/article/esther-musila-marks-relationship-anniversary-with-guardian-angel</loc>
     <lastmod>2026-03-16T06:50:52.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/krg-cites-safety-concerns-for-keeping-children-away-from-safari-rall</loc>
+    <lastmod>2026-03-16T06:48:20.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -7153,7 +7141,43 @@
   </url>
   <url>
     <loc>https://zandani.co.ke/article/who-where-how</loc>
-    <lastmod>2026-05-03T15:09:21.592Z</lastmod>
+    <lastmod>2026-05-03T15:24:21.446Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/buvati-tears-shameless-spectacle</loc>
+    <lastmod>2026-03-25T22:45:03.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/court-of-appeal-rejects-bid-to-freeze-ksh-537-million-linked-to-mike</loc>
+    <lastmod>2026-03-25T19:57:03.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/cofek-calls-for-suspension-of-new-petroleum-development-levy</loc>
+    <lastmod>2026-03-25T10:10:58.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/cabinet-secretary-salim-mvurya-assures-timely-payment-of-afcon-hosti</loc>
+    <lastmod>2026-03-25T09:10:43.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/boutross-munene-reveals-girlfriend-on-social-media</loc>
+    <lastmod>2026-03-25T08:04:25.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/vivo-y31d-kenya-price-power-play-or-paltry-ploy</loc>
+    <lastmod>2026-03-24T22:39:22.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -7254,8 +7278,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zandani.co.ke/article/sidian-bank-reports-ksh-1-73-billion-profit-as-public-sector-deposit</loc>
+    <lastmod>2026-03-24T10:36:57.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenya-selected-to-host-fifa-women-s-series-matches</loc>
     <lastmod>2026-03-24T10:10:56.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/tanzania-and-other-african-nations-secure-fuel-supplies-from-dangote</loc>
+    <lastmod>2026-03-24T09:10:36.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -8382,26 +8418,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zandani.co.ke/article/nairobi-water-restores-supply-to-six-estates-after-pipeline-repairs</loc>
-    <lastmod>2026-03-16T20:59:22.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zandani.co.ke/article/nigerian-artists-generated-60-billion-in-spotify-revenue</loc>
     <lastmod>2026-03-16T19:35:13.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/moja-expressway-warns-motorists-against-overloading-vehicles-on-nair</loc>
-    <lastmod>2026-03-16T19:30:32.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/madagascar-appoints-mamitiana-rajaonarison-as-new-prime-minister</loc>
-    <lastmod>2026-03-16T18:40:02.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -8474,12 +8492,6 @@
   <url>
     <loc>https://zandani.co.ke/article/somizi-mhlongo-empire-controversies-reality-tv-future</loc>
     <lastmod>2026-03-16T07:46:13.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/krg-cites-safety-concerns-for-keeping-children-away-from-safari-rall</loc>
-    <lastmod>2026-03-16T06:48:20.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
