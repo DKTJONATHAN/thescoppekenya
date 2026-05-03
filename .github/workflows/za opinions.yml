@@ -80,7 +80,7 @@ jobs:
           publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
           MAX_AGE_HOURS = 24
           SITE_URL = "https://www.the-star.co.ke/opinion/"
           SITE_DOMAIN = "the-star.co.ke"
@@ -342,7 +342,7 @@ jobs:
               "BANNED PHRASES (never use): " + banned_str + "\n"
               "Analytical, bold, opinion-driven. No cliches."
           )
-          article_text = gemini_generate(article_prompt, "article", use_search=True)
+          article_text = gemini_generate(article_prompt, "article", use_search=False)
           if not article_text: sys.exit(1)
 
           article_text = re.sub(r"^```(?:markdown)?\n?", "", article_text).rstrip("```").strip()
@@ -360,6 +360,9 @@ jobs:
               'image: "' + final_image + '"',
               'category: "Opinions"',
               'date: "' + publish_timestamp + '"',
+              'authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"',
+              'dateModified: "' + publish_timestamp + '"',
+              'schema: "NewsArticle"',
               "---",
               article_text,
               ""

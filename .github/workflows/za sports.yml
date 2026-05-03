@@ -84,7 +84,7 @@ jobs:
           publish_timestamp = current_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
           today_str = current_utc.strftime("%Y-%m-%d")
           full_date_str = current_utc.strftime("%A, %B %d, %Y")
-          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
           MAX_AGE_HOURS = 24
           SITE_URL = "https://www.bbc.com/sport/football"
           SITE_DOMAIN = "bbc.com"
@@ -283,7 +283,7 @@ jobs:
                       return None
               return None
 
-          article_resp = robust_generate("gemini-2.5-flash", article_prompt, use_search=True)
+          article_resp = robust_generate("gemini-2.5-flash", article_prompt, use_search=False)
           if not article_resp: sys.exit(1)
           article_text = re.sub(r"^```(?:markdown)?\n?", "", article_resp.text).rstrip("```").strip()
 
@@ -301,7 +301,7 @@ jobs:
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           filepath = os.path.join(os.environ.get("POSTS_DIR"), f"{today_str}-{slug}.md")
           with open(filepath, "w", encoding="utf-8") as f:
-              f.write(f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\ndescription: \"{meta_description}\"\nauthor: \"Jona Munyi\"\nimage: \"{final_image}\"\ncategory: \"Sports\"\ntags: {json.dumps(article_tags)}\ndate: \"{publish_timestamp}\"\n---\n{article_text}")
+              f.write(f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\ndescription: \"{meta_description}\"\nauthor: \"Jona Munyi\"\nauthorUrl: \"https://zandani.co.ke/author/jona-munyi\"\nimage: \"{final_image}\"\ncategory: \"Sports\"\ntags: {json.dumps(article_tags)}\ndate: \"{publish_timestamp}\"\ndateModified: \"{publish_timestamp}\"\nschema: \"NewsArticle\"\n---\n{article_text}")
           memory.append(final_hash)
           with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
           print(f"Saved: {filepath}")

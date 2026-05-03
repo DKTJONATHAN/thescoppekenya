@@ -80,7 +80,7 @@ jobs:
           publish_timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
           today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           full_date_str = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
-          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
           MAX_AGE_HOURS = 12
           SITE_URL = "https://kenyanwallstreet.com/"
           SITE_DOMAIN = "kenyanwallstreet.com"
@@ -309,7 +309,7 @@ jobs:
               "BANNED PHRASES (never use): " + banned_str + "\n"
               "Data-driven, analytical, market-focused. No cliches."
           )
-          article_text = gemini_generate(article_prompt, "article", use_search=True)
+          article_text = gemini_generate(article_prompt, "article", use_search=False)
           if not article_text: sys.exit(1)
 
           article_text = re.sub(r"^```(?:markdown)?\n?", "", article_text).rstrip("```").strip()
@@ -327,6 +327,9 @@ jobs:
               'image: "' + final_image + '"',
               'category: "Business"',
               'date: "' + publish_timestamp + '"',
+              'authorUrl: "https://zandani.co.ke/author/grace-mkamburi"',
+              'dateModified: "' + publish_timestamp + '"',
+              'schema: "NewsArticle"',
               "---",
               article_text,
               ""

@@ -84,7 +84,7 @@ jobs:
           full_date_str     = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
-          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
           MAX_AGE_HOURS     = 10
           SITE_URL          = "https://www.ghafla.co.ke/ke/"
           SITE_DOMAIN       = "ghafla.co.ke"
@@ -387,7 +387,7 @@ jobs:
               "If attribution is needed, omit the source entirely.\n"
               "Entertaining, vivid, Kenyan pop culture. No cliches."
           )
-          article_text = gemini_generate(article_prompt, "article", use_search=True)
+          article_text = gemini_generate(article_prompt, "article", use_search=False)
           if not article_text: sys.exit(1)
 
           article_text = re.sub(r"^```(?:markdown)?\n?", "", article_text).rstrip("```").strip()
@@ -456,6 +456,9 @@ jobs:
               'tags: ' + tags_json,
               'canonical: "' + canonical_url + '"',
               'date: "' + publish_timestamp + '"',
+              'authorUrl: "https://zandani.co.ke/author/za-ndani"',
+              'dateModified: "' + publish_timestamp + '"',
+              'schema: "NewsArticle"',
               "---",
               article_text,
               ""

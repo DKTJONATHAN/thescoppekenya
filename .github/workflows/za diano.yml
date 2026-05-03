@@ -12,7 +12,6 @@ env:
   DEFAULT_BRANCH: main
   POSTS_DIR: content/posts
   MEMORY_FILE: .github/memory_georgediano.json
-  MAX_AGE_HOURS: "24"
 jobs:
   scrape-and-publish:
     runs-on: ubuntu-22.04
@@ -33,7 +32,7 @@ jobs:
       - name: Install Python packages
         run: |
           python -m pip install --upgrade pip
-          pip install requests "google-genai>=1.51.0" beautifulsoup4 lxml python-dateutil Pillow
+          pip install requests google-genai beautifulsoup4 lxml python-dateutil Pillow
 
       - name: Scrape Syndication and publish article
         env:
@@ -43,7 +42,6 @@ jobs:
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
-          MAX_AGE_HOURS: ${{ env.MAX_AGE_HOURS }}
         run: |
           python << 'PYEOF'
           import os, json, datetime, requests, re, time, sys, hashlib, itertools, base64, random, io
@@ -58,14 +56,10 @@ jobs:
           full_date_str     = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
-
-          # FIX 1: gemini-3-pro-preview shut down March 9 2026 → gemini-3.1-pro-preview
-          MODELS_TO_TRY = ["gemini-3.1-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
-
-          # FIX 2: MAX_AGE_HOURS from env — runs every 2h so 24h gives 12 cycles of buffer
-          MAX_AGE_HOURS  = int(os.environ.get("MAX_AGE_HOURS", "24"))
-          TARGET_ACCOUNT = "georgediano"
-          MIN_CHARS      = 500
+          MODELS_TO_TRY = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
+          MAX_AGE_HOURS     = 24
+          TARGET_ACCOUNT    = "georgediano"
+          MIN_CHARS         = 500
 
           DIANO_CONTEXT = (
               "ABOUT @georgediano (George T. Diano):\n"
@@ -95,13 +89,12 @@ jobs:
               if not api_key or not image_url:
                   return image_url
 
-              # FIX 3: urllib.parse moved inline — no top-level import needed
-              import urllib.parse
               if image_url.startswith("https://media/"):
                   image_url = image_url.replace("https://media/", "https://pbs.twimg.com/media/")
               elif image_url.startswith("media/"):
                   image_url = "https://pbs.twimg.com/" + image_url
               elif image_url.startswith("/pic/"):
+                  import urllib.parse
                   image_url = "https://pbs.twimg.com/" + urllib.parse.unquote(image_url).replace("/pic/", "", 1)
 
               try:
@@ -120,7 +113,6 @@ jobs:
                   )
                   if res.status_code == 200:
                       return res.json()['data']['url']
-                  print(f"ImgBB non-200: {res.status_code}")
                   return image_url
               except Exception as e:
                   print(f"ImgBB/WebP error: {e}")
@@ -136,6 +128,7 @@ jobs:
           ]
 
           def parse_tweet_entries(items, source_label):
+              # Normalize syndication-style tweet objects into our standard list.
               tweets = []
               now_utc = datetime.datetime.now(datetime.timezone.utc)
               for item in items:
@@ -146,10 +139,7 @@ jobs:
                       continue
 
                   text = tweet_obj.get('text', "")
-
-                  # FIX 4: MIN_CHARS=500 silently drops most tweets — Diano often posts 80-300 char satirical
-                  # observations. Lowered to 80 chars; the Gemini interpret step handles short cryptic posts.
-                  if len(text) < 80:
+                  if len(text) < MIN_CHARS:
                       continue
 
                   tweet_id = tweet_obj.get('id_str') or hashlib.md5(text.encode()).hexdigest()
@@ -200,33 +190,10 @@ jobs:
                   if req.status_code == 429:
                       print("Syndication rate-limited (429). Falling back to Nitter.")
                       return []
-                  if req.status_code != 200:
-                      print(f"Syndication HTTP {req.status_code}. Falling back to Nitter.")
-                      return []
+                  req.raise_for_status()
 
                   soup = BeautifulSoup(req.text, "html.parser")
-
-                  # FIX 5: syndication.twitter.com now serves JSON directly in many cases;
-                  # try raw JSON parse first before looking for __NEXT_DATA__
-                  raw_json = None
-                  try:
-                      raw_json = req.json()
-                  except Exception:
-                      pass
-
-                  if raw_json:
-                      items = raw_json.get('timeline', {}).get('entries', [])
-                      if not items:
-                          # some responses nest differently
-                          items = raw_json.get('entries', [])
-                      print(f'Syndication (direct JSON) returned {len(items)} raw entries')
-                      return parse_tweet_entries(items, "syndication-json")
-
                   data_div = soup.find('div', id='__NEXT_DATA__')
-                  if not data_div:
-                      script_tag = soup.find('script', id='__NEXT_DATA__')
-                      if script_tag:
-                          data_div = script_tag
                   if not data_div:
                       print("Syndication: NEXT_DATA missing. Falling back to Nitter.")
                       return []
@@ -241,7 +208,7 @@ jobs:
                   return []
 
           def get_nitter_tweets():
-              import urllib.parse as urlparse
+              # Try each Nitter instance, return tweets from the first one that responds with usable RSS.
               headers = {
                   'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
                   'Accept': 'application/rss+xml, application/xml, text/xml, */*'
@@ -257,7 +224,7 @@ jobs:
                           continue
                       body = req.text or ""
                       if "<rss" not in body and "<feed" not in body:
-                          print("  -> Not an RSS feed, skipping")
+                          print("  -> Not an RSS feed (likely error page), skipping")
                           continue
 
                       soup = BeautifulSoup(body, "lxml-xml")
@@ -296,7 +263,7 @@ jobs:
                               if "/pic/" in img_url:
                                   m = re.search(r'/pic/(.+)$', img_url)
                                   if m:
-                                      img_url = "https://pbs.twimg.com/" + urlparse.unquote(m.group(1))
+                                      img_url = "https://pbs.twimg.com/" + requests.utils.unquote(m.group(1))
 
                           synthetic_entries.append({
                               "tweet": {
@@ -355,7 +322,7 @@ jobs:
                           print(f"Gemini OK ({model}): {label}")
                           return result
                       except Exception as e:
-                          if any(x in str(e).lower() for x in ["429","quota","rate","503","unavailable","500","overloaded","resource_exhausted"]):
+                          if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower() or "503" in str(e) or "unavailable" in str(e).lower() or "500" in str(e) or "overloaded" in str(e).lower() or "resource_exhausted" in str(e).lower():
                               time.sleep(random.uniform(20, 40))
                               current_key = next(key_cycle)
                               client = genai.Client(api_key=current_key)
@@ -376,7 +343,7 @@ jobs:
                       with open(os.path.join(posts_dir, fn), 'r', encoding='utf-8') as f:
                           content = f.read()
                       title_m = re.search(r'title:\s*"(.*?)"', content)
-                      slug_m  = re.search(r'slug:\s*"(.*?)"', content)
+                      slug_m = re.search(r'slug:\s*"(.*?)"', content)
                       if title_m and slug_m:
                           links.append(f'- [{title_m.group(1)}]({SITE_BASE_URL}/article/{slug_m.group(1)})')
                   except Exception:
@@ -404,8 +371,6 @@ jobs:
               print("All qualifying tweets already published.")
               sys.exit(0)
 
-          print(f"Processing tweet: {chosen['text'][:120]}...")
-
           interpret_prompt = (
               DIANO_CONTEXT + "\n\n"
               "DIANO'S POST:\n" + chosen["text"] + "\n\n"
@@ -414,19 +379,18 @@ jobs:
               "2. Search Google for the ACTUAL TRENDING KENYAN STORY he is referencing.\n"
               "3. What is the true event? (Summarize it plainly)\n"
               "4. What is Diano's core commentary or joke about this event?\n"
-              '{"tone_identified": "satirical|slang|literal", '
+              'Output ONLY JSON: {"tone_identified": "satirical|slang|literal", '
               '"true_story": "The actual trending event", '
               '"diano_commentary": "What he is pointing out"}'
           )
-          interpret_text = gemini_generate(interpret_prompt, "interpret", use_search=True)
+          interpret_text = gemini_generate(interpret_prompt, "interpret", use_search=False)
           interpretation = {}
           if interpret_text:
               try:
                   clean = re.sub(r'^```json?\s*|\s*```$', '', interpret_text, flags=re.I | re.DOTALL).strip()
                   interpretation = json.loads(clean)
               except Exception as e:
-                  print(f"Interpret parse error: {e} — using raw text as true_story")
-                  interpretation = {"true_story": chosen["text"][:500], "diano_commentary": ""}
+                  print(f"Interpret parse error: {e}")
 
           current_key = next(key_cycle)
           client = genai.Client(api_key=current_key)
@@ -501,7 +465,7 @@ jobs:
               "Do NOT attribute quotes to Diano by name.\n"
               "Make it entertaining, vivid, and unmistakably Kenyan in flavour."
           )
-          article_text = gemini_generate(article_prompt, "article", use_search=True)
+          article_text = gemini_generate(article_prompt, "article", use_search=False)
           if not article_text:
               sys.exit(1)
 
@@ -520,7 +484,7 @@ jobs:
               "No title, byline, or date in the body. No em-dashes.\n\n"
               "DRAFT:\n" + article_text
           )
-          quality_text = gemini_generate(quality_prompt, "article-quality", use_search=True)
+          quality_text = gemini_generate(quality_prompt, "article-quality", use_search=False)
           if quality_text:
               article_text = quality_text
 
@@ -569,10 +533,10 @@ jobs:
 
           final_image = upload_to_imgbb(chosen["image"]) if chosen.get("image") else ""
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
-          canonical  = f"{SITE_BASE_URL}/article/{slug}"
+          canonical = f"{SITE_BASE_URL}/article/{slug}"
           author_url = f"{SITE_BASE_URL}/author/zed-mogaka"
-          tags_json  = json.dumps(article_tags)
-          posts_dir  = os.environ.get("POSTS_DIR", "content/posts")
+          tags_json = json.dumps(article_tags)
+          posts_dir = os.environ.get("POSTS_DIR", "content/posts")
           os.makedirs(posts_dir, exist_ok=True)
 
           lines = [
@@ -587,6 +551,9 @@ jobs:
               'tags: ' + tags_json,
               'canonical: "' + canonical + '"',
               'date: "' + publish_timestamp + '"',
+              'authorUrl: "https://zandani.co.ke/author/zed-mogaka"',
+              'dateModified: "' + publish_timestamp + '"',
+              'schema: "NewsArticle"',
               "---",
               article_text,
               ""

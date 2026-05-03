@@ -165,7 +165,7 @@ jobs:
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
 
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
 
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot",
@@ -780,7 +780,7 @@ jobs:
           print(f'\nTotal research data: {len(research_text)} chars')
 
           # â”€â”€ Gemini setup â€” EXACT pattern from working workflow â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-          MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
 
           raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY","GEMINI_API_KEY","GEMINI_API_KEY1"] if os.environ.get(k)]
           if not raw_keys:
@@ -897,10 +897,13 @@ jobs:
               '---\n'
               f'title: "{final_title.replace(chr(34), chr(39))}"\n'
               f'date: {publish_timestamp}\n'
+              f'dateModified: {publish_timestamp}\n'
               f'slug: {slug}\n'
               f'author: {author_slug}\n'
+              f'authorUrl: "https://zandani.co.ke/author/{author_slug}"\n'
               f'category: {category.lower()}\n'
               f'image: "{cover_image}"\n'
+              'schema: "NewsArticle"\n'
               'draft: false\n'
               '---\n'
           )

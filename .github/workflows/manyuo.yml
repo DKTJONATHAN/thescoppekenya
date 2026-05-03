@@ -226,7 +226,7 @@ jobs:
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
 
-          MODELS_TO_TRY = ["gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
+          MODELS_TO_TRY = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
 
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "tea is hot",
@@ -935,6 +935,9 @@ jobs:
               f'title: "{title}"',
               f'slug: "{slug}"',
               f'date: "{created_timestamp}"',
+              f'authorUrl: "https://zandani.co.ke/author/{author.lower().replace(" ", "-")}"',
+              f'dateModified: "{created_timestamp}"',
+              f'schema: "NewsArticle"',
           ]
           if is_scheduled:
               frontmatter_lines.append(f'publishDate: "{publish_timestamp}"')
