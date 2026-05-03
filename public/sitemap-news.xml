@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/title-race-chaos-celtic-denied-by-controversial-handball-goal-as-ihe</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T12:37:07.000Z</news:publication_date>
+      <news:title>Title Race Chaos: Celtic Denied by Controversial &apos;Handball&apos; Goal as Iheanacho and Tierney Return</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/police-intercept-ammunition-bus</loc>
     <news:news>
       <news:publication>
