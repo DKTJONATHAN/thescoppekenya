@@ -4,6 +4,39 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/police-intercept-ammunition-bus</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T14:20:04.000Z</news:publication_date>
+      <news:title>Confirmed: Police Intercept Ammunition in Garissa-Nairobi Bus</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/kangemi-slip-road-cracks</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T14:07:47.000Z</news:publication_date>
+      <news:title>Kangemi Slip Road Cracks Exposed: Residents Raise Alarm</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/rigathi-gachagua-2027-unseat-ruto</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T13:56:16.000Z</news:publication_date>
+      <news:title>How Rigathi Gachagua 2027 Strategy Will Unseat President Ruto</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/academy-updates-rules-to-require-human-authorship-and-permit-multipl</loc>
     <news:news>
       <news:publication>
@@ -23,17 +56,6 @@
       </news:publication>
       <news:publication_date>2026-05-03T12:37:07.000Z</news:publication_date>
       <news:title>Title Race Chaos: Celtic Denied by Controversial &apos;Handball&apos; Goal as Iheanacho and Tierney Return</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/police-intercept-ammunition-bus</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-03T12:31:13.000Z</news:publication_date>
-      <news:title>Confirmed: Police Intercept Ammunition Bus in Kanyonyoo</news:title>
     </news:news>
   </url>
   <url>
@@ -793,28 +815,6 @@
       </news:publication>
       <news:publication_date>2026-05-01T15:17:42.000Z</news:publication_date>
       <news:title>President William Ruto Raises Alarm Over 1.8 Million Unregistered Voters in Rift Valley Stronghold</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/finance-bill-2026-new-taxes</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T14:03:44.000Z</news:publication_date>
-      <news:title>Inside Finance Bill 2026: New Taxes on Phones and Betting</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/mbavu-destroyer-mocks-majembe</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T13:57:45.000Z</news:publication_date>
-      <news:title>Mbavu Destroyer Mocks Majembe Over Plan to Sell Prize Car</news:title>
     </news:news>
   </url>
 </urlset>
