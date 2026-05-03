@@ -26,6 +26,17 @@
     </news:news>
   </url>
   <url>
+    <loc>https://zandani.co.ke/article/mwai-kibaki-s-road-infrastructure-record-in-rift-valley-exceeds-the-</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T15:07:08.000Z</news:publication_date>
+      <news:title>Mwai Kibaki’s road infrastructure record in Rift Valley exceeds the combined legacies of Daniel Moi and William Ruto</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/storage-wars-star-darrell-sheets-found-dead-of-apparent-suicide</loc>
     <news:news>
       <news:publication>
@@ -837,28 +848,6 @@
       </news:publication>
       <news:publication_date>2026-05-01T17:15:01.000Z</news:publication_date>
       <news:title>President William Ruto Urges Rift Valley Stronghold to Register as Voters for 2027 Re-election</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/finance-bill-2026-car-tax</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T15:35:31.000Z</news:publication_date>
-      <news:title>Inside Finance Bill 2026 Plan to Tax Classic Cars 50%</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/2mbili-new-rate-card</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T15:29:58.000Z</news:publication_date>
-      <news:title>2Mbili Rate Card Ranges From Ksh 2K to Ksh 300K</news:title>
     </news:news>
   </url>
 </urlset>
