@@ -301,7 +301,7 @@ jobs:
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           filepath = os.path.join(os.environ.get("POSTS_DIR"), f"{today_str}-{slug}.md")
           with open(filepath, "w", encoding="utf-8") as f:
-              f.write(f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\ndescription: \"{meta_description}\"\nauthor: \"Jona Munyi\"\nimage: \"{final_image}\"\ncategory: \"Sports\"\ntags: {json.dumps(article_tags)}\ndate: \"{publish_timestamp}\"\n---\n{article_text}")
+              f.write(f"---\ntitle: \"{final_title}\"\nslug: \"{slug}\"\ndescription: \"{meta_description}\"\nauthor: \"Jona Munyi\"\nauthorUrl: \"https://zandani.co.ke/author/jona-munyi\"\nimage: \"{final_image}\"\ncategory: \"Sports\"\ntags: {json.dumps(article_tags)}\ndate: \"{publish_timestamp}\"\ndateModified: \"{publish_timestamp}\"\nschema: \"NewsArticle\"\n---\n{article_text}")
           memory.append(final_hash)
           with open(memory_path, 'w') as f: json.dump(memory[-300:], f)
           print(f"Saved: {filepath}")
