@@ -327,6 +327,9 @@ jobs:
               'image: "' + final_image + '"',
               'category: "Business"',
               'date: "' + publish_timestamp + '"',
+              'authorUrl: "https://zandani.co.ke/author/grace-mkamburi"',
+              'dateModified: "' + publish_timestamp + '"',
+              'schema: "NewsArticle"',
               "---",
               article_text,
               ""

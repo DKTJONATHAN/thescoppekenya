@@ -325,6 +325,9 @@ jobs:
               'image: "' + final_image + '"',
               'category: "Technology"',
               'date: "' + publish_timestamp + '"',
+              'authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"',
+              'dateModified: "' + publish_timestamp + '"',
+              'schema: "NewsArticle"',
               "---",
               article_text,
               ""

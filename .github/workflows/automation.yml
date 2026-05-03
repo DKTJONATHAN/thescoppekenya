@@ -325,6 +325,9 @@ jobs:
               'image: "' + final_image + '"',
               'category: "Global News"',
               'date: "' + publish_timestamp + '"',
+              'authorUrl: "https://zandani.co.ke/author/sports-desk"',
+              'dateModified: "' + publish_timestamp + '"',
+              'schema: "NewsArticle"',
               "---",
               article_text,
               ""

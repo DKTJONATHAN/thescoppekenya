@@ -236,6 +236,9 @@ jobs:
               'image: "' + final_image + '"',
               'category: "Agriculture"',
               'date: "' + publish_timestamp + '"',
+              'authorUrl: "https://zandani.co.ke/author/timothy-muli"',
+              'dateModified: "' + publish_timestamp + '"',
+              'schema: "NewsArticle"',
               "---",
               article_text,
               ""

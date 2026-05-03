@@ -551,6 +551,9 @@ jobs:
               'tags: ' + tags_json,
               'canonical: "' + canonical + '"',
               'date: "' + publish_timestamp + '"',
+              'authorUrl: "https://zandani.co.ke/author/zed-mogaka"',
+              'dateModified: "' + publish_timestamp + '"',
+              'schema: "NewsArticle"',
               "---",
               article_text,
               ""

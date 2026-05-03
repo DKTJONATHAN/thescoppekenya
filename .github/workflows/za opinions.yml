@@ -360,6 +360,9 @@ jobs:
               'image: "' + final_image + '"',
               'category: "Opinions"',
               'date: "' + publish_timestamp + '"',
+              'authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"',
+              'dateModified: "' + publish_timestamp + '"',
+              'schema: "NewsArticle"',
               "---",
               article_text,
               ""

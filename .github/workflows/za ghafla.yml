@@ -456,6 +456,9 @@ jobs:
               'tags: ' + tags_json,
               'canonical: "' + canonical_url + '"',
               'date: "' + publish_timestamp + '"',
+              'authorUrl: "https://zandani.co.ke/author/za-ndani"',
+              'dateModified: "' + publish_timestamp + '"',
+              'schema: "NewsArticle"',
               "---",
               article_text,
               ""

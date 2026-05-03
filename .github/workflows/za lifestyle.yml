@@ -418,6 +418,9 @@ jobs:
               'tags: ' + json.dumps(article_tags),
               'canonical: "' + canonical_url + '"',
               'date: "' + publish_timestamp + '"',
+              'authorUrl: "https://zandani.co.ke/author/jona-munyi"',
+              'dateModified: "' + publish_timestamp + '"',
+              'schema: "NewsArticle"',
               "---",
               article_text,
               ""

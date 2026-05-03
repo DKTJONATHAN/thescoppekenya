@@ -246,6 +246,9 @@ jobs:
               'image: "' + final_image + '"',
               'category: "Entertainment"',
               'date: "' + publish_timestamp + '"',
+              'authorUrl: "https://zandani.co.ke/author/mutheu-ann"',
+              'dateModified: "' + publish_timestamp + '"',
+              'schema: "NewsArticle"',
               "---",
               article_text,
               ""
