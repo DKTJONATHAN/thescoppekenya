@@ -479,7 +479,7 @@ jobs:
               'image: "' + final_image + '"',
               'category: "' + category + '"',
               'date: "' + publish_timestamp + '"',
-              'authorUrl: "https://zandani.co.ke/author/author"',
+              f'authorUrl: "https://zandani.co.ke/author/{author.lower().replace(" ", "-")}"',
               'dateModified: "' + publish_timestamp + '"',
               'schema: "NewsArticle"',
               'tags: [' + tags_str + ']',
