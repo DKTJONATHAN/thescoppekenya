@@ -897,10 +897,13 @@ jobs:
               '---\n'
               f'title: "{final_title.replace(chr(34), chr(39))}"\n'
               f'date: {publish_timestamp}\n'
+              f'dateModified: {publish_timestamp}\n'
               f'slug: {slug}\n'
               f'author: {author_slug}\n'
+              f'authorUrl: "https://zandani.co.ke/author/{author_slug}"\n'
               f'category: {category.lower()}\n'
               f'image: "{cover_image}"\n'
+              'schema: "NewsArticle"\n'
               'draft: false\n'
               '---\n'
           )
