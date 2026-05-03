@@ -26,6 +26,17 @@
     </news:news>
   </url>
   <url>
+    <loc>https://zandani.co.ke/article/from-fuel-money-to-wantam-fury-cheruiyot-s-emurua-dikirr-nightmare</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T19:20:00.000Z</news:publication_date>
+      <news:title>From Fuel Money to &apos;Wantam&apos; Fury: Cheruiyot&apos;s Emurua Dikirr Nightmare!</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenya-s-economy-reaches-record-value-amid-sectoral-shifts</loc>
     <news:news>
       <news:publication>
@@ -276,17 +287,6 @@
       </news:publication>
       <news:publication_date>2026-05-01T22:36:54.000Z</news:publication_date>
       <news:title>Leeds United Move Nine Points Clear of Relegation Zone After Dominant Victory Over Burnley</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/a-loom-of-fortune-investing-women-blue-economy-kenya</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T20:02:51.000Z</news:publication_date>
-      <news:title>A Loom of Fortune: Investing Women Blue Economy Kenya</news:title>
     </news:news>
   </url>
 </urlset>
