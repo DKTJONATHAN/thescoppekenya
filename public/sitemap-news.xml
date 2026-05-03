@@ -4,6 +4,39 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/police-intercept-ammunition-bus</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T12:31:13.000Z</news:publication_date>
+      <news:title>Confirmed: Police Intercept Ammunition Bus in Kanyonyoo</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/kirinyaga-church-robbery-theft</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T12:19:11.000Z</news:publication_date>
+      <news:title>Kirinyaga Church Robbery: How Three Sanctuaries Lost Ksh1 Million</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/machakos-riparian-land-demolitions</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T12:06:53.000Z</news:publication_date>
+      <news:title>Confirmed: Machakos Riparian Land Demolitions Target Mavoko</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/pierce-brosnan-stars-as-boxing-trainer-brendan-ingle-in-film-giant</loc>
     <news:news>
       <news:publication>
