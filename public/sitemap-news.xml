@@ -15,6 +15,17 @@
     </news:news>
   </url>
   <url>
+    <loc>https://zandani.co.ke/article/olkalou-uda-aspirants-remove-kasongo-from-their-campaign-posters</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T09:40:25.000Z</news:publication_date>
+      <news:title>Olkalou UDA aspirants remove Kasongo from their campaign posters</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/diani-plane-emergency-landing</loc>
     <news:news>
       <news:publication>
@@ -771,39 +782,6 @@
       </news:publication>
       <news:publication_date>2026-05-01T10:58:46.000Z</news:publication_date>
       <news:title>Home Afrika reports profit as liabilities exceed total assets</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/bomas-convention-centre-september-completion</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T10:09:21.000Z</news:publication_date>
-      <news:title>Confirmed: Bomas Convention Centre Set for September Completion</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/willis-raburu-kisumu-senator</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T10:00:28.000Z</news:publication_date>
-      <news:title>Willis Raburu Confirms Bid for Kisumu Senator Seat</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/meta-reports-revenue-growth-as-daily-active-users-decline</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T10:00:25.000Z</news:publication_date>
-      <news:title>Meta reports revenue growth as daily active users decline</news:title>
     </news:news>
   </url>
 </urlset>
