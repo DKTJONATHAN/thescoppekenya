@@ -15,6 +15,17 @@
     </news:news>
   </url>
   <url>
+    <loc>https://zandani.co.ke/article/larry-madowo-and-edith-kimani-public-appearances-fuel-relationship-s</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T17:10:03.000Z</news:publication_date>
+      <news:title>Larry Madowo and Edith Kimani: Public Appearances Fuel Relationship Speculation in Kenya</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/marurui-squatters-protest</loc>
     <news:news>
       <news:publication>
@@ -265,17 +276,6 @@
       </news:publication>
       <news:publication_date>2026-05-01T19:40:36.000Z</news:publication_date>
       <news:title>President Ruto faces criticism as Talanta Sports City progress highlights unfulfilled development pledges in the Rift Valley</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/tottenham-on-the-brink-de-zerbi-issues-defiant-silence-the-voice-ple</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T17:44:20.000Z</news:publication_date>
-      <news:title>Tottenham on the Brink: De Zerbi Issues Defiant ‘Silence the Voice’ Plea in Shock Relegation Battle</news:title>
     </news:news>
   </url>
 </urlset>
