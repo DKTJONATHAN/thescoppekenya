@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/premier-league-title-twist-arsenal-go-6-points-clear-as-pressure-mou</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T05:04:34.000Z</news:publication_date>
+      <news:title>Premier League Title Twist: Arsenal Go 6 Points Clear as Pressure Mounts on Man City</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/aoko-accuses-somalia-ambassador-jabril-abdulle-of-al-shabaab-financi</loc>
     <news:news>
       <news:publication>
