@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/netflix-announces-upcoming-release-of-original-films-and-documentari</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T08:53:34.000Z</news:publication_date>
+      <news:title>Netflix announces upcoming release of original films and documentaries</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/world-cup-2026-fans-face-eye-watering-22-000-bill-for-most-expensive</loc>
     <news:news>
       <news:publication>
@@ -782,17 +793,6 @@
       </news:publication>
       <news:publication_date>2026-05-01T09:06:22.000Z</news:publication_date>
       <news:title>Dan Stevens to lead the third season of horror anthology series The Terror</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/arne-slot-drops-mohamed-salah-send-off-bombshell-and-delivers-alisso</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T08:34:26.000Z</news:publication_date>
-      <news:title>Arne Slot drops Mohamed Salah &apos;send off&apos; bombshell and delivers Alisson injury update ahead of Man Utd clash</news:title>
     </news:news>
   </url>
 </urlset>
