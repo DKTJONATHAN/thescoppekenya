@@ -795,26 +795,4 @@
       <news:title>Umulkheir Harun addresses the escalating border conflict and banditry in Kitui</news:title>
     </news:news>
   </url>
-  <url>
-    <loc>https://zandani.co.ke/article/nairobi-floods-mombasa-road</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T07:51:59.000Z</news:publication_date>
-      <news:title>How Nairobi Floods Paralysed Mombasa Road and JKIA</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/millie-odhiambo-political-jealousy</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T07:39:48.000Z</news:publication_date>
-      <news:title>Millie Odhiambo Responds to Political Jealousy Accusations</news:title>
-    </news:news>
-  </url>
 </urlset>
