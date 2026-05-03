@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/academy-updates-rules-to-require-human-authorship-and-permit-multipl</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T13:41:10.000Z</news:publication_date>
+      <news:title>Academy updates rules to require human authorship and permit multiple acting nominations</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/title-race-chaos-celtic-denied-by-controversial-handball-goal-as-ihe</loc>
     <news:news>
       <news:publication>
@@ -804,17 +815,6 @@
       </news:publication>
       <news:publication_date>2026-05-01T13:57:45.000Z</news:publication_date>
       <news:title>Mbavu Destroyer Mocks Majembe Over Plan to Sell Prize Car</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/saudi-owners-newcastle-united-stance-revealed-eddie-howe-issues-upda</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T12:43:12.000Z</news:publication_date>
-      <news:title>Saudi Owners’ Newcastle United Stance Revealed: Eddie Howe Issues Update Amid LIV Golf Withdrawal</news:title>
     </news:news>
   </url>
 </urlset>
