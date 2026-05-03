@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sun, 03 May 2026 19:34:08 GMT</pubDate>
+    <pubDate>Sun, 03 May 2026 20:00:14 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[The General's Echo: AI Policy and Kenya]]></title>
+      <link>https://zandani.co.ke/article/the-generals-echo-ai-policy-and-kenya</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/the-generals-echo-ai-policy-and-kenya</guid>
+      <pubDate>Sun, 03 May 2026 19:54:06 GMT</pubDate>
+      <dc:creator><![CDATA[The Chronicler]]></dc:creator>
+      <description><![CDATA[A tale of ambition and the unforgiving hand of authority, mirroring crucial shifts in US AI policy and their potential for the anthropic future in Kenya ai.]]></description>
+      <enclosure url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" type="image/jpeg" />
+      <media:content url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" alt="The General&apos;s Echo: AI Policy and Kenya" /><p>A tale of ambition and the unforgiving hand of authority, mirroring crucial shifts in US AI policy and their potential for the anthropic future in Kenya ai.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[KNH Confirms Digital System Delays, Patients Stranded]]></title>
       <link>https://zandani.co.ke/article/knh-digital-system</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/FLs4C6Rj/e754371111dd.webp" type="image/jpeg" />
       <media:content url="https://i.ibb.co/FLs4C6Rj/e754371111dd.webp" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/FLs4C6Rj/e754371111dd.webp" alt="Charterhouse moves Telecel Ghana Music Awards to Palms Convention Center" /><p>Charterhouse moves the 2026 Telecel Ghana Music Awards to the Palms Convention Center due to unresolved arrangements at the Grand Arena. Read more here.</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Finding Calm Amidst the Hustle: How a Simple Morning Ritual Steadies a Nairobi Business Owner’s Day]]></title>
-      <link>https://zandani.co.ke/article/finding-calm-amidst-the-hustle-how-a-simple-morning-ritual-steadies-</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/finding-calm-amidst-the-hustle-how-a-simple-morning-ritual-steadies-</guid>
-      <pubDate>Wed, 29 Apr 2026 16:08:16 GMT</pubDate>
-      <dc:creator><![CDATA[Jona Munyi]]></dc:creator>
-      <description><![CDATA[Discover how a simple morning ritual and a cup of Nescafé help a Nairobi business owner find calm and stay steady amidst the city's relentless urban hustle.]]></description>
-      <enclosure url="https://i.ibb.co/HDW1NWxM/01fb07a64909.webp" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/HDW1NWxM/01fb07a64909.webp" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/HDW1NWxM/01fb07a64909.webp" alt="Finding Calm Amidst the Hustle: How a Simple Morning Ritual Steadies a Nairobi Business Owner’s Day" /><p>Discover how a simple morning ritual and a cup of Nescafé help a Nairobi business owner find calm and stay steady amidst the city's relentless urban hustle.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/the-generals-echo-ai-policy-and-kenya</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T19:54:06.000Z</news:publication_date>
+      <news:title>The General&apos;s Echo: AI Policy and Kenya</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/knh-digital-system</loc>
     <news:news>
       <news:publication>
@@ -276,28 +287,6 @@
       </news:publication>
       <news:publication_date>2026-05-01T20:02:51.000Z</news:publication_date>
       <news:title>A Loom of Fortune: Investing Women Blue Economy Kenya</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-tax-filing-deadline-changes</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T19:50:05.000Z</news:publication_date>
-      <news:title>How Finance Bill 2026 Changes Kenya Tax Filing Deadline to April</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/president-ruto-faces-criticism-as-talanta-sports-city-progress-highl</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T19:40:36.000Z</news:publication_date>
-      <news:title>President Ruto faces criticism as Talanta Sports City progress highlights unfulfilled development pledges in the Rift Valley</news:title>
     </news:news>
   </url>
 </urlset>
