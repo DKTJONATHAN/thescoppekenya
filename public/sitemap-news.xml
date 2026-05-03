@@ -4,6 +4,28 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/storage-wars-star-darrell-sheets-found-dead-of-apparent-suicide</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T14:57:26.000Z</news:publication_date>
+      <news:title>Storage Wars star Darrell Sheets found dead of apparent suicide</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/the-nikita-bridget-paradox-why-we-need-a-war-or-a-wedding-to-finally-p</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T14:57:18.000Z</news:publication_date>
+      <news:title>The Nikita-Bridget Paradox: Why We Need a War or a Wedding to Finally Put Kenyan R&amp;B on the World Map</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/police-intercept-ammunition-bus</loc>
     <news:news>
       <news:publication>
