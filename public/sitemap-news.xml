@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/emily-blunt-and-stanley-tucci-discuss-character-developments-in-the-</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T10:13:33.000Z</news:publication_date>
+      <news:title>Emily Blunt and Stanley Tucci discuss character developments in The Devil Wears Prada 2</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenya-proposes-ban-on-celebrities-in-betting-advertisements-and-high</loc>
     <news:news>
       <news:publication>
