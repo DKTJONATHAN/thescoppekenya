@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [KNH Confirms Digital System Delays, Patients Stranded](https://zandani.co.ke/article/knh-digital-system) - Kenyatta National Hospital confirms delays in its new KNH digital system for patient data, leaving many patients stranded. The hospital attributes issues t
 - [Kenya's Economy Reaches Record Value Amid Sectoral Shifts](https://zandani.co.ke/article/kenya-s-economy-reaches-record-value-amid-sectoral-shifts) - Record KSh 17.58 Trillion GDP Signals Kenya's Economic Transformation Kenya's economy achieved a nominal value of KSh 17.58 trillion in 2025, a record high according to the Economic Survey 2026. Significant shifts are evident, with agriculture strengthening...
 - [Mainoo Snatches Champions League Spot for Man Utd in Five-Goal Thriller Against Liverpool](https://zandani.co.ke/article/mainoo-snatches-champions-league-spot-for-man-utd-in-five-goal-thril) - Mainoo secures Man Utd's Champions League spot with a winner in a 5-goal thriller against Liverpool. Catch all the highlights from Old Trafford.
 - [Larry Madowo and Edith Kimani: Public Appearances Fuel Relationship Speculation in Kenya](https://zandani.co.ke/article/larry-madowo-and-edith-kimani-public-appearances-fuel-relationship-s) - Widespread speculation has ignited across Kenya regarding a rumored romantic relationship between prominent journalists Larry Madowo and Edith Kimani, fueled by their public appearances. Public discourse is actively discussing a potential romance for the media...
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Woman consumes Eucharist wine and bread in viral video](https://zandani.co.ke/article/woman-eats-eucharist-video) - A woman sparked a religious debate after a video of her consuming Eucharist wine and bread at home went viral. Read the full story
 - [Ipswich Town on Brink of Historic Premier League Return in Championship Final Day Drama](https://zandani.co.ke/article/ipswich-town-on-brink-of-historic-premier-league-return-in-champions) - Ipswich Town are on the verge of a historic Premier League return. Follow the Championship final day drama as the promotion race concludes.
 - [Francis Atwoli Links COTU Re-election to Fatherhood](https://zandani.co.ke/article/francis-atwoli-cotu-victory) - Francis Atwoli humorously links his COTU re-election to providing for his young son. Fans are amused by his fatherhood goals. Get the details.
-- [The Scramble for Starlight: Kenyan Representation I'm A Celebrity UK](https://zandani.co.ke/article/scramble-for-starlight-kenyan-representation) - A grand stage in the southern sun, yet the local stars remain unseen. The echoes of old partitions resonate, leaving popular Kenyan figures in shadow.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml

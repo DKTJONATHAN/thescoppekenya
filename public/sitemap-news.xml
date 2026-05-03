@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/knh-digital-system</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T19:20:18.000Z</news:publication_date>
+      <news:title>KNH Confirms Digital System Delays, Patients Stranded</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenya-s-economy-reaches-record-value-amid-sectoral-shifts</loc>
     <news:news>
       <news:publication>
