@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/mainoo-snatches-champions-league-spot-for-man-utd-in-five-goal-thril</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T17:34:51.000Z</news:publication_date>
+      <news:title>Mainoo Snatches Champions League Spot for Man Utd in Five-Goal Thriller Against Liverpool</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/marurui-squatters-protest</loc>
     <news:news>
       <news:publication>
@@ -265,50 +276,6 @@
       </news:publication>
       <news:publication_date>2026-05-01T17:44:20.000Z</news:publication_date>
       <news:title>Tottenham on the Brink: De Zerbi Issues Defiant ‘Silence the Voice’ Plea in Shock Relegation Battle</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/finance-bill-kra-tax-deals</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T17:35:03.000Z</news:publication_date>
-      <news:title>Finance Bill 2026: How KRA Will Override Current Tax Deals</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/security-vulnerability-in-cpanel-and-whm-allows-unauthorized-adminis</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T17:31:56.000Z</news:publication_date>
-      <news:title>Security vulnerability in cPanel and WHM allows unauthorized administrative access without passwords</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/simon-kabu-kids-rumors</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T17:30:24.000Z</news:publication_date>
-      <news:title>Simon Kabu Denies Secret Kids Rumors and Pursues Legal Action</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/president-william-ruto-urges-rift-valley-stronghold-to-register-as-v</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T17:15:01.000Z</news:publication_date>
-      <news:title>President William Ruto Urges Rift Valley Stronghold to Register as Voters for 2027 Re-election</news:title>
     </news:news>
   </url>
 </urlset>
