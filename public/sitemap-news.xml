@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/president-ruto-calms-south-rift-dissatisfaction-over-stalled-project</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03T23:04:51.000Z</news:publication_date>
+      <news:title>President Ruto Calms South Rift Dissatisfaction Over Stalled Projects, Pledges Priority Development in Second Term</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/spurs-climb-out-of-relegation-zone-after-stunning-de-zerbi-inspired-</loc>
     <news:news>
       <news:publication>
@@ -320,17 +331,6 @@
       </news:publication>
       <news:publication_date>2026-05-02T04:48:18.000Z</news:publication_date>
       <news:title>Leeds United All But Secure Premier League Safety With Emphatic Burnley Victory</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/leeds-united-move-nine-points-clear-of-relegation-zone-after-dominan</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-01T22:36:54.000Z</news:publication_date>
-      <news:title>Leeds United Move Nine Points Clear of Relegation Zone After Dominant Victory Over Burnley</news:title>
     </news:news>
   </url>
 </urlset>
