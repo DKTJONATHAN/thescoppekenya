@@ -63,7 +63,8 @@ export interface Post extends PostMetadata {
 // We use eager: false (and no query: '?raw' here) because we'll load content 
 // dynamically via getPostBySlug.
 const postFiles = import.meta.glob('/content/posts/*.md', { 
-  as: 'raw',
+  query: '?raw',
+  import: 'default',
   eager: false 
 });
 
@@ -162,9 +163,10 @@ export interface PodcastEpisode {
 }
 
 const podcastFiles = import.meta.glob('/content/briefings/*.md', { 
-  as: 'raw',
+  query: '?raw',
+  import: 'default',
   eager: true 
-});
+}) as Record<string, string>;
 
 export function getAllPodcastEpisodes(): PodcastEpisode[] {
   const episodes = Object.entries(podcastFiles).map(([path, rawContent]) => {
