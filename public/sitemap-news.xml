@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/director-explains-devil-wears-prada-2-death-scene-twist</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-04T11:58:26.000Z</news:publication_date>
+      <news:title>Director explains Devil Wears Prada 2 death scene twist</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/industrial-and-construction-sectors-boost-manufacturing-while-agro-p</loc>
     <news:news>
       <news:publication>
@@ -287,28 +298,6 @@
       </news:publication>
       <news:publication_date>2026-05-02T12:37:35.000Z</news:publication_date>
       <news:title>Ipswich Town on Brink of Historic Premier League Return in Championship Final Day Drama</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/francis-atwoli-cotu-victory</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-02T12:03:06.000Z</news:publication_date>
-      <news:title>Francis Atwoli Links COTU Re-election to Fatherhood</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/scramble-for-starlight-kenyan-representation</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-02T11:43:08.000Z</news:publication_date>
-      <news:title>The Scramble for Starlight: Kenyan Representation I&apos;m A Celebrity UK</news:title>
     </news:news>
   </url>
 </urlset>
