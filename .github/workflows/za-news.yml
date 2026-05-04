@@ -71,7 +71,7 @@ jobs:
           today_str      = datetime.datetime.utcnow().strftime('%Y-%m-%d')
           full_date_str  = datetime.datetime.utcnow().strftime('%A, %B %d, %Y')
           MODELS_TO_TRY  = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
-          MAX_AGE_HOURS  = 6
+          MAX_AGE_HOURS  = 24
           SITE_URL       = 'https://www.kenyans.co.ke/news'
           SITE_DOMAIN    = 'kenyans.co.ke'
           MAX_PER_RUN    = 1
@@ -180,7 +180,11 @@ jobs:
               try:
                   with sync_playwright() as p:
                       browser = p.chromium.launch(headless=True,args=['--no-sandbox','--disable-dev-shm-usage','--disable-blink-features=AutomationControlled','--disable-infobars','--window-size=1920,1080'])
-                      context = browser.new_context(user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',viewport={'width':1920,'height':1080},locale='en-KE',timezone_id='Africa/Nairobi',extra_http_headers={'Accept-Language':'en-KE,en;q=0.9','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','Sec-Fetch-Site':'none','Sec-Fetch-Mode':'navigate'})
+                      context = browser.new_context(
+                          user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
+                          viewport={'width':1920,'height':1080},locale='en-KE',timezone_id='Africa/Nairobi',
+                          extra_http_headers={'Accept-Language':'en-KE,en;q=0.9','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','Sec-Fetch-Site':'none','Sec-Fetch-Mode':'navigate'},
+                      )
                       page = context.new_page()
                       page.goto(SITE_URL,timeout=60000,wait_until='domcontentloaded')
                       time.sleep(random.uniform(2,5))
@@ -190,11 +194,9 @@ jobs:
                       soup = BeautifulSoup(page.content(),'html.parser')
                       for a in soup.find_all('a',href=True):
                           href = a.get('href','').strip()
-                          if not href:
-                              continue
+                          if not href: continue
                           full_url = href if href.startswith('http') else f'https://{SITE_DOMAIN}' + href
-                          if SITE_DOMAIN not in full_url:
-                              continue
+                          if SITE_DOMAIN not in full_url: continue
                           path = full_url.split(SITE_DOMAIN)[-1]
                           slug = path.rstrip('/').split('/')[-1]
                           skip = ['/author/','/tag/','/page/','/feed/','/comment-','/category/','/politics']
@@ -203,12 +205,21 @@ jobs:
                       browser.close()
               except Exception as e:
                   print(f'Scan failed: {e}')
+          
               def date_key(u):
-                  m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/',u)
-                  return int(m.group(1)+m.group(2)+m.group(3)) if m else 19000101
-              urls_list = sorted(list(urls),key=date_key,reverse=True)
+                  # Primary: date in URL path (e.g. /2026/05/04/) - multiply for high priority
+                  m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', u)
+                  if m:
+                      return int(m.group(1) + m.group(2) + m.group(3)) * 1000000
+                  # Secondary: numeric article ID (higher ID = more recent on kenyans.co.ke)
+                  mid = re.search(r'/(\d{5,7})-', u)
+                  return int(mid.group(1)) if mid else 0
+          
+              urls_list = sorted(list(urls), key=date_key, reverse=True)
               print(f'Found {len(urls_list)} candidates.')
-              return urls_list[:12]
+              for u in urls_list[:5]:
+                  print(f'  Top candidate: {u}')
+              return urls_list[:15]
           
           def scrape_article(url):
               print(f'Scraping: {url}')
@@ -222,6 +233,7 @@ jobs:
                       time.sleep(random.uniform(1,3))
                       soup = BeautifulSoup(page.content(),'html.parser')
                       browser.close()
+          
                   pub_time = None
                   for script in soup.find_all('script',type='application/ld+json'):
                       try:
@@ -241,15 +253,21 @@ jobs:
                       m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/',url)
                       if m:
                           pub_time = datetime.datetime(int(m.group(1)),int(m.group(2)),int(m.group(3)),tzinfo=datetime.timezone.utc)
+          
                   if pub_time:
                       if pub_time.tzinfo is None:
                           pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
-                      age = (datetime.datetime.now(datetime.timezone.utc)-pub_time).total_seconds()/3600
+                      age = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
                       print(f'Published: {pub_time} ({age:.1f}h ago)')
                       if age > MAX_AGE_HOURS:
-                          print('Too old, skipping.'); return None, None, None
+                          print(f'Too old ({age:.1f}h > {MAX_AGE_HOURS}h limit), skipping.')
+                          return None, None, None
+                  else:
+                      print('No publish date found; treating as fresh.')
+          
                   title = soup.title.string.strip() if soup.title else ''
                   title = re.sub(r'\s*[-|]\s*Kenyans\.co\.ke.*','',title,flags=re.I).strip()
+          
                   article_text = ''
                   for sel in ['article','.article-body','.post-content','.entry-content','.content','main']:
                       cont = soup.select_one(sel)
@@ -258,6 +276,7 @@ jobs:
                           if len(article_text) > 400: break
                   if len(article_text) < 400:
                       article_text = '\n\n'.join(p.get_text(' ',strip=True) for p in soup.find_all('p') if len(p.get_text(' ',strip=True))>40)
+          
                   article_text = clean(article_text)
                   img_url = ''
                   for tag in [soup.find('meta',property='og:image'),soup.find('meta',{'name':'twitter:image'})]:
@@ -501,21 +520,18 @@ jobs:
           
               source_text, img, source_title = scrape_article(link)
               if not source_text or len(source_text) < MIN_SRC_CHARS:
-                  print(f'Insufficient content: {link}'); continue
+                  print(f'Insufficient content ({len(source_text or "")} chars): {link}'); continue
           
-              # Pick style, avoid last 3 used
               available    = [p for p in STYLE_PRESETS if p['name'] not in recent_style_names[-3:]] or STYLE_PRESETS
               style_preset = random.choice(available)
               print(f'Style preset: {style_preset["name"]}')
           
-              # Stage 1: story brief
               story_brief = stage_brief(source_title or 'Kenya News', source_text, link, style_preset, all_history)
               if not story_brief or not story_brief.get('main_event'):
                   print('Story brief failed, skipping.'); continue
               current_key = next(key_cycle); client = genai.Client(api_key=current_key)
               time.sleep(random.uniform(4,8))
           
-              # Stage 2: SEO metadata
               seo_data      = stage_seo(source_title or 'Kenya News', story_brief)
               final_title   = seo_data.get('final_title') or source_title or 'Kenya News'
               meta_desc     = (seo_data.get('meta_description') or story_brief.get('summary') or '')[:155]
@@ -525,7 +541,6 @@ jobs:
               current_key = next(key_cycle); client = genai.Client(api_key=current_key)
               time.sleep(random.uniform(4,8))
           
-              # Stage 3: write article
               internal_links = get_internal_links(final_title, source_text, posts_dir)
               article_text   = stage_write(final_title, focus_keyword, story_brief, style_preset, internal_links, all_history)
               if not article_text:
@@ -536,7 +551,6 @@ jobs:
               current_key = next(key_cycle); client = genai.Client(api_key=current_key)
               time.sleep(random.uniform(4,8))
           
-              # Stage 4: review and conditional rewrite
               review_data = stage_review(article_text, source_text, style_preset, all_history)
               print(f'Review -> similarity:{review_data.get("source_similarity")} repetition:{review_data.get("house_style_repetition")} voice:{review_data.get("voice_variety")} verdict:{review_data.get("verdict")}')
               if review_data.get('verdict') == 'rewrite':
@@ -545,7 +559,6 @@ jobs:
                   if rewritten:
                       article_text = re.sub(r'^```(?:markdown)?\s*','',rewritten,flags=re.I).rstrip('`').strip()
           
-              # Build slug
               if seo_slug and re.match(r'^[a-z0-9-]+$',seo_slug):
                   slug = seo_slug[:68]
               else:
