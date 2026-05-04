@@ -66,7 +66,7 @@ export default function AdminPage() {
   const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
   const [viewsLoading, setViewsLoading] = useState(true);
 
-  const [editingPost, setEditingPost] = useState<Post | null>(null);
+  const [editingPost, setEditingPost] = useState<PostMetadata | null>(null);
   const [categories, setCategories] = useState<{ name: string; slug: string }[]>([]);
   const [isCustomCategory, setIsCustomCategory] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
@@ -235,7 +235,7 @@ export default function AdminPage() {
     setInlineAuthor({ name: "", role: "Contributing Writer", bio: "", avatar: "", location: "Kenya", socials: { twitter: "", linkedin: "", email: "" } });
   };
 
-  const handleEditPost = (post: Post) => {
+  const handleEditPost = (post: PostMetadata) => {
     setEditingPost(post);
     setNewPost({ title: post.title||"", slug: post.slug||"", excerpt: post.excerpt||"", category: post.category||"News",
       content: post.content||"", image: post.image||"", author: post.author||"Za Ndani", tags: post.tags?.join(", ")||"" });

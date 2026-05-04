@@ -71,7 +71,7 @@ interface AuthorStats {
   name: string;
   totalViews: number;
   articleCount: number;
-  latestArticles: Post[];
+  latestArticles: PostMetadata[];
   profile: AuthorProfile;
 }
 
