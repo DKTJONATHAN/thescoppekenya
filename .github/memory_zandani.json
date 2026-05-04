@@ -135,7 +135,8 @@
     "f7b9edb0ac205e9334b3c89897b0e431",
     "9e128028eda42ef2faab4faca73a9529",
     "667dfe77fe3ee5541c110d4e0187b9a5",
-    "953ff0739684257ed22bf2562c76e300"
+    "953ff0739684257ed22bf2562c76e300",
+    "611e3afd45bda8cf7982db944d8ba232"
   ],
   "style_history": [
     {
@@ -144,6 +145,13 @@
       "leadStyle": "punchy declarative sentence, high-energy, names first",
       "articleAngle": "Focus on the 'career glow-up' and the influence of industry mentorship in securing top-tier media positions.",
       "bodySample": "Selestine Nyagah is trading her acting scripts for a live microphone as she officially joins the presenting team at Citizen TV. The star, fresh off the set of the popular drama series Neema, has lande"
+    },
+    {
+      "title": "DNA Testing Reveals British Twins Have Different Biological Fathers",
+      "stylePreset": "profile_led",
+      "leadStyle": "introduce the key person as if the reader has never heard of them",
+      "articleAngle": "A profile on the sisters' journey of self-discovery, focusing on how this scientific anomaly forced them to reconcile their lifelong bond with a sudden, radical shift in their ancestral identity.",
+      "bodySample": "# DNA Testing Reveals British Twins Have Different Biological Fathers  For forty-five years, Lavinia and Michelle Osborne navigated life under the assumption that their shared DNA was as identical as "
     }
   ]
 }
