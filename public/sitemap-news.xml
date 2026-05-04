@@ -300,48 +300,4 @@
       <news:title>Irungu Nyakera Returns to Farmers Party After Failing to Secure DCP Nairobi Ticket</news:title>
     </news:news>
   </url>
-  <url>
-    <loc>https://zandani.co.ke/article/mungai-gathongo-murder-rongai</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-02T08:51:36.000Z</news:publication_date>
-      <news:title>How Parliament Chef Mungai Gathongo Was Murdered in Rongai</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/peter-kioi-rehab-geoffrey-mosiria</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-02T08:47:25.000Z</news:publication_date>
-      <news:title>Peter Kioi Agrees to Rehab After Geoffrey Mosiria Intervention</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/vanessa-bryant-honors-late-daughter-gianna-on-her-twentieth-birthday</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-02T08:26:08.000Z</news:publication_date>
-      <news:title>Vanessa Bryant honors late daughter Gianna on her twentieth birthday</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/it-s-massive-daniel-farke-hails-leeds-united-s-crucial-step-forward-</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-02T08:14:49.000Z</news:publication_date>
-      <news:title>‘It’s Massive’: Daniel Farke Hails Leeds United’s Crucial Step Forward as Milestone Reached in Crunch Period</news:title>
-    </news:news>
-  </url>
 </urlset>
