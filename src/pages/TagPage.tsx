@@ -90,8 +90,7 @@ export default function TagPage() {
   return (
     <Layout>
       <Helmet>
-        {/* ✅ Blocks Google from indexing tag pages */}
-        <meta name="robots" content="noindex, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
 
         <title>#{displayTag} — Za Ndani | Kenya News & Entertainment</title>
         <meta name="description" content={`All stories tagged "${displayTag}" on Za Ndani — Kenya's sharpest news and entertainment site.`} />
