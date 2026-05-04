@@ -1,6 +1,14 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /wp-admin/
 
-# Sitemaps
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+Disallow: /admin/
+
 Sitemap: https://zandani.co.ke/sitemap.xml
 Sitemap: https://zandani.co.ke/sitemap-news.xml
