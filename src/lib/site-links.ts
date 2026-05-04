@@ -1,8 +1,14 @@
-export const primaryNavLinks = [
+export type NavLink = {
+  label: string;
+  path: string;
+  featured?: boolean;
+};
+
+export const primaryNavLinks: NavLink[] = [
   { label: "News", path: "/news", featured: true },
   { label: "Trending", path: "/trending" },
   { label: "Podcast", path: "/podcast" },
-] as const;
+];
 
 export const staticSitePages = [
   { path: "/", label: "Home" },

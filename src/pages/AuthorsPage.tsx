@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
-import { getLatestPosts, Post } from "@/lib/markdown";
+import { getLatestPosts, PostMetadata } from "@/lib/markdown";
 import { Eye, BookOpen, TrendingUp, ChevronRight, Flame, Loader2, Clock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useEffect, useState, useMemo } from "react";
@@ -71,7 +71,7 @@ interface AuthorStats {
   name: string;
   totalViews: number;
   articleCount: number;
-  latestArticles: Post[];
+  latestArticles: PostMetadata[];
   profile: AuthorProfile;
 }
 

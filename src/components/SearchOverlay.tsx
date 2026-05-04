@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Search, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { searchPosts, Post } from '@/lib/markdown';
+import { searchPosts, PostMetadata } from '@/lib/markdown';
 
 interface SearchOverlayProps {
   isOpen: boolean;
@@ -10,7 +10,7 @@ interface SearchOverlayProps {
 
 export function SearchOverlay({ isOpen, onClose }: SearchOverlayProps) {
   const [query, setQuery] = useState('');
-  const [results, setResults] = useState<Post[]>([]);
+  const [results, setResults] = useState<PostMetadata[]>([]);
 
   useEffect(() => {
     if (query.length >= 2) {

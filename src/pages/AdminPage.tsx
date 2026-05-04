@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { getAllPosts, Post, categories as defaultCategories } from "@/lib/markdown";
+import { getAllPosts, getPostBySlug, PostMetadata, Post, categories as defaultCategories } from "@/lib/markdown";
 import {
   Lock, Plus, Eye, FileText, LogOut, Loader2, Pencil, Trash2,
   Github, Search, Users, TrendingUp, BarChart2, Flame,
@@ -56,7 +56,7 @@ export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [pin, setPin] = useState("");
   const [pinError, setPinError] = useState("");
-  const [posts, setPosts] = useState<Post[]>([]);
+  const [posts, setPosts] = useState<PostMetadata[]>([]);
   const [activeTab, setActiveTab] = useState<Tab>("dashboard");
   const [isPublishing, setIsPublishing] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -66,7 +66,7 @@ export default function AdminPage() {
   const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
   const [viewsLoading, setViewsLoading] = useState(true);
 
-  const [editingPost, setEditingPost] = useState<Post | null>(null);
+  const [editingPost, setEditingPost] = useState<PostMetadata | null>(null);
   const [categories, setCategories] = useState<{ name: string; slug: string }[]>([]);
   const [isCustomCategory, setIsCustomCategory] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
@@ -235,10 +235,11 @@ export default function AdminPage() {
     setInlineAuthor({ name: "", role: "Contributing Writer", bio: "", avatar: "", location: "Kenya", socials: { twitter: "", linkedin: "", email: "" } });
   };
 
-  const handleEditPost = (post: Post) => {
+  const handleEditPost = async (post: PostMetadata) => {
     setEditingPost(post);
+    const fullPost = await getPostBySlug(post.slug);
     setNewPost({ title: post.title||"", slug: post.slug||"", excerpt: post.excerpt||"", category: post.category||"News",
-      content: post.content||"", image: post.image||"", author: post.author||"Za Ndani", tags: post.tags?.join(", ")||"" });
+      content: fullPost?.content || "", image: post.image||"", author: post.author||"Za Ndani", tags: post.tags?.join(", ")||"" });
     setIsCustomAuthor(false); setActiveTab("create");
   };
 
