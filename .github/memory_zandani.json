@@ -138,7 +138,8 @@
     "953ff0739684257ed22bf2562c76e300",
     "611e3afd45bda8cf7982db944d8ba232",
     "453972f8151a9595acc308be0068df1d",
-    "5ff9999e553bad28a616777b68151d68"
+    "5ff9999e553bad28a616777b68151d68",
+    "c766e7ab38af654a9bb7de0d99d0607f"
   ],
   "style_history": [
     {
@@ -168,6 +169,13 @@
       "leadStyle": "context-first: explain why this matters before stating what happened",
       "articleAngle": "A shift from typical tabloid coverage to a focus on parenting milestones and the success of celebrity children in professional fields.",
       "bodySample": "Parenting in the public eye often invites intense scrutiny, yet it also provides a unique platform to model values beyond fame. Recently, **Zari Hassan** shared a heartfelt tribute marking her son Qui"
+    },
+    {
+      "title": "Lydia Wanjiru Unveils Results of Her Body Transformation",
+      "stylePreset": "timeline",
+      "leadStyle": "open with the most dramatic moment, then trace back to the beginning",
+      "articleAngle": "A look at the influencer's journey from the initial decision to undergo surgery to the final reveal, focusing on the transparency of her transformation.",
+      "bodySample": "# Lydia Wanjiru Unveils Results of Her Body Transformation  Lydia Wanjiru has officially pulled back the curtain on her new silhouette, marking the end of a physical evolution that began late last yea"
     }
   ]
 }
