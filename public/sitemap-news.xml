@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/babu-owino-dj-evolve</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-04T13:00:27.000Z</news:publication_date>
+      <news:title>Babu Owino Admits He Should Be in Jail Over DJ Evolve Case</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenya-passport-issuance-low</loc>
     <news:news>
       <news:publication>
@@ -309,17 +320,6 @@
       </news:publication>
       <news:publication_date>2026-05-02T13:52:07.000Z</news:publication_date>
       <news:title>Woman consumes Eucharist wine and bread in viral video</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/ipswich-town-on-brink-of-historic-premier-league-return-in-champions</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-02T12:37:35.000Z</news:publication_date>
-      <news:title>Ipswich Town on Brink of Historic Premier League Return in Championship Final Day Drama</news:title>
     </news:news>
   </url>
 </urlset>
