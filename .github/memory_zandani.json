@@ -136,7 +136,8 @@
     "9e128028eda42ef2faab4faca73a9529",
     "667dfe77fe3ee5541c110d4e0187b9a5",
     "953ff0739684257ed22bf2562c76e300",
-    "611e3afd45bda8cf7982db944d8ba232"
+    "611e3afd45bda8cf7982db944d8ba232",
+    "453972f8151a9595acc308be0068df1d"
   ],
   "style_history": [
     {
@@ -152,6 +153,13 @@
       "leadStyle": "introduce the key person as if the reader has never heard of them",
       "articleAngle": "A profile on the sisters' journey of self-discovery, focusing on how this scientific anomaly forced them to reconcile their lifelong bond with a sudden, radical shift in their ancestral identity.",
       "bodySample": "# DNA Testing Reveals British Twins Have Different Biological Fathers  For forty-five years, Lavinia and Michelle Osborne navigated life under the assumption that their shared DNA was as identical as "
+    },
+    {
+      "title": "Sueh Owino Embraces Sustainable Living in New Mud Home",
+      "stylePreset": "explainer",
+      "leadStyle": "context-first: explain why this matters before stating what happened",
+      "articleAngle": "An exploration of the 'low vibe' movement and how high-profile figures are reclaiming traditional, eco-conscious living in a modern Kenyan context.",
+      "bodySample": "# Sueh Owino Embraces Sustainable Living in New Mud Home  The air inside the structure is different. It carries a subtle, cooling weight, a gentle dampness that smells faintly of sun-baked earth and q"
     }
   ]
 }
