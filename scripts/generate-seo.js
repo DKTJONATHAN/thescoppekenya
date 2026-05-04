@@ -147,21 +147,26 @@ async function loadPosts() {
 
 function generateMainSitemap(posts) {
   const blocks = [];
+  const buildTime = toW3CDate(new Date());
+  const newestPostDate = posts.length ? toW3CDate(posts[0].lastmod || posts[0].date) : buildTime;
 
-  // 1. Static Pages
+  // 1. Static Pages — include <lastmod> on every URL
   for (const p of STATIC_PAGES) {
-    blocks.push(`  <url>\n    <loc>${SITE_URL}${p.loc}</loc>\n    <changefreq>${p.changefreq}</changefreq>\n    <priority>${p.priority}</priority>\n  </url>`);
+    const lm = p.loc === '/' || p.loc === '/archive' ? newestPostDate : buildTime;
+    blocks.push(`  <url>\n    <loc>${SITE_URL}${p.loc}</loc>\n    <lastmod>${lm}</lastmod>\n    <changefreq>${p.changefreq}</changefreq>\n    <priority>${p.priority}</priority>\n  </url>`);
   }
 
-  // 2. Categories
+  // 2. Categories — lastmod = newest post in that category (fallback to build time)
   const uniqueCategories = [...new Set([...CATEGORIES, ...posts.map(p => p.category.toLowerCase().replace(/[^a-z0-9-]/g, '-'))])].filter(Boolean);
   for (const cat of uniqueCategories) {
-    blocks.push(`  <url>\n    <loc>${SITE_URL}/category/${cat}</loc>\n    <changefreq>hourly</changefreq>\n    <priority>0.9</priority>\n  </url>`);
+    const newestInCat = posts.find(p => p.category.toLowerCase().replace(/[^a-z0-9-]/g, '-') === cat);
+    const lm = toW3CDate(newestInCat ? (newestInCat.lastmod || newestInCat.date) : new Date());
+    blocks.push(`  <url>\n    <loc>${SITE_URL}/category/${cat}</loc>\n    <lastmod>${lm}</lastmod>\n    <changefreq>hourly</changefreq>\n    <priority>0.9</priority>\n  </url>`);
   }
 
-  // 3. Posts (NO tags included)
+  // 3. Posts — lastmod reflects 'updated' frontmatter when present, else publish date
   for (const p of posts) {
-    blocks.push(`  <url>\n    <loc>${SITE_URL}/article/${escapeXml(p.slug)}</loc>\n    <lastmod>${toW3CDate(p.date)}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>`);
+    blocks.push(`  <url>\n    <loc>${SITE_URL}/article/${escapeXml(p.slug)}</loc>\n    <lastmod>${toW3CDate(p.lastmod || p.date)}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>`);
   }
 
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${blocks.join('\n')}\n</urlset>`;
