@@ -128,6 +128,7 @@ async function loadPosts() {
         slug: data.slug || file.replace('.md', ''),
         title: data.title || 'Za Ndani Article',
         date: data.date || new Date().toISOString(),
+        lastmod: data.updated || data.modified || data.lastmod || data.date || new Date().toISOString(),
         image: data.image || '',
         category: data.category || 'News',
         author: data.author || 'Za Ndani',
