@@ -46,7 +46,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests google-genai google-auth google-auth-httplib2
+          pip install requests google-genai
 
       - name: Write opinion pieces from existing articles
         env:
@@ -58,7 +58,7 @@ jobs:
           MAX_ARTICLES: ${{ inputs.max_articles || '1' }}
           SOURCE_CATEGORY: ${{ inputs.source_category || '' }}
         run: |
-          python - <<'PYEOF'
+          cat > _pipeline.py << 'PYEOF'
           import os, json, re, time, datetime, hashlib, itertools, sys, random
           import requests
           from google import genai
@@ -71,7 +71,13 @@ jobs:
           SITE_BASE_URL     = "https://zandani.co.ke"
           FALLBACK_IMAGE    = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
 
-          MODELS = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
+          MODELS_TO_TRY = [
+              "gemini-3.1-pro-preview",
+              "gemini-3.1-flash-lite-preview",
+              "gemini-3-flash-preview",
+              "gemini-2.5-pro",
+              "gemini-2.5-flash"
+          ]
 
           POSTS_DIR       = os.environ.get("POSTS_DIR", "content/posts")
           MEMORY_FILE     = os.environ.get("MEMORY_FILE", ".github/memory_opinions.json")
@@ -80,15 +86,6 @@ jobs:
 
           COLUMNIST_NAME  = "From The Editor"
           COLUMNIST_SLUG  = "from-the-editor"
-          COLUMNIST_VOICE = (
-              "a razor-tongued Kenyan opinion columnist writing as 'From The Editor' who is "
-              "extremely opinionated and aggressively judgmental about every person and event covered. "
-              "You hold nothing back. You name names, assign blame, mock poor decisions, praise bold "
-              "ones, and issue hard verdicts on everyone involved. You write with total conviction â€” "
-              "never neutral, never sitting on the fence. You pick a side, argue it hard, and judge "
-              "every actor in the story with brutal clarity. Think of the most opinionated editorial "
-              "voice in Kenyan media and multiply that by three."
-          )
 
           BANNED_PHRASES = [
               "sasa basi", "melting the pot", "spill the tea", "grab your popcorn",
@@ -97,9 +94,89 @@ jobs:
               "navigating the landscape", "in today's digital age", "tapestry",
               "it is what it is", "at the end of the day", "moving forward"
           ]
-          banned_str = ", ".join(BANNED_PHRASES)
+          
+          # -- STYLE PRESETS FOR THE COLUMNIST ---------------------------------------------
+          STYLE_PRESETS = {
+              "harsh_critic": {
+                  "name": "harsh_critic",
+                  "lead_style": "direct attack on a poor decision or action",
+                  "tone": "brutal, unapologetic, zero-tolerance",
+                  "angle": "who failed, how they failed, and why they should be embarrassed",
+                  "structure": "verdict -> evidence of failure -> mocking the excuses -> final judgment",
+                  "sentence_mix": "short, sharp, aggressive sentences",
+                  "closing": "a definitive statement on the consequences of the failure"
+              },
+              "mocking_satire": {
+                  "name": "mocking_satire",
+                  "lead_style": "heavy sarcasm or feigned surprise",
+                  "tone": "sarcastic, witty, dismissive",
+                  "angle": "how ridiculous the situation is when you actually look at the facts",
+                  "structure": "sarcastic hook -> exposing the absurdity -> laughing at the main players -> final joke",
+                  "sentence_mix": "flowing sentences dripping with irony",
+                  "closing": "a punchline summarizing the farce"
+              },
+              "contrarian_take": {
+                  "name": "contrarian_take",
+                  "lead_style": "stating the exact opposite of what the public currently believes",
+                  "tone": "intellectual, provocative, slightly arrogant",
+                  "angle": "why everyone else is wrong and missing the real point",
+                  "structure": "the popular myth -> dismantling it -> the actual truth -> conclusion",
+                  "sentence_mix": "argumentative, debate-style pacing",
+                  "closing": "a challenge to the reader's assumptions"
+              },
+              "moral_outrage": {
+                  "name": "moral_outrage",
+                  "lead_style": "fiery denunciation of the broader societal issue",
+                  "tone": "angry, passionate, righteous",
+                  "angle": "why this news item represents a deeper rot in society or the industry",
+                  "structure": "the outrage -> the specific trigger event -> the wider systemic problem -> call to action",
+                  "sentence_mix": "rhetorical questions mixed with declarative statements",
+                  "closing": "a demand for accountability"
+              },
+              "reluctant_praise": {
+                  "name": "reluctant_praise",
+                  "lead_style": "admitting that, for once, someone actually did something right",
+                  "tone": "grudgingly respectful, surprised",
+                  "angle": "why this action deserves praise, despite the person's usual flaws",
+                  "structure": "the surprising success -> why it was unexpected -> why it worked -> final nod",
+                  "sentence_mix": "balanced, weighing pros and cons",
+                  "closing": "a warning not to mess it up next time"
+              }
+          }
+          PRESET_NAMES = list(STYLE_PRESETS.keys())
 
-          # â”€â”€ Gemini setup â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          # -- MEMORY MANAGEMENT -----------------------------------------------------------
+          def load_memory(path):
+              if not os.path.exists(path):
+                  return {"published_hashes": [], "style_history": []}
+              raw = json.loads(open(path).read())
+              if isinstance(raw, list):
+                  print("[memory] Migrating flat array -> new dict format")
+                  return {"published_hashes": raw, "style_history": []}
+              # If it's the old dict format without style_history, update it
+              if "published_hashes" not in raw:
+                  hashes = list(raw.keys())
+                  return {"published_hashes": hashes, "style_history": []}
+              
+              raw.setdefault("published_hashes", [])
+              raw.setdefault("style_history", [])
+              return raw
+
+          def save_memory(path, mem):
+              mem["published_hashes"] = mem["published_hashes"][-300:]
+              mem["style_history"]    = mem["style_history"][-80:]
+              with open(path, 'w') as f:
+                  json.dump(mem, f, indent=2, ensure_ascii=False)
+
+          def pick_style_preset(style_history):
+              if len(style_history) >= 3:
+                  last3 = [h.get("stylePreset") for h in style_history[-3:]]
+                  if len(set(last3)) == 1 and last3[0] in PRESET_NAMES:
+                      available = [p for p in PRESET_NAMES if p != last3[0]]
+                      return random.choice(available)
+              return random.choice(PRESET_NAMES)
+
+          # -- GEMINI CLIENT ---------------------------------------------------------------
           raw_keys = [
               os.environ.get("GEMINI_WRITE_KEY"),
               os.environ.get("GEMINI_API_KEY"),
@@ -110,85 +187,105 @@ jobs:
               print("No Gemini API keys found. Exiting.")
               sys.exit(1)
 
-          key_cycle          = itertools.cycle(api_keys)
-          current_key        = next(key_cycle)
-          client_g           = genai.Client(api_key=current_key)
-          google_search_tool = types.Tool(google_search=types.GoogleSearch())
+          key_cycle   = itertools.cycle(api_keys)
+          current_key = next(key_cycle)
+          client      = genai.Client(api_key=current_key)
 
-          def gemini_generate(prompt: str, temperature=0.92) -> str:
-              global current_key, client_g
-              for model_id in MODELS:
-                  for _ in range(len(api_keys) * 2):
+          def gemini_generate(prompt, label='', expect_json=False, temperature=0.75, max_tokens=4000, use_search=False):
+              global current_key, client
+              seed = random.randint(1,999999)
+              for model in MODELS_TO_TRY:
+                  for attempt in range(6):
                       try:
-                          resp      = client_g.models.generate_content(
-                              model=model_id,
-                              contents=prompt,
-                              config=types.GenerateContentConfig(
-                                  temperature=temperature,
-                                  tools=[google_search_tool]
-                              )
+                          config = types.GenerateContentConfig(
+                              temperature=temperature,
+                              max_output_tokens=max_tokens,
+                              candidate_count=1, seed=seed, top_p=0.95,
+                              frequency_penalty=0.35, presence_penalty=0.25,
+                              response_mime_type='application/json' if expect_json else 'text/plain',
+                              tools=[types.Tool(google_search=types.GoogleSearch())] if use_search else None
                           )
+                          resp      = client.models.generate_content(model=model, contents=prompt, config=config)
                           candidate = resp.candidates[0] if resp.candidates else None
                           if candidate and candidate.content and candidate.content.parts:
-                              return "".join(
+                              result = ''.join(
                                   p.text for p in candidate.content.parts
-                                  if hasattr(p, "text") and p.text
+                                  if hasattr(p, 'text') and p.text
                               ).strip()
-                          return (resp.text or "").strip()
+                          else:
+                              result = (resp.text or '').strip()
+                          print(f'[gemini] OK ({model}, temp={temperature}): {label}')
+                          return result
                       except Exception as e:
                           err = str(e).lower()
-                          if "429" in str(err) or "quota" in str(err).lower() or "rate" in str(err).lower() or "503" in str(err) or "unavailable" in str(err).lower() or "500" in str(err) or "overloaded" in str(err).lower() or "resource_exhausted" in str(err).lower():
-                              print("Quota hit. Rotating key...")
+                          if any(x in err for x in ['429', 'quota', 'rate', '503', 'unavailable', '500', 'overloaded', 'resource_exhausted']):
+                              wait = random.uniform(20, 35)
+                              print(f'[gemini] Rate limit on {model} - rotating key, wait {wait:.1f}s')
+                              time.sleep(wait)
                               current_key = next(key_cycle)
-                              client_g    = genai.Client(api_key=current_key)
-                              time.sleep(15)
-                          else:
-                              print(f"Gemini error ({model_id}): {e}")
+                              client      = genai.Client(api_key=current_key)
+                              continue
+                          elif any(x in err for x in ['not found', 'not support', 'not_found', 'deprecated']):
                               break
-              raise RuntimeError("All Gemini attempts failed")
+                          else:
+                              print(f'[gemini] Error ({model}, attempt {attempt+1}): {e}')
+                              time.sleep(3)
+                              continue
+              return None
 
-          # â”€â”€ Parse frontmatter from markdown file â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          def safe_json(text, default=None):
+              if default is None: default = {}
+              if not text: return default
+              cleaned = re.sub(r'^```json\s*|```\s*$', '', text.strip(), flags=re.I|re.M).strip()
+              try: return json.loads(cleaned)
+              except Exception:
+                  m = re.search(r'\{.*\}|\[.*\]', cleaned, re.S)
+                  if m:
+                      try: return json.loads(m.group(0))
+                      except: pass
+              return default
+
+          def clean_text(text):
+              text = text.replace('\u2014', '-').replace('\u2013', '-').replace('\xa0', ' ')
+              return re.sub(r'\s+', ' ', text).strip()
+
+          # -- PARSE EXISTING ARTICLES -----------------------------------------------------
           def parse_frontmatter(filepath: str) -> dict:
               try:
                   with open(filepath, "r", encoding="utf-8") as f:
                       raw = f.read()
                   fm_match = re.match(r'^---\n(.*?)\n---\n', raw, re.DOTALL)
-                  if not fm_match:
-                      return {}
+                  if not fm_match: return {}
                   fm_text = fm_match.group(1)
                   result  = {}
                   for line in fm_text.splitlines():
                       m = re.match(r'(\w+):\s*["\']?(.*?)["\']?\s*$', line)
-                      if m:
-                          result[m.group(1).lower()] = m.group(2).strip().strip('"').strip("'")
-                  body_start    = raw.find("---", 3) + 3
+                      if m: result[m.group(1).lower()] = m.group(2).strip().strip('"').strip("'")
+                  body_start     = raw.find("---", 3) + 3
                   result["body"] = raw[body_start:].strip()
                   return result
               except Exception as e:
                   print(f"  Parse error {filepath}: {e}")
                   return {}
 
-          # â”€â”€ Load all source articles (exclude opinions) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def load_source_articles() -> list:
               if not os.path.exists(POSTS_DIR):
                   print(f"Posts directory '{POSTS_DIR}' not found.")
                   return []
               sources = []
               for fn in sorted(os.listdir(POSTS_DIR), reverse=True):
-                  if not fn.endswith(".md"):
-                      continue
+                  if not fn.endswith(".md"): continue
                   fp   = os.path.join(POSTS_DIR, fn)
                   meta = parse_frontmatter(fp)
-                  if not meta:
-                      continue
+                  if not meta: continue
+                  
                   cat = meta.get("category", "").lower().strip()
-                  if cat in ("opinions", "opinion"):
-                      continue
-                  if SOURCE_CATEGORY and cat != SOURCE_CATEGORY:
-                      continue
+                  if cat in ("opinions", "opinion"): continue
+                  if SOURCE_CATEGORY and cat != SOURCE_CATEGORY: continue
+                  
                   original_image = meta.get("image", "").strip().strip('"').strip("'")
-                  if not original_image:
-                      original_image = FALLBACK_IMAGE
+                  if not original_image: original_image = FALLBACK_IMAGE
+                  
                   sources.append({
                       "file":     fn,
                       "slug":     meta.get("slug", fn.replace(".md", "")).strip().strip('"'),
@@ -201,319 +298,218 @@ jobs:
               print(f"Loaded {len(sources)} source articles (opinions excluded)")
               return sources
 
-          # â”€â”€ Select articles not yet opinionated â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def pick_sources(sources: list, memory: dict, count: int) -> list:
+              published_hashes = memory.get("published_hashes", [])
               unchosen = [
                   s for s in sources
-                  if hashlib.md5(s["slug"].encode()).hexdigest() not in memory
+                  if hashlib.md5(s["slug"].encode()).hexdigest() not in published_hashes
               ]
               return unchosen[:count]
 
-          # â”€â”€ Research longtail keywords â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-          def research_longtail_keywords(title: str, category: str) -> str:
+          # -- PIPELINE STAGES ------------------------------------------------------------
+          def stage_research_and_seo(source_title, source_category, source_body):
               prompt = (
-                  f'Search Google right now for the topic: "{title}"\n'
-                  f"Category: {category}\n\n"
-                  "Find the top 6 longtail keyword phrases Kenyan audiences are actually "
-                  "searching on Google related to this topic right now in 2026.\n"
-                  "Rules:\n"
-                  "- Each keyword must be 3-6 words long\n"
-                  "- Must be specific (include names, events, or details)\n"
-                  "- No generic phrases like 'latest news' or 'who is'\n"
-                  "- Return ONLY a comma-separated list of 6 phrases. Nothing else."
+                  f"Search Google right now for the topic: \"{source_title}\"\n"
+                  f"Category: {source_category}\n\n"
+                  f"Original article excerpt: {source_body[:1000]}\n\n"
+                  "Based on your search and the context, act as an SEO Strategist and Opinion Editor.\n"
+                  "1. Find 3-5 longtail keyword phrases audiences are searching for related to this topic right now.\n"
+                  "2. Create an aggressive, highly opinionated headline (under 65 chars) for a column.\n"
+                  "3. Create a punchy meta description (120-155 chars).\n"
+                  "4. Generate a clean URL slug (3-5 words).\n\n"
+                  "Return ONLY valid JSON:\n"
+                  '{"longtail_keywords": ["kw1", "kw2"], "final_title": "...", "meta_description": "...", "seo_slug": "...", "tags": ["..."]}'
               )
-              try:
-                  raw = gemini_generate(prompt, temperature=0.3).strip()
-                  raw = re.sub(r'^[\d\.\-\*]+\s*', "", raw, flags=re.MULTILINE)
-                  keywords = [k.strip().lower() for k in re.split(r'[,\n]', raw) if k.strip()]
-                  result   = ", ".join(keywords[:6])
-                  print(f"  Longtail keywords: {result}")
-                  return result
-              except Exception as e:
-                  print(f"  Keyword research failed: {e}")
-                  return title.lower()
+              text = gemini_generate(prompt, label='research-seo', expect_json=True, temperature=0.5, use_search=True)
+              return safe_json(text, default={})
 
-          # â”€â”€ Robust field extractor â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-          # Gemini with google_search often prepends reasoning/search text before
-          # the structured block. We search the ENTIRE output, not just line-start.
-          def pf(label: str, text: str) -> str:
-              # 1. Try anchored to line start (ideal case)
-              m = re.search(rf"^{label}:\s*(.+)$", text, re.MULTILINE | re.IGNORECASE)
-              if m:
-                  val = m.group(1).strip()
-                  # reject if it looks like it picked up a continuation line
-                  if len(val) > 2:
-                      return val
-              # 2. Fallback: find label anywhere in text
-              m = re.search(rf"{label}:\s*(.+?)(?:\n|$)", text, re.IGNORECASE)
-              return m.group(1).strip() if m else ""
-
-          # â”€â”€ Write the opinion piece â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-          def write_opinion(source: dict, longtail_keywords: str) -> dict:
+          def stage_write(source, seo_data, style_preset, all_history):
               src_title = source["title"]
               src_slug  = source["slug"]
               src_body  = source["body"]
               src_cat   = source["category"]
-
-              all_files = [f for f in os.listdir(POSTS_DIR) if f.endswith(".md")]
-              sample    = random.sample(all_files, min(len(all_files), 3))
-              internal_link_lines = []
-              for fn in sample:
-                  try:
-                      with open(os.path.join(POSTS_DIR, fn), "r", encoding="utf-8") as cf:
-                          txt = cf.read()
-                      t_m = re.search(r'title:\s*["\']?(.*?)["\']?\s*$', txt, re.MULTILINE)
-                      t   = t_m.group(1).strip().strip('"') if t_m else fn.replace(".md", "")
-                      internal_link_lines.append(
-                          f"- Title: {t} | Link: {SITE_BASE_URL}/article/{fn.replace('.md','')}"
-                      )
-                  except Exception:
-                      continue
-              internal_links = "\n".join(internal_link_lines)
-
+              
+              recent_samples = json.dumps([
+                  {'title':h['title'],'stylePreset':h['stylePreset'],'articleAngle':h['articleAngle']}
+                  for h in all_history[:4]
+              ],ensure_ascii=False)
+              
+              banned_str = ", ".join(BANNED_PHRASES)
+              keywords_str = ", ".join(seo_data.get('longtail_keywords', []))
+              
               prompt = (
                   f"Current Date: {full_date_str}. Year: {current_year}.\n\n"
-                  "â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\n"
-                  f"YOUR ROLE: You are {COLUMNIST_VOICE}\n\n"
-                  "OUTPUT TYPE: OPINION piece â€” not a news report, not a summary.\n"
-                  "You are REACTING to the source article with hard editorial judgment.\n"
-                  "â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\n\n"
-                  "SOURCE ARTICLE (your trigger â€” DO NOT copy it verbatim):\n"
-                  f'TITLE: "{src_title}"\n'
-                  f"CATEGORY: {src_cat}\n"
-                  f"URL: {SITE_BASE_URL}/article/{src_slug}\n"
-                  f"EXCERPT:\n{src_body[:1500]}\n\n"
-                  "â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\n"
-                  "SEO LONGTAIL KEYWORDS (MANDATORY USAGE):\n"
-                  f"Target keywords: {longtail_keywords}\n"
-                  "Rules for keyword usage:\n"
-                  "- Use at least 4 of these phrases naturally inside the article body\n"
-                  "- Use at least 1 longtail keyword in the article TITLE\n"
-                  "- Use at least 1 longtail keyword in the EXCERPT\n"
-                  "- Use at least 2 longtail keywords in subheadings (## or ###)\n"
-                  "- NEVER stuff keywords â€” they must read naturally in context\n"
-                  "â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\n\n"
-                  "RESEARCH INSTRUCTION:\n"
-                  f'1. Search Google for: "{src_title}"\n'
-                  f'2. Search Google for: "{src_title} {current_year} Kenya"\n'
-                  "3. Extract real facts, real quotes, real names, real dates.\n"
-                  "4. Ground every judgment in real evidence from your search.\n"
-                  "DO NOT fabricate facts or quotes.\n"
-                  "â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\n\n"
-                  "MANDATORY SOURCE LINK (link this naturally once mid-body):\n"
-                  f"Title: {src_title} | URL: {SITE_BASE_URL}/article/{src_slug}\n\n"
-                  f"OPTIONAL INTERNAL LINKS (use ONE if genuinely relevant):\n"
-                  f"{internal_links}\n\n"
-                  "â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\n"
-                  "WRITING RULES (ALL MANDATORY):\n"
-                  "- Be EXTREMELY judgmental. Render clear verdicts on every named person.\n"
-                  "- Call out hypocrisy, cowardice, greed, or incompetence â€” when evidence supports.\n"
-                  "- Praise boldness or courage just as forcefully when warranted.\n"
-                  "- Use short, punchy sentences. No diplomatic softening. No hedging.\n"
-                  "- Kenyan cultural context is welcome. Professional English only â€” no Sheng, no Swahili.\n"
-                  f"- BANNED PHRASES: {banned_str}\n"
-                  "- No em-dashes. Single hyphens only.\n"
-                  "- NEVER write the author name inside the article body.\n"
-                  "- Minimum 750 words.\n\n"
-                  "SMART TITLE ENGINE:\n"
-                  "Step 1 - Front-load with the primary subject name or topic.\n"
-                  "Step 2 - Include at least ONE longtail keyword phrase from the list above.\n"
-                  "Step 3 - Make the title opinionated â€” it should signal a verdict, not just a topic.\n"
-                  "Step 4 - Under 65 characters. No clickbait question marks.\n\n"
-                  "STRUCTURE:\n"
-                  "1. Opening paragraph (40-55 words): your verdict, stated immediately. No setup.\n"
-                  "2. ## H2 subheading â€” must contain at least one longtail keyword.\n"
-                  "3. 4-6 body sections with ### subheadings â€” each judges at least one named actor.\n"
-                  "   At least 2 ### subheadings must contain a longtail keyword.\n"
-                  "4. Mandatory source link naturally embedded mid-body.\n"
-                  "5. Final paragraph: forceful verdict on what SHOULD happen next.\n\n"
-                  "CRITICAL OUTPUT RULES:\n"
-                  "- Output NOTHING before TITLE:\n"
-                  "- No preamble, no 'Here is the article', no markdown code fences\n"
-                  "- Do NOT wrap output in ``` or ```markdown\n"
-                  "- Do NOT add --- frontmatter delimiters anywhere\n"
-                  "- Start your response with exactly: TITLE:\n\n"
-                  "STRICT OUTPUT FORMAT:\n"
-                  "TITLE: [opinionated headline with longtail keyword, under 65 chars]\n"
-                  "SLUG: [lowercase-hyphen-slug]\n"
-                  "EXCERPT: [140-155 chars â€” states your verdict boldly, includes a longtail keyword]\n"
-                  "TAGS: [comma, separated, lowercase â€” include the longtail keyword phrases as tags]\n"
-                  "BODY:\n"
-                  "[Full opinion piece. No title. No author name. No byline. Just the article body.]\n"
+                  f"YOUR ROLE: You are a razor-tongued Kenyan opinion columnist writing as '{COLUMNIST_NAME}'.\n"
+                  f"You hold nothing back. You name names, assign blame, mock poor decisions, and issue hard verdicts.\n\n"
+                  f"SOURCE EVENT TO REACT TO:\n"
+                  f"Title: {src_title}\n"
+                  f"Excerpt:\n{src_body[:2000]}\n\n"
+                  f"COLUMN METADATA:\n"
+                  f"Title: {seo_data.get('final_title', src_title)}\n"
+                  f"Keywords to use naturally: {keywords_str}\n"
+                  f"Style Preset: {json.dumps(style_preset, ensure_ascii=False)}\n"
+                  f"Recent angles used (do not repeat): {recent_samples}\n\n"
+                  "WRITING RULES:\n"
+                  f"- Banned phrases: {banned_str}\n"
+                  "- No em-dashes or en-dashes. Single hyphens only.\n"
+                  "- NEVER write your author name or byline in the text.\n"
+                  "- Output ONLY the Markdown article body.\n"
+                  "- Start immediately with a 40-55 word introductory verdict paragraph.\n"
+                  "- Use ## and ### subheadings to break up your arguments.\n"
+                  f"- Naturally embed this link exactly once mid-body: [{src_title}]({SITE_BASE_URL}/article/{src_slug})\n"
+                  "- Ground your arguments in the facts provided in the excerpt.\n"
+                  "- Minimum 600 words.\n"
               )
+              return gemini_generate(prompt, label='column-write', expect_json=False, temperature=0.9, max_tokens=4200)
 
-              raw = gemini_generate(prompt, temperature=0.95)
+          def stage_review(article_text, source_text, style_preset, all_history):
+              recent_samples = json.dumps([
+                  {'title':h['title'],'bodySample':h['bodySample'],'stylePreset':h['stylePreset']}
+                  for h in all_history[:3]
+              ],ensure_ascii=False)
+              prompt = (
+                  "Strict Editor-in-Chief reviewer.\n"
+                  f"Style preset used: {json.dumps(style_preset,ensure_ascii=False)}\n"
+                  f"Recent columns: {recent_samples}\n\n"
+                  f"Source news:\n{source_text[:2000]}\n\n"
+                  f"Generated column:\n{article_text[:4000]}\n\n"
+                  "Score and return only valid JSON:\n"
+                  '{"source_similarity":1,"house_style_repetition":1,"opinion_strength":10,"verdict":"keep or rewrite"}\n\n'
+                  "source_similarity: 1=completely original take, 10=just summarizes the news.\n"
+                  "house_style_repetition: 1=fresh format, 10=sounds exactly like recent columns.\n"
+                  "opinion_strength: 1=weak/neutral, 10=strong clear verdict.\n"
+                  "verdict MUST be 'rewrite' if source_similarity>=6 or opinion_strength<=6\n"
+              )
+              text = gemini_generate(prompt, label='column-review', expect_json=True, temperature=0.2, max_tokens=1000)
+              return safe_json(text, default={})
 
-              # â”€â”€ Strip any wrapping code fences â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-              raw = re.sub(r'^```[a-zA-Z]*\n?', "", raw, flags=re.IGNORECASE).strip()
-              raw = re.sub(r'\n?```\s*$', "", raw).strip()
+          def stage_rewrite(article_text, source_text, style_preset, review_data, keywords_str):
+              prompt = (
+                  "Rewrite this opinion column to be more aggressive, more original, and less like a news summary.\n\n"
+                  f"Style preset: {json.dumps(style_preset,ensure_ascii=False)}\n"
+                  f"Review feedback: {json.dumps(review_data,ensure_ascii=False)}\n"
+                  f"Keywords to include: {keywords_str}\n\n"
+                  f"Column to rewrite:\n{article_text[:6000]}\n\n"
+                  "Rules: Output only Markdown body. No em-dashes. Be opinionated. Render a verdict.\n"
+              )
+              return gemini_generate(prompt, label='column-rewrite', expect_json=False, temperature=0.92, max_tokens=4200)
 
-              # â”€â”€ Strip any accidental leading frontmatter block â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-              raw = re.sub(r'^---\s*\n.*?\n---\s*\n', "", raw, flags=re.DOTALL).strip()
-
-              # â”€â”€ If Gemini put preamble before TITLE:, skip to TITLE: â”€â”€â”€â”€â”€â”€â”€
-              title_pos = re.search(r'^TITLE:', raw, re.MULTILINE | re.IGNORECASE)
-              if title_pos:
-                  raw = raw[title_pos.start():]
-
-              parsed_title   = pf("TITLE",   raw)
-              parsed_slug    = pf("SLUG",    raw)
-              parsed_excerpt = pf("EXCERPT", raw)
-              parsed_tags    = pf("TAGS",    raw)
-
-              # â”€â”€ Extract body â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-              body_m = re.search(r"^BODY:\s*\n([\s\S]+)", raw, re.MULTILINE | re.IGNORECASE)
-              body   = body_m.group(1).strip() if body_m else raw
-
-              # â”€â”€ Clean any leaked field labels out of body â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-              for field in ["TITLE", "SLUG", "EXCERPT", "TAGS", "BODY"]:
-                  body = re.sub(rf"^{field}:.*\n?", "", body, flags=re.MULTILINE | re.IGNORECASE).strip()
-
-              # â”€â”€ Strip any accidental frontmatter block at top of body â”€â”€â”€â”€â”€â”€
-              body = re.sub(r'^---\s*\n.*?\n---\s*\n?', "", body, flags=re.DOTALL).strip()
-
-              # â”€â”€ Strip byline at top of body â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-              body = re.sub(r'^(?:\*\*)?(?:By|Author|Opinion by|From The Editor):?[^\n]*\n+', "", body, flags=re.IGNORECASE).strip()
-
-              # â”€â”€ Scrub em/en dashes from ALL fields â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-              # Use chr() â€” encoding-agnostic, works in any heredoc context
-              _DASHES = [chr(0x2014), chr(0x2013), chr(0x2012), chr(0x2015),
-                         chr(0x2011), chr(0x2010), chr(0x2212), chr(0xFE58)]
-              def scrub_dashes(s):
-                  for d in _DASHES:
-                      s = s.replace(d, "-")
-                  return s
-              body           = scrub_dashes(body)
-              parsed_title   = scrub_dashes(parsed_title)
-              parsed_excerpt = scrub_dashes(parsed_excerpt)
-              parsed_tags    = scrub_dashes(parsed_tags)
-
-              # â”€â”€ Hard fallbacks so we never write empty fields â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-              if not parsed_title:
-                  parsed_title = src_title + " - Opinion"
-                  print(f"  WARNING: TITLE empty, using fallback: {parsed_title}")
-
-              if not parsed_slug:
-                  parsed_slug = re.sub(r"[^a-z0-9]+", "-", parsed_title.lower()).strip("-")[:70]
-                  print(f"  WARNING: SLUG empty, generated: {parsed_slug}")
-
-              if not parsed_excerpt:
-                  first_para = next((l.strip() for l in body.splitlines() if len(l.strip()) > 40), "")
-                  parsed_excerpt = first_para[:155] if first_para else f"Opinion: {parsed_title}"[:155]
-                  print(f"  WARNING: EXCERPT empty, using fallback")
-
-              if not parsed_tags:
-                  parsed_tags = "opinions, kenya, editorial"
-
-              if not body or len(body) < 100:
-                  print(f"  ERROR: Body is empty or too short. Raw output:\n{raw[:500]}")
-                  raise ValueError("Body extraction failed â€” Gemini output was not parseable")
-
-              return {
-                  "TITLE":   parsed_title,
-                  "SLUG":    parsed_slug,
-                  "EXCERPT": parsed_excerpt,
-                  "TAGS":    parsed_tags,
-                  "BODY":    body,
-              }
-
-          # â”€â”€ Save article â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-          def save_opinion(parsed: dict, source_image: str, source_slug: str) -> str:
-              slug        = parsed["SLUG"]
-              canonical   = f"{SITE_BASE_URL}/article/{slug}"
-              author_url  = f"{SITE_BASE_URL}/author/{COLUMNIST_SLUG}"
-              description = parsed["EXCERPT"].replace('"', "'")[:160]
-
-              tags_list = [t.strip().lower().replace(" ", "-") for t in parsed["TAGS"].split(",") if t.strip()]
-              if "opinions" not in tags_list:
-                  tags_list.insert(0, "opinions")
-              tags_json = json.dumps(tags_list)
-
-              frontmatter = "\n".join([
-                  "---",
-                  f'title: "{parsed["TITLE"].replace(chr(34), chr(39))}"',
-                  f'slug: "{slug}"',
-                  f'description: "{description}"',
-                  f'author: "{COLUMNIST_NAME}"',
-                  f'author_url: "{author_url}"',
-                  f'image: "{source_image}"',
-                  'category: "Opinions"',
-                  f'tags: {tags_json}',
-                  f'canonical: "{canonical}"',
-                  f'date: "{publish_timestamp}"',
-                  f'authorUrl: "https://zandani.co.ke/author/{COLUMNIST_NAME.lower().replace(" ", "-")}"',
-                  f'dateModified: "{publish_timestamp}"',
-                  f'schema: "NewsArticle"',
-                  "---",
-              ])
-
-              # Write frontmatter + blank line + body as separate concatenation
-              # to guarantee the \n between --- and body is correct
-              full_content = frontmatter + "\n\n" + parsed["BODY"] + "\n"
-
-              os.makedirs(POSTS_DIR, exist_ok=True)
-              filename = f"{today_str}-{slug}.md"
-              with open(os.path.join(POSTS_DIR, filename), "w", encoding="utf-8") as f:
-                  f.write(full_content)
-
-              print(f"  Saved    : {filename}")
-              print(f"  Title    : {parsed['TITLE']}")
-              print(f"  Author   : {COLUMNIST_NAME}")
-              print(f"  Category : Opinions (forced)")
-              print(f"  Image    : reused from /article/{source_slug}")
-              print(f"  Canon    : {canonical}")
-              return filename
-
-          # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-          # MAIN
-          # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-          memory  = json.load(open(MEMORY_FILE)) if os.path.exists(MEMORY_FILE) else {}
+          # -- MAIN EXECUTION --------------------------------------------------------------
+          memory  = load_memory(MEMORY_FILE)
           sources = load_source_articles()
 
           if not sources:
               print("No source articles available. Exiting.")
               sys.exit(0)
 
-          picks            = pick_sources(sources, memory, MAX_ARTICLES)
-          articles_written = 0
-
+          picks = pick_sources(sources, memory, MAX_ARTICLES)
           if not picks:
               print("All available source articles have already been opinionated. Nothing new to write.")
               sys.exit(0)
 
+          posts_dir = os.environ.get("POSTS_DIR", "content/posts")
+          os.makedirs(posts_dir, exist_ok=True)
+          
+          recent_history    = get_recent_history(posts_dir, limit=HISTORY_LOOK)
+          style_history_mem = memory.get('style_history', [])
+          all_history       = recent_history + style_history_mem[-5:]
+          
+          articles_written = 0
+
           for source in picks:
-              print(f"\n--- Opinion on: {source['title']} ---")
-              print(f"    Image   : {source['image'][:70]}")
+              print(f"\n--- Processing Opinion on: {source['title']} ---")
+              
+              preset_name  = pick_style_preset(style_history_mem)
+              style_preset = STYLE_PRESETS[preset_name]
+              print(f'Style preset: {preset_name}')
 
-              longtail_kw = research_longtail_keywords(source["title"], source["category"])
+              seo_data = stage_research_and_seo(source["title"], source["category"], source["body"])
+              if not seo_data or not seo_data.get('final_title'):
+                  print("SEO research failed, falling back.")
+                  seo_data = {
+                      "final_title": source["title"] + " - The Editor's Verdict",
+                      "meta_description": f"An opinion piece on {source['title']}.",
+                      "seo_slug": re.sub(r'[^a-z0-9]+', '-', source["title"].lower()).strip('-')[:68],
+                      "tags": ["Opinions", "Editorial"],
+                      "longtail_keywords": []
+                  }
+                  
               time.sleep(5)
-
-              try:
-                  parsed = write_opinion(source, longtail_kw)
-              except Exception as e:
-                  print(f"  Write failed: {e}")
+              
+              article_text = stage_write(source, seo_data, style_preset, all_history)
+              if not article_text:
+                  print('Write failed. Skipping.')
                   continue
+                  
+              article_text = re.sub(r'^```(?:markdown)?\s*', '', article_text, flags=re.I).rstrip('`').strip()
+              article_text = clean_text(article_text)
+              
+              time.sleep(5)
+              review_data = stage_review(article_text, source["body"], style_preset, all_history)
+              print(f'[review] similarity:{review_data.get("source_similarity")} strength:{review_data.get("opinion_strength")} verdict:{review_data.get("verdict")}')
+              
+              if review_data.get('verdict') == 'rewrite':
+                  print('[review] Rewriting for stronger opinion...')
+                  kw_str = ", ".join(seo_data.get('longtail_keywords', []))
+                  rewritten = stage_rewrite(article_text, source["body"], style_preset, review_data, kw_str)
+                  if rewritten:
+                      article_text = re.sub(r'^```(?:markdown)?\s*', '', rewritten, flags=re.I).rstrip('`').strip()
+                      article_text = clean_text(article_text)
 
-              save_opinion(parsed, source["image"], source["slug"])
+              slug          = seo_data.get('seo_slug') or re.sub(r'[^a-z0-9]+', '-', seo_data.get('final_title', source['title']).lower()).strip('-')[:68]
+              canonical_url = f"{SITE_BASE_URL}/article/{slug}"
+              author_url    = f"{SITE_BASE_URL}/author/{COLUMNIST_SLUG}"
+              tags_list     = [t.strip().lower().replace(" ", "-") for t in seo_data.get('tags', [])]
+              if "opinions" not in tags_list: tags_list.insert(0, "opinions")
+              
+              def q(s): return str(s).replace('"', "'")
+
+              frontmatter = (
+                  '---\n'
+                  f'title: "{q(seo_data.get("final_title", source["title"]))}"\n'
+                  f'slug: "{slug}"\n'
+                  f'author: "{COLUMNIST_NAME}"\n'
+                  f'author_url: "{author_url}"\n'
+                  f'image: "{source["image"]}"\n'
+                  'category: "Opinions"\n'
+                  f'tags: {json.dumps(tags_list, ensure_ascii=False)}\n'
+                  f'canonical: "{canonical_url}"\n'
+                  f'date: "{publish_timestamp}"\n'
+                  f'authorUrl: "https://zandani.co.ke/author/{COLUMNIST_SLUG}"\n'
+                  f'dateModified: "{publish_timestamp}"\n'
+                  'schema: "NewsArticle"\n'
+                  f'description: "{q(seo_data.get("meta_description", ""))[:155]}"\n'
+                  f'excerpt: "{q(seo_data.get("meta_description", ""))[:155]}"\n'
+                  f'focusKeyword: "{q(seo_data.get("focus_keyword", ""))}"\n'
+                  f'stylePreset: "{style_preset["name"]}"\n'
+                  f'leadStyle: "{q(style_preset["lead_style"])}"\n'
+                  f'articleAngle: "{q(style_preset["angle"])}"\n'
+                  '---\n\n'
+              )
+
+              filepath = os.path.join(posts_dir, f"{today_str}-{slug}.md")
+              with open(filepath, 'w', encoding='utf-8') as f:
+                  f.write(frontmatter + article_text + '\n')
 
               src_hash = hashlib.md5(source["slug"].encode()).hexdigest()
-              memory[src_hash] = {
-                  "source_title":    source["title"],
-                  "opinion_slug":    parsed["SLUG"],
-                  "longtail_kw":     longtail_kw,
-                  "written_at":      publish_timestamp,
-              }
+              memory.setdefault("published_hashes", []).append(src_hash)
+              memory.setdefault("style_history", []).append({
+                  'title': seo_data.get("final_title"),
+                  'slug': slug,
+                  'stylePreset': style_preset['name'],
+                  'bodySample': article_text[:600],
+              })
+              save_memory(MEMORY_FILE, memory)
+
+              print(f"Saved: {filepath}")
               articles_written += 1
               time.sleep(12)
-
-          os.makedirs(os.path.dirname(MEMORY_FILE), exist_ok=True)
-          with open(MEMORY_FILE, "w") as f:
-              json.dump(memory, f, indent=2)
 
           print(f"\n{'=' * 40}")
           print(f"Done. {articles_written} opinion pieces written.")
           print(f"{'=' * 40}")
           PYEOF
+          python _pipeline.py
 
       - name: Git Safety Pull
         run: |
