@@ -1,29 +1,14 @@
 User-agent: *
 Allow: /
-Allow: /category/
-Allow: /tag/
-Allow: /article/
-Allow: /news
-Allow: /entertainment
-Allow: /sports
-Allow: /business
-Allow: /lifestyle
-Allow: /trending
-Allow: /trending/
 Disallow: /admin/
 Disallow: /wp-admin/
 
+User-agent: Googlebot
+Allow: /
+
 User-agent: Googlebot-News
-Allow: /article/
-Allow: /category/
-Allow: /news
-Allow: /entertainment
-Allow: /sports
-Allow: /business
-Allow: /lifestyle
-Allow: /trending
+Allow: /
 Disallow: /admin/
-Disallow: /tag/
 
 Sitemap: https://zandani.co.ke/sitemap.xml
 Sitemap: https://zandani.co.ke/sitemap-news.xml
