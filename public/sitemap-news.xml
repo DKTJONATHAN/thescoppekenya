@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/dci-jet-fuel-theft</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-04T10:29:16.000Z</news:publication_date>
+      <news:title>DCI Foils Attempted Jet Fuel Theft at Wilson Airport, 4 Arrested</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/is-premflix-the-future-chilling-1994-predictions-for-modern-football</loc>
     <news:news>
       <news:publication>
@@ -287,28 +298,6 @@
       </news:publication>
       <news:publication_date>2026-05-02T10:30:50.000Z</news:publication_date>
       <news:title>Uhuru Kenyatta: Why I Will Not Quit Active Kenyan Politics</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/njugush-wakavinye-sparky-kenya</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-02T10:13:59.000Z</news:publication_date>
-      <news:title>Sparky Kenya Explains Why Njugush Cannot Replace Wakavinye</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/irungu-nyakera-returns-to-farmers-party-after-failing-to-secure-dcp-</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-02T09:34:34.000Z</news:publication_date>
-      <news:title>Irungu Nyakera Returns to Farmers Party After Failing to Secure DCP Nairobi Ticket</news:title>
     </news:news>
   </url>
 </urlset>

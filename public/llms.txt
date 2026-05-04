@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [DCI Foils Attempted Jet Fuel Theft at Wilson Airport, 4 Arrested](https://zandani.co.ke/article/dci-jet-fuel-theft) - DCI detectives foiled a major DCI jet fuel theft at Wilson Airport, leading to 4 arrests. This significant security breach involved siphoning jet fuel from
 - [Is 'Premflix' the Future? Chilling 1994 Predictions for Modern Football Prove Scarily Accurate](https://zandani.co.ke/article/is-premflix-the-future-chilling-1994-predictions-for-modern-football) - Discover how chilling 1994 predictions about 'Premflix' and modern football have come true. Is a standalone streaming service the future?
 - [Kalondu Musyimi Named Top African Showbiz Reporter at Golden Awards](https://zandani.co.ke/article/kalondu-musyimi-showbiz-reporter) - Kalondu Musyimi is the Top African Showbiz Reporter at the 2026 Golden Awards. The Kenyan host beat continental giants for this historic win.
 - [The Silent Catch: Lake Victoria Bombs Threaten Peace](https://zandani.co.ke/article/the-silent-catch-lake-victoria-bombs-threaten-peace) - Decades after Europe's toxic legacy surfaced, a new fear grips Africa, raising mbita live bombs safety concerns.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Spurs Climb Out of Relegation Zone After Stunning De Zerbi-Inspired Win Over Villa](https://zandani.co.ke/article/spurs-climb-out-of-relegation-zone-after-stunning-de-zerbi-inspired-) - Spurs escape the relegation zone with a stunning De Zerbi-inspired win over Villa. A major turning point in their Premier League survival fight.
 - [Opande's Career Cut Short: Naipei's Video Saga, Kumbe The Plot Just Thickened!](https://zandani.co.ke/article/opande-s-career-cut-short-naipei-s-video-saga-kumbe-the-plot-just-th) - In early 2026, Kevin Opande, an employee at the US Embassy in Nairobi, found his career abruptly ended following accusations of leaking explicit videos featuring Mercy Tarus, widely known as Naipei, who had previously challenged Uasin Gishu leaders. The...
 - [Why Kenya Number Plates Are White Front & Yellow Rear](https://zandani.co.ke/article/kenya-number-plates) - Ever wondered about the distinct white and yellow Kenya number plates on cars? The NTSA mandates this for crucial direction identification and road safety.
-- [From Maua Church Girl To East African Megastar: Get Ready For Bessy Blessings!](https://zandani.co.ke/article/from-maua-church-girl-to-east-african-megastar-get-ready-for-bessy-ble) - <html <head <titleFrom Maua Church Girl To East African Megastar: Get Ready For Bessy Blessings!</title </head <body <pThere are some talents you spot early, even when they are just kids with big dreams in a small town. Bessy Blessings, hailing from Meru...
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
