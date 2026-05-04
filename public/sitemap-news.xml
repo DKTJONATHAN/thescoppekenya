@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/sueh-owino-mud-home</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-04T19:56:50.000Z</news:publication_date>
+      <news:title>Sueh Owino Embraces Sustainable Living in New Mud Home</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kra-whistleblower-tips-recover-kes-6-8-billion-in-taxes</loc>
     <news:news>
       <news:publication>

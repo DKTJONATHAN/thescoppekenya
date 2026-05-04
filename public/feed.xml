@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Mon, 04 May 2026 20:02:49 GMT</pubDate>
+    <pubDate>Mon, 04 May 2026 20:16:09 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Sueh Owino Embraces Sustainable Living in New Mud Home]]></title>
+      <link>https://zandani.co.ke/article/sueh-owino-mud-home</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/sueh-owino-mud-home</guid>
+      <pubDate>Mon, 04 May 2026 19:56:50 GMT</pubDate>
+      <dc:creator><![CDATA[Za Ndani]]></dc:creator>
+      <description><![CDATA[Content creator Sueh Owino shifts to eco-friendly earthen architecture, redefining luxury through her coastal heritage. See what happened]]></description>
+      <enclosure url="https://i.ibb.co/jkw2D3Gm/67cc5289da7c.webp" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/jkw2D3Gm/67cc5289da7c.webp" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/jkw2D3Gm/67cc5289da7c.webp" alt="Sueh Owino Embraces Sustainable Living in New Mud Home" /><p>Content creator Sueh Owino shifts to eco-friendly earthen architecture, redefining luxury through her coastal heritage. See what happened</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[KRA whistleblower tips recover KES 6.8 billion in taxes]]></title>
       <link>https://zandani.co.ke/article/kra-whistleblower-tips-recover-kes-6-8-billion-in-taxes</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/tWSLYbr/751fb0d99ba9.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/tWSLYbr/751fb0d99ba9.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/tWSLYbr/751fb0d99ba9.jpg" alt="Confirmed: Mike Sonko Acquitted in Money Laundering Case" /><p>Nairobi court acquits Mike Sonko of money laundering charges due to lack of evidence but orders him to defend irregular tenders. Read the full story.</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Confirmed: IG Kanja Secures Nairobi-Garissa Highway]]></title>
-      <link>https://zandani.co.ke/article/nairobi-garissa-highway-security</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/nairobi-garissa-highway-security</guid>
-      <pubDate>Thu, 30 Apr 2026 10:16:32 GMT</pubDate>
-      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
-      <description><![CDATA[Inspector General Douglas Kanja has deployed GSU and RDU units to the Nairobi-Garissa Highway to stop criminal attacks. Read the full story.]]></description>
-      <enclosure url="https://i.ibb.co/9mbNnQjD/6c92a341253a.jpg" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/9mbNnQjD/6c92a341253a.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/9mbNnQjD/6c92a341253a.jpg" alt="Confirmed: IG Kanja Secures Nairobi-Garissa Highway" /><p>Inspector General Douglas Kanja has deployed GSU and RDU units to the Nairobi-Garissa Highway to stop criminal attacks. Read the full story.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
