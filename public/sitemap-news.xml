@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/dp-gachagua-and-oscar-sudi-threaten-uhuru-kenyatta-s-pension-revocat</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-04T04:11:21.000Z</news:publication_date>
+      <news:title>DP Gachagua and Oscar Sudi Threaten Uhuru Kenyatta&apos;s Pension Revocation, But Former President Remains Unfazed</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/president-ruto-calms-south-rift-dissatisfaction-over-stalled-project</loc>
     <news:news>
       <news:publication>
@@ -320,17 +331,6 @@
       </news:publication>
       <news:publication_date>2026-05-02T05:35:40.000Z</news:publication_date>
       <news:title>The Chronicler&apos;s Folly: A Metric for the Ages, a Whisper of Lost Songs</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/leeds-united-all-but-secure-premier-league-safety-with-emphatic-burn</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-02T04:48:18.000Z</news:publication_date>
-      <news:title>Leeds United All But Secure Premier League Safety With Emphatic Burnley Victory</news:title>
     </news:news>
   </url>
 </urlset>
