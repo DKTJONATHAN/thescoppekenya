@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/versailles-echoes-ghanaian-music-industry-scandals-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-04T12:20:39.000Z</news:publication_date>
+      <news:title>Versailles Echoes: Ghanaian Music Industry Scandals 2026</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/director-explains-devil-wears-prada-2-death-scene-twist</loc>
     <news:news>
       <news:publication>
