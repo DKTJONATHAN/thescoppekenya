@@ -15,6 +15,17 @@
     </news:news>
   </url>
   <url>
+    <loc>https://zandani.co.ke/article/dj-krowbar-wife-photo</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-04T10:28:09.000Z</news:publication_date>
+      <news:title>DJ Krowbar Shares Final Photo of Kids With Late Mother Joyce</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/is-premflix-the-future-chilling-1994-predictions-for-modern-football</loc>
     <news:news>
       <news:publication>
@@ -287,17 +298,6 @@
       </news:publication>
       <news:publication_date>2026-05-02T11:11:54.000Z</news:publication_date>
       <news:title>Isaac Mwaura Orders Garissa and Tana River Flood Evacuation</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/uhuru-kenyatta-active-politics-jubilee</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-02T10:30:50.000Z</news:publication_date>
-      <news:title>Uhuru Kenyatta: Why I Will Not Quit Active Kenyan Politics</news:title>
     </news:news>
   </url>
 </urlset>
