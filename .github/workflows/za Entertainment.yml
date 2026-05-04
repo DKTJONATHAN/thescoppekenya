@@ -671,8 +671,7 @@ jobs:
               print('[review] Rewriting...')
               rewritten = stage_rewrite(article_text, story_brief, style_preset, review_data, internal_links, focus_keyword)
               if rewritten:
-                  article_text = re.sub(r'^
-```(?:markdown)?\s*', '', rewritten, flags=re.I).rstrip('`').strip()
+                  article_text = re.sub(r'^```(?:markdown)?\s*', '', rewritten, flags=re.I).rstrip('`').strip()
                   article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
                   article_text = scrub_source_leaks(article_text)
 
