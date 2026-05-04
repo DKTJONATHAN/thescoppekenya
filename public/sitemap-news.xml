@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/industrial-and-construction-sectors-boost-manufacturing-while-agro-p</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-04T11:29:36.000Z</news:publication_date>
+      <news:title>Industrial and construction sectors boost manufacturing while agro-processing contracts</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenya-proposes-creation-of-county-statistics-offices-in-all-counties</loc>
     <news:news>
       <news:publication>
@@ -298,28 +309,6 @@
       </news:publication>
       <news:publication_date>2026-05-02T11:43:08.000Z</news:publication_date>
       <news:title>The Scramble for Starlight: Kenyan Representation I&apos;m A Celebrity UK</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-flood-deaths-heavy-rains</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-02T11:27:04.000Z</news:publication_date>
-      <news:title>10 Kenya Flood Deaths Confirmed as Heavy Rains Persist</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/garissa-tana-river-flood-evacuation</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-02T11:11:54.000Z</news:publication_date>
-      <news:title>Isaac Mwaura Orders Garissa and Tana River Flood Evacuation</news:title>
     </news:news>
   </url>
 </urlset>
