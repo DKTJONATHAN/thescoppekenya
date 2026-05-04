@@ -47,6 +47,7 @@ export interface PostMetadata {
   image: string;
   category: string;
   author: string;
+  authorImage?: string;
   date: string;
   tags: string[];
   readTime: number;
@@ -185,6 +186,9 @@ export function getAllPodcastEpisodes(): PodcastEpisode[] {
   // Sort by date, descending
   return episodes.sort((a, b) => getSafeTime(b.date) - getSafeTime(a.date));
 }
+
+// Alias used by AudioBriefingsPage
+export const getAllBriefings = getAllPodcastEpisodes;
 
 // ─── ADDED: Returns all slugs for pre-rendering at build time ─────────────────
 export function getAllPostSlugs(): string[] {

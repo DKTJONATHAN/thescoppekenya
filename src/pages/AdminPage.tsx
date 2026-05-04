@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { getAllPosts, Post, categories as defaultCategories } from "@/lib/markdown";
+import { getAllPosts, PostMetadata, Post, categories as defaultCategories } from "@/lib/markdown";
 import {
   Lock, Plus, Eye, FileText, LogOut, Loader2, Pencil, Trash2,
   Github, Search, Users, TrendingUp, BarChart2, Flame,
@@ -56,7 +56,7 @@ export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [pin, setPin] = useState("");
   const [pinError, setPinError] = useState("");
-  const [posts, setPosts] = useState<Post[]>([]);
+  const [posts, setPosts] = useState<PostMetadata[]>([]);
   const [activeTab, setActiveTab] = useState<Tab>("dashboard");
   const [isPublishing, setIsPublishing] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
