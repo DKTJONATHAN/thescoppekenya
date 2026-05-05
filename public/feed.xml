@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Tue, 05 May 2026 19:04:17 GMT</pubDate>
+    <pubDate>Tue, 05 May 2026 19:05:34 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Northern Ireland sports update on injury news and cup results]]></title>
+      <link>https://zandani.co.ke/article/northern-ireland-sports-update-injury-news-cup-results</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/northern-ireland-sports-update-injury-news-cup-results</guid>
+      <pubDate>Tue, 05 May 2026 18:52:24 GMT</pubDate>
+      <dc:creator><![CDATA[Jona Munyi]]></dc:creator>
+      <description><![CDATA[Catch up on Northern Irish sports headlines including Davey Todd's injury withdrawal, Coleraine's Irish Cup victory, and latest GAA developments.]]></description>
+      <enclosure url="https://i.ibb.co/7N4LtpBg/a2592a255a05.png" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/7N4LtpBg/a2592a255a05.png" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/7N4LtpBg/a2592a255a05.png" alt="Northern Ireland sports update on injury news and cup results" /><p>Catch up on Northern Irish sports headlines including Davey Todd's injury withdrawal, Coleraine's Irish Cup victory, and latest GAA developments.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Felix Kosgey Mandates Ethical Leadership in Public Service Reform]]></title>
       <link>https://zandani.co.ke/article/felix-kosgey-mandates-ethical-leadership-in-public-service-reform</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/qYZ9tRV0/fe62a08997b5.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/qYZ9tRV0/fe62a08997b5.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/qYZ9tRV0/fe62a08997b5.jpg" alt="Inside Finance Bill 2026 Plan to Tax Classic Cars 50%" /><p>Finance Bill 2026 car tax targets luxury vintage vehicles worth over 10 million with a new 50 percent excise duty for revenue. Read the full story.</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[2Mbili Rate Card Ranges From Ksh 2K to Ksh 300K]]></title>
-      <link>https://zandani.co.ke/article/2mbili-new-rate-card</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/2mbili-new-rate-card</guid>
-      <pubDate>Fri, 01 May 2026 15:29:58 GMT</pubDate>
-      <dc:creator><![CDATA[Za Ndani]]></dc:creator>
-      <description><![CDATA[Comedian 2Mbili has released a formal price list for appearances ranging from burials to political rallies. Read the full story now.]]></description>
-      <enclosure url="https://i.ibb.co/1J0gdJvm/9f013b42b65a.webp" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/1J0gdJvm/9f013b42b65a.webp" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/1J0gdJvm/9f013b42b65a.webp" alt="2Mbili Rate Card Ranges From Ksh 2K to Ksh 300K" /><p>Comedian 2Mbili has released a formal price list for appearances ranging from burials to political rallies. Read the full story now.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
