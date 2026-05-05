@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Tue, 05 May 2026 14:37:12 GMT</pubDate>
+    <pubDate>Tue, 05 May 2026 14:43:23 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[AI Adoption Dismantles Entry Level Jobs and Career Growth]]></title>
+      <link>https://zandani.co.ke/article/ai-adoption-dismantles-entry-level-jobs-career-growth</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/ai-adoption-dismantles-entry-level-jobs-career-growth</guid>
+      <pubDate>Tue, 05 May 2026 14:28:58 GMT</pubDate>
+      <dc:creator><![CDATA[Elizabeth Muthoni]]></dc:creator>
+      <description><![CDATA[The rapid rise of AI is disrupting global industries and removing entry level roles, creating significant challenges for young professionals today.]]></description>
+      <enclosure url="https://i.ibb.co/S7W38Mgv/b086d46b453b.webp" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/S7W38Mgv/b086d46b453b.webp" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/S7W38Mgv/b086d46b453b.webp" alt="AI Adoption Dismantles Entry Level Jobs and Career Growth" /><p>The rapid rise of AI is disrupting global industries and removing entry level roles, creating significant challenges for young professionals today.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Government Increases Per-Learner School Capitation to Ksh 2,340]]></title>
       <link>https://zandani.co.ke/article/government-increases-per-learner-school-capitation-to-ksh-2340</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/DD1HhSY7/425785493885.avif" type="image/jpeg" />
       <media:content url="https://i.ibb.co/DD1HhSY7/425785493885.avif" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/DD1HhSY7/425785493885.avif" alt="Home Afrika reports profit as liabilities exceed total assets" /><p>Home Afrika Reports Profitability Amidst Significant Liabilities Home Afrika Limited reported a net profit of KSh 117.89 million for the full year ended December 31, 2025, marking its second consecutive year of profitability. Despite a top-line contraction,...</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Confirmed: Bomas Convention Centre Set for September Completion]]></title>
-      <link>https://zandani.co.ke/article/bomas-convention-centre-september-completion</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/bomas-convention-centre-september-completion</guid>
-      <pubDate>Fri, 01 May 2026 10:09:21 GMT</pubDate>
-      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
-      <description><![CDATA[MPs confirm the Bomas Convention Centre will be completed in September following construction delays and event shifts. Get the details on the new timeline.]]></description>
-      <enclosure url="https://i.ibb.co/JFsjLx8R/039cc799c34f.jpg" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/JFsjLx8R/039cc799c34f.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/JFsjLx8R/039cc799c34f.jpg" alt="Confirmed: Bomas Convention Centre Set for September Completion" /><p>MPs confirm the Bomas Convention Centre will be completed in September following construction delays and event shifts. Get the details on the new timeline.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
