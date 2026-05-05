@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/portable-compares-mentorship-styles-of-olamide-and-davido</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-05T16:54:47.000Z</news:publication_date>
+      <news:title>Portable compares mentorship styles of Olamide and Davido</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/schmeichel-claims-ratcliffe-made-38m-hojlund-transfer-mistake</loc>
     <news:news>
       <news:publication>
@@ -683,17 +694,6 @@
       </news:publication>
       <news:publication_date>2026-05-03T17:08:14.000Z</news:publication_date>
       <news:title>How Marurui Squatters Protest Paralyzed Nairobi&apos;s Northern Bypass</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/billy-magnussen-stars-in-amc-s-new-silicon-valley-satire-the-audacit</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-03T17:01:13.000Z</news:publication_date>
-      <news:title>Billy Magnussen stars in AMC&apos;s new Silicon Valley satire &apos;The Audacity&apos;</news:title>
     </news:news>
   </url>
 </urlset>
