@@ -1,8 +1,9 @@
-name: Amara Ndlovu - Pan-Africa Entertainment Scraper
+﻿name: Amara Ndlovu - Pan-Africa Entertainment Scraper
 
 on:
   schedule:
     - cron: '8 3-20 * * *'
+      timezone: 'Africa/Nairobi'
   workflow_dispatch: {}
 
 concurrency:

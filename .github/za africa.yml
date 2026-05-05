@@ -1,11 +1,16 @@
-name: Amara Ndlovu - Pan-Africa Entertainment Scraper
+﻿name: Amara Ndlovu - Pan-Africa Entertainment Scraper
 on:
   schedule:
     - cron: '30 0,12 * * *'
+      timezone: 'Africa/Nairobi'
     - cron: '30 2,14 * * *'
+      timezone: 'Africa/Nairobi'
     - cron: '30 4,16 * * *'
+      timezone: 'Africa/Nairobi'
     - cron: '30 6,18 * * *'
+      timezone: 'Africa/Nairobi'
     - cron: '30 8,20 * * *'
+      timezone: 'Africa/Nairobi'
   workflow_dispatch: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -511,7 +516,7 @@ jobs:
                       return window[:cut].strip(" .,:;!-")
               return window[:max_len].rsplit(' ', 1)[0].strip(" .,:;!-")
 
-          # ── Scrape ───────────────────────────────────────────────────────
+          # â”€â”€ Scrape â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           article_links = get_target_urls()
           if not article_links:
               print("No candidates"); sys.exit(0)
@@ -537,7 +542,7 @@ jobs:
           target_title  = chosen_candidate["title"]
           final_hash    = chosen_candidate["hash"]
 
-          # ── Title ─────────────────────────────────────────────────────────
+          # â”€â”€ Title â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           title_prompt = (
               "SCRAPED ARTICLE TITLE: " + target_title + "\n"
               "ARTICLE SNIPPET:\n" + full_raw_text[:1200] + "\n"
@@ -574,7 +579,7 @@ jobs:
           slug           = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           canonical_url  = f"{SITE_BASE_URL}/article/{slug}"
 
-          # ── Article ───────────────────────────────────────────────────────
+          # â”€â”€ Article â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           article_prompt = (
               "Current Date: " + full_date_str + ". The current year is " + current_year + ".\n"
               "TITLE: " + final_title + "\n"
@@ -625,7 +630,7 @@ jobs:
           client      = genai.Client(api_key=current_key)
           time.sleep(3)
 
-          # ── Meta description ──────────────────────────────────────────────
+          # â”€â”€ Meta description â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           desc_prompt = (
               "Write a single meta description (140-155 characters) for this Pan-Africa entertainment article.\n"
               "Title: " + final_title + "\n"
@@ -646,7 +651,7 @@ jobs:
 
           time.sleep(3)
 
-          # ── Tags ──────────────────────────────────────────────────────────
+          # â”€â”€ Tags â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           tags_prompt = (
               "Generate 4-5 relevant SEO tags for this Pan-Africa entertainment article.\n"
               "Title: " + final_title + "\n"
@@ -663,7 +668,7 @@ jobs:
               except Exception as e:
                   print(f"Tags parse error: {e}")
 
-          # ── Image + save ──────────────────────────────────────────────────
+          # â”€â”€ Image + save â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           final_image = upload_to_imgbb(target_image) if target_image else ""
           author_url  = f"{SITE_BASE_URL}/author/amara-ndlovu"
           tags_json   = json.dumps(article_tags)

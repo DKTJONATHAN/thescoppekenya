@@ -1,8 +1,9 @@
-name: Jona Munyi - Lifestyle Scraper
+﻿name: Jona Munyi - Lifestyle Scraper
 
 on:
   schedule:
     - cron: '14 3-20 * * *'
+      timezone: 'Africa/Nairobi'
   workflow_dispatch: {}
 
 concurrency:

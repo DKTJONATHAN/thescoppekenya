@@ -1,8 +1,9 @@
-name: Celestine Nzioka - Politics Scraper
+﻿name: Celestine Nzioka - Politics Scraper
 
 on:
   schedule:
     - cron: '18 3-20 * * *'
+      timezone: 'Africa/Nairobi'
   workflow_dispatch: {}
 
 concurrency:

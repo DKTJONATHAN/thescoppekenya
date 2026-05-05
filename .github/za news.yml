@@ -1,8 +1,9 @@
-name: Celestine Nzioka - General News Scraper
+﻿name: Celestine Nzioka - General News Scraper
 on:
   schedule:
     # 6 AM to 11 PM EAT is 3 AM to 8 PM UTC
     - cron: '5 3-20 * * *'
+      timezone: 'Africa/Nairobi'
   workflow_dispatch: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -105,7 +106,7 @@ jobs:
               '/terms', '/about', '/privacy', '/contact', '/advertise', '/policy', '/disclaimer'
           ]
 
-          # ── SEO IMPROVEMENT 1: Convert image to WebP before uploading ──────────────
+          # â”€â”€ SEO IMPROVEMENT 1: Convert image to WebP before uploading â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def upload_to_imgbb(image_url):
               api_key = os.environ.get("IMGBB_API_KEY")
               if not api_key or not image_url: return image_url
@@ -407,7 +408,7 @@ jobs:
           target_title = chosen_candidate["title"]
           final_hash = chosen_candidate["hash"]
 
-          # ── TITLE ────────────────────────────────────────────────────────────────────
+          # â”€â”€ TITLE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           title_prompt = (
               "SCRAPED ARTICLE TITLE: " + target_title + "\n"
               "ARTICLE SNIPPET:\n" + full_raw_text[:1200] + "\n"
@@ -444,7 +445,7 @@ jobs:
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           canonical_url = f"{SITE_BASE_URL}/article/{slug}"
 
-          # ── SEO IMPROVEMENT 2: Lede-first article structure for AI snippets ─────────
+          # â”€â”€ SEO IMPROVEMENT 2: Lede-first article structure for AI snippets â”€â”€â”€â”€â”€â”€â”€â”€â”€
           article_prompt = (
               "Today is " + full_date_str + ". The current year is " + current_year + ". You are writing in real time.\n"
               "TITLE: " + final_title + "\n"
@@ -482,7 +483,7 @@ jobs:
           client = genai.Client(api_key=current_key)
           time.sleep(3)
 
-          # ── SEO IMPROVEMENT 3: Generate meta description ──────────────────────────
+          # â”€â”€ SEO IMPROVEMENT 3: Generate meta description â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           desc_prompt = (
               "Write a single meta description (140-155 characters) for this news article.\n"
               "Title: " + final_title + "\n"
@@ -504,7 +505,7 @@ jobs:
 
           time.sleep(3)
 
-          # ── SEO IMPROVEMENT 4: Generate topical tags ──────────────────────────────
+          # â”€â”€ SEO IMPROVEMENT 4: Generate topical tags â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           tags_prompt = (
               "Generate 4-5 relevant SEO tags for this news article.\n"
               "Title: " + final_title + "\n"
@@ -521,7 +522,7 @@ jobs:
               except Exception as e:
                   print(f"Tags parse error: {e}")
 
-          # ── SEO IMPROVEMENT 5: Re-host image as WebP ─────────────────────────────
+          # â”€â”€ SEO IMPROVEMENT 5: Re-host image as WebP â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           final_image = upload_to_imgbb(target_image) if target_image else ""
 
           posts_dir = os.environ.get("POSTS_DIR", "content/posts")
@@ -529,7 +530,7 @@ jobs:
 
           tags_yaml = json.dumps(article_tags)
 
-          # ── SEO IMPROVEMENT 6: Full frontmatter with description, tags, canonical ─
+          # â”€â”€ SEO IMPROVEMENT 6: Full frontmatter with description, tags, canonical â”€
           lines = [
               "---",
               'title: "' + final_title.replace('"', "'") + '"',
@@ -573,7 +574,7 @@ jobs:
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_celestine.json'
 
-      # ── SEO IMPROVEMENT 7: Ping Google sitemap after every publish ──────────────
+      # â”€â”€ SEO IMPROVEMENT 7: Ping Google sitemap after every publish â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       - name: Ping Google Sitemap
         run: |
           curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true

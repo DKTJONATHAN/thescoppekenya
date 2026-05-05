@@ -1,8 +1,9 @@
-name: Elizabeth Muthoni - Technology Scraper
+﻿name: Elizabeth Muthoni - Technology Scraper
 
 on:
   schedule:
     - cron: '20 3-20 * * *'
+      timezone: 'Africa/Nairobi'
   workflow_dispatch: {}
 
 concurrency:

@@ -1,8 +1,9 @@
-name: Grace Mkamburi - Business Scraper
+﻿name: Grace Mkamburi - Business Scraper
 
 on:
   schedule:
     - cron: '10 3-20 * * *'
+      timezone: 'Africa/Nairobi'
   workflow_dispatch: {}
 
 concurrency:

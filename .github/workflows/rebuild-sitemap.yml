@@ -1,8 +1,9 @@
-name: Rebuild Sitemap
+﻿name: Rebuild Sitemap
 
 on:
   schedule:
     - cron: '4 0,6,12,18 * * *'
+      timezone: 'Africa/Nairobi'
   push:
     branches:
       - main

@@ -1,8 +1,9 @@
-name: E-E-A-T Signal Builder
+﻿name: E-E-A-T Signal Builder
 
 on:
   schedule:
     - cron: '5 6 * * 1,4'  # Every Monday and Thursday at 6:05 AM UTC
+      timezone: 'Africa/Nairobi'
   workflow_dispatch:
     inputs:
       min_views:
@@ -142,7 +143,7 @@ jobs:
           def get_author(category: str):
               return AUTHOR_MAP.get(category.lower().strip(), DEFAULT_AUTHOR)
 
-          # ── GA4 auth ──────────────────────────────────────────────────────
+          # â”€â”€ GA4 auth â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def get_ga4_token():
               raw_key = os.environ.get("GA4_PRIVATE_KEY", "")
               if not raw_key:
@@ -164,7 +165,7 @@ jobs:
               creds.refresh(Request())
               return creds.token
 
-          # ── Fetch top pages from GA4 ──────────────────────────────────────
+          # â”€â”€ Fetch top pages from GA4 â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def fetch_top_pages():
               token       = get_ga4_token()
               property_id = os.environ.get("GA4_PROPERTY_ID", "")
@@ -196,7 +197,7 @@ jobs:
               print(f"Found {len(pages)} qualifying pages from GA4")
               return pages
 
-          # ── Read existing post metadata ───────────────────────────────────
+          # â”€â”€ Read existing post metadata â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def read_post_meta(slug: str):
               path = os.path.join(POSTS_DIR, f"{slug}.md")
               if not os.path.exists(path):
@@ -210,7 +211,7 @@ jobs:
                   "category": cat_m.group(1).strip().lower() if cat_m else "entertainment",
               }
 
-          # ── Extract core entity from slug ─────────────────────────────────
+          # â”€â”€ Extract core entity from slug â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def slug_to_topic(slug: str) -> str:
               filler = [
                   "the","a","an","in","on","at","of","and","or","for","with","by",
@@ -222,7 +223,7 @@ jobs:
               topic_words = [w for w in words if w.lower() not in filler]
               return " ".join(topic_words[:5]) if topic_words else slug.replace("-", " ")
 
-          # ── Gemini API helper ─────────────────────────────────────────────
+          # â”€â”€ Gemini API helper â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           raw_keys = [
               os.environ.get("GEMINI_WRITE_KEY"),
               os.environ.get("GEMINI_API_KEY"),
@@ -277,7 +278,7 @@ jobs:
                               break
               raise RuntimeError("All Gemini attempts failed")
 
-          # ── WebP conversion + ImgBB upload ────────────────────────────────
+          # â”€â”€ WebP conversion + ImgBB upload â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def upload_imgbb(image_url: str) -> str:
               api_key = os.environ.get("IMGBB_API_KEY")
               if not api_key or not image_url:
@@ -311,7 +312,7 @@ jobs:
                   print(f"  ImgBB/WebP exception: {e}")
               return FALLBACK_IMAGE
 
-          # ── Find real image via Gemini web search ─────────────────────────
+          # â”€â”€ Find real image via Gemini web search â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def find_real_image(topic: str, title: str) -> str:
               prompt = (
                   f'Search the web right now for a real, publicly accessible image of: "{topic}"\n'
@@ -333,7 +334,7 @@ jobs:
                   print(f"  Image search failed: {e}")
               return ""
 
-          # ── Generate supporting cluster angles ────────────────────────────
+          # â”€â”€ Generate supporting cluster angles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def get_cluster_angles(topic: str, seed_title: str, seed_url: str, category: str) -> list:
               prompt = (
                   "You are an SEO strategist for Za Ndani, a Kenyan news and entertainment website.\n\n"
@@ -371,7 +372,7 @@ jobs:
                   print(f"  Could not parse angles JSON: {raw[:300]}")
                   return []
 
-          # ── Write full article ────────────────────────────────────────────
+          # â”€â”€ Write full article â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def write_article(angle: dict, seed_title: str, seed_url: str) -> dict:
               category        = angle.get("category", "entertainment")
               author_name, persona_desc = get_author(category)
@@ -406,7 +407,7 @@ jobs:
                   f"Title: {seed_title} | Link: {SITE_BASE_URL}/article/{seed_url}\n\n"
                   f"OPTIONAL INTERNAL LINKS (use ONE if relevant):\n"
                   f"{internal_links}\n\n"
-                  "════════════════════════════════════════════════\n"
+                  "â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\n"
                   "CRITICAL RESEARCH INSTRUCTION:\n"
                   "Before writing, you MUST:\n"
                   f'1. Search Google for: "{target_query}"\n'
@@ -416,7 +417,7 @@ jobs:
                   "5. Use those REAL facts as the foundation of the article\n"
                   "DO NOT make up facts. DO NOT write generic content.\n"
                   "Every specific claim (age, date, salary, relationship status) must come from your search.\n"
-                  "════════════════════════════════════════════════\n\n"
+                  "â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\n\n"
                   f"AUTHOR VOICE: Write as {persona_desc}.\n\n"
                   "CRITICAL AUTHOR RULE: Write in third-person news style throughout. "
                   "NEVER write phrases like 'I am [author name]', 'This is [author name] reporting', "
@@ -507,7 +508,7 @@ jobs:
                   "category":           category,
               }
 
-          # ── Save article with full SEO frontmatter ────────────────────────
+          # â”€â”€ Save article with full SEO frontmatter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           def save_article(parsed: dict, image_url: str) -> str:
               slug        = parsed["SLUG"]
               author_name = parsed["author"]
@@ -573,9 +574,9 @@ jobs:
               print(f"  Tags   : {tags_list}")
               return filename
 
-          # ════════════════════════════════════════════════════════════════
+          # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
           # MAIN
-          # ════════════════════════════════════════════════════════════════
+          # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
           memory = json.load(open(MEMORY_FILE)) if os.path.exists(MEMORY_FILE) else {}
 
           print("Fetching top pages from GA4...")

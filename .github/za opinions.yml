@@ -1,7 +1,8 @@
-name: Jonathan Mwaniki - Opinions Scraper
+﻿name: Jonathan Mwaniki - Opinions Scraper
 on:
   schedule:
     - cron: '25 10,18 * * *'
+      timezone: 'Africa/Nairobi'
   workflow_dispatch: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -458,7 +459,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Jonathan Mwaniki <bot@zandani.co.ke>"
-          commit_message: "content: Thought-provoking opinion by Jonathan Mwaniki ✍️"
+          commit_message: "content: Thought-provoking opinion by Jonathan Mwaniki âœï¸"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_jonathan.json'
 

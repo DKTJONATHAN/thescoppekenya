@@ -1,7 +1,8 @@
-name: Jona Munyi - Lifestyle Scraper
+﻿name: Jona Munyi - Lifestyle Scraper
 on:
   schedule:
     - cron: '20 2,8,14,20 * * *'
+      timezone: 'Africa/Nairobi'
   workflow_dispatch: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -373,7 +374,7 @@ jobs:
           target_title = chosen_candidate["title"]
           final_hash = chosen_candidate["hash"]
 
-          # ── TITLE ────────────────────────────────────────────────────────────────────
+          # â”€â”€ TITLE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           title_prompt = (
               "SCRAPED ARTICLE TITLE: " + target_title + "\n"
               "ARTICLE SNIPPET:\n" + full_raw_text[:1200] + "\n"
@@ -417,7 +418,7 @@ jobs:
           slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           canonical_url = f"{SITE_BASE_URL}/article/{slug}"
 
-          # ── ARTICLE ──────────────────────────────────────────────────────────────────
+          # â”€â”€ ARTICLE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           article_prompt = (
               "Current Date: " + full_date_str + ". The current year is " + current_year + ".\n"
               "TITLE: " + final_title + "\n"
@@ -450,7 +451,7 @@ jobs:
           client = genai.Client(api_key=current_key)
           time.sleep(3)
 
-          # ── DESCRIPTION ───────────────────────────────────────────────────────────
+          # â”€â”€ DESCRIPTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           desc_prompt = (
               "Write a single meta description (140-155 characters) for this lifestyle article.\n"
               "Title: " + final_title + "\n"
@@ -486,7 +487,7 @@ jobs:
 
           time.sleep(3)
 
-          # ── TAGS ─────────────────────────────────────────────────────────────────
+          # â”€â”€ TAGS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           tags_prompt = (
               "Generate 4 lowercase hyphenated tags for this article.\n"
               "Title: " + final_title + "\n"

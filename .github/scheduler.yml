@@ -1,11 +1,12 @@
-name: Scheduled Posts Publisher
+﻿name: Scheduled Posts Publisher
 
 # Runs every hour. When a post's publishDate arrives, commits a state
-# file — that push triggers Vercel's auto-deploy and Hugo renders the post.
+# file â€” that push triggers Vercel's auto-deploy and Hugo renders the post.
 
 on:
   schedule:
     - cron: "0 * * * *"
+      timezone: 'Africa/Nairobi'
   workflow_dispatch:
     inputs:
       reason:
@@ -88,7 +89,7 @@ jobs:
 
       # Committing the state file is the ONLY trigger Vercel needs.
       # Your repo auto-deploys on every push, so this commit causes
-      # Hugo to rebuild without --buildFuture — the post goes live.
+      # Hugo to rebuild without --buildFuture â€” the post goes live.
       - name: Commit state and trigger Vercel rebuild
         if: steps.check.outputs.has_due_posts == 'true'
         run: |
@@ -106,7 +107,7 @@ jobs:
           {
             echo "## Scheduled Posts Publisher"
             if [ "${{ steps.check.outputs.has_due_posts }}" = "true" ]; then
-              echo ":white_check_mark: **${{ steps.check.outputs.due_count }} post(s) activated — Vercel rebuild triggered.**"
+              echo ":white_check_mark: **${{ steps.check.outputs.due_count }} post(s) activated â€” Vercel rebuild triggered.**"
             else
               echo ":clock1: No posts due yet. Next check in ~1 hour."
             fi

@@ -1,8 +1,9 @@
-name: Weekly Podcast Generator
+﻿name: Weekly Podcast Generator
 
 on:
   schedule:
     - cron: '0 8 * * 5' # Run every Friday at 8:00 AM UTC
+      timezone: 'Africa/Nairobi'
   workflow_dispatch:
     inputs:
       categories:

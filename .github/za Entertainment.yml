@@ -1,7 +1,8 @@
-name: Mutheu Ann - Entertainment Scraper
+﻿name: Mutheu Ann - Entertainment Scraper
 on:
   schedule:
     - cron: '20 7,15 * * *'
+      timezone: 'Africa/Nairobi'
   workflow_dispatch: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

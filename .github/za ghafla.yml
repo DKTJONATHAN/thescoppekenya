@@ -1,7 +1,8 @@
-name: Za Ndani - Ghafla Scraper
+﻿name: Za Ndani - Ghafla Scraper
 on:
   schedule:
     - cron: '25 0,2,5,7,10,12,15,17,20,22 * * *'
+      timezone: 'Africa/Nairobi'
   workflow_dispatch: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -420,7 +421,7 @@ jobs:
               fallback_title, fallback_url = link_pairs[0]
               return article_text.rstrip() + f"\n\nRelated reading: [{fallback_title}]({fallback_url})"
 
-          # ── Scrape ───────────────────────────────────────────────────────
+          # â”€â”€ Scrape â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           article_links = get_target_urls()
           if not article_links:
               print("No candidates"); sys.exit(0)
@@ -446,7 +447,7 @@ jobs:
           target_title  = chosen_candidate["title"]
           final_hash    = chosen_candidate["hash"]
 
-          # ── Title ─────────────────────────────────────────────────────────
+          # â”€â”€ Title â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           title_prompt = (
               "SCRAPED ARTICLE TITLE: " + target_title + "\n"
               "ARTICLE SNIPPET:\n" + full_raw_text[:1200] + "\n"
@@ -468,7 +469,7 @@ jobs:
           slug           = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
           canonical_url  = f"{SITE_BASE_URL}/article/{slug}"
 
-          # ── Article ───────────────────────────────────────────────────────
+          # â”€â”€ Article â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           article_prompt = (
               "Current Date: " + full_date_str + ". The current year is " + current_year + ".\n"
               "TITLE: " + final_title + "\n"
@@ -510,7 +511,7 @@ jobs:
           client      = genai.Client(api_key=current_key)
           time.sleep(3)
 
-          # ── Meta description ──────────────────────────────────────────────
+          # â”€â”€ Meta description â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           desc_prompt = (
               "Write a single meta description (140-155 characters) for this entertainment article.\n"
               "Title: " + final_title + "\n"
@@ -531,7 +532,7 @@ jobs:
 
           time.sleep(3)
 
-          # ── Tags ──────────────────────────────────────────────────────────
+          # â”€â”€ Tags â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           tags_prompt = (
               "Generate 4-5 relevant SEO tags for this Kenyan entertainment article.\n"
               "Title: " + final_title + "\n"
@@ -547,7 +548,7 @@ jobs:
               except Exception as e:
                   print(f"Tags parse error: {e}")
 
-          # ── Image + save ──────────────────────────────────────────────────
+          # â”€â”€ Image + save â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           final_image = upload_to_imgbb(target_image) if target_image else ""
           author_url  = f"{SITE_BASE_URL}/author/za-ndani"
           tags_json   = json.dumps(article_tags)

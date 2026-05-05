@@ -1,8 +1,9 @@
-name: Global Sports Scraper (Football365)
+﻿name: Global Sports Scraper (Football365)
 
 on:
   schedule:
     - cron: '55 3,7,11,15,19 * * *'
+      timezone: 'Africa/Nairobi'
   workflow_dispatch:
 
 concurrency:

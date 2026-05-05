@@ -1,8 +1,9 @@
-name: Martin Kihara - Showbiz Scraper
+﻿name: Martin Kihara - Showbiz Scraper
 
 on:
   schedule:
     - cron: '15 3-20 * * *'
+      timezone: 'Africa/Nairobi'
   workflow_dispatch: {}
 
 concurrency:
