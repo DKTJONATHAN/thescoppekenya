@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/sheinelle-jones-shares-details-of-met-gala-encounter-with-rihanna</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-05T18:22:32.000Z</news:publication_date>
+      <news:title>Sheinelle Jones Shares Details of Met Gala Encounter with Rihanna</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/nakuru-county-to-provide-free-uniforms-for-public-ecde-learners</loc>
     <news:news>
       <news:publication>
@@ -705,28 +716,6 @@
       </news:publication>
       <news:publication_date>2026-05-03T18:37:58.000Z</news:publication_date>
       <news:title>Kenya&apos;s Economy Reaches Record Value Amid Sectoral Shifts</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/mainoo-snatches-champions-league-spot-for-man-utd-in-five-goal-thril</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-03T17:34:51.000Z</news:publication_date>
-      <news:title>Mainoo Snatches Champions League Spot for Man Utd in Five-Goal Thriller Against Liverpool</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/larry-madowo-and-edith-kimani-public-appearances-fuel-relationship-s</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-03T17:10:03.000Z</news:publication_date>
-      <news:title>Larry Madowo and Edith Kimani: Public Appearances Fuel Relationship Speculation in Kenya</news:title>
     </news:news>
   </url>
 </urlset>
