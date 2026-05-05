@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/pulse-africa-implements-new-terms-of-service-and-usage-policies</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-05T08:55:57.000Z</news:publication_date>
+      <news:title>Pulse Africa Implements New Terms of Service and Usage Policies</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/corporate-and-institutional-developments-africa-mena</loc>
     <news:news>
       <news:publication>
