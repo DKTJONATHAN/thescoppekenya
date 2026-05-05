@@ -4,6 +4,28 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/kamene-goro-confirms-marriage-status-following-hospital-stay</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-05T06:08:59.000Z</news:publication_date>
+      <news:title>Kamene Goro Confirms Marriage Status Following Hospital Stay</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/public-service-commission-recruitment-vacancies</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-05T06:00:38.000Z</news:publication_date>
+      <news:title>Public Service Commission Announces Over 400 Government Vacancies</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/lydia-wanjiru-body-transformation</loc>
     <news:news>
       <news:publication>
