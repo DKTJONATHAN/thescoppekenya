@@ -62,16 +62,19 @@
     "23784a2cf19d839b80b305ee3368377e",
     "deaa3ec9e74de6b59565c69a944537a5",
     "91376958aa0f37f97b743383c7646c46",
-    "3766f9602cdb95df8f760676f488e5d7"
+    "3766f9602cdb95df8f760676f488e5d7",
+    "640057f1de86bb86583628652f678c8d"
   ],
   "style_history": [
     "Hard News Lead",
     "Trend Take",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Explainer"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
-    "impact_on_citizens|Disney+|Profile Beat"
+    "impact_on_citizens|Disney+|Profile Beat",
+    "myth_vs_fact|cognitive test|Explainer"
   ]
 }
