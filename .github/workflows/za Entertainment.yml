@@ -162,6 +162,7 @@ jobs:
                   if isinstance(raw, dict):
                       raw.setdefault("published_hashes", [])
                       raw.setdefault("style_history", [])
+                      raw.setdefault("angle_history", [])
                       return raw
               except Exception as e:
                   print(f"Memory load error: {e}")
@@ -171,6 +172,7 @@ jobs:
               os.makedirs(os.path.dirname(MEMORY_FILE), exist_ok=True)
               mem["published_hashes"] = mem.get("published_hashes", [])[-500:]
               mem["style_history"]    = mem.get("style_history", [])[-30:]
+              mem["angle_history"]    = mem.get("angle_history", [])[-80:]
               with open(MEMORY_FILE, "w", encoding="utf-8") as f:
                   json.dump(mem, f, indent=2)
 
@@ -406,7 +408,21 @@ jobs:
               )
               return parse_json_safely(gemini_call(prompt, "seo", json_mode=True))
 
-          def stage_write(brief, seo, style, internal_links):
+          def stage_angle(brief, style, recent_angles):
+              prompt = (
+                  "Create a UNIQUE editorial angle plan for a Kenyan news article. Return STRICT JSON only.\n\n"
+                  f"BRIEF:\n{json.dumps(brief, ensure_ascii=False)}\n\n"
+                  f"STYLE PRESET: {style['name']} - {style['angle']}\n"
+                  f"RECENT ANGLE SIGNATURES (avoid repeating): {json.dumps(recent_angles[-20:], ensure_ascii=False)}\n\n"
+                  "Rules:\n"
+                  "- Pick ONE dominant frame: impact_on_citizens, accountability, money_follow, timeline_shift, policy_gap, myth_vs_fact, winners_losers, next_48_hours.\n"
+                  "- Must differ from recent signatures by frame OR consequence focus.\n"
+                  "- Keep factual, no fabricated claims.\n"
+                  "- Explain what new value this framing gives readers.\n\n"
+                  'Return JSON: {"angle_title":"...","frame":"...","why_unique":"...","reader_value":"...","must_include":["...","..."],"avoid":["..."]}'
+              )
+              return parse_json_safely(gemini_call(prompt, "angle", json_mode=True))
+          def stage_write(brief, seo, style, angle_plan, internal_links):
               prompt = (
                   f"You are {AUTHOR_NAME}, a Kenyan {CATEGORY.lower()} journalist for Za Ndani.\n"
                   f"Today is {full_date_str} (East Africa Time).\n\n"
@@ -416,6 +432,7 @@ jobs:
                   f"- Structure: {style['structure']}\n- Sentence mix: {style['sentence_mix']}\n"
                   f"- Closing: {style['closing']}\n\n"
                   f"WORKING TITLE: {seo.get('title','')}\n"
+                  f"ANGLE PLAN: {json.dumps(angle_plan, ensure_ascii=False)}\n"
                   f"BRIEF:\n{json.dumps(brief, ensure_ascii=False)}\n\n{internal_links}\n"
                   "WRITE THE ARTICLE IN PURE MARKDOWN.\n"
                   "Hard rules:\n- 550 to 750 words.\n"
@@ -428,6 +445,9 @@ jobs:
                   "- Do NOT mention or link to the original source publication or its brand.\n"
                   "- Do NOT echo whole sentences from the source. Reframe everything.\n"
                   f"- Banned phrases: {', '.join(BANNED_PHRASES)}.\n"
+                  "- Deliver a distinct angle, not a source paraphrase.\n"
+                  "- Include a short \"Why it matters now\" section and a \"What to watch next\" section.\n"
+                  "- Use angle_plan.must_include naturally and respect angle_plan.avoid.\n"
               )
               return gemini_call(prompt, "write")
 
@@ -478,8 +498,12 @@ jobs:
 
           style = pick_style(memory.get("style_history", []))
           print(f"Style chosen: {style['name']}")
+          angle_plan = stage_angle(brief, style, memory.get("angle_history", [])) or {}
+          if not angle_plan:
+              angle_plan = {"angle_title":"Reader impact focus","frame":"impact_on_citizens","why_unique":"Fallback angle to emphasize consequences","reader_value":"Makes implications concrete","must_include":["Why it matters now","What to watch next"],"avoid":["copying source structure"]}
+          print(f"Angle chosen: {angle_plan.get('frame','n/a')} | {angle_plan.get('angle_title','n/a')}")
 
-          article_md = stage_write(brief, seo, style, get_internal_links())
+          article_md = stage_write(brief, seo, style, angle_plan, get_internal_links())
           if not article_md: print("Write failed"); sys.exit(1)
 
           review = stage_review(article_md, chosen_text) or {}
@@ -492,6 +516,16 @@ jobs:
               rewritten = stage_rewrite(article_md, review, style)
               if rewritten and len(rewritten) > 400:
                   article_md = rewritten
+
+          # Soft uniqueness retry: never block publishing
+          if sim >= 8:
+              alt_recent = memory.get("angle_history", []) + [angle_plan.get("frame", "")]
+              alt_angle = stage_angle(brief, style, alt_recent) or angle_plan
+              alt_md = stage_write(brief, seo, style, alt_angle, get_internal_links())
+              if alt_md and len(alt_md) > 400:
+                  article_md = alt_md
+                  angle_plan = alt_angle
+                  print("Applied alternate uniqueness angle (soft retry)")
 
           article_md = re.sub(r"^```(?:markdown)?\n?", "", article_md).rstrip("`").rstrip().strip()
           article_md = re.sub(r"^(Title|By|Author|Date)\s*:\s*.*?$", "", article_md, flags=re.I|re.M)
@@ -532,6 +566,8 @@ jobs:
 
           memory.setdefault("published_hashes", []).append(chosen_hash)
           memory.setdefault("style_history", []).append(style["name"])
+          angle_signature = f"{angle_plan.get('frame','unknown')}|{(brief.get('keywords') or ['na'])[0]}|{style['name']}"
+          memory.setdefault("angle_history", []).append(angle_signature)
           save_memory(memory)
           print("Memory updated")
 
@@ -555,4 +591,8 @@ jobs:
           commit_message: "content: Mutheu Ann Entertainment report"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_mutheu.json'
+
+
+
+
 
