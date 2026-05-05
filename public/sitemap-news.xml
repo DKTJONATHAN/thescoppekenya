@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/armagh-advances-to-ulster-senior-football-final</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-05T12:18:02.000Z</news:publication_date>
+      <news:title>Armagh Advances to Ulster Senior Football Final Against Monaghan</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/pulse-africa-data-privacy-tracking-policy</loc>
     <news:news>
       <news:publication>

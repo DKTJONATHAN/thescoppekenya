@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Armagh Advances to Ulster Senior Football Final Against Monaghan](https://zandani.co.ke/article/armagh-advances-to-ulster-senior-football-final) - Armagh secures a spot in their fourth consecutive Ulster Senior Football final after a dominant win over Down as they chase the Anglo Celt Cup.
 - [Pulse Africa Disclosure of Data Collection and Tracking Practices](https://zandani.co.ke/article/pulse-africa-data-privacy-tracking-policy) - Pulse Africa reveals its data collection policies, detailing the use of cookies and tracking technology for advertising in Kenya.
 - [Kenyan SACCOs report asset growth despite rising payroll arrears](https://zandani.co.ke/article/kenyan-saccos-report-asset-growth-despite-rising-payroll-arrears) - Kenya SACCO sector assets reached KSh 1.076 trillion in 2024, but liquidity remains pressured by KSh 3.49 billion in unremitted public sector deductions.
 - [Kenya Scales Up Climate Action and Ecological Conservation Efforts](https://zandani.co.ke/article/kenya-scales-up-climate-action-and-ecological-conservation-efforts) - Kenya partners with international stakeholders to expand renewable energy and ecological restoration projects to protect agriculture and public health.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [US Radio Network Rebrands to Honor Iconic Sitcom WKRP in Cincinnati](https://zandani.co.ke/article/radio-network-rebrands-to-honor-wkrp-in-cincinnati-sitcom) - Radio owner Jeff Ziesmann has rebranded his Ohio and Kentucky station network to honor the legacy of the hit 1970s television sitcom WKRP in Cincinnati.
 - [Bowmans warns of risks in proposed Finance Bill tax measures](https://zandani.co.ke/article/bowmans-warns-of-risks-in-proposed-finance-bill-tax-measures) - Top law firm Bowmans expresses concern over Finance Bill proposals citing negative impacts on business compliance, investment, and consumer affordability.
 - [Corporate and Institutional Developments Across Africa and MENA](https://zandani.co.ke/article/corporate-and-institutional-developments-africa-mena) - Explore the latest updates in STEM research, mining investments, airline loyalty programs, and regional innovation awards across Africa and the MENA region.
-- [Infinix Smart 20 Launched in Kenya for Kenyan Entrepreneurs](https://zandani.co.ke/article/infinix-smart-20-launched-in-kenya) - Infinix has introduced the Smart 20 smartphone in Kenya featuring rugged durability, long battery life, and high performance for local professionals.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
