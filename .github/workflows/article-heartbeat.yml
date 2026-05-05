@@ -1,0 +1,184 @@
+name: Article Publishing Heartbeat
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Check latest article freshness
+        id: heartbeat
+        shell: bash
+        run: |
+          python - << 'PY'
+          import datetime
+          import pathlib
+          import re
+          import sys
+
+          posts_dir = pathlib.Path("content/posts")
+          now = datetime.datetime.now(datetime.timezone.utc)
+
+          date_re = re.compile(r'^date:\s*"?(.*?)"?\s*$')
+          latest_dt = None
+          latest_file = None
+
+          for path in posts_dir.glob("*.md"):
+            try:
+              text = path.read_text(encoding="utf-8", errors="ignore")
+            except Exception:
+              continue
+
+            in_frontmatter = False
+            fm_done = False
+            for line in text.splitlines():
+              if line.strip() == "---":
+                if not in_frontmatter:
+                  in_frontmatter = True
+                  continue
+                fm_done = True
+                break
+              if not in_frontmatter:
+                continue
+              m = date_re.match(line.strip())
+              if m:
+                raw = m.group(1).strip()
+                try:
+                  dt = datetime.datetime.fromisoformat(raw.replace("Z", "+00:00"))
+                  if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=datetime.timezone.utc)
+                  if latest_dt is None or dt > latest_dt:
+                    latest_dt = dt
+                    latest_file = path.name
+                except Exception:
+                  pass
+            if fm_done:
+              continue
+
+          if latest_dt is None:
+            stale = True
+            age_minutes = 10**9
+            latest_iso = "none"
+            latest_file = "none"
+          else:
+            age_minutes = int((now - latest_dt).total_seconds() // 60)
+            stale = age_minutes > 90
+            latest_iso = latest_dt.isoformat()
+
+          summary = (
+            f"Latest file: {latest_file}\n"
+            f"Latest post date (UTC): {latest_iso}\n"
+            f"Current UTC: {now.isoformat()}\n"
+            f"Age minutes: {age_minutes}\n"
+            f"Threshold: 90\n"
+          )
+
+          print(summary)
+
+          out = pathlib.Path("/tmp/heartbeat_outputs.txt")
+          out.write_text(
+            f"stale={'true' if stale else 'false'}\n"
+            f"age_minutes={age_minutes}\n"
+            f"latest_file={latest_file}\n"
+            f"latest_iso={latest_iso}\n",
+            encoding="utf-8",
+          )
+          PY
+
+          cat /tmp/heartbeat_outputs.txt >> "$GITHUB_OUTPUT"
+
+      - name: Open or update heartbeat issue
+        if: steps.heartbeat.outputs.stale == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "Publishing heartbeat alert: no new article in 90+ minutes";
+            const marker = "<!-- heartbeat-alert -->";
+            const age = `${{ steps.heartbeat.outputs.age_minutes }}`;
+            const latestFile = `${{ steps.heartbeat.outputs.latest_file }}`;
+            const latestIso = `${{ steps.heartbeat.outputs.latest_iso }}`;
+            const now = new Date().toISOString();
+
+            const body = `${marker}
+            Publishing appears stalled.
+
+            - Latest file: ${latestFile}
+            - Latest article date (UTC): ${latestIso}
+            - Age: ${age} minutes
+            - Alert time (UTC): ${now}
+
+            Please check Actions runs and scraper logs.`;
+
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              per_page: 100
+            });
+
+            const existing = issues.find(i => i.title === title);
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body: `Heartbeat still stale at ${now}. Latest age: ${age} minutes.`
+              });
+              core.info(`Updated existing issue #${existing.number}`);
+            } else {
+              const created = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body
+              });
+              core.info(`Created issue #${created.data.number}`);
+            }
+
+      - name: Close existing heartbeat issue when healthy
+        if: steps.heartbeat.outputs.stale != 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "Publishing heartbeat alert: no new article in 90+ minutes";
+            const now = new Date().toISOString();
+
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              per_page: 100
+            });
+
+            const existing = issues.find(i => i.title === title);
+            if (!existing) {
+              core.info("No open heartbeat issue to close.");
+              return;
+            }
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: existing.number,
+              body: `Publishing recovered at ${now}. Closing alert.`
+            });
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: existing.number,
+              state: "closed"
+            });
+            core.info(`Closed issue #${existing.number}`);
