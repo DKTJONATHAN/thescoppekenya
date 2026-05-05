@@ -2,7 +2,7 @@ name: Rebuild Sitemap
 
 on:
   schedule:
-    - cron: '30 0,6,12,18 * * *'
+    - cron: '4 0,6,12,18 * * *'
   push:
     branches:
       - main

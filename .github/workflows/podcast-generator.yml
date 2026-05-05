@@ -1,7 +1,7 @@
 name: Za Ndani - Weekly Podcast Generator
 on:
   schedule:
-    - cron: '0 8 * * 0' # Every Sunday at 08:00 UTC
+    - cron: '3 8 * * 0' # Every Sunday at 08:03 UTC
   workflow_dispatch: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

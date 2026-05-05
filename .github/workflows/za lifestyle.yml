@@ -2,7 +2,7 @@ name: Jona Munyi - Lifestyle Scraper
 
 on:
   schedule:
-    - cron: '35 3-20 * * *'
+    - cron: '14 3-20 * * *'
   workflow_dispatch: {}
 
 concurrency:
@@ -272,7 +272,7 @@ jobs:
                       pt = date_parser.parse(meta_pub["content"])
                       if pt.tzinfo is None: pt = pt.replace(tzinfo=datetime.timezone.utc)
                       age_h = (datetime.datetime.now(datetime.timezone.utc) - pt).total_seconds()/3600
-                      if age_h > 72:
+                      if age_h > 6:
                           print(f"Skipping, age {age_h:.1f}h")
                           return None, None, None
                   except Exception:
@@ -555,3 +555,4 @@ jobs:
           commit_message: "content: Jona Munyi Lifestyle report"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_jona_lifestyle.json'
+
