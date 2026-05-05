@@ -50,18 +50,21 @@
     "24377a54cbd3c39cb12aeac7cbc98bc1",
     "f52ba07872b49d2a30110ad34e0d817e",
     "fa67d362f0d94d6c0340e5ced6931784",
-    "e684d579b85cd26d6d1d21ae5b70f5fb"
+    "e684d579b85cd26d6d1d21ae5b70f5fb",
+    "13d9a283514bed3a5a85a1c5ac42715f"
   ],
   "style_history": [
     "Match Report",
     "Cynical Pundit",
     "Player Profile Beat",
     "Stat Story",
-    "Tactical Take"
+    "Tactical Take",
+    "Cynical Pundit"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
     "money_follow|MMA|Stat Story",
-    "policy_gap|sports|Tactical Take"
+    "policy_gap|sports|Tactical Take",
+    "impact_on_citizens|football|Cynical Pundit"
   ]
 }
