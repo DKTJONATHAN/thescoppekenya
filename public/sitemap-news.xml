@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/nakuru-county-to-provide-free-uniforms-for-public-ecde-learners</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-05T16:58:35.000Z</news:publication_date>
+      <news:title>Nakuru County to Provide Free Uniforms for Public ECDE Learners</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/portable-compares-mentorship-styles-of-olamide-and-davido</loc>
     <news:news>
       <news:publication>
@@ -694,17 +705,6 @@
       </news:publication>
       <news:publication_date>2026-05-03T17:10:03.000Z</news:publication_date>
       <news:title>Larry Madowo and Edith Kimani: Public Appearances Fuel Relationship Speculation in Kenya</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/marurui-squatters-protest</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-03T17:08:14.000Z</news:publication_date>
-      <news:title>How Marurui Squatters Protest Paralyzed Nairobi&apos;s Northern Bypass</news:title>
     </news:news>
   </url>
 </urlset>

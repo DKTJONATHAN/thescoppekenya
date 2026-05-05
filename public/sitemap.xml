@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://zandani.co.ke/</loc>
-    <lastmod>2026-05-05T16:54:47.000Z</lastmod>
+    <lastmod>2026-05-05T16:58:35.000Z</lastmod>
     <changefreq>always</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/about</loc>
-    <lastmod>2026-05-05T17:07:16.000Z</lastmod>
+    <lastmod>2026-05-05T17:08:41.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/contact</loc>
-    <lastmod>2026-05-05T17:07:16.000Z</lastmod>
+    <lastmod>2026-05-05T17:08:41.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/privacy</loc>
-    <lastmod>2026-05-05T17:07:16.000Z</lastmod>
+    <lastmod>2026-05-05T17:08:41.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/terms</loc>
-    <lastmod>2026-05-05T17:07:16.000Z</lastmod>
+    <lastmod>2026-05-05T17:08:41.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/archive</loc>
-    <lastmod>2026-05-05T16:54:47.000Z</lastmod>
+    <lastmod>2026-05-05T16:58:35.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -44,7 +44,7 @@
   </url>
   <url>
     <loc>https://zandani.co.ke/category/news</loc>
-    <lastmod>2026-05-05T14:23:54.000Z</lastmod>
+    <lastmod>2026-05-05T16:58:35.000Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -119,6 +119,12 @@
     <lastmod>2026-02-24T00:00:00.000Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/nakuru-county-to-provide-free-uniforms-for-public-ecde-learners</loc>
+    <lastmod>2026-05-05T16:58:35.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/article/portable-compares-mentorship-styles-of-olamide-and-davido</loc>
@@ -7256,7 +7262,7 @@
   </url>
   <url>
     <loc>https://zandani.co.ke/article/who-where-how</loc>
-    <lastmod>2026-05-05T17:07:16.600Z</lastmod>
+    <lastmod>2026-05-05T17:08:41.294Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
