@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Kenya Allocates Ksh 3.36 Billion for New SGR Coaches and Wheelsets](https://zandani.co.ke/article/kenya-allocates-ksh-3-36-billion-for-new-sgr-coaches) - The government has set aside Ksh 3.36 billion to acquire new SGR coaches and locomotive parts as part of a wider push to modernize Kenya railway services.
 - [Kenyan Wall Street and WorkL Launch Top Employer Awards](https://zandani.co.ke/article/kenyan-wall-street-workl-launch-top-employer-awards) - The Kenyan Wall Street and WorkL have partnered to recognize leading Kenyan employers based on workplace culture and employee wellness standards.
 - [US Radio Network Rebrands to Honor Iconic Sitcom WKRP in Cincinnati](https://zandani.co.ke/article/radio-network-rebrands-to-honor-wkrp-in-cincinnati-sitcom) - Radio owner Jeff Ziesmann has rebranded his Ohio and Kentucky station network to honor the legacy of the hit 1970s television sitcom WKRP in Cincinnati.
 - [Bowmans warns of risks in proposed Finance Bill tax measures](https://zandani.co.ke/article/bowmans-warns-of-risks-in-proposed-finance-bill-tax-measures) - Top law firm Bowmans expresses concern over Finance Bill proposals citing negative impacts on business compliance, investment, and consumer affordability.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Celebrities Shine at Met Gala With Fashion Is Art Theme](https://zandani.co.ke/article/celebrities-shine-at-met-gala-with-fashion-is-art-theme) - Global stars showcased sculptural designs and couture craftsmanship at the 2026 Met Gala as the red carpet celebrated the intersection of art and style.
 - [Safaricom Projected to Hit Record Profits and Higher Dividends](https://zandani.co.ke/article/safaricom-projected-to-hit-record-profits-and-higher-dividends) - Analysts forecast record financial growth for Safaricom in the upcoming results, driven by strong M-Pesa revenue and Ethiopian operations.
 - [Understanding the Requirement for Dual-Colored Number Plates in Kenya](https://zandani.co.ke/article/ntsa-dual-colored-number-plate-regulations-kenya) - NTSA requires white front and yellow rear number plates in Kenya to improve visibility and road safety. Learn about the standards and policy.
-- [Global Paralympic achievements and athlete profiles in focus](https://zandani.co.ke/article/global-paralympic-achievements-and-athlete-profiles) - Explore the latest in disability sports, covering wheelchair racing victories, swimming championships, and inspiring journeys of Paralympic athletes.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml

@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/kenya-allocates-ksh-3-36-billion-for-new-sgr-coaches</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-05T12:12:26.000Z</news:publication_date>
+      <news:title>Kenya Allocates Ksh 3.36 Billion for New SGR Coaches and Wheelsets</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenyan-wall-street-workl-launch-top-employer-awards</loc>
     <news:news>
       <news:publication>
