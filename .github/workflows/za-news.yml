@@ -2,7 +2,8 @@ name: Celestine Nzioka - News Scraper
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    # Hourly from 06:00 to 23:00 EAT (UTC+3) -> 03:00 to 20:00 UTC
+    - cron: '0 3-20 * * *'
   workflow_dispatch: {}
 
 concurrency:
@@ -16,11 +17,11 @@ env:
   DEFAULT_BRANCH: main
   POSTS_DIR: content/posts
   MEMORY_FILE: .github/memory_celestine_news.json
+  TZ: Africa/Nairobi
 
 jobs:
   generate-and-publish:
     runs-on: ubuntu-22.04
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -39,814 +40,591 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
-          key: ${{ runner.os }}-playwright-${{ hashFiles('**/playwright') }}
-          restore-keys: |
-            ${{ runner.os }}-playwright-
+          key: ${{ runner.os }}-playwright-chromium
 
-      - name: Install system dependencies and Python packages
+      - name: Install dependencies
         run: |
-          sudo apt-get update -y
-          sudo apt-get install -y \
-            libnss3 libatk-bridge2.0-0 libdrm2 libxcomposite1 libxdamage1 \
-            libxrandr2 libgbm1 libasound2 fonts-liberation libatk1.0-0 \
-            libatspi2.0-0 libcairo2 libcups2 libdbus-1-3 libexpat1 \
-            libfontconfig1 libgcc1 libglib2.0-0 libgtk-3-0 libnspr4 \
-            libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 \
-            libx11-xcb1 libxcb1 libxext6 libxfixes3 libxi6 libxrender1 \
-            libxtst6 lsb-release wget xdg-utils
           python -m pip install --upgrade pip
-          pip install \
-            requests \
-            google-genai \
-            beautifulsoup4 \
-            lxml \
-            playwright \
-            playwright-stealth==1.0.6 \
-            python-dateutil \
-            Pillow
+          pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil
           playwright install chromium --with-deps
 
-      - name: Generate article with Gemini
+      - name: Run Celestine News pipeline
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
           cat > _pipeline.py << 'PYEOF'
-          import os, json, datetime, requests, re, time, sys, hashlib, itertools, base64, random, io
+          import os, sys, json, re, time, random, hashlib, base64, itertools, datetime, urllib.parse
+          import requests
           from dateutil import parser as date_parser
-          from google import genai
-          from google.genai import types
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
-          from playwright_stealth import stealth_sync
-          from PIL import Image
+          from google import genai
+          from google.genai import types
 
-          # CONFIG
-          publish_timestamp = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
-          today_str         = datetime.datetime.utcnow().strftime('%Y-%m-%d')
-          full_date_str     = datetime.datetime.utcnow().strftime('%A, %B %d, %Y')
-          current_year      = datetime.datetime.utcnow().strftime('%Y')
-          SITE_BASE_URL     = 'https://zandani.co.ke'
-          SITE_URL          = 'https://www.kenyans.co.ke/news'
-          SITE_DOMAIN       = 'kenyans.co.ke'
-          YOUR_SITE_NAME    = 'Za Ndani'
-          MAX_AGE_HOURS     = 24
-          MAX_PER_RUN       = 1
-          HISTORY_LOOK      = 8
-          REWRITE_THRESH    = 7
-          MIN_SRC_CHARS     = 500
+          # ---------- CONFIG ----------
+          AUTHOR_NAME      = "Celestine Nzioka"
+          AUTHOR_SLUG      = "celestine-nzioka"
+          CATEGORY         = "News"
+          SITE_BASE_URL    = "https://zandani.co.ke"
+          SOURCE_URL       = "https://www.kenyans.co.ke/news"
+          SOURCE_DOMAIN    = "kenyans.co.ke"
+          POSTS_DIR        = os.environ.get("POSTS_DIR", "content/posts")
+          MEMORY_FILE      = os.environ.get("MEMORY_FILE", ".github/memory_celestine_news.json")
 
-          # March 2026 Model Pipeline
           MODELS_TO_TRY = [
               "gemini-3.1-pro-preview",
               "gemini-3.1-flash-lite-preview",
               "gemini-3-flash-preview",
               "gemini-2.5-pro",
-              "gemini-2.5-flash"
+              "gemini-2.5-flash",
           ]
 
           BANNED_PHRASES = [
-              'sasa basi', 'melting the pot', 'spill the tea', 'tea is hot', 'grab your popcorn',
-              'buckle up', 'breaking news', 'dive in', 'delve into', 'moreover', 'furthermore',
-              'in conclusion', "it's worth noting", 'a testament to', 'navigating the landscape',
-              "in today's digital age", 'tapestry', 'in a dramatic turn',
-              'here is everything you need to know'
+              "sasa basi","melting the pot","spill the tea","tea is hot","grab your popcorn",
+              "buckle up","breaking news","dive in","delve into","moreover","furthermore",
+              "in conclusion","it's worth noting","a testament to","navigating the landscape",
+              "in today's digital age","tapestry","game-changer","stay tuned","unpack",
           ]
 
-          BANNED_LEADS = [
-              'In a significant development', 'In a surprising turn of events', 'Kenyans are reacting',
-              'Questions are emerging', 'The development comes at a time', 'This comes after',
-              'In the latest development', 'A fresh twist has emerged', 'In what is being described as'
+          BRANDS_TO_SCRUB = [
+              "Kenyans.co.ke", "kenyans.co.ke", "Kenyans Co Ke",
+              "BBC", "CNN", "Reuters", "Al Jazeera", "Daily Nation", "Nation.Africa",
+              "Standard Media", "The Standard", "Citizen Digital", "Tuko", "Pulse Live",
+              "Capital FM", "K24", "NTV Kenya", "KTN News",
           ]
 
-          # STYLE PRESETS
-          STYLE_PRESETS = {
-              "hard_news": {
-                  "name": "hard_news",
-                  "format": "straight news report",
-                  "lead_style": "hard news lead",
-                  "tone": "crisp, restrained, factual",
-                  "angle": "immediate public impact in Kenya",
-                  "structure": "intro -> 2-3 sub-sections -> short close",
-                  "sentence_mix": "mix short punchy lines with medium sentences",
-                  "closing": "end on the newest confirmed fact or next official step"
+          STYLE_PRESETS = [
+              {
+                  "name": "Hard News Lead",
+                  "format": "Inverted pyramid news report",
+                  "lead_style": "Single-sentence hard lead naming the actor, action, place and impact.",
+                  "tone": "Authoritative, neutral, declarative",
+                  "angle": "What happened and who is affected first",
+                  "structure": "Lead, then 3 short context paragraphs, then 2 reaction paragraphs, then a forward-look closer",
+                  "sentence_mix": "Mostly short and medium. Avoid back-to-back long sentences",
+                  "closing": "Forward-looking sentence on what to watch next",
               },
-              "explainer": {
-                  "name": "explainer",
-                  "format": "news explainer",
-                  "lead_style": "consequence-first lead",
-                  "tone": "clear and analytical",
-                  "angle": "why this matters to ordinary Kenyans",
-                  "structure": "intro -> explanation block -> implications block",
-                  "sentence_mix": "mostly medium sentences, occasional short punchy lines",
-                  "closing": "flag what readers should watch next"
+              {
+                  "name": "Explainer",
+                  "format": "Question-driven explainer",
+                  "lead_style": "Frame the news with the central question readers are actually asking",
+                  "tone": "Calm, instructive, plain-spoken",
+                  "angle": "Why this matters to ordinary Kenyans",
+                  "structure": "Hook, then H3 sub-questions answered briefly, then implications",
+                  "sentence_mix": "Conversational rhythm, vary sentence length",
+                  "closing": "One-line takeaway readers can repeat",
               },
-              "timeline": {
-                  "name": "timeline",
-                  "format": "timeline-driven report",
-                  "lead_style": "update lead stating the latest development first",
-                  "tone": "precise and chronological",
-                  "angle": "how the story unfolded and what changed",
-                  "structure": "intro -> timeline section -> current status section",
-                  "sentence_mix": "short declarative sentences with occasional context lines",
-                  "closing": "end with current status and any unresolved points"
+              {
+                  "name": "Power Accountability",
+                  "format": "Cynical accountability piece",
+                  "lead_style": "Lead with the contradiction or the missing detail in the official story",
+                  "tone": "Sharp, sceptical, unflinching but factual",
+                  "angle": "What the people in power are not saying",
+                  "structure": "Cold open, claim vs reality, paper trail, closing question",
+                  "sentence_mix": "Mix of punchy short lines and one heavier paragraph mid-piece",
+                  "closing": "A pointed question that hangs in the air",
               },
-              "human_interest": {
-                  "name": "human_interest",
-                  "format": "human-impact report",
-                  "lead_style": "scene-setting but grounded factual lead",
-                  "tone": "warm but professional, no sentimentality",
-                  "angle": "human effect, lived consequences, or local reaction",
-                  "structure": "intro -> human angle section -> broader context section",
-                  "sentence_mix": "varied lengths, one short single-sentence paragraph allowed",
-                  "closing": "end with the human or social takeaway"
+              {
+                  "name": "Reaction & Voices",
+                  "format": "Reaction round-up",
+                  "lead_style": "Lead with the loudest reaction, not the event itself",
+                  "tone": "Street-level, human, grounded",
+                  "angle": "How Kenyans are responding right now",
+                  "structure": "Reaction lead, event recap in one paragraph, three voices summarised, what next",
+                  "sentence_mix": "Short quotes paraphrased, not block quotes",
+                  "closing": "A line that captures the public mood",
               },
-              "accountability": {
-                  "name": "accountability",
-                  "format": "accountability report",
-                  "lead_style": "stakes-first lead that names who is responsible",
-                  "tone": "firm, evidence-led, no opinion",
-                  "angle": "responsibility, unanswered questions, or institutional failure",
-                  "structure": "intro -> what happened -> what is disputed -> what comes next",
-                  "sentence_mix": "compact sentences, contrast-driven transitions",
-                  "closing": "end with the key unanswered question or next official step"
-              }
-          }
-          PRESET_NAMES = list(STYLE_PRESETS.keys())
+              {
+                  "name": "Context Backgrounder",
+                  "format": "Backgrounder with timeline beats",
+                  "lead_style": "Place the event inside a longer running story",
+                  "tone": "Measured, knowledgeable, slightly weary",
+                  "angle": "How we got here and where it usually ends",
+                  "structure": "Today's beat, three brief timeline beats, pattern analysis, outlook",
+                  "sentence_mix": "Medium sentences, one short closer",
+                  "closing": "Pattern-recognition line tying past to future",
+              },
+          ]
 
-          # MEMORY
-          def load_memory(path):
-              if not os.path.exists(path):
+          # ---------- TIME ----------
+          now_utc       = datetime.datetime.utcnow()
+          now_eat       = now_utc + datetime.timedelta(hours=3)
+          publish_ts    = now_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
+          today_str     = now_eat.strftime("%Y-%m-%d")
+          full_date_str = now_eat.strftime("%A, %B %d, %Y")
+
+          # ---------- MEMORY ----------
+          def load_memory():
+              if not os.path.exists(MEMORY_FILE):
                   return {"published_hashes": [], "style_history": []}
               try:
-                  raw = json.loads(open(path).read())
-              except Exception:
-                  return {"published_hashes": [], "style_history": []}
-              
-              if isinstance(raw, list):
-                  print("[memory] Migrating flat array -> new dict format")
-                  return {"published_hashes": raw, "style_history": []}
-              
-              raw.setdefault("published_hashes", [])
-              raw.setdefault("style_history", [])
-              return raw
-
-          def save_memory(path, mem):
-              mem["published_hashes"] = mem["published_hashes"][-300:]
-              mem["style_history"]    = mem["style_history"][-80:]
-              with open(path, 'w', encoding='utf-8') as f:
-                  json.dump(mem, f, indent=2, ensure_ascii=False)
-
-          # STYLE ROTATION
-          def pick_style_preset(style_history):
-              if len(style_history) >= 3:
-                  last3 = [h.get("stylePreset") for h in style_history[-3:]]
-                  if len(set(last3)) == 1 and last3[0] in PRESET_NAMES:
-                      available = [p for p in PRESET_NAMES if p != last3[0]]
-                      return random.choice(available)
-              return random.choice(PRESET_NAMES)
-
-          # GEMINI CLIENT
-          raw_keys = [os.environ.get(k) for k in ['GEMINI_WRITE_KEY', 'GEMINI_API_KEY', 'GEMINI_API_KEY1'] if os.environ.get(k)]
-          if not raw_keys:
-              print('No Gemini keys found')
-              sys.exit(1)
-              
-          key_cycle   = itertools.cycle(raw_keys)
-          current_key = next(key_cycle)
-          client      = genai.Client(api_key=current_key)
-
-          def gemini_generate(prompt, label='', temperature=0.75, max_tokens=4000, expect_json=False):
-              global current_key, client
-              seed = random.randint(1, 999999)
-              for model in MODELS_TO_TRY:
-                  for attempt in range(6):
-                      try:
-                          config = types.GenerateContentConfig(
-                              temperature=temperature,
-                              max_output_tokens=max_tokens,
-                              candidate_count=1, 
-                              seed=seed, 
-                              top_p=0.95,
-                              response_mime_type='application/json' if expect_json else 'text/plain',
-                          )
-                          resp = client.models.generate_content(model=model, contents=prompt, config=config)
-                          candidate = resp.candidates[0] if resp.candidates else None
-                          
-                          if candidate and candidate.content and candidate.content.parts:
-                              result = ''.join(
-                                  p.text for p in candidate.content.parts
-                                  if hasattr(p, 'text') and p.text
-                              ).strip()
-                          else:
-                              result = (resp.text or '').strip()
-                              
-                          print(f'[gemini] OK ({model}, temp={temperature}): {label}')
-                          return result
-                      except Exception as e:
-                          err = str(e).lower()
-                          if any(x in err for x in ['429', 'quota', 'rate', '503', 'unavailable', '500', 'overloaded', 'resource_exhausted']):
-                              wait = random.uniform(20, 35)
-                              print(f'[gemini] Rate limit on {model} - rotating key, wait {wait:.1f}s')
-                              time.sleep(wait)
-                              current_key = next(key_cycle)
-                              client      = genai.Client(api_key=current_key)
-                              continue
-                          elif any(x in err for x in ['not found', 'not support', 'not_found', 'deprecated']):
-                              break
-                          else:
-                              print(f'[gemini] Error ({model}, attempt {attempt+1}): {e}')
-                              time.sleep(3)
-                              continue
-              return None
-
-          def safe_json(text, default=None):
-              if default is None: default = {}
-              if not text: return default
-              cleaned = re.sub(r'^```json\s*|
-```\s*$', '', text.strip(), flags=re.I|re.M).strip()
-              try: 
-                  return json.loads(cleaned)
-              except Exception:
-                  m = re.search(r'\{.*\}|\[.*\]', cleaned, re.S)
-                  if m:
-                      try: 
-                          return json.loads(m.group(0))
-                      except Exception: 
-                          pass
-              return default
-
-          def clean_text(text):
-              text = text.replace('\u2014', '-').replace('\u2013', '-').replace('\xa0', ' ')
-              return re.sub(r'\s+', ' ', text).strip()
-
-          # IMGBB UPLOAD
-          def upload_to_imgbb(image_url):
-              api_key = os.environ.get('IMGBB_API_KEY')
-              if not api_key or not image_url: 
-                  return image_url
-              try:
-                  img_data = requests.get(image_url, timeout=15).content
-                  img = Image.open(io.BytesIO(img_data))
-                  if img.mode in ('RGBA', 'LA', 'P'):
-                      img = img.convert('RGB')
-                  webp_buf = io.BytesIO()
-                  img.save(webp_buf, format='WEBP', quality=82)
-                  webp_buf.seek(0)
-                  b64 = base64.b64encode(webp_buf.read()).decode('utf-8')
-                  res = requests.post(
-                      'https://api.imgbb.com/1/upload',
-                      data={'key': api_key, 'image': b64}, 
-                      timeout=20
-                  )
-                  if res.status_code == 200:
-                      new_url = res.json()['data']['url']
-                      print(f'[imgbb] Re-hosted as WebP: {new_url}')
-                      return new_url
-                  print(f'[imgbb] Failed: {res.text}')
-                  return image_url
+                  with open(MEMORY_FILE, "r", encoding="utf-8") as f:
+                      raw = json.load(f)
+                  if isinstance(raw, list):
+                      return {"published_hashes": raw[-500:], "style_history": []}
+                  if isinstance(raw, dict):
+                      raw.setdefault("published_hashes", [])
+                      raw.setdefault("style_history", [])
+                      return raw
               except Exception as e:
-                  print(f'[imgbb] Error: {e}')
-                  return image_url
+                  print(f"Memory load error: {e}")
+              return {"published_hashes": [], "style_history": []}
 
-          # SCRAPER
+          def save_memory(mem):
+              os.makedirs(os.path.dirname(MEMORY_FILE), exist_ok=True)
+              mem["published_hashes"] = mem.get("published_hashes", [])[-500:]
+              mem["style_history"]    = mem.get("style_history", [])[-30:]
+              with open(MEMORY_FILE, "w", encoding="utf-8") as f:
+                  json.dump(mem, f, indent=2)
+
+          memory = load_memory()
+
+          # ---------- STYLE ROTATION ----------
+          def pick_style(history):
+              recent = set(history[-3:])
+              candidates = [s for s in STYLE_PRESETS if s["name"] not in recent] or STYLE_PRESETS
+              # Forbid the same style 3 in a row
+              if len(history) >= 2 and history[-1] == history[-2]:
+                  candidates = [s for s in STYLE_PRESETS if s["name"] != history[-1]] or candidates
+              return random.choice(candidates)
+
+          # ---------- IMAGES ----------
+          def upload_to_imgbb(image_url):
+              key = os.environ.get("IMGBB_API_KEY")
+              if not key or not image_url:
+                  return image_url
+              try:
+                  data = requests.get(image_url, timeout=15).content
+                  b64  = base64.b64encode(data).decode("utf-8")
+                  r = requests.post("https://api.imgbb.com/1/upload",
+                                    data={"key": key, "image": b64}, timeout=20)
+                  if r.status_code == 200:
+                      return r.json()["data"]["url"]
+              except Exception as e:
+                  print(f"imgbb error: {e}")
+              return image_url
+
+          def get_unsplash_image(query):
+              key = os.environ.get("UNSPLASH_ACCESS_KEY")
+              fallback = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+              if not key:
+                  return fallback
+              try:
+                  r = requests.get(
+                      f"https://api.unsplash.com/photos/random?query={urllib.parse.quote(query)}"
+                      f"&orientation=landscape&client_id={key}", timeout=10)
+                  if r.status_code == 200:
+                      return r.json()["urls"]["regular"]
+              except Exception as e:
+                  print(f"unsplash error: {e}")
+              return fallback
+
+          # ---------- SCRAPER ----------
           def get_target_urls():
-              urls = set()
-              print(f'[scrape] Scanning {SITE_URL}...')
+              urls = []
+              print(f"Scanning {SOURCE_URL}")
               try:
                   with sync_playwright() as p:
                       browser = p.chromium.launch(
                           headless=True,
-                          args=[
-                              '--no-sandbox', 
-                              '--disable-dev-shm-usage',
-                              '--disable-blink-features=AutomationControlled',
-                              '--disable-infobars', 
-                              '--window-size=1920,1080'
-                          ]
-                      )
-                      context = browser.new_context(
-                          user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
-                          viewport={'width': 1920, 'height': 1080},
-                          locale='en-KE',
-                          timezone_id='Africa/Nairobi',
-                          extra_http_headers={
-                              'Accept-Language': 'en-KE,en;q=0.9',
-                              'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-                              'Sec-Fetch-Site': 'none',
-                              'Sec-Fetch-Mode': 'navigate'
-                          }
-                      )
-                      page = context.new_page()
-                      stealth_sync(page)
-                      page.goto(SITE_URL, timeout=60000, wait_until='domcontentloaded')
-                      time.sleep(random.uniform(2, 5))
+                          args=["--no-sandbox","--disable-dev-shm-usage","--disable-blink-features=AutomationControlled"])
+                      ctx = browser.new_context(
+                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                          viewport={"width":1920,"height":1080})
+                      page = ctx.new_page()
+                      page.goto(SOURCE_URL, timeout=90000, wait_until="domcontentloaded")
+                      page.wait_for_timeout(3500)
                       for _ in range(3):
-                          page.evaluate('window.scrollBy(0, 1800)')
-                          time.sleep(random.uniform(2, 4))
-                      soup = BeautifulSoup(page.content(), 'html.parser')
-                      for a in soup.find_all('a', href=True):
-                          href = a.get('href', '').strip()
-                          if not href: 
-                              continue
-                          full_url = href if href.startswith('http') else f'https://www.{SITE_DOMAIN}' + href
-                          if SITE_DOMAIN not in full_url: 
-                              continue
-                          path = full_url.split(SITE_DOMAIN)[-1].lower()
-                          slug = path.rstrip('/').split('/')[-1]
-                          skip = ['/author/', '/tag/', '/page/', '/feed/', '/comment-', '/category/', '/politics']
-                          if len(slug) > 15 and '-' in slug and not any(x in path for x in skip):
-                              urls.add(full_url)
+                          page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                          page.wait_for_timeout(2500)
+                      soup = BeautifulSoup(page.content(), "html.parser")
+                      for a in soup.select("a[href]"):
+                          href = a.get("href","")
+                          if not href: continue
+                          if "/news/" not in href: continue
+                          if any(x in href for x in ["#","?page=","/category/","/tag/"]): continue
+                          full = href if href.startswith("http") else "https://www.kenyans.co.ke" + href
+                          if full not in urls:
+                              urls.append(full)
                       browser.close()
               except Exception as e:
-                  print(f'[scrape] Scan failed: {e}')
-                  
-              def date_key(u):
-                  m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', u)
-                  if m:
-                      return int(m.group(1) + m.group(2) + m.group(3)) * 1000000
-                  mid = re.search(r'/(\d{5,7})-', u)
-                  return int(mid.group(1)) if mid else 0
-                  
-              urls_list = sorted(list(urls), key=date_key, reverse=True)
-              print(f'[scrape] Found {len(urls_list)} candidates. Top 8:')
-              for u in urls_list[:8]: 
-                  print(f'  {u}')
-              return urls_list[:15]
+                  print(f"List scrape error: {e}")
+              print(f"Found {len(urls)} candidate links")
+              return urls[:25]
 
           def scrape_article(url):
-              print(f'[scrape] Fetching: {url}')
+              print(f"Scraping {url}")
               try:
                   with sync_playwright() as p:
                       browser = p.chromium.launch(
                           headless=True,
-                          args=[
-                              '--no-sandbox', 
-                              '--disable-dev-shm-usage',
-                              '--disable-blink-features=AutomationControlled'
-                          ]
-                      )
-                      context = browser.new_context(
-                          user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36'
-                      )
-                      page = context.new_page()
-                      stealth_sync(page)
-                      page.route('**/*', lambda route: route.abort() if route.request.resource_type in ['image', 'font', 'media'] else route.continue_())
-                      page.goto(url, timeout=60000, wait_until='domcontentloaded')
-                      time.sleep(random.uniform(1, 3))
-                      soup = BeautifulSoup(page.content(), 'html.parser')
+                          args=["--no-sandbox","--disable-dev-shm-usage","--disable-blink-features=AutomationControlled"])
+                      ctx = browser.new_context(
+                          user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
+                      page = ctx.new_page()
+                      page.goto(url, timeout=60000, wait_until="domcontentloaded")
+                      page.wait_for_timeout(3500)
+                      soup = BeautifulSoup(page.content(), "html.parser")
                       browser.close()
-                      
-                      pub_time = None
-                      for script in soup.find_all('script', type='application/ld+json'):
-                          try:
-                              data = json.loads(script.string or '{}')
-                              candidates = data if isinstance(data, list) else [data]
-                              for item in candidates:
-                                  if isinstance(item, dict) and item.get('datePublished'):
-                                      pub_time = date_parser.parse(item['datePublished'])
-                                      break
-                              if pub_time: 
-                                  break
-                          except Exception: 
-                              pass
-                              
-                      if not pub_time:
-                          meta = soup.find('meta', property='article:published_time') or soup.find('meta', {'name': 'date'})
-                          if meta and meta.get('content'):
-                              pub_time = date_parser.parse(meta['content'])
-                              
-                      if not pub_time:
-                          m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', url)
-                          if m:
-                              pub_time = datetime.datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)), tzinfo=datetime.timezone.utc)
-                      
-                      if pub_time:
-                          if pub_time.tzinfo is None:
-                              pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
-                          age = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
-                          print(f'[scrape] Date: {pub_time} ({age:.1f}h old)')
-                          if age > MAX_AGE_HOURS:
-                              print('[scrape] Too old - skip')
-                              return None, None, None
-                      else:
-                          print('[scrape] No date found - treating as fresh')
-                          
-                      title = soup.title.string.strip() if soup.title else ''
-                      title = re.sub(r'\s*[-|]\s*Kenyans\.co\.ke.*', '', title, flags=re.I).strip()
-                      
-                      article_text = ''
-                      for sel in ['article', '.article-body', '.post-content', '.entry-content', '.content', 'main']:
-                          cont = soup.select_one(sel)
-                          if cont:
-                              article_text = '\n\n'.join(p.get_text(strip=True) for p in cont.find_all('p') if len(p.get_text(strip=True)) > 40)
-                              if len(article_text) > 400: 
-                                  break
-                                  
-                      if len(article_text) < 400:
-                          article_text = '\n\n'.join(p.get_text(strip=True) for p in soup.find_all('p') if len(p.get_text(strip=True)) > 40)
-                          
-                      img_url = ''
-                      for tag in [soup.find('meta', property='og:image'), soup.find('meta', {'name': 'twitter:image'})]:
-                          if tag: 
-                              img_url = tag.get('content', '')
-                              break
-                              
-                      print(f'[scrape] Text length: {len(article_text)}')
-                      return article_text, img_url, title
               except Exception as e:
-                  print(f'[scrape] Error: {e}')
+                  print(f"Scrape failed: {e}")
                   return None, None, None
 
-          # INTERNAL LINKING
-          def tokenize(text):
-              return set(re.findall(r'\b[a-zA-Z]{4,}\b', (text or '').lower()))
+              # freshness gate (48h)
+              meta_pub = soup.find("meta", property="article:published_time")
+              if meta_pub and meta_pub.get("content"):
+                  try:
+                      pt = date_parser.parse(meta_pub["content"])
+                      if pt.tzinfo is None:
+                          pt = pt.replace(tzinfo=datetime.timezone.utc)
+                      age_h = (datetime.datetime.now(datetime.timezone.utc) - pt).total_seconds()/3600
+                      if age_h > 48:
+                          print(f"Skipping, age {age_h:.1f}h")
+                          return None, None, None
+                  except Exception:
+                      pass
 
-          def list_recent_posts(posts_dir, limit=HISTORY_LOOK):
-              if not os.path.exists(posts_dir): 
-                  return []
-              rows = []
-              for fn in os.listdir(posts_dir):
-                  if not fn.endswith('.md'): 
+              t = soup.find("title")
+              title = t.get_text(strip=True) if t else ""
+              for sep in [" | "," - "]:
+                  if sep in title:
+                      title = title.split(sep)[0].strip()
+
+              text = ""
+              for sel in ["article", ".node__content", ".field--name-body",
+                          ".article__body", "main article", ".content"]:
+                  c = soup.select_one(sel)
+                  if c:
+                      text = "\n\n".join(p.get_text(" ", strip=True)
+                                         for p in c.find_all("p")
+                                         if len(p.get_text(strip=True)) > 30)
+                      if len(text) > 500:
+                          break
+              if len(text) < 500:
+                  text = "\n\n".join(p.get_text(" ", strip=True)
+                                     for p in soup.find_all("p")
+                                     if len(p.get_text(strip=True)) > 30)
+
+              img = ""
+              for m in soup.find_all("meta"):
+                  prop = m.get("property") or m.get("name") or ""
+                  if prop in ("og:image","twitter:image"):
+                      img = m.get("content","")
+                      if img: break
+
+              return text, img, title
+
+          # ---------- INTERNAL CONTEXT ----------
+          def get_internal_links():
+              if not os.path.isdir(POSTS_DIR):
+                  return ""
+              files = [f for f in os.listdir(POSTS_DIR) if f.endswith(".md")]
+              if not files:
+                  return ""
+              picks = random.sample(files, min(4, len(files)))
+              out = "RECENT INTERNAL LINKS (weave 1-2 naturally):\n"
+              for f in picks:
+                  try:
+                      with open(os.path.join(POSTS_DIR, f), "r", encoding="utf-8") as h:
+                          c = h.read()
+                      m = re.search(r'title:\s*"(.*?)"', c)
+                      ttl = m.group(1) if m else f.replace(".md","")
+                      slg = re.search(r'slug:\s*"(.*?)"', c)
+                      sl = slg.group(1) if slg else f.replace(".md","")
+                      out += f"- [{ttl}]({SITE_BASE_URL}/article/{sl})\n"
+                  except Exception:
                       continue
-                  path = os.path.join(posts_dir, fn)
-                  try: 
-                      rows.append((os.path.getmtime(path), path))
-                  except Exception: 
-                      pass
-              rows.sort(reverse=True)
-              return [p for _, p in rows[:limit]]
+              return out
 
-          def parse_frontmatter(md_text):
-              if not md_text.startswith('---\n'): 
-                  return {}, md_text
-              parts = md_text.split('---\n', 2)
-              if len(parts) < 3: 
-                  return {}, md_text
-              fm = {}
-              for line in parts[1].splitlines():
-                  m = re.match(r'^(\w+):\s*"?(.*?)"?\s*$', line)
-                  if m: 
-                      fm[m.group(1)] = m.group(2)
-              return fm, parts[2].strip()
-
-          def get_recent_history(posts_dir, limit=HISTORY_LOOK):
-              history = []
-              for path in list_recent_posts(posts_dir, limit=limit):
-                  try:
-                      with open(path, 'r', encoding='utf-8') as f: 
-                          content = f.read()
-                      fm, body = parse_frontmatter(content)
-                      history.append({
-                          'title': fm.get('title', ''),
-                          'slug': fm.get('slug', ''),
-                          'stylePreset': fm.get('stylePreset', ''),
-                          'leadStyle': fm.get('leadStyle', ''),
-                          'articleAngle': fm.get('articleAngle', ''),
-                          'bodySample': clean_text(body[:600]),
-                      })
-                  except Exception: 
-                      pass
-              return history
-
-          def get_internal_links(current_title, current_text, posts_dir):
-              if not os.path.exists(posts_dir): 
-                  return []
-              current_bag = tokenize((current_title or '') + ' ' + (current_text or ''))
-              rows = []
-              for path in list_recent_posts(posts_dir, limit=30):
-                  try:
-                      with open(path, 'r', encoding='utf-8') as f: 
-                          content = f.read()
-                      fm, body = parse_frontmatter(content)
-                      title = fm.get('title', '')
-                      slug = fm.get('slug', '')
-                      if not title or not slug: 
-                          continue
-                      score = len(current_bag & tokenize(title + ' ' + body[:400]))
-                      rows.append((score, title, slug))
-                  except Exception: 
-                      pass
-              rows.sort(reverse=True)
-              return [{'title': t, 'url': f'https://zandani.co.ke/article/{s}'} for score, t, s in rows[:5] if score > 0][:3]
-
-          # SOURCE LEAK GUARD
-          REPORTING_VERBS = r'(reports?|reported|says?|said|confirmed|revealed|announced|disclosed|told|added|noted|wrote|writes?|stated)'
-
+          # ---------- SOURCE LEAK GUARD ----------
           def scrub_source_leaks(text):
-              text = re.sub(r'\bkenyans\.co\.ke\b', 'zandani.co.ke', text, flags=re.I)
-              text = re.sub(
-                  rf'\bKenyans\.co\.ke\b\s+{REPORTING_VERBS}',
-                  r'Za Ndani \1',
-                  text, flags=re.I
-              )
-              text = re.sub(r'\baccording to Kenyans\.co\.ke\b', '', text, flags=re.I)
-              return text.strip()
+              if not text: return text
+              # Strip bare URLs from source domain
+              text = re.sub(r"https?://[^\s)\"']*" + re.escape(SOURCE_DOMAIN) + r"[^\s)\"']*", SITE_BASE_URL, text)
+              for brand in BRANDS_TO_SCRUB:
+                  text = re.sub(re.escape(brand), "Za Ndani", text, flags=re.IGNORECASE)
+              # collapse double "Za Ndani Za Ndani"
+              text = re.sub(r"(Za Ndani)(?:\s+Za Ndani)+", r"\1", text)
+              return text
 
-          # PIPELINE STAGES
-          def stage_brief(source_title, source_text, url, style_preset, all_history):
-              history_compact = json.dumps([
-                  {
-                      'title': h['title'],
-                      'stylePreset': h['stylePreset'],
-                      'leadStyle': h['leadStyle'],
-                      'articleAngle': h['articleAngle']
-                  }
-                  for h in all_history[:5]
-              ], ensure_ascii=False)
-              
-              prompt = (
-                  f"Current date: {full_date_str}\n"
-                  f"Source URL: {url}\n"
-                  f"Source title: {source_title}\n"
-                  f"Chosen style preset: {json.dumps(style_preset, ensure_ascii=False)}\n"
-                  f"Recent style history (avoid repeating): {history_compact}\n\n"
-                  f"Source text:\n{source_text[:5000]}\n\n"
-                  "You are a Kenyan newsroom planning editor.\n"
-                  "Convert the source into a planning brief. Do NOT write the article.\n"
-                  "Do not echo source sentences. Omit uncertain details.\n"
-                  "Pick a fresh angle that fits the preset and avoids recent patterns.\n\n"
-                  "Return only valid JSON:\n"
-                  '{"summary":"35-60 word factual summary","main_event":"string","who":["..."],'
-                  '"where":"string","when":"string","key_facts":["4-7 fact strings"],'
-                  '"why_it_matters":"string","article_angle":"string",'
-                  '"keywords":["3-6 items"],"suggested_sections":["2-4 section headings"],'
-                  '"lead_approach":"one short sentence","must_avoid":["phrases to avoid"]}'
-              )
-              text = gemini_generate(prompt, label='story-brief', expect_json=True, temperature=0.4, max_tokens=1800)
-              return safe_json(text, default={})
+          # ---------- GEMINI ----------
+          raw_keys = [os.environ.get(k) for k in ("GEMINI_WRITE_KEY","GEMINI_API_KEY","GEMINI_API_KEY1") if os.environ.get(k)]
+          if not raw_keys:
+              print("No Gemini keys configured")
+              sys.exit(1)
+          key_cycle = itertools.cycle(raw_keys)
+          current_key = next(key_cycle)
+          client = genai.Client(api_key=current_key)
 
-          def stage_seo(source_title, story_brief):
-              prompt = (
-                  f"SEO strategist for zandani.co.ke (Kenyan news).\n"
-                  f"Source title: {source_title}\n"
-                  f"Story brief: {json.dumps(story_brief, ensure_ascii=False)}\n\n"
-                  "Rules: final_title 45-65 chars, newsy, no clickbait. "
-                  "meta_description 120-155 chars. focus_keyword 2-4 words Kenyan context. "
-                  "seo_slug 3-5 hyphenated lowercase words. tags 4-6 title-case items.\n\n"
-                  'Return only valid JSON: {"final_title":"...","meta_description":"...","focus_keyword":"...","seo_slug":"...","tags":["..."]}'
-              )
-              text = gemini_generate(prompt, label='seo-metadata', expect_json=True, temperature=0.35, max_tokens=900)
-              return safe_json(text, default={})
+          def gemini_call(prompt, label="", json_mode=False):
+              global current_key, client
+              cfg = None
+              if json_mode:
+                  # CRITICAL: never include frequency_penalty / presence_penalty
+                  cfg = types.GenerateContentConfig(response_mime_type="application/json")
+              for model in MODELS_TO_TRY:
+                  for attempt in range(5):
+                      try:
+                          resp = client.models.generate_content(model=model, contents=prompt, config=cfg)
+                          out = (resp.text or "").strip()
+                          if out:
+                              print(f"Gemini OK [{model}] {label}")
+                              return out
+                      except Exception as e:
+                          msg = str(e).lower()
+                          transient = any(x in msg for x in ["429","quota","rate","503","unavailable","500","overloaded","resource_exhausted"])
+                          if transient:
+                              time.sleep(random.uniform(15, 30))
+                              current_key = next(key_cycle)
+                              client = genai.Client(api_key=current_key)
+                              continue
+                          print(f"Gemini error [{model}] {label}: {e}")
+                          break
+              return None
 
-          def stage_write(final_title, focus_keyword, story_brief, style_preset, internal_links, all_history):
-              recent_samples = json.dumps([
-                  {
-                      'title': h['title'],
-                      'stylePreset': h['stylePreset'],
-                      'leadStyle': h['leadStyle'],
-                      'articleAngle': h['articleAngle'],
-                      'bodySample': h['bodySample']
-                  }
-                  for h in all_history[:4]
-              ], ensure_ascii=False)
-              
-              banned_str   = ', '.join(BANNED_PHRASES)
-              banned_leads = ', '.join(BANNED_LEADS)
-              links_text   = json.dumps(internal_links, ensure_ascii=False)
-              
+          def parse_json_safely(txt):
+              if not txt: return None
+              clean = re.sub(r"^```(?:json)?\s*|\s*```$", "", txt.strip(), flags=re.I|re.DOTALL).strip()
+              try:
+                  return json.loads(clean)
+              except Exception:
+                  m = re.search(r"\{[\s\S]*\}", clean)
+                  if m:
+                      try: return json.loads(m.group(0))
+                      except Exception: return None
+              return None
+
+          # ---------- PIPELINE STAGES ----------
+          def stage_brief(raw_title, raw_text):
               prompt = (
-                  f"Date: {full_date_str}\nPublication: Za Ndani\nByline: Celestine Nzioka\n"
-                  f"Title: {final_title}\nFocus keyword: {focus_keyword}\n"
-                  f"Story brief: {json.dumps(story_brief, ensure_ascii=False)}\n"
-                  f"Style preset: {json.dumps(style_preset, ensure_ascii=False)}\n"
-                  f"Recent article patterns to avoid: {recent_samples}\n"
-                  f"Internal links (use 1-2 naturally if relevant): {links_text}\n\n"
-                  "Write a fully original Kenyan news article in Markdown.\n\n"
-                  "Voice guide for Celestine Nzioka:\n"
-                  "- Grounded, observant. Prefers concrete detail over hype.\n"
-                  "- Explains consequences for ordinary Kenyans when relevant.\n"
-                  "- Uses varied sentence lengths. No two consecutive paragraphs with same rhythm.\n"
-                  "- Avoids robotic transitions and templated phrasing.\n"
-                  "- Does not moralise or use clickbait.\n\n"
+                  "You receive a raw scraped Kenyan news article. Produce a STRICTLY FACTUAL JSON BRIEF.\n"
+                  "Rules:\n"
+                  "- NEVER copy or paraphrase whole sentences from the source.\n"
+                  "- Extract entities and facts only. No opinions.\n"
+                  "- All names, dates, numbers must be exactly as in source.\n"
+                  "- If a field is unknown, use null or [].\n\n"
+                  f"SOURCE TITLE: {raw_title}\n"
+                  f"SOURCE TEXT:\n{raw_text[:9000]}\n\n"
+                  "Return ONLY this JSON shape:\n"
+                  "{\n"
+                  '  "summary": "2-3 sentence neutral summary in your own words",\n'
+                  '  "main_events": ["bullet 1","bullet 2","bullet 3"],\n'
+                  '  "key_people": ["..."],\n'
+                  '  "key_places": ["..."],\n'
+                  '  "key_numbers": ["..."],\n'
+                  '  "keywords": ["kenya-relevant","keywords"],\n'
+                  '  "angle": "the most newsworthy angle in one sentence"\n'
+                  "}"
+              )
+              return parse_json_safely(gemini_call(prompt, "brief", json_mode=True))
+
+          def stage_seo(brief):
+              prompt = (
+                  "You write SEO metadata for a Kenyan news website (Za Ndani). "
+                  "Use the JSON brief below. Return STRICT JSON only.\n\n"
+                  f"BRIEF:\n{json.dumps(brief, ensure_ascii=False)}\n\n"
+                  "Rules:\n"
+                  "- title: under 65 chars, factual, no clickbait, no year, no brackets, no emoji.\n"
+                  "- description: between 120 and 155 chars, plain prose, no quotes.\n"
+                  "- slug: lowercase, hyphenated, max 70 chars, no stopwords-only, ASCII.\n"
+                  "- tags: 4 to 7 lowercase tags relevant to Kenyan readers.\n\n"
+                  'Return JSON: {"title":"...","description":"...","slug":"...","tags":["..."]}'
+              )
+              return parse_json_safely(gemini_call(prompt, "seo", json_mode=True))
+
+          def stage_write(brief, seo, style, internal_links):
+              prompt = (
+                  f"You are {AUTHOR_NAME}, a Kenyan news journalist for Za Ndani.\n"
+                  f"Today is {full_date_str} (East Africa Time).\n\n"
+                  f"STYLE PRESET: {style['name']}\n"
+                  f"- Format: {style['format']}\n"
+                  f"- Lead style: {style['lead_style']}\n"
+                  f"- Tone: {style['tone']}\n"
+                  f"- Angle: {style['angle']}\n"
+                  f"- Structure: {style['structure']}\n"
+                  f"- Sentence mix: {style['sentence_mix']}\n"
+                  f"- Closing: {style['closing']}\n\n"
+                  f"WORKING TITLE: {seo.get('title','')}\n"
+                  f"BRIEF:\n{json.dumps(brief, ensure_ascii=False)}\n\n"
+                  f"{internal_links}\n"
+                  "WRITE THE ARTICLE IN PURE MARKDOWN.\n"
                   "Hard rules:\n"
-                  "- Write from the story brief, NOT the source text structure.\n"
-                  "- Do not say this is based on or adapted from another report.\n"
-                  "- No HTML. No frontmatter inside the body. No title/author/date line inside the body.\n"
-                  "- No em-dashes or en-dashes. Use standard hyphens only.\n"
-                  "- Write in third-person news style. NEVER write phrases like 'I am Celestine Nzioka', "
-                  "'Celestine Nzioka can confirm', or any first-person self-identification.\n"
-                  f"- Banned phrases: {banned_str}\n"
-                  f"- Banned lead openings: {banned_leads}\n"
-                  "- Target 500-800 words.\n"
-                  "- Output ONLY the Markdown article body.\n"
+                  "- 550 to 750 words.\n"
+                  "- Start with an H2 heading using a primary keyword.\n"
+                  "- Then a 35 to 45 word standfirst paragraph.\n"
+                  "- Use 2 or 3 H3 subheadings.\n"
+                  "- No HTML. No frontmatter. No author byline. No date line. No 'By Celestine'.\n"
+                  "- No first-person ('I', 'we', 'our') self-references.\n"
+                  "- No em-dashes or en-dashes. Use single hyphens only.\n"
+                  "- Do NOT mention or link to the original source publication or its brand.\n"
+                  "- Do NOT echo whole sentences from the source. Reframe everything.\n"
+                  f"- Banned phrases: {', '.join(BANNED_PHRASES)}.\n"
               )
-              return gemini_generate(prompt, label='article-write', expect_json=False, temperature=0.85, max_tokens=4200)
+              return gemini_call(prompt, "write")
 
-          def stage_review(article_text, source_text, style_preset, all_history):
-              recent_samples = json.dumps([
-                  {'title': h['title'], 'bodySample': h['bodySample'], 'stylePreset': h['stylePreset']}
-                  for h in all_history[:4]
-              ], ensure_ascii=False)
-              
+          def stage_review(article_md, source_text):
               prompt = (
-                  "Strict news editor quality reviewer.\n"
-                  f"Style preset used: {json.dumps(style_preset, ensure_ascii=False)}\n"
-                  f"Recent published articles: {recent_samples}\n\n"
-                  f"Source text:\n{source_text[:3500]}\n\n"
-                  f"Generated article:\n{article_text[:5000]}\n\n"
-                  "Score and return only valid JSON:\n"
-                  '{"source_similarity":1,"house_style_repetition":1,"voice_variety":1,"verdict":"keep or rewrite","reasons":["..."]}\n\n'
-                  "source_similarity: 1=very different from source, 10=near copy.\n"
-                  "house_style_repetition: 1=fresh voice, 10=sounds like recent articles.\n"
-                  "voice_variety: 1=flat robotic, 10=varied and natural.\n"
-                  f"verdict MUST be 'rewrite' if source_similarity>={REWRITE_THRESH} or house_style_repetition>=7 or voice_variety<=4\n"
+                  "Score the ARTICLE against the SOURCE TEXT and Za Ndani house style. "
+                  "Return STRICT JSON only.\n\n"
+                  f"ARTICLE:\n{article_md[:6000]}\n\n"
+                  f"SOURCE:\n{source_text[:6000]}\n\n"
+                  "Scoring rubric (1=excellent, 10=worst):\n"
+                  "- source_similarity: how much it mirrors source phrasing.\n"
+                  "- house_style_repetition: repeated stock phrases or cliches.\n"
+                  "- voice_variety: 1=flat monotone, 10=rich varied voice. NOTE: HIGHER IS BETTER for this one.\n\n"
+                  'Return JSON: {"source_similarity":N,"house_style_repetition":N,"voice_variety":N,"notes":"short"}'
               )
-              text = gemini_generate(prompt, label='article-review', expect_json=True, temperature=0.2, max_tokens=1000)
-              return safe_json(text, default={})
+              return parse_json_safely(gemini_call(prompt, "review", json_mode=True))
 
-          def stage_rewrite(article_text, story_brief, style_preset, review_data, internal_links, focus_keyword):
+          def stage_rewrite(article_md, review, style):
               prompt = (
-                  "Rewrite this Kenyan news article for better originality and voice variety.\n\n"
-                  f"Story brief: {json.dumps(story_brief, ensure_ascii=False)}\n"
-                  f"Style preset: {json.dumps(style_preset, ensure_ascii=False)}\n"
-                  f"Review feedback: {json.dumps(review_data, ensure_ascii=False)}\n"
-                  f"Focus keyword: {focus_keyword}\n\n"
-                  f"Article to rewrite:\n{article_text[:6000]}\n\n"
-                  "Rules: Keep all facts. Change lead approach, sentence rhythm, section flow.\n"
-                  "Reduce resemblance to source and recent house style.\n"
-                  "No em-dashes or en-dashes. No HTML. No frontmatter/bylines.\n"
-                  "Output only Markdown article body.\n"
+                  "Rewrite the article to fix the issues flagged in the review. Keep all facts intact.\n\n"
+                  f"REVIEW: {json.dumps(review, ensure_ascii=False)}\n\n"
+                  f"STYLE PRESET: {style['name']} - {style['tone']}\n\n"
+                  f"ARTICLE:\n{article_md}\n\n"
+                  "Hard rules:\n"
+                  "- Reduce source mirroring. Reframe sentence structure.\n"
+                  "- Remove repeated stock phrases and cliches.\n"
+                  "- Vary sentence length and rhythm.\n"
+                  "- Keep H2 + standfirst + H3 structure.\n"
+                  "- No HTML, no frontmatter, no byline, no em-dashes.\n"
+                  "- 550 to 750 words.\n"
+                  "Return only the rewritten Markdown."
               )
-              return gemini_generate(prompt, label='article-rewrite', expect_json=False, temperature=0.88, max_tokens=4200)
+              return gemini_call(prompt, "rewrite")
 
-          # MAIN
-          article_links = get_target_urls()
-          if not article_links:
-              print('[main] No candidates found.')
+          # ---------- RUN ----------
+          links = get_target_urls()
+          if not links:
+              print("No links found")
               sys.exit(0)
 
-          memory_path = os.environ.get('MEMORY_FILE', '.github/memory_celestine_news.json')
-          memory = load_memory(memory_path)
-          published_hashes  = memory.get('published_hashes', [])
-          style_history_mem = memory.get('style_history', [])
-          posts_dir         = os.environ.get('POSTS_DIR', 'content/posts')
-          os.makedirs(posts_dir, exist_ok=True)
+          published_hashes = set(memory.get("published_hashes", []))
 
-          recent_history = get_recent_history(posts_dir, limit=HISTORY_LOOK)
-          all_history    = recent_history + style_history_mem[-5:]
-          published      = 0
+          chosen_text = None
+          chosen_img  = None
+          chosen_ttl  = None
+          chosen_hash = None
+          chosen_url  = None
 
-          full_raw_text, target_image, target_title, final_hash, source_url = None, None, None, None, None
-
-          for link in article_links:
-              if published >= MAX_PER_RUN:
-                  print(f'[main] Reached limit of {MAX_PER_RUN} per run.')
+          for link in links:
+              h = hashlib.md5(link.encode()).hexdigest()
+              if h in published_hashes:
+                  continue
+              text, img, ttl = scrape_article(link)
+              if text and len(text) > 500:
+                  chosen_text, chosen_img, chosen_ttl, chosen_hash, chosen_url = text, img, ttl or "Latest News", h, link
                   break
+              time.sleep(1)
 
-              u_hash = hashlib.md5(link.encode()).hexdigest()
-              if u_hash in published_hashes:
-                  continue
-
-              text, img, title = scrape_article(link)
-              if not text or len(text) < MIN_SRC_CHARS:
-                  continue
-
-              full_raw_text = text
-              target_image  = img
-              target_title  = title or "News Update"
-              final_hash    = u_hash
-              source_url    = link
-              break
-
-          if not full_raw_text:
-              print('[main] No fresh valid article found')
+          if not chosen_text:
+              print("Nothing usable to write")
               sys.exit(0)
 
-          preset_name  = pick_style_preset(style_history_mem)
-          style_preset = STYLE_PRESETS[preset_name]
-          print(f'[main] Style preset: {preset_name}')
+          # Stage 1
+          brief = stage_brief(chosen_ttl, chosen_text)
+          if not brief or not brief.get("summary"):
+              print("Brief failed")
+              sys.exit(1)
 
-          story_brief = stage_brief(target_title, full_raw_text, source_url, style_preset, all_history)
-          if not story_brief or not story_brief.get('main_event'):
-              print('[main] Story brief failed, skipping.')
-              sys.exit(0)
-              
-          time.sleep(random.uniform(4, 8))
-          seo_data = stage_seo(target_title, story_brief)
+          # Stage 2
+          seo = stage_seo(brief)
+          if not seo or not seo.get("title"):
+              print("SEO failed")
+              sys.exit(1)
 
-          final_title   = seo_data.get('final_title') or target_title or 'News Update'
-          meta_desc     = (seo_data.get('meta_description') or story_brief.get('summary') or '')[:155]
-          focus_keyword = seo_data.get('focus_keyword') or 'Kenya News'
-          seo_slug      = seo_data.get('seo_slug') or re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
-          tags          = seo_data.get('tags') or ['News', 'Kenya']
+          # Style rotation (Pillar 3)
+          style = pick_style(memory.get("style_history", []))
+          print(f"Style chosen: {style['name']}")
 
-          time.sleep(random.uniform(4, 8))
-          internal_links = get_internal_links(final_title, full_raw_text, posts_dir)
+          # Stage 3
+          article_md = stage_write(brief, seo, style, get_internal_links())
+          if not article_md:
+              print("Write failed")
+              sys.exit(1)
 
-          article_text = stage_write(final_title, focus_keyword, story_brief, style_preset, internal_links, all_history)
-          if not article_text:
-              print('[main] Article generation failed, skipping.')
-              sys.exit(0)
-              
-          article_text = re.sub(r'^```(?:markdown)?\s*', '', article_text, flags=re.I).rstrip('`').strip()
-          article_text = re.sub(r'^(Title|By|Date|Author):.*?\n', '', article_text, flags=re.I|re.M).strip()
-          article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
-          article_text = scrub_source_leaks(article_text)
+          # Stage 4
+          review = stage_review(article_md, chosen_text) or {}
+          sim  = int(review.get("source_similarity", 0) or 0)
+          rep  = int(review.get("house_style_repetition", 0) or 0)
+          voc  = int(review.get("voice_variety", 10) or 10)
+          print(f"Review: sim={sim} rep={rep} voice={voc} notes={review.get('notes','')}")
+          if sim >= 7 or rep >= 7 or voc <= 4:
+              print("Triggering rewrite")
+              rewritten = stage_rewrite(article_md, review, style)
+              if rewritten and len(rewritten) > 400:
+                  article_md = rewritten
 
-          time.sleep(random.uniform(4, 8))
-          review_data = stage_review(article_text, full_raw_text, style_preset, all_history)
-          
-          sim_score = review_data.get("source_similarity")
-          rep_score = review_data.get("house_style_repetition")
-          voice_score = review_data.get("voice_variety")
-          verdict = review_data.get("verdict")
-          
-          print(f'[review] similarity:{sim_score} repetition:{rep_score} voice:{voice_score} verdict:{verdict}')
+          # Cleanup
+          article_md = re.sub(r"^```(?:markdown)?\n?", "", article_md).rstrip("`").rstrip().strip()
+          article_md = re.sub(r"^(Title|By|Author|Date)\s*:\s*.*?$", "", article_md, flags=re.I|re.M)
+          article_md = article_md.replace("\u2014","-").replace("\u2013","-")
+          article_md = scrub_source_leaks(article_md)
 
-          if verdict == 'rewrite':
-              print('[review] Rewriting...')
-              rewritten = stage_rewrite(article_text, story_brief, style_preset, review_data, internal_links, focus_keyword)
-              if rewritten:
-                  article_text = re.sub(r'^
-```(?:markdown)?\s*', '', rewritten, flags=re.I).rstrip('`').strip()
-                  article_text = article_text.replace('\u2014', '-').replace('\u2013', '-')
-                  article_text = scrub_source_leaks(article_text)
-
-          if seo_slug and re.match(r'^[a-z0-9-]+$', seo_slug):
-              slug = seo_slug[:68]
+          # Image
+          if chosen_img:
+              final_image = upload_to_imgbb(chosen_img)
           else:
-              slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
+              q = "kenya nairobi " + (brief.get("keywords") or ["news"])[0]
+              final_image = get_unsplash_image(q)
 
-          final_image   = upload_to_imgbb(target_image) if target_image else ''
-          words         = meta_desc.split()
-          excerpt       = ' '.join(words[:18]) + ('...' if len(words) > 18 else '')
-          ts            = publish_timestamp
-          canonical_url = f"{SITE_BASE_URL}/article/{slug}"
-          author_url    = f"{SITE_BASE_URL}/author/celestine-nzioka"
+          # Frontmatter
+          slug = (seo.get("slug") or re.sub(r"[^a-z0-9]+","-", seo["title"].lower()).strip("-"))[:70]
+          tags = seo.get("tags") or brief.get("keywords") or []
+          tags_yaml = "[" + ", ".join(f'"{t}"' for t in tags[:8]) + "]"
+          desc = (seo.get("description") or brief.get("summary","")).strip().replace('"',"'")
 
-          def q(s): 
-              return str(s).replace('"', "'")
-
+          os.makedirs(POSTS_DIR, exist_ok=True)
           frontmatter = (
-              '---\n'
-              f'title: "{q(final_title)}"\n'
+              "---\n"
+              f'title: "{seo["title"].replace(chr(34), chr(39))}"\n'
               f'slug: "{slug}"\n'
-              'author: "Celestine Nzioka"\n'
-              f'author_url: "{author_url}"\n'
-              f'image: "{q(final_image)}"\n'
-              'category: "News"\n'
-              f'tags: {json.dumps(tags, ensure_ascii=False)}\n'
-              f'canonical: "{canonical_url}"\n'
-              f'date: "{ts}"\n'
-              'authorUrl: "https://zandani.co.ke/author/celestine-nzioka"\n'
-              f'dateModified: "{ts}"\n'
-              'schema: "NewsArticle"\n'
-              f'description: "{q(meta_desc)}"\n'
-              f'excerpt: "{q(excerpt)}"\n'
-              f'focusKeyword: "{q(focus_keyword)}"\n'
-              f'stylePreset: "{style_preset["name"]}"\n'
-              f'leadStyle: "{q(story_brief.get("lead_approach", style_preset["lead_style"]))}"\n'
-              f'articleAngle: "{q(story_brief.get("article_angle", style_preset["angle"]))}"\n'
-              f'sourceUrl: "{q(source_url)}"\n'
-              '---\n\n'
+              f'description: "{desc}"\n'
+              f'author: "{AUTHOR_NAME}"\n'
+              f'authorUrl: "{SITE_BASE_URL}/author/{AUTHOR_SLUG}"\n'
+              f'image: "{final_image}"\n'
+              f'category: "{CATEGORY}"\n'
+              f'tags: {tags_yaml}\n'
+              f'date: "{publish_ts}"\n'
+              f'dateModified: "{publish_ts}"\n'
+              f'schema: "NewsArticle"\n'
+              "---\n\n"
           )
+          final_doc = frontmatter + article_md.strip() + "\n"
 
-          filepath = os.path.join(posts_dir, today_str + '-' + slug + '.md')
-          with open(filepath, 'w', encoding='utf-8') as f:
-              f.write(frontmatter + article_text + '\n')
+          filepath = os.path.join(POSTS_DIR, f"{today_str}-{slug}.md")
+          with open(filepath, "w", encoding="utf-8") as f:
+              f.write(final_doc)
+          print(f"Saved {filepath}")
 
-          published_hashes.append(final_hash)
-          style_history_mem.append({
-              'title': final_title, 
-              'slug': slug, 
-              'stylePreset': style_preset['name'],
-              'leadStyle': story_brief.get('lead_approach', style_preset['lead_style']),
-              'articleAngle': story_brief.get('article_angle', style_preset['angle']),
-              'bodySample': clean_text(article_text[:600]),
-          })
-
-          memory['published_hashes'] = published_hashes[-300:]
-          memory['style_history']    = style_history_mem[-80:]
-          save_memory(memory_path, memory)
-
-          print(f'[main] Saved: {filepath}')
+          # Persist memory
+          memory.setdefault("published_hashes", []).append(chosen_hash)
+          memory.setdefault("style_history", []).append(style["name"])
+          save_memory(memory)
+          print("Memory updated")
           PYEOF
           python _pipeline.py
 
-      - name: Git Safety Pull
+      - name: Git safety pull
         run: |
-          git config --global user.name "Celestine Nzioka"
+          git config --global user.name  "Za Ndani"
           git config --global user.email "bot@zandani.co.ke"
-          git add .
-          git stash -u
-          git fetch origin main
-          git pull origin main --rebase
+          git add -A
+          git stash -u || true
+          git fetch origin "${DEFAULT_BRANCH}"
+          git pull origin "${DEFAULT_BRANCH}" --rebase
           git stash pop || echo "Nothing to pop"
 
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_author: "Celestine Nzioka <bot@zandani.co.ke>"
-          commit_message: "content: News update by Celestine Nzioka"
+          commit_author: "Za Ndani <bot@zandani.co.ke>"
+          commit_message: "content: Celestine Nzioka news report"
           branch: ${{ env.DEFAULT_BRANCH }}
           file_pattern: 'content/posts/*.md .github/memory_celestine_news.json'
-
-      - name: Ping Google Sitemap
-        run: |
-          curl -s "https://www.google.com/ping?sitemap=https://zandani.co.ke/sitemap.xml" || true
-          echo "Google sitemap pinged"
