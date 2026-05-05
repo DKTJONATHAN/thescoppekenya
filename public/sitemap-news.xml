@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/ntsa-dual-colored-number-plate-regulations-kenya</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-05T08:27:20.000Z</news:publication_date>
+      <news:title>Understanding the Requirement for Dual-Colored Number Plates in Kenya</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenha-reopens-iten-kabarnet-road-after-landslide</loc>
     <news:news>
       <news:publication>
