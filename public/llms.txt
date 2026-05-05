@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [KeNHA Reopens Iten-Kabarnet Road After Landslide Clearance](https://zandani.co.ke/article/kenha-reopens-iten-kabarnet-road-after-landslide) - The Kenya National Highways Authority has reopened the Iten-Kabarnet road to motorists following a week of closures caused by heavy rainfall and debris.
 - [Gloria Ntazola Sparks Debate Over Modern Marriage Timelines](https://zandani.co.ke/article/gloria-ntazola-sparks-debate-over-modern-marriage-timelines) - Content creator Gloria Ntazola has triggered a conversation about how societal pressure and rigid life timelines impact marital success in Kenya.
 - [Wamezidi! Kenyans Slam 'Horizontal Engineering' Club Attire](https://zandani.co.ke/article/wamezidi-kenyans-slam-horizontal-engineering-club-attire) - Kenya faces uproar over increasingly revealing club attire (May 2026). Debate questions if it's style or 'auditioning for horizontal engineering.'
 - [Kamene Goro Confirms Marriage Status Following Hospital Stay](https://zandani.co.ke/article/kamene-goro-confirms-marriage-status-following-hospital-stay) - Media personality Kamene Goro has reaffirmed her marriage to DJ Bonez after addressing public speculation about his absence during her recent month-long hospitalization.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Lydia Wanjiru Unveils Results of Her Body Transformation](https://zandani.co.ke/article/lydia-wanjiru-body-transformation) - Lydia Wanjiru reveals her final look after undergoing liposuction and BBL surgery. See the results of her body transformation. See what happened
 - [Zari Hassan Celebrates Son Quincy Tlale on 19th Birthday](https://zandani.co.ke/article/zari-hassan-quincy-tlale) - Zari Hassan praises her son Quincy Tlale as he turns 19 and pursues a career in law. See how the family celebrates this milestone. See what happened
 - [Sueh Owino Embraces Sustainable Living in New Mud Home](https://zandani.co.ke/article/sueh-owino-mud-home) - Content creator Sueh Owino shifts to eco-friendly earthen architecture, redefining luxury through her coastal heritage. See what happened
-- [KRA whistleblower tips recover KES 6.8 billion in taxes](https://zandani.co.ke/article/kra-whistleblower-tips-recover-kes-6-8-billion-in-taxes) - KRA's iWhistle Platform Bolsters Tax Recovery with Digital Intelligence Kenya Revenue Authority's iWhistle portal successfully recovered KES 6.8 billion in taxes during the financial year ending June 2025. This 61% increase from the previous year highlights...
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
