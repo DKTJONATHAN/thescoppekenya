@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [The South Sea Folly: Wealthy Invest Differently](https://zandani.co.ke/article/the-south-sea-folly-wealthy-invest-differently) - A grand illusion blossomed in London, promising perpetual prosperity. Yet, the tale of how wealthy invest differently than middle class investment strategies ex
 - [Northern Ireland sports update on injury news and cup results](https://zandani.co.ke/article/northern-ireland-sports-update-injury-news-cup-results) - Catch up on Northern Irish sports headlines including Davey Todd's injury withdrawal, Coleraine's Irish Cup victory, and latest GAA developments.
 - [Felix Kosgey Mandates Ethical Leadership in Public Service Reform](https://zandani.co.ke/article/felix-kosgey-mandates-ethical-leadership-in-public-service-reform) - Kenya is shifting public service management toward personal accountability and ethical leadership to replace traditional top-down administrative compliance.
 - [Uhuru Kenyatta Calls Trust Key to Resolving African Conflicts](https://zandani.co.ke/article/uhuru-kenyatta-trust-barrier-african-peace-conflicts) - Former President Uhuru Kenyatta argues that governance gaps and trust deficits are the main barriers to lasting peace and stability across Africa.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [UFC News: Louie Sutherland Victory and Latest Combat Sports Updates](https://zandani.co.ke/article/ufc-news-louie-sutherland-victory-and-latest-combat-sports-updates) - Catch up on the latest MMA developments including Louie Sutherland's victory at UFC Perth, athlete career updates, and insights into combat sports.
 - [Why Kenyan Hospitals Must Adopt Collective Surgical Decision Making](https://zandani.co.ke/article/collective-surgical-decision-making-kenya) - Surgical safety in Kenya requires a shift from individual autonomy to multidisciplinary review processes to reduce patient harm and improve outcomes.
 - [Portable compares mentorship styles of Olamide and Davido](https://zandani.co.ke/article/portable-compares-mentorship-styles-of-olamide-and-davido) - Nigerian singer Portable has sparked online debate after comparing his interactions with Olamide and Davido regarding career support and guidance.
-- [Jon Stewart Challenges Donald Trump Over Cognitive Test Claims](https://zandani.co.ke/article/jon-stewart-challenges-donald-trump-cognitive-test-claims) - Jon Stewart addresses Donald Trump's assertions about his cognitive test performance, highlighting past failures in mathematical proficiency tests.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml

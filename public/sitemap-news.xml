@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/the-south-sea-folly-wealthy-invest-differently</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-05T20:15:00.000Z</news:publication_date>
+      <news:title>The South Sea Folly: Wealthy Invest Differently</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/northern-ireland-sports-update-injury-news-cup-results</loc>
     <news:news>
       <news:publication>
@@ -705,28 +716,6 @@
       </news:publication>
       <news:publication_date>2026-05-03T21:03:28.000Z</news:publication_date>
       <news:title>Why Kenya Number Plates Are White Front &amp; Yellow Rear</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/from-maua-church-girl-to-east-african-megastar-get-ready-for-bessy-ble</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-03T20:12:49.000Z</news:publication_date>
-      <news:title>From Maua Church Girl To East African Megastar: Get Ready For Bessy Blessings!</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/the-generals-echo-ai-policy-and-kenya</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-03T19:54:06.000Z</news:publication_date>
-      <news:title>The General&apos;s Echo: AI Policy and Kenya</news:title>
     </news:news>
   </url>
 </urlset>
