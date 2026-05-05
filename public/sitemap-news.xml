@@ -729,26 +729,4 @@
       <news:title>The General&apos;s Echo: AI Policy and Kenya</news:title>
     </news:news>
   </url>
-  <url>
-    <loc>https://zandani.co.ke/article/knh-digital-system</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-03T19:20:18.000Z</news:publication_date>
-      <news:title>KNH Confirms Digital System Delays, Patients Stranded</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/from-fuel-money-to-wantam-fury-cheruiyot-s-emurua-dikirr-nightmare</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-03T19:20:00.000Z</news:publication_date>
-      <news:title>From Fuel Money to &apos;Wantam&apos; Fury: Cheruiyot&apos;s Emurua Dikirr Nightmare!</news:title>
-    </news:news>
-  </url>
 </urlset>
