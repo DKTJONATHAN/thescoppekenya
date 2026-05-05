@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/afrobeats-evolution-into-a-multi-billion-dollar-global-industry</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-05T18:24:09.000Z</news:publication_date>
+      <news:title>Afrobeats Evolution into a Multi-Billion Dollar Global Industry</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/sheinelle-jones-shares-details-of-met-gala-encounter-with-rihanna</loc>
     <news:news>
       <news:publication>
