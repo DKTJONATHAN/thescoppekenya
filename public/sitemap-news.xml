@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/understanding-data-privacy-and-cookie-usage-on-pulse-africa</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-05T14:33:20.000Z</news:publication_date>
+      <news:title>Understanding Data Privacy and Cookie Usage on Pulse Africa</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/ai-adoption-dismantles-entry-level-jobs-career-growth</loc>
     <news:news>
       <news:publication>
