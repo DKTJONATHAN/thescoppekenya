@@ -124,6 +124,14 @@ jobs:
               '/cookie', '/help', '/support', '/write-for-us', '/correction'
           ]
 
+          EXCLUDED_PATH_KEYWORDS = [
+              "terms-of-service", "terms-and-conditions", "privacy-policy",
+              "cookie-policy", "editorial-policy", "community-guidelines",
+              "guidelines", "advertising-policy", "subscription", "sign-in",
+              "login", "register", "account", "about-us", "contact-us",
+              "faq", "help-center", "support"
+          ]
+
           BAD_IMAGE_FRAGMENTS = [
               'logo', 'default', 'placeholder', 'icon', 'avatar',
               'favicon', 'sprite', 'blank', 'pixel', 'badge', 'watermark'
@@ -167,6 +175,28 @@ jobs:
               urls_list = []
               seen = set()
               print(f"Scanning {SITE_URL}...")
+              def is_article_like_url(url):
+                  try:
+                      from urllib.parse import urlparse
+                      parsed = urlparse(url)
+                      path = (parsed.path or "").lower().rstrip("/")
+                  except Exception:
+                      path = url.lower().rstrip("/")
+                  if not path:
+                      return False
+                  if any(x in path for x in EXCLUDED_PATHS):
+                      return False
+                  if any(k in path for k in EXCLUDED_PATH_KEYWORDS):
+                      return False
+                  # Require a news-like slug and avoid shallow section pages.
+                  segments = [s for s in path.split("/") if s]
+                  slug = segments[-1] if segments else ""
+                  if len(segments) < 2 or len(slug) < 16:
+                      return False
+                  if "-" not in slug:
+                      return False
+                  alpha_chars = len(re.sub(r"[^a-z]", "", slug))
+                  return alpha_chars >= 10
               try:
                   with sync_playwright() as p:
                       browser = p.chromium.launch(
@@ -200,12 +230,7 @@ jobs:
                           if not href: continue
                           full_url = href if href.startswith('http') else f'https://{SITE_DOMAIN}' + href
                           if SITE_DOMAIN not in full_url: continue
-                          path = full_url.split(SITE_DOMAIN)[-1]
-                          slug = path.rstrip('/').split('/')[-1]
-                          if (len(slug) > 15
-                                  and '-' in slug
-                                  and len(path.split('/')) >= 3
-                                  and not any(x in path.lower() for x in EXCLUDED_PATHS)):
+                          if is_article_like_url(full_url):
                               if full_url not in seen:
                                   seen.add(full_url)
                                   urls_list.append(full_url)
