@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/gloria-ntazola-sparks-debate-over-modern-marriage-timelines</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-05T08:12:25.000Z</news:publication_date>
+      <news:title>Gloria Ntazola Sparks Debate Over Modern Marriage Timelines</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/wamezidi-kenyans-slam-horizontal-engineering-club-attire</loc>
     <news:news>
       <news:publication>
