@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Tue, 05 May 2026 08:40:44 GMT</pubDate>
+    <pubDate>Tue, 05 May 2026 08:44:19 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Vivo V70 FE Launched in Kenya With 200MP Camera and 7000mAh Battery]]></title>
+      <link>https://zandani.co.ke/article/vivo-v70-fe-launched-in-kenya-price-specs</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/vivo-v70-fe-launched-in-kenya-price-specs</guid>
+      <pubDate>Tue, 05 May 2026 08:31:35 GMT</pubDate>
+      <dc:creator><![CDATA[Elizabeth Muthoni]]></dc:creator>
+      <description><![CDATA[Vivo has introduced the V70 FE in Kenya featuring a massive 7000mAh battery, a 200MP camera, and enhanced IP68 and IP69 water resistance.]]></description>
+      <enclosure url="https://i.ibb.co/S75SxNK7/400ed348dd94.webp" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/S75SxNK7/400ed348dd94.webp" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/S75SxNK7/400ed348dd94.webp" alt="Vivo V70 FE Launched in Kenya With 200MP Camera and 7000mAh Battery" /><p>Vivo has introduced the V70 FE in Kenya featuring a massive 7000mAh battery, a 200MP camera, and enhanced IP68 and IP69 water resistance.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Understanding the Requirement for Dual-Colored Number Plates in Kenya]]></title>
       <link>https://zandani.co.ke/article/ntsa-dual-colored-number-plate-regulations-kenya</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/ZRLhPd8G/601f772fb94b.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/ZRLhPd8G/601f772fb94b.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/ZRLhPd8G/601f772fb94b.jpg" alt="IEBC Voter Registration: 2.3 Million New Voters Confirmed" /><p>IEBC voter registration ends with 2.3 million new voters as Chairperson Erastus Ethekon rules out an extension for the exercise. Get the full details.</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[The Mark of the Machine, a Creator's Burden]]></title>
-      <link>https://zandani.co.ke/article/the-mark-of-the-machine-a-creators-burden</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/the-mark-of-the-machine-a-creators-burden</guid>
-      <pubDate>Thu, 30 Apr 2026 20:08:35 GMT</pubDate>
-      <dc:creator><![CDATA[The Chronicler]]></dc:creator>
-      <description><![CDATA[In the shadow of a new decree, a familiar weight descends upon the creator, raising questions for `x ai label kenyan creators` and beyond.]]></description>
-      <enclosure url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" type="image/jpeg" />
-      <media:content url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" alt="The Mark of the Machine, a Creator&apos;s Burden" /><p>In the shadow of a new decree, a familiar weight descends upon the creator, raising questions for `x ai label kenyan creators` and beyond.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>

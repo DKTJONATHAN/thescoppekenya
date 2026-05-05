@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Vivo V70 FE Launched in Kenya With 200MP Camera and 7000mAh Battery](https://zandani.co.ke/article/vivo-v70-fe-launched-in-kenya-price-specs) - Vivo has introduced the V70 FE in Kenya featuring a massive 7000mAh battery, a 200MP camera, and enhanced IP68 and IP69 water resistance.
 - [Understanding the Requirement for Dual-Colored Number Plates in Kenya](https://zandani.co.ke/article/ntsa-dual-colored-number-plate-regulations-kenya) - NTSA requires white front and yellow rear number plates in Kenya to improve visibility and road safety. Learn about the standards and policy.
 - [Global Paralympic achievements and athlete profiles in focus](https://zandani.co.ke/article/global-paralympic-achievements-and-athlete-profiles) - Explore the latest in disability sports, covering wheelchair racing victories, swimming championships, and inspiring journeys of Paralympic athletes.
 - [KeNHA Reopens Iten-Kabarnet Road After Landslide Clearance](https://zandani.co.ke/article/kenha-reopens-iten-kabarnet-road-after-landslide) - The Kenya National Highways Authority has reopened the Iten-Kabarnet road to motorists following a week of closures caused by heavy rainfall and debris.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Entertainment Weekly unveils major television and film projects](https://zandani.co.ke/article/entertainment-weekly-unveils-major-television-and-film-projects) - Entertainment Weekly has released its industry preview issue highlighting major television and film productions for the coming year.
 - [Raiders select Fernando Mendoza as Seahawks win Super Bowl 60](https://zandani.co.ke/article/raiders-select-fernando-mendoza-seahawks-win-super-bowl) - Las Vegas Raiders pick Fernando Mendoza first in the NFL draft while Seattle Seahawks win Super Bowl 60 and announce franchise for sale soon after.
 - [Public Service Commission Announces Over 400 Government Vacancies](https://zandani.co.ke/article/public-service-commission-recruitment-vacancies) - The Public Service Commission has opened applications for over 400 professional positions across Kenya. Submit your credentials by May 6, 2026.
-- [Lydia Wanjiru Unveils Results of Her Body Transformation](https://zandani.co.ke/article/lydia-wanjiru-body-transformation) - Lydia Wanjiru reveals her final look after undergoing liposuction and BBL surgery. See the results of her body transformation. See what happened
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml

@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/vivo-v70-fe-launched-in-kenya-price-specs</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-05T08:31:35.000Z</news:publication_date>
+      <news:title>Vivo V70 FE Launched in Kenya With 200MP Camera and 7000mAh Battery</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/ntsa-dual-colored-number-plate-regulations-kenya</loc>
     <news:news>
       <news:publication>
