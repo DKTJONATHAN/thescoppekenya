@@ -2,7 +2,7 @@ import React, { useEffect, useState, useMemo, useCallback, useRef } from "react"
 import { Layout } from "@/components/layout/Layout";
 import { getAllPosts, type PostMetadata } from "@/lib/markdown";
 import { Link } from "react-router-dom";
-import { ArrowRight, TrendingUp, Flame, Clock, Eye } from "lucide-react";
+import { ArrowRight, TrendingUp, Flame, Clock, Eye, Radio } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import AdUnit from "@/components/AdUnit";
 import { LiveUpdatesTimeline } from "@/components/news/LiveUpdatesTimeline";
@@ -393,6 +393,21 @@ const Index = () => {
       )}
 
       {/* ══ LIVE UPDATES ══ */}
+      <section className="py-4 bg-background border-b border-border/70">
+        <div className="container max-w-7xl mx-auto px-3 sm:px-4">
+          <Link
+            to="/tv"
+            className="flex items-center justify-between gap-3 border border-primary/30 bg-primary/5 hover:bg-primary/10 transition-colors px-4 py-3"
+          >
+            <div className="flex items-center gap-2">
+              <Radio className="w-4 h-4 text-primary" />
+              <span className="text-sm font-bold uppercase tracking-wide">Watch Live Kenyan TV</span>
+            </div>
+            <span className="text-primary text-xs font-bold uppercase tracking-wider">Open TV</span>
+          </Link>
+        </div>
+      </section>
+
       <LiveUpdatesTimeline title="Live Updates" maxItems={10} />
 
       {/* ══ MAIN CONTENT + SIDEBAR ══ */}

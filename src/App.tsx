@@ -34,6 +34,7 @@ const SitemapPage = lazy(() => import("./pages/SitemapPage"));
 const SitemapHtmlPage = lazy(() => import("./pages/SitemapHtmlPage"));
 const AuthorsPage = lazy(() => import("./pages/AuthorsPage"));
 const PodcastPage = lazy(() => import("./pages/PodcastPage"));
+const TvPage = lazy(() => import("./pages/TvPage"));
 const AuthorProfilePage = lazy(() => import("./pages/AuthorProfilePage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
@@ -164,6 +165,7 @@ const App = () => (
                 <Route path="/sitemap" element={<SitemapHtmlPage />} />
                 <Route path="/authors" element={<AuthorsPage />} />
                 <Route path="/podcast" element={<PodcastPage />} />
+                <Route path="/tv" element={<TvPage />} />
                 <Route path="/author/:authorName" element={<AuthorProfilePage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>

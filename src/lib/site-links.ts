@@ -7,6 +7,7 @@ export type NavLink = {
 export const primaryNavLinks: NavLink[] = [
   { label: "News", path: "/news", featured: true },
   { label: "Trending", path: "/trending" },
+  { label: "TV", path: "/tv" },
   { label: "Podcast", path: "/podcast" },
 ];
 
@@ -21,6 +22,7 @@ export const staticSitePages = [
   { path: "/sports/live", label: "Live Scores" },
   { path: "/authors", label: "Authors" },
   { path: "/podcast", label: "Podcast" },
+  { path: "/tv", label: "TV" },
   { path: "/about", label: "About" },
   { path: "/contact", label: "Contact" },
   { path: "/advertise", label: "Advertise" },
