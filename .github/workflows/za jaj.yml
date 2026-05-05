@@ -3,7 +3,6 @@
 on:
   schedule:
     - cron: '13 6,14,22 * * *'  # 3x daily: 06:13, 14:13, 22:13 UTC
-      timezone: 'Africa/Nairobi'
   workflow_dispatch:
     inputs:
       max_articles:

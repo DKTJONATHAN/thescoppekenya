@@ -6,7 +6,6 @@
 on:
   schedule:
     - cron: "6 * * * *"
-      timezone: 'Africa/Nairobi'
   workflow_dispatch:
     inputs:
       reason:

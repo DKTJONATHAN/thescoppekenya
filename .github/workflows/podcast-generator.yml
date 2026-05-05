@@ -2,7 +2,6 @@
 on:
   schedule:
     - cron: '3 8 * * 0' # Every Sunday at 08:03 UTC
-      timezone: 'Africa/Nairobi'
   workflow_dispatch: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

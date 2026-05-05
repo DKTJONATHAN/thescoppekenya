@@ -3,7 +3,6 @@
 on:
   schedule:
     - cron: '1 6 * * 1,4'  # Every Monday and Thursday at 6:01 AM UTC
-      timezone: 'Africa/Nairobi'
   workflow_dispatch:
     inputs:
       min_views:

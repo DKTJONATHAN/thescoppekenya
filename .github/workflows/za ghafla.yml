@@ -3,7 +3,6 @@
 on:
   schedule:
     - cron: '12 3-20 * * *'
-      timezone: 'Africa/Nairobi'
   workflow_dispatch: {}
 
 concurrency:
