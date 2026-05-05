@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Bowmans warns of risks in proposed Finance Bill tax measures](https://zandani.co.ke/article/bowmans-warns-of-risks-in-proposed-finance-bill-tax-measures) - Top law firm Bowmans expresses concern over Finance Bill proposals citing negative impacts on business compliance, investment, and consumer affordability.
 - [Corporate and Institutional Developments Across Africa and MENA](https://zandani.co.ke/article/corporate-and-institutional-developments-africa-mena) - Explore the latest updates in STEM research, mining investments, airline loyalty programs, and regional innovation awards across Africa and the MENA region.
 - [Infinix Smart 20 Launched in Kenya for Kenyan Entrepreneurs](https://zandani.co.ke/article/infinix-smart-20-launched-in-kenya) - Infinix has introduced the Smart 20 smartphone in Kenya featuring rugged durability, long battery life, and high performance for local professionals.
 - [Vivo V70 FE Launched in Kenya With 200MP Camera and 7000mAh Battery](https://zandani.co.ke/article/vivo-v70-fe-launched-in-kenya-price-specs) - Vivo has introduced the V70 FE in Kenya featuring a massive 7000mAh battery, a 200MP camera, and enhanced IP68 and IP69 water resistance.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Global Paralympic achievements and athlete profiles in focus](https://zandani.co.ke/article/global-paralympic-achievements-and-athlete-profiles) - Explore the latest in disability sports, covering wheelchair racing victories, swimming championships, and inspiring journeys of Paralympic athletes.
 - [KeNHA Reopens Iten-Kabarnet Road After Landslide Clearance](https://zandani.co.ke/article/kenha-reopens-iten-kabarnet-road-after-landslide) - The Kenya National Highways Authority has reopened the Iten-Kabarnet road to motorists following a week of closures caused by heavy rainfall and debris.
 - [Gloria Ntazola Sparks Debate Over Modern Marriage Timelines](https://zandani.co.ke/article/gloria-ntazola-sparks-debate-over-modern-marriage-timelines) - Content creator Gloria Ntazola has triggered a conversation about how societal pressure and rigid life timelines impact marital success in Kenya.
-- [Wamezidi! Kenyans Slam 'Horizontal Engineering' Club Attire](https://zandani.co.ke/article/wamezidi-kenyans-slam-horizontal-engineering-club-attire) - Kenya faces uproar over increasingly revealing club attire (May 2026). Debate questions if it's style or 'auditioning for horizontal engineering.'
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
