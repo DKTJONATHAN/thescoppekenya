@@ -71,7 +71,8 @@
     "a6a258636aacb0b2b753be725347c5d3",
     "5efb2e7cc0097e403768c3d1bb285f73",
     "e941bcc9255346a8a7edaff0a07bbf40",
-    "669f5122f861bf616dfa56edd1430491"
+    "669f5122f861bf616dfa56edd1430491",
+    "796991690ed7f055b20956a431febce0"
   ],
   "style_history": [
     "Hard News Lead",
@@ -86,7 +87,8 @@
     "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Trend Take"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -99,6 +101,7 @@
     "timeline_shift|Jamie-Lynn Sigler|Trend Take",
     "winners_losers|Hollywood|Reaction Round-up",
     "impact_on_citizens|The Bear|Profile Beat",
-    "policy_gap|Sting|Hard News Lead"
+    "policy_gap|Sting|Hard News Lead",
+    "impact_on_citizens|television|Trend Take"
   ]
 }
