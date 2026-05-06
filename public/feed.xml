@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Wed, 06 May 2026 21:04:23 GMT</pubDate>
+    <pubDate>Wed, 06 May 2026 21:43:23 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Rigathi Gachagua faces uncertain political future as Mt. Kenya leaders debate his next move]]></title>
+      <link>https://zandani.co.ke/article/rigathi-gachagua-faces-uncertain-political-future-as-mt-kenya-leader</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/rigathi-gachagua-faces-uncertain-political-future-as-mt-kenya-leader</guid>
+      <pubDate>Wed, 06 May 2026 21:20:07 GMT</pubDate>
+      <dc:creator><![CDATA[Zed Mogaka]]></dc:creator>
+      <description><![CDATA[Following his 2026 removal from office, Rigathi Gachagua faces a divided Mt. Kenya as regional leaders debate his future political influence and viability.]]></description>
+      
+      
+      <content:encoded><![CDATA[<p>Following his 2026 removal from office, Rigathi Gachagua faces a divided Mt. Kenya as regional leaders debate his future political influence and viability.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Government Proposes New Tiered Fees for eCitizen Services]]></title>
       <link>https://zandani.co.ke/article/government-proposes-new-tiered-fees-for-ecitizen-services</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/wFLLH4MY/9642e3f40348.webp" type="image/jpeg" />
       <media:content url="https://i.ibb.co/wFLLH4MY/9642e3f40348.webp" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/wFLLH4MY/9642e3f40348.webp" alt="KRA whistleblower tips recover KES 6.8 billion in taxes" /><p>KRA's iWhistle Platform Bolsters Tax Recovery with Digital Intelligence Kenya Revenue Authority's iWhistle portal successfully recovered KES 6.8 billion in taxes during the financial year ending June 2025. This 61% increase from the previous year highlights...</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[DNA Testing Reveals British Twins Have Different Biological Fathers]]></title>
-      <link>https://zandani.co.ke/article/twins-different-biological-fathers</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/twins-different-biological-fathers</guid>
-      <pubDate>Mon, 04 May 2026 17:52:19 GMT</pubDate>
-      <dc:creator><![CDATA[Za Ndani]]></dc:creator>
-      <description><![CDATA[DNA testing reveals a rare case of heteropaternal superfecundation for British twins who discovered they share different fathers. See what happened]]></description>
-      <enclosure url="https://cdn.radioafrica.digital/image/2026/05/fcea8122-d7f2-4bb1-9980-bd3d9be5e4b3.jpg?1777916094887" type="image/jpeg" />
-      <media:content url="https://cdn.radioafrica.digital/image/2026/05/fcea8122-d7f2-4bb1-9980-bd3d9be5e4b3.jpg?1777916094887" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://cdn.radioafrica.digital/image/2026/05/fcea8122-d7f2-4bb1-9980-bd3d9be5e4b3.jpg?1777916094887" alt="DNA Testing Reveals British Twins Have Different Biological Fathers" /><p>DNA testing reveals a rare case of heteropaternal superfecundation for British twins who discovered they share different fathers. See what happened</p>]]></content:encoded>
     </item>
   </channel>
 </rss>

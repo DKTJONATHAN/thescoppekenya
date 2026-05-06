@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/rigathi-gachagua-faces-uncertain-political-future-as-mt-kenya-leader</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T21:20:07.000Z</news:publication_date>
+      <news:title>Rigathi Gachagua faces uncertain political future as Mt. Kenya leaders debate his next move</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/government-proposes-new-tiered-fees-for-ecitizen-services</loc>
     <news:news>
       <news:publication>
@@ -1057,17 +1068,6 @@
       </news:publication>
       <news:publication_date>2026-05-04T23:11:07.000Z</news:publication_date>
       <news:title>Lydia Wanjiru Unveils Results of Her Body Transformation</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/zari-hassan-quincy-tlale</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-04T21:21:34.000Z</news:publication_date>
-      <news:title>Zari Hassan Celebrates Son Quincy Tlale on 19th Birthday</news:title>
     </news:news>
   </url>
 </urlset>
