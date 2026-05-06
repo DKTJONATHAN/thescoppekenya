@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/kamene-goro-clarifies-marriage-status-following-hospitalization</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T11:20:06.000Z</news:publication_date>
+      <news:title>Kamene Goro Clarifies Marriage Status Following Hospitalization</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/del-monte-kenya-impact-report-sustainability</loc>
     <news:news>
       <news:publication>
@@ -716,61 +727,6 @@
       </news:publication>
       <news:publication_date>2026-05-04T11:58:26.000Z</news:publication_date>
       <news:title>Director explains Devil Wears Prada 2 death scene twist</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/industrial-and-construction-sectors-boost-manufacturing-while-agro-p</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-04T11:29:36.000Z</news:publication_date>
-      <news:title>Industrial and construction sectors boost manufacturing while agro-processing contracts</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-proposes-creation-of-county-statistics-offices-in-all-counties</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-04T10:29:23.000Z</news:publication_date>
-      <news:title>Kenya Proposes Creation of County Statistics Offices in All Counties</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/dci-jet-fuel-theft</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-04T10:29:16.000Z</news:publication_date>
-      <news:title>DCI Foils Attempted Jet Fuel Theft at Wilson Airport, 4 Arrested</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/dj-krowbar-wife-photo</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-04T10:28:09.000Z</news:publication_date>
-      <news:title>DJ Krowbar Shares Final Photo of Kids With Late Mother Joyce</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/political-reckoning-president-ruto-s-allies-face-dci-eacc-scrutiny</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-04T10:26:25.000Z</news:publication_date>
-      <news:title>Political Reckoning: President Ruto&apos;s Allies Face DCI/EACC Scrutiny</news:title>
     </news:news>
   </url>
 </urlset>
