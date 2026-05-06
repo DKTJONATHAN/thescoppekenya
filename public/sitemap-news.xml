@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/cs-wandayi-explains-abandoning-changamwe-refinery-for-tanga-project</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T11:22:55.000Z</news:publication_date>
+      <news:title>CS Wandayi Explains Abandoning Changamwe Refinery for Tanga Project</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kamene-goro-clarifies-marriage-status-following-hospitalization</loc>
     <news:news>
       <news:publication>
