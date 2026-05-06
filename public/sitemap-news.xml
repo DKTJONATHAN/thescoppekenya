@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/kenya-pharmacy-and-poisons-board-drafts-rules-for-medical-ai</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T08:43:08.000Z</news:publication_date>
+      <news:title>Kenya Pharmacy and Poisons Board Drafts Rules for Medical AI Tools</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/nema-shuts-down-mlolongo-factory-nairobi-river-pollution</loc>
     <news:news>
       <news:publication>
@@ -12,6 +23,17 @@
       </news:publication>
       <news:publication_date>2026-05-06T08:42:48.000Z</news:publication_date>
       <news:title>NEMA shuts down Mlolongo factory over Nairobi River pollution</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/south-africa-xenophobia-betrayal-of-pan-african-solidarity</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T08:41:50.000Z</news:publication_date>
+      <news:title>Why South Africa Must Address Its Xenophobia Crisis</news:title>
     </news:news>
   </url>
   <url>

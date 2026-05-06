@@ -7,7 +7,9 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Kenya Pharmacy and Poisons Board Drafts Rules for Medical AI Tools](https://zandani.co.ke/article/kenya-pharmacy-and-poisons-board-drafts-rules-for-medical-ai) - The Pharmacy and Poisons Board is developing a regulatory framework for medical AI to ensure safety, data protection, and diagnostic accuracy in Kenya.
 - [NEMA shuts down Mlolongo factory over Nairobi River pollution](https://zandani.co.ke/article/nema-shuts-down-mlolongo-factory-nairobi-river-pollution) - NEMA officials have closed a manufacturing plant in Mlolongo for dumping untreated chemical waste into Nairobi River, resulting in three arrests.
+- [Why South Africa Must Address Its Xenophobia Crisis](https://zandani.co.ke/article/south-africa-xenophobia-betrayal-of-pan-african-solidarity) - Rising xenophobia in South Africa betrays the spirit of Pan-African solidarity that fueled the nation's fight against apartheid.
 - [Arsenal Reach Champions League Final After Beating Atletico Madrid](https://zandani.co.ke/article/arsenal-reach-champions-league-final-after-beating-atletico-madrid) - Arsenal secured their place in the Champions League final with a narrow 1-0 victory over Atletico Madrid at the Emirates Stadium to win 2-1 on aggregate.
 - [Ministry of Education Plans Enrollment Expansion for Top Schools](https://zandani.co.ke/article/ministry-of-education-school-enrollment-and-fee-guidelines) - The Ministry of Education aims to expand top school capacity and support under-enrolled institutions while enforcing the Ksh53,000 secondary fee limit.
 - [Why planned protests on June 25 threaten Kenya's economic stability](https://zandani.co.ke/article/kenya-protests-june-25-economic-stability) - An analysis of the risks posed by the June 25 demonstrations, arguing for the use of constitutional channels to ensure national security and recovery.
@@ -15,8 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Barack Obama and Stephen Colbert discuss presidential standards](https://zandani.co.ke/article/barack-obama-stephen-colbert-late-show-cbs-finale) - Former President Barack Obama visited the Obama Presidential Center to speak with Stephen Colbert as CBS prepares to end The Late Show by 2026.
 - [The Royal Womb and Oheneni Adazoa Husband IVF Details](https://zandani.co.ke/article/the-royal-womb-oheneni-adazoa-husband-ivf-details) - From Tudor courts to the modern screen, the unrelenting quest for progeny echoes, revealing the profound public cost of private fertility battles, much like tho
 - [Test Your Knowledge With These Football History Trivia Quizzes](https://zandani.co.ke/article/football-history-trivia-quizzes-test-your-knowledge) - Challenge your football knowledge with these interactive quizzes covering historical statistics, major tournament winners, and league records.
-- [Kenya Ramps Up County Industrial Parks to Boost Local Processing](https://zandani.co.ke/article/kenya-ramps-up-county-industrial-parks-to-boost-local-processing) - Kenya is transitioning its county-based industrial parks to operational status to support local agro-processing and drive economic growth.
-- [David Letterman Criticizes CBS Over Stephen Colbert Show Exit](https://zandani.co.ke/article/david-letterman-criticizes-cbs-over-stephen-colbert-show-exit) - Former host David Letterman disputes the financial reasons for ending The Late Show, suggesting political motives behind the major network shift.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
