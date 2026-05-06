@@ -90,6 +90,16 @@ export default function ArticlePage() {
     [latestPosts, slug]
   );
 
+  // Same-category candidates for internal link weaving
+  const sameCategoryLinks = useMemo(() => {
+    if (!post) return [] as { slug: string; title: string }[];
+    const cat = post.category?.toLowerCase();
+    return getAllPosts()
+      .filter(p => p.slug !== post.slug && p.category?.toLowerCase() === cat)
+      .slice(0, 25)
+      .map(p => ({ slug: p.slug, title: p.title }));
+  }, [post]);
+
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
   const [copied, setCopied] = useState(false);
