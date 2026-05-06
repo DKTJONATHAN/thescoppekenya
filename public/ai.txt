@@ -5,7 +5,7 @@ User-Agent: *
 Allow: /article/
 Allow: /category/
 Allow: /tag/
-Allow: /rss.xml
+Allow: /feed.xml
 Allow: /llms.txt
 Allow: /sitemap.xml
 
