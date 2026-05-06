@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/dangote-refinery-plans-kenyan-investment-vehicle-for-upcoming-ipo</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T14:45:33.000Z</news:publication_date>
+      <news:title>Dangote Refinery Plans Kenyan Investment Vehicle for Upcoming IPO</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/early-roles-of-famous-hollywood-actors</loc>
     <news:news>
       <news:publication>
