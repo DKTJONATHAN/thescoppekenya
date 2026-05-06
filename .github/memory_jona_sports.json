@@ -53,7 +53,8 @@
     "e684d579b85cd26d6d1d21ae5b70f5fb",
     "13d9a283514bed3a5a85a1c5ac42715f",
     "0ba5eb8890bc32f4d82703bea81c933c",
-    "6d5f07e577db3aafc4db82c70f31e018"
+    "6d5f07e577db3aafc4db82c70f31e018",
+    "b4d3657f381efebeebcc537e6e65e9bc"
   ],
   "style_history": [
     "Match Report",
@@ -63,7 +64,8 @@
     "Tactical Take",
     "Cynical Pundit",
     "Match Report",
-    "Stat Story"
+    "Stat Story",
+    "Player Profile Beat"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -71,6 +73,7 @@
     "policy_gap|sports|Tactical Take",
     "impact_on_citizens|football|Cynical Pundit",
     "timeline_shift|Arsenal|Match Report",
-    "myth_vs_fact|Arsenal|Stat Story"
+    "myth_vs_fact|Arsenal|Stat Story",
+    "accountability|Arsenal|Player Profile Beat"
   ]
 }
