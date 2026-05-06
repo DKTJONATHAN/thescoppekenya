@@ -119,12 +119,15 @@ jobs:
                   return image_url
 
           NITTER_INSTANCES = [
-              "https://nitter.net",
-              "https://nitter.poast.org",
+              "https://xcancel.com",
               "https://nitter.privacydev.net",
+              "https://nitter.poast.org",
               "https://nitter.tiekoetter.com",
               "https://nitter.space",
               "https://nitter.kavin.rocks",
+              "https://nitter.net",
+              "https://nitter.lucabased.xyz",
+              "https://nitter.fdn.fr",
           ]
 
           def parse_tweet_entries(items, source_label):
