@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/kenya-reports-decline-in-national-cybersecurity-threats</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T19:08:49.000Z</news:publication_date>
+      <news:title>Kenya reports decline in national cybersecurity threats</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/bayern-munich-vs-psg-champions-league-semi-final-preview</loc>
     <news:news>
       <news:publication>

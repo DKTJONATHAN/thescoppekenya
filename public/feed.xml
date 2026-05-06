@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Wed, 06 May 2026 19:20:15 GMT</pubDate>
+    <pubDate>Wed, 06 May 2026 19:23:18 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Kenya reports decline in national cybersecurity threats]]></title>
+      <link>https://zandani.co.ke/article/kenya-reports-decline-in-national-cybersecurity-threats</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-reports-decline-in-national-cybersecurity-threats</guid>
+      <pubDate>Wed, 06 May 2026 19:08:49 GMT</pubDate>
+      <dc:creator><![CDATA[Elizabeth Muthoni]]></dc:creator>
+      <description><![CDATA[National cybersecurity officials report a significant drop in threat events as system infrastructure remains the primary target for attackers.]]></description>
+      <enclosure url="https://i.ibb.co/XrJw97D9/3880d5f67d7f.webp" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/XrJw97D9/3880d5f67d7f.webp" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/XrJw97D9/3880d5f67d7f.webp" alt="Kenya reports decline in national cybersecurity threats" /><p>National cybersecurity officials report a significant drop in threat events as system infrastructure remains the primary target for attackers.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Bayern Munich vs PSG Champions League Semi-final Second Leg]]></title>
       <link>https://zandani.co.ke/article/bayern-munich-vs-psg-champions-league-semi-final-preview</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/992czJg2/959a45fddd27.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/992czJg2/959a45fddd27.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/992czJg2/959a45fddd27.jpg" alt="Industrial and construction sectors boost manufacturing while agro-processing contracts" /><p>Kenya Manufacturing Sector Driven by Industrial and Construction Gains in 2025 Kenya's manufacturing sector experienced modest 2.1% growth in 2025, reaching KSh 3.8 trillion in output. This expansion was uneven, largely driven by industrial and...</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Kenya Proposes Creation of County Statistics Offices in All Counties]]></title>
-      <link>https://zandani.co.ke/article/kenya-proposes-creation-of-county-statistics-offices-in-all-counties</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-proposes-creation-of-county-statistics-offices-in-all-counties</guid>
-      <pubDate>Mon, 04 May 2026 10:29:23 GMT</pubDate>
-      <dc:creator><![CDATA[Elizabeth Muthoni]]></dc:creator>
-      <description><![CDATA[Data Devolution: Kenya's Statistics Bill 2026 Kenya is advancing the Statistics Bill 2026 to align its statistical system with the Constitution and modern data environment. A core provision mandates County Statistics Offices in all counties, led by expert...]]></description>
-      <enclosure url="https://i.ibb.co/b56CTJXd/faeeda66bd6c.webp" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/b56CTJXd/faeeda66bd6c.webp" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/b56CTJXd/faeeda66bd6c.webp" alt="Kenya Proposes Creation of County Statistics Offices in All Counties" /><p>Data Devolution: Kenya's Statistics Bill 2026 Kenya is advancing the Statistics Bill 2026 to align its statistical system with the Constitution and modern data environment. A core provision mandates County Statistics Offices in all counties, led by expert...</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
