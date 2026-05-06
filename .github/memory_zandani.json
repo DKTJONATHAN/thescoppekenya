@@ -139,43 +139,18 @@
     "611e3afd45bda8cf7982db944d8ba232",
     "453972f8151a9595acc308be0068df1d",
     "5ff9999e553bad28a616777b68151d68",
-    "c766e7ab38af654a9bb7de0d99d0607f"
+    "c766e7ab38af654a9bb7de0d99d0607f",
+    "b1ea5ecf9baf55bba1d876cbae66f98a"
   ],
   "style_history": [
-    {
-      "title": "Selestine Nyagah Joins Citizen TV Rauka After Lulu Hassan Mentorship",
-      "stylePreset": "celeb_news",
-      "leadStyle": "punchy declarative sentence, high-energy, names first",
-      "articleAngle": "Focus on the 'career glow-up' and the influence of industry mentorship in securing top-tier media positions.",
-      "bodySample": "Selestine Nyagah is trading her acting scripts for a live microphone as she officially joins the presenting team at Citizen TV. The star, fresh off the set of the popular drama series Neema, has lande"
-    },
-    {
-      "title": "DNA Testing Reveals British Twins Have Different Biological Fathers",
-      "stylePreset": "profile_led",
-      "leadStyle": "introduce the key person as if the reader has never heard of them",
-      "articleAngle": "A profile on the sisters' journey of self-discovery, focusing on how this scientific anomaly forced them to reconcile their lifelong bond with a sudden, radical shift in their ancestral identity.",
-      "bodySample": "# DNA Testing Reveals British Twins Have Different Biological Fathers  For forty-five years, Lavinia and Michelle Osborne navigated life under the assumption that their shared DNA was as identical as "
-    },
-    {
-      "title": "Sueh Owino Embraces Sustainable Living in New Mud Home",
-      "stylePreset": "explainer",
-      "leadStyle": "context-first: explain why this matters before stating what happened",
-      "articleAngle": "An exploration of the 'low vibe' movement and how high-profile figures are reclaiming traditional, eco-conscious living in a modern Kenyan context.",
-      "bodySample": "# Sueh Owino Embraces Sustainable Living in New Mud Home  The air inside the structure is different. It carries a subtle, cooling weight, a gentle dampness that smells faintly of sun-baked earth and q"
-    },
-    {
-      "title": "Zari Hassan Celebrates Son Quincy Tlale on 19th Birthday",
-      "stylePreset": "explainer",
-      "leadStyle": "context-first: explain why this matters before stating what happened",
-      "articleAngle": "A shift from typical tabloid coverage to a focus on parenting milestones and the success of celebrity children in professional fields.",
-      "bodySample": "Parenting in the public eye often invites intense scrutiny, yet it also provides a unique platform to model values beyond fame. Recently, **Zari Hassan** shared a heartfelt tribute marking her son Qui"
-    },
-    {
-      "title": "Lydia Wanjiru Unveils Results of Her Body Transformation",
-      "stylePreset": "timeline",
-      "leadStyle": "open with the most dramatic moment, then trace back to the beginning",
-      "articleAngle": "A look at the influencer's journey from the initial decision to undergo surgery to the final reveal, focusing on the transparency of her transformation.",
-      "bodySample": "# Lydia Wanjiru Unveils Results of Her Body Transformation  Lydia Wanjiru has officially pulled back the curtain on her new silhouette, marking the end of a physical evolution that began late last yea"
-    }
+    "celeb_news",
+    "profile_led",
+    "explainer",
+    "explainer",
+    "timeline",
+    "Hard News Lead"
+  ],
+  "angle_history": [
+    "myth_vs_fact|Azeezah Hashim|Hard News Lead"
   ]
 }
