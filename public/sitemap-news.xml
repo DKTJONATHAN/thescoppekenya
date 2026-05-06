@@ -4,6 +4,39 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/mental-health-overtakes-cancer-as-global-top-health-concern</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T14:48:22.000Z</news:publication_date>
+      <news:title>Mental Health Overtakes Cancer as Global Top Health Concern</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/arsenal-reach-champions-league-final-amid-celebration-debate</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T14:47:56.000Z</news:publication_date>
+      <news:title>Arsenal reach Champions League final amid celebration debate</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/vera-sidika-to-resume-kenyata-university-studies</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T14:45:42.000Z</news:publication_date>
+      <news:title>Vera Sidika Announces Plans to Resume Kenyatta University Studies</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/dangote-refinery-plans-kenyan-investment-vehicle-for-upcoming-ipo</loc>
     <news:news>
       <news:publication>
