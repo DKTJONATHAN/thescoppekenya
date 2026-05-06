@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Stephen Colbert seeks Pope Leo XIV as final Late Show guest](https://zandani.co.ke/article/stephen-colbert-seeks-pope-leo-xiv-as-final-late-show-guest) - Stephen Colbert aims to host Pope Leo XIV on The Late Show before his series finale on May 21 for a discussion on faith and life.
 - [The Siren Song of Shares: A Vybz Kartel Kenya Concert Scam](https://zandani.co.ke/article/siren-song-vybz-kartel-kenya-concert-scam) - A familiar echo across centuries, from London's Exchange Alley to Kampala's hopeful streets, whispers of an alleged Vybz Kartel Nairobi May 2026 tour, reminding
 - [Claims of a Sifuna-Maraga-Gachagua 2027 Presidential Ticket Are False](https://zandani.co.ke/article/claims-of-a-sifuna-maraga-gachagua-2027-presidential-ticket-are-fals) - Claims of a 2027 presidential ticket featuring Edwin Sifuna, David Maraga, or Rigathi Gachagua are false, serving only as satire amid shifting coalitions.
 - [Kenya reports decline in national cybersecurity threats](https://zandani.co.ke/article/kenya-reports-decline-in-national-cybersecurity-threats) - National cybersecurity officials report a significant drop in threat events as system infrastructure remains the primary target for attackers.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Kenya Relaxes Fuel Sulphur Standards Amid Supply Chain Concerns](https://zandani.co.ke/article/kenya-relaxes-fuel-sulphur-standards-amid-supply-chain-concerns) - The Kenyan government has temporarily lowered fuel sulphur standards for six months, sparking health and environmental concerns across Nairobi.
 - [Sting Reaffirms Decision Not to Leave Inheritance to His Children](https://zandani.co.ke/article/sting-reaffirms-decision-not-to-leave-inheritance-to-his-children) - Musician Sting has confirmed his long-standing policy of not leaving his fortune to his children to ensure they develop a strong personal work ethic.
 - [One Night Only Festival Returns to Sarit Expo Centre](https://zandani.co.ke/article/one-night-only-festival-nairobi-sarit-expo-centre) - The One Night Only festival returns to the Sarit Expo Centre with a multi-genre music showcase featuring Alikiba, Bien, and international stars.
-- [Azeezah Hashim Disputes Age Claims Amid Online Controversy](https://zandani.co.ke/article/azeezah-hashim-disputes-age-claims) - Citizen TV presenter Azeezah Hashim has publicly refuted claims that she is 27 years old, asserting she is 19 based on her mother's confirmation.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
