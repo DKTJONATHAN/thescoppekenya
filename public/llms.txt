@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [President Ruto Appoints Justice Mohamed Warsame to Supreme Court](https://zandani.co.ke/article/president-ruto-appoints-justice-mohamed-warsame-supreme-court) - President William Ruto has appointed Justice Mohamed Abdullahi Warsame to the Supreme Court while backing Justice Njoki Ndung'u for an ICC position.
 - [Mental Health Overtakes Cancer as Global Top Health Concern](https://zandani.co.ke/article/mental-health-overtakes-cancer-as-global-top-health-concern) - Global public perception marks mental health as the leading health issue today. Experts urge Kenyan firms to prioritize workplace wellness now.
 - [Arsenal reach Champions League final amid celebration debate](https://zandani.co.ke/article/arsenal-reach-champions-league-final-amid-celebration-debate) - Arsenal qualified for the Champions League final after beating Atletico Madrid, sparking a fierce debate over their emotional post-match celebrations.
 - [Vera Sidika Announces Plans to Resume Kenyatta University Studies](https://zandani.co.ke/article/vera-sidika-to-resume-kenyata-university-studies) - Kenyan entrepreneur Vera Sidika reveals she is returning to Kenyatta University to complete her degree after pausing it for her career.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Shri Krishana Overseas reports 59 percent drop in annual earnings](https://zandani.co.ke/article/shri-krishana-overseas-reports-sharp-decline-in-annual-earnings) - Shri Krishana Overseas faces a sharp decline in profits driven by high debt costs and operational delays at its new Kisaju manufacturing facility.
 - [Nigerian Breweries Launches Immersive Heineken House in Lagos](https://zandani.co.ke/article/nigerian-breweries-launches-immersive-heineken-house-in-lagos) - Nigerian Breweries Plc hosts a four-day immersive event in Lagos featuring live sports screenings, music performances, and comedy shows.
 - [Jamie-Lynn Sigler details secret health struggle in new memoir](https://zandani.co.ke/article/jamie-lynn-sigler-details-health-struggle-in-new-memoir) - Actress Jamie-Lynn Sigler reveals how she concealed a bladder accident during a high-profile date with the help of friend JoAnna Garcia Swisher.
-- [CS Wandayi Explains Abandoning Changamwe Refinery for Tanga Project](https://zandani.co.ke/article/cs-wandayi-explains-abandoning-changamwe-refinery-for-tanga-project) - Energy CS Opiyo Wandayi has informed the Senate that the Changamwe oil refinery is unviable, shifting focus to a new regional facility in Tanga Tanzania.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
