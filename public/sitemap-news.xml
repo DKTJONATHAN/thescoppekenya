@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/sting-reaffirms-decision-not-to-leave-inheritance-to-his-children</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T18:51:40.000Z</news:publication_date>
+      <news:title>Sting Reaffirms Decision Not to Leave Inheritance to His Children</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/one-night-only-festival-nairobi-sarit-expo-centre</loc>
     <news:news>
       <news:publication>
