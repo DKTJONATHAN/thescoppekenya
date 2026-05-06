@@ -141,7 +141,8 @@
     "5ff9999e553bad28a616777b68151d68",
     "c766e7ab38af654a9bb7de0d99d0607f",
     "b1ea5ecf9baf55bba1d876cbae66f98a",
-    "94c02eda96d6fadf6181a85ae8a39891"
+    "94c02eda96d6fadf6181a85ae8a39891",
+    "4b9096b40e265ab25f0dc0ad81f91a4a"
   ],
   "style_history": [
     "celeb_news",
@@ -150,10 +151,12 @@
     "explainer",
     "timeline",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
-    "winners_losers|One Night Only|Reaction Round-up"
+    "winners_losers|One Night Only|Reaction Round-up",
+    "policy_gap|miraa|Trend Take"
   ]
 }
