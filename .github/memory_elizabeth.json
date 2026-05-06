@@ -87,19 +87,22 @@
     "767b9d0784a2837ad1584e7aff997937",
     "0af488f603559551a6f69359619313cc",
     "4df5697e8a06811530b12198d78ea475",
-    "f3443c39ea3551fd7249146bc43f8028"
+    "f3443c39ea3551fd7249146bc43f8028",
+    "51ff28051f541cf33c3ef7f6cbb425fb"
   ],
   "style_history": [
     "Africa Angle",
     "Explainer",
     "Critical Take",
     "Backgrounder",
-    "Africa Angle"
+    "Africa Angle",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
     "winners_losers|artificial intelligence|Critical Take",
     "policy_gap|Kenya|Backgrounder",
-    "timeline_shift|Ted Turner|Africa Angle"
+    "timeline_shift|Ted Turner|Africa Angle",
+    "myth_vs_fact|cybersecurity|Hard News Lead"
   ]
 }
