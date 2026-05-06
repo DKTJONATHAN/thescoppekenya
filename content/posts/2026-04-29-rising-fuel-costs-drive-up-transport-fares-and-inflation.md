@@ -5,6 +5,8 @@ author: "Grace Mkamburi"
 image: "https://i.ibb.co/0RDr4wTv/d8f90beda263.png"
 category: "Business"
 date: "2026-04-29T19:02:35Z"
+focusKeyword: "Rising fuel costs drive up transport fares and inflation"
+dateModified: "2026-04-29T19:02:35Z"
 ---
 ## Kenyan Economic Pressures Intensify on Fuel Hike
 
@@ -21,3 +23,4 @@ Household food expenses presented a varied picture, yet remained burdensome. Bet
 ### Household Energy Bill Shifts
 
 While electricity costs offered marginal relief, other energy expenses escalated. The average monthly electricity bill slightly eased to KSh 1,288.99 for 50 kWh and KSh 5,656.88 for 200 kWh. This minor reduction was overshadowed by a substantial increase in cooking gas prices, with a 13-kilogramme cylinder jumping to KSh 3,361.56 within the month. As businesses and consumers navigate these economic pressures, strategies for operational efficiency and cost management become critical. The evolving economic landscape necessitates innovative approaches to sustain growth and adapt to shifting market realities, a dynamic also explored in discussions around [navigating the digital reality for media in Kenya: opportunities and challenges in a connected future].
+

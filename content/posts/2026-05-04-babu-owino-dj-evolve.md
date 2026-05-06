@@ -29,3 +29,4 @@ Perhaps the most eye-opening revelation from the MP concerned the staggering fin
 
 ### What’s Next for the Case?
 As the calendar rolls into May 2026, the case involving Babu Owino and DJ Evolve continues to hold public fascination, not least because of these new admissions. The MP’s advocacy for restorative justice, backed by his significant financial contribution, presents a complex ethical and legal quandary. Will this approach gain more traction within the Kenyan legal system, or will public sentiment demand a more conventional retributive outcome? Only time will tell how this high-profile case, now punctuated by a very public confession and an appeal for healing, will ultimately unfold in the annals of Kenyan celebrity and legal history.
+

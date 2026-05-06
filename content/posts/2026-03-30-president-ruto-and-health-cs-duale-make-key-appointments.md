@@ -9,8 +9,9 @@ category: "News"
 tags: ["william-ruto", "aden-duale", "government-appointments", "public-service-leadership", "gazette-notice"]
 canonical: "https://zandani.co.ke/article/president-ruto-and-health-cs-duale-make-key-appointments"
 date: "2026-03-30T07:02:04Z"
+focusKeyword: "President Ruto and Health CS Duale Make Key Appointments"
+dateModified: "2026-03-30T07:02:04Z"
 ---
-
 By Celestine Nzioka, Za Ndani President William Ruto, Health Cabinet Secretary Aden Duale, Transport Cabinet Secretary Davis Chirchir, and Water Cabinet Secretary Eric Mugaa have announced a series of new appointments across various government institutions. These significant changes, detailed in a gazette notice dated March 27, 2026, reflect strategic shifts in key leadership roles within the nation's public service.
 
 Government Leadership Changes
@@ -22,5 +23,6 @@ Health Sector Restructuring by CS Duale Health Cabinet Secretary Aden Duale enac
 Transport Sector Adjustments Transport Cabinet Secretary Davis Chirchir made appointments to the National Transport and Safety Authority. Peter Kibe Maina and Kenneth Limo Toroitich have been designated as members of its Board of Directors for a three-year period, effective March 27, 2026.
 
 Water Sector Appointment Water Cabinet Secretary Eric Mugaa concluded the series of appointments by naming Beatrice Kanuthu Muchina as a member of the Central Rift Valley Water Works Development Agency Board, for a period of three years. These extensive leadership changes reflect ongoing efforts to streamline public service delivery, aligning with broader governmental fiscal strategies as previously reported by Za Ndani regarding the [Govt Leans on Local Lenders as Debt Jumps by 1.3T in 2025: Kenya's Evolving Fiscal Strategy](https://zandani.co.ke/article/govt-leans-on-local-lenders-debt-jumps-by-1-3t-in-2025-fiscal-strategy). 
+
 
 

@@ -85,10 +85,20 @@ export default function ArticlePage() {
   }, [slug]);
 
   const latestPosts = useMemo(() => getLatestPosts(6), []);
-  const relatedPosts = useMemo(
-    () => latestPosts.filter((p) => p.slug !== slug).slice(0, 3),
-    [latestPosts, slug]
-  );
+  const relatedPosts = useMemo(() => {
+    if (!post) return latestPosts.filter((p) => p.slug !== slug).slice(0, 3);
+    const postTags = new Set((post.tags || []).map((t) => t.toLowerCase()));
+    return latestPosts
+      .filter((p) => p.slug !== slug)
+      .map((p) => {
+        const sharedTags = (p.tags || []).filter((t) => postTags.has(t.toLowerCase())).length;
+        const sharedCategory = p.category?.toLowerCase() === post.category?.toLowerCase() ? 1 : 0;
+        return { p, score: sharedTags * 3 + sharedCategory };
+      })
+      .sort((a, b) => b.score - a.score)
+      .map(({ p }) => p)
+      .slice(0, 3);
+  }, [latestPosts, slug, post]);
 
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
@@ -239,10 +249,15 @@ export default function ArticlePage() {
   );
 
   // ── Truncated description (155 chars max) ──
-  const metaDescription = useMemo(() =>
-    post ? post.excerpt.slice(0, 155) + (post.excerpt.length > 155 ? "…" : "") : "",
-    [post?.excerpt]
-  );
+  const metaDescription = useMemo(() => {
+    if (!post) return "";
+    const fk = (post.focusKeyword || "").trim();
+    let base = post.excerpt || "";
+    if (fk && !base.toLowerCase().includes(fk.toLowerCase())) {
+      base = `${fk}: ${base}`;
+    }
+    return base.slice(0, 157).trim();
+  }, [post?.excerpt, post?.focusKeyword]);
 
   // ── ISO datetime for machine-readable timestamps ──
   const isoPublished = useMemo(() => {
@@ -266,7 +281,7 @@ export default function ArticlePage() {
       },
     ],
     "datePublished": isoPublished,
-    "dateModified": isoPublished,
+    "dateModified": post.dateModified ? new Date(post.dateModified).toISOString() : isoPublished,
     "author": {
       "@type": "Person",
       "name": post.author,
@@ -274,7 +289,7 @@ export default function ArticlePage() {
     },
     "publisher": {
       "@type": "NewsMediaOrganization",
-      "name": "Za Ndani",
+      "name": "Zandani",
       "url": SITE_URL,
       "logo": {
         "@type": "ImageObject",
@@ -289,7 +304,7 @@ export default function ArticlePage() {
     },
     "isPartOf": {
       "@type": "WebSite",
-      "name": "Za Ndani",
+      "name": "Zandani",
       "url": SITE_URL,
     },
     "keywords": post.tags.join(", "),
@@ -353,11 +368,11 @@ export default function ArticlePage() {
     <Layout>
       {/* ════ ALL META TAGS + JSON-LD INSIDE HELMET ════ */}
       <Helmet>
-        <title>{post.title} | Za Ndani</title>
+        <title>{post.title} | Zandani</title>
         <meta name="description" content={metaDescription} />
         <meta name="keywords" content={post.tags.join(", ") + ", za ndani, kenya news, breaking news kenya"} />
         <meta name="author" content={post.author} />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="robots" content={post.wordCount && post.wordCount < 100 ? "noindex, follow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
         <link rel="canonical" href={canonicalUrl} />
 
         {/* Open Graph / Facebook */}
@@ -376,7 +391,7 @@ export default function ArticlePage() {
 
         {/* Article specific */}
         <meta property="article:published_time" content={isoPublished} />
-        <meta property="article:modified_time" content={isoPublished} />
+        <meta property="article:modified_time" content={post.dateModified ? new Date(post.dateModified).toISOString() : isoPublished} />
         <meta property="article:section" content={post.category} />
         <meta property="article:author" content={post.author} />
         <meta property="article:publisher" content="https://www.facebook.com/zandani" />
@@ -427,13 +442,13 @@ export default function ArticlePage() {
         <div className="relative z-10 pt-6 px-4">
           <div className="container max-w-5xl mx-auto">
             <div className="flex items-center gap-2 text-xs text-zinc-500">
-              <button onClick={() => navigate(-1)} className="flex items-center gap-1 hover:text-zinc-300 transition-colors">
-                <ChevronLeft className="w-3.5 h-3.5" /> Back
-              </button>
-              <span>/</span>
+              <Link to="/" className="hover:text-zinc-300 transition-colors">Home</Link>
+              <span>&gt;</span>
               <Link to={`/category/${post.category.toLowerCase()}`} className="hover:text-zinc-300 transition-colors capitalize">
                 {post.category}
               </Link>
+              <span>&gt;</span>
+              <span className="text-zinc-300 line-clamp-1">{post.title}</span>
             </div>
           </div>
         </div>
@@ -460,6 +475,12 @@ export default function ArticlePage() {
               <time dateTime={isoPublished} className="flex items-center gap-1.5 text-zinc-400">
                 <Calendar className="w-3.5 h-3.5" /> {formattedDate}
               </time>
+              {post.dateModified && new Date(post.dateModified).getTime() > new Date(post.date).getTime() && (
+                <>
+                  <span className="text-zinc-500">Â·</span>
+                  <span className="text-zinc-400">Updated: {new Date(post.dateModified).toLocaleDateString("en-KE", { year: "numeric", month: "long", day: "numeric" })}</span>
+                </>
+              )}
               <span className="text-zinc-500">·</span>
               <span className="flex items-center gap-1.5 text-zinc-400"><Clock className="w-3.5 h-3.5" /> {post.readTime} min read</span>
               <span className="text-zinc-500">·</span>
@@ -544,7 +565,7 @@ export default function ArticlePage() {
               {relatedWithViews.length > 0 && (
                 <section className="mt-14 pt-8 border-t border-divider">
                   <div className="flex items-center gap-4 mb-6">
-                    <h3 className="text-xl font-black uppercase tracking-tight">More Hot Stories</h3>
+                    <h3 className="text-xl font-black uppercase tracking-tight">Related Articles</h3>
                     <div className="h-px flex-1 bg-divider" />
                   </div>
                   <div className="grid sm:grid-cols-3 gap-5">

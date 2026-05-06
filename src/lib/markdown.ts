@@ -52,6 +52,9 @@ export interface PostMetadata {
   tags: string[];
   readTime: number;
   featured?: boolean;
+  dateModified?: string;
+  focusKeyword?: string;
+  wordCount?: number;
 }
 
 export interface Post extends PostMetadata {
@@ -243,16 +246,7 @@ export function getAllTags(): string[] {
 export function generateSitemap(): string {
   const baseUrl = 'https://zandani.co.ke';
   const posts = getAllPosts();
-  const today = new Date().toISOString().split('T')[0];
-
   type SitemapUrl = { loc: string; priority: string; changefreq: string; lastmod?: string };
-
-  const staticPages: SitemapUrl[] = staticSitePages.map((page) => ({
-    loc: page.path,
-    priority: page.path === "/" ? "1.0" : page.path === "/news" ? "0.9" : "0.6",
-    changefreq: page.path === "/" || page.path === "/news" ? "hourly" : "weekly",
-    lastmod: today
-  }));
 
   const postUrls: SitemapUrl[] = posts.map(post => ({
     loc: `/article/${post.slug}`,
@@ -261,28 +255,7 @@ export function generateSitemap(): string {
     changefreq: 'weekly'
   }));
 
-  const categoryUrls: SitemapUrl[] = categories.map(cat => ({
-    loc: `/category/${cat.slug}`,
-    priority: '0.7',
-    changefreq: 'daily',
-    lastmod: today
-  }));
-
-  const authorUrls: SitemapUrl[] = Array.from(new Set(posts.map((post) => post.author))).map((authorName) => ({
-    loc: `/author/${authorName.toLowerCase().replace(/\s+/g, '-')}`,
-    priority: '0.5',
-    changefreq: 'weekly',
-    lastmod: today
-  }));
-
-  const allTags = [...new Set(posts.reduce((acc, post) => acc.concat(post.tags), [] as string[]))];
-  const tagUrls: SitemapUrl[] = allTags.map(tag => ({
-    loc: `/tag/${encodeURIComponent(tag)}`,
-    priority: '0.5',
-    changefreq: 'weekly'
-  }));
-
-  const allUrls: SitemapUrl[] = [...staticPages, ...postUrls, ...categoryUrls, ...authorUrls, ...tagUrls];
+  const allUrls: SitemapUrl[] = [...postUrls];
 
   const urlElements = allUrls.map(url => `
   <url>

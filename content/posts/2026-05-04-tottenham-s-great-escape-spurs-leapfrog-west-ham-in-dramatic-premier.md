@@ -10,6 +10,7 @@ tags: ["tottenham-hotspur", "west-ham-united", "premier-league", "relegation-bat
 date: "2026-05-04T05:05:49Z"
 dateModified: "2026-05-04T05:05:49Z"
 schema: "NewsArticle"
+focusKeyword: "Tottenhamâs Great Escape Spurs Leapfrog West Ham in Dramatic"
 ---
 **For Za Ndani (zandani.co.ke) by Jona Munyi**
 

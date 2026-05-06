@@ -19,7 +19,6 @@ leadStyle: "context-first: explain why this matters before stating what happened
 articleAngle: "An exploration of the 'low vibe' movement and how high-profile figures are reclaiming traditional, e"
 sourceUrl: "https://www.mpasho.co.ke/entertainment/2026-05-04-why-chef-sueh-owino-chose-a-mud-walled-house-over-city-luxury"
 ---
-
 # Sueh Owino Embraces Sustainable Living in New Mud Home
 
 The air inside the structure is different. It carries a subtle, cooling weight, a gentle dampness that smells faintly of sun-baked earth and quietude. Step through the threshold, and the frantic, aggressive hum of the city vanishes, replaced by the hushed stillness found only within walls made of raw, living ground. 
@@ -40,3 +39,4 @@ The ‘low vibe’ movement, which champions a retreat from the performative exh
 Beyond the aesthetics, the shift toward sustainable earthen construction serves as a practical blueprint for a more resilient future. Concrete production is one of the primary contributors to global carbon emissions, and the reliance on expensive, imported materials has made housing increasingly inaccessible for the average citizen. By utilizing local soil and traditional artisan techniques, Owino illustrates that building a home does not have to be an act of environmental or financial depletion.
 
 This residence is not a regression into the past, but an evolution of it. It uses historical wisdom to solve modern anxieties. As the cost of living climbs and urban spaces become increasingly suffocating, the move toward sustainable, earthen architecture offers a reprieve. It proves that one does not need to abandon comfort to embrace minimalism. Instead, it invites a re-evaluation of what we consider 'finished' or 'valuable,' suggesting that the most meaningful structures are those that ground us, quite literally, to the earth from which we came.
+

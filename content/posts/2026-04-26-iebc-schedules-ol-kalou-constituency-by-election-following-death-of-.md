@@ -9,6 +9,8 @@ category: "News"
 tags: ["ol-kalou-by-election", "david-njuguna-kiaraho", "iebc", "nyandarua-county", "parliamentary-elections"]
 canonical: "https://zandani.co.ke/article/iebc-schedules-ol-kalou-constituency-by-election-following-death-of-"
 date: "2026-04-26T04:32:51Z"
+focusKeyword: "IEBC schedules Ol Kalou constituency by-election following d"
+dateModified: "2026-04-26T04:32:51Z"
 ---
 The Independent Electoral and Boundaries Commission (IEBC) has scheduled the Ol Kalou Constituency by-election for Thursday, July 16, 2026. This follows the official declaration of the seat as vacant in Nyandarua County after the death of area Member of Parliament David Njuguna Kiaraho.
 
@@ -25,3 +27,4 @@ The by-election is anticipated to be a significant political contest between Pre
 ### Other By-elections Underway
 
 Beyond Ol Kalou, the IEBC is also preparing for a parliamentary by-election in Emurua Dikirr Constituency, Narok County, scheduled for Thursday, May 14, 2026. This mini-poll will occur concurrently with ward by-elections in Porro Ward, Samburu County, and Endo Ward, Elgeyo Marakwet County. These electoral exercises highlight the ongoing democratic processes across the nation. As these local electoral processes unfold, broader discussions on digital governance and trade are also taking place, with initiatives like the [Connected Africa Summit poised to set new AI and digital trade rules](https://zandani.co.ke/article/connected-africa-summit-to-set-new-ai-and-digital-trade-rules).
+

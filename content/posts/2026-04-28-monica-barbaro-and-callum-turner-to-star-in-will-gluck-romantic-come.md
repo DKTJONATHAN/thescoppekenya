@@ -5,6 +5,8 @@ author: "Mutheu Ann"
 image: "https://i.ibb.co/35ZCHP1P/6628310392e5.jpg"
 category: "Entertainment"
 date: "2026-04-28T17:03:25Z"
+focusKeyword: "Monica Barbaro and Callum Turner to star in Will Gluck roman"
+dateModified: "2026-04-28T17:03:25Z"
 ---
 ## One Night Only: Monica Barbaro & Callum Turner’s Wild Rom-Com Ride
 
@@ -25,3 +27,4 @@ The journey of Owen and Allie is far from straightforward. Turner hints that the
 ### Mark Your Calendars: August 7
 
 "One Night Only" promises the raunchy humor expected from a sex comedy, but with a heartfelt pivot toward intimacy and genuine love, a signature style Gluck has perfected in films like "Friends With Benefits." Both Barbaro and Turner credit Gluck’s unique talent for elevating the romantic comedy genre, making audiences eager to see his work on the big screen. Prepare for a uniquely charming and utterly chaotic romantic adventure when "One Night Only" hits theaters on August 7, 2026.
+

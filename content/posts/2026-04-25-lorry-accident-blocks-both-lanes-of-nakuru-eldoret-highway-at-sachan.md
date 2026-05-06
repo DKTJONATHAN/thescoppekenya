@@ -9,6 +9,8 @@ category: "News"
 tags: ["nakuru-eldoret-highway", "sachangwan", "lorry-accident", "traffic-snarl-up", "transportation"]
 canonical: "https://zandani.co.ke/article/lorry-accident-blocks-both-lanes-of-nakuru-eldoret-highway-at-sachan"
 date: "2026-04-25T13:40:33Z"
+focusKeyword: "Lorry Accident Blocks Both Lanes of Nakuru-Eldoret Highway a"
+dateModified: "2026-04-25T13:40:33Z"
 ---
 A lorry accident on Saturday afternoon, April 25, 2026, has completely blocked both lanes of the Nakuru-Eldoret Highway at Sachangwan, causing a major traffic snarl-up. The self-involved incident has paralysed movement along this critical transport corridor, creating significant delays for motorists traveling between the Rift Valley and Western Kenya.
 
@@ -23,3 +25,4 @@ The National Police Service (NPS) has advised motorists to use temporary diversi
 Police officers are deployed along the affected stretch to manage traffic, guide motorists, and enforce lane discipline. Efforts are intensifying to remove the obstructing loaded lorry from the highway as quickly as possible. The NPS confirmed that recovery teams are actively working to clear the vehicle to fully restore normal traffic flow. Motorists are urged to remain patient, adhere to officers' instructions, and exercise caution.
 
 This incident follows a temporary closure of a section of the Nairobi Southern Bypass on Friday, April 24, after an accident involving two long-distance trucks bound for Ole Sereni. The Kenya National Highways Authority (KeNHA) attributed that disruption to a broken-down lorry being struck from behind, with preliminary indications suggesting brake failure. The Nairobi Southern Bypass was reopened on Friday evening after successful clearance operations.
+

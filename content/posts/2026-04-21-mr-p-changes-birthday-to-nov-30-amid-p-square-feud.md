@@ -10,6 +10,8 @@ category: "Entertainment"
 tags: ["mr-p", "peter-okoye", "p-square-feud", "psquare-split", "mr-p-birthday"]
 canonical: "https://zandani.co.ke/article/mr-p-changes-birthday-to-nov-30-amid-p-square-feud"
 date: "2026-04-21T17:33:54Z"
+focusKeyword: "Mr P Changes Birthday to Nov 30 Amid P-Square Feud"
+dateModified: "2026-04-21T17:33:54Z"
 ---
 Nigerian music star Mr P, born Peter Okoye, has officially declared November 30, 2026, as his new birthday celebration date, moving away from November 18, which he shares with his twin brother Paul Okoye. This personal decision further highlights the ongoing P-Square family feud, sparking widespread discussion across Africa.
 
@@ -26,5 +28,6 @@ The decision has elicited varied responses from Nigerians and fans across the co
 ### The Enduring P-Square Saga
 
 The feud between Peter and Paul Okoye, formerly known as P-Square, has spanned multiple years, characterised by two official splits, a brief reunion, and a growing list of public accusations from both sides. This latest development adds another layer to their estranged relationship, underscoring the deep-seated issues that have consistently kept the twin brothers at odds. As November 30, 2026, approaches, the reception of Mr P's new birthday date will likely offer further insight into whether this gesture is perceived as a true step towards personal liberation or merely another public statement of severance within their long-running dispute.
+
 
 

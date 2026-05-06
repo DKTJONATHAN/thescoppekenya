@@ -9,8 +9,9 @@ category: "News"
 tags: ["kuccps-revision-window", "kenya-medical-training-college", "medical-course-applications", "higher-education", "kmtc-admissions"]
 canonical: "https://zandani.co.ke/article/kuccps-reopens-kmtc-medical-course-applications-for-unplaced-student"
 date: "2026-03-29T14:54:54Z"
+focusKeyword: "KUCCPS Reopens KMTC Medical Course Applications for Unplaced"
+dateModified: "2026-03-29T14:54:54Z"
 ---
-
 The Kenya Universities and Colleges Central Placement Service (KUCCPS) has reopened applications for medical courses at the Kenya Medical Training College (KMTC). This revision window, announced today, Sunday, March 29, 2026, offers a crucial second opportunity for students previously unplaced to secure admission in 2026, with submissions due by April 3, 2026.
 
 Expanded Eligibility for Medical Course Applicants
@@ -22,5 +23,6 @@ Broadened Application Window The latest announcement from KUCCPS broadens the el
 Previously Reopened Courses Prior to this latest announcement, KUCCPS had reopened 31 KMTC courses on March 3, 2026, specifically targeting students who scored C and D in the Kenya Certificate of Secondary Education (KCSE). That earlier revision window closed on March 13, 2026, following the closure of the initial January application period.
 
 Available Programmes Among the diploma courses reopened are Diploma in Health Records and Information Technology, Diploma in Radiography and Imaging, Diploma in Medical Laboratory Sciences, Diploma in Occupational Therapy, Optometry, Orthopaedic Technology, Physiotherapy, Medical Engineering, and Medical Social Work. Certificate courses available include Certificate in Medical Engineering, Nutrition and Dietetics, Health Records and Information Technology, and Public Health. Prospective students can find detailed application instructions by clicking "Student's Portal" in the menu of items on the KUCCPS website and following the outlined process. 
+
 
 

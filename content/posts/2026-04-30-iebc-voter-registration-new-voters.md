@@ -9,6 +9,7 @@ description: "IEBC voter registration ends with 2.3 million new voters as Chairp
 excerpt: "IEBC voter registration ends with 2.3 million new voters as Chairperson Erastus Ethekon rules out an extension for the exercise. Get the full details."
 tags: ["Kenya News", "IEBC", "Erastus Ethekon", "Voter Registration", "Nairobi"]
 focusKeyword: "IEBC voter registration"
+dateModified: "2026-04-30T20:42:30Z"
 ---
 ## IEBC Voter Registration Sees 2.3 Million New Voters Enrolled
 
@@ -31,3 +32,4 @@ Another crucial shift involved the utilization of national ID data sets and real
 ### Registration Continues
 
 Despite the conclusion of the 30-day enhanced period, the IEBC has ruled out an extension. However, IEBC voter registration remains ongoing at all Huduma Centres and IEBC constituency offices nationwide.
+

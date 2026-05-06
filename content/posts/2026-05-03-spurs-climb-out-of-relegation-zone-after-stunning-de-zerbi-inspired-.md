@@ -10,6 +10,7 @@ tags: ["spurs-win", "de-zerbi", "aston-villa", "relegation-climb"]
 date: "2026-05-03T22:25:53Z"
 dateModified: "2026-05-03T22:25:53Z"
 schema: "NewsArticle"
+focusKeyword: "Spurs Climb Out of Relegation Zone After Stunning De Zerbi-I"
 ---
 By Jona Munyi
 

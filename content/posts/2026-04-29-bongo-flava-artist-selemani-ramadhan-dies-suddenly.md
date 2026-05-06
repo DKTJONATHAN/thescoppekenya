@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["selemani-ramadhan", "selemani-ramadhan-death", "bongo-flava-artist", "tanzanian-music-industry"]
 canonical: "https://zandani.co.ke/article/bongo-flava-artist-selemani-ramadhan-dies-suddenly"
 date: "2026-04-29T21:19:16Z"
+focusKeyword: "Bongo Flava artist Selemani Ramadhan dies suddenly"
+dateModified: "2026-04-29T21:19:16Z"
 ---
 Tanzania's vibrant music scene mourns the abrupt loss of Bongo Flava icon Selemani Ramadhan, famously known as Spark. The celebrated "Usiniache" hitmaker passed away unexpectedly in his sleep this past Sunday night, with the discovery made early Monday morning, leaving fans and colleagues in profound shock across East Africa.
 
@@ -31,3 +33,4 @@ Spark earned his place in Bongo Flava history with several soulful hits that def
 ### Tributes Flood Social Media
 
 As the news of his death spreads, social media has been flooded with tributes from fans and fellow entertainers mourning the veteran star. Messages like “Rest in peace, Selemani. Rest well, my friend,” reflect the widespread sorrow. While the industry processes this sudden loss, the focus remains on celebrating the timeless music Spark leaves behind. Burial arrangements are expected to be shared by his family in due course.
+

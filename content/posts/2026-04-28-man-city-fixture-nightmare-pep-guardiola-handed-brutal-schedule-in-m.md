@@ -7,6 +7,8 @@ image: "https://i.ibb.co/23dK10Sg/2699329b9265.webp"
 category: "Sports"
 tags: ["man-city", "pep-guardiola", "premier-league", "fixture-schedule"]
 date: "2026-04-28T18:09:52Z"
+focusKeyword: "Man City Fixture Nightmare Pep Guardiola Handed Brutal Sched"
+dateModified: "2026-04-28T18:09:52Z"
 ---
 By Jona Munyi
 

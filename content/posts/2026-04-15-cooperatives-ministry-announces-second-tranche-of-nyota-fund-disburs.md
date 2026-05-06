@@ -9,8 +9,9 @@ category: "News"
 tags: ["nyota-fund-disbursement", "susan-mangeni", "cooperatives-ministry", "youth-empowerment", "national-youth-opportunities-towards-advancement"]
 canonical: "https://zandani.co.ke/article/cooperatives-ministry-announces-second-tranche-of-nyota-fund-disburs"
 date: "2026-04-15T07:03:29Z"
+focusKeyword: "Cooperatives Ministry announces second tranche of NYOTA fund"
+dateModified: "2026-04-15T07:03:29Z"
 ---
-
 The Cooperatives Ministry has confirmed the second tranche of Ksh25,000 under the National Youth Opportunities Towards Advancement (NYOTA) fund will be disbursed to youth beneficiaries nationwide, commencing Monday, April 20, 2026, a significant step in the government's empowerment agenda.
 
 NYOTA Fund’s Nationwide Rollout Initiates Second Phase
@@ -20,5 +21,6 @@ Disbursement Preparations Finalized Cooperatives Principal Secretary Susan Mang�
 Expanding Beneficiary Reach Efforts are underway to integrate applicants who did not benefit from the initial phase of the NYOTA program. The President has recognized the effectiveness of this model and is actively pursuing additional funding from development partners to support these individuals. The first nationwide rollout saw approximately 101,721 young individuals benefit from the fund. This commitment to inclusivity underscores the program's vital role in addressing youth unemployment.
 
 Program Structure and Additional Interventions NYOTA is a five-year initiative funded by the World Bank, designed to empower youth by combating unemployment, income insecurity, and limited savings. Each beneficiary receives Ksh22,000 in direct business support and Ksh3,000 deposited into a National Social Security Fund (NSSF) Haba Haba Scheme savings account. Further bolstering the program’s impact, county governments recently announced a two-year waiver on business license fees for NYOTA beneficiaries. Beyond the Ksh50,000 NYOTA program, the government is also launching the On-the-Job Experience (OJE) intervention, targeting 14,000 participants across the country. OJE participants will undergo mandatory Social Emotional Skills Development (SESD) training to enhance workplace readiness and employability, receiving a monthly stipend of Ksh6,000 for six months, with a portion allocated to their Haba Haba Savings Account. 
+
 
 

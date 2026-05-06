@@ -7,6 +7,8 @@ image: "https://i.ibb.co/DD204dvW/b8f2cc460dd9.webp"
 category: "Sports"
 tags: ["arne-slot", "mohamed-salah", "alisson-injury-update", "manchester-united"]
 date: "2026-05-01T08:34:26Z"
+focusKeyword: "Arne Slot drops Mohamed Salah send off bombshell and deliver"
+dateModified: "2026-05-01T08:34:26Z"
 ---
 By Jona Munyi
 

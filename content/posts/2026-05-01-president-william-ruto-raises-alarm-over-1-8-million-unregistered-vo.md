@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["william-ruto", "rift-valley-voters", "voter-registration", "unregistered-voters", "ruto-stronghold"]
 canonical: "https://zandani.co.ke/article/president-william-ruto-raises-alarm-over-1-8-million-unregistered-vo"
 date: "2026-05-01T15:17:42Z"
+focusKeyword: "President William Ruto Raises Alarm Over 18 Million Unregist"
+dateModified: "2026-05-01T15:17:42Z"
 ---
 President William Ruto expressed concern this May 2026 over low voter registration among the Kalenjin community in his Rift Valley stronghold, particularly in Bomet County. Speaking at a burial ceremony, the President highlighted that 1.8 million eligible voters with identification cards remain unregistered, a situation he deems challenging for his political efforts ahead of the 2027 General Election.
 
@@ -31,3 +33,4 @@ The critique does not stop there. There is a growing narrative that the Rift Val
 Adding a satirical twist to the discourse, questions are now being raised about the perceived double standards in Kenyan politics. The President's decision to speak in his mother tongue at a community gathering has prompted cheeky speculation about whether certain political figures, like the outspoken Farouk Kiberiti, would now label him as tribal. This highlights a persistent underlying tension in Kenyan politics, where accusations of tribalism often surface, but the context and accuser seem to dictate the public response.
 
 In the midst of the President's urgent call, it appears the people of the Rift Valley are not just counting votes, but also counting the promises made and the development delivered. The momentum, as some suggest, is now firmly with the electorate.
+

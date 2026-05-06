@@ -6,6 +6,8 @@ author: "Celestine Nzioka"
 image: "https://i.ibb.co/M5sjNV01/3391fe8dbf6f.jpg"
 category: "Politics"
 date: "2026-04-24T15:37:04Z"
+focusKeyword: "Health Ministry Scraps SHA Tariff Locking for Civil Servants"
+dateModified: "2026-04-24T15:37:04Z"
 ---
 ## Kenyan Healthcare Policy Shift
 
@@ -22,3 +24,4 @@ The Ministry's intervention directly responds to widespread grievances from publ
 ### Broader Healthcare Commitment
 
 This policy shift aligns with the government's broader commitment to enhancing healthcare access and achieving Universal Health Coverage, a key agenda item for Health Cabinet Secretary Aden Duale. Duale has consistently emphasized the importance of a resilient and people-centered health system, outlining priority investments in health policy and regulatory frameworks. While addressing the immediate concerns of civil servants, the Ministry of Health is also embarking on nationwide tariff negotiations with private and faith-based healthcare facilities classified between Levels 3 and 6, commencing April 28, 2026. These negotiations aim to establish a harmonized, evidence-based reimbursement framework to ensure the long-term sustainability and equitable delivery of healthcare services under the Public Officers Medical Scheme Fund (POMSF).
+

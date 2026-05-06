@@ -9,8 +9,9 @@ category: "Entertainment"
 tags: ["davido-london-festival", "crystal-palace-bowl", "afrobeats-music-events", "davido-live-performance"]
 canonical: "https://zandani.co.ke/article/davido-announces-first-london-festival-at-crystal-palace-bowl"
 date: "2026-03-23T13:53:49Z"
+focusKeyword: "Davido announces first London festival at Crystal Palace Bow"
+dateModified: "2026-03-23T13:53:49Z"
 ---
-
 Afrobeats icon Davido will stage his inaugural London festival, "Davido & Friends Festival," at the renowned Crystal Palace Bowl on Friday, August 14, 2026. This highly anticipated event marks his only outdoor London performance this summer, with presale tickets launching March 26.
 
 Davido Brings Festival Flair to London The Grammy-nominated artist announced on X, formerly Twitter, that the "Davido & Friends Festival" will be a unique experience where he not only headlines but also curates the day's entire lineup. This highly anticipated event is his exclusive outdoor show in the city for the summer of 2026.
@@ -24,5 +25,6 @@ Palace Bowl Presents: A Summer Series The "Davido & Friends Festival" is a promi
 Anticipation Builds for Guest Appearances The "Davido & Friends" branding has sparked considerable speculation regarding potential guest appearances. While Davido has remained tight-lipped about who his "friends" might be, the prospect of surprise performances from other high-profile artists adds an extra layer of excitement for attendees. The curated nature of the lineup, overseen by Davido himself, promises an unforgettable showcase of talent. Just as fans keenly follow the rise of diverse talents across the continent, such as learning about artists like Iyanii, they eagerly await Davido's selections for this monumental event.
 
 A Year of Milestones for Davido Davido's fifth studio album, '5ive,' released in 2025, garnered significant critical acclaim, solidifying his position as a leading global Afrobeats artist. The album's standout track, 'With You,' featuring Omah Lay, notably surpassed 100 million streams on Spotify and earned him a Grammy nomination last year. The "Davido & Friends Festival" represents the latest strategic move in his carefully orchestrated global campaign. The full lineup, once revealed, is expected to generate substantial attention, reflecting the headliner's immense influence and the grand scale of the festival. 
+
 
 

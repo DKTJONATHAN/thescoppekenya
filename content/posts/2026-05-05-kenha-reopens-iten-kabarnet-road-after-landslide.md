@@ -10,8 +10,8 @@ tags: ["kenya news", "kenha", "itinerary-kabarnet", "infrastructure", "road safe
 date: "2026-05-05T08:18:29Z"
 dateModified: "2026-05-05T08:18:29Z"
 schema: "NewsArticle"
+focusKeyword: "KeNHA Reopens Iten-Kabarnet Road After Landslide Clearance"
 ---
-
 ## KeNHA Reopens Iten-Kabarnet Road After Questionable Repairs
 
 The Kenya National Highways Authority claims the Iten-Kabarnet Road is safe for travel following a week of debris clearance. Yet, the rapid reopening ignores the underlying geological instability that turned a vital lifeline into a death trap just days ago.
@@ -33,3 +33,4 @@ The heavy rains are far from over. By focusing on rapid restoration rather than 
 When a bridge or a road fails, the official narrative often blames the intensity of the rainfall. Nature, after all, is a convenient scapegoat for poor planning and ignored maintenance cycles. If the infrastructure was built to standard, minor climate shifts would not translate into total connectivity loss. The rush to declare this section open suggests a desire to bury the evidence of administrative failure under a layer of fresh gravel. 
 
 As the first vehicles climb back toward Iten, the cracks in the hillside-and the agency's policy-remain hidden from view. The question is not whether the road is open today, but how many more landslides must occur before the authority admits that the current engineering approach is a total failure?
+

@@ -9,8 +9,9 @@ category: "News"
 tags: ["kenya-meteorological-department", "western-kenya-rainfall", "central-kenya-rainfall", "weather-outlook", "april-2026-rainfall"]
 canonical: "https://zandani.co.ke/article/kenya-meteorological-department-forecasts-rainfall-for-western-and-c"
 date: "2026-04-04T09:00:14Z"
+focusKeyword: "Kenya Meteorological Department forecasts rainfall for Weste"
+dateModified: "2026-04-04T09:00:14Z"
 ---
-
 The Kenya Meteorological Department forecasts moderate to heavy rainfall across parts of the Western, Nyanza, Central, and Rift Valley regions between April 3 and April 7, 2026. This advisory follows a period of dry and sunny conditions, signalling a shift in the nation's weather patterns for the coming five days.
 
 Regional Weather Outlook
@@ -24,5 +25,6 @@ Southeastern and Tana River Outlook In the South Eastern Lowland counties of Kit
 Coastal and Northwestern Conditions The coastal counties of Mombasa, Kilifi, Lamu, and Kwale, as well as the northwestern regions encompassing Turkana and Samburu, are predicted to remain largely dry over the next five days. Occasional showers may be observed in these areas.
 
 Temperature Extremes Anticipated Beyond rain distribution, the Kenya Meteorological Department issued warnings regarding significant temperature fluctuations. Very cold nights, with temperatures dropping to 6°C, are expected in Central Kenya and parts of Western, Nyanza, and the Rift Valley. These night temperatures are then projected to gradually increase to approximately 11°C by the end of the forecast period. Conversely, residents in the coastal counties of Mombasa, Kilifi, Lamu, and Kwale, along with the northern parts of the country, were urged to prepare for very high daytime temperatures. Northern Kenya could experience highs soaring up to 37°C, while the coastal region is forecast to reach approximately 33°C. 
+
 
 

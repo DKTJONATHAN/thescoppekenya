@@ -5,6 +5,8 @@ author: "Celestine Nzioka"
 image: "https://i.ibb.co/8LH1bg6N/10666b145c11.jpg"
 category: "Politics"
 date: "2026-05-01T11:42:45Z"
+focusKeyword: "15 Wage Hike Boost Your Monthly Pay Now"
+dateModified: "2026-05-01T11:42:45Z"
 ---
 ## Ruto's Labour Day Wage Hike: Political Calculus Amidst Economic Strain
 
@@ -18,3 +20,4 @@ While the wage increment offers relief to employees, it introduces new complexit
 
 ### Regulatory Oversight and Worker Protections
 Beyond the wage adjustments, President Ruto's assurances regarding the full protection of workers under Kenyan labour laws and enhanced collaboration with COTU, FKE, and the Ministry of Labour are critical. This commitment extends to the ratification of International Labour Organisation conventions on decent work for domestic workers and the elimination of workplace violence and harassment. Such measures, if strictly enforced, are vital for formalizing and safeguarding vulnerable segments of the workforce. The emphasis on strengthening labour law enforcement indicates a government keen to project an image of robust worker advocacy, balancing economic directives with fundamental rights and protections.
+

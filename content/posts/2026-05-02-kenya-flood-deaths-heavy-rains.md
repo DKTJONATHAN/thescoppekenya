@@ -9,6 +9,7 @@ description: "Police confirm 10 Kenya flood deaths as heavy rains cause landslid
 excerpt: "Police confirm 10 Kenya flood deaths as heavy rains cause landslides and bridge damage in Eastern and Coast regions. Get the full details here."
 tags: ["Kenya News", "National Police Service", "Kenya Floods", "Eastern Region", "Infrastructure Damage"]
 focusKeyword: "Kenya flood deaths"
+dateModified: "2026-05-02T11:27:04Z"
 ---
 ## Ten Kenya Flood Deaths Confirmed Amid Persistent Rains
 
@@ -29,3 +30,4 @@ A separate landslide has blocked a section of the Iten-Kabarnet Road near Kolol,
 ### Emergency Response and Warnings
 
 Emergency response teams remain on the ground conducting rescue operations and working to restore access and critical services. Authorities have urged residents in high-risk and affected areas to remain vigilant, avoid flooded zones, and heed advisories from local officials as the Kenya Meteorological Service Authority (KMSA) continues to monitor the weather and issue updates. The KMSA predicts that heavy rainfall will persist during the first week of May, with conditions expected to ease in the second half of the month.
+

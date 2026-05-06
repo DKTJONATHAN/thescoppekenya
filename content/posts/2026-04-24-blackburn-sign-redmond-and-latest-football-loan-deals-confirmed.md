@@ -8,6 +8,8 @@ image: "https://i.ibb.co/whhpgdnP/33312b9bbec1.webp"
 category: "Sports"
 tags: ["blackburn-rovers", "redmond-signing", "football-loan-deals", "transfer-news"]
 date: "2026-04-24T08:36:20Z"
+focusKeyword: "Blackburn Sign Redmond and Latest Football Loan Deals Confir"
+dateModified: "2026-04-24T08:36:20Z"
 ---
 By Jona Munyi
 

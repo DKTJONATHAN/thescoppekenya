@@ -5,6 +5,8 @@ author: "Mutheu Ann"
 image: "https://i.ibb.co/rG4hNMjx/72ee385b6d9b.jpg"
 category: "Entertainment"
 date: "2026-05-01T09:06:22Z"
+focusKeyword: "Dan Stevens to lead the third season of horror anthology ser"
+dateModified: "2026-05-01T09:06:22Z"
 ---
 ## Dan Stevens' Devilish Turn: From Eurovision Stage to Psychiatric Ward
 
@@ -25,3 +27,4 @@ Fans of Stevens' starring role in the FX series *Legion* will find some eerie pa
 ### Behind the Scenes of Silver
 
 The new season boasts a scarily talented supporting cast, including Aasif Mandvi, CCH Pounder, and Stephen Root as hospital workers, with Judith Light portraying a patient who has been institutionalized for decades. Light's character, Dory, represents the long history of institutionalization and how it has evolved. Behind the camera, Victor LaValle, author of the original 2012 *Devil in Silver* novel, serves as showrunner alongside *Halt and Catch Fire* co-creator Chris Cantwell. The first two episodes were skillfully directed by Karyn Kusama, known for her work on horror films like *Jennifer's Body* and *The Invitation*. The series was filmed at the decommissioned Arthur Kill Correctional Facility on Staten Island, adding an extra layer of chilling authenticity to the production. Stevens even recalls encountering "demonic" goats wandering around outside the facility!
+

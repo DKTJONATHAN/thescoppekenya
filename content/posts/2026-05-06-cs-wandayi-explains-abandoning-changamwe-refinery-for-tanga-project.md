@@ -10,8 +10,8 @@ tags: ["kenya energy", "opiyo wandayi", "changamwe refinery", "tanga refinery", 
 date: "2026-05-06T11:22:55Z"
 dateModified: "2026-05-06T11:22:55Z"
 schema: "NewsArticle"
+focusKeyword: "CS Wandayi Explains Abandoning Changamwe Refinery for Tanga"
 ---
-
 ## The Tanga Bet: Why Kenya is outsourcing its energy security to Tanzania
 
 Cabinet Secretary for Energy and Petroleum Opiyo Wandayi officially announced the government’s abandonment of the Changamwe oil refinery during a Senate session on Wednesday, May 6, 2026, signaling a major shift toward a regional processing hub in Tanga, Tanzania.
@@ -41,3 +41,4 @@ The pivot toward Tanga signifies a formal end to Kenya’s pursuit of domestic r
 ### What to watch next
 
 The immediate focus will shift to the formalization of the Tanga agreement and the legal status of the land occupied by the Changamwe refinery. Observers should monitor whether the government will initiate a formal decommissioning process for the Mombasa site or if the facility will be repurposed for petroleum storage, which would maintain some level of local supply chain control. Future parliamentary hearings are expected to drill down into the specific investment figures and the exact nature of the Kenyan state’s equity in the Tanga project.
+

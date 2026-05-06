@@ -6,6 +6,8 @@ author: "Grace Mkamburi"
 image: "https://i.ibb.co/spC5NGYt/60f9791b8a86.jpg"
 category: "Business"
 date: "2026-04-24T10:55:34Z"
+focusKeyword: "Gulf African Bank Acquired by UAEs Soren Investment"
+dateModified: "2026-04-24T10:55:34Z"
 ---
 ## Gulf African Bank Ownership Shift
 
@@ -22,3 +24,4 @@ Gulf African Bank, the first Sharia-compliant lender in Kenya, reported robust g
 ### Strategic Regional Integration
 
 Soren's entry into the Kenyan market aligns with a strategy to establish a pan-African Islamic banking network. The UAE-registered investment firm already holds majority stakes in AGB Sudan and HAB Tanzania. By anchoring its operations in Nairobi, Soren aims to leverage Kenya's role as a regional financial hub to scale its digital and traditional banking services. The firm also operates a DIFC-registered fintech focused on digital solutions for financial institutions, suggesting a push toward technological modernization within its newly acquired subsidiaries. Auron Holdings described its acquisition as a portfolio diversification move, replacing the IFC, which had been a shareholder since the bank's early operational years.
+

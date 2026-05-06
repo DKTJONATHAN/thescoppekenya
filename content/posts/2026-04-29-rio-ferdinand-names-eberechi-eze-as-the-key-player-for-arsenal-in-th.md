@@ -5,6 +5,8 @@ author: "Sports Desk"
 image: "https://i.ibb.co/GryZSMz/05933c41d9e5.jpg"
 category: "Global News"
 date: "2026-04-29T17:12:46Z"
+focusKeyword: "Rio Ferdinand names Eberechi Eze as the key player for Arsen"
+dateModified: "2026-04-29T17:12:46Z"
 ---
 ## Eze: Arsenal's Accidental Messiah or Another False Dawn?
 
@@ -21,3 +23,4 @@ The notion of a "shift of momentum" predicated on Arsenal potentially being six 
 ### Experience Trumps Optimism
 
 Ferdinand's hesitant prediction that "it's Arsenal's time" is immediately undercut by his own admission that he "would not be surprised if City win it" due to their experience, Pep Guardiola, and understanding of the title race demands. This contradictory stance highlights the fundamental insecurity surrounding Arsenal's challenge. Until the Gunners demonstrate the unshakeable composure and ruthless efficiency that Manchester City routinely exhibit in the crunch moments, any talk of their "time" feels more like hopeful fan sentiment than a cold, hard assessment of a team truly ready to claim the Premier League crown.
+

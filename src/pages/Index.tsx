@@ -249,9 +249,18 @@ const Index = () => {
     "inLanguage": "en-KE",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": `${SITE_URL}/tag/{search_term_string}`,
+      "target": `${SITE_URL}/search?q={search_term_string}`,
       "query-input": "required name=search_term_string",
     },
+  };
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Zandani",
+    "url": SITE_URL,
+    "logo": `${SITE_URL}/logo.png`,
+    "sameAs": ["https://x.com/zandani_ke", "https://facebook.com/zandanike", "https://instagram.com/zandani_ke"]
   };
 
   // â”€â”€ ItemList schema for top articles (helps Google index article links) â”€â”€
@@ -271,7 +280,7 @@ const Index = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Za Ndani | Get The Latest Celebrity Gossip, Entertainment News And General News From Kenya And Across The Globe</title>
+        <title>Zandani | Kenya Breaking News, Politics, Sports & Entertainment</title>
         <meta name="description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment, political updates, trending celebrity news, and sports." />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href={SITE_URL} />
@@ -302,6 +311,7 @@ const Index = () => {
 
         {/* JSON-LD schemas */}
         <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(itemListSchema)}</script>
       </Helmet>
 

@@ -7,6 +7,8 @@ image: "https://i.ibb.co/bgGmYFXV/89cc37460ac7.webp"
 category: "Sports"
 tags: ["burnley-fc", "scott-parker", "craig-bellamy", "manager-news"]
 date: "2026-04-30T13:11:21Z"
+focusKeyword: "Shock Burnley Exit Scott Parker Out as Club Targets Wales Bo"
+dateModified: "2026-04-30T13:11:21Z"
 ---
 Burnley Football Club faces a pivotal summer after confirming Scott Parker's departure by mutual consent, just eight days following their Premier League relegation. The club is actively seeking a new manager, with Wales boss Craig Bellamy emerging as a prominent candidate for the hot seat at Turf Moor. The search reflects a critical juncture for the Clarets as they prepare for a return to the Championship.
 

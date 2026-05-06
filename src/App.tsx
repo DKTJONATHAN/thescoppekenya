@@ -36,6 +36,7 @@ const AuthorsPage = lazy(() => import("./pages/AuthorsPage"));
 const PodcastPage = lazy(() => import("./pages/PodcastPage"));
 const TvPage = lazy(() => import("./pages/TvPage"));
 const AuthorProfilePage = lazy(() => import("./pages/AuthorProfilePage"));
+const HubPage = lazy(() => import("./pages/HubPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Optimized Query Client with caching
@@ -147,6 +148,7 @@ const App = () => (
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/privacy" element={<PrivacyPage />} />
+                <Route path="/privacy-policy" element={<PrivacyPage />} />
                 <Route path="/terms" element={<TermsPage />} />
                 <Route path="/advertise" element={<AdvertisePage />} />
                 <Route path="/careers" element={<CareersPage />} />
@@ -167,6 +169,9 @@ const App = () => (
                 <Route path="/podcast" element={<PodcastPage />} />
                 <Route path="/tv" element={<TvPage />} />
                 <Route path="/author/:authorName" element={<AuthorProfilePage />} />
+                <Route path="/energy" element={<HubPage />} />
+                <Route path="/education" element={<HubPage />} />
+                <Route path="/finance" element={<HubPage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>

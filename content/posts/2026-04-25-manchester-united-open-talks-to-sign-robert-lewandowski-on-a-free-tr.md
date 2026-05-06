@@ -5,6 +5,8 @@ author: "Sports Desk"
 image: "https://i.ibb.co/wNkgfJtk/1837197dea90.jpg"
 category: "Global News"
 date: "2026-04-25T12:32:38Z"
+focusKeyword: "Manchester United open talks to sign Robert Lewandowski on a"
+dateModified: "2026-04-25T12:32:38Z"
 ---
 ## United's Lewandowski Gamble: Free Doesn't Mean Cheap
 
@@ -21,3 +23,4 @@ Lewandowski, while undoubtedly a legendary striker, is not getting younger. At 3
 ### Barcelona's Discard is United's Prize?
 
 It's telling that Lewandowski is reportedly "unhappy with the first proposal from Barcelona" and has "other possibilities" in MLS, Saudi Arabia, and Italy. This isn't a player desperate to join Manchester United's grand project; it's a veteran exploring his options for a final substantial contract. United, having spent years chasing marquee names only to see many flounder, now appear to be positioning themselves as a prime destination for players looking for one last European hurrah, or simply the best available financial package when their current club isn't offering what they want. It’s hardly the robust statement of intent Ratcliffe and INEOS promised.
+

@@ -9,6 +9,7 @@ description: "A Garissa Mwingi attack halted transport on the highway after susp
 excerpt: "A Garissa Mwingi attack halted transport on the highway after suspected assailants ambushed a passenger bus near Ukasi, Kitui. Several feared injured and j"
 tags: ["Kenya News", "Bus Attack", "Road Safety", "Kitui County", "Garissa Mwingi Highway"]
 focusKeyword: "Garissa Mwingi attack"
+dateModified: "2026-04-28T19:18:38Z"
 ---
 ## Garissa Mwingi Attack Halts Highway Transport
 
@@ -25,3 +26,4 @@ The incident prompted dozens of traveler buses to stop mid-journey as a safety p
 ### Police Respond to Retaliatory Killings
 
 The **Garissa Mwingi attack** occurs two days after seven residents were killed in Tseikuru, Mwingi, Kitui County, on Sunday, April 26, in what police described as retaliatory attacks. Police reports indicate the attackers stormed the village, opened fire, and killed the victims before fleeing. The National Police Service stated that these attacks stem from a series of earlier clashes between residents and a pastoralist community. Following the Sunday incident, Inspector General of Police Douglas Kanja dispatched a high-powered security team, led by Deputy Inspector General Eliud Lagat, to the Kwa Kamari area in Tseikuru. Kanja has called for calm and peace, emphasizing intensified efforts to find a lasting solution.
+

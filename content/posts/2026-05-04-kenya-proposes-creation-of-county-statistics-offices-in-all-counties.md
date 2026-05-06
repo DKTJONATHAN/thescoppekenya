@@ -8,6 +8,7 @@ date: "2026-05-04T10:29:23Z"
 authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 dateModified: "2026-05-04T10:29:23Z"
 schema: "NewsArticle"
+focusKeyword: "Kenya Proposes Creation of County Statistics Offices in All"
 ---
 ## Data Devolution: Kenya's Statistics Bill 2026
 
@@ -24,3 +25,4 @@ To foster robust data management, the bill proposes the creation of a County Int
 ### Modernizing Kenya's Data Framework
 
 The Statistics Bill 2026 represents a critical step towards updating Kenya’s statistical infrastructure. It seeks to repeal and replace the outdated Statistics Act of 2006, which established the Kenya National Bureau of Statistics (KNBS). The new bill aligns with the United Nations Fundamental Principles of Official Statistics, the Data Protection Act 2019, and contemporary advancements in big data, citizen-generated data, and biometrics. Kenya is proactively working to harmonize its data sharing frameworks and ensure its laws remain relevant to the evolving modern data environment, reflecting trends where [Kenyan mobile data consumption rises as 4G and 5G adoption grows](https://zandani.co.ke/article/kenyan-mobile-data-consumption-rises-as-4g-and-5G-adoption-grows). The public participation phase for this transformative bill is currently open until May 20, 2026, offering stakeholders an opportunity to contribute to its final shape.
+

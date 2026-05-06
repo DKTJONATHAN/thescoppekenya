@@ -9,6 +9,8 @@ category: "News"
 tags: ["export-vat-returns", "kra", "customs-data-integration", "itax-platform", "tax-compliance"]
 canonical: "https://zandani.co.ke/article/kra-announces-integration-of-customs-data-for-export-vat-returns"
 date: "2026-04-26T11:57:38Z"
+focusKeyword: "KRA announces integration of customs data for export VAT ret"
+dateModified: "2026-04-26T11:57:38Z"
 ---
 The Kenya Revenue Authority (KRA) has announced significant changes to its tax systems, integrating customs data with the iTax platform for export Value Added Tax (VAT) returns. Effective May 2026, this move aims to streamline filings and enhance compliance for exporters and their agents across various trade zones.
 
@@ -22,3 +24,4 @@ The new system introduces stricter compliance requirements for exporters and cle
 
 ### KRA's Broader Automation Initiative
 This initiative is a component of KRA's ongoing reforms aimed at deepening automation and integrating tax systems. The objective is to enhance efficiency, transparency, and overall revenue collection efforts. Za Ndani continues to track these developments alongside other crucial public interest stories, from economic shifts to cultural discussions such as the confirmed reunion of Shes Kemunto and Iyanii.
+

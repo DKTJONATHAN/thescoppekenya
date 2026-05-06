@@ -10,8 +10,8 @@ tags: ["kenya news", "digital health", "artificial intelligence", "healthcare re
 date: "2026-05-06T08:43:08Z"
 dateModified: "2026-05-06T08:43:08Z"
 schema: "NewsArticle"
+focusKeyword: "Kenya Pharmacy and Poisons Board Drafts Rules for Medical AI"
 ---
-
 ## The Digital Diagnostic Divide: Are Kenyan AI Regulations Stifling Local Innovation?
 
 The Pharmacy and Poisons Board (PPB) presents its medical AI framework as a necessary shield for patient welfare. In practice, however, these rigid validation mandates threaten to erect a digital barrier that protects global incumbents while systematically marginalizing Kenyan innovators.
@@ -37,3 +37,4 @@ The next five years will determine the trajectory of digital health in Kenya. If
 ### Looking Ahead
 
 Stakeholders should closely monitor the forthcoming public participation forums hosted by the PPB. The critical indicator of success will be whether the board incorporates a "sandbox" model or an expedited certification path specifically for resource-constrained local startups. Without a tiered regulatory approach that acknowledges the disparities in scale between a nascent Kenyan enterprise and a global tech giant, the current policy will likely trigger a wave of market closures or acquisitions. While the board insists its goal is safety, the current proposal is inadvertently constructing a monopoly for the well-funded, leaving the local health-tech sector to bear the true cost of their ambition.
+

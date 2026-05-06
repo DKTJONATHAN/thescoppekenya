@@ -5,8 +5,9 @@ author: "Elizabeth Muthoni"
 image: "https://i.ibb.co/tpbjTYw1/3db64a4b0c68.webp"
 category: "Technology"
 date: "2026-03-27T17:14:23Z"
+focusKeyword: "Tribunal authorizes Communications Authority to revoke Stand"
+dateModified: "2026-03-27T17:14:23Z"
 ---
-
 ## Kenya's Regulatory Push: Digital Inclusion and Media Viability at a Crossroads The Communications Authority of Kenya (CA) has authorized the revocation of licenses for six Standard Media Group (SMG) stations due to Kshs. 48.8 million in outstanding fees. This decisive action underscores the critical importance of regulatory compliance for traditional media houses and signals a pivotal moment for Kenya's broadcasting landscape amidst ongoing digital transformation.
 
 Regulatory Imperative and Financial Burden A tribunal today granted the Communications Authority of Kenya (CA) the power to revoke the licenses of Radio Maisha, Spice FM, Vybez FM, KTN News (which is no longer operating), Berur FM, and KTN Burudani. The debt comprises Kshs. 13.8 million in annual license fees and Kshs. 34.9 million owed to the Universal Service Fund (USF). The CA stated that SMG had failed to honor payments despite numerous extensions and concessions. SMG's appeal, which claimed a payment plan was in place, was dismissed by the CA's appeal tribunal, which deemed regulatory obligations "clear and non-negotiable" and cited the media group's multi-year failure to settle the debt.
@@ -18,5 +19,6 @@ Kenya's Evolving Media Ecosystem This regulatory crisis highlights the profound 
 A Consistent Regulatory Stance The CA's action against SMG is not an isolated event. The authority has consistently enforced compliance within the broadcasting sector. In 2024, the CA revoked 75 broadcasting licenses for non-compliance, followed by 426 licenses across media and telecommunications providers in November 2024, and another 42 television stations in September 2025 due to persistent regulatory breaches. This pattern underscores the CA's commitment to upholding broadcasting standards and ensuring a fair operational environment, emphasizing that airwaves are scarce public resources requiring strict adherence to statutory duties.
 
 Future Trajectories for Traditional Broadcasters The impending revocation casts a shadow on SMG, a media empire predominantly owned by the family of the late President Daniel Arap Moi. This event follows the recent exit of the Aga Khan from the Nation Media Group, signaling a broader shift in the traditional dynasties that have long dominated Kenyan media. As the CA moves to gazette the license revocations, the episode serves as a powerful reminder for traditional broadcasters to strategically embrace digital transformation and robust financial management to navigate Kenya's dynamic and increasingly regulated media landscape. 
+
 
 

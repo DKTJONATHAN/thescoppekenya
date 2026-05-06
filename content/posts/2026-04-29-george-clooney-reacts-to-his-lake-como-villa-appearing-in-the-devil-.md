@@ -5,6 +5,8 @@ author: "Mutheu Ann"
 image: "https://i.ibb.co/gswsd37/50325441b9ae.jpg"
 category: "Entertainment"
 date: "2026-04-29T18:22:22Z"
+focusKeyword: "George Clooney reacts to his Lake Como villa appearing in Th"
+dateModified: "2026-04-29T18:22:22Z"
 ---
 ## George Clooney's Lake Como Villa Grabs a "Prada" Cameo
 
@@ -21,3 +23,4 @@ The surprise cameo is even sweeter for Clooney due to his close friendship with 
 ### The Million Dollar View
 
 Clooney's connection to Villa Oleandra dates back to 2002 when he purchased the property. Now valued at an estimated $100 million, the sprawling 100,000 sq. ft. estate in Laglio boasts an 18th-century history, complete with its own pier, swimming pool, and tennis court. It was also on the scenic banks of Lake Como that Clooney famously met his wife, human rights lawyer Amal Alamuddin, who became Mrs. Amal Clooney in 2014.
+

@@ -10,6 +10,8 @@ category: "News"
 tags: []
 canonical: "https://zandani.co.ke/article/mps-review-bill-for-online-good-conduct-certificate-renewals"
 date: "2026-04-24T04:26:40Z"
+focusKeyword: "MPs Review Bill for Online Good Conduct Certificate Renewals"
+dateModified: "2026-04-24T04:26:40Z"
 ---
 Legislators on Thursday reviewed proposed amendments to the National Police Service Act, aiming to simplify the renewal process for Certificates of Good Conduct. The Bill seeks to eliminate the need for re-submitting fingerprints, allowing for online processing of subsequent applications and reducing congestion at service points across the country.
 
@@ -24,3 +26,4 @@ Appearing before lawmakers, MP Makali elaborated that the Bill's primary objecti
 ### Financial Commitments and System Upgrades
 
 During deliberations, officials informed the Committee about the financial implications of implementing these changes. The government is already in the process of upgrading its Automated Palm and Fingerprint Identification System (APFIS) to a more advanced Multi-Biometric Identification System (MBIS). This comprehensive system upgrade is projected to cost approximately Ksh2.71 billion over five years. Of this amount, Ksh1.138 billion has already been allocated, with a remaining funding gap of about Ksh1.57 billion. The enhanced system is expected to be fully operational by the 2028/29 financial year, paving the way for a completely digital and more efficient certificate processing system. Committee Vice Chair Robert Pukose welcomed the proposal, seeking assurances that existing services would not be disrupted, to which MP Makali clarified that certificate issuance would continue, albeit with increased speed and efficiency upon the Bill's enactment.
+

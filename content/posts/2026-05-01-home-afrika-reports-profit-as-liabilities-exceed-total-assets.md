@@ -5,6 +5,8 @@ author: "Grace Mkamburi"
 image: "https://i.ibb.co/DD1HhSY7/425785493885.avif"
 category: "Business"
 date: "2026-05-01T10:58:46Z"
+focusKeyword: "Home Afrika reports profit as liabilities exceed total asset"
+dateModified: "2026-05-01T10:58:46Z"
 ---
 ## Home Afrika Reports Profitability Amidst Significant Liabilities
 
@@ -18,3 +20,4 @@ Other operating income for Home Afrika saw a substantial increase of 48.5% to KS
 
 ### Balance Sheet Imbalance and Capital Structure Concerns
 Despite operational improvements, Home Afrika's balance sheet reveals considerable challenges. Total liabilities stand at KSh 4.77 billion, significantly exceeding total assets of KSh 3.74 billion. This indicates a negative equity position, which improved from negative KSh 2.33 billion in 2024 to negative KSh 1.03 billion in 2025, largely due to a KSh 1.18 billion prior year adjustment rather than retained earnings. Borrowings increased by 6.8% to KSh 1.09 billion, and the KSh 680.95 million private placement bond remains unchanged with no visible repayment progress. Additionally, trade receivables nearly doubled to KSh 649.38 million against a backdrop of falling revenue, a divergence that the company's published commentary did not address. The directors have not recommended a dividend for the period, citing the need to rebuild equity and reduce obligations. The board's medium-term target is the recovery of a positive equity position before any return of capital to shareholders.
+

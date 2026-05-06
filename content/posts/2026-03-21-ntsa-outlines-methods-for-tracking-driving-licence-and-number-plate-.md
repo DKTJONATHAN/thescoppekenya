@@ -9,8 +9,9 @@ category: "News"
 tags: ["ntsa-application-status", "driving-licence-tracking", "number-plate-applications", "ecitizen-portal", "transport-services"]
 canonical: "https://zandani.co.ke/article/ntsa-outlines-methods-for-tracking-driving-licence-and-number-plate-"
 date: "2026-03-21T07:48:08Z"
+focusKeyword: "NTSA outlines methods for tracking driving licence and numbe"
+dateModified: "2026-03-21T07:48:08Z"
 ---
-
 The National Transport and Safety Authority (NTSA) has outlined several convenient channels for motorists to track the progress of their driving licence and number plate applications. These methods allow applicants to confirm document readiness, processing status, or identify required further actions, addressing recent concerns regarding application delays in 2026.
 
 NTSA Application Status Checks
@@ -22,5 +23,6 @@ Official NTSA Mobile App Convenience Motorists can also track their applications
 SMS Service for Accessibility For individuals without internet access or smartphones, the NTSA provides an SMS service. Applicants can verify their licence status by sending their national ID number via text message to 22846. Following the message, users receive feedback indicating whether their licence or number plate is ready for collection or remains in processing.
 
 Direct Assistance through Calls and Service Centres Applicants seeking direct assistance can contact NTSA officials by calling 0709-932-000. Additionally, visiting an NTSA service centre remains an option for those who prefer in-person verification. Applicants must carry their identification documents. NTSA officers at these centres can provide detailed updates, resolve issues, and guide motorists on subsequent steps if delays or missing requirements are identified. The NTSA's main office is situated at 316 Upper Hill Chambers, along Second Ngong Avenue in Nairobi, and operates during official working hours from Monday to Friday. 
+
 
 

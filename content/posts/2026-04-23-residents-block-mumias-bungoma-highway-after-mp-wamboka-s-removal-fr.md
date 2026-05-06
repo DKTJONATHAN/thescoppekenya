@@ -10,6 +10,8 @@ category: "News"
 tags: []
 canonical: "https://zandani.co.ke/article/residents-block-mumias-bungoma-highway-after-mp-wamboka-s-removal-fr"
 date: "2026-04-23T11:37:23Z"
+focusKeyword: "Residents Block Mumias-Bungoma Highway After MP Wambokas PIC"
+dateModified: "2026-04-23T11:37:23Z"
 ---
 Protesters in Bumula blocked the Mumias-Bungoma highway today at Kabula market following the suspension of Member of Parliament Jack Wamboka from his role as chairperson of the Public Investments Committee. Traffic remained paralyzed as residents demanded the lawmaker's immediate reinstatement.
 
@@ -30,3 +32,4 @@ The National Cohesion and Integration Commission was among the bodies that lodge
 Following the suspension, the minority leadership in Parliament is now tasked with finding a replacement. Minority Leader Junet Mohammed was directed to name an interim chairperson for the committee by Thursday, April 23, to ensure that the work of the Public Investments Committee remains on schedule.
 
 Security personnel arrived at Kabula market later in the morning to clear the debris and restore the flow of traffic. Local leaders have urged the protesters to remain calm as the legal and parliamentary processes regarding the MP's suspension unfold in Nairobi. Traffic has since begun to move slowly, though a heavy police presence remains in the area to prevent further flare-ups.
+

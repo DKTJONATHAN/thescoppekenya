@@ -10,6 +10,8 @@ category: "News"
 tags: ["kenyan-police-haiti-deployment", "multinational-security-support-mission", "douglas-kanja", "jomo-kenyatta-international-airport", "international-peacekeeping"]
 canonical: "https://zandani.co.ke/article/150-kenyan-police-officers-return-from-haiti-mission-to-jkia"
 date: "2026-04-22T04:20:33Z"
+focusKeyword: "150 Kenyan Police Officers Return from Haiti Mission to JKIA"
+dateModified: "2026-04-22T04:20:33Z"
 ---
 A contingent of 150 police officers from the Multinational Security Support Mission (MSS) in Haiti returned to Jomo Kenyatta International Airport (JKIA) on the evening of Thursday, April 2, 2026. This arrival signifies the conclusion of the fourth rotation of personnel and marks a pivotal moment for the peacekeeping operation.
 
@@ -24,5 +26,6 @@ The conclusion of the mission and the subsequent withdrawals have not been witho
 ### Mission Achievements and Handover
 
 Despite the recent public protests in Haiti, the Kenyan officers delivered tangible successes during their 18-month deployment, which began in October 2024. Their efforts included securing critical infrastructure such as the main airport and various hospitals, effectively reopening major roadways, and facilitating the reintegration of over 2,000 Haitian police officers. Furthermore, the contingent contributed significantly to the partial stabilization of Port-au-Prince, enabling some resumption of normalcy and improved freedom of movement for its residents. The return of these officers underscores the critical role of robust security services both domestically and internationally. This commitment to safety extends to various spheres, including initiatives that promote secure environments, such as when [Bolt conducts defensive driving and safety workshop for women drivers](https://zandani.co.ke/article/bolt-conducts-defensive-driving-and-safety-workshop-for-women-driver). Chad is now set to assume security responsibilities in Haiti through a new, separate force, taking over from the Multinational Security Support mission.
+
 
 

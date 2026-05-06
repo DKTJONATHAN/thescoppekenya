@@ -5,6 +5,8 @@ author: "Mutheu Ann"
 image: "https://i.ibb.co/CKNvyK3s/1fd93a0f97e3.jpg"
 category: "Entertainment"
 date: "2026-05-02T08:26:08Z"
+focusKeyword: "Vanessa Bryant honors late daughter Gianna on her twentieth"
+dateModified: "2026-05-02T08:26:08Z"
 ---
 ## Celebrating Gianna: Vanessa Bryant's Enduring Love Story
 
@@ -21,3 +23,4 @@ Gianna, the second of Kobe and Vanessa Bryant's four daughters, was tragically l
 ### Inspiring the Next Generation
 
 In a beautiful tribute to Gianna's dreams and spirit, the Mamba & Mambacita Sports Foundation, established in memory of Kobe and Gianna, announced the 2026 Class of Gianna Bryant Scholars on her birthday. The non-profit organization is investing in 20 exceptional student-athletes from the Los Angeles area, supporting their athletic endeavors and continuing to light the way with Gianna's vision, spirit, and beautiful heart. This initiative ensures that Gianna's passion for sports and dedication to her goals will continue to inspire and uplift new generations of aspiring athletes.
+

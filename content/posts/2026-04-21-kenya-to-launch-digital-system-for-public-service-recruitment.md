@@ -10,6 +10,8 @@ category: "News"
 tags: ["public-service-recruitment", "geofrey-ruku", "machakos-county", "e-government", "merit-based-hiring"]
 canonical: "https://zandani.co.ke/article/kenya-to-launch-digital-system-for-public-service-recruitment"
 date: "2026-04-21T21:07:37Z"
+focusKeyword: "Kenya to Launch Digital System for Public Service Recruitmen"
+dateModified: "2026-04-21T21:07:37Z"
 ---
 Public Service Cabinet Secretary Geofrey Ruku announced today, April 21, 2026, in Yatta, Machakos County, plans to introduce a new merit-based digital recruitment system across the public service. This technology aims to enhance fairness, accountability, and transparency in government job applications by minimizing human interference and addressing favoritism concerns.
 
@@ -26,5 +28,6 @@ The announcement is designed to restore public confidence in recruitment process
 ### Broader Digitisation Agenda
 
 This shift towards a digital recruitment system is part of a wider governmental push for the digitisation of public services. The ministry recently confirmed the digitisation of various government services. Public Service Cabinet Secretary Ruku previously announced the implementation of an artificial intelligence system to monitor employee conduct during duty hours. Further plans include a transition from permanent and pensionable terms of employment to contract-based terms for public servants, signaling comprehensive reforms across the civil service.
+
 
 

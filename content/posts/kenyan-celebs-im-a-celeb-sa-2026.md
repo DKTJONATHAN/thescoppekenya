@@ -7,8 +7,7 @@ image: "https://i.ibb.co/Z1BWtMMt/b08708c7acf9.jpg"
 category: "Entertainment"
 date: "2026-03-04"
 tags: ["I'm A Celebrity South Africa", "Kenyan celebrities", "reality TV", "entertainment", "2026 cast"]
+focusKeyword: "Kenyan Celebs Im A Celeb SA 2026 The Delusion"
+dateModified: "2026-03-04"
 ---
-
-
-
 

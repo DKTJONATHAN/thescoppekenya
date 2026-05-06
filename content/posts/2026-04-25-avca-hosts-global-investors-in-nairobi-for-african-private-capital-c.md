@@ -5,6 +5,8 @@ author: "Grace Mkamburi"
 image: "https://i.ibb.co/rRBBDTF8/3a6a7aa79704.png"
 category: "Business"
 date: "2026-04-25T18:30:17Z"
+focusKeyword: "AVCA hosts global investors in Nairobi for African private c"
+dateModified: "2026-04-25T18:30:17Z"
 ---
 ## Nairobi Positions Kenya as Hub for African Private Capital
 
@@ -25,3 +27,4 @@ For the first time, the AVCA conference includes a dedicated Private Credit Summ
 ### Global Investor Engagement
 
 The summit features prominent investors, including Africa Finance Corporation, Africa50, British International Investment, International Finance Corporation, and the European Investment Bank. Their participation aims to foster new approaches to cooperation between domestic and international finance, mobilizing capital and policy action to build resilient, diversified, and progressive African markets. The Central Bank of Kenya Pension Fund and the National Social Security Funds (NSSF) are also participating, highlighting local institutional involvement in accelerating Africa's economic transformation.
+

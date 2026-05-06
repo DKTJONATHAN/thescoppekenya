@@ -10,6 +10,8 @@ category: "Entertainment"
 tags: ["davido-chris-brown-album", "afrobeats-collaborations", "davido-2027-release", "chris-brown-afrobeats"]
 canonical: "https://zandani.co.ke/article/davido-confirms-2027-release-for-joint-album-with-chris-brown"
 date: "2026-04-21T19:46:39Z"
+focusKeyword: "Davido Confirms 2027 Release for Joint Album With Chris Brow"
+dateModified: "2026-04-21T19:46:39Z"
 ---
 Nigerian Afrobeats sensation Davido has revealed a potential late 2027 release for his highly anticipated joint album with American hitmaker Chris Brown. The announcement came during an interview held on the sidelines of his Coachella 2026 Day 2 performance, confirming years of fan speculation about the project.
 
@@ -28,5 +30,6 @@ The creative partnership between Davido and Chris Brown dates back to 2019 when 
 ### Anticipation Builds for Solo Releases and Beyond
 
 As the joint project awaits its 2027 release, both artists are actively engaged in individual endeavors. Davido is currently navigating the European leg of his highly successful 5ive Alive Tour. Meanwhile, Chris Brown recently announced a joint tour with American R&B icon Usher. Before their collaborative album, Chris Brown's 12th studio album, titled 'BROWN,' is scheduled for release on May 10, 2026. Davido has also shared plans for his next solo album, indicating a return to his Nigerian and African roots. The prospect of a joint tour between the two global sensations is also an exciting possibility for fans, eager to witness their combined stage presence.
+
 
 

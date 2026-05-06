@@ -9,8 +9,9 @@ category: "News"
 tags: ["edwin-sifuna", "orange-democratic-movement", "kenyan-politics", "gladys-wanga", "odm-disciplinary-action"]
 canonical: "https://zandani.co.ke/article/odm-issues-show-cause-letter-to-secretary-general-edwin-sifuna-over-"
 date: "2026-04-02T17:11:24Z"
+focusKeyword: "ODM Issues Show-Cause Letter to Secretary General Edwin Sifu"
+dateModified: "2026-04-02T17:11:24Z"
 ---
-
 The Orange Democratic Movement (ODM) party officially began the process to remove Nairobi Senator Edwin Sifuna as Secretary General, issuing a show-cause letter on Thursday, April 2, 2026. Sifuna is directed to appear before the party's disciplinary committee on April 8 to respond to misconduct allegations.
 
 Sifuna's Alleged Misconduct Detailed
@@ -24,5 +25,6 @@ Unauthorised Political Activities Additionally, the Nairobi Senator faces accusa
 Tribunal's Directive for Internal Resolution This disciplinary action follows the Political Parties Disputes Tribunal's dismissal of Sifuna's petition on Thursday, March 26, 2026. The tribunal had rejected his immediate ouster and directed both Sifuna and the ODM party to first resolve their disagreements internally through ODM's Internal Dispute Resolution Mechanisms (IDRM). The ruling encouraged parties to submit to the IDRM in good faith.
 
 Recent Party Leadership Changes Amidst Wrangling The ODM party has recently experienced significant internal wrangles, particularly since Sifuna's initial removal as Secretary General in February 2026. These disputes have led to the emergence of two rival factions: the Linda Mwananchi faction, reportedly aligned with the opposition, and the Linda Ground faction, which aligns with the government. On Friday, March 27, 2026, ODM held a special delegates conference that enacted changes to the party's leadership. This included the removal of Vihiga Senator Godfrey Osotsi, who is associated with the Sifuna-led faction, from his position as deputy party leader. During this meeting, Oburu Odinga was elected as party leader, with Kisii Governor Simba Arati and Mombasa Governor Abdulswamad Nassir assuming roles as deputy party leaders. Gladys Wanga was also elected as ODM national chairperson. 
+
 
 

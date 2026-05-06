@@ -12,6 +12,7 @@ date: "2026-05-05T06:29:31Z"
 authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-05-05T06:29:31Z"
 schema: "NewsArticle"
+focusKeyword: "Wamezidi Kenyans Slam Horizontal Engineering Club Attire"
 ---
 An ongoing uproar across Kenya this May 2026 targets increasingly revealing club attire. Many observers question if some partygoers are simply stepping out or, as popularly phrased, 'auditioning for horizontal engineering' roles, pushing nightlife's decency boundaries.
 
@@ -30,3 +31,4 @@ For many, the core of the issue boils down to a timeless principle: decency neve
 The conversation around club attire isn't just about hemlines and necklines; it's a broader commentary on societal values and the messages individuals project. Critics argue that the hyper-sexualization of club fashion not only trivializes personal style but also creates an atmosphere that can be misinterpreted or even conducive to unwelcome attention. While individual freedom is celebrated, the collective comfort and perception of the wider public often come into play, shaping an unspoken dress code that transcends official rules. This ongoing discourse highlights a cultural tug-of-war between contemporary freedoms and traditional expectations that continue to define the Kenyan social fabric in May 2026.
 
 The public verdict is clear: when it comes to club fashion, Kenyans feel a line has been crossed, and it's time for a collective fashion check.
+

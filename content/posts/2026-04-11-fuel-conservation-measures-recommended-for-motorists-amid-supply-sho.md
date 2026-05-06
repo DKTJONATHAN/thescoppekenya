@@ -9,8 +9,9 @@ category: "News"
 tags: ["fuel-conservation", "fuel-shortages", "middle-east-conflicts", "motorist-tips", "energy-crisis"]
 canonical: "https://zandani.co.ke/article/fuel-conservation-measures-recommended-for-motorists-amid-supply-sho"
 date: "2026-04-11T09:58:49Z"
+focusKeyword: "Fuel conservation measures recommended for motorists amid su"
+dateModified: "2026-04-11T09:58:49Z"
 ---
-
 By Celestine Nzioka Motorists across Kenya are facing unprecedented fuel shortages and escalating prices, a direct consequence of ongoing Middle East conflicts disrupting global oil supply chains. Adapting to this new reality, drivers are now urged to adopt proactive measures to conserve fuel and maximize efficiency from every litre available. Beyond personal efforts in resource management, ongoing national conversations continue to address broader societal challenges, including the scrutiny of systemic failures.
 
 Maximizing Fuel Efficiency in 2026 Amid global oil supply disruptions caused by the ongoing Middle East conflict, which has led to a significant plunge in global oil supply and soaring prices, individuals must prioritize fuel conservation. The International Energy Agency characterized the situation as the "largest supply disruption in the history of the global oil market" as of March 2026. Kenya, like many nations, is feeling the impact despite government assurances of sufficient petroleum supplies until April 2026 through strategic imports and a stabilization fund.
@@ -34,5 +35,6 @@ Practice Anticipatory Driving Observing traffic ahead and anticipating movements
 Choose Quality Fuel Not all fuels are manufactured to the same standards. Utilizing high-quality fuel is recommended, as it can contribute to improved engine performance and overall efficiency.
 
 Maintain Correct Tyre Pressure Both underinflated and overinflated tyres increase rolling resistance, diminishing a vehicle's fuel efficiency. Regular checks and maintaining recommended tyre pressure levels are crucial for both fuel economy and safety. 
+
 
 

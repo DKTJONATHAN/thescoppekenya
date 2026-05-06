@@ -5,6 +5,8 @@ author: "Mutheu Ann"
 image: "https://i.ibb.co/N6Sj5jmR/16df49c3d0a9.jpg"
 category: "Entertainment"
 date: "2026-05-01T06:43:56Z"
+focusKeyword: "Original Blair Witch stars and directors join reboot as exec"
+dateModified: "2026-05-01T06:43:56Z"
 ---
 ## Blair Witch Project Reboot Unites Original Stars and Directors as Executive Producers
 
@@ -27,3 +29,4 @@ The screenplay for the untitled reboot was initially penned by Chris Devlin, kno
 The original *Blair Witch Project* became a cultural phenomenon when it hit theaters in 1999. Produced on a famously micro-budget, the found-footage thriller grossed nearly $250 million globally, forever changing the landscape of independent horror filmmaking. However, the overwhelming success led to a prolonged battle for the original creators to receive their due and have meaningful input on subsequent franchise entries.
 
 With the original stars and directors now serving as executive producers, Lionsgate and Blumhouse-Atomic Monster are touting their involvement as "bringing the full mythology and legacy of the franchise to a new generation of storytelling". This collaborative approach aims to honor the film's groundbreaking impact while introducing its terrifying narrative to a new audience. As of now, an official release date for the next chapter in the *Blair Witch Project* franchise has not yet been announced.
+

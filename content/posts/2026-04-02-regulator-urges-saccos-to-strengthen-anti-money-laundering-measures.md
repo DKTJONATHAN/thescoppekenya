@@ -9,8 +9,9 @@ category: "News"
 tags: ["anti-money-laundering", "sassra", "david-sandagi", "financial-regulation", "sacco-compliance"]
 canonical: "https://zandani.co.ke/article/regulator-urges-saccos-to-strengthen-anti-money-laundering-measures"
 date: "2026-04-02T19:17:35Z"
+focusKeyword: "Regulator Urges SACCOs to Strengthen Anti-Money Laundering M"
+dateModified: "2026-04-02T19:17:35Z"
 ---
-
 The SACCO Societies Regulatory Authority (SASSRA) has urged regulated SACCOs to fortify their Anti-Money Laundering (AML) and Proliferation Financing (PF) compliance frameworks. This directive, issued during a virtual sensitization session, aims to safeguard members' savings and uphold the integrity of the sector amidst recent controversies.
 
 Strengthening Financial Integrity SASSRA's Chief Executive Officer, David Sandagi, underscored the critical importance of robust compliance systems. He emphasized that these systems are vital for meeting legal obligations and, crucially, for protecting members' funds. The Authority noted SACCOs' significant role in the nation's financial ecosystem, necessitating unwavering transparency and accountability standards.
@@ -20,5 +21,6 @@ Enhanced Due Diligence and Reporting To combat illicit financial flows, SASSRA r
 Capacity Building Initiatives The Authority also called for empowering compliance officers and relevant staff through capacity building and ongoing awareness initiatives. According to SASSRA, these measures are essential to ensure compliance frameworks remain effective and responsive to emerging risks within the dynamic financial landscape. This push for stricter measures follows heightened scrutiny on the sector due to concerns over financial mismanagement and fraud within some SACCOs.
 
 Legislative Reforms on the Horizon In parallel, Parliament is actively progressing with the Sacco Societies (Amendment) Bill, 2025. This proposed legislation seeks to introduce extensive reforms aimed at strengthening the industry. Key provisions include establishing a central liquidity and shared services framework, allowing primary SACCOs to form a secondary SACCO. This secondary entity would pool funds and manage liquidity across the sector. The Bill also introduces a two-tier structure, where the secondary SACCO would operate on a wholesale basis, dealing exclusively with primary SACCOs rather than individual members. 
+
 
 

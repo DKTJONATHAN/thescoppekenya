@@ -6,6 +6,8 @@ author: "Celestine Nzioka"
 image: "https://i.ibb.co/8g3F1ZQ4/52da453dbeac.jpg"
 category: "Politics"
 date: "2026-04-24T08:22:38Z"
+focusKeyword: "Sakaja Reshuffles Five Nairobi County Chief Officers"
+dateModified: "2026-04-24T08:22:38Z"
 ---
 ## Nairobi County Executive Restructuring
 
@@ -20,3 +22,4 @@ Dr Irene Muchoki, a long-serving Chief Officer, moves from Medical Services to G
 ### Context of Administrative Shifts
 
 This reshuffle occurs less than a year after a substantial reorganisation on November 18, 2025. That prior adjustment impacted seven of the ten top-tier ministers and several chief officers, undertaken as the Governor faced potential impeachment proceedings. Changes then included Mercy Sau Mwakio moving from Public Service Management to Lands, Physical Planning, and Housing, while Suzanne Silantoi took over Health Services from Public Participation. Geoffrey Mosiria was moved from Environment to the Citizen Engagement and Customer Service wing. These repeated reassignments underscore a sustained focus on refining leadership roles and enhancing operational efficiency within the county administration, aiming to address public concerns effectively, much like national efforts to ensure accountability in vital sectors.
+

@@ -12,6 +12,7 @@ date: "2026-05-04T10:26:25Z"
 authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-05-04T10:26:25Z"
 schema: "NewsArticle"
+focusKeyword: "Political Reckoning President Rutos Allies Face DCIEACC Scru"
 ---
 Public disillusionment over unfulfilled government pledges intensified across Nairobi political circles in May 2026. Observers note a growing perception that loyalty to President Ruto is increasingly fragile, as state institutions like the Directorate of Criminal Investigations (DCI) and Ethics and Anti-Corruption Commission (EACC) reportedly exert considerable influence over political alliances.
 
@@ -30,3 +31,4 @@ The yearning for genuine political independence among leaders is starkly evident
 ### The Unfolding Drama of 2026
 
 As May 2026 progresses, the political theatre continues to unfold with its familiar blend of promises, posturing, and veiled warnings. The public remains an ever-watchful, if weary, audience, acutely aware that in Kenyan politics, allegiances often shift for survival rather than principle. The prevailing sentiment is that the political game is frequently played with calculated caution, not unwavering conviction.
+

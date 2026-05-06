@@ -1,0 +1,22 @@
+{
+  "Celestine Nzioka": {
+    "name": "Celestine Nzioka",
+    "role": "General News and Politics Reporter",
+    "bio": "Celestine Nzioka covers Kenyan general news, governance, and public-interest policy stories. Her reporting focuses on accountability, official statements, and how national decisions affect everyday life in Nairobi and across counties. She tracks parliament, ministry directives, and institutional changes with a practical lens that helps readers understand not just what happened, but why it matters. Celestine is part of the Zandani newsroom team committed to timely, clear, and responsible journalism for Kenyan audiences.",
+    "avatar": "/images/authors/celestine-nzioka.jpg",
+    "location": "Nairobi, Kenya",
+    "socials": {
+      "email": "contact@zandani.co.ke"
+    }
+  },
+  "Mutheu Ann": {
+    "name": "Mutheu Ann",
+    "role": "Entertainment and Celebrity Reporter",
+    "bio": "Mutheu Ann reports on Kenyan entertainment, celebrity culture, and digital pop trends. Her beat includes music releases, creator economy developments, relationship headlines, and major showbiz moments shaping conversation online. She specializes in fast-moving stories where context matters, helping readers separate rumor from verifiable updates. Through Zandani, Mutheu brings a youth-focused perspective that keeps coverage lively while staying rooted in factual reporting and audience relevance.",
+    "avatar": "/images/authors/mutheu-ann.jpg",
+    "location": "Nairobi, Kenya",
+    "socials": {
+      "email": "contact@zandani.co.ke"
+    }
+  }
+}

@@ -5,6 +5,8 @@ author: "Elizabeth Muthoni"
 image: "https://i.ibb.co/QFbzvVd3/7ffed80454ef.webp"
 category: "Technology"
 date: "2026-04-28T14:07:20Z"
+focusKeyword: "Kenya aligns aircraft radio license validity with airworthin"
+dateModified: "2026-04-28T14:07:20Z"
 ---
 ## Kenya's Aviation Tech Licensing Streamlined for Enhanced Safety
 
@@ -21,3 +23,4 @@ As current licenses expire on June 30, 2026, operators will initially receive a 
 ### Future Renewals and Impact
 
 Following this initial transition, future renewals will adhere to a standard 12-month cycle, incorporating a 30-day buffer. This buffer is intended to facilitate renewals without creating compliance gaps. To renew an aircraft radio license, operators must provide three essential documents: a valid COA from KCAA, a valid radio survey report also issued by KCAA, and proof of payment for the required annual license fees. This new procedure directly links radio licensing to KCAA airworthiness documentation, making it mandatory for aircraft operators in Kenya to confirm their airframes are safe to fly before they can obtain a license to communicate.
+

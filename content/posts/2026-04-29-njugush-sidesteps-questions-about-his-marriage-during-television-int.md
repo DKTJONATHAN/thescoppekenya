@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["njugush", "njugush-marriage", "celestine-ndinda", "njugush-interview", "wakavinye"]
 canonical: "https://zandani.co.ke/article/njugush-sidesteps-questions-about-his-marriage-during-television-int"
 date: "2026-04-29T23:10:41Z"
+focusKeyword: "Njugush sidesteps questions about his marriage during televi"
+dateModified: "2026-04-29T23:10:41Z"
 ---
 Comedian Timothy Kimani, widely known as Njugush, skillfully dodged inquiries about his marriage to Celestine Ndinda during a live KTN interview on April 28, 2026. The exchange, which momentarily diverted from discussions on Kenya's creative economy, saw Njugush deploying his characteristic humour to sidestep personal speculation, entertaining viewers and panelists alike.
 
@@ -23,3 +25,4 @@ The interaction unfolded as Ngari directly questioned Njugush, "Njugush, you hav
 ### Maintaining Control Through Laughter
 
 Njugush's decision to use humour as a shield against personal questions underscores his sharp comedic instincts and his mastery of live television. By refusing to confirm or deny the speculation and instead opting for a lighthearted diversion, he not only entertained his audience but also firmly maintained control over the interview's direction. This moment served as a testament to his unique ability to engage and amuse while expertly managing the boundaries of his public and private life.
+

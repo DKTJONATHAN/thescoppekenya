@@ -9,6 +9,7 @@ description: "Former President Uhuru Kenyatta defends his role in active politic
 excerpt: "Former President Uhuru Kenyatta defends his role in active politics and Jubilee Party leadership despite calls for his retirement. Read the full story."
 tags: ["Kenya News", "Uhuru Kenyatta", "Jubilee Party", "Moitalel Ole Kenta", "Kenya"]
 focusKeyword: "Uhuru Kenyatta politics"
+dateModified: "2026-05-02T10:30:50Z"
 ---
 ## Uhuru Kenyatta Politics: Former President Defies Retirement Calls
 
@@ -25,3 +26,4 @@ During his remarks, Uhuru Kenyatta appeared to criticize President William Ruto,
 ### 2027 Endorsement
 
 The event also served as a platform for Uhuru Kenyatta to openly endorse former Interior Cabinet Secretary Fred Matiang’i as Jubilee’s preferred presidential candidate for the 2027 General Elections. This move signals Jubilee's intention to challenge the current administration, with Matiang’i vowing to address policies implemented by the present government if they come to power. The ceremony saw various Jubilee leaders, including Jeremiah Kioni and Fred Matiang'i, echoing Uhuru’s sentiments and expressing their intent to collaborate with other political parties.
+

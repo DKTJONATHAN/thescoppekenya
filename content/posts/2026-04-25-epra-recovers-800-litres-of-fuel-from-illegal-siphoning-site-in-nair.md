@@ -9,6 +9,8 @@ category: "News"
 tags: ["illegal-fuel-siphoning", "epra", "nairobi-industrial-area", "petroleum-regulation", "energy-police-unit"]
 canonical: "https://zandani.co.ke/article/epra-recovers-800-litres-of-fuel-from-illegal-siphoning-site-in-nair"
 date: "2026-04-25T11:56:42Z"
+focusKeyword: "EPRA recovers 800 litres of fuel from illegal siphoning site"
+dateModified: "2026-04-25T11:56:42Z"
 ---
 The Energy and Petroleum Regulatory Authority (EPRA) and the Energy Police Unit raided an illegal petroleum-siphoning site on Nadume Road off Lunga-Lunga Road in Nairobi's Industrial Area on Friday, April 24, 2026. Authorities seized approximately 800 litres of siphoned fuel and assorted equipment, though suspects evaded arrest.
 
@@ -22,3 +24,4 @@ The illegal siphoning activity took place around Nadume Road, a critical logisti
 
 ### Connection to Broader Fuel Contamination Saga
 This raid occurs amid a larger scandal involving a massive consignment of substandard petrol that has entered the market during March and April 2026. Nearly 12,000 metric tonnes of contaminated fuel have been sold to motorists. Despite failing initial quality inspections upon its arrival aboard the MT Paloma on March 27, approximately 20 per cent of the 60,000-tonne shipment was released into the supply chain. The Ministry of Trade reportedly authorised the blending of this "off-spec" fuel with cleaner stocks. However, this directive came too late to prevent a significant portion from reaching major oil marketing pumps. Tests confirmed the petrol contained manganese levels of 36.5 mg/kg, more than 18 times the legal limit, along with sulphur concentrations of 43 ppm and benzene levels nearly triple the allowed threshold.
+

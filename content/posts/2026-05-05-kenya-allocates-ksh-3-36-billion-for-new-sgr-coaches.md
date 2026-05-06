@@ -10,8 +10,8 @@ tags: ["kenya railways", "sgr", "transport budget", "infrastructure", "railway m
 date: "2026-05-05T12:12:26Z"
 dateModified: "2026-05-05T12:12:26Z"
 schema: "NewsArticle"
+focusKeyword: "Kenya Allocates Ksh 336 Billion for New SGR Coaches and Whee"
 ---
-
 ## Modernizing Za Ndani Gauge Railway Amid Commuter Frustration
 
 Kenyans are questioning the logic of a new Ksh 3.36 billion investment in SGR coaches while digital booking hurdles and last-mile connectivity gaps remain the primary headaches for daily travelers who prioritize functionality over hardware upgrades.
@@ -41,3 +41,4 @@ The move highlights a growing gap between state-led capital expenditure and the 
 ### What to Watch Next
 
 Keep an eye on the specific procurement timeline for these coaches. If the ticketing system is not overhauled alongside this equipment rollout, public resentment is likely to grow. Additionally, monitor the ongoing discussions regarding the electrification project. As the cost of maintaining the current fleet rises, the government will face increasing pressure to prove that these billions are not just a sunk cost, but a genuine pathway to a more reliable, user-friendly transit network.
+

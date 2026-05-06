@@ -5,8 +5,9 @@ author: "Grace Mkamburi"
 image: "https://i.ibb.co/NG43pfK/fc4afb30338d.webp"
 category: "Business"
 date: "2026-03-23T18:34:33Z"
+focusKeyword: "Kenya establishes three-account fund for oil and mineral rev"
+dateModified: "2026-03-23T18:34:33Z"
 ---
-
 ## Kenya's New Resource Revenue Fund Takes Shape Kenya is establishing a three-account fund for oil and mineral revenues-Stabilisation, Strategic Infrastructure Investment, and Future Generations. This framework aims to safeguard national savings, finance critical projects, and insulate the economy from commodity price volatility, addressing the nation's high public debt and infrastructure financing needs.
 
 Multi-Tiered Revenue Management System Kenya plans to channel future oil and mineral revenues into a three-tiered system: Stabilisation, Strategic Infrastructure Investment, and Future Generations accounts. This structure is designed to safeguard national savings, finance key projects, and shield the economy from potential revenue shocks. Revenues, including the government's share of profit petroleum, royalties, and mining payments, will first deposit into a Central Bank Holding Account before transfer to the specialized accounts within ten days. Kenya's share of profit oil from Turkana fields is projected to increase from 50% in initial phases to 75% at peak output.
@@ -16,5 +17,6 @@ Strict Investment Mandates and Fiscal Integrity Each of the three components has
 Robust Governance and Accountability Framework The fund's governance rests with a seven-member Board and a competitively recruited CEO, including presidential and treasury appointments, alongside the CBK Governor and non-public officers. Withdrawals from the Stabilisation and Strategic Infrastructure Components require Cabinet approval, submission to the National Assembly, and compliance with fiscal responsibility rules. The bill imposes steep penalties for misuse, including double the loss repayment, fines of at least KSh 10 million, and up to five years in prison, with personal liability persisting post-office. To further ensure stability, no withdrawals or transfers are allowed within three months of a general election, and the Board must certify balances and submit reports. This electoral firewall underscores a commitment to long-term financial prudence.
 
 Strategic Infrastructure and Economic Resilience The sovereign wealth fund, coupled with the newly assented National Infrastructure Fund, is slated to smooth economic fluctuations and shield the national budget from shocks. This creates a predictable pipeline for strategic infrastructure projects. For instance, initiatives that secure financing for green lending demonstrate a broader commitment to sustainable economic development and infrastructure growth (I&M Bank and Sida partner to expand green lending in Kenya with USD 30 million agreement). The Bill also defines significant depletion as a 90% decline in resource revenue sustained for two years, at which point the three accounts would merge, with withdrawals limited to earnings while preserving principal. Quarterly and annual financial statements, including audited reports, are mandatory, along with budget disclosures of expected revenue, fund spending, and investments. Transitional arrangements allow for an interim manager, and amendments to the Mining Act, Petroleum Act, and Kenya Revenue Authority Act are included to ensure comprehensive revenue flow into the Fund. 
+
 
 

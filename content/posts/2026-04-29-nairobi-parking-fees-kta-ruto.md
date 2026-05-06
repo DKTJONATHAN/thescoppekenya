@@ -9,6 +9,7 @@ description: "KTA asks President Ruto to scrap high Nairobi parking fees as cost
 excerpt: "KTA asks President Ruto to scrap high Nairobi parking fees as costs cripple truck transport businesses in Kenya. Read the full story."
 tags: ["Kenya News", "Kenya Transporters Association", "Nairobi Parking Fees", "William Ruto", "Nairobi"]
 focusKeyword: "Nairobi parking fees"
+dateModified: "2026-04-29T20:02:13Z"
 ---
 ## KTA Challenges High Nairobi Parking Fees in Ruto Plea
 
@@ -27,3 +28,4 @@ The association asserts that the high Nairobi parking fees are counterproductive
 To address these challenges, KTA has proposed a revised daily rate of Ksh800 per truck. They contend that this adjusted fee would substantially increase compliance among transporters, significantly reduce incentives for corruption, and ensure the continued viability of transport businesses within the city. This move, KTA believes, would also bolster Nairobi's competitiveness as a commercial hub. The association drew comparisons with other counties, noting that Kiambu charges Ksh400, Mombasa Ksh700, Eldoret and Nakuru Ksh500 each, and Bungoma just Ksh300 for similar services. This disparity underscores KTA's argument that Nairobi County's current rates are unfairly high. Supporting businesses through reasonable regulation is crucial for their growth and can be observed in various sectors, including the adaptive strategies seen in retail, as highlighted by discussions on new business models.
 
 KTA has expressed its readiness to engage constructively with Nairobi County authorities to develop reforms that benefit both the government and private enterprises. The formal petition underscores the urgency for intervention from the targeted leaders to resolve the ongoing dispute over parking charges.
+

@@ -42,6 +42,8 @@ schema_json: "{
     \"@id\": \"https://zandani.co.ke/article/njugush-wakavinye-split-polycarp-rumors-and-beard-red-flags\"
   }
 }"
+focusKeyword: "Njugush Wakavinye Split Polycarp Rumors and Beard Red Flags"
+dateModified: "2026-04-25T01:54:46Z"
 ---
 Popular comedian Njugush (Timothy Kimani) and his wife Celestine Ndinda (Wakavinye) recently confirmed their separation, triggering widespread speculation across the country. Rumours of infidelity involving Wakavinye and her nail technician, Polycarp, intensified after a past video resurfaced, highlighting her humorous preference for bearded men as a potential 'red flag' in their now-fractured relationship.
 
@@ -58,3 +60,4 @@ Adding fuel to the inferno of speculation was the re-emergence of an old video c
 The public reaction has been intense, characterized by dramatic interpretations and often hyperbolic "lessons" drawn from the saga. Many are now reflecting on the perceived signs within relationships, with some offering extreme advice to men. One sharp observation humorously suggested that any seemingly trivial preference expressed by a woman - be it for beards, specific car models, or even certain food types - should be treated as a serious indicator of future relationship challenges. The commentary, steeped in sarcasm, even offered exaggerated "revenge" tactics for men in similar predicaments, such as claiming assets down to the very nail polish, clearly satirizing the often over-the-top reactions to celebrity breakups and alleged infidelities. While political figures like Charisma urge Kenyan youth to register as voters, public attention has remained firmly fixed on this unfolding celebrity saga.
 
 The streets are saying, "Huyu Polycarp, alijua mahali atapitia!" (This Polycarp, he knew where he would pass through!)
+

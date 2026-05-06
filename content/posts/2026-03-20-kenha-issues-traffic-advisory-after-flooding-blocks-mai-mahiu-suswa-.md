@@ -9,8 +9,9 @@ category: "News"
 tags: ["mai-mahiu-suswa-narok-highway", "kenha-traffic-advisory", "suswa-flooding", "kedong-ranch", "infrastructure-updates"]
 canonical: "https://zandani.co.ke/article/kenha-issues-traffic-advisory-after-flooding-blocks-mai-mahiu-suswa-"
 date: "2026-03-20T05:31:26Z"
+focusKeyword: "KeNHA Issues Traffic Advisory After Flooding Blocks Mai Mahi"
+dateModified: "2026-03-20T05:31:26Z"
 ---
-
 Motorists should seek alternative routes as the Mai Mahiu-Suswa-Narok highway near Kedong Ranch, Suswa, is currently impassable. Flooding and silt deposition, caused by heavy rains, prompted a Kenya National Highways Authority (KeNHA) advisory on March 19, 2026.
 
 Mai Mahiu-Suswa-Narok Highway Impassable
@@ -20,5 +21,6 @@ KeNHA Advisory on Road Conditions The Kenya National Highways Authority (KeNHA) 
 Emergency Response and Motorist Warnings KeNHA has dispatched response teams to the site, who are actively clearing debris and working to restore normal movement along the road. Despite these efforts, motorists are strongly cautioned against attempting to drive through any flooded sections, as vehicles risk being swept away. The Authority explicitly advised drivers to avoid such areas for their safety.
 
 Alternative Routes and Travel Precautions For those whose travel is unavoidable, KeNHA urged motorists to utilize alternative routes. Drivers are also directed to follow instructions provided by police officers and traffic marshals deployed in the area to manage the situation and enhance safety. Due to continued rainfall in the region, road conditions, particularly between Naivasha ICD and Suswa Ranch, have worsened. Travellers who have not yet commenced their journeys are encouraged to delay their trips until the situation improves and floodwaters subside. While awaiting improved travel conditions, readers can find further insights on Za Ndani, exploring diverse topics such as the most streamed artists on Spotify Kenya [https://zandani.co.ke/article/burna-boy-drake-chris-brown-spotify-kenya-earnings-gossip]. 
+
 
 

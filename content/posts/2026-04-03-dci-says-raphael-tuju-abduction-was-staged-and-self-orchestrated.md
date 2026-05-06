@@ -9,8 +9,9 @@ category: "News"
 tags: ["raphael-tuju", "staged-abduction", "directorate-of-criminal-investigations", "criminal-investigations", "tuju-disappearance"]
 canonical: "https://zandani.co.ke/article/dci-says-raphael-tuju-abduction-was-staged-and-self-orchestrated"
 date: "2026-04-03T15:04:36Z"
+focusKeyword: "DCI says Raphael Tuju abduction was staged and self-orchestr"
+dateModified: "2026-04-03T15:04:36Z"
 ---
-
 The Directorate of Criminal Investigations (DCI) announced today, Friday, April 3, that the reported disappearance of former Cabinet Secretary Raphael Tuju was a staged and self-orchestrated incident. This conclusion follows extensive investigations, with findings from CCTV footage and witness accounts directly contradicting earlier claims of an abduction.
 
 DCI Concludes Tuju's Disappearance Was Staged
@@ -20,5 +21,6 @@ Detailed Sequence of Events Uncovered The DCI's inquiry established that the inc
 Evidence Contradicts Abduction Claims In a press statement issued on April 3, the DCI asserted that findings from CCTV footage, witness accounts, and other evidence definitively contradicted the initial reports of an abduction. “After a thorough and meticulous inquiry, investigators have established beyond doubt that the alleged disappearance and abduction of Hon Raphael Tuju was in fact a staged and self-orchestrated incident,” the DCI statement read. This conclusion underscores the meticulous nature of the evidence collection and analysis conducted by the Directorate.
 
 Persons of Interest Identified, Investigations Ongoing Police have identified several persons of interest believed to have played roles in planning and executing the incident. The DCI confirmed that investigations remain ongoing, and those found culpable will face legal action. Za Ndani continues to provide comprehensive coverage of significant developments, from critical security matters to various narratives involving public figures. 
+
 
 

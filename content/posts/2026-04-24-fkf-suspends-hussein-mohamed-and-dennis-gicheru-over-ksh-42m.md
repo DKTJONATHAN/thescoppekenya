@@ -10,6 +10,8 @@ category: "News"
 tags: []
 canonical: "https://zandani.co.ke/article/fkf-suspends-hussein-mohamed-and-dennis-gicheru-over-ksh-42m"
 date: "2026-04-24T20:02:27Z"
+focusKeyword: "FKF Suspends Hussein Mohamed and Dennis Gicheru Over Ksh 42M"
+dateModified: "2026-04-24T20:02:27Z"
 ---
 Football Kenya Federation President Hussein Mohamed, along with NEC member Abdullahi Yussuf Ibrahim and Acting CEO Dennis Gicheru, were suspended today, April 24, over alleged financial impropriety involving Ksh42 million meant for the African Nations Championship. Deputy President Macdonald Mariga now leads in an acting capacity.
 
@@ -32,3 +34,4 @@ The embattled Hussein Mohamed on Thursday pushed back against the allegations su
 ### Safeguarding Football's Integrity
 
 The NEC meeting, which three members-Charles Njagi, Ahmedqadar Mohammed Dabar, and Kenneth Rungu-did not attend, underscored the necessity of restoring public confidence in the federation. Safeguarding the integrity of Kenyan football was cited as a key reason behind the drastic action. This move aligns with broader calls for accountability in public and institutional leadership, mirroring the scrutiny applied to other prominent figures, such as when [Kimani Ichung’wah explained why he blocked President William Ruto](https://zandani.co.ke/article/kimani-ichung-wah-explains-why-he-blocked-president-william-ruto).
+

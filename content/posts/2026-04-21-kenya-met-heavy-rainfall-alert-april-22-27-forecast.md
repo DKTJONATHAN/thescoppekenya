@@ -10,6 +10,8 @@ category: "News"
 tags: ["kenya-meteorological-service-authority", "heavy-rainfall-alert", "coastal-kenya-counties", "meteorological-advisory", "april-2026-weather-forecast"]
 canonical: "https://zandani.co.ke/article/kenya-met-heavy-rainfall-alert-april-22-27-forecast"
 date: "2026-04-21T19:39:14Z"
+focusKeyword: "Kenya Met Heavy Rainfall Alert April 22-27 Forecast"
+dateModified: "2026-04-21T19:39:14Z"
 ---
 The Kenya Meteorological Service Authority (KMSA) has issued a heavy rainfall advisory for several regions, warning of intensified rains between April 22 and April 27, 2026. Coastal, northeastern, and southeastern lowland areas are expected to experience increased rainfall, with accumulations potentially exceeding 20 millimetres in 24 hours.
 
@@ -23,5 +25,6 @@ Rainfall accumulations may surpass 20 millimetres in a 24-hour period in certain
 
 ### Public Safety Advisory
 Residents in the identified areas are urged to maintain vigilance for potential floods, flash floods, and reduced visibility. The authority noted that floodwaters can occur in areas not directly experiencing heavy rainfall, particularly downstream of rivers. The public is advised to avoid driving or walking through moving water and to refrain from seeking shelter under trees or near structures like grilled windows due to the risk of lightning strikes. Za Ndani continues to provide timely updates on local developments, alongside its coverage of diverse topics, including [African Celebrity News & Gossip: Beyond the Global Front Rows](https://zandani.co.ke/article/african-celebrity-news-gossip-global-front-rows). The KMSA has assured that it will provide prompt updates as necessary.
+
 
 

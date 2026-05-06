@@ -8,6 +8,7 @@ date: "2026-05-05T16:27:50Z"
 authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-05-05T16:27:50Z"
 schema: "NewsArticle"
+focusKeyword: "Schmeichel claims Ratcliffe made Â38m Hojlund transfer mista"
 ---
 ## Ratcliffe's Predictable Hojlund Fiasco
 
@@ -28,3 +29,4 @@ Nicky Butt's "scared" assessment regarding Benjamin Sesko echoes a palpable fear
 ### The Unspoken Truths of Old Trafford
 
 The real blunder isn't just the Â£38m for Hojlund; it's the underlying inability to create an environment where young strikers can flourish. It's easy for legends to point fingers once a player succeeds elsewhere, but the scrutiny should fall squarely on the management and coaching staff who couldn't extract the same output. Man Utd continues to waste talent, spending heavily in the transfer market while seemingly blind to the systemic issues that hamstring their investments. Until that changes, expect more 'legends' to bemoan more 'mistakes', and more young players to find their true value away from Old Trafford's chaotic glare.
+

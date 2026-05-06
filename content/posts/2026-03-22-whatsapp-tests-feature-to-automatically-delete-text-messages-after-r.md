@@ -9,8 +9,9 @@ category: "News"
 tags: ["whatsapp-after-reading", "whatsapp-android-beta", "ephemeral-messaging", "self-destructing-messages", "data-privacy"]
 canonical: "https://zandani.co.ke/article/whatsapp-tests-feature-to-automatically-delete-text-messages-after-r"
 date: "2026-03-22T13:55:39Z"
+focusKeyword: "WhatsApp tests feature to automatically delete text messages"
+dateModified: "2026-03-22T13:55:39Z"
 ---
-
 WhatsApp is reportedly testing a new privacy feature, "After Reading," designed to automatically delete text messages from both sender and receiver chats shortly after they are read. This development, currently in beta for Android, aims to enhance user control over sensitive information exchange in 2026. The tool represents an evolution in ephemeral messaging.
 
 WhatsApp Enhances Message Privacy The new "After Reading" tool initiates a 15-minute countdown once a recipient opens a message, leading to its automatic deletion from both parties' chat histories. If the message remains unopened, it will vanish after 24 hours. This system ensures messages are temporary, significantly limiting the retention of sensitive data in chat records.
@@ -22,5 +23,6 @@ Independent of Read Receipts The functionality of "After Reading" is designed to
 Expanding Existing Privacy Frameworks This development extends WhatsApp’s existing "View Once" feature, which already allows photos, videos, and voice notes to disappear after a single viewing. "After Reading" applies this concept to text messages, broadening the scope of self-deleting content. Ensuring secure communication is increasingly critical in all aspects of life, from personal interactions to corporate disclosures, a topic frequently explored by Za Ndani, including recent reports on [Carbacid H1 2026 Earnings Lifted by Investment Gains: A Deep Dive into Performance](https://zandani.co.ke/article/carbacid-h1-2026-earnings-investment-gains).
 
 Ongoing Development and Future Rollout The feature was identified by a prominent feature tracker within the latest WhatsApp Android beta version. It remains under active development and is not yet accessible to beta testers. Researchers note that WhatsApp is still refining the timer's functionality and its application across diverse chat types. Once publicly released, the feature is expected to appeal to users who regularly send confidential information and seek immediate message disappearance without manual intervention. 
+
 
 

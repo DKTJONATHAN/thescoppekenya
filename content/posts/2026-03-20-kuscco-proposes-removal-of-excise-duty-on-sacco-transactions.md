@@ -9,8 +9,9 @@ category: "News"
 tags: ["kuscco", "sacco-tax-relief", "excise-duty-removal", "national-treasury", "cooperative-banking"]
 canonical: "https://zandani.co.ke/article/kuscco-proposes-removal-of-excise-duty-on-sacco-transactions"
 date: "2026-03-20T07:15:19Z"
+focusKeyword: "KUSCCO Proposes Removal of Excise Duty on SACCO Transactions"
+dateModified: "2026-03-20T07:15:19Z"
 ---
-
 The Kenya Union of Savings and Credit Co-operatives (KUSCCO) submitted proposals to the National Treasury on Thursday, March 19, 2026, advocating for the removal of excise duty on SACCO member transactions and adjustments to individual income tax bands, aiming to provide tax relief and enhance members' financial well-being.
 
 KUSCCO Advocates for SACCO Tax Relief
@@ -22,5 +23,6 @@ Adjusting Income Tax Bands Another key recommendation by KUSCCO to the Treasury 
 Expanding Cooperative Sector Participation KUSCCO also proposed a refined definition of 'designated primary cooperative societies' to encompass groups of individuals and corporates. This strategic move aims to broaden eligibility for SACCO membership, thereby attracting more participants and fostering increased growth and competitiveness within the cooperative sector against other financial institutions.
 
 KUSCCO's Appeal and Technical Support During their submission, KUSCCO underscored that these proposals are rooted in the genuine challenges faced by SACCOs and urged the National Treasury to adopt them to lighten the tax load on cooperative societies. The audit firm PwC supported the submission process, lending technical expertise to develop and refine the comprehensive proposals. 
+
 
 

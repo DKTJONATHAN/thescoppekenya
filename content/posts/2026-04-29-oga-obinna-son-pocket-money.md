@@ -11,6 +11,7 @@ category: "Entertainment"
 tags: ["Kenyan Celebrities", "Oga Obinna", "School Pocket Money", "Kenyan Entertainment"]
 canonical: "https://zandani.co.ke/article/oga-obinna-son-pocket-money"
 date: "2026-04-29T06:13:35Z"
+dateModified: "2026-04-29T06:13:35Z"
 ---
 Kenyan comedian Oga Obinna recently sparked widespread discussion across social media in early 2026 after a distinctive approach to his son's school finances. As the second academic term commenced, Obinna publicly presented his son with ten thousand shillings in small denominations, a move intended to teach financial discipline regarding Oga Obinna pocket money.
 
@@ -25,3 +26,4 @@ Obinna's unconventional method aimed to challenge the perception of easy money, 
 ### Public Discourse on Financial Literacy
 
 The move sparked a vigorous debate across various online platforms, with some parents commending Obinna for his innovative parenting style and focus on financial literacy. They echoed the sentiment that children today often lack understanding of money's true value. Others, however, viewed the gesture as overly performative or impractical, questioning the effectiveness of such a large sum in small notes for a young student. As the nation looks to figures like Treasury CS John Mbadi, who recently appointed a selection panel for state-owned enterprise directors, to guide economic decisions, individual Kenyans like Obinna are taking personal initiatives to educate the next generation on money management. The conversation surrounding Oga Obinna pocket money highlights a broader societal interest in equipping young Kenyans with essential financial acumen for the future.
+

@@ -10,8 +10,8 @@ tags: ["kenya government", "public service", "felix kosgey", "workplace ethics",
 date: "2026-05-05T14:23:40Z"
 dateModified: "2026-05-05T14:23:40Z"
 schema: "NewsArticle"
+focusKeyword: "Kenya moves to prioritize individual accountability in publi"
 ---
-
 ## Shifting the Mandate: Why Individual Responsibility Defines the Future of Public Service
 
 Standing in a government office yesterday, I witnessed a moment that felt like a quiet revolution. A junior clerk faced a request from a superior to jump the queue for an acquaintance. Instead of offering the expected deference, the clerk simply pointed to the digital tracking screen and went back to work. In that brief, unremarkable interaction, I saw the fading echo of a system that has long held Kenya back. We are finally moving away from the era of the Bwana Afande-that distant, untouchable figure of authority-toward a culture where public service is measured by individual responsibility rather than administrative power.
@@ -39,3 +39,4 @@ For too long, the Kenyan state was synonymous with unnecessary friction. When pu
 Over the next year, keep a close watch on how internal performance appraisals are conducted. If the new directives remain just words on paper, we will see the status quo continue. However, if performance metrics begin to dictate career progression and promotions, we will know the era of the Bwana Afande has finally concluded. We should look for the rise of clear, data-driven feedback loops that allow citizens to bypass the traditional gatekeepers of influence.
 
 The old guard will not disappear in a day. Change at this scale is always gradual. Yet, the clerk who refused to compromise his process for a superior suggests that the tide has turned. We are collectively learning a simple but powerful lesson: the authority of a public office is not something to be hoarded or wielded for status. It is a responsibility to be practiced for the common good.
+

@@ -9,8 +9,9 @@ category: "Entertainment"
 tags: ["shakib-cham-lutaaya", "barista-timo", "shakib-vs-barista-timo", "celebrity-boxing-match"]
 canonical: "https://zandani.co.ke/article/shakib-cham-lutaaya-announces-boxing-return-against-barista-timo"
 date: "2026-03-18T03:23:48Z"
+focusKeyword: "Shakib Cham Lutaaya announces boxing return against Barista"
+dateModified: "2026-03-18T03:23:48Z"
 ---
-
 Shakib Cham Lutaaya, husband to Ugandan socialite Zari Hassan, announced his highly anticipated return to the boxing ring against Barista Timo on April 11, 2026. This clash follows his dramatic knockout defeat last year at the MTN Arena Lugogo in Kampala, sparking immense excitement among fans eager for a comeback.
 
 Shakib Cham Lutaaya Set for Ring Comeback
@@ -24,5 +25,6 @@ Zari Hassan's Ringside Reaction The knockout was a visibly emotional moment for 
 The Rise of Celebrity Boxing in Uganda Celebrity boxing spectacles, such as The Kampala Rumble, continue to gain immense popularity in Uganda, blending competitive sport with entertainment. These events feature musicians, influencers, and public figures, drawing large audiences eager for the unique blend of athleticism and showbiz. Just as fans keenly follow these exciting matches, the public is also captivated by other significant events, like the [FKF Premier League's thrilling title race](https://zandani.co.ke/article/fkf-premier-league-match-week-21-six-lessons) which offers its own share of dramatic contests.
 
 What Lies Ahead for Shakib? With the April 11 clash fast approaching, Shakib is evidently determined to demonstrate resilience and prove that his prior defeat does not define his journey. The boxing world and his fans will be watching closely to see if he can stage a triumphant comeback against Barista Timo, or if the ring will once again deliver an unexpected drama. 
+
 
 

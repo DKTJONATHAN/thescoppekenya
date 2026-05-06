@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["president-ruto-spending", "state-house-expenditure", "knh-funding-shortage", "school-funding-crisis", "government-spending-backlash"]
 canonical: "https://zandani.co.ke/article/kenyans-criticize-president-ruto-for-lavish-state-house-spending-whi"
 date: "2026-04-29T17:49:05Z"
+focusKeyword: "Kenyans Criticize President Ruto for Lavish State House Spen"
+dateModified: "2026-04-29T17:49:05Z"
 ---
 Kenyans are criticizing President William Ruto's administration in 2026 for perceived opulent spending on political events at State House and across the country. This extravagance is contrasted with severe underfunding in critical public services like cancer treatment and education.
 
@@ -25,3 +27,4 @@ Amidst this perceived financial indulgence, a critical health crisis is unfoldin
 The nation's public education system, particularly junior secondary schools operating under the Competency-Based Education (CBE) system, is grappling with severe funding challenges. The government's capitation for free day secondary education has seen a significant reduction for the 2026 academic year, decreasing from Ksh 22,244 to Ksh 12,870 per student, a cut of nearly 43 percent. This reduction now requires parents of day school students to pay an estimated Ksh 9,374 annually in school fees. Despite the education sector receiving the largest share of the 2025/2026 national budget, amounting to Ksh 702.7 billion, concerns persist regarding the actual disbursement and its impact on school resources. Over 1.1 million secondary school students are reportedly affected by these capitation shortfalls. Junior secondary learners, for instance, received Ksh 4,193.07 each in capitation for Term One of the 2026 academic year. While the government has released capitation funds for Term 1 and directed the release of Ksh 23 billion for Term 2, the reduced per-student allocation places a significant financial burden on parents and contributes to institutions struggling to provide essential facilities such as laboratories, ICT labs, and adequate sports amenities.
 
 The prevailing sentiment among Kenyans is a strong demand for the President to re-evaluate spending priorities, shifting focus from political events to the critical public services that directly impact citizens' well-being.
+

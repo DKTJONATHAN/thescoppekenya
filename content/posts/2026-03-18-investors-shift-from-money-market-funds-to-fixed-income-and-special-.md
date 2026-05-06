@@ -9,8 +9,9 @@ category: "News"
 tags: ["money-market-funds", "fixed-income-funds", "capital-markets-authority", "special-funds", "collective-investment-schemes"]
 canonical: "https://zandani.co.ke/article/investors-shift-from-money-market-funds-to-fixed-income-and-special-"
 date: "2026-03-18T09:09:36Z"
+focusKeyword: "Investors shift from money market funds to fixed income and"
+dateModified: "2026-03-18T09:09:36Z"
 ---
-
 Investors are increasingly shifting from Money Market Funds (MMFs) to Fixed Income Funds (FIFs) and Special Funds, as revealed by the Capital Markets Authority's (CMA) Q4 2025 Collective Investment Schemes report. This trend reflects a pursuit of higher returns within the dynamic financial landscape of 2026.
 
 Evolving Investment Preferences The CMA's report for October to December 2025 indicates a notable reduction in the dominance of MMFs. While MMFs remain the most widely used investment option, their market share has steadily declined from 90 percent in December 2021 to 56 percent in December 2025. This significant shift over four years is primarily driven by investors seeking greater returns, which FIFs and Special Funds typically offer.
@@ -22,5 +23,6 @@ Leading Special Funds Mansa-X has emerged as the top-performing special fund, ac
 Enduring Appeal of Money Market Funds Despite the rising competition and the shift towards higher-return options, the CMA anticipates MMFs will continue to serve as a crucial entry point for many initiating their investment journey. Their simplicity, accessibility, and relatively low risk profile make them an attractive starting point for new investors. MMFs prioritize low-risk, stable returns, and easy access to cash. Most MMFs and special funds heavily invest in government securities like Treasury bills and bonds, which consistently provide reliable income streams.
 
 Major Players in the Money Market Fund Sector Current CMA data identifies Sanlam MMF as the market leader, managing Ksh114.16 billion in assets, which represents 27.1 percent of the market. CIC MMF follows, holding Ksh78.93 billion, accounting for 18.7 percent. Other significant players include ABSA Shilling MMF with Ksh26.18 billion, Old Mutual MMF at Ksh24.28 billion, and Co-op MMF with Ksh21.61 billion. ICEA Lion, KCB, Ziidi, Britam, and Etica Money Market Funds also rank among the top ten, each overseeing substantial investor funds. 
+
 
 

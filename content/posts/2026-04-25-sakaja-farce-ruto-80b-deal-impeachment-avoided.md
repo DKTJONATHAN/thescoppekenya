@@ -9,8 +9,9 @@ category: "Opinions"
 tags: ["opinions", "sakaja", "impeachment", "nairobi-mcas-ouster-plot-sakaja", "ruto-sakaja-80b-deal-legality", "sakaja-ruto-nairobi-deal-details", "22-grounds", "high-court-ruling-ruto-sakaja", "kenya-politics", "city-hall-chaos"]
 canonical: "https://zandani.co.ke/article/sakaja-farce-ruto-80b-deal-impeachment-avoided"
 date: "2026-04-25T14:36:52Z"
+focusKeyword: "Sakajas Farce Rutos 80B Deal Another Impeachment Avoided"
+dateModified: "2026-04-25T14:36:52Z"
 ---
-
 Johnson Sakaja, Governor of Nairobi, remains a political puppet, constantly dancing to tunes not his own. His tenure, a predictable disaster from the start, is now punctuated by yet another pathetic impeachment saga. This man’s political life is perpetually on the brink, rescued repeatedly by forces far more cunning than himself. It is a spectacle of incompetence, shielded by executive overreach and the spineless posturing of Nairobi's elected stooges.
 
 ## Sakaja's 80 Billion Shame: The `sakaja ruto nairobi deal details` and Its Real Cost
@@ -34,3 +35,4 @@ The `ruto sakaja 80b deal legality` has been rightfully questioned. Some critics
 The final nail in the coffin of any genuine accountability came with the High Court's decision around April 21-22, 2026, to decline suspending the implementation of the KSh 80 billion deal. This ruling effectively greenlights an arrangement that many see as a bypass of proper county governance, cementing the national government's grip on Nairobi. It legitimizes a deal born of political necessity rather than transparent due process. With such a powerful judicial endorsement, any `speaker avoids sakaja impeachment motion` becomes not just likely, but inevitable. The County Assembly Speaker, already operating under immense political pressure, will find every procedural loophole to delay, obstruct, or simply ignore the motion. How can an impeachment proceed when the very foundation of the governor's controversial salvation has been blessed by the courts, and key MCA leaders, like Imwatok, now urge a focus on "implementing the cooperation agreement" rather than "political battles"? The original report by Zandani.co.ke regarding the `nairobi mcas ouster plot sakaja` was merely a fleeting moment of faux defiance in a landscape dominated by executive power plays.
 
 Nairobi deserves better than a governor who clings to power through presidential lifelines and a county assembly that barks only to retreat. Sakaja has proven himself incapable. The MCAs are a disgrace, flip-flopping with the political wind. The High Court, by validating this opaque deal, has only exacerbated the problem. Nairobi's governance is a shambles, demanding not another ill-conceived deal or a theatrical impeachment plot, but a complete overhaul. Sack the lot of them and start anew, for the capital is drowning in a cesspool of political mediocrity.
+

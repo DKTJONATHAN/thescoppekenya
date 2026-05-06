@@ -5,6 +5,8 @@ author: "Mutheu Ann"
 image: "https://i.ibb.co/DP49KcT9/2343277dfbc6.jpg"
 category: "Entertainment"
 date: "2026-04-26T08:38:38Z"
+focusKeyword: "Vanna White compares Wheel of Fortune hosts Pat Sajak and Ry"
+dateModified: "2026-04-26T08:38:38Z"
 ---
 ## Vanna White Weighs In on Wheel of Fortune's Iconic Hosts
 
@@ -21,3 +23,4 @@ Beyond their professional camaraderie, White shares a personal touch she extends
 ### Life Beyond the Letters
 
 Vanna White's long tenure on *Wheel of Fortune* has afforded her an enviable work-life balance, thanks to the show's filming schedule of just a few days per month. This routine, established over her 40-plus years with the program, allowed her to be present for her children, from school drop-offs to after-school activities. With her children now grown, White's focus has shifted to another passion: golf. She relishes playing golf during her time away from filming, embracing a new hobby. White remains optimistic about *Wheel of Fortune*'s future, assuring fans that the show continuously strives for freshness with new puzzles, jokes, contestants, and her own parade of over 8,000 distinct dresses worn throughout the series.
+

@@ -12,6 +12,7 @@ date: "2026-05-03T23:04:51Z"
 authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-05-03T23:04:51Z"
 schema: "NewsArticle"
+focusKeyword: "President Ruto Calms South Rift Dissatisfaction Over Stalled"
 ---
 President William Ruto recently toured his South Rift political stronghold, Kericho and Bomet counties, addressing widespread local discontent. He acknowledged concerns over stalled projects and slow progress since his inauguration, appealing for patience and pledging prioritization of development and appointments in his second term.
 
@@ -32,3 +33,4 @@ The perceived lack of progress has fostered a cynical view of the community's en
 President Ruto's assurance that development will be prioritized in a hypothetical second term has done little to soothe jaded nerves across the region. For many, this sounds like a familiar plea for continued loyalty without immediate, tangible returns. A scathing commentary questions why the President would "beg for mercy" and promise future rewards when the present is marked by stalled projects and unmet expectations. As national conversations unfold, the people of the South Rift are left questioning when their share of national progress will materialize, seeking tangible action beyond mere promises.
 
 From Kericho to Bomet, a clear message resonates: for the Kalenjin community, patience is wearing thin, and the "maendeleo" (development) promised for tomorrow is urgently expected today.
+

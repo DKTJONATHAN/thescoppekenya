@@ -9,8 +9,9 @@ category: "News"
 tags: ["britam", "nairobi-flooding", "motor-insurance-flood-coverage", "comprehensive-motor-insurance", "submerged-vehicles"]
 canonical: "https://zandani.co.ke/article/britam-explains-motor-insurance-coverage-for-submerged-vehicles"
 date: "2026-03-17T09:09:59Z"
+focusKeyword: "Britam explains motor insurance coverage for submerged vehic"
+dateModified: "2026-03-17T09:09:59Z"
 ---
-
 Following the severe flooding in Nairobi and other regions on March 6, 2026, Britam has clarified its motor insurance coverage for submerged vehicles. The insurer confirms that comprehensive motor insurance policies typically cover flood damage, addressing a critical concern for vehicle owners affected by the recent heavy rainfall.
 
 Motor Insurance and Flood Damage Explained Understanding motor insurance coverage, particularly for unforeseen events like floods, is crucial for vehicle owners. The Insurance (Motor Vehicles Third Party Risks) Act mandates a minimum third-party insurance, which covers damage to other road users but not to the insured's own vehicle.
@@ -24,5 +25,6 @@ Immediate Actions and Claims Process Britam advises motorists to prioritize safe
 Claim Approval and Pitfalls Comprehensive cover does not guarantee an automatic payout. Claims are generally approved if the policy was active, premiums fully paid, damage falls within insured perils, and the vehicle's value was adequately declared. Common mistakes leading to partial or rejected claims include delayed reporting, failing to document losses before intervention, and attempting repairs before an insurer's loss assessor inspects the vehicle. Policyholders must provide accurate and complete information throughout the claims process to avoid delays.
 
 Beyond Motor: Home and Dedicated Flood Insurance While vehicles are a focus, damage to homes from flooding has also been significant. However, only a small percentage of homeowners hold home insurance. Britam's Homeowners Insurance, or Domestic Package, covers the home's structure against flood damage under a standard "storm, tempest and flood" clause, requiring no separate flood cover. This policy extends to theft, third-party liabilities, and employee injuries. Landlords can opt for Landlord Insurance, which covers building damage and potential loss of rental income if a property becomes uninhabitable due to flooding. Britam also offers a dedicated standalone Flood Insurance product for flood-prone areas. This product operates on objective triggers: a payout is made automatically when rainfall in the covered area exceeds 210mm, or when the Tana River water level at gauge 4G01 rises above four meters. This eliminates the need to prove personal loss, with a claim paid if trigger conditions are met. The policy costs Ksh7,000 and carries a maximum payout of Ksh50,000, providing a practical financial cushion. Britam has simplified access by enabling complete sign-up through WhatsApp. To sign up, individuals save the number 0705 100 100, send "Hi," select "Invest with Britam," key in their national ID number, and follow subsequent prompts. 
+
 
 

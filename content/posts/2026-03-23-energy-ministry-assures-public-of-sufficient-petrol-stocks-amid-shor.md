@@ -9,8 +9,9 @@ category: "News"
 tags: ["petrol-stocks-assurance", "mohamed-liban", "ministry-of-energy-and-petroleum", "petroleum-industry"]
 canonical: "https://zandani.co.ke/article/energy-ministry-assures-public-of-sufficient-petrol-stocks-amid-shor"
 date: "2026-03-23T07:40:49Z"
+focusKeyword: "Energy Ministry Assures Public of Sufficient Petrol Stocks A"
+dateModified: "2026-03-23T07:40:49Z"
 ---
-
 The Ministry of Energy and Petroleum affirmed today, Monday, March 23, 2026, that the nation maintains sufficient petrol reserves, countering recent reports of a widespread fuel crisis. This assurance comes as some areas have experienced shortages attributed to market dynamics.
 
 Government Addresses Fuel Supply Stability State Department for Petroleum Principal Secretary Mohamed Liban confirmed in a statement to Belgut MP Nelson Koech during a live interview on Monday, March 23, that the government possesses adequate petrol reserves to sustain the country for several days. This declaration aims to mitigate ongoing public concerns regarding fuel availability.
@@ -22,5 +23,6 @@ Regulatory Intervention and New Shipments Amidst rising concerns and a surge in 
 Global Geopolitical Impact on Energy Security The ongoing conflict involving the United States, Israel, and Iran has amplified concerns regarding global energy security. Tensions and attacks in the Middle East continue to threaten vital oil and gas production facilities and shipping routes. Iran's partial closure of the Strait of Hormuz, a crucial maritime passage for over 20 percent of global crude oil and liquefied natural gas, underscores the severity of the situation. U.S. President Donald Trump, in a statement on Saturday, threatened to attack Iran's power plants if the Strait of Hormuz is not fully reopened by Monday evening. In response, Iran vowed to completely close the passage and launch retaliatory attacks on key energy infrastructure in Israel should the U.S. proceed with attacks on its power plants.
 
 Local Economic Vulnerabilities The country is highly susceptible to global economic shocks, particularly those originating in the Middle East, given that nearly all its refined petroleum products are imported. The economic reverberations of global events, such as the current oil market volatility, underscore the necessity for robust financial literacy initiatives. This mirrors efforts seen with the launch of the Wall Street Mtaani financial show by Wall Street Africa Group, aimed at enhancing financial understanding. In its latest review, covering March 15 to April 14, EPRA maintained fuel prices. This stability was largely attributed to most shipments being February-priced cargoes, indicating that the immediate impact of the ongoing Middle East situation had not yet influenced current local fuel prices. 
+
 
 

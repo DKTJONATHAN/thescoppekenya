@@ -9,8 +9,9 @@ category: "News"
 tags: ["university-chancellor-appointments", "paul-russo", "rita-kavashe", "kibabii-university", "higher-education-leadership"]
 canonical: "https://zandani.co.ke/article/president-ruto-appoints-paul-russo-rita-kavashe-and-kevit-desai-as-u"
 date: "2026-04-03T13:39:51Z"
+focusKeyword: "President Ruto appoints Paul Russo Rita Kavashe and Kevit De"
+dateModified: "2026-04-03T13:39:51Z"
 ---
-
 President William Ruto has appointed Paul Russo, Rita Kavashe, and Dr. Kevit Desai as chancellors to Kibabii, Pwani, and Kabianga universities, respectively, for five-year terms. These appointments, announced via gazette notice on Thursday, April 2, 2026, mark a significant restructuring across public universities and state boards as part of ongoing government changes.
 
 Executive Appointments Solidify Public Sector Leadership
@@ -22,5 +23,6 @@ Ministerial Level Directives Cabinet Secretaries have also initiated various app
 Strategic Shifts Across Key Sectors The mining sector saw CS Hassan Joho appoint Lucy Mirigo Micheni to the Mineral Rights Board. Education CS Julius Ogamba appointed Njenga Benjamin Kahura as Non-Executive Chairperson of the Kabete National Polytechnic Council, reappointing Honey Abdi Mohamud to the same council. Cornelius Kibet Some was also appointed to the Kipsoen National Polytechnic Council for three years. Trade CS Lee Kinyanjui reappointed Anthony Wainaina to the Special Economic Zones Authority board. The Lake Basin Development Authority (LBDA) also experienced reappointments, including Teresa Bitutu Oroo, Willis Omondi Orowe, and Hellen Makone, all for three-year terms. In healthcare, Dr. David Kipchirchir Rotich was appointed to the Jaramogi Oginga Odinga Teaching and Referral Hospital board, while Thomas Kipkosgei Cheruiyot was re-appointed to the Kenyatta National Hospital (KNH) board. These changes occur amidst broader governmental efforts to streamline operations, even as the Registrar of Companies announces the imminent closure of 117 companies, sparking national economic jitters.
 
 Judiciary Bolsters Anti-Corruption Efforts Chief Justice Martha Koome has reinforced the judiciary's capacity to address corruption and economic crimes, appointing Elias Ngugi Mwenda and Lily Monica Nafula to preside over such cases. 
+
 
 

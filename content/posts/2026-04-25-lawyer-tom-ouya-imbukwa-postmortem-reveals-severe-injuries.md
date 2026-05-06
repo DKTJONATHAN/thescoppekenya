@@ -10,6 +10,8 @@ category: "News"
 tags: []
 canonical: "https://zandani.co.ke/article/lawyer-tom-ouya-imbukwa-postmortem-reveals-severe-injuries"
 date: "2026-04-25T10:05:24Z"
+focusKeyword: "Lawyer Tom Ouya Imbukwa Postmortem Reveals Severe Injuries"
+dateModified: "2026-04-25T10:05:24Z"
 ---
 The family of slain Nairobi advocate Tom Ouya Imbukwa has revealed preliminary postmortem findings, indicating he suffered extensive and severe injuries before his death. Speaking at the Kenyatta National Hospital farewell home on Friday, family lawyer Njanja Maina confirmed the examination showed significant trauma, with the exact cause pending forensic analysis.
 
@@ -28,3 +30,4 @@ The killing has provoked widespread condemnation within the legal fraternity. La
 ### Renewed Concerns for Lawyer Safety
 
 This incident has reignited concerns regarding the safety of legal practitioners. It occurs several months after the fatal shooting of Nairobi lawyer Mathew Kyalo Mbobu, who died from multiple gunshot wounds in what was believed to be a targeted attack in September last year. The legal community continues to advocate for enhanced security measures and swift justice for its members, ensuring that such acts do not deter those who uphold the rule of law. These calls for protection resonate across various sectors, even as national discussions touch upon complex international matters such as when [Mudavadi says Kenyans join Russian military via Middle East](https://zandani.co.ke/article/mudavadi-says-kenyans-join-russian-military-via-middle-east).
+

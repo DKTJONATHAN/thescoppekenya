@@ -10,6 +10,8 @@ category: "News"
 tags: []
 canonical: "https://zandani.co.ke/article/ruto-oburu-form-broad-based-committee-after-high-level-state-house-m"
 date: "2026-04-23T11:27:13Z"
+focusKeyword: "Ruto Oburu Form Broad-Based Committee After High-Level State"
+dateModified: "2026-04-23T11:27:13Z"
 ---
 President William Ruto and Oburu Odinga have established a Broad-Based Management Committee to align government and legislative priorities. The decision followed a consultative State House meeting today involving leadership from the United Democratic Alliance and the Orange Democratic Movement parties.
 
@@ -27,3 +29,4 @@ While national politics takes center stage, local humanitarian issues remain rel
 
 ### Unity and National Vision
 Ruto and Oburu reaffirmed their dedication to constructive dialogue and a unified approach to governance. The committee serves as a bridge between the two major political entities, ensuring that the legislative house supports the executive broad-based objectives. By formalizing this cooperation, the leadership intends to foster a political atmosphere focused on development and national stability rather than partisan competition.
+

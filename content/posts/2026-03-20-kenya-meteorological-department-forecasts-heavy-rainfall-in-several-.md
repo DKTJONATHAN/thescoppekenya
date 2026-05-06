@@ -9,8 +9,9 @@ category: "News"
 tags: ["heavy-rainfall-forecast", "kenya-meteorological-department", "lake-victoria-basin", "rift-valley-region", "meteorology"]
 canonical: "https://zandani.co.ke/article/kenya-meteorological-department-forecasts-heavy-rainfall-in-several-"
 date: "2026-03-20T11:47:15Z"
+focusKeyword: "Kenya Meteorological Department forecasts heavy rainfall in"
+dateModified: "2026-03-20T11:47:15Z"
 ---
-
 The Kenya Meteorological Department has issued a warning for significant rainfall across multiple regions this weekend, commencing Friday, March 20, and extending through Tuesday, March 24, 2026. Affected areas include Central, Lake Victoria Basin, Western, Rift Valley, Southeastern lowlands, the Coast, and Northern parts of the country.
 
 Regional Weather Outlook
@@ -22,5 +23,6 @@ Central Kenya's Afternoon Deluge Nyandarua, Laikipia, Nyeri, Kirinyaga, Murang'a
 Southeastern and Coastal Alerts Highland East counties including Kitui, Makueni, Machakos, Kajiado, and Taita Taveta, alongside inland sections of Tana River County, are also forecasted to receive heavy rainfall. Along the Coast, residents in Mombasa, Kilifi, Lamu, Kwale, and the Tana Delta are advised to prepare for substantial downpours over the next five days.
 
 Nairobi and Kiambu Specifics Within the metropolitan area of Nairobi, moderate-to-heavy rains are anticipated to spread across Dagoretti, Kibra, parts of Embakasi, and Langata. In Kiambu, precipitation will affect Gatundu North, Limuru, Kikuyu, and Kabete, with the downpour projected to continue through the end of the weekend. The latest advisory coincides with ongoing preparedness efforts by various county governments, working in conjunction with the national government, to provide support to those who may be impacted. 
+
 
 

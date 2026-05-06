@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["telecel-ghana-music-awards", "charterhouse-ghana", "palms-convention-center", "tgma", "ghana-music-awards-venue"]
 canonical: "https://zandani.co.ke/article/charterhouse-moves-telecel-ghana-music-awards-to-palms-convention-ce"
 date: "2026-04-29T16:11:01Z"
+focusKeyword: "Charterhouse moves Telecel Ghana Music Awards to Palms Conve"
+dateModified: "2026-04-29T16:11:01Z"
 ---
 Charterhouse Ghana has relocated the 2026 Telecel Ghana Music Awards from the Grand Arena to the Palms Convention Center. The shift comes as organisers faced unresolved arrangements at the Grand Arena, necessitating a swift change of plans for the anticipated annual ceremony. The new venue presents both solutions and challenges for the prestigious event.
 
@@ -23,3 +25,4 @@ The Palms Convention Center, situated within the La Palm Royal Beach Hotel in Ac
 ### Behind the Grand Arena's Unavailability
 
 Klah maintained confidentiality regarding the specific details of the Grand Arena's unavailability, indicating that the venue's owners had their own plans for the space. He underscored that having a contingency plan is standard practice in major event organisation, ensuring that unforeseen circumstances do not derail the execution of high-profile ceremonies like the Telecel Ghana Music Awards. The move highlights the dynamic challenges faced by event organisers across the continent in securing appropriate venues for large-scale productions.
+

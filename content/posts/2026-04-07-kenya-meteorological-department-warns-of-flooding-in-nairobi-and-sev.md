@@ -9,8 +9,9 @@ category: "News"
 tags: ["kenya-meteorological-department", "nairobi-flood-alert", "heavy-rainfall-warning", "biometeorological-weekly-bulletin", "weather-forecasting"]
 canonical: "https://zandani.co.ke/article/kenya-meteorological-department-warns-of-flooding-in-nairobi-and-sev"
 date: "2026-04-07T05:57:38Z"
+focusKeyword: "Kenya Meteorological Department warns of flooding in Nairobi"
+dateModified: "2026-04-07T05:57:38Z"
 ---
-
 The Kenya Meteorological Department has issued a flood alert for Nairobi, Murang'a, Kisii, and several other counties, forecasting heavy rains from April 7 to 13, 2026. This warning, detailed in the Biometeorological Weekly Bulletin, highlights a moderate flood risk across multiple regions of the country.
 
 Elevated Flood Risk Across Key Regions
@@ -22,5 +23,6 @@ Public Health Officials Sound Alarm on Disease Outbreaks The expected heavy rain
 Cold Snap Poses Health Threats in Highland Areas Compounding the dangers, parts of Nyandarua, Nyeri, and Meru counties are forecast to record minimum temperatures of 10 degrees Celsius or below. This range is well outside normal for this time of year. Nyahururu in Nyandarua County faces the sharpest cold-weather health threat, with the bulletin warning of moderate risks of pneumonia, flu, bronchitis, influenza, and asthma for residents in the coming days. Children, the elderly, and those living with chronic illnesses are identified as most vulnerable to cardiovascular complications from cold snaps.
 
 Urgent Precautions Issued for Public Safety Kenya Met is urging all residents to drain stagnant water, sleep under mosquito nets, and avoid flooded and landslide-prone zones as the country enters what forecasters describe as a high-risk weather week. Residents in colder highland areas are further advised to dress warmly and stay updated with weather information from the department, as dangerous weather conditions are expected to persist throughout the week. 
+
 
 

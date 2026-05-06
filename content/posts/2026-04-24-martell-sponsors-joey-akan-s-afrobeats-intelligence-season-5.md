@@ -10,6 +10,8 @@ category: "Entertainment"
 tags: []
 canonical: "https://zandani.co.ke/article/martell-sponsors-joey-akan-s-afrobeats-intelligence-season-5"
 date: "2026-04-24T21:26:04Z"
+focusKeyword: "Martell Sponsors Joey Akans Afrobeats Intelligence Season 5"
+dateModified: "2026-04-24T21:26:04Z"
 ---
 Luxury cognac brand Martell has deepened its commitment to African music by sponsoring Joey Akan's Afrobeats Intelligence Season 5. The critically acclaimed podcast, which launched its new season on February 27, 2026, continues to explore the genre's global impact with a star-studded lineup of guests weekly across major platforms.
 
@@ -24,3 +26,4 @@ Joey Akan has described Season 5 as an unprecedented exploration, promising bigg
 ### Martell's Enduring Investment in African Culture
 
 Founded in 1715, Martell's sponsorship aligns with its long-standing approach to genuinely investing in African culture, moving beyond mere surface presence. This collaboration with OkayAfrica, the platform for Afrobeats Intelligence, positions the brand alongside a show celebrated for cultivating one of the most credible and loyal audiences in African music media. Pernod Ricard Nigeria, the local affiliate of the global wines and spirits leader, manages Martell Cognac, which is part of a comprehensive portfolio of premium and luxury brands. Martell's legacy, guided by curiosity, courage, and the pursuit of excellence, celebrates those who dare to innovate. From the iconic Martell Cordon Bleu to the groundbreaking Martell Blue Swift, each creation embodies a commitment to rise above convention. For both OkayAfrica and Martell, this partnership signifies a shared purpose, connecting with an audience that discerns authentic investment from fleeting association.
+

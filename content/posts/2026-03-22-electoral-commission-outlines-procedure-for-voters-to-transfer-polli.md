@@ -9,8 +9,9 @@ category: "News"
 tags: ["iebc-voter-transfer", "2026-elections", "polling-station-updates", "continuous-voter-registration", "electoral-governance"]
 canonical: "https://zandani.co.ke/article/electoral-commission-outlines-procedure-for-voters-to-transfer-polli"
 date: "2026-03-22T20:46:35Z"
+focusKeyword: "Electoral commission outlines procedure for voters to transf"
+dateModified: "2026-03-22T20:46:35Z"
 ---
-
 The Independent Electoral and Boundaries Commission (IEBC) has clarified the protocol for voters wishing to transfer their polling stations in 2026. This free service accommodates citizens who have moved or wish to vote in a different constituency, ensuring their electoral participation aligns with their current residency or preferred location. The commission’s continuous voter registration, active since September 2025, facilitates these updates.
 
 Updating Voter Registration in 2026 The IEBC has been conducting Continuous Voter Registration (CVR) since September 2025, aiming to register over six million new voters, particularly young people, and allow registered individuals to update their details. This ongoing exercise addresses the dynamic movement of the population, influenced by various factors, including economic shifts and cost of living concerns. Reports indicate a potential fuel price increase ahead of the next EPRA review, a factor that can impact household budgets and influence relocation decisions [Ndindi Nyoro warns of potential fuel price increase ahead of EPRA review](https://zandani.co.ke/article/ndindi-nyoro-warns-of-potential-fuel-price-increase-ahead-of-epra-re). This provision for transfers is essential for many citizens.
@@ -22,5 +23,6 @@ Completing the Application for Transfer (Form C) At the IEBC office, applicants 
 Biometric Verification and Data Update Upon completion of Form C, the applicant undergoes biometric verification. This process confirms the voter’s identity using fingerprints and other personal data already stored within the IEBC system. Successful verification allows the request to be processed, and the voter’s details are subsequently updated in the register, officially effecting the transfer to the new voting location.
 
 Verifying Registration Status Online Before initiating a transfer, voters can confirm their current registration details by visiting the IEBC voter registration portal online and entering their ID information. Following the completion of the transfer process, voters are encouraged to re-visit the portal to confirm that the changes have been accurately reflected. 
+
 
 

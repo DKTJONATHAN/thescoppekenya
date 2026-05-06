@@ -9,8 +9,9 @@ category: "News"
 tags: ["division-of-revenue-bill-2026", "senate-finance-committee", "county-government-funding", "public-finance-management", "revenue-allocation-framework"]
 canonical: "https://zandani.co.ke/article/senate-invites-public-views-on-the-division-of-revenue-bill"
 date: "2026-03-23T11:56:40Z"
+focusKeyword: "Senate invites public views on the Division of Revenue Bill"
+dateModified: "2026-03-23T11:56:40Z"
 ---
-
 The search results confirm that today is Monday, March 23, 2026. This aligns with the prompt's context. The Senate Standing Committee on Finance and Budget has invited the public to submit views on the Division of Revenue Bill, 2026. This crucial legislation, released via public notice on Monday, March 23, will dictate the financial allocation between national and county governments for the 2026/27 financial year.
 
 Revenue Allocation at a Crossroads
@@ -20,5 +21,6 @@ Proposed 2026/27 Budget Framework The government has proposed one of the country
 Governors Challenge Allocation The proposed allocation to the counties has received pushback from the Council of Governors. They have rejected the Ksh 420 billion figure, arguing that the amount would be insufficient to meet the financial needs required for the effective operation of devolved units and the delivery of essential services. The governors have instead demanded that the National Treasury review the proposed amount and consider a higher share.
 
 Public Participation Details The Division of Revenue Bill was read in the Senate on March 18, 2026, and subsequently committed to the Finance and Budget Committee for consideration. In accordance with standing order 145(5) of the Senate Standing Orders, the Committee is mandated to facilitate public participation and incorporate public views and recommendations into its report to the Senate. Written representations are to be submitted to the Clerk of the Senate. These can be hand-delivered to the Office of the Clerk in the Main Parliament Buildings in Nairobi or sent via email to clerk.senate@parliament.go.ke. The deadline for receiving these memoranda is Thursday, March 26, 2026, at 4:00 p.m. 
+
 
 

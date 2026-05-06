@@ -9,6 +9,8 @@ category: "News"
 tags: ["narok-mai-mahiu-road-accident", "duka-moja-collision", "toyota-voxy-crash", "ntulele-road-accident", "road-traffic-accidents"]
 canonical: "https://zandani.co.ke/article/trailer-and-toyota-voxy-collision-along-narok-mai-mahiu-road-leaves-"
 date: "2026-04-25T17:02:39Z"
+focusKeyword: "Trailer and Toyota Voxy collision along Narok-Mai Mahiu road"
+dateModified: "2026-04-25T17:02:39Z"
 ---
 Seven individuals died instantly on Saturday, April 25, 2026, after a Toyota Voxy collided with a trailer that reportedly lost its brakes along the Narok-Mai Mahiu road at Duka Moja. The tragic incident, approximately 30 kilometres from Narok town, resulted in all occupants of the Voxy perishing on site.
 
@@ -23,3 +25,4 @@ The Narok-Mai Mahiu road has a history of severe accidents. In December 2024, ei
 ### NTSA Issues Warning Ahead of School Reopening
 
 The National Transport and Safety Authority (NTSA) has reported at least 1,100 fatalities on Kenyan roads between January and March this year, 2026. In response to the escalating road fatalities, the NTSA has announced an impending crackdown targeting non-compliant drivers and motorists. This enforcement drive is scheduled to commence as schools reopen from Monday, April 27, 2026. The NTSA's efforts to enhance road safety come amidst ongoing discussions regarding traffic enforcement measures, following the halting of instant fines in a significant 2024 update.
+

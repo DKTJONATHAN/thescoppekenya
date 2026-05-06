@@ -9,8 +9,9 @@ category: "News"
 tags: ["kenya-pipeline-company", "fuel-shortage", "nairobi", "petroleum-industry", "fuel-reserves"]
 canonical: "https://zandani.co.ke/article/kenya-pipeline-company-confirms-sufficient-fuel-stocks-following-rep"
 date: "2026-04-08T17:34:05Z"
+focusKeyword: "Kenya Pipeline Company confirms sufficient fuel stocks follo"
+dateModified: "2026-04-08T17:34:05Z"
 ---
-
 Kenya Pipeline Company (KPC) confirmed sufficient national fuel stocks on April 8, 2026, assuring the public that its terminals and depots hold ample supply to meet current and future demand. This assurance arrives amidst widespread reports of dry pumps and extended queues across at least 13 counties, including the capital, Nairobi.
 
 KPC Affirms Ample National Fuel Reserves KPC stressed that all its terminals and depots maintain sufficient fuel stocks, dismissing concerns over reported shortages at petrol stations. The company further stated that its oil reserves meet all national and international quality standards prescribed by relevant certification bodies. Acting Managing Director Pius Mwendwa reiterated this stance, confirming that "The fuel stocks are sufficient to meet current and projected national demand, with continuous product movement and replenishment across all our terminals and depots."
@@ -20,5 +21,6 @@ Comprehensive Stock Levels Detailed As of April 8, 2026, KPC released official i
 Strategic Pipeline Network and Capacity KPC operates a vast 1,342-kilometre pipeline network connecting the Port of Mombasa to inland depots in Nairobi, Nakuru, Eldoret, and Kisumu. This network serves as the country's primary fuel distribution artery from the coast to the interior. Supporting this infrastructure is a combined storage capacity exceeding one billion litres, designed to strategically cushion the nation against any sudden disruptions in petroleum supply.
 
 Ground Reality Contradicts Official Assurance Despite KPC's affirmations, the ongoing fuel shortage has impacted at least 13 counties, including the North Rift, Western, Central, and Coast regions, as well as Nairobi. Eldoret, particularly, has seen over 20 stations closed, while motorists in areas like Machakos, Embu, Isiolo, Nanyuki, and Mombasa report extensive queues and completely shut stations amidst dwindling supplies. This situation, where official data diverges from public experience, highlights logistical complexities and communication challenges that can often contribute to national unease, a dynamic Za Ndani has explored in various contexts, including in discussions surrounding broader societal issues such as 'Climate Denial, Couch Chaos: Kenya's Own Goal'. 
+
 
 

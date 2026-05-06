@@ -10,6 +10,8 @@ category: "Entertainment"
 tags: []
 canonical: "https://zandani.co.ke/article/bnxn-fires-back-at-fat-joe-over-claims-he-forced-the-afrobeats"
 date: "2026-04-23T17:55:08Z"
+focusKeyword: "BNXN fires back at Fat Joe over claims he forced the Afrobea"
+dateModified: "2026-04-23T17:55:08Z"
 ---
 Nigerian artist BNXN has publicly confronted American rapper Fat Joe following claims that the veteran artist forced the singer's 2022 name change. The exchange occurred after Fat Joe spoke dismissively about African musicians during a recent podcast appearance with Buju Banton.
 
@@ -28,3 +30,4 @@ While the music world focuses on these verbal sparring matches, other global ent
 The Nigerian singer, born Daniel Benson, officially transitioned from Buju to BNXN in 2022. While he acknowledged copyright issues regarding the name shared with Buju Banton, the decision was a strategic branding move unrelated to Fat Joe’s previous commentary on The Wendy Williams Show. The controversy deepened when Fat Joe claimed on the podcast that Afrobeats originated in Jamaica. This assertion has been met with significant pushback from historians who maintain that the genre is a distinct Nigerian evolution of local sounds and global influences.
 
 Buju Banton also faced renewed scrutiny for endorsing these claims. This follows his 2024 comments where he criticized Afrobeats for lacking substance compared to the original Afrobeat genre pioneered by Fela Kuti. The ongoing friction highlights a broader tension between established Caribbean icons and the new generation of African superstars who continue to redefine the global charts in 2026.
+

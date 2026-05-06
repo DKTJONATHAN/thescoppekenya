@@ -9,6 +9,7 @@ description: "Police launch investigation into the Mungai Gathongo murder follow
 excerpt: "Police launch investigation into the Mungai Gathongo murder following a domestic dispute in Ongata Rongai. The former Parliament chef died at KNH. Read the"
 tags: ["Kenya News", "Mungai Gathongo", "Parliament of Kenya", "Ongata Rongai", "Crime News"]
 focusKeyword: "Mungai Gathongo murder"
+dateModified: "2026-05-02T08:51:36Z"
 ---
 ## Investigations Underway in Mungai Gathongo Murder
 
@@ -29,3 +30,4 @@ Police have since arrested one suspect who remains in custody pending arraignmen
 ### Rising Concerns Over Domestic Violence
 
 The tragic Mungai Gathongo murder has reignited debate over the surging cases of domestic violence targeting both men and women in the country. Several similar cases have been reported in various parts of Kenya. According to a report by Amnesty Kenya, the country is experiencing a severe escalation in gender-based violence (GBV), with data indicating a 10 percent rise in reported cases targeting mostly women. Amnesty International noted that husbands account for 40.15 percent of femicide cases, making them the leading perpetrators.
+

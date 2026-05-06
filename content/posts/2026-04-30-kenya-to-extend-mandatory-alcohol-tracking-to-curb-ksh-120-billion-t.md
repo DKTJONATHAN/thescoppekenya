@@ -5,6 +5,8 @@ author: "Grace Mkamburi"
 image: "https://i.ibb.co/Mxvhy9b5/489467d5591d.jpg"
 category: "Business"
 date: "2026-04-30T11:21:27Z"
+focusKeyword: "Kenya to Extend Mandatory Alcohol Tracking to Curb KSh 120 B"
+dateModified: "2026-04-30T11:21:27Z"
 ---
 ## Curbing Illicit Alcohol to Recover KSh 120 Billion in Tax Revenue
 
@@ -21,3 +23,4 @@ Combating illicit alcohol trade faces significant hurdles, notably the absence o
 ### Consumer Behavior and Health Risks
 
 Consumer behavior in the illicit alcohol market is primarily driven by financial incentives, not ignorance of risks. An ABAK study reveals that 94% of consumers acknowledge the significantly lower price of illegal alcohol compared to regulated products. Concurrently, 61% of consumers associate illicit alcohol with severe health consequences, including blindness, organ failure, or death. This paradox underscores the powerful economic incentive that sustains illicit supply, which continues to expand as excise taxes rise and enforcement struggles to keep pace. The proposed extension of mandatory excise stamps is a critical step towards re-establishing market equilibrium and protecting both public health and government revenue.
+

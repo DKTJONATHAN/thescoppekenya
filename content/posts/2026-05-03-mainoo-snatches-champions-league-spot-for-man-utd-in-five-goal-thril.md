@@ -10,6 +10,7 @@ tags: ["kobbie-mainoo", "manchester-united", "liverpool-fc", "champions-league"]
 date: "2026-05-03T17:34:51Z"
 dateModified: "2026-05-03T17:34:51Z"
 schema: "NewsArticle"
+focusKeyword: "Mainoo Snatches Champions League Spot for Man Utd in Five-Go"
 ---
 **FOR ZA NDANI (ZANDANI.CO.KE)**
 

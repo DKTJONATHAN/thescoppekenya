@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["garissa-incident", "chief-abdatam", "headteacher-vundi", "car-bombing", "police-execution"]
 canonical: "https://zandani.co.ke/article/ghai-garissa-chief-abdatam-car-blown-headteacher-vundi-executed-at-p"
 date: "2026-04-26T12:36:44Z"
+focusKeyword: "Ghai Garissa Chief Abdatam Car Blown Headteacher Vundi Execu"
+dateModified: "2026-04-26T12:36:44Z"
 ---
 The Garissa region was plunged into fresh fear and sorrow in January 2026 following a brutal attack by suspected Al-Shabaab militants that claimed the lives of area chief Abdatam Hammud and primary school headteacher Steven Vundi Mousili. The chief was tragically shot dead and his vehicle incinerated by an improvised explosive device, while the headteacher was abducted and later executed at the local police station, sending shockwaves across the nation.
 
@@ -33,3 +35,4 @@ Indeed, the streets are saying: "Hii mambo ya Garissa inahitaji akili mingi, ama
 **Bibliography**
 1. [USA Today cuts ties with NFL reporter Crissy Froyd over social media comments](https://zandani.co.ke/article/usa-today-cuts-ties-with-nfl-reporter-crissy-froyd-over-social-media)
 2. [Council of Governors proposes KSh 534 billion share for counties to fund devolved functions](https://zandani.co.ke/article/council-of-governors-proposes-ksh-534-billion-share-for-counties-to-)
+

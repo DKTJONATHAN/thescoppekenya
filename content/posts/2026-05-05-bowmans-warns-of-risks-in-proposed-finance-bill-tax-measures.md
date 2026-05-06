@@ -10,8 +10,8 @@ tags: ["kenya news", "finance bill 2026", "bowmans", "kenya revenue authority", 
 date: "2026-05-05T10:46:50Z"
 dateModified: "2026-05-05T10:46:50Z"
 schema: "NewsArticle"
+focusKeyword: "Bowmans warns of risks in proposed Finance Bill tax measures"
 ---
-
 ## Understanding the Finance Bill 2026 and Your Wallet
 
 As Kenya debates the latest fiscal proposals, a major law firm has flagged serious concerns about the Finance Bill 2026. While the discussion sounds like a boardroom matter, these tax changes carry direct consequences for your daily spending and the cost of basic services.
@@ -37,3 +37,4 @@ This is not just about tax law. It is about how the cost of living is structured
 The focus now shifts to the public participation phase of the legislative process. Citizens should watch how the Kenya Revenue Authority and Treasury respond to these institutional critiques. Lawmakers will soon decide whether to push forward with these aggressive measures or refine them to protect consumer affordability. While some of these adjustments seem minor on paper, their cumulative effect on your monthly budget is substantial.
 
 When corporations face higher taxes, the consumer usually pays the final bill.
+

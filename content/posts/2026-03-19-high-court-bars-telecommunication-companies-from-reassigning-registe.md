@@ -9,8 +9,9 @@ category: "News"
 tags: ["mobile-number-reassignment", "justice-lawrence-mugambi", "data-protection-rights", "telecommunications-law", "high-court-ruling"]
 canonical: "https://zandani.co.ke/article/high-court-bars-telecommunication-companies-from-reassigning-registe"
 date: "2026-03-19T16:11:12Z"
+focusKeyword: "High Court bars telecommunication companies from reassigning"
+dateModified: "2026-03-19T16:11:12Z"
 ---
-
 The High Court, in a ruling by Justice Lawrence Mugambi on Thursday, March 19, 2026, has prohibited telecommunication companies from reassigning registered mobile phone numbers without the owner's explicit consent. The court declared these numbers constitute personal data, protected under the Constitution.
 
 Safeguarding Digital Identities in Kenya
@@ -24,5 +25,6 @@ Origins of the Landmark Petition The ruling originated from a petition filed in 
 Protections for Vulnerable Individuals The case also brought to light specific concerns affecting incarcerated individuals, who often lose access to their registered numbers during extended periods of non-use. This situation creates a vulnerability where their personal data could be exposed if their numbers are reassigned.
 
 Strict Conditions for Number Reassignment Justice Mugambi emphasized that any reassignment of mobile numbers must occur under stringent conditions designed to protect the privacy of the former owner. The court mandated that the previous owner's informed and verifiable consent must be secured prior to any reassignment. Additionally, reassignment is permissible only after a reasonable period following a public notice, which must be preceded by a documented verification process confirming that the original owner cannot be reached or has unequivocally relinquished rights to the number. Technical safeguards are also required to prevent unauthorized exposure or transfer of personal data linked to the previous owner when a number is reassigned or recycled. 
+
 
 

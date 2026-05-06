@@ -9,8 +9,9 @@ category: "News"
 tags: ["potifus-odipo", "ferdinand-omondi", "vurugu-boxing-match", "kasarani-indoor-arena", "professional-boxing"]
 canonical: "https://zandani.co.ke/article/boxer-potifus-odipo-earns-cash-prizes-and-vehicle-after-defeating-fe"
 date: "2026-04-05T09:02:00Z"
+focusKeyword: "Boxer Potifus Odipo earns cash prizes and vehicle after defe"
+dateModified: "2026-04-05T09:02:00Z"
 ---
-
 Potifus Odipo, known as “Majembe,” secured substantial cash prizes and a new vehicle following his victory against Ferdinand Omondi, “Mbavu Destroyer,” at the Vurugu boxing match held on Saturday, April 4, 2026. The 21-year-old’s triumph at Kasarani Indoor Arena marks a significant financial gain, thrilling fans nationwide.
 
 Majembe's Lucrative Victory
@@ -24,5 +25,6 @@ Non-Monetary Rewards and Brand Endorsements Beyond the monetary and vehicle rewa
 Prominent Political Support Bolsters Event The Vurugu boxing match, held at the Kasarani Indoor Arena, garnered widespread attention, significantly boosted by President Ruto's involvement. Other notable leaders also extended their support. ODM party leader Oburu Odinga contributed Ksh1 million, while Embakasi East MP Babu Owino purchased over 500 tickets for fans. Kasarani MP Ronald Karauri donated Ksh2 million. Former second lady Dorcas Gachagua provided Ksh 400,000, President Ruto's son George Ruto donated Ksh 500,000, and Oketch Salah contributed Ksh 200,000. It remains unclear whether these donations directly benefited the boxers or supported the event's logistical requirements.
 
 Omondi's Future Despite Defeat Despite his defeat, Ferdinand Omondi, “Mbavu Destroyer,” has also secured a promising future. He gained significant social media traction in the build-up to the April 4 fight, leading to several brand endorsements. Omondi is guaranteed to receive Ksh1 million, courtesy of President William Ruto. 
+
 
 

@@ -9,6 +9,8 @@ category: "News"
 tags: ["kitui-clashes", "tseikuru-security-operation", "douglas-kanja", "kamba-somali-conflict", "communal-violence"]
 canonical: "https://zandani.co.ke/article/police-deploy-security-team-to-kitui-after-seven-killed-in-community"
 date: "2026-04-26T10:08:46Z"
+focusKeyword: "Police deploy security team to Kitui after seven killed in c"
+dateModified: "2026-04-26T10:08:46Z"
 ---
 The National Police Service (NPS) dispatched a high-powered security team to Tseikuru, Kitui County, this Sunday, April 26, 2026, after seven people died in fresh attacks involving the Somali and Kamba communities. Inspector General Douglas Kanja confirmed the deployment, led by Deputy Inspector General Eliud Lagat, to the troubled area.
 
@@ -23,3 +25,4 @@ In a statement, Kanja strongly condemned the recent attacks, describing them as 
 ### Call for Peace and Full Investigation
 
 The police appealed for calmness and restraint from local residents, urging community leaders to actively promote peace and reconciliation. The statement underscored that criminal culpability would be pursued, and ultimate justice would be delivered for those affected by the clashes.
+

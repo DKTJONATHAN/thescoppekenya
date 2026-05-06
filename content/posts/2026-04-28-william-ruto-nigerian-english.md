@@ -11,6 +11,7 @@ category: "Entertainment"
 tags: ["Kenyan News", "William Ruto", "Nigeria", "Viral News", "African Culture"]
 canonical: "https://zandani.co.ke/article/william-ruto-nigerian-english"
 date: "2026-04-28T19:51:43Z"
+dateModified: "2026-04-28T19:51:43Z"
 ---
 President William Ruto has officially clarified his much-discussed remarks regarding Nigerian English, characterizing the viral comments as a private discussion that was widely misrepresented. The Head of State emphasized that his observations were intended as a celebration of Africa's rich linguistic diversity, aiming to soothe any perceived friction arising from the recent buzz surrounding William Ruto Nigeria interactions.
 
@@ -21,3 +22,4 @@ President William Ruto's recent clarification addresses the widespread conversat
 
 ### Unpacking the 'Celebration of Diversity'
 In his latest public statement, President William Ruto asserted that his previous comments were fundamentally a celebration of Africa's diverse linguistic landscape, not a critique. He expressed profound respect for the distinctiveness of Nigerian English and, by extension, the myriad ways in which African nations express themselves. This emphasis on unity and mutual appreciation comes as other high-profile news stories continue to capture national attention, from the surprising twists in sports, such as [Leeds Stun Man Utd in Historic Old Trafford Upset as 'Worst Ever' Red Card Sparks Fury](https://zandani.co.ke/article/leeds-stun-man-utd-in-historic-old-trafford-upst-as-worst-ever-red-), to celebrity and public figure updates, including news about player futures like [Manchester United rule out contract extension for Casemiro](https://zandani.co.ke/article/manchester-united-rule-out-contract-extension-for-casemiro). The President’s deliberate clarification seeks to shift the discourse from perceived friction to an affirmation of continental solidarity, reinforcing a spirit of collective African pride.
+

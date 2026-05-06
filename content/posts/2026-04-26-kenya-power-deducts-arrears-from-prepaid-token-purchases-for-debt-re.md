@@ -9,6 +9,8 @@ category: "News"
 tags: ["kenya-power-debt-recovery", "prepaid-token-deductions", "kplc-legacy-arrears", "electricity-utility-billing"]
 canonical: "https://zandani.co.ke/article/kenya-power-deducts-arrears-from-prepaid-token-purchases-for-debt-re"
 date: "2026-04-26T08:39:53Z"
+focusKeyword: "Kenya Power Deducts Arrears From Prepaid Token Purchases for"
+dateModified: "2026-04-26T08:39:53Z"
 ---
 Kenya Power has initiated the recovery of legacy debts in 2026 by directly deducting arrears from prepaid electricity token purchases. This mechanism, now affecting consumers nationwide, significantly reduces the electricity units received, prompting widespread concern among users about transparency and notification.
 
@@ -29,3 +31,4 @@ This clarification has sparked considerable online debate among consumers. Many 
 The Last Mile Connectivity Program (LMCP), initiated in 2015, is a significant government project aimed at achieving universal electricity access by 2030. It focuses on connecting households, businesses, and public institutions near existing transformers at subsidized rates, particularly targeting low-income, rural, and peri-urban areas. The program sought to provide electricity access at subsidized rates, allowing customers to be connected first and pay later in installments, a detail many consumers were reportedly unaware of at the time of connection. The Rural Electrification and Renewable Energy Corporation (REREC) primarily implements the project, which is funded by the government of Kenya with support from global partners, including the World Bank.
 
 According to many consumers, the current recovery mechanism appears to operate silently in the background, becoming noticeable only when unit allocations experience a significant reduction. This has prompted numerous transparency concerns. Such stealth operations highlight vulnerabilities in financial transactions, a topic often addressed in discussions concerning digital security within the booming mobile money sector [Kenya's Mobile Money Boom: A Cybersecurity Battlefield as Smartcomply Warns of Growing Threats](https://zandani.co.ke/article/kenya-mobile-money-boom-cybersecurity-battlefield-smartcomply-warns).
+

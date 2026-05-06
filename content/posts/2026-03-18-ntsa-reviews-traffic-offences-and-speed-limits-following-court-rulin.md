@@ -9,8 +9,9 @@ category: "News"
 tags: ["ntsa-court-ruling", "instant-traffic-fines", "speed-limit-review", "road-safety-regulations"]
 canonical: "https://zandani.co.ke/article/ntsa-reviews-traffic-offences-and-speed-limits-following-court-rulin"
 date: "2026-03-18T10:13:43Z"
+focusKeyword: "NTSA Reviews Traffic Offences and Speed Limits Following Cou"
+dateModified: "2026-03-18T10:13:43Z"
 ---
-
 The National Transport and Safety Authority (NTSA), alongside various government agencies, is actively reviewing speed limits and the system of instant traffic fines across the nation's major roads. This comprehensive overhaul follows a High Court ruling that temporarily suspended the recent rollout of the controversial fines, addressing numerous complaints from motorists.
 
 Review of Traffic Regulations Underway The NTSA's current initiatives stem from the temporary suspension of instant fines by the High Court, pending the hearing of a case filed by Shadrack Wambui and Sheria Mtaani. This development has prompted a deeper evaluation of the entire fine system. Transport Cabinet Secretary Davis Chirchir confirmed that the fines will now be categorized into two distinct systems. Major traffic infractions will be classified as major offences, while minor infractions will fall under minor offences.
@@ -24,5 +25,6 @@ Expired Speed Limits and Future Updates CS Chirchir acknowledged before Parliame
 NTSA Seeks Court Intervention Following the High Court's suspension of instant fines, the NTSA announced on Thursday last week its intention to request a temporary court order. This order would aim to maintain the status quo and allow the authority to continue enforcing the fines until a final ruling on the petition challenging them is issued next month.
 
 Key Offenses and Penalties The contentious fines, captured by the NTSA's systems, pertain to several key violations. These include speeding, lane violations, driving on pavements, and failure to wear seatbelts. Penalties for these offences range from Ksh500 to Ksh10,000, determined by the severity of the specific infraction. 
+
 
 

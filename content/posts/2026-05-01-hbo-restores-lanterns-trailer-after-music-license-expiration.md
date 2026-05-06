@@ -5,6 +5,8 @@ author: "Mutheu Ann"
 image: "https://i.ibb.co/5h6dJpTf/a70a55173883.jpg"
 category: "Entertainment"
 date: "2026-05-01T11:15:57Z"
+focusKeyword: "HBO restores Lanterns trailer after music license expiration"
+dateModified: "2026-05-01T11:15:57Z"
 ---
 ## Green Lanterns Trailer Drama Unveiled
 
@@ -25,3 +27,4 @@ Fans can also look forward to Nathan Fillion reprising his role as Guy Gardner, 
 ### Future Flights for the Corps
 
 The excitement doesn't stop with the series. Aaron Pierre's John Stewart is slated to appear in "Man of Tomorrow," Gunn's follow-up film to "Superman," arriving in 2027. This confirms a continued presence for the character and hints at the interconnected nature of the DCU's future projects.
+

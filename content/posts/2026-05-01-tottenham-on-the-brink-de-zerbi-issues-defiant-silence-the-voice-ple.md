@@ -7,6 +7,8 @@ image: "https://i.ibb.co/3mC8LvGq/e1156520d114.webp"
 category: "Sports"
 tags: ["tottenham-hotspur", "roberto-de-zerbi", "relegation-battle", "premier-league"]
 date: "2026-05-01T17:44:20Z"
+focusKeyword: "Tottenham on the Brink De Zerbi Issues Defiant ‚Silence the"
+dateModified: "2026-05-01T17:44:20Z"
 ---
 Tottenham Hotspur faces an unprecedented fight against Premier League relegation in 2026, prompting manager Roberto De Zerbi to issue a passionate plea for mental fortitude. As the club navigates a perilous run of fixtures, their resilience and psychological strength are under intense scrutiny.
 

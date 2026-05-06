@@ -9,8 +9,9 @@ category: "News"
 tags: ["kithure-kindiki", "nyambene-banditry", "meru-county", "military-deployment", "national-security"]
 canonical: "https://zandani.co.ke/article/kindiki-orders-military-deployment-to-end-nyambene-banditry-within-t"
 date: "2026-03-22T08:52:34Z"
+focusKeyword: "Kindiki orders military deployment to end Nyambene banditry"
+dateModified: "2026-03-22T08:52:34Z"
 ---
-
 Celestine Nzioka, Za Ndani Deputy President Kithure Kindiki today ordered a comprehensive military deployment to end banditry in Nyambene, Meru County, within two weeks. Speaking during a tour, Kindiki vowed to utilize all government security resources, including the Kenya Defence Forces, police, and specialized equipment, to restore order in the bandit-prone region.
 
 Intensified Crackdown on Banditry
@@ -20,5 +21,6 @@ Strategic Deployment and Operational Shift The government will deploy all instru
 Recent Attacks and Intelligence Gathering The directive follows recent bandit attacks in Makulubaine and Kaongo on Thursday, March 19, 2026, which resulted in two fatalities and the theft of 150 livestock. In response, the National Police Service (NPS) on Saturday, March 21, 2026, urged residents of Meru County, alongside those in Isiolo, Samburu, and Laikipia, to provide any intelligence regarding banditry and related criminal activities. An elaborate multi-agency security operation has been established to recover stolen cattle and confiscate illegal firearms and ammunition.
 
 Affected Areas Identified NPS has identified specific areas most impacted by the attacks. In Meru County, these include Buuri East, Tigania East and West, and Igembe North, Central, and Mutuati. Other targeted regions encompass Mukogondo Forest in Laikipia, Lantana and Sereolipi in Samburu East, and Kipsing and Ngaremara in Isiolo. 
+
 
 

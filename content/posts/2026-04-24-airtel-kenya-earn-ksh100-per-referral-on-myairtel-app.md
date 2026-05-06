@@ -10,6 +10,8 @@ category: "News"
 tags: []
 canonical: "https://zandani.co.ke/article/airtel-kenya-earn-ksh100-per-referral-on-myairtel-app"
 date: "2026-04-24T19:12:50Z"
+focusKeyword: "Airtel Kenya Earn Ksh100 per Referral on MyAirtel App"
+dateModified: "2026-04-24T19:12:50Z"
 ---
 Airtel Kenya is incentivising its customers to refer new users to the MyAirtel App, offering Ksh100 in cash for each successful referral. This "Refer and Earn" programme provides a straightforward opportunity for mobile users aged 18 and above to accumulate earnings by expanding the app's user base.
 
@@ -32,3 +34,4 @@ The MyAirtel App positions itself as a comprehensive tool for managing an Airtel
 Through the application, customers can execute a wide array of transactions, including purchasing airtime and data bundles, sending money across all networks, making payments to millions of merchants countrywide, and settling bills. It also supports real-time management of Home Broadband accounts via the Selfcare App. Postpaid bill payments are facilitated for both personal numbers and other postpaid accounts, alongside bill settlement with registered merchants using Lipa na Airtel Money. Furthermore, the app enables users to deposit funds into their Airtel Money wallet through various methods, including Bank to Wallet transfers and Airtel Money Agents.
 
 To participate, users need to download MyAirtel App, navigate to the "Refer and Earn" section, and share their unique referral link or code with friends and family.
+

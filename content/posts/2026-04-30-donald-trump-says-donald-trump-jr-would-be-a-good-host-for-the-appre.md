@@ -5,6 +5,8 @@ author: "Mutheu Ann"
 image: "https://i.ibb.co/BKVDRxS5/53fa992127eb.jpg"
 category: "Entertainment"
 date: "2026-04-30T23:58:39Z"
+focusKeyword: "Donald Trump says Donald Trump Jr would be a good host for T"
+dateModified: "2026-04-30T23:58:39Z"
 ---
 ## Apprentice Reboot: Donald Trump Jr. Eyed as Host, Dad Gives a 'Soft' Nod
 
@@ -21,3 +23,4 @@ The original series saw contestants compete for a job under Trump Sr., becoming 
 While a report from The Wall Street Journal ignited the reboot chatter, an Amazon spokesperson quickly moved to temper expectations. Speaking to Entertainment Weekly, the spokesperson confirmed "preliminary internal discussions about what's next for The Apprentice as a property" since their acquisition of MGM. However, they firmly stated that a reboot is not in "active development" and any reports on specific details or potential hosts are "purely speculative."
 
 Despite the official caution, Amazon's existing relationship with the Trump family adds another layer to this developing story. The company reportedly paid $40 million for a recent documentary centered on former first lady Melania Trump. This existing partnership could certainly pave a smoother path if Amazon ever decides to move beyond "preliminary discussions" and actively revive The Apprentice with a Trump in the lead. For now, we'll keep an eye on this space, ready for the next boardroom announcement.
+

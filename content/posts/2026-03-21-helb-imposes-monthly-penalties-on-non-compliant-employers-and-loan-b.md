@@ -9,8 +9,9 @@ category: "News"
 tags: ["helb-penalties", "higher-education-loans-board", "student-loan-debt", "loan-recovery-strategy", "non-compliant-employers"]
 canonical: "https://zandani.co.ke/article/helb-imposes-monthly-penalties-on-non-compliant-employers-and-loan-b"
 date: "2026-03-21T05:13:50Z"
+focusKeyword: "HELB Imposes Monthly Penalties on Non-Compliant Employers an"
+dateModified: "2026-03-21T05:13:50Z"
 ---
-
 The Higher Education Loans Board (HELB) on Friday, March 20, 2026, announced stringent new monthly penalties for employers failing to disclose staff with HELB loans or remit deductions, and for loan beneficiaries in default. This decisive action is part of HELB's intensified strategy to recover over Ksh100 billion in outstanding student loan debt across the nation.
 
 HELB Intensifies Loan Recovery Drive
@@ -22,5 +23,6 @@ Defaulting Beneficiaries Face Stiff Fines Loan beneficiaries who have consistent
 Enforcement of 2025 Directive The new measures follow widespread failure to adhere to a 2025 directive that placed responsibility on employers to assist the board's loan recovery efforts. The directive required employers to submit employee records for verification, deduct 15 percent of salaries from staff who benefited from HELB loans, and remit the funds directly to the board. Most employers, according to HELB, have yet to comply.
 
 Commitment to Full Debt Recovery HELB has unequivocally stated there are no plans to write off any unpaid loans, reaffirming its commitment to recovering all outstanding funds. This recovery is crucial for sustaining financing for future students. Employers can manage their obligations efficiently using the dedicated HELB Employer Portal, which streamlines the deduction and remittance process. While HELB focuses on fund recovery, the broader discourse on education financing, including the significant costs for students pursuing specialized fields, remains a pertinent topic for many. Za Ndani, for instance, recently highlighted challenges faced by aspiring African music professionals in an article discussing [Tiwa Savage's Berklee Music Foundation: The Hidden Costs for African Music Pros!](https://zandani.co.ke/article/tiwa-savage-berklee-music-foundation-hidden-costs-african-music-pros). 
+
 
 

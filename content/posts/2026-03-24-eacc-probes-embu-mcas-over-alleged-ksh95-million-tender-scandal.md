@@ -9,8 +9,9 @@ category: "News"
 tags: ["embu-mca-tender-scandal", "eacc-corruption-investigation", "embu-county-government", "public-procurement-fraud", "ksh95-million-tender-scandal"]
 canonical: "https://zandani.co.ke/article/eacc-probes-embu-mcas-over-alleged-ksh95-million-tender-scandal"
 date: "2026-03-24T13:52:33Z"
+focusKeyword: "EACC probes Embu MCAs over alleged Ksh95 million tender scan"
+dateModified: "2026-03-24T13:52:33Z"
 ---
-
 By Celestine Nzioka The Ethics and Anti-Corruption Commission (EACC) has initiated probes into an alleged Ksh95 million tender scandal involving three Embu Members of the County Assembly (MCAs) and county officials. Revealed Tuesday, March 24, 2026, the investigation focuses on claims of irregular contract awards to proxy companies with beneficial interests.
 
 Embu Tender Irregularities Under EACC Scrutiny
@@ -22,5 +23,6 @@ Procurement Irregularities and Contract Extension Za Ndani has learned that the 
 Vihiga County Under Investigation for Misuse of Public Funds These developments coincide with the commission's separate investigation into alleged misuse of public funds in Vihiga County. This probe follows claims that Ksh5 million was spent on a housewarming party at the residence of the County Speaker. Concerns were initially raised during a Senate Public Accounts Committee (PAC) session, leading to an invitation for the anti-graft agency to investigate financial irregularities flagged in recent audit reports. The Auditor-General had also questioned several county expenditures, prompting demands for accountability. In letters dated February 12, 2026, the EACC formally notified both the Acting County Secretary and the Clerk of the Vihiga County Assembly about these ongoing investigations.
 
 Bungoma County Faces Scrutiny Over Spending Further west, the anti-graft body is also investigating the Bungoma County Government regarding the expenditure of Ksh3.7 million on a Christmas tree lighting event and approximately Ksh2.8 million for a benchmarking trip. Sources close to the investigation revealed that funds for these activities were allocated from a County Vote via a purported imprest. Reports indicate 22 Members of the County Assembly and senior County Executive officials undertook a benchmarking trip to Mbale, Uganda, incurring about Ksh2.8 million. This brought the combined cost of the two activities to an estimated Ksh6.6 million. 
+
 
 

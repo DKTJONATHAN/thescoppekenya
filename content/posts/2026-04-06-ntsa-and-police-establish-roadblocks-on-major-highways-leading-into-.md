@@ -9,8 +9,9 @@ category: "News"
 tags: ["ntsa-roadblocks", "nairobi-highways", "national-transport-and-safety-authority", "road-safety-compliance", "easter-travel-safety"]
 canonical: "https://zandani.co.ke/article/ntsa-and-police-establish-roadblocks-on-major-highways-leading-into-"
 date: "2026-04-06T15:07:40Z"
+focusKeyword: "NTSA and Police Establish Roadblocks on Major Highways Leadi"
+dateModified: "2026-04-06T15:07:40Z"
 ---
-
 The National Transport and Safety Authority (NTSA) and the National Police Service (NPS) have established roadblocks on major highways into Nairobi today, April 6, 2026. This heightened operation aims to curb road accidents as residents return to the city following the Easter Festivities, intensifying compliance checks on various vehicle types.
 
 Intensified Compliance Checks Implemented
@@ -22,5 +23,6 @@ Comprehensive Safety Inspections These joint checkpoints by NTSA and NPS are con
 Response to Post-Easter Fatalities The heightened enforcement operations follow a recent report estimating that approximately 50 people lost their lives due to road accidents during Easter 2026 alone. NTSA attributed these fatalities primarily to speeding, reckless overtaking, and collisions with oncoming vehicles. Significant incidents included the deaths of 11 to 15 individuals on the night of April 3, 2026, on the Nairobi-Nakuru highway near Gilgil. Dozens more perished in separate incidents involving both buses and private vehicles nationwide, prompting NTSA to issue urgent safety directives.
 
 Evolution of NTSA Enforcement Strategies In recent months, NTSA has introduced several initiatives to address dangerous driving practices on Kenyan roads. This included the adoption of the Instant Fines Management System, which incorporated 1000 artificial intelligence-driven surveillance cameras across Nairobi to identify reckless drivers. However, the transport body was compelled to withdraw the system in March 2026. This withdrawal was to refine operational procedures, enhance public sensitization, and address legal challenges concerning the handling of traffic offenses, following widespread public outcry. 
+
 
 

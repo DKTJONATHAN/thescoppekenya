@@ -9,6 +9,8 @@ category: "News"
 tags: ["kisumu-chief-magistrate-court", "destruction-of-court-records", "chief-magistrate-d-o-onyango", "judicial-record-management", "records-disposal-courts-rules"]
 canonical: "https://zandani.co.ke/article/kisumu-court-issues-notice-for-destruction-of-old-case-records"
 date: "2026-04-26T17:05:04Z"
+focusKeyword: "Kisumu Court issues notice for destruction of old case recor"
+dateModified: "2026-04-26T17:05:04Z"
 ---
 The Kisumu Chief Magistrate's Court has commenced the destruction process for old criminal and civil case records, providing a three-month public window, effective from an April 24, 2026 gazette notice. Signed by Chief Magistrate D.O. Onyango, this action follows the Records Disposal (Courts) Rules, Cap. 14, requiring Chief Justice approval.
 
@@ -24,3 +26,4 @@ Individuals with personal property, documents, or any exhibits lodged with the c
 Kenya's legal framework, including the Records Disposal Act (Cap 14) and the Data Protection Act, 2019, permits the destruction of court documents after a case's conclusion, with civil records typically discarded 12 years post-judgment, excluding land or constitutional matters. This process aids in eliminating backlogs, freeing storage space, and reducing costs associated with inactive records. Despite physical destruction, key case details-party names, nature of the claim, and final court orders-are preserved in the official court register. This preservation is crucial for judicial integrity, as demonstrated in instances such as the High Court's recent order for a partial recount in the Mbeere North by-election, where precise record-keeping is paramount.
 
 The Judiciary has also significantly advanced its electronic record-keeping capabilities. The electronic filing system, officially launched on July 1, 2020, at the Milimani Commercial Magistrates' Court and the High Court's Commercial and Tax Division, was expanded nationwide by March 11, 2024. Furthermore, a directive from July 1, 2024, mandates that no court should print pleadings or documents, signifying a complete transition to digital court processes across the nation.
+

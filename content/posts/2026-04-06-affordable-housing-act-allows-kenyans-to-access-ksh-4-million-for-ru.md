@@ -9,8 +9,9 @@ category: "News"
 tags: ["affordable-housing-act", "rural-housing-loans", "cap-117a", "housing-finance", "rural-home-construction"]
 canonical: "https://zandani.co.ke/article/affordable-housing-act-allows-kenyans-to-access-ksh-4-million-for-ru"
 date: "2026-04-06T20:57:28Z"
+focusKeyword: "Affordable Housing Act allows Kenyans to access Ksh 4 millio"
+dateModified: "2026-04-06T20:57:28Z"
 ---
-
 Citizens can now access up to Ksh 4 million to construct affordable homes in rural areas, a provision under the Affordable Housing Act, Cap 117A. Operational since August 2025, this framework enables individuals to build on their privately owned or ancestral land, countering the perception that the program is exclusively for urban housing units.
 
 Rural Housing Fund Now Accessible
@@ -20,5 +21,6 @@ Eligibility and Application Process To qualify for the rural housing loan, an ap
 Loan Terms and Beneficiary Protections Interest rates for the loan are tiered based on monthly income: 3 percent for those earning below Ksh 20,000, 6 percent for individuals earning up to Ksh 149,000, and 9 percent for those above that threshold. After a successful application, applicants must take an insurance policy tied to the loan. In the event of death, the insurance covers repayment, ensuring the borrower’s family is not pursued to settle the debt. Beneficiaries are prohibited from transferring or selling the house until the loan is paid in full. If repayment becomes challenging, the law allows petitioning the housing board for consideration, potentially permitting a downgrade to a smaller, more affordable housing option instead of defaulting.
 
 Act Operationalisation and Public Demand The Affordable Housing Act, Cap 117A, which includes rural affordable housing units as one of its four categories, was approved by the National Assembly under the Affordable Housing Regulations in August 2025. This decision fully operationalised the framework, directly responding to public feedback that sought options for housing levy contributions to support rural development rather than solely purchasing pre-built units in urban government projects. The affordable housing is divided into four categories: social housing units, affordable housing units, affordable middle-class housing units, and rural affordable housing units. 
+
 
 

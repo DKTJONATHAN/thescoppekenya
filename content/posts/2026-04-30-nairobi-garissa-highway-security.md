@@ -9,6 +9,7 @@ description: "Inspector General Douglas Kanja has deployed GSU and RDU units to 
 excerpt: "Inspector General Douglas Kanja has deployed GSU and RDU units to the Nairobi-Garissa Highway to stop criminal attacks. Read the full story."
 tags: ["Kenya News", "Douglas Kanja", "NPS", "GSU", "Garissa Highway"]
 focusKeyword: "Nairobi-Garissa Highway"
+dateModified: "2026-04-30T10:16:32Z"
 ---
 ## Heightened Security Deployed Along Nairobi-Garissa Highway
 
@@ -25,3 +26,4 @@ The heightened security measures respond to recent criminal attacks described as
 ### Call for Community Cooperation
 
 Police authorities have urged residents in affected areas, specifically Tseikuru and Ukasi, to remain calm, avoid speculation, and continue their daily activities as security operations proceed. They appealed to community elders, religious leaders, local administrators, and political leaders to collaborate with security agencies, encourage peaceful coexistence, and focus on restoring trust and resolving disputes through dialogue and other lawful means. Amidst these security efforts along the Nairobi-Garissa Highway, discussions around various societal issues continue across Kenya, including digital creator Christine Irungu sharing her personal birth story to promote C-section awareness. (https://zandani.co.ke/article/digital-creator-christine-irungu-shares-personal-birth-story-to-prom)
+

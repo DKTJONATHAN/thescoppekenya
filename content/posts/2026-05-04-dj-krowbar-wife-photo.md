@@ -32,3 +32,4 @@ Joyce Wanjiru Karumba was much more than just DJ Krowbar's wife; she was celebra
 ### A Community's Embrace
 
 The entertainment fraternity and fans alike have wrapped DJ Krowbar in a blanket of support, offering messages of comfort and continued prayers. From fellow gospel artists to media personalities, the solidarity shown demonstrates the tightly knit nature of Kenya's creative sphere. This collective outpouring of sympathy, echoing the widespread tributes seen following the untimely passing of figures like the [Nollywood Actor Okemesi Dead: Unpacking the Tragic End of a Comic Star](https://zandani.co.ke/article/nollywood-actor-okemesi-dead-tragic-end-comic-star), highlights how shared experiences of loss can unite a nation. As DJ Krowbar navigates this new chapter, the love for his late wife and family remains a comforting beacon.
+

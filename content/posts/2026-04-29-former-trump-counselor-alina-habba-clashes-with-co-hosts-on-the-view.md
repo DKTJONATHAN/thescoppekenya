@@ -5,6 +5,8 @@ author: "Mutheu Ann"
 image: "https://i.ibb.co/kgtb4XPk/46e6f3097c7a.jpg"
 category: "Entertainment"
 date: "2026-04-29T22:10:08Z"
+focusKeyword: "Former Trump counselor Alina Habba clashes with co-hosts on"
+dateModified: "2026-04-29T22:10:08Z"
 ---
 ## Alina Habba Ignites The View's Hot Topics Table
 
@@ -29,3 +31,4 @@ Towards the interview's close, Goldberg sought Habba's perspective on Trump's im
 ### The View's Conservative Lineup
 
 Alina Habba's appearance is just the latest in *The View*'s ongoing series of interviews with conservative personalities. The show has a history of hosting right-leaning guests, from political figures like Marjorie Taylor Greene and Elisabeth Hasselbeck to celebrities such as Cheryl Hines and Savannah Chrisley, even including comedian Sheryl Underwood. It seems *The View* is consistently looking for diverse voices to ignite those "Hot Topics" debates, ensuring that Wednesday's episode featuring Habba was certainly one for the books.
+

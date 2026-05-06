@@ -28,3 +28,4 @@ The hospital is transitioning from a manual approach to a fully digitised KNH di
 ### Call for Support and Warning Against Resistance
 
 KNH called upon patients and stakeholders to support this transformative shift, describing it as crucial for enhancing efficiency, transparency, and the overall quality of care. The hospital, however, issued a stern warning against any resistance to the digitisation process, whether from internal staff or external parties, asserting that such actions would be dealt with firmly as it progresses with these essential reforms.
+

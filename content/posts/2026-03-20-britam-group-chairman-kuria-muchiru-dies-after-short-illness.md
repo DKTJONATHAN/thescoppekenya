@@ -9,8 +9,9 @@ category: "News"
 tags: ["kuria-muchiru", "britam-holdings-plc", "nairobi-securities-exchange", "financial-services"]
 canonical: "https://zandani.co.ke/article/britam-group-chairman-kuria-muchiru-dies-after-short-illness"
 date: "2026-03-20T09:00:28Z"
+focusKeyword: "Britam Group Chairman Kuria Muchiru Dies After Short Illness"
+dateModified: "2026-03-20T09:00:28Z"
 ---
-
 Britam Holdings PLC Group Board Chairman Kuria Muchiru passed away on March 19, 2026, following a brief illness, the company announced in a statement issued on the evening of Thursday, March 13. Muchiru was a distinguished leader in the financial sector, celebrated for his impactful tenure at Britam.
 
 A Distinguished Career in Finance
@@ -20,5 +21,6 @@ Leadership at Britam Kuria Muchiru joined Britam Holdings PLC, a diversified fin
 Professional Journey and Boardroom Influence Muchiru's professional journey began in 1983 at PricewaterhouseCoopers, where he worked for approximately 35 years. He rose to senior advisory roles, guiding corporations, government entities, and boards before transitioning into boardroom leadership. An alumnus of the University of Nairobi with a Bachelor of Science in Mathematics and Statistics, Muchiru was also a Certified Public Accountant (CPA-K). Beyond his role at Britam, he served as Chairman of Kenya Wine Agencies Ltd and held multiple non-executive directorships across various sectors, including finance, hospitality, and investment.
 
 A Legacy of Integrity Beyond his professional accomplishments, Muchiru was highly regarded for his wisdom and integrity. He was known for his genuine care for colleagues and stakeholders. His leadership in strengthening governance structures and driving the transformation agenda reflects a commitment to robust oversight in a dynamically evolving business environment, where strategic administrative reforms, such as the [Government Creates Four New ICT Directorates: Beyond the Hype of Kenya's Digital Reform](https://zandani.co.ke/article/government-creates-four-new-ict-directorates-major-reform), continue to shape the corporate landscape. The Board of Directors and Management of Britam Holdings PLC extended heartfelt condolences to his family, friends, and all who had the privilege of working with him. 
+
 
 

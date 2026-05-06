@@ -7,6 +7,8 @@ image: "https://i.ibb.co/0j3rcX2P/477da452a9a6.webp"
 category: "Sports"
 tags: ["uefa-ownership-crisis", "premier-league-ban", "multi-club-ownership", "european-football-regulations"]
 date: "2026-04-27T13:09:00Z"
+focusKeyword: "UEFA Ownership Crisis Why Premier League Giants Could Be Ban"
+dateModified: "2026-04-27T13:09:00Z"
 ---
 Jona Munyi for Za Ndani (zandani.co.ke)
 

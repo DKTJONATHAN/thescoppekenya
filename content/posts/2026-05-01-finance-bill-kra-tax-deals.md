@@ -9,6 +9,7 @@ description: "KRA will override tax arrangements in the Finance Bill 2026 to cur
 excerpt: "KRA will override tax arrangements in the Finance Bill 2026 to curb evasion. This affects businesses using complex deals to cut taxes. Read the full story."
 tags: ["Kenya News", "KRA", "Finance Bill 2026", "Tax Evasion", "Kenya"]
 focusKeyword: "Finance Bill 2026"
+dateModified: "2026-05-01T17:35:03Z"
 ---
 ## Finance Bill 2026: KRA Set to Override Current Tax Deals
 
@@ -25,3 +26,4 @@ KRA will now leverage diverse data sources to bolster its enforcement capabiliti
 ### Pre-emptive Assessments and Verifiable Data
 
 Businesses previously relying on certain "tax benefits" to avoid payments will face increased scrutiny. The new law expands the definition of this term to include anything that lowers owed tax, increases deductions, accelerates refunds, or helps avoid tax on specific goods or services. Additionally, KRA will have powers to issue pre-emptive assessments when income is believed to be under-declared, allowing the authority to act without awaiting taxpayer submissions in some instances. This means KRA can calculate and demand tax upfront based on its own data if underreporting is suspected, requiring taxpayers to respond or dispute the assessment afterwards. The expanded meaning of 'tax benefits' and the ability to conduct pre-emptive assessments could impact various sectors and individuals. For instance, high-value transactions, such as those observed in real estate, may face increased scrutiny. Furthermore, as Kenya aims to bolster its economic ties, including future collaborations like those President Ruto is set to explore in Italy, these new tax regulations will ensure equitable contributions across all investment ventures. To balance these new powers, the Finance Bill 2026 mandates KRA to base its assessments on verifiable information, using data from official systems and records to limit arbitrary decisions.
+

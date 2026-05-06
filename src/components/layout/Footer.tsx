@@ -114,7 +114,8 @@ export function Footer() {
                 { name: "Fact-Checking", path: "/fact-check" },
                 { name: "Advertise With Us", path: "/advertise" },
                 { name: "Careers", path: "/careers" },
-                { name: "Privacy Policy", path: "/privacy" },
+                { name: "Privacy Policy", path: "/privacy-policy" },
+                { name: "Sitemap", path: "/sitemap" },
                 { name: "Terms of Service", path: "/terms" },
               ].map((link) => (
                 <li key={link.path}>

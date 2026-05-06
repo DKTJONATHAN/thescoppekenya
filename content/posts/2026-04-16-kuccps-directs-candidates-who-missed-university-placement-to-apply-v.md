@@ -9,8 +9,9 @@ category: "News"
 tags: ["kuccps-university-placement", "kcse-candidates-2024", "kuccps-email-application", "higher-education-admissions"]
 canonical: "https://zandani.co.ke/article/kuccps-directs-candidates-who-missed-university-placement-to-apply-v"
 date: "2026-04-16T18:19:16Z"
+focusKeyword: "KUCCPS directs candidates who missed university placement to"
+dateModified: "2026-04-16T18:19:16Z"
 ---
-
 The Kenya Universities and Colleges Central Placement Service (KUCCPS) has issued directives for 2024 and preceding Kenya Certificate of Secondary Education (KCSE) candidates who missed university placement. They can now apply for consideration via email, aligning with the current 2026 placement window.
 
 KUCCPS Placement Directives
@@ -20,5 +21,6 @@ Application Process for Previous KCSE Candidates Candidates from the 2024 KCSE c
 Current Application Window for 2025 KCSE Candidates Only 2025 KCSE candidates who achieved a minimum grade of C+ are eligible to apply for degree programmes directly through the official KUCCPS online portal. This application period commenced on April 7, 2026, and is scheduled to close on May 6, 2026.
 
 Support and Inquiries To facilitate the application process, KUCCPS has established support centres at all public universities across the country. Candidates experiencing difficulties with their applications are urged to utilise these centres before the May 6, 2026, deadline. For further inquiries, candidates can contact KUCCPS through their official phone lines at 020 5137400/0713 924 444 or by email at info@kuccps.ac.ke. 
+
 
 

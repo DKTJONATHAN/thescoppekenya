@@ -9,8 +9,9 @@ category: "News"
 tags: ["nyota-fund", "susan-mangeni", "msme-mentorship-program", "business-support-grants"]
 canonical: "https://zandani.co.ke/article/nyota-fund-second-phase-to-be-disbursed-after-mentorship-completion-"
 date: "2026-03-31T17:15:46Z"
+focusKeyword: "NYOTA Fund Second Phase to Be Disbursed After Mentorship Com"
+dateModified: "2026-03-31T17:15:46Z"
 ---
-
 Micro, Small, and Medium Enterprise (MSME) Principal Secretary Susan Mang’eni has confirmed that the second phase of the NYOTA business support fund will be disbursed to beneficiaries immediately following the completion of the nationwide mentorship program. This tranche will provide an additional Ksh 25,000, bringing the total support per beneficiary to Ksh 50,000.
 
 NYOTA Fund Second Phase Disbursement Details
@@ -22,5 +23,6 @@ Second Tranche and Total Support Upon finalisation of the mentorship, beneficiar
 Business Expertise Classroom Training Set for April Following the completion of the mentorship program, the second Business Expertise Classroom Training is scheduled to commence on April 15, 2026. This training will be conducted across all constituencies, serving as a preparatory step before the actual disbursement of the second fund tranche. This structured approach aims to further solidify the entrepreneurs' business acumen before they receive additional capital.
 
 World Bank Funding and Youth Empowerment Initiatives The NYOTA program is substantially supported by the World Bank, which has contributed to a total project cost of approximately Ksh 25.8 billion (USD 200 billion). Beyond direct business support, these funds are also channeled into the On-the-Job Experience (OJE) program. This initiative focuses on apprenticeships and workplace learning, targeting 90,000 youth. Under the OJE program, each beneficiary receives a monthly stipend of Ksh 6,000 for six months, fostering practical skills and industry-relevant expertise through hands-on experience with employers. 
+
 
 

@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: []
 canonical: "https://zandani.co.ke/article/bare-sahara-s-nywele-ngumu-drama-dci-says-she-s-not-going-anywhere-c"
 date: "2026-04-27T13:13:21Z"
+focusKeyword: "Bare Saharas Nywele Ngumu Drama DCI Says Shes Not Going Anyw"
+dateModified: "2026-04-27T13:13:21Z"
 ---
 Kenyan authorities arrested Bare Sahara Ahmed over a viral video featuring alleged inflammatory remarks. Despite public speculation of a quick release, the Directorate of Criminal Investigations (DCI) confirmed she remains in custody and is scheduled to appear in court today, April 27, 2026, to face charges.
 
@@ -22,3 +24,4 @@ Following her arrest, a wave of rumors began to sweep through Kenyan circles, su
 
 ### Court Appearance Scheduled for Today
 The DCI explicitly confirmed that Bare Sahara Ahmed remains in custody, countering any notion of a lenient approach or premature freedom. Authorities stated unequivocally that she is scheduled to appear before the Kahawa Law Courts today, April 27, 2026. This unwavering commitment by the DCI aims to reassure the public that those who threaten national cohesion and incite violence will be held to account, reinforcing the importance of maintaining peace and order across the nation. The outcome of today's court proceedings is highly anticipated.
+

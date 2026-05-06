@@ -9,8 +9,9 @@ category: "News"
 tags: ["kra", "icms-maintenance", "port-of-mombasa", "cargo-clearance", "customs-operations"]
 canonical: "https://zandani.co.ke/article/kra-reschedules-customs-system-maintenance"
 date: "2026-04-01T17:12:57Z"
+focusKeyword: "KRA Reschedules Customs System Maintenance"
+dateModified: "2026-04-01T17:12:57Z"
 ---
-
 The Kenya Revenue Authority (KRA) has rescheduled critical maintenance for its Integrated Customs Management System (iCMS) at the Port of Mombasa. Originally set for April 4-6, 2026, the seven-hour shutdown is now slated for Sunday, April 12, impacting cargo clearance operations.
 
 iCMS Maintenance Rescheduled
@@ -20,5 +21,6 @@ Revised Timeline and Stakeholder Consultation The KRA, in a notice released on A
 Enhancing System Performance and Security KRA emphasizes that this system maintenance is an upgrade intended to streamline service delivery, not a response to any glitch or malfunction. The tax authority outlines several benefits expected from this process, including improved system performance for faster processing, enhanced stability and reliability leading to fewer customer complaints, and smoother day-to-day trade operations across the country. Furthermore, system security will be strengthened, reducing the risk of technical failures and providing a safer platform for all stakeholders. This proactive measure also aims to make future maintenance easier and less disruptive. Considering the Port of Mombasa handles approximately 124,520 metric tonnes of cargo daily and 871,640 metric tonnes weekly, the system upgrade is deemed essential. Efficient, reliable systems are paramount for a developing country's progress, a sentiment echoed in discussions about vital societal investments such as [higher education](https://zandani.co.ke/article/pastor-ezekiels-mockery-higher-education-troubling-developing-country).
 
 Minimizing Disruption and Future Proofing The KRA has apologized for any inconvenience caused by this change of schedule, appreciating the continued cooperation of all stakeholders. The authority remains committed to supporting trade and ensuring the iCMS system is reliable, fast, and user-friendly once maintenance concludes. 
+
 
 

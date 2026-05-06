@@ -9,8 +9,9 @@ category: "News"
 tags: ["john-mbadi", "state-owned-enterprises", "treasury-selection-panel", "public-sector-governance", "government-appointments"]
 canonical: "https://zandani.co.ke/article/treasury-cs-john-mbadi-appoints-selection-panel-for-state-owned-ente"
 date: "2026-04-18T15:00:33Z"
+focusKeyword: "Treasury CS John Mbadi Appoints Selection Panel for State-Ow"
+dateModified: "2026-04-18T15:00:33Z"
 ---
-
 Treasury Cabinet Secretary John Mbadi has appointed a five-member Search and Selection Panel tasked with identifying independent directors for Government-Owned Enterprises, effective April 17, 2026. This move, published in a gazette notice on Friday, initiates a series of significant government appointments across legal, finance, and public enterprise sectors.
 
 Appointments to State Corporations Underway
@@ -20,5 +21,6 @@ New Panel to Oversee State-Owned Enterprise Directors CS Mbadi, exercising power
 Key Appointments in the Legal Sector In a separate move, Attorney-General Dorcas Oduor appointed Makueni Governor Mutula Kilonzo Junior as a member of the Kenya Law Reform Commission (KLRC) for a five-year term, effective April this year. Governor Kilonzo Junior will join Annette Imbuhila Wangia on the commission, strengthening its composition as it advances its mandate of reviewing and developing legal reforms nationally.
 
 Reappointments Across Public Service Boards Labour Cabinet Secretary Alfred Mutua has reappointed Isaac Kaberia and Milkah Kimonda to the National Social Security Fund (NSSF) board for an additional three years. At the Ewaso Ng’iro South River Basin Development Authority, CS Beatrice Askul reappointed Caroline Pulei, Eunice Singoei, Mathew Gathua, Elijah Kesei Metian, and Veronica Silantoi Mwangi, among others, to its board for a three-year term. In the Trade docket, CS Lee Kinyanjui announced changes and retentions within the Kenya Leather Development Council (KLDC), with Florence John, Regina Ngima Muthami, and David Kipkemoi Rotich among those retained. Lands CS Alice Wahome reappointed Victor Olonde and appointed Rashid Haron Shake as new members to the Valuers Registration Board, each for three-year terms. 
+
 
 

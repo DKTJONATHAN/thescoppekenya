@@ -9,8 +9,9 @@ category: "News"
 tags: ["kenya-meteorological-department", "nairobi-rainfall-forecast", "highlands-east-of-rift-valley", "weather-forecasting", "kiambu-weather-updates"]
 canonical: "https://zandani.co.ke/article/kenya-meteorological-department-forecasts-continued-rainfall-across-"
 date: "2026-03-31T07:45:57Z"
+focusKeyword: "Kenya Meteorological Department Forecasts Continued Rainfall"
+dateModified: "2026-03-31T07:45:57Z"
 ---
-
 The Kenya Meteorological Department forecasts continued rainfall from March 31 to April 6, 2026, across Nairobi, Kiambu, and several other regions. The forecast indicates significant wet conditions impacting daily routines and agricultural activities across the country.
 
 Extended Rainfall Across Key Regions
@@ -24,5 +25,6 @@ Broader Regional Outlook Residents around the Lake Victoria Basin and the broade
 Temperature Variations Temperatures will vary regionally. Coastal towns and arid areas like Mandera will record high daytime temperatures, with Mandera projected to reach 38 degrees Celsius, the highest nationally this week. Nairobi is expected to range between 14 and 27 degrees Celsius. Mombasa will see temperatures from 24 to 32 degrees, while Kisumu anticipates reaching 30 degrees during the day. Nakuru and Eldoret will remain cooler at 26 and 23 degrees respectively. Cool nights, potentially falling below 10 degrees Celsius, are expected in parts of the Central Highlands, Rift Valley, and Western Kenya.
 
 Prior Conditions and Public Safety This anticipated rainfall follows a period of prolonged heavy rainfall that tragically claimed over 100 lives, according to data released by the Kenya Red Cross. Authorities continue to urge vigilance among the populace due to the unpredictable weather patterns experienced. 
+
 
 

@@ -10,6 +10,8 @@ category: "Entertainment"
 tags: ["terence-creative", "njugush", "kenyan-entertainment", "njugush-separation", "celebrity-marriages"]
 canonical: "https://zandani.co.ke/article/terence-creative-prays-for-his-marriage-after-njugush-separation"
 date: "2026-04-24T09:09:19Z"
+focusKeyword: "Terence Creative prays for his marriage after Njugush separa"
+dateModified: "2026-04-24T09:09:19Z"
 ---
 Comedian Terence Creative has turned to prayer to safeguard his union with Milly Chebby following the unexpected split of Timothy Kimani, popularly known as Njugush, and Celestine Ndinda. The 2026 announcement sent shockwaves through the local celebrity circles this week.
 
@@ -21,3 +23,4 @@ Terence and Milly have often been celebrated as a resilient couple in the Kenyan
 
 ### Reactions to the Njugush and Celestine separation
 The news of Njugush and Celestine Ndinda parting ways has left fans reeling, as the two were considered a standard for couple-based content in the country. Their separation has prompted many colleagues to reflect on the challenges of maintaining a marriage while managing a joint brand. Even as the nation processes these personal shifts, political discussions remain intense, particularly as [President Ruto defends remarks against opposition](https://zandani.co.ke/article/president-ruto-defends-remarks-against-opposition-amid-calls-for-mau) during ongoing national engagements. For Terence Creative, the focus remains firmly on preserving his household and supporting his spouse through the changing seasons of 2026.
+

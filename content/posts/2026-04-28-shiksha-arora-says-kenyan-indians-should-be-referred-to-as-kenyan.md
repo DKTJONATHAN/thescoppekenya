@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["shiksha-arora", "kenyan-indians", "kenyan-identity", "asian-kenyans"]
 canonical: "https://zandani.co.ke/article/shiksha-arora-says-kenyan-indians-should-be-referred-to-as-kenyan"
 date: "2026-04-28T17:08:48Z"
+focusKeyword: "Shiksha Arora says Kenyan Indians should be referred to as K"
+dateModified: "2026-04-28T17:08:48Z"
 ---
 Media personality Shiksha Arora recently ignited a spirited conversation across Kenya, advocating for Kenyan Indians to be simply referred to as Kenyan. Her powerful reflections on identity, shared on the Mic Cheque Podcast, are resonating deeply, sparking vital national discourse about belonging for many.
 
@@ -25,3 +27,4 @@ Kenyans of Indian descent boast a rich history in East Africa, with their presen
 Arora's call for inclusive identity comes amidst broader discussions about race and belonging among Kenyans globally. Comedian Elsa Majimbo recently shared her own unsettling encounter with racism in the United States. She recounted an incident in Malibu this year where a driver questioned her identity after she requested a ride, demanding, “Proof to me it’s you… you have to show me your phone,” while keeping the car door locked. Despite this, Majimbo noted that her residency in diverse areas like Los Angeles, West Hollywood, and Beverly Hills largely shields her from frequent similar experiences.
 
 Similarly, content creator Natalie Tewa opened up about experiencing what she describes as "silent racism" while pursuing her studies in the UK. She highlighted subtle yet impactful moments, such as people expressing surprise that she spoke fluent English. These recent personal narratives collectively fuel an ongoing national conversation about inclusion, self-identification, and what it truly means to belong, both at home and across the globe. This ongoing dialogue parallels discussions around personal titles and evolving self-identification, reminiscent of when Judy Nyawira recently discussed her shifting perspective on the title Bi Mkurugenzi.
+

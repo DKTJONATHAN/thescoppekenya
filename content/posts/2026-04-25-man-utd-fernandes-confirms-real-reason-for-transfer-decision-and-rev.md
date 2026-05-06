@@ -6,6 +6,8 @@ author: "Sports Desk"
 image: "https://i.ibb.co/q3z2XGrG/ae76b8175804.jpg"
 category: "Sports"
 date: "2026-04-25T08:42:52Z"
+focusKeyword: "Man Utd Fernandes confirms real reason for transfer decision"
+dateModified: "2026-04-25T08:42:52Z"
 ---
 ## The Real Cost of Manchester United Loyalty
 
@@ -22,3 +24,4 @@ To claim he "didn’t want to leave the club at the point where we were struggli
 The glowing appraisal of interim boss Michael Carrick from Fernandes also warrants a cynical eye. While Carrick has certainly "had the positive energy the team needed" and delivered "very good results", turning a struggling side into one "on the brink of securing qualification" for the Champions League, such praise from a star player during a honeymoon period is almost obligatory.
 
 Fernandes' assertion that Carrick was "ready" for a managerial role during his previous interim spell in 2021/22 and that he made you "think he was more than an assistant manager" rings somewhat hollow when considering the transient nature of football management. Players rarely offer anything but commendation for a temporary manager who is currently getting results. The sudden shift from "we weren’t thinking about what could have been" to pushing for current goals highlights the short-term focus, rather than indicating any profound tactical revolution. It is easy to be positive when winning, but the real test of a manager's readiness, and a player's genuine belief, comes when the inevitable rough patches hit.
+

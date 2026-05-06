@@ -9,8 +9,9 @@ category: "News"
 tags: ["mnarani-bridge", "kilifi-county-government", "bridge-structural-integrity", "kilifi-infrastructure"]
 canonical: "https://zandani.co.ke/article/kilifi-county-dismisses-claims-of-damage-to-mnarani-bridge"
 date: "2026-03-23T19:15:17Z"
+focusKeyword: "Kilifi County dismisses claims of damage to Mnarani Bridge"
+dateModified: "2026-03-23T19:15:17Z"
 ---
-
 Kilifi County Government has refuted circulating claims of damage to the Mnarani Bridge, following recent heavy rains across the country. Officials today confirmed the bridge's structural integrity after a physical assessment, reassuring thousands of daily users of its continued safety and operational status.
 
 Kilifi County Confirms Mnarani Bridge's Soundness
@@ -22,5 +23,6 @@ On-Site Assessment Verifies Structural Integrity On Monday, Kilifi County dispat
 Independent Verification Identifies Misrepresentation Critical verification by Za Ndani's fact-checking team confirmed the image showing cracks is authentic and not digitally altered. However, a detailed analysis of its geological location revealed the photograph was taken elsewhere, not in Kilifi County. Further examination highlighted distinct structural differences between the bridge in the circulating image-which features a narrow end base-and the actual Mnarani Bridge, as depicted in images shared by Kilifi County. This comparison definitively establishes the circulating image is not of the Mnarani Bridge.
 
 Public Caution Urged Against Unverified Content Kilifi County has urged the public to disregard the false information and refrain from sharing unverified content that could incite unnecessary panic. The county reiterated its commitment to safeguarding public infrastructure and assured continued collaboration with relevant authorities to monitor and maintain assets for public safety. 
+
 
 

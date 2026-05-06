@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["kenya-power", "power-maintenance-outages", "nairobi-power-interruptions", "bomet-electricity-outage", "nandi-power-schedule"]
 canonical: "https://zandani.co.ke/article/kenya-power-announces-scheduled-maintenance-outages-in-nairobi-bomet"
 date: "2026-04-27T04:04:06Z"
+focusKeyword: "Kenya Power announces scheduled maintenance outages in Nairo"
+dateModified: "2026-04-27T04:04:06Z"
 ---
 Kenya Power has announced planned electricity interruptions for Monday, April 27, 2026, impacting prime areas across Nairobi, Bomet, and Nandi counties. These essential maintenance works, scheduled throughout the day, will temporarily dim the vibrancy of several bustling neighborhoods, including those frequented by Nairobi's social scene and key economic hubs, as the utility company undertakes critical upgrades.
 
@@ -27,3 +29,4 @@ Further disruptions are expected around Kodi Road, Geta Road, and Masaba Road, n
 ### Upcountry Unplugged: Bomet and Nandi Feel the Pinch
 
 Beyond the capital, areas in Sotik, Bomet County, will also face power interruptions from 9:00 a.m. to 5:00 p.m. Affected locations include Gorgor, Gelegele, Abosi, Kapchumbe, Njiship Market, and Shartuka Market, including surrounding environs. Meanwhile, parts of Nandi County, specifically Kaimosi and Chepkumia, will experience outages from 10:00 a.m. to 5:00 p.m. Residents in Kiborgok, Yala, Chepsonoi, Kaimosi Tea Factory, Kaimosi Friends University, Chepkumia Tea Factory, Sirwo, and Tindinyo are advised to plan accordingly for the temporary lack of electricity. Kenya Power assures customers that supply will be restored once maintenance is complete.
+

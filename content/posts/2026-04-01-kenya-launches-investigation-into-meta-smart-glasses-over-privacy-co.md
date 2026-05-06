@@ -5,8 +5,9 @@ author: "Elizabeth Muthoni"
 image: "https://i.ibb.co/pj04JLmd/beb352c50108.webp"
 category: "Technology"
 date: "2026-04-01T17:15:31Z"
+focusKeyword: "Kenya launches investigation into Meta smart glasses over pr"
+dateModified: "2026-04-01T17:15:31Z"
 ---
-
 ## Kenyan Regulators Probe Meta Smart Glasses over Privacy Kenya's data protection regulator has initiated a formal investigation into Meta's Ray-Ban smart glasses, responding to concerns from digital rights advocates. The probe examines privacy implications and the use of recorded footage for training Meta's AI systems, highlighting significant data protection and consent issues.
 
 Regulatory Action Initiated The Office of the Data Protection Commissioner (ODPC) formally launched an investigation into Meta's Ray-Ban smart glasses on March 31. This self-initiated probe focuses on the privacy concerns surrounding the glasses and the methods by which captured footage is utilized to train Meta's artificial intelligence systems. The action follows sustained advocacy from digital rights groups.
@@ -20,5 +21,6 @@ Local Precedents and Broader Systemic Challenges The investigation gains local u
 Meta's Existing Legal Battles in Kenya This is not Meta's first encounter with legal scrutiny in Kenya. The company is currently defending against two separate lawsuits filed by former content moderators who worked for its subcontractor, Sama. A collective of 187 former moderators is seeking $1.6 billion in compensation, citing unfair dismissal, substandard working conditions, and inadequate mental health support after exposure to gruesome content. Despite Meta's initial arguments against being sued in Kenyan courts, the Court of Appeal ruled in September 2024, paving the way for these trials.
 
 Global Resonance of Kenya's Findings Kenya now joins the United Kingdom and the United States in formally scrutinizing Meta over these privacy and data handling concerns. The ODPC has committed to publicly sharing its findings upon the conclusion of its investigation. The outcome and the regulatory actions taken will have implications extending far beyond Kenya's borders, potentially influencing global data protection standards for smart technologies. 
+
 
 

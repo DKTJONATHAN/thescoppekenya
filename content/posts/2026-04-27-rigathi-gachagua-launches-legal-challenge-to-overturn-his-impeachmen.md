@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["rigathi-gachagua", "gachagua-impeachment", "deputy-president-removal", "gachagua-court-case", "impeachment-legal-challenge"]
 canonical: "https://zandani.co.ke/article/rigathi-gachagua-launches-legal-challenge-to-overturn-his-impeachmen"
 date: "2026-04-27T07:44:04Z"
+focusKeyword: "Rigathi Gachagua launches legal challenge to overturn his im"
+dateModified: "2026-04-27T07:44:04Z"
 ---
 Former Deputy President Rigathi Gachagua is back in the spotlight, launching a high-stakes legal challenge this week to overturn his 2026 removal from office. The charismatic leader, speaking Sunday in Mombasa, declared his impeachment "fraudulent and illegal," confident the judiciary will deliver justice despite his family's initial reservations about renewed public scrutiny.
 
@@ -31,3 +33,4 @@ The contentious battle surrounding Gachagua’s removal has been plagued by proc
 ### A United Opposition's First Salvo
 
 Rigathi Gachagua holds the unique distinction of being the first Deputy President impeached under the 2010 Constitution, serving the shortest term in that esteemed office. Having moved on from the Kenya Kwanza administration, Gachagua is now a central figure in a formidable United Opposition front. This coalition has openly pledged to challenge President William Ruto in the 2027 General Election, framing Gachagua's current legal fight as a pivotal initial move to dislodge the existing administration from power. His petition is anticipated to be officially filed between Monday and Wednesday this week, setting the stage for a compelling political drama.
+

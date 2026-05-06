@@ -10,8 +10,8 @@ tags: ["portable", "olamide", "davido", "nigerian music", "entertainment news", 
 date: "2026-05-05T16:54:47Z"
 dateModified: "2026-05-05T16:54:47Z"
 schema: "NewsArticle"
+focusKeyword: "Portable compares mentorship styles of Olamide and Davido"
 ---
-
 ## Mentorship or Clout? The Nigerian Music Industry’s Help Paradox
 
 Portable has set social media ablaze again, this time turning his sights on the definition of mentorship within the Nigerian music industry. By drawing a sharp line between his experiences with Olamide and Davido, the Zeh Nation boss has triggered a public debate: do established icons owe emerging talent financial lifelines, or is a word of advice sufficient?
@@ -45,3 +45,4 @@ The friction between mentorship and commercial backing highlights a widening rif
 Expect a flurry of defensive responses from industry insiders who are likely to champion the value of experience-sharing over the transactional nature of collaborations. These figures will aim to protect their brands against the rising tide of demands for financial co-signs. Meanwhile, emerging artists are likely to become more vocal, leading to a landscape that is perhaps more transparent but significantly more transactional.
 
 The industry remains fundamentally divided. On one side are those who believe success is a product of long-term experience and hard-won wisdom. On the other side are those who insist that, in a saturated market, validation is only legitimate when it arrives with both a co-sign and a check.
+

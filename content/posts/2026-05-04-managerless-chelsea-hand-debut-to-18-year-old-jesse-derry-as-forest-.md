@@ -10,6 +10,7 @@ tags: ["chelsea-fc", "jesse-derry", "nottingham-forest", "premier-league"]
 date: "2026-05-04T13:13:50Z"
 dateModified: "2026-05-04T13:13:50Z"
 schema: "NewsArticle"
+focusKeyword: "Managerless Chelsea Hand Debut to 18-Year-Old Jesse Derry as"
 ---
 FOR Za Ndani (zandani.co.ke)
 

@@ -9,8 +9,9 @@ category: "Entertainment"
 tags: ["shatta-wale", "stonebwoy", "black-stars", "ghana-world-cup-campaign", "ghana-football-support"]
 canonical: "https://zandani.co.ke/article/shatta-wale-and-stonebwoy-pledge-funds-to-support-black-stars-world-"
 date: "2026-03-21T16:53:25Z"
+focusKeyword: "Shatta Wale and Stonebwoy pledge funds to support Black Star"
+dateModified: "2026-03-21T16:53:25Z"
 ---
-
 Ghanaian dancehall sensations Shatta Wale and Stonebwoy pledged substantial financial support for the Black Stars' 2026 World Cup campaign on Friday, March 21, 2026, at the Kempinski Hotel Gold Coast City. Their significant contributions fuel a nationwide fundraising initiative to send Ghanaian fans to the global football tournament.
 
 Ghanaian Music Icons Elevate Black Stars' World Cup Bid
@@ -20,5 +21,6 @@ Unprecedented Pledges Fuel Fan Mobilisation At a high-profile fundraising event,
 Grassroots Campaign for Global Showpiece The fundraising drive underscores a collective effort to ensure strong fan representation for the Black Stars on the international stage. President John Dramani Mahama clarified the government's stance at the initiative's launch, stating public funds would not be allocated for supporters travelling to watch the national team at the World Cup. Instead, the campaign relies on voluntary contributions from individuals, corporate entities, and public figures, with several high-profile pledges already recorded. This approach emphasizes community and national pride over government expenditure for fan travel.
 
 Entertainers Champion National Spirit The significant contributions from Shatta Wale and Stonebwoy have garnered widespread attention, highlighting the powerful role entertainers play in fostering national initiatives. Their pledges reinforce public enthusiasm and demonstrate a united front as Ghana prepares for the prestigious global football showpiece. This collaborative spirit exemplifies the vibrant engagement between Ghana's cultural icons and its passionate football fanbase. 
+
 
 

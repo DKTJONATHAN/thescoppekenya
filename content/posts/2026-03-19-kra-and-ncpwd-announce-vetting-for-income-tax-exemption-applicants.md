@@ -9,8 +9,9 @@ category: "News"
 tags: ["income-tax-exemption", "ncpwd", "kra", "disability-rights", "ecitizen-applications"]
 canonical: "https://zandani.co.ke/article/kra-and-ncpwd-announce-vetting-for-income-tax-exemption-applicants"
 date: "2026-03-19T07:16:50Z"
+focusKeyword: "KRA and NCPWD announce vetting for income tax exemption appl"
+dateModified: "2026-03-19T07:16:50Z"
 ---
-
 The National Council for Persons with Disabilities (NCPWD) and the Kenya Revenue Authority (KRA) have initiated a countrywide vetting exercise for Income Tax Exemption (ITE) applicants. This critical process, for those who applied via eCitizen, commenced on March 30, 2026, and will continue until April 30, 2026, at various designated centers to verify eligibility.
 
 Income Tax Exemption Vetting Details
@@ -20,5 +21,6 @@ Application Deadline and Eligibility The eCitizen application system for the Inc
 Vetting Locations and Schedule The comprehensive vetting exercise is scheduled from March 30 to April 30, 2026, with each county assigned specific dates for applicants to report. Members of the Kenya Defence Forces (KDF) will undergo their vetting at various Defence stations, including the Defence Forces Memorial Hospital. Key public vetting centers include the NCPWD Headquarters in Westlands and the Defence Forces Memorial Hospital in Mbagathi for applicants residing in Nairobi. In Mombasa, the Tudor Sub-County Hospital will host the exercise, while Kisumu residents will report to the County Referral Hospital. Nakuru and Eldoret have their respective County Referral Hospitals designated for the vetting. Additionally, other counties such as Garissa, Machakos, Murang’a, Isiolo, Bungoma, West Pokot, and Kisii also have specific vetting centers outlined in the official timetable.
 
 Ensuring a Smooth Process KRA and NCPWD have reiterated that the vetting exercise is free of charge, with only the initial application fees paid via eCitizen required. This caution serves to protect citizens from potential fraudulent schemes. Cooperation with vetting officers, meticulous documentation, and punctuality are paramount for the successful verification and approval of tax exemption claims. Registered Persons with Disabilities (PWDs) in the region are eligible for an income tax exemption on the first Ksh150,000 per month, equating to Ksh1.8 million annually. To secure this exemption, one must first be registered with NCPWD and then obtain a formal Income Tax Exemption Certificate from KRA through the iTax portal. The government’s emphasis on proper documentation for the tax exemption vetting mirrors the rigorous requirements seen in other critical financial processes, such as securing approvals for the HELB Advanced Nursing Loan. 
+
 
 

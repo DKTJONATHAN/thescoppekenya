@@ -5,8 +5,9 @@ author: "Grace Mkamburi"
 image: "https://i.ibb.co/nN8c3fmK/2f8741132743.jpg"
 category: "Business"
 date: "2026-03-10T10:24:46Z"
+focusKeyword: "Mwalimu National Sacco profit rises 763 percent as assets hi"
+dateModified: "2026-03-10T10:24:46Z"
 ---
-
 ## Mwalimu National Sacco Reports Significant Profit and Asset Expansion Mwalimu National DT Sacco reported a 76.3 percent surplus surge to KSh 1.27 billion, with assets hitting KSh 76.3 billion in 2025. Driven by loan expansion, this strong performance is tempered by rising non-performing loans and significant capital restoration challenges, warranting close market scrutiny.
 
 Financial Performance Highlights Mwalimu National DT Sacco, Kenya's largest Sacco by assets, posted a 76.3 percent surge in surplus to KSh 1.27 billion for the year ended December 31, 2025. This marks its strongest result since 2020, with total assets crossing KSh 76.3 billion.
@@ -18,5 +19,6 @@ Other Income as a Profit Driver Other income, a category not itemized in the abr
 Capital Restoration Challenges Ahead While the robust surplus, if retained, should support the restoration of institutional capital to the total assets threshold, Mwalimu National faces substantial challenges in 2026. The Sacco is scheduled for its largest single write-off under the Spire capital restoration plan: KSh 1.70 billion. This significant obligation coincides with its pursuit of an ambitious KSh 100.0 billion asset target, which requires a growth rate double its current pace.
 
 Equity Growth and Dividend Payouts Total equity for the Sacco grew by 13.7 percent to KSh 11.4 billion. The dividend payout was maintained at 13 percent. However, with the surplus nearly doubling, members at the upcoming Annual Delegates Meeting (ADM) will likely observe that peer Saccos distributed dividends ranging from 15 percent to 20 percent on smaller equity bases, potentially influencing discussions around Mwalimu National's dividend strategy. 
+
 
 

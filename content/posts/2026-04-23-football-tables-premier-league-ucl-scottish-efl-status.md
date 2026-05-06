@@ -8,4 +8,7 @@ image: ""
 category: "Sports"
 tags: []
 date: "2026-04-23T17:59:18Z"
+focusKeyword: "Football Tables Premier League UCL Scottish EFL Status"
+dateModified: "2026-04-23T17:59:18Z"
 ---
+

@@ -9,8 +9,9 @@ category: "Entertainment"
 tags: ["omah-lay", "afrobeats-music", "nigerian-music-industry", "afrobeats-stars"]
 canonical: "https://zandani.co.ke/article/omah-lay-claims-he-is-the-greatest-afrobeats-artist-of-the-decade"
 date: "2026-04-14T19:50:11Z"
+focusKeyword: "Omah Lay claims he is the greatest Afrobeats artist of the d"
+dateModified: "2026-04-14T19:50:11Z"
 ---
-
 Nigerian artist Omah Lay has unequivocally declared himself the greatest Afrobeats artist of this decade, a bold assertion amplified by the April 3, 2026 release of his anticipated sophomore album, "Clarity of Mind." His confident pronouncements position him distinctively among his contemporaries.
 
 Omah Lay Claims Greatest Afrobeats Artist of the Decade Title Omah Lay has consistently staked his claim as the defining voice of his generation in Afrobeats. In a recent interview with Capital XTRA, he stated, "I am the greatest Afrobeats artist of the decade, I am the greatest." He further elaborated that while metrics like "numbers, personality, and the level of fame" might not immediately bring him to mind, "when it comes to the art itself, I am the greatest."
@@ -22,5 +23,6 @@ Acknowledging Burna Boy While confident in his unique standing, Omah Lay does ma
 "Clarity of Mind" Makes Strong Debut The declarations coincide with the launch of his sophomore album, "Clarity of Mind," which he also described as the greatest Afrobeats album of all time. The project has had a strong start since its April 3, 2026 release, debuting at No. 1 on Spotify's Top Albums Debut Global chart. In Nigeria, the album garnered 16,727,400 streams in its first week on Spotify and also secured the top spot on Apple Music Nigeria's Top Albums chart.
 
 Addressing Afrobeats' Creative Standards Omah Lay has framed "Clarity of Mind" as a direct response to a perceived decline in the genre's creative standards. During his Lagos Warehouse Session, he voiced his concern, stating, "Overseas, Afrobeats is declining. It's facts. The Afrobeats you guys used to know in 2020-2024 is not the Afrobeats you know now anymore. Clarity of Mind is going to be a statement to wake our artists up." He further elaborated in a separate interview, expressing fear that Afrobeats is "drifting towards a place where people are not putting in so much effort in the art anymore," characterising the trend as artists "just really playing with music" rather than genuinely developing their craft. 
+
 
 

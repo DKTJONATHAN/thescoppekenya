@@ -9,6 +9,7 @@ description: "The High Court blocked COFEK from withdrawing a petition against t
 excerpt: "The High Court blocked COFEK from withdrawing a petition against the Kenya-US health data agreement to protect public interest and privacy. Read more."
 tags: ["Kenya News", "High Court", "COFEK", "Data Privacy", "Nairobi"]
 focusKeyword: "Kenya-US health data agreement"
+dateModified: "2026-04-30T12:03:48Z"
 ---
 ## High Court Upholds Public Interest in Kenya-US Health Data Agreement Challenge
 
@@ -25,3 +26,4 @@ The Kenya-US health data agreement, signed in December 2025, sparked controversy
 ### Government's Position and Next Steps
 
 President William Ruto has publicly defended the Kenya-US health data agreement, assuring citizens of its strong legal foundation and that their data would not be exploited. In February, the U.S. government indicated it would only proceed with the health cooperation framework after a full determination by the High Court. The court has scheduled the hearing for May 25.
+

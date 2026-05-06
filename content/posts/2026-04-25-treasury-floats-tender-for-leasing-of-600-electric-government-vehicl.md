@@ -9,6 +9,8 @@ category: "News"
 tags: ["electric-vehicle-leasing", "the-national-treasury", "government-motor-vehicle-tender", "e-mobility-transition"]
 canonical: "https://zandani.co.ke/article/treasury-floats-tender-for-leasing-of-600-electric-government-vehicl"
 date: "2026-04-25T19:57:51Z"
+focusKeyword: "Treasury floats tender for leasing of 600 electric governmen"
+dateModified: "2026-04-25T19:57:51Z"
 ---
 By Celestine Nzioka
 
@@ -31,3 +33,4 @@ The Government Motor Vehicle Leasing Programme, initiated in 2013, adopts a leas
 This initiative aligns with a broader government push towards e-mobility, spearheaded by the Ministry of Transport. Transport Cabinet Secretary Davis Chirchir unveiled green number plates for all electric vehicles in February this year, signaling the country's commitment to reducing carbon emissions and accelerating cleaner transport adoption. This follows significant policy developments, including the launch of the National E-Mobility Policy in February 2026. While Mr. Chirchir's ministry has championed advancements, scrutiny has also been directed towards related policies, such as those highlighted in "Chirchir's Folly: NTSA Vehicle Inspection Hidden Costs Exposed."
 
 Kenya Power reported a 188 per cent rise in electricity consumption linked to electric vehicles, with usage nearly tripling in 2025 as uptake grew among private and commercial users. Electricity consumption by electric vehicles rose to 8,433,437 kilowatt-hours (kWh) in 2025, up from 2,922,692 kWh recorded in 2024. This consumption surge generated Ksh125.9 million in revenue from EV charging in 2025, compared to Ksh64.8 million in the previous year. By the end of 2025, Kenya had registered over 35,000 electric vehicles.
+

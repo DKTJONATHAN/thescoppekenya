@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["tiwa-savage-music-foundation", "berklee-college-of-music-scholarships", "african-music-education", "music-scholarships-for-africans"]
 canonical: "https://zandani.co.ke/article/tiwa-savage-music-foundation-awards-2-1-million-in-berklee-scholarsh"
 date: "2026-04-29T21:46:33Z"
+focusKeyword: "Tiwa Savage Music Foundation awards 21 million in Berklee sc"
+dateModified: "2026-04-29T21:46:33Z"
 ---
 The Tiwa Savage Music Foundation has awarded $2.1 million in Berklee College of Music scholarships to eighteen talented African students in 2026. This significant initiative, culminating in a grand finale in Nigeria, provides unparalleled global music education opportunities for emerging artists across the continent, bridging local talent with international standards.
 
@@ -29,3 +31,4 @@ Speaking on the program's successful completion, Tiwa Savage expressed deep prid
 ### Berklee Faculty Led Transformative Training
 
 Berklee faculty members who led the program included Dennis Montgomery (Academic Director, Professor of Ensembles), Yoron Israel (Chair of Percussion), Tyrone Chase (Assistant Chair of Ensembles), Nichelle Mungo (Associate Professor of Voice), and Anthony Nembhard (Assistant Professor of Ensembles). Jason Camelio, Program Director and Assistant Vice President of Global Programs and Partnerships, who oversees Berklee’s global initiatives, also played a crucial role. The evening concluded with a scholarship awards presentation, where the eighteen students received fully funded undergraduate places at Berklee College of Music in Boston. All 120 participants also received graduation certificates.
+

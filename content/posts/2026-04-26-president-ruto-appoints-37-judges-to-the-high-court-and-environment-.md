@@ -9,6 +9,8 @@ category: "News"
 tags: ["president-william-ruto", "high-court-appointments", "environment-and-land-court", "judicial-case-backlog", "kenyan-judiciary"]
 canonical: "https://zandani.co.ke/article/president-ruto-appoints-37-judges-to-the-high-court-and-environment-"
 date: "2026-04-26T20:00:03Z"
+focusKeyword: "President Ruto appoints 37 judges to the High Court and Envi"
+dateModified: "2026-04-26T20:00:03Z"
 ---
 President William Ruto officially appointed 37 judges to the High Court and Environment and Land Court on April 24, 2026. This significant move aims to expedite justice delivery by addressing the substantial case backlog across the nation's judicial system.
 
@@ -37,3 +39,4 @@ The High Court received 377 applications, leading to 100 shortlisted candidates.
 Earlier, on January 28, President Ruto formally appointed 15 nominees to the Court of Appeal. These promotions subsequently created additional vacancies in the High Court and ELC, with four High Court judges and two ELC judges elevated to the Court of Appeal. An additional ELC judge retired during the recruitment process, contributing to the openings now filled by this recent batch of appointments.
 
 The JSC affirmed that these strategic appointments will substantially augment the number of judges. The High Court will increase from 91 to 115 judges, while the Environment and Land Court will grow from 48 to 61 judges, significantly enhancing the judiciary's capacity to provide timely and effective service.
+

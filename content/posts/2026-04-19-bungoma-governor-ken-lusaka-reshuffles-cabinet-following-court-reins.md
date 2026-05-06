@@ -9,8 +9,9 @@ category: "News"
 tags: ["bungoma-cabinet-reshuffle", "ken-lusaka", "bungoma-county", "county-executive-committee", "county-governance"]
 canonical: "https://zandani.co.ke/article/bungoma-governor-ken-lusaka-reshuffles-cabinet-following-court-reins"
 date: "2026-04-19T04:24:59Z"
+focusKeyword: "Bungoma Governor Ken Lusaka Reshuffles Cabinet Following Cou"
+dateModified: "2026-04-19T04:24:59Z"
 ---
-
 Bungoma Governor Ken Lusaka reshuffled his county cabinet on Saturday, April 18, 2026, enacting immediate changes. This reorganization follows a court directive to reinstate County Executive Committee Members previously dismissed, aiming to ensure uninterrupted service delivery across the county.
 
 Bungoma Cabinet Reorganization Details Governor Lusaka announced these changes, citing Articles 179 and 183 of the Constitution, alongside Sections 32A, 33A, and 32 (1) of the County Government Act, as his guiding principles. The objective is to maintain essential services while awaiting the final court verdict.
@@ -22,5 +23,6 @@ Reappointments and Acting Roles Wamamili David Wanyonyi was reappointed to his f
 Retentions and Departures The CECMs for Water, Lands, Education, Agriculture, and Health have been retained in their respective positions. However, Architect Douglas Asita, who previously managed the Trade docket, and Benedict Emachar of Gender, Sports and Culture, have been directed to proceed on forced leave until further notice.
 
 Court Mandate and Previous Dismissal This cabinet reshuffle occurs after the Employment and Labour Relations Court ordered Governor Lusaka to reinstate the CECMs who had been dismissed earlier in April. The court's decision followed a petition from the CECMs, who argued that their dismissal, communicated via a press statement without formal termination letters or procedural fairness, violated multiple constitutional provisions, including the right to fair administrative action and fair labour practices. It is recalled that on April 9, 2026, Governor Lusaka had initially terminated the employment of all Members of the County Executive Committee, the County Attorney, and the County Secretary, citing his constitutional mandate to enhance governance and service delivery. Za Ndani continues to follow developments in Bungoma's county administration. 
+
 
 

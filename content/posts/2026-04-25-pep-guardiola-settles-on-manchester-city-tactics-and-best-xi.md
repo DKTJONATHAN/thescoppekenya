@@ -8,6 +8,8 @@ image: "https://i.ibb.co/CswFFWJW/dd06d47c0728.webp"
 category: "Sports"
 tags: ["pep-guardiola", "manchester-city", "tactical-analysis", "starting-xi"]
 date: "2026-04-25T07:55:19Z"
+focusKeyword: "Pep Guardiola Settles on Manchester City Tactics and Best XI"
+dateModified: "2026-04-25T07:55:19Z"
 ---
 By Jona Munyi, Za Ndani
 

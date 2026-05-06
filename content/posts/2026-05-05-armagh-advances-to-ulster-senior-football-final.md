@@ -10,8 +10,8 @@ tags: ["gaelic games", "armagh gaa", "sports news", "ulster championship", "inte
 date: "2026-05-05T12:18:02Z"
 dateModified: "2026-05-05T12:18:02Z"
 schema: "NewsArticle"
+focusKeyword: "Armagh Advances to Ulster Senior Football Final Against Mona"
 ---
-
 ## Armagh GAA and the Quest for the Anglo Celt Cup
 
 After sixteen years of close calls and persistent frustration, the men of Armagh stand once again on the threshold of a provincial title. As they prepare for their fourth consecutive Ulster Senior Football final, the narrative of the squad centers on the steady, unyielding presence of Jarly Og Burns.
@@ -39,3 +39,4 @@ Armagh’s fourth straight appearance in the provincial decider suggests they ha
 ### What to watch next
 
 All eyes will be on the team sheets as the clock counts down toward the clash with Monaghan on May 17. The technical response to the absences of McQuillan and Crealey will likely decide whether the Anglo Celt Cup finally makes its way back to Armagh. For Jarly Og Burns, the milestone ahead is not simply about securing a trophy, but about providing the final validation for sixteen years of relentless pursuit.
+

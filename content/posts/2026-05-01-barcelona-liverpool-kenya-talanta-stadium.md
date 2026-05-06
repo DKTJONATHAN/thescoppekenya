@@ -9,6 +9,7 @@ description: "Barcelona vs Liverpool Kenya is planned for August at Talanta Stad
 excerpt: "Barcelona vs Liverpool Kenya is planned for August at Talanta Stadium as Hansi Flick eyes Nairobi for pre-season prep. Get the full details on the match."
 tags: ["Sports", "FC Barcelona", "Liverpool FC", "Talanta Stadium", "Nairobi"]
 focusKeyword: "Barcelona vs Liverpool Kenya"
+dateModified: "2026-05-01T05:27:39Z"
 ---
 ## Barcelona vs Liverpool Kenya: 2025 Talanta Stadium Plans Emerge
 
@@ -25,3 +26,4 @@ Following their UK preparations, Barcelona is actively exploring the option of t
 ### Further International Engagements
 
 Beyond the potential **Barcelona vs Liverpool Kenya** game, the Catalan club is also considering another international friendly in Morocco. Discussions for this fixture are ongoing, indicating a broader strategy for international outreach during their pre-season period. Should the plans for the August fixture materialise, it promises to create lasting football memories for many Kenyan enthusiasts.
+

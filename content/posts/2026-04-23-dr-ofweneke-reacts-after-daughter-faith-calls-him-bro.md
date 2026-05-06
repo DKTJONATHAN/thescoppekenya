@@ -10,6 +10,8 @@ category: "Entertainment"
 tags: ["dr-ofweneke", "kenyan-entertainment-news", "dr-ofweneke-daughter", "kenyan-celebrities", "celebrity-parenting-kenya"]
 canonical: "https://zandani.co.ke/article/dr-ofweneke-reacts-after-daughter-faith-calls-him-bro"
 date: "2026-04-23T21:06:50Z"
+focusKeyword: "Dr Ofweneke Reacts After Daughter Faith Calls Him Bro"
+dateModified: "2026-04-23T21:06:50Z"
 ---
 Veteran comedian and media personality Dr. Ofweneke recently shared a hilarious encounter with his Gen Z daughter, Faith. Despite the entertainer investing heavily in premium school fees, his daughter surprised him by casually using the term "Bro" to address him during a conversation.
 
@@ -23,3 +25,4 @@ Ofweneke jokingly lamented the irony of paying high tuition fees only to be addr
 
 ### Fans Join the Laughter
 Social media followers were quick to share their own experiences with the Gen Z vocabulary shift. Many parents echoed the sentiments of the comedian, sharing stories of being called "Bestie" or "Best Friend" by their primary and secondary school children. Ofweneke's ability to turn a personal parenting moment into a relatable comedy bit has once again cemented his status as a favorite in the entertainment industry. He remains one of the most consistent figures in the 2026 comedy scene, proving that even a "Bro" can be a respected father figure. Faith’s casual remark serves as a reminder that no amount of premium education can fully insulate the older generation from the infectious and often puzzling language of the youth.
+

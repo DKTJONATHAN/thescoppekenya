@@ -10,6 +10,8 @@ category: "News"
 tags: []
 canonical: "https://zandani.co.ke/article/aliko-dangote-plans-new-oil-refinery-in-east-africa"
 date: "2026-04-23T14:11:00Z"
+focusKeyword: "Aliko Dangote Plans New Oil Refinery in East Africa"
+dateModified: "2026-04-23T14:11:00Z"
 ---
 Nigerian billionaire Aliko Dangote committed to building an oil refinery in East Africa on April 23, 2026, during the Africa We Build Summit in Nairobi. The proposed facility, a replica of his Lagos plant, aims to provide the region with reliable fuel, contingent on serious presidential support from Uganda's President Yoweri Museveni and President William Ruto.
 
@@ -32,3 +34,4 @@ During the summit, Dangote criticized Africa's economic model, which he argued p
 ### Parallel Regional Energy Investments
 
 This development coincides with the Kenyan government's decision to invest in Uganda's oil refinery industry. President Ruto announced this move as part of a strategic regional energy play following the successful privatization and partial regional uptake of the Kenya Pipeline Company (KPC). The Ugandan refinery project, to be based in Hoima City, is estimated to cost about USD4 billion, roughly Ksh500 billion, marking it as a significant industrial energy investment in East Africa.
+

@@ -9,8 +9,9 @@ category: "News"
 tags: ["moi-university", "vishva-builders-limited", "garnishee-order", "moi-university-account-freeze", "higher-education-finance"]
 canonical: "https://zandani.co.ke/article/moi-university-faces-potential-auction-after-court-order-freezes-ban"
 date: "2026-04-15T15:39:29Z"
+focusKeyword: "Moi University faces potential auction after court order fre"
+dateModified: "2026-04-15T15:39:29Z"
 ---
-
 Moi University faces potential auction after its bank accounts were frozen on February 4, 2026, by a garnishee order. This action stems from a deepening Ksh1 billion court battle with Vishva Builders Limited, threatening to halt operations, disrupt learning, and leave thousands of staff and students in uncertainty.
 
 Moi University Accounts Frozen Amid Debt Crisis
@@ -20,5 +21,6 @@ Legal Dispute Paralyses Operations Documents obtained by Za Ndani reveal a garni
 Last-Minute Plea for Deferral In a last-minute effort, Moi University has pleaded with a businessman to whom it owes money for a 60-day postponement of a court ruling scheduled for April 16, 2026. This deferral would allow for negotiations aimed at preventing further institutional damage. A proposed consent submitted to the High Court seeks to defer the ruling, lift the garnishee order, and facilitate structured negotiations. This includes an immediate down payment of Ksh50 million from the frozen accounts to partially settle the Ksh1 billion debt. If approved, the matter would be mentioned again on June 16, 2026, offering a narrow window to resolve the dispute and avert a full shutdown.
 
 Unanswered Questions on Previous Bailouts The current financial distress surfaces despite multiple government interventions aimed at stabilizing the institution. In January 2025, the National Treasury provided KSh500 million in emergency funding to ease cash flow and support salary payments. This followed a KSh1.8 billion allocation in the 2024/2025 supplementary budget. Earlier in 2025, the university also received KSh1.5 billion to clear staff salaries and pending arrears. These substantial previous bailouts raise critical questions about how Moi University has once again found itself in such severe financial jeopardy. This recurring challenge underscores the complex financial landscape facing public institutions in Kenya, even as the country identifies over $700 million in waste sector opportunities through a new investment prospectus. 
+
 
 

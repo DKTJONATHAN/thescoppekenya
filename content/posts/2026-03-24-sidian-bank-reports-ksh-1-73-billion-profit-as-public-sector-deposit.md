@@ -5,8 +5,9 @@ author: "Grace Mkamburi"
 image: "https://i.ibb.co/FLQhj3Gn/93f9f7dc7c84.jpg"
 category: "Business"
 date: "2026-03-24T10:36:57Z"
+focusKeyword: "Sidian Bank reports KSh 173 billion profit as public sector"
+dateModified: "2026-03-24T10:36:57Z"
 ---
-
 ## Sidian Bank's Transformative Growth and Public Sector Mandates Sidian Bank reported a KSh 1.73 billion profit after tax for the year ended December 31, 2025, a sixfold increase from KSh 287.35 million, marking its strongest financial result in 40 years. This performance was significantly driven by a surge in public sector deposits and a strategic shift towards government securities.
 
 Financial Performance Overview The bank's net interest income increased by 54.6% to KSh 4.43 billion, while non-interest income more than doubled to KSh 3.80 billion from KSh 1.73 billion. A substantial elevenfold increase in "other income," from KSh 188.76 million to KSh 2.09 billion, constituted 55.0% of the total non-interest income. Other fees and commissions grew 35.4% to KSh 1.09 billion, although foreign exchange trading income decreased by 40.3% to KSh 192.04 million. Operating income rose 79.2% to KSh 8.24 billion, and the cost-to-income ratio improved to a historic 73.2% from 89.9%.
@@ -22,5 +23,6 @@ Asset Quality and Loan Book Gross non-performing loans (NPLs) increased by 6.8% 
 Growth Dynamics and Scrutiny Sidian's rapid growth is unprecedented in Kenyan banking, with deposits growing 162% in two years and the bank moving from Tier 3 to Tier 2. However, this expansion relies on a narrow foundation, with the Nairobi County relationship, in particular, facing political and legal scrutiny. Senator Edwin Sifuna questioned the shift from a Tier 1 bank, and civil rights group Bunge La Mwananchi has petitioned the High Court, citing concerns about public participation and transparency. Kenyan laws define everyday actions that could result in arrest, and these legal frameworks are often invoked in public sector compliance matters. The fee structure for the proposed revenue collection partnership has not been disclosed, drawing comparisons to previous arrangements that faced compliance disputes.
 
 Future Diversification Strategies The bank's deposit growth, while substantial, is largely policy-driven and could be redirected with changes in administration or procurement cycles. To mitigate this, Sidian is pursuing diversification through SACCO partnerships, with over 120 across Kenya, and a planned branch expansion from 30 to over 100 locations. The success of these initiatives in attracting sticky retail and SME deposits will be crucial for establishing a durable franchise beyond its current institutional book. 
+
 
 

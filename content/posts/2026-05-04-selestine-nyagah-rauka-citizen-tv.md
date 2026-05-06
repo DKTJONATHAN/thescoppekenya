@@ -19,7 +19,6 @@ leadStyle: "punchy declarative sentence, high-energy, names first"
 articleAngle: "Focus on the 'career glow-up' and the influence of industry mentorship in securing top-tier media po"
 sourceUrl: "https://www.mpasho.co.ke/entertainment/2026-05-04-how-actress-selestine-nyagah-prepared-for-her-first-rauka-show-on-citizen-tv"
 ---
-
 Selestine Nyagah is trading her acting scripts for a live microphone as she officially joins the presenting team at Citizen TV. The star, fresh off the set of the popular drama series Neema, has landed a coveted hosting role on the Sunday morning gospel powerhouse, Rauka, marking a major leap into the world of live broadcasting.
 
 ## A Bold New Chapter for Selestine Nyagah
@@ -39,3 +38,4 @@ Such high-level guidance is reminiscent of how community leaders like Geoffrey M
 The reception from the public has been electric, as fans of the Sunday morning show are eager to see how she will handle the shift from playing a character to being herself. Rauka is a staple in many Kenyan households, and the pressure to deliver is immense. However, given her proven ability to carry a lead role in a major drama, there is a strong sense of optimism that she will bring a unique, relatable charm to the Sunday lineup. 
 
 The audience is looking for more than just a host; they want someone who resonates with their struggles and triumphs. Her background in storytelling provides her with a unique advantage, allowing her to facilitate conversations with warmth and authenticity. As she takes her seat in the studio this coming Sunday, all eyes will be on her to see if she can translate her acting magnetism into the world of gospel ministry and music entertainment. Will she bring a new level of energy to the weekend morning slot, or will she adapt the show to fit her own distinct personality? One thing is certain: the Kenyan media landscape is about to get a whole lot more interesting with her behind the desk.
+

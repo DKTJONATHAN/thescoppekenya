@@ -20,19 +20,6 @@ const SITE_URL = 'https://zandani.co.ke';
 const PUBLICATION_NAME = 'Za Ndani';
 const PUBLICATION_LANGUAGE = 'en';
 
-const STATIC_PAGES = [
-  { loc: '/', priority: '1.0', changefreq: 'always' },
-  { loc: '/about', priority: '0.8', changefreq: 'monthly' },
-  { loc: '/contact', priority: '0.8', changefreq: 'monthly' },
-  { loc: '/privacy', priority: '0.5', changefreq: 'monthly' },
-  { loc: '/terms', priority: '0.5', changefreq: 'monthly' },
-  { loc: '/archive', priority: '0.8', changefreq: 'daily' },
-];
-
-const CATEGORIES = [
-  'politics', 'news', 'entertainment', 'gossip', 'sports', 
-  'business', 'lifestyle', 'technology', 'agriculture', 'opinions'
-];
 
 // --- HELPERS ---
 function escapeXml(str) {
@@ -132,6 +119,7 @@ async function loadPosts() {
         image: data.image || '',
         category: data.category || 'News',
         author: data.author || 'Za Ndani',
+        tags: Array.isArray(data.tags) ? data.tags : [],
         description: data.description || data.excerpt || truncateSnippet(body),
         body: body,
       });
@@ -147,24 +135,7 @@ async function loadPosts() {
 
 function generateMainSitemap(posts) {
   const blocks = [];
-  const buildTime = toW3CDate(new Date());
-  const newestPostDate = posts.length ? toW3CDate(posts[0].lastmod || posts[0].date) : buildTime;
-
-  // 1. Static Pages — include <lastmod> on every URL
-  for (const p of STATIC_PAGES) {
-    const lm = p.loc === '/' || p.loc === '/archive' ? newestPostDate : buildTime;
-    blocks.push(`  <url>\n    <loc>${SITE_URL}${p.loc}</loc>\n    <lastmod>${lm}</lastmod>\n    <changefreq>${p.changefreq}</changefreq>\n    <priority>${p.priority}</priority>\n  </url>`);
-  }
-
-  // 2. Categories — lastmod = newest post in that category (fallback to build time)
-  const uniqueCategories = [...new Set([...CATEGORIES, ...posts.map(p => p.category.toLowerCase().replace(/[^a-z0-9-]/g, '-'))])].filter(Boolean);
-  for (const cat of uniqueCategories) {
-    const newestInCat = posts.find(p => p.category.toLowerCase().replace(/[^a-z0-9-]/g, '-') === cat);
-    const lm = toW3CDate(newestInCat ? (newestInCat.lastmod || newestInCat.date) : new Date());
-    blocks.push(`  <url>\n    <loc>${SITE_URL}/category/${cat}</loc>\n    <lastmod>${lm}</lastmod>\n    <changefreq>hourly</changefreq>\n    <priority>0.9</priority>\n  </url>`);
-  }
-
-  // 3. Posts — lastmod reflects 'updated' frontmatter when present, else publish date
+  // Posts only
   for (const p of posts) {
     blocks.push(`  <url>\n    <loc>${SITE_URL}/article/${escapeXml(p.slug)}</loc>\n    <lastmod>${toW3CDate(p.lastmod || p.date)}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>`);
   }
@@ -188,6 +159,7 @@ function generateNewsSitemap(posts) {
       </news:publication>
       <news:publication_date>${toW3CDate(p.date)}</news:publication_date>
       <news:title>${escapeXml(p.title)}</news:title>
+      <news:keywords>${escapeXml(Array.isArray(p.tags) ? p.tags.join(', ') : '')}</news:keywords>
     </news:news>
   </url>`;
   });
@@ -235,10 +207,13 @@ ${items.join('\n')}
 function generateRobotsTxt() {
   return `User-agent: *
 Allow: /
+Disallow: /tag/
+Disallow: /search
+Disallow: /api/
 
 # Sitemaps
 Sitemap: ${SITE_URL}/sitemap.xml
-Sitemap: ${SITE_URL}/sitemap-news.xml
+Sitemap: ${SITE_URL}/news-sitemap.xml
 `;
 }
 
@@ -292,7 +267,7 @@ async function main() {
   const llmsTxt = generateLlmsTxt(posts);
 
   await writeBoth('sitemap.xml', sitemapXml);
-  await writeBoth('sitemap-news.xml', newsXml);
+  await writeBoth('news-sitemap.xml', newsXml);
   await writeBoth('feed.xml', rssXml);
   await writeBoth('robots.txt', robotsTxt);
   await writeBoth('llms.txt', llmsTxt);

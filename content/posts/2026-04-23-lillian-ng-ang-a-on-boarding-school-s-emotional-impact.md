@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["lillian-nganga", "boarding-school-impact", "kenyan-celebrities", "mental-health-kenya"]
 canonical: "https://zandani.co.ke/article/lillian-ng-ang-a-on-boarding-school-s-emotional-impact"
 date: "2026-04-23T23:09:57Z"
+focusKeyword: "Lillian Nganga on Boarding Schools Emotional Impact"
+dateModified: "2026-04-23T23:09:57Z"
 ---
 Kenyan public figure Lillian Ng'ang'a recently shared her personal reflections on boarding schools, sparking considerable online conversation regarding their emotional impact on young children. She questioned the practice of sending children under 13 to such institutions, advocating for home-based growth.
 
@@ -29,3 +31,4 @@ Adding a personal touch to her narrative, Nganga recounted her own experience at
 She also shared a challenging period when she took her firstborn child to boarding school after experiencing the loss of her husband and relocating abroad for work. Although she observed that the experience fostered discipline and responsibility in her child, Nganga confessed to later regretting the emotional distance it inadvertently created.
 
 Her forthright remarks have generated varied reactions across online platforms. Some users have expressed agreement with her views on parenting and child development, while others have staunchly defended the merits of boarding schools in cultivating independence and discipline among young Kenyans. The dialogue continues to unfold as many weigh in on this deeply personal and culturally significant topic.
+

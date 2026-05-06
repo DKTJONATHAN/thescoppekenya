@@ -10,6 +10,8 @@ category: "Entertainment"
 tags: ["amvca-2026", "don-julio", "african-entertainment", "african-film-awards", "amvca-sponsorship"]
 canonical: "https://zandani.co.ke/article/amvca-2026-announces-don-julio-as-headline-sponsor"
 date: "2026-04-24T15:46:55Z"
+focusKeyword: "AMVCA 2026 Announces Don Julio as Headline Sponsor"
+dateModified: "2026-04-24T15:46:55Z"
 ---
 The 12th Africa Magic Viewers' Choice Awards (AMVCA) has announced a major partnership for its 2026 edition, with luxury spirits brand Don Julio Tequila named as the headline sponsor. MultiChoice Nigeria unveiled comprehensive plans for the prestigious Pan-African event in Lagos, setting the main ceremony for May 9, 2026.
 
@@ -26,3 +28,4 @@ The 2026 AMVCA will feature 18 jury-decided categories celebrating technical exc
 
 ### Revitalized Fan Experiences
 Beyond the main awards night, the AMVCA 2026 will bring back popular fan-favourite events, including Icons Night and Cultural Day. These events are dedicated to celebrating industry heavyweights and showcasing African fashion and heritage, respectively. Atinuke Babatunde, Executive Head of Content and Channels at MultiChoice, shared that this edition's vision is centered on reimagining the celebration of African talent, promising an unforgettable experience that is both stylish and impactful.
+

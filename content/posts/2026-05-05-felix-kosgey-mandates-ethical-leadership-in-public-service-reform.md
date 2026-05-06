@@ -10,8 +10,8 @@ tags: ["public service", "kenya government", "felix kosgey", "workplace ethics",
 date: "2026-05-05T18:51:08Z"
 dateModified: "2026-05-05T18:51:08Z"
 schema: "NewsArticle"
+focusKeyword: "Felix Kosgey Mandates Ethical Leadership in Public Service R"
 ---
-
 ## The Compliance Illusion: Why Felix Kosgey’s Reforms Are Doomed by Structural Gridlock
 
 Head of Public Service Felix Kosgey’s latest campaign suggests that the dysfunction plaguing our public sector stems from a deficit of character. His solution-a push for ethical leadership and individual accountability-is framed as a moral correction. Yet, this narrative serves as a convenient distraction. By framing systemic failures as personal failings, the administration avoids confronting the architectural design flaws that render efficient governance an impossibility.
@@ -43,3 +43,4 @@ The current reform cycle is exhausting itself on internal memos and high-level s
 ### What to watch next
 
 The litmus test for this administration will be the upcoming legislative reviews of procurement laws. Should the government move to tighten compliance requirements under the banner of anti-corruption, expect the bureaucracy to grind to an even slower halt. Genuine change will only be signaled when we see the tangible devolution of financial and operational authority to the point of service delivery, rather than an endless stream of circulars from the office of the Head of Public Service.
+

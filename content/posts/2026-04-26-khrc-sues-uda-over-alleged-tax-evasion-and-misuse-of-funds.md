@@ -9,6 +9,8 @@ category: "News"
 tags: ["khrc-uda-lawsuit", "united-democratic-alliance", "nancy-gathungu", "kenya-human-rights-commission", "public-funds-mismanagement"]
 canonical: "https://zandani.co.ke/article/khrc-sues-uda-over-alleged-tax-evasion-and-misuse-of-funds"
 date: "2026-04-26T13:42:38Z"
+focusKeyword: "KHRC Sues UDA Over Alleged Tax Evasion and Misuse of Funds"
+dateModified: "2026-04-26T13:42:38Z"
 ---
 The Kenya Human Rights Commission (KHRC) has initiated legal action against the ruling United Democratic Alliance (UDA) over alleged tax evasion amounting to Ksh69 million and widespread misuse of public funds, according to a press statement issued on Sunday, April 26, 2026.
 
@@ -22,3 +24,4 @@ Despite being the primary recipient of the Political Parties Fund, UDA is allege
 
 ### Calls for Immediate Institutional Action
 The KHRC cautioned that the failure by public institutions and political parties to meet tax and statutory obligations jeopardizes fundamental socio-economic rights, particularly in education and health. These sectors currently face significant funding gaps of Sh260 billion and Sh72 billion respectively. Consequently, the commission has urged the Kenya Revenue Authority (KRA) to recover all unpaid taxes and associated penalties. It has also called upon the Office of the Registrar of Political Parties (ORPP) to review UDA’s eligibility for continued access to public funding. Furthermore, the Ethics and Anti-Corruption Commission (EACC) is pressed to investigate the alleged misuse of public resources, with the Office of the Director of Public Prosecutions (ODPP) expected to collaborate with these bodies to prosecute UDA officials found culpable of tax evasion.
+

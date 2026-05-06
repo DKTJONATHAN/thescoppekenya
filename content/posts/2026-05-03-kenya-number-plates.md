@@ -38,3 +38,4 @@ Kenya's white-front and yellow-rear number plate system is not universally adopt
 France previously adhered to this system but transitioned to white plates on both the front and rear in 2009. Other nations employ different approaches; for instance, the Netherlands, Luxembourg, Israel, and Colombia use yellow plates at both ends. Most European Union countries, including Germany, Italy, and Spain, opt for white plates on both the front and rear.
 
 This detailed regulation highlights a concerted effort towards public safety on Kenyan roads. For insights into broader national discussions, including political developments and media reports, readers can refer to [Pulse Kenya News: Willis Raburu Politics and Radio Jambo Reports].
+

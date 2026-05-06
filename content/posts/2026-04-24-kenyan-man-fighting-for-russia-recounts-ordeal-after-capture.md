@@ -10,6 +10,8 @@ category: "News"
 tags: []
 canonical: "https://zandani.co.ke/article/kenyan-man-fighting-for-russia-recounts-ordeal-after-capture"
 date: "2026-04-24T12:06:20Z"
+focusKeyword: "Kenyan Man Fighting for Russia Recounts Ordeal After Capture"
+dateModified: "2026-04-24T12:06:20Z"
 ---
 A forty-one-year-old Kenyan man identified as Joseph Kabugi has been captured by Ukrainian forces after being recruited to fight for the Russian army. Kabugi claims he was misled into combat roles after seeking technical employment to escape severe financial hardship.
 
@@ -23,3 +25,4 @@ After signing his contract, Kabugi was forced into three weeks of military train
 
 ### Capture and Warning to Kenyans
 Ukrainian forces from the 425th Separate Assault Regiment captured Kabugi while he was searching for food. Now in custody, he has issued a plea to other Kenyans to stay away from the conflict. Za Ndani has established that Kabugi’s capture comes as Defence Intelligence of Ukraine reports that several other Kenyan nationals have already been killed on the frontline while fighting for Russian forces.
+

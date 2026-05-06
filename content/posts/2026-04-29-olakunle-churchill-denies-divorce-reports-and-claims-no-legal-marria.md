@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["olakunle-churchill", "rosy-meurer", "celebrity-divorce-rumors", "legal-marriage-denial"]
 canonical: "https://zandani.co.ke/article/olakunle-churchill-denies-divorce-reports-and-claims-no-legal-marria"
 date: "2026-04-29T22:41:37Z"
+focusKeyword: "Olakunle Churchill denies divorce reports and claims no lega"
+dateModified: "2026-04-29T22:41:37Z"
 ---
 Nigerian businessman Olakunle Churchill has vehemently denied widespread 2026 reports claiming he is divorced from actress Rosy Meurer, branding them false and misleading. He stated there was no legal marriage, only a traditional introduction, and confirmed he was never served any legal documents. Churchill’s clarification has sparked fresh conversations about celebrity unions across the continent.
 
@@ -27,3 +29,4 @@ Churchill also revealed a reconciliation with his ex-wife, actress Tonto Dikeh, 
 ### Rosy Meurer’s Role and Public Narratives
 
 Addressing long-standing narratives about Meurer’s involvement during his past fallout with Dikeh, Churchill pushed back against what he termed exaggerated claims. He clarified that he does not agree with the narrative that Rosy “stood by him” in an overblown manner, emphasizing that the responsibility for his past relationship issues was his alone. This ongoing saga underscores how Pan-African celebrity relationships frequently unfold in the public eye, with speculation often preceding verified facts.
+

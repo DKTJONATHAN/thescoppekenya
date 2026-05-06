@@ -9,8 +9,9 @@ category: "News"
 tags: ["journalist-assault", "allan-chesang", "cherangany-uda-meeting", "press-freedom", "trans-nzoia-county"]
 canonical: "https://zandani.co.ke/article/journalists-from-standard-and-mediamax-attacked-during-uda-meeting-i"
 date: "2026-03-20T17:54:42Z"
+focusKeyword: "Journalists from Standard and Mediamax attacked during UDA m"
+dateModified: "2026-03-20T17:54:42Z"
 ---
-
 Journalists George Njoroge and Gilbert Sitati were assaulted today, Friday, March 20, 2026, while covering a United Democratic Alliance (UDA) meeting in Cherangany, Trans Nzoia. The incident, allegedly perpetrated by individuals linked to Trans Nzoia Senator Allan Chesang, has ignited significant concerns regarding press freedom in Kenya.
 
 Attack on Journalists Sparks Press Freedom Alarm
@@ -22,5 +23,6 @@ Link to Controversial Tender Report The assault is reportedly connected to a con
 DCI Clarifies Tender Scam Separately, the Directorate of Criminal Investigations (DCI) has clarified that claims of officials from President William Ruto’s office being arrested in connection with a tender scam were unfounded. The DCI stated that the suspects involved were impostors who orchestrated a fake tender scheme targeting foreign investors. These individuals posed as officials from key ministries, using forged documents and fake identities to solicit substantial sums of money for a fictitious ambulance supply deal.
 
 Growing Concerns for Media Freedom This incident adds to escalating concerns over press freedom within the region. Amnesty International has previously warned that authorities across East and Southern Africa continue to impose restrictions on media freedom and freedom of expression. Similarly, Reporters Without Borders (RSF) has documented a decline in Kenya’s press freedom rankings, noting increased hostility between the state and media. RSF specifically highlighted violence, intimidation, and arrests faced by journalists, particularly during public protests. President William Ruto's administration has previously allocated funds to compensate victims of protests, reflecting a broader governmental acknowledgment of societal unrest. 
+
 
 

@@ -8,6 +8,7 @@ date: "2026-05-04T17:58:02Z"
 authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 dateModified: "2026-05-04T17:58:02Z"
 schema: "NewsArticle"
+focusKeyword: "KRA whistleblower tips recover KES 68 billion in taxes"
 ---
 ## KRA's iWhistle Platform Bolsters Tax Recovery with Digital Intelligence
 
@@ -24,3 +25,4 @@ The iWhistle platform incorporates a robust incentive structure. Whistleblowers 
 ### Operational Success and Future Implications
 
 A notable success story from earlier this year involved the Port of Mombasa, where investigators uncovered a scheme clearing imported cargo without tax payment. The fraud was detected when inconsistencies between invoices in KRA's iTax and customs systems and actual payments emerged. This data-driven investigation, tracing suspicious mobile numbers to KRA staff and clearing agents, resulted in KES 452.5 million being recovered, the interdiction of 6 employees, and the suspension of 21 cargo agents' permits. This robust approach to tax collection through digital platforms not only ensures compliance but also underpins critical national development agendas, supporting infrastructure projects and broad-based government initiatives across regions like Kisii and Nyamira, as outlined by [President Ruto Promotes Broad-Based Government and Infrastructure Projects in Kisii and Nyamira](https://zandani.co.ke/article/president-ruto-promotes-broad-based-government-and-infrastructure-pr). KRA's iWhistle demonstrates the transformative potential of digital innovation in fostering accountability and efficient resource mobilization within public institutions across Africa.
+

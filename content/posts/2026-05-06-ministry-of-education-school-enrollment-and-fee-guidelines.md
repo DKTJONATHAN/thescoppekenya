@@ -10,8 +10,8 @@ tags: ["education", "kenya", "school fees", "julius bitok", "secondary education
 date: "2026-05-06T06:14:58Z"
 dateModified: "2026-05-06T06:14:58Z"
 schema: "NewsArticle"
+focusKeyword: "Ministry of Education Plans Enrollment Expansion for Top Sch"
 ---
-
 ## Expanding National School Enrollment: Opportunity or Overcrowding?
 
 The Ministry of Education is rolling out a plan to increase capacity in top-tier high schools. While parents see this as a chance for better education, many are asking if this expansion provides true equality or simply stretches existing infrastructure to its breaking point.
@@ -39,3 +39,4 @@ Education remains the primary engine for social mobility in Kenya. With national
 Keep a close eye on the actual infrastructure audits conducted in the coming months. If the government follows through on its promise to invest in under-enrolled schools, it may signal a shift toward regional parity. If the policy remains fixated on expanding only the top 10 percent of schools, expect the admission lottery to become even more frantic as infrastructure gaps widen. 
 
 Access to quality education should be a standard right, not a competitive prize won through school-level expansion.
+

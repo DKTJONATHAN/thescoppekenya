@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["ps-omollo-scandal", "widows-champion-controversy", "omollo-alleged-affairs", "kenyan-public-figure-scandal", "kenyan-political-gossip"]
 canonical: "https://zandani.co.ke/article/ps-omollo-widows-champion-faces-scandal-over-alleged-affairs"
 date: "2026-04-28T19:15:49Z"
+focusKeyword: "PS Omollo Widows Champion Faces Scandal Over Alleged Affairs"
+dateModified: "2026-04-28T19:15:49Z"
 ---
 Interior Principal Secretary Raymond Omollo, widely recognized for spearheading a 'Widow Empowerment Programme' in Kenya's Nyanza region since 2023, now faces persistent allegations concerning extramarital affairs. These unverified claims, circulating publicly, present a perceived contrast with his philanthropic image, sparking considerable discussion.
 
@@ -27,3 +29,4 @@ Among ordinary citizens, often referred to as "comrades," there is a growing sen
 ### Potential Electoral Consequences
 
 The undercurrent of public discontent suggests that such alleged personal conduct, particularly when seemingly at odds with a public role of great responsibility, could carry political implications. In the view of many, personal integrity and public accountability are intrinsically linked. This scrutiny from the court of public opinion serves as a reminder that while good deeds are publicly acknowledged, perceived inconsistencies can have potential ramifications for future electoral ambitions.
+

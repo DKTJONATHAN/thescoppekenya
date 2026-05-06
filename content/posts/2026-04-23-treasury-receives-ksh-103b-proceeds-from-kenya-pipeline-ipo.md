@@ -10,6 +10,8 @@ category: "News"
 tags: []
 canonical: "https://zandani.co.ke/article/treasury-receives-ksh-103b-proceeds-from-kenya-pipeline-ipo"
 date: "2026-04-23T21:07:15Z"
+focusKeyword: "Treasury Receives Ksh 103B Proceeds From Kenya Pipeline IPO"
+dateModified: "2026-04-23T21:07:15Z"
 ---
 The National Treasury has received Ksh 103.45 billion following the successful partial sale of the Kenya Pipeline Company. This significant transfer of funds marks the conclusion of the country’s first electronic Initial Public Offering and signals a major shift in state ownership.
 
@@ -27,3 +29,4 @@ The National Infrastructure Fund will use these resources to finance large-scale
 Following the conclusion of the partial sale, the Treasury officially stripped the company of its status as a national government entity. Through a gazette notice issued on Wednesday, April 22, CS Mbadi revoked the previous designation under the Public Finance Management Act. This legal change formally removes the company from the schedule of National Government Entities, allowing it to operate under a new corporate governance framework.
 
 The Cabinet Secretary noted that the handover symbolises a commitment to transparency and the prudent management of public resources. The move is expected to provide the necessary fiscal space for the government to complete priority infrastructure projects while reducing the burden of state-owned enterprises on the exchequer.
+

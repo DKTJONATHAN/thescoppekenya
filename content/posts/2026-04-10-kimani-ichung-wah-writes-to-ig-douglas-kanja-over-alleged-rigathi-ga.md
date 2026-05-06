@@ -9,8 +9,9 @@ category: "News"
 tags: ["kimani-ichungwah", "rigathi-gachagua", "kikuyu-town-rally", "douglas-kanja", "political-incitement"]
 canonical: "https://zandani.co.ke/article/kimani-ichung-wah-writes-to-ig-douglas-kanja-over-alleged-rigathi-ga"
 date: "2026-04-10T17:09:19Z"
+focusKeyword: "Kimani Ichung�wah writes to IG Douglas Kanja over alleged Ri"
+dateModified: "2026-04-10T17:09:19Z"
 ---
-
 National Assembly Majority Leader Kimani Ichung’wah has formally written to Inspector General of Police Douglas Kanja on April 10, 2026, expressing serious concerns over alleged incitement and planned violence. He links these activities to Democracy for the Citizens Party (DCP) leader Rigathi Gachagua, preceding a political rally in Kikuyu Town.
 
 Political Tensions Mount Over Kikuyu Rally
@@ -20,5 +21,6 @@ Allegations of Incitement and Violence In his letter, dated April 10 and obtaine
 Call for Police Presence The lawmaker has specifically requested Inspector General Kanja not to order the withdrawal of police officers from the planned rally. Ichung’wah claims there are systematic attempts by Gachagua to cause mayhem in the absence of security personnel. "Do not fall into this trap to withdraw security teams from protecting Kikuyu Town against this vile man and his campaign of violence and destruction," he warned. Ichung’wah also referenced incidents of destruction from June 2024, when the NG-CDF offices in Kikuyu were allegedly torched by organized groups, describing this as part of a continuing pattern of politically instigated violence.
 
 Counter-Allegations and Broader Context These developments follow Gachagua’s own letter to the police boss on April 5, 2026, in which he claimed coordinated efforts involving "goons" and sections of the police to interfere with his party’s meeting scheduled for April 11. In his communication, the opposition figure accused the Kikuyu lawmaker of making both direct and indirect threats targeting the planned rally. The escalation of political rhetoric also follows heated comments between the former Deputy President and President William Ruto during the late Ol Kalou MP David Kiaraho's funeral on Wednesday, April 8, 2026. During the event, Gachagua reportedly asked the Head of State to "tame" Ichung’wah to avoid jeopardizing his political legacy. Furthermore, Ichung’wah claims to have received intelligence suggesting groups are being mobilized from several counties, including Kiambu, Nairobi, Murang’a, Kirinyaga, and Nyandarua, with the intention of being transported to Kikuyu ahead of the rally. 
+
 
 

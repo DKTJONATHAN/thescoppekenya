@@ -10,6 +10,8 @@ category: "News"
 tags: []
 canonical: "https://zandani.co.ke/article/national-addressing-bill-2025-to-standardise-kenya-addresses"
 date: "2026-04-24T07:13:13Z"
+focusKeyword: "National Addressing Bill 2025 to Standardise Kenya Addresses"
+dateModified: "2026-04-24T07:13:13Z"
 ---
 By Celestine Nzioka
 
@@ -24,3 +26,4 @@ Mbugua underscored the broader impact of a reliable addressing system, stating i
 The government has already initiated foundational work through a multi-sectoral team comprising 16 public and private institutions. This team has been developing a policy framework, legislative structure, and standards for the system, with the ICT ministry presently reviewing these documents. Under the proposed framework, the Communications Authority of Kenya would oversee implementation, collaborating with national and county governments to ensure accurate road naming and location coding. Enhanced property identification could also benefit real estate, particularly in areas like [Mombasa's Kizingo neighborhood, which attracts high-profile residents and high-value property investments](https://zandani.co.ke/article/mombasa-s-kizingo-neighborhood-attracts-high-profile-residents-and-h).
 
 However, Members of Parliament raised concerns about delays in the system's rollout. Kisumu Central MP Shakir Shabir criticised officials, noting that many residents still depend on informal directions despite the availability of modern tools. Shabir asserted that identifying and documenting roads is an executive responsibility that should not await parliamentary initiation. The committee will continue to receive submissions before tabling its report on the Bill.
+

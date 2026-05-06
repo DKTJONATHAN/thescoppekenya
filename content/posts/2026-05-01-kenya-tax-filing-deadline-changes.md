@@ -9,6 +9,7 @@ description: "Treasury CS John Mbadi proposes moving the Kenya tax filing deadli
 excerpt: "Treasury CS John Mbadi proposes moving the Kenya tax filing deadline to April 30 starting 2027 to shorten the window for taxpayers. Get the details."
 tags: ["Business News", "Finance Bill 2026", "John Mbadi", "Tax Filing Deadline", "Kenya"]
 focusKeyword: "Kenya tax filing deadline"
+dateModified: "2026-05-01T19:50:05Z"
 ---
 ## How Finance Bill 2026 Changes Kenya Tax Filing Deadline to April
 
@@ -27,3 +28,4 @@ While companies currently have a six-month window for filing, their corporate ta
 The Finance Bill 2026 also introduces a new subsection, 1A, addressing nil tax returns. If the Bill is adopted, individuals and companies with a nil amount of tax payable will be required to file their returns within one month after their year-end. This means nil returns, which are currently due by June 30, would instead be due by January 31. Like other legislative proposals, this Bill will undergo public participation throughout May, a process crucial for gathering feedback from various stakeholders. Other Cabinet Secretaries also engage with public concerns on various matters, such as when Cabinet Secretary Kabogo recently sought TikTok assurances to curb election misinformation.
 
 The proposed tax changes are slated to take effect on January 1, 2027, coinciding with the 2026 tax filing season.
+

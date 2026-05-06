@@ -9,8 +9,9 @@ category: "News"
 tags: ["kenya-revenue-authority", "nil-tax-returns", "mobile-tax-filing", "tax-compliance", "nil-return-deadline"]
 canonical: "https://zandani.co.ke/article/kenya-revenue-authority-limits-mobile-phone-tax-filing-to-nil-return"
 date: "2026-03-19T13:43:52Z"
+focusKeyword: "Kenya Revenue Authority limits mobile phone tax filing to ni"
+dateModified: "2026-03-19T13:43:52Z"
 ---
-
 The Kenya Revenue Authority (KRA) confirmed today, March 19, 2026, that taxpayers can utilize mobile phones for filing nil returns exclusively, but only after March 31. This clarification addresses widespread inquiries as the annual tax filing season progresses, offering a specific mobile option under strict conditions for those not earning income or operating a business.
 
 Mobile Filing Streamlined for Nil Returns
@@ -22,5 +23,6 @@ Challenges for Employed and Business Taxpayers For individuals who are employed 
 New Pre-Filled Return System The KRA's clarification coincides with the commencement of SMS notifications to employed individuals, detailing a simpler and faster method for filing returns. These messages, predominantly dispatched on Thursday, March 19, announced the official rollout of a pre-filled return system. This new system automatically populates employment income details. Consequently, individuals earning a salary will no longer be required to manually enter most of their income information when submitting their annual returns.
 
 June 30 Filing Deadline With the deadline for tax filing set to lapse on June 30, the KRA has encouraged taxpayers to file their returns promptly to avoid the last-minute rush. 
+
 
 

@@ -8,4 +8,7 @@ image: ""
 category: "Sports"
 tags: []
 date: "2026-04-24T12:45:30Z"
+focusKeyword: "Premier League Top Scorers"
+dateModified: "2026-04-24T12:45:30Z"
 ---
+

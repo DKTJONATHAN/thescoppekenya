@@ -6,6 +6,8 @@ author: "Sports Desk"
 image: "https://i.ibb.co/TMwjTZnR/6259916e1ad2.jpg"
 category: "Sports"
 date: "2026-04-21T20:37:04Z"
+focusKeyword: "Carragher Man City Have Title Edge Arteta Sack Predictions"
+dateModified: "2026-04-21T20:37:04Z"
 ---
 ## Arsenal's Inevitable Slide: Same Old Story, Different Season
 
@@ -22,5 +24,6 @@ The chasm in attacking quality between Manchester City and Arsenal was laid bare
 ### Arteta's Unshakeable but Unjustified Throne
 
 Perhaps the most baffling aspect of this late-season collapse is Carragher's assertion that Mikel Arteta's job is safe. While loyalty is commendable, it borders on delusion when a team, widely considered the "best squad and the best team" for "the majority of this season," falters so spectacularly with the finish line in sight. To suggest that "most people in this country have felt Arsenal have the best squad" yet they are set to finish trophyless again, begs serious questions about accountability. Previous seasons saw Arsenal as underdogs; this year, the narrative was different, yet the outcome appears depressingly similar. How many "learning curves" can one club endure before genuine change is demanded?
+
 
 

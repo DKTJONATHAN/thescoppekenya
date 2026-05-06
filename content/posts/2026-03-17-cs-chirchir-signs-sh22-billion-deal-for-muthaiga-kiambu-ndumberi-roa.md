@@ -9,8 +9,9 @@ category: "News"
 tags: ["muthaiga-kiambu-ndumberi-road", "davis-chirchir", "stecol-corporation", "road-infrastructure-development", "kiambu-road-expansion"]
 canonical: "https://zandani.co.ke/article/cs-chirchir-signs-sh22-billion-deal-for-muthaiga-kiambu-ndumberi-roa"
 date: "2026-03-17T11:57:49Z"
+focusKeyword: "CS Chirchir signs Sh22 billion deal for Muthaiga-Kiambu-Ndum"
+dateModified: "2026-03-17T11:57:49Z"
 ---
-
 Roads and Transport Cabinet Secretary Davis Chirchir on Tuesday oversaw the signing of a Sh22 billion Engineering, Procurement, and Construction (EPC) contract for the Muthaiga-Kiambu-Ndumberi Road. Stecol Corporation will construct the 23.5-kilometre dual carriageway, a key milestone for Nairobi-Kiambu connectivity.
 
 Sh22 Billion Muthaiga-Kiambu-Ndumberi Road Project Underway
@@ -22,5 +23,6 @@ Enhancing Connectivity Between Nairobi and Kiambu The 23.5-kilometre Muthaiga-Ki
 Comprehensive Infrastructure and Safety Features Beyond the dual carriageway, the project encompasses essential supporting infrastructure. This includes the construction of bypasses, interchanges, and access roads, all designed to further improve connectivity and streamline traffic flow. Additionally, the design incorporates dedicated non-motorised transport (NMT) lanes and pedestrian walkways. These features are integral to enhancing safety for cyclists and foot traffic, ensuring that the upgraded corridor serves all road users effectively.
 
 Alignment with Kenya Vision 2030 Objectives The development of the Muthaiga-Kiambu-Ndumberi Road aligns with the government's broader strategy to modernize the Nairobi Metropolitan transport network under Kenya Vision 2030. President William Ruto had announced in December last year that construction would commence in early 2026 after securing funding for the project, personally committing to launch the Ksh22 billion initiative. The project's focus on boosting economic activity and improving urban mobility is a key intervention for transport between Nairobi and its surrounding satellite towns. While other areas of transport regulation, such as the NTSA instant traffic fines system, have recently faced legal scrutiny, infrastructure development remains a priority. 
+
 
 

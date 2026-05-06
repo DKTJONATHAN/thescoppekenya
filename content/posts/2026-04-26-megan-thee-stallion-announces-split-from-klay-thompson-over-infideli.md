@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["megan-thee-stallion", "klay-thompson", "infidelity-allegations", "celebrity-breakups"]
 canonical: "https://zandani.co.ke/article/megan-thee-stallion-announces-split-from-klay-thompson-over-infideli"
 date: "2026-04-26T15:06:44Z"
+focusKeyword: "Megan Thee Stallion announces split from Klay Thompson over"
+dateModified: "2026-04-26T15:06:44Z"
 ---
 Grammy-winning artist Megan Thee Stallion confirmed her breakup with NBA star Klay Thompson on Saturday, April 25, amidst allegations of infidelity and a breakdown of trust. The unexpected split, announced across her social media, marks the end of a highly publicised romance that captivated fans across Africa and beyond.
 
@@ -27,3 +29,4 @@ The couple had only recently gone public with their romance a few months ago. Th
 ### Broader Continental Developments
 
 While the entertainment sphere navigates personal upheavals, the wider African continent continues to see significant movements impacting its future. Beyond celebrity news, prominent figures are also shaping the continent's trajectory, evident in developments such as Aga Khan selling a majority stake in Nation Media Group to Tanzanian businessman Rostam Azizi. This reflects the dynamic shifts within Africa's business and media landscapes, underscoring a continuous flow of high-profile decisions across various sectors.
+

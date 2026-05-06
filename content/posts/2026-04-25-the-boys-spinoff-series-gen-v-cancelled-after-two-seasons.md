@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["gen-v-cancelled", "the-boys-spinoff", "prime-video-series", "gen-v-season-two", "amazon-mgm-studios"]
 canonical: "https://zandani.co.ke/article/the-boys-spinoff-series-gen-v-cancelled-after-two-seasons"
 date: "2026-04-25T13:42:43Z"
+focusKeyword: "The Boys spinoff series Gen V cancelled after two seasons"
+dateModified: "2026-04-25T13:42:43Z"
 ---
 Gen V, the popular superhero college drama set in The Boys universe, has concluded its run after two seasons, with its storyline officially wrapped up in the Season 2 finale. The series' end came amid significant production delays and storyline changes, partly due to the tragic passing of cast member Chance Perdomo.
 
@@ -27,3 +29,4 @@ Even though Gen V has concluded its standalone run, the characters are not disap
 ### The Boys Universe Continues Beyond 2026
 
 Despite its two-season run, Gen V successfully explored themes of institutional corruption, power struggles, and identity, offering a fresh perspective within the established universe. The focus now shifts towards the ultimate chapter of the flagship series, with *The Boys* scheduled to conclude with its Season 5 finale on May 20, 2026. However, this does not mark the end of the universe itself. A new spinoff, *Vought Rising*, is already slated for 2027, and discussions hint at additional projects, including *The Boys Mexico*. The world that Gen V helped build is poised to expand further, cementing its legacy within the ever-growing superhero saga.
+

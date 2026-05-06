@@ -9,8 +9,9 @@ category: "News"
 tags: ["haiti-security-mission", "gang-suppression-force", "jack-mbaka", "mss-transition-phase", "international-peacekeeping"]
 canonical: "https://zandani.co.ke/article/kenya-to-retain-troops-in-haiti-as-security-mission-enters-transitio"
 date: "2026-03-20T07:58:44Z"
+focusKeyword: "Kenya to Retain Troops in Haiti as Security Mission Enters T"
+dateModified: "2026-03-20T07:58:44Z"
 ---
-
 Some Kenyan troops will remain in Haiti as the Multinational Security Support Mission (MSS) enters a transition and drawdown phase, MSS Spokesperson Jack Mbaka confirmed on March 19, 2026. This phased departure prepares for the incoming Gang Suppression Force (GSF), with officers gradually returning home from their tour of duty.
 
 Transition Underway for Multinational Security Support Mission
@@ -20,5 +21,6 @@ Gradual Drawdown and GSF Arrival Za Ndani has learned that MSS Spokesperson Jack
 Withdrawal Timeline and Mission Losses When questioned about a full withdrawal, Mbaka declined to provide a specific timetable, stating the ongoing process aims to ensure a smooth transition to the new force's expected 5,500 troops. However, Kenyan police troops are anticipated to fully depart Haiti by around October 2026, aligning with stipulated UN and U.S. timelines, indicating a gradual rather than singular departure date. On March 17, 2026, 215 Kenyan police officers returned from the Haiti mission, landing at Jomo Kenyatta International Airport (JKIA). Inspector General of Police Douglas Kanja was present to welcome the returning contingent. Tragically, three Kenyan police officers lost their lives during anti-gang operations, a somber reminder of the human cost of the mission.
 
 Funding and Historical Context U.S. Secretary of State Marco Rubio stated last month that personnel commitments for the Gang Suppression Force are robust, but acknowledged that donor funding remains a work in progress, with Washington actively seeking contributions to close existing financial gaps. Kenya's involvement in Haiti dates back to 2023, when it became the sole nation willing to lead the mission after Canada declined, and Caribbean governments initially insisted Haiti's own police force should manage the crisis without external military intervention. The mission was designed to field approximately 2,500 personnel; however, at its peak, only about 1,100 officers were ever deployed, falling short of what security analysts deemed necessary to significantly disrupt gang operations. 
+
 
 

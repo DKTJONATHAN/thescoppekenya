@@ -11,6 +11,7 @@ category: "Entertainment"
 tags: ["Kenyan Celebrities", "Simon Kabu", "Bonfire Adventures", "Entertainment News"]
 canonical: "https://zandani.co.ke/article/simon-kabu-kids-rumors"
 date: "2026-05-01T17:30:24Z"
+dateModified: "2026-05-01T17:30:24Z"
 ---
 Bonfire Adventures CEO Simon Kabu has definitively refuted widespread 2026 social media claims regarding secret Simon Kabu kids and alleged shifts in his business ownership. The prominent entrepreneur is taking robust legal action against those disseminating the defamatory content, aiming to protect his personal and professional integrity in the public sphere.
 
@@ -24,3 +25,4 @@ The entrepreneur's unwavering commitment to his family life remains a consistent
 
 ### Integrity in Kenya's Business Landscape
 In the dynamic landscape of Kenyan enterprise, maintaining a pristine reputation is paramount for leaders like Simon Kabu. His decisive action reflects a broader emphasis on corporate integrity and transparency, especially as the nation focuses on significant development plans. These include ongoing discussions around funding mechanisms for initiatives like the National Infrastructure Fund, an integral part of Ruto's 5T Growth Plan, where public trust in business leadership is absolutely essential.
+

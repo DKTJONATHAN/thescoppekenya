@@ -7,8 +7,9 @@ image: "https://i.ibb.co/dswNGyKN/4cd9e127dd78.webp"
 category: "Sports"
 tags: ["leeds-united", "man-utd", "old-trafford", "red-card"]
 date: "2026-04-14T08:16:31Z"
+focusKeyword: "Leeds Stun Man Utd in Historic Old Trafford Upset as Worst E"
+dateModified: "2026-04-14T08:16:31Z"
 ---
-
 Leeds United delivered a stunning 2-1 victory over Manchester United at Old Trafford, marking their first league triumph there since 1981. This historic upset, fueled by a controversial Lisandro Martinez red card, has significantly impacted the race for Champions League qualification in the 2026 Premier League season.
 
 Old Trafford Shakes: Leeds Deliver Major Upset In a dramatic Premier League encounter, Leeds United secured a momentous 2-1 win against Manchester United at Old Trafford, their first league victory at the venue since 1981. This result marks Leeds' first league triumph over their rivals since 2002. The crucial three points now place Leeds six points clear of the relegation zone with only six matches remaining, significantly improving their survival prospects, with Opta giving them a mere 2.24% chance of relegation. Noah Okafor was the hero for Leeds, bagging two goals, while Casemiro managed to pull one back for Manchester United.
@@ -22,5 +23,6 @@ VAR, Violent Conduct, and Premier League Precedent The red card decision has ign
 Champions League Hopes Dented: United's Road Ahead The defeat is a significant blow to Manchester United's aspirations for Champions League qualification this season. Despite the setback, Opta's supercomputer still gives them a 91.95% chance of a top-five finish, though this probability has slightly decreased. Brighton, Everton, and Brentford are noted as having outside chances of securing a top-five spot.
 
 The Top-Five Race Intensifies Manchester United faces a critical period, with a challenging trip to Chelsea scheduled for Saturday. A rare victory or even a draw at Stamford Bridge is essential to keep their Champions League qualification hopes on track. Conversely, a defeat, especially with upcoming home matches against Brentford and Liverpool, could place Carrick's side in a precarious position. Carrick downplayed the impact of a 24-day gap between fixtures, but commentators like Simon Stone suggested it might explain the team's sluggish performance. This dramatic upset has certainly injected more intrigue into the Premier League's top-five race as the season progresses.
+
 
 

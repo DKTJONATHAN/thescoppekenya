@@ -7,6 +7,8 @@ image: "https://i.ibb.co/gbS3c60K/e1d66199c27c.webp"
 category: "Sports"
 tags: ["unai-emery", "aston-villa", "var-controversy", "premier-league"]
 date: "2026-05-01T05:29:20Z"
+focusKeyword: "VAR Is So So Bad Furious Unai Emery Blasts Clear Red Card Sn"
+dateModified: "2026-05-01T05:29:20Z"
 ---
 Jona Munyi for Za Ndani
 

@@ -30,3 +30,4 @@ The Marurui area is characterized by a complex mix of private property, public u
 ### Call for Intervention and Legal Battles
 
 Much of the land in Marurui remains contested between private entities and the government. A significant 4-acre parcel near Windsor Golf Club is currently at the centre of an ongoing court battle. The family of the late Super Minister John Michuki claims ownership of this parcel, while the Nairobi County Government maintains the land was surrendered for public use. In April last year (April 2025), the Environment and Land Court (ELC) issued a halt order on construction on this contested land. However, conflicts and further protests among the involved parties have continued despite the court's directive, underscoring the deep-seated nature of land issues in the area, a situation that the latest **Marurui squatters protest** has once again brought into sharp focus.
+

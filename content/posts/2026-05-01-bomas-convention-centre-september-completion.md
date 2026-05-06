@@ -9,6 +9,7 @@ description: "MPs confirm the Bomas Convention Centre will be completed in Septe
 excerpt: "MPs confirm the Bomas Convention Centre will be completed in September following construction delays and event shifts. Get the details on the new timeline."
 tags: ["Kenya News", "Bomas of Kenya", "Raymond Omollo", "Senate Committee", "Nairobi"]
 focusKeyword: "Bomas Convention Centre"
+dateModified: "2026-05-01T10:09:21Z"
 ---
 ## Bomas Convention Centre Set for September Completion
 
@@ -29,3 +30,4 @@ The complex spans over 323,500 square meters and is strategically located near t
 ### State-of-the-Art Facilities
 
 Upon completion, the Bomas Convention Centre will feature a presidential pavilion designed to accommodate up to 30 heads of state. It will have the capacity to host up to 11,000 delegates across 35 meeting rooms. Key facilities include a 5,000-seat main auditorium and a 3,500-seat secondary hall. The complex will also incorporate a hospitality zone, retail spaces, and additional amenities to cater to large-scale events.
+

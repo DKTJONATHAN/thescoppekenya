@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["kamene-goro", "dj-bonez", "kamene-goro-husband", "dj-bonez-abandonment-claims", "kamene-goro-relative-dispute"]
 canonical: "https://zandani.co.ke/article/relative-disputes-kamene-goro-s-claims-that-husband-dj-bonez-abandon"
 date: "2026-04-28T04:10:52Z"
+focusKeyword: "Relative disputes Kamene Goros claims that husband DJ Bonez"
+dateModified: "2026-04-28T04:10:52Z"
 ---
 A public spat has erupted between media personality Kamene Goro and an alleged relative, Jeff Mwaura, who refutes her recent accusations of abandonment against husband DJ Bonez. Mwaura claims DJ Bonez was consistently present during a family medical crisis, contradicting Goro's assertions made earlier this week.
 
@@ -23,3 +25,4 @@ Taking to X, under the handle @JeffMwaura, the individual clarified that DJ Bone
 ### DJ Bonez Remains Silent Amidst Public Accusations
 
 Despite the public back-and-forth and his wife's accusations, DJ Bonez has yet to issue a statement regarding the allegations. Compounding the situation, Kamene Goro recently celebrated a deceased ex-boyfriend, referring to him as the love of her life, adding another layer of intrigue to the couple's relationship dynamics. The unfolding events leave many wondering about the future of this prominent celebrity couple.
+

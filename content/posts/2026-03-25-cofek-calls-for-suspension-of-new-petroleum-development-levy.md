@@ -9,8 +9,9 @@ category: "News"
 tags: ["petroleum-development-levy", "cofek", "fuel-price-hike-kenya", "energy-sector-policy", "cost-of-living-crisis"]
 canonical: "https://zandani.co.ke/article/cofek-calls-for-suspension-of-new-petroleum-development-levy"
 date: "2026-03-25T10:10:58Z"
+focusKeyword: "COFEK calls for suspension of new petroleum development levy"
+dateModified: "2026-03-25T10:10:58Z"
 ---
-
 Consumer Federation of Kenya (COFEK) today, Thursday, March 25, 2026, called for the immediate suspension of the Petroleum Development Levy (Amendment) Order, 2025. The federation argues the newly introduced levy, operational since November 2025, will exacerbate the country's rising cost of living.
 
 Levy's Unilateral Implementation Sparks Outcry
@@ -22,5 +23,6 @@ Constitutional Challenge and Oversight Demands Mutoro asserted the levy was impo
 Calls for Transparency and Rationalisation The federation demands a comprehensive audit of all fuel-related taxes to rationalise existing levies, duties, and taxes into a consumer-sensitive framework. COFEK also called for enhanced parliamentary oversight in the petroleum sector and transparency regarding revenue collected under the new levy. They advocate for reversing the LPG levy to align with clean energy objectives.
 
 Fuel Supply Concerns Amid Regional Instability COFEK's call follows a day after the Petroleum Outlets Association of Kenya (POAK) urged the government to allow sourcing fuel from private suppliers to avert shortages. On Tuesday, March 24, POAK claimed the current government-to-government supply arrangement is unsustainable amid escalating Middle East tensions. POAK chairman Martin Chomba reported that 20 percent of the country's over 6000 petrol stations are already experiencing shortages, prompting panic buying. 
+
 
 

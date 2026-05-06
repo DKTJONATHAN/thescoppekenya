@@ -9,6 +9,7 @@ description: "Finance Bill 2026 car tax targets luxury vintage vehicles worth ov
 excerpt: "Finance Bill 2026 car tax targets luxury vintage vehicles worth over 10 million with a new 50 percent excise duty for revenue. Read the full story."
 tags: ["Kenya News", "Finance Bill 2026", "National Treasury", "Luxury Car Tax", "Nairobi"]
 focusKeyword: "Finance Bill 2026 car tax"
+dateModified: "2026-05-01T15:35:31Z"
 ---
 ## Finance Bill 2026 Car Tax Targets Classic Vehicles
 
@@ -27,3 +28,4 @@ The government's primary objective with this new classic car tax is to generate 
 This is not the first instance of the government proposing increased taxation on luxury vehicles. Two years prior, the Finance Bill 2024 introduced a motor vehicle circulation tax. This earlier proposal mandated a tax rate based on the car's value, with a minimum of Ksh5,000 and a maximum of Ksh100,000, payable during the acquisition of an insurance policy. However, President Ruto later rescinded the 2024 Finance Bill following widespread public protests across the country.
 
 Meanwhile, the Kenya Meteorological Department forecasts heavy rains across five regions.
+

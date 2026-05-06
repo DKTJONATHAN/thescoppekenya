@@ -7,6 +7,8 @@ image: "https://i.ibb.co/tTsSxvbD/3436bd2dd205.webp"
 category: "Sports"
 tags: ["daniel-farke", "leeds-united", "efl-championship", "football-news"]
 date: "2026-05-02T08:14:49Z"
+focusKeyword: "âItâs Massiveâ Daniel Farke Hails Leeds Unitedâs Crucial Ste"
+dateModified: "2026-05-02T08:14:49Z"
 ---
 Leeds United have all but confirmed their Premier League survival for the 2026/2027 season, securing a vital 3-1 victory over Burnley. Under Daniel Farkeâ€™s astute leadership, the club demonstrated remarkable resilience, navigating a challenging period to gather crucial points and effectively guarantee another year of top-flight football for the West Yorkshire side.
 

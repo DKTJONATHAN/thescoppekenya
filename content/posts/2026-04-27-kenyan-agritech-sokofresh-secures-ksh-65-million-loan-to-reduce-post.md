@@ -5,6 +5,8 @@ author: "Grace Mkamburi"
 image: "https://i.ibb.co/TDH917DZ/3f2ee0ad8f2d.jpg"
 category: "Business"
 date: "2026-04-27T19:00:11Z"
+focusKeyword: "Kenyan agritech SokoFresh secures KSh 65 million loan to red"
+dateModified: "2026-04-27T19:00:11Z"
 ---
 ## Kenyan Agritech Secures Critical Financing
 
@@ -21,3 +23,4 @@ The investment by UNCDF underscores a broader transformation within development 
 ### Performance-Linked Financing
 
 A notable aspect of SokoFresh’s financing package is the conditionality of repayment, which is directly tied to specific operational milestones. These include targets for expanding farmer reach and achieving efficiency in cold storage utilization. Such performance-linked structures are increasingly prevalent in blended finance transactions. They serve to align capital costs with impact delivery, although they concurrently introduce execution risk for recipients operating within the narrow margins characteristic of agricultural environments.
+

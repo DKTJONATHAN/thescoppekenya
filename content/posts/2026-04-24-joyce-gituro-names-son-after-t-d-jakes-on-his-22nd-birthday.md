@@ -10,6 +10,8 @@ category: "Entertainment"
 tags: ["joyce-gituro", "t-d-jakes", "kenyan-celebrities", "celebrity-news-kenya", "joyce-gituro-son"]
 canonical: "https://zandani.co.ke/article/joyce-gituro-names-son-after-t-d-jakes-on-his-22nd-birthday"
 date: "2026-04-24T22:57:40Z"
+focusKeyword: "Joyce Gituro Names Son After TD Jakes on His 22nd Birthday"
+dateModified: "2026-04-24T22:57:40Z"
 ---
 Veteran broadcaster Joyce Gituro recently celebrated her youngest son Jakes Nyanjom's 22nd birthday, revealing the profound story behind his unique name. Gituro shared that she prophetically named him after the globally renowned American Bishop T.D. Jakes, a revelation that delighted fans across Kenya.
 
@@ -24,3 +26,4 @@ Joyce Gituro's decision to name her son after Bishop T.D. Jakes underscores the 
 ### Celebrity Parenthood and Public Connection
 
 Gituro's openness about her family life offers a charming glimpse into the private worlds of public figures. Her decision to share this personal detail highlights the narratives that often captivate audiences, much like the widespread interest in topics such as [Couples Weigh Digital Privacy Against Transparency in Phone Password Debate](https://zandani.co.ke/article/couples-weigh-digital-privacy-against-transparency-in-phone-password). As Jakes Nyanjom steps into his 22nd year, fans are keen to see what the future holds for Gituro's son. Kenyan youth continue to inspire, whether on the global stage of sports, with [Athletics News, Latest Results and Top Stories: Kenyan Stars Shine Bright in 2026 and Beyond](https://zandani.co.ke/article/athletics-news-latest-results-top-stories-kenyan-stars), or in other burgeoning fields. The proud mother's tribute beautifully showcased the enduring bond between parent and child, alongside a nod to profound spiritual influence.
+

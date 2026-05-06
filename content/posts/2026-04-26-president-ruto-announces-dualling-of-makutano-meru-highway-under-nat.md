@@ -9,6 +9,8 @@ category: "News"
 tags: ["president-william-ruto", "makutano-meru-highway", "national-infrastructure-fund", "transport-infrastructure", "road-dualling"]
 canonical: "https://zandani.co.ke/article/president-ruto-announces-dualling-of-makutano-meru-highway-under-nat"
 date: "2026-04-26T17:59:38Z"
+focusKeyword: "President Ruto announces dualling of Makutano-Meru highway u"
+dateModified: "2026-04-26T17:59:38Z"
 ---
 President William Ruto announced the dualling of the 169-kilometre Makutano-Meru highway through the new National Infrastructure Fund (NIF) on Sunday, April 26, 2026, during a church service in Tharaka Nithi County. This critical project aims to significantly improve trade and transport between Meru and Nairobi.
 
@@ -27,3 +29,4 @@ Addressing the long-standing safety concerns at Nithi Bridge, President Ruto con
 ### Broader Infrastructure Development Mandate
 
 Beyond the Makutano-Meru highway, the National Infrastructure Fund is earmarked for other crucial projects, including the construction of dams nationwide to bolster food security. The beautification of the Jomo Kenyatta International Airport (JKIA) was previously announced as the inaugural project to be funded under the new initiative, making the highway project the second major undertaking by NIF.
+

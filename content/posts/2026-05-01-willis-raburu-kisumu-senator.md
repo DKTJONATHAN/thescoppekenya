@@ -11,6 +11,7 @@ category: "Entertainment"
 tags: ["Kenyan Politics", "Willis Raburu", "Kisumu County", "Media Personalities", "Entertainment News"]
 canonical: "https://zandani.co.ke/article/willis-raburu-kisumu-senator"
 date: "2026-05-01T10:00:28Z"
+dateModified: "2026-05-01T10:00:28Z"
 ---
 Popular media personality Willis Raburu has officially confirmed his audacious bid for the Kisumu Senator seat in the upcoming 2026 General Election. This strategic pivot sees the former journalist aiming to transition from reporting the news to creating the policies that will define Kisumu’s future, signalling a significant development in the political landscape.
 
@@ -25,3 +26,4 @@ The decision by Raburu to seek the Kisumu Senator position underscores a growing
 ### Setting Sights on Kisumu's Future
 
 Raburu's campaign is expected to focus on development initiatives and leveraging his extensive experience to bring tangible change to Kisumu. The year 2026 is proving to be one of substantial shifts across various sectors; the entertainment world, for instance, has recently seen major announcements, including Netflix’s official acquisition of Ben Affleck’s AI studio. These high-profile transitions reflect a broader environment where influential figures are charting new courses, and Willis Raburu Kisumu Senator aspirations are a prominent example within the Kenyan political scene.
+

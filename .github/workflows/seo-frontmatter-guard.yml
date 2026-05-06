@@ -1,0 +1,41 @@
+name: SEO Frontmatter Guard
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "content/posts/*.md"
+      - "scripts/normalize_posts_seo.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  normalize-seo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Normalize Post SEO Frontmatter
+        run: python scripts/normalize_posts_seo.py
+
+      - name: Commit Changes
+        run: |
+          if git diff --quiet; then
+            echo "No SEO normalization changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/posts/*.md
+          git commit -m "chore(seo): normalize generated post metadata [skip ci]"
+          git push

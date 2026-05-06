@@ -14,6 +14,7 @@ const allPostsFromMarkdown = getAllPosts();
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   // Show latest 5 posts as trending (no fetch needed)
   const trendingPosts = useMemo(() => allPostsFromMarkdown.slice(0, 5), []);
@@ -106,6 +107,23 @@ export function Header() {
             </nav>
 
             <div className="flex items-center gap-1.5">
+              <form
+                className="hidden xl:flex items-center border border-divider px-2 py-1 rounded-md"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  if (!searchQuery.trim()) return;
+                  window.location.href = `/tag/${encodeURIComponent(searchQuery.trim())}`;
+                }}
+              >
+                <Search className="w-4 h-4 text-muted-foreground mr-2" />
+                <input
+                  type="search"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search..."
+                  className="bg-transparent outline-none text-sm w-40"
+                />
+              </form>
               <ThemeToggle />
               <Button
                 variant="ghost"

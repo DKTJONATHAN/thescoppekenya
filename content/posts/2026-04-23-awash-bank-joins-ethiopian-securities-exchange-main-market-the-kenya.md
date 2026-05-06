@@ -6,6 +6,8 @@ author: "Grace Mkamburi"
 image: "https://i.ibb.co/G3bVYh5t/db0cc062cbc4.jpg"
 category: "Business"
 date: "2026-04-23T10:58:23Z"
+focusKeyword: "Awash Bank Lists on Ethiopian Securities Exchange"
+dateModified: "2026-04-23T10:58:23Z"
 ---
 ## Ethiopian Securities Exchange Capital Growth
 
@@ -22,3 +24,4 @@ Awash reported a gross profit of ETB 25.67 billion for the fiscal year ending Ju
 ### Strategic Pipeline for 2026
 
 The ESX plans to complete nine listings before the end of the Ethiopian fiscal year on July 7, 2026. Dashen Bank and Bank of Abyssinia are the next expected participants, having completed their registration with the capital market authority. Abay Bank, Anbesa Bank, and Amhara Bank are also in advanced regulatory stages. This rapid expansion of the exchange provides a structured exit and entry point for capital, which is essential for regional economic integration. As the Ethiopian market matures, it offers a new frontier for East African financial services. This shift toward institutional investment stands in contrast to other sectors where funding remains a challenge, a sentiment echoed in the [Magical Kenya Open: Junior Players 'Inspired,' But Where's the Real Dough, Darlings?](https://zandani.co.ke/article/magical-kenya-open-junior-players-inspiration-cash-gossip) report which questions the availability of liquid capital for local talent. Awash Bank's 989 branches and 15 million customers provide a massive foundation for the exchange as it seeks to drive national economic growth.
+

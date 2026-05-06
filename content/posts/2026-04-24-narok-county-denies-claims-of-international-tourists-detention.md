@@ -10,6 +10,8 @@ category: "News"
 tags: []
 canonical: "https://zandani.co.ke/article/narok-county-denies-claims-of-international-tourists-detention"
 date: "2026-04-24T09:12:35Z"
+focusKeyword: "Narok County Denies Claims of International Tourists Detenti"
+dateModified: "2026-04-24T09:12:35Z"
 ---
 The Narok County Government has dismissed allegations that international tourists were unlawfully detained at a lodge within the Maasai Mara National Reserve. In a statement issued by the County Secretary, officials termed the claims false, misleading, and aimed at causing alarm.
 
@@ -29,3 +31,4 @@ Za Ndani established that the deteriorating condition of the lodge also contribu
 The county government clarified that the lodge remains under its ownership, refuting claims of a property dispute made by the hospitality company. Security operations are currently being overseen by the Chief Park Warden in collaboration with other security agencies within the reserve to ensure the safety of all guests.
 
 While the hospitality firm attributed the incident to a dispute over the premises, the county maintained that the core issue remains the internal management of the lodge and its failure to adhere to reserve regulations. Tourists currently at the facility remain under the supervision of park authorities.
+

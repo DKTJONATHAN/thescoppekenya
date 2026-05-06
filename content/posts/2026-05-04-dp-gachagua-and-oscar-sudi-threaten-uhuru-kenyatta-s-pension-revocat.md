@@ -12,6 +12,7 @@ date: "2026-05-04T04:11:21Z"
 authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-05-04T04:11:21Z"
 schema: "NewsArticle"
+focusKeyword: "DP Gachagua and Oscar Sudi Threaten Uhuru Kenyattas Pension"
 ---
 In recent weeks, Deputy President Rigathi Gachagua and Oscar Sudi have publicly threatened to revoke former President Uhuru Kenyatta's retirement benefits. These escalating warnings, delivered across various public forums, aim to silence his perceived political activity and criticism, but Kenyatta remains conspicuously unbothered.
 
@@ -30,3 +31,4 @@ The strategy of public shaming, particularly when aired in forums like church se
 ### A Strengthened Resolve
 
 Ultimately, in the court of Kenyan public opinion, the threats intended to silence are perceived to be bolstering Kenyatta's position rather than diminishing it. The former President's consistent refusal to engage directly with his accusers, combined with his dismissive stance, reinforces an image of an unperturbed and influential figure. This approach suggests that the attempts to curtail his political activity may inadvertently be enhancing his public standing.
+

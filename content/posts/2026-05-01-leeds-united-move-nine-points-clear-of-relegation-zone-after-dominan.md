@@ -7,6 +7,8 @@ image: "https://i.ibb.co/G4LDYVYK/3418d3b72be4.webp"
 category: "Sports"
 tags: ["leeds-united", "burnley", "premier-league", "relegation-battle"]
 date: "2026-05-01T22:36:54Z"
+focusKeyword: "Leeds United Move Nine Points Clear of Relegation Zone After"
+dateModified: "2026-05-01T22:36:54Z"
 ---
 Leeds United delivered a commanding performance against already-relegated Burnley, securing a vital 3-0 victory that propels them nine points clear of the Premier League's relegation zone. This dominant display provides a significant boost to their survival hopes, while Burnley continues to navigate challenges post-managerial change. The win puts Daniel Farke's side on 43 points with three games remaining in the 2025/2026 season.
 

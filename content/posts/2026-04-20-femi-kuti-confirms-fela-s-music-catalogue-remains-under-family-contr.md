@@ -9,8 +9,9 @@ category: "Entertainment"
 tags: ["femi-kuti", "fela-kuti", "afrobeat", "music-catalogue-rights", "kuti-family-estate"]
 canonical: "https://zandani.co.ke/article/femi-kuti-confirms-fela-s-music-catalogue-remains-under-family-contr"
 date: "2026-04-20T19:41:37Z"
+focusKeyword: "Femi Kuti confirms Felaâs music catalogue remains under fami"
+dateModified: "2026-04-20T19:41:37Z"
 ---
-
 Femi Kuti has confirmed that Afrobeat pioneer Fela Anikulapo-Kuti's extensive music catalogue remains firmly under family control, never having been sold. The estate strategically employs licensing deals, ensuring continued ownership while generating significant revenue as Fela's global profile soars.
 
 Fela's Legacy: Family Firmly Controls Iconic Music Catalogue The question of ownership regarding Fela Anikulapo-Kuti's monumental musical output has frequently surfaced online, particularly when new licensing deals or streaming platforms highlight his work. Femi Kuti has definitively clarified the matter, stating in a recent Channels Television interview that the catalogue is entirely managed by the family and has never been considered for outright sale. "We never sold it," Femi stated plainly. "Fela's estate, which is controlled by the family, controls it. But we licensed the music, so we control it. I don't know how many more years we have right now, but when the years are done, we'll take it over and license it again."
@@ -32,5 +33,6 @@ Yeni Kuti's Unwavering Stance Central to the family's decision to retain ownersh
 Global Accolades Propel Fela's Influence The clarification from Femi Kuti arrives at a significant moment, with Fela's international profile reaching unprecedented heights. In December 2025, Fela Kuti became the first African musician to receive a Grammy Lifetime Achievement Award, joining an elite group of musical legends. This honor was swiftly followed by his induction into the Rock and Roll Hall of Fame in 2026, alongside Nigerian-born Sade Adu, marking them as the first African artists inducted since the Hall's establishment in 1986. Furthermore, his seminal 1976 album, *Zombie*, was inducted into the Grammy Hall of Fame in 2025. A scripted biopic is currently in development, and his catalogue continues to experience increasing streaming and licensing volumes globally.
 
 Intergenerational Responsibility In an era defined by significant music catalogue sales, often fetching hundreds of millions for artists and estates, the Kuti family's position stands as a deliberate counter-statement. Femi Kuti framed this decision as a matter of intergenerational responsibility, aligning it with a robust financial strategy. "It will always be in the hands of the family," he affirmed. "And I hope even after us, our children will understand how we have maintained dignity and integrity with Fela's legacy and do that same honour to him after we leave this life." This long-term vision reflects a strategic approach to assets, much like companies aiming for sustained profit despite market fluctuations. For instance, Britam reported a Ksh7.9 billion pre-tax profit in 2025, demonstrating resilience despite challenging economic conditions. Nearly three decades after his passing, Fela's music is more commercially valuable and globally recognized than ever before, illustrating the wisdom of the family's steadfast guardianship. 
+
 
 

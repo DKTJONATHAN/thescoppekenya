@@ -9,8 +9,9 @@ category: "News"
 tags: ["kpc", "pius-mwendwa", "joe-sang-arrest", "kpc-leadership-change", "corruption-probe"]
 canonical: "https://zandani.co.ke/article/kpc-appoints-pius-mwendwa-acting-managing-director-following-joe-san"
 date: "2026-04-03T17:54:05Z"
+focusKeyword: "KPC Appoints Pius Mwendwa Acting Managing Director Following"
+dateModified: "2026-04-03T17:54:05Z"
 ---
-
 By Celestine Nzioka, Za Ndani The Kenya Pipeline Company (KPC) has appointed Pius Mwendwa as its acting Managing Director, effective Friday evening, April 3, 2026. This decision follows the arrest of former MD Joe Sang amidst a comprehensive investigation into alleged procurement irregularities within the state corporation.
 
 Leadership Transition Amidst Corruption Probe
@@ -22,5 +23,6 @@ Widespread Investigation into Fuel Procurement Joe Sang’s arrest is part of a 
 DCI Scrutiny and Public Concerns The DCI is examining supply chains, procurement processes, and potential collusion that may have allowed substandard fuel to enter the country. The investigation will also determine whether due process was bypassed, with potential charges including abuse of office for those found culpable. These arrests coincide with growing public concern over fuel quality, as motorists report engine damage linked to contaminated petroleum products, raising questions about EPRA’s effectiveness in enforcement. EPRA has not yet released a statement regarding the authority’s operations or the allegations facing its Director.
 
 Government Assurances on Fuel Stability Amid public anxiety over fuel availability, the government confirms that current reserves cover petrol, diesel, and kerosene, with additional shipments already scheduled to boost stocks. Government Spokesperson Isaac Mwaura stated on Channel Africa Friday that the country has already received this month's shipment and assured motorists that fuel prices will remain stable throughout April 2026. 
+
 
 

@@ -5,8 +5,9 @@ author: "Celestine Nzioka"
 image: "https://i.ibb.co/bjgwfK7K/7b18aa7f91cc.jpg"
 category: "News"
 date: "2026-03-05"
+focusKeyword: "Orengos State House Visit Why He Met Ruto Amidst Backlash"
+dateModified: "2026-03-05"
 ---
-
 <h2>Governor Orengo Defends State House Visit Amidst Political Backlash</h2> Siaya Governor James Orengo has clarified the rationale behind his visit to State House in November 2025, asserting that his engagement with the national government was driven by constitutional obligations and a commitment to the welfare of Siaya residents. The governor's visit, which included other Siaya County officials and Members of the County Assembly (MCAs), drew significant scrutiny due to his established record of criticism against President William Ruto's administration.
 
 Context of the Engagement The meeting, presided over by President William Ruto, occurred last year and subsequently ignited public debate. Governor Orengo's consistent vocal opposition to the national government had led many to interpret the visit as a potential shift in his political alignment. However, speaking on Thursday, March 5, during an interview on Spice FM, Orengo firmly stated that the engagement did not signify a change in his political stance.
@@ -18,5 +19,6 @@ Safeguarding Devolution and Resource Equity The governor further explained that 
 Warning Against 'Imperial Presidency' Despite advocating for inter-governmental collaboration, Orengo issued a caution against what he termed the ‘return of the imperial presidency.’ He observed an increasing trend of leaders converging on State House in pursuit of favours, arguing that such a pattern makes it even more imperative to insist on fairness and equity in the distribution of national resources.
 
 Commitment to Service Delivery Governor Orengo reiterated that his primary focus remains on delivering services to the people of Siaya and strengthening the devolved system of government. He firmly distinguished between necessary governmental engagement and political alignment, emphasizing that the former should not be misconstrued as the latter.
+
 
 

@@ -9,8 +9,9 @@ category: "News"
 tags: ["al-shabaab-recruitment", "kahawa-law-courts", "minor-radicalisation", "counter-terrorism", "hassan-terrorism-conviction"]
 canonical: "https://zandani.co.ke/article/somali-national-convicted-for-recruiting-minor-into-al-shabaab-netwo"
 date: "2026-03-19T09:03:40Z"
+focusKeyword: "Somali National Convicted for Recruiting Minor into Al-Shaba"
+dateModified: "2026-03-19T09:03:40Z"
 ---
-
 A Somali national was convicted today, Thursday, March 19, 2026, at the Kahawa Law Courts for terrorism-related offences, including recruiting a minor into the Al-Shabaab network. This landmark prosecution by the Director of Public Prosecutions highlighted his role in radicalisation and facilitating extremist activities.
 
 Landmark Terrorism Conviction The conviction followed a comprehensive prosecution revealing the suspect, identified as Hassan, was instrumental in recruitment, radicalisation, and facilitation of extremist activities. The Kahawa Law Courts found Hassan guilty on multiple terrorism-related charges under the Prevention of Terrorism Act, 2012.
@@ -20,5 +21,6 @@ Orchestrated Recruitment and Facilitation Central to the case was Hassan's calcu
 Judicial Ruling and Upcoming Sentencing Prosecution Counsel Kennedy Amwayi led the State's case, presenting consistent testimony from the victim and other compelling evidence demonstrating Hassan's deep involvement in grooming the minor for terrorism-related activities. Magistrate Boaz Ombewa noted that the evidence proved the charges against the accused beyond reasonable doubt. In his ruling, Magistrate Ombewa stated, "I find that Prosecution established a troubling narrative of facilitation, ideological indoctrination, and preparation, and proved beyond reasonable doubt that the accused was the author, financier, recruiter, and radicaliser as charged." The case will proceed to mention on April 20, 2026, when the court is expected to schedule a date for Hassan's sentencing.
 
 Heightened Terrorism Concerns This conviction occurs amid escalating concerns regarding terrorist activity within the country. In January, a chief and a teacher were killed in a suspected Al-Shabaab attack in Garissa. In February, the Counter Terrorism Policing Unit reportedly disrupted a planned terror attack in Nairobi, allegedly linked to suspected Al-Shabaab militants. 
+
 
 

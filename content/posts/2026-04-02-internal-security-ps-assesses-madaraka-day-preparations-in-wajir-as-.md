@@ -9,8 +9,9 @@ category: "Entertainment"
 tags: ["madaraka-day-wajir", "wajir-stadium-development", "madaraka-day-preparations", "internal-security-ps-wajir"]
 canonical: "https://zandani.co.ke/article/internal-security-ps-assesses-madaraka-day-preparations-in-wajir-as-"
 date: "2026-04-02T18:05:35Z"
+focusKeyword: "Internal Security PS assesses Madaraka Day preparations in W"
+dateModified: "2026-04-02T18:05:35Z"
 ---
-
 Principal Secretary for Internal Security, Dr. Raymond Omollo, recently jetted into Wajir to oversee the ongoing preparations for Kenya's prestigious Madaraka Day celebrations on June 1, 2026. With the main stadium currently at 28 percent completion, excitement builds as the nation anticipates a spectacular event in the Northern Frontier.
 
 Wajir Gears Up for Grand Madaraka Day Celebrations
@@ -20,5 +21,6 @@ Accelerating Towards a National Spectacle Dr. Omollo, who also chairs the Steeri
 Beyond the Stadium: Infrastructure and VIP Readiness The focus extends beyond the stadium walls, with significant upgrades underway for Wajir International Airport, improved access roads, enhanced security measures, and expanded accommodation facilities. These critical infrastructure developments are essential to comfortably host the multitude of expected guests, including national dignitaries and eager citizens. "The preparations go beyond the stadium. We are equally focused on critical infrastructure such as the airport, road networks, security systems, and accommodation to ensure that Wajir is fully ready to host the nation," Dr. Omollo affirmed. These meticulous preparations for a grand welcome are reminiscent of the excitement surrounding new arrivals in the celebrity world, such as when [Adekunle Gold and Simi welcome second child](https://zandani.co.ke/article/adekunle-gold-and-simi-welcome-second-child).
 
 Wajir's Moment in the National Spotlight The decision to host Madaraka Day in Wajir aligns with the government's policy of rotating national celebrations, a strategy aimed at promoting inclusivity and national cohesion. This initiative also promises lasting development benefits for host counties. Dr. Omollo expressed confidence in Wajir's readiness and extended an invitation to all Kenyans to join the celebrations on June 1, 2026. Wajir Governor H.E. Ahmed Abdullahi, North Eastern Regional Commissioner Mr. John Otieno, and Government Spokesperson Dr. Isaac Mwaura were among the key figures present during the inspection, highlighting the high-level coordination involved in this monumental undertaking. 
+
 
 

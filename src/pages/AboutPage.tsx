@@ -17,6 +17,16 @@ export default function AboutPage() {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="About Us | Za Ndani" />
         <meta name="twitter:description" content="Za Ndani is Kenya's premier digital newsroom delivering breaking news, exclusive entertainment insights, and trending stories." />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zandani",
+          "url": "https://zandani.co.ke",
+          "logo": "https://zandani.co.ke/logo.png",
+          "foundingDate": "2024-01-01",
+          "description": "Zandani is a Kenyan digital news platform covering general news, entertainment, sports, business and lifestyle.",
+          "contactPoint": [{ "@type": "ContactPoint", "email": "contact@zandani.co.ke", "contactType": "newsroom" }]
+        })}</script>
       </Helmet>
       <div className="container max-w-5xl mx-auto px-4 py-16 md:py-24">
         {/* Hero Section */}

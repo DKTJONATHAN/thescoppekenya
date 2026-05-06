@@ -9,6 +9,7 @@ description: "Nairobi court acquits Mike Sonko of money laundering charges due t
 excerpt: "Nairobi court acquits Mike Sonko of money laundering charges due to lack of evidence but orders him to defend irregular tenders. Read the full story."
 tags: ["Kenya News", "Mike Sonko", "Nairobi City Hall", "Money Laundering", "Nairobi"]
 focusKeyword: "Mike Sonko acquittal"
+dateModified: "2026-04-30T10:30:39Z"
 ---
 ## Mike Sonko Acquittal in Money Laundering Case
 
@@ -25,3 +26,4 @@ Despite the Mike Sonko acquittal on money laundering charges, the court found th
 ### Claims of Political Motivation
 
 In recent months, Sonko has consistently asserted that his various court cases are politically motivated, stemming from public opposition to corruption. Testifying in February this year before Magistrate Charles Ondieki in an alleged Ksh20 million graft case, Sonko claimed his prosecution was orchestrated to punish and silence him amid entrenched corruption within City Hall. He alleged that powerful individuals, opposed to his policies aimed at developing Nairobi County, including building new markets, improving infrastructure, and alleviating the social well-being of Nairobians, conspired to bring him down. During his tenure, Sonko revealed he terminated contracts in the revenue department and dismissed cashiers implicated in a Ksh20 million graft scheme.
+

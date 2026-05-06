@@ -9,8 +9,9 @@ category: "Entertainment"
 tags: ["hope-kid", "pastor-victor-kanyari", "salvation-healing-ministry", "kenyan-gospel-artists"]
 canonical: "https://zandani.co.ke/article/hope-kid-defends-pastor-victor-kanyari-for-embracing-individuals-rej"
 date: "2026-04-21T09:09:20Z"
+focusKeyword: "Hope Kid defends Pastor Victor Kanyari for embracing individ"
+dateModified: "2026-04-21T09:09:20Z"
 ---
-
 Gospel musician Hope Kid recently offered a spirited defense of controversial preacher Victor Kanyari on the popular Obinna Show podcast, shedding light on why the Salvation Healing Ministry leader continues to attract blessings despite persistent public criticism. Hope Kid attributed Kanyari's success to his willingness to embrace individuals often ostracized by mainstream society, providing a unique perspective on his ministry.
 
 Hope Kid Explains Kanyari's Unwavering Influence Hope Kid's remarks come as Pastor Victor Kanyari remains a prominent figure in the public eye, even announcing his bid for the Kasarani Member of Parliament seat in the upcoming 2027 general election, a decision he shared during a Sunday service on April 12, 2026. This move signifies his continued engagement with the public sphere, often amidst varied reactions, as seen when his recent prediction about an Arsenal football match outcome spectacularly backfired, drawing widespread online commentary.
@@ -22,5 +23,6 @@ Divine Favor vs. Public Opinion According to the popular singer, Kanyari’s sus
 A Refuge for Controversial Personalities The Salvation Healing Ministry, under Pastor Kanyari’s leadership, has recently become a sanctuary for various social media personalities embroiled in controversy. Figures such as Marion Naipei and Choice Kinoti have sought refuge at the church following viral scandals. Kanyari has publicly offered them support, often using affectionate terms while providing a platform for them to share their narratives without severe scrutiny. This approach to public figures facing intense scrutiny echoes broader conversations around public figures, such as former CS Raphael Tuju, who recently faced accusations from the DCI regarding faking his own kidnapping [https://zandani.co.ke/article/dci-accuses-former-cs-raphael-tuju-of-faking-his-kidnapping].
 
 Beyond Spiritual Guidance Beyond its spiritual offerings, Kanyari's church has also been associated with providing practical assistance, including vital financial support. This aid can be particularly significant for individuals whose livelihoods are severely impacted by online backlash and the subsequent loss of brand partnerships. Hope Kid’s insights add a fresh dimension to the ongoing public discourse surrounding Pastor Kanyari, reframing his often-controversial ministry style as one fundamentally centered on inclusion rather than exclusion. 
+
 
 

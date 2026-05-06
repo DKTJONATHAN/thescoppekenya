@@ -7,6 +7,8 @@ image: "https://i.ibb.co/XfRxgZFH/42d9defc0990.webp"
 category: "Sports"
 tags: ["premier-league", "arsenal-fc", "man-city", "newcastle-united"]
 date: "2026-04-26T08:08:04Z"
+focusKeyword: "Arsenal Move Three Points Clear of Man City After Eze Stunne"
+dateModified: "2026-04-26T08:08:04Z"
 ---
 For Za Ndani by Jona Munyi
 

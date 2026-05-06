@@ -6,6 +6,8 @@ author: "Elizabeth Muthoni"
 image: "https://i.ibb.co/rG4Lh8Vb/2fa3f7f3e5c8.webp"
 category: "Technology"
 date: "2026-04-23T15:39:14Z"
+focusKeyword: "Connected Africa Summit to Set New AI and Digital Trade Rule"
+dateModified: "2026-04-23T15:39:14Z"
 ---
 ## Connected Africa Summit to Forge Africa's Digital Economy Rules
 
@@ -26,3 +28,4 @@ Ministerial delegations from Ethiopia, Malawi, Uganda, Gabon, Guinea, Chad, Zimb
 ### Addressing the Digital Divide
 
 Despite the summit's ambitious agenda, CS Kabogo acknowledged the significant gap between aspirations and current realities. Less than a third of Africa's population currently uses the internet, and broadband access remains expensive relative to household incomes across the continent. He highlighted that artificial intelligence rules are too often crafted without African representation, underscoring the urgency for the continent to actively participate in these crucial global conversations. The ICT Authority, organizer of the event, plans to establish a permanent secretariat to ensure continuity for future summits.
+

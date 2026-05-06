@@ -9,6 +9,7 @@ description: "Panic as Dr Aggrey High School fire erupts in Taita Taveta. Kenya 
 excerpt: "Panic as Dr Aggrey High School fire erupts in Taita Taveta. Kenya Red Cross responds as students flee. The cause remains unknown. Get the details."
 tags: ["Kenya News", "Dr Aggrey High School", "Kenya Red Cross", "Taita Taveta", "School Fires"]
 focusKeyword: "Dr Aggrey High School fire"
+dateModified: "2026-04-30T17:02:04Z"
 ---
 ## Dr Aggrey High School Fire in Taita Taveta Raises Concerns
 
@@ -25,3 +26,4 @@ This is not the first instance of a fire at the institution. In 2025, Dr Aggrey 
 ### Broader Context of School Fires
 
 On the same day, Mithiru Girls' School in Limuru also faced an indefinite closure following a massive fire that obliterated a dormitory, resulting in losses worth millions. School administration attributed the Mithiru Girls' fire to a suspected electrical fault. Parents were notified to collect their children, with no specified resumption date due to the extensive damage to critical infrastructure. The increasing frequency of such incidents underscores a need for thorough investigations into fire safety protocols within educational institutions across the country.
+

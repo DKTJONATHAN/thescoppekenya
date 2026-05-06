@@ -9,8 +9,9 @@ category: "News"
 tags: ["mbeere-north-recount", "leonard-wamuthende", "justice-richard-mwongo", "united-democratic-alliance", "electoral-litigation"]
 canonical: "https://zandani.co.ke/article/high-court-orders-partial-recount-in-mbeere-north-by-election"
 date: "2026-03-27T19:13:34Z"
+focusKeyword: "High Court orders partial recount in Mbeere North by-electio"
+dateModified: "2026-03-27T19:13:34Z"
 ---
-
 The High Court today, Friday, March 27, 2026, mandated a partial recount of ballots and election materials from the disputed 2025 Mbeere North by-election, where Leonard Wamuthende was initially declared the winner. This order presents a significant setback for the United Democratic Alliance (UDA).
 
 Court Mandates Scrutiny in Mbeere North Justice Richard Mwongo of the Embu High Court directed that the recount specifically target polling stations and ballot boxes where irregularities were reported, while dismissing broader allegations of voter bribery and tampering. The ruling highlighted the necessity for a limited scrutiny and recount of election materials, drawing on evidence presented by both parties and the District Returning Officer's (DRO) report.
@@ -22,5 +23,6 @@ KIEMS Kits and Voter Registers Under Review Additionally, all 15 ballot boxes ho
 Full Recounts in Select Stations A complete recount is scheduled for Gitiburi 1 and 2 polling stations, where a fire previously compromised the chain of custody. Kaungu polling station will also undergo a full recount following violent incidents and overcrowding that forced a temporary 30-minute closure. The court further ordered the examination of election forms (Form 35A) from eight polling stations, namely Rwagori Primary School, Karimari Primary School, Kanyuambora Primary School, Karambari Primary School, Kamauwa Primary School, Ibutuka Primary School, Kogari Primary School, and St Mary's Kanganga Primary School, where alterations were reported.
 
 By-Election Context and Reactions The Mbeere North by-election, held on November 27, 2025, was marked by widespread violence, bloodshed, and allegations of irregularities, drawing considerable attention from political observers and legal authorities. Democratic Party leader Justin Muturi welcomed the ruling, criticizing the Independent Electoral and Boundaries Commission (IEBC) for its conduct of the election process. Muturi stated, "This is a major victory for truth, transparency, and the will of the people. The Court has opened the door for a full interrogation of the electoral process, including access to KIEMS data, ensuring that nothing is hidden and nothing is taken at face value." This demand for clear and undeniable accountability resonates across various spheres, prompting a closer look at institutional transparency, mirroring ongoing discussions on accountability in other sectors, such as the financial implications explored in [Tiwa Savage's Berklee Music Foundation: The Hidden Costs for African Music Pros!](https://zandani.co.ke/article/tiwa-savage-berklee-music-foundation-hidden-costs-african-music-pros). 
+
 
 

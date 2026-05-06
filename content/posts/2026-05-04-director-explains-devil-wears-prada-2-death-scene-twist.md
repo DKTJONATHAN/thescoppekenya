@@ -8,6 +8,7 @@ date: "2026-05-04T11:58:26Z"
 authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 dateModified: "2026-05-04T11:58:26Z"
 schema: "NewsArticle"
+focusKeyword: "Director explains Devil Wears Prada 2 death scene twist"
 ---
 ## Devil Wears Prada 2's Shocking Death Scene: The Actor Who Wanted to Watch His Own Funeral
 
@@ -30,3 +31,4 @@ The funeral scene itself was a spectacle, featuring Justin Theroux's "hilarious"
 While the core quartet-Meryl Streep, Anne Hathaway, Emily Blunt, and Stanley Tucci-returned unscathed, and Miranda's twin daughters (Tracie Thoms, Suzanne and Colleen Dengel) made a comeback, some familiar faces were conspicuously absent. Supermodel Gisele Bündchen, who played *Runway* staffer Serena in the original, couldn't reprise her role due to scheduling conflicts around the 2025 birth of her baby. Similarly, Adrian Grenier, originally slated for a cameo as Andy's ex Nate, found timing simply didn't work out.
 
 *The Devil Wears Prada 2* is now playing in theaters nationwide, offering a fresh, dramatic twist that reshapes the world of high fashion. For more on the biggest happenings in pop culture, fashion, and entertainment, sign up for our EW Dispatch newsletter.
+

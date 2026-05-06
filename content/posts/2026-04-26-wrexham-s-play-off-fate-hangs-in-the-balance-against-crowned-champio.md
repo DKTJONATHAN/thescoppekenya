@@ -7,6 +7,8 @@ image: "https://i.ibb.co/1G6CzLzY/ee2fb0f4a76a.webp"
 category: "Sports"
 tags: ["wrexham-afc", "coventry-city", "play-off-battle", "football-news"]
 date: "2026-04-26T12:31:27Z"
+focusKeyword: "Wrexhamâs Play-Off Fate Hangs in the Balance Against Crowned"
+dateModified: "2026-04-26T12:31:27Z"
 ---
 By Jona Munyi for Za Ndani (zandani.co.ke)
 

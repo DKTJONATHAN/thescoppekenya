@@ -9,8 +9,9 @@ category: "News"
 tags: ["matatu-fare-hike", "epra-fuel-prices", "matatu-saccos", "public-transportation"]
 canonical: "https://zandani.co.ke/article/matatu-operators-raise-fares-after-epra-increases-fuel-prices"
 date: "2026-04-15T04:18:18Z"
+focusKeyword: "Matatu Operators Raise Fares After EPRA Increases Fuel Price"
+dateModified: "2026-04-15T04:18:18Z"
 ---
-
 Transport operators and matatu saccos nationwide have implemented an immediate fare increment effective Wednesday, April 15, 2026. This move follows the Energy and Petroleum Regulatory Authority (EPRA)'s latest fuel price review for April to May 2026, which saw significant increases in key petroleum products.
 
 Transport Operators Adjust Fares After EPRA Fuel Price Hike
@@ -22,5 +23,6 @@ Significant Rise in Transport Operating Costs The Kenya Transporters Association
 Industry Leaders Confirm Fare Increments Albert Karakacha, President of the Matatu Owners Association, confirmed that fare adjustments would take effect from Wednesday, April 15. He stated that the significant rise in diesel prices, a primary fuel for public transport, necessitated the upward revision of fares for commuters. Operators were urged to engage clients and contractual partners transparently to explain the basis of these fare increments.
 
 Government Measures to Cushion Consumers EPRA indicated that the government has taken steps to mitigate the impact of the price hikes on consumers. This includes a reduction in Value Added Tax (VAT) on petroleum products from 16 per cent to 13 per cent. Additionally, approximately Ksh6.2 billion from the Petroleum Development Levy has been deployed to cushion consumers from the full extent of the price increases. 
+
 
 

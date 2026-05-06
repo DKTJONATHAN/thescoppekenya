@@ -8,6 +8,8 @@ image: "https://i.ibb.co/bg5sBpvJ/5330938a35ec.webp"
 category: "Sports"
 tags: []
 date: "2026-04-24T22:27:52Z"
+focusKeyword: "Forest Win Narrows Premier League Relegation to West Ham Spu"
+dateModified: "2026-04-24T22:27:52Z"
 ---
 Nottingham Forest secured a significant 5-0 victory over Sunderland, moving them to 39 points in the Premier League and creating an eight-point gap from 18th-placed Tottenham and a six-point lead over 17th-placed West Ham. This win has considerably boosted Forest's hopes of avoiding relegation, especially considering that only six teams in Premier League history (38-game campaigns) have been relegated with 39 or more points, with the last two being Birmingham and Blackpool in 2010-11.
 

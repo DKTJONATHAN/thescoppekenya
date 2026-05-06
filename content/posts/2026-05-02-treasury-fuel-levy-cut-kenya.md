@@ -9,6 +9,7 @@ description: "The National Treasury proposes a 50 percent cut to the Kenya fuel 
 excerpt: "The National Treasury proposes a 50 percent cut to the Kenya fuel levy to lower costs for motorists and reduce the cost of living. Get the full details."
 tags: ["Kenya News", "National Treasury", "Fuel Levy", "Road Maintenance Fund", "Nairobi"]
 focusKeyword: "Kenya fuel levy"
+dateModified: "2026-05-02T07:14:02Z"
 ---
 Celestine Nzioka, For Za Ndani
 
@@ -27,3 +28,4 @@ The Road Annuity Programme is a government initiative enabling road construction
 ### Standoff with the International Monetary Fund
 
 This securitization arrangement is a point of contention with the International Monetary Fund (IMF). Bloomberg reported in April that the IMF insists Kenya classify this securitized revenue as public debt. Such a reclassification would push the country's debt stock above Ksh13 trillion, potentially impacting whether the Ruto administration secures a new IMF lending program to replace the one that expired earlier this year. The transparent valuation of public assets and liabilities remains crucial, much like the [DCI explains the process for valuing seized narcotic drugs](https://zandani.co.ke/article/dci-explains-the-process-for-valuing-seized-narcotic-drugs) in ensuring accountability across government operations. Treasury Cabinet Secretary Mbadi has not yet clarified how cutting Ksh1.50 from the annuity allocation will affect the already securitized levy or from where the displaced funding for annuity-financed projects will be sourced.
+

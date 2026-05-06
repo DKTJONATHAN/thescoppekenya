@@ -6,6 +6,8 @@ author: "Sports Desk"
 image: "https://i.ibb.co/xtshMP7M/b8e6fba68822.jpg"
 category: "Sports"
 date: "2026-04-24T06:03:55Z"
+focusKeyword: "Liverpool Incredible PL star urged to snub Reds and sign for"
+dateModified: "2026-04-24T06:03:55Z"
 ---
 ## Harry Wilson Transfer Rumours
 
@@ -28,3 +30,4 @@ The exit of Harvey Elliott, who will return to Liverpool after his current stint
 We have seen this script before. A player in his late twenties suddenly finds his shooting boots in a contract year and the press treats him like the second coming of Mo Salah. Marco Silva calls him magic, but Silva is paid to protect his assets and drive up interest. Ten goals and six assists in 31 games is a respectable return, yet it is hardly the output of a player who should be leading the line for a perennial Champions League heavyweight.
 
 The cynical view is that Wilson’s agent is doing a masterful job of name-dropping Chelsea and Liverpool to ensure Aston Villa pays up on the signing-on fee. If Wilson is smart, he will take the Villa deal, accept that he is a high-level mid-table player, and enjoy his final big contract. If he chooses Anfield, he will be back on the bench or rotting in the reserves before his 31st birthday. He is a good footballer, but the hype needs to be grounded in reality.
+

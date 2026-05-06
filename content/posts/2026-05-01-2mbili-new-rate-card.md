@@ -11,6 +11,7 @@ category: "Entertainment"
 tags: ["Kenyan Entertainment", "2Mbili", "Influencer Rates", "Comedy"]
 canonical: "https://zandani.co.ke/article/2mbili-new-rate-card"
 date: "2026-05-01T15:29:58Z"
+dateModified: "2026-05-01T15:29:58Z"
 ---
 Comedian 2Mbili has introduced a transparent 2Mbili rate card for 2026, a move poised to professionalize Kenya's burgeoning influencer economy. This innovative price list, ranging from KSh 2,000 for casual appearances to KSh 300,000 for significant political rally bookings, establishes a clear framework for talent engagements across the entertainment spectrum.
 
@@ -21,3 +22,4 @@ The newly unveiled 2Mbili rate card brings unprecedented transparency to celebri
 
 ### A New Standard for Kenyan Influencers
 2Mbili's initiative sets a significant precedent for other Kenyan celebrities and content creators in 2026. By publicly outlining service costs, the comedian challenges existing informal structures, potentially inspiring a wider adoption of formal rate cards. The Kenyan influencer economy is already thriving, with top creators earning millions in brand-sponsored content. This professionalization could lead local stars to re-evaluate their market standing and strategic career moves, similar to ongoing conversations about the perceived value and international opportunities for "Kenyan Celebs & I'm A Celeb SA 2026: The Delusion" [https://zandani.co.ke/article/kenyan-celebs-im-a-celeb-sa-2026]. The move aims to foster a more equitable and predictable environment for both talent and clients within the dynamic Kenyan entertainment landscape, which has seen companies increasingly redirecting budgets from traditional media to influencer marketing.
+

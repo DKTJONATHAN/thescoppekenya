@@ -9,8 +9,9 @@ category: "News"
 tags: ["william-ruto", "kisumu", "railway-city", "moi-stadium", "urban-development"]
 canonical: "https://zandani.co.ke/article/president-ruto-approves-railway-city-and-stadium-construction-in-kis"
 date: "2026-03-20T20:51:09Z"
+focusKeyword: "President Ruto approves railway city and stadium constructio"
+dateModified: "2026-03-20T20:51:09Z"
 ---
-
 President William Ruto today, Friday, March 20, approved the development of a railway city in Kisumu, alongside plans to complete the stalled Moi Stadium by December 2026. Speaking at the Eid-Ul-Fitr luncheon in Kisumu, the President outlined significant infrastructure commitments for the lake city.
 
 Kisumu Urban Development Initiatives
@@ -22,5 +23,6 @@ Moi Stadium Reconstruction Accelerated The President addressed the prolonged del
 Enhancing Healthcare and Trade Infrastructure Ruto also detailed several other key investments. Following the government's takeover of the Jaramogi Oginga Odinga Teaching and Referral Hospital, the Kisumu County Referral Hospital is set to receive Ksh400 million for upgrades and modernization, while remaining under county administration. Additionally, during his upcoming tour of Nyanza, the President will launch the Usenge Pier project, backed by a Ksh500 million government commitment, aimed at boosting trade and transport along Lake Victoria. Plans also include developing 10 fish landing sites across Busia, Siaya, Migori, Kisumu, and Homa Bay counties to improve lake access and bolster the fishing industry.
 
 SGR Phase 2B Launch Forthcoming Further infrastructure development is slated with Ugandan President Yoweri Museveni joining President Ruto on Saturday for the Phase 2B launch of the Kisumu-Malaba section of the Standard Gauge Railway (SGR) at Kibos, Kisumu. This new railway line will encompass the 264-kilometre Naivasha-Kisumu section and the 107-kilometre Kisumu-Malaba stretch, totaling over 370 kilometres. 
+
 
 

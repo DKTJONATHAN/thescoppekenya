@@ -9,8 +9,9 @@ category: "Entertainment"
 tags: ["d4vd", "murder-charge", "pleads-not-guilty", "d4vd-court-case", "d4vd-murder-trial"]
 canonical: "https://zandani.co.ke/article/singer-d4vd-pleads-not-guilty-to-murder-charge"
 date: "2026-04-21T11:35:25Z"
+focusKeyword: "Singer D4vd pleads not guilty to murder charge"
+dateModified: "2026-04-21T11:35:25Z"
 ---
-
 American musician D4vd, legally known as David Anthony Burke, has pleaded not guilty to multiple charges, including first-degree murder, in Los Angeles on Monday, April 20, 2026, stemming from the 2025 death of 14-year-old Celeste Rivas Hernandez. Burke, aged 21, appeared in court through his legal team and did not address the proceedings directly.
 
 Musician D4vd Faces Grave Accusations The charges against Burke are severe, encompassing first-degree murder with special circumstances, murder for financial gain, and the alleged killing of a witness connected to an investigation. The Los Angeles County District Attorney's Office states these allegations trace back to April 23, 2025, when Celeste Rivas Hernandez reportedly visited Burke’s Hollywood Hills residence and was not seen again.
@@ -24,5 +25,6 @@ The Victim's Family and Prosecutorial Stance The victim’s family has expressed
 Broader Implications and Ongoing Investigation Authorities have also indicated that the case involves alleged sexual offenses and the mutilation of a body. Prosecutors have not dismissed the possibility of pursuing the death penalty. Los Angeles Police Department Chief Jim McDonnell defended the investigation's pace, citing the necessity of careful evidence handling and challenges with uncooperative witnesses. McDonnell was sworn in as the 59th Chief of the Los Angeles Police Department on November 8, 2024. Burke remains in custody without bail as the investigation continues, with officials urging anyone with information to come forward.
 
 D4vd's Musical Journey Before the Charges Before his arrest, D4vd, known for tracks like "Here With Me" and "Romantic Homicide," had a rapidly ascending music career. He initially gained prominence through gaming content online before transitioning to music, releasing his debut EP, *Petals To Thorns*, in 2023 and a full album in April 2025. His career saw him touring with artist SZA before he stepped away from the public eye following the emergence of this case. The allegations against the musician raise important questions about the pressures faced by artists and how personal actions can dramatically impact public perception, not unlike the recent discourse surrounding Ibraah clarifying Diamond Platnumz's role in his exit from Konde Gang. 
+
 
 

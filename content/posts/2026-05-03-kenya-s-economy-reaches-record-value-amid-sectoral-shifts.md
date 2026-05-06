@@ -8,6 +8,7 @@ date: "2026-05-03T18:37:58Z"
 authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 dateModified: "2026-05-03T18:37:58Z"
 schema: "NewsArticle"
+focusKeyword: "Kenyas Economy Reaches Record Value Amid Sectoral Shifts"
 ---
 ## Record KSh 17.58 Trillion GDP Signals Kenya's Economic Transformation
 
@@ -34,3 +35,4 @@ The construction sector rebounded significantly, contributing KSh 1.14 trillion 
 Public administration and defense generated KSh 858.8 billion (4.9% of GDP) with 8.3% growth. Education contributed KSh 662.7 billion (3.8% of GDP), growing 2.8%. Information and communication activities generated KSh 404.7 billion (2.3% of GDP), expanding 4.8%. However, the value of mobile money transactions declined from KSh 8,698.0 billion in 2024 to KSh 8,236.5 billion in 2025. Despite this, the consumer electronics market continues to see dynamic activity, with recent introductions such as the [vivo Y31d featuring a 7200mAh battery](https://zandani.co.ke/article/vivo-y31d-launches-in-kenya-7200mah-battery), indicating persistent demand within the broader technology sector.
 
 Human health and social work contributed KSh 307.8 billion (1.8% of GDP), growing 5.5%. Accommodation and food services generated KSh 303.7 billion (1.7% of GDP) and posted the fastest real growth among all sectors at 15.6%, driven by a 6.1% rise in international and regional visitor arrivals. Mining and quarrying, though a smaller sector at KSh 141.7 billion (0.8% of GDP), recorded the second fastest real growth at 14.9%, recovering from a 7.8% contraction in 2024. Electricity supply contributed KSh 250.3 billion (1.4% of GDP), growing 4.8%, with geothermal generation accounting for 44.8% of total electricity output.
+

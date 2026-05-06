@@ -26,3 +26,4 @@ Further exacerbating affordability concerns, the 50-page booklet was quietly wit
 
 ### Kenya's Passport Strength Improves Globally
 Despite the local setbacks in Kenya passport issuance and accessibility, the nation's passport strength has seen an improvement on the global stage. The latest Henley & Partners report, published in March 2026, shows Kenya climbing from position 69 to 64 worldwide. Regionally, Kenya now ranks 10th in Africa, behind countries such as South Africa, Morocco, Seychelles, Botswana, Namibia, Lesotho, Malawi, Eswatini, and Mauritius. Concurrently, Kenya also reported strong growth in air travel, with a significant rise in passenger numbers throughout 2025.
+

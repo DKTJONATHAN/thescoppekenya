@@ -9,8 +9,9 @@ category: "Entertainment"
 tags: ["flaqo-raz", "flaqo-dating-rumours", "flaqo-relocation-claims", "keranta-and-flaqo"]
 canonical: "https://zandani.co.ke/article/flaqo-denies-dating-rumours-and-relocation-claims"
 date: "2026-03-24T08:05:40Z"
+focusKeyword: "Flaqo Denies Dating Rumours and Relocation Claims"
+dateModified: "2026-03-24T08:05:40Z"
 ---
-
 Popular Kenyan comedian Flaqo has firmly addressed rampant online speculation, unequivocally denying romantic ties to a woman identified as Cindi and debunking claims of his supposed relocation to Rongai. On Tuesday, March 24, 2026, the content creator expressed astonishment at the swift spread of these fabricated narratives.
 
 Flaqo Clears the Air on Dating and Relocation Rumours
@@ -20,5 +21,6 @@ Flaqo Clears the Air on Dating and Relocation Rumours
 Rongai Residency Debunked by Flaqo Beyond the dating rumors, reports also suggested Flaqo had made a residential move to the bustling Rongai area. Flaqo swiftly dismissed these claims, clarifying that while he occasionally visits Rongai approximately once every three months, he does not consider it his place of residence. This clarification comes amidst the ongoing conversations about urban development and community impacts in various parts of Nairobi, such as the recent KeNHA demolitions of stalls in Roysambu.
 
 Frustration Over Misinformation The celebrated comedian likened his experience of encountering these baseless stories to watching a film premiere in which he never acted. Flaqo conveyed significant frustration regarding the effortless manner in which unverified information is disseminated to the public. Initially finding some humor in the absurdity, his tone shifted to a more serious critique, emphasizing the critical need for greater accountability in information sharing and concluding simply that “lying is not cool.” 
+
 
 

@@ -9,6 +9,7 @@ description: "Heavy Nairobi floods have paralysed transport on Mombasa Road and 
 excerpt: "Heavy Nairobi floods have paralysed transport on Mombasa Road and the Eastern Bypass, leaving motorists stranded for hours. Read the full story."
 tags: ["Kenya News", "Nairobi Floods", "Mombasa Road", "Traffic Update", "Nairobi"]
 focusKeyword: "Nairobi floods"
+dateModified: "2026-05-01T07:51:59Z"
 ---
 ## Nairobi Floods Paralysed Mombasa Road and JKIA
 
@@ -25,3 +26,4 @@ Serious flooding was also reported along Jogoo Road at the Makadara section and 
 ### Humanitarian Response and River Alerts
 
 The Kenya Red Cross confirmed the widespread chaos resulting from the overnight rains. Its Nairobi team is responding to calls from Mukuru kwa Njenga, where unconfirmed reports indicate missing persons and marooned households. The full extent of damage from the overnight rains remains unclear. The National Police Service had issued a warning on April 29, urging Nairobi residents to remain on high alert, particularly those living near rivers. The advisory highlighted rapidly rising water levels in major rivers, including the Nairobi, Mathare, Ngong, Kamiti, and Athi rivers, all of which drain into the larger Athi River system, which is currently at critically high levels. Kenyans.co.ke is currently assessing the impact on flood-prone areas in and around Nairobi, such as Lang’ata, Ngara, Madaraka, Eastleigh, Kawangware, Kibera, South C, Kasarani, Mathare, Mlolongo, and Syokimau.
+

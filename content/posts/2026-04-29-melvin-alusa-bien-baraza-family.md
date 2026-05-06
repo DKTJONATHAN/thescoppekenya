@@ -11,6 +11,7 @@ category: "Entertainment"
 tags: ["Kenyan Entertainment", "Melvin Alusa", "Bien Baraza", "Sauti Sol", "Celebrity Families"]
 canonical: "https://zandani.co.ke/article/melvin-alusa-bien-baraza-family"
 date: "2026-04-29T21:21:06Z"
+dateModified: "2026-04-29T21:21:06Z"
 ---
 Actor Melvin Alusa recently stepped up to defend his brother, Bien-Aimé Baraza, regarding personal family planning decisions. Speaking with radio host Alex Mwakideu, Alusa emphasized that such intimate matters remain strictly private between a couple. The strong stance taken by Melvin Alusa Bien has sparked considerable conversation across entertainment circles this April 2026.
 
@@ -21,3 +22,4 @@ Melvin Alusa, known for his commanding presence both on and off screen, strongly
 
 ### The Right to Personal Choices
 The actor's defence highlights a persistent conversation in Kenyan pop culture: the extent to which public figures' personal lives become subjects of widespread debate. Alusa's insistence on the sanctity of marital privacy underscores a growing sentiment among many that while celebrity lives fascinate, respect for individual autonomy remains paramount. This discussion continues to shape how Kenyans perceive and interact with their beloved stars in 2026.
+

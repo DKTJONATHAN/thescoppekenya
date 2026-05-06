@@ -9,6 +9,7 @@ description: "WhatsApp Android support for phones on versions 5.0 and 5.1 will e
 excerpt: "WhatsApp Android support for phones on versions 5.0 and 5.1 will end on September 8 to enhance user security. Get the details for Kenyan smartphone users."
 tags: ["Tech News", "WhatsApp", "Android Support", "Smartphone Security", "Kenya"]
 focusKeyword: "WhatsApp Android support"
+dateModified: "2026-04-30T18:55:14Z"
 ---
 ## WhatsApp Android Support Ends for Older Devices
 
@@ -25,3 +26,4 @@ Discontinuing **WhatsApp Android support** for older versions directly addresses
 ### User Action Required
 
 Users currently on Android 5.0 (Lollipop) and 5.1 devices can continue using WhatsApp until the September 8 deadline. However, they will not receive new updates or features unless they upgrade their devices. Those who disable app updates might be able to use older versions, but this poses significant security risks. WhatsApp advises affected individuals to back up their chat histories to Google Drive or create a local backup for transfer to a newer smartphone. Adapting to such technological shifts is crucial for maintaining digital security and access to essential services, much like businesses constantly adapt to changing client demands [The Hidden Demands of Hosting: Understanding the Guest Personalities That Every Airbnb Owner Dreads]. This ensures continued access to critical **WhatsApp Android support** and features.
+

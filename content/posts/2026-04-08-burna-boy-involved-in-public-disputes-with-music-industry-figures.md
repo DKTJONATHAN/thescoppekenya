@@ -9,8 +9,9 @@ category: "Entertainment"
 tags: ["burna-boy", "afrobeats-controversies", "nigerian-music-industry", "celebrity-feuds", "music-industry-disputes"]
 canonical: "https://zandani.co.ke/article/burna-boy-involved-in-public-disputes-with-music-industry-figures"
 date: "2026-04-08T19:48:14Z"
+focusKeyword: "Burna Boy involved in public disputes with music industry fi"
+dateModified: "2026-04-08T19:48:14Z"
 ---
-
 Burna Boy, an undeniable talent in African music, continues to ignite controversies, frequently engaging in public disputes with fellow industry figures. From legendary Afrobeats artists to veteran rappers and influential socialites, the "African Giant" has consistently found himself at the center of some of Nigerian music's most talked-about feuds over recent years.
 
 Burna Boy's Public Conflicts Intensify in Pan-African Music
@@ -30,5 +31,6 @@ Eedris Abdulkareem: Generational Divide After Eedris publicly called it "stupid 
 Cubana Chiefpriest: Allegations and Legal Threats Burna Boy opened 2025 by calling Cubana Chiefpriest the "Owerri Rick Ross" and labelling him an "Azaman," slang for a fraudster. Cubana hit back by alleging Burna owed money to London jewellers and for a Ferrari, and suggested his Grammy had Diddy's fingerprints on it. Burna dismissed the claims and threatened legal action. Cubana framed the whole thing as jealousy stemming from his loyalty to Davido.
 
 DJ Tunez: The Most Recent Physical Altercation The most recent, and the first to turn physically violent in public, occurred in early 2026. According to a source in Burna Boy's camp, the confrontation began after DJ Tunez accompanied D'banj to Burna Boy's VIP section at Obi's House in Lagos, where an argument quickly escalated into a scuffle. The tension had been quietly building, as Tunez had previously mocked Burna's coffee PR stunt on X, and his close association with Wizkid placed him firmly in the opposing camp. After videos went viral, Tunez confirmed the fight on X, claiming he was hit from behind and outnumbered ten to one. The Nigerian DJ Association responded by banning Burna Boy's music nationwide. Across these seven feuds, one common thread emerges: Burna Boy. Many in the industry are left to decipher the consistent catalyst behind these prominent conflicts. 
+
 
 

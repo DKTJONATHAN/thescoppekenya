@@ -9,8 +9,9 @@ category: "News"
 tags: ["private-treaty-vehicle-auction", "bmw-and-toyota-models", "westlands-kisii-eldoret-yards", "automotive-auctions", "suv-and-commercial-truck-sales"]
 canonical: "https://zandani.co.ke/article/bmw-and-toyota-models-among-vehicles-listed-for-sale-from-ksh-104-00"
 date: "2026-04-13T07:23:37Z"
+focusKeyword: "BMW and Toyota models among vehicles listed for sale from Ks"
+dateModified: "2026-04-13T07:23:37Z"
 ---
-
 Dozens of vehicles, encompassing SUVs, pickups, and commercial trucks, are available in a wide-ranging private treaty auction. Reserve prices start from Ksh 104,000, with offers due by April 21, 2026. Units are located nationwide across yards in Westlands, Kisii, Eldoret, and other key towns.
 
 Extensive Vehicle Auction Features Diverse Models Motorists and commercial operators are presented with an opportunity to acquire units through a private treaty process. The sale includes a variety of vehicles, from high-end models to budget-friendly options, stored in multiple locations including Westlands, Ruiru, Kisii, Mombasa, Eldoret, Migori, Malindi, Kitale, and Thika. Interested parties must submit their offers before the deadline of 12 noon on Tuesday, April 21, 2026.
@@ -22,5 +23,6 @@ Budget-Friendly Options For those seeking more affordable transport solutions, t
 SUV Selection and Everyday Vehicles The auction also caters to SUV enthusiasts with models such as a 2015 Toyota Rav4 at Ksh 1.3 million, a 2010 Toyota Fortuner for Ksh 1.1 million, a 2006 Subaru Legacy at Ksh 478,000, and a 2014 Nissan X-Trail at Ksh 1.2 million. Additionally, popular everyday models like the Toyota Vitz, Toyota Probox, Toyota Axio, Toyota Ractis, Suzuki Swift, Mazda Premacy, Subaru Impreza, and Nissan Note are included across the various storage yards nationwide.
 
 Private Treaty Process and Inspection Guidelines The sale operates on a private treaty arrangement, requiring interested buyers to submit offers via the official eezycars website. Crucially, all vehicles are sold on an "as is, where is" basis. Physical inspection of units at their respective storage yards is strongly encouraged to ensure buyers are fully aware of the condition of the vehicle they intend to purchase. Such disposals often arise from asset recoveries or surplus stock clearances, providing opportunities for acquisition at potentially competitive rates, a context that can be influenced by broader economic factors. 
+
 
 

@@ -9,6 +9,8 @@ category: "News"
 tags: ["gladys-wanga", "hassan-joho", "odm-uda-alliance", "2027-general-election", "power-sharing-agreement"]
 canonical: "https://zandani.co.ke/article/gladys-wanga-states-odm-seeks-50-percent-power-share-with-uda-propos"
 date: "2026-04-26T15:59:33Z"
+focusKeyword: "Gladys Wanga states ODM seeks 50 percent power share with UD"
+dateModified: "2026-04-26T15:59:33Z"
 ---
 Homa Bay Governor Gladys Wanga indicated on Sunday, April 26, that the Orange Democratic Movement (ODM) seeks a 50 percent power share with the United Democratic Alliance (UDA) in a future political alliance. Speaking in Kilifi, Wanga proposed Mombasa Governor Hassan Joho as ODM's preferred candidate for Deputy President ahead of the 2027 General Election.
 
@@ -27,3 +29,4 @@ Wanga's remarks follow the recent formation of a Broad-Based Management Committe
 ### Critique of Opposition Leaders
 
 Governor Wanga utilized the platform to criticize opposition figures, specifically former Deputy President Rigathi Gachagua. She accused Gachagua of disrespectfully invoking the name of the late former Prime Minister Raila Odinga, urging him to cease such mentions. Wanga also dismissed recent opposition tours along the Coast, deeming them ineffective and lacking local support. She stressed that ODM would only engage with political partners who uphold its principles, warning against alliances with leaders she accused of land grabbing and tribal politics. These political maneuvers unfold as other significant developments also shape the year. For instance, Odemba recently named the 25-player Harambee Starlets Squad for WAFCON 2026, featuring a strong contingent of local-based players.
+

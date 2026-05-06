@@ -9,8 +9,9 @@ category: "Entertainment"
 tags: ["dorea-chege", "online-harassment", "maggie-maria-actress", "social-media-trolling", "anonymous-social-media-accounts"]
 canonical: "https://zandani.co.ke/article/dorea-chege-addresses-online-harassment-from-anonymous-social-media-"
 date: "2026-03-24T06:17:43Z"
+focusKeyword: "Dorea Chege addresses online harassment from anonymous socia"
+dateModified: "2026-03-24T06:17:43Z"
 ---
-
 Popular actress Dorea Chege has publicly confronted an anonymous individual relentlessly harassing her via direct messages on social media in March 2026. The move comes shortly after she and DJ Dibul dismissed breakup rumors, highlighting the constant scrutiny faced by public figures in Kenya's vibrant entertainment scene.
 
 Dorea Chege Speaks Out Against Online Harassment
@@ -22,5 +23,6 @@ Frustration Mounts Over Personal Attacks The actress questioned the motives behi
 Relationship Rumours Dispelled Amidst Celebrations Dorea's public confrontation closely followed her and partner DJ Dibul's dismissal of circulating rumours about a potential breakup in March 2026. The couple decisively put the speculation to rest by appearing together in high spirits at their daughter's elaborate birthday celebration. Videos from the glamorous event, attended by numerous notable figures, showcased their unity, effectively quashing any doubts about their relationship status.
 
 Call to Action for Followers Reaching a critical point, Dorea has now appealed to her extensive social media following for assistance in identifying the individual behind the fake account. She has urged anyone possessing information to contact her directly via direct message, signaling her firm intention to hold the cyberbully accountable for their actions. 
+
 
 

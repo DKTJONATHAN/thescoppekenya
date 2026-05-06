@@ -9,6 +9,7 @@ description: "KenGen signals a drop in Kenya electricity prices for homes and fi
 excerpt: "KenGen signals a drop in Kenya electricity prices for homes and firms as water levels rise in major hydro dams nationwide. Get the full details now."
 tags: ["Energy News", "KenGen", "Seven Forks", "Electricity Prices", "Kenya"]
 focusKeyword: "Kenya electricity prices"
+dateModified: "2026-04-30T08:44:35Z"
 ---
 ## Kenya Electricity Prices Set to Drop as Dams Overflow
 
@@ -27,3 +28,4 @@ The current hydrological conditions place KenGen's hydro system at nearly optima
 Amid concerns regarding rising water levels potentially posing a threat to communities downstream of the Seven Forks cascade, Issack assured that KenGen is deploying all necessary resources to avoid spillage risks. The company affirmed that its engineers operate a robust water management program designed to maintain reservoirs within safe operating ranges, and uncontrolled spilling is not expected even as Masinga Dam nears maximum levels, provided inflows remain manageable.
 
 KenGen's installed generation capacity totals 1,786 megawatts (MW), with over 90 percent derived from renewable sources: hydro (826 MW), geothermal (754 MW), and wind (25.5 MW). This focus on green energy aligns with broader efforts to enhance energy security and affordability in Kenya.
+

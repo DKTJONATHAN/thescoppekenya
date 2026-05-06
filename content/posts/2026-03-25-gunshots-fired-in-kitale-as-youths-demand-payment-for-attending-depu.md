@@ -9,8 +9,9 @@ category: "News"
 tags: ["kitale-protests", "kithure-kindiki", "trans-nzoia-county", "mobilisation-fees-dispute", "political-unrest"]
 canonical: "https://zandani.co.ke/article/gunshots-fired-in-kitale-as-youths-demand-payment-for-attending-depu"
 date: "2026-03-25T11:58:44Z"
+focusKeyword: "Gunshots fired in Kitale as youths demand payment for attend"
+dateModified: "2026-03-25T11:58:44Z"
 ---
-
 Gunshots were reported in Kitale, Trans-Nzoia County, on Wednesday, March 25, 2026, during protests by youths demanding payment for their attendance at Deputy President Kithure Kindiki’s development tour on Tuesday. The incident unfolded as youths blocked a police vehicle, escalating demands for mobilisation fees.
 
 Kitale Protests Over Unpaid Event Fees
@@ -24,5 +25,6 @@ Deputy President's Kitale Tour Deputy President Kithure Kindiki was in Kitale on
 Allegations of Political Payments The protests emerge amidst ongoing allegations that government officials frequently compensate individuals to attend their public events and rallies. Former Deputy President Rigathi Gachagua previously encouraged constituents to demand payments from mobilisers for attending political gatherings, noting that a single political event could cost up to Ksh3 million to cover transport, logistics, security, and supporter mobilisation.
 
 EACC Issues Warning The Ethics and Anti-Corruption Commission (EACC) recently cautioned politicians against the misuse of public resources for campaign funding as the 2027 general elections draw nearer. The commission emphasized that exploiting public resources or offices for election campaigns is unlawful. 
+
 
 

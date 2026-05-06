@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["megan-thee-stallion", "klay-thompson", "celebrity-breakup", "infidelity-allegations"]
 canonical: "https://zandani.co.ke/article/megan-thee-stallion-announces-split-from-klay-thompson-following-all"
 date: "2026-04-26T13:45:06Z"
+focusKeyword: "Megan Thee Stallion announces split from Klay Thompson follo"
+dateModified: "2026-04-26T13:45:06Z"
 ---
 Grammy-winning rapper Megan Thee Stallion confirmed her split from NBA star Klay Thompson on Saturday, April 25, 2026, amid accusations of infidelity. The artist revealed the end of their high-profile romance on Instagram, citing a lack of trust, fidelity, and respect as core reasons for her decision to walk away.
 
@@ -27,3 +29,4 @@ The couple had only recently made their relationship public a few months prior t
 ### Thompson Remains Silent
 
 As of Sunday, April 26, 2026, Klay Thompson has not publicly responded to Megan Thee Stallion's breakup announcement or the allegations of infidelity. His silence leaves fans and observers awaiting his perspective on the highly publicised split. Prior to her relationship with Thompson, Megan Thee Stallion had been romantically linked to other public figures, including Torrey Craig, Romelu Lukaku, and rapper Pardison Fontaine.
+

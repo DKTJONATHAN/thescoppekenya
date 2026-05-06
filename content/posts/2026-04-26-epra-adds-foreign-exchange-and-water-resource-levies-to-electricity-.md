@@ -9,6 +9,8 @@ category: "News"
 tags: ["epra", "electricity-bills", "foreign-exchange-fluctuation-adjustment", "water-resource-management-levies", "energy-sector"]
 canonical: "https://zandani.co.ke/article/epra-adds-foreign-exchange-and-water-resource-levies-to-electricity-"
 date: "2026-04-26T19:15:32Z"
+focusKeyword: "EPRA adds foreign exchange and water resource levies to elec"
+dateModified: "2026-04-26T19:15:32Z"
 ---
 The Energy Petroleum Regulatory Authority (EPRA) has introduced three new charges to electricity bills effective April 2026, impacting countless households and businesses across the nation. These additions stem from foreign exchange rate fluctuations, water resource management levies, and the escalating cost of fuel for power generation.
 
@@ -33,3 +35,4 @@ Off-grid areas are anticipated to experience the sharpest increase due to their 
 ### Overall Impact on Consumers
 
 The combined effect of these three charges represents a notable increase in the per-unit cost for consumers in April. The 347-cent fuel charge carries the heaviest weight, followed by the 123.41-cent foreign exchange adjustment, and the 1.54-cent water levy.
+

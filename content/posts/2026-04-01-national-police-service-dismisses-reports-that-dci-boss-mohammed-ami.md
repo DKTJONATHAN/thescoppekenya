@@ -9,8 +9,9 @@ category: "News"
 tags: ["mohammed-amin-tenure", "dci", "national-police-service", "muchiri-nyaga", "police-leadership"]
 canonical: "https://zandani.co.ke/article/national-police-service-dismisses-reports-that-dci-boss-mohammed-ami"
 date: "2026-04-01T12:02:33Z"
+focusKeyword: "National Police Service dismisses reports that DCI boss Moha"
+dateModified: "2026-04-01T12:02:33Z"
 ---
-
 The National Police Service has refuted widespread reports that Director of Criminal Investigations (DCI) boss Mohammed Amin's tenure concludes today, April 1, 2026. In a Wednesday statement, NPS spokesperson Muchiri Nyaga labeled the claims as factually inaccurate and misleading, affirming Amin continues to serve lawfully.
 
 NPS Refutes Tenure End Claims
@@ -22,5 +23,6 @@ Rebuke to Media The National Police Service strongly criticized *Daily Nation* f
 Amin's Leadership and Tenure The NPS defended DCI's investigative record, noting its consistent and transparent handling of alleged abduction or missing persons cases, including instances where individuals reportedly staged their own disappearances. The service highlighted significant achievements under Amin's leadership, such as enhanced forensic capabilities, the dismantling of major criminal syndicates, and improved international cooperation, including his recent election to a key INTERPOL position. Such efforts are crucial in safeguarding public interest, akin to warnings issued by the Geothermal Development Company against fraudulent procurement opportunities. Amin was appointed DCI boss on October 14, 2022, following the resignation of George Kinoti, and sworn into office on October 19, 2022. His initial tenure was set to conclude upon reaching the mandatory retirement age of 60, which he attained on October 1, 2024. In July 2024, the National Police Service Commission granted Amin a two-year contract extension, despite a government-wide directive from the Head of Public Service, Felix Koskei, barring extensions for officials who had reached retirement age. Reports indicated this two-year extension was set to conclude today, April 1, 2026, claims now refuted by the NPS. This robust approach to investigations and accountability stands in contrast to various challenges observed in security sectors, as seen with recent misconduct allegations against soldiers, which British Army commanders have addressed directly.
 
 Succession Considerations Should Amin's tenure have concluded today, attention would pivot to President William Ruto, who is constitutionally mandated to appoint the next individual to lead the powerful directorate. 
+
 
 

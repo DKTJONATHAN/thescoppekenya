@@ -10,6 +10,8 @@ category: "News"
 tags: ["imf-growth-forecast", "kenyan-economic-outlook", "fuel-price-increases", "sub-saharan-africa-economy", "regional-economic-outlook"]
 canonical: "https://zandani.co.ke/article/imf-lowers-kenya-growth-forecast-amid-rising-fuel-prices"
 date: "2026-04-21T17:20:49Z"
+focusKeyword: "IMF Lowers Kenya Growth Forecast Amid Rising Fuel Prices"
+dateModified: "2026-04-21T17:20:49Z"
 ---
 The International Monetary Fund has lowered its 2026 growth forecast for Sub-Saharan Africa, including Kenya, following recent fuel price increases that underscore escalating economic pressures. Regional growth, projected at 4.3 per cent for 2026, reflects a slowdown directly linked to the intensifying conflict in the Middle East.
 
@@ -28,5 +30,6 @@ The conflict in the Middle East continues to destabilize global markets, leading
 ### Addressing Food Insecurity and Fiscal Pressures
 
 The IMF estimates that a 20 per cent rise in international food prices could push over 20 million people in Sub-Saharan Africa into moderate or severe food insecurity. In a downside scenario, regional output could contract by 0.6 per cent, with inflation increasing by an additional 2.4 percentage points above pre-war projections. The global lender urges governments to implement swift, targeted support to shield vulnerable households from rising living costs and advises oil-importing nations to protect social and development spending, avoiding cuts to essential services under fiscal pressure.
+
 
 

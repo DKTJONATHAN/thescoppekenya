@@ -9,8 +9,9 @@ category: "News"
 tags: ["nairobi-national-archives", "public-toilet-demolition", "nairobi-cbd-restructuring", "urban-infrastructure-development", "nairobi-drainage-project"]
 canonical: "https://zandani.co.ke/article/nairobi-county-demolishes-public-toilets-near-national-archives-to-i"
 date: "2026-03-21T08:51:35Z"
+focusKeyword: "Nairobi County demolishes public toilets near National Archi"
+dateModified: "2026-03-21T08:51:35Z"
 ---
-
 Nairobi County demolished public lavatories near the National Archives in the Central Business District on the night of Friday, March 20, 2026. The action, part of a campaign to improve drainage and restructure the capital, has resulted in immediate losses for traders and widespread public discontent over lost essential facilities.
 
 Redevelopment Impact on CBD Facilities
@@ -24,5 +25,6 @@ Unanswered Questions and Public Concerns Uncertainty surrounds the demolition, w
 Speculation on Underlying Motives Curiously, a building barely five meters from the demolished toilets remains untouched, fueling viral speculation of personal feuds influencing the county's actions. The lavatories operated as private businesses, paying a fee to the county government for their operation. One Nairobi resident commented that "Cartels had made it their personal property, not the county government's." Such allegations highlight concerns about transparency and fairness in public service conduct, particularly in light of ongoing discussions about accountability in local governance.
 
 Public Toilet Management and Revenue Nairobi County lists approximately 68 public toilets across the county, with about 18 concentrated in the immediate Central Business District. These facilities, once managed by the Nairobi Metropolitan Services (NMS), have since been transferred to youth and women groups. Toilets in prime locations, such as the Archives area, can generate substantial income, with estimates suggesting approximately KSh30,000 daily and up to KSh1.5 million monthly. Typical public toilets in the CBD generally yield KSh10,000 to KSh15,000 daily after covering basic operational costs. 
+
 
 

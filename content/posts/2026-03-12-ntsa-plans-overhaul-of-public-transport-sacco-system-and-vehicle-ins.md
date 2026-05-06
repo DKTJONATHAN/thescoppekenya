@@ -5,8 +5,9 @@ author: "Celestine Nzioka"
 image: "https://i.ibb.co/BVWWdSJm/add57803fa0b.jpg"
 category: "News"
 date: "2026-03-12T07:59:11Z"
+focusKeyword: "NTSA plans overhaul of public transport SACCO system and veh"
+dateModified: "2026-03-12T07:59:11Z"
 ---
-
 ## NTSA Plans Major Public Transport and Inspection Reforms The National Transport and Safety Authority (NTSA) has announced significant reforms impacting public transport and vehicle inspections, potentially introducing additional costs for road users. Director General Nashon Kondiwa revealed on Thursday that the agency is considering phasing out the current Public Service Vehicle (PSV) SACCO model and transitioning to an automated, science-based inspection system to enhance road safety. These proposals aim to establish more structured operational frameworks across the transport sector.
 
 PSV SACCO System Overhaul Under Review NTSA Director General Nashon Kondiwa indicated on Thursday that the agency, in collaboration with the government, is evaluating major structural changes that could lead to the discontinuation of the existing public service vehicle (PSV) SACCO model. Kondiwa stated that the regulator is reviewing several proposals to improve safety for passengers, motorists, and other road users. He noted that final recommendations will be unveiled following the completion of consultations. "We want to repackage public transport to have better investments and jobs. Maybe it is time to change the way we arrange public transport. Maybe the SACCO model is not working," Kondiwa elaborated during an NTV interview. He further explained that the government is seeking more structured operational frameworks within the transport sector to restore order and enhance road safety, emphasizing that these issues cannot be resolved solely with instant fines and cameras.
@@ -16,5 +17,6 @@ Shift Towards Automated Vehicle Inspections Beyond a potential overhaul of the P
 Enhanced Enforcement and Road Safety Initiatives NTSA plans to revamp all motor vehicle inspection centres and roll out over 1,000 surveillance cameras nationwide within the next three years to boost enforcement and monitoring efforts. These reforms also include clearer road markings indicating speed limits and safety warnings near camera zones. Additionally, future road construction contracts will be mandated to incorporate these safety upgrades from the outset. This commitment to better jobs and investments in the transport sector aligns with broader governmental efforts to create employment opportunities.
 
 High Court Halts Instant Fines Implementation In a separate development, the High Court has issued new orders preventing NTSA from implementing the recently introduced instant fines. Justice Bahati Mwamuye of the High Court issued a conservatory order on Thursday, barring NTSA from proceeding with the new system pending the hearing and determination of a case filed by Lawyer Shadrack Wambui, which challenges the directive. 
+
 
 

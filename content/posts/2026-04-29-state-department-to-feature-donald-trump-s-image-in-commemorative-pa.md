@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["donald-trump", "commemorative-passports", "state-department-passports", "trump-passport-image"]
 canonical: "https://zandani.co.ke/article/state-department-to-feature-donald-trump-s-image-in-commemorative-pa"
 date: "2026-04-29T19:58:02Z"
+focusKeyword: "State Department to feature Donald Trump�s image in commemor"
+dateModified: "2026-04-29T19:58:02Z"
 ---
 The U.S. State Department confirmed Tuesday, April 28, 2026, that former President Donald Trump’s image will grace a limited-edition American passport, set to mark the U.S. Declaration of Independence's 250th anniversary. This bold design decision has sparked global conversations, making official documents as eye-catching as celebrity fashion.
 
@@ -23,3 +25,4 @@ This passport marks another departure from long-standing democratic norms, where
 ### The Cost of Commemoration and Exclusive Distribution
 
 For those curious about acquiring this distinctive document, officials confirmed there will be no additional fee for receiving the commemorative design. However, availability will be limited, issued specifically for the historic occasion. Reports suggest these themed passports will primarily be distributed out of Washington, D.C., until supplies are exhausted. As of Tuesday, it remained unclear whether citizens applying for new passports would have the option to opt-out of the themed design if processed through the specific centers issuing them. The "Trump Passport" currently stands as one of the administration’s most visible symbols of this new approach to government iconography.
+

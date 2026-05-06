@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["kennedy-rapudo", "amber-ray", "club-hosting", "amber-ray-career", "kennedy-rapudo-amber-ray"]
 canonical: "https://zandani.co.ke/article/kennedy-rapudo-defends-amber-ray-s-career-as-a-club-host"
 date: "2026-04-21T21:08:53Z"
+focusKeyword: "Kennedy Rapudo Defends Amber Rayâs Career as a Club Host"
+dateModified: "2026-04-21T21:08:53Z"
 ---
 Businessman Kennedy Rapudo has strongly defended his partner, Amber Ray, amidst brewing online debate regarding her vibrant career as a professional club host. Speaking on Tuesday, April 21, 2026, Rapudo dismissed the stigma surrounding the nightlife industry, highlighting it as a lucrative and often misunderstood profession for Kenyan public figures.
 
@@ -25,5 +27,6 @@ Addressing her financial success, Rapudo revealed that Amber Ray ranks among the
 ### Calling Out Double Standards and Unwavering Support
 
 Rapudo was particularly critical of the double standards often applied to female entertainers in Kenya. He pointed out that while global celebrities are frequently praised for their lifestyle choices and nightlife ventures, local women often face harsh moral judgment for the very same activities. "Public figures are often accepted abroad for similar lifestyle choices but judged locally," he remarked. The businessman concluded by reaffirming his unwavering support for Amber's autonomy, describing her as a disciplined, independent woman who understands her brand. Rapudo maintained that his role is not to "change" her or interfere with her established career, but rather to provide a supportive environment as she continues to grow her business empire. "My role is to support her as long as she is not doing anything wrong," he added, signaling that the couple remains unbothered by the court of public opinion.
+
 
 

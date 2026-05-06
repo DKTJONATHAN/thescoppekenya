@@ -9,6 +9,7 @@ description: "Kenyan Shilling performance improved to 129.30 against the Dollar 
 excerpt: "Kenyan Shilling performance improved to 129.30 against the Dollar in 2025 per the KNBS Economic Survey. This helps importers and consumers. Get the details"
 tags: ["Kenya Economy", "KNBS Report", "Kenyan Shilling", "US Dollar", "Nairobi"]
 focusKeyword: "Kenyan Shilling performance"
+dateModified: "2026-04-29T14:42:40Z"
 ---
 ## Kenyan Shilling Performance Sees 4.1% Gain Against Dollar in 2025
 
@@ -27,3 +28,4 @@ Within the East African Community, the picture was mixed. The Rwanda Franc gaine
 ### Future Outlook for Kenyan Shilling Performance
 
 Despite the positive 2025 performance, Commercial Bank of Kenya Governor Dr. Kamau Thugge expressed scepticism regarding the currency's behavior against the dollar this year. He cited various global factors, particularly the Middle East conflict, as potential influences pushing the Kenyan Shilling towards a weaker position. In an interview on April 9, Governor Thugge stated that the Central Bank had built up reserves to manage such shocks, asserting that exchange rate volatility remains manageable. The Kenyan shilling has remained broadly stable, supported by foreign exchange reserves providing more than five months of import cover and continued inflows such as diaspora remittances.
+

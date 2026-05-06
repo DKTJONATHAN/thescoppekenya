@@ -5,6 +5,8 @@ author: "Sports Desk"
 image: "https://i.ibb.co/wNGJHqph/aa14fde50e75.jpg"
 category: "Global News"
 date: "2026-04-25T16:26:05Z"
+focusKeyword: "Enzo Maresca in talks to replace Pep Guardiola as Manchester"
+dateModified: "2026-04-25T16:26:05Z"
 ---
 ## Guardiola's Calculated Exit and City's Succession Play
 
@@ -21,3 +23,4 @@ The swiftness with which Enzo Maresca's name has surfaced, and the reported "hig
 ### The Allure of Less Demanding Pastures
 
 The suggestion that Guardiola might eye the Italy national team job, seeking to "slow down", reveals a coach perhaps tiring of the relentless club grind. After years of intense pressure at City, the appeal of a less demanding role, even one with the 'gamble' of international management, is understandable. However, it also highlights the short-term vision that often governs modern football's top echelons. For all the talk of legacies, the personal comfort of the manager often dictates the timeline, leaving clubs to scramble, albeit seemingly prepared in City's case, to fill the void. This isn't about building dynasties; it's about the next strategic career move. Guardiola's current salary at Manchester City is reportedly a significant hurdle for the Italian Football Federation, with reports suggesting sponsors might be needed to cover a portion of his wages if he were to take the job.
+

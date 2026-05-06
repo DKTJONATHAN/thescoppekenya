@@ -10,6 +10,8 @@ category: "News"
 tags: []
 canonical: "https://zandani.co.ke/article/eacc-ceo-abdi-mohamud-elected-to-lead-regional-anti-graft-body"
 date: "2026-04-24T21:06:35Z"
+focusKeyword: "EACC CEO Abdi Mohamud Elected to Lead Regional Anti-Graft Bo"
+dateModified: "2026-04-24T21:06:35Z"
 ---
 Ethics and Anti-Corruption Commission CEO Abdi Mohamud has been elected President of the Eastern Africa Association of Anti-Corruption Authorities. He formally assumed the position during the regional body's 16th Annual General Meeting held in Nairobi between April 20 and 24.
 
@@ -29,3 +31,4 @@ A critical milestone during his presidency will be the launch of the Centre for 
 The leadership change occurs as the EACC reports strong domestic results. The commission has achieved a 72 percent conviction rate over the last three years and recovered 7.4 billion shillings in stolen public funds. Additionally, the agency averted the potential loss of 10.74 billion shillings through proactive interventions.
 
 While Mohamud takes on regional responsibilities, the EACC continues to push for prosecutorial powers to enhance its efficiency in tackling graft within Kenya. The commission remains focused on its core mandate of investigation and asset recovery while providing leadership for the broader regional anti-corruption agenda. These efforts are part of a wider push for accountability across all sectors of public life.
+

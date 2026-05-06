@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["kamene-goro", "dj-bonez", "kamene-goro-health", "kenyan-celebrity-drama", "celebrity-relationship-dispute"]
 canonical: "https://zandani.co.ke/article/kamene-goro-recounts-near-fatal-illness-criticises-dj-bonez-s-hospit"
 date: "2026-04-28T01:30:45Z"
+focusKeyword: "Kamene Goro Recounts Near-Fatal Illness Criticises DJ Bonezs"
+dateModified: "2026-04-28T01:30:45Z"
 ---
 Media personality Kamene Goro recently disclosed a severe, near-fatal illness in early 2026, which led to her hospitalization in the Intensive Care Unit (ICU) and High Dependency Unit (HDU). During this critical time, she revealed her husband, DJ Bonez, was notably absent from her bedside, a disclosure that has ignited significant public discussion.
 
@@ -27,3 +29,4 @@ As the drama unfolded, the public conversation surrounding Kamene and DJ Bonez s
 ### What's Next for the Couple?
 
 The unresolved tension and the open challenge from Kamene to DJ Bonez have left Kenyans wondering about the future of their relationship. With the public having already weighed in with myriad opinions, some sympathetic, others harshly critical, the couple faces a significant challenge in navigating their personal issues under the unforgiving glare of the spotlight. Whether DJ Bonez will eventually share his full story, or if the couple will manage to mend their fractured trust away from the public eye, remains the biggest question mark of 2026.
+

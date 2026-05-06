@@ -9,6 +9,8 @@ category: "News"
 tags: ["school-transport-inspection", "ntsa-directive", "watoto-wafike-salama", "narok-mahi-mahiu-road", "road-safety-regulations"]
 canonical: "https://zandani.co.ke/article/ntsa-orders-mandatory-inspection-of-school-transport-vehicles-ahead-"
 date: "2026-04-27T04:42:19Z"
+focusKeyword: "NTSA orders mandatory inspection of school transport vehicle"
+dateModified: "2026-04-27T04:42:19Z"
 ---
 The search results confirm the NTSA directive, the "Watoto Wafike Salama" initiative, and the recent fatal crash on the Narok-Mahi Mahiu road, all within the specified 2026 timeline (April 24-26, 2026). The details match the provided source text. This gives me confidence to proceed with the article using the provided source text and adhering to all other instructions.
 
@@ -44,3 +46,4 @@ The NTSA has confirmed its close collaboration with the National Police Service 
 ### Directives Ahead of Term Two
 
 The NTSA has recently issued a series of directives targeting drivers, particularly as learners begin their return to school for the second term from today, Monday, April 27, 2026. These measures aim to mitigate risks during this period of increased road activity.
+

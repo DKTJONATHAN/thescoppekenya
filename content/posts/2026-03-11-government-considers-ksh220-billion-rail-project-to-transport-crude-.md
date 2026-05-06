@@ -5,8 +5,9 @@ author: "Celestine Nzioka"
 image: "https://i.ibb.co/20bcWX92/a41bf98a95a4.jpg"
 category: "News"
 date: "2026-03-11T11:49:15Z"
+focusKeyword: "Government considers Ksh220 billion rail project to transpor"
+dateModified: "2026-03-11T11:49:15Z"
 ---
-
 ## Government Considers Ksh220 Billion Rail for Crude Oil Transport The government is advancing plans for a Ksh220 billion metre gauge railway extension to link the Rift Valley with northwestern oil fields. This strategic infrastructure project aims to provide a cost-effective alternative for crude oil transport from South Lokichar to the Indian Ocean coast, fostering broader economic development across remote regions.
 
 Rail Project Overview The proposal centers on extending approximately 640 kilometres of metre gauge railway from Nakuru City to South Lokichar. This initiative is designed to establish a vital corridor for crude oil destined for export terminals along the Indian Ocean coast. Beyond oil, the proposed line would transport other cargo such as clinker, cement, and minerals, enhancing its commercial viability and justifying the significant investment required for construction and long-term maintenance. For communities in Kenya's northwest, the project promises new transport links, job opportunities, and improved movement of goods from areas historically challenged by poor connectivity to national and international markets.
@@ -16,5 +17,6 @@ Shift from Pipeline Plans Transport and Energy Cabinet Secretary Davis ChirChir,
 Metre Gauge Advantage The government favors metre gauge tracks over a new standard gauge railway, citing the lighter design's suitability for rugged northern terrain, requiring minimal tunneling and incurring lower construction costs. Lawmakers estimate that constructing a standard gauge line for the same route would increase project costs by roughly Ksh300 billion, a difference officials contend would significantly complicate financing and delay oil field development. This railway forms part of a larger strategy to establish a reliable export route from inland oil deposits to the coast, crucial for Kenya to become a consistent supplier to overseas markets.
 
 Phased Production and Export Initial crude oil production from the South Lokichar basin is expected to commence gradually, with early volumes of around 20,000 barrels of waxy crude per day transported by road using insulated tankers linking Turkana oilfields to existing highways heading toward the coast. In later phases, CS ChirChir revealed that production could rise to about 50,000 barrels per day, necessitating insulated steam-heated rail wagons to safely move thick crude over long distances to export terminals near the shoreline. This rail proposal emerged after Tullow Oil Plc sold its Kenyan assets for Ksh16 billion last year, leading the government to explore more economical transport options for Turkana crude development. The government has already completed critical road links and key bridge structures to ensure reliable oil field logistics connectivity. If approved and completed by 2030, the railway link could accelerate Kenya's entry into the ranks of oil exporters and open a new trade corridor from inland fields to the coast. 
+
 
 

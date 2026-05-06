@@ -92,6 +92,10 @@ const manifest = files.map(file => {
     image: data.image || '/placeholder.svg',
     tags: data.tags || [],
     readTime: calculateReadTime(bodyContent)
+    ,
+    dateModified: data.dateModified || data.updated || data.modified || data.lastmod || data.date || new Date().toISOString(),
+    focusKeyword: data.focusKeyword || '',
+    wordCount: stripMarkdown(bodyContent).split(/\s+/).filter(Boolean).length
   };
 }).sort((a, b) => new Date(b.date) - new Date(a.date));
 

@@ -8,6 +8,7 @@ date: "2026-05-03T16:28:37Z"
 authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 dateModified: "2026-05-03T16:28:37Z"
 schema: "NewsArticle"
+focusKeyword: "Shocking Kangata UDA Exit After Presidents Visit"
 ---
 ## Kang'ata's UDA Exit Reshapes Murang'a Politics
 
@@ -24,3 +25,4 @@ Kang'ata's declaration holds particular significance as he becomes the first hig
 ### Kang'ata's Future Political Platform
 
 While confirming his intent to defend his Murang'a gubernatorial seat, Kang'ata explicitly downplayed aspirations for the presidency or deputy presidency, stating his focus remains solely on local leadership. His promise to unveil a new political platform at a later date signals a strategic incubation period for his next move. This approach allows him to observe the evolving political landscape and potentially coalesce with other like-minded figures or emerging political movements. The timing and specifics of this new platform will be crucial in defining his political trajectory and its broader impact on Mount Kenya's political allegiances leading into the 2027 general elections.
+

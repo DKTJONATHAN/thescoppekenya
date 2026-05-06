@@ -7,6 +7,8 @@ image: "https://i.ibb.co/FbLxRcXD/bbb56919b10e.webp"
 category: "Sports"
 tags: ["nottingham-forest", "aston-villa", "europa-league", "var-drama"]
 date: "2026-04-30T22:37:37Z"
+focusKeyword: "Nottingham Forest Stun Aston Villa in Europa League Semi-Fin"
+dateModified: "2026-04-30T22:37:37Z"
 ---
 Nottingham Forest secured a vital 1-0 victory against Aston Villa in their Europa League semi-final first leg on Thursday, April 30, 2026. The contentious match, decided by a Chris Wood penalty, saw Aston Villa manager Unai Emery express intense frustration over a VAR decision regarding a potential red card incident.
 

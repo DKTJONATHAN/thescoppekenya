@@ -9,8 +9,9 @@ category: "News"
 tags: ["nairobi-dam-breach", "kibera-evacuation", "langata-estates", "water-resources-authority", "flood-risk-management"]
 canonical: "https://zandani.co.ke/article/government-orders-evacuation-of-kibera-and-nearby-estates-as-nairobi"
 date: "2026-03-21T16:48:37Z"
+focusKeyword: "Government orders evacuation of Kibera and nearby estates as"
+dateModified: "2026-03-21T16:48:37Z"
 ---
-
 The Water Resources Authority has mandated the immediate evacuation of residents in six Nairobi estates located near the Nairobi Dam, including Kibera and Lang'ata, effective March 20, 2026. This directive follows the dam's critical water levels, which threaten to breach its embankments amidst ongoing heavy rainfall across the capital.
 
 Nairobi Dam Risks Breach
@@ -20,5 +21,6 @@ Immediate Evacuation Zones The Water Resources Authority's notice, dated Friday,
 Areas Under High Alert Other estates downstream of the Nairobi Dam are also on high alert for potential flooding. These areas include Mukuru Slums, specifically Kwa Njenga, Reuben, and Viwandani, as well as South B, Pipeline, Embakasi, and the Industrial Area. Residents in these vicinities are advised to remain vigilant and prepare to relocate to higher ground as the situation evolves.
 
 Government Monitoring and Weather Outlook Government Spokesperson Isaac Mwaura had previously informed the public ten days prior, around March 11, 2026, that authorities were closely monitoring water levels at the Nairobi Dam. Technical assessments of the reservoir were underway at that time to evaluate risks posed by rising water. The Kenya Meteorological Department, on Saturday, March 21, 2026, issued a new warning forecasting moderate to heavy showers and isolated thunderstorms across the Nairobi metropolitan area. Rainfall in the metropolis could surpass 20 mm within 24 hours, with Dagoretti, Kibra, parts of Embakasi, and Lang’ata-where the dam is located-expected to experience heavier precipitation pockets. On Friday, March 20, 2026, heavy rains led to significant flooding along Moi Avenue and Mombasa Road, though no fatalities were reported. 
+
 
 

@@ -9,6 +9,7 @@ description: "President Ruto awarded Sabastian Sawe Ksh 8M after he broke the ma
 excerpt: "President Ruto awarded Sabastian Sawe Ksh 8M after he broke the marathon world record in London. This gift celebrates Kenya's athletic success. Get the det"
 tags: ["Kenya Sports", "Sabastian Sawe", "William Ruto", "London Marathon", "World Record", "Nairobi"]
 focusKeyword: "Sabastian Sawe world record"
+dateModified: "2026-04-30T06:34:40Z"
 ---
 ## President Ruto Awards Sabastian Sawe for Marathon World Record
 
@@ -25,3 +26,4 @@ Beyond the monetary compensation, President Ruto also honoured Sawe with a custo
 During the State House event, which followed Sawe's return from London, the marathoner himself presented President Ruto with an autographed pair of the running shoes he wore during his record-setting race. The President lauded Sawe's achievement, stating, "Sabastian, you have not only broken a record; you have expanded the horizon of human potential. You have made the impossible possible. You have inspired a nation, a whole generation and the world."
 
 The London Marathon proved to be a historic event, with Ethiopia’s Yofin Kejelcha also running under two hours, clocking 1:59:41. President Ruto further acknowledged Uganda’s Jacob Kiplimo, who finished third with a new personal best of 2:00:28. The recognition of the **Sabastian Sawe world record** is a clear signal of the government's support for national athletes. The government's dedication to sports is further demonstrated through efforts such as ensuring timely payment of AFCON hosting fees.
+

@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["asake", "asake-money-album", "afrobeats-music", "ybnl-nation", "nigerian-music-releases"]
 canonical: "https://zandani.co.ke/article/asake-announces-release-of-fourth-studio-album-titled-m-ney"
 date: "2026-04-27T21:34:21Z"
+focusKeyword: "Asake announces release of fourth studio album titled MNEY"
+dateModified: "2026-04-27T21:34:21Z"
 ---
 Afrobeats superstar Asake is set to release his highly anticipated fourth studio album, "M$NEY," on May 1, 2026. The project marks a significant moment in his career, following his meteoric rise since 2022 and showcasing his unwavering ambition on the global stage.
 
@@ -30,3 +32,4 @@ Asake's pre-release singles offer a glimpse into the album's diverse sonic palet
 
 ### Pioneering New Soundscapes
 Asake, alongside producer Magicsticks, significantly impacted Nigerian pop music by popularizing Amapiano log drums, a sound that has since shaped numerous hits and launched new stars. With Three-step Afro-House emerging as the next influential sound from South Africa, Asake is uniquely positioned to integrate Nigerian sonic identities into this evolving genre. "M$NEY" could provide a blueprint for Afrobeats artists looking to craft hits from this burgeoning sound.
+

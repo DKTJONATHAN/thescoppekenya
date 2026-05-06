@@ -9,8 +9,9 @@ category: "News"
 tags: ["slovak-republic-scholarships", "fully-funded-scholarships", "kenyans-study-abroad", "bachelors-masters-phd"]
 canonical: "https://zandani.co.ke/article/slovakia-opens-fully-funded-scholarships-for-kenyans"
 date: "2026-03-31T09:19:36Z"
+focusKeyword: "Slovakia Opens Fully Funded Scholarships for Kenyans"
+dateModified: "2026-03-31T09:19:36Z"
 ---
-
 The Embassy of the Slovak Republic in Nairobi and the Ministry of Education announced on Tuesday, March 31, fully funded scholarship opportunities. Five coveted slots are available for individuals pursuing bachelor’s, master’s, and PhD studies in the Slovak Republic for the 2026/2027 academic year.
 
 Fully Funded Scholarship Details
@@ -22,5 +23,6 @@ Scholarship Coverage and Costs These fully funded scholarships cover tuition fee
 Language Requirement and Preparation All studies will be conducted in Slovak. Selected students must complete a mandatory one-year intensive Slovak language training program. This language and academic preparation will be offered free of charge at Matej Bel University in Banská Bystrica, running from September 1, 2026, to June 30, 2027.
 
 Application Process and Deadlines Interested candidates can obtain application forms from the Ministry of Education offices or download them from the Ministry’s website under the scholarships section. Completed forms, along with certified academic and personal documents, must be submitted to the Director, Higher Education, at the Ministry of Education offices in Nairobi or physically delivered to Room 2701 at Telposta Towers by April 30. Following this, applicants must complete an online application and upload all required documents via the Slovak Government scholarship portal by May 25, 2026. The Ministry stresses strict adherence to guidelines to leverage this international academic exposure opportunity. 
+
 
 

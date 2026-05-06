@@ -6,6 +6,8 @@ author: "Grace Mkamburi"
 image: "https://i.ibb.co/mVLFK1MB/93389a5d7d91.jpg"
 category: "Business"
 date: "2026-04-24T18:32:11Z"
+focusKeyword: "�elebi Aviation to Expand Kenya Cargo Hub After Tanzania Exi"
+dateModified: "2026-04-24T18:32:11Z"
 ---
 ## Çelebi Aviation Strategy Shifts to Kenya Cargo Market
 
@@ -19,3 +21,4 @@ The acquisition of Transglobal Cargo Centre Ltd provides Çelebi immediate opera
 
 ### Impact on East African Trade Flows
 The move by Çelebi Aviation underscores the competitive nature of ground handling and cargo services in East Africa. By securing a dominant position in Nairobi, the company gains a foothold in a market that serves as the primary entry point for goods into the hinterland. The decision to exit the Tanzanian market was based on a review of operating conditions, moving away from markets with lower long-term value. This data-driven approach ensures that the company remains lean while scaling its operations across its existing footprint in Europe, Asia, and Africa. The KSh 5.2 billion investment reflects a long-term bet on Kenya’s ability to sustain its role as the logistics heartbeat of the continent.
+

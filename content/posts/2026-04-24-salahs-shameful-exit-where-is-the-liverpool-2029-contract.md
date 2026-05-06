@@ -9,8 +9,9 @@ category: "Opinions"
 tags: ["opinions", "mohamed-salah-contract-extension-liverpool-2029-kenya", "salah-u-turn-liverpool-transfer-saga-kenya", "why-salah-chose-to-stay-at-liverpool-2026-kenya", "saudi-arabia-salah-transfer-bid-rejected-liverpool-kenya", "kenyan-football-fans-reaction-salah-staying-liverpool", "mohamed-salah-performance-after-new-liverpool-deal-kenya", "liverpool", "salah", "transfer", "premier-league", "football", "kenya"]
 canonical: "https://zandani.co.ke/article/salahs-shameful-exit-where-is-the-liverpool-2029-contract"
 date: "2026-04-24T07:51:13Z"
+focusKeyword: "Salahs Shameful Exit Wheres the Liverpool 2029 Contract"
+dateModified: "2026-04-24T07:51:13Z"
 ---
-
 Mohamed Salah is reportedly set to abandon Liverpool this summer, leaving a gaping void and exposing the club's abysmal handling of its star asset. This impending betrayal, hinted at by persistent whispers, paints a grim picture for Anfield faithful.
 
 ## Salah's Stalling: The Non-Existent Mohamed Salah Contract Extension Liverpool 2029 Kenya
@@ -34,3 +35,4 @@ Poor Arne Slot. The man has barely settled his desk and he's already embroiled i
 The hopes of *kenyan football fans reaction salah staying liverpool* are rapidly dissolving into bitter disappointment. We watched him dominate, we celebrated his goals, and now we witness this messy, drawn-out exit. The narrative of "one of their greatest ever players" is quickly becoming a footnote to a mercenary departure. It’s a harsh lesson for those who believe loyalty exists in modern football. This isn't a respectful parting of ways; it's a messy divorce initiated by a player seemingly chasing a fatter wallet, facilitated by a club that let the situation spiral. The romance is dead. Every fan who bought his jersey, who stayed up late to watch him, is now left with a bitter taste. This is not how heroes depart; this is how legends tarnish their own legacy.
 
 Liverpool should cut their losses and sell Salah now. Get whatever cash they can, avoid the ignominy of a free transfer, and rebuild with players who actually want to be there. Salah should go and chase his final paycheck, but let him do it away from Anfield. This messy breakup is long overdue, and both parties need to move on, decisively and without sentimentality.
+

@@ -7,6 +7,8 @@ image: "https://i.ibb.co/ptzT0Br/3f84c61c0d98.webp"
 category: "Sports"
 tags: ["newcastle-united", "eddie-howe", "saudi-ownership", "liv-golf"]
 date: "2026-05-01T12:43:12Z"
+focusKeyword: "Saudi Ownersâ Newcastle United Stance Revealed Eddie Howe Is"
+dateModified: "2026-05-01T12:43:12Z"
 ---
 Newcastle United's ownership has reaffirmed its long-term ambition for the club, with head coach Eddie Howe confirming their desire to reach the Premier League's summit remains "unchanged" following recent high-level discussions. This commitment persists despite the Public Investment Fund's (PIF) impending withdrawal from LIV Golf at the close of the current season.
 

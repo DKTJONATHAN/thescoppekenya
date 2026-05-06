@@ -10,8 +10,8 @@ tags: ["kenya media", "digital news", "social media", "media council of kenya", 
 date: "2026-05-06T11:21:51Z"
 dateModified: "2026-05-06T11:21:51Z"
 schema: "NewsArticle"
+focusKeyword: "Social Media Overtakes Television as Primary News Source in"
 ---
-
 ## The Obsolescence of the Evening Bulletin: Kenya’s Information Transition
 
 History tends to echo itself, though the cadence changes with every technological surge. In the mid-twentieth century, the arrival of radio broadcasts in the Kenyan interior fundamentally altered the rhythm of local knowledge. Information, once held strictly within the boundaries of oral tradition, gained a cold, authoritative, and disembodied counterpart in the KBC transmitter. Today, the Media Council of Kenya provides data that marks a third seismic shift in our national narrative: social media has eclipsed television as the primary source of public information.
@@ -37,3 +37,4 @@ The decline of the evening bulletin is more than a commercial crisis for media h
 As traditional outlets experience further contraction, the resulting void is being occupied by a volatile mixture of citizen journalists, influencers, and anonymous actors. It is essential to monitor how the state attempts to manage this loss of centralized control. Broader initiatives, such as the digital system for public service recruitment, indicate a growing government ambition to move state interaction entirely into the digital sphere. The defining conflict of the coming decade will likely center on the tension between the push for total digital connectivity and the desperate need to preserve objective, verifiable truth. 
 
 The historical record suggests that each leap in communication efficiency comes at a cost to the certainty of what is true. We are now living in the quiet aftermath of that loss, navigating a landscape where the broadcast signal has been replaced by the feed.
+

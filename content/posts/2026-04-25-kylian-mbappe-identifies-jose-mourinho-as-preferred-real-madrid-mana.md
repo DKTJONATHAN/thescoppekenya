@@ -5,6 +5,8 @@ author: "Sports Desk"
 image: "https://i.ibb.co/Q3SC64qN/58122a80da91.jpg"
 category: "Global News"
 date: "2026-04-25T20:24:14Z"
+focusKeyword: "Kylian Mbappe identifies Jose Mourinho as preferred Real Mad"
+dateModified: "2026-04-25T20:24:14Z"
 ---
 ## Mbappe's Calculated Charade and Madrid's Desperate Return to the 'Special' Past
 
@@ -21,3 +23,4 @@ The idea of bringing Mourinho back to the Bernabeu smacks of desperation, a club
 ### Madrid's Vicious Cycle of Desperation
 
 Real Madrid's current plight is a depressingly familiar narrative. Knocked out of the Champions League and trailing Barcelona in La Liga, the club is set to finish "trophyless". Arbeloa, having replaced Xabi Alonso earlier this year, is now "likely to be moved on at the end of the season". The club is seeking a "more experienced coach after their mistake with Alonso", which implies a fundamental misunderstanding of managerial development or, more cynically, a refusal to commit to a long-term vision. Mourinho, despite his past divisiveness, "has emerged as a viable option" with a return to Real Madrid "appearing to be his priority". His non-committal statements regarding his future at Benfica, where they are "seven points adrift of leaders Porto" despite being "second in the top flight" and "not losing a match this season," only add to the calculated ambiguity surrounding his next move. It’s a convenient setup for a club that seems perpetually trapped in a cycle of short-term fixes and high-profile gambles.
+

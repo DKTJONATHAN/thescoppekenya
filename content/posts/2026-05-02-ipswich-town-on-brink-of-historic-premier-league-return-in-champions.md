@@ -7,6 +7,8 @@ image: "https://i.ibb.co/gLpGQXLP/0479a50d7f94.webp"
 category: "Sports"
 tags: ["ipswich-town", "premier-league", "efl-championship", "football-promotion"]
 date: "2026-05-02T12:37:35Z"
+focusKeyword: "Ipswich Town on Brink of Historic Premier League Return in C"
+dateModified: "2026-05-02T12:37:35Z"
 ---
 By Jona Munyi
 

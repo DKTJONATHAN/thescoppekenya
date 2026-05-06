@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["dr-ofweneke", "kenyan-entertainment", "ofweneke-daughter", "celebrity-parenting", "kenyan-comedian"]
 canonical: "https://zandani.co.ke/article/dr-ofweneke-reacts-as-daughter-addresses-him-as-bro"
 date: "2026-04-25T03:34:54Z"
+focusKeyword: "Dr Ofweneke Reacts as Daughter Addresses Him as Bro"
+dateModified: "2026-04-25T03:34:54Z"
 ---
 Kenyan comedian and media personality Dr. Ofweneke recently prompted a lively online discussion after revealing that his Gen Z daughter, Faith Ofweneke, has adopted the casual habit of addressing him as "bro" in their daily conversations. His humorous query on Instagram for parenting advice quickly went viral across social media platforms.
 
@@ -27,3 +29,4 @@ The widespread reaction to Dr. Ofweneke's post underscores a significant shift i
 ### Beyond the Lighter Moments
 
 While this particular incident offered a humorous glimpse into Dr. Ofweneke's life, he has often spoken candidly about the responsibilities of fatherhood. He frequently shares insights into his family life, including his two daughters with musician Nicah the Queen, with whom he continues to co-parent despite their past separation. Ofweneke has also been vocal about the financial pressures of raising children, particularly the substantial cost of private school education, a common concern for many Kenyan parents striving to provide for their families in 2026.
+

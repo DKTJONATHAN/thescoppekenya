@@ -9,8 +9,9 @@ category: "News"
 tags: ["kerosene-price-freeze", "president-william-ruto", "opiyo-wandayi", "fuel-subsidies", "energy-policy"]
 canonical: "https://zandani.co.ke/article/president-ruto-orders-freeze-on-kerosene-prices-to-protect-consumers"
 date: "2026-04-15T10:39:42Z"
+focusKeyword: "President Ruto orders freeze on kerosene prices to protect c"
+dateModified: "2026-04-15T10:39:42Z"
 ---
-
 President William Ruto has directed a freeze on kerosene prices and approved a KSh6.2 billion fuel subsidy to mitigate rising costs for consumers. Energy and Petroleum Cabinet Secretary Opiyo Wandayi confirmed these measures today, Wednesday, April 15, 2026, from Siaya County, following yesterday's fuel price adjustments by the regulator.
 
 Presidential Order Curbs Kerosene Price Surge Energy and Petroleum Cabinet Secretary Opiyo Wandayi announced President Ruto's directive to maintain kerosene prices at current rates, shielding low-income households that depend on it for cooking and lighting. This decision comes after the latest review by the Energy and Petroleum Regulatory Authority (EPRA) on Tuesday, April 14, 2026, which saw significant increases in Super Petrol and Diesel prices.
@@ -20,5 +21,6 @@ Fuel Price Adjustments and Government Intervention The recent EPRA review, cover
 Geopolitical Tensions Blamed for Hikes Wandayi attributed the escalation in fuel prices to the ongoing Middle East war. He stated that prices are expected to decline once these geopolitical tensions, specifically mentioning the U.S./Israel-Iran conflict, subside.
 
 Economic Ripple Effects Anticipated Following the price increases, Public Service Vehicle (PSV) operators have announced a fare hike of at least 25 per cent across all routes. This is expected to trigger a corresponding increase in the prices of goods and other services throughout the country. 
+
 
 

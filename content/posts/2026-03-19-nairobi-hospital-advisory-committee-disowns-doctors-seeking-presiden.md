@@ -9,8 +9,9 @@ category: "News"
 tags: ["nairobi-hospital", "nairobi-hospital-leadership-dispute", "medical-advisory-committee", "healthcare-governance", "president-william-ruto"]
 canonical: "https://zandani.co.ke/article/nairobi-hospital-advisory-committee-disowns-doctors-seeking-presiden"
 date: "2026-03-19T11:52:24Z"
+focusKeyword: "Nairobi Hospital Advisory Committee Disowns Doctors Seeking"
+dateModified: "2026-03-19T11:52:24Z"
 ---
-
 Nairobi Hospital's Medical Advisory Committee, representing 730 consultants, has disowned five doctors for bypassing established channels and seeking President William Ruto's direct intervention in the facility's leadership and financial disputes, escalating internal tensions within the institution.
 
 Nairobi Hospital: Internal Rift Over Presidential Appeal The Medical Advisory Committee has publicly faulted a section of the admitting staff for circumventing established communication structures. According to committee chairperson Dr. Agnes Gachoki, the hospital operates on a structured system where concerns are addressed at divisional levels before escalating to the advisory committee for deliberation and resolution through proper governance channels. Each medical specialty holds regular meetings to discuss issues affecting doctors and patient care, subsequently forwarding them to the central committee for coordinated decision-making.
@@ -22,5 +23,6 @@ President Ruto’s Intervention Directives The development follows growing scrut
 Board Members Arrested Amidst Crisis The crisis escalated further after the arrest of several senior board members on March 14, 2026. Among those apprehended were Chairman Dr. Job Obwaka, Vice Chairman Samson Kinyanjui, Former Chairman Dr. Chris Bichange, and Director Valery Gaya. They were subsequently released on a bond of Ksh5 million each. The charges against them include conflict of interest, withholding financial records for several years, and allegedly receiving unlawful benefits linked to an insurance agency contracted by the hospital.
 
 Hospital Services Remain Operational Despite the ongoing disputes, Dr. Agnes Gachoki assured the public that Nairobi Hospital remains fully operational. She confirmed that 80 per cent of services are still being offered. The hospital continues its vital work amidst other significant regional developments, including heightened attention to road safety after a recent fatal incident on the Nairobi-Mombasa Highway. 
+
 
 

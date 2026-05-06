@@ -5,8 +5,9 @@ author: "Celestine Nzioka"
 image: "https://i.ibb.co/QjmG3RPw/6c2dadacad04.jpg"
 category: "News"
 date: "2026-03-09T16:16:12Z"
+focusKeyword: "Instant Fines 5 Key Concerns"
+dateModified: "2026-03-09T16:16:12Z"
 ---
-
 ## Instant Fines System: Public Transport Operators Raise Implementation Concerns The Federation of Public Transport Sector (FPTS) has cautiously welcomed the National Transport and Safety Authority's (NTSA) Instant Fines System Technology. In a statement released on March 9, 2026, FPTS highlighted the technology's potential for improving road discipline and reducing corruption, yet articulated key concerns regarding implementation gaps that require urgent clarification from authorities.
 
 Clarification on Offenses and Visibility Critical FPTS emphasized that many drivers currently lack clear information regarding offenses captured by the new system's cameras and their corresponding penalties. The federation has called for the immediate publishing of a transparent list detailing all offenses and attached fines. Such a measure would empower motorists to understand regulations and comply, preventing the accumulation of penalties. FPTS further stressed the importance of visibly marking enforcement cameras along highways and urban roads, referencing international practices where visible surveillance effectively encourages driver compliance and reduces violations.
@@ -20,5 +21,6 @@ NTSA's System and Enforcement Mechanisms NTSA states that its digital enforcemen
 Funding Shortfalls and Judicial Burden Despite the system's rollout, transport operators express apprehension regarding persistent budget shortfalls affecting road safety enforcement agencies. There are concerns that the maintenance of camera data systems and monitoring infrastructure could face challenges without sustained government funding. Additionally, the sector points to an existing backlog of traffic-related court cases, warning that potential disputes over automated penalties could place further pressure on the Judiciary if motorists challenge digital tickets.
 
 Call for Collaborative Dialogue For now, FPTS advocates for a consultative meeting involving NTSA, the Judiciary, and the National Police Service (NPS). The federation believes such a dialogue is crucial to align enforcement rules and address existing concerns before the instant fines system fully redefines daily driving practices across the nation. 
+
 
 

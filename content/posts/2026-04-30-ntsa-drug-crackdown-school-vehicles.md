@@ -9,6 +9,7 @@ description: "NTSA is urging Kenyans to report students using drugs in school ve
 excerpt: "NTSA is urging Kenyans to report students using drugs in school vehicles to enhance safety. This crackdown aims to protect learners. Read the full story."
 tags: ["Kenya News", "NTSA", "School Transport Safety", "Drug Abuse", "Kenya"]
 focusKeyword: "NTSA drug crackdown"
+dateModified: "2026-04-30T14:36:51Z"
 ---
 ## NTSA Intensifies Drug Crackdown in School Vehicles
 
@@ -25,3 +26,4 @@ Following a report of potential drug usage in a school vehicle, NTSA and relevan
 ### Alarming Statistics on Student Substance Abuse
 
 NTSA's alert coincides with concerning statistics on substance abuse among learners across Kenya. The 2024/2025 report by the National Authority for the Campaign Against Alcohol and Drug Abuse (NACADA) indicates that 20.2 percent of primary school pupils have tried at least one substance, with 16.9 percent being active users at the time of reporting. A 2026 study from the University of Nairobi further revealed that overall drug and substance use among secondary school students ranges between 20 percent and 40 percent. This study also highlighted a troubling pattern: one in every three secondary school students may have experimented with or used a drug at least once. The problem extends significantly to university students, with NACADA attributing 45.6 percent usage of drugs among them. Commonly abused substances include alcohol, tobacco, khat, cannabis, and prescription drugs like codeine across these categories.
+

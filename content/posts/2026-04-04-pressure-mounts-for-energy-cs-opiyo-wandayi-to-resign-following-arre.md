@@ -9,8 +9,9 @@ category: "News"
 tags: ["opiyo-wandayi", "fuel-scandal", "ministry-of-energy", "emergency-fuel-procurement", "energy-sector-governance"]
 canonical: "https://zandani.co.ke/article/pressure-mounts-for-energy-cs-opiyo-wandayi-to-resign-following-arre"
 date: "2026-04-04T20:50:41Z"
+focusKeyword: "Pressure Mounts for Energy CS Opiyo Wandayi to Resign Follow"
+dateModified: "2026-04-04T20:50:41Z"
 ---
-
 Pressure is mounting on Energy Cabinet Secretary Opiyo Wandayi to resign following a fuel scandal that emerged on Thursday, April 2, 2026. This crisis, marked by alleged data manipulation and irregular procurement of an emergency fuel cargo, has led to several high-profile arrests, intensifying calls for accountability within the ministry.
 
 Cabinet Secretary Faces Mounting Calls President William Ruto is under increasing pressure to dismiss Energy Cabinet Secretary Opiyo Wandayi if he does not voluntarily step down over the unfolding fuel scandal. The Office of the President, through a letter signed by Head of Public Service and Chief of Staff Felix Koskei and dated April 4, confirmed that Energy and Petroleum Regulatory Authority (EPRA) Director General Daniel Kiptoo, Kenya Pipeline Company (KPC) Managing Director Joe Sang, Petroleum Principal Secretary Mohamed Liban, and Petroleum Deputy Director Joseph Wafula are implicated in manipulating in-country fuel stock data.
@@ -24,5 +25,6 @@ Senator Khalwale Demands Action Kakamega Senator Boni Khalwale has spearheaded c
 CS Wandayi Remains Silent Amidst Probe Despite the growing public and political pressure, Energy Cabinet Secretary Opiyo Wandayi has yet to issue a public statement regarding the developments within his ministry. This silence persists as investigations continue to gather pace.
 
 Questions Raised Over Motives Behind Arrests Kiharu MP Ndindi Nyoro has introduced a different perspective, suggesting that the arrests might be connected to deeply entrenched interests within the fuel supply chain rather than solely a push for accountability. Nyoro claimed, "It has very little to do with the welfare of Za Ndani, and it has everything to do with small people who have eaten what belongs to the big man". He pointed to the government-to-government (G-to-G) fuel importation framework, alleging it has long functioned as a business model that benefits well-connected players. 
+
 
 

@@ -10,6 +10,8 @@ category: "News"
 tags: []
 canonical: "https://zandani.co.ke/article/hussein-mohamed-rejects-fkf-suspension-over-sh42m-chan-claims"
 date: "2026-04-25T09:10:04Z"
+focusKeyword: "Hussein Mohamed Rejects FKF Suspension Over Sh42M CHAN Claim"
+dateModified: "2026-04-25T09:10:04Z"
 ---
 Hussein Mohamed has vehemently rejected his suspension by the Football Kenya Federation (FKF), declaring the move unjustified and asserting that no funds were lost during the 2025 African Nations Championship (CHAN) preparations. His statement, released today, challenges allegations of financial mismanagement amounting to Ksh42 million.
 
@@ -28,3 +30,4 @@ The embattled FKF boss claimed these allegations constitute a targeted smear cam
 ### Interim Leadership and Financial Directives
 
 Following the NEC resolution, Deputy President Macdonald Mariga has been installed as the Acting FKF President, pending the outcome of ongoing investigations. Additionally, the committee ordered the freezing of all FKF bank accounts linked to Mohamed in his official capacity. This measure was taken to preserve evidence and prevent any potential interference, aligning with a broader focus on financial accountability and transparency. The move reflects heightened scrutiny over financial transactions, echoing calls for improved fiscal discipline, as detailed in resources such as the [KRA Guide on How to Generate eTIMS Invoices on eCitizen: A Mandate for National Fiscal Discipline](https://zandani.co.ke/article/kra-guide-generate-etims-invoices-ecitizen).
+

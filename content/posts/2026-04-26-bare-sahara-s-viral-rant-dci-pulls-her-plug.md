@@ -9,6 +9,8 @@ category: "Entertainment"
 tags: ["bare-sahara", "dci-kenya", "viral-rant", "kenyan-entertainment", "online-controversy"]
 canonical: "https://zandani.co.ke/article/bare-sahara-s-viral-rant-dci-pulls-her-plug"
 date: "2026-04-26T17:58:44Z"
+focusKeyword: "Bare Saharas Viral Rant DCI Pulls Her Plug"
+dateModified: "2026-04-26T17:58:44Z"
 ---
 Bare Sahara's Viral Rant: DCI Pulls Her Plug!
 
@@ -31,3 +33,4 @@ The DCI's statement reiterated that exercising freedom of expression must be don
 Za Ndani understands that the DCI's approach in this matter is a straightforward application of the law to a perceived breach of public peace. They aren't looking for hidden meanings or subtle subtexts; rather, their focus is on the literal impact of Ms. Ahmed's statements on national cohesion. This directness highlights the seriousness with which law enforcement in Kenya treats matters that could potentially jeopardize the country's delicate social fabric.
 
 As investigations continue, the streets are buzzing with whispers: in Kenya, you can speak your mind, but you better pick your words wisely or face the music.
+

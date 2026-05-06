@@ -10,6 +10,8 @@ category: "News"
 tags: []
 canonical: "https://zandani.co.ke/article/health-ministry-suspends-sha-tariff-locking-for-civil-servants"
 date: "2026-04-23T17:44:54Z"
+focusKeyword: "Health Ministry Suspends SHA Tariff Locking for Civil Servan"
+dateModified: "2026-04-23T17:44:54Z"
 ---
 The Ministry of Health Cabinet Secretary Aden Duale announced the immediate suspension of the Social Health Authority's (SHA) tariff-locking mechanism today, Thursday, April 23. This directive follows widespread reports of civil servants being denied medical services or compelled to pay out of pocket at contracted health facilities, aiming to resolve payment friction.
 
@@ -28,3 +30,4 @@ To address urgent situations, a joint rapid response desk will be established. T
 ### Impact on Vulnerable Patients
 
 The resolution addresses a crisis that significantly impacted public servants, particularly those with chronic conditions such as requiring dialysis, cancer treatment, and diabetes management, alongside accident and emergency cases. Many reported being turned away or forced to pay cash for services they already fund through salary deductions. Earlier widespread reports suggesting a suspension of SHA services for civil servants were dismissed by the Ministry, which reiterated that contracted facilities should not demand cash payments. Amidst ongoing government efforts to ensure service delivery, various directives are being issued across different sectors, for instance, a recent directive on [Government orders evacuation of Kibera and nearby estates as Nairobi Dam risks bursting](https://zandani.co.ke/article/government-orders-evacuation-of-kibera-and-nearby-estates-as-nairobi).
+

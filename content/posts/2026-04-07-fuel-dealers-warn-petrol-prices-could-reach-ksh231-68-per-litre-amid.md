@@ -9,8 +9,9 @@ category: "News"
 tags: ["fuel-price-hike", "kenyan-fuel-dealers", "global-oil-supply-pressures", "energy-sector-economics"]
 canonical: "https://zandani.co.ke/article/fuel-dealers-warn-petrol-prices-could-reach-ksh231-68-per-litre-amid"
 date: "2026-04-07T07:51:19Z"
+focusKeyword: "Fuel dealers warn petrol prices could reach Ksh23168 per lit"
+dateModified: "2026-04-07T07:51:19Z"
 ---
-
 Fuel dealers are cautioning that petrol prices could surge to Ksh231.68 per litre in the upcoming pricing cycle. This anticipated increase, potentially between Ksh30 and Ksh60, is driven by escalating global oil costs and significant local supply pressures, according to industry experts speaking today, Tuesday, April 7, 2026.
 
 Projected Fuel Price Hike Industry stakeholders predict a substantial increase in fuel costs for consumers in the next pricing review, scheduled for April 14, 2026. Martin Chomba, Chair of the Petroleum Outlets Association of Kenya (POAK), stated in an interview with Inooro FM that the rise is imminent. The projected figures are based on a weighted average of fuel shipments that arrived at the Port of Mombasa between March 9 and April 10, 2026.
@@ -22,5 +23,6 @@ Strategic Reserves and Supply Challenges Kenya currently lacks strategic fuel re
 Supply Chain and Quality Concerns When fuel shipments arrive at the Port of Mombasa, the cargo is offloaded into storage tanks managed by the Kenya Pipeline Company, government-owned facilities, or those remaining from the defunct Kenya Petroleum Refineries Limited. Despite being in government storage, the fuel remains under the ownership of the importing companies. Fuel is only released to retailers after duties and taxes are paid and cleared by the Kenya Revenue Authority (KRA). This clearance process can take several days, delaying when the fuel reaches consumers. The KRA is also implementing measures to simplify transit, such as rolling out an EAC Customs Bond. Chomba also addressed an ongoing scandal concerning substandard fuel imports, noting that some lower-quality shipments, potentially with higher sulphur content, are already in storage, though their release to the market is uncertain.
 
 Market Forces Dictate Prices While the government could utilize the Petroleum Development Levy to mitigate price increases for consumers, Chomba emphasized that market forces, including global prices and the control exerted by the private sector, will ultimately determine pump prices. 
+
 
 

@@ -9,6 +9,8 @@ category: "News"
 tags: ["sugarcane-price-reduction", "consumer-sugar-costs", "kenya-sugar-board", "jude-chesire", "agricultural-policy"]
 canonical: "https://zandani.co.ke/article/government-reduces-sugarcane-price-expects-lower-consumer-sugar-cost"
 date: "2026-04-25T11:07:39Z"
+focusKeyword: "Government Reduces Sugarcane Price Expects Lower Consumer Su"
+dateModified: "2026-04-25T11:07:39Z"
 ---
 The government has reduced the minimum sugarcane price from Ksh5,750 to Ksh5,500 per tonne, effective April 24, 2026. This decision, aimed at balancing farmer earnings and market realities amid increased sugar production, is expected to lower consumer sugar costs across the nation.
 
@@ -22,3 +24,4 @@ The price adjustment coincides with improved sugar production in 2026, driven by
 
 ### Cushioning Farmers and Regional Competitiveness
 Despite some millers proposing a sharper reduction to Ksh5,000 per tonne due to rising operational costs, the government settled on Ksh5,500 to cushion farmers from sharp income losses. Local farmers continue to earn more than their regional counterparts, even after the downward revision. For instance, farmers in Tanzania earn an estimated Ksh4,900 per tonne, while those in Uganda receive about Ksh4,500 per tonne, reinforcing the position that local pricing remains competitive.
+

@@ -174,6 +174,15 @@ export default function AuthorProfilePage() {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={`${actualAuthorName} | Za Ndani`} />
         <meta name="twitter:description" content={profile.bio} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": actualAuthorName,
+          "description": profile.bio,
+          "url": `https://zandani.co.ke/author/${authorName}`,
+          "image": profile.avatar || "https://zandani.co.ke/images/default-avatar.jpg",
+          "jobTitle": profile.role
+        })}</script>
       </Helmet>
 
       {/* ── Author hero banner ── */}

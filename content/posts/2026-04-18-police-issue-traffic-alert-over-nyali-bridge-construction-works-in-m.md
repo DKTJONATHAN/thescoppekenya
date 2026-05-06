@@ -9,8 +9,9 @@ category: "News"
 tags: ["nyali-bridge-construction", "mombasa-traffic-alert", "kengeleni-pillar-installation", "infrastructure-development"]
 canonical: "https://zandani.co.ke/article/police-issue-traffic-alert-over-nyali-bridge-construction-works-in-m"
 date: "2026-04-18T15:55:48Z"
+focusKeyword: "Police Issue Traffic Alert Over Nyali Bridge Construction Wo"
+dateModified: "2026-04-18T15:55:48Z"
 ---
-
 The National Police Service issued a traffic alert today, April 18, 2026, concerning severe congestion in Mombasa. Motorists are experiencing significant snarl-ups along Saba Saba, Buxton, and the critical Nyali Bridge corridor, attributed to ongoing pillar installation works between Nyali Bridge and Kengeleni.
 
 Mombasa Traffic Gridlock Persists
@@ -22,5 +23,6 @@ Police Deploy Officers, Warn Against Violations In response to the unprecedented
 Diversions and Motorist Advisory To ease the severe congestion, a diversion has been implemented along the Kisauni-Malindi-Mombasa Road. Vehicles are now being redirected through Mishomoroni before rejoining at the Kisauni junction. Motorists are urged to exercise patience, maintain strict lane discipline, and utilize alternative routes where possible to help alleviate the current traffic burden and enhance overall road safety.
 
 Broader Traffic Management Initiatives This traffic alert coincides with other significant governmental efforts to improve infrastructure and manage traffic within Mombasa. Currently, demolitions of structures adjacent to road reserves and around Kongowea Lights are underway. Additionally, the County Government of Mombasa, under Governor Abdulswamad Nassir's administration, implemented a temporary three-month restriction on heavy commercial vehicles exceeding ten tonnes. This restriction, which began on April 3, 2026, and is set to continue until July 1, aims to reduce congestion and enhance traffic flow during peak hours on designated roads. 
+
 
 

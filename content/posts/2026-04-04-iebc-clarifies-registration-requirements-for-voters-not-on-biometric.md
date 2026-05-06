@@ -9,8 +9,9 @@ category: "News"
 tags: ["iebc", "voter-registration", "biometric-voter-registration", "electoral-management", "voter-rolls"]
 canonical: "https://zandani.co.ke/article/iebc-clarifies-registration-requirements-for-voters-not-on-biometric"
 date: "2026-04-04T14:53:55Z"
+focusKeyword: "IEBC clarifies registration requirements for voters not on b"
+dateModified: "2026-04-04T14:53:55Z"
 ---
-
 The Independent Electoral and Boundaries Commission (IEBC) moved on Saturday, April 4, 2026, to clarify confusion regarding voter registration requirements. The Commission stated that only individuals who registered before 2012 and did not subsequently present themselves for biometric registration are required to enroll afresh, dismissing concerns of a blanket re-registration exercise.
 
 IEBC Clarifies Voter Registration Requirements
@@ -22,5 +23,6 @@ Evolution of the Voter Register The current Register of Voters (RoV) was establi
 Integrity of the Biometric System The IEBC further reassured the public that the current biometric register, which has been in use since 2013, remains credible. By the time of the 2022 General Election, the register had undergone an audit and contained over 22 million voters, reflecting an accurate and reliable database. Amidst ongoing national efforts to enhance critical systems, including strengthening livestock disease detection to support farmers and public health, the integrity of the electoral roll remains a paramount concern for the Commission.
 
 Targeted Enrollment Directive The directive exclusively applies to individuals who had enrolled as voters before 2012 but did not subsequently present themselves for biometric registration. Such individuals are not part of the current biometric RoV. The IEBC emphasizes that this is not a widespread re-registration, but rather a targeted effort to ensure all eligible voters are accurately captured within the current digital system. 
+
 
 

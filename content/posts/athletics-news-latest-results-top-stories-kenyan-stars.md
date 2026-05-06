@@ -7,8 +7,9 @@ image: "https://cdn.tuko.co.ke/tuko/img/logo_fb.png"
 category: "Sports"
 date: "2026-02-24"
 tags: ["athletics", "kenya", "sports", "marathon", "track and field", "tuko news", "eliud kipchoge", "hellen obiri", "beatrice chebet", "ferdinand omanyala", "emmanuel wanyonyi"]
+focusKeyword: "Athletics News Latest Results and Top Stories Kenyan Stars S"
+dateModified: "2026-02-24"
 ---
-
 ## Athletics News: A Somber Start to 2026, But Hope on the Horizon The world of Kenyan athletics is currently grappling with a somber development as Eric Lloyd Ochieng, who went missing on February 16, has been found dead in Ngong Forest, bringing a tragic end to an eight-day search. The discovery of Ochieng's body, which showed signs of decomposition, has left his family devastated and raised questions about the mysterious phone call he received before his disappearance.
 
 Latest Results: Kenyan Athletes Making Waves in Early 2026 Despite the heartache, Kenyan athletes continue to make their mark on the global stage, delivering promising **latest results** in early 2026. Our stars are already demonstrating their prowess across various events, setting the tone for what promises to be an exhilarating year in athletics.
@@ -28,5 +29,6 @@ Diamond League Highlights and Athlete of the Year Snubs The 2025 Rabat Diamond L
 Kipchoge's Enduring Legacy and Obama Meeting Marathon legend Eliud Kipchoge, fresh off completing his seventh star at the 2025 New York Marathon on November 2, has emphatically rejected retirement talk, revealing a bold two-year plan for his future in athletics. Adding to the memorable moments of 2025, Kipchoge also had an exciting meeting with former United States President Barack Obama, an event that captivated Kenyans online.
 
 Nairobi's Marathon Preparations Closer to home, the Traffic Department in Nairobi had confirmed major road closures on Sunday, October 26, for the 2025 Standard Chartered Marathon, ensuring the smooth execution of this significant annual event. 
+
 
 
