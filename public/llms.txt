@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Forex Influencers Nebs and Nyathira Lose Access to Pocket Option](https://zandani.co.ke/article/forex-influencers-nebs-nyathira-pocket-option-account-freeze) - Kenyan forex influencers Nebs Mordechai and Nyathira have been blocked from their Pocket Option accounts, citing the loss of over 4 million shillings.
 - [Stephen Colbert seeks Pope Leo XIV as final Late Show guest](https://zandani.co.ke/article/stephen-colbert-seeks-pope-leo-xiv-as-final-late-show-guest) - Stephen Colbert aims to host Pope Leo XIV on The Late Show before his series finale on May 21 for a discussion on faith and life.
 - [The Siren Song of Shares: A Vybz Kartel Kenya Concert Scam](https://zandani.co.ke/article/siren-song-vybz-kartel-kenya-concert-scam) - A familiar echo across centuries, from London's Exchange Alley to Kampala's hopeful streets, whispers of an alleged Vybz Kartel Nairobi May 2026 tour, reminding
 - [Claims of a Sifuna-Maraga-Gachagua 2027 Presidential Ticket Are False](https://zandani.co.ke/article/claims-of-a-sifuna-maraga-gachagua-2027-presidential-ticket-are-fals) - Claims of a 2027 presidential ticket featuring Edwin Sifuna, David Maraga, or Rigathi Gachagua are false, serving only as satire amid shifting coalitions.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Karen Nyamu admits to miraa use while pushing for legislative reform](https://zandani.co.ke/article/karen-nyamu-advocates-for-miraa-reclassification-in-senate) - Senator Karen Nyamu has admitted to personal miraa use while advocating for the declassification of the crop to boost trade and industry in Kenya.
 - [Kenya Relaxes Fuel Sulphur Standards Amid Supply Chain Concerns](https://zandani.co.ke/article/kenya-relaxes-fuel-sulphur-standards-amid-supply-chain-concerns) - The Kenyan government has temporarily lowered fuel sulphur standards for six months, sparking health and environmental concerns across Nairobi.
 - [Sting Reaffirms Decision Not to Leave Inheritance to His Children](https://zandani.co.ke/article/sting-reaffirms-decision-not-to-leave-inheritance-to-his-children) - Musician Sting has confirmed his long-standing policy of not leaving his fortune to his children to ensure they develop a strong personal work ethic.
-- [One Night Only Festival Returns to Sarit Expo Centre](https://zandani.co.ke/article/one-night-only-festival-nairobi-sarit-expo-centre) - The One Night Only festival returns to the Sarit Expo Centre with a multi-genre music showcase featuring Alikiba, Bien, and international stars.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
