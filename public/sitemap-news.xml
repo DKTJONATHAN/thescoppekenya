@@ -4,6 +4,28 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/arsenal-reach-first-champions-league-final-in-two-decades</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T06:13:40.000Z</news:publication_date>
+      <news:title>Arsenal Reach First Champions League Final in Two Decades</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/barack-obama-stephen-colbert-late-show-cbs-finale</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T06:11:40.000Z</news:publication_date>
+      <news:title>Barack Obama and Stephen Colbert discuss presidential standards</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/the-royal-womb-oheneni-adazoa-husband-ivf-details</loc>
     <news:news>
       <news:publication>
