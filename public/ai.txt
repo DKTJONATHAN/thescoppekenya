@@ -15,5 +15,5 @@ Allow: /sitemap.xml
 
 # Contact: contact@zandani.co.ke
 # Website: https://zandani.co.ke
-# Language: English / Sheng (Swahili-based)
+# Language: English (Kenyan)
 # Region: Kenya, East Africa
