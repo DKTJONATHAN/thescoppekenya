@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/the-royal-womb-oheneni-adazoa-husband-ivf-details</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T06:11:08.000Z</news:publication_date>
+      <news:title>The Royal Womb and Oheneni Adazoa Husband IVF Details</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/arsenal-reach-champions-league-final-after-beating-atletico-madrid</loc>
     <news:news>
       <news:publication>
@@ -683,39 +694,6 @@
       </news:publication>
       <news:publication_date>2026-05-04T07:29:10.000Z</news:publication_date>
       <news:title>Kalondu Musyimi Named Top African Showbiz Reporter at Golden Awards</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/the-silent-catch-lake-victoria-bombs-threaten-peace</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-04T06:11:25.000Z</news:publication_date>
-      <news:title>The Silent Catch: Lake Victoria Bombs Threaten Peace</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/tottenham-s-great-escape-spurs-leapfrog-west-ham-in-dramatic-premier</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-04T05:05:49.000Z</news:publication_date>
-      <news:title>Tottenham’s Great Escape? Spurs Leapfrog West Ham in Dramatic Premier League Relegation Battle</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/dp-gachagua-and-oscar-sudi-threaten-uhuru-kenyatta-s-pension-revocat</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-04T04:11:21.000Z</news:publication_date>
-      <news:title>DP Gachagua and Oscar Sudi Threaten Uhuru Kenyatta&apos;s Pension Revocation, But Former President Remains Unfazed</news:title>
     </news:news>
   </url>
 </urlset>
