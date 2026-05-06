@@ -28,7 +28,8 @@
     "a23b3cf52fa45f8bfffe124d93fd9951",
     "a2c623ac922ac80a7961792c0a94ba97",
     "40af69db5bb2408c1597f0f2f34ecb48",
-    "b012f0d01d285f888027895a19cc5837"
+    "b012f0d01d285f888027895a19cc5837",
+    "31af04bc2669ac481c10f7204e8556c5"
   ],
   "style_history": [
     "Letter Form",
@@ -41,7 +42,8 @@
     "Historical Lens",
     "Counterpoint",
     "Sharp Column",
-    "Personal Reflection"
+    "Personal Reflection",
+    "Historical Lens"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -54,6 +56,7 @@
     "timeline_shift|Kenya media|Historical Lens",
     "winners_losers|mental health|Counterpoint",
     "next_48_hours|Judiciary|Sharp Column",
-    "impact_on_citizens|Air Quality|Personal Reflection"
+    "impact_on_citizens|Air Quality|Personal Reflection",
+    "money_follow|Artificial Intelligence|Historical Lens"
   ]
 }
