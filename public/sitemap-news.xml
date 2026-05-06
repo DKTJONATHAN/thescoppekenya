@@ -4,6 +4,50 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/real-madrid-fans-petition-kylian-mbappe-exit</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T16:55:11.000Z</news:publication_date>
+      <news:title>Real Madrid fans sign petition to force out Kylian Mbappe</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/njugush-sparks-public-interest-following-new-creative-partnership</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T16:54:15.000Z</news:publication_date>
+      <news:title>Njugush Sparks Public Interest Following New Creative Partnership</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/kenya-trade-deficit-widens-import-costs-outpace-exports</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T16:53:23.000Z</news:publication_date>
+      <news:title>Kenya Trade Deficit Widens as Import Costs Outpace Export Revenue</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/big-brother-naija-season-11-production-officially-underway</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T16:53:18.000Z</news:publication_date>
+      <news:title>Big Brother Naija Season 11 Production Officially Underway</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/president-ruto-appoints-justice-warsame-to-supreme-court</loc>
     <news:news>
       <news:publication>
@@ -815,17 +859,6 @@
       </news:publication>
       <news:publication_date>2026-05-04T17:52:19.000Z</news:publication_date>
       <news:title>DNA Testing Reveals British Twins Have Different Biological Fathers</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/selestine-nyagah-rauka-citizen-tv</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-04T15:29:12.000Z</news:publication_date>
-      <news:title>Selestine Nyagah Joins Citizen TV Rauka After Lulu Hassan Mentorship</news:title>
     </news:news>
   </url>
 </urlset>
