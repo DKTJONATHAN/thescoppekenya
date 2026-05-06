@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/arsenal-reach-champions-league-final-after-beating-atletico-madrid</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T08:41:31.000Z</news:publication_date>
+      <news:title>Arsenal Reach Champions League Final After Beating Atletico Madrid</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/ministry-of-education-school-enrollment-and-fee-guidelines</loc>
     <news:news>
       <news:publication>
@@ -56,17 +67,6 @@
       </news:publication>
       <news:publication_date>2026-05-06T06:11:08.000Z</news:publication_date>
       <news:title>The Royal Womb and Oheneni Adazoa Husband IVF Details</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/arsenal-reach-champions-league-final-after-beating-atletico-madrid</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-05T21:17:11.000Z</news:publication_date>
-      <news:title>Arsenal Reach Champions League Final After Beating Atletico Madrid</news:title>
     </news:news>
   </url>
   <url>
@@ -727,17 +727,6 @@
       </news:publication>
       <news:publication_date>2026-05-04T09:08:30.000Z</news:publication_date>
       <news:title>Is &apos;Premflix&apos; the Future? Chilling 1994 Predictions for Modern Football Prove Scarily Accurate</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kalondu-musyimi-showbiz-reporter</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-04T07:29:10.000Z</news:publication_date>
-      <news:title>Kalondu Musyimi Named Top African Showbiz Reporter at Golden Awards</news:title>
     </news:news>
   </url>
 </urlset>
