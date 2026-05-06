@@ -66,7 +66,8 @@
     "640057f1de86bb86583628652f678c8d",
     "95d16f85ce0e69ee541c4156c610f6dc",
     "3cd34712b03da51b01ba98061f968c00",
-    "88bff49ce7dd05a5820f2a07c19f1d3c"
+    "88bff49ce7dd05a5820f2a07c19f1d3c",
+    "736eefeabf5f9186061730001fb27015"
   ],
   "style_history": [
     "Hard News Lead",
@@ -76,7 +77,8 @@
     "Explainer",
     "Trend Take",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -84,6 +86,7 @@
     "myth_vs_fact|cognitive test|Explainer",
     "money_follow|Met Gala|Trend Take",
     "accountability|television|Reaction Round-up",
-    "timeline_shift|television|Hard News Lead"
+    "timeline_shift|television|Hard News Lead",
+    "winners_losers|Buffy the Vampire Slayer|Explainer"
   ]
 }
