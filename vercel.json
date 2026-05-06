@@ -53,7 +53,15 @@
       "destination": "/index"
     },
     {
-      "source": "/:path*",
+      "source": "/article/:slug",
+      "destination": "/article/:slug/index.html"
+    },
+    {
+      "source": "/category/:slug",
+      "destination": "/category/:slug/index.html"
+    },
+    {
+      "source": "/:path((?!article/|category/).*)",
       "destination": "/index"
     }
   ],
