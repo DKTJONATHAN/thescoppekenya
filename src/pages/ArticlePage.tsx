@@ -1,6 +1,6 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
-import { getPostBySlug, getLatestPosts, type Post } from "@/lib/markdown";
+import { getPostBySlug, getLatestPosts, getAllPosts, type Post } from "@/lib/markdown";
 import {
   Clock, Calendar, Share2, Facebook, Linkedin,
   ChevronLeft, ArrowUp, Eye, MessageCircle, Flame
