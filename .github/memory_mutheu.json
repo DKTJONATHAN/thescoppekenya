@@ -65,7 +65,8 @@
     "3766f9602cdb95df8f760676f488e5d7",
     "640057f1de86bb86583628652f678c8d",
     "95d16f85ce0e69ee541c4156c610f6dc",
-    "3cd34712b03da51b01ba98061f968c00"
+    "3cd34712b03da51b01ba98061f968c00",
+    "88bff49ce7dd05a5820f2a07c19f1d3c"
   ],
   "style_history": [
     "Hard News Lead",
@@ -74,13 +75,15 @@
     "Profile Beat",
     "Explainer",
     "Trend Take",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
     "impact_on_citizens|Disney+|Profile Beat",
     "myth_vs_fact|cognitive test|Explainer",
     "money_follow|Met Gala|Trend Take",
-    "accountability|television|Reaction Round-up"
+    "accountability|television|Reaction Round-up",
+    "timeline_shift|television|Hard News Lead"
   ]
 }
