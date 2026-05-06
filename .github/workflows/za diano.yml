@@ -56,10 +56,10 @@ jobs:
           full_date_str     = datetime.datetime.utcnow().strftime("%A, %B %d, %Y")
           current_year      = datetime.datetime.utcnow().strftime("%Y")
           SITE_BASE_URL     = "https://zandani.co.ke"
-          MODELS_TO_TRY = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
-          MAX_AGE_HOURS     = 24
+          MODELS_TO_TRY = ["gemini-3.1-pro-preview", "gemini-3.1-flash-lite-preview", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash"]
+          MAX_AGE_HOURS     = 36
           TARGET_ACCOUNT    = "georgediano"
-          MIN_CHARS         = 500
+          MIN_CHARS         = 140
 
           DIANO_CONTEXT = (
               "ABOUT @georgediano (George T. Diano):\n"
@@ -119,12 +119,15 @@ jobs:
                   return image_url
 
           NITTER_INSTANCES = [
-              "https://nitter.net",
-              "https://nitter.poast.org",
+              "https://xcancel.com",
               "https://nitter.privacydev.net",
+              "https://nitter.poast.org",
               "https://nitter.tiekoetter.com",
               "https://nitter.space",
               "https://nitter.kavin.rocks",
+              "https://nitter.net",
+              "https://nitter.lucabased.xyz",
+              "https://nitter.fdn.fr",
           ]
 
           def parse_tweet_entries(items, source_label):

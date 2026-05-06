@@ -5,7 +5,7 @@ User-Agent: *
 Allow: /article/
 Allow: /category/
 Allow: /tag/
-Allow: /rss.xml
+Allow: /feed.xml
 Allow: /llms.txt
 Allow: /sitemap.xml
 
@@ -15,5 +15,5 @@ Allow: /sitemap.xml
 
 # Contact: contact@zandani.co.ke
 # Website: https://zandani.co.ke
-# Language: English / Sheng (Swahili-based)
+# Language: English (Kenyan)
 # Region: Kenya, East Africa

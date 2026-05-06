@@ -268,6 +268,30 @@ jobs:
                   print(f"  Parse error {filepath}: {e}")
                   return {}
 
+          def get_recent_history(posts_dir, limit=10):
+              # Lightweight snapshot of recent posts to discourage repeated openings/framings.
+              if not os.path.isdir(posts_dir):
+                  return []
+              files = sorted(
+                  [f for f in os.listdir(posts_dir) if f.endswith(".md")],
+                  reverse=True,
+              )[:limit]
+              history = []
+              for fn in files:
+                  try:
+                      meta = parse_frontmatter(os.path.join(posts_dir, fn))
+                      if not meta:
+                          continue
+                      history.append({
+                          "title": meta.get("title", ""),
+                          "slug":  meta.get("slug", fn.replace(".md", "")),
+                          "stylePreset": meta.get("stylepreset", ""),
+                          "bodySample": (meta.get("body", "") or "")[:400],
+                      })
+                  except Exception:
+                      continue
+              return history
+
           def load_source_articles() -> list:
               if not os.path.exists(POSTS_DIR):
                   print(f"Posts directory '{POSTS_DIR}' not found.")
