@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/azeezah-hashim-disputes-age-claims</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T17:52:50.000Z</news:publication_date>
+      <news:title>Azeezah Hashim Disputes Age Claims Amid Online Controversy</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/amos-kimunya-acquitted-in-land-fraud-case</loc>
     <news:news>
       <news:publication>
@@ -892,28 +903,6 @@
       </news:publication>
       <news:publication_date>2026-05-04T19:56:50.000Z</news:publication_date>
       <news:title>Sueh Owino Embraces Sustainable Living in New Mud Home</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kra-whistleblower-tips-recover-kes-6-8-billion-in-taxes</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-04T17:58:02.000Z</news:publication_date>
-      <news:title>KRA whistleblower tips recover KES 6.8 billion in taxes</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/twins-different-biological-fathers</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-04T17:52:19.000Z</news:publication_date>
-      <news:title>DNA Testing Reveals British Twins Have Different Biological Fathers</news:title>
     </news:news>
   </url>
 </urlset>
