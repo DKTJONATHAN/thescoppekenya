@@ -303,7 +303,7 @@ export default function ArticlePage() {
       }
     });
     return nodes;
-  }, [post?.htmlContent]);
+  }, [wovenHtml]);
 
   // ── Formatted date ──
   const formattedDate = useMemo(() => {
