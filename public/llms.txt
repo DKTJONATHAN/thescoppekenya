@@ -7,6 +7,8 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Shri Krishana Overseas reports 59 percent drop in annual earnings](https://zandani.co.ke/article/shri-krishana-overseas-reports-sharp-decline-in-annual-earnings) - Shri Krishana Overseas faces a sharp decline in profits driven by high debt costs and operational delays at its new Kisaju manufacturing facility.
+- [Jamie-Lynn Sigler details secret health struggle in new memoir](https://zandani.co.ke/article/jamie-lynn-sigler-details-health-struggle-in-new-memoir) - Actress Jamie-Lynn Sigler reveals how she concealed a bladder accident during a high-profile date with the help of friend JoAnna Garcia Swisher.
 - [CS Wandayi Explains Abandoning Changamwe Refinery for Tanga Project](https://zandani.co.ke/article/cs-wandayi-explains-abandoning-changamwe-refinery-for-tanga-project) - Energy CS Opiyo Wandayi has informed the Senate that the Changamwe oil refinery is unviable, shifting focus to a new regional facility in Tanga Tanzania.
 - [Social Media Overtakes Television as Primary News Source in Kenya](https://zandani.co.ke/article/social-media-overtakes-television-as-primary-news-source-kenya) - A new Media Council of Kenya survey reveals social media has surpassed television as the leading source of news, forcing a shift in media production.
 - [Arsenal fans praise tactical maturity after Champions League win](https://zandani.co.ke/article/arsenal-fans-praise-tactical-maturity-after-champions-league-win) - Arsenal supporters laud the team following a Champions League victory over Atletico Madrid as focus shifts to upcoming matches in the league.
@@ -15,8 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Kristine Sutherland discusses challenges playing Joyce Summers](https://zandani.co.ke/article/kristine-sutherland-discusses-challenges-playing-joyce-summers) - Actress Kristine Sutherland reflects on the emotional difficulty of portraying Joyce Summers and narrative inconsistencies in Buffy the Vampire Slayer.
 - [Kenya Pharmacy and Poisons Board Drafts Rules for Medical AI Tools](https://zandani.co.ke/article/kenya-pharmacy-and-poisons-board-drafts-rules-for-medical-ai) - The Pharmacy and Poisons Board is developing a regulatory framework for medical AI to ensure safety, data protection, and diagnostic accuracy in Kenya.
 - [NEMA shuts down Mlolongo factory over Nairobi River pollution](https://zandani.co.ke/article/nema-shuts-down-mlolongo-factory-nairobi-river-pollution) - NEMA officials have closed a manufacturing plant in Mlolongo for dumping untreated chemical waste into Nairobi River, resulting in three arrests.
-- [Why South Africa Must Address Its Xenophobia Crisis](https://zandani.co.ke/article/south-africa-xenophobia-betrayal-of-pan-african-solidarity) - Rising xenophobia in South Africa betrays the spirit of Pan-African solidarity that fueled the nation's fight against apartheid.
-- [Arsenal Reach Champions League Final After Beating Atletico Madrid](https://zandani.co.ke/article/arsenal-reach-champions-league-final-after-beating-atletico-madrid) - Arsenal secured their place in the Champions League final with a narrow 1-0 victory over Atletico Madrid at the Emirates Stadium to win 2-1 on aggregate.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
