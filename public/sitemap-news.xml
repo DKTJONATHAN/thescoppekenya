@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/knec-launches-truecert-for-digital-kcse-verification</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T20:49:22.000Z</news:publication_date>
+      <news:title>KNEC Launches TrueCert System for Digital KCSE Certificate Checks</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/forex-influencers-nebs-nyathira-pocket-option-account-freeze</loc>
     <news:news>
       <news:publication>
