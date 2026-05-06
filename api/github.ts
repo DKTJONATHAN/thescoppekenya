@@ -25,13 +25,21 @@ export default async function handler(req: any, res: any) {
       "Content-Type": "application/json",
     };
 
-    if (action === 'GET_SHA') {
+    if (action === 'GET_SHA' || action === 'GET_CONTENT') {
       const response = await fetch(`${baseUrl}?ref=${GITHUB_BRANCH}`, { headers });
-      if (response.ok) {
-        const data = await response.json();
+      if (!response.ok) {
+        if (response.status === 404) {
+          return res.status(404).json({ error: 'File not found', sha: null, content: null });
+        }
+        const err = await response.json();
+        throw new Error(err.message || `Failed to get file info from GitHub (${response.status})`);
+      }
+      const data = await response.json();
+      if (action === 'GET_SHA') {
         return res.status(200).json({ sha: data.sha });
       }
-      return res.status(404).json({ sha: null });
+      // For GET_CONTENT, return the full payload which includes content and sha
+      return res.status(200).json(data);
     }
 
     if (action === 'PUSH') {

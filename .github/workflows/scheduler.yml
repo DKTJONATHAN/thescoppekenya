@@ -1,11 +1,12 @@
-﻿name: Scheduled Posts Publisher
+﻿﻿name: Scheduled Posts Publisher
 
 # Runs every hour. When a post's publishDate arrives, commits a state
 # file â€” that push triggers Vercel's auto-deploy and Hugo renders the post.
 
 on:
   schedule:
-    - cron: "6 * * * *"
+    - cron: "0 * * * *"
+      timezone: 'Africa/Nairobi'
   workflow_dispatch:
     inputs:
       reason:
