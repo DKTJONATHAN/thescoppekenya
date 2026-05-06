@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Government Proposes New Tiered Fees for eCitizen Services](https://zandani.co.ke/article/government-proposes-new-tiered-fees-for-ecitizen-services) - The Kenyan government is introducing new regulations to formalize eCitizen fees through a tiered system following previous court rulings.
 - [KNEC Launches TrueCert System for Digital KCSE Certificate Checks](https://zandani.co.ke/article/knec-launches-truecert-for-digital-kcse-verification) - KNEC has introduced the TrueCert digital portal to allow instant verification of KCSE certificates using QR codes to combat academic document forgery.
 - [Forex Influencers Nebs and Nyathira Lose Access to Pocket Option](https://zandani.co.ke/article/forex-influencers-nebs-nyathira-pocket-option-account-freeze) - Kenyan forex influencers Nebs Mordechai and Nyathira have been blocked from their Pocket Option accounts, citing the loss of over 4 million shillings.
 - [Global Market Growth Driven by Artificial Intelligence Concentration](https://zandani.co.ke/article/global-equity-markets-ai-concentration) - Global equity markets are rising in 2026, but the growth remains fragile as capital concentrates heavily in AI infrastructure and technology firms.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Claims of a Sifuna-Maraga-Gachagua 2027 Presidential Ticket Are False](https://zandani.co.ke/article/claims-of-a-sifuna-maraga-gachagua-2027-presidential-ticket-are-fals) - Claims of a 2027 presidential ticket featuring Edwin Sifuna, David Maraga, or Rigathi Gachagua are false, serving only as satire amid shifting coalitions.
 - [Kenya reports decline in national cybersecurity threats](https://zandani.co.ke/article/kenya-reports-decline-in-national-cybersecurity-threats) - National cybersecurity officials report a significant drop in threat events as system infrastructure remains the primary target for attackers.
 - [Bayern Munich vs PSG Champions League Semi-final Second Leg](https://zandani.co.ke/article/bayern-munich-vs-psg-champions-league-semi-final-preview) - Bayern Munich hosts Paris Saint-Germain at Allianz Arena trailing 4-5 on aggregate, fighting for a spot in the final against Arsenal.
-- [Autopsy confirms Reverend Julius Ndumia died from head injuries](https://zandani.co.ke/article/autopsy-confirms-reverend-julius-ndumia-died-from-head-injuries) - A post-mortem examination reveals Reverend Julius Ndumia died from blunt force trauma and asphyxiation at his Nakuru home as police investigations grow.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml

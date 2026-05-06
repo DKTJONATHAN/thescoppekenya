@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Wed, 06 May 2026 21:02:16 GMT</pubDate>
+    <pubDate>Wed, 06 May 2026 21:04:23 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Government Proposes New Tiered Fees for eCitizen Services]]></title>
+      <link>https://zandani.co.ke/article/government-proposes-new-tiered-fees-for-ecitizen-services</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/government-proposes-new-tiered-fees-for-ecitizen-services</guid>
+      <pubDate>Wed, 06 May 2026 20:50:29 GMT</pubDate>
+      <dc:creator><![CDATA[Elizabeth Muthoni]]></dc:creator>
+      <description><![CDATA[The Kenyan government is introducing new regulations to formalize eCitizen fees through a tiered system following previous court rulings.]]></description>
+      <enclosure url="https://i.ibb.co/fdwdd2KQ/a457a15fa78d.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/fdwdd2KQ/a457a15fa78d.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/fdwdd2KQ/a457a15fa78d.jpg" alt="Government Proposes New Tiered Fees for eCitizen Services" /><p>The Kenyan government is introducing new regulations to formalize eCitizen fees through a tiered system following previous court rulings.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[KNEC Launches TrueCert System for Digital KCSE Certificate Checks]]></title>
       <link>https://zandani.co.ke/article/knec-launches-truecert-for-digital-kcse-verification</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://cdn.radioafrica.digital/image/2026/05/fcea8122-d7f2-4bb1-9980-bd3d9be5e4b3.jpg?1777916094887" type="image/jpeg" />
       <media:content url="https://cdn.radioafrica.digital/image/2026/05/fcea8122-d7f2-4bb1-9980-bd3d9be5e4b3.jpg?1777916094887" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://cdn.radioafrica.digital/image/2026/05/fcea8122-d7f2-4bb1-9980-bd3d9be5e4b3.jpg?1777916094887" alt="DNA Testing Reveals British Twins Have Different Biological Fathers" /><p>DNA testing reveals a rare case of heteropaternal superfecundation for British twins who discovered they share different fathers. See what happened</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Selestine Nyagah Joins Citizen TV Rauka After Lulu Hassan Mentorship]]></title>
-      <link>https://zandani.co.ke/article/selestine-nyagah-rauka-citizen-tv</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/selestine-nyagah-rauka-citizen-tv</guid>
-      <pubDate>Mon, 04 May 2026 15:29:12 GMT</pubDate>
-      <dc:creator><![CDATA[Za Ndani]]></dc:creator>
-      <description><![CDATA[Former Neema star Selestine Nyagah pivots to live broadcasting on Citizen TV after mentorship from Lulu Hassan. See what happened]]></description>
-      <enclosure url="https://i.ibb.co/HTHxzLH5/86249c1382e3.webp" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/HTHxzLH5/86249c1382e3.webp" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/HTHxzLH5/86249c1382e3.webp" alt="Selestine Nyagah Joins Citizen TV Rauka After Lulu Hassan Mentorship" /><p>Former Neema star Selestine Nyagah pivots to live broadcasting on Citizen TV after mentorship from Lulu Hassan. See what happened</p>]]></content:encoded>
     </item>
   </channel>
 </rss>

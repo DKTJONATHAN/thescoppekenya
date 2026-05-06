@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/government-proposes-new-tiered-fees-for-ecitizen-services</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T20:50:29.000Z</news:publication_date>
+      <news:title>Government Proposes New Tiered Fees for eCitizen Services</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/knec-launches-truecert-for-digital-kcse-verification</loc>
     <news:news>
       <news:publication>
