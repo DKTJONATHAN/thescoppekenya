@@ -10,7 +10,11 @@
     },
     {
       "source": "/rss.xml",
-      "destination": "/rss.xml"
+      "destination": "/feed.xml"
+    },
+    {
+      "source": "/feed.xml",
+      "destination": "/feed.xml"
     },
     {
       "source": "/llms.txt",
