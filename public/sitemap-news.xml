@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/the-sultans-unheard-dirge-wakadinali-spotify-streaming-dominance-kenya</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T12:59:43.000Z</news:publication_date>
+      <news:title>The Sultan&apos;s Unheard Dirge: Wakadinali Spotify Streaming Dominance Kenya</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/shri-krishana-overseas-reports-sharp-decline-in-annual-earnings</loc>
     <news:news>
       <news:publication>
@@ -749,39 +760,6 @@
       </news:publication>
       <news:publication_date>2026-05-04T13:13:50.000Z</news:publication_date>
       <news:title>Managerless Chelsea Hand Debut to 18-Year-Old Jesse Derry as Forest Make Shocking 8 Changes</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/babu-owino-dj-evolve</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-04T13:00:27.000Z</news:publication_date>
-      <news:title>Babu Owino Admits He Should Be in Jail Over DJ Evolve Case</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-passport-issuance-low</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-04T12:31:17.000Z</news:publication_date>
-      <news:title>How Kenya&apos;s Passport Issuance Hits New Low Amid 50-Page Option Removal</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/versailles-echoes-ghanaian-music-industry-scandals-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-04T12:20:39.000Z</news:publication_date>
-      <news:title>Versailles Echoes: Ghanaian Music Industry Scandals 2026</news:title>
     </news:news>
   </url>
 </urlset>

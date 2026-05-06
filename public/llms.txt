@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [The Sultan's Unheard Dirge: Wakadinali Spotify Streaming Dominance Kenya](https://zandani.co.ke/article/the-sultans-unheard-dirge-wakadinali-spotify-streaming-dominance-kenya) - The court chroniclers boasted of unparalleled might, unaware of the silent rot beneath the gilded throne, much like the buzz around Wakadinali new songs 2026 Ke
 - [Shri Krishana Overseas reports 59 percent drop in annual earnings](https://zandani.co.ke/article/shri-krishana-overseas-reports-sharp-decline-in-annual-earnings) - Shri Krishana Overseas faces a sharp decline in profits driven by high debt costs and operational delays at its new Kisaju manufacturing facility.
 - [Nigerian Breweries Launches Immersive Heineken House in Lagos](https://zandani.co.ke/article/nigerian-breweries-launches-immersive-heineken-house-in-lagos) - Nigerian Breweries Plc hosts a four-day immersive event in Lagos featuring live sports screenings, music performances, and comedy shows.
 - [Jamie-Lynn Sigler details secret health struggle in new memoir](https://zandani.co.ke/article/jamie-lynn-sigler-details-health-struggle-in-new-memoir) - Actress Jamie-Lynn Sigler reveals how she concealed a bladder accident during a high-profile date with the help of friend JoAnna Garcia Swisher.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Kamene Goro Clarifies Marriage Status Following Hospitalization](https://zandani.co.ke/article/kamene-goro-clarifies-marriage-status-following-hospitalization) - Media personality Kamene Goro has confirmed she remains married to DJ Bonez after public concern regarding his absence during her medical treatment.
 - [Del Monte Kenya Highlights Economic and Environmental Impact](https://zandani.co.ke/article/del-monte-kenya-impact-report-sustainability) - Del Monte Kenya releases its 60-year report, detailing a 100 billion shilling contribution to the economy and key sustainable farming milestones.
 - [Kristine Sutherland discusses challenges playing Joyce Summers](https://zandani.co.ke/article/kristine-sutherland-discusses-challenges-playing-joyce-summers) - Actress Kristine Sutherland reflects on the emotional difficulty of portraying Joyce Summers and narrative inconsistencies in Buffy the Vampire Slayer.
-- [Kenya Pharmacy and Poisons Board Drafts Rules for Medical AI Tools](https://zandani.co.ke/article/kenya-pharmacy-and-poisons-board-drafts-rules-for-medical-ai) - The Pharmacy and Poisons Board is developing a regulatory framework for medical AI to ensure safety, data protection, and diagnostic accuracy in Kenya.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
