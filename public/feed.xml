@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Wed, 06 May 2026 18:13:36 GMT</pubDate>
+    <pubDate>Wed, 06 May 2026 18:21:37 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[One Night Only Festival Returns to Sarit Expo Centre]]></title>
+      <link>https://zandani.co.ke/article/one-night-only-festival-nairobi-sarit-expo-centre</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/one-night-only-festival-nairobi-sarit-expo-centre</guid>
+      <pubDate>Wed, 06 May 2026 18:07:18 GMT</pubDate>
+      <dc:creator><![CDATA[Martin Kihara]]></dc:creator>
+      <description><![CDATA[The One Night Only festival returns to the Sarit Expo Centre with a multi-genre music showcase featuring Alikiba, Bien, and international stars.]]></description>
+      <enclosure url="https://i.ibb.co/MTR8KVw/cb512f4f0b0e.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/MTR8KVw/cb512f4f0b0e.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/MTR8KVw/cb512f4f0b0e.jpg" alt="One Night Only Festival Returns to Sarit Expo Centre" /><p>The One Night Only festival returns to the Sarit Expo Centre with a multi-genre music showcase featuring Alikiba, Bien, and international stars.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Azeezah Hashim Disputes Age Claims Amid Online Controversy]]></title>
       <link>https://zandani.co.ke/article/azeezah-hashim-disputes-age-claims</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/XrdV3MxJ/1317d44de8b5.webp" type="image/jpeg" />
       <media:content url="https://i.ibb.co/XrdV3MxJ/1317d44de8b5.webp" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/XrdV3MxJ/1317d44de8b5.webp" alt="Kalondu Musyimi Named Top African Showbiz Reporter at Golden Awards" /><p>Kalondu Musyimi is the Top African Showbiz Reporter at the 2026 Golden Awards. The Kenyan host beat continental giants for this historic win.</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[The Silent Catch: Lake Victoria Bombs Threaten Peace]]></title>
-      <link>https://zandani.co.ke/article/the-silent-catch-lake-victoria-bombs-threaten-peace</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/the-silent-catch-lake-victoria-bombs-threaten-peace</guid>
-      <pubDate>Mon, 04 May 2026 06:11:25 GMT</pubDate>
-      <dc:creator><![CDATA[The Chronicler]]></dc:creator>
-      <description><![CDATA[Decades after Europe's toxic legacy surfaced, a new fear grips Africa, raising mbita live bombs safety concerns.]]></description>
-      <enclosure url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" type="image/jpeg" />
-      <media:content url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" alt="The Silent Catch: Lake Victoria Bombs Threaten Peace" /><p>Decades after Europe's toxic legacy surfaced, a new fear grips Africa, raising mbita live bombs safety concerns.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
