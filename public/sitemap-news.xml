@@ -15,6 +15,17 @@
     </news:news>
   </url>
   <url>
+    <loc>https://zandani.co.ke/article/social-media-overtakes-television-as-primary-news-source-kenya</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T11:21:51.000Z</news:publication_date>
+      <news:title>Social Media Overtakes Television as Primary News Source in Kenya</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kamene-goro-clarifies-marriage-status-following-hospitalization</loc>
     <news:news>
       <news:publication>
