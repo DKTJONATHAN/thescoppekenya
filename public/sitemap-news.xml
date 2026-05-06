@@ -15,6 +15,17 @@
     </news:news>
   </url>
   <url>
+    <loc>https://zandani.co.ke/article/kenya-protests-june-25-economic-stability</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T06:13:56.000Z</news:publication_date>
+      <news:title>Why planned protests on June 25 threaten Kenya&apos;s economic stability</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/arsenal-reach-first-champions-league-final-in-two-decades</loc>
     <news:news>
       <news:publication>
