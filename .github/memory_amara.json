@@ -122,7 +122,8 @@
     "f6cbcafe189185b29549356aa0473f3c",
     "1525e7b381ff2b56c67a6a41222023bd",
     "f3a0cef9e9e9f4b5a8bc3b65657ef9d5",
-    "f90676165d4422737fd77031a771a544"
+    "f90676165d4422737fd77031a771a544",
+    "74c19c0a904f32740b2d4da94ef12ea4"
   ],
   "style_history": [
     "Hard News Lead",
@@ -130,13 +131,15 @@
     "Explainer",
     "Trend Take",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Profile Beat"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
     "money_follow|Afrobeats|Explainer",
     "timeline_shift|Heineken House Experience|Trend Take",
     "impact_on_citizens|Big Brother Naija|Hard News Lead",
-    "policy_gap|Davido|Reaction Round-up"
+    "policy_gap|Davido|Reaction Round-up",
+    "myth_vs_fact|Davido|Profile Beat"
   ]
 }
