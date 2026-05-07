@@ -5,10 +5,11 @@ export type NavLink = {
 };
 
 export const primaryNavLinks: NavLink[] = [
-  { label: "Energy", path: "/energy", featured: true },
-  { label: "Education", path: "/education" },
-  { label: "Finance", path: "/finance" },
+  { label: "Trending", path: "/trending", featured: true },
+  { label: "News", path: "/news" },
   { label: "Sports", path: "/sports" },
+  { label: "TV", path: "/tv" },
+  { label: "Podcast", path: "/podcast" },
   { label: "Entertainment", path: "/entertainment" },
 ];
 

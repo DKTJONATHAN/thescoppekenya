@@ -4,7 +4,7 @@ import { Menu, X, Search, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { SearchOverlay } from "@/components/SearchOverlay";
-import { categories, getAllPosts } from "@/lib/markdown";
+import { getAllPosts } from "@/lib/markdown";
 import { primaryNavLinks } from "@/lib/site-links";
 import logoImg from "@/assets/logo.png";
 
@@ -87,23 +87,6 @@ export function Header() {
                   {link.label}
                 </Link>
               ))}
-              
-              {categories.map((category) => (
-                <Link
-                  key={category.slug}
-                  to={
-                    category.slug === 'sports' ? '/sports' :
-                    category.slug === 'entertainment' ? '/entertainment' :
-                    category.slug === 'news' ? '/news' :
-                    category.slug === 'business' ? '/business' :
-                    category.slug === 'lifestyle' ? '/lifestyle' :
-                    `/category/${category.slug}`
-                  }
-                  className="px-3 py-2 text-sm font-semibold text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-all"
-                >
-                  {category.name}
-                </Link>
-              ))}
             </nav>
 
             <div className="flex items-center gap-1.5">
@@ -170,21 +153,6 @@ export function Header() {
                 </Link>
               ))}
 
-              {categories.map((category) => (
-                <Link
-                  key={category.slug}
-                  to={
-                    category.slug === 'sports' ? '/sports' :
-                    category.slug === 'entertainment' ? '/entertainment' :
-                    category.slug === 'news' ? '/news' :
-                    `/category/${category.slug}`
-                  }
-                  className="block px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-smooth font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {category.name}
-                </Link>
-              ))}
               <div className="pt-4 border-t border-divider mt-4">
                 <Button className="w-full gradient-primary text-primary-foreground font-bold uppercase tracking-wider">
                   Subscribe
