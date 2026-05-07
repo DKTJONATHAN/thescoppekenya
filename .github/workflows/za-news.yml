@@ -171,6 +171,11 @@ jobs:
                   if isinstance(raw, dict):
                       raw.setdefault("published_hashes", [])
                       raw.setdefault("style_history", [])
+                      raw["style_history"] = [
+                          (h.get("stylePreset") or h.get("name") or "") if isinstance(h, dict) else str(h)
+                          for h in raw["style_history"]
+                      ]
+                      raw["style_history"] = [h for h in raw["style_history"] if h]
                       raw.setdefault("angle_history", [])
                       return raw
               except Exception as e:

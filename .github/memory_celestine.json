@@ -300,9 +300,17 @@
     "1a76ff2aea8969d72f5473a523183b0e",
     "a4066242816ad67050d8e06ac21a7e4a",
     "c70bb15a9b967ca0040ad59fc2036a07",
-    "7cf0ab1f5d784ef0e8ac8e182b09e96b"
+    "7cf0ab1f5d784ef0e8ac8e182b09e96b",
+    "95a83bbac7d727f33d622b3997865a4a",
+    "0452c54c272ee69c20a95b8f1b020bfa"
   ],
   "style_history": [
-    "Power Accountability"
+    "Power Accountability",
+    "Backgrounder",
+    "Explainer"
+  ],
+  "angle_history": [
+    "timeline_shift|Kenya Judiciary|Backgrounder",
+    "money_follow|Amos Kimunya|Explainer"
   ]
 }

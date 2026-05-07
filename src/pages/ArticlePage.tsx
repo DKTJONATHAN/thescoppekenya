@@ -1,6 +1,6 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
-import { getPostBySlug, getLatestPosts, type Post } from "@/lib/markdown";
+import { getPostBySlug, getLatestPosts, getAllPosts, type Post } from "@/lib/markdown";
 import {
   Clock, Calendar, Share2, Facebook, Linkedin,
   ChevronLeft, ArrowUp, Eye, MessageCircle, Flame
@@ -100,6 +100,16 @@ export default function ArticlePage() {
       .slice(0, 3);
   }, [latestPosts, slug, post]);
 
+  // Same-category candidates for internal link weaving
+  const sameCategoryLinks = useMemo(() => {
+    if (!post) return [] as { slug: string; title: string }[];
+    const cat = post.category?.toLowerCase();
+    return getAllPosts()
+      .filter(p => p.slug !== post.slug && p.category?.toLowerCase() === cat)
+      .slice(0, 25)
+      .map(p => ({ slug: p.slug, title: p.title }));
+  }, [post]);
+
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
   const [copied, setCopied] = useState(false);
@@ -182,10 +192,85 @@ export default function ArticlePage() {
     window.open(`https://wa.me/?text=${encodeURIComponent(post?.title + " " + shareUrl)}`, "_blank");
   }, [post?.title, shareUrl]);
 
+  // ── Weave internal links from same-category posts into the HTML ──
+  const wovenHtml = useMemo(() => {
+    if (!post?.htmlContent) return '';
+    let html = post.htmlContent;
+    if (!sameCategoryLinks.length) return html;
+
+    // Stop-words we never want to anchor
+    const STOP = new Set(['the','a','an','and','or','but','of','in','on','for','to','with','by','from','at','is','are','was','were','as','that','this','it','be','has','have','will','their','they','your','our','his','her','its','about','into','over','more','than','then','also','after','before','very','just','said','says']);
+
+    // Build candidate phrases (2-4 word sequences) from each link's title
+    type Cand = { phrase: string; slug: string };
+    const candidates: Cand[] = [];
+    sameCategoryLinks.forEach(link => {
+      const words = link.title
+        .replace(/[^\w\s'-]/g, ' ')
+        .split(/\s+/)
+        .filter(Boolean);
+      const phrases = new Set<string>();
+      for (let n = 4; n >= 2; n--) {
+        for (let i = 0; i + n <= words.length; i++) {
+          const slice = words.slice(i, i + n);
+          if (slice.some(w => STOP.has(w.toLowerCase()))) continue;
+          if (slice.every(w => w.length < 4)) continue;
+          phrases.add(slice.join(' '));
+        }
+      }
+      phrases.forEach(p => candidates.push({ phrase: p, slug: link.slug }));
+    });
+
+    // Shuffle candidates so weaving picks random phrases each render group
+    for (let i = candidates.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [candidates[i], candidates[j]] = [candidates[j], candidates[i]];
+    }
+
+    const usedSlugs = new Set<string>();
+    const MAX_LINKS = 5;
+
+    // Replace only in text nodes — skip inside existing <a>, headings, code, and html tags
+    function replaceInTextNodes(input: string, phrase: string, slug: string): { html: string; replaced: boolean } {
+      const re = new RegExp(`\\b(${phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})\\b`, 'i');
+      // Walk html splitting on tags
+      const parts = input.split(/(<[^>]+>)/);
+      let depth = 0; // inside <a>, <h*>, <code>, <pre>
+      let replaced = false;
+      const skipTag = /^<\s*(a|h[1-6]|code|pre|script|style)\b/i;
+      const closeTag = /^<\s*\/\s*(a|h[1-6]|code|pre|script|style)\b/i;
+      for (let i = 0; i < parts.length; i++) {
+        const part = parts[i];
+        if (part.startsWith('<')) {
+          if (skipTag.test(part) && !/\/>$/.test(part)) depth++;
+          else if (closeTag.test(part)) depth = Math.max(0, depth - 1);
+          continue;
+        }
+        if (depth > 0 || replaced) continue;
+        if (re.test(part)) {
+          parts[i] = part.replace(re, `<a href="/article/${slug}" class="text-primary underline decoration-primary/40 underline-offset-2 hover:decoration-primary">$1</a>`);
+          replaced = true;
+        }
+      }
+      return { html: parts.join(''), replaced };
+    }
+
+    for (const c of candidates) {
+      if (usedSlugs.size >= MAX_LINKS) break;
+      if (usedSlugs.has(c.slug)) continue;
+      const { html: next, replaced } = replaceInTextNodes(html, c.phrase, c.slug);
+      if (replaced) {
+        html = next;
+        usedSlugs.add(c.slug);
+      }
+    }
+    return html;
+  }, [post?.htmlContent, sameCategoryLinks]);
+
   // ── Content with ads injected every 3 paragraphs ──
   const contentWithAds = useMemo(() => {
-    if (!post?.htmlContent) return [];
-    const html = post.htmlContent;
+    if (!wovenHtml) return [];
+    const html = wovenHtml;
     const blocks: string[] = [];
     let lastIndex = 0;
     const tagRegex = /<(p|h[1-6]|ul|ol|blockquote|figure|table|pre|hr)[\s>]/gi;
@@ -228,7 +313,7 @@ export default function ArticlePage() {
       }
     });
     return nodes;
-  }, [post?.htmlContent]);
+  }, [wovenHtml]);
 
   // ── Formatted date ──
   const formattedDate = useMemo(() => {

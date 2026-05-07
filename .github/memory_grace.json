@@ -93,19 +93,28 @@
     "d8e9149c0b5b7679caed08fb7b36c288",
     "f49d394d53a3e4fc8018e7813ab673c5",
     "5c2fe53e89ff2d42c1a60acdec6e30f5",
-    "9f485869b044f845ac7f910bc99b2b79"
+    "9f485869b044f845ac7f910bc99b2b79",
+    "757efad8c9df625958ba4c0091d5130a",
+    "3c61580ec36eee92e8b3d092edd8262c",
+    "047577f7a6dacf3e0ac4000f5fb49b3d"
   ],
   "style_history": [
     "SME Angle",
     "Explainer",
     "Power Accountability",
     "Markets Report",
-    "SME Angle"
+    "SME Angle",
+    "Explainer",
+    "Backgrounder",
+    "Power Accountability"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
     "winners_losers|SACCO|Power Accountability",
     "money_follow|Del Monte Kenya|Markets Report",
-    "money_follow|NSE|SME Angle"
+    "money_follow|NSE|SME Angle",
+    "impact_on_citizens|Dangote Petroleum Refinery|Explainer",
+    "policy_gap|Trade Deficit|Backgrounder",
+    "accountability|Fintech|Power Accountability"
   ]
 }

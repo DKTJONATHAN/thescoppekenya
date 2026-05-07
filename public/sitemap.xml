@@ -2,73 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://zandani.co.ke/</loc>
-    <lastmod>2026-05-06T12:59:43.000Z</lastmod>
+    <lastmod>2026-05-07T08:50:02.000Z</lastmod>
     <changefreq>always</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/about</loc>
-    <lastmod>2026-05-06T13:10:19.000Z</lastmod>
+    <lastmod>2026-05-07T09:04:14.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/contact</loc>
-    <lastmod>2026-05-06T13:10:19.000Z</lastmod>
+    <lastmod>2026-05-07T09:04:14.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/privacy</loc>
-    <lastmod>2026-05-06T13:10:19.000Z</lastmod>
+    <lastmod>2026-05-07T09:04:14.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/terms</loc>
-    <lastmod>2026-05-06T13:10:19.000Z</lastmod>
+    <lastmod>2026-05-07T09:04:14.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/archive</loc>
-    <lastmod>2026-05-06T12:59:43.000Z</lastmod>
+    <lastmod>2026-05-07T08:50:02.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/category/politics</loc>
-    <lastmod>2026-05-05T08:27:20.000Z</lastmod>
+    <lastmod>2026-05-06T16:57:17.000Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/category/news</loc>
-    <lastmod>2026-05-06T11:22:55.000Z</lastmod>
+    <lastmod>2026-05-07T06:20:54.000Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/category/entertainment</loc>
-    <lastmod>2026-05-06T12:02:01.000Z</lastmod>
+    <lastmod>2026-05-07T06:48:37.000Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/category/gossip</loc>
-    <lastmod>2026-05-06T11:20:06.000Z</lastmod>
+    <lastmod>2026-05-07T06:20:24.000Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/category/sports</loc>
-    <lastmod>2026-05-06T11:21:19.000Z</lastmod>
+    <lastmod>2026-05-07T08:50:02.000Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/category/business</loc>
-    <lastmod>2026-05-06T12:05:17.000Z</lastmod>
+    <lastmod>2026-05-07T06:17:59.000Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -80,7 +80,7 @@
   </url>
   <url>
     <loc>https://zandani.co.ke/category/technology</loc>
-    <lastmod>2026-05-06T08:43:08.000Z</lastmod>
+    <lastmod>2026-05-06T20:50:29.000Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -92,19 +92,19 @@
   </url>
   <url>
     <loc>https://zandani.co.ke/category/opinions</loc>
-    <lastmod>2026-05-06T11:21:51.000Z</lastmod>
+    <lastmod>2026-05-07T06:19:39.000Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/category/chronicles</loc>
-    <lastmod>2026-05-06T12:59:43.000Z</lastmod>
+    <lastmod>2026-05-07T06:16:46.000Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/category/africa-entertainment</loc>
-    <lastmod>2026-05-06T12:04:27.000Z</lastmod>
+    <lastmod>2026-05-06T16:53:18.000Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -119,6 +119,282 @@
     <lastmod>2026-02-24T00:00:00.000Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/arsenal-prioritize-defensive-strength-in-title-and-european-push</loc>
+    <lastmod>2026-05-07T08:50:02.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/public-outcry-grows-over-corruption-and-system-failures-at-social-he</loc>
+    <lastmod>2026-05-07T06:48:37.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/us-report-flags-kenya-over-growing-influx-of-counterfeit-goods</loc>
+    <lastmod>2026-05-07T06:20:54.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/embarambamba-meets-kipchumba-murkomen-after-viral-muddy-video</loc>
+    <lastmod>2026-05-07T06:20:24.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/kenya-targets-economic-growth-through-science-and-research-reform</loc>
+    <lastmod>2026-05-07T06:19:39.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/psg-set-for-champions-league-final-clash-against-arsenal</loc>
+    <lastmod>2026-05-07T06:19:23.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/bfree-secures-funding-to-scale-distressed-debt-model</loc>
+    <lastmod>2026-05-07T06:17:59.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/sally-field-reveals-why-she-struggled-to-laugh-at-robin-williams</loc>
+    <lastmod>2026-05-07T06:17:31.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/the-sirens-song-of-laureate-gardens</loc>
+    <lastmod>2026-05-07T06:16:46.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/kenyans-struggle-as-high-cost-of-living-exhausts-salaries-within-day</loc>
+    <lastmod>2026-05-07T03:59:23.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/system-failures-and-transparency-concerns-hit-sh104-billion-sha-tech</loc>
+    <lastmod>2026-05-06T23:02:45.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/rigathi-gachagua-faces-uncertain-political-future-as-mt-kenya-leader</loc>
+    <lastmod>2026-05-06T21:20:07.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/government-proposes-new-tiered-fees-for-ecitizen-services</loc>
+    <lastmod>2026-05-06T20:50:29.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/knec-launches-truecert-for-digital-kcse-verification</loc>
+    <lastmod>2026-05-06T20:49:22.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/forex-influencers-nebs-nyathira-pocket-option-account-freeze</loc>
+    <lastmod>2026-05-06T20:48:39.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/global-equity-markets-ai-concentration</loc>
+    <lastmod>2026-05-06T20:47:40.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/manchester-city-crowned-womens-super-league-champions</loc>
+    <lastmod>2026-05-06T20:47:36.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/stephen-colbert-seeks-pope-leo-xiv-as-final-late-show-guest</loc>
+    <lastmod>2026-05-06T20:43:55.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/siren-song-vybz-kartel-kenya-concert-scam</loc>
+    <lastmod>2026-05-06T20:42:41.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/claims-of-a-sifuna-maraga-gachagua-2027-presidential-ticket-are-fals</loc>
+    <lastmod>2026-05-06T19:59:10.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/kenya-reports-decline-in-national-cybersecurity-threats</loc>
+    <lastmod>2026-05-06T19:08:49.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/bayern-munich-vs-psg-champions-league-semi-final-preview</loc>
+    <lastmod>2026-05-06T19:05:45.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/autopsy-confirms-reverend-julius-ndumia-died-from-head-injuries</loc>
+    <lastmod>2026-05-06T19:03:04.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/karen-nyamu-advocates-for-miraa-reclassification-in-senate</loc>
+    <lastmod>2026-05-06T19:01:30.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/kenya-relaxes-fuel-sulphur-standards-amid-supply-chain-concerns</loc>
+    <lastmod>2026-05-06T19:00:28.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/sting-reaffirms-decision-not-to-leave-inheritance-to-his-children</loc>
+    <lastmod>2026-05-06T18:51:40.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/one-night-only-festival-nairobi-sarit-expo-centre</loc>
+    <lastmod>2026-05-06T18:07:18.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/azeezah-hashim-disputes-age-claims</loc>
+    <lastmod>2026-05-06T17:52:50.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/senator-richard-onyonka-confirms-roselyn-akombe-is-his-wife</loc>
+    <lastmod>2026-05-06T17:49:38.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/amos-kimunya-acquitted-in-land-fraud-case</loc>
+    <lastmod>2026-05-06T16:57:17.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/cnn-founder-and-media-pioneer-ted-turner-dies</loc>
+    <lastmod>2026-05-06T16:57:17.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/amos-kimunya-acquitted-corruption-case</loc>
+    <lastmod>2026-05-06T16:56:46.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/justice-mohamed-abdullahi-warsame-appointed-to-supreme-court</loc>
+    <lastmod>2026-05-06T16:55:21.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/real-madrid-fans-petition-kylian-mbappe-exit</loc>
+    <lastmod>2026-05-06T16:55:11.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/njugush-sparks-public-interest-following-new-creative-partnership</loc>
+    <lastmod>2026-05-06T16:54:15.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/kenya-trade-deficit-widens-import-costs-outpace-exports</loc>
+    <lastmod>2026-05-06T16:53:23.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/big-brother-naija-season-11-production-officially-underway</loc>
+    <lastmod>2026-05-06T16:53:18.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/fx-confirms-the-bear-to-end-with-fifth-season</loc>
+    <lastmod>2026-05-06T16:52:06.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/president-ruto-appoints-justice-warsame-to-supreme-court</loc>
+    <lastmod>2026-05-06T15:05:47.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/kenya-relaxes-fuel-sulphur-standards-amid-supply-chain-disruptions</loc>
+    <lastmod>2026-05-06T15:05:41.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/president-ruto-appoints-justice-mohamed-warsame-supreme-court</loc>
+    <lastmod>2026-05-06T14:50:13.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/mental-health-overtakes-cancer-as-global-top-health-concern</loc>
+    <lastmod>2026-05-06T14:48:22.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/arsenal-reach-champions-league-final-amid-celebration-debate</loc>
+    <lastmod>2026-05-06T14:47:56.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/vera-sidika-to-resume-kenyata-university-studies</loc>
+    <lastmod>2026-05-06T14:45:42.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/dangote-refinery-plans-kenyan-investment-vehicle-for-upcoming-ipo</loc>
+    <lastmod>2026-05-06T14:45:33.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/early-roles-of-famous-hollywood-actors</loc>
+    <lastmod>2026-05-06T14:41:29.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zandani.co.ke/article/the-sultans-unheard-dirge-wakadinali-spotify-streaming-dominance-kenya</loc>
@@ -5977,50 +6253,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zandani.co.ke/article/motorists-association-warns-sgr-extension-could-impact-highway-based</loc>
-    <lastmod>2026-03-25T19:13:15.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kenya-railways-reports-ksh-28-billion-loss-due-to-sgr-loan-interest-</loc>
-    <lastmod>2026-03-25T18:37:40.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/nairobi-remains-the-epicentre-of-extrajudicial-killings-in-kenya-des</loc>
-    <lastmod>2026-03-25T17:18:41.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/malcolm-in-the-middle-cast-reunites-for-revival-series-on-hulu</loc>
-    <lastmod>2026-03-25T16:22:16.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/morara-kebaso-states-ksh50-million-cannot-influence-his-political-pr</loc>
-    <lastmod>2026-03-25T13:53:24.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zandani.co.ke/article/singer-asa-announces-the-death-of-her-mother</loc>
     <lastmod>2026-03-25T13:53:23.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/kra-explains-luggage-screening-procedures-and-regulations-for-arrivi</loc>
-    <lastmod>2026-03-25T13:51:27.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/michael-owen-says-benjamin-sesko-is-not-the-long-term-striker-soluti</loc>
-    <lastmod>2026-03-25T12:34:52.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -6039,12 +6273,6 @@
   <url>
     <loc>https://zandani.co.ke/article/wayne-rooney-predicts-arsenal-will-win-premier-league-title-despite-</loc>
     <lastmod>2026-03-25T08:34:18.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/nairobi-and-kiambu-lead-in-voter-registration-as-iebc-adds-over-250-</loc>
-    <lastmod>2026-03-25T07:19:55.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -6097,6 +6325,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zandani.co.ke/article/president-ruto-intervenes-in-nairobi-hospital-governance-disputes</loc>
+    <lastmod>2026-03-16T15:21:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/nigerian-singer-chike-accuses-woman-of-fraud-over-alleged-business-t</loc>
     <lastmod>2026-03-16T13:58:03.000Z</lastmod>
     <changefreq>daily</changefreq>
@@ -6115,8 +6349,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zandani.co.ke/article/rwandan-authorities-investigate-fraud-scheme-at-equity-bank</loc>
+    <lastmod>2026-03-16T10:40:20.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/kenyan-agricultural-exports-to-china-to-become-duty-free</loc>
     <lastmod>2026-03-16T10:33:16.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/paul-thomas-anderson-s-one-battle-after-another-wins-best-picture-at</loc>
+    <lastmod>2026-03-16T09:39:39.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -6135,6 +6381,12 @@
   <url>
     <loc>https://zandani.co.ke/article/argentine-singer-rocio-cabrera-announces-separation-from-kenyan-yout</loc>
     <lastmod>2026-03-16T08:18:20.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/reminders-of-him-director-and-star-detail-the-filming-of-the-car-acc</loc>
+    <lastmod>2026-03-16T08:15:57.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -7418,7 +7670,7 @@
   </url>
   <url>
     <loc>https://zandani.co.ke/article/who-where-how</loc>
-    <lastmod>2026-05-06T13:10:19.576Z</lastmod>
+    <lastmod>2026-05-07T09:04:14.473Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -7441,14 +7693,56 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zandani.co.ke/article/motorists-association-warns-sgr-extension-could-impact-highway-based</loc>
+    <lastmod>2026-03-25T19:13:15.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/kenya-railways-reports-ksh-28-billion-loss-due-to-sgr-loan-interest-</loc>
+    <lastmod>2026-03-25T18:37:40.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/nairobi-remains-the-epicentre-of-extrajudicial-killings-in-kenya-des</loc>
+    <lastmod>2026-03-25T17:18:41.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/janet-mbugua-questions-kenyan-spending-habits-amid-economic-hardship</loc>
     <lastmod>2026-03-25T16:39:21.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zandani.co.ke/article/malcolm-in-the-middle-cast-reunites-for-revival-series-on-hulu</loc>
+    <lastmod>2026-03-25T16:22:16.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/government-to-roll-out-police-body-cameras-to-enhance-accountability</loc>
     <lastmod>2026-03-25T15:37:20.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/morara-kebaso-states-ksh50-million-cannot-influence-his-political-pr</loc>
+    <lastmod>2026-03-25T13:53:24.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/kra-explains-luggage-screening-procedures-and-regulations-for-arrivi</loc>
+    <lastmod>2026-03-25T13:51:27.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/michael-owen-says-benjamin-sesko-is-not-the-long-term-striker-soluti</loc>
+    <lastmod>2026-03-25T12:34:52.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -7485,6 +7779,12 @@
   <url>
     <loc>https://zandani.co.ke/article/boutross-munene-reveals-girlfriend-on-social-media</loc>
     <lastmod>2026-03-25T08:04:25.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/nairobi-and-kiambu-lead-in-voter-registration-as-iebc-adds-over-250-</loc>
+    <lastmod>2026-03-25T07:19:55.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -8743,12 +9043,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zandani.co.ke/article/president-ruto-intervenes-in-nairobi-hospital-governance-disputes</loc>
-    <lastmod>2026-03-16T15:21:00.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zandani.co.ke/article/south-african-forex-trader-questions-viral-profit-claims-by-kenyan-i</loc>
     <lastmod>2026-03-16T13:58:12.000Z</lastmod>
     <changefreq>daily</changefreq>
@@ -8761,18 +9055,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zandani.co.ke/article/rwandan-authorities-investigate-fraud-scheme-at-equity-bank</loc>
-    <lastmod>2026-03-16T10:40:20.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/paul-thomas-anderson-s-one-battle-after-another-wins-best-picture-at</loc>
-    <lastmod>2026-03-16T09:39:39.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zandani.co.ke/article/state-confirms-un-habitat-support-for-nairobi-flash-flood-response</loc>
     <lastmod>2026-03-16T09:15:52.000Z</lastmod>
     <changefreq>daily</changefreq>
@@ -8781,12 +9063,6 @@
   <url>
     <loc>https://zandani.co.ke/article/shiquo-hii-style-kenya-retail-disruption-entrepreneur-lessons</loc>
     <lastmod>2026-03-16T09:04:00.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/reminders-of-him-director-and-star-detail-the-filming-of-the-car-acc</loc>
-    <lastmod>2026-03-16T08:15:57.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>

@@ -68,7 +68,12 @@
     "3cd34712b03da51b01ba98061f968c00",
     "88bff49ce7dd05a5820f2a07c19f1d3c",
     "736eefeabf5f9186061730001fb27015",
-    "a6a258636aacb0b2b753be725347c5d3"
+    "a6a258636aacb0b2b753be725347c5d3",
+    "5efb2e7cc0097e403768c3d1bb285f73",
+    "e941bcc9255346a8a7edaff0a07bbf40",
+    "669f5122f861bf616dfa56edd1430491",
+    "796991690ed7f055b20956a431febce0",
+    "08b42d8da2092f9d27dd86d8064c1df1"
   ],
   "style_history": [
     "Hard News Lead",
@@ -80,7 +85,12 @@
     "Reaction Round-up",
     "Hard News Lead",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Reaction Round-up",
+    "Profile Beat",
+    "Hard News Lead",
+    "Trend Take",
+    "Explainer"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -90,6 +100,11 @@
     "accountability|television|Reaction Round-up",
     "timeline_shift|television|Hard News Lead",
     "winners_losers|Buffy the Vampire Slayer|Explainer",
-    "timeline_shift|Jamie-Lynn Sigler|Trend Take"
+    "timeline_shift|Jamie-Lynn Sigler|Trend Take",
+    "winners_losers|Hollywood|Reaction Round-up",
+    "impact_on_citizens|The Bear|Profile Beat",
+    "policy_gap|Sting|Hard News Lead",
+    "impact_on_citizens|television|Trend Take",
+    "winners_losers|film production|Explainer"
   ]
 }
