@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [The Siren's Song of Laureate Gardens](https://zandani.co.ke/article/the-sirens-song-of-laureate-gardens) - From the clamor of Change Alley to the promises of a Vybz Kartel Kenya concert, humanity's enduring quest for elusive riches echoes across centuries.
 - [Kenyans Struggle as High Cost of Living Exhausts Salaries Within Days of Payment](https://zandani.co.ke/article/kenyans-struggle-as-high-cost-of-living-exhausts-salaries-within-day) - Urban Kenyans face severe financial distress as surging costs for housing and utilities exhaust monthly salaries within days of the May 2026 payday.
 - [System Failures and Transparency Concerns Hit Sh104 Billion SHA Tech Contract](https://zandani.co.ke/article/system-failures-and-transparency-concerns-hit-sh104-billion-sha-tech) - The Sh104 billion Social Health Authority tech contract faces scrutiny amid persistent system failures and concerns over transparency in Kenya's healthcare.
 - [Rigathi Gachagua faces uncertain political future as Mt. Kenya leaders debate his next move](https://zandani.co.ke/article/rigathi-gachagua-faces-uncertain-political-future-as-mt-kenya-leader) - Following his 2026 removal from office, Rigathi Gachagua faces a divided Mt. Kenya as regional leaders debate his future political influence and viability.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Global Market Growth Driven by Artificial Intelligence Concentration](https://zandani.co.ke/article/global-equity-markets-ai-concentration) - Global equity markets are rising in 2026, but the growth remains fragile as capital concentrates heavily in AI infrastructure and technology firms.
 - [Manchester City Crowned Women's Super League Champions](https://zandani.co.ke/article/manchester-city-crowned-womens-super-league-champions) - Manchester City secured the Women's Super League title after Arsenal was held to a draw by Brighton, ending a decade-long wait for the trophy.
 - [Stephen Colbert seeks Pope Leo XIV as final Late Show guest](https://zandani.co.ke/article/stephen-colbert-seeks-pope-leo-xiv-as-final-late-show-guest) - Stephen Colbert aims to host Pope Leo XIV on The Late Show before his series finale on May 21 for a discussion on faith and life.
-- [The Siren Song of Shares: A Vybz Kartel Kenya Concert Scam](https://zandani.co.ke/article/siren-song-vybz-kartel-kenya-concert-scam) - A familiar echo across centuries, from London's Exchange Alley to Kampala's hopeful streets, whispers of an alleged Vybz Kartel Nairobi May 2026 tour, reminding
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
