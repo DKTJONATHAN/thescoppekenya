@@ -59,7 +59,8 @@
     "d7bc14cd2a3aea95155f9776c60de68a",
     "7c018623a941001b6796c71986e96529",
     "1ffe75fef604a5edd0e6c8d45710d30e",
-    "62c45b98cf62ced1b1d17095745675e7"
+    "62c45b98cf62ced1b1d17095745675e7",
+    "ef0024d33420f1c084a40b1454b29b0c"
   ],
   "style_history": [
     "Match Report",
@@ -75,7 +76,8 @@
     "Match Report",
     "Stat Story",
     "Player Profile Beat",
-    "Tactical Take"
+    "Tactical Take",
+    "Cynical Pundit"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -89,6 +91,7 @@
     "next_48_hours|Arsenal|Match Report",
     "myth_vs_fact|Kylian Mbappe|Stat Story",
     "accountability|Champions League|Player Profile Beat",
-    "accountability|WSL|Tactical Take"
+    "accountability|WSL|Tactical Take",
+    "money_follow|Champions League|Cynical Pundit"
   ]
 }
