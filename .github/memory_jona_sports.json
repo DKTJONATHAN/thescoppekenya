@@ -61,7 +61,8 @@
     "1ffe75fef604a5edd0e6c8d45710d30e",
     "62c45b98cf62ced1b1d17095745675e7",
     "ef0024d33420f1c084a40b1454b29b0c",
-    "5deb1822f90a245e396e0c34a78bbd49"
+    "5deb1822f90a245e396e0c34a78bbd49",
+    "4f0059b7871ef5d15a5e10d05e69264d"
   ],
   "style_history": [
     "Match Report",
@@ -79,7 +80,8 @@
     "Player Profile Beat",
     "Tactical Take",
     "Cynical Pundit",
-    "Stat Story"
+    "Stat Story",
+    "Player Profile Beat"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -95,6 +97,7 @@
     "accountability|Champions League|Player Profile Beat",
     "accountability|WSL|Tactical Take",
     "money_follow|Champions League|Cynical Pundit",
-    "policy_gap|Arsenal|Stat Story"
+    "policy_gap|Arsenal|Stat Story",
+    "accountability|Liverpool FC|Player Profile Beat"
   ]
 }
