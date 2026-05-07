@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/arsenal-prioritize-defensive-strength-in-title-and-european-push</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-07T08:50:02.000Z</news:publication_date>
+      <news:title>Arsenal prioritize defensive strength in title and European push</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/public-outcry-grows-over-corruption-and-system-failures-at-social-he</loc>
     <news:news>
       <news:publication>
@@ -1013,28 +1024,6 @@
       </news:publication>
       <news:publication_date>2026-05-05T10:46:50.000Z</news:publication_date>
       <news:title>Bowmans warns of risks in proposed Finance Bill tax measures</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/corporate-and-institutional-developments-africa-mena</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-05T08:40:43.000Z</news:publication_date>
-      <news:title>Corporate and Institutional Developments Across Africa and MENA</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://zandani.co.ke/article/infinix-smart-20-launched-in-kenya</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Za Ndani</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-05T08:37:34.000Z</news:publication_date>
-      <news:title>Infinix Smart 20 Launched in Kenya for Kenyan Entrepreneurs</news:title>
     </news:news>
   </url>
 </urlset>
