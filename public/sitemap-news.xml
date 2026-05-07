@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/kenyans-struggle-as-high-cost-of-living-exhausts-salaries-within-day</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-07T03:59:23.000Z</news:publication_date>
+      <news:title>Kenyans Struggle as High Cost of Living Exhausts Salaries Within Days of Payment</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/system-failures-and-transparency-concerns-hit-sh104-billion-sha-tech</loc>
     <news:news>
       <news:publication>
