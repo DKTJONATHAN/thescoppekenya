@@ -165,7 +165,8 @@
     "0000a2f9da5799c3f95dac67093aac8e",
     "fcea33463a4cd62b3f4ac607b8b7e741",
     "7d6b4717284a87fee7c5ba58b8d50e86",
-    "4128c86a3791d19d48c7b0f9eee4afd5"
+    "4128c86a3791d19d48c7b0f9eee4afd5",
+    "d6fe4c5630ad6c9240d8d108aa08fd05"
   ],
   "style_history": [
     "Trend Take",
@@ -173,12 +174,14 @@
     "Reaction Round-up",
     "Hard News Lead",
     "Receipts Piece",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
     "timeline_shift|Vera Sidika|Hard News Lead",
     "money_follow|Njugush|Receipts Piece",
-    "impact_on_citizens|Kenya Power|Profile Beat"
+    "impact_on_citizens|Kenya Power|Profile Beat",
+    "accountability|economic hardship|Reaction Round-up"
   ]
 }
