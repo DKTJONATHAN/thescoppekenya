@@ -78,7 +78,8 @@
     "0b3737cde7c0abc7145f6ec33e44a21e",
     "8ad40ed4ac474b98e095e35805127a3c",
     "d5f00a60634c011b2e172e8c0fcde737",
-    "e9fee7624c70969d8a0e36dd4794d81e"
+    "e9fee7624c70969d8a0e36dd4794d81e",
+    "d213a409ee7479c09521f234b870be98"
   ],
   "style_history": [
     "Hard News Lead",
@@ -100,7 +101,8 @@
     "Hard News Lead",
     "Trend Take",
     "Profile Beat",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -120,6 +122,7 @@
     "policy_gap|celebrity news|Hard News Lead",
     "winners_losers|The View|Trend Take",
     "myth_vs_fact|Friends|Profile Beat",
-    "next_48_hours|influencer culture|Explainer"
+    "next_48_hours|influencer culture|Explainer",
+    "impact_on_citizens|Jennifer Hudson|Hard News Lead"
   ]
 }
