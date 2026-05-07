@@ -1,13 +1,21 @@
 ---
 title: "Kenya raises satellite communication license fees to KES 45 million"
 slug: "kenya-raises-satellite-communication-license-fees-to-kes-45-million"
+description: "Kenya raises satellite communication license fees to KES 45: Kenya's Satellite Communication Licensing Overhaul Kenya's Communications Authority has revised"
+excerpt: "Kenya's Satellite Communication Licensing Overhaul Kenya's Communications Authority has revised its telecommunications market structure, sig"
 author: "Elizabeth Muthoni"
 image: "https://i.ibb.co/Y7gNnCqH/ca6971dc2653.webp"
 category: "Technology"
+tags: ["kenya raises satellite communication license fees to kes 45 million", "technology", "kenya news"]
+canonical: "https://zandani.co.ke/article/kenya-raises-satellite-communication-license-fees-to-kes-45-million"
 date: "2026-04-07T17:30:32Z"
-focusKeyword: "Kenya raises satellite communication license fees to KES 45"
 dateModified: "2026-04-07T17:30:32Z"
+focusKeyword: "Kenya raises satellite communication license fees to KES 45"
+schema: "NewsArticle"
 ---
+
+Kenya raises satellite communication license fees to KES 45 is central to this update for Kenyan readers.
+
 ## Kenya's Satellite Communication Licensing Overhaul Kenya's Communications Authority has revised its telecommunications market structure, significantly increasing satellite communication license fees for operators like Starlink. The new International Gateway Systems and Services license, costing up to KES 45 million for 25 years, replaces cheaper options, alongside an annual 0.4% gross turnover fee, impacting market dynamics.
 
 New Licensing Framework Details The Communications Authority of Kenya's Revised Telecommunications Market Structure for 2026 introduces substantial changes to satellite communication licensing. The previous Satellite Landing Rights license, priced at $12,500 (approximately KES 1.6 million), has been replaced by more expensive categories. Companies now require an International Gateway Systems and Services (IGSS) license, which costs KES 15 million for a 15-year term or KES 45 million for a 25-year term. Additionally, an annual operating fee of 0.4% of gross turnover, with a minimum of KES 4 million, is mandated. A separate Landing Rights Authorization license, priced at $25,000 with a $500 application fee, is also introduced for entities transmitting signals into Kenya via satellite or submarine cables. Depending on the services offered, a company might need both licenses.
@@ -18,3 +26,18 @@ Regulatory Evolution and Industry Shifts The regulatory adjustments stem from pr
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

@@ -1,13 +1,21 @@
 ---
 title: "Kenya Railways reports KSh 28 billion loss due to SGR loan interest costs"
 slug: "kenya-railways-reports-ksh-28-billion-loss-due-to-sgr-loan-interest-"
+description: "Kenya Railways reports KSh 28 billion loss due to SGR loan i: Kenya Railways Reports KSh 28 Billion Loss Despite Operational Gains Kenya Railways Corporation"
+excerpt: "Kenya Railways Reports KSh 28 Billion Loss Despite Operational Gains Kenya Railways Corporation recorded a KSh 28 billion net loss for the f"
 author: "Grace Mkamburi"
 image: "https://i.ibb.co/jPs9pvkp/f6b06a3679a2.png"
 category: "Business"
+tags: ["kenya railways reports ksh 28 billion loss due to sgr loan interest ", "business", "kenya news"]
+canonical: "https://zandani.co.ke/article/kenya-railways-reports-ksh-28-billion-loss-due-to-sgr-loan-interest-"
 date: "2026-03-25T18:37:40Z"
-focusKeyword: "Kenya Railways reports KSh 28 billion loss due to SGR loan i"
 dateModified: "2026-03-25T18:37:40Z"
+focusKeyword: "Kenya Railways reports KSh 28 billion loss due to SGR loan i"
+schema: "NewsArticle"
 ---
+
+Kenya Railways reports KSh 28 billion loss due to SGR loan i is central to this update for Kenyan readers.
+
 ## Kenya Railways Reports KSh 28 Billion Loss Despite Operational Gains Kenya Railways Corporation recorded a KSh 28 billion net loss for the financial year ending June 30, 2025, primarily due to substantial Standard Gauge Railway (SGR) loan interest costs. This deepens accumulated losses to KSh 198.47 billion, overshadowing significant operational improvements and a 65% reduction in operating loss to KSh 581.5 million.
 
 Operational Performance and Revenue Growth The Corporation achieved its strongest operational results in years, with total revenue increasing by 18.6% to KSh 30.52 billion. Freight volumes reached a record 8.16 million tonnes, contributing to a 29.6% surge in net tonne kilometres to 5.712 billion, surpassing the 2027 strategic target two years ahead of schedule. The Metre Gauge Railway transported 1.11 million tonnes, an 11.1% increase, while the MV Uhuru vessel on Lake Victoria added 45,185 tonnes. Government grants to KRC substantially rose to KSh 7.77 billion from KSh 2.92 billion, including KSh 4.6 billion for prior-year SGR maintenance costs. Despite these gains, passenger numbers declined by 10.3% to 5.06 million, influenced by a 50% fare increase on the Madaraka Express in January 2024. The Nairobi Commuter Rail saw a 12.4% drop to 2.41 million riders due to service disruptions stemming from socio-political unrest and flood damage that closed the Kikuyu-Longonot MGR section. Operating expenses grew by a controlled 5.8% to KSh 48.54 billion, with rail operational costs rising by only 1.3% to KSh 17.93 billion and administration expenses falling by 16.8%. Staff costs, however, increased by 13.8% to KSh 4.21 billion.
@@ -18,3 +26,18 @@ Auditor-General's Concerns and Future Outlook The Auditor-General issued a quali
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

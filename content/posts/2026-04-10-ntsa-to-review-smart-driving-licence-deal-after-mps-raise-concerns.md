@@ -1,7 +1,8 @@
 ---
 title: "NTSA to Review Smart Driving Licence Deal After MPs Raise Concerns"
 slug: "ntsa-to-review-smart-driving-licence-deal-after-mps-raise-concerns"
-description: "The NTSA will review its 21-year smart driving licence production deal with PesaPrint after MPs raised concerns over the inequitable revenue-sharing model."
+description: "NTSA to Review Smart Driving Licence Deal After MPs Raise Co: The NTSA will review its 21-year smart driving licence production deal with PesaPrint after MPs"
+excerpt: "By Celestine Nzioka The National Transport and Safety Authority (NTSA) will review its 21 year smart driving licence production agreement. D"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/5WLPnbkp/4eee6d7735a8.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["ntsa", "smart-driving-licence", "nashon-kondiwa", "pesaprint", "public-private-partnerships"]
 canonical: "https://zandani.co.ke/article/ntsa-to-review-smart-driving-licence-deal-after-mps-raise-concerns"
 date: "2026-04-10T04:19:31Z"
-focusKeyword: "NTSA to Review Smart Driving Licence Deal After MPs Raise Co"
 dateModified: "2026-04-10T04:19:31Z"
+focusKeyword: "NTSA to Review Smart Driving Licence Deal After MPs Raise Co"
+schema: "NewsArticle"
 ---
+
+NTSA to Review Smart Driving Licence Deal After MPs Raise Co is central to this update for Kenyan readers.
+
 By Celestine Nzioka The National Transport and Safety Authority (NTSA) will review its 21-year smart driving licence production agreement. Director General Nashon Kondiwa pledged this on Thursday, April 9, 2026, before the National Assembly's Public Debt and Privatisation Committee, amid mounting parliamentary concerns over the deal’s revenue-sharing model.
 
 Parliamentary Scrutiny of PPP The deal, signed between NTSA and a private consortium led by PesaPrint, has attracted sharp criticism from Members of Parliament (MPs) for what they describe as an inequitable revenue-sharing model. Under the current framework, private partners are poised to receive approximately 77 percent of projected revenues, leaving the government with less than a quarter over the contract's duration. Committee chairperson Abdi Shurie, alongside other members, questioned the fairness and transparency of the arrangement, deeming it contrary to public interest. Shurie highlighted that projected revenues over 21 years stand at approximately Ksh900 billion against costs of Ksh300 billion, representing a 300 percent profit margin for the private entity. Hon. Daudi further expressed dismay, stating that "Seventy-seven per cent going to a private entity for 21 years makes no sense."
@@ -22,3 +27,18 @@ Consortium Details and Future Review The consortium behind the smart driving lic
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

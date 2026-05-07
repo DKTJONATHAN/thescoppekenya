@@ -1,7 +1,8 @@
 ---
 title: "IG Kanja orders police to obey Constitution and warns public against attacking stations"
 slug: "ig-kanja-orders-police-to-obey-constitution-and-warns-public-against"
-description: "IG Douglas Kanja orders police to obey the Constitution and warns against attacking stations or damaging infrastructure amidst rising public discontent."
+description: "IG Kanja orders police to obey Constitution and warns public: IG Douglas Kanja orders police to obey the Constitution and warns against attacking stations or"
+excerpt: "Inspector General Douglas Kanja, speaking from Vigilance House in Nairobi on Friday, April 17, 2026, issued a stern warning against attacks"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/W72rvQY/3d310707022b.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["douglas-kanja", "national-police-service", "police-station-attacks", "constitutional-policing", "law-enforcement"]
 canonical: "https://zandani.co.ke/article/ig-kanja-orders-police-to-obey-constitution-and-warns-public-against"
 date: "2026-04-17T17:08:54Z"
-focusKeyword: "IG Kanja orders police to obey Constitution and warns public"
 dateModified: "2026-04-17T17:08:54Z"
+focusKeyword: "IG Kanja orders police to obey Constitution and warns public"
+schema: "NewsArticle"
 ---
+
+IG Kanja orders police to obey Constitution and warns public is central to this update for Kenyan readers.
+
 Inspector General Douglas Kanja, speaking from Vigilance House in Nairobi on Friday, April 17, 2026, issued a stern warning against attacks on police stations while directing officers to strictly adhere to the Constitution, amidst rising public discontent and planned protests.
 
 Police Chiefs Issue Public and Internal Directives
@@ -24,3 +29,18 @@ Planned Protests and Official Response Kanja’s remarks came hours after Nairob
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

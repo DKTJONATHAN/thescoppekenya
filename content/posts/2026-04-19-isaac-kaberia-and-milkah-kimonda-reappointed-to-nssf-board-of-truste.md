@@ -1,7 +1,8 @@
 ---
 title: "Isaac Kaberia and Milkah Kimonda reappointed to NSSF Board of Trustees"
 slug: "isaac-kaberia-and-milkah-kimonda-reappointed-to-nssf-board-of-truste"
-description: "Dr. Isaac Kaberia Kubai and Dr. Milkah Kimonda have been reappointed to the NSSF Board of Trustees for a three-year term, effective from April 17, 2026."
+description: "Isaac Kaberia and Milkah Kimonda reappointed to NSSF Board o: Dr. Isaac Kaberia Kubai and Dr. Milkah Kimonda have been reappointed to the NSSF Board of"
+excerpt: "Dr. Isaac Kaberia Kubai and Dr. Milkah Kimonda have been reappointed to the National Social Security Fund (NSSF) Board of Trustees for a thr"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/SX1MFVkK/cd2e75c3d96a.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["nssf-board-of-trustees", "isaac-kaberia-kubai", "milkah-kimonda", "alfred-mutua", "pension-management"]
 canonical: "https://zandani.co.ke/article/isaac-kaberia-and-milkah-kimonda-reappointed-to-nssf-board-of-truste"
 date: "2026-04-19T06:54:25Z"
-focusKeyword: "Isaac Kaberia and Milkah Kimonda reappointed to NSSF Board o"
 dateModified: "2026-04-19T06:54:25Z"
+focusKeyword: "Isaac Kaberia and Milkah Kimonda reappointed to NSSF Board o"
+schema: "NewsArticle"
 ---
+
+Isaac Kaberia and Milkah Kimonda reappointed to NSSF Board o is central to this update for Kenyan readers.
+
 Dr. Isaac Kaberia Kubai and Dr. Milkah Kimonda have been reappointed to the National Social Security Fund (NSSF) Board of Trustees for a three-year term, effective April 17, 2026. Cabinet Secretary Alfred Mutua gazetted their reappointments, entrusting them with safeguarding millions of workers' pension contributions.
 
 NSSF Leadership Confirmed The reappointment, gazetted on April 17, 2026, marks a second term for Dr. Kaberia and Dr. Kimonda, reinforcing their roles in the strategic direction and financial stewardship of the NSSF. Cabinet Secretary for Labor and Social Protection, Alfred Mutua, exercised powers under the NSSF Act to formalize these extensions. Their tenure will see them continue to oversee members' savings and ensure the long-term sustainability of the social security scheme. These strategic reappointments reflect the government's continued focus on solidifying key institutions, paralleling initiatives like the National Transport and Safety Authority's recent rollout of 1,000 speed cameras aimed at enhancing road enforcement. [cite: internal link to NTSA article]
@@ -22,3 +27,18 @@ Political Background and Strategic Role Prior to and following the 2022 general 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

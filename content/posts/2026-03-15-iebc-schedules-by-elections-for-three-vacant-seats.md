@@ -1,7 +1,8 @@
 ---
 title: "IEBC schedules by-elections for three vacant seats"
 slug: "iebc-schedules-by-elections-for-three-vacant-seats"
-description: "The IEBC has scheduled by-elections for May 14, 2026, to fill three vacant seats: the Emurua Dikirr MP seat and the Porro and Endo county assembly wards."
+description: "IEBC schedules by-elections for three vacant seats: The IEBC has scheduled by-elections for May 14, 2026, to fill three vacant seats: the Emurua Dikirr MP seat"
+excerpt: "The Independent Electoral and Boundaries Commission (IEBC) has scheduled by elections for May 14, 2026, to fill three vacant elective seats."
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/nNt2kqh0/310587fbcf6f.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["iebc-by-elections", "emurua-dikirr-constituency", "narok-county", "endo-ward", "electoral-politics"]
 canonical: "https://zandani.co.ke/article/iebc-schedules-by-elections-for-three-vacant-seats"
 date: "2026-03-15T11:42:15Z"
-focusKeyword: "IEBC schedules by-elections for three vacant seats"
 dateModified: "2026-03-15T11:42:15Z"
+focusKeyword: "IEBC schedules by-elections for three vacant seats"
+schema: "NewsArticle"
 ---
+
+IEBC schedules by-elections for three vacant seats is central to this update for Kenyan readers.
+
 The Independent Electoral and Boundaries Commission (IEBC) has scheduled by-elections for May 14, 2026, to fill three vacant elective seats. These include the Member of National Assembly position for Emurua Dikirr Constituency and two county assembly wards, Porro Ward and Endo Ward, following recent declarations of vacancy.
 
 By-Election Timeline Set
@@ -24,3 +29,18 @@ Campaign Regulations and Voter Register Campaigns for the by-elections are slate
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

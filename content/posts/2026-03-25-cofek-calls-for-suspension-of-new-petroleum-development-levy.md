@@ -1,7 +1,8 @@
 ---
 title: "COFEK calls for suspension of new petroleum development levy"
 slug: "cofek-calls-for-suspension-of-new-petroleum-development-levy"
-description: "COFEK calls for the immediate suspension of the Petroleum Development Levy (Amendment) Order, 2025, to ease Kenya's rising cost of living and fuel prices."
+description: "COFEK calls for suspension of new petroleum development levy: COFEK calls for the immediate suspension of the Petroleum Development Levy (Amendment) Order,"
+excerpt: "Consumer Federation of Kenya (COFEK) today, Thursday, March 25, 2026, called for the immediate suspension of the Petroleum Development Levy"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/TD0PHvxC/f80a49efb14c.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["petroleum-development-levy", "cofek", "fuel-price-hike-kenya", "energy-sector-policy", "cost-of-living-crisis"]
 canonical: "https://zandani.co.ke/article/cofek-calls-for-suspension-of-new-petroleum-development-levy"
 date: "2026-03-25T10:10:58Z"
-focusKeyword: "COFEK calls for suspension of new petroleum development levy"
 dateModified: "2026-03-25T10:10:58Z"
+focusKeyword: "COFEK calls for suspension of new petroleum development levy"
+schema: "NewsArticle"
 ---
+
+COFEK calls for suspension of new petroleum development levy is central to this update for Kenyan readers.
+
 Consumer Federation of Kenya (COFEK) today, Thursday, March 25, 2026, called for the immediate suspension of the Petroleum Development Levy (Amendment) Order, 2025. The federation argues the newly introduced levy, operational since November 2025, will exacerbate the country's rising cost of living.
 
 Levy's Unilateral Implementation Sparks Outcry
@@ -26,3 +31,18 @@ Fuel Supply Concerns Amid Regional Instability COFEK's call follows a day after 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

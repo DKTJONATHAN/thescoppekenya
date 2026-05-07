@@ -1,7 +1,8 @@
 ---
 title: "Social Health Authority to cover first 24 hours of emergency medical care and ambulance costs"
 slug: "social-health-authority-to-cover-first-24-hours-of-emergency-medical"
-description: "The Social Health Authority will now cover initial 24-hour emergency medical care and ambulance costs for all citizens, expanding urgent care access."
+description: "Social Health Authority to cover first 24 hours of emergency: The Social Health Authority will now cover initial 24-hour emergency medical care and ambulance"
+excerpt: "The Social Health Authority (SHA) will cover the initial 24 hours of emergency medical care and associated ambulance costs for all citizens,"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/39nJNBjr/bae71a87e60e.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["social-health-authority", "emergency-medical-care", "ambulance-costs", "aden-duale", "healthcare-policy"]
 canonical: "https://zandani.co.ke/article/social-health-authority-to-cover-first-24-hours-of-emergency-medical"
 date: "2026-04-02T12:00:03Z"
-focusKeyword: "Social Health Authority to cover first 24 hours of emergency"
 dateModified: "2026-04-02T12:00:03Z"
+focusKeyword: "Social Health Authority to cover first 24 hours of emergency"
+schema: "NewsArticle"
 ---
+
+Social Health Authority to cover first 24 hours of emergency is central to this update for Kenyan readers.
+
 The Social Health Authority (SHA) will cover the initial 24 hours of emergency medical care and associated ambulance costs for all citizens, Health Cabinet Secretary Aden Duale announced Thursday, April 2, 2026, in Nairobi. This initiative, part of SHA’s Emergency, Chronic and Critical Illness Fund, aims to significantly expand urgent care access.
 
 Nationwide Emergency Healthcare Initiative Speaking at Avenue Hospital in Nairobi during the onboarding of the National Police Service and Kenya Prisons Service to the Public Officers Medical Scheme Fund, CS Duale detailed the rollout. The government is preparing to launch a nationwide ambulance dispatch service by June 2026. This system will enable individuals experiencing an emergency to contact a central dispatch center, which will then send the nearest ambulance to their location for transport to the closest hospital.
@@ -24,3 +29,18 @@ Comprehensive 24-Hour Coverage Upon admission, all costs for the first 24 hours 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

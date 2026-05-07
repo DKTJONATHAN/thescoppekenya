@@ -1,13 +1,21 @@
 ---
 title: "Public institutions fail to automate services and migrate to centralized payroll"
 slug: "public-institutions-fail-to-automate-services-and-migrate-to-central"
+description: "Public institutions fail to automate services and migrate to: Kenya's Digital Governance Stagnates Amidst Automation Failures Kenya's Public Service Commission"
+excerpt: "Kenya's Digital Governance Stagnates Amidst Automation Failures Kenya's Public Service Commission (PSC) reports significant failures in publ"
 author: "Elizabeth Muthoni"
 image: "https://i.ibb.co/7tSyTxC1/c9be3839b6e4.webp"
 category: "Technology"
+tags: ["public institutions fail to automate services and migrate to central", "technology", "kenya news"]
+canonical: "https://zandani.co.ke/article/public-institutions-fail-to-automate-services-and-migrate-to-central"
 date: "2026-03-14T08:55:41Z"
-focusKeyword: "Public institutions fail to automate services and migrate to"
 dateModified: "2026-03-14T08:55:41Z"
+focusKeyword: "Public institutions fail to automate services and migrate to"
+schema: "NewsArticle"
 ---
+
+Public institutions fail to automate services and migrate to is central to this update for Kenyan readers.
+
 ## Kenya's Digital Governance Stagnates Amidst Automation Failures Kenya's Public Service Commission (PSC) reports significant failures in public sector digital transformation. Only 15.9% of institutions met the June 2025 automation deadline, with payroll non-compliance at 14.1%, perpetuating "ghost worker" fraud and costing taxpayers billions. This stagnation undermines service delivery and digital security, despite repeated national targets.
 
 Automation Lag and Compliance Gaps The Public Service Commission's 2024/2025 compliance evaluation report, encompassing 511 public institutions, revealed that a mere 81 institutions had automated and migrated their business processes to e-platforms by the June 2025 deadline. This means 84.1% of the evaluated public service remains unautomated. An additional 166 institutions that claimed compliance failed to provide valid supporting documentation, often submitting undated, unsigned, or irrelevant materials. This recurring issue signals a broader challenge, as the June 2025 deadline itself was set in a previous evaluation cycle, anchored in the National Digital Master Plan 2022-2027.
@@ -20,3 +28,18 @@ Future Prospects for Digital Governance Despite ongoing challenges and missed ta
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

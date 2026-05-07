@@ -1,7 +1,8 @@
 ---
 title: "Dulla Makabila Defies Ali Kiba Over Witchcraft Claims"
 slug: "dulla-makabila-defies-ali-kiba-over-witchcraft-claims"
-excerpt: ""
+description: "Dulla Makabila Defies Ali Kiba Over Witchcraft Claims: Tanzanian Singeli star Dulla Makabila arrived at Jomo Kenyatta International Airport this week for a"
+excerpt: "Tanzanian Singeli star Dulla Makabila arrived at Jomo Kenyatta International Airport this week for a Kenyan media tour. The artist boldly de"
 author: "Za Ndani"
 author_url: "https://zandani.co.ke/author/za-ndani"
 image: "https://i.ibb.co/fdbg0r7j/0bdee5915f2b.webp"
@@ -9,9 +10,13 @@ category: "Entertainment"
 tags: ["dulla-makabila", "ali-kiba", "tanzanian-music-clash", "singeli-music", "dulla-makabila-witchcraft"]
 canonical: "https://zandani.co.ke/article/dulla-makabila-defies-ali-kiba-over-witchcraft-claims"
 date: "2026-04-23T11:35:29Z"
-focusKeyword: "Dulla Makabila Defies Ali Kiba Over Witchcraft Claims"
 dateModified: "2026-04-23T11:35:29Z"
+focusKeyword: "Dulla Makabila Defies Ali Kiba Over Witchcraft Claims"
+schema: "NewsArticle"
 ---
+
+Dulla Makabila Defies Ali Kiba Over Witchcraft Claims is central to this update for Kenyan readers.
+
 Tanzanian Singeli star Dulla Makabila arrived at Jomo Kenyatta International Airport this week for a Kenyan media tour. The artist boldly declared his refusal to stop using traditional spiritual practices for success, despite pressure from fellow musician Ali Kiba to change.
 
 ## Dulla Makabila Clashes With Ali Kiba Over Witchcraft
@@ -26,3 +31,18 @@ Makabila admitted that his stance on "uchawi" has cost him significant professio
 
 Outside of his musical spiritualism, Makabila spoke candidly about his personal life and his history of two divorces. He claimed that his recovery time after a breakup is exceptionally short, often taking only minutes to move on to a new partner. The artist linked this confidence to his financial stability and career success. His blunt approach to romance stands in contrast to the sentimental gestures often seen in the industry, like when [Adekunle Gold gifts Simi Mercedes-Benz GLE and diamond ring for birthday](https://zandani.co.ke/article/adekunle-gold-gifts-simi-mercedes-benz-gle-and-diamond-ring-for-birt). Makabila remains focused on his brand, intending to find spiritual guidance in Kenya while solidifying his status as a regional powerhouse.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

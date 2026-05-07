@@ -1,14 +1,21 @@
 ---
 title: "Get Out Get Active Shortlisted for Sport Industry Award: Is Grassroots Finally Getting Its Due, Mate?"
 slug: "get-out-get-active-sport-industry-award-shortlist-pundit-view"
+description: "Get Out Get Active Shortlisted for Sport Industry Award Is G: Right, 'Get Out Get Active' has bagged a nomination for a prestigious Sport Industry Award! Is"
 excerpt: "Right, 'Get Out Get Active' has bagged a nomination for a prestigious Sport Industry Award! Is this the big one for grassroots and inclusive sport, mate?"
+author: "Za Ndani"
 image: "https://sportindustry.co.uk/wp-content/uploads/2026/02/HD-Template-01_DARK_2-1024x576.png"
 category: "Global News"
-date: "2026-02-24"
 tags: ["Get Out Get Active", "Sport Industry Awards", "inclusive sport", "grassroots", "UK sport", "Activity Alliance"]
-focusKeyword: "Get Out Get Active Shortlisted for Sport Industry Award Is G"
+canonical: "https://zandani.co.ke/article/get-out-get-active-sport-industry-award-shortlist-pundit-view"
+date: "2026-02-24"
 dateModified: "2026-02-24"
+focusKeyword: "Get Out Get Active Shortlisted for Sport Industry Award Is G"
+schema: "NewsArticle"
 ---
+
+Get Out Get Active Shortlisted for Sport Industry Award Is G is central to this update for Kenyan readers.
+
 ## Get Out Get Active: Shortlisted for a Silver Anniversary Gong! Get Out Get Active (GOGA), a UK-wide programme led by Activity Alliance, has officially made the coveted shortlist for the 25th Sport Industry Awards, an event celebrating excellence across the sector. This nomination positions them among the finest in the industry, with the awards ceremony set to gather over 1,500 senior executives on April 30th, 2026, to honour outstanding achievements in sport.
 
 A Right Good Shout for Inclusivity Right, you’ve got to hand it to them, haven’t you? When you hear "Sport Industry Awards," your mind often jumps straight to the big-money deals, the massive sponsorship activations, or perhaps some eye-watering tech innovation. But here we have Get Out Get Active, a programme that's all about bringing disabled and non-disabled people together through physical activity, bagging a shortlist spot. That's proper brilliant, mate. It’s a UK-wide initiative, mind, getting people off the sofa and into everything from paddleboarding to superhero workouts. We're talking about over 58,000 participants to date, with a staggering 81% reporting improvements in their mental wellbeing. Absolute madness, the impact they're having!
@@ -19,3 +26,18 @@ What's Next for GOGA? So, will Get Out Get Active walk away with a gong on April
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

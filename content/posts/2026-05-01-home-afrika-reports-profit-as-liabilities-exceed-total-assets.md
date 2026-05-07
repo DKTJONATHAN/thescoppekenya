@@ -1,13 +1,21 @@
 ---
 title: "Home Afrika reports profit as liabilities exceed total assets"
 slug: "home-afrika-reports-profit-as-liabilities-exceed-total-assets"
+description: "Home Afrika reports profit as liabilities exceed total asset: Home Afrika Reports Profitability Amidst Significant Liabilities Home Afrika Limited reported a"
+excerpt: "Home Afrika Reports Profitability Amidst Significant Liabilities Home Afrika Limited reported a net profit of KSh 117.89 million for the ful"
 author: "Grace Mkamburi"
 image: "https://i.ibb.co/DD1HhSY7/425785493885.avif"
 category: "Business"
+tags: ["home afrika reports profit as liabilities exceed total assets", "business", "kenya news"]
+canonical: "https://zandani.co.ke/article/home-afrika-reports-profit-as-liabilities-exceed-total-assets"
 date: "2026-05-01T10:58:46Z"
-focusKeyword: "Home Afrika reports profit as liabilities exceed total asset"
 dateModified: "2026-05-01T10:58:46Z"
+focusKeyword: "Home Afrika reports profit as liabilities exceed total asset"
+schema: "NewsArticle"
 ---
+
+Home Afrika reports profit as liabilities exceed total asset is central to this update for Kenyan readers.
+
 ## Home Afrika Reports Profitability Amidst Significant Liabilities
 
 Home Afrika Limited reported a net profit of KSh 117.89 million for the full year ended December 31, 2025, marking its second consecutive year of profitability. Despite a top-line contraction, the NSE-listed property developer significantly improved its margins through cost reduction, yet faces substantial balance sheet challenges with total liabilities exceeding total assets.
@@ -21,3 +29,18 @@ Other operating income for Home Afrika saw a substantial increase of 48.5% to KS
 ### Balance Sheet Imbalance and Capital Structure Concerns
 Despite operational improvements, Home Afrika's balance sheet reveals considerable challenges. Total liabilities stand at KSh 4.77 billion, significantly exceeding total assets of KSh 3.74 billion. This indicates a negative equity position, which improved from negative KSh 2.33 billion in 2024 to negative KSh 1.03 billion in 2025, largely due to a KSh 1.18 billion prior year adjustment rather than retained earnings. Borrowings increased by 6.8% to KSh 1.09 billion, and the KSh 680.95 million private placement bond remains unchanged with no visible repayment progress. Additionally, trade receivables nearly doubled to KSh 649.38 million against a backdrop of falling revenue, a divergence that the company's published commentary did not address. The directors have not recommended a dividend for the period, citing the need to rebuild equity and reduce obligations. The board's medium-term target is the recovery of a positive equity position before any return of capital to shareholders.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

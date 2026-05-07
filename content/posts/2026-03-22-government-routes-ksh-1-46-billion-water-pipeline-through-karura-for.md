@@ -1,7 +1,8 @@
 ---
 title: "Government routes KSh 1.46 billion water pipeline through Karura Forest to serve Eastlands"
 slug: "government-routes-ksh-1-46-billion-water-pipeline-through-karura-for"
-description: "The government is routing a KSh 1.46 billion water pipeline through Karura Forest to serve Nairobi Eastlands, with project completion set for mid-2027."
+description: "Government routes KSh 146 billion water pipeline through Kar: The government is routing a KSh 1.46 billion water pipeline through Karura Forest to serve"
+excerpt: "The government is routing a KSh 1.46 billion water pipeline through Karura Forest to serve Nairobi Eastlands. Implemented by the Athi Water"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/zW1Xj5jC/2d3567921b38.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["karura-forest", "nairobi-eastlands", "athi-water-works-development-agency", "water-pipeline-project", "infrastructure-development"]
 canonical: "https://zandani.co.ke/article/government-routes-ksh-1-46-billion-water-pipeline-through-karura-for"
 date: "2026-03-22T18:57:08Z"
-focusKeyword: "Government routes KSh 146 billion water pipeline through Kar"
 dateModified: "2026-03-22T18:57:08Z"
+focusKeyword: "Government routes KSh 146 billion water pipeline through Kar"
+schema: "NewsArticle"
 ---
+
+Government routes KSh 146 billion water pipeline through Kar is central to this update for Kenyan readers.
+
 The government is routing a KSh 1.46 billion water pipeline through Karura Forest to serve Nairobi Eastlands. Implemented by the Athi Water Works Development Agency, this project began its forest section in March 2026, aiming for overall completion by mid-2027, citing cost savings and efficiency.
 
 Gigiri-Karura Pipeline to Boost Eastlands Water Supply
@@ -24,3 +29,18 @@ Environmental Safeguards and Timeline The Kenya Forest Service (KFS) is overseei
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

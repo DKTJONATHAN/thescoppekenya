@@ -1,7 +1,8 @@
 ---
 title: "Ol Kalou MP David Kiaraho Dies at Nairobi Hospital"
 slug: "ol-kalou-mp-david-kiaraho-dies-at-nairobi-hospital"
-description: "Ol Kalou MP David Kiaraho has died at Nairobi Hospital after a long illness. Speaker Moses Wetang'ula confirmed the lawmaker's passing on March 29, 2026."
+description: "Ol Kalou MP David Kiaraho Dies at Nairobi Hospital: Ol Kalou MP David Kiaraho has died at Nairobi Hospital after a long illness. Speaker Moses Wetang'ula"
+excerpt: "By Celestine Nzioka, Za Ndani Ol Kalou Member of Parliament David Njuguna Kiaraho died today, Sunday, March 29, 2026, at Nairobi Hospital wh"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/bgwpLHQx/081a89119970.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["david-njuguna-kiaraho", "ol-kalou-constituency", "moses-wetangula", "kenyan-politics", "national-assembly"]
 canonical: "https://zandani.co.ke/article/ol-kalou-mp-david-kiaraho-dies-at-nairobi-hospital"
 date: "2026-03-29T09:00:14Z"
-focusKeyword: "Ol Kalou MP David Kiaraho Dies at Nairobi Hospital"
 dateModified: "2026-03-29T09:00:14Z"
+focusKeyword: "Ol Kalou MP David Kiaraho Dies at Nairobi Hospital"
+schema: "NewsArticle"
 ---
+
+Ol Kalou MP David Kiaraho Dies at Nairobi Hospital is central to this update for Kenyan readers.
+
 By Celestine Nzioka, Za Ndani Ol Kalou Member of Parliament David Njuguna Kiaraho died today, Sunday, March 29, 2026, at Nairobi Hospital while undergoing treatment. National Assembly Speaker Moses Wetang'ula confirmed the lawmaker's passing, noting he had been unwell for an extended period. His death marks a significant loss for the constituency and the National Assembly.
 
 Ol Kalou MP's Passing Confirmed Speaker Moses Wetang'ula officially confirmed David Njuguna Kiaraho's death on Sunday, March 29, 2026. Kiaraho passed away in the early hours of the morning, around 1:20 AM, while receiving specialized treatment at Nairobi Hospital. While the lawmaker had reportedly been unwell for some time, seeking treatment both locally and abroad, the exact circumstances surrounding his death, including the specific illness he had been battling, have not yet been made public.
@@ -26,3 +31,18 @@ Second MP Death This Year Kiaraho's death makes him the second Member of Parliam
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

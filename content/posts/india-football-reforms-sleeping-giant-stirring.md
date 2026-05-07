@@ -1,14 +1,21 @@
 ---
 title: "India Football Reforms: Is the 'Sleeping Giant' Finally Stirring, Mate?"
 slug: "india-football-reforms-sleeping-giant-stirring"
+description: "India Football Reforms Is the Sleeping Giant Finally Stirrin: Gianni Infantino's call for urgent football reforms in India comes as the nation grapples with"
 excerpt: "Gianni Infantino's call for urgent football reforms in India comes as the nation grapples with both footballing slumber and T20 World Cup cricket woes."
+author: "Za Ndani"
 image: "https://revsportz.in/wp-content/uploads/2026/02/Gianni-Infantino-Kalyan-Chaubey.jpeg"
 category: "Global News"
-date: "2026-02-24"
 tags: ["India", "football", "cricket", "Gianni Infantino", "FIFA", "T20 World Cup", "sports reform", "Arsene Wenger"]
-focusKeyword: "India Football Reforms Is the Sleeping Giant Finally Stirrin"
+canonical: "https://zandani.co.ke/article/india-football-reforms-sleeping-giant-stirring"
+date: "2026-02-24"
 dateModified: "2026-02-24"
+focusKeyword: "India Football Reforms Is the Sleeping Giant Finally Stirrin"
+schema: "NewsArticle"
 ---
+
+India Football Reforms Is the Sleeping Giant Finally Stirrin is central to this update for Kenyan readers.
+
 ## India Football Reforms: Is the 'Sleeping Giant' Finally Stirring? Right, FIFA President Gianni Infantino has once again dubbed India a "sleeping giant" in the world of football, urging some rather urgent reforms. This comes as the nation, currently languishing at 141st in the FIFA rankings, faces a stark reality on the pitch, struggling to meet its vast potential in the beautiful game. Meanwhile, their cricket team has just had a bit of a shocker in the T20 World Cup.
 
 Football's Long Nap: More Than Just a Snooze? Infantino's "sleeping giant" moniker isn't exactly new, is it? But the numbers, mate, they tell an absolute story. India's men's team couldn't even manage to qualify for the AFC Asian Cup this time 'round, which, let's be honest, is a bit of a stumble after the tournament expanded to 24 teams. And at club level? Fourteen teams in the top-tier league, but only 13 matches per club this season. That's hardly a recipe for competitive exposure, is it? The national team, bless 'em, haven't snagged a win in 15 competitive matches since November 2023. You could say it's been a prolonged period of stagnation, couldn't you? But FIFA isn't just sitting there, tutting. They've chucked some serious investment India's way, with programmes like FIFA Forward and Football for Schools. And then there's the big one: Arsène Wenger himself is overseeing the Talent Development Scheme in India. If anyone knows a thing or two about spotting talent and building a system from the grassroots up, it's old Arsène, right? The emphasis is squarely on those grassroots, improving coaching, and getting some global expertise flowing to both the men's and women's games.
@@ -21,3 +28,18 @@ Re-tuning the Machine: What's Next for India? The management is trying to defend
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

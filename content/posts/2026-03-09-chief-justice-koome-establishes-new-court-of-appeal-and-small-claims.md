@@ -1,13 +1,21 @@
 ---
 title: "Chief Justice Koome establishes new Court of Appeal and Small Claims Court stations"
 slug: "chief-justice-koome-establishes-new-court-of-appeal-and-small-claims"
+description: "Chief Justice Koome establishes new Court of Appeal and Smal: Judiciary Expands Court Network Across Kenya Chief Justice Martha Koome today, March 9, 2026,"
+excerpt: "Judiciary Expands Court Network Across Kenya Chief Justice Martha Koome today, March 9, 2026, announced a significant expansion of Kenya's c"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/ymSxDXm2/700c258775dd.jpg"
 category: "News"
+tags: ["chief justice koome establishes new court of appeal and small claims", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/chief-justice-koome-establishes-new-court-of-appeal-and-small-claims"
 date: "2026-03-09T19:53:55Z"
-focusKeyword: "Chief Justice Koome establishes new Court of Appeal and Smal"
 dateModified: "2026-03-09T19:53:55Z"
+focusKeyword: "Chief Justice Koome establishes new Court of Appeal and Smal"
+schema: "NewsArticle"
 ---
+
+Chief Justice Koome establishes new Court of Appeal and Smal is central to this update for Kenyan readers.
+
 ## Judiciary Expands Court Network Across Kenya Chief Justice Martha Koome today, March 9, 2026, announced a significant expansion of Kenya's court system, establishing new Court of Appeal and Small Claims Court stations. This strategic move aims to enhance access to justice, reduce travel burdens, cut legal costs, and address persistent case delays nationwide.
 
 New Appellate and Small Claims Courts Launched Chief Justice Koome has gazetted two additional Court of Appeal stations at Kakamega Law Courts and Meru, which will operate from Nkubu Law Courts. This brings the total number of appellate stations in the country to eight. Additionally, a new Court of Appeal sub-registry has been created at Embu Law Courts, increasing the total sub-registries to five. Existing Court of Appeal stations serve Nairobi, Mombasa, Nakuru, Nyeri, Kisumu, and Eldoret, supported by sub-registries in Malindi, Garissa, Kisii, and Busia. Simultaneously, the Judiciary has broadened the reach of Small Claims Courts (SCC) with 15 new stations in Maua, Mumias, Molo, Kapsabet, Ngong, Kenol, Kiambu, Mavoko, Makueni, Kilifi, Kikuyu, Vihiga, Homa Bay, Bungoma, and Nyamira. These additions elevate the national total of SCC Courts to 55, facilitating swifter resolution of lower-value commercial and civil disputes for traders, small businesses, and consumers.
@@ -18,3 +26,18 @@ Budgetary Constraints Amidst High Caseload This significant expansion by the Jud
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

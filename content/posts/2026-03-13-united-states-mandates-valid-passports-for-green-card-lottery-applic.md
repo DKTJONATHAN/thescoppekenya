@@ -1,13 +1,21 @@
 ---
 title: "United States mandates valid passports for green card lottery applications"
 slug: "united-states-mandates-valid-passports-for-green-card-lottery-applic"
+description: "United States mandates valid passports for green card lotter: United States Implements Passport Rule for Diversity Visa Lottery The United States has enacted a"
+excerpt: "United States Implements Passport Rule for Diversity Visa Lottery The United States has enacted a new rule mandating valid, unexpired passpo"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/wh2mPpkL/306d7eb736a2.jpg"
 category: "News"
+tags: ["united states mandates valid passports for green card lottery applic", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/united-states-mandates-valid-passports-for-green-card-lottery-applic"
 date: "2026-03-13T10:58:17Z"
-focusKeyword: "United States mandates valid passports for green card lotter"
 dateModified: "2026-03-13T10:58:17Z"
+focusKeyword: "United States mandates valid passports for green card lotter"
+schema: "NewsArticle"
 ---
+
+United States mandates valid passports for green card lotter is central to this update for Kenyan readers.
+
 ## United States Implements Passport Rule for Diversity Visa Lottery The United States has enacted a new rule mandating valid, unexpired passports for all diversity lottery visa applicants. Announced March 10, 2026, this measure aims to significantly reduce fraud within the programme, which was suspended in December 2025 following a serious incident at Brown University. The new requirements take effect in April 2026.
 
 New Passport Mandate Takes Effect The U.S. Department of State announced a final rule on March 10, 2026, requiring green card lottery applicants to provide a valid and unexpired passport during the application process. This regulation takes effect 30 days after its publication, specifically on April 10, 2026. Applicants will also be expected to pay Ksh129 as application fees. While the passport requirement was initially introduced in 2019, it was later struck down by a federal court in 2022 due to procedural defects. The Department of State asserts that the current reintroduction follows a full notice-and-comment rulemaking process, addressing previous legal concerns.
@@ -18,3 +26,18 @@ Programme Suspension and Repercussions The green card lottery was suspended in D
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

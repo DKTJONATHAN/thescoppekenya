@@ -1,7 +1,8 @@
 ---
 title: "Kenyan marathoner Albert Korir banned five years for doping violations"
 slug: "kenyan-marathoner-albert-korir-banned-five-years-for-doping-violatio"
-description: "Kenyan marathoner Albert Korir has been banned five years by the Athletics Integrity Unit for using CERA, with results disqualified from October 3, 2025."
+description: "Kenyan marathoner Albert Korir banned five years for doping: Kenyan marathoner Albert Korir has been banned five years by the Athletics Integrity Unit for"
+excerpt: "Marathoner Albert Korir has been issued a five year ban by the Athletics Integrity Unit (AIU) for multiple doping violations, effective Mond"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/0j9h2qZ8/9f8286ae1321.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["albert-korir", "athletics-integrity-unit", "doping-violations", "marathon-running", "cera-prohibited-substance"]
 canonical: "https://zandani.co.ke/article/kenyan-marathoner-albert-korir-banned-five-years-for-doping-violatio"
 date: "2026-03-30T08:50:51Z"
-focusKeyword: "Kenyan marathoner Albert Korir banned five years for doping"
 dateModified: "2026-03-30T08:50:51Z"
+focusKeyword: "Kenyan marathoner Albert Korir banned five years for doping"
+schema: "NewsArticle"
 ---
+
+Kenyan marathoner Albert Korir banned five years for doping is central to this update for Kenyan readers.
+
 Marathoner Albert Korir has been issued a five-year ban by the Athletics Integrity Unit (AIU) for multiple doping violations, effective Monday, March 30, 2026. The athlete admitted to using Methoxy polyethylene glycol-epoetin beta (CERA), a prohibited substance, leading to the disqualification of his results from October 3, 2025, onwards.
 
 Sanctions Imposed for Prohibited Substance Use The AIU confirmed Korir's guilt, detailing that he admitted to using CERA in several out-of-competition tests. CERA, or Methoxy polyethylene glycol-epoetin beta, is a synthetic form of a hormone that boosts red blood cell production. The World Anti-Doping Agency (WADA) classifies it as a prohibited substance because it enhances endurance by improving oxygen delivery to muscles, providing an unfair advantage.
@@ -24,3 +29,18 @@ Impact on a Distinguished Career Before this ban, Korir had a distinguished prof
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

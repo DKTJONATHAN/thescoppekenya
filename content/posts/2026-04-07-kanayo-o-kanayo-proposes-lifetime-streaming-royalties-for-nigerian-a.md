@@ -1,7 +1,8 @@
 ---
 title: "Kanayo O. Kanayo proposes lifetime streaming royalties for Nigerian actors"
 slug: "kanayo-o-kanayo-proposes-lifetime-streaming-royalties-for-nigerian-a"
-description: "Kanayo O. Kanayo proposes lifetime streaming royalties for Nigerian actors to ensure performers earn from their work long after production concludes."
+description: "Kanayo O Kanayo proposes lifetime streaming royalties for Ni: Kanayo O. Kanayo proposes lifetime streaming royalties for Nigerian actors to ensure performers"
+excerpt: "Veteran Nollywood actor Kanayo O. Kanayo has ignited a crucial industry conversation, proposing lifetime streaming royalty payments for Nige"
 author: "Amara Ndlovu"
 author_url: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/39bnPCQB/96324c208931.webp"
@@ -9,9 +10,13 @@ category: "Entertainment"
 tags: ["kanayo-o-kanayo", "streaming-royalties", "nollywood-actors", "actor-remuneration", "digital-streaming-rights"]
 canonical: "https://zandani.co.ke/article/kanayo-o-kanayo-proposes-lifetime-streaming-royalties-for-nigerian-a"
 date: "2026-04-07T17:31:55Z"
-focusKeyword: "Kanayo O Kanayo proposes lifetime streaming royalties for Ni"
 dateModified: "2026-04-07T17:31:55Z"
+focusKeyword: "Kanayo O Kanayo proposes lifetime streaming royalties for Ni"
+schema: "NewsArticle"
 ---
+
+Kanayo O Kanayo proposes lifetime streaming royalties for Ni is central to this update for Kenyan readers.
+
 Veteran Nollywood actor Kanayo O. Kanayo has ignited a crucial industry conversation, proposing lifetime streaming royalty payments for Nigerian actors. This call for the Actors Guild of Nigeria (AGN) to implement a new policy aims to ensure performers earn from their work long after production concludes, directly addressing widespread financial struggles among beloved industry figures.
 
 Nollywood's Royalty Reckoning Kanayo O. Kanayo, an award-winning actor and lawyer, recently put forth a proposal for the Actors Guild of Nigeria (AGN) to mandate lifetime royalty payments for all Nigerian actors and actresses featured in films uploaded to streaming platforms. He advocates for a dedicated agency to oversee and enforce compliance nationwide, asserting this would guarantee artists benefit from their craft well after cameras cease rolling. This proposition arrives amid numerous reports of financial hardship faced by seasoned Nigerian actors, highlighting a systemic issue within the industry. Just last month, veteran actor Abiodun Ayoyinka, known as Papa Ajasco, openly discussed his financial difficulties despite decades in the entertainment sector. Similar challenges faced by Nollywood actors, including broader economic conditions, have also been voiced by figures like Kunle Remi. Two years prior, Hanks Anuku also made headlines with public appeals for financial assistance following a period of personal hardship after his peak Nollywood career. Patience Ozokwor articulated the core problem bluntly: "The reason why Nollywood actors and actresses are poor is that we don't get royalties for what we do, we only get paid for our appearance at the shoot." This sentiment reflects a consistent and urgent demand from many performers.
@@ -22,3 +27,18 @@ Systemic Hurdles to Royalties The comparison often drawn to the music industry's
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

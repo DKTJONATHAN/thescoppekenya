@@ -1,7 +1,8 @@
 ---
 title: "EPRA adds foreign exchange and water resource levies to electricity bills"
 slug: "epra-adds-foreign-exchange-and-water-resource-levies-to-electricity-"
-description: "EPRA introduces three new levies to electricity bills starting April 2026, covering foreign exchange, water resource management, and fuel costs for all consumer"
+description: "EPRA adds foreign exchange and water resource levies to elec: EPRA introduces three new levies to electricity bills starting April 2026, covering foreign"
+excerpt: "The Energy Petroleum Regulatory Authority (EPRA) has introduced three new charges to electricity bills effective April 2026, impacting count"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/XfFGRxDr/5ba3ae9e97ed.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["epra", "electricity-bills", "foreign-exchange-fluctuation-adjustment", "water-resource-management-levies", "energy-sector"]
 canonical: "https://zandani.co.ke/article/epra-adds-foreign-exchange-and-water-resource-levies-to-electricity-"
 date: "2026-04-26T19:15:32Z"
-focusKeyword: "EPRA adds foreign exchange and water resource levies to elec"
 dateModified: "2026-04-26T19:15:32Z"
+focusKeyword: "EPRA adds foreign exchange and water resource levies to elec"
+schema: "NewsArticle"
 ---
+
+EPRA adds foreign exchange and water resource levies to elec is central to this update for Kenyan readers.
+
 The Energy Petroleum Regulatory Authority (EPRA) has introduced three new charges to electricity bills effective April 2026, impacting countless households and businesses across the nation. These additions stem from foreign exchange rate fluctuations, water resource management levies, and the escalating cost of fuel for power generation.
 
 ## New Components Added to Electricity Bills
@@ -36,3 +41,18 @@ Off-grid areas are anticipated to experience the sharpest increase due to their 
 
 The combined effect of these three charges represents a notable increase in the per-unit cost for consumers in April. The 347-cent fuel charge carries the heaviest weight, followed by the 123.41-cent foreign exchange adjustment, and the 1.54-cent water levy.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

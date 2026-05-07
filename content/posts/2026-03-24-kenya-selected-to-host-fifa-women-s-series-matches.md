@@ -1,7 +1,8 @@
 ---
 title: "Kenya selected to host FIFA Women's Series matches"
 slug: "kenya-selected-to-host-fifa-women-s-series-matches"
-description: "Kenya hosts the 2026 FIFA Women's Series matches at Nyayo National Stadium from April 11-15, marking the first time the country stages a FIFA global event."
+description: "Kenya selected to host FIFA Womens Series matches: Kenya hosts the 2026 FIFA Women's Series matches at Nyayo National Stadium from April 11-15, marking the"
+excerpt: "By Celestine Nzioka, Za Ndani Kenya has secured the rights to host the 2026 FIFA Women's Series matches, marking the first time the country"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Kxr8bFxk/db49a3b7ef6e.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["fifa-womens-series", "salim-mvurya", "nyayo-national-stadium", "womens-football", "nairobi-sports-tournaments"]
 canonical: "https://zandani.co.ke/article/kenya-selected-to-host-fifa-women-s-series-matches"
 date: "2026-03-24T10:10:56Z"
-focusKeyword: "Kenya selected to host FIFA Womens Series matches"
 dateModified: "2026-03-24T10:10:56Z"
+focusKeyword: "Kenya selected to host FIFA Womens Series matches"
+schema: "NewsArticle"
 ---
+
+Kenya selected to host FIFA Womens Series matches is central to this update for Kenyan readers.
+
 By Celestine Nzioka, Za Ndani Kenya has secured the rights to host the 2026 FIFA Women's Series matches, marking the first time the country will stage a FIFA global football event on Kenyan soil. The announcement was made Tuesday, March 24, 2026, by Cabinet Secretary for Youth Affairs, Creative Economy and Sports Salim Mvurya, with matches scheduled for April 11-15 at Nyayo National Stadium in Nairobi.
 
 Kenya's Inaugural FIFA Global Event
@@ -30,3 +35,18 @@ Infrastructure Development and AFCON 2027 The Government is investing heavily in
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

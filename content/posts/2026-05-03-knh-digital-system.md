@@ -1,18 +1,19 @@
 ---
 title: "KNH Confirms Digital System Delays, Patients Stranded"
 slug: "knh-digital-system"
+description: "Kenyatta National Hospital confirms delays in its new KNH digital system for patient data, leaving many patients stranded. The hospital attributes issues t"
+excerpt: "Kenyatta National Hospital confirms delays in its new KNH digital system for patient data, leaving many patients stranded...."
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/B5SJFzCX/65e422a24c43.jpg"
 category: "News"
-date: "2026-05-03T19:20:18Z"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
-dateModified: "2026-05-03T19:20:18Z"
-schema: "NewsArticle"
-description: "Kenyatta National Hospital confirms delays in its new KNH digital system for patient data, leaving many patients stranded. The hospital attributes issues t"
-excerpt: "Kenyatta National Hospital confirms delays in its new KNH digital system for patient data, leaving many patients stranded...."
 tags: ["Kenya News", "Kenyatta National Hospital", "Digital Health System", "Healthcare Delays", "Nairobi"]
+canonical: "https://zandani.co.ke/article/knh-digital-system"
+date: "2026-05-03T19:20:18Z"
+dateModified: "2026-05-03T19:20:18Z"
 focusKeyword: "KNH digital system"
+schema: "NewsArticle"
 ---
+
 ## KNH Digital System Delays Confirmed, Patients Affected
 
 Kenyatta National Hospital (KNH) on Sunday, May 3, confirmed delays with its new digital system for patient data capture, leaving many patients stranded. The hospital attributed the issues to minor teething problems during its transition from a manual system, dismissing reports of a complete collapse while assuring patient care was not compromised.
@@ -29,3 +30,18 @@ The hospital is transitioning from a manual approach to a fully digitised KNH di
 
 KNH called upon patients and stakeholders to support this transformative shift, describing it as crucial for enhancing efficiency, transparency, and the overall quality of care. The hospital, however, issued a stern warning against any resistance to the digitisation process, whether from internal staff or external parties, asserting that such actions would be dealt with firmly as it progresses with these essential reforms.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

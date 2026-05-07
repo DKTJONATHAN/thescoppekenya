@@ -1,7 +1,8 @@
 ---
 title: "Kenya Editors Guild Condemns Attack on Journalists at UDA Meeting in Trans Nzoia"
 slug: "kenya-editors-guild-condemns-attack-on-journalists-at-uda-meeting-in"
-description: "Kenya Editors Guild condemns the assault on journalists Gilbert Sitati and George Njoroge at a UDA meeting in Trans Nzoia, citing a blow to media freedom."
+description: "Kenya Editors Guild Condemns Attack on Journalists at UDA Me: Kenya Editors Guild condemns the assault on journalists Gilbert Sitati and George Njoroge at a"
+excerpt: "The Kenya Editors Guild (KEG) has strongly condemned a violent assault on journalists Gilbert Sitati and George Njoroge during a United Demo"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/ksXR3y7d/a307b243d1a3.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["kenya-editors-guild", "trans-nzoia-county", "uda-meeting", "media-freedom", "attack-on-journalists"]
 canonical: "https://zandani.co.ke/article/kenya-editors-guild-condemns-attack-on-journalists-at-uda-meeting-in"
 date: "2026-03-22T09:49:18Z"
-focusKeyword: "Kenya Editors Guild Condemns Attack on Journalists at UDA Me"
 dateModified: "2026-03-22T09:49:18Z"
+focusKeyword: "Kenya Editors Guild Condemns Attack on Journalists at UDA Me"
+schema: "NewsArticle"
 ---
+
+Kenya Editors Guild Condemns Attack on Journalists at UDA Me is central to this update for Kenyan readers.
+
 The Kenya Editors Guild (KEG) has strongly condemned a violent assault on journalists Gilbert Sitati and George Njoroge during a United Democratic Alliance (UDA) meeting in Cherangany, Trans Nzoia County, on Friday, March 20, 2026. KEG President Zubeidah Kananu described the incident as a brazen act against media freedom.
 
 Assault on Journalists Condemned
@@ -24,3 +29,18 @@ Viral Footage and Investigation Demands Video footage circulating widely online 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

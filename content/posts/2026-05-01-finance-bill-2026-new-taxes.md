@@ -1,16 +1,19 @@
 ---
 title: "Inside Finance Bill 2026: New Taxes on Phones and Betting"
 slug: "finance-bill-2026-new-taxes"
+description: "CS John Mbadi submits Finance Bill 2026 to Parliament, raising taxes on phones and betting. Kenyans face higher costs on imports. Read the full story."
+excerpt: "CS John Mbadi submits Finance Bill 2026 to Parliament, raising taxes on phones and betting. Kenyans face higher costs on imports. Read the full story."
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/kVKdbZD8/4f1698bbcef5.jpg"
 category: "News"
-date: "2026-05-01T14:03:44Z"
-description: "CS John Mbadi submits Finance Bill 2026 to Parliament, raising taxes on phones and betting. Kenyans face higher costs on imports. Read the full story."
-excerpt: "CS John Mbadi submits Finance Bill 2026 to Parliament, raising taxes on phones and betting. Kenyans face higher costs on imports. Read the full story."
 tags: ["Kenya News", "Finance Bill 2026", "John Mbadi", "Betting Taxes", "Kenya Parliament", "Nairobi"]
-focusKeyword: "Finance Bill 2026"
+canonical: "https://zandani.co.ke/article/finance-bill-2026-new-taxes"
+date: "2026-05-01T14:03:44Z"
 dateModified: "2026-05-01T14:03:44Z"
+focusKeyword: "Finance Bill 2026"
+schema: "NewsArticle"
 ---
+
 ## Finance Bill 2026 Proposes New Taxes on Phones, Mitumba, and Betting
 
 Treasury Cabinet Secretary John Mbadi has submitted the much-anticipated Finance Bill 2026 to Parliament, introducing new taxes on imported mobile phones, second-hand clothing, and increased levies on betting activities across Kenya. The comprehensive bill aims to significantly broaden the government's revenue streams and adjust to evolving economic landscapes.
@@ -33,3 +36,18 @@ Companies operating digital payments, financial technology payment systems, card
 
 In an effort to address environmental concerns and climate change, the Treasury has proposed a 10 per cent tax adjustment on plastic products and 5 per cent on coal. New adjustments are also outlined for alcohol, tobacco, and sugar-related products such as soft drinks. Fruit juices are set to attract a per-litre excise duty ranging between Ksh14 and Ksh20, depending on their sugar content, with vegetable juices and similar beverages brought under a comparable framework.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

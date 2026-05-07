@@ -1,7 +1,8 @@
 ---
 title: "Pastor Victor Kanyari says Marion Naipei continues to struggle with alcohol despite her ordination"
 slug: "pastor-victor-kanyari-says-marion-naipei-continues-to-struggle-with-"
-description: "Pastor Victor Kanyari reveals social media personality Marion Naipei continues her alcohol struggle, challenging his pastoral guidance despite her ordination."
+description: "Pastor Victor Kanyari says Marion Naipei continues to strugg: Pastor Victor Kanyari reveals social media personality Marion Naipei continues her alcohol"
+excerpt: "Pastor Victor Kanyari of Salvation Healing Ministry publicly addressed social media personality Marion Naipei's persistent struggles with al"
 author: "Za Ndani"
 author_url: "https://zandani.co.ke/author/za-ndani"
 image: "https://i.ibb.co/G4xMxyFG/d326ab6f77b0.webp"
@@ -9,9 +10,13 @@ category: "Entertainment"
 tags: ["pastor-victor-kanyari", "marion-naipei", "alcohol-addiction-kenya", "celebrity-alcoholism-kenya", "kanyari-naipei-controversy"]
 canonical: "https://zandani.co.ke/article/pastor-victor-kanyari-says-marion-naipei-continues-to-struggle-with-"
 date: "2026-03-30T11:30:41Z"
-focusKeyword: "Pastor Victor Kanyari says Marion Naipei continues to strugg"
 dateModified: "2026-03-30T11:30:41Z"
+focusKeyword: "Pastor Victor Kanyari says Marion Naipei continues to strugg"
+schema: "NewsArticle"
 ---
+
+Pastor Victor Kanyari says Marion Naipei continues to strugg is central to this update for Kenyan readers.
+
 Pastor Victor Kanyari of Salvation Healing Ministry publicly addressed social media personality Marion Naipei's persistent struggles with alcohol during a revealing Sunday service on March 29, 2026. Despite ordaining her for key church duties, Kanyari admitted the influencer continues to battle her lifestyle choices, making his pastoral guidance an uphill challenge.
 
 Pastor Kanyari's Uphill Battle with Marion Naipei
@@ -24,3 +29,18 @@ From the Pulpit to TikTok Drama This internal church drama comes just days after
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

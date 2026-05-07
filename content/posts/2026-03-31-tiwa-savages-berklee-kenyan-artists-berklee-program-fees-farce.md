@@ -1,17 +1,22 @@
 ---
 title: "Tiwa Savage's Berklee: Kenyan Artists Berklee Program Fees Farce"
 slug: "tiwa-savages-berklee-kenyan-artists-berklee-program-fees-farce"
-description: "Tiwa Savage's Berklee 'free' program is a cruel joke, especially for financially strapped Kenyan artists, given the outrageous kenyan artists berklee program fe"
+description: "Tiwa Savages Berklee Kenyan Artists Berklee Program Fees Far: Tiwa Savage's Berklee 'free' program is a cruel joke, especially for financially strapped Kenyan"
+excerpt: "Tiwa Savage’s grand pronouncements about her Berklee Music Foundation are nothing short of a slap in the face to struggling African artists."
 author: "From The Editor"
 author_url: "https://zandani.co.ke/author/from-the-editor"
 image: "https://www.musicinafrica.net/sites/default/files/images/article/202602/tiwasavagefounderofthetiwasavagemusicfoundation1.png"
 category: "Opinions"
-tags: ["opinions", "tiwa-savage", "berklee", "nigeria", "kenya", "music-education", "hidden-costs", "african-music-pros", "berklee-in-nigeria-travel-costs-kenya", "tiwa-savage-foundation-lagos-expenses", "kenyan-artists-berklee-program-fees", "african-music-pros-lagos-accommodation", "tiwa-savage-berklee-intensive-program-cost", "kenyan-musicians-lagos-travel-funding"]
+tags: ["opinions", "tiwa-savage", "berklee", "nigeria", "kenya", "music-education", "hidden-costs", "african-music-pros"]
 canonical: "https://zandani.co.ke/article/tiwa-savages-berklee-kenyan-artists-berklee-program-fees-farce"
 date: "2026-03-31T15:10:04Z"
-focusKeyword: "Tiwa Savages Berklee Kenyan Artists Berklee Program Fees Far"
 dateModified: "2026-03-31T15:10:04Z"
+focusKeyword: "Tiwa Savages Berklee Kenyan Artists Berklee Program Fees Far"
+schema: "NewsArticle"
 ---
+
+Tiwa Savages Berklee Kenyan Artists Berklee Program Fees Far is central to this update for Kenyan readers.
+
 Tiwa Savage’s grand pronouncements about her Berklee Music Foundation are nothing short of a slap in the face to struggling African artists. Her "free" program in Lagos is a performative sham, offering a glimmer of hope only to snatch it away with absurd travel and accommodation demands. This is not philanthropy; it is a public relations exercise designed to elevate her image while doing precious little for the genuinely underserved.
 
 The Berklee in Nigeria Travel Costs Kenya Cannot Afford Let's be brutally honest: calling a program "free" when participants are expected to fund their own international travel and accommodation is a grotesque deception. The Tiwa Savage Intensive Music Program, set for April 23-26, 2026, in Lagos, Nigeria, claims to offer world-class training without tuition fees. What an absolute joke. For aspiring musicians in Kenya, for instance, the costs associated with flights, visas, and a four-day stay in Lagos are monumental. These are not hidden costs; they are insurmountable barriers to entry for the very individuals Tiwa Savage purports to uplift. This is not about access; it's about privilege thinly veiled as opportunity.
@@ -28,3 +33,18 @@ The True Cost: Crushed Dreams, Not Just Naira The "Tiwa Savage Berklee Intensive
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

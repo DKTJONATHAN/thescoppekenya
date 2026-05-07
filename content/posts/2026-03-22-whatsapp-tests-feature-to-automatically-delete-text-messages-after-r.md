@@ -1,7 +1,8 @@
 ---
 title: "WhatsApp tests feature to automatically delete text messages after reading"
 slug: "whatsapp-tests-feature-to-automatically-delete-text-messages-after-r"
-description: "WhatsApp tests a new 'After Reading' feature to automatically delete text messages from both sender and receiver chats 15 minutes after they are opened."
+description: "WhatsApp tests feature to automatically delete text messages: WhatsApp tests a new 'After Reading' feature to automatically delete text messages from both"
+excerpt: "WhatsApp is reportedly testing a new privacy feature, 'After Reading,' designed to automatically delete text messages from both sender and r"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/qL83qnCF/b94a865799f9.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["whatsapp-after-reading", "whatsapp-android-beta", "ephemeral-messaging", "self-destructing-messages", "data-privacy"]
 canonical: "https://zandani.co.ke/article/whatsapp-tests-feature-to-automatically-delete-text-messages-after-r"
 date: "2026-03-22T13:55:39Z"
-focusKeyword: "WhatsApp tests feature to automatically delete text messages"
 dateModified: "2026-03-22T13:55:39Z"
+focusKeyword: "WhatsApp tests feature to automatically delete text messages"
+schema: "NewsArticle"
 ---
+
+WhatsApp tests feature to automatically delete text messages is central to this update for Kenyan readers.
+
 WhatsApp is reportedly testing a new privacy feature, "After Reading," designed to automatically delete text messages from both sender and receiver chats shortly after they are read. This development, currently in beta for Android, aims to enhance user control over sensitive information exchange in 2026. The tool represents an evolution in ephemeral messaging.
 
 WhatsApp Enhances Message Privacy The new "After Reading" tool initiates a 15-minute countdown once a recipient opens a message, leading to its automatic deletion from both parties' chat histories. If the message remains unopened, it will vanish after 24 hours. This system ensures messages are temporary, significantly limiting the retention of sensitive data in chat records.
@@ -26,3 +31,18 @@ Ongoing Development and Future Rollout The feature was identified by a prominent
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

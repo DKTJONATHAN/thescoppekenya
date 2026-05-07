@@ -1,7 +1,8 @@
 ---
 title: "Treasury approves Ksh3.45 billion Eldoret solar power and street lighting project"
 slug: "treasury-approves-ksh3-45-billion-eldoret-solar-power-and-street-lig"
-description: "Treasury approves the Ksh 3.45 billion Eldoret solar power and street lighting project, advancing the city's transition to sustainable energy solutions."
+description: "Treasury approves Ksh345 billion Eldoret solar power and str: Treasury approves the Ksh 3.45 billion Eldoret solar power and street lighting project, advancing"
+excerpt: "The National Treasury has approved the Ksh 3.45 billion Eldoret Power Plant and solar powered street lighting project as of April 10, 2026."
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/fYfGTSq1/212753ea2273.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["eldoret-solar-power-project", "eldoret-city", "renewable-energy-transition", "solar-powered-street-lighting", "public-private-partnership"]
 canonical: "https://zandani.co.ke/article/treasury-approves-ksh3-45-billion-eldoret-solar-power-and-street-lig"
 date: "2026-04-20T07:25:08Z"
-focusKeyword: "Treasury approves Ksh345 billion Eldoret solar power and str"
 dateModified: "2026-04-20T07:25:08Z"
+focusKeyword: "Treasury approves Ksh345 billion Eldoret solar power and str"
+schema: "NewsArticle"
 ---
+
+Treasury approves Ksh345 billion Eldoret solar power and str is central to this update for Kenyan readers.
+
 The National Treasury has approved the Ksh 3.45 billion Eldoret Power Plant and solar-powered street lighting project as of April 10, 2026. This pivotal decision enables the project to proceed to contract negotiations under a public-private partnership model, significantly advancing the modernization of Eldoret City.
 
 Eldoret's Renewable Energy Transition The approval, which followed intense stages including initial Project Information Pack (PIP) clearance in November 2025, marks a critical step towards transitioning Eldoret City's public lighting network to sustainable energy. This initiative aims to bolster reliability, enhance safety, and improve energy efficiency across essential public spaces, aligning Eldoret with contemporary urban development standards.
@@ -22,3 +27,18 @@ Economic Growth and Enhanced Security The street lighting project arrives nearly
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

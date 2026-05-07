@@ -1,15 +1,21 @@
 ---
 title: "'The View' and 'Survivor' Alum Elisabeth Hasselbeck Slams Frat Hazing: A Mother's Outcry"
 slug: "the-view-survivor-alum-elisabeth-hasselbeck-slams-frat-hazing"
+description: "The View and Survivor Alum Elisabeth Hasselbeck Slams Frat H: 'The View' and 'Survivor' alum Elisabeth Hasselbeck slams frat hazing on Instagram, expressing"
 excerpt: "'The View' and 'Survivor' alum Elisabeth Hasselbeck slams frat hazing on Instagram, expressing concern for youth amid her announced return to the talk show."
 author: "Mutheu Ann"
 image: "https://ew.com/thmb/BYM2n6OAwKO-DYd-OpJkdN0snFA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Elisabeth-Hasselbeck-The-View-022726-e2a271723402458d958fd2d3d3ddf715.jpg"
 category: "Entertainment"
+tags: ["Elisabeth Hasselbeck", "The View", "Survivor", "frat hazing", "college campuses", "celebrity news", "entertainment", "Joy Behar"]
+canonical: "https://zandani.co.ke/article/the-view-survivor-alum-elisabeth-hasselbeck-slams-frat-hazing"
 date: "2026-02-28"
-tags: ["Elisabeth Hasselbeck", "The View", "Survivor", "frat hazing", "college campuses", "celebrity news", "entertainment", "Joy Behar", "Carrie Underwood", "Rosie O'Donnell"]
-focusKeyword: "The View and Survivor Alum Elisabeth Hasselbeck Slams Frat H"
 dateModified: "2026-02-28"
+focusKeyword: "The View and Survivor Alum Elisabeth Hasselbeck Slams Frat H"
+schema: "NewsArticle"
 ---
+
+The View and Survivor Alum Elisabeth Hasselbeck Slams Frat H is central to this update for Kenyan readers.
+
 ## Elisabeth Hasselbeck Slams Frat Hazing Elisabeth Hasselbeck, known for her time on "The View" and "Survivor," has passionately spoken out against college fraternity hazing, urging society to protect its youth from harmful practices. Her strong comments come as she prepares for a guest co-hosting stint on the popular talk show. The former "Survivor" contestant and conservative commentator recently took to her Instagram Story, sharing a report on alleged hazing incidents across U.S. college campuses. Hasselbeck questioned the societal acceptance of hazing, writing, "Y’all. Why are we okay with hazing as a society? Why are we torturing our youth? To belong? For friends?". She continued with a powerful plea, stating, "Stop the madness. Now. We are to raise leaders not terrorists". Her outspoken stance highlights a critical conversation on youth safety and the pressures of belonging.
 
 The View Return and Past Controversies Hasselbeck's return to "The View" as a guest co-host has been a significant talking point in entertainment circles, especially given her history with the show. She is among a rotating panel of conservative voices filling in for Alyssa Farah Griffin, who is currently on maternity leave. While a specific date for her return is yet to be announced, the news has generated considerable buzz. This temporary comeback follows previous public clashes between Hasselbeck and the show, particularly with long-standing panelist Joy Behar. In January 2025, Hasselbeck publicly criticized Behar on X (formerly Twitter) after Behar's comments about American Idol winner Carrie Underwood's performance at a presidential inauguration. Hasselbeck defended Underwood, accusing Behar of "calling Carrie Underwood Un-American," though Behar never used that specific phrase. These past tensions are certainly adding an extra layer of anticipation to her upcoming appearances. Beyond the Behar incident, Hasselbeck was also at the centre of another "View" controversy last year. Former co-host Rosie O'Donnell alleged that their iconic on-air clash in 2007 was a "setup" orchestrated by a producer. Hasselbeck responded to O'Donnell's claims with tearful video messages, urging her to "stop the madness." Such dramatic history ensures that Hasselbeck's return to the "Hot Topics" table will be anything but dull.
@@ -18,3 +24,18 @@ Survivor Alum's Motherly Perspective on Hazing As a mother of three children, wh
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

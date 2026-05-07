@@ -1,7 +1,8 @@
 ---
 title: "Funke Akindele snubs Toyin Abraham at film premiere"
 slug: "funke-akindele-snubs-toyin-abraham-at-film-premiere"
-description: "Funke Akindele publicly snubs Toyin Abraham at a Lagos film premiere, reigniting their long-standing Nollywood rivalry & sparking industry debate."
+description: "Funke Akindele snubs Toyin Abraham at film premiere: Funke Akindele publicly snubs Toyin Abraham at a Lagos film premiere, reigniting their long-standing"
+excerpt: "Nollywood stars Funke Akindele and Toyin Abraham dominated industry conversations following a public incident at Iyabo Ojo's 'The Return of"
 author: "Amara Ndlovu"
 author_url: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/pBm9Fj5R/42e8fcb5a979.webp"
@@ -9,9 +10,13 @@ category: "Entertainment"
 tags: ["funke-akindele", "toyin-abraham", "nollywood-celebrity-drama", "film-premiere-snub", "nollywood-rivalry"]
 canonical: "https://zandani.co.ke/article/funke-akindele-snubs-toyin-abraham-at-film-premiere"
 date: "2026-03-30T15:49:52Z"
-focusKeyword: "Funke Akindele snubs Toyin Abraham at film premiere"
 dateModified: "2026-03-30T15:49:52Z"
+focusKeyword: "Funke Akindele snubs Toyin Abraham at film premiere"
+schema: "NewsArticle"
 ---
+
+Funke Akindele snubs Toyin Abraham at film premiere is central to this update for Kenyan readers.
+
 Nollywood stars Funke Akindele and Toyin Abraham dominated industry conversations following a public incident at Iyabo Ojo's "The Return of Arinzo" premiere in Lagos on Sunday night, March 29, 2026. Akindele appeared to ignore Abraham's greeting in full view of cameras and guests, reigniting their long-standing rivalry ahead of the film's April 3 release.
 
 Nollywood Fallout: Akindele and Abraham's Renewed Tensions
@@ -24,3 +29,18 @@ Industry and Public Reactions Online reactions to the latest incident have been 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

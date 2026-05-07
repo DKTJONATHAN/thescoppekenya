@@ -1,7 +1,8 @@
 ---
 title: "President Ruto announces World Bank funded road linking Salgaa and Kilgoris"
 slug: "president-ruto-announces-world-bank-funded-road-linking-salgaa-and-k"
-description: "President Ruto announces construction of a World Bank-funded Class B road linking Salgaa to Kilgoris, a project connecting Nakuru and Narok counties."
+description: "President Ruto announces World Bank funded road linking Salg: President Ruto announces construction of a World Bank-funded Class B road linking Salgaa to"
+excerpt: "President William Ruto today announced plans for a World Bank funded Class B road connecting Salgaa in Nakuru County to Kilgoris in Narok Co"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/LhbzNyhP/5e9122e25d1e.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["william-ruto", "salgaa-kilgoris-road", "world-bank-funding", "infrastructure-development", "narok-nakuru-connector"]
 canonical: "https://zandani.co.ke/article/president-ruto-announces-world-bank-funded-road-linking-salgaa-and-k"
 date: "2026-04-05T14:55:55Z"
-focusKeyword: "President Ruto announces World Bank funded road linking Salg"
 dateModified: "2026-04-05T14:55:55Z"
+focusKeyword: "President Ruto announces World Bank funded road linking Salg"
+schema: "NewsArticle"
 ---
+
+President Ruto announces World Bank funded road linking Salg is central to this update for Kenyan readers.
+
 President William Ruto today announced plans for a World Bank-funded Class B road connecting Salgaa in Nakuru County to Kilgoris in Narok County, a project he affirmed would finally materialize after decades of unfulfilled promises, during a church service in Kilgoris.
 
 World Bank Backs Key Infrastructure Project President Ruto revealed the upcoming construction of a 140 to 160-kilometre Class B road, an inter-county connector spanning Narok and Nakuru counties. The route will encompass Marua, Enkaka, Enosail, Kilgoris, and Cheptuka in Narok County, extending to Salgaa in Nakuru County. As a Class B road, it is designated to link important centres, including county headquarters and major trading hubs, integrating into the national road network. The Head of State confirmed engagement with the World Bank to secure the necessary funding for this extensive project.
@@ -22,3 +27,18 @@ Funding and National Infrastructure Strategy The announcement of World Bank back
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

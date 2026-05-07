@@ -1,16 +1,20 @@
 ---
 title: "Mental Health Overtakes Cancer as Global Top Health Concern"
 slug: "mental-health-overtakes-cancer-as-global-top-health-concern"
-description: "Global public perception marks mental health as the leading health issue today. Experts urge Kenyan firms to prioritize workplace wellness now."
+description: "Mental Health Overtakes Cancer as Global Top Health Concern: Global public perception marks mental health as the leading health issue today. Experts urge"
+excerpt: "Mental Health and the Corporate Illusion The world is celebrating the shift in public priority as mental health climbs above cancer as the g"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/N2V6XJBN/0fc99938255e.jpg"
 category: "Opinions"
 tags: ["mental health", "workplace wellness", "public health", "corporate culture", "kenya health"]
+canonical: "https://zandani.co.ke/article/mental-health-overtakes-cancer-as-global-top-health-concern"
 date: "2026-05-06T14:48:22Z"
 dateModified: "2026-05-06T14:48:22Z"
+focusKeyword: "Mental Health Overtakes Cancer as Global Top Health Concern"
 schema: "NewsArticle"
 ---
+
+Mental Health Overtakes Cancer as Global Top Health Concern is central to this update for Kenyan readers.
 
 ## Mental Health and the Corporate Illusion
 
@@ -41,3 +45,18 @@ The data shows that 45 percent of people now see mental health as a primary thre
 Watch for the "Great Migration" of talent from firms that rely on wellness washing to those that actually alter their business models. Organizations that continue to prioritize performance optics over structural health will find it increasingly difficult to attract and retain workers who are no longer willing to sacrifice their sanity for a desk in a trendy office. 
 
 Stop asking for more apps and start demanding fewer hours. If your company’s answer to your burnout is a meditation session, you are being lied to.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

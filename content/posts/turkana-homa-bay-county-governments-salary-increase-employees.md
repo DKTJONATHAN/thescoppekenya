@@ -1,15 +1,21 @@
 ---
 title: "Turkana, Homa Bay County Governments Announce Salary Increase for Employees"
 slug: "turkana-homa-bay-county-governments-salary-increase-employees"
+description: "Turkana Homa Bay County Governments Announce Salary Increase: Turkana and Homa Bay County Governments have announced a salary increase for employees, effective"
 excerpt: "Turkana and Homa Bay County Governments have announced a salary increase for employees, effective February 2026, implementing the SRC's 3rd Salary Review."
 author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/workers-1.jpg?itok=O3gXA_2I"
 category: "Politics"
-date: "2026-02-25"
 tags: ["Kenya", "Turkana County", "Homa Bay County", "salary increase", "county government", "employees", "SRC", "public service"]
-focusKeyword: "Turkana Homa Bay County Governments Announce Salary Increase"
+canonical: "https://zandani.co.ke/article/turkana-homa-bay-county-governments-salary-increase-employees"
+date: "2026-02-25"
 dateModified: "2026-02-25"
+focusKeyword: "Turkana Homa Bay County Governments Announce Salary Increase"
+schema: "NewsArticle"
 ---
+
+Turkana Homa Bay County Governments Announce Salary Increase is central to this update for Kenyan readers.
+
 ## Turkana, Homa Bay County Governments Implement Salary Increase for Employees The county governments of Turkana and Homa Bay have confirmed the implementation of a salary increase for their employees, effective with the February 2026 payroll. This adjustment aligns with the Salaries and Remuneration Commission's (SRC) 3rd Salary Review, offering long-awaited relief to thousands of county staff. The announcement marks a significant development for **county government employees** in both Turkana and Homa Bay. The revised pay structures, reflecting the 3rd Salary Review by the Salaries and Remuneration Commission (SRC), are now visible in the February 2026 payslips. This move follows months of anticipation by workers across various county departments. While international spectacles like the Women's World Cup 2023 capture global attention, policy decisions such as this have a direct and tangible impact on the daily lives of public servants, underscoring the importance of local governance.
 
 Details of the Salary Increase for Employees in Turkana and Homa Bay In Homa Bay County, Bernard Muok, the County Head of Public Service, issued a notice confirming that the February 2026 payslips reflect the new salary structure. Muok emphasised that these adjustments are part of approved national government policy directives aimed at enhancing the earnings of **county government workers**. Employees have been advised to meticulously review their February payslips and seek clarification from the Directorate of Human Resource Management and Development if necessary. Bernard Muok was nominated to his current position as county secretary and head of public service in October 2022. Similarly, the Turkana County Government communicated that the approved salary review for the 2024/2025 financial year has now been effected, with the revised pay structure taking effect from February 2026. An internal memo from the Office of the County Secretary reiterated the county's commitment to adhering to SRC circulars and broader public service remuneration guidelines, alongside prioritising staff welfare.
@@ -20,3 +26,18 @@ Broader Implications for County Government Employees and Fiscal Sustainability T
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

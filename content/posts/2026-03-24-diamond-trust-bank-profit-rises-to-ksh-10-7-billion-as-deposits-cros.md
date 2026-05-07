@@ -1,13 +1,21 @@
 ---
 title: "Diamond Trust Bank profit rises to KSh 10.7 billion as deposits cross half-trillion mark"
 slug: "diamond-trust-bank-profit-rises-to-ksh-10-7-billion-as-deposits-cros"
+description: "Diamond Trust Bank profit rises to KSh 107 billion as deposi: Diamond Trust Bank Records Significant Profit Growth Diamond Trust Bank Kenya reported a net"
+excerpt: "Diamond Trust Bank Records Significant Profit Growth Diamond Trust Bank Kenya reported a net profit of KSh 10.7 billion for the year ended D"
 author: "Grace Mkamburi"
 image: "https://assets.kenyanwallstreet.com/assets/9cbae759-f3b9-4d24-81b9-2c681910e967.jpeg"
 category: "Business"
+tags: ["diamond trust bank profit rises to ksh 10 7 billion as deposits cros", "business", "kenya news"]
+canonical: "https://zandani.co.ke/article/diamond-trust-bank-profit-rises-to-ksh-10-7-billion-as-deposits-cros"
 date: "2026-03-24T18:41:45Z"
-focusKeyword: "Diamond Trust Bank profit rises to KSh 107 billion as deposi"
 dateModified: "2026-03-24T18:41:45Z"
+focusKeyword: "Diamond Trust Bank profit rises to KSh 107 billion as deposi"
+schema: "NewsArticle"
 ---
+
+Diamond Trust Bank profit rises to KSh 107 billion as deposi is central to this update for Kenyan readers.
+
 ## Diamond Trust Bank Records Significant Profit Growth Diamond Trust Bank Kenya reported a net profit of KSh 10.7 billion for the year ended December 31, 2025, a 21.4% increase. This strong performance, its best since 2021, was driven by effective cost management and customer growth, with deposits surpassing the half-trillion mark.
 
 Sustained Profitability and Expansion DTB's net profit reached KSh 10.7 billion for the 2025 financial year, reflecting a 21.4% rise from KSh 8.8 billion in the prior year. Group CEO Nasim Devji attributed this robust performance to disciplined cost management and a significant expansion of the customer franchise, which grew to 4.5 million across East Africa from 3.1 million a year earlier. This underscores the bank's focus on delivering quality growth and enhancing operational efficiency. Customer deposits notably surpassed KSh 500 billion, closing at KSh 509.1 billion, a substantial increase from KSh 4.8 billion historically.
@@ -20,3 +28,18 @@ Historical Performance and Shareholder Returns DTB's earnings trajectory demonst
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

@@ -1,7 +1,8 @@
 ---
 title: "Kibra residents protest short eviction notice and demand more compensation"
 slug: "kibra-residents-protest-short-eviction-notice-and-demand-more-compen"
-description: "Kibra residents protest short 13-day eviction notice & Ksh60,000 compensation for urban upgrading project, demanding fairer terms."
+description: "Kibra residents protest short eviction notice and demand mor: Kibra residents protest short 13-day eviction notice & Ksh60,000 compensation for urban upgrading"
+excerpt: "Residents in Nairobi's Kibra Soweto Zones C and D protested on Saturday, April 11, 2026, against a government directive to vacate their home"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/W47jBqqf/3bce633c6f49.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["kibra-soweto-evictions", "nairobi-urban-upgrading", "kibra-residents-protest", "affordable-housing-compensation", "urban-renewal-projects"]
 canonical: "https://zandani.co.ke/article/kibra-residents-protest-short-eviction-notice-and-demand-more-compen"
 date: "2026-04-11T20:52:20Z"
-focusKeyword: "Kibra residents protest short eviction notice and demand mor"
 dateModified: "2026-04-11T20:52:20Z"
+focusKeyword: "Kibra residents protest short eviction notice and demand mor"
+schema: "NewsArticle"
 ---
+
+Kibra residents protest short eviction notice and demand mor is central to this update for Kenyan readers.
+
 Residents in Nairobi's Kibra Soweto Zones C and D protested on Saturday, April 11, 2026, against a government directive to vacate their homes within 13 days for an urban upgrading project. They cited the short timeline and the inadequacy of the Ksh60,000 compensation as impractical and unfair, disrupting their livelihoods.
 
 Kibra Residents Protest Eviction Directive
@@ -22,3 +27,18 @@ Calls for Increased Compensation and Consultation Concerns over the adequacy of 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

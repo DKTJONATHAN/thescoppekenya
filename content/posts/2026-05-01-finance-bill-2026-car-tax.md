@@ -1,16 +1,19 @@
 ---
 title: "Inside Finance Bill 2026 Plan to Tax Classic Cars 50%"
 slug: "finance-bill-2026-car-tax"
+description: "Finance Bill 2026 car tax targets luxury vintage vehicles worth over 10 million with a new 50 percent excise duty for revenue. Read the full story."
+excerpt: "Finance Bill 2026 car tax targets luxury vintage vehicles worth over 10 million with a new 50 percent excise duty for revenue. Read the full story."
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/qYZ9tRV0/fe62a08997b5.jpg"
 category: "News"
-date: "2026-05-01T15:35:31Z"
-description: "Finance Bill 2026 car tax targets luxury vintage vehicles worth over 10 million with a new 50 percent excise duty for revenue. Read the full story."
-excerpt: "Finance Bill 2026 car tax targets luxury vintage vehicles worth over 10 million with a new 50 percent excise duty for revenue. Read the full story."
 tags: ["Kenya News", "Finance Bill 2026", "National Treasury", "Luxury Car Tax", "Nairobi"]
-focusKeyword: "Finance Bill 2026 car tax"
+canonical: "https://zandani.co.ke/article/finance-bill-2026-car-tax"
+date: "2026-05-01T15:35:31Z"
 dateModified: "2026-05-01T15:35:31Z"
+focusKeyword: "Finance Bill 2026 car tax"
+schema: "NewsArticle"
 ---
+
 ## Finance Bill 2026 Car Tax Targets Classic Vehicles
 
 The National Treasury on Thursday, April 30, published the Finance Bill 2026, proposing a 50 percent excise duty on high-end classic cars in Kenya. This measure, introduced by President William Ruto's administration, aims to boost government revenue by taxing wealthy car owners and dealers, with new provisions expected to take effect from July 1, 2026.
@@ -29,3 +32,18 @@ This is not the first instance of the government proposing increased taxation on
 
 Meanwhile, the Kenya Meteorological Department forecasts heavy rains across five regions.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

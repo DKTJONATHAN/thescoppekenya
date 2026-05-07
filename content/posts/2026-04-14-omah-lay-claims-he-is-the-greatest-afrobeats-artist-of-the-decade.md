@@ -2,6 +2,7 @@
 title: "Omah Lay claims he is the greatest Afrobeats artist of the decade"
 slug: "omah-lay-claims-he-is-the-greatest-afrobeats-artist-of-the-decade"
 description: "Omah Lay claims he is the greatest Afrobeats artist of the decade as he releases his anticipated sophomore album, Clarity of Mind, on April 3, 2026."
+excerpt: "Nigerian artist Omah Lay has unequivocally declared himself the greatest Afrobeats artist of this decade, a bold assertion amplified by the"
 author: "Amara Ndlovu"
 author_url: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/XrqYjdNc/5c2f1e4d236f.webp"
@@ -9,9 +10,13 @@ category: "Entertainment"
 tags: ["omah-lay", "afrobeats-music", "nigerian-music-industry", "afrobeats-stars"]
 canonical: "https://zandani.co.ke/article/omah-lay-claims-he-is-the-greatest-afrobeats-artist-of-the-decade"
 date: "2026-04-14T19:50:11Z"
-focusKeyword: "Omah Lay claims he is the greatest Afrobeats artist of the d"
 dateModified: "2026-04-14T19:50:11Z"
+focusKeyword: "Omah Lay claims he is the greatest Afrobeats artist of the d"
+schema: "NewsArticle"
 ---
+
+Omah Lay claims he is the greatest Afrobeats artist of the d is central to this update for Kenyan readers.
+
 Nigerian artist Omah Lay has unequivocally declared himself the greatest Afrobeats artist of this decade, a bold assertion amplified by the April 3, 2026 release of his anticipated sophomore album, "Clarity of Mind." His confident pronouncements position him distinctively among his contemporaries.
 
 Omah Lay Claims Greatest Afrobeats Artist of the Decade Title Omah Lay has consistently staked his claim as the defining voice of his generation in Afrobeats. In a recent interview with Capital XTRA, he stated, "I am the greatest Afrobeats artist of the decade, I am the greatest." He further elaborated that while metrics like "numbers, personality, and the level of fame" might not immediately bring him to mind, "when it comes to the art itself, I am the greatest."
@@ -26,3 +31,18 @@ Addressing Afrobeats' Creative Standards Omah Lay has framed "Clarity of Mind" a
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

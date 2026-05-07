@@ -1,7 +1,8 @@
 ---
 title: "Ministry of Education finalises competency-based curriculum framework for universities"
 slug: "ministry-of-education-finalises-competency-based-curriculum-framewor"
-description: "Ministry of Education finalises a competency-based education framework for universities to be adopted by 2026 before the first CBC cohort's entry in 2029."
+description: "Ministry of Education finalises competency-based curriculum: Ministry of Education finalises a competency-based education framework for universities to be"
+excerpt: "By Celestine Nzioka The Ministry of Education, in collaboration with the Commission for University Education (CUE), is finalizing a new comp"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/84651Fg3/4b597c3c63bd.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["competency-based-curriculum-framework", "commission-for-university-education", "dr-carol-hunja", "university-education", "higher-education-reform"]
 canonical: "https://zandani.co.ke/article/ministry-of-education-finalises-competency-based-curriculum-framewor"
 date: "2026-03-20T13:36:00Z"
-focusKeyword: "Ministry of Education finalises competency-based curriculum"
 dateModified: "2026-03-20T13:36:00Z"
+focusKeyword: "Ministry of Education finalises competency-based curriculum"
+schema: "NewsArticle"
 ---
+
+Ministry of Education finalises competency-based curriculum is central to this update for Kenyan readers.
+
 By Celestine Nzioka The Ministry of Education, in collaboration with the Commission for University Education (CUE), is finalizing a new competency-based education framework for universities. Institutions across the nation are expected to adopt this framework by the end of 2026, ahead of the first Competency-Based Curriculum (CBC) cohort's entry into higher education in 2029.
 
 University Education Overhaul Underway Principal Secretary for Higher Education Dr. Carol Hunja confirmed that a dedicated team of experts is developing the framework. This initiative marks a significant departure from the long-standing knowledge-heavy 8-4-4 system, transitioning towards a model emphasizing practical skills and learner-centred environments. The framework will guide universities in programme design, lecturer retraining, and student assessment.
@@ -24,3 +29,18 @@ CUE's Coordinating Role The Commission for University Education (CUE) is coordin
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

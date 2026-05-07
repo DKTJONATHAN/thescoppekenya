@@ -1,7 +1,8 @@
 ---
 title: "Nairobi Water reports supply interruption following Kabete-Kilimani pipeline burst"
 slug: "nairobi-water-reports-supply-interruption-following-kabete-kilimani-"
-description: "Nairobi Water reports a supply interruption across city estates, including State House, following a Kabete-Kilimani pipeline burst. Repairs are underway."
+description: "Nairobi Water reports supply interruption following Kabete-K: Nairobi Water reports a supply interruption across city estates, including State House, following"
+excerpt: "Nairobi City Water and Sewerage Company (NCWSC) announced a temporary water supply interruption today, Saturday, March 21, 2026, across seve"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/mrgJpkYy/1f85d2de1636.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["nairobi-water-supply-interruption", "kabete-kilimani-pipeline", "nairobi-city-water-and-sewerage-company", "state-house-nairobi", "water-infrastructure"]
 canonical: "https://zandani.co.ke/article/nairobi-water-reports-supply-interruption-following-kabete-kilimani-"
 date: "2026-03-21T13:12:54Z"
-focusKeyword: "Nairobi Water reports supply interruption following Kabete-K"
 dateModified: "2026-03-21T13:12:54Z"
+focusKeyword: "Nairobi Water reports supply interruption following Kabete-K"
+schema: "NewsArticle"
 ---
+
+Nairobi Water reports supply interruption following Kabete-K is central to this update for Kenyan readers.
+
 Nairobi City Water and Sewerage Company (NCWSC) announced a temporary water supply interruption today, Saturday, March 21, 2026, across several city estates, including the President's official residence. The disruption follows a major pipeline burst on the Kabete-Kilimani transmission line. Repairs are currently underway to restore services.
 
 Pipeline Burst Disrupts Nairobi Water Supply
@@ -24,3 +29,18 @@ Resident Advisory and Emergency Services Residents affected by the outage are ur
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

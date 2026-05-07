@@ -1,18 +1,19 @@
 ---
 title: "How Kenya's Passport Issuance Hits New Low Amid 50-Page Option Removal"
 slug: "kenya-passport-issuance-low"
+description: "Kenya passport issuance: Kenya's passport issuance declined sharply, hitting a new low after the quiet removal of the 50-page option on eCitizen. Travelers are"
+excerpt: "Kenya's passport issuance declined sharply, hitting a new low after the quiet removal of the 50-page option on..."
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/dsbC8BHY/b6efe71f1351.jpg"
 category: "News"
-date: "2026-05-04T12:31:17Z"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
-dateModified: "2026-05-04T12:31:17Z"
-schema: "NewsArticle"
-description: "Kenya's passport issuance declined sharply, hitting a new low after the quiet removal of the 50-page option on eCitizen. Travelers are affected by rising c"
-excerpt: "Kenya's passport issuance declined sharply, hitting a new low after the quiet removal of the 50-page option on..."
 tags: ["Kenya News", "Passport Issuance", "eCitizen Kenya", "Travel Documents", "Kenyan Economy", "Kenya"]
+canonical: "https://zandani.co.ke/article/kenya-passport-issuance-low"
+date: "2026-05-04T12:31:17Z"
+dateModified: "2026-05-04T12:31:17Z"
 focusKeyword: "Kenya passport issuance"
+schema: "NewsArticle"
 ---
+
 ## Kenya Passport Issuance Drops to New Low
 Kenya's government recorded a sharp 36.7 percent drop in passport issuance for 2025, reaching a four-year low of 393,567. This decline, attributed to the removal of affordable booklet options and broader economic pressures, impacts citizens seeking travel documents amidst rising costs in the country.
 
@@ -27,3 +28,18 @@ Further exacerbating affordability concerns, the 50-page booklet was quietly wit
 ### Kenya's Passport Strength Improves Globally
 Despite the local setbacks in Kenya passport issuance and accessibility, the nation's passport strength has seen an improvement on the global stage. The latest Henley & Partners report, published in March 2026, shows Kenya climbing from position 69 to 64 worldwide. Regionally, Kenya now ranks 10th in Africa, behind countries such as South Africa, Morocco, Seychelles, Botswana, Namibia, Lesotho, Malawi, Eswatini, and Mauritius. Concurrently, Kenya also reported strong growth in air travel, with a significant rise in passenger numbers throughout 2025.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

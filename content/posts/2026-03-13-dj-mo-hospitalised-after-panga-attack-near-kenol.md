@@ -1,13 +1,19 @@
 ---
 title: "DJ Mo Hospitalised After Panga Attack Near Kenol"
 slug: "dj-mo-hospitalised-after-panga-attack-near-kenol"
+description: "Gospel DJ Mo Hospitalised After Panga Attack Near Kenol Gospel DJ Samuel Muraya, widely known as DJ Mo, is currently recovering in hospital Read key facts, what"
+excerpt: "Gospel DJ Mo Hospitalised After Panga Attack Near Kenol Gospel DJ Samuel Muraya, widely known as DJ Mo, is currently recovering in hospital"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/wFV4nV1m/e03253146670.jpg"
 category: "News"
+tags: ["dj mo hospitalised after panga attack near kenol", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/dj-mo-hospitalised-after-panga-attack-near-kenol"
 date: "2026-03-13T15:04:35Z"
-focusKeyword: "DJ Mo Hospitalised After Panga Attack Near Kenol"
 dateModified: "2026-03-13T15:04:35Z"
+focusKeyword: "DJ Mo Hospitalised After Panga Attack Near Kenol"
+schema: "NewsArticle"
 ---
+
 ## Gospel DJ Mo Hospitalised After Panga Attack Near Kenol Gospel DJ Samuel Muraya, widely known as DJ Mo, is currently recovering in hospital after a violent panga attack by suspected robbers near Kenol today, March 13, 2026. His wife, gospel musician Linet Munyali (Size 8 Reborn), confirmed the incident, expressing gratitude that his life was spared despite sustaining injuries.
 
 Incident Details The attack occurred today, March 13, 2026, when DJ Mo was reportedly travelling through the busy Kenol junction in Murang'a County. Assailants, armed with pangas, targeted his valuables, managing to steal his phone before fleeing. The gospel entertainer sustained injuries to his arm, which, according to shared videos, had deep cuts. Za Ndani has not confirmed whether he sustained further physical injuries. Linet Munyali, known as Size 8 Reborn, shared an emotional update online, confirming the ordeal and thanking God for her husband's survival. "Today, I post to give God glory for safeguarding my husband's life, DJ Mo. He was in Kenol when thieves attacked him with a panga and took his phone," she stated. Despite the frightening encounter, Size 8 expressed profound gratitude that Muraya's life had been spared, writing, "Dear God, thank you for life."
@@ -18,3 +24,18 @@ Community Response Following news of the attack, numerous individuals from the g
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

@@ -1,13 +1,21 @@
 ---
 title: "Kenya Power asks customers to grant access for new digital meter reading system"
 slug: "kenya-power-asks-customers-to-grant-access-for-new-digital-meter-rea"
+description: "Kenya Power asks customers to grant access for new digital m: Kenya Power Implements Digital Meter Reading System Kenya Power is rolling out a nationwide"
+excerpt: "Kenya Power Implements Digital Meter Reading System Kenya Power is rolling out a nationwide Optical Character Recognition (OCR) system, repl"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/Dgv8JVZF/d48314f40e7d.jpg"
 category: "News"
+tags: ["kenya power asks customers to grant access for new digital meter rea", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/kenya-power-asks-customers-to-grant-access-for-new-digital-meter-rea"
 date: "2026-03-10T05:17:03Z"
-focusKeyword: "Kenya Power asks customers to grant access for new digital m"
 dateModified: "2026-03-10T05:17:03Z"
+focusKeyword: "Kenya Power asks customers to grant access for new digital m"
+schema: "NewsArticle"
 ---
+
+Kenya Power asks customers to grant access for new digital m is central to this update for Kenyan readers.
+
 ## Kenya Power Implements Digital Meter Reading System Kenya Power is rolling out a nationwide Optical Character Recognition (OCR) system, replacing manual electricity meter reading. The utility has appealed to customers to ensure access to premises and meter boxes, citing previous hindrances to accurate data capture. This digital transformation aims to enhance billing speed, accuracy, and consistency, crucial for millions of customers across the country.
 
 Enhancing Accuracy and Efficiency The new OCR system enables field teams to scan meter displays using mobile devices, a significant shift from manual data entry. Kenya Power emphasized that this technology improves billing accuracy and efficiency by directly capturing meter numbers and readings. The system reduces human error often associated with manual input during routine billing cycles, as it reads digits from both digital and traditional mechanical meters instantly. This upgrade is part of a broader digital transformation plan to enhance customer experience and operational efficiency, modernizing electricity supply and billing management nationwide.
@@ -18,3 +26,18 @@ Ensuring Customer Safety and Transparency Direct scanning of meters ensures imme
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

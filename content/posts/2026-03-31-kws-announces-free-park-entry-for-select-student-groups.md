@@ -1,17 +1,22 @@
 ---
 title: "KWS Announces Free Park Entry for Select Student Groups"
 slug: "kws-announces-free-park-entry-for-select-student-groups"
-description: "Kenya Wildlife Service offers schools 10 free entries for every 100 paying students visiting national parks from March 1 to June 30, 2026."
+description: "KWS Announces Free Park Entry for Select Student Groups: Kenya Wildlife Service offers schools 10 free entries for every 100 paying students visiting national"
+excerpt: "The Kenya Wildlife Service announced Tuesday, March 31, 2026, an initiative granting 10 pupils free entry for every 100 paying students on s"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/j1q2FGN/b96df55b136f.webp"
 category: "News"
-tags: []
+tags: ["kws announces free park entry for select student groups", "news", "kenya news"]
 canonical: "https://zandani.co.ke/article/kws-announces-free-park-entry-for-select-student-groups"
 date: "2026-03-31T12:02:59Z"
-focusKeyword: "KWS Announces Free Park Entry for Select Student Groups"
 dateModified: "2026-03-31T12:02:59Z"
+focusKeyword: "KWS Announces Free Park Entry for Select Student Groups"
+schema: "NewsArticle"
 ---
+
+KWS Announces Free Park Entry for Select Student Groups is central to this update for Kenyan readers.
+
 The Kenya Wildlife Service announced Tuesday, March 31, 2026, an initiative granting 10 pupils free entry for every 100 paying students on school trips to all national parks, game reserves, and sanctuaries. This offer, valid from March 1 to June 30, 2026, aims to promote local tourism among learners across the country.
 
 KWS Wild Scholars Initiative
@@ -24,3 +29,18 @@ Historical Context of KWS Promotions The current "Wild Scholars" offer follows a
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

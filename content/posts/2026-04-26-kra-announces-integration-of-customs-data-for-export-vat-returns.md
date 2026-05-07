@@ -1,7 +1,8 @@
 ---
 title: "KRA announces integration of customs data for export VAT returns"
 slug: "kra-announces-integration-of-customs-data-for-export-vat-returns"
-description: "KRA integrates customs data with the iTax platform to automate export VAT returns effective May 2026, aiming to streamline filings and enhance compliance."
+description: "KRA announces integration of customs data for export VAT ret: KRA integrates customs data with the iTax platform to automate export VAT returns effective May"
+excerpt: "The Kenya Revenue Authority (KRA) has announced significant changes to its tax systems, integrating customs data with the iTax platform for"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/fY0TJh9D/4663d5e41dd4.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["export-vat-returns", "kra", "customs-data-integration", "itax-platform", "tax-compliance"]
 canonical: "https://zandani.co.ke/article/kra-announces-integration-of-customs-data-for-export-vat-returns"
 date: "2026-04-26T11:57:38Z"
-focusKeyword: "KRA announces integration of customs data for export VAT ret"
 dateModified: "2026-04-26T11:57:38Z"
+focusKeyword: "KRA announces integration of customs data for export VAT ret"
+schema: "NewsArticle"
 ---
+
+KRA announces integration of customs data for export VAT ret is central to this update for Kenyan readers.
+
 The Kenya Revenue Authority (KRA) has announced significant changes to its tax systems, integrating customs data with the iTax platform for export Value Added Tax (VAT) returns. Effective May 2026, this move aims to streamline filings and enhance compliance for exporters and their agents across various trade zones.
 
 ## New Framework for Export VAT Returns
@@ -25,3 +30,18 @@ The new system introduces stricter compliance requirements for exporters and cle
 ### KRA's Broader Automation Initiative
 This initiative is a component of KRA's ongoing reforms aimed at deepening automation and integrating tax systems. The objective is to enhance efficiency, transparency, and overall revenue collection efforts. Za Ndani continues to track these developments alongside other crucial public interest stories, from economic shifts to cultural discussions such as the confirmed reunion of Shes Kemunto and Iyanii.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

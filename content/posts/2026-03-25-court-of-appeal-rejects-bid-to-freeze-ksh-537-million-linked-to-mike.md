@@ -1,7 +1,8 @@
 ---
 title: "Court of Appeal rejects bid to freeze Ksh 537 million linked to Mike Sonko"
 slug: "court-of-appeal-rejects-bid-to-freeze-ksh-537-million-linked-to-mike"
-description: "The Court of Appeal dismissed the ARA appeal to freeze Ksh 537 million linked to Mike Sonko, upholding a High Court ruling to unfreeze the assets."
+description: "Court of Appeal rejects bid to freeze Ksh 537 million linked: The Court of Appeal dismissed the ARA appeal to freeze Ksh 537 million linked to Mike Sonko,"
+excerpt: "The Court of Appeal today, Wednesday, March 25, 2026, dismissed an appeal by the Assets Recovery Agency (ARA) to continue freezing Ksh 537 m"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/B5q2sRpp/8806c3bc0057.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["mike-sonko", "assets-recovery-agency", "sonko-bank-accounts", "court-of-appeal-ruling", "asset-forfeiture"]
 canonical: "https://zandani.co.ke/article/court-of-appeal-rejects-bid-to-freeze-ksh-537-million-linked-to-mike"
 date: "2026-03-25T19:57:03Z"
-focusKeyword: "Court of Appeal rejects bid to freeze Ksh 537 million linked"
 dateModified: "2026-03-25T19:57:03Z"
+focusKeyword: "Court of Appeal rejects bid to freeze Ksh 537 million linked"
+schema: "NewsArticle"
 ---
+
+Court of Appeal rejects bid to freeze Ksh 537 million linked is central to this update for Kenyan readers.
+
 The Court of Appeal today, Wednesday, March 25, 2026, dismissed an appeal by the Assets Recovery Agency (ARA) to continue freezing Ksh 537 million in bank accounts associated with former Nairobi governor Mike Sonko. This decision upholds a High Court ruling, effectively unfreezing the assets after the appellate court found the agency's appeal to be without merit.
 
 Court of Appeal Dismisses ARA Bid The Court of Appeal, in its ruling today, Wednesday, March 25, 2026, dismissed the Assets Recovery Agency's (ARA) appeal, stating it lacked merit. This ruling upholds a High Court decision that ordered the ARA to unfreeze bank accounts linked to former Nairobi governor Mike Sonko. The agency had sought to continue freezing the assets, appealing an earlier High Court judgment that dismissed their case and declined to forfeit Sonko's assets to the state. The operations and legal mandates of agencies like the ARA are constantly under public and judicial review, much like the recent assurances from the KCAA regarding normal flight operations following a strike threat. [https://zandani.co.ke/article/kcaa-assures-normal-flight-operations-following-aviation-workers-str]
@@ -22,3 +27,18 @@ High Court's Previous Decision This appellate court ruling follows a High Court 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

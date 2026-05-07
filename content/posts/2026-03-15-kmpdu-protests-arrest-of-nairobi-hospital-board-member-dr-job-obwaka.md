@@ -1,7 +1,8 @@
 ---
 title: "KMPDU Protests Arrest of Nairobi Hospital Board Member Dr Job Obwaka"
 slug: "kmpdu-protests-arrest-of-nairobi-hospital-board-member-dr-job-obwaka"
-description: "KMPDU protests the arrest of Dr. Job Obwaka, an 83-year-old Nairobi Hospital board member accused of falsifying a register of members on March 14, 2026."
+description: "KMPDU Protests Arrest of Nairobi Hospital Board Member Dr Jo: KMPDU protests the arrest of Dr. Job Obwaka, an 83-year-old Nairobi Hospital board member accused"
+excerpt: "The Kenya Medical Practitioners and Dentists Union (KMPDU) has vehemently protested the arrest and detention of Dr. Job Obwaka, an 83 year o"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/ycyyHK2B/f58b98193dc6.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["kmpdu", "dr-job-obwaka", "nairobi-hospital", "healthcare-governance"]
 canonical: "https://zandani.co.ke/article/kmpdu-protests-arrest-of-nairobi-hospital-board-member-dr-job-obwaka"
 date: "2026-03-15T07:56:27Z"
-focusKeyword: "KMPDU Protests Arrest of Nairobi Hospital Board Member Dr Jo"
 dateModified: "2026-03-15T07:56:27Z"
+focusKeyword: "KMPDU Protests Arrest of Nairobi Hospital Board Member Dr Jo"
+schema: "NewsArticle"
 ---
+
+KMPDU Protests Arrest of Nairobi Hospital Board Member Dr Jo is central to this update for Kenyan readers.
+
 The Kenya Medical Practitioners and Dentists Union (KMPDU) has vehemently protested the arrest and detention of Dr. Job Obwaka, an 83-year-old obstetrician and Nairobi Hospital board member. He was apprehended on Saturday, March 14, 2026, at the NSSF Building, facing accusations of falsifying a register of members.
 
 Union Condemns Due Process Violations
@@ -26,3 +31,18 @@ KMPDU's Demands and Unanswered Questions The union has urgently demanded immedia
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

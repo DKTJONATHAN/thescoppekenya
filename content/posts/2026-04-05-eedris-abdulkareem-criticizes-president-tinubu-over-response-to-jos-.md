@@ -1,7 +1,8 @@
 ---
 title: "Eedris Abdulkareem criticizes President Tinubu over response to Jos attacks"
 slug: "eedris-abdulkareem-criticizes-president-tinubu-over-response-to-jos-"
-description: "Nigerian rapper Eedris Abdulkareem labels President Tinubu the 'worst president,' condemning his response to the Jos attacks at an event in Edo State."
+description: "Eedris Abdulkareem criticizes President Tinubu over response: Nigerian rapper Eedris Abdulkareem labels President Tinubu the 'worst president,' condemning his"
+excerpt: "Veteran Nigerian rapper and activist Eedris Abdulkareem recently intensified his criticism of President Bola Tinubu's handling of the Jos at"
 author: "Amara Ndlovu"
 author_url: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/PzQK8yqV/36138dc37916.webp"
@@ -9,9 +10,13 @@ category: "Entertainment"
 tags: ["eedris-abdulkareem", "president-bola-tinubu", "jos-killings", "plateau-state-attacks", "nigerian-celebrity-activism"]
 canonical: "https://zandani.co.ke/article/eedris-abdulkareem-criticizes-president-tinubu-over-response-to-jos-"
 date: "2026-04-05T13:32:49Z"
-focusKeyword: "Eedris Abdulkareem criticizes President Tinubu over response"
 dateModified: "2026-04-05T13:32:49Z"
+focusKeyword: "Eedris Abdulkareem criticizes President Tinubu over response"
+schema: "NewsArticle"
 ---
+
+Eedris Abdulkareem criticizes President Tinubu over response is central to this update for Kenyan readers.
+
 Veteran Nigerian rapper and activist Eedris Abdulkareem recently intensified his criticism of President Bola Tinubu's handling of the Jos attacks, publicly labeling him "the worst president." Speaking at an event in Edo State, Abdulkareem condemned the President's airport visit to victims, sparking widespread discussion across the continent.
 
 Rapper Eedris Abdulkareem Blasts President Tinubu Eedris Abdulkareem, known for his politically charged music, did not hold back in his recent address. "Tinubu is the worst president. Anyone supporting APC, may Nigeria happen to you," he declared, before directly criticizing the President's visit to Plateau State following recent massacres. Abdulkareem stated, "Commander-in-Chief, wey get all the security go Jos no fit enter town to go console those wey die from terrorist wey him and him government arrange us. Tinubu na biggest fraud. And anybody wey support am, may Nigeria happen to them." The crowd responded with resounding shouts of "amen." His pointed remarks, delivered to an applauding crowd, cut through the typical entertainment chatter that often surrounds cultural events like "Mummy 4: Fraser & Weisz Return, a Millennial Delusion", underscoring the rapper's long-standing commitment to political commentary.
@@ -22,3 +27,18 @@ The Jos Attacks and Presidential Response Abdulkareem's comments come amidst a r
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

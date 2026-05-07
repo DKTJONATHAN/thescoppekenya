@@ -2,6 +2,7 @@
 title: "KNUT Secretary General Collins Oyuu dismisses Wilson Sossion bid to reclaim union position"
 slug: "knut-secretary-general-collins-oyuu-dismisses-wilson-sossion-bid-to-"
 description: "KNUT Secretary General Collins Oyuu dismisses Wilson Sossion's bid to reclaim his union post, citing constitutional rules ahead of the April 3 elections."
+excerpt: "Kenya National Union of Teachers (KNUT) Secretary General Collins Oyuu today, Tuesday, March 24, 2026, dismissed former SG Wilson Sossion's"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/kV3RszS1/a50f118f5bea.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["collins-oyuu", "wilson-sossion", "knut-elections", "kenya-national-union-of-teachers", "teacher-unions"]
 canonical: "https://zandani.co.ke/article/knut-secretary-general-collins-oyuu-dismisses-wilson-sossion-bid-to-"
 date: "2026-03-24T15:35:17Z"
-focusKeyword: "KNUT Secretary General Collins Oyuu dismisses Wilson Sossion"
 dateModified: "2026-03-24T15:35:17Z"
+focusKeyword: "KNUT Secretary General Collins Oyuu dismisses Wilson Sossion"
+schema: "NewsArticle"
 ---
+
+KNUT Secretary General Collins Oyuu dismisses Wilson Sossion is central to this update for Kenyan readers.
+
 Kenya National Union of Teachers (KNUT) Secretary General Collins Oyuu today, Tuesday, March 24, 2026, dismissed former SG Wilson Sossion's intent to contest the upcoming April 3 union elections. Oyuu stated that KNUT's constitution prohibits former members from reclaiming leadership positions, urging Sossion to cease external interference in union affairs.
 
 KNUT Leadership Bid Faces Constitutional Challenge
@@ -24,3 +29,18 @@ Eligibility and Age Become Key Contentious Points The dispute has intensified wi
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

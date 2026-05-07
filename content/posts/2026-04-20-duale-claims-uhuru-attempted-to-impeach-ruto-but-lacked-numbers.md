@@ -1,7 +1,8 @@
 ---
 title: "Duale Claims Uhuru Attempted to Impeach Ruto but Lacked Numbers"
 slug: "duale-claims-uhuru-attempted-to-impeach-ruto-but-lacked-numbers"
-description: "Aden Duale claims former President Uhuru Kenyatta attempted to impeach William Ruto as DP but lacked parliamentary support during his 2017-2022 term."
+description: "Duale Claims Uhuru Attempted to Impeach Ruto but Lacked Numb: Aden Duale claims former President Uhuru Kenyatta attempted to impeach William Ruto as DP but"
+excerpt: "Health Cabinet Secretary Aden Duale stated on Sunday, April 19, that former President Uhuru Kenyatta lacked the parliamentary support requir"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/DHgwvHnP/f90c9dbb5d29.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["aden-duale", "uhuru-kenyatta", "william-ruto", "ruto-impeachment-bid", "kenyan-political-history"]
 canonical: "https://zandani.co.ke/article/duale-claims-uhuru-attempted-to-impeach-ruto-but-lacked-numbers"
 date: "2026-04-20T04:31:06Z"
-focusKeyword: "Duale Claims Uhuru Attempted to Impeach Ruto but Lacked Numb"
 dateModified: "2026-04-20T04:31:06Z"
+focusKeyword: "Duale Claims Uhuru Attempted to Impeach Ruto but Lacked Numb"
+schema: "NewsArticle"
 ---
+
+Duale Claims Uhuru Attempted to Impeach Ruto but Lacked Numb is central to this update for Kenyan readers.
+
 Health Cabinet Secretary Aden Duale stated on Sunday, April 19, that former President Uhuru Kenyatta lacked the parliamentary support required to impeach William Ruto during his 2017-2022 deputy presidential term, directly responding to recent remarks by former Deputy President Rigathi Gachagua regarding their past political relationship. Duale’s assertions add new dimensions to the ongoing political discourse.
 
 Duale's Impeachment Revelation Speaking in Nairobi, Duale confirmed that Uhuru undermined and humiliated President Ruto during his tenure as Deputy President and also directed similar treatment towards Gachagua between 2017 and 2022. Duale, who served as the leader of the majority in the National Assembly, asserted that former President Kenyatta intended to impeach Ruto but was unable to due to a lack of sufficient parliamentary numbers. "Let me make it very clear, Uhuru did not have the numbers to impeach William Ruto. I was the leader of the majority, and I was leading over 145 MPs, solid behind Ruto that made Uhuru not to impeach Ruto," Duale elaborated on Sunday.
@@ -22,3 +27,18 @@ Historical Context and Current Dynamics The relationship between Uhuru Kenyatta 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

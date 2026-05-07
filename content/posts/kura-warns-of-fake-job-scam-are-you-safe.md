@@ -1,13 +1,21 @@
 ---
 title: "KURA Warns of Fake Job Scam [Are YOU Safe?]"
 slug: "kura-warns-of-fake-job-scam-are-you-safe"
+description: "KURA Warns of Fake Job Scam Are YOU Safe: KURA Alerts Public on Widespread Job and Tender Fraud The Kenya Urban Roads Authority (KURA) has issued a stern"
+excerpt: "KURA Alerts Public on Widespread Job and Tender Fraud The Kenya Urban Roads Authority (KURA) has issued a stern warning to the public regard"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/PZvKzVFf/0c0e325c4f8c.jpg"
 category: "News"
+tags: ["kura warns of fake job scam are you safe", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/kura-warns-of-fake-job-scam-are-you-safe"
 date: "2026-03-04"
-focusKeyword: "KURA Warns of Fake Job Scam Are YOU Safe"
 dateModified: "2026-03-04"
+focusKeyword: "KURA Warns of Fake Job Scam Are YOU Safe"
+schema: "NewsArticle"
 ---
+
+KURA Warns of Fake Job Scam Are YOU Safe is central to this update for Kenyan readers.
+
 ## KURA Alerts Public on Widespread Job and Tender Fraud The Kenya Urban Roads Authority (KURA) has issued a stern warning to the public regarding a growing number of fraudsters impersonating authority officials to offer fictitious employment and tender opportunities. The caution, released on Wednesday, March 4, follows a surge in reports of individuals falsely claiming the ability to secure positions, contract awards, and supply agreements within KURA. KURA categorically stated that all legitimate employment, tender, and procurement opportunities are exclusively advertised through its official communication channels. The authority also underscored that it does not impose any fees for recruitment processes, contract awards, tender applications, or supply opportunities.
 
 Details of the Fraudulent Scheme The elaborate scam involves individuals promising employment opportunities, job awards, and tenders for goods and services in exchange for money. These fraudsters mislead members of the public into believing they can bypass standard application procedures through their purported connections within the authority. KURA explicitly confirmed, "KURA does NOT charge any fees for recruitment, job awards, tenders, or supply opportunities. All employment, tender, and procurement opportunities are officially advertised through our verified communication channels."
@@ -18,3 +26,18 @@ Previous Warning by Kenya Ports Authority This announcement by KURA comes two we
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

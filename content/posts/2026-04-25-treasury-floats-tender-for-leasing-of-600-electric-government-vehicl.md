@@ -1,7 +1,8 @@
 ---
 title: "Treasury floats tender for leasing of 600 electric government vehicles"
 slug: "treasury-floats-tender-for-leasing-of-600-electric-government-vehicl"
-description: "The Treasury has issued tenders for leasing 600 electric and hybrid vehicles and 70 fast chargers to drive the government's transition to clean transport."
+description: "Treasury floats tender for leasing of 600 electric governmen: The Treasury has issued tenders for leasing 600 electric and hybrid vehicles and 70 fast chargers"
+excerpt: "By Celestine Nzioka The Treasury has issued multimillion shilling tenders this month for the leasing of 600 electric and hybrid vehicles, al"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/sdpvJNJJ/b473292dccd8.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["electric-vehicle-leasing", "the-national-treasury", "government-motor-vehicle-tender", "e-mobility-transition"]
 canonical: "https://zandani.co.ke/article/treasury-floats-tender-for-leasing-of-600-electric-government-vehicl"
 date: "2026-04-25T19:57:51Z"
-focusKeyword: "Treasury floats tender for leasing of 600 electric governmen"
 dateModified: "2026-04-25T19:57:51Z"
+focusKeyword: "Treasury floats tender for leasing of 600 electric governmen"
+schema: "NewsArticle"
 ---
+
+Treasury floats tender for leasing of 600 electric governmen is central to this update for Kenyan readers.
+
 By Celestine Nzioka
 
 The Treasury has issued multimillion-shilling tenders this month for the leasing of 600 electric and hybrid vehicles, alongside approximately 70 DC fast chargers, for government use. This initiative marks a significant public-sector transition towards clean transport technology across various ministries, departments, and agencies.
@@ -34,3 +39,18 @@ This initiative aligns with a broader government push towards e-mobility, spearh
 
 Kenya Power reported a 188 per cent rise in electricity consumption linked to electric vehicles, with usage nearly tripling in 2025 as uptake grew among private and commercial users. Electricity consumption by electric vehicles rose to 8,433,437 kilowatt-hours (kWh) in 2025, up from 2,922,692 kWh recorded in 2024. This consumption surge generated Ksh125.9 million in revenue from EV charging in 2025, compared to Ksh64.8 million in the previous year. By the end of 2025, Kenya had registered over 35,000 electric vehicles.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

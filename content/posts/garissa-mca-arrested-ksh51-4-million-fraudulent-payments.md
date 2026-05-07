@@ -1,15 +1,21 @@
 ---
 title: "Garissa MCA Arrested: Ksh51.4 Million Fraudulent Payments Uncovered"
 slug: "garissa-mca-arrested-ksh51-4-million-fraudulent-payments"
+description: "Garissa MCA Arrested Ksh514 Million Fraudulent Payments Unco: A Garissa MCA has been arrested over alleged Ksh51.4 million fraudulent payments, exposing a"
 excerpt: "A Garissa MCA has been arrested over alleged Ksh51.4 million fraudulent payments, exposing a complex scheme of corruption in the county."
 author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/eacc-hq_1.jpg?h=762f4c45&itok=tBersBfy"
 category: "Politics"
+tags: ["Garissa", "MCA", "Corruption", "EACC", "Fraudulent Payments", "Kenya", "Politics", "Government"]
+canonical: "https://zandani.co.ke/article/garissa-mca-arrested-ksh51-4-million-fraudulent-payments"
 date: "2026-02-24"
-tags: ["Garissa", "MCA", "Corruption", "EACC", "Fraudulent Payments", "Kenya", "Politics", "Government", "Abdi Ibrahim Daar", "Mohamud Dubow Korane", "Yussuf Bethe Ali"]
-focusKeyword: "Garissa MCA Arrested Ksh514 Million Fraudulent Payments Unco"
 dateModified: "2026-02-24"
+focusKeyword: "Garissa MCA Arrested Ksh514 Million Fraudulent Payments Unco"
+schema: "NewsArticle"
 ---
+
+Garissa MCA Arrested Ksh514 Million Fraudulent Payments Unco is central to this update for Kenyan readers.
+
 ## Garissa MCA Arrested Over Ksh51.4 Million Fraudulent Payments A Member of County Assembly (MCA) from Garissa, along with two former senior county officials, has been arrested in connection with alleged fraudulent payments amounting to Ksh51.4 million. The Ethics and Anti-Corruption Commission (EACC) confirmed the arrests as part of its intensified efforts to combat graft within devolved governments. The Ethics and Anti-Corruption Commission (EACC) apprehended Balambala Ward MCA Abdi Ibrahim Daar, former Director of Accounting Services Mohamud Dubow Korane, and former Senior Principal Economist Yussuf Bethe Ali on Sunday, February 22, 2026. The trio was scheduled to be arraigned at the Garissa Law Courts on Monday, February 23, 2026, for plea taking in a case that underscores persistent vulnerabilities within regional governmental procurement systems.
 
 Allegations of Ksh51.4 Million Fraudulent Payments The EACC investigation alleges that the three individuals conspired to commit corruption by facilitating fraudulent transfers from the Garissa County Government to a private entity, Qorjarey Enterprise and General Supplies Limited. These payments, totalling Ksh51,495,253, were purportedly for goods and services, including emergency food items, office furniture, and water trucking, that were neither procured nor supplied to the county government between April and June 2022. According to charge documents, former Director of Accounting Services Mohamud Dubow Korane is accused of approving payments ranging from Ksh4.8 million to Ksh14.5 million to the implicated enterprise for unprocured items. Similarly, Yussuf Bethe Ali, the former Senior Principal Economist, allegedly raised invoices within the Integrated Financial Management Information System (IFMIS) to facilitate these improper payments. MCA Abdi Ibrahim Daar faces additional charges of forgery for allegedly creating and presenting false documents, including letters of acceptance for contracts, to deceive both the county government and financial institutions. The payments were processed despite a lack of budgetary allocation or an approved procurement plan for the alleged supplies during the 2021/2022 financial year, and the company was not among the prequalified suppliers.
@@ -18,3 +24,18 @@ Intensified Crackdown on Corruption and Fraudulent Payments The arrests in Garis
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

@@ -1,7 +1,8 @@
 ---
 title: "Kenyatta National Hospital implements paperless system for patient services"
 slug: "kenyatta-national-hospital-implements-paperless-system-for-patient-s"
-description: "Kenyatta National Hospital launched the Afya Apex digital system on March 17, 2026, to transition to paperless patient services, enhancing efficiency."
+description: "Kenyatta National Hospital implements paperless system for p: Kenyatta National Hospital launched the Afya Apex digital system on March 17, 2026, to transition"
+excerpt: "Kenyatta National Hospital (KNH) launched its digital Afya Apex HMIS/ERP system on Tuesday, March 17, 2026, initiating a major transition to"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/xSMGrnwS/716f567d0912.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["kenyatta-national-hospital", "afya-apex-system", "richard-lesiyampae", "taifa-care-initiative", "digital-health-transformation"]
 canonical: "https://zandani.co.ke/article/kenyatta-national-hospital-implements-paperless-system-for-patient-s"
 date: "2026-03-17T20:58:41Z"
-focusKeyword: "Kenyatta National Hospital implements paperless system for p"
 dateModified: "2026-03-17T20:58:41Z"
+focusKeyword: "Kenyatta National Hospital implements paperless system for p"
+schema: "NewsArticle"
 ---
+
+Kenyatta National Hospital implements paperless system for p is central to this update for Kenyan readers.
+
 Kenyatta National Hospital (KNH) launched its digital Afya Apex HMIS/ERP system on Tuesday, March 17, 2026, initiating a major transition to paperless patient services. The system, set to go live on March 20, aims to streamline hospital operations under the government's Taifa Care Initiative, enhancing efficiency across departments.
 
 Digital Transformation for Enhanced Patient Care KNH's acting Chief Executive Officer, Richard Lesiyampae, stated that the Afya Apex system will significantly reduce patient waiting times, improve efficiency, and enhance coordination across departments. He emphasised the system's role in speeding up emergency response and referrals, noting that the patient journey at KNH will become seamless and efficient, ultimately saving lives. As a specialised referral facility for the broader region, KNH will also gain the capability to access patient information from various originating locations.
@@ -24,3 +29,18 @@ Addressing Current Challenges The rollout of the digital system comes as KNH add
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

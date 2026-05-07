@@ -1,7 +1,8 @@
 ---
 title: "NYOTA Fund Second Phase to Be Disbursed After Mentorship Completion, PS Announces"
 slug: "nyota-fund-second-phase-to-be-disbursed-after-mentorship-completion-"
-description: "MSME PS Susan Mang'eni confirms the NYOTA fund second phase will be disbursed after mentorship, bringing the total support per beneficiary to Ksh 50,000."
+description: "NYOTA Fund Second Phase to Be Disbursed After Mentorship Com: MSME PS Susan Mang'eni confirms the NYOTA fund second phase will be disbursed after mentorship,"
+excerpt: "Micro, Small, and Medium Enterprise (MSME) Principal Secretary Susan Mang’eni has confirmed that the second phase of the NYOTA business supp"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/FLzQCmKS/5831fadde1cd.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["nyota-fund", "susan-mangeni", "msme-mentorship-program", "business-support-grants"]
 canonical: "https://zandani.co.ke/article/nyota-fund-second-phase-to-be-disbursed-after-mentorship-completion-"
 date: "2026-03-31T17:15:46Z"
-focusKeyword: "NYOTA Fund Second Phase to Be Disbursed After Mentorship Com"
 dateModified: "2026-03-31T17:15:46Z"
+focusKeyword: "NYOTA Fund Second Phase to Be Disbursed After Mentorship Com"
+schema: "NewsArticle"
 ---
+
+NYOTA Fund Second Phase to Be Disbursed After Mentorship Com is central to this update for Kenyan readers.
+
 Micro, Small, and Medium Enterprise (MSME) Principal Secretary Susan Mang’eni has confirmed that the second phase of the NYOTA business support fund will be disbursed to beneficiaries immediately following the completion of the nationwide mentorship program. This tranche will provide an additional Ksh 25,000, bringing the total support per beneficiary to Ksh 50,000.
 
 NYOTA Fund Second Phase Disbursement Details
@@ -26,3 +31,18 @@ World Bank Funding and Youth Empowerment Initiatives The NYOTA program is substa
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

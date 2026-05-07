@@ -1,7 +1,8 @@
 ---
 title: "High Court bars telecommunication companies from reassigning registered phone numbers without consent"
 slug: "high-court-bars-telecommunication-companies-from-reassigning-registe"
-description: "The High Court has barred telecommunication companies from reassigning registered mobile numbers without consent, declaring them protected personal data."
+description: "High Court bars telecommunication companies from reassigning: The High Court has barred telecommunication companies from reassigning registered mobile numbers"
+excerpt: "The High Court, in a ruling by Justice Lawrence Mugambi on Thursday, March 19, 2026, has prohibited telecommunication companies from reassig"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/ksbYb3Gk/a6f5aeb94fa7.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["mobile-number-reassignment", "justice-lawrence-mugambi", "data-protection-rights", "telecommunications-law", "high-court-ruling"]
 canonical: "https://zandani.co.ke/article/high-court-bars-telecommunication-companies-from-reassigning-registe"
 date: "2026-03-19T16:11:12Z"
-focusKeyword: "High Court bars telecommunication companies from reassigning"
 dateModified: "2026-03-19T16:11:12Z"
+focusKeyword: "High Court bars telecommunication companies from reassigning"
+schema: "NewsArticle"
 ---
+
+High Court bars telecommunication companies from reassigning is central to this update for Kenyan readers.
+
 The High Court, in a ruling by Justice Lawrence Mugambi on Thursday, March 19, 2026, has prohibited telecommunication companies from reassigning registered mobile phone numbers without the owner's explicit consent. The court declared these numbers constitute personal data, protected under the Constitution.
 
 Safeguarding Digital Identities in Kenya
@@ -28,3 +33,18 @@ Strict Conditions for Number Reassignment Justice Mugambi emphasized that any re
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

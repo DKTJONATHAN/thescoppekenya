@@ -1,7 +1,8 @@
 ---
 title: "KeNHA upgrades road lighting along JKIA corridor as part of highway beautification project"
 slug: "kenha-upgrades-road-lighting-along-jkia-corridor-as-part-of-highway-"
-description: "KeNHA has upgraded road lighting along the JKIA corridor in Nairobi to improve safety and aesthetics as part of its highway beautification project."
+description: "KeNHA upgrades road lighting along JKIA corridor as part of: KeNHA has upgraded road lighting along the JKIA corridor in Nairobi to improve safety and"
+excerpt: "The Kenya National Highways Authority (KeNHA) has upgraded road and walkway lighting along the Jomo Kenyatta International Airport (JKIA) st"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Q3pNYF1t/073de993759e.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["kenha", "jkia-corridor", "highway-beautification", "infrastructure-development", "nairobi-road-upgrades"]
 canonical: "https://zandani.co.ke/article/kenha-upgrades-road-lighting-along-jkia-corridor-as-part-of-highway-"
 date: "2026-04-12T10:03:29Z"
-focusKeyword: "KeNHA upgrades road lighting along JKIA corridor as part of"
 dateModified: "2026-04-12T10:03:29Z"
+focusKeyword: "KeNHA upgrades road lighting along JKIA corridor as part of"
+schema: "NewsArticle"
 ---
+
+KeNHA upgrades road lighting along JKIA corridor as part of is central to this update for Kenyan readers.
+
 The Kenya National Highways Authority (KeNHA) has upgraded road and walkway lighting along the Jomo Kenyatta International Airport (JKIA) stretch of the B10 road in Nairobi. A site visit on April 12 confirmed these ongoing works, enhancing safety and aesthetic appeal for corridor users.
 
 Enhanced Safety and Aesthetics on JKIA Corridor The lighting improvements are part of a broader Capacity Enhancement, Landscaping, and Beautification Project extending from James Gichuru Junction to Jomo Kenyatta International Airport. KeNHA officials state the upgraded lighting on the 27-kilometre stretch significantly improves road safety visibility and the overall aesthetic appeal of one of Nairobi’s busiest international gateways for motorists and pedestrians alike. The initiative aims to transform the JKIA approach road into a safer, modern, and more visually appealing transport corridor serving thousands of daily commuters across the Nairobi region.
@@ -22,3 +27,18 @@ Vision for JKIA's Future These infrastructure enhancements coincide with a plann
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

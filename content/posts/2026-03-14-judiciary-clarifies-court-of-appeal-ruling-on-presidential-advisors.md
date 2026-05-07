@@ -1,13 +1,21 @@
 ---
 title: "Judiciary clarifies Court of Appeal ruling on presidential advisors"
 slug: "judiciary-clarifies-court-of-appeal-ruling-on-presidential-advisors"
+description: "Judiciary clarifies Court of Appeal ruling on presidential a: Judiciary Defends Court of Appeal Ruling on Presidential Advisors The Judiciary has clarified the"
+excerpt: "Judiciary Defends Court of Appeal Ruling on Presidential Advisors The Judiciary has clarified the Court of Appeal's recent ruling that tempo"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/m5MP5Vbk/4ab750886688.jpg"
 category: "News"
+tags: ["judiciary clarifies court of appeal ruling on presidential advisors", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/judiciary-clarifies-court-of-appeal-ruling-on-presidential-advisors"
 date: "2026-03-14T17:45:19Z"
-focusKeyword: "Judiciary clarifies Court of Appeal ruling on presidential a"
 dateModified: "2026-03-14T17:45:19Z"
+focusKeyword: "Judiciary clarifies Court of Appeal ruling on presidential a"
+schema: "NewsArticle"
 ---
+
+Judiciary clarifies Court of Appeal ruling on presidential a is central to this update for Kenyan readers.
+
 ## Judiciary Defends Court of Appeal Ruling on Presidential Advisors The Judiciary has clarified the Court of Appeal's recent ruling that temporarily halted the implementation of a High Court judgment declaring offices of presidential advisors unconstitutional, addressing concerns raised in some media quarters. Judiciary Spokesperson Paul Ndemo affirmed proper procedure in the ruling's delivery, though lawyers representing the petitioners strongly dispute the notification claims.
 
 Court of Appeal Ruling Procedure Defended Judiciary Spokesperson Paul Ndemo stated on Saturday, March 14, 2026, that the Court of Appeal followed due process in delivering its ruling. The application for a stay of execution was heard by a three-judge bench on February 23, 2026. While the bench initially indicated the ruling would be delivered on April 24, 2026, or earlier upon notice, a decision was reached sooner. On March 12, 2026, the Registrar of the Court of Appeal emailed a notice of delivery to all parties' counsel, specifying the ruling would be delivered the following day via email. The ruling was subsequently transmitted to lawyers on record at 12:56 pm on March 13, 2026, using the same email addresses utilized for earlier hearing notices and virtual participation links. The Judiciary emphasized that this electronic communication method aligns with practices adopted since 2020 to enhance efficiency and ensure timely access to court decisions.
@@ -20,3 +28,18 @@ Background to the Controversial Stay The controversy began when the Katiba Insti
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

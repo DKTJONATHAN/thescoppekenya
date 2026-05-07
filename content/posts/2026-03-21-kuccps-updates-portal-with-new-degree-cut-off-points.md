@@ -1,7 +1,8 @@
 ---
 title: "KUCCPS updates portal with new degree cut-off points"
 slug: "kuccps-updates-portal-with-new-degree-cut-off-points"
-description: "KUCCPS updates its portal with new degree cut-off points and subject requirements for 2025 KCSE candidates ahead of the 2026 university application cycle."
+description: "KUCCPS updates portal with new degree cut-off points: KUCCPS updates its portal with new degree cut-off points and subject requirements for 2025 KCSE"
+excerpt: "The Kenya Universities and Colleges Central Placement Service (KUCCPS) has updated its online portal with new degree cut off points and mini"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/67DRd1Lc/a5e1497ceb56.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["kuccps-cut-off-points", "2026-university-application", "kcse-2025-candidates", "higher-education-admissions"]
 canonical: "https://zandani.co.ke/article/kuccps-updates-portal-with-new-degree-cut-off-points"
 date: "2026-03-21T10:47:24Z"
-focusKeyword: "KUCCPS updates portal with new degree cut-off points"
 dateModified: "2026-03-21T10:47:24Z"
+focusKeyword: "KUCCPS updates portal with new degree cut-off points"
+schema: "NewsArticle"
 ---
+
+KUCCPS updates portal with new degree cut-off points is central to this update for Kenyan readers.
+
 The Kenya Universities and Colleges Central Placement Service (KUCCPS) has updated its online portal with new degree cut-off points and minimum subject requirements. This vital update, released ahead of the 2026 university application cycle, is designed to guide 2025 KCSE candidates in selecting their preferred degree programmes.
 
 Updated University Admission Criteria for 2026
@@ -43,6 +48,3 @@ Compare the same course across multiple institutions because cut-off points diff
 
 ### Are KUCCPS cluster points and university cut-off points the same thing?
 No. Cluster points help determine competitiveness by programme group, while cut-off points show the last admitted score for a specific course and institution.
-
-
-

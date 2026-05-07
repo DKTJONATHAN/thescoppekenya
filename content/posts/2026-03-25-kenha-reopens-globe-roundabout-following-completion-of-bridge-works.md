@@ -1,7 +1,8 @@
 ---
 title: "KeNHA reopens Globe Roundabout following completion of bridge works"
 slug: "kenha-reopens-globe-roundabout-following-completion-of-bridge-works"
-description: "KeNHA reopens Nairobi's Globe Roundabout after bridge works, restoring full traffic flow for commuters on the Thika Superhighway as of March 25, 2026."
+description: "KeNHA reopens Globe Roundabout following completion of bridg: KeNHA reopens Nairobi's Globe Roundabout after bridge works, restoring full traffic flow for"
+excerpt: "By Celestine Nzioka The Kenya National Highways Authority (KeNHA) today, March 25, 2026, confirmed the full restoration of traffic flow at G"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/mWK2znF/f586b897e02c.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["globe-roundabout-reopening", "kenha", "thika-superhighway", "nairobi-cbd", "road-infrastructure"]
 canonical: "https://zandani.co.ke/article/kenha-reopens-globe-roundabout-following-completion-of-bridge-works"
 date: "2026-03-25T20:57:05Z"
-focusKeyword: "KeNHA reopens Globe Roundabout following completion of bridg"
 dateModified: "2026-03-25T20:57:05Z"
+focusKeyword: "KeNHA reopens Globe Roundabout following completion of bridg"
+schema: "NewsArticle"
 ---
+
+KeNHA reopens Globe Roundabout following completion of bridg is central to this update for Kenyan readers.
+
 By Celestine Nzioka The Kenya National Highways Authority (KeNHA) today, March 25, 2026, confirmed the full restoration of traffic flow at Globe Roundabout along the Thika Superhighway. This reopening allows unimpeded travel for thousands of commuters navigating a major route into Nairobi’s Central Business District, bringing significant relief after recent disruptions.
 
 Globe Roundabout Traffic Resumes In a notice issued on Wednesday, March 25, KeNHA announced that motorists can now resume normal travel along the section. The Globe Roundabout is a critical junction connecting major roads leading to the CBD, Thika Superhighway, University Way, Kipande Road, Limuru Road, Kirinyaga Road, and the OTC area, handling substantial daily traffic.
@@ -24,3 +29,18 @@ Anticipated Ease of Movement With traffic now fully restored at Globe Roundabout
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

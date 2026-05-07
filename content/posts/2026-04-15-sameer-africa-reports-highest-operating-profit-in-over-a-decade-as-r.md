@@ -1,13 +1,21 @@
 ---
 title: "Sameer Africa reports highest operating profit in over a decade as rental income grows"
 slug: "sameer-africa-reports-highest-operating-profit-in-over-a-decade-as-r"
+description: "Sameer Africa reports highest operating profit in over a dec: Sameer Africa Achieves Decade High Operating Profit Sameer Africa Plc reported its highest"
+excerpt: "Sameer Africa Achieves Decade High Operating Profit Sameer Africa Plc reported its highest operating profit since 2013 for the year ended 31"
 author: "Grace Mkamburi"
 image: "https://i.ibb.co/Rkfbj17k/3d9af64da008.jpg"
 category: "Business"
+tags: ["sameer africa reports highest operating profit in over a decade as r", "business", "kenya news"]
+canonical: "https://zandani.co.ke/article/sameer-africa-reports-highest-operating-profit-in-over-a-decade-as-r"
 date: "2026-04-15T10:47:29Z"
-focusKeyword: "Sameer Africa reports highest operating profit in over a dec"
 dateModified: "2026-04-15T10:47:29Z"
+focusKeyword: "Sameer Africa reports highest operating profit in over a dec"
+schema: "NewsArticle"
 ---
+
+Sameer Africa reports highest operating profit in over a dec is central to this update for Kenyan readers.
+
 ## Sameer Africa Achieves Decade-High Operating Profit Sameer Africa Plc reported its highest operating profit since 2013 for the year ended 31 December 2025, rising 47.7% to KSh 292.64 Mn. This robust performance stems from significant rental income growth and disciplined cost management across its fully occupied industrial property portfolio, marking a strong operational turnaround.
 
 Strong Operational Performance and Profitability The company's shift to an industrial landlord model has yielded substantial results, with gross margin holding at 96.2%. Net rental income before tax surged to KSh 307.56 Mn from KSh 241.68 Mn in FY2024, supported by over 40 tenants spanning distribution, manufacturing, agro-processing, and energy sectors. This growth was complemented by aggressive cost-cutting measures, evidenced by a 28.6% reduction in operating expenses to KSh 126.11 Mn, with administrative expenses nearly halving to KSh 42.50 Mn from KSh 79.48 Mn. Consequently, profit before tax rose 10.5% to KSh 340.42 Mn, and profit for the year advanced 5.5% to KSh 274.28 Mn, improving earnings per share to KSh 0.99 from KSh 0.93.
@@ -20,3 +28,18 @@ Monitoring Receivables and Tenant Dynamics While the overall performance is robu
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

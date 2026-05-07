@@ -1,7 +1,8 @@
 ---
 title: "CS William Kabogo appoints Naiyanoi Ntutu to ICT Authority board"
 slug: "cs-william-kabogo-appoints-naiyanoi-ntutu-to-ict-authority-board"
-description: "CS William Kabogo appoints Naiyanoi Ntutu Ng'eno, widow of the late Johana Ng'eno, to the ICT Authority board for a three-year term starting April 2, 2026."
+description: "CS William Kabogo appoints Naiyanoi Ntutu to ICT Authority b: CS William Kabogo appoints Naiyanoi Ntutu Ng'eno, widow of the late Johana Ng'eno, to the ICT"
+excerpt: "Information, Communications and the Digital Economy Cabinet Secretary William Kabogo has appointed Naiyanoi Ntutu Ng'eno, widow of the late"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/1GKvXRwJ/ea96e74da1ff.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["william-kabogo", "naiyanoi-ntutu-ngeno", "ict-authority-board", "ict-governance"]
 canonical: "https://zandani.co.ke/article/cs-william-kabogo-appoints-naiyanoi-ntutu-to-ict-authority-board"
 date: "2026-04-03T09:12:01Z"
-focusKeyword: "CS William Kabogo appoints Naiyanoi Ntutu to ICT Authority b"
 dateModified: "2026-04-03T09:12:01Z"
+focusKeyword: "CS William Kabogo appoints Naiyanoi Ntutu to ICT Authority b"
+schema: "NewsArticle"
 ---
+
+CS William Kabogo appoints Naiyanoi Ntutu to ICT Authority b is central to this update for Kenyan readers.
+
 Information, Communications and the Digital Economy Cabinet Secretary William Kabogo has appointed Naiyanoi Ntutu Ng'eno, widow of the late Emurua Dikirr MP Johana Ng'eno, to the Information and Communication Technology Authority (ICTA) board. Her three-year term is effective from Thursday, April 2, 2026.
 
 New Member Joins ICT Authority Board
@@ -22,3 +27,18 @@ Transition from Political Ambition Naiyanoi Ntutu Ng'eno first entered public co
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

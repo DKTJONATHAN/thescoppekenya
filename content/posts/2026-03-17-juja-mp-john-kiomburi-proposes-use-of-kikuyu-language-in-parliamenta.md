@@ -1,7 +1,8 @@
 ---
 title: "Juja MP John Kiomburi proposes use of Kikuyu language in parliamentary debates"
 slug: "juja-mp-john-kiomburi-proposes-use-of-kikuyu-language-in-parliamenta"
-description: "Juja MP John Kiomburi proposes a motion to allow the Kikuyu language for two hours during National Assembly sittings to enhance community representation."
+description: "Juja MP John Kiomburi proposes use of Kikuyu language in par: Juja MP John Kiomburi proposes a motion to allow the Kikuyu language for two hours during"
+excerpt: "Juja Member of Parliament John Kiomburi today, March 17, 2026, announced his intention to table a motion in the National Assembly proposing"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Q78TzX3H/acd55925fe38.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["john-kiomburi", "juja-constituency", "kikuyu-language-motion", "national-assembly-standing-orders"]
 canonical: "https://zandani.co.ke/article/juja-mp-john-kiomburi-proposes-use-of-kikuyu-language-in-parliamenta"
 date: "2026-03-17T10:10:55Z"
-focusKeyword: "Juja MP John Kiomburi proposes use of Kikuyu language in par"
 dateModified: "2026-03-17T10:10:55Z"
+focusKeyword: "Juja MP John Kiomburi proposes use of Kikuyu language in par"
+schema: "NewsArticle"
 ---
+
+Juja MP John Kiomburi proposes use of Kikuyu language in par is central to this update for Kenyan readers.
+
 Juja Member of Parliament John Kiomburi today, March 17, 2026, announced his intention to table a motion in the National Assembly proposing the adoption of the Kikuyu language for two hours of parliamentary business at every sitting. The initiative aims to enhance representation for the Kikuyu community.
 
 Proposed Language Shift in Parliament MP Kiomburi outlined his proposal during a press briefing, stating his commitment to presenting a motion to formalize the use of the Kikuyu language in parliamentary proceedings. The legislator asserts this measure would ensure proper representation for the Kikuyu people within the National Assembly and contribute to the community gaining deserved respect. Kiomburi highlighted the community's substantial population nationwide, noting that many non-native citizens are also proficient in the language.
@@ -22,3 +27,18 @@ Demographic Context According to the Kenya National Bureau of Statistics (KNBS) 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

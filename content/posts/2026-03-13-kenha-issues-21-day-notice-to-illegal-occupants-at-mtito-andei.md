@@ -1,13 +1,21 @@
 ---
 title: "KeNHA issues 21-day notice to illegal occupants at Mtito Andei"
 slug: "kenha-issues-21-day-notice-to-illegal-occupants-at-mtito-andei"
+description: "KeNHA issues 21-day notice to illegal occupants at Mtito And: KeNHA Orders Evacuation of Mtito Andei Road Reserve The Kenya National Highways Authority (KeNHA)"
+excerpt: "KeNHA Orders Evacuation of Mtito Andei Road Reserve The Kenya National Highways Authority (KeNHA) has issued a 21 day notice for all unautho"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/xqGCRZmy/237f3f63996f.jpg"
 category: "News"
+tags: ["kenha issues 21 day notice to illegal occupants at mtito andei", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/kenha-issues-21-day-notice-to-illegal-occupants-at-mtito-andei"
 date: "2026-03-13T07:14:07Z"
-focusKeyword: "KeNHA issues 21-day notice to illegal occupants at Mtito And"
 dateModified: "2026-03-13T07:14:07Z"
+focusKeyword: "KeNHA issues 21-day notice to illegal occupants at Mtito And"
+schema: "NewsArticle"
 ---
+
+KeNHA issues 21-day notice to illegal occupants at Mtito And is central to this update for Kenyan readers.
+
 ## KeNHA Orders Evacuation of Mtito Andei Road Reserve The Kenya National Highways Authority (KeNHA) has issued a 21-day notice for all unauthorized occupants along the Mtito Andei section of Mombasa Road to vacate the road reserve. This directive, effective March 17, 2026, targets traders and other encroachers, aiming to facilitate critical service road improvements and drainage rehabilitation work along the vital transport corridor.
 
 Mtito Andei Eviction Notice Issued In a statement released today, the Kenya National Highways Authority (KeNHA) mandated the removal of all wares and structures from the road reserve at Mtito Andei, encompassing both directions of Mombasa Road. The authority cited planned service road enhancements and drainage rehabilitation works as the primary reasons for the directive. KeNHA emphasized that the project is integral to broader road safety initiatives designed to upgrade infrastructure and ensure smoother traffic flow along the busy A8 Road.
@@ -18,3 +26,18 @@ Broader Road Safety Initiatives This directive at Mtito Andei aligns with ongoin
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

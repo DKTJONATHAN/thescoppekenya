@@ -1,13 +1,21 @@
 ---
 title: "Senate orders National Treasury to disclose new loan agreements within 60 days"
 slug: "senate-orders-national-treasury-to-disclose-new-loan-agreements-with"
+description: "Senate orders National Treasury to disclose new loan agreeme: Senate Directs National Treasury to Disclose New Loan Agreements Within 60 Days The National"
+excerpt: "Senate Directs National Treasury to Disclose New Loan Agreements Within 60 Days The National Treasury has received a 60 day ultimatum from t"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/tGSBCKK/7c10a4435197.jpg"
 category: "News"
+tags: ["senate orders national treasury to disclose new loan agreements with", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/senate-orders-national-treasury-to-disclose-new-loan-agreements-with"
 date: "2026-03-12T11:02:20Z"
-focusKeyword: "Senate orders National Treasury to disclose new loan agreeme"
 dateModified: "2026-03-12T11:02:20Z"
+focusKeyword: "Senate orders National Treasury to disclose new loan agreeme"
+schema: "NewsArticle"
 ---
+
+Senate orders National Treasury to disclose new loan agreeme is central to this update for Kenyan readers.
+
 ## Senate Directs National Treasury to Disclose New Loan Agreements Within 60 Days The National Treasury has received a 60-day ultimatum from the Senate, demanding full disclosure of all new loan agreements and securitisation plans. This directive, issued by the Senate Finance and Budget Committee, addresses escalating concerns over Kenya's rising national debt, which reached approximately Ksh12.2 trillion by December 2025, requiring robust parliamentary oversight.
 
 Enhanced Oversight Demanded The directive was issued on Thursday during a session at Parliament Buildings, where lawmakers underscored the need for complete transparency on recent borrowing and the associated legal obligations. Committee Chairperson Ali Roba highlighted that this marks the first time in nearly four years the Senate has obtained detailed information regarding the nation's loan portfolio, raising concerns over delays that impede parliamentary oversight. Senators are demanding a comprehensive "bird's eye view" of all contractual terms, risks, and repayment obligations linked to the government's borrowing.
@@ -18,3 +26,18 @@ Securitisation and International Debt Pressures The committee further demanded c
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

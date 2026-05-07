@@ -1,7 +1,8 @@
 ---
 title: "KCAA assures normal flight operations following aviation workers strike threat"
 slug: "kcaa-assures-normal-flight-operations-following-aviation-workers-str"
-description: "KCAA assures normal flight operations at JKIA and other facilities today, March 21, 2026, despite a strike threat from the Kenya Aviation Workers Union."
+description: "KCAA assures normal flight operations following aviation wor: KCAA assures normal flight operations at JKIA and other facilities today, March 21, 2026, despite"
+excerpt: "The Kenya Civil Aviation Authority (KCAA) has reassured the public of uninterrupted flight operations at Jomo Kenyatta International Airport"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Nd4gr0v3/e49256524947.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["kcaa-flight-operations", "kenya-aviation-workers-union", "jomo-kenyatta-international-airport", "aviation-labor-disputes", "kawu-strike-threat"]
 canonical: "https://zandani.co.ke/article/kcaa-assures-normal-flight-operations-following-aviation-workers-str"
 date: "2026-03-21T17:43:52Z"
-focusKeyword: "KCAA assures normal flight operations following aviation wor"
 dateModified: "2026-03-21T17:43:52Z"
+focusKeyword: "KCAA assures normal flight operations following aviation wor"
+schema: "NewsArticle"
 ---
+
+KCAA assures normal flight operations following aviation wor is central to this update for Kenyan readers.
+
 The Kenya Civil Aviation Authority (KCAA) has reassured the public of uninterrupted flight operations at Jomo Kenyatta International Airport and other facilities today, Saturday, March 21, 2026. This follows a strike threat from the Kenya Aviation Workers Union (KAWU) over unresolved labor disputes, which KCAA states are being addressed through ongoing negotiations.
 
 KCAA Assures Normalcy Amidst Strike Threats The KCAA confirmed that discussions involving its board, senior management, and a conciliation process led by the Ministry of Labour are actively progressing, having already achieved significant strides. The authority emphasized that measures are in place to uphold safety, security, and service delivery across the nation's aviation services, guaranteeing no disruptions.
@@ -24,3 +29,18 @@ Wilson Airport Incident Under Investigation In a separate but related developmen
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

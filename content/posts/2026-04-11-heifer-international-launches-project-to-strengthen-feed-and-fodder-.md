@@ -1,13 +1,21 @@
 ---
 title: "Heifer International launches project to strengthen feed and fodder systems in Kenya’s dairy sector"
 slug: "heifer-international-launches-project-to-strengthen-feed-and-fodder-"
+description: "Heifer International launches project to strengthen feed and: Strengthening Kenya's Dairy Feed Systems Heifer International's new TYFFAD project targets over"
+excerpt: "Strengthening Kenya's Dairy Feed Systems Heifer International's new TYFFAD project targets over 50,000 smallholder dairy farmers in Kenya. T"
 author: "Timothy Muli"
 image: "https://i.ibb.co/kg0gbBX3/0b4c175efcf8.jpg"
 category: "Agriculture"
+tags: ["heifer international launches project to strengthen feed and fodder ", "agriculture", "kenya news"]
+canonical: "https://zandani.co.ke/article/heifer-international-launches-project-to-strengthen-feed-and-fodder-"
 date: "2026-04-11T09:25:19Z"
-focusKeyword: "Heifer International launches project to strengthen feed and"
 dateModified: "2026-04-11T09:25:19Z"
+focusKeyword: "Heifer International launches project to strengthen feed and"
+schema: "NewsArticle"
 ---
+
+Heifer International launches project to strengthen feed and is central to this update for Kenyan readers.
+
 ## Strengthening Kenya's Dairy Feed Systems Heifer International's new TYFFAD project targets over 50,000 smallholder dairy farmers in Kenya. This four-year initiative addresses critical feed and fodder shortages, which limit milk production and farmer income. It focuses on improving storage, market access, and financial support in seven key dairy counties, especially for women and youth.
 
 Tackling Feed and Fodder Challenges Kenya's dairy sector, vital to over 1.8 million households, faces significant hurdles. Average milk yields remain low, at approximately 7.5 litres per cow per day. This low productivity stems largely from persistent issues with feed and fodder systems. Ms. Midina Yattani from the State Department of Livestock Development affirms that feed and fodder represent the most critical constraints to improving dairy productivity in Kenya. Farmers frequently experience a cycle of surplus and scarcity. During rainy seasons, abundant fodder often leads to immediate sales at low prices due to limited storage capacity. Conversely, in dry seasons, feed becomes scarce and expensive, impacting productivity and incomes. A bale of hay, for example, can cost KSh 100-150 during surplus but rises to KSh 300-500 in dry periods. Beyond these seasonal shifts, many farmers struggle with limited access to mechanisation, high input costs, unreliable markets, and financing options not suited to their needs.
@@ -18,3 +26,18 @@ Practical Solutions for Dairy Farmers The TYFFAD project offers practical suppor
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

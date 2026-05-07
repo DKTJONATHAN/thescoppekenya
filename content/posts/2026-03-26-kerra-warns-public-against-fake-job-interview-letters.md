@@ -1,7 +1,8 @@
 ---
 title: "KeRRA warns public against fake job interview letters"
 slug: "kerra-warns-public-against-fake-job-interview-letters"
-description: "KeRRA alerts the public about fraudulent recruitment letters that demand payments, stating these job interview invitations are part of an ongoing scam."
+description: "KeRRA warns public against fake job interview letters: KeRRA alerts the public about fraudulent recruitment letters that demand payments, stating these job"
+excerpt: "The Kenya Rural Roads Authority (KeRRA) has issued a stern warning against fake job interview letters circulating online, urging the public"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/BHqNgJCK/6cfce2d0ea4a.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["kenya-rural-roads-authority", "kerra-job-scam", "fake-job-interview-letters", "employment-fraud"]
 canonical: "https://zandani.co.ke/article/kerra-warns-public-against-fake-job-interview-letters"
 date: "2026-03-26T19:34:00Z"
-focusKeyword: "KeRRA warns public against fake job interview letters"
 dateModified: "2026-03-26T19:34:00Z"
+focusKeyword: "KeRRA warns public against fake job interview letters"
+schema: "NewsArticle"
 ---
+
+KeRRA warns public against fake job interview letters is central to this update for Kenyan readers.
+
 The Kenya Rural Roads Authority (KeRRA) has issued a stern warning against fake job interview letters circulating online, urging the public to disregard fraudulent recruitment solicitations. On Thursday, March 26, 2026, KeRRA clarified that these letters, which demand upfront payments, are part of an ongoing scam and do not originate from the authority.
 
 Kenya Rural Roads Authority Scrutiny KeRRA notified the public about a surge of deceptive letters claiming to have shortlisted applicants for interviews. These fraudulent communications falsely indicate that applicants have been selected and require payment in advance to proceed. The authority unequivocally stated that these letters are a scam, emphasizing that no payments should be made to individuals or entities facilitating interviews or recruitment under KeRRA's name.
@@ -22,3 +27,18 @@ Official Recruitment Protocol The authority firmly stated that it does not requi
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

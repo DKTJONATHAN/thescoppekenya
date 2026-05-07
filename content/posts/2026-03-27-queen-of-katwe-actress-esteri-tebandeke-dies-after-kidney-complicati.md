@@ -1,7 +1,8 @@
 ---
 title: "Queen of Katwe actress Esteri Tebandeke dies after kidney complications"
 slug: "queen-of-katwe-actress-esteri-tebandeke-dies-after-kidney-complicati"
-description: "Esteri Tebandeke, acclaimed Queen of Katwe actress, has passed away at Nakasero Hospital in Uganda after a prolonged struggle with kidney complications."
+description: "Queen of Katwe actress Esteri Tebandeke dies after kidney co: Esteri Tebandeke, acclaimed Queen of Katwe actress, has passed away at Nakasero Hospital in"
+excerpt: "Uganda's vibrant entertainment scene is in mourning this week following the tragic death of acclaimed actress Esteri Tebandeke, known for he"
 author: "Za Ndani"
 author_url: "https://zandani.co.ke/author/za-ndani"
 image: "https://i.ibb.co/tMW8djVz/153c01d0cd0d.webp"
@@ -9,9 +10,13 @@ category: "Entertainment"
 tags: ["esteri-tebandeke", "queen-of-katwe", "esteri-tebandeke-death", "kidney-complications"]
 canonical: "https://zandani.co.ke/article/queen-of-katwe-actress-esteri-tebandeke-dies-after-kidney-complicati"
 date: "2026-03-27T16:10:19Z"
-focusKeyword: "Queen of Katwe actress Esteri Tebandeke dies after kidney co"
 dateModified: "2026-03-27T16:10:19Z"
+focusKeyword: "Queen of Katwe actress Esteri Tebandeke dies after kidney co"
+schema: "NewsArticle"
 ---
+
+Queen of Katwe actress Esteri Tebandeke dies after kidney co is central to this update for Kenyan readers.
+
 Uganda's vibrant entertainment scene is in mourning this week following the tragic death of acclaimed actress Esteri Tebandeke, known for her powerful role in the globally celebrated film *Queen of Katwe*. Tebandeke passed away at Nakasero Hospital after a prolonged and arduous battle with kidney complications.
 
 Esteri Tebandeke: A Lasting Legacy
@@ -24,3 +29,18 @@ A Void in East African Entertainment Tebandeke's passing leaves a profound void 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

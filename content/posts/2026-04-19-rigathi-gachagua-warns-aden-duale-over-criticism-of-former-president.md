@@ -1,7 +1,8 @@
 ---
 title: "Rigathi Gachagua warns Aden Duale over criticism of former President Uhuru Kenyatta"
 slug: "rigathi-gachagua-warns-aden-duale-over-criticism-of-former-president"
-description: "Rigathi Gachagua warns Health CS Aden Duale against criticizing former President Uhuru Kenyatta, defending the leader during a church service in Murang'a."
+description: "Rigathi Gachagua warns Aden Duale over criticism of former P: Rigathi Gachagua warns Health CS Aden Duale against criticizing former President Uhuru Kenyatta,"
+excerpt: "Democracy for Citizens Party (DCP) leader Rigathi Gachagua on Sunday, April 19, 2026, warned Health Cabinet Secretary Aden Duale against cri"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/FpJjf67/f9b02e747827.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["rigathi-gachagua", "aden-duale", "uhuru-kenyatta", "muranga-county", "kenyan-politics"]
 canonical: "https://zandani.co.ke/article/rigathi-gachagua-warns-aden-duale-over-criticism-of-former-president"
 date: "2026-04-19T15:00:24Z"
-focusKeyword: "Rigathi Gachagua warns Aden Duale over criticism of former P"
 dateModified: "2026-04-19T15:00:24Z"
+focusKeyword: "Rigathi Gachagua warns Aden Duale over criticism of former P"
+schema: "NewsArticle"
 ---
+
+Rigathi Gachagua warns Aden Duale over criticism of former P is central to this update for Kenyan readers.
+
 Democracy for Citizens Party (DCP) leader Rigathi Gachagua on Sunday, April 19, 2026, warned Health Cabinet Secretary Aden Duale against criticizing former President Uhuru Kenyatta. Speaking at ACK Sr Mark Maragua Church in Murang'a County, Gachagua vehemently defended Kenyatta against Duale's recent political attacks.
 
 Renewed Political Tensions The political dispute reignited after Duale publicly accused former President Kenyatta on Saturday, April 18, of undermining President William Ruto's administration and actively forming new political alliances for the 2027 elections. Duale urged Kenyatta to "go home and rest," alleging he had politically backstabbed his successor and attempted to position himself as a kingmaker. The Health CS also revisited historical grievances, claiming Kenyatta "humiliated and persecuted" Ruto during their time in government and attempted an impeachment in 2019 without sufficient parliamentary backing.
@@ -22,3 +27,18 @@ SHA Financial Crisis Allegations Beyond the political exchanges, Gachagua shifte
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

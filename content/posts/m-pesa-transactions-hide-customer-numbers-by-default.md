@@ -1,15 +1,21 @@
 ---
 title: "M-Pesa Transactions Will Now Hide Customer Numbers by Default, Enhancing Privacy"
 slug: "m-pesa-transactions-hide-customer-numbers-by-default"
+description: "M-Pesa transactions will now hide customer numbers by default, a move approved by the CBK. This enhances privacy and aligns with Kenya's Data Protection Act"
 excerpt: "M-Pesa transactions will now hide customer numbers by default, a move approved by the CBK. This enhances privacy and aligns with Kenya's Data Protection Act 2019."
 author: "Elizabeth Muthoni"
 image: "https://i.ibb.co/Fc1YNZq/6b367f957742.jpg"
 category: "Technology"
-date: "2026-03-03"
 tags: ["m-pesa", "safaricom", "data protection", "kenya", "mobile money", "privacy", "digital payments"]
-focusKeyword: "M-Pesa Transactions Will Now Hide Customer Numbers by Defaul"
+canonical: "https://zandani.co.ke/article/m-pesa-transactions-hide-customer-numbers-by-default"
+date: "2026-03-03"
 dateModified: "2026-03-03"
+focusKeyword: "M-Pesa Transactions Will Now Hide Customer Numbers by Defaul"
+schema: "NewsArticle"
 ---
+
+M-Pesa Transactions Will Now Hide Customer Numbers by Defaul is central to this update for Kenyan readers.
+
 ## M-Pesa Transactions and the New Default Privacy Standard The Central Bank of Kenya (CBK) has officially approved Safaricom's initiative to mask customer phone numbers during M-Pesa transactions, a significant policy shift taking effect across the mobile money ecosystem. This change ensures that personal phone numbers are no longer automatically revealed to merchants during Paybill or Till number payments, aligning M-Pesa with contemporary data protection principles. This long-awaited regulatory nod brings a fundamental change to how personal data is handled within Kenya's dominant mobile money platform. Previously, every M-Pesa user's full name and phone number were automatically transmitted with payment alerts to merchants, without any opt-out mechanism. This practice, while perhaps unnoticed by many, created significant vulnerabilities, fostering unsolicited calls, spam messages, and potential avenues for fraud.
 
 Why Hiding Customer Numbers is a Necessary Step The shift to **hide customer numbers** is a direct response to the requirements of Kenya's Data Protection Act 2019, which mandates that personal data collected during transactions be strictly limited to what is necessary. The continued transmission of full customer phone numbers for routine purchases, such as groceries or utility bills, was undeniably excessive. Such data, once collected, could easily be repurposed into marketing lists or exploited for fraudulent activities, a risk that masking now mitigates at the source. While Safaricom had already implemented similar privacy measures within its Pochi la Biashara service, this latest CBK approval extends that same standard of privacy across the entire M-Pesa ecosystem. This closure of a long-standing data privacy gap is not merely a corporate altruism; it is a necessary compliance measure following years where user data was openly exposed. The Office of the Data Protection Commissioner (ODPC) reported over 5,000 complaints in 2024 alone, a third of which originated from financial firms, highlighting the pervasive issue of data misuse, including improper consent management and unsolicited communications. Such systemic issues underscore the imperative for robust regulatory enforcement, a topic that has also sparked national concern in other areas of digital identity and integrity, as seen in reports like [Martha Karua Demands Answers After Reports of RSF Financier Holding Kenyan Passport Sparks National Concern](https://zandani.co.ke/article/martha-karua-demands-answers-rsf-financier-holding-kenyan-passport).
@@ -18,3 +24,18 @@ The Operational Impact of Phone Number Masking by Default For businesses, partic
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

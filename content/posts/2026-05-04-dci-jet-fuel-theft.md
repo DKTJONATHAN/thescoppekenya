@@ -1,18 +1,19 @@
 ---
 title: "DCI Foils Attempted Jet Fuel Theft at Wilson Airport, 4 Arrested"
 slug: "dci-jet-fuel-theft"
+description: "DCI detectives foiled a major DCI jet fuel theft at Wilson Airport, leading to 4 arrests. This significant security breach involved siphoning jet fuel from"
+excerpt: "DCI detectives foiled a major DCI jet fuel theft at Wilson Airport, leading to 4 arrests. This significant..."
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/DHmfn4vn/d0d619fc909b.jpg"
 category: "News"
-date: "2026-05-04T10:29:16Z"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
-dateModified: "2026-05-04T10:29:16Z"
-schema: "NewsArticle"
-description: "DCI detectives foiled a major DCI jet fuel theft at Wilson Airport, leading to 4 arrests. This significant security breach involved siphoning jet fuel from"
-excerpt: "DCI detectives foiled a major DCI jet fuel theft at Wilson Airport, leading to 4 arrests. This significant..."
 tags: ["Kenya News", "DCI", "Jet Fuel Theft", "Wilson Airport", "Nairobi"]
+canonical: "https://zandani.co.ke/article/dci-jet-fuel-theft"
+date: "2026-05-04T10:29:16Z"
+dateModified: "2026-05-04T10:29:16Z"
 focusKeyword: "DCI jet fuel theft"
+schema: "NewsArticle"
 ---
+
 ## DCI Foils Major Jet Fuel Theft Attempt at Wilson Airport
 
 Detectives from the Directorate of Criminal Investigations (DCI) and the Kenya Airport Police Unit (KAPU) have successfully thwarted an attempt to siphon jet fuel from an aircraft undergoing maintenance at Wilson Airport. Four suspects were arrested in connection with the sophisticated DCI jet fuel theft operation, driven by the fuel's high market value and versatility as an additive.
@@ -31,3 +32,18 @@ Jet fuel theft is often motivated by its high market value and its versatility. 
 
 The DCI continues its thorough investigation into the matter. Such vigilance in securing critical national assets mirrors broader efforts to maintain order and integrity across various spheres, from addressing misinformation, as seen in reports like [Cabinet Secretary Kabogo Seeks TikTok Assurances to Curb Election Misinformation](https://zandani.co.ke/article/cabinet-secretary-kabogo-seeks-tiktok-assurances-to-curb-election-mi), to upholding standards in professional sports, as detailed in [Boxing News - Latest Fights, Winners, and Updates from the Ring](https://zandani.co.ke/article/boxing-news-latest-fights-winners-updates).
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

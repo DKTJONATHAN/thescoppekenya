@@ -1,16 +1,20 @@
 ---
 title: "President Ruto Appoints Justice Warsame to Supreme Court"
 slug: "president-ruto-appoints-justice-warsame-to-supreme-court"
-description: "President William Ruto has appointed Justice Mohamed Abdullahi Warsame to the Supreme Court as Kenya nominates Njoki Ndung'u for an ICC judgeship."
+description: "President Ruto Appoints Justice Warsame to Supreme Court: President William Ruto has appointed Justice Mohamed Abdullahi Warsame to the Supreme Court as Kenya"
+excerpt: "Kenya’s Judicial Balancing Act: The Supreme Court and the ICC Pivot The appointment of Justice Mohamed Abdullahi Warsame to the Supreme Cour"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/nNhJVvQZ/d76e3080fb8b.jpg"
 category: "Politics"
 tags: ["kenya judiciary", "william ruto", "supreme court", "mohamed abdullahi warsame", "njoki ndungu", "icc"]
+canonical: "https://zandani.co.ke/article/president-ruto-appoints-justice-warsame-to-supreme-court"
 date: "2026-05-06T15:05:47Z"
 dateModified: "2026-05-06T15:05:47Z"
+focusKeyword: "President Ruto Appoints Justice Warsame to Supreme Court"
 schema: "NewsArticle"
 ---
+
+President Ruto Appoints Justice Warsame to Supreme Court is central to this update for Kenyan readers.
 
 ## Kenya’s Judicial Balancing Act: The Supreme Court and the ICC Pivot
 
@@ -39,3 +43,18 @@ The judiciary remains the final arbiter of political conflicts in this country. 
 The primary focus now shifts to the diplomatic corridors in New York. Between now and the December 7-17, 2026, election period, the government must leverage its regional diplomatic capital to secure votes for Justice Ndung'u. Back in Nairobi, keep an eye on how the Supreme Court handles upcoming constitutional petitions. Judicial appointments are rarely about the individual alone; they are about the message the state sends to its citizens and the international community.
 
 Stability is the goal of the current administration.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

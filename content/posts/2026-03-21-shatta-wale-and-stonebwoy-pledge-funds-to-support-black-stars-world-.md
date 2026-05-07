@@ -1,7 +1,8 @@
 ---
 title: "Shatta Wale and Stonebwoy pledge funds to support Black Stars World Cup campaign"
 slug: "shatta-wale-and-stonebwoy-pledge-funds-to-support-black-stars-world-"
-description: "Shatta Wale and Stonebwoy pledge financial support for the Black Stars' 2026 World Cup campaign to help send Ghanaian fans to the global football tournament."
+description: "Shatta Wale and Stonebwoy pledge funds to support Black Star: Shatta Wale and Stonebwoy pledge financial support for the Black Stars' 2026 World Cup campaign"
+excerpt: "Ghanaian dancehall sensations Shatta Wale and Stonebwoy pledged substantial financial support for the Black Stars' 2026 World Cup campaign o"
 author: "Amara Ndlovu"
 author_url: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/hPFGm23/0e5e44625eb6.webp"
@@ -9,9 +10,13 @@ category: "Entertainment"
 tags: ["shatta-wale", "stonebwoy", "black-stars", "ghana-world-cup-campaign", "ghana-football-support"]
 canonical: "https://zandani.co.ke/article/shatta-wale-and-stonebwoy-pledge-funds-to-support-black-stars-world-"
 date: "2026-03-21T16:53:25Z"
-focusKeyword: "Shatta Wale and Stonebwoy pledge funds to support Black Star"
 dateModified: "2026-03-21T16:53:25Z"
+focusKeyword: "Shatta Wale and Stonebwoy pledge funds to support Black Star"
+schema: "NewsArticle"
 ---
+
+Shatta Wale and Stonebwoy pledge funds to support Black Star is central to this update for Kenyan readers.
+
 Ghanaian dancehall sensations Shatta Wale and Stonebwoy pledged substantial financial support for the Black Stars' 2026 World Cup campaign on Friday, March 21, 2026, at the Kempinski Hotel Gold Coast City. Their significant contributions fuel a nationwide fundraising initiative to send Ghanaian fans to the global football tournament.
 
 Ghanaian Music Icons Elevate Black Stars' World Cup Bid
@@ -24,3 +29,18 @@ Entertainers Champion National Spirit The significant contributions from Shatta 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

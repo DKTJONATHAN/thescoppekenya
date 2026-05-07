@@ -1,7 +1,8 @@
 ---
 title: "Government Requires Full Traceability of Livestock Exports With ANITRAC"
 slug: "government-requires-full-traceability-of-livestock-exports-with-anit"
-description: "Government mandates full traceability for all livestock exports starting March 30, 2026, utilizing the ANITRAC digital platform to meet global standards."
+description: "Government Requires Full Traceability of Livestock Exports W: Government mandates full traceability for all livestock exports starting March 30, 2026,"
+excerpt: "The Ministry of Agriculture, through Cabinet Secretary Mutahi Kagwe, today announced a mandate for full traceability of all livestock export"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/NP2CR4Z/234c25cc943d.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["anitrac-digital-platform", "mutahi-kagwe", "livestock-export-traceability", "agricultural-export-standards"]
 canonical: "https://zandani.co.ke/article/government-requires-full-traceability-of-livestock-exports-with-anit"
 date: "2026-03-30T14:04:02Z"
-focusKeyword: "Government Requires Full Traceability of Livestock Exports W"
 dateModified: "2026-03-30T14:04:02Z"
+focusKeyword: "Government Requires Full Traceability of Livestock Exports W"
+schema: "NewsArticle"
 ---
+
+Government Requires Full Traceability of Livestock Exports W is central to this update for Kenyan readers.
+
 The Ministry of Agriculture, through Cabinet Secretary Mutahi Kagwe, today announced a mandate for full traceability of all livestock exports. This directive, effective Monday, March 30, 2026, will utilize the ANITRAC digital platform to bolster the country's export sector in line with international standards.
 
 ANITRAC Transforms Livestock Export Traceability
@@ -24,3 +29,18 @@ Navigating Market Challenges and Expansion The nation's livestock export sector 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

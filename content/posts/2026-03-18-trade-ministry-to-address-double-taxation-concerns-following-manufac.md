@@ -1,7 +1,8 @@
 ---
 title: "Trade Ministry to Address Double Taxation Concerns Following Manufacturer Price Hike Warnings"
 slug: "trade-ministry-to-address-double-taxation-concerns-following-manufac"
-description: "The Trade Ministry addresses manufacturer concerns over double taxation and EPR fees to prevent potential price hikes on essential goods and services."
+description: "Trade Ministry to Address Double Taxation Concerns Following: The Trade Ministry addresses manufacturer concerns over double taxation and EPR fees to prevent"
+excerpt: "The government has committed to tackling taxation and regulatory concerns raised by the Kenya Association of Manufacturers (KAM) on Wednesda"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/4RD6gN7h/f73d6d3aacff.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["double-taxation-concerns", "kenya-association-of-manufacturers", "epr-regulations", "manufacturing-industry", "trade-ministry"]
 canonical: "https://zandani.co.ke/article/trade-ministry-to-address-double-taxation-concerns-following-manufac"
 date: "2026-03-18T15:40:32Z"
-focusKeyword: "Trade Ministry to Address Double Taxation Concerns Following"
 dateModified: "2026-03-18T15:40:32Z"
+focusKeyword: "Trade Ministry to Address Double Taxation Concerns Following"
+schema: "NewsArticle"
 ---
+
+Trade Ministry to Address Double Taxation Concerns Following is central to this update for Kenyan readers.
+
 The government has committed to tackling taxation and regulatory concerns raised by the Kenya Association of Manufacturers (KAM) on Wednesday, March 18, 2026. This follows warnings from manufacturers that current pressures, including potential double taxation, threaten to escalate prices of goods and services.
 
 Trade Ministry Responds to Manufacturer Warnings Manufacturers expressed significant concerns regarding the implementation of Extended Producer Responsibility (EPR) regulations, specifically a Ksh150 per-item fee on non-hazardous packaging payable to the National Environmental Management Authority (NEMA). This fee, they argue, introduces potential double taxation and increases operational costs, particularly for businesses relying on imports. KAM cautioned that such additional taxation risks reducing profitability, discouraging investment, and ultimately driving up consumer prices.
@@ -24,3 +29,18 @@ Government Engagement and Way Forward The Ministry of Trade has vowed to address
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

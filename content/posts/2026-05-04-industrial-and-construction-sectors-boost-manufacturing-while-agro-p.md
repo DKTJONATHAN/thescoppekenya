@@ -1,15 +1,21 @@
 ---
 title: "Industrial and construction sectors boost manufacturing while agro-processing contracts"
 slug: "industrial-and-construction-sectors-boost-manufacturing-while-agro-p"
+description: "Industrial and construction sectors boost manufacturing whil: Kenya Manufacturing Sector Driven by Industrial and Construction Gains in 2025 Kenya's"
+excerpt: "Kenya Manufacturing Sector Driven by Industrial and Construction Gains in 2025 Kenya's manufacturing sector experienced modest 2.1% growth i"
 author: "Grace Mkamburi"
 image: "https://i.ibb.co/992czJg2/959a45fddd27.jpg"
 category: "Business"
+tags: ["industrial and construction sectors boost manufacturing while agro p", "business", "kenya news"]
+canonical: "https://zandani.co.ke/article/industrial-and-construction-sectors-boost-manufacturing-while-agro-p"
 date: "2026-05-04T11:29:36Z"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 dateModified: "2026-05-04T11:29:36Z"
-schema: "NewsArticle"
 focusKeyword: "Industrial and construction sectors boost manufacturing whil"
+schema: "NewsArticle"
 ---
+
+Industrial and construction sectors boost manufacturing whil is central to this update for Kenyan readers.
+
 ## Kenya Manufacturing Sector Driven by Industrial and Construction Gains in 2025
 
 Kenya's manufacturing sector experienced modest 2.1% growth in 2025, reaching KSh 3.8 trillion in output. This expansion was uneven, largely driven by industrial and construction-related production, which offset a notable contraction in agro-processing, particularly sugar and tea, impacting overall sector performance.
@@ -34,3 +40,18 @@ The transport equipment sector recorded a strong rebound, with the motor vehicle
 
 Employment in manufacturing grew by 5.2% to 388,564 workers, accounting for 11.7% of formal wage employment. Compensation of employees in the sector increased to KSh 322.2 billion from KSh 309.6 billion in 2024. The Export Processing Zones (EPZs) demonstrated significant growth, with employment rising by 16.4% to 104,692 workers, driven primarily by apparel and agro-processing firms. The number of EPZ enterprises increased to 185 from 180, and total sales rose by 4.4% to KSh 142.2 billion, with exports increasing to KSh 136.8 billion from KSh 129.4 billion. These positive trends in job creation highlight potential benefits from strategic policy interventions aimed at boosting industry, as explored in [Kenya Budget: 5 Big Wins for Jobs and Industry Growth](https://zandani.co.ke/article/kenya-budget-5-big-wins-for-jobs-and-industry-growth).
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

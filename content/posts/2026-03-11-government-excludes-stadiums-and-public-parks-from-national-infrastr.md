@@ -1,13 +1,21 @@
 ---
 title: "Government excludes stadiums and public parks from National Infrastructure Fund financing"
 slug: "government-excludes-stadiums-and-public-parks-from-national-infrastr"
+description: "Government excludes stadiums and public parks from National: Government Clarifies National Infrastructure Fund Project Exclusions The government has issued a"
+excerpt: "Government Clarifies National Infrastructure Fund Project Exclusions The government has issued a definitive clarification regarding the type"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/Wv5vFRtp/2f090aeb27f4.jpg"
 category: "News"
+tags: ["government excludes stadiums and public parks from national infrastr", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/government-excludes-stadiums-and-public-parks-from-national-infrastr"
 date: "2026-03-11T19:12:08Z"
-focusKeyword: "Government excludes stadiums and public parks from National"
 dateModified: "2026-03-11T19:12:08Z"
+focusKeyword: "Government excludes stadiums and public parks from National"
+schema: "NewsArticle"
 ---
+
+Government excludes stadiums and public parks from National is central to this update for Kenyan readers.
+
 ## Government Clarifies National Infrastructure Fund Project Exclusions The government has issued a definitive clarification regarding the types of projects ineligible for financing through the newly enacted National Infrastructure Fund (NIF). Public parks and stadiums are among the social infrastructures that will not receive NIF funding, as they are classified as pure public goods unable to generate the predictable revenue required for investor repayment.
 
 NIF's Mandate and Exclusions Under the established NIF guidelines, projects must demonstrate a reliable income stream capable of supporting investment repayments. This criterion effectively excludes social infrastructures such as public parks and stadiums, which are considered pure public goods and do not align with the fund's agenda to generate profit for further investment. The government emphasized the importance of these public amenities but stated they cannot be structured under the NIF's investment-based model.
@@ -22,3 +30,18 @@ No Salary Deductions for NIF Treasury Cabinet Secretary John Mbadi confirmed tha
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

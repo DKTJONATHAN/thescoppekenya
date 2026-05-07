@@ -1,7 +1,8 @@
 ---
 title: "Government orders evacuation of Kibera and nearby estates as Nairobi Dam risks bursting"
 slug: "government-orders-evacuation-of-kibera-and-nearby-estates-as-nairobi"
-description: "The Water Resources Authority orders the immediate evacuation of Kibera and Lang'ata as the Nairobi Dam risks bursting following ongoing heavy rainfall."
+description: "Government orders evacuation of Kibera and nearby estates as: The Water Resources Authority orders the immediate evacuation of Kibera and Lang'ata as the"
+excerpt: "The Water Resources Authority has mandated the immediate evacuation of residents in six Nairobi estates located near the Nairobi Dam, includ"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/LX1bggfy/d6ecfc109df8.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["nairobi-dam-breach", "kibera-evacuation", "langata-estates", "water-resources-authority", "flood-risk-management"]
 canonical: "https://zandani.co.ke/article/government-orders-evacuation-of-kibera-and-nearby-estates-as-nairobi"
 date: "2026-03-21T16:48:37Z"
-focusKeyword: "Government orders evacuation of Kibera and nearby estates as"
 dateModified: "2026-03-21T16:48:37Z"
+focusKeyword: "Government orders evacuation of Kibera and nearby estates as"
+schema: "NewsArticle"
 ---
+
+Government orders evacuation of Kibera and nearby estates as is central to this update for Kenyan readers.
+
 The Water Resources Authority has mandated the immediate evacuation of residents in six Nairobi estates located near the Nairobi Dam, including Kibera and Lang'ata, effective March 20, 2026. This directive follows the dam's critical water levels, which threaten to breach its embankments amidst ongoing heavy rainfall across the capital.
 
 Nairobi Dam Risks Breach
@@ -24,3 +29,18 @@ Government Monitoring and Weather Outlook Government Spokesperson Isaac Mwaura h
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

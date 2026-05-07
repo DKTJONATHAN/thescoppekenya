@@ -1,7 +1,8 @@
 ---
 title: "EACC probes Embu MCAs over alleged Ksh95 million tender scandal"
 slug: "eacc-probes-embu-mcas-over-alleged-ksh95-million-tender-scandal"
-description: "EACC probes three Embu MCAs and county officials over an alleged Ksh95 million tender scandal involving irregular contract awards to proxy companies."
+description: "EACC probes Embu MCAs over alleged Ksh95 million tender scan: EACC probes three Embu MCAs and county officials over an alleged Ksh95 million tender scandal"
+excerpt: "By Celestine Nzioka The Ethics and Anti Corruption Commission (EACC) has initiated probes into an alleged Ksh95 million tender scandal invol"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/WvtkF7xV/5ee52b159c59.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["embu-mca-tender-scandal", "eacc-corruption-investigation", "embu-county-government", "public-procurement-fraud", "ksh95-million-tender-scandal"]
 canonical: "https://zandani.co.ke/article/eacc-probes-embu-mcas-over-alleged-ksh95-million-tender-scandal"
 date: "2026-03-24T13:52:33Z"
-focusKeyword: "EACC probes Embu MCAs over alleged Ksh95 million tender scan"
 dateModified: "2026-03-24T13:52:33Z"
+focusKeyword: "EACC probes Embu MCAs over alleged Ksh95 million tender scan"
+schema: "NewsArticle"
 ---
+
+EACC probes Embu MCAs over alleged Ksh95 million tender scan is central to this update for Kenyan readers.
+
 By Celestine Nzioka The Ethics and Anti-Corruption Commission (EACC) has initiated probes into an alleged Ksh95 million tender scandal involving three Embu Members of the County Assembly (MCAs) and county officials. Revealed Tuesday, March 24, 2026, the investigation focuses on claims of irregular contract awards to proxy companies with beneficial interests.
 
 Embu Tender Irregularities Under EACC Scrutiny
@@ -26,3 +31,18 @@ Bungoma County Faces Scrutiny Over Spending Further west, the anti-graft body is
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

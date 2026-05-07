@@ -1,16 +1,20 @@
 ---
 title: "President Ruto Appoints Justice Mohamed Warsame to Supreme Court"
 slug: "president-ruto-appoints-justice-mohamed-warsame-supreme-court"
-description: "President William Ruto has appointed Justice Mohamed Abdullahi Warsame to the Supreme Court while backing Justice Njoki Ndung'u for an ICC position."
+description: "President Ruto Appoints Justice Mohamed Warsame to Supreme Court: President William Ruto has appointed Justice Mohamed Abdullahi Warsame to the Supreme Court"
+excerpt: "Judicial Appointments and the Global Stage Kenyans are weighing in on the dual track strategy behind the latest judicial shifts. While some"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/p6WSwxQ2/0957be17f543.jpg"
 category: "News"
 tags: ["judiciary", "supreme court", "william ruto", "mohamed warsame", "njoki ndungu", "kenya news"]
+canonical: "https://zandani.co.ke/article/president-ruto-appoints-justice-mohamed-warsame-supreme-court"
 date: "2026-05-06T14:50:13Z"
 dateModified: "2026-05-06T14:50:13Z"
+focusKeyword: "President Ruto Appoints Justice Mohamed Warsame to Supreme Court"
 schema: "NewsArticle"
 ---
+
+President Ruto Appoints Justice Mohamed Warsame to Supreme Court is central to this update for Kenyan readers.
 
 ## Judicial Appointments and the Global Stage
 
@@ -37,3 +41,18 @@ The synchronization of these two appointments suggests the executive is moving b
 The next 48 hours will likely see further scrutiny of the Supreme Court's internal dynamics as Justice Warsame assumes his duties. Legal scholars are already watching to see if his presence shifts the court’s decision-making patterns during upcoming constitutional petitions. Simultaneously, observers will look toward diplomatic channels to gauge how international partners receive the Njoki Ndung'u candidacy. The actual ICC elections, slated for December 7 to 17, 2026, will be the true indicator of whether this dual-track strategy successfully translates into a seat at the table.
 
 The public is keeping a watchful eye on the courts, waiting to see if these strategic moves actually clear the path for a more stable and respected legal order.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

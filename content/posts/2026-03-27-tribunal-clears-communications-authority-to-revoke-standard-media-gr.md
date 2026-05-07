@@ -1,7 +1,8 @@
 ---
 title: "Tribunal clears Communications Authority to revoke Standard Media Group licenses over unpaid fees"
 slug: "tribunal-clears-communications-authority-to-revoke-standard-media-gr"
-description: "Tribunal clears the Communications Authority to revoke Standard Media Group's licenses for KTN News and Radio Maisha over unpaid fees of Ksh48.9 million."
+description: "Tribunal clears Communications Authority to revoke Standard: Tribunal clears the Communications Authority to revoke Standard Media Group's licenses for KTN"
+excerpt: "The Communications and Multimedia Appeals Tribunal on Friday, March 27, 2026, authorized the Communications Authority of Kenya (CA) to revok"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/PGdrKKg5/47140804f07c.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["standard-media-group", "communications-authority-of-kenya", "broadcasting-license-revocation", "media-regulation", "ktn-news"]
 canonical: "https://zandani.co.ke/article/tribunal-clears-communications-authority-to-revoke-standard-media-gr"
 date: "2026-03-27T16:07:39Z"
-focusKeyword: "Tribunal clears Communications Authority to revoke Standard"
 dateModified: "2026-03-27T16:07:39Z"
+focusKeyword: "Tribunal clears Communications Authority to revoke Standard"
+schema: "NewsArticle"
 ---
+
+Tribunal clears Communications Authority to revoke Standard is central to this update for Kenyan readers.
+
 The Communications and Multimedia Appeals Tribunal on Friday, March 27, 2026, authorized the Communications Authority of Kenya (CA) to revoke six broadcasting licenses belonging to the Standard Media Group. This decision follows the media house's outstanding debt of Ksh48.9 million in unpaid annual fees and levies.
 
 Licences Affected by Tribunal Ruling The ruling impacts Radio Maisha, Spice FM, Vybez Radio, Berur FM, KTN Burudani, and KTN News. The tribunal dismissed an appeal filed by The Standard Media Group PLC, affirming that the CA's planned revocation is lawful, valid, and consistent with the Kenya Information and Communications Act (KICA).
@@ -22,3 +27,18 @@ Timeline of Non-Compliance and Appeals The CA issued a Notice of Contravention t
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

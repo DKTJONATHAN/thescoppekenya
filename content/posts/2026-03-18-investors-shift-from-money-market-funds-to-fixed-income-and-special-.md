@@ -2,6 +2,7 @@
 title: "Investors shift from money market funds to fixed income and special funds"
 slug: "investors-shift-from-money-market-funds-to-fixed-income-and-special-"
 description: "Investors shift from Money Market Funds to Fixed Income and Special Funds for higher returns as MMF market share fell to 56%, according to the CMA report."
+excerpt: "Investors are increasingly shifting from Money Market Funds (MMFs) to Fixed Income Funds (FIFs) and Special Funds, as revealed by the Capita"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Vc2BZfVZ/a1e8b39f4eb2.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["money-market-funds", "fixed-income-funds", "capital-markets-authority", "special-funds", "collective-investment-schemes"]
 canonical: "https://zandani.co.ke/article/investors-shift-from-money-market-funds-to-fixed-income-and-special-"
 date: "2026-03-18T09:09:36Z"
-focusKeyword: "Investors shift from money market funds to fixed income and"
 dateModified: "2026-03-18T09:09:36Z"
+focusKeyword: "Investors shift from money market funds to fixed income and"
+schema: "NewsArticle"
 ---
+
+Investors shift from money market funds to fixed income and is central to this update for Kenyan readers.
+
 Investors are increasingly shifting from Money Market Funds (MMFs) to Fixed Income Funds (FIFs) and Special Funds, as revealed by the Capital Markets Authority's (CMA) Q4 2025 Collective Investment Schemes report. This trend reflects a pursuit of higher returns within the dynamic financial landscape of 2026.
 
 Evolving Investment Preferences The CMA's report for October to December 2025 indicates a notable reduction in the dominance of MMFs. While MMFs remain the most widely used investment option, their market share has steadily declined from 90 percent in December 2021 to 56 percent in December 2025. This significant shift over four years is primarily driven by investors seeking greater returns, which FIFs and Special Funds typically offer.
@@ -26,3 +31,18 @@ Major Players in the Money Market Fund Sector Current CMA data identifies Sanlam
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

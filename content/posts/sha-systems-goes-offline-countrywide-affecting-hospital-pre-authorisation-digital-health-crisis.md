@@ -1,15 +1,21 @@
 ---
 title: "SHA Systems Goes Offline Countrywide, Affecting Hospital Pre-Authorisation: Unpacking Kenya's Digital Health Crisis"
 slug: "sha-systems-goes-offline-countrywide-affecting-hospital-pre-authorisation-digital-health-crisis"
+description: "SHA Systems Goes Offline Countrywide Affecting Hospital Pre-: The nationwide outage of SHA Systems goes offline countrywide, severely affecting hospital"
 excerpt: "The nationwide outage of SHA Systems goes offline countrywide, severely affecting hospital pre-authorisation services, highlighting critical vulnerabilities in Kenya's digital health infrastructure."
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/DPvCNbYk/2cab8847a434.jpg"
 category: "News"
+tags: ["Social Health Authority", "SHA", "digital systems", "healthcare", "Kenya", "hospital pre-authorisation", "service disruption", "Digital Health Agency"]
+canonical: "https://zandani.co.ke/article/sha-systems-goes-offline-countrywide-affecting-hospital-pre-authorisation-digital-health-crisis"
 date: "2026-03-03"
-tags: ["Social Health Authority", "SHA", "digital systems", "healthcare", "Kenya", "hospital pre-authorisation", "service disruption", "Digital Health Agency", "patient care", "national crisis", "system failure"]
-focusKeyword: "SHA Systems Goes Offline Countrywide Affecting Hospital Pre-"
 dateModified: "2026-03-03"
+focusKeyword: "SHA Systems Goes Offline Countrywide Affecting Hospital Pre-"
+schema: "NewsArticle"
 ---
+
+SHA Systems Goes Offline Countrywide Affecting Hospital Pre- is central to this update for Kenyan readers.
+
 ### SHA Systems Goes Offline Countrywide: A Crisis of Digital Dependency The Social Health Authority (SHA) has plunged Kenya's healthcare system into significant disarray, with its digital platforms experiencing a nationwide disruption that commenced on Sunday, March 1, 2026. This critical outage, confirmed by SHA CEO Dr. Mercy Mwangangi on March 2, has crippled hospital pre-authorisation services across all contracted healthcare facilities, raising profound questions about the resilience and reliability of Kenya's increasingly digitised health infrastructure. Patients are bearing the immediate and devastating brunt of this technological failure, facing prolonged delays in accessing vital treatments and, in some cases, being forced into unexpected out-of-pocket payments for urgent medical care.
 
 The Unseen Costs of Affecting Hospital Pre-Authorisation The impact of the SHA systems going offline countrywide extends far beyond mere inconvenience, exposing critical vulnerabilities within the national healthcare framework. The pre-authorisation system, designed as a digital gatekeeping mechanism, ensures financial coverage and necessity checks for high-cost or specialised medical procedures. With this system unavailable, hospitals are caught in an operational and ethical dilemma: delay potentially life-saving treatments, or proceed without guaranteed reimbursement, risking immense financial losses. This administrative deadlock translates directly into human suffering, with queues lengthening and anxiety mounting among families awaiting approvals for critical interventions. The disruption is officially attributed to a "major incident" affecting the Digital Health Agency (DHA), the service provider critical to SHA operations. However, the lack of a clear timeline for restoration, as confirmed by Dr. Mwangangi, exacerbates an already volatile situation, leaving both patients and healthcare providers in an indefinite state of uncertainty. This incident casts a long shadow over the government's ambitious drive towards universal health coverage, demonstrating that a digital facade, much like the glitz surrounding some digital launches, can sometimes obscure fundamental systemic weaknesses. Indeed, the Rural and Urban Private Hospitals Association (RUPHA) chairman, Brian Lishenga, noted that the system had already been experiencing intermittent challenges in the preceding week, suggesting deeper, unaddressed issues beneath the surface.
@@ -18,3 +24,18 @@ Systemic Failures and the Real Losers When SHA Systems Go Offline The current cr
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

@@ -1,7 +1,8 @@
 ---
 title: "President Ruto announces dualling of Makutano-Meru highway under National Infrastructure Fund"
 slug: "president-ruto-announces-dualling-of-makutano-meru-highway-under-nat"
-description: "President Ruto announced the dualling of the 169km Makutano-Meru highway through the National Infrastructure Fund to boost trade between Meru and Nairobi."
+description: "President Ruto announces dualling of Makutano-Meru highway u: President Ruto announced the dualling of the 169km Makutano-Meru highway through the National"
+excerpt: "President William Ruto announced the dualling of the 169 kilometre Makutano Meru highway through the new National Infrastructure Fund (NIF)"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/j9WdJGgb/456a0ee4e03f.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["president-william-ruto", "makutano-meru-highway", "national-infrastructure-fund", "transport-infrastructure", "road-dualling"]
 canonical: "https://zandani.co.ke/article/president-ruto-announces-dualling-of-makutano-meru-highway-under-nat"
 date: "2026-04-26T17:59:38Z"
-focusKeyword: "President Ruto announces dualling of Makutano-Meru highway u"
 dateModified: "2026-04-26T17:59:38Z"
+focusKeyword: "President Ruto announces dualling of Makutano-Meru highway u"
+schema: "NewsArticle"
 ---
+
+President Ruto announces dualling of Makutano-Meru highway u is central to this update for Kenyan readers.
+
 President William Ruto announced the dualling of the 169-kilometre Makutano-Meru highway through the new National Infrastructure Fund (NIF) on Sunday, April 26, 2026, during a church service in Tharaka Nithi County. This critical project aims to significantly improve trade and transport between Meru and Nairobi.
 
 ## National Infrastructure Fund to Drive Key Projects
@@ -30,3 +35,18 @@ Addressing the long-standing safety concerns at Nithi Bridge, President Ruto con
 
 Beyond the Makutano-Meru highway, the National Infrastructure Fund is earmarked for other crucial projects, including the construction of dams nationwide to bolster food security. The beautification of the Jomo Kenyatta International Airport (JKIA) was previously announced as the inaugural project to be funded under the new initiative, making the highway project the second major undertaking by NIF.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

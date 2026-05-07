@@ -1,7 +1,8 @@
 ---
 title: "Prophet Victor Kanyari describes life in KSh 90 million Runda mansion as lonely"
 slug: "prophet-victor-kanyari-describes-life-in-ksh-90-million-runda-mansio"
-description: "Prophet Victor Kanyari has abandoned his KSh 90 million Runda mansion, citing loneliness and a preference for the vibrant community life in Kayole."
+description: "Prophet Victor Kanyari describes life in KSh 90 million Rund: Prophet Victor Kanyari has abandoned his KSh 90 million Runda mansion, citing loneliness and a"
+excerpt: "Prophet Victor Kanyari, the leader of Salvation Healing Ministry, recently sparked discussion after moving into his KSh 90 million Runda man"
 author: "Za Ndani"
 author_url: "https://zandani.co.ke/author/za-ndani"
 image: "https://i.ibb.co/prPG6488/fbac933c66d0.webp"
@@ -9,9 +10,13 @@ category: "Entertainment"
 tags: ["victor-kanyari", "prophet-victor-kanyari", "runda-mansion", "ksh-90-million-mansion", "kanyari-loneliness"]
 canonical: "https://zandani.co.ke/article/prophet-victor-kanyari-describes-life-in-ksh-90-million-runda-mansio"
 date: "2026-04-15T03:44:43Z"
-focusKeyword: "Prophet Victor Kanyari describes life in KSh 90 million Rund"
 dateModified: "2026-04-15T03:44:43Z"
+focusKeyword: "Prophet Victor Kanyari describes life in KSh 90 million Rund"
+schema: "NewsArticle"
 ---
+
+Prophet Victor Kanyari describes life in KSh 90 million Rund is central to this update for Kenyan readers.
+
 Prophet Victor Kanyari, the leader of Salvation Healing Ministry, recently sparked discussion after moving into his KSh 90 million Runda mansion only to find it isolating. The controversial preacher soon abandoned the luxury abode, revealing his preference for the vibrant community life he experienced in areas like Kayole.
 
 Prophet Kanyari's Runda Reversal
@@ -24,3 +29,18 @@ Kayole Calling Home Despite his daughter's platforms showcasing the grand mansio
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

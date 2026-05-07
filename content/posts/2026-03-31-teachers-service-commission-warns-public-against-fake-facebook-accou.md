@@ -1,7 +1,8 @@
 ---
 title: "Teachers Service Commission warns public against fake Facebook account impersonating acting CEO"
 slug: "teachers-service-commission-warns-public-against-fake-facebook-accou"
-description: "TSC warns public against a fraudulent Facebook account impersonating acting CEO Evaleen Mitei, urging stakeholders to use official channels only."
+description: "Teachers Service Commission warns public against fake Facebo: TSC warns public against a fraudulent Facebook account impersonating acting CEO Evaleen Mitei,"
+excerpt: "The Teachers Service Commission (TSC) today, Tuesday, March 31, 2026, issued a public caution regarding a fraudulent Facebook account posing"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/mrnRB0tK/be51ba973814.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["tsc-fake-facebook-account", "evaleen-mitei-impersonation", "teachers-service-commission-warning", "social-media-fraud", "public-caution-tsc"]
 canonical: "https://zandani.co.ke/article/teachers-service-commission-warns-public-against-fake-facebook-accou"
 date: "2026-03-31T15:37:58Z"
-focusKeyword: "Teachers Service Commission warns public against fake Facebo"
 dateModified: "2026-03-31T15:37:58Z"
+focusKeyword: "Teachers Service Commission warns public against fake Facebo"
+schema: "NewsArticle"
 ---
+
+Teachers Service Commission warns public against fake Facebo is central to this update for Kenyan readers.
+
 The Teachers Service Commission (TSC) today, Tuesday, March 31, 2026, issued a public caution regarding a fraudulent Facebook account posing as its acting CEO, Evaleen Mitei. The commission urged stakeholders to disregard all information originating from the unverified page, emphasizing reliance on official communication channels only.
 
 Public Caution on Impersonation
@@ -24,3 +29,18 @@ Broader Impersonation Trends The TSC's warning aligns with its recent instructio
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

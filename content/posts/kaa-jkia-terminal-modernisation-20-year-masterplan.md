@@ -1,15 +1,21 @@
 ---
 title: "KAA Unveils 20-Year Masterplan for JKIA Terminal Modernisation: A Strategic Overhaul"
 slug: "kaa-jkia-terminal-modernisation-20-year-masterplan"
+description: "KAA Unveils 20-Year Masterplan for JKIA Terminal Modernisati: The Kenya Airports Authority (KAA) has unveiled an ambitious 20-Year Masterplan for JKIA Terminal"
 excerpt: "The Kenya Airports Authority (KAA) has unveiled an ambitious 20-Year Masterplan for JKIA Terminal Modernisation, aiming to significantly boost capacity and solidify its regional hub status."
 author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/jomo_kenyatta_international_airport_jkia.jpg?itok=HulTRo16"
 category: "Politics"
+tags: ["Kenya Airports Authority", "JKIA", "Jomo Kenyatta International Airport", "airport modernisation", "infrastructure", "aviation", "Kenya", "government policy"]
+canonical: "https://zandani.co.ke/article/kaa-jkia-terminal-modernisation-20-year-masterplan"
 date: "2026-02-27"
-tags: ["Kenya Airports Authority", "JKIA", "Jomo Kenyatta International Airport", "airport modernisation", "infrastructure", "aviation", "Kenya", "government policy", "economic development", "William Ruto"]
-focusKeyword: "KAA Unveils 20-Year Masterplan for JKIA Terminal Modernisati"
 dateModified: "2026-02-27"
+focusKeyword: "KAA Unveils 20-Year Masterplan for JKIA Terminal Modernisati"
+schema: "NewsArticle"
 ---
+
+KAA Unveils 20-Year Masterplan for JKIA Terminal Modernisati is central to this update for Kenyan readers.
+
 ## KAA Unveils Ambitious 20-Year Masterplan for JKIA Terminal Modernisation The Kenya Airports Authority (KAA) has presented a comprehensive 20-Year Masterplan (2025-2045) for Jomo Kenyatta International Airport (JKIA) Terminal Modernisation, designed to elevate the facility to a world-class aviation hub. This strategic blueprint aims to increase JKIA's annual passenger handling capacity from 7.5 million to an eventual 27 million, addressing current congestion and enhancing operational efficiency.
 
 Driving Capacity and Efficiency Through JKIA Terminal Modernisation The unveiled 20-Year Masterplan outlines a transformative agenda for Kenya's primary aviation gateway. Presented to staff during a consultative forum on Wednesday, February 26, the plan seeks to expand JKIA's annual passenger handling capacity significantly. KAA Managing Director Mohamud Gedi highlighted that the modernisation effort would first raise the existing terminal's capacity from 7.5 million to 12 million passengers annually. This initial enhancement is intended to alleviate congestion and improve the overall passenger experience. Notably, JKIA has been operating beyond its original design capacity, handling 8.6 million passengers in 2024 and 8.8 million in 2025, exceeding its current limit of 8 million. Projections indicate that existing facilities would reach operational breaking points within three years without intervention.
@@ -22,3 +28,18 @@ Stakeholder Engagement and the Future of KAA Operations Beyond the physical infr
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

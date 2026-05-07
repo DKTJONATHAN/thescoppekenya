@@ -1,7 +1,8 @@
 ---
 title: "Nairobi remains the epicentre of extrajudicial killings in Kenya despite a decline in cases"
 slug: "nairobi-remains-the-epicentre-of-extrajudicial-killings-in-kenya-des"
-description: "Nairobi remains the epicentre for extrajudicial killings in Kenya for a fourth year, recording 32 cases in 2025 despite an overall decline in total cases."
+description: "Nairobi remains the epicentre of extrajudicial killings in K: Nairobi remains the epicentre for extrajudicial killings in Kenya for a fourth year, recording 32"
+excerpt: "Nairobi City County has ranked as Kenya's epicentre for extrajudicial executions for a fourth consecutive year, according to the recently re"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/gLhZMK9d/43f9e8982e7b.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["extrajudicial-killings", "nairobi-city-county", "missing-voices-report", "human-rights-violations"]
 canonical: "https://zandani.co.ke/article/nairobi-remains-the-epicentre-of-extrajudicial-killings-in-kenya-des"
 date: "2026-03-25T17:18:41Z"
-focusKeyword: "Nairobi remains the epicentre of extrajudicial killings in K"
 dateModified: "2026-03-25T17:18:41Z"
+focusKeyword: "Nairobi remains the epicentre of extrajudicial killings in K"
+schema: "NewsArticle"
 ---
+
+Nairobi remains the epicentre of extrajudicial killings in K is central to this update for Kenyan readers.
+
 Nairobi City County has ranked as Kenya's epicentre for extrajudicial executions for a fourth consecutive year, according to the recently released Missing Voices 2025 Annual Report, "Unbowed for Justice." Despite a gradual decline in total cases since 2022, the capital continued to record the highest numbers nationwide in 2025.
 
 Nairobi Remains Epicentre of Extrajudicial Killings
@@ -26,3 +31,18 @@ Systemic Barriers to Justice The Missing Voices report also underscores systemic
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

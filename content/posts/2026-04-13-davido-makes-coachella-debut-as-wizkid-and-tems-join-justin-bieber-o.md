@@ -1,7 +1,8 @@
 ---
 title: "Davido makes Coachella debut as Wizkid and Tems join Justin Bieber on stage"
 slug: "davido-makes-coachella-debut-as-wizkid-and-tems-join-justin-bieber-o"
-description: "Davido makes his Coachella debut as Wizkid and Tems join Justin Bieber on stage for a surprise Essence performance during the 2026 California festival."
+description: "Davido makes Coachella debut as Wizkid and Tems join Justin: Davido makes his Coachella debut as Wizkid and Tems join Justin Bieber on stage for a surprise"
+excerpt: "Davido made his long awaited Coachella debut on Saturday, April 11, delivering a 45 minute set on the Gobi Stage in Indio, California. Later"
 author: "Amara Ndlovu"
 author_url: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/DH1G3Ks3/4bde9046b4f2.webp"
@@ -9,9 +10,13 @@ category: "Entertainment"
 tags: ["davido-coachella-debut", "wizkid-tems-justin-bieber", "afrobeats-at-coachella", "nigerian-music-stars"]
 canonical: "https://zandani.co.ke/article/davido-makes-coachella-debut-as-wizkid-and-tems-join-justin-bieber-o"
 date: "2026-04-13T19:50:50Z"
-focusKeyword: "Davido makes Coachella debut as Wizkid and Tems join Justin"
 dateModified: "2026-04-13T19:50:50Z"
+focusKeyword: "Davido makes Coachella debut as Wizkid and Tems join Justin"
+schema: "NewsArticle"
 ---
+
+Davido makes Coachella debut as Wizkid and Tems join Justin is central to this update for Kenyan readers.
+
 Davido made his long-awaited Coachella debut on Saturday, April 11, delivering a 45-minute set on the Gobi Stage in Indio, California. Later that evening, Wizkid and Tems surprised fans by joining Justin Bieber on the main stage for the "Essence" remix, marking a notable evening for Nigerian music at the 2026 festival.
 
 Nigerian Stars Shine at Coachella 2026 Davido's performance from 7:50 to 8:35 p.m. was a highlight, opening with "Dami Duro" and moving through a catalogue of hits supported by dancers and a live band. The set included tracks like "If," "Skelewu," and "With You," with Adekunle Gold joining for a medley that featured "High." This marked Davido's first appearance at the Coachella Valley Music and Arts Festival, which celebrates its 25th edition this year, running across two weekends from April 10-12 and April 17-19. Headliners for the festival include Sabrina Carpenter, Justin Bieber, and Karol G.
@@ -22,3 +27,18 @@ Representation and Historical Context While Davido was the only Nigerian-based a
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

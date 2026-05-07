@@ -1,7 +1,8 @@
 ---
 title: "Katwa Kigen among five candidates shortlisted for Supreme Court judge position"
 slug: "katwa-kigen-among-five-candidates-shortlisted-for-supreme-court-judg"
-description: "Judicial Service Commission (JSC) has shortlisted five candidates, including Katwa Kigen, for a vacant Supreme Court judge position."
+description: "Katwa Kigen among five candidates shortlisted for Supreme Co: Judicial Service Commission (JSC) has shortlisted five candidates, including Katwa Kigen, for a"
+excerpt: "The Judicial Service Commission (JSC) on Friday, March 27, 2026, announced the shortlisting of five candidates, including Court of Appeal Ju"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/RGNDwHMx/53dbfb1f7ea1.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["supreme-court-shortlist", "justice-katwa-kigen", "judicial-service-commission", "judicial-appointments", "supreme-court-vacancy"]
 canonical: "https://zandani.co.ke/article/katwa-kigen-among-five-candidates-shortlisted-for-supreme-court-judg"
 date: "2026-03-27T07:36:32Z"
-focusKeyword: "Katwa Kigen among five candidates shortlisted for Supreme Co"
 dateModified: "2026-03-27T07:36:32Z"
+focusKeyword: "Katwa Kigen among five candidates shortlisted for Supreme Co"
+schema: "NewsArticle"
 ---
+
+Katwa Kigen among five candidates shortlisted for Supreme Co is central to this update for Kenyan readers.
+
 The Judicial Service Commission (JSC) on Friday, March 27, 2026, announced the shortlisting of five candidates, including Court of Appeal Judge Justice Katwa Kigen, for a vacant Supreme Court judge position. This competitive selection process aims to fill the apex court's vacancy created by Justice Mohamed Ibrahim's death.
 
 Supreme Court Shortlist Announced
@@ -24,3 +29,18 @@ Vacancy and Appointment Process The vacancy at the Supreme Court arose from the 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

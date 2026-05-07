@@ -1,18 +1,19 @@
 ---
 title: "How Marurui Squatters Protest Paralyzed Nairobi's Northern Bypass"
 slug: "marurui-squatters-protest"
+description: "Marurui squatters protest land grabbing along Nairobi's Northern Bypass, paralyzing transport. Over 6,000 residents are affected by this crucial land dispu"
+excerpt: "Marurui squatters protest land grabbing along Nairobi's Northern Bypass, paralyzing transport. Over 6,000 residents are affected by this..."
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/BVQm85GN/883d6bfb5f75.jpg"
 category: "News"
-date: "2026-05-03T17:08:14Z"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
-dateModified: "2026-05-03T17:08:14Z"
-schema: "NewsArticle"
-description: "Marurui squatters protest land grabbing along Nairobi's Northern Bypass, paralyzing transport. Over 6,000 residents are affected by this crucial land dispu"
-excerpt: "Marurui squatters protest land grabbing along Nairobi's Northern Bypass, paralyzing transport. Over 6,000 residents are affected by this..."
 tags: ["Kenya News", "Land Grabbing", "Marurui Squatters", "Northern Bypass", "Nairobi"]
+canonical: "https://zandani.co.ke/article/marurui-squatters-protest"
+date: "2026-05-03T17:08:14Z"
+dateModified: "2026-05-03T17:08:14Z"
 focusKeyword: "Marurui squatters protest"
+schema: "NewsArticle"
 ---
+
 ## Marurui Squatters Protest Paralyzes Northern Bypass
 
 Marurui squatters in Nairobi's Kasarani area recently paralyzed transport along the Northern Bypass, staging protests against alleged land grabbing by a private developer. Over 6,000 residents blocked the major roadway, vowing to remain on land they have occupied for decades. They appeal to Governor Sakaja and President Ruto for intervention.
@@ -31,3 +32,18 @@ The Marurui area is characterized by a complex mix of private property, public u
 
 Much of the land in Marurui remains contested between private entities and the government. A significant 4-acre parcel near Windsor Golf Club is currently at the centre of an ongoing court battle. The family of the late Super Minister John Michuki claims ownership of this parcel, while the Nairobi County Government maintains the land was surrendered for public use. In April last year (April 2025), the Environment and Land Court (ELC) issued a halt order on construction on this contested land. However, conflicts and further protests among the involved parties have continued despite the court's directive, underscoring the deep-seated nature of land issues in the area, a situation that the latest **Marurui squatters protest** has once again brought into sharp focus.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

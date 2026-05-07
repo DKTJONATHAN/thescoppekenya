@@ -1,7 +1,8 @@
 ---
 title: "MOJA Expressway warns motorists against overloading vehicles on Nairobi Expressway"
 slug: "moja-expressway-warns-motorists-against-overloading-vehicles-on-nair"
-description: "MOJA Expressway warns motorists against vehicle overloading on the Nairobi Expressway to ensure public safety and maintain a smooth flow of traffic."
+description: "MOJA Expressway warns motorists against overloading vehicles: MOJA Expressway warns motorists against vehicle overloading on the Nairobi Expressway to ensure"
+excerpt: "MOJA Expressway Company Limited has issued a stern warning to motorists using the Nairobi Expressway against vehicle overloading, citing the"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Mk34PKcP/6e35b524b377.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["nairobi-expressway", "moja-expressway", "vehicle-overloading", "road-safety"]
 canonical: "https://zandani.co.ke/article/moja-expressway-warns-motorists-against-overloading-vehicles-on-nair"
 date: "2026-03-16T19:30:32Z"
-focusKeyword: "MOJA Expressway warns motorists against overloading vehicles"
 dateModified: "2026-03-16T19:30:32Z"
+focusKeyword: "MOJA Expressway warns motorists against overloading vehicles"
+schema: "NewsArticle"
 ---
+
+MOJA Expressway warns motorists against overloading vehicles is central to this update for Kenyan readers.
+
 MOJA Expressway Company Limited has issued a stern warning to motorists using the Nairobi Expressway against vehicle overloading, citing the dangerous and unlawful practice that has become prevalent in recent weeks. The company, managing the highway's daily operations, emphasized the strict prohibition to ensure public safety and smooth traffic flow.
 
 Overloading Risks on Nairobi Expressway
@@ -24,3 +29,18 @@ Penalties for Non-Compliance Motorists found overloading vehicles face severe re
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

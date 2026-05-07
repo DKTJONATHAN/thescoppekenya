@@ -1,13 +1,21 @@
 ---
 title: "Nairobi Expressway Flooding: Shocking Blame 2024"
 slug: "nairobi-expressway-flooding-shocking-blame-2024"
+description: "Nairobi Expressway Flooding Shocking Blame 2024: Nairobi Expressway Blamed for Capital Flooding The Motorists Association of Kenya (MAK) has blamed the Nairobi"
+excerpt: "Nairobi Expressway Blamed for Capital Flooding The Motorists Association of Kenya (MAK) has blamed the Nairobi Expressway for the capital's"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/DPrtrvG1/f473db29726d.jpg"
 category: "News"
+tags: ["nairobi expressway flooding shocking blame 2024", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/nairobi-expressway-flooding-shocking-blame-2024"
 date: "2026-03-08T15:26:17Z"
-focusKeyword: "Nairobi Expressway Flooding Shocking Blame 2024"
 dateModified: "2026-03-08T15:26:17Z"
+focusKeyword: "Nairobi Expressway Flooding Shocking Blame 2024"
+schema: "NewsArticle"
 ---
+
+Nairobi Expressway Flooding Shocking Blame 2024 is central to this update for Kenyan readers.
+
 ## Nairobi Expressway Blamed for Capital Flooding The Motorists Association of Kenya (MAK) has blamed the Nairobi Expressway for the capital's severe flooding, demanding accountability from its operators. On Sunday, March 8, MAK stated the project's construction disrupted crucial drainage, overwhelming the city's road network during rainfall.
 
 Expressway Impact on Drainage In a statement released on Sunday, March 8, the Motorists Association of Kenya (MAK) directly attributed Nairobi's persistent flooding to the Nairobi Expressway project. MAK asserted that before the mega project along Mombasa Road and Uhuru Highway, these transport corridors did not experience recurrent inundation. The association claims the expressway's construction interfered with numerous drainage channels across the corridor, contributing to major traffic disruptions on the busy route during rainy periods. MAK also noted that the road collects substantial volumes of water, directing them to the lower deck section, which then overwhelms existing drainage infrastructure.
@@ -20,3 +28,18 @@ Widespread Flooding Across Kenya The accusations against the expressway operator
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

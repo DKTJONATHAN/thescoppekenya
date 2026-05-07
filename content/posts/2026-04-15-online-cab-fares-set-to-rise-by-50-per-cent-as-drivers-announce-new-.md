@@ -1,7 +1,8 @@
 ---
 title: "Online cab fares set to rise by 50 per cent as drivers announce new minimum charge"
 slug: "online-cab-fares-set-to-rise-by-50-per-cent-as-drivers-announce-new-"
-description: "Online cab fares are set to rise by 50% after the Organization of Online Drivers announced a new Ksh330 minimum charge, effective from August 15, 2026."
+description: "Online cab fares set to rise by 50 per cent as drivers annou: Online cab fares are set to rise by 50% after the Organization of Online Drivers announced a new"
+excerpt: "By Celestine Nzioka Online cab users face a 50 percent fare increase announced by the Organization of Online Drivers (OOD), elevating the mi"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/gL3m5Zfx/0be4a980ca6f.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["online-cab-fares", "organization-of-online-drivers", "minimum-fare-increase", "ride-hailing-industry", "cab-fare-multiplier"]
 canonical: "https://zandani.co.ke/article/online-cab-fares-set-to-rise-by-50-per-cent-as-drivers-announce-new-"
 date: "2026-04-15T21:00:59Z"
-focusKeyword: "Online cab fares set to rise by 50 per cent as drivers annou"
 dateModified: "2026-04-15T21:00:59Z"
+focusKeyword: "Online cab fares set to rise by 50 per cent as drivers annou"
+schema: "NewsArticle"
 ---
+
+Online cab fares set to rise by 50 per cent as drivers annou is central to this update for Kenyan readers.
+
 By Celestine Nzioka Online cab users face a 50 percent fare increase announced by the Organization of Online Drivers (OOD), elevating the minimum charge by Ksh330. The new pricing structure, introducing a 1.5X fare multiplier, takes effect from midnight on Wednesday, August 15, 2026, across all online cab platforms.
 
 New Minimum Cab Fares Implemented The Organization of Online Drivers (OOD) chairman confirmed a 1.5X fare multiplier, which will raise the current minimum charge of Ksh220 to approximately Ksh330 under the new pricing structure. Passengers are directed to multiply fare prices displayed on the driver’s dashboard by 1.5 across all Transportation Network Company (TNC) platforms. The directive will cut across all online cab brands.
@@ -28,3 +33,18 @@ Fare Management Guidance The management of these new fares will be guided by the
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

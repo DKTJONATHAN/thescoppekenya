@@ -2,6 +2,7 @@
 title: "EPRA flags 23 petrol stations for selling adulterated fuel"
 slug: "epra-flags-23-petrol-stations-for-selling-adulterated-fuel"
 description: "EPRA flags 23 petrol stations for selling adulterated fuel in its 2025-2026 report after testing 10,598 samples to ensure national quality standards."
+excerpt: "The Energy and Petroleum Regulatory Authority (EPRA) has flagged 23 petrol stations for selling adulterated fuel in its Biannual Statistics"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/FkGPQsSP/e23f36955339.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["epra", "fuel-adulteration", "petrol-station-crackdown", "petroleum-industry-regulation", "fuel-quality-testing"]
 canonical: "https://zandani.co.ke/article/epra-flags-23-petrol-stations-for-selling-adulterated-fuel"
 date: "2026-03-24T11:58:58Z"
-focusKeyword: "EPRA flags 23 petrol stations for selling adulterated fuel"
 dateModified: "2026-03-24T11:58:58Z"
+focusKeyword: "EPRA flags 23 petrol stations for selling adulterated fuel"
+schema: "NewsArticle"
 ---
+
+EPRA flags 23 petrol stations for selling adulterated fuel is central to this update for Kenyan readers.
+
 The Energy and Petroleum Regulatory Authority (EPRA) has flagged 23 petrol stations for selling adulterated fuel in its Biannual Statistics Report 2025-2026, despite ongoing crackdowns. This follows tests on 10,598 samples from 2,305 outlets, revealing a persistent 1% non-compliance rate across several counties.
 
 EPRA Uncovers Persistent Fuel Adulteration
@@ -24,3 +29,18 @@ Market Dynamics Amid Quality Concerns Fuel adulteration, often involving the mix
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

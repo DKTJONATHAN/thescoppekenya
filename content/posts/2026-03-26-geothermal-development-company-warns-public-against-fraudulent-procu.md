@@ -1,7 +1,8 @@
 ---
 title: "Geothermal Development Company Warns Public Against Fraudulent Procurement Opportunities"
 slug: "geothermal-development-company-warns-public-against-fraudulent-procu"
-description: "The Geothermal Development Company (GDC) warns against fraudsters soliciting kickbacks for fake tenders, stressing that its processes are transparent."
+description: "Geothermal Development Company Warns Public Against Fraudule: The Geothermal Development Company (GDC) warns against fraudsters soliciting kickbacks for fake"
+excerpt: "The Geothermal Development Company (GDC) today, Thursday, March 26, 2026, issued a public warning against individuals impersonating company"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/6JLdcCw4/6ceefaa27af4.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["geothermal-development-company", "procurement-fraud", "tender-scams", "geothermal-energy", "public-procurement"]
 canonical: "https://zandani.co.ke/article/geothermal-development-company-warns-public-against-fraudulent-procu"
 date: "2026-03-26T09:15:38Z"
-focusKeyword: "Geothermal Development Company Warns Public Against Fraudule"
 dateModified: "2026-03-26T09:15:38Z"
+focusKeyword: "Geothermal Development Company Warns Public Against Fraudule"
+schema: "NewsArticle"
 ---
+
+Geothermal Development Company Warns Public Against Fraudule is central to this update for Kenyan readers.
+
 The Geothermal Development Company (GDC) today, Thursday, March 26, 2026, issued a public warning against individuals impersonating company officials to solicit kickbacks for purported procurement opportunities. The state-owned entity emphasized that its tender processes are transparent and do not involve advance payments.
 
 GDC Issues Public Scam Alert The GDC has identified fraudsters attempting to extort money from unsuspecting suppliers under the guise of offering tender opportunities. The company firmly stated it does not request or accept kickbacks for any of its services. To access legitimate opportunities, the public is advised to utilize the company's official website, www.gdc.co.ke, and other authorized government channels. The notice explicitly stated, "All available tenders are on our website www.gdc.co.ke. Official Numbers are +254 719 037 000 or +254 0719 036 500." Members of the public encountering such individuals are encouraged to report them to the relevant authorities or directly to GDC via its anti-corruption email or +254716888343.
@@ -22,3 +27,18 @@ Precedent of Similar Warnings This announcement follows a similar caution issued
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

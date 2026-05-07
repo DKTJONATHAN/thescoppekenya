@@ -1,7 +1,8 @@
 ---
 title: "Nairobi County demolishes public toilets near National Archives to improve drainage"
 slug: "nairobi-county-demolishes-public-toilets-near-national-archives-to-i"
-description: "Nairobi County demolished public toilets near the National Archives to improve CBD drainage, causing severe trader losses and widespread public outcry."
+description: "Nairobi County demolishes public toilets near National Archi: Nairobi County demolished public toilets near the National Archives to improve CBD drainage,"
+excerpt: "Nairobi County demolished public lavatories near the National Archives in the Central Business District on the night of Friday, March 20, 20"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/v4m1d1mr/aef16ca904ed.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["nairobi-national-archives", "public-toilet-demolition", "nairobi-cbd-restructuring", "urban-infrastructure-development", "nairobi-drainage-project"]
 canonical: "https://zandani.co.ke/article/nairobi-county-demolishes-public-toilets-near-national-archives-to-i"
 date: "2026-03-21T08:51:35Z"
-focusKeyword: "Nairobi County demolishes public toilets near National Archi"
 dateModified: "2026-03-21T08:51:35Z"
+focusKeyword: "Nairobi County demolishes public toilets near National Archi"
+schema: "NewsArticle"
 ---
+
+Nairobi County demolishes public toilets near National Archi is central to this update for Kenyan readers.
+
 Nairobi County demolished public lavatories near the National Archives in the Central Business District on the night of Friday, March 20, 2026. The action, part of a campaign to improve drainage and restructure the capital, has resulted in immediate losses for traders and widespread public discontent over lost essential facilities.
 
 Redevelopment Impact on CBD Facilities
@@ -28,3 +33,18 @@ Public Toilet Management and Revenue Nairobi County lists approximately 68 publi
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

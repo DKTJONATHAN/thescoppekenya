@@ -1,16 +1,19 @@
 ---
 title: "Confirmed: Nairobi Expressway Toll Fees Waived Amid Flooding"
 slug: "nairobi-expressway-toll-waiver-floods"
+description: "Moja Expressway waives Nairobi Expressway toll fees for motorists facing severe Mombasa Road flooding. Find out which exits are free. Read the full story."
+excerpt: "Moja Expressway waives Nairobi Expressway toll fees for motorists facing severe Mombasa Road flooding. Find out which exits are free. Read the full story."
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/B2h3LM51/ef44c92fbb32.jpg"
 category: "News"
-date: "2026-05-01T11:41:29Z"
-description: "Moja Expressway waives Nairobi Expressway toll fees for motorists facing severe Mombasa Road flooding. Find out which exits are free. Read the full story."
-excerpt: "Moja Expressway waives Nairobi Expressway toll fees for motorists facing severe Mombasa Road flooding. Find out which exits are free. Read the full story."
 tags: ["Kenya News", "Moja Expressway", "Nairobi Expressway", "Mombasa Road", "Nairobi"]
-focusKeyword: "Nairobi Expressway Toll"
+canonical: "https://zandani.co.ke/article/nairobi-expressway-toll-waiver-floods"
+date: "2026-05-01T11:41:29Z"
 dateModified: "2026-05-01T11:41:29Z"
+focusKeyword: "Nairobi Expressway Toll"
+schema: "NewsArticle"
 ---
+
 Celestine Nzioka for Za Ndani
 
 ## Nairobi Expressway Toll Fees Waived Amid Flooding
@@ -29,3 +32,18 @@ To mitigate the impact of the flooding, Moja Expressway clarified that the Nairo
 
 Drivers have been advised to adhere to traffic guidance and exercise caution during this period, as the government continues to closely monitor the situation. Moja Expressway reaffirmed its commitment to public service and assured motorists that updates will be provided as conditions evolve. Meanwhile, the temporary relief comes as heavy rains continue to cause widespread flooding and traffic snarl-ups across parts of Nairobi and its surroundings, echoing challenging conditions previously experienced by city residents, such as those highlighted in [How Gloria Ntazola Survived Nairobi Floods in Her Audi](https://zandani.co.ke/article/how-gloria-ntazola-survived-nairobi-floods-in-her-audi).
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

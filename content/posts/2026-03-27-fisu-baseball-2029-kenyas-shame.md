@@ -1,7 +1,8 @@
 ---
 title: "FISU Baseball 2029: Kenya's Continued Shame"
 slug: "fisu-baseball-2029-kenyas-shame"
-description: "FISU's 'home run' announcement for baseball and softball at the 2029 Games highlights the scandalous neglect of kenya university baseball fisu development at ho"
+description: "FISU Baseball 2029 Kenyas Continued Shame: FISU's 'home run' announcement for baseball and softball at the 2029 Games highlights the scandalous neglect of"
+excerpt: "The International University Sports Federation (FISU) has finally stumbled into the 21st century, confirming baseball and softball for the N"
 author: "From The Editor"
 author_url: "https://zandani.co.ke/author/from-the-editor"
 image: "https://www.fisu.net/app/uploads/2023/10/organiser-2.jpg"
@@ -9,9 +10,13 @@ category: "Opinions"
 tags: ["opinions", "kenya-university-baseball-fisu", "fisu-world-university-games-kenya", "kenyan-university-softball-teams", "fisu-baseball-softball-2029", "university-sports-kenya-baseball", "fisu-opportunities-kenyan-students"]
 canonical: "https://zandani.co.ke/article/fisu-baseball-2029-kenyas-shame"
 date: "2026-03-27T14:58:03Z"
-focusKeyword: "FISU Baseball 2029 Kenyas Continued Shame"
 dateModified: "2026-03-27T14:58:03Z"
+focusKeyword: "FISU Baseball 2029 Kenyas Continued Shame"
+schema: "NewsArticle"
 ---
+
+FISU Baseball 2029 Kenyas Continued Shame is central to this update for Kenyan readers.
+
 The International University Sports Federation (FISU) has finally stumbled into the 21st century, confirming baseball and softball for the North Carolina 2029 FISU World University Games. This isn't a grand slam; it's a long-overdue bunt that exposes the rotten core of university sports in Kenya. While FISU congratulates itself, we in Kenya must confront our own pathetic reality.
 
 FISU Baseball Softball 2029: A Global Game, a Local Farce Let's be clear: FISU's decision to cement baseball and softball as official sports for the 2029 Games is hardly revolutionary. The World University Baseball Championship has existed since 2002, and softball since 2004, albeit with "bumpy ride with consistent participation". Baseball even popped up as an optional sport way back in the 90s. So, this isn't innovation; it's the bare minimum. FISU President Leonz Eder and WBSC President Riccardo Fraccari patting themselves on the back for "reinforcing collaboration" and a "major step forward" is frankly laughable. They're moving at a glacial pace while our own sports administrators remain entirely comatose. The North Carolina 2029 Games will bring together thousands of student-athletes from 150 countries, a spectacle that should shame our Kenyan universities into action, but likely won't.
@@ -26,3 +31,18 @@ FISU Opportunities Kenyan Students Deserve, But Don't Get The tragic irony is th
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

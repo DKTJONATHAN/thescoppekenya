@@ -1,15 +1,21 @@
 ---
 title: "Toxic Lyrikali: Real Name, Age, and His Journey from Kayole to Stardom – The Full Scoop!"
 slug: "toxic-lyrikali-real-name-age-kayole-to-stardom"
+description: "Toxic Lyrikali Real Name Age and His Journey from Kayole to: Uncover Toxic Lyrikali's Real Name, Age, and his incredible journey from the streets of Kayole to"
 excerpt: "Uncover Toxic Lyrikali's Real Name, Age, and his incredible journey from the streets of Kayole to Stardom, stirring up the Kenyan music scene!"
 author: "Za Ndani"
 image: "https://cdn.radioafrica.digital/image/2026/02/c3772837-d057-40b8-96ed-275431420c43.jpg?1771937101602"
 category: "Entertainment"
-date: "2026-02-24"
 tags: ["toxic lyrikali", "real name", "age", "Kayole", "stardom", "kenyan music", "hip hop", "celebrity news"]
-focusKeyword: "Toxic Lyrikali Real Name Age and His Journey from Kayole to"
+canonical: "https://zandani.co.ke/article/toxic-lyrikali-real-name-age-kayole-to-stardom"
+date: "2026-02-24"
 dateModified: "2026-02-24"
+focusKeyword: "Toxic Lyrikali Real Name Age and His Journey from Kayole to"
+schema: "NewsArticle"
 ---
+
+Toxic Lyrikali Real Name Age and His Journey from Kayole to is central to this update for Kenyan readers.
+
 ## Toxic Lyrikali: Unmasking the Man Behind the Music!`nDirect answer: Toxic Lyrikali's real name is Timothy Omondi, and he was born on November 23, 1995.`n Right, prepare yourselves, darlings, because we're diving headfirst into the sensational world of Toxic Lyrikali! For those of you who've been living under a rock (bless your hearts!), he's the Kenyan rapper who's absolutely set the music scene ablaze, capturing hearts and headlines with his raw talent and undeniable charm. After scooping up the coveted Male Artist of the Year award at the 2025 UnKut Awards, his streaming figures have shot up by over 1,400% - astonishing, isn't it? But who *is* this elusive artist? Let's peel back the layers, shall we?
 
 What's Toxic Lyrikali's Real Name and Age? Well, honestly, it's the question on everyone's perfectly manicured lips! The man known as Toxic Lyrikali to his legions of adoring fans is, in fact, Timothy Omondi. A rather dashing name, don't you think? And as for his age, Timothy Omondi was born on November 23, 1995, which makes our rising star a vibrant 30 years old as of now. He's certainly packed a lot into those three decades, hasn't he?
@@ -43,4 +49,3 @@ He is 30 years old in 2026.
 
 ### Where is Toxic Lyrikali from in Kenya?
 He is from Kayole, Nairobi.
-

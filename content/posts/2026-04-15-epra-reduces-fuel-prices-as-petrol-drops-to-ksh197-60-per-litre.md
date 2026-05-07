@@ -1,7 +1,8 @@
 ---
 title: "EPRA reduces fuel prices as petrol drops to Ksh197.60 per litre"
 slug: "epra-reduces-fuel-prices-as-petrol-drops-to-ksh197-60-per-litre"
-description: "EPRA reduces fuel prices as Super Petrol drops to Ksh197.60 per litre in Nairobi. The relief follows the Treasury's decision to cut VAT to 8% until May 14."
+description: "EPRA reduces fuel prices as petrol drops to Ksh19760 per lit: EPRA reduces fuel prices as Super Petrol drops to Ksh197.60 per litre in Nairobi. The relief"
+excerpt: "The Energy and Petroleum Regulatory Authority (EPRA) announced a significant reduction in fuel prices today, April 15, 2026, with Super Petr"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/N6FNXLYq/cefe2ba01630.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["epra-fuel-prices", "john-mbadi", "nairobi-fuel-prices", "fuel-vat-reduction", "petroleum-industry"]
 canonical: "https://zandani.co.ke/article/epra-reduces-fuel-prices-as-petrol-drops-to-ksh197-60-per-litre"
 date: "2026-04-15T19:45:09Z"
-focusKeyword: "EPRA reduces fuel prices as petrol drops to Ksh19760 per lit"
 dateModified: "2026-04-15T19:45:09Z"
+focusKeyword: "EPRA reduces fuel prices as petrol drops to Ksh19760 per lit"
+schema: "NewsArticle"
 ---
+
+EPRA reduces fuel prices as petrol drops to Ksh19760 per lit is central to this update for Kenyan readers.
+
 The Energy and Petroleum Regulatory Authority (EPRA) announced a significant reduction in fuel prices today, April 15, 2026, with Super Petrol dropping to Ksh197.60 per litre in Nairobi. This relief follows the National Treasury's decision to lower Value Added Tax on petroleum products, effective from April 16 to May 14, 2026.
 
 Fuel Price Reduction Takes Effect Cabinet Secretary for the National Treasury John Mbadi confirmed the reduction of Value Added Tax (VAT) on petroleum products from 13 per cent to 8 per cent. This adjustment directly led to a recalculation of maximum retail pump prices across the country, aiming to ease economic pressure.
@@ -24,3 +29,18 @@ Context of Recent Fluctuations This latest reduction comes just a day after EPRA
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

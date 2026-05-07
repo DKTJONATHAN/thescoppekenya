@@ -1,7 +1,8 @@
 ---
 title: "Kisumu Court issues notice for destruction of old case records"
 slug: "kisumu-court-issues-notice-for-destruction-of-old-case-records"
-description: "Kisumu Court plans to destroy old criminal records (2016-2018) and civil files (2008-2010), giving the public a three-month window starting April 2026."
+description: "Kisumu Court issues notice for destruction of old case recor: Kisumu Court plans to destroy old criminal records (2016-2018) and civil files (2008-2010),"
+excerpt: "The Kisumu Chief Magistrate's Court has commenced the destruction process for old criminal and civil case records, providing a three month p"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/xSZZgDKD/96cde4d9c732.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["kisumu-chief-magistrate-court", "destruction-of-court-records", "chief-magistrate-d-o-onyango", "judicial-record-management", "records-disposal-courts-rules"]
 canonical: "https://zandani.co.ke/article/kisumu-court-issues-notice-for-destruction-of-old-case-records"
 date: "2026-04-26T17:05:04Z"
-focusKeyword: "Kisumu Court issues notice for destruction of old case recor"
 dateModified: "2026-04-26T17:05:04Z"
+focusKeyword: "Kisumu Court issues notice for destruction of old case recor"
+schema: "NewsArticle"
 ---
+
+Kisumu Court issues notice for destruction of old case recor is central to this update for Kenyan readers.
+
 The Kisumu Chief Magistrate's Court has commenced the destruction process for old criminal and civil case records, providing a three-month public window, effective from an April 24, 2026 gazette notice. Signed by Chief Magistrate D.O. Onyango, this action follows the Records Disposal (Courts) Rules, Cap. 14, requiring Chief Justice approval.
 
 ## Kisumu Court to Purge Old Records
@@ -27,3 +32,18 @@ Kenya's legal framework, including the Records Disposal Act (Cap 14) and the Dat
 
 The Judiciary has also significantly advanced its electronic record-keeping capabilities. The electronic filing system, officially launched on July 1, 2020, at the Milimani Commercial Magistrates' Court and the High Court's Commercial and Tax Division, was expanded nationwide by March 11, 2024. Furthermore, a directive from July 1, 2024, mandates that no court should print pleadings or documents, signifying a complete transition to digital court processes across the nation.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

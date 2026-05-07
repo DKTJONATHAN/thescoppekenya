@@ -1,7 +1,8 @@
 ---
 title: "Former Cabinet Secretary Raphael Tuju reported missing after vehicle found abandoned in Karen"
 slug: "former-cabinet-secretary-raphael-tuju-reported-missing-after-vehicle"
-description: "Former Cabinet Secretary Raphael Tuju is missing after his vehicle was found abandoned in Nairobi's Karen area. Police are investigating his whereabouts."
+description: "Former Cabinet Secretary Raphael Tuju reported missing after: Former Cabinet Secretary Raphael Tuju is missing after his vehicle was found abandoned in"
+excerpt: "Former Cabinet Secretary Raphael Tuju has been reported missing, his family confirming his last sighting on Saturday, March 21. His vehicle"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/gMfCH3cx/b0adff4dccdf.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["raphael-tuju", "karen-nairobi", "missing-cabinet-secretary", "kenyan-politics", "miotoni-lane"]
 canonical: "https://zandani.co.ke/article/former-cabinet-secretary-raphael-tuju-reported-missing-after-vehicle"
 date: "2026-03-22T11:39:53Z"
-focusKeyword: "Former Cabinet Secretary Raphael Tuju reported missing after"
 dateModified: "2026-03-22T11:39:53Z"
+focusKeyword: "Former Cabinet Secretary Raphael Tuju reported missing after"
+schema: "NewsArticle"
 ---
+
+Former Cabinet Secretary Raphael Tuju reported missing after is central to this update for Kenyan readers.
+
 Former Cabinet Secretary Raphael Tuju has been reported missing, his family confirming his last sighting on Saturday, March 21. His vehicle was discovered abandoned this Sunday morning, March 22, on Miotoni Lane in Nairobi's Karen area. Tuju was reportedly en route to an interview.
 
 Investigation Underway After Karen Vehicle Find Concerns about Tuju's whereabouts escalated after repeated attempts by his family to contact him proved futile. His son, Mano Tuju, informed authorities, leading to a search for the former CS. On Sunday morning, Mano Tuju received a call from the Officer Commanding Station (OCS) at Karen Police Station, confirming the discovery of his father's abandoned vehicle. It remains unclear whether Tuju made it to his scheduled interview on Saturday evening. Reports indicate Tuju had filed a police report on Saturday, March 21, stating he was being followed by an unmarked white Land Cruiser.
@@ -20,3 +25,18 @@ Ongoing Property Disputes Tuju, a former Jubilee Party Secretary General, has be
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

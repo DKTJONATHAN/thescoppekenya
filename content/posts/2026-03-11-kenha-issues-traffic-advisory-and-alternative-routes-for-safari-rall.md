@@ -1,13 +1,21 @@
 ---
 title: "KeNHA issues traffic advisory and alternative routes for Safari Rally"
 slug: "kenha-issues-traffic-advisory-and-alternative-routes-for-safari-rall"
+description: "KeNHA issues traffic advisory and alternative routes for Saf: KeNHA Issues Safari Rally Traffic Advisory and Alternative Routes The Kenya National Highways"
+excerpt: "KeNHA Issues Safari Rally Traffic Advisory and Alternative Routes The Kenya National Highways Authority (KeNHA) has issued a comprehensive t"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/VcCTTBQS/8a711190416d.jpg"
 category: "News"
+tags: ["kenha issues traffic advisory and alternative routes for safari rall", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/kenha-issues-traffic-advisory-and-alternative-routes-for-safari-rall"
 date: "2026-03-11T20:51:07Z"
-focusKeyword: "KeNHA issues traffic advisory and alternative routes for Saf"
 dateModified: "2026-03-11T20:51:07Z"
+focusKeyword: "KeNHA issues traffic advisory and alternative routes for Saf"
+schema: "NewsArticle"
 ---
+
+KeNHA issues traffic advisory and alternative routes for Saf is central to this update for Kenyan readers.
+
 ## KeNHA Issues Safari Rally Traffic Advisory and Alternative Routes The Kenya National Highways Authority (KeNHA) has issued a comprehensive traffic advisory for the upcoming Safari Rally, scheduled from March 12 to March 15, 2026. KeNHA warns truck drivers against unlawful parking on the Nairobi-Nakuru highway, with violations leading to immediate law enforcement, and provides alternative routes to ease anticipated congestion. This proactive measure aims to ensure smooth traffic flow during the event.
 
 Traffic Management for Safari Rally 2026 The advisory, released on Wednesday, March 11, specifically targets truck drivers, cautioning them against parking in undesignated areas along the Nairobi-Nakuru highway. This directive is a crucial component of KeNHA's strategy to prevent traffic bottlenecks during the high-volume weekend. To facilitate easier movement for motorists heading to Nakuru and Lanet, KeNHA has outlined four alternative routes: * **Scenic Route:** Nairobi - Rironi - Flyover (Magumu) - Njambini - Ol Kalou - Dundori - Lanet. * **Adventure Route:** Nairobi - Rironi - Naivasha - Engineer - Olkalou - Dundori - Lanet. * **Shortcut Route:** Nairobi-Ngong-Suswa-Narok-Nakuru Highway. * **Thika Trail:** Nairobi - Thika - Magumu - Ol Kalou - Dundori - Lanet. Traffic congestion along the Nairobi-Naivasha Highway frequently results from accidents involving heavy trucks, which often obstruct the single-carriageway, causing extensive delays. The situation is compounded around the Gilgil Weighbridge due to trucks slowing or stopping for inspections, creating a significant bottleneck. Authorities also attribute congestion to reckless driving and poor discipline among motorists, especially truck drivers, which can block oncoming traffic. Furthermore, heavy rains that cause flooding in areas near Suswa and increased travel during major events like the World Rally Championship Safari Rally exacerbate the highway's limited capacity.
@@ -16,3 +24,18 @@ Infrastructure Development to Alleviate Congestion In anticipation of such chall
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

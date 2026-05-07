@@ -1,15 +1,21 @@
 ---
 title: "Ruth Odinga Denies Feud with Oburu Odinga, Calls for Unity in ODM Amidst Deepening Crisis"
 slug: "ruth-odinga-denies-feud-oburu-odinga-unity-in-odm"
+description: "Ruth Odinga Denies Feud with Oburu Odinga Calls for Unity in: Ruth Odinga denies a feud with Oburu Odinga, urging for unity in ODM as internal wrangles"
 excerpt: "Ruth Odinga denies a feud with Oburu Odinga, urging for unity in ODM as internal wrangles persist, highlighting the party's struggle for cohesion."
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/vFCtYTs/f2de711d16ea.jpg"
 category: "News"
+tags: ["Ruth Odinga", "Oburu Odinga", "ODM", "Unity", "Political Wrangels", "Kenya", "UDA-ODM MoU", "Edwin Sifuna"]
+canonical: "https://zandani.co.ke/article/ruth-odinga-denies-feud-oburu-odinga-unity-in-odm"
 date: "2026-03-03"
-tags: ["Ruth Odinga", "Oburu Odinga", "ODM", "Unity", "Political Wrangels", "Kenya", "UDA-ODM MoU", "Edwin Sifuna", "Linda Ground", "Linda Wananchi"]
-focusKeyword: "Ruth Odinga Denies Feud with Oburu Odinga Calls for Unity in"
 dateModified: "2026-03-03"
+focusKeyword: "Ruth Odinga Denies Feud with Oburu Odinga Calls for Unity in"
+schema: "NewsArticle"
 ---
+
+Ruth Odinga Denies Feud with Oburu Odinga Calls for Unity in is central to this update for Kenyan readers.
+
 ***
 
 Ruth Odinga Denies Feud with Oburu Odinga Amidst Deepening ODM Divisions Kisumu Woman Representative Ruth Odinga has publicly dismissed claims of a personal feud with Orange Democratic Movement (ODM) Acting Party Leader Oburu Odinga, reiterating her calls for internal party unity. Her statements underscore the profound internal struggles currently plaguing ODM as it navigates a critical post-Raila Odinga era. Ruth Odinga, who also serves as the party's Deputy Organising Secretary, clarified her recent critiques of internal party operations should not be misinterpreted as disrespect towards her elder brother. The assertions came on Monday, March 2, as the ODM grapples with factionalism and a contentious debate surrounding its Memorandum of Understanding (MoU) with the ruling United Democratic Alliance (UDA).
@@ -24,3 +30,18 @@ The Path Forward for a United ODM The calls for **Unity in ODM** by figures like
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

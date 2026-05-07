@@ -1,50 +1,22 @@
 ---
 title: "Njugush & Wakavinye Split: Polycarp Rumors and Beard Red Flags"
 slug: "njugush-wakavinye-split-polycarp-rumors-and-beard-red-flags"
-description: "Popular comedian Njugush (Timothy Kimani) and his wife Celestine Ndinda (Wakavinye) recently confirmed their separation, triggering widespread speculation ..."
+description: "Njugush Wakavinye Split Polycarp Rumors and Beard Red Flags: Popular comedian Njugush (Timothy Kimani) and his wife Celestine Ndinda (Wakavinye) recently"
 excerpt: "Popular comedian Njugush (Timothy Kimani) and his wife Celestine Ndinda (Wakavinye) recently confirmed their separation, triggering widespread speculation ..."
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/fzz9cNrC/3b22d00d82dd.webp"
-image_alt: "Kenyan comedians Njugush and Wakavinye posing together and smiling for a close-up portrait."
 category: "Entertainment"
-tags: []
+tags: ["njugush wakavinye split polycarp rumors and beard red flags", "entertainment", "kenya news"]
 canonical: "https://zandani.co.ke/article/njugush-wakavinye-split-polycarp-rumors-and-beard-red-flags"
 date: "2026-04-25T01:54:46Z"
-lastmod: "2026-04-25T01:58:07Z"
-schema_json: "{
-  \"@context\": \"https://schema.org\",
-  \"@type\": \"NewsArticle\",
-  \"headline\": \"Njugush & Wakavinye Split: Polycarp Rumors and Beard Red Flags\",
-  \"image\": [
-    \"https://i.ibb.co/fzz9cNrC/3b22d00d82dd.webp\"
-  ],
-  \"datePublished\": \"2026-04-25T01:54:46Z\",
-  \"dateModified\": \"2026-04-25T01:58:07Z\",
-  \"author\": [
-    {
-      \"@type\": \"Person\",
-      \"name\": \"Zed Mogaka\",
-      \"url\": \"https://zandani.co.ke/author/zed-mogaka\"
-    }
-  ],
-  \"publisher\": {
-    \"@type\": \"Organization\",
-    \"name\": \"Za Ndani\",
-    \"logo\": {
-      \"@type\": \"ImageObject\",
-      \"url\": \"https://zandani.co.ke/images/logo.png\"
-    }
-  },
-  \"description\": \"Popular comedian Njugush (Timothy Kimani) and his wife Celestine Ndinda (Wakavinye) recently confirmed their separation, triggering widespread speculation ...\",
-  \"mainEntityOfPage\": {
-    \"@type\": \"WebPage\",
-    \"@id\": \"https://zandani.co.ke/article/njugush-wakavinye-split-polycarp-rumors-and-beard-red-flags\"
-  }
-}"
-focusKeyword: "Njugush Wakavinye Split Polycarp Rumors and Beard Red Flags"
 dateModified: "2026-04-25T01:54:46Z"
+focusKeyword: "Njugush Wakavinye Split Polycarp Rumors and Beard Red Flags"
+schema: "NewsArticle"
 ---
+
+Njugush Wakavinye Split Polycarp Rumors and Beard Red Flags is central to this update for Kenyan readers.
+
 Popular comedian Njugush (Timothy Kimani) and his wife Celestine Ndinda (Wakavinye) recently confirmed their separation, triggering widespread speculation across the country. Rumours of infidelity involving Wakavinye and her nail technician, Polycarp, intensified after a past video resurfaced, highlighting her humorous preference for bearded men as a potential 'red flag' in their now-fractured relationship.
 
 ## Njugush & Wakavinye Split: Polycarp Rumors and Beard Red Flags
@@ -61,3 +33,18 @@ The public reaction has been intense, characterized by dramatic interpretations 
 
 The streets are saying, "Huyu Polycarp, alijua mahali atapitia!" (This Polycarp, he knew where he would pass through!)
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

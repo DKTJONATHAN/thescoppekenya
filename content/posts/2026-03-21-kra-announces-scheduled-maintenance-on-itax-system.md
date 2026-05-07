@@ -1,7 +1,8 @@
 ---
 title: "KRA announces scheduled maintenance on iTax system"
 slug: "kra-announces-scheduled-maintenance-on-itax-system"
-description: "KRA announces scheduled maintenance on the iTax platform for Sunday, March 22, 2026. The system will be inaccessible for users from 6 pm to 10 pm."
+description: "KRA announces scheduled maintenance on iTax system: KRA announces scheduled maintenance on the iTax platform for Sunday, March 22, 2026. The system will be"
+excerpt: "The Kenya Revenue Authority (KRA) has notified taxpayers of a temporary disruption affecting its iTax platform, widely used for filing retur"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/ccWVKsD5/14ad9843dd19.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["kenya-revenue-authority", "itax-maintenance", "itax-system-downtime", "tax-administration"]
 canonical: "https://zandani.co.ke/article/kra-announces-scheduled-maintenance-on-itax-system"
 date: "2026-03-21T20:45:05Z"
-focusKeyword: "KRA announces scheduled maintenance on iTax system"
 dateModified: "2026-03-21T20:45:05Z"
+focusKeyword: "KRA announces scheduled maintenance on iTax system"
+schema: "NewsArticle"
 ---
+
+KRA announces scheduled maintenance on iTax system is central to this update for Kenyan readers.
+
 The Kenya Revenue Authority (KRA) has notified taxpayers of a temporary disruption affecting its iTax platform, widely used for filing returns, making payments, and accessing various tax services. This scheduled maintenance will occur for four hours on Sunday, March 22, 2026, from 6 pm to 10 pm.
 
 iTax Platform Undergoes Essential Maintenance
@@ -24,3 +29,18 @@ KRA's Commitment to Service Reliability In its communication, the Authority expr
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

@@ -1,16 +1,19 @@
 ---
 title: "Confirmed: Mike Sonko Acquitted in Money Laundering Case"
 slug: "mike-sonko-acquittal-money-laundering"
+description: "Mike Sonko acquittal: Nairobi court acquits Mike Sonko of money laundering charges due to lack of evidence but orders him to defend irregular tenders. Read the"
+excerpt: "Nairobi court acquits Mike Sonko of money laundering charges due to lack of evidence but orders him to defend irregular tenders. Read the full story."
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/tWSLYbr/751fb0d99ba9.jpg"
 category: "News"
-date: "2026-04-30T10:30:39Z"
-description: "Nairobi court acquits Mike Sonko of money laundering charges due to lack of evidence but orders him to defend irregular tenders. Read the full story."
-excerpt: "Nairobi court acquits Mike Sonko of money laundering charges due to lack of evidence but orders him to defend irregular tenders. Read the full story."
 tags: ["Kenya News", "Mike Sonko", "Nairobi City Hall", "Money Laundering", "Nairobi"]
-focusKeyword: "Mike Sonko acquittal"
+canonical: "https://zandani.co.ke/article/mike-sonko-acquittal-money-laundering"
+date: "2026-04-30T10:30:39Z"
 dateModified: "2026-04-30T10:30:39Z"
+focusKeyword: "Mike Sonko acquittal"
+schema: "NewsArticle"
 ---
+
 ## Mike Sonko Acquittal in Money Laundering Case
 
 Former Nairobi Governor Mike Mbuvi Sonko has been acquitted of money laundering charges by a Nairobi court. The court ruled that the prosecution failed to provide sufficient evidence linking him to the allegations. However, Sonko still faces charges concerning irregular tender issuance during his tenure at City Hall.
@@ -27,3 +30,18 @@ Despite the Mike Sonko acquittal on money laundering charges, the court found th
 
 In recent months, Sonko has consistently asserted that his various court cases are politically motivated, stemming from public opposition to corruption. Testifying in February this year before Magistrate Charles Ondieki in an alleged Ksh20 million graft case, Sonko claimed his prosecution was orchestrated to punish and silence him amid entrenched corruption within City Hall. He alleged that powerful individuals, opposed to his policies aimed at developing Nairobi County, including building new markets, improving infrastructure, and alleviating the social well-being of Nairobians, conspired to bring him down. During his tenure, Sonko revealed he terminated contracts in the revenue department and dismissed cashiers implicated in a Ksh20 million graft scheme.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

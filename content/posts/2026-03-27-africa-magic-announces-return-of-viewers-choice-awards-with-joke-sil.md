@@ -1,7 +1,8 @@
 ---
 title: "Africa Magic announces return of viewers choice awards with Joke Silva as head judge"
 slug: "africa-magic-announces-return-of-viewers-choice-awards-with-joke-sil"
-description: "Africa Magic announces the 12th AMVCA returns on May 9, 2026, with Joke Silva as Head Judge to lead the continental celebration of film and TV excellence."
+description: "Africa Magic announces return of viewers choice awards with: Africa Magic announces the 12th AMVCA returns on May 9, 2026, with Joke Silva as Head Judge to"
+excerpt: "Africa Magic has confirmed the return of its Viewers' Choice Awards for the 12th edition, set for Saturday, May 9th, 2026. The announcement"
 author: "Amara Ndlovu"
 author_url: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/rRxzRDqX/1b990fadb623.webp"
@@ -9,9 +10,13 @@ category: "Entertainment"
 tags: ["africa-magic-viewers-choice-awards", "joke-silva", "amvca", "nollywood-awards", "african-film-industry"]
 canonical: "https://zandani.co.ke/article/africa-magic-announces-return-of-viewers-choice-awards-with-joke-sil"
 date: "2026-03-27T17:25:44Z"
-focusKeyword: "Africa Magic announces return of viewers choice awards with"
 dateModified: "2026-03-27T17:25:44Z"
+focusKeyword: "Africa Magic announces return of viewers choice awards with"
+schema: "NewsArticle"
 ---
+
+Africa Magic announces return of viewers choice awards with is central to this update for Kenyan readers.
+
 Africa Magic has confirmed the return of its Viewers' Choice Awards for the 12th edition, set for Saturday, May 9th, 2026. The announcement on Thursday, March 26th, at MultiChoice Studio in Lagos, named veteran actress Joke Silva as Head Judge, signaling a major continental celebration of film and television excellence.
 
 AMVCA Returns with Expanded Recognition This year's Africa Magic Viewers' Choice Awards (AMVCA) introduces significant enhancements, broadening its scope and recognition across the continent. The 12th edition will feature 32 award categories, with 18 determined by a jury, 11 open to public voting, and three special recognition awards, including Lifetime Achievement and Trailblazer honors. The expansion of Indigenous Language categories, with the addition of Best Indigenous Language, North Africa and Best Indigenous Language, Central Africa, underscores a commitment to celebrating diverse linguistic cinematic achievements across the region.
@@ -26,3 +31,18 @@ Anticipation Builds for Nominations The nominee announcement is scheduled for Su
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

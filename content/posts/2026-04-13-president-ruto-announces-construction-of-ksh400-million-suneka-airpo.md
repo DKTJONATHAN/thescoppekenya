@@ -1,7 +1,8 @@
 ---
 title: "President Ruto announces construction of Ksh400 million Suneka Airport"
 slug: "president-ruto-announces-construction-of-ksh400-million-suneka-airpo"
-description: "President Ruto announces the construction of the Ksh400 million Suneka Airport in Kisii County, with the official groundbreaking scheduled for April 15."
+description: "President Ruto announces construction of Ksh400 million Sune: President Ruto announces the construction of the Ksh400 million Suneka Airport in Kisii County,"
+excerpt: "President William Ruto has announced the commencement of the Ksh400 million Suneka Airport project in Kisii County, with groundbreaking sche"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/xtZqG116/366bd429bd3e.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["suneka-airport", "william-ruto", "kisii-county", "aviation-infrastructure"]
 canonical: "https://zandani.co.ke/article/president-ruto-announces-construction-of-ksh400-million-suneka-airpo"
 date: "2026-04-13T19:41:15Z"
-focusKeyword: "President Ruto announces construction of Ksh400 million Sune"
 dateModified: "2026-04-13T19:41:15Z"
+focusKeyword: "President Ruto announces construction of Ksh400 million Sune"
+schema: "NewsArticle"
 ---
+
+President Ruto announces construction of Ksh400 million Sune is central to this update for Kenyan readers.
+
 President William Ruto has announced the commencement of the Ksh400 million Suneka Airport project in Kisii County, with groundbreaking scheduled for April 15. The President made the announcement during his three-day development tour in Kitutu Chache on April 13, marking a significant step for the long-stalled aviation infrastructure.
 
 Enhancing Regional Air Connectivity
@@ -26,3 +31,18 @@ Broader Infrastructure Vision This new airport will bolster the region's aviatio
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

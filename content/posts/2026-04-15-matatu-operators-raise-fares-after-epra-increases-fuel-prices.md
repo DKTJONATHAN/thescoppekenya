@@ -1,7 +1,8 @@
 ---
 title: "Matatu Operators Raise Fares After EPRA Increases Fuel Prices"
 slug: "matatu-operators-raise-fares-after-epra-increases-fuel-prices"
-description: "Matatu operators increased fares nationwide after EPRA hiked Super Petrol by Ksh28.69 and Diesel by Ksh40.30 per litre, effective April 15, 2026."
+description: "Matatu Operators Raise Fares After EPRA Increases Fuel Price: Matatu operators increased fares nationwide after EPRA hiked Super Petrol by Ksh28.69 and Diesel"
+excerpt: "Transport operators and matatu saccos nationwide have implemented an immediate fare increment effective Wednesday, April 15, 2026. This move"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/whbWktM7/ac89a04f9bfd.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["matatu-fare-hike", "epra-fuel-prices", "matatu-saccos", "public-transportation"]
 canonical: "https://zandani.co.ke/article/matatu-operators-raise-fares-after-epra-increases-fuel-prices"
 date: "2026-04-15T04:18:18Z"
-focusKeyword: "Matatu Operators Raise Fares After EPRA Increases Fuel Price"
 dateModified: "2026-04-15T04:18:18Z"
+focusKeyword: "Matatu Operators Raise Fares After EPRA Increases Fuel Price"
+schema: "NewsArticle"
 ---
+
+Matatu Operators Raise Fares After EPRA Increases Fuel Price is central to this update for Kenyan readers.
+
 Transport operators and matatu saccos nationwide have implemented an immediate fare increment effective Wednesday, April 15, 2026. This move follows the Energy and Petroleum Regulatory Authority (EPRA)'s latest fuel price review for April to May 2026, which saw significant increases in key petroleum products.
 
 Transport Operators Adjust Fares After EPRA Fuel Price Hike
@@ -26,3 +31,18 @@ Government Measures to Cushion Consumers EPRA indicated that the government has 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

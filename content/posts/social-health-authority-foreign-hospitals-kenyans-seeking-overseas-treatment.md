@@ -1,15 +1,21 @@
 ---
 title: "Social Health Authority Approves 8 Foreign Hospitals For Kenyans Seeking Overseas Treatment Amidst New Safeguards"
 slug: "social-health-authority-foreign-hospitals-kenyans-seeking-overseas-treatment"
+description: "Social Health Authority Approves 8 Foreign Hospitals For Ken: The Social Health Authority has approved eight foreign hospitals for Kenyans seeking overseas"
 excerpt: "The Social Health Authority has approved eight foreign hospitals for Kenyans seeking overseas treatment under a KSh 500,000 cap, enhancing access to specialised care."
 author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/mercy-mwangangi.jpg?itok=Vq_Ti8Bx"
 category: "News"
-date: "2026-02-27"
 tags: ["Social Health Authority", "foreign hospitals", "overseas treatment", "Kenya", "healthcare", "medical tourism", "SHA"]
-focusKeyword: "Social Health Authority Approves 8 Foreign Hospitals For Ken"
+canonical: "https://zandani.co.ke/article/social-health-authority-foreign-hospitals-kenyans-seeking-overseas-treatment"
+date: "2026-02-27"
 dateModified: "2026-02-27"
+focusKeyword: "Social Health Authority Approves 8 Foreign Hospitals For Ken"
+schema: "NewsArticle"
 ---
+
+Social Health Authority Approves 8 Foreign Hospitals For Ken is central to this update for Kenyan readers.
+
 ## Social Health Authority Paves Way for Kenyans Seeking Overseas Treatment The Social Health Authority (SHA) has officially approved eight foreign hospitals, located in India, Turkey, and Saudi Arabia, providing a crucial pathway for Kenyans seeking specialised medical treatment abroad under its new overseas care package. This initiative, set to commence next week, marks a significant reform in the nation's healthcare accessibility, aiming to ensure life-saving procedures are available even when local facilities cannot provide them.
 
 Rigorous Framework for Foreign Hospitals and Overseas Treatment Dr. Mercy Mwangangi, the Chief Executive Officer of the Social Health Authority, has outlined a stringent referral process designed to ensure transparency and accountability in accessing overseas treatment. Patients must first undergo assessment at a recognised healthcare facility within Kenya, where a doctor determines the necessity for specialised treatment abroad and issues a formal referral to one of the SHA-approved hospitals. The referral note is then submitted to the SHA, and the selected overseas hospital logs an electronic admission request. The Authority subsequently verifies the patient's active and paid-up membership before authorising treatment. This structured approach aims to mitigate previous challenges, including widespread fraud identified under the defunct National Health Insurance Fund (NHIF), which the SHA replaced in October 2024. The maximum coverage for overseas treatment is capped at KSh 500,000 per patient, a figure subject to review following negotiations with accredited international providers. An initial list of 36 specific medical services, identified by the Benefits Package and Tariffs Advisory Panel as unavailable locally, will be covered under this framework.
@@ -18,3 +24,18 @@ Enhancing Access to Specialised Care for Kenyans Seeking Overseas Treatment The 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

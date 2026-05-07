@@ -1,15 +1,19 @@
 ---
 title: "iHUB Opens Applications for Fourth EdTech Fellowship Cohort: Driving Inclusive Learning in Africa"
 slug: "ihub-opens-applications-fourth-edtech-fellowship-cohort"
+description: "iHUB Opens Applications for Fourth EdTech Fellowship Cohort: iHUB Opens Applications for its Fourth EdTech Fellowship Cohort, offering $100,000 equity-free"
 excerpt: "iHUB Opens Applications for its Fourth EdTech Fellowship Cohort, offering $100,000 equity-free funding to Kenyan startups focused on underserved learners and innovative education solutions."
 author: "Elizabeth Muthoni"
 image: "https://techweez.com/wp-content/uploads/2026/02/iHub-announces-chort-4.webp"
 category: "Technology"
+tags: ["iHUB", "EdTech", "Fellowship", "Mastercard Foundation", "Kenya", "Startups", "Education Technology", "Inclusive Learning"]
+canonical: "https://zandani.co.ke/article/ihub-opens-applications-fourth-edtech-fellowship-cohort"
 date: "2026-03-01"
-tags: ["iHUB", "EdTech", "Fellowship", "Mastercard Foundation", "Kenya", "Startups", "Education Technology", "Inclusive Learning", "African Tech"]
-focusKeyword: "iHUB Opens Applications for Fourth EdTech Fellowship Cohort"
 dateModified: "2026-03-01"
+focusKeyword: "iHUB Opens Applications for Fourth EdTech Fellowship Cohort"
+schema: "NewsArticle"
 ---
+
 ## iHUB Opens Applications for Fourth EdTech Fellowship Cohort iHUB has initiated the application process for the Cohort 4 of the Mastercard Foundation EdTech Fellowship, an initiative designed to fund and support early-stage education technology startups. This 12-month program targets twelve Kenyan startups, each set to receive $100,000 in equity-free funding, alongside comprehensive mentorship, technical assistance, and access to crucial ecosystem partners. Applications commenced on February 27 and will conclude on April 10, 2026.
 
 The Vision Behind the Fourth EdTech Fellowship Cohort The current cohort of the Mastercard Foundation EdTech Fellowship is strategically narrowing its focus to address critical gaps within the African EdTech sector. Four specific problem areas have been identified: developing education tools for learners with disabilities, creating solutions for displaced and conflict-affected communities, fostering gender-inclusive EdTech, and building education data systems that seamlessly integrate into real school workflows. This targeted approach aims to counter the prevailing trend where most EdTech products have been designed for environments with reliable internet, predictable school schedules, and households possessing disposable income, often overlooking a significant portion of Africa's student population. Underserved learners, including those with disabilities, displaced individuals, and female students at risk of dropping out, constitute a substantial demographic that commercial EdTech has largely neglected. Since its inception in Kenya in 2023, the Fellowship has actively worked to transform this dynamic. Across its first three cohorts, iHUB has empowered 36 companies, collectively impacting over 580,000 learners and engaging with more than 2,000 schools. Notably, the program has extended access to 2,000 learners with hearing and visual disabilities.
@@ -20,3 +24,18 @@ Applying for the Fourth EdTech Fellowship Cohort For the upcoming Cohort 4, the 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

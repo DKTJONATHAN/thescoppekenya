@@ -1,7 +1,8 @@
 ---
 title: "KAZI NGUMU: Moi's Bodyguard's Legendary Saves at Uhuru Park!"
 slug: "kazi-ngumu-moi-s-bodyguard-s-legendary-saves-at-uhuru-park"
-description: "Moi's bodyguard made legendary saves at the historic 2002 Moi-Kibaki power handover at Uhuru Park, becoming a living barrier against objects from agitated crowd"
+description: "KAZI NGUMU Mois Bodyguards Legendary Saves at Uhuru Park: Moi's bodyguard made legendary saves at the historic 2002 Moi-Kibaki power handover at Uhuru Park,"
+excerpt: "The 2002 handover of power from President Daniel Arap Moi to Mwai Kibaki at Uhuru Park was truly historic. Amidst the charged atmosphere, Mo"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/4ZZmkVtm/7d04af248e21.webp"
@@ -9,9 +10,13 @@ category: "Entertainment"
 tags: ["moi-bodyguard", "uhuru-park", "kazi-ngumu", "presidential-security", "daniel-arap-moi"]
 canonical: "https://zandani.co.ke/article/kazi-ngumu-moi-s-bodyguard-s-legendary-saves-at-uhuru-park"
 date: "2026-04-20T19:01:32Z"
-focusKeyword: "KAZI NGUMU Mois Bodyguards Legendary Saves at Uhuru Park"
 dateModified: "2026-04-20T19:01:32Z"
+focusKeyword: "KAZI NGUMU Mois Bodyguards Legendary Saves at Uhuru Park"
+schema: "NewsArticle"
 ---
+
+KAZI NGUMU Mois Bodyguards Legendary Saves at Uhuru Park is central to this update for Kenyan readers.
+
 The 2002 handover of power from President Daniel Arap Moi to Mwai Kibaki at Uhuru Park was truly historic. Amidst the charged atmosphere, Moi's bodyguard found himself in an extraordinary position, desperately catching objects hurled by jubilant but agitated crowds, a living barrier in a moment of national transition.
 
 KAZI NGUMU: Moi's Bodyguard's Legendary Saves at Uhuru Park! That infamous day in 2002 saw Uhuru Park transformed into a cauldron of emotion, a mix of hope, relief, and raw sentiment as the sun set on President Moi’s 24-year rule. While Mwai Kibaki’s supporters cheered wildly, a significant portion of the crowd felt no compunction about expressing their displeasure directly to the outgoing Head of State. It was a baptism by fire, or rather, by flying objects, for Moi’s personal security detail.
@@ -24,3 +29,18 @@ The Aftermath and Lasting Legend Years later, tales of that bodyguard’s agilit
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

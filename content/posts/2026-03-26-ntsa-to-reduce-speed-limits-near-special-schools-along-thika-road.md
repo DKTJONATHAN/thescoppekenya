@@ -1,7 +1,8 @@
 ---
 title: "NTSA to reduce speed limits near special schools along Thika Road"
 slug: "ntsa-to-reduce-speed-limits-near-special-schools-along-thika-road"
-description: "NTSA to reduce speed limits to 30 km/h near special needs schools along Thika Road, including Thika Town, Ngara, and Kasarani, to improve student safety."
+description: "NTSA to reduce speed limits near special schools along Thika: NTSA to reduce speed limits to 30 km/h near special needs schools along Thika Road, including"
+excerpt: "The National Transport and Safety Authority (NTSA) announced plans Thursday, March 26, 2026, to reduce speed limits to 30 km/h in areas alon"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/2HBMFfb/b8bbb4786bec.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["ntsa", "thika-road", "thika-road-speed-limits", "road-safety", "special-needs-schools"]
 canonical: "https://zandani.co.ke/article/ntsa-to-reduce-speed-limits-near-special-schools-along-thika-road"
 date: "2026-03-26T10:16:05Z"
-focusKeyword: "NTSA to reduce speed limits near special schools along Thika"
 dateModified: "2026-03-26T10:16:05Z"
+focusKeyword: "NTSA to reduce speed limits near special schools along Thika"
+schema: "NewsArticle"
 ---
+
+NTSA to reduce speed limits near special schools along Thika is central to this update for Kenyan readers.
+
 The National Transport and Safety Authority (NTSA) announced plans Thursday, March 26, 2026, to reduce speed limits to 30 km/h in areas along Thika Road, including Thika Town, Ngara, and Kasarani. This initiative targets estates and towns hosting special needs schools, enhancing student safety.
 
 New Speed Limits Target Student Safety
@@ -24,3 +29,18 @@ Instant Fines System Status Sacco heads expressed support for NTSA's recently in
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

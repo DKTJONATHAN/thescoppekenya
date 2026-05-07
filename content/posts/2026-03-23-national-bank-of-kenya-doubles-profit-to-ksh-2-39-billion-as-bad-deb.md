@@ -1,13 +1,21 @@
 ---
 title: "National Bank of Kenya doubles profit to KSh 2.39 billion as bad debt declines"
 slug: "national-bank-of-kenya-doubles-profit-to-ksh-2-39-billion-as-bad-deb"
+description: "National Bank of Kenya doubles profit to KSh 239 billion as: National Bank of Kenya Achieves Robust Profit Growth Amidst Strategic Realignment National Bank of"
+excerpt: "National Bank of Kenya Achieves Robust Profit Growth Amidst Strategic Realignment National Bank of Kenya reported a KSh 2.39 billion profit"
 author: "Grace Mkamburi"
 image: "https://i.ibb.co/8gzFXLMf/226f9fd40cd4.webp"
 category: "Business"
+tags: ["national bank of kenya doubles profit to ksh 2 39 billion as bad deb", "business", "kenya news"]
+canonical: "https://zandani.co.ke/article/national-bank-of-kenya-doubles-profit-to-ksh-2-39-billion-as-bad-deb"
 date: "2026-03-23T10:38:26Z"
-focusKeyword: "National Bank of Kenya doubles profit to KSh 239 billion as"
 dateModified: "2026-03-23T10:38:26Z"
+focusKeyword: "National Bank of Kenya doubles profit to KSh 239 billion as"
+schema: "NewsArticle"
 ---
+
+National Bank of Kenya doubles profit to KSh 239 billion as is central to this update for Kenyan readers.
+
 ## National Bank of Kenya Achieves Robust Profit Growth Amidst Strategic Realignment National Bank of Kenya reported a KSh 2.39 billion profit after tax for 2025, more than doubling 2024 figures, driven by a 37.0% reduction in bad loan provisioning. This strong performance marks its best earnings since recapitalization, reflecting deliberate portfolio rationalization and a strategic shift towards government securities under new ownership.
 
 Strong Financial Performance For the full year ended 31 December 2025, National Bank of Kenya recorded a profit after tax of KSh 2.39 billion, significantly surpassing the KSh 1.06 billion posted in 2024. This achievement represents the bank's strongest earnings performance since its recapitalization during the KCB-era. The substantial increase in profitability was largely propelled by a 37.0% decline in bad loans provisioning, which dropped to KSh 1.52 billion. Consequently, gross Non-Performing Loans (NPLs) halved to KSh 15.66 billion, reaching their lowest level since 2022.
@@ -20,3 +28,18 @@ Access Bank's Strategic Acquisition The acquisition proved profitable for KCB, y
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

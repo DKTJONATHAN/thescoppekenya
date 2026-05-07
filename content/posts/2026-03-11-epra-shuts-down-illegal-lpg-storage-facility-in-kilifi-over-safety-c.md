@@ -1,13 +1,21 @@
 ---
 title: "EPRA shuts down illegal LPG storage facility in Kilifi over safety concerns"
 slug: "epra-shuts-down-illegal-lpg-storage-facility-in-kilifi-over-safety-c"
+description: "EPRA shuts down illegal LPG storage facility in Kilifi over: EPRA Seals Illegal LPG Facility in Kilifi The Energy and Petroleum Regulatory Authority (EPRA) has"
+excerpt: "EPRA Seals Illegal LPG Facility in Kilifi The Energy and Petroleum Regulatory Authority (EPRA) has sealed an illegal Liquefied Petroleum Gas"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/whm5cFfj/863386b1292e.jpg"
 category: "News"
+tags: ["epra shuts down illegal lpg storage facility in kilifi over safety c", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/epra-shuts-down-illegal-lpg-storage-facility-in-kilifi-over-safety-c"
 date: "2026-03-11T15:07:17Z"
-focusKeyword: "EPRA shuts down illegal LPG storage facility in Kilifi over"
 dateModified: "2026-03-11T15:07:17Z"
+focusKeyword: "EPRA shuts down illegal LPG storage facility in Kilifi over"
+schema: "NewsArticle"
 ---
+
+EPRA shuts down illegal LPG storage facility in Kilifi over is central to this update for Kenyan readers.
+
 ## EPRA Seals Illegal LPG Facility in Kilifi The Energy and Petroleum Regulatory Authority (EPRA) has sealed an illegal Liquefied Petroleum Gas (LPG) bulk storage facility in Mariakani, Kilifi County. The operation, executed on February 20, 2026, targeted the unlicensed site in Shangia due to significant safety violations and its operation within a densely populated area.
 
 Regulatory Breach and Safety Risks EPRA’s Enforcement and Surveillance officers, working with a multi-agency team from the National Police Service and Kilifi County government, inspected and subsequently sealed off the facility. The site was found to have been constructed and operated without the necessary construction permits and operational licences mandated under petroleum sector regulations. This poses a substantial safety risk to the surrounding community.
@@ -18,3 +26,18 @@ Owner Faces Legal Action Despite an official decommissioning notice being displa
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

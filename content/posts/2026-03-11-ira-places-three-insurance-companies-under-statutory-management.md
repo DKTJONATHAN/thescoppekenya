@@ -1,13 +1,21 @@
 ---
 title: "IRA places three insurance companies under statutory management"
 slug: "ira-places-three-insurance-companies-under-statutory-management"
+description: "IRA places three insurance companies under statutory managem: Insurance Authority Places Three Companies Under Statutory Management The Insurance Regulatory"
+excerpt: "Insurance Authority Places Three Companies Under Statutory Management The Insurance Regulatory Authority (IRA) has placed KUSCCO Mutual Assu"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/Vpp84H5s/7f16282091ff.jpg"
 category: "News"
+tags: ["ira places three insurance companies under statutory management", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/ira-places-three-insurance-companies-under-statutory-management"
 date: "2026-03-11T07:13:16Z"
-focusKeyword: "IRA places three insurance companies under statutory managem"
 dateModified: "2026-03-11T07:13:16Z"
+focusKeyword: "IRA places three insurance companies under statutory managem"
+schema: "NewsArticle"
 ---
+
+IRA places three insurance companies under statutory managem is central to this update for Kenyan readers.
+
 ## Insurance Authority Places Three Companies Under Statutory Management The Insurance Regulatory Authority (IRA) has placed KUSCCO Mutual Assurance Ltd, Trident Insurance Company Ltd, and Corporate Insurance Company Ltd under statutory management, effective March 10, 2026. The directive prohibits new policy issuance and urges existing policyholders to seek alternative coverage to safeguard against potential losses.
 
 Statutory Management Initiated The Insurance Regulatory Authority announced today, Wednesday, March 11, 2026, that it has placed KUSCCO Mutual Assurance Ltd, Trident Insurance Company Ltd, and Corporate Insurance Company Ltd under statutory management. This action, effective March 10, 2026, was taken in accordance with Section 67C(2)(i) of the Insurance Act. The IRA has appointed the Policyholders Compensation Fund (PCF) to oversee the operations of the three insurers.
@@ -20,3 +28,18 @@ Broader Industry Crackdown This development comes as the government, alongside i
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

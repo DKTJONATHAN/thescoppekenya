@@ -1,7 +1,8 @@
 ---
 title: "World Athletics to move marathons to standalone world championships"
 slug: "world-athletics-to-move-marathons-to-standalone-world-championships"
-description: "World Athletics will remove marathons from its World Championships after 2030, introducing a standalone World Marathon Championships starting in 2030."
+description: "World Athletics to move marathons to standalone world champi: World Athletics will remove marathons from its World Championships after 2030, introducing a"
+excerpt: "By Celestine Nzioka, Za Ndani World Athletics announced on Tuesday, April 7, 2026, a significant change for elite long distance running, con"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/G3VVswXT/b7940c0cb991.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["world-marathon-championships", "world-athletics", "elite-long-distance-running", "athletics-competition-reform"]
 canonical: "https://zandani.co.ke/article/world-athletics-to-move-marathons-to-standalone-world-championships"
 date: "2026-04-07T19:33:49Z"
-focusKeyword: "World Athletics to move marathons to standalone world champi"
 dateModified: "2026-04-07T19:33:49Z"
+focusKeyword: "World Athletics to move marathons to standalone world champi"
+schema: "NewsArticle"
 ---
+
+World Athletics to move marathons to standalone world champi is central to this update for Kenyan readers.
+
 By Celestine Nzioka, Za Ndani World Athletics announced on Tuesday, April 7, 2026, a significant change for elite long-distance running, confirming marathons will be removed from its World Championships after 2030. This strategic shift introduces a standalone World Marathon Championships from 2030, impacting top athletes globally, particularly dominant distance runners from the region.
 
 World Marathon Championships to Launch The governing body confirmed that a standalone World Marathon Championships will commence in 2030, effectively separating the marathon race from the traditional World Athletics Championships. This move reshapes how elite marathon competitions are organized worldwide going forward. World Athletics stated, "World Athletics has outlined a landmark strategic roadmap for the future of distance running with the creation of a World Athletics Marathon Championships from 2030." This strategic re-evaluation reflects a broader trend of significant institutional adaptations across various global sectors, much like recent reports on the [US Military's deployment of Claude AI in Middle East operations](https://zandani.co.ke/article/us-military-deploys-claude-ai-middle-east-operations).
@@ -24,3 +29,18 @@ Athens Eyed for Inaugural Event Discussions are currently underway with Athens t
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

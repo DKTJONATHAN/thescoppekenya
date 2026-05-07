@@ -2,6 +2,7 @@
 title: "Tiaty MP William Kamket and Data Commissioner Immaculate Kassait lose son"
 slug: "tiaty-mp-william-kamket-and-data-commissioner-immaculate-kassait-los"
 description: "Tiaty MP William Kamket and Data Commissioner Immaculate Kassait are mourning their 13-year-old son, Bill Ballot, who passed away on March 17, 2026."
+excerpt: "Tiaty Member of Parliament William Kamket and Data Commissioner Immaculate Kassait are mourning the loss of their 13 year old son, Bill Ball"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/8gW4Z8D3/7fd4b62f57fd.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["william-kamket", "immaculate-kassait", "bill-ballot", "tiaty-mp", "political-family-loss"]
 canonical: "https://zandani.co.ke/article/tiaty-mp-william-kamket-and-data-commissioner-immaculate-kassait-los"
 date: "2026-03-18T05:42:58Z"
-focusKeyword: "Tiaty MP William Kamket and Data Commissioner Immaculate Kas"
 dateModified: "2026-03-18T05:42:58Z"
+focusKeyword: "Tiaty MP William Kamket and Data Commissioner Immaculate Kas"
+schema: "NewsArticle"
 ---
+
+Tiaty MP William Kamket and Data Commissioner Immaculate Kas is central to this update for Kenyan readers.
+
 Tiaty Member of Parliament William Kamket and Data Commissioner Immaculate Kassait are mourning the loss of their 13-year-old son, Bill Ballot, who passed away on Tuesday, March 17, 2026. The circumstances surrounding the young boy's death remain undisclosed, leaving the family in deep sorrow.
 
 Tiaty MP, Data Commissioner Lose Son Bill Ballot
@@ -24,3 +29,18 @@ Fatal Road Accident in West Pokot The mourning period for the Kamket-Kassait fam
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

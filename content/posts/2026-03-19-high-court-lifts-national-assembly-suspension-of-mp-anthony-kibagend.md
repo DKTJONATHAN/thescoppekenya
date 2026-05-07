@@ -1,7 +1,8 @@
 ---
 title: "High Court lifts National Assembly suspension of MP Anthony Kibagendi"
 slug: "high-court-lifts-national-assembly-suspension-of-mp-anthony-kibagend"
-description: "The High Court lifts the National Assembly suspension of Kitutu South MP Anthony Kibagendi, indefinitely halting Speaker Moses Wetangula's recent ruling."
+description: "High Court lifts National Assembly suspension of MP Anthony: The High Court lifts the National Assembly suspension of Kitutu South MP Anthony Kibagendi,"
+excerpt: "By Celestine Nzioka The High Court on Thursday issued an order suspending National Assembly Speaker Moses Wetangula’s decision to remove Kit"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/jd7cV2t/1cb45f24b11f.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["anthony-kibagendi", "moses-wetangula", "kitutu-south", "parliamentary-suspension", "national-assembly"]
 canonical: "https://zandani.co.ke/article/high-court-lifts-national-assembly-suspension-of-mp-anthony-kibagend"
 date: "2026-03-19T10:02:52Z"
-focusKeyword: "High Court lifts National Assembly suspension of MP Anthony"
 dateModified: "2026-03-19T10:02:52Z"
+focusKeyword: "High Court lifts National Assembly suspension of MP Anthony"
+schema: "NewsArticle"
 ---
+
+High Court lifts National Assembly suspension of MP Anthony is central to this update for Kenyan readers.
+
 By Celestine Nzioka The High Court on Thursday issued an order suspending National Assembly Speaker Moses Wetangula’s decision to remove Kitutu South MP Anthony Kibagendi from Parliament. Justice Bahati Mwamuye's ruling at Milimani Law Courts in Nairobi granted a conservatory order, lifting the suspension indefinitely until full determination.
 
 Parliamentary Suspension Lifted Justice Mwamuye's ruling directed that the suspension of MP Kibagendi be lifted immediately. The court emphasized that the principle of separation of powers does not prevent the judiciary from intervening in parliamentary matters. This decision effectively halts the Speaker’s directive.
@@ -24,3 +29,18 @@ Prior Legal Encounters In January 2026, MP Kibagendi faced a separate legal issu
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

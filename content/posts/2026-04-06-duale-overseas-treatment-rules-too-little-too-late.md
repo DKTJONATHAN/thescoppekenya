@@ -1,7 +1,8 @@
 ---
 title: "Duale's Rules: Too Little, Too Late for Kenya's Sick"
 slug: "duale-overseas-treatment-rules-too-little-too-late"
-description: "The Social Health Authority's grand overseas treatment scheme, capped at a pathetic KSh 500,000, is a hollow promise, betraying desperate Kenyans seeking specia"
+description: "Duales Rules Too Little Too Late for Kenyas Sick: The Social Health Authority's grand overseas treatment scheme, capped at a pathetic KSh 500,000, is a hollow"
+excerpt: "The Social Health Authority (SHA) has rolled out its much hyped overseas treatment package, and it is nothing short of a cruel joke on the s"
 author: "From The Editor"
 author_url: "https://zandani.co.ke/author/from-the-editor"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/mercy-mwangangi.jpg?itok=Vq_Ti8Bx"
@@ -9,9 +10,13 @@ category: "Opinions"
 tags: ["opinions", "sha-approved-foreign-hospitals-list", "kenyans-overseas-treatment-500k-cap", "social-health-authority-referral-process", "mercy-mwangangi-foreign-hospitals-kenya", "sha-eligible-conditions-overseas-treatment", "aden-duale-overseas-treatment-rules"]
 canonical: "https://zandani.co.ke/article/duale-overseas-treatment-rules-too-little-too-late"
 date: "2026-04-06T22:44:36Z"
-focusKeyword: "Duales Rules Too Little Too Late for Kenyas Sick"
 dateModified: "2026-04-06T22:44:36Z"
+focusKeyword: "Duales Rules Too Little Too Late for Kenyas Sick"
+schema: "NewsArticle"
 ---
+
+Duales Rules Too Little Too Late for Kenyas Sick is central to this update for Kenyan readers.
+
 The Social Health Authority (SHA) has rolled out its much-hyped overseas treatment package, and it is nothing short of a cruel joke on the suffering Kenyan populace. This entire charade, spearheaded by CS Aden Duale and Dr. Mercy Mwangangi, is a thinly veiled attempt to appear proactive while offering crumbs to citizens facing life-threatening conditions. It’s a disgrace, plain and simple.
 
 The Paltry SHA Approved Foreign Hospitals List So, after months of bureaucratic dithering, the SHA has finally cobbled together a list of eight foreign hospitals in India, Turkey, and Saudi Arabia to supposedly save Kenyans. This `sha approved foreign hospitals list` was announced by Health Cabinet Secretary Aden Duale on February 27, 2026, with the promise of commencement "next week". "Next week," they said, as if a few extra days would magically transform a flawed system into a saviour. It’s an insult to intelligence. We are meant to believe that these eight facilities, however reputable, will cater to the myriad of complex, often rare, medical conditions that our broken local healthcare system cannot handle. It's a token gesture, a public relations exercise designed to deflect from systemic failures.
@@ -26,3 +31,18 @@ The Sham of SHA Eligible Conditions Overseas Treatment The underlying premise th
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

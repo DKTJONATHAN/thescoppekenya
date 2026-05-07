@@ -1,13 +1,21 @@
 ---
 title: "I&M Bank and Sida partner to expand green lending in Kenya with USD 30 million agreement"
 slug: "i-m-bank-and-sida-partner-to-expand-green-lending-in-kenya-with-usd-"
+description: "IM Bank and Sida partner to expand green lending in Kenya wi: I&M Bank Secures $30M Green Finance for Kenyan Businesses I&M Bank Limited has formalized a $30"
+excerpt: "I&M Bank Secures $30M Green Finance for Kenyan Businesses I&M Bank Limited has formalized a $30 million Green Finance Risk Sharing Guarantee"
 author: "Grace Mkamburi"
 image: "https://i.ibb.co/rNTs4qh/468a0e678797.jpg"
 category: "Business"
+tags: ["i m bank and sida partner to expand green lending in kenya with usd ", "business", "kenya news"]
+canonical: "https://zandani.co.ke/article/i-m-bank-and-sida-partner-to-expand-green-lending-in-kenya-with-usd-"
 date: "2026-03-19T10:26:03Z"
-focusKeyword: "IM Bank and Sida partner to expand green lending in Kenya wi"
 dateModified: "2026-03-19T10:26:03Z"
+focusKeyword: "IM Bank and Sida partner to expand green lending in Kenya wi"
+schema: "NewsArticle"
 ---
+
+IM Bank and Sida partner to expand green lending in Kenya wi is central to this update for Kenyan readers.
+
 ## I&M Bank Secures $30M Green Finance for Kenyan Businesses I&M Bank Limited has formalized a $30 million Green Finance Risk-Sharing Guarantee partnership with the Swedish International Development Cooperation Agency (Sida). This strategic collaboration will significantly expand the bank's capacity to finance sustainable and climate-aligned projects across Kenya, channeling crucial capital into the nation's green transition sectors.
 
 Catalyzing Green Transition Investments The partnership, formalized on March 18, 2026, involves a $15 million guarantee from Sida, structured with an eight-year coverage and a 50 percent risk-sharing mechanism. This arrangement empowers I&M Bank to substantially increase its green transition lending portfolio, supporting businesses operating in eligible green sectors. Shameer Patel, Director, Retail & Business Banking at I&M Bank, highlighted that this initiative moves beyond mere sustainability commitments, backing them with real capital, an international partner, and a rigorous framework aligned with Kenya's regulatory architecture. The facility aims to support sectors vital for Kenya's green transition, including renewable energy, energy efficiency, clean transportation, and green building renovations.
@@ -18,3 +26,18 @@ Reinforcing Kenya's Green Finance Landscape In structuring loans under this part
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

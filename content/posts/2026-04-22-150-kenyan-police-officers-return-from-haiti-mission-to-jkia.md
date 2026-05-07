@@ -1,8 +1,8 @@
 ---
 title: "150 Kenyan Police Officers Return from Haiti Mission to JKIA"
 slug: "150-kenyan-police-officers-return-from-haiti-mission-to-jkia"
+description: "150 Kenyan Police Officers Return from Haiti Mission to JKIA: A contingent of 150 Kenyan police officers returned to JKIA from the Haiti mission on April 2,"
 excerpt: "The fourth contingent of 150 Kenyan police officers has returned to JKIA after a successful Kenya-led Multinational Security Support Mission in Haiti."
-description: "A contingent of 150 Kenyan police officers returned to JKIA from the Haiti mission on April 2, 2026, signifying the end of the fourth personnel rotation."
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/nsMtbKBw/4091a9266f62.webp"
@@ -10,9 +10,13 @@ category: "News"
 tags: ["kenyan-police-haiti-deployment", "multinational-security-support-mission", "douglas-kanja", "jomo-kenyatta-international-airport", "international-peacekeeping"]
 canonical: "https://zandani.co.ke/article/150-kenyan-police-officers-return-from-haiti-mission-to-jkia"
 date: "2026-04-22T04:20:33Z"
-focusKeyword: "150 Kenyan Police Officers Return from Haiti Mission to JKIA"
 dateModified: "2026-04-22T04:20:33Z"
+focusKeyword: "150 Kenyan Police Officers Return from Haiti Mission to JKIA"
+schema: "NewsArticle"
 ---
+
+150 Kenyan Police Officers Return from Haiti Mission to JKIA is central to this update for Kenyan readers.
+
 A contingent of 150 police officers from the Multinational Security Support Mission (MSS) in Haiti returned to Jomo Kenyatta International Airport (JKIA) on the evening of Thursday, April 2, 2026. This arrival signifies the conclusion of the fourth rotation of personnel and marks a pivotal moment for the peacekeeping operation.
 
 ## Kenyan Police Conclude Haiti Deployment
@@ -29,3 +33,18 @@ Despite the recent public protests in Haiti, the Kenyan officers delivered tangi
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

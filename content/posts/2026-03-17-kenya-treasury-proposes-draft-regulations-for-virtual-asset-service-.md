@@ -1,7 +1,8 @@
 ---
 title: "Kenya Treasury proposes draft regulations for virtual asset service providers"
 slug: "kenya-treasury-proposes-draft-regulations-for-virtual-asset-service-"
-description: "Kenya Treasury proposes the Virtual Asset Service Providers Regulations 2026 to regulate the crypto sector and enhance anti-money laundering frameworks."
+description: "Kenya Treasury proposes draft regulations for virtual asset: Kenya Treasury proposes the Virtual Asset Service Providers Regulations 2026 to regulate the"
+excerpt: "The National Treasury on Tuesday, March 17, published the draft Virtual Asset Service Providers (VASP) Regulations 2026, introducing stringe"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/R4pmKcPP/96be138c2ff5.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["virtual-asset-service-providers", "kenya-national-treasury", "vasp-regulations-2026", "crypto-regulation", "digital-asset-policy"]
 canonical: "https://zandani.co.ke/article/kenya-treasury-proposes-draft-regulations-for-virtual-asset-service-"
 date: "2026-03-17T17:19:20Z"
-focusKeyword: "Kenya Treasury proposes draft regulations for virtual asset"
 dateModified: "2026-03-17T17:19:20Z"
+focusKeyword: "Kenya Treasury proposes draft regulations for virtual asset"
+schema: "NewsArticle"
 ---
+
+Kenya Treasury proposes draft regulations for virtual asset is central to this update for Kenyan readers.
+
 The National Treasury on Tuesday, March 17, published the draft Virtual Asset Service Providers (VASP) Regulations 2026, introducing stringent measures to regulate the country's burgeoning crypto industry. The regulations aim to enhance consumer protection, combat financial crimes such as money laundering, and provide regulatory clarity for businesses operating within this sector.
 
 New Regulatory Framework for Digital Assets The proposed VASP Regulations 2026, issued pursuant to the Virtual Asset Service Providers Act, 2025 (Act No. 20 of 2025), seek to establish a legal framework for licensing and supervising virtual asset service providers in and from the country. This move by the Treasury underscores a commitment to fostering a secure and transparent digital finance ecosystem.
@@ -26,3 +31,18 @@ Public Consultation and Industry Impact The legislation provides crucial safety 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

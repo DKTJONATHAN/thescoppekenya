@@ -1,7 +1,8 @@
 ---
 title: "Mike Sonko lures suspect in gospel singer acid attack out of hiding for arrest"
 slug: "mike-sonko-lures-suspect-in-gospel-singer-acid-attack-out-of-hiding-"
-description: "Former Nairobi Governor Mike Sonko lured Elvis Opiyo, the suspect in the acid attack on gospel singer Claire-Mary, to Nairobi for arrest on March 22, 2026."
+description: "Mike Sonko lures suspect in gospel singer acid attack out of: Former Nairobi Governor Mike Sonko lured Elvis Opiyo, the suspect in the acid attack on gospel"
+excerpt: "Former Nairobi Governor Mike Sonko orchestrated the arrest of Elvis Opiyo, the primary suspect in the acid attack on gospel singer Claire Ma"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/xwPb84C/e830480a2764.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["mike-sonko", "claire-mary", "elvis-opiyo", "acid-attack-arrest", "criminal-justice"]
 canonical: "https://zandani.co.ke/article/mike-sonko-lures-suspect-in-gospel-singer-acid-attack-out-of-hiding-"
 date: "2026-03-24T11:11:15Z"
-focusKeyword: "Mike Sonko lures suspect in gospel singer acid attack out of"
 dateModified: "2026-03-24T11:11:15Z"
+focusKeyword: "Mike Sonko lures suspect in gospel singer acid attack out of"
+schema: "NewsArticle"
 ---
+
+Mike Sonko lures suspect in gospel singer acid attack out of is central to this update for Kenyan readers.
+
 Former Nairobi Governor Mike Sonko orchestrated the arrest of Elvis Opiyo, the primary suspect in the acid attack on gospel singer Claire-Mary, through a deceptive tactic. Sonko lured Opiyo to Nairobi on March 22, 2026, leading to his apprehension as Claire-Mary recovers in Kenyatta National Hospital following the March 17 assault.
 
 Arrest Follows Calculated Ruse Mike Sonko detailed on March 24, 2026, how he successfully orchestrated the arrest of Elvis Opiyo. Following a visit to Claire-Mary at Kenyatta National Hospital, Sonko revealed his plan to trick Opiyo into traveling to Nairobi, which culminated in the arrest on Sunday, March 22. Sonko stated, "We tricked him by lying to him to come to Nairobi, and that’s how we made the arrest. So, justice will be served."
@@ -24,3 +29,18 @@ Legal Proceedings and Past Reports Elvis Opiyo, identified as Claire-Mary's estr
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

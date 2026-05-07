@@ -1,7 +1,8 @@
 ---
 title: "KRA proposes removal of VAT registration threshold for all businesses"
 slug: "kra-proposes-removal-of-vat-registration-threshold-for-all-businesse"
-description: "KRA proposes removing the VAT registration threshold, requiring all businesses to register for VAT and remit the 16% tax regardless of turnover."
+description: "KRA proposes removal of VAT registration threshold for all b: KRA proposes removing the VAT registration threshold, requiring all businesses to register for"
+excerpt: "The Kenya Revenue Authority (KRA) is proposing to remove the Value Added Tax (VAT) registration threshold for all businesses. This amendment"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/jk3SPtrc/674e2c45e949.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["vat-registration-threshold", "kenya-revenue-authority", "taxation-policy", "kra-tax-amendments", "vat-act-amendments"]
 canonical: "https://zandani.co.ke/article/kra-proposes-removal-of-vat-registration-threshold-for-all-businesse"
 date: "2026-03-23T05:49:23Z"
-focusKeyword: "KRA proposes removal of VAT registration threshold for all b"
 dateModified: "2026-03-23T05:49:23Z"
+focusKeyword: "KRA proposes removal of VAT registration threshold for all b"
+schema: "NewsArticle"
 ---
+
+KRA proposes removal of VAT registration threshold for all b is central to this update for Kenyan readers.
+
 The Kenya Revenue Authority (KRA) is proposing to remove the Value-Added Tax (VAT) registration threshold for all businesses. This amendment to Section 34 (1a) of the VAT Act would require every enterprise, regardless of turnover, to register for VAT and remit the 16 percent tax.
 
 Broadening the Tax Base
@@ -22,3 +27,18 @@ KRA's Revenue Goals and Policy Discrepancies KRA argues that eliminating the VAT
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

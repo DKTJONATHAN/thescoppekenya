@@ -1,7 +1,8 @@
 ---
 title: "DCI arrests former energy officials over irregular Ksh 4 billion fuel deal"
 slug: "dci-arrests-former-energy-officials-over-irregular-ksh-4-billion-fue"
-description: "DCI arrests former Energy officials Daniel Kiptoo, Joe Sang, and Mohamed Liban over an irregular Ksh 4 billion fuel deal involving emergency cargo."
+description: "DCI arrests former energy officials over irregular Ksh 4 bil: DCI arrests former Energy officials Daniel Kiptoo, Joe Sang, and Mohamed Liban over an irregular"
+excerpt: "The Directorate of Criminal Investigations (DCI) has arrested former Energy and Petroleum Regulatory Authority (EPRA) Director General Danie"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/fV69bKwM/6934108854b8.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["fuel-deal-investigation", "daniel-kiptoo", "joe-sang", "epra-corruption-case", "energy-sector-fraud"]
 canonical: "https://zandani.co.ke/article/dci-arrests-former-energy-officials-over-irregular-ksh-4-billion-fue"
 date: "2026-04-04T16:55:06Z"
-focusKeyword: "DCI arrests former energy officials over irregular Ksh 4 bil"
 dateModified: "2026-04-04T16:55:06Z"
+focusKeyword: "DCI arrests former energy officials over irregular Ksh 4 bil"
+schema: "NewsArticle"
 ---
+
+DCI arrests former energy officials over irregular Ksh 4 bil is central to this update for Kenyan readers.
+
 The Directorate of Criminal Investigations (DCI) has arrested former Energy and Petroleum Regulatory Authority (EPRA) Director General Daniel Kiptoo, former Kenya Pipeline Company (KPC) Managing Director Joe Sang, and former Petroleum Principal Secretary Mohamed Liban in connection with an irregular Ksh4 billion fuel deal. The DCI confirmed Saturday, April 4, 2026, that investigations are focused on two private companies implicated in the emergency cargo purchase.
 
 Allegations of Fuel Stock Manipulation and Irregular Procurement The DCI is investigating two private companies central to a Ksh4 billion emergency fuel cargo purchase made outside the established Government-to-Government (G-2-G) oil supply framework with Gulf nations. One company, registered in 2010, is described as a prominent Kenyan oil marketing firm and a key infrastructure player in East and Central Africa, owned by a Kenyan-Indian tycoon of Indian origin and a fifth-generation Kenyan. This company operates the region's largest independent terminus at Mombasa Port for heavy fuel oil and bulk bitumen. The second company is a Swiss-owned dealer in petroleum products, operating approximately 20 petrol stations across the country.
@@ -22,3 +27,18 @@ Substandard Quality and Exploitation Claims According to the Office of the Presi
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

@@ -1,7 +1,8 @@
 ---
 title: "EPRA increases petrol and diesel prices while kerosene remains unchanged"
 slug: "epra-increases-petrol-and-diesel-prices-while-kerosene-remains-uncha"
-description: "EPRA has increased the prices of Super Petrol and Diesel by Ksh 28.69 and Ksh 40.30 for the April-May 2026 cycle, while Kerosene prices remain unchanged."
+description: "EPRA increases petrol and diesel prices while kerosene remai: EPRA has increased the prices of Super Petrol and Diesel by Ksh 28.69 and Ksh 40.30 for the"
+excerpt: "By Celestine Nzioka The Energy and Petroleum Regulatory Authority (EPRA) today, Tuesday, April 14, 2026, increased the prices of Super Petro"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/VbsCxvX/e9fa5904714d.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["epra-fuel-price-review", "petrol-and-diesel-prices", "energy-and-petroleum-regulatory-authority", "petroleum-industry", "fuel-pump-prices"]
 canonical: "https://zandani.co.ke/article/epra-increases-petrol-and-diesel-prices-while-kerosene-remains-uncha"
 date: "2026-04-14T19:42:48Z"
-focusKeyword: "EPRA increases petrol and diesel prices while kerosene remai"
 dateModified: "2026-04-14T19:42:48Z"
+focusKeyword: "EPRA increases petrol and diesel prices while kerosene remai"
+schema: "NewsArticle"
 ---
+
+EPRA increases petrol and diesel prices while kerosene remai is central to this update for Kenyan readers.
+
 By Celestine Nzioka The Energy and Petroleum Regulatory Authority (EPRA) today, Tuesday, April 14, 2026, increased the prices of Super Petrol and Diesel for the April to May cycle, concluding weeks of public anticipation. Kerosene prices, however, will remain unchanged, with the revised rates becoming effective at midnight for the next 30 days.
 
 Max pump prices increase
@@ -28,3 +33,18 @@ Regional Variations Motorists in Mombasa will encounter Super Petrol retailing a
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

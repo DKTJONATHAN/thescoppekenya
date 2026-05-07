@@ -1,7 +1,8 @@
 ---
 title: "Joeboy and Wizard Chan release collaborative EP Agaba Romantic"
 slug: "joeboy-and-wizard-chan-release-collaborative-ep-agaba-romantic"
-description: "Joeboy and Wizard Chan release Agaba Romantic, a seven-track EP blending Nigerian sounds and pop to explore love and cultural identity on March 18, 2026."
+description: "Joeboy and Wizard Chan release collaborative EP Agaba Romant: Joeboy and Wizard Chan release Agaba Romantic, a seven-track EP blending Nigerian sounds and pop"
+excerpt: "Afrobeats luminary Joeboy and genre bending artist Wizard Chan recently unveiled their highly anticipated collaborative EP, 'Agaba Romantic."
 author: "Amara Ndlovu"
 author_url: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/jPjkNDqm/4c9efa276e70.webp"
@@ -9,9 +10,13 @@ category: "Entertainment"
 tags: ["joeboy", "wizard-chan", "agaba-romantic", "afrobeats-ep", "pan-african-music"]
 canonical: "https://zandani.co.ke/article/joeboy-and-wizard-chan-release-collaborative-ep-agaba-romantic"
 date: "2026-03-24T15:39:32Z"
-focusKeyword: "Joeboy and Wizard Chan release collaborative EP Agaba Romant"
 dateModified: "2026-03-24T15:39:32Z"
+focusKeyword: "Joeboy and Wizard Chan release collaborative EP Agaba Romant"
+schema: "NewsArticle"
 ---
+
+Joeboy and Wizard Chan release collaborative EP Agaba Romant is central to this update for Kenyan readers.
+
 Afrobeats luminary Joeboy and genre-bending artist Wizard Chan recently unveiled their highly anticipated collaborative EP, "Agaba Romantic." This seven-track project, released on March 18, 2026, showcases a profound artistic synergy, merging diverse Nigerian sounds with heartfelt pop sensibilities to deliver a rich, introspective exploration of love and cultural identity for audiences across Africa.
 
 Joeboy and Wizard Chan's "Agaba Romantic" EP The release of "Agaba Romantic" marks a significant evolution in the artistic relationship between Joeboy and Wizard Chan, building on their successful past collaborations. Wizard Chan previously featured Joeboy on the hit song "Loner (Alone)" from his 2024 EP, "The Messenger," and again on "Heal" from his critically acclaimed debut LP, "Healers Chapel," released in 2025. These earlier partnerships demonstrated a seamless synergy, paving the way for a joint project that fully explores their combined musical prowess. "Agaba Romantic" embodies a unique collision of two distinct worlds: Wizard Chan, known as the "Big Masquerade" (Agaba), represents the rich diversity of Nigerian music, while Joeboy stands as one of Afrobeats' premier romantics.
@@ -22,3 +27,18 @@ Critical Acclaim and Enduring Purpose Despite its concise seven-track length, "A
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

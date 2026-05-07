@@ -1,7 +1,8 @@
 ---
 title: "Kenya Aviation Workers Union threatens strike over KCAA dispute"
 slug: "kenya-aviation-workers-union-threatens-strike-over-kcaa-dispute"
-description: "Kenya Aviation Workers Union warns of a strike starting March 25, 2026, citing a breach of the return-to-work formula by the KCAA and flight disruptions."
+description: "Kenya Aviation Workers Union threatens strike over KCAA disp: Kenya Aviation Workers Union warns of a strike starting March 25, 2026, citing a breach of the"
+excerpt: "The Kenya Aviation Workers Union (KAWU) has issued another strike threat against the Kenya Civil Aviation Authority (KCAA), alleging a breac"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/DfVs2yjH/f2e757ce4017.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["kenya-aviation-workers-union", "kenya-civil-aviation-authority", "moses-ndiema", "aviation-strike-threat", "aviation-labor-dispute"]
 canonical: "https://zandani.co.ke/article/kenya-aviation-workers-union-threatens-strike-over-kcaa-dispute"
 date: "2026-03-18T19:19:13Z"
-focusKeyword: "Kenya Aviation Workers Union threatens strike over KCAA disp"
 dateModified: "2026-03-18T19:19:13Z"
+focusKeyword: "Kenya Aviation Workers Union threatens strike over KCAA disp"
+schema: "NewsArticle"
 ---
+
+Kenya Aviation Workers Union threatens strike over KCAA disp is central to this update for Kenyan readers.
+
 The Kenya Aviation Workers Union (KAWU) has issued another strike threat against the Kenya Civil Aviation Authority (KCAA), alleging a breach of their return-to-work formula. Secretary General Moses Ndiema stated Wednesday, March 18, 2026, that aviation services face suspension from March 25, urging passengers to prepare for disruptions.
 
 Renewed Aviation Standoff
@@ -24,3 +29,18 @@ Potential Sector-Wide Disruptions Industrial strikes by aviation workers typical
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

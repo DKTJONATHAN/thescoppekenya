@@ -1,7 +1,8 @@
 ---
 title: "MP Peter Salasya proposes flat KSh 500 monthly contribution for all Kenyans"
 slug: "mp-peter-salasya-proposes-flat-ksh-500-monthly-contribution-for-all-"
-description: "MP Peter Salasya proposes amending the Social Health Insurance Act to introduce a uniform KSh 500 monthly contribution for all registered members of the SHA."
+description: "MP Peter Salasya proposes flat KSh 500 monthly contribution: MP Peter Salasya proposes amending the Social Health Insurance Act to introduce a uniform KSh 500"
+excerpt: "Mumias East Member of Parliament Peter Salasya, on Saturday, April 11, initiated a legislative proposal to amend the Social Health Insurance"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/KpsmfVH8/00c0dc4beaf2.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["peter-salasya", "sha-monthly-contribution", "social-health-authority", "social-health-insurance-act-2023", "healthcare-financing"]
 canonical: "https://zandani.co.ke/article/mp-peter-salasya-proposes-flat-ksh-500-monthly-contribution-for-all-"
 date: "2026-04-12T09:07:05Z"
-focusKeyword: "MP Peter Salasya proposes flat KSh 500 monthly contribution"
 dateModified: "2026-04-12T09:07:05Z"
+focusKeyword: "MP Peter Salasya proposes flat KSh 500 monthly contribution"
+schema: "NewsArticle"
 ---
+
+MP Peter Salasya proposes flat KSh 500 monthly contribution is central to this update for Kenyan readers.
+
 Mumias East Member of Parliament Peter Salasya, on Saturday, April 11, initiated a legislative proposal to amend the Social Health Insurance Act, 2023. The core of his proposition seeks to introduce a uniform KSh 500 monthly contribution for all registered members of the Social Health Authority (SHA), aiming to rectify identified operational and financial deficiencies.
 
 Legislative Push for SHA Reforms Salasya formally addressed National Assembly Speaker Moses Wetang'ula, outlining his concerns regarding the SHA's framework. He specifically cited what he described as deep operational and financial failures within the authority, prompting the proposed overhaul. The amendments aim to foster a more sustainable and accessible healthcare financing model.
@@ -26,3 +31,18 @@ Claims Settlement and Current SHA Status A key amendment within the proposed bil
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

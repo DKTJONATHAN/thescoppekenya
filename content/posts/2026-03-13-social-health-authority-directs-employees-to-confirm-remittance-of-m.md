@@ -1,13 +1,21 @@
 ---
 title: "Social Health Authority Directs Employees to Confirm Remittance of Monthly Health Deductions"
 slug: "social-health-authority-directs-employees-to-confirm-remittance-of-m"
+description: "Social Health Authority Directs Employees to Confirm Remitta: Social Health Authority Urges Employees to Verify Health Fund Deductions The Social Health"
+excerpt: "Social Health Authority Urges Employees to Verify Health Fund Deductions The Social Health Authority (SHA) has issued a directive urging all"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/MkF03q1b/b7f0cc763c27.jpg"
 category: "News"
+tags: ["social health authority directs employees to confirm remittance of m", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/social-health-authority-directs-employees-to-confirm-remittance-of-m"
 date: "2026-03-13T05:19:43Z"
-focusKeyword: "Social Health Authority Directs Employees to Confirm Remitta"
 dateModified: "2026-03-13T05:19:43Z"
+focusKeyword: "Social Health Authority Directs Employees to Confirm Remitta"
+schema: "NewsArticle"
 ---
+
+Social Health Authority Directs Employees to Confirm Remitta is central to this update for Kenyan readers.
+
 ## Social Health Authority Urges Employees to Verify Health Fund Deductions The Social Health Authority (SHA) has issued a directive urging all employees to confirm the remittance of their monthly health insurance contributions. This mandate, released on Thursday, March 12, 2026, emphasizes employers' legal responsibility to deduct and submit contributions by the ninth day of the following month to ensure continuous access to healthcare services. The Authority stressed that non-compliance affects employee benefits.
 
 Employer Compliance and Remittance Deadlines Employers are legally obligated to deduct and remit employee contributions to the Social Health Authority on or before the ninth day of the month following salary payments. The SHA warned that failure to adhere to this deadline could result in employees being denied access to medical services under the scheme. This requirement ensures that workers maintain uninterrupted healthcare coverage, a critical component of national well-being. The Social Health Insurance Act 2024, which replaced the National Health Insurance Fund (NHIF), mandates a 2.75% deduction from an employee's gross monthly salary without an upper limit. This financial diligence underscores a broader commitment to fiscal responsibility, a principle also reflected in recent central bank actions to adjust lending rates downwards [CBK Governor Signals Further Interest Rate Cuts After Lending Rate Falls to 8.75 Percent](https://zandani.co.ke/article/cbk-governor-signals-further-interest-rate-cuts-lending-rate-falls-to-8-75-percent).
@@ -18,3 +26,18 @@ Reporting Non-Compliance The SHA has advised employees to immediately report any
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

@@ -1,15 +1,21 @@
 ---
 title: "KMTC Announces Scholarships for Nine Kidney Care-Related Courses, Bolstering National Healthcare Capacity"
 slug: "kmtc-announces-scholarships-nine-kidney-care-related-courses"
+description: "KMTC Announces Scholarships for Nine Kidney Care-Related Cou: The Kenya Medical Training College (KMTC) has announced scholarships for nine kidney care-related"
 excerpt: "The Kenya Medical Training College (KMTC) has announced scholarships for nine kidney care-related courses, aiming to bolster specialised healthcare in Kenya."
 author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/kmtc_0.jpg?itok=b2Bg-R7V"
 category: "News"
-date: "2026-02-27"
 tags: ["KMTC", "scholarships", "kidney care", "nephrology", "East Africa Centre of Excellence", "Kenya", "healthcare", "medical training"]
-focusKeyword: "KMTC Announces Scholarships for Nine Kidney Care-Related Cou"
+canonical: "https://zandani.co.ke/article/kmtc-announces-scholarships-nine-kidney-care-related-courses"
+date: "2026-02-27"
 dateModified: "2026-02-27"
+focusKeyword: "KMTC Announces Scholarships for Nine Kidney Care-Related Cou"
+schema: "NewsArticle"
 ---
+
+KMTC Announces Scholarships for Nine Kidney Care-Related Cou is central to this update for Kenyan readers.
+
 ## KMTC Announces Scholarships for Nine Kidney Care-Related Courses The Kenya Medical Training College (KMTC) has announced a significant scholarship programme under the East Africa Centre of Excellence in Urology and Nephrology (EACE-UN) initiative, aimed at strengthening specialised care in kidney-related fields across the nation. This vital opportunity, confirmed by KMTC's Chief Executive Officer, Kelly Oluoch, on Thursday, February 26, 2026, seeks to equip health professionals with advanced skills in a critical medical area. The scholarships, funded by a loan from the African Development Bank (AfDB) and the Government of Kenya, underscore a regional commitment to enhancing biomedical sciences and patient outcomes in renal and urological care.
 
 Understanding the Scope of the Kidney Care-Related Courses The scholarship programme targets advanced training across nine specialised Higher Diploma programmes and an additional six-month short course. These comprehensive **kidney care-related courses** are strategically designed to address various facets of renal health and technology. Among the Higher Diplomas offered are Medical Engineering with specialisations in Dialysis Equipment, Therapeutic Equipment, and Diagnostic Equipment, vital for maintaining life-saving medical technologies. Further specialisations include a Higher Diploma in Clinical Medicine and Surgery (Nephrology), equipping clinical officers with advanced skills in kidney disease diagnosis and management. Nurses can pursue a Higher Diploma in Nephrology Nursing, tailored to enhance patient care in dialysis units, renal wards, and transplant centres. Other key areas include Higher Diplomas in Nutrition and Dietetics (Renal Nutrition), Medical Laboratory Sciences (Renal Technology), Occupational Therapy (Renal Rehabilitation), and Renal Pharmacy. Complementing these, a six-month short course in Renal Transplant Nursing aims to significantly improve transplant outcomes and expand Kenya's capacity for complex renal procedures.
@@ -20,3 +26,18 @@ Prioritising Expertise for National Impact The selection process prioritises spe
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

@@ -1,7 +1,8 @@
 ---
 title: "National Construction Authority warns developers following building collapses in Nairobi and Kericho"
 slug: "national-construction-authority-warns-developers-following-building-"
-description: "National Construction Authority warns developers to follow building standards after fatal collapses in Nairobi's Westlands and Kericho's Belgut Sub-County."
+description: "National Construction Authority warns developers following b: National Construction Authority warns developers to follow building standards after fatal"
+excerpt: "The National Construction Authority (NCA) today, Friday, March 20, 2026, issued a stringent warning to all construction stakeholders regardi"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/6RzH1t1H/9c299b9daa42.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["national-construction-authority", "maurice-akech", "nairobi-westlands", "building-collapses", "construction-safety-standards"]
 canonical: "https://zandani.co.ke/article/national-construction-authority-warns-developers-following-building-"
 date: "2026-03-20T19:07:52Z"
-focusKeyword: "National Construction Authority warns developers following b"
 dateModified: "2026-03-20T19:07:52Z"
+focusKeyword: "National Construction Authority warns developers following b"
+schema: "NewsArticle"
 ---
+
+National Construction Authority warns developers following b is central to this update for Kenyan readers.
+
 The National Construction Authority (NCA) today, Friday, March 20, 2026, issued a stringent warning to all construction stakeholders regarding adherence to approved building standards. This directive follows two recent fatal building collapses reported on March 18 in Nairobi's Westlands area and Kericho's Belgut Sub-County.
 
 NCA Intensifies Enforcement After Fatal Incidents Following the recent incidents, Engineer Maurice Akech, NCA Executive Director, urged strict compliance with structural and safety regulations. The authority emphasized the critical need for adherence to approved structural designs, proper installation, and supervision of formwork during concrete works, alongside continuous on-site supervision by licensed professionals. The NCA also called for full compliance with safety and regulatory requirements, including the National Building Code, 2024, and proper demolition procedures under qualified supervision.
@@ -26,3 +31,18 @@ Ongoing Investigations and Accountability The NCA has confirmed that multi-agenc
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

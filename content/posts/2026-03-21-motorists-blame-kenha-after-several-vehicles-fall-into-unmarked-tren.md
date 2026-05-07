@@ -1,7 +1,8 @@
 ---
 title: "Motorists Blame KeNHA After Several Vehicles Fall Into Unmarked Trench on University Way"
 slug: "motorists-blame-kenha-after-several-vehicles-fall-into-unmarked-tren"
-description: "Motorists blame KeNHA for negligence after several vehicles fell into an unmarked trench on Nairobi's University Way during heavy rains on March 20, 2026."
+description: "Motorists Blame KeNHA After Several Vehicles Fall Into Unmar: Motorists blame KeNHA for negligence after several vehicles fell into an unmarked trench on"
+excerpt: "Motorists raised alarms after several vehicles skidded into an unmarked trench along University Way on Friday night, March 20, 2026, prompti"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/0p3vWcM2/6a673a13d73a.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["kenha", "university-way", "nairobi-road-safety", "unmarked-trenches", "anniversary-towers"]
 canonical: "https://zandani.co.ke/article/motorists-blame-kenha-after-several-vehicles-fall-into-unmarked-tren"
 date: "2026-03-21T05:57:52Z"
-focusKeyword: "Motorists Blame KeNHA After Several Vehicles Fall Into Unmar"
 dateModified: "2026-03-21T05:57:52Z"
+focusKeyword: "Motorists Blame KeNHA After Several Vehicles Fall Into Unmar"
+schema: "NewsArticle"
 ---
+
+Motorists Blame KeNHA After Several Vehicles Fall Into Unmar is central to this update for Kenyan readers.
+
 Motorists raised alarms after several vehicles skidded into an unmarked trench along University Way on Friday night, March 20, 2026, prompting accusations of negligence against the Kenya National Highways Authority (KeNHA) amid overnight flooding. Although no injuries were reported, multiple incidents highlighted the dangers posed by the unaddressed hazard, particularly during heavy rainfall in Nairobi.
 
 University Way Incident Sparks Outcry The trench, located near Anniversary Towers, just before Utalii Lane on the inner lane of University Way, was reportedly unmarked. Videos and images obtained by Za Ndani depicted one vehicle completely submerged and lying on its side in the ditch. Motorists circulating online expressed frustration, noting that the ditch has been the cause of multiple incidents. One driver stated, "KeNHA has neglected their work; there's a ditch in the middle of University Way with no markings. This is the 7th vehicle that has skidded into this ditch."
@@ -24,3 +29,18 @@ Flooding Extends to Kiambu County Neighboring Kiambu County also experienced sig
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

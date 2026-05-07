@@ -1,7 +1,8 @@
 ---
 title: "DCI attributes delays in South C building collapse investigation to complexities"
 slug: "dci-attributes-delays-in-south-c-building-collapse-investigation-to-"
-description: "DCI attributes delays in the South C building collapse investigation to 'inherent complexities,' following ODPP's criticism of the slow probe."
+description: "DCI attributes delays in South C building collapse investiga: DCI attributes delays in the South C building collapse investigation to 'inherent complexities,'"
+excerpt: "The Directorate of Criminal Investigations (DCI) on Saturday, March 28, 2026, attributed delays in submitting investigation files for the So"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/NdZ7RWtN/70fd916de461.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["south-c-building-collapse", "nairobi-dci-investigations", "renson-ingonga", "infrastructure-safety-probe"]
 canonical: "https://zandani.co.ke/article/dci-attributes-delays-in-south-c-building-collapse-investigation-to-"
 date: "2026-03-28T10:52:58Z"
-focusKeyword: "DCI attributes delays in South C building collapse investiga"
 dateModified: "2026-03-28T10:52:58Z"
+focusKeyword: "DCI attributes delays in South C building collapse investiga"
+schema: "NewsArticle"
 ---
+
+DCI attributes delays in South C building collapse investiga is central to this update for Kenyan readers.
+
 The Directorate of Criminal Investigations (DCI) on Saturday, March 28, 2026, attributed delays in submitting investigation files for the South C building collapse in Nairobi to the probe's inherent complexities. This follows strong criticism from the Office of the Director of Public Prosecutions (ODPP) regarding the slow pace of the inquiry.
 
 Probe Complexity Cited The DCI's explanation came in response to allegations from Director of Public Prosecutions (DPP) Renson Ingonga, who blamed Inspector General of Police Douglas Kanja for failing to submit investigation findings. Ingonga stated that his office had issued repeated directives, including a '2nd Reminder', yet no file had been received almost three months after the tragedy that claimed two lives.
@@ -20,3 +25,18 @@ DCI Outlines Investigative Scope Responding on Saturday, March 28, the DCI confi
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

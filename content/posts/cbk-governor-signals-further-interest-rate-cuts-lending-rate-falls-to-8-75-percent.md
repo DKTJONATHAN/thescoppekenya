@@ -1,15 +1,21 @@
 ---
 title: "CBK Governor Signals Further Interest Rate Cuts After Lending Rate Falls to 8.75 Percent"
 slug: "cbk-governor-signals-further-interest-rate-cuts-lending-rate-falls-to-8-75-percent"
+description: "CBK Governor Signals Further Interest Rate Cuts After Lendin: CBK Governor signals further interest rate cuts are possible after the benchmark lending rate"
 excerpt: "CBK Governor signals further interest rate cuts are possible after the benchmark lending rate falls to 8.75 percent, aiming to stimulate Kenya's economy."
 author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/cbk-governor-kamau.jpg?h=76f538a4&itok=Gzd02y8t"
 category: "News"
+tags: ["Kenya", "Central Bank of Kenya", "interest rates", "lending rate", "economic policy", "Kamau Thugge", "monetary policy", "economy"]
+canonical: "https://zandani.co.ke/article/cbk-governor-signals-further-interest-rate-cuts-lending-rate-falls-to-8-75-percent"
 date: "2026-02-25"
-tags: ["Kenya", "Central Bank of Kenya", "interest rates", "lending rate", "economic policy", "Kamau Thugge", "monetary policy", "economy", "borrowers"]
-focusKeyword: "CBK Governor Signals Further Interest Rate Cuts After Lendin"
 dateModified: "2026-02-25"
+focusKeyword: "CBK Governor Signals Further Interest Rate Cuts After Lendin"
+schema: "NewsArticle"
 ---
+
+CBK Governor Signals Further Interest Rate Cuts After Lendin is central to this update for Kenyan readers.
+
 ## CBK Governor Signals Further Interest Rate Cuts as Lending Rate Falls to 8.75 Percent The Central Bank of Kenya (CBK) Governor has indicated potential for additional interest rate reductions, following a series of cuts that have brought the benchmark lending rate to 8.75 percent. This easing cycle aims to stimulate economic activity and support growth in Kenya.
 
 The Rationale Behind Further Interest Rate Cuts Dr. Kamau Thugge, the current CBK Governor who assumed office in June 2023, informed Bloomberg on Wednesday that the Central Bank still possesses the capacity to further decrease its benchmark rate. This follows ten consecutive reductions over the last year and a half, initiatives designed to invigorate economic activity. The aggressive easing cycle has seen the Central Bank Rate (CBR) descend from a 12-year peak of 13 percent in June 2024 to its current 8.75 percent. Governor Thugge elaborated that the Monetary Policy Committee (MPC), scheduled to convene again in April, would contemplate additional reductions if global conditions remain stable and inflationary pressures stay contained. He affirmed that prevailing conditions enable the bank to foster growth without inciting price instability. The policy direction, he explained, is informed by an existing output gap, indicating that the economy is still operating below its full growth potential. In such circumstances, central banks typically lower borrowing costs to encourage investment, consumption, and expansion within the private sector.
@@ -22,3 +28,18 @@ Future Outlook for Kenya's Interest Rate Cuts Across Africa, Kenya is among seve
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

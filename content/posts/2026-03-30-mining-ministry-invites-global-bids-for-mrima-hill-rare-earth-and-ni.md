@@ -1,7 +1,8 @@
 ---
 title: "Mining Ministry invites global bids for Mrima Hill rare earth and niobium deposits"
 slug: "mining-ministry-invites-global-bids-for-mrima-hill-rare-earth-and-ni"
-description: "Mining Ministry invites global bids for Mrima Hill's $64B rare earth & niobium deposits in Kwale, opening a new era for resource commercialisation."
+description: "Mining Ministry invites global bids for Mrima Hill rare eart: Mining Ministry invites global bids for Mrima Hill's $64B rare earth & niobium deposits in Kwale,"
+excerpt: "The Ministry of Mining and Blue Economy has opened a competitive tender for Mrima Hill in Kwale County, inviting global bids for its USD 64"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/kgqWbr08/0c8ee8e093b8.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["mrima-hill", "rare-earth-deposits", "niobium-mining", "kwale-county", "mineral-commercialisation"]
 canonical: "https://zandani.co.ke/article/mining-ministry-invites-global-bids-for-mrima-hill-rare-earth-and-ni"
 date: "2026-03-30T12:06:24Z"
-focusKeyword: "Mining Ministry invites global bids for Mrima Hill rare eart"
 dateModified: "2026-03-30T12:06:24Z"
+focusKeyword: "Mining Ministry invites global bids for Mrima Hill rare eart"
+schema: "NewsArticle"
 ---
+
+Mining Ministry invites global bids for Mrima Hill rare eart is central to this update for Kenyan readers.
+
 The Ministry of Mining and Blue Economy has opened a competitive tender for Mrima Hill in Kwale County, inviting global bids for its USD 64 billion rare earth and niobium deposits. A gazette notice issued on March 27 formalised the process for mineral rights, marking a new era for resource commercialisation.
 
 Global Interest in Mrima Hill Minerals The government, through the Ministry of Mining and Blue Economy, initiated a competitive tender process for the Mrima Hill mineral deposits, valued at USD 64 billion (approximately Ksh8 trillion). This move, mandated by Cabinet Secretary Hassan Joho in early 2026, aims to transition from past "opaque" licensing deals to an open, competitive bidding system. The formal invitation for Expressions of Interest (EOI) from qualified mining operators was published via a gazette notice on March 27, in accordance with sections 14 (1) and 223 (2)(e) of the Mining Act, Cap 306, and the 2017 Regulations. This marks the first time mineral rights of this magnitude are being awarded through such a transparent process.
@@ -24,3 +29,18 @@ Community and Environmental Concerns The Mrima Hill project faces a significant 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

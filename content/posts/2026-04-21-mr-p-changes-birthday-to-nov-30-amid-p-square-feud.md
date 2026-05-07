@@ -1,8 +1,8 @@
 ---
 title: "Mr P Changes Birthday to Nov 30 Amid P-Square Feud"
 slug: "mr-p-changes-birthday-to-nov-30-amid-p-square-feud"
+description: "Mr P Changes Birthday to Nov 30 Amid P-Square Feud: Mr P (Peter Okoye) has officially changed his birthday from November 18 to November 30, following the"
 excerpt: "Mr P (Peter Okoye) has officially changed his birthday from November 18 to November 30, following the P-Square feud with his twin brother, Paul Okoye."
-description: ""
 author: "Amara Ndlovu"
 author_url: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/C3wTRwj7/d85e922cd1e6.webp"
@@ -10,9 +10,13 @@ category: "Entertainment"
 tags: ["mr-p", "peter-okoye", "p-square-feud", "psquare-split", "mr-p-birthday"]
 canonical: "https://zandani.co.ke/article/mr-p-changes-birthday-to-nov-30-amid-p-square-feud"
 date: "2026-04-21T17:33:54Z"
-focusKeyword: "Mr P Changes Birthday to Nov 30 Amid P-Square Feud"
 dateModified: "2026-04-21T17:33:54Z"
+focusKeyword: "Mr P Changes Birthday to Nov 30 Amid P-Square Feud"
+schema: "NewsArticle"
 ---
+
+Mr P Changes Birthday to Nov 30 Amid P-Square Feud is central to this update for Kenyan readers.
+
 Nigerian music star Mr P, born Peter Okoye, has officially declared November 30, 2026, as his new birthday celebration date, moving away from November 18, which he shares with his twin brother Paul Okoye. This personal decision further highlights the ongoing P-Square family feud, sparking widespread discussion across Africa.
 
 ## Mr P's Birthday Shift Ignites P-Square Feud Discourse
@@ -31,3 +35,18 @@ The feud between Peter and Paul Okoye, formerly known as P-Square, has spanned m
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

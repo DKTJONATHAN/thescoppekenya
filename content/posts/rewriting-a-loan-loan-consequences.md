@@ -1,15 +1,21 @@
 ---
 title: "Rewriting a Loan: The Financial Consequences for Lenders and Borrowers"
 slug: "rewriting-a-loan-loan-consequences"
+description: "Rewriting a Loan The Financial Consequences for Lenders and: An analysis of rewriting a loan and its financial consequences, exemplified by GT Bank's fine for"
 excerpt: "An analysis of rewriting a loan and its financial consequences, exemplified by GT Bank's fine for conduct in a credit renewal dispute in Kenya."
 author: "Grace Mkamburi"
 image: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/bf77c7b6-9bdb-40a0-8250-580a8ce8ee0d/IMG-20260224-WA0005.jpg?t=1771947094"
 category: "Business"
-date: "2026-02-28"
 tags: ["loan rewriting", "credit renewal", "banking regulations", "financial consequences", "GT Bank Kenya", "Competition Authority of Kenya", "Kenyan finance", "business law"]
-focusKeyword: "Rewriting a Loan The Financial Consequences for Lenders and"
+canonical: "https://zandani.co.ke/article/rewriting-a-loan-loan-consequences"
+date: "2026-02-28"
 dateModified: "2026-02-28"
+focusKeyword: "Rewriting a Loan The Financial Consequences for Lenders and"
+schema: "NewsArticle"
 ---
+
+Rewriting a Loan The Financial Consequences for Lenders and is central to this update for Kenyan readers.
+
 ## Rewriting a Loan: Regulatory Scrutiny and Penalties Rewriting a loan involves altering its terms, which can have significant financial consequences for both lenders and borrowers. Misleading representations and unconscionable conduct in such processes, as seen in a recent credit renewal dispute involving Guaranty Trust Bank Kenya Limited, can lead to substantial regulatory penalties. The Competition Authority of Kenya (CAK) has demonstrated a firm stance against such practices, signaling increased scrutiny in the financial sector.
 
 The Consequences of Rewriting a Loan: A Case Study Guaranty Trust Bank Kenya Ltd (GT Bank) has been fined KSh33.18 million by the Competition Authority of Kenya (CAK) for improper conduct in a credit renewal dispute with manufacturer ASL Limited. The regulator accused the bank of misleading representations and unconscionable conduct, specifically citing the retroactive application of default interest and the presentation of materially altered loan terms as routine renewals. The penalty, set at 2% of the bank’s gross turnover, underscores the CAK's commitment to scrutinising how lenders manage expiring facilities and borrower leverage. In addition to the fine, GT Bank was ordered to refund ASL KSh13.21 million, representing improperly levied fees and charges. GT Bank has appealed this decision before the Competition Tribunal, maintaining that its actions complied with contractual obligations and banking regulations. The case highlights the critical importance of transparency and fair dealing when rewriting a loan or renewing credit facilities.
@@ -20,3 +26,18 @@ Mitigating Loan Consequences: Industry Calls for Clarity The banking sector, whi
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

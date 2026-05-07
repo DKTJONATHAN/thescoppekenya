@@ -1,15 +1,19 @@
 ---
 title: "Motorists Association of Kenya Demands Answers From NTSA Over Missing Number Plate Funds, Citing National Crisis"
 slug: "motorists-association-of-kenya-demands-answers-from-ntsa-over-missing-number-plate-funds"
+description: "The Motorists Association of Kenya demands answers from NTSA over missing number plate funds, as a critical shortage deepens national concern."
 excerpt: "The Motorists Association of Kenya demands answers from NTSA over missing number plate funds, as a critical shortage deepens national concern."
 author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/Number%20plates%2033.jpg?itok=SSSvORI7"
 category: "News"
-date: "2026-02-24"
 tags: ["Kenya", "NTSA", "number plates", "Motorists Association of Kenya", "government accountability", "transport crisis"]
-focusKeyword: "Motorists Association of Kenya Demands Answers From NTSA Ove"
+canonical: "https://zandani.co.ke/article/motorists-association-of-kenya-demands-answers-from-ntsa-over-missing-number-plate-funds"
+date: "2026-02-24"
 dateModified: "2026-02-24"
+focusKeyword: "Motorists Association of Kenya Demands Answers From NTSA Ove"
+schema: "NewsArticle"
 ---
+
 ## Motorists Association of Kenya Demands Answers From NTSA Over Missing Number Plate Funds The Motorists Association of Kenya (MAK) has intensified its demands for accountability from the National Transport and Safety Authority (NTSA) regarding a persistent and crippling shortage of number plates, urging transparency over the substantial funds collected for these essential documents. The crisis, which has seen a backlog surpass 70,000 units, is primarily attributed to the National Treasury's delayed funding to NTSA, leaving suppliers unpaid and production stalled.
 
 Unpaid Suppliers and Missing Number Plate Funds Raise Alarm The Motorists Association of Kenya issued a statement on Tuesday, February 24, highlighting the severe repercussions of the number plate deficit across the country. The association questions why vehicle owners consistently pay upfront fees for registration plates, and importers remit significant excise duties-sometimes equivalent to a vehicle's full Cost, Insurance and Freight (CIF) value-yet the NTSA reportedly lacks the necessary funds for production. A digital plate for a motor vehicle costs Sh3,050, while motorcycle plates are Sh1,550, fees which Kenyans faithfully pay via the eCitizen portal, only to face indefinite delays. "If citizens pay upfront for plates, and the government collects a heavy excise duty at the point of importation, how can there be no funds to produce number plates?" the Motorists Association stated, demanding a public accounting for where the collected funds have been allocated. This recurring issue, which has plagued Kenya since August 2024, with similar shortages in April and November 2025, points to a systemic breakdown in government procurement and fiscal management rather than isolated supply chain issues.
@@ -20,3 +24,18 @@ Broader Calls for Accountability Amidst National Challenges NTSA has previously 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

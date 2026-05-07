@@ -1,13 +1,21 @@
 ---
 title: "Ndindi Nyoro warns of potential fuel price increase ahead of EPRA review"
 slug: "ndindi-nyoro-warns-of-potential-fuel-price-increase-ahead-of-epra-re"
+description: "Ndindi Nyoro warns of potential fuel price increase ahead of: Fuel Price Hike Warning Ahead of EPRA Review Kiharu MP Ndindi Nyoro alleges a secret plot for"
+excerpt: "Fuel Price Hike Warning Ahead of EPRA Review Kiharu MP Ndindi Nyoro alleges a secret plot for marginally higher fuel prices despite lower ac"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/XxvDRsyK/224d35b5d495.jpg"
 category: "News"
+tags: ["ndindi nyoro warns of potential fuel price increase ahead of epra re", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/ndindi-nyoro-warns-of-potential-fuel-price-increase-ahead-of-epra-re"
 date: "2026-03-13T19:49:52Z"
-focusKeyword: "Ndindi Nyoro warns of potential fuel price increase ahead of"
 dateModified: "2026-03-13T19:49:52Z"
+focusKeyword: "Ndindi Nyoro warns of potential fuel price increase ahead of"
+schema: "NewsArticle"
 ---
+
+Ndindi Nyoro warns of potential fuel price increase ahead of is central to this update for Kenyan readers.
+
 ## Fuel Price Hike Warning Ahead of EPRA Review Kiharu MP Ndindi Nyoro alleges a secret plot for marginally higher fuel prices despite lower acquisition costs. This warning precedes the Energy and Petroleum Regulatory Authority (EPRA) review on Saturday, March 14, 2026, amid government assurances of adequate reserves.
 
 Allegations of Undue Price Hikes Speaking on Friday, March 13, 2026, Kiharu Member of Parliament Ndindi Nyoro revealed what he described as a secret plot to adjust fuel prices marginally higher. Citing sources he claims are linked to the government, the outspoken legislator stated the process to raise fuel prices was already in motion, with meetings reportedly underway to finalise the plans. Nyoro warned the public to remain vigilant, arguing that the proposed adjustments were unjustified since all fuel currently in the country was imported before the recent geopolitical tensions in the Middle East. He stressed that despite the planned price adjustments, existing fuel stocks were purchased at lower costs, meaning there was no valid reason to raise prices for consumers. “I know these people, and I have worked with them. I have reliable information that there are plans with meetings underway so that EPRA can adjust prices upwards and blame the situation on Iran,” Ndindi claimed. He added, “All the fuel in Kenya was imported before there was instability in Iran. That means the landing cost of the fuel already in the country was lower. Don’t confuse Za Ndani readers by trying to raise fuel prices unnecessarily.”
@@ -18,3 +26,18 @@ Geopolitical Tensions and Previous Review Nyoro’s warnings come amid concerns 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

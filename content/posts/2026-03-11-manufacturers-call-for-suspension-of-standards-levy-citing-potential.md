@@ -1,13 +1,21 @@
 ---
 title: "Manufacturers call for suspension of standards levy citing potential job losses"
 slug: "manufacturers-call-for-suspension-of-standards-levy-citing-potential"
+description: "Manufacturers call for suspension of standards levy citing p: Manufacturers Demand Suspension of Standards Levy Citing Job Loss Threats Manufacturers across"
+excerpt: "Manufacturers Demand Suspension of Standards Levy Citing Job Loss Threats Manufacturers across the country have issued a stern warning of wi"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/DDxJzdLY/e35a299a369e.jpg"
 category: "News"
+tags: ["manufacturers call for suspension of standards levy citing potential", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/manufacturers-call-for-suspension-of-standards-levy-citing-potential"
 date: "2026-03-11T11:02:52Z"
-focusKeyword: "Manufacturers call for suspension of standards levy citing p"
 dateModified: "2026-03-11T11:02:52Z"
+focusKeyword: "Manufacturers call for suspension of standards levy citing p"
+schema: "NewsArticle"
 ---
+
+Manufacturers call for suspension of standards levy citing p is central to this update for Kenyan readers.
+
 ## Manufacturers Demand Suspension of Standards Levy Citing Job Loss Threats Manufacturers across the country have issued a stern warning of widespread job losses and potential price escalations for goods and services. This comes in response to the government's revised standards levy structure, which significantly increases the financial burden on companies amidst an already challenging economic environment.
 
 Revised Levy Structure Raises Concerns On Wednesday, March 11, manufacturers collectively stated that the new levy structure, outlined in the Standards Levy Order of 2025, imposes a substantial financial strain on businesses. Under this order, manufacturers are mandated to remit 0.2 percent of their monthly earnings, exclusive of VAT and discounts, to the Kenya Bureau of Standards (KEBS). While the percentage rate remains unchanged, the government has drastically increased the maximum annual payment from Ksh400,000 to Ksh4 million for the initial five years, subsequently rising to Ksh6 million annually thereafter. This translates to businesses effectively paying up to approximately Ksh11,000 daily during the first five years, increasing to about Ksh16,000 per day afterwards, including weekends and public holidays.
@@ -18,3 +26,18 @@ Calls for Immediate Suspension and Review In their protest against the levy adju
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

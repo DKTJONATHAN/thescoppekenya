@@ -1,7 +1,8 @@
 ---
 title: "U.S. Embassy Nairobi Continues Green Card Lottery Interviews Amid Program Pause"
 slug: "u-s-embassy-nairobi-continues-green-card-lottery-interviews-amid-pro"
-description: "U.S. Embassy Nairobi continues Green Card Lottery interviews despite a federal program pause. Processing remains active while visa issuance is halted."
+description: "US Embassy Nairobi Continues Green Card Lottery Interviews A: U.S. Embassy Nairobi continues Green Card Lottery interviews despite a federal program pause."
+excerpt: "The U.S. Embassy in Nairobi confirmed today, Wednesday, April 1, 2026, that it continues to conduct Green Card Lottery interviews despite a"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/2YvZ2C6h/1e12f1f040aa.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["dv-lottery-interviews", "u.s.-embassy-nairobi", "green-card-program-pause", "nathan-flock", "u.s.-immigration-policy"]
 canonical: "https://zandani.co.ke/article/u-s-embassy-nairobi-continues-green-card-lottery-interviews-amid-pro"
 date: "2026-04-01T18:06:52Z"
-focusKeyword: "US Embassy Nairobi Continues Green Card Lottery Interviews A"
 dateModified: "2026-04-01T18:06:52Z"
+focusKeyword: "US Embassy Nairobi Continues Green Card Lottery Interviews A"
+schema: "NewsArticle"
 ---
+
+US Embassy Nairobi Continues Green Card Lottery Interviews A is central to this update for Kenyan readers.
+
 The U.S. Embassy in Nairobi confirmed today, Wednesday, April 1, 2026, that it continues to conduct Green Card Lottery interviews despite a federal program pause. While new visas are not being issued, the embassy is still processing cases for selected applicants, underscoring ongoing engagement with the rigorous application process.
 
 Interviews Persist Amidst Visa Suspension Consul General Nathan Flock of the U.S. Embassy in Nairobi clarified the situation in an interview published this Wednesday. He addressed concerns regarding individuals selected in the lottery who have not yet received visas, confirming the diversity visa program's current suspension. "The diversity visa programme is currently on pause; that's on our website, information about that pause," stated General Flock. He reiterated the embassy's commitment to continuing interviews for eligible candidates and considering their cases, even with the pause still in effect.
@@ -24,3 +29,18 @@ Future Announcements Expected General Flock indicated that the Department of Sta
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

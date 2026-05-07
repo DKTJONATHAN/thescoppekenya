@@ -1,7 +1,8 @@
 ---
 title: "Police confirm man arrested at Likoni ferry had fake gun and mental health issues"
 slug: "police-confirm-man-arrested-at-likoni-ferry-had-fake-gun-and-mental-"
-description: "Police confirm the man arrested at the Likoni ferry last week possessed a fake gun and has mental health issues, following a viral video of the incident."
+description: "Police confirm man arrested at Likoni ferry had fake gun and: Police confirm the man arrested at the Likoni ferry last week possessed a fake gun and has mental"
+excerpt: "Deputy Inspector General Gilbert Masengeli confirmed Sunday, April 5, that a man arrested at the Likoni ferry, whose video went viral last w"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/qLhsPJyC/ec94644156ea.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["likoni-ferry-incident", "gilbert-masengeli", "fake-gun-arrest", "mental-health-awareness", "mombasa-security"]
 canonical: "https://zandani.co.ke/article/police-confirm-man-arrested-at-likoni-ferry-had-fake-gun-and-mental-"
 date: "2026-04-06T07:03:50Z"
-focusKeyword: "Police confirm man arrested at Likoni ferry had fake gun and"
 dateModified: "2026-04-06T07:03:50Z"
+focusKeyword: "Police confirm man arrested at Likoni ferry had fake gun and"
+schema: "NewsArticle"
 ---
+
+Police confirm man arrested at Likoni ferry had fake gun and is central to this update for Kenyan readers.
+
 Deputy Inspector General Gilbert Masengeli confirmed Sunday, April 5, that a man arrested at the Likoni ferry, whose video went viral last week, possessed a fake gun and was diagnosed with mental health challenges. The clarification from Mombasa addresses public concern regarding the incident.
 
 Likoni Ferry Incident Clarified
@@ -24,3 +29,18 @@ Ongoing Anti-Gang Operations The clarification by the Deputy Inspector General a
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

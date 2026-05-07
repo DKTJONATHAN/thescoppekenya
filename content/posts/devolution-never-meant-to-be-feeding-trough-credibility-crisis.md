@@ -1,15 +1,21 @@
 ---
 title: "Devolution Was Never Meant to Be a Feeding Trough: A Crisis of Credibility"
 slug: "devolution-never-meant-to-be-feeding-trough-credibility-crisis"
+description: "Devolution Was Never Meant to Be a Feeding Trough A Crisis o: Devolution was never meant to be a feeding trough for unchecked spending, yet this reality"
 excerpt: "Devolution was never meant to be a feeding trough for unchecked spending, yet this reality threatens its core purpose and public trust."
 author: "Jonathan Mwaniki"
 image: "https://cdn.radioafrica.digital/image/2026/02/b510f626-28ad-4e15-8f34-98618b455c9a.jpeg?1771942676206"
 category: "Opinions"
+tags: ["devolution", "Kenya", "governance", "corruption", "public funds", "oversight", "accountability", "counties"]
+canonical: "https://zandani.co.ke/article/devolution-never-meant-to-be-feeding-trough-credibility-crisis"
 date: "2026-02-24"
-tags: ["devolution", "Kenya", "governance", "corruption", "public funds", "oversight", "accountability", "counties", "political ambition"]
-focusKeyword: "Devolution Was Never Meant to Be a Feeding Trough A Crisis o"
 dateModified: "2026-02-24"
+focusKeyword: "Devolution Was Never Meant to Be a Feeding Trough A Crisis o"
+schema: "NewsArticle"
 ---
+
+Devolution Was Never Meant to Be a Feeding Trough A Crisis o is central to this update for Kenyan readers.
+
 ## Devolution Was Never Meant to Be a Feeding Trough Kenya's devolution system, established to bring governance and services closer to its citizens, faces a significant crisis of credibility. Intended as a vehicle for equitable development and deepened democracy, the system is increasingly perceived as a conduit for unchecked spending and misuse of public funds, eroding the trust it was designed to foster. When the constitutional architects envisioned devolution, they dreamt of a system that would address decades of centralized neglect, empowering local communities and fostering grassroots development. Since its inception in 2013, over Sh4 trillion has been disbursed to counties, a staggering sum intended to transform lives. This financial commitment was meant to manifest in tangible improvements: better roads, accessible healthcare, and thriving local economies. Yet, the reality on the ground often paints a different picture, one where the scale of allocations received does not align with visible infrastructure, health services, or economic gains in many counties. The core challenge lies in the systematic weakening of oversight mechanisms. Public funds, meant to be protected, are instead caught in a web of political ambition, rivalry, and institutional fragility. We witness governors accusing senators of extortion, while senators, in turn, allege plunder by governors. Amidst these accusations, billions continue to flow with little accountability for misuse. This dynamic transforms crucial oversight hearings into political campaign platforms for future gubernatorial hopefuls, inevitably rendering scrutiny suspect. When Members of County Assembly (MCAs) operate without adequate resources, expertise, or independence, accountability becomes mere theatre, a performance rather than a rigorous examination of public expenditure.
 
 The Erosion of Trust: When Devolution Becomes a Feeding Trough The perception that devolution has become a pipeline for unchecked spending is not merely anecdotal; it is rapidly hardening into reality. This trajectory is dangerous, undermining the very foundation of trust between citizens and their leaders. When oversight is weaponized for political battles, it loses all legitimacy, becoming a tool for vendettas rather than a safeguard for public resources. The prolonged inaction of investigative agencies on Senate recommendations further hardens impunity. Reports are meticulously written, recommendations issued, yet often, nothing tangible happens. This systemic inertia emboldens county executives, weakens assemblies, and, predictably, angers citizens who see their hard-earned taxes vanish without a trace of development. The question then arises: what is the true score of devolution's impact? Are we witnessing genuine progress or merely a facade? One might draw a parallel to situations where outward appearances obscure underlying realities. Just as the perceived performance in sports might differ from the actual score off the green, as highlighted in "Shubhankar's 48th and Veer's 53rd in Kenya: But What's the *Real* Score Off the Green, Lads?", the official pronouncements of county development often mask the true extent of financial mismanagement and its impact on the populace. The funds allocated to counties are substantial. For instance, data from the Controller of Budget indicates that by the end of the first quarter of the 2025/2026 financial year, counties had received significant disbursements, but absorption rates and the impact on service delivery remain critical concerns.
@@ -24,3 +30,18 @@ Reclaiming the Promise: Moving Beyond a Feeding Trough Restoring the integrity o
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

@@ -1,7 +1,8 @@
 ---
 title: "Nameless accepts fan apology for misheard lyrics in song Deadly"
 slug: "nameless-accepts-fan-apology-for-misheard-lyrics-in-song-deadly"
-description: "Nameless accepts a fan's humorous TikTok apology for mishearing 'shapely' as 'shapeless' in his hit song 'Deadly,' sparking widespread online amusement."
+description: "Nameless accepts fan apology for misheard lyrics in song Dea: Nameless accepts a fan's humorous TikTok apology for mishearing 'shapely' as 'shapeless' in his"
+excerpt: "Legendary Kenyan pop star Nameless recently accepted a viral TikTok apology from a fan. The fan humorously confessed to mistakenly singing '"
 author: "Za Ndani"
 author_url: "https://zandani.co.ke/author/za-ndani"
 image: "https://i.ibb.co/TBL7x2HG/3a1229be9e98.webp"
@@ -9,9 +10,13 @@ category: "Entertainment"
 tags: ["nameless", "deadly-song", "misheard-lyrics", "david-mathenge", "nameless-deadly"]
 canonical: "https://zandani.co.ke/article/nameless-accepts-fan-apology-for-misheard-lyrics-in-song-deadly"
 date: "2026-04-15T11:15:33Z"
-focusKeyword: "Nameless accepts fan apology for misheard lyrics in song Dea"
 dateModified: "2026-04-15T11:15:33Z"
+focusKeyword: "Nameless accepts fan apology for misheard lyrics in song Dea"
+schema: "NewsArticle"
 ---
+
+Nameless accepts fan apology for misheard lyrics in song Dea is central to this update for Kenyan readers.
+
 Legendary Kenyan pop star Nameless recently accepted a viral TikTok apology from a fan. The fan humorously confessed to mistakenly singing "shapeless" instead of "shapely" in the chorus of Nameless's iconic 2000s hit song, 'Deadly', sparking a wave of online amusement and appreciation for the artist's good-natured response.
 
 Nameless Embraces Fan's Humorous Apology The incident, which quickly garnered significant attention across Kenyan social media platforms in early 2026, highlighted the enduring popularity of Nameless's music. The track 'Deadly', released in 2003, has been a staple in Kenyan music for over two decades, known for its infectious beat and memorable lyrics. The misheard lyric in question, where "shapely" (as in "Coz you are Deadly, shapely, sexy, especially") was consistently replaced with "shapeless" by the fan, prompted a cascade of similar confessions from other listeners.
@@ -22,3 +27,18 @@ A Nod to Enduring Hits and Fan Connection Nameless's gracious acceptance of the 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

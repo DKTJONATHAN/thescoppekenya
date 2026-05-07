@@ -1,7 +1,8 @@
 ---
 title: "Council of Governors proposes KSh 534 billion share for counties to fund devolved functions"
 slug: "council-of-governors-proposes-ksh-534-billion-share-for-counties-to-"
-description: "Council of Governors proposes a KSh 534 billion allocation for counties in 2026/2027 to fund expanded devolved functions and alleviate financial strain."
+description: "Council of Governors proposes KSh 534 billion share for coun: Council of Governors proposes a KSh 534 billion allocation for counties in 2026/2027 to fund"
+excerpt: "The Council of Governors (CoG) has formally requested a KSh 534 billion allocation for counties in the 2026/2027 financial year, appearing b"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Q3rPs6xv/36544cb0ce08.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["council-of-governors", "county-revenue-share", "senate-committee-on-finance-and-budget", "commission-on-revenue-allocation", "devolution-funding"]
 canonical: "https://zandani.co.ke/article/council-of-governors-proposes-ksh-534-billion-share-for-counties-to-"
 date: "2026-03-24T20:59:10Z"
-focusKeyword: "Council of Governors proposes KSh 534 billion share for coun"
 dateModified: "2026-03-24T20:59:10Z"
+focusKeyword: "Council of Governors proposes KSh 534 billion share for coun"
+schema: "NewsArticle"
 ---
+
+Council of Governors proposes KSh 534 billion share for coun is central to this update for Kenyan readers.
+
 The Council of Governors (CoG) has formally requested a KSh 534 billion allocation for counties in the 2026/2027 financial year, appearing before the Senate Committee on Finance and Budget on Tuesday, March 24. This proposal aims to alleviate financial strain and fund expanded devolved functions, significantly exceeding the KSh 458.9 billion recommended by the Commission on Revenue Allocation (CRA).
 
 County Revenue Share Proposals County governments have advocated for a substantial increase in their equitable share, citing growing responsibilities transferred from the national government. CoG chair Ahmed Abdulahi stated that the KSh 534.96 billion proposal is essential to address emerging obligations. These include revenue growth adjustments, the transition of Universal Health Coverage (UHC) workers, implementation of outstanding remuneration review cycles, and the phased transfer of additional devolved functions.
@@ -22,3 +27,18 @@ Current Bill and Public Engagement These divergent proposals come as the Senate 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

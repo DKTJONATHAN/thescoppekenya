@@ -2,6 +2,7 @@
 title: "Kenya Airport Authority Appoints Moses Wekesa as Managing Director"
 slug: "kenya-airport-authority-appoints-moses-wekesa-as-managing-director"
 description: "Kenya Airport Authority appoints Moses Wekesa as Managing Director to lead its strategic aviation goals and the modernization of JKIA starting in June."
+excerpt: "The Kenya Airport Authority (KAA) Board today, Tuesday, April 14, 2026, announced the appointment of Moses Wekesa as its new Managing Direct"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Ps6n8J3G/d010781a9257.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["moses-wekesa", "kenya-airport-authority", "jomo-kenyatta-international-airport", "aviation-infrastructure", "airport-modernization"]
 canonical: "https://zandani.co.ke/article/kenya-airport-authority-appoints-moses-wekesa-as-managing-director"
 date: "2026-04-14T15:44:51Z"
-focusKeyword: "Kenya Airport Authority Appoints Moses Wekesa as Managing Di"
 dateModified: "2026-04-14T15:44:51Z"
+focusKeyword: "Kenya Airport Authority Appoints Moses Wekesa as Managing Di"
+schema: "NewsArticle"
 ---
+
+Kenya Airport Authority Appoints Moses Wekesa as Managing Di is central to this update for Kenyan readers.
+
 The Kenya Airport Authority (KAA) Board today, Tuesday, April 14, 2026, announced the appointment of Moses Wekesa as its new Managing Director. Wekesa's leadership is set to guide the authority's strategic aviation and infrastructure initiatives, including the ambitious modernization of Jomo Kenyatta International Airport (JKIA) starting in June.
 
 Moses Wekesa to Drive KAA's Aviation Agenda The KAA Board of Directors confirmed Wekesa's selection following a rigorous and competitive recruitment process. In a statement issued today, the board highlighted Wekesa as the preferred candidate capable of steering the authority's long-term aviation and infrastructure agenda. His appointment places him at the forefront of managing and developing Kenya's airports and airstrips, with a specific focus on the country's main aviation hub, JKIA.
@@ -24,3 +29,18 @@ Transition in Leadership Wekesa's appointment concludes a period of interim lead
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

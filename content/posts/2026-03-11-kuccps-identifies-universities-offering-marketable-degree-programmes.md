@@ -1,13 +1,21 @@
 ---
 title: "KUCCPS identifies universities offering marketable degree programmes at low cut-off points"
 slug: "kuccps-identifies-universities-offering-marketable-degree-programmes"
+description: "KUCCPS identifies universities offering marketable degree pr: KUCCPS Identifies Marketable Degree Programmes with Accessible Cut off Points The Kenya"
+excerpt: "KUCCPS Identifies Marketable Degree Programmes with Accessible Cut off Points The Kenya Universities and Colleges Central Placement Service"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/gZ6KR4w4/4fd0c7eb9c9c.jpg"
 category: "News"
+tags: ["kuccps identifies universities offering marketable degree programmes", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/kuccps-identifies-universities-offering-marketable-degree-programmes"
 date: "2026-03-11T07:57:39Z"
-focusKeyword: "KUCCPS identifies universities offering marketable degree pr"
 dateModified: "2026-03-11T07:57:39Z"
+focusKeyword: "KUCCPS identifies universities offering marketable degree pr"
+schema: "NewsArticle"
 ---
+
+KUCCPS identifies universities offering marketable degree pr is central to this update for Kenyan readers.
+
 ## KUCCPS Identifies Marketable Degree Programmes with Accessible Cut-off Points The Kenya Universities and Colleges Central Placement Service (KUCCPS) has highlighted several marketable degree programmes available across various universities at relatively low cluster cut-off points. This information is crucial for students preparing for the upcoming 2026 university placement process, guiding them towards strategic course and institution selections. These cut-off points represent the minimum cluster points attained by the last student admitted to each programme by KUCCPS.
 
 Strategic University Choices for 2026 Placement KUCCPS data indicates that certain institutions admit students into competitive courses with lower cluster points compared to other universities offering identical programmes. Students are advised to meticulously compare universities offering similar programmes, as cut-off points vary significantly based on demand and available capacity. This strategic approach can significantly enhance a student's chances of securing a placement in a desired field. For engineering disciplines, Dedan Kimathi University of Technology recorded 38.1 for Mechanical Engineering, while South Eastern Kenya University had 37.6 for Civil Engineering. Kirinyaga University's Electrical and Electronic Engineering stood at 37.3, and Murang'a University of Technology offered Mechatronic Engineering at 36.8. Telecommunication Engineering at Multimedia University of Kenya had a cut-off of 36.4, with Marine Engineering at Technical University of Mombasa at 36.2. Machakos University offered Industrial and Production Engineering at 36.7, and the University of Eldoret listed Agricultural Engineering at 35.9. In health sciences, Masinde Muliro University of Science and Technology's Nursing programme had a cut-off of 37.2, and Jaramogi Oginga Odinga University of Science and Technology's Public Health was 35.8. Kisii University admitted Medical Laboratory Science students at 36.4, and the University of Kabianga's Environmental Health stood at 34.9. Pwani University offered Nutrition and Dietetics at 35.6, while Meru University of Science and Technology's Health Records and Information Management was 34.5. For information technology and related fields, Kibabii University presented Information Technology at 31.6, and Murang'a University of Technology's Computer Science was 33.1. Meru University of Science and Technology's Software Engineering had a cut-off of 32.9, with Rongo University offering Information Communication Technology at 31.4. Technical University of Kenya listed Information Systems at 32.8. Business and humanities programmes also show varied accessibility. Machakos University's Business Administration had a cut-off of 23.3, and Rongo University's Procurement and Supply Chain Management was 22.9. Maasai Mara University offered Human Resource Management at 23.2, and Murang'a University of Technology's Entrepreneurship was 22.8. Karatina University's Project Planning and Management stood at 23.0, with Chuka University's Agribusiness Management at 23.3. Other notable programmes include Egerton University's Environmental Science at 23.3, South Eastern Kenya University's Environmental Studies at 23.1, and Pwani University's Marine and Fisheries Science at 23.0. Tom Mboya University offered Education (Science) at 23.2, and Kaimosi Friends University's Education Arts was 23.1. Egerton University's Bachelor of Arts had a cut-off of 21.8, and Multimedia University of Kenya's Bachelor of Arts (Psychology, Sociology & Political Science) was 22.8. The University of Nairobi's Project Planning and Management recorded 23.2.
@@ -16,3 +24,18 @@ Broader Trends in University Placements While prominent institutions such as the
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

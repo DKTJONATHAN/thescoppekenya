@@ -1,13 +1,21 @@
 ---
 title: "Family Bank reports record profit ahead of Nairobi Securities Exchange debut"
 slug: "family-bank-reports-record-profit-ahead-of-nairobi-securities-exchan"
+description: "Family Bank reports record profit ahead of Nairobi Securitie: Family Bank Achieves Record Profit Ahead of NSE Listing Family Bank Group has reported its"
+excerpt: "Family Bank Achieves Record Profit Ahead of NSE Listing Family Bank Group has reported its strongest financial results to date for the full"
 author: "Grace Mkamburi"
 image: "https://i.ibb.co/Rky2GgPF/3e9cf71d451b.jpg"
 category: "Business"
+tags: ["family bank reports record profit ahead of nairobi securities exchan", "business", "kenya news"]
+canonical: "https://zandani.co.ke/article/family-bank-reports-record-profit-ahead-of-nairobi-securities-exchan"
 date: "2026-03-30T10:48:56Z"
-focusKeyword: "Family Bank reports record profit ahead of Nairobi Securitie"
 dateModified: "2026-03-30T10:48:56Z"
+focusKeyword: "Family Bank reports record profit ahead of Nairobi Securitie"
+schema: "NewsArticle"
 ---
+
+Family Bank reports record profit ahead of Nairobi Securitie is central to this update for Kenyan readers.
+
 ## Family Bank Achieves Record Profit Ahead of NSE Listing Family Bank Group has reported its strongest financial results to date for the full year ended December 31, 2025, with profit after tax surging 55.4% to KSh 5.38 billion. This robust performance precedes its anticipated listing by introduction on the Nairobi Securities Exchange in May 2026.
 
 Record Financial Growth The bank's profit after tax has demonstrated consistent growth over five consecutive years, escalating from KSh 1.16 billion in 2020 to KSh 5.38 billion in 2025. This significant increase reflects a recovery from the challenging 2017-2018 period. Earnings per share also saw a substantial rise, reaching KSh 3.93 from KSh 2.65 in 2024. Total assets expanded by 23.9% to KSh 208.7 billion, driven by a 14.0% increase in net loans to KSh 105.9 billion, largely focused on Micro, Small, and Medium Enterprises (MSMEs). Investments in government securities grew by 45.2% to KSh 74.0 billion. Customer deposits reinforced the funding base, climbing 20.1% to KSh 151.88 billion, while the liquidity ratio stood at a healthy 60.9%, well above the statutory minimum.
@@ -20,3 +28,18 @@ Nairobi Securities Exchange Listing by Introduction The bank's shares are slated
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

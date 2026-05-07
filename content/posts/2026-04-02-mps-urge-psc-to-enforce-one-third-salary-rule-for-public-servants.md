@@ -1,7 +1,8 @@
 ---
 title: "MPs Urge PSC to Enforce One-Third Salary Rule for Public Servants"
 slug: "mps-urge-psc-to-enforce-one-third-salary-rule-for-public-servants"
-description: "MPs have urged the Public Service Commission to enforce the one-third salary rule for public servants to ensure compliance with the Employment Act, 2007."
+description: "MPs Urge PSC to Enforce One-Third Salary Rule for Public Ser: MPs have urged the Public Service Commission to enforce the one-third salary rule for public"
+excerpt: "The Public Accounts Committee (PAC) on Thursday, April 2, 2026, urged the Public Service Commission (PSC) to establish stringent regulations"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Tx38C669/029a3d6cf697.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["one-third-salary-rule", "public-accounts-committee", "public-service-commission", "public-service-regulations", "employment-act-2007"]
 canonical: "https://zandani.co.ke/article/mps-urge-psc-to-enforce-one-third-salary-rule-for-public-servants"
 date: "2026-04-02T18:03:55Z"
-focusKeyword: "MPs Urge PSC to Enforce One-Third Salary Rule for Public Ser"
 dateModified: "2026-04-02T18:03:55Z"
+focusKeyword: "MPs Urge PSC to Enforce One-Third Salary Rule for Public Ser"
+schema: "NewsArticle"
 ---
+
+MPs Urge PSC to Enforce One-Third Salary Rule for Public Ser is central to this update for Kenyan readers.
+
 The Public Accounts Committee (PAC) on Thursday, April 2, 2026, urged the Public Service Commission (PSC) to establish stringent regulations ensuring public servants receive at least one-third of their basic salary. This directive follows persistent non-compliance with the Employment Act, 2007, observed across various government institutions.
 
 Enforcing Salary Thresholds During a parliamentary committee meeting today, PAC unequivocally called upon the PSC to enforce the one-third rule on every public servant's net pay. This statutory requirement mandates that employees must take home a minimum of one-third of their basic salary after all deductions. The committee's demand arose during its examination of Auditor-General’s reports for the financial years ending June 30, 2024, and 2025, which highlighted widespread breaches of this legal provision.
@@ -24,3 +29,18 @@ Protecting Public Servants The one-third rule is critical for protecting employe
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

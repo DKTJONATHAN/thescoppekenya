@@ -1,15 +1,21 @@
 ---
 title: "Doctors Receive Delayed SRC Salary Increments, CBA Arrears After Budget Allocation: A Critical Assessment"
 slug: "doctors-receive-delayed-src-salary-increments-cba-arrears-budget-allocation"
+description: "Doctors Receive Delayed SRC Salary Increments CBA Arrears Af: Kenyan doctors are set to receive delayed SRC salary increments and CBA arrears following a"
 excerpt: "Kenyan doctors are set to receive delayed SRC salary increments and CBA arrears following a crucial budget allocation, resolving prolonged payment disputes."
 author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/KMPDU%20SG%20DavJ%20Atellah%20during%20protests%20in%20Nairobi%20on%20Thursday%20February%2029%2C%202024.jpg?itok=hJ_fC7u7"
 category: "News"
+tags: ["Kenya", "doctors", "KMPDU", "SRC", "salary increments", "CBA arrears", "budget allocation", "healthcare"]
+canonical: "https://zandani.co.ke/article/doctors-receive-delayed-src-salary-increments-cba-arrears-budget-allocation"
 date: "2026-02-26"
-tags: ["Kenya", "doctors", "KMPDU", "SRC", "salary increments", "CBA arrears", "budget allocation", "healthcare", "public service", "Davji Atellah"]
-focusKeyword: "Doctors Receive Delayed SRC Salary Increments CBA Arrears Af"
 dateModified: "2026-02-26"
+focusKeyword: "Doctors Receive Delayed SRC Salary Increments CBA Arrears Af"
+schema: "NewsArticle"
 ---
+
+Doctors Receive Delayed SRC Salary Increments CBA Arrears Af is central to this update for Kenyan readers.
+
 ## Doctors Receive Delayed SRC Salary Increments and CBA Arrears Kenyan doctors are finally set to receive long-awaited salary increments and pending Collective Bargaining Agreement (CBA) arrears, a development poised to resolve protracted remuneration disputes. This significant progress follows a crucial budget allocation and sustained pressure from the Kenya Medical Practitioners, Pharmacists and Dentists Union (KMPDU). The resolution encompasses the implementation of the 3rd and 4th Remuneration Review Cycles, alongside adjustments stemming from the 2017-2024 CBA, which had faced months of delays leading to industrial action. The government has committed to implementing salary adjustments and paying arrears, with full implementation anticipated by mid-February 2026.
 
 Unpacking the Delayed SRC Salary Increments The Salaries and Remuneration Commission (SRC) review cycles have been a central point of contention for medical professionals. County governments initially failed to implement the 3rd Remuneration Review Cycle, covering the 2021/22-2024/25 period, citing funding constraints within the Equitable Share allocation. However, following the allocation of Ksh2 billion within the Equitable Share specifically for personal emoluments, counties have commenced rolling out this pending review cycle. This means doctors under county governments will receive payments in arrears, as the third cycle was due in the 2024/2025 financial year. Counties are presently integrating these adjustments into their supplementary budgets to align payrolls with the updated SRC salary scales. At the national level, the Ministry of Health has already processed payments for the 3rd cycle.
@@ -24,3 +30,18 @@ County-Level Challenges Despite National Budget Allocation Despite these nationa
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

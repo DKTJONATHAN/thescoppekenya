@@ -1,7 +1,8 @@
 ---
 title: "High Court Finds SHA Rollout Unconstitutional and Orders Government to Rectify Gaps"
 slug: "high-court-finds-sha-rollout-unconstitutional-and-orders-government-"
-description: "The High Court ruled the SHA rollout unconstitutional, ordering the government to fix legal gaps within 90 days to avoid disrupting healthcare services."
+description: "High Court Finds SHA Rollout Unconstitutional and Orders Gov: The High Court ruled the SHA rollout unconstitutional, ordering the government to fix legal gaps"
+excerpt: "The High Court has today, Thursday, March 19, 2026, declared several aspects of the Social Health Authority (SHA) medical insurance scheme u"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/5h7pR1yR/7fab5730c5cf.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["social-health-authority", "justice-bahati-mwamuye", "sha-unconstitutional-ruling", "universal-health-coverage"]
 canonical: "https://zandani.co.ke/article/high-court-finds-sha-rollout-unconstitutional-and-orders-government-"
 date: "2026-03-19T11:03:30Z"
-focusKeyword: "High Court Finds SHA Rollout Unconstitutional and Orders Gov"
 dateModified: "2026-03-19T11:03:30Z"
+focusKeyword: "High Court Finds SHA Rollout Unconstitutional and Orders Gov"
+schema: "NewsArticle"
 ---
+
+High Court Finds SHA Rollout Unconstitutional and Orders Gov is central to this update for Kenyan readers.
+
 The High Court has today, Thursday, March 19, 2026, declared several aspects of the Social Health Authority (SHA) medical insurance scheme unconstitutional. Justice Bahati Mwamuye permitted the scheme's continued operation to prevent healthcare service disruption, directing the government to rectify identified gaps and implement safeguards within 90 days.
 
 SHA Rollout Deemed Unconstitutional, Continues with Mandated Changes
@@ -24,3 +29,18 @@ Legal Challenge and Court's Stance The High Court case was initiated by activist
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

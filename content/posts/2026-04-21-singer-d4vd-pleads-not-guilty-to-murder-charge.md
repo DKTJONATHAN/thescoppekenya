@@ -1,7 +1,8 @@
 ---
 title: "Singer D4vd pleads not guilty to murder charge"
 slug: "singer-d4vd-pleads-not-guilty-to-murder-charge"
-description: "Singer D4vd pleaded not guilty to first-degree murder charges stemming from the 2025 death of 14-year-old Celeste Rivas Hernandez in a Los Angeles court."
+description: "Singer D4vd pleads not guilty to murder charge: Singer D4vd pleaded not guilty to first-degree murder charges stemming from the 2025 death of 14-year-old"
+excerpt: "American musician D4vd, legally known as David Anthony Burke, has pleaded not guilty to multiple charges, including first degree murder, in"
 author: "Za Ndani"
 author_url: "https://zandani.co.ke/author/za-ndani"
 image: "https://i.ibb.co/nKcKCbF/8772a9015329.webp"
@@ -9,9 +10,13 @@ category: "Entertainment"
 tags: ["d4vd", "murder-charge", "pleads-not-guilty", "d4vd-court-case", "d4vd-murder-trial"]
 canonical: "https://zandani.co.ke/article/singer-d4vd-pleads-not-guilty-to-murder-charge"
 date: "2026-04-21T11:35:25Z"
-focusKeyword: "Singer D4vd pleads not guilty to murder charge"
 dateModified: "2026-04-21T11:35:25Z"
+focusKeyword: "Singer D4vd pleads not guilty to murder charge"
+schema: "NewsArticle"
 ---
+
+Singer D4vd pleads not guilty to murder charge is central to this update for Kenyan readers.
+
 American musician D4vd, legally known as David Anthony Burke, has pleaded not guilty to multiple charges, including first-degree murder, in Los Angeles on Monday, April 20, 2026, stemming from the 2025 death of 14-year-old Celeste Rivas Hernandez. Burke, aged 21, appeared in court through his legal team and did not address the proceedings directly.
 
 Musician D4vd Faces Grave Accusations The charges against Burke are severe, encompassing first-degree murder with special circumstances, murder for financial gain, and the alleged killing of a witness connected to an investigation. The Los Angeles County District Attorney's Office states these allegations trace back to April 23, 2025, when Celeste Rivas Hernandez reportedly visited Burke’s Hollywood Hills residence and was not seen again.
@@ -28,3 +33,18 @@ D4vd's Musical Journey Before the Charges Before his arrest, D4vd, known for tra
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

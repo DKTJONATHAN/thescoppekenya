@@ -1,7 +1,8 @@
 ---
 title: "CAF announces reforms to strengthen refereeing and disciplinary boards"
 slug: "caf-announces-reforms-to-strengthen-refereeing-and-disciplinary-boar"
-description: "CAF President Patrice Motsepe announces reforms to refereeing and disciplinary boards to improve governance and prevent controversies from the 2025 AFCON."
+description: "CAF announces reforms to strengthen refereeing and disciplin: CAF President Patrice Motsepe announces reforms to refereeing and disciplinary boards to improve"
+excerpt: "By Celestine Nzioka The Confédération Africaine de Football (CAF) announced extensive reforms to its statutes and regulations on Sunday, Mar"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/jPjDrjH8/804573f63008.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["caf-refereeing-reforms", "patrice-motsepe", "afcon-2025", "african-football-governance", "caf-disciplinary-board"]
 canonical: "https://zandani.co.ke/article/caf-announces-reforms-to-strengthen-refereeing-and-disciplinary-boar"
 date: "2026-03-29T20:51:32Z"
-focusKeyword: "CAF announces reforms to strengthen refereeing and disciplin"
 dateModified: "2026-03-29T20:51:32Z"
+focusKeyword: "CAF announces reforms to strengthen refereeing and disciplin"
+schema: "NewsArticle"
 ---
+
+CAF announces reforms to strengthen refereeing and disciplin is central to this update for Kenyan readers.
+
 By Celestine Nzioka The Confédération Africaine de Football (CAF) announced extensive reforms to its statutes and regulations on Sunday, March 29, 2026, aimed at enhancing football governance and administration across the continent. These changes, articulated by CAF President Patrice Motsepe, are specifically designed to prevent a recurrence of controversies observed during the 2025 Africa Cup of Nations (AFCON) finals.
 
 Strengthening Refereeing and Disciplinary Bodies CAF President Patrice Motsepe expressed confidence that the reforms will rebuild trust in CAF referees, VAR operators, and judicial bodies, a critical step particularly as Kenya, Uganda, and Tanzania prepare to co-host the 2027 AFCON. While specific details of the reforms remain undisclosed, CAF stated that they are based on global best practices and informed by leading African and international football legal experts. Motsepe emphasized the importance of these changes for the respect, integrity, and credibility of all officials and judicial committees involved in African football.
@@ -26,3 +31,18 @@ Fallout from the 2025 AFCON Final The announcement of these reforms comes days a
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

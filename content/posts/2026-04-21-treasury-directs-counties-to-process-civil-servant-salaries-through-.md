@@ -1,7 +1,8 @@
 ---
 title: "Treasury directs counties to process civil servant salaries through integrated payroll system"
 slug: "treasury-directs-counties-to-process-civil-servant-salaries-through-"
-description: "National Treasury directs counties to process April 2026 civil servant salaries exclusively through the integrated HRIS-Kenya and IFMIS payroll systems."
+description: "Treasury directs counties to process civil servant salaries: National Treasury directs counties to process April 2026 civil servant salaries exclusively"
+excerpt: "The National Treasury has mandated that all county government civil servant salaries for April 2026 must be processed exclusively through th"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/jZfN1sVT/679128d68e79.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["county-payroll-management", "chris-kiptoo", "ifmis-platform", "hris-kenya-payroll", "public-finance-management"]
 canonical: "https://zandani.co.ke/article/treasury-directs-counties-to-process-civil-servant-salaries-through-"
 date: "2026-04-21T10:46:01Z"
-focusKeyword: "Treasury directs counties to process civil servant salaries"
 dateModified: "2026-04-21T10:46:01Z"
+focusKeyword: "Treasury directs counties to process civil servant salaries"
+schema: "NewsArticle"
 ---
+
+Treasury directs counties to process civil servant salaries is central to this update for Kenyan readers.
+
 The National Treasury has mandated that all county government civil servant salaries for April 2026 must be processed exclusively through the integrated HRIS-Kenya Payroll System and IFMIS platform. This directive, issued on April 8, 2026, by Principal Secretary Chris Kiptoo, aims to enhance payroll management across state institutions.
 
 Treasury Streamlines County Payroll Processing
@@ -24,3 +29,18 @@ Tackling Payroll Fraud and Ghost Workers The Treasury's directive follows concer
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

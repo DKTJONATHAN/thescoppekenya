@@ -1,15 +1,21 @@
 ---
 title: "'Shocking Decision': Man Utd Star Lisandro Martinez Sent Off for Bizarre Hair-Pulling Incident"
 slug: "shocking-decision-man-utd-star-lisandro-martinez-sent-off-for-bizarr"
-description: "Man Utd's Lisandro Martinez sent off for a bizarre hair-pulling incident! Watch the shocking decision that left fans and players stunned."
+description: "Shocking Decision Man Utd Star Lisandro Martinez Sent Off fo: Man Utd's Lisandro Martinez sent off for a bizarre hair-pulling incident! Watch the shocking"
+excerpt: "Jona Munyi for Za Ndani (zandani.co.ke) Lisandro Martinez Red Card Fuels Fresh Debate on VAR and Violent Conduct Manchester United defender"
 author: "Jona Munyi"
 image: "https://i.ibb.co/prWjLJsq/71f4d2a3d12d.webp"
 category: "Sports"
 tags: ["lisandro-martinez", "manchester-united", "red-card", "hair-pulling"]
+canonical: "https://zandani.co.ke/article/shocking-decision-man-utd-star-lisandro-martinez-sent-off-for-bizarr"
 date: "2026-04-14T12:49:12Z"
-focusKeyword: "Shocking Decision Man Utd Star Lisandro Martinez Sent Off fo"
 dateModified: "2026-04-14T12:49:12Z"
+focusKeyword: "Shocking Decision Man Utd Star Lisandro Martinez Sent Off fo"
+schema: "NewsArticle"
 ---
+
+Shocking Decision Man Utd Star Lisandro Martinez Sent Off fo is central to this update for Kenyan readers.
+
 Jona Munyi for Za Ndani (zandani.co.ke) **Lisandro Martinez Red Card Fuels Fresh Debate on VAR and Violent Conduct** Manchester United defender Lisandro Martinez's recent sending off for hair-pulling against Leeds United has reignited fierce discussions across European football. This contentious incident, scrutinised by VAR, underscores persistent challenges in refereeing consistency and the precise interpretation of 'violent conduct' in elite competition.
 
 The Controversial Dismissal at Old Trafford The incident occurred during Manchester United's 2-1 defeat to Leeds United at Old Trafford, when defender Lisandro Martinez, then 28, was shown a straight red card for pulling the hair of Leeds striker Dominic Calvert-Lewin. The hosts were trailing 2-0 when the Argentine tried to impede Calvert-Lewin in an off-the-ball incident, after reportedly being caught in the face himself. Referee Paul Tierney, after being instructed by the video assistant referee (VAR) to review the incident on the pitchside monitor, issued the red card. He announced to the stadium: "After review, Manchester United 6 is guilty of pulling his hair – violent conduct. Final decision is red card." The Premier League Match Centre later confirmed on X that the red card was for violent conduct after VAR review. Manchester United manager Michael Carrick expressed his outrage at the decision, labelling it "one of the worst I've ever seen." Carrick highlighted what he perceived as inconsistency, questioning how an unpunished forearm smash on Leny Yoro led to Leeds' first goal, while Martinez's contact resulted in a dismissal. Despite the uproar from United's camp, Dominic Calvert-Lewin maintained his stance: "I felt my hair get pulled, told the ref, he makes the decisions. Unfortunate for [Martinez], whether he's meant it or not. I hold no grudges." Veteran pundit Gary Neville, commenting on the game, acknowledged the modern interpretation, stating, "You are not getting away with a hair pull... A hair pull results in a red card these days."
@@ -20,3 +26,18 @@ The Enduring Challenge of VAR Consistency The Martinez incident is the latest fl
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

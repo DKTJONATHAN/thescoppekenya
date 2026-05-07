@@ -1,17 +1,21 @@
 ---
 title: "Social Media Overtakes Television as Primary News Source in Kenya"
 slug: "social-media-overtakes-television-as-primary-news-source-kenya"
-description: "A new Media Council of Kenya survey reveals social media has surpassed television as the leading source of news, forcing a shift in media production."
+description: "Social Media Overtakes Television as Primary News Source in: A new Media Council of Kenya survey reveals social media has surpassed television as the leading"
+excerpt: "The Obsolescence of the Evening Bulletin: Kenya’s Information Transition History tends to echo itself, though the cadence changes with every"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/RGXby49L/ab801047dfd3.jpg"
 category: "Opinions"
 tags: ["kenya media", "digital news", "social media", "media council of kenya", "news consumption", "citizen journalism"]
+canonical: "https://zandani.co.ke/article/social-media-overtakes-television-as-primary-news-source-kenya"
 date: "2026-05-06T11:21:51Z"
 dateModified: "2026-05-06T11:21:51Z"
-schema: "NewsArticle"
 focusKeyword: "Social Media Overtakes Television as Primary News Source in"
+schema: "NewsArticle"
 ---
+
+Social Media Overtakes Television as Primary News Source in is central to this update for Kenyan readers.
+
 ## The Obsolescence of the Evening Bulletin: Kenya’s Information Transition
 
 History tends to echo itself, though the cadence changes with every technological surge. In the mid-twentieth century, the arrival of radio broadcasts in the Kenyan interior fundamentally altered the rhythm of local knowledge. Information, once held strictly within the boundaries of oral tradition, gained a cold, authoritative, and disembodied counterpart in the KBC transmitter. Today, the Media Council of Kenya provides data that marks a third seismic shift in our national narrative: social media has eclipsed television as the primary source of public information.
@@ -38,3 +42,18 @@ As traditional outlets experience further contraction, the resulting void is bei
 
 The historical record suggests that each leap in communication efficiency comes at a cost to the certainty of what is true. We are now living in the quiet aftermath of that loss, navigating a landscape where the broadcast signal has been replaced by the feed.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

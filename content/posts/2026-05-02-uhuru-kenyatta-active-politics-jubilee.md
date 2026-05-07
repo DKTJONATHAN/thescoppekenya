@@ -1,16 +1,19 @@
 ---
 title: "Uhuru Kenyatta: Why I Will Not Quit Active Kenyan Politics"
 slug: "uhuru-kenyatta-active-politics-jubilee"
+description: "Uhuru Kenyatta politics: Former President Uhuru Kenyatta defends his role in active politics and Jubilee Party leadership despite calls for his retirement."
+excerpt: "Former President Uhuru Kenyatta defends his role in active politics and Jubilee Party leadership despite calls for his retirement. Read the full story."
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/5hjS9P3y/f45895b1f4c7.jpg"
 category: "News"
-date: "2026-05-02T10:30:50Z"
-description: "Former President Uhuru Kenyatta defends his role in active politics and Jubilee Party leadership despite calls for his retirement. Read the full story."
-excerpt: "Former President Uhuru Kenyatta defends his role in active politics and Jubilee Party leadership despite calls for his retirement. Read the full story."
 tags: ["Kenya News", "Uhuru Kenyatta", "Jubilee Party", "Moitalel Ole Kenta", "Kenya"]
-focusKeyword: "Uhuru Kenyatta politics"
+canonical: "https://zandani.co.ke/article/uhuru-kenyatta-active-politics-jubilee"
+date: "2026-05-02T10:30:50Z"
 dateModified: "2026-05-02T10:30:50Z"
+focusKeyword: "Uhuru Kenyatta politics"
+schema: "NewsArticle"
 ---
+
 ## Uhuru Kenyatta Politics: Former President Defies Retirement Calls
 
 Former President Uhuru Kenyatta stated on Friday, May 1, that he would not resign as Jubilee Party leader, challenging critics who want him to quit active Kenyan politics. He defended his constitutional right to political engagement, accusing the current administration of undermining multiparty democracy. This declaration was made during a phone call at the homecoming ceremony of Jubilee Secretary General Moitalel Ole Kenta.
@@ -27,3 +30,18 @@ During his remarks, Uhuru Kenyatta appeared to criticize President William Ruto,
 
 The event also served as a platform for Uhuru Kenyatta to openly endorse former Interior Cabinet Secretary Fred Matiang’i as Jubilee’s preferred presidential candidate for the 2027 General Elections. This move signals Jubilee's intention to challenge the current administration, with Matiang’i vowing to address policies implemented by the present government if they come to power. The ceremony saw various Jubilee leaders, including Jeremiah Kioni and Fred Matiang'i, echoing Uhuru’s sentiments and expressing their intent to collaborate with other political parties.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

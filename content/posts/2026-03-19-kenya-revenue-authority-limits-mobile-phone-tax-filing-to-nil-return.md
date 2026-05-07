@@ -1,7 +1,8 @@
 ---
 title: "Kenya Revenue Authority limits mobile phone tax filing to nil returns"
 slug: "kenya-revenue-authority-limits-mobile-phone-tax-filing-to-nil-return"
-description: "The Kenya Revenue Authority (KRA) limits mobile phone tax filing to nil returns starting after March 31, 2026, for taxpayers with no income to report."
+description: "Kenya Revenue Authority limits mobile phone tax filing to ni: The Kenya Revenue Authority (KRA) limits mobile phone tax filing to nil returns starting after"
+excerpt: "The Kenya Revenue Authority (KRA) confirmed today, March 19, 2026, that taxpayers can utilize mobile phones for filing nil returns exclusive"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Wpc6yC1k/b9b01e9c76d0.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["kenya-revenue-authority", "nil-tax-returns", "mobile-tax-filing", "tax-compliance", "nil-return-deadline"]
 canonical: "https://zandani.co.ke/article/kenya-revenue-authority-limits-mobile-phone-tax-filing-to-nil-return"
 date: "2026-03-19T13:43:52Z"
-focusKeyword: "Kenya Revenue Authority limits mobile phone tax filing to ni"
 dateModified: "2026-03-19T13:43:52Z"
+focusKeyword: "Kenya Revenue Authority limits mobile phone tax filing to ni"
+schema: "NewsArticle"
 ---
+
+Kenya Revenue Authority limits mobile phone tax filing to ni is central to this update for Kenyan readers.
+
 The Kenya Revenue Authority (KRA) confirmed today, March 19, 2026, that taxpayers can utilize mobile phones for filing nil returns exclusively, but only after March 31. This clarification addresses widespread inquiries as the annual tax filing season progresses, offering a specific mobile option under strict conditions for those not earning income or operating a business.
 
 Mobile Filing Streamlined for Nil Returns
@@ -26,3 +31,18 @@ June 30 Filing Deadline With the deadline for tax filing set to lapse on June 30
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

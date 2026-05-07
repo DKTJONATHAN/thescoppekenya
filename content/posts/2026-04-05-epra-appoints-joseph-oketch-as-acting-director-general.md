@@ -2,6 +2,7 @@
 title: "EPRA appoints Joseph Oketch as acting Director General"
 slug: "epra-appoints-joseph-oketch-as-acting-director-general"
 description: "EPRA appoints Joseph Oketch as acting Director General after Daniel Kiptoo resigned amid a fuel scandal. Oketch formerly led the electricity directorate."
+excerpt: "The Energy and Petroleum Regulations Authority (EPRA) has appointed Joseph Oketch as its acting Director General, effective immediately, fol"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/v6ZXGBgZ/2510c53bd027.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["joseph-oketch", "epra-director-general", "daniel-kiptoo", "substandard-fuel-scandal", "energy-sector-regulation"]
 canonical: "https://zandani.co.ke/article/epra-appoints-joseph-oketch-as-acting-director-general"
 date: "2026-04-05T10:56:09Z"
-focusKeyword: "EPRA appoints Joseph Oketch as acting Director General"
 dateModified: "2026-04-05T10:56:09Z"
+focusKeyword: "EPRA appoints Joseph Oketch as acting Director General"
+schema: "NewsArticle"
 ---
+
+EPRA appoints Joseph Oketch as acting Director General is central to this update for Kenyan readers.
+
 The Energy and Petroleum Regulations Authority (EPRA) has appointed Joseph Oketch as its acting Director General, effective immediately, following the resignation of Daniel Kiptoo. Oketch’s appointment, announced Sunday, April 5, 2026, comes amidst a scandal involving substandard fuel importation.
 
 Leadership Transition at EPRA
@@ -22,3 +27,18 @@ Predecessor's Scandal and Resignation Oketch's appointment follows the resignati
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

@@ -1,15 +1,21 @@
 ---
 title: "Kenya Proposes Creation of County Statistics Offices in All Counties"
 slug: "kenya-proposes-creation-of-county-statistics-offices-in-all-counties"
+description: "Kenya Proposes Creation of County Statistics Offices in All: Data Devolution: Kenya's Statistics Bill 2026 Kenya is advancing the Statistics Bill 2026 to align"
+excerpt: "Data Devolution: Kenya's Statistics Bill 2026 Kenya is advancing the Statistics Bill 2026 to align its statistical system with the Constitut"
 author: "Elizabeth Muthoni"
 image: "https://i.ibb.co/b56CTJXd/faeeda66bd6c.webp"
 category: "Technology"
+tags: ["kenya proposes creation of county statistics offices in all counties", "technology", "kenya news"]
+canonical: "https://zandani.co.ke/article/kenya-proposes-creation-of-county-statistics-offices-in-all-counties"
 date: "2026-05-04T10:29:23Z"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 dateModified: "2026-05-04T10:29:23Z"
-schema: "NewsArticle"
 focusKeyword: "Kenya Proposes Creation of County Statistics Offices in All"
+schema: "NewsArticle"
 ---
+
+Kenya Proposes Creation of County Statistics Offices in All is central to this update for Kenyan readers.
+
 ## Data Devolution: Kenya's Statistics Bill 2026
 
 Kenya is advancing the Statistics Bill 2026 to align its statistical system with the Constitution and modern data environment. A core provision mandates County Statistics Offices in all counties, led by expert statisticians. This move aims to devolve data functions and enhance coordination at the local level, standardizing data practices nationwide.
@@ -26,3 +32,18 @@ To foster robust data management, the bill proposes the creation of a County Int
 
 The Statistics Bill 2026 represents a critical step towards updating Kenya’s statistical infrastructure. It seeks to repeal and replace the outdated Statistics Act of 2006, which established the Kenya National Bureau of Statistics (KNBS). The new bill aligns with the United Nations Fundamental Principles of Official Statistics, the Data Protection Act 2019, and contemporary advancements in big data, citizen-generated data, and biometrics. Kenya is proactively working to harmonize its data sharing frameworks and ensure its laws remain relevant to the evolving modern data environment, reflecting trends where [Kenyan mobile data consumption rises as 4G and 5G adoption grows](https://zandani.co.ke/article/kenyan-mobile-data-consumption-rises-as-4g-and-5G-adoption-grows). The public participation phase for this transformative bill is currently open until May 20, 2026, offering stakeholders an opportunity to contribute to its final shape.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

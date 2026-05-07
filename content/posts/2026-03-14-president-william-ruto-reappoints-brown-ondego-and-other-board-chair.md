@@ -1,13 +1,21 @@
 ---
 title: "President William Ruto Reappoints Brown Ondego and Other Board Chairpersons to State Agencies"
 slug: "president-william-ruto-reappoints-brown-ondego-and-other-board-chair"
+description: "President William Ruto Reappoints Brown Ondego and Other Boa: President Ruto Reaffirms State Agency Leadership President William Ruto has reinforced continuity"
+excerpt: "President Ruto Reaffirms State Agency Leadership President William Ruto has reinforced continuity across key state agencies, reappointing se"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/Fbq6g1Lb/c4751bc7840c.jpg"
 category: "News"
+tags: ["president william ruto reappoints brown ondego and other board chair", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/president-william-ruto-reappoints-brown-ondego-and-other-board-chair"
 date: "2026-03-14T16:51:25Z"
-focusKeyword: "President William Ruto Reappoints Brown Ondego and Other Boa"
 dateModified: "2026-03-14T16:51:25Z"
+focusKeyword: "President William Ruto Reappoints Brown Ondego and Other Boa"
+schema: "NewsArticle"
 ---
+
+President William Ruto Reappoints Brown Ondego and Other Boa is central to this update for Kenyan readers.
+
 ## President Ruto Reaffirms State Agency Leadership President William Ruto has reinforced continuity across key state agencies, reappointing several board chairpersons for new terms. Announced Friday via gazette notice, these decisions underscore a continued governmental focus on experienced leadership in sectors ranging from aviation to technology and environmental management. Cabinet Secretaries also effected appointments within their dockets.
 
 Key Presidential Reappointments Brown Ondego has been reappointed as the Non-Executive Chairperson of the Board of Directors of the Kenya Civil Aviation Authority (KCAA) for another three-year term. Ondego, a former Kenya Ports Authority Managing Director, will continue his service in the aviation regulator. His daughter, Captain Saviamaria Aseyo Ondego, famously piloted flight KQ203/RAO001, which transported the remains of veteran opposition leader Raila Odinga back to the country. Emilio Mugo also secured another three-year term as the Non-Executive Chairperson of the Board of Directors of the National Environmental Management Authority (NEMA). Simultaneously, Professor Raphael Munavu was reappointed as the Non-Executive Chairperson of the Board of the Konza Technopolis Development Authority, the agency spearheading the nation's flagship smart city project. In the tourism sector, Francis Gichaba retains his role as the Non-Executive Chairperson of the Kenya Tourism Board (KTB), as the government prioritizes strengthening tourism marketing. Education also saw a key reappointment with Professor Julius Nyabundi continuing as the Chairperson of the Kenya National Examinations Council (KNEC) for a four-year term, effective March 13, 2026. Politician and former Nyatike MP Edick Omondi Anyanga was reappointed as Chairperson of the Kenya Nuclear Regulatory Authority board for a three-year term. Furthermore, President Ruto renewed the appointments of Anwar Oloitiptip, Shadrack Tulon, Abdikahiya Maalim, Nasra Ibrahim Ibren, and Jeremiah Apalia Lomari as members of the LAPSSET Corridor Development Authority board. These renewals aim to bolster critical infrastructure development across the country, including regions like Northern Kenya, a region that has faced significant challenges. [Stranded Up North: Our Journalist's Secret Struggles in Drought-Stricken Northern Kenya!](https://zandani.co.ke/article/stranded-up-north-journalist-secret-struggles-drought-stricken-northern-kenya)
@@ -16,3 +24,18 @@ Cabinet Secretaries' Appointments Beyond the President's directives, several Cab
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

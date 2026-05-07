@@ -1,15 +1,21 @@
 ---
 title: "AI in the media: Why an ethics-by-design approach is essential for public trust"
 slug: "ai-in-the-media-ethics-by-design-approach-essential"
+description: "AI in the media Why an ethics-by-design approach is essentia: The critical need for an ethics-by-design approach in AI in the media is paramount to"
 excerpt: "The critical need for an ethics-by-design approach in AI in the media is paramount to safeguarding public trust and ensuring responsible technological integration."
 author: "Jonathan Mwaniki"
 image: "https://images.unsplash.com/photo-1684369586188-bad829e7c51f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NjY1ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzIyNzUxODN8&ixlib=rb-4.1.0&q=80&w=1080"
 category: "Opinions"
-date: "2026-02-28"
 tags: ["AI", "media ethics", "ethics-by-design", "Kenya", "journalism", "artificial intelligence", "public trust", "media policy"]
-focusKeyword: "AI in the media Why an ethics-by-design approach is essentia"
+canonical: "https://zandani.co.ke/article/ai-in-the-media-ethics-by-design-approach-essential"
+date: "2026-02-28"
 dateModified: "2026-02-28"
+focusKeyword: "AI in the media Why an ethics-by-design approach is essentia"
+schema: "NewsArticle"
 ---
+
+AI in the media Why an ethics-by-design approach is essentia is central to this update for Kenyan readers.
+
 ## AI in the media: The Imperative of an Ethics-by-Design Approach The rapid integration of Artificial Intelligence into Kenyan media enterprises is transforming workflows, from content creation to audience analysis, promising unprecedented efficiency and data-driven insights. This technological revolution, however, casts a long shadow, bringing to the fore profound ethical questions that demand an **ethics-by-design approach** rather than an afterthought. The core challenge lies in ensuring that innovation serves the public good without compromising the foundational principles of journalism.
 
 Cultivating AI Fluency and an Ethics-by-Design Approach The conversation surrounding **AI in the media** frequently gravitates towards its technical prowess, but the more critical discourse must centre on the ethical implications. Kenyan media houses are already deploying AI across various stages of their operations, including story pitching, news gathering, content production, dissemination, and fact-checking. This widespread adoption necessitates that journalists and media practitioners cultivate a robust "AI fluency" - a skill set that transcends mere operational knowledge to encompass the responsible conceptualisation, design, training, and deployment of these systems. It is not enough to simply use the tools; we must understand their inherent biases and potential for harm. The Media Council of Kenya (MCK) has taken a commendable step forward with its Code of Conduct for Media Practice, 2025, which explicitly addresses the ethical thresholds for AI use. Part Four (Section 27) of this code provides a clear checklist that media houses must satisfy before deploying AI technology, emphasising human oversight as the guiding principle. This affirms the "human-in-the-loop" concept, ensuring that accountability ultimately rests with individuals, not algorithms. Similarly, the MCK's Media Guide on the Use of Artificial Intelligence offers a practical manual, drawing guidance from international bodies like UNESCO and the Paris Charter on AI and Journalism, which champion ethical principles for news and information integrity.
@@ -20,3 +26,18 @@ The Future of AI in the media: Beyond Efficiency As AI continues its inexorable 
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

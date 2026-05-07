@@ -1,13 +1,21 @@
 ---
 title: "Tanzanian businessman Rostam Azizi acquires majority stake in Nation Media Group"
 slug: "tanzanian-businessman-rostam-azizi-acquires-majority-stake-in-nation"
+description: "Tanzanian businessman Rostam Azizi acquires majority stake i: Rostam Azizi Takes Majority Control of Nation Media Group Tanzanian businessman Rostam Azizi has"
+excerpt: "Rostam Azizi Takes Majority Control of Nation Media Group Tanzanian businessman Rostam Azizi has acquired a 54.08 percent majority stake in"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/LdXJ0qtH/2bae6263d064.jpg"
 category: "News"
+tags: ["tanzanian businessman rostam azizi acquires majority stake in nation", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/tanzanian-businessman-rostam-azizi-acquires-majority-stake-in-nation"
 date: "2026-03-10T19:10:39Z"
-focusKeyword: "Tanzanian businessman Rostam Azizi acquires majority stake i"
 dateModified: "2026-03-10T19:10:39Z"
+focusKeyword: "Tanzanian businessman Rostam Azizi acquires majority stake i"
+schema: "NewsArticle"
 ---
+
+Tanzanian businessman Rostam Azizi acquires majority stake i is central to this update for Kenyan readers.
+
 ## Rostam Azizi Takes Majority Control of Nation Media Group Tanzanian businessman Rostam Azizi has acquired a 54.08 percent majority stake in Nation Media Group (NMG), marking a significant ownership transition for the East African media giant. This 2026 acquisition concludes the Aga Khan Fund for Economic Development's 66-year association with NMG, shifting control to Azizi's investment vehicle.
 
 Historic Ownership Transition Rostam Azizi, a prominent Tanzanian businessman and former politician, has secured a majority stake in Nation Media Group (NMG) by acquiring the 54.08 percent shareholding previously held by the Aga Khan Fund for Economic Development (AKFED). This transaction, executed through Azizi's company, Taarifa Ltd, involved the purchase of 100 percent of NPRT Holdings Africa Limited. NPRT was the investment vehicle that managed AKFED's controlling interest of 92,618,177 ordinary shares in NMG. The financial terms of this significant East African media transaction, one of the largest in decades, have not been publicly disclosed. Azizi's extensive business interests span multiple sectors, including mining, telecommunications, agriculture, real estate, energy, and construction.
@@ -20,3 +28,18 @@ Regulatory Approvals Pending The acquisition is currently awaiting regulatory ap
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

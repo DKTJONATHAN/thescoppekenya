@@ -1,13 +1,21 @@
 ---
 title: "EPRA maintains fuel prices in latest monthly review"
 slug: "epra-maintains-fuel-prices-in-latest-monthly-review"
+description: "EPRA maintains fuel prices in latest monthly review: EPRA Maintains Fuel Prices for March April 2026 Cycle The Energy and Petroleum Regulatory Authority (EPRA)"
+excerpt: "EPRA Maintains Fuel Prices for March April 2026 Cycle The Energy and Petroleum Regulatory Authority (EPRA) announced today, March 14, 2026,"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/MysBWwWW/093e694209f8.jpg"
 category: "News"
+tags: ["epra maintains fuel prices in latest monthly review", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/epra-maintains-fuel-prices-in-latest-monthly-review"
 date: "2026-03-14T15:44:20Z"
-focusKeyword: "EPRA maintains fuel prices in latest monthly review"
 dateModified: "2026-03-14T15:44:20Z"
+focusKeyword: "EPRA maintains fuel prices in latest monthly review"
+schema: "NewsArticle"
 ---
+
+EPRA maintains fuel prices in latest monthly review is central to this update for Kenyan readers.
+
 ## EPRA Maintains Fuel Prices for March-April 2026 Cycle The Energy and Petroleum Regulatory Authority (EPRA) announced today, March 14, 2026, that prices for petrol, diesel, and kerosene will remain stable for the upcoming March-April cycle. This decision offers relief amidst global market anxieties, with Super Petrol in Nairobi continuing to retail at Ksh178.28 per litre.
 
 Stable Fuel Costs Across Major Cities EPRA's latest review confirms that Super Petrol will maintain its price of Ksh178.28 per litre in Nairobi, with Diesel at Ksh166.54 and Kerosene at Ksh152.78. Motorists in Mombasa will continue to experience the lowest prices, with Super Petrol retailing at Ksh175.00 per litre, Diesel at Ksh163.26, and Kerosene at Ksh149.49. In Nakuru, Super Petrol is priced at Ksh177.34, Diesel at Ksh165.95, and Kerosene at Ksh152.21. Eldoret residents will see Super Petrol at Ksh178.15, Diesel at Ksh166.77, and Kerosene at Ksh153.03 for the next 30 days. These prices are inclusive of the 16 percent Value Added Tax (VAT), aligning with the Finance Act 2023, the Tax Laws (Amendment) Act 2024, and inflation-adjusted excise duty rates.
@@ -18,3 +26,18 @@ Government Assurance Amidst Supply Concerns Despite rising tensions concerning I
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

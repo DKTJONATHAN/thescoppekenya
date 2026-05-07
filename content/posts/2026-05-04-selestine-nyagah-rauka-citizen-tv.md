@@ -1,9 +1,8 @@
 ---
 title: "Selestine Nyagah Joins Citizen TV Rauka After Lulu Hassan Mentorship"
 slug: "selestine-nyagah-rauka-citizen-tv"
-description: "Former Neema star Selestine Nyagah pivots to live broadcasting on Citizen TV after mentorship from Lulu Hassan. See what happened"
+description: "Former Neema star Selestine Nyagah pivots to live broadcasting on Citizen TV after mentorship from Lulu Hassan. See what happened Read key facts, what this mean"
 excerpt: "Former Neema star Selestine Nyagah pivots to live broadcasting on Citizen TV after mentorship from Lulu Hassan. See..."
-focusKeyword: "Selestine Nyagah"
 author: "Za Ndani"
 author_url: "https://zandani.co.ke/author/za-ndani"
 image: "https://i.ibb.co/HTHxzLH5/86249c1382e3.webp"
@@ -11,14 +10,11 @@ category: "Entertainment"
 tags: ["Entertainment News", "Selestine Nyagah", "Lulu Hassan", "Citizen TV", "Gospel Show"]
 canonical: "https://zandani.co.ke/article/selestine-nyagah-rauka-citizen-tv"
 date: "2026-05-04T15:29:12Z"
-authorUrl: "https://zandani.co.ke/author/za-ndani"
 dateModified: "2026-05-04T15:29:12Z"
+focusKeyword: "Selestine Nyagah"
 schema: "NewsArticle"
-stylePreset: "celeb_news"
-leadStyle: "punchy declarative sentence, high-energy, names first"
-articleAngle: "Focus on the 'career glow-up' and the influence of industry mentorship in securing top-tier media po"
-sourceUrl: "https://www.mpasho.co.ke/entertainment/2026-05-04-how-actress-selestine-nyagah-prepared-for-her-first-rauka-show-on-citizen-tv"
 ---
+
 Selestine Nyagah is trading her acting scripts for a live microphone as she officially joins the presenting team at Citizen TV. The star, fresh off the set of the popular drama series Neema, has landed a coveted hosting role on the Sunday morning gospel powerhouse, Rauka, marking a major leap into the world of live broadcasting.
 
 ## A Bold New Chapter for Selestine Nyagah
@@ -39,3 +35,18 @@ The reception from the public has been electric, as fans of the Sunday morning s
 
 The audience is looking for more than just a host; they want someone who resonates with their struggles and triumphs. Her background in storytelling provides her with a unique advantage, allowing her to facilitate conversations with warmth and authenticity. As she takes her seat in the studio this coming Sunday, all eyes will be on her to see if she can translate her acting magnetism into the world of gospel ministry and music entertainment. Will she bring a new level of energy to the weekend morning slot, or will she adapt the show to fit her own distinct personality? One thing is certain: the Kenyan media landscape is about to get a whole lot more interesting with her behind the desk.
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

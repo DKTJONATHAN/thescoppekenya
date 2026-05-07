@@ -1,7 +1,8 @@
 ---
 title: "KRA and NCPWD announce vetting for income tax exemption applicants"
 slug: "kra-and-ncpwd-announce-vetting-for-income-tax-exemption-applicants"
-description: "KRA and NCPWD are conducting nationwide vetting for income tax exemption applicants from March 30 to April 30, 2026, to verify eligibility via eCitizen."
+description: "KRA and NCPWD announce vetting for income tax exemption appl: KRA and NCPWD are conducting nationwide vetting for income tax exemption applicants from March 30"
+excerpt: "The National Council for Persons with Disabilities (NCPWD) and the Kenya Revenue Authority (KRA) have initiated a countrywide vetting exerci"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/rRfhX6Vy/af7c574680d8.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["income-tax-exemption", "ncpwd", "kra", "disability-rights", "ecitizen-applications"]
 canonical: "https://zandani.co.ke/article/kra-and-ncpwd-announce-vetting-for-income-tax-exemption-applicants"
 date: "2026-03-19T07:16:50Z"
-focusKeyword: "KRA and NCPWD announce vetting for income tax exemption appl"
 dateModified: "2026-03-19T07:16:50Z"
+focusKeyword: "KRA and NCPWD announce vetting for income tax exemption appl"
+schema: "NewsArticle"
 ---
+
+KRA and NCPWD announce vetting for income tax exemption appl is central to this update for Kenyan readers.
+
 The National Council for Persons with Disabilities (NCPWD) and the Kenya Revenue Authority (KRA) have initiated a countrywide vetting exercise for Income Tax Exemption (ITE) applicants. This critical process, for those who applied via eCitizen, commenced on March 30, 2026, and will continue until April 30, 2026, at various designated centers to verify eligibility.
 
 Income Tax Exemption Vetting Details
@@ -24,3 +29,18 @@ Ensuring a Smooth Process KRA and NCPWD have reiterated that the vetting exercis
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

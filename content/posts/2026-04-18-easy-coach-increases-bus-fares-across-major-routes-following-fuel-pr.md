@@ -1,7 +1,8 @@
 ---
 title: "Easy Coach increases bus fares across major routes following fuel price hike"
 slug: "easy-coach-increases-bus-fares-across-major-routes-following-fuel-pr"
-description: "Easy Coach increases bus fares for major routes effective April 20, 2026, following the EPRA fuel price hike. Nairobi to Kisumu tickets now cost Ksh1,900."
+description: "Easy Coach increases bus fares across major routes following: Easy Coach increases bus fares for major routes effective April 20, 2026, following the EPRA fuel"
+excerpt: "Easy Coach, a prominent bus operator, announced revised bus fares effective Monday, April 20, 2026, across its key routes. The adjustments,"
 author: "Celestine Nzioka"
 author_url: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/gZjrYQNP/3a0404805c8f.webp"
@@ -9,9 +10,13 @@ category: "News"
 tags: ["easy-coach-bus-fares", "epra-fuel-price-hike", "nairobi-kisumu-bus-routes", "public-transport-costs"]
 canonical: "https://zandani.co.ke/article/easy-coach-increases-bus-fares-across-major-routes-following-fuel-pr"
 date: "2026-04-18T11:03:24Z"
-focusKeyword: "Easy Coach increases bus fares across major routes following"
 dateModified: "2026-04-18T11:03:24Z"
+focusKeyword: "Easy Coach increases bus fares across major routes following"
+schema: "NewsArticle"
 ---
+
+Easy Coach increases bus fares across major routes following is central to this update for Kenyan readers.
+
 Easy Coach, a prominent bus operator, announced revised bus fares effective Monday, April 20, 2026, across its key routes. The adjustments, communicated in a notice dated Saturday, April 18, 2026, directly respond to the recent fuel price increase by the Energy and Petroleum Regulatory Authority (EPRA).
 
 Easy Coach Implements New Fare Structure
@@ -22,3 +27,18 @@ Fuel Price Surge Prompts Adjustments The fare revisions directly follow the Ener
 
 
 
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
