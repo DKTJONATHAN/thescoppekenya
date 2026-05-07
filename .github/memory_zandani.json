@@ -143,7 +143,8 @@
     "b1ea5ecf9baf55bba1d876cbae66f98a",
     "94c02eda96d6fadf6181a85ae8a39891",
     "4b9096b40e265ab25f0dc0ad81f91a4a",
-    "be0ddd34293cf6e3beda934bc94de50e"
+    "be0ddd34293cf6e3beda934bc94de50e",
+    "9f7570ff7827e99a3dc1a2c21ed19be1"
   ],
   "style_history": [
     "celeb_news",
@@ -154,12 +155,14 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Profile Beat"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
     "winners_losers|One Night Only|Reaction Round-up",
     "policy_gap|miraa|Trend Take",
-    "money_follow|Forex trading|Receipts Piece"
+    "money_follow|Forex trading|Receipts Piece",
+    "impact_on_citizens|Embarambamba|Profile Beat"
   ]
 }
