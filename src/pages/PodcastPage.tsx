@@ -1,12 +1,41 @@
+import { useRef, useState } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { getAllPodcastEpisodes, type PodcastEpisode } from "@/lib/podcasts";
-import { Headphones, Calendar, Mic, PlayCircle, Clock } from "lucide-react";
+import { Headphones, Calendar, Mic, PlayCircle, PauseCircle, Clock } from "lucide-react";
 
 const PodcastPage = () => {
   // getAllPodcastEpisodes returns episodes sorted by date, descending
   const episodes: PodcastEpisode[] = getAllPodcastEpisodes();
   const latestEpisode = episodes.length > 0 ? episodes[0] : null;
   const olderEpisodes = episodes.slice(1);
+  const latestAudioRef = useRef<HTMLAudioElement | null>(null);
+  const archiveAudioRefs = useRef<Record<string, HTMLAudioElement | null>>({});
+  const [playingSlug, setPlayingSlug] = useState<string | null>(null);
+
+  const togglePlay = async (slug: string, el: HTMLAudioElement | null) => {
+    if (!el) return;
+    try {
+      if (playingSlug && playingSlug !== slug) {
+        const prev =
+          playingSlug === "latest"
+            ? latestAudioRef.current
+            : archiveAudioRefs.current[playingSlug];
+        if (prev) {
+          prev.pause();
+        }
+      }
+
+      if (el.paused) {
+        await el.play();
+        setPlayingSlug(slug);
+      } else {
+        el.pause();
+        setPlayingSlug((current) => (current === slug ? null : current));
+      }
+    } catch (error) {
+      console.error("Audio playback failed:", error);
+    }
+  };
 
   return (
     <Layout>
@@ -48,10 +77,29 @@ const PodcastPage = () => {
                   </p>
                   
                   <div className="pt-4 w-full">
+                    <button
+                      onClick={() => togglePlay("latest", latestAudioRef.current)}
+                      className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-primary-foreground font-semibold hover:opacity-90 transition"
+                      type="button"
+                    >
+                      {playingSlug === "latest" ? (
+                        <>
+                          <PauseCircle className="w-4 h-4" />
+                          Pause Brief
+                        </>
+                      ) : (
+                        <>
+                          <PlayCircle className="w-4 h-4" />
+                          Play Brief
+                        </>
+                      )}
+                    </button>
                     <audio 
+                      ref={latestAudioRef}
                       controls 
                       className="w-full h-14 rounded-full bg-background border border-border shadow-inner focus:outline-none" 
                       src={latestEpisode.audio_url}
+                      onEnded={() => setPlayingSlug((current) => (current === "latest" ? null : current))}
                     >
                       Your browser does not support the audio element.
                     </audio>
@@ -103,10 +151,33 @@ const PodcastPage = () => {
                     </div>
                     
                     <div className="mt-auto pt-4 border-t border-border/50">
+                      <button
+                        onClick={() => togglePlay(episode.slug, archiveAudioRefs.current[episode.slug])}
+                        className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-primary-foreground font-semibold hover:opacity-90 transition"
+                        type="button"
+                      >
+                        {playingSlug === episode.slug ? (
+                          <>
+                            <PauseCircle className="w-4 h-4" />
+                            Pause Brief
+                          </>
+                        ) : (
+                          <>
+                            <PlayCircle className="w-4 h-4" />
+                            Play Brief
+                          </>
+                        )}
+                      </button>
                       <audio 
+                        ref={(el) => {
+                          archiveAudioRefs.current[episode.slug] = el;
+                        }}
                         controls 
                         className="w-full h-10 rounded-full bg-background" 
                         src={episode.audio_url}
+                        onEnded={() =>
+                          setPlayingSlug((current) => (current === episode.slug ? null : current))
+                        }
                       >
                       </audio>
                     </div>
