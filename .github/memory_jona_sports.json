@@ -66,7 +66,8 @@
     "33151322126f2ef0bf96b59485add56e",
     "4fe287a303f86fa3d0423474f8a4dbca",
     "bb6ae03acc55aa242619ecdc244ff4d9",
-    "3789f24a950205f05df719a7c1c9d8ac"
+    "3789f24a950205f05df719a7c1c9d8ac",
+    "058a549b014149f66cff4d763843c014"
   ],
   "style_history": [
     "Match Report",
@@ -89,7 +90,8 @@
     "Tactical Take",
     "Match Report",
     "Stat Story",
-    "Player Profile Beat"
+    "Player Profile Beat",
+    "Tactical Take"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -110,6 +112,7 @@
     "money_follow|Europa League|Tactical Take",
     "timeline_shift|Aston Villa|Match Report",
     "myth_vs_fact|UEFA Europa League|Stat Story",
-    "next_48_hours|UEFA Conference League|Player Profile Beat"
+    "next_48_hours|UEFA Conference League|Player Profile Beat",
+    "policy_gap|Crystal Palace|Tactical Take"
   ]
 }
