@@ -1,16 +1,20 @@
 ---
 title: "Safaricom Reports Growth in Kenya Amid Ethiopia Expansion Costs"
 slug: "safaricom-financial-results-kenya-ethiopia-growth"
-description: "Safaricom announces strong financial results driven by Kenya service revenue and M-PESA growth while absorbing losses from its Ethiopian expansion."
+description: "Safaricom Reports Growth in Kenya Amid Ethiopia Expansion Costs: Safaricom announces strong financial results driven by Kenya service revenue and M-PESA growth"
+excerpt: "Safaricom Financial Results and the Ethiopia Expansion Safaricom recently reported KES 400.8 billion in service revenue from its Kenyan oper"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/TqFk3JPr/8d32081c3d3c.webp"
 category: "Technology"
 tags: ["safaricom", "mpesa", "kenya business", "telecom news", "safaricom ethiopia", "investing"]
+canonical: "https://zandani.co.ke/article/safaricom-financial-results-kenya-ethiopia-growth"
 date: "2026-05-07T09:52:27Z"
 dateModified: "2026-05-07T09:52:27Z"
+focusKeyword: "Safaricom Reports Growth in Kenya Amid Ethiopia Expansion Costs"
 schema: "NewsArticle"
 ---
+
+Safaricom Reports Growth in Kenya Amid Ethiopia Expansion Costs is central to this update for Kenyan readers.
 
 ## Safaricom Financial Results and the Ethiopia Expansion
 
@@ -41,3 +45,18 @@ The company is effectively operating as two distinct entities. It manages a matu
 ### What to watch next
 
 The company's next major milestone is the Annual General Meeting, which is slated for July 31, 2026. At this event, the final dividend payout will be confirmed. Beyond the immediate fiscal decision, investors should monitor the performance of the Ethiopian unit following the removal of hyperinflationary accounting. If the operational loss does not show a clear downward trend after mid-2025, the board may face increasing pressure to re-evaluate the scale and pace of its regional investment strategy. Monitoring these developments will be essential for gauging the long-term sustainability of the current expansion model.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
