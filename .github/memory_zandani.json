@@ -144,7 +144,8 @@
     "94c02eda96d6fadf6181a85ae8a39891",
     "4b9096b40e265ab25f0dc0ad81f91a4a",
     "be0ddd34293cf6e3beda934bc94de50e",
-    "9f7570ff7827e99a3dc1a2c21ed19be1"
+    "9f7570ff7827e99a3dc1a2c21ed19be1",
+    "287ea1317ddbabf6de12b7bce776d59b"
   ],
   "style_history": [
     "celeb_news",
@@ -156,13 +157,15 @@
     "Reaction Round-up",
     "Trend Take",
     "Receipts Piece",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
     "winners_losers|One Night Only|Reaction Round-up",
     "policy_gap|miraa|Trend Take",
     "money_follow|Forex trading|Receipts Piece",
-    "impact_on_citizens|Embarambamba|Profile Beat"
+    "impact_on_citizens|Embarambamba|Profile Beat",
+    "next_48_hours|King Kaka|Hard News Lead"
   ]
 }
