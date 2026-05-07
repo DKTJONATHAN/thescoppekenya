@@ -1,8 +1,8 @@
 ---
 title: "Football Tables: Premier League, UCL, Scottish & EFL Status"
 slug: "football-tables-premier-league-ucl-scottish-efl-status"
-description: "Football Tables Premier League UCL Scottish EFL Status: Read key facts, what this means for Kenyans, and practical next steps."
-excerpt: ""
+description: "Football Tables Premier League UCL Scottish EFL Status: Read key facts, what this means for Kenyans, and practical next steps. Read key facts, what this means f"
+excerpt: "Football Tables Premier League UCL Scottish EFL Status is central to this update for Kenyan readers. What this means for Kenyans This develo"
 author: "Jona Munyi"
 image: "/images/placeholder.jpg"
 category: "Sports"

@@ -1,7 +1,7 @@
 ---
 title: "Premier League Top Scorers"
 slug: "premier-league-top-scorers"
-description: "Premier League Top Scorers Read key facts, what this means for Kenyans, and practical next steps."
+description: "Premier League Top Scorers Read key facts, what this means for Kenyans, and practical next steps. Read key facts, what this means for Kenyans, and practical nex"
 excerpt: "Premier League top scorers who are currently active feature in this updated ranking of the most prolific goalscorers playing in the top flight today."
 author: "Jona Munyi"
 image: "/images/placeholder.jpg"

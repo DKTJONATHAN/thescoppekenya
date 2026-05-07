@@ -17,6 +17,8 @@ schema: "NewsArticle"
 
 Residents Block Mumias-Bungoma Highway After MP Wambokas PIC is central to this update for Kenyan readers.
 
+Residents Block Mumias-Bungoma Highway After MP Wambokas PIC is central to this update for Kenyan readers.
+
 Protesters in Bumula blocked the Mumias-Bungoma highway today at Kabula market following the suspension of Member of Parliament Jack Wamboka from his role as chairperson of the Public Investments Committee. Traffic remained paralyzed as residents demanded the lawmaker's immediate reinstatement.
 
 ## Roadblocks at Kabula Market
