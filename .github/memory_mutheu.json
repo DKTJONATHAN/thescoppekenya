@@ -76,7 +76,8 @@
     "08b42d8da2092f9d27dd86d8064c1df1",
     "d1632f036727aa62d7bf7fab1f8d1782",
     "0b3737cde7c0abc7145f6ec33e44a21e",
-    "8ad40ed4ac474b98e095e35805127a3c"
+    "8ad40ed4ac474b98e095e35805127a3c",
+    "d5f00a60634c011b2e172e8c0fcde737"
   ],
   "style_history": [
     "Hard News Lead",
@@ -96,7 +97,8 @@
     "Explainer",
     "Reaction Round-up",
     "Hard News Lead",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -114,6 +116,7 @@
     "winners_losers|film production|Explainer",
     "impact_on_citizens|Goldie Hawn|Reaction Round-up",
     "policy_gap|celebrity news|Hard News Lead",
-    "winners_losers|The View|Trend Take"
+    "winners_losers|The View|Trend Take",
+    "myth_vs_fact|Friends|Profile Beat"
   ]
 }
