@@ -4,6 +4,17 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
   <url>
+    <loc>https://zandani.co.ke/article/us-report-flags-kenya-over-growing-influx-of-counterfeit-goods</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Za Ndani</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-07T06:20:54.000Z</news:publication_date>
+      <news:title>US Report Flags Kenya Over Growing Influx of Counterfeit Goods</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://zandani.co.ke/article/bfree-secures-funding-to-scale-distressed-debt-model</loc>
     <news:news>
       <news:publication>
