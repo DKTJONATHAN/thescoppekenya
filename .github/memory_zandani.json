@@ -148,7 +148,8 @@
     "287ea1317ddbabf6de12b7bce776d59b",
     "c82e8241d06f575a52f1d5b75e306514",
     "c9cba568b4854dacf236c5f3ec88f2b6",
-    "1bc95d5b9dd8e81e862489a395cc74f6"
+    "1bc95d5b9dd8e81e862489a395cc74f6",
+    "76f2a6d13638998e526aaac9fae418da"
   ],
   "style_history": [
     "celeb_news",
@@ -164,7 +165,8 @@
     "Hard News Lead",
     "Trend Take",
     "Reaction Round-up",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Profile Beat"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -175,6 +177,7 @@
     "next_48_hours|King Kaka|Hard News Lead",
     "timeline_shift|Education|Trend Take",
     "accountability|music industry|Reaction Round-up",
-    "money_follow|comedy|Receipts Piece"
+    "money_follow|comedy|Receipts Piece",
+    "impact_on_citizens|King Kaka|Profile Beat"
   ]
 }
