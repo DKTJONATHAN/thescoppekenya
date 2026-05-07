@@ -1,6 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /tag/
+Disallow: /search
+Disallow: /api/
 
 # Sitemaps
 Sitemap: https://zandani.co.ke/sitemap.xml
-Sitemap: https://zandani.co.ke/sitemap-news.xml
+Sitemap: https://zandani.co.ke/news-sitemap.xml
