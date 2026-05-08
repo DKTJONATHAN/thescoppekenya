@@ -1,16 +1,20 @@
 ---
 title: "KRA Announces iTax Maintenance and Clarifies Mobile Money Tracking"
 slug: "kra-itax-maintenance-mobile-money-monitoring-clarification"
-description: "The Kenya Revenue Authority has scheduled a four-hour iTax system update on May 10. Officials also clarified that monitoring excludes personal transfers."
+description: "KRA Announces iTax Maintenance and Clarifies Mobile Money Trackin: The Kenya Revenue Authority has scheduled a four-hour iTax system update on May 10."
+excerpt: "KRA iTax Maintenance and the Mobile Money Monitoring Myth As the Kenya Revenue Authority prepares for a strategic iTax system freeze on May"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/k2XXgzq1/27cd34582c28.jpg"
 category: "News"
 tags: ["kra", "itax", "kenya revenue authority", "mobile money", "tax compliance", "kenya news"]
+canonical: "https://zandani.co.ke/article/kra-itax-maintenance-mobile-money-monitoring-clarification"
 date: "2026-05-08T16:48:46Z"
 dateModified: "2026-05-08T16:48:46Z"
+focusKeyword: "KRA Announces iTax Maintenance and Clarifies Mobile Money Trackin"
 schema: "NewsArticle"
 ---
+
+KRA Announces iTax Maintenance and Clarifies Mobile Money Trackin is central to this update for Kenyan readers.
 
 ## KRA iTax Maintenance and the Mobile Money Monitoring Myth
 
@@ -35,3 +39,18 @@ The June 30 tax return deadline is approaching, and the Authority is desperate t
 Watch for an increase in "compliance notices" sent to personal mobile money users following the May 10 system maintenance. If the Authority begins flagging high volume P2P users for audits, the assurance given in Meru will be exposed as a tactical distraction. Also, keep an eye on whether the Central Bank of Kenya introduces new regulations that force a stricter separation between personal and business mobile wallets, a move that would provide the taxman with the precise roadmap he currently claims he does not need.
 
 If the technology cannot truly tell a daughter's pocket money from a trader's profit, then who is the taxman actually watching?
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
