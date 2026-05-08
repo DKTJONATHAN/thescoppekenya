@@ -102,7 +102,8 @@
     "defddfe5003b1b6c6392ed1328c7f340",
     "fe7a0bdcc3e4b5efe6d4149c8fec7244",
     "5f785511d15b84c9b9c99d1640130c5b",
-    "683c2b370f747cac497e0aa03e863d30"
+    "683c2b370f747cac497e0aa03e863d30",
+    "13cae824662d979053099184f99f2861"
   ],
   "style_history": [
     "SME Angle",
@@ -118,7 +119,8 @@
     "Backgrounder",
     "Power Accountability",
     "Markets Report",
-    "Explainer"
+    "Explainer",
+    "Backgrounder"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -133,6 +135,7 @@
     "timeline_shift|Fincra|Backgrounder",
     "accountability|Safaricom|Power Accountability",
     "myth_vs_fact|Economic Survey 2026|Markets Report",
-    "impact_on_citizens|digital economy|Explainer"
+    "impact_on_citizens|digital economy|Explainer",
+    "timeline_shift|Glovo|Backgrounder"
   ]
 }
