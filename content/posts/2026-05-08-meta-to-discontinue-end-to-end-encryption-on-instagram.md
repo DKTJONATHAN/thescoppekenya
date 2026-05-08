@@ -1,16 +1,20 @@
 ---
 title: "Meta to Discontinue End-to-End Encryption on Instagram Messages"
 slug: "meta-to-discontinue-end-to-end-encryption-on-instagram"
-description: "Meta has confirmed plans to remove optional end-to-end encryption from Instagram direct messages, shifting users back to standard security by 2026."
+description: "Meta to Discontinue End-to-End Encryption on Instagram Messages: Meta has confirmed plans to remove optional end-to-end encryption from Instagram direct"
+excerpt: "Meta Discontinues Instagram Encryption: The Privacy Mirage Kenyan Instagram users are sounding the alarm today as Meta officially pulls the"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/nZWWSXc/1cd76aba8271.jpg"
 category: "Gossip"
 tags: ["meta", "instagram", "data privacy", "social media", "technology news", "cyber security"]
+canonical: "https://zandani.co.ke/article/meta-to-discontinue-end-to-end-encryption-on-instagram"
 date: "2026-05-08T09:56:19Z"
 dateModified: "2026-05-08T09:56:19Z"
+focusKeyword: "Meta to Discontinue End-to-End Encryption on Instagram Messages"
 schema: "NewsArticle"
 ---
+
+Meta to Discontinue End-to-End Encryption on Instagram Messages is central to this update for Kenyan readers.
 
 ## Meta Discontinues Instagram Encryption: The Privacy Mirage
 
@@ -43,3 +47,18 @@ The immediate future looks like a mass migration of sensitive data. Expect a sha
 For now, the digital streets are restless, and the trust in Instagram as a safe space for professional or private communication has been effectively shattered. The 8 May deadline marks the end of an era where we could talk freely. Today, the conversation is shifting, and for many Kenyans, the message is clear: move your business elsewhere, or prepare for an audience.
 
 The mood remains tense as users scramble to archive their chats and scrub their history before the platform fully adjusts to its new, less secure reality.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
