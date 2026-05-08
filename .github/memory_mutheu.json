@@ -84,7 +84,8 @@
     "f8f9f0876794bc3a28ca5ee1cfd5993f",
     "00170558c47cbc36c9a2aa0b2286ee09",
     "a27f1a4272badd98d960b36ed882154c",
-    "7257c4887a87718f779219cf12f9a600"
+    "7257c4887a87718f779219cf12f9a600",
+    "94f2cd3c1ea2be022bfc35788940cde0"
   ],
   "style_history": [
     "Hard News Lead",
@@ -112,7 +113,8 @@
     "Profile Beat",
     "Trend Take",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Profile Beat"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -138,6 +140,7 @@
     "policy_gap|anti-SLAPP|Profile Beat",
     "myth_vs_fact|Dave Coulier|Trend Take",
     "accountability|Deadliest Catch|Hard News Lead",
-    "winners_losers|Is God Is|Explainer"
+    "winners_losers|Is God Is|Explainer",
+    "myth_vs_fact|Outlander|Profile Beat"
   ]
 }
