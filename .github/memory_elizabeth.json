@@ -92,7 +92,8 @@
     "f3aca0597523d77d8ba24af53a4c2057",
     "c89deb02ae797c3915b024c71469c71b",
     "7ea810b6e7482b9841fbf0c2384461b8",
-    "d6146edfb2b7e2c3053002dd4e97f954"
+    "d6146edfb2b7e2c3053002dd4e97f954",
+    "cc2cddaaeed8e40ca28117e985c50516"
   ],
   "style_history": [
     "Africa Angle",
@@ -104,7 +105,8 @@
     "Critical Take",
     "Explainer",
     "Africa Angle",
-    "Backgrounder"
+    "Backgrounder",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -115,6 +117,7 @@
     "money_follow|eCitizen|Critical Take",
     "money_follow|Safaricom|Explainer",
     "accountability|M-Pesa|Africa Angle",
-    "policy_gap|KRA|Backgrounder"
+    "policy_gap|KRA|Backgrounder",
+    "timeline_shift|data center|Hard News Lead"
   ]
 }
