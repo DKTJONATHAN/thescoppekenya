@@ -1,16 +1,20 @@
 ---
 title: "Microsoft and G42 Data Center Project Stalls Over Power Capacity"
 slug: "microsoft-g42-data-center-project-stalls-kenya"
-description: "The ambitious one billion dollar data center project in Kenya faces collapse as the national grid struggles to meet the massive energy requirements."
+description: "Microsoft and G42 Data Center Project Stalls Over Power Capacity: The ambitious one billion dollar data center project in Kenya faces collapse as the national"
+excerpt: "The Watt Gap: Why Kenya’s Tech Ambitions Outpaced Its Power Grid Microsoft and G42 have indefinitely halted their $1 billion data center pro"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/WvdPz6kk/b310f8a78940.webp"
 category: "Technology"
 tags: ["kenya news", "data center", "energy crisis", "william ruto", "tech investment", "kenya power"]
+canonical: "https://zandani.co.ke/article/microsoft-g42-data-center-project-stalls-kenya"
 date: "2026-05-08T11:48:52Z"
 dateModified: "2026-05-08T11:48:52Z"
+focusKeyword: "Microsoft and G42 Data Center Project Stalls Over Power Capacity"
 schema: "NewsArticle"
 ---
+
+Microsoft and G42 Data Center Project Stalls Over Power Capacity is central to this update for Kenyan readers.
 
 ## The Watt Gap: Why Kenya’s Tech Ambitions Outpaced Its Power Grid
 
@@ -33,3 +37,18 @@ The stall of the Microsoft and G42 facility underscores the infrastructure-first
 ### What to Watch Next
 
 The government is expected to release a revised Integrated National Energy Plan by the fourth quarter of 2026. This policy update will likely shift the focus from broad 10,000MW expansion goals to specific, localized energy zones designed to support industrial data hubs. Developers and investors will look for clear timelines on transmission line upgrades and the integration of private power purchase agreements. Until the energy grid reaches a higher stability threshold, the next major announcement will likely involve smaller, modular data centers rather than the hyperscale installations originally promised.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
