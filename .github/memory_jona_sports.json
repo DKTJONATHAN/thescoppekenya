@@ -72,7 +72,8 @@
     "cdc004cb3fe420b2868b4950240c6e0a",
     "be7cab8eeddc152647f009cb85d9bb31",
     "0f6219d5055916f1251e6163619e4459",
-    "56ec88a4d8257a4d0c8d6c8b525865b9"
+    "56ec88a4d8257a4d0c8d6c8b525865b9",
+    "7b8cc5af9122df8f64806f288a294821"
   ],
   "style_history": [
     "Match Report",
@@ -101,7 +102,8 @@
     "Cynical Pundit",
     "Stat Story",
     "Tactical Take",
-    "Match Report"
+    "Match Report",
+    "Cynical Pundit"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -128,6 +130,7 @@
     "accountability|Football Management|Cynical Pundit",
     "money_follow|Crystal Palace|Stat Story",
     "policy_gap|Premier League|Tactical Take",
-    "winners_losers|AFC Bournemouth|Match Report"
+    "winners_losers|AFC Bournemouth|Match Report",
+    "money_follow|Manchester United|Cynical Pundit"
   ]
 }
