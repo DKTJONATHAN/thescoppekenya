@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [KRA Announces iTax Maintenance and Clarifies Mobile Money Tracking](https://zandani.co.ke/article/kra-itax-maintenance-mobile-money-monitoring-clarification) - The Kenya Revenue Authority has scheduled a four-hour iTax system update on May 10. Officials also clarified that monitoring excludes personal transfers.
 - [Creative kit designs for African football teams ahead of World Cup](https://zandani.co.ke/article/creative-kit-designs-for-african-football-teams) - Creative kit designs for African football teams ahead of World Cu: Explore how cultural symbols and national identity influence new football kit concepts for
 - [Diageo Launches World Class Bartending Competition in Nigeria](https://zandani.co.ke/article/diageo-launches-world-class-bartending-competition-in-nigeria) - Diageo Launches World Class Bartending Competition in Nigeria: Diageo has opened entries for the World Class bartending competition in Nigeria to find top
 - [Rotimi of Africa faces backlash over deleted post about Cartoon Comedian](https://zandani.co.ke/article/rotimi-of-africa-backlash-cartoon-comedian-post) - Rotimi of Africa draws public criticism after sharing and deleting a video of ex-partner Cartoon Comedian alongside comments about her career deals.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [TSC Launches Wajibika Award to Recognize High Performing Educators](https://zandani.co.ke/article/tsc-launches-wajibika-award-for-high-performing-educators) - TSC Launches Wajibika Award to Recognize High Performing Educator: The Teachers Service Commission introduces the Wajibika Award to honor educators and schools
 - [Wahu Kagwi credits successful marriage to Nameless rejecting roles](https://zandani.co.ke/article/wahu-kagwi-credits-successful-marriage-to-nameless-rejecting-roles) - Wahu Kagwi credits successful marriage to Nameless rejecting role: Wahu Kagwi explains how her 21-year marriage to Nameless thrived because he did not pressure
 - [Why Kenyan Media Must Prioritize Accountability Over Peace Narratives](https://zandani.co.ke/article/kenyan-media-accountability-peace-narratives) - Why Kenyan Media Must Prioritize Accountability Over Peace Narrat: Journalism stakeholders in Kenya are debating whether the shift toward peace-focused
-- [Kenya Increases Border Surveillance Following Hantavirus Outbreak](https://zandani.co.ke/article/kenya-increases-border-surveillance-following-hantavirus-outbreak) - Kenya Increases Border Surveillance Following Hantavirus Outbreak: The Ministry of Health has enhanced screening at ports and airports after a hantavirus
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
