@@ -7,7 +7,10 @@ const OUTPUT_FILE = path.join(process.cwd(), 'public/posts-manifest.json');
 function extractFrontmatter(content) {
   const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
   const match = content.match(frontmatterRegex);
-  if (!match) return { data: {}, content };
+
+  // BUG FIX 1: Early return was using key 'content' but caller destructures 'bodyContent'
+  // Unified to always return 'bodyContent'
+  if (!match) return { data: {}, bodyContent: content };
 
   const yamlContent = match[1];
   const bodyContent = match[2];
@@ -19,22 +22,27 @@ function extractFrontmatter(content) {
     if (colonIndex === -1) continue;
     const key = line.slice(0, colonIndex).trim();
     let value = line.slice(colonIndex + 1).trim();
+
     if (value.startsWith('[') && value.endsWith(']')) {
-       value = value.slice(1, -1).split(',').map(item => item.trim().replace(/^["']|["']$/g, ''));
-    } else if (value === 'true') value = true;
-    else if (value === 'false') value = false;
-    else if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+      value = value.slice(1, -1).split(',').map(item => item.trim().replace(/^["']|["']$/g, '')).filter(Boolean);
+    } else if (value === 'true') {
+      value = true;
+    } else if (value === 'false') {
+      value = false;
+    } else if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
       value = value.slice(1, -1);
     }
+
     data[key] = value;
   }
+
   return { data, bodyContent };
 }
 
 function calculateReadTime(content) {
   const wordsPerMinute = 200;
-  const wordCount = content.split(/\s+/).length;
-  return Math.ceil(wordCount / wordsPerMinute);
+  const wordCount = (content || '').split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.ceil(wordCount / wordsPerMinute));
 }
 
 function stripMarkdown(text) {
@@ -54,32 +62,60 @@ function truncateSnippet(text, maxLength = 155) {
   if (cleaned.length <= maxLength) return cleaned;
 
   const sliced = cleaned.slice(0, maxLength + 1);
-  const lastSentence = Math.max(sliced.lastIndexOf('. '), sliced.lastIndexOf('! '), sliced.lastIndexOf('? '));
+  const lastSentence = Math.max(
+    sliced.lastIndexOf('. '),
+    sliced.lastIndexOf('! '),
+    sliced.lastIndexOf('? ')
+  );
   if (lastSentence >= 90) {
     return sliced.slice(0, lastSentence + 1).trim();
   }
-
   const lastSpace = sliced.lastIndexOf(' ');
   return `${sliced.slice(0, lastSpace > 80 ? lastSpace : maxLength).trim()}...`;
 }
 
 function buildSnippet(data, bodyContent) {
-  const explicit = [data.description, data.excerpt].find(value => typeof value === 'string' && value.trim());
+  const explicit = [data.description, data.excerpt].find(
+    value => typeof value === 'string' && value.trim()
+  );
   if (explicit) return truncateSnippet(explicit);
 
-  const paragraphs = bodyContent
+  const paragraphs = (bodyContent || '')
     .split(/\n\s*\n/)
-    .map(paragraph => stripMarkdown(paragraph))
-    .filter(paragraph => paragraph && !paragraph.startsWith('##'));
+    .map(p => stripMarkdown(p))
+    .filter(p => p && !p.startsWith('##'));
 
-  return truncateSnippet(paragraphs[0] || bodyContent);
+  return truncateSnippet(paragraphs[0] || bodyContent || '');
+}
+
+// BUG FIX 4: Safe date parser for sort â€” NaN-safe, same logic as markdowns.ts getSafeTime
+function getSafeTime(dateStr) {
+  if (!dateStr) return 0;
+  let time = new Date(dateStr).getTime();
+  if (!isNaN(time)) return time;
+  time = new Date(String(dateStr).replace(/-/g, '/').replace('T', ' ')).getTime();
+  return isNaN(time) ? 0 : time;
+}
+
+if (!fs.existsSync(POSTS_DIR)) {
+  console.error(`Posts directory not found: ${POSTS_DIR}`);
+  process.exit(1);
 }
 
 const files = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith('.md'));
+
+if (files.length === 0) {
+  console.warn('No markdown files found in content/posts/');
+  fs.writeFileSync(OUTPUT_FILE, JSON.stringify([]));
+  process.exit(0);
+}
+
 const manifest = files.map(file => {
   const content = fs.readFileSync(path.join(POSTS_DIR, file), 'utf-8');
   const { data, bodyContent } = extractFrontmatter(content);
-  
+
+  // BUG FIX 2: featured field was missing â€” getFeaturedPosts() always returned []
+  // BUG FIX 3: authorImage field was missing from manifest output
   return {
     title: data.title || 'Untitled',
     slug: data.slug || file.replace('.md', ''),
@@ -87,17 +123,19 @@ const manifest = files.map(file => {
     date: data.date || new Date().toISOString(),
     category: data.category || 'News',
     author: data.author || 'Za Ndani',
+    authorImage: data.authorImage || data.author_image || '',
     excerpt: buildSnippet(data, bodyContent),
     description: buildSnippet(data, bodyContent),
     image: data.image || '/placeholder.svg',
-    tags: data.tags || [],
-    readTime: calculateReadTime(bodyContent)
-    ,
+    tags: Array.isArray(data.tags) ? data.tags : (data.tags ? [data.tags] : []),
+    readTime: calculateReadTime(bodyContent),
+    featured: data.featured === true || data.featured === 'true',
     dateModified: data.dateModified || data.updated || data.modified || data.lastmod || data.date || new Date().toISOString(),
-    focusKeyword: data.focusKeyword || '',
-    wordCount: stripMarkdown(bodyContent).split(/\s+/).filter(Boolean).length
+    focusKeyword: data.focusKeyword || data.focus_keyword || '',
+    wordCount: stripMarkdown(bodyContent).split(/\s+/).filter(Boolean).length,
   };
-}).sort((a, b) => new Date(b.date) - new Date(a.date));
+// BUG FIX 4: Use NaN-safe getSafeTime instead of raw new Date() subtraction
+}).sort((a, b) => getSafeTime(b.date) - getSafeTime(a.date));
 
-fs.writeFileSync(OUTPUT_FILE, JSON.stringify(manifest));
-console.log(`Processed ${manifest.length} posts into manifest.`);
+fs.writeFileSync(OUTPUT_FILE, JSON.stringify(manifest, null, 2));
+console.log(`âœ… Processed ${manifest.length} posts into manifest.`);
