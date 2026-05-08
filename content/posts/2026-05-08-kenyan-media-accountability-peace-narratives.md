@@ -1,16 +1,20 @@
 ---
 title: "Why Kenyan Media Must Prioritize Accountability Over Peace Narratives"
 slug: "kenyan-media-accountability-peace-narratives"
-description: "Journalism stakeholders in Kenya are debating whether the shift toward peace-focused reporting undermines the media role in holding power to account."
+description: "Why Kenyan Media Must Prioritize Accountability Over Peace Narrat: Journalism stakeholders in Kenya are debating whether the shift toward peace-focused"
+excerpt: "The Peace Trap: How Selective Silence Erodes Kenyan Democracy Kenya’s media landscape has exchanged its watchdog mandate for the role of a s"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/SXx7pdpj/0b664a3963ec.png"
 category: "Opinions"
 tags: ["kenya", "media ethics", "press freedom", "kenyan democracy", "journalism", "elections"]
+canonical: "https://zandani.co.ke/article/kenyan-media-accountability-peace-narratives"
 date: "2026-05-08T14:18:00Z"
 dateModified: "2026-05-08T14:18:00Z"
+focusKeyword: "Why Kenyan Media Must Prioritize Accountability Over Peace Narrat"
 schema: "NewsArticle"
 ---
+
+Why Kenyan Media Must Prioritize Accountability Over Peace Narrat is central to this update for Kenyan readers.
 
 ## The Peace Trap: How Selective Silence Erodes Kenyan Democracy
 
@@ -39,3 +43,18 @@ The next political cycle demands a press that embraces discomfort. In an age whe
 Observe the shift in coverage as upcoming policy decisions are unveiled. Note whether journalists interrogate official statements with follow-up questions, or if they simply transcribe the talking points. Za Ndani for measuring the health of our media should not be how successfully they keep the country quiet, but how many uncomfortable truths they force into the public eye.
 
 True peace is not the mere absence of tension. It is the presence of justice, a state that is only reachable through the relentless, messy, and necessary work of uncovering the truth. If we continue to value the illusion of order over the reality of accountability, we are not protecting our democracy. We are simply presiding over its quiet, orderly funeral.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
