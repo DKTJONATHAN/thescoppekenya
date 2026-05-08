@@ -1,16 +1,20 @@
 ---
 title: "Faith Odhiambo Criticizes Treasury Over Finance Bill Tax Measures"
 slug: "faith-odhiambo-critiques-treasury-finance-bill-proposals"
-description: "Former LSK President Faith Odhiambo has faulted the Treasury for failing to include promised PAYE relief and raising taxes on mobile phones and rentals."
+description: "Faith Odhiambo Criticizes Treasury Over Finance Bill Tax Measures: Former LSK President Faith Odhiambo has faulted the Treasury for failing to include promised"
+excerpt: "The Broken Promise Audit: Tracking the Ksh 30,000 PAYE Threshold Ghost The National Treasury promised a lifeline for the struggling Kenyan w"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/cKWsXmqH/2b69c6e0903f.jpg"
 category: "News"
 tags: ["finance bill 2026", "john mbadi", "faith odhiambo", "kenya taxation", "national treasury", "paye relief", "kenya news"]
+canonical: "https://zandani.co.ke/article/faith-odhiambo-critiques-treasury-finance-bill-proposals"
 date: "2026-05-08T08:01:00Z"
 dateModified: "2026-05-08T08:01:00Z"
+focusKeyword: "Faith Odhiambo Criticizes Treasury Over Finance Bill Tax Measures"
 schema: "NewsArticle"
 ---
+
+Faith Odhiambo Criticizes Treasury Over Finance Bill Tax Measures is central to this update for Kenyan readers.
 
 ## The Broken Promise Audit: Tracking the Ksh 30,000 PAYE Threshold Ghost
 
@@ -39,3 +43,18 @@ The cost of living crisis is at a breaking point. With salaries disappearing alm
 Parliamentary debates on the Finance Bill 2026 will serve as the final test of accountability. Will the legislature demand the insertion of the promised relief, or will the Treasury continue to push for the 10 percent rental tax and the 25 percent excise duty on mobile devices unchallenged? Public attention must now shift from what officials say in briefings to the specific amendments proposed on the floor of the House.
 
 If the promised threshold remains absent when the bill moves toward its final vote, what does that confirm about the integrity of the current fiscal policy?
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
