@@ -129,7 +129,8 @@
     "9d0a5d8f5955bab7b73082eb2d1fb7e4",
     "f64ccf448862052eb11f044d370509c7",
     "ac83fefefdc36fac0bc96c141c554824",
-    "b6b29d090466ae4d075a1dea9debe8ac"
+    "b6b29d090466ae4d075a1dea9debe8ac",
+    "adb6ec91ae0cbc1eaf005964affe4482"
   ],
   "style_history": [
     "Hard News Lead",
@@ -144,7 +145,8 @@
     "Reaction Round-up",
     "Trend Take",
     "Explainer",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -158,6 +160,7 @@
     "timeline_shift|FIFA World Cup|Reaction Round-up",
     "myth_vs_fact|Adekunle Gold|Trend Take",
     "impact_on_citizens|Adekunle Gold|Explainer",
-    "money_follow|Nigerian music|Profile Beat"
+    "money_follow|Nigerian music|Profile Beat",
+    "money_follow|World Class Nigeria|Reaction Round-up"
   ]
 }
