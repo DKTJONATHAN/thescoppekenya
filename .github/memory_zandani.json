@@ -151,7 +151,8 @@
     "1bc95d5b9dd8e81e862489a395cc74f6",
     "76f2a6d13638998e526aaac9fae418da",
     "ca42da77acc9ab769f9784f33fecc052",
-    "81370debe89b531b56873b500550f2fa"
+    "81370debe89b531b56873b500550f2fa",
+    "6937883aae7ae73d8db02228cb45b53b"
   ],
   "style_history": [
     "celeb_news",
@@ -170,7 +171,8 @@
     "Receipts Piece",
     "Profile Beat",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -184,6 +186,7 @@
     "money_follow|comedy|Receipts Piece",
     "impact_on_citizens|King Kaka|Profile Beat",
     "money_follow|Raymond Kahuma|Trend Take",
-    "myth_vs_fact|Kenyan comedy|Hard News Lead"
+    "myth_vs_fact|Kenyan comedy|Hard News Lead",
+    "impact_on_citizens|Meta|Reaction Round-up"
   ]
 }
