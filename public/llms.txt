@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Tribunal cuts Nairobi County tax bill from Ksh8.3 billion](https://zandani.co.ke/article/tax-appeals-tribunal-cuts-nairobi-county-tax-bill) - The Tax Appeals Tribunal has slashed a massive tax demand against Nairobi County by the KRA, reducing the final liability to just over 130 million shillings.
 - [Kenyan skater Kevin Kiarie clears debts using public donations](https://zandani.co.ke/article/kenyan-skater-kevin-kiarie-clears-debts-using-public-donations) - Gold medalist Kevin Kiarie received Ksh 80,000 from Kenyans to clear sporting debts after returning from the African Championships in Egypt.
 - [Skip Bayless and Stephen A. Smith Reunite on First Take](https://zandani.co.ke/article/skip-bayless-stephen-a-smith-reunite-first-take) - Skip Bayless and Stephen A. Smith Reunite on First Take: Sports media icons Skip Bayless and Stephen A. Smith reunited on ESPN for a spirited debate,
 - [Bruno Fernandes Named Football Writers Association Player of Year](https://zandani.co.ke/article/bruno-fernandes-named-football-writers-association-player-of-year) - Bruno Fernandes Named Football Writers Association Player of Year: Manchester United midfielder Bruno Fernandes wins the FWA Footballer of the Year award
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Kenya Leverages Cultural Diplomacy to Boost Global MICE Tourism](https://zandani.co.ke/article/kenya-leverages-cultural-diplomacy-to-boost-global-mice-tourism) - Kenya Leverages Cultural Diplomacy to Boost Global MICE Tourism: Kenya is hosting the Africa Forward Summit and concert to strengthen diplomatic ties and
 - [Diageo Launches World Class Bartending Competition in Nigeria](https://zandani.co.ke/article/diageo-launches-world-class-bartending-competition-in-nigeria) - Diageo Launches World Class Bartending Competition in Nigeria: Diageo has opened entries for the World Class bartending competition in Nigeria to find top
 - [Rotimi of Africa faces backlash over deleted post about Cartoon Comedian](https://zandani.co.ke/article/rotimi-of-africa-backlash-cartoon-comedian-post) - Rotimi of Africa faces backlash over deleted post about Cartoon C: Rotimi of Africa draws public criticism after sharing and deleting a video of ex-partner
-- [Caitriona Balfe Details Emotional Outlander Series Finale](https://zandani.co.ke/article/caitriona-balfe-details-emotional-outlander-series-finale) - Caitriona Balfe Details Emotional Outlander Series Finale: Caitriona Balfe shares insights into the emotional final scenes of the long-running historical drama
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
