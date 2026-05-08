@@ -171,7 +171,8 @@
     "356a27209ba32584b138dc2fbe4b13ec",
     "99c73560f16a1cbbcc93c1aab0120395",
     "37d34db5f3b4a9c118826ec53d35b3f4",
-    "455d2edc961e48aa072c40a8590aec5d"
+    "455d2edc961e48aa072c40a8590aec5d",
+    "bd8d438fb5178c498ffbfc898c5371f5"
   ],
   "style_history": [
     "Trend Take",
@@ -185,7 +186,8 @@
     "Hard News Lead",
     "Profile Beat",
     "Reaction Round-up",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Hard News Lead"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -197,6 +199,7 @@
     "winners_losers|Jubilee Party|Hard News Lead",
     "next_48_hours|weather advisory|Profile Beat",
     "impact_on_citizens|Khalif Kairo|Reaction Round-up",
-    "accountability|Hantavirus|Receipts Piece"
+    "accountability|Hantavirus|Receipts Piece",
+    "accountability|influencer|Hard News Lead"
   ]
 }
