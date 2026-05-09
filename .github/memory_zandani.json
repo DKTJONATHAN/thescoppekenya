@@ -166,10 +166,10 @@
     "b8e9e32dc5d4143cf3a818090991ba8b",
     "c670af3ff0774d19fb0a3cc13fe95cd2",
     "a727b14b56aea8bb4b3f114875f98652",
-    "0b5e174cf3ef4fadda08bc612fc9f91f"
+    "0b5e174cf3ef4fadda08bc612fc9f91f",
+    "bbdd830b75ae661c98c24c9ec8e545ee"
   ],
   "style_history": [
-    "explainer",
     "explainer",
     "timeline",
     "Hard News Lead",
@@ -198,7 +198,8 @@
     "Receipts Piece",
     "Profile Beat",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Receipts Piece"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -227,6 +228,7 @@
     "myth_vs_fact|Njugush|Receipts Piece",
     "policy_gap|Karen Nyamu|Profile Beat",
     "policy_gap|NACADA|Hard News Lead",
-    "accountability|Parliamentary Service Commission|Reaction Round-up"
+    "accountability|Parliamentary Service Commission|Reaction Round-up",
+    "myth_vs_fact|dating culture|Receipts Piece"
   ]
 }
