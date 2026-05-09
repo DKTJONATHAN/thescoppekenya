@@ -95,10 +95,10 @@
     "93ec78225c352a4e640a39137111d040",
     "a59cf28c6daf0bc61a94bc658a62cabd",
     "54537d01d5a9ab3ee568df7eee9d21b4",
-    "08558f184d410f79a13ca2e41c5b7d88"
+    "08558f184d410f79a13ca2e41c5b7d88",
+    "9a18efb34770454f7d2e73441a180671"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Trend Take",
     "Reaction Round-up",
@@ -127,7 +127,8 @@
     "Reaction Round-up",
     "Explainer",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -164,6 +165,7 @@
     "timeline_shift|The Fifth Element|Reaction Round-up",
     "impact_on_citizens|documentary|Explainer",
     "timeline_shift|Harry Potter|Trend Take",
-    "accountability|Nick Pasqual|Profile Beat"
+    "accountability|Nick Pasqual|Profile Beat",
+    "policy_gap|Tatum O'Neal|Hard News Lead"
   ]
 }
