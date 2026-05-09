@@ -90,10 +90,10 @@
     "de6b6ae76905e5fa468b0a1ee693bab8",
     "08c5ad39f4c5115e7d338aff4ade2c3c",
     "388e0939ec8f035f12017dfa9ab4ec28",
-    "baba9c5ea94fe474f5ac496c4650e9e8"
+    "baba9c5ea94fe474f5ac496c4650e9e8",
+    "82e13f9ea0451e99bb9043b75fd5bd16"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Profile Beat",
     "Explainer",
     "Trend Take",
@@ -122,7 +122,8 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -154,6 +155,7 @@
     "next_48_hours|Entertainment Weekly|Hard News Lead",
     "money_follow|divorce|Reaction Round-up",
     "timeline_shift|Modern Family|Explainer",
-    "accountability|Maury Povich|Profile Beat"
+    "accountability|Maury Povich|Profile Beat",
+    "accountability|data privacy|Hard News Lead"
   ]
 }
