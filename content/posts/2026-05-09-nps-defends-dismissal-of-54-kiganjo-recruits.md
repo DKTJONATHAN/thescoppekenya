@@ -1,16 +1,20 @@
 ---
 title: "National Police Service defends dismissal of 54 Kiganjo recruits"
 slug: "nps-defends-dismissal-of-54-kiganjo-recruits"
-description: "The National Police Service faces political backlash after dismissing 54 recruits from Kiganjo, including 18 women for pregnancy and others for forgery."
+description: "National Police Service defends dismissal of 54 Kiganjo recruits: The National Police Service faces political backlash after dismissing 54 recruits from"
+excerpt: "The Biology Trap: Why Kiganjo’s 'Medical' Exit Strategy Targets Female Careers The National Police Service claims its training protocols are"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/k6Vsy8MS/df9d811faaa9.jpg"
 category: "News"
 tags: ["national police service", "kiganjo", "kenyan news", "police recruitment", "millie odhiambo", "gathoni wamuchomba"]
+canonical: "https://zandani.co.ke/article/nps-defends-dismissal-of-54-kiganjo-recruits"
 date: "2026-05-09T16:12:42Z"
 dateModified: "2026-05-09T16:12:42Z"
+focusKeyword: "National Police Service defends dismissal of 54 Kiganjo recruits"
 schema: "NewsArticle"
 ---
+
+National Police Service defends dismissal of 54 Kiganjo recruits is central to this update for Kenyan readers.
 
 ## The Biology Trap: Why Kiganjo’s 'Medical' Exit Strategy Targets Female Careers
 
@@ -41,3 +45,18 @@ The Kiganjo dismissals highlight a widening gap between constitutional human rig
 Expect this debate to migrate from the halls of the police college to the floor of Parliament. With MPs like Odhiambo and Wamuchomba demanding policy modernization, the pressure will mount for a judicial review of whether the NPS training bylaws are legally compliant with current constitutional mandates. 
 
 If the state refuses to pivot, how can the National Police Service claim to protect the rights of all Kenyans when it systematically discards those who do not fit its narrow definition of a recruit?
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
