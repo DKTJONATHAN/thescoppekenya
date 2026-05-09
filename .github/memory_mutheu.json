@@ -96,10 +96,10 @@
     "a59cf28c6daf0bc61a94bc658a62cabd",
     "54537d01d5a9ab3ee568df7eee9d21b4",
     "08558f184d410f79a13ca2e41c5b7d88",
-    "9a18efb34770454f7d2e73441a180671"
+    "9a18efb34770454f7d2e73441a180671",
+    "e4c7945a57c146e63424d7a1765c905e"
   ],
   "style_history": [
-    "Explainer",
     "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
@@ -128,7 +128,8 @@
     "Explainer",
     "Trend Take",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -166,6 +167,7 @@
     "impact_on_citizens|documentary|Explainer",
     "timeline_shift|Harry Potter|Trend Take",
     "accountability|Nick Pasqual|Profile Beat",
-    "policy_gap|Tatum O'Neal|Hard News Lead"
+    "policy_gap|Tatum O'Neal|Hard News Lead",
+    "impact_on_citizens|Kevin Bacon|Reaction Round-up"
   ]
 }
