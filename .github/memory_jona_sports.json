@@ -78,10 +78,10 @@
     "7709eb7ee411c4d28fb5e5218ca32f6b",
     "4c088b1e77e50439d3c5114ef0706dfd",
     "c49b93a2f8330220816a07acbe9fb083",
-    "32445f9f55fe6e72b53941c2e3feaf38"
+    "32445f9f55fe6e72b53941c2e3feaf38",
+    "44ae4488e6296c451970094136a6afa8"
   ],
   "style_history": [
-    "Stat Story",
     "Tactical Take",
     "Cynical Pundit",
     "Match Report",
@@ -110,7 +110,8 @@
     "Player Profile Beat",
     "Tactical Take",
     "Match Report",
-    "Stat Story"
+    "Stat Story",
+    "Cynical Pundit"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -143,6 +144,7 @@
     "money_follow|Bruno Fernandes|Player Profile Beat",
     "impact_on_citizens|Premier League|Tactical Take",
     "timeline_shift|Premier League|Match Report",
-    "myth_vs_fact|Premier League|Stat Story"
+    "myth_vs_fact|Premier League|Stat Story",
+    "myth_vs_fact|Women's Super League|Cynical Pundit"
   ]
 }
