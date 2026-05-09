@@ -88,10 +88,10 @@
     "94f2cd3c1ea2be022bfc35788940cde0",
     "518237c3df3626deb29c11436fc87184",
     "de6b6ae76905e5fa468b0a1ee693bab8",
-    "08c5ad39f4c5115e7d338aff4ade2c3c"
+    "08c5ad39f4c5115e7d338aff4ade2c3c",
+    "388e0939ec8f035f12017dfa9ab4ec28"
   ],
   "style_history": [
-    "Hard News Lead",
     "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
@@ -120,7 +120,8 @@
     "Profile Beat",
     "Trend Take",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Explainer"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -150,6 +151,7 @@
     "myth_vs_fact|Outlander|Profile Beat",
     "money_follow|sports media|Trend Take",
     "next_48_hours|Entertainment Weekly|Hard News Lead",
-    "money_follow|divorce|Reaction Round-up"
+    "money_follow|divorce|Reaction Round-up",
+    "timeline_shift|Modern Family|Explainer"
   ]
 }
