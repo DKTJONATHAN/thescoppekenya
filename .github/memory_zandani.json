@@ -158,7 +158,8 @@
     "2431745d42627dbf7c10ba476193c1ae",
     "e937cb7ea436a8b3b22eb21d67c1ff1c",
     "4f35647554a2ecc8b3e4af2576e5d760",
-    "c7791c6d8d50f97619311b7a18752c92"
+    "c7791c6d8d50f97619311b7a18752c92",
+    "6649d38afcff86db6371281b8862ca08"
   ],
   "style_history": [
     "celeb_news",
@@ -184,7 +185,8 @@
     "Receipts Piece",
     "Reaction Round-up",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Receipts Piece"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -205,6 +207,7 @@
     "money_follow|football|Receipts Piece",
     "accountability|Skating|Reaction Round-up",
     "policy_gap|Miss P|Hard News Lead",
-    "money_follow|Instagram|Profile Beat"
+    "money_follow|Instagram|Profile Beat",
+    "accountability|Marion Naipei|Receipts Piece"
   ]
 }
