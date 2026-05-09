@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [National Police Service defends dismissal of 54 Kiganjo recruits](https://zandani.co.ke/article/nps-defends-dismissal-of-54-kiganjo-recruits) - The National Police Service faces political backlash after dismissing 54 recruits from Kiganjo, including 18 women for pregnancy and others for forgery.
 - [Scottish Premiership Title Race Tightens as League Battles Intensify](https://zandani.co.ke/article/scottish-premiership-title-race-tightens) - The Scottish Premiership title race narrows to a two-horse contest as clubs fight for European qualification spots and survival in a critical stage.
 - [Kevin McKidd Expresses Interest in HBO Harry Potter Series Role](https://zandani.co.ke/article/kevin-mckidd-expresses-interest-in-hbo-harry-potter-series) - Grey's Anatomy star Kevin McKidd has revealed his interest in joining the new HBO Harry Potter series following widespread fan speculation about his casting.
 - [Understanding the History and Symbolism of Catholic Clergy Vestments](https://zandani.co.ke/article/history-and-symbolism-of-catholic-clergy-vestments) - Understanding the History and Symbolism of Catholic Clergy Vestme: Explore the historical origins and religious meanings behind traditional Catholic vestments
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [New Netflix documentary explores Martin Short and Nancy Dolman marriage](https://zandani.co.ke/article/martin-short-nancy-dolman-documentary-netflix) - New Netflix documentary explores Martin Short and Nancy Dolman ma: A new Netflix documentary offers an intimate look at the life and marriage of actor Martin
 - [Two Police Officers Arrested After Shooting at Eldoret Nightclub](https://zandani.co.ke/article/two-police-officers-arrested-after-shooting-at-eldoret-nightclub) - Two Police Officers Arrested After Shooting at Eldoret Nightclub: Two officers were arrested in Eldoret after a shooting at Baniyas Night Club. They were
 - [NTSA records disprove Njugush asset transfer rumors after split](https://zandani.co.ke/article/njugush-celestine-ndinda-ntsa-asset-records) - NTSA records disprove Njugush asset transfer rumors after split: Public vehicle records confirm that comedian Njugush and Celestine Ndinda still jointly own
-- [Edinburgh City faces Brora Rangers in battle to avoid relegation](https://zandani.co.ke/article/edinburgh-city-faces-brora-rangers-relegation-battle) - Edinburgh City faces Brora Rangers in battle to avoid relegation: Edinburgh City faces Brora Rangers in a playoff match to retain their league status after
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
