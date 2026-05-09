@@ -46,7 +46,8 @@
     "670d2b21db3f618912f7cd9dc758e1b5",
     "f970390f6f115418b5e6c2895223de1f",
     "13c64bdd05c8205976b4a24a6f17e8bf",
-    "2cad9fa5e955c745d169a9ff8155219e"
+    "2cad9fa5e955c745d169a9ff8155219e",
+    "c1d7e5f516ecf1a788281a4f35f6648f"
   ],
   "style_history": [
     "Letter Form",
@@ -77,7 +78,8 @@
     "Counterpoint",
     "Personal Reflection",
     "Letter Form",
-    "Historical Lens"
+    "Historical Lens",
+    "Counterpoint"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -108,6 +110,7 @@
     "money_follow|Senate of Kenya|Counterpoint",
     "impact_on_citizens|press freedom|Personal Reflection",
     "accountability|Kenya politics|Letter Form",
-    "timeline_shift|healthcare commercialization|Historical Lens"
+    "timeline_shift|healthcare commercialization|Historical Lens",
+    "policy_gap|sovereignty|Counterpoint"
   ]
 }
