@@ -163,7 +163,8 @@
     "e62dbbc17f8d6904724da68bbd22f737",
     "dbad0b95c9e61f20f770c69d600731ad",
     "19a551076e0c4a40cf9b6f1d40092590",
-    "b8e9e32dc5d4143cf3a818090991ba8b"
+    "b8e9e32dc5d4143cf3a818090991ba8b",
+    "c670af3ff0774d19fb0a3cc13fe95cd2"
   ],
   "style_history": [
     "celeb_news",
@@ -194,7 +195,8 @@
     "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Profile Beat"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -220,6 +222,7 @@
     "timeline_shift|Nairobi politics|Trend Take",
     "policy_gap|Murugi Munyi|Hard News Lead",
     "winners_losers|Akoko Val|Reaction Round-up",
-    "myth_vs_fact|Njugush|Receipts Piece"
+    "myth_vs_fact|Njugush|Receipts Piece",
+    "policy_gap|Karen Nyamu|Profile Beat"
   ]
 }
