@@ -68,10 +68,10 @@
     "1c11c547d94139eda5636035111e617b",
     "5788086a7c27b523fb13a2c611f05c73",
     "fc496a772fe108a2e72c5165d1ef1693",
-    "16ec2d9b569198dbb9ee4de8df9edfc0"
+    "16ec2d9b569198dbb9ee4de8df9edfc0",
+    "c64c5338e34f2d721f24598c5e324e27"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction & Voices",
     "Explainer",
     "Context Backgrounder",
@@ -100,7 +100,8 @@
     "Context Backgrounder",
     "Explainer",
     "Power Accountability",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Context Backgrounder"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -139,6 +140,7 @@
     "accountability|police misconduct|Context Backgrounder",
     "myth_vs_fact|Catholic Church|Explainer",
     "policy_gap|National Police Service|Power Accountability",
-    "myth_vs_fact|Kenya politics|Reaction & Voices"
+    "myth_vs_fact|Kenya politics|Reaction & Voices",
+    "timeline_shift|Kenya Airways|Context Backgrounder"
   ]
 }
