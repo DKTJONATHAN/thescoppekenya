@@ -84,10 +84,10 @@
     "9e1dc478617da2a17143d50cacb93080",
     "3f77bfd5cb9fa52e7393bf9b493fcdbc",
     "96d03439ce946142bdaf9b423c7048fd",
-    "3f1b6406a2a2a76305d26421c75ff16a"
+    "3f1b6406a2a2a76305d26421c75ff16a",
+    "7b4a5c653df47e04cd50a8cdd67d2387"
   ],
   "style_history": [
-    "Cynical Pundit",
     "Match Report",
     "Stat Story",
     "Player Profile Beat",
@@ -116,7 +116,8 @@
     "Match Report",
     "Player Profile Beat",
     "Cynical Pundit",
-    "Stat Story"
+    "Stat Story",
+    "Tactical Take"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -155,6 +156,7 @@
     "winners_losers|Scottish Premiership|Match Report",
     "winners_losers|Premier League|Player Profile Beat",
     "accountability|Liverpool FC|Cynical Pundit",
-    "myth_vs_fact|Scottish Premiership|Stat Story"
+    "myth_vs_fact|Scottish Premiership|Stat Story",
+    "timeline_shift|Premier League|Tactical Take"
   ]
 }
