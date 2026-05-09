@@ -64,10 +64,10 @@
     "aa48a66d1b86e6931d8d478e051bb922",
     "4e9621cc6e01515ee62e2500437956d2",
     "a56edd1f698eb29045cdcb875e07d9ea",
-    "b1ba23f532c10ba1ca629a61d2c8a3b5"
+    "b1ba23f532c10ba1ca629a61d2c8a3b5",
+    "1c11c547d94139eda5636035111e617b"
   ],
   "style_history": [
-    "Hard News Lead",
     "Power Accountability",
     "Explainer",
     "Context Backgrounder",
@@ -96,7 +96,8 @@
     "Context Backgrounder",
     "Power Accountability",
     "Reaction & Voices",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Context Backgrounder"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -131,6 +132,7 @@
     "timeline_shift|NTSA|Context Backgrounder",
     "winners_losers|Finance Bill 2026|Power Accountability",
     "policy_gap|Education|Reaction & Voices",
-    "policy_gap|Mandera|Hard News Lead"
+    "policy_gap|Mandera|Hard News Lead",
+    "accountability|police misconduct|Context Backgrounder"
   ]
 }
