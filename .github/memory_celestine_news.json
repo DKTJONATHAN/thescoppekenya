@@ -59,10 +59,10 @@
     "0d9dca1c74f08cd694187a031959deb7",
     "9393385ace60f8ad503e1adb6071b4b3",
     "d96f7cfa4679cf4cbe56ea9428590fe7",
-    "f8388aede2938da79a159cd21d6b5919"
+    "f8388aede2938da79a159cd21d6b5919",
+    "a6fc4df23de09e57010b99f504232744"
   ],
   "style_history": [
-    "Hard News Lead",
     "Power Accountability",
     "Explainer",
     "Reaction & Voices",
@@ -91,7 +91,8 @@
     "Context Backgrounder",
     "Power Accountability",
     "Reaction & Voices",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -121,6 +122,7 @@
     "winners_losers|TSC|Context Backgrounder",
     "policy_gap|KRA|Power Accountability",
     "accountability|Kenya Revenue Authority|Reaction & Voices",
-    "next_48_hours|Kanini Kega|Hard News Lead"
+    "next_48_hours|Kanini Kega|Hard News Lead",
+    "money_follow|trade|Explainer"
   ]
 }
