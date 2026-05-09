@@ -131,7 +131,8 @@
     "ac83fefefdc36fac0bc96c141c554824",
     "b6b29d090466ae4d075a1dea9debe8ac",
     "adb6ec91ae0cbc1eaf005964affe4482",
-    "e64226d6a459e0353213de6384e2d803"
+    "e64226d6a459e0353213de6384e2d803",
+    "cede26dd6fe6e139157f050f2efa1fc1"
   ],
   "style_history": [
     "Hard News Lead",
@@ -148,7 +149,8 @@
     "Explainer",
     "Profile Beat",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Explainer"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -164,6 +166,7 @@
     "impact_on_citizens|Adekunle Gold|Explainer",
     "money_follow|Nigerian music|Profile Beat",
     "money_follow|World Class Nigeria|Reaction Round-up",
-    "policy_gap|Afrobeats|Trend Take"
+    "policy_gap|Afrobeats|Trend Take",
+    "next_48_hours|Heineken|Explainer"
   ]
 }
