@@ -47,10 +47,10 @@
     "f970390f6f115418b5e6c2895223de1f",
     "13c64bdd05c8205976b4a24a6f17e8bf",
     "2cad9fa5e955c745d169a9ff8155219e",
-    "c1d7e5f516ecf1a788281a4f35f6648f"
+    "c1d7e5f516ecf1a788281a4f35f6648f",
+    "59c483867413c1ac949f4b61ebab9972"
   ],
   "style_history": [
-    "Letter Form",
     "Personal Reflection",
     "Historical Lens",
     "Counterpoint",
@@ -79,7 +79,8 @@
     "Personal Reflection",
     "Letter Form",
     "Historical Lens",
-    "Counterpoint"
+    "Counterpoint",
+    "Personal Reflection"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -111,6 +112,7 @@
     "impact_on_citizens|press freedom|Personal Reflection",
     "accountability|Kenya politics|Letter Form",
     "timeline_shift|healthcare commercialization|Historical Lens",
-    "policy_gap|sovereignty|Counterpoint"
+    "policy_gap|sovereignty|Counterpoint",
+    "policy_gap|Judiciary|Personal Reflection"
   ]
 }
