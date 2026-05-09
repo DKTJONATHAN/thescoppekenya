@@ -79,10 +79,10 @@
     "4c088b1e77e50439d3c5114ef0706dfd",
     "c49b93a2f8330220816a07acbe9fb083",
     "32445f9f55fe6e72b53941c2e3feaf38",
-    "44ae4488e6296c451970094136a6afa8"
+    "44ae4488e6296c451970094136a6afa8",
+    "eddf143b6fc97ed3543b18449f294846"
   ],
   "style_history": [
-    "Tactical Take",
     "Cynical Pundit",
     "Match Report",
     "Stat Story",
@@ -111,7 +111,8 @@
     "Tactical Take",
     "Match Report",
     "Stat Story",
-    "Cynical Pundit"
+    "Cynical Pundit",
+    "Tactical Take"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -145,6 +146,7 @@
     "impact_on_citizens|Premier League|Tactical Take",
     "timeline_shift|Premier League|Match Report",
     "myth_vs_fact|Premier League|Stat Story",
-    "myth_vs_fact|Women's Super League|Cynical Pundit"
+    "myth_vs_fact|Women's Super League|Cynical Pundit",
+    "accountability|Scottish Premiership|Tactical Take"
   ]
 }
