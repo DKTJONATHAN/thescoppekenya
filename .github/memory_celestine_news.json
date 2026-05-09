@@ -62,10 +62,10 @@
     "f8388aede2938da79a159cd21d6b5919",
     "a6fc4df23de09e57010b99f504232744",
     "aa48a66d1b86e6931d8d478e051bb922",
-    "4e9621cc6e01515ee62e2500437956d2"
+    "4e9621cc6e01515ee62e2500437956d2",
+    "a56edd1f698eb29045cdcb875e07d9ea"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
     "Power Accountability",
@@ -94,7 +94,8 @@
     "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
-    "Power Accountability"
+    "Power Accountability",
+    "Reaction & Voices"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -127,6 +128,7 @@
     "next_48_hours|Kanini Kega|Hard News Lead",
     "money_follow|trade|Explainer",
     "timeline_shift|NTSA|Context Backgrounder",
-    "winners_losers|Finance Bill 2026|Power Accountability"
+    "winners_losers|Finance Bill 2026|Power Accountability",
+    "policy_gap|Education|Reaction & Voices"
   ]
 }
