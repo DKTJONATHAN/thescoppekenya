@@ -75,10 +75,10 @@
     "56ec88a4d8257a4d0c8d6c8b525865b9",
     "7b8cc5af9122df8f64806f288a294821",
     "bd14e058d7c90d33826d3dda4d09162d",
-    "7709eb7ee411c4d28fb5e5218ca32f6b"
+    "7709eb7ee411c4d28fb5e5218ca32f6b",
+    "4c088b1e77e50439d3c5114ef0706dfd"
   ],
   "style_history": [
-    "Match Report",
     "Cynical Pundit",
     "Player Profile Beat",
     "Stat Story",
@@ -107,7 +107,8 @@
     "Match Report",
     "Cynical Pundit",
     "Stat Story",
-    "Player Profile Beat"
+    "Player Profile Beat",
+    "Tactical Take"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -137,6 +138,7 @@
     "winners_losers|AFC Bournemouth|Match Report",
     "money_follow|Manchester United|Cynical Pundit",
     "money_follow|Championship play-offs|Stat Story",
-    "money_follow|Bruno Fernandes|Player Profile Beat"
+    "money_follow|Bruno Fernandes|Player Profile Beat",
+    "impact_on_citizens|Premier League|Tactical Take"
   ]
 }
