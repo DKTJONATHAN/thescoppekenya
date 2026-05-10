@@ -75,10 +75,10 @@
     "7b71b9626402e100bcf58bd94c3821bf",
     "a9485a2bfcb04244320190de05271090",
     "ef29e03545c282b96c1df1e16cf674de",
-    "5771019ab3540c5dea5e02b1ddf04278"
+    "5771019ab3540c5dea5e02b1ddf04278",
+    "bc4e9d507edd0054bf48961b716048f1"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Hard News Lead",
     "Reaction & Voices",
     "Power Accountability",
@@ -107,7 +107,8 @@
     "Reaction & Voices",
     "Context Backgrounder",
     "Explainer",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction & Voices"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -153,6 +154,7 @@
     "impact_on_citizens|National Treasury|Reaction & Voices",
     "myth_vs_fact|NYOTA project|Context Backgrounder",
     "myth_vs_fact|NGEC|Explainer",
-    "impact_on_citizens|ODM|Hard News Lead"
+    "impact_on_citizens|ODM|Hard News Lead",
+    "impact_on_citizens|NEMA|Reaction & Voices"
   ]
 }
