@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sun, 10 May 2026 03:23:12 GMT</pubDate>
+    <pubDate>Sun, 10 May 2026 04:33:32 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Comedian shifts from satire to sharing inspirational messages]]></title>
+      <link>https://zandani.co.ke/article/comedian-shifts-from-satire-to-sharing-inspirational-messages</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/comedian-shifts-from-satire-to-sharing-inspirational-messages</guid>
+      <pubDate>Sun, 10 May 2026 04:09:26 GMT</pubDate>
+      <dc:creator><![CDATA[Zed Mogaka]]></dc:creator>
+      <description><![CDATA[A prominent Kenyan comedian is shifting from political satire to inspirational messaging, offering hope as citizens face rising costs and uncertainty.]]></description>
+      
+      
+      <content:encoded><![CDATA[<p>A prominent Kenyan comedian is shifting from political satire to inspirational messaging, offering hope as citizens face rising costs and uncertainty.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[How Digital Influence and Career Demands Shape Kenyan Dating]]></title>
       <link>https://zandani.co.ke/article/digital-influence-career-demands-kenyan-dating-norms</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" type="image/jpeg" />
       <media:content url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" alt="The Queen&apos;s Shimmering Cage: Vera Sidika &apos;I&apos;m A Celebrity&apos; Chaos" /><p>The Queen's Shimmering Cage: Vera Sidika 'I'm A Celebrity' Chaos: In the grand theater of public spectacle, some jewels promise adoration, others, a gilded</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Microsoft and G42 Data Center Project Stalls Over Power Capacity]]></title>
-      <link>https://zandani.co.ke/article/microsoft-g42-data-center-project-stalls-kenya</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/microsoft-g42-data-center-project-stalls-kenya</guid>
-      <pubDate>Fri, 08 May 2026 11:48:52 GMT</pubDate>
-      <dc:creator><![CDATA[Elizabeth Muthoni]]></dc:creator>
-      <description><![CDATA[Microsoft and G42 Data Center Project Stalls Over Power Capacity: The ambitious one billion dollar data center project in Kenya faces collapse as the national]]></description>
-      <enclosure url="https://i.ibb.co/WvdPz6kk/b310f8a78940.webp" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/WvdPz6kk/b310f8a78940.webp" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/WvdPz6kk/b310f8a78940.webp" alt="Microsoft and G42 Data Center Project Stalls Over Power Capacity" /><p>Microsoft and G42 Data Center Project Stalls Over Power Capacity: The ambitious one billion dollar data center project in Kenya faces collapse as the national</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
