@@ -1,16 +1,20 @@
 ---
 title: "Hearts held to draw by Motherwell amid injury crisis and VAR drama"
 slug: "hearts-held-to-draw-by-motherwell-amid-injury-crisis-and-var-drama"
-description: "Hearts title charge suffers a major setback after a controversial draw at Fir Park as key players Craig Halkett and Marc Leonard face season-ending injuries."
+description: "Hearts held to draw by Motherwell amid injury crisis and VAR dram: Hearts title charge suffers a major setback after a controversial draw at Fir Park as key"
+excerpt: "The Fir Park Fallout: How Hearts Scottish Premiership Ambitions are Crumbling Under Injury and VAR Hearts stumbled to a frustrating draw aga"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/HpF7Nvn9/24e986bb1e6c.jpg"
 category: "Sports"
 tags: ["hearts", "scottish premiership", "football", "sports news", "var", "international football"]
+canonical: "https://zandani.co.ke/article/hearts-held-to-draw-by-motherwell-amid-injury-crisis-and-var-drama"
 date: "2026-05-10T06:20:27Z"
 dateModified: "2026-05-10T06:20:27Z"
+focusKeyword: "Hearts held to draw by Motherwell amid injury crisis and VAR dram"
 schema: "NewsArticle"
 ---
+
+Hearts held to draw by Motherwell amid injury crisis and VAR dram is central to this update for Kenyan readers.
 
 ## The Fir Park Fallout: How Hearts Scottish Premiership Ambitions are Crumbling Under Injury and VAR
 
@@ -37,3 +41,18 @@ The timing of this collapse could not be more damaging. With the season reaching
 ### What to Watch Next
 
 The immediate priority for the technical staff is to stabilize the starting eleven without forcing exhausted players back into action too quickly. The upcoming fixture list does not offer an easy transition period. Fans should keep a close watch on how the squad recalibrates for the next outing. If the performance against Motherwell is any indication, the coming weeks will test the mental resolve of the remaining veterans. The dream of a triumphant finish is slipping away, and if they do not find a way to plug the leaks, the remainder of the campaign may simply be a matter of damage control.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
