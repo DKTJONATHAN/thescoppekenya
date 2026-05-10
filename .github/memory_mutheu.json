@@ -106,10 +106,10 @@
     "7ffec612519e5d9a1fee4d008aaad51c",
     "e915edaf89be338ba2ff5d6d27bfb82b",
     "b4aef1623669aeb2595e606053ea4e48",
-    "cf6acbb90b7a80987db4da8a68074a97"
+    "cf6acbb90b7a80987db4da8a68074a97",
+    "469b20d8e14ba85cc8105eacbe620a02"
   ],
   "style_history": [
-    "Profile Beat",
     "Explainer",
     "Hard News Lead",
     "Reaction Round-up",
@@ -138,7 +138,8 @@
     "Trend Take",
     "Explainer",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Profile Beat"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -186,6 +187,7 @@
     "money_follow|data privacy|Trend Take",
     "accountability|Julio Foolio|Explainer",
     "winners_losers|iCarly|Reaction Round-up",
-    "myth_vs_fact|Britney Spears|Hard News Lead"
+    "myth_vs_fact|Britney Spears|Hard News Lead",
+    "winners_losers|Sally Field|Profile Beat"
   ]
 }
