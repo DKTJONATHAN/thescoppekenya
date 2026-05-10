@@ -171,10 +171,10 @@
     "44de9e2265641e0e1f9ded31bc23305b",
     "568dab855efbd9965ae913eeae921636",
     "f615ae2b420b193a980785610530ba14",
-    "bc32a281c92fa6f9c444528d58f7e4a5"
+    "bc32a281c92fa6f9c444528d58f7e4a5",
+    "c93b0af3eb10a8356eb77a2b9b6a80b2"
   ],
   "style_history": [
-    "Trend Take",
     "Receipts Piece",
     "Profile Beat",
     "Hard News Lead",
@@ -203,7 +203,8 @@
     "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Trend Take"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -237,6 +238,7 @@
     "next_48_hours|Kenya|Profile Beat",
     "timeline_shift|Dr. Ofweneke|Hard News Lead",
     "winners_losers|Mike Sonko|Reaction Round-up",
-    "money_follow|marriage|Receipts Piece"
+    "money_follow|marriage|Receipts Piece",
+    "myth_vs_fact|dating|Trend Take"
   ]
 }
