@@ -168,10 +168,10 @@
     "a727b14b56aea8bb4b3f114875f98652",
     "0b5e174cf3ef4fadda08bc612fc9f91f",
     "bbdd830b75ae661c98c24c9ec8e545ee",
-    "44de9e2265641e0e1f9ded31bc23305b"
+    "44de9e2265641e0e1f9ded31bc23305b",
+    "568dab855efbd9965ae913eeae921636"
   ],
   "style_history": [
-    "timeline",
     "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
@@ -200,7 +200,8 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Receipts Piece",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -231,6 +232,7 @@
     "policy_gap|NACADA|Hard News Lead",
     "accountability|Parliamentary Service Commission|Reaction Round-up",
     "myth_vs_fact|dating culture|Receipts Piece",
-    "next_48_hours|Kenya|Profile Beat"
+    "next_48_hours|Kenya|Profile Beat",
+    "timeline_shift|Dr. Ofweneke|Hard News Lead"
   ]
 }
