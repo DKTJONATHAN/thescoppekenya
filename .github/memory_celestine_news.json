@@ -72,10 +72,10 @@
     "c64c5338e34f2d721f24598c5e324e27",
     "db1a001d1a8949fd6ab6857011a348e0",
     "d3a67c83f023655bc0b4a4dda563bd93",
-    "7b71b9626402e100bcf58bd94c3821bf"
+    "7b71b9626402e100bcf58bd94c3821bf",
+    "a9485a2bfcb04244320190de05271090"
   ],
   "style_history": [
-    "Power Accountability",
     "Reaction & Voices",
     "Explainer",
     "Context Backgrounder",
@@ -104,7 +104,8 @@
     "Context Backgrounder",
     "Hard News Lead",
     "Power Accountability",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Context Backgrounder"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -147,6 +148,7 @@
     "timeline_shift|Kenya Airways|Context Backgrounder",
     "policy_gap|Central Bank of Kenya|Hard News Lead",
     "money_follow|Judiciary|Power Accountability",
-    "impact_on_citizens|National Treasury|Reaction & Voices"
+    "impact_on_citizens|National Treasury|Reaction & Voices",
+    "myth_vs_fact|NYOTA project|Context Backgrounder"
   ]
 }
