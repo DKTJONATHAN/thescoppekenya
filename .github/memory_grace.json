@@ -104,7 +104,8 @@
     "5f785511d15b84c9b9c99d1640130c5b",
     "683c2b370f747cac497e0aa03e863d30",
     "13cae824662d979053099184f99f2861",
-    "650ef5d32ae8c58d159077645f5bd8a1"
+    "650ef5d32ae8c58d159077645f5bd8a1",
+    "f9b94bbb80b1adaf964feab37755bde8"
   ],
   "style_history": [
     "SME Angle",
@@ -122,7 +123,8 @@
     "Markets Report",
     "Explainer",
     "Backgrounder",
-    "SME Angle"
+    "SME Angle",
+    "Markets Report"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -139,6 +141,7 @@
     "myth_vs_fact|Economic Survey 2026|Markets Report",
     "impact_on_citizens|digital economy|Explainer",
     "timeline_shift|Glovo|Backgrounder",
-    "winners_losers|oil refinery|SME Angle"
+    "winners_losers|oil refinery|SME Angle",
+    "money_follow|telecommunications|Markets Report"
   ]
 }
