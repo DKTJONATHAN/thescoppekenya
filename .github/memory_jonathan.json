@@ -53,10 +53,10 @@
     "428e29a57d43ec5750828adccfcc9f4f",
     "4717708f07ef3472a75e70fa038db643",
     "fac17eb2e168ef94868096bd904fd288",
-    "8a179567e2cc7ce9b9843391c2105320"
+    "8a179567e2cc7ce9b9843391c2105320",
+    "8de00a49dab33a812cf566c5dfab691b"
   ],
   "style_history": [
-    "Letter Form",
     "Historical Lens",
     "Counterpoint",
     "Sharp Column",
@@ -85,7 +85,8 @@
     "Historical Lens",
     "Letter Form",
     "Counterpoint",
-    "Sharp Column"
+    "Sharp Column",
+    "Historical Lens"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -123,6 +124,7 @@
     "timeline_shift|Motherhood|Historical Lens",
     "accountability|Safaricom|Letter Form",
     "winners_losers|asthma|Counterpoint",
-    "policy_gap|National Police Service|Sharp Column"
+    "policy_gap|National Police Service|Sharp Column",
+    "timeline_shift|education|Historical Lens"
   ]
 }
