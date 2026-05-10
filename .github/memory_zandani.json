@@ -174,10 +174,10 @@
     "bc32a281c92fa6f9c444528d58f7e4a5",
     "c93b0af3eb10a8356eb77a2b9b6a80b2",
     "4f4d93cb3257698c8513cf1c585e693c",
-    "50a5eca8461a14dbb6a0a9f1279dfe76"
+    "50a5eca8461a14dbb6a0a9f1279dfe76",
+    "008e0193908f398ba35f85a693df08eb"
   ],
   "style_history": [
-    "Hard News Lead",
     "Trend Take",
     "Reaction Round-up",
     "Receipts Piece",
@@ -206,7 +206,8 @@
     "Receipts Piece",
     "Trend Take",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Receipts Piece"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -243,6 +244,7 @@
     "money_follow|marriage|Receipts Piece",
     "myth_vs_fact|dating|Trend Take",
     "policy_gap|domestic workers|Hard News Lead",
-    "impact_on_citizens|Netflix|Profile Beat"
+    "impact_on_citizens|Netflix|Profile Beat",
+    "money_follow|Vera Sidika|Receipts Piece"
   ]
 }
