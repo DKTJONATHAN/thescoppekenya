@@ -136,7 +136,8 @@
     "34c54aed30cefa8d3afc70c4db8a18f5",
     "4571b6016db383bb6568b6d5f4036fd2",
     "511cb85458e208e147e396f5d8f7d2ac",
-    "e76a75dc8627ed5c85ccb43bead929d3"
+    "e76a75dc8627ed5c85ccb43bead929d3",
+    "2655a27515494a9864f86c30b511907a"
   ],
   "style_history": [
     "Hard News Lead",
@@ -158,7 +159,8 @@
     "Profile Beat",
     "Reaction Round-up",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -179,6 +181,7 @@
     "accountability|Nigerian music|Profile Beat",
     "impact_on_citizens|2026 FIFA World Cup|Reaction Round-up",
     "accountability|domestic violence|Trend Take",
-    "money_follow|AMVCA|Hard News Lead"
+    "money_follow|AMVCA|Hard News Lead",
+    "timeline_shift|AMVCA|Explainer"
   ]
 }
