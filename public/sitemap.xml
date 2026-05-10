@@ -4946,7 +4946,13 @@
   </url>
   <url>
     <loc>https://zandani.co.ke/article/who-where-how</loc>
-    <lastmod>2026-05-10T12:15:15.696Z</lastmod>
+    <lastmod>2026-05-10T12:16:13.025Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/ngec-demands-police-recruitment-reform-kiganjo-dismissals</loc>
+    <lastmod>2026-05-10T12:05:32.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
