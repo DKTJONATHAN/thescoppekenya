@@ -1,16 +1,20 @@
 ---
 title: "Why Kenyans Must Shift Asthma Care to Anti-Inflammatory Treatment"
 slug: "asthma-care-shift-kenya-anti-inflammatory-treatment"
-description: "New health guidelines urge a shift from symptom-relief inhalers to anti-inflammatory therapies to bridge the asthma care gap in Kenya."
+description: "Why Kenyans Must Shift Asthma Care to Anti-Inflammatory Treatment: New health guidelines urge a shift from symptom-relief inhalers to anti-inflammatory"
+excerpt: "Rethinking the Blue Puffer: Why Kenya Must Move Beyond Reactive Asthma Care For years, Za Ndani approach to asthma in Kenyan clinics has cen"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/WNDSdzQj/04170eb86203.png"
 category: "Opinions"
 tags: ["asthma", "kenya health", "respiratory care", "public health", "gina guidelines", "medical news"]
+canonical: "https://zandani.co.ke/article/asthma-care-shift-kenya-anti-inflammatory-treatment"
 date: "2026-05-10T10:38:26Z"
 dateModified: "2026-05-10T10:38:26Z"
+focusKeyword: "Why Kenyans Must Shift Asthma Care to Anti-Inflammatory Treatment"
 schema: "NewsArticle"
 ---
+
+Why Kenyans Must Shift Asthma Care to Anti-Inflammatory Treatment is central to this update for Kenyan readers.
 
 ## Rethinking the Blue Puffer: Why Kenya Must Move Beyond Reactive Asthma Care
 
@@ -35,3 +39,18 @@ If a patient finds themselves reaching for a rescue inhaler more than twice a we
 As the 29th Annual Kenya Association of Physicians conference highlights the gaps in our current respiratory protocols, it is becoming evident that the pharmacy model requires scrutiny. Patients are starting to recognize that what feels like convenient healthcare may actually be a barrier to proper recovery. There is a growing need for transparency regarding why obsolete, rescue-only treatments remain the default option in so many establishments.
 
 The path forward requires a shift in both clinical guidelines and consumer behavior. Patients deserve to know that they have options that can alter the trajectory of their disease rather than simply delaying the next attack. When you visit a chemist, questioning the exclusive promotion of blue puffers is a valid and necessary act of self-advocacy. By demanding access to anti-inflammatory gold standards, Kenyans can pressure the supply chain to align with modern science. The era of managing asthma through temporary patches must reach its conclusion, ensuring that the health of the individual-and the resources of the taxpayer-are no longer wasted on an unsustainable cycle of suffocation.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
