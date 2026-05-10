@@ -102,10 +102,10 @@
     "64c2a98e0df79840e6dd61aac32a1d1e",
     "613cd43d389dda004c9e9c6406c74191",
     "e1293321a41a974f7ecfbbd23d083568",
-    "a4b6f7866fb453bffff1912c76bad107"
+    "a4b6f7866fb453bffff1912c76bad107",
+    "7ffec612519e5d9a1fee4d008aaad51c"
   ],
   "style_history": [
-    "Explainer",
     "Reaction Round-up",
     "Hard News Lead",
     "Trend Take",
@@ -134,7 +134,8 @@
     "Profile Beat",
     "Explainer",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Trend Take"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -178,6 +179,7 @@
     "accountability|Hollywood|Profile Beat",
     "policy_gap|defamation|Explainer",
     "timeline_shift|sitcom|Reaction Round-up",
-    "impact_on_citizens|science fiction|Hard News Lead"
+    "impact_on_citizens|science fiction|Hard News Lead",
+    "money_follow|data privacy|Trend Take"
   ]
 }
