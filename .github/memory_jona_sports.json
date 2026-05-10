@@ -89,10 +89,10 @@
     "d079b5dab5224bd88eb0f90df4653bb3",
     "9f4175420fa3fcf2d31eb8c9c76913e9",
     "003d1afab877a19107fd11ab3fdd52ab",
-    "b835f60c501f0637dec0ada007d29ddc"
+    "b835f60c501f0637dec0ada007d29ddc",
+    "49be0002964e76d8ab8bf13b17366882"
   ],
   "style_history": [
-    "Cynical Pundit",
     "Stat Story",
     "Player Profile Beat",
     "Tactical Take",
@@ -121,7 +121,8 @@
     "Match Report",
     "Player Profile Beat",
     "Cynical Pundit",
-    "Tactical Take"
+    "Tactical Take",
+    "Match Report"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -165,6 +166,7 @@
     "timeline_shift|Scottish Premiership|Match Report",
     "next_48_hours|Scottish Premiership|Player Profile Beat",
     "policy_gap|Scottish Premiership|Cynical Pundit",
-    "impact_on_citizens|Premier League|Tactical Take"
+    "impact_on_citizens|Premier League|Tactical Take",
+    "impact_on_citizens|Premier League|Match Report"
   ]
 }
