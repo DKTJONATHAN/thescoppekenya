@@ -90,10 +90,10 @@
     "9f4175420fa3fcf2d31eb8c9c76913e9",
     "003d1afab877a19107fd11ab3fdd52ab",
     "b835f60c501f0637dec0ada007d29ddc",
-    "49be0002964e76d8ab8bf13b17366882"
+    "49be0002964e76d8ab8bf13b17366882",
+    "953beeb2d8781292fe5cf542f8070045"
   ],
   "style_history": [
-    "Stat Story",
     "Player Profile Beat",
     "Tactical Take",
     "Match Report",
@@ -122,7 +122,8 @@
     "Player Profile Beat",
     "Cynical Pundit",
     "Tactical Take",
-    "Match Report"
+    "Match Report",
+    "Player Profile Beat"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -167,6 +168,7 @@
     "next_48_hours|Scottish Premiership|Player Profile Beat",
     "policy_gap|Scottish Premiership|Cynical Pundit",
     "impact_on_citizens|Premier League|Tactical Take",
-    "impact_on_citizens|Premier League|Match Report"
+    "impact_on_citizens|Premier League|Match Report",
+    "next_48_hours|Women's FA Cup|Player Profile Beat"
   ]
 }
