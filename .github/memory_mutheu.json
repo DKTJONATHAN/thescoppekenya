@@ -98,10 +98,10 @@
     "08558f184d410f79a13ca2e41c5b7d88",
     "9a18efb34770454f7d2e73441a180671",
     "e4c7945a57c146e63424d7a1765c905e",
-    "a5b1545f01346683cff33e566338fd5c"
+    "a5b1545f01346683cff33e566338fd5c",
+    "64c2a98e0df79840e6dd61aac32a1d1e"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
     "Trend Take",
@@ -130,7 +130,8 @@
     "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -170,6 +171,7 @@
     "accountability|Nick Pasqual|Profile Beat",
     "policy_gap|Tatum O'Neal|Hard News Lead",
     "impact_on_citizens|Kevin Bacon|Reaction Round-up",
-    "timeline_shift|SNL|Trend Take"
+    "timeline_shift|SNL|Trend Take",
+    "accountability|Hollywood|Profile Beat"
   ]
 }
