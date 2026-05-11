@@ -140,7 +140,8 @@
     "2655a27515494a9864f86c30b511907a",
     "428d58fff66b7a904c844a80375b3c5f",
     "b372d1215c63f497116983388487d762",
-    "7d0676e49f3cedeb0e826b3a64a58970"
+    "7d0676e49f3cedeb0e826b3a64a58970",
+    "b677054dd443c156ae80ba9f1519ff83"
   ],
   "style_history": [
     "Hard News Lead",
@@ -166,7 +167,8 @@
     "Explainer",
     "Reaction Round-up",
     "Profile Beat",
-    "Trend Take"
+    "Trend Take",
+    "Explainer"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -191,6 +193,7 @@
     "timeline_shift|AMVCA|Explainer",
     "accountability|AMVCA|Reaction Round-up",
     "myth_vs_fact|Nollywood|Profile Beat",
-    "winners_losers|Ilebaye|Trend Take"
+    "winners_losers|Ilebaye|Trend Take",
+    "myth_vs_fact|Mavin Records|Explainer"
   ]
 }
