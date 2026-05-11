@@ -179,10 +179,10 @@
     "8888dedb1429294f354d8a7bec0111e9",
     "e5864fbcb8c98f1276c92cd6468bd3c4",
     "5ec55362d5566f4afb35d027f065d04f",
-    "4d42782df409d60f1088bc1df60ed2c8"
+    "4d42782df409d60f1088bc1df60ed2c8",
+    "3bf35a791be35d949897819667b2f429"
   ],
   "style_history": [
-    "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
     "Profile Beat",
@@ -211,7 +211,8 @@
     "Reaction Round-up",
     "Trend Take",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Receipts Piece"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -253,6 +254,7 @@
     "money_follow|social media|Reaction Round-up",
     "impact_on_citizens|Kenya|Trend Take",
     "timeline_shift|Afrobeats|Hard News Lead",
-    "money_follow|Netflix|Profile Beat"
+    "money_follow|Netflix|Profile Beat",
+    "impact_on_citizens|Priscilla Ojo|Receipts Piece"
   ]
 }
