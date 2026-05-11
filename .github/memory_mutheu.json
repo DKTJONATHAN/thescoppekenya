@@ -108,10 +108,10 @@
     "b4aef1623669aeb2595e606053ea4e48",
     "cf6acbb90b7a80987db4da8a68074a97",
     "469b20d8e14ba85cc8105eacbe620a02",
-    "950caf807ebf114d18b69e415c1d329c"
+    "950caf807ebf114d18b69e415c1d329c",
+    "bd161f9305fa2ee8088f490fc3aad5cf"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
@@ -140,7 +140,8 @@
     "Reaction Round-up",
     "Hard News Lead",
     "Profile Beat",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -190,6 +191,7 @@
     "winners_losers|iCarly|Reaction Round-up",
     "myth_vs_fact|Britney Spears|Hard News Lead",
     "winners_losers|Sally Field|Profile Beat",
-    "impact_on_citizens|Hypergnosis|Explainer"
+    "impact_on_citizens|Hypergnosis|Explainer",
+    "timeline_shift|The Boys|Trend Take"
   ]
 }
