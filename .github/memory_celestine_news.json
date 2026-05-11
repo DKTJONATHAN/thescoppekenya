@@ -79,10 +79,10 @@
     "bc4e9d507edd0054bf48961b716048f1",
     "ccb6a6c9dda474a49b3a925ae22c002a",
     "53c586281f3b008334d09a58b1616ea5",
-    "66f7300f41de0546895c585c2521e6fa"
+    "66f7300f41de0546895c585c2521e6fa",
+    "098d9341f74cb26c1590fb8f17e6809d"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Reaction & Voices",
     "Power Accountability",
@@ -111,7 +111,8 @@
     "Reaction & Voices",
     "Context Backgrounder",
     "Explainer",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Power Accountability"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -161,6 +162,7 @@
     "impact_on_citizens|NEMA|Reaction & Voices",
     "timeline_shift|Kenya Railways Corporation|Context Backgrounder",
     "impact_on_citizens|Kenya-France relations|Explainer",
-    "winners_losers|Tax Reform|Hard News Lead"
+    "winners_losers|Tax Reform|Hard News Lead",
+    "accountability|University of Nairobi|Power Accountability"
   ]
 }
