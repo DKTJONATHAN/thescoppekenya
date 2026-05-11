@@ -1,14 +1,16 @@
 ---
 title: "NTSA to Launch Digital Vehicle Logbook System in June"
 slug: "ntsa-to-launch-digital-logbook-system-in-june"
-description: "NTSA will transition to a digital logbook system starting June 10 to improve security and streamline vehicle registration via TIMS and e-Citizen."
+description: "NTSA to Launch Digital Vehicle Logbook System in June: NTSA will transition to a digital logbook system starting June 10 to improve security and streamline"
+excerpt: "NTSA to Launch Digital Vehicle Logbook System in June The National Transport and Safety Authority will roll out a mandatory digital logbook"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/p606mnM2/016f1be1ead3.jpg"
 category: "News"
 tags: ["ntsa", "e-logbook", "kenya traffic", "tims", "e-citizen", "vehicle registration"]
+canonical: "https://zandani.co.ke/article/ntsa-to-launch-digital-logbook-system-in-june"
 date: "2026-05-11T20:56:38Z"
 dateModified: "2026-05-11T20:56:38Z"
+focusKeyword: "NTSA to Launch Digital Vehicle Logbook System in June"
 schema: "NewsArticle"
 ---
 
@@ -37,3 +39,18 @@ The impact on credit security cannot be overstated. With lenders gaining the abi
 ### What to Watch Next
 
 Motorists must observe how the transition period handles existing loan collateral, as lenders will need to migrate physical securities to the digital ledger without causing liquidity freezes. NTSA will be expected to release guidelines on the handling of legacy documents for vehicles currently held as security. Future observers should track the rate of reported forgery cases in the secondary vehicle market to determine if the digital shift effectively achieves its goal of market sanitization.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
