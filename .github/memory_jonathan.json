@@ -56,10 +56,10 @@
     "8a179567e2cc7ce9b9843391c2105320",
     "8de00a49dab33a812cf566c5dfab691b",
     "1a0749c053be69a2c9bfd1dbe1eb6e05",
-    "77afcc6f6719d7dd33404c708e69ef8e"
+    "77afcc6f6719d7dd33404c708e69ef8e",
+    "5e86752eaad0735ef3b1b382ec680592"
   ],
   "style_history": [
-    "Sharp Column",
     "Personal Reflection",
     "Historical Lens",
     "Letter Form",
@@ -88,7 +88,8 @@
     "Sharp Column",
     "Historical Lens",
     "Personal Reflection",
-    "Letter Form"
+    "Letter Form",
+    "Sharp Column"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -129,6 +130,7 @@
     "policy_gap|National Police Service|Sharp Column",
     "timeline_shift|education|Historical Lens",
     "money_follow|Africa Forward Summit|Personal Reflection",
-    "policy_gap|Artificial Intelligence|Letter Form"
+    "policy_gap|Artificial Intelligence|Letter Form",
+    "winners_losers|Sustainable development|Sharp Column"
   ]
 }
