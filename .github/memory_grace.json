@@ -106,7 +106,8 @@
     "13cae824662d979053099184f99f2861",
     "650ef5d32ae8c58d159077645f5bd8a1",
     "f9b94bbb80b1adaf964feab37755bde8",
-    "1d66e5f4c355217634d09a7e973a7d74"
+    "1d66e5f4c355217634d09a7e973a7d74",
+    "8f1128ed2e7c36851dbc50e4b926b10c"
   ],
   "style_history": [
     "SME Angle",
@@ -126,7 +127,8 @@
     "Backgrounder",
     "SME Angle",
     "Markets Report",
-    "Explainer"
+    "Explainer",
+    "Backgrounder"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -145,6 +147,7 @@
     "timeline_shift|Glovo|Backgrounder",
     "winners_losers|oil refinery|SME Angle",
     "money_follow|telecommunications|Markets Report",
-    "impact_on_citizens|New KCC|Explainer"
+    "impact_on_citizens|New KCC|Explainer",
+    "policy_gap|France-Africa Summit|Backgrounder"
   ]
 }
