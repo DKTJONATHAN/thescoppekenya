@@ -139,7 +139,8 @@
     "e76a75dc8627ed5c85ccb43bead929d3",
     "2655a27515494a9864f86c30b511907a",
     "428d58fff66b7a904c844a80375b3c5f",
-    "b372d1215c63f497116983388487d762"
+    "b372d1215c63f497116983388487d762",
+    "7d0676e49f3cedeb0e826b3a64a58970"
   ],
   "style_history": [
     "Hard News Lead",
@@ -164,7 +165,8 @@
     "Hard News Lead",
     "Explainer",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -188,6 +190,7 @@
     "money_follow|AMVCA|Hard News Lead",
     "timeline_shift|AMVCA|Explainer",
     "accountability|AMVCA|Reaction Round-up",
-    "myth_vs_fact|Nollywood|Profile Beat"
+    "myth_vs_fact|Nollywood|Profile Beat",
+    "winners_losers|Ilebaye|Trend Take"
   ]
 }
