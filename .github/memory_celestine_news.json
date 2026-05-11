@@ -83,10 +83,10 @@
     "098d9341f74cb26c1590fb8f17e6809d",
     "a8d70dfe3f8968ed5c9f24784a17d654",
     "ad149c42aebddfaff89d7ac344c69ff4",
-    "de5acb70f4c6fff778e42d065018cb81"
+    "de5acb70f4c6fff778e42d065018cb81",
+    "ca41d40b2ba0d7a2bb157ef7fe6e8bbc"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Context Backgrounder",
     "Power Accountability",
@@ -115,7 +115,8 @@
     "Power Accountability",
     "Context Backgrounder",
     "Reaction & Voices",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -169,6 +170,7 @@
     "accountability|University of Nairobi|Power Accountability",
     "money_follow|Kenya|Context Backgrounder",
     "next_48_hours|Kenya|Reaction & Voices",
-    "impact_on_citizens|KNEC|Explainer"
+    "impact_on_citizens|KNEC|Explainer",
+    "winners_losers|NTSA|Hard News Lead"
   ]
 }
