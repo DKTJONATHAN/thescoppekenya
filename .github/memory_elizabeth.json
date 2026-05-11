@@ -96,7 +96,8 @@
     "cc2cddaaeed8e40ca28117e985c50516",
     "18d7ae7533ec2d2c9419d576be3ff247",
     "1fc288e9e3fb60c1b3373e40c7d78dc4",
-    "81a2a02c7b4b82a100f35027015fe8e2"
+    "81a2a02c7b4b82a100f35027015fe8e2",
+    "be533c1cf98dd408b0cd8eb63830934c"
   ],
   "style_history": [
     "Africa Angle",
@@ -112,7 +113,8 @@
     "Hard News Lead",
     "Critical Take",
     "Africa Angle",
-    "Backgrounder"
+    "Backgrounder",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -127,6 +129,7 @@
     "timeline_shift|data center|Hard News Lead",
     "money_follow|Fuliza|Critical Take",
     "policy_gap|Google Ads|Africa Angle",
-    "money_follow|KCB Bank|Backgrounder"
+    "money_follow|KCB Bank|Backgrounder",
+    "next_48_hours|BAKE Awards|Hard News Lead"
   ]
 }
