@@ -109,10 +109,10 @@
     "cf6acbb90b7a80987db4da8a68074a97",
     "469b20d8e14ba85cc8105eacbe620a02",
     "950caf807ebf114d18b69e415c1d329c",
-    "bd161f9305fa2ee8088f490fc3aad5cf"
+    "bd161f9305fa2ee8088f490fc3aad5cf",
+    "a331b9e213508ee67daf06b52001ceda"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
     "Hard News Lead",
@@ -141,7 +141,8 @@
     "Hard News Lead",
     "Profile Beat",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Reaction Round-up"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -192,6 +193,7 @@
     "myth_vs_fact|Britney Spears|Hard News Lead",
     "winners_losers|Sally Field|Profile Beat",
     "impact_on_citizens|Hypergnosis|Explainer",
-    "timeline_shift|The Boys|Trend Take"
+    "timeline_shift|The Boys|Trend Take",
+    "next_48_hours|American Idol|Reaction Round-up"
   ]
 }
