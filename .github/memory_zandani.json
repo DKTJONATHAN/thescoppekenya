@@ -176,10 +176,10 @@
     "4f4d93cb3257698c8513cf1c585e693c",
     "50a5eca8461a14dbb6a0a9f1279dfe76",
     "008e0193908f398ba35f85a693df08eb",
-    "8888dedb1429294f354d8a7bec0111e9"
+    "8888dedb1429294f354d8a7bec0111e9",
+    "e5864fbcb8c98f1276c92cd6468bd3c4"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Receipts Piece",
     "Profile Beat",
     "Trend Take",
@@ -208,7 +208,8 @@
     "Hard News Lead",
     "Profile Beat",
     "Receipts Piece",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -247,6 +248,7 @@
     "policy_gap|domestic workers|Hard News Lead",
     "impact_on_citizens|Netflix|Profile Beat",
     "money_follow|Vera Sidika|Receipts Piece",
-    "money_follow|social media|Reaction Round-up"
+    "money_follow|social media|Reaction Round-up",
+    "impact_on_citizens|Kenya|Trend Take"
   ]
 }
