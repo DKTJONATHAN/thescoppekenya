@@ -57,10 +57,10 @@
     "8de00a49dab33a812cf566c5dfab691b",
     "1a0749c053be69a2c9bfd1dbe1eb6e05",
     "77afcc6f6719d7dd33404c708e69ef8e",
-    "5e86752eaad0735ef3b1b382ec680592"
+    "5e86752eaad0735ef3b1b382ec680592",
+    "cd355fb373f03286eeef70772fc86997"
   ],
   "style_history": [
-    "Personal Reflection",
     "Historical Lens",
     "Letter Form",
     "Sharp Column",
@@ -89,7 +89,8 @@
     "Historical Lens",
     "Personal Reflection",
     "Letter Form",
-    "Sharp Column"
+    "Sharp Column",
+    "Counterpoint"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -131,6 +132,7 @@
     "timeline_shift|education|Historical Lens",
     "money_follow|Africa Forward Summit|Personal Reflection",
     "policy_gap|Artificial Intelligence|Letter Form",
-    "winners_losers|Sustainable development|Sharp Column"
+    "winners_losers|Sustainable development|Sharp Column",
+    "myth_vs_fact|trade policy|Counterpoint"
   ]
 }
