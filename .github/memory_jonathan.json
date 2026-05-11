@@ -55,10 +55,10 @@
     "fac17eb2e168ef94868096bd904fd288",
     "8a179567e2cc7ce9b9843391c2105320",
     "8de00a49dab33a812cf566c5dfab691b",
-    "1a0749c053be69a2c9bfd1dbe1eb6e05"
+    "1a0749c053be69a2c9bfd1dbe1eb6e05",
+    "77afcc6f6719d7dd33404c708e69ef8e"
   ],
   "style_history": [
-    "Counterpoint",
     "Sharp Column",
     "Personal Reflection",
     "Historical Lens",
@@ -87,7 +87,8 @@
     "Counterpoint",
     "Sharp Column",
     "Historical Lens",
-    "Personal Reflection"
+    "Personal Reflection",
+    "Letter Form"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -127,6 +128,7 @@
     "winners_losers|asthma|Counterpoint",
     "policy_gap|National Police Service|Sharp Column",
     "timeline_shift|education|Historical Lens",
-    "money_follow|Africa Forward Summit|Personal Reflection"
+    "money_follow|Africa Forward Summit|Personal Reflection",
+    "policy_gap|Artificial Intelligence|Letter Form"
   ]
 }
