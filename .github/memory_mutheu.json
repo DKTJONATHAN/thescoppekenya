@@ -111,10 +111,10 @@
     "950caf807ebf114d18b69e415c1d329c",
     "bd161f9305fa2ee8088f490fc3aad5cf",
     "a331b9e213508ee67daf06b52001ceda",
-    "7af601e065502eaa3ffab9a1015b3a76"
+    "7af601e065502eaa3ffab9a1015b3a76",
+    "094b0c2719e1d7697a311771d802cb5e"
   ],
   "style_history": [
-    "Trend Take",
     "Hard News Lead",
     "Explainer",
     "Profile Beat",
@@ -143,7 +143,8 @@
     "Explainer",
     "Trend Take",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -196,6 +197,7 @@
     "impact_on_citizens|Hypergnosis|Explainer",
     "timeline_shift|The Boys|Trend Take",
     "next_48_hours|American Idol|Reaction Round-up",
-    "money_follow|reality television|Hard News Lead"
+    "money_follow|reality television|Hard News Lead",
+    "myth_vs_fact|American Idol|Explainer"
   ]
 }
