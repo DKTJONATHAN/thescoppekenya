@@ -99,10 +99,10 @@
     "ed1d0efc795895d733438562781ce713",
     "e6771192839cf3df86d242a0e6fa6691",
     "de6155a9d7378478adcc6c899232e336",
-    "6ef9d0a33af7cbf7673cfd7adbbda4e8"
+    "6ef9d0a33af7cbf7673cfd7adbbda4e8",
+    "3a5d77da17238e8da39f3de40221a62b"
   ],
   "style_history": [
-    "Stat Story",
     "Tactical Take",
     "Match Report",
     "Cynical Pundit",
@@ -131,7 +131,8 @@
     "Stat Story",
     "Tactical Take",
     "Match Report",
-    "Cynical Pundit"
+    "Cynical Pundit",
+    "Player Profile Beat"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -185,6 +186,7 @@
     "money_follow|VAR|Stat Story",
     "accountability|Premier League|Tactical Take",
     "money_follow|Championship|Match Report",
-    "impact_on_citizens|Premier League|Cynical Pundit"
+    "impact_on_citizens|Premier League|Cynical Pundit",
+    "policy_gap|Football|Player Profile Beat"
   ]
 }
