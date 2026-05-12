@@ -114,10 +114,10 @@
     "7af601e065502eaa3ffab9a1015b3a76",
     "094b0c2719e1d7697a311771d802cb5e",
     "c3291afd8348fe8412f9769b0bdae933",
-    "b5986a3c2d8212c8c75dd5adb1c353fc"
+    "b5986a3c2d8212c8c75dd5adb1c353fc",
+    "636049f1a1395ebf30b870cefdf2fd84"
   ],
   "style_history": [
-    "Profile Beat",
     "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
@@ -146,7 +146,8 @@
     "Hard News Lead",
     "Explainer",
     "Profile Beat",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -202,6 +203,7 @@
     "money_follow|reality television|Hard News Lead",
     "myth_vs_fact|American Idol|Explainer",
     "money_follow|Late-night television|Profile Beat",
-    "winners_losers|biopic|Reaction Round-up"
+    "winners_losers|biopic|Reaction Round-up",
+    "timeline_shift|advertising|Trend Take"
   ]
 }
