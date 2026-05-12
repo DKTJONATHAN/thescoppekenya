@@ -99,7 +99,8 @@
     "81a2a02c7b4b82a100f35027015fe8e2",
     "be533c1cf98dd408b0cd8eb63830934c",
     "08ac056c051a92219af052e46bf26d6d",
-    "11e1164a64eb49ea52812e7464a1522f"
+    "11e1164a64eb49ea52812e7464a1522f",
+    "b6a153c39630dbbd2ab3fc4d774c6ee3"
   ],
   "style_history": [
     "Africa Angle",
@@ -118,7 +119,8 @@
     "Backgrounder",
     "Hard News Lead",
     "Critical Take",
-    "Africa Angle"
+    "Africa Angle",
+    "Explainer"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -136,6 +138,7 @@
     "money_follow|KCB Bank|Backgrounder",
     "next_48_hours|BAKE Awards|Hard News Lead",
     "impact_on_citizens|YouTube|Critical Take",
-    "timeline_shift|AI traffic lights|Africa Angle"
+    "timeline_shift|AI traffic lights|Africa Angle",
+    "winners_losers|Kenya|Explainer"
   ]
 }
