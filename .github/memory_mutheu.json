@@ -116,10 +116,10 @@
     "c3291afd8348fe8412f9769b0bdae933",
     "b5986a3c2d8212c8c75dd5adb1c353fc",
     "636049f1a1395ebf30b870cefdf2fd84",
-    "b67d8f5567fb7de882a2e3db71bd1620"
+    "b67d8f5567fb7de882a2e3db71bd1620",
+    "fffc91af102609f18dd1498ac1306b2e"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
     "Profile Beat",
@@ -148,7 +148,8 @@
     "Profile Beat",
     "Reaction Round-up",
     "Trend Take",
-    "Explainer"
+    "Explainer",
+    "Profile Beat"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -206,6 +207,7 @@
     "money_follow|Late-night television|Profile Beat",
     "winners_losers|biopic|Reaction Round-up",
     "timeline_shift|advertising|Trend Take",
-    "impact_on_citizens|Artificial Intelligence|Explainer"
+    "impact_on_citizens|Artificial Intelligence|Explainer",
+    "impact_on_citizens|AMC|Profile Beat"
   ]
 }
