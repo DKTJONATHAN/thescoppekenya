@@ -1,16 +1,20 @@
 ---
 title: "Kenya Railways seeks consultants for Ksh65 billion transport project"
 slug: "kenya-railways-seeks-consultants-for-kumip-transport-project"
-description: "Kenya Railways has opened a bidding process for the World Bank funded KUMIP project to integrate rail and bus transit across five Nairobi counties."
+description: "Kenya Railways seeks consultants for Ksh65 billion transport proj: Kenya Railways has opened a bidding process for the World Bank funded KUMIP project to"
+excerpt: "Kenya Railways and the Ksh65 Billion Urban Mobility Illusion Kenya Railways is calling for consultants to spend 15 months planning how to sp"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/x8jJ5KD9/ce9d52ee5f03.jpg"
 category: "News"
 tags: ["kenya railways", "nairobi transport", "kumip", "world bank", "urban mobility", "infrastructure"]
+canonical: "https://zandani.co.ke/article/kenya-railways-seeks-consultants-for-kumip-transport-project"
 date: "2026-05-12T06:23:49Z"
 dateModified: "2026-05-12T06:23:49Z"
+focusKeyword: "Kenya Railways seeks consultants for Ksh65 billion transport proj"
 schema: "NewsArticle"
 ---
+
+Kenya Railways seeks consultants for Ksh65 billion transport proj is central to this update for Kenyan readers.
 
 ## Kenya Railways and the Ksh65 Billion Urban Mobility Illusion
 
@@ -35,3 +39,18 @@ Why does this matter now? Because the commuter nightmare is hitting a breaking p
 The real test for this project is not the selection of consultants, but the terms of reference. Watch for whether these firms are tasked with working alongside matatu saccos or if they are mandated to force a top-down structure that the market will inevitably reject. Any plan that views the current informal transit system as a problem to be erased, rather than a partner to be upgraded, is already destined to fail. 
 
 If the government can secure billions for rail integration but cannot guarantee a seat for a commuter on a bus in the periphery, whose mobility is this project actually designed to improve?
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
