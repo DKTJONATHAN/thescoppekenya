@@ -1,16 +1,20 @@
 ---
 title: "Treasury Starts Public Consultations on New eCitizen Fee Rules"
 slug: "treasury-opens-public-consultations-on-ecitizen-fee-regulations"
-description: "The National Treasury has opened public debate on new eCitizen fee regulations following a court ruling that voided previous charges for government services."
+description: "Treasury Starts Public Consultations on New eCitizen Fee Rules: The National Treasury has opened public debate on new eCitizen fee regulations following a"
+excerpt: "The Tiered Tax Shift: How the eCitizen Fee Overhaul Changes Your Service Cost For many months, Kenyans have questioned how the government wo"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/BV7LrHTv/d3da459d605f.jpg"
 category: "Technology"
 tags: ["kenya", "ecitizen", "national treasury", "government services", "public finance", "kenyan news"]
+canonical: "https://zandani.co.ke/article/treasury-opens-public-consultations-on-ecitizen-fee-regulations"
 date: "2026-05-12T15:47:51Z"
 dateModified: "2026-05-12T15:47:51Z"
+focusKeyword: "Treasury Starts Public Consultations on New eCitizen Fee Rules"
 schema: "NewsArticle"
 ---
+
+Treasury Starts Public Consultations on New eCitizen Fee Rules is central to this update for Kenyan readers.
 
 ## The Tiered Tax Shift: How the eCitizen Fee Overhaul Changes Your Service Cost
 
@@ -47,3 +51,18 @@ For the general public, this signifies a shift toward a more structured and gran
 The transition into law requires a period of public participation. The Kenya School of Government has scheduled stakeholder sessions for May 22 and May 25, 2026. These meetings will allow for the scrutiny of specific service categorizations. If you have concerns regarding the classification of certain services as high volume or complex, these sessions serve as the appropriate venue to provide input.
 
 The deadline for submitting written feedback to the Treasury is May 29, 2026. While the government focuses on these digital policy shifts, remember that regulatory adjustments are occurring across various sectors. For instance, authorities are also tightening rules regarding school vehicle safety, specifically concerning the NTSA crackdown on drug use by drivers. You should monitor the official Treasury website for the final gazetted list of fees, as the figures provided in the draft may be modified based on the feedback received during the late May consultations.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
