@@ -62,10 +62,10 @@
     "1fccc9ffd8eaf7160f2dcbeb77e8513d",
     "0bad351b508997b7ace2bc550387e9d0",
     "06ce467806d17794527b39bf15bbca64",
-    "64d273118fec59d4d493a3b5ba51ddb6"
+    "64d273118fec59d4d493a3b5ba51ddb6",
+    "5a41dcf90d76c9f6ce02803e42ed2ee3"
   ],
   "style_history": [
-    "Counterpoint",
     "Historical Lens",
     "Sharp Column",
     "Personal Reflection",
@@ -94,7 +94,8 @@
     "Historical Lens",
     "Letter Form",
     "Personal Reflection",
-    "Counterpoint"
+    "Counterpoint",
+    "Historical Lens"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -141,6 +142,7 @@
     "timeline_shift|food security|Historical Lens",
     "impact_on_citizens|green economy|Letter Form",
     "winners_losers|leadership|Personal Reflection",
-    "myth_vs_fact|Devolution|Counterpoint"
+    "myth_vs_fact|Devolution|Counterpoint",
+    "timeline_shift|devolution|Historical Lens"
   ]
 }
