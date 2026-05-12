@@ -141,7 +141,8 @@
     "428d58fff66b7a904c844a80375b3c5f",
     "b372d1215c63f497116983388487d762",
     "7d0676e49f3cedeb0e826b3a64a58970",
-    "b677054dd443c156ae80ba9f1519ff83"
+    "b677054dd443c156ae80ba9f1519ff83",
+    "307465bdd76eb5af26cc7646de5a98f2"
   ],
   "style_history": [
     "Hard News Lead",
@@ -168,7 +169,8 @@
     "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -194,6 +196,7 @@
     "accountability|AMVCA|Reaction Round-up",
     "myth_vs_fact|Nollywood|Profile Beat",
     "winners_losers|Ilebaye|Trend Take",
-    "myth_vs_fact|Mavin Records|Explainer"
+    "myth_vs_fact|Mavin Records|Explainer",
+    "impact_on_citizens|Alex Ekubo|Hard News Lead"
   ]
 }
