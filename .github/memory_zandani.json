@@ -183,10 +183,10 @@
     "3bf35a791be35d949897819667b2f429",
     "1943e1d0b1b05808717eeb9bf6fabe13",
     "f3eb1d4669c263032c9f06677038fc60",
-    "03825d7a349dc0375781ab2f94ac07c9"
+    "03825d7a349dc0375781ab2f94ac07c9",
+    "eda2532dd07c9121cbcf3078f385c31f"
   ],
   "style_history": [
-    "Trend Take",
     "Receipts Piece",
     "Reaction Round-up",
     "Hard News Lead",
@@ -215,7 +215,8 @@
     "Receipts Piece",
     "Trend Take",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Receipts Piece"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -261,6 +262,7 @@
     "impact_on_citizens|Priscilla Ojo|Receipts Piece",
     "money_follow|Jared Okoth|Trend Take",
     "impact_on_citizens|influencer|Reaction Round-up",
-    "money_follow|Kalasha Awards|Profile Beat"
+    "money_follow|Kalasha Awards|Profile Beat",
+    "money_follow|media personality|Receipts Piece"
   ]
 }
