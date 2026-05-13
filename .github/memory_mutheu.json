@@ -121,10 +121,10 @@
     "3799bc566b035c4bbc88b9e4d72a12ac",
     "c2a05a263e4d98ad0ee43b039087c72e",
     "8648bf4a653833164835ccbc44242afa",
-    "5250ef2ff4a4ee0dbb4888eaf3e52101"
+    "5250ef2ff4a4ee0dbb4888eaf3e52101",
+    "dd12102757b9470a03075b3e9aa807d6"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Explainer",
     "Trend Take",
     "Profile Beat",
@@ -153,7 +153,8 @@
     "Reaction Round-up",
     "Hard News Lead",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -216,6 +217,7 @@
     "impact_on_citizens|Katy Perry|Reaction Round-up",
     "impact_on_citizens|film|Hard News Lead",
     "impact_on_citizens|Veep|Trend Take",
-    "policy_gap|hantavirus|Profile Beat"
+    "policy_gap|hantavirus|Profile Beat",
+    "winners_losers|Good Omens|Reaction Round-up"
   ]
 }
