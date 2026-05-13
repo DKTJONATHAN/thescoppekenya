@@ -1,16 +1,20 @@
 ---
 title: "Martin O'Neill Praises Iheanacho After Celtic VAR Penalty Win"
 slug: "martin-oneill-praises-iheanacho-after-celtic-var-penalty-win"
-description: "Celtic manager Martin O'Neill defends Iheanacho following a vital penalty conversion and discusses the player's recovery from a long-term injury."
+description: "Martin O'Neill Praises Iheanacho After Celtic VAR Penalty Win: Celtic manager Martin O'Neill defends Iheanacho following a vital penalty conversion and"
+excerpt: "Iheanacho: The Quiet Resilience Behind the Parkhead Penalty For any professional athlete, a lengthy injury is rarely just a physical setback"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/t1LXfyQ/855278482ef0.jpg"
 category: "Sports"
 tags: ["celtic fc", "football", "var", "iheanacho", "sports news"]
+canonical: "https://zandani.co.ke/article/martin-oneill-praises-iheanacho-after-celtic-var-penalty-win"
 date: "2026-05-13T21:45:36Z"
 dateModified: "2026-05-13T21:45:36Z"
+focusKeyword: "Martin O'Neill Praises Iheanacho After Celtic VAR Penalty Win"
 schema: "NewsArticle"
 ---
+
+Martin O'Neill Praises Iheanacho After Celtic VAR Penalty Win is central to this update for Kenyan readers.
 
 ## Iheanacho: The Quiet Resilience Behind the Parkhead Penalty
 
@@ -35,3 +39,18 @@ In a profession where value is often dictated by the current season, the patienc
 ### What to watch next
 
 The intensity of the schedule will only mount as the season pushes toward its finale. While this penalty win marks a significant psychological breakthrough for Iheanacho, the true test of his comeback begins now. Celtic supporters will be eager to see if he can replicate this composure during the high-pressure fixtures left on the calendar. If he can maintain this physical rhythm, his influence will likely determine how the club concludes its campaign. He has moved beyond the injury, but the real measurement of his consistency begins the moment the next whistle blows.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
