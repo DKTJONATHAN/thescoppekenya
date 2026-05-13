@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [IEBC Prohibits Ballot Photos Ahead of May By-Elections](https://zandani.co.ke/article/iebc-warns-against-ballot-photography-election-offences) - The IEBC warns that photographing or filming marked ballots is an offence punishable by hefty fines or jail time under the Election Offences Act.
 - [Kenya and Côte d'Ivoire Agree to Open Resident Embassies](https://zandani.co.ke/article/kenya-cote-divoire-embassy-agreement-nairobi) - Kenya and Côte d'Ivoire Agree to Open Resident Embassies: President William Ruto hosts the Africa Forward Summit in Nairobi where Kenya and Côte d'Ivoire
 - [Southampton Championship play-off spot at risk over spying probe](https://zandani.co.ke/article/southampton-championship-play-off-spot-at-risk-over-spying-probe) - Southampton Championship play-off spot at risk over spying probe: Southampton faces an EFL disciplinary investigation over alleged training ground spying,
 - [Al Roker Faces CDC Testing Following European Wedding Trip](https://zandani.co.ke/article/al-roker-faces-cdc-testing-following-european-wedding-trip) - Television host Al Roker underwent voluntary health screening by the CDC after returning from his daughter wedding in Paris amid a fatal cruise ship hantavirus outbreak.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Guardiola admits never trusting VAR after controversial Arsenal goal ruling](https://zandani.co.ke/article/guardiola-admits-never-trusting-var-after-controversial-arsenal-goal) - Guardiola admits never trusting VAR after controversial Arsenal g: VAR's Shifting Sands: Guardiola's Distrust Amid Title Race Drama Pep Guardiola has again
 - [Socialites and Influencers Face Financial Hardship After Wealthy Patrons Withdraw Funding](https://zandani.co.ke/article/socialites-and-influencers-face-financial-hardship-after-wealthy-pat) - Socialites and Influencers Face Financial Hardship After Wealthy : Kenyan socialites and influencers are facing financial hardship as wealthy patrons withdraw
 - [Dr Ofweneke criticizes Emmanuel Macron over University of Nairobi visit](https://zandani.co.ke/article/dr-ofweneke-criticizes-emmanuel-macron-university-of-nairobi-visit) - Dr Ofweneke criticizes Emmanuel Macron over University of Nairobi: Comedian Dr Ofweneke has publicly condemned French President Emmanuel Macron for his
-- [Oparanya updates Senate on Metropolitan National SACCO recovery](https://zandani.co.ke/article/oparanya-updates-senate-on-metropolitan-sacco-recovery) - Oparanya updates Senate on Metropolitan National SACCO recovery: CS Wycliffe Oparanya addresses the Senate Trade Committee on fraud investigations and new
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
