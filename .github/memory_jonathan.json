@@ -66,10 +66,10 @@
     "5a41dcf90d76c9f6ce02803e42ed2ee3",
     "604e894fbb22ad4ce281eac97a6c2845",
     "8687afc95e7ea362fd050c02bb5150bd",
-    "93c0e5dce2813361f8fc17ccc5b6ecbd"
+    "93c0e5dce2813361f8fc17ccc5b6ecbd",
+    "d152fddb98efba2a919695b4a049c07d"
   ],
   "style_history": [
-    "Letter Form",
     "Historical Lens",
     "Counterpoint",
     "Personal Reflection",
@@ -98,7 +98,8 @@
     "Historical Lens",
     "Letter Form",
     "Sharp Column",
-    "Counterpoint"
+    "Counterpoint",
+    "Historical Lens"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -149,6 +150,7 @@
     "timeline_shift|devolution|Historical Lens",
     "accountability|Geopolitics|Letter Form",
     "myth_vs_fact|education crisis|Sharp Column",
-    "myth_vs_fact|diplomacy|Counterpoint"
+    "myth_vs_fact|diplomacy|Counterpoint",
+    "timeline_shift|Africa Forward Summit|Historical Lens"
   ]
 }
