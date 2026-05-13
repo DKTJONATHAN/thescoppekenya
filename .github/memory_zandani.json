@@ -189,10 +189,10 @@
     "6cac027d66e43d111e349afd0c6c1881",
     "c70090da6b1ba663e268a950f171a963",
     "1c6257726f2fbfb0aa6d60fbe00e7620",
-    "e064210ebf8471d87344dc28012e6ac2"
+    "e064210ebf8471d87344dc28012e6ac2",
+    "36252defd2e0a78b64dd353ee6682121"
   ],
   "style_history": [
-    "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
     "Receipts Piece",
@@ -221,7 +221,8 @@
     "Reaction Round-up",
     "Trend Take",
     "Receipts Piece",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -273,6 +274,7 @@
     "impact_on_citizens|diplomacy|Reaction Round-up",
     "money_follow|Nairobi|Trend Take",
     "accountability|Flaqo Raz|Receipts Piece",
-    "policy_gap|Africa Forward Summit|Hard News Lead"
+    "policy_gap|Africa Forward Summit|Hard News Lead",
+    "money_follow|entertainment|Reaction Round-up"
   ]
 }
