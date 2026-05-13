@@ -90,10 +90,10 @@
     "1007e42e4f6a9908a76c13fbd36de1a0",
     "6ba309fc823051c1471b9a1068a0df84",
     "b8f1108ba28bae30c0180f26f1150f79",
-    "ae929a33429109409146418ba29c1156"
+    "ae929a33429109409146418ba29c1156",
+    "c11ffc96d7c4ef5c11d9459a792b3fd8"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Power Accountability",
     "Reaction & Voices",
     "Hard News Lead",
@@ -122,7 +122,8 @@
     "Context Backgrounder",
     "Explainer",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction & Voices"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -183,6 +184,7 @@
     "money_follow|KTDA|Context Backgrounder",
     "winners_losers|KNEC|Explainer",
     "policy_gap|NSSF|Power Accountability",
-    "policy_gap|Metropolitan National SACCO|Hard News Lead"
+    "policy_gap|Metropolitan National SACCO|Hard News Lead",
+    "impact_on_citizens|IEBC|Reaction & Voices"
   ]
 }
