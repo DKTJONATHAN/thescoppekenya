@@ -89,10 +89,10 @@
     "dcf3e1aa88e7ede9e29f476196d43c2c",
     "1007e42e4f6a9908a76c13fbd36de1a0",
     "6ba309fc823051c1471b9a1068a0df84",
-    "b8f1108ba28bae30c0180f26f1150f79"
+    "b8f1108ba28bae30c0180f26f1150f79",
+    "ae929a33429109409146418ba29c1156"
   ],
   "style_history": [
-    "Explainer",
     "Context Backgrounder",
     "Power Accountability",
     "Reaction & Voices",
@@ -121,7 +121,8 @@
     "Reaction & Voices",
     "Context Backgrounder",
     "Explainer",
-    "Power Accountability"
+    "Power Accountability",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -181,6 +182,7 @@
     "accountability|Kenya|Reaction & Voices",
     "money_follow|KTDA|Context Backgrounder",
     "winners_losers|KNEC|Explainer",
-    "policy_gap|NSSF|Power Accountability"
+    "policy_gap|NSSF|Power Accountability",
+    "policy_gap|Metropolitan National SACCO|Hard News Lead"
   ]
 }
