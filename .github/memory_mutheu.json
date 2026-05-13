@@ -122,10 +122,10 @@
     "c2a05a263e4d98ad0ee43b039087c72e",
     "8648bf4a653833164835ccbc44242afa",
     "5250ef2ff4a4ee0dbb4888eaf3e52101",
-    "dd12102757b9470a03075b3e9aa807d6"
+    "dd12102757b9470a03075b3e9aa807d6",
+    "3cecebec4c5d5e390f573711ee66423a"
   ],
   "style_history": [
-    "Explainer",
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
@@ -154,7 +154,8 @@
     "Hard News Lead",
     "Trend Take",
     "Profile Beat",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Explainer"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -218,6 +219,7 @@
     "impact_on_citizens|film|Hard News Lead",
     "impact_on_citizens|Veep|Trend Take",
     "policy_gap|hantavirus|Profile Beat",
-    "winners_losers|Good Omens|Reaction Round-up"
+    "winners_losers|Good Omens|Reaction Round-up",
+    "policy_gap|Margaret Cho|Explainer"
   ]
 }
