@@ -1,16 +1,20 @@
 ---
 title: "IEBC Bans Photography at Polling Stations Before By-elections"
 slug: "iebc-bans-photography-at-polling-stations-before-by-elections"
-description: "The IEBC has warned that photography inside polling stations is strictly prohibited to protect ballot secrecy during upcoming by-elections."
+description: "IEBC Bans Photography at Polling Stations Before By-elections: The IEBC has warned that photography inside polling stations is strictly prohibited to protect"
+excerpt: "The Price of a Selfie: The Election Offences Act in the Emurua Dikirr Showdown The IEBC is suddenly obsessed with your smartphone camera. Wh"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/kgTvQXyw/f0ebfc7674e9.jpg"
 category: "Gossip"
 tags: ["iebc", "kenya elections", "emurua dikirr", "uda", "kenya politics", "ballot secrecy"]
+canonical: "https://zandani.co.ke/article/iebc-bans-photography-at-polling-stations-before-by-elections"
 date: "2026-05-13T12:24:12Z"
 dateModified: "2026-05-13T12:24:12Z"
+focusKeyword: "IEBC Bans Photography at Polling Stations Before By-elections"
 schema: "NewsArticle"
 ---
+
+IEBC Bans Photography at Polling Stations Before By-elections is central to this update for Kenyan readers.
 
 ## The Price of a Selfie: The Election Offences Act in the Emurua Dikirr Showdown
 
@@ -39,3 +43,18 @@ This directive transforms the polling station into a space of heightened legal r
 
 ### What to watch next
 Watch the arrest logs on May 14. If the IEBC applies this law with the same intensity they have applied in their warnings, we will see if the threat of a Ksh 1 million fine can actually break the cycle of surveillance. If the law is ignored, the authority of the commission to manage future general elections will be seriously in question.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
