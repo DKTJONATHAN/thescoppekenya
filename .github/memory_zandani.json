@@ -186,10 +186,10 @@
     "03825d7a349dc0375781ab2f94ac07c9",
     "eda2532dd07c9121cbcf3078f385c31f",
     "0988fae3430e9e9ead5333db65c1f8cb",
-    "6cac027d66e43d111e349afd0c6c1881"
+    "6cac027d66e43d111e349afd0c6c1881",
+    "c70090da6b1ba663e268a950f171a963"
   ],
   "style_history": [
-    "Hard News Lead",
     "Profile Beat",
     "Receipts Piece",
     "Trend Take",
@@ -218,7 +218,8 @@
     "Profile Beat",
     "Receipts Piece",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -267,6 +268,7 @@
     "money_follow|Kalasha Awards|Profile Beat",
     "money_follow|media personality|Receipts Piece",
     "timeline_shift|entertainment|Hard News Lead",
-    "impact_on_citizens|diplomacy|Reaction Round-up"
+    "impact_on_citizens|diplomacy|Reaction Round-up",
+    "money_follow|Nairobi|Trend Take"
   ]
 }
