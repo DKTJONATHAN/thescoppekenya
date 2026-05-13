@@ -187,10 +187,10 @@
     "eda2532dd07c9121cbcf3078f385c31f",
     "0988fae3430e9e9ead5333db65c1f8cb",
     "6cac027d66e43d111e349afd0c6c1881",
-    "c70090da6b1ba663e268a950f171a963"
+    "c70090da6b1ba663e268a950f171a963",
+    "1c6257726f2fbfb0aa6d60fbe00e7620"
   ],
   "style_history": [
-    "Profile Beat",
     "Receipts Piece",
     "Trend Take",
     "Hard News Lead",
@@ -219,7 +219,8 @@
     "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Receipts Piece"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -269,6 +270,7 @@
     "money_follow|media personality|Receipts Piece",
     "timeline_shift|entertainment|Hard News Lead",
     "impact_on_citizens|diplomacy|Reaction Round-up",
-    "money_follow|Nairobi|Trend Take"
+    "money_follow|Nairobi|Trend Take",
+    "accountability|Flaqo Raz|Receipts Piece"
   ]
 }
