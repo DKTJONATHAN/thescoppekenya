@@ -93,10 +93,10 @@
     "ae929a33429109409146418ba29c1156",
     "c11ffc96d7c4ef5c11d9459a792b3fd8",
     "2bf561507e56fbfba2b45e4bfcadfeb0",
-    "a1d363fdad43f4a18adb92ef046732c0"
+    "a1d363fdad43f4a18adb92ef046732c0",
+    "02df8973f2689ee7182e5d02c5c97e57"
   ],
   "style_history": [
-    "Hard News Lead",
     "Context Backgrounder",
     "Explainer",
     "Power Accountability",
@@ -125,7 +125,8 @@
     "Hard News Lead",
     "Reaction & Voices",
     "Explainer",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -189,6 +190,7 @@
     "policy_gap|Metropolitan National SACCO|Hard News Lead",
     "impact_on_citizens|IEBC|Reaction & Voices",
     "winners_losers|German Embassy|Explainer",
-    "money_follow|National Treasury|Context Backgrounder"
+    "money_follow|National Treasury|Context Backgrounder",
+    "money_follow|Affordable Housing Programme|Hard News Lead"
   ]
 }
