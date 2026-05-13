@@ -70,10 +70,10 @@
     "d152fddb98efba2a919695b4a049c07d",
     "3a4c86ad84b06e136e75396ba8c6730e",
     "57638969971a6c4103a757848698f866",
-    "a3c828265b34c0d27079b98e9ec50ede"
+    "a3c828265b34c0d27079b98e9ec50ede",
+    "4bff30169011f47caf418ca0d7aab04f"
   ],
   "style_history": [
-    "Sharp Column",
     "Historical Lens",
     "Counterpoint",
     "Personal Reflection",
@@ -102,7 +102,8 @@
     "Historical Lens",
     "Letter Form",
     "Personal Reflection",
-    "Counterpoint"
+    "Counterpoint",
+    "Sharp Column"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -157,6 +158,7 @@
     "timeline_shift|Africa Forward Summit|Historical Lens",
     "money_follow|unpaid care work|Letter Form",
     "impact_on_citizens|corruption|Personal Reflection",
-    "winners_losers|infrastructure|Counterpoint"
+    "winners_losers|infrastructure|Counterpoint",
+    "next_48_hours|El Ni\u00f1o|Sharp Column"
   ]
 }
