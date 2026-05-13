@@ -185,7 +185,8 @@
     "1b964aa832febcac8e712e4f9cab5ec1",
     "67926715d15e26ce23010c61b6be7a56",
     "f3dc4ef761f97e73c98ca5e7ac28285b",
-    "3c9e498f6984aa4e3a8ffcca132ec58b"
+    "3c9e498f6984aa4e3a8ffcca132ec58b",
+    "cfddf3f0f29cc089b0a4e082c44d3ada"
   ],
   "style_history": [
     "Trend Take",
@@ -213,7 +214,8 @@
     "Profile Beat",
     "Reaction Round-up",
     "Receipts Piece",
-    "Trend Take"
+    "Trend Take",
+    "Hard News Lead"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -239,6 +241,7 @@
     "myth_vs_fact|Bien-Aim\u00e9 Baraza|Profile Beat",
     "impact_on_citizens|Magix Enga|Reaction Round-up",
     "accountability|IEBC|Receipts Piece",
-    "money_follow|entertainment|Trend Take"
+    "money_follow|entertainment|Trend Take",
+    "accountability|website error|Hard News Lead"
   ]
 }
