@@ -5612,7 +5612,19 @@
   </url>
   <url>
     <loc>https://zandani.co.ke/article/who-where-how</loc>
-    <lastmod>2026-05-14T15:02:04.425Z</lastmod>
+    <lastmod>2026-05-14T15:12:59.107Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/kenyan-ngos-automatic-transition-pbo-framework</loc>
+    <lastmod>2026-05-14T14:50:27.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zandani.co.ke/article/treasury-proposes-16-percent-vat-on-mobile-money-transactions</loc>
+    <lastmod>2026-05-14T14:47:17.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
