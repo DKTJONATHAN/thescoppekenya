@@ -550,6 +550,8 @@ IM Bank launches KSh 20 billion medium-term note programme is central to this up
 
 IM Bank launches KSh 20 billion medium-term note programme is central to this update for Kenyan readers.
 
+IM Bank launches KSh 20 billion medium-term note programme is central to this update for Kenyan readers.
+
 ## Kenyan Corporate Bonds Surge: I&M Bank Launches KSh 20 Billion Note Programme
 
 I&M Bank Limited has initiated a KSh 20.00 billion medium-term note program, with KSh 10.00 billion sought in its initial public offer. This strategic move capitalizes on Kenya's currently booming corporate bond market, driven by falling interest rates and robust investor demand, aiming to bolster the bank's lending capacity and capital strength.
