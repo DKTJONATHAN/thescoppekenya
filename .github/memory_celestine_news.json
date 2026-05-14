@@ -100,10 +100,10 @@
     "7c14d2d5dfd92ecd33f5278bd384981b",
     "788b6dca403751faae60db9d9546a1f1",
     "02f5b1a2395e3e96fca5fe6f6dce2706",
-    "ddc36cea99350741b69c700ee2d308da"
+    "ddc36cea99350741b69c700ee2d308da",
+    "51aaf142caf54b3ef6beddddd51a10d7"
   ],
   "style_history": [
-    "Power Accountability",
     "Reaction & Voices",
     "Context Backgrounder",
     "Explainer",
@@ -132,7 +132,8 @@
     "Power Accountability",
     "Hard News Lead",
     "Reaction & Voices",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Explainer"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -203,6 +204,7 @@
     "policy_gap|Huduma Kenya|Power Accountability",
     "timeline_shift|NGOs|Hard News Lead",
     "impact_on_citizens|EPRA|Reaction & Voices",
-    "timeline_shift|education|Context Backgrounder"
+    "timeline_shift|education|Context Backgrounder",
+    "impact_on_citizens|German Embassy|Explainer"
   ]
 }
