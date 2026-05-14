@@ -103,7 +103,8 @@
     "b6a153c39630dbbd2ab3fc4d774c6ee3",
     "a62680851c5e8e771eda7d020edfb069",
     "45d1290720946b83e70304e354db6b26",
-    "ff13fec661d122619aaf5eb91ce3056a"
+    "ff13fec661d122619aaf5eb91ce3056a",
+    "40320593cc999fd86db26aa74238709f"
   ],
   "style_history": [
     "Africa Angle",
@@ -126,7 +127,8 @@
     "Explainer",
     "Backgrounder",
     "Hard News Lead",
-    "Africa Angle"
+    "Africa Angle",
+    "Explainer"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -148,6 +150,7 @@
     "winners_losers|Kenya|Explainer",
     "money_follow|Kenya Power|Backgrounder",
     "accountability|Finance Bill 2026|Hard News Lead",
-    "impact_on_citizens|Infinix Smart 20|Africa Angle"
+    "impact_on_citizens|Infinix Smart 20|Africa Angle",
+    "winners_losers|Googlebook|Explainer"
   ]
 }
