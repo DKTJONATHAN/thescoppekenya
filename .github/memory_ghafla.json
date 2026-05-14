@@ -187,7 +187,8 @@
     "f3dc4ef761f97e73c98ca5e7ac28285b",
     "3c9e498f6984aa4e3a8ffcca132ec58b",
     "cfddf3f0f29cc089b0a4e082c44d3ada",
-    "8a9de68ca4146444a1b3e934ad4f2197"
+    "8a9de68ca4146444a1b3e934ad4f2197",
+    "08ef40bea098c248d35a710f961070c2"
   ],
   "style_history": [
     "Trend Take",
@@ -217,7 +218,8 @@
     "Receipts Piece",
     "Trend Take",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -245,6 +247,7 @@
     "accountability|IEBC|Receipts Piece",
     "money_follow|entertainment|Trend Take",
     "accountability|website error|Hard News Lead",
-    "money_follow|aviation|Profile Beat"
+    "money_follow|aviation|Profile Beat",
+    "money_follow|village elders|Reaction Round-up"
   ]
 }
