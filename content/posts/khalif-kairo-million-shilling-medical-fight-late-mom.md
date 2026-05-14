@@ -540,6 +540,8 @@ Khalif Kairo Details Million-Shilling Medical Fight for Late is central to this 
 
 Khalif Kairo Details Million-Shilling Medical Fight for Late is central to this update for Kenyan readers.
 
+Khalif Kairo Details Million-Shilling Medical Fight for Late is central to this update for Kenyan readers.
+
 SLUG: khalif-kairo-million-shilling-medical-fight-late-mom
 excerpt: Khalif Kairo, the Nairobi car dealer, revealed the devastating million-shilling medical fight for his late mother across India and the USA, a battle ultimately lost.
 tags: khalif, kairo, medical, fight, mom, kenyan, celebrity, news, entertainment, kenya IMAGE_KEYWORD: Khalif Kairo luxury cars
