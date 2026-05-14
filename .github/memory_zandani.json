@@ -194,10 +194,10 @@
     "85ad165dedb3b7edcad896d49288e8ae",
     "51fa9901d15d5bc1cf80d2c1ac75ee32",
     "7c6012392173a0356676cdbfc76e2df6",
-    "5bdd09d7262f7655faa38b13a050e8a8"
+    "5bdd09d7262f7655faa38b13a050e8a8",
+    "a1dc0272c65118ad1e5978e8ebfb5342"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Receipts Piece",
     "Profile Beat",
@@ -226,7 +226,8 @@
     "Trend Take",
     "Profile Beat",
     "Receipts Piece",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -283,6 +284,7 @@
     "winners_losers|Kenya|Trend Take",
     "accountability|Pascal Tokodi|Profile Beat",
     "myth_vs_fact|Diana Marua|Receipts Piece",
-    "policy_gap|Nairobi|Hard News Lead"
+    "policy_gap|Nairobi|Hard News Lead",
+    "next_48_hours|Kenya|Reaction Round-up"
   ]
 }
