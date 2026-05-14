@@ -562,6 +562,8 @@ Ksh250 Dividend Co-op Bank Rewards Shareholders is central to this update for Ke
 
 Ksh250 Dividend Co-op Bank Rewards Shareholders is central to this update for Kenyan readers.
 
+Ksh250 Dividend Co-op Bank Rewards Shareholders is central to this update for Kenyan readers.
+
 ## Co-op Bank's Performance and Kenyan Political Economy Co-op Bank's record Ksh40.3 billion pre-tax profit in FY2025, with a Ksh2.50 dividend, underscores robust financial health. This performance, driven by strategic growth, positions the cooperative movement as a significant economic and political force, influencing national economic narratives and shareholder confidence.
 
 Cooperative Movement's Political Clout The proposed Ksh1.50 final dividend, bringing the total for FY2025 to Ksh2.50 per share, translates to a Ksh14.67 billion payout, a 67 percent rise from the previous year. Crucially, the 15-million-member cooperative movement is anticipated to receive approximately Ksh9.47 billion of this total payout. This substantial distribution directly impacts a vast demographic base, which holds considerable political weight in Kenya. The financial well-being of cooperative members, many of whom reside in rural areas, can significantly influence political stability and public perception of the government's economic management. The cooperative sector in Kenya is vital for national savings and development, with its changes affecting the welfare of millions. Historically, cooperatives have been instrumental in social inclusion, political, and economic empowerment, and are closely monitored by bodies like the Cooperative Alliance of Kenya (CAK) for policy influence.

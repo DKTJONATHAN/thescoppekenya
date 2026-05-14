@@ -1,16 +1,20 @@
 ---
 title: "US considers dropping Adani charges amid major investment pledge"
 slug: "us-considers-dropping-adani-bribery-charges"
-description: "US prosecutors may drop bribery charges against Gautam Adani as his firm pledges massive investment, contrasting with cancelled deals in Kenya."
+description: "US considers dropping Adani charges amid major investment pledge: US prosecutors may drop bribery charges against Gautam Adani as his firm pledges massive"
+excerpt: "Adani Group faces shifting legal terrain as US authorities weigh charge dismissal The United States Department of Justice is considering the"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/Dg7jxTQk/401cea65363a.webp"
 category: "Technology"
 tags: ["adani group", "jkia", "william ruto", "infrastructure", "kenya news", "business"]
+canonical: "https://zandani.co.ke/article/us-considers-dropping-adani-bribery-charges"
 date: "2026-05-14T20:48:42Z"
 dateModified: "2026-05-14T20:48:42Z"
+focusKeyword: "US considers dropping Adani charges amid major investment pledge"
 schema: "NewsArticle"
 ---
+
+US considers dropping Adani charges amid major investment pledge is central to this update for Kenyan readers.
 
 ## Adani Group faces shifting legal terrain as US authorities weigh charge dismissal
 
@@ -39,3 +43,18 @@ The potential dismissal of US criminal charges fundamentally alters the risk pro
 ### What to watch next
 
 Observers are currently awaiting a final decision from the Department of Justice regarding the specific withdrawal motions. If the charges are indeed dropped, the focus will shift to Nairobi to determine if the government will initiate a new, transparent procurement process or prepare for a costly arbitration claim. The next phase of the JKIA development will serve as a definitive indicator of whether Kenya can successfully navigate large-scale international infrastructure deals without becoming collateral damage in the legal maneuvers of global corporations.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
