@@ -71,10 +71,10 @@
     "3a4c86ad84b06e136e75396ba8c6730e",
     "57638969971a6c4103a757848698f866",
     "a3c828265b34c0d27079b98e9ec50ede",
-    "4bff30169011f47caf418ca0d7aab04f"
+    "4bff30169011f47caf418ca0d7aab04f",
+    "843dde9177ee8de2df69498c7e2ab0f1"
   ],
   "style_history": [
-    "Historical Lens",
     "Counterpoint",
     "Personal Reflection",
     "Letter Form",
@@ -103,7 +103,8 @@
     "Letter Form",
     "Personal Reflection",
     "Counterpoint",
-    "Sharp Column"
+    "Sharp Column",
+    "Historical Lens"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -159,6 +160,7 @@
     "money_follow|unpaid care work|Letter Form",
     "impact_on_citizens|corruption|Personal Reflection",
     "winners_losers|infrastructure|Counterpoint",
-    "next_48_hours|El Ni\u00f1o|Sharp Column"
+    "next_48_hours|El Ni\u00f1o|Sharp Column",
+    "timeline_shift|digital sovereignty|Historical Lens"
   ]
 }
