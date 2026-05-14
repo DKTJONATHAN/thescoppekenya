@@ -113,10 +113,10 @@
     "4d68252cba317ae7551b81d52134e55e",
     "d6752a0788d9f61cc16daefcb4196392",
     "9929c458de84acdba7adf9d28eff66dd",
-    "f4f2b80aa8b326f3053da5bb7c836ce5"
+    "f4f2b80aa8b326f3053da5bb7c836ce5",
+    "ef89c13efe08257798cf6191759d9cf2"
   ],
   "style_history": [
-    "Stat Story",
     "Tactical Take",
     "Match Report",
     "Player Profile Beat",
@@ -145,7 +145,8 @@
     "Player Profile Beat",
     "Stat Story",
     "Tactical Take",
-    "Cynical Pundit"
+    "Cynical Pundit",
+    "Match Report"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -213,6 +214,7 @@
     "timeline_shift|Celtic FC|Player Profile Beat",
     "money_follow|Scottish Premiership|Stat Story",
     "timeline_shift|Liverpool FC|Tactical Take",
-    "accountability|Stockport County|Cynical Pundit"
+    "accountability|Stockport County|Cynical Pundit",
+    "impact_on_citizens|VAR|Match Report"
   ]
 }
