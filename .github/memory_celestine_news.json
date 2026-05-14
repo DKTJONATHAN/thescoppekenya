@@ -96,10 +96,10 @@
     "a1d363fdad43f4a18adb92ef046732c0",
     "02df8973f2689ee7182e5d02c5c97e57",
     "5e7f2606438c5c39b442a9df96adcdf7",
-    "c5ece2bfce66b49257c200ac7f307394"
+    "c5ece2bfce66b49257c200ac7f307394",
+    "7c14d2d5dfd92ecd33f5278bd384981b"
   ],
   "style_history": [
-    "Power Accountability",
     "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
@@ -128,7 +128,8 @@
     "Context Backgrounder",
     "Hard News Lead",
     "Reaction & Voices",
-    "Explainer"
+    "Explainer",
+    "Power Accountability"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -195,6 +196,7 @@
     "money_follow|National Treasury|Context Backgrounder",
     "money_follow|Affordable Housing Programme|Hard News Lead",
     "myth_vs_fact|EACC|Reaction & Voices",
-    "policy_gap|Ministry of Interior|Explainer"
+    "policy_gap|Ministry of Interior|Explainer",
+    "policy_gap|Huduma Kenya|Power Accountability"
   ]
 }
