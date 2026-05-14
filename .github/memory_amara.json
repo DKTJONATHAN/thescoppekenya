@@ -146,10 +146,10 @@
     "f797a45dc4e285dcd99de3a34f75abe0",
     "026b761cbf0a17e4e6b50decacd8adde",
     "1fd9c6f8ec5348123e02f979165741d2",
-    "686029e96c94725da4f8300da926f54f"
+    "686029e96c94725da4f8300da926f54f",
+    "06447c2343ab7e4e406558f6fcafb825"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
     "Trend Take",
@@ -178,7 +178,8 @@
     "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -209,6 +210,7 @@
     "money_follow|AMVCA|Reaction Round-up",
     "policy_gap|Heineken|Profile Beat",
     "winners_losers|Veekee James|Trend Take",
-    "impact_on_citizens|Alexx Ekubo|Explainer"
+    "impact_on_citizens|Alexx Ekubo|Explainer",
+    "timeline_shift|Frank Edoho|Hard News Lead"
   ]
 }
