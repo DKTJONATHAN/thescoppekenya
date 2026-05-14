@@ -191,10 +191,10 @@
     "1c6257726f2fbfb0aa6d60fbe00e7620",
     "e064210ebf8471d87344dc28012e6ac2",
     "36252defd2e0a78b64dd353ee6682121",
-    "85ad165dedb3b7edcad896d49288e8ae"
+    "85ad165dedb3b7edcad896d49288e8ae",
+    "51fa9901d15d5bc1cf80d2c1ac75ee32"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Receipts Piece",
     "Profile Beat",
     "Hard News Lead",
@@ -223,7 +223,8 @@
     "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -277,6 +278,7 @@
     "accountability|Flaqo Raz|Receipts Piece",
     "policy_gap|Africa Forward Summit|Hard News Lead",
     "money_follow|entertainment|Reaction Round-up",
-    "winners_losers|Kenya|Trend Take"
+    "winners_losers|Kenya|Trend Take",
+    "accountability|Pascal Tokodi|Profile Beat"
   ]
 }
