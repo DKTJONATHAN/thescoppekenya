@@ -128,10 +128,10 @@
     "4bd1255b53b97e4dea28fdd8153e3096",
     "5ce10edb1979b60a870df6f8bfeaa068",
     "3e1cd8f47b19c0af8a144834fc085f19",
-    "e3ccd4856a4d5436c897e033ff5b4519"
+    "e3ccd4856a4d5436c897e033ff5b4519",
+    "7f18e9a3073ed9513c08dfb08ed3b785"
   ],
   "style_history": [
-    "Profile Beat",
     "Explainer",
     "Reaction Round-up",
     "Hard News Lead",
@@ -160,7 +160,8 @@
     "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -230,6 +231,7 @@
     "accountability|television history|Trend Take",
     "timeline_shift|television|Profile Beat",
     "accountability|Melissa Gilbert|Reaction Round-up",
-    "policy_gap|Seinfeld|Hard News Lead"
+    "policy_gap|Seinfeld|Hard News Lead",
+    "impact_on_citizens|Netflix|Explainer"
   ]
 }
