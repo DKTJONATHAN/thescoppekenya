@@ -125,10 +125,10 @@
     "dd12102757b9470a03075b3e9aa807d6",
     "3cecebec4c5d5e390f573711ee66423a",
     "007fcab4d5ac4768962e2244ba7f5dbb",
-    "4bd1255b53b97e4dea28fdd8153e3096"
+    "4bd1255b53b97e4dea28fdd8153e3096",
+    "5ce10edb1979b60a870df6f8bfeaa068"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
@@ -157,7 +157,8 @@
     "Reaction Round-up",
     "Explainer",
     "Hard News Lead",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -224,6 +225,7 @@
     "winners_losers|Good Omens|Reaction Round-up",
     "policy_gap|Margaret Cho|Explainer",
     "accountability|The Bachelorette|Hard News Lead",
-    "accountability|television history|Trend Take"
+    "accountability|television history|Trend Take",
+    "timeline_shift|television|Profile Beat"
   ]
 }
