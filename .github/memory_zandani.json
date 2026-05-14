@@ -196,10 +196,10 @@
     "7c6012392173a0356676cdbfc76e2df6",
     "5bdd09d7262f7655faa38b13a050e8a8",
     "a1dc0272c65118ad1e5978e8ebfb5342",
-    "ab9ac30a08836cdd1bb07b6931fc968f"
+    "ab9ac30a08836cdd1bb07b6931fc968f",
+    "5f130056f3df4bcf7625f76a28ce7b6e"
   ],
   "style_history": [
-    "Receipts Piece",
     "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
@@ -228,7 +228,8 @@
     "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Receipts Piece"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -287,6 +288,7 @@
     "myth_vs_fact|Diana Marua|Receipts Piece",
     "policy_gap|Nairobi|Hard News Lead",
     "next_48_hours|Kenya|Reaction Round-up",
-    "money_follow|Johnnie Walker|Profile Beat"
+    "money_follow|Johnnie Walker|Profile Beat",
+    "myth_vs_fact|impeachment|Receipts Piece"
   ]
 }
