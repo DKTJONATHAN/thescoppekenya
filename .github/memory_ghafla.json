@@ -189,10 +189,10 @@
     "cfddf3f0f29cc089b0a4e082c44d3ada",
     "8a9de68ca4146444a1b3e934ad4f2197",
     "08ef40bea098c248d35a710f961070c2",
-    "bf50cc3bedf9dcb30dd6516c9395c870"
+    "bf50cc3bedf9dcb30dd6516c9395c870",
+    "14c2731997f8744f0f74898d080dcd06"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
     "Hard News Lead",
@@ -221,7 +221,8 @@
     "Hard News Lead",
     "Profile Beat",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Receipts Piece"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -251,6 +252,7 @@
     "accountability|website error|Hard News Lead",
     "money_follow|aviation|Profile Beat",
     "money_follow|village elders|Reaction Round-up",
-    "winners_losers|Kenyan Politics|Trend Take"
+    "winners_losers|Kenyan Politics|Trend Take",
+    "policy_gap|femicide|Receipts Piece"
   ]
 }
