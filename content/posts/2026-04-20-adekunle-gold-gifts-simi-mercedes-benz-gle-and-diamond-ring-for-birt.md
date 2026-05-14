@@ -555,6 +555,8 @@ Adekunle Gold gifts Simi Mercedes-Benz GLE and diamond ring is central to this u
 
 Adekunle Gold gifts Simi Mercedes-Benz GLE and diamond ring is central to this update for Kenyan readers.
 
+Adekunle Gold gifts Simi Mercedes-Benz GLE and diamond ring is central to this update for Kenyan readers.
+
 Afrobeats luminary Adekunle Gold surprised his wife, award-winning singer Simi, with a luxurious Mercedes-Benz GLE and a diamond ring for her 38th birthday on April 19, 2026. A video showcasing the emotional moment quickly went viral, drawing widespread admiration from fans and fellow celebrities across social media platforms.
 
 Adekunle Gold's Grand Birthday Surprise for Simi The spectacular gesture unfolded as Simi emerged to find the high-end vehicle, visibly moved before embracing her husband. This celebration follows a notably eventful period for the couple, who recently welcomed their second child in March 2026. Shortly after this new arrival, Adekunle Gold made headlines by acquiring two new Mercedes-Benz vehicles, which he affectionately named "Taye" and "Kehinde"-Yoruba terms for twins.
