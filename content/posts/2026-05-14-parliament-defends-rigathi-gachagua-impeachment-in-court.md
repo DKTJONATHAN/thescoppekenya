@@ -1,16 +1,20 @@
 ---
 title: "Parliament Defends Rigathi Gachagua Impeachment in Court"
 slug: "parliament-defends-rigathi-gachagua-impeachment-in-court"
-description: "Kenya's Senate and National Assembly are defending the constitutionality of the impeachment of Rigathi Gachagua in ongoing judicial review proceedings."
+description: "Parliament Defends Rigathi Gachagua Impeachment in Court: Kenya's Senate and National Assembly are defending the constitutionality of the impeachment of"
+excerpt: "The Constitutional Tug of War: Why the Senate’s Autonomy is the Real Defendant The Nairobi courtroom air currently feels heavy, thick with t"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/1fM2mYTH/2b37529b4977.jpg"
 category: "Gossip"
 tags: ["rigathi gachagua", "kenyan politics", "senate", "national assembly", "impeachment", "kenyan judiciary"]
+canonical: "https://zandani.co.ke/article/parliament-defends-rigathi-gachagua-impeachment-in-court"
 date: "2026-05-14T19:06:45Z"
 dateModified: "2026-05-14T19:06:45Z"
+focusKeyword: "Parliament Defends Rigathi Gachagua Impeachment in Court"
 schema: "NewsArticle"
 ---
+
+Parliament Defends Rigathi Gachagua Impeachment in Court is central to this update for Kenyan readers.
 
 ## The Constitutional Tug-of-War: Why the Senate’s Autonomy is the Real Defendant
 
@@ -37,3 +41,18 @@ This legal battle represents a crossroads for our democracy. If the High Court f
 ### The Path Forward
 
 The coming weeks will reveal whether the High Court intends to intervene in the internal mechanics of the legislature or if it will uphold the doctrine of separation of powers. All eyes remain on the bench as it deliberates whether the Senate acts as a sovereign entity in these matters. The eventual verdict will serve as the definitive handbook for how future impeachments are conducted. It will set Za Ndani for how much interference is legally permissible when the legislature decides to remove a high-ranking official from office, ultimately defining the limits of power in our republic.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

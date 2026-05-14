@@ -542,6 +542,8 @@ DCI Unveils High-Definition Robot to Defuse Bombs Remotely A is central to this 
 
 DCI Unveils High-Definition Robot to Defuse Bombs Remotely A is central to this update for Kenyan readers.
 
+DCI Unveils High-Definition Robot to Defuse Bombs Remotely A is central to this update for Kenyan readers.
+
 ## DCI Unveils High-Definition Robot: A New Era in Counter-Terrorism? The Directorate of Criminal Investigations (DCI) has introduced a high-definition bomb disposal robot, known as an Explosive Ordnance Disposal (EOD) robot, at the Eldoret International Show 2026. This advanced technology aims to detect, inspect, and neutralise explosive threats remotely, enhancing Kenya's national security apparatus against terrorism.
 
 The Imperative to Defuse Bombs Remotely Amidst Rising Terror Threats Kenya has consistently faced escalating terror threats, primarily from Al-Shabaab, with improvised explosive devices (IEDs) and ambushes against security forces being common attack methods. Recent incidents, including raids that recovered assault rifles and explosive devices intended for Nairobi on February 18, underscore the persistent danger. The DCI's acquisition of robots that can defuse bombs remotely is a strategic move to minimise human risk, as operators can control these machines from hundreds of meters away. The global EOD robot market is experiencing growth due to rising security threats and increasing defense expenditures, highlighting a worldwide recognition of the need for safer bomb disposal options.
