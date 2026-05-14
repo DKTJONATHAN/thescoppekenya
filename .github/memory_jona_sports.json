@@ -116,10 +116,10 @@
     "f4f2b80aa8b326f3053da5bb7c836ce5",
     "ef89c13efe08257798cf6191759d9cf2",
     "4ca6aad63b295277b862bc1efed09cd3",
-    "c2d004b7195f4064cf3ae95d64e8f264"
+    "c2d004b7195f4064cf3ae95d64e8f264",
+    "712a52a879157d24253af89d07bd34eb"
   ],
   "style_history": [
-    "Player Profile Beat",
     "Cynical Pundit",
     "Tactical Take",
     "Match Report",
@@ -148,7 +148,8 @@
     "Cynical Pundit",
     "Match Report",
     "Player Profile Beat",
-    "Stat Story"
+    "Stat Story",
+    "Cynical Pundit"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -219,6 +220,7 @@
     "accountability|Stockport County|Cynical Pundit",
     "impact_on_citizens|VAR|Match Report",
     "impact_on_citizens|Football|Player Profile Beat",
-    "myth_vs_fact|FA Youth Cup|Stat Story"
+    "myth_vs_fact|FA Youth Cup|Stat Story",
+    "accountability|League One|Cynical Pundit"
   ]
 }
