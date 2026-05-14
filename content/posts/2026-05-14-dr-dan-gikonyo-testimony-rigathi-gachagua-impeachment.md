@@ -1,16 +1,20 @@
 ---
 title: "Dr. Dan Gikonyo Testimony on Gachagua Impeachment Sparks Debate"
 slug: "dr-dan-gikonyo-testimony-rigathi-gachagua-impeachment"
-description: "The Karen Hospital CEO Dan Gikonyo faced court scrutiny over Rigathi Gachagua medical records, sparking national discussions on judicial conduct."
+description: "Dr. Dan Gikonyo Testimony on Gachagua Impeachment Sparks Debate: The Karen Hospital CEO Dan Gikonyo faced court scrutiny over Rigathi Gachagua medical records,"
+excerpt: "The Oath vs. The Aura: Decoding the Medical Ethics of Dr. Gikonyo’s Viral Testimony Dr. Dan Gikonyo’s recent courtroom appearance was celebr"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/Mxmw19qS/f442b5f7d7ae.jpg"
 category: "Gossip"
 tags: ["rigathi gachagua", "dan gikonyo", "kenyan politics", "impeachment", "the karen hospital", "kenya judiciary"]
+canonical: "https://zandani.co.ke/article/dr-dan-gikonyo-testimony-rigathi-gachagua-impeachment"
 date: "2026-05-14T20:48:56Z"
 dateModified: "2026-05-14T20:48:56Z"
+focusKeyword: "Dr. Dan Gikonyo Testimony on Gachagua Impeachment Sparks Debate"
 schema: "NewsArticle"
 ---
+
+Dr. Dan Gikonyo Testimony on Gachagua Impeachment Sparks Debate is central to this update for Kenyan readers.
 
 ## The Oath vs. The Aura: Decoding the Medical Ethics of Dr. Gikonyo’s Viral Testimony
 
@@ -43,3 +47,18 @@ This debate matters because it dictates how we perceive justice. When we confuse
 Keep an eye on how future expert witnesses adjust their behavior. Will they emulate Gikonyo’s sharp, short answers to avoid being drawn into political traps? And how will the judiciary respond when a witness’s desire to remain "clinical" starts to impede the flow of information necessary for a fair trial? If the courtroom continues to become a place for performance, we may find that the true facts are the first casualties of the show. Much like the noise surrounding [Kenyan Model Chanel Ayan: Missile Interception in Dubai Exposes The Dark Side of Glamour](https://zandani.co.ke/article/kenyan-model-chanel-ayan-missile-interception-dubai), the flashiness of the event can easily blind us to the actual, often quiet, evidence hidden in plain sight. 
 
 Ultimately, a doctor’s loyalty must be to the patient and the truth, not the gallery.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
