@@ -574,6 +574,8 @@ KAA Unveils 20-Year Masterplan for JKIA Terminal Modernisati is central to this 
 
 KAA Unveils 20-Year Masterplan for JKIA Terminal Modernisati is central to this update for Kenyan readers.
 
+KAA Unveils 20-Year Masterplan for JKIA Terminal Modernisati is central to this update for Kenyan readers.
+
 ## KAA Unveils Ambitious 20-Year Masterplan for JKIA Terminal Modernisation The Kenya Airports Authority (KAA) has presented a comprehensive 20-Year Masterplan (2025-2045) for Jomo Kenyatta International Airport (JKIA) Terminal Modernisation, designed to elevate the facility to a world-class aviation hub. This strategic blueprint aims to increase JKIA's annual passenger handling capacity from 7.5 million to an eventual 27 million, addressing current congestion and enhancing operational efficiency.
 
 Driving Capacity and Efficiency Through JKIA Terminal Modernisation The unveiled 20-Year Masterplan outlines a transformative agenda for Kenya's primary aviation gateway. Presented to staff during a consultative forum on Wednesday, February 26, the plan seeks to expand JKIA's annual passenger handling capacity significantly. KAA Managing Director Mohamud Gedi highlighted that the modernisation effort would first raise the existing terminal's capacity from 7.5 million to 12 million passengers annually. This initial enhancement is intended to alleviate congestion and improve the overall passenger experience. Notably, JKIA has been operating beyond its original design capacity, handling 8.6 million passengers in 2024 and 8.8 million in 2025, exceeding its current limit of 8 million. Projections indicate that existing facilities would reach operational breaking points within three years without intervention.
