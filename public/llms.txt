@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Nigeria Selects Ten Boxers for Commonwealth Games](https://zandani.co.ke/article/nigeria-selects-ten-boxers-for-commonwealth-games) - The Nigeria National Boxing Federation has concluded trials, selecting ten fighters to represent the country at the upcoming Commonwealth Games in Glasgow.
 - [Minority shareholders push for WPP Scangroup board removal](https://zandani.co.ke/article/minority-shareholders-push-for-wpp-scangroup-board-removal) - Minority investors seek to remove the WPP Scangroup board at the upcoming annual general meeting citing massive losses and governance concerns.
 - [Gideon Moi Demands Government Action on Rising Child Abductions](https://zandani.co.ke/article/gideon-moi-demands-government-action-on-rising-child-abductions) - Gideon Moi Demands Government Action on Rising Child Abductions: Former Baringo Senator Gideon Moi has declared the surge in child disappearances a national
 - [How Digital Platforms Collect and Use Data for Personalization](https://zandani.co.ke/article/how-digital-platforms-collect-and-use-data) - Learn how digital service providers process user data to improve content curation, deliver targeted advertising, and monitor site performance metrics.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Trisha Khalid sparks debate on child support and parental roles](https://zandani.co.ke/article/trisha-khalid-sparks-debate-on-child-support-and-parental-roles) - Trisha Khalid sparks debate on child support and parental roles: Actress Trisha Khalid has ignited a discussion in Kenya by urging new partners to support
 - [Understanding Bipolar Disorder and Mental Health Awareness in Kenya](https://zandani.co.ke/article/understanding-bipolar-disorder-and-mental-health-awareness-in-kenya) - Understanding Bipolar Disorder and Mental Health Awareness in Ken: Explore the symptoms and management of bipolar disorder. Kenyan public figures share their
 - [Somalia Holds First Universal Suffrage Election Since Civil War](https://zandani.co.ke/article/somalia-holds-first-universal-suffrage-election-since-civil-war) - Somalia Holds First Universal Suffrage Election Since Civil War: Southwest State in Somalia has successfully conducted its first direct one-person one-vote
-- [Public transport operators announce nationwide strike over fuel costs](https://zandani.co.ke/article/public-transport-operators-announce-nationwide-strike) - Public transport operators announce nationwide strike over fuel c: Kenyan transport operators plan to suspend services and hike fares by 50 percent starting
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
