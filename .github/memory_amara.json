@@ -150,10 +150,10 @@
     "06447c2343ab7e4e406558f6fcafb825",
     "355902396fc9254e08ca200f1eb82091",
     "851577fddf91abd7aa9c9fc715d85acf",
-    "e243cdab966066d15e5ef30456092b36"
+    "e243cdab966066d15e5ef30456092b36",
+    "95d53c0a2c281344e698ac2070dfb878"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Profile Beat",
     "Explainer",
@@ -182,7 +182,8 @@
     "Hard News Lead",
     "Profile Beat",
     "Trend Take",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -217,6 +218,7 @@
     "timeline_shift|Frank Edoho|Hard News Lead",
     "policy_gap|CAF|Profile Beat",
     "money_follow|AMVCA|Trend Take",
-    "myth_vs_fact|divorce|Explainer"
+    "myth_vs_fact|divorce|Explainer",
+    "accountability|Ayra Starr|Hard News Lead"
   ]
 }
