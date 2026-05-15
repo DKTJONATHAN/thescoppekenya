@@ -119,10 +119,10 @@
     "751bc145f3086a01b6487d18ae5d2e98",
     "6531109f505daad535a710b562d6b32f",
     "b23a4ac7563a7b568a19ce19406fb902",
-    "314288e6ea239f30fba8e202d029c8a0"
+    "314288e6ea239f30fba8e202d029c8a0",
+    "cc180e63527980a310bdfee7e5344812"
   ],
   "style_history": [
-    "Explainer",
     "Power Accountability",
     "Markets Report",
     "SME Angle",
@@ -151,7 +151,8 @@
     "SME Angle",
     "Power Accountability",
     "Markets Report",
-    "Backgrounder"
+    "Backgrounder",
+    "Explainer"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -183,6 +184,7 @@
     "impact_on_citizens|Kenya|SME Angle",
     "accountability|Crown Paints|Power Accountability",
     "money_follow|Kenya|Markets Report",
-    "impact_on_citizens|Treasury bills|Backgrounder"
+    "impact_on_citizens|Treasury bills|Backgrounder",
+    "winners_losers|Finance Bill 2026|Explainer"
   ]
 }
