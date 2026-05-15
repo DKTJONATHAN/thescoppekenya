@@ -95,6 +95,8 @@ Bien-Aime Baraza Wears Patrice Lumumba Inspired Outfit at Recent is central to t
 
 Bien-Aime Baraza Wears Patrice Lumumba Inspired Outfit at Recent is central to this update for Kenyan readers.
 
+Bien-Aime Baraza Wears Patrice Lumumba Inspired Outfit at Recent is central to this update for Kenyan readers.
+
 Bien-Aime Baraza Wears Patrice Lumumba Inspired Outfit at Recent  is central to this update for Kenyan readers.
 
 Kenyan musician Bien-Aime Baraza commanded attention at a recent Nairobi event by appearing in an ensemble meticulously modeled after the iconic 1960s attire of Congolese independence leader Patrice Lumumba, complete with a leopard-print hat, horn-rimmed glasses, and a signature cane.
