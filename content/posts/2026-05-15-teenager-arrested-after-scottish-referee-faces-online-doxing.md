@@ -1,16 +1,20 @@
 ---
 title: "Teenager arrested after Scottish referee faces online doxing"
 slug: "teenager-arrested-after-scottish-referee-faces-online-doxing"
-description: "Police have arrested a 19-year-old following the leakage of private details belonging to referee John Beaton after a controversial match."
+description: "Teenager arrested after Scottish referee faces online doxing: Police have arrested a 19-year-old following the leakage of private details belonging to referee"
+excerpt: "The Doxxing Dilemma: Why the Scottish Referee Crisis Serves as a Warning for Kenyan Football A nineteen year old in Scotland recently faced"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/XZrWvkQs/b15233e23961.jpg"
 category: "Sports"
 tags: ["john beaton", "scottish football", "online safety", "data protection", "referee", "international news"]
+canonical: "https://zandani.co.ke/article/teenager-arrested-after-scottish-referee-faces-online-doxing"
 date: "2026-05-15T20:35:44Z"
 dateModified: "2026-05-15T20:35:44Z"
+focusKeyword: "Teenager arrested after Scottish referee faces online doxing"
 schema: "NewsArticle"
 ---
+
+Teenager arrested after Scottish referee faces online doxing is central to this update for Kenyan readers.
 
 ## The Doxxing Dilemma: Why the Scottish Referee Crisis Serves as a Warning for Kenyan Football
 
@@ -37,3 +41,18 @@ The fallout from the John Beaton incident will likely force international league
 The Football Kenya Federation must begin treating digital safety as a fundamental component of referee welfare. It is time to establish a dedicated unit tasked with monitoring credible threats against officials throughout the KPL season. If we fail to address this vulnerability immediately, the next casualty of a controversial penalty decision will not merely be a referee's professional reputation, but their fundamental right to privacy and personal safety.
 
 The digital space has become a tactical battlefield, and at present, our referees are losing the encounter. Security protocols must undergo a transformation before the threats evolve further and reach our doorsteps.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
