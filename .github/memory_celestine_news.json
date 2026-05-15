@@ -103,10 +103,10 @@
     "ddc36cea99350741b69c700ee2d308da",
     "51aaf142caf54b3ef6beddddd51a10d7",
     "f0e30df0e71b477ece8ed935798c0030",
-    "e6effd9787ab0ba483de9f46e1363521"
+    "e6effd9787ab0ba483de9f46e1363521",
+    "de08bdae98f25ab8d1d607776983c3e9"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Reaction & Voices",
     "Context Backgrounder",
@@ -135,7 +135,8 @@
     "Context Backgrounder",
     "Explainer",
     "Hard News Lead",
-    "Power Accountability"
+    "Power Accountability",
+    "Reaction & Voices"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -209,6 +210,7 @@
     "timeline_shift|education|Context Backgrounder",
     "impact_on_citizens|German Embassy|Explainer",
     "accountability|femicide|Hard News Lead",
-    "money_follow|Kenya|Power Accountability"
+    "money_follow|Kenya|Power Accountability",
+    "policy_gap|fuel prices|Reaction & Voices"
   ]
 }
