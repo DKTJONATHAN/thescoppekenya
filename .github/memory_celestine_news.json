@@ -105,10 +105,10 @@
     "f0e30df0e71b477ece8ed935798c0030",
     "e6effd9787ab0ba483de9f46e1363521",
     "de08bdae98f25ab8d1d607776983c3e9",
-    "051e75c9c64fd007084911a60019ce1e"
+    "051e75c9c64fd007084911a60019ce1e",
+    "3fa7abd4801394d1316714b8c84894f7"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Context Backgrounder",
     "Explainer",
     "Hard News Lead",
@@ -137,7 +137,8 @@
     "Hard News Lead",
     "Power Accountability",
     "Reaction & Voices",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -213,6 +214,7 @@
     "accountability|femicide|Hard News Lead",
     "money_follow|Kenya|Power Accountability",
     "policy_gap|fuel prices|Reaction & Voices",
-    "next_48_hours|Kenya|Explainer"
+    "next_48_hours|Kenya|Explainer",
+    "impact_on_citizens|Kenya politics|Hard News Lead"
   ]
 }
