@@ -121,10 +121,10 @@
     "1990a6901e19012c3a82c4ddeb66fb72",
     "55bc0d3b34bdf8ad36ae44893732c8f2",
     "b5741689c6aba1ccab4badd239abeffa",
-    "6453780b4854f27bb8760b71ea883938"
+    "6453780b4854f27bb8760b71ea883938",
+    "d85eaae2e85b87a92047224c9b361d0d"
   ],
   "style_history": [
-    "Cynical Pundit",
     "Tactical Take",
     "Match Report",
     "Player Profile Beat",
@@ -153,7 +153,8 @@
     "Match Report",
     "Player Profile Beat",
     "Stat Story",
-    "Cynical Pundit"
+    "Cynical Pundit",
+    "Match Report"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -229,6 +230,7 @@
     "accountability|Real Madrid|Match Report",
     "winners_losers|Seamus Coleman|Player Profile Beat",
     "myth_vs_fact|Manchester United|Stat Story",
-    "policy_gap|EFL|Cynical Pundit"
+    "policy_gap|EFL|Cynical Pundit",
+    "next_48_hours|Premier League|Match Report"
   ]
 }
