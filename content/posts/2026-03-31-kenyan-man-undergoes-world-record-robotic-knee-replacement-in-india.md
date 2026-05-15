@@ -599,6 +599,8 @@ Kenyan man undergoes world-record robotic knee replacement i is central to this 
 
 Kenyan man undergoes world-record robotic knee replacement i is central to this update for Kenyan readers.
 
+Kenyan man undergoes world-record robotic knee replacement i is central to this update for Kenyan readers.
+
 A man from the country has achieved a world record following a robotic bilateral knee replacement in Faridabad, India. The groundbreaking surgery, performed on July 20, 2025, recognized Victor as the tallest patient to receive the largest knee implant, as announced by Marengo Asia Hospitals.
 
 Pioneering Robotic Orthopaedic Procedure Victor, measuring six-foot-six, had been experiencing debilitating pain in both knees for several months, with walking becoming increasingly challenging despite receiving treatment locally. After consulting various facilities in the country, he travelled to India for advanced medical care. Detailed imaging and evaluation at the Indian facility confirmed a diagnosis of advanced bilateral knee osteoarthritis, necessitating surgical intervention.
