@@ -1,16 +1,20 @@
 ---
 title: "Everton captain Seamus Coleman to depart club after 17 years"
 slug: "everton-captain-seamus-coleman-to-depart-club-after-17-years"
-description: "Everton legend Seamus Coleman will leave the club at the end of the season after a record-breaking 17-year tenure in the Premier League."
+description: "Everton captain Seamus Coleman to depart club after 17 years: Everton legend Seamus Coleman will leave the club at the end of the season after a"
+excerpt: "The Sligo Blueprint: Seamus Coleman and the Art of Longevity Seamus Coleman is leaving Everton after 17 years, ending a career that stands a"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/b51QH7Lj/9d1440aa2a79.jpg"
 category: "Sports"
 tags: ["everton", "premier league", "football", "seamus coleman", "sports news", "kenya sports"]
+canonical: "https://zandani.co.ke/article/everton-captain-seamus-coleman-to-depart-club-after-17-years"
 date: "2026-05-15T10:02:26Z"
 dateModified: "2026-05-15T10:02:26Z"
+focusKeyword: "Everton captain Seamus Coleman to depart club after 17 years"
 schema: "NewsArticle"
 ---
+
+Everton captain Seamus Coleman to depart club after 17 years is central to this update for Kenyan readers.
 
 ## The Sligo Blueprint: Seamus Coleman and the Art of Longevity
 
@@ -35,3 +39,18 @@ The transition from athlete to something else is rarely graceful, yet Coleman ap
 ### What to Watch Next
 
 As the summer break begins, the focus shifts to Coleman's next chapter. While his playing days at Everton are finalized, the question remains whether he will test his resolve in a different coaching environment or remain within the Goodison Park structure to mentor the next generation. Regardless of the path he chooses, his legacy as the model for the modern, loyal professional is already set in stone. He leaves the pitch not just as a defender, but as an architect of a standard that very few will ever reach again.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
