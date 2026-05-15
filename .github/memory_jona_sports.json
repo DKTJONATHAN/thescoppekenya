@@ -119,10 +119,10 @@
     "c2d004b7195f4064cf3ae95d64e8f264",
     "712a52a879157d24253af89d07bd34eb",
     "1990a6901e19012c3a82c4ddeb66fb72",
-    "55bc0d3b34bdf8ad36ae44893732c8f2"
+    "55bc0d3b34bdf8ad36ae44893732c8f2",
+    "b5741689c6aba1ccab4badd239abeffa"
   ],
   "style_history": [
-    "Match Report",
     "Player Profile Beat",
     "Cynical Pundit",
     "Tactical Take",
@@ -151,7 +151,8 @@
     "Stat Story",
     "Cynical Pundit",
     "Match Report",
-    "Player Profile Beat"
+    "Player Profile Beat",
+    "Stat Story"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -225,6 +226,7 @@
     "myth_vs_fact|FA Youth Cup|Stat Story",
     "accountability|League One|Cynical Pundit",
     "accountability|Real Madrid|Match Report",
-    "winners_losers|Seamus Coleman|Player Profile Beat"
+    "winners_losers|Seamus Coleman|Player Profile Beat",
+    "myth_vs_fact|Manchester United|Stat Story"
   ]
 }
