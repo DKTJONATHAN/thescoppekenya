@@ -195,10 +195,10 @@
     "d98032a504145731de73a0babeb7b9b8",
     "fdb1fc884303b2966de8e377026fdde6",
     "bc57259523089f028e8f60c91a5133b6",
-    "e84810349962c3aebce678cde72e9501"
+    "e84810349962c3aebce678cde72e9501",
+    "3a05adebae3a4baa1a4448130a91c81f"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Trend Take",
     "Hard News Lead",
     "Profile Beat",
@@ -227,7 +227,8 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -263,6 +264,7 @@
     "timeline_shift|Dr. Ofweneke|Hard News Lead",
     "accountability|Kenya|Reaction Round-up",
     "winners_losers|transport strike|Trend Take",
-    "impact_on_citizens|child protection|Profile Beat"
+    "impact_on_citizens|child protection|Profile Beat",
+    "money_follow|fuel prices|Hard News Lead"
   ]
 }
