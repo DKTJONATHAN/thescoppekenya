@@ -153,10 +153,10 @@
     "e243cdab966066d15e5ef30456092b36",
     "95d53c0a2c281344e698ac2070dfb878",
     "f91e5f573053c19bc0b7f837fac27b06",
-    "52338f1ac253026b5e7ca30b8b32ec38"
+    "52338f1ac253026b5e7ca30b8b32ec38",
+    "f3dcd6e20c8823bd426e51d416df40ab"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
@@ -185,7 +185,8 @@
     "Explainer",
     "Hard News Lead",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -223,6 +224,7 @@
     "myth_vs_fact|divorce|Explainer",
     "accountability|Ayra Starr|Hard News Lead",
     "winners_losers|Spotify 20|Reaction Round-up",
-    "timeline_shift|Boxing|Trend Take"
+    "timeline_shift|Boxing|Trend Take",
+    "next_48_hours|Legal drama|Profile Beat"
   ]
 }
