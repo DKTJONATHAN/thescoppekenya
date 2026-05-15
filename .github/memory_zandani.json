@@ -203,10 +203,10 @@
     "372414415e98667d2627da5cd5a33c92",
     "1276e5a1050abf5f79910cc079a0cb55",
     "35a0def0e917a8fbd7bd7ee34b326305",
-    "fdb11765f85d44bc104f89a8f9ac3c99"
+    "fdb11765f85d44bc104f89a8f9ac3c99",
+    "93afb58215cf20107efda0cac310d01e"
   ],
   "style_history": [
-    "Profile Beat",
     "Receipts Piece",
     "Reaction Round-up",
     "Trend Take",
@@ -235,7 +235,8 @@
     "Profile Beat",
     "Trend Take",
     "Receipts Piece",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -301,6 +302,7 @@
     "winners_losers|co-parenting|Profile Beat",
     "myth_vs_fact|Kenya|Trend Take",
     "myth_vs_fact|fuel pricing|Receipts Piece",
-    "money_follow|Toyota Harrier|Hard News Lead"
+    "money_follow|Toyota Harrier|Hard News Lead",
+    "impact_on_citizens|Black Tax|Reaction Round-up"
   ]
 }
