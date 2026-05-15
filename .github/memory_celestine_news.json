@@ -101,10 +101,10 @@
     "788b6dca403751faae60db9d9546a1f1",
     "02f5b1a2395e3e96fca5fe6f6dce2706",
     "ddc36cea99350741b69c700ee2d308da",
-    "51aaf142caf54b3ef6beddddd51a10d7"
+    "51aaf142caf54b3ef6beddddd51a10d7",
+    "f0e30df0e71b477ece8ed935798c0030"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Context Backgrounder",
     "Explainer",
     "Hard News Lead",
@@ -133,7 +133,8 @@
     "Hard News Lead",
     "Reaction & Voices",
     "Context Backgrounder",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -205,6 +206,7 @@
     "timeline_shift|NGOs|Hard News Lead",
     "impact_on_citizens|EPRA|Reaction & Voices",
     "timeline_shift|education|Context Backgrounder",
-    "impact_on_citizens|German Embassy|Explainer"
+    "impact_on_citizens|German Embassy|Explainer",
+    "accountability|femicide|Hard News Lead"
   ]
 }
