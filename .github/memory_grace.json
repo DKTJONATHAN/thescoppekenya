@@ -118,10 +118,10 @@
     "e3de9639e10f8515a4c65a271e931d95",
     "751bc145f3086a01b6487d18ae5d2e98",
     "6531109f505daad535a710b562d6b32f",
-    "b23a4ac7563a7b568a19ce19406fb902"
+    "b23a4ac7563a7b568a19ce19406fb902",
+    "314288e6ea239f30fba8e202d029c8a0"
   ],
   "style_history": [
-    "SME Angle",
     "Explainer",
     "Power Accountability",
     "Markets Report",
@@ -150,7 +150,8 @@
     "Explainer",
     "SME Angle",
     "Power Accountability",
-    "Markets Report"
+    "Markets Report",
+    "Backgrounder"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -181,6 +182,7 @@
     "policy_gap|civil forfeiture|Explainer",
     "impact_on_citizens|Kenya|SME Angle",
     "accountability|Crown Paints|Power Accountability",
-    "money_follow|Kenya|Markets Report"
+    "money_follow|Kenya|Markets Report",
+    "impact_on_citizens|Treasury bills|Backgrounder"
   ]
 }
