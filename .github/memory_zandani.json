@@ -200,10 +200,10 @@
     "5f130056f3df4bcf7625f76a28ce7b6e",
     "f1275d0a1aa0e6884b2d676661b7938d",
     "07022bd3d56ef340479f266f970f441e",
-    "372414415e98667d2627da5cd5a33c92"
+    "372414415e98667d2627da5cd5a33c92",
+    "1276e5a1050abf5f79910cc079a0cb55"
   ],
   "style_history": [
-    "Receipts Piece",
     "Trend Take",
     "Hard News Lead",
     "Profile Beat",
@@ -232,7 +232,8 @@
     "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -295,6 +296,7 @@
     "myth_vs_fact|impeachment|Receipts Piece",
     "policy_gap|Nollywood|Hard News Lead",
     "accountability|NACADA|Reaction Round-up",
-    "winners_losers|co-parenting|Profile Beat"
+    "winners_losers|co-parenting|Profile Beat",
+    "myth_vs_fact|Kenya|Trend Take"
   ]
 }
