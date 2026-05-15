@@ -77,10 +77,10 @@
     "bb7a54df55164c25f52884e51bb3d075",
     "8c63c9c99a579c8787d4294dbadcd0ef",
     "a2ab79e9bb44b1fcee8c4f094a4d8866",
-    "5e95ffd2401a871da4f2b1395c732fb4"
+    "5e95ffd2401a871da4f2b1395c732fb4",
+    "9f50713d5a993e4ec10ffa98bdea8a00"
   ],
   "style_history": [
-    "Personal Reflection",
     "Sharp Column",
     "Historical Lens",
     "Letter Form",
@@ -109,7 +109,8 @@
     "Personal Reflection",
     "Sharp Column",
     "Historical Lens",
-    "Letter Form"
+    "Letter Form",
+    "Personal Reflection"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -171,6 +172,7 @@
     "policy_gap|Public health|Personal Reflection",
     "accountability|Kenya|Sharp Column",
     "timeline_shift|retirement|Historical Lens",
-    "impact_on_citizens|Somalia|Letter Form"
+    "impact_on_citizens|Somalia|Letter Form",
+    "policy_gap|Somalia elections|Personal Reflection"
   ]
 }
