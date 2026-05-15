@@ -1,16 +1,20 @@
 ---
 title: "WhatsApp tests status visibility for unsaved contacts"
 slug: "whatsapp-tests-status-visibility-for-unsaved-contacts"
-description: "Meta is testing a new feature on WhatsApp that allows users to show status updates to contacts who have not saved their phone numbers on the platform."
+description: "WhatsApp tests status visibility for unsaved contacts: Meta is testing a new feature on WhatsApp that allows users to show status updates to contacts who have"
+excerpt: "Navigating the Shift: WhatsApp Testing Visibility for Unsaved Contacts WhatsApp has initiated a trial that permits status updates to be view"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/YGHXJPq/b91e407935c5.webp"
 category: "Technology"
 tags: ["whatsapp", "meta", "data privacy", "tech news", "social media"]
+canonical: "https://zandani.co.ke/article/whatsapp-tests-status-visibility-for-unsaved-contacts"
 date: "2026-05-15T06:46:54Z"
 dateModified: "2026-05-15T06:46:54Z"
+focusKeyword: "WhatsApp tests status visibility for unsaved contacts"
 schema: "NewsArticle"
 ---
+
+WhatsApp tests status visibility for unsaved contacts is central to this update for Kenyan readers.
 
 ## Navigating the Shift: WhatsApp Testing Visibility for Unsaved Contacts
 
@@ -41,3 +45,18 @@ If unsaved contacts gain the ability to view a user's status, they may be able t
 As this trial progresses toward a potential global implementation, the nature of user feedback will be a critical factor. There is likely to be significant pressure on Meta to offer more sophisticated, granular control options. Users will likely demand the ability to differentiate between their professional outreach and their personal updates, ensuring that business visibility does not come at the expense of privacy.
 
 The current transition serves as a reminder that as digital tools become more sophisticated, the responsibility for maintaining personal boundaries shifts. Monitoring how Meta balances these new capabilities with user feedback will be essential. As the line between commercial utility and private discourse continues to fade, individuals must remain vigilant in auditing their privacy settings to ensure their digital identity remains secure.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
