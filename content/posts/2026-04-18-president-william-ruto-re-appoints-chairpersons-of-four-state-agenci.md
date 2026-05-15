@@ -587,6 +587,8 @@ President William Ruto re-appoints chairpersons of four stat is central to this 
 
 President William Ruto re-appoints chairpersons of four stat is central to this update for Kenyan readers.
 
+President William Ruto re-appoints chairpersons of four stat is central to this update for Kenyan readers.
+
 President William Ruto has re-appointed chairpersons to four state agencies, effective April 17 and April 20, 2026. The move, announced in a gazette notice dated Friday, April 17, 2026, aims to strengthen leadership and enhance government operations across multiple sectors, including energy and trade.
 
 Key Leadership Roles Extended President Ruto's latest gazette notice confirms the retention of four key figures in strategic government agencies. These re-appointments underscore the administration's continued focus on leadership continuity within vital state corporations and development authorities. The re-appointments aim to enhance operational efficiency across various government functions, aligning with broader initiatives such as the [government's disbursement of Inua Jamii funds to over 430,000 vulnerable households](https://zandani.co.ke/article/government-disburses-inua-jamii-funds-to-over-430-000-vulnerable-hou).
