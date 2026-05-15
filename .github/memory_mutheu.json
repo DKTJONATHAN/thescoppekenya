@@ -136,10 +136,10 @@
     "2c35e6d0a16ee6f6a2f8fd0434f95652",
     "dd755bedd925e38babe56497557be8d4",
     "34939e54d4f4a80a72d7672fe892bdf8",
-    "7ecf4d9cdf30d6d0687f01ca5c2342f4"
+    "7ecf4d9cdf30d6d0687f01ca5c2342f4",
+    "c11f2011efd1422e810fbdcba38aa228"
   ],
   "style_history": [
-    "Profile Beat",
     "Explainer",
     "Trend Take",
     "Reaction Round-up",
@@ -168,7 +168,8 @@
     "Explainer",
     "Profile Beat",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -246,6 +247,7 @@
     "myth_vs_fact|Late-night television|Explainer",
     "next_48_hours|Outlander|Profile Beat",
     "myth_vs_fact|Outlander|Trend Take",
-    "money_follow|data-privacy|Hard News Lead"
+    "money_follow|data-privacy|Hard News Lead",
+    "timeline_shift|Sheinelle Jones|Reaction Round-up"
   ]
 }
