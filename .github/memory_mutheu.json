@@ -138,10 +138,10 @@
     "34939e54d4f4a80a72d7672fe892bdf8",
     "7ecf4d9cdf30d6d0687f01ca5c2342f4",
     "c11f2011efd1422e810fbdcba38aa228",
-    "6b159aee96adc6686ce6c7ee3f725606"
+    "6b159aee96adc6686ce6c7ee3f725606",
+    "471cdb3cf57e3567c74e89687ea7dee0"
   ],
   "style_history": [
-    "Trend Take",
     "Reaction Round-up",
     "Hard News Lead",
     "Explainer",
@@ -170,7 +170,8 @@
     "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -250,6 +251,7 @@
     "myth_vs_fact|Outlander|Trend Take",
     "money_follow|data-privacy|Hard News Lead",
     "timeline_shift|Sheinelle Jones|Reaction Round-up",
-    "impact_on_citizens|Martin Short|Explainer"
+    "impact_on_citizens|Martin Short|Explainer",
+    "winners_losers|Outlander|Trend Take"
   ]
 }
