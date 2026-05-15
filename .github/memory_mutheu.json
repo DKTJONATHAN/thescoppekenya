@@ -133,10 +133,10 @@
     "296dd91938c352f379073f95db666996",
     "92c6f2ac22309002604943186c72b681",
     "da0318e2010f76a9b102ee9486052605",
-    "2c35e6d0a16ee6f6a2f8fd0434f95652"
+    "2c35e6d0a16ee6f6a2f8fd0434f95652",
+    "dd755bedd925e38babe56497557be8d4"
   ],
   "style_history": [
-    "Explainer",
     "Reaction Round-up",
     "Hard News Lead",
     "Profile Beat",
@@ -165,7 +165,8 @@
     "Profile Beat",
     "Trend Take",
     "Reaction Round-up",
-    "Explainer"
+    "Explainer",
+    "Profile Beat"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -240,6 +241,7 @@
     "impact_on_citizens|Sports Illustrated|Profile Beat",
     "impact_on_citizens|Science Fiction|Trend Take",
     "impact_on_citizens|relationship|Reaction Round-up",
-    "myth_vs_fact|Late-night television|Explainer"
+    "myth_vs_fact|Late-night television|Explainer",
+    "next_48_hours|Outlander|Profile Beat"
   ]
 }
