@@ -184,6 +184,8 @@ IEBC Bans Photography at Polling Stations Before By-elections is central to this
 
 IEBC Bans Photography at Polling Stations Before By-elections is central to this update for Kenyan readers.
 
+IEBC Bans Photography at Polling Stations Before By-elections is central to this update for Kenyan readers.
+
 ## The Price of a Selfie: The Election Offences Act in the Emurua Dikirr Showdown
 
 The IEBC is suddenly obsessed with your smartphone camera. While voters prepare for tomorrow's by-elections, a stern warning against photography at polling stations has turned the simple act of a ballot selfie into a high-stakes legal trap carrying heavy penalties.
