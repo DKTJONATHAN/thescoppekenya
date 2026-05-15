@@ -108,7 +108,8 @@
     "beb545b420ba3b9b653b7f276895efd5",
     "3b100f70fa4422bd7223a4563b850a37",
     "0f2e36f809f58e9b58c894fb2df654d9",
-    "01cbd17941c89f330c47b79951bd739e"
+    "01cbd17941c89f330c47b79951bd739e",
+    "d49dc99cc9fa27cb6c071f97cde1c4c7"
   ],
   "style_history": [
     "Africa Angle",
@@ -136,7 +137,8 @@
     "Critical Take",
     "Hard News Lead",
     "Backgrounder",
-    "Explainer"
+    "Explainer",
+    "Critical Take"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -163,6 +165,7 @@
     "impact_on_citizens|Finance Bill 2026|Critical Take",
     "accountability|Adani Group|Hard News Lead",
     "impact_on_citizens|WhatsApp|Backgrounder",
-    "winners_losers|Safaricom|Explainer"
+    "winners_losers|Safaricom|Explainer",
+    "money_follow|Matatu|Critical Take"
   ]
 }
