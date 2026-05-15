@@ -79,10 +79,10 @@
     "a2ab79e9bb44b1fcee8c4f094a4d8866",
     "5e95ffd2401a871da4f2b1395c732fb4",
     "9f50713d5a993e4ec10ffa98bdea8a00",
-    "acefd62e24bb76635417a9cc5a48ce8a"
+    "acefd62e24bb76635417a9cc5a48ce8a",
+    "11dfaf1a08a7ae0e00e0fe69d596e6ee"
   ],
   "style_history": [
-    "Historical Lens",
     "Letter Form",
     "Counterpoint",
     "Sharp Column",
@@ -111,7 +111,8 @@
     "Historical Lens",
     "Letter Form",
     "Personal Reflection",
-    "Counterpoint"
+    "Counterpoint",
+    "Sharp Column"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -175,6 +176,7 @@
     "timeline_shift|retirement|Historical Lens",
     "impact_on_citizens|Somalia|Letter Form",
     "policy_gap|Somalia elections|Personal Reflection",
-    "myth_vs_fact|IVF|Counterpoint"
+    "myth_vs_fact|IVF|Counterpoint",
+    "policy_gap|Kibera|Sharp Column"
   ]
 }
