@@ -76,10 +76,10 @@
     "9962d1410e9534fb061ab2f270c75cd9",
     "bb7a54df55164c25f52884e51bb3d075",
     "8c63c9c99a579c8787d4294dbadcd0ef",
-    "a2ab79e9bb44b1fcee8c4f094a4d8866"
+    "a2ab79e9bb44b1fcee8c4f094a4d8866",
+    "5e95ffd2401a871da4f2b1395c732fb4"
   ],
   "style_history": [
-    "Counterpoint",
     "Personal Reflection",
     "Sharp Column",
     "Historical Lens",
@@ -108,7 +108,8 @@
     "Letter Form",
     "Personal Reflection",
     "Sharp Column",
-    "Historical Lens"
+    "Historical Lens",
+    "Letter Form"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -169,6 +170,7 @@
     "accountability|National Liberal Party|Letter Form",
     "policy_gap|Public health|Personal Reflection",
     "accountability|Kenya|Sharp Column",
-    "timeline_shift|retirement|Historical Lens"
+    "timeline_shift|retirement|Historical Lens",
+    "impact_on_citizens|Somalia|Letter Form"
   ]
 }
