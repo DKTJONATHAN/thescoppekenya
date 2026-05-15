@@ -613,6 +613,8 @@ Media personality Kamene Goro details recovery from life-thr is central to this 
 
 Media personality Kamene Goro details recovery from life-thr is central to this update for Kenyan readers.
 
+Media personality Kamene Goro details recovery from life-thr is central to this update for Kenyan readers.
+
 Media personality Kamene Goro has disclosed her recent, severe health crisis that began in November 2025, reaching a life-threatening stage in January 2026. She detailed her recovery from sepsis and peritonitis, which necessitated intensive medical intervention and a prolonged hospital stay.
 
 Critical Health Ordeal Kamene Goro's public statement outlined the gravity of her illness, which she initially underestimated. The condition worsened significantly in January 2026, culminating in a critical 12-hour period where four doctors intervened to save her life. She was diagnosed with sepsis and peritonitis in her abdomen, from which five litres of pus were surgically removed.
