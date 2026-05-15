@@ -117,10 +117,10 @@
     "ef89c13efe08257798cf6191759d9cf2",
     "4ca6aad63b295277b862bc1efed09cd3",
     "c2d004b7195f4064cf3ae95d64e8f264",
-    "712a52a879157d24253af89d07bd34eb"
+    "712a52a879157d24253af89d07bd34eb",
+    "1990a6901e19012c3a82c4ddeb66fb72"
   ],
   "style_history": [
-    "Cynical Pundit",
     "Tactical Take",
     "Match Report",
     "Player Profile Beat",
@@ -149,7 +149,8 @@
     "Match Report",
     "Player Profile Beat",
     "Stat Story",
-    "Cynical Pundit"
+    "Cynical Pundit",
+    "Match Report"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -221,6 +222,7 @@
     "impact_on_citizens|VAR|Match Report",
     "impact_on_citizens|Football|Player Profile Beat",
     "myth_vs_fact|FA Youth Cup|Stat Story",
-    "accountability|League One|Cynical Pundit"
+    "accountability|League One|Cynical Pundit",
+    "accountability|Real Madrid|Match Report"
   ]
 }
