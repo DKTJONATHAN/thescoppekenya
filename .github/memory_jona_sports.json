@@ -122,10 +122,10 @@
     "55bc0d3b34bdf8ad36ae44893732c8f2",
     "b5741689c6aba1ccab4badd239abeffa",
     "6453780b4854f27bb8760b71ea883938",
-    "d85eaae2e85b87a92047224c9b361d0d"
+    "d85eaae2e85b87a92047224c9b361d0d",
+    "b98b28ddff38acee0480fe6b3a29ff0b"
   ],
   "style_history": [
-    "Tactical Take",
     "Match Report",
     "Player Profile Beat",
     "Stat Story",
@@ -154,7 +154,8 @@
     "Player Profile Beat",
     "Stat Story",
     "Cynical Pundit",
-    "Match Report"
+    "Match Report",
+    "Tactical Take"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -231,6 +232,7 @@
     "winners_losers|Seamus Coleman|Player Profile Beat",
     "myth_vs_fact|Manchester United|Stat Story",
     "policy_gap|EFL|Cynical Pundit",
-    "next_48_hours|Premier League|Match Report"
+    "next_48_hours|Premier League|Match Report",
+    "impact_on_citizens|referee|Tactical Take"
   ]
 }
