@@ -213,6 +213,8 @@ The Chronicler's Tale: Of Chains and Chart-Toppers is central to this update for
 
 The Chronicler's Tale: Of Chains and Chart-Toppers is central to this update for Kenyan readers.
 
+The Chronicler's Tale: Of Chains and Chart-Toppers is central to this update for Kenyan readers.
+
 The raw morning chill bit at young Frederick’s bare feet as he watched the sunrise paint the Chesapeake Bay in stolen hues. Born Frederick Augustus Washington Bailey, around February 1818, into the unyielding grip of Maryland slavery, his world was a landscape of whips and cotton, a symphony of forced labor and hushed despair. He knew little of his mother, Harriet Bailey, beyond her rare, clandestine visits, trekking twelve miles by night to cradle him before disappearing back to the fields before dawn.
 
 ### The Poison of Knowledge, The Thirst for the Word

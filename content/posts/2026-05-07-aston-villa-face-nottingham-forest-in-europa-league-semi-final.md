@@ -610,6 +610,8 @@ Aston Villa face Nottingham Forest in Europa League semi-final is central to thi
 
 Aston Villa face Nottingham Forest in Europa League semi-final is central to this update for Kenyan readers.
 
+Aston Villa face Nottingham Forest in Europa League semi-final is central to this update for Kenyan readers.
+
 ## The Price of Ambition: Why Villa’s Europa Dream is a Financial Tightrope
 
 Aston Villa stands on the precipice of a defining moment, trailing Nottingham Forest 1-0 in the Europa League semi-final. For Unai Emery, the match is not merely about reversing a deficit but about securing the financial breathing room required to overhaul an aging, expensive squad.
