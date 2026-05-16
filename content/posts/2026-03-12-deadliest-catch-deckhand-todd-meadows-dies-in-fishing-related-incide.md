@@ -640,6 +640,8 @@ Deadliest Catch deckhand Todd Meadows dies in fishing-relate is central to this 
 
 Deadliest Catch deckhand Todd Meadows dies in fishing-relate is central to this update for Kenyan readers.
 
+Deadliest Catch deckhand Todd Meadows dies in fishing-relate is central to this update for Kenyan readers.
+
 Mutheu Ann, Za Ndani
 
 Deadliest Catch Mourns Young Deckhand Todd Meadows The *Deadliest Catch* community is saddened by the passing of 25-year-old deckhand Todd Meadows on February 25, 2026. His death, a fishing-related incident during filming, left Captain Rick Shelford and the *Aleutian Lady* crew heartbroken. Meadows, a father, quickly earned respect for his work ethic and smile.
