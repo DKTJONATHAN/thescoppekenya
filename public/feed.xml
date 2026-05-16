@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sat, 16 May 2026 21:15:54 GMT</pubDate>
+    <pubDate>Sat, 16 May 2026 21:19:34 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[IPOA issues security warning ahead of next general elections]]></title>
+      <link>https://zandani.co.ke/article/ipoa-raises-alarm-over-rising-political-tensions</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/ipoa-raises-alarm-over-rising-political-tensions</guid>
+      <pubDate>Sat, 16 May 2026 21:05:55 GMT</pubDate>
+      <dc:creator><![CDATA[Jonathan Mwaniki]]></dc:creator>
+      <description><![CDATA[Watchdogs are calling for proactive police measures to curb political violence and hate speech as preparations for the 2027 polls begin.]]></description>
+      <enclosure url="https://i.ibb.co/Xr3XG8bj/5bc21ff9813f.webp" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/Xr3XG8bj/5bc21ff9813f.webp" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/Xr3XG8bj/5bc21ff9813f.webp" alt="IPOA issues security warning ahead of next general elections" /><p>Watchdogs are calling for proactive police measures to curb political violence and hate speech as preparations for the 2027 polls begin.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Antoine Semenyo goal secures FA Cup triumph for Manchester City]]></title>
       <link>https://zandani.co.ke/article/antoine-semenyo-goal-secures-fa-cup-triumph-for-manchester-city</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
       <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="2026-03-21-posta-kenya-returns-to-profit-on-huduma-rent-income" /><p>2026-03-21-posta-kenya-returns-to-profit-on-huduma-rent-income: Read key facts, reader impact, and practical next steps. Read key facts, reader impact, and prac</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[2026-03-22-government-routes-ksh-1-46-billion-water-pipeline-through-karura-for]]></title>
-      <link>https://zandani.co.ke/article/2026-03-22-government-routes-ksh-1-46-billion-water-pipeline-through-k</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/2026-03-22-government-routes-ksh-1-46-billion-water-pipeline-through-k</guid>
-      <pubDate>Sat, 16 May 2026 09:19:12 GMT</pubDate>
-      <dc:creator><![CDATA[Za Ndani]]></dc:creator>
-      <description><![CDATA[2026-03-22-government-routes-ksh-1-46-billion-water-pipeline-thro: Read key facts, reader impact, and practical next steps. Read key facts, reader impact, and p]]></description>
-      <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
-      <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="2026-03-22-government-routes-ksh-1-46-billion-water-pipeline-through-karura-for" /><p>2026-03-22-government-routes-ksh-1-46-billion-water-pipeline-thro: Read key facts, reader impact, and practical next steps. Read key facts, reader impact, and p</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
