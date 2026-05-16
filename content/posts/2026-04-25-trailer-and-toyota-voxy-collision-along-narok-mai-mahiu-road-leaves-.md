@@ -685,6 +685,8 @@ Trailer and Toyota Voxy collision along Narok-Mai Mahiu road is central to this 
 
 Trailer and Toyota Voxy collision along Narok-Mai Mahiu road is central to this update for Kenyan readers.
 
+Trailer and Toyota Voxy collision along Narok-Mai Mahiu road is central to this update for Kenyan readers.
+
 Seven individuals died instantly on Saturday, April 25, 2026, after a Toyota Voxy collided with a trailer that reportedly lost its brakes along the Narok-Mai Mahiu road at Duka Moja. The tragic incident, approximately 30 kilometres from Narok town, resulted in all occupants of the Voxy perishing on site.
 
 ## Fatal Collision on Narok-Mai Mahiu Road
