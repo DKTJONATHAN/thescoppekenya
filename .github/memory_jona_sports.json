@@ -130,10 +130,10 @@
     "fa6c4ef0978b431de187159be1fa01f9",
     "83600100b386cf8a44912c7126fd1cf1",
     "732b3371d09ca3aa57c45d5395ce8f40",
-    "b17b7bf6429c93ad7e29c95857f2ddf8"
+    "b17b7bf6429c93ad7e29c95857f2ddf8",
+    "3cfbd4d16bc898edbdb0193868646beb"
   ],
   "style_history": [
-    "Tactical Take",
     "Stat Story",
     "Match Report",
     "Cynical Pundit",
@@ -162,10 +162,10 @@
     "Tactical Take",
     "Player Profile Beat",
     "Cynical Pundit",
-    "Stat Story"
+    "Stat Story",
+    "Match Report"
   ],
   "angle_history": [
-    "impact_on_citizens|football|Cynical Pundit",
     "timeline_shift|Arsenal|Match Report",
     "myth_vs_fact|Arsenal|Stat Story",
     "accountability|Arsenal|Player Profile Beat",
@@ -244,6 +244,7 @@
     "policy_gap|FA Cup|Tactical Take",
     "impact_on_citizens|Scottish Premiership|Player Profile Beat",
     "policy_gap|Celtic FC|Cynical Pundit",
-    "myth_vs_fact|Premier League|Stat Story"
+    "myth_vs_fact|Premier League|Stat Story",
+    "money_follow|FA Cup|Match Report"
   ]
 }
