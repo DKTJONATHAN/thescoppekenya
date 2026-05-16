@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Kakuzi Security Tactics Face Backlash After Viral Videos of Macadamia Theft Disputes](https://zandani.co.ke/article/kakuzi-security-tactics-face-backlash-after-viral-videos-of-macadami) - Kakuzi PLC faces intense public backlash in Murang’a County following viral videos showing aggressive confrontations between security and local residents.
 - [Viral Video of Kenyan Boy Helping Mother Find Husband Sparks Memes](https://zandani.co.ke/article/viral-video-kenyan-boy-mother-husband-search) - A humorous viral video featuring a young Kenyan boy suggesting locations to find a new husband for his mother has captured attention across social media.
 - [IPOA issues security warning ahead of next general elections](https://zandani.co.ke/article/ipoa-raises-alarm-over-rising-political-tensions) - Watchdogs are calling for proactive police measures to curb political violence and hate speech as preparations for the 2027 polls begin.
 - [Antoine Semenyo goal secures FA Cup triumph for Manchester City](https://zandani.co.ke/article/antoine-semenyo-goal-secures-fa-cup-triumph-for-manchester-city) - Manchester City defeated Chelsea in the FA Cup final thanks to an Antoine Semenyo strike, securing a historic domestic cup double for the club.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [John Mbadi to Consult Ruto on Fuel Price Cuts Amid Strike Threat](https://zandani.co.ke/article/john-mbadi-consults-ruto-fuel-price-cuts-strike-threat) - John Mbadi to Consult Ruto on Fuel Price Cuts Amid Strike Threat: Treasury CS John Mbadi plans to discuss fuel price reductions with President Ruto as
 - [President Ruto Defends Sh1.7 Billion State House Renovation](https://zandani.co.ke/article/ruto-defends-sh1-7-billion-state-house-renovation) - President Ruto Defends Sh1.7 Billion State House Renovation: President William Ruto has justified the massive State House renovation as a necessary upgrade to
 - [Remembering Mutula Kilonzo and Kethi Kilonzo's Recent Milestones](https://zandani.co.ke/article/remembering-mutula-kilonzo-and-kethi-kilonzo-academic-milestone) - Remembering Mutula Kilonzo and Kethi Kilonzo's Recent Milestones: Thirteen years after the death of Mutula Kilonzo, the quest for truth remains as his daughter
-- [Mohamed Salah Criticizes Arne Slot Amid Liverpool Instability](https://zandani.co.ke/article/mohamed-salah-criticizes-arne-slot-amid-liverpool-instability) - Mohamed Salah Criticizes Arne Slot Amid Liverpool Instability: Mohamed Salah has publicly questioned Liverpool's tactics following a defeat to Aston Villa as
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
