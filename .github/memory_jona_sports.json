@@ -123,10 +123,10 @@
     "b5741689c6aba1ccab4badd239abeffa",
     "6453780b4854f27bb8760b71ea883938",
     "d85eaae2e85b87a92047224c9b361d0d",
-    "b98b28ddff38acee0480fe6b3a29ff0b"
+    "b98b28ddff38acee0480fe6b3a29ff0b",
+    "623ee893206f3fc30e59286ddf902c12"
   ],
   "style_history": [
-    "Match Report",
     "Player Profile Beat",
     "Stat Story",
     "Tactical Take",
@@ -155,7 +155,8 @@
     "Stat Story",
     "Cynical Pundit",
     "Match Report",
-    "Tactical Take"
+    "Tactical Take",
+    "Player Profile Beat"
   ],
   "angle_history": [
     "winners_losers|Gaelic Games|Player Profile Beat",
@@ -233,6 +234,7 @@
     "myth_vs_fact|Manchester United|Stat Story",
     "policy_gap|EFL|Cynical Pundit",
     "next_48_hours|Premier League|Match Report",
-    "impact_on_citizens|referee|Tactical Take"
+    "impact_on_citizens|referee|Tactical Take",
+    "accountability|Premier League|Player Profile Beat"
   ]
 }
