@@ -85,10 +85,10 @@
     "74c423d7e5edc735f20d3d30022cc07e",
     "b79ac5b84d321e0d49dc1feb80216a88",
     "e29cd8087142fe5a401dc73a764f683e",
-    "8584000ec0053aebdc0adb338cba810b"
+    "8584000ec0053aebdc0adb338cba810b",
+    "a7806201bf331d96f00cc7906125decf"
   ],
   "style_history": [
-    "Letter Form",
     "Sharp Column",
     "Counterpoint",
     "Historical Lens",
@@ -117,7 +117,8 @@
     "Historical Lens",
     "Personal Reflection",
     "Sharp Column",
-    "Counterpoint"
+    "Counterpoint",
+    "Historical Lens"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -187,6 +188,7 @@
     "winners_losers|leadership|Historical Lens",
     "impact_on_citizens|AI-accelerated warfare|Personal Reflection",
     "policy_gap|diplomacy|Sharp Column",
-    "money_follow|geopolitics|Counterpoint"
+    "money_follow|geopolitics|Counterpoint",
+    "timeline_shift|sovereignty|Historical Lens"
   ]
 }
