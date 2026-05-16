@@ -109,10 +109,10 @@
     "3fa7abd4801394d1316714b8c84894f7",
     "a6c06557f1b54543966ea9a8cdf9d9c7",
     "7098c9604e0aec2735a812834a77c615",
-    "257a15bac9facce5ade419ccada2dbdc"
+    "257a15bac9facce5ade419ccada2dbdc",
+    "9809548605f1a52e4d56db8324654342"
   ],
   "style_history": [
-    "Power Accountability",
     "Context Backgrounder",
     "Reaction & Voices",
     "Explainer",
@@ -141,7 +141,8 @@
     "Hard News Lead",
     "Context Backgrounder",
     "Reaction & Voices",
-    "Explainer"
+    "Explainer",
+    "Power Accountability"
   ],
   "angle_history": [
     "impact_on_citizens|Finance Bill 2026|Explainer",
@@ -221,6 +222,7 @@
     "impact_on_citizens|Kenya politics|Hard News Lead",
     "policy_gap|Kenya|Context Backgrounder",
     "impact_on_citizens|NTSA|Reaction & Voices",
-    "winners_losers|oil refinery|Explainer"
+    "winners_losers|oil refinery|Explainer",
+    "money_follow|Affordable Housing Programme|Power Accountability"
   ]
 }
