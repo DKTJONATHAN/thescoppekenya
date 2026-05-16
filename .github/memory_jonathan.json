@@ -82,10 +82,10 @@
     "acefd62e24bb76635417a9cc5a48ce8a",
     "11dfaf1a08a7ae0e00e0fe69d596e6ee",
     "0437d2d57b34a431398c2b8c0f06506b",
-    "74c423d7e5edc735f20d3d30022cc07e"
+    "74c423d7e5edc735f20d3d30022cc07e",
+    "b79ac5b84d321e0d49dc1feb80216a88"
   ],
   "style_history": [
-    "Sharp Column",
     "Historical Lens",
     "Personal Reflection",
     "Letter Form",
@@ -114,7 +114,8 @@
     "Counterpoint",
     "Sharp Column",
     "Letter Form",
-    "Historical Lens"
+    "Historical Lens",
+    "Personal Reflection"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -181,6 +182,7 @@
     "myth_vs_fact|IVF|Counterpoint",
     "policy_gap|Kibera|Sharp Column",
     "money_follow|healthcare|Letter Form",
-    "winners_losers|leadership|Historical Lens"
+    "winners_losers|leadership|Historical Lens",
+    "impact_on_citizens|AI-accelerated warfare|Personal Reflection"
   ]
 }
