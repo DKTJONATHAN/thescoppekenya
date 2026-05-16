@@ -670,6 +670,8 @@ European Commission challenges Meta over ban on third-party is central to this u
 
 European Commission challenges Meta over ban on third-party is central to this update for Kenyan readers.
 
+European Commission challenges Meta over ban on third-party is central to this update for Kenyan readers.
+
 ## WhatsApp's AI Assistant Ban: Europe's Stance and African Tech's Future
 
 The European Commission is challenging Meta over its ban on third-party AI assistants on WhatsApp. This regulatory scrutiny, aimed at restoring open access for competing AI services, holds significant implications for African tech startups seeking distribution channels and for the broader innovation ecosystem across the continent.

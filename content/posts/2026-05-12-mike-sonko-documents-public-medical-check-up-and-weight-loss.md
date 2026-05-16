@@ -294,6 +294,8 @@ Mike Sonko Documents Public Medical Check-up and Weight Loss is central to this 
 
 Mike Sonko Documents Public Medical Check-up and Weight Loss is central to this update for Kenyan readers.
 
+Mike Sonko Documents Public Medical Check-up and Weight Loss is central to this update for Kenyan readers.
+
 ## Mike Sonko’s Viral Health Check: A Prescription for Attention or Advocacy?
 
 Mike Sonko is back in the spotlight, and his latest stunt is as unconventional as his political career. Forget the usual rallies and fiery speeches; this time, the former governor is commanding attention from the clinical comfort of a hospital bed. By livestreaming a weigh-in and an HIV screening, Sonko has managed to polarize the nation. Is he a trailblazer helping to dismantle health-related stigma, or is he simply blurring the boundaries of privacy for a hit of digital engagement?

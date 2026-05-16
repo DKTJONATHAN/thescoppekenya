@@ -671,6 +671,8 @@ State confirms UN-Habitat support for Nairobi flash flood re is central to this 
 
 State confirms UN-Habitat support for Nairobi flash flood re is central to this update for Kenyan readers.
 
+State confirms UN-Habitat support for Nairobi flash flood re is central to this update for Kenyan readers.
+
 The government confirmed today, Monday, March 16, 2026, that UN-Habitat will aid Nairobi's response to recent devastating flash floods. Foreign Affairs Principal Secretary Korir Sing'oei announced the commitment after discussions with Oumar Sylla, UN-Habitat's Africa Office Director, addressing urgent humanitarian and urban management challenges in the city.
 
 UN-Habitat Intervention Confirmed for Flood Crisis
