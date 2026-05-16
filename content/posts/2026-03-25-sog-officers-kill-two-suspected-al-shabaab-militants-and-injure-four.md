@@ -665,6 +665,8 @@ SOG officers kill two suspected Al-Shabaab militants and inj is central to this 
 
 SOG officers kill two suspected Al-Shabaab militants and inj is central to this update for Kenyan readers.
 
+SOG officers kill two suspected Al-Shabaab militants and inj is central to this update for Kenyan readers.
+
 Special Operations Group (SOG) officers neutralized two suspected Al-Shabaab militants and injured four others during an ambush near Sorira, Mandera County, last weekend. The Counter Terrorism Police Unit confirmed the operation yesterday, Tuesday, March 24, thwarting an attempt to infiltrate the border before Eid al-Fitr.
 
 Border Security Intensified After Mandera Ambush
@@ -710,3 +712,18 @@ Nairobi Terror Plot Disrupted This successful border interdiction follows anothe
 - When it happened: include the date or timing if available.
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
