@@ -212,6 +212,8 @@ Bien-Aime and Chiki Kuruka Defend Attendance at Macron Dinner is central to this
 
 Bien-Aime and Chiki Kuruka Defend Attendance at Macron Dinner is central to this update for Kenyan readers.
 
+Bien-Aime and Chiki Kuruka Defend Attendance at Macron Dinner is central to this update for Kenyan readers.
+
 Singer Bien-Aime Baraza and manager Chiki Kuruka have responded to criticism regarding their attendance at a private state dinner for French President Emmanuel Macron. The event, held on May 11, saw the couple join a select group of Kenyan creatives at a gathering hosted by President William Ruto, sparking a public debate over the role of celebrities in diplomatic settings.
 
 ## Bien-Aime Baraza Defends Presence at State Dinner
