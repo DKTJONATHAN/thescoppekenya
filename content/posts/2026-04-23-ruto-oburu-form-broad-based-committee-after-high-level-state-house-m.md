@@ -633,6 +633,8 @@ Ruto Oburu Form Broad-Based Committee After High-Level State is central to this 
 
 Ruto Oburu Form Broad-Based Committee After High-Level State is central to this update for Kenyan readers.
 
+Ruto Oburu Form Broad-Based Committee After High-Level State is central to this update for Kenyan readers.
+
 President William Ruto and Oburu Odinga have established a Broad-Based Management Committee to align government and legislative priorities. The decision followed a consultative State House meeting today involving leadership from the United Democratic Alliance and the Orange Democratic Movement parties.
 
 ## Political Cooperation Framework
