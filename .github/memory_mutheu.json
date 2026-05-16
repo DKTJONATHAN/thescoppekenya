@@ -139,10 +139,10 @@
     "7ecf4d9cdf30d6d0687f01ca5c2342f4",
     "c11f2011efd1422e810fbdcba38aa228",
     "6b159aee96adc6686ce6c7ee3f725606",
-    "471cdb3cf57e3567c74e89687ea7dee0"
+    "471cdb3cf57e3567c74e89687ea7dee0",
+    "789f5d76fe65e1f58939b16d3987120b"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Hard News Lead",
     "Explainer",
     "Profile Beat",
@@ -171,7 +171,8 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|radio|Reaction Round-up",
@@ -252,6 +253,7 @@
     "money_follow|data-privacy|Hard News Lead",
     "timeline_shift|Sheinelle Jones|Reaction Round-up",
     "impact_on_citizens|Martin Short|Explainer",
-    "winners_losers|Outlander|Trend Take"
+    "winners_losers|Outlander|Trend Take",
+    "timeline_shift|Matthew McConaughey|Hard News Lead"
   ]
 }
