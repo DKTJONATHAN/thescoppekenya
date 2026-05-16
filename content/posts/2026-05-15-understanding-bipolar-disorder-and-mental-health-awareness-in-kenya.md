@@ -41,16 +41,34 @@ Mental health has evolved from a private footnote into a significant public poli
 The next stage of this evolution will likely be the normalization of formal mental health leave for those in office. The relentless "always-on" culture that dominated past administrations is facing scrutiny. As the nation approaches the next general election cycle, the true test for those who have disclosed their struggles will be how they balance their well-being against the relentless pressures of the political arena. Ultimately, the question remains: will this newfound transparency spark structural changes in health policy, or is it destined to remain a stylistic trend in the pursuit of relevance?
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

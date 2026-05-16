@@ -39,16 +39,34 @@ This is the ultimate test of character. A lead of 4-2 on aggregate is comforting
 The focus now shifts to the second half at Selhurst Park. The question is not whether Shakhtar will push, but how the Palace defense will absorb the inevitable surge of pressure. If Henrique continues to dictate the tempo and provide that vital outlet, the path to the final will be cleared. All eyes are on the clock as the team prepares to defend a legacy that is currently being forged in real-time. Whether or not they secure their spot, the transformation of this squad into a unit capable of reaching a major final remains a significant milestone for the club. Regardless of the outcome, the conversation in the pubs of South London will be centered on the man who carried the weight of the dream on his boots. The second half promises to be a defining moment in the modern history of the club, testing the resolve of a squad that has already defied expectations time and again.
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

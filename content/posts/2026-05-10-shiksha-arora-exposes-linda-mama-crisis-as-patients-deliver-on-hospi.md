@@ -36,16 +36,34 @@ The incident is not an isolated event but rather a symptom of a wider, systemic 
 The failure of the healthcare system mirrors a broader decline in national service delivery. Just as hospitals fail to provide basic life-saving environments, other critical sectors are showing similar signs of disintegration. Whether it involves the inability to maintain safe, flood-free roadways or the failure to manage essential labor wards, the average citizen is increasingly forced to navigate a country that is struggling to provide the most fundamental necessities. The sight of a woman delivering a child on a hospital floor serves as a grim indictment of a government that has seemingly vacated its responsibilities to the public.
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

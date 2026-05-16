@@ -44,16 +44,34 @@ These modern-day merchants of allure operate their platforms like full businesse
 The ancient Court of the Whispering Baobabs, it is told, eventually faded into legend, its power fragmented, its wisdom dispersed. The Oba's lineage lost its hold, and the grand enclosure crumbled, reclaimed by the very earth from which it rose. The shimmering cloths and rare beads eventually lost their luster, left behind as mere dust motes in the wind. What remained were the baobabs themselves, their ancient trunks still whispering tales of communal bonds and forgotten duties, a silent testament to what was lost when the pursuit of individual glimmer overshadowed the enduring strength of the collective. The new court, too, stands on shifting sands. What echoes will it leave behind when the digital haze eventually clears?
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

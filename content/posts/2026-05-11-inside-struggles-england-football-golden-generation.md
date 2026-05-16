@@ -43,16 +43,34 @@ The ultimate danger for Kenyan football is not a scarcity of talent, but a refus
 The coming transfer window will provide a critical litmus test for our top-tier talent. As players maneuver for new contracts and increased visibility, observers should watch how they balance personal commercial interests with the requirements of national duty. Any evidence that a player’s social media footprint or club-based ego is taking precedence over collective preparation is a signal that a collapse is imminent. Coaches must be prepared to demand absolute professional devotion. If the leadership allows the distractions of the public eye to infiltrate the dressing room, they risk losing the team entirely to the same forces that dismantled England nearly two decades ago. Excellence requires solitude, focus, and a total commitment to the crest above the individual. Anything less is simply a vanity project waiting to fail.
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

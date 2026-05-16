@@ -41,16 +41,34 @@ The intersection of porous perimeter security and targeted trafficking efforts p
 As investigations proceed, authorities are utilizing forensic evidence from the recovered motorcycle to trace the supply chain back to its point of origin in Kitui town. The pressure is mounting on university administrators to reconsider their engagement with off-campus security partners and address the lack of formalized protection for students living outside the immediate campus footprint. Observers should anticipate a shift in regional policy as NACADA moves to initiate mandatory drug-prevention consultations with tertiary institutions. These upcoming discussions will likely determine whether the region adopts a more sophisticated approach to disrupting the logistics of the narcotics trade, or continues to struggle against the fluid movement of traffickers operating on the outskirts of academic life.
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

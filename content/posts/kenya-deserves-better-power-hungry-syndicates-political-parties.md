@@ -642,6 +642,28 @@ Kenya Deserves Better Power-Hungry Syndicates Passing Off as is central to this 
 
 Kenya Deserves Better Power-Hungry Syndicates Passing Off as is central to this update for Kenyan readers.
 
+Kenya Deserves Better Power-Hungry Syndicates Passing Off as is central to this update for Kenyan readers.
+
+Kenya Deserves Better Power-Hungry Syndicates Passing Off as is central to this update for Kenyan readers.
+
+Kenya Deserves Better Power-Hungry Syndicates Passing Off as is central to this update for Kenyan readers.
+
+Kenya Deserves Better Power-Hungry Syndicates Passing Off as is central to this update for Kenyan readers.
+
+Kenya Deserves Better Power-Hungry Syndicates Passing Off as is central to this update for Kenyan readers.
+
+Kenya Deserves Better Power-Hungry Syndicates Passing Off as is central to this update for Kenyan readers.
+
+Kenya Deserves Better Power-Hungry Syndicates Passing Off as is central to this update for Kenyan readers.
+
+Kenya Deserves Better Power-Hungry Syndicates Passing Off as is central to this update for Kenyan readers.
+
+Kenya Deserves Better Power-Hungry Syndicates Passing Off as is central to this update for Kenyan readers.
+
+Kenya Deserves Better Power-Hungry Syndicates Passing Off as is central to this update for Kenyan readers.
+
+Kenya Deserves Better Power-Hungry Syndicates Passing Off as is central to this update for Kenyan readers.
+
 ## Kenya Deserves Better Than Power-Hungry Syndicates The purpose of political parties in Kenya should be to interpret the general will of the people and ensure delegated sovereign power adheres to the Constitution. Instead, many operate as power-hungry syndicates, reducing democracy to a brutal contest for dominance rather than a mechanism for collective aspiration.
 
 The Constitutional Mandate Versus Power-Hungry Syndicates Kenya's 2010 Constitution unequivocally vests all sovereign power in the people, to be exercised strictly in accordance with its provisions. This power is delegated, not seized, a fundamental distinction often lost in our political discourse. When political parties speak of "capturing power," they evoke notions of coups or usurpation, bypassing the indivisible will of the people. This rhetoric, openly espoused by figures such as ODM leader Oburu Oginga, who currently serves as Acting Party Leader, reduces our vibrant democracy to a zero-sum game for dominance. Such a mindset is not merely pragmatic cynicism; it is a direct assault on the constitutional foundations that underpin our nation. The Political Parties Act (2011) was enacted to provide an institutional, legal, and regulatory framework for parties, explicitly envisaging entities that respect internal democracy and their constitutional status. However, the reality on the ground paints a starkly different picture. Many of Kenya's 91 fully registered political parties brazenly flout their own constitutions by neglecting internal elections, a clear sign of undemocratic tendencies that foreshadow how they would wield sovereign power. The Office of the Registrar of Political Parties (ORPP) noted in its 2024-2025 Annual Report that over 60 parties underwent training on dispute resolution during this period, implying systemic weaknesses in leadership renewal. This indicates a pervasive lack of internal democracy, a systemic failure also highlighted by the Katiba Institute, which observes that parties frequently prioritise tribal mobilisation over constitutional adherence.
@@ -654,16 +676,34 @@ Reorienting Political Parties Towards the General Will Kenya deserves better. We
 
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

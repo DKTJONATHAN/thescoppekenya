@@ -43,16 +43,34 @@ The timing of this clarification is strategic. By cementing his position in recr
 The upcoming summer tour logistics will provide the first authentic test of his vision. Observers should monitor how the squad composition evolves during the off-season. If the new signings align with his stated preference for technical discipline and tactical intelligence, it will validate that his recent commentary was not a defensive public relations maneuver, but a genuine roadmap for the future. Slot is playing the long game while critics remain fixated on the short-term scoreboard. He is methodically building a legacy on his own terms, and the club has signaled that it is listening.
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

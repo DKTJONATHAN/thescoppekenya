@@ -39,16 +39,34 @@ Ultimately, this latest controversy serves as another stark reminder of VAR's in
 The lack of consistent application across similar incidents - a point repeatedly hammered home by Allardyce - erodes confidence in the entire process. Fans and pundits alike are left to decipher what constitutes a foul, a handball, or an offside by the whims of individual officials and the often-opaque interpretations of the VAR booth. This isn't just about one goal, or one title race; it's about the integrity and enjoyment of the sport. As many have observed, the system often seems to get it wrong even when it gets it 'right,' producing joyless, buzzkill moments that sap the drama from the game. Perhaps it's time to reflect on some past injustices, such as those highlighted in "READ MORE: Top 10 moments when joyless, buzzkill VAR got it wrong even when it got it right," to see how far we've truly come. Or, rather, how little.
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

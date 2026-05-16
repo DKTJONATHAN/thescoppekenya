@@ -1,16 +1,20 @@
 ---
 title: "Celtic and Hearts set for Scottish Premiership title showdown"
 slug: "celtic-vs-hearts-scottish-premiership-title-decider"
-description: "Celtic host Hearts at Celtic Park in a final day clash to decide the Scottish Premiership title as Hearts seek their first league crown since 1960."
+description: "Celtic and Hearts set for Scottish Premiership title showdown: Celtic host Hearts at Celtic Park in a final day clash to decide the Scottish Premiership title"
+excerpt: "The 64 Year Math: Assessing Hearts’ Statistical Challenge to Celtic’s Dominance Sixty six years have passed since Hearts last occupied the s"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/hJ5S9HHG/6960096e182d.jpg"
 category: "Sports"
 tags: ["football", "scottish premiership", "celtic fc", "hearts fc", "international sports", "football news"]
+canonical: "https://zandani.co.ke/article/celtic-vs-hearts-scottish-premiership-title-decider"
 date: "2026-05-16T08:20:29Z"
 dateModified: "2026-05-16T08:20:29Z"
+focusKeyword: "Celtic and Hearts set for Scottish Premiership title showdown"
 schema: "NewsArticle"
 ---
+
+Celtic and Hearts set for Scottish Premiership title showdown is central to this update for Kenyan readers.
 
 ## The 64-Year Math: Assessing Hearts’ Statistical Challenge to Celtic’s Dominance
 
@@ -35,3 +39,32 @@ The sustainability of the current league hierarchy is under review. Celtic enter
 For the tactical observer, the focus rests on the defensive transition during the opening twenty minutes. Celtic is expected to utilize high-volume possession to stress the opposition's backline. Conversely, Hearts must look to exploit the space vacated by advancing fullbacks to generate clinical opportunities. Should the visitors maintain their structure through the first hour, the pressure will shift to the home management to adjust a system that has seldom been tested under these specific conditions. 
 
 Ultimately, the outcome will likely be determined by the efficiency of each side during the final ten minutes. The match serves as a test of whether systematic discipline can overcome the financial and historical advantages of the league’s most dominant force. Success for the visitors would signify a fundamental change in the league’s competitive landscape, proving that localized anomalies can indeed disrupt long-standing dynastic control.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

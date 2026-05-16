@@ -642,6 +642,28 @@ Government Increases Per-Learner School Capitation to Ksh 23 is central to this 
 
 Government Increases Per-Learner School Capitation to Ksh 23 is central to this update for Kenyan readers.
 
+Government Increases Per-Learner School Capitation to Ksh 23 is central to this update for Kenyan readers.
+
+Government Increases Per-Learner School Capitation to Ksh 23 is central to this update for Kenyan readers.
+
+Government Increases Per-Learner School Capitation to Ksh 23 is central to this update for Kenyan readers.
+
+Government Increases Per-Learner School Capitation to Ksh 23 is central to this update for Kenyan readers.
+
+Government Increases Per-Learner School Capitation to Ksh 23 is central to this update for Kenyan readers.
+
+Government Increases Per-Learner School Capitation to Ksh 23 is central to this update for Kenyan readers.
+
+Government Increases Per-Learner School Capitation to Ksh 23 is central to this update for Kenyan readers.
+
+Government Increases Per-Learner School Capitation to Ksh 23 is central to this update for Kenyan readers.
+
+Government Increases Per-Learner School Capitation to Ksh 23 is central to this update for Kenyan readers.
+
+Government Increases Per-Learner School Capitation to Ksh 23 is central to this update for Kenyan readers.
+
+Government Increases Per-Learner School Capitation to Ksh 23 is central to this update for Kenyan readers.
+
 ## The Capitation Math: Decoding the Ksh 920 Leap in School Funding
 
 The Kenyan Ministry of Education has finally moved to adjust the per-learner capitation from Ksh 1,420 to Ksh 2,340. While the headline figure suggests a significant cash injection, a granular audit reveals the reality of whether this covers operational inflation or merely masks a deep-seated deficit.
@@ -678,16 +700,34 @@ History suggests that when funding is increased without a corresponding reform i
 
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

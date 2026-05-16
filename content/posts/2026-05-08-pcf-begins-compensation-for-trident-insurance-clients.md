@@ -39,16 +39,34 @@ The collapse of Trident and the subsequent scramble for compensation highlights 
 The coming weeks will determine if the PCF portal can handle the volume of applicants or if it will collapse under the weight of its own administrative demands. Policyholders are now watching to see how quickly these claims are processed and if the Ksh 500,000 cap is strictly enforced regardless of the actual loss. Public attention will likely shift toward the audit of these payouts and whether the government will propose stricter regulations to prevent another firm from leaving thousands in the cold. For the people of Kenya, the hope for a stable insurance sector is quickly fading into a cynical wait for the next inevitable failure.
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

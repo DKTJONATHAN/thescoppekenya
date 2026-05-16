@@ -45,16 +45,34 @@ The potential dismissal of US criminal charges fundamentally alters the risk pro
 Observers are currently awaiting a final decision from the Department of Justice regarding the specific withdrawal motions. If the charges are indeed dropped, the focus will shift to Nairobi to determine if the government will initiate a new, transparent procurement process or prepare for a costly arbitration claim. The next phase of the JKIA development will serve as a definitive indicator of whether Kenya can successfully navigate large-scale international infrastructure deals without becoming collateral damage in the legal maneuvers of global corporations.
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

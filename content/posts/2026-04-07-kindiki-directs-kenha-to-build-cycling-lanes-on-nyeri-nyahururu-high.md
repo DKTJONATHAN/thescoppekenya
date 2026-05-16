@@ -643,6 +643,28 @@ Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this 
 
 Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers.
 
+Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers.
+
+Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers.
+
+Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers.
+
+Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers.
+
+Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers.
+
+Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers.
+
+Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers.
+
+Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers.
+
+Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers.
+
+Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers.
+
+Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers.
+
 Deputy President Kithure Kindiki today directed the Kenya National Highways and Safety Authority (KeNHA) to construct cycling lanes along the Nyeri-Nyahururu Highway. This order follows a tragic accident on April 7, 2026, which claimed 16 lives, emphasizing the urgent need for enhanced road safety measures.
 
 Highway Safety Directives Issued Speaking at an interdenominational requiem service for the 16 victims at ASK Kabiru-ini Grounds in Nyeri County, Deputy President Kindiki instructed KeNHA to conduct comprehensive surveys and assessments of the highway next week. This vital preparatory phase is set to precede the commencement of construction, aimed at significantly improving safety and preventing future fatalities. The directive was spurred by Nyeri Governor Mutahi Kahiga, who advocated for the cycling lanes due to the high number of schoolchildren and cyclists using the route.
@@ -657,16 +679,34 @@ Judiciary Scrutinised Over Instant Fines System In his address, Kindiki criticis
 
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

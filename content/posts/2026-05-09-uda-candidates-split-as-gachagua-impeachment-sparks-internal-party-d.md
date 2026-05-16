@@ -31,16 +31,34 @@ While much of the country sees a retreat from the Deputy President’s image, ce
 The divergent reactions among party members expose a long-standing trend of convenience in Kenyan politics. The contrast between candidates who are sanitizing their campaign materials and those who are leaning into the controversy illustrates the performative nature of party loyalty. While those fleeing the fallout demonstrate a calculation rooted in self-preservation, the bold defiance seen in regions like Emurua Dikirr reveals a different, yet equally calculated, use of political optics. This divide proves that for many within the party, regional interests and personal survival remain far more influential than the established directives of the national party leadership.
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

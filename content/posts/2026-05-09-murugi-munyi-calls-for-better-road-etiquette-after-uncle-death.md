@@ -41,16 +41,34 @@ The mounting social media outcry suggests that the National Transport and Safety
 Observers are now looking toward regulatory bodies to see if this public momentum can be converted into lasting policy. The core of the demand is twofold: first, that authorities clarify the legal necessity of yielding, and second, that infrastructure planning finally accounts for the realities of medical transit. The pressure is rising for state agencies to translate this digital activism into actionable reforms that prioritize the lives of patients over the convenience of commuters. Whether through updated traffic laws or improved infrastructure, the message from the public is clear: the current state of road safety is unsustainable.
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

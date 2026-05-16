@@ -41,16 +41,34 @@ The conversation about child welfare has moved from the kitchen table to the flo
 The real test will be whether this is a fleeting statement or the beginning of a sustained legislative push. Keep an eye on whether Moi follows up with specific petitions or if he utilizes his platform to mobilize for concrete changes in security policy. The government now faces a deadline of public expectation. If they do not respond to this invocation of Article 53 (1), expect the pressure to mount from parents who are tired of waiting for their children to return home safely. The upcoming parliamentary sessions will reveal if other politicians have the stomach to join this fight, or if Moi will be the lone voice in the wilderness calling for accountability.
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

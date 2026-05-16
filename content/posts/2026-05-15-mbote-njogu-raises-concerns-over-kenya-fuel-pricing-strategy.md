@@ -47,16 +47,34 @@ Low-income families are bearing the brunt of the current cost-of-living crisis. 
 All eyes are now on the parliamentary energy committee. There is mounting pressure to mandate a clear line-item disclosure for all anti-adulteration fees. If the government fails to provide a verified audit trail justifying these specific costs, the public will likely escalate demands for an independent review of regulatory accounts. The state’s narrative that citizens must pay a premium for fuel purity is wearing thin, and the burden of proof is shifting squarely back onto the regulators.
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.

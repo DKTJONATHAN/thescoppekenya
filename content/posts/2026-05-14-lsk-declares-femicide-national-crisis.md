@@ -45,16 +45,34 @@ The focus now shifts to the upcoming LSK evidentiary report. If the prosecution 
 If the state persists in ignoring the paper trail of its own incompetence, it is not just the legislation that is failing. The very credibility of the courtroom is at stake. A legal system that cannot produce a trial is, for all practical purposes, a system that has decided justice is an optional pursuit. The state must now choose whether to fix the gears of the machine or accept that it is presiding over a collapse of the rule of law.
 
 
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
 
-## Key facts
-- Official announcement details are in this report.
-- Practical impact depends on timelines and enforcement.
-- Readers should verify changes through official channels.
 
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Search-ready summary
+- Who acted: name the person, institution, or group behind the move.
+- What happened: state the action or decision in one sentence.
+- Where it happened: name the location, agency, or platform involved.
+- When it happened: include the date or timing if available.
+- How it happened: explain the method, process, or sequence briefly.
+- Reader impact: explain the practical effect on the audience without turning it into a FAQ.
