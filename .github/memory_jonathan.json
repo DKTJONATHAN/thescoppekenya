@@ -83,10 +83,10 @@
     "11dfaf1a08a7ae0e00e0fe69d596e6ee",
     "0437d2d57b34a431398c2b8c0f06506b",
     "74c423d7e5edc735f20d3d30022cc07e",
-    "b79ac5b84d321e0d49dc1feb80216a88"
+    "b79ac5b84d321e0d49dc1feb80216a88",
+    "e29cd8087142fe5a401dc73a764f683e"
   ],
   "style_history": [
-    "Historical Lens",
     "Personal Reflection",
     "Letter Form",
     "Sharp Column",
@@ -115,7 +115,8 @@
     "Sharp Column",
     "Letter Form",
     "Historical Lens",
-    "Personal Reflection"
+    "Personal Reflection",
+    "Sharp Column"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -183,6 +184,7 @@
     "policy_gap|Kibera|Sharp Column",
     "money_follow|healthcare|Letter Form",
     "winners_losers|leadership|Historical Lens",
-    "impact_on_citizens|AI-accelerated warfare|Personal Reflection"
+    "impact_on_citizens|AI-accelerated warfare|Personal Reflection",
+    "policy_gap|diplomacy|Sharp Column"
   ]
 }
