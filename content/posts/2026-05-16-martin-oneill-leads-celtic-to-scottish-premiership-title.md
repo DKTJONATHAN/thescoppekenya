@@ -1,16 +1,20 @@
 ---
 title: "Martin O'Neill leads Celtic to Scottish Premiership title"
 slug: "martin-oneill-leads-celtic-to-scottish-premiership-title"
-description: "Martin O'Neill secured his fourth Scottish Premiership title after a 3-1 win against Hearts. His future remains uncertain before the cup final."
+description: "Martin O'Neill leads Celtic to Scottish Premiership title: Martin O'Neill secured his fourth Scottish Premiership title after a 3-1 win against Hearts. His"
+excerpt: "Martin O'Neill and the Myth of Celtic FC's Resurgence Celtic fans are currently drowning in a sea of nostalgia at Parkhead, mistaking a temp"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/q3qZh5xP/2cfddff0103c.jpg"
 category: "Sports"
 tags: ["celtic fc", "scottish premiership", "football", "martin oneill", "european football", "sports news"]
+canonical: "https://zandani.co.ke/article/martin-oneill-leads-celtic-to-scottish-premiership-title"
 date: "2026-05-16T18:08:06Z"
 dateModified: "2026-05-16T18:08:06Z"
+focusKeyword: "Martin O'Neill leads Celtic to Scottish Premiership title"
 schema: "NewsArticle"
 ---
+
+Martin O'Neill leads Celtic to Scottish Premiership title is central to this update for Kenyan readers.
 
 ## Martin O'Neill and the Myth of Celtic FC's Resurgence
 
@@ -37,3 +41,18 @@ This victory is not the start of a new era. It is the final gasp of an old one. 
 The upcoming Scottish Cup final against Dunfermline Athletic is now being framed as a potential swan song for O'Neill. Pay attention to how the board acts the day after that match. If they move quickly to confirm a young, modern tactician, they might salvage some dignity. However, if they start entertaining the idea of keeping an interim manager on a permanent basis simply because of the optics of this trophy, then the rot is much deeper than anyone realizes. Watch for whether they succumb to the pressure of keeping the hero of the hour or if they finally demonstrate the backbone to seek a real evolution. 
 
 **Martin O'Neill will be out of a job by July as the board realizes that nostalgic trophies do not solve systemic decline.**
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

@@ -676,6 +676,8 @@ Nairobi-Garissa Highway is central to this update for Kenyan readers.
 
 Nairobi-Garissa Highway is central to this update for Kenyan readers.
 
+Nairobi-Garissa Highway is central to this update for Kenyan readers.
+
 ## Heightened Security Deployed Along Nairobi-Garissa Highway
 
 Inspector General Douglas Kanja has deployed specialised police units to the Nairobi-Garissa Highway following increased insecurity that halted transport services. This move, confirmed by the National Police Service on Wednesday, addresses recent criminal attacks in Tseikuru and Ukasi, believed to be retaliatory assaults after seven residents were killed on April 26.

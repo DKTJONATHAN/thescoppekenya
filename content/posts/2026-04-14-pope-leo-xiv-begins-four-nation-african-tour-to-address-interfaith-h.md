@@ -677,6 +677,8 @@ Pope Leo XIV Begins Four-Nation African Tour to Address Inte is central to this 
 
 Pope Leo XIV Begins Four-Nation African Tour to Address Inte is central to this update for Kenyan readers.
 
+Pope Leo XIV Begins Four-Nation African Tour to Address Inte is central to this update for Kenyan readers.
+
 Pope Leo XIV began a significant four-nation African tour, championing interfaith harmony and addressing humanitarian crises impacting the continent's expanding Catholic population. This high-profile visit is generating considerable buzz across East Africa, with many Kenyans keenly observing.
 
 Pope Leo XIV's Grand African Pilgrimage
