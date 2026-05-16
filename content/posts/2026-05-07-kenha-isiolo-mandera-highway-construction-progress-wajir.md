@@ -634,6 +634,8 @@ KeNHA Progress on Ksh 100 Billion Isiolo-Mandera Highway is central to this upda
 
 KeNHA Progress on Ksh 100 Billion Isiolo-Mandera Highway is central to this update for Kenyan readers.
 
+KeNHA Progress on Ksh 100 Billion Isiolo-Mandera Highway is central to this update for Kenyan readers.
+
 ## KeNHA Progress on the Ksh 100 Billion Isiolo-Mandera Highway
 
 As construction milestones for the 740-kilometre Isiolo-Mandera Highway come into focus, Kenyans are looking beyond the tarmac to the economic reality of the 2028 completion date. This project represents a massive shift in how Northern Kenya connects to the national economy.
