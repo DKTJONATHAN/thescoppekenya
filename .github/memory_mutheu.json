@@ -141,10 +141,10 @@
     "6b159aee96adc6686ce6c7ee3f725606",
     "471cdb3cf57e3567c74e89687ea7dee0",
     "789f5d76fe65e1f58939b16d3987120b",
-    "4a5802bc05699f4088c35d9d3bd98799"
+    "4a5802bc05699f4088c35d9d3bd98799",
+    "97847ce9edb7e14fd33ff616e85dd6ba"
   ],
   "style_history": [
-    "Explainer",
     "Profile Beat",
     "Reaction Round-up",
     "Trend Take",
@@ -173,10 +173,10 @@
     "Explainer",
     "Trend Take",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Profile Beat"
   ],
   "angle_history": [
-    "impact_on_citizens|Disney+|Profile Beat",
     "myth_vs_fact|cognitive test|Explainer",
     "money_follow|Met Gala|Trend Take",
     "accountability|television|Reaction Round-up",
@@ -255,6 +255,7 @@
     "impact_on_citizens|Martin Short|Explainer",
     "winners_losers|Outlander|Trend Take",
     "timeline_shift|Matthew McConaughey|Hard News Lead",
-    "accountability|lawsuit|Reaction Round-up"
+    "accountability|lawsuit|Reaction Round-up",
+    "next_48_hours|Obsession|Profile Beat"
   ]
 }
