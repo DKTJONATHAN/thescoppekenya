@@ -638,6 +638,8 @@ Pre-recorded episodes prevent The View from addressing Pam B is central to this 
 
 Pre-recorded episodes prevent The View from addressing Pam B is central to this update for Kenyan readers.
 
+Pre-recorded episodes prevent The View from addressing Pam B is central to this update for Kenyan readers.
+
 ## The View's Unexpected Silence on Bondi's Exit Fans were buzzing after "The View" co-hosts remained mum on Donald Trump's Thursday dismissal of Attorney General Pam Bondi. Despite their usual candor, a scheduling quirk involving a pre-recorded episode and an Easter break meant the panel couldn't immediately weigh in on the significant political shake-up.
 
 The Uncharacteristic Quiet When news broke Thursday, April 2, 2026, that former President Donald Trump had ousted Attorney General Pam Bondi, many expected "The View" co-hosts to ignite a fiery "Hot Topics" debate on Friday's episode. After all, the panel is renowned for their unfiltered commentary on the Trump administration. Yet, the usual outspoken voices remained curiously quiet, leaving viewers wondering why the headline-making development was completely overlooked. Trump dismissed Bondi as U.S. attorney general after growing frustrated with her performance.
