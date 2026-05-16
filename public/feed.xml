@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sat, 16 May 2026 17:25:12 GMT</pubDate>
+    <pubDate>Sat, 16 May 2026 17:27:18 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Kenya France Defence Pact Sparks Debate Over Judicial Sovereignty]]></title>
+      <link>https://zandani.co.ke/article/kenya-france-defence-pact-sparks-sovereignty-concerns</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-france-defence-pact-sparks-sovereignty-concerns</guid>
+      <pubDate>Sat, 16 May 2026 17:16:38 GMT</pubDate>
+      <dc:creator><![CDATA[Jonathan Mwaniki]]></dc:creator>
+      <description><![CDATA[Kenya faces public scrutiny after signing a defence agreement with France that grants foreign personnel legal jurisdiction for duty related offenses.]]></description>
+      <enclosure url="https://i.ibb.co/WNSCFxz3/e9dd61325fc6.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/WNSCFxz3/e9dd61325fc6.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/WNSCFxz3/e9dd61325fc6.jpg" alt="Kenya France Defence Pact Sparks Debate Over Judicial Sovereignty" /><p>Kenya faces public scrutiny after signing a defence agreement with France that grants foreign personnel legal jurisdiction for duty related offenses.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Clint Black opens up about father's suicide in new memoir]]></title>
       <link>https://zandani.co.ke/article/clint-black-opens-up-about-fathers-suicide-in-new-memoir</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
       <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="2026-03-28-tsc-cruel-blunder-fred-apima-obita-tsc-ruling-exposes-rot" /><p>2026-03-28-tsc-cruel-blunder-fred-apima-obita-tsc-ruling-exposes-: Read key facts, reader impact, and practical next steps. Read key facts, reader impact, and p</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[2026-03-29-somalia-political-crisis-endangers-kenya-border-reopening]]></title>
-      <link>https://zandani.co.ke/article/2026-03-29-somalia-political-crisis-endangers-kenya-border-reopening</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/2026-03-29-somalia-political-crisis-endangers-kenya-border-reopening</guid>
-      <pubDate>Sat, 16 May 2026 09:19:12 GMT</pubDate>
-      <dc:creator><![CDATA[Za Ndani]]></dc:creator>
-      <description><![CDATA[2026-03-29-somalia-political-crisis-endangers-kenya-border-reopen: Read key facts, reader impact, and practical next steps. Read key facts, reader impact, and p]]></description>
-      <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
-      <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="2026-03-29-somalia-political-crisis-endangers-kenya-border-reopening" /><p>2026-03-29-somalia-political-crisis-endangers-kenya-border-reopen: Read key facts, reader impact, and practical next steps. Read key facts, reader impact, and p</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
