@@ -682,6 +682,8 @@ Kenya establishes three-account fund for oil and mineral rev is central to this 
 
 Kenya establishes three-account fund for oil and mineral rev is central to this update for Kenyan readers.
 
+Kenya establishes three-account fund for oil and mineral rev is central to this update for Kenyan readers.
+
 ## Kenya's New Resource Revenue Fund Takes Shape Kenya is establishing a three-account fund for oil and mineral revenues-Stabilisation, Strategic Infrastructure Investment, and Future Generations. This framework aims to safeguard national savings, finance critical projects, and insulate the economy from commodity price volatility, addressing the nation's high public debt and infrastructure financing needs.
 
 Multi-Tiered Revenue Management System Kenya plans to channel future oil and mineral revenues into a three-tiered system: Stabilisation, Strategic Infrastructure Investment, and Future Generations accounts. This structure is designed to safeguard national savings, finance key projects, and shield the economy from potential revenue shocks. Revenues, including the government's share of profit petroleum, royalties, and mining payments, will first deposit into a Central Bank Holding Account before transfer to the specialized accounts within ten days. Kenya's share of profit oil from Turkana fields is projected to increase from 50% in initial phases to 75% at peak output.
