@@ -207,10 +207,10 @@
     "93afb58215cf20107efda0cac310d01e",
     "f09823fc0252f9504f57a4388b33c159",
     "81f89f110b21c46046dbefaadfe7fc5e",
-    "5ae2c2b7d015ffb8c31169c433c72704"
+    "5ae2c2b7d015ffb8c31169c433c72704",
+    "eaffc69ff31d6d2a8b4640c5d66a9409"
   ],
   "style_history": [
-    "Hard News Lead",
     "Profile Beat",
     "Receipts Piece",
     "Trend Take",
@@ -239,7 +239,8 @@
     "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Hard News Lead"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -309,6 +310,7 @@
     "impact_on_citizens|Black Tax|Reaction Round-up",
     "accountability|Fuel Prices|Profile Beat",
     "timeline_shift|Kenya politics|Trend Take",
-    "timeline_shift|Nameless|Receipts Piece"
+    "timeline_shift|Nameless|Receipts Piece",
+    "impact_on_citizens|fuel prices|Hard News Lead"
   ]
 }
