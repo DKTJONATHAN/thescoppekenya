@@ -20,6 +20,7 @@ function catColor(cat: string): string {
   if (c.includes("entertainment")) return "bg-rose-600";
   if (c.includes("politics")) return "bg-blue-700";
   if (c.includes("news")) return "bg-amber-600";
+
   if (c.includes("sports")) return "bg-green-700";
   if (c.includes("tech")) return "bg-cyan-700";
   return "bg-zinc-600";
@@ -29,35 +30,27 @@ function catColor(cat: string): string {
 function proxyImg(url: string, w = 1200): string {
   if (!url) return "/images/placeholder.jpg";
   if (url.endsWith(".svg") || url.startsWith("/")) return url;
-  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:///, ""))}&w=${w}&output=webp&q=85&we`;
+  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${w}&output=webp&q=85&we`;
 }
 
 // ─── OG IMAGE (absolute URL, for social/SEO use only) ────────────────────────
+// IMPORTANT: Social crawlers (Facebook, Twitter) cannot reliably follow
+// wsrv.nl proxy URLs — they may be rate-limited or bot-blocked.
+// We return the original direct image URL so crawlers always reach the image.
 const SITE_URL = "https://zandani.co.ke";
-const DEFAULT_OG_IMAGE = `${SITE_URL}/images/default-og.jpg`;
+const DEFAULT_OG_IMAGE = `${SITE_URL}/images/default-og.jpg`; // fallback
 
 function ogImg(url: string): string {
   if (!url) return DEFAULT_OG_IMAGE;
+  // Local/relative image — make absolute with site domain
   if (url.startsWith("/")) return `${SITE_URL}${url}`;
+  // External image — return the direct URL (no proxy) so crawlers can access it
   return url;
-}
-
-function inferImageMime(url: string): string | null {
-  if (!url) return null;
-  const clean = url.split("?")[0].toLowerCase();
-
-  if (clean.endsWith(".jpg") || clean.endsWith(".jpeg")) return "image/jpeg";
-  if (clean.endsWith(".png")) return "image/png";
-  if (clean.endsWith(".webp")) return "image/webp";
-  if (clean.endsWith(".gif")) return "image/gif";
-  if (clean.endsWith(".svg")) return "image/svg+xml";
-
-  return null;
 }
 
 // ─── WORD COUNT (accurate: strips HTML tags first) ───────────────────────────
 function wordCount(html: string): number {
-  return html.replace(/<[^>]+>/g, "").trim().split(/s+/).filter(Boolean).length;
+  return html.replace(/<[^>]+>/g, "").trim().split(/\s+/).filter(Boolean).length;
 }
 
 // ─── AUTHOR BIOS ──────────────────────────────────────────────────────────────
@@ -74,7 +67,7 @@ const AUTHOR_COLORS: Record<string, string> = {
 };
 
 // ─── AD TYPES CYCLE ───────────────────────────────────────────────────────────
-const adTypes: Array<"inarticle" | "effectivegate" | "horizontal"> = ["inarticle", "effectivegate", "horizontal"];
+const adTypes: Array<'inarticle' | 'effectivegate' | 'horizontal'> = ['inarticle', 'effectivegate', 'horizontal'];
 
 export default function ArticlePage() {
   const { slug } = useParams<{ slug: string }>();
@@ -85,21 +78,11 @@ export default function ArticlePage() {
 
   useEffect(() => {
     setLoading(true);
-    getPostBySlug(slug || "").then((p) => {
+    getPostBySlug(slug || "").then(p => {
       setPost(p || null);
       setLoading(false);
     });
   }, [slug]);
-
-  const normalizedSlug = useMemo(
-    () => (post?.slug || "").replace(/^/+|/+$/g, "").replace(/.md$/, ""),
-    [post?.slug]
-  );
-
-  const categorySlug = useMemo(
-    () => encodeURIComponent((post?.category || "").toLowerCase()),
-    [post?.category]
-  );
 
   const latestPosts = useMemo(() => getLatestPosts(6), []);
   const relatedPosts = useMemo(() => {
@@ -117,13 +100,14 @@ export default function ArticlePage() {
       .slice(0, 3);
   }, [latestPosts, slug, post]);
 
+  // Same-category candidates for internal link weaving
   const sameCategoryLinks = useMemo(() => {
     if (!post) return [] as { slug: string; title: string }[];
     const cat = post.category?.toLowerCase();
     return getAllPosts()
-      .filter((p) => p.slug !== post.slug && p.category?.toLowerCase() === cat)
+      .filter(p => p.slug !== post.slug && p.category?.toLowerCase() === cat)
       .slice(0, 25)
-      .map((p) => ({ slug: p.slug, title: p.title }));
+      .map(p => ({ slug: p.slug, title: p.title }));
   }, [post]);
 
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -132,28 +116,30 @@ export default function ArticlePage() {
   const progressRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
+  // ── Views ──
   useEffect(() => {
-    fetch("/api/get-views")
-      .then((r) => (r.ok ? r.json() : {}))
+    fetch('/api/get-views')
+      .then(r => r.ok ? r.json() : {})
       .then(setViewCounts)
       .catch(() => {});
   }, []);
 
   const currentPostViews = useMemo(() => {
-    if (!normalizedSlug) return 0;
-    return viewCounts[`/article/${normalizedSlug}`] || viewCounts[`/article/${normalizedSlug}/`] || 0;
-  }, [normalizedSlug, viewCounts]);
+    if (!post) return 0;
+    const clean = post.slug.replace(/^\//, '').replace(/\.md$/, '');
+    return viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 0;
+  }, [post, viewCounts]);
 
-  const relatedWithViews = useMemo(
-    () =>
-      relatedPosts.map((p) => {
-        const clean = p.slug.replace(/^/+|/+$/g, "").replace(/.md$/, "");
-        const v = viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 0;
-        return { ...p, views: v };
-      }),
+  const relatedWithViews = useMemo(() =>
+    relatedPosts.map(p => {
+      const clean = p.slug.replace(/^\//, '').replace(/\.md$/, '');
+      const v = viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 0;
+      return { ...p, views: v };
+    }),
     [relatedPosts, viewCounts]
   );
 
+  // ── Preload hero image ──
   useEffect(() => {
     if (!post?.image) return;
     const link = document.createElement("link");
@@ -162,15 +148,13 @@ export default function ArticlePage() {
     link.href = proxyImg(post.image, 1200);
     link.setAttribute("fetchpriority", "high");
     document.head.appendChild(link);
-    return () => {
-      document.head.removeChild(link);
-    };
+    return () => { document.head.removeChild(link); };
   }, [post?.image]);
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
-  }, [slug]);
+  // ── Reset scroll on slug change ──
+  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, [slug]);
 
+  // ── Scroll events: progress bar + scroll-to-top ──
   useEffect(() => {
     let ticking = false;
     const onScroll = () => {
@@ -192,10 +176,10 @@ export default function ArticlePage() {
 
   const scrollToTop = useCallback(() => window.scrollTo({ top: 0, behavior: "smooth" }), []);
 
-  const shareUrl = useMemo(() => {
-    if (typeof window !== "undefined") return window.location.href;
-    return normalizedSlug ? `${SITE_URL}/article/${normalizedSlug}` : SITE_URL;
-  }, [normalizedSlug]);
+  const shareUrl = useMemo(() =>
+    typeof window !== "undefined" ? window.location.href : `${SITE_URL}/article/${post?.slug}`,
+    [post?.slug]
+  );
 
   const handleCopy = useCallback(() => {
     navigator.clipboard.writeText(shareUrl).then(() => {
@@ -205,39 +189,39 @@ export default function ArticlePage() {
   }, [shareUrl]);
 
   const handleWhatsApp = useCallback(() => {
-    window.open(`https://wa.me/?text=${encodeURIComponent(`${post?.title || ""} ${shareUrl}`)}`, "_blank");
+    window.open(`https://wa.me/?text=${encodeURIComponent(post?.title + " " + shareUrl)}`, "_blank");
   }, [post?.title, shareUrl]);
 
+  // ── Weave internal links from same-category posts into the HTML ──
   const wovenHtml = useMemo(() => {
-    if (!post?.htmlContent) return "";
+    if (!post?.htmlContent) return '';
     let html = post.htmlContent;
     if (!sameCategoryLinks.length) return html;
 
-    const STOP = new Set([
-      "the","a","an","and","or","but","of","in","on","for","to","with","by","from","at","is","are","was","were","as","that","this","it","be","has","have","will","their","they","your","our","his","her","its","about","into","over","more","than","then","also","after","before","very","just","said","says"
-    ]);
+    // Stop-words we never want to anchor
+    const STOP = new Set(['the','a','an','and','or','but','of','in','on','for','to','with','by','from','at','is','are','was','were','as','that','this','it','be','has','have','will','their','they','your','our','his','her','its','about','into','over','more','than','then','also','after','before','very','just','said','says']);
 
+    // Build candidate phrases (2-4 word sequences) from each link's title
     type Cand = { phrase: string; slug: string };
     const candidates: Cand[] = [];
-
-    sameCategoryLinks.forEach((link) => {
+    sameCategoryLinks.forEach(link => {
       const words = link.title
-        .replace(/[^ws'-]/g, " ")
-        .split(/s+/)
+        .replace(/[^\w\s'-]/g, ' ')
+        .split(/\s+/)
         .filter(Boolean);
-
       const phrases = new Set<string>();
       for (let n = 4; n >= 2; n--) {
         for (let i = 0; i + n <= words.length; i++) {
           const slice = words.slice(i, i + n);
-          if (slice.some((w) => STOP.has(w.toLowerCase()))) continue;
-          if (slice.every((w) => w.length < 4)) continue;
-          phrases.add(slice.join(" "));
+          if (slice.some(w => STOP.has(w.toLowerCase()))) continue;
+          if (slice.every(w => w.length < 4)) continue;
+          phrases.add(slice.join(' '));
         }
       }
-      phrases.forEach((p) => candidates.push({ phrase: p, slug: link.slug }));
+      phrases.forEach(p => candidates.push({ phrase: p, slug: link.slug }));
     });
 
+    // Shuffle candidates so weaving picks random phrases each render group
     for (let i = candidates.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [candidates[i], candidates[j]] = [candidates[j], candidates[i]];
@@ -246,32 +230,29 @@ export default function ArticlePage() {
     const usedSlugs = new Set<string>();
     const MAX_LINKS = 5;
 
+    // Replace only in text nodes — skip inside existing <a>, headings, code, and html tags
     function replaceInTextNodes(input: string, phrase: string, slug: string): { html: string; replaced: boolean } {
-      const re = new RegExp(`\\b(${phrase.replace(/[.*+?^${}()|[]\\]/g, "\\$&")})\\b`, "i");
+      const re = new RegExp(`\\b(${phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})\\b`, 'i');
+      // Walk html splitting on tags
       const parts = input.split(/(<[^>]+>)/);
-      let depth = 0;
+      let depth = 0; // inside <a>, <h*>, <code>, <pre>
       let replaced = false;
-      const skipTag = /^<s*(a|h[1-6]|code|pre|script|style)\b/i;
-      const closeTag = /^<s*/s*(a|h[1-6]|code|pre|script|style)\b/i;
-
+      const skipTag = /^<\s*(a|h[1-6]|code|pre|script|style)\b/i;
+      const closeTag = /^<\s*\/\s*(a|h[1-6]|code|pre|script|style)\b/i;
       for (let i = 0; i < parts.length; i++) {
         const part = parts[i];
-        if (part.startsWith("<")) {
-          if (skipTag.test(part) && !//>$/.test(part)) depth++;
+        if (part.startsWith('<')) {
+          if (skipTag.test(part) && !/\/>$/.test(part)) depth++;
           else if (closeTag.test(part)) depth = Math.max(0, depth - 1);
           continue;
         }
         if (depth > 0 || replaced) continue;
         if (re.test(part)) {
-          parts[i] = part.replace(
-            re,
-            `<a href="/article/${slug}" class="text-primary underline decoration-primary/40 underline-offset-2 hover:decoration-primary">$1</a>`
-          );
+          parts[i] = part.replace(re, `<a href="/article/${slug}" class="text-primary underline decoration-primary/40 underline-offset-2 hover:decoration-primary">$1</a>`);
           replaced = true;
         }
       }
-
-      return { html: parts.join(""), replaced };
+      return { html: parts.join(''), replaced };
     }
 
     for (const c of candidates) {
@@ -283,26 +264,24 @@ export default function ArticlePage() {
         usedSlugs.add(c.slug);
       }
     }
-
     return html;
   }, [post?.htmlContent, sameCategoryLinks]);
 
+  // ── Content with ads injected every 3 paragraphs ──
   const contentWithAds = useMemo(() => {
     if (!wovenHtml) return [];
     const html = wovenHtml;
     const blocks: string[] = [];
     let lastIndex = 0;
-    const tagRegex = /<(p|h[1-6]|ul|ol|blockquote|figure|table|pre|hr)[s>]/gi;
+    const tagRegex = /<(p|h[1-6]|ul|ol|blockquote|figure|table|pre|hr)[\s>]/gi;
     const tagStarts: number[] = [];
     let m: RegExpExecArray | null;
-
     while ((m = tagRegex.exec(html)) !== null) {
       const before = html.slice(0, m.index);
       const opens = (before.match(/<(?:div|section|aside|blockquote)\b/gi) || []).length;
-      const closes = (before.match(/</(?:div|section|aside|blockquote)>/gi) || []).length;
+      const closes = (before.match(/<\/(?:div|section|aside|blockquote)>/gi) || []).length;
       if (opens - closes <= 0) tagStarts.push(m.index);
     }
-
     for (let i = 0; i < tagStarts.length; i++) {
       if (tagStarts[i] > lastIndex) {
         const gap = html.slice(lastIndex, tagStarts[i]).trim();
@@ -312,19 +291,16 @@ export default function ArticlePage() {
       blocks.push(html.slice(tagStarts[i], end));
       lastIndex = end;
     }
-
     if (lastIndex < html.length) {
       const rem = html.slice(lastIndex).trim();
       if (rem) blocks.push(rem);
     }
-
     const nodes: React.ReactNode[] = [];
     let paraCount = 0;
     let adCount = 0;
-
     blocks.forEach((block, i) => {
       nodes.push(<div key={`b-${i}`} dangerouslySetInnerHTML={{ __html: block }} />);
-      if (/^<p[s>]/i.test(block)) {
+      if (/^<p[\s>]/i.test(block)) {
         paraCount++;
         if (paraCount % 3 === 0) {
           nodes.push(
@@ -336,10 +312,10 @@ export default function ArticlePage() {
         }
       }
     });
-
     return nodes;
   }, [wovenHtml]);
 
+  // ── Formatted date ──
   const formattedDate = useMemo(() => {
     if (!post) return "";
     const dateObj = new Date(post.date);
@@ -348,33 +324,16 @@ export default function ArticlePage() {
     return `${dateStr} at ${timeStr}`;
   }, [post?.date]);
 
-  const postOgImage = useMemo(() => (post ? ogImg(post.image) : DEFAULT_OG_IMAGE), [post?.image]);
-  const postOgImageType = useMemo(() => inferImageMime(postOgImage), [postOgImage]);
+  // ── SEO-ready OG image (absolute, 1200×630) ──
+  const postOgImage = useMemo(() => post ? ogImg(post.image) : DEFAULT_OG_IMAGE, [post?.image]);
 
-  const canonicalUrl = useMemo(
-    () => (normalizedSlug ? `${SITE_URL}/article/${normalizedSlug}` : SITE_URL),
-    [normalizedSlug]
+  // ── Canonical URL ──
+  const canonicalUrl = useMemo(() =>
+    post ? `${SITE_URL}/article/${post.slug}` : SITE_URL,
+    [post?.slug]
   );
 
-  useEffect(() => {
-    if (!canonicalUrl || !post) return;
-
-    document.querySelectorAll('link[rel="canonical"]').forEach((node) => {
-      node.parentNode?.removeChild(node);
-    });
-
-    const link = document.createElement("link");
-    link.setAttribute("rel", "canonical");
-    link.setAttribute("href", canonicalUrl);
-    document.head.appendChild(link);
-
-    return () => {
-      if (document.head.contains(link)) {
-        document.head.removeChild(link);
-      }
-    };
-  }, [canonicalUrl, post]);
-
+  // ── Truncated description (155 chars max) ──
   const metaDescription = useMemo(() => {
     if (!post) return "";
     const fk = (post.focusKeyword || "").trim();
@@ -385,100 +344,83 @@ export default function ArticlePage() {
     return base.slice(0, 157).trim();
   }, [post?.excerpt, post?.focusKeyword]);
 
+  // ── ISO datetime for machine-readable timestamps ──
   const isoPublished = useMemo(() => {
     if (!post) return "";
     const d = new Date(post.date);
     return isNaN(d.getTime()) ? post.date : d.toISOString();
   }, [post?.date]);
 
-  const actualWordCount = useMemo(() => wordCount(post?.htmlContent || ""), [post?.htmlContent]);
+  // ── Schema: NewsArticle (enhanced for Google News) ──
+  const articleSchema = useMemo(() => post ? {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": post.title,
+    "description": metaDescription,
+    "image": [
+      {
+        "@type": "ImageObject",
+        "url": postOgImage,
+        "width": 1200,
+        "height": 630,
+      },
+    ],
+    "datePublished": isoPublished,
+    "dateModified": post.dateModified ? new Date(post.dateModified).toISOString() : isoPublished,
+    "author": {
+      "@type": "Person",
+      "name": post.author,
+      "url": `${SITE_URL}/author/${post.author.toLowerCase().replace(/\s+/g, '-')}`,
+    },
+    "publisher": {
+      "@type": "NewsMediaOrganization",
+      "name": "Zandani",
+      "url": SITE_URL,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${SITE_URL}/logo.png`,
+        "width": 600,
+        "height": 60,
+      },
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Zandani",
+      "url": SITE_URL,
+    },
+    "keywords": post.tags.join(", "),
+    "articleSection": post.category,
+    "articleBody": post.content?.substring(0, 500),
+    "inLanguage": "en-KE",
+    "isAccessibleForFree": true,
+    "wordCount": wordCount(post.htmlContent || ""),
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".article-headline", ".article-excerpt"],
+    },
+    "copyrightHolder": {
+      "@type": "Organization",
+      "name": "Za Ndani",
+    },
+    "copyrightYear": new Date(post.date).getFullYear(),
+  } : null, [post, metaDescription, postOgImage, canonicalUrl, isoPublished]);
 
-  const robotsContent = useMemo(() => {
-    if (actualWordCount > 0 && actualWordCount < 100) {
-      return "noindex, follow";
-    }
-    return "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
-  }, [actualWordCount]);
+  // ── Schema: BreadcrumbList ──
+  const breadcrumbSchema = useMemo(() => post ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL },
+      { "@type": "ListItem", "position": 2, "name": post.category, "item": `${SITE_URL}/category/${post.category.toLowerCase()}` },
+      { "@type": "ListItem", "position": 3, "name": post.title, "item": canonicalUrl },
+    ],
+  } : null, [post, canonicalUrl]);
 
-  const articleSchema = useMemo(
-    () =>
-      post
-        ? {
-            "@context": "https://schema.org",
-            "@type": "NewsArticle",
-            headline: post.title,
-            description: metaDescription,
-            image: [
-              {
-                "@type": "ImageObject",
-                url: postOgImage,
-                width: 1200,
-                height: 630,
-              },
-            ],
-            datePublished: isoPublished,
-            dateModified: post.dateModified ? new Date(post.dateModified).toISOString() : isoPublished,
-            author: {
-              "@type": "Person",
-              name: post.author,
-              url: `${SITE_URL}/author/${post.author.toLowerCase().replace(/s+/g, "-")}`,
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Zandani",
-              url: SITE_URL,
-              logo: {
-                "@type": "ImageObject",
-                url: `${SITE_URL}/logo.png`,
-                width: 600,
-                height: 60,
-              },
-            },
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": canonicalUrl,
-            },
-            isPartOf: {
-              "@type": "WebSite",
-              name: "Zandani",
-              url: SITE_URL,
-            },
-            keywords: post.tags.join(", "),
-            articleSection: post.category,
-            articleBody: post.content?.substring(0, 500),
-            inLanguage: "en-KE",
-            isAccessibleForFree: true,
-            wordCount: actualWordCount,
-            speakable: {
-              "@type": "SpeakableSpecification",
-              cssSelector: [".article-headline", ".article-excerpt"],
-            },
-            copyrightHolder: {
-              "@type": "Organization",
-              name: "Za Ndani",
-            },
-            copyrightYear: new Date(post.date).getFullYear(),
-          }
-        : null,
-    [post, metaDescription, postOgImage, canonicalUrl, isoPublished, actualWordCount]
-  );
-
-  const breadcrumbSchema = useMemo(
-    () =>
-      post
-        ? {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-              { "@type": "ListItem", position: 2, name: post.category, item: `${SITE_URL}/category/${categorySlug}` },
-              { "@type": "ListItem", position: 3, name: post.title, item: canonicalUrl },
-            ],
-          }
-        : null,
-    [post, canonicalUrl, categorySlug]
-  );
-
+  // ── 404 ──
   if (loading) {
     return (
       <Layout>
@@ -509,14 +451,16 @@ export default function ArticlePage() {
 
   return (
     <Layout>
+      {/* ════ ALL META TAGS + JSON-LD INSIDE HELMET ════ */}
       <Helmet>
         <title>{post.title} | Zandani</title>
         <meta name="description" content={metaDescription} />
         <meta name="keywords" content={post.tags.join(", ") + ", za ndani, kenya news, breaking news kenya"} />
         <meta name="author" content={post.author} />
-        <meta name="robots" content={robotsContent} />
+        <meta name="robots" content={post.wordCount && post.wordCount < 100 ? "noindex, follow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
         <link rel="canonical" href={canonicalUrl} />
 
+        {/* Open Graph / Facebook */}
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content="Za Ndani" />
@@ -528,8 +472,9 @@ export default function ArticlePage() {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content={post.title} />
-        {postOgImageType && <meta property="og:image:type" content={postOgImageType} />}
+        <meta property="og:image:type" content="image/webp" />
 
+        {/* Article specific */}
         <meta property="article:published_time" content={isoPublished} />
         <meta property="article:modified_time" content={post.dateModified ? new Date(post.dateModified).toISOString() : isoPublished} />
         <meta property="article:section" content={post.category} />
@@ -539,6 +484,7 @@ export default function ArticlePage() {
           <meta key={tag} property="article:tag" content={tag} />
         ))}
 
+        {/* Twitter / X Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@zandanikenya" />
         <meta name="twitter:creator" content="@zandanikenya" />
@@ -547,9 +493,11 @@ export default function ArticlePage() {
         <meta name="twitter:image" content={postOgImage} />
         <meta name="twitter:image:alt" content={post.title} />
 
+        {/* Google specific */}
         <meta name="news_keywords" content={post.tags.slice(0, 10).join(", ")} />
         <meta name="original-source" content={canonicalUrl} />
 
+        {/* JSON-LD schemas */}
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
@@ -558,8 +506,10 @@ export default function ArticlePage() {
         </script>
       </Helmet>
 
+      {/* Reading progress bar */}
       <div ref={progressRef} className="fixed top-0 left-0 h-[3px] bg-primary z-[60] transition-none" style={{ width: "0%" }} />
 
+      {/* ════ HERO ════ */}
       <section className="relative w-full bg-zinc-950 overflow-hidden" style={{ minHeight: 540 }}>
         <img
           src={proxyImg(post.image, 1400)}
@@ -579,7 +529,7 @@ export default function ArticlePage() {
             <div className="flex items-center gap-2 text-xs text-zinc-500">
               <Link to="/" className="hover:text-zinc-300 transition-colors">Home</Link>
               <span>&gt;</span>
-              <Link to={`/category/${categorySlug}`} className="hover:text-zinc-300 transition-colors capitalize">
+              <Link to={`/category/${post.category.toLowerCase()}`} className="hover:text-zinc-300 transition-colors capitalize">
                 {post.category}
               </Link>
               <span>&gt;</span>
@@ -600,7 +550,7 @@ export default function ArticlePage() {
               {post.excerpt}
             </p>
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm pt-1">
-              <Link to={`/author/${post.author.toLowerCase().replace(/s+/g, "-")}`} className="flex items-center gap-2 group" rel="author">
+              <Link to={`/author/${post.author.toLowerCase().replace(/\s+/g, '-')}`} className="flex items-center gap-2 group" rel="author">
                 <div className={`w-7 h-7 rounded-full flex items-center justify-center text-white text-[10px] font-black flex-shrink-0 ${authorColor}`}>
                   {authorInitials}
                 </div>
@@ -612,16 +562,12 @@ export default function ArticlePage() {
               </time>
               {post.dateModified && new Date(post.dateModified).getTime() > new Date(post.date).getTime() && (
                 <>
-                  <span className="text-zinc-500">·</span>
-                  <span className="text-zinc-400">
-                    Updated: {new Date(post.dateModified).toLocaleDateString("en-KE", { year: "numeric", month: "long", day: "numeric" })}
-                  </span>
+                  <span className="text-zinc-500">Â·</span>
+                  <span className="text-zinc-400">Updated: {new Date(post.dateModified).toLocaleDateString("en-KE", { year: "numeric", month: "long", day: "numeric" })}</span>
                 </>
               )}
               <span className="text-zinc-500">·</span>
-              <span className="flex items-center gap-1.5 text-zinc-400">
-                <Clock className="w-3.5 h-3.5" /> {post.readTime} min read
-              </span>
+              <span className="flex items-center gap-1.5 text-zinc-400"><Clock className="w-3.5 h-3.5" /> {post.readTime} min read</span>
               <span className="text-zinc-500">·</span>
               <span className="flex items-center gap-1.5 text-primary font-semibold">
                 <Eye className="w-3.5 h-3.5" />
@@ -632,10 +578,12 @@ export default function ArticlePage() {
         </div>
       </section>
 
+      {/* ════ ARTICLE BODY + SIDEBAR ════ */}
       <div className="bg-background">
         <div className="container max-w-6xl mx-auto px-4 py-10">
           <div className="grid lg:grid-cols-12 gap-10">
 
+            {/* Left sticky share */}
             <div className="hidden lg:flex lg:col-span-1 flex-col items-center">
               <div className="sticky top-28 flex flex-col gap-3">
                 <button onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, "_blank")} className="w-9 h-9 rounded-full border border-divider flex items-center justify-center hover:border-primary hover:text-primary transition-colors text-muted-foreground" aria-label="Share on Facebook"><Facebook className="w-4 h-4" /></button>
@@ -647,6 +595,7 @@ export default function ArticlePage() {
               </div>
             </div>
 
+            {/* Article content */}
             <article className="lg:col-span-8 min-w-0">
               <div className="mb-8 flex justify-center border border-divider bg-muted/10 p-3">
                 <AdUnit type="horizontal" />
@@ -673,9 +622,9 @@ export default function ArticlePage() {
                 <div className="p-6 flex gap-5 items-start">
                   <div className={`w-14 h-14 rounded-full flex items-center justify-center text-white font-black text-lg flex-shrink-0 ${authorColor}`}>{authorInitials}</div>
                   <div>
-                    <Link to={`/author/${post.author.toLowerCase().replace(/s+/g, "-")}`} className="font-black text-base hover:text-primary transition-colors">{post.author}</Link>
+                    <Link to={`/author/${post.author.toLowerCase().replace(/\s+/g, '-')}`} className="font-black text-base hover:text-primary transition-colors">{post.author}</Link>
                     <p className="text-muted-foreground text-sm leading-relaxed mt-1 mb-3">{authorBio}</p>
-                    <Link to={`/author/${post.author.toLowerCase().replace(/s+/g, "-")}`} className="text-xs font-black uppercase tracking-wider text-primary hover:underline flex items-center gap-1">All stories by {post.author.split(" ")[0]} →</Link>
+                    <Link to={`/author/${post.author.toLowerCase().replace(/\s+/g, '-')}`} className="text-xs font-black uppercase tracking-wider text-primary hover:underline flex items-center gap-1">All stories by {post.author.split(" ")[0]} →</Link>
                   </div>
                 </div>
               </div>
@@ -689,6 +638,7 @@ export default function ArticlePage() {
                 <NewsletterForm />
               </div>
 
+              {/* ════ LIVE UPDATES ════ */}
               <div className="mt-10">
                 <LiveUpdatesTimeline maxItems={10} title="Live Updates" />
               </div>
@@ -723,6 +673,7 @@ export default function ArticlePage() {
               )}
             </article>
 
+            {/* Sidebar */}
             <aside className="hidden lg:block lg:col-span-3">
               <div className="sticky top-28 space-y-8">
                 <div className="border border-divider bg-muted/10 p-3 flex justify-center"><AdUnit type="effectivegate" /></div>
@@ -753,6 +704,7 @@ export default function ArticlePage() {
         </div>
       </div>
 
+      {/* Mobile share bar */}
       <div className="lg:hidden fixed bottom-4 left-4 right-4 z-50 flex items-center justify-center gap-3 bg-background/95 backdrop-blur-lg border border-divider p-3 shadow-2xl">
         <button onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, "_blank")} className="h-10 w-10 rounded-full border border-divider flex items-center justify-center hover:border-primary hover:text-primary transition-colors text-muted-foreground"><Facebook className="w-4 h-4" /></button>
         <button onClick={() => window.open(`https://x.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`, "_blank")} className="h-10 w-10 rounded-full border border-divider flex items-center justify-center hover:border-primary hover:text-primary transition-colors text-muted-foreground"><XIcon className="w-4 h-4" /></button>
@@ -761,6 +713,7 @@ export default function ArticlePage() {
         {copied && <span className="text-xs text-primary font-bold absolute -top-6 right-4">Copied!</span>}
       </div>
 
+      {/* Scroll to top */}
       {showScrollTop && (
         <button onClick={scrollToTop} className="fixed bottom-24 right-5 lg:bottom-6 lg:right-6 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center shadow-xl hover:opacity-90 transition-opacity z-40" aria-label="Scroll to top">
           <ArrowUp className="w-4 h-4" />
