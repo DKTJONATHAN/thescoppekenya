@@ -214,10 +214,10 @@
     "f49729bc2d9300f5e6e87fd212784395",
     "8af963c2423756e8889d1d6771bd2633",
     "ed47a2c9a53f2725622c260d772f50fe",
-    "e3f2e3c3bb26e33fb04e3a69f8280c8c"
+    "e3f2e3c3bb26e33fb04e3a69f8280c8c",
+    "cd3337803964a3ab81058a0106e4fc71"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
     "Receipts Piece",
@@ -246,7 +246,8 @@
     "Profile Beat",
     "Receipts Piece",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Profile Beat"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -323,6 +324,7 @@
     "money_follow|Kenya|Profile Beat",
     "money_follow|Kenyan Shillings|Receipts Piece",
     "winners_losers|Kenyan music|Reaction Round-up",
-    "winners_losers|Kenyan entertainment|Hard News Lead"
+    "winners_losers|Kenyan entertainment|Hard News Lead",
+    "accountability|Rachel Wandeto|Profile Beat"
   ]
 }
