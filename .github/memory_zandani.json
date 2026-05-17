@@ -211,10 +211,10 @@
     "eaffc69ff31d6d2a8b4640c5d66a9409",
     "274fae4517bcf4397b035ce27e89d14a",
     "213b900274e103db4ff9f519aa61099c",
-    "f49729bc2d9300f5e6e87fd212784395"
+    "f49729bc2d9300f5e6e87fd212784395",
+    "8af963c2423756e8889d1d6771bd2633"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Profile Beat",
     "Receipts Piece",
     "Hard News Lead",
@@ -243,7 +243,8 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Receipts Piece"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -317,6 +318,7 @@
     "impact_on_citizens|fuel prices|Hard News Lead",
     "impact_on_citizens|Kenya|Reaction Round-up",
     "impact_on_citizens|Kenya|Trend Take",
-    "money_follow|Kenya|Profile Beat"
+    "money_follow|Kenya|Profile Beat",
+    "money_follow|Kenyan Shillings|Receipts Piece"
   ]
 }
