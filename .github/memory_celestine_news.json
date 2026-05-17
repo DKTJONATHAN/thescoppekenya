@@ -116,10 +116,10 @@
     "68956aa21e6ad13b0f786769c9501168",
     "744a5a2fc814b4daa379378cc55d2bd4",
     "ff96e7111c9680ce457a3c1e8af87189",
-    "1c302992e5736d6d3ba32ec512821a23"
+    "1c302992e5736d6d3ba32ec512821a23",
+    "f8ceb671f0ea3d1b11bf7ed223a4437f"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Explainer",
     "Power Accountability",
     "Hard News Lead",
@@ -148,10 +148,10 @@
     "Explainer",
     "Reaction & Voices",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "myth_vs_fact|Ministry of Education|Explainer",
     "timeline_shift|NEMA|Context Backgrounder",
     "accountability|Energy policy|Hard News Lead",
     "next_48_hours|Judiciary|Reaction & Voices",
@@ -230,6 +230,7 @@
     "winners_losers|National Land Commission|Explainer",
     "accountability|Companies Act|Reaction & Voices",
     "policy_gap|energy security|Power Accountability",
-    "impact_on_citizens|maritime security|Hard News Lead"
+    "impact_on_citizens|maritime security|Hard News Lead",
+    "next_48_hours|KRA|Context Backgrounder"
   ]
 }
