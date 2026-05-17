@@ -140,10 +140,10 @@
     "295ae27be00e05b66702e6f32c6c8e3f",
     "5bb758cd4666bacf3771cc0830b551b6",
     "add02387b5a18b243d4247128b3bd94e",
-    "af1d76dca12a349a986befc756589bdc"
+    "af1d76dca12a349a986befc756589bdc",
+    "0907a12145a3d14bac17b8f1aa4aa527"
   ],
   "style_history": [
-    "Stat Story",
     "Tactical Take",
     "Cynical Pundit",
     "Match Report",
@@ -172,10 +172,10 @@
     "Tactical Take",
     "Cynical Pundit",
     "Match Report",
-    "Player Profile Beat"
+    "Player Profile Beat",
+    "Tactical Take"
   ],
   "angle_history": [
-    "policy_gap|Arsenal|Stat Story",
     "accountability|Liverpool FC|Player Profile Beat",
     "money_follow|Europa League|Tactical Take",
     "timeline_shift|Aston Villa|Match Report",
@@ -254,6 +254,7 @@
     "winners_losers|Premier League|Tactical Take",
     "policy_gap|Premier League|Cynical Pundit",
     "timeline_shift|La Liga|Match Report",
-    "accountability|Manchester United|Player Profile Beat"
+    "accountability|Manchester United|Player Profile Beat",
+    "winners_losers|La Liga|Tactical Take"
   ]
 }
