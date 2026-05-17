@@ -147,10 +147,10 @@
     "a6a5651658ec0dafa8ca1bf0bd4c249a",
     "6e7d3fd12fd7f2db0ce4728c6dad0c59",
     "d0e0734256bc145502ffd782662b4f4a",
-    "a6ae48b6836cec7a147fdb18f6048134"
+    "a6ae48b6836cec7a147fdb18f6048134",
+    "59b3eb492c35bd2406e8ed1f463bb578"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Hard News Lead",
     "Trend Take",
     "Profile Beat",
@@ -179,10 +179,10 @@
     "Hard News Lead",
     "Explainer",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "timeline_shift|Jamie-Lynn Sigler|Trend Take",
     "winners_losers|Hollywood|Reaction Round-up",
     "impact_on_citizens|The Bear|Profile Beat",
     "policy_gap|Sting|Hard News Lead",
@@ -261,6 +261,7 @@
     "money_follow|James Bond|Hard News Lead",
     "myth_vs_fact|Top Gun|Explainer",
     "winners_losers|SNL|Reaction Round-up",
-    "winners_losers|SNL|Trend Take"
+    "winners_losers|SNL|Trend Take",
+    "impact_on_citizens|acting career|Profile Beat"
   ]
 }
