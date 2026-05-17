@@ -146,10 +146,10 @@
     "17c1237f546e6e2d99d67292c98936c0",
     "a6a5651658ec0dafa8ca1bf0bd4c249a",
     "6e7d3fd12fd7f2db0ce4728c6dad0c59",
-    "d0e0734256bc145502ffd782662b4f4a"
+    "d0e0734256bc145502ffd782662b4f4a",
+    "a6ae48b6836cec7a147fdb18f6048134"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Hard News Lead",
     "Trend Take",
@@ -178,10 +178,10 @@
     "Trend Take",
     "Hard News Lead",
     "Explainer",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
-    "winners_losers|Buffy the Vampire Slayer|Explainer",
     "timeline_shift|Jamie-Lynn Sigler|Trend Take",
     "winners_losers|Hollywood|Reaction Round-up",
     "impact_on_citizens|The Bear|Profile Beat",
@@ -260,6 +260,7 @@
     "impact_on_citizens|Clint Black|Trend Take",
     "money_follow|James Bond|Hard News Lead",
     "myth_vs_fact|Top Gun|Explainer",
-    "winners_losers|SNL|Reaction Round-up"
+    "winners_losers|SNL|Reaction Round-up",
+    "winners_losers|SNL|Trend Take"
   ]
 }
