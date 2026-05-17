@@ -218,10 +218,10 @@
     "cd3337803964a3ab81058a0106e4fc71",
     "b4010599172d878414974636678ce297",
     "6249e23a787062563fb6aee633fcdd71",
-    "33ed594d0b6346b0b62acac444136ab4"
+    "33ed594d0b6346b0b62acac444136ab4",
+    "0ceb182471a8f17d48c3d1ab430e3db7"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
@@ -250,7 +250,8 @@
     "Profile Beat",
     "Receipts Piece",
     "Trend Take",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Profile Beat"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -331,6 +332,7 @@
     "accountability|Rachel Wandeto|Profile Beat",
     "myth_vs_fact|Kenya|Receipts Piece",
     "next_48_hours|Africa Forward|Trend Take",
-    "winners_losers|Kennedy Rapudo|Reaction Round-up"
+    "winners_losers|Kennedy Rapudo|Reaction Round-up",
+    "policy_gap|Lydia Wanjiru|Profile Beat"
   ]
 }
