@@ -149,10 +149,10 @@
     "d0e0734256bc145502ffd782662b4f4a",
     "a6ae48b6836cec7a147fdb18f6048134",
     "59b3eb492c35bd2406e8ed1f463bb578",
-    "ba802fef29e411097d259db5816169dd"
+    "ba802fef29e411097d259db5816169dd",
+    "09548eb3ba465d6b876c19a69a294452"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
     "Explainer",
@@ -181,10 +181,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "impact_on_citizens|The Bear|Profile Beat",
     "policy_gap|Sting|Hard News Lead",
     "impact_on_citizens|television|Trend Take",
     "winners_losers|film production|Explainer",
@@ -263,6 +263,7 @@
     "winners_losers|SNL|Reaction Round-up",
     "winners_losers|SNL|Trend Take",
     "impact_on_citizens|acting career|Profile Beat",
-    "policy_gap|Famesick|Hard News Lead"
+    "policy_gap|Famesick|Hard News Lead",
+    "impact_on_citizens|streaming|Explainer"
   ]
 }
