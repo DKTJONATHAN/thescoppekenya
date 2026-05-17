@@ -122,10 +122,10 @@
     "314288e6ea239f30fba8e202d029c8a0",
     "cc180e63527980a310bdfee7e5344812",
     "995807a97b204ac04e8f84c7d004a02f",
-    "0f2e830c17c82530902266e58dfe448d"
+    "0f2e830c17c82530902266e58dfe448d",
+    "bcaf113c91fbef9080d6b454b0a131e7"
   ],
   "style_history": [
-    "SME Angle",
     "Explainer",
     "Backgrounder",
     "Power Accountability",
@@ -154,7 +154,8 @@
     "Backgrounder",
     "Explainer",
     "SME Angle",
-    "Power Accountability"
+    "Power Accountability",
+    "Markets Report"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -189,6 +190,7 @@
     "impact_on_citizens|Treasury bills|Backgrounder",
     "winners_losers|Finance Bill 2026|Explainer",
     "winners_losers|Asahi Group|SME Angle",
-    "winners_losers|WPP Scangroup|Power Accountability"
+    "winners_losers|WPP Scangroup|Power Accountability",
+    "money_follow|Banking|Markets Report"
   ]
 }
