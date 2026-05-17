@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Ademba Allans and government allies argue that Facebook and TikTok hold more political influence than other social media platforms](https://zandani.co.ke/article/ademba-allans-and-government-allies-argue-that-facebook-and-tiktok-h) - Ademba Allans and government allies argue that Facebook and TikTok wield greater political influence in Kenya than other social media platforms.
 - [Woman stabbed to death by estranged partner in Kilimani](https://zandani.co.ke/article/woman-stabbed-to-death-by-estranged-partner-in-kilimani) - Woman stabbed to death by estranged partner in Kilimani: Anne Keya was killed in a fatal stabbing in Kilimani following a period of domestic violence. The
 - [Prophet Kanyari and US donors support Marion Naipei recovery](https://zandani.co.ke/article/prophet-kanyari-and-us-donors-support-marion-naipei-recovery) - Prophet Victor Kanyari and a US-based family are providing rehabilitation support and housing assistance to content creator Marion Naipei.
 - [Why Africa Must Prioritize Industrialization for Economic Growth](https://zandani.co.ke/article/africa-forward-summit-industrialization-economic-sovereignty) - Why Africa Must Prioritize Industrialization for Economic Growth: The Africa Forward Summit highlights the urgent need for African nations to transition from
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Public Debate Ignites Over Mental Health and Masculinity Following the Death of Nick Imudia](https://zandani.co.ke/article/public-debate-ignites-over-mental-health-and-masculinity-following-t) - Public Debate Ignites Over Mental Health and Masculinity Followin: The death of Nick Imudia has sparked a national debate on mental health, highlighting the
 - [Kakuzi Security Tactics Face Backlash After Viral Videos of Macadamia Theft Disputes](https://zandani.co.ke/article/kakuzi-security-tactics-face-backlash-after-viral-videos-of-macadami) - Kakuzi Security Tactics Face Backlash After Viral Videos of Macad: Kakuzi PLC faces intense public backlash in Murang’a County following viral videos showing
 - [Viral Video of Kenyan Boy Helping Mother Find Husband Sparks Memes](https://zandani.co.ke/article/viral-video-kenyan-boy-mother-husband-search) - Viral Video of Kenyan Boy Helping Mother Find Husband Sparks Meme: A humorous viral video featuring a young Kenyan boy suggesting locations to find a new
-- [IPOA issues security warning ahead of next general elections](https://zandani.co.ke/article/ipoa-raises-alarm-over-rising-political-tensions) - IPOA issues security warning ahead of next general elections: Watchdogs are calling for proactive police measures to curb political violence and hate speech as
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
