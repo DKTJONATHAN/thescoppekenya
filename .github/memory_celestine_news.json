@@ -115,10 +115,10 @@
     "bea1a8df3b01af73ad3c8266988cbd3c",
     "68956aa21e6ad13b0f786769c9501168",
     "744a5a2fc814b4daa379378cc55d2bd4",
-    "ff96e7111c9680ce457a3c1e8af87189"
+    "ff96e7111c9680ce457a3c1e8af87189",
+    "1c302992e5736d6d3ba32ec512821a23"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Context Backgrounder",
     "Explainer",
     "Power Accountability",
@@ -147,10 +147,10 @@
     "Hard News Lead",
     "Explainer",
     "Reaction & Voices",
-    "Power Accountability"
+    "Power Accountability",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "accountability|Uhuru Kenyatta|Power Accountability",
     "myth_vs_fact|Ministry of Education|Explainer",
     "timeline_shift|NEMA|Context Backgrounder",
     "accountability|Energy policy|Hard News Lead",
@@ -229,6 +229,7 @@
     "policy_gap|femicide|Hard News Lead",
     "winners_losers|National Land Commission|Explainer",
     "accountability|Companies Act|Reaction & Voices",
-    "policy_gap|energy security|Power Accountability"
+    "policy_gap|energy security|Power Accountability",
+    "impact_on_citizens|maritime security|Hard News Lead"
   ]
 }
