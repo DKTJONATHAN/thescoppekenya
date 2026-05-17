@@ -114,10 +114,10 @@
     "3e048785a36538f0f06ed30bedf841f3",
     "bea1a8df3b01af73ad3c8266988cbd3c",
     "68956aa21e6ad13b0f786769c9501168",
-    "744a5a2fc814b4daa379378cc55d2bd4"
+    "744a5a2fc814b4daa379378cc55d2bd4",
+    "ff96e7111c9680ce457a3c1e8af87189"
   ],
   "style_history": [
-    "Power Accountability",
     "Reaction & Voices",
     "Context Backgrounder",
     "Explainer",
@@ -146,10 +146,10 @@
     "Context Backgrounder",
     "Hard News Lead",
     "Explainer",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "winners_losers|Nakuru County|Hard News Lead",
     "accountability|Uhuru Kenyatta|Power Accountability",
     "myth_vs_fact|Ministry of Education|Explainer",
     "timeline_shift|NEMA|Context Backgrounder",
@@ -228,6 +228,7 @@
     "money_follow|fuel prices|Context Backgrounder",
     "policy_gap|femicide|Hard News Lead",
     "winners_losers|National Land Commission|Explainer",
-    "accountability|Companies Act|Reaction & Voices"
+    "accountability|Companies Act|Reaction & Voices",
+    "policy_gap|energy security|Power Accountability"
   ]
 }
