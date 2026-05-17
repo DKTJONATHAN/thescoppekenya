@@ -137,10 +137,10 @@
     "93ac1ec57a0bffbbb26ad3360dd9fbfc",
     "378d2fcc28f2083ac42fe40a670c05f7",
     "d1ca6ecc697c318f4408e3acca820784",
-    "295ae27be00e05b66702e6f32c6c8e3f"
+    "295ae27be00e05b66702e6f32c6c8e3f",
+    "5bb758cd4666bacf3771cc0830b551b6"
   ],
   "style_history": [
-    "Match Report",
     "Cynical Pundit",
     "Player Profile Beat",
     "Stat Story",
@@ -169,10 +169,10 @@
     "Stat Story",
     "Match Report",
     "Player Profile Beat",
-    "Tactical Take"
+    "Tactical Take",
+    "Cynical Pundit"
   ],
   "angle_history": [
-    "accountability|Champions League|Player Profile Beat",
     "accountability|WSL|Tactical Take",
     "money_follow|Champions League|Cynical Pundit",
     "policy_gap|Arsenal|Stat Story",
@@ -251,6 +251,7 @@
     "money_follow|Chelsea FC|Stat Story",
     "timeline_shift|Premier League|Match Report",
     "timeline_shift|Premier League|Player Profile Beat",
-    "winners_losers|Premier League|Tactical Take"
+    "winners_losers|Premier League|Tactical Take",
+    "policy_gap|Premier League|Cynical Pundit"
   ]
 }
