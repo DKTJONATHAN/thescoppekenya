@@ -124,10 +124,10 @@
     "995807a97b204ac04e8f84c7d004a02f",
     "0f2e830c17c82530902266e58dfe448d",
     "bcaf113c91fbef9080d6b454b0a131e7",
-    "dbed609e1c03c423022469aabc4b4861"
+    "dbed609e1c03c423022469aabc4b4861",
+    "a96a814c3265113650bdc0b9feedb30c"
   ],
   "style_history": [
-    "Backgrounder",
     "Power Accountability",
     "Markets Report",
     "Explainer",
@@ -156,7 +156,8 @@
     "SME Angle",
     "Power Accountability",
     "Markets Report",
-    "Backgrounder"
+    "Backgrounder",
+    "Explainer"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -193,6 +194,7 @@
     "winners_losers|Asahi Group|SME Angle",
     "winners_losers|WPP Scangroup|Power Accountability",
     "money_follow|Banking|Markets Report",
-    "timeline_shift|Market Capitalization|Backgrounder"
+    "timeline_shift|Market Capitalization|Backgrounder",
+    "impact_on_citizens|Public Debt|Explainer"
   ]
 }
