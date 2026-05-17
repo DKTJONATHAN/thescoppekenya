@@ -689,6 +689,8 @@ KUCCPS updates portal with new degree cut-off points is central to this update f
 
 KUCCPS updates portal with new degree cut-off points is central to this update for Kenyan readers.
 
+KUCCPS updates portal with new degree cut-off points is central to this update for Kenyan readers.
+
 The Kenya Universities and Colleges Central Placement Service (KUCCPS) has updated its online portal with new degree cut-off points and minimum subject requirements. This vital update, released ahead of the 2026 university application cycle, is designed to guide 2025 KCSE candidates in selecting their preferred degree programmes.
 
 Updated University Admission Criteria for 2026
