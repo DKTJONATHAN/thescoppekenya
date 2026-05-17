@@ -658,6 +658,8 @@ Real Madrid fans launch record-breaking petition against Mbappe is central to th
 
 Real Madrid fans launch record-breaking petition against Mbappe is central to this update for Kenyan readers.
 
+Real Madrid fans launch record-breaking petition against Mbappe is central to this update for Kenyan readers.
+
 ## Mbappe's Madrid Meltdown: A Star's Priorities Exposed
 Kylian Mbappe's commitment to Real Madrid is under brutal scrutiny. A record-breaking fan petition and Spanish media firestorm follow his injury-enforced absence and a controversial Italian getaway. With no major trophies since his 2024 arrival, and a crucial El Clásico looming, the superstar's perceived indifference highlights a cynical truth about modern football's biggest names.
 
