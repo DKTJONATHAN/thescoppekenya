@@ -150,10 +150,10 @@
     "a6ae48b6836cec7a147fdb18f6048134",
     "59b3eb492c35bd2406e8ed1f463bb578",
     "ba802fef29e411097d259db5816169dd",
-    "09548eb3ba465d6b876c19a69a294452"
+    "09548eb3ba465d6b876c19a69a294452",
+    "f0f70e8fb1cf6782cda6258a79eb4305"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Explainer",
     "Hard News Lead",
@@ -182,10 +182,10 @@
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "policy_gap|Sting|Hard News Lead",
     "impact_on_citizens|television|Trend Take",
     "winners_losers|film production|Explainer",
     "impact_on_citizens|Goldie Hawn|Reaction Round-up",
@@ -264,6 +264,7 @@
     "winners_losers|SNL|Trend Take",
     "impact_on_citizens|acting career|Profile Beat",
     "policy_gap|Famesick|Hard News Lead",
-    "impact_on_citizens|streaming|Explainer"
+    "impact_on_citizens|streaming|Explainer",
+    "impact_on_citizens|Saturday Night Live|Reaction Round-up"
   ]
 }
