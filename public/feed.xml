@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sun, 17 May 2026 15:28:21 GMT</pubDate>
+    <pubDate>Sun, 17 May 2026 15:30:26 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Late Journalist Kimani Mbugua Father Detained Over Extortion Case]]></title>
+      <link>https://zandani.co.ke/article/dedan-kimani-detained-extortion-case</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/dedan-kimani-detained-extortion-case</guid>
+      <pubDate>Sun, 17 May 2026 15:19:14 GMT</pubDate>
+      <dc:creator><![CDATA[Martin Kihara]]></dc:creator>
+      <description><![CDATA[Dedan Kimani remains in Nairobi West Prison amid extortion allegations as supporters call for legal aid following the death of his son.]]></description>
+      <enclosure url="https://i.ibb.co/gMBv5mzP/45f08a4d48fe.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/gMBv5mzP/45f08a4d48fe.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/gMBv5mzP/45f08a4d48fe.jpg" alt="Late Journalist Kimani Mbugua Father Detained Over Extortion Case" /><p>Dedan Kimani remains in Nairobi West Prison amid extortion allegations as supporters call for legal aid following the death of his son.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[MultiChoice Announces Auditions for Big Brother Naija Season 11]]></title>
       <link>https://zandani.co.ke/article/multichoice-announces-auditions-for-big-brother-naija-season-11</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
       <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="2026-03-13-kemsa-reports-ksh-2-billion-surplus-as-auditor-general-flags-materia" /><p>2026-03-13-kemsa-reports-ksh-2-billion-surplus-as-auditor-general: Read key facts, reader impact, and practical next steps. Read key facts, reader impact, and p</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[2026-03-13-millie-odhiambo-warns-government-against-use-of-criminal-gangs-and-h]]></title>
-      <link>https://zandani.co.ke/article/2026-03-13-millie-odhiambo-warns-government-against-use-of-criminal-ga</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/2026-03-13-millie-odhiambo-warns-government-against-use-of-criminal-ga</guid>
-      <pubDate>Sat, 16 May 2026 09:19:12 GMT</pubDate>
-      <dc:creator><![CDATA[Za Ndani]]></dc:creator>
-      <description><![CDATA[2026-03-13-millie-odhiambo-warns-government-against-use-of-crimin: Read key facts, reader impact, and practical next steps. Read key facts, reader impact, and p]]></description>
-      <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
-      <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="2026-03-13-millie-odhiambo-warns-government-against-use-of-criminal-gangs-and-h" /><p>2026-03-13-millie-odhiambo-warns-government-against-use-of-crimin: Read key facts, reader impact, and practical next steps. Read key facts, reader impact, and p</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
