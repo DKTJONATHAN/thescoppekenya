@@ -46,63 +46,86 @@
     <meta name="google-site-verification" content="VNTfdKk2KxWc62YlzrqHmf9u9zjtric-Fz8nXpdhqr4" />
     <meta name="msvalidate.01" content="2B25BAB72961CD0D4AD6B6FBB1A66B2F" />
 
-    <!-- Robots - Enhanced for News -->
+    <!-- Robots -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot-news" content="index, follow, max-image-preview:large" />
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-    <!-- News-specific meta tags -->
+    <!-- News keywords -->
     <meta name="news_keywords" content="Kenya news, Nairobi gossip, entertainment Kenya, breaking news Kenya, politics Kenya, sports Kenya, celebrity news, trending stories" />
-    <meta name="distribution" content="global" />
-    <meta name="rating" content="general" />
-    <meta name="revisit-after" content="1 day" />
 
-    <!-- Author & Publisher -->
-    <meta name="author" content="Jonathan Mwaniki" />
+    <!-- Publisher only — author removed (each article page sets its own via Helmet) -->
     <meta name="publisher" content="Za Ndani" />
-    
-    <!-- Canonical & Alternate -->
-    <link rel="canonical" href="https://zandani.co.ke" />
+
+    <!--
+      NO hardcoded canonical here.
+      A global canonical pointing to the homepage makes Google treat every
+      SPA route (/article/*, /category/*, etc.) as a duplicate of the homepage,
+      overriding per-route canonicals set by react-helmet-async.
+      The Homepage component must declare its own canonical via <Helmet>.
+    -->
+
+    <!-- hreflang — site-wide, safe to keep here -->
     <link rel="alternate" hreflang="en" href="https://zandani.co.ke" />
     <link rel="alternate" hreflang="en-KE" href="https://zandani.co.ke" />
     <link rel="alternate" hreflang="x-default" href="https://zandani.co.ke" />
 
-    <!-- RSS Feed for News Aggregators -->
+    <!-- RSS Feed -->
     <link rel="alternate" type="application/rss+xml" title="Za Ndani RSS Feed" href="/feed.xml" />
 
-    <!-- Title & Description -->
-    <title>Za Ndani | Get The Latest Celebrity Gossip, Entertainment News And General News From Kenya And Across The Globe</title>
-    <meta name="description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, trending celebrity news, and sports." />
+    <!--
+      Default title & description — Helmet overrides these on every inner route.
+      Title kept under 60 chars to prevent Google SERP truncation.
+    -->
+    <title>Za Ndani | Kenya News, Gossip &amp; Entertainment</title>
+    <meta name="description" content="Breaking Kenyan news, celebrity gossip, entertainment, politics and sports — delivered daily by Za Ndani." />
     <meta name="keywords" content="latest news in Kenya today, breaking news Kenya, Kenyan entertainment news, Nairobi gossip, trending news Kenya, Kenya politics, celebrity gossip Kenya, sports news Kenya, Za Ndani, exclusive Kenyan scoops, current affairs Kenya" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Za Ndani | Get The Latest Celebrity Gossip, Entertainment News And General News From Kenya And Across The Globe" />
-    <meta property="og:description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, trending celebrity news, and sports." />
+    <!-- Open Graph — Helmet replaces ALL og: tags on article/inner pages -->
+    <meta property="og:title" content="Za Ndani | Kenya News, Gossip &amp; Entertainment" />
+    <meta property="og:description" content="Breaking Kenyan news, celebrity gossip, entertainment, politics and sports — delivered daily by Za Ndani." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://zandani.co.ke" />
     <meta property="og:image" content="https://zandani.co.ke/logo.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Za Ndani - Kenya News & Entertainment" />
+    <meta property="og:image:alt" content="Za Ndani - Kenya News &amp; Entertainment" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:site_name" content="Za Ndani" />
     <meta property="og:locale" content="en_KE" />
     <meta property="og:locale:alternate" content="en_US" />
 
-    <!-- Twitter Card -->
+    <!-- Twitter Card — Helmet overrides on article pages -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@zandanikenya" />
     <meta name="twitter:creator" content="@zandanikenya" />
-    <meta name="twitter:title" content="Za Ndani | Get The Latest Celebrity Gossip, Entertainment News And General News From Kenya And Across The Globe" />
-    <meta name="twitter:description" content="Get the latest breaking news in Kenya today. Za Ndani delivers exclusive Nairobi entertainment gossip, political updates, and trending celebrity news." />
+    <meta name="twitter:title" content="Za Ndani | Kenya News, Gossip &amp; Entertainment" />
+    <meta name="twitter:description" content="Breaking Kenyan news, celebrity gossip, entertainment, politics and sports — delivered daily by Za Ndani." />
     <meta name="twitter:image" content="https://zandani.co.ke/logo.png" />
-    <meta name="twitter:image:alt" content="Za Ndani - Kenya News & Entertainment" />
+    <meta name="twitter:image:alt" content="Za Ndani - Kenya News &amp; Entertainment" />
 
-    <!-- JSON-LD: NewsMediaOrganization (Site-wide) -->
+    <!--
+      JSON-LD: Organization
+      CHANGED from NewsMediaOrganization → Organization.
+      NewsMediaOrganization requires Google News Publisher Center enrollment.
+      Without it the type gives no benefit and fails validation.
+
+      REMOVED: ethicsPolicy, correctionsPolicy, missionStatement —
+      these pages do not exist yet on zandani.co.ke. Linking to 404s in
+      structured data can trigger a manual action in GSC. Add them back
+      only when those pages are live.
+
+      REMOVED: telephone — avoid exposing personal numbers in public JSON-LD.
+
+      contactType fixed: "newsroom" is not a valid schema.org enum.
+      Changed to "customer support".
+
+      logo dimensions: kept as-is per your instruction.
+    -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "NewsMediaOrganization",
+      "@type": "Organization",
       "name": "Za Ndani",
       "url": "https://zandani.co.ke",
       "logo": {
@@ -117,9 +140,6 @@
         "https://instagram.com/zandani_ke",
         "https://youtube.com/@zandanike"
       ],
-      "ethicsPolicy": "https://zandani.co.ke/ethics",
-      "correctionsPolicy": "https://zandani.co.ke/corrections",
-      "missionStatement": "Delivering breaking news, entertainment gossip, and trending scoops from Kenya with integrity and speed.",
       "foundingDate": "2024",
       "address": {
         "@type": "PostalAddress",
@@ -128,14 +148,13 @@
       },
       "contactPoint": {
         "@type": "ContactPoint",
-        "contactType": "newsroom",
-        "email": "contact@zandani.co.ke",
-        "telephone": "+254706396305"
+        "contactType": "customer support",
+        "email": "contact@zandani.co.ke"
       }
     }
     </script>
 
-    <!-- JSON-LD: WebSite -->
+    <!-- JSON-LD: WebSite — safe in base HTML, describes the site globally -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -206,7 +225,7 @@
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-DZHDWQPCEL', { 
+          gtag('config', 'G-DZHDWQPCEL', {
             send_page_view: true,
             anonymize_ip: true,
             allow_google_signals: false
