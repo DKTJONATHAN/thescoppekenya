@@ -134,10 +134,10 @@
     "3cfbd4d16bc898edbdb0193868646beb",
     "33884c993cfce05f819b70e322a7fb96",
     "cd94855ee78fa3298ba7f816fb32ef31",
-    "93ac1ec57a0bffbbb26ad3360dd9fbfc"
+    "93ac1ec57a0bffbbb26ad3360dd9fbfc",
+    "378d2fcc28f2083ac42fe40a670c05f7"
   ],
   "style_history": [
-    "Player Profile Beat",
     "Stat Story",
     "Tactical Take",
     "Match Report",
@@ -166,10 +166,10 @@
     "Match Report",
     "Player Profile Beat",
     "Tactical Take",
-    "Stat Story"
+    "Stat Story",
+    "Match Report"
   ],
   "angle_history": [
-    "myth_vs_fact|Arsenal FC|Cynical Pundit",
     "next_48_hours|Arsenal|Match Report",
     "myth_vs_fact|Kylian Mbappe|Stat Story",
     "accountability|Champions League|Player Profile Beat",
@@ -248,6 +248,7 @@
     "money_follow|FA Cup|Match Report",
     "winners_losers|Manchester United|Player Profile Beat",
     "timeline_shift|Premier League|Tactical Take",
-    "money_follow|Chelsea FC|Stat Story"
+    "money_follow|Chelsea FC|Stat Story",
+    "timeline_shift|Premier League|Match Report"
   ]
 }
