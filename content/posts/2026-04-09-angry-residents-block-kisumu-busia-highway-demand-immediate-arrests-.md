@@ -725,6 +725,8 @@ Angry Residents Block Kisumu-Busia Highway Demand Immediate is central to this u
 
 Angry Residents Block Kisumu-Busia Highway Demand Immediate is central to this update for Kenyan readers.
 
+Angry Residents Block Kisumu-Busia Highway Demand Immediate is central to this update for Kenyan readers.
+
 Angry residents in Luanda, Vihiga County, halted transport on the Kisumu-Busia highway this Thursday morning, April 9, 2026, demanding justice and immediate arrests following the assault on Vihiga Senator Godfrey Osotsi by gang members in Kisumu yesterday.
 
 Highway Blocked Over Senator's Attack The protests brought the busy Kisumu-Busia highway to a standstill for approximately two hours. Demonstrators lit bonfires and marched, forcing motorists to seek alternative routes. Carrying placards and waving twigs, the residents chanted slogans condemning the attack, with more individuals joining the gathering as tensions rose. Images and clips of the protests showed vehicles stranded amidst the agitated crowd.
