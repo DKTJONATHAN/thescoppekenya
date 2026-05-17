@@ -212,10 +212,10 @@
     "274fae4517bcf4397b035ce27e89d14a",
     "213b900274e103db4ff9f519aa61099c",
     "f49729bc2d9300f5e6e87fd212784395",
-    "8af963c2423756e8889d1d6771bd2633"
+    "8af963c2423756e8889d1d6771bd2633",
+    "ed47a2c9a53f2725622c260d772f50fe"
   ],
   "style_history": [
-    "Profile Beat",
     "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
@@ -244,7 +244,8 @@
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Reaction Round-up"
   ],
   "angle_history": [
     "myth_vs_fact|Azeezah Hashim|Hard News Lead",
@@ -319,6 +320,7 @@
     "impact_on_citizens|Kenya|Reaction Round-up",
     "impact_on_citizens|Kenya|Trend Take",
     "money_follow|Kenya|Profile Beat",
-    "money_follow|Kenyan Shillings|Receipts Piece"
+    "money_follow|Kenyan Shillings|Receipts Piece",
+    "winners_losers|Kenyan music|Reaction Round-up"
   ]
 }
