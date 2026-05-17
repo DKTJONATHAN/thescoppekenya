@@ -151,10 +151,10 @@
     "59b3eb492c35bd2406e8ed1f463bb578",
     "ba802fef29e411097d259db5816169dd",
     "09548eb3ba465d6b876c19a69a294452",
-    "f0f70e8fb1cf6782cda6258a79eb4305"
+    "f0f70e8fb1cf6782cda6258a79eb4305",
+    "2f79156135cd1ecbd077910286b98e74"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Explainer",
     "Hard News Lead",
     "Trend Take",
@@ -183,10 +183,10 @@
     "Profile Beat",
     "Hard News Lead",
     "Explainer",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
-    "impact_on_citizens|television|Trend Take",
     "winners_losers|film production|Explainer",
     "impact_on_citizens|Goldie Hawn|Reaction Round-up",
     "policy_gap|celebrity news|Hard News Lead",
@@ -265,6 +265,7 @@
     "impact_on_citizens|acting career|Profile Beat",
     "policy_gap|Famesick|Hard News Lead",
     "impact_on_citizens|streaming|Explainer",
-    "impact_on_citizens|Saturday Night Live|Reaction Round-up"
+    "impact_on_citizens|Saturday Night Live|Reaction Round-up",
+    "timeline_shift|Alex Cooper|Trend Take"
   ]
 }
