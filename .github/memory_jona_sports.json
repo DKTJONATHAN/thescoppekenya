@@ -136,10 +136,10 @@
     "cd94855ee78fa3298ba7f816fb32ef31",
     "93ac1ec57a0bffbbb26ad3360dd9fbfc",
     "378d2fcc28f2083ac42fe40a670c05f7",
-    "d1ca6ecc697c318f4408e3acca820784"
+    "d1ca6ecc697c318f4408e3acca820784",
+    "295ae27be00e05b66702e6f32c6c8e3f"
   ],
   "style_history": [
-    "Tactical Take",
     "Match Report",
     "Cynical Pundit",
     "Player Profile Beat",
@@ -168,10 +168,10 @@
     "Tactical Take",
     "Stat Story",
     "Match Report",
-    "Player Profile Beat"
+    "Player Profile Beat",
+    "Tactical Take"
   ],
   "angle_history": [
-    "myth_vs_fact|Kylian Mbappe|Stat Story",
     "accountability|Champions League|Player Profile Beat",
     "accountability|WSL|Tactical Take",
     "money_follow|Champions League|Cynical Pundit",
@@ -250,6 +250,7 @@
     "timeline_shift|Premier League|Tactical Take",
     "money_follow|Chelsea FC|Stat Story",
     "timeline_shift|Premier League|Match Report",
-    "timeline_shift|Premier League|Player Profile Beat"
+    "timeline_shift|Premier League|Player Profile Beat",
+    "winners_losers|Premier League|Tactical Take"
   ]
 }
