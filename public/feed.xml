@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sun, 17 May 2026 11:46:18 GMT</pubDate>
+    <pubDate>Sun, 17 May 2026 12:09:36 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[A Chronicler's Tale: Secret Struggles Echo]]></title>
+      <link>https://zandani.co.ke/article/chronicler-tale-secret-struggles-echo</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/chronicler-tale-secret-struggles-echo</guid>
+      <pubDate>Sun, 17 May 2026 12:03:40 GMT</pubDate>
+      <dc:creator><![CDATA[The Chronicler]]></dc:creator>
+      <description><![CDATA[The forgotten whispers of a past hunger echo in the present, where a stranded journalist kenya drought experience unfolds under a pitiless sun.]]></description>
+      <enclosure url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" type="image/jpeg" />
+      <media:content url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" alt="A Chronicler&apos;s Tale: Secret Struggles Echo" /><p>The forgotten whispers of a past hunger echo in the present, where a stranded journalist kenya drought experience unfolds under a pitiless sun.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[NVIDIA Overtakes Silver as Global Market Dynamics Shift]]></title>
       <link>https://zandani.co.ke/article/nvidia-overtakes-silver-as-global-market-dynamics-shift</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
       <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="2026-03-16-katlego-maboe-comeback-king" /><p>2026-03-16-katlego-maboe-comeback-king: Read key facts, reader impact, and practical next steps. Read key facts, reader impact, and practical next steps.</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[2026-03-16-kelly-khumalo-scandals]]></title>
-      <link>https://zandani.co.ke/article/2026-03-16-kelly-khumalo-scandals</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/2026-03-16-kelly-khumalo-scandals</guid>
-      <pubDate>Sat, 16 May 2026 09:19:12 GMT</pubDate>
-      <dc:creator><![CDATA[Za Ndani]]></dc:creator>
-      <description><![CDATA[2026-03-16-kelly-khumalo-scandals: Read key facts, reader impact, and practical next steps. Read key facts, reader impact, and practical next steps.]]></description>
-      <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
-      <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="2026-03-16-kelly-khumalo-scandals" /><p>2026-03-16-kelly-khumalo-scandals: Read key facts, reader impact, and practical next steps. Read key facts, reader impact, and practical next steps.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
