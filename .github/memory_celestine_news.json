@@ -112,10 +112,10 @@
     "257a15bac9facce5ade419ccada2dbdc",
     "9809548605f1a52e4d56db8324654342",
     "3e048785a36538f0f06ed30bedf841f3",
-    "bea1a8df3b01af73ad3c8266988cbd3c"
+    "bea1a8df3b01af73ad3c8266988cbd3c",
+    "68956aa21e6ad13b0f786769c9501168"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Power Accountability",
     "Reaction & Voices",
@@ -144,10 +144,10 @@
     "Explainer",
     "Power Accountability",
     "Context Backgrounder",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "policy_gap|Kenya Railways|Reaction & Voices",
     "money_follow|Education|Context Backgrounder",
     "winners_losers|Nakuru County|Hard News Lead",
     "accountability|Uhuru Kenyatta|Power Accountability",
@@ -226,6 +226,7 @@
     "winners_losers|oil refinery|Explainer",
     "money_follow|Affordable Housing Programme|Power Accountability",
     "money_follow|fuel prices|Context Backgrounder",
-    "policy_gap|femicide|Hard News Lead"
+    "policy_gap|femicide|Hard News Lead",
+    "winners_losers|National Land Commission|Explainer"
   ]
 }
