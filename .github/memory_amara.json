@@ -158,10 +158,10 @@
     "302c8e57b758fee8f8d414f2dd2d614a",
     "83d52be1f940c305599252f835cabd0d",
     "6a03b85234e2abe47ca577c3c17dc3a6",
-    "69f48f3aa24e9371c6dd958e43cde18b"
+    "69f48f3aa24e9371c6dd958e43cde18b",
+    "1243cf10eca461b20536bb6c4928ef9b"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Trend Take",
     "Explainer",
@@ -190,7 +190,8 @@
     "Hard News Lead",
     "Explainer",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Hard News Lead"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -233,6 +234,7 @@
     "impact_on_citizens|Afrobeats|Hard News Lead",
     "timeline_shift|Elinala|Explainer",
     "money_follow|Nigerian music industry|Reaction Round-up",
-    "policy_gap|Nigeria|Trend Take"
+    "policy_gap|Nigeria|Trend Take",
+    "money_follow|BBNaija|Hard News Lead"
   ]
 }
