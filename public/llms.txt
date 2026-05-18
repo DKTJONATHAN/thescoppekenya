@@ -7,6 +7,8 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [John Mbadi Defends Fuel Levies Amid Nationwide Transport Strike](https://zandani.co.ke/article/john-mbadi-defends-fuel-levies-amid-transport-strike) - Treasury CS John Mbadi maintains fuel taxes are vital for public services as transport operators strike over rising pump prices in Kenya.
+- [Spanish court clears Shakira of tax fraud charges for 2011](https://zandani.co.ke/article/spanish-court-clears-shakira-of-tax-fraud-charges) - Spanish court clears Shakira of tax fraud charges for 2011: A Spanish court ruled that Shakira was not a tax resident during 2011, though the tax agency plans
 - [KMSA Forecasts Persistent Rainfall Across Kenya Through May 25](https://zandani.co.ke/article/kmsa-forecast-persistent-rainfall-kenya-may-25) - KMSA Forecasts Persistent Rainfall Across Kenya Through May 25: The Kenya Meteorological Service Authority predicts continued rainfall, thunderstorms, and
 - [Content Creator Nyako Pilot Announces Retirement From TikTok Live](https://zandani.co.ke/article/nyako-pilot-quits-tiktok-live-to-pursue-private-life-in-germany) - Content Creator Nyako Pilot Announces Retirement From TikTok Live: Prominent Kenyan digital creator Nyako Pilot is quitting TikTok Live to pursue a private
 - [Ruto Orders Investigation Into Fatal Arson Attack on Rachel Wandeto](https://zandani.co.ke/article/ruto-orders-investigation-into-fatal-arson-attack-on-rachel-wandeto) - Ruto Orders Investigation Into Fatal Arson Attack on Rachel Wande: President Ruto has directed the DCI to expedite the investigation into the brutal murder of
@@ -15,8 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [The Siege of Screens: Arsenal Premier League Title Chances](https://zandani.co.ke/article/the-siege-of-screens-arsenal-premier-league-title-chances) - The Siege of Screens: Arsenal Premier League Title Chances: In a modern age, the fate of titans, much like Vienna's gates, hangs precariously on pixels and
 - [Nyota Ndogo seeks prayers after consecutive snake encounters](https://zandani.co.ke/article/nyota-ndogo-seeks-prayers-after-consecutive-snake-encounters) - Nyota Ndogo seeks prayers after consecutive snake encounters: Kenyan musician Nyota Ndogo has requested prayers after encountering snakes at her properties,
 - [BBC Sport Unveils Extensive Coverage Strategy for World Cup](https://zandani.co.ke/article/bbc-sport-unveils-extensive-coverage-strategy-for-world-cup) - BBC Sport Unveils Extensive Coverage Strategy for World Cup: BBC Sport announces a full digital and television broadcasting plan for the upcoming global
-- [EPRA Issues Warning Over Employment Scam Targeting Job Seekers](https://zandani.co.ke/article/epra-warns-public-over-fake-job-recruitment-scam) - EPRA Issues Warning Over Employment Scam Targeting Job Seekers: The Energy and Petroleum Regulatory Authority has warned the public against an individual named
-- [Kenya Explores Artificial Intelligence to Transform Healthcare](https://zandani.co.ke/article/kenya-explores-artificial-intelligence-to-transform-healthcare) - Kenya Explores Artificial Intelligence to Transform Healthcare: Kenya is integrating artificial intelligence into the health sector to address workforce
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
