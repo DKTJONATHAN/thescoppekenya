@@ -142,10 +142,10 @@
     "add02387b5a18b243d4247128b3bd94e",
     "af1d76dca12a349a986befc756589bdc",
     "0907a12145a3d14bac17b8f1aa4aa527",
-    "49eac4a290f3c8c0a2124dc591395c5c"
+    "49eac4a290f3c8c0a2124dc591395c5c",
+    "03cf3cc92f635536503b4a4f01301517"
   ],
   "style_history": [
-    "Cynical Pundit",
     "Match Report",
     "Player Profile Beat",
     "Stat Story",
@@ -174,10 +174,10 @@
     "Match Report",
     "Player Profile Beat",
     "Tactical Take",
-    "Stat Story"
+    "Stat Story",
+    "Cynical Pundit"
   ],
   "angle_history": [
-    "money_follow|Europa League|Tactical Take",
     "timeline_shift|Aston Villa|Match Report",
     "myth_vs_fact|UEFA Europa League|Stat Story",
     "next_48_hours|UEFA Conference League|Player Profile Beat",
@@ -256,6 +256,7 @@
     "timeline_shift|La Liga|Match Report",
     "accountability|Manchester United|Player Profile Beat",
     "winners_losers|La Liga|Tactical Take",
-    "myth_vs_fact|Premier League|Stat Story"
+    "myth_vs_fact|Premier League|Stat Story",
+    "money_follow|2026 Fifa World Cup|Cynical Pundit"
   ]
 }
