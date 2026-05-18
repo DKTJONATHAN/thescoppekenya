@@ -197,10 +197,10 @@
     "bc57259523089f028e8f60c91a5133b6",
     "e84810349962c3aebce678cde72e9501",
     "3a05adebae3a4baa1a4448130a91c81f",
-    "5e6af94404731cd5452132dcd317cd40"
+    "5e6af94404731cd5452132dcd317cd40",
+    "71193070d971354b429fe0996a8c2820"
   ],
   "style_history": [
-    "Hard News Lead",
     "Profile Beat",
     "Reaction Round-up",
     "Receipts Piece",
@@ -229,7 +229,8 @@
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Receipts Piece"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -267,6 +268,7 @@
     "winners_losers|transport strike|Trend Take",
     "impact_on_citizens|child protection|Profile Beat",
     "money_follow|fuel prices|Hard News Lead",
-    "impact_on_citizens|transport strike|Reaction Round-up"
+    "impact_on_citizens|transport strike|Reaction Round-up",
+    "policy_gap|arson|Receipts Piece"
   ]
 }
