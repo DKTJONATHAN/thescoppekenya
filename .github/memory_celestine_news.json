@@ -119,10 +119,10 @@
     "1c302992e5736d6d3ba32ec512821a23",
     "f8ceb671f0ea3d1b11bf7ed223a4437f",
     "9c6c9f278ebec1dc5c88bae2142db857",
-    "508febb545c9471caf70e672c952ea6e"
+    "508febb545c9471caf70e672c952ea6e",
+    "abb642f744d13f4148f245e1281c7def"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction & Voices",
     "Explainer",
     "Context Backgrounder",
@@ -151,10 +151,10 @@
     "Hard News Lead",
     "Context Backgrounder",
     "Reaction & Voices",
-    "Power Accountability"
+    "Power Accountability",
+    "Explainer"
   ],
   "angle_history": [
-    "next_48_hours|Judiciary|Reaction & Voices",
     "money_follow|Kenya|Explainer",
     "policy_gap|Kenya|Context Backgrounder",
     "money_follow|KNEC|Power Accountability",
@@ -233,6 +233,7 @@
     "impact_on_citizens|maritime security|Hard News Lead",
     "next_48_hours|KRA|Context Backgrounder",
     "myth_vs_fact|Engineering|Reaction & Voices",
-    "accountability|Kenya|Power Accountability"
+    "accountability|Kenya|Power Accountability",
+    "myth_vs_fact|EPRA|Explainer"
   ]
 }
