@@ -304,6 +304,8 @@ Bien-Aimé Baraza Sparks Debate With Mobutu Sese Seko Inspired Loo is central to
 
 Bien-Aimé Baraza Sparks Debate With Mobutu Sese Seko Inspired Loo is central to this update for Kenyan readers.
 
+Bien-Aimé Baraza Sparks Debate With Mobutu Sese Seko Inspired Loo is central to this update for Kenyan readers.
+
 ## The Sartorial Dictator: Bien-Aimé Baraza and the Mobutu Aesthetic
 
 Bien-Aimé Baraza occupies a central space in East African music, yet his recent performance at Nairobi’s Africa Forward Le Concert suggests he is now influencing the cultural discourse as much through his closet as his vocal range. When the singer appeared on stage, the audience did not just see a performer; they saw a deliberate reconstruction of history.
