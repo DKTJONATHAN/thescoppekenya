@@ -732,6 +732,8 @@ KeNHA issues 21-day notice to illegal occupants at Mtito And is central to this 
 
 KeNHA issues 21-day notice to illegal occupants at Mtito And is central to this update for Kenyan readers.
 
+KeNHA issues 21-day notice to illegal occupants at Mtito And is central to this update for Kenyan readers.
+
 ## KeNHA Orders Evacuation of Mtito Andei Road Reserve The Kenya National Highways Authority (KeNHA) has issued a 21-day notice for all unauthorized occupants along the Mtito Andei section of Mombasa Road to vacate the road reserve. This directive, effective March 17, 2026, targets traders and other encroachers, aiming to facilitate critical service road improvements and drainage rehabilitation work along the vital transport corridor.
 
 Mtito Andei Eviction Notice Issued In a statement released today, the Kenya National Highways Authority (KeNHA) mandated the removal of all wares and structures from the road reserve at Mtito Andei, encompassing both directions of Mombasa Road. The authority cited planned service road enhancements and drainage rehabilitation works as the primary reasons for the directive. KeNHA emphasized that the project is integral to broader road safety initiatives designed to upgrade infrastructure and ensure smoother traffic flow along the busy A8 Road.
