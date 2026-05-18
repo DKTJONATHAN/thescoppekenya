@@ -144,10 +144,10 @@
     "0907a12145a3d14bac17b8f1aa4aa527",
     "49eac4a290f3c8c0a2124dc591395c5c",
     "03cf3cc92f635536503b4a4f01301517",
-    "c0a43449f9a7881941bcd803c7624f3c"
+    "c0a43449f9a7881941bcd803c7624f3c",
+    "a2c40319b3190c7bb93f4b58eab028f6"
   ],
   "style_history": [
-    "Player Profile Beat",
     "Stat Story",
     "Cynical Pundit",
     "Match Report",
@@ -176,10 +176,10 @@
     "Tactical Take",
     "Stat Story",
     "Cynical Pundit",
-    "Player Profile Beat"
+    "Player Profile Beat",
+    "Match Report"
   ],
   "angle_history": [
-    "myth_vs_fact|UEFA Europa League|Stat Story",
     "next_48_hours|UEFA Conference League|Player Profile Beat",
     "policy_gap|Crystal Palace|Tactical Take",
     "impact_on_citizens|Aston Villa|Match Report",
@@ -258,6 +258,7 @@
     "winners_losers|La Liga|Tactical Take",
     "myth_vs_fact|Premier League|Stat Story",
     "money_follow|2026 Fifa World Cup|Cynical Pundit",
-    "accountability|West Ham|Player Profile Beat"
+    "accountability|West Ham|Player Profile Beat",
+    "next_48_hours|Premier League|Match Report"
   ]
 }
