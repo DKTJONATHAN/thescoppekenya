@@ -1,16 +1,20 @@
 ---
 title: "Marsabit and Wajir Border Dispute Halts Basir Titu Security Project"
 slug: "marsabit-wajir-border-dispute-halts-basir-titu-security-project"
-description: "The national government has suspended construction of a security facility in Basir Titu following violent protests over a land dispute between Marsabit and Wajir counties."
+description: "Marsabit and Wajir Border Dispute Halts Basir Titu Security Proje: The national government has suspended construction of a security facility in Basir Titu"
+excerpt: "Resolving the Basir Titu Territorial Dispute The current impasse at the Basir Titu border represents more than a localized land disagreement"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/pvB5QYnx/c72570cbc57a.jpg"
 category: "Opinions"
 tags: ["kenya news", "marsabit county", "wajir county", "land dispute", "northern kenya", "security infrastructure"]
+canonical: "https://zandani.co.ke/article/marsabit-wajir-border-dispute-halts-basir-titu-security-project"
 date: "2026-05-18T14:39:07Z"
 dateModified: "2026-05-18T14:39:07Z"
+focusKeyword: "Marsabit and Wajir Border Dispute Halts Basir Titu Security Proje"
 schema: "NewsArticle"
 ---
+
+Marsabit and Wajir Border Dispute Halts Basir Titu Security Proje is central to this update for Kenyan readers.
 
 ## Resolving the Basir-Titu Territorial Dispute
 
@@ -41,3 +45,18 @@ The Basir-Titu conflict acts as a microcosm for the broader tensions currently a
 Moving forward, focus should be placed on the Ministry of Interior's commitment to a genuine dialogue process. The key indicator of progress will be the inclusion of the Council of Elders alongside county leadership in formalizing a boundary agreement that respects traditional grazing patterns. If the state continues to act unilaterally, it risks transforming a manageable land dispute into a permanent site of regional friction.
 
 To prevent further instability, the government must formally suspend all construction activity until a transparent, inclusive, and technologically integrated mapping process is finalized in partnership with the communities of Marsabit and Wajir. Only through this level of cooperation can the state hope to restore trust and achieve a lasting resolution.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

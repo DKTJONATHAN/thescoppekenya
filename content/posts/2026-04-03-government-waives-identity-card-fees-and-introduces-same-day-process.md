@@ -741,6 +741,8 @@ Government waives identity card fees and introduces same-day is central to this 
 
 Government waives identity card fees and introduces same-day is central to this update for Kenyan readers.
 
+Government waives identity card fees and introduces same-day is central to this update for Kenyan readers.
+
 By Celestine Nzioka, Za Ndani The government has abolished all fees for national identity card applications and replacements, concurrently launching same-day processing for applicants in Nairobi. This significant overhaul, announced by Immigration Principal Secretary Belio Kipsang on Friday, April 3, 2026, aims to enhance service delivery and eliminate delays nationwide.
 
 Streamlined ID Processing and Fee Waivers
