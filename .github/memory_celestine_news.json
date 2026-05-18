@@ -121,10 +121,10 @@
     "9c6c9f278ebec1dc5c88bae2142db857",
     "508febb545c9471caf70e672c952ea6e",
     "abb642f744d13f4148f245e1281c7def",
-    "4e8d07ba4bd07c6af318537c558f00c8"
+    "4e8d07ba4bd07c6af318537c558f00c8",
+    "49fa683f311ca86e4c2c11176300bac0"
   ],
   "style_history": [
-    "Explainer",
     "Context Backgrounder",
     "Hard News Lead",
     "Reaction & Voices",
@@ -153,10 +153,10 @@
     "Reaction & Voices",
     "Power Accountability",
     "Explainer",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "policy_gap|Kenya|Context Backgrounder",
     "money_follow|KNEC|Power Accountability",
     "impact_on_citizens|counterfeit goods|Reaction & Voices",
     "myth_vs_fact|NTSA|Explainer",
@@ -235,6 +235,7 @@
     "myth_vs_fact|Engineering|Reaction & Voices",
     "accountability|Kenya|Power Accountability",
     "myth_vs_fact|EPRA|Explainer",
-    "winners_losers|Kenya|Hard News Lead"
+    "winners_losers|Kenya|Hard News Lead",
+    "timeline_shift|EPRA|Context Backgrounder"
   ]
 }
