@@ -156,10 +156,10 @@
     "6e8d04b31eb42a3f685786a985254015",
     "580b2c932ba825f4743b5de224ea7eba",
     "2cc823f5d24462169d4cee8d345b9155",
-    "4ced7164a15b0e834b7826eadf62e8a1"
+    "4ced7164a15b0e834b7826eadf62e8a1",
+    "a086d21249dd4c4f3e1e88518b09a849"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Hard News Lead",
     "Explainer",
     "Profile Beat",
@@ -188,10 +188,10 @@
     "Hard News Lead",
     "Profile Beat",
     "Reaction Round-up",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
-    "myth_vs_fact|Friends|Profile Beat",
     "next_48_hours|influencer culture|Explainer",
     "impact_on_citizens|Jennifer Hudson|Hard News Lead",
     "money_follow|trademark infringement|Reaction Round-up",
@@ -270,6 +270,7 @@
     "policy_gap|Venezuela Fury|Hard News Lead",
     "accountability|Katie Price|Profile Beat",
     "winners_losers|Tech industry|Reaction Round-up",
-    "myth_vs_fact|data privacy|Explainer"
+    "myth_vs_fact|data privacy|Explainer",
+    "impact_on_citizens|Pluribus|Trend Take"
   ]
 }
