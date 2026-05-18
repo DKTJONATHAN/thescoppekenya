@@ -751,6 +751,8 @@ Nairobi Water reports supply interruption following Kabete-K is central to this 
 
 Nairobi Water reports supply interruption following Kabete-K is central to this update for Kenyan readers.
 
+Nairobi Water reports supply interruption following Kabete-K is central to this update for Kenyan readers.
+
 Nairobi City Water and Sewerage Company (NCWSC) announced a temporary water supply interruption today, Saturday, March 21, 2026, across several city estates, including the President's official residence. The disruption follows a major pipeline burst on the Kabete-Kilimani transmission line. Repairs are currently underway to restore services.
 
 Pipeline Burst Disrupts Nairobi Water Supply
