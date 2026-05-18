@@ -122,10 +122,10 @@
     "508febb545c9471caf70e672c952ea6e",
     "abb642f744d13f4148f245e1281c7def",
     "4e8d07ba4bd07c6af318537c558f00c8",
-    "49fa683f311ca86e4c2c11176300bac0"
+    "49fa683f311ca86e4c2c11176300bac0",
+    "70e8570f840ba7b189fceae0b46b947f"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Hard News Lead",
     "Reaction & Voices",
     "Explainer",
@@ -154,10 +154,10 @@
     "Power Accountability",
     "Explainer",
     "Hard News Lead",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Power Accountability"
   ],
   "angle_history": [
-    "money_follow|KNEC|Power Accountability",
     "impact_on_citizens|counterfeit goods|Reaction & Voices",
     "myth_vs_fact|NTSA|Explainer",
     "money_follow|TSC|Context Backgrounder",
@@ -236,6 +236,7 @@
     "accountability|Kenya|Power Accountability",
     "myth_vs_fact|EPRA|Explainer",
     "winners_losers|Kenya|Hard News Lead",
-    "timeline_shift|EPRA|Context Backgrounder"
+    "timeline_shift|EPRA|Context Backgrounder",
+    "accountability|WhatsApp|Power Accountability"
   ]
 }
