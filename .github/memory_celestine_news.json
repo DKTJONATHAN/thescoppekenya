@@ -118,10 +118,10 @@
     "ff96e7111c9680ce457a3c1e8af87189",
     "1c302992e5736d6d3ba32ec512821a23",
     "f8ceb671f0ea3d1b11bf7ed223a4437f",
-    "9c6c9f278ebec1dc5c88bae2142db857"
+    "9c6c9f278ebec1dc5c88bae2142db857",
+    "508febb545c9471caf70e672c952ea6e"
   ],
   "style_history": [
-    "Power Accountability",
     "Hard News Lead",
     "Reaction & Voices",
     "Explainer",
@@ -150,10 +150,10 @@
     "Power Accountability",
     "Hard News Lead",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "accountability|Energy policy|Hard News Lead",
     "next_48_hours|Judiciary|Reaction & Voices",
     "money_follow|Kenya|Explainer",
     "policy_gap|Kenya|Context Backgrounder",
@@ -232,6 +232,7 @@
     "policy_gap|energy security|Power Accountability",
     "impact_on_citizens|maritime security|Hard News Lead",
     "next_48_hours|KRA|Context Backgrounder",
-    "myth_vs_fact|Engineering|Reaction & Voices"
+    "myth_vs_fact|Engineering|Reaction & Voices",
+    "accountability|Kenya|Power Accountability"
   ]
 }
