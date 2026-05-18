@@ -90,10 +90,10 @@
     "18af2b6b43dd4fe9151ce106d38229db",
     "e9a09991df497b64fccf56bf59756c34",
     "21d943a4c5b7a51458ad78ec8a9d4a7e",
-    "0aeb1d3399d961007eb5434332d65d7e"
+    "0aeb1d3399d961007eb5434332d65d7e",
+    "72346c8677e0404bf9fca7b044c66233"
   ],
   "style_history": [
-    "Personal Reflection",
     "Counterpoint",
     "Historical Lens",
     "Letter Form",
@@ -122,7 +122,8 @@
     "Personal Reflection",
     "Sharp Column",
     "Letter Form",
-    "Historical Lens"
+    "Historical Lens",
+    "Counterpoint"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -197,6 +198,7 @@
     "winners_losers|diplomacy|Personal Reflection",
     "accountability|Mutula Kilonzo|Sharp Column",
     "next_48_hours|election security|Letter Form",
-    "myth_vs_fact|industrialization|Historical Lens"
+    "myth_vs_fact|industrialization|Historical Lens",
+    "myth_vs_fact|UDA|Counterpoint"
   ]
 }
