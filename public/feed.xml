@@ -5,7 +5,7 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Mon, 18 May 2026 16:09:04 GMT</pubDate>
+    <pubDate>Mon, 18 May 2026 16:11:43 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title><![CDATA[John Mbadi Defends Fuel Levies Amid Nationwide Transport Strike]]></title>
@@ -28,6 +28,17 @@
       <enclosure url="https://i.ibb.co/XrkKXm0d/b19285168d31.png" type="image/jpeg" />
       <media:content url="https://i.ibb.co/XrkKXm0d/b19285168d31.png" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/XrkKXm0d/b19285168d31.png" alt="Spanish court clears Shakira of tax fraud charges for 2011" /><p>Spanish court clears Shakira of tax fraud charges for 2011: A Spanish court ruled that Shakira was not a tax resident during 2011, though the tax agency plans</p>]]></content:encoded>
+    </item>
+    <item>
+      <title><![CDATA[Understanding Data Privacy and User Personalization at Za Ndani]]></title>
+      <link>https://zandani.co.ke/article/za-ndani-data-privacy-and-user-personalization</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/za-ndani-data-privacy-and-user-personalization</guid>
+      <pubDate>Mon, 18 May 2026 15:55:01 GMT</pubDate>
+      <dc:creator><![CDATA[Mutheu Ann]]></dc:creator>
+      <description><![CDATA[Za Ndani explains how digital platforms process user information, measure advertising performance, and optimize content for our audience.]]></description>
+      <enclosure url="https://i.ibb.co/VYgQx8KX/4df098ef8560.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/VYgQx8KX/4df098ef8560.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/VYgQx8KX/4df098ef8560.jpg" alt="Understanding Data Privacy and User Personalization at Za Ndani" /><p>Za Ndani explains how digital platforms process user information, measure advertising performance, and optimize content for our audience.</p>]]></content:encoded>
     </item>
     <item>
       <title><![CDATA[KMSA Forecasts Persistent Rainfall Across Kenya Through May 25]]></title>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/KcFhpPcd/e4dece6487fa.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/KcFhpPcd/e4dece6487fa.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/KcFhpPcd/e4dece6487fa.jpg" alt="Celtic Secure Scottish Premiership Title Amidst Pitch Invasion" /><p>Celtic Secure Scottish Premiership Title Amidst Pitch Invasion: Celtic clinched the Scottish Premiership trophy after a late comeback win over Hearts was</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Manchester City victory sparks controversy as Kenyan fans protest VAR decisions]]></title>
-      <link>https://zandani.co.ke/article/manchester-city-victory-sparks-controversy-as-kenyan-fans-protest-va</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/manchester-city-victory-sparks-controversy-as-kenyan-fans-protest-va</guid>
-      <pubDate>Sat, 16 May 2026 17:12:08 GMT</pubDate>
-      <dc:creator><![CDATA[Zed Mogaka]]></dc:creator>
-      <description><![CDATA[Manchester City victory sparks controversy as Kenyan fans protest: Manchester City's 2-1 win over Sheffield United sparks protests in Kenya as local fans claim]]></description>
-      <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
-      <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="Manchester City victory sparks controversy as Kenyan fans protest VAR decisions" /><p>Manchester City victory sparks controversy as Kenyan fans protest: Manchester City's 2-1 win over Sheffield United sparks protests in Kenya as local fans claim</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
