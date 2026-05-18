@@ -220,10 +220,10 @@
     "6249e23a787062563fb6aee633fcdd71",
     "33ed594d0b6346b0b62acac444136ab4",
     "0ceb182471a8f17d48c3d1ab430e3db7",
-    "afc304a176e2826e20935ab34b8f2083"
+    "afc304a176e2826e20935ab34b8f2083",
+    "62eb30369f41f8470ffec75f87e9948c"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Receipts Piece",
     "Hard News Lead",
@@ -252,10 +252,10 @@
     "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "winners_losers|One Night Only|Reaction Round-up",
     "policy_gap|miraa|Trend Take",
     "money_follow|Forex trading|Receipts Piece",
     "impact_on_citizens|Embarambamba|Profile Beat",
@@ -334,6 +334,7 @@
     "next_48_hours|Africa Forward|Trend Take",
     "winners_losers|Kennedy Rapudo|Reaction Round-up",
     "policy_gap|Lydia Wanjiru|Profile Beat",
-    "money_follow|Kenya|Receipts Piece"
+    "money_follow|Kenya|Receipts Piece",
+    "next_48_hours|Nyota Ndogo|Hard News Lead"
   ]
 }
