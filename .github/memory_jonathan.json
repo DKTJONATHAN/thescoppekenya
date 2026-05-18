@@ -94,10 +94,10 @@
     "72346c8677e0404bf9fca7b044c66233",
     "180291cb7dac693406dd5b3b4d3e5bb6",
     "dd1fbf54653a91f8ac9b35af1ac9d7d5",
-    "35e00bef7312977db57d1b42292a023a"
+    "35e00bef7312977db57d1b42292a023a",
+    "443aed636ef2a609291bd57c0163927d"
   ],
   "style_history": [
-    "Sharp Column",
     "Counterpoint",
     "Historical Lens",
     "Letter Form",
@@ -126,7 +126,8 @@
     "Counterpoint",
     "Personal Reflection",
     "Letter Form",
-    "Sharp Column"
+    "Sharp Column",
+    "Historical Lens"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -205,6 +206,7 @@
     "myth_vs_fact|UDA|Counterpoint",
     "impact_on_citizens|Kenya|Personal Reflection",
     "policy_gap|land dispute|Letter Form",
-    "winners_losers|Kenya Revenue Authority|Sharp Column"
+    "winners_losers|Kenya Revenue Authority|Sharp Column",
+    "timeline_shift|Universal Health Coverage|Historical Lens"
   ]
 }
