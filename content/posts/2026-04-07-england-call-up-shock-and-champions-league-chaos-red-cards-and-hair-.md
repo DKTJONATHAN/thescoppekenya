@@ -756,6 +756,8 @@ England Call-Up Shock and Champions League Chaos Red Cards a is central to this 
 
 England Call-Up Shock and Champions League Chaos Red Cards a is central to this update for Kenyan readers.
 
+England Call-Up Shock and Champions League Chaos Red Cards a is central to this update for Kenyan readers.
+
 Jona Munyi for Za Ndani (zandani.co.ke) **England Call-Up Shock and Champions League Chaos: Red Cards and 'Hair Pull' Scandal Erupt** A seismic week in women's football sees new talent emerge for England's World Cup qualifiers, while the Champions League descended into controversy. Explosive semi-final clashes were overshadowed by a shocking red card and a contentious 'hair pull' incident, sparking widespread outrage and debate across Europe.
 
 Champions League Turmoil Takes Centre Stage The Women's Champions League semi-finals are set, though not without significant drama and debate. Barcelona asserted their dominance, running riot against Madrid to comfortably secure their spot in the final four. Arsenal also advanced to the semi-finals, overcoming their opponents in a hard-fought contest. However, Chelsea’s journey ended in controversy as manager Emma Hayes’s counterpart, Sonia Bompastor, was sent off, creating a heated atmosphere. Bayern Munich delivered a late knockout blow to Manchester United, ending their European aspirations with a decisive strike.
