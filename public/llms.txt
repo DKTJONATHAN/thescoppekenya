@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [The Dwindling Canals: A Kenyan Climate Change Impact](https://zandani.co.ke/article/the-dwindling-canals-a-kenyan-climate-change-impact) - As Venice’s maritime empire faltered, new tides rose, mirroring the stark reality of kenya sports tourism climate risks threatening modern arenas. A tragic echo
 - [WhatsApp Updates Disappearing Messages Feature for Kenyan Users](https://zandani.co.ke/article/whatsapp-updates-disappearing-messages-feature-kenya) - WhatsApp Updates Disappearing Messages Feature for Kenyan Users: Meta is updating WhatsApp to trigger disappearing message timers upon viewing. The change
 - [Bolo Bespoke hits back at wash wash allegations over luxury cars](https://zandani.co.ke/article/bolo-bespoke-hits-back-at-wash-wash-allegations) - Fashion designer Bolo Bespoke has defended his display of wealth on social media after public speculation linked his lifestyle to illicit activities.
 - [Transport Strike Hits Kenya as Public Debt Reaches Record High](https://zandani.co.ke/article/kenya-transport-strike-public-debt-market-update) - Kenyan transport operators launch a nationwide strike over rising fuel prices while public debt surges and financial markets show mixed results.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Satrix MSCI World Feeder ETF lists on Nairobi Securities Exchange](https://zandani.co.ke/article/satrix-msci-world-feeder-etf-lists-on-nairobi-securities-exchange) - Satrix MSCI World Feeder ETF lists on Nairobi Securities Exchange: Satrix has expanded into Kenya with a secondary listing of its MSCI World Feeder ETF on the
 - [Vince Gilligan Announces Second Season of Sci-Fi Series Pluribus](https://zandani.co.ke/article/vince-gilligan-announces-second-season-of-sci-fi-series-pluribus) - Vince Gilligan Announces Second Season of Sci-Fi Series Pluribus: Vince Gilligan returns with Pluribus on Apple TV, a sci-fi drama exploring human survival and
 - [Kithure Kindiki Defends High Fuel Prices As Government Urges Public Patience](https://zandani.co.ke/article/kithure-kindiki-defends-high-fuel-prices-as-government-urges-public-) - Kithure Kindiki Defends High Fuel Prices As Government Urges Publ: Interior CS Kithure Kindiki defends Kenya's high fuel prices, stating current tax measures
-- [EPRA Caps KPC Pipeline Tariffs to Shield Consumers from Fuel Hikes](https://zandani.co.ke/article/epra-caps-kpc-pipeline-tariffs-to-shield-consumers-from-fuel-hikes) - EPRA Caps KPC Pipeline Tariffs to Shield Consumers from Fuel Hike: EPRA has set lower multi-year transport tariffs for the Kenya Pipeline Company to help ease
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
