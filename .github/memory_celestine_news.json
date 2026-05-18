@@ -123,10 +123,10 @@
     "abb642f744d13f4148f245e1281c7def",
     "4e8d07ba4bd07c6af318537c558f00c8",
     "49fa683f311ca86e4c2c11176300bac0",
-    "70e8570f840ba7b189fceae0b46b947f"
+    "70e8570f840ba7b189fceae0b46b947f",
+    "df83fbbf58d786c8e246a710ce05e062"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction & Voices",
     "Explainer",
     "Power Accountability",
@@ -155,10 +155,10 @@
     "Explainer",
     "Hard News Lead",
     "Context Backgrounder",
-    "Power Accountability"
+    "Power Accountability",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "impact_on_citizens|counterfeit goods|Reaction & Voices",
     "myth_vs_fact|NTSA|Explainer",
     "money_follow|TSC|Context Backgrounder",
     "timeline_shift|Nairobi Expressway|Hard News Lead",
@@ -237,6 +237,7 @@
     "myth_vs_fact|EPRA|Explainer",
     "winners_losers|Kenya|Hard News Lead",
     "timeline_shift|EPRA|Context Backgrounder",
-    "accountability|WhatsApp|Power Accountability"
+    "accountability|WhatsApp|Power Accountability",
+    "impact_on_citizens|EPRA|Reaction & Voices"
   ]
 }
