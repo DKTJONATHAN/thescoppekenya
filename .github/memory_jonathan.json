@@ -92,10 +92,10 @@
     "21d943a4c5b7a51458ad78ec8a9d4a7e",
     "0aeb1d3399d961007eb5434332d65d7e",
     "72346c8677e0404bf9fca7b044c66233",
-    "180291cb7dac693406dd5b3b4d3e5bb6"
+    "180291cb7dac693406dd5b3b4d3e5bb6",
+    "dd1fbf54653a91f8ac9b35af1ac9d7d5"
   ],
   "style_history": [
-    "Historical Lens",
     "Letter Form",
     "Sharp Column",
     "Counterpoint",
@@ -124,7 +124,8 @@
     "Letter Form",
     "Historical Lens",
     "Counterpoint",
-    "Personal Reflection"
+    "Personal Reflection",
+    "Letter Form"
   ],
   "angle_history": [
     "impact_on_citizens|Kenya|Letter Form",
@@ -201,6 +202,7 @@
     "next_48_hours|election security|Letter Form",
     "myth_vs_fact|industrialization|Historical Lens",
     "myth_vs_fact|UDA|Counterpoint",
-    "impact_on_citizens|Kenya|Personal Reflection"
+    "impact_on_citizens|Kenya|Personal Reflection",
+    "policy_gap|land dispute|Letter Form"
   ]
 }
