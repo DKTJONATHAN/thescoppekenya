@@ -743,6 +743,8 @@ HELB Imposes Monthly Penalties on Non-Compliant Employers an is central to this 
 
 HELB Imposes Monthly Penalties on Non-Compliant Employers an is central to this update for Kenyan readers.
 
+HELB Imposes Monthly Penalties on Non-Compliant Employers an is central to this update for Kenyan readers.
+
 The Higher Education Loans Board (HELB) on Friday, March 20, 2026, announced stringent new monthly penalties for employers failing to disclose staff with HELB loans or remit deductions, and for loan beneficiaries in default. This decisive action is part of HELB's intensified strategy to recover over Ksh100 billion in outstanding student loan debt across the nation.
 
 HELB Intensifies Loan Recovery Drive
