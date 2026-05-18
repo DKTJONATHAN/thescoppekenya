@@ -127,10 +127,10 @@
     "dbed609e1c03c423022469aabc4b4861",
     "a96a814c3265113650bdc0b9feedb30c",
     "a76bbbe8e6e8249e314032ee28b759f6",
-    "3471da5a810877cd5d902af6248143ef"
+    "3471da5a810877cd5d902af6248143ef",
+    "0f49ea722f33af27558579df0ea30f82"
   ],
   "style_history": [
-    "Explainer",
     "Backgrounder",
     "Power Accountability",
     "Markets Report",
@@ -159,7 +159,8 @@
     "Backgrounder",
     "Explainer",
     "Power Accountability",
-    "SME Angle"
+    "SME Angle",
+    "Backgrounder"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -199,6 +200,7 @@
     "timeline_shift|Market Capitalization|Backgrounder",
     "impact_on_citizens|Public Debt|Explainer",
     "accountability|East African Community|Power Accountability",
-    "impact_on_citizens|Ebola|SME Angle"
+    "impact_on_citizens|Ebola|SME Angle",
+    "timeline_shift|transport-strike|Backgrounder"
   ]
 }
