@@ -153,10 +153,10 @@
     "09548eb3ba465d6b876c19a69a294452",
     "f0f70e8fb1cf6782cda6258a79eb4305",
     "2f79156135cd1ecbd077910286b98e74",
-    "6e8d04b31eb42a3f685786a985254015"
+    "6e8d04b31eb42a3f685786a985254015",
+    "580b2c932ba825f4743b5de224ea7eba"
   ],
   "style_history": [
-    "Hard News Lead",
     "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
@@ -185,10 +185,10 @@
     "Explainer",
     "Reaction Round-up",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Profile Beat"
   ],
   "angle_history": [
-    "impact_on_citizens|Goldie Hawn|Reaction Round-up",
     "policy_gap|celebrity news|Hard News Lead",
     "winners_losers|The View|Trend Take",
     "myth_vs_fact|Friends|Profile Beat",
@@ -267,6 +267,7 @@
     "impact_on_citizens|streaming|Explainer",
     "impact_on_citizens|Saturday Night Live|Reaction Round-up",
     "timeline_shift|Alex Cooper|Trend Take",
-    "policy_gap|Venezuela Fury|Hard News Lead"
+    "policy_gap|Venezuela Fury|Hard News Lead",
+    "accountability|Katie Price|Profile Beat"
   ]
 }
