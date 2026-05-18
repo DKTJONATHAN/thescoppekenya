@@ -157,10 +157,10 @@
     "580b2c932ba825f4743b5de224ea7eba",
     "2cc823f5d24462169d4cee8d345b9155",
     "4ced7164a15b0e834b7826eadf62e8a1",
-    "a086d21249dd4c4f3e1e88518b09a849"
+    "a086d21249dd4c4f3e1e88518b09a849",
+    "328796aa4b51ca94b4d6db518e85efc1"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Profile Beat",
     "Trend Take",
@@ -189,10 +189,10 @@
     "Profile Beat",
     "Reaction Round-up",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "next_48_hours|influencer culture|Explainer",
     "impact_on_citizens|Jennifer Hudson|Hard News Lead",
     "money_follow|trademark infringement|Reaction Round-up",
     "policy_gap|anti-SLAPP|Profile Beat",
@@ -271,6 +271,7 @@
     "accountability|Katie Price|Profile Beat",
     "winners_losers|Tech industry|Reaction Round-up",
     "myth_vs_fact|data privacy|Explainer",
-    "impact_on_citizens|Pluribus|Trend Take"
+    "impact_on_citizens|Pluribus|Trend Take",
+    "impact_on_citizens|Emmy Awards|Profile Beat"
   ]
 }
