@@ -789,6 +789,8 @@ President Ruto Promotes Broad-Based Government and Infrastru is central to this 
 
 President Ruto Promotes Broad-Based Government and Infrastru is central to this update for Kenyan readers.
 
+President Ruto Promotes Broad-Based Government and Infrastru is central to this update for Kenyan readers.
+
 President William Ruto brought major headlines to Kisii and Nyamira this Monday, wrapping up a dynamic development tour. The President cemented a "Broad-Based Government" alliance, unveiling grand projects including a KSh 950 million stadium and significant university funding, setting the stage for regional transformation.
 
 Ruto Rocks Kisii and Nyamira with Billion-Shilling Development Blitz
