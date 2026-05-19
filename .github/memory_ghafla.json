@@ -204,10 +204,10 @@
     "73109577cdcf8e7ecb7c2897e06d38b9",
     "41bca63370c94780ff82eff5058a789c",
     "9846706d10e4a7b97e6f7b8e6fd320e0",
-    "3a67f0d34209719ae84c35eb6ef247b6"
+    "3a67f0d34209719ae84c35eb6ef247b6",
+    "6c85a5e44f09a479f44000831c572997"
   ],
   "style_history": [
-    "Profile Beat",
     "Receipts Piece",
     "Hard News Lead",
     "Trend Take",
@@ -236,7 +236,8 @@
     "Reaction Round-up",
     "Receipts Piece",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -281,6 +282,7 @@
     "impact_on_citizens|EPRA|Reaction Round-up",
     "money_follow|Kenya|Receipts Piece",
     "next_48_hours|Kenya|Trend Take",
-    "myth_vs_fact|Millicent Omanga|Profile Beat"
+    "myth_vs_fact|Millicent Omanga|Profile Beat",
+    "impact_on_citizens|Kenya|Reaction Round-up"
   ]
 }
