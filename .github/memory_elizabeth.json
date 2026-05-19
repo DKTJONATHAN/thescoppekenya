@@ -110,7 +110,8 @@
     "0f2e36f809f58e9b58c894fb2df654d9",
     "01cbd17941c89f330c47b79951bd739e",
     "d49dc99cc9fa27cb6c071f97cde1c4c7",
-    "69eac9edf5de9324c80b744b4595e9ce"
+    "69eac9edf5de9324c80b744b4595e9ce",
+    "69d870e189056f3b7b8d5befba952c07"
   ],
   "style_history": [
     "Africa Angle",
@@ -140,7 +141,8 @@
     "Backgrounder",
     "Explainer",
     "Critical Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Africa Angle"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -169,6 +171,7 @@
     "impact_on_citizens|WhatsApp|Backgrounder",
     "winners_losers|Safaricom|Explainer",
     "money_follow|Matatu|Critical Take",
-    "myth_vs_fact|Android|Hard News Lead"
+    "myth_vs_fact|Android|Hard News Lead",
+    "impact_on_citizens|TikTok|Africa Angle"
   ]
 }
