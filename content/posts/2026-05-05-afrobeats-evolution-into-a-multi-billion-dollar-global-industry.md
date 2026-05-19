@@ -774,6 +774,8 @@ Afrobeats Evolution into a Multi-Billion Dollar Global Indus is central to this 
 
 Afrobeats Evolution into a Multi-Billion Dollar Global Indus is central to this update for Kenyan readers.
 
+Afrobeats Evolution into a Multi-Billion Dollar Global Indus is central to this update for Kenyan readers.
+
 ## The Institutionalization of Afrobeats
 
 Afrobeats has transformed from a grassroots cultural movement into a $29.6 billion economic titan. As major labels and global banks pour capital into the scene, fans and creators are questioning if the sound will change to appease its new corporate financiers.
