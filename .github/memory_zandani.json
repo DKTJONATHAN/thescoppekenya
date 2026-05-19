@@ -229,10 +229,10 @@
     "155f672c2caaa3512f082cd4f4b7725d",
     "d87219288435fa9142f6e6b3cf312a78",
     "8fb81f544578bff0e05b318bdc0ab971",
-    "eb239e9aabb210e31cf0e0f94e4127c0"
+    "eb239e9aabb210e31cf0e0f94e4127c0",
+    "8e139b443ddd1efe2e4682606eeb1931"
   ],
   "style_history": [
-    "Profile Beat",
     "Trend Take",
     "Receipts Piece",
     "Hard News Lead",
@@ -261,10 +261,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Receipts Piece",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "money_follow|Raymond Kahuma|Trend Take",
     "myth_vs_fact|Kenyan comedy|Hard News Lead",
     "impact_on_citizens|Meta|Reaction Round-up",
     "impact_on_citizens|Janet Otieno|Profile Beat",
@@ -343,6 +343,7 @@
     "accountability|Forex trading|Reaction Round-up",
     "money_follow|Bongo Flava|Trend Take",
     "money_follow|Nairobi transport strike|Receipts Piece",
-    "timeline_shift|Kenya|Profile Beat"
+    "timeline_shift|Kenya|Profile Beat",
+    "policy_gap|Kenya|Hard News Lead"
   ]
 }
