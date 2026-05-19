@@ -346,6 +346,8 @@ Julia Louis-Dreyfus roasts Stephen Colbert as Selina Meyer is central to this up
 
 Julia Louis-Dreyfus roasts Stephen Colbert as Selina Meyer is central to this update for Kenyan readers.
 
+Julia Louis-Dreyfus roasts Stephen Colbert as Selina Meyer is central to this update for Kenyan readers.
+
 ## The Veep Effect: Why Hollywood’s Satirical Roasts Are Shaping Kenyan Political Discourse
 
 When Julia Louis-Dreyfus stepped onto the stage of The Late Show, she did not just show up as a celebrated actress. She arrived as Selina Meyer, the sharp-tongued, morally bankrupt, and deeply cynical politician from HBO’s Veep. Her roast of Stephen Colbert was a masterclass in political theater, offering a mirror for how public figures weaponize humor to survive the glare of constant scrutiny.
