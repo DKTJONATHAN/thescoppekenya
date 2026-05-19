@@ -163,10 +163,10 @@
     "b514963cfef78eb21890990a1a94abfe",
     "ed64ee78654da710838d4d8280c83403",
     "80e900be695cecd26229e156a6b0974b",
-    "e8a47076b4c70c8acbd6bb0298816d34"
+    "e8a47076b4c70c8acbd6bb0298816d34",
+    "78a552561ac7e4e3f3157556bf38db81"
   ],
   "style_history": [
-    "Profile Beat",
     "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
@@ -195,10 +195,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Explainer",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "winners_losers|Is God Is|Explainer",
     "myth_vs_fact|Outlander|Profile Beat",
     "money_follow|sports media|Trend Take",
     "next_48_hours|Entertainment Weekly|Hard News Lead",
@@ -277,6 +277,7 @@
     "impact_on_citizens|Noah Schnapp|Reaction Round-up",
     "timeline_shift|memoir|Trend Take",
     "policy_gap|TrumpRx|Explainer",
-    "accountability|Reality television|Profile Beat"
+    "accountability|Reality television|Profile Beat",
+    "impact_on_citizens|Phil Collins|Reaction Round-up"
   ]
 }
