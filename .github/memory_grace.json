@@ -132,10 +132,10 @@
     "b33121e14dffcdd6da8deb8fb629fa6a",
     "32289f4b5c2a2703c998a632e0ebb1c4",
     "c5991beed63215207c9dc1f4aa5ae30c",
-    "4fbc758f92746b0d38f33b2792804119"
+    "4fbc758f92746b0d38f33b2792804119",
+    "c0fc7286c7482097823c31286fd7c698"
   ],
   "style_history": [
-    "Backgrounder",
     "SME Angle",
     "Markets Report",
     "Explainer",
@@ -164,7 +164,8 @@
     "Markets Report",
     "Power Accountability",
     "Explainer",
-    "SME Angle"
+    "SME Angle",
+    "Markets Report"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -209,6 +210,7 @@
     "money_follow|fuel taxes|Markets Report",
     "winners_losers|Satrix|Power Accountability",
     "policy_gap|Kenya|Explainer",
-    "impact_on_citizens|Kenya|SME Angle"
+    "impact_on_citizens|Kenya|SME Angle",
+    "impact_on_citizens|Banking|Markets Report"
   ]
 }
