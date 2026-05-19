@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Chesumei MP Paul Biego loses Ksh20 million truck in Naivasha](https://zandani.co.ke/article/chesumei-mp-paul-biego-truck-destroyed-naivasha-protests) - Chesumei MP Paul Biego has reported a major financial loss after his Actros truck was set on fire by protesters in Naivasha during a national transport strike.
 - [3Men Army Podcast Criticizes Kenyan Forex Influencers](https://zandani.co.ke/article/3men-army-podcast-criticizes-kenyan-forex-influencers) - The hosts of 3Men Army Podcast have challenged the marketing tactics of Kenyan forex traders who promote wealth to sell expensive mentorship courses.
 - [EPRA Adjusts Diesel and Kerosene Prices to Curb Fuel Adulteration](https://zandani.co.ke/article/epra-adjusts-diesel-and-kerosene-prices-to-curb-fuel-adulteration) - EPRA has released new fuel prices for the upcoming month, cutting diesel costs by KSh 10.06 while raising kerosene prices by KSh 38.60 in Nairobi.
 - [EPRA Adjusts Diesel and Kerosene Prices After National Strike](https://zandani.co.ke/article/epra-adjusts-fuel-prices-after-national-transport-strike) - EPRA has revised fuel prices following a nationwide transport strike over adulteration concerns. The government is using KSh 12 billion in funds.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [CS Kithure Kindiki Warns Youth Against Tattoos as CS Opiyo Wandayi Clashes with Governor James Orengo](https://zandani.co.ke/article/cs-kithure-kindiki-warns-youth-against-tattoos-as-cs-opiyo-wandayi-c) - CS Kithure Kindiki Warns Youth Against Tattoos as CS Opiyo Wanday: CS Kithure Kindiki labels youth tattoos as signs of criminal gang affiliation while CS Opiyo
 - [Public Transport Strike Persists Despite EPRA Fuel Price Adjustments](https://zandani.co.ke/article/transport-strike-continues-despite-epra-fuel-price-adjustments) - Public Transport Strike Persists Despite EPRA Fuel Price Adjustme: Transport operators across Kenya continue their nationwide strike after rejecting EPRA fuel
 - [Kenyan Celebrities Address Personal Controversies and Industry News](https://zandani.co.ke/article/kenyan-celebrities-address-personal-controversies-industry-news) - Kenyan Celebrities Address Personal Controversies and Industry Ne: Kenyan public figures clarify personal rumors and navigate industry controversies ranging
-- [Manchester City prepares for life after Pep Guardiola departure](https://zandani.co.ke/article/manchester-city-prepares-for-pep-guardiola-exit) - Manchester City prepares for life after Pep Guardiola departure: Manchester City is internally planning for Pep Guardiola's exit after the current season,
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
