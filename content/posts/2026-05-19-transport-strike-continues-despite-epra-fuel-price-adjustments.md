@@ -1,16 +1,20 @@
 ---
 title: "Public Transport Strike Persists Despite EPRA Fuel Price Adjustments"
 slug: "transport-strike-continues-despite-epra-fuel-price-adjustments"
-description: "Transport operators across Kenya continue their nationwide strike after rejecting EPRA fuel price revisions intended to curb adulteration and lower diesel costs."
+description: "Public Transport Strike Persists Despite EPRA Fuel Price Adjustme: Transport operators across Kenya continue their nationwide strike after rejecting EPRA fuel"
+excerpt: "The Silent Commute: How Nairobi’s Stranded Passengers are Navigating a Market Without Matatus For the commuters of Nairobi, the latest fuel"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/mFR10RbT/e4f813a3d18b.jpg"
 category: "News"
 tags: ["epra", "fuel prices", "kenya news", "matatu strike", "transport sector", "kenya economy"]
+canonical: "https://zandani.co.ke/article/transport-strike-continues-despite-epra-fuel-price-adjustments"
 date: "2026-05-18T21:40:48Z"
 dateModified: "2026-05-18T21:40:48Z"
+focusKeyword: "Public Transport Strike Persists Despite EPRA Fuel Price Adjustme"
 schema: "NewsArticle"
 ---
+
+Public Transport Strike Persists Despite EPRA Fuel Price Adjustme is central to this update for Kenyan readers.
 
 ## The Silent Commute: How Nairobi’s Stranded Passengers are Navigating a Market Without Matatus
 
@@ -35,3 +39,18 @@ This strike is no longer just about fuel pump prices; it is a full blown crisis 
 The coming days will determine if the government is willing to offer further concessions or if they will attempt to break the strike through administrative pressure. Passengers should watch for any signs of a split within the transport unions, as smaller operators may find it impossible to stay off the road for much longer. If the gridlock persists, expect more calls for alternative transit solutions, though these remain largely theoretical for most of the population. For now, the streets remain dominated by motorbikes and the quiet desperation of those who have no choice but to keep walking.
 
 The city breathes in the rhythm of tired feet and empty terminals, waiting for a resolution that remains frustratingly out of reach.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
