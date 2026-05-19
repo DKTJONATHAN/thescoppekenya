@@ -149,10 +149,10 @@
     "af46b29b721e746f992019a1e9d6d6b0",
     "7bd5dd6cfb3c222595a7b66f9c340e56",
     "3fbef7fbc9214b726ff647da659dfb46",
-    "040ccd50baf318fa19feb6c5bd6e1a00"
+    "040ccd50baf318fa19feb6c5bd6e1a00",
+    "397a94f5d18dde30f61be43eda02cb0b"
   ],
   "style_history": [
-    "Stat Story",
     "Cynical Pundit",
     "Match Report",
     "Tactical Take",
@@ -181,10 +181,10 @@
     "Tactical Take",
     "Cynical Pundit",
     "Stat Story",
-    "Player Profile Beat"
+    "Player Profile Beat",
+    "Tactical Take"
   ],
   "angle_history": [
-    "money_follow|Crystal Palace|Stat Story",
     "policy_gap|Premier League|Tactical Take",
     "winners_losers|AFC Bournemouth|Match Report",
     "money_follow|Manchester United|Cynical Pundit",
@@ -263,6 +263,7 @@
     "accountability|Premier League|Tactical Take",
     "myth_vs_fact|Manchester City|Cynical Pundit",
     "impact_on_citizens|Manchester City|Stat Story",
-    "impact_on_citizens|World Cup|Player Profile Beat"
+    "impact_on_citizens|World Cup|Player Profile Beat",
+    "policy_gap|football|Tactical Take"
   ]
 }
