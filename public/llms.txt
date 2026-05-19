@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Denis Itumbi Defends Government Youth Programs Despite Public Criticism Over Beneficiary Ages](https://zandani.co.ke/article/denis-itumbi-defends-government-youth-programs-despite-public-critic) - Denis Itumbi defends state youth programs amid public backlash over claims that middle-aged political loyalists are benefiting from the initiatives.
 - [Chesumei MP Paul Biego loses Ksh20 million truck in Naivasha](https://zandani.co.ke/article/chesumei-mp-paul-biego-truck-destroyed-naivasha-protests) - Chesumei MP Paul Biego loses Ksh20 million truck in Naivasha: Chesumei MP Paul Biego has reported a major financial loss after his Actros truck was set on fire
 - [3Men Army Podcast Criticizes Kenyan Forex Influencers](https://zandani.co.ke/article/3men-army-podcast-criticizes-kenyan-forex-influencers) - 3Men Army Podcast Criticizes Kenyan Forex Influencers: The hosts of 3Men Army Podcast have challenged the marketing tactics of Kenyan forex traders who promote
 - [Why African discourse must move beyond performative outrage](https://zandani.co.ke/article/african-discourse-accountability-governance) - Why African discourse must move beyond performative outrage: True accountability requires addressing domestic governance failures rather than blaming foreign
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Rapper Latto Confirms Birth of Her First Child](https://zandani.co.ke/article/rapper-latto-confirms-birth-of-her-first-child) - Rapper Latto Confirms Birth of Her First Child: American rapper Latto has officially announced the birth of her first child by sharing a retrospective video
 - [The Empress's Follies, and the `Kibiwott Kandie Doping Scandal 2026`](https://zandani.co.ke/article/the-empresss-follies-and-the-kibiwott-kandie-doping-scandal-2026) - The Empress's Follies, and the `Kibiwott Kandie Doping Scandal 20: In Rome, the whispers of Empress Messalina’s private life were as captivating as any modern
 - [Government official silences Gabriel Oguda during heated Social Health Authority meeting](https://zandani.co.ke/article/government-official-silences-gabriel-oguda-during-heated-social-heal) - Government official silences Gabriel Oguda during heated Social H: A senior government official silenced activist Gabriel Oguda during a consultative meeting
-- [CS Kithure Kindiki Warns Youth Against Tattoos as CS Opiyo Wandayi Clashes with Governor James Orengo](https://zandani.co.ke/article/cs-kithure-kindiki-warns-youth-against-tattoos-as-cs-opiyo-wandayi-c) - CS Kithure Kindiki Warns Youth Against Tattoos as CS Opiyo Wanday: CS Kithure Kindiki labels youth tattoos as signs of criminal gang affiliation while CS Opiyo
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
