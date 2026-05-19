@@ -162,10 +162,10 @@
     "1243cf10eca461b20536bb6c4928ef9b",
     "d14c569c68fade06f08c6b84a6f017d5",
     "c73bb7be85699eed6f09c19ed3ecbc83",
-    "3c37b4baf8bfa8d01f92ccf0c8a8723b"
+    "3c37b4baf8bfa8d01f92ccf0c8a8723b",
+    "8756db530d49048f21711b44cafae763"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Trend Take",
     "Hard News Lead",
@@ -194,7 +194,8 @@
     "Hard News Lead",
     "Explainer",
     "Profile Beat",
-    "Trend Take"
+    "Trend Take",
+    "Hard News Lead"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -241,6 +242,7 @@
     "money_follow|BBNaija|Hard News Lead",
     "myth_vs_fact|Nollywood|Explainer",
     "policy_gap|tax law|Profile Beat",
-    "accountability|music release|Trend Take"
+    "accountability|music release|Trend Take",
+    "accountability|Chike|Hard News Lead"
   ]
 }
