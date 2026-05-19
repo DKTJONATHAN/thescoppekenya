@@ -472,6 +472,8 @@ Linda Ejiofor-Suleiman makes history with dual AMVCA wins is central to this upd
 
 Linda Ejiofor-Suleiman makes history with dual AMVCA wins is central to this update for Kenyan readers.
 
+Linda Ejiofor-Suleiman makes history with dual AMVCA wins is central to this update for Kenyan readers.
+
 ## Linda Ejiofor-Suleiman and the art of Nollywood endurance
 
 On May 9, Linda Ejiofor-Suleiman exited the AMVCA stage clutching two trophies. While the flashbulbs captured the highlight, the victory actually began years ago in a quiet, methodical process of refinement. She has long understood that in a crowded industry, a steady voice resonates further than a shout.

@@ -1,16 +1,20 @@
 ---
 title: "Steve Clarke Names Scotland Squad for World Cup Return"
 slug: "steve-clarke-names-scotland-squad-for-world-cup-return"
-description: "Scotland manager Steve Clarke has named a 26-man squad for the upcoming World Cup, marking the nation's first appearance in the tournament since 1998."
+description: "Steve Clarke Names Scotland Squad for World Cup Return: Scotland manager Steve Clarke has named a 26-man squad for the upcoming World Cup, marking the nation's"
+excerpt: "Scotland Squad Announcement: A Journey Through Time Twenty eight years of waiting is a lifetime in the world of sports. For a nation that ha"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/8n26cpvT/54de4d8af2a8.png"
 category: "Sports"
 tags: ["scotland", "world cup", "football", "steve clarke", "international sports"]
+canonical: "https://zandani.co.ke/article/steve-clarke-names-scotland-squad-for-world-cup-return"
 date: "2026-05-19T10:45:31Z"
 dateModified: "2026-05-19T10:45:31Z"
+focusKeyword: "Steve Clarke Names Scotland Squad for World Cup Return"
 schema: "NewsArticle"
 ---
+
+Steve Clarke Names Scotland Squad for World Cup Return is central to this update for Kenyan readers.
 
 ## Scotland Squad Announcement: A Journey Through Time
 
@@ -39,3 +43,18 @@ This moment speaks to every fan who has ever cheered for a struggling team, from
 As the squad heads to North America for the kickoff on 11 June, the focus will shift from the drama of the selection to the reality of the pitch. Every minute Craig Gordon spends on the field will be scrutinized as a victory over time itself. The world will be watching to see if the youthful energy of players like Curtis can bridge the gap against world-class opposition. 
 
 For the Scottish faithful, the tournament represents a chance to rewrite the final chapters of a long, tired book. The journey begins in June, but for those who have waited since the nineties, the victory was already secured the moment the final roster was pinned to the wall. The game is finally theirs to play again.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

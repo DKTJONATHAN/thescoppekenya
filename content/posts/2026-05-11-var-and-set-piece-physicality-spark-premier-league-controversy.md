@@ -442,6 +442,8 @@ VAR and Set-Piece Physicality Spark Premier League Controversy is central to thi
 
 VAR and Set-Piece Physicality Spark Premier League Controversy is central to this update for Kenyan readers.
 
+VAR and Set-Piece Physicality Spark Premier League Controversy is central to this update for Kenyan readers.
+
 ## The Set-Piece Inflation: Why 31% of Arsenal’s Goals Are Rewriting Premier League Physics
 
 Thirty-one percent. That is the statistical footprint of Arsenal’s set-piece efficiency, a figure that dictates the trajectory of the Premier League title race. While debate rages over VAR, the math proves that clubs are no longer playing football; they are executing highly leveraged financial assets.
