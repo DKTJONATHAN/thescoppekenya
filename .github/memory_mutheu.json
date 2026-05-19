@@ -158,10 +158,10 @@
     "2cc823f5d24462169d4cee8d345b9155",
     "4ced7164a15b0e834b7826eadf62e8a1",
     "a086d21249dd4c4f3e1e88518b09a849",
-    "328796aa4b51ca94b4d6db518e85efc1"
+    "328796aa4b51ca94b4d6db518e85efc1",
+    "aaa0e9dae2e3a12dba036788184034e0"
   ],
   "style_history": [
-    "Explainer",
     "Profile Beat",
     "Trend Take",
     "Reaction Round-up",
@@ -190,10 +190,10 @@
     "Reaction Round-up",
     "Explainer",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "impact_on_citizens|Jennifer Hudson|Hard News Lead",
     "money_follow|trademark infringement|Reaction Round-up",
     "policy_gap|anti-SLAPP|Profile Beat",
     "myth_vs_fact|Dave Coulier|Trend Take",
@@ -272,6 +272,7 @@
     "winners_losers|Tech industry|Reaction Round-up",
     "myth_vs_fact|data privacy|Explainer",
     "impact_on_citizens|Pluribus|Trend Take",
-    "impact_on_citizens|Emmy Awards|Profile Beat"
+    "impact_on_citizens|Emmy Awards|Profile Beat",
+    "money_follow|Latto|Hard News Lead"
   ]
 }
