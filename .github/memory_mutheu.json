@@ -160,10 +160,10 @@
     "a086d21249dd4c4f3e1e88518b09a849",
     "328796aa4b51ca94b4d6db518e85efc1",
     "aaa0e9dae2e3a12dba036788184034e0",
-    "b514963cfef78eb21890990a1a94abfe"
+    "b514963cfef78eb21890990a1a94abfe",
+    "ed64ee78654da710838d4d8280c83403"
   ],
   "style_history": [
-    "Trend Take",
     "Reaction Round-up",
     "Explainer",
     "Profile Beat",
@@ -192,10 +192,10 @@
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
-    "policy_gap|anti-SLAPP|Profile Beat",
     "myth_vs_fact|Dave Coulier|Trend Take",
     "accountability|Deadliest Catch|Hard News Lead",
     "winners_losers|Is God Is|Explainer",
@@ -274,6 +274,7 @@
     "impact_on_citizens|Pluribus|Trend Take",
     "impact_on_citizens|Emmy Awards|Profile Beat",
     "money_follow|Latto|Hard News Lead",
-    "impact_on_citizens|Noah Schnapp|Reaction Round-up"
+    "impact_on_citizens|Noah Schnapp|Reaction Round-up",
+    "timeline_shift|memoir|Trend Take"
   ]
 }
