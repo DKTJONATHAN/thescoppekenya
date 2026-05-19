@@ -225,10 +225,10 @@
     "45cee93dc31ed76e94725ccbba287b9d",
     "c447f4179f2dd7471ff63d4ef3ea3db4",
     "b2addbed7f8f796d8f84d662c3bd908b",
-    "603d92aabae318b50cfc11b78bdd4b00"
+    "603d92aabae318b50cfc11b78bdd4b00",
+    "155f672c2caaa3512f082cd4f4b7725d"
   ],
   "style_history": [
-    "Profile Beat",
     "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
@@ -257,10 +257,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Receipts Piece",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "timeline_shift|Education|Trend Take",
     "accountability|music industry|Reaction Round-up",
     "money_follow|comedy|Receipts Piece",
     "impact_on_citizens|King Kaka|Profile Beat",
@@ -339,6 +339,7 @@
     "timeline_shift|Nyako Pilot|Reaction Round-up",
     "winners_losers|celebrity boxing|Trend Take",
     "money_follow|Bolo Bespoke|Receipts Piece",
-    "myth_vs_fact|Kenya|Profile Beat"
+    "myth_vs_fact|Kenya|Profile Beat",
+    "accountability|Forex trading|Reaction Round-up"
   ]
 }
