@@ -43,6 +43,8 @@ The Empress's Follies, and the `Kibiwott Kandie Doping Scandal 20 is central to 
 
 The Empress's Follies, and the `Kibiwott Kandie Doping Scandal 20 is central to this update for Kenyan readers.
 
+The Empress's Follies, and the `Kibiwott Kandie Doping Scandal 20 is central to this update for Kenyan readers.
+
 The trumpets blared. Not for a triumph, nor a declaration of war, but for a wedding. A strange wedding, for Rome had never seen its like. Empress Valeria Messalina, wife of Emperor Claudius, stood at the altar in the year 48 AD, her hand in that of Gaius Silius, the city’s handsomest man. Her gown, though not imperial purple, shimmered with an audacity that bespoke a different kind of power. Her smile, brilliant and defiant, was for all of Rome to see, yet only a privileged few dared to speak its true meaning.
 
 <h2>Whispers in the Forum: Beyond the `Peres Jepchirchir Marathon Cheating Controversy`</h2>

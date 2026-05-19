@@ -786,6 +786,8 @@ Bayern Munich vs PSG Champions League Semi-final Second Leg is central to this u
 
 Bayern Munich vs PSG Champions League Semi-final Second Leg is central to this update for Kenyan readers.
 
+Bayern Munich vs PSG Champions League Semi-final Second Leg is central to this update for Kenyan readers.
+
 ## Harry Kane and the Weight of the Champions League
 
 The Allianz Arena sits quiet for now, but by sunset, the atmosphere will be heavy with expectation. For Harry Kane, this Champions League semi-final second leg against Paris Saint-Germain is more than just a fixture. It is a defining moment in his European career. Bayern Munich enters the evening trailing 5-4 on aggregate, staring down the prospect of an early exit. While global news highlights political tensions across the Middle East, the focus in Munich is entirely on the grass, where the hopes of a club rest on ninety minutes of football. Kane has carried the team all year, but tonight, his statistics must convert into something substantial.

@@ -786,6 +786,8 @@ Former Trump counselor Alina Habba clashes with co-hosts on is central to this u
 
 Former Trump counselor Alina Habba clashes with co-hosts on is central to this update for Kenyan readers.
 
+Former Trump counselor Alina Habba clashes with co-hosts on is central to this update for Kenyan readers.
+
 ## Alina Habba Ignites The View's Hot Topics Table
 
 Former Trump counselor Alina Habba stirred up a storm on *The View* this Wednesday, engaging in fiery debates with Sunny Hostin and Whoopi Goldberg. From a controversial ex-FBI director's deleted post to economic claims and immigration policies, Habba held nothing back, making for an unforgettable "Hot Topics" segment that left audiences buzzing.
