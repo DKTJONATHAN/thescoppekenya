@@ -126,10 +126,10 @@
     "70e8570f840ba7b189fceae0b46b947f",
     "df83fbbf58d786c8e246a710ce05e062",
     "b4f2ed8321c5b0317d8b67d44464d760",
-    "476fdae62c807614a44cc166799fde84"
+    "476fdae62c807614a44cc166799fde84",
+    "660c3f4747376dc8873d1bcb9a8129b1"
   ],
   "style_history": [
-    "Power Accountability",
     "Hard News Lead",
     "Reaction & Voices",
     "Context Backgrounder",
@@ -158,10 +158,10 @@
     "Power Accountability",
     "Reaction & Voices",
     "Hard News Lead",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Power Accountability"
   ],
   "angle_history": [
-    "timeline_shift|Nairobi Expressway|Hard News Lead",
     "winners_losers|minimum wage|Reaction & Voices",
     "money_follow|Nairobi Water|Power Accountability",
     "money_follow|KeNHA|Explainer",
@@ -240,6 +240,7 @@
     "accountability|WhatsApp|Power Accountability",
     "impact_on_citizens|EPRA|Reaction & Voices",
     "money_follow|Chesumei|Hard News Lead",
-    "timeline_shift|Kenya|Context Backgrounder"
+    "timeline_shift|Kenya|Context Backgrounder",
+    "money_follow|Esports Kenya Federation|Power Accountability"
   ]
 }
