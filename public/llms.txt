@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Chesumei MP Paul Biego reports truck destroyed during protests](https://zandani.co.ke/article/chesumei-mp-paul-biego-truck-destroyed-naivasha-protests) - Chesumei MP Paul Biego Polo claims his truck worth millions was deliberately destroyed by demonstrators during nationwide transport protests.
 - [Kenya struggles to convert maternal death data into health policy](https://zandani.co.ke/article/kenya-struggles-convert-maternal-death-data-health-policy) - Kenya struggles to convert maternal death data into health policy: Despite advanced surveillance systems, Kenya faces challenges in using maternal mortality
 - [Southampton expelled from Championship play-offs after spying row](https://zandani.co.ke/article/southampton-expelled-from-championship-play-offs-spying-scandal) - Southampton expelled from Championship play-offs after spying row: Southampton face expulsion from the play-offs and a points deduction after an EFL
 - [Arsenal intensify pursuit of Club Brugge forward Christos Tzolis](https://zandani.co.ke/article/arsenal-intensify-pursuit-of-club-brugge-forward-christos-tzolis) - Arsenal intensify pursuit of Club Brugge forward Christos Tzolis: Tzolis to Arsenal: Another Expensive Redemption Arc? Arsenal's pursuit of Christos Tzolis
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Coalition instability grows as leaders eye presidential tickets](https://zandani.co.ke/article/coalition-instability-grows-as-leaders-eye-presidential-tickets) - Coalition instability grows as leaders eye presidential tickets: Kenyan political alliances face internal friction as leaders shift focus from government unity
 - [Millicent Omanga sparks public interest with new fitness look](https://zandani.co.ke/article/millicent-omanga-sparks-public-interest-with-new-fitness-look) - Millicent Omanga sparks public interest with new fitness look: Former senator Millicent Omanga has captured public attention following her notable weight loss
 - [Transport Strike Halted as Fuel Prices Drop and Corporate News Hits](https://zandani.co.ke/article/kenya-transport-strike-halted-fuel-price-cuts-corporate-news) - Transport Strike Halted as Fuel Prices Drop and Corporate News Hi: Kenyan transport operators pause their strike for one week after fuel price cuts while
-- [The View hosts clash over Donald Trump's new TrumpRx platform](https://zandani.co.ke/article/the-view-hosts-clash-over-donald-trump-trumprx-launch) - The View hosts clash over Donald Trump's new TrumpRx platform: Hosts of The View are divided over the launch of Donald Trump's online medication marketplace,
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
