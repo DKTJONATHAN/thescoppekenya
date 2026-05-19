@@ -227,10 +227,10 @@
     "b2addbed7f8f796d8f84d662c3bd908b",
     "603d92aabae318b50cfc11b78bdd4b00",
     "155f672c2caaa3512f082cd4f4b7725d",
-    "d87219288435fa9142f6e6b3cf312a78"
+    "d87219288435fa9142f6e6b3cf312a78",
+    "8fb81f544578bff0e05b318bdc0ab971"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
@@ -259,10 +259,10 @@
     "Receipts Piece",
     "Profile Beat",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "money_follow|comedy|Receipts Piece",
     "impact_on_citizens|King Kaka|Profile Beat",
     "money_follow|Raymond Kahuma|Trend Take",
     "myth_vs_fact|Kenyan comedy|Hard News Lead",
@@ -341,6 +341,7 @@
     "money_follow|Bolo Bespoke|Receipts Piece",
     "myth_vs_fact|Kenya|Profile Beat",
     "accountability|Forex trading|Reaction Round-up",
-    "money_follow|Bongo Flava|Trend Take"
+    "money_follow|Bongo Flava|Trend Take",
+    "money_follow|Nairobi transport strike|Receipts Piece"
   ]
 }
