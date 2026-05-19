@@ -1,16 +1,20 @@
 ---
 title: "EPRA Adjusts Diesel and Kerosene Prices After National Strike"
 slug: "epra-adjusts-fuel-prices-after-national-transport-strike"
-description: "EPRA has revised fuel prices following a nationwide transport strike over adulteration concerns. The government is using KSh 12 billion in funds."
+description: "EPRA Adjusts Diesel and Kerosene Prices After National Strike: EPRA has revised fuel prices following a nationwide transport strike over adulteration concerns."
+excerpt: "EPRA Fuel Price Adjustments and SME Logistics For many small business owners, the recent transport strikes felt like a direct hit to the bot"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/JWXHRVXk/cce83e6eb38c.png"
 category: "Business"
 tags: ["kenya news", "epra", "fuel prices", "transport strike", "nairobi", "petroleum"]
+canonical: "https://zandani.co.ke/article/epra-adjusts-fuel-prices-after-national-transport-strike"
 date: "2026-05-19T06:56:10Z"
 dateModified: "2026-05-19T06:56:10Z"
+focusKeyword: "EPRA Adjusts Diesel and Kerosene Prices After National Strike"
 schema: "NewsArticle"
 ---
+
+EPRA Adjusts Diesel and Kerosene Prices After National Strike is central to this update for Kenyan readers.
 
 ## EPRA Fuel Price Adjustments and SME Logistics
 
@@ -41,3 +45,18 @@ The volatility in energy prices highlights the fragility of SME budgets that are
 ### What to watch next
 
 Keep an eye on whether the cost of goods in retail markets starts to stabilize following the diesel price reduction. If logistics costs do not fall, it suggests that market inefficiencies are eating the savings. Also, monitor any further policy shifts from the Treasury regarding the stabilization fund, as a depletion of these reserves could lead to another round of sudden, steep price hikes in the coming quarter. Small business owners should also keep an eye on how international market trends continue to influence domestic pricing.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
