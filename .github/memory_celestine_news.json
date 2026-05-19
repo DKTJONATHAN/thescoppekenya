@@ -127,10 +127,10 @@
     "df83fbbf58d786c8e246a710ce05e062",
     "b4f2ed8321c5b0317d8b67d44464d760",
     "476fdae62c807614a44cc166799fde84",
-    "660c3f4747376dc8873d1bcb9a8129b1"
+    "660c3f4747376dc8873d1bcb9a8129b1",
+    "d5d29f575c48cefb0ed5e30430878bde"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction & Voices",
     "Context Backgrounder",
     "Explainer",
@@ -159,10 +159,10 @@
     "Reaction & Voices",
     "Hard News Lead",
     "Context Backgrounder",
-    "Power Accountability"
+    "Power Accountability",
+    "Explainer"
   ],
   "angle_history": [
-    "winners_losers|minimum wage|Reaction & Voices",
     "money_follow|Nairobi Water|Power Accountability",
     "money_follow|KeNHA|Explainer",
     "timeline_shift|Finance Bill 2026|Hard News Lead",
@@ -241,6 +241,7 @@
     "impact_on_citizens|EPRA|Reaction & Voices",
     "money_follow|Chesumei|Hard News Lead",
     "timeline_shift|Kenya|Context Backgrounder",
-    "money_follow|Esports Kenya Federation|Power Accountability"
+    "money_follow|Esports Kenya Federation|Power Accountability",
+    "policy_gap|NPS|Explainer"
   ]
 }
