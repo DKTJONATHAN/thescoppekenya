@@ -162,10 +162,10 @@
     "aaa0e9dae2e3a12dba036788184034e0",
     "b514963cfef78eb21890990a1a94abfe",
     "ed64ee78654da710838d4d8280c83403",
-    "80e900be695cecd26229e156a6b0974b"
+    "80e900be695cecd26229e156a6b0974b",
+    "e8a47076b4c70c8acbd6bb0298816d34"
   ],
   "style_history": [
-    "Explainer",
     "Profile Beat",
     "Trend Take",
     "Hard News Lead",
@@ -194,10 +194,10 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
-    "Explainer"
+    "Explainer",
+    "Profile Beat"
   ],
   "angle_history": [
-    "accountability|Deadliest Catch|Hard News Lead",
     "winners_losers|Is God Is|Explainer",
     "myth_vs_fact|Outlander|Profile Beat",
     "money_follow|sports media|Trend Take",
@@ -276,6 +276,7 @@
     "money_follow|Latto|Hard News Lead",
     "impact_on_citizens|Noah Schnapp|Reaction Round-up",
     "timeline_shift|memoir|Trend Take",
-    "policy_gap|TrumpRx|Explainer"
+    "policy_gap|TrumpRx|Explainer",
+    "accountability|Reality television|Profile Beat"
   ]
 }
