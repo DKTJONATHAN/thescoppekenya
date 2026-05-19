@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [ESFK Sets New Rules to Protect Minors in Kenya Esports](https://zandani.co.ke/article/esfk-introduces-new-child-protection-rules-for-kenyan-esports) - The Esports Kenya Federation has introduced strict regulatory guidelines requiring parental consent and legal compliance to protect minors in gaming.
 - [Matatu Operators Suspend Nationwide Strike After Talks With State](https://zandani.co.ke/article/matatu-operators-suspend-nationwide-strike-after-talks) - Public transport operators have paused their nationwide strike for seven days while the government reviews high fuel costs to avoid a total shutdown.
 - [The Oiled Gears of a Green Dawn in Kenya Battery Swapping Network Growth](https://zandani.co.ke/article/oiled-gears-green-dawn-kenya-battery-swapping-network-growth) - The Oiled Gears of a Green Dawn in Kenya Battery Swapping Network: The allure of progress, much like a shimmering mirage, drew eyes to the vast, untapped
 - [Agents push Inter Milan's Dumfries for £20m Liverpool transfer](https://zandani.co.ke/article/agents-push-inter-milan-s-dumfries-for-20m-liverpool-transfer) - Dumfries To Liverpool: Agents Call The Shots Agents are aggressively pushing Inter Milan's Denzel Dumfries towards Liverpool for a £20 million summer transfer, with manager Arne Slot reportedly keen. This orchestrated campaign, highlighting Dumfries'...
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Ten African Nations Qualify for World Cup as Tactical Shifts Begin](https://zandani.co.ke/article/ten-african-nations-qualify-world-cup-tactical-shifts) - Ten African Nations Qualify for World Cup as Tactical Shifts Begi: Africa makes history with ten teams heading to the World Cup in North America. Discover the
 - [Bien and Ali Kiba to Perform Finale Live at Sarit Expo Centre](https://zandani.co.ke/article/bien-ali-kiba-finale-live-nairobi-concert) - Bien and Ali Kiba to Perform Finale Live at Sarit Expo Centre: Bien and Ali Kiba are set to perform their hit collaboration Finale for the first time live
 - [Steve Clarke Names Scotland Squad for World Cup Return](https://zandani.co.ke/article/steve-clarke-names-scotland-squad-for-world-cup-return) - Steve Clarke Names Scotland Squad for World Cup Return: Scotland manager Steve Clarke has named a 26-man squad for the upcoming World Cup, marking the nation's
-- [Adan Mohamed Abdulla Appointed Commissioner General of KRA](https://zandani.co.ke/article/adan-mohamed-abdulla-appointed-kra-commissioner-general) - Adan Mohamed Abdulla Appointed Commissioner General of KRA: Adan Mohamed Abdulla has been appointed as the new Commissioner General of the Kenya Revenue
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
