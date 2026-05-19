@@ -771,6 +771,8 @@ Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this 
 
 Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers.
 
+Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers.
+
 Deputy President Kithure Kindiki today directed the Kenya National Highways and Safety Authority (KeNHA) to construct cycling lanes along the Nyeri-Nyahururu Highway. This order follows a tragic accident on April 7, 2026, which claimed 16 lives, emphasizing the urgent need for enhanced road safety measures.
 
 Highway Safety Directives Issued Speaking at an interdenominational requiem service for the 16 victims at ASK Kabiru-ini Grounds in Nyeri County, Deputy President Kindiki instructed KeNHA to conduct comprehensive surveys and assessments of the highway next week. This vital preparatory phase is set to precede the commencement of construction, aimed at significantly improving safety and preventing future fatalities. The directive was spurred by Nyeri Governor Mutahi Kahiga, who advocated for the cycling lanes due to the high number of schoolchildren and cyclists using the route.
