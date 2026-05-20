@@ -235,10 +235,10 @@
     "50630c38bfbdfbdbabd0adef018bf7a7",
     "2436a5b74292bd39dd6ad9a4ee8d079a",
     "9259193c873bf38f57421dbc47e8cc18",
-    "b3a6037fa374f20a4e07dee42cdd3eff"
+    "b3a6037fa374f20a4e07dee42cdd3eff",
+    "c99539c76bb817d1e05faf5f6b09e273"
   ],
   "style_history": [
-    "Trend Take",
     "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
@@ -267,10 +267,10 @@
     "Trend Take",
     "Receipts Piece",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Profile Beat"
   ],
   "angle_history": [
-    "accountability|Skating|Reaction Round-up",
     "policy_gap|Miss P|Hard News Lead",
     "money_follow|Instagram|Profile Beat",
     "accountability|Marion Naipei|Receipts Piece",
@@ -349,6 +349,7 @@
     "timeline_shift|cost of living|Trend Take",
     "impact_on_citizens|TikTok|Receipts Piece",
     "accountability|William Ruto|Hard News Lead",
-    "winners_losers|Kenya|Reaction Round-up"
+    "winners_losers|Kenya|Reaction Round-up",
+    "money_follow|celebrity|Profile Beat"
   ]
 }
