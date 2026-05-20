@@ -153,10 +153,10 @@
     "397a94f5d18dde30f61be43eda02cb0b",
     "39b1a740734aad5044427d73a3112be9",
     "191546f634a22016b4fc2931d23d4808",
-    "855b6ff6dfc44ef7ebef212726b75657"
+    "855b6ff6dfc44ef7ebef212726b75657",
+    "2d2d2d73fbc564cddc2c5881353a4f7a"
   ],
   "style_history": [
-    "Player Profile Beat",
     "Stat Story",
     "Match Report",
     "Tactical Take",
@@ -185,10 +185,10 @@
     "Tactical Take",
     "Cynical Pundit",
     "Match Report",
-    "Stat Story"
+    "Stat Story",
+    "Tactical Take"
   ],
   "angle_history": [
-    "money_follow|Championship play-offs|Stat Story",
     "money_follow|Bruno Fernandes|Player Profile Beat",
     "impact_on_citizens|Premier League|Tactical Take",
     "timeline_shift|Premier League|Match Report",
@@ -267,6 +267,7 @@
     "policy_gap|football|Tactical Take",
     "myth_vs_fact|Premier League|Cynical Pundit",
     "money_follow|EFL|Match Report",
-    "money_follow|Premier League|Stat Story"
+    "money_follow|Premier League|Stat Story",
+    "money_follow|spygate|Tactical Take"
   ]
 }
