@@ -1,16 +1,20 @@
 ---
 title: "New Statistics Bill Proposes Kenya Statistics Authority"
 slug: "kenya-statistics-bill-2026-data-privacy-concerns"
-description: "Kenya is reviewing a new statistics bill to replace the national bureau with a new authority, sparking debate over biometric data and privacy."
+description: "New Statistics Bill Proposes Kenya Statistics Authority: Kenya is reviewing a new statistics bill to replace the national bureau with a new authority, sparking"
+excerpt: "Legislative Proposal Targets Data Oversight: Kenya Statistics Bill 2026 Explained The Kenyan government has introduced the Statistics Bill 2"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/4RNZr79C/0aba9f1799cc.webp"
 category: "Technology"
 tags: ["kenya news", "statistics bill", "data privacy", "government policy", "kenya politics"]
+canonical: "https://zandani.co.ke/article/kenya-statistics-bill-2026-data-privacy-concerns"
 date: "2026-05-20T13:51:41Z"
 dateModified: "2026-05-20T13:51:41Z"
+focusKeyword: "New Statistics Bill Proposes Kenya Statistics Authority"
 schema: "NewsArticle"
 ---
+
+New Statistics Bill Proposes Kenya Statistics Authority is central to this update for Kenyan readers.
 
 ## Legislative Proposal Targets Data Oversight: Kenya Statistics Bill 2026 Explained
 
@@ -35,3 +39,18 @@ Technical experts have also raised concerns regarding the security architecture 
 The Statistics Bill 2026 is currently undergoing a public participation phase, allowing technology advocates and the public to submit feedback. The primary concern among observers is the legislative hierarchy of the bill. Once enacted, the potential for the new authority to bypass the Data Protection Act could become difficult to challenge in court.
 
 The forthcoming parliamentary debate is expected to determine whether specific safeguards are included to harmonize the bill with current privacy laws. A key point of contention for lawmakers will be clarifying whether the Kenya Statistics Authority is categorized as a data controller or a data processor. As public participation sessions continue, stakeholders are closely monitoring whether future revisions will prioritize the alignment of state mandates with individual rights or favor administrative reach. The outcome of these discussions will define the state’s access to private data for the next decade.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
