@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [YoungBoySido criticizes Kenyan fans for favoring Drake over local acts](https://zandani.co.ke/article/youngboysido-criticizes-kenyan-fans-for-favoring-drake-over-local-acts) - Content creator YoungBoySido has challenged Kenyans to support local music after noting more engagement for Drake than for artists like KRG The Don.
 - [Aston Villa Face Freiburg in Historic UEFA Europa League Final](https://zandani.co.ke/article/aston-villa-vs-freiburg-europa-league-final) - Aston Villa and SC Freiburg meet in Istanbul for the UEFA Europa League final as both clubs chase a historic European title in Turkey.
 - [Tiwi Remi Explains Decision to Step Away From Social Media](https://zandani.co.ke/article/tiwi-remi-explains-decision-to-step-away-from-social-media) - Actor Kunle Remi's wife Tiwi Remi has opened up about her choice to leave social media to focus on personal identity and her new YouTube channel.
 - [Government Moves to Ban Raw Milk Hawking to Boost Dairy Safety](https://zandani.co.ke/article/kenya-government-bans-raw-milk-hawking-dairy-safety-reform) - Government Moves to Ban Raw Milk Hawking to Boost Dairy Safety: Kenya launches a crackdown on raw milk sales to improve food safety. The state is distributing
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Kenyans Criticize President Ruto Over Arsenal Tweet Amid Protests](https://zandani.co.ke/article/ruto-faces-backlash-over-arsenal-tweet-amid-national-crisis) - Kenyans Criticize President Ruto Over Arsenal Tweet Amid Protests: President Ruto faces public backlash for celebrating Arsenal FC while Kenya suffers from a
 - [Tether Invests in LemFi to Boost Faster Remittances in Africa](https://zandani.co.ke/article/tether-invests-in-lemfi-to-boost-remittances-in-africa) - Tether Invests in LemFi to Boost Faster Remittances in Africa: Tether has partnered with fintech platform LemFi to integrate USD₮ for international transfers,
 - [Southampton FC appeals EFL decision to expel club from play-offs](https://zandani.co.ke/article/southampton-fc-appeals-efl-play-off-expulsion) - Southampton FC appeals EFL decision to expel club from play-offs: Southampton FC has launched a formal appeal against the EFL decision to remove the club from
-- [Dismantling the Imperial Presidency for Constitutional Reform](https://zandani.co.ke/article/dismantling-the-kenyan-imperial-presidency-for-governance-reform) - Dismantling the Imperial Presidency for Constitutional Reform: Kenya must reform its governance structure by separating the roles of head of state and
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
