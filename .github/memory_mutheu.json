@@ -167,10 +167,10 @@
     "78a552561ac7e4e3f3157556bf38db81",
     "ebef97aaac4657dd179a8e2ffdb24a84",
     "30814b036a1ba270a7c87dfd4d3a42f7",
-    "d295ebb0844d8464cb7d96f85c1995dd"
+    "d295ebb0844d8464cb7d96f85c1995dd",
+    "60c4a93aa1918348c94032a3e4b4100e"
   ],
   "style_history": [
-    "Explainer",
     "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
@@ -199,10 +199,10 @@
     "Reaction Round-up",
     "Hard News Lead",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "money_follow|divorce|Reaction Round-up",
     "timeline_shift|Modern Family|Explainer",
     "accountability|Maury Povich|Profile Beat",
     "accountability|data privacy|Hard News Lead",
@@ -281,6 +281,7 @@
     "impact_on_citizens|Phil Collins|Reaction Round-up",
     "accountability|The Late Show|Hard News Lead",
     "myth_vs_fact|Star Wars|Explainer",
-    "next_48_hours|Survivor|Trend Take"
+    "next_48_hours|Survivor|Trend Take",
+    "timeline_shift|Miles Teller|Profile Beat"
   ]
 }
