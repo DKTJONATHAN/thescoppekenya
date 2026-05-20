@@ -103,10 +103,10 @@
     "09f2973963c26c69915a4fb9bb01d3fe",
     "7fd9cca2be09e4855dd10c5f10abed0f",
     "4890b7ed9e6f603a71056779878c32b8",
-    "53e8712e3f5cc5a732f96f381b079032"
+    "53e8712e3f5cc5a732f96f381b079032",
+    "eadd0c213f01bd865abf63daf800a6dc"
   ],
   "style_history": [
-    "Personal Reflection",
     "Sharp Column",
     "Historical Lens",
     "Letter Form",
@@ -135,10 +135,10 @@
     "Historical Lens",
     "Counterpoint",
     "Letter Form",
-    "Sharp Column"
+    "Sharp Column",
+    "Historical Lens"
   ],
   "angle_history": [
-    "myth_vs_fact|xenophobia|Letter Form",
     "timeline_shift|Kenya media|Historical Lens",
     "winners_losers|mental health|Counterpoint",
     "next_48_hours|Judiciary|Sharp Column",
@@ -217,6 +217,7 @@
     "timeline_shift|maternal health|Historical Lens",
     "myth_vs_fact|fiscal policy|Counterpoint",
     "policy_gap|fuel prices|Letter Form",
-    "money_follow|United Nations|Sharp Column"
+    "money_follow|United Nations|Sharp Column",
+    "timeline_shift|Imperial presidency|Historical Lens"
   ]
 }
