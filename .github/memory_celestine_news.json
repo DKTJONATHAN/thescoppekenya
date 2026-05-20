@@ -130,10 +130,10 @@
     "660c3f4747376dc8873d1bcb9a8129b1",
     "d5d29f575c48cefb0ed5e30430878bde",
     "8f6d5f6eca718894572c0dc0ff024e6b",
-    "b05b47f1bd12ba40fefc551bf18fde79"
+    "b05b47f1bd12ba40fefc551bf18fde79",
+    "3f1e3728a774d91cb73a2d4c7152f716"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Power Accountability",
     "Reaction & Voices",
@@ -162,10 +162,10 @@
     "Power Accountability",
     "Explainer",
     "Reaction & Voices",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "timeline_shift|Finance Bill 2026|Hard News Lead",
     "impact_on_citizens|Trident Insurance Company|Reaction & Voices",
     "policy_gap|Finance Bill 2026|Power Accountability",
     "impact_on_citizens|Kenya|Explainer",
@@ -244,6 +244,7 @@
     "money_follow|Esports Kenya Federation|Power Accountability",
     "policy_gap|NPS|Explainer",
     "impact_on_citizens|Harambee Stars|Reaction & Voices",
-    "timeline_shift|Kenya Roads Board|Context Backgrounder"
+    "timeline_shift|Kenya Roads Board|Context Backgrounder",
+    "winners_losers|oil refinery|Hard News Lead"
   ]
 }
