@@ -231,10 +231,10 @@
     "8fb81f544578bff0e05b318bdc0ab971",
     "eb239e9aabb210e31cf0e0f94e4127c0",
     "8e139b443ddd1efe2e4682606eeb1931",
-    "e315bbd0d31cafff39f0d3765346aab1"
+    "e315bbd0d31cafff39f0d3765346aab1",
+    "50630c38bfbdfbdbabd0adef018bf7a7"
   ],
   "style_history": [
-    "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
     "Profile Beat",
@@ -263,10 +263,10 @@
     "Receipts Piece",
     "Profile Beat",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
-    "impact_on_citizens|Meta|Reaction Round-up",
     "impact_on_citizens|Janet Otieno|Profile Beat",
     "timeline_shift|Wahu Kagwi|Trend Take",
     "money_follow|football|Receipts Piece",
@@ -345,6 +345,7 @@
     "money_follow|Nairobi transport strike|Receipts Piece",
     "timeline_shift|Kenya|Profile Beat",
     "policy_gap|Kenya|Hard News Lead",
-    "impact_on_citizens|Kenya|Reaction Round-up"
+    "impact_on_citizens|Kenya|Reaction Round-up",
+    "timeline_shift|cost of living|Trend Take"
   ]
 }
