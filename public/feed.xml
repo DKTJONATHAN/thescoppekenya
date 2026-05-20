@@ -5,7 +5,7 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Wed, 20 May 2026 17:42:52 GMT</pubDate>
+    <pubDate>Wed, 20 May 2026 17:43:28 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title><![CDATA[YoungBoySido criticizes Kenyan fans for favoring Drake over local acts]]></title>
@@ -17,6 +17,17 @@
       <enclosure url="https://i.ibb.co/B5MRZJ2B/fe4d4288802c.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/B5MRZJ2B/fe4d4288802c.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/B5MRZJ2B/fe4d4288802c.jpg" alt="YoungBoySido criticizes Kenyan fans for favoring Drake over local acts" /><p>Content creator YoungBoySido has challenged Kenyans to support local music after noting more engagement for Drake than for artists like KRG The Don.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title><![CDATA[Transport Strike Exposes Security Gaps and Youth Unemployment Risks]]></title>
+      <link>https://zandani.co.ke/article/transport-strike-security-gaps-youth-unemployment</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/transport-strike-security-gaps-youth-unemployment</guid>
+      <pubDate>Wed, 20 May 2026 17:31:49 GMT</pubDate>
+      <dc:creator><![CDATA[Jonathan Mwaniki]]></dc:creator>
+      <description><![CDATA[Recent nationwide transport strikes caused major economic disruption, highlighting police failure to maintain order and the volatile risks of youth joblessness.]]></description>
+      <enclosure url="https://i.ibb.co/7JpxJkmq/2a478618dddd.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/7JpxJkmq/2a478618dddd.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/7JpxJkmq/2a478618dddd.jpg" alt="Transport Strike Exposes Security Gaps and Youth Unemployment Risks" /><p>Recent nationwide transport strikes caused major economic disruption, highlighting police failure to maintain order and the volatile risks of youth joblessness.</p>]]></content:encoded>
     </item>
     <item>
       <title><![CDATA[Aston Villa Face Freiburg in Historic UEFA Europa League Final]]></title>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/FLg84JhR/fc5e97a78a98.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/FLg84JhR/fc5e97a78a98.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/FLg84JhR/fc5e97a78a98.jpg" alt="PGMO Admits Officiating Error in Manchester United Forest Match" /><p>PGMO Admits Officiating Error in Manchester United Forest Match: The PGMO has acknowledged a refereeing error after Michael Salisbury ignored a VAR</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Matatu Owners Association threatens strike over fuel costs and new e-mobility policy]]></title>
-      <link>https://zandani.co.ke/article/matatu-owners-association-threatens-strike-over-fuel-costs-and-new-e</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/matatu-owners-association-threatens-strike-over-fuel-costs-and-new-e</guid>
-      <pubDate>Mon, 18 May 2026 19:58:04 GMT</pubDate>
-      <dc:creator><![CDATA[Zed Mogaka]]></dc:creator>
-      <description><![CDATA[Matatu Owners Association threatens strike over fuel costs and ne: Matatu Owners Association threatens a nationwide strike in Kenya, protesting high fuel costs]]></description>
-      <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
-      <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="Matatu Owners Association threatens strike over fuel costs and new e-mobility policy" /><p>Matatu Owners Association threatens strike over fuel costs and ne: Matatu Owners Association threatens a nationwide strike in Kenya, protesting high fuel costs</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
