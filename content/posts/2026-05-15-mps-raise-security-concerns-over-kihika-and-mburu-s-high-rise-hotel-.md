@@ -207,6 +207,8 @@ MPs Raise Security Concerns Over Kihika and Mburu's High-Rise Hot is central to 
 
 MPs Raise Security Concerns Over Kihika and Mburu's High-Rise Hot is central to this update for Kenyan readers.
 
+MPs Raise Security Concerns Over Kihika and Mburu's High-Rise Hot is central to this update for Kenyan readers.
+
 Members of Parliament have raised urgent security concerns regarding the construction of The Encore, a new high-rise hotel in Nakuru that overlooks the Nakuru State House. Lawmakers claim the project violates strict zoning regulations intended to protect the presidential residence from security threats.
 
 ## Controversy Surrounding The Encore Hotel
