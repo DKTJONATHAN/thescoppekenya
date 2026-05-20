@@ -164,10 +164,10 @@
     "c73bb7be85699eed6f09c19ed3ecbc83",
     "3c37b4baf8bfa8d01f92ccf0c8a8723b",
     "8756db530d49048f21711b44cafae763",
-    "bc0a675a142c4da9ebfcb6c6d4fd39c1"
+    "bc0a675a142c4da9ebfcb6c6d4fd39c1",
+    "ea374744db396e023f1d5fb66a694743"
   ],
   "style_history": [
-    "Trend Take",
     "Hard News Lead",
     "Explainer",
     "Reaction Round-up",
@@ -196,7 +196,8 @@
     "Profile Beat",
     "Trend Take",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Profile Beat"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -245,6 +246,7 @@
     "policy_gap|tax law|Profile Beat",
     "accountability|music release|Trend Take",
     "accountability|Chike|Hard News Lead",
-    "winners_losers|BET Awards|Reaction Round-up"
+    "winners_losers|BET Awards|Reaction Round-up",
+    "impact_on_citizens|Arsenal|Profile Beat"
   ]
 }
