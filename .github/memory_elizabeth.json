@@ -112,10 +112,10 @@
     "d49dc99cc9fa27cb6c071f97cde1c4c7",
     "69eac9edf5de9324c80b744b4595e9ce",
     "69d870e189056f3b7b8d5befba952c07",
-    "eb53cb64258f19aca752fd57e57e0e9a"
+    "eb53cb64258f19aca752fd57e57e0e9a",
+    "8863735c498852d12f624061bb465a7c"
   ],
   "style_history": [
-    "Africa Angle",
     "Explainer",
     "Critical Take",
     "Backgrounder",
@@ -144,7 +144,8 @@
     "Critical Take",
     "Hard News Lead",
     "Africa Angle",
-    "Explainer"
+    "Explainer",
+    "Backgrounder"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -175,6 +176,7 @@
     "money_follow|Matatu|Critical Take",
     "myth_vs_fact|Android|Hard News Lead",
     "impact_on_citizens|TikTok|Africa Angle",
-    "impact_on_citizens|Kenya Revenue Authority|Explainer"
+    "impact_on_citizens|Kenya Revenue Authority|Explainer",
+    "impact_on_citizens|GitHub|Backgrounder"
   ]
 }
