@@ -136,10 +136,10 @@
     "c0fc7286c7482097823c31286fd7c698",
     "1173ba006a2266edcef46369a88894fd",
     "964c2b58432d80df711fb307753d35fe",
-    "8971563cdaecb3c941ac2272eece7dc8"
+    "8971563cdaecb3c941ac2272eece7dc8",
+    "0a61c72c0fb2c03e383704c3336bc9fa"
   ],
   "style_history": [
-    "Backgrounder",
     "SME Angle",
     "Markets Report",
     "Explainer",
@@ -168,7 +168,8 @@
     "Markets Report",
     "Backgrounder",
     "Power Accountability",
-    "SME Angle"
+    "SME Angle",
+    "Markets Report"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -217,6 +218,7 @@
     "impact_on_citizens|Banking|Markets Report",
     "money_follow|Fuel prices|Backgrounder",
     "winners_losers|AfCFTA|Power Accountability",
-    "money_follow|Stablecoins|SME Angle"
+    "money_follow|Stablecoins|SME Angle",
+    "myth_vs_fact|East African Cables|Markets Report"
   ]
 }
