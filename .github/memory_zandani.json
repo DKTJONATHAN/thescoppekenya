@@ -233,10 +233,10 @@
     "8e139b443ddd1efe2e4682606eeb1931",
     "e315bbd0d31cafff39f0d3765346aab1",
     "50630c38bfbdfbdbabd0adef018bf7a7",
-    "2436a5b74292bd39dd6ad9a4ee8d079a"
+    "2436a5b74292bd39dd6ad9a4ee8d079a",
+    "9259193c873bf38f57421dbc47e8cc18"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
     "Receipts Piece",
@@ -265,10 +265,10 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "timeline_shift|Wahu Kagwi|Trend Take",
     "money_follow|football|Receipts Piece",
     "accountability|Skating|Reaction Round-up",
     "policy_gap|Miss P|Hard News Lead",
@@ -347,6 +347,7 @@
     "policy_gap|Kenya|Hard News Lead",
     "impact_on_citizens|Kenya|Reaction Round-up",
     "timeline_shift|cost of living|Trend Take",
-    "impact_on_citizens|TikTok|Receipts Piece"
+    "impact_on_citizens|TikTok|Receipts Piece",
+    "accountability|William Ruto|Hard News Lead"
   ]
 }
