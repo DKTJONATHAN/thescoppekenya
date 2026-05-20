@@ -165,10 +165,10 @@
     "80e900be695cecd26229e156a6b0974b",
     "e8a47076b4c70c8acbd6bb0298816d34",
     "78a552561ac7e4e3f3157556bf38db81",
-    "ebef97aaac4657dd179a8e2ffdb24a84"
+    "ebef97aaac4657dd179a8e2ffdb24a84",
+    "30814b036a1ba270a7c87dfd4d3a42f7"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
     "Trend Take",
@@ -197,10 +197,10 @@
     "Explainer",
     "Profile Beat",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "money_follow|sports media|Trend Take",
     "next_48_hours|Entertainment Weekly|Hard News Lead",
     "money_follow|divorce|Reaction Round-up",
     "timeline_shift|Modern Family|Explainer",
@@ -279,6 +279,7 @@
     "policy_gap|TrumpRx|Explainer",
     "accountability|Reality television|Profile Beat",
     "impact_on_citizens|Phil Collins|Reaction Round-up",
-    "accountability|The Late Show|Hard News Lead"
+    "accountability|The Late Show|Hard News Lead",
+    "myth_vs_fact|Star Wars|Explainer"
   ]
 }
