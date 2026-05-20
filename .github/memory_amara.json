@@ -166,10 +166,10 @@
     "8756db530d49048f21711b44cafae763",
     "bc0a675a142c4da9ebfcb6c6d4fd39c1",
     "ea374744db396e023f1d5fb66a694743",
-    "a9ccc1bab00c3379d0c1488176704819"
+    "a9ccc1bab00c3379d0c1488176704819",
+    "c6f36f1b4656d4eeff30d8f97bfad889"
   ],
   "style_history": [
-    "Explainer",
     "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
@@ -198,7 +198,8 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Profile Beat",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -249,6 +250,7 @@
     "accountability|Chike|Hard News Lead",
     "winners_losers|BET Awards|Reaction Round-up",
     "impact_on_citizens|Arsenal|Profile Beat",
-    "myth_vs_fact|celebrity marriage|Explainer"
+    "myth_vs_fact|celebrity marriage|Explainer",
+    "impact_on_citizens|Social media|Hard News Lead"
   ]
 }
