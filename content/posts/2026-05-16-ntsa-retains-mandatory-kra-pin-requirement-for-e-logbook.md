@@ -178,6 +178,8 @@ NTSA Retains Mandatory KRA PIN Requirement for e-Logbook System is central to th
 
 NTSA Retains Mandatory KRA PIN Requirement for e-Logbook System is central to this update for Kenyan readers.
 
+NTSA Retains Mandatory KRA PIN Requirement for e-Logbook System is central to this update for Kenyan readers.
+
 ## NTSA Retains Mandatory KRA PIN Requirement for e-Logbook System
 
 Kenyans are bracing for a digital headache as the transport authority doubles down on linking vehicle ownership to tax records. With the June 10, 2026 deadline looming, motorists fear that technical glitches on eCitizen will stall vital vehicle transactions indefinitely.
