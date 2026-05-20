@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Wed, 20 May 2026 07:06:59 GMT</pubDate>
+    <pubDate>Wed, 20 May 2026 07:09:36 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Eric Omondi fuel protest gains international media spotlight]]></title>
+      <link>https://zandani.co.ke/article/eric-omondi-fuel-protest-gains-international-spotlight</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/eric-omondi-fuel-protest-gains-international-spotlight</guid>
+      <pubDate>Wed, 20 May 2026 06:58:32 GMT</pubDate>
+      <dc:creator><![CDATA[Martin Kihara]]></dc:creator>
+      <description><![CDATA[Kenyan activist Eric Omondi led a protest against rising fuel costs using empty jerricans, drawing attention from Austrian media outlets.]]></description>
+      <enclosure url="https://i.ibb.co/8DLPQby3/3280b88f6b89.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/8DLPQby3/3280b88f6b89.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/8DLPQby3/3280b88f6b89.jpg" alt="Eric Omondi fuel protest gains international media spotlight" /><p>Kenyan activist Eric Omondi led a protest against rising fuel costs using empty jerricans, drawing attention from Austrian media outlets.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Stephen Colbert Show Cancelled Following Paramount Dispute]]></title>
       <link>https://zandani.co.ke/article/stephen-colbert-show-cancelled-following-paramount-dispute</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/mVpx1JHy/4d75d47b99bc.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/mVpx1JHy/4d75d47b99bc.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/mVpx1JHy/4d75d47b99bc.jpg" alt="State orders probe into arson attack on gospel singer Rachel Wandeto" /><p>State orders probe into arson attack on gospel singer Rachel Wand: Government officials have ordered a DCI investigation after singer Rachel Wandeto was set on</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Public Transport Paralyzed in Kenya Following Fuel Price Hikes]]></title>
-      <link>https://zandani.co.ke/article/public-transport-paralyzed-in-kenya-following-fuel-price-hikes</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/public-transport-paralyzed-in-kenya-following-fuel-price-hikes</guid>
-      <pubDate>Mon, 18 May 2026 07:07:20 GMT</pubDate>
-      <dc:creator><![CDATA[Martin Kihara]]></dc:creator>
-      <description><![CDATA[Public Transport Paralyzed in Kenya Following Fuel Price Hikes: Public transport operators have launched a nationwide strike to protest record fuel price]]></description>
-      <enclosure url="https://i.ibb.co/FLc7PY6M/0fb45e517562.jpg" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/FLc7PY6M/0fb45e517562.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/FLc7PY6M/0fb45e517562.jpg" alt="Public Transport Paralyzed in Kenya Following Fuel Price Hikes" /><p>Public Transport Paralyzed in Kenya Following Fuel Price Hikes: Public transport operators have launched a nationwide strike to protest record fuel price</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
