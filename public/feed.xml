@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Wed, 20 May 2026 17:44:41 GMT</pubDate>
+    <pubDate>Wed, 20 May 2026 17:45:33 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Huduma Kenya Partners with KSG to Decentralize Public Training]]></title>
+      <link>https://zandani.co.ke/article/huduma-kenya-partners-with-ksg-for-regional-public-training</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/huduma-kenya-partners-with-ksg-for-regional-public-training</guid>
+      <pubDate>Wed, 20 May 2026 17:35:04 GMT</pubDate>
+      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
+      <description><![CDATA[Huduma Kenya and the Kenya School of Government have launched public-sector training across 16 centers to improve access to professional development courses.]]></description>
+      <enclosure url="https://i.ibb.co/N44xChZ/9f211f15f917.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/N44xChZ/9f211f15f917.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/N44xChZ/9f211f15f917.jpg" alt="Huduma Kenya Partners with KSG to Decentralize Public Training" /><p>Huduma Kenya and the Kenya School of Government have launched public-sector training across 16 centers to improve access to professional development courses.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[YoungBoySido criticizes Kenyan fans for favoring Drake over local acts]]></title>
       <link>https://zandani.co.ke/article/youngboysido-criticizes-kenyan-fans-for-favoring-drake-over-local-acts</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/Xfwcs2rZ/3272c7c537e5.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/Xfwcs2rZ/3272c7c537e5.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/Xfwcs2rZ/3272c7c537e5.jpg" alt="Transport Strike Hits Kenya as Public Debt Reaches Record High" /><p>Transport Strike Hits Kenya as Public Debt Reaches Record High: Kenyan transport operators launch a nationwide strike over rising fuel prices while public debt</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Kenya Healthcare Transition Faces Rural Service Delivery Crisis]]></title>
-      <link>https://zandani.co.ke/article/kenya-healthcare-transition-faces-rural-service-delivery-crisis</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-healthcare-transition-faces-rural-service-delivery-crisis</guid>
-      <pubDate>Mon, 18 May 2026 20:02:03 GMT</pubDate>
-      <dc:creator><![CDATA[Jonathan Mwaniki]]></dc:creator>
-      <description><![CDATA[Kenya Healthcare Transition Faces Rural Service Delivery Crisis: As Kenya shifts from NHIF to SHA, rural health facilities struggle with staffing and supply]]></description>
-      <enclosure url="https://i.ibb.co/r2vPkb65/3d385a6d0d33.png" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/r2vPkb65/3d385a6d0d33.png" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/r2vPkb65/3d385a6d0d33.png" alt="Kenya Healthcare Transition Faces Rural Service Delivery Crisis" /><p>Kenya Healthcare Transition Faces Rural Service Delivery Crisis: As Kenya shifts from NHIF to SHA, rural health facilities struggle with staffing and supply</p>]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Huduma Kenya Partners with KSG to Decentralize Public Training](https://zandani.co.ke/article/huduma-kenya-partners-with-ksg-for-regional-public-training) - Huduma Kenya and the Kenya School of Government have launched public-sector training across 16 centers to improve access to professional development courses.
 - [YoungBoySido criticizes Kenyan fans for favoring Drake over local acts](https://zandani.co.ke/article/youngboysido-criticizes-kenyan-fans-for-favoring-drake-over-local-acts) - Content creator YoungBoySido has challenged Kenyans to support local music after noting more engagement for Drake than for artists like KRG The Don.
 - [Transport Strike Exposes Security Gaps and Youth Unemployment Risks](https://zandani.co.ke/article/transport-strike-security-gaps-youth-unemployment) - Recent nationwide transport strikes caused major economic disruption, highlighting police failure to maintain order and the volatile risks of youth joblessness.
 - [Kenya Signs Ten Bilateral Trade Deals With Kazakhstan](https://zandani.co.ke/article/kenya-signs-ten-bilateral-trade-deals-with-kazakhstan) - President William Ruto has signed ten bilateral agreements with Kazakhstan to expand trade in agriculture, technology, and infrastructure sectors.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Miles Teller explains why he avoids long-form media interviews](https://zandani.co.ke/article/miles-teller-explains-avoidance-of-long-form-media-interviews) - Miles Teller explains why he avoids long-form media interviews: Miles Teller stopped doing in-depth magazine profiles following a 2015 article he felt
 - [New Statistics Bill Proposes Kenya Statistics Authority](https://zandani.co.ke/article/kenya-statistics-bill-2026-data-privacy-concerns) - New Statistics Bill Proposes Kenya Statistics Authority: Kenya is reviewing a new statistics bill to replace the national bureau with a new authority, sparking
 - [Aliko Dangote Eyes Lamu and Mombasa for Multi-Trillion Oil Refinery](https://zandani.co.ke/article/aliko-dangote-eyes-lamu-mombasa-for-multi-trillion-oil-refinery) - Aliko Dangote Eyes Lamu and Mombasa for Multi-Trillion Oil Refine: Billionaire Aliko Dangote is considering Lamu and Mombasa for a massive regional oil
-- [Kenyans Criticize President Ruto Over Arsenal Tweet Amid Protests](https://zandani.co.ke/article/ruto-faces-backlash-over-arsenal-tweet-amid-national-crisis) - Kenyans Criticize President Ruto Over Arsenal Tweet Amid Protests: President Ruto faces public backlash for celebrating Arsenal FC while Kenya suffers from a
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
