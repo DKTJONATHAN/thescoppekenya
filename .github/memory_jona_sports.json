@@ -157,10 +157,10 @@
     "2d2d2d73fbc564cddc2c5881353a4f7a",
     "c16bba19f6b67e02adce7da3e246660a",
     "517a4a09e52ab824493411b18af6393d",
-    "71445617f9a17b4cee6ab11b2482bf43"
+    "71445617f9a17b4cee6ab11b2482bf43",
+    "1680d86a056600f21da877d5993ccdad"
   ],
   "style_history": [
-    "Player Profile Beat",
     "Cynical Pundit",
     "Stat Story",
     "Match Report",
@@ -189,10 +189,10 @@
     "Tactical Take",
     "Player Profile Beat",
     "Cynical Pundit",
-    "Stat Story"
+    "Stat Story",
+    "Tactical Take"
   ],
   "angle_history": [
-    "myth_vs_fact|Premier League|Stat Story",
     "myth_vs_fact|Women's Super League|Cynical Pundit",
     "accountability|Scottish Premiership|Tactical Take",
     "winners_losers|Scottish Premiership|Match Report",
@@ -271,6 +271,7 @@
     "money_follow|spygate|Tactical Take",
     "accountability|Tottenham Hotspur|Player Profile Beat",
     "policy_gap|Southampton FC|Cynical Pundit",
-    "myth_vs_fact|UEFA Europa League|Stat Story"
+    "myth_vs_fact|UEFA Europa League|Stat Story",
+    "accountability|Southampton|Tactical Take"
   ]
 }
