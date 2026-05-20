@@ -806,6 +806,8 @@ Police Officers Injured After Suspected Al-Shabaab IED Hits is central to this u
 
 Police Officers Injured After Suspected Al-Shabaab IED Hits is central to this update for Kenyan readers.
 
+Police Officers Injured After Suspected Al-Shabaab IED Hits is central to this update for Kenyan readers.
+
 ## Suspected Al-Shabaab IED Attack Injures Six Police Officers in Mandera Six police officers sustained injuries after their patrol vehicle struck an Improvised Explosive Device (IED) on Friday morning, March 13, in Mandera County. Authorities suspect the attack along the Elwak-Wargadud Road was orchestrated by Al-Shabaab militants operating from neighboring Somalia, targeting a police Land Cruiser on a relief mission.
 
 Incident Overview The incident occurred around 6:30 am when the police Land Cruiser, driven by Police Constable Hillary Kiplagat, was hit by a directional IED while overtaking a passenger bus. The explosion, which caused significant damage to the police vehicle and shattered two rear windows of the passenger bus, was immediately followed by an ambush from suspected Al-Shabaab militants. The bus driver reportedly fled the scene without stopping.
