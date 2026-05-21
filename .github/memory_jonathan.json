@@ -108,10 +108,10 @@
     "b94ed7be19c4b976c3f00f4fbf2445ca",
     "e11b736b9633212060952e6eea7dfea5",
     "6403ee16dc915f66ab05fc993a82e2e7",
-    "2f694b9f4729b80202d6dc52d197c540"
+    "2f694b9f4729b80202d6dc52d197c540",
+    "5539197c6ab462dc9a833261c500b028"
   ],
   "style_history": [
-    "Counterpoint",
     "Sharp Column",
     "Letter Form",
     "Historical Lens",
@@ -140,10 +140,10 @@
     "Personal Reflection",
     "Counterpoint",
     "Letter Form",
-    "Historical Lens"
+    "Historical Lens",
+    "Sharp Column"
   ],
   "angle_history": [
-    "money_follow|Artificial Intelligence|Historical Lens",
     "winners_losers|Kenya|Letter Form",
     "policy_gap|International Nurses Week|Sharp Column",
     "timeline_shift|Northern Kenya|Personal Reflection",
@@ -222,6 +222,7 @@
     "policy_gap|transportation|Personal Reflection",
     "myth_vs_fact|Science and Technology|Counterpoint",
     "accountability|genocide|Letter Form",
-    "timeline_shift|lifelong learning|Historical Lens"
+    "timeline_shift|lifelong learning|Historical Lens",
+    "money_follow|Kenya|Sharp Column"
   ]
 }
