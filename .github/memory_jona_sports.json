@@ -159,10 +159,10 @@
     "517a4a09e52ab824493411b18af6393d",
     "71445617f9a17b4cee6ab11b2482bf43",
     "1680d86a056600f21da877d5993ccdad",
-    "1d533a494757934de99951f8578e1707"
+    "1d533a494757934de99951f8578e1707",
+    "1b78172f526f27f4bf3bf93fdbee450c"
   ],
   "style_history": [
-    "Stat Story",
     "Match Report",
     "Player Profile Beat",
     "Tactical Take",
@@ -191,10 +191,10 @@
     "Cynical Pundit",
     "Stat Story",
     "Tactical Take",
-    "Player Profile Beat"
+    "Player Profile Beat",
+    "Match Report"
   ],
   "angle_history": [
-    "accountability|Scottish Premiership|Tactical Take",
     "winners_losers|Scottish Premiership|Match Report",
     "winners_losers|Premier League|Player Profile Beat",
     "accountability|Liverpool FC|Cynical Pundit",
@@ -273,6 +273,7 @@
     "policy_gap|Southampton FC|Cynical Pundit",
     "myth_vs_fact|UEFA Europa League|Stat Story",
     "accountability|Southampton|Tactical Take",
-    "impact_on_citizens|Aston Villa|Player Profile Beat"
+    "impact_on_citizens|Aston Villa|Player Profile Beat",
+    "timeline_shift|England|Match Report"
   ]
 }
