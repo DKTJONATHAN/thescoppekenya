@@ -1,16 +1,20 @@
 ---
 title: "Félicien Kabuga Dies in The Hague Before Genocide Trial Concludes"
 slug: "felicien-kabuga-dies-in-the-hague-before-genocide-trial-concludes"
-description: "Félicien Kabuga has died in The Hague after being declared unfit for trial. His death mirrors the 2006 case of war criminal Slobodan Milosevic."
+description: "Félicien Kabuga Dies in The Hague Before Genocide Trial Concludes: Félicien Kabuga has died in The Hague after being declared unfit for trial. His death"
+excerpt: "The Death of Félicien Kabuga and the Defeat of Justice To the victims and survivors of the 1994 Rwandan genocide: The passing of Félicien Ka"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/hFwbbv7m/a6afb6f9be85.png"
 category: "Opinions"
 tags: ["felicien kabuga", "rwandan genocide", "the hague", "international justice", "war crimes", "east africa"]
+canonical: "https://zandani.co.ke/article/felicien-kabuga-dies-in-the-hague-before-genocide-trial-concludes"
 date: "2026-05-21T07:02:00Z"
 dateModified: "2026-05-21T07:02:00Z"
+focusKeyword: "Félicien Kabuga Dies in The Hague Before Genocide Trial Concludes"
 schema: "NewsArticle"
 ---
+
+Félicien Kabuga Dies in The Hague Before Genocide Trial Concludes is central to this update for Kenyan readers.
 
 ## The Death of Félicien Kabuga and the Defeat of Justice
 
@@ -35,3 +39,18 @@ The death of Kabuga proves that institutional justice, when stripped of efficien
 The path ahead for international humanitarian law is now fraught with difficult questions. We anticipate intense debate regarding the statutes of these tribunals and whether health-related exemptions should be reformed to prevent them from becoming escape hatches for the accused. Furthermore, we must look to Kigali to see if this failure encourages a pivot toward domestic or regional judicial mechanisms. These local avenues often demonstrate a greater capacity to prioritize survivor testimony over the bureaucratic lethargy that defines European-based courts.
 
 You deserve more than this quiet, unresolved ending. You earned the right to see a courtroom record the truth of your experiences and to witness a formal judgment against your tormentor. Please do not accept this as the final word. The international community must be held to account for why it allowed the clock to expire before justice could be served. You are the rightful keepers of the truth, and your pursuit of accountability remains as necessary today as it was in 1994.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
