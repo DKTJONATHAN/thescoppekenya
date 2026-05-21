@@ -111,10 +111,10 @@
     "2f694b9f4729b80202d6dc52d197c540",
     "5539197c6ab462dc9a833261c500b028",
     "83ac87ac2df7da0edc055674e4da4afc",
-    "4049d905ab7eae40eb4e186167061bab"
+    "4049d905ab7eae40eb4e186167061bab",
+    "b40d9b2db2948cab508eb7e70f46184d"
   ],
   "style_history": [
-    "Historical Lens",
     "Personal Reflection",
     "Sharp Column",
     "Counterpoint",
@@ -143,10 +143,10 @@
     "Historical Lens",
     "Sharp Column",
     "Personal Reflection",
-    "Letter Form"
+    "Letter Form",
+    "Counterpoint"
   ],
   "angle_history": [
-    "timeline_shift|Northern Kenya|Personal Reflection",
     "myth_vs_fact|Kenya|Counterpoint",
     "timeline_shift|Media Freedom Coalition|Historical Lens",
     "accountability|Artificial Intelligence|Sharp Column",
@@ -225,6 +225,7 @@
     "timeline_shift|lifelong learning|Historical Lens",
     "money_follow|Kenya|Sharp Column",
     "next_48_hours|data sovereignty|Personal Reflection",
-    "accountability|GBV|Letter Form"
+    "accountability|GBV|Letter Form",
+    "myth_vs_fact|Social Health Authority|Counterpoint"
   ]
 }
