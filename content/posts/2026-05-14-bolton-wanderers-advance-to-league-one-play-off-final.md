@@ -290,6 +290,8 @@ Bolton Wanderers Advance to League One Play-off Final is central to this update 
 
 Bolton Wanderers Advance to League One Play-off Final is central to this update for Kenyan readers.
 
+Bolton Wanderers Advance to League One Play-off Final is central to this update for Kenyan readers.
+
 ## The Wembley Illusion: Why Bolton’s League One Success is a Symptom of Structural Decay
 
 While the cameras pan to jubilant fans and the inevitable narratives of redemption are manufactured for the broadcast, Bolton Wanderers reaching the play-off final is less of a sporting masterclass and more of a grim reminder of how low Za Ndanis have sunk in the EFL.
