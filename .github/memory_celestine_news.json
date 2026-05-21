@@ -135,10 +135,10 @@
     "5e2d5d92890011c9705128a98872c31c",
     "c628b5e56c10131dd7b0f2a6fb48535f",
     "b12052ad77626c10633ba2b61389231b",
-    "cfd36367fab889d9464fae6c992967ae"
+    "cfd36367fab889d9464fae6c992967ae",
+    "48857a4df8ec00944edd1b2eebbda3ef"
   ],
   "style_history": [
-    "Hard News Lead",
     "Context Backgrounder",
     "Reaction & Voices",
     "Explainer",
@@ -167,10 +167,10 @@
     "Power Accountability",
     "Explainer",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "winners_losers|TSC|Context Backgrounder",
     "policy_gap|KRA|Power Accountability",
     "accountability|Kenya Revenue Authority|Reaction & Voices",
     "next_48_hours|Kanini Kega|Hard News Lead",
@@ -249,6 +249,7 @@
     "accountability|Huduma Kenya|Power Accountability",
     "money_follow|Matatu|Explainer",
     "policy_gap|ODPP|Context Backgrounder",
-    "impact_on_citizens|Kenya|Reaction & Voices"
+    "impact_on_citizens|Kenya|Reaction & Voices",
+    "policy_gap|Ebola|Power Accountability"
   ]
 }
