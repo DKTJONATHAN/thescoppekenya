@@ -45,6 +45,8 @@ Murkomen Faces Backlash Over Ethnic Remarks Linked to 2007 Post-E is central to 
 
 Murkomen Faces Backlash Over Ethnic Remarks Linked to 2007 Post-E is central to this update for Kenyan readers.
 
+Murkomen Faces Backlash Over Ethnic Remarks Linked to 2007 Post-E is central to this update for Kenyan readers.
+
 Cabinet Secretary Kipchumba Murkomen is facing severe condemnation following controversial remarks directed at the Kikuyu community. Critics contend that his recent rhetoric employs ethnic profiling, warning that such divisive language mirrors the inflammatory climate that preceded the 2007 post-election violence in Kenya.
 
 ## The Consequences of Political Rhetoric
