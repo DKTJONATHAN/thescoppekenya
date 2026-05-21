@@ -115,10 +115,10 @@
     "eb53cb64258f19aca752fd57e57e0e9a",
     "8863735c498852d12f624061bb465a7c",
     "5f17499897bb461d0dc95ebd7ee17f22",
-    "cd6341131e64c7bad4c31b888f8610c1"
+    "cd6341131e64c7bad4c31b888f8610c1",
+    "ea9513eb1c1bb74b942de115d9b62a7d"
   ],
   "style_history": [
-    "Backgrounder",
     "Africa Angle",
     "Hard News Lead",
     "Critical Take",
@@ -147,7 +147,8 @@
     "Explainer",
     "Backgrounder",
     "Hard News Lead",
-    "Critical Take"
+    "Critical Take",
+    "Africa Angle"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -181,6 +182,7 @@
     "impact_on_citizens|Kenya Revenue Authority|Explainer",
     "impact_on_citizens|GitHub|Backgrounder",
     "policy_gap|Kenya|Hard News Lead",
-    "money_follow|KICA|Critical Take"
+    "money_follow|KICA|Critical Take",
+    "winners_losers|Truecaller|Africa Angle"
   ]
 }
