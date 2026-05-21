@@ -172,10 +172,10 @@
     "611e0d0fbd773dcf229bedaa6defbe01",
     "50e35b08d40823e45c169d2219c9e6e2",
     "b601bff17ac05859bd467e67f5127ef1",
-    "60c2b054da494ee56e2808062929c81e"
+    "60c2b054da494ee56e2808062929c81e",
+    "5e447bb1b910980964863c50ba4ebe1b"
   ],
   "style_history": [
-    "Trend Take",
     "Hard News Lead",
     "Explainer",
     "Reaction Round-up",
@@ -204,10 +204,10 @@
     "Reaction Round-up",
     "Explainer",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "impact_on_citizens|documentary|Explainer",
     "timeline_shift|Harry Potter|Trend Take",
     "accountability|Nick Pasqual|Profile Beat",
     "policy_gap|Tatum O'Neal|Hard News Lead",
@@ -286,6 +286,7 @@
     "impact_on_citizens|Valerie Bertinelli|Reaction Round-up",
     "accountability|Survivor|Explainer",
     "winners_losers|Survivor|Trend Take",
-    "money_follow|late-night television|Hard News Lead"
+    "money_follow|late-night television|Hard News Lead",
+    "impact_on_citizens|comedy|Reaction Round-up"
   ]
 }
