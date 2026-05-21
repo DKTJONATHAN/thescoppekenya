@@ -209,10 +209,10 @@
     "d606da3eeb0f7e0904347167831a9874",
     "32ce199ab8e4558ca6c4c64ce7cf9c23",
     "eb6a867bcfab378ef5e9b1b092cedc2d",
-    "a3fcdaf8ff87c5a0d9a79dd148d22250"
+    "a3fcdaf8ff87c5a0d9a79dd148d22250",
+    "7438661064d80e011aa4f588ddc0a975"
   ],
   "style_history": [
-    "Receipts Piece",
     "Hard News Lead",
     "Profile Beat",
     "Reaction Round-up",
@@ -241,7 +241,8 @@
     "Receipts Piece",
     "Trend Take",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Receipts Piece"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -291,6 +292,7 @@
     "myth_vs_fact|parenting|Receipts Piece",
     "impact_on_citizens|Interior Ministry|Trend Take",
     "money_follow|bilateral trade|Hard News Lead",
-    "impact_on_citizens|Kenya Power|Profile Beat"
+    "impact_on_citizens|Kenya Power|Profile Beat",
+    "myth_vs_fact|Sanaipei Tande|Receipts Piece"
   ]
 }
