@@ -174,10 +174,10 @@
     "b601bff17ac05859bd467e67f5127ef1",
     "60c2b054da494ee56e2808062929c81e",
     "5e447bb1b910980964863c50ba4ebe1b",
-    "e7750abeeda50ae1a51edf2004767538"
+    "e7750abeeda50ae1a51edf2004767538",
+    "36ac1a95fa3f9dd439d72f84ba11f8b2"
   ],
   "style_history": [
-    "Explainer",
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
@@ -206,10 +206,10 @@
     "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
-    "Explainer"
+    "Explainer",
+    "Profile Beat"
   ],
   "angle_history": [
-    "accountability|Nick Pasqual|Profile Beat",
     "policy_gap|Tatum O'Neal|Hard News Lead",
     "impact_on_citizens|Kevin Bacon|Reaction Round-up",
     "timeline_shift|SNL|Trend Take",
@@ -288,6 +288,7 @@
     "winners_losers|Survivor|Trend Take",
     "money_follow|late-night television|Hard News Lead",
     "impact_on_citizens|comedy|Reaction Round-up",
-    "impact_on_citizens|television|Explainer"
+    "impact_on_citizens|television|Explainer",
+    "accountability|Survivor|Profile Beat"
   ]
 }
