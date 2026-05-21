@@ -826,6 +826,8 @@ Kenya launches youth-led aquaculture initiatives to bridge 4 is central to this 
 
 Kenya launches youth-led aquaculture initiatives to bridge 4 is central to this update for Kenyan readers.
 
+Kenya launches youth-led aquaculture initiatives to bridge 4 is central to this update for Kenyan readers.
+
 ## Boosting Kenyan Aquaculture: Youth and Technology Kenya has launched significant youth and women-led aquaculture initiatives, including Young Fish Kenya and Girls in Aquaculture Kenya, to address a 450,000-tonne fish deficit. These programs leverage technology and financing, aiming to transform the sector into a $1 billion industry, supported by government reforms and international partnerships.
 
 Empowering Young Farmers in Aquaculture New initiatives like Young Fish Kenya and Girls in Aquaculture Kenya, alongside the AgriGrowth/eSamakiDigital platform, are actively engaging students and out-of-school youth in the aquaculture sector. These programs, unveiled during the "From Fish Deficit to Aquaculture Powerhouse" conference in Kisumu, aim to harness the sector's estimated $1 billion potential. The Aquaculture Consortium (TAC) and the Norwegian Agency for Exchange Cooperation are partnering to draw lessons from Norway, a global leader in aquaculture, to transform Kenya from a fish deficit nation to a fish powerhouse.
