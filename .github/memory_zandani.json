@@ -238,10 +238,10 @@
     "b3a6037fa374f20a4e07dee42cdd3eff",
     "c99539c76bb817d1e05faf5f6b09e273",
     "321a2d5b136fbba302e4ae95f9a403fe",
-    "715d754e92295c31efc04ab02ff77655"
+    "715d754e92295c31efc04ab02ff77655",
+    "a060e91ac09080518325676a9ee370e4"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
     "Receipts Piece",
@@ -270,10 +270,10 @@
     "Reaction Round-up",
     "Profile Beat",
     "Receipts Piece",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Trend Take"
   ],
   "angle_history": [
-    "accountability|Marion Naipei|Receipts Piece",
     "timeline_shift|Nairobi politics|Trend Take",
     "policy_gap|Murugi Munyi|Hard News Lead",
     "winners_losers|Akoko Val|Reaction Round-up",
@@ -352,6 +352,7 @@
     "winners_losers|Kenya|Reaction Round-up",
     "money_follow|celebrity|Profile Beat",
     "myth_vs_fact|Kenyan music|Receipts Piece",
-    "impact_on_citizens|Liberty Kenya|Hard News Lead"
+    "impact_on_citizens|Liberty Kenya|Hard News Lead",
+    "money_follow|forex trading|Trend Take"
   ]
 }
