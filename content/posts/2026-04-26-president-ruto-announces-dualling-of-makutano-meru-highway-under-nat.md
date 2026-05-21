@@ -847,6 +847,8 @@ President Ruto announces dualling of Makutano-Meru highway u is central to this 
 
 President Ruto announces dualling of Makutano-Meru highway u is central to this update for Kenyan readers.
 
+President Ruto announces dualling of Makutano-Meru highway u is central to this update for Kenyan readers.
+
 President William Ruto announced the dualling of the 169-kilometre Makutano-Meru highway through the new National Infrastructure Fund (NIF) on Sunday, April 26, 2026, during a church service in Tharaka Nithi County. This critical project aims to significantly improve trade and transport between Meru and Nairobi.
 
 ## National Infrastructure Fund to Drive Key Projects
