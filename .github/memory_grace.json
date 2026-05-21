@@ -140,10 +140,10 @@
     "0a61c72c0fb2c03e383704c3336bc9fa",
     "20af09f22833fc7c47c4dc2bf0e80ab0",
     "cd422af52cd04c79260be672321fa3c5",
-    "57fecaa101da92e0751a67eeb3de0430"
+    "57fecaa101da92e0751a67eeb3de0430",
+    "82807fdec3ffd28cf3c3da9dba332a20"
   ],
   "style_history": [
-    "Power Accountability",
     "SME Angle",
     "Backgrounder",
     "Markets Report",
@@ -172,7 +172,8 @@
     "Markets Report",
     "Explainer",
     "Backgrounder",
-    "Power Accountability"
+    "Power Accountability",
+    "Markets Report"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -225,6 +226,7 @@
     "myth_vs_fact|East African Cables|Markets Report",
     "impact_on_citizens|financial diplomacy|Explainer",
     "policy_gap|Kenya Airways|Backgrounder",
-    "accountability|NCBA Group|Power Accountability"
+    "accountability|NCBA Group|Power Accountability",
+    "policy_gap|Finance Bill 2026|Markets Report"
   ]
 }
