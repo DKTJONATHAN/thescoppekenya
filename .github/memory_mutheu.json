@@ -170,10 +170,10 @@
     "d295ebb0844d8464cb7d96f85c1995dd",
     "60c4a93aa1918348c94032a3e4b4100e",
     "611e0d0fbd773dcf229bedaa6defbe01",
-    "50e35b08d40823e45c169d2219c9e6e2"
+    "50e35b08d40823e45c169d2219c9e6e2",
+    "b601bff17ac05859bd467e67f5127ef1"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
     "Hard News Lead",
@@ -202,10 +202,10 @@
     "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
-    "accountability|data privacy|Hard News Lead",
     "timeline_shift|The Fifth Element|Reaction Round-up",
     "impact_on_citizens|documentary|Explainer",
     "timeline_shift|Harry Potter|Trend Take",
@@ -284,6 +284,7 @@
     "next_48_hours|Survivor|Trend Take",
     "timeline_shift|Miles Teller|Profile Beat",
     "impact_on_citizens|Valerie Bertinelli|Reaction Round-up",
-    "accountability|Survivor|Explainer"
+    "accountability|Survivor|Explainer",
+    "winners_losers|Survivor|Trend Take"
   ]
 }
