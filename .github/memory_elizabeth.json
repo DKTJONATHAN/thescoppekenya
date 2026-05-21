@@ -116,10 +116,10 @@
     "8863735c498852d12f624061bb465a7c",
     "5f17499897bb461d0dc95ebd7ee17f22",
     "cd6341131e64c7bad4c31b888f8610c1",
-    "ea9513eb1c1bb74b942de115d9b62a7d"
+    "ea9513eb1c1bb74b942de115d9b62a7d",
+    "fc3cb8a33058e4f5078d454ec5a84ad2"
   ],
   "style_history": [
-    "Africa Angle",
     "Hard News Lead",
     "Critical Take",
     "Explainer",
@@ -148,7 +148,8 @@
     "Backgrounder",
     "Hard News Lead",
     "Critical Take",
-    "Africa Angle"
+    "Africa Angle",
+    "Explainer"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -183,6 +184,7 @@
     "impact_on_citizens|GitHub|Backgrounder",
     "policy_gap|Kenya|Hard News Lead",
     "money_follow|KICA|Critical Take",
-    "winners_losers|Truecaller|Africa Angle"
+    "winners_losers|Truecaller|Africa Angle",
+    "impact_on_citizens|Google I/O 2026|Explainer"
   ]
 }
