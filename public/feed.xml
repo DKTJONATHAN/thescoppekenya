@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Thu, 21 May 2026 15:28:43 GMT</pubDate>
+    <pubDate>Thu, 21 May 2026 17:07:56 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Mount Kenya resistance against President Ruto sparks debate over tribal entitlement]]></title>
+      <link>https://zandani.co.ke/article/mount-kenya-resistance-against-president-ruto-sparks-debate-over-tri</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/mount-kenya-resistance-against-president-ruto-sparks-debate-over-tri</guid>
+      <pubDate>Thu, 21 May 2026 16:46:24 GMT</pubDate>
+      <dc:creator><![CDATA[Zed Mogaka]]></dc:creator>
+      <description><![CDATA[Mount Kenya residents voice growing opposition to President Ruto's administration, sparking national debate over economic grievances versus tribal bias.]]></description>
+      
+      
+      <content:encoded><![CDATA[<p>Mount Kenya residents voice growing opposition to President Ruto's administration, sparking national debate over economic grievances versus tribal bias.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Google Shifts to AI Agent Model with Gemini and Antigravity Update]]></title>
       <link>https://zandani.co.ke/article/google-shifts-to-ai-agent-model-with-gemini-and-antigravity-update</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/7dTk8MhY/1410f57bec7e.webp" type="image/jpeg" />
       <media:content url="https://i.ibb.co/7dTk8MhY/1410f57bec7e.webp" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/7dTk8MhY/1410f57bec7e.webp" alt="Adan Mohamed Named New Kenya Revenue Authority Commissioner General" /><p>Adan Mohamed Named New Kenya Revenue Authority Commissioner Gener: Adan Mohamed replaces Humphrey Wattanga at KRA amid challenges in hitting revenue targets</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Nairobi transport strike continues as matatu operators reject deal]]></title>
-      <link>https://zandani.co.ke/article/nairobi-transport-strike-continues-as-matatu-operators-reject-deal</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/nairobi-transport-strike-continues-as-matatu-operators-reject-deal</guid>
-      <pubDate>Tue, 19 May 2026 14:07:54 GMT</pubDate>
-      <dc:creator><![CDATA[Martin Kihara]]></dc:creator>
-      <description><![CDATA[Nairobi transport strike continues as matatu operators reject dea: Public transport services remain paralyzed in Nairobi as operators reject a diesel price]]></description>
-      <enclosure url="https://i.ibb.co/pjS2HZR4/bc1bdc8fc090.jpg" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/pjS2HZR4/bc1bdc8fc090.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/pjS2HZR4/bc1bdc8fc090.jpg" alt="Nairobi transport strike continues as matatu operators reject deal" /><p>Nairobi transport strike continues as matatu operators reject dea: Public transport services remain paralyzed in Nairobi as operators reject a diesel price</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
