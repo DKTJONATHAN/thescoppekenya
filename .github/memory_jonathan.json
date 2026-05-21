@@ -107,10 +107,10 @@
     "eadd0c213f01bd865abf63daf800a6dc",
     "b94ed7be19c4b976c3f00f4fbf2445ca",
     "e11b736b9633212060952e6eea7dfea5",
-    "6403ee16dc915f66ab05fc993a82e2e7"
+    "6403ee16dc915f66ab05fc993a82e2e7",
+    "2f694b9f4729b80202d6dc52d197c540"
   ],
   "style_history": [
-    "Personal Reflection",
     "Counterpoint",
     "Sharp Column",
     "Letter Form",
@@ -139,10 +139,10 @@
     "Historical Lens",
     "Personal Reflection",
     "Counterpoint",
-    "Letter Form"
+    "Letter Form",
+    "Historical Lens"
   ],
   "angle_history": [
-    "impact_on_citizens|Air Quality|Personal Reflection",
     "money_follow|Artificial Intelligence|Historical Lens",
     "winners_losers|Kenya|Letter Form",
     "policy_gap|International Nurses Week|Sharp Column",
@@ -221,6 +221,7 @@
     "timeline_shift|Imperial presidency|Historical Lens",
     "policy_gap|transportation|Personal Reflection",
     "myth_vs_fact|Science and Technology|Counterpoint",
-    "accountability|genocide|Letter Form"
+    "accountability|genocide|Letter Form",
+    "timeline_shift|lifelong learning|Historical Lens"
   ]
 }
