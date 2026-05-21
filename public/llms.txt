@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Siaya residents protest against proposed nuclear power plant](https://zandani.co.ke/article/siaya-residents-protest-proposed-nuclear-power-plant) - Residents in Sakwa village disrupted a public participation forum to voice strong opposition against the government nuclear power project in Siaya.
 - [African activists unite in Nairobi to launch new anti-GBV agenda](https://zandani.co.ke/article/african-activists-unite-in-nairobi-to-launch-new-anti-gbv-agenda) - Feminist leaders from across Africa gathered in Nairobi to form a unified strategy against gender-based violence and drive grassroots accountability.
 - [Major US TV Networks Cancel Long Running Shows and Talk Programs](https://zandani.co.ke/article/major-us-tv-networks-cancel-long-running-shows-and-talk-programs) - Major US TV Networks Cancel Long Running Shows and Talk Programs: NBCUniversal, CBS, and Fox are axing popular television shows due to budget constraints and
 - [Southampton Expelled From Championship Play-offs After Spying Scandal](https://zandani.co.ke/article/southampton-expelled-from-championship-play-offs-after-spying-scandal) - Southampton Expelled From Championship Play-offs After Spying Sca: Southampton FC has been removed from the Championship play-offs and hit with a points
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Temi Otedola and Mr Eazi Welcome Their First Child](https://zandani.co.ke/article/temi-otedola-mr-eazi-welcome-first-child) - Temi Otedola and Mr Eazi Welcome Their First Child: Nigerian entrepreneur Temi Otedola and musician Mr Eazi have announced the arrival of their first baby
 - [Finance Bill Proposals and KCB Group Q1 Performance Review](https://zandani.co.ke/article/finance-bill-proposals-and-kcb-group-q1-performance-review) - Finance Bill Proposals and KCB Group Q1 Performance Review: Kenya eyes tax filing changes as KCB Group reports profit growth. Updates include the East African
 - [Chelsea Handler Criticizes Comedians Over Kevin Hart Roast Jokes](https://zandani.co.ke/article/chelsea-handler-criticizes-comedians-over-kevin-hart-roast-jokes) - Chelsea Handler Criticizes Comedians Over Kevin Hart Roast Jokes: Chelsea Handler sparks a major controversy by condemning Shane Gillis and Tony Hinchcliffe
-- [Arne Slot set to learn Liverpool sack decision amid Iraola interest](https://zandani.co.ke/article/arne-slot-set-to-learn-liverpool-sack-decision-amid-iraola-interest) - Arne Slot set to learn Liverpool sack decision amid Iraola intere: Liverpool's Managerial Meltdown: Slot on the Brink, Iraola Demands Control The Anfield
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml

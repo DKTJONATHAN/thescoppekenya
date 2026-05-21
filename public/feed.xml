@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Thu, 21 May 2026 20:22:13 GMT</pubDate>
+    <pubDate>Thu, 21 May 2026 20:24:06 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Siaya residents protest against proposed nuclear power plant]]></title>
+      <link>https://zandani.co.ke/article/siaya-residents-protest-proposed-nuclear-power-plant</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/siaya-residents-protest-proposed-nuclear-power-plant</guid>
+      <pubDate>Thu, 21 May 2026 20:13:23 GMT</pubDate>
+      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
+      <description><![CDATA[Residents in Sakwa village disrupted a public participation forum to voice strong opposition against the government nuclear power project in Siaya.]]></description>
+      <enclosure url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/siaya-protests.jpg?itok=-UDITQNr" type="image/jpeg" />
+      <media:content url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/siaya-protests.jpg?itok=-UDITQNr" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/siaya-protests.jpg?itok=-UDITQNr" alt="Siaya residents protest against proposed nuclear power plant" /><p>Residents in Sakwa village disrupted a public participation forum to voice strong opposition against the government nuclear power project in Siaya.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[African activists unite in Nairobi to launch new anti-GBV agenda]]></title>
       <link>https://zandani.co.ke/article/african-activists-unite-in-nairobi-to-launch-new-anti-gbv-agenda</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/d4S35tgv/4eea8e105e10.webp" type="image/jpeg" />
       <media:content url="https://i.ibb.co/d4S35tgv/4eea8e105e10.webp" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/d4S35tgv/4eea8e105e10.webp" alt="Amber Ray and the Coastal Beauty Standard Are Financial Risks for Wealthy Kenyan Men" /><p>Amber Ray and the Coastal Beauty Standard Are Financial Risks for: Amber Ray’s public relationships highlight the rising financial risks for wealthy Kenyan men</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Kenya struggles to convert maternal death data into health policy]]></title>
-      <link>https://zandani.co.ke/article/kenya-struggles-convert-maternal-death-data-health-policy</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-struggles-convert-maternal-death-data-health-policy</guid>
-      <pubDate>Tue, 19 May 2026 19:18:57 GMT</pubDate>
-      <dc:creator><![CDATA[Jonathan Mwaniki]]></dc:creator>
-      <description><![CDATA[Kenya struggles to convert maternal death data into health policy: Despite advanced surveillance systems, Kenya faces challenges in using maternal mortality]]></description>
-      <enclosure url="https://i.ibb.co/HfsKdD9T/bec5637ba642.jpg" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/HfsKdD9T/bec5637ba642.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/HfsKdD9T/bec5637ba642.jpg" alt="Kenya struggles to convert maternal death data into health policy" /><p>Kenya struggles to convert maternal death data into health policy: Despite advanced surveillance systems, Kenya faces challenges in using maternal mortality</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
