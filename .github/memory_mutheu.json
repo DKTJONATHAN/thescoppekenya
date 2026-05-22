@@ -176,10 +176,10 @@
     "5e447bb1b910980964863c50ba4ebe1b",
     "e7750abeeda50ae1a51edf2004767538",
     "36ac1a95fa3f9dd439d72f84ba11f8b2",
-    "640b15c33848c016d5eb7b77be52f524"
+    "640b15c33848c016d5eb7b77be52f524",
+    "ca3fc6764fa49857640c0065593db73d"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Hard News Lead",
     "Explainer",
@@ -208,10 +208,10 @@
     "Reaction Round-up",
     "Explainer",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "impact_on_citizens|Kevin Bacon|Reaction Round-up",
     "timeline_shift|SNL|Trend Take",
     "accountability|Hollywood|Profile Beat",
     "policy_gap|defamation|Explainer",
@@ -290,6 +290,7 @@
     "impact_on_citizens|comedy|Reaction Round-up",
     "impact_on_citizens|television|Explainer",
     "accountability|Survivor|Profile Beat",
-    "money_follow|The Late Show|Hard News Lead"
+    "money_follow|The Late Show|Hard News Lead",
+    "impact_on_citizens|The Beatles|Reaction Round-up"
   ]
 }
