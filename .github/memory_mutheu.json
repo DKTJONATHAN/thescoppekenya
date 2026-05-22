@@ -179,10 +179,10 @@
     "640b15c33848c016d5eb7b77be52f524",
     "ca3fc6764fa49857640c0065593db73d",
     "16b21e78f1162a9508e847b73c57c0ab",
-    "43c58f37dbeb887f6bc7393917c4bc9e"
+    "43c58f37dbeb887f6bc7393917c4bc9e",
+    "c50b470b9494de2cd47f8630caab5fb4"
   ],
   "style_history": [
-    "Explainer",
     "Reaction Round-up",
     "Trend Take",
     "Hard News Lead",
@@ -211,10 +211,10 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Explainer"
   ],
   "angle_history": [
-    "policy_gap|defamation|Explainer",
     "timeline_shift|sitcom|Reaction Round-up",
     "impact_on_citizens|science fiction|Hard News Lead",
     "money_follow|data privacy|Trend Take",
@@ -293,6 +293,7 @@
     "money_follow|The Late Show|Hard News Lead",
     "impact_on_citizens|The Beatles|Reaction Round-up",
     "impact_on_citizens|Kathy Griffin|Trend Take",
-    "timeline_shift|Daniel Coleman|Profile Beat"
+    "timeline_shift|Daniel Coleman|Profile Beat",
+    "timeline_shift|television|Explainer"
   ]
 }
