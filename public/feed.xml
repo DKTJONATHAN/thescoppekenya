@@ -5,7 +5,7 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Fri, 22 May 2026 13:50:41 GMT</pubDate>
+    <pubDate>Fri, 22 May 2026 13:51:23 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title><![CDATA[NTSA Introduces QR Code Verification for Electronic Logbooks]]></title>
@@ -17,6 +17,17 @@
       <enclosure url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/logbook%20edit%201.jpg?itok=eUGuSoIY" type="image/jpeg" />
       <media:content url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/logbook%20edit%201.jpg?itok=eUGuSoIY" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/logbook%20edit%201.jpg?itok=eUGuSoIY" alt="NTSA Introduces QR Code Verification for Electronic Logbooks" /><p>NTSA Introduces QR Code Verification for Electronic Logbooks: NTSA is rolling out a new QR code system for vehicle logbooks on June 10 to combat fraud and</p>]]></content:encoded>
+    </item>
+    <item>
+      <title><![CDATA[Kenya prioritizes grid modernization for renewable energy transition]]></title>
+      <link>https://zandani.co.ke/article/kenya-prioritizes-grid-modernization-for-renewable-energy</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-prioritizes-grid-modernization-for-renewable-energy</guid>
+      <pubDate>Fri, 22 May 2026 13:38:21 GMT</pubDate>
+      <dc:creator><![CDATA[Jonathan Mwaniki]]></dc:creator>
+      <description><![CDATA[Kenya is enhancing its renewable energy sector through geothermal expansion and grid reforms to meet a daily electricity demand of 30 GWh.]]></description>
+      <enclosure url="https://cdn.radioafrica.digital/image/2026/05/6ec78735-e5c4-4cf6-8920-3a1a9fa41523.png?1779457132793" type="image/jpeg" />
+      <media:content url="https://cdn.radioafrica.digital/image/2026/05/6ec78735-e5c4-4cf6-8920-3a1a9fa41523.png?1779457132793" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://cdn.radioafrica.digital/image/2026/05/6ec78735-e5c4-4cf6-8920-3a1a9fa41523.png?1779457132793" alt="Kenya prioritizes grid modernization for renewable energy transition" /><p>Kenya is enhancing its renewable energy sector through geothermal expansion and grid reforms to meet a daily electricity demand of 30 GWh.</p>]]></content:encoded>
     </item>
     <item>
       <title><![CDATA[Oga Obinna Claims Financial Stability Drives Female Attraction]]></title>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/xqMFVdMy/d6600a726a36.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/xqMFVdMy/d6600a726a36.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/xqMFVdMy/d6600a726a36.jpg" alt="Southampton FC appeals EFL decision to expel club from play-offs" /><p>Southampton FC appeals EFL decision to expel club from play-offs: Southampton FC has launched a formal appeal against the EFL decision to remove the club from</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Dismantling the Imperial Presidency for Constitutional Reform]]></title>
-      <link>https://zandani.co.ke/article/dismantling-the-kenyan-imperial-presidency-for-governance-reform</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/dismantling-the-kenyan-imperial-presidency-for-governance-reform</guid>
-      <pubDate>Wed, 20 May 2026 13:47:04 GMT</pubDate>
-      <dc:creator><![CDATA[Jonathan Mwaniki]]></dc:creator>
-      <description><![CDATA[Dismantling the Imperial Presidency for Constitutional Reform: Kenya must reform its governance structure by separating the roles of head of state and]]></description>
-      <enclosure url="https://i.ibb.co/PZh2tss8/7187f87f5e93.png" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/PZh2tss8/7187f87f5e93.png" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/PZh2tss8/7187f87f5e93.png" alt="Dismantling the Imperial Presidency for Constitutional Reform" /><p>Dismantling the Imperial Presidency for Constitutional Reform: Kenya must reform its governance structure by separating the roles of head of state and</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
