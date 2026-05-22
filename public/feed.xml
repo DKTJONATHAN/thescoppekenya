@@ -5,7 +5,7 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Fri, 22 May 2026 07:10:53 GMT</pubDate>
+    <pubDate>Fri, 22 May 2026 07:12:21 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title><![CDATA[President Ruto Orders Review of Insurance and Auctioneer Laws]]></title>
@@ -28,6 +28,17 @@
       <enclosure url="https://cdn.radioafrica.digital/image/2026/05/7fd4e0d6-5ac2-430b-9ae4-8b644a0e3ac1.jpg?1779429820086" type="image/jpeg" />
       <media:content url="https://cdn.radioafrica.digital/image/2026/05/7fd4e0d6-5ac2-430b-9ae4-8b644a0e3ac1.jpg?1779429820086" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://cdn.radioafrica.digital/image/2026/05/7fd4e0d6-5ac2-430b-9ae4-8b644a0e3ac1.jpg?1779429820086" alt="Mwalimu Rachel Discusses Year Long Co-Parenting Arrangement" /><p>Media personality Mwalimu Rachel shares details on her intentional co-parenting strategy involving a temporary shift in primary custody for her son.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title><![CDATA[Frontier Counties Push Digital Literacy in Arid Regions]]></title>
+      <link>https://zandani.co.ke/article/frontier-counties-push-digital-literacy-in-arid-regions</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/frontier-counties-push-digital-literacy-in-arid-regions</guid>
+      <pubDate>Fri, 22 May 2026 06:58:34 GMT</pubDate>
+      <dc:creator><![CDATA[Jonathan Mwaniki]]></dc:creator>
+      <description><![CDATA[FCDC is bridging the education gap in ten Kenyan counties through digital literacy programs, infrastructure support, and new learning initiatives.]]></description>
+      <enclosure url="https://cdn.radioafrica.digital/image/2026/05/3f36078a-6fd8-4513-b6b8-04d6fb0ed5bc.jpg?1779433138992" type="image/jpeg" />
+      <media:content url="https://cdn.radioafrica.digital/image/2026/05/3f36078a-6fd8-4513-b6b8-04d6fb0ed5bc.jpg?1779433138992" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://cdn.radioafrica.digital/image/2026/05/3f36078a-6fd8-4513-b6b8-04d6fb0ed5bc.jpg?1779433138992" alt="Frontier Counties Push Digital Literacy in Arid Regions" /><p>FCDC is bridging the education gap in ten Kenyan counties through digital literacy programs, infrastructure support, and new learning initiatives.</p>]]></content:encoded>
     </item>
     <item>
       <title><![CDATA[Thomas Tuchel drops Phil Foden and Cole Palmer from England squad]]></title>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/5hXphBPw/d731fcc03619.png" type="image/jpeg" />
       <media:content url="https://i.ibb.co/5hXphBPw/d731fcc03619.png" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/5hXphBPw/d731fcc03619.png" alt="Southampton expelled from Championship play-offs over spying scandal" /><p>Southampton expelled from Championship play-offs over spying scan: Southampton faces expulsion from the EFL play-offs and a four-point deduction after</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Eric Omondi fuel protest gains international media spotlight]]></title>
-      <link>https://zandani.co.ke/article/eric-omondi-fuel-protest-gains-international-spotlight</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/eric-omondi-fuel-protest-gains-international-spotlight</guid>
-      <pubDate>Wed, 20 May 2026 06:58:32 GMT</pubDate>
-      <dc:creator><![CDATA[Martin Kihara]]></dc:creator>
-      <description><![CDATA[Eric Omondi fuel protest gains international media spotlight: Kenyan activist Eric Omondi led a protest against rising fuel costs using empty jerricans,]]></description>
-      <enclosure url="https://i.ibb.co/8DLPQby3/3280b88f6b89.jpg" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/8DLPQby3/3280b88f6b89.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/8DLPQby3/3280b88f6b89.jpg" alt="Eric Omondi fuel protest gains international media spotlight" /><p>Eric Omondi fuel protest gains international media spotlight: Kenyan activist Eric Omondi led a protest against rising fuel costs using empty jerricans,</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
