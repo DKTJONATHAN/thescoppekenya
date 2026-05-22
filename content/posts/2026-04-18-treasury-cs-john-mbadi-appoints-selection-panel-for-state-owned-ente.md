@@ -873,6 +873,8 @@ Treasury CS John Mbadi Appoints Selection Panel for State-Ow is central to this 
 
 Treasury CS John Mbadi Appoints Selection Panel for State-Ow is central to this update for Kenyan readers.
 
+Treasury CS John Mbadi Appoints Selection Panel for State-Ow is central to this update for Kenyan readers.
+
 Treasury Cabinet Secretary John Mbadi has appointed a five-member Search and Selection Panel tasked with identifying independent directors for Government-Owned Enterprises, effective April 17, 2026. This move, published in a gazette notice on Friday, initiates a series of significant government appointments across legal, finance, and public enterprise sectors.
 
 Appointments to State Corporations Underway
