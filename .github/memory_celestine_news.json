@@ -143,10 +143,10 @@
     "82e7c4e9e2cb154c145813c1f1234a7c",
     "31e1dfc4544e982b488af6576cbc3073",
     "4afcea6c5adc0c82bd901801289c9dc7",
-    "0668511a055104d5e2e23201747d8e87"
+    "0668511a055104d5e2e23201747d8e87",
+    "c2e237e122231d59f0a0f1a61decd01f"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Power Accountability",
     "Hard News Lead",
     "Context Backgrounder",
@@ -175,10 +175,10 @@
     "Power Accountability",
     "Context Backgrounder",
     "Explainer",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "policy_gap|Mandera|Hard News Lead",
     "accountability|police misconduct|Context Backgrounder",
     "myth_vs_fact|Catholic Church|Explainer",
     "policy_gap|National Police Service|Power Accountability",
@@ -257,6 +257,7 @@
     "money_follow|Kenya|Power Accountability",
     "myth_vs_fact|NTSA|Context Backgrounder",
     "next_48_hours|Busia|Explainer",
-    "policy_gap|aviation|Hard News Lead"
+    "policy_gap|aviation|Hard News Lead",
+    "impact_on_citizens|KRA|Reaction & Voices"
   ]
 }
