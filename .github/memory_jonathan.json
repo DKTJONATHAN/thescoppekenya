@@ -113,10 +113,10 @@
     "83ac87ac2df7da0edc055674e4da4afc",
     "4049d905ab7eae40eb4e186167061bab",
     "b40d9b2db2948cab508eb7e70f46184d",
-    "8f95f24cd6fad140317ef52b88600467"
+    "8f95f24cd6fad140317ef52b88600467",
+    "474e99823879318bca3347001dec2e45"
   ],
   "style_history": [
-    "Sharp Column",
     "Counterpoint",
     "Historical Lens",
     "Personal Reflection",
@@ -145,10 +145,10 @@
     "Personal Reflection",
     "Letter Form",
     "Counterpoint",
-    "Sharp Column"
+    "Sharp Column",
+    "Personal Reflection"
   ],
   "angle_history": [
-    "timeline_shift|Media Freedom Coalition|Historical Lens",
     "accountability|Artificial Intelligence|Sharp Column",
     "winners_losers|pension reform|Personal Reflection",
     "impact_on_citizens|retirement|Letter Form",
@@ -227,6 +227,7 @@
     "next_48_hours|data sovereignty|Personal Reflection",
     "accountability|GBV|Letter Form",
     "myth_vs_fact|Social Health Authority|Counterpoint",
-    "winners_losers|education|Sharp Column"
+    "winners_losers|education|Sharp Column",
+    "impact_on_citizens|ASAL|Personal Reflection"
   ]
 }
