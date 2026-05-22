@@ -165,10 +165,10 @@
     "48b5b6106744d53c852b2caa804c58bd",
     "275213aa85865591678d5399fee4fe27",
     "959394462c56678022cdee23879d065d",
-    "d26fa81a92bb8247dfe1856f0258a3fd"
+    "d26fa81a92bb8247dfe1856f0258a3fd",
+    "38dd7c98eb5c06520ec145a134e72d2a"
   ],
   "style_history": [
-    "Player Profile Beat",
     "Tactical Take",
     "Cynical Pundit",
     "Match Report",
@@ -197,10 +197,10 @@
     "Cynical Pundit",
     "Tactical Take",
     "Match Report",
-    "Player Profile Beat"
+    "Player Profile Beat",
+    "Cynical Pundit"
   ],
   "angle_history": [
-    "timeline_shift|Scottish Premiership|Match Report",
     "next_48_hours|Scottish Premiership|Player Profile Beat",
     "policy_gap|Scottish Premiership|Cynical Pundit",
     "impact_on_citizens|Premier League|Tactical Take",
@@ -279,6 +279,7 @@
     "money_follow|Scottish Premiership|Cynical Pundit",
     "winners_losers|England National Team|Tactical Take",
     "winners_losers|England|Match Report",
-    "impact_on_citizens|Pep Guardiola|Player Profile Beat"
+    "impact_on_citizens|Pep Guardiola|Player Profile Beat",
+    "accountability|World Cup|Cynical Pundit"
   ]
 }
