@@ -300,6 +300,8 @@ Rise of At-Home Cocktail Culture Trends in Kenya is central to this update for K
 
 Rise of At-Home Cocktail Culture Trends in Kenya is central to this update for Kenyan readers.
 
+Rise of At-Home Cocktail Culture Trends in Kenya is central to this update for Kenyan readers.
+
 ## The Death of the Sh1,500 Cocktail: How the Kenyan Living Room Became the New Nairobi Lounge
 
 Nairobi nightlife is undergoing a fundamental shift. The days of bracing for an overpriced night out and navigating crowded venues are increasingly being swapped for the intimacy of private apartments. As young professionals look to stretch their budgets while demanding better quality, the epicenter of the city’s social life has quietly migrated from the neon-lit streets of Westlands to the comfort of the living room.

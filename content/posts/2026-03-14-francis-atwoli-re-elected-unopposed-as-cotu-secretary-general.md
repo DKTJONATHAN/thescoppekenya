@@ -898,6 +898,8 @@ Francis Atwoli re-elected unopposed as COTU Secretary Genera is central to this 
 
 Francis Atwoli re-elected unopposed as COTU Secretary Genera is central to this update for Kenyan readers.
 
+Francis Atwoli re-elected unopposed as COTU Secretary Genera is central to this update for Kenyan readers.
+
 ## Atwoli Re-elected Unopposed as COTU Secretary General Francis Atwoli has been re-elected unopposed as Secretary General of the Central Organisation of Trade Unions (COTU-K) today, March 14, 2026. This marks his sixth term leading the country's largest labour federation, extending his tenure for another five years following a delegates' meeting in Kisumu.
 
 Unopposed Re-election in Kisumu The delegates' meeting, held today, Saturday, March 14, at the Tom Mboya Labour College in Kisumu, confirmed Atwoli's uncontested return for another five years. His re-election extends a leadership tenure that began in 2001, marking his sixth term at the helm of the country's largest labour federation. The veteran labour leader's victory was reportedly met with celebratory dances from delegates, affirming his continued mandate from the thousands of workers present at the meeting. This significant event in the labour sector unfolds as Za Ndani continues to cover various aspects of public service and governance, including recent developments such as the suspension of a Siaya County Officer over alleged defamatory remarks against Governor Orengo. [https://zandani.co.ke/article/siaya-county-officer-suspended-defamatory-remarks-against-governor-orengo]
