@@ -245,10 +245,10 @@
     "50044354cf4f0094bf63e767d43427e7",
     "620da5eeb0907e369e182f585af025f9",
     "2d4f5632e8d9ce374d704f4acbdc41b1",
-    "3138e9234f81ad1d7bb6ecd374d027cd"
+    "3138e9234f81ad1d7bb6ecd374d027cd",
+    "63350834ce603ce2da2e035371ccbba8"
   ],
   "style_history": [
-    "Receipts Piece",
     "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
@@ -277,10 +277,10 @@
     "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "accountability|Parliamentary Service Commission|Reaction Round-up",
     "myth_vs_fact|dating culture|Receipts Piece",
     "next_48_hours|Kenya|Profile Beat",
     "timeline_shift|Dr. Ofweneke|Hard News Lead",
@@ -359,6 +359,7 @@
     "policy_gap|co-parenting|Profile Beat",
     "next_48_hours|East Africa|Hard News Lead",
     "winners_losers|Nairobi|Reaction Round-up",
-    "winners_losers|Gen Z|Trend Take"
+    "winners_losers|Gen Z|Trend Take",
+    "money_follow|Star Wars|Receipts Piece"
   ]
 }
