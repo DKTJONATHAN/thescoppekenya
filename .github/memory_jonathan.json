@@ -117,10 +117,10 @@
     "474e99823879318bca3347001dec2e45",
     "0c4dbc75f12c49db274fea6b3fa3e554",
     "28dee6c4cdb1e8b02acc0281df658e6d",
-    "6e8913d8f9b0f8121cffdedc86952171"
+    "6e8913d8f9b0f8121cffdedc86952171",
+    "d3798075d82b1832802cac9eff7ef56f"
   ],
   "style_history": [
-    "Sharp Column",
     "Letter Form",
     "Historical Lens",
     "Counterpoint",
@@ -149,10 +149,10 @@
     "Personal Reflection",
     "Historical Lens",
     "Letter Form",
-    "Counterpoint"
+    "Counterpoint",
+    "Sharp Column"
   ],
   "angle_history": [
-    "timeline_shift|International Nurses Week|Historical Lens",
     "myth_vs_fact|maternal mental health|Counterpoint",
     "impact_on_citizens|R&D|Personal Reflection",
     "accountability|Press Freedom|Sharp Column",
@@ -231,6 +231,7 @@
     "impact_on_citizens|ASAL|Personal Reflection",
     "timeline_shift|geothermal energy|Historical Lens",
     "accountability|elections|Letter Form",
-    "winners_losers|wealth taxation|Counterpoint"
+    "winners_losers|wealth taxation|Counterpoint",
+    "policy_gap|chronic pain|Sharp Column"
   ]
 }
