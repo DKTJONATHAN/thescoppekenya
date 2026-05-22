@@ -163,10 +163,10 @@
     "1b78172f526f27f4bf3bf93fdbee450c",
     "ebd026795e3ef168ddbcb711063957b8",
     "48b5b6106744d53c852b2caa804c58bd",
-    "275213aa85865591678d5399fee4fe27"
+    "275213aa85865591678d5399fee4fe27",
+    "959394462c56678022cdee23879d065d"
   ],
   "style_history": [
-    "Stat Story",
     "Match Report",
     "Player Profile Beat",
     "Tactical Take",
@@ -195,10 +195,10 @@
     "Match Report",
     "Stat Story",
     "Cynical Pundit",
-    "Tactical Take"
+    "Tactical Take",
+    "Match Report"
   ],
   "angle_history": [
-    "myth_vs_fact|Scottish Premiership|Stat Story",
     "timeline_shift|Premier League|Tactical Take",
     "timeline_shift|Scottish Premiership|Match Report",
     "next_48_hours|Scottish Premiership|Player Profile Beat",
@@ -277,6 +277,7 @@
     "timeline_shift|England|Match Report",
     "impact_on_citizens|Spygate|Stat Story",
     "money_follow|Scottish Premiership|Cynical Pundit",
-    "winners_losers|England National Team|Tactical Take"
+    "winners_losers|England National Team|Tactical Take",
+    "winners_losers|England|Match Report"
   ]
 }
