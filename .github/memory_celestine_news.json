@@ -140,10 +140,10 @@
     "07178b92f9d33c7f2ebc028d3c0079c2",
     "90176d2a40fa7be3352aa5a0dff9a07c",
     "ad871f42dfe04ecfe78a76e6597bf4b2",
-    "82e7c4e9e2cb154c145813c1f1234a7c"
+    "82e7c4e9e2cb154c145813c1f1234a7c",
+    "31e1dfc4544e982b488af6576cbc3073"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Hard News Lead",
     "Explainer",
     "Reaction & Voices",
@@ -172,10 +172,10 @@
     "Explainer",
     "Hard News Lead",
     "Reaction & Voices",
-    "Power Accountability"
+    "Power Accountability",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "timeline_shift|NTSA|Context Backgrounder",
     "winners_losers|Finance Bill 2026|Power Accountability",
     "policy_gap|Education|Reaction & Voices",
     "policy_gap|Mandera|Hard News Lead",
@@ -254,6 +254,7 @@
     "money_follow|transport|Explainer",
     "winners_losers|Nuclear Power and Energy Agency|Hard News Lead",
     "impact_on_citizens|insurance|Reaction & Voices",
-    "money_follow|Kenya|Power Accountability"
+    "money_follow|Kenya|Power Accountability",
+    "myth_vs_fact|NTSA|Context Backgrounder"
   ]
 }
