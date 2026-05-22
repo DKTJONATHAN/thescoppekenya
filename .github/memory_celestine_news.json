@@ -139,10 +139,10 @@
     "48857a4df8ec00944edd1b2eebbda3ef",
     "07178b92f9d33c7f2ebc028d3c0079c2",
     "90176d2a40fa7be3352aa5a0dff9a07c",
-    "ad871f42dfe04ecfe78a76e6597bf4b2"
+    "ad871f42dfe04ecfe78a76e6597bf4b2",
+    "82e7c4e9e2cb154c145813c1f1234a7c"
   ],
   "style_history": [
-    "Power Accountability",
     "Context Backgrounder",
     "Hard News Lead",
     "Explainer",
@@ -171,10 +171,10 @@
     "Power Accountability",
     "Explainer",
     "Hard News Lead",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "money_follow|trade|Explainer",
     "timeline_shift|NTSA|Context Backgrounder",
     "winners_losers|Finance Bill 2026|Power Accountability",
     "policy_gap|Education|Reaction & Voices",
@@ -253,6 +253,7 @@
     "policy_gap|Ebola|Power Accountability",
     "money_follow|transport|Explainer",
     "winners_losers|Nuclear Power and Energy Agency|Hard News Lead",
-    "impact_on_citizens|insurance|Reaction & Voices"
+    "impact_on_citizens|insurance|Reaction & Voices",
+    "money_follow|Kenya|Power Accountability"
   ]
 }
