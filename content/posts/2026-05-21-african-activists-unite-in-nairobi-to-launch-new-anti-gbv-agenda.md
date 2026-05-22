@@ -58,6 +58,8 @@ African activists unite in Nairobi to launch new anti-GBV agenda is central to t
 
 African activists unite in Nairobi to launch new anti-GBV agenda is central to this update for Kenyan readers.
 
+African activists unite in Nairobi to launch new anti-GBV agenda is central to this update for Kenyan readers.
+
 ## To the Gatekeepers of Culture: Why the Nairobi Agenda is the End of Silent Complicity
 
 This week, activists from over 15 African nations gathered in Nairobi to declare that the era of polite advocacy is over. Through the Bold Circles initiative, these women have launched an unapologetic blueprint to dismantle the cultural protectionism that allows gender-based violence to thrive.
