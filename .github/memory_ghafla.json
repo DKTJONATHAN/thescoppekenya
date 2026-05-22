@@ -213,10 +213,10 @@
     "7438661064d80e011aa4f588ddc0a975",
     "7a09dbe9089d4c2d47218aa583fc0c6c",
     "24de101fa38d7073ae584d5ef8a4d221",
-    "04ec62cdae34357dcd67f7ca99707f29"
+    "04ec62cdae34357dcd67f7ca99707f29",
+    "574f381cd8c5907236db210f6c834db8"
   ],
   "style_history": [
-    "Receipts Piece",
     "Trend Take",
     "Hard News Lead",
     "Profile Beat",
@@ -245,7 +245,8 @@
     "Receipts Piece",
     "Reaction Round-up",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -299,6 +300,7 @@
     "myth_vs_fact|Sanaipei Tande|Receipts Piece",
     "winners_losers|Mwalimu Rachel|Reaction Round-up",
     "accountability|gospel singer|Hard News Lead",
-    "timeline_shift|Oga Obinna|Profile Beat"
+    "timeline_shift|Oga Obinna|Profile Beat",
+    "money_follow|Oga Obinna|Trend Take"
   ]
 }
