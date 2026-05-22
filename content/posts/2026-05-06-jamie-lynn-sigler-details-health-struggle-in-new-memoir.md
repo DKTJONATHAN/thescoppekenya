@@ -886,6 +886,8 @@ Jamie-Lynn Sigler details secret health struggle in new memoir is central to thi
 
 Jamie-Lynn Sigler details secret health struggle in new memoir is central to this update for Kenyan readers.
 
+Jamie-Lynn Sigler details secret health struggle in new memoir is central to this update for Kenyan readers.
+
 ## Jamie-Lynn Sigler and the Performance of Perfection
 
 A seismic shift is underway in how public figures navigate their private health battles. We are moving away from the era of filtered, airbrushed existence and toward a landscape defined by raw, often uncomfortable transparency. Jamie-Lynn Sigler’s new memoir, *And So It Is...*, serves as a definitive marker that the long-standing tradition of concealing disability to protect one’s public image is losing its grip.
