@@ -169,10 +169,10 @@
     "a9ccc1bab00c3379d0c1488176704819",
     "c6f36f1b4656d4eeff30d8f97bfad889",
     "150481c5a98c14df4fd745b952890791",
-    "484017387f4956e8dcf8df5731f0578b"
+    "484017387f4956e8dcf8df5731f0578b",
+    "748ebe642f51e4c1c487118dbf2964ce"
   ],
   "style_history": [
-    "Trend Take",
     "Explainer",
     "Hard News Lead",
     "Reaction Round-up",
@@ -201,7 +201,8 @@
     "Explainer",
     "Hard News Lead",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -255,6 +256,7 @@
     "myth_vs_fact|celebrity marriage|Explainer",
     "impact_on_citizens|Social media|Hard News Lead",
     "next_48_hours|Frank Edoho|Reaction Round-up",
-    "money_follow|celebrity birth|Profile Beat"
+    "money_follow|celebrity birth|Profile Beat",
+    "money_follow|boxing|Trend Take"
   ]
 }
