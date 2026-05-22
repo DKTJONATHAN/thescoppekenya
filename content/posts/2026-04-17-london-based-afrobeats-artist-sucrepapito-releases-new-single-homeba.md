@@ -857,6 +857,8 @@ London-based Afrobeats artist Sucrepapito releases new singl is central to this 
 
 London-based Afrobeats artist Sucrepapito releases new singl is central to this update for Kenyan readers.
 
+London-based Afrobeats artist Sucrepapito releases new singl is central to this update for Kenyan readers.
+
 London-based Afrobeats/Amapiano artist Sucrepapito, originally from Nigeria, marks 2026 with his compelling new single, "Homebase." The release strengthens his growing presence within the UK’s Afro-fusion scene, continuing his artistic evolution and engaging a broadening Pan-African audience.
 
 Sucrepapito's "Homebase" Elevates UK Afro-fusion Chukwuebuka Kamen, known artistically as Sucrepapito, began his musical journey early in Nigeria. With roots in Anambra State and raised between Enugu and Lagos, he gained initial recognition as a winner of the Global Communications “Rock n Rule” competition in Enugu in 2010. This early success laid the groundwork for a career now influencing the UK’s dynamic Afro-fusion landscape.

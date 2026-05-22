@@ -76,6 +76,8 @@ Southampton expelled from Championship play-offs over spying scan is central to 
 
 Southampton expelled from Championship play-offs over spying scan is central to this update for Kenyan readers.
 
+Southampton expelled from Championship play-offs over spying scan is central to this update for Kenyan readers.
+
 ## The £200m Espionage Trap: Why Southampton’s Play-off Expulsion Is a Tactical Blunder
 
 The decision to weaponize systematic spying has backfired with surgical precision, resulting in the expulsion of Southampton from the Championship play-offs. By gambling the club's integrity on clandestine training ground surveillance, the hierarchy has vaporized a fortune in potential earnings.
