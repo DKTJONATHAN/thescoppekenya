@@ -110,6 +110,8 @@ Aliko Dangote Eyes Lamu and Mombasa for Multi-Trillion Oil Refine is central to 
 
 Aliko Dangote Eyes Lamu and Mombasa for Multi-Trillion Oil Refine is central to this update for Kenyan readers.
 
+Aliko Dangote Eyes Lamu and Mombasa for Multi-Trillion Oil Refine is central to this update for Kenyan readers.
+
 ## Competition Intensifies for Multi-Trillion Shilling Oil Refinery Investment
 
 Billionaire industrialist Aliko Dangote has officially included Lamu as a potential site for a proposed 650,000-barrel-a-day oil refinery, forcing a direct competition between the coast region and Mombasa for the massive infrastructure project. 
