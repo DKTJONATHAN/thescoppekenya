@@ -900,6 +900,8 @@ Director Kristoffer Borglis essay defending age-gap romance is central to this u
 
 Director Kristoffer Borglis essay defending age-gap romance is central to this update for Kenyan readers.
 
+Director Kristoffer Borglis essay defending age-gap romance is central to this update for Kenyan readers.
+
 ## Director Kristoffer Borgli's Controversial Essay Resurfaces Ahead of "The Drama" Release Director Kristoffer Borgli, known for "Dream Scenario," is facing renewed scrutiny as his 2012 essay defending an age-gap relationship from his past has resurfaced. The piece details his romance with a teenage girl while he was 27, citing Woody Allen's "Manhattan" as a significant influence on his perspective. This timing is especially critical with his Zendaya-Robert Pattinson film, "The Drama," set for release on April 3, 2026.
 
 A Look Back at Borgli's 2012 Essay The essay, originally published in the Norwegian magazine D2 in 2012, has been translated and republished by THR just this past Thursday. In it, Borgli, then 27, openly discussed dating a "high school student" who was ten years his junior in Norway, where the legal age of consent is 16. He reflected on his "May-December romance" with initial skepticism, which he admitted prompted him to "recalibrate [his] moral compass."
