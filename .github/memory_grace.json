@@ -142,10 +142,10 @@
     "cd422af52cd04c79260be672321fa3c5",
     "57fecaa101da92e0751a67eeb3de0430",
     "82807fdec3ffd28cf3c3da9dba332a20",
-    "9375d01512b7b633e65641cb2503f122"
+    "9375d01512b7b633e65641cb2503f122",
+    "52ce7bfb82b074a93d46b9471953671e"
   ],
   "style_history": [
-    "Backgrounder",
     "Markets Report",
     "Explainer",
     "SME Angle",
@@ -174,7 +174,8 @@
     "Backgrounder",
     "Power Accountability",
     "Markets Report",
-    "SME Angle"
+    "SME Angle",
+    "Explainer"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -229,6 +230,7 @@
     "policy_gap|Kenya Airways|Backgrounder",
     "accountability|NCBA Group|Power Accountability",
     "policy_gap|Finance Bill 2026|Markets Report",
-    "impact_on_citizens|HELB|SME Angle"
+    "impact_on_citizens|HELB|SME Angle",
+    "winners_losers|Kenya Airways|Explainer"
   ]
 }
