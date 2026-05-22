@@ -243,10 +243,10 @@
     "82de2586d5bd92b2f10fd53b886c1258",
     "6e9c48fce48f0ccb9568db08d761711b",
     "50044354cf4f0094bf63e767d43427e7",
-    "620da5eeb0907e369e182f585af025f9"
+    "620da5eeb0907e369e182f585af025f9",
+    "2d4f5632e8d9ce374d704f4acbdc41b1"
   ],
   "style_history": [
-    "Hard News Lead",
     "Profile Beat",
     "Receipts Piece",
     "Trend Take",
@@ -275,10 +275,10 @@
     "Reaction Round-up",
     "Receipts Piece",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "policy_gap|Karen Nyamu|Profile Beat",
     "policy_gap|NACADA|Hard News Lead",
     "accountability|Parliamentary Service Commission|Reaction Round-up",
     "myth_vs_fact|dating culture|Receipts Piece",
@@ -357,6 +357,7 @@
     "timeline_shift|Nikita Kering'|Reaction Round-up",
     "money_follow|Kenya|Receipts Piece",
     "policy_gap|co-parenting|Profile Beat",
-    "next_48_hours|East Africa|Hard News Lead"
+    "next_48_hours|East Africa|Hard News Lead",
+    "winners_losers|Nairobi|Reaction Round-up"
   ]
 }
