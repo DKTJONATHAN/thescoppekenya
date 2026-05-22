@@ -1,16 +1,20 @@
 ---
 title: "Family disputes police suicide report following death in custody"
 slug: "family-disputes-police-suicide-report-following-death-in-custody"
-description: "The family of 24-year-old Brian Njung'e is seeking an independent probe after he died while in custody at Kiambu Police Station this week."
+description: "Family disputes police suicide report following death in custody: The family of 24-year-old Brian Njung'e is seeking an independent probe after he died while"
+excerpt: "The Silent Cells: A Digital Protest Against Custodial Secrecy The digital streets of Kenya are burning, and this time, the fire is directed"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://www.ghafla.co.ke/ke/wp-content/uploads/sites/4/2026/05/Brian-Njunge.jpg"
 category: "Gossip"
 tags: ["kiambu police station", "brian njunge", "ipoa", "human rights", "kenya police", "custodial death"]
+canonical: "https://zandani.co.ke/article/family-disputes-police-suicide-report-following-death-in-custody"
 date: "2026-05-22T16:37:26Z"
 dateModified: "2026-05-22T16:37:26Z"
+focusKeyword: "Family disputes police suicide report following death in custody"
 schema: "NewsArticle"
 ---
+
+Family disputes police suicide report following death in custody is central to this update for Kenyan readers.
 
 ## The Silent Cells: A Digital Protest Against Custodial Secrecy
 
@@ -39,3 +43,18 @@ This mobilization represents a shift in power. For decades, police reports were 
 The focus now shifts to IPOA. The organization is under extreme pressure to conduct an autopsy that involves an independent pathologist chosen by the family. Activists are already organizing virtual protest threads and planning to shadow the official investigation, ensuring that the police are not the only ones holding the keys to the truth. Expect more social media campaigns to escalate as the public demands access to CCTV footage and logs from the night of May 21.
 
 The mood across the country remains tense and deeply distrustful, fueled by a collective refusal to let another young life vanish into the silence of a police cell.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
