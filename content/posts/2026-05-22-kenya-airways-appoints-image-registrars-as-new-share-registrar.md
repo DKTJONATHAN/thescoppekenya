@@ -1,16 +1,20 @@
 ---
 title: "Kenya Airways Appoints Image Registrars as New Share Registrar"
 slug: "kenya-airways-appoints-image-registrars-as-new-share-registrar"
-description: "Kenya Airways has appointed Image Registrars Limited to handle share registry services, replacing Custody and Registrars Services Limited in June."
+description: "Kenya Airways Appoints Image Registrars as New Share Registrar: Kenya Airways has appointed Image Registrars Limited to handle share registry services,"
+excerpt: "Kenya Airways Appointments and the Shareholder Experience If you hold shares in Kenya Airways, you might wonder why a change in the company'"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://assets.kenyanwallstreet.com/assets/ece4837a-8a50-445b-8d83-0c90bddeea05.jpg"
 category: "Business"
 tags: ["kenya airways", "nairobi securities exchange", "business news", "kenya business", "corporate governance", "investing"]
+canonical: "https://zandani.co.ke/article/kenya-airways-appoints-image-registrars-as-new-share-registrar"
 date: "2026-05-22T13:37:55Z"
 dateModified: "2026-05-22T13:37:55Z"
+focusKeyword: "Kenya Airways Appoints Image Registrars as New Share Registrar"
 schema: "NewsArticle"
 ---
+
+Kenya Airways Appoints Image Registrars as New Share Registrar is central to this update for Kenyan readers.
 
 ## Kenya Airways Appointments and the Shareholder Experience
 
@@ -37,3 +41,18 @@ The registry switch is happening exactly when shareholders need to be most vigil
 ### What to watch next
 
 Keep a close eye on your inbox and postal mail as June approaches. You will likely receive updated instructions on how to register for the virtual AGM platform. If you encounter any delays in receiving your login credentials or your notice of meeting, reach out to the new registrar immediately rather than waiting until the morning of June 12. Your ability to influence the company's direction depends on your access to these digital tools. Prioritize verifying that your contact details are updated in the new system to ensure your dividend alerts and proxy forms reach you without interruption.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
