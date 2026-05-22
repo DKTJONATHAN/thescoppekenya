@@ -870,6 +870,8 @@ Understanding the Requirement for Dual-Colored Number Plates is central to this 
 
 Understanding the Requirement for Dual-Colored Number Plates is central to this update for Kenyan readers.
 
+Understanding the Requirement for Dual-Colored Number Plates is central to this update for Kenyan readers.
+
 ## The Dual-Colored Number Plate Charade
 
 Kenya claims its obsession with white front and yellow rear number plates is a gold standard for road safety. Yet, as the world moves toward simplified, monochromatic plate systems, Nairobi insists on clinging to a colonial relic under the guise of visibility.

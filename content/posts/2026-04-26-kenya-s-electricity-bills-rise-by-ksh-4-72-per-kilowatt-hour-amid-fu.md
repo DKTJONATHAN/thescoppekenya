@@ -870,6 +870,8 @@ Kenyas electricity bills rise by KSh 472 per kilowatt-hour a is central to this 
 
 Kenyas electricity bills rise by KSh 472 per kilowatt-hour a is central to this update for Kenyan readers.
 
+Kenyas electricity bills rise by KSh 472 per kilowatt-hour a is central to this update for Kenyan readers.
+
 ## Kenya's Electricity Bills Surge Amid Fuel and Forex Pressures
 
 Kenya's electricity consumers are now facing substantially higher power bills this April, with adjustments gazetted by the Energy and Petroleum Regulatory Authority (EPRA) adding KSh 4.72 per kilowatt-hour. This increase, driven by escalating fuel costs and currency depreciation, compounds the cost-of-living burden for households and businesses already grappling with rising pump prices.
