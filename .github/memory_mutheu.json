@@ -185,10 +185,10 @@
     "cf51377f81970d027a8507c409ee99ba",
     "6855929fd8afab1bd24bce38dd76c7aa",
     "d4626c652f744a422a16fe0f3f57b797",
-    "ccfaad838b0d6ca858dac55e9efe04b0"
+    "ccfaad838b0d6ca858dac55e9efe04b0",
+    "22f720ef7de805dafe43fc83ec73a644"
   ],
   "style_history": [
-    "Explainer",
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
@@ -217,10 +217,10 @@
     "Trend Take",
     "Reaction Round-up",
     "Explainer",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Profile Beat"
   ],
   "angle_history": [
-    "myth_vs_fact|Britney Spears|Hard News Lead",
     "winners_losers|Sally Field|Profile Beat",
     "impact_on_citizens|Hypergnosis|Explainer",
     "timeline_shift|The Boys|Trend Take",
@@ -299,6 +299,7 @@
     "myth_vs_fact|Stewart McLean|Trend Take",
     "impact_on_citizens|Star Wars|Reaction Round-up",
     "myth_vs_fact|Lost|Explainer",
-    "policy_gap|Netflix|Hard News Lead"
+    "policy_gap|Netflix|Hard News Lead",
+    "accountability|Stewart McLean|Profile Beat"
   ]
 }
