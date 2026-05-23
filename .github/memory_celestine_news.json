@@ -147,10 +147,10 @@
     "c2e237e122231d59f0a0f1a61decd01f",
     "183672028234255d270f4e85e9a421ab",
     "ea3c059fd0dde9fb24810edf83305437",
-    "4627ebaa05f66b14dc5be624eb88b28d"
+    "4627ebaa05f66b14dc5be624eb88b28d",
+    "8aaf1d541e5431e3f34a26eecefa8ac2"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Power Accountability",
     "Explainer",
     "Hard News Lead",
@@ -179,10 +179,10 @@
     "Reaction & Voices",
     "Context Backgrounder",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "myth_vs_fact|Kenya politics|Reaction & Voices",
     "timeline_shift|Kenya Airways|Context Backgrounder",
     "policy_gap|Central Bank of Kenya|Hard News Lead",
     "money_follow|Judiciary|Power Accountability",
@@ -261,6 +261,7 @@
     "impact_on_citizens|KRA|Reaction & Voices",
     "impact_on_citizens|Kenya|Context Backgrounder",
     "policy_gap|Kenya Meteorological Service Authority|Power Accountability",
-    "policy_gap|JSS|Hard News Lead"
+    "policy_gap|JSS|Hard News Lead",
+    "money_follow|DCI|Reaction & Voices"
   ]
 }
