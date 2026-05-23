@@ -945,6 +945,8 @@ Kenya Film Classification Board Issues Advisory on Age-Appro is central to this 
 
 Kenya Film Classification Board Issues Advisory on Age-Appro is central to this update for Kenyan readers.
 
+Kenya Film Classification Board Issues Advisory on Age-Appro is central to this update for Kenyan readers.
+
 The Kenya Film Classification Board (KFCB) has issued a critical advisory to entertainment operators and parents concerning age-appropriate digital content. This directive arrives as children commence their April school holidays in 2026, addressing heightened screen time and potential exposure to harmful material, urging vigilant content monitoring.
 
 KFCB Reinforces Content Vigilance for April Holidays
