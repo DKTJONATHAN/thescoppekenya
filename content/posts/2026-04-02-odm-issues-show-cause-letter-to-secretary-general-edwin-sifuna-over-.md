@@ -965,6 +965,8 @@ ODM Issues Show-Cause Letter to Secretary General Edwin Sifu is central to this 
 
 ODM Issues Show-Cause Letter to Secretary General Edwin Sifu is central to this update for Kenyan readers.
 
+ODM Issues Show-Cause Letter to Secretary General Edwin Sifu is central to this update for Kenyan readers.
+
 The Orange Democratic Movement (ODM) party officially began the process to remove Nairobi Senator Edwin Sifuna as Secretary General, issuing a show-cause letter on Thursday, April 2, 2026. Sifuna is directed to appear before the party's disciplinary committee on April 8 to respond to misconduct allegations.
 
 Sifuna's Alleged Misconduct Detailed

@@ -965,6 +965,8 @@ KeNHA warns motorists against using flooded Eldama Ravine-Ma is central to this 
 
 KeNHA warns motorists against using flooded Eldama Ravine-Ma is central to this update for Kenyan readers.
 
+KeNHA warns motorists against using flooded Eldama Ravine-Ma is central to this update for Kenyan readers.
+
 The Kenya National Highways Authority (KeNHA) on Sunday, March 22, 2026, issued a warning to motorists, advising against using a section of the Eldama Ravine-Maji Mazuri-Molo Road due to significant flooding along the Molo River, urging extreme caution.
 
 Road Safety Amidst Heavy Rainfall KeNHA's notice on Sunday, March 22, 2026, stressed the importance of exercising extreme caution and adhering to instructions from police officers and traffic marshals deployed at the affected site. Motorists are encouraged to use alternative routes to ensure safety. These include the Eldama Ravine-Mogotio-Salgaa-Nakuru route, Eldama Ravine-Kabarnet-Marigat-Mogotio, and Nakuru-Salgaa-Ravine for those traveling from Nakuru. The authority confirmed it is closely monitoring the situation and will implement additional safety measures if water levels continue to rise, attributing the flooding to heavy rainfall in upstream catchment areas.

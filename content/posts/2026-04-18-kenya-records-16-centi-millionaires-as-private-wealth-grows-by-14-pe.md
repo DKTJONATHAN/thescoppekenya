@@ -965,6 +965,8 @@ Kenya records 16 centi-millionaires as private wealth grows is central to this u
 
 Kenya records 16 centi-millionaires as private wealth grows is central to this update for Kenyan readers.
 
+Kenya records 16 centi-millionaires as private wealth grows is central to this update for Kenyan readers.
+
 Kenya currently hosts 16 centi-millionaires, individuals with fortunes exceeding USD100 million, solidifying its position among Africa's wealthiest nations. Private wealth in the country has expanded by 14 percent, as detailed in the 2025 Africa Wealth Report by Henley & Partners in collaboration with New World Wealth.
 
 Growing Wealth Elite in Kenya According to the 2025 Henley Global Report, Kenya presently boasts approximately 6,800 millionaires, defined as individuals worth over USD1 million, alongside its 16 centi-millionaires, those with liquid investable assets of USD100 million or more. This places the nation as a leading wealth hub on the continent.
