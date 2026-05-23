@@ -118,10 +118,10 @@
     "0c4dbc75f12c49db274fea6b3fa3e554",
     "28dee6c4cdb1e8b02acc0281df658e6d",
     "6e8913d8f9b0f8121cffdedc86952171",
-    "d3798075d82b1832802cac9eff7ef56f"
+    "d3798075d82b1832802cac9eff7ef56f",
+    "fb1af23274cd84f71f387edd3ec4c828"
   ],
   "style_history": [
-    "Letter Form",
     "Historical Lens",
     "Counterpoint",
     "Personal Reflection",
@@ -150,10 +150,10 @@
     "Historical Lens",
     "Letter Form",
     "Counterpoint",
-    "Sharp Column"
+    "Sharp Column",
+    "Personal Reflection"
   ],
   "angle_history": [
-    "myth_vs_fact|maternal mental health|Counterpoint",
     "impact_on_citizens|R&D|Personal Reflection",
     "accountability|Press Freedom|Sharp Column",
     "timeline_shift|Cultural Diplomacy|Historical Lens",
@@ -232,6 +232,7 @@
     "timeline_shift|geothermal energy|Historical Lens",
     "accountability|elections|Letter Form",
     "winners_losers|wealth taxation|Counterpoint",
-    "policy_gap|chronic pain|Sharp Column"
+    "policy_gap|chronic pain|Sharp Column",
+    "impact_on_citizens|wellbeing|Personal Reflection"
   ]
 }
