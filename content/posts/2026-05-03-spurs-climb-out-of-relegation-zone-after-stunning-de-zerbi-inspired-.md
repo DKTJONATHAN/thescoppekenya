@@ -916,6 +916,8 @@ Spurs Climb Out of Relegation Zone After Stunning De Zerbi-I is central to this 
 
 Spurs Climb Out of Relegation Zone After Stunning De Zerbi-I is central to this update for Kenyan readers.
 
+Spurs Climb Out of Relegation Zone After Stunning De Zerbi-I is central to this update for Kenyan readers.
+
 By Jona Munyi
 
 Tottenham Hotspur dramatically climbed out of the Premier League's relegation zone this weekend, securing a crucial 2-1 victory over Aston Villa. Under new head coach Roberto De Zerbi, appointed on 31 March 2026, the team delivered their finest performance of the 2025/2026 campaign, igniting hopes for survival after a turbulent season.
