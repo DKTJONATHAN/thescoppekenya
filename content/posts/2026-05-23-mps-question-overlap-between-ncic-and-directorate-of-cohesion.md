@@ -1,16 +1,20 @@
 ---
 title: "MPs Question Overlap Between NCIC and Directorate of Cohesion"
 slug: "mps-question-overlap-between-ncic-and-directorate-of-cohesion"
-description: "Kenyan legislators are calling for the merger of two state agencies, citing redundant mandates that strain public resources and hinder governance."
+description: "MPs Question Overlap Between NCIC and Directorate of Cohesion: Kenyan legislators are calling for the merger of two state agencies, citing redundant mandates"
+excerpt: "Administrative Reform and the Ghost of 1937 On May 23, 1937, global administrators were obsessed with the efficiency of the bureaucratic mac"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://cdn.radioafrica.digital/image/2026/05/c590454a-6f2c-4d1c-99c3-af7674a7c291.jpeg?1779527708487"
 category: "Opinions"
 tags: ["kenya politics", "parliament", "public governance", "fiscal policy", "ncic", "administrative reform"]
+canonical: "https://zandani.co.ke/article/mps-question-overlap-between-ncic-and-directorate-of-cohesion"
 date: "2026-05-23T09:14:44Z"
 dateModified: "2026-05-23T09:14:44Z"
+focusKeyword: "MPs Question Overlap Between NCIC and Directorate of Cohesion"
 schema: "NewsArticle"
 ---
+
+MPs Question Overlap Between NCIC and Directorate of Cohesion is central to this update for Kenyan readers.
 
 ## Administrative Reform and the Ghost of 1937
 
@@ -37,3 +41,18 @@ The current scrutiny in Parliament is a rare moment of clarity regarding the siz
 The debate will likely shift from the necessity of the agencies to the composition of a unified body. Watch for how the committees define the mandate of a merged entity. If the new structure retains the top-heavy management of its predecessors, it is a failure in the making. True reform will be measured by the reduction of bureaucratic layers, not the consolidation of budgets. 
 
 Efficiency is rarely found in the reorganization of desks. It is found in the removal of the tasks that should not exist at all.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
