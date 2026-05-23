@@ -216,10 +216,10 @@
     "04ec62cdae34357dcd67f7ca99707f29",
     "574f381cd8c5907236db210f6c834db8",
     "a0ca43c38a0fa7e3cdf7f5655ede347f",
-    "2190db46f580ad3ad3fa16e24cad411b"
+    "2190db46f580ad3ad3fa16e24cad411b",
+    "0fceac31252c1365ee7f806567ce82b3"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Trend Take",
     "Receipts Piece",
@@ -248,7 +248,8 @@
     "Profile Beat",
     "Trend Take",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Receipts Piece"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -305,6 +306,7 @@
     "timeline_shift|Oga Obinna|Profile Beat",
     "money_follow|Oga Obinna|Trend Take",
     "accountability|IPOA|Reaction Round-up",
-    "money_follow|Jose Chameleone|Hard News Lead"
+    "money_follow|Jose Chameleone|Hard News Lead",
+    "myth_vs_fact|Forex trading|Receipts Piece"
   ]
 }
