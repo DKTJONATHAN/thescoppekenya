@@ -181,10 +181,10 @@
     "16b21e78f1162a9508e847b73c57c0ab",
     "43c58f37dbeb887f6bc7393917c4bc9e",
     "c50b470b9494de2cd47f8630caab5fb4",
-    "ba0b5a803487df56ae63c704a47ce421"
+    "ba0b5a803487df56ae63c704a47ce421",
+    "cf51377f81970d027a8507c409ee99ba"
   ],
   "style_history": [
-    "Trend Take",
     "Hard News Lead",
     "Profile Beat",
     "Reaction Round-up",
@@ -213,10 +213,10 @@
     "Trend Take",
     "Profile Beat",
     "Explainer",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Trend Take"
   ],
   "angle_history": [
-    "impact_on_citizens|science fiction|Hard News Lead",
     "money_follow|data privacy|Trend Take",
     "accountability|Julio Foolio|Explainer",
     "winners_losers|iCarly|Reaction Round-up",
@@ -295,6 +295,7 @@
     "impact_on_citizens|Kathy Griffin|Trend Take",
     "timeline_shift|Daniel Coleman|Profile Beat",
     "timeline_shift|television|Explainer",
-    "impact_on_citizens|Boston Blue|Hard News Lead"
+    "impact_on_citizens|Boston Blue|Hard News Lead",
+    "myth_vs_fact|Stewart McLean|Trend Take"
   ]
 }
