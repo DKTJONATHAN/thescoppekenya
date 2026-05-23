@@ -251,10 +251,10 @@
     "8966b85ff11c0c380fa687469a226810",
     "9d600512c08b39e5a8b96ea44adb77aa",
     "0a93605a4f2b282a53437be0ea95e1db",
-    "572d8242b81076281a85213b1e36cfb7"
+    "572d8242b81076281a85213b1e36cfb7",
+    "cb1e038ae359df17bbd00ea5012c03ec"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Trend Take",
     "Receipts Piece",
     "Profile Beat",
@@ -283,10 +283,10 @@
     "Profile Beat",
     "Trend Take",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "myth_vs_fact|dating|Trend Take",
     "policy_gap|domestic workers|Hard News Lead",
     "impact_on_citizens|Netflix|Profile Beat",
     "money_follow|Vera Sidika|Receipts Piece",
@@ -365,6 +365,7 @@
     "myth_vs_fact|Vybz Kartel|Profile Beat",
     "myth_vs_fact|Andrew Kibe|Trend Take",
     "money_follow|Matatu industry|Reaction Round-up",
-    "myth_vs_fact|Kenya|Hard News Lead"
+    "myth_vs_fact|Kenya|Hard News Lead",
+    "policy_gap|NACADA|Receipts Piece"
   ]
 }
