@@ -183,10 +183,10 @@
     "c50b470b9494de2cd47f8630caab5fb4",
     "ba0b5a803487df56ae63c704a47ce421",
     "cf51377f81970d027a8507c409ee99ba",
-    "6855929fd8afab1bd24bce38dd76c7aa"
+    "6855929fd8afab1bd24bce38dd76c7aa",
+    "d4626c652f744a422a16fe0f3f57b797"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Explainer",
     "Trend Take",
@@ -215,10 +215,10 @@
     "Explainer",
     "Hard News Lead",
     "Trend Take",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Explainer"
   ],
   "angle_history": [
-    "accountability|Julio Foolio|Explainer",
     "winners_losers|iCarly|Reaction Round-up",
     "myth_vs_fact|Britney Spears|Hard News Lead",
     "winners_losers|Sally Field|Profile Beat",
@@ -297,6 +297,7 @@
     "timeline_shift|television|Explainer",
     "impact_on_citizens|Boston Blue|Hard News Lead",
     "myth_vs_fact|Stewart McLean|Trend Take",
-    "impact_on_citizens|Star Wars|Reaction Round-up"
+    "impact_on_citizens|Star Wars|Reaction Round-up",
+    "myth_vs_fact|Lost|Explainer"
   ]
 }
