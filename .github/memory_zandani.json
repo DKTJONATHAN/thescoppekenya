@@ -249,10 +249,10 @@
     "63350834ce603ce2da2e035371ccbba8",
     "3fad3f35fdcd4cbc55832be871b23410",
     "8966b85ff11c0c380fa687469a226810",
-    "9d600512c08b39e5a8b96ea44adb77aa"
+    "9d600512c08b39e5a8b96ea44adb77aa",
+    "0a93605a4f2b282a53437be0ea95e1db"
   ],
   "style_history": [
-    "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
@@ -281,10 +281,10 @@
     "Receipts Piece",
     "Hard News Lead",
     "Profile Beat",
-    "Trend Take"
+    "Trend Take",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "winners_losers|Mike Sonko|Reaction Round-up",
     "money_follow|marriage|Receipts Piece",
     "myth_vs_fact|dating|Trend Take",
     "policy_gap|domestic workers|Hard News Lead",
@@ -363,6 +363,7 @@
     "money_follow|Star Wars|Receipts Piece",
     "money_follow|Jose Chameleone|Hard News Lead",
     "myth_vs_fact|Vybz Kartel|Profile Beat",
-    "myth_vs_fact|Andrew Kibe|Trend Take"
+    "myth_vs_fact|Andrew Kibe|Trend Take",
+    "money_follow|Matatu industry|Reaction Round-up"
   ]
 }
