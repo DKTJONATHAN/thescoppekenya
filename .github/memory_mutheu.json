@@ -180,10 +180,10 @@
     "ca3fc6764fa49857640c0065593db73d",
     "16b21e78f1162a9508e847b73c57c0ab",
     "43c58f37dbeb887f6bc7393917c4bc9e",
-    "c50b470b9494de2cd47f8630caab5fb4"
+    "c50b470b9494de2cd47f8630caab5fb4",
+    "ba0b5a803487df56ae63c704a47ce421"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Trend Take",
     "Hard News Lead",
     "Profile Beat",
@@ -212,10 +212,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "timeline_shift|sitcom|Reaction Round-up",
     "impact_on_citizens|science fiction|Hard News Lead",
     "money_follow|data privacy|Trend Take",
     "accountability|Julio Foolio|Explainer",
@@ -294,6 +294,7 @@
     "impact_on_citizens|The Beatles|Reaction Round-up",
     "impact_on_citizens|Kathy Griffin|Trend Take",
     "timeline_shift|Daniel Coleman|Profile Beat",
-    "timeline_shift|television|Explainer"
+    "timeline_shift|television|Explainer",
+    "impact_on_citizens|Boston Blue|Hard News Lead"
   ]
 }
