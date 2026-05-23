@@ -120,10 +120,10 @@
     "6e8913d8f9b0f8121cffdedc86952171",
     "d3798075d82b1832802cac9eff7ef56f",
     "fb1af23274cd84f71f387edd3ec4c828",
-    "bc88e7394b64de856cd167eecdca0007"
+    "bc88e7394b64de856cd167eecdca0007",
+    "57bcda4375a57ab0f6aa1f1b1f613562"
   ],
   "style_history": [
-    "Counterpoint",
     "Personal Reflection",
     "Letter Form",
     "Sharp Column",
@@ -152,10 +152,10 @@
     "Counterpoint",
     "Sharp Column",
     "Personal Reflection",
-    "Historical Lens"
+    "Historical Lens",
+    "Counterpoint"
   ],
   "angle_history": [
-    "accountability|Press Freedom|Sharp Column",
     "timeline_shift|Cultural Diplomacy|Historical Lens",
     "money_follow|Senate of Kenya|Counterpoint",
     "impact_on_citizens|press freedom|Personal Reflection",
@@ -234,6 +234,7 @@
     "winners_losers|wealth taxation|Counterpoint",
     "policy_gap|chronic pain|Sharp Column",
     "impact_on_citizens|wellbeing|Personal Reflection",
-    "timeline_shift|Kenya|Historical Lens"
+    "timeline_shift|Kenya|Historical Lens",
+    "winners_losers|Convention 190|Counterpoint"
   ]
 }
