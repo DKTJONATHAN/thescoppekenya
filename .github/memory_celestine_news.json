@@ -149,10 +149,10 @@
     "ea3c059fd0dde9fb24810edf83305437",
     "4627ebaa05f66b14dc5be624eb88b28d",
     "8aaf1d541e5431e3f34a26eecefa8ac2",
-    "927837005317ffdb53bd1bd7b6c3a750"
+    "927837005317ffdb53bd1bd7b6c3a750",
+    "fd2deeb19bd57d13306ed966fbb71218"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Context Backgrounder",
     "Power Accountability",
@@ -181,10 +181,10 @@
     "Power Accountability",
     "Hard News Lead",
     "Reaction & Voices",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Explainer"
   ],
   "angle_history": [
-    "policy_gap|Central Bank of Kenya|Hard News Lead",
     "money_follow|Judiciary|Power Accountability",
     "impact_on_citizens|National Treasury|Reaction & Voices",
     "myth_vs_fact|NYOTA project|Context Backgrounder",
@@ -263,6 +263,7 @@
     "policy_gap|Kenya Meteorological Service Authority|Power Accountability",
     "policy_gap|JSS|Hard News Lead",
     "money_follow|DCI|Reaction & Voices",
-    "winners_losers|Kenya Ports Authority|Context Backgrounder"
+    "winners_losers|Kenya Ports Authority|Context Backgrounder",
+    "money_follow|Kenya Bus Service|Explainer"
   ]
 }
