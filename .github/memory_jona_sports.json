@@ -171,10 +171,10 @@
     "98d5499765f6fed786f87dda9dceadfa",
     "2852880b68b453b84477739eb88bc43f",
     "e84e8070def7a581e3ff507b2a0a254a",
-    "b80f200f4565623618b8a177e0c686cc"
+    "b80f200f4565623618b8a177e0c686cc",
+    "64b6bc0c97cd2eaf0d906a9e927db28c"
   ],
   "style_history": [
-    "Stat Story",
     "Cynical Pundit",
     "Player Profile Beat",
     "Match Report",
@@ -203,10 +203,10 @@
     "Tactical Take",
     "Match Report",
     "Player Profile Beat",
-    "Stat Story"
+    "Stat Story",
+    "Tactical Take"
   ],
   "angle_history": [
-    "accountability|Women's FA Cup|Cynical Pundit",
     "policy_gap|Premier League|Tactical Take",
     "winners_losers|football|Match Report",
     "accountability|Premier League|Player Profile Beat",
@@ -285,6 +285,7 @@
     "accountability|Manchester City|Tactical Take",
     "accountability|Championship|Match Report",
     "timeline_shift|Scottish Cup|Player Profile Beat",
-    "money_follow|Scottish Cup|Stat Story"
+    "money_follow|Scottish Cup|Stat Story",
+    "policy_gap|Championship play-off|Tactical Take"
   ]
 }
