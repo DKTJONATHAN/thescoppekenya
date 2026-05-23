@@ -173,10 +173,10 @@
     "e84e8070def7a581e3ff507b2a0a254a",
     "b80f200f4565623618b8a177e0c686cc",
     "64b6bc0c97cd2eaf0d906a9e927db28c",
-    "38898f66920648e74578b2ae8c4c909b"
+    "38898f66920648e74578b2ae8c4c909b",
+    "771bc6b7957aaba479cb03351aec59dd"
   ],
   "style_history": [
-    "Player Profile Beat",
     "Match Report",
     "Tactical Take",
     "Cynical Pundit",
@@ -205,10 +205,10 @@
     "Player Profile Beat",
     "Stat Story",
     "Tactical Take",
-    "Match Report"
+    "Match Report",
+    "Player Profile Beat"
   ],
   "angle_history": [
-    "winners_losers|football|Match Report",
     "accountability|Premier League|Player Profile Beat",
     "money_follow|VAR|Stat Story",
     "accountability|Premier League|Tactical Take",
@@ -287,6 +287,7 @@
     "timeline_shift|Scottish Cup|Player Profile Beat",
     "money_follow|Scottish Cup|Stat Story",
     "policy_gap|Championship play-off|Tactical Take",
-    "timeline_shift|Scottish Cup|Match Report"
+    "timeline_shift|Scottish Cup|Match Report",
+    "next_48_hours|UEFA Women's Champions League|Player Profile Beat"
   ]
 }
