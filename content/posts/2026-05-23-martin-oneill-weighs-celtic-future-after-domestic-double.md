@@ -1,16 +1,20 @@
 ---
 title: "Martin O'Neill weighs Celtic future after historic domestic double"
 slug: "martin-oneill-weighs-celtic-future-after-domestic-double"
-description: "Martin O'Neill is set for contract talks with Celtic leadership following a successful interim spell that delivered both the Premiership and Cup."
+description: "Martin O'Neill weighs Celtic future after historic domestic doubl: Martin O'Neill is set for contract talks with Celtic leadership following a successful"
+excerpt: "The O’Neill Blueprint: Why Tactical Pragmatism Trumps Modern Tinkering in Glasgow Martin O’Neill’s recent stint at Celtic Park serves as a s"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/027d/live/d327d970-56cb-11f1-8061-9f414900f587.jpg"
 category: "Sports"
 tags: ["celtic fc", "scottish premiership", "football news", "martin oneill", "european football", "kenyan sports"]
+canonical: "https://zandani.co.ke/article/martin-oneill-weighs-celtic-future-after-domestic-double"
 date: "2026-05-23T19:38:39Z"
 dateModified: "2026-05-23T19:38:39Z"
+focusKeyword: "Martin O'Neill weighs Celtic future after historic domestic doubl"
 schema: "NewsArticle"
 ---
+
+Martin O'Neill weighs Celtic future after historic domestic doubl is central to this update for Kenyan readers.
 
 ## The O’Neill Blueprint: Why Tactical Pragmatism Trumps Modern Tinkering in Glasgow
 
@@ -37,3 +41,18 @@ The current footballing landscape is experiencing a crisis of identity, where th
 The upcoming summit between Martin O’Neill and Dermot Desmond in London will be the definitive moment for Celtic’s future. The fan base is understandably eager for the 74-year-old to commit to a longer tenure. However, the club’s board now faces a pivotal decision. They must determine whether to lean into this successful, traditionalist blueprint or to resume their search for a manager more aligned with current, system-heavy trends. 
 
 O’Neill has effectively demonstrated that a return to foundational principles can secure silverware. The question remains whether he has the appetite for the long-term demands of a full-scale rebuild. For now, he has provided a masterclass in the value of simplicity. In a sport that often demands constant reinvention, sometimes the most advanced tactical update is simply to stop overthinking and let the players execute their strengths.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
