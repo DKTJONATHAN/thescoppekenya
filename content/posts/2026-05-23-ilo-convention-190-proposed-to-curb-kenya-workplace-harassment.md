@@ -1,16 +1,20 @@
 ---
 title: "ILO Convention 190 Proposed to Curb Kenya Workplace Harassment"
 slug: "ilo-convention-190-proposed-to-curb-kenya-workplace-harassment"
-description: "Kenya eyes ratification of ILO Convention 190 to address workplace violence and significant economic losses linked to employee harassment."
+description: "ILO Convention 190 Proposed to Curb Kenya Workplace Harassment: Kenya eyes ratification of ILO Convention 190 to address workplace violence and significant"
+excerpt: "ILO Convention 190 and the Performance of Protection The government insists that ratifying ILO Convention 190 will fix Kenya's toxic workpla"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://cdn.radioafrica.digital/image/2026/05/9526bf81-0e19-4612-8297-a8c5c0eb02b2.png?1779533160697"
 category: "Opinions"
 tags: ["kenya", "workplace safety", "ilo convention 190", "economy", "labor laws", "kenya school of government"]
+canonical: "https://zandani.co.ke/article/ilo-convention-190-proposed-to-curb-kenya-workplace-harassment"
 date: "2026-05-23T10:45:35Z"
 dateModified: "2026-05-23T10:45:35Z"
+focusKeyword: "ILO Convention 190 Proposed to Curb Kenya Workplace Harassment"
 schema: "NewsArticle"
 ---
+
+ILO Convention 190 Proposed to Curb Kenya Workplace Harassment is central to this update for Kenyan readers.
 
 ## ILO Convention 190 and the Performance of Protection
 
@@ -39,3 +43,18 @@ We are currently witnessing a cycle where public discourse is distracted by legi
 Pay attention to who stands to gain from the consultancy contracts and the specialized training programs that will sprout up following the ratification. Watch for the absence of informal worker representation in the implementation committees. If the focus remains on high-level administrative benchmarks instead of community-based enforcement mechanisms, we will know exactly who this law was written for, and it certainly won't be the person working behind a counter for a daily wage.
 
 Instead of cheering for a new legal framework, we should demand the enforcement of the basic protections that already exist. If we cannot hold employers accountable under current laws, another convention is just another expensive piece of paper. The silence that follows this ratification will be deafening.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
