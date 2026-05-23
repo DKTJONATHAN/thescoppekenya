@@ -172,10 +172,10 @@
     "2852880b68b453b84477739eb88bc43f",
     "e84e8070def7a581e3ff507b2a0a254a",
     "b80f200f4565623618b8a177e0c686cc",
-    "64b6bc0c97cd2eaf0d906a9e927db28c"
+    "64b6bc0c97cd2eaf0d906a9e927db28c",
+    "38898f66920648e74578b2ae8c4c909b"
   ],
   "style_history": [
-    "Cynical Pundit",
     "Player Profile Beat",
     "Match Report",
     "Tactical Take",
@@ -204,10 +204,10 @@
     "Match Report",
     "Player Profile Beat",
     "Stat Story",
-    "Tactical Take"
+    "Tactical Take",
+    "Match Report"
   ],
   "angle_history": [
-    "policy_gap|Premier League|Tactical Take",
     "winners_losers|football|Match Report",
     "accountability|Premier League|Player Profile Beat",
     "money_follow|VAR|Stat Story",
@@ -286,6 +286,7 @@
     "accountability|Championship|Match Report",
     "timeline_shift|Scottish Cup|Player Profile Beat",
     "money_follow|Scottish Cup|Stat Story",
-    "policy_gap|Championship play-off|Tactical Take"
+    "policy_gap|Championship play-off|Tactical Take",
+    "timeline_shift|Scottish Cup|Match Report"
   ]
 }
