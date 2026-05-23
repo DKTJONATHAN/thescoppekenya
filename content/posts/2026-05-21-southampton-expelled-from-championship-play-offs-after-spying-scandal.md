@@ -100,6 +100,8 @@ Southampton Expelled From Championship Play-offs After Spying Sca is central to 
 
 Southampton Expelled From Championship Play-offs After Spying Sca is central to this update for Kenyan readers.
 
+Southampton Expelled From Championship Play-offs After Spying Sca is central to this update for Kenyan readers.
+
 ## Championship Integrity and the Southampton Spying Scandal
 
 Southampton has been expelled from the Championship play-offs following a systemic spying campaign orchestrated by head coach Tonda Eckert. The independent panel confirmed three rival clubs were targeted, resulting in a mandatory four-point deduction for the upcoming season.
