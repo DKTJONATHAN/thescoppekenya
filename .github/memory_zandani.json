@@ -254,10 +254,10 @@
     "572d8242b81076281a85213b1e36cfb7",
     "cb1e038ae359df17bbd00ea5012c03ec",
     "238961f8a5d4f73a6d0d40b44f52d479",
-    "526660b3860d8c69a7e4a15c6faa4b82"
+    "526660b3860d8c69a7e4a15c6faa4b82",
+    "e99c0d6201cc7bb369d058b559f062b0"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Trend Take",
     "Receipts Piece",
@@ -286,10 +286,10 @@
     "Hard News Lead",
     "Receipts Piece",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "money_follow|Vera Sidika|Receipts Piece",
     "money_follow|social media|Reaction Round-up",
     "impact_on_citizens|Kenya|Trend Take",
     "timeline_shift|Afrobeats|Hard News Lead",
@@ -368,6 +368,7 @@
     "myth_vs_fact|Kenya|Hard News Lead",
     "policy_gap|NACADA|Receipts Piece",
     "money_follow|Kenya|Trend Take",
-    "impact_on_citizens|Kenya|Profile Beat"
+    "impact_on_citizens|Kenya|Profile Beat",
+    "timeline_shift|Jeff Koinange|Hard News Lead"
   ]
 }
