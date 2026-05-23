@@ -145,10 +145,10 @@
     "9375d01512b7b633e65641cb2503f122",
     "52ce7bfb82b074a93d46b9471953671e",
     "38a12c1b715ea3290284a017e7fd06ec",
-    "7d1c5a9180e8efbc51e7aace68042e42"
+    "7d1c5a9180e8efbc51e7aace68042e42",
+    "456d3434105c498cefa95b64b15752cb"
   ],
   "style_history": [
-    "SME Angle",
     "Power Accountability",
     "Markets Report",
     "Backgrounder",
@@ -177,7 +177,8 @@
     "SME Angle",
     "Explainer",
     "Backgrounder",
-    "Markets Report"
+    "Markets Report",
+    "SME Angle"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -235,6 +236,7 @@
     "impact_on_citizens|HELB|SME Angle",
     "winners_losers|Kenya Airways|Explainer",
     "money_follow|HELB|Backgrounder",
-    "winners_losers|Access Bank Kenya|Markets Report"
+    "winners_losers|Access Bank Kenya|Markets Report",
+    "money_follow|energy policy|SME Angle"
   ]
 }
