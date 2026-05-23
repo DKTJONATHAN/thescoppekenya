@@ -948,6 +948,8 @@ Managerless Chelsea Hand Debut to 18-Year-Old Jesse Derry as is central to this 
 
 Managerless Chelsea Hand Debut to 18-Year-Old Jesse Derry as is central to this update for Kenyan readers.
 
+Managerless Chelsea Hand Debut to 18-Year-Old Jesse Derry as is central to this update for Kenyan readers.
+
 FOR Za Ndani (zandani.co.ke)
 
 By Jona Munyi
