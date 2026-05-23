@@ -145,10 +145,10 @@
     "4afcea6c5adc0c82bd901801289c9dc7",
     "0668511a055104d5e2e23201747d8e87",
     "c2e237e122231d59f0a0f1a61decd01f",
-    "183672028234255d270f4e85e9a421ab"
+    "183672028234255d270f4e85e9a421ab",
+    "ea3c059fd0dde9fb24810edf83305437"
   ],
   "style_history": [
-    "Hard News Lead",
     "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
@@ -177,10 +177,10 @@
     "Explainer",
     "Hard News Lead",
     "Reaction & Voices",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Power Accountability"
   ],
   "angle_history": [
-    "myth_vs_fact|Catholic Church|Explainer",
     "policy_gap|National Police Service|Power Accountability",
     "myth_vs_fact|Kenya politics|Reaction & Voices",
     "timeline_shift|Kenya Airways|Context Backgrounder",
@@ -259,6 +259,7 @@
     "next_48_hours|Busia|Explainer",
     "policy_gap|aviation|Hard News Lead",
     "impact_on_citizens|KRA|Reaction & Voices",
-    "impact_on_citizens|Kenya|Context Backgrounder"
+    "impact_on_citizens|Kenya|Context Backgrounder",
+    "policy_gap|Kenya Meteorological Service Authority|Power Accountability"
   ]
 }
