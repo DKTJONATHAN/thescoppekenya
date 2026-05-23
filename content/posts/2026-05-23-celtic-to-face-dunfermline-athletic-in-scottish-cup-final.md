@@ -1,16 +1,20 @@
 ---
 title: "Celtic to face Dunfermline Athletic in Scottish Cup final"
 slug: "celtic-to-face-dunfermline-athletic-in-scottish-cup-final"
-description: "Celtic and Dunfermline Athletic prepare for the Scottish Cup final after securing victories against St Mirren and Falkirk respectively."
+description: "Celtic to face Dunfermline Athletic in Scottish Cup final: Celtic and Dunfermline Athletic prepare for the Scottish Cup final after securing victories against"
+excerpt: "Scottish Cup Final: The Fiscal Chasm A staggering 25 to 1 ratio defines the wage bill disparity between Celtic and Dunfermline Athletic as t"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://static.files.bbci.co.uk/core/website/assets/static/sport/images/metadata/poster-1024x576.146fae5646.png"
 category: "Sports"
 tags: ["scottish cup", "celtic fc", "football", "kenya sports", "international football", "dunfermline athletic"]
+canonical: "https://zandani.co.ke/article/celtic-to-face-dunfermline-athletic-in-scottish-cup-final"
 date: "2026-05-23T10:44:28Z"
 dateModified: "2026-05-23T10:44:28Z"
+focusKeyword: "Celtic to face Dunfermline Athletic in Scottish Cup final"
 schema: "NewsArticle"
 ---
+
+Celtic to face Dunfermline Athletic in Scottish Cup final is central to this update for Kenyan readers.
 
 ## Scottish Cup Final: The Fiscal Chasm
 
@@ -37,3 +41,18 @@ The financial disparity between the two finalists is a microcosm of the current 
 Keep an eye on the substitutions made by Lennon and O'Neill. In a match where the financial gap is this wide, the outcome will likely hinge on the final 20 minutes, where Celtic's superior bench depth typically forces a decline in the concentration of lower-budget opposition. The ability of Dunfermline to maintain their defensive shape as fatigue sets in will determine if the scoreline stays within a competitive margin or reflects the underlying economic reality of the two clubs. 
 
 Expect the final to be defined by the efficiency of Celtic's transition play against the structural resolve of a Dunfermline side that has proven it can survive the lottery of penalties.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
