@@ -951,6 +951,8 @@ Ministry of Education finalises competency-based curriculum is central to this u
 
 Ministry of Education finalises competency-based curriculum is central to this update for Kenyan readers.
 
+Ministry of Education finalises competency-based curriculum is central to this update for Kenyan readers.
+
 By Celestine Nzioka The Ministry of Education, in collaboration with the Commission for University Education (CUE), is finalizing a new competency-based education framework for universities. Institutions across the nation are expected to adopt this framework by the end of 2026, ahead of the first Competency-Based Curriculum (CBC) cohort's entry into higher education in 2029.
 
 University Education Overhaul Underway Principal Secretary for Higher Education Dr. Carol Hunja confirmed that a dedicated team of experts is developing the framework. This initiative marks a significant departure from the long-standing knowledge-heavy 8-4-4 system, transitioning towards a model emphasizing practical skills and learner-centred environments. The framework will guide universities in programme design, lecturer retraining, and student assessment.
