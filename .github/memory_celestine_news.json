@@ -153,10 +153,10 @@
     "fd2deeb19bd57d13306ed966fbb71218",
     "c383884a80cddd3a536c4139c67cc689",
     "8c88c4fea6064301f098933b196ce119",
-    "ca52b1c45ae2b455f461cc0e3f006557"
+    "ca52b1c45ae2b455f461cc0e3f006557",
+    "edff4f15145bcb3d70f1f6b60097e401"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Hard News Lead",
     "Context Backgrounder",
     "Power Accountability",
@@ -185,10 +185,10 @@
     "Explainer",
     "Power Accountability",
     "Hard News Lead",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "myth_vs_fact|NGEC|Explainer",
     "impact_on_citizens|ODM|Hard News Lead",
     "impact_on_citizens|NEMA|Reaction & Voices",
     "timeline_shift|Kenya Railways Corporation|Context Backgrounder",
@@ -267,6 +267,7 @@
     "money_follow|Kenya Bus Service|Explainer",
     "policy_gap|Kenya|Power Accountability",
     "accountability|Kenya|Hard News Lead",
-    "timeline_shift|Ebola|Context Backgrounder"
+    "timeline_shift|Ebola|Context Backgrounder",
+    "impact_on_citizens|Kenya|Reaction & Voices"
   ]
 }
