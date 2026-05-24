@@ -1,16 +1,20 @@
 ---
 title: "Kenya Ramps Up Ebola Surveillance Across 22 Counties"
 slug: "kenya-ramps-up-ebola-surveillance-across-22-counties"
-description: "The Ministry of Health has prioritized 22 counties for heightened Ebola surveillance as outbreaks surge in Uganda and the Democratic Republic of Congo."
+description: "Kenya Ramps Up Ebola Surveillance Across 22 Counties: The Ministry of Health has prioritized 22 counties for heightened Ebola surveillance as outbreaks surge"
+excerpt: "The Geography of Vulnerability: Why These 22 Counties Are the Nation’s Ebola Firewall The Ministry of Health has designated 22 counties as h"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/health%20cabinet%20secretary%20aden%20duale%20during%20a%20cog%20health%20committee%20meeting%20on%20%20april%2014%2C%202025.jpg?itok=PB8AaLYo"
 category: "News"
 tags: ["ebola", "ministry of health", "public health", "disease outbreak", "kenya news"]
+canonical: "https://zandani.co.ke/article/kenya-ramps-up-ebola-surveillance-across-22-counties"
 date: "2026-05-24T06:48:47Z"
 dateModified: "2026-05-24T06:48:47Z"
+focusKeyword: "Kenya Ramps Up Ebola Surveillance Across 22 Counties"
 schema: "NewsArticle"
 ---
+
+Kenya Ramps Up Ebola Surveillance Across 22 Counties is central to this update for Kenyan readers.
 
 ## The Geography of Vulnerability: Why These 22 Counties Are the Nation’s Ebola Firewall
 
@@ -43,3 +47,18 @@ The concentration of risk in these specific counties is a direct reflection of K
 The immediate future hinges on the efficiency of the newly deployed rapid diagnostic tests in these 22 zones. Scientists are moving toward clinical trials for a new vaccine candidate within three months, but until those arrive, containment rests entirely on the speed of contact tracing at transit nodes. The effectiveness of this firewall will be tested by the sheer volume of human traffic that cannot be halted without severing the economic ties that sustain these border communities.
 
 History suggests that the intensity of these measures will remain high as long as the infection curves in the DRC and Uganda remain unstable. Pathogens follow the path of least resistance, and where people trade, disease travels.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.

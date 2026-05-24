@@ -969,6 +969,8 @@ Kenya Met Heavy Rainfall Alert April 22-27 Forecast is central to this update fo
 
 Kenya Met Heavy Rainfall Alert April 22-27 Forecast is central to this update for Kenyan readers.
 
+Kenya Met Heavy Rainfall Alert April 22-27 Forecast is central to this update for Kenyan readers.
+
 The Kenya Meteorological Service Authority (KMSA) has issued a heavy rainfall advisory for several regions, warning of intensified rains between April 22 and April 27, 2026. Coastal, northeastern, and southeastern lowland areas are expected to experience increased rainfall, with accumulations potentially exceeding 20 millimetres in 24 hours.
 
 ## Heavy Rainfall Forecast
