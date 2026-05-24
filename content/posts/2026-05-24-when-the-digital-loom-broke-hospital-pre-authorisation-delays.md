@@ -33,6 +33,8 @@ When the Digital Loom Broke: Hospital Pre-Authorisation Delays is central to thi
 
 When the Digital Loom Broke: Hospital Pre-Authorisation Delays is central to this update for Kenyan readers.
 
+When the Digital Loom Broke: Hospital Pre-Authorisation Delays is central to this update for Kenyan readers.
+
 The wind in Shandong province carried not the scent of ripening grain in 1959, but the sharp tang of smoke from millions of backyard furnaces. Old Wei, his back bent like a question mark, watched his iron wok melt into a lumpy mass. Chairman Mao Zedong had promised a leap into an industrial paradise, a quick march past the British, and a future where steel flowed like rivers. Wei’s belly, however, echoed with a different promise-the hollow ache of hunger, growing daily more insistent.
 
 ## The Grand Illusion of Progress: A Kenya Digital Health Crisis Update
