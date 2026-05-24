@@ -981,6 +981,8 @@ NLC Reserves Land for Naivasha-Malaba SGR Extension is central to this update fo
 
 NLC Reserves Land for Naivasha-Malaba SGR Extension is central to this update for Kenyan readers.
 
+NLC Reserves Land for Naivasha-Malaba SGR Extension is central to this update for Kenyan readers.
+
 The National Land Commission (NLC) officially reserved 889.06 acres of land on Thursday, April 2, 2026, for the planned extension of the Standard Gauge Railway (SGR) from Naivasha to Malaba. This decision, gazetted yesterday, advances the government's push to connect the nation's interior to its western border and signals its intention for compulsory land acquisition.
 
 Naivasha-Malaba SGR Extension Advances

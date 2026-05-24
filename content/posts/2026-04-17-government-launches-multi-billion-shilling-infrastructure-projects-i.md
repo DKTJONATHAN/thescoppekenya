@@ -981,6 +981,8 @@ Government launches multi-billion shilling infrastructure pr is central to this 
 
 Government launches multi-billion shilling infrastructure pr is central to this update for Kenyan readers.
 
+Government launches multi-billion shilling infrastructure pr is central to this update for Kenyan readers.
+
 President Ruto recently unveiled a dazzling array of infrastructure projects in Nyamira County, signaling a massive multi-billion shilling investment. From state-of-the-art markets to new university campuses and revamped healthcare, these initiatives are set to transform the region and its budding stars in 2026.
 
 Nyamira's Billion-Shilling Glow Up Nyamira County is officially getting a grand makeover, with President Ruto's recent tour launching an ambitious suite of projects. This isn't just about concrete and steel; it's about setting the stage for future Kenyan excellence, impacting everything from celebrity travel to the next generation of professionals.
