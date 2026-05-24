@@ -134,6 +134,8 @@ Danny Go creator Daniel Coleman mourns death of 14-year-old son is central to th
 
 Danny Go creator Daniel Coleman mourns death of 14-year-old son is central to this update for Kenyan readers.
 
+Danny Go creator Daniel Coleman mourns death of 14-year-old son is central to this update for Kenyan readers.
+
 ## Beyond the Neon Lights: The Quiet Resilience of the Coleman Family
 
 The vibrant, high-energy world of the Danny Go! brand, filled with catchy music and infectious dance routines, has long served as a digital playground for children worldwide. Yet, beneath this colorful persona, Daniel Coleman has been living through an experience that contrasts sharply with his onscreen joy. Following the death of his 14-year-old son, Isaac, on May 21, 2026, the man millions recognize as a source of childhood entertainment is processing a profound personal loss.
