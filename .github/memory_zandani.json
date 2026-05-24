@@ -256,10 +256,10 @@
     "238961f8a5d4f73a6d0d40b44f52d479",
     "526660b3860d8c69a7e4a15c6faa4b82",
     "e99c0d6201cc7bb369d058b559f062b0",
-    "ddb644d4d77089f1f5e43745362e7925"
+    "ddb644d4d77089f1f5e43745362e7925",
+    "2ead2569383b40e3626e9d2723567658"
   ],
   "style_history": [
-    "Trend Take",
     "Receipts Piece",
     "Profile Beat",
     "Hard News Lead",
@@ -288,10 +288,10 @@
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Trend Take"
   ],
   "angle_history": [
-    "impact_on_citizens|Kenya|Trend Take",
     "timeline_shift|Afrobeats|Hard News Lead",
     "money_follow|Netflix|Profile Beat",
     "impact_on_citizens|Priscilla Ojo|Receipts Piece",
@@ -370,6 +370,7 @@
     "money_follow|Kenya|Trend Take",
     "impact_on_citizens|Kenya|Profile Beat",
     "timeline_shift|Jeff Koinange|Hard News Lead",
-    "money_follow|Raila Odinga|Receipts Piece"
+    "money_follow|Raila Odinga|Receipts Piece",
+    "money_follow|Vurugu 2.0|Trend Take"
   ]
 }
