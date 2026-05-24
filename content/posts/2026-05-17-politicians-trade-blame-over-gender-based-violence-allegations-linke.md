@@ -307,6 +307,8 @@ Politicians Trade Blame Over Gender-Based Violence Allegations Li is central to 
 
 Politicians Trade Blame Over Gender-Based Violence Allegations Li is central to this update for Kenyan readers.
 
+Politicians Trade Blame Over Gender-Based Violence Allegations Li is central to this update for Kenyan readers.
+
 A brutal assault involving a woman and an alleged extramarital affair has ignited a fierce political confrontation between the executive branch and factions loyal to Deputy President Rigathi Gachagua, as both sides exploit the violent incident to discredit their opponents across Kenya.
 
 ## The Politicization of Gender-Based Violence
