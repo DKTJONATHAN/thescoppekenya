@@ -157,10 +157,10 @@
     "edff4f15145bcb3d70f1f6b60097e401",
     "e01f2fa7a2db6a3688605a0558d6a405",
     "ca05dead5c60467293eac41ce1a32049",
-    "a8a7168cef6b0b1f0a3ff224f3c9f82a"
+    "a8a7168cef6b0b1f0a3ff224f3c9f82a",
+    "bf57f216b0149feaa18bd4a51e2fc730"
   ],
   "style_history": [
-    "Explainer",
     "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
@@ -189,10 +189,10 @@
     "Reaction & Voices",
     "Power Accountability",
     "Explainer",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "impact_on_citizens|Kenya-France relations|Explainer",
     "winners_losers|Tax Reform|Hard News Lead",
     "accountability|University of Nairobi|Power Accountability",
     "money_follow|Kenya|Context Backgrounder",
@@ -271,6 +271,7 @@
     "impact_on_citizens|Kenya|Reaction & Voices",
     "policy_gap|NTSA|Power Accountability",
     "myth_vs_fact|KRA|Explainer",
-    "policy_gap|Kenya transport|Context Backgrounder"
+    "policy_gap|Kenya transport|Context Backgrounder",
+    "accountability|Kenya|Hard News Lead"
   ]
 }
