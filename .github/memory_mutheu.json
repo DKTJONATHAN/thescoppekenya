@@ -190,10 +190,10 @@
     "a00f408e08e25b9915613680ebf1a83b",
     "b798417466050487ca58ff16db41d4e1",
     "8b6b795a69c3ddbfd9eedfdb8a5d147b",
-    "b2876fe721d1de9f459e4030ecce9c07"
+    "b2876fe721d1de9f459e4030ecce9c07",
+    "7ecb77e0b608e45ccf7c89543b26a840"
   ],
   "style_history": [
-    "Trend Take",
     "Explainer",
     "Profile Beat",
     "Reaction Round-up",
@@ -222,10 +222,10 @@
     "Trend Take",
     "Reaction Round-up",
     "Explainer",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
-    "money_follow|reality television|Hard News Lead",
     "myth_vs_fact|American Idol|Explainer",
     "money_follow|Late-night television|Profile Beat",
     "winners_losers|biopic|Reaction Round-up",
@@ -304,6 +304,7 @@
     "impact_on_citizens|Beartooth|Trend Take",
     "myth_vs_fact|Emerald Fennell|Reaction Round-up",
     "next_48_hours|Television|Explainer",
-    "impact_on_citizens|The Mandalorian|Profile Beat"
+    "impact_on_citizens|The Mandalorian|Profile Beat",
+    "money_follow|Star Wars|Trend Take"
   ]
 }
