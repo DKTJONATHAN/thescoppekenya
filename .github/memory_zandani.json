@@ -259,10 +259,10 @@
     "ddb644d4d77089f1f5e43745362e7925",
     "2ead2569383b40e3626e9d2723567658",
     "9d46084f90a7ecf86a3c321ec2e6a8f7",
-    "46b8f0260ec83d0251b357956a5d548a"
+    "46b8f0260ec83d0251b357956a5d548a",
+    "306e348c17fabcbbf28c0e145e1bc2d6"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
     "Receipts Piece",
@@ -291,10 +291,10 @@
     "Receipts Piece",
     "Trend Take",
     "Profile Beat",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "impact_on_citizens|Priscilla Ojo|Receipts Piece",
     "money_follow|Jared Okoth|Trend Take",
     "impact_on_citizens|influencer|Reaction Round-up",
     "money_follow|Kalasha Awards|Profile Beat",
@@ -373,6 +373,7 @@
     "money_follow|Raila Odinga|Receipts Piece",
     "money_follow|Vurugu 2.0|Trend Take",
     "accountability|boy child movement|Profile Beat",
-    "winners_losers|Akorino|Reaction Round-up"
+    "winners_losers|Akorino|Reaction Round-up",
+    "impact_on_citizens|Risper Faith|Hard News Lead"
   ]
 }
