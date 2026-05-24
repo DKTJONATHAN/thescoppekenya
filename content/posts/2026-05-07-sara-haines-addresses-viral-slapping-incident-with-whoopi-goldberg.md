@@ -972,6 +972,8 @@ Sara Haines explains viral on-air slapping incident with Whoopi is central to th
 
 Sara Haines explains viral on-air slapping incident with Whoopi is central to this update for Kenyan readers.
 
+Sara Haines explains viral on-air slapping incident with Whoopi is central to this update for Kenyan readers.
+
 ## The View and the New Era of Unscripted Television
 
 Traditional talk shows are shedding their formal skin. As legacy programs fight for attention in a digital ecosystem that favors volatility over decorum, the focus is shifting away from curated interviews toward spontaneous, often physical, human moments.
