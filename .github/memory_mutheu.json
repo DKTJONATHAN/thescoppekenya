@@ -193,10 +193,10 @@
     "b2876fe721d1de9f459e4030ecce9c07",
     "7ecb77e0b608e45ccf7c89543b26a840",
     "7881ed1a4f7c0fa4f198d21debd43603",
-    "8d084362dcc240b814b5a9ff2c549cd4"
+    "8d084362dcc240b814b5a9ff2c549cd4",
+    "9562e0442c733143f8d53c762f0a0bae"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Hard News Lead",
     "Explainer",
     "Trend Take",
@@ -225,10 +225,10 @@
     "Profile Beat",
     "Trend Take",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "winners_losers|biopic|Reaction Round-up",
     "timeline_shift|advertising|Trend Take",
     "impact_on_citizens|Artificial Intelligence|Explainer",
     "impact_on_citizens|AMC|Profile Beat",
@@ -307,6 +307,7 @@
     "impact_on_citizens|The Mandalorian|Profile Beat",
     "money_follow|Star Wars|Trend Take",
     "impact_on_citizens|Lena Dunham|Reaction Round-up",
-    "winners_losers|The Mandalorian and Grogu|Hard News Lead"
+    "winners_losers|The Mandalorian and Grogu|Hard News Lead",
+    "myth_vs_fact|Outlander|Explainer"
   ]
 }
