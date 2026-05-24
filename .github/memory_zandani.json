@@ -261,10 +261,10 @@
     "9d46084f90a7ecf86a3c321ec2e6a8f7",
     "46b8f0260ec83d0251b357956a5d548a",
     "306e348c17fabcbbf28c0e145e1bc2d6",
-    "f2eb1a8f434efd8b1c40ec15a59e12be"
+    "f2eb1a8f434efd8b1c40ec15a59e12be",
+    "998f6ccae3208998a03c909c4481153c"
   ],
   "style_history": [
-    "Trend Take",
     "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
@@ -293,10 +293,10 @@
     "Profile Beat",
     "Reaction Round-up",
     "Hard News Lead",
-    "Trend Take"
+    "Trend Take",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "impact_on_citizens|influencer|Reaction Round-up",
     "money_follow|Kalasha Awards|Profile Beat",
     "money_follow|media personality|Receipts Piece",
     "timeline_shift|entertainment|Hard News Lead",
@@ -375,6 +375,7 @@
     "accountability|boy child movement|Profile Beat",
     "winners_losers|Akorino|Reaction Round-up",
     "impact_on_citizens|Risper Faith|Hard News Lead",
-    "impact_on_citizens|Radio Jambo|Trend Take"
+    "impact_on_citizens|Radio Jambo|Trend Take",
+    "money_follow|child protection|Receipts Piece"
   ]
 }
