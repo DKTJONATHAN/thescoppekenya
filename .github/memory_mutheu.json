@@ -186,10 +186,10 @@
     "6855929fd8afab1bd24bce38dd76c7aa",
     "d4626c652f744a422a16fe0f3f57b797",
     "ccfaad838b0d6ca858dac55e9efe04b0",
-    "22f720ef7de805dafe43fc83ec73a644"
+    "22f720ef7de805dafe43fc83ec73a644",
+    "a00f408e08e25b9915613680ebf1a83b"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
@@ -218,10 +218,10 @@
     "Reaction Round-up",
     "Explainer",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
-    "winners_losers|Sally Field|Profile Beat",
     "impact_on_citizens|Hypergnosis|Explainer",
     "timeline_shift|The Boys|Trend Take",
     "next_48_hours|American Idol|Reaction Round-up",
@@ -300,6 +300,7 @@
     "impact_on_citizens|Star Wars|Reaction Round-up",
     "myth_vs_fact|Lost|Explainer",
     "policy_gap|Netflix|Hard News Lead",
-    "accountability|Stewart McLean|Profile Beat"
+    "accountability|Stewart McLean|Profile Beat",
+    "impact_on_citizens|Beartooth|Trend Take"
   ]
 }
