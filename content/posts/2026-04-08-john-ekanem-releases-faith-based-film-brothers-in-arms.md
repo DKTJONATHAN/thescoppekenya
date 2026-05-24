@@ -993,6 +993,8 @@ John Ekanem releases faith-based film Brothers in Arms is central to this update
 
 John Ekanem releases faith-based film Brothers in Arms is central to this update for Kenyan readers.
 
+John Ekanem releases faith-based film Brothers in Arms is central to this update for Kenyan readers.
+
 Nollywood's John Ekanem launched his compelling faith-based feature film, "Brothers in Arms," on John Ekanem TV on Saturday, April 5, 2026. The production quickly sparked extensive discussions among viewers, highlighting the profound impact of prayer on both successful and struggling individuals in a story resonating across Pan-Africa.
 
 John Ekanem's Brothers in Arms Explores Faith and Ambition
