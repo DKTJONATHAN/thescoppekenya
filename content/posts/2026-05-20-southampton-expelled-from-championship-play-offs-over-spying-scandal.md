@@ -198,6 +198,8 @@ Southampton expelled from Championship play-offs over spying scan is central to 
 
 Southampton expelled from Championship play-offs over spying scan is central to this update for Kenyan readers.
 
+Southampton expelled from Championship play-offs over spying scan is central to this update for Kenyan readers.
+
 The Price of Paranoia: Why Southampton’s Spygate Betrays the Modern Manager’s Obsession
 
 Southampton has seen its campaign dismantled by a disciplinary bombshell, ending the club's pursuit of promotion. Following an independent commission’s ruling regarding a spying scandal, the club has been disqualified from the Championship play-offs. Beyond the immediate removal, the board imposed a four-point deduction for the upcoming season, while Middlesbrough has been elevated to take Southampton’s place at Wembley. This punishment signals a seismic shift in how governing bodies view the gray areas of tactical preparation.

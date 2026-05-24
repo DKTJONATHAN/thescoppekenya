@@ -996,6 +996,8 @@ Wikipedia bans AI-generated articles following bot controver is central to this 
 
 Wikipedia bans AI-generated articles following bot controver is central to this update for Kenyan readers.
 
+Wikipedia bans AI-generated articles following bot controver is central to this update for Kenyan readers.
+
 ## AI Content Regulation and Africa's Digital Future Wikipedia has formally banned the use of entirely AI-generated content on its English-language platform as of March 20, 2026. This decision, driven by concerns over accuracy and declining human engagement, reflects a global challenge to maintain content integrity in the age of advanced AI. The implications extend to African tech startups and their approach to AI innovation.
 
 Wikipedia's Stance on AI-Generated Articles The English-language version of Wikipedia implemented a formal ban on content written wholesale by AI tools, with 44 votes in favor and only 2 against. This measure, enacted on March 20, 2026, strengthens an earlier guideline that lacked enforcement mechanisms. The policy still permits editors to utilize AI tools for polishing their writing or translating articles, provided the human editor possesses sufficient language proficiency to identify errors.

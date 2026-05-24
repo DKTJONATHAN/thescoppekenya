@@ -996,6 +996,8 @@ NBC stars and creators attend Emmy season kick-off luncheon is central to this u
 
 NBC stars and creators attend Emmy season kick-off luncheon is central to this update for Kenyan readers.
 
+NBC stars and creators attend Emmy season kick-off luncheon is central to this update for Kenyan readers.
+
 ## Emmy Buzz Heats Up: NBCUniversal's Star-Studded Kick-off
 
 Hollywood's elite gathered on Wednesday at Avra in Beverly Hills for NBCUniversal's exclusive Emmy season kick-off. The event, a vibrant mix of current hits and nostalgic "Saturday Night Live" favorites, saw stars like Mariska Hargitay, Tracy Morgan, and Dakota Fanning celebrate their acclaimed series and specials, signaling fierce competition ahead.
