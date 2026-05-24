@@ -152,10 +152,10 @@
     "927837005317ffdb53bd1bd7b6c3a750",
     "fd2deeb19bd57d13306ed966fbb71218",
     "c383884a80cddd3a536c4139c67cc689",
-    "8c88c4fea6064301f098933b196ce119"
+    "8c88c4fea6064301f098933b196ce119",
+    "ca52b1c45ae2b455f461cc0e3f006557"
   ],
   "style_history": [
-    "Power Accountability",
     "Reaction & Voices",
     "Hard News Lead",
     "Context Backgrounder",
@@ -184,10 +184,10 @@
     "Context Backgrounder",
     "Explainer",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "myth_vs_fact|NYOTA project|Context Backgrounder",
     "myth_vs_fact|NGEC|Explainer",
     "impact_on_citizens|ODM|Hard News Lead",
     "impact_on_citizens|NEMA|Reaction & Voices",
@@ -266,6 +266,7 @@
     "winners_losers|Kenya Ports Authority|Context Backgrounder",
     "money_follow|Kenya Bus Service|Explainer",
     "policy_gap|Kenya|Power Accountability",
-    "accountability|Kenya|Hard News Lead"
+    "accountability|Kenya|Hard News Lead",
+    "timeline_shift|Ebola|Context Backgrounder"
   ]
 }
