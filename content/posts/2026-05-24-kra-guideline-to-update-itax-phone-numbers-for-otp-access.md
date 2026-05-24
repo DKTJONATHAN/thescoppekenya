@@ -1,16 +1,20 @@
 ---
 title: "KRA issues guide to update iTax phone numbers for OTP access"
 slug: "kra-guideline-to-update-itax-phone-numbers-for-otp-access"
-description: "The Kenya Revenue Authority provides steps to update mobile numbers on the iTax portal to fix login issues before the June 30 tax filing deadline."
+description: "KRA issues guide to update iTax phone numbers for OTP access: The Kenya Revenue Authority provides steps to update mobile numbers on the iTax portal to fix"
+excerpt: "Securing Your iTax Profile Against Recycled Digital Identities Can you prove you are the real owner of your tax profile if your registered p"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/kra-44.JPG?itok=vomEJtU-"
 category: "News"
 tags: ["kra", "itax", "tax returns", "kenya revenue authority", "etims", "shuru chatbot", "kenya news"]
+canonical: "https://zandani.co.ke/article/kra-guideline-to-update-itax-phone-numbers-for-otp-access"
 date: "2026-05-24T15:37:09Z"
 dateModified: "2026-05-24T15:37:09Z"
+focusKeyword: "KRA issues guide to update iTax phone numbers for OTP access"
 schema: "NewsArticle"
 ---
+
+KRA issues guide to update iTax phone numbers for OTP access is central to this update for Kenyan readers.
 
 ## Securing Your iTax Profile Against Recycled Digital Identities
 
@@ -39,3 +43,18 @@ Tax compliance is no longer just about calculating your income; it is about prot
 The current situation highlights a growing friction between mobile data recycling and state administrative security. Watch for further KRA updates regarding biometric verification or deeper integration with the eCitizen platform, which would aim to unify identity across government services. For now, prioritize checking your contact details on the iTax portal today. Do not assume your digital identity is safe simply because you have not changed your habits.
 
 Your tax profile is your digital footprint, so ensure only you have the keys to unlock it.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
