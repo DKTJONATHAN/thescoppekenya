@@ -179,10 +179,10 @@
     "1c9d536eabf940733d90484383dad5d2",
     "13d92d04f96df2eafda9b7edc288cf81",
     "827c197d36ad79b1a7f9aa3e4b59ac3b",
-    "30df58d99c11a1c76e1dda0d25f1781a"
+    "30df58d99c11a1c76e1dda0d25f1781a",
+    "6872641ec31c59f990688cee920bee7a"
   ],
   "style_history": [
-    "Tactical Take",
     "Cynical Pundit",
     "Match Report",
     "Stat Story",
@@ -211,10 +211,10 @@
     "Stat Story",
     "Tactical Take",
     "Match Report",
-    "Cynical Pundit"
+    "Cynical Pundit",
+    "Player Profile Beat"
   ],
   "angle_history": [
-    "policy_gap|Football|Player Profile Beat",
     "timeline_shift|Arsenal|Tactical Take",
     "policy_gap|Championship|Stat Story",
     "policy_gap|Premier League|Match Report",
@@ -293,6 +293,7 @@
     "myth_vs_fact|Women's Super League|Stat Story",
     "policy_gap|football|Tactical Take",
     "money_follow|Hull City|Match Report",
-    "money_follow|Premier League|Cynical Pundit"
+    "money_follow|Premier League|Cynical Pundit",
+    "accountability|League One|Player Profile Beat"
   ]
 }
