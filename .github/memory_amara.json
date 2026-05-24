@@ -174,10 +174,10 @@
     "c9ed1a427432d26782956596f2c7d730",
     "18ee08deb708c8b53b4fd20a70512e9a",
     "5fe8e3adada8336e0cfdddcb8f9b39c3",
-    "050ec87fdd5556a0f291191ebdfd269a"
+    "050ec87fdd5556a0f291191ebdfd269a",
+    "eb42f0fa65114e8c10100cd23b0470a1"
   ],
   "style_history": [
-    "Trend Take",
     "Explainer",
     "Hard News Lead",
     "Profile Beat",
@@ -206,7 +206,8 @@
     "Explainer",
     "Hard News Lead",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -265,6 +266,7 @@
     "accountability|addiction|Explainer",
     "accountability|6unny|Hard News Lead",
     "myth_vs_fact|Seun Kuti|Reaction Round-up",
-    "money_follow|Nigerian celebrities|Profile Beat"
+    "money_follow|Nigerian celebrities|Profile Beat",
+    "impact_on_citizens|BBNaija|Trend Take"
   ]
 }
