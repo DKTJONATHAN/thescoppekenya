@@ -155,10 +155,10 @@
     "8c88c4fea6064301f098933b196ce119",
     "ca52b1c45ae2b455f461cc0e3f006557",
     "edff4f15145bcb3d70f1f6b60097e401",
-    "e01f2fa7a2db6a3688605a0558d6a405"
+    "e01f2fa7a2db6a3688605a0558d6a405",
+    "ca05dead5c60467293eac41ce1a32049"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Power Accountability",
     "Explainer",
     "Reaction & Voices",
@@ -187,10 +187,10 @@
     "Hard News Lead",
     "Context Backgrounder",
     "Reaction & Voices",
-    "Power Accountability"
+    "Power Accountability",
+    "Explainer"
   ],
   "angle_history": [
-    "impact_on_citizens|NEMA|Reaction & Voices",
     "timeline_shift|Kenya Railways Corporation|Context Backgrounder",
     "impact_on_citizens|Kenya-France relations|Explainer",
     "winners_losers|Tax Reform|Hard News Lead",
@@ -269,6 +269,7 @@
     "accountability|Kenya|Hard News Lead",
     "timeline_shift|Ebola|Context Backgrounder",
     "impact_on_citizens|Kenya|Reaction & Voices",
-    "policy_gap|NTSA|Power Accountability"
+    "policy_gap|NTSA|Power Accountability",
+    "myth_vs_fact|KRA|Explainer"
   ]
 }
