@@ -974,6 +974,8 @@ Aston Villa Host Nottingham Forest in Europa League Semi-Final is central to thi
 
 Aston Villa Host Nottingham Forest in Europa League Semi-Final is central to this update for Kenyan readers.
 
+Aston Villa Host Nottingham Forest in Europa League Semi-Final is central to this update for Kenyan readers.
+
 ## Aston Villa vs Nottingham Forest: The Statistical Reality of the Europa League Semi-Final
 
 Nottingham Forest carries a 1-0 aggregate lead into Villa Park as Unai Emery seeks to replicate the 1982 European success. The clinical decision to bench Morgan Gibbs-White due to 11 facial stitches highlights a shift toward high-performance medical risk management.
