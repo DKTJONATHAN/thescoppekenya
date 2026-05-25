@@ -1015,6 +1015,8 @@ Mr P Changes Birthday to Nov 30 Amid P-Square Feud is central to this update for
 
 Mr P Changes Birthday to Nov 30 Amid P-Square Feud is central to this update for Kenyan readers.
 
+Mr P Changes Birthday to Nov 30 Amid P-Square Feud is central to this update for Kenyan readers.
+
 Nigerian music star Mr P, born Peter Okoye, has officially declared November 30, 2026, as his new birthday celebration date, moving away from November 18, which he shares with his twin brother Paul Okoye. This personal decision further highlights the ongoing P-Square family feud, sparking widespread discussion across Africa.
 
 ## Mr P's Birthday Shift Ignites P-Square Feud Discourse
