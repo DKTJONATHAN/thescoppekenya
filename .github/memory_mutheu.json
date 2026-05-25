@@ -198,10 +198,10 @@
     "095edcf56c4b7f35ebec9a3ea86144e1",
     "2f31ed2977e9c250cd7a5b0c19ca5a91",
     "98e64744b63251e9b0a75484cb615b66",
-    "742734b7d2197a1a75e027920426b163"
+    "742734b7d2197a1a75e027920426b163",
+    "4ffd9b084dcbb9d2125a4d9cc1e3d9be"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Explainer",
     "Trend Take",
     "Hard News Lead",
@@ -230,10 +230,10 @@
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Explainer"
   ],
   "angle_history": [
-    "impact_on_citizens|film|Hard News Lead",
     "impact_on_citizens|Veep|Trend Take",
     "policy_gap|hantavirus|Profile Beat",
     "winners_losers|Good Omens|Reaction Round-up",
@@ -312,6 +312,7 @@
     "timeline_shift|television|Trend Take",
     "impact_on_citizens|Friends|Profile Beat",
     "myth_vs_fact|The Birds|Hard News Lead",
-    "winners_losers|television|Reaction Round-up"
+    "winners_losers|television|Reaction Round-up",
+    "accountability|Star Wars|Explainer"
   ]
 }
