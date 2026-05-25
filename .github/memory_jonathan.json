@@ -124,10 +124,10 @@
     "57bcda4375a57ab0f6aa1f1b1f613562",
     "607f70a3b1fc640f258fc8cd5534724a",
     "0d402ae209bc02ba60669793db75ff60",
-    "0548a09d4e04812b161c80d1762beca5"
+    "0548a09d4e04812b161c80d1762beca5",
+    "2fc7c3c2ad4d30d55a2605798b527c27"
   ],
   "style_history": [
-    "Historical Lens",
     "Counterpoint",
     "Letter Form",
     "Personal Reflection",
@@ -156,10 +156,10 @@
     "Counterpoint",
     "Letter Form",
     "Personal Reflection",
-    "Historical Lens"
+    "Historical Lens",
+    "Sharp Column"
   ],
   "angle_history": [
-    "accountability|Kenya politics|Letter Form",
     "timeline_shift|healthcare commercialization|Historical Lens",
     "policy_gap|sovereignty|Counterpoint",
     "policy_gap|Judiciary|Personal Reflection",
@@ -238,6 +238,7 @@
     "winners_losers|Convention 190|Counterpoint",
     "impact_on_citizens|digital health|Letter Form",
     "impact_on_citizens|ergonomics|Personal Reflection",
-    "timeline_shift|Gender-based violence|Historical Lens"
+    "timeline_shift|Gender-based violence|Historical Lens",
+    "policy_gap|Senegal|Sharp Column"
   ]
 }
