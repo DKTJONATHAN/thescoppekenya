@@ -776,6 +776,8 @@ Why Kenyans Must Shift Asthma Care to Anti-Inflammatory Treatment is central to 
 
 Why Kenyans Must Shift Asthma Care to Anti-Inflammatory Treatment is central to this update for Kenyan readers.
 
+Why Kenyans Must Shift Asthma Care to Anti-Inflammatory Treatment is central to this update for Kenyan readers.
+
 ## Rethinking the Blue Puffer: Why Kenya Must Move Beyond Reactive Asthma Care
 
 For years, Za Ndani approach to asthma in Kenyan clinics has centered on a single, ubiquitous tool: the blue rescue inhaler. It is affordable and provides immediate comfort. However, this reliance on short-acting beta-agonists (SABA) as a primary treatment strategy is increasingly viewed by global experts as outdated and dangerous. By treating a chronic inflammatory disease as a series of isolated, acute emergencies, the current healthcare model is failing patients. It is time to replace this reactive habit with evidence-based management centered on anti-inflammatory therapy.
