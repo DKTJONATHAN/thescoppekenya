@@ -127,10 +127,10 @@
     "0548a09d4e04812b161c80d1762beca5",
     "2fc7c3c2ad4d30d55a2605798b527c27",
     "1ac30833df029ff6bf3e618cbeefa108",
-    "b44564afea4e652ebd4858afa7921d1b"
+    "b44564afea4e652ebd4858afa7921d1b",
+    "db0f101ec5551492c3b6ecab44f28f6d"
   ],
   "style_history": [
-    "Personal Reflection",
     "Sharp Column",
     "Historical Lens",
     "Counterpoint",
@@ -159,10 +159,10 @@
     "Historical Lens",
     "Sharp Column",
     "Counterpoint",
-    "Letter Form"
+    "Letter Form",
+    "Personal Reflection"
   ],
   "angle_history": [
-    "policy_gap|Judiciary|Personal Reflection",
     "money_follow|economics|Sharp Column",
     "timeline_shift|Motherhood|Historical Lens",
     "accountability|Safaricom|Letter Form",
@@ -241,6 +241,7 @@
     "timeline_shift|Gender-based violence|Historical Lens",
     "policy_gap|Senegal|Sharp Column",
     "policy_gap|food security|Counterpoint",
-    "accountability|eTIMS|Letter Form"
+    "accountability|eTIMS|Letter Form",
+    "money_follow|World Bank|Personal Reflection"
   ]
 }
