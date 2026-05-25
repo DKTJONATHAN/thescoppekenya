@@ -218,10 +218,10 @@
     "a0ca43c38a0fa7e3cdf7f5655ede347f",
     "2190db46f580ad3ad3fa16e24cad411b",
     "0fceac31252c1365ee7f806567ce82b3",
-    "4b68b01b10740eab3c0457e46ba81f59"
+    "4b68b01b10740eab3c0457e46ba81f59",
+    "4904322def7a797fd1b18d06690011b4"
   ],
   "style_history": [
-    "Trend Take",
     "Receipts Piece",
     "Profile Beat",
     "Hard News Lead",
@@ -250,7 +250,8 @@
     "Reaction Round-up",
     "Hard News Lead",
     "Receipts Piece",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -309,6 +310,7 @@
     "accountability|IPOA|Reaction Round-up",
     "money_follow|Jose Chameleone|Hard News Lead",
     "myth_vs_fact|Forex trading|Receipts Piece",
-    "accountability|National Police Service|Profile Beat"
+    "accountability|National Police Service|Profile Beat",
+    "winners_losers|Samidoh|Trend Take"
   ]
 }
