@@ -129,10 +129,10 @@
     "1ac30833df029ff6bf3e618cbeefa108",
     "b44564afea4e652ebd4858afa7921d1b",
     "db0f101ec5551492c3b6ecab44f28f6d",
-    "1767a2716c64f9c35959112f8f54ef52"
+    "1767a2716c64f9c35959112f8f54ef52",
+    "52f3e7be05b999b4bab6bd7d592b67a7"
   ],
   "style_history": [
-    "Historical Lens",
     "Counterpoint",
     "Letter Form",
     "Sharp Column",
@@ -161,10 +161,10 @@
     "Counterpoint",
     "Letter Form",
     "Personal Reflection",
-    "Historical Lens"
+    "Historical Lens",
+    "Sharp Column"
   ],
   "angle_history": [
-    "timeline_shift|Motherhood|Historical Lens",
     "accountability|Safaricom|Letter Form",
     "winners_losers|asthma|Counterpoint",
     "policy_gap|National Police Service|Sharp Column",
@@ -243,6 +243,7 @@
     "policy_gap|food security|Counterpoint",
     "accountability|eTIMS|Letter Form",
     "money_follow|World Bank|Personal Reflection",
-    "winners_losers|Vision 2030|Historical Lens"
+    "winners_losers|Vision 2030|Historical Lens",
+    "impact_on_citizens|air quality|Sharp Column"
   ]
 }
