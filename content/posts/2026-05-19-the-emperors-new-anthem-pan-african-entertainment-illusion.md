@@ -261,6 +261,8 @@ The Emperor's New Anthem: Unmasking the Pan-African Entertainment is central to 
 
 The Emperor's New Anthem: Unmasking the Pan-African Entertainment is central to this update for Kenyan readers.
 
+The Emperor's New Anthem: Unmasking the Pan-African Entertainment is central to this update for Kenyan readers.
+
 The year 1974 draped over Addis Ababa like a suffocating shroud. Emperor Haile Selassie I, the Conquering Lion of Judah, King of Kings, Elect of God, sat in his Jubilee Palace, a gilded cage amidst a nation crumbling. Outside, whispers grew into shouts, then roars, of starvation in Wollo and Tigray, of landlessness, of a court steeped in opulence while his people gnawed on dust. The façade of an independent, powerful Ethiopia, a proud symbol of Pan-Africanism, began to crack, revealing the stark, hungry truth beneath.
 
 <h2>The Fading Glow of Imperial Splendor and Pan-African Influence</h2>

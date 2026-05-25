@@ -1032,6 +1032,8 @@ Nottingham Forest Stun Aston Villa in Europa League Semi-Fin is central to this 
 
 Nottingham Forest Stun Aston Villa in Europa League Semi-Fin is central to this update for Kenyan readers.
 
+Nottingham Forest Stun Aston Villa in Europa League Semi-Fin is central to this update for Kenyan readers.
+
 Nottingham Forest secured a vital 1-0 victory against Aston Villa in their Europa League semi-final first leg on Thursday, April 30, 2026. The contentious match, decided by a Chris Wood penalty, saw Aston Villa manager Unai Emery express intense frustration over a VAR decision regarding a potential red card incident.
 
 ## The Europa League Upset

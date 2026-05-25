@@ -1033,6 +1033,8 @@ Somali National Convicted for Recruiting Minor into Al-Shaba is central to this 
 
 Somali National Convicted for Recruiting Minor into Al-Shaba is central to this update for Kenyan readers.
 
+Somali National Convicted for Recruiting Minor into Al-Shaba is central to this update for Kenyan readers.
+
 A Somali national was convicted today, Thursday, March 19, 2026, at the Kahawa Law Courts for terrorism-related offences, including recruiting a minor into the Al-Shabaab network. This landmark prosecution by the Director of Public Prosecutions highlighted his role in radicalisation and facilitating extremist activities.
 
 Landmark Terrorism Conviction The conviction followed a comprehensive prosecution revealing the suspect, identified as Hassan, was instrumental in recruitment, radicalisation, and facilitation of extremist activities. The Kahawa Law Courts found Hassan guilty on multiple terrorism-related charges under the Prevention of Terrorism Act, 2012.
