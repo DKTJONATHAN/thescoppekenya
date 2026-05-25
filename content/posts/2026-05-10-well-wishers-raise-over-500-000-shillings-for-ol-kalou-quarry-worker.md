@@ -725,6 +725,8 @@ Well-wishers raise over 500,000 Shillings for Ol Kalou quarry wor is central to 
 
 Well-wishers raise over 500,000 Shillings for Ol Kalou quarry wor is central to this update for Kenyan readers.
 
+Well-wishers raise over 500,000 Shillings for Ol Kalou quarry wor is central to this update for Kenyan readers.
+
 Mzee Chege, a quarry worker from Ol Kalou, gained national attention this May 2026 after a video showed him walking his children to school in tattered clothing. Following the footage, public donations exceeding 500,000 Shillings have helped relocate his family into a furnished home.
 
 ## The Transformation of Mzee Chege
