@@ -159,10 +159,10 @@
     "ca05dead5c60467293eac41ce1a32049",
     "a8a7168cef6b0b1f0a3ff224f3c9f82a",
     "bf57f216b0149feaa18bd4a51e2fc730",
-    "c753593b7add1b3aba479ab1804cc75a"
+    "c753593b7add1b3aba479ab1804cc75a",
+    "0c184eb0b070053519b6ce98425bb212"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Hard News Lead",
     "Power Accountability",
     "Explainer",
@@ -191,10 +191,10 @@
     "Explainer",
     "Context Backgrounder",
     "Hard News Lead",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Explainer"
   ],
   "angle_history": [
-    "accountability|University of Nairobi|Power Accountability",
     "money_follow|Kenya|Context Backgrounder",
     "next_48_hours|Kenya|Reaction & Voices",
     "impact_on_citizens|KNEC|Explainer",
@@ -273,6 +273,7 @@
     "myth_vs_fact|KRA|Explainer",
     "policy_gap|Kenya transport|Context Backgrounder",
     "accountability|Kenya|Hard News Lead",
-    "winners_losers|Kenya Bankers Association|Reaction & Voices"
+    "winners_losers|Kenya Bankers Association|Reaction & Voices",
+    "winners_losers|Kenya|Explainer"
   ]
 }
