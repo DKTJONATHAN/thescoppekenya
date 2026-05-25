@@ -199,10 +199,10 @@
     "2f31ed2977e9c250cd7a5b0c19ca5a91",
     "98e64744b63251e9b0a75484cb615b66",
     "742734b7d2197a1a75e027920426b163",
-    "4ffd9b084dcbb9d2125a4d9cc1e3d9be"
+    "4ffd9b084dcbb9d2125a4d9cc1e3d9be",
+    "6c833274533f40f3551638c5bf6ab546"
   ],
   "style_history": [
-    "Explainer",
     "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
@@ -231,10 +231,10 @@
     "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
-    "impact_on_citizens|Veep|Trend Take",
     "policy_gap|hantavirus|Profile Beat",
     "winners_losers|Good Omens|Reaction Round-up",
     "policy_gap|Margaret Cho|Explainer",
@@ -313,6 +313,7 @@
     "impact_on_citizens|Friends|Profile Beat",
     "myth_vs_fact|The Birds|Hard News Lead",
     "winners_losers|television|Reaction Round-up",
-    "accountability|Star Wars|Explainer"
+    "accountability|Star Wars|Explainer",
+    "timeline_shift|Bring It On: All or Nothing|Trend Take"
   ]
 }
