@@ -1048,6 +1048,8 @@ Manchester City face potential 60-point deduction and relega is central to this 
 
 Manchester City face potential 60-point deduction and relega is central to this update for Kenyan readers.
 
+Manchester City face potential 60-point deduction and relega is central to this update for Kenyan readers.
+
 ## The Bill Comes Due for Manchester City Manchester City reportedly face a staggering 60-point deduction and relegation, as an independent commission's verdict on 115 FFP charges looms. A journalist's claim suggests the Premier League's protracted investigation is finally yielding a 'punishment', raising cynical eyebrows about the timing and the integrity of the league's oversight.
 
 The Endless FFP Saga It has been a long, drawn-out affair, hasn't it? The Premier League opened its investigation into Manchester City way back in 2018, only for charges to finally be laid in February 2023 after numerous "legal delays." The club now stands accused of 115 breaches, ranging from misreporting financial information and player/manager pay, to failing to cooperate with the league's own investigation. This protracted timeline offers little reassurance that football's governing bodies are truly capable of swift, decisive action when it concerns their biggest clubs. One might wonder what took so long to get to this seemingly obvious precipice.
