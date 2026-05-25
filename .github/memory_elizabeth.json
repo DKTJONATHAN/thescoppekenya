@@ -119,10 +119,10 @@
     "ea9513eb1c1bb74b942de115d9b62a7d",
     "fc3cb8a33058e4f5078d454ec5a84ad2",
     "c0ffbc3e8e52f4c007f283bdbfef0262",
-    "ef1561fd53858af25c608772dc0b7797"
+    "ef1561fd53858af25c608772dc0b7797",
+    "0d7c38c200b812b5ac24415baf7034d8"
   ],
   "style_history": [
-    "Explainer",
     "Africa Angle",
     "Backgrounder",
     "Hard News Lead",
@@ -151,7 +151,8 @@
     "Africa Angle",
     "Explainer",
     "Backgrounder",
-    "Critical Take"
+    "Critical Take",
+    "Africa Angle"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -189,6 +190,7 @@
     "winners_losers|Truecaller|Africa Angle",
     "impact_on_citizens|Google I/O 2026|Explainer",
     "money_follow|electric vehicles|Backgrounder",
-    "policy_gap|Equity Bank|Critical Take"
+    "policy_gap|Equity Bank|Critical Take",
+    "timeline_shift|ISP|Africa Angle"
   ]
 }
