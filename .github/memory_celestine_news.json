@@ -162,10 +162,10 @@
     "c753593b7add1b3aba479ab1804cc75a",
     "0c184eb0b070053519b6ce98425bb212",
     "a314dc02a5cb07d7ea81f59a0ecdcb55",
-    "064ec04fd45bb90244dfe4ccf4a12309"
+    "064ec04fd45bb90244dfe4ccf4a12309",
+    "1181d5931b272969f6d7531a5b5e1274"
   ],
   "style_history": [
-    "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
@@ -194,10 +194,10 @@
     "Reaction & Voices",
     "Explainer",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "impact_on_citizens|KNEC|Explainer",
     "winners_losers|NTSA|Hard News Lead",
     "policy_gap|Kenya Railways|Power Accountability",
     "accountability|Kenya|Reaction & Voices",
@@ -276,6 +276,7 @@
     "winners_losers|Kenya Bankers Association|Reaction & Voices",
     "winners_losers|Kenya|Explainer",
     "accountability|NTSA|Power Accountability",
-    "winners_losers|Public Service Commission|Hard News Lead"
+    "winners_losers|Public Service Commission|Hard News Lead",
+    "timeline_shift|Kenya|Context Backgrounder"
   ]
 }
