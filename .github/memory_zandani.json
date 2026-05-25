@@ -265,10 +265,10 @@
     "998f6ccae3208998a03c909c4481153c",
     "fce198fbd196dfa641157cbe6b38998d",
     "7d12cf4c5f46aee62f4621101194e361",
-    "3366de4fb3052246576a7e3afe796131"
+    "3366de4fb3052246576a7e3afe796131",
+    "73e35bd11b2a946fae72391e0deb213f"
   ],
   "style_history": [
-    "Profile Beat",
     "Receipts Piece",
     "Hard News Lead",
     "Trend Take",
@@ -297,10 +297,10 @@
     "Receipts Piece",
     "Profile Beat",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "impact_on_citizens|diplomacy|Reaction Round-up",
     "money_follow|Nairobi|Trend Take",
     "accountability|Flaqo Raz|Receipts Piece",
     "policy_gap|Africa Forward Summit|Hard News Lead",
@@ -379,6 +379,7 @@
     "money_follow|child protection|Receipts Piece",
     "accountability|child safety|Profile Beat",
     "timeline_shift|ODM|Reaction Round-up",
-    "policy_gap|Kenya|Hard News Lead"
+    "policy_gap|Kenya|Hard News Lead",
+    "money_follow|gender-based violence|Receipts Piece"
   ]
 }
