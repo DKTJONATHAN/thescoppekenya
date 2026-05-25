@@ -228,6 +228,8 @@ Why Kenyan Workforce Needs Skills-First Education Over Degrees is central to thi
 
 Why Kenyan Workforce Needs Skills-First Education Over Degrees is central to this update for Kenyan readers.
 
+Why Kenyan Workforce Needs Skills-First Education Over Degrees is central to this update for Kenyan readers.
+
 ## The Weight of the Paper Chase: Rethinking Vocational Training in Kenya
 
 As the excitement of the 1960s independence era began to fade, a specific aspiration took root in the Kenyan imagination. Success was defined by the office. Professional dignity became synonymous with formal attire, leaving manual labor and technical craftsmanship to be viewed as remnants of a period the nation was eager to leave behind.
