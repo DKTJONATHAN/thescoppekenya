@@ -1035,6 +1035,8 @@ Kamene Goro Recounts Near-Fatal Illness Criticises DJ Bonezs is central to this 
 
 Kamene Goro Recounts Near-Fatal Illness Criticises DJ Bonezs is central to this update for Kenyan readers.
 
+Kamene Goro Recounts Near-Fatal Illness Criticises DJ Bonezs is central to this update for Kenyan readers.
+
 Media personality Kamene Goro recently disclosed a severe, near-fatal illness in early 2026, which led to her hospitalization in the Intensive Care Unit (ICU) and High Dependency Unit (HDU). During this critical time, she revealed her husband, DJ Bonez, was notably absent from her bedside, a disclosure that has ignited significant public discussion.
 
 ## Kamene Goro's Health Battle and DJ Bonez's Controversial Absence

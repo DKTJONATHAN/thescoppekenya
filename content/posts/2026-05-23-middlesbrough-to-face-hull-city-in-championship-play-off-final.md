@@ -132,6 +132,8 @@ Middlesbrough to Face Hull City in Championship Play-off Final is central to thi
 
 Middlesbrough to Face Hull City in Championship Play-off Final is central to this update for Kenyan readers.
 
+Middlesbrough to Face Hull City in Championship Play-off Final is central to this update for Kenyan readers.
+
 ## Middlesbrough to Face Hull City in the Championship Play-off Final
 
 The Championship play-off final is set for Wembley following the unprecedented expulsion of Southampton for systematic spying. Middlesbrough replaces the disgraced Saints to face Hull City, in a result that forces a long overdue conversation about integrity over the £200 million prize.

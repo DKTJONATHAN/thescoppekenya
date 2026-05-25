@@ -198,6 +198,8 @@ Partick Thistle and St Mirren draw in Scottish play-off final is central to this
 
 Partick Thistle and St Mirren draw in Scottish play-off final is central to this update for Kenyan readers.
 
+Partick Thistle and St Mirren draw in Scottish play-off final is central to this update for Kenyan readers.
+
 ## The Premiership Trap: Why Promotion is a Poisoned Chalice
 
 The 1-1 draw at Firhill was classic Scottish football theater, ticking all the boxes for manufactured drama. Yet, beneath the superficial excitement of Partick Thistle and St Mirren clashing, there lies a more cynical reality. We are expected to view promotion to the Scottish Premiership as a sporting pinnacle, but in our current climate, it is often a fast-track ticket to financial ruin. The meritocratic veneer is thinning, revealing a structure that punishes ambition and rewards institutional stasis.
