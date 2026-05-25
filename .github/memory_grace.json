@@ -148,10 +148,10 @@
     "7d1c5a9180e8efbc51e7aace68042e42",
     "456d3434105c498cefa95b64b15752cb",
     "452f64e273676d867aeab1c2d8a6936e",
-    "cc96a7760dcdfd6d4dcdb006f4611f83"
+    "cc96a7760dcdfd6d4dcdb006f4611f83",
+    "71c84fac988fa7a0a1d81704ea03a8d7"
   ],
   "style_history": [
-    "Backgrounder",
     "Explainer",
     "SME Angle",
     "Power Accountability",
@@ -180,7 +180,8 @@
     "Markets Report",
     "SME Angle",
     "Explainer",
-    "Power Accountability"
+    "Power Accountability",
+    "Markets Report"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -241,6 +242,7 @@
     "winners_losers|Access Bank Kenya|Markets Report",
     "money_follow|energy policy|SME Angle",
     "impact_on_citizens|Simbisa Brands|Explainer",
-    "accountability|climate finance|Power Accountability"
+    "accountability|climate finance|Power Accountability",
+    "money_follow|Shadow AI|Markets Report"
   ]
 }
