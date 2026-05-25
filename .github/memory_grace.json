@@ -149,10 +149,10 @@
     "456d3434105c498cefa95b64b15752cb",
     "452f64e273676d867aeab1c2d8a6936e",
     "cc96a7760dcdfd6d4dcdb006f4611f83",
-    "71c84fac988fa7a0a1d81704ea03a8d7"
+    "71c84fac988fa7a0a1d81704ea03a8d7",
+    "dda8ac9601ffad81432a484a523bef02"
   ],
   "style_history": [
-    "Explainer",
     "SME Angle",
     "Power Accountability",
     "Markets Report",
@@ -181,7 +181,8 @@
     "SME Angle",
     "Explainer",
     "Power Accountability",
-    "Markets Report"
+    "Markets Report",
+    "SME Angle"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -243,6 +244,7 @@
     "money_follow|energy policy|SME Angle",
     "impact_on_citizens|Simbisa Brands|Explainer",
     "accountability|climate finance|Power Accountability",
-    "money_follow|Shadow AI|Markets Report"
+    "money_follow|Shadow AI|Markets Report",
+    "money_follow|Nairobi Securities Exchange|SME Angle"
   ]
 }
