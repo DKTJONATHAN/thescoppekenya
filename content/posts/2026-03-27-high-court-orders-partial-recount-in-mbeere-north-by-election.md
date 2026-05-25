@@ -1041,6 +1041,8 @@ High Court orders partial recount in Mbeere North by-electio is central to this 
 
 High Court orders partial recount in Mbeere North by-electio is central to this update for Kenyan readers.
 
+High Court orders partial recount in Mbeere North by-electio is central to this update for Kenyan readers.
+
 The High Court today, Friday, March 27, 2026, mandated a partial recount of ballots and election materials from the disputed 2025 Mbeere North by-election, where Leonard Wamuthende was initially declared the winner. This order presents a significant setback for the United Democratic Alliance (UDA).
 
 Court Mandates Scrutiny in Mbeere North Justice Richard Mwongo of the Embu High Court directed that the recount specifically target polling stations and ballot boxes where irregularities were reported, while dismissing broader allegations of voter bribery and tampering. The ruling highlighted the necessity for a limited scrutiny and recount of election materials, drawing on evidence presented by both parties and the District Returning Officer's (DRO) report.
