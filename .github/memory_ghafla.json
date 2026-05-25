@@ -217,10 +217,10 @@
     "574f381cd8c5907236db210f6c834db8",
     "a0ca43c38a0fa7e3cdf7f5655ede347f",
     "2190db46f580ad3ad3fa16e24cad411b",
-    "0fceac31252c1365ee7f806567ce82b3"
+    "0fceac31252c1365ee7f806567ce82b3",
+    "4b68b01b10740eab3c0457e46ba81f59"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Trend Take",
     "Receipts Piece",
     "Profile Beat",
@@ -249,7 +249,8 @@
     "Trend Take",
     "Reaction Round-up",
     "Hard News Lead",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Profile Beat"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -307,6 +308,7 @@
     "money_follow|Oga Obinna|Trend Take",
     "accountability|IPOA|Reaction Round-up",
     "money_follow|Jose Chameleone|Hard News Lead",
-    "myth_vs_fact|Forex trading|Receipts Piece"
+    "myth_vs_fact|Forex trading|Receipts Piece",
+    "accountability|National Police Service|Profile Beat"
   ]
 }
