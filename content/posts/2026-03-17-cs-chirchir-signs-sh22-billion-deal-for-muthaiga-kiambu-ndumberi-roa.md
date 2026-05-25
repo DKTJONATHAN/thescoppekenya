@@ -1017,6 +1017,8 @@ CS Chirchir signs Sh22 billion deal for Muthaiga-Kiambu-Ndum is central to this 
 
 CS Chirchir signs Sh22 billion deal for Muthaiga-Kiambu-Ndum is central to this update for Kenyan readers.
 
+CS Chirchir signs Sh22 billion deal for Muthaiga-Kiambu-Ndum is central to this update for Kenyan readers.
+
 Roads and Transport Cabinet Secretary Davis Chirchir on Tuesday oversaw the signing of a Sh22 billion Engineering, Procurement, and Construction (EPC) contract for the Muthaiga-Kiambu-Ndumberi Road. Stecol Corporation will construct the 23.5-kilometre dual carriageway, a key milestone for Nairobi-Kiambu connectivity.
 
 Sh22 Billion Muthaiga-Kiambu-Ndumberi Road Project Underway
