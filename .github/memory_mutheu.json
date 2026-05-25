@@ -195,10 +195,10 @@
     "7881ed1a4f7c0fa4f198d21debd43603",
     "8d084362dcc240b814b5a9ff2c549cd4",
     "9562e0442c733143f8d53c762f0a0bae",
-    "095edcf56c4b7f35ebec9a3ea86144e1"
+    "095edcf56c4b7f35ebec9a3ea86144e1",
+    "2f31ed2977e9c250cd7a5b0c19ca5a91"
   ],
   "style_history": [
-    "Explainer",
     "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
@@ -227,10 +227,10 @@
     "Reaction Round-up",
     "Hard News Lead",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "impact_on_citizens|Artificial Intelligence|Explainer",
     "impact_on_citizens|AMC|Profile Beat",
     "impact_on_citizens|Katy Perry|Reaction Round-up",
     "impact_on_citizens|film|Hard News Lead",
@@ -309,6 +309,7 @@
     "impact_on_citizens|Lena Dunham|Reaction Round-up",
     "winners_losers|The Mandalorian and Grogu|Hard News Lead",
     "myth_vs_fact|Outlander|Explainer",
-    "timeline_shift|television|Trend Take"
+    "timeline_shift|television|Trend Take",
+    "impact_on_citizens|Friends|Profile Beat"
   ]
 }
