@@ -151,10 +151,10 @@
     "cc96a7760dcdfd6d4dcdb006f4611f83",
     "71c84fac988fa7a0a1d81704ea03a8d7",
     "dda8ac9601ffad81432a484a523bef02",
-    "7be3384e3fca07391491264e9f687e36"
+    "7be3384e3fca07391491264e9f687e36",
+    "1f85bb6e0fb2429adea15b53180d2a27"
   ],
   "style_history": [
-    "Power Accountability",
     "Markets Report",
     "Backgrounder",
     "Explainer",
@@ -183,7 +183,8 @@
     "Power Accountability",
     "Markets Report",
     "SME Angle",
-    "Backgrounder"
+    "Backgrounder",
+    "Power Accountability"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -247,6 +248,7 @@
     "accountability|climate finance|Power Accountability",
     "money_follow|Shadow AI|Markets Report",
     "money_follow|Nairobi Securities Exchange|SME Angle",
-    "timeline_shift|Finance Bill 2026|Backgrounder"
+    "timeline_shift|Finance Bill 2026|Backgrounder",
+    "winners_losers|Finance Bill 2026|Power Accountability"
   ]
 }
