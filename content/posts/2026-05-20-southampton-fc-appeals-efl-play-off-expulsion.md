@@ -216,6 +216,8 @@ Southampton FC appeals EFL decision to expel club from play-offs is central to t
 
 Southampton FC appeals EFL decision to expel club from play-offs is central to this update for Kenyan readers.
 
+Southampton FC appeals EFL decision to expel club from play-offs is central to this update for Kenyan readers.
+
 ## The EFL’s Convenient Theater of Justice at St Mary's
 
 Southampton FC finds itself at the center of a performative execution. The EFL board, desperate to project an image of iron-fisted authority, has opted to eject the club from the Championship play-offs under the guise of maintaining competitive integrity. While the media wallows in predictable sentimentality regarding the players, the reality is far more clinical. This is not about the sanctity of the sport; it is about the EFL needing a sacrificial lamb to distract from its own long-standing regulatory failures.
