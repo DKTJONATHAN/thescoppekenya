@@ -128,10 +128,10 @@
     "2fc7c3c2ad4d30d55a2605798b527c27",
     "1ac30833df029ff6bf3e618cbeefa108",
     "b44564afea4e652ebd4858afa7921d1b",
-    "db0f101ec5551492c3b6ecab44f28f6d"
+    "db0f101ec5551492c3b6ecab44f28f6d",
+    "1767a2716c64f9c35959112f8f54ef52"
   ],
   "style_history": [
-    "Sharp Column",
     "Historical Lens",
     "Counterpoint",
     "Letter Form",
@@ -160,10 +160,10 @@
     "Sharp Column",
     "Counterpoint",
     "Letter Form",
-    "Personal Reflection"
+    "Personal Reflection",
+    "Historical Lens"
   ],
   "angle_history": [
-    "money_follow|economics|Sharp Column",
     "timeline_shift|Motherhood|Historical Lens",
     "accountability|Safaricom|Letter Form",
     "winners_losers|asthma|Counterpoint",
@@ -242,6 +242,7 @@
     "policy_gap|Senegal|Sharp Column",
     "policy_gap|food security|Counterpoint",
     "accountability|eTIMS|Letter Form",
-    "money_follow|World Bank|Personal Reflection"
+    "money_follow|World Bank|Personal Reflection",
+    "winners_losers|Vision 2030|Historical Lens"
   ]
 }
