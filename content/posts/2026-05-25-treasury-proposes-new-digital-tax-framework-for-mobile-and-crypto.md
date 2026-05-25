@@ -1,16 +1,20 @@
 ---
 title: "Treasury Proposes New Digital Tax Framework for Mobile and Crypto"
 slug: "treasury-proposes-new-digital-tax-framework-for-mobile-and-crypto"
-description: "Kenya Treasury introduces Finance Bill 2026 to consolidate mobile phone taxes and implement new reporting requirements for virtual asset service providers."
+description: "Treasury Proposes New Digital Tax Framework for Mobile and Crypto: Kenya Treasury introduces Finance Bill 2026 to consolidate mobile phone taxes and implement"
+excerpt: "Finance Bill 2026 and the Evolution of Digital Taxation Kenya is transitioning toward a refined fiscal model, shifting its focus from taxing"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://assets.kenyanwallstreet.com/assets/947d6d74-e618-4583-ae9f-566df586f597.jpeg"
 category: "Business"
 tags: ["kenya economy", "finance bill", "cryptocurrency", "mobile money", "taxation", "digital economy"]
+canonical: "https://zandani.co.ke/article/treasury-proposes-new-digital-tax-framework-for-mobile-and-crypto"
 date: "2026-05-25T15:28:34Z"
 dateModified: "2026-05-25T15:28:34Z"
+focusKeyword: "Treasury Proposes New Digital Tax Framework for Mobile and Crypto"
 schema: "NewsArticle"
 ---
+
+Treasury Proposes New Digital Tax Framework for Mobile and Crypto is central to this update for Kenyan readers.
 
 ## Finance Bill 2026 and the Evolution of Digital Taxation
 
@@ -39,3 +43,18 @@ The transition from taxing individual transactions to taxing the infrastructure 
 Stakeholders should monitor the specific technical requirements expected to follow the bill's passage. The development of direct integration APIs between the Kenya Revenue Authority and private sector payment processors will be the primary factor in determining how seamless this transition proves to be. If the Treasury successfully integrates these reporting layers without impeding transaction speeds, it will establish a durable blueprint for automated taxation. This model is likely to expand in the future to include other sectors, such as high-frequency cloud service providers and commercial data centers.
 
 The transition from visible, direct taxes to silent, automated extraction is underway. Success for the government will depend on the technical efficacy of these new digital interfaces and the ability of the private sector to accommodate these reporting standards within their existing infrastructure.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
