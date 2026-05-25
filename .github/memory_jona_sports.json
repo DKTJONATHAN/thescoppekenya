@@ -188,10 +188,10 @@
     "e6c53553a67f6b17decd8ba2f2af1da8",
     "9e5628dc6232cfe2dad530d451229ce0",
     "d4dcee28cd477af603c9e3da024aa141",
-    "dcb323ba5ca1fd286f49fcbf0ee4582b"
+    "dcb323ba5ca1fd286f49fcbf0ee4582b",
+    "0b3421dc2b1732607f5ed5f1a95f0939"
   ],
   "style_history": [
-    "Player Profile Beat",
     "Match Report",
     "Stat Story",
     "Cynical Pundit",
@@ -220,10 +220,10 @@
     "Tactical Take",
     "Stat Story",
     "Cynical Pundit",
-    "Player Profile Beat"
+    "Player Profile Beat",
+    "Match Report"
   ],
   "angle_history": [
-    "accountability|Scottish Premiership|Cynical Pundit",
     "timeline_shift|Celtic FC|Player Profile Beat",
     "money_follow|Scottish Premiership|Stat Story",
     "timeline_shift|Liverpool FC|Tactical Take",
@@ -302,6 +302,7 @@
     "winners_losers|Tottenham Hotspur|Tactical Take",
     "money_follow|Premier League|Stat Story",
     "myth_vs_fact|Premier League|Cynical Pundit",
-    "impact_on_citizens|FIFA World Cup|Player Profile Beat"
+    "impact_on_citizens|FIFA World Cup|Player Profile Beat",
+    "winners_losers|Notts County|Match Report"
   ]
 }
