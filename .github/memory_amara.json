@@ -176,10 +176,10 @@
     "5fe8e3adada8336e0cfdddcb8f9b39c3",
     "050ec87fdd5556a0f291191ebdfd269a",
     "eb42f0fa65114e8c10100cd23b0470a1",
-    "28bab7c1eb1ae950fc34d1f276b377ce"
+    "28bab7c1eb1ae950fc34d1f276b377ce",
+    "776862c3c434df569c6509106d4b7d4d"
   ],
   "style_history": [
-    "Hard News Lead",
     "Profile Beat",
     "Trend Take",
     "Explainer",
@@ -208,7 +208,8 @@
     "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -269,6 +270,7 @@
     "myth_vs_fact|Seun Kuti|Reaction Round-up",
     "money_follow|Nigerian celebrities|Profile Beat",
     "impact_on_citizens|BBNaija|Trend Take",
-    "accountability|insecurity|Explainer"
+    "accountability|insecurity|Explainer",
+    "money_follow|Ayo Oritsejafor|Hard News Lead"
   ]
 }
