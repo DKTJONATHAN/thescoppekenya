@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [World Cup squads confirmed ahead of final deadline](https://zandani.co.ke/article/world-cup-squads-confirmed-ahead-of-final-deadline) - World Cup Squad Farce: FIFA's Grip Tightens With the 2026 World Cup on the horizon, national federations are grudgingly confirming their 26-man squads. However, FIFA's rigid deadlines and opaque rules reveal a bureaucracy more concerned with control than...
 - [WIOCC Streamlines Infrastructure for Kenyan Internet Providers](https://zandani.co.ke/article/wiocc-streamlines-infrastructure-for-kenyan-internet-providers) - WIOCC offers an integrated wholesale model for ISPs in Kenya, consolidating subsea and fibre services to improve operational efficiency.
 - [NTSA Postpones eLogbook Training Sessions Over Eid-ul-Fitr Holiday](https://zandani.co.ke/article/ntsa-reschedules-elogbook-training-due-to-eid-ul-fitr-holiday) - The National Transport and Safety Authority has rescheduled its eLogbook virtual training sessions to May 29 due to the upcoming Eid-ul-Fitr public holiday.
 - [Samidoh and Edday Nderitu Spark Reconciliation Rumors](https://zandani.co.ke/article/samidoh-and-edday-nderitu-spark-reconciliation-rumors) - Mugithi star Samidoh and his wife Edday Nderitu have been spotted together, reigniting public interest in their relationship following his split from Karen Nyamu.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Treasury Proposes New Digital Tax Framework for Mobile and Crypto](https://zandani.co.ke/article/treasury-proposes-new-digital-tax-framework-for-mobile-and-crypto) - Kenya Treasury introduces Finance Bill 2026 to consolidate mobile phone taxes and implement new reporting requirements for virtual asset service providers.
 - [New biography explores Tippi Hedren claims about The Birds set](https://zandani.co.ke/article/biography-revisits-tippi-hedren-claims-about-the-birds-set) - New biography explores Tippi Hedren claims about The Birds set: A new book revisits the controversial filming of the attic scene in The Birds by comparing
 - [Kenyan Men Demand Higher Personal Hygiene and Lifestyle Standards for Potential Partners](https://zandani.co.ke/article/kenyan-men-demand-higher-personal-hygiene-and-lifestyle-standards-fo) - Kenyan men are advocating for higher personal hygiene and grooming standards for potential partners, citing their impact on modern dating viability.
-- [The Powder Keg's Ghost: A Scream 7 Ending Plot Twist](https://zandani.co.ke/article/the-powder-kegs-ghost-scream-7-ending-plot-twist) - The Powder Keg's Ghost: A Scream 7 Ending Plot Twist: In the smoke-filled alleys of a forgotten age, a desperate plot to reshape a kingdom mirrors a modern
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
