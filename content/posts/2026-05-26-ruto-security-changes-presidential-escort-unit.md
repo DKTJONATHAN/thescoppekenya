@@ -1,16 +1,20 @@
 ---
 title: "Changes in Presidential Escort Unit After Security Lapses"
 slug: "ruto-security-changes-presidential-escort-unit"
-description: "Recent security lapses during President William Ruto's public events have prompted a major leadership reshuffle within the Presidential Escort Unit."
+description: "Changes in Presidential Escort Unit After Security Lapses: Recent security lapses during President William Ruto's public events have prompted a major"
+excerpt: "Security Theater: Why a Change in Guard Won’t Save the State House The belief that the arrival of William Sawe will instantly secure the pre"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://cdn.radioafrica.digital/image/2026/05/577a1943-2f62-4e6e-911e-40803f6ac9fe.jpeg?1779778630809"
 category: "Opinions"
 tags: ["william ruto", "presidential escort unit", "kenya security", "vip protection", "national intelligence service", "kenya police"]
+canonical: "https://zandani.co.ke/article/ruto-security-changes-presidential-escort-unit"
 date: "2026-05-26T06:56:48Z"
 dateModified: "2026-05-26T06:56:48Z"
+focusKeyword: "Changes in Presidential Escort Unit After Security Lapses"
 schema: "NewsArticle"
 ---
+
+Changes in Presidential Escort Unit After Security Lapses is central to this update for Kenyan readers.
 
 ## Security Theater: Why a Change in Guard Won’t Save the State House
 
@@ -41,3 +45,18 @@ The safety of the President is the floor upon which national stability sits. In 
 ### What to watch next
 
 Keep a close eye on the President’s upcoming regional tours. If Sawe has the authority to enforce a genuine buffer zone and keep the President within the safety of his motorcade, there may be a shift toward professionalism. However, if the "Hustler" brand continues to demand unscripted dives into the masses, we will know that Sawe is merely a figurehead. The true test of the new commander is not his resume, but his willingness to tell the President "no" for the sake of the state. Until the President accepts the cage of his own protection, the State House remains a house of glass.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
