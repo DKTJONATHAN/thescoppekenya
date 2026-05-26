@@ -480,7 +480,11 @@ jobs:
                   "- Do NOT echo whole sentences from the source. Reframe everything.\n"
                   f"- Banned phrases: {', '.join(BANNED_PHRASES)}.\n"
                   "- Deliver a distinct angle, not a source paraphrase.\n"
-                  "- Include a short \"Why it matters now\" section and a \"What to watch next\" section.\n"
+                  "- Start with a short H2 that is a fresh hook, not an echo of the SEO title.\n"
+                  "- The opening paragraph must add a new fact or angle, not repeat the title, excerpt, or first eight words of the title.\n"
+                  "- Do not repeat the headline in the first paragraph or use a templated summary block.\n"
+                  "- Each paragraph must add new information; never restate the previous paragraph.\n"
+                  "- Keep the article body focused on the story itself. Do not add FAQ blocks, Search-ready summary blocks, reader-impact sections, or generic wrap-up labels.\n"
                   "- Use angle_plan.must_include naturally and respect angle_plan.avoid.\n"
               )
               return gemini_call(prompt, "write")
@@ -534,7 +538,7 @@ jobs:
           print(f"Style chosen: {style['name']}")
           angle_plan = stage_angle(brief, style, memory.get("angle_history", [])) or {}
           if not angle_plan:
-              angle_plan = {"angle_title":"Reader impact focus","frame":"impact_on_citizens","why_unique":"Fallback angle to emphasize consequences","reader_value":"Makes implications concrete","must_include":["Why it matters now","What to watch next"],"avoid":["copying source structure"]}
+              angle_plan = {"angle_title":"Reader impact focus","frame":"impact_on_citizens","why_unique":"Fallback angle to emphasize consequences","reader_value":"Makes implications concrete","must_include":["one clear development beat","one forward-looking consequence"],"avoid":["copying source structure","FAQ blocks","generic wrap-up labels"]}
           print(f"Angle chosen: {angle_plan.get('frame','n/a')} | {angle_plan.get('angle_title','n/a')}")
 
           article_md = stage_write(brief, seo, style, angle_plan, get_internal_links())

@@ -69,6 +69,83 @@ const AUTHOR_COLORS: Record<string, string> = {
 // ─── AD TYPES CYCLE ───────────────────────────────────────────────────────────
 const adTypes: Array<'inarticle' | 'effectivegate' | 'horizontal'> = ['inarticle', 'effectivegate', 'horizontal'];
 
+function normalizeArticleLabel(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/[*_`~:#()-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function stripArticleBoilerplateText(content: string): string {
+  if (!content) return content;
+
+  const boilerplateLabels = new Set([
+    "faq",
+    "faqs",
+    "frequently asked questions",
+    "why it matters now",
+    "what to watch next",
+    "search-ready summary",
+    "search ready summary",
+  ]);
+
+  const lines = content.split("\n");
+  const cleaned: string[] = [];
+  let skipping = false;
+  let skipLevel = 0;
+
+  for (const line of lines) {
+    const headingMatch = line.match(/^(#{1,6})\s+(.*)$/);
+
+    if (skipping) {
+      if (headingMatch && headingMatch[1].length <= skipLevel) {
+        skipping = false;
+      } else {
+        continue;
+      }
+    }
+
+    const label = headingMatch ? normalizeArticleLabel(headingMatch[2]) : normalizeArticleLabel(line);
+
+    if (
+      boilerplateLabels.has(label) ||
+      /^reader impact\s+explain the practical effect on the audience without turning it into a faq\.?$/i.test(label) ||
+      /^include a short .*why it matters now.*what to watch next.*$/i.test(label) ||
+      /^search[- ]ready summary$/i.test(label)
+    ) {
+      skipping = true;
+      skipLevel = headingMatch ? headingMatch[1].length : 6;
+      continue;
+    }
+
+    cleaned.push(line);
+  }
+
+  return cleaned.join("\n").replace(/\n{3,}/g, "\n\n").trim();
+}
+
+function stripArticleBoilerplateHtml(html: string): string {
+  if (!html) return html;
+
+  let cleaned = html;
+  const sectionPatterns = [
+    /<h([1-6])[^>]*>\s*(?:why it matters now|what to watch next|faq(?:s)?|frequently asked questions)\s*<\/h\1>\s*[\s\S]*?(?=<h[1-6]\b|$)/gi,
+    /<h([1-6])[^>]*>\s*search[- ]ready summary\s*<\/h\1>\s*[\s\S]*?(?=<h[1-6]\b|$)/gi,
+    /<p[^>]*>\s*reader impact:\s*explain the practical effect on the audience without turning it into a faq\.?\s*<\/p>/gi,
+    /<li[^>]*>\s*reader impact:\s*explain the practical effect on the audience without turning it into a faq\.?\s*<\/li>/gi,
+    /<p[^>]*>\s*include a short .*why it matters now.*what to watch next.*?<\/p>/gi,
+    /<li[^>]*>\s*include a short .*why it matters now.*what to watch next.*?<\/li>/gi,
+    /<p[^>]*>\s*search[- ]ready summary\s*<\/p>/gi,
+  ];
+
+  sectionPatterns.forEach((pattern) => {
+    cleaned = cleaned.replace(pattern, "");
+  });
+
+  return cleaned.replace(/\n{3,}/g, "\n\n").trim();
+}
+
 export default function ArticlePage() {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
@@ -192,10 +269,13 @@ export default function ArticlePage() {
     window.open(`https://wa.me/?text=${encodeURIComponent(post?.title + " " + shareUrl)}`, "_blank");
   }, [post?.title, shareUrl]);
 
+  const cleanedHtml = useMemo(() => stripArticleBoilerplateHtml(post?.htmlContent || ""), [post?.htmlContent]);
+  const cleanedText = useMemo(() => stripArticleBoilerplateText(post?.content || ""), [post?.content]);
+
   // ── Weave internal links from same-category posts into the HTML ──
   const wovenHtml = useMemo(() => {
-    if (!post?.htmlContent) return '';
-    let html = post.htmlContent;
+    if (!cleanedHtml) return '';
+    let html = cleanedHtml;
     if (!sameCategoryLinks.length) return html;
 
     // Stop-words we never want to anchor
@@ -265,7 +345,7 @@ export default function ArticlePage() {
       }
     }
     return html;
-  }, [post?.htmlContent, sameCategoryLinks]);
+  }, [cleanedHtml, sameCategoryLinks]);
 
   // ── Content with ads injected every 3 paragraphs ──
   const contentWithAds = useMemo(() => {
@@ -394,10 +474,10 @@ export default function ArticlePage() {
     },
     "keywords": post.tags.join(", "),
     "articleSection": post.category,
-    "articleBody": post.content?.substring(0, 500),
+    "articleBody": cleanedText.substring(0, 500),
     "inLanguage": "en-KE",
     "isAccessibleForFree": true,
-    "wordCount": wordCount(post.htmlContent || ""),
+    "wordCount": wordCount(cleanedHtml || ""),
     "speakable": {
       "@type": "SpeakableSpecification",
       "cssSelector": [".article-headline", ".article-excerpt"],

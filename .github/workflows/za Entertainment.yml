@@ -306,12 +306,35 @@ jobs:
                                       for p in soup.find_all("p")
                                       if len(p.get_text(strip=True)) > 30)
 
+              def absolutize(raw_url):
+                  if not raw_url:
+                      return ""
+                  raw_url = str(raw_url).strip()
+                  if raw_url.startswith("//"):
+                      return "https:" + raw_url
+                  if raw_url.startswith("/"):
+                      return urllib.parse.urljoin(url, raw_url)
+                  return raw_url
+
               img = ""
               for m in soup.find_all("meta"):
                   prop = m.get("property") or m.get("name") or ""
-                  if prop in ("og:image","twitter:image"):
-                      img = m.get("content","")
-                      if img: break
+                  if prop in ("og:image","og:image:secure_url","twitter:image","twitter:image:src"):
+                      img = absolutize(m.get("content",""))
+                      if img:
+                          break
+              if not img:
+                  for selector in ("article img", "main article img", "figure img", "[class*='article'] img", "[class*='content'] img"):
+                      candidate = soup.select_one(selector)
+                      if candidate:
+                          img = absolutize(
+                              candidate.get("data-src")
+                              or candidate.get("data-original")
+                              or candidate.get("src")
+                              or candidate.get("data-lazy-src")
+                          )
+                          if img:
+                              break
 
               return text, img, title
 
@@ -451,7 +474,11 @@ jobs:
                   "- Do NOT echo whole sentences from the source. Reframe everything.\n"
                   f"- Banned phrases: {', '.join(BANNED_PHRASES)}.\n"
                   "- Deliver a distinct angle, not a source paraphrase.\n"
-                  "- Include a short \"Why it matters now\" section and a \"What to watch next\" section.\n"
+                  "- Start with a short H2 that is a fresh hook, not an echo of the SEO title.\n"
+                  "- The opening paragraph must add a new fact or angle, not repeat the title, excerpt, or first eight words of the title.\n"
+                  "- Do not repeat the headline in the first paragraph or use a templated summary block.\n"
+                  "- Each paragraph must add new information; never restate the previous paragraph.\n"
+                  "- Keep the article body focused on the story itself. Do not add FAQ blocks, Search-ready summary blocks, reader-impact sections, or generic wrap-up labels.\n"
                   "- Use angle_plan.must_include naturally and respect angle_plan.avoid.\n"
               )
               return gemini_call(prompt, "write")
@@ -505,7 +532,7 @@ jobs:
           print(f"Style chosen: {style['name']}")
           angle_plan = stage_angle(brief, style, memory.get("angle_history", [])) or {}
           if not angle_plan:
-              angle_plan = {"angle_title":"Reader impact focus","frame":"impact_on_citizens","why_unique":"Fallback angle to emphasize consequences","reader_value":"Makes implications concrete","must_include":["Why it matters now","What to watch next"],"avoid":["copying source structure"]}
+              angle_plan = {"angle_title":"Reader impact focus","frame":"impact_on_citizens","why_unique":"Fallback angle to emphasize consequences","reader_value":"Makes implications concrete","must_include":["one clear development beat","one forward-looking consequence"],"avoid":["copying source structure","FAQ blocks","generic wrap-up labels"]}
           print(f"Angle chosen: {angle_plan.get('frame','n/a')} | {angle_plan.get('angle_title','n/a')}")
 
           article_md = stage_write(brief, seo, style, angle_plan, get_internal_links())

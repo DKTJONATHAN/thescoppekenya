@@ -488,7 +488,11 @@ jobs:
                   "- Do NOT echo whole sentences from the source. Reframe everything.\n"
                   f"- Banned phrases: {', '.join(BANNED_PHRASES)}.\n"
                   "- Deliver a distinct angle, not a source paraphrase.\n"
-                  "- Include a short \"Why it matters now\" section and a \"What to watch next\" section.\n"
+                  "- Start with a short H2 that is a fresh hook, not an echo of the SEO title.\n"
+                  "- The opening paragraph must add a new fact or angle, not repeat the title, excerpt, or first eight words of the title.\n"
+                  "- Do not repeat the headline in the first paragraph or use a templated summary block.\n"
+                  "- Each paragraph must add new information; never restate the previous paragraph.\n"
+                  "- Keep the article body focused on the story itself. Do not add FAQ blocks, Search-ready summary blocks, reader-impact sections, or generic wrap-up labels.\n"
                   "- Use angle_plan.must_include naturally and respect angle_plan.avoid.\n"
               )
               return gemini_call(prompt, "write")
@@ -501,9 +505,11 @@ jobs:
                   f"SOURCE:\n{source_text[:6000]}\n\n"
                   "Scoring rubric (1=excellent, 10=worst):\n"
                   "- source_similarity: how much it mirrors source phrasing.\n"
-                  "- house_style_repetition: repeated stock phrases or cliches.\n"
+                  "- house_style_repetition: repeated stock phrases, summary blocks, or cliches.\n"
+                  "- title_lede_repetition: how much the H2 and opening paragraph repeat the title, excerpt, or snippet.\n"
+                  "- opening_redundancy: whether the first two paragraphs restate each other or the intro is padded.\n"
                   "- voice_variety: 1=flat monotone, 10=rich varied voice. NOTE: HIGHER IS BETTER for this one.\n\n"
-                  'Return JSON: {"source_similarity":N,"house_style_repetition":N,"voice_variety":N,"notes":"short"}'
+                  'Return JSON: {"source_similarity":N,"house_style_repetition":N,"title_lede_repetition":N,"opening_redundancy":N,"voice_variety":N,"notes":"short"}'
               )
               return parse_json_safely(gemini_call(prompt, "review", json_mode=True))
 
@@ -516,9 +522,11 @@ jobs:
                   "Hard rules:\n"
                   "- Reduce source mirroring. Reframe sentence structure.\n"
                   "- Remove repeated stock phrases and cliches.\n"
+                  "- Remove repeated title, snippet, and first-paragraph echoes.\n"
                   "- Vary sentence length and rhythm.\n"
                   "- Keep H2 + standfirst + H3 structure.\n"
                   "- No HTML, no frontmatter, no byline, no em-dashes.\n"
+                  "- Remove Search-ready summary blocks and FAQ-style sections.\n"
                   "- 550 to 750 words.\n"
                   "Return only the rewritten Markdown."
               )
@@ -569,7 +577,7 @@ jobs:
           print(f"Style chosen: {style['name']}")
           angle_plan = stage_angle(brief, style, memory.get("angle_history", [])) or {}
           if not angle_plan:
-              angle_plan = {"angle_title":"Reader impact focus","frame":"impact_on_citizens","why_unique":"Fallback angle to emphasize consequences","reader_value":"Makes implications concrete","must_include":["Why it matters now","What to watch next"],"avoid":["copying source structure"]}
+              angle_plan = {"angle_title":"Reader impact focus","frame":"impact_on_citizens","why_unique":"Fallback angle to emphasize consequences","reader_value":"Makes implications concrete","must_include":["one clear development beat","one forward-looking consequence"],"avoid":["copying source structure","FAQ blocks","generic wrap-up labels"]}
           print(f"Angle chosen: {angle_plan.get('frame','n/a')} | {angle_plan.get('angle_title','n/a')}")
 
           # Stage 3
@@ -582,16 +590,18 @@ jobs:
           review = stage_review(article_md, chosen_text) or {}
           sim  = int(review.get("source_similarity", 0) or 0)
           rep  = int(review.get("house_style_repetition", 0) or 0)
+          tlede = int(review.get("title_lede_repetition", 0) or 0)
+          openr = int(review.get("opening_redundancy", 0) or 0)
           voc  = int(review.get("voice_variety", 10) or 10)
-          print(f"Review: sim={sim} rep={rep} voice={voc} notes={review.get('notes','')}")
-          if sim >= 7 or rep >= 7 or voc <= 4:
+          print(f"Review: sim={sim} rep={rep} tlede={tlede} open={openr} voice={voc} notes={review.get('notes','')}")
+          if sim >= 7 or rep >= 7 or tlede >= 7 or openr >= 7 or voc <= 4:
               print("Triggering rewrite")
               rewritten = stage_rewrite(article_md, review, style)
               if rewritten and len(rewritten) > 400:
                   article_md = rewritten
 
           # Soft uniqueness retry: never block publishing
-          if sim >= 8:
+          if sim >= 8 or tlede >= 8 or openr >= 8:
               alt_recent = memory.get("angle_history", []) + [angle_plan.get("frame", "")]
               alt_angle = stage_angle(brief, style, alt_recent) or angle_plan
               alt_md = stage_write(brief, seo, style, alt_angle, get_internal_links())
