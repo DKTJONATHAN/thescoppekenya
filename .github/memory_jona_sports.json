@@ -192,10 +192,10 @@
     "0b3421dc2b1732607f5ed5f1a95f0939",
     "f55ec542dff0fbd48fe75bdca2094a07",
     "abc03ecdec6adac86732a3d519adfe4a",
-    "263c8e95aaef21af3e40a8796180f7e0"
+    "263c8e95aaef21af3e40a8796180f7e0",
+    "aa7dd1f27e29160bc510509db4872f32"
   ],
   "style_history": [
-    "Tactical Take",
     "Match Report",
     "Player Profile Beat",
     "Cynical Pundit",
@@ -224,10 +224,10 @@
     "Match Report",
     "Stat Story",
     "Tactical Take",
-    "Cynical Pundit"
+    "Cynical Pundit",
+    "Player Profile Beat"
   ],
   "angle_history": [
-    "accountability|Stockport County|Cynical Pundit",
     "impact_on_citizens|VAR|Match Report",
     "impact_on_citizens|Football|Player Profile Beat",
     "myth_vs_fact|FA Youth Cup|Stat Story",
@@ -306,6 +306,7 @@
     "winners_losers|Notts County|Match Report",
     "impact_on_citizens|League Cup|Stat Story",
     "accountability|Premier League|Tactical Take",
-    "accountability|Premier League|Cynical Pundit"
+    "accountability|Premier League|Cynical Pundit",
+    "winners_losers|fixture congestion|Player Profile Beat"
   ]
 }
