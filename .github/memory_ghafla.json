@@ -220,10 +220,10 @@
     "0fceac31252c1365ee7f806567ce82b3",
     "4b68b01b10740eab3c0457e46ba81f59",
     "4904322def7a797fd1b18d06690011b4",
-    "632a251f61bac7264ce0c855ef1f4c49"
+    "632a251f61bac7264ce0c855ef1f4c49",
+    "b2e70208feaa0c5d69a6e05c826c75d7"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
@@ -252,7 +252,8 @@
     "Receipts Piece",
     "Profile Beat",
     "Trend Take",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Receipts Piece"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -313,6 +314,7 @@
     "myth_vs_fact|Forex trading|Receipts Piece",
     "accountability|National Police Service|Profile Beat",
     "winners_losers|Samidoh|Trend Take",
-    "winners_losers|Kenyan Politics|Reaction Round-up"
+    "winners_losers|Kenyan Politics|Reaction Round-up",
+    "policy_gap|transgender|Receipts Piece"
   ]
 }
