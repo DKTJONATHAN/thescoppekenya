@@ -1,16 +1,20 @@
 ---
 title: "Kenya Proposes Unified Data Governance Policy for National Asset"
 slug: "kenya-drafts-national-data-governance-policy"
-description: "Kenya's new draft data governance policy seeks to unify standards across public and private sectors, designating data as a national asset to streamline services and manage cross-border transfers effectively."
+description: "Kenya Proposes Unified Data Governance Policy for National Asset: Kenya's new draft data governance policy seeks to unify standards across public and private"
+excerpt: "Kenya National Data Governance Policy Framework The Ministry of Information, Communications, and the Digital Economy has unveiled a draft po"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://techweez.com/wp-content/uploads/2026/05/kenya-data-governance-policy-draft-2026.webp"
 category: "Technology"
 tags: ["data governance", "digital economy", "kenya ICT", "data privacy", "national policy", "government services"]
+canonical: "https://zandani.co.ke/article/kenya-drafts-national-data-governance-policy"
 date: "2026-05-26T14:12:13Z"
 dateModified: "2026-05-26T14:12:13Z"
+focusKeyword: "Kenya Proposes Unified Data Governance Policy for National Asset"
 schema: "NewsArticle"
 ---
+
+Kenya Proposes Unified Data Governance Policy for National Asset is central to this update for Kenyan readers.
 
 ## Kenya National Data Governance Policy Framework
 
@@ -45,3 +49,18 @@ This policy represents a fundamental shift in how the state views its relationsh
 ### What to watch next
 
 Following the June 5 deadline for public submissions, the ministry will enter a synthesis phase to incorporate feedback into a final policy white paper. This updated document is expected to be presented to the cabinet by mid-July 2026. Once approved at the executive level, the policy will serve as the basis for new legislation that could be introduced in Parliament during the next session. Observers should watch for the announcement of specific transition periods for private companies to align their existing cloud and data storage practices with the new national standards.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
