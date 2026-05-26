@@ -1056,6 +1056,8 @@ Government Increases Per-Learner School Capitation to Ksh 23 is central to this 
 
 Government Increases Per-Learner School Capitation to Ksh 23 is central to this update for Kenyan readers.
 
+Government Increases Per-Learner School Capitation to Ksh 23 is central to this update for Kenyan readers.
+
 ## The Capitation Math: Decoding the Ksh 920 Leap in School Funding
 
 The Kenyan Ministry of Education has finally moved to adjust the per-learner capitation from Ksh 1,420 to Ksh 2,340. While the headline figure suggests a significant cash injection, a granular audit reveals the reality of whether this covers operational inflation or merely masks a deep-seated deficit.
