@@ -269,10 +269,10 @@
     "73e35bd11b2a946fae72391e0deb213f",
     "2073dd09a84439f6ead529865c127619",
     "8ada5c2400329b360312d0d1e55a3074",
-    "5a3eb91785c4a1565150b87cf0a07c1c"
+    "5a3eb91785c4a1565150b87cf0a07c1c",
+    "3cd1e817eb7420693be8dbafef50a04e"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Receipts Piece",
     "Profile Beat",
     "Hard News Lead",
@@ -301,10 +301,10 @@
     "Receipts Piece",
     "Profile Beat",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Trend Take"
   ],
   "angle_history": [
-    "money_follow|entertainment|Reaction Round-up",
     "winners_losers|Kenya|Trend Take",
     "accountability|Pascal Tokodi|Profile Beat",
     "myth_vs_fact|Diana Marua|Receipts Piece",
@@ -383,6 +383,7 @@
     "money_follow|gender-based violence|Receipts Piece",
     "winners_losers|Mugithi|Profile Beat",
     "next_48_hours|AI-generated images|Reaction Round-up",
-    "accountability|situationship|Hard News Lead"
+    "accountability|situationship|Hard News Lead",
+    "myth_vs_fact|Influencer|Trend Take"
   ]
 }
