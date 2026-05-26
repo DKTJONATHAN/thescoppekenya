@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [PFA blames fixture congestion for Foden and Palmer England snub](https://zandani.co.ke/article/foden-palmer-england-world-cup-omission-fixture-congestion) - Maheta Molango attributes the exclusion of Phil Foden and Cole Palmer from the England squad to performance declines caused by an overloaded schedule.
 - [Jose Mourinho returns to Real Madrid as Rudiger extends contract and club targets Chelsea pair](https://zandani.co.ke/article/jose-mourinho-returns-to-real-madrid-as-rudiger-extends-contract-and) - Real Madrid's Mourinho Gamble and Chelsea's Implosion Real Madrid’s desperate lunge for Jose Mourinho and a mere Rudiger extension exposes a club devoid of fresh ideas, clinging to faded glory. Concurrently, Chelsea's chaotic fire sale of Enzo Fernandez and...
 - [Kenya Targets Ksh100 Billion Green Bonds for Agriculture](https://zandani.co.ke/article/kenya-targets-ksh100-billion-green-bonds-for-agriculture) - Kenya Targets Ksh100 Billion Green Bonds for Agriculture: The Kenyan government plans to raise Ksh100 billion through green bonds to finance sustainable
 - [Manchester City Lead Race for Nottingham Forest Star Elliot Anderson](https://zandani.co.ke/article/manchester-city-lead-elliot-anderson-transfer-race) - Manchester City Lead Race for Nottingham Forest Star Elliot Ander: Manchester City emerges as the favorite to sign Nottingham Forest midfielder Elliot Anderson
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Kelvin Kinuthia explains why he moves houses frequently](https://zandani.co.ke/article/kelvin-kinuthia-explains-frequent-house-moving) - Kelvin Kinuthia explains why he moves houses frequently: Kenyan content creator Kelvin Kinuthia says he moves houses frequently due to neighborhood discomfort,
 - [Liverpool Points Drop After Record 415 Million Transfer Window](https://zandani.co.ke/article/liverpool-transfer-record-points-drop-champions-league) - Liverpool Points Drop After Record 415 Million Transfer Window: Liverpool struggled with a major points drop after spending 415 million pounds. Key injuries to
 - [Family Bank Posts KSh 1.6 Billion Profit Ahead of NSE Listing](https://zandani.co.ke/article/family-bank-record-profit-nse-listing-prep) - Family Bank Posts KSh 1.6 Billion Profit Ahead of NSE Listing: Family Bank reports a 52 percent rise in quarterly profit to KSh 1.6 billion. The lender is
-- [Kate Henshaw Clarifies Relationship with Genevieve Nnaji](https://zandani.co.ke/article/kate-henshaw-genevieve-nnaji-friendship-clarification) - Kate Henshaw Clarifies Relationship with Genevieve Nnaji: Nollywood actress Kate Henshaw opens up about her friendship with Genevieve Nnaji, explaining their
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml

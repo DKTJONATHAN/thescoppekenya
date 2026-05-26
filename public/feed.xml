@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Tue, 26 May 2026 20:09:49 GMT</pubDate>
+    <pubDate>Tue, 26 May 2026 20:48:24 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[PFA blames fixture congestion for Foden and Palmer England snub]]></title>
+      <link>https://zandani.co.ke/article/foden-palmer-england-world-cup-omission-fixture-congestion</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/foden-palmer-england-world-cup-omission-fixture-congestion</guid>
+      <pubDate>Tue, 26 May 2026 20:26:31 GMT</pubDate>
+      <dc:creator><![CDATA[Jona Munyi]]></dc:creator>
+      <description><![CDATA[Maheta Molango attributes the exclusion of Phil Foden and Cole Palmer from the England squad to performance declines caused by an overloaded schedule.]]></description>
+      <enclosure url="https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/3bed/live/071225b0-5933-11f1-869b-2bb2bbc8687d.jpg" type="image/jpeg" />
+      <media:content url="https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/3bed/live/071225b0-5933-11f1-869b-2bb2bbc8687d.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/3bed/live/071225b0-5933-11f1-869b-2bb2bbc8687d.jpg" alt="PFA blames fixture congestion for Foden and Palmer England snub" /><p>Maheta Molango attributes the exclusion of Phil Foden and Cole Palmer from the England squad to performance declines caused by an overloaded schedule.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Jose Mourinho returns to Real Madrid as Rudiger extends contract and club targets Chelsea pair]]></title>
       <link>https://zandani.co.ke/article/jose-mourinho-returns-to-real-madrid-as-rudiger-extends-contract-and</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://cdn.radioafrica.digital/image/2026/05/ff7dc79f-f4bc-4a36-ad87-2ed12dccceba.jpg?1779621707076" type="image/jpeg" />
       <media:content url="https://cdn.radioafrica.digital/image/2026/05/ff7dc79f-f4bc-4a36-ad87-2ed12dccceba.jpg?1779621707076" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://cdn.radioafrica.digital/image/2026/05/ff7dc79f-f4bc-4a36-ad87-2ed12dccceba.jpg?1779621707076" alt="Jacky Vike reveals why she learned Akorino hymns as a teenager" /><p>Jacky Vike reveals why she learned Akorino hymns as a teenager: Actress Jacky Vike shared a personal story about learning traditional Akorino religious music</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[EFL Confirms Josh Smith as Referee for League One Play-off Final]]></title>
-      <link>https://zandani.co.ke/article/josh-smith-appointed-referee-for-league-one-play-off-final</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/josh-smith-appointed-referee-for-league-one-play-off-final</guid>
-      <pubDate>Sun, 24 May 2026 11:43:28 GMT</pubDate>
-      <dc:creator><![CDATA[Jona Munyi]]></dc:creator>
-      <description><![CDATA[EFL Confirms Josh Smith as Referee for League One Play-off Final: The EFL has appointed Josh Smith to referee the League One play-off final at Wembley Stadium,]]></description>
-      <enclosure url="https://static.files.bbci.co.uk/core/website/assets/static/sport/images/metadata/poster-1024x576.146fae5646.png" type="image/jpeg" />
-      <media:content url="https://static.files.bbci.co.uk/core/website/assets/static/sport/images/metadata/poster-1024x576.146fae5646.png" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://static.files.bbci.co.uk/core/website/assets/static/sport/images/metadata/poster-1024x576.146fae5646.png" alt="EFL Confirms Josh Smith as Referee for League One Play-off Final" /><p>EFL Confirms Josh Smith as Referee for League One Play-off Final: The EFL has appointed Josh Smith to referee the League One play-off final at Wembley Stadium,</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
