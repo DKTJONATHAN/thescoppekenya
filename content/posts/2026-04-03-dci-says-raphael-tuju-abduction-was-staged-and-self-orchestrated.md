@@ -1075,6 +1075,8 @@ DCI says Raphael Tuju abduction was staged and self-orchestr is central to this 
 
 DCI says Raphael Tuju abduction was staged and self-orchestr is central to this update for Kenyan readers.
 
+DCI says Raphael Tuju abduction was staged and self-orchestr is central to this update for Kenyan readers.
+
 The Directorate of Criminal Investigations (DCI) announced today, Friday, April 3, that the reported disappearance of former Cabinet Secretary Raphael Tuju was a staged and self-orchestrated incident. This conclusion follows extensive investigations, with findings from CCTV footage and witness accounts directly contradicting earlier claims of an abduction.
 
 DCI Concludes Tuju's Disappearance Was Staged
