@@ -201,10 +201,10 @@
     "742734b7d2197a1a75e027920426b163",
     "4ffd9b084dcbb9d2125a4d9cc1e3d9be",
     "6c833274533f40f3551638c5bf6ab546",
-    "834fa7b2de9cc72fdcee5cb6d8780e13"
+    "834fa7b2de9cc72fdcee5cb6d8780e13",
+    "ec2092b50bee71c6a6e62c4afae0a725"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
     "Profile Beat",
@@ -233,10 +233,10 @@
     "Reaction Round-up",
     "Explainer",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Profile Beat"
   ],
   "angle_history": [
-    "winners_losers|Good Omens|Reaction Round-up",
     "policy_gap|Margaret Cho|Explainer",
     "accountability|The Bachelorette|Hard News Lead",
     "accountability|television history|Trend Take",
@@ -315,6 +315,7 @@
     "winners_losers|television|Reaction Round-up",
     "accountability|Star Wars|Explainer",
     "timeline_shift|Bring It On: All or Nothing|Trend Take",
-    "next_48_hours|American Music Awards|Hard News Lead"
+    "next_48_hours|American Music Awards|Hard News Lead",
+    "myth_vs_fact|autograph-signing|Profile Beat"
   ]
 }
