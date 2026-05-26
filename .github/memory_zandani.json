@@ -268,10 +268,10 @@
     "3366de4fb3052246576a7e3afe796131",
     "73e35bd11b2a946fae72391e0deb213f",
     "2073dd09a84439f6ead529865c127619",
-    "8ada5c2400329b360312d0d1e55a3074"
+    "8ada5c2400329b360312d0d1e55a3074",
+    "5a3eb91785c4a1565150b87cf0a07c1c"
   ],
   "style_history": [
-    "Trend Take",
     "Reaction Round-up",
     "Receipts Piece",
     "Profile Beat",
@@ -300,10 +300,10 @@
     "Hard News Lead",
     "Receipts Piece",
     "Profile Beat",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "policy_gap|Africa Forward Summit|Hard News Lead",
     "money_follow|entertainment|Reaction Round-up",
     "winners_losers|Kenya|Trend Take",
     "accountability|Pascal Tokodi|Profile Beat",
@@ -382,6 +382,7 @@
     "policy_gap|Kenya|Hard News Lead",
     "money_follow|gender-based violence|Receipts Piece",
     "winners_losers|Mugithi|Profile Beat",
-    "next_48_hours|AI-generated images|Reaction Round-up"
+    "next_48_hours|AI-generated images|Reaction Round-up",
+    "accountability|situationship|Hard News Lead"
   ]
 }
