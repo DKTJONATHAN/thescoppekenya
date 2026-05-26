@@ -190,10 +190,10 @@
     "d4dcee28cd477af603c9e3da024aa141",
     "dcb323ba5ca1fd286f49fcbf0ee4582b",
     "0b3421dc2b1732607f5ed5f1a95f0939",
-    "f55ec542dff0fbd48fe75bdca2094a07"
+    "f55ec542dff0fbd48fe75bdca2094a07",
+    "abc03ecdec6adac86732a3d519adfe4a"
   ],
   "style_history": [
-    "Stat Story",
     "Cynical Pundit",
     "Tactical Take",
     "Match Report",
@@ -222,10 +222,10 @@
     "Cynical Pundit",
     "Player Profile Beat",
     "Match Report",
-    "Stat Story"
+    "Stat Story",
+    "Tactical Take"
   ],
   "angle_history": [
-    "money_follow|Scottish Premiership|Stat Story",
     "timeline_shift|Liverpool FC|Tactical Take",
     "accountability|Stockport County|Cynical Pundit",
     "impact_on_citizens|VAR|Match Report",
@@ -304,6 +304,7 @@
     "myth_vs_fact|Premier League|Cynical Pundit",
     "impact_on_citizens|FIFA World Cup|Player Profile Beat",
     "winners_losers|Notts County|Match Report",
-    "impact_on_citizens|League Cup|Stat Story"
+    "impact_on_citizens|League Cup|Stat Story",
+    "accountability|Premier League|Tactical Take"
   ]
 }
