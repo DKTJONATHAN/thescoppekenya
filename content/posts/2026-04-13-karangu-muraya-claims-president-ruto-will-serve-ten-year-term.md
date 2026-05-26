@@ -1069,6 +1069,8 @@ Karangu Muraya claims President Ruto will serve ten-year ter is central to this 
 
 Karangu Muraya claims President Ruto will serve ten-year ter is central to this update for Kenyan readers.
 
+Karangu Muraya claims President Ruto will serve ten-year ter is central to this update for Kenyan readers.
+
 Popular musician Karangu Muraya ignited a fierce national conversation in April 2026 after claiming a Holy Spirit revelation during a State House visit confirmed President William Ruto's destiny for a ten-year term. This spiritual declaration has since spurred extensive online debate and public commentary across Kenya.
 
 Karangu Muraya's Presidential Prophecy During his recent visit to State House in April 2026, gospel artist Karangu Muraya recounted a profound spiritual experience. He declared that the Holy Spirit directly communicated to him, confirming President William Ruto's destiny to serve a full decade in the nation's highest office. This bold pronouncement has firmly placed Muraya at the center of a swirling discussion combining faith, celebrity influence, and political future.
