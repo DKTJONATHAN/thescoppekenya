@@ -121,10 +121,10 @@
     "c0ffbc3e8e52f4c007f283bdbfef0262",
     "ef1561fd53858af25c608772dc0b7797",
     "0d7c38c200b812b5ac24415baf7034d8",
-    "5be7fe2a92964a480add27ee5365551c"
+    "5be7fe2a92964a480add27ee5365551c",
+    "4ec72acfa8916c8270176c487eaca7e0"
   ],
   "style_history": [
-    "Backgrounder",
     "Hard News Lead",
     "Critical Take",
     "Africa Angle",
@@ -153,7 +153,8 @@
     "Backgrounder",
     "Critical Take",
     "Africa Angle",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -193,6 +194,7 @@
     "money_follow|electric vehicles|Backgrounder",
     "policy_gap|Equity Bank|Critical Take",
     "timeline_shift|ISP|Africa Angle",
-    "impact_on_citizens|WIOCC|Explainer"
+    "impact_on_citizens|WIOCC|Explainer",
+    "next_48_hours|data governance|Hard News Lead"
   ]
 }
