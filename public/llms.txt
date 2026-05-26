@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Bolt clarifies EV boda boda fares amidst operator outcry in Kenya](https://zandani.co.ke/article/bolt-defends-ev-boda-boda-fares-amid-protests) - Bolt defends lower electric motorcycle fares due to reduced operational costs for EVs. Operators protested in Kenya, but Bolt denies increasing rider commissions.
 - [Madaraka Day Celebrations in Wajir Mark Northern Kenya Inclusion](https://zandani.co.ke/article/wajir-madaraka-day-celebrations-northern-kenya-inclusion) - Wajir County hosts national Madaraka Day, a historic first for Northern Kenya. This pivotal event aims to integrate the region into national development, addressing past marginalization and conflict.
 - [PFA blames fixture congestion for Foden and Palmer England snub](https://zandani.co.ke/article/foden-palmer-england-world-cup-omission-fixture-congestion) - Maheta Molango attributes the exclusion of Phil Foden and Cole Palmer from the England squad to performance declines caused by an overloaded schedule.
 - [Jose Mourinho returns to Real Madrid as Rudiger extends contract and club targets Chelsea pair](https://zandani.co.ke/article/jose-mourinho-returns-to-real-madrid-as-rudiger-extends-contract-and) - Real Madrid's Mourinho Gamble and Chelsea's Implosion Real Madrid’s desperate lunge for Jose Mourinho and a mere Rudiger extension exposes a club devoid of fresh ideas, clinging to faded glory. Concurrently, Chelsea's chaotic fire sale of Enzo Fernandez and...
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Kenya Proposes Unified Data Governance Policy for National Asset](https://zandani.co.ke/article/kenya-drafts-national-data-governance-policy) - Kenya Proposes Unified Data Governance Policy for National Asset: Kenya's new draft data governance policy seeks to unify standards across public and private
 - [Health Concerns Mount Over Street Fried Chicken in Kenya](https://zandani.co.ke/article/kenya-street-fried-chicken-health-risks) - Health Concerns Mount Over Street Fried Chicken in Kenya: Medical experts warn of a public health crisis from street-fried chicken. Reused oil and poor hygiene
 - [Kelvin Kinuthia explains why he moves houses frequently](https://zandani.co.ke/article/kelvin-kinuthia-explains-frequent-house-moving) - Kelvin Kinuthia explains why he moves houses frequently: Kenyan content creator Kelvin Kinuthia says he moves houses frequently due to neighborhood discomfort,
-- [Liverpool Points Drop After Record 415 Million Transfer Window](https://zandani.co.ke/article/liverpool-transfer-record-points-drop-champions-league) - Liverpool Points Drop After Record 415 Million Transfer Window: Liverpool struggled with a major points drop after spending 415 million pounds. Key injuries to
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml

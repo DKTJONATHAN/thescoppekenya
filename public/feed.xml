@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Tue, 26 May 2026 20:52:43 GMT</pubDate>
+    <pubDate>Tue, 26 May 2026 20:53:41 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Bolt clarifies EV boda boda fares amidst operator outcry in Kenya]]></title>
+      <link>https://zandani.co.ke/article/bolt-defends-ev-boda-boda-fares-amid-protests</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/bolt-defends-ev-boda-boda-fares-amid-protests</guid>
+      <pubDate>Tue, 26 May 2026 20:27:48 GMT</pubDate>
+      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
+      <description><![CDATA[Bolt defends lower electric motorcycle fares due to reduced operational costs for EVs. Operators protested in Kenya, but Bolt denies increasing rider commissions.]]></description>
+      <enclosure url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/bolt%20comfort.jpg?itok=9UnOwFFm" type="image/jpeg" />
+      <media:content url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/bolt%20comfort.jpg?itok=9UnOwFFm" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/bolt%20comfort.jpg?itok=9UnOwFFm" alt="Bolt clarifies EV boda boda fares amidst operator outcry in Kenya" /><p>Bolt defends lower electric motorcycle fares due to reduced operational costs for EVs. Operators protested in Kenya, but Bolt denies increasing rider commissions.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Madaraka Day Celebrations in Wajir Mark Northern Kenya Inclusion]]></title>
       <link>https://zandani.co.ke/article/wajir-madaraka-day-celebrations-northern-kenya-inclusion</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
       <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="Online Preachers Exploiting Faith for Social Media Engagement Exposed" /><p>Online Preachers Exploiting Faith for Social Media Engagement Exp: Kenyan digital preachers are exploiting economic hardship by manipulating social media</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[When the Digital Loom Broke: Hospital Pre-Authorisation Delays]]></title>
-      <link>https://zandani.co.ke/article/when-the-digital-loom-broke-hospital-pre-authorisation-delays</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/when-the-digital-loom-broke-hospital-pre-authorisation-delays</guid>
-      <pubDate>Sun, 24 May 2026 12:07:50 GMT</pubDate>
-      <dc:creator><![CDATA[The Chronicler]]></dc:creator>
-      <description><![CDATA[When the Digital Loom Broke: Hospital Pre-Authorisation Delays: In the land of forgotten promises, a vast machine designed to heal fell silent, mirroring]]></description>
-      <enclosure url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" type="image/jpeg" />
-      <media:content url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" alt="When the Digital Loom Broke: Hospital Pre-Authorisation Delays" /><p>When the Digital Loom Broke: Hospital Pre-Authorisation Delays: In the land of forgotten promises, a vast machine designed to heal fell silent, mirroring</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
