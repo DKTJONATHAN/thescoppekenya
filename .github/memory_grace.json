@@ -153,10 +153,10 @@
     "dda8ac9601ffad81432a484a523bef02",
     "7be3384e3fca07391491264e9f687e36",
     "1f85bb6e0fb2429adea15b53180d2a27",
-    "a6196a0255e4e3f118c4e1d1c0a121fe"
+    "a6196a0255e4e3f118c4e1d1c0a121fe",
+    "a6c04ee79398b457af2f29d9b24ee86e"
   ],
   "style_history": [
-    "Backgrounder",
     "Explainer",
     "Power Accountability",
     "SME Angle",
@@ -185,7 +185,8 @@
     "SME Angle",
     "Backgrounder",
     "Power Accountability",
-    "Explainer"
+    "Explainer",
+    "Markets Report"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -251,6 +252,7 @@
     "money_follow|Nairobi Securities Exchange|SME Angle",
     "timeline_shift|Finance Bill 2026|Backgrounder",
     "winners_losers|Finance Bill 2026|Power Accountability",
-    "impact_on_citizens|Banking|Explainer"
+    "impact_on_citizens|Banking|Explainer",
+    "money_follow|Finance Bill 2026|Markets Report"
   ]
 }
