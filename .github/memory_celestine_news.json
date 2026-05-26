@@ -164,10 +164,10 @@
     "a314dc02a5cb07d7ea81f59a0ecdcb55",
     "064ec04fd45bb90244dfe4ccf4a12309",
     "1181d5931b272969f6d7531a5b5e1274",
-    "1143ac549954c861a1c3a959a0d4f107"
+    "1143ac549954c861a1c3a959a0d4f107",
+    "fe732e1d3afb70f774916b22ea459c3d"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Power Accountability",
     "Explainer",
     "Hard News Lead",
@@ -196,10 +196,10 @@
     "Power Accountability",
     "Hard News Lead",
     "Context Backgrounder",
-    "Explainer"
+    "Explainer",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "policy_gap|Kenya Railways|Power Accountability",
     "accountability|Kenya|Reaction & Voices",
     "money_follow|KTDA|Context Backgrounder",
     "winners_losers|KNEC|Explainer",
@@ -278,6 +278,7 @@
     "accountability|NTSA|Power Accountability",
     "winners_losers|Public Service Commission|Hard News Lead",
     "timeline_shift|Kenya|Context Backgrounder",
-    "next_48_hours|IPOA|Explainer"
+    "next_48_hours|IPOA|Explainer",
+    "next_48_hours|green bonds|Reaction & Voices"
   ]
 }
