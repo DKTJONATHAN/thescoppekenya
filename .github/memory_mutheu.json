@@ -200,10 +200,10 @@
     "98e64744b63251e9b0a75484cb615b66",
     "742734b7d2197a1a75e027920426b163",
     "4ffd9b084dcbb9d2125a4d9cc1e3d9be",
-    "6c833274533f40f3551638c5bf6ab546"
+    "6c833274533f40f3551638c5bf6ab546",
+    "834fa7b2de9cc72fdcee5cb6d8780e13"
   ],
   "style_history": [
-    "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
@@ -232,10 +232,10 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "policy_gap|hantavirus|Profile Beat",
     "winners_losers|Good Omens|Reaction Round-up",
     "policy_gap|Margaret Cho|Explainer",
     "accountability|The Bachelorette|Hard News Lead",
@@ -314,6 +314,7 @@
     "myth_vs_fact|The Birds|Hard News Lead",
     "winners_losers|television|Reaction Round-up",
     "accountability|Star Wars|Explainer",
-    "timeline_shift|Bring It On: All or Nothing|Trend Take"
+    "timeline_shift|Bring It On: All or Nothing|Trend Take",
+    "next_48_hours|American Music Awards|Hard News Lead"
   ]
 }
