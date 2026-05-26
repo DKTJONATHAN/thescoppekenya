@@ -1,16 +1,20 @@
 ---
 title: "Treasury Retains Tax Exemptions as EAC Seeks Lower Roaming Fees"
 slug: "kenya-finance-bill-tax-exemptions-eac-roaming-fees"
-description: "Kenya's Finance Bill maintains tax exemptions for pensions and economic zones while East African regulators work to reduce high mobile roaming charges."
+description: "Treasury Retains Tax Exemptions as EAC Seeks Lower Roaming Fees: Kenya's Finance Bill maintains tax exemptions for pensions and economic zones while East"
+excerpt: "Kenya's Fiscal Strategy Shields Key Investments Amidst Regional Digital Push Kenya's Finance Bill 2026 entrenches tax exemptions for critica"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/6f91095c-971f-49a3-9fe1-033259a4a726/1000157642.jpg?t=1779802842"
 category: "Business"
 tags: ["finance bill", "tax exemptions", "treasury", "mobile roaming", "east african community", "kenya economy"]
+canonical: "https://zandani.co.ke/article/kenya-finance-bill-tax-exemptions-eac-roaming-fees"
 date: "2026-05-26T20:26:12Z"
 dateModified: "2026-05-26T20:26:12Z"
+focusKeyword: "Treasury Retains Tax Exemptions as EAC Seeks Lower Roaming Fees"
 schema: "NewsArticle"
 ---
+
+Treasury Retains Tax Exemptions as EAC Seeks Lower Roaming Fees is central to this update for Kenyan readers.
 
 ## Kenya's Fiscal Strategy Shields Key Investments Amidst Regional Digital Push
 
@@ -31,3 +35,18 @@ In a move reflecting evolving financial landscapes, the firm Checker recently se
 For Kenyan investors, the Finance Bill's protective measures offer clarity on government-backed investment avenues. Conversely, the identified gap in green lending incentives suggests that capital seeking environmental, social, and governance (ESG) returns may require more direct market stimuli or policy de-risking. Consumers stand to gain from reduced EAC roaming fees, directly lowering communication expenses, while the broader digital economy continues to be a focus. Treasury Cabinet Secretary John Mbadi has previously addressed concerns about proposed mobile phone taxes, emphasizing the need to balance revenue generation with digital economy growth, a topic that has generated significant public debate, as seen in the recent forum where [John Mbadi and Rosemary Alionya Faced Youth Opposition During Finance Bill Forum](https://zandani.co.ke/article/john-mbadi-and-rosemary-alionya-face-youth-opposition-during-finance). This balancing act remains crucial as new digital financial services and regional trade policies reshape the East African market.
 
 Za Ndani will continue to monitor the progress of the Finance Bill 2026 through parliamentary stages and the outcomes of the EAC roaming fee negotiations, with further updates anticipated ahead of the next quarterly economic review.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
