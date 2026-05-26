@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Tue, 26 May 2026 07:08:00 GMT</pubDate>
+    <pubDate>Tue, 26 May 2026 07:09:02 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Selection Panel Shortlists 16 Candidates for IPOA Chair]]></title>
+      <link>https://zandani.co.ke/article/ipoa-chairperson-shortlist-16-candidates</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/ipoa-chairperson-shortlist-16-candidates</guid>
+      <pubDate>Tue, 26 May 2026 06:57:57 GMT</pubDate>
+      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
+      <description><![CDATA[The Selection Panel has shortlisted 16 candidates for the position of IPOA Chairperson including several former electoral commission officials.]]></description>
+      <enclosure url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/press%20iebc.jpeg?itok=uglzLg51" type="image/jpeg" />
+      <media:content url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/press%20iebc.jpeg?itok=uglzLg51" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/press%20iebc.jpeg?itok=uglzLg51" alt="Selection Panel Shortlists 16 Candidates for IPOA Chair" /><p>The Selection Panel has shortlisted 16 candidates for the position of IPOA Chairperson including several former electoral commission officials.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Kelvin Kinuthia Plans Legal Name Change and Future Parenthood]]></title>
       <link>https://zandani.co.ke/article/kelvin-kinuthia-legal-name-change-parenthood-plans</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://cdn.radioafrica.digital/image/2026/03/13524989-894b-4115-a5da-d7ec2b71afa3.jpg?1779561690515" type="image/jpeg" />
       <media:content url="https://cdn.radioafrica.digital/image/2026/03/13524989-894b-4115-a5da-d7ec2b71afa3.jpg?1779561690515" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://cdn.radioafrica.digital/image/2026/03/13524989-894b-4115-a5da-d7ec2b71afa3.jpg?1779561690515" alt="Jeff Koinange Honors Father Frederick Mbiyu on 60th Anniversary" /><p>Jeff Koinange Honors Father Frederick Mbiyu on 60th Anniversary: Citizen TV anchor Jeff Koinange paid tribute to his late father, Frederick Mbiyu Koinange,</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Martin O'Neill weighs Celtic future after historic domestic double]]></title>
-      <link>https://zandani.co.ke/article/martin-oneill-weighs-celtic-future-after-domestic-double</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/martin-oneill-weighs-celtic-future-after-domestic-double</guid>
-      <pubDate>Sat, 23 May 2026 19:38:39 GMT</pubDate>
-      <dc:creator><![CDATA[Jona Munyi]]></dc:creator>
-      <description><![CDATA[Martin O'Neill weighs Celtic future after historic domestic doubl: Martin O'Neill is set for contract talks with Celtic leadership following a successful]]></description>
-      <enclosure url="https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/027d/live/d327d970-56cb-11f1-8061-9f414900f587.jpg" type="image/jpeg" />
-      <media:content url="https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/027d/live/d327d970-56cb-11f1-8061-9f414900f587.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/027d/live/d327d970-56cb-11f1-8061-9f414900f587.jpg" alt="Martin O&apos;Neill weighs Celtic future after historic domestic double" /><p>Martin O'Neill weighs Celtic future after historic domestic doubl: Martin O'Neill is set for contract talks with Celtic leadership following a successful</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
