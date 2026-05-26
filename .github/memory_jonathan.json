@@ -131,10 +131,10 @@
     "db0f101ec5551492c3b6ecab44f28f6d",
     "1767a2716c64f9c35959112f8f54ef52",
     "52f3e7be05b999b4bab6bd7d592b67a7",
-    "2334648187d753b908324e2d9cfe490c"
+    "2334648187d753b908324e2d9cfe490c",
+    "dd56ea43342208d79395841f66b4b6d6"
   ],
   "style_history": [
-    "Letter Form",
     "Sharp Column",
     "Historical Lens",
     "Personal Reflection",
@@ -163,10 +163,10 @@
     "Personal Reflection",
     "Historical Lens",
     "Sharp Column",
-    "Counterpoint"
+    "Counterpoint",
+    "Letter Form"
   ],
   "angle_history": [
-    "winners_losers|asthma|Counterpoint",
     "policy_gap|National Police Service|Sharp Column",
     "timeline_shift|education|Historical Lens",
     "money_follow|Africa Forward Summit|Personal Reflection",
@@ -245,6 +245,7 @@
     "money_follow|World Bank|Personal Reflection",
     "winners_losers|Vision 2030|Historical Lens",
     "impact_on_citizens|air quality|Sharp Column",
-    "next_48_hours|Presidential Escort Unit|Counterpoint"
+    "next_48_hours|Presidential Escort Unit|Counterpoint",
+    "money_follow|Madaraka Day|Letter Form"
   ]
 }
