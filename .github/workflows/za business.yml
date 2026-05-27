@@ -2,7 +2,8 @@
 
 on:
   schedule:
-    - cron: '10 3-20 * * *'
+    # Daily business slot
+    - cron: '10 5 * * *'
   workflow_dispatch: {}
 
 concurrency:

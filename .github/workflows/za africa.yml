@@ -2,7 +2,8 @@
 
 on:
   schedule:
-    - cron: '8 3-20 * * *'
+    # Daily Africa slot, staggered ahead of the morning news cycle
+    - cron: '8 3 * * *'
   workflow_dispatch: {}
 
 concurrency:

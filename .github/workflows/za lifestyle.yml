@@ -2,7 +2,8 @@
 
 on:
   schedule:
-    - cron: '14 3-20 * * *'
+    # Daily lifestyle slot
+    - cron: '14 7 * * *'
   workflow_dispatch: {}
 
 concurrency:
