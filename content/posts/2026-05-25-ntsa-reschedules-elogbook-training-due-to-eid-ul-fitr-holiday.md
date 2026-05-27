@@ -64,6 +64,8 @@ NTSA Postpones eLogbook Training Sessions Over Eid-ul-Fitr Holida is central to 
 
 NTSA Postpones eLogbook Training Sessions Over Eid-ul-Fitr Holida is central to this update for Kenyan readers.
 
+NTSA Postpones eLogbook Training Sessions Over Eid-ul-Fitr Holida is central to this update for Kenyan readers.
+
 ## NTSA Digitization Efforts Stumble Over Calendar Basics
 
 The National Transport and Safety Authority has pushed back its eLogbook training sessions after failing to account for a gazetted public holiday. This oversight highlights the systemic fragility of a digital rollout that leaves only thirteen days for stakeholder readiness.
