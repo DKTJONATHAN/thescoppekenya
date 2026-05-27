@@ -205,10 +205,10 @@
     "ec2092b50bee71c6a6e62c4afae0a725",
     "2c1ad4247c82d2d0bf6b0350d6ee5d81",
     "769ac9209f974e5be293b20d8706a736",
-    "c4d3d4bad3fd71876e9d021d18d64eb4"
+    "c4d3d4bad3fd71876e9d021d18d64eb4",
+    "9f3bacb53bfcff25aea776dd64c9fc8d"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
@@ -237,10 +237,10 @@
     "Profile Beat",
     "Explainer",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "timeline_shift|television|Profile Beat",
     "accountability|Melissa Gilbert|Reaction Round-up",
     "policy_gap|Seinfeld|Hard News Lead",
     "impact_on_citizens|Netflix|Explainer",
@@ -319,6 +319,7 @@
     "myth_vs_fact|autograph-signing|Profile Beat",
     "money_follow|The Bachelor|Explainer",
     "story_progression|reality television|Reaction Round-up",
-    "story_progression|Britain's Got Talent|Trend Take"
+    "story_progression|Britain's Got Talent|Trend Take",
+    "story_progression|HBO|Hard News Lead"
   ]
 }
