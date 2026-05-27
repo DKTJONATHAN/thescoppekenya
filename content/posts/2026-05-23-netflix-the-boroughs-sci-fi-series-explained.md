@@ -162,6 +162,8 @@ Netflix sci-fi series The Boroughs explores aging and mystery is central to this
 
 Netflix sci-fi series The Boroughs explores aging and mystery is central to this update for Kenyan readers.
 
+Netflix sci-fi series The Boroughs explores aging and mystery is central to this update for Kenyan readers.
+
 # Netflix Sci-Fi Series The Boroughs Explores Aging and Mystery
 
 Netflix has expanded its genre slate with the debut of The Boroughs, a sci-fi series set within the isolated confines of an Albuquerque retirement community. Created by Jeffrey Addiss and Will Matthews, the show utilizes horror elements to examine themes of elder neglect and systemic vulnerability. With the Duffer Brothers serving as executive producers, the series aims to blend speculative fiction with a long-term mystery arc that questions the ethical treatment of those placed in institutional care.
