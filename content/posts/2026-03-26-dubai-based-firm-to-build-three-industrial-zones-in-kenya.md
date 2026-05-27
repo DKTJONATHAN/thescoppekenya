@@ -1099,6 +1099,8 @@ Dubai-based firm to build three industrial zones in Kenya is central to this upd
 
 Dubai-based firm to build three industrial zones in Kenya is central to this update for Kenyan readers.
 
+Dubai-based firm to build three industrial zones in Kenya is central to this update for Kenyan readers.
+
 A Dubai-based infrastructure developer, AriseIIP, unveiled a Ksh389 billion, approximately USD 3 billion, plan on March 25, 2026, at the Kenya International Investment Conference. This substantial investment aims to establish three industrial zones across Kenya, projected to create over 500,000 jobs within five years.
 
 AriseIIP Commits Ksh389 Billion for Industrial Zones The investment, announced by Nikhil Gandhi, Executive Director and Chief Marketing Officer for Arise IIP, targets the development of special economic zones, industrial parks, and a textiles manufacturing firm. The company, which operates across 18 African countries, regards this as its largest single-country investment in its 15-year history. The announcement occurred in the presence of President William Ruto. Arise IIP anticipates generating more than 500,000 jobs in the next five years through this initiative.

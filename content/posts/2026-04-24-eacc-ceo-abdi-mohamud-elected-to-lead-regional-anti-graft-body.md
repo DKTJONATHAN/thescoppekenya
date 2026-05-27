@@ -1099,6 +1099,8 @@ EACC CEO Abdi Mohamud Elected to Lead Regional Anti-Graft Bo is central to this 
 
 EACC CEO Abdi Mohamud Elected to Lead Regional Anti-Graft Bo is central to this update for Kenyan readers.
 
+EACC CEO Abdi Mohamud Elected to Lead Regional Anti-Graft Bo is central to this update for Kenyan readers.
+
 Ethics and Anti-Corruption Commission CEO Abdi Mohamud has been elected President of the Eastern Africa Association of Anti-Corruption Authorities. He formally assumed the position during the regional body's 16th Annual General Meeting held in Nairobi between April 20 and 24.
 
 ## Regional Leadership for Abdi Mohamud
