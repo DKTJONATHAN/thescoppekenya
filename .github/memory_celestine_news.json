@@ -167,10 +167,10 @@
     "1143ac549954c861a1c3a959a0d4f107",
     "fe732e1d3afb70f774916b22ea459c3d",
     "6fef569739047c6873c98123b27062b1",
-    "4d6139008740ea6b39e1bdef66a1a328"
+    "4d6139008740ea6b39e1bdef66a1a328",
+    "cd239ba2fa3d918360d9eef023840505"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction & Voices",
     "Power Accountability",
     "Context Backgrounder",
@@ -199,10 +199,10 @@
     "Explainer",
     "Reaction & Voices",
     "Power Accountability",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "winners_losers|KNEC|Explainer",
     "policy_gap|NSSF|Power Accountability",
     "policy_gap|Metropolitan National SACCO|Hard News Lead",
     "impact_on_citizens|IEBC|Reaction & Voices",
@@ -281,6 +281,7 @@
     "next_48_hours|IPOA|Explainer",
     "next_48_hours|green bonds|Reaction & Voices",
     "money_follow|Bolt|Power Accountability",
-    "myth_vs_fact|DCI|Context Backgrounder"
+    "myth_vs_fact|DCI|Context Backgrounder",
+    "story_progression|Ebola|Hard News Lead"
   ]
 }
