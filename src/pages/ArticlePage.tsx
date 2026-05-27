@@ -77,73 +77,102 @@ function normalizeArticleLabel(value: string): string {
     .trim();
 }
 
+function normalizeArticleBlock(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/[*_`~:#()\[\]{}<>-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+const LEGACY_ARTICLE_PHRASES = [
+  "is central to this update for kenyan readers",
+  "what this means for kenyans",
+  "key facts",
+  "what is the most important takeaway",
+  "the key takeaway is",
+  "this development could directly affect",
+  "official announcement details are in this report",
+  "practical impact depends on timelines and enforcement",
+  "readers should verify changes through official channels",
+  "search-ready summary",
+  "search ready summary",
+  "faq",
+  "faqs",
+  "frequently asked questions",
+];
+
+function isLegacyArticleBlock(value: string): boolean {
+  const normalized = normalizeArticleBlock(value);
+  if (!normalized) return false;
+
+  return LEGACY_ARTICLE_PHRASES.some((phrase) => normalized.includes(phrase)) ||
+    /^what this means for kenyans\b/i.test(normalized) ||
+    /^what is the most important takeaway\??$/i.test(normalized) ||
+    /^the key takeaway is\b/i.test(normalized) ||
+    /^search[- ]ready summary$/i.test(normalized) ||
+    /^reader impact\b/i.test(normalized);
+}
+
 function stripArticleBoilerplateText(content: string): string {
   if (!content) return content;
 
-  const boilerplateLabels = new Set([
-    "faq",
-    "faqs",
-    "frequently asked questions",
-    "why it matters now",
-    "what to watch next",
-    "search-ready summary",
-    "search ready summary",
-  ]);
-
-  const lines = content.split("\n");
+  const blocks = content.split(/\n\s*\n+/);
   const cleaned: string[] = [];
-  let skipping = false;
-  let skipLevel = 0;
+  const seen = new Set<string>();
 
-  for (const line of lines) {
-    const headingMatch = line.match(/^(#{1,6})\s+(.*)$/);
-
-    if (skipping) {
-      if (headingMatch && headingMatch[1].length <= skipLevel) {
-        skipping = false;
-      } else {
-        continue;
-      }
-    }
-
-    const label = headingMatch ? normalizeArticleLabel(headingMatch[2]) : normalizeArticleLabel(line);
-
-    if (
-      boilerplateLabels.has(label) ||
-      /^reader impact\s+explain the practical effect on the audience without turning it into a faq\.?$/i.test(label) ||
-      /^include a short .*why it matters now.*what to watch next.*$/i.test(label) ||
-      /^search[- ]ready summary$/i.test(label)
-    ) {
-      skipping = true;
-      skipLevel = headingMatch ? headingMatch[1].length : 6;
-      continue;
-    }
-
-    cleaned.push(line);
+  for (const block of blocks) {
+    const normalized = normalizeArticleBlock(block);
+    if (!normalized) continue;
+    if (isLegacyArticleBlock(normalized)) continue;
+    if (seen.has(normalized)) continue;
+    seen.add(normalized);
+    cleaned.push(block.trim());
   }
 
-  return cleaned.join("\n").replace(/\n{3,}/g, "\n\n").trim();
+  return cleaned.join("\n\n").replace(/\n{3,}/g, "\n\n").trim();
 }
 
 function stripArticleBoilerplateHtml(html: string): string {
   if (!html) return html;
 
-  let cleaned = html;
-  const sectionPatterns = [
-    /<h([1-6])[^>]*>\s*(?:why it matters now|what to watch next|faq(?:s)?|frequently asked questions)\s*<\/h\1>\s*[\s\S]*?(?=<h[1-6]\b|$)/gi,
-    /<h([1-6])[^>]*>\s*search[- ]ready summary\s*<\/h\1>\s*[\s\S]*?(?=<h[1-6]\b|$)/gi,
-    /<p[^>]*>\s*reader impact:\s*explain the practical effect on the audience without turning it into a faq\.?\s*<\/p>/gi,
-    /<li[^>]*>\s*reader impact:\s*explain the practical effect on the audience without turning it into a faq\.?\s*<\/li>/gi,
-    /<p[^>]*>\s*include a short .*why it matters now.*what to watch next.*?<\/p>/gi,
-    /<li[^>]*>\s*include a short .*why it matters now.*what to watch next.*?<\/li>/gi,
-    /<p[^>]*>\s*search[- ]ready summary\s*<\/p>/gi,
-  ];
+  if (typeof DOMParser === "undefined") {
+    let cleaned = html;
+    const sectionPatterns = [
+      /<h([1-6])[^>]*>\s*(?:why it matters now|what to watch next|faq(?:s)?|frequently asked questions|search[- ]ready summary)\s*<\/h\1>\s*[\s\S]*?(?=<h[1-6]\b|$)/gi,
+      /<p[^>]*>\s*(?:what this means for kenyans|key facts|what is the most important takeaway\??|the key takeaway is|this development could directly affect|official announcement details are in this report|practical impact depends on timelines and enforcement|readers should verify changes through official channels|search[- ]ready summary)\s*<\/p>/gi,
+      /<li[^>]*>\s*(?:what this means for kenyans|key facts|what is the most important takeaway\??|the key takeaway is|this development could directly affect|official announcement details are in this report|practical impact depends on timelines and enforcement|readers should verify changes through official channels|search[- ]ready summary)\s*<\/li>/gi,
+    ];
 
-  sectionPatterns.forEach((pattern) => {
-    cleaned = cleaned.replace(pattern, "");
+    sectionPatterns.forEach((pattern) => {
+      cleaned = cleaned.replace(pattern, "");
+    });
+
+    return cleaned.replace(/\n{3,}/g, "\n\n").trim();
+  }
+
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(html, "text/html");
+  const seen = new Set<string>();
+
+  doc.body.querySelectorAll("h1, h2, h3, h4, h5, h6, p, li, blockquote").forEach((node) => {
+    const normalized = normalizeArticleBlock(node.textContent || "");
+    if (!normalized) {
+      node.remove();
+      return;
+    }
+    if (isLegacyArticleBlock(normalized)) {
+      node.remove();
+      return;
+    }
+    if (seen.has(normalized)) {
+      node.remove();
+      return;
+    }
+    seen.add(normalized);
   });
 
-  return cleaned.replace(/\n{3,}/g, "\n\n").trim();
+  return doc.body.innerHTML.replace(/\n{3,}/g, "\n\n").trim();
 }
 
 export default function ArticlePage() {

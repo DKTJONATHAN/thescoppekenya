@@ -379,6 +379,9 @@ jobs:
                   "- NEVER write your author name or byline in the text.\n"
                   "- Output ONLY the Markdown article body.\n"
                   "- Start immediately with a 40-55 word introductory verdict paragraph.\n"
+                  "- Do not open with a generic relevance line or a 'what this means' setup.\n"
+                  "- Do not add FAQ, key facts, takeaway, or reader-impact sections at the end.\n"
+                  "- Do not summarize the source like a neutral news report; keep the verdict sharp from the first sentence.\n"
                   "- Use ## and ### subheadings to break up your arguments.\n"
                   f"- Naturally embed this link exactly once mid-body: [{src_title}]({SITE_BASE_URL}/article/{src_slug})\n"
                   "- Ground your arguments in the facts provided in the excerpt.\n"
@@ -415,6 +418,7 @@ jobs:
                   f"Keywords to include: {keywords_str}\n\n"
                   f"Column to rewrite:\n{article_text[:6000]}\n\n"
                   "Rules: Output only Markdown body. No em-dashes. Be opinionated. Render a verdict.\n"
+                  "Do not add reader-impact, key facts, or takeaway sections.\n"
               )
               return gemini_generate(prompt, label='column-rewrite', expect_json=False, temperature=0.92, max_tokens=4200)
 

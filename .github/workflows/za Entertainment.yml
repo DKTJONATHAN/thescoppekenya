@@ -365,6 +365,42 @@ jobs:
               text = re.sub(r"(Za Ndani)(?:\s+Za Ndani)+", r"\1", text)
               return text
 
+          LEGACY_BOILERPLATE = [
+              "is central to this update for kenyan readers",
+              "what this means for kenyans",
+              "key facts",
+              "what is the most important takeaway",
+              "the key takeaway is",
+              "this development could directly affect",
+              "official announcement details are in this report",
+              "practical impact depends on timelines and enforcement",
+              "readers should verify changes through official channels",
+              "search-ready summary",
+              "search ready summary",
+              "faq",
+              "faqs",
+              "frequently asked questions",
+          ]
+
+          def strip_article_boilerplate(text):
+              if not text:
+                  return text
+              blocks = re.split(r"\n\s*\n+", text.strip())
+              cleaned = []
+              seen = set()
+              for block in blocks:
+                  normalized = re.sub(r"[*_`~:#()\[\]{}<>-]", " ", block.lower())
+                  normalized = re.sub(r"\s+", " ", normalized).strip()
+                  if not normalized:
+                      continue
+                  if any(phrase in normalized for phrase in LEGACY_BOILERPLATE):
+                      continue
+                  if normalized in seen:
+                      continue
+                  seen.add(normalized)
+                  cleaned.append(block.strip())
+              return "\n\n".join(cleaned).replace("\n{3,}", "\n\n").strip()
+
           raw_keys = [os.environ.get(k) for k in ("GEMINI_WRITE_KEY","GEMINI_API_KEY","GEMINI_API_KEY1") if os.environ.get(k)]
           if not raw_keys:
               print("No Gemini keys configured"); sys.exit(1)
@@ -443,11 +479,11 @@ jobs:
                   f"STYLE PRESET: {style['name']} - {style['angle']}\n"
                   f"RECENT ANGLE SIGNATURES (avoid repeating): {json.dumps(recent_angles[-20:], ensure_ascii=False)}\n\n"
                   "Rules:\n"
-                  "- Pick ONE dominant frame: impact_on_citizens, accountability, money_follow, timeline_shift, policy_gap, myth_vs_fact, winners_losers, next_48_hours.\n"
+                  "- Pick ONE dominant frame: story_progression, accountability, money_follow, timeline_shift, policy_gap, myth_vs_fact, winners_losers, next_48_hours.\n"
                   "- Must differ from recent signatures by frame OR consequence focus.\n"
                   "- Keep factual, no fabricated claims.\n"
-                  "- Explain what new value this framing gives readers.\n\n"
-                  'Return JSON: {"angle_title":"...","frame":"...","why_unique":"...","reader_value":"...","must_include":["...","..."],"avoid":["..."]}'
+                  "- Explain the editorial value of this framing.\n\n"
+                  'Return JSON: {"angle_title":"...","frame":"...","why_unique":"...","editorial_value":"...","must_include":["...","..."],"avoid":["..."]}'
               )
               return parse_json_safely(gemini_call(prompt, "angle", json_mode=True))
           def stage_write(brief, seo, style, angle_plan, internal_links):
@@ -532,7 +568,7 @@ jobs:
           print(f"Style chosen: {style['name']}")
           angle_plan = stage_angle(brief, style, memory.get("angle_history", [])) or {}
           if not angle_plan:
-              angle_plan = {"angle_title":"Reader impact focus","frame":"impact_on_citizens","why_unique":"Fallback angle to emphasize consequences","reader_value":"Makes implications concrete","must_include":["one clear development beat","one forward-looking consequence"],"avoid":["copying source structure","FAQ blocks","generic wrap-up labels"]}
+              angle_plan = {"angle_title":"Straight story angle","frame":"story_progression","why_unique":"Fallback keeps the article on the actual development instead of forcing a generic explainer","editorial_value":"Keeps the writing anchored in fresh reporting","must_include":["one clear new fact","one specific reaction or consequence tied to the story"],"avoid":["copying source structure","FAQ blocks","generic wrap-up labels","What this means for Kenyans","Key facts"]}
           print(f"Angle chosen: {angle_plan.get('frame','n/a')} | {angle_plan.get('angle_title','n/a')}")
 
           article_md = stage_write(brief, seo, style, angle_plan, get_internal_links())
@@ -563,6 +599,7 @@ jobs:
           article_md = re.sub(r"^(Title|By|Author|Date)\s*:\s*.*?$", "", article_md, flags=re.I|re.M)
           article_md = article_md.replace("\u2014","-").replace("\u2013","-")
           article_md = scrub_source_leaks(article_md)
+          article_md = strip_article_boilerplate(article_md)
 
           if chosen_img:
               final_image = upload_to_imgbb(chosen_img)
