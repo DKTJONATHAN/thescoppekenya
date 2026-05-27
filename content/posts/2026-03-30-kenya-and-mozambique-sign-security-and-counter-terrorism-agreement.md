@@ -1091,6 +1091,8 @@ Kenya and Mozambique Sign Security and Counter-Terrorism Agr is central to this 
 
 Kenya and Mozambique Sign Security and Counter-Terrorism Agr is central to this update for Kenyan readers.
 
+Kenya and Mozambique Sign Security and Counter-Terrorism Agr is central to this update for Kenyan readers.
+
 Kenya and Mozambique solidified their commitment to enhanced security and counter-terrorism intelligence by signing a Memorandum of Understanding on Thursday, March 26, 2026. Presidents William Ruto and Daniel Chapo witnessed the agreement, which also aims to bolster bilateral ties and promote regional stability.
 
 Enhanced Security Cooperation Between Kenya and Mozambique The new agreement encompasses vital areas including intelligence sharing, joint counter-terrorism operations, correctional services, and youth development. Kenya's Ministry of Interior affirmed that the MoU underscores the nation's dedication to regional stability, emphasizing collaborative efforts to combat terrorism and improve coordination. The Ministry views this as a tangible step towards fostering stronger, mutually beneficial relationships with Mozambique and the broader Southern African region.
