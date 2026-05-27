@@ -169,10 +169,10 @@
     "6fef569739047c6873c98123b27062b1",
     "4d6139008740ea6b39e1bdef66a1a328",
     "cd239ba2fa3d918360d9eef023840505",
-    "47a8c2fd309556cadd9c4bf6c445ff6c"
+    "47a8c2fd309556cadd9c4bf6c445ff6c",
+    "fa78d60b4db0b3020178ffded59b5ce6"
   ],
   "style_history": [
-    "Power Accountability",
     "Context Backgrounder",
     "Explainer",
     "Hard News Lead",
@@ -201,10 +201,10 @@
     "Power Accountability",
     "Context Backgrounder",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "policy_gap|Metropolitan National SACCO|Hard News Lead",
     "impact_on_citizens|IEBC|Reaction & Voices",
     "winners_losers|German Embassy|Explainer",
     "money_follow|National Treasury|Context Backgrounder",
@@ -283,6 +283,7 @@
     "money_follow|Bolt|Power Accountability",
     "myth_vs_fact|DCI|Context Backgrounder",
     "story_progression|Ebola|Hard News Lead",
-    "story_progression|WhatsApp|Explainer"
+    "story_progression|WhatsApp|Explainer",
+    "money_follow|Matatu Workers Union|Reaction & Voices"
   ]
 }
