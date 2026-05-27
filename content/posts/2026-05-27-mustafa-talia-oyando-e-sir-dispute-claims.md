@@ -1,0 +1,39 @@
+---
+title: "Mustafa and Talia Oyando Disagree Over E-Sir History"
+slug: "mustafa-talia-oyando-e-sir-dispute-claims"
+description: "Talia Oyando denies claims by Colonel Mustafa regarding a past conflict with late rapper E-Sir involving a romantic link between the stars."
+author: "Martin Kihara"
+authorUrl: "https://zandani.co.ke/author/martin-kihara"
+image: "https://cdn.radioafrica.digital/image/2026/05/cd50daaf-0e46-43ad-8b37-4ba709f7b8af.jpg?1779865261562"
+category: "Gossip"
+tags: ["kenyan music", "colonel mustafa", "talia oyando", "e-sir", "entertainment news", "kenyan celebrities"]
+date: "2026-05-27T07:15:45Z"
+dateModified: "2026-05-27T07:15:45Z"
+schema: "NewsArticle"
+---
+
+## E-Sir Legacy Re-examined by Mustafa and Talia Oyando
+
+The golden age of Kenyan hip-hop is being reframed through a modern lens as Colonel Mustafa and Talia Oyando clash over old memories. At the heart of the dispute is the late E-Sir and a history that remains fiercely protected by those who lived it.
+
+History is often written by those who remain, but in the case of the Kenyan music industry, memory is a contested territory. For over two decades, the name E-Sir has been synonymous with a pure, untouchable era of talent and humility. He was the South B prodigy whose life was cut short on a dark stretch of the Nairobi-Nakuru highway in March 2003. Since then, the stories told about him have largely been of a saintly figure who unified the industry. However, the recent friction between Colonel Mustafa and media veteran Talia Oyando suggests that the behind-the-scenes reality was far more human and complex than the legend allows.
+
+### The Unrecorded Realities of the South B Era
+
+Colonel Mustafa, a man who has seen the industry evolve from its formative years at Ogopa Deejays to the digital dominance of today, recently chose to share a perspective that caught many off guard. By posting a vintage photograph, Mustafa suggested that the camaraderie of the early 2000s was occasionally strained by personal rivalry. Specifically, he alleged that he and E-Sir once found themselves in a disagreement over their mutual connection to Talia Oyando. Mustafa frames these claims not as an attack on E-Sir, but as an honest reflection of the competitive energy that fueled the young stars of the Ogopa era.
+
+Mustafa has often been a polarizing figure, but his willingness to revisit the past comes at a time when many veteran artists are seeking to reclaim their narratives. This move toward transparency is becoming a trend among icons of that generation. For instance, even international figures are looking back at their storied careers, as seen when [Johnny Depp introduced first footage of Ebenezer](https://zandani.co.ke/article/2026-04-17-johnny-depp-introduces-first-footage-of-ebenezer-a-christma), a project that relies heavily on the weight of long-established legacy. For Mustafa, speaking his truth is a way to ensure that his role in the formation of the Kenyan urban sound is not minimized, even if it means challenging the established peace of a musical myth.
+
+### Guarding a Sacred Musical Heritage
+
+Talia Oyando, known to millions as the Night Nurse, has taken a very different stance. For her, the claims made by Mustafa are not just inaccurate but a violation of a legacy that belongs to the entire nation. Oyando quickly issued a public denial, stating firmly that no such romantic link or conflict ever existed. Her reaction highlights the role she has played for decades: a guardian of the culture. To Talia, E-Sir represents a moment of innocence in Kenyan music that should not be tarnished by revisionist accounts of petty squabbles.
+
+The intensity of her rebuttal speaks to the sensitivity surrounding how we handle the personal lives of public figures who are no longer here to defend themselves. This protective stance is common among those who have spent their lives in the spotlight. We see similar efforts to maintain the dignity of private lives in the way [gospel singer Janet Otieno shares health updates on her husband](https://zandani.co.ke/article/gospel-singer-janet-otieno-shares-health-update-on-husband), ensuring that the public narrative remains respectful and controlled. Talia’s insistence on the "pure" history of her relationship with the late rapper serves as a firewall against what she perceives as the sensationalizing of a tragedy.
+
+### The Friction of Memory and Legend
+
+The disagreement raises a fundamental question about celebrity culture in Kenya: who owns the history of a fallen star? Mustafa views himself as a witness to an unrecorded past, someone who was in the studios and at the Kora Awards when the industry was being built from scratch. To him, acknowledging that these young men had typical human disagreements does not take away from their greatness. To the public and to close friends like Talia, however, the legend of E-Sir is a collective treasure that requires protection from anything that looks like contemporary clout-chasing.
+
+As we move toward the mid-2020s, these clashes between personal memory and public legend will likely become more frequent. The archival nature of social media allows old photos to trigger new debates, forcing us to reconcile the icons we worshiped with the real people they actually were. Mustafa continues to stand by his account, describing these moments as the raw reality of a burgeoning industry. Talia remains just as steadfast in her denial, acting as the voice for a man who hasn't been able to speak for himself for twenty-three years.
+
+The resolution of this specific dispute is unlikely to come through evidence or archives, as these were private moments from a pre-smartphone era. Instead, it serves as a milestone in the ongoing maturation of the Kenyan entertainment scene. We are finally at a point where we can discuss the complexities of our pioneers. The next significant moment for this conversation will likely occur during the upcoming memorial festivities for E-Sir, where the industry will once again have to decide which version of history it chooses to celebrate.

@@ -270,10 +270,10 @@
     "2073dd09a84439f6ead529865c127619",
     "8ada5c2400329b360312d0d1e55a3074",
     "5a3eb91785c4a1565150b87cf0a07c1c",
-    "3cd1e817eb7420693be8dbafef50a04e"
+    "3cd1e817eb7420693be8dbafef50a04e",
+    "00fc2aacebc012f4241890abce544123"
   ],
   "style_history": [
-    "Receipts Piece",
     "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
@@ -302,10 +302,10 @@
     "Profile Beat",
     "Reaction Round-up",
     "Hard News Lead",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "winners_losers|Kenya|Trend Take",
     "accountability|Pascal Tokodi|Profile Beat",
     "myth_vs_fact|Diana Marua|Receipts Piece",
     "policy_gap|Nairobi|Hard News Lead",
@@ -384,6 +384,7 @@
     "winners_losers|Mugithi|Profile Beat",
     "next_48_hours|AI-generated images|Reaction Round-up",
     "accountability|situationship|Hard News Lead",
-    "myth_vs_fact|Influencer|Trend Take"
+    "myth_vs_fact|Influencer|Trend Take",
+    "timeline_shift|Kenyan music scene|Profile Beat"
   ]
 }
