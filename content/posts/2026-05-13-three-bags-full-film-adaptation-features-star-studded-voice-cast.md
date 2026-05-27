@@ -670,6 +670,8 @@ Three Bags Full film adaptation features star-studded voice cast is central to t
 
 Three Bags Full film adaptation features star-studded voice cast is central to this update for Kenyan readers.
 
+Three Bags Full film adaptation features star-studded voice cast is central to this update for Kenyan readers.
+
 ## Hollywood’s New Livestock Detectives: How Three Bags Full is Reshaping Kenyan Animation Consumption
 
 Leonie Swann’s cult classic novel Three Bags Full is officially hitting the big screen as an animated feature, with a massive ensemble cast bringing a murder-solving flock of sheep to life in a shift that challenges traditional cinema preferences.
