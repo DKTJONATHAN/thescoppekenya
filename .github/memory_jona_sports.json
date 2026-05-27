@@ -193,10 +193,10 @@
     "f55ec542dff0fbd48fe75bdca2094a07",
     "abc03ecdec6adac86732a3d519adfe4a",
     "263c8e95aaef21af3e40a8796180f7e0",
-    "aa7dd1f27e29160bc510509db4872f32"
+    "aa7dd1f27e29160bc510509db4872f32",
+    "46ec01dc15a52ef09ccf8fb8c673532b"
   ],
   "style_history": [
-    "Match Report",
     "Player Profile Beat",
     "Cynical Pundit",
     "Stat Story",
@@ -225,10 +225,10 @@
     "Stat Story",
     "Tactical Take",
     "Cynical Pundit",
-    "Player Profile Beat"
+    "Player Profile Beat",
+    "Match Report"
   ],
   "angle_history": [
-    "impact_on_citizens|VAR|Match Report",
     "impact_on_citizens|Football|Player Profile Beat",
     "myth_vs_fact|FA Youth Cup|Stat Story",
     "accountability|League One|Cynical Pundit",
@@ -307,6 +307,7 @@
     "impact_on_citizens|League Cup|Stat Story",
     "accountability|Premier League|Tactical Take",
     "accountability|Premier League|Cynical Pundit",
-    "winners_losers|fixture congestion|Player Profile Beat"
+    "winners_losers|fixture congestion|Player Profile Beat",
+    "timeline_shift|Sunderland AFC|Match Report"
   ]
 }
