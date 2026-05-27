@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [KUCCPS Extends University and TVET Application Deadlines](https://zandani.co.ke/article/kuccps-extends-university-tvet-application-deadlines) - KUCCPS has extended the university application deadline to June 1 and TVET placement to June 8 to accommodate more students before the September intake.
 - [Public Outrage as Rachel Ruto Uses Spiritual Rhetoric to Address Missing Children and Rising Healthcare Costs](https://zandani.co.ke/article/public-outrage-as-rachel-ruto-uses-spiritual-rhetoric-to-address-mis) - Public Outrage as Rachel Ruto Uses Spiritual Rhetoric to Address : Rachel Ruto faces public outrage for using spiritual rhetoric to address missing children
 - [Merson predicts Arsenal win against PSG in Champions League final](https://zandani.co.ke/article/merson-predicts-arsenal-win-against-psg-in-champions-league-final) - Merson predicts Arsenal win against PSG in Champions League final: Arsenal's European Delusion: Merson's 1 0 Dream Paul Merson, ever the optimist for his
 - [Kate Gosselin compares raising rescue dogs to raising eight kids](https://zandani.co.ke/article/kate-gosselin-rescue-dog-struggles-parenting-comparison) - Kate Gosselin compares raising rescue dogs to raising eight kids: Reality star Kate Gosselin shares her struggles with a newly adopted rescue dog and how the
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [The Emperor's New Settings: How to Optimize a Nation's Performance](https://zandani.co.ke/article/the-emperors-new-settings-optimize-galaxy-performance) - The Emperor's New Settings: How to Optimize a Nation's Performanc: In a world obsessed with control, some sought to reshape empires, others merely to extend
 - [Manchester United close to securing Ederson Silva as Carrick's first signing](https://zandani.co.ke/article/manchester-united-close-to-securing-ederson-silva-as-carrick-s-first) - Manchester United close to securing Ederson Silva as Carrick's fi: Manchester United's Midfield 'Fix' Arrives Manchester United are reportedly closing in on
 - [Barcelona and Bayern Munich pursue Newcastle winger Anthony Gordon](https://zandani.co.ke/article/barcelona-bayern-munich-chase-anthony-gordon-transfer) - Barcelona and Bayern Munich pursue Newcastle winger Anthony Gordo: Barcelona and Bayern Munich have started talks with Newcastle United to sign Anthony Gordon
-- [WhatsApp to launch usernames to enhance user privacy](https://zandani.co.ke/article/whatsapp-usernames-privacy-feature-launch) - WhatsApp to launch usernames to enhance user privacy: WhatsApp is testing a new feature that lets users create unique usernames. This optional update aims to
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
