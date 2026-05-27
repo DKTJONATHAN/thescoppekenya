@@ -170,10 +170,10 @@
     "4d6139008740ea6b39e1bdef66a1a328",
     "cd239ba2fa3d918360d9eef023840505",
     "47a8c2fd309556cadd9c4bf6c445ff6c",
-    "fa78d60b4db0b3020178ffded59b5ce6"
+    "fa78d60b4db0b3020178ffded59b5ce6",
+    "8b5272859d2e2554254e0513672b98e0"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Explainer",
     "Hard News Lead",
     "Reaction & Voices",
@@ -202,10 +202,10 @@
     "Context Backgrounder",
     "Hard News Lead",
     "Explainer",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "impact_on_citizens|IEBC|Reaction & Voices",
     "winners_losers|German Embassy|Explainer",
     "money_follow|National Treasury|Context Backgrounder",
     "money_follow|Affordable Housing Programme|Hard News Lead",
@@ -284,6 +284,7 @@
     "myth_vs_fact|DCI|Context Backgrounder",
     "story_progression|Ebola|Hard News Lead",
     "story_progression|WhatsApp|Explainer",
-    "money_follow|Matatu Workers Union|Reaction & Voices"
+    "money_follow|Matatu Workers Union|Reaction & Voices",
+    "story_progression|KUCCPS|Power Accountability"
   ]
 }
