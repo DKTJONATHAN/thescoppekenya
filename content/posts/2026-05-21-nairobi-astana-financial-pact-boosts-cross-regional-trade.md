@@ -292,6 +292,8 @@ Nairobi and Astana sign financial pact to boost cross-regional tr is central to 
 
 Nairobi and Astana sign financial pact to boost cross-regional tr is central to this update for Kenyan readers.
 
+Nairobi and Astana sign financial pact to boost cross-regional tr is central to this update for Kenyan readers.
+
 ## Financial Diplomacy: How the Nairobi-Astana Link Affects Your Wallet
 
 Kenya has officially formed a strategic financial alliance with Kazakhstan, establishing a direct connection between Nairobi and the capital markets of Central Asia. While international trade agreements often feel like remote diplomatic gestures, this partnership has practical implications for your daily expenses. By linking the Nairobi International Financial Centre Authority with its counterpart in Astana, the government aims to restructure how capital moves in and out of the country. Here is how these high-level maneuvers translate into your personal budget.
