@@ -1103,6 +1103,8 @@ Betty Kyallo addresses nine-year age gap with boyfriend Char is central to this 
 
 Betty Kyallo addresses nine-year age gap with boyfriend Char is central to this update for Kenyan readers.
 
+Betty Kyallo addresses nine-year age gap with boyfriend Char is central to this update for Kenyan readers.
+
 Kenyan media executive and digital sensation Betty Kyallo recently addressed persistent speculation regarding her relationship with boyfriend Charlie Jones. In a candid video shared on Tuesday, April 7, 2026, Kyallo confirmed a nine-year age difference between them, emphasizing the genuine connection they share amidst public curiosity about their romance.
 
 Betty Kyallo Addresses Nine-Year Age Gap
