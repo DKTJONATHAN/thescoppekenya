@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Wed, 27 May 2026 10:40:12 GMT</pubDate>
+    <pubDate>Wed, 27 May 2026 14:00:18 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[WhatsApp to launch usernames to enhance user privacy]]></title>
+      <link>https://zandani.co.ke/article/whatsapp-usernames-privacy-feature-launch</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/whatsapp-usernames-privacy-feature-launch</guid>
+      <pubDate>Wed, 27 May 2026 13:48:07 GMT</pubDate>
+      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
+      <description><![CDATA[WhatsApp is testing a new feature that lets users create unique usernames. This optional update aims to improve privacy by hiding mobile phone numbers.]]></description>
+      <enclosure url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/whatsapp-messenger.jpg?itok=8YuqI9vl" type="image/jpeg" />
+      <media:content url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/whatsapp-messenger.jpg?itok=8YuqI9vl" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/whatsapp-messenger.jpg?itok=8YuqI9vl" alt="WhatsApp to launch usernames to enhance user privacy" /><p>WhatsApp is testing a new feature that lets users create unique usernames. This optional update aims to improve privacy by hiding mobile phone numbers.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[DCI arrests Evans Onyango Kawala alias Kidero Jasuba over inciteful viral video]]></title>
       <link>https://zandani.co.ke/article/dci-arrests-evans-onyango-kawala-alias-kidero-jasuba-over-inciteful-</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/car-and-spikes101.jpg?itok=bccGBK5B" type="image/jpeg" />
       <media:content url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/car-and-spikes101.jpg?itok=bccGBK5B" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/car-and-spikes101.jpg?itok=bccGBK5B" alt="Safety risks of spiked wheel covers on heavy commercial vehicles" /><p>Safety risks of spiked wheel covers on heavy commercial vehicles: Authorities in Western nations are restricting spiked lug nut covers on trucks due to injury</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Otile Brown Urges Government Action Over Rising Child Abductions]]></title>
-      <link>https://zandani.co.ke/article/otile-brown-urges-government-action-on-rising-child-abductions</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/otile-brown-urges-government-action-on-rising-child-abductions</guid>
-      <pubDate>Sun, 24 May 2026 17:17:46 GMT</pubDate>
-      <dc:creator><![CDATA[Martin Kihara]]></dc:creator>
-      <description><![CDATA[Otile Brown Urges Government Action Over Rising Child Abductions: Musician Otile Brown slams Kenyan leaders as statistics reveal 23 children are reported]]></description>
-      <enclosure url="https://cdn.radioafrica.digital/image/2026/05/31ec9728-db39-4e08-9685-3eec26431107.jpg?1779642994358" type="image/jpeg" />
-      <media:content url="https://cdn.radioafrica.digital/image/2026/05/31ec9728-db39-4e08-9685-3eec26431107.jpg?1779642994358" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://cdn.radioafrica.digital/image/2026/05/31ec9728-db39-4e08-9685-3eec26431107.jpg?1779642994358" alt="Otile Brown Urges Government Action Over Rising Child Abductions" /><p>Otile Brown Urges Government Action Over Rising Child Abductions: Musician Otile Brown slams Kenyan leaders as statistics reveal 23 children are reported</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
