@@ -209,10 +209,10 @@
     "9f3bacb53bfcff25aea776dd64c9fc8d",
     "00c8fa806bd10091722d019116f0cfe2",
     "976e9c1ac5ae3542a9f44130a61cc089",
-    "b3435397d515cb66529db03325c44ec4"
+    "b3435397d515cb66529db03325c44ec4",
+    "7bee74927ecc487e9e364d2b88a28442"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Trend Take",
     "Reaction Round-up",
@@ -241,10 +241,10 @@
     "Hard News Lead",
     "Profile Beat",
     "Explainer",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
-    "impact_on_citizens|Sports Illustrated|Profile Beat",
     "impact_on_citizens|Science Fiction|Trend Take",
     "impact_on_citizens|relationship|Reaction Round-up",
     "myth_vs_fact|Late-night television|Explainer",
@@ -323,6 +323,7 @@
     "story_progression|HBO|Hard News Lead",
     "story_progression|animal activism|Profile Beat",
     "policy_gap|The Secret Lives of Mormon Wives|Explainer",
-    "story_progression|parenting|Reaction Round-up"
+    "story_progression|parenting|Reaction Round-up",
+    "story_progression|podcast|Trend Take"
   ]
 }
