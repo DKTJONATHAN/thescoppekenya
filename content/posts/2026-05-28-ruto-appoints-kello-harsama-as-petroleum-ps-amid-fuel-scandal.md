@@ -1,16 +1,20 @@
 ---
 title: "Ruto Appoints Kello Harsama as Petroleum PS Amid Fuel Scandal"
 slug: "ruto-appoints-kello-harsama-as-petroleum-ps-amid-fuel-scandal"
-description: "President William Ruto has appointed Kello Harsama as the new Petroleum PS following the resignation of Mohamed Liban over a fuel importation scandal."
+description: "Ruto Appoints Kello Harsama as Petroleum PS Amid Fuel Scandal: President William Ruto has appointed Kello Harsama as the new Petroleum PS following the"
+excerpt: "A Strategic Pivot in the Energy Ministry President William Ruto has appointed Kello Harsama to lead the State Department for Petroleum as th"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/ruto-cabinet_0.jpg?itok=mS7yOuTJ"
 category: "News"
 tags: ["kenya", "william ruto", "government reshuffle", "petroleum", "fuel scandal", "principal secretary"]
+canonical: "https://zandani.co.ke/article/ruto-appoints-kello-harsama-as-petroleum-ps-amid-fuel-scandal"
 date: "2026-05-28T14:46:26Z"
 dateModified: "2026-05-28T14:46:26Z"
+focusKeyword: "Ruto Appoints Kello Harsama as Petroleum PS Amid Fuel Scandal"
 schema: "NewsArticle"
 ---
+
+Ruto Appoints Kello Harsama as Petroleum PS Amid Fuel Scandal is central to this update for Kenyan readers.
 
 ## A Strategic Pivot in the Energy Ministry
 
@@ -35,3 +39,18 @@ Opposition leaders and parliamentary committees have reacted with cautious scrut
 Public sentiment remains focused on the economic impact, as citizens continue to navigate the high cost of living linked to energy prices. Many are drawing parallels between these government shifts and broader concerns regarding privacy and state accountability, similar to recent discussions over data protection in financial services like [M-Pesa transactions](https://zandani.co.ke/article/m-pesa-transactions-hide-customer-numbers-by-default). The public is waiting to see if these appointments signify a genuine policy correction or simply a change in the faces managing the same processes.
 
 Attention now shifts to the upcoming parliamentary vetting sessions and the first audits of the petroleum department under Harsama’s leadership. The public and industry stakeholders will be monitoring how the new leadership handles existing fuel supply contracts and whether there will be a departure from the procurement strategies that led to the current crisis.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
