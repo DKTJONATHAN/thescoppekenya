@@ -206,10 +206,10 @@
     "2c1ad4247c82d2d0bf6b0350d6ee5d81",
     "769ac9209f974e5be293b20d8706a736",
     "c4d3d4bad3fd71876e9d021d18d64eb4",
-    "9f3bacb53bfcff25aea776dd64c9fc8d"
+    "9f3bacb53bfcff25aea776dd64c9fc8d",
+    "00c8fa806bd10091722d019116f0cfe2"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
     "Explainer",
@@ -238,10 +238,10 @@
     "Explainer",
     "Reaction Round-up",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Profile Beat"
   ],
   "angle_history": [
-    "accountability|Melissa Gilbert|Reaction Round-up",
     "policy_gap|Seinfeld|Hard News Lead",
     "impact_on_citizens|Netflix|Explainer",
     "impact_on_citizens|Sports Illustrated|Profile Beat",
@@ -320,6 +320,7 @@
     "money_follow|The Bachelor|Explainer",
     "story_progression|reality television|Reaction Round-up",
     "story_progression|Britain's Got Talent|Trend Take",
-    "story_progression|HBO|Hard News Lead"
+    "story_progression|HBO|Hard News Lead",
+    "story_progression|animal activism|Profile Beat"
   ]
 }
