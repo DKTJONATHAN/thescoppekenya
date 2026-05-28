@@ -1028,6 +1028,8 @@ Tony Pulis discusses challenges of late-season football motivatio is central to 
 
 Tony Pulis discusses challenges of late-season football motivatio is central to this update for Kenyan readers.
 
+Tony Pulis discusses challenges of late-season football motivatio is central to this update for Kenyan readers.
+
 ## The 40-Point Illusion: Why Kenyan Football Fans Should Stop Expecting Professionalism from Overpaid Premier League Loafers
 
 While the mainstream press swoons over Tony Pulis discussing late-season tactical rotation, they are missing the rotting core of the issue. This is not about management philosophy. It is about a blatant, institutionalized laziness that defines the modern footballer once their paycheck is secure.
