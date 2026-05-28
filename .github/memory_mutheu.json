@@ -210,10 +210,10 @@
     "00c8fa806bd10091722d019116f0cfe2",
     "976e9c1ac5ae3542a9f44130a61cc089",
     "b3435397d515cb66529db03325c44ec4",
-    "7bee74927ecc487e9e364d2b88a28442"
+    "7bee74927ecc487e9e364d2b88a28442",
+    "ceb249fa43e5ebb2a226cfcfce33f7ce"
   ],
   "style_history": [
-    "Hard News Lead",
     "Trend Take",
     "Reaction Round-up",
     "Explainer",
@@ -242,10 +242,10 @@
     "Profile Beat",
     "Explainer",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "impact_on_citizens|Science Fiction|Trend Take",
     "impact_on_citizens|relationship|Reaction Round-up",
     "myth_vs_fact|Late-night television|Explainer",
     "next_48_hours|Outlander|Profile Beat",
@@ -324,6 +324,7 @@
     "story_progression|animal activism|Profile Beat",
     "policy_gap|The Secret Lives of Mormon Wives|Explainer",
     "story_progression|parenting|Reaction Round-up",
-    "story_progression|podcast|Trend Take"
+    "story_progression|podcast|Trend Take",
+    "accountability|Six Flags|Profile Beat"
   ]
 }
