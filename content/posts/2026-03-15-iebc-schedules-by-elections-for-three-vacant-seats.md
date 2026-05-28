@@ -1111,6 +1111,8 @@ IEBC schedules by-elections for three vacant seats is central to this update for
 
 IEBC schedules by-elections for three vacant seats is central to this update for Kenyan readers.
 
+IEBC schedules by-elections for three vacant seats is central to this update for Kenyan readers.
+
 The Independent Electoral and Boundaries Commission (IEBC) has scheduled by-elections for May 14, 2026, to fill three vacant elective seats. These include the Member of National Assembly position for Emurua Dikirr Constituency and two county assembly wards, Porro Ward and Endo Ward, following recent declarations of vacancy.
 
 By-Election Timeline Set
