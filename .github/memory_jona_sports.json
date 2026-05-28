@@ -195,10 +195,10 @@
     "263c8e95aaef21af3e40a8796180f7e0",
     "aa7dd1f27e29160bc510509db4872f32",
     "46ec01dc15a52ef09ccf8fb8c673532b",
-    "b5fc3c5c98e34c29d5f0bb49de382429"
+    "b5fc3c5c98e34c29d5f0bb49de382429",
+    "4a579738f30d731d8800ac07754e0a16"
   ],
   "style_history": [
-    "Cynical Pundit",
     "Stat Story",
     "Tactical Take",
     "Match Report",
@@ -227,10 +227,10 @@
     "Cynical Pundit",
     "Player Profile Beat",
     "Match Report",
-    "Stat Story"
+    "Stat Story",
+    "Cynical Pundit"
   ],
   "angle_history": [
-    "myth_vs_fact|FA Youth Cup|Stat Story",
     "accountability|League One|Cynical Pundit",
     "accountability|Real Madrid|Match Report",
     "winners_losers|Seamus Coleman|Player Profile Beat",
@@ -309,6 +309,7 @@
     "accountability|Premier League|Cynical Pundit",
     "winners_losers|fixture congestion|Player Profile Beat",
     "timeline_shift|Sunderland AFC|Match Report",
-    "winners_losers|Transfer talks|Stat Story"
+    "winners_losers|Transfer talks|Stat Story",
+    "policy_gap|football|Cynical Pundit"
   ]
 }
