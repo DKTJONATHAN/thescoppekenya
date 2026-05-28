@@ -172,10 +172,10 @@
     "47a8c2fd309556cadd9c4bf6c445ff6c",
     "fa78d60b4db0b3020178ffded59b5ce6",
     "8b5272859d2e2554254e0513672b98e0",
-    "9dd3879b4c9d0b9c42ac86e70c47f45e"
+    "9dd3879b4c9d0b9c42ac86e70c47f45e",
+    "c355a59e9ba718b26c3e0ee745cc25a2"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction & Voices",
     "Context Backgrounder",
     "Power Accountability",
@@ -204,10 +204,10 @@
     "Explainer",
     "Reaction & Voices",
     "Power Accountability",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Explainer"
   ],
   "angle_history": [
-    "money_follow|National Treasury|Context Backgrounder",
     "money_follow|Affordable Housing Programme|Hard News Lead",
     "myth_vs_fact|EACC|Reaction & Voices",
     "policy_gap|Ministry of Interior|Explainer",
@@ -286,6 +286,7 @@
     "story_progression|WhatsApp|Explainer",
     "money_follow|Matatu Workers Union|Reaction & Voices",
     "story_progression|KUCCPS|Power Accountability",
-    "policy_gap|KeNHA|Context Backgrounder"
+    "policy_gap|KeNHA|Context Backgrounder",
+    "winners_losers|NTSA|Explainer"
   ]
 }
