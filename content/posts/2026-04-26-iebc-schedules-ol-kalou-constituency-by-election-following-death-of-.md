@@ -1113,6 +1113,8 @@ IEBC schedules Ol Kalou constituency by-election following d is central to this 
 
 IEBC schedules Ol Kalou constituency by-election following d is central to this update for Kenyan readers.
 
+IEBC schedules Ol Kalou constituency by-election following d is central to this update for Kenyan readers.
+
 The Independent Electoral and Boundaries Commission (IEBC) has scheduled the Ol Kalou Constituency by-election for Thursday, July 16, 2026. This follows the official declaration of the seat as vacant in Nyandarua County after the death of area Member of Parliament David Njuguna Kiaraho.
 
 ## IEBC Schedules Ol Kalou By-election
