@@ -211,10 +211,10 @@
     "976e9c1ac5ae3542a9f44130a61cc089",
     "b3435397d515cb66529db03325c44ec4",
     "7bee74927ecc487e9e364d2b88a28442",
-    "ceb249fa43e5ebb2a226cfcfce33f7ce"
+    "ceb249fa43e5ebb2a226cfcfce33f7ce",
+    "ebef5471243442371cf8a31cfca01a10"
   ],
   "style_history": [
-    "Trend Take",
     "Reaction Round-up",
     "Explainer",
     "Hard News Lead",
@@ -243,10 +243,10 @@
     "Explainer",
     "Reaction Round-up",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "impact_on_citizens|relationship|Reaction Round-up",
     "myth_vs_fact|Late-night television|Explainer",
     "next_48_hours|Outlander|Profile Beat",
     "myth_vs_fact|Outlander|Trend Take",
@@ -325,6 +325,7 @@
     "policy_gap|The Secret Lives of Mormon Wives|Explainer",
     "story_progression|parenting|Reaction Round-up",
     "story_progression|podcast|Trend Take",
-    "accountability|Six Flags|Profile Beat"
+    "accountability|Six Flags|Profile Beat",
+    "story_progression|Helen Mirren|Hard News Lead"
   ]
 }
