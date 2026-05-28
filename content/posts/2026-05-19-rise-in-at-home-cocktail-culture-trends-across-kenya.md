@@ -352,6 +352,8 @@ Rise in At-Home Cocktail Culture Trends Across Kenya is central to this update f
 
 Rise in At-Home Cocktail Culture Trends Across Kenya is central to this update for Kenyan readers.
 
+Rise in At-Home Cocktail Culture Trends Across Kenya is central to this update for Kenyan readers.
+
 ## The Rise of the Living Room Mixologist
 
 The Kenyan social landscape is undergoing a quiet, fundamental transition. For years, social standing was measured by the velvet ropes of Nairobi’s high-end lounges and the exclusivity of a VIP table in Westlands or Kileleshwa. Today, that hierarchy is collapsing, replaced by the intimate glow of a home bar cart. In modern apartments, the focus has shifted from being seen in the right places to the art of creating the right experience. It is a transition defined by creative control and the desire for visual storytelling, where the cocktail shaker has become the essential accessory of the modern home.
