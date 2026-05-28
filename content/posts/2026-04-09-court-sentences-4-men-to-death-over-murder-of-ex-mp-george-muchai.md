@@ -1107,6 +1107,8 @@ Court Sentences 4 Men to Death Over Murder of Ex-MP George M is central to this 
 
 Court Sentences 4 Men to Death Over Murder of Ex-MP George M is central to this update for Kenyan readers.
 
+Court Sentences 4 Men to Death Over Murder of Ex-MP George M is central to this update for Kenyan readers.
+
 Four men have been sentenced to death today, Thursday, April 9, 2026, for the robbery with violence and murder of former Kabete Member of Parliament George Muchai, his two bodyguards, and driver. Milimani Chief Magistrate Lucas Onyina delivered the ruling in Nairobi, concluding a decade-long case.
 
 Convicts Sentenced in High-Profile Murder Case Milimani Chief Magistrate Lucas Onyina issued the judgment on Thursday, April 9, 2026, after finding six individuals guilty of multiple counts, including robbery with violence and unlawful possession of firearms and ammunition. Four main convicts-Erick Munyera, Raphael Kimani, Mustafa Kimani, and Stephen Asitiva-received the death sentence for their key roles in the violent robbery that resulted in the deaths of Muchai, his two bodyguards, and his driver. The court determined the nature of the crime met the legal threshold for the death sentence under the law governing robbery with violence. Two other accused individuals, Jane Wanjiru and Margaret Njeri, were handed 10-year prison terms each for unlawful possession of firearms and ammunition; evidence did not place them directly at the crime scene but linked them to related offenses.
