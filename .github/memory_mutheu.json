@@ -207,10 +207,10 @@
     "769ac9209f974e5be293b20d8706a736",
     "c4d3d4bad3fd71876e9d021d18d64eb4",
     "9f3bacb53bfcff25aea776dd64c9fc8d",
-    "00c8fa806bd10091722d019116f0cfe2"
+    "00c8fa806bd10091722d019116f0cfe2",
+    "976e9c1ac5ae3542a9f44130a61cc089"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Explainer",
     "Hard News Lead",
@@ -239,10 +239,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Explainer"
   ],
   "angle_history": [
-    "policy_gap|Seinfeld|Hard News Lead",
     "impact_on_citizens|Netflix|Explainer",
     "impact_on_citizens|Sports Illustrated|Profile Beat",
     "impact_on_citizens|Science Fiction|Trend Take",
@@ -321,6 +321,7 @@
     "story_progression|reality television|Reaction Round-up",
     "story_progression|Britain's Got Talent|Trend Take",
     "story_progression|HBO|Hard News Lead",
-    "story_progression|animal activism|Profile Beat"
+    "story_progression|animal activism|Profile Beat",
+    "policy_gap|The Secret Lives of Mormon Wives|Explainer"
   ]
 }
