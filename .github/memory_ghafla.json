@@ -221,10 +221,10 @@
     "4b68b01b10740eab3c0457e46ba81f59",
     "4904322def7a797fd1b18d06690011b4",
     "632a251f61bac7264ce0c855ef1f4c49",
-    "b2e70208feaa0c5d69a6e05c826c75d7"
+    "b2e70208feaa0c5d69a6e05c826c75d7",
+    "acfc50fdac2030c417b4e8c9b2159b48"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
@@ -253,7 +253,8 @@
     "Profile Beat",
     "Trend Take",
     "Reaction Round-up",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Profile Beat"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -315,6 +316,7 @@
     "accountability|National Police Service|Profile Beat",
     "winners_losers|Samidoh|Trend Take",
     "winners_losers|Kenyan Politics|Reaction Round-up",
-    "policy_gap|transgender|Receipts Piece"
+    "policy_gap|transgender|Receipts Piece",
+    "policy_gap|Kenya Power|Profile Beat"
   ]
 }
