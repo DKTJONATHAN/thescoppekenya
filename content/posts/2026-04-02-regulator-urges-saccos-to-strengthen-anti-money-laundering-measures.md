@@ -1117,6 +1117,8 @@ Regulator Urges SACCOs to Strengthen Anti-Money Laundering M is central to this 
 
 Regulator Urges SACCOs to Strengthen Anti-Money Laundering M is central to this update for Kenyan readers.
 
+Regulator Urges SACCOs to Strengthen Anti-Money Laundering M is central to this update for Kenyan readers.
+
 The SACCO Societies Regulatory Authority (SASSRA) has urged regulated SACCOs to fortify their Anti-Money Laundering (AML) and Proliferation Financing (PF) compliance frameworks. This directive, issued during a virtual sensitization session, aims to safeguard members' savings and uphold the integrity of the sector amidst recent controversies.
 
 Strengthening Financial Integrity SASSRA's Chief Executive Officer, David Sandagi, underscored the critical importance of robust compliance systems. He emphasized that these systems are vital for meeting legal obligations and, crucially, for protecting members' funds. The Authority noted SACCOs' significant role in the nation's financial ecosystem, necessitating unwavering transparency and accountability standards.
