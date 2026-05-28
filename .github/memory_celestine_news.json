@@ -174,10 +174,10 @@
     "8b5272859d2e2554254e0513672b98e0",
     "9dd3879b4c9d0b9c42ac86e70c47f45e",
     "c355a59e9ba718b26c3e0ee745cc25a2",
-    "97cdb0d9f839fca185daf90cc066cf48"
+    "97cdb0d9f839fca185daf90cc066cf48",
+    "6087bd2bf211c191dcee8af270d160e5"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Power Accountability",
     "Hard News Lead",
     "Reaction & Voices",
@@ -206,10 +206,10 @@
     "Power Accountability",
     "Context Backgrounder",
     "Explainer",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "myth_vs_fact|EACC|Reaction & Voices",
     "policy_gap|Ministry of Interior|Explainer",
     "policy_gap|Huduma Kenya|Power Accountability",
     "timeline_shift|NGOs|Hard News Lead",
@@ -288,6 +288,7 @@
     "story_progression|KUCCPS|Power Accountability",
     "policy_gap|KeNHA|Context Backgrounder",
     "winners_losers|NTSA|Explainer",
-    "story_progression|Kenya|Hard News Lead"
+    "story_progression|Kenya|Hard News Lead",
+    "money_follow|KeNHA|Reaction & Voices"
   ]
 }
