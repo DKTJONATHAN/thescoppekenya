@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [The Elephant in the Room and the Echoes of Westminster](https://zandani.co.ke/article/the-elephant-in-the-room-and-the-echoes-of-westminster) - Whispers of betrayal and grand designs follow a powerful figure, echoing a historical drama where one man's political survival in 2026 hangs by a thread.
 - [Steve Clarke signs four-year contract extension with Scotland](https://zandani.co.ke/article/steve-clarke-signs-four-year-contract-extension-with-scotland) - Scotland manager Steve Clarke has signed a new contract extending his leadership through the next World Cup and the 2028 European Championships.
 - [Nick Jonas recounts awkward audition blunder during podcast episode](https://zandani.co.ke/article/nick-jonas-recounts-awkward-audition-blunder-on-podcast) - Nick Jonas recounts awkward audition blunder during podcast episo: Nick Jonas shares a humiliating story about failing to recognize a director during a film
 - [Persistent Police Violence During Public Protests in Kenya](https://zandani.co.ke/article/police-violence-during-kenyan-protests) - Persistent Police Violence During Public Protests in Kenya: Kenya faces a cycle of civil unrest as frequent protests against governance and taxation are often
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Utumishi Academy students traumatized by fire as government officials attend National Prayer Breakfast](https://zandani.co.ke/article/utumishi-academy-students-traumatized-by-fire-as-government-official) - Utumishi Academy students traumatized by fire as government offic: Utumishi Academy students are reeling from a devastating dormitory fire as the public
 - [Paul Rudd opens up about his children seeing his film roles](https://zandani.co.ke/article/paul-rudd-discusses-childrens-reactions-to-his-acting-roles) - Paul Rudd opens up about his children seeing his film roles: Actor Paul Rudd shares how his children reacted after unexpectedly watching his movie and
 - [Kenya Mining Sector Declines Following Base Titanium Closure](https://zandani.co.ke/article/kenya-mining-sector-declines-following-base-titanium-closure) - Kenya Mining Sector Declines Following Base Titanium Closure: Kenya faces a fiscal challenge as the mining sector records a production drop after the closure
-- [Kenya strengthens global flower trade lead ahead of IFTEX expo](https://zandani.co.ke/article/kenya-strengthens-global-flower-trade-lead-ahead-of-iftex) - Kenya strengthens global flower trade lead ahead of IFTEX expo: Kenya solidifies its position as a top global flower exporter by enhancing phytosanitary
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
