@@ -196,10 +196,10 @@
     "aa7dd1f27e29160bc510509db4872f32",
     "46ec01dc15a52ef09ccf8fb8c673532b",
     "b5fc3c5c98e34c29d5f0bb49de382429",
-    "4a579738f30d731d8800ac07754e0a16"
+    "4a579738f30d731d8800ac07754e0a16",
+    "7eb07215ad2504b28407bbfc3652e1bc"
   ],
   "style_history": [
-    "Stat Story",
     "Tactical Take",
     "Match Report",
     "Player Profile Beat",
@@ -228,10 +228,10 @@
     "Player Profile Beat",
     "Match Report",
     "Stat Story",
-    "Cynical Pundit"
+    "Cynical Pundit",
+    "Tactical Take"
   ],
   "angle_history": [
-    "accountability|League One|Cynical Pundit",
     "accountability|Real Madrid|Match Report",
     "winners_losers|Seamus Coleman|Player Profile Beat",
     "myth_vs_fact|Manchester United|Stat Story",
@@ -310,6 +310,7 @@
     "winners_losers|fixture congestion|Player Profile Beat",
     "timeline_shift|Sunderland AFC|Match Report",
     "winners_losers|Transfer talks|Stat Story",
-    "policy_gap|football|Cynical Pundit"
+    "policy_gap|football|Cynical Pundit",
+    "story_progression|David Raya|Tactical Take"
   ]
 }
