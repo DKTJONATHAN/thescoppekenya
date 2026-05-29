@@ -212,10 +212,10 @@
     "b3435397d515cb66529db03325c44ec4",
     "7bee74927ecc487e9e364d2b88a28442",
     "ceb249fa43e5ebb2a226cfcfce33f7ce",
-    "ebef5471243442371cf8a31cfca01a10"
+    "ebef5471243442371cf8a31cfca01a10",
+    "e2eb641079052ef5d303a4907c18bf2f"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Explainer",
     "Hard News Lead",
     "Profile Beat",
@@ -244,10 +244,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "myth_vs_fact|Late-night television|Explainer",
     "next_48_hours|Outlander|Profile Beat",
     "myth_vs_fact|Outlander|Trend Take",
     "money_follow|data-privacy|Hard News Lead",
@@ -326,6 +326,7 @@
     "story_progression|parenting|Reaction Round-up",
     "story_progression|podcast|Trend Take",
     "accountability|Six Flags|Profile Beat",
-    "story_progression|Helen Mirren|Hard News Lead"
+    "story_progression|Helen Mirren|Hard News Lead",
+    "policy_gap|Data processing|Explainer"
   ]
 }
