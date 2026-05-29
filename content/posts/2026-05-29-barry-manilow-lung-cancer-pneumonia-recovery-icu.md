@@ -14,6 +14,8 @@ focusKeyword: "'Barry Manilow Details Lung Cancer Battle and Severe Pneumonia Re
 schema: "NewsArticle"
 ---
 
+'Barry Manilow Details Lung Cancer Battle and Severe Pneumonia Re is central to this update for Kenyan readers.
+
 "Barry Manilow Details Lung Cancer Battle and Severe Pneumonia Re is central to this update for Kenyan readers.
 
 ## When Recovery Takes Its Time: Barry Manilow's Journey Uncovers a New Celebrity Truth
