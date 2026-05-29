@@ -179,10 +179,10 @@
     "697b1c3f88f7397ba02a957d503f9f64",
     "8379220209d2b78638f8735933a5b505",
     "09190b26d83f14ce2f6669209e41e983",
-    "9233fa60dfc5145e6a209ff721dbab96"
+    "9233fa60dfc5145e6a209ff721dbab96",
+    "444c3d6599668ac7091174870690205d"
   ],
   "style_history": [
-    "Explainer",
     "Power Accountability",
     "Hard News Lead",
     "Context Backgrounder",
@@ -211,10 +211,10 @@
     "Context Backgrounder",
     "Explainer",
     "Hard News Lead",
-    "Power Accountability"
+    "Power Accountability",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "timeline_shift|education|Context Backgrounder",
     "impact_on_citizens|German Embassy|Explainer",
     "accountability|femicide|Hard News Lead",
     "money_follow|Kenya|Power Accountability",
@@ -293,6 +293,7 @@
     "timeline_shift|Meta|Context Backgrounder",
     "policy_gap|Ebola|Explainer",
     "policy_gap|Ebola|Hard News Lead",
-    "accountability|Ebola|Power Accountability"
+    "accountability|Ebola|Power Accountability",
+    "story_progression|Jubilee Party|Reaction & Voices"
   ]
 }
