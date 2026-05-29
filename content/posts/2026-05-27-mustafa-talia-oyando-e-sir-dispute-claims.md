@@ -70,6 +70,8 @@ Mustafa and Talia Oyando Disagree Over E-Sir History is central to this update f
 
 Mustafa and Talia Oyando Disagree Over E-Sir History is central to this update for Kenyan readers.
 
+Mustafa and Talia Oyando Disagree Over E-Sir History is central to this update for Kenyan readers.
+
 ## E-Sir Legacy Re-examined by Mustafa and Talia Oyando
 
 The golden age of Kenyan hip-hop is being reframed through a modern lens as Colonel Mustafa and Talia Oyando clash over old memories. At the heart of the dispute is the late E-Sir and a history that remains fiercely protected by those who lived it.

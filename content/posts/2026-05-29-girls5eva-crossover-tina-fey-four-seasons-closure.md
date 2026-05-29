@@ -14,6 +14,8 @@ focusKeyword: "'Girls5Eva Crossover Provides Closure in Tina Fey's The Four Seas
 schema: "NewsArticle"
 ---
 
+'Girls5Eva Crossover Provides Closure in Tina Fey's The Four Seas is central to this update for Kenyan readers.
+
 "Girls5Eva Crossover Provides Closure in Tina Fey's The Four Seas is central to this update for Kenyan readers.
 
 ## Tina Fey's Thoughtful Nod: A *Girls5Eva* Crossover Delights Fans
