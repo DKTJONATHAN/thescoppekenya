@@ -177,10 +177,10 @@
     "97cdb0d9f839fca185daf90cc066cf48",
     "6087bd2bf211c191dcee8af270d160e5",
     "697b1c3f88f7397ba02a957d503f9f64",
-    "8379220209d2b78638f8735933a5b505"
+    "8379220209d2b78638f8735933a5b505",
+    "09190b26d83f14ce2f6669209e41e983"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Context Backgrounder",
     "Explainer",
     "Power Accountability",
@@ -209,10 +209,10 @@
     "Hard News Lead",
     "Reaction & Voices",
     "Context Backgrounder",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "timeline_shift|NGOs|Hard News Lead",
     "impact_on_citizens|EPRA|Reaction & Voices",
     "timeline_shift|education|Context Backgrounder",
     "impact_on_citizens|German Embassy|Explainer",
@@ -291,6 +291,7 @@
     "story_progression|Kenya|Hard News Lead",
     "money_follow|KeNHA|Reaction & Voices",
     "timeline_shift|Meta|Context Backgrounder",
-    "policy_gap|Ebola|Explainer"
+    "policy_gap|Ebola|Explainer",
+    "policy_gap|Ebola|Hard News Lead"
   ]
 }
