@@ -216,10 +216,10 @@
     "e2eb641079052ef5d303a4907c18bf2f",
     "d22c03454d45c4d206f309d44a5474c5",
     "2083320e1951faf357c089f82f7c3f30",
-    "d7519a0c960dcecfacf43f7eeef9a200"
+    "d7519a0c960dcecfacf43f7eeef9a200",
+    "836d077f0a64fcde1299df7526ab5633"
   ],
   "style_history": [
-    "Trend Take",
     "Reaction Round-up",
     "Explainer",
     "Profile Beat",
@@ -248,10 +248,10 @@
     "Explainer",
     "Trend Take",
     "Profile Beat",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Explainer"
   ],
   "angle_history": [
-    "timeline_shift|Sheinelle Jones|Reaction Round-up",
     "impact_on_citizens|Martin Short|Explainer",
     "winners_losers|Outlander|Trend Take",
     "timeline_shift|Matthew McConaughey|Hard News Lead",
@@ -330,6 +330,7 @@
     "policy_gap|Data processing|Explainer",
     "myth_vs_fact|Barry Manilow|Trend Take",
     "story_progression|TV show|Profile Beat",
-    "timeline_shift|Natalie Wood|Reaction Round-up"
+    "timeline_shift|Natalie Wood|Reaction Round-up",
+    "timeline_shift|na|Explainer"
   ]
 }
