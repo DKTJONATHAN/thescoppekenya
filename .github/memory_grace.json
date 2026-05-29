@@ -156,10 +156,10 @@
     "a6196a0255e4e3f118c4e1d1c0a121fe",
     "a6c04ee79398b457af2f29d9b24ee86e",
     "1fddff95c2bec76c46162d2539fa9011",
-    "d3593910c70bfdd1b49b5debc350b742"
+    "d3593910c70bfdd1b49b5debc350b742",
+    "5cc4e194f002c363a11840cbd9925698"
   ],
   "style_history": [
-    "SME Angle",
     "Backgrounder",
     "Markets Report",
     "Power Accountability",
@@ -188,7 +188,8 @@
     "Explainer",
     "Markets Report",
     "SME Angle",
-    "Backgrounder"
+    "Backgrounder",
+    "Explainer"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -257,6 +258,7 @@
     "impact_on_citizens|Banking|Explainer",
     "money_follow|Finance Bill 2026|Markets Report",
     "policy_gap|Ethio Telecom|SME Angle",
-    "winners_losers|mining|Backgrounder"
+    "winners_losers|mining|Backgrounder",
+    "money_follow|fintech|Explainer"
   ]
 }

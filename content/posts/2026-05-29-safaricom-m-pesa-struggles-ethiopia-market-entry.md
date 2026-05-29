@@ -1,0 +1,41 @@
+---
+title: "Why Safaricom M-Pesa is struggling to gain ground in Ethiopia"
+slug: "safaricom-m-pesa-struggles-ethiopia-market-entry"
+description: "Ethiopia's state-led digitalization and the dominance of Telebirr have created significant barriers for Safaricom's M-Pesa expansion in the country."
+author: "Grace Mkamburi"
+authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
+image: "https://assets.kenyanwallstreet.com/assets/6fbdaacb-20c1-4a57-b6b8-bc2b0dd395f4.webp"
+category: "Business"
+tags: ["safaricom", "m-pesa", "ethiopia", "fintech", "telebirr", "mobile money", "east africa business"]
+date: "2026-05-29T08:50:55Z"
+dateModified: "2026-05-29T08:50:55Z"
+schema: "NewsArticle"
+---
+
+## The Price of Expansion: Understanding Safaricom’s Ethiopian Challenge
+
+Safaricom shareholders are currently navigating the financial consequences of Ethiopia’s state-centric approach to digitalization. The company recently reported a US$364 million loss linked to its expansion into the Ethiopian market. For investors accustomed to consistent dividends from the Nairobi Securities Exchange, this shortfall highlights the volatility inherent in cross-border scaling when faced with complex regulatory hurdles.
+
+### Contrasting Paths: Market Innovation versus State Control
+
+Kenya’s M-Pesa success story was built on a market-led model. Private innovation moved at a rapid pace, often staying several steps ahead of government oversight. Ethiopia, however, is following a different blueprint. Under the Digital Ethiopia 2025 strategy, the government has prioritized centralized control through state-backed entities. 
+
+The launch of Telebirr in 2021 served as a definitive move to secure the government's role in the digital space before private players could establish a foothold. By the time private competitors entered the market, Telebirr had already secured over 52 million users, making it the dominant digital wallet for formalizing economic activity. 
+
+Safaricom entered this space after committing US$2.27 billion to a consortium. Despite this massive capital injection, the company is operating in a landscape engineered to favor state infrastructure. Unlike the competitive environment in Kenya, Ethiopia utilizes top-down mandates to ensure the government captures the majority of digital transaction benefits. Consequently, private fintech revenue in the country remained at a modest US$77,000 for the most recent fiscal year.
+
+### Regulatory Barriers and the Stifling of Financial Reach
+
+Beyond simple competition, Safaricom faces significant legal obstacles regarding customer access. Late in 2025, officials prevented the introduction of a telco-agnostic application for M-Pesa. This move restricted users to specific network parameters, stripping away the cross-platform flexibility that allowed the service to flourish across East Africa. Without the ability to operate across various service providers, any fintech platform struggles to achieve the network effect necessary for scaling.
+
+This regulatory bottleneck is the main reason why Safaricom’s 5.2 million Ethiopian subscribers have yet to generate a profit. While the government has successfully rolled out 30 million Fayda digital IDs to drive financial participation, these systems are tied to a framework that reinforces the state monopoly. For Kenyan investors, this means the resources used to build distribution networks and cell towers are currently locked behind policies that prioritize state sovereignty over open-market competition.
+
+### Navigating the Balance Sheet Pressure
+
+The Safaricom group’s consolidated profitability is feeling the strain of these regional headwinds. When a firm with such a significant domestic presence reports a loss of US$364 million, shareholders naturally worry about the long-term impact on dividend payouts and overall growth. Management has set a target to reach EBITDA break-even by the 2027 fiscal year, but hitting this milestone depends heavily on whether Addis Ababa adopts a more flexible policy stance.
+
+Unless the regulatory environment shifts to allow M-Pesa to operate as an independent service layer, the billions invested may continue to yield only theoretical returns. Investors who recently observed [President Ruto’s new laws designed to boost tech hubs and investment](https://zandani.co.ke/article/ruto-signs-new-laws-to-boost-investment-and-tech-hubs) are seeing a sharp contrast in Ethiopia, where local industrial policy favors protectionism. 
+
+Global market shifts, such as the period where [NVIDIA Overtook Silver in market valuation](https://zandani.co.ke/article/nvidia-overtakes-silver-as-global-market-dynamics-shift), serve as a reminder that capital flows where it is most welcome. For the local shareholder, the message is plain: regional growth is only as lucrative as the host nation's regulatory environment permits.
+
+Going forward, the next quarterly earnings briefing will be a critical indicator. Investors should watch for any signals from the Ethiopian government regarding the easing of restrictions on telco-agnostic access. That specific policy adjustment remains the most important variable in determining whether the massive initial investment eventually delivers value to the Kenyan public.
