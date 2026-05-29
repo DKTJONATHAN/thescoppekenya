@@ -176,10 +176,10 @@
     "c355a59e9ba718b26c3e0ee745cc25a2",
     "97cdb0d9f839fca185daf90cc066cf48",
     "6087bd2bf211c191dcee8af270d160e5",
-    "697b1c3f88f7397ba02a957d503f9f64"
+    "697b1c3f88f7397ba02a957d503f9f64",
+    "8379220209d2b78638f8735933a5b505"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction & Voices",
     "Context Backgrounder",
     "Explainer",
@@ -208,10 +208,10 @@
     "Explainer",
     "Hard News Lead",
     "Reaction & Voices",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Explainer"
   ],
   "angle_history": [
-    "policy_gap|Huduma Kenya|Power Accountability",
     "timeline_shift|NGOs|Hard News Lead",
     "impact_on_citizens|EPRA|Reaction & Voices",
     "timeline_shift|education|Context Backgrounder",
@@ -290,6 +290,7 @@
     "winners_losers|NTSA|Explainer",
     "story_progression|Kenya|Hard News Lead",
     "money_follow|KeNHA|Reaction & Voices",
-    "timeline_shift|Meta|Context Backgrounder"
+    "timeline_shift|Meta|Context Backgrounder",
+    "policy_gap|Ebola|Explainer"
   ]
 }
