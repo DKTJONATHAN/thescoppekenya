@@ -850,6 +850,8 @@ NEMA Invites Public Feedback on Three New High-Rise Developments is central to t
 
 NEMA Invites Public Feedback on Three New High-Rise Developments is central to this update for Kenyan readers.
 
+NEMA Invites Public Feedback on Three New High-Rise Developments is central to this update for Kenyan readers.
+
 ## Concrete Jungle Fatigue: Why Nairobi and Mombasa Residents are Pushing Back on High-Rise Expansion
 
 Nairobi and Mombasa residents are hitting a breaking point as NEMA opens the floor for public feedback on three massive new high-rise developments. Tired of shrinking skylines and strained infrastructure, locals are questioning if their neighborhoods can handle more.

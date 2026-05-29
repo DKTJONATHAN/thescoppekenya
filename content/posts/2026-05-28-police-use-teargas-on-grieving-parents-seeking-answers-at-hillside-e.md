@@ -1,18 +1,22 @@
 ---
 title: "Police Use Teargas on Grieving Parents Seeking Answers at Hillside Endarasha Academy"
 slug: "police-use-teargas-on-grieving-parents-seeking-answers-at-hillside-e"
-description: "Police deployed teargas against grieving parents demanding answers at Hillside Endarasha Academy following a dormitory fire that killed 21 pupils."
+description: "Police Use Teargas on Grieving Parents Seeking Answers at Hillsid: Police deployed teargas against grieving parents demanding answers at Hillside Endarasha"
+excerpt: "Grieving parents and community members gathered at Hillside Endarasha Academy in Nyeri on Thursday to seek answers following a dormitory fir"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: ""
+image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["hillside-endarasha-academy", "endarasha-fire-tragedy", "nyeri-school-fire", "kenyatta-national-hospital-protests"]
 canonical: "https://zandani.co.ke/article/police-use-teargas-on-grieving-parents-seeking-answers-at-hillside-e"
 date: "2026-05-28T23:39:34Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-05-28T23:39:34Z"
+focusKeyword: "Police Use Teargas on Grieving Parents Seeking Answers at Hillsid"
 schema: "NewsArticle"
 ---
+
+Police Use Teargas on Grieving Parents Seeking Answers at Hillsid is central to this update for Kenyan readers.
+
 Grieving parents and community members gathered at Hillside Endarasha Academy in Nyeri on Thursday to seek answers following a dormitory fire that killed 21 pupils. Instead of receiving support, families were met with a heavy police presence and volleys of teargas.
 
 ## State Response at Hillside Endarasha Academy Draws Widespread Condemnation
@@ -25,3 +29,18 @@ Critics are labeling the police response as both insensitive and profoundly unpr
 
 ### Systemic Failure in Crisis Management
 The events in Nyeri highlight a troubling pattern where the state perceives the public as a threat to be dispersed rather than a community in need of assistance. The image of parents fleeing from smoke canisters while searching for their loved ones has become a symbol of a broken system. Professionals and community leaders are now calling for a formal inquiry into the security tactics employed, asserting that when parents are searching for their children, they deserve clear communication and compassion rather than tactical force.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
