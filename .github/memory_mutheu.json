@@ -214,10 +214,10 @@
     "ceb249fa43e5ebb2a226cfcfce33f7ce",
     "ebef5471243442371cf8a31cfca01a10",
     "e2eb641079052ef5d303a4907c18bf2f",
-    "d22c03454d45c4d206f309d44a5474c5"
+    "d22c03454d45c4d206f309d44a5474c5",
+    "2083320e1951faf357c089f82f7c3f30"
   ],
   "style_history": [
-    "Hard News Lead",
     "Profile Beat",
     "Trend Take",
     "Reaction Round-up",
@@ -246,10 +246,10 @@
     "Profile Beat",
     "Hard News Lead",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "myth_vs_fact|Outlander|Trend Take",
     "money_follow|data-privacy|Hard News Lead",
     "timeline_shift|Sheinelle Jones|Reaction Round-up",
     "impact_on_citizens|Martin Short|Explainer",
@@ -328,6 +328,7 @@
     "accountability|Six Flags|Profile Beat",
     "story_progression|Helen Mirren|Hard News Lead",
     "policy_gap|Data processing|Explainer",
-    "myth_vs_fact|Barry Manilow|Trend Take"
+    "myth_vs_fact|Barry Manilow|Trend Take",
+    "story_progression|TV show|Profile Beat"
   ]
 }
