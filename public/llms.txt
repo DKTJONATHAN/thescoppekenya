@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Why African football must invest in local leagues over foreign ones](https://zandani.co.ke/article/africa-football-must-prioritize-local-leagues-over-foreign-clubs) - The massive popularity of European football in Africa highlights a need for greater institutional investment in local sports infrastructure and management.
 - [US deploys Ebola response team to Kenya amid court blockade](https://zandani.co.ke/article/us-deploys-ebola-response-team-to-kenya-amid-court-blockade) - The US is sending a health team to Kenya for Ebola monitoring while a High Court order halts the construction of a controversial quarantine facility.
 - [Alikiba Arrives in Nairobi for One Night Only Concert](https://zandani.co.ke/article/alikiba-arrives-in-nairobi-for-one-night-only-concert) - Alikiba Arrives in Nairobi for One Night Only Concert: Tanzanian star Alikiba has arrived in Nairobi to headline the premium One Night Only concert alongside
 - [How Kenyan Gen Z is Redefining Marriage and Gender Roles](https://zandani.co.ke/article/kenyan-gen-z-redefining-marriage-norms) - How Kenyan Gen Z is Redefining Marriage and Gender Roles: Kenyan youth are auditing traditional marriage norms, prioritizing mental well-being, emotional
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Parliament Summons Duale Over Controversial Ebola Quarantine Plan](https://zandani.co.ke/article/parliament-summons-duale-over-ebola-quarantine-center-dispute) - Parliament Summons Duale Over Controversial Ebola Quarantine Plan: The High Court has suspended a US-backed Ebola quarantine center in Laikipia County while
 - [Why Safaricom M-Pesa is struggling to gain ground in Ethiopia](https://zandani.co.ke/article/safaricom-m-pesa-struggles-ethiopia-market-entry) - Why Safaricom M-Pesa is struggling to gain ground in Ethiopia: Ethiopia's state-led digitalization and the dominance of Telebirr have created significant
 - [The Nile's Promise, Solar's Echo: Kenya 3000 Schools Solar Progress](https://zandani.co.ke/article/the-niles-promise-solars-echo-kenya-3000-schools-solar-progress) - The Nile's Promise, Solar's Echo: Kenya 3000 Schools Solar Progre: A grand vision unfolds for Kenya's future, reminiscent of distant waters and an era of
-- [Kenya Approves US Ebola Quarantine Facility in Laikipia County](https://zandani.co.ke/article/kenya-approves-us-ebola-quarantine-facility-in-laikipia) - Kenya Approves US Ebola Quarantine Facility in Laikipia County: The Kenyan government has permitted the US to build an Ebola quarantine site in Laikipia amid
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
