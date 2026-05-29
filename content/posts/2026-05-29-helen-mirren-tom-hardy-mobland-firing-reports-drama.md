@@ -14,6 +14,8 @@ focusKeyword: "'Helen Mirren Backs Tom Hardy Amid MobLand Firing Reports"
 schema: "NewsArticle"
 ---
 
+'Helen Mirren Backs Tom Hardy Amid MobLand Firing Reports is central to this update for Kenyan readers.
+
 "Helen Mirren Backs Tom Hardy Amid MobLand Firing Reports is central to this update for Kenyan readers.
 
 ## Mirren Stands Firm: Helen Mirren Backs Tom Hardy Amid 'MobLand' Firings
