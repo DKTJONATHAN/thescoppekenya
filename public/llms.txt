@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [How Kenyan Gen Z is Redefining Marriage and Gender Roles](https://zandani.co.ke/article/kenyan-gen-z-redefining-marriage-norms) - Kenyan youth are auditing traditional marriage norms, prioritizing mental well-being, emotional compatibility, and clear role divisions over convention.
 - [Gospel singer Rachel Muthoni burial halted over family dispute](https://zandani.co.ke/article/gospel-singer-rachel-muthoni-burial-halted-family-dispute) - The burial of gospel singer Rachel Muthoni Wandeto was cancelled following a standoff between her family and husband amid an ongoing DCI investigation.
 - [Nation mourns as lives are lost in Hillside Endarasha Academy dormitory fire](https://zandani.co.ke/article/nation-mourns-as-lives-are-lost-in-hillside-endarasha-academy-dormit) - The nation mourns the tragic loss of pupils following a devastating dormitory fire at Hillside Endarasha Academy in Nyeri County on September 5, 2024.
 - ["Data Processing Explained: Personalized Ads & Content](https://zandani.co.ke/article/data-processing-personalized-advertising-content) - Understand Za Ndani's data processing activities for personalized advertising and content. Learn how device information powers your tailored experience. Read more.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Kenya Approves US Ebola Quarantine Facility in Laikipia County](https://zandani.co.ke/article/kenya-approves-us-ebola-quarantine-facility-in-laikipia) - Kenya Approves US Ebola Quarantine Facility in Laikipia County: The Kenyan government has permitted the US to build an Ebola quarantine site in Laikipia amid
 - [Eric Omondi Executes a Successful Career Resurgence Following the Big Quiz Event](https://zandani.co.ke/article/eric-omondi-executes-a-successful-career-resurgence-following-the-bi) - Comedian Eric Omondi has successfully revitalized his Kenyan entertainment career following the triumph of his recent Big Quiz event and strategic rebranding.
 - [Police Use Teargas on Grieving Parents Seeking Answers at Hillside Endarasha Academy](https://zandani.co.ke/article/police-use-teargas-on-grieving-parents-seeking-answers-at-hillside-e) - Police Use Teargas on Grieving Parents Seeking Answers at Hillsid: Police deployed teargas against grieving parents demanding answers at Hillside Endarasha
-- ['Helen Mirren Backs Tom Hardy Amid MobLand Firing Reports](https://zandani.co.ke/article/helen-mirren-tom-hardy-mobland-firing-reports-drama) - 'Helen Mirren Backs Tom Hardy Amid MobLand Firing Reports: Helen Mirren publicly supported Tom Hardy on Instagram amid conflicting reports of his alleged
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
