@@ -14,6 +14,8 @@ focusKeyword: "'Natalie Wood's Legacy Honored by Daughter, Granddaughter & Exhib
 schema: "NewsArticle"
 ---
 
+'Natalie Wood's Legacy Honored by Daughter, Granddaughter & Exhib is central to this update for Kenyan readers.
+
 "Natalie Wood's Legacy Honored by Daughter, Granddaughter & Exhib is central to this update for Kenyan readers.
 
 ## Fans Applaud Natalie Wood Legacy Reimagined by Family
