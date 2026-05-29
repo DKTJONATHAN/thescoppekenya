@@ -1072,6 +1072,8 @@ Safaricom M-Pesa Visa Card User Base Grows Amid Lower Spending is central to thi
 
 Safaricom M-Pesa Visa Card User Base Grows Amid Lower Spending is central to this update for Kenyan readers.
 
+Safaricom M-Pesa Visa Card User Base Grows Amid Lower Spending is central to this update for Kenyan readers.
+
 ## Digital Survival: The Shifting Reality of M-Pesa Visa Adoption
 
 Safaricom has announced a sharp 62 percent increase in M-Pesa Visa card adoption, marking a significant milestone for East African fintech. Beneath this glossy headline, however, lies a more complex economic story. While the platform is expanding its reach, the average Kenyan consumer is pulling back on discretionary spending. This divergence reveals a transformation in how local users engage with digital finance, moving away from aspirational consumption toward a strategy of financial survival.

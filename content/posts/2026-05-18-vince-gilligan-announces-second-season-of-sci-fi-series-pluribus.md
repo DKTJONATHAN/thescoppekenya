@@ -398,6 +398,8 @@ Vince Gilligan Announces Second Season of Sci-Fi Series Pluribus is central to t
 
 Vince Gilligan Announces Second Season of Sci-Fi Series Pluribus is central to this update for Kenyan readers.
 
+Vince Gilligan Announces Second Season of Sci-Fi Series Pluribus is central to this update for Kenyan readers.
+
 ## The Hive Mind Paradox: Why Pluribus Reflects Our Modern Existential Crisis
 
 Vince Gilligan is turning his analytical gaze toward the mechanics of human survival with the renewal of his Apple TV sci-fi drama, Pluribus. Following its chilling November 2025 debut, the series has been greenlit for a second season, solidifying its place as a cornerstone of contemporary speculative fiction. At its core, the show confronts a haunting ultimatum: the promise of absolute communal safety versus the survival of the individual ego.
