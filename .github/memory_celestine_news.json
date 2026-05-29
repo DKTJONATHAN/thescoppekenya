@@ -180,10 +180,10 @@
     "8379220209d2b78638f8735933a5b505",
     "09190b26d83f14ce2f6669209e41e983",
     "9233fa60dfc5145e6a209ff721dbab96",
-    "444c3d6599668ac7091174870690205d"
+    "444c3d6599668ac7091174870690205d",
+    "a1548ce2e3a4a094eb052584a0f923aa"
   ],
   "style_history": [
-    "Power Accountability",
     "Hard News Lead",
     "Context Backgrounder",
     "Reaction & Voices",
@@ -212,10 +212,10 @@
     "Explainer",
     "Hard News Lead",
     "Power Accountability",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "impact_on_citizens|German Embassy|Explainer",
     "accountability|femicide|Hard News Lead",
     "money_follow|Kenya|Power Accountability",
     "policy_gap|fuel prices|Reaction & Voices",
@@ -294,6 +294,7 @@
     "policy_gap|Ebola|Explainer",
     "policy_gap|Ebola|Hard News Lead",
     "accountability|Ebola|Power Accountability",
-    "story_progression|Jubilee Party|Reaction & Voices"
+    "story_progression|Jubilee Party|Reaction & Voices",
+    "money_follow|Kenya Airways|Context Backgrounder"
   ]
 }
