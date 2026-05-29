@@ -5,7 +5,7 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Fri, 29 May 2026 09:01:34 GMT</pubDate>
+    <pubDate>Fri, 29 May 2026 09:03:58 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title><![CDATA[Parliament Summons Duale Over Controversial Ebola Quarantine Plan]]></title>
@@ -17,6 +17,17 @@
       <enclosure url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/duale_11.jpg?itok=sJVVMoK6" type="image/jpeg" />
       <media:content url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/duale_11.jpg?itok=sJVVMoK6" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/duale_11.jpg?itok=sJVVMoK6" alt="Parliament Summons Duale Over Controversial Ebola Quarantine Plan" /><p>The High Court has suspended a US-backed Ebola quarantine center in Laikipia County while Parliament demands answers from Health CS Aden Duale on the deal.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title><![CDATA[Why Safaricom M-Pesa is struggling to gain ground in Ethiopia]]></title>
+      <link>https://zandani.co.ke/article/safaricom-m-pesa-struggles-ethiopia-market-entry</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/safaricom-m-pesa-struggles-ethiopia-market-entry</guid>
+      <pubDate>Fri, 29 May 2026 08:50:55 GMT</pubDate>
+      <dc:creator><![CDATA[Grace Mkamburi]]></dc:creator>
+      <description><![CDATA[Ethiopia's state-led digitalization and the dominance of Telebirr have created significant barriers for Safaricom's M-Pesa expansion in the country.]]></description>
+      <enclosure url="https://assets.kenyanwallstreet.com/assets/6fbdaacb-20c1-4a57-b6b8-bc2b0dd395f4.webp" type="image/jpeg" />
+      <media:content url="https://assets.kenyanwallstreet.com/assets/6fbdaacb-20c1-4a57-b6b8-bc2b0dd395f4.webp" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://assets.kenyanwallstreet.com/assets/6fbdaacb-20c1-4a57-b6b8-bc2b0dd395f4.webp" alt="Why Safaricom M-Pesa is struggling to gain ground in Ethiopia" /><p>Ethiopia's state-led digitalization and the dominance of Telebirr have created significant barriers for Safaricom's M-Pesa expansion in the country.</p>]]></content:encoded>
     </item>
     <item>
       <title><![CDATA[The Nile's Promise, Solar's Echo: Kenya 3000 Schools Solar Progress]]></title>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/73bb4534-49a6-476e-9a2f-64f05ac46604/1000157332.jpg?t=1779715164" type="image/jpeg" />
       <media:content url="https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/73bb4534-49a6-476e-9a2f-64f05ac46604/1000157332.jpg?t=1779715164" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/73bb4534-49a6-476e-9a2f-64f05ac46604/1000157332.jpg?t=1779715164" alt="Kenya Proposes New Digital Taxes as National Debt Peaks" /><p>Kenya Proposes New Digital Taxes as National Debt Peaks: The Finance Bill introduces taxes on smartphones and cryptocurrency as Kenya debt exceeds KSh 13</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Flavour Sells Out London O2 Indigo with Highlife Performance]]></title>
-      <link>https://zandani.co.ke/article/flavour-sells-out-london-o2-indigo-highlife-concert</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/flavour-sells-out-london-o2-indigo-highlife-concert</guid>
-      <pubDate>Mon, 25 May 2026 17:53:31 GMT</pubDate>
-      <dc:creator><![CDATA[Amara Ndlovu]]></dc:creator>
-      <description><![CDATA[Flavour Sells Out London O2 Indigo with Highlife Performance: Nigerian star Flavour brings highlife music to London with a sold-out concert at Indigo at The O2]]></description>
-      <enclosure url="https://sportal365images.com/process/smp-images-production/pulse.ng/25052026/78031443-db78-4fda-b53d-abb687d58562.jpg?operations=autocrop(1200:630)" type="image/jpeg" />
-      <media:content url="https://sportal365images.com/process/smp-images-production/pulse.ng/25052026/78031443-db78-4fda-b53d-abb687d58562.jpg?operations=autocrop(1200:630)" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://sportal365images.com/process/smp-images-production/pulse.ng/25052026/78031443-db78-4fda-b53d-abb687d58562.jpg?operations=autocrop(1200:630)" alt="Flavour Sells Out London O2 Indigo with Highlife Performance" /><p>Flavour Sells Out London O2 Indigo with Highlife Performance: Nigerian star Flavour brings highlife music to London with a sold-out concert at Indigo at The O2</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
