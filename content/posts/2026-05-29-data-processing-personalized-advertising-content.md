@@ -14,6 +14,8 @@ focusKeyword: "'Data Processing Explained: Personalized Ads & Content"
 schema: "NewsArticle"
 ---
 
+'Data Processing Explained: Personalized Ads & Content is central to this update for Kenyan readers.
+
 "Data Processing Explained: Personalized Ads & Content is central to this update for Kenyan readers.
 
 ## Your Data, Their Treasure: Unpacking Data Processing Activities in Kenya's Digital Space
