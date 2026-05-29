@@ -215,10 +215,10 @@
     "ebef5471243442371cf8a31cfca01a10",
     "e2eb641079052ef5d303a4907c18bf2f",
     "d22c03454d45c4d206f309d44a5474c5",
-    "2083320e1951faf357c089f82f7c3f30"
+    "2083320e1951faf357c089f82f7c3f30",
+    "d7519a0c960dcecfacf43f7eeef9a200"
   ],
   "style_history": [
-    "Profile Beat",
     "Trend Take",
     "Reaction Round-up",
     "Explainer",
@@ -247,10 +247,10 @@
     "Hard News Lead",
     "Explainer",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "money_follow|data-privacy|Hard News Lead",
     "timeline_shift|Sheinelle Jones|Reaction Round-up",
     "impact_on_citizens|Martin Short|Explainer",
     "winners_losers|Outlander|Trend Take",
@@ -329,6 +329,7 @@
     "story_progression|Helen Mirren|Hard News Lead",
     "policy_gap|Data processing|Explainer",
     "myth_vs_fact|Barry Manilow|Trend Take",
-    "story_progression|TV show|Profile Beat"
+    "story_progression|TV show|Profile Beat",
+    "timeline_shift|Natalie Wood|Reaction Round-up"
   ]
 }
