@@ -186,10 +186,10 @@
     "3a75d1cc1846ffc77d3c72bf9c4a08b8",
     "c9288eb0a5b8b012b47a136a19d85fe8",
     "101fa07ec7da83ee2a6edd61694b2340",
-    "e2caece32330cb182c424255f8d6e514"
+    "e2caece32330cb182c424255f8d6e514",
+    "d4f2f48b7f6a82838406521dbdabe35b"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Hard News Lead",
     "Reaction & Voices",
     "Explainer",
@@ -218,10 +218,10 @@
     "Hard News Lead",
     "Power Accountability",
     "Reaction & Voices",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "policy_gap|Kenya|Context Backgrounder",
     "impact_on_citizens|NTSA|Reaction & Voices",
     "winners_losers|oil refinery|Explainer",
     "money_follow|Affordable Housing Programme|Power Accountability",
@@ -300,6 +300,7 @@
     "accountability|Ebola|Hard News Lead",
     "money_follow|Public Health|Power Accountability",
     "policy_gap|KUPPET|Reaction & Voices",
-    "policy_gap|KMPDC|Explainer"
+    "policy_gap|KMPDC|Explainer",
+    "next_48_hours|Ebola|Hard News Lead"
   ]
 }
