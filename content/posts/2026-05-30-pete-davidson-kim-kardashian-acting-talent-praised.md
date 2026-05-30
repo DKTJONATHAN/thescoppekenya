@@ -14,6 +14,8 @@ focusKeyword: "'Pete Davidson Praises Kim Kardashian's Acting Skills Amid Public
 schema: "NewsArticle"
 ---
 
+'Pete Davidson Praises Kim Kardashian's Acting Skills Amid Public is central to this update for Kenyan readers.
+
 "Pete Davidson Praises Kim Kardashian's Acting Skills Amid Public is central to this update for Kenyan readers.
 
 ## Unveiling the Actor: Pete Davidson Sees Beyond the Persona
