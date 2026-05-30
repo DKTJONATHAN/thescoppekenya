@@ -200,6 +200,8 @@ EFL Confirms Josh Smith as Referee for League One Play-off Final is central to t
 
 EFL Confirms Josh Smith as Referee for League One Play-off Final is central to this update for Kenyan readers.
 
+EFL Confirms Josh Smith as Referee for League One Play-off Final is central to this update for Kenyan readers.
+
 ## The Weight of the Whistle: Josh Smith’s Wembley Challenge
 
 The English Football League has appointed Josh Smith to officiate the League One play-off final between Bolton Wanderers and Stockport County. In a fixture where promotion signifies a transformative shift in a club’s financial and sporting trajectory, Smith finds himself at the center of an unforgiving spotlight. Tasked with navigating the high-stakes intensity of Wembley, his performance will be scrutinized by the technological lens of the Video Assistant Referee.
