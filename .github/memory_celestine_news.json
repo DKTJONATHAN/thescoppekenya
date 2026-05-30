@@ -182,10 +182,10 @@
     "9233fa60dfc5145e6a209ff721dbab96",
     "444c3d6599668ac7091174870690205d",
     "a1548ce2e3a4a094eb052584a0f923aa",
-    "c7ea9620cfddb518e1dab645af32f09a"
+    "c7ea9620cfddb518e1dab645af32f09a",
+    "3a75d1cc1846ffc77d3c72bf9c4a08b8"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
     "Explainer",
@@ -214,10 +214,10 @@
     "Power Accountability",
     "Reaction & Voices",
     "Context Backgrounder",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "money_follow|Kenya|Power Accountability",
     "policy_gap|fuel prices|Reaction & Voices",
     "next_48_hours|Kenya|Explainer",
     "impact_on_citizens|Kenya politics|Hard News Lead",
@@ -296,6 +296,7 @@
     "accountability|Ebola|Power Accountability",
     "story_progression|Jubilee Party|Reaction & Voices",
     "money_follow|Kenya Airways|Context Backgrounder",
-    "accountability|Ebola|Explainer"
+    "accountability|Ebola|Explainer",
+    "accountability|Ebola|Hard News Lead"
   ]
 }
