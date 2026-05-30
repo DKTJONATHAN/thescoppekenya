@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Students Arrested Over School Arson Cases as Parents Are Summoned by Police](https://zandani.co.ke/article/students-arrested-over-school-arson-cases-as-parents-are-summoned-by) - Kenyan authorities have detained multiple students following a surge in school dormitory fires, as police summon parents to address criminal involvement.
 - [Residential Apartments in Kilimani, Thindigua and Ruaka Increasingly Used for Sex Work](https://zandani.co.ke/article/residential-apartments-in-kilimani-thindigua-and-ruaka-increasingly-) - Residential apartments in Kilimani, Thindigua, and Ruaka are increasingly being utilized as hubs for organized sex work via short-term rental platforms.
 - ["7 Devastating War Movies Known for Brutal Battle Scenes](https://zandani.co.ke/article/devastating-war-movies-brutal-battle-scenes-historical) - Explore seven devastating war movies that masterfully recreate the brutal chaos and human cost of historical battles. Discover their harrowing realism and impact. Find your next watch.
 - [The Bitter Alms: Ruto Donation to Dagoretti Family 2026](https://zandani.co.ke/article/the-bitter-alms-ruto-donation-dagoretti-family-2026) - The Bitter Alms: Ruto Donation to Dagoretti Family 2026: A family in Dagoretti mourned their son lost abroad. A President offered a gesture of relief. The
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Ngunjiri Wambugu challenges Matiangi Jubilee party appointment](https://zandani.co.ke/article/ngunjiri-wambugu-challenges-matiangi-jubilee-party-appointment) - Ngunjiri Wambugu challenges Matiangi Jubilee party appointment: Former MP Ngunjiri Wambugu has moved to the Political Parties Disputes Tribunal to challenge
 - ['Girls5Eva Crossover Provides Closure in Tina Fey's The Four Seasons](https://zandani.co.ke/article/girls5eva-crossover-tina-fey-four-seasons-closure) - 'Girls5Eva Crossover Provides Closure in Tina Fey's The Four Seas: Tina Fey's The Four Seasons delivered a Girls5Eva crossover, bringing closure for the
 - [Students Accused of Starting Fatal Dormitory Fire at Endarasha Academy](https://zandani.co.ke/article/students-accused-of-starting-fatal-dormitory-fire-at-endarasha-acade) - Students Accused of Starting Fatal Dormitory Fire at Endarasha Ac: Investigations reveal that the fatal Endarasha Academy fire was a deliberate act by students
-- [High Court blocks US Ebola quarantine facility at Laikipia Airbase](https://zandani.co.ke/article/high-court-blocks-us-ebola-quarantine-facility-at-laikipia-airbase) - High Court blocks US Ebola quarantine facility at Laikipia Airbas: The Kenyan High Court has stopped plans for a US-led Ebola quarantine facility following
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
