@@ -14,6 +14,8 @@ focusKeyword: "'7 Devastating War Movies Known for Brutal Battle Scenes"
 schema: "NewsArticle"
 ---
 
+'7 Devastating War Movies Known for Brutal Battle Scenes is central to this update for Kenyan readers.
+
 "7 Devastating War Movies Known for Brutal Battle Scenes is central to this update for Kenyan readers.
 
 ## How War Films Change What We Know About History

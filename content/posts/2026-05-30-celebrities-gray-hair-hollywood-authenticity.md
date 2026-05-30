@@ -14,6 +14,8 @@ focusKeyword: "'Celebrities Gray Hair Trend: Hollywood Embraces Natural Beauty"
 schema: "NewsArticle"
 ---
 
+'Celebrities Gray Hair Trend: Hollywood Embraces Natural Beauty is central to this update for Kenyan readers.
+
 "Celebrities Gray Hair Trend: Hollywood Embraces Natural Beauty is central to this update for Kenyan readers.
 
 ## The Silver Surge: How the Celebrities Gray Hair Trend is Rewriting Hollywood's Rulebook
