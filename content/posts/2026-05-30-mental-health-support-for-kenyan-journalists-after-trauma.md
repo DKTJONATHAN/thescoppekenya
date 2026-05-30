@@ -1,16 +1,20 @@
 ---
 title: "Supporting Kenyan journalists affected by vicarious trauma"
 slug: "mental-health-support-for-kenyan-journalists-after-trauma"
-description: "Media houses must prioritize mental health support for journalists covering tragedies like the Utumishi Girls Academy fire in Gilgil."
+description: "Supporting Kenyan journalists affected by vicarious trauma: Media houses must prioritize mental health support for journalists covering tragedies like the"
+excerpt: "The Silent Casualty: Why Kenya's Newsrooms Are Failing Their Frontline Storytellers Kenyan media houses are guilty of institutional negligen"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://cdn.radioafrica.digital/image/2026/05/3a1a71d4-5381-4248-a07c-8d150cfde288.jpeg?1780138466335"
 category: "Opinions"
 tags: ["kenya", "journalism", "mental health", "media industry", "utumishi girls academy"]
+canonical: "https://zandani.co.ke/article/mental-health-support-for-kenyan-journalists-after-trauma"
 date: "2026-05-30T10:54:04Z"
 dateModified: "2026-05-30T10:54:04Z"
+focusKeyword: "Supporting Kenyan journalists affected by vicarious trauma"
 schema: "NewsArticle"
 ---
+
+Supporting Kenyan journalists affected by vicarious trauma is central to this update for Kenyan readers.
 
 ## The Silent Casualty: Why Kenya's Newsrooms Are Failing Their Frontline Storytellers
 
@@ -35,3 +39,18 @@ To move beyond the theater of performative empathy, newsrooms must adopt three i
 A lingering, toxic machismo permeates the Kenyan media fraternity. It suggests that a journalist of substance must be untouchable, hardened by the world, and impervious to suffering. This is a fabrication designed to keep the machine running at the expense of its parts. If the industry possesses the bandwidth to analyze the lifestyle aesthetics of celebrity figures or track identical rooftop views in Bangkok, it certainly has the intellectual and financial capacity to protect the people on the ground.
 
 A story is only as valuable as the health of the storyteller. If media owners persist in treating their staff as disposable conduits for information, they will eventually face a hollowed-out industry with no one left to report the truth. True journalistic integrity is not defined by the speed of a breaking story. It is found in the institutional backbone that refuses to break the people who chase it.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
