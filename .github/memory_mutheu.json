@@ -220,10 +220,10 @@
     "836d077f0a64fcde1299df7526ab5633",
     "2f7c997e1e5c26ebf0bf9b5836e849a9",
     "0af6d87e2f99cf959a94ef5a5632667e",
-    "2ee6adc98ac5efe86e01a3a19eb60e0e"
+    "2ee6adc98ac5efe86e01a3a19eb60e0e",
+    "fc3cc6971bad4d4c326077905c8b5d31"
   ],
   "style_history": [
-    "Trend Take",
     "Reaction Round-up",
     "Hard News Lead",
     "Explainer",
@@ -252,10 +252,10 @@
     "Explainer",
     "Trend Take",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "accountability|lawsuit|Reaction Round-up",
     "next_48_hours|Obsession|Profile Beat",
     "impact_on_citizens|Clint Black|Trend Take",
     "money_follow|James Bond|Hard News Lead",
@@ -334,6 +334,7 @@
     "timeline_shift|na|Explainer",
     "winners_losers|na|Trend Take",
     "myth_vs_fact|Pete Davidson|Profile Beat",
-    "story_progression|na|Hard News Lead"
+    "story_progression|na|Hard News Lead",
+    "myth_vs_fact|celebrities|Reaction Round-up"
   ]
 }
