@@ -184,10 +184,10 @@
     "a1548ce2e3a4a094eb052584a0f923aa",
     "c7ea9620cfddb518e1dab645af32f09a",
     "3a75d1cc1846ffc77d3c72bf9c4a08b8",
-    "c9288eb0a5b8b012b47a136a19d85fe8"
+    "c9288eb0a5b8b012b47a136a19d85fe8",
+    "101fa07ec7da83ee2a6edd61694b2340"
   ],
   "style_history": [
-    "Power Accountability",
     "Explainer",
     "Context Backgrounder",
     "Hard News Lead",
@@ -216,10 +216,10 @@
     "Context Backgrounder",
     "Explainer",
     "Hard News Lead",
-    "Power Accountability"
+    "Power Accountability",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "next_48_hours|Kenya|Explainer",
     "impact_on_citizens|Kenya politics|Hard News Lead",
     "policy_gap|Kenya|Context Backgrounder",
     "impact_on_citizens|NTSA|Reaction & Voices",
@@ -298,6 +298,7 @@
     "money_follow|Kenya Airways|Context Backgrounder",
     "accountability|Ebola|Explainer",
     "accountability|Ebola|Hard News Lead",
-    "money_follow|Public Health|Power Accountability"
+    "money_follow|Public Health|Power Accountability",
+    "policy_gap|KUPPET|Reaction & Voices"
   ]
 }
