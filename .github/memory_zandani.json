@@ -273,10 +273,10 @@
     "3cd1e817eb7420693be8dbafef50a04e",
     "00fc2aacebc012f4241890abce544123",
     "14e127cab73291202843d95a2d7960c6",
-    "02a0736af834090d2795da9c9b26f2a6"
+    "02a0736af834090d2795da9c9b26f2a6",
+    "3648b0de2cebff0b5c707637d6d8dac6"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Trend Take",
     "Receipts Piece",
     "Hard News Lead",
@@ -305,10 +305,10 @@
     "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "policy_gap|Nairobi|Hard News Lead",
     "next_48_hours|Kenya|Reaction Round-up",
     "money_follow|Johnnie Walker|Profile Beat",
     "myth_vs_fact|impeachment|Receipts Piece",
@@ -387,6 +387,7 @@
     "myth_vs_fact|Influencer|Trend Take",
     "timeline_shift|Kenyan music scene|Profile Beat",
     "myth_vs_fact|Kenya|Reaction Round-up",
-    "story_progression|One Night Only|Hard News Lead"
+    "story_progression|One Night Only|Hard News Lead",
+    "money_follow|maternal health|Receipts Piece"
   ]
 }
