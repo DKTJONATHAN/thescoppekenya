@@ -370,6 +370,8 @@ Miles Teller explains why he avoids long-form media interviews is central to thi
 
 Miles Teller explains why he avoids long-form media interviews is central to this update for Kenyan readers.
 
+Miles Teller explains why he avoids long-form media interviews is central to this update for Kenyan readers.
+
 ## The Quiet Game: How Miles Teller and Hollywood’s Elite Are Rewriting the Rules of Fame
 
 Miles Teller moves through a space with the unforced poise of someone who has long since realized that explanation is a choice, not an obligation. For years, he has practiced a specific kind of professional stillness, retreating from the exhaustive, long-form profiles that once served as the primary currency for ascending actors. This is not an accident. It is a calculated boundary, built on the understanding that for an actor, the most honest version of himself is the one captured through a lens rather than through a journalist’s notebook.
