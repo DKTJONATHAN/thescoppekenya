@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sat, 30 May 2026 17:42:50 GMT</pubDate>
+    <pubDate>Sat, 30 May 2026 18:23:36 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Why vehicle fuel tank doors are placed on the passenger side]]></title>
+      <link>https://zandani.co.ke/article/why-vehicle-fuel-tank-doors-are-on-the-passenger-side</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/why-vehicle-fuel-tank-doors-are-on-the-passenger-side</guid>
+      <pubDate>Sat, 30 May 2026 18:13:10 GMT</pubDate>
+      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
+      <description><![CDATA[Discover the engineering and safety reasons behind passenger side fuel tank placement. Learn how design choices impact vehicle assembly and road safety.]]></description>
+      <enclosure url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/car-and-fuel-door.jpg?itok=jsHduW_L" type="image/jpeg" />
+      <media:content url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/car-and-fuel-door.jpg?itok=jsHduW_L" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/car-and-fuel-door.jpg?itok=jsHduW_L" alt="Why vehicle fuel tank doors are placed on the passenger side" /><p>Discover the engineering and safety reasons behind passenger side fuel tank placement. Learn how design choices impact vehicle assembly and road safety.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Residents risk lives to siphon fuel from overturned tanker in Migori]]></title>
       <link>https://zandani.co.ke/article/residents-risk-lives-to-siphon-fuel-from-overturned-tanker-in-migori</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://pbs.twimg.com/media/HJS9VlXXkAI2bkR.jpg" type="image/jpeg" />
       <media:content url="https://pbs.twimg.com/media/HJS9VlXXkAI2bkR.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://pbs.twimg.com/media/HJS9VlXXkAI2bkR.jpg" alt="Governor Joseph Ole Lenku pays KSh 16 million to free journalist Joshua Mungai from Kamiti Prison after Katoo Ole Metito wins defamation case" /><p>Governor Joseph Ole Lenku pays KSh 16 million to free journalist : Governor Joseph Ole Lenku paid KSh 16 million to release journalist Joshua Mungai from</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Kenyan lawmakers prioritize Arsenal and Manchester United football debate over official legislative business during parliamentary session]]></title>
-      <link>https://zandani.co.ke/article/kenyan-lawmakers-prioritize-arsenal-and-manchester-united-football-d</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/kenyan-lawmakers-prioritize-arsenal-and-manchester-united-football-d</guid>
-      <pubDate>Tue, 26 May 2026 23:20:03 GMT</pubDate>
-      <dc:creator><![CDATA[Zed Mogaka]]></dc:creator>
-      <description><![CDATA[Kenyan lawmakers prioritize Arsenal and Manchester United footbal: Kenyan lawmakers paused official business to debate Arsenal and Manchester United football]]></description>
-      <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
-      <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="Kenyan lawmakers prioritize Arsenal and Manchester United football debate over official legislative business during parliamentary session" /><p>Kenyan lawmakers prioritize Arsenal and Manchester United footbal: Kenyan lawmakers paused official business to debate Arsenal and Manchester United football</p>]]></content:encoded>
     </item>
   </channel>
 </rss>

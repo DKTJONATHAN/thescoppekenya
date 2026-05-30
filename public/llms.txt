@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Why vehicle fuel tank doors are placed on the passenger side](https://zandani.co.ke/article/why-vehicle-fuel-tank-doors-are-on-the-passenger-side) - Discover the engineering and safety reasons behind passenger side fuel tank placement. Learn how design choices impact vehicle assembly and road safety.
 - [Residents risk lives to siphon fuel from overturned tanker in Migori](https://zandani.co.ke/article/residents-risk-lives-to-siphon-fuel-from-overturned-tanker-in-migori) - Residents in Migori risked their lives on May 30, 2026, by swarming an overturned tanker to siphon fuel, ignoring the high risk of a catastrophic explosion.
 - [Kenya Sets Up Ebola Isolation Units to Strengthen Health Safety](https://zandani.co.ke/article/kenya-establishes-ebola-isolation-units-to-strengthen-health-safety) - Kenya Sets Up Ebola Isolation Units to Strengthen Health Safety: Kenya is fortifying medical infrastructure against Ebola by establishing national isolation
 - [Nairobi men voice concerns over the lifestyle and smoking habits of city women](https://zandani.co.ke/article/nairobi-men-voice-concerns-over-the-lifestyle-and-smoking-habits-of-) - Nairobi men voice concerns over the lifestyle and smoking habits : Nairobi men are voicing concerns over the rising prevalence of smoking and shifting
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [KUPPET calls for boarding schools ban after Utumishi Academy fire](https://zandani.co.ke/article/kuppet-calls-for-boarding-schools-ban-after-utumishi-academy-fire) - KUPPET calls for boarding schools ban after Utumishi Academy fire: KUPPET chair Omboko Milemba demands an end to boarding schools following a deadly fire at
 - [The Serpent's Charm: Ida Odinga UNEP Ambassador Performance](https://zandani.co.ke/article/the-serpents-charm-ida-odinga-unep-ambassador-performance) - The Serpent's Charm: Ida Odinga UNEP Ambassador Performance: Ancient Rome saw cunning rulers embrace adversaries' kin. A modern echo now resounds, weaving new
 - [Liverpool FC parts ways with head coach Arne Slot](https://zandani.co.ke/article/liverpool-fc-parts-ways-with-head-coach-arne-slot) - Liverpool FC parts ways with head coach Arne Slot: Liverpool has officially terminated the contract of head coach Arne Slot after two seasons, with Andoni
-- [Wajir Governor Ahmed Abdullahi Unveils Modern Stadium While Trans Nzoia Governor George Natembeya Faces Criticism Over Stalled Kitale Project](https://zandani.co.ke/article/wajir-governor-ahmed-abdullahi-unveils-modern-stadium-while-trans-nz) - Wajir Governor Ahmed Abdullahi Unveils Modern Stadium While Trans: Wajir Governor Ahmed Abdullahi unveils a modern stadium while Trans Nzoia's George Natembeya
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
