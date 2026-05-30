@@ -218,10 +218,10 @@
     "2083320e1951faf357c089f82f7c3f30",
     "d7519a0c960dcecfacf43f7eeef9a200",
     "836d077f0a64fcde1299df7526ab5633",
-    "2f7c997e1e5c26ebf0bf9b5836e849a9"
+    "2f7c997e1e5c26ebf0bf9b5836e849a9",
+    "0af6d87e2f99cf959a94ef5a5632667e"
   ],
   "style_history": [
-    "Explainer",
     "Profile Beat",
     "Trend Take",
     "Reaction Round-up",
@@ -250,10 +250,10 @@
     "Profile Beat",
     "Reaction Round-up",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "winners_losers|Outlander|Trend Take",
     "timeline_shift|Matthew McConaughey|Hard News Lead",
     "accountability|lawsuit|Reaction Round-up",
     "next_48_hours|Obsession|Profile Beat",
@@ -332,6 +332,7 @@
     "story_progression|TV show|Profile Beat",
     "timeline_shift|Natalie Wood|Reaction Round-up",
     "timeline_shift|na|Explainer",
-    "winners_losers|na|Trend Take"
+    "winners_losers|na|Trend Take",
+    "myth_vs_fact|Pete Davidson|Profile Beat"
   ]
 }
