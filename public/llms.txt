@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Mbavu Claims Low Blow Cost Him Boxing Match Against Majembe](https://zandani.co.ke/article/mbavu-claims-low-blow-cost-him-boxing-match-against-majembe) - Kenyan boxer Mbavu the Destroyer disputes his recent loss to Majembe, alleging an illegal low blow derailed his Mike Tyson inspired strategy.
 - [DCI Hunts Student Suspect in Deadly Utumishi Girls School Fire](https://zandani.co.ke/article/dci-hunts-student-suspect-utumishi-girls-school-fire) - DCI Hunts Student Suspect in Deadly Utumishi Girls School Fire: DCI officers are tracking a student suspect linked to the Utumishi Girls school fire tragedy
 - [Caleb Amisi Criticizes Linda Mwananchi Initiative as Ruto Impeachment Discussion Stalls](https://zandani.co.ke/article/caleb-amisi-criticizes-linda-mwananchi-initiative-as-ruto-impeachmen) - Saboti MP Caleb Amisi labels the Linda Mwananchi initiative a deceptive political maneuver amid stalling discussions regarding President Ruto's impeachment.
 - ['3rd Rock From the Sun Cast: Careers & Personal Lives](https://zandani.co.ke/article/3rd-rock-from-the-sun-cast-career-personal-updates) - '3rd Rock From the Sun Cast: Careers & Personal Lives: Discover the diverse post-show careers and personal developments of the beloved 3rd Rock From the Sun
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - ['Matt Brown Search Halted in Okanogan River Amid Dangerous Conditions](https://zandani.co.ke/article/matt-brown-search-halted-okanogan-river-dangerous-conditions) - 'Matt Brown Search Halted in Okanogan River Amid Dangerous Condit: The Matt Brown search in the Okanogan River has been suspended due to dangerous conditions,
 - [Court of Appeal blocks bid to revive NSSF Act 2013](https://zandani.co.ke/article/court-of-appeal-blocks-nssf-act-2013-revival) - Court of Appeal blocks bid to revive NSSF Act 2013: The Court of Appeal has rejected an application by the National Social Security Fund to enforce the 2013
 - [Echoes of Akala: An Odinga Family Political Dynamics](https://zandani.co.ke/article/echoes-of-akala-odinga-family-political-dynamics) - Echoes of Akala: An Odinga Family Political Dynamics: In the shadow of a departed Luminary, the whispers began. A familiar dance of power, denial, and an ODM
-- ['Kate Hudson Celebrates Son Ryder Robinson's NYU Graduation](https://zandani.co.ke/article/kate-hudson-ryder-robinson-nyu-graduation-family-celebration) - 'Kate Hudson Celebrates Son Ryder Robinson's NYU Graduation: Kate Hudson celebrated her son Ryder Robinson's graduation from NYU, with his father Chris
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
