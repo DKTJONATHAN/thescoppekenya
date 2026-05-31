@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Rising Wave of Student Violence and Vandalism Rocks Kenyan Schools](https://zandani.co.ke/article/rising-wave-of-student-violence-and-vandalism-rocks-kenyan-schools) - A surge of student violence, arson, and assaults on staff in 2026 Kenyan schools has triggered national concern over the safety of academic institutions.
 - [Senate Committee Questions New NTSA Road Safety Regulations](https://zandani.co.ke/article/senate-questions-proposed-ntsa-regulations) - The Senate Committee on Transport and private school stakeholders express concerns over the financial and logistical impacts of the proposed 2026 NTSA rules.
 - [A Royal Burden, A Modern Joy: The Quest for Succession](https://zandani.co.ke/article/royal-burden-modern-joy-succession-joey-carbery-second-baby-news) - A Royal Burden, A Modern Joy: The Quest for Succession: Centuries ago, a king's lineage meant endless intrigue and heartbreaking sacrifice. Today, a simpler
 - [Parents Must Stop Defending Students Involved in School Arson and Violence](https://zandani.co.ke/article/parents-must-stop-defending-students-involved-in-school-arson-and-vi) - Parents Must Stop Defending Students Involved in School Arson and: Parents must stop shielding students involved in arson and violence in Kenyan schools, as
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [President Ruto revives stalled Modogashe-Samatar road project](https://zandani.co.ke/article/ruto-revives-stalled-modogashe-samatar-road-project) - President Ruto revives stalled Modogashe-Samatar road project: President William Ruto has pledged to resume the 157-kilometre Modogashe-Samatar road project in
 - [Ibrahima Konate set to leave Liverpool on free transfer as club considers Schlotterbeck](https://zandani.co.ke/article/ibrahima-konate-set-to-leave-liverpool-on-free-transfer-as-club-cons) - Ibrahima Konate set to leave Liverpool on free transfer as club c: Liverpool's Self Inflicted Wounds Mount as Konate Exits Liverpool is a club in disarray,
 - ['Vasana Montgomery Axed From Love Island USA Season 8 Over Racial Slur](https://zandani.co.ke/article/vasana-montgomery-love-island-usa-racial-slur-removal) - 'Vasana Montgomery Axed From Love Island USA Season 8 Over Racial: Vasana Montgomery was removed from Love Island USA Season 8 following resurfaced videos
-- [The Debate Over Whether Success In Nairobi Relies On Personal Effort Or Strategic Connections](https://zandani.co.ke/article/the-debate-over-whether-success-in-nairobi-relies-on-personal-effort) - The Debate Over Whether Success In Nairobi Relies On Personal Eff: Nairobi professionals are debating whether career success stems from persistent individual
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
