@@ -189,10 +189,10 @@
     "e2caece32330cb182c424255f8d6e514",
     "d4f2f48b7f6a82838406521dbdabe35b",
     "1e98f9eb8d6b9caf628916f235fe93f8",
-    "f575a0ef63ac91bcabbb7ff6a5d1924b"
+    "f575a0ef63ac91bcabbb7ff6a5d1924b",
+    "08cfb95364859f6b320d446f983d21f0"
   ],
   "style_history": [
-    "Explainer",
     "Power Accountability",
     "Hard News Lead",
     "Context Backgrounder",
@@ -221,10 +221,10 @@
     "Explainer",
     "Hard News Lead",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "money_follow|Affordable Housing Programme|Power Accountability",
     "money_follow|fuel prices|Context Backgrounder",
     "policy_gap|femicide|Hard News Lead",
     "winners_losers|National Land Commission|Explainer",
@@ -303,6 +303,7 @@
     "policy_gap|KMPDC|Explainer",
     "next_48_hours|Ebola|Hard News Lead",
     "myth_vs_fact|automotive design|Context Backgrounder",
-    "money_follow|NSSF|Reaction & Voices"
+    "money_follow|NSSF|Reaction & Voices",
+    "money_follow|Ebola|Power Accountability"
   ]
 }
