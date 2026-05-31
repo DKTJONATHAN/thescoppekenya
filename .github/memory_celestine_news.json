@@ -191,10 +191,10 @@
     "1e98f9eb8d6b9caf628916f235fe93f8",
     "f575a0ef63ac91bcabbb7ff6a5d1924b",
     "08cfb95364859f6b320d446f983d21f0",
-    "a9ee3022634c3af22ea4ca0834aab19e"
+    "a9ee3022634c3af22ea4ca0834aab19e",
+    "d4c74294dc6e69e3ac5eb085d289f30a"
   ],
   "style_history": [
-    "Hard News Lead",
     "Context Backgrounder",
     "Explainer",
     "Reaction & Voices",
@@ -223,10 +223,10 @@
     "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "policy_gap|femicide|Hard News Lead",
     "winners_losers|National Land Commission|Explainer",
     "accountability|Companies Act|Reaction & Voices",
     "policy_gap|energy security|Power Accountability",
@@ -305,6 +305,7 @@
     "myth_vs_fact|automotive design|Context Backgrounder",
     "money_follow|NSSF|Reaction & Voices",
     "money_follow|Ebola|Power Accountability",
-    "policy_gap|DCI|Explainer"
+    "policy_gap|DCI|Explainer",
+    "accountability|Garissa County|Hard News Lead"
   ]
 }
