@@ -223,10 +223,10 @@
     "2ee6adc98ac5efe86e01a3a19eb60e0e",
     "fc3cc6971bad4d4c326077905c8b5d31",
     "e9a03677448ced8effe406b607efc020",
-    "417c3dadb8365532f6f39b2d71adb7db"
+    "417c3dadb8365532f6f39b2d71adb7db",
+    "fbb5702b24f4050e6f5d1da5f00009ca"
   ],
   "style_history": [
-    "Explainer",
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
@@ -255,10 +255,10 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Explainer"
   ],
   "angle_history": [
-    "money_follow|James Bond|Hard News Lead",
     "myth_vs_fact|Top Gun|Explainer",
     "winners_losers|SNL|Reaction Round-up",
     "winners_losers|SNL|Trend Take",
@@ -337,6 +337,7 @@
     "story_progression|na|Hard News Lead",
     "myth_vs_fact|celebrities|Reaction Round-up",
     "myth_vs_fact|Kate Hudson|Trend Take",
-    "myth_vs_fact|Alaskan Bush People|Profile Beat"
+    "myth_vs_fact|Alaskan Bush People|Profile Beat",
+    "story_progression|3rd Rock From the Sun|Explainer"
   ]
 }
