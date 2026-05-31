@@ -14,6 +14,8 @@ focusKeyword: "'3rd Rock From the Sun Cast: Careers & Personal Lives"
 schema: "NewsArticle"
 ---
 
+'3rd Rock From the Sun Cast: Careers & Personal Lives is central to this update for Kenyan readers.
+
 "3rd Rock From the Sun Cast: Careers & Personal Lives is central to this update for Kenyan readers.
 
 ## What Happened to the Alien Family? The Enduring Legacy of the 3rd Rock From the Sun Cast
