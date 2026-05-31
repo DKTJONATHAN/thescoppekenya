@@ -194,10 +194,10 @@
     "a9ee3022634c3af22ea4ca0834aab19e",
     "d4c74294dc6e69e3ac5eb085d289f30a",
     "cc6770438db62d8a8f35705f6d3a0a92",
-    "7a8abcb8a24c26a75e5db6841ccb4509"
+    "7a8abcb8a24c26a75e5db6841ccb4509",
+    "07cfa8f972215fa9a2f552c9ac4187aa"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Power Accountability",
     "Context Backgrounder",
     "Hard News Lead",
@@ -226,10 +226,10 @@
     "Explainer",
     "Hard News Lead",
     "Context Backgrounder",
-    "Power Accountability"
+    "Power Accountability",
+    "Explainer"
   ],
   "angle_history": [
-    "policy_gap|energy security|Power Accountability",
     "impact_on_citizens|maritime security|Hard News Lead",
     "next_48_hours|KRA|Context Backgrounder",
     "myth_vs_fact|Engineering|Reaction & Voices",
@@ -308,6 +308,7 @@
     "policy_gap|DCI|Explainer",
     "accountability|Garissa County|Hard News Lead",
     "policy_gap|Huduma Kenya|Context Backgrounder",
-    "winners_losers|Infrastructure|Power Accountability"
+    "winners_losers|Infrastructure|Power Accountability",
+    "policy_gap|Utumishi High School|Explainer"
   ]
 }
