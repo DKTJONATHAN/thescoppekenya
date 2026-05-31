@@ -14,6 +14,8 @@ focusKeyword: "'Matt Brown Search Halted in Okanogan River Amid Dangerous Condit
 schema: "NewsArticle"
 ---
 
+'Matt Brown Search Halted in Okanogan River Amid Dangerous Condit is central to this update for Kenyan readers.
+
 "Matt Brown Search Halted in Okanogan River Amid Dangerous Condit is central to this update for Kenyan readers.
 
 ## A Family's Heartbreak, An Unconfirmed Identity: The Halt of the Matt Brown Search

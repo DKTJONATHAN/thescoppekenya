@@ -14,6 +14,8 @@ focusKeyword: "'Kate Hudson Celebrates Son Ryder Robinson's NYU Graduation"
 schema: "NewsArticle"
 ---
 
+'Kate Hudson Celebrates Son Ryder Robinson's NYU Graduation is central to this update for Kenyan readers.
+
 "Kate Hudson Celebrates Son Ryder Robinson's NYU Graduation is central to this update for Kenyan readers.
 
 ## Blended Brilliance: Kate Hudson Ryder Robinson Graduation Rewrites the Co-Parenting Playbook
