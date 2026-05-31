@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sun, 31 May 2026 17:55:58 GMT</pubDate>
+    <pubDate>Sun, 31 May 2026 18:24:59 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[CCTV Footage Links Students to Fatal Utumishi Girls School Fire]]></title>
+      <link>https://zandani.co.ke/article/cctv-footage-links-students-to-fatal-utumishi-girls-school-fire</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/cctv-footage-links-students-to-fatal-utumishi-girls-school-fire</guid>
+      <pubDate>Sun, 31 May 2026 18:14:24 GMT</pubDate>
+      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
+      <description><![CDATA[Security footage reveals eight students ignited the blaze at Utumishi Girls High School, leading to 16 deaths and a new national mandate for school CCTV.]]></description>
+      <enclosure url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/cctv-utumishi.jpg?itok=ICFSs9LJ" type="image/jpeg" />
+      <media:content url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/cctv-utumishi.jpg?itok=ICFSs9LJ" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/cctv-utumishi.jpg?itok=ICFSs9LJ" alt="CCTV Footage Links Students to Fatal Utumishi Girls School Fire" /><p>Security footage reveals eight students ignited the blaze at Utumishi Girls High School, leading to 16 deaths and a new national mandate for school CCTV.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA["Dua Lipa Marries Callum Turner in Private London Ceremony]]></title>
       <link>https://zandani.co.ke/article/dua-lipa-wedding-callum-turner-london-sicily</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://ew.com/thmb/S-CzoIULwyV79lhjLVFXv8tyfN4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/William-McNamara-052726-823ea897efeb4d57b2d05d9789017bfc.jpg" type="image/jpeg" />
       <media:content url="https://ew.com/thmb/S-CzoIULwyV79lhjLVFXv8tyfN4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/William-McNamara-052726-823ea897efeb4d57b2d05d9789017bfc.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://ew.com/thmb/S-CzoIULwyV79lhjLVFXv8tyfN4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/William-McNamara-052726-823ea897efeb4d57b2d05d9789017bfc.jpg" alt="William McNamara returns to acting after animal activism" /><p>William McNamara returns to acting after animal activism: William McNamara details his journey from 90s fame to animal activism and financial loss before</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Kenyan university students use Telegram escort services to fund their education amid the national unemployment crisis]]></title>
-      <link>https://zandani.co.ke/article/kenyan-university-students-use-telegram-escort-services-to-fund-thei</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/kenyan-university-students-use-telegram-escort-services-to-fund-thei</guid>
-      <pubDate>Wed, 27 May 2026 23:36:24 GMT</pubDate>
-      <dc:creator><![CDATA[Zed Mogaka]]></dc:creator>
-      <description><![CDATA[Kenyan university students use Telegram escort services to fund t: Kenyan university students are turning to Telegram escort services to fund their education]]></description>
-      <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
-      <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="Kenyan university students use Telegram escort services to fund their education amid the national unemployment crisis" /><p>Kenyan university students use Telegram escort services to fund t: Kenyan university students are turning to Telegram escort services to fund their education</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
