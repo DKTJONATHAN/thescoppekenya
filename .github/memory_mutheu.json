@@ -226,10 +226,10 @@
     "417c3dadb8365532f6f39b2d71adb7db",
     "fbb5702b24f4050e6f5d1da5f00009ca",
     "35e2b7edcac9292ad2978804f105df88",
-    "91d2fcf6bd31bac460640cfc287f6d25"
+    "91d2fcf6bd31bac460640cfc287f6d25",
+    "a3dc8def9a6f9e565162035e048dbb43"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
     "Trend Take",
@@ -258,10 +258,10 @@
     "Profile Beat",
     "Explainer",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Trend Take"
   ],
   "angle_history": [
-    "winners_losers|SNL|Trend Take",
     "impact_on_citizens|acting career|Profile Beat",
     "policy_gap|Famesick|Hard News Lead",
     "impact_on_citizens|streaming|Explainer",
@@ -340,6 +340,7 @@
     "myth_vs_fact|Alaskan Bush People|Profile Beat",
     "story_progression|3rd Rock From the Sun|Explainer",
     "money_follow|Emilia Clarke|Reaction Round-up",
-    "policy_gap|Vasana Montgomery|Hard News Lead"
+    "policy_gap|Vasana Montgomery|Hard News Lead",
+    "story_progression|na|Trend Take"
   ]
 }
