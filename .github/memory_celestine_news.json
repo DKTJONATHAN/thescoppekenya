@@ -193,10 +193,10 @@
     "08cfb95364859f6b320d446f983d21f0",
     "a9ee3022634c3af22ea4ca0834aab19e",
     "d4c74294dc6e69e3ac5eb085d289f30a",
-    "cc6770438db62d8a8f35705f6d3a0a92"
+    "cc6770438db62d8a8f35705f6d3a0a92",
+    "7a8abcb8a24c26a75e5db6841ccb4509"
   ],
   "style_history": [
-    "Explainer",
     "Reaction & Voices",
     "Power Accountability",
     "Context Backgrounder",
@@ -225,10 +225,10 @@
     "Power Accountability",
     "Explainer",
     "Hard News Lead",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Power Accountability"
   ],
   "angle_history": [
-    "accountability|Companies Act|Reaction & Voices",
     "policy_gap|energy security|Power Accountability",
     "impact_on_citizens|maritime security|Hard News Lead",
     "next_48_hours|KRA|Context Backgrounder",
@@ -307,6 +307,7 @@
     "money_follow|Ebola|Power Accountability",
     "policy_gap|DCI|Explainer",
     "accountability|Garissa County|Hard News Lead",
-    "policy_gap|Huduma Kenya|Context Backgrounder"
+    "policy_gap|Huduma Kenya|Context Backgrounder",
+    "winners_losers|Infrastructure|Power Accountability"
   ]
 }

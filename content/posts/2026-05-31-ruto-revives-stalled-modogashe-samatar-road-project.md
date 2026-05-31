@@ -1,0 +1,37 @@
+---
+title: "President Ruto revives stalled Modogashe-Samatar road project"
+slug: "ruto-revives-stalled-modogashe-samatar-road-project"
+description: "President William Ruto has pledged to resume the 157-kilometre Modogashe-Samatar road project in Wajir County with support from the World Bank by August."
+author: "Celestine Nzioka"
+authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
+image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/ruto-wajir-world-bank-logo.jpg?itok=ifPaMApv"
+category: "News"
+tags: ["infrastructure", "wajir county", "william ruto", "kenya roads", "world bank", "transport"]
+date: "2026-05-31T16:22:15Z"
+dateModified: "2026-05-31T16:22:15Z"
+schema: "NewsArticle"
+---
+
+## Asphalt Promises on a Desert Mirage
+
+The state has unveiled yet another timeline to patch the 157-kilometre stretch connecting Modogashe and Samatar. While the President frames this as a new dawn for Wajir, the residents of Habaswein have heard this exact song performed by every administration since independence.
+
+### The Six Decade Loop
+
+Since 1963, the road linking Modogashe to Samatar has served as the quintessential political prop. Every election cycle, local leaders and central government representatives dust off the same maps, announce a fresh start, and promise that the dust clouds strangling the local economy will finally settle under a layer of bitumen. For sixty years, the project has remained a phantom, appearing on budget estimates only to evaporate before the heavy machinery ever breaks ground.
+
+The economic cost of this negligence is quantifiable. Habaswein, a hub for livestock trade and commerce, remains perpetually strangled by a transport corridor that turns into an impassable swamp during the rains and a hazardous washboard during the dry season. Traders watch their margins dissolve into vehicle repair costs, while the region continues to endure the isolation of a frontier territory. This is not merely an inconvenience; it is a systemic policy of economic exclusion, masquerading as a series of unfortunate administrative delays.
+
+### Shifting Responsibility to the World Bank
+
+The government now leans on the World Bank as the primary engine for this supposed revival. By tethering the procurement process to international funding, the administration effectively externalizes the blame for any future stagnation. If the tender process fails to launch in July or if the construction remains a paper-based fantasy come August, the failure can be diplomatically redirected toward bureaucratic conditionalities or international lender protocols rather than local mismanagement.
+
+This strategy acts as a protective shield for the Ministry of Roads and Transport. By involving global financial institutions, the state creates a layer of abstraction that makes it nearly impossible for the public to hold domestic officials accountable when timelines slip. While the administration points to the World Bank as a mark of credibility, history suggests that procurement in Wajir is often hijacked by competing regional interests and tenderpreneurship, rendering the source of funding irrelevant if the political will to complete the work is missing.
+
+### The Madaraka Day Timing
+
+The announcement arrives on the eve of the 63rd Madaraka Day, a calculated choice that leverages the spirit of national celebration to mask a recurring failure of governance. Linking the start of procurement to the upcoming national holiday provides a convenient PR boost, wrapping the project in the flag while insulating it from the skepticism of a population that has been burned by previous false starts.
+
+While the state speaks of competitive bidding and consultation phases, the ground reality remains stagnant. Infrastructure development is often treated as a reward for loyalty or a bait for electoral support rather than a fundamental human right for the people of Northern Kenya. Much like the recent [fuel price dispute](https://zandani.co.ke/article/sakaja-expects-resolution-in-fuel-price-distpute-by-friday) that has left urban motorists in a state of flux, the Modogashe-Samatar road is symptomatic of a wider governance failure where policy is dictated by the calendar of the statehouse rather than the logistical needs of the citizenry. The residents of Wajir are currently living in a landscape of potential, told to wait until August for a project that has effectively been on hold since the country first lowered the Union Jack.
+
+If the previous thirty iterations of this announcement failed to move a single ton of gravel, what specific mechanical or fiscal safeguard exists today to ensure that the August launch is not merely the latest installment in a sixty-year collection of broken vows?
