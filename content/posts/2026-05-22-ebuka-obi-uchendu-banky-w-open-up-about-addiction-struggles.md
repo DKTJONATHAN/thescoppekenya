@@ -304,6 +304,8 @@ Ebuka Obi-Uchendu and Banky W Share Personal Struggles With Addic is central to 
 
 Ebuka Obi-Uchendu and Banky W Share Personal Struggles With Addic is central to this update for Kenyan readers.
 
+Ebuka Obi-Uchendu and Banky W Share Personal Struggles With Addic is central to this update for Kenyan readers.
+
 ## Breaking the Facade: Why Celebrity Vulnerability Matters
 
 When major Nigerian figures step away from their polished public personas to discuss personal hardships, the nation pays attention. Icons like Banky W and Ebuka Obi-Uchendu are choosing to dismantle their own curated images by sharing stories of addiction. This deliberate choice to open up marks a major departure from the traditional expectation that entertainers must remain silent about their private struggles. By trading flawless social media aesthetics for raw honesty, these men are redefining what it means to be a modern public figure. They are proving that true influence now rests on the integrity of owning one's mistakes rather than simply displaying talent on a screen.

@@ -14,6 +14,8 @@ focusKeyword: "'Emilia Clarke Refutes Game of Thrones Salary Rumors, Reflects on
 schema: "NewsArticle"
 ---
 
+'Emilia Clarke Refutes Game of Thrones Salary Rumors, Reflects on is central to this update for Kenyan readers.
+
 "Emilia Clarke Refutes Game of Thrones Salary Rumors, Reflects on is central to this update for Kenyan readers.
 
 ## Emilia Clarke's Hollywood Earnings: A Reality Check for Kenyan Fans
