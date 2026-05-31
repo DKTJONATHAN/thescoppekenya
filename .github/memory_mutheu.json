@@ -224,10 +224,10 @@
     "fc3cc6971bad4d4c326077905c8b5d31",
     "e9a03677448ced8effe406b607efc020",
     "417c3dadb8365532f6f39b2d71adb7db",
-    "fbb5702b24f4050e6f5d1da5f00009ca"
+    "fbb5702b24f4050e6f5d1da5f00009ca",
+    "35e2b7edcac9292ad2978804f105df88"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
@@ -256,10 +256,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
-    "Explainer"
+    "Explainer",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "myth_vs_fact|Top Gun|Explainer",
     "winners_losers|SNL|Reaction Round-up",
     "winners_losers|SNL|Trend Take",
     "impact_on_citizens|acting career|Profile Beat",
@@ -338,6 +338,7 @@
     "myth_vs_fact|celebrities|Reaction Round-up",
     "myth_vs_fact|Kate Hudson|Trend Take",
     "myth_vs_fact|Alaskan Bush People|Profile Beat",
-    "story_progression|3rd Rock From the Sun|Explainer"
+    "story_progression|3rd Rock From the Sun|Explainer",
+    "money_follow|Emilia Clarke|Reaction Round-up"
   ]
 }
