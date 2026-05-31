@@ -1177,6 +1177,8 @@ Murkomen declares parts of Marsabit County security-disturbe is central to this 
 
 Murkomen declares parts of Marsabit County security-disturbe is central to this update for Kenyan readers.
 
+Murkomen declares parts of Marsabit County security-disturbe is central to this update for Kenyan readers.
+
 Interior Cabinet Secretary Kipchumba Murkomen has officially declared parts of Marsabit County as security-disturbed and dangerous due to escalating banditry and inter-communal violence. This declaration, made in consultation with the National Security Council and National Police Service, was formally published in the Kenya Gazette on April 24, taking effect on April 23, 2026, at 6:30 p.m. The order is set to last thirty days, with potential for extension or withdrawal based on the region's security status.
 
 ## Heightened Security Measures in Marsabit

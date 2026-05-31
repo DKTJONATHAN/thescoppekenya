@@ -642,6 +642,8 @@ Johnnie Walker Opens Luxury Pop-Up Retail Space at Village Market is central to 
 
 Johnnie Walker Opens Luxury Pop-Up Retail Space at Village Market is central to this update for Kenyan readers.
 
+Johnnie Walker Opens Luxury Pop-Up Retail Space at Village Market is central to this update for Kenyan readers.
+
 ## Nairobi’s Spirited Shift Toward Bespoke Luxury
 
 Nairobi’s social landscape is undergoing a quiet but significant transformation. The focus is drifting away from the frantic energy of crowded bar counters toward a more thoughtful, curated experience. East African Breweries Limited (EABL) is at the forefront of this evolution, reimagining the simple act of purchasing spirits into an elevated, boutique endeavor.
