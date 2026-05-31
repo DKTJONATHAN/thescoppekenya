@@ -136,10 +136,10 @@
     "713e12eb04216465a6d709e21424dfcc",
     "172798db8d4f6287cdae34c13e31d425",
     "ba94cd7ff2f39f54041a49287372b96b",
-    "1056d2ccc6ee7a25fa52bd774d4cb7fb"
+    "1056d2ccc6ee7a25fa52bd774d4cb7fb",
+    "844c8e4e57904b4ed4c9d7bef518fb5b"
   ],
   "style_history": [
-    "Letter Form",
     "Historical Lens",
     "Sharp Column",
     "Personal Reflection",
@@ -168,10 +168,10 @@
     "Historical Lens",
     "Personal Reflection",
     "Counterpoint",
-    "Sharp Column"
+    "Sharp Column",
+    "Letter Form"
   ],
   "angle_history": [
-    "winners_losers|Sustainable development|Sharp Column",
     "myth_vs_fact|trade policy|Counterpoint",
     "timeline_shift|food security|Historical Lens",
     "impact_on_citizens|green economy|Letter Form",
@@ -250,6 +250,7 @@
     "impact_on_citizens|Madaraka Day|Historical Lens",
     "myth_vs_fact|protests|Personal Reflection",
     "myth_vs_fact|sports economics|Counterpoint",
-    "accountability|Kenya|Sharp Column"
+    "accountability|Kenya|Sharp Column",
+    "story_progression|Madaraka Day|Letter Form"
   ]
 }
