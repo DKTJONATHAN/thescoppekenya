@@ -72,6 +72,8 @@ Why Safaricom M-Pesa is struggling to gain ground in Ethiopia is central to this
 
 Why Safaricom M-Pesa is struggling to gain ground in Ethiopia is central to this update for Kenyan readers.
 
+Why Safaricom M-Pesa is struggling to gain ground in Ethiopia is central to this update for Kenyan readers.
+
 ## The Price of Expansion: Understanding Safaricom’s Ethiopian Challenge
 
 Safaricom shareholders are currently navigating the financial consequences of Ethiopia’s state-centric approach to digitalization. The company recently reported a US$364 million loss linked to its expansion into the Ethiopian market. For investors accustomed to consistent dividends from the Nairobi Securities Exchange, this shortfall highlights the volatility inherent in cross-border scaling when faced with complex regulatory hurdles.

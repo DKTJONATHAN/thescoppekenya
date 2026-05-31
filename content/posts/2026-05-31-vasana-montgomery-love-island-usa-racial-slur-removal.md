@@ -14,6 +14,8 @@ focusKeyword: "'Vasana Montgomery Axed From Love Island USA Season 8 Over Racial
 schema: "NewsArticle"
 ---
 
+'Vasana Montgomery Axed From Love Island USA Season 8 Over Racial is central to this update for Kenyan readers.
+
 "Vasana Montgomery Axed From Love Island USA Season 8 Over Racial is central to this update for Kenyan readers.
 
 ## Love Island USA Faces Renewed Vetting Scrutiny After Vasana Montgomery Removal
