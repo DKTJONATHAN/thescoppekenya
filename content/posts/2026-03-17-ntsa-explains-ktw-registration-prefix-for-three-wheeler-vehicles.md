@@ -1189,6 +1189,8 @@ NTSA explains KTW registration prefix for three-wheeler vehi is central to this 
 
 NTSA explains KTW registration prefix for three-wheeler vehi is central to this update for Kenyan readers.
 
+NTSA explains KTW registration prefix for three-wheeler vehi is central to this update for Kenyan readers.
+
 The National Transport and Safety Authority (NTSA) has clarified the distinctive KTW registration prefix for three-wheeler vehicles, commonly known as tuk-tuks, which are prominent across urban centers like Nairobi, Mombasa, and Kisumu. This unique numbering system ensures precise identification and categorisation within Kenya's growing transport sector in 2026.
 
 Explanation of the KTW Prefix

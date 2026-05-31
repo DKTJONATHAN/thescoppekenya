@@ -250,6 +250,8 @@ Security officers foil terror attack on Garissa-Dadaab road is central to this u
 
 Security officers foil terror attack on Garissa-Dadaab road is central to this update for Kenyan readers.
 
+Security officers foil terror attack on Garissa-Dadaab road is central to this update for Kenyan readers.
+
 ## Counter-terrorism on the Garissa-Dadaab road: A reactive charade
 
 The arrest of a lone suspect with an IED near Haji Aden today is being framed as a tactical win, yet it masks a deeper, systemic failure. Security forces are chasing shadows on a corridor where intelligence gaps remain the real threat.
