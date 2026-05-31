@@ -14,6 +14,8 @@ focusKeyword: "'Dua Lipa Marries Callum Turner in Private London Ceremony"
 schema: "NewsArticle"
 ---
 
+'Dua Lipa Marries Callum Turner in Private London Ceremony is central to this update for Kenyan readers.
+
 "Dua Lipa Marries Callum Turner in Private London Ceremony is central to this update for Kenyan readers.
 
 ## The Unveiling: Celebrity Nuptials Enter an Age of Strategic Celebration

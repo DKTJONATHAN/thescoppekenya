@@ -1190,6 +1190,8 @@ Kenyan telecommunications firms shift focus to data as high- is central to this 
 
 Kenyan telecommunications firms shift focus to data as high- is central to this update for Kenyan readers.
 
+Kenyan telecommunications firms shift focus to data as high- is central to this update for Kenyan readers.
+
 ## Kenya's Telecommunications Shift to Data Dominance Kenyan telecommunication firms are strategically pivoting towards data services as mobile broadband subscriptions and high-speed network usage surge. This transformation underscores a consumer preference for data-intensive communication and services, reshaping market dynamics and prompting operators to enhance their data offerings.
 
 Surging Data Consumption and Broadband Growth The Communications Authority of Kenya (CA) reports a significant shift in the nation's telecommunications sector, with mobile data now a primary revenue generator. Mobile broadband subscriptions increased by 10.5 percent over one year, reaching 61.9 million users. Total data consumption escalated to 755 terabytes, marking a 32.86 percent rise. This substantial growth reflects an accelerating demand for data-centric communications among Kenyans.
