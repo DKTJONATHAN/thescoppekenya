@@ -231,10 +231,10 @@
     "9d1192f70348eaad480d7ab4eea65311",
     "61832b433848369f8a63330c69e458ee",
     "15c22713868bea7338a4c5f62373f871",
-    "dc1d2769a281dfc6b0f75466bfbb7280"
+    "dc1d2769a281dfc6b0f75466bfbb7280",
+    "e70a97f92198d1dd92b73cdbd0d9ed5f"
   ],
   "style_history": [
-    "Profile Beat",
     "Explainer",
     "Reaction Round-up",
     "Trend Take",
@@ -263,10 +263,10 @@
     "Profile Beat",
     "Explainer",
     "Hard News Lead",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "timeline_shift|Alex Cooper|Trend Take",
     "policy_gap|Venezuela Fury|Hard News Lead",
     "accountability|Katie Price|Profile Beat",
     "winners_losers|Tech industry|Reaction Round-up",
@@ -345,6 +345,7 @@
     "myth_vs_fact|Andrew McCarthy|Profile Beat",
     "myth_vs_fact|Car crash|Explainer",
     "story_progression|Joe Negri|Hard News Lead",
-    "timeline_shift|na|Trend Take"
+    "timeline_shift|na|Trend Take",
+    "accountability|Freedom 250|Profile Beat"
   ]
 }
