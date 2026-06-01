@@ -1211,6 +1211,8 @@ South Africans return home from Russia-Ukraine conflict foll is central to this 
 
 South Africans return home from Russia-Ukraine conflict foll is central to this update for Kenyan readers.
 
+South Africans return home from Russia-Ukraine conflict foll is central to this update for Kenyan readers.
+
 A South African investigative series is set to expose the harrowing return of men recruited for the Russia-Ukraine conflict. These individuals, lured by trusted figures, are back home traumatised, prompting questions about politically connected recruiters and an unfolding criminal investigation across the nation, as revealed this Sunday, March 22, 2026.
 
 Politically Connected Recruitment Allegations Emerge The upcoming *Carte Blanche* episode, airing this Sunday, March 22, 2026, on M-Net, will delve into the profound experiences of South African men who were convinced to join the conflict between Russia and Ukraine. These men returned months later, reportedly wounded, traumatised, and disillusioned. Their repatriation, facilitated through high-level presidential negotiations, has redirected scrutiny toward politically connected individuals suspected of orchestrating their recruitment. This situation raises serious questions regarding accountability as a criminal investigation slowly develops. South Africa's foreign minister, Ronald Lamola, confirmed in February 2026 that at least two South Africans had died fighting for Russia after being deceived by a recruitment scheme.
