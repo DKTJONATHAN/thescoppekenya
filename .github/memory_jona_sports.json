@@ -199,10 +199,10 @@
     "4a579738f30d731d8800ac07754e0a16",
     "7eb07215ad2504b28407bbfc3652e1bc",
     "1aeb8f38085c4e695b55889646d7f278",
-    "5b53f6584263ed7374904781736abda8"
+    "5b53f6584263ed7374904781736abda8",
+    "1ddc9d207828a8a2eeb0c6101ba406c0"
   ],
   "style_history": [
-    "Player Profile Beat",
     "Stat Story",
     "Tactical Take",
     "Match Report",
@@ -231,10 +231,10 @@
     "Cynical Pundit",
     "Tactical Take",
     "Player Profile Beat",
-    "Stat Story"
+    "Stat Story",
+    "Match Report"
   ],
   "angle_history": [
-    "myth_vs_fact|Manchester United|Stat Story",
     "policy_gap|EFL|Cynical Pundit",
     "next_48_hours|Premier League|Match Report",
     "impact_on_citizens|referee|Tactical Take",
@@ -313,6 +313,7 @@
     "policy_gap|football|Cynical Pundit",
     "story_progression|David Raya|Tactical Take",
     "story_progression|Liverpool FC|Player Profile Beat",
-    "timeline_shift|Champions League|Stat Story"
+    "timeline_shift|Champions League|Stat Story",
+    "story_progression|Football|Match Report"
   ]
 }
