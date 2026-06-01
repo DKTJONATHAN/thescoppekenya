@@ -14,6 +14,8 @@ focusKeyword: "'Joe Negri, Handyman from Mister Rogers' Neighborhood, Dies at 99
 schema: "NewsArticle"
 ---
 
+'Joe Negri, Handyman from Mister Rogers' Neighborhood, Dies at 99 is central to this update for Kenyan readers.
+
 "Joe Negri, Handyman from Mister Rogers' Neighborhood, Dies at 99 is central to this update for Kenyan readers.
 
 ## Jazz Maestro Joe Negri Death Marks End of an Era

@@ -1200,6 +1200,8 @@ Kenya-US health data agreement is central to this update for Kenyan readers.
 
 Kenya-US health data agreement is central to this update for Kenyan readers.
 
+Kenya-US health data agreement is central to this update for Kenyan readers.
+
 ## High Court Upholds Public Interest in Kenya-US Health Data Agreement Challenge
 
 The High Court has stopped the Consumer Federation of Kenya (COFEK) from withdrawing its legal challenge against the controversial Kenya-US health data agreement. Justice Patricia Nyaundi's recent ruling in Kenya upheld the Katiba Institute's objection, emphasizing that public interest cases on constitutional matters, like data protection and privacy, cannot be privately dismissed.
