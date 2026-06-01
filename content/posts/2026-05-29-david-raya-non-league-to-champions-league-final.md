@@ -76,6 +76,8 @@ David Raya poised for rare rise from non-league to Champions Leag is central to 
 
 David Raya poised for rare rise from non-league to Champions Leag is central to this update for Kenyan readers.
 
+David Raya poised for rare rise from non-league to Champions Leag is central to this update for Kenyan readers.
+
 ## The Haig Avenue Crucible
 
 David Raya is currently staring down the prospect of a Champions League final. While such a peak usually belongs to graduates of pristine European academies, Raya’s story began in the mud of the English National League. His climb proves that non-league grit provides the ultimate calibration for a goalkeeper. It serves as a stark reminder that professional development is often forged in environments lacking the luxuries of the elite level.

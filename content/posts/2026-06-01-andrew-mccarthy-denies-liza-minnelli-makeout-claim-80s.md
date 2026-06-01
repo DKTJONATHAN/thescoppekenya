@@ -14,6 +14,8 @@ focusKeyword: "'Andrew McCarthy Denies 80s Liza Minnelli Makeout Claim"
 schema: "NewsArticle"
 ---
 
+'Andrew McCarthy Denies 80s Liza Minnelli Makeout Claim is central to this update for Kenyan readers.
+
 "Andrew McCarthy Denies 80s Liza Minnelli Makeout Claim is central to this update for Kenyan readers.
 
 ## When 80s Hollywood Memories Collide: Andrew McCarthy and Liza Minnelli at the Centre of a Disputed Tale
