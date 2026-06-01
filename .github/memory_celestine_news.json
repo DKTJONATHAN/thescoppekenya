@@ -196,10 +196,10 @@
     "cc6770438db62d8a8f35705f6d3a0a92",
     "7a8abcb8a24c26a75e5db6841ccb4509",
     "07cfa8f972215fa9a2f552c9ac4187aa",
-    "db0efb337977f5789c32121f97c41745"
+    "db0efb337977f5789c32121f97c41745",
+    "8ad3babb04198d52381c4eb8f99eb9be"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Hard News Lead",
     "Explainer",
     "Reaction & Voices",
@@ -228,10 +228,10 @@
     "Context Backgrounder",
     "Power Accountability",
     "Explainer",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "next_48_hours|KRA|Context Backgrounder",
     "myth_vs_fact|Engineering|Reaction & Voices",
     "accountability|Kenya|Power Accountability",
     "myth_vs_fact|EPRA|Explainer",
@@ -310,6 +310,7 @@
     "policy_gap|Huduma Kenya|Context Backgrounder",
     "winners_losers|Infrastructure|Power Accountability",
     "policy_gap|Utumishi High School|Explainer",
-    "winners_losers|NTSA|Hard News Lead"
+    "winners_losers|NTSA|Hard News Lead",
+    "story_progression|Nairobi|Reaction & Voices"
   ]
 }
