@@ -275,10 +275,10 @@
     "14e127cab73291202843d95a2d7960c6",
     "02a0736af834090d2795da9c9b26f2a6",
     "3648b0de2cebff0b5c707637d6d8dac6",
-    "477334e5c3c394dac56b373d47a633ea"
+    "477334e5c3c394dac56b373d47a633ea",
+    "234e2345f38b10fe565204bdfabaf154"
   ],
   "style_history": [
-    "Receipts Piece",
     "Hard News Lead",
     "Profile Beat",
     "Trend Take",
@@ -307,10 +307,10 @@
     "Reaction Round-up",
     "Hard News Lead",
     "Receipts Piece",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "money_follow|Johnnie Walker|Profile Beat",
     "myth_vs_fact|impeachment|Receipts Piece",
     "policy_gap|Nollywood|Hard News Lead",
     "accountability|NACADA|Reaction Round-up",
@@ -389,6 +389,7 @@
     "myth_vs_fact|Kenya|Reaction Round-up",
     "story_progression|One Night Only|Hard News Lead",
     "money_follow|maternal health|Receipts Piece",
-    "myth_vs_fact|boxing|Profile Beat"
+    "myth_vs_fact|boxing|Profile Beat",
+    "winners_losers|Nairobi|Reaction Round-up"
   ]
 }
