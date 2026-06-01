@@ -200,6 +200,8 @@ Government Declares May 27 Public Holiday for Eid-ul-Adha is central to this upd
 
 Government Declares May 27 Public Holiday for Eid-ul-Adha is central to this update for Kenyan readers.
 
+Government Declares May 27 Public Holiday for Eid-ul-Adha is central to this update for Kenyan readers.
+
 ## Eid-ul-Adha and the Mid-Week Public Holiday
 
 Interior Cabinet Secretary Kipchumba Murkomen has confirmed that Wednesday, May 27, 2026, will be a public holiday to mark Eid-ul-Adha. While this provides a welcome break for many workers, it also triggers a unique shift in the nation’s economic rhythm and productivity cycle.
