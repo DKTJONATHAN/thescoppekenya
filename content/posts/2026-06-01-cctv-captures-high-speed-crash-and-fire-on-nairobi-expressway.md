@@ -30,6 +30,8 @@ CCTV Captures High-Speed Crash and Fire on Nairobi Expressway is central to this
 
 CCTV Captures High-Speed Crash and Fire on Nairobi Expressway is central to this update for Kenyan readers.
 
+CCTV Captures High-Speed Crash and Fire on Nairobi Expressway is central to this update for Kenyan readers.
+
 ## Beyond the Lens: Nairobi Demands Accountability on the Expressway
 
 Social media timelines are saturated with digital trauma this morning, as residents question why the Nairobi Expressway remains a high-speed theater of accidents caught on camera rather than a road designed to prevent them.
