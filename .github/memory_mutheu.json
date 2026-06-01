@@ -227,10 +227,10 @@
     "fbb5702b24f4050e6f5d1da5f00009ca",
     "35e2b7edcac9292ad2978804f105df88",
     "91d2fcf6bd31bac460640cfc287f6d25",
-    "a3dc8def9a6f9e565162035e048dbb43"
+    "a3dc8def9a6f9e565162035e048dbb43",
+    "9d1192f70348eaad480d7ab4eea65311"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Explainer",
     "Trend Take",
     "Hard News Lead",
@@ -259,10 +259,10 @@
     "Explainer",
     "Reaction Round-up",
     "Hard News Lead",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "impact_on_citizens|acting career|Profile Beat",
     "policy_gap|Famesick|Hard News Lead",
     "impact_on_citizens|streaming|Explainer",
     "impact_on_citizens|Saturday Night Live|Reaction Round-up",
@@ -341,6 +341,7 @@
     "story_progression|3rd Rock From the Sun|Explainer",
     "money_follow|Emilia Clarke|Reaction Round-up",
     "policy_gap|Vasana Montgomery|Hard News Lead",
-    "story_progression|na|Trend Take"
+    "story_progression|na|Trend Take",
+    "myth_vs_fact|Andrew McCarthy|Profile Beat"
   ]
 }
