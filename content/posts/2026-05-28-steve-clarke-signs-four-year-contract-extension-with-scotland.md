@@ -86,6 +86,8 @@ Steve Clarke signs four-year contract extension with Scotland is central to this
 
 Steve Clarke signs four-year contract extension with Scotland is central to this update for Kenyan readers.
 
+Steve Clarke signs four-year contract extension with Scotland is central to this update for Kenyan readers.
+
 ## The Scottish FA's Four-Year Death Grip on Mediocrity
 
 The Scottish Football Association has just handed Steve Clarke a contract extension through 2030, a decision framed as stability but functioning as a velvet-lined cage for a national team that has forgotten how to win when the lights are brightest.

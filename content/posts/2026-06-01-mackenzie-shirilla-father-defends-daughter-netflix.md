@@ -14,6 +14,8 @@ focusKeyword: "'Mackenzie Shirilla's Father Defends Daughter's Murder Conviction
 schema: "NewsArticle"
 ---
 
+'Mackenzie Shirilla's Father Defends Daughter's Murder Conviction is central to this update for Kenyan readers.
+
 "Mackenzie Shirilla's Father Defends Daughter's Murder Conviction is central to this update for Kenyan readers.
 
 ## Beyond the Verdict: The Enduring Debate Around Mackenzie Shirilla's Conviction
