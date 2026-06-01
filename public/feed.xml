@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Mon, 01 Jun 2026 08:49:45 GMT</pubDate>
+    <pubDate>Mon, 01 Jun 2026 10:43:44 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Kenya manufacturing costs drop as consumer prices remain high]]></title>
+      <link>https://zandani.co.ke/article/kenya-manufacturing-costs-drop-but-consumer-prices-remain-high</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-manufacturing-costs-drop-but-consumer-prices-remain-high</guid>
+      <pubDate>Mon, 01 Jun 2026 10:30:50 GMT</pubDate>
+      <dc:creator><![CDATA[Grace Mkamburi]]></dc:creator>
+      <description><![CDATA[Producer prices in Kenya have fallen to early 2023 levels, but retail prices stay high, creating a record gap between production and consumer costs.]]></description>
+      <enclosure url="https://i.ibb.co/XkZ4cLZz/13309498136f.png" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/XkZ4cLZz/13309498136f.png" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/XkZ4cLZz/13309498136f.png" alt="Kenya manufacturing costs drop as consumer prices remain high" /><p>Producer prices in Kenya have fallen to early 2023 levels, but retail prices stay high, creating a record gap between production and consumer costs.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[The King's Endless Debt: A Kesonian Echo of Medio General]]></title>
       <link>https://zandani.co.ke/article/the-kings-endless-debt-kesonian-echo-medio-general</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://cdn.radioafrica.digital/image/2026/05/0a284ef8-9f5a-427e-820e-38cd25b047d2.jpg?1779966251846" type="image/jpeg" />
       <media:content url="https://cdn.radioafrica.digital/image/2026/05/0a284ef8-9f5a-427e-820e-38cd25b047d2.jpg?1779966251846" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://cdn.radioafrica.digital/image/2026/05/0a284ef8-9f5a-427e-820e-38cd25b047d2.jpg?1779966251846" alt="Rachel Ruto Calls for National Prayers Amid Rising Public Tension" /><p>Rachel Ruto Calls for National Prayers Amid Rising Public Tension: First Lady Rachel Ruto has requested a period of national prayer for June and July, sparking</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Kenya Power Announces Maintenance Outages for Four Counties]]></title>
-      <link>https://zandani.co.ke/article/kenya-power-maintenance-outages-may-28</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-power-maintenance-outages-may-28</guid>
-      <pubDate>Thu, 28 May 2026 10:23:28 GMT</pubDate>
-      <dc:creator><![CDATA[Wanjiku Kuria]]></dc:creator>
-      <description><![CDATA[Kenya Power Announces Maintenance Outages for Four Counties: Kenya Power has scheduled network maintenance for May 28, affecting residential and commercial]]></description>
-      <enclosure url="https://www.ghafla.co.ke/ke/wp-content/uploads/sites/4/2024/08/Kenya-Power-KPLC.jpg" type="image/jpeg" />
-      <media:content url="https://www.ghafla.co.ke/ke/wp-content/uploads/sites/4/2024/08/Kenya-Power-KPLC.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://www.ghafla.co.ke/ke/wp-content/uploads/sites/4/2024/08/Kenya-Power-KPLC.jpg" alt="Kenya Power Announces Maintenance Outages for Four Counties" /><p>Kenya Power Announces Maintenance Outages for Four Counties: Kenya Power has scheduled network maintenance for May 28, affecting residential and commercial</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
