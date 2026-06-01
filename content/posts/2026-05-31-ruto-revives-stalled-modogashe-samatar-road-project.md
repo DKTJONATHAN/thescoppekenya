@@ -28,6 +28,8 @@ President Ruto revives stalled Modogashe-Samatar road project is central to this
 
 President Ruto revives stalled Modogashe-Samatar road project is central to this update for Kenyan readers.
 
+President Ruto revives stalled Modogashe-Samatar road project is central to this update for Kenyan readers.
+
 ## Asphalt Promises on a Desert Mirage
 
 The state has unveiled yet another timeline to patch the 157-kilometre stretch connecting Modogashe and Samatar. While the President frames this as a new dawn for Wajir, the residents of Habaswein have heard this exact song performed by every administration since independence.
