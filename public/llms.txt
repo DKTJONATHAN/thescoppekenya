@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Southampton FC sanctioned for systematic spying on rival clubs](https://zandani.co.ke/article/southampton-fc-sanctioned-for-systematic-spying-on-rival-clubs) - Southampton faces expulsion from the Championship play-offs and a points deduction after an investigation confirmed illegal spying.
 - [Ruto Apologizes for Northern Kenya Marginalization in Wajir](https://zandani.co.ke/article/ruto-apologizes-for-northern-kenya-marginalization-in-wajir) - President Ruto apologizes for historical marginalization of Northern Kenya and outlines reforms to integrate Duksi and Madrassa into the national education system.
 - [Kirk Whalum and Alikiba Headline One Night Only Concert in Nairobi](https://zandani.co.ke/article/kirk-whalum-alikiba-headline-one-night-only-concert-nairobi) - The One Night Only concert at Sarit Expo Centre brought together jazz and Afropop for a premium evening of music, high-end production, and fashion.
 - ['Joe Negri, Handyman from Mister Rogers' Neighborhood, Dies at 99](https://zandani.co.ke/article/joe-negri-handyman-mister-rogers-jazz-musician-dies) - 'Joe Negri, Handyman from Mister Rogers' Neighborhood, Dies at 99: Joe Negri, beloved Handyman Negri on Mister Rogers' Neighborhood and renowned jazz musician,
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Kenya manufacturing costs drop as consumer prices remain high](https://zandani.co.ke/article/kenya-manufacturing-costs-drop-but-consumer-prices-remain-high) - Kenya manufacturing costs drop as consumer prices remain high: Producer prices in Kenya have fallen to early 2023 levels, but retail prices stay high, creating
 - [The King's Endless Debt: A Kesonian Echo of Medio General](https://zandani.co.ke/article/the-kings-endless-debt-kesonian-echo-medio-general) - The King's Endless Debt: A Kesonian Echo of Medio General: The coffers of a kingdom, vast as they seemed, often proved as fickle as desert mirage. A tale of
 - ['Mackenzie Shirilla's Father Defends Daughter's Murder Conviction](https://zandani.co.ke/article/mackenzie-shirilla-father-defends-daughter-netflix) - 'Mackenzie Shirilla's Father Defends Daughter's Murder Conviction: Mackenzie Shirilla's father staunchly defends her innocence, claiming an unknown event
-- [CCTV Captures High-Speed Crash and Fire on Nairobi Expressway](https://zandani.co.ke/article/cctv-captures-high-speed-crash-and-fire-on-nairobi-expressway) - CCTV Captures High-Speed Crash and Fire on Nairobi Expressway: Security footage shows a vehicle colliding with a barrier and catching fire near the Ole Sereni
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
