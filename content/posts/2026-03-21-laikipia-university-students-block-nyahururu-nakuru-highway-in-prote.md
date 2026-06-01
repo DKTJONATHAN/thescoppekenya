@@ -1205,6 +1205,8 @@ Laikipia University students block Nyahururu-Nakuru Highway is central to this u
 
 Laikipia University students block Nyahururu-Nakuru Highway is central to this update for Kenyan readers.
 
+Laikipia University students block Nyahururu-Nakuru Highway is central to this update for Kenyan readers.
+
 Laikipia University students initiated protests today, Saturday, March 21, 2026, blocking the Nyahururu-Nakuru Highway. The demonstrations followed the death of first-year student Hillary Vumilu, who sustained fatal injuries during a hiking trip, prompting demands for institutional accountability regarding emergency response.
 
 Laikipia University Protests Disrupt Highway
