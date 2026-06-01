@@ -228,10 +228,10 @@
     "35e2b7edcac9292ad2978804f105df88",
     "91d2fcf6bd31bac460640cfc287f6d25",
     "a3dc8def9a6f9e565162035e048dbb43",
-    "9d1192f70348eaad480d7ab4eea65311"
+    "9d1192f70348eaad480d7ab4eea65311",
+    "61832b433848369f8a63330c69e458ee"
   ],
   "style_history": [
-    "Explainer",
     "Trend Take",
     "Hard News Lead",
     "Profile Beat",
@@ -260,10 +260,10 @@
     "Reaction Round-up",
     "Hard News Lead",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Explainer"
   ],
   "angle_history": [
-    "policy_gap|Famesick|Hard News Lead",
     "impact_on_citizens|streaming|Explainer",
     "impact_on_citizens|Saturday Night Live|Reaction Round-up",
     "timeline_shift|Alex Cooper|Trend Take",
@@ -342,6 +342,7 @@
     "money_follow|Emilia Clarke|Reaction Round-up",
     "policy_gap|Vasana Montgomery|Hard News Lead",
     "story_progression|na|Trend Take",
-    "myth_vs_fact|Andrew McCarthy|Profile Beat"
+    "myth_vs_fact|Andrew McCarthy|Profile Beat",
+    "myth_vs_fact|Car crash|Explainer"
   ]
 }
