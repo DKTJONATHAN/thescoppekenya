@@ -158,10 +158,10 @@
     "1fddff95c2bec76c46162d2539fa9011",
     "d3593910c70bfdd1b49b5debc350b742",
     "5cc4e194f002c363a11840cbd9925698",
-    "3ce68bed5ec9adc4220b8fa45cfb5736"
+    "3ce68bed5ec9adc4220b8fa45cfb5736",
+    "d59f99e41d676dac047c6fb0f253c468"
   ],
   "style_history": [
-    "Markets Report",
     "Power Accountability",
     "Explainer",
     "SME Angle",
@@ -190,7 +190,8 @@
     "SME Angle",
     "Backgrounder",
     "Explainer",
-    "Power Accountability"
+    "Power Accountability",
+    "Markets Report"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -261,6 +262,7 @@
     "policy_gap|Ethio Telecom|SME Angle",
     "winners_losers|mining|Backgrounder",
     "money_follow|fintech|Explainer",
-    "accountability|infrastructure-for-resources|Power Accountability"
+    "accountability|infrastructure-for-resources|Power Accountability",
+    "myth_vs_fact|Kenya|Markets Report"
   ]
 }
