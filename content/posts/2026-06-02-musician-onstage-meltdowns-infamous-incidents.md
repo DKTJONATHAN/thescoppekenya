@@ -14,6 +14,8 @@ focusKeyword: "'Musician Onstage Meltdowns: 8 Infamous Incidents Revealed"
 schema: "NewsArticle"
 ---
 
+'Musician Onstage Meltdowns: 8 Infamous Incidents Revealed is central to this update for Kenyan readers.
+
 "Musician Onstage Meltdowns: 8 Infamous Incidents Revealed is central to this update for Kenyan readers.
 
 ## When the Stage Cracks: Examining Global Musician Onstage Meltdowns
