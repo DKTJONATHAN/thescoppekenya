@@ -200,10 +200,10 @@
     "7eb07215ad2504b28407bbfc3652e1bc",
     "1aeb8f38085c4e695b55889646d7f278",
     "5b53f6584263ed7374904781736abda8",
-    "1ddc9d207828a8a2eeb0c6101ba406c0"
+    "1ddc9d207828a8a2eeb0c6101ba406c0",
+    "eba422c3db6c88684fe68bc590790bac"
   ],
   "style_history": [
-    "Stat Story",
     "Tactical Take",
     "Match Report",
     "Player Profile Beat",
@@ -232,10 +232,10 @@
     "Tactical Take",
     "Player Profile Beat",
     "Stat Story",
-    "Match Report"
+    "Match Report",
+    "Tactical Take"
   ],
   "angle_history": [
-    "policy_gap|EFL|Cynical Pundit",
     "next_48_hours|Premier League|Match Report",
     "impact_on_citizens|referee|Tactical Take",
     "accountability|Premier League|Player Profile Beat",
@@ -314,6 +314,7 @@
     "story_progression|David Raya|Tactical Take",
     "story_progression|Liverpool FC|Player Profile Beat",
     "timeline_shift|Champions League|Stat Story",
-    "story_progression|Football|Match Report"
+    "story_progression|Football|Match Report",
+    "story_progression|Kenny Dalglish|Tactical Take"
   ]
 }
