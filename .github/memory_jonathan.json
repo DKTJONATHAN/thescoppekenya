@@ -138,10 +138,10 @@
     "ba94cd7ff2f39f54041a49287372b96b",
     "1056d2ccc6ee7a25fa52bd774d4cb7fb",
     "844c8e4e57904b4ed4c9d7bef518fb5b",
-    "266c6b5be9ee779669256617b6a99d70"
+    "266c6b5be9ee779669256617b6a99d70",
+    "dbaa4e9913b67c77d10707f33c78fb20"
   ],
   "style_history": [
-    "Sharp Column",
     "Personal Reflection",
     "Letter Form",
     "Counterpoint",
@@ -170,10 +170,10 @@
     "Counterpoint",
     "Sharp Column",
     "Letter Form",
-    "Personal Reflection"
+    "Personal Reflection",
+    "Historical Lens"
   ],
   "angle_history": [
-    "timeline_shift|food security|Historical Lens",
     "impact_on_citizens|green economy|Letter Form",
     "winners_losers|leadership|Personal Reflection",
     "myth_vs_fact|Devolution|Counterpoint",
@@ -252,6 +252,7 @@
     "myth_vs_fact|sports economics|Counterpoint",
     "accountability|Kenya|Sharp Column",
     "story_progression|Madaraka Day|Letter Form",
-    "story_progression|Northern Kenya|Personal Reflection"
+    "story_progression|Northern Kenya|Personal Reflection",
+    "policy_gap|Northern Kenya|Historical Lens"
   ]
 }
