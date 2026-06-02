@@ -1070,6 +1070,8 @@ Hull City and Millwall play out scoreless draw in play-off tie is central to thi
 
 Hull City and Millwall play out scoreless draw in play-off tie is central to this update for Kenyan readers.
 
+Hull City and Millwall play out scoreless draw in play-off tie is central to this update for Kenyan readers.
+
 ## Championship play-offs: A Stalemate Defined by Caution
 
 Hull City and Millwall finished in a 0-0 draw at the MKM Stadium, leaving their play-off tie deadlocked. This scoreless result emphasizes the intense financial pressure inherent in the Championship play-offs, where a single refereeing intervention can influence a club's fiscal trajectory for years.
