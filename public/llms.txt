@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Police officer dies after collapsing at Wajir Madaraka Day parade](https://zandani.co.ke/article/police-officer-collapses-dies-during-wajir-madaraka-day-celebrations) - An officer identified as Hassan Juma Moyo died of a suspected heart attack during Madaraka Day celebrations at Wajir Stadium on June 1st.
 - ["Simon Cowell Credits Susan Boyle for Got Talent Success, Admits Misjudgment](https://zandani.co.ke/article/simon-cowell-susan-boyle-got-talent-impact-new-season) - Simon Cowell reveals Susan Boyle's immense positive impact on the 'Got Talent' franchise, admitting past misjudgment. Discover how Boyle transformed the show.
 - [Paternity disputes and social stigma emerge following Kware dumpsite murders](https://zandani.co.ke/article/paternity-disputes-and-social-stigma-emerge-following-kware-dumpsite) - Paternity disputes and social stigma emerge following Kware dumps: Forensic DNA testing at Nairobi's Kware dumpsite reveals hidden paternity disputes and
 - ['Musician Onstage Meltdowns: 8 Infamous Incidents Revealed](https://zandani.co.ke/article/musician-onstage-meltdowns-infamous-incidents) - 'Musician Onstage Meltdowns: 8 Infamous Incidents Revealed: Explore eight infamous musician onstage meltdowns involving artists like Morgan Wallen and Billie
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [The Unseen Peril: Kenya Matatu Blind Spot Accidents](https://zandani.co.ke/article/unseen-peril-kenya-matatu-blind-spot-accidents) - The Unseen Peril: Kenya Matatu Blind Spot Accidents: In the annals of overlooked dangers, the Asch Building once stood as a monument to unseen perils, much
 - ['Chyler Leigh Regrets Not Filming Grey's Anatomy Reunion with Eric Dane](https://zandani.co.ke/article/chyler-leigh-eric-dane-greys-anatomy-reunion-regret) - 'Chyler Leigh Regrets Not Filming Grey's Anatomy Reunion with Eri: Chyler Leigh regrets not filming Grey's Anatomy reunion scenes on-set with late co-star Eric
 - [Seven Utumishi Girls Academy students held over fatal school fire](https://zandani.co.ke/article/utumishi-girls-academy-students-held-over-fatal-fire) - Seven Utumishi Girls Academy students held over fatal school fire: Seven students are in custody after a dormitory fire killed 16 people at Utumishi Girls
-- [Seven Utumishi Academy Students Arrested Over Alleged Dormitory Arson Attempt](https://zandani.co.ke/article/seven-utumishi-academy-students-arrested-over-alleged-dormitory-arso) - Seven Utumishi Academy Students Arrested Over Alleged Dormitory A: Seven Utumishi Academy students in Gilgil were arrested this week for allegedly attempting
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
