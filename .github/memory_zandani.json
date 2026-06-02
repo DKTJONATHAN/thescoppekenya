@@ -276,10 +276,10 @@
     "02a0736af834090d2795da9c9b26f2a6",
     "3648b0de2cebff0b5c707637d6d8dac6",
     "477334e5c3c394dac56b373d47a633ea",
-    "234e2345f38b10fe565204bdfabaf154"
+    "234e2345f38b10fe565204bdfabaf154",
+    "46d1369846cd7d3a983815ec6ab1faad"
   ],
   "style_history": [
-    "Hard News Lead",
     "Profile Beat",
     "Trend Take",
     "Reaction Round-up",
@@ -308,10 +308,10 @@
     "Hard News Lead",
     "Receipts Piece",
     "Profile Beat",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
-    "myth_vs_fact|impeachment|Receipts Piece",
     "policy_gap|Nollywood|Hard News Lead",
     "accountability|NACADA|Reaction Round-up",
     "winners_losers|co-parenting|Profile Beat",
@@ -390,6 +390,7 @@
     "story_progression|One Night Only|Hard News Lead",
     "money_follow|maternal health|Receipts Piece",
     "myth_vs_fact|boxing|Profile Beat",
-    "winners_losers|Nairobi|Reaction Round-up"
+    "winners_losers|Nairobi|Reaction Round-up",
+    "myth_vs_fact|Raila Odinga|Trend Take"
   ]
 }
