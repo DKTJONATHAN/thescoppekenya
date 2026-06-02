@@ -200,10 +200,10 @@
     "8ad3babb04198d52381c4eb8f99eb9be",
     "919838f7542348b589220701c9f3fdcb",
     "73d2ef7c03dfb570641ef254b2b27b3a",
-    "181ad27620467bf7ab50b327fe821e2f"
+    "181ad27620467bf7ab50b327fe821e2f",
+    "2991a780617dc5f2be7865129171bb40"
   ],
   "style_history": [
-    "Power Accountability",
     "Context Backgrounder",
     "Explainer",
     "Hard News Lead",
@@ -232,10 +232,10 @@
     "Reaction & Voices",
     "Context Backgrounder",
     "Power Accountability",
-    "Explainer"
+    "Explainer",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "winners_losers|Kenya|Hard News Lead",
     "timeline_shift|EPRA|Context Backgrounder",
     "accountability|WhatsApp|Power Accountability",
     "impact_on_citizens|EPRA|Reaction & Voices",
@@ -314,6 +314,7 @@
     "story_progression|Nairobi|Reaction & Voices",
     "money_follow|school fire|Context Backgrounder",
     "policy_gap|Kenya|Power Accountability",
-    "myth_vs_fact|Bolt Kenya|Explainer"
+    "myth_vs_fact|Bolt Kenya|Explainer",
+    "policy_gap|Kenya Police|Reaction & Voices"
   ]
 }
