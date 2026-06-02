@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Kenyans Criticize Unrealistic Advice Suggesting High Rent Percentages Are Financial Failures](https://zandani.co.ke/article/kenyans-criticize-unrealistic-advice-suggesting-high-rent-percentage) - Kenyans are debating personal finance standards after public claims labeled spending 20-30% of income on rent as a sign of poor financial planning.
 - [Government sets deadline for second NYOTA startup grant payments](https://zandani.co.ke/article/government-sets-deadline-for-second-nyota-startup-grant-payments) - The government has scheduled the second NYOTA grant tranche for June 2026 after shifting to a single nationwide intake system for millions of applicants.
 - [Naivasha Girls High School Closed Indefinitely Over Planned Arson Attack](https://zandani.co.ke/article/naivasha-girls-high-school-closed-indefinitely-over-planned-arson-at) - Naivasha Girls High School has closed indefinitely following intelligence reports of a planned arson attack by students targeting school dormitories.
 - [Nvidia Launches RTX Spark Chip to Target Premium Windows Laptops](https://zandani.co.ke/article/nvidia-launches-rtx-spark-chip-for-premium-windows-laptops) - Nvidia has introduced the Blackwell-based RTX Spark chip for Windows on ARM laptops, focusing on high-end gaming and local AI performance.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Liverpool football legend Kenny Dalglish diagnosed with cancer](https://zandani.co.ke/article/liverpool-legend-kenny-dalglish-diagnosed-with-cancer) - Liverpool football legend Kenny Dalglish diagnosed with cancer: Football icon Sir Kenny Dalglish has announced he is receiving treatment for cancer. The former
 - [Northern Kenya Sees Infrastructure Boom Under National Strategy](https://zandani.co.ke/article/northern-kenya-infrastructure-development-strategy) - Northern Kenya Sees Infrastructure Boom Under National Strategy: The national government is prioritizing infrastructure in Northern Kenya to reverse historical
 - [Maurice Ogeta clarifies circumstances of Raila Odinga death](https://zandani.co.ke/article/maurice-ogeta-clarifies-circumstances-of-raila-odinga-death) - Maurice Ogeta clarifies circumstances of Raila Odinga death: Bodyguard Maurice Ogeta reveals Raila Odinga passed away while exercising in India, dispelling
-- [Pastor Victor Kanyari recounts past financial dependency ordeal](https://zandani.co.ke/article/pastor-victor-kanyari-recounts-past-financial-dependency-ordeal) - Pastor Victor Kanyari recounts past financial dependency ordeal: Pastor Victor Kanyari shares his experience of living with an older woman after high school to
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
