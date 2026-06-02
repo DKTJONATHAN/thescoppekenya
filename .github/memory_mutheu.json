@@ -235,10 +235,10 @@
     "e70a97f92198d1dd92b73cdbd0d9ed5f",
     "5d178972fddce85cdbf70d080f93d983",
     "2d25aa9f28d7b80bc76046fe8a2f363d",
-    "837241dadc2348bb465a74d299f595ae"
+    "837241dadc2348bb465a74d299f595ae",
+    "209a611098ee48587e2178658adc33e3"
   ],
   "style_history": [
-    "Hard News Lead",
     "Profile Beat",
     "Explainer",
     "Reaction Round-up",
@@ -267,10 +267,10 @@
     "Profile Beat",
     "Explainer",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Trend Take"
   ],
   "angle_history": [
-    "myth_vs_fact|data privacy|Explainer",
     "impact_on_citizens|Pluribus|Trend Take",
     "impact_on_citizens|Emmy Awards|Profile Beat",
     "money_follow|Latto|Hard News Lead",
@@ -349,6 +349,7 @@
     "accountability|Freedom 250|Profile Beat",
     "accountability|na|Explainer",
     "accountability|America's Got Talent|Reaction Round-up",
-    "policy_gap|Engagement|Hard News Lead"
+    "policy_gap|Engagement|Hard News Lead",
+    "winners_losers|Susan Boyle|Trend Take"
   ]
 }
