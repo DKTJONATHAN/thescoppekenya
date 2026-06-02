@@ -14,6 +14,8 @@ focusKeyword: "'Unexpected Stars Bella Vaughn, Hunter Johnson End Engagement"
 schema: "NewsArticle"
 ---
 
+'Unexpected Stars Bella Vaughn, Hunter Johnson End Engagement is central to this update for Kenyan readers.
+
 "Unexpected Stars Bella Vaughn, Hunter Johnson End Engagement is central to this update for Kenyan readers.
 
 ## Teen Reality TV: Engagement Ends for Young Stars, Igniting Minor Protection Debate

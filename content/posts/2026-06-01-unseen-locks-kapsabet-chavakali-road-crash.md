@@ -35,6 +35,8 @@ The Unseen Locks on the Kapsabet-Chavakali Road is central to this update for Ke
 
 The Unseen Locks on the Kapsabet-Chavakali Road is central to this update for Kenyan readers.
 
+The Unseen Locks on the Kapsabet-Chavakali Road is central to this update for Kenyan readers.
+
 The afternoon sun, pale and reluctant, slanted through the grime-streaked windows of the Asch Building on Washington Place, March 25, 1911. Inside the Triangle Shirtwaist Factory, the clatter of sewing machines was a relentless, metallic chorus, a sound swallowed only by the sudden, guttural roar from the eighth floor. A wisp of smoke, then a dark plume, snaked from under a cutting table. Panic, a wild beast, erupted among the young women, their faces, once focused on cuffs and collars, now contorted in horror.
 
 ## A Dance with Flames on the Floors of Industry

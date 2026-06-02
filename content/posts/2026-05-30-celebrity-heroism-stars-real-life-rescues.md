@@ -72,6 +72,8 @@ schema: "NewsArticle"
 
 'Celebrity Heroism: Stars Who Performed Real-Life Rescues is central to this update for Kenyan readers.
 
+'Celebrity Heroism: Stars Who Performed Real-Life Rescues is central to this update for Kenyan readers.
+
 "Celebrity Heroism: Stars Who Performed Real-Life Rescues is central to this update for Kenyan readers.
 
 ## Hollywood Saves: More Than Just Stardom - A Kenyan Perspective on Real-Life Rescues
