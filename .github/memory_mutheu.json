@@ -234,10 +234,10 @@
     "dc1d2769a281dfc6b0f75466bfbb7280",
     "e70a97f92198d1dd92b73cdbd0d9ed5f",
     "5d178972fddce85cdbf70d080f93d983",
-    "2d25aa9f28d7b80bc76046fe8a2f363d"
+    "2d25aa9f28d7b80bc76046fe8a2f363d",
+    "837241dadc2348bb465a74d299f595ae"
   ],
   "style_history": [
-    "Trend Take",
     "Hard News Lead",
     "Profile Beat",
     "Explainer",
@@ -266,10 +266,10 @@
     "Trend Take",
     "Profile Beat",
     "Explainer",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "winners_losers|Tech industry|Reaction Round-up",
     "myth_vs_fact|data privacy|Explainer",
     "impact_on_citizens|Pluribus|Trend Take",
     "impact_on_citizens|Emmy Awards|Profile Beat",
@@ -348,6 +348,7 @@
     "timeline_shift|na|Trend Take",
     "accountability|Freedom 250|Profile Beat",
     "accountability|na|Explainer",
-    "accountability|America's Got Talent|Reaction Round-up"
+    "accountability|America's Got Talent|Reaction Round-up",
+    "policy_gap|Engagement|Hard News Lead"
   ]
 }
