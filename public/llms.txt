@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Government sets deadline for second NYOTA startup grant payments](https://zandani.co.ke/article/government-sets-deadline-for-second-nyota-startup-grant-payments) - The government has scheduled the second NYOTA grant tranche for June 2026 after shifting to a single nationwide intake system for millions of applicants.
 - [Naivasha Girls High School Closed Indefinitely Over Planned Arson Attack](https://zandani.co.ke/article/naivasha-girls-high-school-closed-indefinitely-over-planned-arson-at) - Naivasha Girls High School has closed indefinitely following intelligence reports of a planned arson attack by students targeting school dormitories.
 - [Nvidia Launches RTX Spark Chip to Target Premium Windows Laptops](https://zandani.co.ke/article/nvidia-launches-rtx-spark-chip-for-premium-windows-laptops) - Nvidia has introduced the Blackwell-based RTX Spark chip for Windows on ARM laptops, focusing on high-end gaming and local AI performance.
 - [COFEK Seeks Removal of Education PS Julius Bitok Over Mismanagement](https://zandani.co.ke/article/cofek-seeks-removal-of-education-ps-julius-bitok) - The Consumers Federation of Kenya has petitioned the Public Service Commission to remove Julius Bitok from office citing incompetence and negligence.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Northern Kenya Sees Infrastructure Boom Under National Strategy](https://zandani.co.ke/article/northern-kenya-infrastructure-development-strategy) - Northern Kenya Sees Infrastructure Boom Under National Strategy: The national government is prioritizing infrastructure in Northern Kenya to reverse historical
 - [Maurice Ogeta clarifies circumstances of Raila Odinga death](https://zandani.co.ke/article/maurice-ogeta-clarifies-circumstances-of-raila-odinga-death) - Maurice Ogeta clarifies circumstances of Raila Odinga death: Bodyguard Maurice Ogeta reveals Raila Odinga passed away while exercising in India, dispelling
 - [Pastor Victor Kanyari recounts past financial dependency ordeal](https://zandani.co.ke/article/pastor-victor-kanyari-recounts-past-financial-dependency-ordeal) - Pastor Victor Kanyari recounts past financial dependency ordeal: Pastor Victor Kanyari shares his experience of living with an older woman after high school to
-- [Maersk Increases Shipping Surcharges for Cargo From China](https://zandani.co.ke/article/maersk-increases-shipping-surcharges-for-cargo-from-china) - Maersk Increases Shipping Surcharges for Cargo From China: Maersk has introduced new surcharges for containers from China and Hong Kong to Kenya effective June
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
