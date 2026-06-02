@@ -202,10 +202,10 @@
     "73d2ef7c03dfb570641ef254b2b27b3a",
     "181ad27620467bf7ab50b327fe821e2f",
     "2991a780617dc5f2be7865129171bb40",
-    "f9182e12191d8f2b708ea7c0edb79b41"
+    "f9182e12191d8f2b708ea7c0edb79b41",
+    "3eb0df6c0c84d9dbbed9149a38eb0504"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Reaction & Voices",
     "Context Backgrounder",
@@ -234,10 +234,10 @@
     "Power Accountability",
     "Explainer",
     "Reaction & Voices",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "accountability|WhatsApp|Power Accountability",
     "impact_on_citizens|EPRA|Reaction & Voices",
     "money_follow|Chesumei|Hard News Lead",
     "timeline_shift|Kenya|Context Backgrounder",
@@ -316,6 +316,7 @@
     "policy_gap|Kenya|Power Accountability",
     "myth_vs_fact|Bolt Kenya|Explainer",
     "policy_gap|Kenya Police|Reaction & Voices",
-    "money_follow|shipping costs|Context Backgrounder"
+    "money_follow|shipping costs|Context Backgrounder",
+    "timeline_shift|COFEK|Hard News Lead"
   ]
 }
