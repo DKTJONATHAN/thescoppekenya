@@ -14,6 +14,8 @@ focusKeyword: "'Freedom 250 Concert Controversy: Artists Withdraw, John Oliver M
 schema: "NewsArticle"
 ---
 
+'Freedom 250 Concert Controversy: Artists Withdraw, John Oliver M is central to this update for Kenyan readers.
+
 "Freedom 250 Concert Controversy: Artists Withdraw, John Oliver M is central to this update for Kenyan readers.
 
 ## The Fallout from Freedom 250: Who Bears the Blame for the Concert's Rocky Road?
