@@ -14,6 +14,8 @@ focusKeyword: "'Simon Cowell Credits Susan Boyle for Got Talent Success, Admits"
 schema: "NewsArticle"
 ---
 
+'Simon Cowell Credits Susan Boyle for Got Talent Success, Admits is central to this update for Kenyan readers.
+
 "Simon Cowell Credits Susan Boyle for Got Talent Success, Admits  is central to this update for Kenyan readers.
 
 ## Simon Cowell's Kindness: Do Kenyans Forgive and Trust the 'Got Talent' Judge's Redemption?
