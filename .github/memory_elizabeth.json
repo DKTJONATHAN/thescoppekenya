@@ -125,10 +125,10 @@
     "4ec72acfa8916c8270176c487eaca7e0",
     "750d3c2e87dc0e022f4b0062d075af7a",
     "548aade7db06c6c39a0763749d225cae",
-    "759160a767c1f3f622de237be6c3b9d9"
+    "759160a767c1f3f622de237be6c3b9d9",
+    "a4a2183d026c6b17882dfa6ca1a16b5a"
   ],
   "style_history": [
-    "Backgrounder",
     "Hard News Lead",
     "Critical Take",
     "Africa Angle",
@@ -157,7 +157,8 @@
     "Hard News Lead",
     "Backgrounder",
     "Critical Take",
-    "Africa Angle"
+    "Africa Angle",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -201,6 +202,7 @@
     "next_48_hours|data governance|Hard News Lead",
     "story_progression|Kenya|Backgrounder",
     "accountability|Ebola|Critical Take",
-    "winners_losers|Nvidia|Africa Angle"
+    "winners_losers|Nvidia|Africa Angle",
+    "policy_gap|wealth porn|Hard News Lead"
   ]
 }
