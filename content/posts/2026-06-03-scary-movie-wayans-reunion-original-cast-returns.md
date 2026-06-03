@@ -14,6 +14,8 @@ focusKeyword: "'Scary Movie Wayans Reunion: Original Cast Returns After 25 Years
 schema: "NewsArticle"
 ---
 
+'Scary Movie Wayans Reunion: Original Cast Returns After 25 Years is central to this update for Kenyan readers.
+
 "Scary Movie Wayans Reunion: Original Cast Returns After 25 Years is central to this update for Kenyan readers.
 
 ## The Return of Satire Kings: How a Creative Reckoning Ignited the Scary Movie Wayans Reunion
