@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Kenya to Launch Nairobi Metropolitan Police Unit Modeled on NYPD](https://zandani.co.ke/article/kenya-to-launch-nairobi-metropolitan-police-unit-modeled-on-nypd) - The government is introducing a new police unit for Nairobi incorporating data-driven strategies and surveillance technologies observed in New York.
 - ['Exploring Top Spy Movies: Intrigue, Gadgets, and Cold War Thrills](https://zandani.co.ke/article/spy-movies-iconic-espionage-films-explore) - 'Exploring Top Spy Movies: Intrigue, Gadgets, and Cold War Thrill: Explore a curated selection of significant spy movies, highlighting their appeal through
 - [KRA Directs Retired Civil Servants to File Mandatory Nil Returns](https://zandani.co.ke/article/kra-directs-retired-civil-servants-to-file-mandatory-nil-returns) - KRA Directs Retired Civil Servants to File Mandatory Nil Returns: Retired civil servants must file nil tax returns to avoid a two thousand shilling penalty
 - [Fred Machoka Sues Robert Alai for 60 Million Shillings After Blogger Denies Ownership of Facebook Account](https://zandani.co.ke/article/fred-machoka-sues-robert-alai-for-60-million-shillings-after-blogger) - Fred Machoka Sues Robert Alai for 60 Million Shillings After Blog: Veteran broadcaster Fred Machoka sues blogger Robert Alai for 60 million shillings over
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Analyzing Top Contenders for World Cup Golden Boot Award](https://zandani.co.ke/article/analyzing-top-contenders-for-world-cup-golden-boot-award) - Analyzing Top Contenders for World Cup Golden Boot Award: Football analysts are using historical performance trends and modern player metrics to predict
 - [President Ruto Commissions Infrastructure Projects in Wajir](https://zandani.co.ke/article/president-ruto-commissions-infrastructure-projects-in-wajir) - President Ruto Commissions Infrastructure Projects in Wajir: President William Ruto leads Madaraka Day celebrations in Wajir while launching key infrastructure
 - [Eko Dydda shares relaxed approach to upcoming surprise wedding](https://zandani.co.ke/article/eko-dydda-shares-relaxed-approach-to-upcoming-surprise-wedding) - Eko Dydda shares relaxed approach to upcoming surprise wedding: Gospel artist Eko Dydda has opened up about his spontaneous wedding plans in a recent interview
-- [Government Blocks Kenya Power Plan to Increase Electricity Tariffs](https://zandani.co.ke/article/government-blocks-kenya-power-plan-to-increase-electricity-tariffs) - Government Blocks Kenya Power Plan to Increase Electricity Tariff: The Ministry of Energy and Petroleum has officially cancelled a Kenya Power tariff review
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml

@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Wed, 03 Jun 2026 20:56:35 GMT</pubDate>
+    <pubDate>Wed, 03 Jun 2026 21:40:10 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Kenya to Launch Nairobi Metropolitan Police Unit Modeled on NYPD]]></title>
+      <link>https://zandani.co.ke/article/kenya-to-launch-nairobi-metropolitan-police-unit-modeled-on-nypd</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-to-launch-nairobi-metropolitan-police-unit-modeled-on-nypd</guid>
+      <pubDate>Wed, 03 Jun 2026 21:28:44 GMT</pubDate>
+      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
+      <description><![CDATA[The government is introducing a new police unit for Nairobi incorporating data-driven strategies and surveillance technologies observed in New York.]]></description>
+      <enclosure url="https://i.ibb.co/PZZzj5ry/bfbd6b7473b3.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/PZZzj5ry/bfbd6b7473b3.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/PZZzj5ry/bfbd6b7473b3.jpg" alt="Kenya to Launch Nairobi Metropolitan Police Unit Modeled on NYPD" /><p>The government is introducing a new police unit for Nairobi incorporating data-driven strategies and surveillance technologies observed in New York.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA['Exploring Top Spy Movies: Intrigue, Gadgets, and Cold War Thrills]]></title>
       <link>https://zandani.co.ke/article/spy-movies-iconic-espionage-films-explore</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
       <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="Residents risk lives to siphon fuel from overturned tanker in Migori" /><p>Residents risk lives to siphon fuel from overturned tanker in Mig: Residents in Migori risked their lives on May 30, 2026, by swarming an overturned tanker to</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Kenya Sets Up Ebola Isolation Units to Strengthen Health Safety]]></title>
-      <link>https://zandani.co.ke/article/kenya-establishes-ebola-isolation-units-to-strengthen-health-safety</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-establishes-ebola-isolation-units-to-strengthen-health-safety</guid>
-      <pubDate>Sat, 30 May 2026 16:13:49 GMT</pubDate>
-      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
-      <description><![CDATA[Kenya Sets Up Ebola Isolation Units to Strengthen Health Safety: Kenya is fortifying medical infrastructure against Ebola by establishing national isolation]]></description>
-      <enclosure url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/quarantine-facility.jpg?itok=AVDnD82n" type="image/jpeg" />
-      <media:content url="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/quarantine-facility.jpg?itok=AVDnD82n" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://www.kenyans.co.ke/files/styles/article_style/public/images/media/quarantine-facility.jpg?itok=AVDnD82n" alt="Kenya Sets Up Ebola Isolation Units to Strengthen Health Safety" /><p>Kenya Sets Up Ebola Isolation Units to Strengthen Health Safety: Kenya is fortifying medical infrastructure against Ebola by establishing national isolation</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
