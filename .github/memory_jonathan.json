@@ -139,10 +139,10 @@
     "1056d2ccc6ee7a25fa52bd774d4cb7fb",
     "844c8e4e57904b4ed4c9d7bef518fb5b",
     "266c6b5be9ee779669256617b6a99d70",
-    "dbaa4e9913b67c77d10707f33c78fb20"
+    "dbaa4e9913b67c77d10707f33c78fb20",
+    "ba9b411248f47f533b2a71aee79a5b41"
   ],
   "style_history": [
-    "Personal Reflection",
     "Letter Form",
     "Counterpoint",
     "Sharp Column",
@@ -171,10 +171,10 @@
     "Sharp Column",
     "Letter Form",
     "Personal Reflection",
-    "Historical Lens"
+    "Historical Lens",
+    "Counterpoint"
   ],
   "angle_history": [
-    "impact_on_citizens|green economy|Letter Form",
     "winners_losers|leadership|Personal Reflection",
     "myth_vs_fact|Devolution|Counterpoint",
     "timeline_shift|devolution|Historical Lens",
@@ -253,6 +253,7 @@
     "accountability|Kenya|Sharp Column",
     "story_progression|Madaraka Day|Letter Form",
     "story_progression|Northern Kenya|Personal Reflection",
-    "policy_gap|Northern Kenya|Historical Lens"
+    "policy_gap|Northern Kenya|Historical Lens",
+    "myth_vs_fact|Wajir|Counterpoint"
   ]
 }
