@@ -207,10 +207,10 @@
     "615707aeb4ad220c7f507406b78cbc50",
     "60ca9c4929d9cfd289434b7ee9274ce7",
     "bc1463bb5b8fab0e89682b210438d3a3",
-    "b99a7a31023e0b7d7900954dab5e1021"
+    "b99a7a31023e0b7d7900954dab5e1021",
+    "7b0e2a3b7498e5b2265cebeaa60b1928"
   ],
   "style_history": [
-    "Hard News Lead",
     "Power Accountability",
     "Reaction & Voices",
     "Context Backgrounder",
@@ -239,10 +239,10 @@
     "Explainer",
     "Power Accountability",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "policy_gap|NPS|Explainer",
     "impact_on_citizens|Harambee Stars|Reaction & Voices",
     "timeline_shift|Kenya Roads Board|Context Backgrounder",
     "winners_losers|oil refinery|Hard News Lead",
@@ -321,6 +321,7 @@
     "story_progression|NYOTA|Explainer",
     "money_follow|AAK|Power Accountability",
     "story_progression|DCI|Context Backgrounder",
-    "winners_losers|Kenya Power|Reaction & Voices"
+    "winners_losers|Kenya Power|Reaction & Voices",
+    "next_48_hours|KRA|Hard News Lead"
   ]
 }
