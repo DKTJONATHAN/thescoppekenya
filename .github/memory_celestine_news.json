@@ -208,10 +208,10 @@
     "60ca9c4929d9cfd289434b7ee9274ce7",
     "bc1463bb5b8fab0e89682b210438d3a3",
     "b99a7a31023e0b7d7900954dab5e1021",
-    "7b0e2a3b7498e5b2265cebeaa60b1928"
+    "7b0e2a3b7498e5b2265cebeaa60b1928",
+    "bce8befbe0b7490a5aef4cc97e833a06"
   ],
   "style_history": [
-    "Power Accountability",
     "Reaction & Voices",
     "Context Backgrounder",
     "Explainer",
@@ -240,10 +240,10 @@
     "Power Accountability",
     "Context Backgrounder",
     "Reaction & Voices",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Power Accountability"
   ],
   "angle_history": [
-    "impact_on_citizens|Harambee Stars|Reaction & Voices",
     "timeline_shift|Kenya Roads Board|Context Backgrounder",
     "winners_losers|oil refinery|Hard News Lead",
     "accountability|Huduma Kenya|Power Accountability",
@@ -322,6 +322,7 @@
     "money_follow|AAK|Power Accountability",
     "story_progression|DCI|Context Backgrounder",
     "winners_losers|Kenya Power|Reaction & Voices",
-    "next_48_hours|KRA|Hard News Lead"
+    "next_48_hours|KRA|Hard News Lead",
+    "accountability|Kenya|Power Accountability"
   ]
 }
