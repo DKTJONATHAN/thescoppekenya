@@ -205,10 +205,10 @@
     "f9182e12191d8f2b708ea7c0edb79b41",
     "3eb0df6c0c84d9dbbed9149a38eb0504",
     "615707aeb4ad220c7f507406b78cbc50",
-    "60ca9c4929d9cfd289434b7ee9274ce7"
+    "60ca9c4929d9cfd289434b7ee9274ce7",
+    "bc1463bb5b8fab0e89682b210438d3a3"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Explainer",
     "Hard News Lead",
     "Power Accountability",
@@ -237,10 +237,10 @@
     "Context Backgrounder",
     "Hard News Lead",
     "Explainer",
-    "Power Accountability"
+    "Power Accountability",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "timeline_shift|Kenya|Context Backgrounder",
     "money_follow|Esports Kenya Federation|Power Accountability",
     "policy_gap|NPS|Explainer",
     "impact_on_citizens|Harambee Stars|Reaction & Voices",
@@ -319,6 +319,7 @@
     "money_follow|shipping costs|Context Backgrounder",
     "timeline_shift|COFEK|Hard News Lead",
     "story_progression|NYOTA|Explainer",
-    "money_follow|AAK|Power Accountability"
+    "money_follow|AAK|Power Accountability",
+    "story_progression|DCI|Context Backgrounder"
   ]
 }
