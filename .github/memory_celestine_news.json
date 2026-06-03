@@ -206,10 +206,10 @@
     "3eb0df6c0c84d9dbbed9149a38eb0504",
     "615707aeb4ad220c7f507406b78cbc50",
     "60ca9c4929d9cfd289434b7ee9274ce7",
-    "bc1463bb5b8fab0e89682b210438d3a3"
+    "bc1463bb5b8fab0e89682b210438d3a3",
+    "b99a7a31023e0b7d7900954dab5e1021"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Power Accountability",
     "Reaction & Voices",
@@ -238,10 +238,10 @@
     "Hard News Lead",
     "Explainer",
     "Power Accountability",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "money_follow|Esports Kenya Federation|Power Accountability",
     "policy_gap|NPS|Explainer",
     "impact_on_citizens|Harambee Stars|Reaction & Voices",
     "timeline_shift|Kenya Roads Board|Context Backgrounder",
@@ -320,6 +320,7 @@
     "timeline_shift|COFEK|Hard News Lead",
     "story_progression|NYOTA|Explainer",
     "money_follow|AAK|Power Accountability",
-    "story_progression|DCI|Context Backgrounder"
+    "story_progression|DCI|Context Backgrounder",
+    "winners_losers|Kenya Power|Reaction & Voices"
   ]
 }
