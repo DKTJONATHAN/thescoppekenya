@@ -14,6 +14,8 @@ focusKeyword: "'Scott Pelley Fired From 60 Minutes Amid Bias Claims Against CBS"
 schema: "NewsArticle"
 ---
 
+'Scott Pelley Fired From 60 Minutes Amid Bias Claims Against CBS is central to this update for Kenyan readers.
+
 "Scott Pelley Fired From 60 Minutes Amid Bias Claims Against CBS  is central to this update for Kenyan readers.
 
 ## A Veteran's Stand: Scott Pelley's Departure Sparks Global Reflections on Media Integrity

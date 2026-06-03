@@ -14,6 +14,8 @@ focusKeyword: "'Rupert Everett: Improper Weightlifting Caused Injuries, Madonna"
 schema: "NewsArticle"
 ---
 
+'Rupert Everett: Improper Weightlifting Caused Injuries, Madonna is central to this update for Kenyan readers.
+
 "Rupert Everett: Improper Weightlifting Caused Injuries, Madonna  is central to this update for Kenyan readers.
 
 ## Unmasking Hollywood: Rupert Everett Weightlifting Woes Spark Fan Debate
