@@ -14,6 +14,8 @@ focusKeyword: "'Kelly Cutrone Defends Tyra Banks, Blasts Jay Manuel's ANTM Claim
 schema: "NewsArticle"
 ---
 
+'Kelly Cutrone Defends Tyra Banks, Blasts Jay Manuel's ANTM Claim is central to this update for Kenyan readers.
+
 "Kelly Cutrone Defends Tyra Banks, Blasts Jay Manuel's ANTM Claim is central to this update for Kenyan readers.
 
 ## Reality Check: Kelly Cutrone Defends Tyra Banks Amid ANTM Legacy Debate

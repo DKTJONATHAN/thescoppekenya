@@ -1196,6 +1196,8 @@ Nairobi Water Issues 21-Day Ultimatum for Illegal Connections is central to this
 
 Nairobi Water Issues 21-Day Ultimatum for Illegal Connections is central to this update for Kenyan readers.
 
+Nairobi Water Issues 21-Day Ultimatum for Illegal Connections is central to this update for Kenyan readers.
+
 ## The Smart Meter Trap: Who Truly Foots the Bill for Nairobi Water's Ksh2.57 Billion Tech Push?
 
 Nairobi Water is weaponizing a 21-day amnesty notice to purge illegal connections in Utawala and Mihango. While presented as a crackdown on theft, this campaign acts as a vital de-risking exercise to secure the viability of a massive, privately financed smart metering scheme.
