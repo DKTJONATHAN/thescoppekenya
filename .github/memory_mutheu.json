@@ -238,10 +238,10 @@
     "837241dadc2348bb465a74d299f595ae",
     "209a611098ee48587e2178658adc33e3",
     "85a3ab02469290e2ffceaec10da32dbb",
-    "fe12022ab36a02fea9d95d0766068811"
+    "fe12022ab36a02fea9d95d0766068811",
+    "bd41fc6a4b645364d9ab4d7720fa0a91"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
@@ -270,10 +270,10 @@
     "Hard News Lead",
     "Trend Take",
     "Explainer",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Profile Beat"
   ],
   "angle_history": [
-    "money_follow|Latto|Hard News Lead",
     "impact_on_citizens|Noah Schnapp|Reaction Round-up",
     "timeline_shift|memoir|Trend Take",
     "policy_gap|TrumpRx|Explainer",
@@ -352,6 +352,7 @@
     "policy_gap|Engagement|Hard News Lead",
     "winners_losers|Susan Boyle|Trend Take",
     "accountability|Scary Movie|Explainer",
-    "myth_vs_fact|na|Reaction Round-up"
+    "myth_vs_fact|na|Reaction Round-up",
+    "timeline_shift|Firing|Profile Beat"
   ]
 }
