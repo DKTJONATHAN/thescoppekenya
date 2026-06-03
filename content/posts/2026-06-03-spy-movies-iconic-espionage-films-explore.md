@@ -14,6 +14,8 @@ focusKeyword: "'Exploring Top Spy Movies: Intrigue, Gadgets, and Cold War Thrill
 schema: "NewsArticle"
 ---
 
+'Exploring Top Spy Movies: Intrigue, Gadgets, and Cold War Thrill is central to this update for Kenyan readers.
+
 "Exploring Top Spy Movies: Intrigue, Gadgets, and Cold War Thrill is central to this update for Kenyan readers.
 
 ## The Spy Movie Illusion: Policy Gaps Behind the Glamour
