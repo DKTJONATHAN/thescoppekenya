@@ -132,6 +132,8 @@ KeNHA Orders Traders to Vacate Kisii-Ahero Highway Road Reserves is central to t
 
 KeNHA Orders Traders to Vacate Kisii-Ahero Highway Road Reserves is central to this update for Kenyan readers.
 
+KeNHA Orders Traders to Vacate Kisii-Ahero Highway Road Reserves is central to this update for Kenyan readers.
+
 ## Kisii-Ahero Highway Traders Face Total Economic Displacement
 
 The 30-day notice issued by the Kenya National Highways Authority to clear all roadside stalls along the Kisii-Ahero corridor is being met with disbelief and quiet fury by rural entrepreneurs who view their workstations as the lifeblood of the regional economy. This directive, requiring full compliance by June 27, effectively signals the end of a vast, informal supply chain that feeds commuters and connects local farmers to immediate markets.
