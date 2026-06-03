@@ -236,10 +236,10 @@
     "5d178972fddce85cdbf70d080f93d983",
     "2d25aa9f28d7b80bc76046fe8a2f363d",
     "837241dadc2348bb465a74d299f595ae",
-    "209a611098ee48587e2178658adc33e3"
+    "209a611098ee48587e2178658adc33e3",
+    "85a3ab02469290e2ffceaec10da32dbb"
   ],
   "style_history": [
-    "Profile Beat",
     "Explainer",
     "Reaction Round-up",
     "Trend Take",
@@ -268,10 +268,10 @@
     "Explainer",
     "Reaction Round-up",
     "Hard News Lead",
-    "Trend Take"
+    "Trend Take",
+    "Explainer"
   ],
   "angle_history": [
-    "impact_on_citizens|Pluribus|Trend Take",
     "impact_on_citizens|Emmy Awards|Profile Beat",
     "money_follow|Latto|Hard News Lead",
     "impact_on_citizens|Noah Schnapp|Reaction Round-up",
@@ -350,6 +350,7 @@
     "accountability|na|Explainer",
     "accountability|America's Got Talent|Reaction Round-up",
     "policy_gap|Engagement|Hard News Lead",
-    "winners_losers|Susan Boyle|Trend Take"
+    "winners_losers|Susan Boyle|Trend Take",
+    "accountability|Scary Movie|Explainer"
   ]
 }
