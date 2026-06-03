@@ -180,10 +180,10 @@
     "776862c3c434df569c6509106d4b7d4d",
     "b626bea9b23cba5595ca5801fdc9e08b",
     "4c60262d6d7f24c6cf084fa961c5a4d9",
-    "8914113487a1859108b74141891f1bfc"
+    "8914113487a1859108b74141891f1bfc",
+    "e88448ea9d243c48c3503fc298558387"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
@@ -212,7 +212,8 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -277,6 +278,7 @@
     "money_follow|Ayo Oritsejafor|Hard News Lead",
     "timeline_shift|Highlife music|Reaction Round-up",
     "winners_losers|Nollywood|Trend Take",
-    "impact_on_citizens|Afrobeats|Profile Beat"
+    "impact_on_citizens|Afrobeats|Profile Beat",
+    "story_progression|Esoterica|Hard News Lead"
   ]
 }
