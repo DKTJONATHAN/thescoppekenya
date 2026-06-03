@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Kenya Targets Global Flower Market Expansion at IFTEX](https://zandani.co.ke/article/kenya-targets-global-flower-market-expansion-at-iftex) - Kenya is targeting growth in North American and Asian flower markets while addressing freight and tax challenges at the 13th IFTEX trade exhibition.
 - [Apple Music Names Lagos Artist Esoterica as Latest Up Next Star](https://zandani.co.ke/article/apple-music-names-lagos-artist-esoterica-as-latest-up-next-star) - Apple Music has selected Nigerian artist Esoterica for its Up Next initiative as she prepares to release her debut EP titled Avant-God.
 - [The Courtier's Descent: West Ham Relegation Shock 2026](https://zandani.co.ke/article/the-courtier-s-descent-west-ham-relegation-shock-2026) - In the grand theatre of ambition, a minister's fate turned on a whisper, much like the tremors of a west ham relegation shock 2026 season.
 - ["Rupert Everett: Improper Weightlifting Caused Injuries, Madonna Film](https://zandani.co.ke/article/rupert-everett-weightlifting-injuries-madonna-career) - Rupert Everett, 67, blames improper youth weightlifting for physical ailments, revealing fake muscle use. He reflects on his career and a Madonna film's impact.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Saseta Girls High School Closed Indefinitely Following Student Arson Threats](https://zandani.co.ke/article/saseta-girls-high-school-closed-indefinitely-following-student-arson) - Saseta Girls High School Closed Indefinitely Following Student Ar: Saseta Girls High School in Kisii County has closed indefinitely after students threatened
 - [AAK Proposes New School Dormitory Safety and Design Guidelines](https://zandani.co.ke/article/aak-proposes-new-school-dormitory-safety-guidelines) - AAK Proposes New School Dormitory Safety and Design Guidelines: Following tragic fires, the Architectural Association of Kenya has introduced strict safety
 - [Whispers of Ward: Hamo's Infidelity Financial Impact](https://zandani.co.ke/article/whispers-of-ward-hamo-infidelity-financial-impact) - Whispers of Ward: Hamo's Infidelity Financial Impact: In the halls of Westminster, a minister fell, his whispers of regret echoing across time. A lesson on
-- [Kenyans Criticize Unrealistic Advice Suggesting High Rent Percentages Are Financial Failures](https://zandani.co.ke/article/kenyans-criticize-unrealistic-advice-suggesting-high-rent-percentage) - Kenyans Criticize Unrealistic Advice Suggesting High Rent Percent: Kenyans are debating personal finance standards after public claims labeled spending 20-30%
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
