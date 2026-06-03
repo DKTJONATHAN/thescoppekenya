@@ -160,10 +160,10 @@
     "5cc4e194f002c363a11840cbd9925698",
     "3ce68bed5ec9adc4220b8fa45cfb5736",
     "d59f99e41d676dac047c6fb0f253c468",
-    "73d81c39c2069a35969730f8b5c959f4"
+    "73d81c39c2069a35969730f8b5c959f4",
+    "728c8cb8daada52029dc0d5671e5a597"
   ],
   "style_history": [
-    "Explainer",
     "SME Angle",
     "Markets Report",
     "Backgrounder",
@@ -192,7 +192,8 @@
     "Explainer",
     "Power Accountability",
     "Markets Report",
-    "SME Angle"
+    "SME Angle",
+    "Backgrounder"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -265,6 +266,7 @@
     "money_follow|fintech|Explainer",
     "accountability|infrastructure-for-resources|Power Accountability",
     "myth_vs_fact|Kenya|Markets Report",
-    "money_follow|Kenya|SME Angle"
+    "money_follow|Kenya|SME Angle",
+    "money_follow|REIT|Backgrounder"
   ]
 }
