@@ -240,10 +240,10 @@
     "85a3ab02469290e2ffceaec10da32dbb",
     "fe12022ab36a02fea9d95d0766068811",
     "bd41fc6a4b645364d9ab4d7720fa0a91",
-    "8f83c77ec5c76016cd33b098bd35a35c"
+    "8f83c77ec5c76016cd33b098bd35a35c",
+    "02ed02aee7f1cbea02367da82b723ea8"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Explainer",
     "Trend Take",
@@ -272,10 +272,10 @@
     "Explainer",
     "Reaction Round-up",
     "Profile Beat",
-    "Trend Take"
+    "Trend Take",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "timeline_shift|memoir|Trend Take",
     "policy_gap|TrumpRx|Explainer",
     "accountability|Reality television|Profile Beat",
     "impact_on_citizens|Phil Collins|Reaction Round-up",
@@ -354,6 +354,7 @@
     "accountability|Scary Movie|Explainer",
     "myth_vs_fact|na|Reaction Round-up",
     "timeline_shift|Firing|Profile Beat",
-    "accountability|America's Next Top Model|Trend Take"
+    "accountability|America's Next Top Model|Trend Take",
+    "policy_gap|Spy movies|Hard News Lead"
   ]
 }
