@@ -790,6 +790,8 @@ Heineken Hosts Multi-Day Sports and Music Experience in Lagos is central to this
 
 Heineken Hosts Multi-Day Sports and Music Experience in Lagos is central to this update for Kenyan readers.
 
+Heineken Hosts Multi-Day Sports and Music Experience in Lagos is central to this update for Kenyan readers.
+
 ## The Lagos Blueprint: Why Global Giants are Betting Big on Nigerian Third Spaces
 
 Lagos operates on a rhythm dictated by its own defiance. In a sprawling metropolis where the traditional grid often falters, private enterprises are stepping in to bridge the divide. Heineken’s recent run of high-octane sports and music showcases serves as a prime example of a burgeoning reality: global brands are now the primary architects of the social hubs the state has failed to provide.

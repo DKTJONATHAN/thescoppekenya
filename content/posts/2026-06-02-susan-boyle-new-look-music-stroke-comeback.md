@@ -24,6 +24,8 @@ schema: "NewsArticle"
 
 'Susan Boyle Unveils New Look & Music in Post-Stroke Comeback is central to this update for Kenyan readers.
 
+'Susan Boyle Unveils New Look & Music in Post-Stroke Comeback is central to this update for Kenyan readers.
+
 "Susan Boyle Unveils New Look & Music in Post-Stroke Comeback is central to this update for Kenyan readers.
 
 ## SUBO Summer: Susan Boyle’s Dynamic Resurgence and Inspiring Transformation

@@ -798,6 +798,8 @@ IEBC Prohibits Ballot Photos Ahead of May By-Elections is central to this update
 
 IEBC Prohibits Ballot Photos Ahead of May By-Elections is central to this update for Kenyan readers.
 
+IEBC Prohibits Ballot Photos Ahead of May By-Elections is central to this update for Kenyan readers.
+
 ## The Selfie-Ban Dilemma: Why Rural Voters Feel Polling Booth Surveillance Threatens Democratic Expression
 
 The IEBC is effectively turning polling booths into digital dead zones for tomorrow’s by-elections. By outlawing ballot photography, the commission hopes to protect the secrecy of the vote, yet in rural heartlands, this move is sparking fears that a vital tool for informal political accountability is being stripped away.
