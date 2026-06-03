@@ -201,10 +201,10 @@
     "1aeb8f38085c4e695b55889646d7f278",
     "5b53f6584263ed7374904781736abda8",
     "1ddc9d207828a8a2eeb0c6101ba406c0",
-    "eba422c3db6c88684fe68bc590790bac"
+    "eba422c3db6c88684fe68bc590790bac",
+    "54c001d5b182135624d31dc79716f564"
   ],
   "style_history": [
-    "Tactical Take",
     "Match Report",
     "Player Profile Beat",
     "Cynical Pundit",
@@ -233,10 +233,10 @@
     "Player Profile Beat",
     "Stat Story",
     "Match Report",
-    "Tactical Take"
+    "Tactical Take",
+    "Player Profile Beat"
   ],
   "angle_history": [
-    "next_48_hours|Premier League|Match Report",
     "impact_on_citizens|referee|Tactical Take",
     "accountability|Premier League|Player Profile Beat",
     "myth_vs_fact|Scottish Premiership|Stat Story",
@@ -315,6 +315,7 @@
     "story_progression|Liverpool FC|Player Profile Beat",
     "timeline_shift|Champions League|Stat Story",
     "story_progression|Football|Match Report",
-    "story_progression|Kenny Dalglish|Tactical Take"
+    "story_progression|Kenny Dalglish|Tactical Take",
+    "myth_vs_fact|Golden Boot|Player Profile Beat"
   ]
 }
