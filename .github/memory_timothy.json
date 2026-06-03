@@ -25,7 +25,8 @@
     "48930a0faf59a2798677710fe4f87cfe",
     "b9f318ae671c483c535225514588dc11",
     "ec76fccf7e662255e1b397d5f393329b",
-    "ba2234e54c1d6f1a955d1903e7a14505"
+    "ba2234e54c1d6f1a955d1903e7a14505",
+    "7d8c140465a389b48c8f7f57798989f1"
   ],
   "style_history": [
     "Backgrounder",
@@ -33,13 +34,15 @@
     "SME Farmer Angle",
     "Practical Guide",
     "Policy Watch",
-    "Backgrounder"
+    "Backgrounder",
+    "Market Report"
   ],
   "angle_history": [
     "impact_on_citizens|food security|Market Report",
     "winners_losers|drip irrigation|SME Farmer Angle",
     "next_48_hours|livestock|Practical Guide",
     "money_follow|Kenya|Policy Watch",
-    "timeline_shift|floriculture|Backgrounder"
+    "timeline_shift|floriculture|Backgrounder",
+    "policy_gap|floriculture|Market Report"
   ]
 }
