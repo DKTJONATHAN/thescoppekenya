@@ -224,10 +224,10 @@
     "b2e70208feaa0c5d69a6e05c826c75d7",
     "acfc50fdac2030c417b4e8c9b2159b48",
     "843da5d45fd9c184a2f44a0e26404565",
-    "4616c25505fc3414cae9fa0c28be57ef"
+    "4616c25505fc3414cae9fa0c28be57ef",
+    "62292d8001842ba579d180e9b9bb6747"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
     "Receipts Piece",
@@ -256,7 +256,8 @@
     "Receipts Piece",
     "Profile Beat",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Receipts Piece"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -321,6 +322,7 @@
     "policy_gap|transgender|Receipts Piece",
     "policy_gap|Kenya Power|Profile Beat",
     "story_progression|gospel singer|Trend Take",
-    "story_progression|Kenya|Hard News Lead"
+    "story_progression|Kenya|Hard News Lead",
+    "accountability|Kenya|Receipts Piece"
   ]
 }
