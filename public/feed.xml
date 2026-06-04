@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Thu, 04 Jun 2026 14:15:59 GMT</pubDate>
+    <pubDate>Thu, 04 Jun 2026 14:24:41 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Kenya Clears All Ebola Alerts Amidst Ongoing Border Surveillance]]></title>
+      <link>https://zandani.co.ke/article/kenya-clears-all-ebola-alerts-amidst-ongoing-border-surveillance</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-clears-all-ebola-alerts-amidst-ongoing-border-surveillance</guid>
+      <pubDate>Thu, 04 Jun 2026 14:12:01 GMT</pubDate>
+      <dc:creator><![CDATA[Elizabeth Muthoni]]></dc:creator>
+      <description><![CDATA[Kenya has reported zero positive Ebola cases across nine counties following nationwide surveillance and screening of over 34,000 travelers at points of entry.]]></description>
+      <enclosure url="https://i.ibb.co/dsjGG4kt/c178e47eeda7.webp" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/dsjGG4kt/c178e47eeda7.webp" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/dsjGG4kt/c178e47eeda7.webp" alt="Kenya Clears All Ebola Alerts Amidst Ongoing Border Surveillance" /><p>Kenya has reported zero positive Ebola cases across nine counties following nationwide surveillance and screening of over 34,000 travelers at points of entry.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[The Crude Truth: Paramount's Kenyan Content Echoes]]></title>
       <link>https://zandani.co.ke/article/the-crude-truth-paramount-kenyan-content-echoes</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200" type="image/jpeg" />
       <media:content url="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200" alt="&apos;Vasana Montgomery Axed From Love Island USA Season 8 Over Racial Slur" /><p>'Vasana Montgomery Axed From Love Island USA Season 8 Over Racial: Vasana Montgomery was removed from Love Island USA Season 8 following resurfaced videos</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[The Debate Over Whether Success In Nairobi Relies On Personal Effort Or Strategic Connections]]></title>
-      <link>https://zandani.co.ke/article/the-debate-over-whether-success-in-nairobi-relies-on-personal-effort</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/the-debate-over-whether-success-in-nairobi-relies-on-personal-effort</guid>
-      <pubDate>Sun, 31 May 2026 15:38:55 GMT</pubDate>
-      <dc:creator><![CDATA[Zed Mogaka]]></dc:creator>
-      <description><![CDATA[The Debate Over Whether Success In Nairobi Relies On Personal Eff: Nairobi professionals are debating whether career success stems from persistent individual]]></description>
-      <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
-      <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="The Debate Over Whether Success In Nairobi Relies On Personal Effort Or Strategic Connections" /><p>The Debate Over Whether Success In Nairobi Relies On Personal Eff: Nairobi professionals are debating whether career success stems from persistent individual</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
