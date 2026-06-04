@@ -211,10 +211,10 @@
     "7b0e2a3b7498e5b2265cebeaa60b1928",
     "bce8befbe0b7490a5aef4cc97e833a06",
     "65417a5239eb8fdd9fbf7e104abaf6f1",
-    "5e5cb136fb14072c37f149ee6909a52d"
+    "5e5cb136fb14072c37f149ee6909a52d",
+    "45c2d4bf0b8c081b15dca9892514daf5"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Power Accountability",
     "Reaction & Voices",
@@ -243,10 +243,10 @@
     "Hard News Lead",
     "Power Accountability",
     "Explainer",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "accountability|Huduma Kenya|Power Accountability",
     "money_follow|Matatu|Explainer",
     "policy_gap|ODPP|Context Backgrounder",
     "impact_on_citizens|Kenya|Reaction & Voices",
@@ -325,6 +325,7 @@
     "next_48_hours|KRA|Hard News Lead",
     "accountability|Kenya|Power Accountability",
     "winners_losers|SACCO|Explainer",
-    "winners_losers|KFCB|Reaction & Voices"
+    "winners_losers|KFCB|Reaction & Voices",
+    "myth_vs_fact|Football Kenya Federation|Hard News Lead"
   ]
 }
