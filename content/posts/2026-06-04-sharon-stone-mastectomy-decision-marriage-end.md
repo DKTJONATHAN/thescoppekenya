@@ -1,19 +1,20 @@
 ---
-title: "Sharon Stone Mastectomy Decision Ended Her Marriage
+title: "'Sharon Stone Mastectomy Decision Ended Her Marriage"
 slug: "sharon-stone-mastectomy-decision-marriage-end"
-description: "Sharon Stone claims her husband's anger over her bilateral mastectomy decision for breast tumors ended their marriage. Learn her full story."
+description: "'Sharon Stone Mastectomy Decision Ended Her Marriage: Sharon Stone claims her husband's anger over her bilateral mastectomy decision for breast tumors ended"
+excerpt: "Sharon Stone's Mastectomy Ordeal: A Mirror for Kenyan Women's Healthcare Hollywood icon Sharon Stone’s candid revelation about a health scar"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/p6XPjKR9/670988612af2.jpg"
-og_title: "Sharon Stone: Mastectomy Decision Ended Her Marriage"
-og_description: "Sharon Stone's mastectomy decision sparked husband's anger, ending their marriage. She faced non-consensual implant changes."
-focus_keyword: "Sharon Stone mastectomy"
 category: "Entertainment"
 tags: ["sharon stone", "bilateral mastectomy", "celebrity news", "hollywood", "marriage", "health"]
+canonical: "https://zandani.co.ke/article/sharon-stone-mastectomy-decision-marriage-end"
 date: "2026-06-03T22:13:43Z"
 dateModified: "2026-06-03T22:13:43Z"
+focusKeyword: "'Sharon Stone Mastectomy Decision Ended Her Marriage"
 schema: "NewsArticle"
 ---
+
+"Sharon Stone Mastectomy Decision Ended Her Marriage is central to this update for Kenyan readers.
 
 ## Sharon Stone's Mastectomy Ordeal: A Mirror for Kenyan Women's Healthcare
 
@@ -36,3 +37,18 @@ When a spouse reacts negatively to a partner's medical decision, it not only add
 Stone's experience, though unfolding in Hollywood, echoes universal truths about vulnerability, resilience, and the critical importance of respect for personal choice during life's most challenging moments.
 
 It’s a clear reminder that health decisions are deeply personal, requiring autonomy, trust, and unwavering support.
+
+
+## What this means for Kenyans
+This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
+
+## Key facts
+- Official announcement details are in this report.
+- Practical impact depends on timelines and enforcement.
+- Readers should verify changes through official channels.
+
+## FAQ
+### What is the most important takeaway?
+The key takeaway is to track official communication and act early.
+### Where can I confirm updates?
+Use official agency portals and verified public notices.
