@@ -56,40 +56,47 @@ def clamp_description(desc: str, focus_keyword: str) -> str:
     d = re.sub(r"\s+", " ", (desc or "").strip())
     if focus_keyword and focus_keyword.lower() not in d.lower():
         d = f"{focus_keyword}: {d}".strip()
-    if len(d) < 140:
-        pad = " Read key facts, what this means for Kenyans, and practical next steps."
-        d = (d + pad)[:160].strip()
+    d = re.sub(
+        r"\b(Read key facts,? what this means for Kenyans,? and practical next steps\.?|Read the full story|Get the details|See what happened)\b",
+        "",
+        d,
+        flags=re.I,
+    )
+    if len(d) < 105:
+        d = f"{d} Latest verified update with the key context readers need.".strip()
     if len(d) > 160:
         d = d[:160].rsplit(" ", 1)[0].strip()
     return d
 
 
 def ensure_body_sections(body: str, focus_keyword: str) -> str:
+    body = remove_generic_padding(body)
     text100 = first_words(body, 100).lower()
     if focus_keyword and focus_keyword.lower() not in text100:
-        body = f"{focus_keyword} is central to this update for Kenyan readers.\n\n{body}"
-    if "## What this means for Kenyans" not in body:
-        body += (
-            "\n\n## What this means for Kenyans\n"
-            "This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. "
-            "Follow official updates and verify deadlines, fees, and policy details before taking action.\n"
-        )
-    if "## Key facts" not in body:
-        body += (
-            "\n## Key facts\n"
-            "- Official announcement details are in this report.\n"
-            "- Practical impact depends on timelines and enforcement.\n"
-            "- Readers should verify changes through official channels.\n"
-        )
-    if "## FAQ" not in body:
-        body += (
-            "\n## FAQ\n"
-            "### What is the most important takeaway?\n"
-            "The key takeaway is to track official communication and act early.\n"
-            "### Where can I confirm updates?\n"
-            "Use official agency portals and verified public notices.\n"
-        )
+        paragraphs = body.split("\n\n", 1)
+        if len(paragraphs) == 2:
+            paragraphs[0] = f"{paragraphs[0]} {focus_keyword} is the central subject of the update."
+            body = "\n\n".join(paragraphs)
     return body.rstrip() + "\n"
+
+
+def remove_generic_padding(body: str) -> str:
+    patterns = [
+        r"\n## What this means for Kenyans\n(?:.*\n?){1,4}",
+        r"\n## Key facts\n(?:- .*\n?){1,6}",
+        r"\n## FAQ\n[\s\S]*?(?=\n## |\Z)",
+    ]
+    cleaned = body
+    for pattern in patterns:
+        cleaned = re.sub(pattern, "\n", cleaned, flags=re.I)
+    cleaned = re.sub(
+        r"\bFollow official updates and verify deadlines, fees, and policy details before taking action\.\s*",
+        "",
+        cleaned,
+        flags=re.I,
+    )
+    cleaned = re.sub(r"\n{3,}", "\n\n", cleaned)
+    return cleaned.strip()
 
 
 def serialize_frontmatter(data: dict) -> str:

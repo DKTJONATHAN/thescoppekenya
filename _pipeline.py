@@ -33,7 +33,9 @@ BANNED_PHRASES = [
     'grab your popcorn', 'buckle up', 'breaking news', 'dive in',
     'delve into', 'moreover', 'furthermore', 'in conclusion',
     "it's worth noting", 'a testament to', 'navigating the landscape',
-    "in today's digital age", 'tapestry'
+    "in today's digital age", 'tapestry', 'shocking', 'massive',
+    'jaw-dropping', 'explosive', 'you won\'t believe', 'what happened next',
+    'read on', 'netizens', 'social media is buzzing'
 ]
 
 BANNED_URL_PATHS = [
@@ -42,57 +44,71 @@ BANNED_URL_PATHS = [
     '/advertise', '/policy', '/disclaimer'
 ]
 
+HYPE_TITLE_WORDS = [
+    'shocking', 'massive', 'explosive', 'heartbreaking', 'urgent',
+    'breaking news', 'drama', 'truth', 'full story', 'revealed',
+    'exposed', 'uncovered', 'stuns', 'sparks fresh chatter'
+]
+
+GENERIC_FILLER_PATTERNS = [
+    r'what this means for kenyans',
+    r'key facts',
+    r'faq',
+    r'follow official updates',
+    r'verify changes through official channels',
+]
+
 # -- STYLE PRESETS --------------------------------------------------------------
 STYLE_PRESETS = {
-    "celeb_news": {
-        "name": "celeb_news",
-        "format": "breaking celebrity news",
-        "lead_style": "punchy declarative sentence, high-energy, names first",
-        "tone": "excited but credible, tabloid-smart, Kenyan pop culture savvy",
-        "angle": "focus on the wow-factor moment and the immediate public reaction",
-        "structure": "hook -> what happened -> reaction -> context -> what comes next",
-        "sentence_mix": "short punchy sentences mixed with one longer explanatory clause per paragraph",
-        "closing": "forward-looking teaser or open question to the reader"
+    "reported_news": {
+        "name": "reported_news",
+        "format": "straight entertainment news",
+        "lead_style": "one clear sentence answering who, what, where, when, and why it matters",
+        "tone": "calm, specific, newsroom-clean, Kenyan reader aware",
+        "angle": "lead with the verifiable development and its immediate context",
+        "structure": "lede -> confirmed facts -> relevant context -> reaction only if sourced -> next known step",
+        "sentence_mix": "mostly concise sentences with one context sentence per section",
+        "closing": "end on the latest verified status, not a teaser"
     },
-    "explainer": {
-        "name": "explainer",
+    "context_brief": {
+        "name": "context_brief",
         "format": "explainer / backgrounder",
-        "lead_style": "context-first: explain why this matters before stating what happened",
-        "tone": "authoritative, calm, informative - the friend who knows everything",
-        "angle": "why this matters to ordinary Kenyans and what it reveals",
-        "structure": "context -> event -> background -> implications -> reader takeaway",
-        "sentence_mix": "medium-length sentences with one rhetorical question placed mid-article",
-        "closing": "practical or emotional takeaway for the Kenyan reader"
+        "lead_style": "context first, then the latest development in the same paragraph",
+        "tone": "authoritative, plain-spoken, useful",
+        "angle": "explain why the development matters without overstating certainty",
+        "structure": "why it matters -> latest development -> background -> known impact -> what remains unclear",
+        "sentence_mix": "medium-length sentences with no rhetorical questions",
+        "closing": "state what is confirmed and what readers should watch next"
     },
-    "timeline": {
-        "name": "timeline",
+    "timeline_brief": {
+        "name": "timeline_brief",
         "format": "chronological narrative",
-        "lead_style": "open with the most dramatic moment, then trace back to the beginning",
-        "tone": "narrative journalist, story-driven, vivid",
-        "angle": "how did we get here - the sequence of events that led to this moment",
-        "structure": "climax moment -> backstory -> step-by-step timeline -> current status",
-        "sentence_mix": "short for drama, longer for context - vary deliberately",
-        "closing": "where things stand right now and what readers should watch"
+        "lead_style": "open with the latest confirmed point, then move backward only where useful",
+        "tone": "precise, chronological, restrained",
+        "angle": "show the sequence of confirmed events that explains the update",
+        "structure": "latest status -> timeline -> context -> unresolved questions",
+        "sentence_mix": "short factual sentences for sequence, longer sentences for context",
+        "closing": "where things stand right now"
     },
-    "reaction": {
-        "name": "reaction",
+    "reaction_context": {
+        "name": "reaction_context",
         "format": "reaction / opinion roundup",
-        "lead_style": "open with the most striking public reaction or implied quote",
-        "tone": "lively, conversational, slightly opinionated - Kenyan Twitter energy",
-        "angle": "how people are responding - take the social temperature of the story",
-        "structure": "lead reaction -> event summary -> range of responses -> analyst angle",
-        "sentence_mix": "punchy, quote-heavy feel, direct speech rhythm throughout",
-        "closing": "open question inviting the reader's own opinion"
+        "lead_style": "summarize the verified development before describing reaction",
+        "tone": "measured, conversational, source-aware",
+        "angle": "explain the range of public response without treating chatter as fact",
+        "structure": "event summary -> sourced reaction -> context -> what is confirmed",
+        "sentence_mix": "varied but restrained, no quote-heavy imitation",
+        "closing": "return to the confirmed facts"
     },
     "profile_led": {
         "name": "profile_led",
         "format": "profile / character-led feature",
         "lead_style": "introduce the key person as if the reader has never heard of them",
-        "tone": "feature magazine - warm, professional, admiring but honest",
-        "angle": "who is this person and why does this story matter to their journey",
+        "tone": "feature magazine - warm, professional, fair",
+        "angle": "who the person is and why this verified development matters",
         "structure": "person intro -> why they're in the news -> background -> current story -> significance",
         "sentence_mix": "longer flowing sentences broken by short punchy standalone facts",
-        "closing": "what this moment reveals about the person's trajectory"
+        "closing": "what is known about the person's current trajectory"
     }
 }
 PRESET_NAMES = list(STYLE_PRESETS.keys())
@@ -314,7 +330,8 @@ def scrape_article(url):
                 if age > MAX_AGE_HOURS:
                     print('[scrape] Too old - skip'); return None, None, None
             else:
-                print('[scrape] No date found - treating as fresh')
+                print('[scrape] No date found - skip for freshness safety')
+                return None, None, None
             title = soup.title.string.strip() if soup.title else ''
             title = re.sub(r'\s*[-|]\s*Mpasho.*', '', title, flags=re.I).strip()
             article_text = ''
@@ -386,6 +403,67 @@ def scrub_source_leaks(text):
     text = re.sub(r'\baccording to Mpasho\b', '', text, flags=re.I)
     return text.strip()
 
+def clean_title(title):
+    title = re.sub(r'\s+', ' ', (title or '')).strip()
+    title = re.sub(r'\b(?:2020|2021|2022|2023|2024|2025|2026)\b', '', title)
+    for word in HYPE_TITLE_WORDS:
+        title = re.sub(rf'\b{re.escape(word)}\b', '', title, flags=re.I)
+    title = re.sub(r'\s+', ' ', title).strip(' -:|')
+    return title[:90].strip()
+
+def is_low_value_candidate(url, title, text):
+    haystack = f'{url} {title} {text[:700]}'.lower()
+    if any(path in url.lower() for path in BANNED_URL_PATHS):
+        return True, 'non-article URL'
+    if any(x in haystack for x in ['/terms', 'terms and conditions', 'privacy policy', 'advertise with us']):
+        return True, 'policy or utility page'
+    if len(text or '') < 450:
+        return True, 'thin source text'
+    if re.search(r'\b(2020|2021|2022|2023|2024)\b', title or '') and current_year not in title:
+        return True, 'stale year in title'
+    return False, ''
+
+def slug_exists(slug):
+    posts_dir = os.environ.get('POSTS_DIR', 'content/posts')
+    if not os.path.exists(posts_dir):
+        return False
+    for fn in os.listdir(posts_dir):
+        if not fn.endswith('.md'):
+            continue
+        try:
+            content = open(os.path.join(posts_dir, fn), encoding='utf-8').read(700)
+            if re.search(rf'^slug:\s*["\']{re.escape(slug)}["\']', content, flags=re.M):
+                return True
+        except Exception:
+            continue
+    return False
+
+def quality_gate(article_body, title):
+    problems = []
+    lower_body = article_body.lower()
+    lower_title = title.lower()
+    for phrase in BANNED_PHRASES:
+        if phrase.lower() in lower_body or phrase.lower() in lower_title:
+            problems.append(f'banned phrase: {phrase}')
+    for word in HYPE_TITLE_WORDS:
+        if word.lower() in lower_title:
+            problems.append(f'hype title word: {word}')
+    if any(re.search(pat, lower_body) for pat in GENERIC_FILLER_PATTERNS):
+        problems.append('generic SEO filler section')
+    if re.search(r'\b2024\b', article_body) and current_year != '2024':
+        problems.append('stale 2024 reference')
+    if len(strip_markdown_words(article_body)) < 380:
+        problems.append('article is too short')
+    if re.search(r'\bMpasho\b|mpasho\.co\.ke', article_body, flags=re.I):
+        problems.append('source publication leaked')
+    return problems
+
+def strip_markdown_words(text):
+    stripped = re.sub(r'```[\s\S]*?```', ' ', text or '')
+    stripped = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', stripped)
+    stripped = re.sub(r'[#>*_`~\-]', ' ', stripped)
+    return re.findall(r'\b\w+\b', stripped)
+
 # -- STAGE 1: STORY BRIEF ------------------------------------------------------
 def stage1_brief(raw_text, style_preset):
     prompt = (
@@ -393,6 +471,8 @@ def stage1_brief(raw_text, style_preset):
         f'Analyse the raw text below and produce a structured story brief.\n'
         f'CRITICAL: Do NOT echo source sentences or reproduce source phrasing.\n'
         f'CRITICAL: Do NOT mention any other website, publication, or news outlet.\n'
+        f'CRITICAL: Separate confirmed facts from reactions, claims, and context.\n'
+        f'CRITICAL: If a detail is not clearly supported by the raw text, do not include it.\n'
         f'Style context: {style_preset["name"]} - {style_preset["angle"]}\n\n'
         f'RAW TEXT:\n{raw_text[:4000]}\n\n'
         f'Return ONLY valid JSON (no markdown fences, no commentary):\n'
@@ -408,6 +488,7 @@ def stage1_brief(raw_text, style_preset):
         '  "keywords": ["kw1", "kw2", "kw3", "kw4"],\n'
         '  "suggested_sections": ["section1", "section2", "section3"],\n'
         '  "lead_approach": "describe how the opening sentence should feel",\n'
+        '  "unsupported_or_unclear": ["detail that needs caution, if any"],\n'
         '  "must_avoid": ["phrase or approach to avoid 1", "phrase or approach to avoid 2"]\n'
         '}}'
     )
@@ -429,10 +510,10 @@ def stage2_seo(brief):
         f'NEVER mention Mpasho or mpasho.co.ke in any field.\n\n'
         f'STORY BRIEF:\n{json.dumps(brief, indent=2)}\n\n'
         f'Rules:\n'
-        f'- final_title: 45-65 characters, primary keyword in first 40 chars, no clickbait, no brackets, no years\n'
-        f'- meta_description: 120-145 characters EXACTLY, contains focus keyword, ends with "Read the full story", "Get the details", or "See what happened"\n'
+        f'- final_title: 45-70 characters, specific noun first, plain news tone, no clickbait, no brackets, no years, no "shocking", "massive", "explosive", "drama", "truth", or "revealed"\n'
+        f'- meta_description: 120-150 characters, contains focus keyword, summarizes the fact plainly, no CTA phrase, no hype\n'
         f'- focus_keyword: 2-4 words, celebrity/topic name where possible\n'
-        f'- seo_slug: 3-5 hyphenated words, lowercase, no stopwords\n'
+        f'- seo_slug: 3-6 hyphenated words, lowercase, no hype words, no stale year\n'
         f'- tags: array of 4-5 tags (1 category, 2-3 celebrity/topic tags, 1 platform/genre tag, each 1-3 words, Title Case)\n\n'
         f'Return ONLY valid JSON (no markdown fences):\n'
         '{"final_title": "...", "meta_description": "...", "focus_keyword": "...", "seo_slug": "...", "tags": [...]}\n'
@@ -478,14 +559,18 @@ def stage3_write(brief, seo, style_preset, internal_links):
         f'2. ## H2 subheading containing the focus keyword.\n'
         f'3. ### subheadings with supporting detail.\n\n'
         f'RULES:\n'
-        f'- 500-800 words. Markdown body only (no frontmatter, no title heading, no author/date line).\n'
+        f'- 450-700 words. Markdown body only (no frontmatter, no title heading, no author/date line).\n'
         f'- Third-person news style. NEVER write "I am Za Ndani", "Za Ndani can confirm", or any self-identification.\n'
+        f'- Lead with the latest verified fact. Do not tease, speculate, moralize, or ask rhetorical questions.\n'
+        f'- Do not add generic sections titled "What this means for Kenyans", "Key facts", or "FAQ" unless the brief specifically supports them.\n'
+        f'- Attribute claims carefully: use "said", "claimed", "alleged", or "according to the post" only when the brief supports it.\n'
+        f'- Use internal links only when they genuinely match the same person, show, team, agency, or topic.\n'
         f'- Do not start more than 2 paragraphs with the same word.\n'
         f'- No Sheng. No cliches.\n'
         f'- All dates reflect {current_year}.\n'
         f'BANNED PHRASES: {banned_str}'
     )
-    result = gemini_generate(prompt, label='stage3-write', temperature=0.85, max_tokens=1200)
+    result = gemini_generate(prompt, label='stage3-write', temperature=0.58, max_tokens=1200)
     if not result: raise RuntimeError('Stage 3 returned nothing')
     return result
 
@@ -500,7 +585,10 @@ def stage4_review(article_body, brief, style_preset, seo):
         f'- house_style_repetition (1-10): repetitive patterns? 10=very repetitive\n'
         f'- voice_variety (1-10): variety of sentence structures? 10=excellent\n'
         f'- source_mentions (count): references to other publications\n\n'
-        '{"source_similarity": 0, "house_style_repetition": 0, "voice_variety": 0, "source_mentions": 0, "notes": "..."}'
+        f'- unsupported_claims (count): claims not supported by the brief\n'
+        f'- hype_or_clickbait (count): hype phrases, teasers, rhetorical questions, or exaggerated title/body language\n'
+        f'- generic_filler (count): generic SEO padding or boilerplate advice sections\n\n'
+        '{"source_similarity": 0, "house_style_repetition": 0, "voice_variety": 0, "source_mentions": 0, "unsupported_claims": 0, "hype_or_clickbait": 0, "generic_filler": 0, "notes": "..."}'
     )
     raw = gemini_generate(review_prompt, label='stage4-review', temperature=0.2, max_tokens=300)
     try:
@@ -516,7 +604,10 @@ def stage4_review(article_body, brief, style_preset, seo):
         scores.get("source_similarity", 0) >= 7 or
         scores.get("house_style_repetition", 0) >= 7 or
         scores.get("voice_variety", 10) <= 4 or
-        scores.get("source_mentions", 0) > 0
+        scores.get("source_mentions", 0) > 0 or
+        scores.get("unsupported_claims", 0) > 0 or
+        scores.get("hype_or_clickbait", 0) > 0 or
+        scores.get("generic_filler", 0) > 0
     )
     print(f'[review] Scores: {scores}')
     if needs_rewrite:
@@ -532,6 +623,7 @@ def stage4_review(article_body, brief, style_preset, seo):
             f'  Notes: {scores.get("notes", "")}\n\n'
             f'Rewrite completely from scratch using only the brief. 500-800 words. Markdown body only.\n'
             f'Do NOT mention Mpasho or any other publication.\n'
+            f'Do NOT use hype, open questions, teasers, generic SEO sections, or unsupported claims.\n'
             f'Do NOT use: {banned_str}\n\n'
             f'STORY BRIEF:\n{json.dumps(brief, indent=2)}\n\n'
             f'STYLE: {style_preset["name"]} - {style_preset["angle"]}\n'
@@ -557,7 +649,11 @@ for link in article_links:
     if u_hash in published_hashes:
         print(f'[main] Skip (already published): {link}'); continue
     text, img, title = scrape_article(link)
-    if text and len(text) > 150:
+    rejected, reason = is_low_value_candidate(link, title, text or '')
+    if rejected:
+        print(f'[main] Skip ({reason}): {link}')
+        continue
+    if text and len(text) > 450:
         full_raw_text = text
         target_image  = img
         target_title  = title or 'Entertainment News'
@@ -578,11 +674,18 @@ time.sleep(4)
 seo_data = stage2_seo(brief)
 time.sleep(4)
 
-final_title      = seo_data.get('final_title', target_title)
+final_title      = clean_title(seo_data.get('final_title', target_title))
 meta_description = seo_data.get('meta_description', '')
 focus_keyword    = seo_data.get('focus_keyword', '')
 seo_slug         = seo_data.get('seo_slug', '')
 article_tags     = [str(t) for t in seo_data.get('tags', [])[:5]]
+if not final_title:
+    final_title = clean_title(target_title) or 'Entertainment update'
+if not focus_keyword:
+    focus_keyword = ' '.join(final_title.split()[:4])
+if not meta_description:
+    meta_description = f'{focus_keyword}: latest verified entertainment update with the key context readers need.'
+meta_description = re.sub(r'\s+', ' ', meta_description).strip()
 
 if len(meta_description) > 155:
     cut = meta_description[:155]
@@ -594,6 +697,12 @@ if seo_slug and re.match(r'^[a-z0-9-]+$', seo_slug):
     slug = seo_slug[:68]
 else:
     slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68]
+slug = re.sub(r'-+', '-', slug).strip('-')
+if not slug:
+    slug = re.sub(r'[^a-z0-9]+', '-', final_title.lower()).strip('-')[:68] or 'entertainment-update'
+if slug_exists(slug):
+    print(f'[main] Skip (slug already exists): {slug}')
+    sys.exit(0)
 canonical_url = f'{SITE_BASE_URL}/article/{slug}'
 
 print(f'[main] Title  : {final_title}')
@@ -617,6 +726,27 @@ article_body = re.sub(r'^(Title|By|Date):.*?\n', '', article_body, flags=re.I | 
 # Stripping unicode em (\u2014) and en (\u2013) dashes generated by the AI
 article_body = article_body.replace('\u2014', '-').replace('\u2013', '-')
 article_body = scrub_source_leaks(article_body)
+gate_problems = quality_gate(article_body, final_title)
+if gate_problems:
+    print(f'[quality] Failed deterministic gate: {gate_problems}')
+    banned_str = ', '.join(BANNED_PHRASES)
+    repair_prompt = (
+        f'You are the final editor at {YOUR_SITE_NAME}.\n'
+        f'Fix the article below so it passes these issues: {gate_problems}.\n'
+        f'Use only the brief. Keep it factual, specific, and restrained. Markdown body only.\n'
+        f'No generic SEO sections, no hype, no stale years, no source publication mentions.\n'
+        f'BANNED PHRASES: {banned_str}\n\n'
+        f'BRIEF:\n{json.dumps(brief, indent=2)}\n\n'
+        f'TITLE: {final_title}\nFOCUS KEYWORD: {focus_keyword}\n\n'
+        f'ARTICLE TO FIX:\n{article_body[:4000]}'
+    )
+    repaired = gemini_generate(repair_prompt, label='deterministic-quality-repair', temperature=0.35, max_tokens=1200)
+    if repaired:
+        article_body = scrub_source_leaks(repaired.replace('\u2014', '-').replace('\u2013', '-').strip())
+    gate_problems = quality_gate(article_body, final_title)
+    if gate_problems:
+        print(f'[quality] Still failed after repair: {gate_problems}')
+        sys.exit(1)
 
 final_image   = upload_to_imgbb(target_image) if target_image else ''
 excerpt_words = meta_description.split()[:18]

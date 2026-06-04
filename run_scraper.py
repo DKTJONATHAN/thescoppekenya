@@ -14,7 +14,8 @@ MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
 MAX_AGE_HOURS = 10
 SITE_URL = "https://ew.com/"
 SITE_DOMAIN = "ew.com"
-BANNED_PHRASES = ["sasa basi","melting the pot","spill the tea","tea is hot","grab your popcorn","buckle up","breaking news","dive in","delve into","moreover","furthermore","in conclusion","it's worth noting","a testament to","navigating the landscape","in today's digital age","tapestry"]
+BANNED_PHRASES = ["sasa basi","melting the pot","spill the tea","tea is hot","grab your popcorn","buckle up","breaking news","dive in","delve into","moreover","furthermore","in conclusion","it's worth noting","a testament to","navigating the landscape","in today's digital age","tapestry","shocking","massive","explosive","you won't believe","what happened next","read on","netizens"]
+HYPE_TITLE_WORDS = ["shocking","massive","explosive","heartbreaking","urgent","breaking news","drama","truth","full story","revealed","exposed","uncovered"]
 
 def upload_to_imgbb(image_url):
     api_key = os.environ.get("IMGBB_API_KEY")
@@ -82,6 +83,8 @@ def scrape_article(url):
                 if pub_time.tzinfo is None: pub_time = pub_time.replace(tzinfo=datetime.timezone.utc)
                 age = (datetime.datetime.now(datetime.timezone.utc) - pub_time).total_seconds() / 3600
                 if age > MAX_AGE_HOURS: return None, None, None
+            else:
+                return None, None, None
 
             title = soup.title.string.strip() if soup.title else ""
             title = re.sub(r'\s*[-|\u2013]\s*EW\.com.*|\s*\|.*EW.*', '', title).strip()
@@ -101,17 +104,25 @@ def scrape_article(url):
             return article_text, img_url, title
     except: return None, None, None
 
-def get_internal_context():
+def tokenize(text):
+    return set(re.findall(r"\b[a-zA-Z]{4,}\b", (text or "").lower()))
+
+def get_internal_context(current_title="", current_body=""):
     posts_dir = os.environ.get("POSTS_DIR", "content/posts")
     if not os.path.exists(posts_dir): return ""
     files = [f for f in os.listdir(posts_dir) if f.endswith(".md")]
-    sample = random.sample(files, min(len(files), 3)); links = []
-    for fn in sample:
+    current_tokens = tokenize(current_title + " " + current_body[:1000])
+    scored = []
+    for fn in files:
         try:
             with open(os.path.join(posts_dir, fn), "r", encoding="utf-8") as f: content = f.read()
             t = re.search(r'title:\s*"(.*?)"', content); s = re.search(r'slug:\s*"(.*?)"', content)
-            if t and s: links.append(f'- [{t.group(1)}](https://zandani.co.ke/article/{s.group(1)})')
+            if t and s:
+                overlap = len(current_tokens & tokenize(t.group(1) + " " + content[:700]))
+                if overlap:
+                    scored.append((overlap, f'- [{t.group(1)}](https://zandani.co.ke/article/{s.group(1)})'))
         except: pass
+    links = [item for _, item in sorted(scored, reverse=True)[:3]]
     return "\n".join(links) if links else ""
 
 raw_keys = [os.environ.get(k) for k in ["GEMINI_WRITE_KEY","GEMINI_API_KEY","GEMINI_API_KEY1"] if os.environ.get(k)]
@@ -160,6 +171,10 @@ final_title = target_title
 if title_text:
     try: final_title = json.loads(re.sub(r"^```json?\n?|```$", "", title_text, flags=re.I|re.DOTALL).strip()).get('final_title', target_title)
     except: pass
+for word in HYPE_TITLE_WORDS:
+    final_title = re.sub(rf"\b{re.escape(word)}\b", "", final_title, flags=re.I)
+final_title = re.sub(r"\b(?:2020|2021|2022|2023|2024|2025|2026)\b", "", final_title)
+final_title = re.sub(r"\s+", " ", final_title).strip(" -:|") or target_title
 
 current_key = next(key_cycle); client = genai.Client(api_key=current_key); time.sleep(5)
 
@@ -167,13 +182,14 @@ article_prompt = (
     "Current Date: " + full_date_str + ". The current year is " + current_year + ".\n"
     "TITLE: " + final_title + "\n"
     "SOURCE TEXT:\n" + full_raw_text[:9500] + "\n"
-    "INTERNAL LINKS:\n" + get_internal_context() + "\n\n"
-    "TASK: Write a dynamic, engaging entertainment article as Mutheu Ann for Za Ndani.\n"
-    "Plugged-in Kenyan entertainment reporter. Witty, celebrity-focused. No Sheng. No em-dashes. Single hyphens only.\n"
+    "INTERNAL LINKS:\n" + get_internal_context(final_title, full_raw_text) + "\n\n"
+    "TASK: Write a factual entertainment news article as Mutheu Ann for Za Ndani.\n"
+    "Use a clean newsroom voice for Kenyan readers. Specific, fair, and lightly conversational. No Sheng. No em-dashes. Single hyphens only.\n"
     "IMPORTANT: Do NOT refer to " + current_year + " events as happening in 2024. All dates must reflect " + current_year + ".\n"
-    "No title/author/date in body. Start with ## H2 keyword heading. Then 35-45 word summary. Then ### subheadings.\n"
+    "No title/author/date in body. Start with a 40-55 word lede answering who, what, when, where, and why it matters. Then use useful ## and ### subheadings.\n"
+    "Do not tease, speculate, moralize, ask rhetorical questions, or add generic FAQ/Key facts/What this means sections unless directly supported.\n"
     "BANNED PHRASES: " + ", ".join(BANNED_PHRASES) + "\n"
-    "Engaging, vivid, pop culture context. No cliches."
+    "No cliches. Use only facts supported by the source text."
 )
 
 article_text = gemini_generate(article_prompt, use_search=True)
@@ -189,7 +205,7 @@ lines = [
     "---",
     'title: "' + final_title.replace('"', "'") + '"',
     'slug: "' + slug + '"',
-    'description: "' + (final_title[:90] + ' - Latest Kenya entertainment update with key facts, what this means for Kenyans, and answers to common questions.').replace('"', "'")[:158] + '"',
+    'description: "' + (final_title[:100] + ' - latest verified entertainment update with the key context readers need.').replace('"', "'")[:158] + '"',
     'excerpt: "' + (final_title + " - latest verified entertainment update.").replace('"', "'")[:150] + '"',
     'author: "Mutheu Ann"',
     'author_url: "https://zandani.co.ke/author/mutheu-ann"',
