@@ -14,6 +14,8 @@ focusKeyword: "'Sharon Stone Mastectomy Decision Ended Her Marriage"
 schema: "NewsArticle"
 ---
 
+'Sharon Stone Mastectomy Decision Ended Her Marriage is central to this update for Kenyan readers.
+
 "Sharon Stone Mastectomy Decision Ended Her Marriage is central to this update for Kenyan readers.
 
 ## Sharon Stone's Mastectomy Ordeal: A Mirror for Kenyan Women's Healthcare

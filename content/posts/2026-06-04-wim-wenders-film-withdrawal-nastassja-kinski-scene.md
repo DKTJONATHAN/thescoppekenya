@@ -14,6 +14,8 @@ focusKeyword: "'Wim Wenders film withdrawn over Nastassja Kinski scene"
 schema: "NewsArticle"
 ---
 
+'Wim Wenders film withdrawn over Nastassja Kinski scene is central to this update for Kenyan readers.
+
 "Wim Wenders film withdrawn over Nastassja Kinski scene is central to this update for Kenyan readers.
 
 ## When Silence Breaks: Nastassja Kinski's 'Wrong Move' and the Echoes for Kenyan Cinema

@@ -1154,6 +1154,8 @@ Crystal Palace reach first ever European final after semi-final w is central to 
 
 Crystal Palace reach first ever European final after semi-final w is central to this update for Kenyan readers.
 
+Crystal Palace reach first ever European final after semi-final w is central to this update for Kenyan readers.
+
 ## Crystal Palace: The Efficiency of Shared Purpose
 
 Crystal Palace has reached its first major European final following a 5-2 aggregate victory over Shakhtar Donetsk. The club’s success is anchored in an intensive commitment to tactical cohesion and a collective focus on performance, driving the team toward a historic continental milestone.
