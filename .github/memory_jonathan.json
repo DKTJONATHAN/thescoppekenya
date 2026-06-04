@@ -140,10 +140,10 @@
     "844c8e4e57904b4ed4c9d7bef518fb5b",
     "266c6b5be9ee779669256617b6a99d70",
     "dbaa4e9913b67c77d10707f33c78fb20",
-    "ba9b411248f47f533b2a71aee79a5b41"
+    "ba9b411248f47f533b2a71aee79a5b41",
+    "09f5b017d62d6f8f466796904a3d0e73"
   ],
   "style_history": [
-    "Letter Form",
     "Counterpoint",
     "Sharp Column",
     "Personal Reflection",
@@ -172,10 +172,10 @@
     "Letter Form",
     "Personal Reflection",
     "Historical Lens",
-    "Counterpoint"
+    "Counterpoint",
+    "Sharp Column"
   ],
   "angle_history": [
-    "winners_losers|leadership|Personal Reflection",
     "myth_vs_fact|Devolution|Counterpoint",
     "timeline_shift|devolution|Historical Lens",
     "accountability|Geopolitics|Letter Form",
@@ -254,6 +254,7 @@
     "story_progression|Madaraka Day|Letter Form",
     "story_progression|Northern Kenya|Personal Reflection",
     "policy_gap|Northern Kenya|Historical Lens",
-    "myth_vs_fact|Wajir|Counterpoint"
+    "myth_vs_fact|Wajir|Counterpoint",
+    "money_follow|Geothermal Energy|Sharp Column"
   ]
 }
