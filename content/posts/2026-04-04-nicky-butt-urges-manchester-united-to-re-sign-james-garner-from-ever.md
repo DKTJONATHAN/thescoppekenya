@@ -1256,6 +1256,8 @@ Nicky Butt urges Manchester United to re-sign James Garner f is central to this 
 
 Nicky Butt urges Manchester United to re-sign James Garner f is central to this update for Kenyan readers.
 
+Nicky Butt urges Manchester United to re-sign James Garner f is central to this update for Kenyan readers.
+
 ## Butt's Rose-Tinted Spectacles and United's Never-Ending Midfield Muddle Nicky Butt's passionate plea for James Garner's return to Old Trafford lays bare Manchester United's muddled transfer strategy. Once deemed surplus, the midfielder is now supposedly the answer, a damning indictment of the club's scouting and long-term vision, bolstered by inflated praise and a rather telling comparison.
 
 The Prodigal Son... With a Price Tag Let's cut through the nostalgia: James Garner was sold by Manchester United for £15 million four years ago. Now, with Casemiro confirmed as leaving, and a midfield revamp supposedly on the agenda, former academy head Nicky Butt is beating the drum for his return. One has to question the long-term planning at Old Trafford when a player they deemed not "at the level to burst into United and play regularly" is suddenly presented as the solution. If Garner has developed into a "key figure" at Everton, as the narrative suggests, then United's initial assessment - and subsequent sale - appears spectacularly short-sighted. This isn't astute business; it's a potential admission of past failure.

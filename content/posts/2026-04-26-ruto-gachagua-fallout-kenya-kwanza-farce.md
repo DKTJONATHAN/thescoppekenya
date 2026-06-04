@@ -1257,6 +1257,8 @@ Ruto-Gachagua Fallout Kenya Kwanzas Political Farce is central to this update fo
 
 Ruto-Gachagua Fallout Kenya Kwanzas Political Farce is central to this update for Kenyan readers.
 
+Ruto-Gachagua Fallout Kenya Kwanzas Political Farce is central to this update for Kenyan readers.
+
 The spectacle unfolding within Kenya Kwanza is not a clash of ideologies but a pathetic battle of egos, a true "royal rumble" played out for all of Kenya to witness its leaders' insatiable greed and monumental incompetence. This house was always built on sand, and now the cracks are undeniable, exposing the cynical power-plays beneath.
 
 ## The Gachagua Fuel Price Ultimatum: A Clown Show

@@ -14,6 +14,8 @@ focusKeyword: "'Trump Suggests White House UFC Arena Could Become Permanent Fixt
 schema: "NewsArticle"
 ---
 
+'Trump Suggests White House UFC Arena Could Become Permanent Fixt is central to this update for Kenyan readers.
+
 "Trump Suggests White House UFC Arena Could Become Permanent Fixt is central to this update for Kenyan readers.
 
 ## The Grand Illusions of Permanence: When Pop Culture Meets Political Legacy
