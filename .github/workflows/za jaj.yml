@@ -2,7 +2,7 @@
 
 on:
   schedule:
-    - cron: '13 6,14,22 * * *'  # 3x daily: 06:13, 14:13, 22:13 UTC
+    - cron: '13 8 * * 1,4'  # Twice weekly: 08:13 UTC on Monday and Thursday
   workflow_dispatch:
     inputs:
       max_articles:
@@ -16,7 +16,7 @@ on:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 permissions:
   contents: write

@@ -2,7 +2,7 @@ name: Article Publishing Heartbeat
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "17 6,18 * * *"
   workflow_dispatch:
 
 permissions:
@@ -74,7 +74,7 @@ jobs:
             latest_file = "none"
           else:
             age_minutes = int((now - latest_dt).total_seconds() // 60)
-            stale = age_minutes > 90
+            stale = age_minutes > 1440
             latest_iso = latest_dt.isoformat()
 
           summary = (
@@ -82,7 +82,7 @@ jobs:
             f"Latest post date (UTC): {latest_iso}\n"
             f"Current UTC: {now.isoformat()}\n"
             f"Age minutes: {age_minutes}\n"
-            f"Threshold: 90\n"
+            f"Threshold: 1440\n"
           )
 
           print(summary)
@@ -104,7 +104,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const title = "Publishing heartbeat alert: no new article in 90+ minutes";
+            const title = "Publishing heartbeat alert: no new article in 24+ hours";
             const marker = "<!-- heartbeat-alert -->";
             const age = `${{ steps.heartbeat.outputs.age_minutes }}`;
             const latestFile = `${{ steps.heartbeat.outputs.latest_file }}`;
@@ -152,7 +152,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const title = "Publishing heartbeat alert: no new article in 90+ minutes";
+            const title = "Publishing heartbeat alert: no new article in 24+ hours";
             const now = new Date().toISOString();
 
             const { data: issues } = await github.rest.issues.listForRepo({

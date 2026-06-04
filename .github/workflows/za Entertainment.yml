@@ -2,12 +2,13 @@ name: Mutheu Ann - Entertainment Scraper
 
 on:
   schedule:
-    - cron: '35 * * * *'
+    # Run three times daily to reduce duplicate celebrity rewrites and low-value posts.
+    - cron: '35 6,14,22 * * *'
   workflow_dispatch: {}
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 permissions:
   contents: write

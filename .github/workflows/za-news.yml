@@ -2,13 +2,13 @@
 
 on:
   schedule:
-    # Run every hour, staggered from the entertainment scraper
-    - cron: '5 * * * *'
+    # Run four times daily to prioritize stronger, fresher stories over volume.
+    - cron: '5 5,11,17,23 * * *'
   workflow_dispatch: {}
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 permissions:
   contents: write

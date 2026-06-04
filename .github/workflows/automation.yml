@@ -2,12 +2,13 @@
 
 on:
   schedule:
-    - cron: '2 3,7,11,15,19 * * *'
+    # Daily run keeps this broad scraper from flooding the site with weak overlap.
+    - cron: '2 15 * * *'
   workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 permissions:
   contents: write

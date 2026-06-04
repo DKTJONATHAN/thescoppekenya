@@ -16,6 +16,9 @@ Date: 2026-06-04
 10. Quality review relied heavily on AI self-scoring and did not have deterministic checks for hype, stale years, source leaks, generic filler, or article length.
 11. Meta descriptions used generic CTA-style endings such as "Read the full story" and boilerplate "key facts" language.
 12. The workflow could create duplicate topics through similar slugs and repeated coverage of the same event.
+13. Active GitHub Actions workflows were still pushing high volume: news and entertainment ran hourly, one story workflow ran every two hours, and the heartbeat treated a 90-minute publishing gap as a failure.
+14. `scheduler.yml` included a `timezone` key under `on.schedule`; GitHub Actions cron schedules are UTC and do not support that field.
+15. Several scheduled workflows allowed overlapping runs, which can create duplicate stories, memory-file races, and noisy auto-commits.
 
 ## Recommendations
 
@@ -29,6 +32,9 @@ Date: 2026-06-04
 8. Use deterministic quality gates after AI review so bad patterns are blocked even when the model misses them.
 9. Keep meta descriptions useful and factual, around 120-150 characters, without CTA filler.
 10. Monitor Search Console by template type: title style, category, article length, source freshness, and duplicate topic clusters.
+11. Treat publishing freshness as a daily quality signal, not a 90-minute volume target.
+12. Keep scheduled generators staggered and limited. Use manual dispatch for exceptional breaking coverage instead of hourly scraping by default.
+13. Cancel overlapping scheduled workflow runs so one slow scraper does not collide with the next run.
 
 ## Workflow Changes Made
 
@@ -39,3 +45,7 @@ Date: 2026-06-04
 5. `_pipeline.py` now asks AI reviewers to detect unsupported claims, hype, and generic filler.
 6. `run_scraper.py` now uses the same factual house style, skips undated pages, cleans hype from titles, and uses topic-matched internal links.
 7. `scripts/normalize_posts_seo.py` now removes generic boilerplate sections instead of appending them to every article.
+8. High-frequency GitHub Actions schedules were reduced for the main active generators.
+9. The publishing heartbeat now alerts only after 24 hours without a new article, not after 90 minutes.
+10. Scheduled workflow overlaps are now cancelled on the high-volume generators.
+11. The unsupported `timezone` key was removed from `scheduler.yml`.
