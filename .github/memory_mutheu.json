@@ -244,10 +244,10 @@
     "02ed02aee7f1cbea02367da82b723ea8",
     "706765c25a3f9ec78755c0410f4577cf",
     "44bdc8bda42dc8a67f1763b915fe3260",
-    "f0a5336f09a01d67d02b40e21c0bcdb2"
+    "f0a5336f09a01d67d02b40e21c0bcdb2",
+    "b16fe520445dfef594c97c3d1f6ca581"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Explainer",
     "Trend Take",
@@ -276,10 +276,10 @@
     "Hard News Lead",
     "Explainer",
     "Profile Beat",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
-    "accountability|The Late Show|Hard News Lead",
     "myth_vs_fact|Star Wars|Explainer",
     "next_48_hours|Survivor|Trend Take",
     "timeline_shift|Miles Teller|Profile Beat",
@@ -358,6 +358,7 @@
     "policy_gap|Spy movies|Hard News Lead",
     "accountability|na|Explainer",
     "policy_gap|na|Profile Beat",
-    "winners_losers|na|Reaction Round-up"
+    "winners_losers|na|Reaction Round-up",
+    "myth_vs_fact|na|Trend Take"
   ]
 }
