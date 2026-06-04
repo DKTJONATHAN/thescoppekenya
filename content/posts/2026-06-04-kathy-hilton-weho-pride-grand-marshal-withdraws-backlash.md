@@ -14,6 +14,8 @@ focusKeyword: "'Kathy Hilton withdraws as WeHo Pride Grand Marshal amid backlash
 schema: "NewsArticle"
 ---
 
+'Kathy Hilton withdraws as WeHo Pride Grand Marshal amid backlash is central to this update for Kenyan readers.
+
 "Kathy Hilton withdraws as WeHo Pride Grand Marshal amid backlash is central to this update for Kenyan readers.
 
 ## WeHo Pride Drama: Kathy Hilton Steps Down, Community Speaks Out

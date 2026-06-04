@@ -1254,6 +1254,8 @@ M-Pesa establishes itself as Kenyas primary financial system is central to this 
 
 M-Pesa establishes itself as Kenyas primary financial system is central to this update for Kenyan readers.
 
+M-Pesa establishes itself as Kenyas primary financial system is central to this update for Kenyan readers.
+
 ## M-Pesa's Unintended Trajectory Shapes Kenya's Financial Core M-Pesa, initially designed for microfinance loan repayments, accidentally evolved into Kenya's leading peer-to-peer financial system. This shift, driven by widespread adoption for remittances and digital transactions, has significantly boosted financial inclusion, fundamentally redefining the nation's economic landscape and cementing mobile money's role.
 
 Accidental Genesis and Exponential Growth Launched publicly in March 2007 by Safaricom, M-Pesa quickly surpassed its original purpose of facilitating loan repayments for Faulu Kenya microfinance borrowers. Kenyans adopted it as a robust person-to-person money transfer system, addressing a significant need for sending funds to rural relatives, a service largely unmet by formal banks. This organic adoption spurred rapid growth, expanding the agent network from 307 to over 6,000 by late 2008 and accumulating over 5 million registered accounts. The Central Bank of Kenya (CBK) adopted a permissive regulatory stance, issuing a letter of no-objection in 2007. This "test-and-learn" approach proved crucial, avoiding restrictive banking licenses that could have stifled innovation. Instead, the CBK mandated holding customer funds in trust accounts, Know Your Customer (KYC) compliance, and transparent fee disclosure, establishing a global regulatory template for mobile money.
