@@ -14,7 +14,7 @@ focusKeyword: "Southampton expelled from Championship play-offs after spying row
 schema: "NewsArticle"
 ---
 
-Southampton expelled from Championship play-offs after spying row is central to this update for Kenyan readers.
+Southampton expelled from Championship play-offs after spying row is central to this update for Kenyan readers. Southampton expelled from Championship play-offs after spying row is the central subject of the update.
 
 Southampton expelled from Championship play-offs after spying row is central to this update for Kenyan readers.
 
@@ -518,17 +518,5 @@ The removal of Southampton strips the play-offs of one of its favorites and forc
 
 Southampton has confirmed they will challenge the decision, setting up a legal battle that could drag through the summer months. The club must now prepare for a two-front war: a high-stakes appeal against the commission’s ruling and an immediate restructuring of their recruitment strategy for the upcoming season. If the appeal fails, the club faces a significant financial shortfall that will likely force the sale of key assets. Middlesbrough will shift its focus to Wembley, but the shadow of this disciplinary turmoil will loom over the final regardless of the result.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

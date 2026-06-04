@@ -40,17 +40,5 @@ This investigation serves as a reality check for the entertainment industry. The
 
 The primary focus remains on the upcoming court appearance for Josiah Njeru Njiri. The DCI is expected to request extended custodial orders to finalize their forensic evidence, particularly regarding the materials used in the arson attack. Legal experts are also monitoring whether the prosecution will seek to frame the charges specifically under the weight of gender-based violence legislation. The creative community intends to maintain pressure on local law enforcement to ensure the investigation remains transparent as the file moves toward the Office of the Director of Public Prosecutions for formal indictment.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

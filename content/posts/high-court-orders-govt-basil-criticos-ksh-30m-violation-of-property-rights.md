@@ -24,34 +24,6 @@ Systemic Failures and the Violation of Property Rights Across Kenya The governme
 
 Accountability and the Future of Property Rights in Kenya This High Court order against the government serves as another indictment of the state's long-term accountability deficits in managing land affairs. While the 2010 Constitution and subsequent land laws aimed to rectify historical injustices and streamline land management, implementation remains slow, particularly concerning public land and the plight of informal settlers. The ruling for Basil Criticos, though a victory for individual justice, points to a larger, unresolved crisis of governance where the state struggles to balance public interest with fundamental individual rights, often at great expense. The question remains: how many more decades, and how many more millions, will it take before the government adopts a truly equitable and efficient approach to land and property rights for all Kenyans? 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ Accountability and the Future of Property Rights in Kenya This High Court order 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -50,17 +50,5 @@ If you are just beginning to explore this digital collection, consider starting 
 
 Great cinema acts as a bridge between the past and the future of narrative art. By dedicating time to analyze these classics, you gain more than just entertainment; you gain a toolkit of techniques that will serve your future projects for years to come.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -38,17 +38,5 @@ This situation compels us to reflect: What happens when the custodians of truth 
 
 As the dust settles on Scott Pelley’s unexpected exit, the media world watches closely. His principled stand against what he perceived as a corruption of journalistic standards at "60 Minutes" will undoubtedly fuel further conversations on the precarious balance between a network's vision and a journalist's conscience. For us at Za Ndani and for audiences across Kenya, it's a stark reminder that the fight for unbiased, uncompromised storytelling is a global one, demanding vigilance from both those who report the news and those who consume it. The dialogue about preserving the authentic "DNA" of journalism continues, seeking clarity on the future direction of news integrity.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

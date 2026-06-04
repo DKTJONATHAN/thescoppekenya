@@ -40,31 +40,6 @@ The current standoff serves as a bellwether for how legacy genres are managed in
 
 The industry is watching to see whether this conflict will evolve into a more collaborative relationship with the veterans of the craft. If these artists choose to integrate the input and presence of Fuji legends into their future works, it could transform a superficial rivalry into a meaningful bridge between generations. Ultimately, the success of this modern movement will not be determined by which artist wins a public argument. Instead, it will be measured by the ability of these performers to ensure the genre survives as a living, evolving, and respected art form for those who come after them.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -73,17 +48,5 @@ The industry is watching to see whether this conflict will evolve into a more co
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

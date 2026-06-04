@@ -48,17 +48,5 @@ All eyes are now on how the administration handles the growing demand for transp
 
 The government must decide whether it can prove that this project serves the national interest or if it will be remembered merely as an exercise in vanity. For now, the sentiment remains clear: to a struggling public, the State House renovation looks far more like a luxury than a legacy. The court of public opinion is rarely swayed by aesthetic improvements when the basic needs of the citizenry remain unaddressed.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -42,17 +42,5 @@ The club is at a critical juncture where survival is no longer a benchmark for s
 ### What to watch next
 The summer transfer window will be the first true test of the De Zerbi era. If the club backs him with the necessary squad overhaul, it may appease the supporters temporarily. However, if the recruitment remains shackled to the same failed internal processes, the protests outside the stadium will likely intensify before the next campaign even begins.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

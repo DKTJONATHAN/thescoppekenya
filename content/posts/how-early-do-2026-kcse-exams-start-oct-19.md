@@ -26,34 +26,6 @@ Second Week Intensifies with Core Subjects The second week of examinations will 
 
 Final Stretch and Conclusion The final segment of the examinations will commence on Monday, November 16, with a Geography paper, followed by the first Physics paper from 2 p.m. to 4 p.m. On Tuesday, November 17, candidates will sit for Business Studies examinations, with Agriculture following in the afternoon, each paper taking two hours. Wednesday, November 18, will see the second Geography paper, followed by the second Physics paper in the afternoon. Candidates undertaking Agriculture and Business Studies will complete their second papers on Thursday, November 19. The 2026 KCSE examinations will officially conclude on Friday, November 20, with a Physics practical session, lasting two hours and 30 minutes for each student.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -62,17 +34,5 @@ Final Stretch and Conclusion The final segment of the examinations will commence
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

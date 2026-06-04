@@ -28,34 +28,6 @@ Policy as practice: Building greener Kenya's workplaces from within Concrete pol
 
 A call to action for HR at the helm: The planet cannot wait The scientific consensus on climate change is unequivocal, the economic benefits of corporate sustainability are well-established, and the demand for genuine environmental action from employees and consumers continues to surge. What is now required is decisive action, and it can commence today, spearheaded by HR departments across Kenya and the broader African continent. The initial steps need not be grand. Organising a company-wide sustainability awareness week, launching a departmental energy-saving challenge, or auditing job descriptions for environmental messaging are all viable starting points. Convening a cross-functional green committee with a clear mandate and visible senior sponsorship can foster collective responsibility. Celebrating progress, and indeed acknowledging setbacks as learning opportunities, reinforces commitment. HR professionals are, at their core, architects of culture - the quiet engineers of how organisations think, behave, and evolve. The monumental challenge of sustainability demands precisely this kind of long-view, people-centred leadership. It demands HR operating at its finest. The planet, and the generations who will inherit it, deserve nothing less than our readiness to lead. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -64,17 +36,5 @@ A call to action for HR at the helm: The planet cannot wait The scientific conse
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

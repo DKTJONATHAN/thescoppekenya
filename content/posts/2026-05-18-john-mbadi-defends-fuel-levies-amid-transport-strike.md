@@ -42,17 +42,5 @@ Market observers are now directing their attention toward the upcoming review cy
 
 Investors should monitor parliamentary briefings where the Treasury is expected to clarify how these fuel levies influence the broader national infrastructure budget. Additionally, market participants should observe whether the government alters its rhetoric concerning fuel subsidies if the current transport strike leads to a measurable increase in official inflation figures. Further clarity regarding the country's fiscal trajectory will be provided in the upcoming June Supplementary Budget estimates, which will serve as the primary indicator of the government's long-term budgetary health.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

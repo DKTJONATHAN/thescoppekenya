@@ -26,34 +26,6 @@ Systemic Failures and the Rollout of Smart Cameras Alongside the decentralised N
 
 Public Participation and the Looming Financial Burden The proposed regulations for mandatory vehicle inspection have previously faced challenges regarding public participation. While NTSA claims to have conducted exercises, concerns persist that the financial impact on vehicle owners has not been adequately addressed. With motorists already grappling with increasing fuel costs and other levies, the introduction of potentially higher inspection fees under a private sector-led model adds another layer of financial strain. The government's focus on revenue generation from this initiative raises questions about whether the primary objective remains road safety or the creation of new income streams, potentially at the expense of already burdened citizens. True road safety reform requires not just technological upgrades and decentralisation, but also transparency, genuine public engagement, and a clear commitment to protecting citizens from predatory practices that could emerge from an unchecked PPP framework. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -62,17 +34,5 @@ Public Participation and the Looming Financial Burden The proposed regulations f
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

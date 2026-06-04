@@ -46,17 +46,5 @@ Our reliance on stable connectivity is at an all-time high. Whether you are a st
 
 Keep an eye on how quickly smaller, local ISPs start expanding their footprints into new estates. If this infrastructure model works as intended, you should see more choice in providers in your area, alongside a noticeable dip in the frequency of those unexplained, short-term outages that disrupt your workday. While you will likely never see the cables themselves, the reliability of your stream or your work meeting will be the proof that the plumbing is finally being fixed.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

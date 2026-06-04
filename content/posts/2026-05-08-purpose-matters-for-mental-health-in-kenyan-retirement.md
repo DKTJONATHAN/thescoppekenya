@@ -46,31 +46,6 @@ Pay close attention to the growing advocacy for professional transition coaching
 
 Do not view your post-career life as a waiting room for the end. You possess decades of hard-won expertise that our country cannot afford to waste. Find one individual who needs your knowledge, teach them what you know, and observe how quickly the fog of retirement dissipates. Stop parking your potential. Use your skills to serve, and you will discover that the quiet you once feared is actually the space required to finally undertake your most important work.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -79,17 +54,5 @@ Do not view your post-career life as a waiting room for the end. You possess dec
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

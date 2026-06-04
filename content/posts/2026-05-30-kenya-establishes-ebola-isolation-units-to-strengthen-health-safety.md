@@ -44,17 +44,5 @@ Beyond the immediate tactical deployment, the government is looking at the long-
 
 Public health officials will conduct a final assessment of the ten counties on Monday to confirm that all localized response cells are fully functional. The focus over the coming week will shift to maintaining high-frequency surveillance reports and ensuring that logistical chains remain resilient under standard operating conditions.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

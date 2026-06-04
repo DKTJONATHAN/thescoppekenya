@@ -38,17 +38,5 @@ This scandal follows a trend of erratic institutional behavior that continues to
 
 The club now faces an uphill battle to rebuild its reputation. With the play-off dream dead and a points penalty looming, the board must decide if Tonda Eckert has a future at the helm. Whether the club can distance itself from this culture of paranoia remains the defining question of their summer. They will begin the new campaign on the back foot, both literally and figuratively, while the rest of the league attempts to move past the wreckage of this season’s dark revelations. The Championship resumes in August, but for the staff at St Mary’s, the shadow cast by this inquiry will be difficult to escape.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

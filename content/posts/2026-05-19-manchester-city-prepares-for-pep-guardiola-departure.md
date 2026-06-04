@@ -44,17 +44,5 @@ The immediate outlook centers on the upcoming fixture against Aston Villa. This 
 
 Any decline in the points-per-game ratio during these final stages will be viewed as an indicator of potential volatility as the club transitions into a post-Guardiola period. The subsequent managerial appointment will provide the final data point required to determine if Manchester City functions as a permanent, data-driven machine or if the Guardiola effect was an outlier that defies institutional replication. The club’s ability to navigate this period without significant performance slippage will determine its status in the future global football economy.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

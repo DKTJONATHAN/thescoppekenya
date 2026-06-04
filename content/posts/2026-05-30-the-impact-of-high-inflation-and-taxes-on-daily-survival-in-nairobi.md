@@ -33,17 +33,5 @@ The ongoing economic strain is fundamentally altering how people live in Nairobi
 ### Administrative Costs and Public Disconnect
 Public frustration is growing as citizens observe the high costs associated with government administration and legal disputes. Decisions made at the highest levels of the judiciary and the executive branch often highlight the gap between official proceedings and the struggles of the common taxpayer. As the government continues to fund its various arms through taxpayer contributions, many residents feel the burden of these institutional costs while they navigate the reality of an increasingly expensive daily life.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

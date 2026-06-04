@@ -36,17 +36,5 @@ Organisations like the Kenya Film Classification Board (KFCB) play a crucial rol
 
 The **Wim Wenders film withdrawal** is not just an isolated incident; it's a profound teaching moment. It reminds us that an actor's consent, especially when underage, is paramount and requires a vigilant system of protection. For Kenya, this is a moment to proactively strengthen our own policies, ensuring that our next generation of talent can shine brightly without compromising their innocence or well-being. By fostering transparent protocols, empowering parents, and educating industry professionals, we can build a film industry where the welfare of every child actor is genuinely non-negotiable, ensuring that no Kenyan child will have to wait 50 years for justice.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

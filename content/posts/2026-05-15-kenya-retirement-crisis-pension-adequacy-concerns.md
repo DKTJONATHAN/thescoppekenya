@@ -42,31 +42,6 @@ We are constructing a reality where elderly poverty is no longer a peripheral ex
 
 The coming decade will necessitate a painful reckoning with our national savings culture. As the current generation of savers realizes their lump-sum payouts are insufficient to manage ballooning medical and living expenses, we should expect a surge in political pressure for government-backed minimum pension guarantees. The narrative must urgently transition from a preoccupation with the number of retirement accounts to a focus on whether those accounts provide the means for actual retirement. History teaches us that ignored economic warnings have an unfortunate habit of transforming into the crises of tomorrow. If we fail to address these systemic flaws today, we leave the next generation to inherit a landscape of financial desperation.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -75,17 +50,5 @@ The coming decade will necessitate a painful reckoning with our national savings
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

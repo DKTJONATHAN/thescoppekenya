@@ -30,31 +30,6 @@ At the heart of the national conversation is the legal status that grants religi
 ### Economic Disillusionment Among Congregants
 The disparity between the opulent growth of large religious organizations and the financial instability of the average attendee has become a focal point of public frustration. Many congregants, particularly the younger generation, feel that their contributions are fueling a surplus rather than supporting community welfare. This sense of disillusionment is further exacerbated by the harsh economic climate, which makes the constant demand for tithes and offerings increasingly difficult to satisfy. The prevailing public sentiment suggests that if the church adopts the operational structure of a business, it must also accept the financial responsibilities and fiscal oversight inherent in the corporate sector.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -63,17 +38,5 @@ The disparity between the opulent growth of large religious organizations and th
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

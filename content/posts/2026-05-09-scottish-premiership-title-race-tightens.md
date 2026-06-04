@@ -42,31 +42,6 @@ The league table may appear orderly at a glance, but beneath the surface, there 
 
 Hearts remain the team to catch, though the relentless demands of the current calendar are placing heavy pressure on their lead. As the season enters its final act, the focus will shift from the pitch to the boardrooms of clubs hovering near the relegation trapdoor. Expect a flurry of emergency meetings and desperate tactical adjustments as sides scramble to protect their status. The upcoming transfer window will no longer be about long-term development; it will be defined by defensive spending and the desperate retention of key players for those who managed to secure European football. The chasm between the clubs that planned for success and those that stumbled into failure is about to become painfully obvious to everyone watching.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -75,17 +50,5 @@ Hearts remain the team to catch, though the relentless demands of the current ca
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -30,31 +30,6 @@ Beyond the technical errors, there are growing allegations of corruption within 
 ### The Political Backlash of Failed Reforms
 The current healthcare crisis is increasingly viewed as a political trap for those who initially championed the rollout. Political figures who aggressively advocated for the Social Health Authority are now facing irony as the malfunctioning system begins to impact the entire population, including the elite. Critics frequently invoke the recent political ousting of former Deputy President Rigathi Gachagua as a cautionary example. The public sentiment suggests that those who supported the implementation of these flawed reforms are now experiencing a reckoning. There is a growing consensus that the architects of this system will eventually be forced to rely on the same hollowed-out infrastructure they created, leaving them vulnerable to the consequences of their own policy failures.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -63,17 +38,5 @@ The current healthcare crisis is increasingly viewed as a political trap for tho
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

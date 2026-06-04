@@ -24,34 +24,6 @@ Hidden Costs and the Real Losers: Beyond What CS Wandayi Says The government's e
 
 Systemic Fragility: Kenya's Reliance on Volatile Fuel Stocks The government's assurances, while well-intentioned, underscore Kenya's systemic vulnerability. The nation's energy security remains tethered to the whims of volatile international markets and the unpredictable geopolitics of the Middle East. The current focus on securing fuel stocks until more expected in April, while necessary, avoids addressing the fundamental issue of structural dependence. Little public discourse or concrete action appears directed at diversifying Kenya's energy mix away from imported refined petroleum or developing robust strategic reserves that could buffer against prolonged global disruptions. Until a proactive, long-term strategy for energy independence and resilience is championed, Kenyans will continue to face the specter of surging pump prices and economic hardship whenever global oil markets sneeze. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ Systemic Fragility: Kenya's Reliance on Volatile Fuel Stocks The government's as
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

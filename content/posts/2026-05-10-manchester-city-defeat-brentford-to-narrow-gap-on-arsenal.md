@@ -42,31 +42,6 @@ The final three games of the season will be less about the aesthetic quality of 
 
 Expect Guardiola to double down on this wide-heavy strategy in the coming weeks. Doku’s role is no longer a luxury, but a centerpiece. If the current trajectory continues, City is positioning itself to be more than a team chasing a result; they are attempting to break the defensive spirit of their competition. The mandate is clear: abandon the reliance on perfect timing and generate the disorder required to force the title into their own hands.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -75,17 +50,5 @@ Expect Guardiola to double down on this wide-heavy strategy in the coming weeks.
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

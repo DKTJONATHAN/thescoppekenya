@@ -48,31 +48,6 @@ Investors and observers should monitor the upcoming mid-year budget review for p
 
 Should the technopolis fail to improve occupancy rates across its 21 active land parcels or expand its digital service client base, the case for a transition toward a public-private partnership or partial privatization may gain momentum. The ability of the project to stabilize its finances will be the primary determinant of its future role in the national economic landscape. Future reports will need to demonstrate clear progress in cost management and market competitiveness to address the concerns raised in the current audit.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -81,17 +56,5 @@ Should the technopolis fail to improve occupancy rates across its 21 active land
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

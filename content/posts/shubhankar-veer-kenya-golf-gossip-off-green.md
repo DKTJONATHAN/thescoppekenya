@@ -26,34 +26,6 @@ Jacob Bridgeman's Genesis Invitational Shocker: A Wedding Bell Win, Mate! Meanwh
 
 Rory McIlroy's Riviera Rant: Frustration, Fortune, and a Four-Hundred-Grand Putt! Poor Rory McIlroy and Kurt Kitayama, almost clinched it but Bridgeman held on for that one-shot victory. Rory admitted he was "a little frustrated" with the greens and felt they were "really, really difficult." Can you imagine the frustration? (A proper nightmare, I reckon!). But our Rory, ever the showman, did manage a rather epic final birdie on the 18th. And when asked if it was "cruel" to sink such a good putt after missing so many, he quipped it "probably earned me an extra 400, 500 grand so it's fine." (Honestly, you've got to love him!). Even with the pressure, he still manages a bit of cheeky banter. Remember that time he "snapped at a spectator" back in 2025? Always a bit of drama with our Rory, isn't there? You can bet he's already plotting his comeback! 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -62,17 +34,5 @@ Rory McIlroy's Riviera Rant: Frustration, Fortune, and a Four-Hundred-Grand Putt
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

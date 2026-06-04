@@ -15,7 +15,7 @@ focusKeyword: "NTSA explains KTW registration prefix for three-wheeler vehi"
 schema: "NewsArticle"
 ---
 
-NTSA explains KTW registration prefix for three-wheeler vehi is central to this update for Kenyan readers.
+NTSA explains KTW registration prefix for three-wheeler vehi is central to this update for Kenyan readers. NTSA explains KTW registration prefix for three-wheeler vehi is the central subject of the update.
 
 NTSA explains KTW registration prefix for three-wheeler vehi is central to this update for Kenyan readers.
 
@@ -1273,34 +1273,6 @@ Theft Prevention Measures The NTSA also implemented the distinct KTW prefix as a
 
 Number Plate Colours and Meanings The colour of a tuk-tuk's number plate also conveys specific information regarding its purpose, ownership, and registration type, as designated by NTSA. Standard tuk-tuks, predominantly used for commercial purposes such as public transportation, feature yellow number plates at the rear and white plates at the front, both with black lettering. Conversely, green number plates, often starting with the prefix KD, are designated for garage use. These are typically used for temporary identification when a new tuk-tuk is being moved from a showroom to a customer or for test drives. In a significant update for 2026, green plates have also been designated as "New Generation Green Plates" for electric vehicles, including electric tuk-tuks. This policy aims to signify their zero-emission status, aligning with the country's commitment to sustainable transport. The official launch of these green number plates for electric vehicles occurred on February 3, 2026. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1309,17 +1281,5 @@ Number Plate Colours and Meanings The colour of a tuk-tuk's number plate also co
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

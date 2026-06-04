@@ -30,17 +30,5 @@ There is a profound irony in the commuter experience. Many passengers actively s
 ### A Culture of Impunity
 Public outcry following these frequent accidents is often intense, yet the collective memory of the tragedy fades far faster than the skid marks left on the tarmac. There is a desperate need for a fundamental overhaul of transport culture, extending beyond mere traffic enforcement. Until the commuting public ceases to reward reckless drivers with their patronage and fare, the industry will continue to operate with a fatal sense of impunity. It remains a painful reality that many commuters pray for safety upon entry, yet consciously select the most dangerous vehicle to carry them home.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

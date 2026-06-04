@@ -40,31 +40,6 @@ The passing of Alex Ekubo has accelerated a conversation about the long-term sus
 
 As the industry grapples with this internal crisis, observers anticipate a series of stakeholder meetings in the coming weeks. The primary objective is the potential development of a formal health insurance and welfare collective. The shift in tone from the Nigerian creative elite indicates that the current individual-based approach to crisis management is losing favor. The focus is shifting toward the creation of an industry-led health fund designed to provide performers with the medical resources required to combat long-term illness. Whether these discussions lead to tangible policy changes remains the critical question for the future of the Nigerian creative economy.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -73,17 +48,5 @@ As the industry grapples with this internal crisis, observers anticipate a serie
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

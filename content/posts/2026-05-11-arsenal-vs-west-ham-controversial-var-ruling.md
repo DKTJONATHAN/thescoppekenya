@@ -48,31 +48,6 @@ The aftermath of this incident will inevitably turn toward upcoming reviews betw
 
 The most pressing question remains whether the league will finally implement a strict time limit for VAR interventions. Without a cap on these delays, the sport invites a future defined by administrative obstruction. The league must decide if it wants to be an industry built on technical manuals or a sport built on the right to play. The current path is unsustainable.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -81,17 +56,5 @@ The most pressing question remains whether the league will finally implement a s
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

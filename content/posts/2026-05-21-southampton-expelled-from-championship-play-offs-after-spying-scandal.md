@@ -14,7 +14,7 @@ focusKeyword: "Southampton Expelled From Championship Play-offs After Spying Sca
 schema: "NewsArticle"
 ---
 
-Southampton Expelled From Championship Play-offs After Spying Sca is central to this update for Kenyan readers.
+Southampton Expelled From Championship Play-offs After Spying Sca is central to this update for Kenyan readers. Southampton Expelled From Championship Play-offs After Spying Sca is the central subject of the update.
 
 Southampton Expelled From Championship Play-offs After Spying Sca is central to this update for Kenyan readers.
 
@@ -452,17 +452,5 @@ The Southampton scandal serves as a stark reminder that data-driven advantages a
 
 The immediate focus shifts to the Championship play-off final as Middlesbrough prepares for their unexpected appearance against Hull City. While the legal and administrative dust settles at St Mary's, the broader football community will observe how the English Football League enforces the four-point penalty during the next season. The precedent set here suggests that future investigations into clandestine data practices will move away from financial penalties, which larger clubs can easily absorb, toward the existential threat of expulsion and point deductions. The focus for Southampton will now be internal reorganization and the complete removal of the management structures that allowed such a systemic betrayal of sporting integrity to take hold.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

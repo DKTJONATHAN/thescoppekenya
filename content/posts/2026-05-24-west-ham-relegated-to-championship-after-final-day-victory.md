@@ -44,17 +44,5 @@ The relegation signifies the collapse of a club that had spent over a decade att
 
 The immediate priority for West Ham is a total clear-out of the playing staff and a decisive move in the summer transfer window. With significant wages to shed and a desperate need for a manager who can stabilize a sinking ship, the club faces a summer of brutal restructuring. The Championship will offer no easy path back, and the fans will demand a clear sporting mandate before the first ball is kicked in August.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -42,17 +42,5 @@ The Kiarie case serves as a mirror for the lack of formal policy regarding the s
 
 The primary focus will be whether the Ministry of Sports issues a formal clarification regarding the KSh 1.91 million deficit. Without a clear path to payment, Kiarie may pursue further legal or administrative avenues to demand the release of the funds. Analysts will be observing if this standoff forces the government to implement a standardized, public-facing portal for tracking sports grants, or if the current bureaucratic bottleneck continues to stifle athlete development for those outside the mainstream sporting fraternity.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

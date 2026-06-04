@@ -30,17 +30,5 @@ At the core of this case is an intense domestic dispute that resulted in the imp
 ### Structural Failures in the Judiciary
 Critics of the ruling argue that this case is symptomatic of broader failures within the justice system, where the rights of the elderly and vulnerable are frequently undermined. The family contends that the court ignored exculpatory evidence, allowing the machinery of the law to be used for personal retribution rather than the pursuit of truth. As the legal team prepares to appeal the sentence, they are calling for a thorough re-examination of the medical documents. The family remains committed to overturning the conviction, insisting that Simiyu should not be forced to spend her remaining years in prison due to a fabricated case driven by malice.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

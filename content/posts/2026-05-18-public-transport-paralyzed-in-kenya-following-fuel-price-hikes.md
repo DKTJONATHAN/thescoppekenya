@@ -44,17 +44,5 @@ The coming days depend entirely on whether the government enters meaningful nego
 
 If diesel holds steady at KSh 242.92, commuters must brace for a permanent increase in the cost of transit across Kenya. The era of low-cost daily movement has reached its expiration date. The empty roads currently snaking through Nairobi are merely the first indicator of a new, harsher economic reality. The math is stubborn, and until the government and the transport sector find a way to reconcile these figures, the city will remain in park.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

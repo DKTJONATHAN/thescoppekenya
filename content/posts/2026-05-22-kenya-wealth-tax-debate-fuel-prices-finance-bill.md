@@ -38,17 +38,5 @@ Watch the parliamentary debate on the capital gains clauses. If the 15 per cent 
 
 The Finance Bill 2026 is not a road to fiscal health. It is a toll booth operated by the few, demanding payment from the many, while the owners of the road keep their pockets firmly shut.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

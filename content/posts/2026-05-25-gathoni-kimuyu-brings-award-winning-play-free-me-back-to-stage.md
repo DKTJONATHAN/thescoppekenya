@@ -46,17 +46,5 @@ The production features a robust ensemble cast, including Joan Cherono, Ella Mai
 
 Much like the [public scrutiny surrounding Truphena’s recent claims](https://zandani.co.ke/article/2026-03-29-truphena-focus-stunt-not-statement), modern audiences are discerning. They are increasingly capable of separating genuine lived experience from performative tropes. Kimuyu has secured the awards, but the true test is institutional stamina. She must prove that she can sustain a production of this scale without exhausting her cast or alienating a sophisticated audience. The stage functions as a mirror, but cleaning that mirror is a costly endeavor. Kimuyu has mastered the craft of the performance; now, the real work is mastering the business of survival.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

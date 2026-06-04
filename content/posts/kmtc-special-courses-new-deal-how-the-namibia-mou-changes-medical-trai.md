@@ -18,34 +18,6 @@ KMTC Special Courses New Deal How the Namibia MoU Changes Me is central to this 
 
 **KMTC and Namibia’s Welwitchia University Ink Landmark Deal to Revolutionize Medical Training** **NAIROBI, KENYA:** The Kenya Medical Training College has officially entered a strategic partnership with Welwitchia University of Namibia. This new Memorandum of Understanding marks a pivotal shift in regional health education as the two institutions move to synchronize their academic and research frameworks. The agreement was finalized at the college headquarters in Nairobi on Tuesday. It establishes a comprehensive structure for collaboration in education, capacity building, and advanced research. According to KMTC officials, the partnership is designed to introduce customized courses specifically tailored for various faculties and student bodies. A primary component of this deal involves KMTC providing technical expertise to Welwitchia University. This support will facilitate the introduction of new diploma and certificate courses in Namibia. The collaboration focuses on addressing local health gaps within the Namibian healthcare system by developing a context specific curriculum. KMTC Chief Executive Officer Kelly Oluoch joined Namibia Council Chairperson Monika Pendukeni and Welwitchia University Vice Chancellor Professor Marius Hedimbi to formalize the pact. Under the terms of the agreement, the Kenyan institution will deploy technical experts to lead joint concepts and strengthen health systems through leadership development initiatives. Students from both institutions are set to benefit from shared resources. This includes access to specialized laboratories, libraries, and research facilities. The partnership also envisions joint publications and the wide dissemination of research findings to improve global health training. This international expansion comes as KMTC continues to broaden its reach within Kenya. The signing ceremony coincided with the reopening of the Kenya Universities and Colleges Central Placement Service portal. KUCCPS is currently inviting applications for the March 2026 intake. Prospective students who attained a Grade D and above in their Kenya Certificate of Secondary Education are eligible for various programs. There are currently thirty one medical courses available under the health sciences cluster across several KMTC campuses. By exporting its proven medical training model to Namibia, KMTC is positioning itself as a central hub for health excellence in Africa. This move not only strengthens diplomatic ties between the two nations but also ensures that Kenyan medical expertise contributes to solving healthcare challenges across the continent.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -54,17 +26,5 @@ KMTC Special Courses New Deal How the Namibia MoU Changes Me is central to this 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

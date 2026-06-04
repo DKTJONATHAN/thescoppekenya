@@ -24,34 +24,6 @@ Saudi, MLS, and a Saudi Shake-Up The whispers about Salah heading to Saudi Arabi
 
 The Olise Option: A Bayern Bargaining Battle? Of course, if Salah does depart, Liverpool will need a replacement, won't they? And the name being bandied about is Michael Olise. Reports suggest Liverpool are "desperate" to bring the winger to Anfield from Bayern Munich. Olise, who moved to Bayern in July 2024, has been in superb form in the Bundesliga. However, mate, this won't be an easy snatch. Bayern Munich reportedly have "no intention of selling" Olise this summer, and he's tied down on a long-term contract until 2029. There are even whispers that his contract doesn't include a release clause, which would make any potential transfer fee absolutely eye-watering - potentially "over £100m". So, while Olise might be a dream target, prising him away from the German giants could be a monumental task. It's all set up for a fascinating summer, isn't it? Will Salah stay and see out his contract, or will the lure of a new challenge, and Liverpool's desire to cash in, see him off to pastures new? Only time will tell, but it's certainly got everyone talking! 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ The Olise Option: A Bayern Bargaining Battle? Of course, if Salah does depart, L
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

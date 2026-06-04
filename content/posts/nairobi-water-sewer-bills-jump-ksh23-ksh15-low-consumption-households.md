@@ -24,34 +24,6 @@ Justification for the Jump by Ksh23 and Ksh15 NCWSC applied for the tariff revie
 
 Investment and Compliance Amidst Rising Nairobi Water & Sewer Bills The revenue generated from these higher tariffs is earmarked for a multi-billion-shilling investment programme. This programme is designed to rehabilitate ageing infrastructure, expand access to water and sewerage services, and modernise systems. NCWSC is already deploying advanced leak detection vans and upgrading metering systems to curb non-revenue water. To enforce compliance and reduce water theft, the water agency has introduced stricter penalties for unlawful water connections. Commercial and industrial consumers found engaging in such activities face fines of Ksh100,000, while domestic consumers will incur a Ksh30,000 fine, in addition to estimated backdated consumption charges. Furthermore, customers with non-functional meters will be billed based on the average of their last three months' consumption. This significant adjustment to **Nairobi Water & Sewer Bills** underscores the delicate balance between ensuring the financial viability of essential service providers and safeguarding household budgets, particularly for **low consumption households** navigating a challenging economic landscape. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ Investment and Compliance Amidst Rising Nairobi Water & Sewer Bills The revenue 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

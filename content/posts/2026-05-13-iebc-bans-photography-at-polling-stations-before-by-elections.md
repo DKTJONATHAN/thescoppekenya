@@ -14,7 +14,7 @@ focusKeyword: "IEBC Bans Photography at Polling Stations Before By-elections"
 schema: "NewsArticle"
 ---
 
-IEBC Bans Photography at Polling Stations Before By-elections is central to this update for Kenyan readers.
+IEBC Bans Photography at Polling Stations Before By-elections is central to this update for Kenyan readers. IEBC Bans Photography at Polling Stations Before By-elections is the central subject of the update.
 
 IEBC Bans Photography at Polling Stations Before By-elections is central to this update for Kenyan readers.
 
@@ -844,31 +844,6 @@ This directive transforms the polling station into a space of heightened legal r
 ### What to watch next
 Watch the arrest logs on May 14. If the IEBC applies this law with the same intensity they have applied in their warnings, we will see if the threat of a Ksh 1 million fine can actually break the cycle of surveillance. If the law is ignored, the authority of the commission to manage future general elections will be seriously in question.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -877,17 +852,5 @@ Watch the arrest logs on May 14. If the IEBC applies this law with the same inte
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -38,17 +38,5 @@ When freight costs climb, the final price at the point of sale rarely remains st
 
 The outlook for the remaining months of the year remains precarious. If these surcharges persist or expand to other shipping corridors, the inflationary pressure on essential imports will likely outpace recent efforts to stabilize the shilling. Importers are now left to maneuver through a reality where logistics costs are no longer a background variable, but a primary driver of domestic market pricing. History shows that whenever the cost of bringing goods into the country rises, the distance between the harbor and the consumer's pocketbook only grows wider.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

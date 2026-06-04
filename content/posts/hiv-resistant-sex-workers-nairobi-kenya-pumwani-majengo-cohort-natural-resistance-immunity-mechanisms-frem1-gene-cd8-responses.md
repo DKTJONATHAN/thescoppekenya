@@ -32,34 +32,6 @@ Late Seroconversion and Limits of Resistance Resistance proves not absolute. Som
 
 Broader Cohort Trends and Prevention Impact Over decades, HIV prevalence in the cohort has declined due to expanded testing, antiretroviral treatment, PrEP, and clinic outreach. Risks remain elevated from violence, stigma, economic pressures, and inconsistent prevention. Yet the resistant subgroup continues informing science on natural barriers. Insights from mucosal IgA, quiescence, CD8+ responses, and genes like FREM1 guide vaccine and prevention research aiming to replicate these mechanisms. In Nairobi's high-risk settings, these women's biology offers valuable clues toward reducing transmission alongside existing tools.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -68,17 +40,5 @@ Broader Cohort Trends and Prevention Impact Over decades, HIV prevalence in the 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

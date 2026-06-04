@@ -15,7 +15,7 @@ focusKeyword: "KeNHA warns motorists against using flooded Eldama Ravine-Ma"
 schema: "NewsArticle"
 ---
 
-KeNHA warns motorists against using flooded Eldama Ravine-Ma is central to this update for Kenyan readers.
+KeNHA warns motorists against using flooded Eldama Ravine-Ma is central to this update for Kenyan readers. KeNHA warns motorists against using flooded Eldama Ravine-Ma is the central subject of the update.
 
 KeNHA warns motorists against using flooded Eldama Ravine-Ma is central to this update for Kenyan readers.
 
@@ -1267,34 +1267,6 @@ Continued Rainfall Expected Nationwide The warning from KeNHA coincides with a p
 
 Nairobi Estates Face Evacuation Orders Nairobi's metropolitan area remains significantly affected by the ongoing floods, with moderate-to-heavy downpours anticipated in Dagoretti, Kibra, parts of Embakasi, and Langata. In Kiambu, the Kenya Met Department expects rains in Gatundu North, Limuru, Kikuyu, and Kabete, persisting towards the end of the weekend. Amidst these conditions, the Water Resources Authority (WRA) on Friday, March 20, 2026, ordered the immediate evacuation of residents in six Nairobi estates located near the Nairobi Dam. All individuals living downstream of the dam were directed to move to higher ground, as the dam, situated in the Kibera area along the Ngong River, faces a risk of embankment breach. The WRA specifically identified Kibera, Nyayo Highrise, Dam Estate, Lang'ata, Nairobi West, and Madaraka as areas requiring immediate evacuation. Additionally, other estates likely to be impacted include Mukuru Slums (Kwa Njenga, Reuben, and Viwandani), South B, Pipeline, Embakasi, and the Industrial Area. These severe weather conditions pose significant challenges across the country, impacting daily life and infrastructure, even as various governmental bodies continue their planned operations, such as the Independent Electoral and Boundaries Commission's recent announcement of temporary jobs for a voter registration exercise. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1303,17 +1275,5 @@ Nairobi Estates Face Evacuation Orders Nairobi's metropolitan area remains signi
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

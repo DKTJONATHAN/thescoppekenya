@@ -30,31 +30,6 @@ The visit to Nyahururu took a bizarre turn when the President referred to the lo
 ### The irony of official messaging
 Local critics argue that these frequent gaffes undermine the gravity of presidential speeches. When the leader of a nation cannot pinpoint a town’s location or correctly identify the people in his audience, the public begins to question the accuracy of broader government statistics. Even as entertainment news and celebrity narratives capture the attention of the media, the political arena remains fixated on the President's ongoing struggle with facts and simple vocabulary. These errors have left many residents questioning the administration's attention to detail, viewing the incidents as evidence of a leadership team that is out of touch with the reality on the ground.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -63,17 +38,5 @@ Local critics argue that these frequent gaffes undermine the gravity of presiden
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

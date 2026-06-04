@@ -14,7 +14,7 @@ focusKeyword: "Apple transitions iPhone to USB-C as European Union mandates"
 schema: "NewsArticle"
 ---
 
-Apple transitions iPhone to USB-C as European Union mandates is central to this update for Kenyan readers.
+Apple transitions iPhone to USB-C as European Union mandates is central to this update for Kenyan readers. Apple transitions iPhone to USB-C as European Union mandates is the central subject of the update.
 
 Apple transitions iPhone to USB-C as European Union mandates is central to this update for Kenyan readers.
 
@@ -1266,34 +1266,6 @@ Driving Consumer Convenience and Environmental Stewardship The EU's primary moti
 
 Unpacking USB-C's Potential and Pitfalls USB-C offers several technical advantages, including a reversible design, allowing cables to be inserted in either direction. It also supports faster charging times due to higher wattage and current delivery, with USB-C 2.1 capable of delivering up to 240W through Power Delivery. Data transfer speeds are also significantly enhanced, as USB-C can theoretically achieve speeds up to 80 gigabits per second, compared to Lightning's 480 megabits per second. However, the actual speeds can vary depending on the USB protocol implemented. For instance, while the iPhone 15 Pro models support USB 3.2 Gen 2 speeds of up to 10Gbps, the standard iPhone 15 and 15 Plus models remain capped at USB 2.0 speeds (480Mbps), similar to the older Lightning port. USB-C also facilitates direct connection to external displays, supporting video output over DisplayPort with the correct cable. Despite these benefits, the USB-C ecosystem presents challenges due to the multitude of standards and protocols it encompasses. Not all USB-C cables offer the same speeds for charging and data transfer, nor do they all support audio and video output or daisy-chaining. This complexity can lead to consumer confusion, as it is not always easy to discern a cable's capabilities visually. Tech-savvy users may look for USB-IF certification logos or Thunderbolt symbols to ensure compliance and functionality. Thunderbolt 4, an Intel technology, represents a comprehensive standard within the USB-C framework, guaranteeing 40Gbps data transfer, support for dual 4K displays, and up to 100W power delivery. However, Thunderbolt technology can be more costly for manufacturers. As USB-C becomes the universal norm, there is an ongoing need for clearer labeling and standardization to simplify the user experience across all devices. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1302,17 +1274,5 @@ Unpacking USB-C's Potential and Pitfalls USB-C offers several technical advantag
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

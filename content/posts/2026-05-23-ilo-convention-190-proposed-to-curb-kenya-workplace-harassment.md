@@ -44,17 +44,5 @@ Pay attention to who stands to gain from the consultancy contracts and the speci
 
 Instead of cheering for a new legal framework, we should demand the enforcement of the basic protections that already exist. If we cannot hold employers accountable under current laws, another convention is just another expensive piece of paper. The silence that follows this ratification will be deafening.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

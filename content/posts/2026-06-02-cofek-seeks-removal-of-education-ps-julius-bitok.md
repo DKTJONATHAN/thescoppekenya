@@ -40,17 +40,5 @@ Government spokespeople have remained largely silent on the petition, opting ins
 
 The Public Service Commission is expected to signal its next steps by the end of the week. Observers are watching to see whether the body dismisses the petition on technical grounds or allows the evidence to be debated in a public hearing, which would significantly raise the political stakes for the Ministry of Education.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

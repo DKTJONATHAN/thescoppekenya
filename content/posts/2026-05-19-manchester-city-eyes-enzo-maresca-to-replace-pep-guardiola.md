@@ -42,17 +42,5 @@ The defining question will be how the playing squad adapts to a post-Guardiola r
 
 If the new manager is unable to pivot away from his mentor’s specific teachings, the limitations of this continuity plan will be exposed. If the project falters, it will serve as a stark reminder that institutional consistency is not a functional replacement for genuine innovation. The coming years will ultimately reveal whether a tactical system can survive the departure of its original creator, or if the system itself is destined to decay once the architect is gone.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

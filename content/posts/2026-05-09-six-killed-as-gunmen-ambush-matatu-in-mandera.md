@@ -40,31 +40,6 @@ The recurring nature of these attacks suggests that the current security framewo
 
 Security agencies are expected to provide a detailed briefing on their revised operational plans for the Mandera-Arabia route within the coming week. The focus will remain on whether the government adopts the proposed specialized patrol protocols or continues with the current system of reactive escorts. Observers will also be monitoring the response from the regional administration regarding the potential suspension of transit services on high-risk roads until security guarantees are improved.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -73,17 +48,5 @@ Security agencies are expected to provide a detailed briefing on their revised o
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

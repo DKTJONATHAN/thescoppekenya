@@ -40,17 +40,5 @@ Monitor the throughput of the Uasin Gishu pilot project. If wait times for basic
 
 How can the public trust an initiative that prioritizes academic curriculum delivery over the fundamental mandate of efficient, expedited service for the common citizen?
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

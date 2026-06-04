@@ -44,31 +44,6 @@ Watch the upcoming transfer window closely. If the pattern of offloading talent 
 
 FSG will retain Slot right up until the financial projections for Champions League qualification fall below their safety threshold. At that precise moment, they will sack him to appease the base, all while continuing to refuse the 450 million GBP expenditure actually required to mount a serious challenge for the league title. The club is not in a transition; it is being managed into a state of permanent, profitable mediocrity.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -77,17 +52,5 @@ FSG will retain Slot right up until the financial projections for Champions Leag
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

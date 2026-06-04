@@ -26,34 +26,6 @@ Cricket Calamity: T20 World Cup Woes Right, just when you thought Indian sports 
 
 Re-tuning the Machine: What's Next for India? The management is trying to defend their middle-overs anchoring strategy, saying it's for tricky surfaces. But when that anchoring turns into stagnation, and the required run rate balloons while boundaries evaporate, you've got a problem. This time, the lower order couldn't pull off a rescue act. It's a philosophical as much as a technical recalibration needed here. Intent doesn't mean recklessness, but it certainly means putting the pressure back on the bowler. Tilak Varma's tasked with holding the innings, but his batting against spin has been, shall we say, modest. Sanju Samson, despite a few lean games, apparently detonated from ball one against Namibia. So, the big question for India now is: do they want insulation or ignition at number three? World Cups aren't won by avoiding defeats or retreating into a shell. This thrashing by South Africa might just be the jolt India needs to re-tune the machine before the stakes climb even higher. They're up against Zimbabwe next at Chepauk, so let's see if they can shake off the slumber, both on the football pitch and the cricket field. India's captain Suryakumar Yadav, however, believes his side can bounce back quickly and doesn't think they need to change too much. Now that's confidence, or perhaps a bit of stubbornness, eh? 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -62,17 +34,5 @@ Re-tuning the Machine: What's Next for India? The management is trying to defend
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

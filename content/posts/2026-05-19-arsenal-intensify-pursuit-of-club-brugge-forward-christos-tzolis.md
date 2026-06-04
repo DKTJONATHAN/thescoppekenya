@@ -32,17 +32,5 @@ Perhaps the most baffling aspect of Arsenal's intensified pursuit of Tzolis is h
 
 The market chatter around Tzolis is typical Premier League fare. Club Brugge are "determined to maximise the value" and "demand a fee that would surpass the current Belgian transfer record." With Man Utd and Chelsea also reportedly in the "battle," the price tag will undoubtedly escalate further. English clubs, with their deep pockets, are always prime targets for such manoeuvres. This isn't about fair valuation; it's about exploitation. Arsenal, needing to "balance the books" by offloading "unwanted players," seem poised to splash a significant sum on a player who is, at best, an unproven commodity at the highest level of English football. Such questionable financial decisions in the pursuit of marginal gains might well give minority shareholders pause for thought, much like the recent moves by those to [oust a board](https://zandani.co.ke/article/2026-05-11-minority-shareholders-move-to-oust-wpp-scangroup-board) over perceived mismanagement. The "financial power of the Premier League" guarantees a return to English football for Tzolis, but whether it guarantees value for Arsenal remains highly debatable.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

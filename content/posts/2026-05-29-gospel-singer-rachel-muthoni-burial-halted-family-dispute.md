@@ -38,17 +38,5 @@ The DCI investigation remains the only mechanism capable of providing a final, o
 
 Going forward, expect a shift in how fans interact with the gospel elite. The demand for transparency will likely increase as the public realizes that behind every anthem of faith lies a fragile, human life that requires more than just spiritual support. The idolization phase is over. We are moving into an era of scrutiny where the private behavior of our icons will be measured against their public ministries with much greater intensity. This tragedy is a catalyst for a necessary, albeit painful, revaluation of the gospel industry’s role in its members' lives. We are witnessing the end of the myth of the untouchable icon.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

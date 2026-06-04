@@ -49,17 +49,5 @@ As GitHub wraps up its internal investigation, the industry will likely pivot to
 
 However, the burden of safety rests primarily with the individual. Every tool that promises to boost productivity inherently increases the attack surface of a project. As the digital economy in Kenya continues to mature, developers must adopt a mindset of continuous verification. In an era where code is the foundation of economic growth, maintaining a high standard of scrutiny is the only way to ensure that our pursuit of efficiency does not invite disaster. The objective must remain clear: build fast, but secure the foundation first.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

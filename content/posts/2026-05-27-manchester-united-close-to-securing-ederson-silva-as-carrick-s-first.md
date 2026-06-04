@@ -36,17 +36,5 @@ Michael Carrick has earned his permanent role, guiding United to Champions Leagu
 
 The source text openly admits United's "overwhelming priority is to overhaul their midfield, with at least two arrivals to bolster this department expected to fill the void left by Casemiro (and Manuel Ugarte once he inevitably leaves)." Ederson is one. Where is the second? And the "inevitable" departure of Ugarte signals a recurring problem of squad planning. One incoming midfielder, however capable, will not "overhaul" a department described as needing at least two, especially when facing "a much tougher test next season" juggling "several competitions." It looks less like an overhaul and more like a desperate patch-up job, repeating past mistakes by acquiring players in isolation rather than as part of a coherent, long-term strategy. The perpetual state of needing to rebuild the squad, much like the [Kenyan YouTube content facing criticism over low quality and repetitive drama](https://zandani.co.ke/article/2026-05-11-kenyan-youtube-content-faces-criticism-over-low-quality-and-repetiti), suggests a systemic issue that one signing cannot solve.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

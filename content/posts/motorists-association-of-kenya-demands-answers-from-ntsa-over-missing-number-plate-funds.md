@@ -22,34 +22,6 @@ Economic Paralysis and the Impact of the Number Plate Crisis The far-reaching im
 
 Broader Calls for Accountability Amidst National Challenges NTSA has previously indicated that it sends SMS notifications to applicants once their plates are ready, and motorists can also check the NTSA Service Status Portal to track uncollected plates or driving licenses. However, the Motorists Association of Kenya remains dissatisfied with these partial solutions, asserting that they do not address the root cause of the crisis. "Public accountability is not optional. If money is collected for number plates, it must be used for number plates," MAK reiterated. This ongoing crisis underscores a broader pattern of public frustration with government agencies and their handling of critical services. Just as families have demanded justice and answers in other national matters, such as the alarming reports of Kenyans being [tricked into the Russia-Ukraine War](https://zandani.co.ke/article/kenyans-tricked-russia-ukraine-war-fight-die-scandal-justice), the public expects transparent and effective governance regarding the number plate debacle. The association is now vigorously pressing NTSA and the National Treasury to publicly account for the allocation of upfront plate fees and excise duty collections, and to explain why suppliers continue to remain unpaid while these vital collections persist. This issue highlights the urgent need for robust financial oversight and prompt action to restore confidence in public service delivery. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -58,17 +30,5 @@ Broader Calls for Accountability Amidst National Challenges NTSA has previously 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

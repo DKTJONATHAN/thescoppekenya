@@ -44,31 +44,6 @@ Some owners have taken to social media to share location-based warnings, though 
 
 Motorists should monitor for shifts in police patrols in identified hotspots like Parklands Road and the University of Nairobi perimeter. There is also anticipation regarding whether the government will enact tighter regulations on the sale of used vehicle components to clamp down on the liquidation of stolen goods. Expect further developments as authorities attempt to trace the flow of stolen parts from the street-level thieves back to the primary distributors in the spare parts hubs. Owners should anticipate more complex, costly anti-theft installations as the only reliable safeguard against these organized 60-second strikes.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -77,17 +52,5 @@ Motorists should monitor for shifts in police patrols in identified hotspots lik
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

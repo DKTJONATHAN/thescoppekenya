@@ -1,18 +1,20 @@
 ---
 title: "Kenya Clears All Ebola Alerts Amidst Ongoing Border Surveillance"
 slug: "kenya-clears-all-ebola-alerts-amidst-ongoing-border-surveillance"
-description: "Kenya has reported zero positive Ebola cases across nine counties following nationwide surveillance and screening of over 34,000 travelers at points of entry."
+description: "Kenya Clears All Ebola Alerts Amidst Ongoing Border Surveillance: Kenya has reported zero positive Ebola cases across nine counties following nationwide"
+excerpt: "Modernizing Epidemiological Defense: Kenya’s Digital Health Pivot The Ministry of Health has successfully resolved 22 Ebola alerts across ni"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/dsjGG4kt/c178e47eeda7.webp"
 category: "Technology"
 tags: ["kenya health", "ebola update", "public health", "ministry of health", "disease surveillance"]
+canonical: "https://zandani.co.ke/article/kenya-clears-all-ebola-alerts-amidst-ongoing-border-surveillance"
 date: "2026-06-04T14:12:01Z"
 dateModified: "2026-06-04T14:12:01Z"
+focusKeyword: "Kenya Clears All Ebola Alerts Amidst Ongoing Border Surveillance"
 schema: "NewsArticle"
 ---
 
-## Modernizing Epidemiological Defense: Kenya’s Digital Health Pivot
+## Modernizing Epidemiological Defense: Kenya’s Digital Health Pivot Kenya Clears All Ebola Alerts Amidst Ongoing Border Surveillance is the central subject of the update.
 
 The Ministry of Health has successfully resolved 22 Ebola alerts across nine counties, an outcome that highlights the operational success of the nation's contemporary digital surveillance framework. While these technical milestones suggest a robust future for disease prevention, the trajectory of health security is currently obstructed by a complex legal debate concerning the hosting of international medical infrastructure.
 

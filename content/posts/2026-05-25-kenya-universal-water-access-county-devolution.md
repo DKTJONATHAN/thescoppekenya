@@ -46,17 +46,5 @@ The implementation of the 2024 Act will fundamentally change the relationship be
 
 The negotiations between the Council of Governors and national regulators like WASREB will be critical. These discussions will determine if counties retain control over their resources or if they will function primarily as intermediaries for private developers. The initial rollout of smart metering in urban centers will serve as the first real test of whether this commercialized model can actually deliver on its promises.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

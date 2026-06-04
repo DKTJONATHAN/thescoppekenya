@@ -30,17 +30,5 @@ There is growing concern that the integrity of state security is being compromis
 ### The Cost of Amateurism
 The appearance of inexperienced personnel in sensitive security roles has prompted significant criticism. Observers are questioning why the administration would replace seasoned tactical experts with individuals who appear more accustomed to political campaign environments than the rigorous discipline required for high-stakes protection. Much like professional sports management excludes players who lack the necessary fitness for elite competition, the public is demanding a return to merit-based hiring. If the administration continues to value personal comfort over the proven expertise of professional soldiers, the protective detail risks losing the public confidence required of a national security force.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

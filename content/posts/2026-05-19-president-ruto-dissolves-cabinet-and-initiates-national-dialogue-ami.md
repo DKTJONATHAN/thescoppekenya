@@ -30,17 +30,5 @@ The proposed multi-sectoral dialogue is being framed by the government as an opp
 ### Transitioning from Hostility
 This newfound emphasis on discussion marks a significant departure from the administration’s earlier behavior. The government previously gained notoriety for a heavy-handed approach toward dissent, which often resulted in direct friction with the press and civil society. Now, the state appears to be trading the use of force for a seat at the negotiating table. Whether this transition toward mediation represents a genuine overhaul of government operations or a temporary measure to survive a period of intense instability remains the central question for citizens waiting to see if these concessions will yield concrete policy changes.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

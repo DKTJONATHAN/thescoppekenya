@@ -24,34 +24,6 @@ KeNHA Allays Fears: A Call for Verification in the Digital Age In its official s
 
 Anticipating the Greenpark Underpass Opening The Greenpark Pedestrian Underpass, a significant Ksh2 billion project funded through the Road Maintenance Levy Fund, is a key component of the government's broader strategy to enhance urban transport infrastructure and pedestrian safety in the capital. KeNHA recently indicated that the underpass project is approximately 97 to 99 percent complete. The Authority anticipates the official opening of the underpass for public use in June 2026. This state-of-the-art facility will feature modern amenities such as CCTV cameras, seven elevators for persons with disabilities, adequate lighting, public washrooms, and vendor stalls, alongside a dedicated aeration system for user comfort and round-the-clock security monitoring. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ Anticipating the Greenpark Underpass Opening The Greenpark Pedestrian Underpass,
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

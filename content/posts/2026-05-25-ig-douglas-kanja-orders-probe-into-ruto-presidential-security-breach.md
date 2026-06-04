@@ -44,17 +44,5 @@ The Ganze incident is a wake-up call for the entire security sector. It highligh
 ### What to watch next
 Expect a sweeping rotation of personnel within the Presidential Protection Unit over the coming weeks. The Inspector General is likely to introduce new, technology-led surveillance protocols for public events, aiming to reduce the reliance on human intuition alone. The next major public rally in the coastal region will serve as the true test for these revised safety measures.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

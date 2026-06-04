@@ -42,17 +42,5 @@ The management’s reliance on foreign investment assumes that the global aviati
 
 The cycle of injection and dilution suggests that the structural issues within the airline are deeply embedded, often resistant to the promise of new capital. Whether this plan ultimately provides a foundation for growth or acts as another temporary reprieve depends on whether the private capital can finally break the dependency on government intervention. The money usually serves the debts of yesterday rather than the planes of tomorrow.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

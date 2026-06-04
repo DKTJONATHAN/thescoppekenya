@@ -49,17 +49,5 @@ Expect increased pressure on the Ministry of Interior to release a granular repo
 
 Accountability is not found in a social media post or a sympathy message after a funeral. It is found in the ledgers, and right now, those ledgers show that Kenya is budgeting for everything except the safety of its children.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

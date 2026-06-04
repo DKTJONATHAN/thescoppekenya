@@ -40,17 +40,5 @@ The ongoing negotiation between fact and narrative, particularly in high-stakes 
 
 The future of political legacy-building will increasingly hinge on spectacular, viral moments, amplified by social media and audacious, often revisionist, rhetoric designed to instantly engrave temporary events into the public consciousness as permanent fixtures of history.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

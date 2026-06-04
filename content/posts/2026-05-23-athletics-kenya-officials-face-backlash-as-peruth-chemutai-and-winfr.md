@@ -28,17 +28,5 @@ Public frustration has intensified over the widening disparity between the modes
 ### Mismanagement at the Helm
 The ongoing failure to invest in high-quality training infrastructure and consistent support systems remains a point of contention. Critics contend that Athletics Kenya is burdened by a bloated administrative structure that siphons resources away from those who actually represent the country on the track. By treating athletes as disposable commodities rather than investing in their long-term health and financial stability, the federation is accused of failing to uphold its core mandate. The consensus among many observers is that until the focus shifts from the comfort of administrative officials to the needs of the competitors, the decline of Kenya’s dominance in athletics will continue to accelerate as more talent defects to nations with better support structures.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

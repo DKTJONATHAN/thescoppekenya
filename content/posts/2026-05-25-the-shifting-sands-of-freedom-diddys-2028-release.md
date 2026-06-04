@@ -41,17 +41,5 @@ The common man, caught in the unforgiving machinery of justice, rarely finds his
 
 Oscar Wilde emerged from his imprisonment a broken man, his genius muted, his spirit crushed, his remaining years a testament to a society that had devoured its own. He wandered in exile, his name a whisper, his legacy scarred. His freedom, when it finally came, was merely the absence of bars, not the return of his former self. For the modern maestro, however, the countdown to April 2028 continues, a shifting horizon promising not merely release, but perhaps, a carefully choreographed re-entry, a new act in a constantly revised script, where even the prison walls seem to bend to the will of enduring influence. He might exit a few weeks earlier, but the shadow of public reckoning, like an unwritten play, remains to be seen.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

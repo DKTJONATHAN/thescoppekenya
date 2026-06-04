@@ -22,34 +22,6 @@ The Performative Nature of Public Mourning While the mainstream media predictabl
 
 When Grief Becomes Content The emotional weight of such a tragedy is immense, and personal grief is valid. However, the immediate transition of such private moments into viral fodder speaks volumes about our collective digital habits. It’s a stark reminder that in our hyper-connected world, even the most profound personal sorrow can be, and often is, curated and consumed as entertainment. This phenomenon isn't new; we've seen similar patterns emerge with other public tragedies, where the anguish of individuals becomes a shared, albeit often superficial, experience online. Remember the online discussions surrounding the TikTokers planning an emotional visit after Khalif Kairo's mother's lonely burial? It echoes the same sentiment of public engagement with private pain. For Guru Buvati, the lens that once captured the triumphs of Johana Ng'eno was, on that Thursday, focused on a wooden casket. His tears, real as they may be, have now become a symbol, an emblem of "deep personal loss" felt by many. But let’s be cynical for a moment: how much of this "deep personal loss" is genuinely felt, and how much is merely a performative echo in the digital echo chamber, designed to evoke a fleeting emotional response before scrolling to the next drama? The answer, as always, is far more complex than a viral image can convey. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -58,17 +30,5 @@ When Grief Becomes Content The emotional weight of such a tragedy is immense, an
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

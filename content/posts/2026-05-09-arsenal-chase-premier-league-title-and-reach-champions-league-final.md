@@ -42,31 +42,6 @@ The coming weeks will be unforgiving. Arsenal faces three league games that will
 
 Meanwhile, the relegation picture remains equally volatile. With West Ham fighting to climb out of the bottom three, every fixture involving them will carry a frantic, desperate energy that could inadvertently aid or hinder the title chasers. The league is tight, the air is thin, and for Arsenal, the only option is to keep moving forward. History does not care about how you feel in May; it only cares about the trophy count when the final whistle blows on the last day of the month.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -75,17 +50,5 @@ Meanwhile, the relegation picture remains equally volatile. With West Ham fighti
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

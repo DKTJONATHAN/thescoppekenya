@@ -42,17 +42,5 @@ The upcoming match on May 24 serves as a crucial litmus test for the team's tact
 
 The ambition for the next phase of this project should not be to increase the captain's assist tally, but rather to build a system that functions with efficiency when the captain is not the sole orchestrator. Individual brilliance can sustain a season, but tactical balance is the only reliable path to winning trophies. Moving away from this narrow reliance is not just a tactical adjustment; it is a necessity for a club with championship aspirations.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -42,31 +42,6 @@ This investment is occurring at a time when the government is eager to see the d
 
 Keep an eye on how the company handles the inevitable push for collective bargaining among its riders. If the government decides to enforce stricter labor standards under its current economic agenda, the model of independent contracting may be tested. Additionally, monitor whether the projected growth in the number of merchants leads to a reduction in service costs or if the company begins to increase commissions to recoup its massive investment.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -75,17 +50,5 @@ Keep an eye on how the company handles the inevitable push for collective bargai
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

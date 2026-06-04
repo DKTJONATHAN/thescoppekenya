@@ -15,7 +15,7 @@ focusKeyword: "IEBC schedules by-elections for three vacant seats"
 schema: "NewsArticle"
 ---
 
-IEBC schedules by-elections for three vacant seats is central to this update for Kenyan readers.
+IEBC schedules by-elections for three vacant seats is central to this update for Kenyan readers. IEBC schedules by-elections for three vacant seats is the central subject of the update.
 
 IEBC schedules by-elections for three vacant seats is central to this update for Kenyan readers.
 
@@ -1269,34 +1269,6 @@ Candidate Submission and Nomination Political parties wishing to participate mus
 
 Campaign Regulations and Voter Register Campaigns for the by-elections are slated to run from Wednesday, April 15, to Monday, May 11, strictly between 7am and 6pm. This period will see candidates engaging directly with constituents, a form of active public participation essential for representative governance, much like the broader community engagement championed by initiatives like 'Get Out Get Active'. To ensure an orderly electoral process, the registration and revision of the voter register in the affected areas will be suspended until June 12, 2026. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1305,17 +1277,5 @@ Campaign Regulations and Voter Register Campaigns for the by-elections are slate
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

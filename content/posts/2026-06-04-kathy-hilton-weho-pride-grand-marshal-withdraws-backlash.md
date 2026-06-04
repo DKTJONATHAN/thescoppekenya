@@ -42,17 +42,5 @@ For public figures here in Kenya, this entire episode offers a critical lesson. 
 
 The decision by WeHo Pride not to designate another Grand Marshal Icon for 2026 signals a period of reflection for the event organizers. It's a clear message that the focus will be squarely on the community and the celebration itself, rather than a celebrity figurehead. Celebrity culture commentators suggest this trend of heightened scrutiny will only continue, pushing public figures to be more authentic and transparent if they wish to champion social movements. The days of simply showing up for a photo op might be coming to an end. This outcome underscores that while star power can draw attention, integrity and community trust are irreplaceable. The mood is one of cautious victory for advocates, a powerful reminder that the fight for authentic representation is ongoing.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

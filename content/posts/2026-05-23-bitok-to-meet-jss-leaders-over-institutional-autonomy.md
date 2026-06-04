@@ -46,17 +46,5 @@ The transition to the CBC model was marketed as a foundational shift in how stud
 
 The outcome of the Naivasha meeting will dictate the future of JSS administrative governance. Observers are awaiting a formal statement on whether the Ministry will approve a phased transition to independent budgeting for JSS units or suggest a reformed oversight model that keeps them tethered to primary schools. Failure to provide a clear path forward will likely lead to escalated industrial action by teacher associations currently demanding systemic relief.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

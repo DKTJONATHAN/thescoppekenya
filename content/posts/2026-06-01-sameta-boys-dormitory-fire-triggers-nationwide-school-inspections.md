@@ -38,17 +38,5 @@ The history of educational policy in the country shows a recurring trend where m
 
 Moreover, a system of cameras is only as effective as the personnel monitoring them. In many cases, these surveillance feeds end up unmonitored, rendering the initial investment futile. A focus on hardware ignores the deeper, systemic issues of building safety, electrical certification, and fire-hazard compliance. By prioritizing the appearance of safety through CCTV, the administration risks sidelining the more expensive but necessary work of upgrading the actual structures where students sleep. The state continues to buy expensive digital window dressing while the foundations remain as brittle as ever.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

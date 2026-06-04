@@ -40,31 +40,6 @@ The dispute at WPP Scangroup stands as a notable instance of direct shareholder 
 
 All eyes are now on the board’s formal response to the requisition. The company is legally obligated to convene an Extraordinary General Meeting within a specified timeframe. If the board fails to act, the law allows the requisitioning shareholders to initiate the meeting process independently. Investors should look for upcoming regulatory filings with the Capital Markets Authority for updates on the meeting date and the formal agenda. The ensuing vote will be the decisive factor in the firm's future governance, serving as a bellwether for the level of institutional appetite for activist pressure. As this situation unfolds, the market remains on high alert, watching to see if this trend of accountability will permeate other sectors, including the fast-evolving digital and creative industries.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -73,17 +48,5 @@ All eyes are now on the board’s formal response to the requisition. The compan
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

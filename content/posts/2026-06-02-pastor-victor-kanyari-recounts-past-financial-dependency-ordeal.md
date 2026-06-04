@@ -40,17 +40,5 @@ As the Salvation Healing Ministry expands its footprint, Kanyari continues to ti
 
 The strategy of centering his ministry around his own survival allows the pastor to create a narrative that is difficult for detractors to challenge directly. By framing his authority through the lens of lived experience, he seeks to solidify his standing within the church hierarchy. While the long-term impact of this messaging on the financial habits of his followers remains to be seen, it is clear that Kanyari intends to utilize his personal history as a core element of his ongoing outreach. He continues to lean into these revelations, ensuring that his past struggles remain at the forefront of his congregants' perception of his leadership. Whether this approach shifts the behavior of his audience or simply intensifies the existing devotion of his base, it marks a shift in how the ministry approaches the intersection of personal finance and spiritual guidance.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

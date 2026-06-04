@@ -48,31 +48,6 @@ Observe the retail sector over the next quarter. If the cost of basic commoditie
 
 A nation that confuses lower fuel taxes with prosperity is a nation that refuses to look at its own receipts. True economic relief will not be found in a government press release; it will be found when the price of a bus ticket finally follows the price of oil down the slope.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -81,17 +56,5 @@ A nation that confuses lower fuel taxes with prosperity is a nation that refuses
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

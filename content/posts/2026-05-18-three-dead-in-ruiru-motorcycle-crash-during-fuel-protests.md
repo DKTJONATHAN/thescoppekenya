@@ -40,17 +40,5 @@ The safety risks inherent in unauthorized roadblocks have now surpassed the symb
 
 The onus is now on the Ministry of Transport and the Inspector General of Police to develop and enforce emergency protocols for protest-related traffic. There is mounting pressure on civil society organizations to negotiate pre-approved assembly points that do not paralyze critical infrastructure. Moving forward, the public will be watching to see if future demonstrations prioritize police-secured routes. Such measures are essential to prevent the sort of disorganized roadblocks that led to the catastrophe in Kimbo. The coming days will be a definitive test of the government's ability to protect the constitutional right to dissent without permitting the streets to become graveyards. The current approach is unsustainable, and the next steps taken by leadership will determine whether these transit corridors remain functional lifelines or become sites of recurring tragedy.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -32,17 +32,5 @@ This case raises fundamental questions about the responsibility of public figure
 ### The Consequences of Online Influence
 The situation serves as a stark reminder that digital influence carries weight and legal ramifications. When an individual spends years cultivating an online identity to exert control over public conversations, they cannot simply opt out of their own history when the law intervenes. The audacity of the current defense reflects a disregard for the audience that has followed these posts for years. As the proceedings continue, the court must weigh the evidence of long-term digital activity against the claims of a defendant who now insists he has no connection to the platform that made him famous.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

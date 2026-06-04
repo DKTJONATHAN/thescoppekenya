@@ -42,17 +42,5 @@ The divergence between the transport sector’s dependence on fuel subsidies and
 
 As the transport truce faces its first real tests in the coming days, the long term economic trajectory will continue to be shaped within the boardrooms of Nairobi’s financial district. Market analysts should look closely at the mid year financial reports from other Tier 1 banks to determine if they will emulate the strategy adopted by Equity Group. The core question is whether these institutions will continue to prioritize the accumulation of foreign assets as a way to circumvent the uncertainties surrounding domestic policy. As discussions regarding the Finance Bill 2026 approach, the movement of capital into the broader East African Community will likely intensify. For these financial institutions, the flight to regional stability has become the new benchmark for operational success.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

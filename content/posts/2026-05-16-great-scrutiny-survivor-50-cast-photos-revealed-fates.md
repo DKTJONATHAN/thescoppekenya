@@ -45,17 +45,5 @@ The Committee of Public Safety, in its final, ironic twist, turned on its own ar
 
 And so, the grand spectacle continues, whether in the blood-soaked squares of a revolution or on the sun-drenched beaches of a remote island. The human drama of power, betrayal, and the relentless pursuit of survival, shaped by the will of the many, plays on. The blade may be metaphorical, but the severance, for those who fall, feels just as final.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

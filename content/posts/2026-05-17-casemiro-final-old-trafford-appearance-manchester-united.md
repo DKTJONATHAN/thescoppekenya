@@ -44,17 +44,5 @@ The narrative surrounding Casemiro is a reminder that professional survival is a
 
 Pay close attention to the Brazilian’s positioning during the opening twenty minutes against Nottingham Forest. If he maintains the poise he displayed throughout the latter half of the season, look for him to act as the primary conduit for every transition, anchoring the space between the defensive line and the attack. When the final whistle blows, his exit will signal the start of a new, post-Manchester phase of a remarkable career.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

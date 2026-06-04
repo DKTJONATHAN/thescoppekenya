@@ -52,31 +52,6 @@ The transition into law requires a period of public participation. The Kenya Sch
 
 The deadline for submitting written feedback to the Treasury is May 29, 2026. While the government focuses on these digital policy shifts, remember that regulatory adjustments are occurring across various sectors. For instance, authorities are also tightening rules regarding school vehicle safety, specifically concerning the NTSA crackdown on drug use by drivers. You should monitor the official Treasury website for the final gazetted list of fees, as the figures provided in the draft may be modified based on the feedback received during the late May consultations.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -85,17 +60,5 @@ The deadline for submitting written feedback to the Treasury is May 29, 2026. Wh
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -44,17 +44,5 @@ Keep a close eye on the 2026 budget allocations. Watch if the funding for "innov
 
 Diplomatic hand-wringing at the UN is not a development strategy. Until our policy makers accept that a digital economy is built by empowering the 35 per cent currently left in the dark rather than constructing prestige zones for international investors, we will remain mere consumers of a future designed by others. Digital sovereignty is not granted by international consensus; it is earned through national inclusion.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

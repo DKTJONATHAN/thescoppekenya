@@ -40,17 +40,5 @@ The AfCFTA is marketed as a boon for the common citizen, but the restructuring o
 
 Moving forward, stakeholders must watch for tangible retail adjustments. If the migration of supply chains to lower-cost markets like Tunisia and Egypt does not eventually translate to lower prices for the buyer, the AfCFTA risks being viewed as a mechanism for corporate profit optimization rather than broad-based economic development. If the proposed distribution hubs in places like Lusaka fail to meaningfully reduce the 30-day transit bottleneck, we should expect manufacturing firms to abandon local operations in favor of further consolidation in more stable jurisdictions. The question remains: who actually profits from regional trade if the consumer is left with the same stagnant price tag?
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

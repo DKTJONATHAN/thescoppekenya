@@ -42,17 +42,5 @@ As the implementation of the pact begins, the focus must shift to the operationa
 
 Public discourse is shifting away from the glamour of international summits toward the grittier realities of administrative sovereignty. We are witnessing a cycle that began in 1964, and the lessons we failed to learn then are now demanding our full attention. History rarely repeats itself without keeping the receipts.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

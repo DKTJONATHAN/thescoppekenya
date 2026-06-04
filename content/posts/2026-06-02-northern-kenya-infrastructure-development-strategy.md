@@ -34,17 +34,5 @@ This shift is not without its frictions. Moving from a security-centric economy 
 
 Ultimately, the future of the region depends on whether these new roads and stadiums act as genuine conduits for commerce or merely as static monuments to a temporary political interest. The Horn of Africa Gateway project must survive the inevitable turnover of administrations if it is to succeed in permanently dismantling the 1965 blueprint. For the moment, the region is finally being treated as a participant in the broader national project. History reminds us that infrastructure remains the most enduring form of political promise. If the state maintains this trajectory, the desert may soon cease to be a barrier and instead become a gateway.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -44,17 +44,5 @@ The sustainability of this growth depends on whether the sport can diversify its
 
 Trend Forecast: Within the next 18 months, professional boxing in Kenya is poised to become a top-three commercial sport by volume of betting turnover. This rapid expansion will likely necessitate a comprehensive regulatory overhaul regarding the management, licensing, and compensation of combat athletes to ensure the industry’s long-term stability.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

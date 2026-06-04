@@ -46,17 +46,5 @@ Moving forward, focus should be placed on the Ministry of Interior's commitment 
 
 To prevent further instability, the government must formally suspend all construction activity until a transparent, inclusive, and technologically integrated mapping process is finalized in partnership with the communities of Marsabit and Wajir. Only through this level of cooperation can the state hope to restore trust and achieve a lasting resolution.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -37,31 +37,6 @@ Then came the moment. Viola Davis, a woman whose every gesture commands attentio
 
 The applause, a sustained ovation that followed Jordan’s emotional journey to the stage, was not merely for his talent, but for the thrill of the unexpected, the jolt that reminds us no outcome is truly guaranteed. The spectacle underscored a profound truth: even in realms far removed from the Tudor court, where the stakes are reputation and accolade rather than life and limb, the currents of fortune remain treacherous. The supposed frontrunner, like a favoured courtier, can find his carefully constructed triumph swept away in a single, electrifying moment. The mechanisms of power, whether royal decree or industry prediction, can turn on a whim, leaving the mighty astonished and the unexpected elevated. Such is the enduring, tragic irony of anticipation, a lesson whispered from the scaffold of 1540 to the shocked silence of a modern stage, where even a momentary triumph holds a quiet, devastating fragility.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -70,17 +45,5 @@ The applause, a sustained ovation that followed Jordan’s emotional journey to 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

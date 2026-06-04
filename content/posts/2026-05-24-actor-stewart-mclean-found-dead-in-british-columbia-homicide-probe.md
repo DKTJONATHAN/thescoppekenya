@@ -40,17 +40,5 @@ The tragedy of Stewart McLean serves as a sobering reminder of the human cost as
 
 Protecting those within the industry means recognizing that a career built on mobility comes with a distinct set of vulnerabilities. As the investigation moves forward, the focus remains on finding answers for what happened to McLean. However, the ripple effect of this loss suggests that those within the industry are beginning to look more closely at the support systems-or lack thereof-that exist for actors working away from home. Ensuring that someone is there to notice when a friend or colleague goes quiet is a small but vital part of fostering a more secure environment for artists everywhere. The industry may continue to seek out the next great performance, but for now, the conversation is centered on the person who is no longer here to give it.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

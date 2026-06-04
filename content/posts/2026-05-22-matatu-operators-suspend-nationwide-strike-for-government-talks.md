@@ -40,17 +40,5 @@ The economy runs on the back of the public transport sector. If matatu operators
 ### What to watch next
 Watch the fuel levy adjustments on May 26. If the government refuses to move past the ten-shilling offer, the operators have signaled they will not hesitate to ground their fleets permanently. The gap between the ten-shilling offer and the forty-six-shilling demand is the only number that dictates the future of Kenyan mobility. If that math does not change, the strike is simply waiting for a restart button.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

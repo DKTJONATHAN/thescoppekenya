@@ -40,31 +40,6 @@ The current frustration reflects a clash between long-term strategic rebuilding 
 
 The upcoming midweek fixtures will be a test of character for both the players and the management. Should results continue to fluctuate, expect the internal pressure on the dressing room to reach a boiling point. The spotlight will remain fixed on how Slot manages his substitutions and whether he can prove that his reliance on youth is a calculated development plan rather than a sign of a thinning, disjointed squad.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -73,17 +48,5 @@ The upcoming midweek fixtures will be a test of character for both the players a
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

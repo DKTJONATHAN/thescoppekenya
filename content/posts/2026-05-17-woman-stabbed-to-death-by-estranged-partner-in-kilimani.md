@@ -46,17 +46,5 @@ The Kilimani incident serves as a chilling reminder that the current mechanisms 
 
 The community expects a swift arraignment of the suspect in the coming days. The central focus will shift toward the prosecution's handling of the evidence and whether the previous history of reported harassment will be formally entered into the court record to establish a pattern of premeditation. Additionally, observers will be watching to see if local police command in Kilimani faces internal inquiry regarding how previous complaints from the deceased were handled. Monitoring the specific charges laid against the suspect will provide a clear indication of whether the state intends to acknowledge the broader failure of protection protocols in this case.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

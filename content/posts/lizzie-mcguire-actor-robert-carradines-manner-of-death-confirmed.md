@@ -24,34 +24,6 @@ Robert Carradine's Battle with Bipolar Disorder The struggle with mental health,
 
 Tributes Pour In for the Beloved Lizzie McGuire Actor The confirmation of Robert Carradine's passing has prompted an outpouring of tributes from his former costars, reflecting the deep impact he had on those he worked with. Hilary Duff, who played his daughter on the iconic Disney Channel series "Lizzie McGuire," expressed her profound sadness on Instagram. "This one hurts. It's really hard to face this reality about an old friend," Duff wrote. "There was so much warmth in the McGuire family, and I always felt so cared for by my onscreen parents. I'll be forever grateful for that. I'm deeply sad to learn Bobby was suffering. My heart aches for him, his family, and everyone who loved him." Jamie Lee Curtis, who dated Carradine early in her career, also shared a lengthy and poignant tribute on Facebook, mourning her "first love." She recalled their charming "meet-cute" on "The Dinah Shore Show," where Carradine rearranged seating to be next to her and kissed her live on television. Curtis concluded her heartfelt message, saying, "Rest in speed and humor and love, Bobby." If you or someone you know is considering suicide, please reach out for help. Resources like the National Suicide Prevention Lifeline at 800-273-TALK (8255) or Crisis Text Line at 741741 are available for support. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ Tributes Pour In for the Beloved Lizzie McGuire Actor The confirmation of Robert
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

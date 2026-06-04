@@ -38,17 +38,5 @@ We are currently navigating a transition that risks masking the failures of serv
 
 To determine if this initiative will provide actual protection, we must look past the 30 million registered beneficiaries. Instead, the real measure of success will be the stabilization of supply chains in secondary and primary facilities. If the arrival of the new authority does not translate into consistent access to life-saving drugs and basic equipment, it will be clear that the system has favored institutional growth over patient welfare. We must shift the national conversation away from the convenience of bureaucratic reshuffling and toward the urgent necessity of clinical availability. The health of a nation is not measured by its insurance architecture, but by the number of patients who leave their local clinics with a complete, effective course of treatment in hand.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

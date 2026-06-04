@@ -42,17 +42,5 @@ The urgency of this transition is underscored by national ambitions to scale dis
 
 The focus must shift away from the headline-grabbing metrics of new generation capacity toward the unglamorous, capital-intensive labor of upgrading substations and transmission lines. Observers should monitor the integration of large-scale battery storage projects, which will function as essential pressure valves for the grid. These technologies represent the only viable method for buffering the inherent intermittency of our current renewable mix. History provides a stark warning: when infrastructure lags behind ambition, the system eventually buckles under its own weight. We must modernize the grid today, or we are destined to relive the shortages of yesterday.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

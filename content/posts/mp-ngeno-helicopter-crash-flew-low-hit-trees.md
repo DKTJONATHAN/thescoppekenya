@@ -26,34 +26,6 @@ The Human Cost Beyond the MP Ng'eno Helicopter Crash While the nation mourns MP 
 
 Scrutiny Beyond the Initial Findings on the MP Ng'eno Helicopter Crash The immediate aftermath has seen a swift response from government agencies, with various officials offering condolences and assurances of a thorough probe. The focus must now remain on the integrity of the impending preliminary report and the subsequent full investigation. The public, and indeed Za Ndani, will be watching closely to ascertain whether the findings genuinely address the systemic issues that could lead to an experienced pilot flying low in adverse conditions, or if the report will merely serve as a convenient closure to a politically inconvenient tragedy. True accountability demands more than just identifying proximate causes; it requires a candid examination of the systemic pressures, regulatory gaps, and operational practices that create the conditions for such disasters. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -62,17 +34,5 @@ Scrutiny Beyond the Initial Findings on the MP Ng'eno Helicopter Crash The immed
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

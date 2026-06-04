@@ -26,34 +26,6 @@ Beyond the Headlines: The Human Cost of Celebrity Death These losses remind us t
 
 Remembering Their Legacies Amidst the Death News As the entertainment world mourns these significant losses, the collective memory of their contributions and the impact they had on their audiences remains. Each celebrity death leaves a void, but their legacies in film, music, sports, and advocacy will undoubtedly continue to inspire and resonate for generations to come. Fans and colleagues alike are sharing heartfelt tributes, ensuring that the light these stars brought into the world will not fade. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -62,17 +34,5 @@ Remembering Their Legacies Amidst the Death News As the entertainment world mour
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

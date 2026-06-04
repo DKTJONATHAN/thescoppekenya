@@ -40,31 +40,6 @@ Alexx Ekubo was a defining figure for a generation of Nollywood viewers, and his
 
 Looking ahead, the focus for the Nollywood community will likely turn toward honoring his legacy while addressing systemic gaps in support. As his family makes funeral arrangements, there will likely be increased advocacy for better health awareness and routine medical screenings within the creative arts. The hope is that the memory of his remarkable talent will serve as the catalyst for a more open and supportive culture, one that recognizes the courage it takes to acknowledge our vulnerabilities. True strength is found not in perfection, but in the honesty we show ourselves and others when life becomes difficult.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -73,17 +48,5 @@ Looking ahead, the focus for the Nollywood community will likely turn toward hon
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

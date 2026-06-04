@@ -35,31 +35,6 @@ The controversy highlights a shift in focus from substantive governance to perfo
 
 The accusations leveled against Sifuna appear to be a performative exercise designed to satisfy a base that demands constant confrontation. Political leaders remain aware that inter-party cooperation is a functional necessity for the machinery of government, yet they continue to benefit from the facade of an ongoing, irreconcilable conflict. By condemning the Senator for his pragmatism while ignoring their own previous acceptance of cross-aisle cooperation, critics are maintaining a narrative that prioritizes tribal loyalty over logical consistency. The focus on these minor political interactions serves to distract from the reality that effective governance requires exactly the type of engagement currently being criticized.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -68,17 +43,5 @@ The accusations leveled against Sifuna appear to be a performative exercise desi
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

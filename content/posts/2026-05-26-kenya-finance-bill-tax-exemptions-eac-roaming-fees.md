@@ -36,17 +36,5 @@ For Kenyan investors, the Finance Bill's protective measures offer clarity on go
 
 Za Ndani will continue to monitor the progress of the Finance Bill 2026 through parliamentary stages and the outcomes of the EAC roaming fee negotiations, with further updates anticipated ahead of the next quarterly economic review.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

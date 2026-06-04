@@ -44,17 +44,5 @@ As more influencers shift their focus toward speculative markets, the line betwe
 
 The next phase of this trend will likely involve increased scrutiny from those who view the proliferation of unregulated trading advice as a systemic threat to the savings of vulnerable youth. The influencer-as-trader archetype will eventually face a correction. Once the novelty of quick-gain success meets the cold reality of market cyclicality, the market will demand more transparent financial reporting within the creator economy. Creators who fail to adapt to this shift will find that while they can influence an audience, they cannot control the market.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

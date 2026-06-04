@@ -15,7 +15,7 @@ focusKeyword: "KUCCPS updates portal with new degree cut-off points"
 schema: "NewsArticle"
 ---
 
-KUCCPS updates portal with new degree cut-off points is central to this update for Kenyan readers.
+KUCCPS updates portal with new degree cut-off points is central to this update for Kenyan readers. KUCCPS updates portal with new degree cut-off points is the central subject of the update.
 
 KUCCPS updates portal with new degree cut-off points is central to this update for Kenyan readers.
 
@@ -1269,30 +1269,6 @@ Variable Cut-Off Points Across Institutions The updated portal confirms that cut
 
 Accessing the Application Portal Prospective applicants can access the complete list of updated degree programmes, including minimum entry requirements, institution types, programme codes, and specific cut-off points, via the official application portal at Kuccps.net. To log in, candidates must use their KCSE index number, select their KCSE year, and enter their KCPE index number as the password. After logging in, users should navigate to 'All programmes' and can filter the list to efficiently locate their preferred courses. The application window is anticipated to open soon, and candidates are advised to meticulously review all requirements before submitting their choices to prevent placement challenges. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1301,17 +1277,5 @@ Accessing the Application Portal Prospective applicants can access the complete 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

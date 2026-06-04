@@ -32,17 +32,5 @@ The acquisition of Piero Hincapie for £45 million is being presented as Arsenal
 
 The real story, though, lies in the shadows of the celebration: up to eight players facing the exit door. This isn't some minor trimming; names like Ben White, Gabriel Jesus, Gabriel Martinelli, and Leandro Trossard are hardly peripheral figures. These are players who contributed to a title-winning campaign, yet their futures are now being actively speculated upon to "balance the books." Even Kai Havertz and Martin Odegaard are now in the final two years of their contracts, a classic club move to force a new deal or generate a transfer fee. The immediate shift from trophy celebrations to a transfer list reveals the stark, unsentimental business of elite football. Cristhian Mosquera, a potential target for Atletico Madrid, represents pure profit for a club needing to justify its colossal spending. This isn't building on success; it's a brutal financial recalibration.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -40,31 +40,6 @@ Addressing this crisis requires more than reactive policing. While the threat re
 
 Beyond increased visibility, there is a clear need for established legal frameworks that define how bystanders should act in ambiguous situations. Without clear guidance on how to safely verify a claim before getting involved, the public remains susceptible to manipulation. Whether authorities can introduce effective protocols to distinguish between a plea for help and a criminal setup remains to be seen. For now, such measures are the only realistic barrier between an innocent pedestrian and a fabricated public trial. The responsibility rests on both the state to secure the streets and the public to resist the dangerous impulses that these criminals are so expertly exploiting.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -73,17 +48,5 @@ Beyond increased visibility, there is a clear need for established legal framewo
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

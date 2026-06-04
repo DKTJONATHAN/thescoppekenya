@@ -28,17 +28,5 @@ Obtaining a university degree in 2026 has become a luxury that many can no longe
 ### Systemic failure and the moralist critique
 The public commentary surrounding this trend often misses the point by focusing on individual morality rather than systemic collapse. Critics are quick to judge the character of these students, yet they offer no solutions for the skyrocketing cost of living. It is easy to demand dignity when your own bills are paid and your stomach is full. For a student watching their peers drop out due to a lack of funds, these services are seen as a necessary survival tactic in a country where the doors to traditional employment remain firmly locked.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

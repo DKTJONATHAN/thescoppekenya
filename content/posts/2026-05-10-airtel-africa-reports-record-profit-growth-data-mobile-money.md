@@ -40,31 +40,6 @@ As the company accelerates its digital footprint, it operates within a broader e
 
 Market analysts will closely evaluate the next quarterly filing to determine the pace at which the Tatu City facility begins to contribute to the group’s earnings. Success hinges on the execution of the 44 MW buildout; any significant construction delays could pressure the revenue growth forecasts set for 2027. Demonstrating confidence in its current liquidity and cash flow, the board has proposed a dividend of 7.10 cents per share. While this payout signals a strong financial position, the long-term outlook remains contingent on the company’s ability to sustain growth while absorbing the high capital requirements associated with regional data center infrastructure.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -73,17 +48,5 @@ Market analysts will closely evaluate the next quarterly filing to determine the
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

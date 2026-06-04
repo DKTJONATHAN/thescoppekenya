@@ -44,17 +44,5 @@ Monitor the trading volumes of the SMWF ticker on the Nairobi Securities Exchang
 
 If this fund is marketed as a tool for the masses, why are the barriers to entry still high enough to exclude the vast majority of Kenyan earners?
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

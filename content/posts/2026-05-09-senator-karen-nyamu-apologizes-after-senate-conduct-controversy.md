@@ -44,31 +44,6 @@ We should look to see if the Parliamentary Service Commission considers updates 
 
 For the Senate to truly remain a house of honor, it must ensure that the halls are safe and professional for everyone. This applies just as much to the youngest student visitor as it does to the most seasoned diplomat. True leadership in this context requires more than just an apology after the fact; it requires the ongoing, quiet discipline to maintain respect regardless of the circumstances. By refining its internal protocols, the Senate has the opportunity to turn a regrettable incident into a lasting improvement for the benefit of all who walk through its doors.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -77,17 +52,5 @@ For the Senate to truly remain a house of honor, it must ensure that the halls a
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

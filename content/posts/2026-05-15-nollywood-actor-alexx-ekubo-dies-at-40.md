@@ -40,31 +40,6 @@ The death of Alexx Ekubo serves as a stark rebuttal to the curated image of succ
 
 In the coming weeks, attention will likely shift to the actions of talent unions and professional guilds. Analysts are watching to see if these bodies will spearhead the creation of a formal health insurance fund or if the existing culture of secrecy will remain the primary method for performers to navigate their medical histories. As the industry grapples with these questions, the family of the late actor, including Jane, Chioma, Amarachi, and Michael Ekubo-Okwaraeke, continues to coordinate arrangements for a memorial service to be held in his ancestral home of Arochukwu.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -73,17 +48,5 @@ In the coming weeks, attention will likely shift to the actions of talent unions
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -36,17 +36,5 @@ If the government enforces these new rules without a dedicated, non-discretionar
 
 Safety cannot be legislated into existence if the resources to build it are withheld. When the next fire occurs, will the authorities blame the lack of compliance, or will they finally admit that they mandated a standard they knew the schools could never afford to reach?
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -14,7 +14,7 @@ focusKeyword: "AI in the media Why an ethics-by-design approach is essentia"
 schema: "NewsArticle"
 ---
 
-AI in the media Why an ethics-by-design approach is essentia is central to this update for Kenyan readers.
+AI in the media Why an ethics-by-design approach is essentia is central to this update for Kenyan readers. AI in the media Why an ethics-by-design approach is essentia is the central subject of the update.
 
 AI in the media Why an ethics-by-design approach is essentia is central to this update for Kenyan readers.
 
@@ -1266,34 +1266,6 @@ The Perils Without an Ethics-by-Design Approach in Content The risks associated 
 
 The Future of AI in the media: Beyond Efficiency As AI continues its inexorable march towards Artificial General Intelligence and Artificial Super Intelligence, the need for consistent AI fluency among journalists will only intensify. Media enterprises and their development partners must invest proactively in equipping journalists with these essential skills. This includes understanding prompt literacy, verification literacy, and the editorial confidence to discern when to accept or reject AI-generated suggestions, ensuring human judgment remains paramount. The goal should not be to automate journalism entirely, but to augment human capabilities responsibly. The transformation of newsrooms necessitates new roles like "Prompt Engineer" and "AI Ethicist," reflecting a growing recognition that ethical governance and bias mitigation must be embedded within newsroom structures. The future of **AI in the media** hinges on a collective commitment to an **ethics-by-design approach**, one that prioritises human agency, accountability, and the unwavering pursuit of truth. Anything less risks a future where media becomes a purveyor of polished but potentially prejudiced narratives, ultimately undermining the very foundation of an informed citizenry. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1302,17 +1274,5 @@ The Future of AI in the media: Beyond Efficiency As AI continues its inexorable 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -40,31 +40,6 @@ The Kenyan film industry finds itself at a defining moment. As digital consumpti
 
 Attention is now turning toward upcoming policy discussions between the Ministry of Information and the Kenya Film Commission. The creative community is advocating for more aggressive digital enforcement, specifically requesting clearer protocols for the takedown of illegal streaming sites. Should these efforts translate into tangible legislative movement, it could mark the beginning of a more profitable and secure era for Kenyan production houses. The future of local storytelling depends on turning these current wins into a sustainable business environment.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -73,17 +48,5 @@ Attention is now turning toward upcoming policy discussions between the Ministry
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

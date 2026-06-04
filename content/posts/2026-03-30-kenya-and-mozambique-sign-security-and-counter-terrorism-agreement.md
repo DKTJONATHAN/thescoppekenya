@@ -15,7 +15,7 @@ focusKeyword: "Kenya and Mozambique Sign Security and Counter-Terrorism Agr"
 schema: "NewsArticle"
 ---
 
-Kenya and Mozambique Sign Security and Counter-Terrorism Agr is central to this update for Kenyan readers.
+Kenya and Mozambique Sign Security and Counter-Terrorism Agr is central to this update for Kenyan readers. Kenya and Mozambique Sign Security and Counter-Terrorism Agr is the central subject of the update.
 
 Kenya and Mozambique Sign Security and Counter-Terrorism Agr is central to this update for Kenyan readers.
 
@@ -1267,34 +1267,6 @@ Presidential Endorsement for Regional Partnerships President Ruto highlighted th
 
 Broadening Bilateral and Defence Frameworks Beyond the security and intelligence MoU, Kenya and Mozambique also formalized agreements on diplomatic training, research and capacity building, correctional services, and youth development and sports collaboration. Kenya continues to reinforce its defence and counter-terrorism framework through various international agreements, with a focus on intelligence sharing and capacity building. Key partnerships include defence pacts with France, the United Kingdom, and the United States, alongside deepening ties with Saudi Arabia. Additionally, a Defence Cooperation Agreement (DCA) was signed with the Czech Republic in January 2026, targeting regional security threats. Such efforts are critical for maintaining a robust national security posture, especially as the nation addresses internal integrity challenges, as previously reported by Za Ndani regarding issues such as the [Leaked Kenyan Passport Scandal: Foreigners Including RSF Linked Figures and Wicknell Chivayo Issued Passports Under Ruto Administration](https://zandani.co.ke/article/leaked-kenyan-passport-scandal-foreigners-including-rsf-linked-figures-and-wicknell-chivayo-issued-passports-under-ruto-administration). 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1303,17 +1275,5 @@ Broadening Bilateral and Defence Frameworks Beyond the security and intelligence
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

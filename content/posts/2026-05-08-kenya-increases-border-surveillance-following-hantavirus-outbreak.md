@@ -44,31 +44,6 @@ Stakeholders should look closely at procurement logs for port health medical equ
 
 The prevailing pattern across many state sectors is to announce grand infrastructure goals while neglecting the mechanics of daily maintenance. Whether evaluating the progress of major highway projects or the upkeep of port scanners, the administration frequently prioritizes public rhetoric over the consistent, quiet work of maintaining functional assets. Our port health status remains a stark reflection of this broader tendency to favor the announcement over the execution.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -77,17 +52,5 @@ The prevailing pattern across many state sectors is to announce grand infrastruc
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

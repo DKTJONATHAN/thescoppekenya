@@ -46,17 +46,5 @@ Broader market activity reflects a trend toward consolidation and institutional 
 
 Market participants are currently focused on the public participation phase of the Finance Bill 2026. Amendments to the four-month filing proposal remain a possibility that could alleviate sector-wide pressure. Furthermore, KCB Group is expected to announce interim dividend details alongside its upcoming half-year audit reports in July, which will serve as a bellwether for the sustainability of Q1 gains. Regional observers are also assessing whether the new cooperation agreement between the Nairobi International Financial Centre Authority and the Astana International Financial Centre will create alternative channels for foreign capital to mitigate domestic liquidity constraints.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

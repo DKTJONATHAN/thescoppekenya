@@ -45,17 +45,5 @@ The journey for Robyn, originally from Athy, and Joey has been a modern romance 
 
 The child, when it arrives, will be a welcome addition to a growing family, celebrated for itself, not for the gender it represents or the political stability it might ensure. Its cries will be heard in a home filled with personal anticipation, not in the echoing, anxious halls of a desperate monarch. What a world, that the promise of a `beau carbery becoming big brother` could once have tipped a nation into schism, yet now brings only smiles.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

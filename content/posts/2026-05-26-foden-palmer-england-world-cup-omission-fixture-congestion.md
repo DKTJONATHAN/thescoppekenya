@@ -38,17 +38,5 @@ Molango's message is clear: if governing bodies continue to prioritize financial
 
 For Foden and Palmer, this unexpected break offers a crucial opportunity for physical and mental recuperation, a chance to rediscover the spark that makes them world-class. While the immediate focus is on England's squad for North America, the wider conversation about player welfare is now at a critical juncture. The PFA and Fifpro will undoubtedly continue to push for structural changes, including mandatory rest periods and limits on game counts. As for England's squad, Thomas Tuchel's decision to drop the duo, detailed further in our piece [Thomas Tuchel drops Phil Foden and Cole Palmer from England squad](https://zandani.co.ke/article/thomas-tuchel-drops-phil-foden-and-cole-palmer-from-england-squad), leaves a void that will test the squad's depth. The next major milestone will be seeing how these young talents recover and if the collective voice for player protection can finally force meaningful action before more stars are dimmed by the relentless pace of modern football.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

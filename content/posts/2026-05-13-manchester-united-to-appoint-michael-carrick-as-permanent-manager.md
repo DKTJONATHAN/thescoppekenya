@@ -42,31 +42,6 @@ This development is significant because it marks the first time in the post-Ferg
 
 Formal contract negotiations are slated to conclude before the season ends on May 24, 2026. The upcoming summer transfer window will serve as the true test of this new direction. If the club continues to prioritize tactical fit over the pursuit of high-profile signings, it will confirm that the era of the "Galactico manager" has officially ended at Old Trafford. Manchester United has finally accepted that a functional, well-implemented blueprint holds more value than a famous face.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -75,17 +50,5 @@ Formal contract negotiations are slated to conclude before the season ends on Ma
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

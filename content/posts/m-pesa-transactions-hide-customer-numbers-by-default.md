@@ -14,7 +14,7 @@ focusKeyword: "M-Pesa Transactions Will Now Hide Customer Numbers by Defaul"
 schema: "NewsArticle"
 ---
 
-M-Pesa Transactions Will Now Hide Customer Numbers by Defaul is central to this update for Kenyan readers.
+M-Pesa Transactions Will Now Hide Customer Numbers by Defaul is central to this update for Kenyan readers. M-Pesa Transactions Will Now Hide Customer Numbers by Defaul is the central subject of the update.
 
 M-Pesa Transactions Will Now Hide Customer Numbers by Defaul is central to this update for Kenyan readers.
 
@@ -1264,34 +1264,6 @@ Why Hiding Customer Numbers is a Necessary Step The shift to **hide customer num
 
 The Operational Impact of Phone Number Masking by Default For businesses, particularly the vast network of small traders, this adjustment is largely procedural but requires a fundamental shift in verification practices. The familiar request for customers to "show the confirmation message" is actively being phased out, with both Safaricom and the Office of the Data Protection Commissioner discouraging it. Instead, merchants are now expected to verify payments through their dedicated M-Pesa business applications, USSD codes like \*334#, or integrated point-of-sale systems. While presented as a seamless transition for users, ensuring that **M-Pesa transactions** function with masked numbers **by default** places the onus of adaptation squarely on merchants. Many small traders, often unknowingly, collected customer information that, under the Data Protection Act, required careful handling. Masking this data removes that compliance risk quietly, but the need for new verification habits means an operational learning curve for thousands of businesses across the country. This move, while laudable for consumer privacy, highlights the reactive nature of implementing essential data protection features on platforms that have long operated with less stringent safeguards. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1300,17 +1272,5 @@ The Operational Impact of Phone Number Masking by Default For businesses, partic
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -40,31 +40,6 @@ The financial implications of a Championship play-off run are immense, creating 
 
 As the second leg approaches, the dynamic remains clear. Hull City heads into the next fixture with the momentum and the squad stability required to finish the task at hand. Their objective is singular: navigate the final ninety minutes and secure a date at Wembley. For Millwall, the focus shifts to a difficult recovery. Having seen their tactical and physical resources stretched to the breaking point, they face the unenviable task of overturning a deficit against a side that has mastered the art of managing a lead. For now, Hull’s calculated approach has put them firmly in the driver’s seat.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -73,17 +48,5 @@ As the second leg approaches, the dynamic remains clear. Hull City heads into th
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -40,17 +40,5 @@ The momentum behind this request is fueled by the sobering frequency of missing 
 
 The upcoming budget cycle will serve as the litmus test for this proposal. Observers should watch closely to see if the Ministry of Interior frames this as a significant technological investment-demanding robust hardware, modern software, and specialized operator training-or if they simply promote a new number without the necessary backend support to sustain it. The key milestone to monitor is the possible launch of a pilot program or a transparent government audit of the 1195 line. Such steps would provide a clear signal that the state is finally prepared to transition from reactive, siloed responses toward a unified, proactive shield for the children of Kenya.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

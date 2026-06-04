@@ -24,34 +24,6 @@ Addressing Non-Revenue Water and Customer Service through Smart Meters A primary
 
 Public Reception and Historical Context of Smart Meters While the current announcement signals a definitive path forward, the introduction of smart meters has not been without its critics. In July 2025, Nahashon Muguna, the then Managing Director of Nairobi Water Works, expressed reservations before the Senate Committee. He argued that smart meters, costing between Ksh15,000 and Ksh20,000 each compared to Ksh3,500 for mechanical meters, were too expensive and would take an estimated 20 to 30 years to recoup the investment, given water's low-priced commodity status. Muguna maintained that mechanical meters were more practical for the majority of Nairobi residents, questioning whether the marginal gain in accuracy justified the substantial financial outlay. Despite this historical opposition, the renewed push for a city-wide smart meter rollout underscores a clear commitment to leveraging technology for long-term operational efficiency and financial sustainability. The success of this ambitious project hinges on its ability to transcend past concerns, deliver on its promise of reduced water losses, and ultimately provide a more reliable and transparent water service to the residents of Nairobi. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ Public Reception and Historical Context of Smart Meters While the current announ
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

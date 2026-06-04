@@ -30,17 +30,5 @@ Critics are drawing unfavorable comparisons between the perceived boldness of pu
 ### Accusations of manipulation and self-interest
 A growing segment of the membership is openly labeling their union representatives as easily manipulated fools who have been compromised by government influence. Workers argue that while their own salary increments remain stalled in administrative bureaucracy, union leadership appears to maintain a lifestyle that does not align with the stagnation faced by the teachers and doctors they represent. This deep-seated suspicion has created a crisis of legitimacy, leaving many to conclude that the primary function of current union leadership has shifted from worker advocacy to the pursuit of personal financial stability at the expense of their constituents.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

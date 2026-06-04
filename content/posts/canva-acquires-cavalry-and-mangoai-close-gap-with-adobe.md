@@ -24,34 +24,6 @@ Closing the Gap With Adobe: Financials and Market Position Canva's recent acquis
 
 AI's Role in Canva's Future and the Creative Workflow Canva's co-founder, Cameron Adams, offers an insightful perspective on AI's role within their strategy. He notes that while generative AI excels at producing most of a finished piece of content, it often struggles with the final, crucial stages-ensuring the content is on-brand, resonates with a specific audience, and performs effectively. This is precisely the gap Canva aims to address and own. Tools like Cavalry and MangoAI are instrumental in this strategy, as they handle the more precise and performance-driven aspects of creative work. Cavalry enhances motion design, a key element for dynamic content, while MangoAI leverages reinforcement learning to ensure video ads achieve optimal performance. This targeted approach to AI integration, focusing on refinement and outcome optimisation rather than solely generation, positions Canva to offer a powerful and practical solution for businesses seeking to maximise their digital creative output. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ AI's Role in Canva's Future and the Creative Workflow Canva's co-founder, Camero
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

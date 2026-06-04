@@ -39,31 +39,6 @@ The promise of private sector efficiency, much like the promise of the railroad'
 
 The air in the capital, thick with the scent of ambition and asphalt, carried the familiar tune of progress, harmonizing with the quiet, unsettling hum of commerce. The President Ruto NTSA inspection directive, born of a noble aspiration for safer roads, risked becoming another chapter in the chronicled saga of public necessity transmuted into private lucre. The grand machine of governance, in its infinite wisdom, had once again opened a door to the very human tendency to profit from public mandates. And so, the wheels of fortune turned, crushing the unseen costs into the very ground upon which the people drove, oblivious or resigned to their inevitable burden.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -72,17 +47,5 @@ The air in the capital, thick with the scent of ambition and asphalt, carried th
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

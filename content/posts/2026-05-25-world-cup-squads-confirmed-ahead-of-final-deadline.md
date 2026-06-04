@@ -34,17 +34,5 @@ Furthermore, a closer look at some of the provisional and confirmed squads raise
 
 Even after the final squads are locked in, FIFA's iron grip on player changes remains absolute. Teams can replace players up to 24 hours before their first game, but "only in the case of illness or injury, with FIFA’s blessing, and only with a player from the provisional squad previously submitted." This restrictive clause means that if a star player picks up a last-minute knock, managers can't scout for a genuinely in-form replacement outside their pre-selected bubble. The only real exception is for goalkeepers, who can be replaced "at any time during the tournament" with FIFA's "okay." It's a system designed to protect FIFA's procedural integrity, not to ensure teams field their strongest possible side. The entire structure feels less about football and more about paperwork.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

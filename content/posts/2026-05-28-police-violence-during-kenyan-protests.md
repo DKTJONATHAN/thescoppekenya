@@ -34,17 +34,5 @@ Comparing the police reaction during the late-2000s to the Gen Z protests and th
 
 Modern life in Nairobi moves at a frantic pace. We fixate on the technical hum of our chargers or the trivialities of global celebrity culture, such as the pregnancy of Alex Cooper. Yet, these distractions do little to mask the heavy silence that follows a protest. We occupy a country where the ink on our constitutional rights is still wet, while the concrete of our streets remains stained by the same methods used half a century ago. Until we acknowledge that the police service was never reformed from its original role as a colonial-era instrument of control, we will continue to repeat these cycles. True change will not arrive through a new law or a changing of the guard. It will only come when we force the security establishment to finally step out of the shadow of 1969 and into the light of the democracy we keep promising ourselves we are building. The path forward requires more than hope; it requires an honest reckoning with the past that still dictates our present.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

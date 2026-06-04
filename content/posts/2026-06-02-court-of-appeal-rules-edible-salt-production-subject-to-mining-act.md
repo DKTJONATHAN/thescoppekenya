@@ -42,17 +42,5 @@ Additionally, conduct a thorough audit of your inventory and wastage. When raw m
 
 Finally, keep a close eye on the broader industrial market. If the government uses this legal success to apply similar royalty structures to other non-metallic minerals, you may soon see price increases in essential inputs like lime or soda ash. Now is the time to build a more resilient budget that accounts for these regulatory shifts rather than just traditional market demand. Business owners who view their supply chains as a dynamic risk factor, rather than a static expense, will be far better positioned to maintain competitiveness as the market adjusts to these new rules.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

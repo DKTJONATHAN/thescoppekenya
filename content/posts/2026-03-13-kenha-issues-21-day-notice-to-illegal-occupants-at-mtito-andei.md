@@ -14,7 +14,7 @@ focusKeyword: "KeNHA issues 21-day notice to illegal occupants at Mtito And"
 schema: "NewsArticle"
 ---
 
-KeNHA issues 21-day notice to illegal occupants at Mtito And is central to this update for Kenyan readers.
+KeNHA issues 21-day notice to illegal occupants at Mtito And is central to this update for Kenyan readers. KeNHA issues 21-day notice to illegal occupants at Mtito And is the central subject of the update.
 
 KeNHA issues 21-day notice to illegal occupants at Mtito And is central to this update for Kenyan readers.
 
@@ -1266,34 +1266,6 @@ Compliance and Enforcement Measures KeNHA has informed all affected traders and 
 
 Broader Road Safety Initiatives This directive at Mtito Andei aligns with ongoing efforts by KeNHA to clear major highways of unlawful occupations. Just two weeks prior, on February 23, 2026, KeNHA issued a similar eviction notice to roadside traders operating at Kihunguro, Allsops, and Delview along the Thika Superhighway. That notice aimed to clear space for the construction of designated roadside stations, which are expected to enhance corridor functionality, improve safety standards, and alleviate persistent traffic congestion along the Thika Superhighway. Mombasa Road, which connects two of the country's largest cities and forms part of the A8 highway to Uganda, is a key transport route. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1302,17 +1274,5 @@ Broader Road Safety Initiatives This directive at Mtito Andei aligns with ongoin
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

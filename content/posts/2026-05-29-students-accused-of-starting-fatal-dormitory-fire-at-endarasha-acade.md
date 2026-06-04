@@ -30,17 +30,5 @@ The tragedy has ignited a national debate regarding student discipline and the o
 ### The Breakdown of School Security
 The loss of life at Endarasha Academy highlights a broader failure in the protection of vulnerable students within institutional settings. While the nation mourns, the focus has shifted toward the systemic negligence that allowed students to access and lock dormitory exits during the night. The realization that safety mechanisms meant to protect children were weaponized against them has created a climate of fear. As the community demands justice, the focus remains on ensuring that schools function as safe havens rather than sites of preventable, premeditated violence.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -24,34 +24,6 @@ Details of the IEBC Temporary Jobs and Application Process The 12,520 temporary 
 
 The Broader Political Impact of the Enhanced Voter Registration Exercise This Enhanced Continuous Voter Registration exercise is a significant undertaking by the IEBC, aimed at strengthening the nation's democratic foundation by expanding the voter register. The commission's objective is to capture an estimated 6.3 million additional voters, building on the current 22.1 million, in anticipation of future elections. By taking registration services closer to the citizens at the ward level, the IEBC seeks to overcome previous challenges of limited access, particularly for young eligible voters in far-flung areas. The allocation of a substantial budget of Sh8 billion for this drive, alongside funds for voter education and KIEMS kit maintenance, underscores the commission's commitment to a robust and inclusive electoral process. This strategic recruitment of personnel to manage the process, coupled with the daily pay, is a critical component of ensuring logistical efficiency and public participation in Kenya's democratic journey. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ The Broader Political Impact of the Enhanced Voter Registration Exercise This En
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

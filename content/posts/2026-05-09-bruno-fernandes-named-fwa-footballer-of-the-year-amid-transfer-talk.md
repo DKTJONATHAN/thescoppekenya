@@ -40,31 +40,6 @@ Fernandes is chasing the all-time Premier League single-season assist record, a 
 ### What to watch next
 The immediate focus is the final push for the assist record, requiring just a handful more contributions in the remaining games. Beyond the final whistle of the campaign, all eyes will turn to the boardroom. Whether United triggers an extension to remove that 65 million euro release clause or allows the speculation to simmer will determine the trajectory of the squad heading into the next transfer window.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -73,17 +48,5 @@ The immediate focus is the final push for the assist record, requiring just a ha
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

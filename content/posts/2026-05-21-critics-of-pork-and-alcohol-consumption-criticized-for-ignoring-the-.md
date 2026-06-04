@@ -30,17 +30,5 @@ In many Kenyan regions, child marriage continues to thrive, often justified by r
 ### Legal Gaps and Performative Morality
 The disconnect between enforcement of lifestyle restrictions and the protection of minors highlights significant flaws in the current approach to social justice. While the legal system is often mobilized to regulate public behavior, it remains slow to close the loopholes that allow child marriage to persist. Critics suggest that the nation’s moral authority is being misdirected. By focusing on personal choices rather than legislative reform for the vulnerable, leaders are neglecting their primary obligation to ensure the physical and educational welfare of the country's youth. The current trend prioritizes symbolic moral posturing over substantive legal protections, leaving thousands of young girls at risk.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

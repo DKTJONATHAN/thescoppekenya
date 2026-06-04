@@ -40,31 +40,6 @@ The immediate future hinges on how the PGMOL decides to handle this inquiry. If 
 
 Whether or not the audio files are eventually made public, the narrative has shifted. The discussion is no longer limited to the specific foul committed by Pablo or the individual performance of the match officials. The broader conversation is now about the necessity of aligning officiating standards with the modern era of professional football. If the league remains unwilling to open its doors to scrutiny, the tension between the players and those in the VAR booth will only continue to grow. The coming days will be a true test of whether the Premier League is ready to evolve or if it will choose to defend an outdated model of opaque governance.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -73,17 +48,5 @@ Whether or not the audio files are eventually made public, the narrative has shi
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

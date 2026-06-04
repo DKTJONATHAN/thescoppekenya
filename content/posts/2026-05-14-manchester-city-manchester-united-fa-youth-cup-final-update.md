@@ -42,31 +42,6 @@ The volatility displayed here is a core component of the youth elite ecosystem. 
 
 The second half will hinge on whether either side can extend their concentration window beyond the 120-second danger zone. If defensive lapses continue to track with intensity spikes, the match will likely be decided by a set-piece error or an individual breakdown rather than a coherent buildup play. Expect the technical staffs to emphasize low-risk possession and aggressive tactical fouling to prevent the game from descending into the chaotic transitions that defined the opening half. The winner will be the side that treats every goal as a cue for heightened vigilance rather than a moment of celebration.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -75,17 +50,5 @@ The second half will hinge on whether either side can extend their concentration
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

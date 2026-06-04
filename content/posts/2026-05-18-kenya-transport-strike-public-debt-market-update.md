@@ -44,17 +44,5 @@ Moving forward, the negotiations between transport unions and the Ministry of Tr
 
 If you rely on public transport, you should prepare for continued disruption in the coming days. The standoff is difficult to resolve because the government's fiscal requirements and the operators' need for lower fuel prices are diametrically opposed. While the global financial markets continue to track corporate performance, the real story for working Kenyans is playing out at the matatu stage. Given the ongoing instability, residents should plan their travel and personal budgets with significant flexibility to navigate the weeks ahead.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

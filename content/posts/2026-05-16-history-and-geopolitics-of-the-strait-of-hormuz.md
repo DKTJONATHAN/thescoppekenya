@@ -44,17 +44,5 @@ Inflation in Kenya is currently being imported. Because we lack significant dome
 ### What to watch next
 Keep a close eye on the volume of tankers successfully clearing the strait. Any increase in maritime insurance premiums for vessels entering the Persian Gulf will be felt at Kenyan pumps within three weeks. We are living in an era where global energy politics are effectively our own local domestic policy.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

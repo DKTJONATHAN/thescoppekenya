@@ -40,17 +40,5 @@ The financial impact of inaction is compounding. Every year that banks restrict 
 
 Looking ahead, the upcoming legislative debate on specialized credit floors for climate-positive lending will be a critical litmus test for the administration. If the Central Bank persists in prioritizing protected bank balance sheets over national security, stagnation is guaranteed. The real question is whether the regulator will finally hold these institutions accountable for their green-washing rhetoric or allow the bankers’ blockade to remain the primary obstacle to national development. How much longer will we permit domestic banks to profit from a financial system that is effectively bankrupting our future?
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

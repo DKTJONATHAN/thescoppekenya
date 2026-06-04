@@ -50,17 +50,5 @@ This policy represents a fundamental shift in how the state views its relationsh
 
 Following the June 5 deadline for public submissions, the ministry will enter a synthesis phase to incorporate feedback into a final policy white paper. This updated document is expected to be presented to the cabinet by mid-July 2026. Once approved at the executive level, the policy will serve as the basis for new legislation that could be introduced in Parliament during the next session. Observers should watch for the announcement of specific transition periods for private companies to align their existing cloud and data storage practices with the new national standards.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

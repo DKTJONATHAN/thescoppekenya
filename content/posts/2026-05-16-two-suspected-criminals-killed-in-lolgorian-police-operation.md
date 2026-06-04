@@ -40,15 +40,6 @@ The effectiveness of this operation serves as a critical test for regional secur
 
 The next 48 hours are critical for the security operation led by Eric Telewa. Observers should monitor for announcements regarding the potential expansion of the search perimeter or the discovery of any evidence left behind by the fleeing suspect. The police are expected to provide an update on the identity of the deceased suspects and their potential links to regional criminal syndicates once preliminary investigations conclude. Residents should keep an eye on official communication channels for specific geographic warnings if the manhunt shifts toward residential zones.
 
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -57,17 +48,5 @@ The next 48 hours are critical for the security operation led by Eric Telewa. Ob
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

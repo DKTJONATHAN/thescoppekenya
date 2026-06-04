@@ -41,17 +41,5 @@ Back in ancient times, Athens grappled with the void left by Alcibiades, despera
 
 Alcibiades, after brief and tumultuous returns to Athens, only to be exiled again, met his end in Phrygia in 404 BCE, assassinated, some say, at the instigation of Spartan enemies who never truly forgave him. His life was a dizzying ascent and descent, a testament to raw talent unbound by loyalty, ultimately consumed by the very ambition that fueled it. The modern age, too, watches its heroes, applauds their triumphs, and then, with a tragic inevitability, marks their eventual, often self-engineered, departures. The applause fades, the banners are folded, and the eternal question remains: for whom does the gifted one truly play?
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

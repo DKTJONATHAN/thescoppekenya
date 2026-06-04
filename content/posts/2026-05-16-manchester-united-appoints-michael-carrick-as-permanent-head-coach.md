@@ -40,9 +40,6 @@ Football cycles in the Premier League are becoming shorter and more punishing, y
 
 The official announcement is expected within 48 hours, with contract documentation now reaching the final stages. With his future secured, Carrick will turn his attention to the summer transfer window. Supporters should expect a quiet, surgical approach to recruitment rather than a spending spree. The next few weeks will clarify if the board intends to empower their new man with the specific tools he needs to evolve this team, or if the 12-month extension option remains their only safety net. For now, the focus shifts to the pre-season schedule as the club attempts to translate this temporary momentum into a permanent league challenge. Those hoping for massive disruption will be disappointed; the regime of Michael Carrick is built on the premise that boring, consistent work is the only way back to the top.
 
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -51,17 +48,5 @@ The official announcement is expected within 48 hours, with contract documentati
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -42,31 +42,6 @@ Kenyan avocado exporters must navigate a comprehensive regulatory framework that
 
 Despite these efforts, the agricultural sector has called for urgent 2026 policy reforms to address issues such as the impact of Value Added Tax (VAT) on essential inputs, high compliance costs, unpredictable import levies, and trade disparities, including a 30% duty on Kenyan avocados in some markets. These challenges highlight the need for a predictable and competitive environment to sustain growth and investment. Amidst these factors, new support programs are being rolled out for farmers, including direct purchases and financial assistance for certified seedlings, aiming to boost yields, quality, and market access for smallholder growers. These combined efforts are critical to maintaining Kenya's position as a leading supplier of high-quality avocados to international markets.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -75,17 +50,5 @@ Despite these efforts, the agricultural sector has called for urgent 2026 policy
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

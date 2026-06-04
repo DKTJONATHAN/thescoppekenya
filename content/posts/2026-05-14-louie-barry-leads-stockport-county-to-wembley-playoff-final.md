@@ -42,31 +42,6 @@ The impending final against Bolton or Bradford will inevitably trigger a frenzy 
 
 Louie Barry will almost certainly secure a permanent exit from Villa Park this summer. Yet, the tragedy remains: he will likely never reach the elite ceiling that his Barcelona tenure promised. He has spent his best years being groomed by accountants, not coaches, and in modern football, that is a career-altering deficit. Unless the system changes, he is destined to be a cautionary tale rather than a star.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -75,17 +50,5 @@ Louie Barry will almost certainly secure a permanent exit from Villa Park this s
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

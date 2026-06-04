@@ -44,17 +44,5 @@ Families must begin demanding transparency regarding pain management protocols. 
 
 The healthcare system remains a place where we invest heavily in education and potential, much like the commitment shown by organizations supporting scholarships for the youth, but we fail to protect those at the end of their struggle. If we continue to pathologize the reaction to pain rather than treating the pain itself, we are not healing patients. We are simply ignoring their agony until they no longer have the strength to demand justice. Death is an inevitability for the terminal patient; however, dying in agony because of a bureaucratic failure to measure pain is a choice the system makes. It is time we made a different one.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

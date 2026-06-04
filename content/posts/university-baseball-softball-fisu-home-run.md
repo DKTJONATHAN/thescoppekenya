@@ -24,34 +24,6 @@ Organising the Absolute Madness Now, organising a FISU event, whether it's the c
 
 The Future's Bright, the Future's Diamond-Shaped This decision isn't just about giving baseball and softball a moment in the sun; it's about expanding opportunities for student-athletes aged 17-25 from all corners of the globe. FISU events are brilliant for practical development and give cities a chance to showcase themselves as destinations for young people to study, visit, and even work. So, North Carolina in 2029, get ready for some serious international sporting profile boosting. With FISU and the World Baseball Softball Confederation (WBSC) promising continued collaboration to promote these sports, the future for university baseball and softball looks brighter than a freshly polished trophy, Mate. Let's hope for some cracking games and plenty of future talent emerging from the university ranks! 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ The Future's Bright, the Future's Diamond-Shaped This decision isn't just about 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

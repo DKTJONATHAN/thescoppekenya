@@ -38,17 +38,5 @@ This reflects a recurring pattern in regional athletics, where the urge to emula
 
 As the Kenyan sports community continues to process the recent loss of figures like Selemani Ramadhan, the conversation regarding authentic talent development feels increasingly urgent. Mbavu has officially petitioned for a rematch, pressuring governing bodies to audit the tapes and validate his claim of a foul. Whether the commission approves his request remains an open question. For now, he persists in the gym, drilling with the grim determination of a man trying to outrun his own shadow. He has penciled in a return for late September, contingent upon medical clearance, desperate to prove that his iron-willed ambition was something more than a hollow mirage.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

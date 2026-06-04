@@ -48,17 +48,5 @@ The failure to meet the 2025 Malabo targets is not merely a logistical lapse; it
 
 Monitor the rise of private, tech-centric agricultural firms that operate in defiance of traditional market boards. These startups provide the true litmus test for the industry. If the state chooses to smother these firms with regulation to protect a stagnant status quo, the responsibility for future food price shocks will rest squarely on the shoulders of the regulators. Do not look for progress in the next official policy statement. Instead, look for it in the digital, unpoliced corners of the market where the government has yet to intervene.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

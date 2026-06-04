@@ -14,7 +14,7 @@ focusKeyword: "Kenya establishes three-account fund for oil and mineral rev"
 schema: "NewsArticle"
 ---
 
-Kenya establishes three-account fund for oil and mineral rev is central to this update for Kenyan readers.
+Kenya establishes three-account fund for oil and mineral rev is central to this update for Kenyan readers. Kenya establishes three-account fund for oil and mineral rev is the central subject of the update.
 
 Kenya establishes three-account fund for oil and mineral rev is central to this update for Kenyan readers.
 
@@ -1268,34 +1268,6 @@ Robust Governance and Accountability Framework The fund's governance rests with 
 
 Strategic Infrastructure and Economic Resilience The sovereign wealth fund, coupled with the newly assented National Infrastructure Fund, is slated to smooth economic fluctuations and shield the national budget from shocks. This creates a predictable pipeline for strategic infrastructure projects. For instance, initiatives that secure financing for green lending demonstrate a broader commitment to sustainable economic development and infrastructure growth (I&M Bank and Sida partner to expand green lending in Kenya with USD 30 million agreement). The Bill also defines significant depletion as a 90% decline in resource revenue sustained for two years, at which point the three accounts would merge, with withdrawals limited to earnings while preserving principal. Quarterly and annual financial statements, including audited reports, are mandatory, along with budget disclosures of expected revenue, fund spending, and investments. Transitional arrangements allow for an interim manager, and amendments to the Mining Act, Petroleum Act, and Kenya Revenue Authority Act are included to ensure comprehensive revenue flow into the Fund. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1304,17 +1276,5 @@ Strategic Infrastructure and Economic Resilience The sovereign wealth fund, coup
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -48,17 +48,5 @@ The immediate future hinges on the efficiency of the newly deployed rapid diagno
 
 History suggests that the intensity of these measures will remain high as long as the infection curves in the DRC and Uganda remain unstable. Pathogens follow the path of least resistance, and where people trade, disease travels.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

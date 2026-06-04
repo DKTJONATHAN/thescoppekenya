@@ -46,17 +46,5 @@ All eyes will be on how the government and police leadership respond to these fi
 
 The cycle of police response to public protest in Kenya, marked by tear gas and live bullets, appears tragically consistent, reminding us that yesterday's patterns often shape tomorrow's headlines.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

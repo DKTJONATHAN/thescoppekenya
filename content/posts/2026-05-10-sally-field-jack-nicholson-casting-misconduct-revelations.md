@@ -40,31 +40,6 @@ Field’s history acts as a lens through which we can examine modern power struc
 
 The current climate is shifting from a culture of silence to one of documentation. As more veterans of the studio system share their experiences, we are seeing a broader re-evaluation of the 1970s and 1980s. The focus is slowly moving toward the mechanics of casting, with a growing demand for oversight that shields performers from the arbitrary exercise of power. While Sally Field’s transition ultimately led to a celebrated body of work, her story remains an essential study of the heavy, hidden price of forcing open a closed door. The legacy of her career is defined not just by the characters she played, but by the resilience she required to navigate the industry that attempted to define her.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -73,17 +48,5 @@ The current climate is shifting from a culture of silence to one of documentatio
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

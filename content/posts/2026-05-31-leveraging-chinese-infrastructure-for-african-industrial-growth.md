@@ -42,17 +42,5 @@ A glaring disconnect exists between infrastructure investment and industrial pol
 
 Connectivity without an industrial mandate is a hollow achievement. As debt servicing claims an increasingly large portion of the national budget, the space for direct support or subsidies for local manufacturing disappears. The dream of an industrialized Kenya is beginning to resemble a ghost train. We have spent billions on the tracks, yet we remain waiting for the factories. It is time to ask why the state prioritizes the transit of foreign imports over the creation of domestic value. At what point will the government concede that this infrastructure strategy has failed to protect or promote our local industrial sector?
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

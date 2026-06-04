@@ -48,31 +48,6 @@ Expect a steep decline in casual dating among Nairobi’s upper-middle class. As
 
 The writing is on the wall. Love is no longer blind. It is verified, audited, and stored in the cloud. If you are showing up to a dinner date armed with recycled talking points from a digital guru, expect to be archived instead of pursued. The most viable partners in this new market aren't the ones with the smoothest lines. They are the ones whose real-world actions are not contradicted by their search history.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -81,17 +56,5 @@ The writing is on the wall. Love is no longer blind. It is verified, audited, an
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

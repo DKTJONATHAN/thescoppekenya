@@ -30,31 +30,6 @@ The case has drawn attention to the significant imbalance in how domestic betray
 ### Questioning selective justice
 The tragedy in Kasarani has fueled broader debates regarding domestic morality and the fairness of the judicial process. There is growing public frustration over why the partner who initiates a betrayal remains shielded while the spouse who reacts to the deception bears the full consequences of the law. As the wife awaits her day in court, the husband continues his daily life without legal repercussions. This disparity leaves many to question whether the justice system operates impartially or if it is inherently designed to protect specific individuals based on existing social power structures.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -63,17 +38,5 @@ The tragedy in Kasarani has fueled broader debates regarding domestic morality a
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

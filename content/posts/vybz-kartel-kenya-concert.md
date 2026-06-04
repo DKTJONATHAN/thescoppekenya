@@ -24,34 +24,6 @@ Local 'Benefits': Who Really Profits? The festival promises a flurry of economic
 
 The Unseen Price Tag: Will Fans Be Left Broke? While "details of Vybz Kartel’s concert in Nairobi finally revealed" was promised, the crucial information about ticket prices remains conspicuously absent from the initial reports. The festival is targeting audiences aged 18 to 35, a demographic often struggling with economic realities. With the hype around Vybz Kartel - who, for the record, was released from prison in July 2024 after his conviction was overturned and has since held concerts - one can only imagine the exorbitant figures being cooked up. Are these organizers truly focused on accessibility for the "youth" they claim to target, or are they setting ticket prices that will price out the majority of his loyal East African fanbase? The true measure of a "cultural movement" should not be how much money it generates, but how many people it genuinely enriches, both culturally and economically. Until those ticket prices drop, consider us cynical, but unsurprised. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ The Unseen Price Tag: Will Fans Be Left Broke? While "details of Vybz Kartel’s
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

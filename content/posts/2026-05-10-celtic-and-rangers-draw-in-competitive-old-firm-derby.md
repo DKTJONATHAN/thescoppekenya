@@ -42,31 +42,6 @@ The upcoming transfer window is the final litmus test for their actual intent. I
 
 Rangers and Celtic are fast approaching a harsh reckoning. When they inevitably fail to clear the hurdles of European competition next season, it will serve as the final death knell for the inflated reputation of the Glasgow rivalry. Refusing to audit their own systemic failures is a luxury they can no longer afford. Soon, they will be nothing more than a regional footnote, a cautionary tale of what happens when an institution mistakes its own vanity for long-term security.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -75,17 +50,5 @@ Rangers and Celtic are fast approaching a harsh reckoning. When they inevitably 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

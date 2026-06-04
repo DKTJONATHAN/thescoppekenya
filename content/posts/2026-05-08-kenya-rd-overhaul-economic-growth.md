@@ -46,31 +46,6 @@ Moving forward, we must watch the legislative progress of the new unified resear
 
 A nation does not transform from a developing state to a prosperous powerhouse through sudden miracles. Such progress is earned through the quiet, persistent accumulation of knowledge applied to daily life. Our future will not be found in the speeches of politicians. It will be found in the patents, the products, and the businesses we build the moment we finally decide to take our own research seriously.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -79,17 +54,5 @@ A nation does not transform from a developing state to a prosperous powerhouse t
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

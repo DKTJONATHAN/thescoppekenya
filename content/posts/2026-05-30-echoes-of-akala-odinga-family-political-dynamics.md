@@ -43,17 +43,5 @@ The air in the court grew thick with the unspoken, with the fear that the glory 
 
 And so, the sun continued its daily ascent and descent over Akala, casting long, mocking shadows across a court that, in its desperate pleas for unity, only highlighted its own accelerating fragmentation. The power, once an anchor, had become a millstone.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

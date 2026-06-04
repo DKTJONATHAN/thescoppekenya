@@ -30,17 +30,5 @@ Political observers have pointed to a significant contrast between Murkomen’s 
 ### The Impact on Public Service Delivery
 The focus on ethnic narratives has done little to alleviate the practical burdens facing the average citizen. As the ministry continues to grapple with its unpopularity, the transport sector remains plagued by infrastructure gaps, while the broader population struggles with the rising cost of living and persistent power outages. The public discourse has effectively stalled on political maneuvering rather than addressing the functional decline of critical services. Ultimately, the shift toward identity politics serves as a barrier to transparent governance, leaving the public to contend with an environment where administrative results are consistently sidelined in favor of defensive political theater.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

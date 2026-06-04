@@ -24,34 +24,6 @@ Public Advisory and Reporting Channels KURA has urged Kenyans to remain highly v
 
 Previous Warning by Kenya Ports Authority This announcement by KURA comes two weeks after a similar caution was issued by the Kenya Ports Authority (KPA). On Sunday, February 15, KPA warned the public about fraudsters posing as management staff and offering fake job opportunities. The KPA scam similarly involved deceiving Kenyans into making payments for employment. KPA reiterated that its recruitment process is strictly merit-based and does not require any form of payment to participate. The authority advised the public to verify the legitimacy of job opportunities through its official platforms, clarifying that it would not be liable for any losses incurred as a result of such fraudulent activities.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ Previous Warning by Kenya Ports Authority This announcement by KURA comes two we
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

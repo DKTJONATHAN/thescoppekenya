@@ -28,17 +28,5 @@ The contradiction is best illustrated by the behavior of the average ambitious p
 ### The irony of the Kenyan wallet
 The current surge in registrations suggests that many citizens have chosen to ignore prevailing economic headlines to prioritize personal status. If the economy were as uniformly dire as the public narrative suggests, these new KDY plates would not be appearing on the roads at such a high volume. It appears that a large segment of the population has decided that if economic uncertainty is inevitable, they prefer to face it from behind the wheel of a new, turbocharged engine. In this environment, the claim of financial struggle is often discarded the moment a new vehicle arrives from the showroom.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

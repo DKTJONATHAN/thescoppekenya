@@ -30,17 +30,5 @@ The ceremony at Safari Park featured lavish arrangements that appeared inappropr
 ### The Long-term Cost of Neglect
 The emotional scars inflicted upon the students will require professional intervention and consistent support, yet such disasters rarely receive the necessary government focus unless they become a political issue. Losing personal belongings and a safe living space during a dormitory fire creates lasting trauma that the state has yet to adequately address. As parents begin the difficult process of helping their children navigate this nightmare, they are left to wonder why ceremonial optics take precedence over crisis management. The irony of praying for the nation while the nation’s children suffer remains a profound point of contention for those who witnessed the empty desks and ash-covered floors of Utumishi Academy.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

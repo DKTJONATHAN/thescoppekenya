@@ -40,17 +40,5 @@ The current strategy appears to favor immediate disruption over long term convic
 
 For the authorities, the primary goal is often the immediate cooling of the political climate. By removing a vocal critic from their digital platform for several days or weeks, the state breaks the momentum of their messaging. This method of arrest and subsequent legal delay has become a standard instrument for managing public dissent. It creates an atmosphere of caution among other digital influencers, who must constantly weigh the impact of their words against the possibility of a sudden knock at the door. The individuals being arrested change, but the playbook remains the same. The cycle continues.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

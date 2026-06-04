@@ -30,17 +30,5 @@ The public narrative frequently pivots away from the student's actions and towar
 ### A Pattern of Enabling Misconduct
 This protectionist behavior suggests a broader societal reluctance to demand accountability. Just as public figures often avoid addressing allegations of corruption or unethical business practices, parents are failing to confront the reality of their children’s criminal behavior. Protecting a child from the legal and social ramifications of arson or assault does not constitute good guardianship. Instead, it ensures that these students will continue to view violence as a viable solution to their problems. Until parents move past the illusion that their children are incapable of wrongdoing, the cycle of school unrest will persist as a clear reflection of a deeper decline in domestic and moral accountability.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

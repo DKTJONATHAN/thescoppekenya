@@ -42,17 +42,5 @@ The incident serves as a stark wake-up call regarding the protection of small bu
 
 The coming weeks will be crucial as the local authorities conduct investigations into the identity of those behind the attempted arson. Beyond the police report, the focus will remain on whether security measures can be bolstered enough to allow workers to return to their tasks without fear. The real test will be if the workshop can regain its sense of normalcy, proving that a dedicated entrepreneur can withstand external pressures and continue to operate in the face of adversity.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

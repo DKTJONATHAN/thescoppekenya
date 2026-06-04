@@ -50,17 +50,5 @@ Monitor the ongoing demands from civil society groups for a fresh, independent r
 
 Kethi Kilonzo’s global success is a testament to the fact that while institutions may fail to deliver justice, they remain powerless to prevent an individual from rising above the ruin they left behind.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

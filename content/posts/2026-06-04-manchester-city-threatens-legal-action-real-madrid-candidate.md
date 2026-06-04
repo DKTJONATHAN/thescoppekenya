@@ -1,18 +1,20 @@
 ---
 title: "Manchester City threatens legal action against Real Madrid candidate"
 slug: "manchester-city-threatens-legal-action-real-madrid-candidate"
-description: "Manchester City is considering legal action after a Real Madrid presidential candidate used Erling Haaland's image in his campaign without authorization."
+description: "Manchester City threatens legal action against Real Madrid candid: Manchester City is considering legal action after a Real Madrid presidential candidate used"
+excerpt: "The campaign trail for the Real Madrid presidency has descended into a spectacle of amateurish delusion, with candidate Enrique Riquelme tre"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/FbzWTMsc/799a7e86a89b.jpg"
 category: "Sports"
 tags: ["football", "manchester city", "real madrid", "erling haaland", "transfer news", "international football"]
+canonical: "https://zandani.co.ke/article/manchester-city-threatens-legal-action-real-madrid-candidate"
 date: "2026-06-04T13:34:04Z"
 dateModified: "2026-06-04T13:34:04Z"
+focusKeyword: "Manchester City threatens legal action against Real Madrid candid"
 schema: "NewsArticle"
 ---
 
-The campaign trail for the Real Madrid presidency has descended into a spectacle of amateurish delusion, with candidate Enrique Riquelme treating Manchester City’s squad like personal merchandise. As the June 7 election approaches, Riquelme’s reliance on using world-class players as campaign props has finally triggered a sharp rebuke from the Etihad Stadium.
+The campaign trail for the Real Madrid presidency has descended into a spectacle of amateurish delusion, with candidate Enrique Riquelme treating Manchester City’s squad like personal merchandise. As the June 7 election approaches, Riquelme’s reliance on using world-class players as campaign props has finally triggered a sharp rebuke from the Etihad Stadium. Manchester City threatens legal action against Real Madrid candid is the central subject of the update.
 
 ### Intellectual Property as a Political Weapon
 

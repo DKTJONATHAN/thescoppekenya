@@ -30,31 +30,6 @@ The shift in healthcare policy has prompted critical comparisons between the cur
 ### Governance and the crisis of priorities
 Concerns are mounting as the government continues to prioritize political appointments and board reassignments for state agencies while the healthcare system remains underfunded. The disconnect between official policy and the lived reality of citizens is increasingly apparent. Critics suggest that the government is failing to address the fundamental needs of the population, leaving families to manage the consequences of a collapsed safety net. There is growing consensus that the financial costs imposed by the new system threaten the lives of the most vulnerable and prioritize fiscal ledgers over the survival of newborns.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -63,17 +38,5 @@ Concerns are mounting as the government continues to prioritize political appoin
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

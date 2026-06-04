@@ -26,34 +26,6 @@ Higher Education and the Role of Unionism Pastor Ezekiel's critique also extende
 
 A Call for Synthesis, Not Division Some strands of prosperity preaching sometimes link wealth to divine favour and poverty to personal failure, a logic that oversimplifies complex structural realities. Kenya's graduate unemployment crisis, for example, is not the fault of lecturers but is tied to broader issues of public funding, economic structure, industrialisation levels, governance choices, and policy inconsistency. While constructive critique of university inefficiencies is valid, blanket contempt is not. Faith and scholarship are not adversaries; historically, universities often emerged from religious contexts, with theologians, philosophers, and scientists frequently being people of faith. Kenya does not need to choose between the "hammer and the book" or the "pulpit and the podium". We require a synthesis: welders and researchers, entrepreneurs and policy analysts, pastors and professors. The hand builds, the mind designs, and the spirit guides; to demean any one aspect is to diminish the whole. It is imperative that we engage in vigorous but responsible debate, challenging institutions where they falter but defending them when unfairly maligned. We must honour the carpenter without scorning the lecturer. For a developing country like Kenya, the pursuit of knowledge and intellectual growth is not a luxury, but a necessity for progress, perhaps even more crucial than the celebrity endorsements we sometimes chase, as explored in the piece, [Snoop Dogg's Swansea Celebrity Co-Owner Grand Welcome: But Why Not an African Football Club, Mate?](https://zandani.co.ke/article/snoop-dogg-swansea-celebrity-co-owner-african-football-gossip). Our collective future depends on valuing both faith and knowledge as companions in our shared search for truth and national flourishing. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -62,17 +34,5 @@ A Call for Synthesis, Not Division Some strands of prosperity preaching sometime
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

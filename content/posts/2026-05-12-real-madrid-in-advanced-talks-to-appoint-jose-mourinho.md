@@ -44,31 +44,6 @@ For Kenyan fans who follow Real Madrid with religious fervor, this appointment m
 ### What to watch next
 The 10 day window following Benfica's final match will be the critical period for the official announcement. Observers should watch for immediate squad changes, as Mourinho is expected to demand the departure of players he deems unmanageable. The first interaction between Mourinho and Kylian Mbappe during the pre-season tour will provide the first real indication of whether the "Iron Fist" approach can still succeed in the modern era of the mega-star athlete.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -77,17 +52,5 @@ The 10 day window following Benfica's final match will be the critical period fo
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

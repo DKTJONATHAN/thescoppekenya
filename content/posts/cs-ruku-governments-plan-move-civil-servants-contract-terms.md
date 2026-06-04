@@ -24,34 +24,6 @@ Addressing Impunity and Improving Service Delivery CS Ruku articulated that the 
 
 Public and Stakeholder Reactions to the Government's Plan The pronouncement by CS Ruku has already generated considerable discussion and mixed reactions across the nation. While proponents of performance contracting argue that it could bolster accountability and efficiency, critics express concerns regarding potential implications for job security and the independence of various institutions. The transition represents a profound overhaul of Kenya's public service labour market and is anticipated to precipitate extensive debate, particularly from labour unions. As the government moves towards presenting this policy to the Cabinet, the discourse surrounding its constitutional and labour law implications is expected to intensify. Za Ndani continues to provide comprehensive coverage on critical national developments, including issues such as the recent [KeNHA Allays Fears of Flooding at Nairobi Greenpark Underpass: Authority Debunks AI Misinformation](https://zandani.co.ke/article/kenha-allays-fears-flooding-nairobi-greenpark-underpass). 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ Public and Stakeholder Reactions to the Government's Plan The pronouncement by C
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -24,34 +24,6 @@ Broader National Efforts to Power Kenyan Schools and Institutions This national 
 
 The Future of Clean Energy: Powering 3,000 Kenyan Schools The President's initiative is poised to fundamentally transform the energy landscape for educational institutions, drastically reducing their reliance on traditional, carbon-intensive fuels like firewood and charcoal. By moving towards solar energy for cooking, lighting, and other needs, the project is expected to lower operational costs for schools while contributing significantly to Kenya's climate action objectives. This extensive programme not only promises environmental benefits but also aims to create green jobs, strengthening Kenya's climate resilience and accelerating its journey towards green growth. The government's ambitious plan to solarise all schools before the next general election signifies a clear and strong commitment to a sustainable future for the nation's youth. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ The Future of Clean Energy: Powering 3,000 Kenyan Schools The President's initia
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

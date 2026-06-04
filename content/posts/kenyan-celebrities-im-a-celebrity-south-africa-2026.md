@@ -30,34 +30,6 @@ Willy Paul: Drama, Controversy, and Unexpected Vulnerability For a dose of unpre
 
 Eric Omondi: The Global King of Comedy in the Wild Finally, for the much-needed comic relief and a touch of national pride, we submit Eric Omondi. The self-proclaimed "President of Comedy Africa" has a massive global reach, consistently adapting his comedy to resonate with the diaspora experience. Omondi possesses a unique ability to find humor in challenging situations, a skill that would be invaluable in the dreary, often disgusting, 'I'm A Celebrity' camp. His interactions with wildlife, his reactions to ghastly Bushtucker Trials, and his attempts to mediate camp disputes would be comedic gold. He could be the camp's morale booster, or the exasperated observer, providing a cynical running commentary that would perfectly mirror the audience's own thoughts. His presence would ensure that even the most mundane camp chores become entertaining spectacles. As Kenya Airways and TUI Airways partner to boost year-round tourism, perhaps a televised stint in the South African bush is precisely the kind of international exposure our celebrities need to truly cement Kenya's place on the global entertainment map. With the Kenya Airports Authority tendering for a new airport and upgrades to JKIA, which handled 8.93 million passengers in 2025, exceeding its 7.5 million capacity, our stars need better ways to fly out and conquer the world. The bush awaits, and with this dream team, it certainly won't be boring. Watch this space, because if these personalities get their way, 'I'm A Celebrity South Africa 2026' will be a truly Kenyan affair, for better or worse. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -66,17 +38,5 @@ Eric Omondi: The Global King of Comedy in the Wild Finally, for the much-needed 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

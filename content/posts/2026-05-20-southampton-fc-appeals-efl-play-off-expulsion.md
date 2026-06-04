@@ -14,7 +14,7 @@ focusKeyword: "Southampton FC appeals EFL decision to expel club from play-offs"
 schema: "NewsArticle"
 ---
 
-Southampton FC appeals EFL decision to expel club from play-offs is central to this update for Kenyan readers.
+Southampton FC appeals EFL decision to expel club from play-offs is central to this update for Kenyan readers. Southampton FC appeals EFL decision to expel club from play-offs is the central subject of the update.
 
 Southampton FC appeals EFL decision to expel club from play-offs is central to this update for Kenyan readers.
 
@@ -496,17 +496,5 @@ The arbitration panel now holds the power, though expectations should remain gro
 
 The appeal is destined to fail. The four-point deduction will almost certainly remain in place, allowing the EFL to maintain the fiction that its rulebook is a balanced instrument rather than a blunt weapon. In the end, the status quo will be preserved, the headlines will move on, and the club will be left to suffer for the sake of a board that needs to pretend it is in control.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

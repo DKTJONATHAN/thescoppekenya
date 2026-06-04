@@ -30,31 +30,6 @@ This incident highlights a growing trend of using vulnerable citizens as mere pr
 ### A Pattern of Misconduct
 The abandonment of these women is part of a broader pattern of performative governance. Citizens are becoming increasingly weary of officials who prioritize staged theatrical displays over the basic needs of their constituents. The residents of Nakuru have learned that when a government official promises to change lives at a public rally, the only tangible result is often the enrichment of the organizers while the attendees are left to bear the cost of their own exploitation.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -63,17 +38,5 @@ The abandonment of these women is part of a broader pattern of performative gove
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

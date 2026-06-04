@@ -44,17 +44,5 @@ The boardroom must be the primary point of focus during the off-season. If leade
 
 A genuine recovery requires a rigorous assessment of the squad and a total reset of the scouting philosophy. The club must identify why its recruitment process remains so disconnected from its tactical needs. Without a radical restructuring of how players are acquired and how the team is managed, the dysfunction witnessed this season will inevitably become the trend line for the future. Survival is merely a reprieve, not an achievement, for a club built with the stated goal of competing at the very top. Until the internal rot is addressed, Tottenham will continue to drift toward the abyss.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

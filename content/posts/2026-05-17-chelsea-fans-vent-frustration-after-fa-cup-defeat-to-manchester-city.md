@@ -44,17 +44,5 @@ The upcoming summer transfer window represents a decisive juncture. Management m
 
 If the leadership fails to secure a clinical forward capable of alleviating the scoring burden on Palmer, the cycle of inefficiency will likely persist through the next campaign. The impending squad audit will indicate whether the ownership is willing to acknowledge the failure of their current configuration or if they will continue to pursue a strategy that favors volume over function. The result of this decision will define the competitive viability of the club for the foreseeable future.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

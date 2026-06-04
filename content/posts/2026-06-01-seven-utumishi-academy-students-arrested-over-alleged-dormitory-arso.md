@@ -31,17 +31,5 @@ The intensity of the modern student experience may be a contributing factor to t
 ### The Challenge of Institutional Discipline
 Authorities are currently investigating the circumstances surrounding the incident, but the broader challenge lies in understanding why the matchstick has become a common tool for expressing student dissatisfaction. Parents and administrators are left to grapple with the reality that students are prioritizing destructive outlets over constructive conflict resolution. Until the root causes of this unrest are addressed, the focus must remain on ensuring that the only fire these students develop is their passion for learning and personal success.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

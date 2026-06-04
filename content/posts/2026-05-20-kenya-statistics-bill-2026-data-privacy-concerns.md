@@ -40,17 +40,5 @@ The Statistics Bill 2026 is currently undergoing a public participation phase, a
 
 The forthcoming parliamentary debate is expected to determine whether specific safeguards are included to harmonize the bill with current privacy laws. A key point of contention for lawmakers will be clarifying whether the Kenya Statistics Authority is categorized as a data controller or a data processor. As public participation sessions continue, stakeholders are closely monitoring whether future revisions will prioritize the alignment of state mandates with individual rights or favor administrative reach. The outcome of these discussions will define the state’s access to private data for the next decade.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

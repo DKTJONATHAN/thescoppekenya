@@ -42,17 +42,5 @@ The assault on Wandeto highlights an erosion of civic safety. When political loy
 ### What to watch next
 The focus remains on Kenyatta National Hospital, where medical teams are working to stabilize Wandeto. On the legal front, the effectiveness of the police investigation will serve as a bellwether for how the government intends to handle politically motivated violence against civilians. The public should watch for upcoming police statements regarding the identification of the suspects and whether the investigation leads to a wider probe into local groups operating under the guise of political enforcement.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

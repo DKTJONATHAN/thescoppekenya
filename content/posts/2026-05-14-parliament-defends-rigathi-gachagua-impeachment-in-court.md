@@ -42,31 +42,6 @@ This legal battle represents a crossroads for our democracy. If the High Court f
 
 The coming weeks will reveal whether the High Court intends to intervene in the internal mechanics of the legislature or if it will uphold the doctrine of separation of powers. All eyes remain on the bench as it deliberates whether the Senate acts as a sovereign entity in these matters. The eventual verdict will serve as the definitive handbook for how future impeachments are conducted. It will set Za Ndani for how much interference is legally permissible when the legislature decides to remove a high-ranking official from office, ultimately defining the limits of power in our republic.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -75,17 +50,5 @@ The coming weeks will reveal whether the High Court intends to intervene in the 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

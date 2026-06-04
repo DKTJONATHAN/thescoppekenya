@@ -38,17 +38,5 @@ This reactive recruitment, chasing a winger to fill the Mohamed Salah-sized void
 
 The departures of Salah, the impending exit of Ibrahima Konate when his contract expires, and Joe Gomez seeing out the final year of his deal before also leaving, signify a substantial overhaul. Iraola isn't inheriting a finely-tuned machine; he's stepping into a construction site, potentially with demolition work still underway. The club's "longest-serving player" effectively serving out his notice period hardly screams stability or a shared long-term vision. This is a squad in flux, and the rapid managerial change-up only adds another layer of uncertainty to an already complex rebuilding task. The true test for Iraola will be not just navigating the transfer market, but steadying a ship that looks increasingly adrift.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -35,17 +35,5 @@ Chief Government Pathologist Johansen Oduor conducted the autopsy and provided a
 
 The gap between the forensic findings and the initial police report has raised serious questions about accountability within the Kiambu Police Station. This incident is being viewed as a significant example of police brutality and a subsequent attempt to mask the facts. The family of Brian Njunge is now calling for a thorough investigation to identify the individuals responsible for the killing. Public demand for justice continues to grow as the case highlights ongoing concerns regarding the safety of citizens in police custody.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

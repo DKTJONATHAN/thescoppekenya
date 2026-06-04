@@ -24,34 +24,6 @@ From Silver Screen to Sound Booth: Ray Emodi's Music Career - A Risky Move? So, 
 
 Beyond Ray Emodi: Are Other Nollywood Stars Feeling the Pressure? Ray's departure has truly ignited a wider discussion about the pressures facing Nollywood stars. He's not the first, and he probably won't be the last, to step away citing similar reasons. Are other big names quietly battling anxiety or dealing with family expectations behind the scenes? What about those "frightening experiences on set" - are they more common than we think? His candour might just empower other actors to speak up about the conditions they face, whether it's safety concerns, mental health struggles, or the constant juggle of public and private life. This isn't just about Ray Emodi anymore; it's about the entire ecosystem of the African film industry. Will his brave move inspire more dialogue and, dare we hope, actual improvements in working conditions for our beloved Nollywood stars? We certainly hope so! 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ Beyond Ray Emodi: Are Other Nollywood Stars Feeling the Pressure? Ray's departur
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

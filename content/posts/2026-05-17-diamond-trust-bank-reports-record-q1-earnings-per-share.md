@@ -42,17 +42,5 @@ The critical indicator for stakeholders in the upcoming mid-year report will be 
 
 Analysts will also monitor whether the institution can diversify its revenue base. Currently, non-funded income streams remain underdeveloped relative to the bank's total scale. The transition toward a more balanced revenue mix will be necessary if the bank intends to sustain its earnings growth beyond the current interest-rate cycle. The market expects the next round of interim financial disclosures in August, which will provide further clarity on the bank's ability to manage its risk exposure while navigating a tepid economic landscape.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -28,34 +28,6 @@ Combatting Victim-Blaming and Asserting Autonomy: It's a Weapon of Control A dis
 
 Demanding Systemic Reform: Recognizing the Hidden camera as a Weapon While anger is a natural and justified response to these revelations, this moment demands more than indignation. It necessitates a concerted demand for reform at legal, structural, and social levels. Law enforcement agencies must treat technology-facilitated sexual and gender-based violence with the urgency it deserves, strengthening the handling of digital evidence to ensure more just outcomes. The protection of survivors' safety and privacy must be paramount, underpinned by clear safeguarding principles and rigorous enforcement. Ultimately, we must expand our collective understanding of sexual violence, recognising that it encompasses not only physical force but also the insidious entitlements and disregard for consent boundaries exemplified by the weaponisation of a hidden camera. By acknowledging this recent case as part of a broader, systemic pattern, we can begin to dismantle the structures that enable such abuse and ensure that Kenyan women can truly be safe, in public and private, offline and online. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -64,17 +36,5 @@ Demanding Systemic Reform: Recognizing the Hidden camera as a Weapon While anger
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

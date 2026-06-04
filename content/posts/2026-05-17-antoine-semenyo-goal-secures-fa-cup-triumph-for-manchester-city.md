@@ -42,17 +42,5 @@ The gap between the top tier of European football and the developmental leagues 
 
 The summer transfer window is looming, and with Bernardo Silva and John Stones moving on, Manchester City will again have to enter the market. The focus will shift to how they replace veteran experience with fresh assets. For Kenyan scouts and club owners, the period ahead serves as a mirror. As local sides like [Spurs have shown in their recent resurgence](https://zandani.co.ke/article/spurs-climb-out-of-relegation-zone-after-stunning-de-zerbi-inspired-), identifying the right fit is the difference between stagnation and competitive growth. The next target for the global scouting network is already being identified, and the price tag will once again dictate the narrative.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

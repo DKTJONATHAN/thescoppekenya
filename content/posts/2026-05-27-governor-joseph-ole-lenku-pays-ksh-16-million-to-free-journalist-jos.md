@@ -31,17 +31,5 @@ Governor Joseph Ole Lenku did not miss the chance to play the savior, leading a 
 ### Philanthropy through financial ruin
 The attempt by Metito to paint this windfall as a charitable venture for Kajiado residents has been met with sharp sarcasm across the region. Critics find it difficult to reconcile the image of a philanthropist with someone who sent a scribe to Kamiti over a debt. The narrative that destroying the livelihood of a professional serves the public good is a tough sell, even for a State House insider. As Mungai returns to his family, the consensus on the ground is that the only thing philanthropic about the situation was the speed at which his freedom was bought by a political rival. In the streets of Kajiado, the takeaway is clear: one man got his millions, another got his hero moment, and the journalist is just glad his host at the government Airbnb finally processed his check out.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -36,17 +36,5 @@ For Kenyan cinephiles and media students, this case study is a vital lesson in h
 
 As the June 9 release date approaches, academic and film circles are expected to engage in a robust debate regarding the validity of production logs versus personal memoirs. Critics will likely scrutinize the book for its methodology in weighing the testimony of the late crew members against the living memory of the lead star. Future film history documentation will likely move toward this hybrid approach, valuing technical logs as heavily as emotional testimonies. Industry followers should monitor how archival records, once buried in dusty studio basements, continue to alter the reputations of iconic directors and the stars who worked under them. The debate over the veracity of The Birds set is far from over, as new documentary projects may soon attempt to sync these conflicting accounts with surviving film rushes.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

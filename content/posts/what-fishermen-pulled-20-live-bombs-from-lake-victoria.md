@@ -22,34 +22,6 @@ Discovery Incidents The initial incident unfolded on Sunday, March 1, when fishe
 
 Historical Context of Recoveries This is not the first instance of explosives being found within Lake Victoria's waters. In August 2021, fishermen from Homa Bay County recovered six mortar bombs from the vast lake. That incident led to panic among the crew, with some reportedly jumping into the lake while others safely navigated their boat away from the danger. Reports frequently suggest that these explosives are remnants from past military conflicts or, in some cases, date back to the colonial era. A similar discovery occurred in 2019, when colonial-era explosives were found concealed within an old, rusty wooden box in the lake, prompting concerned residents to hand them over to the authorities. Beyond Lake Victoria, bombs have also been recovered in other parts of the country, notably in Samburu, where multiple mortar bombs linked to British Army Training Units (BATUK) are consistently found by herders.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -58,17 +30,5 @@ Historical Context of Recoveries This is not the first instance of explosives be
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -48,17 +48,5 @@ The coming weeks will hinge on the bail hearing and the disclosure of the prosec
 
 For those watching closely, the core issue is not the emotional toll of Mbugua’s passing, but the specific legal threshold of the 2.5 million KSh claim. Until the prosecution reveals its primary evidence, the public record remains incomplete, leaving Dedan Kimani in a precarious position at Nairobi West Prison. The courtroom will ultimately strip away the noise, leaving only the receipts of what actually transpired between the parties involved. Grief is a heavy burden, but in the eyes of the law, it is not a defense against a felony charge.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

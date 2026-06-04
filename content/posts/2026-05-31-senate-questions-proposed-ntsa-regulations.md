@@ -40,17 +40,5 @@ Senators Mwenda Gataya and Rosebella Ojiambo expressed skepticism toward the Min
 
 The committee is expected to issue a formal directive to the Ministry of Roads and Transport within the next fortnight. Whether the government will adjust the compliance deadline to accommodate the financial realities of school operators remains the primary indicator of how these regulations will ultimately affect the national transport ecosystem. All stakeholders are now waiting for the committee’s final recommendations, which will determine if the current safety roadmap remains on its aggressive course or shifts toward a more gradual enforcement model.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -40,17 +40,5 @@ The people of Wajir deserve to know that the focus on their water and transport 
 
 I ask the government to treat these infrastructure projects as permanent features of the national budget, not as temporary political gestures. Commit to the long-term oversight of these water systems and maintain the air corridors as competitive trade routes, ensuring that Wajir remains a priority long after the last Independence Day song fades.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

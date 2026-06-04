@@ -22,34 +22,6 @@ The Silent Airwaves: Radio Maisha's Non-Response The bombshell dropped by Shugab
 
 Beyond Shugaboy: A Glimpse into Media's Dark Underbelly Shugaboy's plight is not an isolated incident but a symptom of wider, systemic financial challenges gripping Kenya’s media industry. The Kenya Union of Journalists (KUJ) has consistently flagged how some media houses struggle to meet payroll obligations, directly impacting staff welfare and operational stability. Analysts point fingers at shrinking advertising revenue and delayed payments from both government and private advertisers as significant contributors to this sector-wide financial pressure. While the specific financial details of individual stations remain shrouded in secrecy, the ripple effect is clear: talented professionals like Shugaboy are allegedly left unpaid, their dedication exploited while the industry quietly crumbles. It raises serious questions about the sustainability of media careers and the true cost behind the polished broadcasts Kenyans consume daily. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -58,17 +30,5 @@ Beyond Shugaboy: A Glimpse into Media's Dark Underbelly Shugaboy's plight is not
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

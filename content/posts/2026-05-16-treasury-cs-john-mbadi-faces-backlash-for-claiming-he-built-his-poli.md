@@ -30,17 +30,5 @@ The growing friction within ODM reflects a broader pattern of internal instabili
 ### The strategic impact of presidential maneuvering
 Political observers point to the broader influence of President William Ruto’s administration as a key driver of this internal strife. The current government has strategically courted opposition leaders, creating incentives for figures like Mbadi to adopt more independent stances. By encouraging opposition members to redefine their allegiances, the administration has successfully fractured the once-solid ODM front. Mbadi now finds himself in a precarious position, attempting to navigate a new political reality while his former allies question his loyalty, proving that when politicians choose to diminish the importance of their predecessors, they often find their own political capital rapidly eroding in the process.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

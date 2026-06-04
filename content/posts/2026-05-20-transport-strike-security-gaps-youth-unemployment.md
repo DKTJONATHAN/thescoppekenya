@@ -42,17 +42,5 @@ Pay close attention to the policy rhetoric in the coming weeks. Are we hearing s
 
 The silence that follows the smoke is not peace. It is merely a pause, waiting for the next catalyst to reveal the deep fissures we refuse to mend. We must decide if we will continue to address the symptoms or finally begin the hard work of addressing the cause.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

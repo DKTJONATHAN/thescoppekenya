@@ -26,34 +26,6 @@ Public Participation Crucial for Roadside Stations Framework The draft Regulator
 
 Road Safety Imperative Amidst Surging Accidents The announcement of these regulations comes at a time when Kenya has experienced a troubling increase in road carnages, particularly those involving heavy commercial vehicles. National Transport and Safety Authority (NTSA) data indicates a rise in road fatalities, with 4,458 deaths recorded in 2025, a 3.4 percent increase from the previous year, and 2026 has started on a similarly grim trajectory. Limited rest areas are identified as a contributing factor to driver fatigue and risky overtaking, particularly along critical corridors like the Mombasa-Nairobi-Naivasha-Nakuru-Eldoret-Malaba highway. Just last week, on Monday, February 23, two people tragically lost their lives along the Southern Bypass after a lorry collided with a trailer near Lang'ata. While some reports indicated the vehicles were travelling in the same direction, the incident underscored the severe risks on national roads. Such incidents highlight the critical need for regulated roadside stations to mitigate driver fatigue, provide safe parking, and ultimately reduce the alarming rate of road accidents across the country. The Ministry of Transport's proposed regulations represent a proactive and crucial step towards establishing a more structured, safer, and efficient road network, essential for both national development and the well-being of road users. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -62,17 +34,5 @@ Road Safety Imperative Amidst Surging Accidents The announcement of these regula
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

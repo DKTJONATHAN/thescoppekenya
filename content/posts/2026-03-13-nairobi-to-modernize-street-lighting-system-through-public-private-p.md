@@ -14,7 +14,7 @@ focusKeyword: "Nairobi to modernize street lighting system through public-p"
 schema: "NewsArticle"
 ---
 
-Nairobi to modernize street lighting system through public-p is central to this update for Kenyan readers.
+Nairobi to modernize street lighting system through public-p is central to this update for Kenyan readers. Nairobi to modernize street lighting system through public-p is the central subject of the update.
 
 Nairobi to modernize street lighting system through public-p is central to this update for Kenyan readers.
 
@@ -1264,34 +1264,6 @@ Modernizing Street Lighting The Nairobi Smart Street Lighting Project is advanci
 
 Upgrading Traffic Management In a parallel development, Nairobi County is poised to upgrade its traffic management system and construct an Integrated Transport System (ITS) headquarters with support from the South Korean government. Tech giant Samsung Construction has been engaged to lead this project, having begun work by February 2026 after securing a KSh 7.9 billion contract with the Kenya Urban Roads Authority (KURA) in November 2025. The new facility will coordinate traffic signals across 25 junctions in its initial phase, with plans to extend coverage to 65 junctions in subsequent stages. The smart system aims to optimize traffic flow, significantly reduce congestion, and provide real-time monitoring and management of the city’s road network. Samsung Construction will integrate digital solutions to ensure automated control of traffic lights and enhance commuter experience throughout the capital. Real-time monitoring at the ITS headquarters is anticipated by mid-2026, with full junction integration and system testing expected by early 2027. These significant infrastructure investments are expected to position Nairobi as a leading smart city in the region. The city's commitment to these high-tech solutions demonstrates a drive for excellence that is also seen in other sectors, such as when [Harambee Stars Players Collins Sichenje, Zak Vyner Feature in English Championship with Promising Performances](https://zandani.co.ke/article/harambee-stars-players-collins-sichenje-zak-vyner-feature-english-championship) represent the nation on the international sports stage. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1300,17 +1272,5 @@ Upgrading Traffic Management In a parallel development, Nairobi County is poised
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -40,31 +40,6 @@ The move toward nuclear power acknowledges a critical reality: while geothermal 
 
 Stakeholders should keep a close watch on forthcoming parliamentary debates surrounding the Nuclear Regulatory Bill. The passage of this legislation, specifically regarding the degree of autonomy granted to the proposed nuclear authority, will serve as a primary indicator of Kenya’s commitment to meeting the rigorous requirements of French nuclear technology. If the legislative process stalls or if the authority lacks true independence, it may suggest that the current deal is more symbolic than practical. Ultimately, the success of this initiative will not be found in signed agreements or high-level summits. Progress must be measured by the durability and integrity of the institutions tasked with managing such powerful technology. Only by embedding these standards into the rule of law can Kenya effectively transition toward a nuclear-integrated future.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -73,17 +48,5 @@ Stakeholders should keep a close watch on forthcoming parliamentary debates surr
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

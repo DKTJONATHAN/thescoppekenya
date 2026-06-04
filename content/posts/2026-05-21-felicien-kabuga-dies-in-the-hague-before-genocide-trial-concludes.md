@@ -40,17 +40,5 @@ The path ahead for international humanitarian law is now fraught with difficult 
 
 You deserve more than this quiet, unresolved ending. You earned the right to see a courtroom record the truth of your experiences and to witness a formal judgment against your tormentor. Please do not accept this as the final word. The international community must be held to account for why it allowed the clock to expire before justice could be served. You are the rightful keepers of the truth, and your pursuit of accountability remains as necessary today as it was in 1994.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

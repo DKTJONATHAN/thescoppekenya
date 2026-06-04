@@ -42,17 +42,5 @@ The relentless frequency of these losses underscores the dangers of operating wi
 
 Expect increasing pressure on industry leaders and government stakeholders to move beyond empty tributes in the coming year. We are likely to see a significant push for the establishment of a unified Creative Industry Health Fund. If the sector fails to implement these essential protections, it risks a talent exodus toward regions where professional stability is treated with the same urgency as creative output. The necessary shift must be both legislative and structural, moving away from erratic social media appeals toward a mandatory, transparent, and industry-wide insurance framework that finally treats the human beings behind the screen with the dignity they deserve.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

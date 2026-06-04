@@ -30,17 +30,5 @@ Conversations regarding school safety protocols are intensifying across the coun
 ### Seeking answers in a dark time
 As official investigations continue, the public is searching for clarity and justice. Kenyans are weary of vague explanations and demand a thorough process to ensure such a catastrophe does not happen again. The collective sentiment is clear: no parent should have to bury their child under these circumstances. The country remains united in its sorrow, offering condolences to those who have lost loved ones and standing in solidarity with the community affected by this disaster.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

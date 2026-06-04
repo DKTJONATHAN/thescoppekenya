@@ -14,7 +14,7 @@ focusKeyword: "Police Officers Injured After Suspected Al-Shabaab IED Hits"
 schema: "NewsArticle"
 ---
 
-Police Officers Injured After Suspected Al-Shabaab IED Hits is central to this update for Kenyan readers.
+Police Officers Injured After Suspected Al-Shabaab IED Hits is central to this update for Kenyan readers. Police Officers Injured After Suspected Al-Shabaab IED Hits is the central subject of the update.
 
 Police Officers Injured After Suspected Al-Shabaab IED Hits is central to this update for Kenyan readers.
 
@@ -1266,34 +1266,6 @@ Casualties and Response Corporal Kipkurui Kosgei suffered bruises on his left ha
 
 Broader Context of Attacks This latest incident in Mandera follows a pattern of recent IED attacks. Less than a month prior, on February 23, three police officers were injured in Garissa County after a blast struck their water bowser in Fafi Sub-County. Earlier in February, officers from the Counter Terrorism Policing Unit successfully disrupted a planned terror attack in Nairobi, recovering assault rifles, pistols, and explosive devices. These events underscore the persistent threat posed by militant groups in border regions. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1302,17 +1274,5 @@ Broader Context of Attacks This latest incident in Mandera follows a pattern of 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

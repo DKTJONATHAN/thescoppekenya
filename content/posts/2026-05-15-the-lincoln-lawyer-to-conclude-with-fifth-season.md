@@ -46,31 +46,6 @@ The countdown to the final gavel in 2027 provides the perfect opportunity to rev
 
 As we move toward the final season, we can appreciate the role Mickey Haller has played in our downtime. He reminded us that the law, while codified in dusty books, is often won through conviction, unconventional thinking, and the sheer audacity to challenge the status quo. While the show may end in 2027, the blueprint for the charismatic, rule-breaking attorney will remain a staple of our collective imagination.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -79,17 +54,5 @@ As we move toward the final season, we can appreciate the role Mickey Haller has
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

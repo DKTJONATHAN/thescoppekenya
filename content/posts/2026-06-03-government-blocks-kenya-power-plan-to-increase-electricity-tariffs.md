@@ -36,17 +36,5 @@ The government’s decision creates a clear divide between immediate consumer re
 
 While the current move protects consumers from an immediate rise in bills, it does nothing to address the structural deficits within the power sector. The challenge now lies in how the ministry plans to balance the political necessity of keeping energy affordable with the technical requirement of funding grid improvements. Without a clear plan to bridge this gap, many fear the current reprieve will only lead to more severe energy service failures in the future. As the country balances these competing interests, the public mood remains one of cautious relief held in check by the memory of previous promises that failed to deliver lasting stability.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

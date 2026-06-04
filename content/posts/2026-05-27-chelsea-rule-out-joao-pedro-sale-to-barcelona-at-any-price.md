@@ -36,17 +36,5 @@ So, with the 'dream' and the 'second choice' both firmly off the table, Barcelon
 
 So, Anthony Gordon it is. Barcelona, a club supposedly synonymous with 'Més Que Un Club', is reduced to signing a winger on versatility arguments, a direct consequence of being priced out of their initial targets. This isn't ambition; it's pragmatism born of financial constraints and a continuous failure in strategic planning. The Catalan giants are stuck in an endless cycle: aim high, fail, scramble, compromise. And the media, including the likes of Ben Jacobs, simply chronicles the inevitable pivot. It makes for good copy, but for a club of Barcelona's stature, it's a slow, public erosion of credibility. Expect more of the same next summer.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

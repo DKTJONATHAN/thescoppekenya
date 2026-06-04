@@ -42,31 +42,6 @@ This incident illuminates a rising tide of public impatience. Nairobians are tir
 
 The coming months will likely bring a surge in documented encounters between civilians and law enforcement. Expect to see more public figures leveraging their platforms to capture roadside interactions, effectively pressuring the police to reform through the threat of viral exposure. Authorities will soon face a stark choice: they can either double down on aggressive, archaic enforcement or adapt to a more transparent, public-facing approach to traffic management. The days of quiet frustration are fading fast. The age of the smartphone audit has arrived, and it is here to stay.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -75,17 +50,5 @@ The coming months will likely bring a surge in documented encounters between civ
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

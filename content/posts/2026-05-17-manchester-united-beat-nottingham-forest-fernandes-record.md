@@ -42,17 +42,5 @@ With the season finale scheduled for Sunday, 24 May, the focus now turns toward 
 
 For Fernandes, the final day offers a personal opportunity to claim the assist record outright and solidify his place in the history books. Yet, the broader challenge rests with the recruitment staff. The work being done behind the scenes to finalize targets will determine whether the club can maintain this newfound fluidity or if they will suffer a regression when the new campaign begins in August. The transition is underway, but the most difficult labor of building a consistent, winning team still lies ahead.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -30,17 +30,5 @@ The argument that one should only be held accountable if all other participants 
 ### Accountability versus collective deflection
 The ongoing investigation into the Kenya Pipeline Company parcel serves as a stark reminder of the challenges surrounding institutional integrity. By framing his potential prosecution as a matter of selective justice, Kositany avoids addressing the fundamental illegality of the land transfer. This strategy of deflection underscores a broader trend in which individuals caught in the unauthorized possession of public property prioritize personal grievances over the rule of law. Ultimately, asserting that others have committed more significant offenses does not absolve an individual of legal responsibility, nor does it mitigate the ethical implications of the original land acquisition.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

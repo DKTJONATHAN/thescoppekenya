@@ -15,7 +15,7 @@ focusKeyword: "Treasury CS John Mbadi Appoints Selection Panel for State-Ow"
 schema: "NewsArticle"
 ---
 
-Treasury CS John Mbadi Appoints Selection Panel for State-Ow is central to this update for Kenyan readers.
+Treasury CS John Mbadi Appoints Selection Panel for State-Ow is central to this update for Kenyan readers. Treasury CS John Mbadi Appoints Selection Panel for State-Ow is the central subject of the update.
 
 Treasury CS John Mbadi Appoints Selection Panel for State-Ow is central to this update for Kenyan readers.
 
@@ -1269,34 +1269,6 @@ Key Appointments in the Legal Sector In a separate move, Attorney-General Dorcas
 
 Reappointments Across Public Service Boards Labour Cabinet Secretary Alfred Mutua has reappointed Isaac Kaberia and Milkah Kimonda to the National Social Security Fund (NSSF) board for an additional three years. At the Ewaso Ng’iro South River Basin Development Authority, CS Beatrice Askul reappointed Caroline Pulei, Eunice Singoei, Mathew Gathua, Elijah Kesei Metian, and Veronica Silantoi Mwangi, among others, to its board for a three-year term. In the Trade docket, CS Lee Kinyanjui announced changes and retentions within the Kenya Leather Development Council (KLDC), with Florence John, Regina Ngima Muthami, and David Kipkemoi Rotich among those retained. Lands CS Alice Wahome reappointed Victor Olonde and appointed Rashid Haron Shake as new members to the Valuers Registration Board, each for three-year terms. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1305,17 +1277,5 @@ Reappointments Across Public Service Boards Labour Cabinet Secretary Alfred Mutu
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

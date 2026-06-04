@@ -24,34 +24,6 @@ Authority's Justification and Future Plans KeNHA stated that the demolished stru
 
 Public and Political Reactions The demolitions have drawn criticism from some leaders and residents. Irungu Nyakera, Nairobi DCP Patron and gubernatorial aspirant, accused the government of carrying out the exercise without empathy for the affected traders. Nyakera highlighted a perceived disconnect between government promises of transforming Nairobi into a modern city and the reality of traders losing their income sources through abrupt demolitions. He commented on the cooperation agreement between the Nairobi City County Government and the National Government, suggesting it enables widespread demolitions without compassion. This incident follows a similar exercise in Githurai weeks prior, which led to protests, clashes between traders and police officers, and bonfires that temporarily disrupted transport along parts of the Thika Superhighway. Despite the backlash, KeNHA insists that the ongoing crackdown on unlawful structures will continue in other areas, including Kahawa West, as part of its efforts to reclaim road reserves and enhance safety along one of the country’s busiest transport corridors.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ Public and Political Reactions The demolitions have drawn criticism from some le
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

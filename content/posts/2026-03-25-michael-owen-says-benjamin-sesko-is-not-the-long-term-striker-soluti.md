@@ -14,7 +14,7 @@ focusKeyword: "Michael Owen says Benjamin Sesko is not the long-term strike"
 schema: "NewsArticle"
 ---
 
-Michael Owen says Benjamin Sesko is not the long-term strike is central to this update for Kenyan readers.
+Michael Owen says Benjamin Sesko is not the long-term strike is central to this update for Kenyan readers. Michael Owen says Benjamin Sesko is not the long-term strike is the central subject of the update.
 
 Michael Owen says Benjamin Sesko is not the long-term strike is central to this update for Kenyan readers.
 
@@ -1264,34 +1264,6 @@ Sesko: Another Expensive Stopgap Owen's assertion that Benjamin Sesko is "not th
 
 Carrick's 'Unbelievable' Honeymoon Period The true absurdity lies in the Michael Carrick situation. Owen is "astounded" that anyone would question Carrick's suitability for the permanent manager's role, citing his impressive record of seven wins, two draws, and only one loss. If the league had started with Carrick's appointment, United would be top. This immediate success, however, conveniently sidesteps the volatile nature of football, especially at Old Trafford. How many 'interim' or 'new manager bounce' periods have fans witnessed before the inevitable slump? Owen's argument- "What's the worst that can happen? You give him a two-year contract"-is surprisingly naive for a pundit. United's history post-Ferguson is a graveyard of "proven managers" and "ex-players" who started well before the wheels came off. To suggest that a short, albeit successful, run negates the need for rigorous long-term planning is precisely the kind of reactive thinking that has kept United from genuinely challenging. They've tried everything, from Van Gaal to Mourinho, Moyes to Solskjaer, and even the "new up-and-coming Portuguese superstar in Amorim" or Ralf Rangnick. Carrick's current form is fantastic, but United's desperation to cling to any glimmer of hope blinds them to the cyclical nature of their managerial merry-go-round. This is less about Carrick's brilliance and more about United's prolonged institutional amnesia. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1300,17 +1272,5 @@ Carrick's 'Unbelievable' Honeymoon Period The true absurdity lies in the Michael
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

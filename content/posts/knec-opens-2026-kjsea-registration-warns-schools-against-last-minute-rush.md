@@ -24,34 +24,6 @@ Administrative Burden and Data Integrity in KJSEA Registration The stringent req
 
 Systemic Failures Beyond the Last-Minute Rush The council's recurring warning against a "last-minute rush" effectively shifts the onus onto schools, often sidestepping the systemic failures that contribute to this phenomenon. These include insufficient ICT support from educational authorities, inadequate training for school personnel on new digital platforms, and the inherent difficulties faced by schools in remote areas with limited resources. The threat of penalties for late registration, which includes fines and even de-registration of schools as assessment centres, further exacerbates pressure on institutions already operating under constrained conditions. Ultimately, for KNEC's digital registration initiatives to truly streamline the examination process and ensure equity, a more comprehensive approach is required. This must extend beyond mere warnings to include robust investment in digital infrastructure for all schools, enhanced digital literacy training for educators and administrators, and a proactive mechanism to address technical glitches that frequently mar online processes. Without such foundational support, the "last-minute rush" will remain an annual symptom of deeper systemic inequalities within Kenya's evolving education landscape. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ Systemic Failures Beyond the Last-Minute Rush The council's recurring warning ag
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

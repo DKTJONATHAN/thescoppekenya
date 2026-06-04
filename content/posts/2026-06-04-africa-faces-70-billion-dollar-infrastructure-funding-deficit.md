@@ -40,17 +40,5 @@ Building this capacity requires shifting away from the convenience of government
 
 The next time you see a rise in the cost of basic commodities, look beyond global supply chain disruptions. Consider the idle capital in our financial system that could be building the roads and power lines needed to lower your daily expenses. Demand for policy shifts that incentivize local investment into public infrastructure is not just a call for better roads; it is a fundamental step toward securing a more stable cost of living for every working household.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

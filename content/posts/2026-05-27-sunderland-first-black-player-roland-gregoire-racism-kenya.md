@@ -36,17 +36,5 @@ The financial settlement offered was viewed as a profound insult, failing to ref
 
 The fallout from these events led to a 46-year period of total withdrawal from the sport. Gregoire did not merely retire, he was effectively pushed out by a system that refused to acknowledge the unique trauma of his tenure. The 1978 Kenya tour, once a minor detail in the club’s history, now serves as a symbol of how football clubs of that era failed their Black players. As the football world looks toward the future, the ghosts of 1978 serve as a reminder that without structural support, talent is easily extinguished by prejudice. Sunderland AFC faces a reckoning with its past as Gregoire’s testimony gains traction, potentially forcing the club to finally address the debt of silence owed to its first Black player.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

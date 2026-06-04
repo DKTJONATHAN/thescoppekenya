@@ -40,17 +40,5 @@ This disclosure forces a transition from a narrative of personal medical triumph
 
 The aftermath of Oritsejafor's announcement will likely be measured by whether it sparks a genuine conversation regarding the lack of specialized cancer facilities within Nigeria. Observers are questioning if this high-profile admission will serve as a catalyst for philanthropic investment or policy reform intended to upgrade domestic capabilities. Whether this remains a personal survival story or transforms into a movement toward better local healthcare will depend on whether influential figures begin to prioritize the sustainability of the Nigerian medical sector over the convenience of international alternatives. The public will be watching to see if the rhetoric of leadership extends to the health of the nation at large.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

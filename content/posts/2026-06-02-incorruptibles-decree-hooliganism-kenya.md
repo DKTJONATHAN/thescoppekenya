@@ -41,17 +41,5 @@ As Principal Secretary Raymond Omollo spoke of accountability and democratic fre
 
 The shadow of the guillotine may have receded from the public square, but the axe of selective justice still fell, quietly, in the hearts of those who dared to hope for a genuine end to the cycle of political violence. The echoes of Robespierre’s earnest declarations, ironically, still resonated in the pronouncements of zero tolerance, leaving the disquieting thought that some forms of terror are merely rebranded for a new age.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -26,34 +26,6 @@ Future Games, Future Gains? So, what's to be done when the pitches are too hot o
 
 What's a Pundit to Do? Ultimately, this World Economic Forum report is a stark wake-up call. The sports industry is not only vulnerable to environmental degradation but also a "significant contributor" to it. We need to see serious investment in sustainable practices and initiatives to get people moving again. Otherwise, the future of sport, as we know it, could be facing an absolute mountain of trouble. It's time for some clever thinking, eh? 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -62,17 +34,5 @@ What's a Pundit to Do? Ultimately, this World Economic Forum report is a stark w
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

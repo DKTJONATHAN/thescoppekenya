@@ -39,17 +39,5 @@ Makamu’s alleged transgression was to challenge the Governor’s leadership, c
 
 The stage has changed, the hemlock cup replaced by a suspension letter, but the underlying narrative persists. The orengo vs makamu political rally remarks, like Socrates’s gadfly stings, were perceived not as mere words, but as an act of undermining, a dangerous corruption of the public sphere. The outcome, though less fatal, carried a similar chilling message: speak out against the powerful, and face the consequences. For just as Athens once preferred silence to self-examination, so too do some modern authorities favor order over outspoken criticism. And the wise, or merely the observant, are left to ponder: what wisdom is truly lost when the gadfly is swatted away?
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

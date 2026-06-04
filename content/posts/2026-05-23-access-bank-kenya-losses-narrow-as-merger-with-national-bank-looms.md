@@ -42,17 +42,5 @@ The dependency on the US$106.7 million guarantee suggests that the bank's curren
 
 The focus now shifts to the next set of regulatory filings and the formal approval milestones for the NBK merger. Market observers should watch for updates on whether the capital injection meets the specific liquidity triggers defined in the November guarantee. Any deviation from the projected timeline could indicate a struggle to secure the necessary approvals, likely leading to further pressure on the bank's operational budget. The next earnings report will clarify whether the non-interest income growth can be sustained while the bank undergoes the structural overhaul required for the merger.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

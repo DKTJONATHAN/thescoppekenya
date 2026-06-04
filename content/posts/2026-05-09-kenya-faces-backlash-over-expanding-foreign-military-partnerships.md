@@ -42,31 +42,6 @@ Citizens should closely scrutinize the specific legal clauses of the France-Keny
 
 True sovereignty is not defined by the number of foreign flags fluttering at our military bases. It is defined by the ability of a Kenyan court to prosecute anyone who violates our laws, regardless of their nationality or uniform. Until the state secures this, these military deals remain a reckless gamble where the government enjoys the prestige while the citizens bear the risks.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -75,17 +50,5 @@ True sovereignty is not defined by the number of foreign flags fluttering at our
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

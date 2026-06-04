@@ -40,34 +40,6 @@ Creating a daily practice habit that actually sticks Consistency beats intensity
 
 Taking your drawings to the next level Once the basics feel comfortable, layer in more advanced ideas like foreshortening, complex lighting setups, or inventing from imagination. Experiment with different media such as charcoal for bold values or ink for decisive lines. Study master works by copying their simplified shapes and value patterns to absorb design lessons. Try drawing the same subject in multiple styles to stretch your creativity. Most importantly, enjoy the journey. Drawing sharpens your ability to see the world with fresh eyes and brings a deep sense of accomplishment. Keep showing up, stay curious, and your sketches will keep surprising you with how good they become. You have everything you need right now to start creating. So pick up that pencil and make your first mark today.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -76,17 +48,5 @@ Taking your drawings to the next level Once the basics feel comfortable, layer i
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

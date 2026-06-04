@@ -44,31 +44,6 @@ We are likely to see a new breed of Kenyan artist emerge-one that is transparent
 
 Trend Forecast: The era of the Legacy Premium is effectively over. Over the next eighteen months, artists who fail to optimize their digital presence and global streaming metrics will find themselves increasingly priced out of major events in Nairobi. We expect the role of the Metric Consultant to become a vital, mandatory fixture in modern artist management.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -77,17 +52,5 @@ Trend Forecast: The era of the Legacy Premium is effectively over. Over the next
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

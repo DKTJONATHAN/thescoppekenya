@@ -28,17 +28,5 @@ There is a growing perception that the state operates on a specific incentive st
 ### Surveillance and the Future of Digital Expression
 This arrest highlights a broader trend of state surveillance regarding public utterances, even as the government promotes regional technological growth and digital trade. The administration appears to be setting a clear boundary for the digital space, prioritizing national order and praise over critical voices that stir public discontent. For many looking to improve their status, the path to upward mobility now requires a strategic shift from criticizing the establishment to becoming a vocal supporter of the regime's policies. The quickest route to a government appointment is often through a choir of praise rather than a platform of protest.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

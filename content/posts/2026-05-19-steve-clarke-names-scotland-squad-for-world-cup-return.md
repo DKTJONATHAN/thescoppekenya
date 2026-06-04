@@ -44,17 +44,5 @@ As the squad heads to North America for the kickoff on 11 June, the focus will s
 
 For the Scottish faithful, the tournament represents a chance to rewrite the final chapters of a long, tired book. The journey begins in June, but for those who have waited since the nineties, the victory was already secured the moment the final roster was pinned to the wall. The game is finally theirs to play again.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

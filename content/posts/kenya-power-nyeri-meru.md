@@ -18,34 +18,6 @@ Kenya Power Schedules Power Maintenance In Nyeri and Meru Co is central to this 
 
 ## Kenya Power Plunges Nyeri, Meru into Darkness (Again) Kenya Power announced scheduled power interruptions for parts of Nyeri and Meru counties on Friday, April 9, impacting residents from 8:00 a.m. to 5:00 p.m. The utility firm attributed these extensive outages to "ongoing maintenance works," affecting areas like Thamaru and Ngunguru in Nyeri, and Kiengu and Kiutini in Meru. For many Kenyans, this is a familiar tune, a recurring inconvenience masked under the guise of necessary upgrades. One has to wonder about the true nature of these "maintenance works" when Kenya Power issues such notices with alarming regularity across the country. Is it genuine network improvement or a desperate scramble to keep an aging, struggling infrastructure from collapsing entirely? Recent customer reviews on platforms like Trustpilot paint a grim picture, detailing frustrations over frequent outages and a shocking lack of communication from the company. This constant cycle of darkness suggests a deeper, systemic issue that goes beyond routine upkeep. Adding insult to injury, the Kenya Meteorological Department had predicted rainfall in Nyeri and Meru counties on Thursday, April 9, with showers expected in the afternoon in high ground areas. This raises a critical question: how many of these "scheduled" outages will inevitably merge with "unplanned" disruptions caused by predictable weather, leaving residents in an even more precarious state? It is worth noting that just weeks ago, Kenya Power began rolling out a new Optical Character Recognition (OCR) system for meter reading, promising improved billing accuracy and efficiency. Yet, the company immediately highlighted "locked premises and meter boxes" as major challenges, effectively shifting the blame to customers for their inability to implement their own "modern" solution. While some institutions are celebrating financial wins, like [National Bank of Kenya doubling profit to KSh 2.39 billion as bad debt declines](https://zandani.co.ke/article/2026-03-23-national-bank-of-kenya-doubles-profit-to-ksh-2-39-billion-as-bad-deb), Kenya Power continues to grapple with its own operational and financial quagmire. Despite reporting a pre-tax profit increase for the first half of the 2025/2026 fiscal year, Kenya Power's overall profitability for the year ending June 2025 was constrained by lower tariffs and foreign exchange impacts. More critically, the company continues to battle with system losses that exceed regulatory thresholds and significant unpaid bills, particularly from government institutions, amounting to over KSh 26 billion. Perhaps these frequent, widespread outages are not just about "maintenance" but a pre-emptive measure. New draft energy regulations from September 2025 are poised to compel electricity providers to compensate consumers for outages and poor quality supply, imposing fines for inadequate outage notices. Could Kenya Power be scrambling to conduct these extensive shutdowns now to avoid future penalties under these stricter rules? For the long-suffering Kenyan consumer, the reason often matters less than the recurring reality: another day, another blackout, another promise of "improved service" that rarely materializes. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -54,17 +26,5 @@ Kenya Power Schedules Power Maintenance In Nyeri and Meru Co is central to this 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

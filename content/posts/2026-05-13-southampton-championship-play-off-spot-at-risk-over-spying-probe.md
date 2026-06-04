@@ -14,7 +14,7 @@ focusKeyword: "Southampton Championship play-off spot at risk over spying probe"
 schema: "NewsArticle"
 ---
 
-Southampton Championship play-off spot at risk over spying probe is central to this update for Kenyan readers.
+Southampton Championship play-off spot at risk over spying probe is central to this update for Kenyan readers. Southampton Championship play-off spot at risk over spying probe is the central subject of the update.
 
 Southampton Championship play-off spot at risk over spying probe is central to this update for Kenyan readers.
 
@@ -854,31 +854,6 @@ The integrity of the Championship is fundamental to the English football pyramid
 
 All eyes are now on the independent disciplinary commission. With the Championship play-off final scheduled for late May, the EFL is under immense pressure to deliver a verdict that maintains the credibility of the tournament. Whether the outcome is a fine, a points penalty, or a shock removal from the final, the decision will mark a turning point for the club. For Shea Charles and his teammates, the next week will be a test of mental fortitude as they attempt to prepare for a game that might never happen.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -887,17 +862,5 @@ All eyes are now on the independent disciplinary commission. With the Championsh
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

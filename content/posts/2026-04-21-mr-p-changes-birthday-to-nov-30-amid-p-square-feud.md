@@ -15,7 +15,7 @@ focusKeyword: "Mr P Changes Birthday to Nov 30 Amid P-Square Feud"
 schema: "NewsArticle"
 ---
 
-Mr P Changes Birthday to Nov 30 Amid P-Square Feud is central to this update for Kenyan readers.
+Mr P Changes Birthday to Nov 30 Amid P-Square Feud is central to this update for Kenyan readers. Mr P Changes Birthday to Nov 30 Amid P-Square Feud is the central subject of the update.
 
 Mr P Changes Birthday to Nov 30 Amid P-Square Feud is central to this update for Kenyan readers.
 
@@ -1275,34 +1275,6 @@ The decision has elicited varied responses from Nigerians and fans across the co
 
 The feud between Peter and Paul Okoye, formerly known as P-Square, has spanned multiple years, characterised by two official splits, a brief reunion, and a growing list of public accusations from both sides. This latest development adds another layer to their estranged relationship, underscoring the deep-seated issues that have consistently kept the twin brothers at odds. As November 30, 2026, approaches, the reception of Mr P's new birthday date will likely offer further insight into whether this gesture is perceived as a true step towards personal liberation or merely another public statement of severance within their long-running dispute.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1311,17 +1283,5 @@ The feud between Peter and Paul Okoye, formerly known as P-Square, has spanned m
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

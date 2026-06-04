@@ -32,17 +32,5 @@ Unlike the resolution provided by formal judicial proceedings in election petiti
 ### Redefining lineage and social status
 The national discourse has become increasingly strained as the government emphasizes stability and economic development, yet citizens remain fixated on the fallout of these forensic results. The stigma traditionally attached to children born out of wedlock has evolved into a public spectacle, forcing a re-evaluation of how lineage, inheritance, and support systems are recognized. In a city where social status is deeply tied to ancestry, the laboratory results are proving that the truth of one's genetic background is becoming impossible to ignore or conceal.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

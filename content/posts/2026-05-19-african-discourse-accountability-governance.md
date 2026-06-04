@@ -42,17 +42,5 @@ The true test of our political maturity will not be found in how we treat foreig
 
 If we refuse to pivot from performative outrage to concrete, localized action, we are not participants in a democratic movement. We are merely the noise that obscures the truth. Real change requires us to listen to one another-not just when a microphone is being held by a foreigner, but when we are debating the victims of our own judicial and political failure. Until we hold our own leaders to the same standards we demand of the world, our anger is nothing more than a mask for our own hesitation to face the truth.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

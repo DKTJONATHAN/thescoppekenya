@@ -42,17 +42,5 @@ The registry switch is happening exactly when shareholders need to be most vigil
 
 Keep a close eye on your inbox and postal mail as June approaches. You will likely receive updated instructions on how to register for the virtual AGM platform. If you encounter any delays in receiving your login credentials or your notice of meeting, reach out to the new registrar immediately rather than waiting until the morning of June 12. Your ability to influence the company's direction depends on your access to these digital tools. Prioritize verifying that your contact details are updated in the new system to ensure your dividend alerts and proxy forms reach you without interruption.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -15,7 +15,7 @@ focusKeyword: "Nairobi and neighboring counties to face five-day water supp"
 schema: "NewsArticle"
 ---
 
-Nairobi and neighboring counties to face five-day water supp is central to this update for Kenyan readers.
+Nairobi and neighboring counties to face five-day water supp is central to this update for Kenyan readers. Nairobi and neighboring counties to face five-day water supp is the central subject of the update.
 
 Nairobi and neighboring counties to face five-day water supp is central to this update for Kenyan readers.
 
@@ -1265,34 +1265,6 @@ Critical System Upgrades Underway The Athi Water Works Development Agency (AWWDA
 
 Affected Providers and Consumer Directives The shutdown will directly impact customers served by several key authorities: Nairobi City Water and Sewerage Company (NCWSC), Gatanga Water and Sanitation Company (GWSC), Oloolaiser Water and Sewerage Company (OWSC), the Export Processing Zone Authority (EPZA), and Mavoko Water and Sewerage Company (MWSC). AWWDA is urging residents and institutions within the affected supply zones to store adequate water prior to the shutdown and to use it sparingly throughout the five-day period. Such disruptions underscore the importance of household preparedness, a factor crucial for mitigating immediate challenges and long-term financial stability, as Za Ndani previously reported on [households' recovery from financial shocks](https://zandani.co.ke/article/kenyan-households-take-months-to-recover-from-financial-shocks). Normal supply through the NCT Bulk Water System is anticipated to resume on Saturday, April 11, at 8:00 AM, following AWWDA's confirmation of the successful completion of all scheduled installation and strengthening works. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1301,17 +1273,5 @@ Affected Providers and Consumer Directives The shutdown will directly impact cus
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

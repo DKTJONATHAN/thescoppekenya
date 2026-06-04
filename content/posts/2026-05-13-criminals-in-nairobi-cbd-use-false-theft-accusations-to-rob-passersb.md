@@ -30,31 +30,6 @@ This predatory tactic has fostered a climate of extreme suspicion throughout the
 ### Strategies for Urban Safety
 The psychological impact of these encounters has left many residents feeling vulnerable and uncertain about how to navigate the city safely. Authorities and community leaders suggest that maintaining strict situational awareness is the only reliable defense against these schemes. Individuals are advised to avoid engaging with strangers who attempt to stop them in both secluded and crowded areas of the city. As this trend continues, the instinct to act as a hero is increasingly regarded as a dangerous risk that few residents can afford to take, leaving the city in a state where silence and detachment have become necessary for survival.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -63,17 +38,5 @@ The psychological impact of these encounters has left many residents feeling vul
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

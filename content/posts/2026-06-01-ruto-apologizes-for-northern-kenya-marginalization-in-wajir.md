@@ -36,17 +36,5 @@ Operationalizing regional Teacher Training Colleges is the final piece of this p
 
 The apology delivered in Wajir carries weight only if the structures that follow it are built on the foundations already laid by the people themselves. We are not just bringing schools to the desert; we are inviting the desert to the table of national discourse. The true test of this policy will not be found in the statistics released at the next celebration, but in the confidence of a child who realizes that their traditional education is a strength, not an obstacle. We are learning, finally, that progress does not require us to leave our history behind. The sand is no longer just a place to write; it is part of the syllabus.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -30,17 +30,5 @@ The consistent rise in fuel prices has eroded the operational margins of transpo
 ### Policy disconnect and the threat of paralysis
 The impasse is further strained by the government's pursuit of additional revenue, including new regulations regarding eCitizen fee structures. There is a palpable sense that policymakers are operating with a profound disconnect from the reality faced by transport workers on the ground. Much like recent cultural debates concerning systemic inequality in local industries, the transport sector feels that government elites are speaking a different language than the people managing the highways. Unless a compromise is reached, the country faces a total transport shutdown, as the government continues to underestimate the leverage held by those who control the nation's commute.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

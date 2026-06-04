@@ -38,17 +38,5 @@ As June 4 approaches, the anxiety among grassroots creators is palpable. For man
 
 The atmosphere in the creative community is one of uneasy defiance, with many questioning if their passion for storytelling can survive such a heavy handed fiscal squeeze.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

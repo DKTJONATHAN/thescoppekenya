@@ -15,7 +15,7 @@ focusKeyword: "President Ruto announces dualling of Makutano-Meru highway u"
 schema: "NewsArticle"
 ---
 
-President Ruto announces dualling of Makutano-Meru highway u is central to this update for Kenyan readers.
+President Ruto announces dualling of Makutano-Meru highway u is central to this update for Kenyan readers. President Ruto announces dualling of Makutano-Meru highway u is the central subject of the update.
 
 President Ruto announces dualling of Makutano-Meru highway u is central to this update for Kenyan readers.
 
@@ -1277,32 +1277,6 @@ Addressing the long-standing safety concerns at Nithi Bridge, President Ruto con
 
 Beyond the Makutano-Meru highway, the National Infrastructure Fund is earmarked for other crucial projects, including the construction of dams nationwide to bolster food security. The beautification of the Jomo Kenyatta International Airport (JKIA) was previously announced as the inaugural project to be funded under the new initiative, making the highway project the second major undertaking by NIF.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1311,17 +1285,5 @@ Beyond the Makutano-Meru highway, the National Infrastructure Fund is earmarked 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

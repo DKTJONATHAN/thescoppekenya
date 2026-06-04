@@ -38,17 +38,5 @@ Meanwhile, a secondary school teacher who spoke on condition of anonymity admitt
 
 The push for a transition to day schools is not merely about physical safety; it is a fundamental challenge to the 8-4-4 system's reliance on segregation. Policymakers are now forced to consider if the existing school infrastructure can handle a massive shift in student populations if the boarding model is phased out. This would require substantial investment in bus systems, decentralized campus security, and a re-evaluation of school funding. While families await more concrete details from the Education Ministry, the prevailing public mood is one of exhausted intolerance for the status quo. Parents are no longer satisfied with promises of better dorm security; they are asking why the boarding trap was ever considered the gold standard for success in the first place.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

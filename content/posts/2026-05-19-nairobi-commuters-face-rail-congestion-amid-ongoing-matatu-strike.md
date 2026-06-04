@@ -42,17 +42,5 @@ The immediate path forward depends on whether the Transport Sector Alliance and 
 
 Commuters should remain alert for potential government interventions, such as the deployment of emergency bus subsidies or adjustments to rail schedules. However, given the current disparity between demand and available capacity, pressure on terminal stations is likely to remain extreme during peak morning and evening hours. As the standoff persists, the focus remains on whether officials can provide a sustainable alternative to the current, fragile transit ecosystem.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -44,31 +44,6 @@ Moving forward, we must stop confusing the mere existence of sophisticated machi
 
 Furthermore, the industry is trending toward a dangerous consolidation. As capital-heavy conglomerates expand, smaller, potentially more affordable clinics are being squeezed out of the market. If this trajectory continues, Kenya will not have a fertility sector designed for its own citizens. Instead, we will have created an export-oriented luxury commodity that happens to be stationed in Nairobi. A system that mandates life-altering debt for basic medical needs is not a victory; it is merely another gated community built from test tubes. Like the sudden, unexpected turns in celebrity news cycles, our life circumstances are too fragile to be gambled away on services that should be recognized as fundamental human rights rather than exclusive, high-end marketplace goods.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -77,17 +52,5 @@ Furthermore, the industry is trending toward a dangerous consolidation. As capit
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

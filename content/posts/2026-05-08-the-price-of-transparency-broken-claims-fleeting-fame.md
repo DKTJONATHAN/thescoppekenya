@@ -37,31 +37,6 @@ The public's appetite, once sated by a single, seismic scandal, now demanded a c
 
 The world had learned from Profumo, but perhaps the wrong lesson. It had learned that scandal sells, and that the more public the fall, the greater the viewership. Those old friends’ warnings, once delivered in hushed tones behind oak doors, were now shouted from digital rooftops, each perceived betrayal or marital struggle a fresh episode in an unending saga. The tragic irony was that while the players changed, and the stakes shifted from state secrets to social media metrics, the insatiable human desire to witness the unraveling of another remained gloriously, devastatingly constant. The spotlight, once a tool of scrutiny, had become an instrument of relentless, inescapable performance.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -70,17 +45,5 @@ The world had learned from Profumo, but perhaps the wrong lesson. It had learned
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

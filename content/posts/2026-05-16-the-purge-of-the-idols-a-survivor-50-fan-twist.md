@@ -45,11 +45,6 @@ Just as Röhm’s burgeoning power and divergent vision became a liability for H
 
 The illusion of choice, the "hands of the fans" guiding the game, is a clever facade. True power, in any arena, lies not with the many who cheer or jeer, but with the few who orchestrate the eliminations, those who define the rules, and those who, in the end, remain standing. The history books, both the official and the unwritten, are filled with the names of those who believed their alliances were ironclad, only to find themselves on the wrong side of a shifting tide, eliminated not by direct confrontation, but by the calculated machinations of those they once called allies. The applause for the "Sole Survivor" rings hollow for the one left behind.
 
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -58,17 +53,5 @@ The illusion of choice, the "hands of the fans" guiding the game, is a clever fa
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

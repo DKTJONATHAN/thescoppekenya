@@ -35,31 +35,6 @@ This incident has ignited urgent calls for a shift in perspective across campus 
 
 Violence is never an appropriate response to a failing relationship or a broken arrangement. The circumstances surrounding this case suggest a desperate need for improved conflict resolution and a complete rejection of the dangerous notion that individuals are commodities to be owned or discarded. As the community seeks justice, the message remains firm: the pursuit of vanity and the inability to handle rejection are costs that no one should ever have to pay with their life. If students continue to value the appearance of a fast life over their own fundamental safety, the danger of further tragedies remains high.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -68,17 +43,5 @@ Violence is never an appropriate response to a failing relationship or a broken 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

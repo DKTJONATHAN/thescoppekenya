@@ -24,34 +24,6 @@ Beyond the Rhetoric: What Genuine Accountability for Sh80 Billion for Nairobi Tr
 
 A Cautious Optimism: The Path Forward for Sh80 Billion for Nairobi To be fair, the agreement does possess commendable aspects. Its legal grounding in the Urban Areas and Cities Act is robust, far stronger than the NMS arrangement. The overdue acknowledgment that Nairobi’s fiscal formula is inadequate for a capital of its scale is a step in the right direction. The ongoing Nairobi River Regeneration Programme, which has already employed 45,000 young people, demonstrates that sustained political attention can yield results. Crucially, unlike the NMS, the county government retains its mandate, with Governor Sakaja chairing the Implementation Committee, suggesting a more balanced power dynamic. However, balance alone does not guarantee results. The true test of this agreement lies in the supplementary arrangements contemplated under Clause 11, where project-specific budgets, timelines, and accountabilities must be meticulously defined. If these arrangements emerge within the next 90 days with genuine specificity and robust safeguards, there may be reason for cautious optimism. If, however, this agreement merely gathers dust on a shelf while ministries engage in protracted negotiations over budget lines and procurement timelines stretch past the next election cycle, Nairobi will have gained little more than a well-drafted legal document. The woman in Mukuru will continue to pay exorbitant rates for illegal electricity, the streetlights will remain dark, and raw sewage will persist in backing up through inadequate infrastructure. Always read the fine print. Our collective future depends on it. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ A Cautious Optimism: The Path Forward for Sh80 Billion for Nairobi To be fair, t
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

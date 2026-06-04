@@ -40,17 +40,5 @@ Legal experts suggest that the persistent failure to act could lead to formal di
 
 As the investigation enters its fourth day without a suspect in custody, the eyes of both the local community and international stakeholders remain fixed on the Garissa County police commander's office. The upcoming week will be critical as observers monitor whether local law enforcement will move to secure the suspect or if the case will be reassigned to a specialized unit to prevent a total breakdown of procedural justice.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

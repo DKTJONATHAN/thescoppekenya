@@ -24,34 +24,6 @@ Youth on the Field: Olympic Values and Future Leaders One of the major themes, a
 
 What's Next for Sport and Peace? The conference organisers were clearly hoping to ignite collaboration amongst stakeholders in the sport and peace arena, taking into account the current state of our world. The fundamental principle of Olympism-"To place sport at the service of the harmonious development of humankind, with a view to promoting a peaceful society concerned with the preservation of human dignity"-was a guiding light. So, while the 12th International Sport and Peace Conference in Cape Town has now taken place, the momentum it aimed to create, the partnerships it fostered, and the focus on youth and global goals, are still very much in play. We'll be keeping an eye out for how these seeds sown in South Africa continue to grow, won't we? Because if sport can help sort out the world's woes, that's a game we can all get behind. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ What's Next for Sport and Peace? The conference organisers were clearly hoping t
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

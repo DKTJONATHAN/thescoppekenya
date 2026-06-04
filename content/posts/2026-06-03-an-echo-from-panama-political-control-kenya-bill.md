@@ -41,17 +41,5 @@ The National Infrastructure Fund Bill 2026, currently before Parliament, holds t
 
 The grand project, now in the hands of Parliament, demands careful stewardship. For when the stewards of public wealth forget the lessons etched in the dust of history’s forgotten canals, the cost is borne not by a handful of corrupt officials, but by the quiet multitudes who dared to dream. The only thing that truly connects the continents, it seems, is the enduring folly of man.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

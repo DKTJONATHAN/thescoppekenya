@@ -30,31 +30,6 @@ While party leadership continues to project an image of unity, the reality on th
 ### Broader institutional instability
 Beyond political shifts, the region is grappling with wider systemic anxieties. Citizens are increasingly concerned with state efforts to exert control over independent financial institutions, such as the proposed vetting of cooperative society leaders. This atmosphere of uncertainty mirrors the instability within the political sphere, where even officials who previously maintained secure positions are now evaluating their political options. As the internal political marriage faces persistent challenges, major state projects struggle to maintain public interest, further indicating that the party's grip on the region is rapidly deteriorating.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -63,17 +38,5 @@ Beyond political shifts, the region is grappling with wider systemic anxieties. 
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

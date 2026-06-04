@@ -15,7 +15,7 @@ focusKeyword: "Government waives identity card fees and introduces same-day"
 schema: "NewsArticle"
 ---
 
-Government waives identity card fees and introduces same-day is central to this update for Kenyan readers.
+Government waives identity card fees and introduces same-day is central to this update for Kenyan readers. Government waives identity card fees and introduces same-day is the central subject of the update.
 
 Government waives identity card fees and introduces same-day is central to this update for Kenyan readers.
 
@@ -1271,34 +1271,6 @@ Dispelling Misinformation on Foreigner IDs Kipsang also addressed and dismissed 
 
 Unclaimed Documents and Service Delivery Concurrently, Huduma Kenya has urged individuals to collect their unclaimed identification documents, including national IDs, smart driving licences, and birth certificates, from various service centres nationwide. On Wednesday, April 1, 2026, Huduma Kenya revealed that thousands of critical personal documents remain uncollected. According to the agency, at least 152,398 national IDs, 85,550 smart driving licences, and 28,550 birth certificates are currently awaiting collection in government offices across the country. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1307,17 +1279,5 @@ Unclaimed Documents and Service Delivery Concurrently, Huduma Kenya has urged in
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

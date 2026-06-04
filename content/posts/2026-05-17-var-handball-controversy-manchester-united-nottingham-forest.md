@@ -44,17 +44,5 @@ The upcoming quarterly refereeing review will serve as a litmus test for the org
 
 Expect a bland, sanitized clarification statement to emerge next week. It will undoubtedly be designed to sound official while ensuring that the current cycle of confusion remains exactly where it is. Nothing will change because, in the eyes of those currently running the show, nothing is actually broken.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

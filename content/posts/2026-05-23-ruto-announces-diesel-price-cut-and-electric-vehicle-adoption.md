@@ -48,17 +48,5 @@ Keep a close eye on the final gazetted requirements for the digital ride-hailing
 
 The goal for the next two months is simple: protect your margins, prepare for regulatory costs, and treat every shilling saved on fuel as a tool for future compliance rather than current profit.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

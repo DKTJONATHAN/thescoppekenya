@@ -30,17 +30,5 @@ Educational observers are now calling upon the Ministry of Education to adopt a 
 ### The Essential Role of Parental Accountability
 Addressing this behavioral crisis requires more than just administrative or government intervention. Stakeholders argue that the root of the issue lies in a breakdown of discipline that necessitates active involvement from families. Parents must take greater responsibility for the behavior of their children, as the trend of mob-led threats suggests that internal school management is often overwhelmed by external pressures. Without a unified effort between schools and parents, the cycle of unrest threatens to jeopardize the stability of the entire secondary education sector.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -44,31 +44,6 @@ This outcome provides a clear example of how domestic violence cases can be mana
 
 The legal process is entering its final stage. A sentencing hearing is scheduled for June 2 in Los Angeles, which will conclude the formal proceedings. This upcoming milestone represents the end of a difficult chapter for Shehorn. For those following the case, the focus has shifted toward her continued recovery and the broader impact of her refusal to be silenced. By choosing to speak truth in the face of immense pressure, Shehorn has provided a blueprint for accountability, underscoring that justice remains a necessary, albeit arduous, pursuit. The industry now waits for the final word from the court, acknowledging a survivor who chose the long, difficult path of truth over the comfort of silence.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -77,17 +52,5 @@ The legal process is entering its final stage. A sentencing hearing is scheduled
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

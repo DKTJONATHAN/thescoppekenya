@@ -30,31 +30,6 @@ The incident highlights a disturbing trend within county politics, where legisla
 ### Accountability and Professional Decay
 The fallout from this incident has drawn sharp criticism regarding the lack of decorum within the assembly. By citing the consumption of local alcohol as the catalyst for her public outburst, the MCA underscored the unprofessional atmosphere currently defining the local leadership. In a formal government setting, such severe allegations would typically necessitate an immediate and thorough independent investigation. Instead, the situation has devolved into a spectacle, raising questions about whether any genuine accountability can exist in a system where integrity is treated as a negotiable asset. The taxpayers continue to bear the financial burden for a system where positions and policies are bought and sold behind closed doors.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -63,17 +38,5 @@ The fallout from this incident has drawn sharp criticism regarding the lack of d
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

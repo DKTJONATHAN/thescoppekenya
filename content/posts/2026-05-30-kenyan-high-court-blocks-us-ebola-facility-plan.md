@@ -40,17 +40,5 @@ As the legal proceedings continue, the tension between regional health security 
 
 The court is scheduled to reconvene in mid-July to determine if the injunction will be lifted or if the government must initiate a formal public consultation process to move forward. Observers are now watching to see if the national government will amend its approach to international health partnerships to avoid further legal challenges. Consistent with broader national discussions on governance, the focus will remain on whether recent calls for patience from state leadership regarding infrastructure projects, similar to those raised in Narok, will hold weight as this legal battle unfolds.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

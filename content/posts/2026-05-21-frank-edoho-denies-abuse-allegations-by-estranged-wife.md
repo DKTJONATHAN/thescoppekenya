@@ -48,17 +48,5 @@ The coming days will prove whether this strategy holds water. The primary metric
 
 The real test for Edoho lies in his ability to maintain his professional standing while the legal machinery grinds forward. His long-term success depends on his capacity to compartmentalize his private trauma while continuing to project the authority required of a public figure. The courtroom is open, but the digital gallery is far from empty.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

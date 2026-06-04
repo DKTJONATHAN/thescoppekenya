@@ -36,17 +36,5 @@ Clement Tulezi, CEO of the Kenya Flower Council, has frequently noted that a KES
 
 The success of the mandates discussed at IFTEX 2026 will ultimately depend on the government’s capacity to lower the entry barriers for smaller participants. If the state fails to provide a direct mechanism to expedite VAT repayments and mitigate the freight costs linked to exploring new global corridors, the transition toward North America and Asia will likely remain confined to the exhibition halls. To ensure that smallholders can participate in this expansion, the coming season must feature a pivot from setting ambitious export targets toward a fundamental overhaul of the domestic financial environment.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

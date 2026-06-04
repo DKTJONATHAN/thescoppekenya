@@ -30,17 +30,5 @@ This confrontation highlights a recurring trend where public consultations funct
 ### When the stage becomes a cage
 The public suppression of Oguda serves as a stark warning to those seeking a meaningful seat at the policymaking table. It exposes a political culture where officials prioritize the protection of their narratives over the practical concerns of those most affected by their decisions. While the government promotes its various modernization initiatives, the human element of public policy remains ignored. Genuine participation is being sacrificed for a performance where the script is written and controlled entirely by those in power, leaving little room for the public to influence the actual direction of the program.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

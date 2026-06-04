@@ -42,17 +42,5 @@ The situation highlights the dangers of prioritizing short-term political wins o
 
 The next few weeks will be agonizing for West Ham fans, but the fiscal calendar is equally unforgiving. The primary milestone to watch is the final whistle of the 38th league match. If the drop is confirmed, the Mayor’s office will face immediate pressure to either renegotiate terms that were once branded as ironclad or explain to the public how these millions will be reconciled within a tightening municipal budget. The clock is ticking, and for London’s treasury, the cost of defeat has never been higher.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

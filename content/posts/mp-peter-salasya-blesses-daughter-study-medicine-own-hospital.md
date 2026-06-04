@@ -22,34 +22,6 @@ Is Salasya Building a Hospital Empire? Anyway, the idea of a politician's daught
 
 The Buzz Around MP Peter Salasya's Family Life Honestly, Salasya's personal life has always been a hot topic. He introduced a baby boy in June 2025, and then a daughter, Ameeliah Reign Kalerwa, in December 2025. The announcements of his children, especially as an unmarried politician, have often led to public discussions and questions about his marital status and growing family. But for now, it seems the focus is firmly on little Ameeliah Reign and the rather grand plans her father has for her to study medicine and own a hospital. What a future, eh? 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -58,17 +30,5 @@ The Buzz Around MP Peter Salasya's Family Life Honestly, Salasya's personal life
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

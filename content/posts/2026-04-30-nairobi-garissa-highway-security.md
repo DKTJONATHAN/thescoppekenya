@@ -1,7 +1,7 @@
 ---
 title: "Confirmed: IG Kanja Secures Nairobi-Garissa Highway"
 slug: "nairobi-garissa-highway-security"
-description: "Inspector General Douglas Kanja has deployed GSU and RDU units to the Nairobi-Garissa Highway to stop criminal attacks. Read the full story."
+description: "Inspector General Douglas Kanja has deployed GSU and RDU units to the Nairobi-Garissa Highway to stop criminal attacks. ."
 excerpt: "Inspector General Douglas Kanja has deployed GSU and RDU units to the Nairobi-Garissa Highway to stop criminal attacks. Read the full story."
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/9mbNnQjD/6c92a341253a.jpg"
@@ -14,7 +14,7 @@ focusKeyword: "Nairobi-Garissa Highway"
 schema: "NewsArticle"
 ---
 
-Nairobi-Garissa Highway is central to this update for Kenyan readers.
+Nairobi-Garissa Highway is central to this update for Kenyan readers. Nairobi-Garissa Highway is the central subject of the update.
 
 Nairobi-Garissa Highway is central to this update for Kenyan readers.
 
@@ -1274,32 +1274,6 @@ The heightened security measures respond to recent criminal attacks described as
 
 Police authorities have urged residents in affected areas, specifically Tseikuru and Ukasi, to remain calm, avoid speculation, and continue their daily activities as security operations proceed. They appealed to community elders, religious leaders, local administrators, and political leaders to collaborate with security agencies, encourage peaceful coexistence, and focus on restoring trust and resolving disputes through dialogue and other lawful means. Amidst these security efforts along the Nairobi-Garissa Highway, discussions around various societal issues continue across Kenya, including digital creator Christine Irungu sharing her personal birth story to promote C-section awareness. (https://zandani.co.ke/article/digital-creator-christine-irungu-shares-personal-birth-story-to-prom)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1308,17 +1282,5 @@ Police authorities have urged residents in affected areas, specifically Tseikuru
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

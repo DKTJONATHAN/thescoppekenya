@@ -26,34 +26,6 @@ The Peril of Personality Politics Kenyan elections are not won through viral mom
 
 The Path Forward: Pragmatism and Positioning As 2027 rapidly approaches, the decisive battles will not primarily be fought on podiums but in boardrooms. Coalition agreements will determine ballot strength. Regional alignments will determine victory margins. Resource mobilization will determine campaign stamina. In such a high-stakes environment, ODM must be structured, united, and strategically aligned. A chant cannot negotiate a coalition. A hashtag cannot consolidate a region. A personality, however charismatic, cannot substitute for arithmetic. The recent Gen Z protests were a powerful reminder that legitimacy must be constantly renewed. But protest energy, however potent, must eventually transition into institutional leverage. Without structure, protest becomes symbolic; with structure, it transforms into policy. The Linda Wananchi approach risks transforming ODM into a mere vessel for individual political projection. Movements centred predominantly on personalities inevitably struggle with issues of succession, coherence, and alliance stability. They may generate immense heat, but they rarely produce enduring power. The Linda Ground faction understands the gravity of this moment. Their approach is anchored in structure, not stardom. In coalition, not cult. In the shrewd preservation of bargaining leverage, not performative rebellion. ODM now stands at a profound crossroads. It can choose disciplined strategic engagement and actively shape the national equation – or it can drift into a personality contest that will inevitably fracture its base and dilute its hard-won influence. History will not reward noise. It will reward organization. 2027 will crown those who master the arithmetic of power, not those who merely master applause. Structure will outlast spectacle. Coalition will defeat cultism. And strategy – grounded, deliberate, and unapologetically pragmatic – will ultimately determine who truly holds the levers of power when the ballots are finally counted. **Jonathan Mwaniki** Strategic Adviser and Expert in Leadership and Governance Verified freshness for Saturday, March 07, 2026.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -62,17 +34,5 @@ The Path Forward: Pragmatism and Positioning As 2027 rapidly approaches, the dec
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

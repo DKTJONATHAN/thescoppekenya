@@ -15,7 +15,7 @@ focusKeyword: "SOG officers kill two suspected Al-Shabaab militants and inj"
 schema: "NewsArticle"
 ---
 
-SOG officers kill two suspected Al-Shabaab militants and inj is central to this update for Kenyan readers.
+SOG officers kill two suspected Al-Shabaab militants and inj is central to this update for Kenyan readers. SOG officers kill two suspected Al-Shabaab militants and inj is the central subject of the update.
 
 SOG officers kill two suspected Al-Shabaab militants and inj is central to this update for Kenyan readers.
 
@@ -1269,34 +1269,6 @@ Heightened National Vigilance The Mandera operation underscores a period of heig
 
 Nairobi Terror Plot Disrupted This successful border interdiction follows another significant security success last month. On Wednesday, February 18, officers from the Counter Terrorism Policing Unit disrupted a planned terror attack within Nairobi, allegedly linked to suspected Al-Shabaab militants. Investigations involved close monitoring of the suspects' movements, communications, and logistical networks. Following the intervention, officers recovered several weapons, including assault rifles, pistols, and explosive devices that were intended for use in an attack within the capital. Preliminary investigations indicated the suspects were reportedly plotting to attack during Ramadan, a period observed by Muslims worldwide through prayer and fasting. The Counter Terrorism unit affirmed that Al-Shabaab's plans to cause mass casualties in Nairobi were again foiled by intelligence agencies. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1305,17 +1277,5 @@ Nairobi Terror Plot Disrupted This successful border interdiction follows anothe
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

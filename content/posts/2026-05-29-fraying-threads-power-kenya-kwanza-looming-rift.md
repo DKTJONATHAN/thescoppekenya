@@ -39,17 +39,5 @@ In the sun-drenched halls of modern palaces, a similar tension mounts, as voices
 
 The Republic, ever a vessel for the ambitions of men, shuddered under the impending conflict. Caesar, across the Rubicon, a line irrevocably crossed. Pompey, now the Senate’s champion, gathering his forces. The tragic irony was that their initial alliance, meant to overcome opposition and solidify their individual powers, had merely paved the way for a more profound and devastating struggle. The pursuit of ultimate power, once shared, had become a zero-sum game.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

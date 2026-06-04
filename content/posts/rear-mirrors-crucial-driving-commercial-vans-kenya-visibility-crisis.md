@@ -22,34 +22,6 @@ The Systemic Oversight in Enhancing Rear Mirrors Crucial for Driving Safety Desp
 
 The Real Losers: Passengers and Unregulated Commercial Vans The real losers in this systemic gap are the passengers and other vulnerable road users. While the NTSA mandates retro-reflective contour markings to enhance visibility and cracks down on tinted windows and graffiti for similar reasons, the focus on direct rear visibility often remains on the driver's ingenuity rather than a regulated, advanced solution. The transition to digital rearview cameras and sensors, which offer panoramic views and improved low-light performance, is happening globally and is referenced as a modernisation effort. However, the economic burden of upgrading existing fleets or the cost implications for new commercial van purchases can be prohibitive for many operators, particularly in the matatu sector known for its thin margins and fragmented ownership. This contributes to "inconsistent enforcement of safety regulations and standards," allowing a proliferation of vehicles that may not meet optimal safety thresholds. Without clearer regulatory push and potentially, incentives for adopting modern rear visibility technology, the sector continues to grapple with accidents often linked to blind spots, especially in congested urban areas and notorious "black spots" across the country. The inherent challenges in "affordability" for advanced safety features mean that a significant portion of commercial vehicles on Kenyan roads will continue to operate with basic, though crucial, analogue mirror systems, leaving a critical safety vulnerability exposed. It is imperative that regulatory bodies move beyond basic compliance to proactively mandate and facilitate the adoption of comprehensive rear-view technologies, ensuring that the safety of Kenyans on the road is not left to improvised solutions. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -58,17 +30,5 @@ The Real Losers: Passengers and Unregulated Commercial Vans The real losers in t
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

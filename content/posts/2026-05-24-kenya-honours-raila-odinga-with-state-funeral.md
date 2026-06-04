@@ -46,17 +46,5 @@ The real test of fiscal transparency arrives with the next round of supplementar
 
 Statecraft is inevitably tied to ceremony, but ceremony remains a premium instrument. As the country balances its accounts, the line between paying tribute and draining the national coffers requires greater oversight. Transparency is the only mechanism that ensures the cost of honoring a figure does not come at the expense of the state's long-term financial health. The public ledger deserves as much reverence as the procession itself.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

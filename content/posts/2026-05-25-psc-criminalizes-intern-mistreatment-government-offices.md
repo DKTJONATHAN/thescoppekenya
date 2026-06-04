@@ -40,17 +40,5 @@ The criminalization of intern mistreatment represents a landmark redistribution 
 
 The focus now moves to the first set of prosecutions under these new guidelines to see how the Directorate of Criminal Investigations and the Judiciary handle cases referred by the PSC. Observers will also be looking for a potential update to the Public Service Commission Act to formally embed these criminal reporting requirements into permanent law. Impacted interns are expected to begin utilizing the new anonymous reporting channels established at the Naivasha summit to flag non-compliant supervisors.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

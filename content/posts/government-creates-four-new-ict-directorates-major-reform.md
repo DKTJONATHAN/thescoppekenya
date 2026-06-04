@@ -26,34 +26,6 @@ Private Sector Partnership: Who Truly Benefits from ICT Directorates Major Refor
 
 Emerging Technologies and the Unaddressed Costs of ICT Directorates The establishment of a directorate dedicated to emerging technologies like cloud computing and AI is forward-looking. Kenya is indeed shifting towards a "cloud-first" policy, with national data classification guidelines expected in 2026. However, the enthusiasm for adopting advanced technologies must be tempered with a pragmatic assessment of long-term sustainability and potential vendor lock-in. The true costs of implementing and maintaining complex AI and cloud infrastructure across numerous government agencies can be substantial, often extending beyond initial budget allocations. While the recruitment of 290 ICT Assistant Officers is a step towards bolstering technical staff, it remains to be seen if this number, combined with existing personnel, is adequate to manage the intricate demands of a rapidly evolving technological landscape and the ambitious "digital superhighway" agenda. The long-term efficacy and cost-effectiveness of these technologically advanced ICT directorates will ultimately determine whether they truly serve the public interest or become expensive, underutilized bureaucratic additions. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -62,17 +34,5 @@ Emerging Technologies and the Unaddressed Costs of ICT Directorates The establis
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

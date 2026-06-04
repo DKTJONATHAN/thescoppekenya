@@ -40,31 +40,6 @@ There is an implicit admission here that the current application is causing fric
 
 The immediate concern for Premier League teams is the period leading up to the final day of the season. Managers will now have to adjust their set-piece routines to account for this heightened sensitivity to goalkeeper contact. With Webb signaling a major review of grappling and obstruction rules for the upcoming campaign, the final fixtures will serve as a testing ground for these draconian standards. Clubs should expect little leniency from VAR in the remaining games, as the PGMOL appears committed to cementing its current regulatory direction before the summer reset.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -73,17 +48,5 @@ The immediate concern for Premier League teams is the period leading up to the f
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

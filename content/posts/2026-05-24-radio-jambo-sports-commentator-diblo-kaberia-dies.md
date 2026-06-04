@@ -40,17 +40,5 @@ The coming months will likely see media houses reevaluating how they support the
 
 A broader conversation is emerging regarding the appropriate boundaries of one's digital presence. We are moving toward a period where the public expects to participate in the full journey of a personality, rather than just the curated highlights of their career. It is highly probable that more public figures will adopt a policy of radical transparency when facing personal adversity, viewing their struggles as a form of shared resilience. The age of the unreachable, untouchable radio host is rapidly fading. In its place, we are seeing the rise of a more vulnerable broadcaster-one willing to demonstrate that life, much like the sports they so expertly covered, is defined by its unpredictable fluctuations. Kaberia’s final act transformed the digital space into a site of profound, final connection.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -14,7 +14,7 @@ focusKeyword: "Southampton expelled from Championship play-offs over spying scan
 schema: "NewsArticle"
 ---
 
-Southampton expelled from Championship play-offs over spying scan is central to this update for Kenyan readers.
+Southampton expelled from Championship play-offs over spying scan is central to this update for Kenyan readers. Southampton expelled from Championship play-offs over spying scan is the central subject of the update.
 
 Southampton expelled from Championship play-offs over spying scan is central to this update for Kenyan readers.
 
@@ -504,17 +504,5 @@ The focus now shifts to the scheduled appeal hearing this Wednesday. While South
 
 In the final analysis, Southampton turned a £200,000 investment into a generational financial disaster. The gamble failed, the integrity was compromised, and the club is now left to account for the cost of its own short-sightedness.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

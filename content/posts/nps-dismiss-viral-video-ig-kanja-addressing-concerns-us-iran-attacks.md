@@ -24,34 +24,6 @@ Beyond the Disclaimer: Why Misinformation Around IG Kanja Endures The NPS's imme
 
 Addressing Concerns: The Imperative for Proactive Engagement For a nation grappling with both domestic security challenges and the ripple effects of international conflicts, the government's approach to public communication requires urgent re-evaluation. Beyond simply dismissing viral videos, there is an imperative for comprehensive, proactive engagement that builds and sustains public trust. This includes regular, clear briefings from authoritative figures, consistent updates on international developments impacting Kenyans, and easily accessible platforms for verifying information. Without such a fundamental shift, the space for misinformation will continue to expand, leaving Kenyans susceptible to panic and eroding faith in the very institutions tasked with their protection. The incident involving IG Kanja serves as a stark reminder that in the digital age, effective governance demands not just action, but also masterful and transparent communication. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ Addressing Concerns: The Imperative for Proactive Engagement For a nation grappl
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

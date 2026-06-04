@@ -42,31 +42,6 @@ Fuel costs act as a critical driver for the Kenyan economy, directly impacting t
 
 The viability of this initiative will be determined when the proposed amendments are presented on the floor of the House. The legislative session will reveal whether Nyoro’s peers intend to support his efforts or leave him to advance his agenda without collective backing. Observers should pay close attention to the response from the party whip, as this will clarify whether Nyoro’s actions have any degree of internal support or if they represent an isolated act of dissent. Should the proposal gain significant momentum, it is likely that the Treasury will move quickly to introduce alternative measures before the next fuel price adjustment period occurs.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -75,17 +50,5 @@ The viability of this initiative will be determined when the proposed amendments
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

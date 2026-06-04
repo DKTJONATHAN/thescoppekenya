@@ -30,17 +30,5 @@ Industry observers note that this case is reflective of a broader, systemic issu
 ### The Struggle for Digital Autonomy
 The ongoing effort to reclaim ownership of the hijacked platforms has proven to be a difficult legal challenge for the family. Because these digital accounts serve as the primary source of the boy’s livelihood, their loss has stalled his progress and halted his potential earnings. This case emphasizes the urgent need for stricter oversight regarding how minors are represented in the digital landscape. As the family attempts to regain control of their digital assets, the situation remains a cautionary tale regarding the necessity of transparent contracts and ethical management practices for young stars entering the global digital market.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

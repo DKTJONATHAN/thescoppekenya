@@ -26,34 +26,6 @@ Kenyan Policies Reinforce Conservation of African Livestock Genetic Resources Ke
 
 Collaborative Efforts in Conservation of African Livestock Genetic Resources The launch of this guide positions AABNet, ILRI, CTLGH, AU-IBAR, and their National Partners as leaders in coordinating African livestock genetic improvement and conservation. These organizations emphasize multi-country genetic evaluation to address capacity gaps, professional capacity building to strengthen human capital in animal breeding, advocacy for advanced genetic tools, and robust collaboration to scale breeding programmes. The African food, dairy, livestock, and poultry market is experiencing rapid growth, with the overall African food and agriculture market projected to reach $1 trillion per year by 2030, highlighting the economic importance of these initiatives. As the continent faces intensified climate challenges, with East Africa experiencing increased droughts, floods, and water scarcity, stakeholders across Africa are prioritizing climate resilience, sustainability, and regenerative practices. It is estimated that up to 50% of commercial-scale farms will adopt at least one form of climate-smart agriculture by 2026. This guide serves as a practical, open-access resource for governments, researchers, and practitioners, providing actionable insights to combat genetic erosion and ensure farmers have access to trustworthy, productive, and adapted animals across Africa and globally. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -62,17 +34,5 @@ Collaborative Efforts in Conservation of African Livestock Genetic Resources The
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -30,31 +30,6 @@ The faction loyal to Deputy President Rigathi Gachagua is becoming increasingly 
 ### Accountability Over Tribalism
 The administration has historically dismissed internal regional criticism by labeling it as mere tribalism. However, the current atmosphere suggests a more complex shift toward a demand for accountability that transcends traditional regional loyalty. As the public grows more focused on tangible performance, the political race has tightened significantly. This power struggle creates a volatile environment where the President must address the grievances of his own supporters to maintain his authority, much like a struggling football team facing a critical late-season match that determines their survival in the league. As the political maneuvering continues, the ability of the administration to govern effectively remains under intense scrutiny.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -63,17 +38,5 @@ The administration has historically dismissed internal regional criticism by lab
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

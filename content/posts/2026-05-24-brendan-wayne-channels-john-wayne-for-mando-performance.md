@@ -44,17 +44,5 @@ As the craft of storytelling evolves, the focus on non-verbal communication will
 
 This study of movement serves as a reminder that power, when wielded silently, is often the most enduring. By embracing a more grounded philosophy, performers can bridge the gap between simple acting and genuine character embodiment, proving that what is left unsaid is just as important as the script itself.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

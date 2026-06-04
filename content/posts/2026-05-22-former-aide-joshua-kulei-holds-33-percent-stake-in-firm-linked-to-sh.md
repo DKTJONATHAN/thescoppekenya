@@ -30,17 +30,5 @@ Public-Private Partnership models have become the primary vehicle for current in
 ### Evidence of Institutionalized Patronage
 The involvement of Moi-era figures in modern state contracts suggests that the current administration is utilizing long-standing networks of patronage. By leveraging public-private frameworks, elites are able to secure massive government projects with limited transparency. This trend confirms that the infrastructure of crony capitalism remains a defining feature of the national economy. As the government continues to award these high-value contracts, the concentration of wealth among a select group of individuals highlights a persistent cycle of influence that survives political transitions.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

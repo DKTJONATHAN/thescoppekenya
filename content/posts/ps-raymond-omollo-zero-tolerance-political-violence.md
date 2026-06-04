@@ -24,34 +24,6 @@ Exploiting Vulnerability: The Real Losers in Political Violence A recent report 
 
 Beyond Zero Tolerance: Addressing Root Causes Omollo's Nyeri address also touched on efforts to combat illicit brew and gender-based violence, alongside initiatives to boost education enrolment under Nyeri County Commissioner Josephat Biwot. These are indeed critical societal issues, yet their inclusion alongside the firm stance on **political violence** sometimes risks diluting the focus on the latter's unique political economy. For a true **zero tolerance** approach to take root, the government must move beyond issuing warnings. This requires comprehensive strategies that include impartial investigations into all forms of political incitement, holding political leaders accountable regardless of their affiliation, and implementing robust economic empowerment programmes for youth. The current cycle of blame games and reactive policing fails to address the foundational vulnerabilities that allow **political violence** to thrive, perpetuating a dangerous environment as the 2027 election cycle gradually intensifies. Until these systemic issues are confronted head-on, pronouncements of **zero tolerance** risk remaining largely performative, with real lives and democratic integrity continuing to be jeopardised. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ Beyond Zero Tolerance: Addressing Root Causes Omollo's Nyeri address also touche
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

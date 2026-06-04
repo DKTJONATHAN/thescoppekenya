@@ -38,17 +38,5 @@ Without a change in how the state manages the fitness of its frontline personnel
 
 The mood remains somber across the country, marked by a growing impatience with institutional excuses and a collective insistence that the uniform should be a badge of support, not a weight that pushes officers to the breaking point.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

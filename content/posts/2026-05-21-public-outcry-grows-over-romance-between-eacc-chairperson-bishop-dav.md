@@ -30,17 +30,5 @@ There is a growing sentiment among observers that anti-corruption initiatives ar
 ### The Challenge to Public Integrity
 Bishop David Oginde, who has long positioned himself as a champion of moral leadership, now faces a unique professional challenge as his family life overlaps with his regulatory mandate. The situation has intensified existing public frustration regarding the perceived double standards of the elite. For many citizens, the optics of the situation suggest that the anti-corruption apparatus is losing its distance from the powerful, potentially undermining the public's trust in the institution. The core of the criticism remains that until investigators ensure their personal affairs remain completely separate from their official duties, the legitimacy of their anti-corruption mandate will remain under intense scrutiny.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

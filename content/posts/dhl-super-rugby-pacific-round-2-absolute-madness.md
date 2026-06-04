@@ -34,34 +34,6 @@ Crusaders' Conundrum and the Number 10 Battle Back to the Super Rugby, and the C
 
 Sevens Sizzling and Olympic Aspirations Finally, a quick nod to the sevens circuit. The New Zealand teams reigned supreme in the first leg of the 2025/26 HSBC SVNS series. Proper dominance, that. But a stark reminder of the brutal nature of sport comes with Sarah Hirini’s story. At the peak of her career at the start of the 2024 season, brimming with Olympic optimism, only for a devastating knee injury to jeopardise her Paris aspirations. Is there enough time to recover? We’re all rooting for her, Mate. What a weekend for rugby, full of highs, lows, and plenty of talking points! 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -70,17 +42,5 @@ Sevens Sizzling and Olympic Aspirations Finally, a quick nod to the sevens circu
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

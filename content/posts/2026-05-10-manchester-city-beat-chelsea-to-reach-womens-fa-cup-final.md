@@ -46,31 +46,6 @@ This victory represents a significant psychological reset for Manchester City. B
 
 All eyes now shift toward the final on May 31. The upcoming match against Brighton serves as the next major milestone. While pundits will spend the next three weeks obsessing over tactical formations and defensive setups, the real story will be whether the momentum Shaw generated at Stamford Bridge can be sustained through the final preparation period. If Shaw maintains this level of form, City will enter the final not just as participants, but as the clear favorites to bring the trophy home.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -79,17 +54,5 @@ All eyes now shift toward the final on May 31. The upcoming match against Bright
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

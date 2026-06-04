@@ -30,17 +30,5 @@ The forum was widely criticized by participants as a performative exercise lacki
 ### Escalating Threats of Public Unrest
 The mood among the attendees signaled that the era of passive engagement is over. The discourse moved away from policy questions and toward blunt demands for government accountability. The youth representatives made it clear that if the current tax burdens are enforced without relief, the potential for renewed public protests is high. As the government continues to navigate public pressure, the message from the floor remains consistent: policy decisions made behind closed doors will face significant resistance on the streets if they continue to exacerbate the struggles of the average taxpayer.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

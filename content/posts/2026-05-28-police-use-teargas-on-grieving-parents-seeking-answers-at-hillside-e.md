@@ -30,17 +30,5 @@ Critics are labeling the police response as both insensitive and profoundly unpr
 ### Systemic Failure in Crisis Management
 The events in Nyeri highlight a troubling pattern where the state perceives the public as a threat to be dispersed rather than a community in need of assistance. The image of parents fleeing from smoke canisters while searching for their loved ones has become a symbol of a broken system. Professionals and community leaders are now calling for a formal inquiry into the security tactics employed, asserting that when parents are searching for their children, they deserve clear communication and compassion rather than tactical force.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

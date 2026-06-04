@@ -40,17 +40,5 @@ Securing these service contracts ensures that Kenya remains at the helm of regio
 
 Kenya is shedding its role as a student of global energy trends and transitioning into the role of instructor. We are now in a position to monetize our hard-earned lessons. The steam rising from the Great Rift Valley represents far more than electricity for the grid. It is the core resource driving a new era of regional economic leadership, proving that energy independence is the first step toward regional dominance. The strategy is clear: lead the regional transition or risk being marginalized by those who will. The time to set the agenda is now.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

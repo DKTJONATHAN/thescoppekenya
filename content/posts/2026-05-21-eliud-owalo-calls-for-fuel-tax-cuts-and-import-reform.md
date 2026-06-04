@@ -48,17 +48,5 @@ Watch for whether the Treasury makes any attempt to adjust the 8 percent VAT in 
 
 The state acts as if the high price of fuel is a force of nature, but the math proves it is a human construct. Until we confront the Sh80 tax burden and the failures of our procurement monopoly, we will continue to pay a premium for our own stagnation. True energy independence starts when the government stops using the fuel pump as its private ATM.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

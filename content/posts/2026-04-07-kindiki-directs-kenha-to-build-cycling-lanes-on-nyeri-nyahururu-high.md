@@ -15,7 +15,7 @@ focusKeyword: "Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur"
 schema: "NewsArticle"
 ---
 
-Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers.
+Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers. Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is the central subject of the update.
 
 Kindiki directs KeNHA to build cycling lanes on Nyeri-Nyahur is central to this update for Kenyan readers.
 
@@ -1269,34 +1269,6 @@ Government Funding and Motorist Accountability Deputy President Kindiki affirmed
 
 Judiciary Scrutinised Over Instant Fines System In his address, Kindiki criticised the Judiciary's decision to suspend the Instant Fines Traffic Management System. This system, championed by the NTSA, leverages surveillance Artificial Intelligence (AI) cameras to issue instant fine notifications for traffic violations via SMS, a method believed to significantly reduce road deaths. Kindiki hinted that the Kenya Kwanza administration intends to challenge the suspension to reinstate the system on local roads. Such robust infrastructure and technological initiatives are vital for economic growth, aligning with broader efforts to bolster trade and business development across the region. The Deputy President’s remarks come as the National Police Service (NPS) reported a alarming statistic of over 50 fatalities during the recent Easter period, a figure that has caused national concern. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -1305,17 +1277,5 @@ Judiciary Scrutinised Over Instant Fines System In his address, Kindiki criticis
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

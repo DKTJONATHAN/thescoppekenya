@@ -30,31 +30,6 @@ Critics are now questioning the consistency and motives behind these public inte
 ### The Mandate for Due Diligence
 The exoneration of Joyce Onyango has sparked a broader conversation regarding the responsibilities of public officials. There is a growing consensus that those in positions of power must verify information through official channels before making inflammatory claims that jeopardize the lives and liberties of others. The false narrative regarding the child’s death serves as a reminder that public perception is often easily manipulated by those seeking to appear righteous. As the fallout from this case continues, the demand for accountability highlights the need for a shift away from high-stakes public spectacle toward evidence-based reporting and professional conduct.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -63,17 +38,5 @@ The exoneration of Joyce Onyango has sparked a broader conversation regarding th
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

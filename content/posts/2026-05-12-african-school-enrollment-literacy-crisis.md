@@ -44,31 +44,6 @@ The necessary policy pivot requires an immediate departure from enrollment targe
 
 The government must mandate and publish independent, functional literacy assessments for every primary school. Without this level of accountability, policymakers remain complicit in the theft of our children's future. The era of the enrollment mirage must conclude. If we do not act, the generation currently sitting in our overcrowded, silent classrooms will never forgive us for the intellectual void we left behind. Education is not a statistical game. We must stop treating it as one before the silence of the unlearned becomes the loudest sound in the nation.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -77,17 +52,5 @@ The government must mandate and publish independent, functional literacy assessm
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

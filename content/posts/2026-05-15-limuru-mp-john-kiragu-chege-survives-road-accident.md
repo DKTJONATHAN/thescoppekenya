@@ -42,31 +42,6 @@ The frequency of near-misses and collisions on this corridor suggests that exist
 
 Attention will now shift to the Kenya National Highways Authority to see if additional safety signage, speed bumps, or lane expansions will be prioritized for the Nanyuki-Meru corridor. Stakeholders are expected to lobby for stricter oversight of fuel transport scheduling to ensure that large, slow-moving vehicles do not conflict with peak commuter hours. Monitoring the implementation of these safety upgrades remains essential to preventing future incidents.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -75,17 +50,5 @@ Attention will now shift to the Kenya National Highways Authority to see if addi
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

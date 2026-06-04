@@ -44,17 +44,5 @@ The Kasarani Police Station is currently processing the Reverend’s statement a
 
 This fallout raises difficult questions for the political class. Parties must now reckon with how they distribute branding materials and whether those items endanger their own supporters. If these placards and sashes continue to act as triggers for property destruction, the damage will extend beyond burnt metal; it will weigh heavily on the party's public image and the security of their base. As residents in Githurai and beyond evaluate their own safety, Za Ndani for political participation has shifted. The streets have made it clear that, in the current climate, your affiliations might cost more than you bargained for.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

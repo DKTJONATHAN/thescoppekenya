@@ -32,31 +32,6 @@ A clear divide has surfaced between Gen Z women and their older counterparts wit
 ### The impact of performative narratives
 The debate has become increasingly complicated by the tendency to shift blame through sarcasm and deflection. Many observers now question whether the current uproar reflects a genuine crisis or merely performative outrage designed to obscure personal realities. As the accusations continue to escalate, the core of the issue remains obscured by a cycle of finger-pointing. The intensity of the debate has created an environment where constructive communication is sidelined in favor of narratives that prioritize individual convenience over mutual understanding.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -65,17 +40,5 @@ The debate has become increasingly complicated by the tendency to shift blame th
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

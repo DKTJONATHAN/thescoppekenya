@@ -26,34 +26,6 @@ Debt Servicing Pressures and the Role of Local Lenders The intensifying debt ser
 
 Navigating Future Debt Jumps: The 2026 Outlook Kenya's public debt currently stands at approximately 70% of GDP. The 2026 MTDS projects the present value of debt-to-GDP ratio to be 65.6% for 2026. The government's strategy for managing future debt jumps involves a continued focus on liability management operations, prioritizing concessional borrowing, and maintaining a fiscal consolidation path. The successful Eurobond refinancing and the increased reliance on local lenders are key components of this proactive debt management strategy, aimed at smoothing the external debt maturity profile and reducing refinancing pressure. The government's ability to balance its financing needs with the imperative of safeguarding the private sector from excessive credit strain will be crucial for sustained economic growth in the coming years. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -62,17 +34,5 @@ Navigating Future Debt Jumps: The 2026 Outlook Kenya's public debt currently sta
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

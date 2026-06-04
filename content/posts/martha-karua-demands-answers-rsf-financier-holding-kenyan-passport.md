@@ -24,34 +24,6 @@ Broader Implications and Call for Answers on Kenyan Passports The controversy de
 
 Calls for Revocation and Independent Probe into RSF Financier The alleged scandal has drawn sharp condemnation from various national figures. Former Chief Justice David Maraga vehemently criticized the alleged issuance of a Kenyan passport to Algoney Hamdan Daglo Musa, demanding its immediate revocation. Maraga warned that this disclosure not only undermines Kenya's asserted neutrality in the Sudan conflict but also exposes potential complicity in enabling atrocities. He described the situation as a "profound constitutional crisis" and called for independent investigations by the Ethics and Anti-Corruption Commission (EACC) and the Directorate of Criminal Investigations (DCI) into immigration officials and any high-level facilitators. Echoing these sentiments, former Attorney General Justin Muturi also condemned the alleged issuance of Kenyan passports, terming the claims "explosive" and a "betrayal of public trust". Muturi demanded a full public disclosure of all passports issued under such arrangements and a parliamentary inquiry to determine if executive authority was abused. He questioned the National Intelligence Service's awareness of these processes, suggesting potential security lapses or compromised intelligence. Such governance concerns have previously been raised in various sectors, including warnings about how [political control threatens Kenya infrastructure fund: Dr Chitunga's stern warning](https://zandani.co.ke/article/political-control-kenya-infrastructure-fund-threatened). As of the current date, Sunday, March 1, 2026, the Kenyan government has yet to issue an official statement clarifying these grave claims, despite the growing public uproar and demands for accountability. The silence from relevant authorities, including the Directorate of Immigration Services, continues to intensify public concern over the integrity of national institutions and Kenya's credibility on the global stage. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -60,17 +32,5 @@ Calls for Revocation and Independent Probe into RSF Financier The alleged scanda
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

@@ -38,17 +38,5 @@ Just as we have seen in recent public discourse-from the heated outbursts at ind
 
 The Wajir projects are a reminder that the state is perfectly capable of building walls and roads, yet remains perpetually unable to build the institutional trust that is actually required to bind the nation together. Until policy focuses on the lived reality of the marginalized rather than the optics of state presence, these structures will remain nothing more than expensive tombstones for broken promises. We need to stop applauding the bricks and start demanding the inclusion that was promised at independence.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

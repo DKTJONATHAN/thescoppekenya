@@ -40,17 +40,5 @@ The legislative branch is signaling a desire to reassert its role in monitoring 
 
 The court has scheduled a hearing for the petition on June 15, which will provide a clearer picture of whether the government can proceed with the construction or must restart the planning process to incorporate constitutional requirements. Meanwhile, the Parliamentary Health Committee will continue its review of the ministry's internal procedures to see if any departmental guidelines were disregarded in the rush to secure the U.S. health grant.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

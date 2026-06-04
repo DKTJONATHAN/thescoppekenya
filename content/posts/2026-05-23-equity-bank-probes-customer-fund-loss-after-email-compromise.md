@@ -44,17 +44,5 @@ Regulators need to address the systemic reliance on email-based password recover
 
 Equity Bank is playing a dangerous game of outsourcing its risk. Until the bank mandates hardware-based security keys or moves entirely away from email-dependent recovery flows, customers are essentially banking on the security of a platform the bank does not control. Relying on an email account to protect a bank balance is not a security feature. It is a design flaw.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

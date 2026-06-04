@@ -50,17 +50,5 @@ The 32.5 percent default rate on student loans is a red flag for the entire fina
 
 Keep an eye on the enrollment numbers for the next academic intake. If the 46 percent contraction in TVET funding is not reversed, expect to see a surge in wages for technical roles by mid-2027. If you operate in a technical sector, start factoring this wage premium into your long-term business projections today. The era of cheap, readily available technical skills is ending; your strategy must change to match that reality.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

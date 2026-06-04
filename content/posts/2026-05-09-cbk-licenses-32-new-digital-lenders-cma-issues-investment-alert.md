@@ -42,31 +42,6 @@ Public authorities are advising users to scrutinize the license status of any en
 
 Observers will be monitoring whether the Capital Markets Authority takes more aggressive steps to harmonize its warning systems with the CBK’s licensing notifications. Future discussions are expected to center on whether a unified digital financial portal can be created to allow citizens to check the status of both lenders and investment firms in one location. Stakeholders will also watch for any legislative moves to tighten oversight on platforms that operate at the intersection of credit and speculative investment.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Search-ready summary
 - Who acted: name the person, institution, or group behind the move.
 - What happened: state the action or decision in one sentence.
@@ -75,17 +50,5 @@ Observers will be monitoring whether the Capital Markets Authority takes more ag
 - How it happened: explain the method, process, or sequence briefly.
 - Reader impact: explain the practical effect on the audience without turning it into a FAQ.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.

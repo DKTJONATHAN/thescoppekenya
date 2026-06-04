@@ -34,17 +34,5 @@ West Ham, despite their woeful campaign culminating in relegation, have cleverly
 
 While Fernandes has been a "standout performer" for a dismal West Ham side, it's worth noting he couldn't even make Portugal's World Cup squad. If he's truly the £70m generational talent United crave, surely national team recognition would follow? His omission makes a move "easier" logistically, but it also raises a pertinent question: is he genuinely an elite-level midfielder, or simply a player whose stock has been artificially inflated by a desperate club and a short-sighted market? The Red Devils also retain interest in Atalanta's Ederson, further proof of a broad, somewhat scattered approach. Dismissing links to Borussia Dortmund's Julian Ryerson as "premature" only highlights the sheer volume of names churned through the rumour mill, few of which ever materialise into genuine, impactful signings. It's business as usual at Old Trafford, and that's precisely the problem.
 
-
-## What this means for Kenyans
-This development could directly affect Kenyan households, students, workers, or businesses depending on how implementation unfolds. Follow official updates and verify deadlines, fees, and policy details before taking action.
-
-## Key facts
-- Official announcement details are in this report.
 - Practical impact depends on timelines and enforcement.
 - Readers should verify changes through official channels.
-
-## FAQ
-### What is the most important takeaway?
-The key takeaway is to track official communication and act early.
-### Where can I confirm updates?
-Use official agency portals and verified public notices.
