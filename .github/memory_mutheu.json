@@ -242,10 +242,10 @@
     "bd41fc6a4b645364d9ab4d7720fa0a91",
     "8f83c77ec5c76016cd33b098bd35a35c",
     "02ed02aee7f1cbea02367da82b723ea8",
-    "706765c25a3f9ec78755c0410f4577cf"
+    "706765c25a3f9ec78755c0410f4577cf",
+    "44bdc8bda42dc8a67f1763b915fe3260"
   ],
   "style_history": [
-    "Explainer",
     "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
@@ -274,10 +274,10 @@
     "Profile Beat",
     "Trend Take",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Profile Beat"
   ],
   "angle_history": [
-    "accountability|Reality television|Profile Beat",
     "impact_on_citizens|Phil Collins|Reaction Round-up",
     "accountability|The Late Show|Hard News Lead",
     "myth_vs_fact|Star Wars|Explainer",
@@ -356,6 +356,7 @@
     "timeline_shift|Firing|Profile Beat",
     "accountability|America's Next Top Model|Trend Take",
     "policy_gap|Spy movies|Hard News Lead",
-    "accountability|na|Explainer"
+    "accountability|na|Explainer",
+    "policy_gap|na|Profile Beat"
   ]
 }
