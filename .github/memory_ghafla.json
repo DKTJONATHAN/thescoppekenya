@@ -226,10 +226,10 @@
     "843da5d45fd9c184a2f44a0e26404565",
     "4616c25505fc3414cae9fa0c28be57ef",
     "62292d8001842ba579d180e9b9bb6747",
-    "7438d63ff9baa62ca692748a40703072"
+    "7438d63ff9baa62ca692748a40703072",
+    "b141ad499a0ec905e32615cf8a70dec5"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Receipts Piece",
     "Trend Take",
     "Hard News Lead",
@@ -258,7 +258,8 @@
     "Trend Take",
     "Hard News Lead",
     "Receipts Piece",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Profile Beat"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -325,6 +326,7 @@
     "story_progression|gospel singer|Trend Take",
     "story_progression|Kenya|Hard News Lead",
     "accountability|Kenya|Receipts Piece",
-    "next_48_hours|Kenya Power|Reaction Round-up"
+    "next_48_hours|Kenya Power|Reaction Round-up",
+    "story_progression|Daddy Owen|Profile Beat"
   ]
 }
