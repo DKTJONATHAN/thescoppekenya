@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Student Humphrey Mangera dies after being pushed from moving matatu during fare dispute](https://zandani.co.ke/article/student-humphrey-mangera-dies-after-being-pushed-from-moving-matatu-) - Nineteen-year-old student Humphrey Mangera died after being pushed from a moving Nicco Sacco matatu on Thika Road during a dispute over bus fare.
 - [How to Purchase Airtel Airtime Using M-Pesa via Pesapal](https://zandani.co.ke/article/how-to-purchase-airtel-airtime-using-mpesa-via-pesapal) - Airtel subscribers in Kenya can now buy airtime directly from M-Pesa by using the Pesapal paybill number 220220, simplifying the top-up process.
 - [The Oracle's Shifting Sands: Orengo's Political Future](https://zandani.co.ke/article/the-oracles-shifting-sands-orengos-political-future) - From the Peloponnesian War's shifting loyalties to the clamor of a governor defending his choices, the ancient echoes of self-interest and public good reverbera
 - [Sakaja suspends urban planning chief over EACC corruption probe](https://zandani.co.ke/article/sakaja-suspends-urban-planning-chief-over-eacc-probe) - Nairobi Governor Johnson Sakaja has suspended Urban Planning Chief Officer Patrick Analo and halted development approvals following an EACC graft probe.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - ['Actor James Handy Dies From Stabbing; Girlfriend's Son Arrested](https://zandani.co.ke/article/james-handy-stabbing-death-girlfriend-son-arrested-murder) - 'Actor James Handy Dies From Stabbing; Girlfriend's Son Arrested: Actor James Handy, 81, died from a fatal stabbing in Los Angeles. His girlfriend's son,
 - [Daddy Owen opens up on decision to keep his love life private](https://zandani.co.ke/article/daddy-owen-opens-up-on-decision-to-keep-his-love-life-private) - Daddy Owen opens up on decision to keep his love life private: Musician Daddy Owen explains why he prefers to keep his future relationships out of the public
 - [Kenya Bankers Association Urges CBK to Raise Interest Rates](https://zandani.co.ke/article/kenya-bankers-association-urges-cbk-to-raise-interest-rates) - Kenya Bankers Association Urges CBK to Raise Interest Rates: The Kenya Bankers Association is calling for a benchmark rate hike to tackle inflation despite
-- [Nairobi City Marathon Road Closures and Traffic Advisory](https://zandani.co.ke/article/nairobi-city-marathon-road-closures-traffic-advisory) - Nairobi City Marathon Road Closures and Traffic Advisory: Nairobi faces major traffic disruptions this Sunday as 17,000 runners participate in the city
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
