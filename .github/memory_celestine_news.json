@@ -215,10 +215,10 @@
     "45c2d4bf0b8c081b15dca9892514daf5",
     "3dd3cbfa28ee9db4b37e76a4d8b079c4",
     "f7ba128385f35b618687b9ee2cd75616",
-    "ea0b3fff4bbd3a99d83d0d6ad753e7ca"
+    "ea0b3fff4bbd3a99d83d0d6ad753e7ca",
+    "c8f8461249fa2c576961dd8244bdefb1"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Context Backgrounder",
     "Reaction & Voices",
@@ -247,10 +247,10 @@
     "Hard News Lead",
     "Power Accountability",
     "Explainer",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "policy_gap|Ebola|Power Accountability",
     "money_follow|transport|Explainer",
     "winners_losers|Nuclear Power and Energy Agency|Hard News Lead",
     "impact_on_citizens|insurance|Reaction & Voices",
@@ -329,6 +329,7 @@
     "myth_vs_fact|Football Kenya Federation|Hard News Lead",
     "policy_gap|NTSA|Power Accountability",
     "money_follow|Nairobi|Explainer",
-    "winners_losers|Nairobi County|Reaction & Voices"
+    "winners_losers|Nairobi County|Reaction & Voices",
+    "policy_gap|Kenya|Hard News Lead"
   ]
 }
