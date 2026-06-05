@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [How to Purchase Airtel Airtime Using M-Pesa via Pesapal](https://zandani.co.ke/article/how-to-purchase-airtel-airtime-using-mpesa-via-pesapal) - Airtel subscribers in Kenya can now buy airtime directly from M-Pesa by using the Pesapal paybill number 220220, simplifying the top-up process.
 - [The Oracle's Shifting Sands: Orengo's Political Future](https://zandani.co.ke/article/the-oracles-shifting-sands-orengos-political-future) - From the Peloponnesian War's shifting loyalties to the clamor of a governor defending his choices, the ancient echoes of self-interest and public good reverbera
 - [Sakaja suspends urban planning chief over EACC corruption probe](https://zandani.co.ke/article/sakaja-suspends-urban-planning-chief-over-eacc-probe) - Nairobi Governor Johnson Sakaja has suspended Urban Planning Chief Officer Patrick Analo and halted development approvals following an EACC graft probe.
 - [Andy Robertson Joins Tottenham Hotspur on Free Transfer](https://zandani.co.ke/article/andy-robertson-joins-tottenham-hotspur-on-free-transfer) - Scotland captain Andy Robertson will join Tottenham Hotspur on a free transfer this July after completing a seven-year spell at Liverpool FC.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Daddy Owen opens up on decision to keep his love life private](https://zandani.co.ke/article/daddy-owen-opens-up-on-decision-to-keep-his-love-life-private) - Daddy Owen opens up on decision to keep his love life private: Musician Daddy Owen explains why he prefers to keep his future relationships out of the public
 - [Kenya Bankers Association Urges CBK to Raise Interest Rates](https://zandani.co.ke/article/kenya-bankers-association-urges-cbk-to-raise-interest-rates) - Kenya Bankers Association Urges CBK to Raise Interest Rates: The Kenya Bankers Association is calling for a benchmark rate hike to tackle inflation despite
 - [Nairobi City Marathon Road Closures and Traffic Advisory](https://zandani.co.ke/article/nairobi-city-marathon-road-closures-traffic-advisory) - Nairobi City Marathon Road Closures and Traffic Advisory: Nairobi faces major traffic disruptions this Sunday as 17,000 runners participate in the city
-- [NTSA Faces Stakeholder Backlash Over New Digital Traffic Fine System](https://zandani.co.ke/article/ntsa-faces-stakeholder-backlash-over-new-digital-traffic-fine-system) - NTSA Faces Stakeholder Backlash Over New Digital Traffic Fine Sys: The NTSA has introduced 37 instant traffic fines via eCitizen, but stakeholders warn of
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
