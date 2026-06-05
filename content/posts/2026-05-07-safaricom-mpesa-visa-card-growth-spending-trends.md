@@ -14,7 +14,7 @@ focusKeyword: "Safaricom M-Pesa Visa Card User Base Grows Amid Lower Spending"
 schema: "NewsArticle"
 ---
 
-Safaricom M-Pesa Visa Card User Base Grows Amid Lower Spending is central to this update for Kenyan readers. Safaricom M-Pesa Visa Card User Base Grows Amid Lower Spending is the central subject of the update.
+Safaricom M-Pesa Visa Card User Base Grows Amid Lower Spending is central to this update for Kenyan readers. Safaricom M-Pesa Visa Card User Base Grows Amid Lower Spending is the central subject of the update. Safaricom M-Pesa Visa Card User Base Grows Amid Lower Spending is the central subject of the update.
 
 Safaricom M-Pesa Visa Card User Base Grows Amid Lower Spending is central to this update for Kenyan readers.
 

@@ -1,18 +1,20 @@
 ---
 title: "Nairobi City Marathon Road Closures and Traffic Advisory"
 slug: "nairobi-city-marathon-road-closures-traffic-advisory"
-description: "Nairobi faces major traffic disruptions this Sunday as 17,000 runners participate in the city marathon, leading to extensive road closures and detours."
+description: "Nairobi City Marathon Road Closures and Traffic Advisory: Nairobi faces major traffic disruptions this Sunday as 17,000 runners participate in the city"
+excerpt: "Counting the Cost of Nairobi's Marathon Gridlock Seventeen thousand runners will occupy Nairobi's arterial roads this Sunday, June 7, for th"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/TD04LBSb/d662ab3d9895.jpg"
 category: "News"
 tags: ["nairobi", "marathon", "traffic", "kenya", "nairobi expressway", "road closures"]
+canonical: "https://zandani.co.ke/article/nairobi-city-marathon-road-closures-traffic-advisory"
 date: "2026-06-05T08:46:15Z"
 dateModified: "2026-06-05T08:46:15Z"
+focusKeyword: "Nairobi City Marathon Road Closures and Traffic Advisory"
 schema: "NewsArticle"
 ---
 
-## Counting the Cost of Nairobi's Marathon Gridlock
+## Counting the Cost of Nairobi's Marathon Gridlock Nairobi City Marathon Road Closures and Traffic Advisory is the central subject of the update.
 
 Seventeen thousand runners will occupy Nairobi's arterial roads this Sunday, June 7, for the 2026 Nairobi City Marathon. While the event celebrates fitness, the logistical reality involves a near-total shutdown of the city center that will effectively pause local commerce for over fourteen hours.
 

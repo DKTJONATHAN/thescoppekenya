@@ -1,18 +1,20 @@
 ---
 title: "NTSA Faces Stakeholder Backlash Over New Digital Traffic Fine System"
 slug: "ntsa-faces-stakeholder-backlash-over-new-digital-traffic-fine-system"
-description: "The NTSA has introduced 37 instant traffic fines via eCitizen, but stakeholders warn of potential legal liability risks for vehicle owners and drivers."
+description: "NTSA Faces Stakeholder Backlash Over New Digital Traffic Fine Sys: The NTSA has introduced 37 instant traffic fines via eCitizen, but stakeholders warn of"
+excerpt: "The NTSA Digitisation Paradox The National Transport and Safety Authority is heralding its new instant fine system as a milestone in adminis"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/PsnkWN0G/98f0016fefbd.jpg"
 category: "News"
 tags: ["ntsa", "kenya news", "traffic fines", "ecitizen", "transport sector", "za ndani"]
+canonical: "https://zandani.co.ke/article/ntsa-faces-stakeholder-backlash-over-new-digital-traffic-fine-system"
 date: "2026-06-04T19:25:38Z"
 dateModified: "2026-06-04T19:25:38Z"
+focusKeyword: "NTSA Faces Stakeholder Backlash Over New Digital Traffic Fine Sys"
 schema: "NewsArticle"
 ---
 
-## The NTSA Digitisation Paradox
+## The NTSA Digitisation Paradox NTSA Faces Stakeholder Backlash Over New Digital Traffic Fine Sys is the central subject of the update.
 
 The National Transport and Safety Authority is heralding its new instant fine system as a milestone in administrative efficiency, yet the platform omits a crucial safeguard: a mechanism to distinguish between the vehicle owner and the driver actually behind the wheel.
 

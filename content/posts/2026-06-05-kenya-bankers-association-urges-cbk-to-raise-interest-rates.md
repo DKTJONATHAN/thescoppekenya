@@ -1,18 +1,20 @@
 ---
 title: "Kenya Bankers Association Urges CBK to Raise Interest Rates"
 slug: "kenya-bankers-association-urges-cbk-to-raise-interest-rates"
-description: "The Kenya Bankers Association is calling for a benchmark rate hike to tackle inflation despite slowing economic growth projections."
+description: "Kenya Bankers Association Urges CBK to Raise Interest Rates: The Kenya Bankers Association is calling for a benchmark rate hike to tackle inflation despite"
+excerpt: "Monetary Policy Tensions Ahead of June Meeting The Kenya Bankers Association (KBA) has submitted a formal request to the Central Bank of Ken"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/JWBSJcTd/fde3464d59ee.jpg"
 category: "Business"
 tags: ["kenya banking", "central bank of kenya", "monetary policy", "inflation", "kenyan economy", "business news"]
+canonical: "https://zandani.co.ke/article/kenya-bankers-association-urges-cbk-to-raise-interest-rates"
 date: "2026-06-05T08:52:04Z"
 dateModified: "2026-06-05T08:52:04Z"
+focusKeyword: "Kenya Bankers Association Urges CBK to Raise Interest Rates"
 schema: "NewsArticle"
 ---
 
-## Monetary Policy Tensions Ahead of June Meeting
+## Monetary Policy Tensions Ahead of June Meeting Kenya Bankers Association Urges CBK to Raise Interest Rates is the central subject of the update.
 
 The Kenya Bankers Association (KBA) has submitted a formal request to the Central Bank of Kenya (CBK), advocating for an interest rate hike during the scheduled June 9, 2026 meeting. This appeal for a more restrictive monetary stance is positioned as a safeguard for the financial sector against mounting inflationary pressures and rising operational expenditures.
 

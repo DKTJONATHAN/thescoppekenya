@@ -1,21 +1,20 @@
 ---
-title: "Actor James Handy Dies From Stabbing; Girlfriend's Son Arrested
+title: "'Actor James Handy Dies From Stabbing; Girlfriend's Son Arrested"
 slug: "james-handy-stabbing-death-girlfriend-son-arrested-murder"
-description: "Actor James Handy, 81, died from a fatal stabbing in Los Angeles. His girlfriend's son, Michael Gledhill, was arrested for murder. Read more about the investigation."
+description: "'Actor James Handy Dies From Stabbing; Girlfriend's Son Arrested: Actor James Handy, 81, died from a fatal stabbing in Los Angeles. His girlfriend's son,"
+excerpt: "Legal Horizon for Suspect in James Handy Stabbing Death Veteran Hollywood actor James Handy's tragic death from a fatal stabbing on Wednesda"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/B5PM83hm/0f3b4b8dde26.jpg"
-og_title: "Actor James Handy Dies From Stabbing; Son Arrested"
-og_description: "Veteran actor James Handy has died from a fatal stabbing in Los Angeles. Police arrested his girlfriend's son, Michael Gledhill, for murder."
-focus_keyword: "james handy stabbing"
 category: "Entertainment"
 tags: ["james handy", "actor death", "stabbing", "murder arrest", "los angeles crime", "michael gledhill", "entertainment news"]
+canonical: "https://zandani.co.ke/article/james-handy-stabbing-death-girlfriend-son-arrested-murder"
 date: "2026-06-05T10:35:36Z"
 dateModified: "2026-06-05T10:35:36Z"
+focusKeyword: "'Actor James Handy Dies From Stabbing; Girlfriend's Son Arrested"
 schema: "NewsArticle"
 ---
 
-## Legal Horizon for Suspect in James Handy Stabbing Death
+## Legal Horizon for Suspect in James Handy Stabbing Death "Actor James Handy Dies From Stabbing; Girlfriend's Son Arrested is the central subject of the update.
 
 Veteran Hollywood actor James Handy's tragic death from a fatal stabbing on Wednesday morning in Los Angeles has cast a shadow over the entertainment world, with the immediate arrest of his girlfriend's son, Michael Gledhill, setting the stage for imminent legal proceedings.
 

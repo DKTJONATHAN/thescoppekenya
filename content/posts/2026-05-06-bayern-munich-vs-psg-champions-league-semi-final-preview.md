@@ -14,7 +14,7 @@ focusKeyword: "Bayern Munich vs PSG Champions League Semi-final Second Leg"
 schema: "NewsArticle"
 ---
 
-Bayern Munich vs PSG Champions League Semi-final Second Leg is central to this update for Kenyan readers. Bayern Munich vs PSG Champions League Semi-final Second Leg is the central subject of the update.
+Bayern Munich vs PSG Champions League Semi-final Second Leg is central to this update for Kenyan readers. Bayern Munich vs PSG Champions League Semi-final Second Leg is the central subject of the update. Bayern Munich vs PSG Champions League Semi-final Second Leg is the central subject of the update.
 
 Bayern Munich vs PSG Champions League Semi-final Second Leg is central to this update for Kenyan readers.
 

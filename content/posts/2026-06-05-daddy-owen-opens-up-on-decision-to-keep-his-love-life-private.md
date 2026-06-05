@@ -1,18 +1,20 @@
 ---
 title: "Daddy Owen opens up on decision to keep his love life private"
 slug: "daddy-owen-opens-up-on-decision-to-keep-his-love-life-private"
-description: "Musician Daddy Owen explains why he prefers to keep his future relationships out of the public eye following his divorce from Farida Wambui."
+description: "Daddy Owen opens up on decision to keep his love life private: Musician Daddy Owen explains why he prefers to keep his future relationships out of the public"
+excerpt: "A Quiet Exit From The Public Eye The man sitting across from Dr Ofweneke on the latest episode of the Lesson at 30 podcast looked nothing li"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/BHnZ28NZ/bf6fe58fb072.png"
 category: "Gossip"
 tags: ["daddy owen", "kenyan celebrities", "kenyan entertainment", "dr ofweneke", "celebrity relationships", "kenyan news"]
+canonical: "https://zandani.co.ke/article/daddy-owen-opens-up-on-decision-to-keep-his-love-life-private"
 date: "2026-06-05T10:12:02Z"
 dateModified: "2026-06-05T10:12:02Z"
+focusKeyword: "Daddy Owen opens up on decision to keep his love life private"
 schema: "NewsArticle"
 ---
 
-## A Quiet Exit From The Public Eye
+## A Quiet Exit From The Public Eye Daddy Owen opens up on decision to keep his love life private is the central subject of the update.
 
 The man sitting across from Dr Ofweneke on the latest episode of the Lesson at 30 podcast looked nothing like the poster boy for gospel romance that gripped Kenya a decade ago. Daddy Owen has traded the performative joy of his earlier career for a hardened shell of caution, signaling a permanent departure from the culture of airing domestic milestones to satisfy an expectant public.
 

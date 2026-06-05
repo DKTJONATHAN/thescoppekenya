@@ -14,7 +14,7 @@ focusKeyword: "DCI Unveils High-Definition Robot to Defuse Bombs Remotely A"
 schema: "NewsArticle"
 ---
 
-DCI Unveils High-Definition Robot to Defuse Bombs Remotely A is central to this update for Kenyan readers. DCI Unveils High-Definition Robot to Defuse Bombs Remotely A is the central subject of the update.
+DCI Unveils High-Definition Robot to Defuse Bombs Remotely A is central to this update for Kenyan readers. DCI Unveils High-Definition Robot to Defuse Bombs Remotely A is the central subject of the update. DCI Unveils High-Definition Robot to Defuse Bombs Remotely A is the central subject of the update.
 
 DCI Unveils High-Definition Robot to Defuse Bombs Remotely A is central to this update for Kenyan readers.
 
