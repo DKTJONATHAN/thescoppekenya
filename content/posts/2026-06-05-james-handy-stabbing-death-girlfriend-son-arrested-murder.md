@@ -14,7 +14,7 @@ focusKeyword: "'Actor James Handy Dies From Stabbing; Girlfriend's Son Arrested"
 schema: "NewsArticle"
 ---
 
-## Legal Horizon for Suspect in James Handy Stabbing Death "Actor James Handy Dies From Stabbing; Girlfriend's Son Arrested is the central subject of the update.
+## Legal Horizon for Suspect in James Handy Stabbing Death "Actor James Handy Dies From Stabbing; Girlfriend's Son Arrested is the central subject of the update. 'Actor James Handy Dies From Stabbing; Girlfriend's Son Arrested is the central subject of the update.
 
 Veteran Hollywood actor James Handy's tragic death from a fatal stabbing on Wednesday morning in Los Angeles has cast a shadow over the entertainment world, with the immediate arrest of his girlfriend's son, Michael Gledhill, setting the stage for imminent legal proceedings.
 

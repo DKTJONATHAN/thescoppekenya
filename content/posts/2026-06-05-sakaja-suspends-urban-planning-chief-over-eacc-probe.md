@@ -1,18 +1,20 @@
 ---
 title: "Sakaja suspends urban planning chief over EACC corruption probe"
 slug: "sakaja-suspends-urban-planning-chief-over-eacc-probe"
-description: "Nairobi Governor Johnson Sakaja has suspended Urban Planning Chief Officer Patrick Analo and halted development approvals following an EACC graft probe."
+description: "Sakaja suspends urban planning chief over EACC corruption probe: Nairobi Governor Johnson Sakaja has suspended Urban Planning Chief Officer Patrick Analo and"
+excerpt: "Construction Grind to a Halt as City Hall Purge Bites Small scale developers across Nairobi are waking up to an indefinite freeze on constru"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/xSCjZ8bW/a30a1b160671.jpg"
 category: "News"
 tags: ["nairobi county", "johnson sakaja", "eacc", "corruption", "city hall", "urban planning"]
+canonical: "https://zandani.co.ke/article/sakaja-suspends-urban-planning-chief-over-eacc-probe"
 date: "2026-06-05T13:55:04Z"
 dateModified: "2026-06-05T13:55:04Z"
+focusKeyword: "Sakaja suspends urban planning chief over EACC corruption probe"
 schema: "NewsArticle"
 ---
 
-## Construction Grind to a Halt as City Hall Purge Bites
+## Construction Grind to a Halt as City Hall Purge Bites Sakaja suspends urban planning chief over EACC corruption probe is the central subject of the update.
 
 Small-scale developers across Nairobi are waking up to an indefinite freeze on construction permits today, as the ripple effects of the EACC graft investigation at the urban planning department turn legitimate building projects into costly white elephants.
 

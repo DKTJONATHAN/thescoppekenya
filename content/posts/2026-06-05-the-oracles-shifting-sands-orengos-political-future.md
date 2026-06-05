@@ -1,20 +1,21 @@
 ---
 title: "The Oracle's Shifting Sands: Orengo's Political Future"
 slug: "the-oracles-shifting-sands-orengos-political-future"
-description: "From the Peloponnesian War's shifting loyalties to the clamor of a governor defending his choices, the ancient echoes of self-interest and public good reverbera"
+description: "The Oracle's Shifting Sands: Orengo's Political Future: From the Peloponnesian War's shifting loyalties to the clamor of a governor defending his choices, the"
+excerpt: "The trireme’s prow cut through the Aegean, a sliver of defiance against the vast, blue indifference of the sea. On board, Alcibiades, the go"
 author: "The Chronicler"
 author_url: "https://zandani.co.ke/author/the-chronicler"
 image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200"
 category: "Chronicles"
-tags: ["chronicles", "alcibiades", "peloponnesian-war", "athens", "sparta", "tissaphernes", "orengo-ruto-meeting-backlash-odm", "siaya-development-projects-ruto-orengo", "orengo-defends-state-house-visits", "odm-internal-divisions-ruto-alliance", "orengo's-political-future-2027-elections", "tragic-irony", "political-satire"]
+tags: ["chronicles", "alcibiades", "peloponnesian-war", "athens", "sparta", "tissaphernes", "orengo-ruto-meeting-backlash-odm", "siaya-development-projects-ruto-orengo"]
 canonical: "https://zandani.co.ke/article/the-oracles-shifting-sands-orengos-political-future"
 date: "2026-06-05T14:02:43Z"
-authorUrl: "https://zandani.co.ke/author/the-chronicler"
 dateModified: "2026-06-05T14:02:43Z"
+focusKeyword: "The Oracle's Shifting Sands: Orengo's Political Future"
 schema: "NewsArticle"
 ---
 
-The trireme’s prow cut through the Aegean, a sliver of defiance against the vast, blue indifference of the sea. On board, Alcibiades, the golden son of Athens, watched the receding coastline. It was 415 BCE, and the whispers of sacrilege, the desecration of the sacred Hermai, had turned to shouts, then to a decree of death in absentia. He had been hailed for the grand Sicilian Expedition, a visionary of imperial reach, yet now he was a fugitive, abandoning his command rather than facing trial. Athens, the very city he swore to elevate, had become his persecutor. His destination? Sparta, the sworn enemy, where he vowed to inflict more harm on his former home than he had ever done good.
+The trireme’s prow cut through the Aegean, a sliver of defiance against the vast, blue indifference of the sea. On board, Alcibiades, the golden son of Athens, watched the receding coastline. It was 415 BCE, and the whispers of sacrilege, the desecration of the sacred Hermai, had turned to shouts, then to a decree of death in absentia. He had been hailed for the grand Sicilian Expedition, a visionary of imperial reach, yet now he was a fugitive, abandoning his command rather than facing trial. Athens, the very city he swore to elevate, had become his persecutor. His destination? Sparta, the sworn enemy, where he vowed to inflict more harm on his former home than he had ever done good. The Oracle's Shifting Sands: Orengo's Political Future is the central subject of the update.
 
 <h3>The Athenian's Grand Scheme</h3>
 

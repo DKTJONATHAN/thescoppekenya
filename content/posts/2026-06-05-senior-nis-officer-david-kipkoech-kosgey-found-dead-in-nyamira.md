@@ -1,18 +1,20 @@
 ---
 title: "Senior NIS Officer Found Dead in His Nyamira Residence"
 slug: "senior-nis-officer-david-kipkoech-kosgey-found-dead-in-nyamira"
-description: "Authorities have launched an investigation into the death of senior intelligence officer David Kipkoech Kosgey after he was found dead in Nyamira."
+description: "Senior NIS Officer Found Dead in His Nyamira Residence: Authorities have launched an investigation into the death of senior intelligence officer David Kipkoech"
+excerpt: "Assessing Security Protocols After Officer Death National Intelligence Service official David Kipkoech Kosgey was found dead inside his lock"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/YwPM54J/dda4911a1d6d.jpg"
 category: "News"
 tags: ["kenya", "nis", "nyamira", "security news", "police investigation", "za ndani"]
+canonical: "https://zandani.co.ke/article/senior-nis-officer-david-kipkoech-kosgey-found-dead-in-nyamira"
 date: "2026-06-05T19:00:26Z"
 dateModified: "2026-06-05T19:00:26Z"
+focusKeyword: "Senior NIS Officer Found Dead in His Nyamira Residence"
 schema: "NewsArticle"
 ---
 
-## Assessing Security Protocols After Officer Death
+## Assessing Security Protocols After Officer Death Senior NIS Officer Found Dead in His Nyamira Residence is the central subject of the update.
 
 National Intelligence Service official David Kipkoech Kosgey was found dead inside his locked Nyamira residence today, prompting an urgent inquiry into the safety protocols governing high-ranking personnel stationed outside primary operational zones.
 

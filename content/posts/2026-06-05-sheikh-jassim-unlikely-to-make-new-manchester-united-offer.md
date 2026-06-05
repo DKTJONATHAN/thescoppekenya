@@ -1,15 +1,20 @@
 ---
 title: "Sheikh Jassim 'unlikely' to make new Manchester United offer"
 slug: "sheikh-jassim-unlikely-to-make-new-manchester-united-offer"
+description: "Sheikh Jassim 'unlikely' to make new Manchester United offer: Manchester United Takeover: Glazers' Perpetual Shell Game Sheikh Jassim's departure from the"
+excerpt: "Manchester United Takeover: Glazers' Perpetual Shell Game Sheikh Jassim's departure from the Manchester United takeover saga is hardly a sho"
 author: "Sports Desk"
 image: "https://i.ibb.co/KptXX9b4/b25112615ada.jpg"
 category: "Global News"
+tags: ["sheikh jassim unlikely to make new manchester united offer", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/sheikh-jassim-unlikely-to-make-new-manchester-united-offer"
 date: "2026-06-05T17:23:12Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-06-05T17:23:12Z"
+focusKeyword: "Sheikh Jassim 'unlikely' to make new Manchester United offer"
 schema: "NewsArticle"
 ---
-## Manchester United Takeover: Glazers' Perpetual Shell Game
+
+## Manchester United Takeover: Glazers' Perpetual Shell Game Sheikh Jassim 'unlikely' to make new Manchester United offer is the central subject of the update.
 
 Sheikh Jassim's departure from the Manchester United takeover saga is hardly a shock. Despite fresh rumours of a full sale, the Glazers continue their dance, leaving fans in perpetual limbo while the club's future remains a pawn in their financial machinations. This isn't ownership; it's asset management.
 

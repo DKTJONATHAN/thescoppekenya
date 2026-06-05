@@ -1,18 +1,20 @@
 ---
 title: "Integrating Natural Ecosystems into African Infrastructure Planning"
 slug: "integrating-natural-ecosystems-into-african-infrastructure-planning"
-description: "Experts argue that nature must be viewed as essential infrastructure to drive sustainable economic development and climate resilience across Africa."
+description: "Integrating Natural Ecosystems into African Infrastructure Planni: Experts argue that nature must be viewed as essential infrastructure to drive sustainable"
+excerpt: "Redefining Our Natural Infrastructure This World Environment Day, we must confront a fiscal illusion that has long dictated our urban planni"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/GvDn3rkg/544b4c370309.jpg"
 category: "Opinions"
 tags: ["infrastructure", "climate resilience", "kenya environment", "sustainable development", "economic growth", "nature-based solutions"]
+canonical: "https://zandani.co.ke/article/integrating-natural-ecosystems-into-african-infrastructure-planning"
 date: "2026-06-05T12:20:39Z"
 dateModified: "2026-06-05T12:20:39Z"
+focusKeyword: "Integrating Natural Ecosystems into African Infrastructure Planni"
 schema: "NewsArticle"
 ---
 
-## Redefining Our Natural Infrastructure
+## Redefining Our Natural Infrastructure Integrating Natural Ecosystems into African Infrastructure Planni is the central subject of the update.
 
 This World Environment Day, we must confront a fiscal illusion that has long dictated our urban planning. We prioritize concrete bridges as essential national assets while dismissing the wetlands and forests that mitigate urban flooding as mere backdrop.
 

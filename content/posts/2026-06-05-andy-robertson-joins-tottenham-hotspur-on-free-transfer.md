@@ -1,18 +1,20 @@
 ---
 title: "Andy Robertson Joins Tottenham Hotspur on Free Transfer"
 slug: "andy-robertson-joins-tottenham-hotspur-on-free-transfer"
-description: "Scotland captain Andy Robertson will join Tottenham Hotspur on a free transfer this July after completing a seven-year spell at Liverpool FC."
+description: "Andy Robertson Joins Tottenham Hotspur on Free Transfer: Scotland captain Andy Robertson will join Tottenham Hotspur on a free transfer this July after"
+excerpt: "The Anfield Sunset: Robertson Departs for London Andy Robertson has confirmed his move to Tottenham Hotspur on a free transfer effective Jul"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/Gf4Jx2gC/ba76a3de3a3e.jpg"
 category: "Sports"
 tags: ["football", "premier league", "tottenham hotspur", "liverpool fc", "andy robertson", "transfer news", "kenya sports"]
+canonical: "https://zandani.co.ke/article/andy-robertson-joins-tottenham-hotspur-on-free-transfer"
 date: "2026-06-05T13:30:18Z"
 dateModified: "2026-06-05T13:30:18Z"
+focusKeyword: "Andy Robertson Joins Tottenham Hotspur on Free Transfer"
 schema: "NewsArticle"
 ---
 
-## The Anfield Sunset: Robertson Departs for London
+## The Anfield Sunset: Robertson Departs for London Andy Robertson Joins Tottenham Hotspur on Free Transfer is the central subject of the update.
 
 Andy Robertson has confirmed his move to Tottenham Hotspur on a free transfer effective July 1, signaling the definitive end of the Klopp-era defensive identity at Liverpool. This departure marks the closing of a chapter that spanned seven seasons and 378 appearances.
 

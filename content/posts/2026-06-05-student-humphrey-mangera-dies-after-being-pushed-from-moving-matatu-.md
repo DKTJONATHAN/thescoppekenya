@@ -1,7 +1,8 @@
 ---
 title: "Student Humphrey Mangera dies after being pushed from moving matatu during fare dispute"
 slug: "student-humphrey-mangera-dies-after-being-pushed-from-moving-matatu-"
-description: "Nineteen-year-old student Humphrey Mangera died after being pushed from a moving Nicco Sacco matatu on Thika Road during a dispute over bus fare."
+description: "Student Humphrey Mangera dies after being pushed from moving mata: Nineteen-year-old student Humphrey Mangera died after being pushed from a moving Nicco Sacco"
+excerpt: "Nineteen year old student Humphrey Mangera died this week after being forcibly ejected from a moving public service vehicle on Thika Road. T"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/cS03YVM0/76bc7275c2c9.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["humphrey-mangera", "matatu-industry", "public-transport-safety", "fare-dispute", "road-safety-kenya"]
 canonical: "https://zandani.co.ke/article/student-humphrey-mangera-dies-after-being-pushed-from-moving-matatu-"
 date: "2026-06-05T15:28:26Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-05T15:28:26Z"
+focusKeyword: "Student Humphrey Mangera dies after being pushed from moving mata"
 schema: "NewsArticle"
 ---
-Nineteen-year-old student Humphrey Mangera died this week after being forcibly ejected from a moving public service vehicle on Thika Road. The fatal incident occurred following a heated dispute over bus fare involving the crew of a Nicco Sacco matatu, registration KDV 713J.
+
+Nineteen-year-old student Humphrey Mangera died this week after being forcibly ejected from a moving public service vehicle on Thika Road. The fatal incident occurred following a heated dispute over bus fare involving the crew of a Nicco Sacco matatu, registration KDV 713J. Student Humphrey Mangera dies after being pushed from moving mata is the central subject of the update.
 
 ## The tragic end of Humphrey Mangera
 
