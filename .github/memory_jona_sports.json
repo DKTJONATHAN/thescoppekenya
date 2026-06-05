@@ -203,10 +203,10 @@
     "1ddc9d207828a8a2eeb0c6101ba406c0",
     "eba422c3db6c88684fe68bc590790bac",
     "54c001d5b182135624d31dc79716f564",
-    "976a66d805916c34e51e70975f641620"
+    "976a66d805916c34e51e70975f641620",
+    "d32b2b36a8f9868dfe6b7c45e21ac3f1"
   ],
   "style_history": [
-    "Player Profile Beat",
     "Cynical Pundit",
     "Stat Story",
     "Tactical Take",
@@ -235,10 +235,10 @@
     "Match Report",
     "Tactical Take",
     "Player Profile Beat",
-    "Cynical Pundit"
+    "Cynical Pundit",
+    "Match Report"
   ],
   "angle_history": [
-    "accountability|Premier League|Player Profile Beat",
     "myth_vs_fact|Scottish Premiership|Stat Story",
     "impact_on_citizens|FA Cup|Match Report",
     "policy_gap|FA Cup|Tactical Take",
@@ -317,6 +317,7 @@
     "story_progression|Football|Match Report",
     "story_progression|Kenny Dalglish|Tactical Take",
     "myth_vs_fact|Golden Boot|Player Profile Beat",
-    "money_follow|Real Madrid|Cynical Pundit"
+    "money_follow|Real Madrid|Cynical Pundit",
+    "timeline_shift|football|Match Report"
   ]
 }
