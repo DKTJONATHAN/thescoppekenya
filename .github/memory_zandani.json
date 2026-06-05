@@ -279,10 +279,10 @@
     "234e2345f38b10fe565204bdfabaf154",
     "46d1369846cd7d3a983815ec6ab1faad",
     "1038cc13c5e4cf4fb6e65875fbff8237",
-    "d6cf21e2d8f2633656e4a1cf86809ebd"
+    "d6cf21e2d8f2633656e4a1cf86809ebd",
+    "2f8717855e06b0f9698410d0afbda263"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Hard News Lead",
     "Receipts Piece",
     "Trend Take",
@@ -311,10 +311,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "winners_losers|co-parenting|Profile Beat",
     "myth_vs_fact|Kenya|Trend Take",
     "myth_vs_fact|fuel pricing|Receipts Piece",
     "money_follow|Toyota Harrier|Hard News Lead",
@@ -393,6 +393,7 @@
     "winners_losers|Nairobi|Reaction Round-up",
     "myth_vs_fact|Raila Odinga|Trend Take",
     "story_progression|Eko Dydda|Hard News Lead",
-    "money_follow|nightlife|Profile Beat"
+    "money_follow|nightlife|Profile Beat",
+    "story_progression|Churchill Show|Reaction Round-up"
   ]
 }
