@@ -141,10 +141,10 @@
     "266c6b5be9ee779669256617b6a99d70",
     "dbaa4e9913b67c77d10707f33c78fb20",
     "ba9b411248f47f533b2a71aee79a5b41",
-    "09f5b017d62d6f8f466796904a3d0e73"
+    "09f5b017d62d6f8f466796904a3d0e73",
+    "13dcebcb5ffe260c14dbd65370cd7959"
   ],
   "style_history": [
-    "Counterpoint",
     "Sharp Column",
     "Personal Reflection",
     "Historical Lens",
@@ -173,10 +173,10 @@
     "Personal Reflection",
     "Historical Lens",
     "Counterpoint",
-    "Sharp Column"
+    "Sharp Column",
+    "Personal Reflection"
   ],
   "angle_history": [
-    "myth_vs_fact|Devolution|Counterpoint",
     "timeline_shift|devolution|Historical Lens",
     "accountability|Geopolitics|Letter Form",
     "myth_vs_fact|education crisis|Sharp Column",
@@ -255,6 +255,7 @@
     "story_progression|Northern Kenya|Personal Reflection",
     "policy_gap|Northern Kenya|Historical Lens",
     "myth_vs_fact|Wajir|Counterpoint",
-    "money_follow|Geothermal Energy|Sharp Column"
+    "money_follow|Geothermal Energy|Sharp Column",
+    "winners_losers|infrastructure|Personal Reflection"
   ]
 }
