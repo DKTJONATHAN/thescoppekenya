@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- ["Actor James Handy Dies From Stabbing; Girlfriend's Son Arrested](https://zandani.co.ke/article/james-handy-stabbing-death-girlfriend-son-arrested-murder) - Actor James Handy, 81, died from a fatal stabbing in Los Angeles. His girlfriend's son, Michael Gledhill, was arrested for murder. Read more about the investigation.
 - [Daddy Owen opens up on decision to keep his love life private](https://zandani.co.ke/article/daddy-owen-opens-up-on-decision-to-keep-his-love-life-private) - Musician Daddy Owen explains why he prefers to keep his future relationships out of the public eye following his divorce from Farida Wambui.
 - [Kenya Bankers Association Urges CBK to Raise Interest Rates](https://zandani.co.ke/article/kenya-bankers-association-urges-cbk-to-raise-interest-rates) - The Kenya Bankers Association is calling for a benchmark rate hike to tackle inflation despite slowing economic growth projections.
 - [Nairobi City Marathon Road Closures and Traffic Advisory](https://zandani.co.ke/article/nairobi-city-marathon-road-closures-traffic-advisory) - Nairobi faces major traffic disruptions this Sunday as 17,000 runners participate in the city marathon, leading to extensive road closures and detours.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Manchester City threatens legal action against Real Madrid candidate](https://zandani.co.ke/article/manchester-city-threatens-legal-action-real-madrid-candidate) - Manchester City threatens legal action against Real Madrid candid: Manchester City is considering legal action after a Real Madrid presidential candidate used
 - [Fatal Matatu Accident Renews Concerns Over Reckless Driving in Nairobi](https://zandani.co.ke/article/fatal-matatu-accident-renews-concerns-over-reckless-driving-in-nairo) - Fatal Matatu Accident Renews Concerns Over Reckless Driving in Na: A fatal matatu crash on Nairobi's outskirts has claimed multiple lives, renewing urgent
 - ['Scott Pelley Fired From 60 Minutes After Criticizing New CBS Leadership](https://zandani.co.ke/article/scott-pelley-fired-60-minutes-cbs-news-leadership-criticism) - 'Scott Pelley Fired From 60 Minutes After Criticizing New CBS Lea: Longtime 60 Minutes correspondent Scott Pelley fired by CBS News after criticizing new
-- [Kenya Set to Host Global World Geothermal Congress](https://zandani.co.ke/article/kenya-to-host-world-geothermal-congress) - Kenya Set to Host Global World Geothermal Congress: Kenya has been chosen as the host for the upcoming World Geothermal Congress, solidifying its position as a
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
