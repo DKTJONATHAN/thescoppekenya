@@ -247,10 +247,10 @@
     "f0a5336f09a01d67d02b40e21c0bcdb2",
     "b16fe520445dfef594c97c3d1f6ca581",
     "244d80435e5d5fc0480802ce8812e39a",
-    "d33b468382e7ad355f90ea8488bcbfdc"
+    "d33b468382e7ad355f90ea8488bcbfdc",
+    "1acad2ad1467647167c2b402b55d44bb"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
@@ -279,10 +279,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Explainer",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "timeline_shift|Miles Teller|Profile Beat",
     "impact_on_citizens|Valerie Bertinelli|Reaction Round-up",
     "accountability|Survivor|Explainer",
     "winners_losers|Survivor|Trend Take",
@@ -361,6 +361,7 @@
     "winners_losers|na|Reaction Round-up",
     "myth_vs_fact|na|Trend Take",
     "policy_gap|Firing|Explainer",
-    "next_48_hours|actor|Hard News Lead"
+    "next_48_hours|actor|Hard News Lead",
+    "timeline_shift|na|Reaction Round-up"
   ]
 }
