@@ -1,0 +1,33 @@
+---
+title: "How to Purchase Airtel Airtime Using M-Pesa via Pesapal"
+slug: "how-to-purchase-airtel-airtime-using-mpesa-via-pesapal"
+description: "Airtel subscribers in Kenya can now buy airtime directly from M-Pesa by using the Pesapal paybill number 220220, simplifying the top-up process."
+author: "Elizabeth Muthoni"
+authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
+image: "https://i.ibb.co/QF2Y9DfK/4ee1fb908173.webp"
+category: "Technology"
+tags: ["airtel kenya", "mpesa", "mobile money", "pesapal", "telecom news", "kenyan tech"]
+date: "2026-06-05T14:04:37Z"
+dateModified: "2026-06-05T14:04:37Z"
+schema: "NewsArticle"
+---
+
+## The Hidden Tax of Convenience: Is Paybill 220220 a Patch for Interoperability Failures?
+
+Airtel Kenya subscribers can now bypass scratch cards by funneling M-Pesa payments through Pesapal paybill 220220 to purchase airtime. While marketed as a seamless convenience, this workaround exposes the persistent fractures in Kenya's mobile money ecosystem that regulators have failed to seal.
+
+### The Illusion of Seamless Integration
+
+The marketing for paybill 220220 is polished, framing the ability to move funds from an M-Pesa wallet to an Airtel balance as a triumph of digital agility. In reality, it is a glaring admission of failure. In a mature, interoperable market, a user should be able to send funds directly between competing mobile money platforms or conduct utility purchases across network lines without the mediation of a third-party gateway. By forcing a transaction through a middleman, the current system highlights a structural incompatibility that has persisted despite years of mandates meant to encourage open competition.
+
+This is not innovation; it is a bandage. Every time a consumer reaches for paybill 220220, they are paying a hidden tax in the form of fragmented user experience and potentially tiered service costs. While direct top-ups within a single network ecosystem are optimized for speed and cost-efficiency, introducing Pesapal as a necessary bridge adds friction. Users must manually manage account numbers, risk input errors, and accept the existence of a third party that sits between their cash and their airtime. This layer of complexity exists solely because the major telcos have perfected the art of the walled garden, treating customer retention as a zero-sum game rather than an opportunity for collaborative, cross-platform utility.
+
+### The Cost of Walled Gardens
+
+The financial footprint of this transaction structure is rarely scrutinized in press releases. Direct, native top-ups usually attract zero transaction fees. When customers use an external gateway, the economic model shifts. Transaction costs, whether borne by the user or hidden within the processing margin, ensure that mobile money remains a siloed landscape. This inefficiency effectively penalizes consumers for choosing to operate outside the primary network operator's ecosystem.
+
+If the Kenyan digital economy were truly as open as industry rhetoric suggests, the need for a specific paybill to bridge the gap between Safaricom and Airtel would have evaporated years ago. Instead, we see the rise of these intermediaries as proof that competition in the Kenyan telco space is heavily restricted by technical and political gatekeeping. While firms like Spiro secure millions to expand infrastructure like the [Spiro battery-swapping network](https://zandani.co.ke/article/spiro-secures-us50mn-expand-battery-swapping-network), the basic plumbing of our digital payments remains bottlenecked by competitive spite. 
+
+The reliance on a manual paybill input serves as a daily reminder that the interoperability we were promised remains a hollow concept. If the system were truly integrated, the interface would handle the routing invisibly. Relying on users to remember a service code to make a simple purchase is an antiquated solution to a problem that shouldn't exist. Much like the debates surrounding high-rise infrastructure in [recent NEMA public feedback sessions](https://zandani.co.ke/article/nema-seeks-public-feedback-on-three-large-scale-high-rise-projects), the focus is often on the surface-level utility of a project while ignoring the underlying strain on the foundational systems meant to support it.
+
+The adoption of 220220 confirms that the industry has chosen to ignore the necessity of full interoperability in favor of maintaining dominance within isolated networks. Consumers are handed a convenience tool that is fundamentally a symptom of a broken market. Until cross-network payments function as easily as native ones, third-party workarounds will continue to thrive on the back of our persistent technical silos. Convenience is not the same as progress, and in the case of this paybill, it is a distraction from the lack of real movement toward a unified digital payment architecture.
