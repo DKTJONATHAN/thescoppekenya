@@ -1,21 +1,20 @@
 ---
-title: "YouTuber Jesse Ridgway Faces Backlash for Terminating Down Syndrome Pregnancy
+title: "'YouTuber Jesse Ridgway Faces Backlash for Terminating Down Syndrome Pregnancy"
 slug: "youtuber-pregnancy-termination-down-syndrome-backlash"
-description: "YouTuber Jesse Ridgway and wife Ashley faced intense backlash and death threats after their decision regarding pregnancy termination due to Down syndrome. Learn more about the public reaction."
+description: "'YouTuber Jesse Ridgway Faces Backlash for Terminating Down Syndr: YouTuber Jesse Ridgway and wife Ashley faced intense backlash and death threats after their"
+excerpt: "The Digital Storm: Unpacking the YouTuber Pregnancy Termination Controversy Jesse Ridgway and his wife Ashley, prominent online personalitie"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/zHj0ttsj/dc2eb0b959a6.jpg"
-og_title: "YouTuber Jesse Ridgway on Down Syndrome Pregnancy Termination"
-og_description: "Jesse Ridgway and wife Ashley faced death threats after terminating a Down syndrome pregnancy. Their decision sparked widespread online backlash."
-focus_keyword: "youtuber pregnancy termination"
 category: "Entertainment"
 tags: ["jesse ridgway", "ashley ridgway", "down syndrome", "youtube backlash", "pregnancy termination", "content creator"]
+canonical: "https://zandani.co.ke/article/youtuber-pregnancy-termination-down-syndrome-backlash"
 date: "2026-06-06T09:10:54Z"
 dateModified: "2026-06-06T09:10:54Z"
+focusKeyword: "'YouTuber Jesse Ridgway Faces Backlash for Terminating Down Syndr"
 schema: "NewsArticle"
 ---
 
-<h2>The Digital Storm: Unpacking the YouTuber Pregnancy Termination Controversy</h2>
+<h2>The Digital Storm: Unpacking the YouTuber Pregnancy Termination Controversy</h2> "YouTuber Jesse Ridgway Faces Backlash for Terminating Down Syndr is the central subject of the update.
 
 Jesse Ridgway and his wife Ashley, prominent online personalities, found themselves at the heart of a global ethical storm this week after revealing their decision to terminate a pregnancy diagnosed with Down syndrome, sparking fierce debate and hateful threats.
 

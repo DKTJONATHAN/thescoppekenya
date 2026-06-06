@@ -1,18 +1,20 @@
 ---
 title: "US Shifts Ebola Strategy as High Court Halts Laikipia Facility"
 slug: "us-ebola-strategy-shift-laikipia-court-ruling"
-description: "The US is prioritizing domestic Ebola centers after the Kenyan High Court suspended construction at Laikipia Airbase following fatal public protests."
+description: "US Shifts Ebola Strategy as High Court Halts Laikipia Facility: The US is prioritizing domestic Ebola centers after the Kenyan High Court suspended"
+excerpt: "Exporting Risk: Washington Abandons Local Soil The United States is pivoting its Ebola containment strategy to establish thirteen domestic t"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/5gk2PxSh/83644e181ff5.jpg"
 category: "News"
 tags: ["ebola", "laikipia airbase", "kenya-us relations", "high court", "public health", "nanyuki"]
+canonical: "https://zandani.co.ke/article/us-ebola-strategy-shift-laikipia-court-ruling"
 date: "2026-06-06T07:49:24Z"
 dateModified: "2026-06-06T07:49:24Z"
+focusKeyword: "US Shifts Ebola Strategy as High Court Halts Laikipia Facility"
 schema: "NewsArticle"
 ---
 
-## Exporting Risk: Washington Abandons Local Soil
+## Exporting Risk: Washington Abandons Local Soil US Shifts Ebola Strategy as High Court Halts Laikipia Facility is the central subject of the update.
 
 The United States is pivoting its Ebola containment strategy to establish thirteen domestic treatment centers while the Kenyan High Court forces a cold halt to the controversial quarantine facility at Laikipia Airbase. Two lives were lost in Nanyuki, a heavy toll for a project that was never debated by the people it would actually endanger.
 
