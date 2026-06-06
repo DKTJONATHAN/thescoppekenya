@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [High Court Halts NTSA Automated Traffic Fine System Rollout](https://zandani.co.ke/article/high-court-halts-ntsa-automated-traffic-fine-system-rollout) - The High Court has suspended the new NTSA automated traffic fine system and license rollout following a legal challenge over procurement irregularities.
 - [High Court Refers COTU Election Dispute to Labour Court](https://zandani.co.ke/article/high-court-refers-cotu-election-dispute-to-labour-court) - The High Court has dismissed a petition challenging COTU leadership polls, citing lack of jurisdiction and transferring the case to the Labour Court.
 - [David Sullivan Resigns as West Ham Co-Chairman Amid Allegations](https://zandani.co.ke/article/david-sullivan-resigns-as-west-ham-co-chairman) - David Sullivan Resigns as West Ham Co-Chairman Amid Allegations: West Ham United co-chairman David Sullivan has resigned from his roles following the emergence
 - [Kenyan Public Firms to Adopt New IFRS Sustainability Standards](https://zandani.co.ke/article/kenyan-public-firms-to-adopt-new-ifrs-sustainability-standards) - Kenyan Public Firms to Adopt New IFRS Sustainability Standards: Public companies in Kenya are preparing for mandatory IFRS S1 and S2 reporting to increase
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - ['Among Us Animated Series Surprise Premieres All 10 Episodes on Paramount+](https://zandani.co.ke/article/among-us-animated-series-surprise-premieres-paramount-plus) - 'Among Us Animated Series Surprise Premieres All 10 Episodes on P: The Among Us animated series unexpectedly dropped all 10 episodes on Paramount+ after a long
 - [Senior NIS Officer Found Dead in His Nyamira Residence](https://zandani.co.ke/article/senior-nis-officer-david-kipkoech-kosgey-found-dead-in-nyamira) - Senior NIS Officer Found Dead in His Nyamira Residence: Authorities have launched an investigation into the death of senior intelligence officer David Kipkoech
 - [Sheikh Jassim 'unlikely' to make new Manchester United offer](https://zandani.co.ke/article/sheikh-jassim-unlikely-to-make-new-manchester-united-offer) - Sheikh Jassim 'unlikely' to make new Manchester United offer: Manchester United Takeover: Glazers' Perpetual Shell Game Sheikh Jassim's departure from the
-- [Student Humphrey Mangera dies after being pushed from moving matatu during fare dispute](https://zandani.co.ke/article/student-humphrey-mangera-dies-after-being-pushed-from-moving-matatu-) - Student Humphrey Mangera dies after being pushed from moving mata: Nineteen-year-old student Humphrey Mangera died after being pushed from a moving Nicco Sacco
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
