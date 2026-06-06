@@ -217,10 +217,10 @@
     "f7ba128385f35b618687b9ee2cd75616",
     "ea0b3fff4bbd3a99d83d0d6ad753e7ca",
     "c8f8461249fa2c576961dd8244bdefb1",
-    "c68d0c35cccde964cd8d5427eab030d6"
+    "c68d0c35cccde964cd8d5427eab030d6",
+    "78005a43152f3fdf84f085849aad6f72"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
     "Explainer",
@@ -249,10 +249,10 @@
     "Explainer",
     "Reaction & Voices",
     "Hard News Lead",
-    "Power Accountability"
+    "Power Accountability",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "winners_losers|Nuclear Power and Energy Agency|Hard News Lead",
     "impact_on_citizens|insurance|Reaction & Voices",
     "money_follow|Kenya|Power Accountability",
     "myth_vs_fact|NTSA|Context Backgrounder",
@@ -331,6 +331,7 @@
     "money_follow|Nairobi|Explainer",
     "winners_losers|Nairobi County|Reaction & Voices",
     "policy_gap|Kenya|Hard News Lead",
-    "accountability|Ebola|Power Accountability"
+    "accountability|Ebola|Power Accountability",
+    "story_progression|COTU|Context Backgrounder"
   ]
 }
