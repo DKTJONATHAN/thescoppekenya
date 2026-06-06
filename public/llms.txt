@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Thomas Tuchel reveals role in England World Cup squad number changes](https://zandani.co.ke/article/thomas-tuchel-reveals-role-in-england-world-cup-squad-number-changes) - Tuchel's 'Influence' on England Squad Numbers: A Masterclass in Delegation or Evasion? Thomas Tuchel has revealed his nominal involvement in England's World Cup squad number allocation, admitting he merely "had an opinion on one or two numbers" amidst player...
 - [School denies bullying claims as mother faces backlash over child's name deception](https://zandani.co.ke/article/school-denies-bullying-claims-as-mother-faces-backlash-over-child-s-) - School officials disprove bullying claims after a mother falsely alleged her son was targeted for his name, revealing the child's true identity.
 - [High Court Halts NTSA Automated Traffic Fine System Rollout](https://zandani.co.ke/article/high-court-halts-ntsa-automated-traffic-fine-system-rollout) - The High Court has suspended the new NTSA automated traffic fine system and license rollout following a legal challenge over procurement irregularities.
 - [High Court Refers COTU Election Dispute to Labour Court](https://zandani.co.ke/article/high-court-refers-cotu-election-dispute-to-labour-court) - The High Court has dismissed a petition challenging COTU leadership polls, citing lack of jurisdiction and transferring the case to the Labour Court.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - ['YouTuber Jesse Ridgway Faces Backlash for Terminating Down Syndrome Pregnancy](https://zandani.co.ke/article/youtuber-pregnancy-termination-down-syndrome-backlash) - 'YouTuber Jesse Ridgway Faces Backlash for Terminating Down Syndr: YouTuber Jesse Ridgway and wife Ashley faced intense backlash and death threats after their
 - [US Shifts Ebola Strategy as High Court Halts Laikipia Facility](https://zandani.co.ke/article/us-ebola-strategy-shift-laikipia-court-ruling) - US Shifts Ebola Strategy as High Court Halts Laikipia Facility: The US is prioritizing domestic Ebola centers after the Kenyan High Court suspended
 - ['Among Us Animated Series Surprise Premieres All 10 Episodes on Paramount+](https://zandani.co.ke/article/among-us-animated-series-surprise-premieres-paramount-plus) - 'Among Us Animated Series Surprise Premieres All 10 Episodes on P: The Among Us animated series unexpectedly dropped all 10 episodes on Paramount+ after a long
-- [Senior NIS Officer Found Dead in His Nyamira Residence](https://zandani.co.ke/article/senior-nis-officer-david-kipkoech-kosgey-found-dead-in-nyamira) - Senior NIS Officer Found Dead in His Nyamira Residence: Authorities have launched an investigation into the death of senior intelligence officer David Kipkoech
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
