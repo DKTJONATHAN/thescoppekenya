@@ -218,10 +218,10 @@
     "ea0b3fff4bbd3a99d83d0d6ad753e7ca",
     "c8f8461249fa2c576961dd8244bdefb1",
     "c68d0c35cccde964cd8d5427eab030d6",
-    "78005a43152f3fdf84f085849aad6f72"
+    "78005a43152f3fdf84f085849aad6f72",
+    "8fabe281cf08c69a45c59f6a83f4b7ec"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Power Accountability",
     "Explainer",
     "Hard News Lead",
@@ -250,10 +250,10 @@
     "Reaction & Voices",
     "Hard News Lead",
     "Power Accountability",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Explainer"
   ],
   "angle_history": [
-    "impact_on_citizens|insurance|Reaction & Voices",
     "money_follow|Kenya|Power Accountability",
     "myth_vs_fact|NTSA|Context Backgrounder",
     "next_48_hours|Busia|Explainer",
@@ -332,6 +332,7 @@
     "winners_losers|Nairobi County|Reaction & Voices",
     "policy_gap|Kenya|Hard News Lead",
     "accountability|Ebola|Power Accountability",
-    "story_progression|COTU|Context Backgrounder"
+    "story_progression|COTU|Context Backgrounder",
+    "policy_gap|Ebola|Explainer"
   ]
 }
