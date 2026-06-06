@@ -14,7 +14,7 @@ focusKeyword: "'YouTuber Jesse Ridgway Faces Backlash for Terminating Down Syndr
 schema: "NewsArticle"
 ---
 
-<h2>The Digital Storm: Unpacking the YouTuber Pregnancy Termination Controversy</h2> "YouTuber Jesse Ridgway Faces Backlash for Terminating Down Syndr is the central subject of the update.
+<h2>The Digital Storm: Unpacking the YouTuber Pregnancy Termination Controversy</h2> "YouTuber Jesse Ridgway Faces Backlash for Terminating Down Syndr is the central subject of the update. 'YouTuber Jesse Ridgway Faces Backlash for Terminating Down Syndr is the central subject of the update.
 
 Jesse Ridgway and his wife Ashley, prominent online personalities, found themselves at the heart of a global ethical storm this week after revealing their decision to terminate a pregnancy diagnosed with Down syndrome, sparking fierce debate and hateful threats.
 

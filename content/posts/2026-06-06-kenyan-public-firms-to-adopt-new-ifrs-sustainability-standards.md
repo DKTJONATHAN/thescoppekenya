@@ -1,18 +1,20 @@
 ---
 title: "Kenyan Public Firms to Adopt New IFRS Sustainability Standards"
 slug: "kenyan-public-firms-to-adopt-new-ifrs-sustainability-standards"
-description: "Public companies in Kenya are preparing for mandatory IFRS S1 and S2 reporting to increase transparency on climate risks and long-term sustainability."
+description: "Kenyan Public Firms to Adopt New IFRS Sustainability Standards: Public companies in Kenya are preparing for mandatory IFRS S1 and S2 reporting to increase"
+excerpt: "The Nairobi Securities Exchange is currently bracing for a pivotal regulatory transition. The shift from voluntary sustainability reporting"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/qLVsVMLK/48587100bbce.jpg"
 category: "Opinions"
 tags: ["kenya business", "ifrs standards", "sustainability reporting", "climate risk", "nairobi securities exchange", "corporate governance"]
+canonical: "https://zandani.co.ke/article/kenyan-public-firms-to-adopt-new-ifrs-sustainability-standards"
 date: "2026-06-06T11:00:27Z"
 dateModified: "2026-06-06T11:00:27Z"
+focusKeyword: "Kenyan Public Firms to Adopt New IFRS Sustainability Standards"
 schema: "NewsArticle"
 ---
 
-The Nairobi Securities Exchange is currently bracing for a pivotal regulatory transition. The shift from voluntary sustainability reporting to the mandatory adoption of IFRS S1 and S2 frameworks marks a departure from historical norms. By embedding climate-related risks directly into audited financial statements, firms are being steered toward a new era of corporate accountability, effectively ending the period where sustainability was treated as a cosmetic exercise.
+The Nairobi Securities Exchange is currently bracing for a pivotal regulatory transition. The shift from voluntary sustainability reporting to the mandatory adoption of IFRS S1 and S2 frameworks marks a departure from historical norms. By embedding climate-related risks directly into audited financial statements, firms are being steered toward a new era of corporate accountability, effectively ending the period where sustainability was treated as a cosmetic exercise. Kenyan Public Firms to Adopt New IFRS Sustainability Standards is the central subject of the update.
 
 ### From Public Relations to Financial Reality
 

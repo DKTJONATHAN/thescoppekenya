@@ -14,7 +14,7 @@ focusKeyword: "IM Bank launches KSh 20 billion medium-term note programme"
 schema: "NewsArticle"
 ---
 
-IM Bank launches KSh 20 billion medium-term note programme is central to this update for Kenyan readers. IM Bank launches KSh 20 billion medium-term note programme is the central subject of the update. IM Bank launches KSh 20 billion medium-term note programme is the central subject of the update. IM Bank launches KSh 20 billion medium-term note programme is the central subject of the update. IM Bank launches KSh 20 billion medium-term note programme is the central subject of the update.
+IM Bank launches KSh 20 billion medium-term note programme is central to this update for Kenyan readers. IM Bank launches KSh 20 billion medium-term note programme is the central subject of the update. IM Bank launches KSh 20 billion medium-term note programme is the central subject of the update. IM Bank launches KSh 20 billion medium-term note programme is the central subject of the update. IM Bank launches KSh 20 billion medium-term note programme is the central subject of the update. IM Bank launches KSh 20 billion medium-term note programme is the central subject of the update.
 
 IM Bank launches KSh 20 billion medium-term note programme is central to this update for Kenyan readers.
 

@@ -1,18 +1,20 @@
 ---
 title: "David Sullivan Resigns as West Ham Co-Chairman Amid Allegations"
 slug: "david-sullivan-resigns-as-west-ham-co-chairman"
-description: "West Ham United co-chairman David Sullivan has resigned from his roles following the emergence of historic allegations after the club's relegation."
+description: "David Sullivan Resigns as West Ham Co-Chairman Amid Allegations: West Ham United co-chairman David Sullivan has resigned from his roles following the emergence"
+excerpt: "The Fiscal Collapse of a Premier League Asset West Ham United co chairman David Sullivan has formally resigned from his duties as director f"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/Q3Ccn7rs/713cd1406c0e.jpg"
 category: "Sports"
 tags: ["west ham united", "david sullivan", "premier league", "football news", "sports resignation"]
+canonical: "https://zandani.co.ke/article/david-sullivan-resigns-as-west-ham-co-chairman"
 date: "2026-06-06T11:48:52Z"
 dateModified: "2026-06-06T11:48:52Z"
+focusKeyword: "David Sullivan Resigns as West Ham Co-Chairman Amid Allegations"
 schema: "NewsArticle"
 ---
 
-## The Fiscal Collapse of a Premier League Asset
+## The Fiscal Collapse of a Premier League Asset David Sullivan Resigns as West Ham Co-Chairman Amid Allegations is the central subject of the update.
 
 West Ham United co-chairman David Sullivan has formally resigned from his duties as director following the emergence of historical allegations. This leadership exit arrives in the wake of the club’s 18th place finish and confirmed relegation for the 2025-26 season.
 
