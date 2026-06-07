@@ -221,10 +221,10 @@
     "78005a43152f3fdf84f085849aad6f72",
     "8fabe281cf08c69a45c59f6a83f4b7ec",
     "4d05ddcf37021169a228cbb89e6328ea",
-    "10cca080d686b5a323787ccc2b56a952"
+    "10cca080d686b5a323787ccc2b56a952",
+    "5af7b598f7ab0d89f0519692d4c1fe0a"
   ],
   "style_history": [
-    "Hard News Lead",
     "Context Backgrounder",
     "Power Accountability",
     "Explainer",
@@ -253,10 +253,10 @@
     "Context Backgrounder",
     "Explainer",
     "Reaction & Voices",
-    "Power Accountability"
+    "Power Accountability",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "next_48_hours|Busia|Explainer",
     "policy_gap|aviation|Hard News Lead",
     "impact_on_citizens|KRA|Reaction & Voices",
     "impact_on_citizens|Kenya|Context Backgrounder",
@@ -335,6 +335,7 @@
     "story_progression|COTU|Context Backgrounder",
     "policy_gap|Ebola|Explainer",
     "story_progression|Kitui|Reaction & Voices",
-    "policy_gap|Gor Mahia|Power Accountability"
+    "policy_gap|Gor Mahia|Power Accountability",
+    "next_48_hours|Kenya|Hard News Lead"
   ]
 }
