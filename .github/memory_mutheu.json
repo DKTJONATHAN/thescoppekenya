@@ -249,10 +249,10 @@
     "244d80435e5d5fc0480802ce8812e39a",
     "d33b468382e7ad355f90ea8488bcbfdc",
     "1acad2ad1467647167c2b402b55d44bb",
-    "434d43fe97bffd83efd8b67d553c6b7a"
+    "434d43fe97bffd83efd8b67d553c6b7a",
+    "8857bc2dfb61e007d12efc0580831a63"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
@@ -281,10 +281,10 @@
     "Explainer",
     "Hard News Lead",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
-    "accountability|Survivor|Explainer",
     "winners_losers|Survivor|Trend Take",
     "money_follow|late-night television|Hard News Lead",
     "impact_on_citizens|comedy|Reaction Round-up",
@@ -363,6 +363,7 @@
     "policy_gap|Firing|Explainer",
     "next_48_hours|actor|Hard News Lead",
     "timeline_shift|na|Reaction Round-up",
-    "myth_vs_fact|na|Profile Beat"
+    "myth_vs_fact|na|Profile Beat",
+    "policy_gap|data storage|Trend Take"
   ]
 }
