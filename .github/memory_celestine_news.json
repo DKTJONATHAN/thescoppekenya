@@ -219,10 +219,10 @@
     "c8f8461249fa2c576961dd8244bdefb1",
     "c68d0c35cccde964cd8d5427eab030d6",
     "78005a43152f3fdf84f085849aad6f72",
-    "8fabe281cf08c69a45c59f6a83f4b7ec"
+    "8fabe281cf08c69a45c59f6a83f4b7ec",
+    "4d05ddcf37021169a228cbb89e6328ea"
   ],
   "style_history": [
-    "Power Accountability",
     "Explainer",
     "Hard News Lead",
     "Context Backgrounder",
@@ -251,10 +251,10 @@
     "Hard News Lead",
     "Power Accountability",
     "Context Backgrounder",
-    "Explainer"
+    "Explainer",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "money_follow|Kenya|Power Accountability",
     "myth_vs_fact|NTSA|Context Backgrounder",
     "next_48_hours|Busia|Explainer",
     "policy_gap|aviation|Hard News Lead",
@@ -333,6 +333,7 @@
     "policy_gap|Kenya|Hard News Lead",
     "accountability|Ebola|Power Accountability",
     "story_progression|COTU|Context Backgrounder",
-    "policy_gap|Ebola|Explainer"
+    "policy_gap|Ebola|Explainer",
+    "story_progression|Kitui|Reaction & Voices"
   ]
 }
