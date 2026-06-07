@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [President Ruto Hosts Gor Mahia for 22nd Premier League Title Win](https://zandani.co.ke/article/president-ruto-hosts-gor-mahia-22nd-title-celebration) - President William Ruto celebrated Gor Mahia at State House with financial rewards while reaffirming the government plan to upgrade 28 national stadiums.
 - [England defeat New Zealand 1-0 as Thomas Tuchel eyes World Cup](https://zandani.co.ke/article/england-defeat-new-zealand-as-thomas-tuchel-eyes-world-cup) - England secured a narrow victory over New Zealand in Tampa as Thomas Tuchel experimented with his squad ahead of the upcoming World Cup campaign.
 - [Wajir Hosts 63rd Madaraka Day Boosting Regional Infrastructure](https://zandani.co.ke/article/wajir-hosts-63rd-madaraka-day-boosting-regional-infrastructure) - The 63rd Madaraka Day celebrations in Wajir County accelerated major infrastructure projects including a new stadium and State Lodge for the region.
 - [South African Artist Sbahle Drops Debut Album Iscoco Sam](https://zandani.co.ke/article/south-african-artist-sbahle-drops-debut-album-iscoco-sam) - South African Artist Sbahle Drops Debut Album Iscoco Sam: Rising South African star Sbahle has released her debut album Iscoco Sam featuring 18 tracks that
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Thomas Tuchel reveals role in England World Cup squad number changes](https://zandani.co.ke/article/thomas-tuchel-reveals-role-in-england-world-cup-squad-number-changes) - Thomas Tuchel reveals role in England World Cup squad number chan: Tuchel's 'Influence' on England Squad Numbers: A Masterclass in Delegation or Evasion?
 - [School denies bullying claims as mother faces backlash over child's name deception](https://zandani.co.ke/article/school-denies-bullying-claims-as-mother-faces-backlash-over-child-s-) - School denies bullying claims as mother faces backlash over child: School officials disprove bullying claims after a mother falsely alleged her son was
 - [High Court Halts NTSA Automated Traffic Fine System Rollout](https://zandani.co.ke/article/high-court-halts-ntsa-automated-traffic-fine-system-rollout) - High Court Halts NTSA Automated Traffic Fine System Rollout: The High Court has suspended the new NTSA automated traffic fine system and license rollout
-- [High Court Refers COTU Election Dispute to Labour Court](https://zandani.co.ke/article/high-court-refers-cotu-election-dispute-to-labour-court) - High Court Refers COTU Election Dispute to Labour Court: The High Court has dismissed a petition challenging COTU leadership polls, citing lack of jurisdiction
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
