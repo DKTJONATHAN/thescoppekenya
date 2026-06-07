@@ -281,10 +281,10 @@
     "1038cc13c5e4cf4fb6e65875fbff8237",
     "d6cf21e2d8f2633656e4a1cf86809ebd",
     "2f8717855e06b0f9698410d0afbda263",
-    "92f10d24d502c3911c62ef2763f17a80"
+    "92f10d24d502c3911c62ef2763f17a80",
+    "4c508cd89f14b74355dc73e960150a3b"
   ],
   "style_history": [
-    "Receipts Piece",
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
@@ -313,10 +313,10 @@
     "Hard News Lead",
     "Profile Beat",
     "Reaction Round-up",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "myth_vs_fact|fuel pricing|Receipts Piece",
     "money_follow|Toyota Harrier|Hard News Lead",
     "impact_on_citizens|Black Tax|Reaction Round-up",
     "accountability|Fuel Prices|Profile Beat",
@@ -395,6 +395,7 @@
     "story_progression|Eko Dydda|Hard News Lead",
     "money_follow|nightlife|Profile Beat",
     "story_progression|Churchill Show|Reaction Round-up",
-    "policy_gap|activism|Receipts Piece"
+    "policy_gap|activism|Receipts Piece",
+    "winners_losers|Afropop|Hard News Lead"
   ]
 }
