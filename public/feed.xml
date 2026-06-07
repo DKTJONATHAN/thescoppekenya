@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sun, 07 Jun 2026 16:09:00 GMT</pubDate>
+    <pubDate>Sun, 07 Jun 2026 18:20:02 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Why Kenyan Trailers Must Display Z Prefix License Plates]]></title>
+      <link>https://zandani.co.ke/article/kenya-trailer-z-prefix-license-plates-regulations</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-trailer-z-prefix-license-plates-regulations</guid>
+      <pubDate>Sun, 07 Jun 2026 18:08:11 GMT</pubDate>
+      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
+      <description><![CDATA[Kenyan transport laws require trailers to display specific Z prefix license plates to ensure separate registration, taxation, and safety identification.]]></description>
+      <enclosure url="https://i.ibb.co/fGFk2Fn4/ec7000171b46.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/fGFk2Fn4/ec7000171b46.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/fGFk2Fn4/ec7000171b46.jpg" alt="Why Kenyan Trailers Must Display Z Prefix License Plates" /><p>Kenyan transport laws require trailers to display specific Z prefix license plates to ensure separate registration, taxation, and safety identification.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA["Data Processing Practices for Personalized Experiences at Za Ndani]]></title>
       <link>https://zandani.co.ke/article/data-processing-personalized-experiences-service-improvement</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/RK7T88g/fa8f948f2892.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/RK7T88g/fa8f948f2892.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/RK7T88g/fa8f948f2892.jpg" alt="&apos;Simon Cowell Credits Susan Boyle for Got Talent Success, Admits Misjudgment" /><p>'Simon Cowell Credits Susan Boyle for Got Talent Success, Admits : Simon Cowell reveals Susan Boyle's immense positive impact on the 'Got Talent' franchise,</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Paternity disputes and social stigma emerge following Kware dumpsite murders]]></title>
-      <link>https://zandani.co.ke/article/paternity-disputes-and-social-stigma-emerge-following-kware-dumpsite</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/paternity-disputes-and-social-stigma-emerge-following-kware-dumpsite</guid>
-      <pubDate>Tue, 02 Jun 2026 04:57:48 GMT</pubDate>
-      <dc:creator><![CDATA[Zed Mogaka]]></dc:creator>
-      <description><![CDATA[Paternity disputes and social stigma emerge following Kware dumps: Forensic DNA testing at Nairobi's Kware dumpsite reveals hidden paternity disputes and]]></description>
-      <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
-      <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="Paternity disputes and social stigma emerge following Kware dumpsite murders" /><p>Paternity disputes and social stigma emerge following Kware dumps: Forensic DNA testing at Nairobi's Kware dumpsite reveals hidden paternity disputes and</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
