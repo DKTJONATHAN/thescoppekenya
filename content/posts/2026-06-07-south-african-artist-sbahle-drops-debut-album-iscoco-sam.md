@@ -1,18 +1,20 @@
 ---
 title: "South African Artist Sbahle Drops Debut Album Iscoco Sam"
 slug: "south-african-artist-sbahle-drops-debut-album-iscoco-sam"
-description: "Rising South African star Sbahle has released her debut album Iscoco Sam featuring 18 tracks that blend Afropop, R&B, and Amapiano sounds."
+description: "South African Artist Sbahle Drops Debut Album Iscoco Sam: Rising South African star Sbahle has released her debut album Iscoco Sam featuring 18 tracks that"
+excerpt: "Durban Vocalist Sbahle Stakes Her Claim with Debut Album Iscoco Sam Durban based vocalist Sbahle has entered the regional music market with"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/C3r7wn73/c2015ea6723e.png"
 category: "Gossip"
 tags: ["sbahle", "iscoco sam", "south african music", "amapiano", "afropop", "music release"]
+canonical: "https://zandani.co.ke/article/south-african-artist-sbahle-drops-debut-album-iscoco-sam"
 date: "2026-06-07T10:37:25Z"
 dateModified: "2026-06-07T10:37:25Z"
+focusKeyword: "South African Artist Sbahle Drops Debut Album Iscoco Sam"
 schema: "NewsArticle"
 ---
 
-## Durban Vocalist Sbahle Stakes Her Claim with Debut Album Iscoco Sam
+## Durban Vocalist Sbahle Stakes Her Claim with Debut Album Iscoco Sam South African Artist Sbahle Drops Debut Album Iscoco Sam is the central subject of the update.
 
 Durban-based vocalist Sbahle has entered the regional music market with the release of her 18-track debut album, Iscoco Sam. The project, which showcases the distinct sonic heritage of KwaZulu-Natal, marks a significant professional milestone for the Umlazi native, born Sibahle Cele Chiliza. By prioritizing the rhythmic textures of her home province over generic pop trends, the artist has crafted a collection that is resonating with listeners and gaining traction across regional airwaves.
 

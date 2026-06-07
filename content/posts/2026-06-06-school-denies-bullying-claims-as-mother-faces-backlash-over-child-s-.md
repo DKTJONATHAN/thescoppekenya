@@ -1,7 +1,8 @@
 ---
 title: "School denies bullying claims as mother faces backlash over child's name deception"
 slug: "school-denies-bullying-claims-as-mother-faces-backlash-over-child-s-"
-description: "School officials disprove bullying claims after a mother falsely alleged her son was targeted for his name, revealing the child's true identity."
+description: "School denies bullying claims as mother faces backlash over child: School officials disprove bullying claims after a mother falsely alleged her son was"
+excerpt: "A woman appeared on national television this week to claim her son faced systemic bullying and exclusion from school due to his name, Willia"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/LDnZ7vtC/5d423d2a0ff0.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["school-bullying-claims", "kenyan-education-controversy", "child-identity-deception", "social-media-backlash", "parenting-scandal"]
 canonical: "https://zandani.co.ke/article/school-denies-bullying-claims-as-mother-faces-backlash-over-child-s-"
 date: "2026-06-06T14:08:05Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-06T14:08:05Z"
+focusKeyword: "School denies bullying claims as mother faces backlash over child"
 schema: "NewsArticle"
 ---
-A woman appeared on national television this week to claim her son faced systemic bullying and exclusion from school due to his name, William Ruto. However, school administrators quickly debunked the narrative, revealing the child is actually named William Bogita.
+
+A woman appeared on national television this week to claim her son faced systemic bullying and exclusion from school due to his name, William Ruto. However, school administrators quickly debunked the narrative, revealing the child is actually named William Bogita. School denies bullying claims as mother faces backlash over child is the central subject of the update.
 
 ## Deception and the quest for political handouts
 

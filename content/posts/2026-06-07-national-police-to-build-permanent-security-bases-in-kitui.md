@@ -1,18 +1,20 @@
 ---
 title: "National Police Service to Build Permanent Security Bases in Kitui"
 slug: "national-police-to-build-permanent-security-bases-in-kitui"
-description: "Authorities are establishing permanent security camps in Kitui to end retaliatory violence and restore safety along the Mwingi Garissa transport route."
+description: "National Police Service to Build Permanent Security Bases in Kitu: Authorities are establishing permanent security camps in Kitui to end retaliatory violence"
+excerpt: "Concrete Walls for a Shifting Frontier Residents in Kitui are watching the horizon with a mix of exhaustion and weary optimism as the Nation"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/NgmSLQV7/e857b3fdf34e.jpg"
 category: "News"
 tags: ["kitui", "national police service", "banditry", "kenya security", "mwingi", "conflict resolution"]
+canonical: "https://zandani.co.ke/article/national-police-to-build-permanent-security-bases-in-kitui"
 date: "2026-06-07T08:27:25Z"
 dateModified: "2026-06-07T08:27:25Z"
+focusKeyword: "National Police Service to Build Permanent Security Bases in Kitu"
 schema: "NewsArticle"
 ---
 
-## Concrete Walls for a Shifting Frontier
+## Concrete Walls for a Shifting Frontier National Police Service to Build Permanent Security Bases in Kitu is the central subject of the update.
 
 Residents in Kitui are watching the horizon with a mix of exhaustion and weary optimism as the National Police Service moves to replace reactive police patrols with permanent, fortified bases across the volatile borderlands. This shift marks a recognition that temporary deployments are no longer sufficient to secure the Mwingi and Tseikuru regions against cyclical violence.
 

@@ -1,18 +1,20 @@
 ---
 title: "Autopsy confirms Nanyuki protester died from gunshot wound"
 slug: "autopsy-confirms-nanyuki-protester-died-from-gunshot-wound"
-description: "An autopsy has confirmed a 27 year old protester died from a gunshot wound during protests against an Ebola quarantine facility in Laikipia County."
+description: "Autopsy confirms Nanyuki protester died from gunshot wound: An autopsy has confirmed a 27 year old protester died from a gunshot wound during protests against"
+excerpt: "Why did a health directive lead to a deadly confrontation in Nanyuki? A formal postmortem has officially confirmed that a 27 year old protes"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Xrpt9BsC/c8219b1c6c8d.jpg"
 category: "News"
 tags: ["laikipia", "nanyuki", "ebola", "human rights", "vocal africa", "kenya news"]
+canonical: "https://zandani.co.ke/article/autopsy-confirms-nanyuki-protester-died-from-gunshot-wound"
 date: "2026-06-06T18:11:47Z"
 dateModified: "2026-06-06T18:11:47Z"
+focusKeyword: "Autopsy confirms Nanyuki protester died from gunshot wound"
 schema: "NewsArticle"
 ---
 
-## Why did a health directive lead to a deadly confrontation in Nanyuki?
+## Why did a health directive lead to a deadly confrontation in Nanyuki? Autopsy confirms Nanyuki protester died from gunshot wound is the central subject of the update.
 
 A formal postmortem has officially confirmed that a 27-year-old protester died from a gunshot wound during the recent Nanyuki unrest. This finding forces a difficult conversation about how state health mandates are communicated to local communities and where the line between security and public safety truly lies.
 

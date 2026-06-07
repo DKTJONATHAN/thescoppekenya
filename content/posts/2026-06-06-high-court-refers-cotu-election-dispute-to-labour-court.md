@@ -1,18 +1,20 @@
 ---
 title: "High Court Refers COTU Election Dispute to Labour Court"
 slug: "high-court-refers-cotu-election-dispute-to-labour-court"
-description: "The High Court has dismissed a petition challenging COTU leadership polls, citing lack of jurisdiction and transferring the case to the Labour Court."
+description: "High Court Refers COTU Election Dispute to Labour Court: The High Court has dismissed a petition challenging COTU leadership polls, citing lack of jurisdiction"
+excerpt: "The Legal Labyrinth of Union Leadership Justice William Musyoka officially transferred the challenge against the March 14 COTU leadership el"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/23fKxnd4/0f844a0671fb.jpg"
 category: "News"
 tags: ["cotu", "francis atwoli", "kenya judiciary", "labour laws", "trade unions", "kenya news"]
+canonical: "https://zandani.co.ke/article/high-court-refers-cotu-election-dispute-to-labour-court"
 date: "2026-06-06T12:09:47Z"
 dateModified: "2026-06-06T12:09:47Z"
+focusKeyword: "High Court Refers COTU Election Dispute to Labour Court"
 schema: "NewsArticle"
 ---
 
-## The Legal Labyrinth of Union Leadership
+## The Legal Labyrinth of Union Leadership High Court Refers COTU Election Dispute to Labour Court is the central subject of the update.
 
 Justice William Musyoka officially transferred the challenge against the March 14 COTU leadership elections to the Employment and Labour Relations Court on June 4. This procedural pivot signals yet another chapter in a long-standing cycle of jurisdictional shuffling that historically stalls substantive reform within Kenyan labor movements.
 
