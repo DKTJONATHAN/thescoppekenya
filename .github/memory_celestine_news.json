@@ -220,10 +220,10 @@
     "c68d0c35cccde964cd8d5427eab030d6",
     "78005a43152f3fdf84f085849aad6f72",
     "8fabe281cf08c69a45c59f6a83f4b7ec",
-    "4d05ddcf37021169a228cbb89e6328ea"
+    "4d05ddcf37021169a228cbb89e6328ea",
+    "10cca080d686b5a323787ccc2b56a952"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Context Backgrounder",
     "Power Accountability",
@@ -252,10 +252,10 @@
     "Power Accountability",
     "Context Backgrounder",
     "Explainer",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "myth_vs_fact|NTSA|Context Backgrounder",
     "next_48_hours|Busia|Explainer",
     "policy_gap|aviation|Hard News Lead",
     "impact_on_citizens|KRA|Reaction & Voices",
@@ -334,6 +334,7 @@
     "accountability|Ebola|Power Accountability",
     "story_progression|COTU|Context Backgrounder",
     "policy_gap|Ebola|Explainer",
-    "story_progression|Kitui|Reaction & Voices"
+    "story_progression|Kitui|Reaction & Voices",
+    "policy_gap|Gor Mahia|Power Accountability"
   ]
 }
