@@ -129,10 +129,10 @@
     "a4a2183d026c6b17882dfa6ca1a16b5a",
     "f15b8a0a1b3ed2b8bc1b52ce68575dce",
     "4387c1cd9f6aab98cedbda21120495cf",
-    "68b17d0280c007b343a20e3a27c70314"
+    "68b17d0280c007b343a20e3a27c70314",
+    "c28921414f6fff1af4d95466d544691e"
   ],
   "style_history": [
-    "Explainer",
     "Backgrounder",
     "Hard News Lead",
     "Africa Angle",
@@ -161,7 +161,8 @@
     "Hard News Lead",
     "Backgrounder",
     "Critical Take",
-    "Explainer"
+    "Explainer",
+    "Africa Angle"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -209,6 +210,7 @@
     "policy_gap|wealth porn|Hard News Lead",
     "policy_gap|Ebola|Backgrounder",
     "accountability|Airtel|Critical Take",
-    "accountability|NTSA|Explainer"
+    "accountability|NTSA|Explainer",
+    "money_follow|Kenya|Africa Angle"
   ]
 }
