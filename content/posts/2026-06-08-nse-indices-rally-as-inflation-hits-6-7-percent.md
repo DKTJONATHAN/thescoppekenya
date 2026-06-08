@@ -1,18 +1,20 @@
 ---
 title: "NSE Indices Rally as Inflation Hits 6.7 Percent and T-bills Spike"
 slug: "nse-indices-rally-as-inflation-hits-6-7-percent"
-description: "Nairobi Securities Exchange indices closed higher despite rising inflation to 6.7 percent and a shift to net selling by foreign investors in Kenya."
+description: "NSE Indices Rally as Inflation Hits 6.7 Percent and T-bills Spike: Nairobi Securities Exchange indices closed higher despite rising inflation to 6.7 percent"
+excerpt: "The Disconnect Between Market Gains and Small Business Reality The Nairobi Securities Exchange is currently showing optimistic trends, yet t"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/vCVRhphV/acadf70e108d.png"
 category: "Business"
 tags: ["nse", "kenya economy", "inflation", "banking", "investing", "t-bills"]
+canonical: "https://zandani.co.ke/article/nse-indices-rally-as-inflation-hits-6-7-percent"
 date: "2026-06-08T09:54:19Z"
 dateModified: "2026-06-08T09:54:19Z"
+focusKeyword: "NSE Indices Rally as Inflation Hits 6.7 Percent and T-bills Spike"
 schema: "NewsArticle"
 ---
 
-## The Disconnect Between Market Gains and Small Business Reality
+## The Disconnect Between Market Gains and Small Business Reality NSE Indices Rally as Inflation Hits 6.7 Percent and T-bills Spike is the central subject of the update.
 
 The Nairobi Securities Exchange is currently showing optimistic trends, yet this paper wealth does not reflect the grinding reality on the ground for local enterprises. While share prices may be trending upward, the actual expense of running a business continues to climb. This creates a widening gap between the excitement seen on the trading floor and the daily struggle to maintain healthy cash flow in the SME sector.
 

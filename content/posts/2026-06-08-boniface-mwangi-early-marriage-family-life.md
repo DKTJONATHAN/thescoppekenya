@@ -1,18 +1,20 @@
 ---
 title: "Boniface Mwangi Discusses Early Marriage and Family Life"
 slug: "boniface-mwangi-early-marriage-family-life"
-description: "Human rights activist Boniface Mwangi explains how his religious background influenced his decision to marry young and balance family life."
+description: "Boniface Mwangi Discusses Early Marriage and Family Life: Human rights activist Boniface Mwangi explains how his religious background influenced his decision"
+excerpt: "The Man Behind The Megaphone Human rights activist Boniface Mwangi says his early marriage at 23 was a tactical decision, not merely a roman"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/TBRWrk7f/91d535b33053.jpg"
 category: "Gossip"
 tags: ["boniface mwangi", "kenyan activists", "marriage", "parenting", "kenya news", "human rights"]
+canonical: "https://zandani.co.ke/article/boniface-mwangi-early-marriage-family-life"
 date: "2026-06-08T11:19:39Z"
 dateModified: "2026-06-08T11:19:39Z"
+focusKeyword: "Boniface Mwangi Discusses Early Marriage and Family Life"
 schema: "NewsArticle"
 ---
 
-## The Man Behind The Megaphone
+## The Man Behind The Megaphone Boniface Mwangi Discusses Early Marriage and Family Life is the central subject of the update.
 
 Human rights activist Boniface Mwangi says his early marriage at 23 was a tactical decision, not merely a romantic one. Speaking in a June 7, 2026, interview, Mwangi revealed that tying the knot as a young man was a calculated effort to establish personal stability before entering the volatile world of high-stakes advocacy.
 

@@ -14,7 +14,7 @@ focusKeyword: "'Data Processing Practices for Personalized Experiences at Za Nda
 schema: "NewsArticle"
 ---
 
-## Kenya's Digital Echo Chamber: Unpacking Data Processing Practices and the Policy Lag "Data Processing Practices for Personalized Experiences at Za Nda is the central subject of the update.
+## Kenya's Digital Echo Chamber: Unpacking Data Processing Practices and the Policy Lag "Data Processing Practices for Personalized Experiences at Za Nda is the central subject of the update. 'Data Processing Practices for Personalized Experiences at Za Nda is the central subject of the update.
 
 Kenyans are experiencing digital personalization on an unprecedented scale. This seemingly seamless experience, however, relies on intricate data processing that often operates out of sight, outpacing public awareness and existing regulations. A significant policy gap has emerged between technological advancement and legal frameworks.
 

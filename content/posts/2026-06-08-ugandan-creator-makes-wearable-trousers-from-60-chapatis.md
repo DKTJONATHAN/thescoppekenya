@@ -1,18 +1,20 @@
 ---
 title: "Ugandan Creator Makes Wearable Trousers From 60 Chapatis"
 slug: "ugandan-creator-makes-wearable-trousers-from-60-chapatis"
-description: "Ugandan content creator Raymond Kahuma has designed functional trousers made entirely from 60 chapatis, weighing 10 kilograms in total."
+description: "Ugandan Creator Makes Wearable Trousers From 60 Chapatis: Ugandan content creator Raymond Kahuma has designed functional trousers made entirely from 60"
+excerpt: "The Heavy Price of Digital Stardom Raymond Kahuma stands in a studio, the hum of equipment muffled by his own physical discomfort. He wears"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/99v2jp9p/f33e11ab7d5c.jpg"
 category: "Gossip"
 tags: ["raymond kahuma", "uganda", "chapati", "viral trends", "food art", "creative design"]
+canonical: "https://zandani.co.ke/article/ugandan-creator-makes-wearable-trousers-from-60-chapatis"
 date: "2026-06-08T12:43:34Z"
 dateModified: "2026-06-08T12:43:34Z"
+focusKeyword: "Ugandan Creator Makes Wearable Trousers From 60 Chapatis"
 schema: "NewsArticle"
 ---
 
-## The Heavy Price of Digital Stardom
+## The Heavy Price of Digital Stardom Ugandan Creator Makes Wearable Trousers From 60 Chapatis is the central subject of the update.
 
 Raymond Kahuma stands in a studio, the hum of equipment muffled by his own physical discomfort. He wears trousers crafted from sixty individual chapati flatbreads, a garment tipping the scales at ten kilograms. To a casual social media observer, this is merely a bizarre internet stunt. Yet, for Kahuma, the image captures a man navigating the taxing reality of a career built on constant, escalating spectacle.
 
