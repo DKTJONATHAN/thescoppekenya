@@ -1,18 +1,20 @@
 ---
 title: "Former Chief Justice David Maraga Arrested at Nairobi National Park"
 slug: "david-maraga-arrested-nairobi-national-park-protest"
-description: "Former Chief Justice David Maraga was arrested while protesting against commercial infrastructure development projects inside Nairobi National Park."
+description: "Former Chief Justice David Maraga Arrested at Nairobi National Pa: Former Chief Justice David Maraga was arrested while protesting against commercial"
+excerpt: "The Jurisprudence of Protected Soil Former Chief Justice David Maraga was taken into police custody this Monday morning near the perimeter o"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/pkkH59D/33de332f0bac.jpg"
 category: "News"
 tags: ["david maraga", "nairobi national park", "kenya wildlife service", "environment conservation", "kenya news", "infrastructure development"]
+canonical: "https://zandani.co.ke/article/david-maraga-arrested-nairobi-national-park-protest"
 date: "2026-06-08T09:27:54Z"
 dateModified: "2026-06-08T09:27:54Z"
+focusKeyword: "Former Chief Justice David Maraga Arrested at Nairobi National Pa"
 schema: "NewsArticle"
 ---
 
-## The Jurisprudence of Protected Soil
+## The Jurisprudence of Protected Soil Former Chief Justice David Maraga Arrested at Nairobi National Pa is the central subject of the update.
 
 Former Chief Justice David Maraga was taken into police custody this Monday morning near the perimeter of Nairobi National Park, marking a significant escalation in the ongoing dispute over the encroachment of commercial infrastructure into the country's oldest wildlife sanctuary.
 

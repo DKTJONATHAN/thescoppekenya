@@ -1,7 +1,8 @@
 ---
 title: "Woman stuck with massive restaurant bill after date flees without paying"
 slug: "woman-stuck-with-massive-restaurant-bill-after-date-flees-without-pa"
-description: "A woman in Nairobi was left with a massive restaurant bill after her date, met through a digital platform, fled the premises without paying the tab."
+description: "Woman stuck with massive restaurant bill after date flees without: A woman in Nairobi was left with a massive restaurant bill after her date, met through a"
+excerpt: "A woman in Nairobi was left with an unpaid bill at a luxury restaurant this past week after her date, whom she met through a digital platfor"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/8LLQZZWY/052489457804.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["kenyan-dating-scams", "restaurant-dine-and-dash", "nairobi-dating-scene", "bad-date-stories", "social-media-viral"]
 canonical: "https://zandani.co.ke/article/woman-stuck-with-massive-restaurant-bill-after-date-flees-without-pa"
 date: "2026-06-07T14:20:12Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-07T14:20:12Z"
+focusKeyword: "Woman stuck with massive restaurant bill after date flees without"
 schema: "NewsArticle"
 ---
-A woman in Nairobi was left with an unpaid bill at a luxury restaurant this past week after her date, whom she met through a digital platform, fled the premises. Management demanded immediate payment, forcing the woman to seek emergency funding from others.
+
+A woman in Nairobi was left with an unpaid bill at a luxury restaurant this past week after her date, whom she met through a digital platform, fled the premises. Management demanded immediate payment, forcing the woman to seek emergency funding from others. Woman stuck with massive restaurant bill after date flees without is the central subject of the update.
 
 ## The Consequences of Digital Deception
 

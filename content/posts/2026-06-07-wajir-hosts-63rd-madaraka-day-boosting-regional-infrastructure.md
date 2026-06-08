@@ -1,18 +1,20 @@
 ---
 title: "Wajir Hosts 63rd Madaraka Day Boosting Regional Infrastructure"
 slug: "wajir-hosts-63rd-madaraka-day-boosting-regional-infrastructure"
-description: "The 63rd Madaraka Day celebrations in Wajir County accelerated major infrastructure projects including a new stadium and State Lodge for the region."
+description: "Wajir Hosts 63rd Madaraka Day Boosting Regional Infrastructure: The 63rd Madaraka Day celebrations in Wajir County accelerated major infrastructure projects"
+excerpt: "Beyond the Celebration: Assessing Wajir’s New Infrastructure The 63rd Madaraka Day celebrations in Wajir have concluded, and the equipment u"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/BV16TwPw/52154aacf85e.jpg"
 category: "Opinions"
 tags: ["wajir county", "madaraka day", "kenya politics", "infrastructure", "devolution", "northern kenya"]
+canonical: "https://zandani.co.ke/article/wajir-hosts-63rd-madaraka-day-boosting-regional-infrastructure"
 date: "2026-06-07T11:16:57Z"
 dateModified: "2026-06-07T11:16:57Z"
+focusKeyword: "Wajir Hosts 63rd Madaraka Day Boosting Regional Infrastructure"
 schema: "NewsArticle"
 ---
 
-## Beyond the Celebration: Assessing Wajir’s New Infrastructure
+## Beyond the Celebration: Assessing Wajir’s New Infrastructure Wajir Hosts 63rd Madaraka Day Boosting Regional Infrastructure is the central subject of the update.
 
 The 63rd Madaraka Day celebrations in Wajir have concluded, and the equipment used to reshape the local terrain has been packed away. While the public discourse currently lingers on the grandeur of the event, the actual measure of this hosting effort depends on how these assets endure. The true test for county administrators is not the success of a military parade or the presence of high-ranking guests, but whether the infrastructure rushed into existence over a 90-day window can provide lasting utility to the people of Northern Kenya.
 

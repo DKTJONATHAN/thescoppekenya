@@ -1,18 +1,20 @@
 ---
 title: "England defeat New Zealand 1-0 as Thomas Tuchel eyes World Cup"
 slug: "england-defeat-new-zealand-as-thomas-tuchel-eyes-world-cup"
-description: "England secured a narrow victory over New Zealand in Tampa as Thomas Tuchel experimented with his squad ahead of the upcoming World Cup campaign."
+description: "England defeat New Zealand 1-0 as Thomas Tuchel eyes World Cup: England secured a narrow victory over New Zealand in Tampa as Thomas Tuchel experimented with"
+excerpt: "The teenager turning heads in Tampa Thomas Tuchel is known for his rigid tactical systems and a preference for proven commodities. However,"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/SDz5G367/718dc0517ca0.jpg"
 category: "Sports"
 tags: ["england football", "thomas tuchel", "harry kane", "world cup", "international friendly", "football news"]
+canonical: "https://zandani.co.ke/article/england-defeat-new-zealand-as-thomas-tuchel-eyes-world-cup"
 date: "2026-06-07T12:04:37Z"
 dateModified: "2026-06-07T12:04:37Z"
+focusKeyword: "England defeat New Zealand 1-0 as Thomas Tuchel eyes World Cup"
 schema: "NewsArticle"
 ---
 
-## The teenager turning heads in Tampa
+## The teenager turning heads in Tampa England defeat New Zealand 1-0 as Thomas Tuchel eyes World Cup is the central subject of the update.
 
 Thomas Tuchel is known for his rigid tactical systems and a preference for proven commodities. However, during a routine 1-0 victory over New Zealand in Florida, he briefly stepped away from that blueprint to examine a new prospect. The sight of a teenager holding his own alongside established stars like Harry Kane provided a moment of intrigue in an otherwise standard exhibition.
 

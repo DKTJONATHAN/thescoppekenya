@@ -1,18 +1,20 @@
 ---
 title: "President Ruto Hosts Gor Mahia for 22nd Premier League Title Win"
 slug: "president-ruto-hosts-gor-mahia-22nd-title-celebration"
-description: "President William Ruto celebrated Gor Mahia at State House with financial rewards while reaffirming the government plan to upgrade 28 national stadiums."
+description: "President Ruto Hosts Gor Mahia for 22nd Premier League Title Win: President William Ruto celebrated Gor Mahia at State House with financial rewards while"
+excerpt: "The Concrete Mirage of Stadium Pledges President William Ruto handed over Ksh10 million to Gor Mahia players at State House this Sunday, fra"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/G41WkrZ2/cf4f69d77424.jpg"
 category: "News"
 tags: ["gor mahia", "fkf premier league", "william ruto", "kenyan football", "sports infrastructure", "state house"]
+canonical: "https://zandani.co.ke/article/president-ruto-hosts-gor-mahia-22nd-title-celebration"
 date: "2026-06-07T12:24:05Z"
 dateModified: "2026-06-07T12:24:05Z"
+focusKeyword: "President Ruto Hosts Gor Mahia for 22nd Premier League Title Win"
 schema: "NewsArticle"
 ---
 
-## The Concrete Mirage of Stadium Pledges
+## The Concrete Mirage of Stadium Pledges President Ruto Hosts Gor Mahia for 22nd Premier League Title Win is the central subject of the update.
 
 President William Ruto handed over Ksh10 million to Gor Mahia players at State House this Sunday, framing the cash injection as a reward for their league title. Yet, the real performance was not on the pitch, but in the rhetoric regarding 28 national stadiums.
 

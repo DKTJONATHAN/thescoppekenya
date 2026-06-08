@@ -1,18 +1,20 @@
 ---
 title: "Why Kenyan Trailers Must Display Z Prefix License Plates"
 slug: "kenya-trailer-z-prefix-license-plates-regulations"
-description: "Kenyan transport laws require trailers to display specific Z prefix license plates to ensure separate registration, taxation, and safety identification."
+description: "Why Kenyan Trailers Must Display Z Prefix License Plates: Kenyan transport laws require trailers to display specific Z prefix license plates to ensure separate"
+excerpt: "Impending Crackdown on Unmarked Trailers The National Transport and Safety Authority, supported by traffic police units, will commence a nat"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/fGFk2Fn4/ec7000171b46.jpg"
 category: "News"
 tags: ["kenya", "traffic act", "transport", "trailers", "vehicle registration", "nairobi"]
+canonical: "https://zandani.co.ke/article/kenya-trailer-z-prefix-license-plates-regulations"
 date: "2026-06-07T18:08:11Z"
 dateModified: "2026-06-07T18:08:11Z"
+focusKeyword: "Why Kenyan Trailers Must Display Z Prefix License Plates"
 schema: "NewsArticle"
 ---
 
-## Impending Crackdown on Unmarked Trailers
+## Impending Crackdown on Unmarked Trailers Why Kenyan Trailers Must Display Z Prefix License Plates is the central subject of the update.
 
 The National Transport and Safety Authority, supported by traffic police units, will commence a nationwide enforcement operation within 48 hours to impound all trailers failing to display the mandatory Z-prefix registration plates. This mandate applies to any towed asset exceeding the 3,500 kg weight threshold, signaling a rigorous shift in road compliance standards.
 
