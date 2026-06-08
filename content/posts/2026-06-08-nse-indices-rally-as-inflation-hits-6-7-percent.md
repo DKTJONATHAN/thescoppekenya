@@ -1,0 +1,39 @@
+---
+title: "NSE Indices Rally as Inflation Hits 6.7 Percent and T-bills Spike"
+slug: "nse-indices-rally-as-inflation-hits-6-7-percent"
+description: "Nairobi Securities Exchange indices closed higher despite rising inflation to 6.7 percent and a shift to net selling by foreign investors in Kenya."
+author: "Grace Mkamburi"
+authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
+image: "https://i.ibb.co/vCVRhphV/acadf70e108d.png"
+category: "Business"
+tags: ["nse", "kenya economy", "inflation", "banking", "investing", "t-bills"]
+date: "2026-06-08T09:54:19Z"
+dateModified: "2026-06-08T09:54:19Z"
+schema: "NewsArticle"
+---
+
+## The Disconnect Between Market Gains and Small Business Reality
+
+The Nairobi Securities Exchange is currently showing optimistic trends, yet this paper wealth does not reflect the grinding reality on the ground for local enterprises. While share prices may be trending upward, the actual expense of running a business continues to climb. This creates a widening gap between the excitement seen on the trading floor and the daily struggle to maintain healthy cash flow in the SME sector.
+
+### Inflationary Pressures and Stalled Profitability
+
+With inflation sitting at 6.7 percent, businesses are facing a squeeze that cannot be ignored. Much of this increase is fueled by rising costs in areas like energy, logistics, and raw material procurement. These aren't just abstract numbers; they are direct hits to your bottom line. As costs for electricity and packaging rise, your profit margins inevitably shrink. 
+
+The problem is compounded by your customers. Because these same inflationary pressures are hurting household budgets, your clients have less money to spend. You find yourself in a difficult position where raising prices risks driving customers away, but absorbing those costs eats into your net income. While the NSE might focus on long-term corporate dividend yields, your business is dealing with the immediate reality of thinning margins. The current market rally appears to operate independently of the retailers, manufacturers, and service providers who sustain the local economy, effectively ignoring the rising costs faced by the average entrepreneur.
+
+### Why Government Debt Drains Your Operating Capital
+
+A critical issue for SME owners today is the overwhelming appetite for government debt. Recent Treasury bill auctions were oversubscribed by 227.4 percent, with investors pouring KSh 54.6 billion into government securities. While this shows confidence in state debt, it creates a massive liquidity problem for private enterprises. 
+
+When commercial banks find a secure, risk-free way to profit by lending to the government, their interest in supporting small businesses vanishes. This preference for T-bills acts like a siphon, drawing necessary liquidity out of the private sector and tightening credit availability. If you are attempting to secure a loan for expansion or trying to increase your overdraft facility, you are likely finding the doors locked. 
+
+Even when credit is available, the cost of borrowing remains prohibitively expensive. Banks set their lending rates based on the high yields offered by government bonds. Consequently, local entrepreneurs are forced to pay a premium that reflects the government's borrowing needs rather than the actual credit risk or economic contribution of the small business sector.
+
+### Volatility and the Banking Sector's Cautious Stance
+
+Recent trends show foreign investors turning to net selling on the NSE. This indicates that international players remain skeptical about the broader macro-economic climate, regardless of what the indices suggest. While local institutions are stepping in to provide support, this shift introduces volatility, particularly for banking stocks. These banks are significant because they are the primary lenders for SMEs.
+
+When the banking sector faces pressure from foreign capital outflows and high interest rates, their lending policies become increasingly conservative. Their strategy shifts toward protecting their balance sheets by prioritizing established blue-chip firms over growth-stage businesses. This cycle reinforces a reality where the stock market can appear healthy due to the performance of a few large corporations, while the capital required to fuel neighborhood businesses remains trapped in safer, government-backed assets.
+
+If you own a business, it is time to stop using NSE indices as a barometer for your own success. The market's sentiment currently ignores the expenses you face on the ground. Instead, prioritize your cash conversion cycle. In the current climate, liquid cash is your most important asset. Focus on reducing inventory carrying costs and steer clear of high-interest commercial debt whenever possible. Rather than chasing external expansion, double down on internal operational efficiency until credit conditions become more favorable. Pay closer attention to your specific margins than to the noise from the trading floor, as the current market rally does not account for the high costs of doing business today.
