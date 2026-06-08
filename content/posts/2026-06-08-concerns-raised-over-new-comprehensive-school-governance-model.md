@@ -1,18 +1,20 @@
 ---
 title: "Concerns Raised Over New Comprehensive School Governance Model"
 slug: "concerns-raised-over-new-comprehensive-school-governance-model"
-description: "Kenya faces criticism over the proposed school governance model for failing to integrate early childhood education into the foundational learning framework."
+description: "Concerns Raised Over New Comprehensive School Governance Model: Kenya faces criticism over the proposed school governance model for failing to integrate early"
+excerpt: "The Architecture of Failure in Kenyan Schools Kenya’s ambitious bid to unify school governance is a masterclass in building a roof while lea"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/qYdwz0qW/7bb1c7f1db68.jpg"
 category: "Opinions"
 tags: ["education news", "kenyan schools", "educational reform", "cbc curriculum", "devolution", "kenya education"]
+canonical: "https://zandani.co.ke/article/concerns-raised-over-new-comprehensive-school-governance-model"
 date: "2026-06-08T13:17:16Z"
 dateModified: "2026-06-08T13:17:16Z"
+focusKeyword: "Concerns Raised Over New Comprehensive School Governance Model"
 schema: "NewsArticle"
 ---
 
-## The Architecture of Failure in Kenyan Schools
+## The Architecture of Failure in Kenyan Schools Concerns Raised Over New Comprehensive School Governance Model is the central subject of the update.
 
 **Kenya’s ambitious bid to unify school governance is a masterclass in building a roof while leaving the foundation to crumble in the mud.** 
 

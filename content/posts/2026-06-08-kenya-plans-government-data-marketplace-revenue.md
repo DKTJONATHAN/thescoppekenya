@@ -1,18 +1,20 @@
 ---
 title: "Kenya Plans Government Data Marketplace to Generate Revenue"
 slug: "kenya-plans-government-data-marketplace-revenue"
-description: "The government is developing a commercial marketplace to sell aggregated datasets from platforms like eCitizen to boost revenue."
+description: "Kenya Plans Government Data Marketplace to Generate Revenue: The government is developing a commercial marketplace to sell aggregated datasets from platforms"
+excerpt: "The Data Goldmine: Kenya’s Pivot to Sovereign Wealth Kenya is undergoing a fundamental transformation, moving from a passive consumer of int"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/gF3dZM2t/9c79417cb482.jpg"
 category: "Technology"
 tags: ["kenya", "ecitizen", "data-governance", "digital-economy", "technology", "government-policy"]
+canonical: "https://zandani.co.ke/article/kenya-plans-government-data-marketplace-revenue"
 date: "2026-06-08T14:53:39Z"
 dateModified: "2026-06-08T14:53:39Z"
+focusKeyword: "Kenya Plans Government Data Marketplace to Generate Revenue"
 schema: "NewsArticle"
 ---
 
-## The Data Goldmine: Kenya’s Pivot to Sovereign Wealth
+## The Data Goldmine: Kenya’s Pivot to Sovereign Wealth Kenya Plans Government Data Marketplace to Generate Revenue is the central subject of the update.
 
 Kenya is undergoing a fundamental transformation, moving from a passive consumer of international digital services to a proactive designer of its own information economy. By launching a commercial marketplace for state-held datasets, the government is redefining digital sovereignty. It is shifting away from purely defensive regulatory frameworks toward an aggressive strategy of value-based asset management.
 

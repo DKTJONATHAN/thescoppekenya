@@ -1,18 +1,20 @@
 ---
 title: "KMTC Opens Applications for 76 Lecturer II Positions"
 slug: "kmtc-recruitment-76-lecturer-positions"
-description: "The Kenya Medical Training College has launched a recruitment drive for 76 lecturer positions across eight health disciplines. Apply by June 30."
+description: "KMTC Opens Applications for 76 Lecturer II Positions: The Kenya Medical Training College has launched a recruitment drive for 76 lecturer positions across"
+excerpt: "Scaling Up Medical Education at KMTC The Kenya Medical Training College has officially opened recruitment for 76 Lecturer II positions, mark"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/nMX5QnDn/6e880db5645b.jpg"
 category: "News"
 tags: ["kmtc", "jobs in kenya", "kenya education", "recruitment", "health training", "za ndani"]
+canonical: "https://zandani.co.ke/article/kmtc-recruitment-76-lecturer-positions"
 date: "2026-06-08T14:51:25Z"
 dateModified: "2026-06-08T14:51:25Z"
+focusKeyword: "KMTC Opens Applications for 76 Lecturer II Positions"
 schema: "NewsArticle"
 ---
 
-## Scaling Up Medical Education at KMTC
+## Scaling Up Medical Education at KMTC KMTC Opens Applications for 76 Lecturer II Positions is the central subject of the update.
 
 The Kenya Medical Training College has officially opened recruitment for 76 Lecturer II positions, marking a significant push to stabilize faculty numbers across its campuses. This staffing drive comes as the institution aims to rectify long-standing shortages in its teaching workforce.
 

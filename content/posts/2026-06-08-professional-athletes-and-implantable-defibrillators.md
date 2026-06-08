@@ -1,18 +1,20 @@
 ---
 title: "Professional athletes and the use of implantable defibrillators"
 slug: "professional-athletes-and-implantable-defibrillators"
-description: "Professional athletes with implantable cardioverter defibrillators navigate medical risks and varying global regulations to return to elite sports."
+description: "Professional athletes and the use of implantable defibrillators: Professional athletes with implantable cardioverter defibrillators navigate medical risks and"
+excerpt: "The Billion Shilling Gamble: Why Clubs Keep Betting on Broken Hearts The sports media industry loves a cardiac recovery narrative because it"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/0jVY3YFq/8b8b2d1aa19d.jpg"
 category: "Sports"
 tags: ["sports medicine", "heart health", "football news", "cardiac arrest", "athlete safety"]
+canonical: "https://zandani.co.ke/article/professional-athletes-and-implantable-defibrillators"
 date: "2026-06-08T14:32:51Z"
 dateModified: "2026-06-08T14:32:51Z"
+focusKeyword: "Professional athletes and the use of implantable defibrillators"
 schema: "NewsArticle"
 ---
 
-## The Billion-Shilling Gamble: Why Clubs Keep Betting on Broken Hearts
+## The Billion-Shilling Gamble: Why Clubs Keep Betting on Broken Hearts Professional athletes and the use of implantable defibrillators is the central subject of the update.
 
 The sports media industry loves a cardiac recovery narrative because it sells kits and clicks. Behind the teary-eyed montages of players returning to the pitch, however, lies a cold, clinical audit of liability management and amortized human assets that no marketing department wants to touch.
 

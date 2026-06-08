@@ -1,7 +1,8 @@
 ---
 title: "High Court Halts Deputy President Rigathi Gachagua Impeachment Process"
 slug: "high-court-halts-deputy-president-rigathi-gachagua-impeachment-proce"
-description: "The High Court of Kenya has issued conservatory orders halting the impeachment proceedings against Deputy President Rigathi Gachagua following petitions."
+description: "High Court Halts Deputy President Rigathi Gachagua Impeachment Pr: The High Court of Kenya has issued conservatory orders halting the impeachment proceedings"
+excerpt: "The High Court of Kenya issued conservatory orders today, officially halting the ongoing impeachment proceedings against Deputy President Ri"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/4wYQ8yPc/b84da56146ab.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["rigathi-gachagua", "gachagua-impeachment", "kenyan-politics", "high-court-ruling", "deputy-president"]
 canonical: "https://zandani.co.ke/article/high-court-halts-deputy-president-rigathi-gachagua-impeachment-proce"
 date: "2026-06-08T16:19:13Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-08T16:19:13Z"
+focusKeyword: "High Court Halts Deputy President Rigathi Gachagua Impeachment Pr"
 schema: "NewsArticle"
 ---
-The High Court of Kenya issued conservatory orders today, officially halting the ongoing impeachment proceedings against Deputy President Rigathi Gachagua. This judicial intervention follows a surge of urgent petitions that challenge both the legality and the procedural conduct of the motion in Nairobi.
+
+The High Court of Kenya issued conservatory orders today, officially halting the ongoing impeachment proceedings against Deputy President Rigathi Gachagua. This judicial intervention follows a surge of urgent petitions that challenge both the legality and the procedural conduct of the motion in Nairobi. High Court Halts Deputy President Rigathi Gachagua Impeachment Pr is the central subject of the update.
 
 ## A Stalled Political Drama
 
