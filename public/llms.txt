@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [High Court Halts Deputy President Rigathi Gachagua Impeachment Process](https://zandani.co.ke/article/high-court-halts-deputy-president-rigathi-gachagua-impeachment-proce) - The High Court of Kenya has issued conservatory orders halting the impeachment proceedings against Deputy President Rigathi Gachagua following petitions.
 - [Kenya Plans Government Data Marketplace to Generate Revenue](https://zandani.co.ke/article/kenya-plans-government-data-marketplace-revenue) - The government is developing a commercial marketplace to sell aggregated datasets from platforms like eCitizen to boost revenue.
 - [KMTC Opens Applications for 76 Lecturer II Positions](https://zandani.co.ke/article/kmtc-recruitment-76-lecturer-positions) - The Kenya Medical Training College has launched a recruitment drive for 76 lecturer positions across eight health disciplines. Apply by June 30.
 - [Professional athletes and the use of implantable defibrillators](https://zandani.co.ke/article/professional-athletes-and-implantable-defibrillators) - Professional athletes with implantable cardioverter defibrillators navigate medical risks and varying global regulations to return to elite sports.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [NSE Indices Rally as Inflation Hits 6.7 Percent and T-bills Spike](https://zandani.co.ke/article/nse-indices-rally-as-inflation-hits-6-7-percent) - NSE Indices Rally as Inflation Hits 6.7 Percent and T-bills Spike: Nairobi Securities Exchange indices closed higher despite rising inflation to 6.7 percent
 - [Former Chief Justice David Maraga Arrested at Nairobi National Park](https://zandani.co.ke/article/david-maraga-arrested-nairobi-national-park-protest) - Former Chief Justice David Maraga Arrested at Nairobi National Pa: Former Chief Justice David Maraga was arrested while protesting against commercial
 - [Why Kenyan Trailers Must Display Z Prefix License Plates](https://zandani.co.ke/article/kenya-trailer-z-prefix-license-plates-regulations) - Why Kenyan Trailers Must Display Z Prefix License Plates: Kenyan transport laws require trailers to display specific Z prefix license plates to ensure separate
-- ['Data Processing Practices for Personalized Experiences at Za Ndani](https://zandani.co.ke/article/data-processing-personalized-experiences-service-improvement) - 'Data Processing Practices for Personalized Experiences at Za Nda: Explore Za Ndani's comprehensive data processing activities that personalize your content
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
