@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Mon, 08 Jun 2026 15:02:45 GMT</pubDate>
+    <pubDate>Mon, 08 Jun 2026 15:07:15 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Kenya Plans Government Data Marketplace to Generate Revenue]]></title>
+      <link>https://zandani.co.ke/article/kenya-plans-government-data-marketplace-revenue</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-plans-government-data-marketplace-revenue</guid>
+      <pubDate>Mon, 08 Jun 2026 14:53:39 GMT</pubDate>
+      <dc:creator><![CDATA[Elizabeth Muthoni]]></dc:creator>
+      <description><![CDATA[The government is developing a commercial marketplace to sell aggregated datasets from platforms like eCitizen to boost revenue.]]></description>
+      <enclosure url="https://i.ibb.co/gF3dZM2t/9c79417cb482.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/gF3dZM2t/9c79417cb482.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/gF3dZM2t/9c79417cb482.jpg" alt="Kenya Plans Government Data Marketplace to Generate Revenue" /><p>The government is developing a commercial marketplace to sell aggregated datasets from platforms like eCitizen to boost revenue.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[KMTC Opens Applications for 76 Lecturer II Positions]]></title>
       <link>https://zandani.co.ke/article/kmtc-recruitment-76-lecturer-positions</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/9mWFWjPb/ce7f5258139b.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/9mWFWjPb/ce7f5258139b.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/9mWFWjPb/ce7f5258139b.jpg" alt="Maurice Ogeta clarifies circumstances of Raila Odinga death" /><p>Maurice Ogeta clarifies circumstances of Raila Odinga death: Bodyguard Maurice Ogeta reveals Raila Odinga passed away while exercising in India, dispelling</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Pastor Victor Kanyari recounts past financial dependency ordeal]]></title>
-      <link>https://zandani.co.ke/article/pastor-victor-kanyari-recounts-past-financial-dependency-ordeal</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/pastor-victor-kanyari-recounts-past-financial-dependency-ordeal</guid>
-      <pubDate>Tue, 02 Jun 2026 10:54:29 GMT</pubDate>
-      <dc:creator><![CDATA[Wanjiku Kuria]]></dc:creator>
-      <description><![CDATA[Pastor Victor Kanyari recounts past financial dependency ordeal: Pastor Victor Kanyari shares his experience of living with an older woman after high school to]]></description>
-      <enclosure url="https://i.ibb.co/FLTd8jjs/2290734cac63.jpg" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/FLTd8jjs/2290734cac63.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/FLTd8jjs/2290734cac63.jpg" alt="Pastor Victor Kanyari recounts past financial dependency ordeal" /><p>Pastor Victor Kanyari recounts past financial dependency ordeal: Pastor Victor Kanyari shares his experience of living with an older woman after high school to</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
