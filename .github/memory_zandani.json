@@ -282,10 +282,10 @@
     "d6cf21e2d8f2633656e4a1cf86809ebd",
     "2f8717855e06b0f9698410d0afbda263",
     "92f10d24d502c3911c62ef2763f17a80",
-    "4c508cd89f14b74355dc73e960150a3b"
+    "4c508cd89f14b74355dc73e960150a3b",
+    "cdacfab4a55fc9091918cbd875139188"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Hard News Lead",
     "Receipts Piece",
@@ -314,10 +314,10 @@
     "Profile Beat",
     "Reaction Round-up",
     "Receipts Piece",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Profile Beat"
   ],
   "angle_history": [
-    "money_follow|Toyota Harrier|Hard News Lead",
     "impact_on_citizens|Black Tax|Reaction Round-up",
     "accountability|Fuel Prices|Profile Beat",
     "timeline_shift|Kenya politics|Trend Take",
@@ -396,6 +396,7 @@
     "money_follow|nightlife|Profile Beat",
     "story_progression|Churchill Show|Reaction Round-up",
     "policy_gap|activism|Receipts Piece",
-    "winners_losers|Afropop|Hard News Lead"
+    "winners_losers|Afropop|Hard News Lead",
+    "winners_losers|food art|Profile Beat"
   ]
 }
