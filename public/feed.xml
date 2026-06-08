@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Mon, 08 Jun 2026 13:28:47 GMT</pubDate>
+    <pubDate>Mon, 08 Jun 2026 14:43:48 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Professional athletes and the use of implantable defibrillators]]></title>
+      <link>https://zandani.co.ke/article/professional-athletes-and-implantable-defibrillators</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/professional-athletes-and-implantable-defibrillators</guid>
+      <pubDate>Mon, 08 Jun 2026 14:32:51 GMT</pubDate>
+      <dc:creator><![CDATA[Jona Munyi]]></dc:creator>
+      <description><![CDATA[Professional athletes with implantable cardioverter defibrillators navigate medical risks and varying global regulations to return to elite sports.]]></description>
+      <enclosure url="https://i.ibb.co/0jVY3YFq/8b8b2d1aa19d.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/0jVY3YFq/8b8b2d1aa19d.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/0jVY3YFq/8b8b2d1aa19d.jpg" alt="Professional athletes and the use of implantable defibrillators" /><p>Professional athletes with implantable cardioverter defibrillators navigate medical risks and varying global regulations to return to elite sports.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Concerns Raised Over New Comprehensive School Governance Model]]></title>
       <link>https://zandani.co.ke/article/concerns-raised-over-new-comprehensive-school-governance-model</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/F4MXMQ1V/085f4ea780a2.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/F4MXMQ1V/085f4ea780a2.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/F4MXMQ1V/085f4ea780a2.jpg" alt="Maersk Increases Shipping Surcharges for Cargo From China" /><p>Maersk Increases Shipping Surcharges for Cargo From China: Maersk has introduced new surcharges for containers from China and Hong Kong to Kenya effective June</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Men should prioritize marriage over waiting for financial perfection]]></title>
-      <link>https://zandani.co.ke/article/men-should-prioritize-marriage-over-waiting-for-financial-perfection</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/men-should-prioritize-marriage-over-waiting-for-financial-perfection</guid>
-      <pubDate>Tue, 02 Jun 2026 10:53:44 GMT</pubDate>
-      <dc:creator><![CDATA[Zed Mogaka]]></dc:creator>
-      <description><![CDATA[Men should prioritize marriage over waiting for financial perfect: Young Kenyan men are delaying marriage to pursue financial perfection, sparking a national]]></description>
-      <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
-      <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="Men should prioritize marriage over waiting for financial perfection" /><p>Men should prioritize marriage over waiting for financial perfect: Young Kenyan men are delaying marriage to pursue financial perfection, sparking a national</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
