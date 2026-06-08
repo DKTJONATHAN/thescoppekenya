@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [High Court Upholds Gachagua Impeachment Orders Ksh50 Million Payout](https://zandani.co.ke/article/high-court-upholds-gachagua-impeachment-awards-damages) - The High Court has validated Rigathi Gachagua's impeachment as constitutional but ordered the Senate to pay him 50 million shillings for procedural errors.
 - [Man Utd tipped to accept Maguire offer, criticised as 'ridiculous decision'](https://zandani.co.ke/article/man-utd-tipped-to-accept-maguire-offer-criticised-as-ridiculous-deci) - Man Utd's Familiar Folly Manchester United are reportedly poised to jettison Harry Maguire, a key figure in their recent Champions League qualification. This move, driven by a myopic focus on profit over performance, illustrates a board content to strip away...
 - ['Kurt Russell mediated Michelle Pfeiffer-Towne Tequila Sunrise set](https://zandani.co.ke/article/kurt-russell-michelle-pfeiffer-tequila-sunrise-mediation) - 'Kurt Russell mediated Michelle Pfeiffer-Towne Tequila Sunrise se: Kurt Russell mediated for Michelle Pfeiffer & Robert Towne on Tequila Sunrise. Their bond
 - [High Court Halts Deputy President Rigathi Gachagua Impeachment Process](https://zandani.co.ke/article/high-court-halts-deputy-president-rigathi-gachagua-impeachment-proce) - High Court Halts Deputy President Rigathi Gachagua Impeachment Pr: The High Court of Kenya has issued conservatory orders halting the impeachment proceedings
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Concerns Raised Over New Comprehensive School Governance Model](https://zandani.co.ke/article/concerns-raised-over-new-comprehensive-school-governance-model) - Concerns Raised Over New Comprehensive School Governance Model: Kenya faces criticism over the proposed school governance model for failing to integrate early
 - [Ugandan Creator Makes Wearable Trousers From 60 Chapatis](https://zandani.co.ke/article/ugandan-creator-makes-wearable-trousers-from-60-chapatis) - Ugandan Creator Makes Wearable Trousers From 60 Chapatis: Ugandan content creator Raymond Kahuma has designed functional trousers made entirely from 60
 - [Boniface Mwangi Discusses Early Marriage and Family Life](https://zandani.co.ke/article/boniface-mwangi-early-marriage-family-life) - Boniface Mwangi Discusses Early Marriage and Family Life: Human rights activist Boniface Mwangi explains how his religious background influenced his decision
-- [NSE Indices Rally as Inflation Hits 6.7 Percent and T-bills Spike](https://zandani.co.ke/article/nse-indices-rally-as-inflation-hits-6-7-percent) - NSE Indices Rally as Inflation Hits 6.7 Percent and T-bills Spike: Nairobi Securities Exchange indices closed higher despite rising inflation to 6.7 percent
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
