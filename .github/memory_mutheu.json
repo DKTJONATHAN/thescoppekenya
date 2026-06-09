@@ -251,10 +251,10 @@
     "1acad2ad1467647167c2b402b55d44bb",
     "434d43fe97bffd83efd8b67d553c6b7a",
     "8857bc2dfb61e007d12efc0580831a63",
-    "37c71de3ece596370cce1c6cb3bba868"
+    "37c71de3ece596370cce1c6cb3bba868",
+    "72c0bf4c8a92b012e23810cb71e40c9c"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Explainer",
     "Reaction Round-up",
@@ -283,10 +283,10 @@
     "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "money_follow|late-night television|Hard News Lead",
     "impact_on_citizens|comedy|Reaction Round-up",
     "impact_on_citizens|television|Explainer",
     "accountability|Survivor|Profile Beat",
@@ -365,6 +365,7 @@
     "timeline_shift|na|Reaction Round-up",
     "myth_vs_fact|na|Profile Beat",
     "policy_gap|data storage|Trend Take",
-    "story_progression|Tequila Sunrise|Hard News Lead"
+    "story_progression|Tequila Sunrise|Hard News Lead",
+    "story_progression|Horror film|Reaction Round-up"
   ]
 }
