@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Analyst Proposes Securitizing Kenya Chamas to Boost NSE Liquidity](https://zandani.co.ke/article/analyst-proposes-securitizing-kenya-chamas-to-boost-nse-liquidity) - Investment analyst Ken Oidamae Tobiko explores how formalizing chama capital through blockchain can drive liquidity into the Nairobi Securities Exchange.
 - [Nanyuki Residents Protest US-Funded Ebola Quarantine Facility](https://zandani.co.ke/article/nanyuki-residents-protest-us-funded-ebola-quarantine-facility) - Public opposition continues in Nanyuki against a multi-million dollar Ebola isolation unit as security forces monitor ongoing demonstrations in Laikipia.
 - [High Court Upholds Gachagua Impeachment Orders Ksh50 Million Payout](https://zandani.co.ke/article/high-court-upholds-gachagua-impeachment-awards-damages) - The High Court has validated Rigathi Gachagua's impeachment as constitutional but ordered the Senate to pay him 50 million shillings for procedural errors.
 - [Man Utd tipped to accept Maguire offer, criticised as 'ridiculous decision'](https://zandani.co.ke/article/man-utd-tipped-to-accept-maguire-offer-criticised-as-ridiculous-deci) - Man Utd's Familiar Folly Manchester United are reportedly poised to jettison Harry Maguire, a key figure in their recent Champions League qualification. This move, driven by a myopic focus on profit over performance, illustrates a board content to strip away...
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [KMTC Opens Applications for 76 Lecturer II Positions](https://zandani.co.ke/article/kmtc-recruitment-76-lecturer-positions) - KMTC Opens Applications for 76 Lecturer II Positions: The Kenya Medical Training College has launched a recruitment drive for 76 lecturer positions across
 - [Professional athletes and the use of implantable defibrillators](https://zandani.co.ke/article/professional-athletes-and-implantable-defibrillators) - Professional athletes and the use of implantable defibrillators: Professional athletes with implantable cardioverter defibrillators navigate medical risks and
 - [Concerns Raised Over New Comprehensive School Governance Model](https://zandani.co.ke/article/concerns-raised-over-new-comprehensive-school-governance-model) - Concerns Raised Over New Comprehensive School Governance Model: Kenya faces criticism over the proposed school governance model for failing to integrate early
-- [Ugandan Creator Makes Wearable Trousers From 60 Chapatis](https://zandani.co.ke/article/ugandan-creator-makes-wearable-trousers-from-60-chapatis) - Ugandan Creator Makes Wearable Trousers From 60 Chapatis: Ugandan content creator Raymond Kahuma has designed functional trousers made entirely from 60
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
