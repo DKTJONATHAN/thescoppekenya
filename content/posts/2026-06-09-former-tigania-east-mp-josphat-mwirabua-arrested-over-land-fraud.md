@@ -1,18 +1,20 @@
 ---
 title: "Former Tigania East MP Josphat Mwirabua Arrested Over Land Fraud"
 slug: "former-tigania-east-mp-josphat-mwirabua-arrested-over-land-fraud"
-description: "DCI detectives have arrested former Tigania East MP Josphat Gichuge Mwirabua for allegedly defrauding investors of Ksh56 million in land and greenhouse scams."
+description: "Former Tigania East MP Josphat Mwirabua Arrested Over Land Fraud: DCI detectives have arrested former Tigania East MP Josphat Gichuge Mwirabua for allegedly"
+excerpt: "The Greenhouse Illusion: How Investment Scams Prey on Kenyan Aspirations DCI detectives apprehended former Tigania East Member of Parliament"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/JWyKRWqF/258bcdaa42c4.jpg"
 category: "News"
 tags: ["josphat mwirabua", "dci", "land fraud", "kajiado", "tigania east", "kenya news", "odpp"]
+canonical: "https://zandani.co.ke/article/former-tigania-east-mp-josphat-mwirabua-arrested-over-land-fraud"
 date: "2026-06-09T19:20:45Z"
 dateModified: "2026-06-09T19:20:45Z"
+focusKeyword: "Former Tigania East MP Josphat Mwirabua Arrested Over Land Fraud"
 schema: "NewsArticle"
 ---
 
-## The Greenhouse Illusion: How Investment Scams Prey on Kenyan Aspirations
+## The Greenhouse Illusion: How Investment Scams Prey on Kenyan Aspirations Former Tigania East MP Josphat Mwirabua Arrested Over Land Fraud is the central subject of the update.
 
 DCI detectives apprehended former Tigania East Member of Parliament Josphat Gichuge Mwirabua earlier today, June 9, after the Kajiado Chief Magistrate’s Court issued a warrant for his failure to appear. This arrest marks a turning point in an investigation involving Ksh56 million in alleged fraudulent dealings.
 
