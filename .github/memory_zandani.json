@@ -283,10 +283,10 @@
     "2f8717855e06b0f9698410d0afbda263",
     "92f10d24d502c3911c62ef2763f17a80",
     "4c508cd89f14b74355dc73e960150a3b",
-    "cdacfab4a55fc9091918cbd875139188"
+    "cdacfab4a55fc9091918cbd875139188",
+    "9b5940ca52425c3e6727c049998ddb76"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Receipts Piece",
     "Trend Take",
@@ -315,10 +315,10 @@
     "Reaction Round-up",
     "Receipts Piece",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
-    "impact_on_citizens|Black Tax|Reaction Round-up",
     "accountability|Fuel Prices|Profile Beat",
     "timeline_shift|Kenya politics|Trend Take",
     "timeline_shift|Nameless|Receipts Piece",
@@ -397,6 +397,7 @@
     "story_progression|Churchill Show|Reaction Round-up",
     "policy_gap|activism|Receipts Piece",
     "winners_losers|Afropop|Hard News Lead",
-    "winners_losers|food art|Profile Beat"
+    "winners_losers|food art|Profile Beat",
+    "story_progression|Timmy Tdat|Trend Take"
   ]
 }
