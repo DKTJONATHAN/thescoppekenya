@@ -1,7 +1,8 @@
 ---
 title: "Former Governor Mwangi wa Iria Launches Kihuti Political Movement Amid Corruption Investigations"
 slug: "former-governor-mwangi-wa-iria-launches-kihuti-political-movement-am"
-description: "Former Murang'a Governor Mwangi wa Iria has launched the Kihuti political movement while facing ongoing EACC investigations into past financial conduct."
+description: "Former Governor Mwangi wa Iria Launches Kihuti Political Movement: Former Murang'a Governor Mwangi wa Iria has launched the Kihuti political movement while"
+excerpt: "Former Murang'a Governor Mwangi wa Iria, the son of Adonija, has officially launched a new political movement known as Kihuti. This initiati"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/qM2HSKkH/f3f93552a292.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["mwangi-wa-iria", "kihuti-political-movement", "kenyan-politics", "anti-corruption-investigations", "muranga-politics"]
 canonical: "https://zandani.co.ke/article/former-governor-mwangi-wa-iria-launches-kihuti-political-movement-am"
 date: "2026-06-09T15:27:20Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-09T15:27:20Z"
+focusKeyword: "Former Governor Mwangi wa Iria Launches Kihuti Political Movement"
 schema: "NewsArticle"
 ---
-Former Murang'a Governor Mwangi wa Iria, the son of Adonija, has officially launched a new political movement known as Kihuti. This initiative arrives as the former county leader faces ongoing investigations by the Ethics and Anti-Corruption Commission regarding allegations of financial impropriety during his administration.
+
+Former Murang'a Governor Mwangi wa Iria, the son of Adonija, has officially launched a new political movement known as Kihuti. This initiative arrives as the former county leader faces ongoing investigations by the Ethics and Anti-Corruption Commission regarding allegations of financial impropriety during his administration. Former Governor Mwangi wa Iria Launches Kihuti Political Movement is the central subject of the update.
 
 ## The Kihuti Strategy and Political Survival
 
