@@ -14,7 +14,7 @@ focusKeyword: "'Hereditary Prequel Script Written by Ari Aster Revealed"
 schema: "NewsArticle"
 ---
 
-## Hereditary Prequel Script: Fans Torn Over Ari Aster's Creative Pause "Hereditary Prequel Script Written by Ari Aster Revealed is the central subject of the update.
+## Hereditary Prequel Script: Fans Torn Over Ari Aster's Creative Pause "Hereditary Prequel Script Written by Ari Aster Revealed is the central subject of the update. 'Hereditary Prequel Script Written by Ari Aster Revealed is the central subject of the update.
 
 Filmmaker Ari Aster has revealed he’s completed a `hereditary prequel script`, yet his profound hesitation to greenlight its production has plunged the horror fandom into a whirlwind of excitement, frustration, and deep introspection. The news, dropped casually at an American Cinematheque event, has fans questioning the future trajectory of one of modern horror's most impactful franchises.
 

@@ -1,18 +1,20 @@
 ---
 title: "Turkana to join national grid in major energy infrastructure shift"
 slug: "turkana-to-join-national-grid-energy-project"
-description: "Kenya is connecting Lodwar to the national electricity grid in a 1 billion Shilling project to replace costly diesel power by late 2026."
+description: "Turkana to join national grid in major energy infrastructure shif: Kenya is connecting Lodwar to the national electricity grid in a 1 billion Shilling project"
+excerpt: "The Billion Shilling Mirage: Why Plugging Turkana into the Grid Won't Ignite Industry The government suggests that connecting Lodwar to the"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/27B8qXXH/c5e455819747.png"
 category: "Opinions"
 tags: ["turkana", "kenya power", "energy", "infrastructure", "lodwar", "beta", "kenya news"]
+canonical: "https://zandani.co.ke/article/turkana-to-join-national-grid-energy-project"
 date: "2026-06-09T12:16:01Z"
 dateModified: "2026-06-09T12:16:01Z"
+focusKeyword: "Turkana to join national grid in major energy infrastructure shif"
 schema: "NewsArticle"
 ---
 
-## The Billion-Shilling Mirage: Why Plugging Turkana into the Grid Won't Ignite Industry
+## The Billion-Shilling Mirage: Why Plugging Turkana into the Grid Won't Ignite Industry Turkana to join national grid in major energy infrastructure shif is the central subject of the update.
 
 The government suggests that connecting Lodwar to the national electricity grid by September 2026 will transform Turkana into an industrial powerhouse. This narrative is a dangerous oversimplification that confuses the presence of power lines with the creation of economic capacity.
 
