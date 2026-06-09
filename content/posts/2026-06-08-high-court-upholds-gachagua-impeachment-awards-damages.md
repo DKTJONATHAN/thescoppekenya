@@ -1,18 +1,20 @@
 ---
 title: "High Court Upholds Gachagua Impeachment Orders Ksh50 Million Payout"
 slug: "high-court-upholds-gachagua-impeachment-awards-damages"
-description: "The High Court has validated Rigathi Gachagua's impeachment as constitutional but ordered the Senate to pay him 50 million shillings for procedural errors."
+description: "High Court Upholds Gachagua Impeachment Orders Ksh50 Million Payo: The High Court has validated Rigathi Gachagua's impeachment as constitutional but ordered"
+excerpt: "The Senate Pays for Its Own Procedural Shortcuts Kenyans are grappling with a bizarre fiscal reality today as the High Court demands taxpaye"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/v6Np1Nkc/590c47759e04.jpg"
 category: "News"
 tags: ["kenya politics", "rigathi gachagua", "judiciary", "impeachment", "kithure kindiki", "kenyan news"]
+canonical: "https://zandani.co.ke/article/high-court-upholds-gachagua-impeachment-awards-damages"
 date: "2026-06-08T19:24:37Z"
 dateModified: "2026-06-08T19:24:37Z"
+focusKeyword: "High Court Upholds Gachagua Impeachment Orders Ksh50 Million Payo"
 schema: "NewsArticle"
 ---
 
-## The Senate Pays for Its Own Procedural Shortcuts
+## The Senate Pays for Its Own Procedural Shortcuts High Court Upholds Gachagua Impeachment Orders Ksh50 Million Payo is the central subject of the update.
 
 Kenyans are grappling with a bizarre fiscal reality today as the High Court demands taxpayers foot a Ksh50 million bill for the Senate's haste. This ruling confirms the impeachment of Rigathi Gachagua stands, yet serves as a stinging financial rebuke for the chamber.
 

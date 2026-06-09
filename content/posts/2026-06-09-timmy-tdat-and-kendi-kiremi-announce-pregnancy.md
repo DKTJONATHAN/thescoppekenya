@@ -1,18 +1,20 @@
 ---
 title: "Timmy Tdat and Kendi Kiremi Announce They Are Expecting a Baby"
 slug: "timmy-tdat-and-kendi-kiremi-announce-pregnancy"
-description: "Kenyan musician Timmy Tdat and his partner Kendi Kiremi have officially announced they are expecting their first child through a maternity photoshoot."
+description: "Timmy Tdat and Kendi Kiremi Announce They Are Expecting a Baby: Kenyan musician Timmy Tdat and his partner Kendi Kiremi have officially announced they are"
+excerpt: "The Curated Evolution of the Kenyan Celebrity Bump The high stakes announcement of an expectant child by musician Timmy Tdat and Kendi Kirem"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/chH0qcq0/b7c9f9818918.jpg"
 category: "Gossip"
 tags: ["timmy tdat", "kendi kiremi", "kenyan celebrities", "entertainment news", "kenya", "celebrity pregnancy"]
+canonical: "https://zandani.co.ke/article/timmy-tdat-and-kendi-kiremi-announce-pregnancy"
 date: "2026-06-09T11:32:44Z"
 dateModified: "2026-06-09T11:32:44Z"
+focusKeyword: "Timmy Tdat and Kendi Kiremi Announce They Are Expecting a Baby"
 schema: "NewsArticle"
 ---
 
-## The Curated Evolution of the Kenyan Celebrity Bump
+## The Curated Evolution of the Kenyan Celebrity Bump Timmy Tdat and Kendi Kiremi Announce They Are Expecting a Baby is the central subject of the update.
 
 The high-stakes announcement of an expectant child by musician Timmy Tdat and Kendi Kiremi signals a departure from candid social media reveals toward the cinematic editorial standard. This shift marks the professionalization of personal milestones into polished, brand-adjacent storytelling campaigns.
 

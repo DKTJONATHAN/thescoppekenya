@@ -1,15 +1,20 @@
 ---
 title: "Man Utd tipped to accept Maguire offer, criticised as 'ridiculous decision'"
 slug: "man-utd-tipped-to-accept-maguire-offer-criticised-as-ridiculous-deci"
+description: "Man Utd tipped to accept Maguire offer, criticised as 'ridiculous: Man Utd's Familiar Folly Manchester United are reportedly poised to jettison Harry Maguire,"
+excerpt: "Man Utd's Familiar Folly Manchester United are reportedly poised to jettison Harry Maguire, a key figure in their recent Champions League qu"
 author: "Sports Desk"
 image: "https://i.ibb.co/2wcLbYL/332f43bd290e.jpg"
 category: "Global News"
+tags: ["man utd tipped to accept maguire offer criticised as ridiculous deci", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/man-utd-tipped-to-accept-maguire-offer-criticised-as-ridiculous-deci"
 date: "2026-06-08T17:59:07Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-06-08T17:59:07Z"
+focusKeyword: "Man Utd tipped to accept Maguire offer, criticised as 'ridiculous"
 schema: "NewsArticle"
 ---
-## Man Utd's Familiar Folly
+
+## Man Utd's Familiar Folly Man Utd tipped to accept Maguire offer, criticised as 'ridiculous is the central subject of the update.
 
 Manchester United are reportedly poised to jettison Harry Maguire, a key figure in their recent Champions League qualification. This move, driven by a myopic focus on profit over performance, illustrates a board content to strip away experience for short-term financial gain, potentially derailing any genuine progress on the pitch.
 

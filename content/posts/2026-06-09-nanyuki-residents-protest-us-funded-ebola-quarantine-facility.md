@@ -1,18 +1,20 @@
 ---
 title: "Nanyuki Residents Protest US-Funded Ebola Quarantine Facility"
 slug: "nanyuki-residents-protest-us-funded-ebola-quarantine-facility"
-description: "Public opposition continues in Nanyuki against a multi-million dollar Ebola isolation unit as security forces monitor ongoing demonstrations in Laikipia."
+description: "Nanyuki Residents Protest US-Funded Ebola Quarantine Facility: Public opposition continues in Nanyuki against a multi-million dollar Ebola isolation unit as"
+excerpt: "Economic Friction Escalates in Nanyuki Hundreds of Nanyuki residents gathered for the ninth consecutive day on Tuesday to block construction"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/1fYkchkG/3d16545606ad.jpg"
 category: "News"
 tags: ["nanyuki", "ebola", "protests", "laikipia", "kenya news", "us embassy"]
+canonical: "https://zandani.co.ke/article/nanyuki-residents-protest-us-funded-ebola-quarantine-facility"
 date: "2026-06-09T08:34:04Z"
 dateModified: "2026-06-09T08:34:04Z"
+focusKeyword: "Nanyuki Residents Protest US-Funded Ebola Quarantine Facility"
 schema: "NewsArticle"
 ---
 
-## Economic Friction Escalates in Nanyuki
+## Economic Friction Escalates in Nanyuki Nanyuki Residents Protest US-Funded Ebola Quarantine Facility is the central subject of the update.
 
 Hundreds of Nanyuki residents gathered for the ninth consecutive day on Tuesday to block construction access to a U.S.-funded Ebola isolation unit, forcing local businesses to remain shuttered as security forces monitor the standoff.
 

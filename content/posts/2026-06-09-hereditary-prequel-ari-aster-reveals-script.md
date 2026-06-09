@@ -1,21 +1,20 @@
 ---
-title: "Hereditary Prequel Script Written by Ari Aster Revealed
+title: "'Hereditary Prequel Script Written by Ari Aster Revealed"
 slug: "hereditary-prequel-ari-aster-reveals-script"
-description: "Filmmaker Ari Aster penned a Hereditary prequel script but is hesitant to develop it now. He also addressed 'elevated horror' and past financing struggles. Read details here."
+description: "'Hereditary Prequel Script Written by Ari Aster Revealed: Filmmaker Ari Aster penned a Hereditary prequel script but is hesitant to develop it now. He also"
+excerpt: "Hereditary Prequel Script: Fans Torn Over Ari Aster's Creative Pause Filmmaker Ari Aster has revealed he’s completed a hereditary prequel sc"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/dsYLdvD0/1c9fab6ff925.jpg"
-og_title: "Hereditary Prequel Script Written by Ari Aster"
-og_description: "Filmmaker Ari Aster has penned a prequel script for his acclaimed horror film Hereditary. He's currently hesitant to move forward with the project."
-focus_keyword: "hereditary prequel script"
 category: "Entertainment"
 tags: ["ari aster", "hereditary", "horror film", "prequel script", "filmmaker", "entertainment news"]
+canonical: "https://zandani.co.ke/article/hereditary-prequel-ari-aster-reveals-script"
 date: "2026-06-09T10:11:33Z"
 dateModified: "2026-06-09T10:11:33Z"
+focusKeyword: "'Hereditary Prequel Script Written by Ari Aster Revealed"
 schema: "NewsArticle"
 ---
 
-## Hereditary Prequel Script: Fans Torn Over Ari Aster's Creative Pause
+## Hereditary Prequel Script: Fans Torn Over Ari Aster's Creative Pause "Hereditary Prequel Script Written by Ari Aster Revealed is the central subject of the update.
 
 Filmmaker Ari Aster has revealed he’s completed a `hereditary prequel script`, yet his profound hesitation to greenlight its production has plunged the horror fandom into a whirlwind of excitement, frustration, and deep introspection. The news, dropped casually at an American Cinematheque event, has fans questioning the future trajectory of one of modern horror's most impactful franchises.
 

@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Announces Scheduled Outages for Uasin Gishu and Bungoma"
 slug: "kenya-power-scheduled-outages-uasin-gishu-bungoma-june-9"
-description: "Kenya Power has scheduled electricity maintenance for June 9 in Uasin Gishu and Bungoma counties, affecting several locations throughout the day."
+description: "Kenya Power Announces Scheduled Outages for Uasin Gishu and Bungo: Kenya Power has scheduled electricity maintenance for June 9 in Uasin Gishu and Bungoma"
+excerpt: "The True Cost of a Darkened Grid Kenya Power claims today is all about preventive grid management in Uasin Gishu and Bungoma. Yet, this eigh"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/XfjJzLvH/daafb3445852.jpg"
 category: "Gossip"
 tags: ["kenya power", "power outage", "uasin gishu", "bungoma", "utility news", "kenya infrastructure"]
+canonical: "https://zandani.co.ke/article/kenya-power-scheduled-outages-uasin-gishu-bungoma-june-9"
 date: "2026-06-09T10:01:54Z"
 dateModified: "2026-06-09T10:01:54Z"
+focusKeyword: "Kenya Power Announces Scheduled Outages for Uasin Gishu and Bungo"
 schema: "NewsArticle"
 ---
 
-## The True Cost of a Darkened Grid
+## The True Cost of a Darkened Grid Kenya Power Announces Scheduled Outages for Uasin Gishu and Bungo is the central subject of the update.
 
 Kenya Power claims today is all about preventive grid management in Uasin Gishu and Bungoma. Yet, this eight-hour blackout cycle tells a different story about the actual ROI on infrastructure investment versus the lost productivity of local commercial hubs.
 
