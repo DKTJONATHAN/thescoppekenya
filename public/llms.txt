@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- ["Hereditary Prequel Script Written by Ari Aster Revealed](https://zandani.co.ke/article/hereditary-prequel-ari-aster-reveals-script) - Filmmaker Ari Aster penned a Hereditary prequel script but is hesitant to develop it now. He also addressed 'elevated horror' and past financing struggles. Read details here.
 - [Kenya Power Announces Scheduled Outages for Uasin Gishu and Bungoma](https://zandani.co.ke/article/kenya-power-scheduled-outages-uasin-gishu-bungoma-june-9) - Kenya Power has scheduled electricity maintenance for June 9 in Uasin Gishu and Bungoma counties, affecting several locations throughout the day.
 - [Analyst Proposes Securitizing Kenya Chamas to Boost NSE Liquidity](https://zandani.co.ke/article/analyst-proposes-securitizing-kenya-chamas-to-boost-nse-liquidity) - Investment analyst Ken Oidamae Tobiko explores how formalizing chama capital through blockchain can drive liquidity into the Nairobi Securities Exchange.
 - [Nanyuki Residents Protest US-Funded Ebola Quarantine Facility](https://zandani.co.ke/article/nanyuki-residents-protest-us-funded-ebola-quarantine-facility) - Public opposition continues in Nanyuki against a multi-million dollar Ebola isolation unit as security forces monitor ongoing demonstrations in Laikipia.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [High Court Halts Deputy President Rigathi Gachagua Impeachment Process](https://zandani.co.ke/article/high-court-halts-deputy-president-rigathi-gachagua-impeachment-proce) - High Court Halts Deputy President Rigathi Gachagua Impeachment Pr: The High Court of Kenya has issued conservatory orders halting the impeachment proceedings
 - [Kenya Plans Government Data Marketplace to Generate Revenue](https://zandani.co.ke/article/kenya-plans-government-data-marketplace-revenue) - Kenya Plans Government Data Marketplace to Generate Revenue: The government is developing a commercial marketplace to sell aggregated datasets from platforms
 - [KMTC Opens Applications for 76 Lecturer II Positions](https://zandani.co.ke/article/kmtc-recruitment-76-lecturer-positions) - KMTC Opens Applications for 76 Lecturer II Positions: The Kenya Medical Training College has launched a recruitment drive for 76 lecturer positions across
-- [Professional athletes and the use of implantable defibrillators](https://zandani.co.ke/article/professional-athletes-and-implantable-defibrillators) - Professional athletes and the use of implantable defibrillators: Professional athletes with implantable cardioverter defibrillators navigate medical risks and
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
