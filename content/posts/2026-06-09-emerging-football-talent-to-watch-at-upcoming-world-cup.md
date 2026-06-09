@@ -1,18 +1,20 @@
 ---
 title: "Emerging Football Talent to Watch at the Upcoming World Cup"
 slug: "emerging-football-talent-to-watch-at-upcoming-world-cup"
-description: "The upcoming FIFA World Cup in North America highlights new football stars as 891 players prepare to make their tournament debut on the global stage."
+description: "Emerging Football Talent to Watch at the Upcoming World Cup: The upcoming FIFA World Cup in North America highlights new football stars as 891 players prepare"
+excerpt: "The Invisible Pipeline: Why Kenya Remains Absent from the Global Football Economy The composition of the 2026 FIFA World Cup squads highligh"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/vCFDckg9/eda4a7d29c49.jpg"
 category: "Sports"
 tags: ["fifa world cup", "football", "sports news", "young talent", "soccer", "international football"]
+canonical: "https://zandani.co.ke/article/emerging-football-talent-to-watch-at-upcoming-world-cup"
 date: "2026-06-09T13:19:48Z"
 dateModified: "2026-06-09T13:19:48Z"
+focusKeyword: "Emerging Football Talent to Watch at the Upcoming World Cup"
 schema: "NewsArticle"
 ---
 
-## The Invisible Pipeline: Why Kenya Remains Absent from the Global Football Economy
+## The Invisible Pipeline: Why Kenya Remains Absent from the Global Football Economy Emerging Football Talent to Watch at the Upcoming World Cup is the central subject of the update.
 
 The composition of the 2026 FIFA World Cup squads highlights a sobering truth for Kenyan football. As 891 players prepare to make their tournament debuts within a total pool of 1,248 participants, the absence of Kenyan representation is glaring. While the global game has evolved into a sophisticated, data-driven machine, Kenya’s domestic structure continues to languish, leaving our most gifted athletes invisible to the international scouting community.
 
