@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Tue, 09 Jun 2026 09:45:15 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 10:12:47 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Kenya Power Announces Scheduled Outages for Uasin Gishu and Bungoma]]></title>
+      <link>https://zandani.co.ke/article/kenya-power-scheduled-outages-uasin-gishu-bungoma-june-9</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-power-scheduled-outages-uasin-gishu-bungoma-june-9</guid>
+      <pubDate>Tue, 09 Jun 2026 10:01:54 GMT</pubDate>
+      <dc:creator><![CDATA[Wanjiku Kuria]]></dc:creator>
+      <description><![CDATA[Kenya Power has scheduled electricity maintenance for June 9 in Uasin Gishu and Bungoma counties, affecting several locations throughout the day.]]></description>
+      <enclosure url="https://i.ibb.co/XfjJzLvH/daafb3445852.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/XfjJzLvH/daafb3445852.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/XfjJzLvH/daafb3445852.jpg" alt="Kenya Power Announces Scheduled Outages for Uasin Gishu and Bungoma" /><p>Kenya Power has scheduled electricity maintenance for June 9 in Uasin Gishu and Bungoma counties, affecting several locations throughout the day.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Analyst Proposes Securitizing Kenya Chamas to Boost NSE Liquidity]]></title>
       <link>https://zandani.co.ke/article/analyst-proposes-securitizing-kenya-chamas-to-boost-nse-liquidity</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/RktxH0bb/9fb06a8f1072.webp" type="image/jpeg" />
       <media:content url="https://i.ibb.co/RktxH0bb/9fb06a8f1072.webp" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/RktxH0bb/9fb06a8f1072.webp" alt="Naivasha Girls High School Closed Indefinitely Over Planned Arson Attack" /><p>Naivasha Girls High School Closed Indefinitely Over Planned Arson: Naivasha Girls High School has closed indefinitely following intelligence reports of a</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Nvidia Launches RTX Spark Chip to Target Premium Windows Laptops]]></title>
-      <link>https://zandani.co.ke/article/nvidia-launches-rtx-spark-chip-for-premium-windows-laptops</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/nvidia-launches-rtx-spark-chip-for-premium-windows-laptops</guid>
-      <pubDate>Tue, 02 Jun 2026 15:12:59 GMT</pubDate>
-      <dc:creator><![CDATA[Elizabeth Muthoni]]></dc:creator>
-      <description><![CDATA[Nvidia Launches RTX Spark Chip to Target Premium Windows Laptops: Nvidia has introduced the Blackwell-based RTX Spark chip for Windows on ARM laptops, focusing]]></description>
-      <enclosure url="https://i.ibb.co/My4Pd261/be5e6b396109.webp" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/My4Pd261/be5e6b396109.webp" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/My4Pd261/be5e6b396109.webp" alt="Nvidia Launches RTX Spark Chip to Target Premium Windows Laptops" /><p>Nvidia Launches RTX Spark Chip to Target Premium Windows Laptops: Nvidia has introduced the Blackwell-based RTX Spark chip for Windows on ARM laptops, focusing</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
