@@ -1,20 +1,21 @@
 ---
 title: "The Golden Chains of Free Studio Access"
 slug: "the-golden-chains-of-free-studio-access"
-description: "In the gilded halls of Florence, benefactors once spun webs of artistic 'generosity,' much like today's grand unveilings of ‘free’ creator spaces. Is Obinna's s"
+description: "The Golden Chains of Free Studio Access: In the gilded halls of Florence, benefactors once spun webs of artistic 'generosity,' much like today's grand"
+excerpt: "The scent of marble dust and linseed oil hung heavy in the Florentine air, a perpetual perfume of progress. Young Michelangelo Buonarroti, h"
 author: "The Chronicler"
 author_url: "https://zandani.co.ke/author/the-chronicler"
 image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200"
 category: "Chronicles"
-tags: ["chronicles", "medici-patronage", "florence", "renaissance", "oga-obinna-free-studio-access", "obinna-tv-studios-nairobi-booking", "michelangelo", "lorenzo-the-magnificent", "satire", "kenyan-podcasters-using-obinna-studio"]
+tags: ["chronicles", "medici-patronage", "florence", "renaissance", "oga-obinna-free-studio-access", "obinna-tv-studios-nairobi-booking", "michelangelo", "lorenzo-the-magnificent"]
 canonical: "https://zandani.co.ke/article/the-golden-chains-of-free-studio-access"
 date: "2026-06-09T13:47:56Z"
-authorUrl: "https://zandani.co.ke/author/the-chronicler"
 dateModified: "2026-06-09T13:47:56Z"
+focusKeyword: "The Golden Chains of Free Studio Access"
 schema: "NewsArticle"
 ---
 
-The scent of marble dust and linseed oil hung heavy in the Florentine air, a perpetual perfume of progress. Young Michelangelo Buonarroti, his hands still raw from shaping clay, bowed before Lorenzo de' Medici, "Il Magnifico." A word from the great man, a nod, and another masterwork would begin, ostensibly for the glory of God and Florence, but undeniably for the ever-growing splendor of the Medici name.
+The scent of marble dust and linseed oil hung heavy in the Florentine air, a perpetual perfume of progress. Young Michelangelo Buonarroti, his hands still raw from shaping clay, bowed before Lorenzo de' Medici, "Il Magnifico." A word from the great man, a nod, and another masterwork would begin, ostensibly for the glory of God and Florence, but undeniably for the ever-growing splendor of the Medici name. The Golden Chains of Free Studio Access is the central subject of the update.
 
 <h2>The Grand Designs of Medici Patronage: A Blueprint for the Ages</h2>
 
