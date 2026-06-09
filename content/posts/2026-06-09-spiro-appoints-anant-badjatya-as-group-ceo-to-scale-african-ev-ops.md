@@ -1,0 +1,31 @@
+---
+title: "Spiro Appoints Anant Badjatya as Group CEO to Scale African EV Ops"
+slug: "spiro-appoints-anant-badjatya-as-group-ceo-to-scale-african-ev-ops"
+description: "Spiro has named Anant Badjatya as Group CEO to lead its electric mobility expansion across Africa, following a major funding round of 215 million dollars."
+author: "Elizabeth Muthoni"
+authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
+image: "https://i.ibb.co/Ld9MzwsP/92110879418e.webp"
+category: "Technology"
+tags: ["spiro", "electric mobility", "boda boda", "kenya business", "ev technology", "transportation", "clean energy"]
+date: "2026-06-09T13:49:19Z"
+dateModified: "2026-06-09T13:49:19Z"
+schema: "NewsArticle"
+---
+
+Spiro has appointed former Indofast Energy executive Anant Badjatya as Group CEO, signaling a strategic pivot from infrastructure deployment to large-scale fleet operations. The transition follows a $265 million funding round, consisting of $215 million in equity and $50 million in debt, which provides the financial foundation for the firm to move beyond its initial construction phase. As the company manages a network of 2,500 battery-swapping stations and 100,000 electric motorcycles, the focus shifts from physical expansion to the long-term operational efficiency of its energy ecosystem.
+
+## Transitioning from Infrastructure Deployment to Fleet Logistics
+
+The company is moving out of its startup-style sprint and entering a period of disciplined logistics management. Building the initial charging footprint necessitated intense capital expenditure on hardware, but the current stage requires a focus on operational expenditure. Success is now measured by fleet uptime, service reliability, and the precision of predictive maintenance systems. Badjatya is expected to leverage his experience in industrial energy systems to refine these data-driven support structures, ensuring the existing network remains consistently functional.
+
+In Kenya, the company has set a target of 16,000 electric motorcycles, backed by a KES 13 billion investment. This market serves as a proving ground for the firm's new operational model. The primary metric for success has evolved; it is no longer about the quantity of units distributed, but rather the daily consistency of the battery-swapping loop and the economic viability of the individual boda boda operators. To achieve competitive parity with internal combustion engines, the firm must minimize service interruptions and maximize the energy-per-kilometer efficiency of its battery network.
+
+### Operational Excellence and Regional Scalability
+
+Appointing a seasoned industrial executive indicates that the company is preparing for the complexities of managing a utility-scale operation. With $265 million in liquidity, the organization has created a buffer that allows leadership to focus on internal stability rather than continuous, high-pressure fundraising. This period of consolidation is critical as the company prepares to enter Ethiopia, Malawi, and Mali, where market fragmentation demands a sophisticated management approach rather than a purely growth-focused strategy.
+
+Regional competition across East Africa remains intense, with multiple firms vying for control of the electric motorcycle sector. For Badjatya, the fundamental challenge is execution across diverse regulatory environments including Kenya, Uganda, Rwanda, Nigeria, Benin, Togo, and Cameroon. He must establish a standardized operational playbook that can function reliably in varying legal and geographical landscapes. If the firm successfully stabilizes its Kenyan fleet, that model will likely serve as the blueprint for expansion into these newer, less mature territories.
+
+The company plans to release a comprehensive performance roadmap in the third quarter of 2026. This document is expected to detail the evolution of regional hubs into self-sustaining service centers, providing a clearer look at how the firm plans to manage its long-term industrial footprint. Investors are also watching for the debut of second-generation battery-swapping units, which are scheduled for initial testing in early 2027. These hardware upgrades represent the next step in the company's effort to integrate its energy network more deeply into the daily logistics of African transport. 
+
+By shifting its primary objective toward operational excellence, the firm aims to prove that electric mobility can move from a capital-heavy experimental phase into a stable, profitable utility. The ability to maintain high service levels while managing a massive, geographically dispersed fleet will be the ultimate test of the company’s new leadership. As the sector matures, the transition from rapid physical deployment to sophisticated fleet management will likely define the long-term winners in the regional electric vehicle market.
