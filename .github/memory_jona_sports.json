@@ -207,10 +207,10 @@
     "d32b2b36a8f9868dfe6b7c45e21ac3f1",
     "3cf6c90d1b63879b0ee59dea294cbca6",
     "e01ebc3592dce61f91e3b8480e5abcb0",
-    "bd13723e127955555c431067e149ec9e"
+    "bd13723e127955555c431067e149ec9e",
+    "27ea6c638613fc127889d7a8c20e6683"
   ],
   "style_history": [
-    "Match Report",
     "Cynical Pundit",
     "Player Profile Beat",
     "Tactical Take",
@@ -239,10 +239,10 @@
     "Match Report",
     "Stat Story",
     "Player Profile Beat",
-    "Cynical Pundit"
+    "Cynical Pundit",
+    "Tactical Take"
   ],
   "angle_history": [
-    "impact_on_citizens|Scottish Premiership|Player Profile Beat",
     "policy_gap|Celtic FC|Cynical Pundit",
     "myth_vs_fact|Premier League|Stat Story",
     "money_follow|FA Cup|Match Report",
@@ -321,6 +321,7 @@
     "timeline_shift|football|Match Report",
     "money_follow|West Ham United|Stat Story",
     "next_48_hours|World Cup 2026|Player Profile Beat",
-    "money_follow|ICD|Cynical Pundit"
+    "money_follow|ICD|Cynical Pundit",
+    "policy_gap|FIFA World Cup 2026|Tactical Take"
   ]
 }
