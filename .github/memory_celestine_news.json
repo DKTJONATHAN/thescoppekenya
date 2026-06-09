@@ -225,10 +225,10 @@
     "5af7b598f7ab0d89f0519692d4c1fe0a",
     "1e8296e282c89bef96ffbf209f15f158",
     "a0b067bb1c5499134faaf4e370af5187",
-    "f893ae13ecc42de607f122bc8c6da0fe"
+    "f893ae13ecc42de607f122bc8c6da0fe",
+    "0c77a8a136c6be8610c09f86230717e8"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction & Voices",
     "Context Backgrounder",
     "Power Accountability",
@@ -257,10 +257,10 @@
     "Hard News Lead",
     "Context Backgrounder",
     "Explainer",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "policy_gap|Kenya Meteorological Service Authority|Power Accountability",
     "policy_gap|JSS|Hard News Lead",
     "money_follow|DCI|Reaction & Voices",
     "winners_losers|Kenya Ports Authority|Context Backgrounder",
@@ -339,6 +339,7 @@
     "next_48_hours|Kenya|Hard News Lead",
     "accountability|Nairobi National Park|Context Backgrounder",
     "timeline_shift|KMTC|Explainer",
-    "winners_losers|Kenya|Reaction & Voices"
+    "winners_losers|Kenya|Reaction & Voices",
+    "money_follow|Nanyuki|Hard News Lead"
   ]
 }

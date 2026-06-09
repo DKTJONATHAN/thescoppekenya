@@ -1,0 +1,35 @@
+---
+title: "Nanyuki Residents Protest US-Funded Ebola Quarantine Facility"
+slug: "nanyuki-residents-protest-us-funded-ebola-quarantine-facility"
+description: "Public opposition continues in Nanyuki against a multi-million dollar Ebola isolation unit as security forces monitor ongoing demonstrations in Laikipia."
+author: "Celestine Nzioka"
+authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
+image: "https://i.ibb.co/1fYkchkG/3d16545606ad.jpg"
+category: "News"
+tags: ["nanyuki", "ebola", "protests", "laikipia", "kenya news", "us embassy"]
+date: "2026-06-09T08:34:04Z"
+dateModified: "2026-06-09T08:34:04Z"
+schema: "NewsArticle"
+---
+
+## Economic Friction Escalates in Nanyuki
+
+Hundreds of Nanyuki residents gathered for the ninth consecutive day on Tuesday to block construction access to a U.S.-funded Ebola isolation unit, forcing local businesses to remain shuttered as security forces monitor the standoff.
+
+The Ksh 1.68 billion project, financed through a USD 13 million grant from international health partners under the coordination of the U.S. Embassy, has become a lightning rod for community unrest. Intended as a 50-bed high-containment facility to manage potential outbreaks originating from the Democratic Republic of Congo or Uganda, the project was fast-tracked in early 2026. However, residents contend that the facility was placed on ancestral land without adequate public participation or long-term safety guarantees for the surrounding Laikipia population.
+
+The capital allocation is divided between construction infrastructure, specialized containment equipment, and long-term diagnostic laboratory maintenance. Documents filed during the initial tender process show that funds were disbursed in tranches starting in January 2026, coinciding with the government's push to bolster border health security. Despite the heavy investment, the timeline of funding release suggests that the administrative planning preceded the localized social impact assessments that are now fueling the protests.
+
+Nanyuki’s central business district has seen a sharp decline in economic activity as the demonstrations intensify. Traders have reported a near-total loss of daily revenue due to the presence of water cannons and heavy police cordons near the Laikipia Air Base perimeter. While no new physical confrontations occurred today, the area remains volatile. The unrest follows a lethal incident on June 1 that left at least two people dead after security forces attempted to disperse crowds using non-lethal munitions, a situation reminiscent of the civil instability often observed during infrastructure disputes.
+
+### Diplomatic Interests Versus Public Consent
+
+The U.S. Embassy issued a formal travel advisory on June 8, urging its citizens and personnel to avoid the Laikipia region due to the unpredictable nature of the ongoing demonstrations. This move reflects the strategic importance the United States places on the site as part of a wider regional containment strategy. Embassy officials maintain that the facility is a defensive measure against infectious disease, yet the local perception remains anchored in the belief that the site will inadvertently attract high-risk patients to a town ill-equipped to manage regional biological containment, a concern that echoes the public anxiety seen in other major infrastructure projects like the [2026-03-18-kericho-building-collapse-shocking-rescue-mission-2024](https://zandani.co.ke/article/2026-03-18-kericho-building-collapse-shocking-rescue-mission-2024).
+
+Community leaders have rejected the current site location, demanding that the County government halt the project until a formal independent environmental and health safety audit is conducted. They argue that the proximity to residential areas poses a risk that outweighs the promised financial benefits of the construction phase. The County government has yet to respond to these demands, maintaining that the facility is a matter of national security and international obligation.
+
+### Stalled Progress and Security Presence
+
+The ongoing presence of anti-riot squads has forced many small-scale vendors to relocate or suspend operations, further straining the local economy. The standoff highlights a growing divide between foreign aid objectives and the immediate priorities of the local population. While the Ksh 1.68 billion budget was intended to provide a buffer against public health crises, it has instead catalyzed a domestic crisis that continues to escalate.
+
+The regional administration faces pressure to reach an agreement before the situation deteriorates further. Observers are now watching for any signs of a mediated settlement between the County leadership and the protest organizers. The primary focus for the coming days will be whether the Embassy decides to pause further capital expenditure to allow for local cooling-off periods or if the government opts to push through with the construction under increased security enforcement.
