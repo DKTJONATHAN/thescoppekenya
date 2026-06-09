@@ -228,10 +228,10 @@
     "62292d8001842ba579d180e9b9bb6747",
     "7438d63ff9baa62ca692748a40703072",
     "b141ad499a0ec905e32615cf8a70dec5",
-    "194b6c28963af5e37f518d8d8d39f156"
+    "194b6c28963af5e37f518d8d8d39f156",
+    "78e891e57bcc013c2a99cfcb14dded80"
   ],
   "style_history": [
-    "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
     "Receipts Piece",
@@ -260,7 +260,8 @@
     "Receipts Piece",
     "Reaction Round-up",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Receipts Piece"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -329,6 +330,7 @@
     "accountability|Kenya|Receipts Piece",
     "next_48_hours|Kenya Power|Reaction Round-up",
     "story_progression|Daddy Owen|Profile Beat",
-    "timeline_shift|Boniface Mwangi|Hard News Lead"
+    "timeline_shift|Boniface Mwangi|Hard News Lead",
+    "money_follow|Kenya Power|Receipts Piece"
   ]
 }
