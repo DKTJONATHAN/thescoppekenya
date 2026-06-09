@@ -1,18 +1,20 @@
 ---
 title: "Spiro Appoints Anant Badjatya as Group CEO to Scale African EV Ops"
 slug: "spiro-appoints-anant-badjatya-as-group-ceo-to-scale-african-ev-ops"
-description: "Spiro has named Anant Badjatya as Group CEO to lead its electric mobility expansion across Africa, following a major funding round of 215 million dollars."
+description: "Spiro Appoints Anant Badjatya as Group CEO to Scale African EV Op: Spiro has named Anant Badjatya as Group CEO to lead its electric mobility expansion across"
+excerpt: "Spiro has appointed former Indofast Energy executive Anant Badjatya as Group CEO, signaling a strategic pivot from infrastructure deployment"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/Ld9MzwsP/92110879418e.webp"
 category: "Technology"
 tags: ["spiro", "electric mobility", "boda boda", "kenya business", "ev technology", "transportation", "clean energy"]
+canonical: "https://zandani.co.ke/article/spiro-appoints-anant-badjatya-as-group-ceo-to-scale-african-ev-ops"
 date: "2026-06-09T13:49:19Z"
 dateModified: "2026-06-09T13:49:19Z"
+focusKeyword: "Spiro Appoints Anant Badjatya as Group CEO to Scale African EV Op"
 schema: "NewsArticle"
 ---
 
-Spiro has appointed former Indofast Energy executive Anant Badjatya as Group CEO, signaling a strategic pivot from infrastructure deployment to large-scale fleet operations. The transition follows a $265 million funding round, consisting of $215 million in equity and $50 million in debt, which provides the financial foundation for the firm to move beyond its initial construction phase. As the company manages a network of 2,500 battery-swapping stations and 100,000 electric motorcycles, the focus shifts from physical expansion to the long-term operational efficiency of its energy ecosystem.
+Spiro has appointed former Indofast Energy executive Anant Badjatya as Group CEO, signaling a strategic pivot from infrastructure deployment to large-scale fleet operations. The transition follows a $265 million funding round, consisting of $215 million in equity and $50 million in debt, which provides the financial foundation for the firm to move beyond its initial construction phase. As the company manages a network of 2,500 battery-swapping stations and 100,000 electric motorcycles, the focus shifts from physical expansion to the long-term operational efficiency of its energy ecosystem. Spiro Appoints Anant Badjatya as Group CEO to Scale African EV Op is the central subject of the update.
 
 ## Transitioning from Infrastructure Deployment to Fleet Logistics
 

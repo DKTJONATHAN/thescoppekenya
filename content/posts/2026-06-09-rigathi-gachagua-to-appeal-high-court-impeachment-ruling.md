@@ -1,18 +1,20 @@
 ---
 title: "Rigathi Gachagua to Appeal High Court Impeachment Ruling"
 slug: "rigathi-gachagua-to-appeal-high-court-impeachment-ruling"
-description: "Former Deputy President Rigathi Gachagua is heading to the Court of Appeal to challenge the High Court decision that upheld his impeachment from office."
+description: "Rigathi Gachagua to Appeal High Court Impeachment Ruling: Former Deputy President Rigathi Gachagua is heading to the Court of Appeal to challenge the High"
+excerpt: "The Judiciary as a Broker of Rights The High Court has effectively declared that constitutional violations carry a price tag, ruling that Ri"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/GvqS2p17/5331e864df7b.jpg"
 category: "News"
 tags: ["rigathi gachagua", "kenyan politics", "impeachment", "judiciary", "high court", "za ndani"]
+canonical: "https://zandani.co.ke/article/rigathi-gachagua-to-appeal-high-court-impeachment-ruling"
 date: "2026-06-09T13:47:15Z"
 dateModified: "2026-06-09T13:47:15Z"
+focusKeyword: "Rigathi Gachagua to Appeal High Court Impeachment Ruling"
 schema: "NewsArticle"
 ---
 
-## The Judiciary as a Broker of Rights
+## The Judiciary as a Broker of Rights Rigathi Gachagua to Appeal High Court Impeachment Ruling is the central subject of the update.
 
 The High Court has effectively declared that constitutional violations carry a price tag, ruling that Rigathi Gachagua’s removal was legally flawed yet practically irreversible. By awarding Ksh50 million in damages while validating the impeachment, the court has turned the Constitution into a transactional document rather than a safeguard for democratic process.
 
