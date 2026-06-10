@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Central Bank of Kenya Maintains Benchmark Interest Rate at 8.75%](https://zandani.co.ke/article/central-bank-of-kenya-maintains-benchmark-interest-rate) - The Central Bank of Kenya has held its lending rate steady at 8.75 percent amid global economic uncertainty and lowered national GDP growth forecasts.
 - [US intensifies deportation risks for Kenyans over illegal voting](https://zandani.co.ke/article/us-intensifies-deportation-risks-for-kenyans-over-illegal-voting) - New US federal directives increase deportation risks for Kenyans by targeting illegal voting and false citizenship claims alongside immigration violations.
 - [Former Tigania East MP Josphat Mwirabua Arrested Over Land Fraud](https://zandani.co.ke/article/former-tigania-east-mp-josphat-mwirabua-arrested-over-land-fraud) - Former Tigania East MP Josphat Mwirabua Arrested Over Land Fraud: DCI detectives have arrested former Tigania East MP Josphat Gichuge Mwirabua for allegedly
 - [Former Governor Mwangi wa Iria Launches Kihuti Political Movement Amid Corruption Investigations](https://zandani.co.ke/article/former-governor-mwangi-wa-iria-launches-kihuti-political-movement-am) - Former Governor Mwangi wa Iria Launches Kihuti Political Movement: Former Murang'a Governor Mwangi wa Iria has launched the Kihuti political movement while
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Emerging Football Talent to Watch at the Upcoming World Cup](https://zandani.co.ke/article/emerging-football-talent-to-watch-at-upcoming-world-cup) - Emerging Football Talent to Watch at the Upcoming World Cup: The upcoming FIFA World Cup in North America highlights new football stars as 891 players prepare
 - [Turkana to join national grid in major energy infrastructure shift](https://zandani.co.ke/article/turkana-to-join-national-grid-energy-project) - Turkana to join national grid in major energy infrastructure shif: Kenya is connecting Lodwar to the national electricity grid in a 1 billion Shilling project
 - [Timmy Tdat and Kendi Kiremi Announce They Are Expecting a Baby](https://zandani.co.ke/article/timmy-tdat-and-kendi-kiremi-announce-pregnancy) - Timmy Tdat and Kendi Kiremi Announce They Are Expecting a Baby: Kenyan musician Timmy Tdat and his partner Kendi Kiremi have officially announced they are
-- ['Hereditary Prequel Script Written by Ari Aster Revealed](https://zandani.co.ke/article/hereditary-prequel-ari-aster-reveals-script) - 'Hereditary Prequel Script Written by Ari Aster Revealed: Filmmaker Ari Aster penned a Hereditary prequel script but is hesitant to develop it now. He also
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
