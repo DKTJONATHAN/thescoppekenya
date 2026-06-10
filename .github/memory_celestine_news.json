@@ -230,10 +230,10 @@
     "a9b0aa6f66648a060420bad0c711c090",
     "3bf9b73bad7fe047b87a543b5308dcfb",
     "49c9855990710f0ab12d13b6e6ecf96e",
-    "d2314fc7160806dff7404a968f948255"
+    "d2314fc7160806dff7404a968f948255",
+    "46c77fda03a6d26b00f9833b11909dcb"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
     "Explainer",
@@ -262,10 +262,10 @@
     "Power Accountability",
     "Explainer",
     "Reaction & Voices",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "policy_gap|Kenya|Power Accountability",
     "accountability|Kenya|Hard News Lead",
     "timeline_shift|Ebola|Context Backgrounder",
     "impact_on_citizens|Kenya|Reaction & Voices",
@@ -344,6 +344,7 @@
     "accountability|Rigathi Gachagua|Power Accountability",
     "money_follow|DCI|Explainer",
     "story_progression|DHS|Reaction & Voices",
-    "story_progression|NPS|Context Backgrounder"
+    "story_progression|NPS|Context Backgrounder",
+    "timeline_shift|KeNHA|Hard News Lead"
   ]
 }
