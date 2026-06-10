@@ -166,10 +166,10 @@
     "f899381d1ff3528337822f20a26799ad",
     "2970df5fab185673663fe56e287d4d45",
     "827b23fd4e7c3d0368dd1a14105788bd",
-    "829ac868e10e3ab855f2ef707dcb4584"
+    "829ac868e10e3ab855f2ef707dcb4584",
+    "442188d5b0b76c1facc3cc8e8496a531"
   ],
   "style_history": [
-    "Markets Report",
     "Explainer",
     "Backgrounder",
     "Power Accountability",
@@ -198,7 +198,8 @@
     "Markets Report",
     "Power Accountability",
     "SME Angle",
-    "Backgrounder"
+    "Backgrounder",
+    "Markets Report"
   ],
   "angle_history": [
     "money_follow|workplace culture|Explainer",
@@ -277,6 +278,7 @@
     "story_progression|Kenya|Markets Report",
     "accountability|advertising|Power Accountability",
     "myth_vs_fact|NSE|SME Angle",
-    "money_follow|Chama|Backgrounder"
+    "money_follow|Chama|Backgrounder",
+    "winners_losers|Central Bank of Kenya|Markets Report"
   ]
 }
