@@ -146,10 +146,10 @@
     "0d577cc7621f66940ee59b470f7a9349",
     "1bce55e1a2a9162da98cfe5370c89e7c",
     "ca3f47a7dc560426ee477d4e896c0704",
-    "48d266fd5aae5eecfc1f4db177749feb"
+    "48d266fd5aae5eecfc1f4db177749feb",
+    "21bb29111409d5c673a594dc1c421efb"
   ],
   "style_history": [
-    "Counterpoint",
     "Sharp Column",
     "Personal Reflection",
     "Historical Lens",
@@ -178,10 +178,10 @@
     "Historical Lens",
     "Letter Form",
     "Sharp Column",
-    "Counterpoint"
+    "Counterpoint",
+    "Historical Lens"
   ],
   "angle_history": [
-    "timeline_shift|Africa Forward Summit|Historical Lens",
     "money_follow|unpaid care work|Letter Form",
     "impact_on_citizens|corruption|Personal Reflection",
     "winners_losers|infrastructure|Counterpoint",
@@ -260,6 +260,7 @@
     "timeline_shift|IFRS S1|Historical Lens",
     "winners_losers|Madaraka Day|Letter Form",
     "policy_gap|Comprehensive School Model|Sharp Column",
-    "myth_vs_fact|Kenya Power|Counterpoint"
+    "myth_vs_fact|Kenya Power|Counterpoint",
+    "timeline_shift|health financing|Historical Lens"
   ]
 }
