@@ -1,7 +1,8 @@
 ---
 title: "Political Tension Rises in Homa Bay as Magwanga Increases Grassroots Activities Amid Criticism of Governor Wanga"
 slug: "political-tension-rises-in-homa-bay-as-magwanga-increases-grassroots"
-description: "Political tension rises in Homa Bay as former CAS Joseph Oyugi Magwanga increases grassroots activities amid growing local criticism of Governor Wanga."
+description: "Political Tension Rises in Homa Bay as Magwanga Increases Grassro: Political tension rises in Homa Bay as former CAS Joseph Oyugi Magwanga increases grassroots"
+excerpt: "Political tensions are intensifying in Homa Bay County as former Chief Administrative Secretary Joseph Oyugi Magwanga increases his grassroo"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/LdfrrWTx/75b91543820c.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["homa-bay-politics", "osot-magwanga", "gladys-wanga", "homa-bay-governor", "nyanza-politics"]
 canonical: "https://zandani.co.ke/article/political-tension-rises-in-homa-bay-as-magwanga-increases-grassroots"
 date: "2026-06-10T16:09:52Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-10T16:09:52Z"
+focusKeyword: "Political Tension Rises in Homa Bay as Magwanga Increases Grassro"
 schema: "NewsArticle"
 ---
-Political tensions are intensifying in Homa Bay County as former Chief Administrative Secretary Joseph Oyugi Magwanga increases his grassroots presence. Residents are criticizing Governor Gladys Wanga for prioritizing national party politics over local development, creating a potential opening for new political leadership.
+
+Political tensions are intensifying in Homa Bay County as former Chief Administrative Secretary Joseph Oyugi Magwanga increases his grassroots presence. Residents are criticizing Governor Gladys Wanga for prioritizing national party politics over local development, creating a potential opening for new political leadership. Political Tension Rises in Homa Bay as Magwanga Increases Grassro is the central subject of the update.
 
 ## Shifting Power Dynamics in Homa Bay
 

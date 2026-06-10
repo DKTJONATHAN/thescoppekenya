@@ -1,18 +1,20 @@
 ---
 title: "US intensifies deportation risks for Kenyans over illegal voting"
 slug: "us-intensifies-deportation-risks-for-kenyans-over-illegal-voting"
-description: "New US federal directives increase deportation risks for Kenyans by targeting illegal voting and false citizenship claims alongside immigration violations."
+description: "US intensifies deportation risks for Kenyans over illegal voting: New US federal directives increase deportation risks for Kenyans by targeting illegal voting"
+excerpt: "The Silent Fear Gripping the Diaspora A wave of apprehension is sweeping through the Kenyan community across the United States as federal of"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Rw66MPM/17f5b29fc835.jpg"
 category: "News"
 tags: ["kenya", "united states", "dhs", "deportation", "immigration", "kenyan diaspora"]
+canonical: "https://zandani.co.ke/article/us-intensifies-deportation-risks-for-kenyans-over-illegal-voting"
 date: "2026-06-10T08:53:45Z"
 dateModified: "2026-06-10T08:53:45Z"
+focusKeyword: "US intensifies deportation risks for Kenyans over illegal voting"
 schema: "NewsArticle"
 ---
 
-## The Silent Fear Gripping the Diaspora
+## The Silent Fear Gripping the Diaspora US intensifies deportation risks for Kenyans over illegal voting is the central subject of the update.
 
 A wave of apprehension is sweeping through the Kenyan community across the United States as federal officials shift their enforcement focus. For many families sending remittances home, the reality of life abroad has turned from a path of opportunity into a minefield of potential legal exposure.
 

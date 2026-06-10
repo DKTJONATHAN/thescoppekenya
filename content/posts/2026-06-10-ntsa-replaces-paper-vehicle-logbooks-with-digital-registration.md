@@ -1,18 +1,20 @@
 ---
 title: "NTSA Replaces Paper Vehicle Logbooks With Digital Registration"
 slug: "ntsa-replaces-paper-vehicle-logbooks-with-digital-registration"
-description: "NTSA has transitioned to an electronic logbook system integrated with eCitizen and TIMS to reduce fraud and improve service delivery for all Kenyans."
+description: "NTSA Replaces Paper Vehicle Logbooks With Digital Registration: NTSA has transitioned to an electronic logbook system integrated with eCitizen and TIMS to"
+excerpt: "The Final Sunset for Kenya’s Physical Logbooks The National Transport and Safety Authority has officially shuttered the era of physical vehi"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/tp19yRhn/6aa649d4c714.webp"
 category: "Technology"
 tags: ["ntsa", "kenya news", "elogbook", "ecitizen", "transport", "tims"]
+canonical: "https://zandani.co.ke/article/ntsa-replaces-paper-vehicle-logbooks-with-digital-registration"
 date: "2026-06-10T14:30:41Z"
 dateModified: "2026-06-10T14:30:41Z"
+focusKeyword: "NTSA Replaces Paper Vehicle Logbooks With Digital Registration"
 schema: "NewsArticle"
 ---
 
-## The Final Sunset for Kenya’s Physical Logbooks
+## The Final Sunset for Kenya’s Physical Logbooks NTSA Replaces Paper Vehicle Logbooks With Digital Registration is the central subject of the update.
 
 The National Transport and Safety Authority has officially shuttered the era of physical vehicle ownership documentation as of June 10, 2026. This transition mandates a fully cryptographic verification process for all motor vehicle services, effectively ending the decade-long reliance on paper-based identity verification.
 

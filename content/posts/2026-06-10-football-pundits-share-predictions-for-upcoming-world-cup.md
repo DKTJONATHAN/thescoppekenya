@@ -1,18 +1,20 @@
 ---
 title: "Football pundits share predictions for upcoming World Cup tournament"
 slug: "football-pundits-share-predictions-for-upcoming-world-cup"
-description: "Football experts and BBC pundits weigh in on the expanded World Cup format with France and England emerging as the top title contenders."
+description: "Football pundits share predictions for upcoming World Cup tournam: Football experts and BBC pundits weigh in on the expanded World Cup format with France and"
+excerpt: "The 104 Match Volatility Trap The 2026 World Cup features 104 matches across 39 days with a 48 team field. While 16 pundits have collectivel"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/Fqn0bZsF/ea0d24fd297b.jpg"
 category: "Sports"
 tags: ["world cup 2026", "football", "sports news", "kenyan football fans", "international football"]
+canonical: "https://zandani.co.ke/article/football-pundits-share-predictions-for-upcoming-world-cup"
 date: "2026-06-10T13:52:39Z"
 dateModified: "2026-06-10T13:52:39Z"
+focusKeyword: "Football pundits share predictions for upcoming World Cup tournam"
 schema: "NewsArticle"
 ---
 
-## The 104-Match Volatility Trap
+## The 104-Match Volatility Trap Football pundits share predictions for upcoming World Cup tournam is the central subject of the update.
 
 The 2026 World Cup features 104 matches across 39 days with a 48-team field. While 16 pundits have collectively narrowed their predictions to either France or England, the mathematical structure of this expanded tournament creates a high-entropy environment that renders traditional forecasting models ineffective.
 

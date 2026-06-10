@@ -1,18 +1,20 @@
 ---
 title: "Champion Majembe Withdraws From Vurugu 2.0 Boxing Tournament"
 slug: "champion-majembe-withdraws-from-vurugu-2-0-boxing-tournament"
-description: "Defending boxing champion Majembe has officially withdrawn from the Vurugu 2.0 tournament following a branding dispute with promoter Obinna."
+description: "Champion Majembe Withdraws From Vurugu 2.0 Boxing Tournament: Defending boxing champion Majembe has officially withdrawn from the Vurugu 2.0 tournament"
+excerpt: "Behind The Gloves: The Real Reason Vurugu 2.0 Lost Its Headliner Champion Majembe just swapped his championship belt for a stack of legal do"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/8DNc0wyb/7aa191cc0be1.jpg"
 category: "Gossip"
 tags: ["majembe", "vurugu 2.0", "kenyan boxing", "obinna", "sports news", "kenya"]
+canonical: "https://zandani.co.ke/article/champion-majembe-withdraws-from-vurugu-2-0-boxing-tournament"
 date: "2026-06-10T11:49:08Z"
 dateModified: "2026-06-10T11:49:08Z"
+focusKeyword: "Champion Majembe Withdraws From Vurugu 2.0 Boxing Tournament"
 schema: "NewsArticle"
 ---
 
-## Behind The Gloves: The Real Reason Vurugu 2.0 Lost Its Headliner
+## Behind The Gloves: The Real Reason Vurugu 2.0 Lost Its Headliner Champion Majembe Withdraws From Vurugu 2.0 Boxing Tournament is the central subject of the update.
 
 Champion Majembe just swapped his championship belt for a stack of legal documents, proving that in Kenya’s burgeoning influencer boxing scene, the fine print packs more punch than any heavyweight jab. While fans were sold a dream of a blockbuster main event, the reality is a stalled career caught in a tug-of-war over branding rights.
 

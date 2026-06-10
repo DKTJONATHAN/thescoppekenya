@@ -1,18 +1,20 @@
 ---
 title: "KURA Announces Partial Road Closures Across Nairobi"
 slug: "kura-announces-partial-road-closures-across-nairobi"
-description: "Nairobi motorists face significant traffic disruptions as KURA begins bridge and drainage works on Kenyatta Avenue, Haile Selassie and Ngong Road."
+description: "KURA Announces Partial Road Closures Across Nairobi: Nairobi motorists face significant traffic disruptions as KURA begins bridge and drainage works on"
+excerpt: "The Concrete Gridlock Shaping Our Future The Kenya Urban Roads Authority (KURA) has finalized plans for an eight month construction project,"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/VY7LwbM1/595c94c0a241.png"
 category: "Gossip"
 tags: ["nairobi traffic", "kura", "kenya roads", "infrastructure", "nairobi transport"]
+canonical: "https://zandani.co.ke/article/kura-announces-partial-road-closures-across-nairobi"
 date: "2026-06-10T10:20:54Z"
 dateModified: "2026-06-10T10:20:54Z"
+focusKeyword: "KURA Announces Partial Road Closures Across Nairobi"
 schema: "NewsArticle"
 ---
 
-## The Concrete Gridlock Shaping Our Future
+## The Concrete Gridlock Shaping Our Future KURA Announces Partial Road Closures Across Nairobi is the central subject of the update.
 
 The Kenya Urban Roads Authority (KURA) has finalized plans for an eight-month construction project, effectively freezing key Nairobi transit routes until February 2027. By restricting flow along Valley Road and Jakaya Kikwete Road, the authority has inadvertently dismantled the conventional morning commute. This shift forces a reckoning between outdated professional expectations and a reality defined by stalled infrastructure.
 

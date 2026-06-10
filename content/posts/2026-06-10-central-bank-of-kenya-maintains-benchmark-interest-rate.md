@@ -1,18 +1,20 @@
 ---
 title: "Central Bank of Kenya Maintains Benchmark Interest Rate at 8.75%"
 slug: "central-bank-of-kenya-maintains-benchmark-interest-rate"
-description: "The Central Bank of Kenya has held its lending rate steady at 8.75 percent amid global economic uncertainty and lowered national GDP growth forecasts."
+description: "Central Bank of Kenya Maintains Benchmark Interest Rate at 8.75%: The Central Bank of Kenya has held its lending rate steady at 8.75 percent amid global"
+excerpt: "The 8.75 Percent Stagnation Trap The Monetary Policy Committee has opted to keep the benchmark interest rate at 8.75 percent, prioritizing i"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/tpFjfNsw/fcbdb6214adb.png"
 category: "Business"
 tags: ["central bank of kenya", "kenya economy", "interest rates", "monetary policy", "inflation", "gdp growth"]
+canonical: "https://zandani.co.ke/article/central-bank-of-kenya-maintains-benchmark-interest-rate"
 date: "2026-06-10T09:00:12Z"
 dateModified: "2026-06-10T09:00:12Z"
+focusKeyword: "Central Bank of Kenya Maintains Benchmark Interest Rate at 8.75%"
 schema: "NewsArticle"
 ---
 
-## The 8.75 Percent Stagnation Trap
+## The 8.75 Percent Stagnation Trap Central Bank of Kenya Maintains Benchmark Interest Rate at 8.75% is the central subject of the update.
 
 The Monetary Policy Committee has opted to keep the benchmark interest rate at 8.75 percent, prioritizing inflation control over aggressive stimulus. This decision effectively cements a high-cost environment, forcing local businesses to weigh stagnant expansion plans against the relative safety of government yields.
 
