@@ -228,10 +228,10 @@
     "f893ae13ecc42de607f122bc8c6da0fe",
     "0c77a8a136c6be8610c09f86230717e8",
     "a9b0aa6f66648a060420bad0c711c090",
-    "3bf9b73bad7fe047b87a543b5308dcfb"
+    "3bf9b73bad7fe047b87a543b5308dcfb",
+    "49c9855990710f0ab12d13b6e6ecf96e"
   ],
   "style_history": [
-    "Power Accountability",
     "Explainer",
     "Reaction & Voices",
     "Context Backgrounder",
@@ -260,10 +260,10 @@
     "Reaction & Voices",
     "Hard News Lead",
     "Power Accountability",
-    "Explainer"
+    "Explainer",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "winners_losers|Kenya Ports Authority|Context Backgrounder",
     "money_follow|Kenya Bus Service|Explainer",
     "policy_gap|Kenya|Power Accountability",
     "accountability|Kenya|Hard News Lead",
@@ -342,6 +342,7 @@
     "winners_losers|Kenya|Reaction & Voices",
     "money_follow|Nanyuki|Hard News Lead",
     "accountability|Rigathi Gachagua|Power Accountability",
-    "money_follow|DCI|Explainer"
+    "money_follow|DCI|Explainer",
+    "story_progression|DHS|Reaction & Voices"
   ]
 }
