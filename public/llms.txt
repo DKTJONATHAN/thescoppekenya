@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Football pundits share predictions for upcoming World Cup tournament](https://zandani.co.ke/article/football-pundits-share-predictions-for-upcoming-world-cup) - Football experts and BBC pundits weigh in on the expanded World Cup format with France and England emerging as the top title contenders.
 - [Why Community Voices Must Shape Kenya's Health Financing Reforms](https://zandani.co.ke/article/community-voices-shape-kenya-health-financing-reforms) - Kenya needs to move from top-down health policies to community-led models. Meaningful public participation is key to sustainable healthcare success.
 - [Champion Majembe Withdraws From Vurugu 2.0 Boxing Tournament](https://zandani.co.ke/article/champion-majembe-withdraws-from-vurugu-2-0-boxing-tournament) - Defending boxing champion Majembe has officially withdrawn from the Vurugu 2.0 tournament following a branding dispute with promoter Obinna.
 - [KURA Announces Partial Road Closures Across Nairobi](https://zandani.co.ke/article/kura-announces-partial-road-closures-across-nairobi) - Nairobi motorists face significant traffic disruptions as KURA begins bridge and drainage works on Kenyatta Avenue, Haile Selassie and Ngong Road.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Former Governor Mwangi wa Iria Launches Kihuti Political Movement Amid Corruption Investigations](https://zandani.co.ke/article/former-governor-mwangi-wa-iria-launches-kihuti-political-movement-am) - Former Governor Mwangi wa Iria Launches Kihuti Political Movement: Former Murang'a Governor Mwangi wa Iria has launched the Kihuti political movement while
 - [Spiro Appoints Anant Badjatya as Group CEO to Scale African EV Ops](https://zandani.co.ke/article/spiro-appoints-anant-badjatya-as-group-ceo-to-scale-african-ev-ops) - Spiro Appoints Anant Badjatya as Group CEO to Scale African EV Op: Spiro has named Anant Badjatya as Group CEO to lead its electric mobility expansion across
 - [The Golden Chains of Free Studio Access](https://zandani.co.ke/article/the-golden-chains-of-free-studio-access) - The Golden Chains of Free Studio Access: In the gilded halls of Florence, benefactors once spun webs of artistic 'generosity,' much like today's grand
-- [Rigathi Gachagua to Appeal High Court Impeachment Ruling](https://zandani.co.ke/article/rigathi-gachagua-to-appeal-high-court-impeachment-ruling) - Rigathi Gachagua to Appeal High Court Impeachment Ruling: Former Deputy President Rigathi Gachagua is heading to the Court of Appeal to challenge the High
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
