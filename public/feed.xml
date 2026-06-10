@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Wed, 10 Jun 2026 14:38:38 GMT</pubDate>
+    <pubDate>Wed, 10 Jun 2026 14:41:18 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[NTSA Replaces Paper Vehicle Logbooks With Digital Registration]]></title>
+      <link>https://zandani.co.ke/article/ntsa-replaces-paper-vehicle-logbooks-with-digital-registration</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/ntsa-replaces-paper-vehicle-logbooks-with-digital-registration</guid>
+      <pubDate>Wed, 10 Jun 2026 14:30:41 GMT</pubDate>
+      <dc:creator><![CDATA[Elizabeth Muthoni]]></dc:creator>
+      <description><![CDATA[NTSA has transitioned to an electronic logbook system integrated with eCitizen and TIMS to reduce fraud and improve service delivery for all Kenyans.]]></description>
+      <enclosure url="https://i.ibb.co/tp19yRhn/6aa649d4c714.webp" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/tp19yRhn/6aa649d4c714.webp" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/tp19yRhn/6aa649d4c714.webp" alt="NTSA Replaces Paper Vehicle Logbooks With Digital Registration" /><p>NTSA has transitioned to an electronic logbook system integrated with eCitizen and TIMS to reduce fraud and improve service delivery for all Kenyans.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Nairobi to Adopt Intelligence-Led Policing Model from Tokyo and New York]]></title>
       <link>https://zandani.co.ke/article/nairobi-adopts-intelligence-led-policing-model</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/GvbrKmYY/dfce091d8b89.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/GvbrKmYY/dfce091d8b89.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/GvbrKmYY/dfce091d8b89.jpg" alt="Government Blocks Kenya Power Plan to Increase Electricity Tariffs" /><p>Government Blocks Kenya Power Plan to Increase Electricity Tariff: The Ministry of Energy and Petroleum has officially cancelled a Kenya Power tariff review</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Ringtone blames church leadership for decline of gospel music]]></title>
-      <link>https://zandani.co.ke/article/ringtone-blames-church-leadership-for-decline-of-gospel-music</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/ringtone-blames-church-leadership-for-decline-of-gospel-music</guid>
-      <pubDate>Wed, 03 Jun 2026 11:22:39 GMT</pubDate>
-      <dc:creator><![CDATA[Wanjiku Kuria]]></dc:creator>
-      <description><![CDATA[Ringtone blames church leadership for decline of gospel music: Gospel artist Ringtone claims that public condemnation by church leaders has crippled the]]></description>
-      <enclosure url="https://i.ibb.co/BVtdt7Ft/9ee658fe8607.jpg" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/BVtdt7Ft/9ee658fe8607.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/BVtdt7Ft/9ee658fe8607.jpg" alt="Ringtone blames church leadership for decline of gospel music" /><p>Ringtone blames church leadership for decline of gospel music: Gospel artist Ringtone claims that public condemnation by church leaders has crippled the</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
