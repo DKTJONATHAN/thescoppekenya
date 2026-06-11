@@ -1,18 +1,20 @@
 ---
 title: "Kenya Medical Association Issues Ebola Alert for Health Facilities"
 slug: "kenya-medical-association-issues-ebola-preparedness-alert"
-description: "Kenya is enforcing strict clinical isolation protocols and heightened surveillance at entry points to prevent the potential importation of the Ebola virus."
+description: "Kenya Medical Association Issues Ebola Alert for Health Facilitie: Kenya is enforcing strict clinical isolation protocols and heightened surveillance at entry"
+excerpt: "Preparing for Ebola: What the New Health Guidelines Mean for Your Clinic Visit The Kenya Medical Association has formally directed health fa"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Q7pm0md1/aeb7e5317188.jpg"
 category: "News"
 tags: ["kenya", "ebola", "kma", "ministry of health", "public health", "healthcare workers"]
+canonical: "https://zandani.co.ke/article/kenya-medical-association-issues-ebola-preparedness-alert"
 date: "2026-06-11T14:43:10Z"
 dateModified: "2026-06-11T14:43:10Z"
+focusKeyword: "Kenya Medical Association Issues Ebola Alert for Health Facilitie"
 schema: "NewsArticle"
 ---
 
-## Preparing for Ebola: What the New Health Guidelines Mean for Your Clinic Visit
+## Preparing for Ebola: What the New Health Guidelines Mean for Your Clinic Visit Kenya Medical Association Issues Ebola Alert for Health Facilitie is the central subject of the update.
 
 The Kenya Medical Association has formally directed health facilities nationwide to implement immediate isolation protocols for patients exhibiting specific symptoms, regardless of whether they have crossed international borders. This mandate shifts the focus from passive monitoring to proactive clinical screening across all local treatment centers.
 

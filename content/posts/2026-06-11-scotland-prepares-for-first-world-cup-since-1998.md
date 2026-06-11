@@ -1,18 +1,20 @@
 ---
 title: "Scotland sets up camp in US ahead of first World Cup in decades"
 slug: "scotland-prepares-for-first-world-cup-since-1998"
-description: "Scotland prepares for their first World Cup appearance since 1998 at a Charlotte training base as UK authorities relax pub hours for football fans."
+description: "Scotland sets up camp in US ahead of first World Cup in decades: Scotland prepares for their first World Cup appearance since 1998 at a Charlotte training base"
+excerpt: "Scotland establishes Charlotte base for 2026 World Cup The Scottish national team has settled into the Atrium Health Performance Park in Nor"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/WWNR5QNf/b99fe6f61de0.jpg"
 category: "Sports"
 tags: ["fifa world cup", "scotland football", "international sports", "world cup 2026", "football news"]
+canonical: "https://zandani.co.ke/article/scotland-prepares-for-first-world-cup-since-1998"
 date: "2026-06-11T14:14:18Z"
 dateModified: "2026-06-11T14:14:18Z"
+focusKeyword: "Scotland sets up camp in US ahead of first World Cup in decades"
 schema: "NewsArticle"
 ---
 
-## Scotland establishes Charlotte base for 2026 World Cup
+## Scotland establishes Charlotte base for 2026 World Cup Scotland sets up camp in US ahead of first World Cup in decades is the central subject of the update.
 
 The Scottish national team has settled into the Atrium Health Performance Park in North Carolina, signaling the end of a 28-year wait to return to the FIFA World Cup. This relocation is a pragmatic necessity for manager Steve Clarke, who must navigate the logistical challenges of a tournament hosted across North America. While the squad adapts to the climate of the Carolinas, the United Kingdom has undergone its own legislative shifts to ensure the population can follow the action despite the significant time zone differences.
 
