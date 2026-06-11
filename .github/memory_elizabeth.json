@@ -132,10 +132,10 @@
     "68b17d0280c007b343a20e3a27c70314",
     "c28921414f6fff1af4d95466d544691e",
     "fe9a40f44a718cd8a8bf2907790a485f",
-    "23ed635d03750a94817fd1888715e6ab"
+    "23ed635d03750a94817fd1888715e6ab",
+    "89f746bb4ed3c1a58fda6689854c83bb"
   ],
   "style_history": [
-    "Africa Angle",
     "Explainer",
     "Critical Take",
     "Hard News Lead",
@@ -164,7 +164,8 @@
     "Explainer",
     "Africa Angle",
     "Hard News Lead",
-    "Backgrounder"
+    "Backgrounder",
+    "Explainer"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -215,6 +216,7 @@
     "accountability|NTSA|Explainer",
     "money_follow|Kenya|Africa Angle",
     "story_progression|electric mobility|Hard News Lead",
-    "timeline_shift|NTSA|Backgrounder"
+    "timeline_shift|NTSA|Backgrounder",
+    "myth_vs_fact|Kenya Budget 2026/27|Explainer"
   ]
 }
