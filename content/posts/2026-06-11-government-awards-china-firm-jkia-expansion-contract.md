@@ -1,18 +1,20 @@
 ---
 title: "Government Awards China Firm Major JKIA Expansion Contract"
 slug: "government-awards-china-firm-jkia-expansion-contract"
-description: "The government has signed a multibillion shilling deal with China Communications Construction Company to modernize and expand Jomo Kenyatta International Airport."
+description: "Government Awards China Firm Major JKIA Expansion Contract: The government has signed a multibillion shilling deal with China Communications Construction"
+excerpt: "The Empty Pockets Behind the Runway The government has committed Ksh375.4 billion to China Communications Construction Company for a massive"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/6LJ6fX0/9c6212bab1d8.jpg"
 category: "News"
 tags: ["jkia", "infrastructure", "kenya news", "aviation", "william ruto", "kenya pipeline company"]
+canonical: "https://zandani.co.ke/article/government-awards-china-firm-jkia-expansion-contract"
 date: "2026-06-11T09:16:03Z"
 dateModified: "2026-06-11T09:16:03Z"
+focusKeyword: "Government Awards China Firm Major JKIA Expansion Contract"
 schema: "NewsArticle"
 ---
 
-## The Empty Pockets Behind the Runway
+## The Empty Pockets Behind the Runway Government Awards China Firm Major JKIA Expansion Contract is the central subject of the update.
 
 The government has committed Ksh375.4 billion to China Communications Construction Company for a massive overhaul of Jomo Kenyatta International Airport, yet the financing model relies on cannibalizing the capital reserves of the Kenya Pipeline Company to sustain the project.
 

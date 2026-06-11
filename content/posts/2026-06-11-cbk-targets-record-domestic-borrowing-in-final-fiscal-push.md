@@ -1,18 +1,20 @@
 ---
 title: "CBK targets KSh 1 trillion in final domestic borrowing push"
 slug: "cbk-targets-record-domestic-borrowing-in-final-fiscal-push"
-description: "The Central Bank of Kenya has launched a final bond reopening and tap sale aiming to hit a historic KSh 1 trillion domestic debt target before June 30."
+description: "CBK targets KSh 1 trillion in final domestic borrowing push: The Central Bank of Kenya has launched a final bond reopening and tap sale aiming to hit a"
+excerpt: "The Trillion Shilling Debt Ceiling: What the CBK’s Final Bond Push Means for Your Wallet The Central Bank of Kenya has launched a final rush"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/GfSp2186/cd4f68849a69.jpg"
 category: "Business"
 tags: ["central bank of kenya", "kenya economy", "government bonds", "domestic debt", "fiscal policy"]
+canonical: "https://zandani.co.ke/article/cbk-targets-record-domestic-borrowing-in-final-fiscal-push"
 date: "2026-06-11T09:20:03Z"
 dateModified: "2026-06-11T09:20:03Z"
+focusKeyword: "CBK targets KSh 1 trillion in final domestic borrowing push"
 schema: "NewsArticle"
 ---
 
-## The Trillion-Shilling Debt Ceiling: What the CBK’s Final Bond Push Means for Your Wallet
+## The Trillion-Shilling Debt Ceiling: What the CBK’s Final Bond Push Means for Your Wallet CBK targets KSh 1 trillion in final domestic borrowing push is the central subject of the update.
 
 The Central Bank of Kenya has launched a final rush for cash, aiming to secure KSh 60 billion through bond reopenings before the fiscal year ends on June 30. This push effectively maneuvers the government toward a record-breaking KSh 1 trillion in total domestic borrowing for 2025/26.
 

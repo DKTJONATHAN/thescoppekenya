@@ -1,18 +1,20 @@
 ---
 title: "KeNHA Extends Permit Deadline to June 19 After Portal Restoration"
 slug: "kenha-extends-permit-deadline-june-19"
-description: "KeNHA has restored its online permit portal and granted a 10-day extension until June 19 for truckers to regularize their documentation following a backlog."
+description: "KeNHA Extends Permit Deadline to June 19 After Portal Restoration: KeNHA has restored its online permit portal and granted a 10-day extension until June 19 for"
+excerpt: "New Logistics Timeline Set for Kenyan Transporters The Kenya National Highways Authority has granted transporters a ten day reprieve to fina"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/qMBLwFhX/d209cd73ab48.jpg"
 category: "News"
 tags: ["kenha", "transport", "trucking", "kenya news", "infrastructure", "permits"]
+canonical: "https://zandani.co.ke/article/kenha-extends-permit-deadline-june-19"
 date: "2026-06-10T19:38:32Z"
 dateModified: "2026-06-10T19:38:32Z"
+focusKeyword: "KeNHA Extends Permit Deadline to June 19 After Portal Restoration"
 schema: "NewsArticle"
 ---
 
-## New Logistics Timeline Set for Kenyan Transporters
+## New Logistics Timeline Set for Kenyan Transporters KeNHA Extends Permit Deadline to June 19 After Portal Restoration is the central subject of the update.
 
 The Kenya National Highways Authority has granted transporters a ten-day reprieve to finalize permit applications by June 19 following the successful restoration of its digital processing portal.
 
