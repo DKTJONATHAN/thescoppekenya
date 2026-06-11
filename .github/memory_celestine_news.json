@@ -232,10 +232,10 @@
     "49c9855990710f0ab12d13b6e6ecf96e",
     "d2314fc7160806dff7404a968f948255",
     "46c77fda03a6d26b00f9833b11909dcb",
-    "1a14b355a6f86749e932aafc7ca6b44e"
+    "1a14b355a6f86749e932aafc7ca6b44e",
+    "a5e096c29f3726a25e5ea8789373db63"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Power Accountability",
     "Context Backgrounder",
@@ -264,10 +264,10 @@
     "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
-    "Power Accountability"
+    "Power Accountability",
+    "Explainer"
   ],
   "angle_history": [
-    "timeline_shift|Ebola|Context Backgrounder",
     "impact_on_citizens|Kenya|Reaction & Voices",
     "policy_gap|NTSA|Power Accountability",
     "myth_vs_fact|KRA|Explainer",
@@ -346,6 +346,7 @@
     "story_progression|DHS|Reaction & Voices",
     "story_progression|NPS|Context Backgrounder",
     "timeline_shift|KeNHA|Hard News Lead",
-    "money_follow|JKIA|Power Accountability"
+    "money_follow|JKIA|Power Accountability",
+    "myth_vs_fact|Kenya|Explainer"
   ]
 }
