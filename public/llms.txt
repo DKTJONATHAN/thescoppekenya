@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Grace Ekirapa opens up on the challenges of single motherhood](https://zandani.co.ke/article/grace-ekirapa-opens-up-on-the-challenges-of-single-motherhood) - Former television host Grace Ekirapa shares her emotional journey, detailing how faith helped her overcome the struggles of parenting alone.
 - [CBK targets KSh 1 trillion in final domestic borrowing push](https://zandani.co.ke/article/cbk-targets-record-domestic-borrowing-in-final-fiscal-push) - CBK targets KSh 1 trillion in final domestic borrowing push: The Central Bank of Kenya has launched a final bond reopening and tap sale aiming to hit a
 - [Government Awards China Firm Major JKIA Expansion Contract](https://zandani.co.ke/article/government-awards-china-firm-jkia-expansion-contract) - Government Awards China Firm Major JKIA Expansion Contract: The government has signed a multibillion shilling deal with China Communications Construction
 - [KeNHA Extends Permit Deadline to June 19 After Portal Restoration](https://zandani.co.ke/article/kenha-extends-permit-deadline-june-19) - KeNHA Extends Permit Deadline to June 19 After Portal Restoration: KeNHA has restored its online permit portal and granted a 10-day extension until June 19 for
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Football pundits share predictions for upcoming World Cup tournament](https://zandani.co.ke/article/football-pundits-share-predictions-for-upcoming-world-cup) - Football pundits share predictions for upcoming World Cup tournam: Football experts and BBC pundits weigh in on the expanded World Cup format with France and
 - [Why Community Voices Must Shape Kenya's Health Financing Reforms](https://zandani.co.ke/article/community-voices-shape-kenya-health-financing-reforms) - Why Community Voices Must Shape Kenya's Health Financing Reforms: Kenya needs to move from top-down health policies to community-led models. Meaningful public
 - [Champion Majembe Withdraws From Vurugu 2.0 Boxing Tournament](https://zandani.co.ke/article/champion-majembe-withdraws-from-vurugu-2-0-boxing-tournament) - Champion Majembe Withdraws From Vurugu 2.0 Boxing Tournament: Defending boxing champion Majembe has officially withdrawn from the Vurugu 2.0 tournament
-- [KURA Announces Partial Road Closures Across Nairobi](https://zandani.co.ke/article/kura-announces-partial-road-closures-across-nairobi) - KURA Announces Partial Road Closures Across Nairobi: Nairobi motorists face significant traffic disruptions as KURA begins bridge and drainage works on
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
