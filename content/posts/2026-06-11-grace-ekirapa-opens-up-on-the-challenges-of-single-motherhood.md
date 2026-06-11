@@ -1,18 +1,20 @@
 ---
 title: "Grace Ekirapa opens up on the challenges of single motherhood"
 slug: "grace-ekirapa-opens-up-on-the-challenges-of-single-motherhood"
-description: "Former television host Grace Ekirapa shares her emotional journey, detailing how faith helped her overcome the struggles of parenting alone."
+description: "Grace Ekirapa opens up on the challenges of single motherhood: Former television host Grace Ekirapa shares her emotional journey, detailing how faith helped"
+excerpt: "The Unfiltered Reality of Grace Ekirapa For years, the public perceived Grace Ekirapa as the image of effortless poise, a television host wh"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/ZR2Q07wB/9aef78e3f3ba.jpg"
 category: "Gossip"
 tags: ["grace ekirapa", "kenyan celebrities", "single parenting", "mental health", "motherhood", "faith"]
+canonical: "https://zandani.co.ke/article/grace-ekirapa-opens-up-on-the-challenges-of-single-motherhood"
 date: "2026-06-11T10:57:58Z"
 dateModified: "2026-06-11T10:57:58Z"
+focusKeyword: "Grace Ekirapa opens up on the challenges of single motherhood"
 schema: "NewsArticle"
 ---
 
-## The Unfiltered Reality of Grace Ekirapa
+## The Unfiltered Reality of Grace Ekirapa Grace Ekirapa opens up on the challenges of single motherhood is the central subject of the update.
 
 For years, the public perceived Grace Ekirapa as the image of effortless poise, a television host who navigated life with a serene smile. Yet, behind the glow of studio lights, she has been quietly dismantling the exhausting myth of the perfect mother, revealing that motherhood is often a messy, isolating performance.
 

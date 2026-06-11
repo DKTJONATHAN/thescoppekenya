@@ -1,18 +1,20 @@
 ---
 title: "Ministry of Education Criticized Over Rising School Unrest in Kenya"
 slug: "ministry-of-education-criticized-over-rising-school-unrest-kenya"
-description: "Authorities face pressure as arson and student strikes lead to seventy school closures across Kenya following the tragic Utumishi School incident."
+description: "Ministry of Education Criticized Over Rising School Unrest in Ken: Authorities face pressure as arson and student strikes lead to seventy school closures"
+excerpt: "A Crisis of Stewardship: An Open Letter to the Ministry of Education Seventy educational institutions have shuttered their gates in a mere f"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/zhm3qW3F/ee36c1a66517.webp"
 category: "Opinions"
 tags: ["kenyan schools", "education news", "school arson", "ministry of education", "student strikes", "kenya education"]
+canonical: "https://zandani.co.ke/article/ministry-of-education-criticized-over-rising-school-unrest-kenya"
 date: "2026-06-11T12:55:26Z"
 dateModified: "2026-06-11T12:55:26Z"
+focusKeyword: "Ministry of Education Criticized Over Rising School Unrest in Ken"
 schema: "NewsArticle"
 ---
 
-## A Crisis of Stewardship: An Open Letter to the Ministry of Education
+## A Crisis of Stewardship: An Open Letter to the Ministry of Education Ministry of Education Criticized Over Rising School Unrest in Ken is the central subject of the update.
 
 Seventy educational institutions have shuttered their gates in a mere fortnight. As dormitory roofs smolder and thousands of students find themselves stranded, this unfolding disaster serves as a grim reflection of a profound leadership void within our national education sector.
 
