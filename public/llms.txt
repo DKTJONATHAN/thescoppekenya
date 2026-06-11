@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Rising Macadamia Theft Triggers Mob Violence in Kenya](https://zandani.co.ke/article/rising-macadamia-theft-triggers-mob-violence-in-kenya) - Rising market prices for macadamia nuts in central Kenya have triggered a surge in violent mob attacks against suspected thieves during harvest season.
 - [Kenya prioritizes digital infrastructure and tax in new budget](https://zandani.co.ke/article/kenya-budget-digital-infrastructure-tax-measures) - The government allocates billions to boost ICT and Konza Technopolis while introducing new tax measures to increase digital revenue collection.
 - [Kenya Medical Association Issues Ebola Alert for Health Facilities](https://zandani.co.ke/article/kenya-medical-association-issues-ebola-preparedness-alert) - Kenya Medical Association Issues Ebola Alert for Health Facilitie: Kenya is enforcing strict clinical isolation protocols and heightened surveillance at entry
 - [Scotland sets up camp in US ahead of first World Cup in decades](https://zandani.co.ke/article/scotland-prepares-for-first-world-cup-since-1998) - Scotland sets up camp in US ahead of first World Cup in decades: Scotland prepares for their first World Cup appearance since 1998 at a Charlotte training base
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [CBK targets KSh 1 trillion in final domestic borrowing push](https://zandani.co.ke/article/cbk-targets-record-domestic-borrowing-in-final-fiscal-push) - CBK targets KSh 1 trillion in final domestic borrowing push: The Central Bank of Kenya has launched a final bond reopening and tap sale aiming to hit a
 - [Government Awards China Firm Major JKIA Expansion Contract](https://zandani.co.ke/article/government-awards-china-firm-jkia-expansion-contract) - Government Awards China Firm Major JKIA Expansion Contract: The government has signed a multibillion shilling deal with China Communications Construction
 - [KeNHA Extends Permit Deadline to June 19 After Portal Restoration](https://zandani.co.ke/article/kenha-extends-permit-deadline-june-19) - KeNHA Extends Permit Deadline to June 19 After Portal Restoration: KeNHA has restored its online permit portal and granted a 10-day extension until June 19 for
-- [Political Tension Rises in Homa Bay as Magwanga Increases Grassroots Activities Amid Criticism of Governor Wanga](https://zandani.co.ke/article/political-tension-rises-in-homa-bay-as-magwanga-increases-grassroots) - Political Tension Rises in Homa Bay as Magwanga Increases Grassro: Political tension rises in Homa Bay as former CAS Joseph Oyugi Magwanga increases grassroots
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
