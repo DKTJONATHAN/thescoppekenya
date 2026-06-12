@@ -1,18 +1,20 @@
 ---
 title: "Kenya prioritizes digital infrastructure and tax in new budget"
 slug: "kenya-budget-digital-infrastructure-tax-measures"
-description: "The government allocates billions to boost ICT and Konza Technopolis while introducing new tax measures to increase digital revenue collection."
+description: "Kenya prioritizes digital infrastructure and tax in new budget: The government allocates billions to boost ICT and Konza Technopolis while introducing new tax"
+excerpt: "Kenya Budget 2026/27: Behind the Digital Facade The state is pouring KES 40.7 billion into ICT development this fiscal year, framing the mov"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/5Ws9gBtC/cfc0db97f52f.webp"
 category: "Technology"
 tags: ["kenya budget", "digital economy", "ict", "konza technopolis", "kra", "kenyan news"]
+canonical: "https://zandani.co.ke/article/kenya-budget-digital-infrastructure-tax-measures"
 date: "2026-06-11T14:56:51Z"
 dateModified: "2026-06-11T14:56:51Z"
+focusKeyword: "Kenya prioritizes digital infrastructure and tax in new budget"
 schema: "NewsArticle"
 ---
 
-## Kenya Budget 2026/27: Behind the Digital Facade
+## Kenya Budget 2026/27: Behind the Digital Facade Kenya prioritizes digital infrastructure and tax in new budget is the central subject of the update.
 
 The state is pouring KES 40.7 billion into ICT development this fiscal year, framing the move as a gateway to modern public services. However, beneath the promise of faster connectivity lies a sophisticated mechanism designed to turn every digital interaction into a taxable event for the Kenya Revenue Authority.
 

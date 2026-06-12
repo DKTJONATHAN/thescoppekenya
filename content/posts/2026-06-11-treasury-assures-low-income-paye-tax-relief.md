@@ -1,18 +1,20 @@
 ---
 title: "Treasury Assures Low Income Tax Relief Despite Finance Bill Omission"
 slug: "treasury-assures-low-income-paye-tax-relief"
-description: "Treasury CS John Mbadi confirms that tax relief for employees earning under thirty thousand shillings remains a priority despite its finance bill absence."
+description: "Treasury Assures Low Income Tax Relief Despite Finance Bill Omiss: Treasury CS John Mbadi confirms that tax relief for employees earning under thirty thousand"
+excerpt: "The Vanishing Act of the Tax Relief Pledge Treasury Cabinet Secretary John Mbadi confirmed today that the promised adjustment to the Pay As"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/xKnLXv27/3389b68d3ac8.jpg"
 category: "News"
 tags: ["treasury", "paye", "tax relief", "finance bill", "kenya budget", "john mbadi"]
+canonical: "https://zandani.co.ke/article/treasury-assures-low-income-paye-tax-relief"
 date: "2026-06-11T19:39:11Z"
 dateModified: "2026-06-11T19:39:11Z"
+focusKeyword: "Treasury Assures Low Income Tax Relief Despite Finance Bill Omiss"
 schema: "NewsArticle"
 ---
 
-## The Vanishing Act of the Tax Relief Pledge
+## The Vanishing Act of the Tax Relief Pledge Treasury Assures Low Income Tax Relief Despite Finance Bill Omiss is the central subject of the update.
 
 Treasury Cabinet Secretary John Mbadi confirmed today that the promised adjustment to the Pay As You Earn threshold remains under active review. The exclusion of this relief from the 2026/27 Finance Bill highlights a recurring disconnect between executive rhetoric and the rigid mechanics of legislative drafting.
 

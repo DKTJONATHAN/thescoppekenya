@@ -1,15 +1,20 @@
 ---
 title: "Joao Pedro 'agrees' Barcelona switch despite Chelsea 'untouchable' claim"
 slug: "joao-pedro-agrees-barcelona-switch-despite-chelsea-untouchable-claim"
+description: "Joao Pedro 'agrees' Barcelona switch despite Chelsea 'untouchable: Chelsea's 'Untouchables' and Barcelona's Calculated Leaks Chelsea's bold 'untouchable'"
+excerpt: "Chelsea's 'Untouchables' and Barcelona's Calculated Leaks Chelsea's bold 'untouchable' declaration for Joao Pedro is already being tested, w"
 author: "Sports Desk"
 image: "https://i.ibb.co/d4nHcN81/68551a236006.jpg"
 category: "Global News"
+tags: ["joao pedro agrees barcelona switch despite chelsea untouchable claim", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/joao-pedro-agrees-barcelona-switch-despite-chelsea-untouchable-claim"
 date: "2026-06-11T18:20:02Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-06-11T18:20:02Z"
+focusKeyword: "Joao Pedro 'agrees' Barcelona switch despite Chelsea 'untouchable"
 schema: "NewsArticle"
 ---
-## Chelsea's 'Untouchables' and Barcelona's Calculated Leaks
+
+## Chelsea's 'Untouchables' and Barcelona's Calculated Leaks Joao Pedro 'agrees' Barcelona switch despite Chelsea 'untouchable is the central subject of the update.
 
 Chelsea's bold 'untouchable' declaration for Joao Pedro is already being tested, with reports claiming the forward has 'agreed' a Barcelona switch. This conflicting narrative raises questions about Chelsea's true market power and Barcelona's classic transfer brinkmanship, all while new boss Xabi Alonso inherits a chaotic situation.
 

@@ -1,18 +1,20 @@
 ---
 title: "Chinese Ambassador Urges Kenyan Media to Strengthen Bilateral Ties"
 slug: "chinese-ambassador-urges-kenyan-media-to-strengthen-bilateral-ties"
-description: "Ambassador Guo Haiyan has called on Kenyan media professionals to provide objective reporting to enhance diplomatic and cultural connections."
+description: "Chinese Ambassador Urges Kenyan Media to Strengthen Bilateral Tie: Ambassador Guo Haiyan has called on Kenyan media professionals to provide objective"
+excerpt: "Beijing’s Scripted Diplomacy Ambassador Guo Haiyan is pushing for a fundamental realignment of how Kenya’s media sector interacts with Chine"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/zW9fC94J/9622d55b87e5.jpg"
 category: "Opinions"
 tags: ["kenya-china relations", "media diplomacy", "bilateral cooperation", "guo haiyan", "journalism", "foreign policy"]
+canonical: "https://zandani.co.ke/article/chinese-ambassador-urges-kenyan-media-to-strengthen-bilateral-ties"
 date: "2026-06-12T12:30:41Z"
 dateModified: "2026-06-12T12:30:41Z"
+focusKeyword: "Chinese Ambassador Urges Kenyan Media to Strengthen Bilateral Tie"
 schema: "NewsArticle"
 ---
 
-## Beijing’s Scripted Diplomacy
+## Beijing’s Scripted Diplomacy Chinese Ambassador Urges Kenyan Media to Strengthen Bilateral Tie is the central subject of the update.
 
 Ambassador Guo Haiyan is pushing for a fundamental realignment of how Kenya’s media sector interacts with Chinese interests. By urging journalists to anchor their reporting within the framework of the Global Civilization Initiative, the embassy is signaling that the era of traditional, detached reporting is being replaced by a project of active narrative management. This strategy seeks to turn newsrooms into instruments of bilateral influence, shifting the role of the Kenyan press from independent observers to architects of a state-sanctioned perspective.
 

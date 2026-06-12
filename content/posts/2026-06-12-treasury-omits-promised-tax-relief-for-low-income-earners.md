@@ -1,18 +1,20 @@
 ---
 title: "Treasury Omits Promised Tax Relief for Low Income Earners"
 slug: "treasury-omits-promised-tax-relief-for-low-income-earners"
-description: "The government has excluded a tax break for individuals earning under thirty thousand shillings from the latest budget due to fiscal concerns."
+description: "Treasury Omits Promised Tax Relief for Low Income Earners: The government has excluded a tax break for individuals earning under thirty thousand shillings from"
+excerpt: "The Ksh 40 Billion Gap in Our Paychecks Treasury Cabinet Secretary John Mbadi presented the 2026/2027 budget estimates to the National Assem"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/3YmvBn8M/77fa36d4f71e.jpg"
 category: "Gossip"
 tags: ["kenya", "john mbadi", "economy", "taxes", "paye", "budget"]
+canonical: "https://zandani.co.ke/article/treasury-omits-promised-tax-relief-for-low-income-earners"
 date: "2026-06-12T11:54:20Z"
 dateModified: "2026-06-12T11:54:20Z"
+focusKeyword: "Treasury Omits Promised Tax Relief for Low Income Earners"
 schema: "NewsArticle"
 ---
 
-## The Ksh 40 Billion Gap in Our Paychecks
+## The Ksh 40 Billion Gap in Our Paychecks Treasury Omits Promised Tax Relief for Low Income Earners is the central subject of the update.
 
 Treasury Cabinet Secretary John Mbadi presented the 2026/2027 budget estimates to the National Assembly this week with a focus on fiscal consolidation. While his presentation was marked by characteristic precision, the absence of promised income tax relief for low-income earners left many observers disappointed. Expectations for a reduction in tax burdens for those earning less than Ksh 30,000 were not met. As a result, thousands of households must continue to navigate their budgets without the anticipated increase in monthly take-home pay.
 

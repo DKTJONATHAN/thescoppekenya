@@ -1,21 +1,20 @@
 ---
-title: "Kylie Kelce's Mouse Infestation Leads to Cat Adoption Plan
+title: "'Kylie Kelce's Mouse Infestation Leads to Cat Adoption Plan"
 slug: "kylie-kelce-mouse-infestation-cat-plan"
-description: "Kylie Kelce found a severe mouse infestation in her kitchen, prompting plans for a mouser cat despite Jason Kelce's feline aversion. Read more on Za Ndani."
+description: "'Kylie Kelce's Mouse Infestation Leads to Cat Adoption Plan: Kylie Kelce found a severe mouse infestation in her kitchen, prompting plans for a mouser cat"
+excerpt: "A Domestic Uprising: How Kylie Kelce's Mouse Infestation Tested a Marriage A recent extensive mouse infestation challenged celebrity spouse"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/tM9KP29S/7c6fa6940105.jpg"
-og_title: "Kylie Kelce's Mouse Problem Leads to Cat Adoption"
-og_description: "Kylie Kelce discovered a severe mouse infestation in her kitchen. This prompted plans for a mouser cat despite Jason Kelce's known aversion to felines."
-focus_keyword: "Kylie Kelce mouse infestation"
 category: "Entertainment"
 tags: ["kylie kelce", "jason kelce", "mouse infestation", "celebrity news", "cats", "hantavirus", "rodents"]
+canonical: "https://zandani.co.ke/article/kylie-kelce-mouse-infestation-cat-plan"
 date: "2026-06-12T00:08:14Z"
 dateModified: "2026-06-12T00:08:14Z"
+focusKeyword: "'Kylie Kelce's Mouse Infestation Leads to Cat Adoption Plan"
 schema: "NewsArticle"
 ---
 
-## A Domestic Uprising: How Kylie Kelce's Mouse Infestation Tested a Marriage
+## A Domestic Uprising: How Kylie Kelce's Mouse Infestation Tested a Marriage "Kylie Kelce's Mouse Infestation Leads to Cat Adoption Plan is the central subject of the update.
 
 A recent extensive mouse infestation challenged celebrity spouse Kylie Kelce, pushing her husband Jason to reconsider a long-standing aversion. Their household reckoning spotlights the everyday compromises even high-profile couples navigate, reminding us that unexpected events can spark significant personal and relational shifts within the most well-known homes.
 

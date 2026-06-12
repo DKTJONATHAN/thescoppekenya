@@ -1,18 +1,20 @@
 ---
 title: "Treasury Omits PAYE Tax Relief for Low Income Earners"
 slug: "treasury-omits-paye-tax-relief-for-low-income-earners"
-description: "The government has excluded the planned PAYE tax exemption for workers earning below 30,000 shillings in the latest budget due to revenue concerns."
+description: "Treasury Omits PAYE Tax Relief for Low Income Earners: The government has excluded the planned PAYE tax exemption for workers earning below 30,000 shillings in"
+excerpt: "The Missing Forty Billion Shilling Promise Treasury Cabinet Secretary John Mbadi omitted the long awaited PAYE tax relief for low income wor"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/pr5JWNcB/810086f3c60a.jpg"
 category: "Gossip"
 tags: ["kenya budget", "john mbadi", "paye", "taxation", "kenyan economy", "government policy"]
+canonical: "https://zandani.co.ke/article/treasury-omits-paye-tax-relief-for-low-income-earners"
 date: "2026-06-12T10:40:05Z"
 dateModified: "2026-06-12T10:40:05Z"
+focusKeyword: "Treasury Omits PAYE Tax Relief for Low Income Earners"
 schema: "NewsArticle"
 ---
 
-## The Missing Forty Billion Shilling Promise
+## The Missing Forty Billion Shilling Promise Treasury Omits PAYE Tax Relief for Low Income Earners is the central subject of the update.
 
 Treasury Cabinet Secretary John Mbadi omitted the long-awaited PAYE tax relief for low-income workers from the 2026/2027 fiscal budget presented to Parliament on Friday, leaving over one million Kenyans earning below 30,000 shillings without the financial reprieve they were promised.
 

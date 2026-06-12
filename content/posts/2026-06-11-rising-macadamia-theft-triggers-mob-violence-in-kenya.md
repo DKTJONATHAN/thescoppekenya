@@ -1,7 +1,8 @@
 ---
 title: "Rising Macadamia Theft Triggers Mob Violence in Kenya"
 slug: "rising-macadamia-theft-triggers-mob-violence-in-kenya"
-description: "Rising market prices for macadamia nuts in central Kenya have triggered a surge in violent mob attacks against suspected thieves during harvest season."
+description: "Rising Macadamia Theft Triggers Mob Violence in Kenya: Rising market prices for macadamia nuts in central Kenya have triggered a surge in violent mob attacks"
+excerpt: "In central Kenya, local farming communities have engaged in a series of violent confrontations against suspected macadamia nut thieves throu"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/0jJfJKDG/05b343ffa272.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["macadamia-theft", "agribusiness-crime", "mob-justice", "kenyan-agriculture", "crop-theft"]
 canonical: "https://zandani.co.ke/article/rising-macadamia-theft-triggers-mob-violence-in-kenya"
 date: "2026-06-11T16:21:07Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-11T16:21:07Z"
+focusKeyword: "Rising Macadamia Theft Triggers Mob Violence in Kenya"
 schema: "NewsArticle"
 ---
-In central Kenya, local farming communities have engaged in a series of violent confrontations against suspected macadamia nut thieves throughout June. As harvest season peaks, villagers are increasingly bypassing law enforcement to deliver severe physical retribution against those caught stealing from their orchards.
+
+In central Kenya, local farming communities have engaged in a series of violent confrontations against suspected macadamia nut thieves throughout June. As harvest season peaks, villagers are increasingly bypassing law enforcement to deliver severe physical retribution against those caught stealing from their orchards. Rising Macadamia Theft Triggers Mob Violence in Kenya is the central subject of the update.
 
 ## The Rising Macadamia Theft Crisis
 

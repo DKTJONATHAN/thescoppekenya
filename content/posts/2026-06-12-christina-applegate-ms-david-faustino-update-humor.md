@@ -1,21 +1,20 @@
 ---
-title: "David Faustino Shares Update on Christina Applegate's MS Battle
+title: "'David Faustino Shares Update on Christina Applegate's MS Battle"
 slug: "christina-applegate-ms-david-faustino-update-humor"
-description: "David Faustino provides insights into Christina Applegate's ongoing Multiple Sclerosis battle, revealing her continued humor and resilience through frequent hospitalizations. Learn more."
+description: "'David Faustino Shares Update on Christina Applegate's MS Battle: David Faustino provides insights into Christina Applegate's ongoing Multiple Sclerosis"
+excerpt: "Christina Applegate's Journey with MS: The Power of Enduring Friendship Christina Applegate's public health journey continues to captivate a"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/V016xLQM/b41efe60d852.jpg"
-og_title: "Christina Applegate's MS Battle: Humor Amidst Challenges"
-og_description: "David Faustino shares Christina Applegate's resilience and humor despite her Multiple Sclerosis diagnosis and hospitalizations."
-focus_keyword: "Christina Applegate MS"
 category: "Entertainment"
 tags: ["christina applegate", "multiple sclerosis", "david faustino", "celebrity health", "ms awareness", "hollywood news"]
+canonical: "https://zandani.co.ke/article/christina-applegate-ms-david-faustino-update-humor"
 date: "2026-06-12T10:52:05Z"
 dateModified: "2026-06-12T10:52:05Z"
+focusKeyword: "'David Faustino Shares Update on Christina Applegate's MS Battle"
 schema: "NewsArticle"
 ---
 
-## Christina Applegate's Journey with MS: The Power of Enduring Friendship
+## Christina Applegate's Journey with MS: The Power of Enduring Friendship "David Faustino Shares Update on Christina Applegate's MS Battle is the central subject of the update.
 
 Christina Applegate's public health journey continues to captivate and inspire. Her former "Married... With Children" co-star, David Faustino, recently offered a hopeful glimpse into her life, highlighting her incredible resilience in the face of Multiple Sclerosis and the true power of lasting friendship.
 

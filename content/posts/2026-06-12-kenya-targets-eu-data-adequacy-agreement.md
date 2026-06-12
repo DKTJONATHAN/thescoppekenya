@@ -1,18 +1,20 @@
 ---
 title: "Kenya Targets EU Data Adequacy Agreement by September"
 slug: "kenya-targets-eu-data-adequacy-agreement"
-description: "President William Ruto eyes a September deadline to finalize a data adequacy deal with the European Union to boost digital investment and infrastructure."
+description: "Kenya Targets EU Data Adequacy Agreement by September: President William Ruto eyes a September deadline to finalize a data adequacy deal with the European"
+excerpt: "Kenya Accelerates Push for European Digital Market Integration President William Ruto has committed to finalizing a formal data adequacy agr"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/8LXQLJtr/9e35d8f11c37.jpg"
 category: "News"
 tags: ["william ruto", "digital economy", "european union", "data protection", "kenya technology", "digital partnership"]
+canonical: "https://zandani.co.ke/article/kenya-targets-eu-data-adequacy-agreement"
 date: "2026-06-12T09:03:19Z"
 dateModified: "2026-06-12T09:03:19Z"
+focusKeyword: "Kenya Targets EU Data Adequacy Agreement by September"
 schema: "NewsArticle"
 ---
 
-## Kenya Accelerates Push for European Digital Market Integration
+## Kenya Accelerates Push for European Digital Market Integration Kenya Targets EU Data Adequacy Agreement by September is the central subject of the update.
 
 President William Ruto has committed to finalizing a formal data adequacy agreement with the European Union by September 2026, a move designed to cement Kenya as the primary gateway for European technology firms operating across the African continent.
 

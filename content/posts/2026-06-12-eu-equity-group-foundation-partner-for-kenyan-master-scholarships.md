@@ -1,18 +1,20 @@
 ---
 title: "EU and Equity Group Foundation Partner for Kenyan Master Scholarships"
 slug: "eu-equity-group-foundation-partner-for-kenyan-master-scholarships"
-description: "The European Union and Equity Group Foundation have launched a partnership to provide annual master degree scholarships for 100 Kenyan students."
+description: "EU and Equity Group Foundation Partner for Kenyan Master Scholars: The European Union and Equity Group Foundation have launched a partnership to provide annual"
+excerpt: "New Talent Pipelines for Local SMEs The European Union and Equity Group Foundation have launched a partnership targeting 100 master's degree"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/9kKq9rTq/a3c5bc23a0bd.jpg"
 category: "Business"
 tags: ["equity group foundation", "european union", "kenyan education", "scholarships", "equity leaders program", "higher education"]
+canonical: "https://zandani.co.ke/article/eu-equity-group-foundation-partner-for-kenyan-master-scholarships"
 date: "2026-06-12T09:10:41Z"
 dateModified: "2026-06-12T09:10:41Z"
+focusKeyword: "EU and Equity Group Foundation Partner for Kenyan Master Scholars"
 schema: "NewsArticle"
 ---
 
-## New Talent Pipelines for Local SMEs
+## New Talent Pipelines for Local SMEs EU and Equity Group Foundation Partner for Kenyan Master Scholars is the central subject of the update.
 
 The European Union and Equity Group Foundation have launched a partnership targeting 100 master's degree placements in European universities annually, creating a fresh, high-skill recruitment pool for small and medium-sized enterprises seeking specialized technical and management expertise.
 
