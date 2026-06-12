@@ -1,18 +1,20 @@
 ---
 title: "World Cup 2026 Kicks Off Amid Rising Costs and Social Concerns"
 slug: "world-cup-2026-kicks-off-amid-rising-costs-and-social-concerns"
-description: "The World Cup 2026 begins with co-host nations in action as fans grapple with high expenses and local officials address homelessness in host cities."
+description: "World Cup 2026 Kicks Off Amid Rising Costs and Social Concerns: The World Cup 2026 begins with co-host nations in action as fans grapple with high expenses and"
+excerpt: "The Price of a Seat and the Cost of a Dream Alphonso Davies represents the height of possibility in Canadian soccer, a player whose personal"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/TM2kZG84/eb3a72bf2182.png"
 category: "Sports"
 tags: ["world cup", "football", "sports news", "global events", "kenyan sports"]
+canonical: "https://zandani.co.ke/article/world-cup-2026-kicks-off-amid-rising-costs-and-social-concerns"
 date: "2026-06-12T13:45:30Z"
 dateModified: "2026-06-12T13:45:30Z"
+focusKeyword: "World Cup 2026 Kicks Off Amid Rising Costs and Social Concerns"
 schema: "NewsArticle"
 ---
 
-## The Price of a Seat and the Cost of a Dream
+## The Price of a Seat and the Cost of a Dream World Cup 2026 Kicks Off Amid Rising Costs and Social Concerns is the central subject of the update.
 
 Alphonso Davies represents the height of possibility in Canadian soccer, a player whose personal history from a refugee camp to the top of the sport mirrors the aspirations of countless young athletes. As Canada prepares for tonight’s high-stakes match against Bosnia-Herzegovina at BMO Field, the reality of the experience presents a sharp contrast to the inclusive narrative often surrounding the 2026 World Cup. While the match represents a monumental homecoming, the cost of admission ensures that many of the very people who built the foundation for this moment will be watching from afar.
 

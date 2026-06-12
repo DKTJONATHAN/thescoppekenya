@@ -14,7 +14,7 @@ focusKeyword: "'David Faustino Shares Update on Christina Applegate's MS Battle"
 schema: "NewsArticle"
 ---
 
-## Christina Applegate's Journey with MS: The Power of Enduring Friendship "David Faustino Shares Update on Christina Applegate's MS Battle is the central subject of the update.
+## Christina Applegate's Journey with MS: The Power of Enduring Friendship "David Faustino Shares Update on Christina Applegate's MS Battle is the central subject of the update. 'David Faustino Shares Update on Christina Applegate's MS Battle is the central subject of the update.
 
 Christina Applegate's public health journey continues to captivate and inspire. Her former "Married... With Children" co-star, David Faustino, recently offered a hopeful glimpse into her life, highlighting her incredible resilience in the face of Multiple Sclerosis and the true power of lasting friendship.
 
