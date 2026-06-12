@@ -234,10 +234,10 @@
     "46c77fda03a6d26b00f9833b11909dcb",
     "1a14b355a6f86749e932aafc7ca6b44e",
     "a5e096c29f3726a25e5ea8789373db63",
-    "52e2caacaad9a53b45eb9f7f884f0d3b"
+    "52e2caacaad9a53b45eb9f7f884f0d3b",
+    "7c915321a67579688daa6ae6c484850d"
   ],
   "style_history": [
-    "Power Accountability",
     "Context Backgrounder",
     "Reaction & Voices",
     "Hard News Lead",
@@ -266,10 +266,10 @@
     "Hard News Lead",
     "Power Accountability",
     "Explainer",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "policy_gap|NTSA|Power Accountability",
     "myth_vs_fact|KRA|Explainer",
     "policy_gap|Kenya transport|Context Backgrounder",
     "accountability|Kenya|Hard News Lead",
@@ -348,6 +348,7 @@
     "timeline_shift|KeNHA|Hard News Lead",
     "money_follow|JKIA|Power Accountability",
     "myth_vs_fact|Kenya|Explainer",
-    "myth_vs_fact|Treasury|Context Backgrounder"
+    "myth_vs_fact|Treasury|Context Backgrounder",
+    "timeline_shift|data adequacy|Hard News Lead"
   ]
 }
