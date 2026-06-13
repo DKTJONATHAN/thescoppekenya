@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- ["Donald Trump Name Removed From Kennedy Center Following Judge Order](https://zandani.co.ke/article/donald-trump-kennedy-center-name-removal-judge-ruling) - Following a judge's ruling, Donald Trump's name is being removed from the Kennedy Center, halting restoration plans. Livestreams capture the process. Follow updates.
 - [Government sets July start date for multibillion JKIA modernization](https://zandani.co.ke/article/ruto-confirms-july-start-date-for-jkia-modernization-project) - President William Ruto confirms that construction of the modernized JKIA project will begin in July with a 375 billion shilling investment from China.
 - [Shearer suggests Liverpool could sign Bournemouth players](https://zandani.co.ke/article/shearer-suggests-liverpool-could-sign-bournemouth-players) - Iraola's Anfield Gamble: Predictable Targets Emerge Alan Shearer backs Liverpool's "gamble" on Andoni Iraola, inevitably suggesting two Bournemouth players - Junior Kroupi and Alex Scott - could follow their former boss to Anfield. While Shearer praises...
 - [Abel Mutua Rules Out Remarriage While Judy Nyawira Confirms She Would Move On](https://zandani.co.ke/article/abel-mutua-rules-out-remarriage-while-judy-nyawira-confirms-she-woul) - Abel Mutua and Judy Nyawira spark public debate after revealing conflicting views on the possibility of remarriage during a candid podcast discussion.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [World Cup 2026 Kicks Off Amid Rising Costs and Social Concerns](https://zandani.co.ke/article/world-cup-2026-kicks-off-amid-rising-costs-and-social-concerns) - World Cup 2026 Kicks Off Amid Rising Costs and Social Concerns: The World Cup 2026 begins with co-host nations in action as fans grapple with high expenses and
 - [Chinese Ambassador Urges Kenyan Media to Strengthen Bilateral Ties](https://zandani.co.ke/article/chinese-ambassador-urges-kenyan-media-to-strengthen-bilateral-ties) - Chinese Ambassador Urges Kenyan Media to Strengthen Bilateral Tie: Ambassador Guo Haiyan has called on Kenyan media professionals to provide objective
 - [Treasury Omits Promised Tax Relief for Low Income Earners](https://zandani.co.ke/article/treasury-omits-promised-tax-relief-for-low-income-earners) - Treasury Omits Promised Tax Relief for Low Income Earners: The government has excluded a tax break for individuals earning under thirty thousand shillings from
-- ['David Faustino Shares Update on Christina Applegate's MS Battle](https://zandani.co.ke/article/christina-applegate-ms-david-faustino-update-humor) - 'David Faustino Shares Update on Christina Applegate's MS Battle: David Faustino provides insights into Christina Applegate's ongoing Multiple Sclerosis
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
