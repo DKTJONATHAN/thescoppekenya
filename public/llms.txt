@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Kenya Met Forecasts Five Day Cold Spell and Rainfall Across Regions](https://zandani.co.ke/article/kenya-met-forecast-cold-spell-rainfall) - The Kenya Meteorological Service warns of a five day cold spell starting June 13 with temperatures dropping to 4C in Central Kenya and heavy rainfall.
 - [Daniel Kretinsky to become West Ham United majority shareholder](https://zandani.co.ke/article/daniel-kretinsky-to-become-west-ham-united-majority-shareholder) - Daniel Kretinsky is set to become the largest West Ham shareholder as co-owner David Sullivan faces serious public allegations of misconduct.
 - [Why Kenyan School Unrest Reflects Broader Societal Failure](https://zandani.co.ke/article/kenyan-school-unrest-societal-failure-analysis) - Rising school arson cases in Kenya signal deep societal instability. Experts link the trend to declining moral guidance and family breakdown.
 - [Football Fans Struggle to Balance World Cup Viewing with Work](https://zandani.co.ke/article/football-fans-struggle-balance-world-cup-viewing-work) - Working professionals are reporting decreased productivity and sleep deprivation as global match schedules conflict with office hours.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Government sets July start date for multibillion JKIA modernization](https://zandani.co.ke/article/ruto-confirms-july-start-date-for-jkia-modernization-project) - Government sets July start date for multibillion JKIA modernizati: President William Ruto confirms that construction of the modernized JKIA project will begin
 - [Shearer suggests Liverpool could sign Bournemouth players](https://zandani.co.ke/article/shearer-suggests-liverpool-could-sign-bournemouth-players) - Shearer suggests Liverpool could sign Bournemouth players: Iraola's Anfield Gamble: Predictable Targets Emerge Alan Shearer backs Liverpool's 'gamble' on
 - [Abel Mutua Rules Out Remarriage While Judy Nyawira Confirms She Would Move On](https://zandani.co.ke/article/abel-mutua-rules-out-remarriage-while-judy-nyawira-confirms-she-woul) - Abel Mutua Rules Out Remarriage While Judy Nyawira Confirms She W: Abel Mutua and Judy Nyawira spark public debate after revealing conflicting views on the
-- [Statistical models clash over 2026 World Cup winner predictions](https://zandani.co.ke/article/statistical-models-clash-over-2026-world-cup-winner-predictions) - Statistical models clash over 2026 World Cup winner predictions: Experts and supercomputers are using advanced analytics to forecast the next football champion
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml

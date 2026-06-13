@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sat, 13 Jun 2026 12:17:06 GMT</pubDate>
+    <pubDate>Sat, 13 Jun 2026 13:04:24 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Kenya Met Forecasts Five Day Cold Spell and Rainfall Across Regions]]></title>
+      <link>https://zandani.co.ke/article/kenya-met-forecast-cold-spell-rainfall</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-met-forecast-cold-spell-rainfall</guid>
+      <pubDate>Sat, 13 Jun 2026 12:53:27 GMT</pubDate>
+      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
+      <description><![CDATA[The Kenya Meteorological Service warns of a five day cold spell starting June 13 with temperatures dropping to 4C in Central Kenya and heavy rainfall.]]></description>
+      <enclosure url="https://i.ibb.co/jvXyjgmc/dbae264c5333.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/jvXyjgmc/dbae264c5333.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/jvXyjgmc/dbae264c5333.jpg" alt="Kenya Met Forecasts Five Day Cold Spell and Rainfall Across Regions" /><p>The Kenya Meteorological Service warns of a five day cold spell starting June 13 with temperatures dropping to 4C in Central Kenya and heavy rainfall.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Daniel Kretinsky to become West Ham United majority shareholder]]></title>
       <link>https://zandani.co.ke/article/daniel-kretinsky-to-become-west-ham-united-majority-shareholder</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/PsnkWN0G/98f0016fefbd.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/PsnkWN0G/98f0016fefbd.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/PsnkWN0G/98f0016fefbd.jpg" alt="NTSA Faces Stakeholder Backlash Over New Digital Traffic Fine System" /><p>NTSA Faces Stakeholder Backlash Over New Digital Traffic Fine Sys: The NTSA has introduced 37 instant traffic fines via eCitizen, but stakeholders warn of</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Kenya Clears All Ebola Alerts Amidst Ongoing Border Surveillance]]></title>
-      <link>https://zandani.co.ke/article/kenya-clears-all-ebola-alerts-amidst-ongoing-border-surveillance</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-clears-all-ebola-alerts-amidst-ongoing-border-surveillance</guid>
-      <pubDate>Thu, 04 Jun 2026 14:12:01 GMT</pubDate>
-      <dc:creator><![CDATA[Elizabeth Muthoni]]></dc:creator>
-      <description><![CDATA[Kenya Clears All Ebola Alerts Amidst Ongoing Border Surveillance: Kenya has reported zero positive Ebola cases across nine counties following nationwide]]></description>
-      <enclosure url="https://i.ibb.co/dsjGG4kt/c178e47eeda7.webp" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/dsjGG4kt/c178e47eeda7.webp" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/dsjGG4kt/c178e47eeda7.webp" alt="Kenya Clears All Ebola Alerts Amidst Ongoing Border Surveillance" /><p>Kenya Clears All Ebola Alerts Amidst Ongoing Border Surveillance: Kenya has reported zero positive Ebola cases across nine counties following nationwide</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
