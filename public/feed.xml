@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sat, 13 Jun 2026 14:01:26 GMT</pubDate>
+    <pubDate>Sat, 13 Jun 2026 14:47:50 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Kenyan men express frustration over expectations of financial provision]]></title>
+      <link>https://zandani.co.ke/article/kenyan-men-express-frustration-over-expectations-of-financial-provis</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/kenyan-men-express-frustration-over-expectations-of-financial-provis</guid>
+      <pubDate>Sat, 13 Jun 2026 14:25:22 GMT</pubDate>
+      <dc:creator><![CDATA[Zed Mogaka]]></dc:creator>
+      <description><![CDATA[Kenyan men are debating the social pressure of financial provision in modern relationships, challenging the expectation that their value is purely economic.]]></description>
+      
+      
+      <content:encoded><![CDATA[<p>Kenyan men are debating the social pressure of financial provision in modern relationships, challenging the expectation that their value is purely economic.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Kenya Met Forecasts Five Day Cold Spell and Rainfall Across Regions]]></title>
       <link>https://zandani.co.ke/article/kenya-met-forecast-cold-spell-rainfall</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/TD04LBSb/d662ab3d9895.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/TD04LBSb/d662ab3d9895.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/TD04LBSb/d662ab3d9895.jpg" alt="Nairobi City Marathon Road Closures and Traffic Advisory" /><p>Nairobi City Marathon Road Closures and Traffic Advisory: Nairobi faces major traffic disruptions this Sunday as 17,000 runners participate in the city</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[NTSA Faces Stakeholder Backlash Over New Digital Traffic Fine System]]></title>
-      <link>https://zandani.co.ke/article/ntsa-faces-stakeholder-backlash-over-new-digital-traffic-fine-system</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/ntsa-faces-stakeholder-backlash-over-new-digital-traffic-fine-system</guid>
-      <pubDate>Thu, 04 Jun 2026 19:25:38 GMT</pubDate>
-      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
-      <description><![CDATA[NTSA Faces Stakeholder Backlash Over New Digital Traffic Fine Sys: The NTSA has introduced 37 instant traffic fines via eCitizen, but stakeholders warn of]]></description>
-      <enclosure url="https://i.ibb.co/PsnkWN0G/98f0016fefbd.jpg" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/PsnkWN0G/98f0016fefbd.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/PsnkWN0G/98f0016fefbd.jpg" alt="NTSA Faces Stakeholder Backlash Over New Digital Traffic Fine System" /><p>NTSA Faces Stakeholder Backlash Over New Digital Traffic Fine Sys: The NTSA has introduced 37 instant traffic fines via eCitizen, but stakeholders warn of</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
