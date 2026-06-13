@@ -254,10 +254,10 @@
     "37c71de3ece596370cce1c6cb3bba868",
     "72c0bf4c8a92b012e23810cb71e40c9c",
     "ef609ecb0f0b5dbf235800d0201c73ee",
-    "f67e4311a7824d3730921f3559f2ad65"
+    "f67e4311a7824d3730921f3559f2ad65",
+    "272bb1b643e0aac9b80a6875c8ff6a33"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Hard News Lead",
     "Trend Take",
     "Profile Beat",
@@ -286,10 +286,10 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Profile Beat",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
-    "accountability|Survivor|Profile Beat",
     "money_follow|The Late Show|Hard News Lead",
     "impact_on_citizens|The Beatles|Reaction Round-up",
     "impact_on_citizens|Kathy Griffin|Trend Take",
@@ -368,6 +368,7 @@
     "story_progression|Tequila Sunrise|Hard News Lead",
     "story_progression|Horror film|Reaction Round-up",
     "story_progression|Mice|Profile Beat",
-    "story_progression|Multiple Sclerosis|Explainer"
+    "story_progression|Multiple Sclerosis|Explainer",
+    "story_progression|Donald Trump|Trend Take"
   ]
 }
