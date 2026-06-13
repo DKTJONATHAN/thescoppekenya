@@ -238,10 +238,10 @@
     "7c915321a67579688daa6ae6c484850d",
     "b6f93919172ed8807ec855f0df762303",
     "a770aebeec57be5286ccb8c6a206e65c",
-    "c99240fa970724f649f42edb8449de29"
+    "c99240fa970724f649f42edb8449de29",
+    "bfaada2124a5ef93e2ccf4adf3bb14e3"
   ],
   "style_history": [
-    "Power Accountability",
     "Explainer",
     "Reaction & Voices",
     "Hard News Lead",
@@ -270,10 +270,10 @@
     "Hard News Lead",
     "Power Accountability",
     "Explainer",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "winners_losers|Kenya Bankers Association|Reaction & Voices",
     "winners_losers|Kenya|Explainer",
     "accountability|NTSA|Power Accountability",
     "winners_losers|Public Service Commission|Hard News Lead",
@@ -352,6 +352,7 @@
     "timeline_shift|data adequacy|Hard News Lead",
     "money_follow|NTSA|Power Accountability",
     "winners_losers|JKIA|Explainer",
-    "story_progression|Kenyan politics|Reaction & Voices"
+    "story_progression|Kenyan politics|Reaction & Voices",
+    "winners_losers|Kenya Met|Hard News Lead"
   ]
 }
