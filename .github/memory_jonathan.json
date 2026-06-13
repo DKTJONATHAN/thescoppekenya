@@ -149,10 +149,10 @@
     "48d266fd5aae5eecfc1f4db177749feb",
     "21bb29111409d5c673a594dc1c421efb",
     "6a631cafc92d680d96d7146033b88ade",
-    "a56fe63f0684a0ec0ef88f8d0171d398"
+    "a56fe63f0684a0ec0ef88f8d0171d398",
+    "e91e11e0f63493b9e8266a46ce4388fc"
   ],
   "style_history": [
-    "Historical Lens",
     "Counterpoint",
     "Letter Form",
     "Personal Reflection",
@@ -181,10 +181,10 @@
     "Counterpoint",
     "Historical Lens",
     "Letter Form",
-    "Sharp Column"
+    "Sharp Column",
+    "Personal Reflection"
   ],
   "angle_history": [
-    "winners_losers|infrastructure|Counterpoint",
     "next_48_hours|El Ni\u00f1o|Sharp Column",
     "timeline_shift|digital sovereignty|Historical Lens",
     "accountability|National Liberal Party|Letter Form",
@@ -263,6 +263,7 @@
     "myth_vs_fact|Kenya Power|Counterpoint",
     "timeline_shift|health financing|Historical Lens",
     "accountability|education|Letter Form",
-    "story_progression|China-Kenya relations|Sharp Column"
+    "story_progression|China-Kenya relations|Sharp Column",
+    "policy_gap|school unrest|Personal Reflection"
   ]
 }
