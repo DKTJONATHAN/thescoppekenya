@@ -1,21 +1,20 @@
 ---
-title: "Donald Trump Name Removed From Kennedy Center Following Judge Order
+title: "'Donald Trump Name Removed From Kennedy Center Following Judge Order"
 slug: "donald-trump-kennedy-center-name-removal-judge-ruling"
-description: "Following a judge's ruling, Donald Trump's name is being removed from the Kennedy Center, halting restoration plans. Livestreams capture the process. Follow updates."
+description: "'Donald Trump Name Removed From Kennedy Center Following Judge Or: Following a judge's ruling, Donald Trump's name is being removed from the Kennedy Center,"
+excerpt: "Public Memory's New Walls: The Shifting Meaning of the Donald Trump Kennedy Center Name Removal The highly visible dislodging of a prominent"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/Y4hZRSyF/2acc6c7ecdb2.jpg"
-og_title: "Judge Orders Donald Trump's Name Removed From Kennedy Center"
-og_description: "A judge has ordered Donald Trump's name removed from the Kennedy Center. The process is underway and being livestreamed."
-focus_keyword: "Donald Trump Kennedy Center name removal"
 category: "Entertainment"
 tags: ["donald trump", "kennedy center", "name removal", "judge ruling", "cultural institutions", "livestream", "us politics"]
+canonical: "https://zandani.co.ke/article/donald-trump-kennedy-center-name-removal-judge-ruling"
 date: "2026-06-13T00:04:58Z"
 dateModified: "2026-06-13T00:04:58Z"
+focusKeyword: "'Donald Trump Name Removed From Kennedy Center Following Judge Or"
 schema: "NewsArticle"
 ---
 
-## Public Memory's New Walls: The Shifting Meaning of the Donald Trump Kennedy Center Name Removal
+## Public Memory's New Walls: The Shifting Meaning of the Donald Trump Kennedy Center Name Removal "Donald Trump Name Removed From Kennedy Center Following Judge Or is the central subject of the update.
 
 The highly visible dislodging of a prominent name from a national monument, now streamable globally, serves as a potent barometer for society's evolving benchmarks of public commemoration. This ongoing undertaking at the Kennedy Center, initiated by judicial decree, marks a pivotal juncture in how cultural institutions negotiate political influence and contested legacies.
 

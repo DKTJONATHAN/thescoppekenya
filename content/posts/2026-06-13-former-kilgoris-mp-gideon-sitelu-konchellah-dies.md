@@ -1,18 +1,20 @@
 ---
 title: "Former Kilgoris MP Gideon Sitelu Konchellah Dies at Age 67"
 slug: "former-kilgoris-mp-gideon-sitelu-konchellah-dies"
-description: "Long serving Kilgoris MP and former cabinet minister Gideon Sitelu Konchellah has passed away following a cardiac arrest, ending a notable political era."
+description: "Former Kilgoris MP Gideon Sitelu Konchellah Dies at Age 67: Long serving Kilgoris MP and former cabinet minister Gideon Sitelu Konchellah has passed away"
+excerpt: "A Quiet Sunset Over Kilgoris The air in Narok has turned heavy today, with residents debating whether a political era has truly closed or if"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/NdMDgTVm/c5f157c95a2c.jpg"
 category: "News"
 tags: ["kenyan politics", "gideon konchellah", "kilgoris constituency", "obituary", "national assembly", "narok county"]
+canonical: "https://zandani.co.ke/article/former-kilgoris-mp-gideon-sitelu-konchellah-dies"
 date: "2026-06-13T08:25:32Z"
 dateModified: "2026-06-13T08:25:32Z"
+focusKeyword: "Former Kilgoris MP Gideon Sitelu Konchellah Dies at Age 67"
 schema: "NewsArticle"
 ---
 
-## A Quiet Sunset Over Kilgoris
+## A Quiet Sunset Over Kilgoris Former Kilgoris MP Gideon Sitelu Konchellah Dies at Age 67 is the central subject of the update.
 
 The air in Narok has turned heavy today, with residents debating whether a political era has truly closed or if the foundation laid by Gideon Sitelu Konchellah will outlive the man himself. His passing has triggered a visceral reaction, with many locals expressing that their constituency has lost its most consistent, if often polarizing, bridge between traditional authority and the modern ballot box.
 

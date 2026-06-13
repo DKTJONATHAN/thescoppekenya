@@ -1,18 +1,20 @@
 ---
 title: "Government sets July start date for multibillion JKIA modernization"
 slug: "ruto-confirms-july-start-date-for-jkia-modernization-project"
-description: "President William Ruto confirms that construction of the modernized JKIA project will begin in July with a 375 billion shilling investment from China."
+description: "Government sets July start date for multibillion JKIA modernizati: President William Ruto confirms that construction of the modernized JKIA project will begin"
+excerpt: "A Shifting Runway for Kenya’s Aviation Future Construction at Jomo Kenyatta International Airport is scheduled to commence this July, markin"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/99LQbgQ9/2827aa91e214.jpg"
 category: "News"
 tags: ["jkia", "aviation", "william ruto", "infrastructure", "kenya news", "transport"]
+canonical: "https://zandani.co.ke/article/ruto-confirms-july-start-date-for-jkia-modernization-project"
 date: "2026-06-12T19:10:20Z"
 dateModified: "2026-06-12T19:10:20Z"
+focusKeyword: "Government sets July start date for multibillion JKIA modernizati"
 schema: "NewsArticle"
 ---
 
-## A Shifting Runway for Kenya’s Aviation Future
+## A Shifting Runway for Kenya’s Aviation Future Government sets July start date for multibillion JKIA modernizati is the central subject of the update.
 
 Construction at Jomo Kenyatta International Airport is scheduled to commence this July, marking the start of a 375.4 billion shilling overhaul aimed at positioning Nairobi as the undisputed aviation hub of East Africa over the next two decades.
 

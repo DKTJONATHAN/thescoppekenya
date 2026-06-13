@@ -1,18 +1,20 @@
 ---
 title: "NTSA revokes Nicco Movers 1 Sacco licence over safety failures"
 slug: "ntsa-revokes-nicco-movers-1-sacco-licence"
-description: "The National Transport and Safety Authority has permanently revoked the licence of Nicco Movers 1 Sacco following a fatal accident and severe safety breaches."
+description: "NTSA revokes Nicco Movers 1 Sacco licence over safety failures: The National Transport and Safety Authority has permanently revoked the licence of Nicco Movers"
+excerpt: "The Nicco Movers Paper Trail: Why Closing the Sacco Won't Fix the Rogue Matatu Culture The National Transport and Safety Authority finally r"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/spC0rQrg/2bdd09681b11.jpg"
 category: "News"
 tags: ["ntsa", "nicco movers", "kenya transport", "matatu sector", "road safety", "nairobi"]
+canonical: "https://zandani.co.ke/article/ntsa-revokes-nicco-movers-1-sacco-licence"
 date: "2026-06-12T14:12:57Z"
 dateModified: "2026-06-12T14:12:57Z"
+focusKeyword: "NTSA revokes Nicco Movers 1 Sacco licence over safety failures"
 schema: "NewsArticle"
 ---
 
-## The Nicco Movers Paper Trail: Why Closing the Sacco Won't Fix the Rogue Matatu Culture
+## The Nicco Movers Paper Trail: Why Closing the Sacco Won't Fix the Rogue Matatu Culture NTSA revokes Nicco Movers 1 Sacco licence over safety failures is the central subject of the update.
 
 The National Transport and Safety Authority finally revoked the operating licence of Nicco Movers 1 Sacco today, following the horrific June 4 death of 19-year-old Eugene Mutuku. While authorities celebrate this move as a crackdown, the underlying economic engine that necessitates such lethal negligence remains completely untouched.
 
