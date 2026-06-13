@@ -287,10 +287,10 @@
     "9b5940ca52425c3e6727c049998ddb76",
     "5418cc0a0b685dc0a7580bcf999142de",
     "8ce6db5d2996679c21509a32e13de0da",
-    "503ef4fc53490b102bb21ef9d093df1c"
+    "503ef4fc53490b102bb21ef9d093df1c",
+    "a202d8827f5f9817eac21f93ce888618"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Hard News Lead",
     "Trend Take",
@@ -319,10 +319,10 @@
     "Trend Take",
     "Receipts Piece",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "impact_on_citizens|fuel prices|Hard News Lead",
     "impact_on_citizens|Kenya|Reaction Round-up",
     "impact_on_citizens|Kenya|Trend Take",
     "money_follow|Kenya|Profile Beat",
@@ -401,6 +401,7 @@
     "story_progression|Timmy Tdat|Trend Take",
     "money_follow|boxing|Receipts Piece",
     "policy_gap|Kenya|Hard News Lead",
-    "accountability|Kenya|Profile Beat"
+    "accountability|Kenya|Profile Beat",
+    "timeline_shift|FIFA World Cup|Reaction Round-up"
   ]
 }
