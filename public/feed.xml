@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sat, 13 Jun 2026 09:17:52 GMT</pubDate>
+    <pubDate>Sat, 13 Jun 2026 10:53:09 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Football Fans Struggle to Balance World Cup Viewing with Work]]></title>
+      <link>https://zandani.co.ke/article/football-fans-struggle-balance-world-cup-viewing-work</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/football-fans-struggle-balance-world-cup-viewing-work</guid>
+      <pubDate>Sat, 13 Jun 2026 10:39:57 GMT</pubDate>
+      <dc:creator><![CDATA[Martin Kihara]]></dc:creator>
+      <description><![CDATA[Working professionals are reporting decreased productivity and sleep deprivation as global match schedules conflict with office hours.]]></description>
+      <enclosure url="https://i.ibb.co/BVjjq6qS/5ddecdb7793c.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/BVjjq6qS/5ddecdb7793c.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/BVjjq6qS/5ddecdb7793c.jpg" alt="Football Fans Struggle to Balance World Cup Viewing with Work" /><p>Working professionals are reporting decreased productivity and sleep deprivation as global match schedules conflict with office hours.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Investors Urged to Diversify Beyond Kenya Sovereign Debt Assets]]></title>
       <link>https://zandani.co.ke/article/investors-urged-to-diversify-beyond-kenya-sovereign-debt-assets</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/FbzWTMsc/799a7e86a89b.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/FbzWTMsc/799a7e86a89b.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/FbzWTMsc/799a7e86a89b.jpg" alt="Manchester City threatens legal action against Real Madrid candidate" /><p>Manchester City threatens legal action against Real Madrid candid: Manchester City is considering legal action after a Real Madrid presidential candidate used</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Fatal Matatu Accident Renews Concerns Over Reckless Driving in Nairobi]]></title>
-      <link>https://zandani.co.ke/article/fatal-matatu-accident-renews-concerns-over-reckless-driving-in-nairo</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/fatal-matatu-accident-renews-concerns-over-reckless-driving-in-nairo</guid>
-      <pubDate>Thu, 04 Jun 2026 12:53:43 GMT</pubDate>
-      <dc:creator><![CDATA[Zed Mogaka]]></dc:creator>
-      <description><![CDATA[Fatal Matatu Accident Renews Concerns Over Reckless Driving in Na: A fatal matatu crash on Nairobi's outskirts has claimed multiple lives, renewing urgent]]></description>
-      <enclosure url="/images/placeholder.jpg" type="image/jpeg" />
-      <media:content url="/images/placeholder.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="/images/placeholder.jpg" alt="Fatal Matatu Accident Renews Concerns Over Reckless Driving in Nairobi" /><p>Fatal Matatu Accident Renews Concerns Over Reckless Driving in Na: A fatal matatu crash on Nairobi's outskirts has claimed multiple lives, renewing urgent</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
