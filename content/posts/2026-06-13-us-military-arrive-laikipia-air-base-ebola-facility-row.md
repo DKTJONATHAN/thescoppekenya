@@ -1,18 +1,20 @@
 ---
 title: "US military arrive at Laikipia Air Base amid Ebola facility row"
 slug: "us-military-arrive-laikipia-air-base-ebola-facility-row"
-description: "US military personnel have arrived at Laikipia Air Base to support a planned Ebola facility despite a High Court injunction halting all construction."
+description: "US military arrive at Laikipia Air Base amid Ebola facility row: US military personnel have arrived at Laikipia Air Base to support a planned Ebola facility"
+excerpt: "Foreign Boots on Local Soil U.S. military specialists have touched down at Laikipia Air Base, ignoring the cooling embers of a High Court in"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/998C663P/d6c06bebd6ed.jpg"
 category: "News"
 tags: ["laikipia air base", "ebola", "aden duale", "kenya us relations", "katiba institute", "high court"]
+canonical: "https://zandani.co.ke/article/us-military-arrive-laikipia-air-base-ebola-facility-row"
 date: "2026-06-13T18:13:25Z"
 dateModified: "2026-06-13T18:13:25Z"
+focusKeyword: "US military arrive at Laikipia Air Base amid Ebola facility row"
 schema: "NewsArticle"
 ---
 
-## Foreign Boots on Local Soil
+## Foreign Boots on Local Soil US military arrive at Laikipia Air Base amid Ebola facility row is the central subject of the update.
 
 U.S. military specialists have touched down at Laikipia Air Base, ignoring the cooling embers of a High Court injunction that shuttered their Ksh 1.7 billion project. While the bureaucracy plays legal hide and seek, the arrival of foreign combat-trained personnel to oversee a 50-bed isolation ward signals a dangerous shift in how the Kenyan executive manages public health by outsourcing sovereign infrastructure to overseas military contractors.
 

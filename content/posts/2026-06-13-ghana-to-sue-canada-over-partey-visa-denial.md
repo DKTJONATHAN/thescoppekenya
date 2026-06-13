@@ -1,15 +1,20 @@
 ---
 title: "Ghana to sue Canada over Partey visa denial"
 slug: "ghana-to-sue-canada-over-partey-visa-denial"
+description: "Ghana to sue Canada over Partey visa denial: World Cup Hypocrisy: Canada's Partey Snub and the Illusion of Fairness Ghana is rightly outraged, threatening"
+excerpt: "World Cup Hypocrisy: Canada's Partey Snub and the Illusion of Fairness Ghana is rightly outraged, threatening legal action against Canada fo"
 author: "Sports Desk"
 image: "https://i.ibb.co/p6ybZ07T/a470faa41561.jpg"
 category: "Global News"
+tags: ["ghana to sue canada over partey visa denial", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/ghana-to-sue-canada-over-partey-visa-denial"
 date: "2026-06-13T16:18:44Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-06-13T16:18:44Z"
+focusKeyword: "Ghana to sue Canada over Partey visa denial"
 schema: "NewsArticle"
 ---
-## World Cup Hypocrisy: Canada's Partey Snub and the Illusion of Fairness
+
+## World Cup Hypocrisy: Canada's Partey Snub and the Illusion of Fairness Ghana to sue Canada over Partey visa denial is the central subject of the update.
 
 Ghana is rightly outraged, threatening legal action against Canada for denying Thomas Partey a World Cup visa based on unproven criminal allegations. This heavy-handed decision by a tournament co-host exposes the hollow promise of international sport, where national "sovereignty" conveniently trumps fairness and the presumption of innocence. It's a predictable display of political muscle over sporting spirit.
 

@@ -1,19 +1,21 @@
 ---
 title: "Kenyan men express frustration over expectations of financial provision"
 slug: "kenyan-men-express-frustration-over-expectations-of-financial-provis"
-description: "Kenyan men are debating the social pressure of financial provision in modern relationships, challenging the expectation that their value is purely economic."
+description: "Kenyan men express frustration over expectations of financial pro: Kenyan men are debating the social pressure of financial provision in modern relationships,"
+excerpt: "Kenyan men are currently engaged in a widespread debate across the nation regarding the heavy burden of financial provision in modern relati"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: ""
+image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["kenyan-dating-culture", "gender-roles-kenya", "financial-expectations", "modern-kenyan-relationships", "mens-perspectives"]
 canonical: "https://zandani.co.ke/article/kenyan-men-express-frustration-over-expectations-of-financial-provis"
 date: "2026-06-13T14:25:22Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-13T14:25:22Z"
+focusKeyword: "Kenyan men express frustration over expectations of financial pro"
 schema: "NewsArticle"
 ---
-Kenyan men are currently engaged in a widespread debate across the nation regarding the heavy burden of financial provision in modern relationships. As of June 13, 2026, many are challenging the traditional expectation that their personal value depends entirely on their economic output.
+
+Kenyan men are currently engaged in a widespread debate across the nation regarding the heavy burden of financial provision in modern relationships. As of June 13, 2026, many are challenging the traditional expectation that their personal value depends entirely on their economic output. Kenyan men express frustration over expectations of financial pro is the central subject of the update.
 
 ## The Disparity in Relationship Expectations
 

@@ -1,18 +1,20 @@
 ---
 title: "Kenya Met Forecasts Five Day Cold Spell and Rainfall Across Regions"
 slug: "kenya-met-forecast-cold-spell-rainfall"
-description: "The Kenya Meteorological Service warns of a five day cold spell starting June 13 with temperatures dropping to 4C in Central Kenya and heavy rainfall."
+description: "Kenya Met Forecasts Five Day Cold Spell and Rainfall Across Regio: The Kenya Meteorological Service warns of a five day cold spell starting June 13 with"
+excerpt: "Kenya Faces A Sharp Climate Divide The Kenya Meteorological Service has issued an alert for a five day weather shift beginning today, June 1"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/jvXyjgmc/dbae264c5333.jpg"
 category: "News"
 tags: ["kenya weather", "za ndani", "kenya met", "cold spell", "rainfall", "weather forecast"]
+canonical: "https://zandani.co.ke/article/kenya-met-forecast-cold-spell-rainfall"
 date: "2026-06-13T12:53:27Z"
 dateModified: "2026-06-13T12:53:27Z"
+focusKeyword: "Kenya Met Forecasts Five Day Cold Spell and Rainfall Across Regio"
 schema: "NewsArticle"
 ---
 
-## Kenya Faces A Sharp Climate Divide
+## Kenya Faces A Sharp Climate Divide Kenya Met Forecasts Five Day Cold Spell and Rainfall Across Regio is the central subject of the update.
 
 The Kenya Meteorological Service has issued an alert for a five-day weather shift beginning today, June 13, that will see central highlands endure bone-chilling 4-degree temperatures while northern corridors grapple with searing 38-degree heat.
 

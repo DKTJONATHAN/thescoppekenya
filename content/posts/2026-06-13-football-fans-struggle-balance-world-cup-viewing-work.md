@@ -1,18 +1,20 @@
 ---
 title: "Football Fans Struggle to Balance World Cup Viewing with Work"
 slug: "football-fans-struggle-balance-world-cup-viewing-work"
-description: "Working professionals are reporting decreased productivity and sleep deprivation as global match schedules conflict with office hours."
+description: "Football Fans Struggle to Balance World Cup Viewing with Work: Working professionals are reporting decreased productivity and sleep deprivation as global match"
+excerpt: "The Stadium to Cubicle Grind Nairobi’s professional landscape has morphed into an unintentional experiment in flex time this June. Across th"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/BVjjq6qS/5ddecdb7793c.jpg"
 category: "Gossip"
 tags: ["fifa world cup", "workplace productivity", "football fans", "kenya sports", "work-life balance"]
+canonical: "https://zandani.co.ke/article/football-fans-struggle-balance-world-cup-viewing-work"
 date: "2026-06-13T10:39:57Z"
 dateModified: "2026-06-13T10:39:57Z"
+focusKeyword: "Football Fans Struggle to Balance World Cup Viewing with Work"
 schema: "NewsArticle"
 ---
 
-## The Stadium to Cubicle Grind
+## The Stadium to Cubicle Grind Football Fans Struggle to Balance World Cup Viewing with Work is the central subject of the update.
 
 Nairobi’s professional landscape has morphed into an unintentional experiment in flex-time this June. Across the capital, the traditional work day has collided with the 2026 FIFA World Cup schedule, leaving offices filled with employees nursing lukewarm thermoses and fighting the inevitable pull of mid-morning lethargy. As matches play out in distant North American time zones, the 8-to-5 grind is being stretched to its absolute limit, turning every cubicle into a testament to collective caffeine consumption.
 

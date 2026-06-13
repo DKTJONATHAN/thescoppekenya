@@ -14,7 +14,7 @@ focusKeyword: "'Donald Trump Name Removed From Kennedy Center Following Judge Or
 schema: "NewsArticle"
 ---
 
-## Public Memory's New Walls: The Shifting Meaning of the Donald Trump Kennedy Center Name Removal "Donald Trump Name Removed From Kennedy Center Following Judge Or is the central subject of the update.
+## Public Memory's New Walls: The Shifting Meaning of the Donald Trump Kennedy Center Name Removal "Donald Trump Name Removed From Kennedy Center Following Judge Or is the central subject of the update. 'Donald Trump Name Removed From Kennedy Center Following Judge Or is the central subject of the update.
 
 The highly visible dislodging of a prominent name from a national monument, now streamable globally, serves as a potent barometer for society's evolving benchmarks of public commemoration. This ongoing undertaking at the Kennedy Center, initiated by judicial decree, marks a pivotal juncture in how cultural institutions negotiate political influence and contested legacies.
 

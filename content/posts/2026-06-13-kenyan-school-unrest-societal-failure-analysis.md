@@ -1,18 +1,20 @@
 ---
 title: "Why Kenyan School Unrest Reflects Broader Societal Failure"
 slug: "kenyan-school-unrest-societal-failure-analysis"
-description: "Rising school arson cases in Kenya signal deep societal instability. Experts link the trend to declining moral guidance and family breakdown."
+description: "Why Kenyan School Unrest Reflects Broader Societal Failure: Rising school arson cases in Kenya signal deep societal instability. Experts link the trend to"
+excerpt: "When the Dormitory Lights Go Out The charred remains of the dormitory at Masosa Mixed Secondary School represent more than a localized safet"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/3ySJG02p/0bfa9ba2143e.jpg"
 category: "Opinions"
 tags: ["kenya education", "school unrest", "societal values", "masosa secondary", "kenyan news", "child development"]
+canonical: "https://zandani.co.ke/article/kenyan-school-unrest-societal-failure-analysis"
 date: "2026-06-13T11:25:09Z"
 dateModified: "2026-06-13T11:25:09Z"
+focusKeyword: "Why Kenyan School Unrest Reflects Broader Societal Failure"
 schema: "NewsArticle"
 ---
 
-## When the Dormitory Lights Go Out
+## When the Dormitory Lights Go Out Why Kenyan School Unrest Reflects Broader Societal Failure is the central subject of the update.
 
 The charred remains of the dormitory at Masosa Mixed Secondary School represent more than a localized safety failure. As the smoke clears from these 104 displaced lives, it becomes evident that we are observing a profound fracture in the social contract between our schools and our homes.
 

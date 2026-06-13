@@ -1,18 +1,20 @@
 ---
 title: "Daniel Kretinsky to become West Ham United majority shareholder"
 slug: "daniel-kretinsky-to-become-west-ham-united-majority-shareholder"
-description: "Daniel Kretinsky is set to become the largest West Ham shareholder as co-owner David Sullivan faces serious public allegations of misconduct."
+description: "Daniel Kretinsky to become West Ham United majority shareholder: Daniel Kretinsky is set to become the largest West Ham shareholder as co-owner David Sullivan"
+excerpt: "The London Stadium Sanitization Project Daniel Kretinsky is moving to consolidate his control at West Ham United, with his equity stake set"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/G3HFYsm3/d1f9d49a6da9.jpg"
 category: "Sports"
 tags: ["west ham united", "football", "premier league", "sports business", "international football"]
+canonical: "https://zandani.co.ke/article/daniel-kretinsky-to-become-west-ham-united-majority-shareholder"
 date: "2026-06-13T12:05:55Z"
 dateModified: "2026-06-13T12:05:55Z"
+focusKeyword: "Daniel Kretinsky to become West Ham United majority shareholder"
 schema: "NewsArticle"
 ---
 
-## The London Stadium Sanitization Project
+## The London Stadium Sanitization Project Daniel Kretinsky to become West Ham United majority shareholder is the central subject of the update.
 
 Daniel Kretinsky is moving to consolidate his control at West Ham United, with his equity stake set to jump from 27 to 43 percent. While pundits celebrate this as a tactical shift for the club, the reality is a calculated rebranding exercise designed to scrub away the stench of ongoing leadership scandals.
 
