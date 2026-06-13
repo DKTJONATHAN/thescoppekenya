@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Why Kenyan School Unrest Reflects Broader Societal Failure](https://zandani.co.ke/article/kenyan-school-unrest-societal-failure-analysis) - Rising school arson cases in Kenya signal deep societal instability. Experts link the trend to declining moral guidance and family breakdown.
 - [Football Fans Struggle to Balance World Cup Viewing with Work](https://zandani.co.ke/article/football-fans-struggle-balance-world-cup-viewing-work) - Working professionals are reporting decreased productivity and sleep deprivation as global match schedules conflict with office hours.
 - [Investors Urged to Diversify Beyond Kenya Sovereign Debt Assets](https://zandani.co.ke/article/investors-urged-to-diversify-beyond-kenya-sovereign-debt-assets) - Investors Urged to Diversify Beyond Kenya Sovereign Debt Assets: Kenya faces fiscal challenges as pension schemes remain over-exposed to government debt
 - [Former Kilgoris MP Gideon Sitelu Konchellah Dies at Age 67](https://zandani.co.ke/article/former-kilgoris-mp-gideon-sitelu-konchellah-dies) - Former Kilgoris MP Gideon Sitelu Konchellah Dies at Age 67: Long serving Kilgoris MP and former cabinet minister Gideon Sitelu Konchellah has passed away
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Abel Mutua Rules Out Remarriage While Judy Nyawira Confirms She Would Move On](https://zandani.co.ke/article/abel-mutua-rules-out-remarriage-while-judy-nyawira-confirms-she-woul) - Abel Mutua Rules Out Remarriage While Judy Nyawira Confirms She W: Abel Mutua and Judy Nyawira spark public debate after revealing conflicting views on the
 - [Statistical models clash over 2026 World Cup winner predictions](https://zandani.co.ke/article/statistical-models-clash-over-2026-world-cup-winner-predictions) - Statistical models clash over 2026 World Cup winner predictions: Experts and supercomputers are using advanced analytics to forecast the next football champion
 - [A Whispered Hope on Frozen Ponds and Sun-Baked Pitches](https://zandani.co.ke/article/a-whispered-hope-on-frozen-ponds-and-sun-baked-pitches) - A Whispered Hope on Frozen Ponds and Sun-Baked Pitches: In the annals of sport, some whispers carry the weight of impossible dreams, much like the Harambee
-- [NTSA revokes Nicco Movers 1 Sacco licence over safety failures](https://zandani.co.ke/article/ntsa-revokes-nicco-movers-1-sacco-licence) - NTSA revokes Nicco Movers 1 Sacco licence over safety failures: The National Transport and Safety Authority has permanently revoked the licence of Nicco Movers
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
