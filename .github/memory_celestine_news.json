@@ -239,10 +239,10 @@
     "b6f93919172ed8807ec855f0df762303",
     "a770aebeec57be5286ccb8c6a206e65c",
     "c99240fa970724f649f42edb8449de29",
-    "bfaada2124a5ef93e2ccf4adf3bb14e3"
+    "bfaada2124a5ef93e2ccf4adf3bb14e3",
+    "496b80ba1ad702809ef53d350b4fecf1"
   ],
   "style_history": [
-    "Explainer",
     "Reaction & Voices",
     "Hard News Lead",
     "Power Accountability",
@@ -271,10 +271,10 @@
     "Power Accountability",
     "Explainer",
     "Reaction & Voices",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Power Accountability"
   ],
   "angle_history": [
-    "winners_losers|Kenya|Explainer",
     "accountability|NTSA|Power Accountability",
     "winners_losers|Public Service Commission|Hard News Lead",
     "timeline_shift|Kenya|Context Backgrounder",
@@ -353,6 +353,7 @@
     "money_follow|NTSA|Power Accountability",
     "winners_losers|JKIA|Explainer",
     "story_progression|Kenyan politics|Reaction & Voices",
-    "winners_losers|Kenya Met|Hard News Lead"
+    "winners_losers|Kenya Met|Hard News Lead",
+    "policy_gap|Laikipia Air Base|Power Accountability"
   ]
 }
