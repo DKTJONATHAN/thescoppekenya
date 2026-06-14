@@ -14,7 +14,7 @@ focusKeyword: "'Bill Ritter Reveals Alzheimer's, Steps Down as ABC7 Anchor"
 schema: "NewsArticle"
 ---
 
-## Bill Ritter Alzheimer's News Ignites Kenyan Discourse on Care Costs "Bill Ritter Reveals Alzheimer's, Steps Down as ABC7 Anchor is the central subject of the update.
+## Bill Ritter Alzheimer's News Ignites Kenyan Discourse on Care Costs "Bill Ritter Reveals Alzheimer's, Steps Down as ABC7 Anchor is the central subject of the update. 'Bill Ritter Reveals Alzheimer's, Steps Down as ABC7 Anchor is the central subject of the update.
 
 Veteran US news anchor Bill Ritter's poignant revelation of an early-stage Alzheimer's diagnosis has resonated deeply in Kenya, shifting the conversation from a personal health battle to a stark examination of the nation's preparedness for long-term degenerative diseases. Kenyans online and experts alike are asking: Can we truly afford to care for our own?
 

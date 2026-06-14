@@ -1,18 +1,20 @@
 ---
 title: "Peter Ndegwa Safaricom CEO Tenure and Financial Growth Analysis"
 slug: "peter-ndegwa-safaricom-ceo-tenure-financial-growth"
-description: "Peter Ndegwa drives Safaricom toward fintech dominance and international expansion, leading the firm to record revenue and profit milestones."
+description: "Peter Ndegwa Safaricom CEO Tenure and Financial Growth Analysis: Peter Ndegwa drives Safaricom toward fintech dominance and international expansion, leading"
+excerpt: "The Cost of Regional Ambition in the Safaricom Ledger Safaricom has posted record revenues of KSh 427.56 billion for the 2026 fiscal year, y"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/pc1kNqr/78448cf87a08.jpg"
 category: "Business"
 tags: ["safaricom", "m-pesa", "peter ndegwa", "telecommunications", "kenyan business", "nairobi securities exchange"]
+canonical: "https://zandani.co.ke/article/peter-ndegwa-safaricom-ceo-tenure-financial-growth"
 date: "2026-06-14T08:47:57Z"
 dateModified: "2026-06-14T08:47:57Z"
+focusKeyword: "Peter Ndegwa Safaricom CEO Tenure and Financial Growth Analysis"
 schema: "NewsArticle"
 ---
 
-## The Cost of Regional Ambition in the Safaricom Ledger
+## The Cost of Regional Ambition in the Safaricom Ledger Peter Ndegwa Safaricom CEO Tenure and Financial Growth Analysis is the central subject of the update.
 
 Safaricom has posted record revenues of KSh 427.56 billion for the 2026 fiscal year, yet these top-line figures obscure mounting internal pressure. The company’s financial health is increasingly tethered to an ambitious Ethiopian expansion that has pushed net debt to KSh 139.81 billion. This shift forces a difficult question regarding the long-term sustainability of dividend payouts and whether the firm is overextending its capital base to secure regional influence.
 
