@@ -1,21 +1,20 @@
 ---
-title: "Bill Ritter Reveals Alzheimer's, Steps Down as ABC7 Anchor
+title: "'Bill Ritter Reveals Alzheimer's, Steps Down as ABC7 Anchor"
 slug: "bill-ritter-alzheimers-diagnosis-abc7-anchor-retires"
-description: "Veteran ABC7 anchor Bill Ritter bravely disclosed his early-stage Alzheimer's diagnosis on air, ending his anchoring role but continuing journalism. Learn more."
+description: "'Bill Ritter Reveals Alzheimer's, Steps Down as ABC7 Anchor: Veteran ABC7 anchor Bill Ritter bravely disclosed his early-stage Alzheimer's diagnosis on air,"
+excerpt: "Bill Ritter Alzheimer's News Ignites Kenyan Discourse on Care Costs Veteran US news anchor Bill Ritter's poignant revelation of an early sta"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/ksHztF6d/b79e86931b50.jpg"
-og_title: "Bill Ritter reveals Alzheimer's, ends ABC7 anchoring"
-og_description: "Veteran ABC7 anchor Bill Ritter shared his early-stage Alzheimer's diagnosis, stepping down from anchoring duties but continuing at the station."
-focus_keyword: "Bill Ritter Alzheimer's"
 category: "Entertainment"
 tags: ["bill ritter", "alzheimer's disease", "abc7", "news anchor", "broadcast journalism", "health news"]
+canonical: "https://zandani.co.ke/article/bill-ritter-alzheimers-diagnosis-abc7-anchor-retires"
 date: "2026-06-13T23:43:20Z"
 dateModified: "2026-06-13T23:43:20Z"
+focusKeyword: "'Bill Ritter Reveals Alzheimer's, Steps Down as ABC7 Anchor"
 schema: "NewsArticle"
 ---
 
-## Bill Ritter Alzheimer's News Ignites Kenyan Discourse on Care Costs
+## Bill Ritter Alzheimer's News Ignites Kenyan Discourse on Care Costs "Bill Ritter Reveals Alzheimer's, Steps Down as ABC7 Anchor is the central subject of the update.
 
 Veteran US news anchor Bill Ritter's poignant revelation of an early-stage Alzheimer's diagnosis has resonated deeply in Kenya, shifting the conversation from a personal health battle to a stark examination of the nation's preparedness for long-term degenerative diseases. Kenyans online and experts alike are asking: Can we truly afford to care for our own?
 

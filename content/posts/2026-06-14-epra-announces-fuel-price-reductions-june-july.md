@@ -1,18 +1,20 @@
 ---
 title: "EPRA Announces Fuel Price Reductions for June to July Cycle"
 slug: "epra-announces-fuel-price-reductions-june-july"
-description: "EPRA has lowered pump prices for petrol and diesel in Kenya for the latest monthly cycle. The government is subsidizing kerosene costs using 10 billion."
+description: "EPRA Announces Fuel Price Reductions for June to July Cycle: EPRA has lowered pump prices for petrol and diesel in Kenya for the latest monthly cycle. The"
+excerpt: "Why your daily commute remains expensive despite falling fuel costs The Energy and Petroleum Regulatory Authority has published its latest f"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/ymHdzmst/c743e3103a1b.jpg"
 category: "News"
 tags: ["epra", "kenya fuel prices", "energy sector", "kenyan economy", "petroleum act"]
+canonical: "https://zandani.co.ke/article/epra-announces-fuel-price-reductions-june-july"
 date: "2026-06-14T08:44:47Z"
 dateModified: "2026-06-14T08:44:47Z"
+focusKeyword: "EPRA Announces Fuel Price Reductions for June to July Cycle"
 schema: "NewsArticle"
 ---
 
-## Why your daily commute remains expensive despite falling fuel costs
+## Why your daily commute remains expensive despite falling fuel costs EPRA Announces Fuel Price Reductions for June to July Cycle is the central subject of the update.
 
 The Energy and Petroleum Regulatory Authority has published its latest fuel schedule for mid-June to mid-July. This update brings a welcome Ksh10.00 reduction for diesel and a slight downward adjustment for super petrol. Even with these savings at the pump, passengers across the country have yet to see any change in the fares charged for their daily travel.
 
