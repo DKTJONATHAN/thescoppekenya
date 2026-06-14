@@ -170,10 +170,10 @@
     "442188d5b0b76c1facc3cc8e8496a531",
     "07db0d6aa9d959193bca009b760db356",
     "56a8c76d4c91d77310445b00a5f12485",
-    "c60e31a64a095ce1b70ec1ec45b55ce7"
+    "c60e31a64a095ce1b70ec1ec45b55ce7",
+    "4af754046e51a1957d2f59e5f02890bf"
   ],
   "style_history": [
-    "Markets Report",
     "SME Angle",
     "Explainer",
     "Backgrounder",
@@ -202,10 +202,10 @@
     "Markets Report",
     "Explainer",
     "SME Angle",
-    "Backgrounder"
+    "Backgrounder",
+    "Power Accountability"
   ],
   "angle_history": [
-    "winners_losers|SACCO|Power Accountability",
     "money_follow|Del Monte Kenya|Markets Report",
     "money_follow|NSE|SME Angle",
     "impact_on_citizens|Dangote Petroleum Refinery|Explainer",
@@ -284,6 +284,7 @@
     "winners_losers|Central Bank of Kenya|Markets Report",
     "impact_on_citizens|Central Bank of Kenya|Explainer",
     "story_progression|Equity Group Foundation|SME Angle",
-    "policy_gap|sovereign debt|Backgrounder"
+    "policy_gap|sovereign debt|Backgrounder",
+    "money_follow|Safaricom|Power Accountability"
   ]
 }
