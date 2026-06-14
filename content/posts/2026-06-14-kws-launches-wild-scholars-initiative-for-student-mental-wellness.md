@@ -1,18 +1,20 @@
 ---
 title: "KWS Launches Wild Scholars Initiative to Support Student Wellness"
 slug: "kws-launches-wild-scholars-initiative-for-student-mental-wellness"
-description: "KWS has launched the Wild Scholars program to promote student mental well-being by offering discounted access to national parks for conservation learning."
+description: "KWS Launches Wild Scholars Initiative to Support Student Wellness: KWS has launched the Wild Scholars program to promote student mental well-being by offering"
+excerpt: "Beyond the Classroom: Can Wilderness Heal Kenya’s Stressed Students? For parents watching the school calendar with a sense of dread, the ide"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/XrjmfV64/cbb481246c77.jpg"
 category: "News"
 tags: ["kws", "wild scholars", "mental health", "conservation education", "kenya wildlife", "education"]
+canonical: "https://zandani.co.ke/article/kws-launches-wild-scholars-initiative-for-student-mental-wellness"
 date: "2026-06-14T13:02:01Z"
 dateModified: "2026-06-14T13:02:01Z"
+focusKeyword: "KWS Launches Wild Scholars Initiative to Support Student Wellness"
 schema: "NewsArticle"
 ---
 
-## Beyond the Classroom: Can Wilderness Heal Kenya’s Stressed Students?
+## Beyond the Classroom: Can Wilderness Heal Kenya’s Stressed Students? KWS Launches Wild Scholars Initiative to Support Student Wellness is the central subject of the update.
 
 For parents watching the school calendar with a sense of dread, the idea of trading exam papers for open savannahs sounds like a desperate gamble, yet many are already asking if this fresh approach is the medicine their children finally need.
 

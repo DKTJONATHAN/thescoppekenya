@@ -1,18 +1,20 @@
 ---
 title: "Scotland secure narrow win over Haiti in World Cup return"
 slug: "scotland-secure-narrow-win-over-haiti-in-world-cup-return"
-description: "Scotland marked their return to the FIFA World Cup after 36 years with a tense 1-0 victory against Haiti thanks to a deflected John McGinn goal."
+description: "Scotland secure narrow win over Haiti in World Cup return: Scotland marked their return to the FIFA World Cup after 36 years with a tense 1-0 victory against"
+excerpt: "Scotland's Tactical Shackles Steve Clarke opted for a rigid defensive structure that stifled his team's creative potential, turning a long a"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/yn5T0mgV/bbcc0f0589d0.jpg"
 category: "Sports"
 tags: ["scotland", "haiti", "fifa world cup", "football", "sports news"]
+canonical: "https://zandani.co.ke/article/scotland-secure-narrow-win-over-haiti-in-world-cup-return"
 date: "2026-06-14T12:19:02Z"
 dateModified: "2026-06-14T12:19:02Z"
+focusKeyword: "Scotland secure narrow win over Haiti in World Cup return"
 schema: "NewsArticle"
 ---
 
-## Scotland's Tactical Shackles
+## Scotland's Tactical Shackles Scotland secure narrow win over Haiti in World Cup return is the central subject of the update.
 
 Steve Clarke opted for a rigid defensive structure that stifled his team's creative potential, turning a long-awaited World Cup return into a grueling ninety-minute struggle. Although the scoreboard favored Scotland, the tactical framework prioritized caution over attacking fluency, leaving a talented roster hamstrung against a disciplined Haitian side.
 

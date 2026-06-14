@@ -1,18 +1,20 @@
 ---
 title: "Otile Brown reveals he considered quitting music over mental health"
 slug: "otile-brown-reveals-he-considered-quitting-music-over-mental-health"
-description: "Kenyan artist Otile Brown shares his struggle with mental health and the pressures of social media that led him to contemplate quitting music."
+description: "Otile Brown reveals he considered quitting music over mental heal: Kenyan artist Otile Brown shares his struggle with mental health and the pressures of social"
+excerpt: "The Cost of the Click: Why Otile Brown Almost Walked Away Otile Brown recently revealed that the exhausting pursuit of digital relevance nea"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/mVBSx34W/ab5d4fc82c8d.jpg"
 category: "Gossip"
 tags: ["otile brown", "kenyan music", "mental health", "celebrity news", "social media pressure", "kenyan entertainment"]
+canonical: "https://zandani.co.ke/article/otile-brown-reveals-he-considered-quitting-music-over-mental-health"
 date: "2026-06-14T11:10:02Z"
 dateModified: "2026-06-14T11:10:02Z"
+focusKeyword: "Otile Brown reveals he considered quitting music over mental heal"
 schema: "NewsArticle"
 ---
 
-## The Cost of the Click: Why Otile Brown Almost Walked Away
+## The Cost of the Click: Why Otile Brown Almost Walked Away Otile Brown reveals he considered quitting music over mental heal is the central subject of the update.
 
 Otile Brown recently revealed that the exhausting pursuit of digital relevance nearly pushed him into early retirement. While headlines framed this as a vulnerable emotional breakdown, it is better understood as a tactical response to the stifling logistics of the contemporary Kenyan music market. 
 

@@ -1,18 +1,20 @@
 ---
 title: "LSK to Pursue Officials Defying Court Orders"
 slug: "lsk-to-pursue-officials-defying-court-orders"
-description: "Law Society of Kenya President Charles Kanjama is leading a push to hold public officials accountable for disregarding judicial rulings across state agencies."
+description: "LSK to Pursue Officials Defying Court Orders: Law Society of Kenya President Charles Kanjama is leading a push to hold public officials accountable for"
+excerpt: "The Weight of Judicial Defiance Charles Kanjama’s current legal offensive against officials who ignore court orders arrives with a sense of"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/fVBr99xp/116ab2139e29.jpg"
 category: "Opinions"
 tags: ["law society of kenya", "charles kanjama", "rule of law", "judiciary", "kenyan politics", "nssf"]
+canonical: "https://zandani.co.ke/article/lsk-to-pursue-officials-defying-court-orders"
 date: "2026-06-14T11:38:07Z"
 dateModified: "2026-06-14T11:38:07Z"
+focusKeyword: "LSK to Pursue Officials Defying Court Orders"
 schema: "NewsArticle"
 ---
 
-## The Weight of Judicial Defiance
+## The Weight of Judicial Defiance LSK to Pursue Officials Defying Court Orders is the central subject of the update.
 
 Charles Kanjama’s current legal offensive against officials who ignore court orders arrives with a sense of grim familiarity. For those who remember the landscape of the nation prior to 2010, this is not a new legal frontier. It is a recurring fever, a signal that the Law Society of Kenya is again forced to confront a state apparatus that treats judicial mandates as polite requests. The optimism that defined the post-2010 era, which promised to dissolve the deep-seated culture of impunity within the police and provincial administration, is now being tested by the relentless pull of old habits. As of June 2026, the halls of government are once again filled with the shadows of bureaucratic resistance.
 
