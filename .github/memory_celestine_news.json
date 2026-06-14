@@ -242,10 +242,10 @@
     "bfaada2124a5ef93e2ccf4adf3bb14e3",
     "496b80ba1ad702809ef53d350b4fecf1",
     "0131d71bd028e0a5548828d0f65ee5aa",
-    "e5dd84619658d4aedcc743f57a8e44f6"
+    "e5dd84619658d4aedcc743f57a8e44f6",
+    "952204d4c0bb9c209a5c6b35ca955874"
   ],
   "style_history": [
-    "Power Accountability",
     "Explainer",
     "Reaction & Voices",
     "Hard News Lead",
@@ -274,10 +274,10 @@
     "Hard News Lead",
     "Power Accountability",
     "Explainer",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "timeline_shift|Kenya|Context Backgrounder",
     "next_48_hours|IPOA|Explainer",
     "next_48_hours|green bonds|Reaction & Voices",
     "money_follow|Bolt|Power Accountability",
@@ -356,6 +356,7 @@
     "winners_losers|Kenya Met|Hard News Lead",
     "policy_gap|Laikipia Air Base|Power Accountability",
     "policy_gap|EPRA|Explainer",
-    "story_progression|KWS|Reaction & Voices"
+    "story_progression|KWS|Reaction & Voices",
+    "policy_gap|DCI|Context Backgrounder"
   ]
 }
