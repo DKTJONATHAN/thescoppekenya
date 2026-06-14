@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Otile Brown reveals he considered quitting music over mental health](https://zandani.co.ke/article/otile-brown-reveals-he-considered-quitting-music-over-mental-health) - Kenyan artist Otile Brown shares his struggle with mental health and the pressures of social media that led him to contemplate quitting music.
 - [Peter Ndegwa Safaricom CEO Tenure and Financial Growth Analysis](https://zandani.co.ke/article/peter-ndegwa-safaricom-ceo-tenure-financial-growth) - Peter Ndegwa Safaricom CEO Tenure and Financial Growth Analysis: Peter Ndegwa drives Safaricom toward fintech dominance and international expansion, leading
 - [EPRA Announces Fuel Price Reductions for June to July Cycle](https://zandani.co.ke/article/epra-announces-fuel-price-reductions-june-july) - EPRA Announces Fuel Price Reductions for June to July Cycle: EPRA has lowered pump prices for petrol and diesel in Kenya for the latest monthly cycle. The
 - ['Bill Ritter Reveals Alzheimer's, Steps Down as ABC7 Anchor](https://zandani.co.ke/article/bill-ritter-alzheimers-diagnosis-abc7-anchor-retires) - 'Bill Ritter Reveals Alzheimer's, Steps Down as ABC7 Anchor: Veteran ABC7 anchor Bill Ritter bravely disclosed his early-stage Alzheimer's diagnosis on air,
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Kenya Met Forecasts Five Day Cold Spell and Rainfall Across Regions](https://zandani.co.ke/article/kenya-met-forecast-cold-spell-rainfall) - Kenya Met Forecasts Five Day Cold Spell and Rainfall Across Regio: The Kenya Meteorological Service warns of a five day cold spell starting June 13 with
 - [Daniel Kretinsky to become West Ham United majority shareholder](https://zandani.co.ke/article/daniel-kretinsky-to-become-west-ham-united-majority-shareholder) - Daniel Kretinsky to become West Ham United majority shareholder: Daniel Kretinsky is set to become the largest West Ham shareholder as co-owner David Sullivan
 - [Why Kenyan School Unrest Reflects Broader Societal Failure](https://zandani.co.ke/article/kenyan-school-unrest-societal-failure-analysis) - Why Kenyan School Unrest Reflects Broader Societal Failure: Rising school arson cases in Kenya signal deep societal instability. Experts link the trend to
-- [Football Fans Struggle to Balance World Cup Viewing with Work](https://zandani.co.ke/article/football-fans-struggle-balance-world-cup-viewing-work) - Football Fans Struggle to Balance World Cup Viewing with Work: Working professionals are reporting decreased productivity and sleep deprivation as global match
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
