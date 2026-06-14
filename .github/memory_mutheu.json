@@ -255,10 +255,10 @@
     "72c0bf4c8a92b012e23810cb71e40c9c",
     "ef609ecb0f0b5dbf235800d0201c73ee",
     "f67e4311a7824d3730921f3559f2ad65",
-    "272bb1b643e0aac9b80a6875c8ff6a33"
+    "272bb1b643e0aac9b80a6875c8ff6a33",
+    "f3f7f7206ca974add1c7b56f50142bfb"
   ],
   "style_history": [
-    "Hard News Lead",
     "Trend Take",
     "Profile Beat",
     "Explainer",
@@ -287,10 +287,10 @@
     "Reaction Round-up",
     "Profile Beat",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "money_follow|The Late Show|Hard News Lead",
     "impact_on_citizens|The Beatles|Reaction Round-up",
     "impact_on_citizens|Kathy Griffin|Trend Take",
     "timeline_shift|Daniel Coleman|Profile Beat",
@@ -369,6 +369,7 @@
     "story_progression|Horror film|Reaction Round-up",
     "story_progression|Mice|Profile Beat",
     "story_progression|Multiple Sclerosis|Explainer",
-    "story_progression|Donald Trump|Trend Take"
+    "story_progression|Donald Trump|Trend Take",
+    "money_follow|Alzheimer's disease|Reaction Round-up"
   ]
 }
