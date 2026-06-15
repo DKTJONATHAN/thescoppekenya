@@ -151,10 +151,10 @@
     "6a631cafc92d680d96d7146033b88ade",
     "a56fe63f0684a0ec0ef88f8d0171d398",
     "e91e11e0f63493b9e8266a46ce4388fc",
-    "97fc8b224d03d82c987a5d9c8d1495d0"
+    "97fc8b224d03d82c987a5d9c8d1495d0",
+    "595620b1c6d5bd812e5becfb068fea58"
   ],
   "style_history": [
-    "Letter Form",
     "Personal Reflection",
     "Historical Lens",
     "Sharp Column",
@@ -183,10 +183,10 @@
     "Letter Form",
     "Sharp Column",
     "Personal Reflection",
-    "Historical Lens"
+    "Historical Lens",
+    "Letter Form"
   ],
   "angle_history": [
-    "timeline_shift|digital sovereignty|Historical Lens",
     "accountability|National Liberal Party|Letter Form",
     "policy_gap|Public health|Personal Reflection",
     "accountability|Kenya|Sharp Column",
@@ -265,6 +265,7 @@
     "accountability|education|Letter Form",
     "story_progression|China-Kenya relations|Sharp Column",
     "policy_gap|school unrest|Personal Reflection",
-    "timeline_shift|Law Society of Kenya|Historical Lens"
+    "timeline_shift|Law Society of Kenya|Historical Lens",
+    "accountability|Kenya|Letter Form"
   ]
 }

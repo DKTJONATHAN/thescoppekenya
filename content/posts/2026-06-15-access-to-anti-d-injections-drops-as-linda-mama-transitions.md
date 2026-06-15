@@ -1,0 +1,45 @@
+---
+title: "Access to Anti-D injections drops as Linda Mama transitions"
+slug: "access-to-anti-d-injections-drops-as-linda-mama-transitions"
+description: "The shift to the Social Health Authority has restricted access to essential Anti-D immunoglobulin, leaving Rh-negative mothers facing high costs."
+author: "Jonathan Mwaniki"
+authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
+image: "https://i.ibb.co/Y7YkXJBP/a30a39f41e20.jpg"
+category: "Opinions"
+tags: ["kenya health", "linda mama", "social health authority", "maternal health", "rh-negative", "nhif"]
+date: "2026-06-15T15:25:35Z"
+dateModified: "2026-06-15T15:25:35Z"
+schema: "NewsArticle"
+---
+
+## Addressing the Gap in Maternal Care Under the Social Health Authority
+
+The transition from the Linda Mama programme to the Social Health Authority framework was envisioned as a modernization of our healthcare system. However, this administrative shift has created a dangerous void for expectant mothers with Rh-negative blood. While the government focuses on the structural implementation of the new insurance scheme, a critical medical necessity is being overlooked, placing the health of both mothers and newborns at significant risk.
+
+To the Ministry of Health,
+
+The restructuring of our national health coverage was intended to improve efficiency. For a specific subset of the population, however, this change has acted as a barrier to essential care. While the nation reflects on the pain of individual losses, such as the recent passing of Isaac Coleman, we must also address the systemic policy gaps that threaten to compromise maternal health outcomes across the country.
+
+### Biological Realities and Policy Oversight
+
+Approximately 1 to 2 percent of pregnant women in Kenya have Rh-negative blood. This biological profile necessitates specialized medical intervention to prevent Rhesus disease, a condition where the maternal immune system reacts against the blood cells of the fetus. Under the previous Linda Mama framework, access to Anti-D immunoglobulin-the only effective preventative treatment-was reliable and standard.
+
+That predictability has recently collapsed. Mothers like Victorine Ndinda, who have attempted to navigate the public healthcare system during this transition, report a disjointed experience. Although the new Social Health Authority architecture is active, the supply chain for Anti-D injections remains neglected. Many expectant mothers who once depended on state-subsidized care are now being referred to private pharmacies. At these private outlets, the cost of the injection ranges between Sh6,000 and Sh11,000. For families living on the margins, this is an insurmountable expense that forces a choice between financial stability and a life-saving medical procedure.
+
+### Assessing the Impact of Financial Barriers
+
+Maternal mortality is often discussed in abstract numerical terms, yet the reality is stark. Kenya reports 342 maternal deaths per 100,000 live births, a figure that remains significantly higher than the global target of 70. By effectively shifting the cost of Anti-D immunoglobulin to the patient, the Ministry is imposing a financial penalty on high-risk pregnancies. When a mother is unable to afford the cost, the risk of sensitization rises, which endangers the current pregnancy and creates complications for any future attempts at childbirth.
+
+This situation reflects a failure in prioritization. While the state directs resources toward large-scale industrial projects, such as the mining initiatives at Mrima Hill, the micro-level health requirements of our citizens are being eroded. The fiscal outlay required to procure this medicine is minimal when contrasted with the long-term societal and economic costs of preventable maternal complications. Expecting households to bridge the financial gap left by the Linda Jamii transition is an abdication of the state’s duty to protect vulnerable demographics.
+
+### A Formal Call for Essential Integration
+
+The transition to the Social Health Authority cannot come at the expense of quality care for mothers. It is not enough to launch a new system and assume it serves every citizen equally. The Ministry must address the current stockouts at public facilities and provide transparent information regarding the procurement of this vital medicine.
+
+We urge you to formally include Anti-D immunoglobulin in the Essential Medicines List under the new Linda Jamii framework without delay. This treatment must be fully covered as a primary maternal health service, with guaranteed availability at all Level 4 and Level 5 hospitals. If the Social Health Authority is truly intended to be universal, it must be equipped to address the specific biological needs of every Kenyan mother, regardless of their blood type. 
+
+We look forward to your commitment to rectifying this oversight before further families are forced to bear the consequences of administrative failure.
+
+Sincerely,
+
+Jonathan Mwaniki
