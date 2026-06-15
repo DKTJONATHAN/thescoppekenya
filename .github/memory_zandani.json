@@ -289,10 +289,10 @@
     "8ce6db5d2996679c21509a32e13de0da",
     "503ef4fc53490b102bb21ef9d093df1c",
     "a202d8827f5f9817eac21f93ce888618",
-    "7733e5e309f519a2df09c535bda005e3"
+    "7733e5e309f519a2df09c535bda005e3",
+    "123b762df03f3cbc0d34749c14a48633"
   ],
   "style_history": [
-    "Hard News Lead",
     "Trend Take",
     "Receipts Piece",
     "Profile Beat",
@@ -321,10 +321,10 @@
     "Hard News Lead",
     "Profile Beat",
     "Reaction Round-up",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Trend Take"
   ],
   "angle_history": [
-    "impact_on_citizens|Kenya|Trend Take",
     "money_follow|Kenya|Profile Beat",
     "money_follow|Kenyan Shillings|Receipts Piece",
     "winners_losers|Kenyan music|Reaction Round-up",
@@ -403,6 +403,7 @@
     "policy_gap|Kenya|Hard News Lead",
     "accountability|Kenya|Profile Beat",
     "timeline_shift|FIFA World Cup|Reaction Round-up",
-    "money_follow|Otile Brown|Receipts Piece"
+    "money_follow|Otile Brown|Receipts Piece",
+    "story_progression|Kenya|Trend Take"
   ]
 }
