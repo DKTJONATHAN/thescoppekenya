@@ -1,18 +1,20 @@
 ---
 title: "Mombasa Car Dealers Protest New NTSA Registration Plate Rules"
 slug: "mombasa-car-dealers-protest-ntsa-registration-plate-rules"
-description: "Mombasa car dealers have protested against new NTSA enforcement of Traffic Act regulations which are causing vehicle logistics delays and higher costs."
+description: "Mombasa Car Dealers Protest New NTSA Registration Plate Rules: Mombasa car dealers have protested against new NTSA enforcement of Traffic Act regulations which"
+excerpt: "Administrative Gridlock at the Coast The NTSA promises seamless digital integration, yet the reality on the ground in Mombasa is a grinding"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/YT2dk48H/0861b4e3e9ce.jpg"
 category: "News"
 tags: ["ntsa", "mombasa", "kenya news", "automotive industry", "traffic act", "kenya business"]
+canonical: "https://zandani.co.ke/article/mombasa-car-dealers-protest-ntsa-registration-plate-rules"
 date: "2026-06-15T16:21:49Z"
 dateModified: "2026-06-15T16:21:49Z"
+focusKeyword: "Mombasa Car Dealers Protest New NTSA Registration Plate Rules"
 schema: "NewsArticle"
 ---
 
-## Administrative Gridlock at the Coast
+## Administrative Gridlock at the Coast Mombasa Car Dealers Protest New NTSA Registration Plate Rules is the central subject of the update.
 
 The NTSA promises seamless digital integration, yet the reality on the ground in Mombasa is a grinding halt of automotive logistics. While the regulator champions modernization, the latest enforcement of registration protocols is transforming the Port of Mombasa into a bottleneck for the entire national vehicle supply chain.
 

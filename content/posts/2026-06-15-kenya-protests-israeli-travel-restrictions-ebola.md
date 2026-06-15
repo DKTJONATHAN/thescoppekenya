@@ -1,18 +1,20 @@
 ---
 title: "Kenya Protests Israeli Travel Restrictions Over Ebola Concerns"
 slug: "kenya-protests-israeli-travel-restrictions-ebola"
-description: "The Ministry of Foreign Affairs has contested an Israeli travel ban on Kenya, citing the country's clean record and rigorous public health surveillance."
+description: "Kenya Protests Israeli Travel Restrictions Over Ebola Concerns: The Ministry of Foreign Affairs has contested an Israeli travel ban on Kenya, citing the"
+excerpt: "Diplomatic Pressure Mounts Over Unverified Travel Bans The Kenyan Ministry of Foreign Affairs today formally challenged Israel's inclusion o"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/nMPZc9dZ/247528c19446.jpg"
 category: "News"
 tags: ["kenya", "israel", "ebola", "foreign affairs", "travel ban", "diplomacy", "health"]
+canonical: "https://zandani.co.ke/article/kenya-protests-israeli-travel-restrictions-ebola"
 date: "2026-06-15T10:58:24Z"
 dateModified: "2026-06-15T10:58:24Z"
+focusKeyword: "Kenya Protests Israeli Travel Restrictions Over Ebola Concerns"
 schema: "NewsArticle"
 ---
 
-## Diplomatic Pressure Mounts Over Unverified Travel Bans
+## Diplomatic Pressure Mounts Over Unverified Travel Bans Kenya Protests Israeli Travel Restrictions Over Ebola Concerns is the central subject of the update.
 
 The Kenyan Ministry of Foreign Affairs today formally challenged Israel's inclusion of the nation on a list of countries subject to severe Ebola-related travel restrictions, demanding an immediate policy reversal to prevent further disruption of bilateral business and travel.
 

@@ -1,18 +1,20 @@
 ---
 title: "Thierry Henry Clarifies Comments Over IShowSpeed Kit Choice"
 slug: "thierry-henry-clarifies-comments-over-ishowspeed-kit-choice"
-description: "Thierry Henry has clarified that his remarks on IShowSpeed wearing a mixed national kit were about fashion etiquette rather than disrespecting Nigeria."
+description: "Thierry Henry Clarifies Comments Over IShowSpeed Kit Choice: Thierry Henry has clarified that his remarks on IShowSpeed wearing a mixed national kit were about"
+excerpt: "Understanding the Thierry Henry Kit Controversy Thierry Henry has spoken out to quell a digital firestorm sparked by a viral interaction inv"
 author: "Amara Ndlovu"
-authorUrl: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/ycpDkqJj/414540a13f0b.png"
 category: "Africa Entertainment"
 tags: ["thierry henry", "ishowspeed", "nigeria", "football", "social media", "sports news"]
+canonical: "https://zandani.co.ke/article/thierry-henry-clarifies-comments-over-ishowspeed-kit-choice"
 date: "2026-06-15T09:32:12Z"
 dateModified: "2026-06-15T09:32:12Z"
+focusKeyword: "Thierry Henry Clarifies Comments Over IShowSpeed Kit Choice"
 schema: "NewsArticle"
 ---
 
-## Understanding the Thierry Henry Kit Controversy
+## Understanding the Thierry Henry Kit Controversy Thierry Henry Clarifies Comments Over IShowSpeed Kit Choice is the central subject of the update.
 
 Thierry Henry has spoken out to quell a digital firestorm sparked by a viral interaction involving YouTuber IShowSpeed. The football legend clarified that his recent remarks about bad luck were directed at a fashion faux pas rather than any specific nation.
 

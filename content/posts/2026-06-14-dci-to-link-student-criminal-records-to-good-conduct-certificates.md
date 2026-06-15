@@ -1,18 +1,20 @@
 ---
 title: "DCI to link student criminal records to certificates of good conduct"
 slug: "dci-to-link-student-criminal-records-to-good-conduct-certificates"
-description: "Government warns that student unrest and criminal acts will now be permanently recorded, impacting future police clearance and employment prospects in Kenya."
+description: "DCI to link student criminal records to certificates of good cond: Government warns that student unrest and criminal acts will now be permanently recorded,"
+excerpt: "The Permanent Price of Adolescent Rebellion The Kenyan government is moving to digitize the disciplinary histories of students, ensuring tha"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/vx0r9C9n/46613d19a3fe.jpg"
 category: "News"
 tags: ["dci", "education", "kenya", "student unrest", "good conduct", "isaac mwaura"]
+canonical: "https://zandani.co.ke/article/dci-to-link-student-criminal-records-to-good-conduct-certificates"
 date: "2026-06-14T18:17:49Z"
 dateModified: "2026-06-14T18:17:49Z"
+focusKeyword: "DCI to link student criminal records to certificates of good cond"
 schema: "NewsArticle"
 ---
 
-## The Permanent Price of Adolescent Rebellion
+## The Permanent Price of Adolescent Rebellion DCI to link student criminal records to certificates of good cond is the central subject of the update.
 
 The Kenyan government is moving to digitize the disciplinary histories of students, ensuring that arson and school unrest incidents follow individuals long after they leave the classroom. This shift turns transient teenage mistakes into permanent barriers for future formal employment.
 

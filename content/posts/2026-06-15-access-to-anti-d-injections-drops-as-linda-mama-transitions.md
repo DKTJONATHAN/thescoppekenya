@@ -1,18 +1,20 @@
 ---
 title: "Access to Anti-D injections drops as Linda Mama transitions"
 slug: "access-to-anti-d-injections-drops-as-linda-mama-transitions"
-description: "The shift to the Social Health Authority has restricted access to essential Anti-D immunoglobulin, leaving Rh-negative mothers facing high costs."
+description: "Access to Anti-D injections drops as Linda Mama transitions: The shift to the Social Health Authority has restricted access to essential Anti-D immunoglobulin,"
+excerpt: "Addressing the Gap in Maternal Care Under the Social Health Authority The transition from the Linda Mama programme to the Social Health Auth"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/Y7YkXJBP/a30a39f41e20.jpg"
 category: "Opinions"
 tags: ["kenya health", "linda mama", "social health authority", "maternal health", "rh-negative", "nhif"]
+canonical: "https://zandani.co.ke/article/access-to-anti-d-injections-drops-as-linda-mama-transitions"
 date: "2026-06-15T15:25:35Z"
 dateModified: "2026-06-15T15:25:35Z"
+focusKeyword: "Access to Anti-D injections drops as Linda Mama transitions"
 schema: "NewsArticle"
 ---
 
-## Addressing the Gap in Maternal Care Under the Social Health Authority
+## Addressing the Gap in Maternal Care Under the Social Health Authority Access to Anti-D injections drops as Linda Mama transitions is the central subject of the update.
 
 The transition from the Linda Mama programme to the Social Health Authority framework was envisioned as a modernization of our healthcare system. However, this administrative shift has created a dangerous void for expectant mothers with Rh-negative blood. While the government focuses on the structural implementation of the new insurance scheme, a critical medical necessity is being overlooked, placing the health of both mothers and newborns at significant risk.
 

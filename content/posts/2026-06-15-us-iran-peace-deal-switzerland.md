@@ -1,18 +1,20 @@
 ---
 title: "US and Iran to Sign Peace Deal in Switzerland to Ease Tensions"
 slug: "us-iran-peace-deal-switzerland"
-description: "The US and Iran are set to sign a peace agreement in Switzerland to end the Strait of Hormuz blockade and halt military operations globally."
+description: "US and Iran to Sign Peace Deal in Switzerland to Ease Tensions: The US and Iran are set to sign a peace agreement in Switzerland to end the Strait of Hormuz"
+excerpt: "Geopolitical De escalation: Reopening the Strait of Hormuz and the Kenyan Economic Outlook The diplomatic agreement between the United State"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/M3pJQM0/445cfe5d8f6c.jpg"
 category: "Business"
 tags: ["geopolitics", "international relations", "energy security", "middle east", "diplomacy"]
+canonical: "https://zandani.co.ke/article/us-iran-peace-deal-switzerland"
 date: "2026-06-15T11:21:53Z"
 dateModified: "2026-06-15T11:21:53Z"
+focusKeyword: "US and Iran to Sign Peace Deal in Switzerland to Ease Tensions"
 schema: "NewsArticle"
 ---
 
-## Geopolitical De-escalation: Reopening the Strait of Hormuz and the Kenyan Economic Outlook
+## Geopolitical De-escalation: Reopening the Strait of Hormuz and the Kenyan Economic Outlook US and Iran to Sign Peace Deal in Switzerland to Ease Tensions is the central subject of the update.
 
 The diplomatic agreement between the United States and Iran, set to be finalized in Switzerland this Friday, signals the conclusion of naval blockades in the Strait of Hormuz. Mediated by Pakistan, this breakthrough is designed to restore regular maritime operations for international crude oil traffic, effectively removing a major friction point in global energy markets.
 
