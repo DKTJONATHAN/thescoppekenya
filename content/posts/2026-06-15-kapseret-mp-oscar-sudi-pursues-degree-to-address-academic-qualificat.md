@@ -1,7 +1,8 @@
 ---
 title: "Kapseret MP Oscar Sudi Pursues Degree To Address Academic Qualification Concerns"
 slug: "kapseret-mp-oscar-sudi-pursues-degree-to-address-academic-qualificat"
-description: "Kapseret MP Oscar Sudi is pursuing a university degree to address public scrutiny regarding his academic qualifications and professional credentials."
+description: "Kapseret MP Oscar Sudi Pursues Degree To Address Academic Qualifi: Kapseret MP Oscar Sudi is pursuing a university degree to address public scrutiny regarding"
+excerpt: "Kapseret Member of Parliament Oscar Sudi recently released a video confirming he is actively attending classes to complete his university de"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/5XKxq6k5/647cf3c03c2c.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["oscar-sudi", "kapseret-mp", "academic-qualifications", "kenyan-politics", "sudi-degree"]
 canonical: "https://zandani.co.ke/article/kapseret-mp-oscar-sudi-pursues-degree-to-address-academic-qualificat"
 date: "2026-06-15T17:27:34Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-15T17:27:34Z"
+focusKeyword: "Kapseret MP Oscar Sudi Pursues Degree To Address Academic Qualifi"
 schema: "NewsArticle"
 ---
-Kapseret Member of Parliament Oscar Sudi recently released a video confirming he is actively attending classes to complete his university degree. This announcement in Kenya aims to address long-standing public scrutiny regarding the lawmaker's academic qualifications and his professional credentials.
+
+Kapseret Member of Parliament Oscar Sudi recently released a video confirming he is actively attending classes to complete his university degree. This announcement in Kenya aims to address long-standing public scrutiny regarding the lawmaker's academic qualifications and his professional credentials. Kapseret MP Oscar Sudi Pursues Degree To Address Academic Qualifi is the central subject of the update.
 
 ## Addressing Academic Scrutiny Through Formal Education
 
