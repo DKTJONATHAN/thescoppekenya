@@ -243,10 +243,10 @@
     "496b80ba1ad702809ef53d350b4fecf1",
     "0131d71bd028e0a5548828d0f65ee5aa",
     "e5dd84619658d4aedcc743f57a8e44f6",
-    "952204d4c0bb9c209a5c6b35ca955874"
+    "952204d4c0bb9c209a5c6b35ca955874",
+    "4c2f214cf4d3c6afef7bda5daac4003b"
   ],
   "style_history": [
-    "Explainer",
     "Reaction & Voices",
     "Hard News Lead",
     "Power Accountability",
@@ -275,10 +275,10 @@
     "Power Accountability",
     "Explainer",
     "Reaction & Voices",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "next_48_hours|IPOA|Explainer",
     "next_48_hours|green bonds|Reaction & Voices",
     "money_follow|Bolt|Power Accountability",
     "myth_vs_fact|DCI|Context Backgrounder",
@@ -357,6 +357,7 @@
     "policy_gap|Laikipia Air Base|Power Accountability",
     "policy_gap|EPRA|Explainer",
     "story_progression|KWS|Reaction & Voices",
-    "policy_gap|DCI|Context Backgrounder"
+    "policy_gap|DCI|Context Backgrounder",
+    "next_48_hours|Foreign Affairs|Hard News Lead"
   ]
 }
