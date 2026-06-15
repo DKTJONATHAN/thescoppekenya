@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- ["Tom Holland, Zendaya's Red Carpet Appearance Fuels Marriage Talk](https://zandani.co.ke/article/tom-holland-zendaya-red-carpet-marriage-rumors) - Tom Holland and Zendaya dazzle on the red carpet in Spain, reigniting marriage and engagement rumors. Learn more about the ongoing speculation now.
 - [Kapseret MP Oscar Sudi Pursues Degree To Address Academic Qualification Concerns](https://zandani.co.ke/article/kapseret-mp-oscar-sudi-pursues-degree-to-address-academic-qualificat) - Kapseret MP Oscar Sudi is pursuing a university degree to address public scrutiny regarding his academic qualifications and professional credentials.
 - [Meta forced to unwind two billion dollar Manus acquisition](https://zandani.co.ke/article/meta-unwinds-manus-ai-acquisition-due-to-chinese-regulatory-mandate) - Meta forced to unwind two billion dollar Manus acquisition: Meta is dismantling its acquisition of AI firm Manus after Chinese authorities blocked the deal
 - [Mombasa Car Dealers Protest New NTSA Registration Plate Rules](https://zandani.co.ke/article/mombasa-car-dealers-protest-ntsa-registration-plate-rules) - Mombasa Car Dealers Protest New NTSA Registration Plate Rules: Mombasa car dealers have protested against new NTSA enforcement of Traffic Act regulations which
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Why Classic Staples Like Gin and Tonic Remain Timeless Icons](https://zandani.co.ke/article/why-classic-staples-like-gin-and-tonic-remain-timeless-icons) - Why Classic Staples Like Gin and Tonic Remain Timeless Icons: Explore why enduring favorites like the gin and tonic and leather jackets continue to thrive by
 - [King Kaka Admits to Past Forgery of Academic and Work Documents](https://zandani.co.ke/article/king-kaka-admits-to-past-forgery-of-academic-documents) - King Kaka Admits to Past Forgery of Academic and Work Documents: Musician King Kaka has publicly confessed to creating fake documents during his early years,
 - [US and Iran to Sign Peace Deal in Switzerland to Ease Tensions](https://zandani.co.ke/article/us-iran-peace-deal-switzerland) - US and Iran to Sign Peace Deal in Switzerland to Ease Tensions: The US and Iran are set to sign a peace agreement in Switzerland to end the Strait of Hormuz
-- [Kenya Protests Israeli Travel Restrictions Over Ebola Concerns](https://zandani.co.ke/article/kenya-protests-israeli-travel-restrictions-ebola) - Kenya Protests Israeli Travel Restrictions Over Ebola Concerns: The Ministry of Foreign Affairs has contested an Israeli travel ban on Kenya, citing the
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
