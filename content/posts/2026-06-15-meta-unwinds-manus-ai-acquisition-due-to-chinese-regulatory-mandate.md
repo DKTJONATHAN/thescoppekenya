@@ -1,18 +1,20 @@
 ---
 title: "Meta forced to unwind two billion dollar Manus acquisition"
 slug: "meta-unwinds-manus-ai-acquisition-due-to-chinese-regulatory-mandate"
-description: "Meta is dismantling its acquisition of AI firm Manus after Chinese authorities blocked the deal over national security and technology transfer concerns."
+description: "Meta forced to unwind two billion dollar Manus acquisition: Meta is dismantling its acquisition of AI firm Manus after Chinese authorities blocked the deal"
+excerpt: "Meta Abandons Manus Acquisition Following Chinese Regulatory Intervention Meta has initiated the formal dissolution of its two billion dolla"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/pjf9XyMX/6c794e309695.webp"
 category: "Technology"
 tags: ["meta", "ai technology", "global tech", "business news", "geopolitics", "china tech"]
+canonical: "https://zandani.co.ke/article/meta-unwinds-manus-ai-acquisition-due-to-chinese-regulatory-mandate"
 date: "2026-06-15T16:23:10Z"
 dateModified: "2026-06-15T16:23:10Z"
+focusKeyword: "Meta forced to unwind two billion dollar Manus acquisition"
 schema: "NewsArticle"
 ---
 
-## Meta Abandons Manus Acquisition Following Chinese Regulatory Intervention
+## Meta Abandons Manus Acquisition Following Chinese Regulatory Intervention Meta forced to unwind two billion dollar Manus acquisition is the central subject of the update.
 
 Meta has initiated the formal dissolution of its two-billion-dollar acquisition of Manus, a Singapore-based artificial intelligence firm. This collapse concludes a six-month integration process that failed due to extraterritorial export restrictions and the imposition of executive exit bans by Chinese authorities. The reversal highlights the growing influence of national security mandates on international corporate mergers. By leveraging jurisdiction over Manus founders Xiao Hong and Ji Yichao, Beijing successfully obstructed the transaction, forcing Meta to dismantle a strategic asset intended to advance its agentic AI capabilities. This development underscores a shift in global business, where the geographic origins of intellectual property can now dictate the survival of high-value corporate deals.
 
