@@ -5,7 +5,7 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Tue, 16 Jun 2026 16:09:38 GMT</pubDate>
+    <pubDate>Tue, 16 Jun 2026 16:13:27 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title><![CDATA[The Chieftain's Lamentable Harvest]]></title>
@@ -17,6 +17,17 @@
       <enclosure url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" type="image/jpeg" />
       <media:content url="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200" alt="The Chieftain&apos;s Lamentable Harvest" /><p>The esteemed Chieftain Mzima, renowned for his robust lineage and endless appetites, found his once-grand court entangled in the webs of his own making, leading</p>]]></content:encoded>
+    </item>
+    <item>
+      <title><![CDATA[Orengo criticizes government plan for protest victims reparations]]></title>
+      <link>https://zandani.co.ke/article/orengo-criticizes-government-protest-victims-reparations-plan</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/orengo-criticizes-government-protest-victims-reparations-plan</guid>
+      <pubDate>Tue, 16 Jun 2026 16:00:55 GMT</pubDate>
+      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
+      <description><![CDATA[Siaya Governor James Orengo has dismissed the state Ksh2 billion reparations plan, arguing it ignores judicial accountability and systemic reforms.]]></description>
+      <enclosure url="https://i.ibb.co/Xf2Pd9RP/6e432212804e.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/Xf2Pd9RP/6e432212804e.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/Xf2Pd9RP/6e432212804e.jpg" alt="Orengo criticizes government plan for protest victims reparations" /><p>Siaya Governor James Orengo has dismissed the state Ksh2 billion reparations plan, arguing it ignores judicial accountability and systemic reforms.</p>]]></content:encoded>
     </item>
     <item>
       <title><![CDATA[Trevoh Chalobah replaces Tino Livramento in England squad]]></title>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/TBRWrk7f/91d535b33053.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/TBRWrk7f/91d535b33053.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/TBRWrk7f/91d535b33053.jpg" alt="Boniface Mwangi Discusses Early Marriage and Family Life" /><p>Boniface Mwangi Discusses Early Marriage and Family Life: Human rights activist Boniface Mwangi explains how his religious background influenced his decision</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[NSE Indices Rally as Inflation Hits 6.7 Percent and T-bills Spike]]></title>
-      <link>https://zandani.co.ke/article/nse-indices-rally-as-inflation-hits-6-7-percent</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/nse-indices-rally-as-inflation-hits-6-7-percent</guid>
-      <pubDate>Mon, 08 Jun 2026 09:54:19 GMT</pubDate>
-      <dc:creator><![CDATA[Grace Mkamburi]]></dc:creator>
-      <description><![CDATA[NSE Indices Rally as Inflation Hits 6.7 Percent and T-bills Spike: Nairobi Securities Exchange indices closed higher despite rising inflation to 6.7 percent]]></description>
-      <enclosure url="https://i.ibb.co/vCVRhphV/acadf70e108d.png" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/vCVRhphV/acadf70e108d.png" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/vCVRhphV/acadf70e108d.png" alt="NSE Indices Rally as Inflation Hits 6.7 Percent and T-bills Spike" /><p>NSE Indices Rally as Inflation Hits 6.7 Percent and T-bills Spike: Nairobi Securities Exchange indices closed higher despite rising inflation to 6.7 percent</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
