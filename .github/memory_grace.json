@@ -172,10 +172,10 @@
     "56a8c76d4c91d77310445b00a5f12485",
     "c60e31a64a095ce1b70ec1ec45b55ce7",
     "4af754046e51a1957d2f59e5f02890bf",
-    "28b4f56d837b15413419162f8a735c10"
+    "28b4f56d837b15413419162f8a735c10",
+    "e470bcfb5bf69f56c1a67fcb882660af"
   ],
   "style_history": [
-    "Explainer",
     "Backgrounder",
     "Markets Report",
     "SME Angle",
@@ -204,10 +204,10 @@
     "SME Angle",
     "Backgrounder",
     "Power Accountability",
-    "Markets Report"
+    "Markets Report",
+    "Explainer"
   ],
   "angle_history": [
-    "money_follow|NSE|SME Angle",
     "impact_on_citizens|Dangote Petroleum Refinery|Explainer",
     "policy_gap|Trade Deficit|Backgrounder",
     "accountability|Fintech|Power Accountability",
@@ -286,6 +286,7 @@
     "story_progression|Equity Group Foundation|SME Angle",
     "policy_gap|sovereign debt|Backgrounder",
     "money_follow|Safaricom|Power Accountability",
-    "money_follow|geopolitics|Markets Report"
+    "money_follow|geopolitics|Markets Report",
+    "timeline_shift|Central Bank of Kenya|Explainer"
   ]
 }
