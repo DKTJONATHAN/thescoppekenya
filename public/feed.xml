@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Tue, 16 Jun 2026 13:19:06 GMT</pubDate>
+    <pubDate>Tue, 16 Jun 2026 14:40:32 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Kenya Hosts World Desertification Day Focusing on Rangeland Health]]></title>
+      <link>https://zandani.co.ke/article/kenya-hosts-world-desertification-day-focusing-on-rangeland-health</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-hosts-world-desertification-day-focusing-on-rangeland-health</guid>
+      <pubDate>Tue, 16 Jun 2026 14:27:14 GMT</pubDate>
+      <dc:creator><![CDATA[Jonathan Mwaniki]]></dc:creator>
+      <description><![CDATA[Kenya highlights the vital role of rangelands in climate resilience during World Desertification and Drought Day celebrations in Kilifi County.]]></description>
+      <enclosure url="https://i.ibb.co/4nSbZgp3/36c97245807e.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/4nSbZgp3/36c97245807e.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/4nSbZgp3/36c97245807e.jpg" alt="Kenya Hosts World Desertification Day Focusing on Rangeland Health" /><p>Kenya highlights the vital role of rangelands in climate resilience during World Desertification and Drought Day celebrations in Kilifi County.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Radio Maisha presenter Jitabi reconsiders relationship with Obinna]]></title>
       <link>https://zandani.co.ke/article/radio-maisha-presenter-jitabi-reconsiders-relationship-with-obinna</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/fGFk2Fn4/ec7000171b46.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/fGFk2Fn4/ec7000171b46.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/fGFk2Fn4/ec7000171b46.jpg" alt="Why Kenyan Trailers Must Display Z Prefix License Plates" /><p>Why Kenyan Trailers Must Display Z Prefix License Plates: Kenyan transport laws require trailers to display specific Z prefix license plates to ensure separate</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA['Data Processing Practices for Personalized Experiences at Za Ndani]]></title>
-      <link>https://zandani.co.ke/article/data-processing-personalized-experiences-service-improvement</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/data-processing-personalized-experiences-service-improvement</guid>
-      <pubDate>Sun, 07 Jun 2026 15:54:01 GMT</pubDate>
-      <dc:creator><![CDATA[Mutheu Ann]]></dc:creator>
-      <description><![CDATA['Data Processing Practices for Personalized Experiences at Za Nda: Explore Za Ndani's comprehensive data processing activities that personalize your content]]></description>
-      <enclosure url="https://i.ibb.co/jPYGS22w/c91cf470d11c.jpg" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/jPYGS22w/c91cf470d11c.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/jPYGS22w/c91cf470d11c.jpg" alt="&apos;Data Processing Practices for Personalized Experiences at Za Ndani" /><p>'Data Processing Practices for Personalized Experiences at Za Nda: Explore Za Ndani's comprehensive data processing activities that personalize your content</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
