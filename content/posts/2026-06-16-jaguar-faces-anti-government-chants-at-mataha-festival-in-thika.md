@@ -1,18 +1,20 @@
 ---
 title: "Jaguar faces anti-government chants at Mataha Festival in Thika"
 slug: "jaguar-faces-anti-government-chants-at-mataha-festival-in-thika"
-description: "Musician Jaguar faced vocal opposition from the crowd at the MKU Pavilion in Thika as attendees chanted anti-government slogans during his performance."
+description: "Jaguar faces anti-government chants at Mataha Festival in Thika: Musician Jaguar faced vocal opposition from the crowd at the MKU Pavilion in Thika as"
+excerpt: "The Silent Contract of the Stage is Broken The MKU Pavilion in Thika was supposed to be a sanctuary for music and tradition, but the Mataha"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/gFdCVk93/2fff76eb41ef.jpg"
 category: "Gossip"
 tags: ["jaguar", "mataha festival", "thika", "kenya politics", "ruto must go", "mount kenya"]
+canonical: "https://zandani.co.ke/article/jaguar-faces-anti-government-chants-at-mataha-festival-in-thika"
 date: "2026-06-16T11:32:20Z"
 dateModified: "2026-06-16T11:32:20Z"
+focusKeyword: "Jaguar faces anti-government chants at Mataha Festival in Thika"
 schema: "NewsArticle"
 ---
 
-## The Silent Contract of the Stage is Broken
+## The Silent Contract of the Stage is Broken Jaguar faces anti-government chants at Mataha Festival in Thika is the central subject of the update.
 
 The MKU Pavilion in Thika was supposed to be a sanctuary for music and tradition, but the Mataha Festival instead became a visceral display of how quickly the social compact between public figures and the citizenry has evaporated across the Mount Kenya region.
 

@@ -1,18 +1,20 @@
 ---
 title: "Orengo criticizes government plan for protest victims reparations"
 slug: "orengo-criticizes-government-protest-victims-reparations-plan"
-description: "Siaya Governor James Orengo has dismissed the state Ksh2 billion reparations plan, arguing it ignores judicial accountability and systemic reforms."
+description: "Orengo criticizes government plan for protest victims reparations: Siaya Governor James Orengo has dismissed the state Ksh2 billion reparations plan, arguing"
+excerpt: "The Moral Cost of State Reparations Siaya Governor James Orengo has denounced the government's proposed Ksh2 billion compensation package fo"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Xf2Pd9RP/6e432212804e.jpg"
 category: "News"
 tags: ["james orengo", "protests", "knchr", "human rights", "siaya", "kenya politics"]
+canonical: "https://zandani.co.ke/article/orengo-criticizes-government-protest-victims-reparations-plan"
 date: "2026-06-16T16:00:55Z"
 dateModified: "2026-06-16T16:00:55Z"
+focusKeyword: "Orengo criticizes government plan for protest victims reparations"
 schema: "NewsArticle"
 ---
 
-## The Moral Cost of State Reparations
+## The Moral Cost of State Reparations Orengo criticizes government plan for protest victims reparations is the central subject of the update.
 
 Siaya Governor James Orengo has denounced the government's proposed Ksh2 billion compensation package for protest victims as a transactional maneuver designed to preemptively silence dissent before the upcoming June 25 memorial.
 

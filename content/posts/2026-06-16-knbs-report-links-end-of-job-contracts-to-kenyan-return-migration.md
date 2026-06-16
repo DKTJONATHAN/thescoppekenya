@@ -1,18 +1,20 @@
 ---
 title: "KNBS Report Links End of Job Contracts to Kenyan Return Migration"
 slug: "knbs-report-links-end-of-job-contracts-to-kenyan-return-migration"
-description: "A new Kenya National Bureau of Statistics report shows that expired employment contracts drive most Kenyans returning home after working abroad recently."
+description: "KNBS Report Links End of Job Contracts to Kenyan Return Migration: A new Kenya National Bureau of Statistics report shows that expired employment contracts"
+excerpt: "The Boomerang Effect: Why Kenyan Diaspora Dreams Are Hitting the Contract Ceiling The Kenya National Bureau of Statistics has released data"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/23WNg0M3/28a6217b8038.jpg"
 category: "News"
 tags: ["kenya", "knbs", "labour migration", "remittances", "employment", "economy"]
+canonical: "https://zandani.co.ke/article/knbs-report-links-end-of-job-contracts-to-kenyan-return-migration"
 date: "2026-06-16T10:13:53Z"
 dateModified: "2026-06-16T10:13:53Z"
+focusKeyword: "KNBS Report Links End of Job Contracts to Kenyan Return Migration"
 schema: "NewsArticle"
 ---
 
-## The Boomerang Effect: Why Kenyan Diaspora Dreams Are Hitting the Contract Ceiling
+## The Boomerang Effect: Why Kenyan Diaspora Dreams Are Hitting the Contract Ceiling KNBS Report Links End of Job Contracts to Kenyan Return Migration is the central subject of the update.
 
 The Kenya National Bureau of Statistics has released data confirming that the vast majority of our citizens returning from international roles are doing so not by choice, but because their work visas and labor agreements have reached their natural end. This influx represents a cycle of temporary migration that often leaves the domestic economy scrambling to absorb thousands of workers who were once considered economic lifelines.
 

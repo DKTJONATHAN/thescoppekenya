@@ -1,18 +1,20 @@
 ---
 title: "Radio Maisha presenter Jitabi reconsiders relationship with Obinna"
 slug: "radio-maisha-presenter-jitabi-reconsiders-relationship-with-obinna"
-description: "Radio Maisha presenter Jitabi reveals that a birthday gift from Oga Obinna has changed her perspective on their professional dynamic."
+description: "Radio Maisha presenter Jitabi reconsiders relationship with Obinn: Radio Maisha presenter Jitabi reveals that a birthday gift from Oga Obinna has changed her"
+excerpt: "Flowers, Fences, and the Currency of Grace The professional distance between radio rivals is usually reinforced by years of subtle slights a"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/QFCVLRN3/7215eebc7c53.jpg"
 category: "Gossip"
 tags: ["jitabi", "oga obinna", "radio maisha", "kenyan celebrities", "konnect show", "kenyan media"]
+canonical: "https://zandani.co.ke/article/radio-maisha-presenter-jitabi-reconsiders-relationship-with-obinna"
 date: "2026-06-16T13:05:40Z"
 dateModified: "2026-06-16T13:05:40Z"
+focusKeyword: "Radio Maisha presenter Jitabi reconsiders relationship with Obinn"
 schema: "NewsArticle"
 ---
 
-## Flowers, Fences, and the Currency of Grace
+## Flowers, Fences, and the Currency of Grace Radio Maisha presenter Jitabi reconsiders relationship with Obinn is the central subject of the update.
 
 The professional distance between radio rivals is usually reinforced by years of subtle slights and calculated jabs. However, for Jitabi, a single bouquet has bridged a long-standing divide. Following a birthday gesture that surprised the industry, the Radio Maisha host is recalibrating how she engages with Oga Obinna.
 

@@ -1,18 +1,20 @@
 ---
 title: "Micah Cheserem: The Man Who Stabilized Kenya's Monetary Policy"
 slug: "micah-cheserem-central-bank-monetary-policy-reform"
-description: "Discover how Micah Cheserem transformed the Central Bank of Kenya by purging politically-linked banks and restoring fiscal discipline."
+description: "Micah Cheserem: The Man Who Stabilized Kenya's Monetary Policy: Discover how Micah Cheserem transformed the Central Bank of Kenya by purging politically-linked"
+excerpt: "Why the 1993 Economic Reset Still Protects Your Wallet In July 1993, the Kenyan shilling was in freefall, and inflation hit a staggering 100"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/CKcf5bnx/6d61a1904c5c.png"
 category: "Business"
 tags: ["central bank of kenya", "kenyan economy", "micah cheserem", "goldenberg scandal", "monetary policy", "banking regulation"]
+canonical: "https://zandani.co.ke/article/micah-cheserem-central-bank-monetary-policy-reform"
 date: "2026-06-16T10:20:52Z"
 dateModified: "2026-06-16T10:20:52Z"
+focusKeyword: "Micah Cheserem: The Man Who Stabilized Kenya's Monetary Policy"
 schema: "NewsArticle"
 ---
 
-## Why the 1993 Economic Reset Still Protects Your Wallet
+## Why the 1993 Economic Reset Still Protects Your Wallet Micah Cheserem: The Man Who Stabilized Kenya's Monetary Policy is the central subject of the update.
 
 In July 1993, the Kenyan shilling was in freefall, and inflation hit a staggering 100 percent. The arrival of Micah Cheserem at the Central Bank of Kenya marked the end of the printing press era, forcing the government to stop spending money it did not have.
 

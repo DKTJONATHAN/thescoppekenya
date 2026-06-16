@@ -1,18 +1,20 @@
 ---
 title: "Trevoh Chalobah replaces Tino Livramento in England squad"
 slug: "trevoh-chalobah-replaces-tino-livramento-england-squad"
-description: "Trevoh Chalobah has been called up to the England World Cup squad after Tino Livramento was ruled out following a calf injury in training."
+description: "Trevoh Chalobah replaces Tino Livramento in England squad: Trevoh Chalobah has been called up to the England World Cup squad after Tino Livramento was ruled"
+excerpt: "Defensive Realignment: England’s Tactical Shift Trevoh Chalobah has joined the England World Cup camp following Tino Livramento’s withdrawal"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/TMQKLKZs/4eba97d996ff.jpg"
 category: "Sports"
 tags: ["football", "england team", "world cup", "sports news", "player injury", "trevoh chalobah"]
+canonical: "https://zandani.co.ke/article/trevoh-chalobah-replaces-tino-livramento-england-squad"
 date: "2026-06-16T15:24:47Z"
 dateModified: "2026-06-16T15:24:47Z"
+focusKeyword: "Trevoh Chalobah replaces Tino Livramento in England squad"
 schema: "NewsArticle"
 ---
 
-## Defensive Realignment: England’s Tactical Shift
+## Defensive Realignment: England’s Tactical Shift Trevoh Chalobah replaces Tino Livramento in England squad is the central subject of the update.
 
 Trevoh Chalobah has joined the England World Cup camp following Tino Livramento’s withdrawal due to a calf injury. Thomas Tuchel must now adjust his tactical blueprint, pivoting from an attack-minded, high-overlap flank strategy to a more rigid defensive framework. This personnel change alters the composition of the backline, favoring stability and positional discipline over the aggressive, high-risk approach initially planned for the tournament.
 

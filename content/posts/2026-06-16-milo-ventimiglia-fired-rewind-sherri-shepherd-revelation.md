@@ -14,7 +14,7 @@ focusKeyword: "'Milo Ventimiglia Fired From Unaired Sitcom Rewind, Sherri Shephe
 schema: "NewsArticle"
 ---
 
-## How an Early 'Rewind' Rejection Shaped Milo Ventimiglia's Career "Milo Ventimiglia Fired From Unaired Sitcom Rewind, Sherri Shephe is the central subject of the update.
+## How an Early 'Rewind' Rejection Shaped Milo Ventimiglia's Career "Milo Ventimiglia Fired From Unaired Sitcom Rewind, Sherri Shephe is the central subject of the update. 'Milo Ventimiglia Fired From Unaired Sitcom Rewind, Sherri Shephe is the central subject of the update.
 
 We often hear about actors' big breaks, but their early challenges can be just as interesting. Sherri Shepherd recently shared a surprising detail from Milo Ventimiglia's past: he was fired from the 1997 sitcom *Rewind* before it even aired. This previously little-known event shows that even successful actors like Ventimiglia experience major career bumps long before they find fame.
 

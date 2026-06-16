@@ -1,7 +1,8 @@
 ---
 title: "Homa Bay County Unable to Account for 700 Million Shillings in Health Revenue"
 slug: "homa-bay-county-unable-to-account-for-700-million-shillings-in-healt"
-description: "The Auditor General reports that Homa Bay County cannot account for 700 million shillings in health revenue collected from medical fees last fiscal year."
+description: "Homa Bay County Unable to Account for 700 Million Shillings in He: The Auditor General reports that Homa Bay County cannot account for 700 million shillings in"
+excerpt: "A recent report by the Auditor General reveals that health facilities in Homa Bay County collected 1.6 billion shillings in revenue during t"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/DgWLmtTy/121b50e51241.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["homa-bay-county", "health-sector-corruption", "county-revenue-leakage", "public-fund-mismanagement", "devolution-accountability"]
 canonical: "https://zandani.co.ke/article/homa-bay-county-unable-to-account-for-700-million-shillings-in-healt"
 date: "2026-06-16T17:21:08Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-16T17:21:08Z"
+focusKeyword: "Homa Bay County Unable to Account for 700 Million Shillings in He"
 schema: "NewsArticle"
 ---
-A recent report by the Auditor General reveals that health facilities in Homa Bay County collected 1.6 billion shillings in revenue during the last fiscal year. Of that total, the county administration has failed to provide documentation for 700 million shillings.
+
+A recent report by the Auditor General reveals that health facilities in Homa Bay County collected 1.6 billion shillings in revenue during the last fiscal year. Of that total, the county administration has failed to provide documentation for 700 million shillings. Homa Bay County Unable to Account for 700 Million Shillings in He is the central subject of the update.
 
 ## Financial Discrepancies in Homa Bay County
 

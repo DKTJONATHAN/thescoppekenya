@@ -1,18 +1,20 @@
 ---
 title: "NTSA Launches Smart Driving License Enrollment in Kimilili"
 slug: "ntsa-smart-driving-license-enrollment-kimilili-huduma-centre"
-description: "Huduma Kenya has introduced a three-day smart driving license registration drive at Kimilili Centre to help motorists upgrade from red booklets."
+description: "NTSA Launches Smart Driving License Enrollment in Kimilili: Huduma Kenya has introduced a three-day smart driving license registration drive at Kimilili Centre"
+excerpt: "Bringing Digital Licensing to Bungoma Doorsteps Motorists in Kimilili no longer have to endure the arduous journey to regional headquarters"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/3m7N9P3g/ac010b7e19bf.jpg"
 category: "News"
 tags: ["ntsa", "huduma kenya", "smart driving license", "bungoma", "tims", "kenya traffic laws"]
+canonical: "https://zandani.co.ke/article/ntsa-smart-driving-license-enrollment-kimilili-huduma-centre"
 date: "2026-06-16T20:14:18Z"
 dateModified: "2026-06-16T20:14:18Z"
+focusKeyword: "NTSA Launches Smart Driving License Enrollment in Kimilili"
 schema: "NewsArticle"
 ---
 
-## Bringing Digital Licensing to Bungoma Doorsteps
+## Bringing Digital Licensing to Bungoma Doorsteps NTSA Launches Smart Driving License Enrollment in Kimilili is the central subject of the update.
 
 Motorists in Kimilili no longer have to endure the arduous journey to regional headquarters to secure their credentials. A three-day mobile registration drive at the local Huduma Centre has finally bridged the gap for drivers who have historically been sidelined by geography.
 
