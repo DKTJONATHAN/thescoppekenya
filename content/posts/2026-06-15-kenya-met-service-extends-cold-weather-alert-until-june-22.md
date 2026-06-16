@@ -1,18 +1,20 @@
 ---
 title: "Kenya Meteorological Service Extends Cold Weather Alert to June 22"
 slug: "kenya-met-service-extends-cold-weather-alert-until-june-22"
-description: "The Kenya Meteorological Service Authority warns of continued cold weather and intermittent showers across various regions until June 22."
+description: "Kenya Meteorological Service Extends Cold Weather Alert to June 2: The Kenya Meteorological Service Authority warns of continued cold weather and intermittent"
+excerpt: "Nairobi Shivers While Mitumba Traders Make a Killing The Kenya Meteorological Service Authority has stretched its cold weather alert until J"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/RpDGFsHb/0e7323162250.jpg"
 category: "News"
 tags: ["kenya weather", "kmsa", "nairobi weather", "climate update", "kenya news", "weather forecast"]
+canonical: "https://zandani.co.ke/article/kenya-met-service-extends-cold-weather-alert-until-june-22"
 date: "2026-06-15T20:28:39Z"
 dateModified: "2026-06-15T20:28:39Z"
+focusKeyword: "Kenya Meteorological Service Extends Cold Weather Alert to June 2"
 schema: "NewsArticle"
 ---
 
-## Nairobi Shivers While Mitumba Traders Make a Killing
+## Nairobi Shivers While Mitumba Traders Make a Killing Kenya Meteorological Service Extends Cold Weather Alert to June 2 is the central subject of the update.
 
 The Kenya Meteorological Service Authority has stretched its cold weather alert until June 22, forcing residents to swap light layers for heavy sweaters as temperatures in highland regions plummet to single digits. This week-long deep freeze is changing daily routines from Githurai to Eldoret.
 
