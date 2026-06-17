@@ -135,10 +135,10 @@
     "23ed635d03750a94817fd1888715e6ab",
     "89f746bb4ed3c1a58fda6689854c83bb",
     "ac50f76f37be3ceec70ac89587f32591",
-    "5839ba0d012c2565358f1040f3cfc2a1"
+    "5839ba0d012c2565358f1040f3cfc2a1",
+    "64d5cf05e5431f9370d3a19ea7ddbb8d"
   ],
   "style_history": [
-    "Hard News Lead",
     "Backgrounder",
     "Explainer",
     "Critical Take",
@@ -167,7 +167,8 @@
     "Backgrounder",
     "Explainer",
     "Critical Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Backgrounder"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -221,6 +222,7 @@
     "timeline_shift|NTSA|Backgrounder",
     "myth_vs_fact|Kenya Budget 2026/27|Explainer",
     "myth_vs_fact|FIFA World Cup|Critical Take",
-    "policy_gap|Meta|Hard News Lead"
+    "policy_gap|Meta|Hard News Lead",
+    "story_progression|NTSA|Backgrounder"
   ]
 }
