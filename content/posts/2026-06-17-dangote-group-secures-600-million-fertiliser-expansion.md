@@ -1,18 +1,20 @@
 ---
 title: "Dangote Group secures US$600 million for fertiliser expansion"
 slug: "dangote-group-secures-600-million-fertiliser-expansion"
-description: "Africa Finance Corporation provides a multi-million dollar funding package to boost fertiliser production in Nigeria and Ethiopia."
+description: "Dangote Group secures US$600 million for fertiliser expansion: Africa Finance Corporation provides a multi-million dollar funding package to boost fertiliser"
+excerpt: "Industrial Giants Anchor the AfCFTA Promise The Africa Finance Corporation has finalized a US$600 million financial facility for Greenview F"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/kgCyykVw/3939c8ccfff6.jpg"
 category: "Business"
 tags: ["agriculture", "africa business", "fertiliser", "aliko dangote", "infrastructure", "investment"]
+canonical: "https://zandani.co.ke/article/dangote-group-secures-600-million-fertiliser-expansion"
 date: "2026-06-17T10:00:21Z"
 dateModified: "2026-06-17T10:00:21Z"
+focusKeyword: "Dangote Group secures US$600 million for fertiliser expansion"
 schema: "NewsArticle"
 ---
 
-## Industrial Giants Anchor the AfCFTA Promise
+## Industrial Giants Anchor the AfCFTA Promise Dangote Group secures US$600 million for fertiliser expansion is the central subject of the update.
 
 The Africa Finance Corporation has finalized a US$600 million financial facility for Greenview Fertiliser Corp. This strategic capital injection aims to shift continental agriculture away from a fragmented reliance on imports, fostering instead a cohesive and localized production network. By strengthening industrial capacity across two of Africa’s most populous markets, this initiative represents a concrete step toward realizing the promise of regional integration.
 

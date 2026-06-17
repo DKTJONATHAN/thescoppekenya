@@ -1,18 +1,20 @@
 ---
 title: "Johnnie Walker AfroExchange Brings Music and Art to Kisumu"
 slug: "johnnie-walker-afroexchange-kisumu-music-art-event"
-description: "The Johnnie Walker AfroExchange event at Berlin Lounge 042 celebrated modern African culture through music and art in Kisumu, Kenya."
+description: "Johnnie Walker AfroExchange Brings Music and Art to Kisumu: The Johnnie Walker AfroExchange event at Berlin Lounge 042 celebrated modern African culture"
+excerpt: "Kisumu Is Demanding More Than Just One Night The energy at Berlin Lounge 042 has not dissipated even three days after the curtains closed on"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/39vdd2sj/e95537629da2.jpg"
 category: "Gossip"
 tags: ["kisumu", "johnnie walker", "afroexchange", "okello max", "kenyan entertainment", "kenyan lifestyle"]
+canonical: "https://zandani.co.ke/article/johnnie-walker-afroexchange-kisumu-music-art-event"
 date: "2026-06-17T12:31:43Z"
 dateModified: "2026-06-17T12:31:43Z"
+focusKeyword: "Johnnie Walker AfroExchange Brings Music and Art to Kisumu"
 schema: "NewsArticle"
 ---
 
-## Kisumu Is Demanding More Than Just One Night
+## Kisumu Is Demanding More Than Just One Night Johnnie Walker AfroExchange Brings Music and Art to Kisumu is the central subject of the update.
 
 The energy at Berlin Lounge 042 has not dissipated even three days after the curtains closed on the latest AfroExchange showcase. While the event brought high-octane performances to the lakeside city, the real story is the hunger for a permanent creative infrastructure that keeps this momentum alive.
 

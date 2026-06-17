@@ -1,18 +1,20 @@
 ---
 title: "Homa Bay sanitation projects questioned amid school infrastructure woes"
 slug: "homa-bay-sanitation-projects-questioned-amid-school-infrastructure-woe"
-description: "Educators in Karachuonyo decry poor sanitation as Governor Gladys Wanga defends the Ksh 500,000 cost of a two-door pit latrine before the Senate committee."
+description: "Homa Bay sanitation projects questioned amid school infrastructur: Educators in Karachuonyo decry poor sanitation as Governor Gladys Wanga defends the Ksh"
+excerpt: "The Cost of a Hole in the Ground Homa Bay County officials claim a two door pit latrine is worth half a million shillings, yet schools like"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/xqr51DsS/d5324031580a.jpg"
 category: "News"
 tags: ["homa bay", "gladys wanga", "kenyan education", "senate committee", "public spending", "karachuonyo"]
+canonical: "https://zandani.co.ke/article/homa-bay-sanitation-projects-questioned-amid-school-infrastructure-woe"
 date: "2026-06-17T09:53:56Z"
 dateModified: "2026-06-17T09:53:56Z"
+focusKeyword: "Homa Bay sanitation projects questioned amid school infrastructur"
 schema: "NewsArticle"
 ---
 
-## The Cost of a Hole in the Ground
+## The Cost of a Hole in the Ground Homa Bay sanitation projects questioned amid school infrastructur is the central subject of the update.
 
 Homa Bay County officials claim a two-door pit latrine is worth half a million shillings, yet schools like Nyaburi Primary are left with crumbling, hazardous facilities. This budget discrepancy reveals a glaring disconnect between executive accounting and the harsh, dangerous reality facing rural students.
 

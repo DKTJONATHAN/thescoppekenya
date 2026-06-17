@@ -1,18 +1,20 @@
 ---
 title: "Kenyan Journalists Urged to Lead Narrative on China Partnerships"
 slug: "kenyan-journalists-urged-to-lead-narrative-on-china-partnerships"
-description: "Kenyan media must take charge of reporting on China-Kenya development projects to address public misconceptions and drive local agency."
+description: "Kenyan Journalists Urged to Lead Narrative on China Partnerships: Kenyan media must take charge of reporting on China-Kenya development projects to address"
+excerpt: "The Narrative Sovereignty Gap: Why Kenyan Journalists Must Reclaim the China Beat Kenyan journalism is currently suffering from a severe cas"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/DfPD3CTC/2a18415794ea.jpg"
 category: "Opinions"
 tags: ["kenya", "china", "journalism", "international relations", "belt and road initiative", "media development"]
+canonical: "https://zandani.co.ke/article/kenyan-journalists-urged-to-lead-narrative-on-china-partnerships"
 date: "2026-06-17T12:58:33Z"
 dateModified: "2026-06-17T12:58:33Z"
+focusKeyword: "Kenyan Journalists Urged to Lead Narrative on China Partnerships"
 schema: "NewsArticle"
 ---
 
-## The Narrative Sovereignty Gap: Why Kenyan Journalists Must Reclaim the China Beat
+## The Narrative Sovereignty Gap: Why Kenyan Journalists Must Reclaim the China Beat Kenyan Journalists Urged to Lead Narrative on China Partnerships is the central subject of the update.
 
 Kenyan journalism is currently suffering from a severe case of imported perspective. For too long, our newsrooms have relied on foreign wire services to frame our most significant bilateral development partnerships. While local reporting excels in domestic coverage, such as documenting how boxer Potifus Odipo recently secured major cash prizes and a vehicle after his latest victories, our analysis of international economic cooperation remains tethered to borrowed scripts. 
 

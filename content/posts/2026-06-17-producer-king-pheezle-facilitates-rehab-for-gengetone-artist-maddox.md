@@ -1,18 +1,20 @@
 ---
 title: "Producer King Pheezle facilitates rehab for Gengetone artist Maddox"
 slug: "producer-king-pheezle-facilitates-rehab-for-gengetone-artist-maddox"
-description: "Gengetone artist Maddox has enrolled in a six-month rehabilitation program to address addiction struggles with the support of producer King Pheezle."
+description: "Producer King Pheezle facilitates rehab for Gengetone artist Madd: Gengetone artist Maddox has enrolled in a six-month rehabilitation program to address"
+excerpt: "The Gengetone Redemption: A Quiet Path Out of the Spotlight The Gengetone industry is experiencing a rare moment of introspection as produce"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/V0j4sw0w/e45229d627b0.png"
 category: "Gossip"
 tags: ["maddox", "gengetone", "kenyan music", "boondocks gang", "king pheezle", "entertainment news"]
+canonical: "https://zandani.co.ke/article/producer-king-pheezle-facilitates-rehab-for-gengetone-artist-maddox"
 date: "2026-06-17T11:16:07Z"
 dateModified: "2026-06-17T11:16:07Z"
+focusKeyword: "Producer King Pheezle facilitates rehab for Gengetone artist Madd"
 schema: "NewsArticle"
 ---
 
-## The Gengetone Redemption: A Quiet Path Out of the Spotlight
+## The Gengetone Redemption: A Quiet Path Out of the Spotlight Producer King Pheezle facilitates rehab for Gengetone artist Madd is the central subject of the update.
 
 The Gengetone industry is experiencing a rare moment of introspection as producer King Pheezle orchestrates a structured recovery program for Maddox. Eschewing the digital pageantry that often accompanies celebrity life, this approach prioritizes clinical rehabilitation over viral content, signaling a potential turning point for how the local music scene handles internal crises.
 
