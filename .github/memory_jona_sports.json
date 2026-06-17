@@ -215,10 +215,10 @@
     "9fa5668793c8296678a1aba957806ce4",
     "9c39008430e2c65246cf74bfb65abf51",
     "07e34d8b2a79eb201ee4969ab0aa42f6",
-    "a520e5fba8ff34465c695f3ba5d00c95"
+    "a520e5fba8ff34465c695f3ba5d00c95",
+    "13af47d665f65f1c51ac39679287a1f3"
   ],
   "style_history": [
-    "Stat Story",
     "Cynical Pundit",
     "Player Profile Beat",
     "Match Report",
@@ -247,10 +247,10 @@
     "Cynical Pundit",
     "Tactical Take",
     "Match Report",
-    "Stat Story"
+    "Stat Story",
+    "Player Profile Beat"
   ],
   "angle_history": [
-    "timeline_shift|Premier League|Player Profile Beat",
     "winners_losers|Premier League|Tactical Take",
     "policy_gap|Premier League|Cynical Pundit",
     "timeline_shift|La Liga|Match Report",
@@ -329,6 +329,7 @@
     "money_follow|West Ham United|Cynical Pundit",
     "accountability|FIFA World Cup|Tactical Take",
     "winners_losers|FIFA World Cup|Match Report",
-    "story_progression|England football|Stat Story"
+    "story_progression|England football|Stat Story",
+    "winners_losers|World Cup|Player Profile Beat"
   ]
 }
