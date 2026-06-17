@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Dangote Group secures US$600 million for fertiliser expansion](https://zandani.co.ke/article/dangote-group-secures-600-million-fertiliser-expansion) - Africa Finance Corporation provides a multi-million dollar funding package to boost fertiliser production in Nigeria and Ethiopia.
 - [Homa Bay sanitation projects questioned amid school infrastructure woes](https://zandani.co.ke/article/homa-bay-sanitation-projects-questioned-amid-school-infrastructure-woe) - Educators in Karachuonyo decry poor sanitation as Governor Gladys Wanga defends the Ksh 500,000 cost of a two-door pit latrine before the Senate committee.
 - [NTSA Launches Smart Driving License Enrollment in Kimilili](https://zandani.co.ke/article/ntsa-smart-driving-license-enrollment-kimilili-huduma-centre) - NTSA Launches Smart Driving License Enrollment in Kimilili: Huduma Kenya has introduced a three-day smart driving license registration drive at Kimilili Centre
 - [Homa Bay County Unable to Account for 700 Million Shillings in Health Revenue](https://zandani.co.ke/article/homa-bay-county-unable-to-account-for-700-million-shillings-in-healt) - Homa Bay County Unable to Account for 700 Million Shillings in He: The Auditor General reports that Homa Bay County cannot account for 700 million shillings in
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Kenya Hosts World Desertification Day Focusing on Rangeland Health](https://zandani.co.ke/article/kenya-hosts-world-desertification-day-focusing-on-rangeland-health) - Kenya Hosts World Desertification Day Focusing on Rangeland Healt: Kenya highlights the vital role of rangelands in climate resilience during World
 - [Radio Maisha presenter Jitabi reconsiders relationship with Obinna](https://zandani.co.ke/article/radio-maisha-presenter-jitabi-reconsiders-relationship-with-obinna) - Radio Maisha presenter Jitabi reconsiders relationship with Obinn: Radio Maisha presenter Jitabi reveals that a birthday gift from Oga Obinna has changed her
 - [Jaguar faces anti-government chants at Mataha Festival in Thika](https://zandani.co.ke/article/jaguar-faces-anti-government-chants-at-mataha-festival-in-thika) - Jaguar faces anti-government chants at Mataha Festival in Thika: Musician Jaguar faced vocal opposition from the crowd at the MKU Pavilion in Thika as
-- [Micah Cheserem: The Man Who Stabilized Kenya's Monetary Policy](https://zandani.co.ke/article/micah-cheserem-central-bank-monetary-policy-reform) - Micah Cheserem: The Man Who Stabilized Kenya's Monetary Policy: Discover how Micah Cheserem transformed the Central Bank of Kenya by purging politically-linked
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
