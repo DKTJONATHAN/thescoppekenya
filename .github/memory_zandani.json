@@ -291,10 +291,10 @@
     "a202d8827f5f9817eac21f93ce888618",
     "7733e5e309f519a2df09c535bda005e3",
     "123b762df03f3cbc0d34749c14a48633",
-    "9d20b4b11fd1ea354c8247a10a235359"
+    "9d20b4b11fd1ea354c8247a10a235359",
+    "3f6fa2362f266fbf14f8040e2a1625eb"
   ],
   "style_history": [
-    "Receipts Piece",
     "Profile Beat",
     "Reaction Round-up",
     "Hard News Lead",
@@ -323,10 +323,10 @@
     "Reaction Round-up",
     "Receipts Piece",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "money_follow|Kenyan Shillings|Receipts Piece",
     "winners_losers|Kenyan music|Reaction Round-up",
     "winners_losers|Kenyan entertainment|Hard News Lead",
     "accountability|Rachel Wandeto|Profile Beat",
@@ -405,6 +405,7 @@
     "timeline_shift|FIFA World Cup|Reaction Round-up",
     "money_follow|Otile Brown|Receipts Piece",
     "story_progression|Kenya|Trend Take",
-    "accountability|Radio Maisha|Profile Beat"
+    "accountability|Radio Maisha|Profile Beat",
+    "next_48_hours|Johnnie Walker|Reaction Round-up"
   ]
 }
