@@ -234,10 +234,10 @@
     "b5a54b744ec34ef897429e73782e6df0",
     "ea02ebd9cc04526eca5a231335f6374d",
     "7bd69b1200a1ea5bd07ed45b59aeeb2d",
-    "e93079d57d067cf007aa5c8971be7363"
+    "e93079d57d067cf007aa5c8971be7363",
+    "e327dd4440792de5e8905086e7c0a975"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Receipts Piece",
     "Trend Take",
     "Hard News Lead",
@@ -266,7 +266,8 @@
     "Profile Beat",
     "Hard News Lead",
     "Receipts Piece",
-    "Trend Take"
+    "Trend Take",
+    "Reaction Round-up"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -341,6 +342,7 @@
     "myth_vs_fact|Grace Ekirapa|Profile Beat",
     "policy_gap|Kenya|Hard News Lead",
     "money_follow|King Kaka|Receipts Piece",
-    "story_progression|Mataha Festival|Trend Take"
+    "story_progression|Mataha Festival|Trend Take",
+    "story_progression|Gengetone|Reaction Round-up"
   ]
 }
