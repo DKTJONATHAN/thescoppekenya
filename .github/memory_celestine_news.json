@@ -250,10 +250,10 @@
     "cf1d8c2b498bbf17e6b9896acea2eeb0",
     "050a6a83ec78615929d9d25cf954a5cf",
     "e92b20d342dbd5ebdd0754dd24431a4d",
-    "2d62cd1576397388cebbb2ffeb409ba6"
+    "2d62cd1576397388cebbb2ffeb409ba6",
+    "f8d6cdc664e780c8810999b458688703"
   ],
   "style_history": [
-    "Power Accountability",
     "Hard News Lead",
     "Context Backgrounder",
     "Explainer",
@@ -282,10 +282,10 @@
     "Context Backgrounder",
     "Hard News Lead",
     "Explainer",
-    "Power Accountability"
+    "Power Accountability",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "story_progression|KUCCPS|Power Accountability",
     "policy_gap|KeNHA|Context Backgrounder",
     "winners_losers|NTSA|Explainer",
     "story_progression|Kenya|Hard News Lead",
@@ -364,6 +364,7 @@
     "winners_losers|Kenya National Bureau of Statistics|Context Backgrounder",
     "accountability|reparations|Hard News Lead",
     "winners_losers|NTSA|Explainer",
-    "money_follow|education|Power Accountability"
+    "money_follow|education|Power Accountability",
+    "winners_losers|KNEC|Reaction & Voices"
   ]
 }
