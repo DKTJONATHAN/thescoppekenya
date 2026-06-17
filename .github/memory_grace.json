@@ -173,10 +173,10 @@
     "c60e31a64a095ce1b70ec1ec45b55ce7",
     "4af754046e51a1957d2f59e5f02890bf",
     "28b4f56d837b15413419162f8a735c10",
-    "e470bcfb5bf69f56c1a67fcb882660af"
+    "e470bcfb5bf69f56c1a67fcb882660af",
+    "61be20910ab752207b0aaecd73a621be"
   ],
   "style_history": [
-    "Backgrounder",
     "Markets Report",
     "SME Angle",
     "Explainer",
@@ -205,10 +205,10 @@
     "Backgrounder",
     "Power Accountability",
     "Markets Report",
-    "Explainer"
+    "Explainer",
+    "Backgrounder"
   ],
   "angle_history": [
-    "impact_on_citizens|Dangote Petroleum Refinery|Explainer",
     "policy_gap|Trade Deficit|Backgrounder",
     "accountability|Fintech|Power Accountability",
     "money_follow|Konza Technopolis|Markets Report",
@@ -287,6 +287,7 @@
     "policy_gap|sovereign debt|Backgrounder",
     "money_follow|Safaricom|Power Accountability",
     "money_follow|geopolitics|Markets Report",
-    "timeline_shift|Central Bank of Kenya|Explainer"
+    "timeline_shift|Central Bank of Kenya|Explainer",
+    "story_progression|fertiliser|Backgrounder"
   ]
 }
