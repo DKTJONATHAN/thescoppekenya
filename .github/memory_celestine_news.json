@@ -249,10 +249,10 @@
     "f6779f59408d4d76ea8e948c177514bc",
     "cf1d8c2b498bbf17e6b9896acea2eeb0",
     "050a6a83ec78615929d9d25cf954a5cf",
-    "e92b20d342dbd5ebdd0754dd24431a4d"
+    "e92b20d342dbd5ebdd0754dd24431a4d",
+    "2d62cd1576397388cebbb2ffeb409ba6"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Power Accountability",
     "Hard News Lead",
     "Context Backgrounder",
@@ -281,10 +281,10 @@
     "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Power Accountability"
   ],
   "angle_history": [
-    "money_follow|Matatu Workers Union|Reaction & Voices",
     "story_progression|KUCCPS|Power Accountability",
     "policy_gap|KeNHA|Context Backgrounder",
     "winners_losers|NTSA|Explainer",
@@ -363,6 +363,7 @@
     "story_progression|Kenya|Reaction & Voices",
     "winners_losers|Kenya National Bureau of Statistics|Context Backgrounder",
     "accountability|reparations|Hard News Lead",
-    "winners_losers|NTSA|Explainer"
+    "winners_losers|NTSA|Explainer",
+    "money_follow|education|Power Accountability"
   ]
 }
