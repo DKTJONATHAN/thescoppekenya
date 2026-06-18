@@ -260,10 +260,10 @@
     "b6ab9c0227e2c86bfbab7c44b1e7d233",
     "ab7998d6fc55f63b82c3f473b8bc666f",
     "4c059df697d1292c287f82326fb63e91",
-    "92812ccc79fed12fa48df77d8aaf407d"
+    "92812ccc79fed12fa48df77d8aaf407d",
+    "36f0a99c37e42f681ef2090f6cd1ab3a"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Explainer",
     "Reaction Round-up",
@@ -292,10 +292,10 @@
     "Profile Beat",
     "Hard News Lead",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "impact_on_citizens|Boston Blue|Hard News Lead",
     "myth_vs_fact|Stewart McLean|Trend Take",
     "impact_on_citizens|Star Wars|Reaction Round-up",
     "myth_vs_fact|Lost|Explainer",
@@ -374,6 +374,7 @@
     "story_progression|NBA|Profile Beat",
     "story_progression|na|Hard News Lead",
     "story_progression|Rewind|Explainer",
-    "accountability|medical drama|Trend Take"
+    "accountability|medical drama|Trend Take",
+    "story_progression|Survivor|Profile Beat"
   ]
 }
