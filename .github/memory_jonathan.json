@@ -154,10 +154,10 @@
     "97fc8b224d03d82c987a5d9c8d1495d0",
     "595620b1c6d5bd812e5becfb068fea58",
     "5fe40761acefd8bd26ca997715ffc126",
-    "effea65b9b271f36f22a64e838ef7e72"
+    "effea65b9b271f36f22a64e838ef7e72",
+    "0028b71468ea55aad2b3705955917ef0"
   ],
   "style_history": [
-    "Sharp Column",
     "Counterpoint",
     "Letter Form",
     "Personal Reflection",
@@ -186,10 +186,10 @@
     "Historical Lens",
     "Letter Form",
     "Counterpoint",
-    "Sharp Column"
+    "Sharp Column",
+    "Historical Lens"
   ],
   "angle_history": [
-    "accountability|Kenya|Sharp Column",
     "timeline_shift|retirement|Historical Lens",
     "impact_on_citizens|Somalia|Letter Form",
     "policy_gap|Somalia elections|Personal Reflection",
@@ -268,6 +268,7 @@
     "timeline_shift|Law Society of Kenya|Historical Lens",
     "accountability|Kenya|Letter Form",
     "myth_vs_fact|rangelands|Counterpoint",
-    "accountability|Journalism|Sharp Column"
+    "accountability|Journalism|Sharp Column",
+    "money_follow|Reproductive Health|Historical Lens"
   ]
 }
