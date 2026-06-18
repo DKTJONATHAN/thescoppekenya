@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Nairobi protests highlight health worker demands and memorial plans](https://zandani.co.ke/article/nairobi-protests-health-workers-memorial-march) - Health workers demand permanent employment in Nairobi as political leaders seek police approval for a memorial march honoring past protest victims.
 - [IG Douglas Kanja orders nationwide crackdown on reckless matatus](https://zandani.co.ke/article/ig-kanja-orders-nationwide-crackdown-on-reckless-matatus) - Police IG Douglas Kanja has launched a nationwide crackdown on matatus following a surge in road accidents and public outcry over reckless driving habits.
 - [Al Hilal plans €170m talks for Manchester United winger Marcus Rashford](https://zandani.co.ke/article/al-hilal-plans-170m-talks-for-manchester-united-winger-marcus-rashfo) - Al Hilal's €170m Mirage for Rashford's "Dream" Marcus Rashford's "dream" Barcelona return hinges precariously on Al Hilal's sprawling €170m pursuit of Raphinha. With his €30m option ignored and Manchester United desperate to offload their £40m asset, the...
 - [Nandi family buries young pupil in makeshift casket due to extreme poverty](https://zandani.co.ke/article/nandi-family-buries-young-pupil-in-makeshift-casket-due-to-extreme-p) - A grieving Nandi family buried young pupil Ednah Jepkemboi in a makeshift casket this week, highlighting the harsh reality of extreme rural poverty.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Kenyan Journalists Urged to Lead Narrative on China Partnerships](https://zandani.co.ke/article/kenyan-journalists-urged-to-lead-narrative-on-china-partnerships) - Kenyan Journalists Urged to Lead Narrative on China Partnerships: Kenyan media must take charge of reporting on China-Kenya development projects to address
 - [Johnnie Walker AfroExchange Brings Music and Art to Kisumu](https://zandani.co.ke/article/johnnie-walker-afroexchange-kisumu-music-art-event) - Johnnie Walker AfroExchange Brings Music and Art to Kisumu: The Johnnie Walker AfroExchange event at Berlin Lounge 042 celebrated modern African culture
 - ['The Pitt Cast & Noah Wyle Address Dr. Robby Backlash](https://zandani.co.ke/article/the-pitt-backlash-actresses-wyle-dr-robby-sexism) - 'The Pitt Cast & Noah Wyle Address Dr. Robby Backlash: The Pitt actresses and co-creator Noah Wyle address the intense audience backlash over Dr. Robby's
-- [Producer King Pheezle facilitates rehab for Gengetone artist Maddox](https://zandani.co.ke/article/producer-king-pheezle-facilitates-rehab-for-gengetone-artist-maddox) - Producer King Pheezle facilitates rehab for Gengetone artist Madd: Gengetone artist Maddox has enrolled in a six-month rehabilitation program to address
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
