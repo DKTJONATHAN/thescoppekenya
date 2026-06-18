@@ -1,7 +1,8 @@
 ---
 title: "Nandi family buries young pupil in makeshift casket due to extreme poverty"
 slug: "nandi-family-buries-young-pupil-in-makeshift-casket-due-to-extreme-p"
-description: "A grieving Nandi family buried young pupil Ednah Jepkemboi in a makeshift casket this week, highlighting the harsh reality of extreme rural poverty."
+description: "Nandi family buries young pupil in makeshift casket due to extrem: A grieving Nandi family buried young pupil Ednah Jepkemboi in a makeshift casket this week,"
+excerpt: "The community of Kapkures in Nandi County is mourning the tragic passing of Ednah Jepkemboi, a PP2 pupil at Kapkures Comprehensive School. D"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/P2vLhW7/ffe4f1ae35a3.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["nandi-county", "poverty-crisis", "funeral-hardships", "community-struggles", "economic-inequality"]
 canonical: "https://zandani.co.ke/article/nandi-family-buries-young-pupil-in-makeshift-casket-due-to-extreme-p"
 date: "2026-06-17T16:04:01Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-17T16:04:01Z"
+focusKeyword: "Nandi family buries young pupil in makeshift casket due to extrem"
 schema: "NewsArticle"
 ---
-The community of Kapkures in Nandi County is mourning the tragic passing of Ednah Jepkemboi, a PP2 pupil at Kapkures Comprehensive School. Due to extreme financial hardship, the young girl’s family was forced to bury her in a makeshift wooden box this week.
+
+The community of Kapkures in Nandi County is mourning the tragic passing of Ednah Jepkemboi, a PP2 pupil at Kapkures Comprehensive School. Due to extreme financial hardship, the young girl’s family was forced to bury her in a makeshift wooden box this week. Nandi family buries young pupil in makeshift casket due to extrem is the central subject of the update.
 
 ## A somber reflection on rural poverty
 

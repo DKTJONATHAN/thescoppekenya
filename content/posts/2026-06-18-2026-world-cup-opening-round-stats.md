@@ -1,18 +1,20 @@
 ---
 title: "2026 World Cup Opening Round Sets Historic Scoring Benchmarks"
 slug: "2026-world-cup-opening-round-stats"
-description: "The 2026 World Cup opening round delivered 75 goals across 24 matches with standout individual performances from global football stars and emerging talents."
+description: "2026 World Cup Opening Round Sets Historic Scoring Benchmarks: The 2026 World Cup opening round delivered 75 goals across 24 matches with standout individual"
+excerpt: "The Tactical Gap: What Kenya Must Learn from 2026 The 2026 World Cup opening phase delivered a relentless offensive spectacle. With 75 goals"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/bj3r8n4s/9b94621d903a.jpg"
 category: "Sports"
 tags: ["world cup", "football", "sports news", "fifa", "kenya sports"]
+canonical: "https://zandani.co.ke/article/2026-world-cup-opening-round-stats"
 date: "2026-06-18T13:45:07Z"
 dateModified: "2026-06-18T13:45:07Z"
+focusKeyword: "2026 World Cup Opening Round Sets Historic Scoring Benchmarks"
 schema: "NewsArticle"
 ---
 
-## The Tactical Gap: What Kenya Must Learn from 2026
+## The Tactical Gap: What Kenya Must Learn from 2026 2026 World Cup Opening Round Sets Historic Scoring Benchmarks is the central subject of the update.
 
 The 2026 World Cup opening phase delivered a relentless offensive spectacle. With 75 goals across 24 fixtures, the tournament has settled into an aggressive rhythm of 3.125 goals per match. While the media remains fixated on the fading embers of veteran superstars, the deeper story is found in the calculated evolution of midfield recovery and defensive geometry. For the Kenyan Premier League, these global figures are not just spectator statistics; they are a diagnostic tool for a domestic game currently caught in a cycle of stagnation.
 

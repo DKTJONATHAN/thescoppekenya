@@ -1,18 +1,20 @@
 ---
 title: "NTSA Launches Smart Driving License Registration in Kimilili"
 slug: "ntsa-smart-driving-license-registration-kimilili"
-description: "NTSA and Huduma Kenya have launched a five-day smart driving license registration drive in Kimilili to serve residents of Bungoma County."
+description: "NTSA Launches Smart Driving License Registration in Kimilili: NTSA and Huduma Kenya have launched a five-day smart driving license registration drive in"
+excerpt: "De bottlenecking the National Driving Record The NTSA is currently stress testing a localized deployment of its biometric hardware in Kimili"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/wH4v4QC/39dcc6bb8f54.webp"
 category: "Technology"
 tags: ["ntsa", "huduma kenya", "smart driving license", "bungoma county", "ecitizen", "kenya news"]
+canonical: "https://zandani.co.ke/article/ntsa-smart-driving-license-registration-kimilili"
 date: "2026-06-17T14:30:26Z"
 dateModified: "2026-06-17T14:30:26Z"
+focusKeyword: "NTSA Launches Smart Driving License Registration in Kimilili"
 schema: "NewsArticle"
 ---
 
-## De-bottlenecking the National Driving Record
+## De-bottlenecking the National Driving Record NTSA Launches Smart Driving License Registration in Kimilili is the central subject of the update.
 
 The NTSA is currently stress-testing a localized deployment of its biometric hardware in Kimilili, Bungoma County. By shifting high-stakes registration tasks away from the capital, the authority is attempting to reconcile its digital-first mandate with the reality of Kenyan geography.
 

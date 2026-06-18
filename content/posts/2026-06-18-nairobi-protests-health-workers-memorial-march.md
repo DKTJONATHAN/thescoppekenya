@@ -1,18 +1,20 @@
 ---
 title: "Nairobi protests highlight health worker demands and memorial plans"
 slug: "nairobi-protests-health-workers-memorial-march"
-description: "Health workers demand permanent employment in Nairobi as political leaders seek police approval for a memorial march honoring past protest victims."
+description: "Nairobi protests highlight health worker demands and memorial pla: Health workers demand permanent employment in Nairobi as political leaders seek police"
+excerpt: "Unpacking the Budgetary Tug of War in Nairobi Public funds are being pulled in two directions today as health workers and advocacy groups de"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/KjdT3t2p/1606c68950ec.jpg"
 category: "News"
 tags: ["kenya news", "uhc workers", "nairobi protests", "labour rights", "za ndani"]
+canonical: "https://zandani.co.ke/article/nairobi-protests-health-workers-memorial-march"
 date: "2026-06-18T09:20:05Z"
 dateModified: "2026-06-18T09:20:05Z"
+focusKeyword: "Nairobi protests highlight health worker demands and memorial pla"
 schema: "NewsArticle"
 ---
 
-## Unpacking the Budgetary Tug of War in Nairobi
+## Unpacking the Budgetary Tug of War in Nairobi Nairobi protests highlight health worker demands and memorial pla is the central subject of the update.
 
 Public funds are being pulled in two directions today as health workers and advocacy groups descend on the capital, highlighting a growing tension between settling long-overdue labor debts and accounting for the high costs of civil unrest.
 

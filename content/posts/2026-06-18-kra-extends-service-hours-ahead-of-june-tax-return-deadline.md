@@ -1,18 +1,20 @@
 ---
 title: "KRA Extends Service Hours Ahead of June Tax Return Deadline"
 slug: "kra-extends-service-hours-ahead-of-june-tax-return-deadline"
-description: "The Kenya Revenue Authority has extended its operating hours at service centers and contact lines to assist taxpayers meeting the June 30 deadline."
+description: "KRA Extends Service Hours Ahead of June Tax Return Deadline: The Kenya Revenue Authority has extended its operating hours at service centers and contact lines"
+excerpt: "Filing Taxes Without the Last Minute Panic With the June 30 deadline looming, taxpayers are feeling the familiar pressure of the annual fili"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/HpVR7zKH/5e43213fd6e0.webp"
 category: "Technology"
 tags: ["kra", "tax returns", "kenya revenue authority", "itax", "kenya news", "tax compliance"]
+canonical: "https://zandani.co.ke/article/kra-extends-service-hours-ahead-of-june-tax-return-deadline"
 date: "2026-06-18T14:24:52Z"
 dateModified: "2026-06-18T14:24:52Z"
+focusKeyword: "KRA Extends Service Hours Ahead of June Tax Return Deadline"
 schema: "NewsArticle"
 ---
 
-## Filing Taxes Without the Last-Minute Panic
+## Filing Taxes Without the Last-Minute Panic KRA Extends Service Hours Ahead of June Tax Return Deadline is the central subject of the update.
 
 With the June 30 deadline looming, taxpayers are feeling the familiar pressure of the annual filing cycle. The Kenya Revenue Authority has officially pivoted its operational schedule, moving away from standard business hours to accommodate the intense surge of activity that typically hits the iTax portal in the final 48 hours. This shift is less about administrative courtesy and more about managing the systemic congestion that often leads to avoidable penalties.
 

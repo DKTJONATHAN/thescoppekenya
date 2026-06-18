@@ -1,18 +1,20 @@
 ---
 title: "Bomet Governor Hillary Barchok Sentenced to Jail for Contempt"
 slug: "bomet-governor-hillary-barchok-sentenced-to-jail-for-contempt"
-description: "The Nakuru Labour Court has sentenced Bomet Governor Hillary Barchok and ten officials to one month in prison for failing to reinstate 350 county employees."
+description: "Bomet Governor Hillary Barchok Sentenced to Jail for Contempt: The Nakuru Labour Court has sentenced Bomet Governor Hillary Barchok and ten officials to one"
+excerpt: "The Bomet Executive Defiance and the Erosion of Judicial Authority The Nakuru Employment and Labour Relations Court has issued a 30 day cust"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/tTD555WZ/ac65514c4a6f.jpg"
 category: "News"
 tags: ["bomet county", "hillary barchok", "kenyan politics", "court ruling", "labour dispute", "devolution"]
+canonical: "https://zandani.co.ke/article/bomet-governor-hillary-barchok-sentenced-to-jail-for-contempt"
 date: "2026-06-18T14:18:03Z"
 dateModified: "2026-06-18T14:18:03Z"
+focusKeyword: "Bomet Governor Hillary Barchok Sentenced to Jail for Contempt"
 schema: "NewsArticle"
 ---
 
-## The Bomet Executive Defiance and the Erosion of Judicial Authority
+## The Bomet Executive Defiance and the Erosion of Judicial Authority Bomet Governor Hillary Barchok Sentenced to Jail for Contempt is the central subject of the update.
 
 The Nakuru Employment and Labour Relations Court has issued a 30-day custodial sentence against Bomet Governor Hillary Barchok and ten senior county officials for willful disobedience of a standing order. This standoff, which leaves the future of 350 terminated workers in limbo, underscores a persistent trend where county executives treat legal mandates as optional suggestions rather than binding constitutional directives.
 

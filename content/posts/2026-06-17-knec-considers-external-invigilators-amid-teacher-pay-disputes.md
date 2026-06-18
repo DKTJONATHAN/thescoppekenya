@@ -1,18 +1,20 @@
 ---
 title: "KNEC considers external invigilators as teacher pay disputes mount"
 slug: "knec-considers-external-invigilators-amid-teacher-pay-disputes"
-description: "The Kenya National Examinations Council is exploring new hiring models for exams following teacher boycotts and delays in settling 2025 payment arrears."
+description: "KNEC considers external invigilators as teacher pay disputes moun: The Kenya National Examinations Council is exploring new hiring models for exams following"
+excerpt: "The Gig Economy Invades the Examination Hall Teachers across the country are expressing fury at the suggestion that their role in national e"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/rKdwf4gD/2a42f31fe782.jpg"
 category: "News"
 tags: ["knec", "tsc", "kuppet", "kcse", "kenya education", "teachers service commission"]
+canonical: "https://zandani.co.ke/article/knec-considers-external-invigilators-amid-teacher-pay-disputes"
 date: "2026-06-17T14:28:54Z"
 dateModified: "2026-06-17T14:28:54Z"
+focusKeyword: "KNEC considers external invigilators as teacher pay disputes moun"
 schema: "NewsArticle"
 ---
 
-## The Gig Economy Invades the Examination Hall
+## The Gig Economy Invades the Examination Hall KNEC considers external invigilators as teacher pay disputes moun is the central subject of the update.
 
 Teachers across the country are expressing fury at the suggestion that their role in national examinations is becoming obsolete, sparking fears that the sanctity of the KCSE could be sacrificed for a temporary labor fix. As educators weigh a potential boycott, the shift toward outsourced supervision threatens to dismantle the long standing professional bond between the classroom and the examination board.
 

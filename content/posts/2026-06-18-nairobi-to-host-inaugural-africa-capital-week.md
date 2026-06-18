@@ -1,18 +1,20 @@
 ---
 title: "Nairobi to Host Inaugural Africa Capital Week for Market Growth"
 slug: "nairobi-to-host-inaugural-africa-capital-week"
-description: "Kenya prepares to host Africa Capital Week to address market fragmentation and attract global investment into continental infrastructure projects."
+description: "Nairobi to Host Inaugural Africa Capital Week for Market Growth: Kenya prepares to host Africa Capital Week to address market fragmentation and attract global"
+excerpt: "The Nairobi New York Bridge: Chasing Phantom Trillions Nairobi is preparing to host Africa Capital Week this August, a move intended to anch"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/fzZj9sJj/2c21314f4efc.jpg"
 category: "Business"
 tags: ["kenya", "nairobi", "capital markets", "investment", "finance", "nse"]
+canonical: "https://zandani.co.ke/article/nairobi-to-host-inaugural-africa-capital-week"
 date: "2026-06-18T09:24:49Z"
 dateModified: "2026-06-18T09:24:49Z"
+focusKeyword: "Nairobi to Host Inaugural Africa Capital Week for Market Growth"
 schema: "NewsArticle"
 ---
 
-## The Nairobi-New York Bridge: Chasing Phantom Trillions
+## The Nairobi-New York Bridge: Chasing Phantom Trillions Nairobi to Host Inaugural Africa Capital Week for Market Growth is the central subject of the update.
 
 Nairobi is preparing to host Africa Capital Week this August, a move intended to anchor the city as the continent’s premier financial hub. Yet, the chasm between the glossy promotional brochures and the realities of the Nairobi Securities Exchange suggests we are witnessing a global circuit of deal-flow fees rather than a genuine shift in liquidity.
 

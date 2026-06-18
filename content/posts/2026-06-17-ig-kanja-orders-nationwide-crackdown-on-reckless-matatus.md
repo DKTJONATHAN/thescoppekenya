@@ -1,18 +1,20 @@
 ---
 title: "IG Douglas Kanja orders nationwide crackdown on reckless matatus"
 slug: "ig-kanja-orders-nationwide-crackdown-on-reckless-matatus"
-description: "Police IG Douglas Kanja has launched a nationwide crackdown on matatus following a surge in road accidents and public outcry over reckless driving habits."
+description: "IG Douglas Kanja orders nationwide crackdown on reckless matatus: Police IG Douglas Kanja has launched a nationwide crackdown on matatus following a surge in"
+excerpt: "Cycle of Enforcement Fails to Stem Road Carnage Inspector General of Police Douglas Kanja has directed a nationwide crackdown on matatu oper"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/VcmmwBVr/08ec620d7060.jpg"
 category: "News"
 tags: ["kenya news", "matatu sector", "road safety", "ntsa", "douglas kanja", "nairobi traffic"]
+canonical: "https://zandani.co.ke/article/ig-kanja-orders-nationwide-crackdown-on-reckless-matatus"
 date: "2026-06-17T19:28:18Z"
 dateModified: "2026-06-17T19:28:18Z"
+focusKeyword: "IG Douglas Kanja orders nationwide crackdown on reckless matatus"
 schema: "NewsArticle"
 ---
 
-## Cycle of Enforcement Fails to Stem Road Carnage
+## Cycle of Enforcement Fails to Stem Road Carnage IG Douglas Kanja orders nationwide crackdown on reckless matatus is the central subject of the update.
 
 Inspector General of Police Douglas Kanja has directed a nationwide crackdown on matatu operators, aiming to curb an 11 per cent surge in road fatalities that has intensified public demands for accountability across the Kenyan transport sector.
 

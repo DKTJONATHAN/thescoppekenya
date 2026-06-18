@@ -1,18 +1,20 @@
 ---
 title: "Jude Bellingham seeks to reclaim key role under Thomas Tuchel"
 slug: "jude-bellingham-reclaims-england-role-under-tuchel"
-description: "Jude Bellingham is fighting to secure his place in the England squad for the World Cup opener against Croatia following a challenging season under Thomas Tuchel."
+description: "Jude Bellingham seeks to reclaim key role under Thomas Tuchel: Jude Bellingham is fighting to secure his place in the England squad for the World Cup opener"
+excerpt: "The Gelsenkirchen Ghost in Dallas Jude Bellingham sits in the humid Texas heat today, a shadow of the man who stood as the icon of English r"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/67JCsKJk/48e8387e0c43.jpg"
 category: "Sports"
 tags: ["jude bellingham", "thomas tuchel", "england football", "world cup", "international football", "football news"]
+canonical: "https://zandani.co.ke/article/jude-bellingham-reclaims-england-role-under-tuchel"
 date: "2026-06-17T14:05:43Z"
 dateModified: "2026-06-17T14:05:43Z"
+focusKeyword: "Jude Bellingham seeks to reclaim key role under Thomas Tuchel"
 schema: "NewsArticle"
 ---
 
-## The Gelsenkirchen Ghost in Dallas
+## The Gelsenkirchen Ghost in Dallas Jude Bellingham seeks to reclaim key role under Thomas Tuchel is the central subject of the update.
 
 Jude Bellingham sits in the humid Texas heat today, a shadow of the man who stood as the icon of English resilience just two summers ago. The crown that once felt permanent has slipped, leaving him to fight for a place in a squad that no longer treats his name as the first one on the team sheet.
 

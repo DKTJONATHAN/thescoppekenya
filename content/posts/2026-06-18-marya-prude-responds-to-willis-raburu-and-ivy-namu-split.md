@@ -1,18 +1,20 @@
 ---
 title: "Marya Prude Responds to Willis Raburu and Ivy Namu Split"
 slug: "marya-prude-responds-to-willis-raburu-and-ivy-namu-split"
-description: "Marya Prude has publicly reacted to news regarding the separation of her former husband Willis Raburu and his current partner Ivy Namu on social media."
+description: "Marya Prude Responds to Willis Raburu and Ivy Namu Split: Marya Prude has publicly reacted to news regarding the separation of her former husband Willis Raburu"
+excerpt: "When the Past Refuses to Stay Buried Marya Prude shared a pointed digital reaction as news broke that Willis Raburu and Ivy Namu have ended"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/kgdLPS84/2b54c7ed245b.jpg"
 category: "Gossip"
 tags: ["marya prude", "willis raburu", "ivy namu", "kenyan celebrities", "entertainment news", "kenya"]
+canonical: "https://zandani.co.ke/article/marya-prude-responds-to-willis-raburu-and-ivy-namu-split"
 date: "2026-06-18T10:46:16Z"
 dateModified: "2026-06-18T10:46:16Z"
+focusKeyword: "Marya Prude Responds to Willis Raburu and Ivy Namu Split"
 schema: "NewsArticle"
 ---
 
-## When the Past Refuses to Stay Buried
+## When the Past Refuses to Stay Buried Marya Prude Responds to Willis Raburu and Ivy Namu Split is the central subject of the update.
 
 Marya Prude shared a pointed digital reaction as news broke that Willis Raburu and Ivy Namu have ended their relationship. By choosing to voice her perspective now, she highlights the inescapable reality that for public figures, yesterday's private heartbreaks often remain part of the present day narrative.
 

@@ -1,15 +1,20 @@
 ---
 title: "Al Hilal plans €170m talks for Manchester United winger Marcus Rashford"
 slug: "al-hilal-plans-170m-talks-for-manchester-united-winger-marcus-rashfo"
+description: "Al Hilal plans €170m talks for Manchester United winger Marcus Ra: Al Hilal's €170m Mirage for Rashford's 'Dream' Marcus Rashford's 'dream' Barcelona return"
+excerpt: "Al Hilal's €170m Mirage for Rashford's 'Dream' Marcus Rashford's 'dream' Barcelona return hinges precariously on Al Hilal's sprawling €170m"
 author: "Sports Desk"
 image: "https://i.ibb.co/V0C7TtfP/a74cb13e03ad.jpg"
 category: "Global News"
+tags: ["al hilal plans 170m talks for manchester united winger marcus rashfo", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/al-hilal-plans-170m-talks-for-manchester-united-winger-marcus-rashfo"
 date: "2026-06-17T17:51:55Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-06-17T17:51:55Z"
+focusKeyword: "Al Hilal plans €170m talks for Manchester United winger Marcus Ra"
 schema: "NewsArticle"
 ---
-## Al Hilal's €170m Mirage for Rashford's "Dream"
+
+## Al Hilal's €170m Mirage for Rashford's "Dream" Al Hilal plans €170m talks for Manchester United winger Marcus Ra is the central subject of the update.
 
 Marcus Rashford's "dream" Barcelona return hinges precariously on Al Hilal's sprawling €170m pursuit of Raphinha. With his €30m option ignored and Manchester United desperate to offload their £40m asset, the England winger faces a reality check: a Saudi payday or a less-than-desirable path back to Catalonia.
 
