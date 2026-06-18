@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Marya Prude Responds to Willis Raburu and Ivy Namu Split](https://zandani.co.ke/article/marya-prude-responds-to-willis-raburu-and-ivy-namu-split) - Marya Prude has publicly reacted to news regarding the separation of her former husband Willis Raburu and his current partner Ivy Namu on social media.
 - [Nairobi to Host Inaugural Africa Capital Week for Market Growth](https://zandani.co.ke/article/nairobi-to-host-inaugural-africa-capital-week) - Kenya prepares to host Africa Capital Week to address market fragmentation and attract global investment into continental infrastructure projects.
 - [Nairobi protests highlight health worker demands and memorial plans](https://zandani.co.ke/article/nairobi-protests-health-workers-memorial-march) - Health workers demand permanent employment in Nairobi as political leaders seek police approval for a memorial march honoring past protest victims.
 - [IG Douglas Kanja orders nationwide crackdown on reckless matatus](https://zandani.co.ke/article/ig-kanja-orders-nationwide-crackdown-on-reckless-matatus) - Police IG Douglas Kanja has launched a nationwide crackdown on matatus following a surge in road accidents and public outcry over reckless driving habits.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [KNEC considers external invigilators as teacher pay disputes mount](https://zandani.co.ke/article/knec-considers-external-invigilators-amid-teacher-pay-disputes) - The Kenya National Examinations Council is exploring new hiring models for exams following teacher boycotts and delays in settling 2025 payment arrears.
 - [Jude Bellingham seeks to reclaim key role under Thomas Tuchel](https://zandani.co.ke/article/jude-bellingham-reclaims-england-role-under-tuchel) - Jude Bellingham is fighting to secure his place in the England squad for the World Cup opener against Croatia following a challenging season under Thomas Tuchel.
 - [Kenyan Journalists Urged to Lead Narrative on China Partnerships](https://zandani.co.ke/article/kenyan-journalists-urged-to-lead-narrative-on-china-partnerships) - Kenyan Journalists Urged to Lead Narrative on China Partnerships: Kenyan media must take charge of reporting on China-Kenya development projects to address
-- [Johnnie Walker AfroExchange Brings Music and Art to Kisumu](https://zandani.co.ke/article/johnnie-walker-afroexchange-kisumu-music-art-event) - Johnnie Walker AfroExchange Brings Music and Art to Kisumu: The Johnnie Walker AfroExchange event at Berlin Lounge 042 celebrated modern African culture
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
