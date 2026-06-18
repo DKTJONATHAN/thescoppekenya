@@ -261,10 +261,10 @@
     "ab7998d6fc55f63b82c3f473b8bc666f",
     "4c059df697d1292c287f82326fb63e91",
     "92812ccc79fed12fa48df77d8aaf407d",
-    "36f0a99c37e42f681ef2090f6cd1ab3a"
+    "36f0a99c37e42f681ef2090f6cd1ab3a",
+    "78a7495296d51fd1001fbdb749cef776"
   ],
   "style_history": [
-    "Profile Beat",
     "Explainer",
     "Reaction Round-up",
     "Hard News Lead",
@@ -293,10 +293,10 @@
     "Hard News Lead",
     "Explainer",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "myth_vs_fact|Stewart McLean|Trend Take",
     "impact_on_citizens|Star Wars|Reaction Round-up",
     "myth_vs_fact|Lost|Explainer",
     "policy_gap|Netflix|Hard News Lead",
@@ -375,6 +375,7 @@
     "story_progression|na|Hard News Lead",
     "story_progression|Rewind|Explainer",
     "accountability|medical drama|Trend Take",
-    "story_progression|Survivor|Profile Beat"
+    "story_progression|Survivor|Profile Beat",
+    "myth_vs_fact|na|Reaction Round-up"
   ]
 }
