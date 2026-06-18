@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [2026 World Cup Opening Round Sets Historic Scoring Benchmarks](https://zandani.co.ke/article/2026-world-cup-opening-round-stats) - The 2026 World Cup opening round delivered 75 goals across 24 matches with standout individual performances from global football stars and emerging talents.
 - [Kenya Faces Critical Shortages in Essential Family Planning Supplies](https://zandani.co.ke/article/kenya-faces-critical-shortages-in-essential-family-planning-supplies) - Recurring reproductive health commodity stock-outs in Kenya threaten to undermine national goals for domestic financing by the year 2026.
 - [Milly Wa Jesus Declines to Watch The Polygamist Documentary](https://zandani.co.ke/article/milly-wa-jesus-declines-to-watch-the-polygamist-documentary) - Content creator Milly Wa Jesus has stated she will not watch the trending documentary The Polygamist, sparking playful reactions from fellow celebrities.
 - ["Survivor Animated Movie in Development, Jeff Probst Executive Producing](https://zandani.co.ke/article/survivor-animated-movie-development-jeff-probst) - A Survivor animated movie is in development, reimagining the reality competition as an animal-filled comedy. Host Jeff Probst will executive produce. Get the full story here.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [IG Douglas Kanja orders nationwide crackdown on reckless matatus](https://zandani.co.ke/article/ig-kanja-orders-nationwide-crackdown-on-reckless-matatus) - Police IG Douglas Kanja has launched a nationwide crackdown on matatus following a surge in road accidents and public outcry over reckless driving habits.
 - [Al Hilal plans €170m talks for Manchester United winger Marcus Rashford](https://zandani.co.ke/article/al-hilal-plans-170m-talks-for-manchester-united-winger-marcus-rashfo) - Al Hilal's €170m Mirage for Rashford's "Dream" Marcus Rashford's "dream" Barcelona return hinges precariously on Al Hilal's sprawling €170m pursuit of Raphinha. With his €30m option ignored and Manchester United desperate to offload their £40m asset, the...
 - [Nandi family buries young pupil in makeshift casket due to extreme poverty](https://zandani.co.ke/article/nandi-family-buries-young-pupil-in-makeshift-casket-due-to-extreme-p) - A grieving Nandi family buried young pupil Ednah Jepkemboi in a makeshift casket this week, highlighting the harsh reality of extreme rural poverty.
-- [NTSA Launches Smart Driving License Registration in Kimilili](https://zandani.co.ke/article/ntsa-smart-driving-license-registration-kimilili) - NTSA and Huduma Kenya have launched a five-day smart driving license registration drive in Kimilili to serve residents of Bungoma County.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
