@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Cleophas Malala Meets Wycliffe Oparanya Amid Allegations of Misappropriating UDA Funds](https://zandani.co.ke/article/cleophas-malala-meets-wycliffe-oparanya-amid-allegations-of-misappro) - Cleophas Malala meets Wycliffe Oparanya to discuss Western Kenya politics amid ongoing allegations concerning the misappropriation of UDA party funds.
 - [KRA Extends Service Hours Ahead of June Tax Return Deadline](https://zandani.co.ke/article/kra-extends-service-hours-ahead-of-june-tax-return-deadline) - KRA Extends Service Hours Ahead of June Tax Return Deadline: The Kenya Revenue Authority has extended its operating hours at service centers and contact lines
 - [Bomet Governor Hillary Barchok Sentenced to Jail for Contempt](https://zandani.co.ke/article/bomet-governor-hillary-barchok-sentenced-to-jail-for-contempt) - Bomet Governor Hillary Barchok Sentenced to Jail for Contempt: The Nakuru Labour Court has sentenced Bomet Governor Hillary Barchok and ten officials to one
 - [2026 World Cup Opening Round Sets Historic Scoring Benchmarks](https://zandani.co.ke/article/2026-world-cup-opening-round-stats) - 2026 World Cup Opening Round Sets Historic Scoring Benchmarks: The 2026 World Cup opening round delivered 75 goals across 24 matches with standout individual
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Marya Prude Responds to Willis Raburu and Ivy Namu Split](https://zandani.co.ke/article/marya-prude-responds-to-willis-raburu-and-ivy-namu-split) - Marya Prude Responds to Willis Raburu and Ivy Namu Split: Marya Prude has publicly reacted to news regarding the separation of her former husband Willis Raburu
 - [Nairobi to Host Inaugural Africa Capital Week for Market Growth](https://zandani.co.ke/article/nairobi-to-host-inaugural-africa-capital-week) - Nairobi to Host Inaugural Africa Capital Week for Market Growth: Kenya prepares to host Africa Capital Week to address market fragmentation and attract global
 - [Nairobi protests highlight health worker demands and memorial plans](https://zandani.co.ke/article/nairobi-protests-health-workers-memorial-march) - Nairobi protests highlight health worker demands and memorial pla: Health workers demand permanent employment in Nairobi as political leaders seek police
-- [IG Douglas Kanja orders nationwide crackdown on reckless matatus](https://zandani.co.ke/article/ig-kanja-orders-nationwide-crackdown-on-reckless-matatus) - IG Douglas Kanja orders nationwide crackdown on reckless matatus: Police IG Douglas Kanja has launched a nationwide crackdown on matatus following a surge in
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
