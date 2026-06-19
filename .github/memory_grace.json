@@ -175,10 +175,10 @@
     "28b4f56d837b15413419162f8a735c10",
     "e470bcfb5bf69f56c1a67fcb882660af",
     "61be20910ab752207b0aaecd73a621be",
-    "19aba47fe5b5efb6b675187e084cdebe"
+    "19aba47fe5b5efb6b675187e084cdebe",
+    "bbd33ebf193a31d13cfddeae90866b8b"
   ],
   "style_history": [
-    "SME Angle",
     "Explainer",
     "Power Accountability",
     "Markets Report",
@@ -207,10 +207,10 @@
     "Markets Report",
     "Explainer",
     "Backgrounder",
-    "Power Accountability"
+    "Power Accountability",
+    "Markets Report"
   ],
   "angle_history": [
-    "accountability|Fintech|Power Accountability",
     "money_follow|Konza Technopolis|Markets Report",
     "winners_losers|Fintrust Securities|Explainer",
     "timeline_shift|Fincra|Backgrounder",
@@ -289,6 +289,7 @@
     "money_follow|geopolitics|Markets Report",
     "timeline_shift|Central Bank of Kenya|Explainer",
     "story_progression|fertiliser|Backgrounder",
-    "money_follow|capital markets|Power Accountability"
+    "money_follow|capital markets|Power Accountability",
+    "next_48_hours|shareholder activism|Markets Report"
   ]
 }
