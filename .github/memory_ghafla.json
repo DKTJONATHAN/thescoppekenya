@@ -236,10 +236,10 @@
     "7bd69b1200a1ea5bd07ed45b59aeeb2d",
     "e93079d57d067cf007aa5c8971be7363",
     "e327dd4440792de5e8905086e7c0a975",
-    "a2271d27d0b1a84b5ef2cdee9487f810"
+    "a2271d27d0b1a84b5ef2cdee9487f810",
+    "968921ca9debb5f00e2a915ba52362cd"
   ],
   "style_history": [
-    "Trend Take",
     "Hard News Lead",
     "Profile Beat",
     "Receipts Piece",
@@ -268,7 +268,8 @@
     "Receipts Piece",
     "Trend Take",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -345,6 +346,7 @@
     "money_follow|King Kaka|Receipts Piece",
     "story_progression|Mataha Festival|Trend Take",
     "story_progression|Gengetone|Reaction Round-up",
-    "story_progression|celebrity gossip|Profile Beat"
+    "story_progression|celebrity gossip|Profile Beat",
+    "accountability|social media conduct|Hard News Lead"
   ]
 }
