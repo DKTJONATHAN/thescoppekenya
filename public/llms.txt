@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Bharat Thakrar leads shareholder push to reform WPP Scangroup](https://zandani.co.ke/article/bharat-thakrar-leads-shareholder-push-to-reform-wpp-scangroup) - Founder Bharat Thakrar is challenging the WPP Scangroup board over financial performance, pushing for corporate governance reforms to protect minority interests.
 - [Violence erupts at Susan Kihika and Alfred Mutai event in Kuresoi](https://zandani.co.ke/article/violence-erupts-at-susan-kihika-and-alfred-mutai-event-in-kuresoi) - Political factions clashed during a youth empowerment event at Tulwet School in Kuresoi North, resulting in injuries and the burning of a welfare bus.
 - [National Assembly Passes Finance Bill Following Electronic Vote](https://zandani.co.ke/article/national-assembly-passes-finance-bill-after-electronic-vote) - The National Assembly has officially passed the Finance Bill after a formal electronic vote. The controversial legislation now heads to the President.
 - [Tonali's representatives make Newcastle exit status clear as Manchester City intensify pursuit](https://zandani.co.ke/article/tonali-s-representatives-make-newcastle-exit-status-clear-as-manches) - Tonali's Calculated Betrayal: Newcastle's Recurring Nightmare Sandro Tonali's agents are openly orchestrating his Newcastle exit, painting a clear picture of inevitability as Manchester City intensify pursuit. This saga exposes Newcastle's fragile position and...
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Bomet Governor Hillary Barchok Sentenced to Jail for Contempt](https://zandani.co.ke/article/bomet-governor-hillary-barchok-sentenced-to-jail-for-contempt) - Bomet Governor Hillary Barchok Sentenced to Jail for Contempt: The Nakuru Labour Court has sentenced Bomet Governor Hillary Barchok and ten officials to one
 - [2026 World Cup Opening Round Sets Historic Scoring Benchmarks](https://zandani.co.ke/article/2026-world-cup-opening-round-stats) - 2026 World Cup Opening Round Sets Historic Scoring Benchmarks: The 2026 World Cup opening round delivered 75 goals across 24 matches with standout individual
 - [Kenya Faces Critical Shortages in Essential Family Planning Supplies](https://zandani.co.ke/article/kenya-faces-critical-shortages-in-essential-family-planning-supplies) - Kenya Faces Critical Shortages in Essential Family Planning Suppl: Recurring reproductive health commodity stock-outs in Kenya threaten to undermine national
-- [Milly Wa Jesus Declines to Watch The Polygamist Documentary](https://zandani.co.ke/article/milly-wa-jesus-declines-to-watch-the-polygamist-documentary) - Milly Wa Jesus Declines to Watch The Polygamist Documentary: Content creator Milly Wa Jesus has stated she will not watch the trending documentary The
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
