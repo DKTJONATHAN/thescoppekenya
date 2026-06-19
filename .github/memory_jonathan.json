@@ -155,10 +155,10 @@
     "595620b1c6d5bd812e5becfb068fea58",
     "5fe40761acefd8bd26ca997715ffc126",
     "effea65b9b271f36f22a64e838ef7e72",
-    "0028b71468ea55aad2b3705955917ef0"
+    "0028b71468ea55aad2b3705955917ef0",
+    "70cfdaeb4cf4201c958a5444cdae6ede"
   ],
   "style_history": [
-    "Counterpoint",
     "Letter Form",
     "Personal Reflection",
     "Historical Lens",
@@ -187,10 +187,10 @@
     "Letter Form",
     "Counterpoint",
     "Sharp Column",
-    "Historical Lens"
+    "Historical Lens",
+    "Letter Form"
   ],
   "angle_history": [
-    "timeline_shift|retirement|Historical Lens",
     "impact_on_citizens|Somalia|Letter Form",
     "policy_gap|Somalia elections|Personal Reflection",
     "myth_vs_fact|IVF|Counterpoint",
@@ -269,6 +269,7 @@
     "accountability|Kenya|Letter Form",
     "myth_vs_fact|rangelands|Counterpoint",
     "accountability|Journalism|Sharp Column",
-    "money_follow|Reproductive Health|Historical Lens"
+    "money_follow|Reproductive Health|Historical Lens",
+    "next_48_hours|fatherhood|Letter Form"
   ]
 }
