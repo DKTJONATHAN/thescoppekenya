@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Rising Costs and High Taxes Challenge Financial Stability for Nairobi Residents](https://zandani.co.ke/article/rising-costs-and-high-taxes-challenge-financial-stability-for-nairob) - Nairobi residents face record financial instability as soaring inflation and aggressive tax policies shrink household budgets for middle-class families.
 - [New Tech Reshapes FIFA World Cup Officiating and Match Accuracy](https://zandani.co.ke/article/new-tech-reshapes-fifa-world-cup-officiating) - The 2026 World Cup introduces advanced ball sensors and AI referee cameras to improve decision precision and provide immersive viewer perspectives.
 - [The Inspection Bubble: Echoes of a Kenya Fuel Price Hike](https://zandani.co.ke/article/the-inspection-bubble-echoes-of-a-kenya-fuel-price-hike) - In the wake of promised progress, a familiar unease settles upon the land, mirroring old follies where fortunes were built on sand, leaving a social health auth
 - [Charlie Adam evaluates Scotland tactical strategy against Morocco](https://zandani.co.ke/article/charlie-adam-evaluates-scotland-tactical-strategy-against-morocco) - Former midfielder Charlie Adam outlines the defensive discipline and tactical changes Scotland needs to beat Morocco in Boston.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Marya Prud Irungu Loses NGO Role Over Willis Raburu Comments](https://zandani.co.ke/article/marya-prud-irungu-loses-ngo-role-over-willis-raburu-comments) - Marya Prud Irungu Loses NGO Role Over Willis Raburu Comments: Content creator Marya Prud Irungu says an NGO revoked a potential ambassadorship after she shared
 - [Bharat Thakrar leads shareholder push to reform WPP Scangroup](https://zandani.co.ke/article/bharat-thakrar-leads-shareholder-push-to-reform-wpp-scangroup) - Bharat Thakrar leads shareholder push to reform WPP Scangroup: Founder Bharat Thakrar is challenging the WPP Scangroup board over financial performance,
 - [Violence erupts at Susan Kihika and Alfred Mutai event in Kuresoi](https://zandani.co.ke/article/violence-erupts-at-susan-kihika-and-alfred-mutai-event-in-kuresoi) - Violence erupts at Susan Kihika and Alfred Mutai event in Kuresoi: Political factions clashed during a youth empowerment event at Tulwet School in Kuresoi
-- [National Assembly Passes Finance Bill Following Electronic Vote](https://zandani.co.ke/article/national-assembly-passes-finance-bill-after-electronic-vote) - National Assembly Passes Finance Bill Following Electronic Vote: The National Assembly has officially passed the Finance Bill after a formal electronic vote.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
