@@ -1,7 +1,8 @@
 ---
 title: "Cleophas Malala Meets Wycliffe Oparanya Amid Allegations of Misappropriating UDA Funds"
 slug: "cleophas-malala-meets-wycliffe-oparanya-amid-allegations-of-misappro"
-description: "Cleophas Malala meets Wycliffe Oparanya to discuss Western Kenya politics amid ongoing allegations concerning the misappropriation of UDA party funds."
+description: "Cleophas Malala Meets Wycliffe Oparanya Amid Allegations of Misap: Cleophas Malala meets Wycliffe Oparanya to discuss Western Kenya politics amid ongoing"
+excerpt: "Former United Democratic Alliance Secretary General Cleophas Malala held a strategic meeting with Wycliffe Oparanya this week to discuss reg"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/d4P2Jc0b/301e405d159c.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["cleophas-malala", "wycliffe-oparanya", "uda-party", "political-misappropriation", "western-kenya-politics"]
 canonical: "https://zandani.co.ke/article/cleophas-malala-meets-wycliffe-oparanya-amid-allegations-of-misappro"
 date: "2026-06-18T15:53:14Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-18T15:53:14Z"
+focusKeyword: "Cleophas Malala Meets Wycliffe Oparanya Amid Allegations of Misap"
 schema: "NewsArticle"
 ---
-Former United Democratic Alliance Secretary General Cleophas Malala held a strategic meeting with Wycliffe Oparanya this week to discuss regional political realignments in Western Kenya. The encounter follows serious public allegations from Senator Kamau Murango regarding the misappropriation of party funds and traditional items.
+
+Former United Democratic Alliance Secretary General Cleophas Malala held a strategic meeting with Wycliffe Oparanya this week to discuss regional political realignments in Western Kenya. The encounter follows serious public allegations from Senator Kamau Murango regarding the misappropriation of party funds and traditional items. Cleophas Malala Meets Wycliffe Oparanya Amid Allegations of Misap is the central subject of the update.
 
 ## Political Realignment Amid Financial Allegations
 

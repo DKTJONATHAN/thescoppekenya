@@ -1,18 +1,20 @@
 ---
 title: "Violence erupts at Susan Kihika and Alfred Mutai event in Kuresoi"
 slug: "violence-erupts-at-susan-kihika-and-alfred-mutai-event-in-kuresoi"
-description: "Political factions clashed during a youth empowerment event at Tulwet School in Kuresoi North, resulting in injuries and the burning of a welfare bus."
+description: "Violence erupts at Susan Kihika and Alfred Mutai event in Kuresoi: Political factions clashed during a youth empowerment event at Tulwet School in Kuresoi"
+excerpt: "Empowering Chaos in Kuresoi North The embers of a burnt welfare bus smoldering at Tulwet School reveal a chilling reality about governance i"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/wF0bZMr7/b3f3b736f9f3.jpg"
 category: "News"
 tags: ["nakuru", "kuresoi north", "susan kihika", "alfred mutai", "kenyan politics", "political violence"]
+canonical: "https://zandani.co.ke/article/violence-erupts-at-susan-kihika-and-alfred-mutai-event-in-kuresoi"
 date: "2026-06-19T09:47:48Z"
 dateModified: "2026-06-19T09:47:48Z"
+focusKeyword: "Violence erupts at Susan Kihika and Alfred Mutai event in Kuresoi"
 schema: "NewsArticle"
 ---
 
-## Empowering Chaos in Kuresoi North
+## Empowering Chaos in Kuresoi North Violence erupts at Susan Kihika and Alfred Mutai event in Kuresoi is the central subject of the update.
 
 The embers of a burnt welfare bus smoldering at Tulwet School reveal a chilling reality about governance in Nakuru County. While officials frame today's clashes as a misunderstanding, the wreckage exposes a calculated struggle for local control disguised as public service.
 

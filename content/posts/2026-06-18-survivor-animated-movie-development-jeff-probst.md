@@ -14,7 +14,7 @@ focusKeyword: "'Survivor Animated Movie in Development, Jeff Probst Executive Pr
 schema: "NewsArticle"
 ---
 
-## Jeff Probst Takes "Survivor" to a Wild, Animated Realm "Survivor Animated Movie in Development, Jeff Probst Executive Pr is the central subject of the update.
+## Jeff Probst Takes "Survivor" to a Wild, Animated Realm "Survivor Animated Movie in Development, Jeff Probst Executive Pr is the central subject of the update. 'Survivor Animated Movie in Development, Jeff Probst Executive Pr is the central subject of the update.
 
 For over two decades, Jeff Probst has been the constant presence and guiding force behind "Survivor," his voice synonymous with pivotal moments like "The Tribe Has Spoken." Now, the veteran host and executive producer is initiating an unexpected new chapter for the enduring reality competition: a full-length animated comedy set within the animal kingdom. This venture promises to infuse the franchise with fresh energy and a playful spirit.
 

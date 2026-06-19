@@ -1,18 +1,20 @@
 ---
 title: "Bharat Thakrar leads shareholder push to reform WPP Scangroup"
 slug: "bharat-thakrar-leads-shareholder-push-to-reform-wpp-scangroup"
-description: "Founder Bharat Thakrar is challenging the WPP Scangroup board over financial performance, pushing for corporate governance reforms to protect minority interests."
+description: "Bharat Thakrar leads shareholder push to reform WPP Scangroup: Founder Bharat Thakrar is challenging the WPP Scangroup board over financial performance,"
+excerpt: "WPP Scangroup Faces Shareholder Reckoning A significant consolidation of minority interests at WPP Scangroup suggests a period of heightened"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/7Jk3M91p/7e2a8d0ac733.jpg"
 category: "Business"
 tags: ["wpp scangroup", "nairobi securities exchange", "corporate governance", "kenyan business", "shareholder activism"]
+canonical: "https://zandani.co.ke/article/bharat-thakrar-leads-shareholder-push-to-reform-wpp-scangroup"
 date: "2026-06-19T09:50:38Z"
 dateModified: "2026-06-19T09:50:38Z"
+focusKeyword: "Bharat Thakrar leads shareholder push to reform WPP Scangroup"
 schema: "NewsArticle"
 ---
 
-## WPP Scangroup Faces Shareholder Reckoning
+## WPP Scangroup Faces Shareholder Reckoning Bharat Thakrar leads shareholder push to reform WPP Scangroup is the central subject of the update.
 
 A significant consolidation of minority interests at WPP Scangroup suggests a period of heightened scrutiny for the marketing firm. By grouping 13.6 percent of the total stake, investor Bharat Thakrar is challenging the traditional governance framework of the company. While WPP Plc retains a commanding 56.26 percent majority, this organized minority movement indicates a fundamental change in how local shareholders interact with foreign-owned entities listed on the Nairobi Securities Exchange.
 

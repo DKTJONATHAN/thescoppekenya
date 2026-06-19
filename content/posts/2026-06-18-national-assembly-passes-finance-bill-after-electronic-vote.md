@@ -1,18 +1,20 @@
 ---
 title: "National Assembly Passes Finance Bill Following Electronic Vote"
 slug: "national-assembly-passes-finance-bill-after-electronic-vote"
-description: "The National Assembly has officially passed the Finance Bill after a formal electronic vote. The controversial legislation now heads to the President."
+description: "National Assembly Passes Finance Bill Following Electronic Vote: The National Assembly has officially passed the Finance Bill after a formal electronic vote."
+excerpt: "A Digital Curtain Falls on Tax Debates Distrust is currently the most audible sentiment across Nairobi as the electronic scoreboard inside t"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/parliament_8.jpg?itok=cu9F1nGP"
 category: "News"
 tags: ["finance bill 2026", "kenyan politics", "national assembly", "taxation", "parliament", "william ruto"]
+canonical: "https://zandani.co.ke/article/national-assembly-passes-finance-bill-after-electronic-vote"
 date: "2026-06-18T19:34:32Z"
 dateModified: "2026-06-18T19:34:32Z"
+focusKeyword: "National Assembly Passes Finance Bill Following Electronic Vote"
 schema: "NewsArticle"
 ---
 
-## A Digital Curtain Falls on Tax Debates
+## A Digital Curtain Falls on Tax Debates National Assembly Passes Finance Bill Following Electronic Vote is the central subject of the update.
 
 Distrust is currently the most audible sentiment across Nairobi as the electronic scoreboard inside the National Assembly replaced the traditional shouting match to finalize the Finance Bill 2026. While the government frames this shift as a masterclass in modern legislative efficiency, citizens on the ground are questioning whether a digital tally actually masks a lack of genuine public consensus.
 

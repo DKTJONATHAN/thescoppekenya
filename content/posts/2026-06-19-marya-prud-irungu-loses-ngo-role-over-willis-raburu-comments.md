@@ -1,18 +1,20 @@
 ---
 title: "Marya Prud Irungu Loses NGO Role Over Willis Raburu Comments"
 slug: "marya-prud-irungu-loses-ngo-role-over-willis-raburu-comments"
-description: "Content creator Marya Prud Irungu says an NGO revoked a potential ambassadorship after she shared online opinions about Willis Raburu and Ivy Namu."
+description: "Marya Prud Irungu Loses NGO Role Over Willis Raburu Comments: Content creator Marya Prud Irungu says an NGO revoked a potential ambassadorship after she shared"
+excerpt: "When Digital Opinions Cost Career Opportunities Content creator Marya Prud Irungu has been dropped from a pending NGO ambassadorship deal af"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/0RtCNRp1/bc867ddd163e.png"
 category: "Gossip"
 tags: ["marya prud irungu", "willis raburu", "kenyan celebrities", "social media", "brand partnerships", "kenya news"]
+canonical: "https://zandani.co.ke/article/marya-prud-irungu-loses-ngo-role-over-willis-raburu-comments"
 date: "2026-06-19T10:56:07Z"
 dateModified: "2026-06-19T10:56:07Z"
+focusKeyword: "Marya Prud Irungu Loses NGO Role Over Willis Raburu Comments"
 schema: "NewsArticle"
 ---
 
-## When Digital Opinions Cost Career Opportunities
+## When Digital Opinions Cost Career Opportunities Marya Prud Irungu Loses NGO Role Over Willis Raburu Comments is the central subject of the update.
 
 Content creator Marya Prud Irungu has been dropped from a pending NGO ambassadorship deal after the organization flagged her recent social media commentary regarding the separation of media personality Willis Raburu and Ivy Namu as professional misconduct.
 
