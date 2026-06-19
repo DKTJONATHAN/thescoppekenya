@@ -255,10 +255,10 @@
     "ed70349b0909707122c6add56bf37c13",
     "0482703404b9ebc98539de35f26754e4",
     "ad7986c988ae96d5d95957dcaba823a9",
-    "17fa987e12aefd8ec31201a35aca72de"
+    "17fa987e12aefd8ec31201a35aca72de",
+    "f7e7b84015b019a871f8c5a0f0be84e4"
   ],
   "style_history": [
-    "Hard News Lead",
     "Power Accountability",
     "Explainer",
     "Reaction & Voices",
@@ -287,10 +287,10 @@
     "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "timeline_shift|Meta|Context Backgrounder",
     "policy_gap|Ebola|Explainer",
     "policy_gap|Ebola|Hard News Lead",
     "accountability|Ebola|Power Accountability",
@@ -369,6 +369,7 @@
     "policy_gap|Kenya|Hard News Lead",
     "money_follow|UHC|Explainer",
     "policy_gap|Bomet County|Context Backgrounder",
-    "myth_vs_fact|Finance Bill 2026|Reaction & Voices"
+    "myth_vs_fact|Finance Bill 2026|Reaction & Voices",
+    "money_follow|Nakuru|Power Accountability"
   ]
 }
