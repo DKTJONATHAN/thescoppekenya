@@ -258,10 +258,10 @@
     "17fa987e12aefd8ec31201a35aca72de",
     "f7e7b84015b019a871f8c5a0f0be84e4",
     "810ec67a29fd8eb22c7f7003a752be8b",
-    "359dca7685b65f9994ff533b2f46034d"
+    "359dca7685b65f9994ff533b2f46034d",
+    "2ddce136e9b01550151d67ca8d3c8854"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
     "Power Accountability",
@@ -290,10 +290,10 @@
     "Reaction & Voices",
     "Power Accountability",
     "Hard News Lead",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "accountability|Ebola|Power Accountability",
     "story_progression|Jubilee Party|Reaction & Voices",
     "money_follow|Kenya Airways|Context Backgrounder",
     "accountability|Ebola|Explainer",
@@ -372,6 +372,7 @@
     "myth_vs_fact|Finance Bill 2026|Reaction & Voices",
     "money_follow|Nakuru|Power Accountability",
     "accountability|Kenya|Hard News Lead",
-    "money_follow|Affordable Housing Programme|Context Backgrounder"
+    "money_follow|Affordable Housing Programme|Context Backgrounder",
+    "timeline_shift|Kenya Meteorological Service Authority|Reaction & Voices"
   ]
 }

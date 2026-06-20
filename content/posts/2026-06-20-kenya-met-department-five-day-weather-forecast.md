@@ -1,0 +1,37 @@
+---
+title: "Kenya Met Department Issues Five-Day Weather Forecast"
+slug: "kenya-met-department-five-day-weather-forecast"
+description: "The Kenya Meteorological Service Authority predicts varied weather patterns across the country with cold spells, light rains, and high daytime heat levels."
+author: "Celestine Nzioka"
+authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
+image: "https://i.ibb.co/3ywjKZG5/cbc92f1ff86c.jpg"
+category: "News"
+tags: ["kenya weather", "weather forecast", "climate change", "za ndani", "kenya met department"]
+date: "2026-06-20T12:28:55Z"
+dateModified: "2026-06-20T12:28:55Z"
+schema: "NewsArticle"
+---
+
+## Living Between Two Seasons
+
+From the shivering mornings of Nyandarua to the blistering afternoons of Mandera, Kenyans are currently forced to become masters of the extreme wardrobe swap. As a nation, the population is split between heavy puffers and light linens, trying to survive a climate forecast that refuses to pick a single side.
+
+The Kenya Meteorological Service Authority has released a five-day forecast ending June 23, painting a picture of a country divided by geography. While the Central Highlands, including counties like Nyandarua and Nyeri, prepare for chilly temperatures dipping as low as 4 degrees Celsius accompanied by light rain, the Northern corridors in Mandera and Wajir are bracing for soaring heat reaching 37 degrees Celsius. Meanwhile, the Lake Basin and Coastal regions anticipate a mix of afternoon showers, leaving the rest of the country caught in a daily oscillation between winter-like conditions and desert-level dryness.
+
+### The Great Wardrobe Dilemma
+
+Travelers moving across the country are finding that a single suitcase is no longer enough to survive the week. For those commuting from the cool, misty landscapes of the Rift Valley to the arid plains of the North, the strategy has shifted toward aggressive layering.
+
+In Nairobi, residents are feeling the brunt of the "thermal divide" firsthand. Peter, a regular matatu commuter from Kiambu, notes that he now carries a thick jacket every morning just to survive the 8-degree pre-dawn commute, only to find himself sweating by midday. He jokes that his backpack is currently more puffer coat than work essentials, as the damp morning air feels like it settles deep into the bones. Meanwhile, traders in the North are taking a different approach. Amina, a business owner in Garissa, says the heat has been relentless lately. While others are hunting for warm knits, her community is focused on staying hydrated and retreating indoors during the peak afternoon sun, where temperatures regularly climb above 35 degrees. For those traversing the country, the advice from local travelers is clear: pack for two completely different countries within one border.
+
+### Managing the Body's Internal Clock
+
+Health experts are flagging the rapid temperature swings as a silent stressor for the human body. When a morning starts at 6 degrees in the highlands and the afternoon hits 29 degrees, the respiratory system struggles to keep up.
+
+Dr. Kariuki, a medical practitioner based in the city, highlights that these shifts are behind a recent surge in common colds and allergic reactions. He suggests that residents should avoid the temptation to shed all layers immediately once the sun peeks through the clouds. Maintaining a steady body temperature is key, even if the thermometer starts to climb. Instead of relying on thin fabrics, he recommends natural fibers that allow the skin to breathe during the erratic shifts in air pressure and humidity. The mood on the ground remains one of cautious adaptation. With [political chatter regarding the current administration](https://zandani.co.ke/article/internal-political-shifts-and-government-instability-in-kenya) often dominating the headlines, the weather has become the shared language of the street, connecting a shivering resident in Eldoret with a sun-drenched worker in Isiolo.
+
+### Watching the Horizon
+
+Looking ahead to June 23, the unpredictability remains the only constant. While the Highlands expect the cold to linger, farmers in Western and Nyanza are keeping a close watch on the afternoon skies, hoping the showers provide enough moisture without triggering the usual localized flooding. As the nation grapples with these extremes, public discourse has shifted toward survival tactics. Whether it is checking the latest [government transport directives](https://zandani.co.ke/article/2026-04-27-ntsa-orders-mandatory-inspection-of-school-transport-vehicl) to ensure a safe journey or simply figuring out if a scarf is necessary for the evening commute, life in Kenya currently demands a constant state of readiness.
+
+The public mood is one of stoic endurance, with most Kenyans laughing off the bi-polar weather while keeping a firm grip on their umbrellas and water bottles alike.
