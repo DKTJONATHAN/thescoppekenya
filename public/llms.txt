@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Public Outcry as Legislators Skip Finance Bill Debate](https://zandani.co.ke/article/lawmakers-face-backlash-over-finance-bill-absenteeism) - Mass absenteeism by members of parliament during the Finance Bill voting process sparks public frustration and concerns over democratic accountability.
 - [Arrow Bwoy Throws Egg at Shakib Cham During Boxing Weigh-in](https://zandani.co.ke/article/arrow-bwoy-throws-egg-at-shakib-cham-during-boxing-weigh-in) - Tensions flared at a celebrity boxing event as Arrow Bwoy threw an egg at his opponent Shakib Cham during their official weigh-in ahead of the match.
 - [Housing PS Charles Hinga Links Informal Settlement Returns to Utility](https://zandani.co.ke/article/charles-hinga-informal-settlements-real-estate-returns) - Housing PS Charles Hinga reveals that real estate investments in informal settlements outperform upscale areas due to high costs of water and electricity.
 - [Police Launch Manhunt for MP Alfred Mutai Over Nakuru Clashes](https://zandani.co.ke/article/police-manhunt-mp-alfred-mutai-nakuru-clashes) - Police are searching for Kuresoi North MP Alfred Mutai following violent clashes in Nakuru that left three people hospitalized with gunshot wounds.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [The Inspection Bubble: Echoes of a Kenya Fuel Price Hike](https://zandani.co.ke/article/the-inspection-bubble-echoes-of-a-kenya-fuel-price-hike) - In the wake of promised progress, a familiar unease settles upon the land, mirroring old follies where fortunes were built on sand, leaving a social health auth
 - [Charlie Adam evaluates Scotland tactical strategy against Morocco](https://zandani.co.ke/article/charlie-adam-evaluates-scotland-tactical-strategy-against-morocco) - Former midfielder Charlie Adam outlines the defensive discipline and tactical changes Scotland needs to beat Morocco in Boston.
 - [Redefining Fatherhood: Why Caregiving Is Not Just Women's Work](https://zandani.co.ke/article/redefining-fatherhood-why-caregiving-is-not-just-womens-work) - Societal norms in Kenya continue to label caregiving as women's work. Discover why active fatherhood is essential for gender equality at home.
-- [Marya Prude Loses Brand Deal Over Comments on Willis Raburu](https://zandani.co.ke/article/marya-prude-loses-brand-deal-over-willis-raburu-comments) - Content creator Marya Prude has lost a brand partnership opportunity after refusing to apologize for her remarks on a celebrity breakup.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
