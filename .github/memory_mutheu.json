@@ -263,10 +263,10 @@
     "92812ccc79fed12fa48df77d8aaf407d",
     "36f0a99c37e42f681ef2090f6cd1ab3a",
     "78a7495296d51fd1001fbdb749cef776",
-    "b1b8694e681355536132f36431ae4c1e"
+    "b1b8694e681355536132f36431ae4c1e",
+    "cc40479bbfebc980a4695d430c8a0e82"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Hard News Lead",
     "Trend Take",
     "Explainer",
@@ -295,10 +295,10 @@
     "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
-    "myth_vs_fact|Lost|Explainer",
     "policy_gap|Netflix|Hard News Lead",
     "accountability|Stewart McLean|Profile Beat",
     "impact_on_citizens|Beartooth|Trend Take",
@@ -377,6 +377,7 @@
     "accountability|medical drama|Trend Take",
     "story_progression|Survivor|Profile Beat",
     "myth_vs_fact|na|Reaction Round-up",
-    "story_progression|Toy Story 5|Explainer"
+    "story_progression|Toy Story 5|Explainer",
+    "story_progression|na|Trend Take"
   ]
 }
