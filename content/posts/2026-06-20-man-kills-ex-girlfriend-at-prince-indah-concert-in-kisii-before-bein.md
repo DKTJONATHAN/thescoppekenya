@@ -1,0 +1,32 @@
+---
+title: "Man kills ex-girlfriend at Prince Indah concert in Kisii before being beaten by mob"
+slug: "man-kills-ex-girlfriend-at-prince-indah-concert-in-kisii-before-bein"
+description: "A man fatally stabbed his ex-girlfriend at a Prince Indah concert in Kisii on Friday night before being beaten by a mob at the Cindies Resort venue."
+author: "Zed Mogaka"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
+image: "https://i.ibb.co/RkqcRtgy/3cf82f9d18aa.webp"
+category: "Entertainment"
+tags: ["prince-indah", "kisii-incident", "ohangla-concert", "crime-reporting", "kenyan-entertainment"]
+canonical: "https://zandani.co.ke/article/man-kills-ex-girlfriend-at-prince-indah-concert-in-kisii-before-bein"
+date: "2026-06-20T14:29:37Z"
+authorUrl: "https://zandani.co.ke/author/zed-mogaka"
+dateModified: "2026-06-20T14:29:37Z"
+schema: "NewsArticle"
+---
+Mercy Mukutu was fatally stabbed by her former partner at Cindies Resort in Kisii on Friday night. The violent incident occurred during a live concert by musician Prince Indah after the suspect allegedly grew enraged seeing the victim dancing with another man.
+
+## Tragedy strikes at Kisii concert
+
+The incident unfolded during a performance by Prince Indah, turning a celebratory environment into a crime scene. Witnesses report that the suspect confronted Mukutu in a fit of jealousy before resorting to physical violence. The attack was swift, leaving concert attendees and the local community in shock as the evening of music ended in a senseless loss of life.
+
+### Mob justice intervenes
+
+Following the stabbing, the crowd at the resort intervened immediately. Enraged by the brutality of the act, onlookers attacked the suspect with various objects. Police arrived to secure the scene, and the man was transported to a local hospital. He remains under police guard while receiving treatment for the severe injuries he sustained at the hands of the mob. This reaction serves as a grim reflection of public frustration regarding the swiftness of justice.
+
+### The dark reality of femicide
+
+This murder is the latest addition to a rising wave of gender-based violence across Kenya. Once the suspect recovers from his injuries, he will likely be transferred to Kamiti Maximum Prison, which serves as a government-owned Airbnb for those who commit such crimes. The recurring nature of these incidents points to a toxic pattern where some men perceive their partners as personal possessions. Until this fundamental mindset shifts, women will remain at risk in both private and public spaces.
+
+### A grim pattern of rage
+
+The proximity of such a violent act to a public leisure space highlights a deep instability in how some individuals handle rejection. There is a disconnect in a society that attempts to move toward modern progress while remaining anchored in primitive cruelty. The loss of Mukutu serves as a stark reminder that as long as possessiveness and rage are allowed to escalate unchecked, public gatherings will continue to be marred by preventable tragedy. Ultimately, the cycle of domestic violence continues to demand more lives than the justice system can adequately address.
