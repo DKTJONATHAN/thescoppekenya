@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sat, 20 Jun 2026 12:39:47 GMT</pubDate>
+    <pubDate>Sat, 20 Jun 2026 13:16:56 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Techweez Overview and Digital Operations by Palahala Media Group]]></title>
+      <link>https://zandani.co.ke/article/techweez-overview-palahala-media-group</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/techweez-overview-palahala-media-group</guid>
+      <pubDate>Sat, 20 Jun 2026 13:00:21 GMT</pubDate>
+      <dc:creator><![CDATA[Elizabeth Muthoni]]></dc:creator>
+      <description><![CDATA[Techweez is a technology news platform managed by Palahala Media Group that utilizes affiliate marketing and digital tracking technologies.]]></description>
+      <enclosure url="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200" type="image/jpeg" />
+      <media:content url="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200" alt="Techweez Overview and Digital Operations by Palahala Media Group" /><p>Techweez is a technology news platform managed by Palahala Media Group that utilizes affiliate marketing and digital tracking technologies.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Kenya Met Department Issues Five-Day Weather Forecast]]></title>
       <link>https://zandani.co.ke/article/kenya-met-department-five-day-weather-forecast</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/9kKq9rTq/a3c5bc23a0bd.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/9kKq9rTq/a3c5bc23a0bd.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/9kKq9rTq/a3c5bc23a0bd.jpg" alt="EU and Equity Group Foundation Partner for Kenyan Master Scholarships" /><p>EU and Equity Group Foundation Partner for Kenyan Master Scholars: The European Union and Equity Group Foundation have launched a partnership to provide annual</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Kenya Targets EU Data Adequacy Agreement by September]]></title>
-      <link>https://zandani.co.ke/article/kenya-targets-eu-data-adequacy-agreement</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-targets-eu-data-adequacy-agreement</guid>
-      <pubDate>Fri, 12 Jun 2026 09:03:19 GMT</pubDate>
-      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
-      <description><![CDATA[Kenya Targets EU Data Adequacy Agreement by September: President William Ruto eyes a September deadline to finalize a data adequacy deal with the European]]></description>
-      <enclosure url="https://i.ibb.co/8LXQLJtr/9e35d8f11c37.jpg" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/8LXQLJtr/9e35d8f11c37.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/8LXQLJtr/9e35d8f11c37.jpg" alt="Kenya Targets EU Data Adequacy Agreement by September" /><p>Kenya Targets EU Data Adequacy Agreement by September: President William Ruto eyes a September deadline to finalize a data adequacy deal with the European</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
