@@ -259,10 +259,10 @@
     "f7e7b84015b019a871f8c5a0f0be84e4",
     "810ec67a29fd8eb22c7f7003a752be8b",
     "359dca7685b65f9994ff533b2f46034d",
-    "2ddce136e9b01550151d67ca8d3c8854"
+    "2ddce136e9b01550151d67ca8d3c8854",
+    "8db35be9c657853e9d287a1f4134a028"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Hard News Lead",
     "Power Accountability",
     "Explainer",
@@ -291,10 +291,10 @@
     "Power Accountability",
     "Hard News Lead",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Explainer"
   ],
   "angle_history": [
-    "story_progression|Jubilee Party|Reaction & Voices",
     "money_follow|Kenya Airways|Context Backgrounder",
     "accountability|Ebola|Explainer",
     "accountability|Ebola|Hard News Lead",
@@ -373,6 +373,7 @@
     "money_follow|Nakuru|Power Accountability",
     "accountability|Kenya|Hard News Lead",
     "money_follow|Affordable Housing Programme|Context Backgrounder",
-    "timeline_shift|Kenya Meteorological Service Authority|Reaction & Voices"
+    "timeline_shift|Kenya Meteorological Service Authority|Reaction & Voices",
+    "money_follow|infrastructure|Explainer"
   ]
 }

@@ -1,0 +1,31 @@
+---
+title: "Nairobi-Mombasa Expressway procurement delayed by government"
+slug: "nairobi-mombasa-expressway-procurement-delayed"
+description: "The government has delayed the procurement phase for the Nairobi-Mombasa Expressway as the project remains in the transaction advisory and feasibility stage."
+author: "Celestine Nzioka"
+authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
+image: "https://i.ibb.co/q3Mr20qd/39ea662f04d6.jpg"
+category: "News"
+tags: ["infrastructure", "kenya roads", "transport", "nairobi-mombasa", "davis chirchir", "ppp projects"]
+date: "2026-06-20T18:17:26Z"
+dateModified: "2026-06-20T18:17:26Z"
+schema: "NewsArticle"
+---
+
+## Why the Ksh466 Billion Highway Remains a Blueprint
+
+The Kenyan government has hit the brakes on the formal procurement process for the 461-kilometre Nairobi-Mombasa Expressway. While the project is pegged at a staggering Ksh466.8 billion, current activity is strictly limited to transaction advisory and feasibility studies.
+
+### Where is the money going before the construction starts?
+
+A significant portion of the conversation surrounding this massive infrastructure project often ignores the hidden costs of preparation. Before a single excavator hits the ground, millions of shillings are funneled into transaction advisory fees. These payments cover legal experts, financial consultants, and technical engineers who are responsible for designing the public-private partnership (PPP) structure. Think of this as the planning permit stage for a home, but on a national scale. When these stages stall, these advisory costs continue to mount. Every month of delay in this purgatory phase adds to the professional bill that eventually gets baked into the total cost of the project. If the government cannot move from the drawing board to procurement, the public essentially pays for the privilege of waiting for a road that does not exist yet.
+
+### How does the current A8 corridor affect your wallet?
+
+For the average citizen and business owner, the A8 highway is a constant drain on resources. The Northern Corridor is the backbone of East African logistics, yet it remains choked by heavy traffic and outdated infrastructure. Every hour a truck spends idling between Nairobi and Mombasa is an hour of fuel wasted, driver wages climbing, and perishable goods risking spoilage. These losses do not vanish; they are added to the final price of everything from vegetables to fuel at your local pump. By delaying the transition to a modern expressway, the economic inefficiency of the existing route persists. Just as citizens manage their finances carefully, such as when monitoring the [KRA Announces Four Hour Maintenance Window for iTax Portal](https://zandani.co.ke/article/kra-announces-four-hour-maintenance-window-for-itax-portal), the government must ensure that infrastructure timelines do not drift, as the opportunity cost of these delays is measured in the rising cost of living for every Kenyan.
+
+### Why did the April 2026 deadline pass without progress?
+
+Transport Cabinet Secretary Davis Chirchir recently confirmed that the project is still undergoing an intensive assessment phase. The initial target to move into the procurement phase by April 2026 has effectively slipped. This shift is not just a calendar change. For commercial logistics companies, the delay creates a vacuum of information. Companies cannot plan their fleet expansions or cargo projections without knowing if or when an expressway will offer a faster, more reliable path to the coast. When policy timelines move, private investment in the logistics sector often pauses alongside them. This creates a ripple effect where the promise of a modern highway remains a theoretical concept rather than a functional tool for economic growth. While public infrastructure is vital, the slow pace of current bureaucratic processes highlights the tension between necessary due diligence and the urgent need for faster, safer transport links. The path forward remains clouded as officials continue to re-evaluate the fiscal realities of such a massive capital injection in an era of constrained public spending.
+
+The high cost of planning an expressway today is the price Kenyans pay for the lack of a faster transit route tomorrow.
