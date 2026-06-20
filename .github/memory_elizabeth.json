@@ -138,10 +138,10 @@
     "5839ba0d012c2565358f1040f3cfc2a1",
     "64d5cf05e5431f9370d3a19ea7ddbb8d",
     "784ebb0a57e774064b6de5dcd31adfb4",
-    "284797b2abae31bb5cbf3f159f2dfc3a"
+    "284797b2abae31bb5cbf3f159f2dfc3a",
+    "7cc7dcfcd9e45a97ea26caf120b17885"
   ],
   "style_history": [
-    "Critical Take",
     "Hard News Lead",
     "Africa Angle",
     "Explainer",
@@ -170,7 +170,8 @@
     "Hard News Lead",
     "Backgrounder",
     "Explainer",
-    "Critical Take"
+    "Critical Take",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -227,6 +228,7 @@
     "policy_gap|Meta|Hard News Lead",
     "story_progression|NTSA|Backgrounder",
     "next_48_hours|KRA|Explainer",
-    "winners_losers|FIFA World Cup|Critical Take"
+    "winners_losers|FIFA World Cup|Critical Take",
+    "money_follow|Techweez|Hard News Lead"
   ]
 }
