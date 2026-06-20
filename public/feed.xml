@@ -5,8 +5,19 @@
     <link>https://zandani.co.ke</link>
     <description>Kenya and World News, Politics, Sports, and Entertainment</description>
     <language>en-ke</language>
-    <pubDate>Sat, 20 Jun 2026 12:29:17 GMT</pubDate>
+    <pubDate>Sat, 20 Jun 2026 12:39:47 GMT</pubDate>
     <atom:link href="https://zandani.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Kenya Met Department Issues Five-Day Weather Forecast]]></title>
+      <link>https://zandani.co.ke/article/kenya-met-department-five-day-weather-forecast</link>
+      <guid isPermaLink="true">https://zandani.co.ke/article/kenya-met-department-five-day-weather-forecast</guid>
+      <pubDate>Sat, 20 Jun 2026 12:28:55 GMT</pubDate>
+      <dc:creator><![CDATA[Celestine Nzioka]]></dc:creator>
+      <description><![CDATA[The Kenya Meteorological Service Authority predicts varied weather patterns across the country with cold spells, light rains, and high daytime heat levels.]]></description>
+      <enclosure url="https://i.ibb.co/3ywjKZG5/cbc92f1ff86c.jpg" type="image/jpeg" />
+      <media:content url="https://i.ibb.co/3ywjKZG5/cbc92f1ff86c.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
+      <content:encoded><![CDATA[<img src="https://i.ibb.co/3ywjKZG5/cbc92f1ff86c.jpg" alt="Kenya Met Department Issues Five-Day Weather Forecast" /><p>The Kenya Meteorological Service Authority predicts varied weather patterns across the country with cold spells, light rains, and high daytime heat levels.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[World Cup 2026 Updates: Brazil Dominates as Turkey Exits]]></title>
       <link>https://zandani.co.ke/article/world-cup-2026-brazil-results-turkey-elimination</link>
@@ -1095,17 +1106,6 @@
       <enclosure url="https://i.ibb.co/8LXQLJtr/9e35d8f11c37.jpg" type="image/jpeg" />
       <media:content url="https://i.ibb.co/8LXQLJtr/9e35d8f11c37.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
       <content:encoded><![CDATA[<img src="https://i.ibb.co/8LXQLJtr/9e35d8f11c37.jpg" alt="Kenya Targets EU Data Adequacy Agreement by September" /><p>Kenya Targets EU Data Adequacy Agreement by September: President William Ruto eyes a September deadline to finalize a data adequacy deal with the European</p>]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA['Kylie Kelce's Mouse Infestation Leads to Cat Adoption Plan]]></title>
-      <link>https://zandani.co.ke/article/kylie-kelce-mouse-infestation-cat-plan</link>
-      <guid isPermaLink="true">https://zandani.co.ke/article/kylie-kelce-mouse-infestation-cat-plan</guid>
-      <pubDate>Fri, 12 Jun 2026 00:08:14 GMT</pubDate>
-      <dc:creator><![CDATA[Mutheu Ann]]></dc:creator>
-      <description><![CDATA['Kylie Kelce's Mouse Infestation Leads to Cat Adoption Plan: Kylie Kelce found a severe mouse infestation in her kitchen, prompting plans for a mouser cat]]></description>
-      <enclosure url="https://i.ibb.co/tM9KP29S/7c6fa6940105.jpg" type="image/jpeg" />
-      <media:content url="https://i.ibb.co/tM9KP29S/7c6fa6940105.jpg" medium="image" type="image/jpeg" width="1200" height="630" />
-      <content:encoded><![CDATA[<img src="https://i.ibb.co/tM9KP29S/7c6fa6940105.jpg" alt="&apos;Kylie Kelce&apos;s Mouse Infestation Leads to Cat Adoption Plan" /><p>'Kylie Kelce's Mouse Infestation Leads to Cat Adoption Plan: Kylie Kelce found a severe mouse infestation in her kitchen, prompting plans for a mouser cat</p>]]></content:encoded>
     </item>
   </channel>
 </rss>

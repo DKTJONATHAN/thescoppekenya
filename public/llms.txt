@@ -7,6 +7,7 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
+- [Kenya Met Department Issues Five-Day Weather Forecast](https://zandani.co.ke/article/kenya-met-department-five-day-weather-forecast) - The Kenya Meteorological Service Authority predicts varied weather patterns across the country with cold spells, light rains, and high daytime heat levels.
 - [World Cup 2026 Updates: Brazil Dominates as Turkey Exits](https://zandani.co.ke/article/world-cup-2026-brazil-results-turkey-elimination) - Catch up on the latest 2026 World Cup results as Brazil advances with a record-breaking performance while Turkey is officially eliminated from the tournament.
 - [Public Outcry as Legislators Skip Finance Bill Debate](https://zandani.co.ke/article/lawmakers-face-backlash-over-finance-bill-absenteeism) - Mass absenteeism by members of parliament during the Finance Bill voting process sparks public frustration and concerns over democratic accountability.
 - [Arrow Bwoy Throws Egg at Shakib Cham During Boxing Weigh-in](https://zandani.co.ke/article/arrow-bwoy-throws-egg-at-shakib-cham-during-boxing-weigh-in) - Tensions flared at a celebrity boxing event as Arrow Bwoy threw an egg at his opponent Shakib Cham during their official weigh-in ahead of the match.
@@ -16,7 +17,6 @@ Your premium source for Kenyan headlines, breaking news, politics, and worldly a
 - [Rising Costs and High Taxes Challenge Financial Stability for Nairobi Residents](https://zandani.co.ke/article/rising-costs-and-high-taxes-challenge-financial-stability-for-nairob) - Nairobi residents face record financial instability as soaring inflation and aggressive tax policies shrink household budgets for middle-class families.
 - [New Tech Reshapes FIFA World Cup Officiating and Match Accuracy](https://zandani.co.ke/article/new-tech-reshapes-fifa-world-cup-officiating) - The 2026 World Cup introduces advanced ball sensors and AI referee cameras to improve decision precision and provide immersive viewer perspectives.
 - [The Inspection Bubble: Echoes of a Kenya Fuel Price Hike](https://zandani.co.ke/article/the-inspection-bubble-echoes-of-a-kenya-fuel-price-hike) - In the wake of promised progress, a familiar unease settles upon the land, mirroring old follies where fortunes were built on sand, leaving a social health auth
-- [Charlie Adam evaluates Scotland tactical strategy against Morocco](https://zandani.co.ke/article/charlie-adam-evaluates-scotland-tactical-strategy-against-morocco) - Former midfielder Charlie Adam outlines the defensive discipline and tactical changes Scotland needs to beat Morocco in Boston.
 
 ## More Information
 - Sitemap: https://zandani.co.ke/sitemap.xml
