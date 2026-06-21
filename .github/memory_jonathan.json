@@ -157,10 +157,10 @@
     "effea65b9b271f36f22a64e838ef7e72",
     "0028b71468ea55aad2b3705955917ef0",
     "70cfdaeb4cf4201c958a5444cdae6ede",
-    "efb94c7791dd97baa0092a1fd2864fb4"
+    "efb94c7791dd97baa0092a1fd2864fb4",
+    "811d1f0c345f5b27533563f8d8bbd039"
   ],
   "style_history": [
-    "Personal Reflection",
     "Historical Lens",
     "Sharp Column",
     "Counterpoint",
@@ -189,10 +189,10 @@
     "Sharp Column",
     "Historical Lens",
     "Letter Form",
-    "Counterpoint"
+    "Counterpoint",
+    "Sharp Column"
   ],
   "angle_history": [
-    "policy_gap|Somalia elections|Personal Reflection",
     "myth_vs_fact|IVF|Counterpoint",
     "policy_gap|Kibera|Sharp Column",
     "money_follow|healthcare|Letter Form",
@@ -271,6 +271,7 @@
     "accountability|Journalism|Sharp Column",
     "money_follow|Reproductive Health|Historical Lens",
     "next_48_hours|fatherhood|Letter Form",
-    "myth_vs_fact|Finance Bill|Counterpoint"
+    "myth_vs_fact|Finance Bill|Counterpoint",
+    "winners_losers|Father's Day|Sharp Column"
   ]
 }
