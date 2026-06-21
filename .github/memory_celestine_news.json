@@ -262,10 +262,10 @@
     "2ddce136e9b01550151d67ca8d3c8854",
     "8db35be9c657853e9d287a1f4134a028",
     "678b2b18bbc82cfd70274aa87bf94242",
-    "702f86857d27e356c827e921c8976e9c"
+    "702f86857d27e356c827e921c8976e9c",
+    "5caebf9fcd3fc27cd9d1a67c1e5055e3"
   ],
   "style_history": [
-    "Explainer",
     "Context Backgrounder",
     "Hard News Lead",
     "Power Accountability",
@@ -294,10 +294,10 @@
     "Reaction & Voices",
     "Explainer",
     "Hard News Lead",
-    "Power Accountability"
+    "Power Accountability",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "accountability|Ebola|Hard News Lead",
     "money_follow|Public Health|Power Accountability",
     "policy_gap|KUPPET|Reaction & Voices",
     "policy_gap|KMPDC|Explainer",
@@ -376,6 +376,7 @@
     "timeline_shift|Kenya Meteorological Service Authority|Reaction & Voices",
     "money_follow|infrastructure|Explainer",
     "story_progression|Kenya|Hard News Lead",
-    "policy_gap|KDF|Power Accountability"
+    "policy_gap|KDF|Power Accountability",
+    "myth_vs_fact|Kenya|Reaction & Voices"
   ]
 }
