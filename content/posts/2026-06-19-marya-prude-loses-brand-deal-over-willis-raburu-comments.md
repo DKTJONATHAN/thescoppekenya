@@ -1,18 +1,20 @@
 ---
 title: "Marya Prude Loses Brand Deal Over Comments on Willis Raburu"
 slug: "marya-prude-loses-brand-deal-over-willis-raburu-comments"
-description: "Content creator Marya Prude has lost a brand partnership opportunity after refusing to apologize for her remarks on a celebrity breakup."
+description: "Marya Prude Loses Brand Deal Over Comments on Willis Raburu: Content creator Marya Prude has lost a brand partnership opportunity after refusing to apologize"
+excerpt: "The Silent Cost of Online Candor Marya Prude Irungu has hit a wall where personal opinion meets the corporate bottom line, losing a signific"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/5gVQsLdh/fcf6715e5d95.jpg"
 category: "Gossip"
 tags: ["marya prude", "willis raburu", "kenyan entertainment", "social media", "brand partnerships", "kenyan celebrities"]
+canonical: "https://zandani.co.ke/article/marya-prude-loses-brand-deal-over-willis-raburu-comments"
 date: "2026-06-19T12:19:06Z"
 dateModified: "2026-06-19T12:19:06Z"
+focusKeyword: "Marya Prude Loses Brand Deal Over Comments on Willis Raburu"
 schema: "NewsArticle"
 ---
 
-## The Silent Cost of Online Candor
+## The Silent Cost of Online Candor Marya Prude Loses Brand Deal Over Comments on Willis Raburu is the central subject of the update.
 
 Marya Prude Irungu has hit a wall where personal opinion meets the corporate bottom line, losing a significant mental health campaign after voicing her thoughts on the separation of Willis Raburu and Ivy Namu. This incident serves as a brutal masterclass in the growing friction between authentic self-expression and the sanitized requirements of modern brand partnerships in Kenya.
 

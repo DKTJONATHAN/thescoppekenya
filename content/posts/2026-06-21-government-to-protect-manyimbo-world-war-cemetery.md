@@ -1,18 +1,20 @@
 ---
 title: "Government moves to declare Manyimbo World War Cemetery protected"
 slug: "government-to-protect-manyimbo-world-war-cemetery"
-description: "The government has gazetted plans to protect the Manyimbo World War Cemetery in Mombasa as a national monument to preserve its military heritage."
+description: "Government moves to declare Manyimbo World War Cemetery protected: The government has gazetted plans to protect the Manyimbo World War Cemetery in Mombasa as a"
+excerpt: "Mombasa Moves to Secure Historical Grounds The Ministry of Gender, Culture and Children Services has officially initiated a legal designatio"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/QjQyXXSg/b2b63beff28f.jpg"
 category: "News"
 tags: ["kenya", "mombasa", "heritage", "history", "national museums", "za ndani"]
+canonical: "https://zandani.co.ke/article/government-to-protect-manyimbo-world-war-cemetery"
 date: "2026-06-21T09:00:00Z"
 dateModified: "2026-06-21T09:00:00Z"
+focusKeyword: "Government moves to declare Manyimbo World War Cemetery protected"
 schema: "NewsArticle"
 ---
 
-## Mombasa Moves to Secure Historical Grounds
+## Mombasa Moves to Secure Historical Grounds Government moves to declare Manyimbo World War Cemetery protected is the central subject of the update.
 
 The Ministry of Gender, Culture and Children Services has officially initiated a legal designation to declare the Manyimbo World War Cemetery a protected national monument, effectively shielding the site from the intensifying pressures of urban development in Mombasa.
 

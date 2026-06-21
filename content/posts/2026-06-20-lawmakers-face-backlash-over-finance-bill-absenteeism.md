@@ -1,18 +1,20 @@
 ---
 title: "Public Outcry as Legislators Skip Finance Bill Debate"
 slug: "lawmakers-face-backlash-over-finance-bill-absenteeism"
-description: "Mass absenteeism by members of parliament during the Finance Bill voting process sparks public frustration and concerns over democratic accountability."
+description: "Public Outcry as Legislators Skip Finance Bill Debate: Mass absenteeism by members of parliament during the Finance Bill voting process sparks public"
+excerpt: "The Art of the Strategic No Show The collective disappearance of 186 legislators from the Finance Bill 2026 floor is not a lapse in professi"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/MxMMbNqv/b88c265518e0.png"
 category: "Opinions"
 tags: ["kenya", "parliament", "finance bill", "taxation", "accountability", "politics"]
+canonical: "https://zandani.co.ke/article/lawmakers-face-backlash-over-finance-bill-absenteeism"
 date: "2026-06-20T11:26:32Z"
 dateModified: "2026-06-20T11:26:32Z"
+focusKeyword: "Public Outcry as Legislators Skip Finance Bill Debate"
 schema: "NewsArticle"
 ---
 
-## The Art of the Strategic No-Show
+## The Art of the Strategic No-Show Public Outcry as Legislators Skip Finance Bill Debate is the central subject of the update.
 
 The collective disappearance of 186 legislators from the Finance Bill 2026 floor is not a lapse in professional duty, but a surgical maneuver in political preservation. Observers who label this mass absence as mere incompetence fail to grasp the cynical logic governing the modern Kenyan politician.
 

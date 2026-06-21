@@ -1,18 +1,20 @@
 ---
 title: "Charlie Adam evaluates Scotland tactical strategy against Morocco"
 slug: "charlie-adam-evaluates-scotland-tactical-strategy-against-morocco"
-description: "Former midfielder Charlie Adam outlines the defensive discipline and tactical changes Scotland needs to beat Morocco in Boston."
+description: "Charlie Adam evaluates Scotland tactical strategy against Morocco: Former midfielder Charlie Adam outlines the defensive discipline and tactical changes"
+excerpt: "The Myth of Scottish Grit in Boston While the Tartan Army descends upon Boston with enough bravado to suggest they are walking into a home g"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/N24J9LCy/88d4d4bda9e6.jpg"
 category: "Sports"
 tags: ["football", "scotland", "morocco", "charlie adam", "steve clarke", "international football"]
+canonical: "https://zandani.co.ke/article/charlie-adam-evaluates-scotland-tactical-strategy-against-morocco"
 date: "2026-06-19T13:52:46Z"
 dateModified: "2026-06-19T13:52:46Z"
+focusKeyword: "Charlie Adam evaluates Scotland tactical strategy against Morocco"
 schema: "NewsArticle"
 ---
 
-## The Myth of Scottish Grit in Boston
+## The Myth of Scottish Grit in Boston Charlie Adam evaluates Scotland tactical strategy against Morocco is the central subject of the update.
 
 While the Tartan Army descends upon Boston with enough bravado to suggest they are walking into a home game, the tactical reality is far more somber. Scotland is not preparing for a battle of wits against Morocco; they are preparing to endure an exercise in terminal caution.
 

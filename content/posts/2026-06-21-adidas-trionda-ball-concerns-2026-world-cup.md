@@ -1,18 +1,20 @@
 ---
 title: "Adidas Trionda ball under fire for unpredictable 2026 World Cup goals"
 slug: "adidas-trionda-ball-concerns-2026-world-cup"
-description: "Football experts and goalkeepers are questioning the flight of the official 2026 World Cup ball due to an unusual rise in long-range scoring efforts."
+description: "Adidas Trionda ball under fire for unpredictable 2026 World Cup g: Football experts and goalkeepers are questioning the flight of the official 2026 World Cup"
+excerpt: "The Trionda Terror: Physics Over Talent at the 2026 World Cup The Adidas Trionda match ball is turning the 2026 World Cup into a long range"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/m556m4YB/fef60d1bb881.png"
 category: "Sports"
 tags: ["world cup", "football", "sports tech", "kenyan football", "fifa 2026"]
+canonical: "https://zandani.co.ke/article/adidas-trionda-ball-concerns-2026-world-cup"
 date: "2026-06-21T12:23:17Z"
 dateModified: "2026-06-21T12:23:17Z"
+focusKeyword: "Adidas Trionda ball under fire for unpredictable 2026 World Cup g"
 schema: "NewsArticle"
 ---
 
-## The Trionda Terror: Physics Over Talent at the 2026 World Cup
+## The Trionda Terror: Physics Over Talent at the 2026 World Cup Adidas Trionda ball under fire for unpredictable 2026 World Cup g is the central subject of the update.
 
 The Adidas Trionda match ball is turning the 2026 World Cup into a long-range shooting gallery. Goalkeepers are abandoning traditional shot-stopping techniques in favor of basic survival as the orb defies standard aerodynamic expectations.
 

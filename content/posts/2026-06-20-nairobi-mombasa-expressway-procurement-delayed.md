@@ -1,18 +1,20 @@
 ---
 title: "Nairobi-Mombasa Expressway procurement delayed by government"
 slug: "nairobi-mombasa-expressway-procurement-delayed"
-description: "The government has delayed the procurement phase for the Nairobi-Mombasa Expressway as the project remains in the transaction advisory and feasibility stage."
+description: "Nairobi-Mombasa Expressway procurement delayed by government: The government has delayed the procurement phase for the Nairobi-Mombasa Expressway as the"
+excerpt: "Why the Ksh466 Billion Highway Remains a Blueprint The Kenyan government has hit the brakes on the formal procurement process for the 461 ki"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/q3Mr20qd/39ea662f04d6.jpg"
 category: "News"
 tags: ["infrastructure", "kenya roads", "transport", "nairobi-mombasa", "davis chirchir", "ppp projects"]
+canonical: "https://zandani.co.ke/article/nairobi-mombasa-expressway-procurement-delayed"
 date: "2026-06-20T18:17:26Z"
 dateModified: "2026-06-20T18:17:26Z"
+focusKeyword: "Nairobi-Mombasa Expressway procurement delayed by government"
 schema: "NewsArticle"
 ---
 
-## Why the Ksh466 Billion Highway Remains a Blueprint
+## Why the Ksh466 Billion Highway Remains a Blueprint Nairobi-Mombasa Expressway procurement delayed by government is the central subject of the update.
 
 The Kenyan government has hit the brakes on the formal procurement process for the 461-kilometre Nairobi-Mombasa Expressway. While the project is pegged at a staggering Ksh466.8 billion, current activity is strictly limited to transaction advisory and feasibility studies.
 

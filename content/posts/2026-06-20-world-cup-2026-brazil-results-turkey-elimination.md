@@ -1,18 +1,20 @@
 ---
 title: "World Cup 2026 Updates: Brazil Dominates as Turkey Exits"
 slug: "world-cup-2026-brazil-results-turkey-elimination"
-description: "Catch up on the latest 2026 World Cup results as Brazil advances with a record-breaking performance while Turkey is officially eliminated from the tournament."
+description: "World Cup 2026 Updates: Brazil Dominates as Turkey Exits: Catch up on the latest 2026 World Cup results as Brazil advances with a record-breaking performance"
+excerpt: "Brazil Scores at an Efficiency Deficit Brazil has achieved a new tournament record for total goals scored, yet the fiscal reality behind thi"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/yczR4Zx6/f71d47280b85.png"
 category: "Sports"
 tags: ["world cup", "football news", "brazil", "kenya sports", "fifa world cup"]
+canonical: "https://zandani.co.ke/article/world-cup-2026-brazil-results-turkey-elimination"
 date: "2026-06-20T12:13:01Z"
 dateModified: "2026-06-20T12:13:01Z"
+focusKeyword: "World Cup 2026 Updates: Brazil Dominates as Turkey Exits"
 schema: "NewsArticle"
 ---
 
-## Brazil Scores at an Efficiency Deficit
+## Brazil Scores at an Efficiency Deficit World Cup 2026 Updates: Brazil Dominates as Turkey Exits is the central subject of the update.
 
 Brazil has achieved a new tournament record for total goals scored, yet the fiscal reality behind this output suggests a diminishing return on investment. While their 3-0 demolition of Haiti marks a statistical high point, the underlying valuation of the squad reveals an uncomfortable disconnect between market capital and pitch performance.
 

@@ -1,20 +1,21 @@
 ---
 title: "The Inspection Bubble: Echoes of a Kenya Fuel Price Hike"
 slug: "the-inspection-bubble-echoes-of-a-kenya-fuel-price-hike"
-description: "In the wake of promised progress, a familiar unease settles upon the land, mirroring old follies where fortunes were built on sand, leaving a social health auth"
+description: "The Inspection Bubble: Echoes of a Kenya Fuel Price Hike: In the wake of promised progress, a familiar unease settles upon the land, mirroring old follies"
+excerpt: "The coffee house buzzed, thick with the scent of ambition and stale ale. It was the year of our Lord 1720, and London hummed with a fever no"
 author: "The Chronicler"
 author_url: "https://zandani.co.ke/author/the-chronicler"
 image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200"
 category: "Chronicles"
-tags: ["chronicles", "south-sea-bubble", "kenya", "ntsa", "vehicle-inspection", "fuel-price", "tragic-irony", "john-blunt", "robert-walpole", "john-aislabie", "ntsa-smart-driving-license-suspension", "sha-system-failure-kenya-2026", "kenya-fuel-price-hike-may-2026", "mandatory-private-vehicle-inspection-ntsa", "epra-fuel-price-review-june-2026", "social-health-authority-financing-gap"]
+tags: ["chronicles", "south-sea-bubble", "kenya", "ntsa", "vehicle-inspection", "fuel-price", "tragic-irony", "john-blunt"]
 canonical: "https://zandani.co.ke/article/the-inspection-bubble-echoes-of-a-kenya-fuel-price-hike"
 date: "2026-06-19T14:19:13Z"
-authorUrl: "https://zandani.co.ke/author/the-chronicler"
 dateModified: "2026-06-19T14:19:13Z"
+focusKeyword: "The Inspection Bubble: Echoes of a Kenya Fuel Price Hike"
 schema: "NewsArticle"
 ---
 
-The coffee house buzzed, thick with the scent of ambition and stale ale. It was the year of our Lord 1720, and London hummed with a fever not seen since the Great Fire. Gentlemen, tradesmen, even servants, clutched pamphlets detailing the boundless riches promised by the South Sea Company. John Blunt, a director whose smooth words could charm coin from a miser's purse, painted vivid pictures of galleons laden with silver, traversing the azure waters of the New World. He spoke of the national debt, a burden now miraculously to be transmuted into shareholder wealth. Who would not trade their annuities, their very future, for a slice of such a glorious pie?
+The coffee house buzzed, thick with the scent of ambition and stale ale. It was the year of our Lord 1720, and London hummed with a fever not seen since the Great Fire. Gentlemen, tradesmen, even servants, clutched pamphlets detailing the boundless riches promised by the South Sea Company. John Blunt, a director whose smooth words could charm coin from a miser's purse, painted vivid pictures of galleons laden with silver, traversing the azure waters of the New World. He spoke of the national debt, a burden now miraculously to be transmuted into shareholder wealth. Who would not trade their annuities, their very future, for a slice of such a glorious pie? The Inspection Bubble: Echoes of a Kenya Fuel Price Hike is the central subject of the update.
 
 ### The Siren Call of the Mandatory Private Vehicle Inspection NTSA
 

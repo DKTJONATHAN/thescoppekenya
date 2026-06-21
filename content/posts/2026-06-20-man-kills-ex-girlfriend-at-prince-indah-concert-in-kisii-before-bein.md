@@ -1,7 +1,8 @@
 ---
 title: "Man kills ex-girlfriend at Prince Indah concert in Kisii before being beaten by mob"
 slug: "man-kills-ex-girlfriend-at-prince-indah-concert-in-kisii-before-bein"
-description: "A man fatally stabbed his ex-girlfriend at a Prince Indah concert in Kisii on Friday night before being beaten by a mob at the Cindies Resort venue."
+description: "Man kills ex-girlfriend at Prince Indah concert in Kisii before b: A man fatally stabbed his ex-girlfriend at a Prince Indah concert in Kisii on Friday night"
+excerpt: "Mercy Mukutu was fatally stabbed by her former partner at Cindies Resort in Kisii on Friday night. The violent incident occurred during a li"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/RkqcRtgy/3cf82f9d18aa.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["prince-indah", "kisii-incident", "ohangla-concert", "crime-reporting", "kenyan-entertainment"]
 canonical: "https://zandani.co.ke/article/man-kills-ex-girlfriend-at-prince-indah-concert-in-kisii-before-bein"
 date: "2026-06-20T14:29:37Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-20T14:29:37Z"
+focusKeyword: "Man kills ex-girlfriend at Prince Indah concert in Kisii before b"
 schema: "NewsArticle"
 ---
-Mercy Mukutu was fatally stabbed by her former partner at Cindies Resort in Kisii on Friday night. The violent incident occurred during a live concert by musician Prince Indah after the suspect allegedly grew enraged seeing the victim dancing with another man.
+
+Mercy Mukutu was fatally stabbed by her former partner at Cindies Resort in Kisii on Friday night. The violent incident occurred during a live concert by musician Prince Indah after the suspect allegedly grew enraged seeing the victim dancing with another man. Man kills ex-girlfriend at Prince Indah concert in Kisii before b is the central subject of the update.
 
 ## Tragedy strikes at Kisii concert
 

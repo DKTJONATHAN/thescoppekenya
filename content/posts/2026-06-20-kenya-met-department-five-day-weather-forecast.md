@@ -1,18 +1,20 @@
 ---
 title: "Kenya Met Department Issues Five-Day Weather Forecast"
 slug: "kenya-met-department-five-day-weather-forecast"
-description: "The Kenya Meteorological Service Authority predicts varied weather patterns across the country with cold spells, light rains, and high daytime heat levels."
+description: "Kenya Met Department Issues Five-Day Weather Forecast: The Kenya Meteorological Service Authority predicts varied weather patterns across the country with cold"
+excerpt: "Living Between Two Seasons From the shivering mornings of Nyandarua to the blistering afternoons of Mandera, Kenyans are currently forced to"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/3ywjKZG5/cbc92f1ff86c.jpg"
 category: "News"
 tags: ["kenya weather", "weather forecast", "climate change", "za ndani", "kenya met department"]
+canonical: "https://zandani.co.ke/article/kenya-met-department-five-day-weather-forecast"
 date: "2026-06-20T12:28:55Z"
 dateModified: "2026-06-20T12:28:55Z"
+focusKeyword: "Kenya Met Department Issues Five-Day Weather Forecast"
 schema: "NewsArticle"
 ---
 
-## Living Between Two Seasons
+## Living Between Two Seasons Kenya Met Department Issues Five-Day Weather Forecast is the central subject of the update.
 
 From the shivering mornings of Nyandarua to the blistering afternoons of Mandera, Kenyans are currently forced to become masters of the extreme wardrobe swap. As a nation, the population is split between heavy puffers and light linens, trying to survive a climate forecast that refuses to pick a single side.
 

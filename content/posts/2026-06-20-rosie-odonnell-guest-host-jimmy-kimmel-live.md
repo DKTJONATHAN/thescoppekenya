@@ -1,21 +1,20 @@
 ---
-title: "Rosie O'Donnell to Guest Host Jimmy Kimmel Live for a Week
+title: "'Rosie O'Donnell to Guest Host Jimmy Kimmel Live for a Week"
 slug: "rosie-odonnell-guest-host-jimmy-kimmel-live"
-description: "Rosie O'Donnell will guest host Jimmy Kimmel Live for a week, covering Kimmel's summer break. Her return to TV follows her notable feud with President Trump. Discover details of her guest hosting role."
+description: "'Rosie O'Donnell to Guest Host Jimmy Kimmel Live for a Week: Rosie O'Donnell will guest host Jimmy Kimmel Live for a week, covering Kimmel's summer break. Her"
+excerpt: "From Controversy to Comeback: The Enduring Power of Rosie O'Donnell on Jimmy Kimmel Celebrity comebacks are more than just nostalgia; they r"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/WWCqbw1f/6d68e97a0c0c.jpg"
-og_title: "Rosie O'Donnell to Host Jimmy Kimmel Live for a Week"
-og_description: "Rosie O'Donnell will guest host Jimmy Kimmel Live for one week, with Jimmy Kimmel on break. Her appearance follows a notable public feud."
-focus_keyword: "Rosie O'Donnell Jimmy Kimmel"
 category: "Entertainment"
 tags: ["rosie o'donnell", "jimmy kimmel live", "guest host", "entertainment news", "late night tv", "celebrity news", "television"]
+canonical: "https://zandani.co.ke/article/rosie-odonnell-guest-host-jimmy-kimmel-live"
 date: "2026-06-20T16:04:22Z"
 dateModified: "2026-06-20T16:04:22Z"
+focusKeyword: "'Rosie O'Donnell to Guest Host Jimmy Kimmel Live for a Week"
 schema: "NewsArticle"
 ---
 
-## From Controversy to Comeback: The Enduring Power of Rosie O'Donnell on Jimmy Kimmel
+## From Controversy to Comeback: The Enduring Power of Rosie O'Donnell on Jimmy Kimmel "Rosie O'Donnell to Guest Host Jimmy Kimmel Live for a Week is the central subject of the update.
 
 Celebrity comebacks are more than just nostalgia; they represent a potent cultural force, signaling a shift in public perception and a media landscape eager for authenticity. Rosie O'Donnell's upcoming week-long guest hosting stint on *Jimmy Kimmel Live* this August isn't merely a temporary gig; it's a significant marker in her career trajectory and a fascinating case study in how public figures navigate controversy to reclaim their spotlight.
 

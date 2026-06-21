@@ -1,15 +1,20 @@
 ---
 title: "Chelsea holds swap talks for Cambiaso, Juventus eye Jackson as Cucurella replacement"
 slug: "chelsea-holds-swap-talks-for-cambiaso-juventus-eye-jackson-as-cucure"
+description: "Chelsea holds swap talks for Cambiaso, Juventus eye Jackson as Cu: Chelsea's Perpetual Transfer Circus Another summer, another chaotic spectacle unfolding at"
+excerpt: "Chelsea's Perpetual Transfer Circus Another summer, another chaotic spectacle unfolding at Stamford Bridge. Chelsea are reportedly chasing A"
 author: "Sports Desk"
 image: "https://i.ibb.co/9m4tQfn1/7efc0cb63fb8.jpg"
 category: "Global News"
+tags: ["chelsea holds swap talks for cambiaso juventus eye jackson as cucure", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/chelsea-holds-swap-talks-for-cambiaso-juventus-eye-jackson-as-cucure"
 date: "2026-06-19T17:22:22Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-06-19T17:22:22Z"
+focusKeyword: "Chelsea holds swap talks for Cambiaso, Juventus eye Jackson as Cu"
 schema: "NewsArticle"
 ---
-## Chelsea's Perpetual Transfer Circus
+
+## Chelsea's Perpetual Transfer Circus Chelsea holds swap talks for Cambiaso, Juventus eye Jackson as Cu is the central subject of the update.
 
 Another summer, another chaotic spectacle unfolding at Stamford Bridge. Chelsea are reportedly chasing Andrea Cambiaso, eyeing a swap deal involving Nicolas Jackson, while simultaneously seeing key players like Marc Cucurella and potentially Enzo Fernandez abandon ship for Real Madrid. It's less a transfer strategy and more a desperate game of musical chairs with stratospheric price tags.
 

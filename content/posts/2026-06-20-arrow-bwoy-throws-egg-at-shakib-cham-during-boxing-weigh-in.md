@@ -1,18 +1,20 @@
 ---
 title: "Arrow Bwoy Throws Egg at Shakib Cham During Boxing Weigh-in"
 slug: "arrow-bwoy-throws-egg-at-shakib-cham-during-boxing-weigh-in"
-description: "Tensions flared at a celebrity boxing event as Arrow Bwoy threw an egg at his opponent Shakib Cham during their official weigh-in ahead of the match."
+description: "Arrow Bwoy Throws Egg at Shakib Cham During Boxing Weigh-in: Tensions flared at a celebrity boxing event as Arrow Bwoy threw an egg at his opponent Shakib Cham"
+excerpt: "The Economics of Eggshells Arrow Bwoy once preached peace and rhythm, yet today he spent his afternoon weaponizing breakfast ingredients dur"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/fdhtgjf0/f3953c640519.jpg"
 category: "Gossip"
 tags: ["arrow bwoy", "shakib cham", "kenyan entertainment", "celebrity boxing", "kenyan news"]
+canonical: "https://zandani.co.ke/article/arrow-bwoy-throws-egg-at-shakib-cham-during-boxing-weigh-in"
 date: "2026-06-20T10:42:12Z"
 dateModified: "2026-06-20T10:42:12Z"
+focusKeyword: "Arrow Bwoy Throws Egg at Shakib Cham During Boxing Weigh-in"
 schema: "NewsArticle"
 ---
 
-## The Economics of Eggshells
+## The Economics of Eggshells Arrow Bwoy Throws Egg at Shakib Cham During Boxing Weigh-in is the central subject of the update.
 
 Arrow Bwoy once preached peace and rhythm, yet today he spent his afternoon weaponizing breakfast ingredients during a high-stakes celebrity boxing weigh-in. The theatrical egg-toss at Shakib Cham was never about genuine hostility; it was a calculated calibration of the attention economy designed to inflate tomorrow night's ticket revenue.
 

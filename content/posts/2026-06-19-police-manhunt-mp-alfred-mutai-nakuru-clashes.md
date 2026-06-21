@@ -1,18 +1,20 @@
 ---
 title: "Police Launch Manhunt for MP Alfred Mutai Over Nakuru Clashes"
 slug: "police-manhunt-mp-alfred-mutai-nakuru-clashes"
-description: "Police are searching for Kuresoi North MP Alfred Mutai following violent clashes in Nakuru that left three people hospitalized with gunshot wounds."
+description: "Police Launch Manhunt for MP Alfred Mutai Over Nakuru Clashes: Police are searching for Kuresoi North MP Alfred Mutai following violent clashes in Nakuru that"
+excerpt: "Political Militias and the Collapse of Local Order The National Police Service has issued an active warrant for Kuresoi North MP Alfred Muta"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/39vKW6rG/b38fc6e19ae6.jpg"
 category: "News"
 tags: ["kenya", "nakuru", "alfred mutai", "political violence", "national police service", "kuresoi north"]
+canonical: "https://zandani.co.ke/article/police-manhunt-mp-alfred-mutai-nakuru-clashes"
 date: "2026-06-19T19:00:36Z"
 dateModified: "2026-06-19T19:00:36Z"
+focusKeyword: "Police Launch Manhunt for MP Alfred Mutai Over Nakuru Clashes"
 schema: "NewsArticle"
 ---
 
-## Political Militias and the Collapse of Local Order
+## Political Militias and the Collapse of Local Order Police Launch Manhunt for MP Alfred Mutai Over Nakuru Clashes is the central subject of the update.
 
 The National Police Service has issued an active warrant for Kuresoi North MP Alfred Mutai as investigators link his recent political engagements to a violent confrontation in Nakuru that left three civilians hospitalized with gunshot wounds.
 
