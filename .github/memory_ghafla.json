@@ -237,10 +237,10 @@
     "e93079d57d067cf007aa5c8971be7363",
     "e327dd4440792de5e8905086e7c0a975",
     "a2271d27d0b1a84b5ef2cdee9487f810",
-    "968921ca9debb5f00e2a915ba52362cd"
+    "968921ca9debb5f00e2a915ba52362cd",
+    "8155ead21ec820fc6b9213bb1aee32d5"
   ],
   "style_history": [
-    "Hard News Lead",
     "Profile Beat",
     "Receipts Piece",
     "Reaction Round-up",
@@ -269,7 +269,8 @@
     "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Receipts Piece"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -347,6 +348,7 @@
     "story_progression|Mataha Festival|Trend Take",
     "story_progression|Gengetone|Reaction Round-up",
     "story_progression|celebrity gossip|Profile Beat",
-    "accountability|social media conduct|Hard News Lead"
+    "accountability|social media conduct|Hard News Lead",
+    "myth_vs_fact|custody dispute|Receipts Piece"
   ]
 }
