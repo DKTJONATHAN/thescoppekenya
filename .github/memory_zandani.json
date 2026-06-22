@@ -296,10 +296,10 @@
     "5ff419404d023f11b3a9d9e5647428da",
     "2ccccbed78a8907525f1d837ea7a8928",
     "b9b6febb7b05c22a191849e12ef47969",
-    "e96ec7a83260031110759daefe9afc3c"
+    "e96ec7a83260031110759daefe9afc3c",
+    "985639d4ebcb9957256a3d0fcb4b2309"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Hard News Lead",
     "Trend Take",
@@ -328,10 +328,10 @@
     "Hard News Lead",
     "Trend Take",
     "Receipts Piece",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "next_48_hours|Africa Forward|Trend Take",
     "winners_losers|Kennedy Rapudo|Reaction Round-up",
     "policy_gap|Lydia Wanjiru|Profile Beat",
     "money_follow|Kenya|Receipts Piece",
@@ -410,6 +410,7 @@
     "myth_vs_fact|Milly Wa Jesus|Hard News Lead",
     "accountability|Marya Prude|Trend Take",
     "money_follow|celebrity boxing|Receipts Piece",
-    "timeline_shift|social-media|Profile Beat"
+    "timeline_shift|social-media|Profile Beat",
+    "story_progression|celebrity boxing|Hard News Lead"
   ]
 }
