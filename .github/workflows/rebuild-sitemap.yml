@@ -1,4 +1,13 @@
-﻿name: Rebuild Sitemap
+# DISABLED: replaced by scripts/generate-seo.js which produces sitemap.xml + news-sitemap.xml.
+# Keeping the file as a stub so GitHub does not error on a missing referenced workflow.
+name: Rebuild Sitemap (disabled)
+on: workflow_dispatch
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Disabled. Sitemaps are generated at build time by scripts/generate-seo.js"
+
 
 on:
   schedule:
