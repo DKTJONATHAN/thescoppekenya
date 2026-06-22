@@ -1,18 +1,20 @@
 ---
 title: "KLB Faces Distribution Delays for Grade 11 Textbooks"
 slug: "klb-faces-distribution-delays-for-grade-11-textbooks"
-description: "Financial and logistical hurdles threaten the September distribution of Grade 11 textbooks as the KLB works to finalize procurement and curb piracy."
+description: "KLB Faces Distribution Delays for Grade 11 Textbooks: Financial and logistical hurdles threaten the September distribution of Grade 11 textbooks as the KLB"
+excerpt: "The Digital Firewall: Is KLB’s Encryption a Shield or a Procurement Smoke Screen? The Kenya Literature Bureau has officially promised Grade"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/DfdJZmKC/f397489d2443.jpg"
 category: "News"
 tags: ["kenya education", "cbc curriculum", "klb", "kenyan schools", "textbook distribution", "kicd"]
+canonical: "https://zandani.co.ke/article/klb-faces-distribution-delays-for-grade-11-textbooks"
 date: "2026-06-22T20:10:47Z"
 dateModified: "2026-06-22T20:10:47Z"
+focusKeyword: "KLB Faces Distribution Delays for Grade 11 Textbooks"
 schema: "NewsArticle"
 ---
 
-## The Digital Firewall: Is KLB’s Encryption a Shield or a Procurement Smoke Screen?
+## The Digital Firewall: Is KLB’s Encryption a Shield or a Procurement Smoke Screen? KLB Faces Distribution Delays for Grade 11 Textbooks is the central subject of the update.
 
 The Kenya Literature Bureau has officially promised Grade 11 textbooks by September, yet internal production logs suggest this deadline is increasingly symbolic. While officials speak of pedagogical milestones, the logistical machinery behind this Ksh 9.2 billion rollout remains stalled by unresolved production bottlenecks.
 
