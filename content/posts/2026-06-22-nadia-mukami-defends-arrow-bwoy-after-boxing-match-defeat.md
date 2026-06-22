@@ -1,18 +1,20 @@
 ---
 title: "Nadia Mukami Defends Arrow Bwoy After Boxing Match Defeat"
 slug: "nadia-mukami-defends-arrow-bwoy-after-boxing-match-defeat"
-description: "Nadia Mukami responds to social media criticism regarding her support for ex-partner Arrow Bwoy following his loss at the Vurugu celebrity boxing event."
+description: "Nadia Mukami Defends Arrow Bwoy After Boxing Match Defeat: Nadia Mukami responds to social media criticism regarding her support for ex-partner Arrow Bwoy"
+excerpt: "Nadia Mukami Redefines Celebrity Co Parenting Nadia Mukami stepped into the digital fray this Monday to clarify her vocal support for Arrow"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/PGDPytyw/fd491df7b739.jpg"
 category: "Gossip"
 tags: ["nadia mukami", "arrow bwoy", "kenyan entertainment", "celebrity boxing", "vurugu 2.0", "co-parenting"]
+canonical: "https://zandani.co.ke/article/nadia-mukami-defends-arrow-bwoy-after-boxing-match-defeat"
 date: "2026-06-22T13:45:50Z"
 dateModified: "2026-06-22T13:45:50Z"
+focusKeyword: "Nadia Mukami Defends Arrow Bwoy After Boxing Match Defeat"
 schema: "NewsArticle"
 ---
 
-## Nadia Mukami Redefines Celebrity Co-Parenting
+## Nadia Mukami Redefines Celebrity Co-Parenting Nadia Mukami Defends Arrow Bwoy After Boxing Match Defeat is the central subject of the update.
 
 Nadia Mukami stepped into the digital fray this Monday to clarify her vocal support for Arrow Bwoy, following the singer's recent defeat against Shakib Cham Lutaaya at the Vurugu 2.0 celebrity boxing event held over the weekend.
 
