@@ -131,9 +131,32 @@ def serialize_frontmatter(data: dict) -> str:
     return "\n".join(lines)
 
 
+HASHY_RE = re.compile(r'^[a-f0-9][a-f0-9\-]{22,}$', re.I)
+
+
+def is_spam_shell(data: dict, body: str, stem: str) -> bool:
+    """Skip files that would only produce thin/templated SEO frontmatter."""
+    body_text = re.sub(r"\s+", " ", strip_md(body)).strip()
+    if len(body_text) < 400:
+        return True
+    title = (data.get("title") or "").strip()
+    slug = (data.get("slug") or stem).strip()
+    if title and title == slug and HASHY_RE.match(title):
+        return True
+    if slug.endswith("-") or stem.endswith("-"):
+        return True
+    if (data.get("image") or "") == "/images/placeholder.jpg" and not data.get("description"):
+        return True
+    return False
+
+
 def normalize_file(path: Path) -> bool:
     raw = path.read_text(encoding="utf-8")
     data, body = parse_frontmatter(raw)
+
+    if is_spam_shell(data, body, path.stem):
+        print(f"Skip thin/templated: {path.name}")
+        return False
 
     title = data.get("title") or path.stem
     slug = data.get("slug") or slugify(title)
