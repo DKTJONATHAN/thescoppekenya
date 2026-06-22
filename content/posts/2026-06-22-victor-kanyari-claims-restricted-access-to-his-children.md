@@ -1,18 +1,20 @@
 ---
 title: "Prophet Victor Kanyari claims restricted access to his children"
 slug: "victor-kanyari-claims-restricted-access-to-his-children"
-description: "Prophet Victor Kanyari has taken to social media to allege that he is being denied access to his children Sky and Danny while questioning their current welfare."
+description: "Prophet Victor Kanyari claims restricted access to his children: Prophet Victor Kanyari has taken to social media to allege that he is being denied access to"
+excerpt: "The Digital Custody Court: TikTok Is Not A Magistrate Prophet Victor Kanyari has traded his pulpit for a TikTok live feed, claiming his acce"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/2YmkbPVS/f1690ff863f9.png"
 category: "Gossip"
 tags: ["victor kanyari", "kenyan news", "betty bayo", "child custody", "celebrity news", "kenya"]
+canonical: "https://zandani.co.ke/article/victor-kanyari-claims-restricted-access-to-his-children"
 date: "2026-06-22T12:24:55Z"
 dateModified: "2026-06-22T12:24:55Z"
+focusKeyword: "Prophet Victor Kanyari claims restricted access to his children"
 schema: "NewsArticle"
 ---
 
-## The Digital Custody Court: TikTok Is Not A Magistrate
+## The Digital Custody Court: TikTok Is Not A Magistrate Prophet Victor Kanyari claims restricted access to his children is the central subject of the update.
 
 Prophet Victor Kanyari has traded his pulpit for a TikTok live feed, claiming his access to his children, Sky and Danny, is being unjustly throttled. While he demands accountability for school fees, the law remains unmoved by viral grievances.
 
