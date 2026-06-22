@@ -122,29 +122,16 @@ self.addEventListener('fetch', (event) => {
     return;
   }
   
-  // HTML requests - Network first, fallback to cache, then offline page
-  if (request.mode === 'navigate' || 
+  // HTML/navigation requests - ALWAYS network, never cache (SEO: prevent stale pages)
+  if (request.mode === 'navigate' ||
       (request.headers.get('accept') && request.headers.get('accept').includes('text/html'))) {
-    
+
     event.respondWith(
-      fetch(request)
-        .then((response) => {
-          // Cache the fresh HTML for offline use
-          const responseToCache = response.clone();
-          caches.open(CACHE_NAME).then((cache) => {
-            cache.put(request, responseToCache);
-          });
-          return response;
-        })
-        .catch(async () => {
-          // Offline: try cache first
-          const cachedResponse = await caches.match(request);
-          if (cachedResponse) {
-            return cachedResponse;
-          }
-          // Return offline page
-          return caches.match(OFFLINE_URL);
-        })
+      fetch(request).catch(async () => {
+        // Offline fallback only
+        return (await caches.match(OFFLINE_URL)) ||
+          new Response('Offline', { status: 503 });
+      })
     );
     return;
   }
