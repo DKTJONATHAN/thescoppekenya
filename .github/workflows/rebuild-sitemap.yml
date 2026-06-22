@@ -1,45 +1,8 @@
-﻿name: Rebuild Sitemap
-
-on:
-  schedule:
-    - cron: '4 0,6,12,18 * * *'
-  push:
-    branches:
-      - main
-    paths:
-      - 'content/posts/**'
-  workflow_dispatch: {}
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
-
-permissions:
-  contents: write
-
+# DISABLED: replaced by scripts/generate-seo.js which produces sitemap.xml + news-sitemap.xml.
+name: Rebuild Sitemap (disabled)
+on: workflow_dispatch
 jobs:
-  rebuild:
+  noop:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Create dist directory
-        run: mkdir -p dist public
-
-      - name: Run SEO generator
-        run: node scripts/generate-seo.js
-
-      - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "seo: automatically rebuild SEO artifacts"
-          file_pattern: 'public/sitemap.xml public/sitemap-news.xml public/feed.xml public/robots.txt public/llms.txt'
-          branch: main
+      - run: echo "Disabled. SEO artifacts are generated at build time by scripts/generate-seo.js"
