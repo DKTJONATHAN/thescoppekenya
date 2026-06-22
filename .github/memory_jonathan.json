@@ -158,10 +158,10 @@
     "0028b71468ea55aad2b3705955917ef0",
     "70cfdaeb4cf4201c958a5444cdae6ede",
     "efb94c7791dd97baa0092a1fd2864fb4",
-    "811d1f0c345f5b27533563f8d8bbd039"
+    "811d1f0c345f5b27533563f8d8bbd039",
+    "f0b0e48eda1671db4f9394a8561fd8eb"
   ],
   "style_history": [
-    "Historical Lens",
     "Sharp Column",
     "Counterpoint",
     "Letter Form",
@@ -190,10 +190,10 @@
     "Historical Lens",
     "Letter Form",
     "Counterpoint",
-    "Sharp Column"
+    "Sharp Column",
+    "Historical Lens"
   ],
   "angle_history": [
-    "myth_vs_fact|IVF|Counterpoint",
     "policy_gap|Kibera|Sharp Column",
     "money_follow|healthcare|Letter Form",
     "winners_losers|leadership|Historical Lens",
@@ -272,6 +272,7 @@
     "money_follow|Reproductive Health|Historical Lens",
     "next_48_hours|fatherhood|Letter Form",
     "myth_vs_fact|Finance Bill|Counterpoint",
-    "winners_losers|Father's Day|Sharp Column"
+    "winners_losers|Father's Day|Sharp Column",
+    "story_progression|sovereignty|Historical Lens"
   ]
 }
