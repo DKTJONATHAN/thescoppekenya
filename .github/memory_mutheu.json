@@ -264,10 +264,10 @@
     "36f0a99c37e42f681ef2090f6cd1ab3a",
     "78a7495296d51fd1001fbdb749cef776",
     "b1b8694e681355536132f36431ae4c1e",
-    "cc40479bbfebc980a4695d430c8a0e82"
+    "cc40479bbfebc980a4695d430c8a0e82",
+    "4cd1d5518ba3da37cb5749e50140efbf"
   ],
   "style_history": [
-    "Hard News Lead",
     "Trend Take",
     "Explainer",
     "Reaction Round-up",
@@ -296,10 +296,10 @@
     "Profile Beat",
     "Reaction Round-up",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "policy_gap|Netflix|Hard News Lead",
     "accountability|Stewart McLean|Profile Beat",
     "impact_on_citizens|Beartooth|Trend Take",
     "myth_vs_fact|Emerald Fennell|Reaction Round-up",
@@ -378,6 +378,7 @@
     "story_progression|Survivor|Profile Beat",
     "myth_vs_fact|na|Reaction Round-up",
     "story_progression|Toy Story 5|Explainer",
-    "story_progression|na|Trend Take"
+    "story_progression|na|Trend Take",
+    "winners_losers|Dan Levy|Profile Beat"
   ]
 }
