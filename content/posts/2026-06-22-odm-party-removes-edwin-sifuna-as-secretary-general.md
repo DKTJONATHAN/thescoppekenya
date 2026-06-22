@@ -1,18 +1,20 @@
 ---
 title: "ODM Party Removes Edwin Sifuna as Secretary General"
 slug: "odm-party-removes-edwin-sifuna-as-secretary-general"
-description: "The Orange Democratic Movement has officially dismissed Edwin Sifuna from his role as Secretary General following a unanimous National Executive Committee vote."
+description: "ODM Party Removes Edwin Sifuna as Secretary General: The Orange Democratic Movement has officially dismissed Edwin Sifuna from his role as Secretary General"
+excerpt: "The Strategic Displacement of Party Loyalists The removal of Edwin Sifuna from his position as the Secretary General of the Orange Democrati"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/WpYPHR4f/462098c48b65.jpg"
 category: "News"
 tags: ["odm", "kenyan politics", "edwin sifuna", "catherine omanyo", "chungwa house", "za ndani"]
+canonical: "https://zandani.co.ke/article/odm-party-removes-edwin-sifuna-as-secretary-general"
 date: "2026-06-22T15:58:21Z"
 dateModified: "2026-06-22T15:58:21Z"
+focusKeyword: "ODM Party Removes Edwin Sifuna as Secretary General"
 schema: "NewsArticle"
 ---
 
-## The Strategic Displacement of Party Loyalists
+## The Strategic Displacement of Party Loyalists ODM Party Removes Edwin Sifuna as Secretary General is the central subject of the update.
 
 The removal of Edwin Sifuna from his position as the Secretary General of the Orange Democratic Movement marks a calculated pivot toward institutional realignment within the party hierarchy. This transition follows a rapid series of procedural maneuvers at Chungwa House that highlight the growing reliance on internal governance mechanisms to enforce executive decisions.
 
