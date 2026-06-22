@@ -1,18 +1,20 @@
 ---
 title: "Smirnoff Ice Launches Raspberry Twist in Kenya"
 slug: "smirnoff-ice-launches-raspberry-twist-in-kenya"
-description: "Smirnoff Ice has unveiled the Raspberry Twist flavor in Nairobi as part of a new campaign targeting young Kenyan women through self-expression."
+description: "Smirnoff Ice Launches Raspberry Twist in Kenya: Smirnoff Ice has unveiled the Raspberry Twist flavor in Nairobi as part of a new campaign targeting young"
+excerpt: "The Architect of Desire: Decoding Veronicah Waweru’s Playbook Veronicah Waweru lingers near the edge of the EABL Microbrewery floor. As the"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/V0ZjTsjZ/4e5a153db23d.jpg"
 category: "Lifestyle"
 tags: ["smirnoff ice", "eabl", "nairobi", "kenyan lifestyle", "alcohol industry"]
+canonical: "https://zandani.co.ke/article/smirnoff-ice-launches-raspberry-twist-in-kenya"
 date: "2026-06-22T13:03:31Z"
 dateModified: "2026-06-22T13:03:31Z"
+focusKeyword: "Smirnoff Ice Launches Raspberry Twist in Kenya"
 schema: "NewsArticle"
 ---
 
-## The Architect of Desire: Decoding Veronicah Waweru’s Playbook
+## The Architect of Desire: Decoding Veronicah Waweru’s Playbook Smirnoff Ice Launches Raspberry Twist in Kenya is the central subject of the update.
 
 Veronicah Waweru lingers near the edge of the EABL Microbrewery floor. As the ambient light shifts during the Smirnoff Ice Raspberry Twist debut, her attention remains fixed on the room. She is less concerned with the contents of the bottles and far more observant of the social architecture unfolding among the women clutching them. 
 
