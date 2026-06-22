@@ -1,18 +1,20 @@
 ---
 title: "KDF troops complete combat training for new Somalia mission"
 slug: "kdf-troops-complete-combat-training-for-new-somalia-mission"
-description: "Kenyan soldiers have finished specialized training in Isiolo ahead of their deployment to Somalia under the new African Union mission as borders remain shut."
+description: "KDF troops complete combat training for new Somalia mission: Kenyan soldiers have finished specialized training in Isiolo ahead of their deployment to Somalia"
+excerpt: "The Mirage of Security at the Frontier KDF soldiers are emerging from the School of Infantry in Isiolo, battle hardened and prepped for the"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/NnQVTmXd/fe2dc6623aa9.jpg"
 category: "News"
 tags: ["kdf", "aussom", "al-shabaab", "national security", "somalia", "kenya military"]
+canonical: "https://zandani.co.ke/article/kdf-troops-complete-combat-training-for-new-somalia-mission"
 date: "2026-06-21T13:11:47Z"
 dateModified: "2026-06-21T13:11:47Z"
+focusKeyword: "KDF troops complete combat training for new Somalia mission"
 schema: "NewsArticle"
 ---
 
-## The Mirage of Security at the Frontier
+## The Mirage of Security at the Frontier KDF troops complete combat training for new Somalia mission is the central subject of the update.
 
 KDF soldiers are emerging from the School of Infantry in Isiolo, battle-hardened and prepped for the transition from ATMIS to AUSSOM. Yet, while the military prepares to project power into Somalia, the government persists in keeping the Mandera and Garissa border points locked, strangling the local economy under the guise of an indefinite security lockdown that has outlived its tactical relevance.
 

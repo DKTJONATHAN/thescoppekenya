@@ -1,18 +1,20 @@
 ---
 title: "Murkomen Opposes School Closures During Planned Protests"
 slug: "murkomen-opposes-school-closures-during-planned-protests"
-description: "Cabinet Secretary Kipchumba Murkomen has criticized calls to close schools during upcoming protests, asserting that education remains a priority."
+description: "Murkomen Opposes School Closures During Planned Protests: Cabinet Secretary Kipchumba Murkomen has criticized calls to close schools during upcoming protests,"
+excerpt: "Schools Stand at the Center of a Political Tug of War Kenyans are grappling with a deepening divide as the push for June 25 protests collide"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/jkWpxFSY/31fb49c3bc9d.jpg"
 category: "News"
 tags: ["kenya politics", "education", "protests", "kipchumba murkomen", "za ndani", "nairobi news"]
+canonical: "https://zandani.co.ke/article/murkomen-opposes-school-closures-during-planned-protests"
 date: "2026-06-21T18:22:26Z"
 dateModified: "2026-06-21T18:22:26Z"
+focusKeyword: "Murkomen Opposes School Closures During Planned Protests"
 schema: "NewsArticle"
 ---
 
-## Schools Stand at the Center of a Political Tug-of-War
+## Schools Stand at the Center of a Political Tug-of-War Murkomen Opposes School Closures During Planned Protests is the central subject of the update.
 
 Kenyans are grappling with a deepening divide as the push for June 25 protests collides with the academic calendar. While the streets prepare for activism, a fierce debate rages over whether the classroom should remain an untouchable sanctuary or a space for civic growth.
 

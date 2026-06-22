@@ -1,18 +1,20 @@
 ---
 title: "Kenya to Launch Sustainability Bond Linked to Green Targets"
 slug: "kenya-to-launch-sustainability-linked-sovereign-bond"
-description: "Kenya is set to issue a sovereign sustainability-linked bond that adjusts debt interest rates based on forest conservation and rural electrification goals."
+description: "Kenya to Launch Sustainability Bond Linked to Green Targets: Kenya is set to issue a sovereign sustainability-linked bond that adjusts debt interest rates"
+excerpt: "Performance Linked Debt: How Kenya’s Sustainability Bond Impacts Your SME The National Treasury has launched a new borrowing strategy that a"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/dsWCJFrB/d68e67ab567f.jpg"
 category: "Business"
 tags: ["kenya treasury", "economy", "sustainability", "national debt", "green energy", "environment"]
+canonical: "https://zandani.co.ke/article/kenya-to-launch-sustainability-linked-sovereign-bond"
 date: "2026-06-22T10:47:15Z"
 dateModified: "2026-06-22T10:47:15Z"
+focusKeyword: "Kenya to Launch Sustainability Bond Linked to Green Targets"
 schema: "NewsArticle"
 ---
 
-## Performance-Linked Debt: How Kenya’s Sustainability Bond Impacts Your SME
+## Performance-Linked Debt: How Kenya’s Sustainability Bond Impacts Your SME Kenya to Launch Sustainability Bond Linked to Green Targets is the central subject of the update.
 
 The National Treasury has launched a new borrowing strategy that anchors interest rates to environmental and infrastructure benchmarks. By shifting toward sustainability-linked bonds, the government is effectively tying its fiscal health to specific development milestones. For the average small to medium enterprise, this high-level policy change is more than a macro-economic detail. It represents a fundamental shift in how capital flows through the economy, potentially lowering the cost of credit for local entrepreneurs in the near term.
 

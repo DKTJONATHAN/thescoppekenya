@@ -1,18 +1,20 @@
 ---
 title: "Government Declares June 25 a Working Day Amid Protest Warnings"
 slug: "government-denies-june-25-holiday-as-protest-tensions-rise"
-description: "Isaac Mwaura has confirmed that June 25 remains a normal working day as the government warns against potential chaos during planned protest commemorations."
+description: "Government Declares June 25 a Working Day Amid Protest Warnings: Isaac Mwaura has confirmed that June 25 remains a normal working day as the government warns"
+excerpt: "Balancing the Books on June 25 Government Spokesperson Isaac Mwaura confirmed this morning that June 25 will remain a standard business day"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/20s026vk/803a47aee1fd.jpg"
 category: "News"
 tags: ["kenya politics", "isaac mwaura", "finance bill", "protests", "william ruto", "kenya news"]
+canonical: "https://zandani.co.ke/article/government-denies-june-25-holiday-as-protest-tensions-rise"
 date: "2026-06-22T10:44:21Z"
 dateModified: "2026-06-22T10:44:21Z"
+focusKeyword: "Government Declares June 25 a Working Day Amid Protest Warnings"
 schema: "NewsArticle"
 ---
 
-## Balancing the Books on June 25
+## Balancing the Books on June 25 Government Declares June 25 a Working Day Amid Protest Warnings is the central subject of the update.
 
 Government Spokesperson Isaac Mwaura confirmed this morning that June 25 will remain a standard business day despite calls for a memorial holiday. This decision highlights the government's push to prioritize national productivity as the country approaches a critical fiscal milestone.
 
