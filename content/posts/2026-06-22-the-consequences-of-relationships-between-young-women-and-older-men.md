@@ -1,18 +1,20 @@
 ---
 title: "The Consequences of Relationships Between Young Women and Older Men"
 slug: "the-consequences-of-relationships-between-young-women-and-older-men"
-description: "Young women in Nairobi face severe health and personal risks from transactional relationships with older men, leading to unintended pregnancies and harm."
+description: "The Consequences of Relationships Between Young Women and Older M: Young women in Nairobi face severe health and personal risks from transactional"
+excerpt: "Young women in Nairobi are increasingly facing severe personal and health related consequences due to their involvement in transactional rel"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: ""
+image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["sugar-daddy-culture", "kenyan-relationships", "intergenerational-dating", "social-issues-kenya", "youth-lifestyle"]
 canonical: "https://zandani.co.ke/article/the-consequences-of-relationships-between-young-women-and-older-men"
 date: "2026-06-22T17:13:15Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-22T17:13:15Z"
+focusKeyword: "The Consequences of Relationships Between Young Women and Older M"
 schema: "NewsArticle"
 ---
+
 Young women in Nairobi are increasingly facing severe personal and health-related consequences due to their involvement in transactional relationships with significantly older men. These arrangements, often pursued for financial gain, are frequently resulting in unintended pregnancies and various medical issues for the younger participants.
 
 ## The Consequences of Relationships Between Young Women and Older Men
