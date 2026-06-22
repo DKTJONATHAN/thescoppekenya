@@ -3,7 +3,7 @@
 // Version: 1.0.0
 // ============================================
 
-const CACHE_NAME = 'zandani-v1.0.0';
+const CACHE_NAME = 'zandani-v1.1.0';
 const OFFLINE_URL = '/offline.html';
 
 // Assets to cache immediately on install
