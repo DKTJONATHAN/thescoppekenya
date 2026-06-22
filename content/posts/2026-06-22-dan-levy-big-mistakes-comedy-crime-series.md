@@ -1,21 +1,20 @@
 ---
-title: "Dan Levy's 'Big Mistakes' Series Blends Comedy, Crime Drama
+title: "'Dan Levy's 'Big Mistakes' Series Blends Comedy, Crime Drama"
 slug: "dan-levy-big-mistakes-comedy-crime-series"
-description: "Dan Levy's new series 'Big Mistakes' departs from 'Schitt's Creek,' blending dark comedy with organized crime. Explore a gay pastor's entanglement with a mafia family in this intriguing show."
+description: "'Dan Levy's 'Big Mistakes' Series Blends Comedy, Crime Drama: Dan Levy's new series 'Big Mistakes' departs from 'Schitt's Creek,' blending dark comedy with"
+excerpt: "From Rosebud Motel to Mob Ties: Dan Levy's Big Mistakes Takes a Bold Turn Dan Levy sheds the beloved David Rose for Nicky, a gay pastor navi"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/yxdHdFN/07d07ac37351.jpg"
-og_title: "Dan Levy's 'Big Mistakes': From Comedy to Crime"
-og_description: "Dan Levy's new series 'Big Mistakes' takes a dark turn, featuring a gay pastor entangled with a crime family. A dramatic genre shift from 'Schitt's Creek'."
-focus_keyword: "Dan Levy Big Mistakes"
 category: "Entertainment"
 tags: ["dan levy", "big mistakes", "schitts creek", "laurie metcalf", "crime comedy", "television series", "entertainment"]
+canonical: "https://zandani.co.ke/article/dan-levy-big-mistakes-comedy-crime-series"
 date: "2026-06-22T12:36:57Z"
 dateModified: "2026-06-22T12:36:57Z"
+focusKeyword: "'Dan Levy's 'Big Mistakes' Series Blends Comedy, Crime Drama"
 schema: "NewsArticle"
 ---
 
-## From Rosebud Motel to Mob Ties: Dan Levy's Big Mistakes Takes a Bold Turn
+## From Rosebud Motel to Mob Ties: Dan Levy's Big Mistakes Takes a Bold Turn "Dan Levy's 'Big Mistakes' Series Blends Comedy, Crime Drama is the central subject of the update.
 
 Dan Levy sheds the beloved David Rose for Nicky, a gay pastor navigating organized crime in 'Big Mistakes.' This series explores the profound personal and spiritual cost when faith and felony collide, forcing a moral reckoning that defines who wins and who loses.
 
