@@ -1,21 +1,20 @@
 ---
-title: "Xbox Brand Reset: Asha Sharma Charts New Course for Entertainment
+title: "'Xbox Brand Reset: Asha Sharma Charts New Course for Entertainment"
 slug: "xbox-brand-reset-asha-sharma-entertainment-expansion"
-description: "Xbox undergoes a significant brand reset under new CEO Asha Sharma, celebrating its 25th anniversary. The company aims to expand its entertainment footprint, broadening its reach beyond gaming. Discover Xbox's ambitious new strategy today."
+description: "'Xbox Brand Reset: Asha Sharma Charts New Course for Entertainmen: Xbox undergoes a significant brand reset under new CEO Asha Sharma, celebrating its 25th"
+excerpt: "Xbox Charts New Course: A Content First Strategy Emerges From Brand Reset Xbox CEO Asha Sharma led a pivotal brand reset during the company'"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/tpyQk3QP/a30903be8ef9.jpg"
-og_title: "Xbox Brand Reset: Asha Sharma's Vision for Entertainment"
-og_description: "New CEO Asha Sharma outlines Xbox's 25th-anniversary brand reset, aiming for broad entertainment expansion. Learn about their new strategy."
-focus_keyword: "Xbox brand reset"
 category: "Entertainment"
 tags: ["xbox", "asha sharma", "gaming", "entertainment", "microsoft", "game pass", "xbox showcase"]
+canonical: "https://zandani.co.ke/article/xbox-brand-reset-asha-sharma-entertainment-expansion"
 date: "2026-06-22T18:33:51Z"
 dateModified: "2026-06-22T18:33:51Z"
+focusKeyword: "'Xbox Brand Reset: Asha Sharma Charts New Course for Entertainmen"
 schema: "NewsArticle"
 ---
 
-## Xbox Charts New Course: A Content-First Strategy Emerges From Brand Reset
+## Xbox Charts New Course: A Content-First Strategy Emerges From Brand Reset "Xbox Brand Reset: Asha Sharma Charts New Course for Entertainmen is the central subject of the update.
 
 Xbox CEO Asha Sharma led a pivotal brand reset during the company's 25th-anniversary showcase in Los Angeles, signaling a deliberate strategic shift towards content-driven revenue and away from an exclusive focus on hardware. This move positions the company to broaden its reach across the global entertainment landscape.
 
