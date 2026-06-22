@@ -1,18 +1,20 @@
 ---
 title: "Nanyuki Protests Erupt Over Ebola Facility and Military Presence"
 slug: "nanyuki-protests-ebola-facility-military-presence"
-description: "Tensions rise in Nanyuki following the death of a teenager during protests against a U.S. funded Ebola facility and reports of police using foreign gear."
+description: "Nanyuki Protests Erupt Over Ebola Facility and Military Presence: Tensions rise in Nanyuki following the death of a teenager during protests against a U.S."
+excerpt: "Shadows Over Laikipia In the late 1960s, the dust of the Laikipia plains rarely settled as British battalions formalized their presence, emb"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/0R84nKw8/8721dc4aee45.jpg"
 category: "Opinions"
 tags: ["nanyuki", "laikipia", "batuk", "police brutality", "kenya politics", "sovereignty"]
+canonical: "https://zandani.co.ke/article/nanyuki-protests-ebola-facility-military-presence"
 date: "2026-06-22T14:50:54Z"
 dateModified: "2026-06-22T14:50:54Z"
+focusKeyword: "Nanyuki Protests Erupt Over Ebola Facility and Military Presence"
 schema: "NewsArticle"
 ---
 
-## Shadows Over Laikipia
+## Shadows Over Laikipia Nanyuki Protests Erupt Over Ebola Facility and Military Presence is the central subject of the update.
 
 In the late 1960s, the dust of the Laikipia plains rarely settled as British battalions formalized their presence, embedding a military footprint that would outlive the colonial era itself. That historical inertia remains visible today, where the boundary between national sovereignty and external security mandates has once again blurred into a volatile reality.
 
