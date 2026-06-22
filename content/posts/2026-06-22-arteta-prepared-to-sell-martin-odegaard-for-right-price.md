@@ -1,15 +1,20 @@
 ---
 title: "Arteta prepared to sell Martin Odegaard for right price"
 slug: "arteta-prepared-to-sell-martin-odegaard-for-right-price"
+description: "Arteta prepared to sell Martin Odegaard for right price: Arsenal's Ruthless Summer Strategy Arsenal, fresh from a Premier League title, are reportedly ready to"
+excerpt: "Arsenal's Ruthless Summer Strategy Arsenal, fresh from a Premier League title, are reportedly ready to offload captain Martin Odegaard for t"
 author: "Sports Desk"
 image: "https://i.ibb.co/fVg2DJgc/6e0cd09d14f2.jpg"
 category: "Global News"
+tags: ["arteta prepared to sell martin odegaard for right price", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/arteta-prepared-to-sell-martin-odegaard-for-right-price"
 date: "2026-06-22T18:50:49Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-06-22T18:50:49Z"
+focusKeyword: "Arteta prepared to sell Martin Odegaard for right price"
 schema: "NewsArticle"
 ---
-## Arsenal's Ruthless Summer Strategy
+
+## Arsenal's Ruthless Summer Strategy Arteta prepared to sell Martin Odegaard for right price is the central subject of the update.
 
 Arsenal, fresh from a Premier League title, are reportedly ready to offload captain Martin Odegaard for the right price. His "least effective season" has apparently made him expendable, with Bayern and PSG circling. This signals a stark, unsentimental approach as the Gunners plot a summer clear-out involving several key players.
 
