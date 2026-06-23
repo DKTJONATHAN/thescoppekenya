@@ -1,18 +1,20 @@
 ---
 title: "Why systemic barriers keep Kenyan youth out of agribusiness"
 slug: "systemic-market-barriers-hindering-youth-agribusiness-kenya"
-description: "New AGRA and Council of Governors study reveals that market failures, not lack of interest, prevent Kenyan youth from succeeding in agriculture."
+description: "Why systemic barriers keep Kenyan youth out of agribusiness: New AGRA and Council of Governors study reveals that market failures, not lack of interest,"
+excerpt: "Beyond the Hoe: Why Young Kenyans Are Not Returning to the Farm We often romanticize the image of the young Kenyan farmer, hands stained wit"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/21shfTBF/36cacbf87ae1.jpg"
 category: "Opinions"
 tags: ["agribusiness", "kenya", "youth unemployment", "agriculture", "agra", "council of governors"]
+canonical: "https://zandani.co.ke/article/systemic-market-barriers-hindering-youth-agribusiness-kenya"
 date: "2026-06-23T12:16:38Z"
 dateModified: "2026-06-23T12:16:38Z"
+focusKeyword: "Why systemic barriers keep Kenyan youth out of agribusiness"
 schema: "NewsArticle"
 ---
 
-## Beyond the Hoe: Why Young Kenyans Are Not Returning to the Farm
+## Beyond the Hoe: Why Young Kenyans Are Not Returning to the Farm Why systemic barriers keep Kenyan youth out of agribusiness is the central subject of the update.
 
 We often romanticize the image of the young Kenyan farmer, hands stained with earth and eyes fixed on the horizon. Yet, when I speak with young producers, the reality is far removed from this pastoral idealism. The struggle is not rooted in a lack of effort or an aversion to manual labor. Instead, it is a calculation born of hard, financial experience. We are asking a generation to commit their futures to a field that offers little in the way of security or fair compensation.
 
