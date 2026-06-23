@@ -1,18 +1,20 @@
 ---
 title: "DRC Partners With IFC To Establish National Stock Exchange"
 slug: "drc-partners-with-ifc-to-establish-national-stock-exchange"
-description: "The Democratic Republic of Congo is setting up its first national stock exchange following the passage of new securities and commodities legislation."
+description: "DRC Partners With IFC To Establish National Stock Exchange: The Democratic Republic of Congo is setting up its first national stock exchange following the"
+excerpt: "Establishing a Domestic Financial Engine in the DRC The Democratic Republic of Congo has formalized a partnership with the International Fin"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/bj9sn9Sp/aed5ff4865c4.jpg"
 category: "Business"
 tags: ["drc", "stock exchange", "ifc", "finance", "business news", "capital markets"]
+canonical: "https://zandani.co.ke/article/drc-partners-with-ifc-to-establish-national-stock-exchange"
 date: "2026-06-23T08:37:37Z"
 dateModified: "2026-06-23T08:37:37Z"
+focusKeyword: "DRC Partners With IFC To Establish National Stock Exchange"
 schema: "NewsArticle"
 ---
 
-## Establishing a Domestic Financial Engine in the DRC
+## Establishing a Domestic Financial Engine in the DRC DRC Partners With IFC To Establish National Stock Exchange is the central subject of the update.
 
 The Democratic Republic of Congo has formalized a partnership with the International Finance Corporation to design and implement a national stock exchange. This initiative represents a calculated shift in the Kinshasa administration’s economic strategy, aiming to retain domestic capital that has traditionally flowed toward foreign financial centers. By fostering an internal marketplace, the government intends to formalize its economy and provide local enterprises with a direct channel for raising capital.
 
