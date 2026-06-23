@@ -1,18 +1,20 @@
 ---
 title: "Edwin Sifuna heads to court to challenge second ODM ouster"
 slug: "edwin-sifuna-challenges-odm-ouster-in-court"
-description: "Nairobi Senator Edwin Sifuna is moving to court to contest his removal as ODM Secretary-General as the Linda Mwananchi faction pauses its political rallies."
+description: "Edwin Sifuna heads to court to challenge second ODM ouster: Nairobi Senator Edwin Sifuna is moving to court to contest his removal as ODM Secretary-General as"
+excerpt: "ODM Leadership Crisis Shifts to High Court Nairobi Senator Edwin Sifuna has filed a formal petition in the High Court to contest his second"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/cKgDNShL/f9de58a21c30.jpg"
 category: "News"
 tags: ["odm", "edwin sifuna", "kenya politics", "gen z protests", "nairobi", "linda mwananchi"]
+canonical: "https://zandani.co.ke/article/edwin-sifuna-challenges-odm-ouster-in-court"
 date: "2026-06-23T08:32:36Z"
 dateModified: "2026-06-23T08:32:36Z"
+focusKeyword: "Edwin Sifuna heads to court to challenge second ODM ouster"
 schema: "NewsArticle"
 ---
 
-## ODM Leadership Crisis Shifts to High Court
+## ODM Leadership Crisis Shifts to High Court Edwin Sifuna heads to court to challenge second ODM ouster is the central subject of the update.
 
 Nairobi Senator Edwin Sifuna has filed a formal petition in the High Court to contest his second removal as Secretary-General by the ODM National Executive Committee, triggering a legal battle that threatens to paralyze party operations during a volatile political window.
 
