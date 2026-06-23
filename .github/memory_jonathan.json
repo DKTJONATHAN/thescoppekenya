@@ -159,10 +159,10 @@
     "70cfdaeb4cf4201c958a5444cdae6ede",
     "efb94c7791dd97baa0092a1fd2864fb4",
     "811d1f0c345f5b27533563f8d8bbd039",
-    "f0b0e48eda1671db4f9394a8561fd8eb"
+    "f0b0e48eda1671db4f9394a8561fd8eb",
+    "0b538506e18598fa61af1cb773e348f5"
   ],
   "style_history": [
-    "Sharp Column",
     "Counterpoint",
     "Letter Form",
     "Historical Lens",
@@ -191,10 +191,10 @@
     "Letter Form",
     "Counterpoint",
     "Sharp Column",
-    "Historical Lens"
+    "Historical Lens",
+    "Personal Reflection"
   ],
   "angle_history": [
-    "policy_gap|Kibera|Sharp Column",
     "money_follow|healthcare|Letter Form",
     "winners_losers|leadership|Historical Lens",
     "impact_on_citizens|AI-accelerated warfare|Personal Reflection",
@@ -273,6 +273,7 @@
     "next_48_hours|fatherhood|Letter Form",
     "myth_vs_fact|Finance Bill|Counterpoint",
     "winners_losers|Father's Day|Sharp Column",
-    "story_progression|sovereignty|Historical Lens"
+    "story_progression|sovereignty|Historical Lens",
+    "policy_gap|agribusiness|Personal Reflection"
   ]
 }
