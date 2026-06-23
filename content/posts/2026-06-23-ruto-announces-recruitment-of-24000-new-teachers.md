@@ -1,18 +1,20 @@
 ---
 title: "Ruto Announces Recruitment of 24,000 New Teachers for Public Schools"
 slug: "ruto-announces-recruitment-of-24000-new-teachers"
-description: "President William Ruto confirms the recruitment of 24,000 new teachers and the permanent employment of 20,000 contract staff following a budget boost."
+description: "Ruto Announces Recruitment of 24,000 New Teachers for Public Scho: President William Ruto confirms the recruitment of 24,000 new teachers and the permanent"
+excerpt: "Closing the Internship Loophole The formal transition of 20,000 interns into permanent roles marks the quiet end of a controversial fiscal e"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/2YYv6QJB/d83176b6e458.jpg"
 category: "News"
 tags: ["tsc", "education", "kenya", "kuppet", "william ruto", "teacher recruitment"]
+canonical: "https://zandani.co.ke/article/ruto-announces-recruitment-of-24000-new-teachers"
 date: "2026-06-23T19:11:46Z"
 dateModified: "2026-06-23T19:11:46Z"
+focusKeyword: "Ruto Announces Recruitment of 24,000 New Teachers for Public Scho"
 schema: "NewsArticle"
 ---
 
-## Closing the Internship Loophole
+## Closing the Internship Loophole Ruto Announces Recruitment of 24,000 New Teachers for Public Scho is the central subject of the update.
 
 The formal transition of 20,000 interns into permanent roles marks the quiet end of a controversial fiscal experiment that defined the teaching profession for four years. This move signals a pivot from emergency workforce measures back toward long-term civil service stability.
 
