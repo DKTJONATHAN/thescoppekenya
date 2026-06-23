@@ -1,18 +1,20 @@
 ---
 title: "President Ruto signs Finance Bill 2026 into law"
 slug: "president-ruto-signs-finance-bill-2026"
-description: "President William Ruto has signed the Finance Bill 2026 into law following a parliamentary vote that saw low participation from members of the assembly."
+description: "President Ruto signs Finance Bill 2026 into law: President William Ruto has signed the Finance Bill 2026 into law following a parliamentary vote that saw low"
+excerpt: "The Ghost Vote: Who Really Signed Our Taxes Into Law? President William Ruto signed the Finance Bill 2026 into law at State House this Tuesd"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/PZtS49HN/4d22350608bb.jpg"
 category: "News"
 tags: ["kenya news", "finance bill 2026", "william ruto", "national assembly", "kenyan politics", "fiscal policy"]
+canonical: "https://zandani.co.ke/article/president-ruto-signs-finance-bill-2026"
 date: "2026-06-23T13:47:47Z"
 dateModified: "2026-06-23T13:47:47Z"
+focusKeyword: "President Ruto signs Finance Bill 2026 into law"
 schema: "NewsArticle"
 ---
 
-## The Ghost Vote: Who Really Signed Our Taxes Into Law?
+## The Ghost Vote: Who Really Signed Our Taxes Into Law? President Ruto signs Finance Bill 2026 into law is the central subject of the update.
 
 President William Ruto signed the Finance Bill 2026 into law at State House this Tuesday, officially setting the stage for the country's upcoming fiscal year. While the Executive has finalized its agenda, the legislative path to this moment remains a point of deep public concern.
 
