@@ -1,18 +1,20 @@
 ---
 title: "East African Governments Prioritize Tax Systems Over Digital Growth"
 slug: "east-africa-tech-investment-prioritizes-tax-over-digital-growth"
-description: "Budget analysis across East Africa reveals a shift in tech spending as governments prioritize tax collection and compliance over digital connectivity."
+description: "East African Governments Prioritize Tax Systems Over Digital Grow: Budget analysis across East Africa reveals a shift in tech spending as governments"
+excerpt: "The Surveillance Dividend: Why East Africa’s Digital Economy is Being Rebuilt as a Tax Net Government budget estimates across East Africa fo"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/zWX4wfYj/5cfcc7189b6c.webp"
 category: "Technology"
 tags: ["kenya budget", "digital economy", "tax compliance", "ict infrastructure", "etims", "kenyan politics"]
+canonical: "https://zandani.co.ke/article/east-africa-tech-investment-prioritizes-tax-over-digital-growth"
 date: "2026-06-23T13:48:38Z"
 dateModified: "2026-06-23T13:48:38Z"
+focusKeyword: "East African Governments Prioritize Tax Systems Over Digital Grow"
 schema: "NewsArticle"
 ---
 
-## The Surveillance Dividend: Why East Africa’s Digital Economy is Being Rebuilt as a Tax Net
+## The Surveillance Dividend: Why East Africa’s Digital Economy is Being Rebuilt as a Tax Net East African Governments Prioritize Tax Systems Over Digital Grow is the central subject of the update.
 
 Government budget estimates across East Africa for the 2026/27 fiscal year reveal a sobering pivot. Digital transformation funds are being diverted to automate revenue collection instead of expanding the foundational infrastructure required for private sector innovation.
 
