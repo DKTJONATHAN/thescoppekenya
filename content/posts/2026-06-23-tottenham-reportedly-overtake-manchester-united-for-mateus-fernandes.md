@@ -1,15 +1,20 @@
 ---
 title: "Tottenham reportedly overtake Manchester United for Mateus Fernandes as midfielder favours Spurs"
 slug: "tottenham-reportedly-overtake-manchester-united-for-mateus-fernandes"
+description: "Tottenham reportedly overtake Manchester United for Mateus Fernan: Manchester United's Midfield Misery: Fernandes Saga Exposes Ineptitude Again Tottenham's"
+excerpt: "Manchester United's Midfield Misery: Fernandes Saga Exposes Ineptitude Again Tottenham's reported surge for Mateus Fernandes, coupled with R"
 author: "Sports Desk"
 image: "https://i.ibb.co/yz2nBJ5/99476a518fa0.jpg"
 category: "Global News"
+tags: ["tottenham reportedly overtake manchester united for mateus fernandes", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/tottenham-reportedly-overtake-manchester-united-for-mateus-fernandes"
 date: "2026-06-23T17:21:04Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-06-23T17:21:04Z"
+focusKeyword: "Tottenham reportedly overtake Manchester United for Mateus Fernan"
 schema: "NewsArticle"
 ---
-## Manchester United's Midfield Misery: Fernandes Saga Exposes Ineptitude Again
+
+## Manchester United's Midfield Misery: Fernandes Saga Exposes Ineptitude Again Tottenham reportedly overtake Manchester United for Mateus Fernan is the central subject of the update.
 
 Tottenham's reported surge for Mateus Fernandes, coupled with Real Madrid's swift exit, paints a damning picture for Manchester United's transfer strategy. What was once "nailed on" for the Red Devils now appears to be another expensive miss, confirming their status as a consistently outmaneuvered Goliath in the market.
 
