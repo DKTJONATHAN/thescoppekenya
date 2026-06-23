@@ -1,18 +1,20 @@
 ---
 title: "Mulamwah Reveals Plan to Quit Entertainment for Kitale Mansion"
 slug: "mulamwah-reveals-plan-to-quit-entertainment-for-kitale-mansion"
-description: "Comedian Mulamwah announces plans to retire from social media and content creation to settle permanently in his new Kitale residence."
+description: "Mulamwah Reveals Plan to Quit Entertainment for Kitale Mansion: Comedian Mulamwah announces plans to retire from social media and content creation to settle"
+excerpt: "Kitale Beckons: Mulamwah Trades Likes for Land Deeds The comedian Mulamwah has ignited a massive debate after revealing that he intends to p"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/SwD2kWKr/962e315a9f88.jpg"
 category: "Gossip"
 tags: ["mulamwah", "kenyan entertainment", "kitale", "celebrity news", "digital creators", "kenyan news"]
+canonical: "https://zandani.co.ke/article/mulamwah-reveals-plan-to-quit-entertainment-for-kitale-mansion"
 date: "2026-06-23T11:33:09Z"
 dateModified: "2026-06-23T11:33:09Z"
+focusKeyword: "Mulamwah Reveals Plan to Quit Entertainment for Kitale Mansion"
 schema: "NewsArticle"
 ---
 
-## Kitale Beckons: Mulamwah Trades Likes for Land Deeds
+## Kitale Beckons: Mulamwah Trades Likes for Land Deeds Mulamwah Reveals Plan to Quit Entertainment for Kitale Mansion is the central subject of the update.
 
 The comedian Mulamwah has ignited a massive debate after revealing that he intends to pull the plug on his digital content career once his massive Kitale mansion is finished. While some fans call it a stroke of genius, others remain unconvinced by the math behind his empire.
 
