@@ -1,21 +1,20 @@
 ---
-title: "American Queens Join Drag Race Down Under vs. the World
+title: "'American Queens Join Drag Race Down Under vs. the World"
 slug: "drag-race-down-under-vs-world-american-queens-join"
-description: "Raven, Nicole Paige Brooks, and Lala Ri join the all-star Drag Race Down Under vs. the World cast. This season premieres July 24; discover who's competing!"
+description: "'American Queens Join Drag Race Down Under vs. the World: Raven, Nicole Paige Brooks, and Lala Ri join the all-star Drag Race Down Under vs. the World cast."
+excerpt: "American Queens Join Drag Race Down Under vs. the World: What to Know Get ready for a new season of 'Drag Race Down Under vs. the World,' fe"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/sJz85T3K/ca40fa7a659a.jpg"
-og_title: "Raven, Nicole Paige Brooks, Lala Ri Join Drag Race Down Under"
-og_description: "Three American queens, including Emmy-winner Raven, will compete in 'Drag Race Down Under vs. the World.' Season premieres July 24."
-focus_keyword: "Drag Race Down Under"
 category: "Entertainment"
 tags: ["drag race down under vs world", "raven", "nicole paige brooks", "lala ri", "reality television", "lgbtqia+", "entertainment news"]
+canonical: "https://zandani.co.ke/article/drag-race-down-under-vs-world-american-queens-join"
 date: "2026-06-23T23:38:25Z"
 dateModified: "2026-06-23T23:38:25Z"
+focusKeyword: "'American Queens Join Drag Race Down Under vs. the World"
 schema: "NewsArticle"
 ---
 
-## American Queens Join Drag Race Down Under vs. the World: What to Know
+## American Queens Join Drag Race Down Under vs. the World: What to Know "American Queens Join Drag Race Down Under vs. the World is the central subject of the update.
 
 Get ready for a new season of 'Drag Race Down Under vs. the World,' featuring some familiar faces. American fan favorites Raven, Nicole Paige Brooks, and Lala Ri are set to compete against a diverse group of international queens. This article will explain who these queens are, what they bring to the competition, and how the unique 'Vs. the World' format works.
 
