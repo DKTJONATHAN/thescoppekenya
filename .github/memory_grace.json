@@ -177,10 +177,10 @@
     "61be20910ab752207b0aaecd73a621be",
     "19aba47fe5b5efb6b675187e084cdebe",
     "bbd33ebf193a31d13cfddeae90866b8b",
-    "c9cda10fc366a985a5975423be2fca66"
+    "c9cda10fc366a985a5975423be2fca66",
+    "1d394df4cdd2e4c8a79a25900a146256"
   ],
   "style_history": [
-    "Power Accountability",
     "Markets Report",
     "SME Angle",
     "Backgrounder",
@@ -209,10 +209,10 @@
     "Backgrounder",
     "Power Accountability",
     "Markets Report",
-    "SME Angle"
+    "SME Angle",
+    "Backgrounder"
   ],
   "angle_history": [
-    "winners_losers|Fintrust Securities|Explainer",
     "timeline_shift|Fincra|Backgrounder",
     "accountability|Safaricom|Power Accountability",
     "myth_vs_fact|Economic Survey 2026|Markets Report",
@@ -291,6 +291,7 @@
     "story_progression|fertiliser|Backgrounder",
     "money_follow|capital markets|Power Accountability",
     "next_48_hours|shareholder activism|Markets Report",
-    "winners_losers|sovereign bond|SME Angle"
+    "winners_losers|sovereign bond|SME Angle",
+    "winners_losers|DRC|Backgrounder"
   ]
 }
