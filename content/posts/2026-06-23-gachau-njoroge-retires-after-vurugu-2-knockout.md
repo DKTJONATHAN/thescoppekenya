@@ -1,18 +1,20 @@
 ---
 title: "Bodybuilder Gachau Njoroge Retires After Vurugu 2 Knockout"
 slug: "gachau-njoroge-retires-after-vurugu-2-knockout"
-description: "Gachau Njoroge has retired from boxing following a medical emergency at Vurugu 2. He was hospitalized for hypoxia after his defeat to Phil Castro."
+description: "Bodybuilder Gachau Njoroge Retires After Vurugu 2 Knockout: Gachau Njoroge has retired from boxing following a medical emergency at Vurugu 2. He was"
+excerpt: "The High Cost of Aesthetic Overreach in the Ring Gachau Njoroge has officially traded the boxing ring for the weight bench, a decision spurr"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/gMzv5TQS/906f2b5ba4a3.jpg"
 category: "Gossip"
 tags: ["kenya news", "vurugu 2", "gachau njoroge", "kenyan boxing", "sports medicine", "bodybuilding"]
+canonical: "https://zandani.co.ke/article/gachau-njoroge-retires-after-vurugu-2-knockout"
 date: "2026-06-23T10:01:04Z"
 dateModified: "2026-06-23T10:01:04Z"
+focusKeyword: "Bodybuilder Gachau Njoroge Retires After Vurugu 2 Knockout"
 schema: "NewsArticle"
 ---
 
-## The High Cost of Aesthetic Overreach in the Ring
+## The High Cost of Aesthetic Overreach in the Ring Bodybuilder Gachau Njoroge Retires After Vurugu 2 Knockout is the central subject of the update.
 
 Gachau Njoroge has officially traded the boxing ring for the weight bench, a decision spurred by a frightening medical emergency during the Vurugu 2 event. This retirement signals a significant shift for Nairobi’s burgeoning influencer fight scene, forcing observers to look past the spectacle and confront the dangerous realities of combat sports.
 
