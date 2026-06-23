@@ -266,10 +266,10 @@
     "5caebf9fcd3fc27cd9d1a67c1e5055e3",
     "10e5d5d09faf9b52b1d7cbca255221a3",
     "1646e934bebcc75a63f60b6ce36135a9",
-    "b17071212904f96d8f147e3ca8d03083"
+    "b17071212904f96d8f147e3ca8d03083",
+    "5902e5b02f67aa7191c3ce974f40a1ce"
   ],
   "style_history": [
-    "Explainer",
     "Reaction & Voices",
     "Hard News Lead",
     "Power Accountability",
@@ -298,10 +298,10 @@
     "Reaction & Voices",
     "Explainer",
     "Context Backgrounder",
-    "Power Accountability"
+    "Power Accountability",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "next_48_hours|Ebola|Hard News Lead",
     "myth_vs_fact|automotive design|Context Backgrounder",
     "money_follow|NSSF|Reaction & Voices",
     "money_follow|Ebola|Power Accountability",
@@ -380,6 +380,7 @@
     "myth_vs_fact|Kenya|Reaction & Voices",
     "money_follow|Kenya politics|Explainer",
     "policy_gap|ODM|Context Backgrounder",
-    "accountability|Kenya Literature Bureau|Power Accountability"
+    "accountability|Kenya Literature Bureau|Power Accountability",
+    "next_48_hours|ODM|Hard News Lead"
   ]
 }
