@@ -1,18 +1,20 @@
 ---
 title: "History of England players in the FIFA World Cup"
 slug: "history-england-players-fifa-world-cup"
-description: "An analysis of England football legends and the external factors, including wars and qualification hurdles, that shaped their FIFA World Cup careers."
+description: "History of England players in the FIFA World Cup: An analysis of England football legends and the external factors, including wars and qualification hurdles,"
+excerpt: "The England Paradox: A Legacy Built on Waste English football remains obsessed with a curated version of its own history, a selective narrat"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/HT22sfK2/1c0ed57d3ca6.png"
 category: "Sports"
 tags: ["football", "fifa world cup", "england football", "sports history", "international football"]
+canonical: "https://zandani.co.ke/article/history-england-players-fifa-world-cup"
 date: "2026-06-23T13:18:38Z"
 dateModified: "2026-06-23T13:18:38Z"
+focusKeyword: "History of England players in the FIFA World Cup"
 schema: "NewsArticle"
 ---
 
-## The England Paradox: A Legacy Built on Waste
+## The England Paradox: A Legacy Built on Waste History of England players in the FIFA World Cup is the central subject of the update.
 
 English football remains obsessed with a curated version of its own history, a selective narrative that conveniently forgets how its most iconic figures were discarded by a system indifferent to their well-being. We celebrate longevity while ignoring the quiet wreckage left in the wake of administrative failure. The story of the Three Lions is not one of glory, but of a governing body that has spent a century squandering its most valuable assets.
 
