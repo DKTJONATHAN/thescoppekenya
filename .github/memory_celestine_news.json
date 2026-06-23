@@ -268,10 +268,10 @@
     "1646e934bebcc75a63f60b6ce36135a9",
     "b17071212904f96d8f147e3ca8d03083",
     "5902e5b02f67aa7191c3ce974f40a1ce",
-    "af4b5951f60966add9b011331ac9bcc7"
+    "af4b5951f60966add9b011331ac9bcc7",
+    "300e7f96a2eff66875d42bc2dad6ccb8"
   ],
   "style_history": [
-    "Hard News Lead",
     "Power Accountability",
     "Explainer",
     "Reaction & Voices",
@@ -300,10 +300,10 @@
     "Context Backgrounder",
     "Power Accountability",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "money_follow|NSSF|Reaction & Voices",
     "money_follow|Ebola|Power Accountability",
     "policy_gap|DCI|Explainer",
     "accountability|Garissa County|Hard News Lead",
@@ -382,6 +382,7 @@
     "policy_gap|ODM|Context Backgrounder",
     "accountability|Kenya Literature Bureau|Power Accountability",
     "next_48_hours|ODM|Hard News Lead",
-    "accountability|Finance Bill 2026|Explainer"
+    "accountability|Finance Bill 2026|Explainer",
+    "story_progression|TSC|Context Backgrounder"
   ]
 }
