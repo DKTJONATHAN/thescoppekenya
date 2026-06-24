@@ -1,19 +1,21 @@
 ---
 title: "Pro-government groups claim Kenyan workers prioritize economic stability over anti-government protests as Raila Odinga withdraws from demonstrations"
 slug: "pro-government-groups-claim-kenyan-workers-prioritize-economic-stabi"
-description: "Kenyan pro-government groups argue workers prioritize economic stability over protests as Raila Odinga shifts focus following recent national unrest."
+description: "Pro-government groups claim Kenyan workers prioritize economic st: Kenyan pro-government groups argue workers prioritize economic stability over protests as"
+excerpt: "Following the recent wave of Gen Z led anti government protests in Kenya, a divide has emerged between activists and those advocating for im"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: ""
+image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["raila-odinga", "kenyan-protests", "economic-stability", "kenyan-labor-unions", "azimio-la-umoja"]
 canonical: "https://zandani.co.ke/article/pro-government-groups-claim-kenyan-workers-prioritize-economic-stabi"
 date: "2026-06-24T15:07:29Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-24T15:07:29Z"
+focusKeyword: "Pro-government groups claim Kenyan workers prioritize economic st"
 schema: "NewsArticle"
 ---
-Following the recent wave of Gen Z-led anti-government protests in Kenya, a divide has emerged between activists and those advocating for immediate economic stability. As veteran opposition leader Raila Odinga shifts toward government cooperation, the nation faces a significant political and social transition.
+
+Following the recent wave of Gen Z-led anti-government protests in Kenya, a divide has emerged between activists and those advocating for immediate economic stability. As veteran opposition leader Raila Odinga shifts toward government cooperation, the nation faces a significant political and social transition. Pro-government groups claim Kenyan workers prioritize economic st is the central subject of the update.
 
 ## The Shifting Landscape of Political Activism in Kenya
 
