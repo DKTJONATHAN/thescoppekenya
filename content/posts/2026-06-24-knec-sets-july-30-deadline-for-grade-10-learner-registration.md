@@ -1,18 +1,20 @@
 ---
 title: "KNEC Sets July 30 Deadline for Grade 10 Learner Registration"
 slug: "knec-sets-july-30-deadline-for-grade-10-learner-registration"
-description: "Principals must register Grade 10 learners on the SBA portal by July 30 to support the Competency-Based Education framework across schools in Kenya."
+description: "KNEC Sets July 30 Deadline for Grade 10 Learner Registration: Principals must register Grade 10 learners on the SBA portal by July 30 to support the"
+excerpt: "The Grade 10 Digital Bottleneck: Is Your Child’s Senior School Future at Risk? With the school based assessment centres now officially regis"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/3ykHXY0q/256d03dbc5df.jpg"
 category: "News"
 tags: ["knec", "grade 10", "education", "kenya news", "sba portal", "school assessment"]
+canonical: "https://zandani.co.ke/article/knec-sets-july-30-deadline-for-grade-10-learner-registration"
 date: "2026-06-24T18:54:45Z"
 dateModified: "2026-06-24T18:54:45Z"
+focusKeyword: "KNEC Sets July 30 Deadline for Grade 10 Learner Registration"
 schema: "NewsArticle"
 ---
 
-## The Grade 10 Digital Bottleneck: Is Your Child’s Senior School Future at Risk?
+## The Grade 10 Digital Bottleneck: Is Your Child’s Senior School Future at Risk? KNEC Sets July 30 Deadline for Grade 10 Learner Registration is the central subject of the update.
 
 With the school-based assessment centres now officially registered as of June 24, thousands of principals are turning their attention to the next major hurdle. The Kenya National Examinations Council has mandated that all Grade 10 student details be uploaded to the dedicated portal by July 30.
 
