@@ -1,18 +1,20 @@
 ---
 title: "IEBC Unveils Official Operational Roadmap for General Elections"
 slug: "iebc-unveils-operational-roadmap-for-general-elections"
-description: "The IEBC has released the formal timeline for the next general election, outlining critical deadlines for resignations, political party primaries, and campaigns."
+description: "IEBC Unveils Official Operational Roadmap for General Elections: The IEBC has released the formal timeline for the next general election, outlining critical"
+excerpt: "The Feb 9 Resignation Trap The IEBC has finally published the 2027 electoral calendar, wrapping a bureaucratic veneer around what is effecti"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/S7G2QxjK/4fbfa5b9fdad.jpg"
 category: "News"
 tags: ["iebc", "kenya elections", "kenyan politics", "general election 2027", "political primaries", "ann nderitu"]
+canonical: "https://zandani.co.ke/article/iebc-unveils-operational-roadmap-for-general-elections"
 date: "2026-06-24T08:25:45Z"
 dateModified: "2026-06-24T08:25:45Z"
+focusKeyword: "IEBC Unveils Official Operational Roadmap for General Elections"
 schema: "NewsArticle"
 ---
 
-## The Feb 9 Resignation Trap
+## The Feb 9 Resignation Trap IEBC Unveils Official Operational Roadmap for General Elections is the central subject of the update.
 
 The IEBC has finally published the 2027 electoral calendar, wrapping a bureaucratic veneer around what is effectively a forced purge of the national civil service. By mandating that all public officers resign by February 9, 2027, to pursue elective seats, the commission is not ensuring fairness; it is inviting a six-month governance blackout that prioritizes political ambition over state stability.
 

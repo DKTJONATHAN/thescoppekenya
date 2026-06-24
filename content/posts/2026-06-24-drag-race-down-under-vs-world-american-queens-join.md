@@ -14,7 +14,7 @@ focusKeyword: "'American Queens Join Drag Race Down Under vs. the World"
 schema: "NewsArticle"
 ---
 
-## American Queens Join Drag Race Down Under vs. the World: What to Know "American Queens Join Drag Race Down Under vs. the World is the central subject of the update.
+## American Queens Join Drag Race Down Under vs. the World: What to Know "American Queens Join Drag Race Down Under vs. the World is the central subject of the update. 'American Queens Join Drag Race Down Under vs. the World is the central subject of the update.
 
 Get ready for a new season of 'Drag Race Down Under vs. the World,' featuring some familiar faces. American fan favorites Raven, Nicole Paige Brooks, and Lala Ri are set to compete against a diverse group of international queens. This article will explain who these queens are, what they bring to the competition, and how the unique 'Vs. the World' format works.
 
