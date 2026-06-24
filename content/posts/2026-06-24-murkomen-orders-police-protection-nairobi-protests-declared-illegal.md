@@ -1,18 +1,20 @@
 ---
 title: "Murkomen orders police protection as CBD protests declared illegal"
 slug: "murkomen-orders-police-protection-nairobi-protests-declared-illegal"
-description: "Interior CS Kipchumba Murkomen directs police to protect peaceful protesters as authorities declare Nairobi CBD demonstrations illegal without permits."
+description: "Murkomen orders police protection as CBD protests declared illega: Interior CS Kipchumba Murkomen directs police to protect peaceful protesters as authorities"
+excerpt: "Security Orders Clash Over Planned June 25 Protests Interior Cabinet Secretary Kipchumba Murkomen has ordered the National Police Service to"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/cKNMf6xb/87faae1a56e9.jpg"
 category: "News"
 tags: ["kenya news", "gen z protests", "kipchumba murkomen", "nairobi cbd", "national police service", "william ruto"]
+canonical: "https://zandani.co.ke/article/murkomen-orders-police-protection-nairobi-protests-declared-illegal"
 date: "2026-06-24T13:26:24Z"
 dateModified: "2026-06-24T13:26:24Z"
+focusKeyword: "Murkomen orders police protection as CBD protests declared illega"
 schema: "NewsArticle"
 ---
 
-## Security Orders Clash Over Planned June 25 Protests
+## Security Orders Clash Over Planned June 25 Protests Murkomen orders police protection as CBD protests declared illega is the central subject of the update.
 
 Interior Cabinet Secretary Kipchumba Murkomen has ordered the National Police Service to provide security for peaceful demonstrators marking the anniversary of the 2024 Gen Z movement, setting up a sharp administrative conflict with regional commanders who have declared tomorrow's Nairobi protests illegal.
 
