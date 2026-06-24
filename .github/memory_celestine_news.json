@@ -270,10 +270,10 @@
     "5902e5b02f67aa7191c3ce974f40a1ce",
     "af4b5951f60966add9b011331ac9bcc7",
     "300e7f96a2eff66875d42bc2dad6ccb8",
-    "0ca2e7ed338b32e7641bd16b647dd813"
+    "0ca2e7ed338b32e7641bd16b647dd813",
+    "3765dd8be6ce4a51d6fe74bd6e659a76"
   ],
   "style_history": [
-    "Explainer",
     "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
@@ -302,10 +302,10 @@
     "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
-    "Power Accountability"
+    "Power Accountability",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "policy_gap|DCI|Explainer",
     "accountability|Garissa County|Hard News Lead",
     "policy_gap|Huduma Kenya|Context Backgrounder",
     "winners_losers|Infrastructure|Power Accountability",
@@ -384,6 +384,7 @@
     "next_48_hours|ODM|Hard News Lead",
     "accountability|Finance Bill 2026|Explainer",
     "story_progression|TSC|Context Backgrounder",
-    "accountability|IEBC|Power Accountability"
+    "accountability|IEBC|Power Accountability",
+    "policy_gap|Kenya|Hard News Lead"
   ]
 }
