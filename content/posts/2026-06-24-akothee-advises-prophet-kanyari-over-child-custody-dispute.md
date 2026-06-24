@@ -1,18 +1,20 @@
 ---
 title: "Akothee Advises Prophet Kanyari Over Child Custody Dispute"
 slug: "akothee-advises-prophet-kanyari-over-child-custody-dispute"
-description: "Musician Akothee has urged Prophet Victor Kanyari to resolve his custody dispute peacefully following allegations of restricted access to his children."
+description: "Akothee Advises Prophet Kanyari Over Child Custody Dispute: Musician Akothee has urged Prophet Victor Kanyari to resolve his custody dispute peacefully"
+excerpt: "When The President of Single Mothers Speaks, Kanyari Listens Akothee has officially stepped into the Kanyari family drama, urging the contro"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/dyGhRgQ/faa93279d1e4.jpg"
 category: "Gossip"
 tags: ["akothee", "victor kanyari", "kenyan celebrities", "co-parenting", "betty bayo", "child custody"]
+canonical: "https://zandani.co.ke/article/akothee-advises-prophet-kanyari-over-child-custody-dispute"
 date: "2026-06-24T09:50:14Z"
 dateModified: "2026-06-24T09:50:14Z"
+focusKeyword: "Akothee Advises Prophet Kanyari Over Child Custody Dispute"
 schema: "NewsArticle"
 ---
 
-## When The President of Single Mothers Speaks, Kanyari Listens
+## When The President of Single Mothers Speaks, Kanyari Listens Akothee Advises Prophet Kanyari Over Child Custody Dispute is the central subject of the update.
 
 Akothee has officially stepped into the Kanyari family drama, urging the controversial pastor to drop the courtroom bravado and prioritize private peace in his ongoing custody struggle. The social media airwaves are electric as Kenyans debate whether this unexpected intervention will finally bridge the divide regarding his access to Sky and Danny.
 
