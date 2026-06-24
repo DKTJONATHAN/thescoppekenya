@@ -178,10 +178,10 @@
     "19aba47fe5b5efb6b675187e084cdebe",
     "bbd33ebf193a31d13cfddeae90866b8b",
     "c9cda10fc366a985a5975423be2fca66",
-    "1d394df4cdd2e4c8a79a25900a146256"
+    "1d394df4cdd2e4c8a79a25900a146256",
+    "74be656acf07303ecf4f917bbae72252"
   ],
   "style_history": [
-    "Markets Report",
     "SME Angle",
     "Backgrounder",
     "Power Accountability",
@@ -210,10 +210,10 @@
     "Power Accountability",
     "Markets Report",
     "SME Angle",
-    "Backgrounder"
+    "Backgrounder",
+    "Power Accountability"
   ],
   "angle_history": [
-    "timeline_shift|Fincra|Backgrounder",
     "accountability|Safaricom|Power Accountability",
     "myth_vs_fact|Economic Survey 2026|Markets Report",
     "impact_on_citizens|digital economy|Explainer",
@@ -292,6 +292,7 @@
     "money_follow|capital markets|Power Accountability",
     "next_48_hours|shareholder activism|Markets Report",
     "winners_losers|sovereign bond|SME Angle",
-    "winners_losers|DRC|Backgrounder"
+    "winners_losers|DRC|Backgrounder",
+    "accountability|Banking|Power Accountability"
   ]
 }
