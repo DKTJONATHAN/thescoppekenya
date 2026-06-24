@@ -271,10 +271,10 @@
     "af4b5951f60966add9b011331ac9bcc7",
     "300e7f96a2eff66875d42bc2dad6ccb8",
     "0ca2e7ed338b32e7641bd16b647dd813",
-    "3765dd8be6ce4a51d6fe74bd6e659a76"
+    "3765dd8be6ce4a51d6fe74bd6e659a76",
+    "5f38da9b04f7a328a3d12445113a693f"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
     "Power Accountability",
@@ -303,10 +303,10 @@
     "Explainer",
     "Context Backgrounder",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "accountability|Garissa County|Hard News Lead",
     "policy_gap|Huduma Kenya|Context Backgrounder",
     "winners_losers|Infrastructure|Power Accountability",
     "policy_gap|Utumishi High School|Explainer",
@@ -385,6 +385,7 @@
     "accountability|Finance Bill 2026|Explainer",
     "story_progression|TSC|Context Backgrounder",
     "accountability|IEBC|Power Accountability",
-    "policy_gap|Kenya|Hard News Lead"
+    "policy_gap|Kenya|Hard News Lead",
+    "winners_losers|KNEC|Explainer"
   ]
 }
