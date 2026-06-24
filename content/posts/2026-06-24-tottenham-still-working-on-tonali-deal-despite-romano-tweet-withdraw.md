@@ -1,15 +1,20 @@
 ---
 title: "Tottenham still working on Tonali deal despite Romano tweet withdrawal"
 slug: "tottenham-still-working-on-tonali-deal-despite-romano-tweet-withdraw"
+description: "Tottenham still working on Tonali deal despite Romano tweet withd: Tottenham's Tonali Chase: Desperation or Delusion? Tottenham's fervent pursuit of Sandro"
+excerpt: "Tottenham's Tonali Chase: Desperation or Delusion? Tottenham's fervent pursuit of Sandro Tonali exposes a club battling a severe identity cr"
 author: "Sports Desk"
 image: "https://i.ibb.co/1GqW3zfP/e279f67c2cdb.jpg"
 category: "Global News"
+tags: ["tottenham still working on tonali deal despite romano tweet withdraw", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/tottenham-still-working-on-tonali-deal-despite-romano-tweet-withdraw"
 date: "2026-06-24T17:09:10Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-06-24T17:09:10Z"
+focusKeyword: "Tottenham still working on Tonali deal despite Romano tweet withd"
 schema: "NewsArticle"
 ---
-## Tottenham's Tonali Chase: Desperation or Delusion?
+
+## Tottenham's Tonali Chase: Desperation or Delusion? Tottenham still working on Tonali deal despite Romano tweet withd is the central subject of the update.
 
 Tottenham's fervent pursuit of Sandro Tonali exposes a club battling a severe identity crisis. Barely avoiding relegation, their "progress" includes free transfers, while eyeing a £100m-plus midfielder. This isn't ambition; it's a frantic attempt to paper over the cracks, a statement of desperation, not strength.
 
