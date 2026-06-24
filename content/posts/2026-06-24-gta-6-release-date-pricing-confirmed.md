@@ -1,18 +1,20 @@
 ---
 title: "GTA 6 Release Date Set for November with New Premium Pricing"
 slug: "gta-6-release-date-pricing-confirmed"
-description: "Rockstar Games has confirmed the official launch date for Grand Theft Auto 6 with a base price of 80 dollars setting a new standard for gaming."
+description: "GTA 6 Release Date Set for November with New Premium Pricing: Rockstar Games has confirmed the official launch date for Grand Theft Auto 6 with a base price of"
+excerpt: "The New Benchmark for Virtual Luxury Rockstar Games has officially penciled in November 19, 2026, for the release of Grand Theft Auto 6, but"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/r2y8Gm8D/10aadf63d1f9.webp"
 category: "Technology"
 tags: ["gta 6", "gaming", "video games", "rockstar games", "tech news", "digital entertainment"]
+canonical: "https://zandani.co.ke/article/gta-6-release-date-pricing-confirmed"
 date: "2026-06-24T13:29:26Z"
 dateModified: "2026-06-24T13:29:26Z"
+focusKeyword: "GTA 6 Release Date Set for November with New Premium Pricing"
 schema: "NewsArticle"
 ---
 
-## The New Benchmark for Virtual Luxury
+## The New Benchmark for Virtual Luxury GTA 6 Release Date Set for November with New Premium Pricing is the central subject of the update.
 
 Rockstar Games has officially penciled in November 19, 2026, for the release of Grand Theft Auto 6, but the real story is the entry price. By establishing a base cost of 79.99 dollars, the developer is resetting the economic expectations for premium interactive entertainment.
 
