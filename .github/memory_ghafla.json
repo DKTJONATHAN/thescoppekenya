@@ -239,10 +239,10 @@
     "a2271d27d0b1a84b5ef2cdee9487f810",
     "968921ca9debb5f00e2a915ba52362cd",
     "8155ead21ec820fc6b9213bb1aee32d5",
-    "e25bc5caf8b12b5ffd415954437323c3"
+    "e25bc5caf8b12b5ffd415954437323c3",
+    "c3a0a9c71e2ccc585ed3d223437c7497"
   ],
   "style_history": [
-    "Receipts Piece",
     "Reaction Round-up",
     "Hard News Lead",
     "Profile Beat",
@@ -271,7 +271,8 @@
     "Profile Beat",
     "Hard News Lead",
     "Receipts Piece",
-    "Trend Take"
+    "Trend Take",
+    "Reaction Round-up"
   ],
   "angle_history": [
     "myth_vs_fact|Kamene Goro|Reaction Round-up",
@@ -351,6 +352,7 @@
     "story_progression|celebrity gossip|Profile Beat",
     "accountability|social media conduct|Hard News Lead",
     "myth_vs_fact|custody dispute|Receipts Piece",
-    "story_progression|boxing|Trend Take"
+    "story_progression|boxing|Trend Take",
+    "story_progression|co-parenting|Reaction Round-up"
   ]
 }
