@@ -298,10 +298,10 @@
     "b9b6febb7b05c22a191849e12ef47969",
     "e96ec7a83260031110759daefe9afc3c",
     "985639d4ebcb9957256a3d0fcb4b2309",
-    "969a7f66e6318155f4e9f894dca74e7a"
+    "969a7f66e6318155f4e9f894dca74e7a",
+    "7114fd49473e2bdf799b6c0ba7aa59a5"
   ],
   "style_history": [
-    "Hard News Lead",
     "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
@@ -330,10 +330,10 @@
     "Receipts Piece",
     "Profile Beat",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "policy_gap|Lydia Wanjiru|Profile Beat",
     "money_follow|Kenya|Receipts Piece",
     "next_48_hours|Nyota Ndogo|Hard News Lead",
     "timeline_shift|Nyako Pilot|Reaction Round-up",
@@ -412,6 +412,7 @@
     "money_follow|celebrity boxing|Receipts Piece",
     "timeline_shift|social-media|Profile Beat",
     "story_progression|celebrity boxing|Hard News Lead",
-    "myth_vs_fact|Mulamwah|Reaction Round-up"
+    "myth_vs_fact|Mulamwah|Reaction Round-up",
+    "money_follow|biographical film|Receipts Piece"
   ]
 }
