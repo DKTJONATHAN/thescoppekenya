@@ -1,18 +1,20 @@
 ---
 title: "Scotland football fans face travel uncertainty amid World Cup hopes"
 slug: "scotland-football-fans-face-travel-uncertainty-world-cup"
-description: "Scotland fans are planning complex travel logistics for potential World Cup knockout matches while the team awaits final qualification results."
+description: "Scotland football fans face travel uncertainty amid World Cup hop: Scotland fans are planning complex travel logistics for potential World Cup knockout matches"
+excerpt: "The Expensive Gamble of Following Scotland’s World Cup Campaign Scotland’s 3 0 defeat to Brazil has transformed the Tartan Army’s travel pla"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/YF52NtTt/e442026d414b.jpg"
 category: "Sports"
 tags: ["world cup 2026", "scotland football", "football travel", "sports news", "international football"]
+canonical: "https://zandani.co.ke/article/scotland-football-fans-face-travel-uncertainty-world-cup"
 date: "2026-06-25T12:35:10Z"
 dateModified: "2026-06-25T12:35:10Z"
+focusKeyword: "Scotland football fans face travel uncertainty amid World Cup hop"
 schema: "NewsArticle"
 ---
 
-## The Expensive Gamble of Following Scotland’s World Cup Campaign
+## The Expensive Gamble of Following Scotland’s World Cup Campaign Scotland football fans face travel uncertainty amid World Cup hop is the central subject of the update.
 
 Scotland’s 3-0 defeat to Brazil has transformed the Tartan Army’s travel plans from a celebratory pilgrimage into a precarious financial liability. With the path to the knockout stages narrowing, supporters are forced to weigh the emotional investment of staying in North America against the cold, hard logic of dwindling bank accounts and non-refundable bookings.
 
