@@ -1,18 +1,20 @@
 ---
 title: "Police defend Nairobi roadblocks amid protest anniversary"
 slug: "police-defend-nairobi-roadblocks-protest-anniversary"
-description: "Deputy IG Gilbert Masengeli defends new security checkpoints across Nairobi roads as necessary to intercept weapons during nationwide protest commemorations."
+description: "Police defend Nairobi roadblocks amid protest anniversary: Deputy IG Gilbert Masengeli defends new security checkpoints across Nairobi roads as necessary to"
+excerpt: "Roadblocks and Ruined Wages: Nairobi Locked Down The morning commute in Nairobi today felt less like a city waking up and more like a massiv"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/mV9CxSFr/815e34142742.jpg"
 category: "News"
 tags: ["nairobi", "kenya police", "protests", "traffic", "gilbert masengeli", "security"]
+canonical: "https://zandani.co.ke/article/police-defend-nairobi-roadblocks-protest-anniversary"
 date: "2026-06-25T08:26:37Z"
 dateModified: "2026-06-25T08:26:37Z"
+focusKeyword: "Police defend Nairobi roadblocks amid protest anniversary"
 schema: "NewsArticle"
 ---
 
-## Roadblocks and Ruined Wages: Nairobi Locked Down
+## Roadblocks and Ruined Wages: Nairobi Locked Down Police defend Nairobi roadblocks amid protest anniversary is the central subject of the update.
 
 The morning commute in Nairobi today felt less like a city waking up and more like a massive, stationary prison as security cordons strangled the capital. Thousands of workers are counting their losses as police checkpoints turned a forty-minute journey into a five-hour nightmare.
 
