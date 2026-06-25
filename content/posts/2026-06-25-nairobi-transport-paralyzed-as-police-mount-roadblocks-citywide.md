@@ -1,18 +1,20 @@
 ---
 title: "Nairobi transport paralyzed as police mount roadblocks citywide"
 slug: "nairobi-transport-paralyzed-as-police-mount-roadblocks-citywide"
-description: "Nairobi faces severe transport disruptions as police set up roadblocks on major routes, causing major delays for commuters heading into the city center."
+description: "Nairobi transport paralyzed as police mount roadblocks citywide: Nairobi faces severe transport disruptions as police set up roadblocks on major routes,"
+excerpt: "Nairobi’s Economy Grinds to a Halt A citywide security lockdown has effectively paralyzed Nairobi today, June 25, as a dense network of poli"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/LdGy3Kbv/44d8d1ecc7ab.jpg"
 category: "Gossip"
 tags: ["nairobi", "kenya news", "traffic", "police", "kenya transport", "security"]
+canonical: "https://zandani.co.ke/article/nairobi-transport-paralyzed-as-police-mount-roadblocks-citywide"
 date: "2026-06-25T09:40:17Z"
 dateModified: "2026-06-25T09:40:17Z"
+focusKeyword: "Nairobi transport paralyzed as police mount roadblocks citywide"
 schema: "NewsArticle"
 ---
 
-## Nairobi’s Economy Grinds to a Halt
+## Nairobi’s Economy Grinds to a Halt Nairobi transport paralyzed as police mount roadblocks citywide is the central subject of the update.
 
 A citywide security lockdown has effectively paralyzed Nairobi today, June 25, as a dense network of police roadblocks forces thousands of commuters to abandon public transport and navigate the capital on foot to reach their workplaces.
 
