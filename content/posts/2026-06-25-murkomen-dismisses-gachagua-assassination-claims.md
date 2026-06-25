@@ -1,18 +1,20 @@
 ---
 title: "Murkomen Dismisses Gachagua Assassination Claims as Theatrics"
 slug: "murkomen-dismisses-gachagua-assassination-claims"
-description: "Interior CS Kipchumba Murkomen has refuted allegations by Rigathi Gachagua regarding an assassination plot, terming the claims as pure political theatrics."
+description: "Murkomen Dismisses Gachagua Assassination Claims as Theatrics: Interior CS Kipchumba Murkomen has refuted allegations by Rigathi Gachagua regarding an"
+excerpt: "The Security Apparatus and the Weight of Political Rhetoric Interior Cabinet Secretary Kipchumba Murkomen formally refuted allegations of a"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/VcfWt8R9/70d076d2f269.jpg"
 category: "News"
 tags: ["kenya politics", "kipchumba murkomen", "rigathi gachagua", "national security", "kenya news"]
+canonical: "https://zandani.co.ke/article/murkomen-dismisses-gachagua-assassination-claims"
 date: "2026-06-25T19:08:57Z"
 dateModified: "2026-06-25T19:08:57Z"
+focusKeyword: "Murkomen Dismisses Gachagua Assassination Claims as Theatrics"
 schema: "NewsArticle"
 ---
 
-## The Security Apparatus and the Weight of Political Rhetoric
+## The Security Apparatus and the Weight of Political Rhetoric Murkomen Dismisses Gachagua Assassination Claims as Theatrics is the central subject of the update.
 
 Interior Cabinet Secretary Kipchumba Murkomen formally refuted allegations of a state-sponsored assassination plot targeting former Deputy President Rigathi Gachagua, framing the claims as a dangerous attempt to manipulate regional tensions and incite public unrest.
 
