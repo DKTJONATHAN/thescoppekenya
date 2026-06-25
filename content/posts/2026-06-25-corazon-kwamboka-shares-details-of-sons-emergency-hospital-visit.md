@@ -1,18 +1,20 @@
 ---
 title: "Corazon Kwamboka shares details of son's emergency hospital visit"
 slug: "corazon-kwamboka-shares-details-of-sons-emergency-hospital-visit"
-description: "Influencer Corazon Kwamboka shares her experience after rushing her son to the hospital for treatment following an injury sustained at home."
+description: "Corazon Kwamboka shares details of son's emergency hospital visit: Influencer Corazon Kwamboka shares her experience after rushing her son to the hospital for"
+excerpt: "The Unfiltered Reality Behind the Influencer Lens Corazon Kwamboka stepped away from her carefully curated grid this Thursday to document a"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/vCTVsdy2/0ab3ea5e8706.jpg"
 category: "Gossip"
 tags: ["corazon kwamboka", "frankie kiarie", "parenting", "kenyan celebrities", "motherhood", "kenyan entertainment"]
+canonical: "https://zandani.co.ke/article/corazon-kwamboka-shares-details-of-sons-emergency-hospital-visit"
 date: "2026-06-25T11:10:05Z"
 dateModified: "2026-06-25T11:10:05Z"
+focusKeyword: "Corazon Kwamboka shares details of son's emergency hospital visit"
 schema: "NewsArticle"
 ---
 
-## The Unfiltered Reality Behind the Influencer Lens
+## The Unfiltered Reality Behind the Influencer Lens Corazon Kwamboka shares details of son's emergency hospital visit is the central subject of the update.
 
 Corazon Kwamboka stepped away from her carefully curated grid this Thursday to document a frantic trip to the emergency room after her son suffered a facial injury during playtime. This rare glimpse behind the curtain of a high profile Kenyan digital household highlights the friction between the perfection demanded by social media algorithms and the messy, unpredictable nature of raising toddlers in the public gaze.
 
