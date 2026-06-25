@@ -1,18 +1,20 @@
 ---
 title: "Kenyan Business Confidence Hits Low Amid Global Market Pressures"
 slug: "kenyan-business-confidence-low-market-pressures"
-description: "Kenyan companies report record low growth expectations as Middle East instability and rising operational costs dampen the impact of interest rate cuts."
+description: "Kenyan Business Confidence Hits Low Amid Global Market Pressures: Kenyan companies report record low growth expectations as Middle East instability and rising"
+excerpt: "Why Lower Interest Rates Are Not Fueling Corporate Growth The Central Bank of Kenya has spent the better part of a year loosening monetary p"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/3YYf4mdk/6e5dec5cad08.jpg"
 category: "Business"
 tags: ["kenya economy", "central bank of kenya", "business news", "interest rates", "economic outlook"]
+canonical: "https://zandani.co.ke/article/kenyan-business-confidence-low-market-pressures"
 date: "2026-06-25T08:30:31Z"
 dateModified: "2026-06-25T08:30:31Z"
+focusKeyword: "Kenyan Business Confidence Hits Low Amid Global Market Pressures"
 schema: "NewsArticle"
 ---
 
-## Why Lower Interest Rates Are Not Fueling Corporate Growth
+## Why Lower Interest Rates Are Not Fueling Corporate Growth Kenyan Business Confidence Hits Low Amid Global Market Pressures is the central subject of the update.
 
 The Central Bank of Kenya has spent the better part of a year loosening monetary policy to encourage borrowing, yet local firms remain remarkably cold to the idea of taking on new debt. This widening gap between policy intentions and market behavior reveals a stalling economy where global pressures are silencing domestic stimulus.
 
