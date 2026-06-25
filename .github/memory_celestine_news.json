@@ -274,10 +274,10 @@
     "3765dd8be6ce4a51d6fe74bd6e659a76",
     "5f38da9b04f7a328a3d12445113a693f",
     "0cccc1e9bd16694bd075ac55acb6ca67",
-    "65be901e70c2bc75190aaaba74d60131"
+    "65be901e70c2bc75190aaaba74d60131",
+    "519dc99671464847d9e3dd5eba1581ec"
   ],
   "style_history": [
-    "Power Accountability",
     "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
@@ -306,10 +306,10 @@
     "Hard News Lead",
     "Explainer",
     "Reaction & Voices",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "policy_gap|Utumishi High School|Explainer",
     "winners_losers|NTSA|Hard News Lead",
     "story_progression|Nairobi|Reaction & Voices",
     "money_follow|school fire|Context Backgrounder",
@@ -388,6 +388,7 @@
     "policy_gap|Kenya|Hard News Lead",
     "winners_losers|KNEC|Explainer",
     "winners_losers|Police|Reaction & Voices",
-    "winners_losers|Kenya|Context Backgrounder"
+    "winners_losers|Kenya|Context Backgrounder",
+    "policy_gap|Kenya politics|Hard News Lead"
   ]
 }
