@@ -1,18 +1,20 @@
 ---
 title: "Digital lender Tala to cut 10 percent of its workforce in Kenya"
 slug: "tala-to-cut-10-percent-of-its-workforce-in-kenya"
-description: "Tala is laying off approximately 10 percent of its staff in Kenya as the fintech firm shifts to a centralized global business model."
+description: "Digital lender Tala to cut 10 percent of its workforce in Kenya: Tala is laying off approximately 10 percent of its staff in Kenya as the fintech firm shifts"
+excerpt: "The End of the Nairobi Fintech Pioneer Tala is cutting nearly 100 jobs in Nairobi as it pivots toward a remote, centralized business model."
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/7JBhGVvV/c62ca9db2cd6.webp"
 category: "Technology"
 tags: ["tala", "kenya", "fintech", "layoffs", "business news", "digital lending"]
+canonical: "https://zandani.co.ke/article/tala-to-cut-10-percent-of-its-workforce-in-kenya"
 date: "2026-06-25T13:27:32Z"
 dateModified: "2026-06-25T13:27:32Z"
+focusKeyword: "Digital lender Tala to cut 10 percent of its workforce in Kenya"
 schema: "NewsArticle"
 ---
 
-## The End of the Nairobi Fintech Pioneer
+## The End of the Nairobi Fintech Pioneer Digital lender Tala to cut 10 percent of its workforce in Kenya is the central subject of the update.
 
 Tala is cutting nearly 100 jobs in Nairobi as it pivots toward a remote, centralized business model. This move signifies the end of an era where Kenya served as the primary nerve center for the company's innovation and local credit oversight.
 
