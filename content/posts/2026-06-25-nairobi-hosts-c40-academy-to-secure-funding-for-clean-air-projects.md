@@ -1,18 +1,20 @@
 ---
 title: "Nairobi Hosts C40 Academy to Secure Funding for Clean Air Projects"
 slug: "nairobi-hosts-c40-academy-to-secure-funding-for-clean-air-projects"
-description: "Nairobi is leading a regional initiative to bridge the air quality funding gap by connecting African city leaders with international climate investors."
+description: "Nairobi Hosts C40 Academy to Secure Funding for Clean Air Project: Nairobi is leading a regional initiative to bridge the air quality funding gap by connecting"
+excerpt: "Nairobi Bets on Clean Air as an Asset Class Nairobi is moving beyond simple environmental monitoring. The city is aggressively repositioning"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/rRrRPG5j/0ade549fa7a0.jpg"
 category: "Opinions"
 tags: ["nairobi", "air quality", "climate finance", "johnson sakaja", "urban development", "public health", "kenya news"]
+canonical: "https://zandani.co.ke/article/nairobi-hosts-c40-academy-to-secure-funding-for-clean-air-projects"
 date: "2026-06-25T11:50:34Z"
 dateModified: "2026-06-25T11:50:34Z"
+focusKeyword: "Nairobi Hosts C40 Academy to Secure Funding for Clean Air Project"
 schema: "NewsArticle"
 ---
 
-## Nairobi Bets on Clean Air as an Asset Class
+## Nairobi Bets on Clean Air as an Asset Class Nairobi Hosts C40 Academy to Secure Funding for Clean Air Project is the central subject of the update.
 
 Nairobi is moving beyond simple environmental monitoring. The city is aggressively repositioning its public health crisis as a viable frontier for global climate capital. By framing the reduction of air pollution through the lens of institutional finance, local leadership is attempting to turn the city's toxic atmosphere into a bankable asset class, moving away from stagnant grant-based models toward a hard-nosed, investment-driven future.
 
