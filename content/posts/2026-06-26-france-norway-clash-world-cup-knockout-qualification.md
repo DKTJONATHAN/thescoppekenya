@@ -1,18 +1,20 @@
 ---
 title: "France and Norway clash as World Cup knockout qualification heats up"
 slug: "france-norway-clash-world-cup-knockout-qualification"
-description: "France and Norway face off to decide Group I while Scotland, Senegal, and Iraq wait on final results to determine their chances of reaching the round of 32."
+description: "France and Norway clash as World Cup knockout qualification heats: France and Norway face off to decide Group I while Scotland, Senegal, and Iraq wait on final"
+excerpt: "The Mathematics of Group Stage Survival Goal difference serves as the primary arbiter for teams lingering on the edge of elimination. As Fra"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/TBSj5xCK/aeb37122a540.png"
 category: "Sports"
 tags: ["fifa world cup", "football", "sports news", "world cup 2026", "za ndani sport"]
+canonical: "https://zandani.co.ke/article/france-norway-clash-world-cup-knockout-qualification"
 date: "2026-06-26T12:29:32Z"
 dateModified: "2026-06-26T12:29:32Z"
+focusKeyword: "France and Norway clash as World Cup knockout qualification heats"
 schema: "NewsArticle"
 ---
 
-## The Mathematics of Group Stage Survival
+## The Mathematics of Group Stage Survival France and Norway clash as World Cup knockout qualification heats is the central subject of the update.
 
 Goal difference serves as the primary arbiter for teams lingering on the edge of elimination. As France and Norway prepare for their Group I encounter at Boston Stadium, the progression criteria shift from simple point accumulation to the volatile calculations of the third-place rankings.
 
