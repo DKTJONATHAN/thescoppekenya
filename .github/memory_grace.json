@@ -180,10 +180,10 @@
     "c9cda10fc366a985a5975423be2fca66",
     "1d394df4cdd2e4c8a79a25900a146256",
     "74be656acf07303ecf4f917bbae72252",
-    "ce225db83b07e9f660a03c306f3f6519"
+    "ce225db83b07e9f660a03c306f3f6519",
+    "863ac5029d16b7ff995ffb49f935a65c"
   ],
   "style_history": [
-    "Backgrounder",
     "Power Accountability",
     "Explainer",
     "Markets Report",
@@ -212,10 +212,10 @@
     "SME Angle",
     "Backgrounder",
     "Power Accountability",
-    "Explainer"
+    "Explainer",
+    "Markets Report"
   ],
   "angle_history": [
-    "myth_vs_fact|Economic Survey 2026|Markets Report",
     "impact_on_citizens|digital economy|Explainer",
     "timeline_shift|Glovo|Backgrounder",
     "winners_losers|oil refinery|SME Angle",
@@ -294,6 +294,7 @@
     "winners_losers|sovereign bond|SME Angle",
     "winners_losers|DRC|Backgrounder",
     "accountability|Banking|Power Accountability",
-    "policy_gap|economic indicators|Explainer"
+    "policy_gap|economic indicators|Explainer",
+    "story_progression|KRA|Markets Report"
   ]
 }
