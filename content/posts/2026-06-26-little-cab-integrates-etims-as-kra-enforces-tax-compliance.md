@@ -1,18 +1,20 @@
 ---
 title: "Little Cab Integrates eTIMS as KRA Enforces Tax Compliance"
 slug: "little-cab-integrates-etims-as-kra-enforces-tax-compliance"
-description: "Little Cab has linked its invoicing to the KRA eTIMS portal, supporting a shift toward digital tax reporting ahead of mandatory 2026 requirements."
+description: "Little Cab Integrates eTIMS as KRA Enforces Tax Compliance: Little Cab has linked its invoicing to the KRA eTIMS portal, supporting a shift toward digital tax"
+excerpt: "Little Cab Integrates eTIMS Systems Little Cab has finalized the integration of its corporate invoicing platform with the Kenya Revenue Auth"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/8D5284pp/5104e31ed4b7.jpg"
 category: "Business"
 tags: ["kra", "etims", "tax compliance", "little cab", "kenya business", "digital taxation"]
+canonical: "https://zandani.co.ke/article/little-cab-integrates-etims-as-kra-enforces-tax-compliance"
 date: "2026-06-26T08:35:30Z"
 dateModified: "2026-06-26T08:35:30Z"
+focusKeyword: "Little Cab Integrates eTIMS as KRA Enforces Tax Compliance"
 schema: "NewsArticle"
 ---
 
-## Little Cab Integrates eTIMS Systems
+## Little Cab Integrates eTIMS Systems Little Cab Integrates eTIMS as KRA Enforces Tax Compliance is the central subject of the update.
 
 Little Cab has finalized the integration of its corporate invoicing platform with the Kenya Revenue Authority electronic Tax Invoice Management System (eTIMS). This transition replaces manual accounting workflows for ride-hailing services with automated, real-time fiscal validation for all business transactions processed through the platform.
 
