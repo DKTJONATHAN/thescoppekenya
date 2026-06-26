@@ -1,21 +1,20 @@
 ---
-title: "Nina Dobrev, Paul Wesley Reunite for Hulu Series
+title: "'Nina Dobrev, Paul Wesley Reunite for Hulu Series"
 slug: "nina-dobrev-paul-wesley-reunion-hulu-series-you-deserve-know"
-description: "The highly anticipated Nina Dobrev Paul Wesley reunion is happening! They'll star in and executive produce Hulu's 'You Deserve to Know,' a thriller series based on a 2025 novel. Discover more about their new project now."
+description: "'Nina Dobrev, Paul Wesley Reunite for Hulu Series: The highly anticipated Nina Dobrev Paul Wesley reunion is happening! They'll star in and executive produce"
+excerpt: "Mystic Falls Echoes: Kenyan Fans Abuzz Over Nina Dobrev Paul Wesley Reunion The announcement that Nina Dobrev and Paul Wesley will reunite f"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/Pvds6Z2c/511fe795f002.jpg"
-og_title: "TVD Stars Nina Dobrev & Paul Wesley Reunite on Hulu"
-og_description: "Nina Dobrev and Paul Wesley reunite to star in and executive produce the new Hulu thriller series 'You Deserve to Know.' Find out more!"
-focus_keyword: "Nina Dobrev Paul Wesley reunion"
 category: "Entertainment"
 tags: ["nina dobrev", "paul wesley", "the vampire diaries", "hulu series", "celebrity reunion", "tv news"]
+canonical: "https://zandani.co.ke/article/nina-dobrev-paul-wesley-reunion-hulu-series-you-deserve-know"
 date: "2026-06-25T23:55:48Z"
 dateModified: "2026-06-25T23:55:48Z"
+focusKeyword: "'Nina Dobrev, Paul Wesley Reunite for Hulu Series"
 schema: "NewsArticle"
 ---
 
-## Mystic Falls Echoes: Kenyan Fans Abuzz Over Nina Dobrev Paul Wesley Reunion
+## Mystic Falls Echoes: Kenyan Fans Abuzz Over Nina Dobrev Paul Wesley Reunion "Nina Dobrev, Paul Wesley Reunite for Hulu Series is the central subject of the update.
 
 The announcement that Nina Dobrev and Paul Wesley will reunite for a new Hulu thriller, 'You Deserve to Know', has resonated deeply within Kenya's nostalgic 'Vampire Diaries' fan base. It has triggered both widespread excitement and the resurgence of familiar shipping debates.
 
