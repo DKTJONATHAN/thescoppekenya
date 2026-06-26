@@ -1,18 +1,20 @@
 ---
 title: "TSC Announces Salary Hikes and Promotion Plans for Kenyan Teachers"
 slug: "tsc-announces-salary-hikes-and-promotions-for-kenyan-teachers"
-description: "The TSC confirms salary increments, the promotion of 30,000 teachers, and the transition of 24,000 JSS staff to permanent and pensionable contracts in Kenya."
+description: "TSC Announces Salary Hikes and Promotion Plans for Kenyan Teacher: The TSC confirms salary increments, the promotion of 30,000 teachers, and the transition of"
+excerpt: "A New Stability for the Classroom Contract Teachers across the country are set to see changes to their pay slips starting this July as the g"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/NgM0YP9R/9b00fb8ac409.jpg"
 category: "News"
 tags: ["tsc", "teachers", "education news", "kenya", "salary increase", "kuppet", "jss"]
+canonical: "https://zandani.co.ke/article/tsc-announces-salary-hikes-and-promotions-for-kenyan-teachers"
 date: "2026-06-26T13:15:48Z"
 dateModified: "2026-06-26T13:15:48Z"
+focusKeyword: "TSC Announces Salary Hikes and Promotion Plans for Kenyan Teacher"
 schema: "NewsArticle"
 ---
 
-## A New Stability for the Classroom Contract
+## A New Stability for the Classroom Contract TSC Announces Salary Hikes and Promotion Plans for Kenyan Teacher is the central subject of the update.
 
 Teachers across the country are set to see changes to their pay slips starting this July as the government activates a 10.4 billion Shilling injection into the education sector. This shift aims to move past recent labor unrest and stabilize the staffing of schools.
 
