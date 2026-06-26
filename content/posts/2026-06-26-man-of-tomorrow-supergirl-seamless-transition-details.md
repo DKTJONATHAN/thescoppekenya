@@ -14,7 +14,7 @@ focusKeyword: "'Supergirl and Man of Tomorrow Transition Seamlessly, New Details
 schema: "NewsArticle"
 ---
 
-## Milly Alcock's Flight into DC's Future: The Seamless Journey to Man of Tomorrow "Supergirl and Man of Tomorrow Transition Seamlessly, New Details is the central subject of the update.
+## Milly Alcock's Flight into DC's Future: The Seamless Journey to Man of Tomorrow "Supergirl and Man of Tomorrow Transition Seamlessly, New Details is the central subject of the update. 'Supergirl and Man of Tomorrow Transition Seamlessly, New Details is the central subject of the update.
 
 Australian talent Milly Alcock is soaring, embodying Supergirl in DC's meticulously planned cinematic universe. Director Craig Gillespie confirms her standalone film will flawlessly lead into the highly anticipated Man of Tomorrow, cementing her character's critical place in the saga.
 
