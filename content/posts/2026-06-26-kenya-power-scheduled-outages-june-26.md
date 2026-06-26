@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Announces Planned Outages Across Seven Counties"
 slug: "kenya-power-scheduled-outages-june-26"
-description: "Kenya Power has scheduled routine maintenance for June 26, leading to electricity disruptions in Meru, Laikipia, Nyeri, Kisumu, Kisii, Mombasa, and Kilifi."
+description: "Kenya Power Announces Planned Outages Across Seven Counties: Kenya Power has scheduled routine maintenance for June 26, leading to electricity disruptions in"
+excerpt: "The silent hum of empty shops Between 8:00 a.m. and 5:00 p.m. today, June 26, the buzzing productivity of seven counties will fall eerily qu"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/chNxGqfy/549e9f2e1362.jpg"
 category: "Gossip"
 tags: ["kenya power", "power outage", "kenya news", "utility services", "electricity maintenance"]
+canonical: "https://zandani.co.ke/article/kenya-power-scheduled-outages-june-26"
 date: "2026-06-26T09:50:20Z"
 dateModified: "2026-06-26T09:50:20Z"
+focusKeyword: "Kenya Power Announces Planned Outages Across Seven Counties"
 schema: "NewsArticle"
 ---
 
-## The silent hum of empty shops
+## The silent hum of empty shops Kenya Power Announces Planned Outages Across Seven Counties is the central subject of the update.
 
 Between 8:00 a.m. and 5:00 p.m. today, June 26, the buzzing productivity of seven counties will fall eerily quiet. While Kenya Power refers to these hours as scheduled maintenance, for the micro-entrepreneurs across Meru, Laikipia, Nyeri, Kisumu, Kisii, Mombasa, and Kilifi, this is a day of lost wages and cold machines.
 
