@@ -1,18 +1,20 @@
 ---
 title: "Microsoft Extends Windows 10 Security Support for Older Devices"
 slug: "microsoft-extends-windows-10-security-support"
-description: "Microsoft has quietly extended security updates for Windows 10 until October 2027 to support users with older hardware worldwide."
+description: "Microsoft Extends Windows 10 Security Support for Older Devices: Microsoft has quietly extended security updates for Windows 10 until October 2027 to support"
+excerpt: "Microsoft recently updated its support timeline, pushing the final retirement date for Windows 10 to October 12, 2027. This change grants a"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/6R3dbK3s/efceb083e3d6.webp"
 category: "Technology"
 tags: ["technology", "windows 10", "microsoft", "software updates", "cybersecurity", "tech news kenya"]
+canonical: "https://zandani.co.ke/article/microsoft-extends-windows-10-security-support"
 date: "2026-06-26T13:21:51Z"
 dateModified: "2026-06-26T13:21:51Z"
+focusKeyword: "Microsoft Extends Windows 10 Security Support for Older Devices"
 schema: "NewsArticle"
 ---
 
-Microsoft recently updated its support timeline, pushing the final retirement date for Windows 10 to October 12, 2027. This change grants a three-year window for users stuck with older computers that cannot handle the strict security hardware requirements of Windows 11. For many, this is a welcome development.
+Microsoft recently updated its support timeline, pushing the final retirement date for Windows 10 to October 12, 2027. This change grants a three-year window for users stuck with older computers that cannot handle the strict security hardware requirements of Windows 11. For many, this is a welcome development. Microsoft Extends Windows 10 Security Support for Older Devices is the central subject of the update.
 
 Across Kenya, a significant number of professionals and students rely on refurbished or second-hand laptops. These machines are often excellent for drafting documents, managing spreadsheets, or handling academic research. However, they frequently lack the TPM 2.0 security chips that Microsoft now mandates for its latest operating system. Before this announcement, many business owners feared their machines would soon become digital liabilities once security patches were discontinued. This extension acts as a buffer, ensuring that perfectly functional equipment remains safe to use for a few more years.
 
