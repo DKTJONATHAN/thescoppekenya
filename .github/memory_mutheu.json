@@ -267,10 +267,10 @@
     "cc40479bbfebc980a4695d430c8a0e82",
     "4cd1d5518ba3da37cb5749e50140efbf",
     "d3a7fa368ce41e94c4858a1cb87dcfcf",
-    "160cfe3572fda1124ea3b6d6ea5f8cde"
+    "160cfe3572fda1124ea3b6d6ea5f8cde",
+    "5695af30794d92a82a371ccd1964afe3"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
     "Hard News Lead",
@@ -299,10 +299,10 @@
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "myth_vs_fact|Emerald Fennell|Reaction Round-up",
     "next_48_hours|Television|Explainer",
     "impact_on_citizens|The Mandalorian|Profile Beat",
     "money_follow|Star Wars|Trend Take",
@@ -381,6 +381,7 @@
     "story_progression|na|Trend Take",
     "winners_losers|Dan Levy|Profile Beat",
     "money_follow|na|Hard News Lead",
-    "winners_losers|Drag Race Down Under vs. the World|Explainer"
+    "winners_losers|Drag Race Down Under vs. the World|Explainer",
+    "winners_losers|Actors|Reaction Round-up"
   ]
 }
