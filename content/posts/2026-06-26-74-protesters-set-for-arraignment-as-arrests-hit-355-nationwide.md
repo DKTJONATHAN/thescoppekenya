@@ -1,18 +1,20 @@
 ---
 title: "74 Protesters Set for Arraignment as Arrests Hit 355 Nationwide"
 slug: "74-protesters-set-for-arraignment-as-arrests-hit-355-nationwide"
-description: "Authorities are processing 74 detainees from the June 25 Nairobi protests at Milimani Court as nationwide arrest figures reach 355 across several counties."
+description: "74 Protesters Set for Arraignment as Arrests Hit 355 Nationwide: Authorities are processing 74 detainees from the June 25 Nairobi protests at Milimani Court as"
+excerpt: "The Arithmetic of State Custody The Ministry of Interior claims 355 protesters are in police custody following yesterday’s demonstrations, y"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Wv5QpjRZ/3b46333ebfcc.jpg"
 category: "News"
 tags: ["kenya protests", "milimani law courts", "kipchumba murkomen", "legal aid", "nairobi news", "human rights"]
+canonical: "https://zandani.co.ke/article/74-protesters-set-for-arraignment-as-arrests-hit-355-nationwide"
 date: "2026-06-26T08:33:18Z"
 dateModified: "2026-06-26T08:33:18Z"
+focusKeyword: "74 Protesters Set for Arraignment as Arrests Hit 355 Nationwide"
 schema: "NewsArticle"
 ---
 
-## The Arithmetic of State Custody
+## The Arithmetic of State Custody 74 Protesters Set for Arraignment as Arrests Hit 355 Nationwide is the central subject of the update.
 
 The Ministry of Interior claims 355 protesters are in police custody following yesterday’s demonstrations, yet the physical reality of the Kenyan court system suggests the state lacks the logistical framework to process this influx without a total systemic collapse.
 
