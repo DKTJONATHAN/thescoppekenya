@@ -1,18 +1,20 @@
 ---
 title: "England reach World Cup knockout stages after draw against Ghana"
 slug: "england-reach-world-cup-knockout-stages-after-draw-against-ghana"
-description: "England has secured a place in the knockout rounds of the 2026 World Cup despite a scoreless draw against Ghana as Thomas Tuchel prepares for Panama."
+description: "England reach World Cup knockout stages after draw against Ghana: England has secured a place in the knockout rounds of the 2026 World Cup despite a scoreless"
+excerpt: "The Long Game Under the North American Sun England has secured a spot in the 2026 World Cup knockout stages. Though their match against Ghan"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/zT3yN0Gz/cd38390b75fc.jpg"
 category: "Sports"
 tags: ["world cup 2026", "england football", "thomas tuchel", "football news", "sports update"]
+canonical: "https://zandani.co.ke/article/england-reach-world-cup-knockout-stages-after-draw-against-ghana"
 date: "2026-06-27T11:48:46Z"
 dateModified: "2026-06-27T11:48:46Z"
+focusKeyword: "England reach World Cup knockout stages after draw against Ghana"
 schema: "NewsArticle"
 ---
 
-## The Long Game Under the North American Sun
+## The Long Game Under the North American Sun England reach World Cup knockout stages after draw against Ghana is the central subject of the update.
 
 England has secured a spot in the 2026 World Cup knockout stages. Though their match against Ghana ended in a scoreless draw, the game offered a revealing look at the squad depth Thomas Tuchel is cultivating. While the result lacked fireworks, the underlying focus on rotational readiness suggests a manager looking well beyond the initial group phase.
 
