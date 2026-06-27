@@ -225,10 +225,10 @@
     "f73bb5b849be48c07fdc3d2586799948",
     "7d4d3e5f8d4b75ea100669ccda1b0fa9",
     "fdd7fae9d03768c430b82137e053fd99",
-    "6b5c85e729bd513454164135616e91ce"
+    "6b5c85e729bd513454164135616e91ce",
+    "baf776067cb0322b0ce0051b6bb7c31f"
   ],
   "style_history": [
-    "Cynical Pundit",
     "Tactical Take",
     "Player Profile Beat",
     "Stat Story",
@@ -257,10 +257,10 @@
     "Cynical Pundit",
     "Tactical Take",
     "Match Report",
-    "Stat Story"
+    "Stat Story",
+    "Player Profile Beat"
   ],
   "angle_history": [
-    "accountability|Premier League|Tactical Take",
     "myth_vs_fact|Manchester City|Cynical Pundit",
     "impact_on_citizens|Manchester City|Stat Story",
     "impact_on_citizens|World Cup|Player Profile Beat",
@@ -339,6 +339,7 @@
     "timeline_shift|England football|Cynical Pundit",
     "myth_vs_fact|World Cup 2026|Tactical Take",
     "money_follow|World Cup 2026|Match Report",
-    "story_progression|FIFA World Cup|Stat Story"
+    "story_progression|FIFA World Cup|Stat Story",
+    "story_progression|World Cup 2026|Player Profile Beat"
   ]
 }
