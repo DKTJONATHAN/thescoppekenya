@@ -278,10 +278,10 @@
     "519dc99671464847d9e3dd5eba1581ec",
     "e76d3c3bb280c05ae958658a6fd9bcab",
     "2157fdbddefe8dc44ac3b1f1884ca645",
-    "ebc2fed18f52239cb07e9a23b5c5d6bf"
+    "ebc2fed18f52239cb07e9a23b5c5d6bf",
+    "d121d778a6b590eb234bb99354655d2e"
   ],
   "style_history": [
-    "Explainer",
     "Power Accountability",
     "Reaction & Voices",
     "Hard News Lead",
@@ -310,10 +310,10 @@
     "Hard News Lead",
     "Power Accountability",
     "Explainer",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "policy_gap|Kenya|Power Accountability",
     "myth_vs_fact|Bolt Kenya|Explainer",
     "policy_gap|Kenya Police|Reaction & Voices",
     "money_follow|shipping costs|Context Backgrounder",
@@ -392,6 +392,7 @@
     "policy_gap|Kenya politics|Hard News Lead",
     "policy_gap|Kenya|Power Accountability",
     "winners_losers|TSC|Explainer",
-    "policy_gap|Nairobi|Context Backgrounder"
+    "policy_gap|Nairobi|Context Backgrounder",
+    "story_progression|Kenya|Reaction & Voices"
   ]
 }
