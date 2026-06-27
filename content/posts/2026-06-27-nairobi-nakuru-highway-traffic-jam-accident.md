@@ -1,18 +1,20 @@
 ---
 title: "Nairobi-Nakuru Highway Gridlock After Major Road Accident"
 slug: "nairobi-nakuru-highway-traffic-jam-accident"
-description: "Travelers faced over six hours of delays on the Nairobi-Nakuru Highway following a vehicle collision near Gilgil that halted traffic through the night."
+description: "Nairobi-Nakuru Highway Gridlock After Major Road Accident: Travelers faced over six hours of delays on the Nairobi-Nakuru Highway following a vehicle collision"
+excerpt: "Nairobi Nakuru Highway Gridlock After Major Road Accident Frustration reached a boiling point on social media as thousands of motorists spen"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/LDnCKBq8/33c47ea639ef.jpg"
 category: "News"
 tags: ["nairobi-nakuru highway", "kenya traffic", "road accident", "gilgil", "kenya news", "naivasha"]
+canonical: "https://zandani.co.ke/article/nairobi-nakuru-highway-traffic-jam-accident"
 date: "2026-06-27T07:53:02Z"
 dateModified: "2026-06-27T07:53:02Z"
+focusKeyword: "Nairobi-Nakuru Highway Gridlock After Major Road Accident"
 schema: "NewsArticle"
 ---
 
-## Nairobi-Nakuru Highway Gridlock After Major Road Accident
+## Nairobi-Nakuru Highway Gridlock After Major Road Accident Nairobi-Nakuru Highway Gridlock After Major Road Accident is the central subject of the update.
 
 Frustration reached a boiling point on social media as thousands of motorists spent the cold Friday night trapped behind a jackknifed truck, with the digital roar of stranded commuters proving far more active than the crawl of traffic on the tarmac.
 
