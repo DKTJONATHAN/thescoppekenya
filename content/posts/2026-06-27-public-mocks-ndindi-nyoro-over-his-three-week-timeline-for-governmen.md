@@ -1,19 +1,21 @@
 ---
 title: "Public mocks Ndindi Nyoro over his three-week timeline for government changes"
 slug: "public-mocks-ndindi-nyoro-over-his-three-week-timeline-for-governmen"
-description: "Kiharu MP Ndindi Nyoro faces public backlash after promising government reforms within three weeks, drawing skepticism over the delay and his claims."
+description: "Public mocks Ndindi Nyoro over his three-week timeline for govern: Kiharu MP Ndindi Nyoro faces public backlash after promising government reforms within three"
+excerpt: "Kiharu Member of Parliament Ndindi Nyoro sparked public debate this week by announcing that significant government adjustments and economic"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: ""
+image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["ndindi-nyoro", "kenyan-politics", "government-reforms", "social-media-backlash", "kenyan-parliament"]
 canonical: "https://zandani.co.ke/article/public-mocks-ndindi-nyoro-over-his-three-week-timeline-for-governmen"
 date: "2026-06-27T14:06:01Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-27T14:06:01Z"
+focusKeyword: "Public mocks Ndindi Nyoro over his three-week timeline for govern"
 schema: "NewsArticle"
 ---
-Kiharu Member of Parliament Ndindi Nyoro sparked public debate this week by announcing that significant government adjustments and economic interventions will occur within three weeks. His ambiguous timeline has drawn widespread criticism, with many questioning the necessity of the delay and the validity of his claims.
+
+Kiharu Member of Parliament Ndindi Nyoro sparked public debate this week by announcing that significant government adjustments and economic interventions will occur within three weeks. His ambiguous timeline has drawn widespread criticism, with many questioning the necessity of the delay and the validity of his claims. Public mocks Ndindi Nyoro over his three-week timeline for govern is the central subject of the update.
 
 ## Public skepticism regarding government reform timelines
 
