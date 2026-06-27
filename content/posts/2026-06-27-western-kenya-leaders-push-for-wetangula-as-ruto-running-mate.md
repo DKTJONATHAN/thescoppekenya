@@ -1,18 +1,20 @@
 ---
 title: "Western Kenya leaders push for Wetangula as Ruto 2027 running mate"
 slug: "western-kenya-leaders-push-for-wetangula-as-ruto-running-mate"
-description: "Western Kenya leaders are lobbying President William Ruto to name National Assembly Speaker Moses Wetangula as his running mate for the next general election."
+description: "Western Kenya leaders push for Wetangula as Ruto 2027 running mat: Western Kenya leaders are lobbying President William Ruto to name National Assembly Speaker"
+excerpt: "The Arithmetic of Abandonment in Western Kenya Governor Fernandes Barasa has publicly crowned Moses Wetangula as the ideal running mate for"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/WvvgGN3P/6b53c34c47f7.jpg"
 category: "News"
 tags: ["kenya politics", "moses wetangula", "william ruto", "kenya kwanza", "western kenya", "2027 election"]
+canonical: "https://zandani.co.ke/article/western-kenya-leaders-push-for-wetangula-as-ruto-running-mate"
 date: "2026-06-27T18:09:00Z"
 dateModified: "2026-06-27T18:09:00Z"
+focusKeyword: "Western Kenya leaders push for Wetangula as Ruto 2027 running mat"
 schema: "NewsArticle"
 ---
 
-## The Arithmetic of Abandonment in Western Kenya
+## The Arithmetic of Abandonment in Western Kenya Western Kenya leaders push for Wetangula as Ruto 2027 running mat is the central subject of the update.
 
 Governor Fernandes Barasa has publicly crowned Moses Wetangula as the ideal running mate for President William Ruto in 2027, effectively turning the region’s political consensus into a weapon pointed at the current Deputy President. While the Naivasha caucus framed this as a quest for unity, the move signals a calculated move to render existing power structures in the region obsolete.
 
