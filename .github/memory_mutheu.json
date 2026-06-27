@@ -269,10 +269,10 @@
     "d3a7fa368ce41e94c4858a1cb87dcfcf",
     "160cfe3572fda1124ea3b6d6ea5f8cde",
     "5695af30794d92a82a371ccd1964afe3",
-    "af4aecfa4928a087275fc6689a488f0d"
+    "af4aecfa4928a087275fc6689a488f0d",
+    "35fbf259e3c68d030bc63b675d24feb7"
   ],
   "style_history": [
-    "Trend Take",
     "Hard News Lead",
     "Explainer",
     "Profile Beat",
@@ -301,10 +301,10 @@
     "Hard News Lead",
     "Explainer",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "impact_on_citizens|The Mandalorian|Profile Beat",
     "money_follow|Star Wars|Trend Take",
     "impact_on_citizens|Lena Dunham|Reaction Round-up",
     "winners_losers|The Mandalorian and Grogu|Hard News Lead",
@@ -383,6 +383,7 @@
     "money_follow|na|Hard News Lead",
     "winners_losers|Drag Race Down Under vs. the World|Explainer",
     "winners_losers|Actors|Reaction Round-up",
-    "story_progression|DC Studios|Profile Beat"
+    "story_progression|DC Studios|Profile Beat",
+    "money_follow|na|Hard News Lead"
   ]
 }
