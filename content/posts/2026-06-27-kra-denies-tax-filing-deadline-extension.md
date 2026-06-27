@@ -1,18 +1,20 @@
 ---
 title: "KRA Refuses Tax Filing Deadline Extension Beyond June 30"
 slug: "kra-denies-tax-filing-deadline-extension"
-description: "The Kenya Revenue Authority has rejected calls to extend the 2025 income tax filing deadline. Taxpayers must submit returns by June 30 to avoid penalties."
+description: "KRA Refuses Tax Filing Deadline Extension Beyond June 30: The Kenya Revenue Authority has rejected calls to extend the 2025 income tax filing deadline."
+excerpt: "Tax Compliance Deadline Firm as KRA Rejects Extension Requests The Kenya Revenue Authority has officially confirmed that the June 30 income"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/6JFKwJkf/27b010bcdad9.jpg"
 category: "News"
 tags: ["kra", "tax-filing", "kenya-economy", "itax", "kenya-news", "taxes"]
+canonical: "https://zandani.co.ke/article/kra-denies-tax-filing-deadline-extension"
 date: "2026-06-27T12:11:43Z"
 dateModified: "2026-06-27T12:11:43Z"
+focusKeyword: "KRA Refuses Tax Filing Deadline Extension Beyond June 30"
 schema: "NewsArticle"
 ---
 
-## Tax Compliance Deadline Firm as KRA Rejects Extension Requests
+## Tax Compliance Deadline Firm as KRA Rejects Extension Requests KRA Refuses Tax Filing Deadline Extension Beyond June 30 is the central subject of the update.
 
 The Kenya Revenue Authority has officially confirmed that the June 30 income tax filing deadline for the 2025 financial year remains unchanged, leaving millions of taxpayers to address persistent system performance issues within a shrinking window of compliance.
 
