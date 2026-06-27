@@ -301,10 +301,10 @@
     "969a7f66e6318155f4e9f894dca74e7a",
     "7114fd49473e2bdf799b6c0ba7aa59a5",
     "acc4697545762ed92cf299043d2cc6e3",
-    "cdfefb73c23e2a28b2b3997cd99a7619"
+    "cdfefb73c23e2a28b2b3997cd99a7619",
+    "f6e27371a32819a092aa265e8d86996f"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Hard News Lead",
     "Receipts Piece",
     "Profile Beat",
@@ -333,10 +333,10 @@
     "Reaction Round-up",
     "Receipts Piece",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Profile Beat"
   ],
   "angle_history": [
-    "timeline_shift|Nyako Pilot|Reaction Round-up",
     "winners_losers|celebrity boxing|Trend Take",
     "money_follow|Bolo Bespoke|Receipts Piece",
     "myth_vs_fact|Kenya|Profile Beat",
@@ -415,6 +415,7 @@
     "myth_vs_fact|Mulamwah|Reaction Round-up",
     "money_follow|biographical film|Receipts Piece",
     "myth_vs_fact|Corazon Kwamboka|Trend Take",
-    "policy_gap|parenting|Hard News Lead"
+    "policy_gap|parenting|Hard News Lead",
+    "story_progression|Stevo Simple Boy|Profile Beat"
   ]
 }
