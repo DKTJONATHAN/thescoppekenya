@@ -271,10 +271,10 @@
     "5695af30794d92a82a371ccd1964afe3",
     "af4aecfa4928a087275fc6689a488f0d",
     "35fbf259e3c68d030bc63b675d24feb7",
-    "65bf55082c2244a07b6d827483ed446b"
+    "65bf55082c2244a07b6d827483ed446b",
+    "8dc8e4422da21ed645eed8f5e837efef"
   ],
   "style_history": [
-    "Explainer",
     "Profile Beat",
     "Reaction Round-up",
     "Trend Take",
@@ -303,10 +303,10 @@
     "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
-    "impact_on_citizens|Lena Dunham|Reaction Round-up",
     "winners_losers|The Mandalorian and Grogu|Hard News Lead",
     "myth_vs_fact|Outlander|Explainer",
     "timeline_shift|television|Trend Take",
@@ -385,6 +385,7 @@
     "winners_losers|Actors|Reaction Round-up",
     "story_progression|DC Studios|Profile Beat",
     "money_follow|na|Hard News Lead",
-    "policy_gap|Aaron Lewis|Explainer"
+    "policy_gap|Aaron Lewis|Explainer",
+    "winners_losers|Barack Obama|Trend Take"
   ]
 }
