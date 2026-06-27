@@ -163,10 +163,10 @@
     "0b538506e18598fa61af1cb773e348f5",
     "ab369bd74c88b17ca6831768d6ed11bd",
     "35a949ac1932caae5f65c4ad446ce5a1",
-    "76c08563b0e1bb3d33ef1d97b760d59c"
+    "76c08563b0e1bb3d33ef1d97b760d59c",
+    "a7cfd0afbc70674f19252c09344eb525"
   ],
   "style_history": [
-    "Personal Reflection",
     "Counterpoint",
     "Sharp Column",
     "Letter Form",
@@ -195,10 +195,10 @@
     "Personal Reflection",
     "Counterpoint",
     "Sharp Column",
-    "Historical Lens"
+    "Historical Lens",
+    "Letter Form"
   ],
   "angle_history": [
-    "policy_gap|diplomacy|Sharp Column",
     "money_follow|geopolitics|Counterpoint",
     "timeline_shift|sovereignty|Historical Lens",
     "winners_losers|diplomacy|Personal Reflection",
@@ -277,6 +277,7 @@
     "policy_gap|agribusiness|Personal Reflection",
     "myth_vs_fact|Human rights|Counterpoint",
     "money_follow|air quality|Sharp Column",
-    "timeline_shift|avocado exports|Historical Lens"
+    "timeline_shift|avocado exports|Historical Lens",
+    "next_48_hours|Workplace culture|Letter Form"
   ]
 }
