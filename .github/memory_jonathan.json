@@ -164,10 +164,10 @@
     "ab369bd74c88b17ca6831768d6ed11bd",
     "35a949ac1932caae5f65c4ad446ce5a1",
     "76c08563b0e1bb3d33ef1d97b760d59c",
-    "a7cfd0afbc70674f19252c09344eb525"
+    "a7cfd0afbc70674f19252c09344eb525",
+    "e9da7f46db8ca9fbf8b10b98e8128bad"
   ],
   "style_history": [
-    "Counterpoint",
     "Sharp Column",
     "Letter Form",
     "Personal Reflection",
@@ -196,10 +196,10 @@
     "Counterpoint",
     "Sharp Column",
     "Historical Lens",
-    "Letter Form"
+    "Letter Form",
+    "Personal Reflection"
   ],
   "angle_history": [
-    "money_follow|geopolitics|Counterpoint",
     "timeline_shift|sovereignty|Historical Lens",
     "winners_losers|diplomacy|Personal Reflection",
     "accountability|Mutula Kilonzo|Sharp Column",
@@ -278,6 +278,7 @@
     "myth_vs_fact|Human rights|Counterpoint",
     "money_follow|air quality|Sharp Column",
     "timeline_shift|avocado exports|Historical Lens",
-    "next_48_hours|Workplace culture|Letter Form"
+    "next_48_hours|Workplace culture|Letter Form",
+    "story_progression|protest|Personal Reflection"
   ]
 }
