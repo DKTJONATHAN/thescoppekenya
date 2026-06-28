@@ -1,18 +1,20 @@
 ---
 title: "Steve Clarke resigns as Scotland head coach after World Cup exit"
 slug: "steve-clarke-resigns-as-scotland-head-coach"
-description: "Steve Clarke has stepped down as Scotland manager following the team's World Cup elimination, despite a recent contract extension by the Scottish FA."
+description: "Steve Clarke resigns as Scotland head coach after World Cup exit: Steve Clarke has stepped down as Scotland manager following the team's World Cup elimination,"
+excerpt: "The Contract Paradox: Why the Scottish FA's Safety First Gamble Stalled Progress The Scottish Football Association's decision to hand Steve"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/8D5h6Ktz/40cacdee71d2.jpg"
 category: "Sports"
 tags: ["steve clarke", "scotland football", "world cup", "football news", "sports resignation"]
+canonical: "https://zandani.co.ke/article/steve-clarke-resigns-as-scotland-head-coach"
 date: "2026-06-28T12:00:36Z"
 dateModified: "2026-06-28T12:00:36Z"
+focusKeyword: "Steve Clarke resigns as Scotland head coach after World Cup exit"
 schema: "NewsArticle"
 ---
 
-## The Contract Paradox: Why the Scottish FA's Safety-First Gamble Stalled Progress
+## The Contract Paradox: Why the Scottish FA's Safety-First Gamble Stalled Progress Steve Clarke resigns as Scotland head coach after World Cup exit is the central subject of the update.
 
 The Scottish Football Association's decision to hand Steve Clarke a four-year contract extension appeared at the time to be a calculated bid for long-term stability. Instead, it institutionalized a period of stagnation. This commitment backfired as the squad's tactical predictability became a primary liability, ultimately leading to a premature exit from the international stage.
 
