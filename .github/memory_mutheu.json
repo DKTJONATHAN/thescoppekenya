@@ -273,10 +273,10 @@
     "35fbf259e3c68d030bc63b675d24feb7",
     "65bf55082c2244a07b6d827483ed446b",
     "8dc8e4422da21ed645eed8f5e837efef",
-    "33a5ee501efe236bc3568e3396f102af"
+    "33a5ee501efe236bc3568e3396f102af",
+    "a9ff1ecd1d3f2f8f8d7e65fe1e50f458"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Trend Take",
     "Explainer",
     "Hard News Lead",
@@ -305,10 +305,10 @@
     "Hard News Lead",
     "Explainer",
     "Trend Take",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "myth_vs_fact|Outlander|Explainer",
     "timeline_shift|television|Trend Take",
     "impact_on_citizens|Friends|Profile Beat",
     "myth_vs_fact|The Birds|Hard News Lead",
@@ -387,6 +387,7 @@
     "money_follow|na|Hard News Lead",
     "policy_gap|Aaron Lewis|Explainer",
     "winners_losers|Barack Obama|Trend Take",
-    "story_progression|Gracie Abrams|Reaction Round-up"
+    "story_progression|Gracie Abrams|Reaction Round-up",
+    "timeline_shift|na|Hard News Lead"
   ]
 }
