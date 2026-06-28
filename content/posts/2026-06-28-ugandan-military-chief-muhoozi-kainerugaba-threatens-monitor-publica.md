@@ -1,7 +1,8 @@
 ---
 title: "Ugandan Military Chief Muhoozi Kainerugaba Threatens Monitor Publications Managing Director Susan Nsibirwa"
 slug: "ugandan-military-chief-muhoozi-kainerugaba-threatens-monitor-publica"
-description: "Ugandan military chief Muhoozi Kainerugaba faces backlash after publicly threatening Monitor Publications MD Susan Nsibirwa over alleged bias."
+description: "Ugandan Military Chief Muhoozi Kainerugaba Threatens Monitor Publ: Ugandan military chief Muhoozi Kainerugaba faces backlash after publicly threatening Monitor"
+excerpt: "General Muhoozi Kainerugaba, the Chief of Defence Forces in Uganda, sparked national controversy this week by issuing public threats against"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/XfRmcnz5/3c8a3be7cf35.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["muhoozi-kainerugaba", "susan-nsibirwa", "monitor-publications", "ugandan-military", "press-freedom"]
 canonical: "https://zandani.co.ke/article/ugandan-military-chief-muhoozi-kainerugaba-threatens-monitor-publica"
 date: "2026-06-28T14:15:15Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-28T14:15:15Z"
+focusKeyword: "Ugandan Military Chief Muhoozi Kainerugaba Threatens Monitor Publ"
 schema: "NewsArticle"
 ---
-General Muhoozi Kainerugaba, the Chief of Defence Forces in Uganda, sparked national controversy this week by issuing public threats against Susan Nsibirwa, the Managing Director of Monitor Publications. The military official accused the media executive of participating in a foreign-funded campaign against him.
+
+General Muhoozi Kainerugaba, the Chief of Defence Forces in Uganda, sparked national controversy this week by issuing public threats against Susan Nsibirwa, the Managing Director of Monitor Publications. The military official accused the media executive of participating in a foreign-funded campaign against him. Ugandan Military Chief Muhoozi Kainerugaba Threatens Monitor Publ is the central subject of the update.
 
 ## The Implications of Military Intimidation in Uganda
 
