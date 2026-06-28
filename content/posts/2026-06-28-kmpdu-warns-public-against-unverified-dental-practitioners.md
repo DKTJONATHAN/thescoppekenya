@@ -1,18 +1,20 @@
 ---
 title: "KMPDU warns public against dental care from unverified graduates"
 slug: "kmpdu-warns-public-against-unverified-dental-practitioners"
-description: "KMPDU has advised Kenyans to avoid dental services from graduates of disputed programs following a recent court ruling on university accreditation."
+description: "KMPDU warns public against dental care from unverified graduates: KMPDU has advised Kenyans to avoid dental services from graduates of disputed programs"
+excerpt: "How to Check if Your Dentist is Actually Qualified The Kenya Medical Practitioners, Pharmacists and Dentists Union has flagged concerns rega"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/N6W0pH9Y/76b634ff11fc.jpg"
 category: "News"
 tags: ["kmpdu", "cofek", "kenya health", "dentistry", "university education", "medical regulation"]
+canonical: "https://zandani.co.ke/article/kmpdu-warns-public-against-unverified-dental-practitioners"
 date: "2026-06-28T08:25:23Z"
 dateModified: "2026-06-28T08:25:23Z"
+focusKeyword: "KMPDU warns public against dental care from unverified graduates"
 schema: "NewsArticle"
 ---
 
-## How to Check if Your Dentist is Actually Qualified
+## How to Check if Your Dentist is Actually Qualified KMPDU warns public against dental care from unverified graduates is the central subject of the update.
 
 The Kenya Medical Practitioners, Pharmacists and Dentists Union has flagged concerns regarding dental services provided by graduates from unverified training programs. With court proceedings currently underway to settle accreditation disputes, patients are urged to confirm their practitioner's credentials before undergoing treatment.
 

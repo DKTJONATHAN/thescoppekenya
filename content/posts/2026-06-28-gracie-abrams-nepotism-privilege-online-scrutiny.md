@@ -14,7 +14,7 @@ focusKeyword: "'Gracie Abrams Addresses Nepotism, Privilege and Online Scrutiny"
 schema: "NewsArticle"
 ---
 
-## Hollywood Privilege Echoes in Nairobi: Kenyans React to Gracie Abrams' Nepotism Confession "Gracie Abrams Addresses Nepotism, Privilege and Online Scrutiny is the central subject of the update.
+## Hollywood Privilege Echoes in Nairobi: Kenyans React to Gracie Abrams' Nepotism Confession "Gracie Abrams Addresses Nepotism, Privilege and Online Scrutiny is the central subject of the update. 'Gracie Abrams Addresses Nepotism, Privilege and Online Scrutiny is the central subject of the update.
 
 Gracie Abrams' candid acknowledgement of her privileged Hollywood upbringing and the role of nepotism in her career has sparked a lively debate across Kenyan social media, with many relating her story to local discussions about inherited advantage.
 
