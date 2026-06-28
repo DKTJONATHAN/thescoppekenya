@@ -282,10 +282,10 @@
     "d121d778a6b590eb234bb99354655d2e",
     "e154416868431d10baa4d4d0a4bbddf1",
     "a7a7d8c076100c83cbbd1f45024257c3",
-    "fb61b8f3c44899297b14c073cfd703a1"
+    "fb61b8f3c44899297b14c073cfd703a1",
+    "93650a078edffea3d58072a343efec64"
   ],
   "style_history": [
-    "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
@@ -314,10 +314,10 @@
     "Reaction & Voices",
     "Hard News Lead",
     "Power Accountability",
-    "Explainer"
+    "Explainer",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "timeline_shift|COFEK|Hard News Lead",
     "story_progression|NYOTA|Explainer",
     "money_follow|AAK|Power Accountability",
     "story_progression|DCI|Context Backgrounder",
@@ -396,6 +396,7 @@
     "story_progression|Kenya|Reaction & Voices",
     "timeline_shift|KRA|Hard News Lead",
     "winners_losers|Kenya Politics|Power Accountability",
-    "myth_vs_fact|KMPDU|Explainer"
+    "myth_vs_fact|KMPDU|Explainer",
+    "next_48_hours|abductions|Reaction & Voices"
   ]
 }
