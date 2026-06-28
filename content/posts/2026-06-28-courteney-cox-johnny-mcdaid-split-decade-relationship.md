@@ -1,21 +1,20 @@
 ---
-title: "Courteney Cox, Johnny McDaid Split After Decade Together
+title: "'Courteney Cox, Johnny McDaid Split After Decade Together"
 slug: "courteney-cox-johnny-mcdaid-split-decade-relationship"
-description: "Courteney Cox and Johnny McDaid split after over a decade. Learn about their journey, from engagement to reconciliation, and the full story of their separation."
+description: "'Courteney Cox, Johnny McDaid Split After Decade Together: Courteney Cox and Johnny McDaid split after over a decade. Learn about their journey, from"
+excerpt: "Courteney Cox and Johnny McDaid Confirm Split After Decade Long Romance Hollywood actress Courteney Cox, 62, and Snow Patrol guitarist Johnn"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/m5KDF4FP/b6abe2679ad5.jpg"
-og_title: "Courteney Cox and Johnny McDaid's Decade-Long Split"
-og_description: "Courteney Cox and Johnny McDaid have reportedly split after over a decade. Get the details of their on-again, off-again relationship."
-focus_keyword: "Courteney Cox Johnny McDaid split"
 category: "Entertainment"
 tags: ["courteney cox", "johnny mcdaid", "celebrity split", "entertainment news", "za ndani", "relationship news", "snow patrol"]
+canonical: "https://zandani.co.ke/article/courteney-cox-johnny-mcdaid-split-decade-relationship"
 date: "2026-06-28T09:45:16Z"
 dateModified: "2026-06-28T09:45:16Z"
+focusKeyword: "'Courteney Cox, Johnny McDaid Split After Decade Together"
 schema: "NewsArticle"
 ---
 
-## Courteney Cox and Johnny McDaid Confirm Split After Decade-Long Romance
+## Courteney Cox and Johnny McDaid Confirm Split After Decade-Long Romance "Courteney Cox, Johnny McDaid Split After Decade Together is the central subject of the update.
 
 Hollywood actress Courteney Cox, 62, and Snow Patrol guitarist Johnny McDaid, 49, have confirmed the conclusion of their more than decade-long relationship. The announcement marks the definitive end to a high-profile romance characterized by an engagement, a temporary separation, and a subsequent reconciliation. Their last joint public appearance occurred in September 2025 at the US Open in New York City, with the decision to part ways made privately.
 
