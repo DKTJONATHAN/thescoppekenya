@@ -1,18 +1,20 @@
 ---
 title: "Families of Missing Activists Issue Ultimatum to Kenyan Government"
 slug: "families-of-missing-activists-issue-ultimatum-to-government"
-description: "Families of three abducted activists have issued a 24-hour ultimatum to the government demanding their release or face nationwide mass demonstrations."
+description: "Families of Missing Activists Issue Ultimatum to Kenyan Governmen: Families of three abducted activists have issued a 24-hour ultimatum to the government"
+excerpt: "The 24 Hour Threshold: A Nation Holds Its Breath The ticking clock has become the loudest sound in Nairobi today as families of abducted act"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/hJjgjrML/86c11822469e.jpg"
 category: "News"
 tags: ["kenya news", "activism", "human rights", "protests", "za ndani", "kenya kwanza"]
+canonical: "https://zandani.co.ke/article/families-of-missing-activists-issue-ultimatum-to-government"
 date: "2026-06-28T12:19:30Z"
 dateModified: "2026-06-28T12:19:30Z"
+focusKeyword: "Families of Missing Activists Issue Ultimatum to Kenyan Governmen"
 schema: "NewsArticle"
 ---
 
-## The 24-Hour Threshold: A Nation Holds Its Breath
+## The 24-Hour Threshold: A Nation Holds Its Breath Families of Missing Activists Issue Ultimatum to Kenyan Governmen is the central subject of the update.
 
 The ticking clock has become the loudest sound in Nairobi today as families of abducted activists demand answers by Monday morning. If the state remains silent on the whereabouts of three missing men, the streets promise a return to total disruption.
 
