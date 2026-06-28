@@ -281,10 +281,10 @@
     "ebc2fed18f52239cb07e9a23b5c5d6bf",
     "d121d778a6b590eb234bb99354655d2e",
     "e154416868431d10baa4d4d0a4bbddf1",
-    "a7a7d8c076100c83cbbd1f45024257c3"
+    "a7a7d8c076100c83cbbd1f45024257c3",
+    "fb61b8f3c44899297b14c073cfd703a1"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
@@ -313,10 +313,10 @@
     "Context Backgrounder",
     "Reaction & Voices",
     "Hard News Lead",
-    "Power Accountability"
+    "Power Accountability",
+    "Explainer"
   ],
   "angle_history": [
-    "money_follow|shipping costs|Context Backgrounder",
     "timeline_shift|COFEK|Hard News Lead",
     "story_progression|NYOTA|Explainer",
     "money_follow|AAK|Power Accountability",
@@ -395,6 +395,7 @@
     "policy_gap|Nairobi|Context Backgrounder",
     "story_progression|Kenya|Reaction & Voices",
     "timeline_shift|KRA|Hard News Lead",
-    "winners_losers|Kenya Politics|Power Accountability"
+    "winners_losers|Kenya Politics|Power Accountability",
+    "myth_vs_fact|KMPDU|Explainer"
   ]
 }
