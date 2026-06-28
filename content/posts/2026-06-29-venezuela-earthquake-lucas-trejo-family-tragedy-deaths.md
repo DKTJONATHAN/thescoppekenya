@@ -1,21 +1,20 @@
 ---
-title: "Venezuela Earthquake Claims Lucas Trejo's Wife and Children
+title: "'Venezuela Earthquake Claims Lucas Trejo's Wife and Children"
 slug: "venezuela-earthquake-lucas-trejo-family-tragedy-deaths"
-description: "Devastating Venezuela earthquake leaves over 900 dead. Argentine soccer player Lucas Trejo's wife and two children found dead. Read the full story now."
+description: "'Venezuela Earthquake Claims Lucas Trejo's Wife and Children: Devastating Venezuela earthquake leaves over 900 dead. Argentine soccer player Lucas Trejo's wife"
+excerpt: "Venezuela's Heartbreak: The Unfolding Tragedy of the Lucas Trejo Family Venezuela is currently reeling from a catastrophe that has sent shoc"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/NgBfDLkd/27202fb646de.jpg"
-og_title: "Tragedy in Venezuela: Lucas Trejo's Family Killed"
-og_description: "Argentine soccer player Lucas Trejo's wife and children were found dead after the devastating Venezuela earthquakes. Over 900 killed."
-focus_keyword: "Lucas Trejo family"
 category: "Entertainment"
 tags: ["venezuela earthquake", "lucas trejo", "natural disaster", "football tragedy", "la guiaira", "missing persons"]
+canonical: "https://zandani.co.ke/article/venezuela-earthquake-lucas-trejo-family-tragedy-deaths"
 date: "2026-06-28T23:42:10Z"
 dateModified: "2026-06-28T23:42:10Z"
+focusKeyword: "'Venezuela Earthquake Claims Lucas Trejo's Wife and Children"
 schema: "NewsArticle"
 ---
 
-## Venezuela's Heartbreak: The Unfolding Tragedy of the Lucas Trejo Family
+## Venezuela's Heartbreak: The Unfolding Tragedy of the Lucas Trejo Family "Venezuela Earthquake Claims Lucas Trejo's Wife and Children is the central subject of the update.
 
 Venezuela is currently reeling from a catastrophe that has sent shockwaves across the globe. For Argentine footballer Lucas Trejo, who plays for Deportivo La Guaira, the devastation has manifested in the cruelest way imaginable: the loss of his wife, Yanina Maranella, and their two young children, Aarón and Ainhoa. Their heartbreaking story stands as a stark testament to the immense personal toll behind the sobering statistics of a nation now gripped by mourning. It is a narrative that lays bare the fragility of life and the deep connections that bind us.
 
