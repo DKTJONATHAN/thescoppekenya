@@ -1,15 +1,20 @@
 ---
 title: "Terry advises Arsenal to replace £64m Gyokeres for title retention"
 slug: "terry-advises-arsenal-to-replace-64m-gyokeres-for-title-retention"
+description: "Terry advises Arsenal to replace £64m Gyokeres for title retentio: Terry's Blunt Truth For Arsenal's Title Dreams Chelsea legend John Terry has dropped a"
+excerpt: "Terry's Blunt Truth For Arsenal's Title Dreams Chelsea legend John Terry has dropped a reality check for Arsenal, urging them to ditch £64m"
 author: "Sports Desk"
 image: "https://i.ibb.co/215kjvqq/999d4bf1ffaf.jpg"
 category: "Global News"
+tags: ["terry advises arsenal to replace 64m gyokeres for title retention", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/terry-advises-arsenal-to-replace-64m-gyokeres-for-title-retention"
 date: "2026-06-28T16:16:32Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-06-28T16:16:32Z"
+focusKeyword: "Terry advises Arsenal to replace £64m Gyokeres for title retentio"
 schema: "NewsArticle"
 ---
-## Terry's Blunt Truth For Arsenal's Title Dreams
+
+## Terry's Blunt Truth For Arsenal's Title Dreams Terry advises Arsenal to replace £64m Gyokeres for title retentio is the central subject of the update.
 
 Chelsea legend John Terry has dropped a reality check for Arsenal, urging them to ditch £64m striker Viktor Gyokeres. Despite winning the Premier League, Terry insists a true 20-30 goal scorer is non-negotiable for Mikel Arteta's side to truly dominate and avoid a fleeting triumph next season.
 
