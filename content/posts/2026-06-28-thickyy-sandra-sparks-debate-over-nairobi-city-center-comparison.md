@@ -1,18 +1,20 @@
 ---
 title: "Thickyy Sandra Sparks Online Debate Over Nairobi City Center"
 slug: "thickyy-sandra-sparks-debate-over-nairobi-city-center-comparison"
-description: "Content creator Thickyy Sandra faces public backlash after comparing parts of Nairobi's business district to low-income areas in Dubai."
+description: "Thickyy Sandra Sparks Online Debate Over Nairobi City Center: Content creator Thickyy Sandra faces public backlash after comparing parts of Nairobi's business"
+excerpt: "Nairobi City Identity Crisis Hits Boiling Point The internet is currently roasting content creator Thickyy Sandra for her hot take on the CB"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/R4pScfvd/26bcecf185dd.jpg"
 category: "Gossip"
 tags: ["thickyy sandra", "nairobi cbd", "kenyan social media", "nairobi news", "trending kenya"]
+canonical: "https://zandani.co.ke/article/thickyy-sandra-sparks-debate-over-nairobi-city-center-comparison"
 date: "2026-06-28T10:36:10Z"
 dateModified: "2026-06-28T10:36:10Z"
+focusKeyword: "Thickyy Sandra Sparks Online Debate Over Nairobi City Center"
 schema: "NewsArticle"
 ---
 
-## Nairobi City Identity Crisis Hits Boiling Point
+## Nairobi City Identity Crisis Hits Boiling Point Thickyy Sandra Sparks Online Debate Over Nairobi City Center is the central subject of the update.
 
 The internet is currently roasting content creator Thickyy Sandra for her hot take on the CBD, but the real show is the digital civil war breaking out between those defending our skyline and those who think the pavement needs a serious makeover.
 

@@ -14,7 +14,7 @@ focusKeyword: "'Courteney Cox, Johnny McDaid Split After Decade Together"
 schema: "NewsArticle"
 ---
 
-## Courteney Cox and Johnny McDaid Confirm Split After Decade-Long Romance "Courteney Cox, Johnny McDaid Split After Decade Together is the central subject of the update.
+## Courteney Cox and Johnny McDaid Confirm Split After Decade-Long Romance "Courteney Cox, Johnny McDaid Split After Decade Together is the central subject of the update. 'Courteney Cox, Johnny McDaid Split After Decade Together is the central subject of the update.
 
 Hollywood actress Courteney Cox, 62, and Snow Patrol guitarist Johnny McDaid, 49, have confirmed the conclusion of their more than decade-long relationship. The announcement marks the definitive end to a high-profile romance characterized by an engagement, a temporary separation, and a subsequent reconciliation. Their last joint public appearance occurred in September 2025 at the US Open in New York City, with the decision to part ways made privately.
 
