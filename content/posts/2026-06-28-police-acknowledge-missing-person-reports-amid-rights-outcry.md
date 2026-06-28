@@ -1,18 +1,20 @@
 ---
 title: "Police acknowledge missing person reports amid rights outcry"
 slug: "police-acknowledge-missing-person-reports-amid-rights-outcry"
-description: "The National Police Service has confirmed a missing person case at Nairobi Central Police Station following intense pressure from families and activists."
+description: "Police acknowledge missing person reports amid rights outcry: The National Police Service has confirmed a missing person case at Nairobi Central Police Station"
+excerpt: "The Legal Architecture of Acknowledgement The National Police Service has transitioned from habitual denial to a tactical acknowledgement of"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/nsjGwt7p/8c61049c5f71.jpg"
 category: "News"
 tags: ["kenya news", "national police service", "enforced disappearances", "human rights", "nairobi", "za ndani"]
+canonical: "https://zandani.co.ke/article/police-acknowledge-missing-person-reports-amid-rights-outcry"
 date: "2026-06-28T18:08:56Z"
 dateModified: "2026-06-28T18:08:56Z"
+focusKeyword: "Police acknowledge missing person reports amid rights outcry"
 schema: "NewsArticle"
 ---
 
-## The Legal Architecture of Acknowledgement
+## The Legal Architecture of Acknowledgement Police acknowledge missing person reports amid rights outcry is the central subject of the update.
 
 The National Police Service has transitioned from habitual denial to a tactical acknowledgement of missing person files, specifically regarding Davis Lichuma at the Central Police Station. This procedural pivot recalibrates the state's vulnerability in ongoing human rights litigation across the country.
 
