@@ -1,19 +1,21 @@
 ---
 title: "Public Debate Ignites Over New Call for Individual Responsibility Amid Economic Hardship"
 slug: "public-debate-ignites-over-new-call-for-individual-responsibility-am"
-description: "As Kenya's cost of living crisis intensifies, a growing public debate weighs the need for government reform against a new focus on individual grit."
+description: "Public Debate Ignites Over New Call for Individual Responsibility: As Kenya's cost of living crisis intensifies, a growing public debate weighs the need for"
+excerpt: "A significant ideological divide is emerging across Kenya as citizens navigate an intensifying cost of living crisis. While many residents d"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: ""
+image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["kenyan-economy", "cost-of-living-crisis", "public-discourse-kenya", "economic-hardship", "social-accountability"]
 canonical: "https://zandani.co.ke/article/public-debate-ignites-over-new-call-for-individual-responsibility-am"
 date: "2026-06-29T16:10:29Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-06-29T16:10:29Z"
+focusKeyword: "Public Debate Ignites Over New Call for Individual Responsibility"
 schema: "NewsArticle"
 ---
-A significant ideological divide is emerging across Kenya as citizens navigate an intensifying cost of living crisis. While many residents demand systemic reforms, a vocal movement is now prioritizing individual agency and personal grit as the essential strategy for surviving current economic instability.
+
+A significant ideological divide is emerging across Kenya as citizens navigate an intensifying cost of living crisis. While many residents demand systemic reforms, a vocal movement is now prioritizing individual agency and personal grit as the essential strategy for surviving current economic instability. Public Debate Ignites Over New Call for Individual Responsibility is the central subject of the update.
 
 ## The Push for Individual Accountability
 
