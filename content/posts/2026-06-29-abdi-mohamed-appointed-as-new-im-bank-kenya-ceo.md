@@ -1,18 +1,20 @@
 ---
 title: "Abdi Mohamed Named as New I&M Bank Kenya CEO"
 slug: "abdi-mohamed-appointed-as-new-im-bank-kenya-ceo"
-description: "Abdi Mohamed has been appointed as the incoming CEO of I&M Bank Kenya, transitioning from his leadership role at ABSA Bank Kenya, pending Central Bank approval."
+description: "Abdi Mohamed Named as New I&M Bank Kenya CEO: Abdi Mohamed has been appointed as the incoming CEO of I&M Bank Kenya, transitioning from his leadership role at"
+excerpt: "Banking Talent Shifts Reshape Regional Financial Hubs Abdi Mohamed has been tapped to helm I&M Bank Kenya, a transition that effectively shi"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/9khspH3g/dbf046d5c5f7.webp"
 category: "Technology"
 tags: ["banking", "business news", "kenyan economy", "i&m bank", "absa bank", "corporate leadership"]
+canonical: "https://zandani.co.ke/article/abdi-mohamed-appointed-as-new-im-bank-kenya-ceo"
 date: "2026-06-29T14:53:59Z"
 dateModified: "2026-06-29T14:53:59Z"
+focusKeyword: "Abdi Mohamed Named as New I&M Bank Kenya CEO"
 schema: "NewsArticle"
 ---
 
-## Banking Talent Shifts Reshape Regional Financial Hubs
+## Banking Talent Shifts Reshape Regional Financial Hubs Abdi Mohamed Named as New I&M Bank Kenya CEO is the central subject of the update.
 
 Abdi Mohamed has been tapped to helm I&M Bank Kenya, a transition that effectively shifts the strategic trajectory for one of the country’s most aggressive mid-tier lenders. As the institution seeks to capture a larger share of the digital-first market, this move signals a broader trend of poaching Tier 1 expertise to accelerate the integration of fintech-driven financial services across the East African bloc.
 
