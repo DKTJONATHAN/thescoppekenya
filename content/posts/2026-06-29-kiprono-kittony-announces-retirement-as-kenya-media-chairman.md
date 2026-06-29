@@ -1,18 +1,20 @@
 ---
 title: "Kiprono Kittony Announces Retirement as Kenya Media Chairman"
 slug: "kiprono-kittony-announces-retirement-as-kenya-media-chairman"
-description: "Kiprono Kittony is set to step down as the chairman of the Kenyan media industry, marking the end of a transformative era of leadership."
+description: "Kiprono Kittony Announces Retirement as Kenya Media Chairman: Kiprono Kittony is set to step down as the chairman of the Kenyan media industry, marking the end"
+excerpt: "The Sunset of the Media Mogul Kiprono Kittony exits the media chairmanship this July, prompting a chorus of praise for his stewardship of in"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/kg9LXjXv/f6e0f266bbc9.jpg"
 category: "Opinions"
 tags: ["kenyan media", "kiprono kittony", "media industry", "corporate leadership", "kenya news"]
+canonical: "https://zandani.co.ke/article/kiprono-kittony-announces-retirement-as-kenya-media-chairman"
 date: "2026-06-29T13:15:49Z"
 dateModified: "2026-06-29T13:15:49Z"
+focusKeyword: "Kiprono Kittony Announces Retirement as Kenya Media Chairman"
 schema: "NewsArticle"
 ---
 
-## The Sunset of the Media Mogul
+## The Sunset of the Media Mogul Kiprono Kittony Announces Retirement as Kenya Media Chairman is the central subject of the update.
 
 Kiprono Kittony exits the media chairmanship this July, prompting a chorus of praise for his stewardship of industry norms. This sentimental view obscures a harsh reality: his departure marks the quiet obsolescence of the boardroom titan in a sector that has effectively outgrown the necessity for central oversight.
 
