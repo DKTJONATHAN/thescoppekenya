@@ -1,15 +1,20 @@
 ---
 title: "Ugarte injury not expected to disrupt Manchester United transfer business"
 slug: "ugarte-injury-not-expected-to-disrupt-manchester-united-transfer-bus"
+description: "Ugarte injury not expected to disrupt Manchester United transfer : Ugarte Injury Exposes Man Utd's Flawed Transfer Strategy Manchester United's assertion that"
+excerpt: "Ugarte Injury Exposes Man Utd's Flawed Transfer Strategy Manchester United's assertion that Manuel Ugarte's serious knee injury won't derail"
 author: "Sports Desk"
 image: "https://i.ibb.co/WWybYhpj/9d298ff3d32d.jpg"
 category: "Global News"
+tags: ["ugarte injury not expected to disrupt manchester united transfer bus", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/ugarte-injury-not-expected-to-disrupt-manchester-united-transfer-bus"
 date: "2026-06-29T17:42:28Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-06-29T17:42:28Z"
+focusKeyword: "Ugarte injury not expected to disrupt Manchester United transfer"
 schema: "NewsArticle"
 ---
-## Ugarte Injury Exposes Man Utd's Flawed Transfer Strategy
+
+## Ugarte Injury Exposes Man Utd's Flawed Transfer Strategy Ugarte injury not expected to disrupt Manchester United transfer  is the central subject of the update.
 
 Manchester United's assertion that Manuel Ugarte's serious knee injury won't derail their transfer plans is a flimsy denial. With a crucial funding source gone, they're scrambling for alternatives, eyeing a Rashford sale. This reactive pivot exposes United's perennial lack of proactive planning, vital ahead of their Champions League return.
 
