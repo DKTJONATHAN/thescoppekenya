@@ -165,10 +165,10 @@
     "35a949ac1932caae5f65c4ad446ce5a1",
     "76c08563b0e1bb3d33ef1d97b760d59c",
     "a7cfd0afbc70674f19252c09344eb525",
-    "e9da7f46db8ca9fbf8b10b98e8128bad"
+    "e9da7f46db8ca9fbf8b10b98e8128bad",
+    "fdda7558b67f5644cb31219e4d6dc75d"
   ],
   "style_history": [
-    "Sharp Column",
     "Letter Form",
     "Personal Reflection",
     "Historical Lens",
@@ -197,10 +197,10 @@
     "Sharp Column",
     "Historical Lens",
     "Letter Form",
-    "Personal Reflection"
+    "Personal Reflection",
+    "Counterpoint"
   ],
   "angle_history": [
-    "timeline_shift|sovereignty|Historical Lens",
     "winners_losers|diplomacy|Personal Reflection",
     "accountability|Mutula Kilonzo|Sharp Column",
     "next_48_hours|election security|Letter Form",
@@ -279,6 +279,7 @@
     "money_follow|air quality|Sharp Column",
     "timeline_shift|avocado exports|Historical Lens",
     "next_48_hours|Workplace culture|Letter Form",
-    "story_progression|protest|Personal Reflection"
+    "story_progression|protest|Personal Reflection",
+    "myth_vs_fact|Kenya Media|Counterpoint"
   ]
 }
