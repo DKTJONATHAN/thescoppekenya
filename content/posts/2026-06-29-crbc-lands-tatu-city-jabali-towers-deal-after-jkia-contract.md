@@ -1,18 +1,20 @@
 ---
 title: "CRBC Lands Tatu City Jabali Towers Deal After JKIA Contract Win"
 slug: "crbc-lands-tatu-city-jabali-towers-deal-after-jkia-contract"
-description: "China Road and Bridge Corporation secures the Jabali Towers contract at Tatu City shortly after winning the deal to modernise Jomo Kenyatta Airport."
+description: "CRBC Lands Tatu City Jabali Towers Deal After JKIA Contract Win: China Road and Bridge Corporation secures the Jabali Towers contract at Tatu City shortly"
+excerpt: "Should Kenya Worry About a Single Contractor Controlling Our Skyline? China Road and Bridge Corporation just locked in the contract for Jaba"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/7tS6qTtf/f8b78fe66605.jpg"
 category: "News"
 tags: ["kenya", "infrastructure", "crbc", "tatu city", "jkia", "construction", "real estate"]
+canonical: "https://zandani.co.ke/article/crbc-lands-tatu-city-jabali-towers-deal-after-jkia-contract"
 date: "2026-06-29T14:49:45Z"
 dateModified: "2026-06-29T14:49:45Z"
+focusKeyword: "CRBC Lands Tatu City Jabali Towers Deal After JKIA Contract Win"
 schema: "NewsArticle"
 ---
 
-## Should Kenya Worry About a Single Contractor Controlling Our Skyline?
+## Should Kenya Worry About a Single Contractor Controlling Our Skyline? CRBC Lands Tatu City Jabali Towers Deal After JKIA Contract Win is the central subject of the update.
 
 China Road and Bridge Corporation just locked in the contract for Jabali Towers, a massive mixed-use development at Tatu City, just six days after securing a massive state project at Jomo Kenyatta International Airport. This double win raises sharp questions about market concentration.
 
