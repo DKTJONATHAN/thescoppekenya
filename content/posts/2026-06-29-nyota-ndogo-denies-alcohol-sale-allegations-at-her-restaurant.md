@@ -1,18 +1,20 @@
 ---
 title: "Nyota Ndogo Denies Selling Alcohol at Her Coastal Restaurant"
 slug: "nyota-ndogo-denies-alcohol-sale-allegations-at-her-restaurant"
-description: "Singer Nyota Ndogo has addressed allegations regarding her business after claims surfaced that her establishment promotes alcohol and immorality."
+description: "Nyota Ndogo Denies Selling Alcohol at Her Coastal Restaurant: Singer Nyota Ndogo has addressed allegations regarding her business after claims surfaced that"
+excerpt: "The Cost of Digital Stigma on Coastal Enterprise Nyota Ndogo currently stands in a defensive posture, fighting a narrative that threatens th"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/fdYVJMzM/a68d1a8a47ee.jpg"
 category: "Gossip"
 tags: ["nyota ndogo", "kenyan celebrities", "coastal news", "kenyan business", "entertainment news"]
+canonical: "https://zandani.co.ke/article/nyota-ndogo-denies-alcohol-sale-allegations-at-her-restaurant"
 date: "2026-06-29T12:43:20Z"
 dateModified: "2026-06-29T12:43:20Z"
+focusKeyword: "Nyota Ndogo Denies Selling Alcohol at Her Coastal Restaurant"
 schema: "NewsArticle"
 ---
 
-## The Cost of Digital Stigma on Coastal Enterprise
+## The Cost of Digital Stigma on Coastal Enterprise Nyota Ndogo Denies Selling Alcohol at Her Coastal Restaurant is the central subject of the update.
 
 Nyota Ndogo currently stands in a defensive posture, fighting a narrative that threatens the viability of her restaurant, Nyota Ndogo Jikoni. While she positions her business as a family-friendly culinary space, online actors have weaponized moral policing to frame her establishment as an illicit hub.
 
