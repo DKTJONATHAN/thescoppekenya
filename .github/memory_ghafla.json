@@ -242,10 +242,10 @@
     "e25bc5caf8b12b5ffd415954437323c3",
     "c3a0a9c71e2ccc585ed3d223437c7497",
     "9925b88006d1db73437c83e45c2b9ef6",
-    "24bace1becbd06aa1f508560a0fefec1"
+    "24bace1becbd06aa1f508560a0fefec1",
+    "e261edc61594e125bdb23234ba97c8ae"
   ],
   "style_history": [
-    "Profile Beat",
     "Trend Take",
     "Reaction Round-up",
     "Hard News Lead",
@@ -274,10 +274,10 @@
     "Trend Take",
     "Reaction Round-up",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
-    "timeline_shift|Vera Sidika|Hard News Lead",
     "money_follow|Njugush|Receipts Piece",
     "impact_on_citizens|Kenya Power|Profile Beat",
     "accountability|economic hardship|Reaction Round-up",
@@ -356,6 +356,7 @@
     "story_progression|boxing|Trend Take",
     "story_progression|co-parenting|Reaction Round-up",
     "winners_losers|Nairobi|Hard News Lead",
-    "winners_losers|Kenya Power|Profile Beat"
+    "winners_losers|Kenya Power|Profile Beat",
+    "timeline_shift|King Kaka|Trend Take"
   ]
 }
