@@ -1,18 +1,20 @@
 ---
 title: "Enzo Maresca Appointed Manchester City Head Coach After Chelsea Exit"
 slug: "enzo-maresca-appointed-manchester-city-head-coach"
-description: "Enzo Maresca has officially signed a three-year contract to manage Manchester City following his departure from Chelsea and a compensation agreement."
+description: "Enzo Maresca Appointed Manchester City Head Coach After Chelsea E: Enzo Maresca has officially signed a three-year contract to manage Manchester City following"
+excerpt: "The 17 Million Pound Vacuum: Why Maresca’s Succession Masks a Post Guardiola Identity Crisis Manchester City has finalized the appointment o"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/F4JtJr5h/24ee86e0b3e4.png"
 category: "Sports"
 tags: ["manchester city", "enzo maresca", "football news", "english premier league", "pep guardiola", "sports update"]
+canonical: "https://zandani.co.ke/article/enzo-maresca-appointed-manchester-city-head-coach"
 date: "2026-06-29T14:31:13Z"
 dateModified: "2026-06-29T14:31:13Z"
+focusKeyword: "Enzo Maresca Appointed Manchester City Head Coach After Chelsea E"
 schema: "NewsArticle"
 ---
 
-## The 17 Million Pound Vacuum: Why Maresca’s Succession Masks a Post-Guardiola Identity Crisis
+## The 17 Million Pound Vacuum: Why Maresca’s Succession Masks a Post-Guardiola Identity Crisis Enzo Maresca Appointed Manchester City Head Coach After Chelsea E is the central subject of the update.
 
 Manchester City has finalized the appointment of Enzo Maresca as head coach, marking a transition that feels less like a strategic footballing pivot and more like a high-stakes corporate liquidation sale. While pundits scramble to decipher tactical lineups, the real story is the cold, transactional nature of the 17 million pound compensation package that allowed this move to happen.
 
