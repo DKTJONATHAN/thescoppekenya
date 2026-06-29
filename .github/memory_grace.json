@@ -181,10 +181,10 @@
     "1d394df4cdd2e4c8a79a25900a146256",
     "74be656acf07303ecf4f917bbae72252",
     "ce225db83b07e9f660a03c306f3f6519",
-    "863ac5029d16b7ff995ffb49f935a65c"
+    "863ac5029d16b7ff995ffb49f935a65c",
+    "4f6b4c729e843fba0ddb0e579ed0b967"
   ],
   "style_history": [
-    "Power Accountability",
     "Explainer",
     "Markets Report",
     "SME Angle",
@@ -213,10 +213,10 @@
     "Backgrounder",
     "Power Accountability",
     "Explainer",
-    "Markets Report"
+    "Markets Report",
+    "SME Angle"
   ],
   "angle_history": [
-    "impact_on_citizens|digital economy|Explainer",
     "timeline_shift|Glovo|Backgrounder",
     "winners_losers|oil refinery|SME Angle",
     "money_follow|telecommunications|Markets Report",
@@ -295,6 +295,7 @@
     "winners_losers|DRC|Backgrounder",
     "accountability|Banking|Power Accountability",
     "policy_gap|economic indicators|Explainer",
-    "story_progression|KRA|Markets Report"
+    "story_progression|KRA|Markets Report",
+    "winners_losers|Absa Bank Kenya|SME Angle"
   ]
 }
