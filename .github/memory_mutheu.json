@@ -277,10 +277,10 @@
     "a9ff1ecd1d3f2f8f8d7e65fe1e50f458",
     "42ec6995a9dd7687875c38a6675d6863",
     "912eda7d56b53ad81c9f0fadc6c6e316",
-    "431bb010f8e537c89288bdd28a6d21ef"
+    "431bb010f8e537c89288bdd28a6d21ef",
+    "e41ff85b7db217e240b3d168105c777d"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
     "Hard News Lead",
@@ -309,10 +309,10 @@
     "Hard News Lead",
     "Explainer",
     "Profile Beat",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
-    "winners_losers|television|Reaction Round-up",
     "accountability|Star Wars|Explainer",
     "timeline_shift|Bring It On: All or Nothing|Trend Take",
     "next_48_hours|American Music Awards|Hard News Lead",
@@ -391,6 +391,7 @@
     "timeline_shift|na|Hard News Lead",
     "money_follow|Taylor Swift|Explainer",
     "timeline_shift|Venezuela earthquake|Profile Beat",
-    "winners_losers|na|Reaction Round-up"
+    "winners_losers|na|Reaction Round-up",
+    "winners_losers|James Bond|Trend Take"
   ]
 }
