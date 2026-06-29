@@ -1,18 +1,20 @@
 ---
 title: "Utumishi Girls Academy Reopens Following Safety Reforms"
 slug: "utumishi-girls-academy-reopens-after-safety-reforms"
-description: "Utumishi Girls Academy will begin a phased reopening on July 2 after parents and the Ministry of Education agreed on leadership and safety changes."
+description: "Utumishi Girls Academy Reopens Following Safety Reforms: Utumishi Girls Academy will begin a phased reopening on July 2 after parents and the Ministry of"
+excerpt: "A Wall of Doubt Stands Where Dormitories Once Burned For many parents, the fresh paint and reinforced exits at Utumishi Girls Academy cannot"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/7txdDgYf/c1d6a6d5657e.jpg"
 category: "News"
 tags: ["kenya", "education", "utumishi girls academy", "school fire", "ministry of education", "kenyan schools"]
+canonical: "https://zandani.co.ke/article/utumishi-girls-academy-reopens-after-safety-reforms"
 date: "2026-06-29T19:11:07Z"
 dateModified: "2026-06-29T19:11:07Z"
+focusKeyword: "Utumishi Girls Academy Reopens Following Safety Reforms"
 schema: "NewsArticle"
 ---
 
-## A Wall of Doubt Stands Where Dormitories Once Burned
+## A Wall of Doubt Stands Where Dormitories Once Burned Utumishi Girls Academy Reopens Following Safety Reforms is the central subject of the update.
 
 For many parents, the fresh paint and reinforced exits at Utumishi Girls Academy cannot cover the scorched memories of a tragedy that remains vivid in their minds. While the Ministry of Education pushes for a return to normalcy, the atmosphere among families is thick with a cautious, almost fragile, skepticism.
 
