@@ -14,7 +14,7 @@ focusKeyword: "'Venezuela Earthquake Claims Lucas Trejo's Wife and Children"
 schema: "NewsArticle"
 ---
 
-## Venezuela's Heartbreak: The Unfolding Tragedy of the Lucas Trejo Family "Venezuela Earthquake Claims Lucas Trejo's Wife and Children is the central subject of the update.
+## Venezuela's Heartbreak: The Unfolding Tragedy of the Lucas Trejo Family "Venezuela Earthquake Claims Lucas Trejo's Wife and Children is the central subject of the update. 'Venezuela Earthquake Claims Lucas Trejo's Wife and Children is the central subject of the update.
 
 Venezuela is currently reeling from a catastrophe that has sent shockwaves across the globe. For Argentine footballer Lucas Trejo, who plays for Deportivo La Guaira, the devastation has manifested in the cruelest way imaginable: the loss of his wife, Yanina Maranella, and their two young children, Aarón and Ainhoa. Their heartbreaking story stands as a stark testament to the immense personal toll behind the sobering statistics of a nation now gripped by mourning. It is a narrative that lays bare the fragility of life and the deep connections that bind us.
 

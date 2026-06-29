@@ -1,18 +1,20 @@
 ---
 title: "Former Petroleum PS Mohamed Liban Targets Isiolo Governor Seat"
 slug: "mohamed-liban-targets-isiolo-gubernatorial-seat"
-description: "Former Petroleum PS Mohamed Liban seeks the Isiolo gubernatorial seat after resigning from government following a multi-billion shilling fuel scandal."
+description: "Former Petroleum PS Mohamed Liban Targets Isiolo Governor Seat: Former Petroleum PS Mohamed Liban seeks the Isiolo gubernatorial seat after resigning from"
+excerpt: "From Procurement Scandal to Ballot Box Mohamed Liban recently secured the formal blessing of Warsu community elders in Isiolo to launch his"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/p6cvH8PP/5415226126b6.jpg"
 category: "News"
 tags: ["isiolo politics", "mohamed liban", "kenyan politics", "2027 elections", "za ndani"]
+canonical: "https://zandani.co.ke/article/mohamed-liban-targets-isiolo-gubernatorial-seat"
 date: "2026-06-29T09:52:42Z"
 dateModified: "2026-06-29T09:52:42Z"
+focusKeyword: "Former Petroleum PS Mohamed Liban Targets Isiolo Governor Seat"
 schema: "NewsArticle"
 ---
 
-## From Procurement Scandal to Ballot Box
+## From Procurement Scandal to Ballot Box Former Petroleum PS Mohamed Liban Targets Isiolo Governor Seat is the central subject of the update.
 
 Mohamed Liban recently secured the formal blessing of Warsu community elders in Isiolo to launch his 2027 gubernatorial bid. This pivot into local elective politics arrives just months after he exited the Petroleum Ministry under the dark cloud of a multi-billion shilling procurement controversy.
 
