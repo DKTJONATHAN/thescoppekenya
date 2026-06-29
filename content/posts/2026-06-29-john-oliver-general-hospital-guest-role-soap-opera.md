@@ -1,21 +1,20 @@
 ---
-title: "John Oliver Joins General Hospital for Multi-Episode Guest Role
+title: "'John Oliver Joins General Hospital for Multi-Episode Guest Role"
 slug: "john-oliver-general-hospital-guest-role-soap-opera"
-description: "Television host John Oliver will appear in a multi-episode guest role on 'General Hospital' after a public request. Learn about his upcoming appearances on the show."
+description: "'John Oliver Joins General Hospital for Multi-Episode Guest Role: Television host John Oliver will appear in a multi-episode guest role on 'General Hospital'"
+excerpt: "Mzaha Au Ukweli? John Oliver's 'General Hospital' Stint Sparks Heated Debate Among Kenyan Soap Fans The unexpected crossover of satirical co"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/GQ7gY3d9/f9b26f0e1595.jpg"
-og_title: "John Oliver Lands Role on General Hospital!"
-og_description: "After a public request, John Oliver will appear in a multi-episode guest role on 'General Hospital'. Discover details of his soap opera debut."
-focus_keyword: "John Oliver General Hospital"
 category: "Entertainment"
 tags: ["john oliver", "general hospital", "soap opera", "television", "entertainment news", "hbo"]
+canonical: "https://zandani.co.ke/article/john-oliver-general-hospital-guest-role-soap-opera"
 date: "2026-06-29T11:34:46Z"
 dateModified: "2026-06-29T11:34:46Z"
+focusKeyword: "'John Oliver Joins General Hospital for Multi-Episode Guest Role"
 schema: "NewsArticle"
 ---
 
-## Mzaha Au Ukweli? John Oliver's 'General Hospital' Stint Sparks Heated Debate Among Kenyan Soap Fans
+## Mzaha Au Ukweli? John Oliver's 'General Hospital' Stint Sparks Heated Debate Among Kenyan Soap Fans "John Oliver Joins General Hospital for Multi-Episode Guest Role is the central subject of the update.
 
 The unexpected crossover of satirical comedian John Oliver into the dramatic world of "General Hospital" has ignited a passionate discussion across Kenya, with long-time soap opera fans weighing in on whether this star cameo is a stroke of genius for traditional television or a sign of genre boundaries blurring beyond recognition. His upcoming three-episode arc on the iconic daytime drama is stirring conversations from Nairobi to Mombasa.
 
