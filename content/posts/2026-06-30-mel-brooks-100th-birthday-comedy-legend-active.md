@@ -1,21 +1,20 @@
 ---
-title: "Mel Brooks Celebrates 100th Birthday, Remains Active
+title: "'Mel Brooks Celebrates 100th Birthday, Remains Active"
 slug: "mel-brooks-100th-birthday-comedy-legend-active"
-description: "Comedy legend Mel Brooks marks his 100th birthday in perfect health, with son Max confirming his sharp mind and upcoming film projects. Discover more about his incredible legacy."
+description: "'Mel Brooks Celebrates 100th Birthday, Remains Active: Comedy legend Mel Brooks marks his 100th birthday in perfect health, with son Max confirming his sharp"
+excerpt: "Mel Brooks at 100: Still Directing Laughter, Defying the Sunset Years At an age when most would be enjoying well deserved quietude, comedy t"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/x46RvCf/730c44722871.jpg"
-og_title: "Mel Brooks at 100: Healthy & Active, New Projects!"
-og_description: "Comedy icon Mel Brooks celebrates his 100th birthday in perfect health with son Max Brooks confirming his sharp mind. He remains active with new projects."
-focus_keyword: "Mel Brooks 100th birthday"
 category: "Entertainment"
 tags: ["mel brooks", "comedy", "hollywood legend", "spaceballs", "entertainment news", "celebrity birthday"]
+canonical: "https://zandani.co.ke/article/mel-brooks-100th-birthday-comedy-legend-active"
 date: "2026-06-30T16:38:56Z"
 dateModified: "2026-06-30T16:38:56Z"
+focusKeyword: "'Mel Brooks Celebrates 100th Birthday, Remains Active"
 schema: "NewsArticle"
 ---
 
-## Mel Brooks at 100: Still Directing Laughter, Defying the Sunset Years
+## Mel Brooks at 100: Still Directing Laughter, Defying the Sunset Years "Mel Brooks Celebrates 100th Birthday, Remains Active is the central subject of the update.
 
 At an age when most would be enjoying well-deserved quietude, comedy titan Mel Brooks isn't just celebrating his centennial; he's busy scheduling his next creative conquest. His 100th birthday, marked on Sunday, was not just a milestone but a vibrant reaffirmation of a mind and spirit still very much in play, a delightful reality shared by those closest to him.
 
