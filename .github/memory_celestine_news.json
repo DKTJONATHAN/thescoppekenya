@@ -289,10 +289,10 @@
     "5b8c3e4581690dc16f53d8e8fc232d9e",
     "85da610d928b460b71ded0a93fb07adf",
     "06150bcd94ff8f957c7cdbcba936aab3",
-    "e87d0b7c09cfa4f8e7f30caa42f9cd7a"
+    "e87d0b7c09cfa4f8e7f30caa42f9cd7a",
+    "b984d68b82ac5def8e2d58b56642fd72"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Power Accountability",
     "Reaction & Voices",
@@ -321,10 +321,10 @@
     "Explainer",
     "Reaction & Voices",
     "Hard News Lead",
-    "Power Accountability"
+    "Power Accountability",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "winners_losers|SACCO|Explainer",
     "winners_losers|KFCB|Reaction & Voices",
     "myth_vs_fact|Football Kenya Federation|Hard News Lead",
     "policy_gap|NTSA|Power Accountability",
@@ -403,6 +403,7 @@
     "money_follow|Kenya|Explainer",
     "story_progression|Kenya|Reaction & Voices",
     "money_follow|higher education|Hard News Lead",
-    "money_follow|manufacturing|Power Accountability"
+    "money_follow|manufacturing|Power Accountability",
+    "winners_losers|SHA|Context Backgrounder"
   ]
 }
