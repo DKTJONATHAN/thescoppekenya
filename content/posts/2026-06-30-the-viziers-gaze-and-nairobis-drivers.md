@@ -1,20 +1,21 @@
 ---
 title: "The Vizier's Gaze and Nairobi's Drivers"
 slug: "the-viziers-gaze-and-nairobis-drivers"
-description: "In a kingdom where vision was wealth, ancient officials crafted a new decree, mirroring today's driver medical certificate kenya requirements for the populace."
+description: "The Vizier's Gaze and Nairobi's Drivers: In a kingdom where vision was wealth, ancient officials crafted a new decree, mirroring today's driver medical"
+excerpt: "The dust swirled in the ancient courtyard of the Alafin, thick with the scent of sacrifice and fear. Before the towering, mud brick walls, C"
 author: "The Chronicler"
 author_url: "https://zandani.co.ke/author/the-chronicler"
 image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200"
 category: "Chronicles"
-tags: ["chronicles", "ancient-african-court", "power", "corruption", "satire", "ntsa-mandatory-eye-test-nairobi-2026", "driver-medical-certificate-kenya-requirements", "ntsa-accredited-health-screening-centers", "psv-driver-fitness-test-rollout", "kenya-driving-license-renewal-medical", "ntsa-vision-test-for-drivers"]
+tags: ["chronicles", "ancient-african-court", "power", "corruption", "satire", "ntsa-mandatory-eye-test-nairobi-2026", "driver-medical-certificate-kenya-requirements", "ntsa-accredited-health-screening-centers"]
 canonical: "https://zandani.co.ke/article/the-viziers-gaze-and-nairobis-drivers"
 date: "2026-06-30T13:13:53Z"
-authorUrl: "https://zandani.co.ke/author/the-chronicler"
 dateModified: "2026-06-30T13:13:53Z"
+focusKeyword: "The Vizier's Gaze and Nairobi's Drivers"
 schema: "NewsArticle"
 ---
 
-The dust swirled in the ancient courtyard of the Alafin, thick with the scent of sacrifice and fear. Before the towering, mud-brick walls, Chief Eniola, the Royal Vizier of Sight, adjusted his ceremonial cowrie-shell necklace. His gaze, famously discerning, fell upon Akin, a humble water-carrier, whose trembling hands held a newly mandated scroll.
+The dust swirled in the ancient courtyard of the Alafin, thick with the scent of sacrifice and fear. Before the towering, mud-brick walls, Chief Eniola, the Royal Vizier of Sight, adjusted his ceremonial cowrie-shell necklace. His gaze, famously discerning, fell upon Akin, a humble water-carrier, whose trembling hands held a newly mandated scroll. The Vizier's Gaze and Nairobi's Drivers is the central subject of the update.
 
 ## The Mandate of Clear Passage
 
