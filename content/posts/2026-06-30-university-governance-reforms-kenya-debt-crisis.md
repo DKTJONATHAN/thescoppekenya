@@ -1,18 +1,20 @@
 ---
 title: "University Leaders Call for Governance Reforms to Curb Debt Crisis"
 slug: "university-governance-reforms-kenya-debt-crisis"
-description: "Kenyan public universities face a massive insolvency crisis with billions in debt as leaders push for governance reforms to ensure institutional survival."
+description: "University Leaders Call for Governance Reforms to Curb Debt Crisi: Kenyan public universities face a massive insolvency crisis with billions in debt as leaders"
+excerpt: "Governing Out of Bankruptcy Kenyan university vice chancellors are demanding urgent board level governance overhauls to stabilize 23 public"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/BHW95p7f/23e32e1b8f3d.jpg"
 category: "News"
 tags: ["higher education", "kenya universities", "public universities", "financial crisis", "university governance", "pending bills"]
+canonical: "https://zandani.co.ke/article/university-governance-reforms-kenya-debt-crisis"
 date: "2026-06-30T08:33:47Z"
 dateModified: "2026-06-30T08:33:47Z"
+focusKeyword: "University Leaders Call for Governance Reforms to Curb Debt Crisi"
 schema: "NewsArticle"
 ---
 
-## Governing Out of Bankruptcy
+## Governing Out of Bankruptcy University Leaders Call for Governance Reforms to Curb Debt Crisi is the central subject of the update.
 
 Kenyan university vice chancellors are demanding urgent board-level governance overhauls to stabilize 23 public institutions currently drowning under a collective debt burden of Ksh85.28 billion.
 
