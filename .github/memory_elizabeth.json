@@ -144,10 +144,10 @@
     "f8a9bee5ab8b6c9ffb2091bd5a8d8fbb",
     "72afa995c17378b0b2480d5f36820410",
     "780a5624335cc38536662383b695794d",
-    "c086b8a743c7f035000b353c8ec3becb"
+    "c086b8a743c7f035000b353c8ec3becb",
+    "cc407cc66182bfec3bb16f26176e8e50"
   ],
   "style_history": [
-    "Critical Take",
     "Africa Angle",
     "Explainer",
     "Backgrounder",
@@ -176,7 +176,8 @@
     "Backgrounder",
     "Critical Take",
     "Explainer",
-    "Africa Angle"
+    "Africa Angle",
+    "Backgrounder"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -239,6 +240,7 @@
     "money_follow|GTA 6|Backgrounder",
     "accountability|fintech|Critical Take",
     "story_progression|Windows 10|Explainer",
-    "money_follow|banking|Africa Angle"
+    "money_follow|banking|Africa Angle",
+    "money_follow|automotive manufacturing|Backgrounder"
   ]
 }
