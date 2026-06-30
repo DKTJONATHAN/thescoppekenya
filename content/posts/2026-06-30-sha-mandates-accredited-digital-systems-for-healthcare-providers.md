@@ -1,18 +1,20 @@
 ---
 title: "SHA Mandates Accredited Digital Systems for Healthcare Providers"
 slug: "sha-mandates-accredited-digital-systems-for-healthcare-providers"
-description: "The Social Health Authority now requires all Kenyan healthcare providers to integrate accredited digital record systems to qualify for future contracts."
+description: "SHA Mandates Accredited Digital Systems for Healthcare Providers: The Social Health Authority now requires all Kenyan healthcare providers to integrate"
+excerpt: "The Silent Exclusion of Rural Healthcare The Social Health Authority has issued a directive requiring all medical providers to adopt accredi"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Y43d2wr1/97f4aec0a202.jpg"
 category: "News"
 tags: ["sha", "kenya health", "digital health", "healthcare contracting", "hmis", "medical services"]
+canonical: "https://zandani.co.ke/article/sha-mandates-accredited-digital-systems-for-healthcare-providers"
 date: "2026-06-30T19:00:13Z"
 dateModified: "2026-06-30T19:00:13Z"
+focusKeyword: "SHA Mandates Accredited Digital Systems for Healthcare Providers"
 schema: "NewsArticle"
 ---
 
-## The Silent Exclusion of Rural Healthcare
+## The Silent Exclusion of Rural Healthcare SHA Mandates Accredited Digital Systems for Healthcare Providers is the central subject of the update.
 
 The Social Health Authority has issued a directive requiring all medical providers to adopt accredited Health Management Information Systems as a mandatory condition for the 2026/2028 contracting period. This administrative pivot aims to unify national data records but effectively draws a sharp line between well-funded urban hospitals and under-resourced rural clinics.
 
