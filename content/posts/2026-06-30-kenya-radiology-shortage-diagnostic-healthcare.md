@@ -1,18 +1,20 @@
 ---
 title: "Why Kenya urgently needs more radiologists for better healthcare"
 slug: "kenya-radiology-shortage-diagnostic-healthcare"
-description: "Kenya faces a critical shortage of radiologists as experts call for better patient communication to improve diagnostic care and treatment outcomes."
+description: "Why Kenya urgently needs more radiologists for better healthcare: Kenya faces a critical shortage of radiologists as experts call for better patient"
+excerpt: "The Silent Crisis of Diagnostic Medicine Kenya’s healthcare lottery is rigged. We have systematically hollowed out our diagnostic infrastruc"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/9dmr2HJ/3eb62387735f.jpg"
 category: "Opinions"
 tags: ["healthcare", "kenya medicine", "radiology", "diagnostic services", "medical education"]
+canonical: "https://zandani.co.ke/article/kenya-radiology-shortage-diagnostic-healthcare"
 date: "2026-06-30T11:51:05Z"
 dateModified: "2026-06-30T11:51:05Z"
+focusKeyword: "Why Kenya urgently needs more radiologists for better healthcare"
 schema: "NewsArticle"
 ---
 
-## The Silent Crisis of Diagnostic Medicine
+## The Silent Crisis of Diagnostic Medicine Why Kenya urgently needs more radiologists for better healthcare is the central subject of the update.
 
 Kenya’s healthcare lottery is rigged. We have systematically hollowed out our diagnostic infrastructure, transforming the vital link between symptom and cure into a phantom workforce that most citizens will never interact with.
 
