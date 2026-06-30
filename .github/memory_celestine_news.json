@@ -287,10 +287,10 @@
     "7bb3b2ab541005eb682be5ca5bdb9451",
     "99783783259010911e48bb6b7d4e0c5f",
     "5b8c3e4581690dc16f53d8e8fc232d9e",
-    "85da610d928b460b71ded0a93fb07adf"
+    "85da610d928b460b71ded0a93fb07adf",
+    "06150bcd94ff8f957c7cdbcba936aab3"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Reaction & Voices",
     "Explainer",
     "Hard News Lead",
@@ -319,10 +319,10 @@
     "Context Backgrounder",
     "Power Accountability",
     "Explainer",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "next_48_hours|KRA|Hard News Lead",
     "accountability|Kenya|Power Accountability",
     "winners_losers|SACCO|Explainer",
     "winners_losers|KFCB|Reaction & Voices",
@@ -401,6 +401,7 @@
     "timeline_shift|National Police Service|Context Backgrounder",
     "money_follow|Isiolo gubernatorial race|Power Accountability",
     "money_follow|Kenya|Explainer",
-    "story_progression|Kenya|Reaction & Voices"
+    "story_progression|Kenya|Reaction & Voices",
+    "money_follow|higher education|Hard News Lead"
   ]
 }
