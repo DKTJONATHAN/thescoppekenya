@@ -1,18 +1,20 @@
 ---
 title: "Ruto Mandates Local Manufacturing for Security Forces Footwear"
 slug: "ruto-mandates-local-manufacturing-security-footwear"
-description: "President Ruto has directed that all footwear for Kenyan security agencies be manufactured locally to boost the leather industry and create jobs."
+description: "Ruto Mandates Local Manufacturing for Security Forces Footwear: President Ruto has directed that all footwear for Kenyan security agencies be manufactured"
+excerpt: "The Cobblers Left in the Cold President Ruto has decreed that Kenyan security forces will now wear exclusively locally produced footwear, pr"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/wNktgLc4/5b121151e06f.jpg"
 category: "News"
 tags: ["kenya news", "william ruto", "leather industry", "manufacturing", "security agencies", "import substitution"]
+canonical: "https://zandani.co.ke/article/ruto-mandates-local-manufacturing-security-footwear"
 date: "2026-06-30T13:11:49Z"
 dateModified: "2026-06-30T13:11:49Z"
+focusKeyword: "Ruto Mandates Local Manufacturing for Security Forces Footwear"
 schema: "NewsArticle"
 ---
 
-## The Cobblers Left in the Cold
+## The Cobblers Left in the Cold Ruto Mandates Local Manufacturing for Security Forces Footwear is the central subject of the update.
 
 President Ruto has decreed that Kenyan security forces will now wear exclusively locally produced footwear, promising 20,000 jobs. Yet, in the cramped stalls of Kariokor, the artisans who have powered the nation's leather trade for decades are not celebrating; they are counting the prohibitive costs of the tender process.
 
