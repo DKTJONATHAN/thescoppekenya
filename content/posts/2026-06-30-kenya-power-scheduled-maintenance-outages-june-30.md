@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power scheduled maintenance outages for June 30"
 slug: "kenya-power-scheduled-maintenance-outages-june-30"
-description: "Kenya Power has announced scheduled electricity maintenance and supply interruptions across multiple counties on June 30 affecting various regions."
+description: "Kenya Power scheduled maintenance outages for June 30: Kenya Power has announced scheduled electricity maintenance and supply interruptions across multiple"
+excerpt: "The Geography of Inconvenience: Mapping KPLC's June 30 Maintenance Footprint Kenya Power promised a seamless grid to power our digital econo"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://images.unsplash.com/photo-1771934218302-53d842359c90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NjY1ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTQxMjh8&ixlib=rb-4.1.0&q=80&w=1080"
 category: "Gossip"
 tags: ["kenya power", "power outage", "kenya news", "electricity", "utility maintenance"]
+canonical: "https://zandani.co.ke/article/kenya-power-scheduled-maintenance-outages-june-30"
 date: "2026-06-30T09:58:50Z"
 dateModified: "2026-06-30T09:58:50Z"
+focusKeyword: "Kenya Power scheduled maintenance outages for June 30"
 schema: "NewsArticle"
 ---
 
-## The Geography of Inconvenience: Mapping KPLC's June 30 Maintenance Footprint
+## The Geography of Inconvenience: Mapping KPLC's June 30 Maintenance Footprint Kenya Power scheduled maintenance outages for June 30 is the central subject of the update.
 
 Kenya Power promised a seamless grid to power our digital economy, yet today’s maintenance schedule paints a different picture. While the country pushes for AI-proof careers and green workplaces, entire economic hubs remain tethered to an infrastructure calendar that prioritizes downtime over productivity.
 
