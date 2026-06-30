@@ -1,21 +1,20 @@
 ---
-title: "Ariana Grande Reschedules Eternal Sunshine Tour Dates Due to Production
+title: "'Ariana Grande Reschedules Eternal Sunshine Tour Dates Due to Production"
 slug: "ariana-grande-tour-dates-rescheduled-production-issues"
-description: "Ariana Grande has rescheduled several Eternal Sunshine tour dates in Brooklyn and Boston, citing production challenges. Her new album 'Petal' releases soon. Get the full details now."
+description: "'Ariana Grande Reschedules Eternal Sunshine Tour Dates Due to Pro: Ariana Grande has rescheduled several Eternal Sunshine tour dates in Brooklyn and Boston,"
+excerpt: "What's Behind the Eternal Sunshine Tour Changes? Ariana Grande has adjusted several 'Eternal Sunshine' tour dates, citing production challen"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/xq388c7K/98bffe376dfd.jpg"
-og_title: "Ariana Grande Reschedules Eternal Sunshine Tour Dates"
-og_description: "Ariana Grande postponed multiple Eternal Sunshine tour dates due to production issues. Learn more about the rescheduled shows."
-focus_keyword: "Ariana Grande tour dates"
 category: "Entertainment"
 tags: ["ariana grande", "eternal sunshine tour", "concerts", "pop music", "celebrity news", "music updates"]
+canonical: "https://zandani.co.ke/article/ariana-grande-tour-dates-rescheduled-production-issues"
 date: "2026-06-30T10:11:11Z"
 dateModified: "2026-06-30T10:11:11Z"
+focusKeyword: "'Ariana Grande Reschedules Eternal Sunshine Tour Dates Due to Pro"
 schema: "NewsArticle"
 ---
 
-## What's Behind the Eternal Sunshine Tour Changes?
+## What's Behind the Eternal Sunshine Tour Changes? "Ariana Grande Reschedules Eternal Sunshine Tour Dates Due to Pro is the central subject of the update.
 
 Ariana Grande has adjusted several 'Eternal Sunshine' tour dates, citing production challenges. This news arrives amidst reports of her recent breakup and ahead of her new album, "Petal," stirring discussions among fans about how these personal and professional shifts intertwine with her journey on stage.
 
