@@ -1,18 +1,20 @@
 ---
 title: "Ford shifts back to human engineers to improve vehicle quality"
 slug: "ford-prioritizes-veteran-engineers-over-ai-for-quality-control"
-description: "Ford has reduced warranty and recall costs by hiring veteran engineers to work alongside AI systems during the vehicle design process."
+description: "Ford shifts back to human engineers to improve vehicle quality: Ford has reduced warranty and recall costs by hiring veteran engineers to work alongside AI"
+excerpt: "The Human Factor in Automotive Manufacturing Ford is shifting its quality assurance strategy by reintegrating 350 veteran engineers into the"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/Wp6ZzGwj/20e6eb288ea4.webp"
 category: "Technology"
 tags: ["ford", "automotive", "artificial intelligence", "engineering", "manufacturing", "technology"]
+canonical: "https://zandani.co.ke/article/ford-prioritizes-veteran-engineers-over-ai-for-quality-control"
 date: "2026-06-30T13:17:10Z"
 dateModified: "2026-06-30T13:17:10Z"
+focusKeyword: "Ford shifts back to human engineers to improve vehicle quality"
 schema: "NewsArticle"
 ---
 
-## The Human Factor in Automotive Manufacturing
+## The Human Factor in Automotive Manufacturing Ford shifts back to human engineers to improve vehicle quality is the central subject of the update.
 
 Ford is shifting its quality assurance strategy by reintegrating 350 veteran engineers into the design and production cycle. This move marks a departure from the industry trend of relying strictly on algorithmic detection. By curbing its total dependence on artificial intelligence, the manufacturer has already seen an improvement in quality rankings and a tangible reduction in warranty expenditures.
 
