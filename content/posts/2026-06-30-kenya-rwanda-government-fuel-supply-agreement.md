@@ -1,18 +1,20 @@
 ---
 title: "Kenya and Rwanda Sign Government Fuel Supply Agreement"
 slug: "kenya-rwanda-government-fuel-supply-agreement"
-description: "Kenya and Rwanda have shifted to a state-backed fuel procurement model using Kenya Pipeline Company infrastructure to boost supply and cut costs."
+description: "Kenya and Rwanda Sign Government Fuel Supply Agreement: Kenya and Rwanda have shifted to a state-backed fuel procurement model using Kenya Pipeline Company"
+excerpt: "The State Monopoly Racket The official narrative paints the new Kenya Rwanda fuel pact as a triumph of logistical harmony. Behind the diplom"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/zVZCsXkN/7a858eb6cf92.jpg"
 category: "Business"
 tags: ["kenya", "rwanda", "fuel trade", "energy", "kenya pipeline company", "east africa"]
+canonical: "https://zandani.co.ke/article/kenya-rwanda-government-fuel-supply-agreement"
 date: "2026-06-30T08:37:19Z"
 dateModified: "2026-06-30T08:37:19Z"
+focusKeyword: "Kenya and Rwanda Sign Government Fuel Supply Agreement"
 schema: "NewsArticle"
 ---
 
-## The State Monopoly Racket
+## The State Monopoly Racket Kenya and Rwanda Sign Government Fuel Supply Agreement is the central subject of the update.
 
 The official narrative paints the new Kenya-Rwanda fuel pact as a triumph of logistical harmony. Behind the diplomatic handshakes, however, sits a calculated shift that effectively terminates market competition and shifts the burden of multi-billion shilling credit risks squarely onto the Kenyan public.
 
