@@ -288,10 +288,10 @@
     "99783783259010911e48bb6b7d4e0c5f",
     "5b8c3e4581690dc16f53d8e8fc232d9e",
     "85da610d928b460b71ded0a93fb07adf",
-    "06150bcd94ff8f957c7cdbcba936aab3"
+    "06150bcd94ff8f957c7cdbcba936aab3",
+    "e87d0b7c09cfa4f8e7f30caa42f9cd7a"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Explainer",
     "Hard News Lead",
     "Power Accountability",
@@ -320,10 +320,10 @@
     "Power Accountability",
     "Explainer",
     "Reaction & Voices",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Power Accountability"
   ],
   "angle_history": [
-    "accountability|Kenya|Power Accountability",
     "winners_losers|SACCO|Explainer",
     "winners_losers|KFCB|Reaction & Voices",
     "myth_vs_fact|Football Kenya Federation|Hard News Lead",
@@ -402,6 +402,7 @@
     "money_follow|Isiolo gubernatorial race|Power Accountability",
     "money_follow|Kenya|Explainer",
     "story_progression|Kenya|Reaction & Voices",
-    "money_follow|higher education|Hard News Lead"
+    "money_follow|higher education|Hard News Lead",
+    "money_follow|manufacturing|Power Accountability"
   ]
 }
