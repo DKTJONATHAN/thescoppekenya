@@ -1,18 +1,20 @@
 ---
 title: "World Cup Round of 32: Heavyweights Crash Out as Knockouts Begin"
 slug: "world-cup-round-of-32-heavyweights-crash-out"
-description: "Major football nations Germany and the Netherlands exit the 2026 World Cup as the tournament moves into the high-stakes round of 32 fixtures."
+description: "World Cup Round of 32: Heavyweights Crash Out as Knockouts Begin: Major football nations Germany and the Netherlands exit the 2026 World Cup as the tournament"
+excerpt: "The 2026 World Cup Burial of European Hegemony The round of 32 has arrived, and the absence of the German and Dutch colors on the pitch serv"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/QF5H6vvn/0284dd2c1eb3.png"
 category: "Sports"
 tags: ["fifa world cup", "football", "sports", "international football", "kenyan sports news"]
+canonical: "https://zandani.co.ke/article/world-cup-round-of-32-heavyweights-crash-out"
 date: "2026-06-30T12:26:33Z"
 dateModified: "2026-06-30T12:26:33Z"
+focusKeyword: "World Cup Round of 32: Heavyweights Crash Out as Knockouts Begin"
 schema: "NewsArticle"
 ---
 
-## The 2026 World Cup Burial of European Hegemony
+## The 2026 World Cup Burial of European Hegemony World Cup Round of 32: Heavyweights Crash Out as Knockouts Begin is the central subject of the update.
 
 The round of 32 has arrived, and the absence of the German and Dutch colors on the pitch serves as a stark signal of a seismic shift. This tournament is systematically dismantling the traditional guard, proving that the old European power structure is no longer an inevitability.
 
