@@ -1,18 +1,20 @@
 ---
 title: "General Ruku: The Meru Military Leader in the Mau Mau Rebellion"
 slug: "general-ruku-meru-mau-mau-commander"
-description: "Discover the historical legacy of M'Ikiara wa Nyonta, a prominent Mau Mau commander from Meru who fought for Kenya's independence from Britain."
+description: "General Ruku: The Meru Military Leader in the Mau Mau Rebellion: Discover the historical legacy of M'Ikiara wa Nyonta, a prominent Mau Mau commander from Meru"
+excerpt: "Reclaiming the Lost Archives of the Mau Mau A new generation of Kenyans is moving past the polished narratives found in standard textbooks,"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/chMDt7yh/3bd6f901d561.jpg"
 category: "Lifestyle"
 tags: ["mau mau", "kenyan history", "general ruku", "meru", "independence struggle"]
+canonical: "https://zandani.co.ke/article/general-ruku-meru-mau-mau-commander"
 date: "2026-06-30T10:36:13Z"
 dateModified: "2026-06-30T10:36:13Z"
+focusKeyword: "General Ruku: The Meru Military Leader in the Mau Mau Rebellion"
 schema: "NewsArticle"
 ---
 
-## Reclaiming the Lost Archives of the Mau Mau
+## Reclaiming the Lost Archives of the Mau Mau General Ruku: The Meru Military Leader in the Mau Mau Rebellion is the central subject of the update.
 
 A new generation of Kenyans is moving past the polished narratives found in standard textbooks, opting instead to uncover the gritty, unvarnished stories of regional heroes. While historical focus has frequently centered on the movement’s central figures, a surge of curiosity is now drawing attention to M'Ikiara wa Nyonta, known as General Ruku. His life reveals a military strategist whose expertise was honed far beyond the borders of the forest.
 
