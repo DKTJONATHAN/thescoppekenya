@@ -14,7 +14,7 @@ focusKeyword: "'Mel Brooks Celebrates 100th Birthday, Remains Active"
 schema: "NewsArticle"
 ---
 
-## Mel Brooks at 100: Still Directing Laughter, Defying the Sunset Years "Mel Brooks Celebrates 100th Birthday, Remains Active is the central subject of the update.
+## Mel Brooks at 100: Still Directing Laughter, Defying the Sunset Years "Mel Brooks Celebrates 100th Birthday, Remains Active is the central subject of the update. 'Mel Brooks Celebrates 100th Birthday, Remains Active is the central subject of the update.
 
 At an age when most would be enjoying well-deserved quietude, comedy titan Mel Brooks isn't just celebrating his centennial; he's busy scheduling his next creative conquest. His 100th birthday, marked on Sunday, was not just a milestone but a vibrant reaffirmation of a mind and spirit still very much in play, a delightful reality shared by those closest to him.
 
