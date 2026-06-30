@@ -280,10 +280,10 @@
     "431bb010f8e537c89288bdd28a6d21ef",
     "e41ff85b7db217e240b3d168105c777d",
     "c675e0a64894fb7da7cfe39c26d03025",
-    "006a0169002961595649836cd2491aae"
+    "006a0169002961595649836cd2491aae",
+    "ad5253daf8692354d3653b8d05d5c8b8"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Profile Beat",
     "Explainer",
@@ -312,10 +312,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Explainer",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "next_48_hours|American Music Awards|Hard News Lead",
     "myth_vs_fact|autograph-signing|Profile Beat",
     "money_follow|The Bachelor|Explainer",
     "story_progression|reality television|Reaction Round-up",
@@ -394,6 +394,7 @@
     "winners_losers|na|Reaction Round-up",
     "winners_losers|James Bond|Trend Take",
     "story_progression|na|Explainer",
-    "timeline_shift|na|Profile Beat"
+    "timeline_shift|na|Profile Beat",
+    "policy_gap|Storage Wars|Reaction Round-up"
   ]
 }
