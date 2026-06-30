@@ -243,10 +243,10 @@
     "c3a0a9c71e2ccc585ed3d223437c7497",
     "9925b88006d1db73437c83e45c2b9ef6",
     "24bace1becbd06aa1f508560a0fefec1",
-    "e261edc61594e125bdb23234ba97c8ae"
+    "e261edc61594e125bdb23234ba97c8ae",
+    "44522d3544fb1eb5d918771b2293842e"
   ],
   "style_history": [
-    "Trend Take",
     "Reaction Round-up",
     "Hard News Lead",
     "Receipts Piece",
@@ -275,10 +275,10 @@
     "Reaction Round-up",
     "Hard News Lead",
     "Profile Beat",
-    "Trend Take"
+    "Trend Take",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "money_follow|Njugush|Receipts Piece",
     "impact_on_citizens|Kenya Power|Profile Beat",
     "accountability|economic hardship|Reaction Round-up",
     "policy_gap|Gen Z|Trend Take",
@@ -357,6 +357,7 @@
     "story_progression|co-parenting|Reaction Round-up",
     "winners_losers|Nairobi|Hard News Lead",
     "winners_losers|Kenya Power|Profile Beat",
-    "timeline_shift|King Kaka|Trend Take"
+    "timeline_shift|King Kaka|Trend Take",
+    "winners_losers|Kenya Power|Receipts Piece"
   ]
 }
