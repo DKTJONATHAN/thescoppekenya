@@ -292,10 +292,10 @@
     "e87d0b7c09cfa4f8e7f30caa42f9cd7a",
     "b984d68b82ac5def8e2d58b56642fd72",
     "d37a20b9fb8e986a2ba7c2051d2d1c57",
-    "ec38f22ceef8582bf155df6bfa83ac45"
+    "ec38f22ceef8582bf155df6bfa83ac45",
+    "db5b231b5e1775c8385104fe65a928ad"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Explainer",
     "Context Backgrounder",
     "Power Accountability",
@@ -324,10 +324,10 @@
     "Power Accountability",
     "Context Backgrounder",
     "Reaction & Voices",
-    "Explainer"
+    "Explainer",
+    "Power Accountability"
   ],
   "angle_history": [
-    "policy_gap|NTSA|Power Accountability",
     "money_follow|Nairobi|Explainer",
     "winners_losers|Nairobi County|Reaction & Voices",
     "policy_gap|Kenya|Hard News Lead",
@@ -406,6 +406,7 @@
     "money_follow|manufacturing|Power Accountability",
     "winners_losers|SHA|Context Backgrounder",
     "money_follow|Kenya|Reaction & Voices",
-    "myth_vs_fact|HELB|Explainer"
+    "myth_vs_fact|HELB|Explainer",
+    "accountability|Kenya Railways|Power Accountability"
   ]
 }
