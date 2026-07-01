@@ -291,10 +291,10 @@
     "06150bcd94ff8f957c7cdbcba936aab3",
     "e87d0b7c09cfa4f8e7f30caa42f9cd7a",
     "b984d68b82ac5def8e2d58b56642fd72",
-    "d37a20b9fb8e986a2ba7c2051d2d1c57"
+    "d37a20b9fb8e986a2ba7c2051d2d1c57",
+    "ec38f22ceef8582bf155df6bfa83ac45"
   ],
   "style_history": [
-    "Power Accountability",
     "Reaction & Voices",
     "Explainer",
     "Context Backgrounder",
@@ -323,10 +323,10 @@
     "Hard News Lead",
     "Power Accountability",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Explainer"
   ],
   "angle_history": [
-    "myth_vs_fact|Football Kenya Federation|Hard News Lead",
     "policy_gap|NTSA|Power Accountability",
     "money_follow|Nairobi|Explainer",
     "winners_losers|Nairobi County|Reaction & Voices",
@@ -405,6 +405,7 @@
     "money_follow|higher education|Hard News Lead",
     "money_follow|manufacturing|Power Accountability",
     "winners_losers|SHA|Context Backgrounder",
-    "money_follow|Kenya|Reaction & Voices"
+    "money_follow|Kenya|Reaction & Voices",
+    "myth_vs_fact|HELB|Explainer"
   ]
 }
