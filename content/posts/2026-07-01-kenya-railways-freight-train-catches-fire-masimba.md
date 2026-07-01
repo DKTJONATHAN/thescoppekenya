@@ -1,18 +1,20 @@
 ---
 title: "Kenya Railways freight train catches fire in Masimba Makueni"
 slug: "kenya-railways-freight-train-catches-fire-masimba"
-description: "Emergency teams have been dispatched to Masimba in Makueni County after a freight train caught fire while travelling along the Nairobi to Mombasa line."
+description: "Kenya Railways freight train catches fire in Masimba Makueni: Emergency teams have been dispatched to Masimba in Makueni County after a freight train caught"
+excerpt: "Smoke Over Masimba: The High Cost of Cutting Corners A freight locomotive erupted in flames near the Masimba passing station early Wednesday"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/WWkXc2b8/0731f7c2e8d0.jpg"
 category: "News"
 tags: ["kenya railways", "makueni county", "train fire", "nairobi mombasa railway", "kenya transport", "emergency response"]
+canonical: "https://zandani.co.ke/article/kenya-railways-freight-train-catches-fire-masimba"
 date: "2026-07-01T19:01:59Z"
 dateModified: "2026-07-01T19:01:59Z"
+focusKeyword: "Kenya Railways freight train catches fire in Masimba Makueni"
 schema: "NewsArticle"
 ---
 
-## Smoke Over Masimba: The High Cost of Cutting Corners
+## Smoke Over Masimba: The High Cost of Cutting Corners Kenya Railways freight train catches fire in Masimba Makueni is the central subject of the update.
 
 A freight locomotive erupted in flames near the Masimba passing station early Wednesday, stalling transit on the Nairobi-Mombasa corridor. While Kenya Railways labels the incident an unforeseen mechanical casualty, the silence surrounding the fleet's maintenance lifecycle suggests a much deeper institutional decay.
 
