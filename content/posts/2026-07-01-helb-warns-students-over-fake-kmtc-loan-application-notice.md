@@ -1,18 +1,20 @@
 ---
 title: "HELB warns students over fake KMTC loan application notice"
 slug: "helb-warns-students-over-fake-kmtc-loan-application-notice"
-description: "The Higher Education Loans Board has dismissed a viral notice regarding KMTC loan dates, urging students to avoid scams and follow official portal updates."
+description: "HELB warns students over fake KMTC loan application notice: The Higher Education Loans Board has dismissed a viral notice regarding KMTC loan dates, urging"
+excerpt: "Protecting Your Education Funding from Digital Scams The Higher Education Loans Board has flagged a viral notice circulating on social media"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Q3j9nLSD/ef8853b3e06a.jpg"
 category: "News"
 tags: ["helb", "kmtc", "student loans", "kenya education", "fraud alert", "news"]
+canonical: "https://zandani.co.ke/article/helb-warns-students-over-fake-kmtc-loan-application-notice"
 date: "2026-07-01T13:36:27Z"
 dateModified: "2026-07-01T13:36:27Z"
+focusKeyword: "HELB warns students over fake KMTC loan application notice"
 schema: "NewsArticle"
 ---
 
-## Protecting Your Education Funding from Digital Scams
+## Protecting Your Education Funding from Digital Scams HELB warns students over fake KMTC loan application notice is the central subject of the update.
 
 The Higher Education Loans Board has flagged a viral notice circulating on social media regarding 2026/27 Kenya Medical Training College application windows as entirely fake. As students rush to secure financing, scammers are weaponizing this anxiety to harvest personal financial data.
 
