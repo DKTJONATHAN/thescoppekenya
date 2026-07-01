@@ -281,10 +281,10 @@
     "e41ff85b7db217e240b3d168105c777d",
     "c675e0a64894fb7da7cfe39c26d03025",
     "006a0169002961595649836cd2491aae",
-    "ad5253daf8692354d3653b8d05d5c8b8"
+    "ad5253daf8692354d3653b8d05d5c8b8",
+    "675cea8b65ed0d6507834f165a205726"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Profile Beat",
     "Explainer",
     "Trend Take",
@@ -313,10 +313,10 @@
     "Trend Take",
     "Explainer",
     "Profile Beat",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
-    "myth_vs_fact|autograph-signing|Profile Beat",
     "money_follow|The Bachelor|Explainer",
     "story_progression|reality television|Reaction Round-up",
     "story_progression|Britain's Got Talent|Trend Take",
@@ -395,6 +395,7 @@
     "winners_losers|James Bond|Trend Take",
     "story_progression|na|Explainer",
     "timeline_shift|na|Profile Beat",
-    "policy_gap|Storage Wars|Reaction Round-up"
+    "policy_gap|Storage Wars|Reaction Round-up",
+    "myth_vs_fact|Television series|Trend Take"
   ]
 }
