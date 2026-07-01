@@ -1,18 +1,20 @@
 ---
 title: "Agave Affair Festival to Redefine Tequila Culture in Nairobi"
 slug: "agave-affair-festival-redefines-tequila-culture-nairobi"
-description: "The Agave Affair at KICC aims to change how Kenyans consume spirits by moving from party shots to premium appreciation of tequila and mezcal."
+description: "Agave Affair Festival to Redefine Tequila Culture in Nairobi: The Agave Affair at KICC aims to change how Kenyans consume spirits by moving from party shots to"
+excerpt: "The Quiet Evolution of the Nairobi Glass Nairobi’s nightlife is undergoing a fundamental transformation. The era defined by the abrasive bur"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/4xjtQZH/83c2846a2967.jpg"
 category: "Gossip"
 tags: ["nairobi events", "tequila", "kicc", "kenyan lifestyle", "spirits industry", "agave affair"]
+canonical: "https://zandani.co.ke/article/agave-affair-festival-redefines-tequila-culture-nairobi"
 date: "2026-07-01T11:34:24Z"
 dateModified: "2026-07-01T11:34:24Z"
+focusKeyword: "Agave Affair Festival to Redefine Tequila Culture in Nairobi"
 schema: "NewsArticle"
 ---
 
-## The Quiet Evolution of the Nairobi Glass
+## The Quiet Evolution of the Nairobi Glass Agave Affair Festival to Redefine Tequila Culture in Nairobi is the central subject of the update.
 
 Nairobi’s nightlife is undergoing a fundamental transformation. The era defined by the abrasive burn of a tequila shot, chased quickly by salt and a lime wedge, is rapidly losing its grip on the city. A refined movement is taking hold within our premium lounges, driven by a growing segment of society weary of the shallow, binge-heavy habits of the past.
 
