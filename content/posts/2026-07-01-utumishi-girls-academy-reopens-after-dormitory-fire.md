@@ -1,18 +1,20 @@
 ---
 title: "Utumishi Girls Academy Reopens Following Fatal Dormitory Fire"
 slug: "utumishi-girls-academy-reopens-after-dormitory-fire"
-description: "Utumishi Girls Academy resumes operations in phases on July 2 under new safety protocols after a tragic fire claimed 16 lives in May."
+description: "Utumishi Girls Academy Reopens Following Fatal Dormitory Fire: Utumishi Girls Academy resumes operations in phases on July 2 under new safety protocols after a"
+excerpt: "Safety Scrutiny as Utumishi Girls Academy Reopens Utumishi Girls Academy resumes operations tomorrow, July 2, with a phased intake following"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://images.unsplash.com/photo-1630241466166-22e43156d8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NjY1ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MDEyNDN8&ixlib=rb-4.1.0&q=80&w=1080"
 category: "Gossip"
 tags: ["kenya news", "education", "school safety", "utumishi girls academy", "ministry of education"]
+canonical: "https://zandani.co.ke/article/utumishi-girls-academy-reopens-after-dormitory-fire"
 date: "2026-07-01T10:10:00Z"
 dateModified: "2026-07-01T10:10:00Z"
+focusKeyword: "Utumishi Girls Academy Reopens Following Fatal Dormitory Fire"
 schema: "NewsArticle"
 ---
 
-## Safety Scrutiny as Utumishi Girls Academy Reopens
+## Safety Scrutiny as Utumishi Girls Academy Reopens Utumishi Girls Academy Reopens Following Fatal Dormitory Fire is the central subject of the update.
 
 Utumishi Girls Academy resumes operations tomorrow, July 2, with a phased intake following the May 28 dormitory fire that claimed 16 lives. This return marks a critical compliance test for the Ministry of Education as it attempts to reconcile boarding school infrastructure with updated safety regulations.
 
