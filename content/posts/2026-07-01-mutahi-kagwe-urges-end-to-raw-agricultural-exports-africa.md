@@ -1,18 +1,20 @@
 ---
 title: "Mutahi Kagwe Urges End to Raw Agricultural Exports in Africa"
 slug: "mutahi-kagwe-urges-end-to-raw-agricultural-exports-africa"
-description: "Cabinet Secretary Mutahi Kagwe is calling for an end to raw agricultural exports to boost industrialization and local job creation across the continent."
+description: "Mutahi Kagwe Urges End to Raw Agricultural Exports in Africa: Cabinet Secretary Mutahi Kagwe is calling for an end to raw agricultural exports to boost"
+excerpt: "The Poverty Trap of Exporting Raw Potential Farmers in Murang'a and Kericho are tired of watching their hard earned harvests travel thousand"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/DH4q6WSh/c6e97f81a6f7.jpg"
 category: "News"
 tags: ["kenya", "agriculture", "mutahi kagwe", "value addition", "trade policy", "industrialization"]
+canonical: "https://zandani.co.ke/article/mutahi-kagwe-urges-end-to-raw-agricultural-exports-africa"
 date: "2026-07-01T08:52:20Z"
 dateModified: "2026-07-01T08:52:20Z"
+focusKeyword: "Mutahi Kagwe Urges End to Raw Agricultural Exports in Africa"
 schema: "NewsArticle"
 ---
 
-## The Poverty Trap of Exporting Raw Potential
+## The Poverty Trap of Exporting Raw Potential Mutahi Kagwe Urges End to Raw Agricultural Exports in Africa is the central subject of the update.
 
 Farmers in Murang'a and Kericho are tired of watching their hard-earned harvests travel thousands of kilometers only to return in fancy retail packaging that costs ten times more than the raw product they sold. While officials speak of industrialization, the reality on the ground remains a cycle where foreign processors capture the vast majority of the value chain, leaving local producers to survive on the smallest margins of the global agricultural trade.
 
