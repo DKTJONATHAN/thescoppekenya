@@ -1,18 +1,20 @@
 ---
 title: "Thomas Tuchel faces defensive crisis ahead of England vs DR Congo"
 slug: "thomas-tuchel-england-defensive-crisis-world-cup-dr-congo"
-description: "England prepares for their World Cup knockout match against DR Congo in Atlanta with key defenders sidelined due to mounting injury concerns."
+description: "Thomas Tuchel faces defensive crisis ahead of England vs DR Congo: England prepares for their World Cup knockout match against DR Congo in Atlanta with key"
+excerpt: "England Faces Defensive Shortages in Atlanta Showdown England prepares for their Round of 32 matchup against DR Congo at the Atlanta Stadium"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/XZ4Tf7ZR/0f6dcbc846a4.jpg"
 category: "Sports"
 tags: ["world cup", "england football", "dr congo", "thomas tuchel", "football news"]
+canonical: "https://zandani.co.ke/article/thomas-tuchel-england-defensive-crisis-world-cup-dr-congo"
 date: "2026-07-01T13:13:35Z"
 dateModified: "2026-07-01T13:13:35Z"
+focusKeyword: "Thomas Tuchel faces defensive crisis ahead of England vs DR Congo"
 schema: "NewsArticle"
 ---
 
-## England Faces Defensive Shortages in Atlanta Showdown
+## England Faces Defensive Shortages in Atlanta Showdown Thomas Tuchel faces defensive crisis ahead of England vs DR Congo is the central subject of the update.
 
 England prepares for their Round of 32 matchup against DR Congo at the Atlanta Stadium while managing a depleted defensive rotation. Manager Thomas Tuchel must address significant personnel gaps that threaten the stability of a squad heralded as one of the most talented in tournament history.
 
