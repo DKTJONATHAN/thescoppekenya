@@ -1,18 +1,20 @@
 ---
 title: "Vodacom Finalizes Acquisition of Majority Stake in Safaricom"
 slug: "vodacom-finalizes-acquisition-of-majority-stake-in-safaricom"
-description: "Vodacom has completed the acquisition of an additional 20 percent interest in Safaricom, bringing its total ownership to 54.94 percent after overcoming legal hurdles."
+description: "Vodacom Finalizes Acquisition of Majority Stake in Safaricom: Vodacom has completed the acquisition of an additional 20 percent interest in Safaricom, bringing"
+excerpt: "Consolidating Regional Influence: Vodacom’s Strategic Rise Vodacom Group has finalized the purchase of an additional 20 percent interest in"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/7dJCWMqD/a5a69f9648d4.png"
 category: "Business"
 tags: ["safaricom", "vodacom", "telecommunications", "nairobi securities exchange", "business news", "kenya economy"]
+canonical: "https://zandani.co.ke/article/vodacom-finalizes-acquisition-of-majority-stake-in-safaricom"
 date: "2026-07-01T08:55:08Z"
 dateModified: "2026-07-01T08:55:08Z"
+focusKeyword: "Vodacom Finalizes Acquisition of Majority Stake in Safaricom"
 schema: "NewsArticle"
 ---
 
-## Consolidating Regional Influence: Vodacom’s Strategic Rise
+## Consolidating Regional Influence: Vodacom’s Strategic Rise Vodacom Finalizes Acquisition of Majority Stake in Safaricom is the central subject of the update.
 
 Vodacom Group has finalized the purchase of an additional 20 percent interest in Safaricom. This transaction brings its aggregate stake to 54.94 percent, concluding a six-month period of regulatory uncertainty. By securing this majority position, the organization has effectively unified the governance of East Africa’s most vital digital financial network under a singular corporate strategy.
 
