@@ -1,18 +1,20 @@
 ---
 title: "NTSA Mandates Physical KCB Payments for Traffic Fines in Kenya"
 slug: "ntsa-mandates-physical-kcb-payments-for-traffic-fines"
-description: "NTSA has introduced a surveillance network to monitor traffic violations. Motorists must pay fines at KCB branches to avoid SMS scams."
+description: "NTSA Mandates Physical KCB Payments for Traffic Fines in Kenya: NTSA has introduced a surveillance network to monitor traffic violations. Motorists must pay"
+excerpt: "NTSA Shifts Traffic Enforcement to Physical Banking Channels The National Transport and Safety Authority has mandated that all traffic fine"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/4R1zWtJD/e6e7d0fea4ba.webp"
 category: "Technology"
 tags: ["ntsa", "kenya traffic news", "kcb bank", "road safety", "transport authority"]
+canonical: "https://zandani.co.ke/article/ntsa-mandates-physical-kcb-payments-for-traffic-fines"
 date: "2026-07-01T13:42:19Z"
 dateModified: "2026-07-01T13:42:19Z"
+focusKeyword: "NTSA Mandates Physical KCB Payments for Traffic Fines in Kenya"
 schema: "NewsArticle"
 ---
 
-## NTSA Shifts Traffic Enforcement to Physical Banking Channels
+## NTSA Shifts Traffic Enforcement to Physical Banking Channels NTSA Mandates Physical KCB Payments for Traffic Fines in Kenya is the central subject of the update.
 
 The National Transport and Safety Authority has mandated that all traffic fine payments must now be processed at KCB branches, effectively deactivating online payment portals to neutralize a growing wave of SMS-based financial syndicates targeting Kenyan motorists.
 
