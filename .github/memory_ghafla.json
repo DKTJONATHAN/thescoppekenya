@@ -244,10 +244,10 @@
     "9925b88006d1db73437c83e45c2b9ef6",
     "24bace1becbd06aa1f508560a0fefec1",
     "e261edc61594e125bdb23234ba97c8ae",
-    "44522d3544fb1eb5d918771b2293842e"
+    "44522d3544fb1eb5d918771b2293842e",
+    "5c3effce91f40ab4f1a71638084cee35"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Hard News Lead",
     "Receipts Piece",
     "Profile Beat",
@@ -276,10 +276,10 @@
     "Hard News Lead",
     "Profile Beat",
     "Trend Take",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "impact_on_citizens|Kenya Power|Profile Beat",
     "accountability|economic hardship|Reaction Round-up",
     "policy_gap|Gen Z|Trend Take",
     "winners_losers|Jubilee Party|Hard News Lead",
@@ -358,6 +358,7 @@
     "winners_losers|Nairobi|Hard News Lead",
     "winners_losers|Kenya Power|Profile Beat",
     "timeline_shift|King Kaka|Trend Take",
-    "winners_losers|Kenya Power|Receipts Piece"
+    "winners_losers|Kenya Power|Receipts Piece",
+    "policy_gap|Utumishi Girls Academy|Hard News Lead"
   ]
 }
