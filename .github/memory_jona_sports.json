@@ -229,10 +229,10 @@
     "baf776067cb0322b0ce0051b6bb7c31f",
     "d38a13af134b8713d1fc081c696b9507",
     "8453a97d3f6c24cae0047734c7cb33eb",
-    "75d8b3dd51f45598b60254b606144771"
+    "75d8b3dd51f45598b60254b606144771",
+    "4bae8c63ff83eecb2b674d349d9cc0bb"
   ],
   "style_history": [
-    "Match Report",
     "Tactical Take",
     "Player Profile Beat",
     "Cynical Pundit",
@@ -261,10 +261,10 @@
     "Player Profile Beat",
     "Tactical Take",
     "Cynical Pundit",
-    "Match Report"
+    "Match Report",
+    "Stat Story"
   ],
   "angle_history": [
-    "policy_gap|football|Tactical Take",
     "myth_vs_fact|Premier League|Cynical Pundit",
     "money_follow|EFL|Match Report",
     "money_follow|Premier League|Stat Story",
@@ -343,6 +343,7 @@
     "story_progression|World Cup 2026|Player Profile Beat",
     "policy_gap|Steve Clarke|Tactical Take",
     "money_follow|football|Cynical Pundit",
-    "timeline_shift|FIFA World Cup 2026|Match Report"
+    "timeline_shift|FIFA World Cup 2026|Match Report",
+    "money_follow|World Cup|Stat Story"
   ]
 }
