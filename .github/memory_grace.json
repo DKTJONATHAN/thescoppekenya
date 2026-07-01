@@ -183,10 +183,10 @@
     "ce225db83b07e9f660a03c306f3f6519",
     "863ac5029d16b7ff995ffb49f935a65c",
     "4f6b4c729e843fba0ddb0e579ed0b967",
-    "9ce45c656a3e6add767b0275f1d0fd9f"
+    "9ce45c656a3e6add767b0275f1d0fd9f",
+    "6d458a724c8dd562911fae43a8b4dbab"
   ],
   "style_history": [
-    "Markets Report",
     "SME Angle",
     "Backgrounder",
     "Explainer",
@@ -215,10 +215,10 @@
     "Explainer",
     "Markets Report",
     "SME Angle",
-    "Power Accountability"
+    "Power Accountability",
+    "Backgrounder"
   ],
   "angle_history": [
-    "winners_losers|oil refinery|SME Angle",
     "money_follow|telecommunications|Markets Report",
     "impact_on_citizens|New KCC|Explainer",
     "policy_gap|France-Africa Summit|Backgrounder",
@@ -297,6 +297,7 @@
     "policy_gap|economic indicators|Explainer",
     "story_progression|KRA|Markets Report",
     "winners_losers|Absa Bank Kenya|SME Angle",
-    "money_follow|fuel trade|Power Accountability"
+    "money_follow|fuel trade|Power Accountability",
+    "story_progression|Vodacom|Backgrounder"
   ]
 }
