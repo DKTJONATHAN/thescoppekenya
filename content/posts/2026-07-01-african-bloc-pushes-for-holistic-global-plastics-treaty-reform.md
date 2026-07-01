@@ -1,18 +1,20 @@
 ---
 title: "African Bloc Pushes for Holistic Global Plastics Treaty Reform"
 slug: "african-bloc-pushes-for-holistic-global-plastics-treaty-reform"
-description: "African regional institutions are advocating for a human-centric global plastics treaty that emphasizes chemical transparency and production controls."
+description: "African Bloc Pushes for Holistic Global Plastics Treaty Reform: African regional institutions are advocating for a human-centric global plastics treaty that"
+excerpt: "The Rivers That Feed the Tide During the mid 1970s, the fever for post independence industrial growth in East Africa pushed environmental co"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/MkCXsST8/6ea143cd8eb4.jpg"
 category: "Opinions"
 tags: ["environment", "plastics treaty", "african union", "environmental policy", "ocean conservation", "kenya news"]
+canonical: "https://zandani.co.ke/article/african-bloc-pushes-for-holistic-global-plastics-treaty-reform"
 date: "2026-07-01T12:17:40Z"
 dateModified: "2026-07-01T12:17:40Z"
+focusKeyword: "African Bloc Pushes for Holistic Global Plastics Treaty Reform"
 schema: "NewsArticle"
 ---
 
-## The Rivers That Feed the Tide
+## The Rivers That Feed the Tide African Bloc Pushes for Holistic Global Plastics Treaty Reform is the central subject of the update.
 
 During the mid-1970s, the fever for post-independence industrial growth in East Africa pushed environmental concerns to the periphery. Ecological degradation caused by riverine pollution was dismissed as a minor byproduct of modernization. Decades later, the African Union and its regional counterparts are attempting to address this oversight. They are currently championing a global plastics treaty that identifies the continent’s interior, rather than just its beaches, as the primary origin of the maritime crisis.
 
