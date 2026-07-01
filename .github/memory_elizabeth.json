@@ -145,10 +145,10 @@
     "72afa995c17378b0b2480d5f36820410",
     "780a5624335cc38536662383b695794d",
     "c086b8a743c7f035000b353c8ec3becb",
-    "cc407cc66182bfec3bb16f26176e8e50"
+    "cc407cc66182bfec3bb16f26176e8e50",
+    "02c417a35183ff3546bcd49ff9d12790"
   ],
   "style_history": [
-    "Africa Angle",
     "Explainer",
     "Backgrounder",
     "Critical Take",
@@ -177,7 +177,8 @@
     "Critical Take",
     "Explainer",
     "Africa Angle",
-    "Backgrounder"
+    "Backgrounder",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -241,6 +242,7 @@
     "accountability|fintech|Critical Take",
     "story_progression|Windows 10|Explainer",
     "money_follow|banking|Africa Angle",
-    "money_follow|automotive manufacturing|Backgrounder"
+    "money_follow|automotive manufacturing|Backgrounder",
+    "policy_gap|NTSA|Hard News Lead"
   ]
 }
