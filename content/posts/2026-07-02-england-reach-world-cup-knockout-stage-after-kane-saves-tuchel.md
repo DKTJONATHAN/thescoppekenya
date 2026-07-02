@@ -1,18 +1,20 @@
 ---
 title: "England reach World Cup knockout stage after Kane saves Tuchel"
 slug: "england-reach-world-cup-knockout-stage-after-kane-saves-tuchel"
-description: "England advanced to the round of 16 after Harry Kane secured a late victory over DR Congo, highlighting ongoing tactical concerns for Thomas Tuchel."
+description: "England reach World Cup knockout stage after Kane saves Tuchel: England advanced to the round of 16 after Harry Kane secured a late victory over DR Congo,"
+excerpt: "The Illusion of a Tactical Masterclass England’s path to the round of 16 is officially secured following a narrow, late game victory against"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/9kP3ZnzW/94c9167d76e8.jpg"
 category: "Sports"
 tags: ["world cup", "england football", "harry kane", "thomas tuchel", "international football", "za ndani sports"]
+canonical: "https://zandani.co.ke/article/england-reach-world-cup-knockout-stage-after-kane-saves-tuchel"
 date: "2026-07-02T12:23:56Z"
 dateModified: "2026-07-02T12:23:56Z"
+focusKeyword: "England reach World Cup knockout stage after Kane saves Tuchel"
 schema: "NewsArticle"
 ---
 
-## The Illusion of a Tactical Masterclass
+## The Illusion of a Tactical Masterclass England reach World Cup knockout stage after Kane saves Tuchel is the central subject of the update.
 
 England’s path to the round of 16 is officially secured following a narrow, late-game victory against DR Congo. However, the mood surrounding the camp remains strangely subdued. While the result is recorded in the books as a win, the performance itself suggests a side riding on the coattails of individual talent rather than one grounded in a cohesive tactical framework. Thomas Tuchel faces mounting pressure as his team continues to function more as a collection of high-priced assets than a unified, disciplined machine.
 
