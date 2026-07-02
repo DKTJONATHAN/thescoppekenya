@@ -14,7 +14,7 @@ focusKeyword: "'Why Actors Decline Movie Sequels: Creative Differences & Dispute
 schema: "NewsArticle"
 ---
 
-## When Stars Walk Away: Why Actors Decline Movie Sequels "Why Actors Decline Movie Sequels: Creative Differences & Dispute is the central subject of the update.
+## When Stars Walk Away: Why Actors Decline Movie Sequels "Why Actors Decline Movie Sequels: Creative Differences & Dispute is the central subject of the update. 'Why Actors Decline Movie Sequels: Creative Differences & Dispute is the central subject of the update.
 
 Movie sequels are a given in today's cinema, but sometimes, a familiar face is missing from the cast. This situation leaves many fans curious: why do actors choose to leave successful roles, and how does that affect the beloved stories they've come to know?
 

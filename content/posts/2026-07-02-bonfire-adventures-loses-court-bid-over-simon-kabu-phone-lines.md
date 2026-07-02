@@ -1,18 +1,20 @@
 ---
 title: "Bonfire Adventures loses court bid to control Simon Kabu lines"
 slug: "bonfire-adventures-loses-court-bid-over-simon-kabu-phone-lines"
-description: "The High Court rejected a request by Bonfire Adventures to secure 48 Safaricom lines registered under Simon Kabu personally."
+description: "Bonfire Adventures loses court bid to control Simon Kabu lines: The High Court rejected a request by Bonfire Adventures to secure 48 Safaricom lines registered"
+excerpt: "Digital Asset Governance: The Billion Shilling Liability The High Court of Kenya recently dismissed an application by Bonfire Adventures see"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/W4bYS87T/3b5ab5085eb2.png"
 category: "Business"
 tags: ["bonfire adventures", "simon kabu", "safaricom", "kenya business news", "corporate law", "kenya"]
+canonical: "https://zandani.co.ke/article/bonfire-adventures-loses-court-bid-over-simon-kabu-phone-lines"
 date: "2026-07-02T08:22:03Z"
 dateModified: "2026-07-02T08:22:03Z"
+focusKeyword: "Bonfire Adventures loses court bid to control Simon Kabu lines"
 schema: "NewsArticle"
 ---
 
-## Digital Asset Governance: The Billion-Shilling Liability
+## Digital Asset Governance: The Billion-Shilling Liability Bonfire Adventures loses court bid to control Simon Kabu lines is the central subject of the update.
 
 The High Court of Kenya recently dismissed an application by Bonfire Adventures seeking to secure 48 Safaricom lines currently registered to Simon Kabu. This judicial outcome exposes a fundamental risk for domestic companies that rely on telecommunications infrastructure registered to individuals rather than the corporate entity itself. The ruling highlights a recurring failure in the local startup sector, where digital assets are frequently managed as personal extensions of the founder rather than as core company property. By failing to migrate subscriber registration to the business entity after incorporation, the firm now faces a significant financial challenge: a demand for KSh 1.868 billion in historical usage fees and a continuous monthly rental obligation of KSh 14.4 million. Because the court found no legal basis to grant injunctive relief, the case serves as a definitive reminder that legal ownership of digital lines resides solely with the individual named in the official registry.
 
