@@ -294,10 +294,10 @@
     "d37a20b9fb8e986a2ba7c2051d2d1c57",
     "ec38f22ceef8582bf155df6bfa83ac45",
     "db5b231b5e1775c8385104fe65a928ad",
-    "68fd1c5f77f644c36fc6a8560d599514"
+    "68fd1c5f77f644c36fc6a8560d599514",
+    "afbd656208c9d369e59757d6950459e2"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Power Accountability",
     "Hard News Lead",
     "Explainer",
@@ -326,10 +326,10 @@
     "Reaction & Voices",
     "Explainer",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "winners_losers|Nairobi County|Reaction & Voices",
     "policy_gap|Kenya|Hard News Lead",
     "accountability|Ebola|Power Accountability",
     "story_progression|COTU|Context Backgrounder",
@@ -408,6 +408,7 @@
     "money_follow|Kenya|Reaction & Voices",
     "myth_vs_fact|HELB|Explainer",
     "accountability|Kenya Railways|Power Accountability",
-    "accountability|Kenya|Hard News Lead"
+    "accountability|Kenya|Hard News Lead",
+    "story_progression|KMPDU|Reaction & Voices"
   ]
 }
