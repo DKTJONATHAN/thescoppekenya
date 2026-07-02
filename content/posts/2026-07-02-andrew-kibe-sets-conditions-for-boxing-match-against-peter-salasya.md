@@ -1,18 +1,20 @@
 ---
 title: "Andrew Kibe Sets Conditions for Boxing Match Against Peter Salasya"
 slug: "andrew-kibe-sets-conditions-for-boxing-match-against-peter-salasya"
-description: "Andrew Kibe has accepted a boxing challenge from MP Peter Salasya provided that a legal contract is signed for a December fight date."
+description: "Andrew Kibe Sets Conditions for Boxing Match Against Peter Salasy: Andrew Kibe has accepted a boxing challenge from MP Peter Salasya provided that a legal"
+excerpt: "From Trash Talk to a Multi Million Shilling Pay Per View The potential collision between Andrew Kibe and Peter Salasya has moved past baseme"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://images.unsplash.com/photo-1735837844277-e1206881f9c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NjY1ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5ODUyNDd8&ixlib=rb-4.1.0&q=80&w=1080"
 category: "Gossip"
 tags: ["oga obinna", "andrew kibe", "peter salasya", "kenyan celebrities", "vurugu 3", "boxing"]
+canonical: "https://zandani.co.ke/article/andrew-kibe-sets-conditions-for-boxing-match-against-peter-salasya"
 date: "2026-07-02T09:30:40Z"
 dateModified: "2026-07-02T09:30:40Z"
+focusKeyword: "Andrew Kibe Sets Conditions for Boxing Match Against Peter Salasy"
 schema: "NewsArticle"
 ---
 
-## From Trash Talk to a Multi-Million Shilling Pay-Per-View
+## From Trash Talk to a Multi-Million Shilling Pay-Per-View Andrew Kibe Sets Conditions for Boxing Match Against Peter Salasy is the central subject of the update.
 
 The potential collision between Andrew Kibe and Peter Salasya has moved past basement-level Twitter trolling into a formal, structured business negotiation. With Oga Obinna pushing for a lucrative purse, the prospect of a high-stakes ring showdown is looking less like a meme and more like a premier commercial event.
 
