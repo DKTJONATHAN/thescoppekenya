@@ -284,10 +284,10 @@
     "ad5253daf8692354d3653b8d05d5c8b8",
     "675cea8b65ed0d6507834f165a205726",
     "6bb8ae3a9f17d36000ad8b98ae68c29d",
-    "8db80d16321fc44a7444267370f879a1"
+    "8db80d16321fc44a7444267370f879a1",
+    "dd0354d3f0d00302ce224b186fac1876"
   ],
   "style_history": [
-    "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
@@ -316,10 +316,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Explainer",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "story_progression|Britain's Got Talent|Trend Take",
     "story_progression|HBO|Hard News Lead",
     "story_progression|animal activism|Profile Beat",
     "policy_gap|The Secret Lives of Mormon Wives|Explainer",
@@ -398,6 +398,7 @@
     "policy_gap|Storage Wars|Reaction Round-up",
     "myth_vs_fact|Television series|Trend Take",
     "story_progression|na|Explainer",
-    "accountability|Melissa Gilbert|Profile Beat"
+    "accountability|Melissa Gilbert|Profile Beat",
+    "policy_gap|Erin Moriarty|Hard News Lead"
   ]
 }
