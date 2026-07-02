@@ -1,15 +1,20 @@
 ---
 title: "Iraola requests Tillman signing amid Curtis Jones Inter talks"
 slug: "iraola-requests-tillman-signing-amid-curtis-jones-inter-talks"
+description: "Iraola requests Tillman signing amid Curtis Jones Inter talks: Liverpool's Costly Rebuild: Tillman's Sky High Price, Jones' Anfield Exit New Liverpool boss"
+excerpt: "Liverpool's Costly Rebuild: Tillman's Sky High Price, Jones' Anfield Exit New Liverpool boss Andoni Iraola has wasted no time demanding a st"
 author: "Sports Desk"
 image: "https://i.ibb.co/LdWkvzWS/902b561cc1db.jpg"
 category: "Global News"
+tags: ["iraola requests tillman signing amid curtis jones inter talks", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/iraola-requests-tillman-signing-amid-curtis-jones-inter-talks"
 date: "2026-07-02T16:54:01Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-07-02T16:54:01Z"
+focusKeyword: "Iraola requests Tillman signing amid Curtis Jones Inter talks"
 schema: "NewsArticle"
 ---
-## Liverpool's Costly Rebuild: Tillman's Sky-High Price, Jones' Anfield Exit
+
+## Liverpool's Costly Rebuild: Tillman's Sky-High Price, Jones' Anfield Exit Iraola requests Tillman signing amid Curtis Jones Inter talks is the central subject of the update.
 
 New Liverpool boss Andoni Iraola has wasted no time demanding a staggering €50 million-plus outlay for Malik Tillman, even as homegrown talent Curtis Jones actively pushes for a €20 million move to Inter Milan. This summer is rapidly shaping up as a chaotic and expensive transition for the Anfield club.
 

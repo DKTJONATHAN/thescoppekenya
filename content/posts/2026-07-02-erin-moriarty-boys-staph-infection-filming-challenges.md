@@ -14,7 +14,7 @@ focusKeyword: "'Erin Moriarty Filmed 'The Boys' Intimate Scene With Severe Staph
 schema: "NewsArticle"
 ---
 
-## Erin Moriarty The Boys Set: Health Protocols Under Scrutiny Following Staph Ordeal "Erin Moriarty Filmed 'The Boys' Intimate Scene With Severe Staph is the central subject of the update.
+## Erin Moriarty The Boys Set: Health Protocols Under Scrutiny Following Staph Ordeal "Erin Moriarty Filmed 'The Boys' Intimate Scene With Severe Staph is the central subject of the update. 'Erin Moriarty Filmed 'The Boys' Intimate Scene With Severe Staph is the central subject of the update.
 
 Actress Erin Moriarty has disclosed filming a pivotal intimate scene for Prime Video's 'The Boys' season 2 with a severe, debilitating staph infection. Her experience brings into sharp focus the entertainment industry's often-lax health and safety standards for performers, sparking conversations on global actor welfare.
 
