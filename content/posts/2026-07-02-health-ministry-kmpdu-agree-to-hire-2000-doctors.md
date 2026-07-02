@@ -1,18 +1,20 @@
 ---
 title: "Ministry of Health and KMPDU Agree to Hire 2,000 New Doctors"
 slug: "health-ministry-kmpdu-agree-to-hire-2000-doctors"
-description: "The Ministry of Health and KMPDU have reached a deal to recruit 2,000 new doctors, settle salary arrears, and initiate talks for the next labor agreement."
+description: "Ministry of Health and KMPDU Agree to Hire 2,000 New Doctors: The Ministry of Health and KMPDU have reached a deal to recruit 2,000 new doctors, settle salary"
+excerpt: "A Ceasefire Born of Skepticism For many doctors walking the wards in public hospitals today, the promise of 2,000 new hires feels less like"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Jj78bLB7/110430f01830.jpg"
 category: "News"
 tags: ["kmpdu", "ministry of health", "kenya healthcare", "medical interns", "cba negotiations", "aden duale"]
+canonical: "https://zandani.co.ke/article/health-ministry-kmpdu-agree-to-hire-2000-doctors"
 date: "2026-07-02T18:28:37Z"
 dateModified: "2026-07-02T18:28:37Z"
+focusKeyword: "Ministry of Health and KMPDU Agree to Hire 2,000 New Doctors"
 schema: "NewsArticle"
 ---
 
-## A Ceasefire Born of Skepticism
+## A Ceasefire Born of Skepticism Ministry of Health and KMPDU Agree to Hire 2,000 New Doctors is the central subject of the update.
 
 For many doctors walking the wards in public hospitals today, the promise of 2,000 new hires feels less like a breakthrough and more like a familiar script they have read too many times before. While official corridors in Nairobi celebrate a new pact, the corridors of Kenyatta National Hospital and county facilities across the country remain filled with a heavy, quiet doubt that no government memo can easily erase.
 
