@@ -1,18 +1,20 @@
 ---
 title: "High Court Invalidates Sections of Cybercrimes Amendment Act"
 slug: "high-court-invalidates-sections-of-cybercrimes-amendment-act"
-description: "The Kenyan High Court has struck down clauses in the Cybercrimes Act that allowed for website blocking and criminalized suicide-related communication."
+description: "High Court Invalidates Sections of Cybercrimes Amendment Act: The Kenyan High Court has struck down clauses in the Cybercrimes Act that allowed for website"
+excerpt: "Restoring Digital Protections: Understanding the High Court Ruling The High Court of Kenya has delivered a significant blow to the 2025 Cybe"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/nNFy1yfx/24ee727ca58b.jpg"
 category: "Technology"
 tags: ["kenya", "cybercrime", "digital rights", "judiciary", "censorship", "nc4"]
+canonical: "https://zandani.co.ke/article/high-court-invalidates-sections-of-cybercrimes-amendment-act"
 date: "2026-07-02T13:08:50Z"
 dateModified: "2026-07-02T13:08:50Z"
+focusKeyword: "High Court Invalidates Sections of Cybercrimes Amendment Act"
 schema: "NewsArticle"
 ---
 
-## Restoring Digital Protections: Understanding the High Court Ruling
+## Restoring Digital Protections: Understanding the High Court Ruling High Court Invalidates Sections of Cybercrimes Amendment Act is the central subject of the update.
 
 The High Court of Kenya has delivered a significant blow to the 2025 Cybercrimes Amendment Act, invalidating key sections that previously allowed the government to unilaterally shut down websites and criminalize certain online expressions. By curbing the state's reach, this decision reclaims the digital landscape for the public, mandating that judicial oversight must now replace administrative convenience. This ruling serves as a vital safeguard for internet freedom, effectively recalibrating the relationship between government authority and the constitutional rights of Kenyan citizens.
 
