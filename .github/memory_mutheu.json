@@ -283,10 +283,10 @@
     "006a0169002961595649836cd2491aae",
     "ad5253daf8692354d3653b8d05d5c8b8",
     "675cea8b65ed0d6507834f165a205726",
-    "6bb8ae3a9f17d36000ad8b98ae68c29d"
+    "6bb8ae3a9f17d36000ad8b98ae68c29d",
+    "8db80d16321fc44a7444267370f879a1"
   ],
   "style_history": [
-    "Explainer",
     "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
@@ -315,10 +315,10 @@
     "Profile Beat",
     "Reaction Round-up",
     "Trend Take",
-    "Explainer"
+    "Explainer",
+    "Profile Beat"
   ],
   "angle_history": [
-    "story_progression|reality television|Reaction Round-up",
     "story_progression|Britain's Got Talent|Trend Take",
     "story_progression|HBO|Hard News Lead",
     "story_progression|animal activism|Profile Beat",
@@ -397,6 +397,7 @@
     "timeline_shift|na|Profile Beat",
     "policy_gap|Storage Wars|Reaction Round-up",
     "myth_vs_fact|Television series|Trend Take",
-    "story_progression|na|Explainer"
+    "story_progression|na|Explainer",
+    "accountability|Melissa Gilbert|Profile Beat"
   ]
 }
