@@ -1,18 +1,20 @@
 ---
 title: "Expert Pastoral Advice on Parenting Generation Z in Kenya"
 slug: "pastoral-advice-parenting-generation-z-kenya"
-description: "Pastor Ian Bisset shares eight essential principles to improve communication and build stronger relationships with Gen Z teenagers today."
+description: "Expert Pastoral Advice on Parenting Generation Z in Kenya: Pastor Ian Bisset shares eight essential principles to improve communication and build stronger"
+excerpt: "Bridging the Silence Between Generations Last Tuesday, I found myself in a quiet coffee shop in Nanyuki. Across the room, a father and his t"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/JwrHtshT/f1bec3c15ec7.jpg"
 category: "Opinions"
 tags: ["parenting", "generation z", "youth mentorship", "kenyan families", "parental guidance"]
+canonical: "https://zandani.co.ke/article/pastoral-advice-parenting-generation-z-kenya"
 date: "2026-07-02T11:43:44Z"
 dateModified: "2026-07-02T11:43:44Z"
+focusKeyword: "Expert Pastoral Advice on Parenting Generation Z in Kenya"
 schema: "NewsArticle"
 ---
 
-## Bridging the Silence Between Generations
+## Bridging the Silence Between Generations Expert Pastoral Advice on Parenting Generation Z in Kenya is the central subject of the update.
 
 Last Tuesday, I found myself in a quiet coffee shop in Nanyuki. Across the room, a father and his teenage son sat together, yet they seemed miles apart. The father checked his watch repeatedly, clearly bracing himself to deliver a lecture on academic performance. Meanwhile, the son remained hunched over his smartphone, his thumbs dancing across the screen with a speed that hinted at a complex, private conversation happening in the digital ether. It was a poignant snapshot of a growing, silent divide. We often misread this quietude as simple disrespect, but beneath that glow of the screen lies a desperate search for connection that many authority figures are currently failing to reach.
 
