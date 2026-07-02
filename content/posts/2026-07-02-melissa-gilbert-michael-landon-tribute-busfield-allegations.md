@@ -1,21 +1,20 @@
 ---
-title: "Melissa Gilbert's Michael Landon Tribute After Busfield Allegations
+title: "'Melissa Gilbert's Michael Landon Tribute After Busfield Allegations"
 slug: "melissa-gilbert-michael-landon-tribute-busfield-allegations"
-description: "Melissa Gilbert honors Michael Landon on his death anniversary. Her return to Instagram for this tribute follows child abuse allegations against her husband, Timothy Busfield. Find out more."
+description: "'Melissa Gilbert's Michael Landon Tribute After Busfield Allegati: Melissa Gilbert honors Michael Landon on his death anniversary. Her return to Instagram for"
+excerpt: "Melissa Gilbert's Poignant Return: A Michael Landon Tribute Amidst Personal Turmoil Veteran actress Melissa Gilbert has gracefully re emerge"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/jKxqqKR/d055c0b457a7.jpg"
-og_title: "Melissa Gilbert's Tribute to Michael Landon After Scandal"
-og_description: "Melissa Gilbert shared an emotional tribute to Michael Landon. Her Instagram post comes after deactivating her account due to allegations against her husband."
-focus_keyword: "Melissa Gilbert Michael Landon tribute"
 category: "Entertainment"
 tags: ["melissa gilbert", "michael landon", "little house on prairie", "celebrity tribute", "timothy busfield", "entertainment news", "hollywood"]
+canonical: "https://zandani.co.ke/article/melissa-gilbert-michael-landon-tribute-busfield-allegations"
 date: "2026-07-02T09:46:23Z"
 dateModified: "2026-07-02T09:46:23Z"
+focusKeyword: "'Melissa Gilbert's Michael Landon Tribute After Busfield Allegati"
 schema: "NewsArticle"
 ---
 
-## Melissa Gilbert's Poignant Return: A Michael Landon Tribute Amidst Personal Turmoil
+## Melissa Gilbert's Poignant Return: A Michael Landon Tribute Amidst Personal Turmoil "Melissa Gilbert's Michael Landon Tribute After Busfield Allegati is the central subject of the update.
 
 Veteran actress Melissa Gilbert has gracefully re-emerged on social media, marking her return with a heartfelt tribute to her cherished mentor, Michael Landon. This public step unfolds amidst unsettling allegations against her husband, Timothy Busfield, prompting observers to consider the layers within her carefully crafted public narrative during a challenging time.
 
