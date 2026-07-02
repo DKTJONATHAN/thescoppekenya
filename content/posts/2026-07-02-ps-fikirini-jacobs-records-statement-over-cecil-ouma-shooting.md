@@ -1,18 +1,20 @@
 ---
 title: "PS Fikirini Jacobs records statement over Cecil Ouma shooting"
 slug: "ps-fikirini-jacobs-records-statement-over-cecil-ouma-shooting"
-description: "Youth Affairs PS Fikirini Jacobs is cooperating with police as seven people are summoned following the fatal shooting of youth mobiliser Cecil Ouma."
+description: "PS Fikirini Jacobs records statement over Cecil Ouma shooting: Youth Affairs PS Fikirini Jacobs is cooperating with police as seven people are summoned"
+excerpt: "Scrutiny Intensifies Over State Security Protocols Youth Affairs Principal Secretary Fikirini Jacobs recorded a statement with police on Thu"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/tTxj0LWK/e6130aef20aa.jpg"
 category: "News"
 tags: ["kenya news", "fikirini jacobs", "cecil ouma", "kariokor", "nairobi", "police investigation"]
+canonical: "https://zandani.co.ke/article/ps-fikirini-jacobs-records-statement-over-cecil-ouma-shooting"
 date: "2026-07-02T13:01:43Z"
 dateModified: "2026-07-02T13:01:43Z"
+focusKeyword: "PS Fikirini Jacobs records statement over Cecil Ouma shooting"
 schema: "NewsArticle"
 ---
 
-## Scrutiny Intensifies Over State Security Protocols
+## Scrutiny Intensifies Over State Security Protocols PS Fikirini Jacobs records statement over Cecil Ouma shooting is the central subject of the update.
 
 Youth Affairs Principal Secretary Fikirini Jacobs recorded a statement with police on Thursday regarding the fatal shooting of youth mobiliser Cecil Ouma, an incident that has triggered a formal review of security deployment standards for government officials at public functions.
 
