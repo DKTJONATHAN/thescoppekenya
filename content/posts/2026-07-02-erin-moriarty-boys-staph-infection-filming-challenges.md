@@ -1,21 +1,20 @@
 ---
-title: "Erin Moriarty Filmed 'The Boys' Intimate Scene With Severe Staph
+title: "'Erin Moriarty Filmed 'The Boys' Intimate Scene With Severe Staph"
 slug: "erin-moriarty-boys-staph-infection-filming-challenges"
-description: "Erin Moriarty filmed 'The Boys' intimate scene with a severe staph infection, revealing initial dismissal by production. Learn about her challenging experience and resilience."
+description: "'Erin Moriarty Filmed 'The Boys' Intimate Scene With Severe Staph: Erin Moriarty filmed 'The Boys' intimate scene with a severe staph infection, revealing"
+excerpt: "Erin Moriarty The Boys Set: Health Protocols Under Scrutiny Following Staph Ordeal Actress Erin Moriarty has disclosed filming a pivotal int"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/VcjZ8p6m/44f369e89cf1.jpg"
-og_title: "Erin Moriarty Filmed 'The Boys' Scene While Battling Staph Infection"
-og_description: "Actress Erin Moriarty opens up about filming a difficult scene for 'The Boys' with a severe staph infection and ignored health concerns."
-focus_keyword: "Erin Moriarty The Boys"
 category: "Entertainment"
 tags: ["erin moriarty", "the boys", "staph infection", "celebrity news", "prime video", "entertainment", "filming conditions"]
+canonical: "https://zandani.co.ke/article/erin-moriarty-boys-staph-infection-filming-challenges"
 date: "2026-07-02T16:23:05Z"
 dateModified: "2026-07-02T16:23:05Z"
+focusKeyword: "'Erin Moriarty Filmed 'The Boys' Intimate Scene With Severe Staph"
 schema: "NewsArticle"
 ---
 
-## Erin Moriarty The Boys Set: Health Protocols Under Scrutiny Following Staph Ordeal
+## Erin Moriarty The Boys Set: Health Protocols Under Scrutiny Following Staph Ordeal "Erin Moriarty Filmed 'The Boys' Intimate Scene With Severe Staph is the central subject of the update.
 
 Actress Erin Moriarty has disclosed filming a pivotal intimate scene for Prime Video's 'The Boys' season 2 with a severe, debilitating staph infection. Her experience brings into sharp focus the entertainment industry's often-lax health and safety standards for performers, sparking conversations on global actor welfare.
 
