@@ -306,10 +306,10 @@
     "97f26514a3f8003763e4c43317218e57",
     "8a484d098b47da05d3714ed8049b5a53",
     "81978a29def743719040b99d918442cc",
-    "8e1d40e7eb02f3b9b0adcf8c9a39db4c"
+    "8e1d40e7eb02f3b9b0adcf8c9a39db4c",
+    "80f86ee5adfdb054152e7557a4055f38"
   ],
   "style_history": [
-    "Trend Take",
     "Hard News Lead",
     "Profile Beat",
     "Reaction Round-up",
@@ -338,10 +338,10 @@
     "Reaction Round-up",
     "Receipts Piece",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "money_follow|Bongo Flava|Trend Take",
     "money_follow|Nairobi transport strike|Receipts Piece",
     "timeline_shift|Kenya|Profile Beat",
     "policy_gap|Kenya|Hard News Lead",
@@ -420,6 +420,7 @@
     "winners_losers|content creator|Reaction Round-up",
     "myth_vs_fact|Nyota Ndogo|Receipts Piece",
     "winners_losers|single mothers|Trend Take",
-    "story_progression|Agave Affair|Profile Beat"
+    "story_progression|Agave Affair|Profile Beat",
+    "myth_vs_fact|motherhood|Reaction Round-up"
   ]
 }
