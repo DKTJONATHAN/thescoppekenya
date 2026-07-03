@@ -1,18 +1,20 @@
 ---
 title: "Three Foreigners Charged Over Illegal Possession of Emeralds"
 slug: "three-foreigners-charged-over-illegal-possession-of-emeralds"
-description: "Three foreign nationals from the US, Colombia, and Mexico face charges at Kibera court for possessing raw emeralds valued at Ksh 19 million in Kenya."
+description: "Three Foreigners Charged Over Illegal Possession of Emeralds: Three foreign nationals from the US, Colombia, and Mexico face charges at Kibera court for"
+excerpt: "The Emerald Mirage: A Mockery of Mineral Governance Three foreign nationals stood before a Kibera magistrate this week, clutching the legal"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/nqkTB0d9/d86742ab1c71.jpg"
 category: "News"
 tags: ["dci", "kibera", "illegal mining", "kenya news", "mineral smuggling", "za ndani"]
+canonical: "https://zandani.co.ke/article/three-foreigners-charged-over-illegal-possession-of-emeralds"
 date: "2026-07-03T12:59:44Z"
 dateModified: "2026-07-03T12:59:44Z"
+focusKeyword: "Three Foreigners Charged Over Illegal Possession of Emeralds"
 schema: "NewsArticle"
 ---
 
-## The Emerald Mirage: A Mockery of Mineral Governance
+## The Emerald Mirage: A Mockery of Mineral Governance Three Foreigners Charged Over Illegal Possession of Emeralds is the central subject of the update.
 
 Three foreign nationals stood before a Kibera magistrate this week, clutching the legal fiction that 74 grams of raw emeralds worth Ksh 19 million are merely personal effects. While the DCI unit tasked with Anti-Illegal Mining and Smuggling Investigations pat themselves on the back for this catch, the reality remains stark: the Ministry of Mining is guarding a sieve, not a vault.
 
