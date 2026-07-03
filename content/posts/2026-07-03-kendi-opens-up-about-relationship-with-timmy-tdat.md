@@ -1,18 +1,20 @@
 ---
 title: "Kendi Opens Up About Relationship With Musician Timmy Tdat"
 slug: "kendi-opens-up-about-relationship-with-timmy-tdat"
-description: "Kenyan artist Kendi discusses her private relationship with Timmy Tdat, clarifying the timeline and how they manage their public social media presence."
+description: "Kendi Opens Up About Relationship With Musician Timmy Tdat: Kenyan artist Kendi discusses her private relationship with Timmy Tdat, clarifying the timeline and"
+excerpt: "The Performance of Public Intimacy Kendi and Timmy Tdat have spent the last month selling us a story of spontaneous connection, but the arit"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/PZtqFnDP/8453490bdad8.webp"
 category: "Gossip"
 tags: ["kenyan entertainment", "kendi", "timmy tdat", "kenyan celebrities", "radio maisha", "celebrity news"]
+canonical: "https://zandani.co.ke/article/kendi-opens-up-about-relationship-with-timmy-tdat"
 date: "2026-07-03T10:51:15Z"
 dateModified: "2026-07-03T10:51:15Z"
+focusKeyword: "Kendi Opens Up About Relationship With Musician Timmy Tdat"
 schema: "NewsArticle"
 ---
 
-## The Performance of Public Intimacy
+## The Performance of Public Intimacy Kendi Opens Up About Relationship With Musician Timmy Tdat is the central subject of the update.
 
 Kendi and Timmy Tdat have spent the last month selling us a story of spontaneous connection, but the arithmetic of their romance suggests a much colder, strategic timeline. While the audience sees a sudden spark, the receipts reveal a calculated year of incubation before the first post ever went live.
 
