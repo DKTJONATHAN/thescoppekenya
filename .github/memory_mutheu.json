@@ -285,10 +285,10 @@
     "675cea8b65ed0d6507834f165a205726",
     "6bb8ae3a9f17d36000ad8b98ae68c29d",
     "8db80d16321fc44a7444267370f879a1",
-    "dd0354d3f0d00302ce224b186fac1876"
+    "dd0354d3f0d00302ce224b186fac1876",
+    "6bea97430e72ff1883d4dacfcf181a7e"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
     "Explainer",
@@ -317,10 +317,10 @@
     "Trend Take",
     "Explainer",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "story_progression|HBO|Hard News Lead",
     "story_progression|animal activism|Profile Beat",
     "policy_gap|The Secret Lives of Mormon Wives|Explainer",
     "story_progression|parenting|Reaction Round-up",
@@ -399,6 +399,7 @@
     "myth_vs_fact|Television series|Trend Take",
     "story_progression|na|Explainer",
     "accountability|Melissa Gilbert|Profile Beat",
-    "policy_gap|Erin Moriarty|Hard News Lead"
+    "policy_gap|Erin Moriarty|Hard News Lead",
+    "myth_vs_fact|na|Reaction Round-up"
   ]
 }
