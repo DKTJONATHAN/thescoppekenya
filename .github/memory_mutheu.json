@@ -287,10 +287,10 @@
     "8db80d16321fc44a7444267370f879a1",
     "dd0354d3f0d00302ce224b186fac1876",
     "6bea97430e72ff1883d4dacfcf181a7e",
-    "557e902201e62a4006e95919a19ea680"
+    "557e902201e62a4006e95919a19ea680",
+    "a49f14664d85f7fa8cf1305d02914097"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Trend Take",
     "Profile Beat",
@@ -319,10 +319,10 @@
     "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
-    "policy_gap|The Secret Lives of Mormon Wives|Explainer",
     "story_progression|parenting|Reaction Round-up",
     "story_progression|podcast|Trend Take",
     "accountability|Six Flags|Profile Beat",
@@ -401,6 +401,7 @@
     "accountability|Melissa Gilbert|Profile Beat",
     "policy_gap|Erin Moriarty|Hard News Lead",
     "myth_vs_fact|na|Reaction Round-up",
-    "myth_vs_fact|Transformers|Explainer"
+    "myth_vs_fact|Transformers|Explainer",
+    "story_progression|Marriage|Trend Take"
   ]
 }
