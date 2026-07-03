@@ -1,18 +1,20 @@
 ---
 title: "Why Corruption is Becoming a Survival Strategy Among Kenyan Youth"
 slug: "corruption-becoming-survival-strategy-kenyan-youth"
-description: "Economic hardship and social pressure are pushing young Kenyans toward corruption. Experts call for urgent reforms to restore national integrity."
+description: "Why Corruption is Becoming a Survival Strategy Among Kenyan Youth: Economic hardship and social pressure are pushing young Kenyans toward corruption. Experts"
+excerpt: "The Integrity Paradox: Corruption as a Survival Mechanism Critics frequently dismiss the surge of illicit financial schemes among Kenyan you"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/672LBzXG/530c0989f32e.webp"
 category: "Opinions"
 tags: ["kenya news", "youth unemployment", "eacc", "kenyan economy", "anti-corruption", "national integrity"]
+canonical: "https://zandani.co.ke/article/corruption-becoming-survival-strategy-kenyan-youth"
 date: "2026-07-03T11:42:04Z"
 dateModified: "2026-07-03T11:42:04Z"
+focusKeyword: "Why Corruption is Becoming a Survival Strategy Among Kenyan Youth"
 schema: "NewsArticle"
 ---
 
-## The Integrity Paradox: Corruption as a Survival Mechanism
+## The Integrity Paradox: Corruption as a Survival Mechanism Why Corruption is Becoming a Survival Strategy Among Kenyan Youth is the central subject of the update.
 
 Critics frequently dismiss the surge of illicit financial schemes among Kenyan youth as a moral failure, pointing fingers at social media narcissism and the erosion of cultural norms. This diagnosis is intellectually lazy. It conveniently ignores that for a generation systematically barred from the formal labor market, deceptive shortcuts have ceased to be moral choices and have instead become survival imperatives.
 
