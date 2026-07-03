@@ -295,10 +295,10 @@
     "ec38f22ceef8582bf155df6bfa83ac45",
     "db5b231b5e1775c8385104fe65a928ad",
     "68fd1c5f77f644c36fc6a8560d599514",
-    "afbd656208c9d369e59757d6950459e2"
+    "afbd656208c9d369e59757d6950459e2",
+    "7055ebb094b651ef4e7a1aa0547afa2f"
   ],
   "style_history": [
-    "Power Accountability",
     "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
@@ -327,10 +327,10 @@
     "Explainer",
     "Power Accountability",
     "Hard News Lead",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "policy_gap|Kenya|Hard News Lead",
     "accountability|Ebola|Power Accountability",
     "story_progression|COTU|Context Backgrounder",
     "policy_gap|Ebola|Explainer",
@@ -409,6 +409,7 @@
     "myth_vs_fact|HELB|Explainer",
     "accountability|Kenya Railways|Power Accountability",
     "accountability|Kenya|Hard News Lead",
-    "story_progression|KMPDU|Reaction & Voices"
+    "story_progression|KMPDU|Reaction & Voices",
+    "policy_gap|Thika Road|Context Backgrounder"
   ]
 }
