@@ -1,18 +1,20 @@
 ---
 title: "Julian Nagelsmann resigns as Germany coach amid Klopp links"
 slug: "julian-nagelsmann-resigns-germany-coach-klopp-linked"
-description: "Julian Nagelsmann has stepped down as Germany head coach following a World Cup exit as the DFB targets Jurgen Klopp for the vacant position."
+description: "Julian Nagelsmann resigns as Germany coach amid Klopp links: Julian Nagelsmann has stepped down as Germany head coach following a World Cup exit as the DFB"
+excerpt: "The German Football Association is burning The German Football Association has dismissed Julian Nagelsmann following a dismal World Cup exit"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/Y4rKxPQh/442ba5768b1b.png"
 category: "Sports"
 tags: ["germany", "football", "julian nagelsmann", "jurgen klopp", "world cup", "dfb", "international football"]
+canonical: "https://zandani.co.ke/article/julian-nagelsmann-resigns-germany-coach-klopp-linked"
 date: "2026-07-03T12:21:48Z"
 dateModified: "2026-07-03T12:21:48Z"
+focusKeyword: "Julian Nagelsmann resigns as Germany coach amid Klopp links"
 schema: "NewsArticle"
 ---
 
-## The German Football Association is burning
+## The German Football Association is burning Julian Nagelsmann resigns as Germany coach amid Klopp links is the central subject of the update.
 
 The German Football Association has dismissed Julian Nagelsmann following a dismal World Cup exit against Paraguay. Naturally, the footballing world is already hallucinating about a Jurgen Klopp rescue mission, desperate to believe that one man can scrub away a decade of incompetence.
 
