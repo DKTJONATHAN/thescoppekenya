@@ -1,20 +1,21 @@
 ---
 title: "Echoes of the Poll Tax: The Lingering Smart Driving License Delays"
 slug: "echoes-of-the-poll-tax-smart-driving-license-delays"
-description: "A century ago, a tax meant to equalize instead birthed chaos. Today, kenya smart dl collection updates offer mere whispers of relief amidst bureaucratic inertia"
+description: "Echoes of the Poll Tax: The Lingering Smart Driving License Delay: A century ago, a tax meant to equalize instead birthed chaos. Today, kenya smart dl"
+excerpt: "The wind, cold and unforgiving, whipped through the cobbled streets of Brixton in March of 1990. Margaret Thatcher, Iron Lady though she was"
 author: "The Chronicler"
 author_url: "https://zandani.co.ke/author/the-chronicler"
 image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200"
 category: "Chronicles"
-tags: ["chronicles", "poll-tax", "community-charge", "margaret-thatcher", "ntsa-smart-driving-license-delays-2026", "kenya-smart-dl-collection-updates", "bureaucratic-failure", "tragic-irony", "john-major", "1990", "2026"]
+tags: ["chronicles", "poll-tax", "community-charge", "margaret-thatcher", "ntsa-smart-driving-license-delays-2026", "kenya-smart-dl-collection-updates", "bureaucratic-failure", "tragic-irony"]
 canonical: "https://zandani.co.ke/article/echoes-of-the-poll-tax-smart-driving-license-delays"
 date: "2026-07-03T13:05:12Z"
-authorUrl: "https://zandani.co.ke/author/the-chronicler"
 dateModified: "2026-07-03T13:05:12Z"
+focusKeyword: "Echoes of the Poll Tax: The Lingering Smart Driving License Delay"
 schema: "NewsArticle"
 ---
 
-The wind, cold and unforgiving, whipped through the cobbled streets of Brixton in March of 1990. Margaret Thatcher, Iron Lady though she was, had unleashed a tempest not of her choosing with the Community Charge, or ‘Poll Tax’ as the common folk dubbed it. A flat-rate levy on every adult, replacing property taxes, it was heralded as a fairer system, a grand simplification. Yet, even as the government spokesmen waxed lyrical about equity, the bills - often riddled with errors, sometimes delivered to the dead, sometimes to phantom inhabitants - began to land on doormats like harbingers of financial doom.
+The wind, cold and unforgiving, whipped through the cobbled streets of Brixton in March of 1990. Margaret Thatcher, Iron Lady though she was, had unleashed a tempest not of her choosing with the Community Charge, or ‘Poll Tax’ as the common folk dubbed it. A flat-rate levy on every adult, replacing property taxes, it was heralded as a fairer system, a grand simplification. Yet, even as the government spokesmen waxed lyrical about equity, the bills - often riddled with errors, sometimes delivered to the dead, sometimes to phantom inhabitants - began to land on doormats like harbingers of financial doom. Echoes of the Poll Tax: The Lingering Smart Driving License Delay is the central subject of the update.
 
 ## The Unseen Burden of New Systems
 
