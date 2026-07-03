@@ -1,18 +1,20 @@
 ---
 title: "KECOBO Suspends KAMP License Over Financial Mismanagement Claims"
 slug: "kecobo-suspends-kamp-license-over-financial-mismanagement-claims"
-description: "The Kenya Copyright Board has suspended the license of KAMP for 90 days following governance concerns. PAVRISK will manage royalties meanwhile."
+description: "KECOBO Suspends KAMP License Over Financial Mismanagement Claims: The Kenya Copyright Board has suspended the license of KAMP for 90 days following governance"
+excerpt: "Copyright Licensing Chaos Hits Small Businesses If your bar, restaurant, or event space relies on licensed music to set the mood, you might"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/mVq5PGjf/7b5e256fbd6f.jpg"
 category: "Business"
 tags: ["kecobo", "kamp", "kenyan music industry", "copyright law", "royalty collection", "kenya entertainment news"]
+canonical: "https://zandani.co.ke/article/kecobo-suspends-kamp-license-over-financial-mismanagement-claims"
 date: "2026-07-03T08:22:54Z"
 dateModified: "2026-07-03T08:22:54Z"
+focusKeyword: "KECOBO Suspends KAMP License Over Financial Mismanagement Claims"
 schema: "NewsArticle"
 ---
 
-## Copyright Licensing Chaos Hits Small Businesses
+## Copyright Licensing Chaos Hits Small Businesses KECOBO Suspends KAMP License Over Financial Mismanagement Claims is the central subject of the update.
 
 If your bar, restaurant, or event space relies on licensed music to set the mood, you might be facing an unexpected headache this July. KECOBO has pulled the plug on KAMP for the next 90 days, leaving business owners caught in a messy transition that threatens to complicate your upcoming tax and compliance filings.
 
