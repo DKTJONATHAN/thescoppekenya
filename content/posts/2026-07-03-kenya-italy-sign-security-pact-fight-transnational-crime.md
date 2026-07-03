@@ -1,18 +1,20 @@
 ---
 title: "Kenya and Italy Sign Security Pact to Fight Transnational Crime"
 slug: "kenya-italy-sign-security-pact-fight-transnational-crime"
-description: "Kenya and Italy have formalised a new security agreement to boost intelligence sharing and institutional cooperation against organized criminal threats."
+description: "Kenya and Italy Sign Security Pact to Fight Transnational Crime: Kenya and Italy have formalised a new security agreement to boost intelligence sharing and"
+excerpt: "Behind the Italian Security Blueprint Behind the polished handshakes at Harambee House this Friday lies a calculated shift in how Nairobi in"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
 category: "Gossip"
 tags: ["national security", "kenya news", "international relations", "crime prevention", "diplomacy"]
+canonical: "https://zandani.co.ke/article/kenya-italy-sign-security-pact-fight-transnational-crime"
 date: "2026-07-03T09:33:33Z"
 dateModified: "2026-07-03T09:33:33Z"
+focusKeyword: "Kenya and Italy Sign Security Pact to Fight Transnational Crime"
 schema: "NewsArticle"
 ---
 
-## Behind the Italian Security Blueprint
+## Behind the Italian Security Blueprint Kenya and Italy Sign Security Pact to Fight Transnational Crime is the central subject of the update.
 
 Behind the polished handshakes at Harambee House this Friday lies a calculated shift in how Nairobi intends to police its borders, led by a man thousands of kilometers away in Rome who sees Kenya as the ultimate test case for his security philosophy.
 
