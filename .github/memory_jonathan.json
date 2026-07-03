@@ -169,10 +169,10 @@
     "fdda7558b67f5644cb31219e4d6dc75d",
     "d3fd3f5cbbbac2ea72a0fe00431c1a04",
     "10f3b3845f6b0c104b29b0cac1bf11b4",
-    "07b31b82dd8c1018a721c0b7f93b1e64"
+    "07b31b82dd8c1018a721c0b7f93b1e64",
+    "bcc6a114745a2c1e63ca34cdf510cf1e"
   ],
   "style_history": [
-    "Counterpoint",
     "Sharp Column",
     "Personal Reflection",
     "Historical Lens",
@@ -201,10 +201,10 @@
     "Counterpoint",
     "Sharp Column",
     "Historical Lens",
-    "Personal Reflection"
+    "Personal Reflection",
+    "Counterpoint"
   ],
   "angle_history": [
-    "myth_vs_fact|industrialization|Historical Lens",
     "myth_vs_fact|UDA|Counterpoint",
     "impact_on_citizens|Kenya|Personal Reflection",
     "policy_gap|land dispute|Letter Form",
@@ -283,6 +283,7 @@
     "myth_vs_fact|Kenya Media|Counterpoint",
     "winners_losers|radiology|Sharp Column",
     "timeline_shift|plastics treaty|Historical Lens",
-    "story_progression|parenting|Personal Reflection"
+    "story_progression|parenting|Personal Reflection",
+    "myth_vs_fact|corruption|Counterpoint"
   ]
 }
