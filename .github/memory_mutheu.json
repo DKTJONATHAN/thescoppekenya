@@ -286,10 +286,10 @@
     "6bb8ae3a9f17d36000ad8b98ae68c29d",
     "8db80d16321fc44a7444267370f879a1",
     "dd0354d3f0d00302ce224b186fac1876",
-    "6bea97430e72ff1883d4dacfcf181a7e"
+    "6bea97430e72ff1883d4dacfcf181a7e",
+    "557e902201e62a4006e95919a19ea680"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Explainer",
     "Trend Take",
@@ -318,10 +318,10 @@
     "Explainer",
     "Profile Beat",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Explainer"
   ],
   "angle_history": [
-    "story_progression|animal activism|Profile Beat",
     "policy_gap|The Secret Lives of Mormon Wives|Explainer",
     "story_progression|parenting|Reaction Round-up",
     "story_progression|podcast|Trend Take",
@@ -400,6 +400,7 @@
     "story_progression|na|Explainer",
     "accountability|Melissa Gilbert|Profile Beat",
     "policy_gap|Erin Moriarty|Hard News Lead",
-    "myth_vs_fact|na|Reaction Round-up"
+    "myth_vs_fact|na|Reaction Round-up",
+    "myth_vs_fact|Transformers|Explainer"
   ]
 }
