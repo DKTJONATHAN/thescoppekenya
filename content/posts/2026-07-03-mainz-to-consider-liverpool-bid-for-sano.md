@@ -1,15 +1,20 @@
 ---
 title: "Mainz to consider Liverpool bid for Sano"
 slug: "mainz-to-consider-liverpool-bid-for-sano"
+description: "Mainz to consider Liverpool bid for Sano: Liverpool's Sano Pursuit: Another Transfer Fumble? Liverpool's scramble for Mainz midfielder Kaishu Sano exposes a"
+excerpt: "Liverpool's Sano Pursuit: Another Transfer Fumble? Liverpool's scramble for Mainz midfielder Kaishu Sano exposes a reactive transfer strateg"
 author: "Sports Desk"
 image: "https://i.ibb.co/ynfSQs91/697da92291e3.jpg"
 category: "Global News"
+tags: ["mainz to consider liverpool bid for sano", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/mainz-to-consider-liverpool-bid-for-sano"
 date: "2026-07-03T16:39:06Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-07-03T16:39:06Z"
+focusKeyword: "Mainz to consider Liverpool bid for Sano"
 schema: "NewsArticle"
 ---
-## Liverpool's Sano Pursuit: Another Transfer Fumble?
+
+## Liverpool's Sano Pursuit: Another Transfer Fumble? Mainz to consider Liverpool bid for Sano is the central subject of the update.
 
 Liverpool's scramble for Mainz midfielder Kaishu Sano exposes a reactive transfer strategy under new manager Andoni Iraola. Mainz holds all the cards thanks to Sano's long-term contract and World Cup hype, suggesting Liverpool might again find themselves overpaying or left empty-handed in their disjointed summer recruitment.
 
