@@ -1,21 +1,20 @@
 ---
-title: "Lena Dunham, Jack Antonoff Join Swift-Kelce Rehearsal Festivities
+title: "'Lena Dunham, Jack Antonoff Join Swift-Kelce Rehearsal Festivities"
 slug: "lena-dunham-jack-antonoff-swift-kelce-rehearsal-dinner"
-description: "Ex-partners Lena Dunham and Jack Antonoff attended Taylor Swift and Travis Kelce's rumored wedding rehearsal dinner in NYC. Discover more celebrity sightings."
+description: "'Lena Dunham, Jack Antonoff Join Swift-Kelce Rehearsal Festivitie: Ex-partners Lena Dunham and Jack Antonoff attended Taylor Swift and Travis Kelce's rumored"
+excerpt: "Kenyan Swifties Wonder: Is This a Wedding Prelude or Just Another Epic Party for Taylor and Travis, Complete with Lena Dunham and Jack Anton"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/jkWvWPyJ/ac1dc720c6e0.jpg"
-og_title: "Dunham & Antonoff Attend Swift-Kelce Rehearsal Dinner"
-og_description: "Lena Dunham and Jack Antonoff were spotted at Taylor Swift and Travis Kelce's rumored wedding rehearsal dinner. The ex-couple joined other stars in NYC."
-focus_keyword: "Lena Dunham Jack Antonoff"
 category: "Entertainment"
 tags: ["lena dunham", "jack antonoff", "taylor swift", "travis kelce", "celebrity news", "entertainment", "music"]
+canonical: "https://zandani.co.ke/article/lena-dunham-jack-antonoff-swift-kelce-rehearsal-dinner"
 date: "2026-07-03T09:45:15Z"
 dateModified: "2026-07-03T09:45:15Z"
+focusKeyword: "'Lena Dunham, Jack Antonoff Join Swift-Kelce Rehearsal Festivitie"
 schema: "NewsArticle"
 ---
 
-## Kenyan Swifties Wonder: Is This a Wedding Prelude or Just Another Epic Party for Taylor and Travis, Complete with Lena Dunham and Jack Antonoff?
+## Kenyan Swifties Wonder: Is This a Wedding Prelude or Just Another Epic Party for Taylor and Travis, Complete with Lena Dunham and Jack Antonoff? "Lena Dunham, Jack Antonoff Join Swift-Kelce Rehearsal Festivitie is the central subject of the update.
 
 The online world buzzed yesterday as images emerged from an exclusive, star-studded event at New York's Madison Square Garden. This gathering was widely interpreted as the rumored wedding rehearsal dinner for Taylor Swift and Travis Kelce. Yet, for Kenyan Swifties and members of the Chiefs Kingdom, the most perplexing aspect wasn't merely the guest list - which conspicuously included Swift's long-time friends, who are also ex-partners, Lena Dunham and Jack Antonoff - but rather, the true character of the occasion itself.
 
