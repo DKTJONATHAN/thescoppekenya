@@ -1,7 +1,8 @@
 ---
 title: "Cape Verde footballer Bryan Teixeira faces fan criticism after celebrating goal with partner"
 slug: "cape-verde-footballer-bryan-teixeira-faces-fan-criticism-after-celeb"
-description: "Cape Verde forward Bryan Teixeira faces public criticism after celebrating a goal with his partner during the Africa Cup of Nations tournament."
+description: "Cape Verde footballer Bryan Teixeira faces fan criticism after ce: Cape Verde forward Bryan Teixeira faces public criticism after celebrating a goal with his"
+excerpt: "During the recent Africa Cup of Nations tournament, Cape Verdean forward Bryan Teixeira sparked intense public debate after sprinting to the"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/rSfjXVG/55f9e5308736.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["bryan-teixeira", "cape-verde-football", "football-controversy", "afcon-players", "celebration-backlash"]
 canonical: "https://zandani.co.ke/article/cape-verde-footballer-bryan-teixeira-faces-fan-criticism-after-celeb"
 date: "2026-07-04T13:57:15Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-04T13:57:15Z"
+focusKeyword: "Cape Verde footballer Bryan Teixeira faces fan criticism after ce"
 schema: "NewsArticle"
 ---
-During the recent Africa Cup of Nations tournament, Cape Verdean forward Bryan Teixeira sparked intense public debate after sprinting to the stands to celebrate a goal with his partner. The gesture prompted observers to question his professional focus during high stakes matches.
+
+During the recent Africa Cup of Nations tournament, Cape Verdean forward Bryan Teixeira sparked intense public debate after sprinting to the stands to celebrate a goal with his partner. The gesture prompted observers to question his professional focus during high stakes matches. Cape Verde footballer Bryan Teixeira faces fan criticism after ce is the central subject of the update.
 
 ## The controversy of personal displays on the pitch
 
