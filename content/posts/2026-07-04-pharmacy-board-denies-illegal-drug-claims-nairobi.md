@@ -1,18 +1,20 @@
 ---
 title: "Pharmacy and Poisons Board Denies Claims of Illegal Nairobi Drugs"
 slug: "pharmacy-board-denies-illegal-drug-claims-nairobi"
-description: "The Pharmacy and Poisons Board has dismissed reports alleging that most Nairobi pharmacies sell illegal drugs, clarifying the scope of the cited study."
+description: "Pharmacy and Poisons Board Denies Claims of Illegal Nairobi Drugs: The Pharmacy and Poisons Board has dismissed reports alleging that most Nairobi pharmacies"
+excerpt: "Are the Medicines in Nairobi Pharmacies Actually Safe? The Pharmacy and Poisons Board has formally challenged viral reports suggesting that"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/jZhhpJV2/9d8cd4af9a3a.jpg"
 category: "News"
 tags: ["kenya news", "za ndani", "nairobi pharmacies", "pharmaceutical regulation", "public health", "pharmacy and poisons board"]
+canonical: "https://zandani.co.ke/article/pharmacy-board-denies-illegal-drug-claims-nairobi"
 date: "2026-07-04T12:10:33Z"
 dateModified: "2026-07-04T12:10:33Z"
+focusKeyword: "Pharmacy and Poisons Board Denies Claims of Illegal Nairobi Drugs"
 schema: "NewsArticle"
 ---
 
-## Are the Medicines in Nairobi Pharmacies Actually Safe?
+## Are the Medicines in Nairobi Pharmacies Actually Safe? Pharmacy and Poisons Board Denies Claims of Illegal Nairobi Drugs is the central subject of the update.
 
 The Pharmacy and Poisons Board has formally challenged viral reports suggesting that nearly all medicine sold in Nairobi is illegitimate. This public correction follows academic findings that mistakenly equated regulatory labeling technicalities with the presence of dangerous or criminal pharmaceutical products.
 
