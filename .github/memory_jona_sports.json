@@ -232,10 +232,10 @@
     "75d8b3dd51f45598b60254b606144771",
     "4bae8c63ff83eecb2b674d349d9cc0bb",
     "e306c6e38748ef08fc2654c3c8209994",
-    "b6f48221a15f810a5a6b08664a2b3759"
+    "b6f48221a15f810a5a6b08664a2b3759",
+    "f44fcfd2f41fee04707350e3e1ced3b6"
   ],
   "style_history": [
-    "Cynical Pundit",
     "Match Report",
     "Stat Story",
     "Player Profile Beat",
@@ -264,10 +264,10 @@
     "Match Report",
     "Stat Story",
     "Player Profile Beat",
-    "Cynical Pundit"
+    "Cynical Pundit",
+    "Tactical Take"
   ],
   "angle_history": [
-    "money_follow|Premier League|Stat Story",
     "money_follow|spygate|Tactical Take",
     "accountability|Tottenham Hotspur|Player Profile Beat",
     "policy_gap|Southampton FC|Cynical Pundit",
@@ -346,6 +346,7 @@
     "timeline_shift|FIFA World Cup 2026|Match Report",
     "money_follow|World Cup|Stat Story",
     "myth_vs_fact|World Cup 2026|Player Profile Beat",
-    "accountability|German Football Association|Cynical Pundit"
+    "accountability|German Football Association|Cynical Pundit",
+    "next_48_hours|World Cup 2026|Tactical Take"
   ]
 }
