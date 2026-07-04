@@ -247,10 +247,10 @@
     "44522d3544fb1eb5d918771b2293842e",
     "5c3effce91f40ab4f1a71638084cee35",
     "acc7073bce3b5d301dca862b9aad14d6",
-    "399c1fac1d4b4114116aaaf68c93aba6"
+    "399c1fac1d4b4114116aaaf68c93aba6",
+    "a4ec3ed53d8a3128f2ab3a4687eb8208"
   ],
   "style_history": [
-    "Profile Beat",
     "Trend Take",
     "Reaction Round-up",
     "Receipts Piece",
@@ -279,10 +279,10 @@
     "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
-    "winners_losers|Jubilee Party|Hard News Lead",
     "next_48_hours|weather advisory|Profile Beat",
     "impact_on_citizens|Khalif Kairo|Reaction Round-up",
     "accountability|Hantavirus|Receipts Piece",
@@ -361,6 +361,7 @@
     "winners_losers|Kenya Power|Receipts Piece",
     "policy_gap|Utumishi Girls Academy|Hard News Lead",
     "money_follow|Vurugu 3|Reaction Round-up",
-    "accountability|national security|Profile Beat"
+    "accountability|national security|Profile Beat",
+    "next_48_hours|celebrity boxing|Trend Take"
   ]
 }
