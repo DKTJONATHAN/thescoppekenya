@@ -1,18 +1,20 @@
 ---
 title: "Andrew Kibe and Peter Salasya Negotiate Terms for Boxing Match"
 slug: "andrew-kibe-and-peter-salasya-negotiate-boxing-match-terms"
-description: "Andrew Kibe and MP Peter Salasya are in talks for a boxing match. The event is pending formal legal contracts and logistical guarantees."
+description: "Andrew Kibe and Peter Salasya Negotiate Terms for Boxing Match: Andrew Kibe and MP Peter Salasya are in talks for a boxing match. The event is pending formal"
+excerpt: "The Rise of Combat Commerce in Nairobi Andrew Kibe and Peter Salasya have moved beyond mere online antagonism, initiating formal contract ne"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://images.unsplash.com/photo-1591608825526-e8fadc360437?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NjY1ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNTU2MTh8&ixlib=rb-4.1.0&q=80&w=1080"
 category: "Gossip"
 tags: ["kenya entertainment", "andrew kibe", "peter salasya", "celebrity boxing", "kenyan politics", "social media rivalry"]
+canonical: "https://zandani.co.ke/article/andrew-kibe-and-peter-salasya-negotiate-boxing-match-terms"
 date: "2026-07-04T08:49:58Z"
 dateModified: "2026-07-04T08:49:58Z"
+focusKeyword: "Andrew Kibe and Peter Salasya Negotiate Terms for Boxing Match"
 schema: "NewsArticle"
 ---
 
-## The Rise of Combat Commerce in Nairobi
+## The Rise of Combat Commerce in Nairobi Andrew Kibe and Peter Salasya Negotiate Terms for Boxing Match is the central subject of the update.
 
 Andrew Kibe and Peter Salasya have moved beyond mere online antagonism, initiating formal contract negotiations for a professional exhibition boxing match. This transition from viral insults to a commercialized ring event signals a fundamental shift in how influence is being liquidated in Kenya.
 
