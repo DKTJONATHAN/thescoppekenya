@@ -299,10 +299,10 @@
     "7055ebb094b651ef4e7a1aa0547afa2f",
     "b3849706a5dc69ba2776011e56a4327a",
     "80275258637d1070cd1e4af6c063bfbb",
-    "8ed9b032ec4827810bf387de9eb1ad46"
+    "8ed9b032ec4827810bf387de9eb1ad46",
+    "e1e27a352cc64cd408d8ec132362d855"
   ],
   "style_history": [
-    "Power Accountability",
     "Hard News Lead",
     "Explainer",
     "Reaction & Voices",
@@ -331,10 +331,10 @@
     "Context Backgrounder",
     "Power Accountability",
     "Hard News Lead",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Explainer"
   ],
   "angle_history": [
-    "story_progression|Kitui|Reaction & Voices",
     "policy_gap|Gor Mahia|Power Accountability",
     "next_48_hours|Kenya|Hard News Lead",
     "accountability|Nairobi National Park|Context Backgrounder",
@@ -413,6 +413,7 @@
     "policy_gap|Thika Road|Context Backgrounder",
     "policy_gap|emerald|Power Accountability",
     "winners_losers|Kenyan Shilling|Hard News Lead",
-    "winners_losers|Real Estate|Reaction & Voices"
+    "winners_losers|Real Estate|Reaction & Voices",
+    "myth_vs_fact|Pharmacy and Poisons Board|Explainer"
   ]
 }
