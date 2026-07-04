@@ -298,10 +298,10 @@
     "afbd656208c9d369e59757d6950459e2",
     "7055ebb094b651ef4e7a1aa0547afa2f",
     "b3849706a5dc69ba2776011e56a4327a",
-    "80275258637d1070cd1e4af6c063bfbb"
+    "80275258637d1070cd1e4af6c063bfbb",
+    "8ed9b032ec4827810bf387de9eb1ad46"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Power Accountability",
     "Hard News Lead",
     "Explainer",
@@ -330,10 +330,10 @@
     "Reaction & Voices",
     "Context Backgrounder",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "policy_gap|Ebola|Explainer",
     "story_progression|Kitui|Reaction & Voices",
     "policy_gap|Gor Mahia|Power Accountability",
     "next_48_hours|Kenya|Hard News Lead",
@@ -412,6 +412,7 @@
     "story_progression|KMPDU|Reaction & Voices",
     "policy_gap|Thika Road|Context Backgrounder",
     "policy_gap|emerald|Power Accountability",
-    "winners_losers|Kenyan Shilling|Hard News Lead"
+    "winners_losers|Kenyan Shilling|Hard News Lead",
+    "winners_losers|Real Estate|Reaction & Voices"
   ]
 }
