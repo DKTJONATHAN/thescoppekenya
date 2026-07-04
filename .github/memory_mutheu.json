@@ -288,10 +288,10 @@
     "dd0354d3f0d00302ce224b186fac1876",
     "6bea97430e72ff1883d4dacfcf181a7e",
     "557e902201e62a4006e95919a19ea680",
-    "a49f14664d85f7fa8cf1305d02914097"
+    "a49f14664d85f7fa8cf1305d02914097",
+    "890bb6aab51091fed35832581b5a39d4"
   ],
   "style_history": [
-    "Explainer",
     "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
@@ -320,10 +320,10 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "story_progression|parenting|Reaction Round-up",
     "story_progression|podcast|Trend Take",
     "accountability|Six Flags|Profile Beat",
     "story_progression|Helen Mirren|Hard News Lead",
@@ -402,6 +402,7 @@
     "policy_gap|Erin Moriarty|Hard News Lead",
     "myth_vs_fact|na|Reaction Round-up",
     "myth_vs_fact|Transformers|Explainer",
-    "story_progression|Marriage|Trend Take"
+    "story_progression|Marriage|Trend Take",
+    "story_progression|na|Hard News Lead"
   ]
 }
