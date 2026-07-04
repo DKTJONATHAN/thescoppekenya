@@ -1,18 +1,20 @@
 ---
 title: "Mummie Francie Reveals She Slept With Husband Within 12 Hours"
 slug: "mummie-francie-reveals-she-slept-with-husband-within-12-hours"
-description: "Content creator Mummie Francie explains why she started a sexual relationship with her husband shortly after meeting him 11 years ago."
+description: "Mummie Francie Reveals She Slept With Husband Within 12 Hours: Content creator Mummie Francie explains why she started a sexual relationship with her husband"
+excerpt: "Beyond The Slow Burn: Why Efficiency Is The New Romantic Currency Mummie Francie recently upended local discourse regarding courtship norms."
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/nVmynyN/0b204f9955a1.webp"
 category: "Gossip"
 tags: ["mummie francie", "dr ofweneke", "kenyan celebrities", "relationships", "marriage", "kenyan entertainment"]
+canonical: "https://zandani.co.ke/article/mummie-francie-reveals-she-slept-with-husband-within-12-hours"
 date: "2026-07-04T10:26:18Z"
 dateModified: "2026-07-04T10:26:18Z"
+focusKeyword: "Mummie Francie Reveals She Slept With Husband Within 12 Hours"
 schema: "NewsArticle"
 ---
 
-## Beyond The Slow Burn: Why Efficiency Is The New Romantic Currency
+## Beyond The Slow Burn: Why Efficiency Is The New Romantic Currency Mummie Francie Reveals She Slept With Husband Within 12 Hours is the central subject of the update.
 
 Mummie Francie recently upended local discourse regarding courtship norms. During an appearance on Dr. Ofweneke’s podcast, she disclosed that her marriage, now entering its eleventh year, was characterized by physical intimacy within twelve hours of the initial meeting. This admission serves as a pointed critique of the prevailing belief that extended waiting periods are a mandatory prerequisite for long-term romantic stability.
 

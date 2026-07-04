@@ -14,7 +14,7 @@ focusKeyword: "'Lena Dunham's controversial joke at Taylor Swift's wedding recep
 schema: "NewsArticle"
 ---
 
-## Controversial Lena Dunham Joke Sparks Buzz at Swift-Kelce Nuptials "Lena Dunham's controversial joke at Taylor Swift's wedding recep is the central subject of the update.
+## Controversial Lena Dunham Joke Sparks Buzz at Swift-Kelce Nuptials "Lena Dunham's controversial joke at Taylor Swift's wedding recep is the central subject of the update. 'Lena Dunham's controversial joke at Taylor Swift's wedding recep is the central subject of the update.
 
 Filmmaker Lena Dunham reportedly sparked mixed reactions with a joke about American football during Taylor Swift and Travis Kelce's highly anticipated wedding reception. The comment prompted both gasps and laughter from the estimated 1,000 attendees, though pop superstar Swift herself reportedly deemed the quip "genius," according to sources close to the event. This polarizing moment quickly became a notable talking point amidst the star-studded gathering.
 
