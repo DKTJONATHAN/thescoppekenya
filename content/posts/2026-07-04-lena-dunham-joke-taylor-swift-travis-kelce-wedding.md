@@ -1,21 +1,20 @@
 ---
-title: "Lena Dunham's controversial joke at Taylor Swift's wedding reception
+title: "'Lena Dunham's controversial joke at Taylor Swift's wedding reception"
 slug: "lena-dunham-joke-taylor-swift-travis-kelce-wedding"
-description: "Lena Dunham's controversial joke about American football at Taylor Swift and Travis Kelce's wedding reception caused a stir. Taylor Swift reportedly found the polarizing Lena Dunham joke 'genius' amidst mixed guest reactions. Read the full story."
+description: "'Lena Dunham's controversial joke at Taylor Swift's wedding recep: Lena Dunham's controversial joke about American football at Taylor Swift and Travis Kelce's"
+excerpt: "Controversial Lena Dunham Joke Sparks Buzz at Swift Kelce Nuptials Filmmaker Lena Dunham reportedly sparked mixed reactions with a joke abou"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/8gQPMpkK/d33b373a6e3d.jpg"
-og_title: "Lena Dunham's Viral Joke at Taylor Swift's Wedding"
-og_description: "Lena Dunham's polarizing joke about American football at Taylor Swift and Travis Kelce's wedding sparked controversy. Taylor Swift called it 'genius'."
-focus_keyword: "Lena Dunham joke"
 category: "Entertainment"
 tags: ["lena dunham", "taylor swift", "travis kelce", "jack antonoff", "celebrity wedding", "entertainment news", "hollywood gossip"]
+canonical: "https://zandani.co.ke/article/lena-dunham-joke-taylor-swift-travis-kelce-wedding"
 date: "2026-07-04T09:07:22Z"
 dateModified: "2026-07-04T09:07:22Z"
+focusKeyword: "'Lena Dunham's controversial joke at Taylor Swift's wedding recep"
 schema: "NewsArticle"
 ---
 
-## Controversial Lena Dunham Joke Sparks Buzz at Swift-Kelce Nuptials
+## Controversial Lena Dunham Joke Sparks Buzz at Swift-Kelce Nuptials "Lena Dunham's controversial joke at Taylor Swift's wedding recep is the central subject of the update.
 
 Filmmaker Lena Dunham reportedly sparked mixed reactions with a joke about American football during Taylor Swift and Travis Kelce's highly anticipated wedding reception. The comment prompted both gasps and laughter from the estimated 1,000 attendees, though pop superstar Swift herself reportedly deemed the quip "genius," according to sources close to the event. This polarizing moment quickly became a notable talking point amidst the star-studded gathering.
 
