@@ -1,18 +1,20 @@
 ---
 title: "CA Introduces New Licensing Rules for Digital Courier Platforms"
 slug: "ca-introduces-new-licensing-rules-for-digital-courier-platforms"
-description: "The Communications Authority of Kenya has unveiled a new licensing framework for digital courier platforms and app-based delivery services in the country."
+description: "CA Introduces New Licensing Rules for Digital Courier Platforms: The Communications Authority of Kenya has unveiled a new licensing framework for digital"
+excerpt: "The Digital Courier License is a Shield for Platforms The Communications Authority of Kenya has finally unveiled its regulatory framework fo"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/9m3QdftF/925eac89aa13.jpg"
 category: "News"
 tags: ["kenya news", "logistics", "e-commerce", "communications authority", "courier services", "digital economy"]
+canonical: "https://zandani.co.ke/article/ca-introduces-new-licensing-rules-for-digital-courier-platforms"
 date: "2026-07-04T18:06:29Z"
 dateModified: "2026-07-04T18:06:29Z"
+focusKeyword: "CA Introduces New Licensing Rules for Digital Courier Platforms"
 schema: "NewsArticle"
 ---
 
-## The Digital Courier License is a Shield for Platforms
+## The Digital Courier License is a Shield for Platforms CA Introduces New Licensing Rules for Digital Courier Platforms is the central subject of the update.
 
 The Communications Authority of Kenya has finally unveiled its regulatory framework for digital courier platforms, set to take effect on July 29, 2026. While the agency frames this as a necessary step toward digitizing the postal and courier market, the fine print reveals a calculated maneuver to insulate tech platforms from their most significant liability: the human beings on the road.
 
