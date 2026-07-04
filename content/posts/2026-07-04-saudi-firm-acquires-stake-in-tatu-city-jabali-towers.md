@@ -1,18 +1,20 @@
 ---
 title: "Saudi Firm Acquires Stake in Tatu City Jabali Towers Project"
 slug: "saudi-firm-acquires-stake-in-tatu-city-jabali-towers"
-description: "A Saudi Arabian investment firm has secured a 49 percent stake in the Jabali Towers development at Tatu City in Kiambu County, targeting a 2028 completion."
+description: "Saudi Firm Acquires Stake in Tatu City Jabali Towers Project: A Saudi Arabian investment firm has secured a 49 percent stake in the Jabali Towers development"
+excerpt: "Whose City Is This Anyway? A Saudi Arabian firm has snapped up a 49 percent stake in the Jabali Towers project, cementing a multibillion shi"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Jw3rVHhD/b3306f30f689.jpg"
 category: "News"
 tags: ["real estate", "tatu city", "kiambu", "foreign investment", "construction", "kenya business"]
+canonical: "https://zandani.co.ke/article/saudi-firm-acquires-stake-in-tatu-city-jabali-towers"
 date: "2026-07-04T07:50:59Z"
 dateModified: "2026-07-04T07:50:59Z"
+focusKeyword: "Saudi Firm Acquires Stake in Tatu City Jabali Towers Project"
 schema: "NewsArticle"
 ---
 
-## Whose City Is This Anyway?
+## Whose City Is This Anyway? Saudi Firm Acquires Stake in Tatu City Jabali Towers Project is the central subject of the update.
 
 A Saudi Arabian firm has snapped up a 49 percent stake in the Jabali Towers project, cementing a multibillion-shilling partnership that is turning the skyline of Tatu City into a playground for the global elite while leaving the surrounding communities in Ruiru questioning where their place is in this new Kenya.
 
