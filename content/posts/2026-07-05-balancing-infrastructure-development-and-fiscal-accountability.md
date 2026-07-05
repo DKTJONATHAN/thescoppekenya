@@ -1,18 +1,20 @@
 ---
 title: "Balancing Infrastructure Development and Fiscal Accountability in Kenya"
 slug: "balancing-infrastructure-development-and-fiscal-accountability"
-description: "Accelerated work on the Nairobi-Nakuru-Mau Summit highway and SGR extension promises economic growth but requires strict financial transparency."
+description: "Balancing Infrastructure Development and Fiscal Accountability in: Accelerated work on the Nairobi-Nakuru-Mau Summit highway and SGR extension promises"
+excerpt: "Beyond Concrete: A Strategy for Sustainable Infrastructure Last Friday’s gridlock on the Nairobi Nakuru highway served as a grueling reminde"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/jvc0Kj4c/11749f8510eb.jpg"
 category: "Opinions"
 tags: ["infrastructure", "kenya", "transport", "economy", "governance", "nairobi"]
+canonical: "https://zandani.co.ke/article/balancing-infrastructure-development-and-fiscal-accountability"
 date: "2026-07-05T11:14:19Z"
 dateModified: "2026-07-05T11:14:19Z"
+focusKeyword: "Balancing Infrastructure Development and Fiscal Accountability in"
 schema: "NewsArticle"
 ---
 
-## Beyond Concrete: A Strategy for Sustainable Infrastructure
+## Beyond Concrete: A Strategy for Sustainable Infrastructure Balancing Infrastructure Development and Fiscal Accountability in is the central subject of the update.
 
 Last Friday’s gridlock on the Nairobi-Nakuru highway served as a grueling reminder that Kenya’s economic heartbeat is currently suffering from arterial blockage. While construction on the Mau Summit dual carriageway and Za Ndani Gauge Railway extension moves forward, the focus must shift from mere speed to the long-term fiscal viability of these expansive national projects.
 
