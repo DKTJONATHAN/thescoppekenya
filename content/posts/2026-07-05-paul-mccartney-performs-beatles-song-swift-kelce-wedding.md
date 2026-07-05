@@ -1,21 +1,20 @@
 ---
-title: "Paul McCartney Performs Beatles Classic at Swift-Kelce Wedding
+title: "'Paul McCartney Performs Beatles Classic at Swift-Kelce Wedding"
 slug: "paul-mccartney-performs-beatles-song-swift-kelce-wedding"
-description: "Music legend Paul McCartney surprised guests at Taylor Swift and Travis Kelce's wedding reception, performing a Beatles classic not heard live since 1964. Discover more about this star-studded event."
+description: "'Paul McCartney Performs Beatles Classic at Swift-Kelce Wedding: Music legend Paul McCartney surprised guests at Taylor Swift and Travis Kelce's wedding"
+excerpt: "Did Paul McCartney's Swift Kelce Wedding Performance Just Reset Pop Culture's Timeline? Friday's paul mccartney taylor swift wedding recepti"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/gb49wgb9/2fbbfc9c1c10.jpg"
-og_title: "McCartney Sings Beatles Classic at Swift-Kelce Wedding"
-og_description: "Paul McCartney surprised Taylor Swift and Travis Kelce's wedding guests with a rare live performance of a Beatles hit. Stevie Nicks also performed."
-focus_keyword: "paul mccartney taylor swift wedding"
 category: "Entertainment"
 tags: ["paul mccartney", "taylor swift", "travis kelce", "celebrity wedding", "beatles", "music performance", "pop culture"]
+canonical: "https://zandani.co.ke/article/paul-mccartney-performs-beatles-song-swift-kelce-wedding"
 date: "2026-07-05T15:50:49Z"
 dateModified: "2026-07-05T15:50:49Z"
+focusKeyword: "'Paul McCartney Performs Beatles Classic at Swift-Kelce Wedding"
 schema: "NewsArticle"
 ---
 
-## Did Paul McCartney's Swift-Kelce Wedding Performance Just Reset Pop Culture's Timeline?
+## Did Paul McCartney's Swift-Kelce Wedding Performance Just Reset Pop Culture's Timeline? "Paul McCartney Performs Beatles Classic at Swift-Kelce Wedding is the central subject of the update.
 
 Friday's paul mccartney taylor swift wedding reception at Madison Square Garden was more than just a union of two global superstars. It was a monumental music moment, seeing legendary Paul McCartney take the stage, performing a Beatles classic not heard live in over six decades, leaving fans worldwide, including here in Kenya, asking big questions.
 
