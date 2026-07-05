@@ -302,10 +302,10 @@
     "8ed9b032ec4827810bf387de9eb1ad46",
     "e1e27a352cc64cd408d8ec132362d855",
     "37f5e4019dade4c09e77128068631bd6",
-    "0318e9b79302f57d604843c7a9907dfd"
+    "0318e9b79302f57d604843c7a9907dfd",
+    "195ebfd4f5f645a73541858a27172f82"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
     "Power Accountability",
@@ -334,10 +334,10 @@
     "Reaction & Voices",
     "Explainer",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "accountability|Nairobi National Park|Context Backgrounder",
     "timeline_shift|KMTC|Explainer",
     "winners_losers|Kenya|Reaction & Voices",
     "money_follow|Nanyuki|Hard News Lead",
@@ -416,6 +416,7 @@
     "winners_losers|Real Estate|Reaction & Voices",
     "myth_vs_fact|Pharmacy and Poisons Board|Explainer",
     "policy_gap|Communications Authority of Kenya|Power Accountability",
-    "accountability|DCI|Hard News Lead"
+    "accountability|DCI|Hard News Lead",
+    "policy_gap|security|Context Backgrounder"
   ]
 }
