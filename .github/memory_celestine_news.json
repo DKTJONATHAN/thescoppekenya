@@ -301,10 +301,10 @@
     "80275258637d1070cd1e4af6c063bfbb",
     "8ed9b032ec4827810bf387de9eb1ad46",
     "e1e27a352cc64cd408d8ec132362d855",
-    "37f5e4019dade4c09e77128068631bd6"
+    "37f5e4019dade4c09e77128068631bd6",
+    "0318e9b79302f57d604843c7a9907dfd"
   ],
   "style_history": [
-    "Explainer",
     "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
@@ -333,10 +333,10 @@
     "Hard News Lead",
     "Reaction & Voices",
     "Explainer",
-    "Power Accountability"
+    "Power Accountability",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "next_48_hours|Kenya|Hard News Lead",
     "accountability|Nairobi National Park|Context Backgrounder",
     "timeline_shift|KMTC|Explainer",
     "winners_losers|Kenya|Reaction & Voices",
@@ -415,6 +415,7 @@
     "winners_losers|Kenyan Shilling|Hard News Lead",
     "winners_losers|Real Estate|Reaction & Voices",
     "myth_vs_fact|Pharmacy and Poisons Board|Explainer",
-    "policy_gap|Communications Authority of Kenya|Power Accountability"
+    "policy_gap|Communications Authority of Kenya|Power Accountability",
+    "accountability|DCI|Hard News Lead"
   ]
 }
