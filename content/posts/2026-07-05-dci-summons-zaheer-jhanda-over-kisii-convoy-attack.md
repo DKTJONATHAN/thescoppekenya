@@ -1,18 +1,20 @@
 ---
 title: "DCI summons MP Zaheer Jhanda over Linda Mwananchi Kisii attack"
 slug: "dci-summons-zaheer-jhanda-over-kisii-convoy-attack"
-description: "The DCI has summoned Nyaribari Chache MP Zaheer Jhanda to record a statement following an attack on an Edwin Sifuna-led convoy in Kisii that left seven detained."
+description: "DCI summons MP Zaheer Jhanda over Linda Mwananchi Kisii attack: The DCI has summoned Nyaribari Chache MP Zaheer Jhanda to record a statement following an"
+excerpt: "DCI Escalates Probe into Kisii Political Violence The Directorate of Criminal Investigations has summoned Nyaribari Chache Member of Parliam"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/jkP1wTBJ/4ee014c20c33.jpg"
 category: "News"
 tags: ["zaheer jhanda", "dci", "kisii violence", "linda mwananchi", "kenyan politics", "edwin sifuna"]
+canonical: "https://zandani.co.ke/article/dci-summons-zaheer-jhanda-over-kisii-convoy-attack"
 date: "2026-07-05T08:06:15Z"
 dateModified: "2026-07-05T08:06:15Z"
+focusKeyword: "DCI summons MP Zaheer Jhanda over Linda Mwananchi Kisii attack"
 schema: "NewsArticle"
 ---
 
-## DCI Escalates Probe into Kisii Political Violence
+## DCI Escalates Probe into Kisii Political Violence DCI summons MP Zaheer Jhanda over Linda Mwananchi Kisii attack is the central subject of the update.
 
 The Directorate of Criminal Investigations has summoned Nyaribari Chache Member of Parliament Zaheer Jhanda to record a statement at the Kisii County DCI headquarters following a violent attack on a Linda Mwananchi convoy.
 
