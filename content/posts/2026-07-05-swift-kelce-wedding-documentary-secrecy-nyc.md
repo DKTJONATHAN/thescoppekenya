@@ -14,7 +14,7 @@ focusKeyword: "'Swift Kelce Wedding Documentary Rumors Fueled by Secrecy"
 schema: "NewsArticle"
 ---
 
-## Kenya Buzzes: Taylor Swift Travis Kelce Wedding Documentary on the Horizon? "Swift Kelce Wedding Documentary Rumors Fueled by Secrecy is the central subject of the update.
+## Kenya Buzzes: Taylor Swift Travis Kelce Wedding Documentary on the Horizon? "Swift Kelce Wedding Documentary Rumors Fueled by Secrecy is the central subject of the update. 'Swift Kelce Wedding Documentary Rumors Fueled by Secrecy is the central subject of the update.
 
 Nairobi's pop culture scene is on high alert after whispers of a secret New York City wedding between music icon Taylor Swift and NFL star Travis Kelce exploded, not for the 'I do's, but for the undeniable clues pointing to a massive Taylor Swift Travis Kelce Wedding Documentary in the works. Fans are connecting the dots, and the excitement is palpable.
 
