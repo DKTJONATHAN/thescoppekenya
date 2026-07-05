@@ -1,21 +1,20 @@
 ---
-title: "Swift Kelce Wedding Documentary Rumors Fueled by Secrecy
+title: "'Swift Kelce Wedding Documentary Rumors Fueled by Secrecy"
 slug: "swift-kelce-wedding-documentary-secrecy-nyc"
-description: "Speculation mounts over a Taylor Swift and Travis Kelce wedding documentary following extreme secrecy and professional filming. Discover the details of their private NYC nuptials."
+description: "'Swift Kelce Wedding Documentary Rumors Fueled by Secrecy: Speculation mounts over a Taylor Swift and Travis Kelce wedding documentary following extreme"
+excerpt: "Kenya Buzzes: Taylor Swift Travis Kelce Wedding Documentary on the Horizon? Nairobi's pop culture scene is on high alert after whispers of a"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/qF7D1Cn9/43f7befd7fd0.jpg"
-og_title: "Swift Kelce Wedding Documentary: Secrecy & Filming Clues"
-og_description: "Extreme secrecy & professional filming at Taylor Swift and Travis Kelce's NYC wedding hint at a documentary. Get the full scoop on their private nuptials."
-focus_keyword: "Taylor Swift Travis Kelce Wedding Documentary"
 category: "Entertainment"
 tags: ["taylor swift", "travis kelce", "celebrity wedding", "documentary", "madison square garden", "entertainment news", "confidentiality"]
+canonical: "https://zandani.co.ke/article/swift-kelce-wedding-documentary-secrecy-nyc"
 date: "2026-07-05T09:30:15Z"
 dateModified: "2026-07-05T09:30:15Z"
+focusKeyword: "'Swift Kelce Wedding Documentary Rumors Fueled by Secrecy"
 schema: "NewsArticle"
 ---
 
-## Kenya Buzzes: Taylor Swift Travis Kelce Wedding Documentary on the Horizon?
+## Kenya Buzzes: Taylor Swift Travis Kelce Wedding Documentary on the Horizon? "Swift Kelce Wedding Documentary Rumors Fueled by Secrecy is the central subject of the update.
 
 Nairobi's pop culture scene is on high alert after whispers of a secret New York City wedding between music icon Taylor Swift and NFL star Travis Kelce exploded, not for the 'I do's, but for the undeniable clues pointing to a massive Taylor Swift Travis Kelce Wedding Documentary in the works. Fans are connecting the dots, and the excitement is palpable.
 
