@@ -1,18 +1,20 @@
 ---
 title: "Kenya Proposes Internet Metering Bill Raising Privacy Concerns"
 slug: "kenya-internet-metering-bill-privacy-concerns"
-description: "Proposed legislation seeks to move Kenya to consumption-based internet billing, sparking debates over data privacy and state surveillance risks."
+description: "Kenya Proposes Internet Metering Bill Raising Privacy Concerns: Proposed legislation seeks to move Kenya to consumption-based internet billing, sparking"
+excerpt: "The Silicon Savannah at a Crossroads: Kenya’s Internet Metering Ambitions The proposed Kenya Information and Communications (Amendment) Bill"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/tw47N48t/b73abf3e695f.webp"
 category: "Technology"
 tags: ["kenya", "internet regulation", "data privacy", "telecommunications", "digital rights", "ca"]
+canonical: "https://zandani.co.ke/article/kenya-internet-metering-bill-privacy-concerns"
 date: "2026-07-05T12:43:06Z"
 dateModified: "2026-07-05T12:43:06Z"
+focusKeyword: "Kenya Proposes Internet Metering Bill Raising Privacy Concerns"
 schema: "NewsArticle"
 ---
 
-## The Silicon Savannah at a Crossroads: Kenya’s Internet Metering Ambitions
+## The Silicon Savannah at a Crossroads: Kenya’s Internet Metering Ambitions Kenya Proposes Internet Metering Bill Raising Privacy Concerns is the central subject of the update.
 
 The proposed Kenya Information and Communications (Amendment) Bill 2025 has ignited a critical debate regarding the future of the nation’s digital infrastructure. By pushing for granular, byte-level metering for every internet user, the government is signaling a radical departure from current connectivity models. As this legislative push moves through the National Assembly, it threatens to dismantle the open-access environment that has defined Kenya's rise as a regional tech powerhouse, replacing it with a system of rigid, state-monitored metrics.
 
