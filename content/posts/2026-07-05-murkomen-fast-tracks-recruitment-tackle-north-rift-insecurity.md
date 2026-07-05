@@ -1,18 +1,20 @@
 ---
 title: "Murkomen Fast-Tracks Recruitment to Tackle North Rift Insecurity"
 slug: "murkomen-fast-tracks-recruitment-tackle-north-rift-insecurity"
-description: "Interior CS Kipchumba Murkomen has ordered the immediate recruitment of chiefs and increased police deployments to curb banditry across Northern Kenya."
+description: "Murkomen Fast-Tracks Recruitment to Tackle North Rift Insecurity: Interior CS Kipchumba Murkomen has ordered the immediate recruitment of chiefs and increased"
+excerpt: "Plugging the North Rift Security Vacuum Interior Cabinet Secretary Kipchumba Murkomen has ordered the immediate finalization of recruitment"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/mVN9BW7j/44546477ecd6.jpg"
 category: "News"
 tags: ["kipchumba murkomen", "north rift", "security", "banditry", "kenya news", "interior ministry"]
+canonical: "https://zandani.co.ke/article/murkomen-fast-tracks-recruitment-tackle-north-rift-insecurity"
 date: "2026-07-05T12:20:23Z"
 dateModified: "2026-07-05T12:20:23Z"
+focusKeyword: "Murkomen Fast-Tracks Recruitment to Tackle North Rift Insecurity"
 schema: "NewsArticle"
 ---
 
-## Plugging the North Rift Security Vacuum
+## Plugging the North Rift Security Vacuum Murkomen Fast-Tracks Recruitment to Tackle North Rift Insecurity is the central subject of the update.
 
 Interior Cabinet Secretary Kipchumba Murkomen has ordered the immediate finalization of recruitment for chiefs and sub-chiefs across Samburu County. This push to fill administrative vacancies signals a strategic pivot toward ground-level governance to counter persistent, organized banditry in the North Rift.
 
