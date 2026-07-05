@@ -1,18 +1,20 @@
 ---
 title: "DCI Arrests Suspect in Ksh 8.6 Million Employment Scam"
 slug: "dci-arrests-suspect-in-8-6-million-employment-scam"
-description: "Detectives have arrested a man in Nairobi for allegedly defrauding victims of 8.6 million shillings by promising jobs in the military and police service."
+description: "DCI Arrests Suspect in Ksh 8.6 Million Employment Scam: Detectives have arrested a man in Nairobi for allegedly defrauding victims of 8.6 million shillings by"
+excerpt: "The High Price of a Phantom Badge Families across the country are grappling with the bitter reality that their life savings were traded for"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/7t75GGXg/06e417ad3eac.jpg"
 category: "News"
 tags: ["dci", "kenya crime", "employment fraud", "nairobi", "maralal law courts", "scams"]
+canonical: "https://zandani.co.ke/article/dci-arrests-suspect-in-8-6-million-employment-scam"
 date: "2026-07-05T18:08:18Z"
 dateModified: "2026-07-05T18:08:18Z"
+focusKeyword: "DCI Arrests Suspect in Ksh 8.6 Million Employment Scam"
 schema: "NewsArticle"
 ---
 
-## The High Price of a Phantom Badge
+## The High Price of a Phantom Badge DCI Arrests Suspect in Ksh 8.6 Million Employment Scam is the central subject of the update.
 
 Families across the country are grappling with the bitter reality that their life savings were traded for empty promises of employment after the DCI apprehended a suspect behind a massive recruitment fraud. While the investigation moves forward, the silence of the victims reveals the crushing pressure of a job market where many believe that merit is no longer enough to secure a future in uniform.
 
