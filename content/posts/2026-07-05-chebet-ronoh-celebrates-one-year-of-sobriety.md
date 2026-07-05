@@ -1,18 +1,20 @@
 ---
 title: "Chebet Ronoh Celebrates One Year of Sobriety"
 slug: "chebet-ronoh-celebrates-one-year-of-sobriety"
-description: "Content creator Chebet Ronoh marks one year of sobriety, opening up about the pressures of fame and mental health within the Kenyan digital space."
+description: "Chebet Ronoh Celebrates One Year of Sobriety: Content creator Chebet Ronoh marks one year of sobriety, opening up about the pressures of fame and mental health"
+excerpt: "The High Cost of Digital Fame Content creator Chebet Ronoh announced her one year of sobriety this weekend, marking a pivotal shift from her"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://images.unsplash.com/photo-1637148778990-621fbe8a8358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NjY1ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyNDM4Njh8&ixlib=rb-4.1.0&q=80&w=1080"
 category: "Gossip"
 tags: ["chebet ronoh", "kenyan influencers", "mental health", "sobriety", "kenyan entertainment"]
+canonical: "https://zandani.co.ke/article/chebet-ronoh-celebrates-one-year-of-sobriety"
 date: "2026-07-05T09:20:58Z"
 dateModified: "2026-07-05T09:20:58Z"
+focusKeyword: "Chebet Ronoh Celebrates One Year of Sobriety"
 schema: "NewsArticle"
 ---
 
-## The High Cost of Digital Fame
+## The High Cost of Digital Fame Chebet Ronoh Celebrates One Year of Sobriety is the central subject of the update.
 
 Content creator Chebet Ronoh announced her one year of sobriety this weekend, marking a pivotal shift from her origins as an entertainer to a vocal advocate for mental health and professional boundaries within the Kenyan digital economy.
 
