@@ -1,18 +1,20 @@
 ---
 title: "The Reality of Leaving a Marriage for an Extramarital Partner"
 slug: "the-reality-of-leaving-a-marriage-for-an-extramarital-partner"
-description: "A rising trend in Kenya sees husbands leave stable marriages for mistresses, only to find the idealized relationship dissolves once formalized as a union."
+description: "The Reality of Leaving a Marriage for an Extramarital Partner: A rising trend in Kenya sees husbands leave stable marriages for mistresses, only to find the"
+excerpt: "In recent months, a recurring trend has emerged across Kenya where husbands abandon stable long term marriages to marry their mistresses. Th"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: ""
+image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["marital-infidelity", "kenyan-relationships", "divorce-realities", "extramarital-affairs", "marriage-counseling"]
 canonical: "https://zandani.co.ke/article/the-reality-of-leaving-a-marriage-for-an-extramarital-partner"
 date: "2026-07-05T14:08:49Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-05T14:08:49Z"
+focusKeyword: "The Reality of Leaving a Marriage for an Extramarital Partner"
 schema: "NewsArticle"
 ---
+
 In recent months, a recurring trend has emerged across Kenya where husbands abandon stable long-term marriages to marry their mistresses. These men frequently discover that the idealized behavior they admired in an affair disappears immediately once the relationship is formalized into a marriage.
 
 ## The Reality of Leaving a Marriage for an Extramarital Partner
