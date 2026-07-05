@@ -1,18 +1,20 @@
 ---
 title: "England to face Mexico in World Cup last 16 at Azteca Stadium"
 slug: "england-to-face-mexico-in-world-cup-last-16-at-azteca-stadium"
-description: "Thomas Tuchel prepares England for a challenging World Cup knockout match against an undefeated Mexico side in the high altitude of Mexico City."
+description: "England to face Mexico in World Cup last 16 at Azteca Stadium: Thomas Tuchel prepares England for a challenging World Cup knockout match against an undefeated"
+excerpt: "England braces for a historical reckoning at Azteca Stadium England meets Mexico this Sunday in the World Cup Round of 16, arriving at the A"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/tMTKCfC7/b2c2ce3f193d.jpg"
 category: "Sports"
 tags: ["world cup 2026", "england football", "mexico football", "thomas tuchel", "international football", "azteca stadium"]
+canonical: "https://zandani.co.ke/article/england-to-face-mexico-in-world-cup-last-16-at-azteca-stadium"
 date: "2026-07-05T11:51:22Z"
 dateModified: "2026-07-05T11:51:22Z"
+focusKeyword: "England to face Mexico in World Cup last 16 at Azteca Stadium"
 schema: "NewsArticle"
 ---
 
-## England braces for a historical reckoning at Azteca Stadium
+## England braces for a historical reckoning at Azteca Stadium England to face Mexico in World Cup last 16 at Azteca Stadium is the central subject of the update.
 
 England meets Mexico this Sunday in the World Cup Round of 16, arriving at the Azteca Stadium to confront both a formidable opponent and the heavy, lingering specter of 1986. While Thomas Tuchel prepares his squad for a standard knockout tie, the venue itself promises a far more hostile encounter.
 
