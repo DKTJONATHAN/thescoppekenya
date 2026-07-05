@@ -289,10 +289,10 @@
     "6bea97430e72ff1883d4dacfcf181a7e",
     "557e902201e62a4006e95919a19ea680",
     "a49f14664d85f7fa8cf1305d02914097",
-    "890bb6aab51091fed35832581b5a39d4"
+    "890bb6aab51091fed35832581b5a39d4",
+    "07f72713504bd5f0adc39953769d15fa"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
     "Explainer",
@@ -321,10 +321,10 @@
     "Reaction Round-up",
     "Explainer",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "story_progression|podcast|Trend Take",
     "accountability|Six Flags|Profile Beat",
     "story_progression|Helen Mirren|Hard News Lead",
     "policy_gap|Data processing|Explainer",
@@ -403,6 +403,7 @@
     "myth_vs_fact|na|Reaction Round-up",
     "myth_vs_fact|Transformers|Explainer",
     "story_progression|Marriage|Trend Take",
-    "story_progression|na|Hard News Lead"
+    "story_progression|na|Hard News Lead",
+    "next_48_hours|Wedding|Reaction Round-up"
   ]
 }
