@@ -248,10 +248,10 @@
     "5c3effce91f40ab4f1a71638084cee35",
     "acc7073bce3b5d301dca862b9aad14d6",
     "399c1fac1d4b4114116aaaf68c93aba6",
-    "a4ec3ed53d8a3128f2ab3a4687eb8208"
+    "a4ec3ed53d8a3128f2ab3a4687eb8208",
+    "c7c1136ae688810c7b20c21bff43442d"
   ],
   "style_history": [
-    "Trend Take",
     "Reaction Round-up",
     "Receipts Piece",
     "Profile Beat",
@@ -280,10 +280,10 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Profile Beat",
-    "Trend Take"
+    "Trend Take",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "next_48_hours|weather advisory|Profile Beat",
     "impact_on_citizens|Khalif Kairo|Reaction Round-up",
     "accountability|Hantavirus|Receipts Piece",
     "accountability|influencer|Hard News Lead",
@@ -362,6 +362,7 @@
     "policy_gap|Utumishi Girls Academy|Hard News Lead",
     "money_follow|Vurugu 3|Reaction Round-up",
     "accountability|national security|Profile Beat",
-    "next_48_hours|celebrity boxing|Trend Take"
+    "next_48_hours|celebrity boxing|Trend Take",
+    "story_progression|sobriety|Hard News Lead"
   ]
 }
