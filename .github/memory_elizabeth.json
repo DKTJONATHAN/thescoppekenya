@@ -148,10 +148,10 @@
     "cc407cc66182bfec3bb16f26176e8e50",
     "02c417a35183ff3546bcd49ff9d12790",
     "1907ff32417c05f2d30bfd51055f64c9",
-    "4bddfd4800476d725dacf1070ce89408"
+    "4bddfd4800476d725dacf1070ce89408",
+    "05c71a2dd2a61fa1a890ff7aecd00c99"
   ],
   "style_history": [
-    "Critical Take",
     "Africa Angle",
     "Explainer",
     "Hard News Lead",
@@ -180,7 +180,8 @@
     "Backgrounder",
     "Hard News Lead",
     "Explainer",
-    "Critical Take"
+    "Critical Take",
+    "Africa Angle"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -247,6 +248,7 @@
     "money_follow|automotive manufacturing|Backgrounder",
     "policy_gap|NTSA|Hard News Lead",
     "winners_losers|Kenya|Explainer",
-    "money_follow|dating apps|Critical Take"
+    "money_follow|dating apps|Critical Take",
+    "policy_gap|internet regulation|Africa Angle"
   ]
 }
