@@ -1,18 +1,20 @@
 ---
 title: "Three Nigerian students seek funds for Rome STEM Olympiad finals"
 slug: "nigerian-students-seek-funding-for-international-stem-olympiad"
-description: "Three Nigerian students have qualified for the International STEM Olympiad in Rome but require 32200 pounds for travel and logistics to compete."
+description: "Three Nigerian students seek funds for Rome STEM Olympiad finals: Three Nigerian students have qualified for the International STEM Olympiad in Rome but"
+excerpt: "The Rome Odyssey: Why African Brilliance is Still Passing the Hat The digital streets of East Africa are currently pulsating with a rare mix"
 author: "Amara Ndlovu"
-authorUrl: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/XkjC9MP8/055019575619.webp"
 category: "Africa Entertainment"
 tags: ["education", "stem", "mathematics", "international competitions", "student funding", "academic excellence"]
+canonical: "https://zandani.co.ke/article/nigerian-students-seek-funding-for-international-stem-olympiad"
 date: "2026-07-05T06:49:17Z"
 dateModified: "2026-07-05T06:49:17Z"
+focusKeyword: "Three Nigerian students seek funds for Rome STEM Olympiad finals"
 schema: "NewsArticle"
 ---
 
-## The Rome Odyssey: Why African Brilliance is Still Passing the Hat
+## The Rome Odyssey: Why African Brilliance is Still Passing the Hat Three Nigerian students seek funds for Rome STEM Olympiad finals is the central subject of the update.
 
 The digital streets of East Africa are currently pulsating with a rare mix of pride and indignation. The cause? Three Nigerian teenagers have been forced to launch a desperate crowdfunding campaign just to make it to the International STEM Olympiad in Rome. While social media timelines are flooded with celebratory posts about their intellectual dominance, the conversation has pivoted toward a harsher reality: why does the future of Africa’s brightest minds depend on the kindness of strangers rather than the strength of state policy?
 
