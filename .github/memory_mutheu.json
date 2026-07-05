@@ -291,10 +291,10 @@
     "a49f14664d85f7fa8cf1305d02914097",
     "890bb6aab51091fed35832581b5a39d4",
     "07f72713504bd5f0adc39953769d15fa",
-    "ce72fcdf9b1bc04e5f819d4569d5d3b0"
+    "ce72fcdf9b1bc04e5f819d4569d5d3b0",
+    "aeddefa6e1d11f70ed7bd82873e33161"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Explainer",
     "Trend Take",
     "Profile Beat",
@@ -323,10 +323,10 @@
     "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
-    "Explainer"
+    "Explainer",
+    "Profile Beat"
   ],
   "angle_history": [
-    "story_progression|Helen Mirren|Hard News Lead",
     "policy_gap|Data processing|Explainer",
     "myth_vs_fact|Barry Manilow|Trend Take",
     "story_progression|TV show|Profile Beat",
@@ -405,6 +405,7 @@
     "story_progression|Marriage|Trend Take",
     "story_progression|na|Hard News Lead",
     "next_48_hours|Wedding|Reaction Round-up",
-    "timeline_shift|Music|Explainer"
+    "timeline_shift|Music|Explainer",
+    "story_progression|na|Profile Beat"
   ]
 }
