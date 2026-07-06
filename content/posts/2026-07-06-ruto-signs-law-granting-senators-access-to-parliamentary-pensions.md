@@ -1,18 +1,20 @@
 ---
 title: "Ruto signs law granting senators access to parliamentary pension scheme"
 slug: "ruto-signs-law-granting-senators-access-to-parliamentary-pensions"
-description: "President William Ruto has signed the Parliamentary Pensions Amendment Bill into law, formally extending retirement benefits to include Kenyan senators."
+description: "Ruto signs law granting senators access to parliamentary pension : President William Ruto has signed the Parliamentary Pensions Amendment Bill into law,"
+excerpt: "The Quiet Expansion of the Legislative Retirement Buffet President William Ruto has signed the Parliamentary Pensions Amendment Bill 2023 in"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Q31xjY8N/30919f39c725.jpg"
 category: "News"
 tags: ["kenya", "parliament", "senate", "william ruto", "pensions", "government", "legislation"]
+canonical: "https://zandani.co.ke/article/ruto-signs-law-granting-senators-access-to-parliamentary-pensions"
 date: "2026-07-06T09:03:37Z"
 dateModified: "2026-07-06T09:03:37Z"
+focusKeyword: "Ruto signs law granting senators access to parliamentary pension"
 schema: "NewsArticle"
 ---
 
-## The Quiet Expansion of the Legislative Retirement Buffet
+## The Quiet Expansion of the Legislative Retirement Buffet Ruto signs law granting senators access to parliamentary pension  is the central subject of the update.
 
 President William Ruto has signed the Parliamentary Pensions Amendment Bill 2023 into law at State House, quietly folding senators into a lucrative retirement scheme. While the state calls this a procedural alignment with the 2010 Constitution, the timing could not be more insensitive.
 
