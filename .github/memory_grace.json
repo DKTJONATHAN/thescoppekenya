@@ -186,10 +186,10 @@
     "9ce45c656a3e6add767b0275f1d0fd9f",
     "6d458a724c8dd562911fae43a8b4dbab",
     "3670649a922c524293c16da9e04ca689",
-    "1ce3f2848e6cbe68b13ed1d17ebba25c"
+    "1ce3f2848e6cbe68b13ed1d17ebba25c",
+    "92fd36150bc5a13c9e3e984ecb748ffa"
   ],
   "style_history": [
-    "Explainer",
     "Power Accountability",
     "Markets Report",
     "SME Angle",
@@ -218,10 +218,10 @@
     "Power Accountability",
     "Backgrounder",
     "Markets Report",
-    "SME Angle"
+    "SME Angle",
+    "Explainer"
   ],
   "angle_history": [
-    "policy_gap|France-Africa Summit|Backgrounder",
     "next_48_hours|Africa CEO Forum|SME Angle",
     "accountability|WPP Scangroup|Markets Report",
     "impact_on_citizens|Flame Tree Group|Explainer",
@@ -300,6 +300,7 @@
     "money_follow|fuel trade|Power Accountability",
     "story_progression|Vodacom|Backgrounder",
     "policy_gap|Bonfire Adventures|Markets Report",
-    "winners_losers|KECOBO|SME Angle"
+    "winners_losers|KECOBO|SME Angle",
+    "myth_vs_fact|NSE|Explainer"
   ]
 }
