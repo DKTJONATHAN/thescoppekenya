@@ -1,18 +1,20 @@
 ---
 title: "Fifa faces integrity crisis after rescinding Balogun suspension"
 slug: "fifa-faces-integrity-crisis-after-rescinding-balogun-suspension"
-description: "Fifa is under pressure after rescinding a red card for Folarin Balogun following reports of political interference from the US President."
+description: "Fifa faces integrity crisis after rescinding Balogun suspension: Fifa is under pressure after rescinding a red card for Folarin Balogun following reports of"
+excerpt: "The Thirteen Second Fracture in FIFA Governance FIFA has unilaterally rescinded Folarin Balogun’s automatic one match suspension following a"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/Wdj3R0h/1b8229e61f1f.jpg"
 category: "Sports"
 tags: ["fifa", "football", "world cup", "sports governance", "kenyan sports", "international news"]
+canonical: "https://zandani.co.ke/article/fifa-faces-integrity-crisis-after-rescinding-balogun-suspension"
 date: "2026-07-06T14:04:44Z"
 dateModified: "2026-07-06T14:04:44Z"
+focusKeyword: "Fifa faces integrity crisis after rescinding Balogun suspension"
 schema: "NewsArticle"
 ---
 
-## The Thirteen-Second Fracture in FIFA Governance
+## The Thirteen-Second Fracture in FIFA Governance Fifa faces integrity crisis after rescinding Balogun suspension is the central subject of the update.
 
 FIFA has unilaterally rescinded Folarin Balogun’s automatic one-match suspension following a high-level diplomatic intervention. This reversal, which bypasses established tournament statutes, effectively nullifies the technical authority of the Disciplinary Committee in favor of external political pressure during the 2026 World Cup.
 
