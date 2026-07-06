@@ -292,10 +292,10 @@
     "890bb6aab51091fed35832581b5a39d4",
     "07f72713504bd5f0adc39953769d15fa",
     "ce72fcdf9b1bc04e5f819d4569d5d3b0",
-    "aeddefa6e1d11f70ed7bd82873e33161"
+    "aeddefa6e1d11f70ed7bd82873e33161",
+    "8e76757212be4576a33f04c8193820e7"
   ],
   "style_history": [
-    "Explainer",
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
@@ -324,10 +324,10 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
-    "policy_gap|Data processing|Explainer",
     "myth_vs_fact|Barry Manilow|Trend Take",
     "story_progression|TV show|Profile Beat",
     "timeline_shift|Natalie Wood|Reaction Round-up",
@@ -406,6 +406,7 @@
     "story_progression|na|Hard News Lead",
     "next_48_hours|Wedding|Reaction Round-up",
     "timeline_shift|Music|Explainer",
-    "story_progression|na|Profile Beat"
+    "story_progression|na|Profile Beat",
+    "story_progression|celebrity wedding|Trend Take"
   ]
 }
