@@ -1,21 +1,20 @@
 ---
-title: "Miles & Keleigh Teller Absent from Taylor Swift & Kelce Wedding
+title: "'Miles & Keleigh Teller Absent from Taylor Swift & Kelce Wedding"
 slug: "taylor-swift-teller-wedding-absence-falling-out"
-description: "Miles and Keleigh Teller skipped Taylor Swift's wedding. Reports detail an unexplained falling out with the superstar. Discover the full story now."
+description: "'Miles & Keleigh Teller Absent from Taylor Swift & Kelce Wedding: Miles and Keleigh Teller skipped Taylor Swift's wedding. Reports detail an unexplained"
+excerpt: "The Silence of the Stars: Decoding the Taylor Swift Teller Falling Out The grand spectacle of Taylor Swift and Travis Kelce's wedding, a sta"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/84jRMrwk/5f93d5ec9e47.jpg"
-og_title: "Miles & Keleigh Teller Miss Swift Wedding Amidst Reports"
-og_description: "Miles and Keleigh Teller were absent from Taylor Swift & Travis Kelce's wedding. Media reports hint at an unexplained falling out. Get the details here."
-focus_keyword: "Taylor Swift Teller falling out"
 category: "Entertainment"
 tags: ["taylor swift", "travis kelce", "miles teller", "keleigh teller", "celebrity wedding", "entertainment news", "friendship drama"]
+canonical: "https://zandani.co.ke/article/taylor-swift-teller-wedding-absence-falling-out"
 date: "2026-07-06T11:15:43Z"
 dateModified: "2026-07-06T11:15:43Z"
+focusKeyword: "'Miles & Keleigh Teller Absent from Taylor Swift & Kelce Wedding"
 schema: "NewsArticle"
 ---
 
-## The Silence of the Stars: Decoding the Taylor Swift Teller Falling Out
+## The Silence of the Stars: Decoding the Taylor Swift Teller Falling Out "Miles & Keleigh Teller Absent from Taylor Swift & Kelce Wedding is the central subject of the update.
 
 The grand spectacle of Taylor Swift and Travis Kelce's wedding, a star-studded affair held in Madison Square Garden, was a masterclass in modern celebrity. Yet, amidst the estimated 1,000 guests, the conspicuous absence of long-time friends Miles and Keleigh Teller speaks volumes about the shifting sands of high-profile friendships and the relentless pressure of the public eye.
 
