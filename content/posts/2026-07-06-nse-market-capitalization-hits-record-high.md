@@ -1,18 +1,20 @@
 ---
 title: "NSE Market Capitalization Hits Record High on Banking Sector Rally"
 slug: "nse-market-capitalization-hits-record-high"
-description: "The Nairobi Securities Exchange reached a record market value of KSh 3.8 trillion following strong banking performance and major stock activity."
+description: "NSE Market Capitalization Hits Record High on Banking Sector Rall: The Nairobi Securities Exchange reached a record market value of KSh 3.8 trillion following"
+excerpt: "Why Your Wallet Feels Lighter Despite the NSE Record The Nairobi Securities Exchange reached a historic valuation of KSh 3.812 trillion this"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/k6gxYgBS/4eae6ec80292.jpg"
 category: "Business"
 tags: ["nse", "nairobi securities exchange", "kenyan economy", "safaricom", "banking sector", "investing", "kenya"]
+canonical: "https://zandani.co.ke/article/nse-market-capitalization-hits-record-high"
 date: "2026-07-06T09:09:06Z"
 dateModified: "2026-07-06T09:09:06Z"
+focusKeyword: "NSE Market Capitalization Hits Record High on Banking Sector Rall"
 schema: "NewsArticle"
 ---
 
-## Why Your Wallet Feels Lighter Despite the NSE Record
+## Why Your Wallet Feels Lighter Despite the NSE Record NSE Market Capitalization Hits Record High on Banking Sector Rall is the central subject of the update.
 
 The Nairobi Securities Exchange reached a historic valuation of KSh 3.812 trillion this July. Despite this milestone, most workers are discovering that their monthly budgets are more restricted than in previous years. This gap between large corporate valuations and individual purchasing power highlights a challenging reality within the current national economy.
 
