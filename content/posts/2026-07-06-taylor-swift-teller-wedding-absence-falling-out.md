@@ -14,7 +14,7 @@ focusKeyword: "'Miles & Keleigh Teller Absent from Taylor Swift & Kelce Wedding"
 schema: "NewsArticle"
 ---
 
-## The Silence of the Stars: Decoding the Taylor Swift Teller Falling Out "Miles & Keleigh Teller Absent from Taylor Swift & Kelce Wedding is the central subject of the update.
+## The Silence of the Stars: Decoding the Taylor Swift Teller Falling Out "Miles & Keleigh Teller Absent from Taylor Swift & Kelce Wedding is the central subject of the update. 'Miles & Keleigh Teller Absent from Taylor Swift & Kelce Wedding is the central subject of the update.
 
 The grand spectacle of Taylor Swift and Travis Kelce's wedding, a star-studded affair held in Madison Square Garden, was a masterclass in modern celebrity. Yet, amidst the estimated 1,000 guests, the conspicuous absence of long-time friends Miles and Keleigh Teller speaks volumes about the shifting sands of high-profile friendships and the relentless pressure of the public eye.
 

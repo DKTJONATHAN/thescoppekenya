@@ -1,18 +1,20 @@
 ---
 title: "Akothee Announces New 50,000 USD Fee for Professional Collaborations"
 slug: "akothee-announces-new-50000-usd-fee-for-professional-collaborations"
-description: "Kenyan musician Akothee has implemented a strict business policy requiring a 50,000 USD fee and formal channels for all music collaboration requests."
+description: "Akothee Announces New 50,000 USD Fee for Professional Collaborati: Kenyan musician Akothee has implemented a strict business policy requiring a 50,000 USD fee"
+excerpt: "The Price of Professionalism: Is the Kenyan Music Scene Ready for the Corporate Shift? 'If your email signature is not as loud as your bank"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/SHtTrjR/9ad072ad4045.webp"
 category: "Gossip"
 tags: ["akothee", "kenyan music", "music industry", "business news", "kenya entertainment"]
+canonical: "https://zandani.co.ke/article/akothee-announces-new-50000-usd-fee-for-professional-collaborations"
 date: "2026-07-06T12:14:20Z"
 dateModified: "2026-07-06T12:14:20Z"
+focusKeyword: "Akothee Announces New 50,000 USD Fee for Professional Collaborati"
 schema: "NewsArticle"
 ---
 
-## The Price of Professionalism: Is the Kenyan Music Scene Ready for the Corporate Shift?
+## The Price of Professionalism: Is the Kenyan Music Scene Ready for the Corporate Shift? Akothee Announces New 50,000 USD Fee for Professional Collaborati is the central subject of the update.
 
 "If your email signature is not as loud as your bank balance, do not bother hitting send," is the sentiment echoing through Kenyan social media circles today. Akothee has officially shuttered the era of casual DM negotiations, locking her collaboration services behind a 50,000 USD barrier and a rigid, formal procurement process that has sent shockwaves through the local entertainment industry.
 
