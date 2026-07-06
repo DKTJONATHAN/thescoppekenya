@@ -1,18 +1,20 @@
 ---
 title: "Police declare Saba Saba protests illegal citing lack of notice"
 slug: "police-declare-saba-saba-protests-illegal"
-description: "Nairobi police chief Issa Mohamud has declared the upcoming Saba Saba protests illegal as rights groups insist they will proceed with the demonstration."
+description: "Police declare Saba Saba protests illegal citing lack of notice: Nairobi police chief Issa Mohamud has declared the upcoming Saba Saba protests illegal as"
+excerpt: "Legal Friction Over Saba Saba Demonstrations Nairobi Regional Police Commander Issa Mohamud declared the planned Saba Saba protests illegal"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/rP8FKgL/975da18d6928.jpg"
 category: "News"
 tags: ["saba saba", "nairobi", "kenya protests", "human rights", "issa mohamud", "kenya news"]
+canonical: "https://zandani.co.ke/article/police-declare-saba-saba-protests-illegal"
 date: "2026-07-06T19:00:02Z"
 dateModified: "2026-07-06T19:00:02Z"
+focusKeyword: "Police declare Saba Saba protests illegal citing lack of notice"
 schema: "NewsArticle"
 ---
 
-## Legal Friction Over Saba Saba Demonstrations
+## Legal Friction Over Saba Saba Demonstrations Police declare Saba Saba protests illegal citing lack of notice is the central subject of the update.
 
 Nairobi Regional Police Commander Issa Mohamud declared the planned Saba Saba protests illegal today, citing a failure by organizers to provide mandatory formal notification to law enforcement, a decision that ignites a complex debate over constitutional assembly rights.
 

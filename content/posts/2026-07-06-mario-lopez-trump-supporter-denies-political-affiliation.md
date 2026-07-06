@@ -14,7 +14,7 @@ focusKeyword: "'Mario Lopez Denies Being Trump Supporter, Clarifies White House"
 schema: "NewsArticle"
 ---
 
-## Social Media's Whirlwind: Mario Lopez Accused of Trump Support "Mario Lopez Denies Being Trump Supporter, Clarifies White House  is the central subject of the update.
+## Social Media's Whirlwind: Mario Lopez Accused of Trump Support "Mario Lopez Denies Being Trump Supporter, Clarifies White House  is the central subject of the update. 'Mario Lopez Denies Being Trump Supporter, Clarifies White House is the central subject of the update.
 
 The internet recently buzzed with speculation about Mario Lopez, as the Hollywood star found himself fending off claims of supporting Donald Trump. This wave of allegations and Lopez's subsequent response sparked lively debate among Kenyan followers, drawing attention to the challenges of media literacy and the pitfalls of snap judgments in the digital age.
 
