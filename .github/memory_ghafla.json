@@ -249,10 +249,10 @@
     "acc7073bce3b5d301dca862b9aad14d6",
     "399c1fac1d4b4114116aaaf68c93aba6",
     "a4ec3ed53d8a3128f2ab3a4687eb8208",
-    "c7c1136ae688810c7b20c21bff43442d"
+    "c7c1136ae688810c7b20c21bff43442d",
+    "7b0ba24c6af8b8e22d8fe7fc2c947ea2"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Receipts Piece",
     "Profile Beat",
     "Trend Take",
@@ -281,10 +281,10 @@
     "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "impact_on_citizens|Khalif Kairo|Reaction Round-up",
     "accountability|Hantavirus|Receipts Piece",
     "accountability|influencer|Hard News Lead",
     "money_follow|ODM|Trend Take",
@@ -363,6 +363,7 @@
     "money_follow|Vurugu 3|Reaction Round-up",
     "accountability|national security|Profile Beat",
     "next_48_hours|celebrity boxing|Trend Take",
-    "story_progression|sobriety|Hard News Lead"
+    "story_progression|sobriety|Hard News Lead",
+    "accountability|armed robbery|Reaction Round-up"
   ]
 }
