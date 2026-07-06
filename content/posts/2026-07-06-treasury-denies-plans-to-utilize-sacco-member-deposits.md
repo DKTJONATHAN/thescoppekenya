@@ -1,18 +1,20 @@
 ---
 title: "National Treasury Denies Plans to Use SACCO Deposits for Projects"
 slug: "treasury-denies-plans-to-utilize-sacco-member-deposits"
-description: "Cabinet Secretary John Mbadi has dismissed social media claims that the government intends to tap into SACCO member savings for the national infrastructure fund."
+description: "National Treasury Denies Plans to Use SACCO Deposits for Projects: Cabinet Secretary John Mbadi has dismissed social media claims that the government intends"
+excerpt: "Are Your SACCO Savings Really at Risk? Rumors circulating on social media claim the government is eyeing private deposits held in savings an"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/dwf12hwm/2abd31377dd3.jpg"
 category: "News"
 tags: ["national treasury", "sacco", "john mbadi", "kenya economy", "cooperatives bill"]
+canonical: "https://zandani.co.ke/article/treasury-denies-plans-to-utilize-sacco-member-deposits"
 date: "2026-07-06T14:30:44Z"
 dateModified: "2026-07-06T14:30:44Z"
+focusKeyword: "National Treasury Denies Plans to Use SACCO Deposits for Projects"
 schema: "NewsArticle"
 ---
 
-## Are Your SACCO Savings Really at Risk?
+## Are Your SACCO Savings Really at Risk? National Treasury Denies Plans to Use SACCO Deposits for Projects is the central subject of the update.
 
 Rumors circulating on social media claim the government is eyeing private deposits held in savings and credit societies to fund the National Infrastructure Fund. With millions of Kenyans relying on these accounts for financial security, Treasury officials have stepped in to clarify the status of these assets.
 
