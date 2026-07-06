@@ -304,10 +304,10 @@
     "37f5e4019dade4c09e77128068631bd6",
     "0318e9b79302f57d604843c7a9907dfd",
     "195ebfd4f5f645a73541858a27172f82",
-    "5c4bfebf89d6026882bf1ebeaf972873"
+    "5c4bfebf89d6026882bf1ebeaf972873",
+    "1427cab60299f3b07164ce59483384f1"
   ],
   "style_history": [
-    "Hard News Lead",
     "Power Accountability",
     "Explainer",
     "Context Backgrounder",
@@ -336,10 +336,10 @@
     "Power Accountability",
     "Hard News Lead",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "winners_losers|Kenya|Reaction & Voices",
     "money_follow|Nanyuki|Hard News Lead",
     "accountability|Rigathi Gachagua|Power Accountability",
     "money_follow|DCI|Explainer",
@@ -418,6 +418,7 @@
     "policy_gap|Communications Authority of Kenya|Power Accountability",
     "accountability|DCI|Hard News Lead",
     "policy_gap|security|Context Backgrounder",
-    "winners_losers|DCI|Reaction & Voices"
+    "winners_losers|DCI|Reaction & Voices",
+    "money_follow|Kenya|Power Accountability"
   ]
 }
