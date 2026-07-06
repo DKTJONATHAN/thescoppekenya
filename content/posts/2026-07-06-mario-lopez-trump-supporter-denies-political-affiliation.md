@@ -1,21 +1,20 @@
 ---
-title: "Mario Lopez Denies Being Trump Supporter, Clarifies White House Visit
+title: "'Mario Lopez Denies Being Trump Supporter, Clarifies White House Visit"
 slug: "mario-lopez-trump-supporter-denies-political-affiliation"
-description: "Mario Lopez addresses reports labeling him a Donald Trump supporter, clarifying his political stance and White House visit. Get the full story on his denial."
+description: "'Mario Lopez Denies Being Trump Supporter, Clarifies White House : Mario Lopez addresses reports labeling him a Donald Trump supporter, clarifying his"
+excerpt: "Social Media's Whirlwind: Mario Lopez Accused of Trump Support The internet recently buzzed with speculation about Mario Lopez, as the Holly"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/XZ5Wszfq/2f2a4a1233b6.jpg"
-og_title: "Mario Lopez Denies Being Trump Supporter Amid Controversy"
-og_description: "Mario Lopez speaks out, denying claims he's a Donald Trump supporter and explaining his recent White House appearance."
-focus_keyword: "Mario Lopez Trump supporter"
 category: "Entertainment"
 tags: ["mario lopez", "donald trump", "politics", "celebrity news", "white house", "entertainment"]
+canonical: "https://zandani.co.ke/article/mario-lopez-trump-supporter-denies-political-affiliation"
 date: "2026-07-06T17:23:03Z"
 dateModified: "2026-07-06T17:23:03Z"
+focusKeyword: "'Mario Lopez Denies Being Trump Supporter, Clarifies White House"
 schema: "NewsArticle"
 ---
 
-## Social Media's Whirlwind: Mario Lopez Accused of Trump Support
+## Social Media's Whirlwind: Mario Lopez Accused of Trump Support "Mario Lopez Denies Being Trump Supporter, Clarifies White House  is the central subject of the update.
 
 The internet recently buzzed with speculation about Mario Lopez, as the Hollywood star found himself fending off claims of supporting Donald Trump. This wave of allegations and Lopez's subsequent response sparked lively debate among Kenyan followers, drawing attention to the challenges of media literacy and the pitfalls of snap judgments in the digital age.
 
