@@ -1,18 +1,20 @@
 ---
 title: "US FDA nicotine pouch ruling offers lessons for Kenya tobacco laws"
 slug: "us-fda-nicotine-pouch-ruling-offers-lessons-for-kenya-tobacco-laws"
-description: "The FDA has authorized reduced-risk claims for ZYN pouches. Kenyan lawmakers should review this science while debating the Tobacco Control Bill."
+description: "US FDA nicotine pouch ruling offers lessons for Kenya tobacco law: The FDA has authorized reduced-risk claims for ZYN pouches. Kenyan lawmakers should review"
+excerpt: "A Quiet Shift in Nicotine Policy The U.S. Food and Drug Administration recently authorized 20 ZYN nicotine pouches to carry reduced risk mar"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/gZ3fM5tw/e2989793496e.webp"
 category: "Opinions"
 tags: ["tobacco control", "public health", "kenya politics", "nicotine pouches", "harm reduction", "parliament"]
+canonical: "https://zandani.co.ke/article/us-fda-nicotine-pouch-ruling-offers-lessons-for-kenya-tobacco-laws"
 date: "2026-07-06T12:58:53Z"
 dateModified: "2026-07-06T12:58:53Z"
+focusKeyword: "US FDA nicotine pouch ruling offers lessons for Kenya tobacco law"
 schema: "NewsArticle"
 ---
 
-## A Quiet Shift in Nicotine Policy
+## A Quiet Shift in Nicotine Policy US FDA nicotine pouch ruling offers lessons for Kenya tobacco law is the central subject of the update.
 
 The U.S. Food and Drug Administration recently authorized 20 ZYN nicotine pouches to carry reduced-risk marketing claims. This regulatory milestone signals a broader international movement toward recognizing that not all nicotine products share the same physiological impact. As we observe these changes from a distance, it becomes clear that modern science is beginning to outpace our traditional legislative frameworks.
 
