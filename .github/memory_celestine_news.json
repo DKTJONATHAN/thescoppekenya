@@ -306,10 +306,10 @@
     "195ebfd4f5f645a73541858a27172f82",
     "5c4bfebf89d6026882bf1ebeaf972873",
     "1427cab60299f3b07164ce59483384f1",
-    "f563303e3e2c743bea3d694325848f21"
+    "f563303e3e2c743bea3d694325848f21",
+    "449db3afe206a3c40ae7bb034f4301d1"
   ],
   "style_history": [
-    "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
     "Hard News Lead",
@@ -338,10 +338,10 @@
     "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "accountability|Rigathi Gachagua|Power Accountability",
     "money_follow|DCI|Explainer",
     "story_progression|DHS|Reaction & Voices",
     "story_progression|NPS|Context Backgrounder",
@@ -420,6 +420,7 @@
     "policy_gap|security|Context Backgrounder",
     "winners_losers|DCI|Reaction & Voices",
     "money_follow|Kenya|Power Accountability",
-    "myth_vs_fact|National Treasury|Explainer"
+    "myth_vs_fact|National Treasury|Explainer",
+    "policy_gap|Saba Saba|Hard News Lead"
   ]
 }
