@@ -1,18 +1,20 @@
 ---
 title: "Armed Suspects Rob Customers at Chaiiwali Cafe in Westlands"
 slug: "armed-suspects-rob-customers-at-chaiiwali-cafe-in-westlands"
-description: "Two masked gunmen on motorcycles robbed customers at Chaiiwali Cafe in Westlands Nairobi stealing electronics before firing at a security guard."
+description: "Armed Suspects Rob Customers at Chaiiwali Cafe in Westlands: Two masked gunmen on motorcycles robbed customers at Chaiiwali Cafe in Westlands Nairobi stealing"
+excerpt: "Westlands Nightlife Under Siege The brazen forty second raid at Chaiiwali Cafe has left Nairobi patrons furious, with social media erupting"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/mrm91QBh/445098a692a2.png"
 category: "Gossip"
 tags: ["westlands", "nairobi crime", "armed robbery", "chaiiwali cafe", "kenya security", "nairobi news"]
+canonical: "https://zandani.co.ke/article/armed-suspects-rob-customers-at-chaiiwali-cafe-in-westlands"
 date: "2026-07-06T10:59:29Z"
 dateModified: "2026-07-06T10:59:29Z"
+focusKeyword: "Armed Suspects Rob Customers at Chaiiwali Cafe in Westlands"
 schema: "NewsArticle"
 ---
 
-## Westlands Nightlife Under Siege
+## Westlands Nightlife Under Siege Armed Suspects Rob Customers at Chaiiwali Cafe in Westlands is the central subject of the update.
 
 The brazen forty second raid at Chaiiwali Cafe has left Nairobi patrons furious, with social media erupting over the blatant failure of private security firms to guard the high end hubs they charge premium fees to protect.
 
