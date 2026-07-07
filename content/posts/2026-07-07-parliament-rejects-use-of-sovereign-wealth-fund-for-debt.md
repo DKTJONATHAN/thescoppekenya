@@ -1,18 +1,20 @@
 ---
 title: "Parliament Rejects Plan to Use Sovereign Wealth Fund for Debt"
 slug: "parliament-rejects-use-of-sovereign-wealth-fund-for-debt"
-description: "Lawmakers have blocked proposals to divert future sovereign wealth fund assets toward debt servicing to protect long-term national investments."
+description: "Parliament Rejects Plan to Use Sovereign Wealth Fund for Debt: Lawmakers have blocked proposals to divert future sovereign wealth fund assets toward debt"
+excerpt: "Building a Fiscal Firewall Parliament has formally halted a legislative effort to divert assets from the nation’s Sovereign Wealth Fund towa"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/d4nSwDnk/7de821de3863.png"
 category: "Business"
 tags: ["sovereign wealth fund", "kenya debt", "treasury", "national assembly", "fiscal policy", "kenya economy"]
+canonical: "https://zandani.co.ke/article/parliament-rejects-use-of-sovereign-wealth-fund-for-debt"
 date: "2026-07-07T08:35:41Z"
 dateModified: "2026-07-07T08:35:41Z"
+focusKeyword: "Parliament Rejects Plan to Use Sovereign Wealth Fund for Debt"
 schema: "NewsArticle"
 ---
 
-## Building a Fiscal Firewall
+## Building a Fiscal Firewall Parliament Rejects Plan to Use Sovereign Wealth Fund for Debt is the central subject of the update.
 
 Parliament has formally halted a legislative effort to divert assets from the nation’s Sovereign Wealth Fund toward immediate debt obligations. This decision marks a significant shift in fiscal policy, prioritizing the long-term preservation of national capital over the pressure to resolve short-term liquidity deficits. By effectively insulating the fund from the national budget, lawmakers have signaled that generational wealth should not be liquidated to bridge current funding gaps.
 
