@@ -1,15 +1,20 @@
 ---
 title: "Manchester United to push for Alex Scott transfer"
 slug: "manchester-united-to-push-for-alex-scott-transfer"
+description: "Manchester United to push for Alex Scott transfer: Manchester United's Desperate Alex Scott Pursuit Manchester United, fresh from missing out on multiple"
+excerpt: "Manchester United's Desperate Alex Scott Pursuit Manchester United, fresh from missing out on multiple midfield targets, now reportedly pivo"
 author: "Sports Desk"
 image: "https://i.ibb.co/6j55jrM/4764732b2005.jpg"
 category: "Global News"
+tags: ["manchester united to push for alex scott transfer", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/manchester-united-to-push-for-alex-scott-transfer"
 date: "2026-07-07T17:21:27Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-07-07T17:21:27Z"
+focusKeyword: "Manchester United to push for Alex Scott transfer"
 schema: "NewsArticle"
 ---
-## Manchester United's Desperate Alex Scott Pursuit
+
+## Manchester United's Desperate Alex Scott Pursuit Manchester United to push for Alex Scott transfer is the central subject of the update.
 
 Manchester United, fresh from missing out on multiple midfield targets, now reportedly pivot their attention to AFC Bournemouth's Alex Scott. This belated push suggests a reactive transfer strategy, compounded by an astronomical £80m asking price for a player who appears to be an alternative rather than a primary focus.
 
