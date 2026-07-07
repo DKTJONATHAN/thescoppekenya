@@ -1,18 +1,20 @@
 ---
 title: "Nairobi police deny blocking CBD access amid July 7 protests"
 slug: "nairobi-police-deny-blocking-cbd-access-july-7-protests"
-description: "Nairobi commander Issa Mohamud says traffic disruptions on major roads were part of security screening measures during the July 7 demonstrations."
+description: "Nairobi police deny blocking CBD access amid July 7 protests: Nairobi commander Issa Mohamud says traffic disruptions on major roads were part of security"
+excerpt: "The Hidden Price of Security Screenings Nairobi residents faced a morning of gridlock today as police cordoned off key arteries into the cit"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/fdmBg29M/a14771d74780.jpg"
 category: "News"
 tags: ["nairobi", "kenya news", "police", "protests", "za ndani", "traffic", "security"]
+canonical: "https://zandani.co.ke/article/nairobi-police-deny-blocking-cbd-access-july-7-protests"
 date: "2026-07-07T19:06:20Z"
 dateModified: "2026-07-07T19:06:20Z"
+focusKeyword: "Nairobi police deny blocking CBD access amid July 7 protests"
 schema: "NewsArticle"
 ---
 
-## The Hidden Price of Security Screenings
+## The Hidden Price of Security Screenings Nairobi police deny blocking CBD access amid July 7 protests is the central subject of the update.
 
 Nairobi residents faced a morning of gridlock today as police cordoned off key arteries into the city center under the guise of security verification. While authorities frame these maneuvers as necessary safety protocols, the ripple effect on the city's informal economy is becoming increasingly difficult for the average citizen to absorb.
 
