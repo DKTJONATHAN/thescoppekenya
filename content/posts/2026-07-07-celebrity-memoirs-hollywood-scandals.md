@@ -14,7 +14,7 @@ focusKeyword: "'Celebrity Memoirs Unveil Shocking Hollywood Scandals"
 schema: "NewsArticle"
 ---
 
-## Industry Voids: What Celebrity Memoirs Reveal About Hollywood's Past Protections "Celebrity Memoirs Unveil Shocking Hollywood Scandals is the central subject of the update.
+## Industry Voids: What Celebrity Memoirs Reveal About Hollywood's Past Protections "Celebrity Memoirs Unveil Shocking Hollywood Scandals is the central subject of the update. 'Celebrity Memoirs Unveil Shocking Hollywood Scandals is the central subject of the update.
 
 A growing body of celebrity memoirs offers an unflinching look into an entertainment industry long operating without robust safeguarding policies or consistent professional conduct standards. These firsthand accounts collectively expose a landscape of systemic vulnerabilities, illustrating how exploitation and misconduct often shaped the careers and private lives of prominent figures.
 

@@ -1,18 +1,20 @@
 ---
 title: "EACC Convicts Two Former IEBC Employees Over Fake Qualifications"
 slug: "eacc-convicts-two-former-iebc-employees-over-fake-qualifications"
-description: "The EACC has successfully prosecuted two former IEBC staff members for using forged academic certificates to secure employment and promotions in Kenya."
+description: "EACC Convicts Two Former IEBC Employees Over Fake Qualifications: The EACC has successfully prosecuted two former IEBC staff members for using forged academic"
+excerpt: "Degrees of Deception: The Public Anger Over Fake Credentials Kenyan graduates are venting raw frustration as the Ethics and Anti Corruption"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/5xsvpLsV/3cea671eb057.jpg"
 category: "News"
 tags: ["iebc", "eacc", "academic fraud", "kenya news", "corruption", "public service"]
+canonical: "https://zandani.co.ke/article/eacc-convicts-two-former-iebc-employees-over-fake-qualifications"
 date: "2026-07-07T08:27:42Z"
 dateModified: "2026-07-07T08:27:42Z"
+focusKeyword: "EACC Convicts Two Former IEBC Employees Over Fake Qualifications"
 schema: "NewsArticle"
 ---
 
-## Degrees of Deception: The Public Anger Over Fake Credentials
+## Degrees of Deception: The Public Anger Over Fake Credentials EACC Convicts Two Former IEBC Employees Over Fake Qualifications is the central subject of the update.
 
 Kenyan graduates are venting raw frustration as the Ethics and Anti-Corruption Commission cleans house, revealing how years of meritless imposters have climbed the public sector ladder while qualified professionals remain sidelined by institutional fraud.
 
