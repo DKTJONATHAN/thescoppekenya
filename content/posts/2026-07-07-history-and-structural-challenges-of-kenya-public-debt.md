@@ -1,18 +1,20 @@
 ---
 title: "Historical roots and structural challenges of Kenya public debt"
 slug: "history-and-structural-challenges-of-kenya-public-debt"
-description: "An analysis of Kenya's public debt crisis tracing its origins from post-independence economic structures to modern structural adjustments and loans."
+description: "Historical roots and structural challenges of Kenya public debt: An analysis of Kenya's public debt crisis tracing its origins from post-independence economic"
+excerpt: "The Ledger of Our Inheritance In the mid 1970s, as the initial optimism surrounding Kenya’s independence faltered against global oil shocks,"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/VYjwsQd4/adf798a4a167.webp"
 category: "Opinions"
 tags: ["kenya economy", "public debt", "imf", "world bank", "fiscal policy", "kenyan history"]
+canonical: "https://zandani.co.ke/article/history-and-structural-challenges-of-kenya-public-debt"
 date: "2026-07-07T12:09:50Z"
 dateModified: "2026-07-07T12:09:50Z"
+focusKeyword: "Historical roots and structural challenges of Kenya public debt"
 schema: "NewsArticle"
 ---
 
-## The Ledger of Our Inheritance
+## The Ledger of Our Inheritance Historical roots and structural challenges of Kenya public debt is the central subject of the update.
 
 In the mid-1970s, as the initial optimism surrounding Kenya’s independence faltered against global oil shocks, the nation’s external debt sat at a modest US$ 1.3 billion. We were a young state still crafting our fiscal identity, yet the origins of our current confinement were already taking root in the financial centers of Washington and London.
 
