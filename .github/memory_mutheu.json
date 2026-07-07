@@ -295,10 +295,10 @@
     "aeddefa6e1d11f70ed7bd82873e33161",
     "8e76757212be4576a33f04c8193820e7",
     "9694f90860b7ac87c02bbc949c53e781",
-    "d12ff10918d6ae3cc561e4f8b963235f"
+    "d12ff10918d6ae3cc561e4f8b963235f",
+    "4ce663d215175c719e99f05623a3a55a"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Reaction Round-up",
     "Profile Beat",
@@ -327,10 +327,10 @@
     "Profile Beat",
     "Trend Take",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "timeline_shift|Natalie Wood|Reaction Round-up",
     "timeline_shift|na|Explainer",
     "winners_losers|na|Trend Take",
     "myth_vs_fact|Pete Davidson|Profile Beat",
@@ -409,6 +409,7 @@
     "story_progression|na|Profile Beat",
     "story_progression|celebrity wedding|Trend Take",
     "myth_vs_fact|Politics|Reaction Round-up",
-    "policy_gap|na|Hard News Lead"
+    "policy_gap|na|Hard News Lead",
+    "myth_vs_fact|The Bachelor|Explainer"
   ]
 }
