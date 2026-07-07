@@ -1,18 +1,20 @@
 ---
 title: "Netflix investigates why hit shows lose viewership in second seasons"
 slug: "netflix-investigates-second-season-viewership-declines"
-description: "Netflix is scrutinizing internal data as top series face significant audience declines, with production delays and creative interference blamed."
+description: "Netflix investigates why hit shows lose viewership in second seas: Netflix is scrutinizing internal data as top series face significant audience declines, with"
+excerpt: "The Streaming Churn Paradox Netflix is currently scrutinizing internal performance metrics to determine why a significant segment of its sub"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/23T6dYFs/97e206d0fde7.webp"
 category: "Technology"
 tags: ["netflix", "streaming", "entertainment news", "media industry", "television", "tech news"]
+canonical: "https://zandani.co.ke/article/netflix-investigates-second-season-viewership-declines"
 date: "2026-07-07T13:27:36Z"
 dateModified: "2026-07-07T13:27:36Z"
+focusKeyword: "Netflix investigates why hit shows lose viewership in second seas"
 schema: "NewsArticle"
 ---
 
-## The Streaming Churn Paradox
+## The Streaming Churn Paradox Netflix investigates why hit shows lose viewership in second seas is the central subject of the update.
 
 Netflix is currently scrutinizing internal performance metrics to determine why a significant segment of its subscriber base fails to return for sophomore seasons. This struggle highlights a growing misalignment between traditional corporate production timelines and the hyper-accelerated consumption habits of contemporary global audiences.
 
