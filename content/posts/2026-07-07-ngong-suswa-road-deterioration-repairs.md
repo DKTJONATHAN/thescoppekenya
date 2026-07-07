@@ -1,18 +1,20 @@
 ---
 title: "Ngong-Suswa Road develops major potholes shortly after completion"
 slug: "ngong-suswa-road-deterioration-repairs"
-description: "The 66-kilometre Ngong-Suswa road is showing signs of rapid degradation despite being completed recently. Motorists face hazards as repair work stalls."
+description: "Ngong-Suswa Road develops major potholes shortly after completion: The 66-kilometre Ngong-Suswa road is showing signs of rapid degradation despite being"
+excerpt: "Asphalt Decay on the Ngong Suswa Corridor The 66 kilometre Ngong Suswa highway, commissioned at a cost of Ksh 3.9 billion, is already displa"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/bMxJ2D6Z/2051c6e69c7a.jpg"
 category: "News"
 tags: ["infrastructure", "kajiado", "transport", "kura", "kenya roads", "road maintenance"]
+canonical: "https://zandani.co.ke/article/ngong-suswa-road-deterioration-repairs"
 date: "2026-07-07T13:23:56Z"
 dateModified: "2026-07-07T13:23:56Z"
+focusKeyword: "Ngong-Suswa Road develops major potholes shortly after completion"
 schema: "NewsArticle"
 ---
 
-## Asphalt Decay on the Ngong-Suswa Corridor
+## Asphalt Decay on the Ngong-Suswa Corridor Ngong-Suswa Road develops major potholes shortly after completion is the central subject of the update.
 
 The 66-kilometre Ngong-Suswa highway, commissioned at a cost of Ksh 3.9 billion, is already displaying critical structural failure less than seven months after its official completion. Motorists now face hazardous surface deterioration that threatens the viability of this vital regional artery.
 
