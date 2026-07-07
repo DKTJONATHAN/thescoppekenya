@@ -1,0 +1,37 @@
+---
+title: "Ngong-Suswa Road develops major potholes shortly after completion"
+slug: "ngong-suswa-road-deterioration-repairs"
+description: "The 66-kilometre Ngong-Suswa road is showing signs of rapid degradation despite being completed recently. Motorists face hazards as repair work stalls."
+author: "Celestine Nzioka"
+authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
+image: "https://i.ibb.co/bMxJ2D6Z/2051c6e69c7a.jpg"
+category: "News"
+tags: ["infrastructure", "kajiado", "transport", "kura", "kenya roads", "road maintenance"]
+date: "2026-07-07T13:23:56Z"
+dateModified: "2026-07-07T13:23:56Z"
+schema: "NewsArticle"
+---
+
+## Asphalt Decay on the Ngong-Suswa Corridor
+
+The 66-kilometre Ngong-Suswa highway, commissioned at a cost of Ksh 3.9 billion, is already displaying critical structural failure less than seven months after its official completion. Motorists now face hazardous surface deterioration that threatens the viability of this vital regional artery.
+
+### A Timeline of Rapid Degradation
+
+The trajectory of this project follows a troubling sequence common to domestic infrastructure development. In 2021, the commencement of the Ngong-Suswa project promised to shorten travel times for goods moving from Nairobi through Kajiado North and West toward Narok, Bomet, and eventually Kisii. By December 2025, the road was officially marked as complete, hailed as a standard-bearer for regional connectivity. Yet, by July 2026, the surface has succumbed to premature cracking and deep potholes, signaling a breakdown in either technical execution or materials quality.
+
+The current state of the road suggests the project has entered an accelerated failure phase. While road sections have been marked for cutting to facilitate repair work, the initiative has stalled, leaving open gouges that exacerbate the damage to the surrounding asphalt. This reflects a broader pattern observed in regional infrastructure projects where the transition from project delivery to maintenance remains dangerously opaque. Despite the evident decay, the Kenya Urban Roads Authority has maintained silence regarding the specific cause of the rapid degradation or a concrete timeline for remediation.
+
+### Economic Costs of Fragile Infrastructure
+
+Small-scale traders relying on this corridor to transport perishables and essential goods from the Rift Valley into Nairobi are bearing the brunt of this failure. Every suspension repair and engine delay caused by the uneven road surface increases the cost of doing business, often offsetting the initial economic gains promised by the highway's construction. Experts in civil engineering note that the lifecycle costs of rehabilitating a road within its first year of operation often balloon to triple the original maintenance projections, effectively negating the financial efficiency of the initial project budget.
+
+This situation serves as a stark case study in the lifecycle of infrastructure failure in Kenya. The economic shifts and ongoing regional infrastructure projects currently being funded, including recent energy and water grid enhancements, depend on a reliable transport network to achieve their projected outcomes. When transit corridors fail shortly after commissioning, the ripple effect compromises the utility of these broader investments. The pattern is cyclical: a project is launched, the surface degrades faster than engineering models predict, and the public is left waiting for a maintenance cycle that arrives too late to prevent systemic damage.
+
+### The Maintenance Gap and Future Outlook
+
+The current stall in repair works on the Ngong-Suswa stretch highlights a recurring flaw in the oversight of infrastructure assets. Without clear accountability for contractors or stringent adherence to post-completion maintenance contracts, the road is destined to become a perennial construction site rather than a finished thoroughfare. The absence of official communication from regulatory bodies suggests a disconnect between the reality on the ground and the administrative processes meant to protect public expenditure.
+
+Until the structural integrity of these projects is treated with the same priority as their initial commissioning, the lifecycle of major roads in Kenya will continue to be characterized by early decay and endless rehabilitation.
+
+The road was meant to last for decades, not months.
