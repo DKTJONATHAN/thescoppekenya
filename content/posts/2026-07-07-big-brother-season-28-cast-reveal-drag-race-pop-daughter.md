@@ -1,21 +1,20 @@
 ---
-title: "Big Brother Season 28 Reveals Cast: Drag Race & Pop Star Daughter
+title: "'Big Brother Season 28 Reveals Cast: Drag Race & Pop Star Daughter"
 slug: "big-brother-season-28-cast-reveal-drag-race-pop-daughter"
-description: "Big Brother Season 28 unveils its new cast, featuring a RuPaul's Drag Race star and a pop legend's daughter. Get ready for July 9 premiere on CBS!"
+description: "'Big Brother Season 28 Reveals Cast: Drag Race & Pop Star Daughte: Big Brother Season 28 unveils its new cast, featuring a RuPaul's Drag Race star and a pop"
+excerpt: "Big Brother Season 28 Cast: A Look at Notable New Houseguests The Big Brother season 28 cast, recently revealed, showcases an interesting mi"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/tPLwtfBp/8d90b9ac4550.jpg"
-og_title: "Big Brother 28 Cast: Drag Race Star & Pop Legend's Daughter"
-og_description: "Big Brother Season 28 unveils its initial cast, including a RuPaul's Drag Race icon and a 80s pop star's daughter. Don't miss the premiere!"
-focus_keyword: "Big Brother season 28 cast"
 category: "Entertainment"
 tags: ["big brother", "reality tv", "rupaul drag race", "salina estitties", "glenn medeiros", "cbs", "entertainment"]
+canonical: "https://zandani.co.ke/article/big-brother-season-28-cast-reveal-drag-race-pop-daughter"
 date: "2026-07-07T16:58:04Z"
 dateModified: "2026-07-07T16:58:04Z"
+focusKeyword: "'Big Brother Season 28 Reveals Cast: Drag Race & Pop Star Daughte"
 schema: "NewsArticle"
 ---
 
-## Big Brother Season 28 Cast: A Look at Notable New Houseguests
+## Big Brother Season 28 Cast: A Look at Notable New Houseguests "Big Brother Season 28 Reveals Cast: Drag Race & Pop Star Daughte is the central subject of the update.
 
 The Big Brother season 28 cast, recently revealed, showcases an interesting mix of backgrounds. With individuals connected to specific subcultures and pop history, these casting choices stand out, pointing to how reality television continues to evolve by bringing together different public figures and personal stories.
 
