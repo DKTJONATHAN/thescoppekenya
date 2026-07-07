@@ -1,18 +1,20 @@
 ---
 title: "Sammy Boy and Kenyan Prince Trade Insults Over Luxury Car Feud"
 slug: "sammy-boy-and-kenyan-prince-luxury-car-feud"
-description: "Forex traders Sammy Boy and Kenyan Prince engage in a heated social media dispute involving accusations of clout chasing and wealth rivalry."
+description: "Sammy Boy and Kenyan Prince Trade Insults Over Luxury Car Feud: Forex traders Sammy Boy and Kenyan Prince engage in a heated social media dispute involving"
+excerpt: "The Cost of Clout in the Forex Ledger Sammy Boy and Kenyan Prince claim their rivalry is about influence, yet their public spat reveals a de"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/Q7zFP4YX/886f52a96c66.webp"
 category: "Gossip"
 tags: ["kenya", "forex traders", "social media", "celebrity news", "sammy boy", "kenyan prince"]
+canonical: "https://zandani.co.ke/article/sammy-boy-and-kenyan-prince-luxury-car-feud"
 date: "2026-07-07T11:20:20Z"
 dateModified: "2026-07-07T11:20:20Z"
+focusKeyword: "Sammy Boy and Kenyan Prince Trade Insults Over Luxury Car Feud"
 schema: "NewsArticle"
 ---
 
-## The Cost of Clout in the Forex Ledger
+## The Cost of Clout in the Forex Ledger Sammy Boy and Kenyan Prince Trade Insults Over Luxury Car Feud is the central subject of the update.
 
 Sammy Boy and Kenyan Prince claim their rivalry is about influence, yet their public spat reveals a deeper struggle over the true cost of luxury imports. While they trade barbs about vehicle models and mentorship, a look at the import logs suggests a reality far removed from the social media flex.
 
