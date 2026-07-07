@@ -1,18 +1,20 @@
 ---
 title: "Kane and Bellingham lead England into World Cup quarter-finals"
 slug: "kane-bellingham-lead-england-world-cup-quarter-finals"
-description: "Harry Kane and Jude Bellingham drive England to the World Cup quarter-finals after a win against Mexico, accounting for most of the team goals."
+description: "Kane and Bellingham lead England into World Cup quarter-finals: Harry Kane and Jude Bellingham drive England to the World Cup quarter-finals after a win"
+excerpt: "The Heavy Price of English Brilliance The Azteca Stadium turf still bears the marks of a brutal round of 16 battle, where a ten man England"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/gMNbbCCb/d0c3c956bf7d.jpg"
 category: "Sports"
 tags: ["world cup 2026", "england football", "harry kane", "jude bellingham", "international football", "sports news"]
+canonical: "https://zandani.co.ke/article/kane-bellingham-lead-england-world-cup-quarter-finals"
 date: "2026-07-07T12:41:09Z"
 dateModified: "2026-07-07T12:41:09Z"
+focusKeyword: "Kane and Bellingham lead England into World Cup quarter-finals"
 schema: "NewsArticle"
 ---
 
-## The Heavy Price of English Brilliance
+## The Heavy Price of English Brilliance Kane and Bellingham lead England into World Cup quarter-finals is the central subject of the update.
 
 The Azteca Stadium turf still bears the marks of a brutal round of 16 battle, where a ten-man England side scraped past Mexico 3-2. As Thomas Tuchel stares down a quarter-final clash with Norway, the sheer weight of expectation is resting on the shoulders of two men, leaving the rest of the squad struggling to share the burden.
 
