@@ -311,10 +311,10 @@
     "9fedf566f1c6d3b8c554927de4cc511d",
     "4fc0c26f7ebeea47a3658badc7b6bae5",
     "b5ece2b4f2b087b8b9bc4b518b09da00",
-    "5443adb4e2d743f84e4be6d484dc84c1"
+    "5443adb4e2d743f84e4be6d484dc84c1",
+    "ce10540707fe3c8151b7321e393cc5fe"
   ],
   "style_history": [
-    "Explainer",
     "Reaction & Voices",
     "Context Backgrounder",
     "Power Accountability",
@@ -343,10 +343,10 @@
     "Reaction & Voices",
     "Context Backgrounder",
     "Explainer",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Power Accountability"
   ],
   "angle_history": [
-    "money_follow|JKIA|Power Accountability",
     "myth_vs_fact|Kenya|Explainer",
     "myth_vs_fact|Treasury|Context Backgrounder",
     "timeline_shift|data adequacy|Hard News Lead",
@@ -425,6 +425,7 @@
     "story_progression|IEBC|Reaction & Voices",
     "story_progression|infrastructure|Context Backgrounder",
     "money_follow|Nairobi|Explainer",
-    "timeline_shift|National Treasury|Hard News Lead"
+    "timeline_shift|National Treasury|Hard News Lead",
+    "accountability|Kenya Forest Service|Power Accountability"
   ]
 }
