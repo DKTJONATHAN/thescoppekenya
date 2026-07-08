@@ -1,18 +1,20 @@
 ---
 title: "Faith Wanjiku and Kerry Martin Mourn Passing of Infant Son"
 slug: "faith-wanjiku-kerry-martin-mourn-passing-of-infant-son"
-description: "Faith Wanjiku and Kerry Martin have launched a funeral fundraiser to cover burial expenses following the tragic death of their infant son Mikhael."
+description: "Faith Wanjiku and Kerry Martin Mourn Passing of Infant Son: Faith Wanjiku and Kerry Martin have launched a funeral fundraiser to cover burial expenses"
+excerpt: "A Quiet Silence in the Nursery The nursery is quiet today, holding only the echoes of a six month old life that departed too soon. Faith Wan"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/LDxvtcL4/2a06c7649aa7.jpg"
 category: "Gossip"
 tags: ["kenyan news", "bereavement", "fundraising", "infant death", "funeral arrangements"]
+canonical: "https://zandani.co.ke/article/faith-wanjiku-kerry-martin-mourn-passing-of-infant-son"
 date: "2026-07-08T08:43:08Z"
 dateModified: "2026-07-08T08:43:08Z"
+focusKeyword: "Faith Wanjiku and Kerry Martin Mourn Passing of Infant Son"
 schema: "NewsArticle"
 ---
 
-## A Quiet Silence in the Nursery
+## A Quiet Silence in the Nursery Faith Wanjiku and Kerry Martin Mourn Passing of Infant Son is the central subject of the update.
 
 The nursery is quiet today, holding only the echoes of a six-month-old life that departed too soon. Faith Wanjiku and Kerry Martin are currently navigating the profound emptiness that follows the loss of their son, Mikhael Patrick Ottmanns, who passed on July 2.
 
