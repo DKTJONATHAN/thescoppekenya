@@ -1,18 +1,20 @@
 ---
 title: "Chaos erupts at Imenti Forest public forum over proposed project"
 slug: "chaos-at-imenti-forest-public-forum-over-proposed-project"
-description: "Protests and legal action stalled a Kenya Forest Service forum in Meru as activists opposed the construction of a State Lodge and golf course project."
+description: "Chaos erupts at Imenti Forest public forum over proposed project: Protests and legal action stalled a Kenya Forest Service forum in Meru as activists opposed"
+excerpt: "The Imenti Forest Siege: A Scripted Participation Charade The Kenya Forest Service attempted to host a public consultation in Meru today, co"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/5xSj8vvF/e9b3b569b979.jpg"
 category: "News"
 tags: ["imenti forest", "kenya forest service", "meru county", "environmental activism", "land rights", "kenya news"]
+canonical: "https://zandani.co.ke/article/chaos-at-imenti-forest-public-forum-over-proposed-project"
 date: "2026-07-08T12:24:21Z"
 dateModified: "2026-07-08T12:24:21Z"
+focusKeyword: "Chaos erupts at Imenti Forest public forum over proposed project"
 schema: "NewsArticle"
 ---
 
-## The Imenti Forest Siege: A Scripted Participation Charade
+## The Imenti Forest Siege: A Scripted Participation Charade Chaos erupts at Imenti Forest public forum over proposed project is the central subject of the update.
 
 The Kenya Forest Service attempted to host a public consultation in Meru today, completely disregarding a subsisting court injunction that halted the process. While officials arrived with prepared presentations, residents arrived with a mounting collection of grievances and a petition containing 7,000 signatures.
 
