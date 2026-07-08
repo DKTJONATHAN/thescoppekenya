@@ -1,18 +1,20 @@
 ---
 title: "Dangote Group Sets Up Massive Oil Refinery Project in Lamu"
 slug: "dangote-group-to-construct-major-oil-refinery-in-lamu"
-description: "Dangote Group plans to build a 700,000 barrel per day oil refinery in Lamu to boost East African petroleum supply and regional energy infrastructure."
+description: "Dangote Group Sets Up Massive Oil Refinery Project in Lamu: Dangote Group plans to build a 700,000 barrel per day oil refinery in Lamu to boost East African"
+excerpt: "The Lamu Refinery Gamble: Who Wins in the Dangote State Energy Pact? State House is touting a KSh 2.2 trillion oil refinery project in Lamu"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/tT5K5DGp/1377e3080978.png"
 category: "Business"
 tags: ["kenya energy", "dangote group", "lamu", "petroleum industry", "business news", "infrastructure projects"]
+canonical: "https://zandani.co.ke/article/dangote-group-to-construct-major-oil-refinery-in-lamu"
 date: "2026-07-08T07:40:16Z"
 dateModified: "2026-07-08T07:40:16Z"
+focusKeyword: "Dangote Group Sets Up Massive Oil Refinery Project in Lamu"
 schema: "NewsArticle"
 ---
 
-## The Lamu Refinery Gamble: Who Wins in the Dangote-State Energy Pact?
+## The Lamu Refinery Gamble: Who Wins in the Dangote-State Energy Pact? Dangote Group Sets Up Massive Oil Refinery Project in Lamu is the central subject of the update.
 
 State House is touting a KSh 2.2 trillion oil refinery project in Lamu as a sovereign victory, yet the fine print reveals a dangerous dependency. While the government celebrates outmaneuvering regional rivals, the opaque terms of this deal expose a lopsided corporate-state alliance that threatens to hollow out the coast.
 
