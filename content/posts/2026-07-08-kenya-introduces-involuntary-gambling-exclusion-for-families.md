@@ -1,18 +1,20 @@
 ---
 title: "Kenya introduces involuntary gambling exclusion for families"
 slug: "kenya-introduces-involuntary-gambling-exclusion-for-families"
-description: "Families in Kenya can now request involuntary gambling exclusions for relatives, as new regulations empower operators to curb compulsive betting."
+description: "Kenya introduces involuntary gambling exclusion for families: Families in Kenya can now request involuntary gambling exclusions for relatives, as new"
+excerpt: "Guarding Household Stability Against Betting Risks Kenya has officially activated new involuntary gambling exclusion powers, allowing famili"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/N2Vwx5Rm/341b0bdbf051.webp"
 category: "Technology"
 tags: ["kenya", "gambling regulation", "grak", "betting industry", "responsible gambling", "kenyan news"]
+canonical: "https://zandani.co.ke/article/kenya-introduces-involuntary-gambling-exclusion-for-families"
 date: "2026-07-08T12:53:19Z"
 dateModified: "2026-07-08T12:53:19Z"
+focusKeyword: "Kenya introduces involuntary gambling exclusion for families"
 schema: "NewsArticle"
 ---
 
-## Guarding Household Stability Against Betting Risks
+## Guarding Household Stability Against Betting Risks Kenya introduces involuntary gambling exclusion for families is the central subject of the update.
 
 Kenya has officially activated new involuntary gambling exclusion powers, allowing families to intervene when a relative is facing severe financial distress due to compulsive wagering. These measures represent a pivot toward state-backed consumer protection as authorities tighten oversight across the sector.
 
