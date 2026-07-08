@@ -1,18 +1,20 @@
 ---
 title: "Kenyan Creator Tonka Faces Backlash Over Public Filming Stance"
 slug: "kenyan-creator-tonka-defends-public-filming-amid-privacy-debate"
-description: "Content creator Tonka has sparked a debate in Kenya by defending the practice of filming in public spaces against privacy concerns from the public."
+description: "Kenyan Creator Tonka Faces Backlash Over Public Filming Stance: Content creator Tonka has sparked a debate in Kenya by defending the practice of filming in"
+excerpt: "Nairobi Cafes Rethink the Lens Content creator Tonka recently defended his right to film in public spaces, a stance that has inadvertently s"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/bMjFQSWc/215b6d9af668.webp"
 category: "Gossip"
 tags: ["kenya", "tonka", "social media", "digital privacy", "content creation", "kenyan news"]
+canonical: "https://zandani.co.ke/article/kenyan-creator-tonka-defends-public-filming-amid-privacy-debate"
 date: "2026-07-08T10:31:42Z"
 dateModified: "2026-07-08T10:31:42Z"
+focusKeyword: "Kenyan Creator Tonka Faces Backlash Over Public Filming Stance"
 schema: "NewsArticle"
 ---
 
-## Nairobi Cafes Rethink the Lens
+## Nairobi Cafes Rethink the Lens Kenyan Creator Tonka Faces Backlash Over Public Filming Stance is the central subject of the update.
 
 Content creator Tonka recently defended his right to film in public spaces, a stance that has inadvertently sparked a citywide conversation about boundaries. As Nairobi navigates the friction between digital expression and personal privacy, business owners are finding themselves forced to define the line between creative freedom and the comfort of their clientele.
 
