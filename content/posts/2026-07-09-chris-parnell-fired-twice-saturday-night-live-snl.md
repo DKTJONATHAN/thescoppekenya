@@ -1,21 +1,20 @@
 ---
-title: "Chris Parnell: The Only SNL Cast Member Fired Twice
+title: "'Chris Parnell: The Only SNL Cast Member Fired Twice"
 slug: "chris-parnell-fired-twice-saturday-night-live-snl"
-description: "Chris Parnell holds the unique distinction of being fired twice from Saturday Night Live, enduring an impactful first dismissal before a remarkable return. Learn his full story."
+description: "'Chris Parnell: The Only SNL Cast Member Fired Twice: Chris Parnell holds the unique distinction of being fired twice from Saturday Night Live, enduring an"
+excerpt: "Chris Parnell's Double Exit from SNL Chris Parnell has a unique place in Saturday Night Live history: he was fired from the show not once, b"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/4R1CW4Tj/2d26207b0cba.jpg"
-og_title: "Chris Parnell: Fired Twice From Saturday Night Live"
-og_description: "Discover Chris Parnell's unique journey at Saturday Night Live, the only cast member fired twice. His story involves budget cuts, a dramatic return, and viral moments."
-focus_keyword: "Chris Parnell SNL"
 category: "Entertainment"
 tags: ["chris parnell", "saturday night live", "snl cast", "lorne michaels", "comedian", "entertainment", "lazy sunday"]
+canonical: "https://zandani.co.ke/article/chris-parnell-fired-twice-saturday-night-live-snl"
 date: "2026-07-08T23:40:44Z"
 dateModified: "2026-07-08T23:40:44Z"
+focusKeyword: "'Chris Parnell: The Only SNL Cast Member Fired Twice"
 schema: "NewsArticle"
 ---
 
-## Chris Parnell's Double Exit from SNL
+## Chris Parnell's Double Exit from SNL "Chris Parnell: The Only SNL Cast Member Fired Twice is the central subject of the update.
 
 Chris Parnell has a unique place in Saturday Night Live history: he was fired from the show not once, but twice! Many fans still wonder how "The Iceman" managed to get a second chance, and what his story tells us about how SNL handles its cast.
 
