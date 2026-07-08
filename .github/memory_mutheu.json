@@ -298,10 +298,10 @@
     "d12ff10918d6ae3cc561e4f8b963235f",
     "4ce663d215175c719e99f05623a3a55a",
     "f0feeb1c3e3a40df52392f4e5e90224e",
-    "b350fe8b94af2a6f1981d0089c155277"
+    "b350fe8b94af2a6f1981d0089c155277",
+    "286352fcdc9816ec1dd4bda7eef2d500"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Explainer",
     "Trend Take",
@@ -330,10 +330,10 @@
     "Hard News Lead",
     "Explainer",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "myth_vs_fact|Pete Davidson|Profile Beat",
     "story_progression|na|Hard News Lead",
     "myth_vs_fact|celebrities|Reaction Round-up",
     "myth_vs_fact|Kate Hudson|Trend Take",
@@ -412,6 +412,7 @@
     "policy_gap|na|Hard News Lead",
     "myth_vs_fact|The Bachelor|Explainer",
     "timeline_shift|Big Brother|Trend Take",
-    "myth_vs_fact|Joe Pesci|Profile Beat"
+    "myth_vs_fact|Joe Pesci|Profile Beat",
+    "winners_losers|Emmys|Reaction Round-up"
   ]
 }
