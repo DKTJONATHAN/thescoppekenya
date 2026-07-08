@@ -1,18 +1,20 @@
 ---
 title: "Kenya Public Debt Hits Ksh12.86 Trillion as Treasury Releases Data"
 slug: "kenya-public-debt-hits-ksh12-86-trillion-treasury-report"
-description: "Kenya total public debt stands at Ksh12.86 trillion as of April 2026. The Treasury report confirms China remains the leading bilateral creditor for Kenya."
+description: "Kenya Public Debt Hits Ksh12.86 Trillion as Treasury Releases Dat: Kenya total public debt stands at Ksh12.86 trillion as of April 2026. The Treasury report"
+excerpt: "The Currency Trap Beneath Kenya's Fiscal Data Kenya’s total public debt reached Ksh12.86 trillion by April 2026, leaving the economy exposed"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/r2dBZH0n/b13231c2a118.jpg"
 category: "News"
 tags: ["national treasury", "public debt", "kenya economy", "bilateral loans", "moodys", "external debt"]
+canonical: "https://zandani.co.ke/article/kenya-public-debt-hits-ksh12-86-trillion-treasury-report"
 date: "2026-07-08T07:32:52Z"
 dateModified: "2026-07-08T07:32:52Z"
+focusKeyword: "Kenya Public Debt Hits Ksh12.86 Trillion as Treasury Releases Dat"
 schema: "NewsArticle"
 ---
 
-## The Currency Trap Beneath Kenya's Fiscal Data
+## The Currency Trap Beneath Kenya's Fiscal Data Kenya Public Debt Hits Ksh12.86 Trillion as Treasury Releases Dat is the central subject of the update.
 
 Kenya’s total public debt reached Ksh12.86 trillion by April 2026, leaving the economy exposed to significant volatility as 54.4 percent of the nation's external borrowing remains denominated in US dollars.
 

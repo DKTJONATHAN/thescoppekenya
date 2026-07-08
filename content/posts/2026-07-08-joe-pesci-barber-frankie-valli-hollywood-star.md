@@ -14,7 +14,7 @@ focusKeyword: "'Joe Pesci Once Barbered for Frankie Valli Before Hollywood Stard
 schema: "NewsArticle"
 ---
 
-## Hollywood's Hidden Barber: When Oscar Winner Joe Pesci Cut Hair "Joe Pesci Once Barbered for Frankie Valli Before Hollywood Stard is the central subject of the update.
+## Hollywood's Hidden Barber: When Oscar Winner Joe Pesci Cut Hair "Joe Pesci Once Barbered for Frankie Valli Before Hollywood Stard is the central subject of the update. 'Joe Pesci Once Barbered for Frankie Valli Before Hollywood Stard is the central subject of the update.
 
 Before he became a cinematic legend known for his intense, unforgettable roles, Joe Pesci walked a far different path. It's a surprising chapter from his past, revealing that this formidable actor once honed his skills not on a film set, but with a pair of shears as a barber for none other than Frankie Valli and his brother, Bobby. This glimpse into his early life peels back the layers of a celebrated career, exposing the grounded beginnings of a Hollywood icon.
 
