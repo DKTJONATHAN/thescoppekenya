@@ -1,18 +1,20 @@
 ---
 title: "Egypt Files FIFA Protest Over Controversial World Cup Loss"
 slug: "egypt-files-fifa-protest-over-controversial-world-cup-loss"
-description: "The Egyptian Football Association has lodged a formal complaint against refereeing decisions following their 3-2 defeat by Argentina."
+description: "Egypt Files FIFA Protest Over Controversial World Cup Loss: The Egyptian Football Association has lodged a formal complaint against refereeing decisions"
+excerpt: "The Scripted Myth of the Argentine God FIFA has officially received Egypt's formal protest following their 3 2 defeat in Atlanta, yet the gl"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/23Jnj466/6c989b62916c.jpg"
 category: "Sports"
 tags: ["world cup", "egypt football", "fifa", "argentina", "mohamed salah", "football news"]
+canonical: "https://zandani.co.ke/article/egypt-files-fifa-protest-over-controversial-world-cup-loss"
 date: "2026-07-08T12:00:12Z"
 dateModified: "2026-07-08T12:00:12Z"
+focusKeyword: "Egypt Files FIFA Protest Over Controversial World Cup Loss"
 schema: "NewsArticle"
 ---
 
-## The Scripted Myth of the Argentine God
+## The Scripted Myth of the Argentine God Egypt Files FIFA Protest Over Controversial World Cup Loss is the central subject of the update.
 
 FIFA has officially received Egypt's formal protest following their 3-2 defeat in Atlanta, yet the global media remains fixated on the glory of the result rather than the mechanics of the robbery. While the Egyptian Football Association screams into the void, the reality is that the World Cup has evolved from an athletic competition into a premium marketing vehicle where the primary product is the continued viability of the Lionel Messi brand.
 
