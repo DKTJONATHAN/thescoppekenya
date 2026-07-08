@@ -1,18 +1,20 @@
 ---
 title: "Kenya and South Korea Deepen Bilateral Trade and Diplomatic Ties"
 slug: "kenya-south-korea-deepen-diplomatic-trade-relations"
-description: "Kenya and South Korea strengthen diplomatic relations through new infrastructure and ocean governance agreements, fueling calls for a permanent mission."
+description: "Kenya and South Korea Deepen Bilateral Trade and Diplomatic Ties: Kenya and South Korea strengthen diplomatic relations through new infrastructure and ocean"
+excerpt: "The Seoul Blindspot: Why Kenya’s Diplomatic Ambition is Mismatched with its Presence Kenya’s diplomatic architecture remains anchored in a c"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/5xtzCkQB/311fe044d022.webp"
 category: "Opinions"
 tags: ["kenya", "south korea", "diplomacy", "foreign policy", "trade", "blue economy", "nairobi"]
+canonical: "https://zandani.co.ke/article/kenya-south-korea-deepen-diplomatic-trade-relations"
 date: "2026-07-08T11:16:38Z"
 dateModified: "2026-07-08T11:16:38Z"
+focusKeyword: "Kenya and South Korea Deepen Bilateral Trade and Diplomatic Ties"
 schema: "NewsArticle"
 ---
 
-## The Seoul Blindspot: Why Kenya’s Diplomatic Ambition is Mismatched with its Presence
+## The Seoul Blindspot: Why Kenya’s Diplomatic Ambition is Mismatched with its Presence Kenya and South Korea Deepen Bilateral Trade and Diplomatic Ties is the central subject of the update.
 
 Kenya’s diplomatic architecture remains anchored in a colonial-era map, failing to acknowledge that the center of gravity in the global economy has drifted toward the Indo-Pacific. While our foreign policy continues to look backward, the world is moving on.
 
