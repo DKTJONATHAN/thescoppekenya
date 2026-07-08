@@ -188,10 +188,10 @@
     "3670649a922c524293c16da9e04ca689",
     "1ce3f2848e6cbe68b13ed1d17ebba25c",
     "92fd36150bc5a13c9e3e984ecb748ffa",
-    "1b769561f0537e8ca18405cdc72a8acb"
+    "1b769561f0537e8ca18405cdc72a8acb",
+    "15a4599ffdae5203fdf8c79cc3eba53e"
   ],
   "style_history": [
-    "Markets Report",
     "SME Angle",
     "Backgrounder",
     "Explainer",
@@ -220,10 +220,10 @@
     "Markets Report",
     "SME Angle",
     "Explainer",
-    "Backgrounder"
+    "Backgrounder",
+    "Power Accountability"
   ],
   "angle_history": [
-    "accountability|WPP Scangroup|Markets Report",
     "impact_on_citizens|Flame Tree Group|Explainer",
     "impact_on_citizens|Fuel Levy|Power Accountability",
     "money_follow|Africa Forward Summit 2026|SME Angle",
@@ -302,6 +302,7 @@
     "policy_gap|Bonfire Adventures|Markets Report",
     "winners_losers|KECOBO|SME Angle",
     "myth_vs_fact|NSE|Explainer",
-    "policy_gap|Sovereign Wealth Fund|Backgrounder"
+    "policy_gap|Sovereign Wealth Fund|Backgrounder",
+    "accountability|Oil refinery|Power Accountability"
   ]
 }
