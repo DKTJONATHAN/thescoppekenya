@@ -1,18 +1,20 @@
 ---
 title: "KRA Sets 8 Percent Market Interest Rate for Taxable Benefits"
 slug: "kra-sets-8-percent-market-interest-rate-for-taxable-benefits"
-description: "The Kenya Revenue Authority has fixed the market interest rate at 8 percent for employee benefits and loans for the July to September period."
+description: "KRA Sets 8 Percent Market Interest Rate for Taxable Benefits: The Kenya Revenue Authority has fixed the market interest rate at 8 percent for employee benefits"
+excerpt: "The 8 Percent Benchmark: Decoding the KRA's Mid Year Tax Calibration The Kenya Revenue Authority has anchored the market interest rate for t"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/ZR7LBrM1/01f7667075d6.jpg"
 category: "News"
 tags: ["kra", "kenya revenue authority", "taxation", "fringe benefit tax", "business news", "kenya economy"]
+canonical: "https://zandani.co.ke/article/kra-sets-8-percent-market-interest-rate-for-taxable-benefits"
 date: "2026-07-08T18:22:56Z"
 dateModified: "2026-07-08T18:22:56Z"
+focusKeyword: "KRA Sets 8 Percent Market Interest Rate for Taxable Benefits"
 schema: "NewsArticle"
 ---
 
-## The 8 Percent Benchmark: Decoding the KRA's Mid-Year Tax Calibration
+## The 8 Percent Benchmark: Decoding the KRA's Mid-Year Tax Calibration KRA Sets 8 Percent Market Interest Rate for Taxable Benefits is the central subject of the update.
 
 The Kenya Revenue Authority has anchored the market interest rate for the third quarter of 2026 at 8 percent, effectively redefining the baseline for taxable benefits between July and September. This recurring administrative reset continues a long tradition of tightening the regulatory grip on corporate lending structures and non-cash compensation.
 
