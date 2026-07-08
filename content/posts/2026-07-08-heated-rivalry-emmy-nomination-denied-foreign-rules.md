@@ -14,7 +14,7 @@ focusKeyword: "'Heated Rivalry Denied Emmy Nomination Over Foreign Rules"
 schema: "NewsArticle"
 ---
 
-## Emmy's 'Foreign' Production Rule Stirs Heated Rivalry Emmy Outcry "Heated Rivalry Denied Emmy Nomination Over Foreign Rules is the central subject of the update.
+## Emmy's 'Foreign' Production Rule Stirs Heated Rivalry Emmy Outcry "Heated Rivalry Denied Emmy Nomination Over Foreign Rules is the central subject of the update. 'Heated Rivalry Denied Emmy Nomination Over Foreign Rules is the central subject of the update.
 
 The Television Academy's decision to deny the critically acclaimed series "Heated Rivalry" a spot on the 2026 Emmy nomination list has sparked widespread outrage, igniting a global debate about the awards' relevance and inclusivity. Fans and industry experts are questioning if the Emmys are inadvertently alienating international talent with their rigid 'foreign production' rules.
 

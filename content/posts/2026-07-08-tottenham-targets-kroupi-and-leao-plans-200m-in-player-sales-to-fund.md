@@ -1,15 +1,20 @@
 ---
 title: "Tottenham targets Kroupi and Leao, plans £200m in player sales to fund moves"
 slug: "tottenham-targets-kroupi-and-leao-plans-200m-in-player-sales-to-fund"
+description: "Tottenham targets Kroupi and Leao, plans £200m in player sales to: Tottenham's Transfer Circus: Debts and Dreams Tottenham's latest transfer window is less a"
+excerpt: "Tottenham's Transfer Circus: Debts and Dreams Tottenham's latest transfer window is less a strategic masterclass and more a desperate gamble"
 author: "Sports Desk"
 image: "https://i.ibb.co/pjX1kB5Q/b581c21cebf4.jpg"
 category: "Global News"
+tags: ["tottenham targets kroupi and leao plans 200m in player sales to fund", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/tottenham-targets-kroupi-and-leao-plans-200m-in-player-sales-to-fund"
 date: "2026-07-08T16:44:03Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-07-08T16:44:03Z"
+focusKeyword: "Tottenham targets Kroupi and Leao, plans £200m in player sales to"
 schema: "NewsArticle"
 ---
-## Tottenham's Transfer Circus: Debts and Dreams
+
+## Tottenham's Transfer Circus: Debts and Dreams Tottenham targets Kroupi and Leao, plans £200m in player sales to is the central subject of the update.
 
 Tottenham's latest transfer window is less a strategic masterclass and more a desperate gamble. After shattering spending records, they now parade a "new policy" of player sales, attempting to justify colossal outlays with the hopeful acquisition of Kroupi and Leao. This isn't shrewd business, it's a frantic balancing act masquerading as ambition.
 
