@@ -312,10 +312,10 @@
     "ce633101cca8df9dcb7c7ccb469b35e3",
     "4c6ef80e53c280ea15764ea3fb0fbc3c",
     "6fcd4c3af48aa6b0bf8f5c30729b4af3",
-    "694ed9038ca3d186608bfdb904d9e5ba"
+    "694ed9038ca3d186608bfdb904d9e5ba",
+    "a0b7f1a800111df8c1e0ce451a57df24"
   ],
   "style_history": [
-    "Profile Beat",
     "Trend Take",
     "Receipts Piece",
     "Hard News Lead",
@@ -344,10 +344,10 @@
     "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Profile Beat"
   ],
   "angle_history": [
-    "impact_on_citizens|TikTok|Receipts Piece",
     "accountability|William Ruto|Hard News Lead",
     "winners_losers|Kenya|Reaction Round-up",
     "money_follow|celebrity|Profile Beat",
@@ -426,6 +426,7 @@
     "timeline_shift|Mummie Francie|Trend Take",
     "policy_gap|content creation|Hard News Lead",
     "policy_gap|Akothee|Reaction Round-up",
-    "money_follow|Forex traders|Receipts Piece"
+    "money_follow|Forex traders|Receipts Piece",
+    "next_48_hours|privacy|Profile Beat"
   ]
 }
