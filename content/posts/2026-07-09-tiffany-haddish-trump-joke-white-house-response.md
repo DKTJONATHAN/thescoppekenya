@@ -1,21 +1,20 @@
 ---
-title: "Tiffany Haddish's Trump Joke Draws White House Ire
+title: "'Tiffany Haddish's Trump Joke Draws White House Ire"
 slug: "tiffany-haddish-trump-joke-white-house-response"
-description: "Tiffany Haddish's joke about Donald Trump on 'Jimmy Kimmel Live' drew a dismissive White House response. The comedian reacted publicly to their anger, questioning her payment. Read the full story now."
+description: "'Tiffany Haddish's Trump Joke Draws White House Ire: Tiffany Haddish's joke about Donald Trump on 'Jimmy Kimmel Live' drew a dismissive White House response."
+excerpt: "When Punchlines Come With a Price Tag: The Financial Fallout of a Tiffany Haddish Trump Joke In an age demanding outspokenness from public f"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/yLT7Sct/d9f9f69ff5c6.jpg"
-og_title: "Tiffany Haddish's Trump Joke Ignites White House Spat"
-og_description: "Comedian Tiffany Haddish joked about Donald Trump on live TV, leading to a dismissive response from the White House. Haddish reacted publicly to their perceived anger."
-focus_keyword: "Tiffany Haddish Trump joke"
 category: "Entertainment"
 tags: ["tiffany haddish", "donald trump", "white house", "jimmy kimmel live", "celebrity news", "political humor", "late night tv"]
+canonical: "https://zandani.co.ke/article/tiffany-haddish-trump-joke-white-house-response"
 date: "2026-07-09T17:04:31Z"
 dateModified: "2026-07-09T17:04:31Z"
+focusKeyword: "'Tiffany Haddish's Trump Joke Draws White House Ire"
 schema: "NewsArticle"
 ---
 
-## When Punchlines Come With a Price Tag: The Financial Fallout of a Tiffany Haddish Trump Joke
+## When Punchlines Come With a Price Tag: The Financial Fallout of a Tiffany Haddish Trump Joke "Tiffany Haddish's Trump Joke Draws White House Ire is the central subject of the update.
 
 In an age demanding outspokenness from public figures, the financial ramifications of their declarations often remain unexamined. Tiffany Haddish's recent political joke on late-night television provides an unvarnished look at the economic calculus confronting celebrities who choose to engage with political topics.
 
