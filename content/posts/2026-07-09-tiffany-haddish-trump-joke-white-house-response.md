@@ -14,7 +14,7 @@ focusKeyword: "'Tiffany Haddish's Trump Joke Draws White House Ire"
 schema: "NewsArticle"
 ---
 
-## When Punchlines Come With a Price Tag: The Financial Fallout of a Tiffany Haddish Trump Joke "Tiffany Haddish's Trump Joke Draws White House Ire is the central subject of the update.
+## When Punchlines Come With a Price Tag: The Financial Fallout of a Tiffany Haddish Trump Joke "Tiffany Haddish's Trump Joke Draws White House Ire is the central subject of the update. 'Tiffany Haddish's Trump Joke Draws White House Ire is the central subject of the update.
 
 In an age demanding outspokenness from public figures, the financial ramifications of their declarations often remain unexamined. Tiffany Haddish's recent political joke on late-night television provides an unvarnished look at the economic calculus confronting celebrities who choose to engage with political topics.
 
