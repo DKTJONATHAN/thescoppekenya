@@ -1,18 +1,20 @@
 ---
 title: "Registrar of Political Parties ratifies Edwin Sifuna ODM removal"
 slug: "registrar-ratifies-edwin-sifuna-odm-removal"
-description: "The Office of the Registrar of Political Parties has officially confirmed the removal of Edwin Sifuna from his role as the ODM party secretary-general."
+description: "Registrar of Political Parties ratifies Edwin Sifuna ODM removal: The Office of the Registrar of Political Parties has officially confirmed the removal of"
+excerpt: "Registrar Ratifies Orange Democratic Movement Leadership Change The Office of the Registrar of Political Parties has officially confirmed th"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/fYq2cr7f/09e80bb168d8.jpg"
 category: "News"
 tags: ["odm", "kenya politics", "edwin sifuna", "political parties act", "orpp", "nairobi news"]
+canonical: "https://zandani.co.ke/article/registrar-ratifies-edwin-sifuna-odm-removal"
 date: "2026-07-09T18:53:11Z"
 dateModified: "2026-07-09T18:53:11Z"
+focusKeyword: "Registrar of Political Parties ratifies Edwin Sifuna ODM removal"
 schema: "NewsArticle"
 ---
 
-## Registrar Ratifies Orange Democratic Movement Leadership Change
+## Registrar Ratifies Orange Democratic Movement Leadership Change Registrar of Political Parties ratifies Edwin Sifuna ODM removal is the central subject of the update.
 
 The Office of the Registrar of Political Parties has officially confirmed the removal of Edwin Sifuna from his role as Secretary-General of the Orange Democratic Movement. This ratification follows a comprehensive review of the party’s internal disciplinary records, confirming that the action aligns with the statutory obligations defined under the Political Parties Act. With the update now reflected in the official register, the transition of power is formally recognized by the state.
 
