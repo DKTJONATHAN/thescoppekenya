@@ -1,18 +1,20 @@
 ---
 title: "Ethiopian Police Offer Forensic Science Scholarships to Kenyans"
 slug: "ethiopian-police-offer-forensic-science-scholarships-to-kenyans"
-description: "Kenyan police officers are invited to apply for the Dr Workneh Gebeyehu Scholarship Program for training in forensic science at the Ethiopian University."
+description: "Ethiopian Police Offer Forensic Science Scholarships to Kenyans: Kenyan police officers are invited to apply for the Dr Workneh Gebeyehu Scholarship Program"
+excerpt: "Solving Kenya's Cold Case Crisis Through Regional Forensic Training The Ethiopian Federal Police recently opened the Dr. Workneh Gebeyehu Sc"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/V00PyH8z/a2956cb7bc64.jpg"
 category: "News"
 tags: ["kenya police", "forensic science", "igad", "ethiopia", "security training", "regional cooperation"]
+canonical: "https://zandani.co.ke/article/ethiopian-police-offer-forensic-science-scholarships-to-kenyans"
 date: "2026-07-09T13:53:05Z"
 dateModified: "2026-07-09T13:53:05Z"
+focusKeyword: "Ethiopian Police Offer Forensic Science Scholarships to Kenyans"
 schema: "NewsArticle"
 ---
 
-## Solving Kenya's Cold Case Crisis Through Regional Forensic Training
+## Solving Kenya's Cold Case Crisis Through Regional Forensic Training Ethiopian Police Offer Forensic Science Scholarships to Kenyans is the central subject of the update.
 
 The Ethiopian Federal Police recently opened the Dr. Workneh Gebeyehu Scholarship Program, inviting Kenyan law enforcement to master forensic science at the Crime Investigation Academy in Sandafa. This initiative aims to address deep seated technical shortcomings in local criminal investigations.
 
