@@ -1,21 +1,20 @@
 ---
-title: "Justin Baldoni & Emily Discuss Trauma After Blake Lively Settlement
+title: "'Justin Baldoni & Emily Discuss Trauma After Blake Lively Settlement"
 slug: "justin-baldoni-emily-trauma-blake-lively-settlement"
-description: "Justin Baldoni and wife Emily released a video discussing the trauma endured after settling a two-year legal dispute with Blake Lively. They are now focusing on healing as a family. Read more."
+description: "'Justin Baldoni & Emily Discuss Trauma After Blake Lively Settlem: Justin Baldoni and wife Emily released a video discussing the trauma endured after settling"
+excerpt: "Baldoni Breaks Silence on Lively Settlement, Addressing Sexual Assault Accusations Justin Baldoni and his wife, Emily, have publicly address"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/spcZ6xH3/f5d56db42079.jpg"
-og_title: "Baldoni & Emily Discuss Trauma After Lively Suit Settles"
-og_description: "Justin Baldoni and wife Emily share their emotional experience and 'trauma' after settling a legal dispute with Blake Lively. They are now focusing on family healing."
-focus_keyword: "Justin Baldoni legal settlement"
 category: "Entertainment"
 tags: ["justin baldoni", "emily baldoni", "blake lively", "legal settlement", "celebrity news", "entertainment", "trauma healing"]
+canonical: "https://zandani.co.ke/article/justin-baldoni-emily-trauma-blake-lively-settlement"
 date: "2026-07-09T10:06:52Z"
 dateModified: "2026-07-09T10:06:52Z"
+focusKeyword: "'Justin Baldoni & Emily Discuss Trauma After Blake Lively Settlem"
 schema: "NewsArticle"
 ---
 
-## Baldoni Breaks Silence on Lively Settlement, Addressing Sexual Assault Accusations
+## Baldoni Breaks Silence on Lively Settlement, Addressing Sexual Assault Accusations "Justin Baldoni & Emily Discuss Trauma After Blake Lively Settlem is the central subject of the update.
 
 Justin Baldoni and his wife, Emily, have publicly addressed the two-year "trauma" stemming from a legal dispute with Blake Lively, which reportedly involved accusations of sexual assault and a hostile work environment. In a five-minute video released Wednesday, the couple broke their silence, expressing profound gratitude for public support and signaling a new focus on family healing following the settlement.
 
