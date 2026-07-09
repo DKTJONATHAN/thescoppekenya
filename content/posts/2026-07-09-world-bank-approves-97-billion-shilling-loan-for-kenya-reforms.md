@@ -1,18 +1,20 @@
 ---
 title: "World Bank Approves 97 Billion Shilling Loan for Kenya Reforms"
 slug: "world-bank-approves-97-billion-shilling-loan-for-kenya-reforms"
-description: "The World Bank has approved a 750 million dollar loan to support fiscal management, anti-corruption efforts, and public sector reforms in Kenya."
+description: "World Bank Approves 97 Billion Shilling Loan for Kenya Reforms: The World Bank has approved a 750 million dollar loan to support fiscal management,"
+excerpt: "The Price of Oversight: Decoding the World Bank Digital Leash The World Bank board of directors greenlit a 750 million dollar credit facilit"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/sfXrZhx/06097ab43d89.jpg"
 category: "Gossip"
 tags: ["world bank", "kenya economy", "fiscal policy", "governance", "kenyan news", "public finance"]
+canonical: "https://zandani.co.ke/article/world-bank-approves-97-billion-shilling-loan-for-kenya-reforms"
 date: "2026-07-09T09:56:31Z"
 dateModified: "2026-07-09T09:56:31Z"
+focusKeyword: "World Bank Approves 97 Billion Shilling Loan for Kenya Reforms"
 schema: "NewsArticle"
 ---
 
-## The Price of Oversight: Decoding the World Bank Digital Leash
+## The Price of Oversight: Decoding the World Bank Digital Leash World Bank Approves 97 Billion Shilling Loan for Kenya Reforms is the central subject of the update.
 
 The World Bank board of directors greenlit a 750 million dollar credit facility for Kenya this morning, effectively binding the national treasury to a rigid, technology-driven fiscal reporting schedule designed to track every shilling spent across state departments.
 
