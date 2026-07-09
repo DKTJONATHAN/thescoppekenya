@@ -1,18 +1,20 @@
 ---
 title: "Vindee Left Out of Kai Cenat Streamer University Final List"
 slug: "vindee-excluded-from-kai-cenat-streamer-university-list"
-description: "Kenyan content creator Vindee is missing from the final roster for Kai Cenat's Streamer University despite earlier claims of acceptance."
+description: "Vindee Left Out of Kai Cenat Streamer University Final List: Kenyan content creator Vindee is missing from the final roster for Kai Cenat's Streamer University"
+excerpt: "The Streamer University Discrepancy Kenyan content creator Vindee has been officially omitted from the final Class of 2026 roster for Kai Ce"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/s9MbLd0p/f29ec7edaa8b.webp"
 category: "Gossip"
 tags: ["vindee", "kai cenat", "streamer university", "kenyan content creators", "social media news"]
+canonical: "https://zandani.co.ke/article/vindee-excluded-from-kai-cenat-streamer-university-list"
 date: "2026-07-09T11:20:07Z"
 dateModified: "2026-07-09T11:20:07Z"
+focusKeyword: "Vindee Left Out of Kai Cenat Streamer University Final List"
 schema: "NewsArticle"
 ---
 
-## The Streamer University Discrepancy
+## The Streamer University Discrepancy Vindee Left Out of Kai Cenat Streamer University Final List is the central subject of the update.
 
 Kenyan content creator Vindee has been officially omitted from the final Class of 2026 roster for Kai Cenat's Streamer University, triggering a significant debate regarding the distinction between preliminary digital notifications and finalized professional partnership agreements.
 

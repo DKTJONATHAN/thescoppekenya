@@ -14,7 +14,7 @@ focusKeyword: "'Justin Baldoni & Emily Discuss Trauma After Blake Lively Settlem
 schema: "NewsArticle"
 ---
 
-## Baldoni Breaks Silence on Lively Settlement, Addressing Sexual Assault Accusations "Justin Baldoni & Emily Discuss Trauma After Blake Lively Settlem is the central subject of the update.
+## Baldoni Breaks Silence on Lively Settlement, Addressing Sexual Assault Accusations "Justin Baldoni & Emily Discuss Trauma After Blake Lively Settlem is the central subject of the update. 'Justin Baldoni & Emily Discuss Trauma After Blake Lively Settlem is the central subject of the update.
 
 Justin Baldoni and his wife, Emily, have publicly addressed the two-year "trauma" stemming from a legal dispute with Blake Lively, which reportedly involved accusations of sexual assault and a hostile work environment. In a five-minute video released Wednesday, the couple broke their silence, expressing profound gratitude for public support and signaling a new focus on family healing following the settlement.
 
