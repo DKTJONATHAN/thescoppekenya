@@ -14,7 +14,7 @@ focusKeyword: "'Chris Parnell: The Only SNL Cast Member Fired Twice"
 schema: "NewsArticle"
 ---
 
-## Chris Parnell's Double Exit from SNL "Chris Parnell: The Only SNL Cast Member Fired Twice is the central subject of the update.
+## Chris Parnell's Double Exit from SNL "Chris Parnell: The Only SNL Cast Member Fired Twice is the central subject of the update. 'Chris Parnell: The Only SNL Cast Member Fired Twice is the central subject of the update.
 
 Chris Parnell has a unique place in Saturday Night Live history: he was fired from the show not once, but twice! Many fans still wonder how "The Iceman" managed to get a second chance, and what his story tells us about how SNL handles its cast.
 

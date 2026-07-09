@@ -1,18 +1,20 @@
 ---
 title: "High Court Bars Wetangula and Kingi from Partisan Political Acts"
 slug: "high-court-bars-wetangula-kingi-partisan-politics"
-description: "The High Court has issued orders blocking Speakers Moses Wetangula and Amason Kingi from campaigning for the President citing constitutional impartiality."
+description: "High Court Bars Wetangula and Kingi from Partisan Political Acts: The High Court has issued orders blocking Speakers Moses Wetangula and Amason Kingi from"
+excerpt: "The Gavel Goes Silent on the Campaign Trail The political machinery of the ruling coalition has ground to a sudden halt after the High Court"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/8L9s32wb/50fb168b8b92.jpg"
 category: "News"
 tags: ["kenya politics", "moses wetangula", "amason kingi", "high court", "parliament", "judicial review"]
+canonical: "https://zandani.co.ke/article/high-court-bars-wetangula-kingi-partisan-politics"
 date: "2026-07-09T08:32:29Z"
 dateModified: "2026-07-09T08:32:29Z"
+focusKeyword: "High Court Bars Wetangula and Kingi from Partisan Political Acts"
 schema: "NewsArticle"
 ---
 
-## The Gavel Goes Silent on the Campaign Trail
+## The Gavel Goes Silent on the Campaign Trail High Court Bars Wetangula and Kingi from Partisan Political Acts is the central subject of the update.
 
 The political machinery of the ruling coalition has ground to a sudden halt after the High Court stripped the nation's two top legislative officers of their ability to double as campaign cheerleaders for the Presidency.
 
