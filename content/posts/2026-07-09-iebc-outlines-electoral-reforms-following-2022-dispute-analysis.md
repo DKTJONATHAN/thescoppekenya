@@ -1,18 +1,20 @@
 ---
 title: "IEBC Outlines Electoral Reforms Following 2022 Dispute Analysis"
 slug: "iebc-outlines-electoral-reforms-following-2022-dispute-analysis"
-description: "The IEBC is reviewing the 2022 election dispute report to implement legal and administrative reforms ahead of the polls to reduce future electoral risks."
+description: "IEBC Outlines Electoral Reforms Following 2022 Dispute Analysis: The IEBC is reviewing the 2022 election dispute report to implement legal and administrative"
+excerpt: "A Procedural Facade for Electoral Instability The Independent Electoral and Boundaries Commission recently unveiled its Pre Election Dispute"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/Rk6JVvjP/956a6865771b.webp"
 category: "Technology"
 tags: ["iebc", "kenya politics", "electoral reform", "general election", "candidate vetting", "political violence"]
+canonical: "https://zandani.co.ke/article/iebc-outlines-electoral-reforms-following-2022-dispute-analysis"
 date: "2026-07-09T13:59:55Z"
 dateModified: "2026-07-09T13:59:55Z"
+focusKeyword: "IEBC Outlines Electoral Reforms Following 2022 Dispute Analysis"
 schema: "NewsArticle"
 ---
 
-## A Procedural Facade for Electoral Instability
+## A Procedural Facade for Electoral Instability IEBC Outlines Electoral Reforms Following 2022 Dispute Analysis is the central subject of the update.
 
 The Independent Electoral and Boundaries Commission recently unveiled its Pre-Election Dispute Resolution (EDR) report. Central to this proposal is a 48-hour window designed to allow candidates to rectify documentation errors. While the commission markets this as a solution to the administrative friction observed in 2022, the initiative seems strikingly detached from the broader 84.1 percent probability of election-related violence projected for the 2027 cycle.
 
