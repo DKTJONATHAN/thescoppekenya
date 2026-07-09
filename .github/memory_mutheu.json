@@ -300,10 +300,10 @@
     "f0feeb1c3e3a40df52392f4e5e90224e",
     "b350fe8b94af2a6f1981d0089c155277",
     "286352fcdc9816ec1dd4bda7eef2d500",
-    "0b886f413c9efcf96b49c5d6b565a754"
+    "0b886f413c9efcf96b49c5d6b565a754",
+    "828d0c5bc50c64e93f0cdfc31aa58878"
   ],
   "style_history": [
-    "Explainer",
     "Trend Take",
     "Reaction Round-up",
     "Hard News Lead",
@@ -332,10 +332,10 @@
     "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "myth_vs_fact|celebrities|Reaction Round-up",
     "myth_vs_fact|Kate Hudson|Trend Take",
     "myth_vs_fact|Alaskan Bush People|Profile Beat",
     "story_progression|3rd Rock From the Sun|Explainer",
@@ -414,6 +414,7 @@
     "timeline_shift|Big Brother|Trend Take",
     "myth_vs_fact|Joe Pesci|Profile Beat",
     "winners_losers|Emmys|Reaction Round-up",
-    "policy_gap|Saturday Night Live|Explainer"
+    "policy_gap|Saturday Night Live|Explainer",
+    "winners_losers|Justin Baldoni|Hard News Lead"
   ]
 }
