@@ -314,10 +314,10 @@
     "5443adb4e2d743f84e4be6d484dc84c1",
     "ce10540707fe3c8151b7321e393cc5fe",
     "116715b1f7e9cb77cc640d42d5793e84",
-    "e07141203c6171453b54ae4da7dd033e"
+    "e07141203c6171453b54ae4da7dd033e",
+    "998e5160e71a5bc8573cf31b2aa14586"
   ],
   "style_history": [
-    "Power Accountability",
     "Explainer",
     "Reaction & Voices",
     "Hard News Lead",
@@ -346,10 +346,10 @@
     "Hard News Lead",
     "Power Accountability",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Explainer"
   ],
   "angle_history": [
-    "timeline_shift|data adequacy|Hard News Lead",
     "money_follow|NTSA|Power Accountability",
     "winners_losers|JKIA|Explainer",
     "story_progression|Kenyan politics|Reaction & Voices",
@@ -428,6 +428,7 @@
     "timeline_shift|National Treasury|Hard News Lead",
     "accountability|Kenya Forest Service|Power Accountability",
     "money_follow|KRA|Context Backgrounder",
-    "next_48_hours|Judiciary|Reaction & Voices"
+    "next_48_hours|Judiciary|Reaction & Voices",
+    "policy_gap|Kenya|Explainer"
   ]
 }
