@@ -1,18 +1,20 @@
 ---
 title: "France face Morocco in World Cup quarter-final showdown"
 slug: "france-face-morocco-in-world-cup-quarter-final-showdown"
-description: "Football analysts examine France's attacking strength against Morocco's defense as the 2026 World Cup reaches the quarter-final stage this Thursday."
+description: "France face Morocco in World Cup quarter-final showdown: Football analysts examine France's attacking strength against Morocco's defense as the 2026 World Cup"
+excerpt: "Tactical Heritage: The French Blueprint Defining Morocco Morocco enters Thursday night's quarter final against France not as a foreign entit"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/mFV9MTzY/177d6be3bad9.jpg"
 category: "Sports"
 tags: ["world cup 2026", "france football", "morocco national team", "football analysis", "sports news"]
+canonical: "https://zandani.co.ke/article/france-face-morocco-in-world-cup-quarter-final-showdown"
 date: "2026-07-09T12:59:14Z"
 dateModified: "2026-07-09T12:59:14Z"
+focusKeyword: "France face Morocco in World Cup quarter-final showdown"
 schema: "NewsArticle"
 ---
 
-## Tactical Heritage: The French Blueprint Defining Morocco
+## Tactical Heritage: The French Blueprint Defining Morocco France face Morocco in World Cup quarter-final showdown is the central subject of the update.
 
 Morocco enters Thursday night's quarter-final against France not as a foreign entity, but as a sophisticated mirror of the French academy system. This clash transcends typical underdog tropes, evolving instead into a tactical duel between two sides forged in the same classrooms.
 
