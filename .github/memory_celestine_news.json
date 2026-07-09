@@ -313,10 +313,10 @@
     "b5ece2b4f2b087b8b9bc4b518b09da00",
     "5443adb4e2d743f84e4be6d484dc84c1",
     "ce10540707fe3c8151b7321e393cc5fe",
-    "116715b1f7e9cb77cc640d42d5793e84"
+    "116715b1f7e9cb77cc640d42d5793e84",
+    "e07141203c6171453b54ae4da7dd033e"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Power Accountability",
     "Explainer",
     "Reaction & Voices",
@@ -345,10 +345,10 @@
     "Explainer",
     "Hard News Lead",
     "Power Accountability",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "myth_vs_fact|Treasury|Context Backgrounder",
     "timeline_shift|data adequacy|Hard News Lead",
     "money_follow|NTSA|Power Accountability",
     "winners_losers|JKIA|Explainer",
@@ -427,6 +427,7 @@
     "money_follow|Nairobi|Explainer",
     "timeline_shift|National Treasury|Hard News Lead",
     "accountability|Kenya Forest Service|Power Accountability",
-    "money_follow|KRA|Context Backgrounder"
+    "money_follow|KRA|Context Backgrounder",
+    "next_48_hours|Judiciary|Reaction & Voices"
   ]
 }
