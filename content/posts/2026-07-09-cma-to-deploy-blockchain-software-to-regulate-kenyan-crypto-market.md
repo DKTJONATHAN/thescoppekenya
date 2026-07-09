@@ -1,18 +1,20 @@
 ---
 title: "CMA to Deploy Blockchain Software to Regulate Kenyan Crypto Market"
 slug: "cma-to-deploy-blockchain-software-to-regulate-kenyan-crypto-market"
-description: "Kenya's Capital Markets Authority is set to adopt blockchain monitoring tools to oversee virtual assets and enforce new financial regulations."
+description: "CMA to Deploy Blockchain Software to Regulate Kenyan Crypto Marke: Kenya's Capital Markets Authority is set to adopt blockchain monitoring tools to oversee"
+excerpt: "Kenya Brings Digital Assets Under Watchful Eyes The Capital Markets Authority is moving to purchase specialized blockchain surveillance soft"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/pD08bgy/4563ab5406d1.png"
 category: "Business"
 tags: ["kenya", "cma", "cryptocurrency", "blockchain", "financial regulation", "capital markets"]
+canonical: "https://zandani.co.ke/article/cma-to-deploy-blockchain-software-to-regulate-kenyan-crypto-market"
 date: "2026-07-09T08:38:27Z"
 dateModified: "2026-07-09T08:38:27Z"
+focusKeyword: "CMA to Deploy Blockchain Software to Regulate Kenyan Crypto Marke"
 schema: "NewsArticle"
 ---
 
-## Kenya Brings Digital Assets Under Watchful Eyes
+## Kenya Brings Digital Assets Under Watchful Eyes CMA to Deploy Blockchain Software to Regulate Kenyan Crypto Marke is the central subject of the update.
 
 The Capital Markets Authority is moving to purchase specialized blockchain surveillance software to audit digital asset flows within our borders. This shift toward active, real-time oversight marks the transition of the local crypto market from an informal frontier to a formal, regulated financial sector.
 
