@@ -1,18 +1,20 @@
 ---
 title: "Za Ndani introduces personalized tools and World Cup coverage"
 slug: "za-ndani-launches-personalized-tools-and-world-cup-coverage"
-description: "Za Ndani launches new personalized reading tools and content tracking features alongside comprehensive live updates for the 2026 FIFA World Cup."
+description: "Za Ndani introduces personalized tools and World Cup coverage: Za Ndani launches new personalized reading tools and content tracking features alongside"
+excerpt: "The Algorithmic Offside Trap The latest suite of user profile tools and tournament tracking features launching on this platform is being sol"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/tMr95N2B/25287b0106b6.webp"
 category: "Opinions"
 tags: ["za ndani", "digital news", "fifa world cup", "kenyan media", "online reading", "sports updates"]
+canonical: "https://zandani.co.ke/article/za-ndani-launches-personalized-tools-and-world-cup-coverage"
 date: "2026-07-09T12:15:58Z"
 dateModified: "2026-07-09T12:15:58Z"
+focusKeyword: "Za Ndani introduces personalized tools and World Cup coverage"
 schema: "NewsArticle"
 ---
 
-## The Algorithmic Offside Trap
+## The Algorithmic Offside Trap Za Ndani introduces personalized tools and World Cup coverage is the central subject of the update.
 
 The latest suite of user profile tools and tournament tracking features launching on this platform is being sold as a win for the casual football fan. This is a deliberate misdirection that ignores the massive shift toward the total commercialization of Kenyan attention during the 2026 FIFA World Cup.
 
