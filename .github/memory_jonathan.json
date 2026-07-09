@@ -175,10 +175,10 @@
     "bceb032fd28e028d39c697c61a932d38",
     "dbdc4fa167480fd5a7a7b9c015e4cef7",
     "4c8446f315595584778705a39c6b9771",
-    "c7acfdd644a93057e12928ec6c99b8e0"
+    "c7acfdd644a93057e12928ec6c99b8e0",
+    "f680b5a146a273efa7c6cf1257928c77"
   ],
   "style_history": [
-    "Counterpoint",
     "Historical Lens",
     "Letter Form",
     "Sharp Column",
@@ -207,10 +207,10 @@
     "Letter Form",
     "Personal Reflection",
     "Historical Lens",
-    "Sharp Column"
+    "Sharp Column",
+    "Counterpoint"
   ],
   "angle_history": [
-    "accountability|Africa Forward Summit|Counterpoint",
     "accountability|Kenya Revenue Authority|Letter Form",
     "money_follow|zero-tariff|Personal Reflection",
     "impact_on_citizens|coalition politics|Sharp Column",
@@ -289,6 +289,7 @@
     "policy_gap|infrastructure|Letter Form",
     "policy_gap|tobacco control|Personal Reflection",
     "timeline_shift|public debt|Historical Lens",
-    "policy_gap|Diplomacy|Sharp Column"
+    "policy_gap|Diplomacy|Sharp Column",
+    "money_follow|digital news|Counterpoint"
   ]
 }
