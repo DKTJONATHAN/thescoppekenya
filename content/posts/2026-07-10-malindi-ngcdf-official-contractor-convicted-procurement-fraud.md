@@ -1,18 +1,20 @@
 ---
 title: "Malindi NG-CDF Official and Contractor Convicted in Fraud Case"
 slug: "malindi-ngcdf-official-contractor-convicted-procurement-fraud"
-description: "A Malindi court has convicted an NG-CDF manager and a contractor over a Sh19 million procurement scandal involving forged documents and illegal tendering."
+description: "Malindi NG-CDF Official and Contractor Convicted in Fraud Case: A Malindi court has convicted an NG-CDF manager and a contractor over a Sh19 million"
+excerpt: "A Price Tag on Public Trust For many Malindi residents, the court gavel that sounded on Friday morning felt less like a heavy blow to corrup"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/xSFR0Bkk/be92863e600c.jpg"
 category: "News"
 tags: ["ng-cdf", "corruption", "malindi", "procurement fraud", "kenyan news", "judiciary"]
+canonical: "https://zandani.co.ke/article/malindi-ngcdf-official-contractor-convicted-procurement-fraud"
 date: "2026-07-10T13:15:49Z"
 dateModified: "2026-07-10T13:15:49Z"
+focusKeyword: "Malindi NG-CDF Official and Contractor Convicted in Fraud Case"
 schema: "NewsArticle"
 ---
 
-## A Price Tag on Public Trust
+## A Price Tag on Public Trust Malindi NG-CDF Official and Contractor Convicted in Fraud Case is the central subject of the update.
 
 For many Malindi residents, the court gavel that sounded on Friday morning felt less like a heavy blow to corruption and more like a gentle tap on the shoulder. While the legal system has finally stamped a conviction on the books for a massive procurement scandal involving public funds, the math behind the sentencing has left taxpayers doing a double take.
 
