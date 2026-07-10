@@ -302,10 +302,10 @@
     "286352fcdc9816ec1dd4bda7eef2d500",
     "0b886f413c9efcf96b49c5d6b565a754",
     "828d0c5bc50c64e93f0cdfc31aa58878",
-    "2af3c6cdba00a9d8452545af05d227ac"
+    "2af3c6cdba00a9d8452545af05d227ac",
+    "50aa0e9a7ffbc3c020e0bca6eaeac80d"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Hard News Lead",
     "Explainer",
     "Profile Beat",
@@ -334,10 +334,10 @@
     "Reaction Round-up",
     "Explainer",
     "Hard News Lead",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "myth_vs_fact|Alaskan Bush People|Profile Beat",
     "story_progression|3rd Rock From the Sun|Explainer",
     "money_follow|Emilia Clarke|Reaction Round-up",
     "policy_gap|Vasana Montgomery|Hard News Lead",
@@ -416,6 +416,7 @@
     "winners_losers|Emmys|Reaction Round-up",
     "policy_gap|Saturday Night Live|Explainer",
     "winners_losers|Justin Baldoni|Hard News Lead",
-    "money_follow|Tiffany Haddish|Trend Take"
+    "money_follow|Tiffany Haddish|Trend Take",
+    "timeline_shift|Big Brother|Profile Beat"
   ]
 }
