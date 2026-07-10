@@ -152,10 +152,10 @@
     "05c71a2dd2a61fa1a890ff7aecd00c99",
     "7f100fba61c1cc407b9ac4d096fc9458",
     "e7f60bef4534145d0022920f56179358",
-    "d0585ccca918bd101b0654c7fccf72c8"
+    "d0585ccca918bd101b0654c7fccf72c8",
+    "8bb1fb1c9c4600c596c66c2f2d029f05"
   ],
   "style_history": [
-    "Backgrounder",
     "Critical Take",
     "Africa Angle",
     "Hard News Lead",
@@ -184,7 +184,8 @@
     "Africa Angle",
     "Backgrounder",
     "Explainer",
-    "Critical Take"
+    "Critical Take",
+    "Hard News Lead"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -255,6 +256,7 @@
     "policy_gap|internet regulation|Africa Angle",
     "story_progression|Netflix|Backgrounder",
     "myth_vs_fact|Kenya|Explainer",
-    "accountability|IEBC|Critical Take"
+    "accountability|IEBC|Critical Take",
+    "accountability|KRA|Hard News Lead"
   ]
 }
