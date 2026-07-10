@@ -317,10 +317,10 @@
     "e07141203c6171453b54ae4da7dd033e",
     "998e5160e71a5bc8573cf31b2aa14586",
     "57d02a73c9e234687f3f97fd811927a1",
-    "c10079da46e23a4524ac7de2c8136afe"
+    "c10079da46e23a4524ac7de2c8136afe",
+    "b01293230d5b00f8e4dcbd29ea9b0250"
   ],
   "style_history": [
-    "Hard News Lead",
     "Power Accountability",
     "Context Backgrounder",
     "Reaction & Voices",
@@ -349,10 +349,10 @@
     "Reaction & Voices",
     "Explainer",
     "Hard News Lead",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "story_progression|Kenyan politics|Reaction & Voices",
     "winners_losers|Kenya Met|Hard News Lead",
     "policy_gap|Laikipia Air Base|Power Accountability",
     "policy_gap|EPRA|Explainer",
@@ -431,6 +431,7 @@
     "next_48_hours|Judiciary|Reaction & Voices",
     "policy_gap|Kenya|Explainer",
     "story_progression|ODM|Hard News Lead",
-    "money_follow|oil refinery|Context Backgrounder"
+    "money_follow|oil refinery|Context Backgrounder",
+    "accountability|NG-CDF|Reaction & Voices"
   ]
 }
