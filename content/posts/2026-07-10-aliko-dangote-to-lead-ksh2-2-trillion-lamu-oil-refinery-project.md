@@ -1,18 +1,20 @@
 ---
 title: "Aliko Dangote to Lead Ksh2.2 Trillion Lamu Oil Refinery Project"
 slug: "aliko-dangote-to-lead-ksh2-2-trillion-lamu-oil-refinery-project"
-description: "President William Ruto has announced a massive Ksh2.2 trillion oil refinery project in Lamu led by Aliko Dangote, expected to create 60,000 local jobs."
+description: "Aliko Dangote to Lead Ksh2.2 Trillion Lamu Oil Refinery Project: President William Ruto has announced a massive Ksh2.2 trillion oil refinery project in Lamu"
+excerpt: "Refining the Future or Repeating the Past President William Ruto has finalized an agreement with Aliko Dangote to spearhead a Ksh2.2 trillio"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/xqnPqfgS/4d22642ddc9a.jpg"
 category: "News"
 tags: ["lamu", "oil refinery", "william ruto", "aliko dangote", "energy sector", "kenya business", "job creation"]
+canonical: "https://zandani.co.ke/article/aliko-dangote-to-lead-ksh2-2-trillion-lamu-oil-refinery-project"
 date: "2026-07-10T08:27:59Z"
 dateModified: "2026-07-10T08:27:59Z"
+focusKeyword: "Aliko Dangote to Lead Ksh2.2 Trillion Lamu Oil Refinery Project"
 schema: "NewsArticle"
 ---
 
-## Refining the Future or Repeating the Past
+## Refining the Future or Repeating the Past Aliko Dangote to Lead Ksh2.2 Trillion Lamu Oil Refinery Project is the central subject of the update.
 
 President William Ruto has finalized an agreement with Aliko Dangote to spearhead a Ksh2.2 trillion oil refinery in Lamu, targeting a 700,000-barrel-per-day capacity. This move aims to reshape East African energy logistics, promising 60,000 jobs across a regional distribution corridor.
 
