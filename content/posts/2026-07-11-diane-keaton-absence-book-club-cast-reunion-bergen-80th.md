@@ -1,21 +1,20 @@
 ---
-title: "Diane Keaton's Absence at Book Club Cast Reunion for Bergen's 80th
+title: "'Diane Keaton's Absence at Book Club Cast Reunion for Bergen's 80th"
 slug: "diane-keaton-absence-book-club-cast-reunion-bergen-80th"
-description: "Mary Steenburgen, Jane Fonda, Candice Bergen reunite for Bergen's 80th birthday, remembering late Book Club costar Diane Keaton. Learn more today."
+description: "'Diane Keaton's Absence at Book Club Cast Reunion for Bergen's 80: Mary Steenburgen, Jane Fonda, Candice Bergen reunite for Bergen's 80th birthday, remembering"
+excerpt: "Sisterhood and Sorrow: Fans React to Diane Keaton's Poignant Absence at Book Club Reunion The internet is abuzz with bittersweet emotions as"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/wZ9vxxyG/d50163b791f6.jpg"
-og_title: "Book Club Stars Reunite, Remember Diane Keaton"
-og_description: "The Book Club cast is reuniting for Candice Bergen's 80th birthday. They will be missing their beloved costar, Diane Keaton, who recently passed away."
-focus_keyword: "Diane Keaton"
 category: "Entertainment"
 tags: ["diane keaton", "mary steenburgen", "jane fonda", "candice bergen", "book club movie", "hollywood", "celebrity news"]
+canonical: "https://zandani.co.ke/article/diane-keaton-absence-book-club-cast-reunion-bergen-80th"
 date: "2026-07-10T23:33:32Z"
 dateModified: "2026-07-10T23:33:32Z"
+focusKeyword: "'Diane Keaton's Absence at Book Club Cast Reunion for Bergen's 80"
 schema: "NewsArticle"
 ---
 
-## Sisterhood and Sorrow: Fans React to Diane Keaton's Poignant Absence at Book Club Reunion
+## Sisterhood and Sorrow: Fans React to Diane Keaton's Poignant Absence at Book Club Reunion "Diane Keaton's Absence at Book Club Cast Reunion for Bergen's 80 is the central subject of the update.
 
 The internet is abuzz with bittersweet emotions as news circulates of a *Book Club* cast reunion for Candice Bergen's 80th birthday. While fans celebrate the enduring bond between the iconic actresses, many are keenly feeling the absence of the late Diane Keaton, whose spirit undoubtedly hovers over the gathering.
 
