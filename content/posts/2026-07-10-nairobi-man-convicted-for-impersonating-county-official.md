@@ -1,18 +1,20 @@
 ---
 title: "Nairobi Man Convicted for Impersonating County Official"
 slug: "nairobi-man-convicted-for-impersonating-county-official"
-description: "A Nairobi court has fined a man Ksh237,000 for impersonating a county official. Meanwhile, the EACC met with Chinese delegates to discuss anti-corruption."
+description: "Nairobi Man Convicted for Impersonating County Official: A Nairobi court has fined a man Ksh237,000 for impersonating a county official. Meanwhile, the EACC"
+excerpt: "When the Badge is a Mirage: Why Nairobi Corruption Remains Personal A motorist recently exposed a fraudulent county official, leading to a c"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/v4qH2fjg/fdee1b9bb03b.jpg"
 category: "News"
 tags: ["eacc", "nairobi", "corruption", "bribery", "kenya news", "za ndani"]
+canonical: "https://zandani.co.ke/article/nairobi-man-convicted-for-impersonating-county-official"
 date: "2026-07-10T18:26:12Z"
 dateModified: "2026-07-10T18:26:12Z"
+focusKeyword: "Nairobi Man Convicted for Impersonating County Official"
 schema: "NewsArticle"
 ---
 
-## When the Badge is a Mirage: Why Nairobi Corruption Remains Personal
+## When the Badge is a Mirage: Why Nairobi Corruption Remains Personal Nairobi Man Convicted for Impersonating County Official is the central subject of the update.
 
 A motorist recently exposed a fraudulent county official, leading to a conviction at the Milimani Anti-Corruption Court. While the court imposed a Ksh237,000 fine to deter such extortion, the incident highlights a persistent vulnerability for commuters facing daily harassment on city streets.
 
