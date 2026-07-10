@@ -1,18 +1,20 @@
 ---
 title: "Leadership Lessons from Military History and Pyrrhic Victories"
 slug: "leadership-lessons-from-military-history-and-pyrrhic-victories"
-description: "True political leadership prioritizes long-term institutional stability over short-term battlefield success, avoiding the trap of Pyrrhic victories."
+description: "Leadership Lessons from Military History and Pyrrhic Victories: True political leadership prioritizes long-term institutional stability over short-term"
+excerpt: "The Cost of Shattered Thrones Rain drums against the corrugated iron of my study, a steady rhythm reminiscent of steel striking stone. Refle"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/jsYKw9m/b33594cd078c.webp"
 category: "Opinions"
 tags: ["leadership", "political strategy", "governance", "military history", "kenya politics", "strategic management"]
+canonical: "https://zandani.co.ke/article/leadership-lessons-from-military-history-and-pyrrhic-victories"
 date: "2026-07-10T12:08:58Z"
 dateModified: "2026-07-10T12:08:58Z"
+focusKeyword: "Leadership Lessons from Military History and Pyrrhic Victories"
 schema: "NewsArticle"
 ---
 
-## The Cost of Shattered Thrones
+## The Cost of Shattered Thrones Leadership Lessons from Military History and Pyrrhic Victories is the central subject of the update.
 
 Rain drums against the corrugated iron of my study, a steady rhythm reminiscent of steel striking stone. Reflecting on history, I am struck by how rarely it celebrates true triumph. Instead, we are left with a ledger of moments where the act of winning became indistinguishable from total defeat.
 
