@@ -238,10 +238,10 @@
     "08dc1e3534fbd0b0086b2c8328729e3a",
     "3d223a7d7e71536551e3931418a101ed",
     "313fe63879770440ea3e40b9a8d63da4",
-    "9afb45049b4c1117642cfd9970658807"
+    "9afb45049b4c1117642cfd9970658807",
+    "97ba64f89145f476de3562088b940446"
   ],
   "style_history": [
-    "Stat Story",
     "Match Report",
     "Player Profile Beat",
     "Cynical Pundit",
@@ -270,10 +270,10 @@
     "Stat Story",
     "Player Profile Beat",
     "Cynical Pundit",
-    "Tactical Take"
+    "Tactical Take",
+    "Stat Story"
   ],
   "angle_history": [
-    "impact_on_citizens|Aston Villa|Player Profile Beat",
     "timeline_shift|England|Match Report",
     "impact_on_citizens|Spygate|Stat Story",
     "money_follow|Scottish Premiership|Cynical Pundit",
@@ -352,6 +352,7 @@
     "policy_gap|World Cup|Stat Story",
     "myth_vs_fact|World Cup 2026|Player Profile Beat",
     "accountability|World Cup 2026|Cynical Pundit",
-    "story_progression|World Cup 2026|Tactical Take"
+    "story_progression|World Cup 2026|Tactical Take",
+    "money_follow|Premier League|Stat Story"
   ]
 }
