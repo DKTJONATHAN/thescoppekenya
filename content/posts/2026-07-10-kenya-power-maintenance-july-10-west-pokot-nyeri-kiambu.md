@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Schedules Eight Hour Maintenance in Three Counties"
 slug: "kenya-power-maintenance-july-10-west-pokot-nyeri-kiambu"
-description: "Residents in West Pokot, Nyeri, and Kiambu face an eight hour power interruption on July 10 for scheduled network maintenance and infrastructure upgrades."
+description: "Kenya Power Schedules Eight Hour Maintenance in Three Counties: Residents in West Pokot, Nyeri, and Kiambu face an eight hour power interruption on July 10 for"
+excerpt: "Grid Freeze Sparks Adaptive Ingenuity Across Counties From the lush coffee plantations of Nyeri to the arid reach of Alale, an eight hour bl"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/m5kwgn5c/2d9aed02b4f4.jpg"
 category: "Gossip"
 tags: ["kenya power", "power outage", "kenya news", "infrastructure", "electricity maintenance"]
+canonical: "https://zandani.co.ke/article/kenya-power-maintenance-july-10-west-pokot-nyeri-kiambu"
 date: "2026-07-10T09:52:09Z"
 dateModified: "2026-07-10T09:52:09Z"
+focusKeyword: "Kenya Power Schedules Eight Hour Maintenance in Three Counties"
 schema: "NewsArticle"
 ---
 
-## Grid Freeze Sparks Adaptive Ingenuity Across Counties
+## Grid Freeze Sparks Adaptive Ingenuity Across Counties Kenya Power Schedules Eight Hour Maintenance in Three Counties is the central subject of the update.
 
 From the lush coffee plantations of Nyeri to the arid reach of Alale, an eight-hour blackout is currently testing the resilience of Kenya's small business sector. As the national grid falls silent, the hum of commerce has transitioned from electric efficiency to manual ingenuity. Across Kiambu, West Pokot, and Nyeri, entrepreneurs are navigating a landscape of dead refrigerators and frozen logistics, proving that local trade remains remarkably agile even when the power lines fail.
 
