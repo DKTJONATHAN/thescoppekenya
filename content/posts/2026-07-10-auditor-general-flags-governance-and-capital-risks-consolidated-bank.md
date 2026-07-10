@@ -1,0 +1,37 @@
+---
+title: "Auditor-General flags governance and capital risks at Consolidated Bank"
+slug: "auditor-general-flags-governance-and-capital-risks-consolidated-bank"
+description: "Consolidated Bank of Kenya faces regulatory scrutiny over insider lending and capital gaps despite reporting a return to annual profitability."
+author: "Grace Mkamburi"
+authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
+image: "https://i.ibb.co/6R65WZSW/dc90d69c75f0.jpg"
+category: "Business"
+tags: ["consolidated bank", "kenyan banking", "auditor-general", "business news", "kenya economy"]
+date: "2026-07-10T08:33:32Z"
+dateModified: "2026-07-10T08:33:32Z"
+schema: "NewsArticle"
+---
+
+## Consolidated Bank: Assessing Fiscal Viability Amid Governance Hurdles
+
+The Auditor-General has identified fundamental governance weaknesses at Consolidated Bank, highlighting that the state-supported institution has violated insider lending protocols while simultaneously battling insufficient core capital. Although the lender recorded a modest return to profitability, its continued dependence on state capital injections to maintain regulatory compliance presents an ongoing challenge for public finances.
+
+### Capital Deficits and the Fiscal Burden
+
+Consolidated Bank achieved a net profit of KSh184.3 million for the 2025 financial year, reversing the KSh163.8 million loss reported during the previous period. Despite this marginal improvement, the bank remains weighed down by an accumulated loss of KSh4.27 billion. For the National Treasury, which retains a 93.4 percent ownership stake, these figures highlight a recurring fiscal drain. Specifically, the institution faces a minimum capital shortfall of KSh3 billion, necessitating further reliance on taxpayer funds to align with statutory requirements.
+
+Reaching the mandated KSh10 billion core capital threshold by 2029 remains a daunting objective. Every infusion of public capital into the bank carries a significant opportunity cost, as these resources are redirected from essential infrastructure and social programs to address long-standing operational inefficiencies. Should the bank fail to meet these regulatory milestones, the government is left with few options beyond continued capitalization or the eventual write-off of its entire investment. For market observers, the institution increasingly functions as a channel for state-managed debt rather than a competitive commercial entity.
+
+### Governance Failures and Operational Exposure
+
+The audit findings reveal significant internal control lapses, including KSh435 million issued in staff loans and a rising volume of non-performing loans, which now stand at KSh4.27 billion. The violation of insider lending regulations represents a notable risk for depositors, indicating that internal safeguards are currently inadequate to prevent conflicts of interest. When an institution prioritizes internal lending while failing to meet core regulatory capital ratios, the ultimate financial exposure rests with the public.
+
+Management oversight has been further compromised by executive vacancies and inconsistent functionality within board committees. These deficiencies weaken the governance structure, leaving the bank vulnerable to imprudent lending decisions. While bank leadership cites the 2025 profit as a sign of recovery, the underlying structural challenges-including persistent governance gaps, elevated bad debt, and a thin capital base-indicate that this turnaround remains precarious. The reliance on the National Treasury as an emergency liquidity provider confirms that the bank has yet to achieve status as a self-sustaining enterprise.
+
+### Evaluating Taxpayer Exposure and Institutional Future
+
+The central question regarding Consolidated Bank is no longer its ability to generate temporary profits, but rather the wisdom of the government continuing to underwrite its operations. The current framework, which mandates the National Treasury to act as a perpetual financier, illustrates the inherent risks of maintaining state-linked assets that struggle to survive based on market performance alone. 
+
+Institutional investors and retail banking clients should scrutinize upcoming mid-year financial reports for further clarity. Any postponement in the delivery of capital restoration plans would likely suggest that the existing KSh3 billion shortfall is increasing rather than stabilizing. While current efforts are focused on balance sheet rehabilitation, the failure to rectify fundamental governance and loan quality issues suggests that subsequent fiscal disclosures may reveal deeper instabilities. 
+
+The broader market context also demands caution, as competitive shifts across sectors often mirror the volatility found in other industries, such as the strategic adjustments required in professional sports or the evolving skill requirements for the Kenyan labor force. As the government continues to navigate these fiscal constraints, the ability of the Treasury to withdraw support or successfully restructure the entity remains the most critical factor in determining the bank's long-term survival. The path ahead requires not just temporary capital infusions, but a comprehensive overhaul of the bank's internal controls and commercial strategy.

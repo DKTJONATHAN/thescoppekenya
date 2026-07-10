@@ -190,10 +190,10 @@
     "92fd36150bc5a13c9e3e984ecb748ffa",
     "1b769561f0537e8ca18405cdc72a8acb",
     "15a4599ffdae5203fdf8c79cc3eba53e",
-    "1fd7baa237698a7fe532d9af25259341"
+    "1fd7baa237698a7fe532d9af25259341",
+    "f2cb158aff287164912e1cae73166724"
   ],
   "style_history": [
-    "Backgrounder",
     "Explainer",
     "Markets Report",
     "Power Accountability",
@@ -222,10 +222,10 @@
     "Explainer",
     "Backgrounder",
     "Power Accountability",
-    "SME Angle"
+    "SME Angle",
+    "Markets Report"
   ],
   "angle_history": [
-    "impact_on_citizens|Fuel Levy|Power Accountability",
     "money_follow|Africa Forward Summit 2026|SME Angle",
     "myth_vs_fact|agri-tech|Backgrounder",
     "money_follow|Vodacom|Markets Report",
@@ -304,6 +304,7 @@
     "myth_vs_fact|NSE|Explainer",
     "policy_gap|Sovereign Wealth Fund|Backgrounder",
     "accountability|Oil refinery|Power Accountability",
-    "winners_losers|Kenya|SME Angle"
+    "winners_losers|Kenya|SME Angle",
+    "money_follow|Consolidated Bank of Kenya|Markets Report"
   ]
 }
