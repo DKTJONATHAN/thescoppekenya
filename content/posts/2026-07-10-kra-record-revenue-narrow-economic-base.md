@@ -1,18 +1,20 @@
 ---
 title: "KRA Hits Record Revenue Despite Narrow Economic Base"
 slug: "kra-record-revenue-narrow-economic-base"
-description: "Kenya Revenue Authority collected over 2 trillion shillings, but growth remains concentrated in few sectors as wider tax base expansion efforts lag."
+description: "KRA Hits Record Revenue Despite Narrow Economic Base: Kenya Revenue Authority collected over 2 trillion shillings, but growth remains concentrated in few"
+excerpt: "Kenya Revenue Authority Posts Record Collections Amid Narrow Base Risks The Kenya Revenue Authority reported a record breaking KES 2.844 tri"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/svBcrsY4/f039576a34bd.webp"
 category: "Technology"
 tags: ["kra", "kenya economy", "taxation", "etims", "kenya business", "fiscal policy"]
+canonical: "https://zandani.co.ke/article/kra-record-revenue-narrow-economic-base"
 date: "2026-07-10T13:20:15Z"
 dateModified: "2026-07-10T13:20:15Z"
+focusKeyword: "KRA Hits Record Revenue Despite Narrow Economic Base"
 schema: "NewsArticle"
 ---
 
-## Kenya Revenue Authority Posts Record Collections Amid Narrow Base Risks
+## Kenya Revenue Authority Posts Record Collections Amid Narrow Base Risks KRA Hits Record Revenue Despite Narrow Economic Base is the central subject of the update.
 
 The Kenya Revenue Authority reported a record-breaking KES 2.844 trillion in tax revenue for the 2026 financial year, representing a 10.6 percent increase over the previous period. Despite this growth, the figures highlight a precarious fiscal structure, as the national treasury relies heavily on a small group of formal sectors to fund public expenditure.
 
