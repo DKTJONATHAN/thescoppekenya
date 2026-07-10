@@ -1,18 +1,20 @@
 ---
 title: "Auditor-General flags governance and capital risks at Consolidated Bank"
 slug: "auditor-general-flags-governance-and-capital-risks-consolidated-bank"
-description: "Consolidated Bank of Kenya faces regulatory scrutiny over insider lending and capital gaps despite reporting a return to annual profitability."
+description: "Auditor-General flags governance and capital risks at Consolidate: Consolidated Bank of Kenya faces regulatory scrutiny over insider lending and capital gaps"
+excerpt: "Consolidated Bank: Assessing Fiscal Viability Amid Governance Hurdles The Auditor General has identified fundamental governance weaknesses a"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/6R65WZSW/dc90d69c75f0.jpg"
 category: "Business"
 tags: ["consolidated bank", "kenyan banking", "auditor-general", "business news", "kenya economy"]
+canonical: "https://zandani.co.ke/article/auditor-general-flags-governance-and-capital-risks-consolidated-bank"
 date: "2026-07-10T08:33:32Z"
 dateModified: "2026-07-10T08:33:32Z"
+focusKeyword: "Auditor-General flags governance and capital risks at Consolidate"
 schema: "NewsArticle"
 ---
 
-## Consolidated Bank: Assessing Fiscal Viability Amid Governance Hurdles
+## Consolidated Bank: Assessing Fiscal Viability Amid Governance Hurdles Auditor-General flags governance and capital risks at Consolidate is the central subject of the update.
 
 The Auditor-General has identified fundamental governance weaknesses at Consolidated Bank, highlighting that the state-supported institution has violated insider lending protocols while simultaneously battling insufficient core capital. Although the lender recorded a modest return to profitability, its continued dependence on state capital injections to maintain regulatory compliance presents an ongoing challenge for public finances.
 
