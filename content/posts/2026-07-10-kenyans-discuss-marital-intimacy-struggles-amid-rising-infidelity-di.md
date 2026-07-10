@@ -1,19 +1,21 @@
 ---
 title: "Kenyans discuss marital intimacy struggles amid rising infidelity discourse"
 slug: "kenyans-discuss-marital-intimacy-struggles-amid-rising-infidelity-di"
-description: "Kenyans are debating a domestic intimacy crisis as anonymous forums reveal how spouses use professional fatigue to excuse withdrawal while pursuing affairs."
+description: "Kenyans discuss marital intimacy struggles amid rising infidelity: Kenyans are debating a domestic intimacy crisis as anonymous forums reveal how spouses use"
+excerpt: "Kenyan households are currently experiencing a widespread debate regarding a crisis of domestic intimacy. Recent discussions across anonymou"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: ""
+image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["marital-intimacy", "infidelity-discourse", "kenyan-relationships", "marriage-struggles", "kenyan-social-issues"]
 canonical: "https://zandani.co.ke/article/kenyans-discuss-marital-intimacy-struggles-amid-rising-infidelity-di"
 date: "2026-07-10T14:50:58Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-10T14:50:58Z"
+focusKeyword: "Kenyans discuss marital intimacy struggles amid rising infidelity"
 schema: "NewsArticle"
 ---
-Kenyan households are currently experiencing a widespread debate regarding a crisis of domestic intimacy. Recent discussions across anonymous confession forums highlight a recurring pattern where spouses cite professional exhaustion to avoid partners at home while seemingly finding ample energy for external romantic interests.
+
+Kenyan households are currently experiencing a widespread debate regarding a crisis of domestic intimacy. Recent discussions across anonymous confession forums highlight a recurring pattern where spouses cite professional exhaustion to avoid partners at home while seemingly finding ample energy for external romantic interests. Kenyans discuss marital intimacy struggles amid rising infidelity is the central subject of the update.
 
 ## The growing divide in domestic intimacy
 
