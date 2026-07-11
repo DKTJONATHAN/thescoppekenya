@@ -305,10 +305,10 @@
     "2af3c6cdba00a9d8452545af05d227ac",
     "50aa0e9a7ffbc3c020e0bca6eaeac80d",
     "5d85f7dd66d58dc568e3dd18c231371f",
-    "52eb11405658bc66057d8c967d598b95"
+    "52eb11405658bc66057d8c967d598b95",
+    "18a926b60b0eba497ff82fc4497d3897"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Trend Take",
     "Explainer",
@@ -337,10 +337,10 @@
     "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
-    "policy_gap|Vasana Montgomery|Hard News Lead",
     "story_progression|na|Trend Take",
     "myth_vs_fact|Andrew McCarthy|Profile Beat",
     "myth_vs_fact|Car crash|Explainer",
@@ -419,6 +419,7 @@
     "money_follow|Tiffany Haddish|Trend Take",
     "timeline_shift|Big Brother|Profile Beat",
     "story_progression|na|Reaction Round-up",
-    "policy_gap|Football|Explainer"
+    "policy_gap|Football|Explainer",
+    "accountability|Controversy|Trend Take"
   ]
 }
