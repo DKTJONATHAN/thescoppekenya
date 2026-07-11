@@ -1,18 +1,20 @@
 ---
 title: "Chianda Boys High School closed indefinitely after dormitory fire"
 slug: "chianda-boys-high-school-closed-after-second-dormitory-fire"
-description: "Siaya County authorities have shut down Chianda Boys High School following a dormitory fire that left 113 students without property, marking the second incident this month."
+description: "Chianda Boys High School closed indefinitely after dormitory fire: Siaya County authorities have shut down Chianda Boys High School following a dormitory fire"
+excerpt: "Administrative Failure Behind Chianda Boys Dormitory Blaze The Board of Management at Chianda Boys High School has ordered an indefinite clo"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/1YgTM4cd/1a408cf16a80.webp"
 category: "News"
 tags: ["kenya education", "siaya county", "school fire", "student unrest", "za ndani"]
+canonical: "https://zandani.co.ke/article/chianda-boys-high-school-closed-after-second-dormitory-fire"
 date: "2026-07-11T11:56:47Z"
 dateModified: "2026-07-11T11:56:47Z"
+focusKeyword: "Chianda Boys High School closed indefinitely after dormitory fire"
 schema: "NewsArticle"
 ---
 
-## Administrative Failure Behind Chianda Boys Dormitory Blaze
+## Administrative Failure Behind Chianda Boys Dormitory Blaze Chianda Boys High School closed indefinitely after dormitory fire is the central subject of the update.
 
 The Board of Management at Chianda Boys High School has ordered an indefinite closure of the institution following the destruction of the Senior Chief Nathan Ojungo dormitory on July 10, leaving 113 students without accommodation or personal belongings.
 
