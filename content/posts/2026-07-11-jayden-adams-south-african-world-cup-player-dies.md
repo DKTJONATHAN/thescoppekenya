@@ -1,21 +1,20 @@
 ---
-title: "Jayden Adams, South African World Cup Player, Dies at 25
+title: "'Jayden Adams, South African World Cup Player, Dies at 25"
 slug: "jayden-adams-south-african-world-cup-player-dies"
-description: "South African World Cup player Jayden Adams has tragically passed away at 25. Minister Gayton McKenzie announced his death. Learn more about his impactful career."
+description: "'Jayden Adams, South African World Cup Player, Dies at 25: South African World Cup player Jayden Adams has tragically passed away at 25. Minister Gayton"
+excerpt: "The Silent Struggle: What Jayden Adams' Death Means for African Footballers The continent is reeling from the sudden news of Jayden Adams’ d"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/wrQ2thdY/2d0bf48028cd.jpg"
-og_title: "Jayden Adams, SA World Cup Player, Dies at 25"
-og_description: "South African World Cup star Jayden Adams has died at 25. Minister Gayton McKenzie announced his passing. A look back at his career."
-focus_keyword: "Jayden Adams death"
 category: "Entertainment"
 tags: ["jayden adams", "south africa football", "world cup player", "bafana bafana", "football death", "sports news"]
+canonical: "https://zandani.co.ke/article/jayden-adams-south-african-world-cup-player-dies"
 date: "2026-07-11T15:34:32Z"
 dateModified: "2026-07-11T15:34:32Z"
+focusKeyword: "'Jayden Adams, South African World Cup Player, Dies at 25"
 schema: "NewsArticle"
 ---
 
-## The Silent Struggle: What Jayden Adams' Death Means for African Footballers
+## The Silent Struggle: What Jayden Adams' Death Means for African Footballers "Jayden Adams, South African World Cup Player, Dies at 25 is the central subject of the update.
 
 The continent is reeling from the sudden news of Jayden Adams’ death, a vibrant 25-year-old South African World Cup player. Fans across Africa are asking: how could a rising star, seemingly at the peak of his career, be gone so soon, and what does this devastating loss tell us about the immense pressures young athletes face in our beloved sport?
 
