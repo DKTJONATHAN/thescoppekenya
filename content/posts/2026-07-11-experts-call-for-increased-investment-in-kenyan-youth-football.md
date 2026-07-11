@@ -1,18 +1,20 @@
 ---
 title: "Experts Call for Increased Investment in Kenyan Youth Football"
 slug: "experts-call-for-increased-investment-in-kenyan-youth-football"
-description: "Football analysts urge the federation to boost grassroots funding and coaching support following the recent success of Kenyan women's teams."
+description: "Experts Call for Increased Investment in Kenyan Youth Football: Football analysts urge the federation to boost grassroots funding and coaching support"
+excerpt: "The Architecture of Kenyan Football Kenyan football follows a recurring, wearying rhythm: sudden flashes of brilliance that eventually succu"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/tTrt7W5g/6ee6815704a8.webp"
 category: "Opinions"
 tags: ["kenyan football", "fkf", "youth development", "harambee starlets", "kenya sports"]
+canonical: "https://zandani.co.ke/article/experts-call-for-increased-investment-in-kenyan-youth-football"
 date: "2026-07-11T10:34:37Z"
 dateModified: "2026-07-11T10:34:37Z"
+focusKeyword: "Experts Call for Increased Investment in Kenyan Youth Football"
 schema: "NewsArticle"
 ---
 
-## The Architecture of Kenyan Football
+## The Architecture of Kenyan Football Experts Call for Increased Investment in Kenyan Youth Football is the central subject of the update.
 
 Kenyan football follows a recurring, wearying rhythm: sudden flashes of brilliance that eventually succumb to shadows. This cycle is a familiar, if painful, element of our sporting narrative. If we persist in our current patterns, the momentum of the present will inevitably vanish just as it has in previous eras.
 
