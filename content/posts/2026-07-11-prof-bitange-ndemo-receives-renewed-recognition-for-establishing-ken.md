@@ -1,7 +1,8 @@
 ---
 title: "Prof. Bitange Ndemo Receives Renewed Recognition for Establishing Kenya's ICT Infrastructure"
 slug: "prof-bitange-ndemo-receives-renewed-recognition-for-establishing-ken"
-description: "Prof. Bitange Ndemo receives renewed recognition for his foundational role in establishing Kenya's ICT infrastructure through the TEAMS and SEACOM cables."
+description: "Prof. Bitange Ndemo Receives Renewed Recognition for Establishing: Prof. Bitange Ndemo receives renewed recognition for his foundational role in establishing"
+excerpt: "Former Permanent Secretary in the Ministry of Information and Communications, Professor Bitange Ndemo, is receiving renewed public recogniti"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/LzfvsMdn/1945957ebc5a.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["bitange-ndemo", "kenya-ict-infrastructure", "digital-economy", "ict-development", "kenyan-tech-history"]
 canonical: "https://zandani.co.ke/article/prof-bitange-ndemo-receives-renewed-recognition-for-establishing-ken"
 date: "2026-07-11T13:53:14Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-11T13:53:14Z"
+focusKeyword: "Prof. Bitange Ndemo Receives Renewed Recognition for Establishing"
 schema: "NewsArticle"
 ---
-Former Permanent Secretary in the Ministry of Information and Communications, Professor Bitange Ndemo, is receiving renewed public recognition for his foundational role in spearheading Kenya’s digital landscape through the strategic landing of the TEAMS and SEACOM undersea fiber optic cables over a decade ago.
+
+Former Permanent Secretary in the Ministry of Information and Communications, Professor Bitange Ndemo, is receiving renewed public recognition for his foundational role in spearheading Kenya’s digital landscape through the strategic landing of the TEAMS and SEACOM undersea fiber optic cables over a decade ago. Prof. Bitange Ndemo Receives Renewed Recognition for Establishing is the central subject of the update.
 
 ## The Architect of Kenya’s Digital Transformation
 
