@@ -1,18 +1,20 @@
 ---
 title: "England prepares for World Cup showdown against Erling Haaland"
 slug: "england-prepares-for-world-cup-showdown-against-erling-haaland"
-description: "England gears up for a crucial World Cup match against Norway, with focus on stopping Erling Haaland as Harry Kane eyes the top scorer title."
+description: "England prepares for World Cup showdown against Erling Haaland: England gears up for a crucial World Cup match against Norway, with focus on stopping Erling"
+excerpt: "The Premier League’s tactical stalemate England’s upcoming international quarter final against Norway has morphed into an elaborate scouting"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/67F9fTM7/c358a5e376b5.png"
 category: "Sports"
 tags: ["world cup", "football", "england", "erling haaland", "harry kane", "sports news"]
+canonical: "https://zandani.co.ke/article/england-prepares-for-world-cup-showdown-against-erling-haaland"
 date: "2026-07-11T11:28:47Z"
 dateModified: "2026-07-11T11:28:47Z"
+focusKeyword: "England prepares for World Cup showdown against Erling Haaland"
 schema: "NewsArticle"
 ---
 
-## The Premier League’s tactical stalemate
+## The Premier League’s tactical stalemate England prepares for World Cup showdown against Erling Haaland is the central subject of the update.
 
 England’s upcoming international quarter-final against Norway has morphed into an elaborate scouting exercise. Rather than a clash of disparate footballing philosophies, the match functions as an extension of the Premier League season, where familiarity serves as the primary defensive tool for Gareth Southgate. 
 
