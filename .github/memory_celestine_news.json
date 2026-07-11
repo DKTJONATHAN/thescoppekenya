@@ -321,10 +321,10 @@
     "b01293230d5b00f8e4dcbd29ea9b0250",
     "eb49f70d09bd64c47f5395772654c23f",
     "0e34367da6a21680c1f376435936adb6",
-    "9e14f2b5109825f019692d25df0096cb"
+    "9e14f2b5109825f019692d25df0096cb",
+    "586c19a7f554c45bc7519ef191122423"
   ],
   "style_history": [
-    "Explainer",
     "Power Accountability",
     "Hard News Lead",
     "Reaction & Voices",
@@ -353,10 +353,10 @@
     "Reaction & Voices",
     "Explainer",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "story_progression|KWS|Reaction & Voices",
     "policy_gap|DCI|Context Backgrounder",
     "next_48_hours|Foreign Affairs|Hard News Lead",
     "policy_gap|NTSA|Power Accountability",
@@ -435,6 +435,7 @@
     "accountability|NG-CDF|Reaction & Voices",
     "policy_gap|EACC|Explainer",
     "policy_gap|Nairobi|Power Accountability",
-    "accountability|Kenya|Hard News Lead"
+    "accountability|Kenya|Hard News Lead",
+    "myth_vs_fact|KURA|Context Backgrounder"
   ]
 }
