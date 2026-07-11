@@ -177,10 +177,10 @@
     "4c8446f315595584778705a39c6b9771",
     "c7acfdd644a93057e12928ec6c99b8e0",
     "f680b5a146a273efa7c6cf1257928c77",
-    "7cda2b2645bfcfdaa5b4ad2047fce0d7"
+    "7cda2b2645bfcfdaa5b4ad2047fce0d7",
+    "67ef93f9c3485d3a0b917fc28b3d61c8"
   ],
   "style_history": [
-    "Letter Form",
     "Sharp Column",
     "Personal Reflection",
     "Historical Lens",
@@ -209,10 +209,10 @@
     "Historical Lens",
     "Sharp Column",
     "Counterpoint",
-    "Personal Reflection"
+    "Personal Reflection",
+    "Historical Lens"
   ],
   "angle_history": [
-    "money_follow|zero-tariff|Personal Reflection",
     "impact_on_citizens|coalition politics|Sharp Column",
     "timeline_shift|maternal health|Historical Lens",
     "myth_vs_fact|fiscal policy|Counterpoint",
@@ -291,6 +291,7 @@
     "timeline_shift|public debt|Historical Lens",
     "policy_gap|Diplomacy|Sharp Column",
     "money_follow|digital news|Counterpoint",
-    "accountability|leadership|Personal Reflection"
+    "accountability|leadership|Personal Reflection",
+    "timeline_shift|football|Historical Lens"
   ]
 }
