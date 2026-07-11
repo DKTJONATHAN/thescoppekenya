@@ -14,7 +14,7 @@ focusKeyword: "'Jayden Adams, South African World Cup Player, Dies at 25"
 schema: "NewsArticle"
 ---
 
-## The Silent Struggle: What Jayden Adams' Death Means for African Footballers "Jayden Adams, South African World Cup Player, Dies at 25 is the central subject of the update.
+## The Silent Struggle: What Jayden Adams' Death Means for African Footballers "Jayden Adams, South African World Cup Player, Dies at 25 is the central subject of the update. 'Jayden Adams, South African World Cup Player, Dies at 25 is the central subject of the update.
 
 The continent is reeling from the sudden news of Jayden Adams’ death, a vibrant 25-year-old South African World Cup player. Fans across Africa are asking: how could a rising star, seemingly at the peak of his career, be gone so soon, and what does this devastating loss tell us about the immense pressures young athletes face in our beloved sport?
 

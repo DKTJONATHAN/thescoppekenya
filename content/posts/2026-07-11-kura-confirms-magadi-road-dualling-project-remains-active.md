@@ -1,18 +1,20 @@
 ---
 title: "KURA Confirms Magadi Road Dualling Project Remains Active Priority"
 slug: "kura-confirms-magadi-road-dualling-project-remains-active"
-description: "KURA clarifies that the Magadi Road dualling project is still scheduled to ease congestion between Nairobi, Ongata Rongai, and Kiserian for residents."
+description: "KURA Confirms Magadi Road Dualling Project Remains Active Priorit: KURA clarifies that the Magadi Road dualling project is still scheduled to ease congestion"
+excerpt: "Beyond the Galleria Pavement Markings The Kenya Urban Roads Authority has explicitly detached the minor lane reconfigurations at the Galleri"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/RTXqTsGZ/94d2602b1336.webp"
 category: "News"
 tags: ["kenya news", "kura", "infrastructure", "nairobi traffic", "magadi road", "kenya transport"]
+canonical: "https://zandani.co.ke/article/kura-confirms-magadi-road-dualling-project-remains-active"
 date: "2026-07-11T17:58:05Z"
 dateModified: "2026-07-11T17:58:05Z"
+focusKeyword: "KURA Confirms Magadi Road Dualling Project Remains Active Priorit"
 schema: "NewsArticle"
 ---
 
-## Beyond the Galleria Pavement Markings
+## Beyond the Galleria Pavement Markings KURA Confirms Magadi Road Dualling Project Remains Active Priorit is the central subject of the update.
 
 The Kenya Urban Roads Authority has explicitly detached the minor lane reconfigurations at the Galleria junction from the broader 20-kilometre Magadi Road dualling project. This clarification serves as a necessary correction for commuters who mistake aesthetic surface improvements for structural progress.
 
