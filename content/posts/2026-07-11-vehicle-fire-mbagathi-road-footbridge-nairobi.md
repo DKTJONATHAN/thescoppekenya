@@ -1,18 +1,20 @@
 ---
 title: "Vehicle catches fire after crashing into Mbagathi Road footbridge"
 slug: "vehicle-fire-mbagathi-road-footbridge-nairobi"
-description: "Authorities are investigating a vehicle fire after a car veered off Mbagathi Road and crashed onto a pedestrian footbridge near Riara University."
+description: "Vehicle catches fire after crashing into Mbagathi Road footbridge: Authorities are investigating a vehicle fire after a car veered off Mbagathi Road and"
+excerpt: "The Lethal Physics of Mbagathi Road A vehicle climbed the stairs of the Mbagathi Road footbridge near Riara University at 6am this morning a"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/tMV3FKhp/ac1789db15b7.webp"
 category: "News"
 tags: ["nairobi", "mbagathi road", "traffic accident", "kenya police", "road safety"]
+canonical: "https://zandani.co.ke/article/vehicle-fire-mbagathi-road-footbridge-nairobi"
 date: "2026-07-11T07:15:03Z"
 dateModified: "2026-07-11T07:15:03Z"
+focusKeyword: "Vehicle catches fire after crashing into Mbagathi Road footbridge"
 schema: "NewsArticle"
 ---
 
-## The Lethal Physics of Mbagathi Road
+## The Lethal Physics of Mbagathi Road Vehicle catches fire after crashing into Mbagathi Road footbridge is the central subject of the update.
 
 A vehicle climbed the stairs of the Mbagathi Road footbridge near Riara University at 6am this morning and erupted into flames. While officials treat the wreckage as a routine traffic accident, the structural placement of the barrier-less bridge remains a silent invitation to catastrophe.
 

@@ -14,7 +14,7 @@ focusKeyword: "'Diane Keaton's Absence at Book Club Cast Reunion for Bergen's 80
 schema: "NewsArticle"
 ---
 
-## Sisterhood and Sorrow: Fans React to Diane Keaton's Poignant Absence at Book Club Reunion "Diane Keaton's Absence at Book Club Cast Reunion for Bergen's 80 is the central subject of the update.
+## Sisterhood and Sorrow: Fans React to Diane Keaton's Poignant Absence at Book Club Reunion "Diane Keaton's Absence at Book Club Cast Reunion for Bergen's 80 is the central subject of the update. 'Diane Keaton's Absence at Book Club Cast Reunion for Bergen's 80 is the central subject of the update.
 
 The internet is abuzz with bittersweet emotions as news circulates of a *Book Club* cast reunion for Candice Bergen's 80th birthday. While fans celebrate the enduring bond between the iconic actresses, many are keenly feeling the absence of the late Diane Keaton, whose spirit undoubtedly hovers over the gathering.
 
