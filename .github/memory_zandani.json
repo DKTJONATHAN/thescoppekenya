@@ -315,10 +315,10 @@
     "694ed9038ca3d186608bfdb904d9e5ba",
     "a0b7f1a800111df8c1e0ce451a57df24",
     "bcd5489a82581979d2ed0d30799f044c",
-    "023bd89609ec54d0998e555127a39447"
+    "023bd89609ec54d0998e555127a39447",
+    "02da124299beb524449cd369ae8e57d4"
   ],
   "style_history": [
-    "Hard News Lead",
     "Profile Beat",
     "Reaction Round-up",
     "Receipts Piece",
@@ -347,10 +347,10 @@
     "Receipts Piece",
     "Profile Beat",
     "Hard News Lead",
-    "Trend Take"
+    "Trend Take",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "money_follow|celebrity|Profile Beat",
     "myth_vs_fact|Kenyan music|Receipts Piece",
     "impact_on_citizens|Liberty Kenya|Hard News Lead",
     "money_follow|forex trading|Trend Take",
@@ -429,6 +429,7 @@
     "money_follow|Forex traders|Receipts Piece",
     "next_48_hours|privacy|Profile Beat",
     "myth_vs_fact|Vindee|Hard News Lead",
-    "money_follow|Nyathira|Trend Take"
+    "money_follow|Nyathira|Trend Take",
+    "accountability|content creation|Receipts Piece"
   ]
 }
