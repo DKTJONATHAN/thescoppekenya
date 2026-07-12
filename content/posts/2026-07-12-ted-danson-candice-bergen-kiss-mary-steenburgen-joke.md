@@ -1,21 +1,20 @@
 ---
-title: "Ted Danson Recalls Candice Bergen Kiss; Mary Steenburgen Jokes
+title: "'Ted Danson Recalls Candice Bergen Kiss; Mary Steenburgen Jokes"
 slug: "ted-danson-candice-bergen-kiss-mary-steenburgen-joke"
-description: "Actor Ted Danson shared details of a 'full-on kiss' with Candice Bergen on their show 'Ink,' prompting Mary Steenburgen to joke about fantasies. Discover more about this memorable TV moment."
+description: "'Ted Danson Recalls Candice Bergen Kiss; Mary Steenburgen Jokes: Actor Ted Danson shared details of a 'full-on kiss' with Candice Bergen on their show 'Ink,'"
+excerpt: "When a 90s TV Kiss Sparks Modern Day Laughter for a Hollywood Couple Hollywood often provides windows into the genuine moments behind the gl"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/s988TJD5/cf19d2082757.jpg"
-og_title: "Ted Danson's Kiss with Candice Bergen: Steenburgen's Take"
-og_description: "Ted Danson recounts his on-screen kiss with Candice Bergen on 'Ink,' with his wife Mary Steenburgen offering a humorous reaction. Get the details on this classic TV moment."
-focus_keyword: "Ted Danson Candice Bergen kiss"
 category: "Entertainment"
 tags: ["ted danson", "candice bergen", "mary steenburgen", "ink sitcom", "murphy brown", "hollywood news", "celebrity gossip"]
+canonical: "https://zandani.co.ke/article/ted-danson-candice-bergen-kiss-mary-steenburgen-joke"
 date: "2026-07-12T08:41:34Z"
 dateModified: "2026-07-12T08:41:34Z"
+focusKeyword: "'Ted Danson Recalls Candice Bergen Kiss; Mary Steenburgen Jokes"
 schema: "NewsArticle"
 ---
 
-## When a 90s TV Kiss Sparks Modern-Day Laughter for a Hollywood Couple
+## When a 90s TV Kiss Sparks Modern-Day Laughter for a Hollywood Couple "Ted Danson Recalls Candice Bergen Kiss; Mary Steenburgen Jokes is the central subject of the update.
 
 Hollywood often provides windows into the genuine moments behind the glitz, revealing how decades-old on-screen interactions can fuel affectionate banter today. A memorable "full-on kiss" from a 1990s sitcom, recalled by veteran actor Ted Danson, recently brought delight to fans and a humorous interjection from his wife, Mary Steenburgen. This anecdote offers a warm glimpse into enduring celebrity relationships and the personal histories that shape them.
 
