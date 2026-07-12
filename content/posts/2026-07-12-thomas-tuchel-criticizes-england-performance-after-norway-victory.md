@@ -1,18 +1,20 @@
 ---
 title: "Thomas Tuchel criticizes England performance after Norway victory"
 slug: "thomas-tuchel-criticizes-england-performance-after-norway-victory"
-description: "England secured a place in the World Cup semi-finals after beating Norway in Miami. Manager Thomas Tuchel questioned his team despite the result."
+description: "Thomas Tuchel criticizes England performance after Norway victory: England secured a place in the World Cup semi-finals after beating Norway in Miami. Manager"
+excerpt: "The Cost of Perfection in Miami Jude Bellingham slumped onto the pitch at the final whistle in Miami, his shirt drenched in sweat after 122"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/tTBSwg2F/18c4d9549437.jpg"
 category: "Sports"
 tags: ["world cup", "england football", "thomas tuchel", "jude bellingham", "football news"]
+canonical: "https://zandani.co.ke/article/thomas-tuchel-criticizes-england-performance-after-norway-victory"
 date: "2026-07-12T11:34:36Z"
 dateModified: "2026-07-12T11:34:36Z"
+focusKeyword: "Thomas Tuchel criticizes England performance after Norway victory"
 schema: "NewsArticle"
 ---
 
-## The Cost of Perfection in Miami
+## The Cost of Perfection in Miami Thomas Tuchel criticizes England performance after Norway victory is the central subject of the update.
 
 Jude Bellingham slumped onto the pitch at the final whistle in Miami, his shirt drenched in sweat after 122 minutes of heroic effort. While the stadium roared for his dual goals, his manager Thomas Tuchel stood on the touchline with arms crossed, seemingly already drafting a list of grievances.
 
