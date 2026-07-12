@@ -1,21 +1,20 @@
 ---
-title: "Rosie O'Donnell quit talk show after $100M for family
+title: "'Rosie O'Donnell quit talk show after $100M for family"
 slug: "rosie-odonnell-quit-talk-show-100m-children-family"
-description: "Rosie O’Donnell departed her hit talk show in 2002 with $100 million, prioritizing time with her children over further financial gain. Discover why she left."
+description: "'Rosie O'Donnell quit talk show after $100M for family: Rosie O’Donnell departed her hit talk show in 2002 with $100 million, prioritizing time with her"
+excerpt: "Rosie O'Donnell's $100 Million Choice: Family Over Further Fortune American comedian and television personality Rosie O'Donnell famously dep"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/Mk9Tvx3X/c94fbedfefab.jpg"
-og_title: "Rosie O'Donnell: Why I left my $100M talk show"
-og_description: "Rosie O'Donnell left her talk show in 2002 with $100M to prioritize her children, declining a $100M extension."
-focus_keyword: "Rosie O'Donnell talk show"
 category: "Entertainment"
 tags: ["rosie odonnell", "talk show", "celebrity news", "entertainment", "jimmy kimmel live", "broadway", "wealth"]
+canonical: "https://zandani.co.ke/article/rosie-odonnell-quit-talk-show-100m-children-family"
 date: "2026-07-12T15:37:11Z"
 dateModified: "2026-07-12T15:37:11Z"
+focusKeyword: "'Rosie O'Donnell quit talk show after $100M for family"
 schema: "NewsArticle"
 ---
 
-## Rosie O'Donnell's $100 Million Choice: Family Over Further Fortune
+## Rosie O'Donnell's $100 Million Choice: Family Over Further Fortune "Rosie O'Donnell quit talk show after $100M for family is the central subject of the update.
 
 American comedian and television personality Rosie O'Donnell famously departed her highly successful talk show in 2002. Her decision, widely reported as being made after securing a personal fortune of $100 million, underscored a powerful choice to prioritize her children over an additional, equally lucrative contract offer. This move highlighted a rare instance in Hollywood where personal fulfillment distinctly outweighed the allure of further monetary gain.
 
