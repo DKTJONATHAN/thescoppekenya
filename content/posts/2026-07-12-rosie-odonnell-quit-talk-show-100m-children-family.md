@@ -14,7 +14,7 @@ focusKeyword: "'Rosie O'Donnell quit talk show after $100M for family"
 schema: "NewsArticle"
 ---
 
-## Rosie O'Donnell's $100 Million Choice: Family Over Further Fortune "Rosie O'Donnell quit talk show after $100M for family is the central subject of the update.
+## Rosie O'Donnell's $100 Million Choice: Family Over Further Fortune "Rosie O'Donnell quit talk show after $100M for family is the central subject of the update. 'Rosie O'Donnell quit talk show after $100M for family is the central subject of the update.
 
 American comedian and television personality Rosie O'Donnell famously departed her highly successful talk show in 2002. Her decision, widely reported as being made after securing a personal fortune of $100 million, underscored a powerful choice to prioritize her children over an additional, equally lucrative contract offer. This move highlighted a rare instance in Hollywood where personal fulfillment distinctly outweighed the allure of further monetary gain.
 

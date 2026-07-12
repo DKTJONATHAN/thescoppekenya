@@ -1,18 +1,20 @@
 ---
 title: "Armed robbery at Ruaka salon captured on CCTV"
 slug: "armed-robbery-ruaka-salon-cctv"
-description: "Police are investigating an armed robbery at a Ruaka salon where a masked gunman stole a mobile phone and escaped on a motorcycle. No arrests made."
+description: "Armed robbery at Ruaka salon captured on CCTV: Police are investigating an armed robbery at a Ruaka salon where a masked gunman stole a mobile phone and"
+excerpt: "CCTV Surveillance Fails to Deter Ruaka Armed Robbery An unidentified gunman escaped on a motorcycle Friday after terrorizing patrons at a Ru"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/vxjDsKQG/ef334ddff209.webp"
 category: "News"
 tags: ["ruaka", "kiambu county", "armed robbery", "crime in kenya", "cctv footage", "police investigations"]
+canonical: "https://zandani.co.ke/article/armed-robbery-ruaka-salon-cctv"
 date: "2026-07-12T18:02:44Z"
 dateModified: "2026-07-12T18:02:44Z"
+focusKeyword: "Armed robbery at Ruaka salon captured on CCTV"
 schema: "NewsArticle"
 ---
 
-## CCTV Surveillance Fails to Deter Ruaka Armed Robbery
+## CCTV Surveillance Fails to Deter Ruaka Armed Robbery Armed robbery at Ruaka salon captured on CCTV is the central subject of the update.
 
 An unidentified gunman escaped on a motorcycle Friday after terrorizing patrons at a Ruaka salon, exposing a persistent gap between advanced private surveillance infrastructure and the rapid response capabilities of local law enforcement in Kiambu County.
 
