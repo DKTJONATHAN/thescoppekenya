@@ -1,18 +1,20 @@
 ---
 title: "Why voter bribery undermines democratic integrity in Kenya"
 slug: "voter-bribery-undermines-democratic-integrity-in-kenya"
-description: "Voter bribery in Kenya promotes corruption and poor governance. Voters must prioritize leadership integrity over handouts for a better future."
+description: "Why voter bribery undermines democratic integrity in Kenya: Voter bribery in Kenya promotes corruption and poor governance. Voters must prioritize leadership"
+excerpt: "The Cost of a Shilling: Choosing Integrity Over Handouts As voters prepare for the upcoming by elections, the rising tide of campaign handou"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/1Gy4ZsLq/53cf869ded08.webp"
 category: "Opinions"
 tags: ["kenya politics", "elections", "governance", "anti-corruption", "voter education", "za ndani"]
+canonical: "https://zandani.co.ke/article/voter-bribery-undermines-democratic-integrity-in-kenya"
 date: "2026-07-12T10:42:45Z"
 dateModified: "2026-07-12T10:42:45Z"
+focusKeyword: "Why voter bribery undermines democratic integrity in Kenya"
 schema: "NewsArticle"
 ---
 
-## The Cost of a Shilling: Choosing Integrity Over Handouts
+## The Cost of a Shilling: Choosing Integrity Over Handouts Why voter bribery undermines democratic integrity in Kenya is the central subject of the update.
 
 As voters prepare for the upcoming by-elections, the rising tide of campaign handouts threatens to dismantle the foundation of local governance. This shift toward transactional politics demands a critical look at how immediate cash trades away our collective future.
 
