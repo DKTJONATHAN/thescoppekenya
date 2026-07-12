@@ -1,18 +1,20 @@
 ---
 title: "Armed group disrupts church service attended by Sifuna and Orengo"
 slug: "armed-group-disrupts-kisumu-church-service-sifuna-orengo"
-description: "An armed mob stormed St. Stephen's ACK Cathedral in Kisumu during a service involving Edwin Sifuna and James Orengo, leaving one person seriously injured."
+description: "Armed group disrupts church service attended by Sifuna and Orengo: An armed mob stormed St. Stephen's ACK Cathedral in Kisumu during a service involving Edwin"
+excerpt: "The Day The Altar Lost Its Immunity Kenyans are reacting with a mixture of raw indignation and deep seated fear after the sanctity of St. St"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/gMKt0M04/3f042075e442.webp"
 category: "News"
 tags: ["kisumu", "political violence", "edwin sifuna", "james orengo", "linda mwananchi", "kenya news"]
+canonical: "https://zandani.co.ke/article/armed-group-disrupts-kisumu-church-service-sifuna-orengo"
 date: "2026-07-12T12:03:41Z"
 dateModified: "2026-07-12T12:03:41Z"
+focusKeyword: "Armed group disrupts church service attended by Sifuna and Orengo"
 schema: "NewsArticle"
 ---
 
-## The Day The Altar Lost Its Immunity
+## The Day The Altar Lost Its Immunity Armed group disrupts church service attended by Sifuna and Orengo is the central subject of the update.
 
 Kenyans are reacting with a mixture of raw indignation and deep-seated fear after the sanctity of St. Stephen's ACK Cathedral was shattered by an armed mob, leaving congregants questioning if any space in this country remains truly off-limits to political aggression.
 
