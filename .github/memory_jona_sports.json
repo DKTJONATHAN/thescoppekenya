@@ -240,10 +240,10 @@
     "313fe63879770440ea3e40b9a8d63da4",
     "9afb45049b4c1117642cfd9970658807",
     "97ba64f89145f476de3562088b940446",
-    "771cf94aa9edf7d824cbbd96250f1030"
+    "771cf94aa9edf7d824cbbd96250f1030",
+    "2768bd049e8bd61bcd79bdd952185443"
   ],
   "style_history": [
-    "Player Profile Beat",
     "Cynical Pundit",
     "Tactical Take",
     "Match Report",
@@ -272,10 +272,10 @@
     "Cynical Pundit",
     "Tactical Take",
     "Stat Story",
-    "Match Report"
+    "Match Report",
+    "Player Profile Beat"
   ],
   "angle_history": [
-    "impact_on_citizens|Spygate|Stat Story",
     "money_follow|Scottish Premiership|Cynical Pundit",
     "winners_losers|England National Team|Tactical Take",
     "winners_losers|England|Match Report",
@@ -354,6 +354,7 @@
     "accountability|World Cup 2026|Cynical Pundit",
     "story_progression|World Cup 2026|Tactical Take",
     "money_follow|Premier League|Stat Story",
-    "winners_losers|World Cup|Match Report"
+    "winners_losers|World Cup|Match Report",
+    "accountability|World Cup 2026|Player Profile Beat"
   ]
 }
