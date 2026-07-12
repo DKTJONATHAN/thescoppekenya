@@ -323,10 +323,10 @@
     "0e34367da6a21680c1f376435936adb6",
     "9e14f2b5109825f019692d25df0096cb",
     "586c19a7f554c45bc7519ef191122423",
-    "98978f147a38d095f3fd30a98d3a7368"
+    "98978f147a38d095f3fd30a98d3a7368",
+    "affe8dc9be4c0b55d4b136a4fba4717d"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction & Voices",
     "Context Backgrounder",
     "Power Accountability",
@@ -355,10 +355,10 @@
     "Power Accountability",
     "Hard News Lead",
     "Context Backgrounder",
-    "Explainer"
+    "Explainer",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "next_48_hours|Foreign Affairs|Hard News Lead",
     "policy_gap|NTSA|Power Accountability",
     "story_progression|Kenya|Reaction & Voices",
     "winners_losers|Kenya National Bureau of Statistics|Context Backgrounder",
@@ -437,6 +437,7 @@
     "policy_gap|Nairobi|Power Accountability",
     "accountability|Kenya|Hard News Lead",
     "myth_vs_fact|KURA|Context Backgrounder",
-    "winners_losers|government-appointments|Explainer"
+    "winners_losers|government-appointments|Explainer",
+    "next_48_hours|Kisumu|Reaction & Voices"
   ]
 }
