@@ -306,10 +306,10 @@
     "50aa0e9a7ffbc3c020e0bca6eaeac80d",
     "5d85f7dd66d58dc568e3dd18c231371f",
     "52eb11405658bc66057d8c967d598b95",
-    "18a926b60b0eba497ff82fc4497d3897"
+    "18a926b60b0eba497ff82fc4497d3897",
+    "9c777fa9233258684b68dde21f391f9d"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Trend Take",
     "Explainer",
     "Profile Beat",
@@ -338,10 +338,10 @@
     "Profile Beat",
     "Reaction Round-up",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "story_progression|na|Trend Take",
     "myth_vs_fact|Andrew McCarthy|Profile Beat",
     "myth_vs_fact|Car crash|Explainer",
     "story_progression|Joe Negri|Hard News Lead",
@@ -420,6 +420,7 @@
     "timeline_shift|Big Brother|Profile Beat",
     "story_progression|na|Reaction Round-up",
     "policy_gap|Football|Explainer",
-    "accountability|Controversy|Trend Take"
+    "accountability|Controversy|Trend Take",
+    "timeline_shift|sitcom|Profile Beat"
   ]
 }
