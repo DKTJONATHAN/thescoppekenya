@@ -1,18 +1,20 @@
 ---
 title: "Government and County Leaders Announce New State Agency Appointments"
 slug: "government-and-county-leaders-announce-new-state-agency-appointments"
-description: "The Kenyan government and multiple counties released a Gazette Notice detailing new leadership appointments for state agencies and local boards."
+description: "Government and County Leaders Announce New State Agency Appointme: The Kenyan government and multiple counties released a Gazette Notice detailing new"
+excerpt: "Understanding the Latest Government Appointments Shuffle On July 10, the national government and several county administrations issued a Gaz"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/5XqLxVXs/1952e53eb044.webp"
 category: "News"
 tags: ["kenya-politics", "government-appointments", "gazette-notice", "county-government", "public-sector-reforms", "za-ndani"]
+canonical: "https://zandani.co.ke/article/government-and-county-leaders-announce-new-state-agency-appointments"
 date: "2026-07-12T07:31:20Z"
 dateModified: "2026-07-12T07:31:20Z"
+focusKeyword: "Government and County Leaders Announce New State Agency Appointme"
 schema: "NewsArticle"
 ---
 
-## Understanding the Latest Government-Appointments Shuffle
+## Understanding the Latest Government-Appointments Shuffle Government and County Leaders Announce New State Agency Appointme is the central subject of the update.
 
 On July 10, the national government and several county administrations issued a Gazette Notice rolling out new board appointments and leadership shifts across various state and regional bodies. These changes aim to fill persistent vacancies that have stalled decision-making processes in agencies that handle daily public services.
 
