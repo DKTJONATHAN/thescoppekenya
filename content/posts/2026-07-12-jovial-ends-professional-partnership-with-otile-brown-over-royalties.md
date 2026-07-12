@@ -1,18 +1,20 @@
 ---
 title: "Jovial Ends Professional Partnership With Otile Brown Over Royalties"
 slug: "jovial-ends-professional-partnership-with-otile-brown-over-royalties"
-description: "Kenyan musician Jovial has officially severed ties with Otile Brown citing unresolved royalty disputes and missing contract documents as major reasons."
+description: "Jovial Ends Professional Partnership With Otile Brown Over Royalt: Kenyan musician Jovial has officially severed ties with Otile Brown citing unresolved"
+excerpt: "Beyond The Music: The Paperwork Trap Jovial has officially shuttered her professional chapter with Otile Brown, shifting the conversation fr"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/gH5K475/0acfad9f4ad4.webp"
 category: "Gossip"
 tags: ["jovial", "otile brown", "kenyan music", "kenyan entertainment", "music royalties"]
+canonical: "https://zandani.co.ke/article/jovial-ends-professional-partnership-with-otile-brown-over-royalties"
 date: "2026-07-12T10:02:04Z"
 dateModified: "2026-07-12T10:02:04Z"
+focusKeyword: "Jovial Ends Professional Partnership With Otile Brown Over Royalt"
 schema: "NewsArticle"
 ---
 
-## Beyond The Music: The Paperwork Trap
+## Beyond The Music: The Paperwork Trap Jovial Ends Professional Partnership With Otile Brown Over Royalt is the central subject of the update.
 
 Jovial has officially shuttered her professional chapter with Otile Brown, shifting the conversation from chart-topping melodies to the sobering reality of intellectual property rights. This fallout is not merely a clash of personalities, but a textbook lesson on the hidden dangers of handshake agreements within the creative sector.
 

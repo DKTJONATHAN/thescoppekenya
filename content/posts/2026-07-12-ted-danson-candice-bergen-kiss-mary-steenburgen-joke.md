@@ -14,7 +14,7 @@ focusKeyword: "'Ted Danson Recalls Candice Bergen Kiss; Mary Steenburgen Jokes"
 schema: "NewsArticle"
 ---
 
-## When a 90s TV Kiss Sparks Modern-Day Laughter for a Hollywood Couple "Ted Danson Recalls Candice Bergen Kiss; Mary Steenburgen Jokes is the central subject of the update.
+## When a 90s TV Kiss Sparks Modern-Day Laughter for a Hollywood Couple "Ted Danson Recalls Candice Bergen Kiss; Mary Steenburgen Jokes is the central subject of the update. 'Ted Danson Recalls Candice Bergen Kiss; Mary Steenburgen Jokes is the central subject of the update.
 
 Hollywood often provides windows into the genuine moments behind the glitz, revealing how decades-old on-screen interactions can fuel affectionate banter today. A memorable "full-on kiss" from a 1990s sitcom, recalled by veteran actor Ted Danson, recently brought delight to fans and a humorous interjection from his wife, Mary Steenburgen. This anecdote offers a warm glimpse into enduring celebrity relationships and the personal histories that shape them.
 
