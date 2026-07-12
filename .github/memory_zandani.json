@@ -316,10 +316,10 @@
     "a0b7f1a800111df8c1e0ce451a57df24",
     "bcd5489a82581979d2ed0d30799f044c",
     "023bd89609ec54d0998e555127a39447",
-    "02da124299beb524449cd369ae8e57d4"
+    "02da124299beb524449cd369ae8e57d4",
+    "054372d70782f0739ee4f94658776d87"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Receipts Piece",
     "Trend Take",
@@ -348,10 +348,10 @@
     "Profile Beat",
     "Hard News Lead",
     "Trend Take",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Profile Beat"
   ],
   "angle_history": [
-    "myth_vs_fact|Kenyan music|Receipts Piece",
     "impact_on_citizens|Liberty Kenya|Hard News Lead",
     "money_follow|forex trading|Trend Take",
     "timeline_shift|Nikita Kering'|Reaction Round-up",
@@ -430,6 +430,7 @@
     "next_48_hours|privacy|Profile Beat",
     "myth_vs_fact|Vindee|Hard News Lead",
     "money_follow|Nyathira|Trend Take",
-    "accountability|content creation|Receipts Piece"
+    "accountability|content creation|Receipts Piece",
+    "accountability|Jovial|Profile Beat"
   ]
 }
