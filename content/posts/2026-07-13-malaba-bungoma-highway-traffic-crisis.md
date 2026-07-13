@@ -1,18 +1,20 @@
 ---
 title: "Malaba-Bungoma Highway Traffic Crisis Disrupts Regional Trade"
 slug: "malaba-bungoma-highway-traffic-crisis"
-description: "A 33km traffic jam on the Malaba-Bungoma highway has stranded drivers and delayed trade due to new Uganda Revenue Authority vehicle seal requirements."
+description: "Malaba-Bungoma Highway Traffic Crisis Disrupts Regional Trade: A 33km traffic jam on the Malaba-Bungoma highway has stranded drivers and delayed trade due to"
+excerpt: "The Cost of the Malaba Border Blockade A 26km queue of heavy goods vehicles currently snakes from the Malaba border back toward Bungoma, mar"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/YT3VXSvh/906c10dc832b.webp"
 category: "News"
 tags: ["malaba border", "northern corridor", "regional trade", "kenya news", "transportation", "bungoma"]
+canonical: "https://zandani.co.ke/article/malaba-bungoma-highway-traffic-crisis"
 date: "2026-07-13T08:20:15Z"
 dateModified: "2026-07-13T08:20:15Z"
+focusKeyword: "Malaba-Bungoma Highway Traffic Crisis Disrupts Regional Trade"
 schema: "NewsArticle"
 ---
 
-## The Cost of the Malaba Border Blockade
+## The Cost of the Malaba Border Blockade Malaba-Bungoma Highway Traffic Crisis Disrupts Regional Trade is the central subject of the update.
 
 A 26km queue of heavy goods vehicles currently snakes from the Malaba border back toward Bungoma, marking the latest iteration of a recurring logistical failure that threatens the financial stability of the Northern Corridor. While regional trade agreements theoretically guarantee the seamless movement of goods, the reality on the ground remains hostage to sudden shifts in administrative policy.
 
