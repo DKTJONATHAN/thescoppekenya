@@ -325,10 +325,10 @@
     "586c19a7f554c45bc7519ef191122423",
     "98978f147a38d095f3fd30a98d3a7368",
     "affe8dc9be4c0b55d4b136a4fba4717d",
-    "31a65fb8a31357ed7352319c0fe71aa7"
+    "31a65fb8a31357ed7352319c0fe71aa7",
+    "56c12662ce6e2e35390cd0e3adeac5c1"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Power Accountability",
     "Hard News Lead",
     "Reaction & Voices",
@@ -357,10 +357,10 @@
     "Context Backgrounder",
     "Explainer",
     "Reaction & Voices",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "story_progression|Kenya|Reaction & Voices",
     "winners_losers|Kenya National Bureau of Statistics|Context Backgrounder",
     "accountability|reparations|Hard News Lead",
     "winners_losers|NTSA|Explainer",
@@ -439,6 +439,7 @@
     "myth_vs_fact|KURA|Context Backgrounder",
     "winners_losers|government-appointments|Explainer",
     "next_48_hours|Kisumu|Reaction & Voices",
-    "policy_gap|Ruaka|Hard News Lead"
+    "policy_gap|Ruaka|Hard News Lead",
+    "money_follow|Malaba border|Context Backgrounder"
   ]
 }
