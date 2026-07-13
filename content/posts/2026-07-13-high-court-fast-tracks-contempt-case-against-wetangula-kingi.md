@@ -1,0 +1,35 @@
+---
+title: "High Court fast-tracks contempt case against Wetangula and Kingi"
+slug: "high-court-fast-tracks-contempt-case-against-wetangula-kingi"
+description: "Justice David Mburu certified a contempt application against Moses Wetangula and Amason Kingi regarding alleged participation in partisan political events."
+author: "Celestine Nzioka"
+authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
+image: "https://i.ibb.co/4wH9k9X4/541314ec50c7.webp"
+category: "News"
+tags: ["kenya politics", "judiciary", "moses wetangula", "amason kingi", "vocal africa", "kenya kwanza"]
+date: "2026-07-13T13:28:36Z"
+dateModified: "2026-07-13T13:28:36Z"
+schema: "NewsArticle"
+---
+
+## Can the Speakers of Parliament Remain Neutral Referees?
+
+The Milimani High Court has certified as urgent a petition accusing National Assembly Speaker Moses Wetangula and Senate Speaker Amason Kingi of violating judicial orders by engaging in active partisan politics. This legal friction tests the constitutional boundaries of legislative leadership.
+
+Justice David Mburu issued the order on July 13, 2026, setting a July 16, 2026, date to review whether the two speakers complied with previous directives that limited their involvement in political activities. Vocal Africa, the rights organization behind the petition, argues that the speakers participated in Kenya Kwanza rallies at Silverline Grounds in Eldoret on July 3, 2026, in Likoni, Mombasa, and at Emusire High School in Emuhaya on July 9, 2026. This legal challenge arrives as the country approaches the 2027 election cycle, raising fundamental questions about the role of the Speakers.
+
+### What does the law say about political neutrality?
+
+In many parliamentary democracies, the office of the Speaker is designed to function as an impartial arbiter. While the individuals elected to these roles come from political parties, the constitution anticipates that once they occupy the Speaker's chair, they should transcend partisan loyalty to ensure fair debate. The core logic is that the Speaker must serve the entire House, including the minority side. If the person presiding over legislative sessions is also campaigning for a specific political faction, opposition members may lose confidence in the fairness of the proceedings.
+
+This requirement for neutrality serves as a structural safeguard. By staying above the political fray, the Speaker protects the integrity of the legislative process, ensuring that laws are debated and passed without the thumb of the chair being placed on the scale of partisan interest. When court orders attempt to limit this involvement, they are essentially trying to uphold the principle that the legislative branch should remain a neutral forum for all citizens, rather than a campaigning tool for the ruling coalition.
+
+### Why does this matter for the 2027 elections?
+
+The tension between the Judiciary and the legislative leadership highlights a growing concern over the environment in which the next general election will take place. For ordinary Kenyans, the impartiality of parliamentary leadership is linked to the legitimacy of the electoral process. If the referees of the legislative process are perceived as active participants in political campaigns, the public may view the actions of those bodies with increased suspicion. This creates a ripple effect throughout the government.
+
+When citizens feel that the legislative branch has lost its role as a neutral arbiter, the trust in democratic institutions diminishes. This case is not merely about whether two specific politicians attended rallies. It is about establishing clear rules of conduct for those who hold high constitutional office as the country prepares for the next round of national voting. Just as viewers monitor shifting tides in international events, such as the recent news that Julian Nagelsmann has resigned as Germany coach amid Klopp links, Kenyans are watching how these judicial interventions shape the behavior of their political leaders. These court proceedings act as a warning that the conduct of public officials remains subject to judicial scrutiny, regardless of their rank within the government. Ensuring that the legislative branch is seen as a fair ground for all participants is vital to maintaining stability as political temperatures rise ahead of 2027.
+
+The court will now determine if the attendance at these events crossed the line into contempt, setting a precedent for how high-ranking officials manage their public duties versus their political allegiances.
+
+The law requires legislative leaders to be referees, not players, to ensure every citizen has a voice in the halls of power.
