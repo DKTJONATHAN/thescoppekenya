@@ -1,21 +1,20 @@
 ---
-title: "Johnny Gilbert Celebrates 98th Birthday, Jeopardy Announcer
+title: "'Johnny Gilbert Celebrates 98th Birthday, Jeopardy Announcer"
 slug: "johnny-gilbert-98th-birthday-jeopardy-announcer"
-description: "Longtime Jeopardy! announcer Johnny Gilbert recently celebrated his 98th birthday. Delve into his remarkable career spanning decades. Discover his journey."
+description: "'Johnny Gilbert Celebrates 98th Birthday, Jeopardy Announcer: Longtime Jeopardy! announcer Johnny Gilbert recently celebrated his 98th birthday. Delve into his"
+excerpt: "The Ageless Voice: Kenyan Fans Celebrate Johnny Gilbert's 98th Birthday As 'Jeopardy!''s legendary announcer Johnny Gilbert reaches his 98th"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/qY99kD4g/7e013b0b2d9e.jpg"
-og_title: "Johnny Gilbert: Jeopardy Announcer Celebrates 98th Birthday"
-og_description: "Jeopardy! announcer Johnny Gilbert marks his 98th birthday. Learn about his incredible journey with the iconic game show."
-focus_keyword: "Johnny Gilbert"
 category: "Entertainment"
 tags: ["johnny gilbert", "jeopardy", "alex trebek", "ken jennings", "entertainment news", "game shows"]
+canonical: "https://zandani.co.ke/article/johnny-gilbert-98th-birthday-jeopardy-announcer"
 date: "2026-07-13T23:29:27Z"
 dateModified: "2026-07-13T23:29:27Z"
+focusKeyword: "'Johnny Gilbert Celebrates 98th Birthday, Jeopardy Announcer"
 schema: "NewsArticle"
 ---
 
-## The Ageless Voice: Kenyan Fans Celebrate Johnny Gilbert's 98th Birthday
+## The Ageless Voice: Kenyan Fans Celebrate Johnny Gilbert's 98th Birthday "Johnny Gilbert Celebrates 98th Birthday, Jeopardy Announcer is the central subject of the update.
 
 As "Jeopardy!"'s legendary announcer Johnny Gilbert reaches his 98th birthday, Kenyan viewers are flooding social media with tributes, acknowledging his remarkable career and the distinctive voice that has introduced countless game show moments across decades of television. It's a testament to a presence that truly feels timeless.
 
