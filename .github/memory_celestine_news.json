@@ -327,10 +327,10 @@
     "affe8dc9be4c0b55d4b136a4fba4717d",
     "31a65fb8a31357ed7352319c0fe71aa7",
     "56c12662ce6e2e35390cd0e3adeac5c1",
-    "463c1536ff3fe191d7794c67d05e19a4"
+    "463c1536ff3fe191d7794c67d05e19a4",
+    "cbe2b3ded0c24cd5816a153126d9a054"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction & Voices",
     "Explainer",
     "Power Accountability",
@@ -359,10 +359,10 @@
     "Reaction & Voices",
     "Hard News Lead",
     "Context Backgrounder",
-    "Explainer"
+    "Explainer",
+    "Power Accountability"
   ],
   "angle_history": [
-    "accountability|reparations|Hard News Lead",
     "winners_losers|NTSA|Explainer",
     "money_follow|education|Power Accountability",
     "winners_losers|KNEC|Reaction & Voices",
@@ -441,6 +441,7 @@
     "next_48_hours|Kisumu|Reaction & Voices",
     "policy_gap|Ruaka|Hard News Lead",
     "money_follow|Malaba border|Context Backgrounder",
-    "accountability|Kenya politics|Explainer"
+    "accountability|Kenya politics|Explainer",
+    "accountability|UK immigration|Power Accountability"
   ]
 }
