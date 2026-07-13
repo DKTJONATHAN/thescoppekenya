@@ -1,18 +1,20 @@
 ---
 title: "High Court fast-tracks contempt case against Wetangula and Kingi"
 slug: "high-court-fast-tracks-contempt-case-against-wetangula-kingi"
-description: "Justice David Mburu certified a contempt application against Moses Wetangula and Amason Kingi regarding alleged participation in partisan political events."
+description: "High Court fast-tracks contempt case against Wetangula and Kingi: Justice David Mburu certified a contempt application against Moses Wetangula and Amason Kingi"
+excerpt: "Can the Speakers of Parliament Remain Neutral Referees? The Milimani High Court has certified as urgent a petition accusing National Assembl"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/4wH9k9X4/541314ec50c7.webp"
 category: "News"
 tags: ["kenya politics", "judiciary", "moses wetangula", "amason kingi", "vocal africa", "kenya kwanza"]
+canonical: "https://zandani.co.ke/article/high-court-fast-tracks-contempt-case-against-wetangula-kingi"
 date: "2026-07-13T13:28:36Z"
 dateModified: "2026-07-13T13:28:36Z"
+focusKeyword: "High Court fast-tracks contempt case against Wetangula and Kingi"
 schema: "NewsArticle"
 ---
 
-## Can the Speakers of Parliament Remain Neutral Referees?
+## Can the Speakers of Parliament Remain Neutral Referees? High Court fast-tracks contempt case against Wetangula and Kingi is the central subject of the update.
 
 The Milimani High Court has certified as urgent a petition accusing National Assembly Speaker Moses Wetangula and Senate Speaker Amason Kingi of violating judicial orders by engaging in active partisan politics. This legal friction tests the constitutional boundaries of legislative leadership.
 
