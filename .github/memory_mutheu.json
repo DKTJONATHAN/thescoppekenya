@@ -308,10 +308,10 @@
     "52eb11405658bc66057d8c967d598b95",
     "18a926b60b0eba497ff82fc4497d3897",
     "9c777fa9233258684b68dde21f391f9d",
-    "97cab7a85824326c856bb9671196dcb0"
+    "97cab7a85824326c856bb9671196dcb0",
+    "00e06f4db9b28457d6c2bb0a7df4b1d3"
   ],
   "style_history": [
-    "Explainer",
     "Profile Beat",
     "Reaction Round-up",
     "Trend Take",
@@ -340,10 +340,10 @@
     "Explainer",
     "Trend Take",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "myth_vs_fact|Car crash|Explainer",
     "story_progression|Joe Negri|Hard News Lead",
     "timeline_shift|na|Trend Take",
     "accountability|Freedom 250|Profile Beat",
@@ -422,6 +422,7 @@
     "policy_gap|Football|Explainer",
     "accountability|Controversy|Trend Take",
     "timeline_shift|sitcom|Profile Beat",
-    "money_follow|Rosie O\u2019Donnell|Hard News Lead"
+    "money_follow|Rosie O\u2019Donnell|Hard News Lead",
+    "timeline_shift|na|Reaction Round-up"
   ]
 }
