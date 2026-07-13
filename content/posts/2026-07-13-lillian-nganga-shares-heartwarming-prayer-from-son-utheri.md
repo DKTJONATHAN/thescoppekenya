@@ -1,18 +1,20 @@
 ---
 title: "Lillian Ng’ang’a Shares Heartwarming Prayer From Son Utheri"
 slug: "lillian-nganga-shares-heartwarming-prayer-from-son-utheri"
-description: "Lillian Ng’ang’a has shared a touching story about her son Utheri, revealing the young boy's inclusive nightly prayer for passengers across the globe."
+description: "Lillian Ng’ang’a Shares Heartwarming Prayer From Son Utheri: Lillian Ng’ang’a has shared a touching story about her son Utheri, revealing the young boy's"
+excerpt: "Little Prayers, Big Hearts: The Utheri Effect Kenyans are currently obsessed with a toddler’s nightly ritual that has turned social media in"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/q3XWvfb6/7ae2119d5a88.webp"
 category: "Gossip"
 tags: ["lillian ng'ang'a", "juliani", "utheri", "kenyan celebrities", "parenting", "kenyan entertainment"]
+canonical: "https://zandani.co.ke/article/lillian-nganga-shares-heartwarming-prayer-from-son-utheri"
 date: "2026-07-13T11:30:03Z"
 dateModified: "2026-07-13T11:30:03Z"
+focusKeyword: "Lillian Ng’ang’a Shares Heartwarming Prayer From Son Utheri"
 schema: "NewsArticle"
 ---
 
-## Little Prayers, Big Hearts: The Utheri Effect
+## Little Prayers, Big Hearts: The Utheri Effect Lillian Ng’ang’a Shares Heartwarming Prayer From Son Utheri is the central subject of the update.
 
 Kenyans are currently obsessed with a toddler’s nightly ritual that has turned social media into a soft space for emotional reflection. Lillian Ng’ang’a shared a moment where her son, Utheri, prayed for all passengers traveling across the globe, an act of empathy that signals a quiet shift in how local stars present their private lives.
 
