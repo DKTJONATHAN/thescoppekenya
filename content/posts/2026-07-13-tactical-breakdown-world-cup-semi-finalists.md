@@ -1,18 +1,20 @@
 ---
 title: "Tactical Breakdown of World Cup Semi-Finalists"
 slug: "tactical-breakdown-world-cup-semi-finalists"
-description: "An in-depth statistical analysis of Argentina, England, France, and Spain as they prepare for the 2026 World Cup semi-final showdowns."
+description: "Tactical Breakdown of World Cup Semi-Finalists: An in-depth statistical analysis of Argentina, England, France, and Spain as they prepare for the 2026 World"
+excerpt: "The Semi Final Mirage: Why Sentiment Won't Win Trophies The semi finalists are locked in. As expected, the punditry class is busy spinning l"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/S4Jwtqvh/38e9fa5b3e3d.jpg"
 category: "Sports"
 tags: ["world cup 2026", "football analysis", "sports news", "lionel messi", "kenya football fans", "international football"]
+canonical: "https://zandani.co.ke/article/tactical-breakdown-world-cup-semi-finalists"
 date: "2026-07-13T12:43:58Z"
 dateModified: "2026-07-13T12:43:58Z"
+focusKeyword: "Tactical Breakdown of World Cup Semi-Finalists"
 schema: "NewsArticle"
 ---
 
-## The Semi-Final Mirage: Why Sentiment Won't Win Trophies
+## The Semi-Final Mirage: Why Sentiment Won't Win Trophies Tactical Breakdown of World Cup Semi-Finalists is the central subject of the update.
 
 The semi-finalists are locked in. As expected, the punditry class is busy spinning legends and fairy tales, desperate to attach a grand narrative to the final four. They ignore the harsh tactical realities in favor of poetic justice. But look past the headlines and the romanticism, and you will find that these teams are hurtling toward a very structural brick wall rather than a preordained destiny.
 
