@@ -1,7 +1,8 @@
 ---
 title: "Lee Kinyanjui Plans Political Comeback Amid Rising Public Dissatisfaction Over Nakuru Waste Management"
 slug: "lee-kinyanjui-plans-political-comeback-amid-rising-public-dissatisfa"
-description: "Former Governor Lee Kinyanjui plans a 2027 political comeback, leveraging public frustration over the current Nakuru administration's waste management."
+description: "Lee Kinyanjui Plans Political Comeback Amid Rising Public Dissati: Former Governor Lee Kinyanjui plans a 2027 political comeback, leveraging public frustration"
+excerpt: "Former Nakuru Governor Lee Kinyanjui is actively preparing for a political comeback ahead of the 2027 general election. His potential return"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/hRcFHyyh/2290a18f369e.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["lee-kinyanjui", "nakuru-politics", "waste-management", "nakuru-county", "kenyan-politics"]
 canonical: "https://zandani.co.ke/article/lee-kinyanjui-plans-political-comeback-amid-rising-public-dissatisfa"
 date: "2026-07-13T15:10:34Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-13T15:10:34Z"
+focusKeyword: "Lee Kinyanjui Plans Political Comeback Amid Rising Public Dissati"
 schema: "NewsArticle"
 ---
-Former Nakuru Governor Lee Kinyanjui is actively preparing for a political comeback ahead of the 2027 general election. His potential return is fueled by widespread public dissatisfaction with the current county administration regarding failing sanitation services and deteriorating waste management standards across Nakuru.
+
+Former Nakuru Governor Lee Kinyanjui is actively preparing for a political comeback ahead of the 2027 general election. His potential return is fueled by widespread public dissatisfaction with the current county administration regarding failing sanitation services and deteriorating waste management standards across Nakuru. Lee Kinyanjui Plans Political Comeback Amid Rising Public Dissati is the central subject of the update.
 
 ## The Shift in Nakuru Political Sentiment
 
