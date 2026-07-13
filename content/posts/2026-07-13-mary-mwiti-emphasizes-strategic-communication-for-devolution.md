@@ -1,18 +1,20 @@
 ---
 title: "Mary Mwiti Emphasizes Strategic Communication for Devolution"
 slug: "mary-mwiti-emphasizes-strategic-communication-for-devolution"
-description: "Council of Governors CEO Mary Mwiti calls for structured, citizen-centered messaging to improve transparency and public trust in Kenya's devolved units."
+description: "Mary Mwiti Emphasizes Strategic Communication for Devolution: Council of Governors CEO Mary Mwiti calls for structured, citizen-centered messaging to improve"
+excerpt: "The Communication Trap: Why Better PR Won't Save Devolution Council of Governors CEO Mary Mwiti recently doubled down on the idea that strat"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/NdXCnkC6/e96130def555.webp"
 category: "Opinions"
 tags: ["devolution", "governance", "council of governors", "kenyan politics", "public participation", "mary mwiti"]
+canonical: "https://zandani.co.ke/article/mary-mwiti-emphasizes-strategic-communication-for-devolution"
 date: "2026-07-13T12:17:59Z"
 dateModified: "2026-07-13T12:17:59Z"
+focusKeyword: "Mary Mwiti Emphasizes Strategic Communication for Devolution"
 schema: "NewsArticle"
 ---
 
-## The Communication Trap: Why Better PR Won't Save Devolution
+## The Communication Trap: Why Better PR Won't Save Devolution Mary Mwiti Emphasizes Strategic Communication for Devolution is the central subject of the update.
 
 Council of Governors CEO Mary Mwiti recently doubled down on the idea that strategic communication is the missing link to fixing Kenya's devolved governance. This view posits that if counties simply polished their messaging and adopted citizen-centered engagement, the public would regain faith in local leadership. It is a comforting fantasy, but it ignores the brutal reality that no amount of slick PR can mask the stench of poor service delivery.
 
