@@ -1,18 +1,20 @@
 ---
 title: "Zari Hassan and Shakib Cham Lutaaya Dismiss Breakup Rumors"
 slug: "zari-hassan-and-shakib-cham-lutaaya-dismiss-breakup-rumors"
-description: "Zari Hassan and husband Shakib Cham Lutaaya have addressed public separation reports, confirming their marriage remains intact in a new video."
+description: "Zari Hassan and Shakib Cham Lutaaya Dismiss Breakup Rumors: Zari Hassan and husband Shakib Cham Lutaaya have addressed public separation reports, confirming"
+excerpt: "The Math Behind the Matrimony Zari Hassan and Shakib Cham Lutaaya have resurfaced to brush aside rumors of a marital collapse, pivoting from"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/zhvZGD2n/ec74ad49360f.jpg"
 category: "Gossip"
 tags: ["zari hassan", "shakib cham lutaaya", "celebrity news", "kenyan entertainment", "social media", "east african celebrities"]
+canonical: "https://zandani.co.ke/article/zari-hassan-and-shakib-cham-lutaaya-dismiss-breakup-rumors"
 date: "2026-07-13T09:46:26Z"
 dateModified: "2026-07-13T09:46:26Z"
+focusKeyword: "Zari Hassan and Shakib Cham Lutaaya Dismiss Breakup Rumors"
 schema: "NewsArticle"
 ---
 
-## The Math Behind the Matrimony
+## The Math Behind the Matrimony Zari Hassan and Shakib Cham Lutaaya Dismiss Breakup Rumors is the central subject of the update.
 
 Zari Hassan and Shakib Cham Lutaaya have resurfaced to brush aside rumors of a marital collapse, pivoting from high-stakes public tension back to a picture of domestic stability. While the couple insists their five-year partnership remains unshakable, the timing of this reconciliation aligns perfectly with a sharp surge in their social media metrics. This latest chapter confirms a predictable rhythm: when the headlines fade, the digital drama escalates, only to be resolved just as interest begins to wane.
 
