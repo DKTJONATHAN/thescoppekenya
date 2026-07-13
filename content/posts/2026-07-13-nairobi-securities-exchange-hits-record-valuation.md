@@ -1,18 +1,20 @@
 ---
 title: "Nairobi Securities Exchange Hits Record Valuation of KSh3.8 Trillion"
 slug: "nairobi-securities-exchange-hits-record-valuation"
-description: "The Nairobi Securities Exchange reached a record market capitalization of KSh3.844 trillion as foreign investors returned to the Kenyan market."
+description: "Nairobi Securities Exchange Hits Record Valuation of KSh3.8 Trill: The Nairobi Securities Exchange reached a record market capitalization of KSh3.844 trillion"
+excerpt: "The Billion Shilling Bull Run: Decoding the Wealth Effect on Your Pocket The Nairobi Securities Exchange has scaled a peak of KSh3.844 trill"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/9HCZLmGz/490c82797c8b.png"
 category: "Business"
 tags: ["nairobi securities exchange", "kenya economy", "safaricom", "investing", "nairobi business", "finance"]
+canonical: "https://zandani.co.ke/article/nairobi-securities-exchange-hits-record-valuation"
 date: "2026-07-13T08:26:39Z"
 dateModified: "2026-07-13T08:26:39Z"
+focusKeyword: "Nairobi Securities Exchange Hits Record Valuation of KSh3.8 Trill"
 schema: "NewsArticle"
 ---
 
-## The Billion-Shilling Bull Run: Decoding the Wealth Effect on Your Pocket
+## The Billion-Shilling Bull Run: Decoding the Wealth Effect on Your Pocket Nairobi Securities Exchange Hits Record Valuation of KSh3.8 Trill is the central subject of the update.
 
 The Nairobi Securities Exchange has scaled a peak of KSh3.844 trillion, a valuation milestone that shifts the national financial baseline. While the number reflects institutional movement, it arrives alongside a 5.3 percent GDP growth rate that signals a broader shift in how our local industries are faring this year.
 
