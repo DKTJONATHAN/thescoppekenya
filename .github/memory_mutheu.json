@@ -309,10 +309,10 @@
     "18a926b60b0eba497ff82fc4497d3897",
     "9c777fa9233258684b68dde21f391f9d",
     "97cab7a85824326c856bb9671196dcb0",
-    "00e06f4db9b28457d6c2bb0a7df4b1d3"
+    "00e06f4db9b28457d6c2bb0a7df4b1d3",
+    "849ac2709d46da0d0efa6d6d1922d85c"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Trend Take",
     "Explainer",
@@ -341,10 +341,10 @@
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Explainer"
   ],
   "angle_history": [
-    "story_progression|Joe Negri|Hard News Lead",
     "timeline_shift|na|Trend Take",
     "accountability|Freedom 250|Profile Beat",
     "accountability|na|Explainer",
@@ -423,6 +423,7 @@
     "accountability|Controversy|Trend Take",
     "timeline_shift|sitcom|Profile Beat",
     "money_follow|Rosie O\u2019Donnell|Hard News Lead",
-    "timeline_shift|na|Reaction Round-up"
+    "timeline_shift|na|Reaction Round-up",
+    "myth_vs_fact|The Odyssey|Explainer"
   ]
 }
