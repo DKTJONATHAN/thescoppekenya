@@ -1,18 +1,20 @@
 ---
 title: "Government Approves Ksh 945 Million Subsidy to Stabilize Fuel Prices"
 slug: "government-approves-ksh-945-million-fuel-subsidy"
-description: "CS Opiyo Wandayi announces a Ksh 945 million fuel subsidy and extended tax relief to keep pump prices stable amid volatile global oil market conditions."
+description: "Government Approves Ksh 945 Million Subsidy to Stabilize Fuel Pri: CS Opiyo Wandayi announces a Ksh 945 million fuel subsidy and extended tax relief to keep"
+excerpt: "The Arithmetic of Temporary Relief Cabinet Secretary Opiyo Wandayi has confirmed a state intervention to hold fuel prices steady through Aug"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/wZdC4xQw/47224e2ccb8d.webp"
 category: "News"
 tags: ["fuel subsidy", "epra", "kenya news", "opiyo wandayi", "petroleum levy", "energy prices"]
+canonical: "https://zandani.co.ke/article/government-approves-ksh-945-million-fuel-subsidy"
 date: "2026-07-14T12:19:06Z"
 dateModified: "2026-07-14T12:19:06Z"
+focusKeyword: "Government Approves Ksh 945 Million Subsidy to Stabilize Fuel Pri"
 schema: "NewsArticle"
 ---
 
-## The Arithmetic of Temporary Relief
+## The Arithmetic of Temporary Relief Government Approves Ksh 945 Million Subsidy to Stabilize Fuel Pri is the central subject of the update.
 
 Cabinet Secretary Opiyo Wandayi has confirmed a state intervention to hold fuel prices steady through August, utilizing Ksh 945 million from the Petroleum Development Levy to offset mounting landing costs. This stopgap measure coincides with an extension of the 8 percent VAT rate until October 2026, marking another chapter in a cycle of fiscal maneuvers designed to keep the cost of living from boiling over while the country grapples with global supply volatility.
 
