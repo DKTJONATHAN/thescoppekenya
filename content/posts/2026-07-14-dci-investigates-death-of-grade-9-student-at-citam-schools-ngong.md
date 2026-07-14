@@ -1,18 +1,20 @@
 ---
 title: "DCI investigates death of Grade 9 student at CITAM Schools Ngong"
 slug: "dci-investigates-death-of-grade-9-student-at-citam-schools-ngong"
-description: "Authorities have launched a probe into the death of a Grade 9 student at CITAM Schools Ngong after the pupil died following a fatal fall from a building."
+description: "DCI investigates death of Grade 9 student at CITAM Schools Ngong: Authorities have launched a probe into the death of a Grade 9 student at CITAM Schools Ngong"
+excerpt: "Structural Integrity Concerns Follow Ngong School Tragedy The Directorate of Criminal Investigations has launched a probe into the death of"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/5XSPQ3Q0/fc5861a7a43f.webp"
 category: "News"
 tags: ["kenya news", "citam schools", "dci", "education", "ngong", "zandani"]
+canonical: "https://zandani.co.ke/article/dci-investigates-death-of-grade-9-student-at-citam-schools-ngong"
 date: "2026-07-14T07:13:00Z"
 dateModified: "2026-07-14T07:13:00Z"
+focusKeyword: "DCI investigates death of Grade 9 student at CITAM Schools Ngong"
 schema: "NewsArticle"
 ---
 
-## Structural Integrity Concerns Follow Ngong School Tragedy
+## Structural Integrity Concerns Follow Ngong School Tragedy DCI investigates death of Grade 9 student at CITAM Schools Ngong is the central subject of the update.
 
 The Directorate of Criminal Investigations has launched a probe into the death of a Grade 9 student at CITAM Schools Ngong after the teenager suffered a fatal fall from a school building on June 13, forcing an urgent review of private facility safety standards.
 

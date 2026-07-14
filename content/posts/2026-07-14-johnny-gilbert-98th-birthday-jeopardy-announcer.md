@@ -14,7 +14,7 @@ focusKeyword: "'Johnny Gilbert Celebrates 98th Birthday, Jeopardy Announcer"
 schema: "NewsArticle"
 ---
 
-## The Ageless Voice: Kenyan Fans Celebrate Johnny Gilbert's 98th Birthday "Johnny Gilbert Celebrates 98th Birthday, Jeopardy Announcer is the central subject of the update.
+## The Ageless Voice: Kenyan Fans Celebrate Johnny Gilbert's 98th Birthday "Johnny Gilbert Celebrates 98th Birthday, Jeopardy Announcer is the central subject of the update. 'Johnny Gilbert Celebrates 98th Birthday, Jeopardy Announcer is the central subject of the update.
 
 As "Jeopardy!"'s legendary announcer Johnny Gilbert reaches his 98th birthday, Kenyan viewers are flooding social media with tributes, acknowledging his remarkable career and the distinctive voice that has introduced countless game show moments across decades of television. It's a testament to a presence that truly feels timeless.
 
