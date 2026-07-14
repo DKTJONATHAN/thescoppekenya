@@ -1,18 +1,20 @@
 ---
 title: "EPRA Maintains Fuel Prices Across Kenya for July Cycle"
 slug: "epra-maintains-kenya-fuel-prices-july-august"
-description: "EPRA has kept fuel prices steady until mid August, supported by government tax adjustments and the Petroleum Development Levy Fund to curb market volatility."
+description: "EPRA Maintains Fuel Prices Across Kenya for July Cycle: EPRA has kept fuel prices steady until mid August, supported by government tax adjustments and the"
+excerpt: "EPRA Fuel Price Freeze: The Hidden Cost of Stability The Energy and Petroleum Regulatory Authority has kept pump prices unchanged for the cy"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/pBHYy5gM/a361b6a150a1.webp"
 category: "News"
 tags: ["epra", "fuel prices", "kenya economy", "petroleum", "inflation", "energy news"]
+canonical: "https://zandani.co.ke/article/epra-maintains-kenya-fuel-prices-july-august"
 date: "2026-07-14T18:08:43Z"
 dateModified: "2026-07-14T18:08:43Z"
+focusKeyword: "EPRA Maintains Fuel Prices Across Kenya for July Cycle"
 schema: "NewsArticle"
 ---
 
-## EPRA Fuel Price Freeze: The Hidden Cost of Stability
+## EPRA Fuel Price Freeze: The Hidden Cost of Stability EPRA Maintains Fuel Prices Across Kenya for July Cycle is the central subject of the update.
 
 The Energy and Petroleum Regulatory Authority has kept pump prices unchanged for the cycle ending August 14, 2026. While motorists in Nairobi continue to pay Ksh214.03 for super petrol, this consistency is being bankrolled by specific fiscal interventions rather than market trends.
 
