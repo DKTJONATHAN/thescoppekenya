@@ -1,21 +1,20 @@
 ---
-title: "NCIS: New York Spinoff Greenlit with LL Cool J and Cast
+title: "'NCIS: New York Spinoff Greenlit with LL Cool J and Cast"
 slug: "ncis-new-york-spinoff-ll-cool-j-cast-2026-debut"
-description: "CBS officially greenlights the highly anticipated NCIS: New York spinoff, set to star LL Cool J as Sam Hanna returning home. Discover the full cast and expected late 2026 debut."
+description: "'NCIS: New York Spinoff Greenlit with LL Cool J and Cast: CBS officially greenlights the highly anticipated NCIS: New York spinoff, set to star LL Cool J as"
+excerpt: "New York's Reel vs. Real: What 'NCIS: New York' Means for Kenyan Viewers The eagerly awaited 'NCIS: New York' spinoff, set to debut in late"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/qL3V4GLr/ab7a44700067.jpg"
-og_title: "NCIS: New York Spinoff Confirmed with LL Cool J!"
-og_description: "CBS officially greenlights NCIS: New York, featuring LL Cool J. Get details on the cast and late 2026 premiere."
-focus_keyword: "NCIS: New York"
 category: "Entertainment"
 tags: ["ncis new york", "ll cool j", "cbs", "tv series", "crime procedural", "entertainment", "scott caan"]
+canonical: "https://zandani.co.ke/article/ncis-new-york-spinoff-ll-cool-j-cast-2026-debut"
 date: "2026-07-14T16:02:09Z"
 dateModified: "2026-07-14T16:02:09Z"
+focusKeyword: "'NCIS: New York Spinoff Greenlit with LL Cool J and Cast"
 schema: "NewsArticle"
 ---
 
-## New York's Reel vs. Real: What 'NCIS: New York' Means for Kenyan Viewers
+## New York's Reel vs. Real: What 'NCIS: New York' Means for Kenyan Viewers "NCIS: New York Spinoff Greenlit with LL Cool J and Cast is the central subject of the update.
 
 The eagerly awaited 'NCIS: New York' spinoff, set to debut in late 2026, marks more than just another expansion of a global franchise. For Kenyan audiences, it embodies a compelling intersection of international entertainment and our own perceptions of justice, identity, and the allure of distant urban landscapes.
 
