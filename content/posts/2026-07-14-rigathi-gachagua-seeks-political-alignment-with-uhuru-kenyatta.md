@@ -1,18 +1,20 @@
 ---
 title: "Rigathi Gachagua Seeks Political Alignment With Uhuru Kenyatta"
 slug: "rigathi-gachagua-seeks-political-alignment-with-uhuru-kenyatta"
-description: "Former Deputy President Rigathi Gachagua begins a regional tour and plans talks with Uhuru Kenyatta to shape opposition strategy for the next election."
+description: "Rigathi Gachagua Seeks Political Alignment With Uhuru Kenyatta: Former Deputy President Rigathi Gachagua begins a regional tour and plans talks with Uhuru"
+excerpt: "The Wamunyoro Pivot: Rewriting the Rules of Mt Kenya Influence The political landscape across Mt Kenya is undergoing a structural makeover a"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/5XZwLYRY/178274d63a2f.jpg"
 category: "Gossip"
 tags: ["kenyan politics", "rigathi gachagua", "uhuru kenyatta", "mount kenya", "2027 election", "kenyan news"]
+canonical: "https://zandani.co.ke/article/rigathi-gachagua-seeks-political-alignment-with-uhuru-kenyatta"
 date: "2026-07-14T08:26:30Z"
 dateModified: "2026-07-14T08:26:30Z"
+focusKeyword: "Rigathi Gachagua Seeks Political Alignment With Uhuru Kenyatta"
 schema: "NewsArticle"
 ---
 
-## The Wamunyoro Pivot: Rewriting the Rules of Mt Kenya Influence
+## The Wamunyoro Pivot: Rewriting the Rules of Mt Kenya Influence Rigathi Gachagua Seeks Political Alignment With Uhuru Kenyatta is the central subject of the update.
 
 The political landscape across Mt Kenya is undergoing a structural makeover as Rigathi Gachagua concludes a 45-day regional feedback tour. This development signals a departure from conventional handshake politics, favoring a strategy that redefines regional loyalty through a lens of curated political positioning.
 
