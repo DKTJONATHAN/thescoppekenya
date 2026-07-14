@@ -1,18 +1,20 @@
 ---
 title: "Ethiopia Launches Formal Stock Exchange to Drive Market Reforms"
 slug: "ethiopia-launches-national-securities-exchange"
-description: "Ethiopia has inaugurated its national securities exchange, signaling a major shift toward a market-driven economy through privatization and reform."
+description: "Ethiopia Launches Formal Stock Exchange to Drive Market Reforms: Ethiopia has inaugurated its national securities exchange, signaling a major shift toward a"
+excerpt: "The Launch of the Ethiopian Securities Exchange Addis Ababa has officially moved away from its history of a command led economy by introduci"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/Z6CrsDcV/7da8e1a49499.jpg"
 category: "Business"
 tags: ["ethiopia", "stock exchange", "east africa business", "economic reform", "financial markets", "investing"]
+canonical: "https://zandani.co.ke/article/ethiopia-launches-national-securities-exchange"
 date: "2026-07-14T07:19:18Z"
 dateModified: "2026-07-14T07:19:18Z"
+focusKeyword: "Ethiopia Launches Formal Stock Exchange to Drive Market Reforms"
 schema: "NewsArticle"
 ---
 
-## The Launch of the Ethiopian Securities Exchange
+## The Launch of the Ethiopian Securities Exchange Ethiopia Launches Formal Stock Exchange to Drive Market Reforms is the central subject of the update.
 
 Addis Ababa has officially moved away from its history of a command-led economy by introducing the Ethiopian Securities Exchange. This initiative seeks to tap into the economic potential of a nation with 120 million people. By prioritizing the development of private capital markets, Ethiopia is initiating a significant transition that reflects broader changes in the regional economic landscape of East Africa.
 
