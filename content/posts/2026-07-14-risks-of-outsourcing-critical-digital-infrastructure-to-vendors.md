@@ -1,18 +1,20 @@
 ---
 title: "Risks of Outsourcing Digital Infrastructure to Private Vendors"
 slug: "risks-of-outsourcing-critical-digital-infrastructure-to-vendors"
-description: "Kenya and Rwanda face challenges as governments outsource critical digital services. Experts warn that losing control impacts service delivery."
+description: "Risks of Outsourcing Digital Infrastructure to Private Vendors: Kenya and Rwanda face challenges as governments outsource critical digital services. Experts"
+excerpt: "The Cost of Our Digital Keys Last Tuesday, I stood at a local Huduma Centre watching a woman struggle to navigate a fee payment on her phone"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/6JDHP3Q9/a881de3e7039.webp"
 category: "Opinions"
 tags: ["ecitizen", "digital sovereignty", "kenya politics", "government procurement", "technology policy", "public services"]
+canonical: "https://zandani.co.ke/article/risks-of-outsourcing-critical-digital-infrastructure-to-vendors"
 date: "2026-07-14T10:56:44Z"
 dateModified: "2026-07-14T10:56:44Z"
+focusKeyword: "Risks of Outsourcing Digital Infrastructure to Private Vendors"
 schema: "NewsArticle"
 ---
 
-## The Cost of Our Digital Keys
+## The Cost of Our Digital Keys Risks of Outsourcing Digital Infrastructure to Private Vendors is the central subject of the update.
 
 Last Tuesday, I stood at a local Huduma Centre watching a woman struggle to navigate a fee payment on her phone, eventually paying an extra Sh50 convenience charge just to access a government form. That small surcharge is the heartbeat of a growing problem where public infrastructure functions like a subscription service rather than a right.
 
