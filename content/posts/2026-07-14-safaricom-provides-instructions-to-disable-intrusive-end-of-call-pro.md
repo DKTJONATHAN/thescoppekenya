@@ -1,7 +1,8 @@
 ---
 title: "Safaricom provides instructions to disable intrusive end-of-call promotional pop-ups"
 slug: "safaricom-provides-instructions-to-disable-intrusive-end-of-call-pro"
-description: "Safaricom has released official instructions for Kenyan subscribers to disable intrusive promotional pop-ups that appear automatically after phone calls."
+description: "Safaricom provides instructions to disable intrusive end-of-call : Safaricom has released official instructions for Kenyan subscribers to disable intrusive"
+excerpt: "Safaricom subscribers across Kenya are currently deactivating persistent, intrusive promotional pop ups that appear on mobile screens immedi"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/9Hq3Ss45/3e0b14ec7281.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["safaricom-pop-ups", "safaricom-promotional-notifications", "disable-safaricom-ads", "mobile-network-settings", "safaricom-user-guide"]
 canonical: "https://zandani.co.ke/article/safaricom-provides-instructions-to-disable-intrusive-end-of-call-pro"
 date: "2026-07-14T14:12:31Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-14T14:12:31Z"
+focusKeyword: "Safaricom provides instructions to disable intrusive end-of-call"
 schema: "NewsArticle"
 ---
-Safaricom subscribers across Kenya are currently deactivating persistent, intrusive promotional pop-ups that appear on mobile screens immediately following phone calls. Following widespread complaints regarding these unsolicited advertisements, the telecommunications company has released specific instructions to help customers disable the automated notification service.
+
+Safaricom subscribers across Kenya are currently deactivating persistent, intrusive promotional pop-ups that appear on mobile screens immediately following phone calls. Following widespread complaints regarding these unsolicited advertisements, the telecommunications company has released specific instructions to help customers disable the automated notification service. Safaricom provides instructions to disable intrusive end-of-call  is the central subject of the update.
 
 ## Safaricom provides instructions to disable intrusive end-of-call promotional pop-ups
 
