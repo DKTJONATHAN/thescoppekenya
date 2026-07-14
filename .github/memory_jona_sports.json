@@ -242,10 +242,10 @@
     "97ba64f89145f476de3562088b940446",
     "771cf94aa9edf7d824cbbd96250f1030",
     "2768bd049e8bd61bcd79bdd952185443",
-    "f5d0ca3510145ed25146ab90706d429d"
+    "f5d0ca3510145ed25146ab90706d429d",
+    "dd0f54748fd78af4dca02b222806d4e5"
   ],
   "style_history": [
-    "Tactical Take",
     "Match Report",
     "Stat Story",
     "Player Profile Beat",
@@ -274,10 +274,10 @@
     "Stat Story",
     "Match Report",
     "Player Profile Beat",
-    "Cynical Pundit"
+    "Cynical Pundit",
+    "Stat Story"
   ],
   "angle_history": [
-    "winners_losers|England National Team|Tactical Take",
     "winners_losers|England|Match Report",
     "impact_on_citizens|Pep Guardiola|Player Profile Beat",
     "accountability|World Cup|Cynical Pundit",
@@ -356,6 +356,7 @@
     "money_follow|Premier League|Stat Story",
     "winners_losers|World Cup|Match Report",
     "accountability|World Cup 2026|Player Profile Beat",
-    "myth_vs_fact|World Cup 2026|Cynical Pundit"
+    "myth_vs_fact|World Cup 2026|Cynical Pundit",
+    "winners_losers|World Cup|Stat Story"
   ]
 }
