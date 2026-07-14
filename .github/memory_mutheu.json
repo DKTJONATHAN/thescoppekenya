@@ -310,10 +310,10 @@
     "9c777fa9233258684b68dde21f391f9d",
     "97cab7a85824326c856bb9671196dcb0",
     "00e06f4db9b28457d6c2bb0a7df4b1d3",
-    "849ac2709d46da0d0efa6d6d1922d85c"
+    "849ac2709d46da0d0efa6d6d1922d85c",
+    "9e549dff593a46a482fba3f1ee454d10"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Trend Take",
     "Explainer",
     "Profile Beat",
@@ -342,10 +342,10 @@
     "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
-    "timeline_shift|na|Trend Take",
     "accountability|Freedom 250|Profile Beat",
     "accountability|na|Explainer",
     "accountability|America's Got Talent|Reaction Round-up",
@@ -424,6 +424,7 @@
     "timeline_shift|sitcom|Profile Beat",
     "money_follow|Rosie O\u2019Donnell|Hard News Lead",
     "timeline_shift|na|Reaction Round-up",
-    "myth_vs_fact|The Odyssey|Explainer"
+    "myth_vs_fact|The Odyssey|Explainer",
+    "myth_vs_fact|NCIS: New York|Trend Take"
   ]
 }
