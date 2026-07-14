@@ -154,10 +154,10 @@
     "e7f60bef4534145d0022920f56179358",
     "d0585ccca918bd101b0654c7fccf72c8",
     "8bb1fb1c9c4600c596c66c2f2d029f05",
-    "d7dbb711169bfa7413394b6ce4e183af"
+    "d7dbb711169bfa7413394b6ce4e183af",
+    "ce687cb8c24369e675ae2551c361ab73"
   ],
   "style_history": [
-    "Africa Angle",
     "Hard News Lead",
     "Backgrounder",
     "Critical Take",
@@ -186,7 +186,8 @@
     "Explainer",
     "Critical Take",
     "Hard News Lead",
-    "Backgrounder"
+    "Backgrounder",
+    "Africa Angle"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -259,6 +260,7 @@
     "myth_vs_fact|Kenya|Explainer",
     "accountability|IEBC|Critical Take",
     "accountability|KRA|Hard News Lead",
-    "timeline_shift|trade secret misappropriation|Backgrounder"
+    "timeline_shift|trade secret misappropriation|Backgrounder",
+    "timeline_shift|WIOCC|Africa Angle"
   ]
 }
