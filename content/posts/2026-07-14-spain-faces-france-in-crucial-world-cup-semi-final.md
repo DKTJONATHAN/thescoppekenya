@@ -1,18 +1,20 @@
 ---
 title: "Spain faces France in crucial World Cup semi-final clash"
 slug: "spain-faces-france-in-crucial-world-cup-semi-final"
-description: "Spain prepares for a decisive World Cup semi-final against France with a focus on managing the fitness and performance of teenager Lamine Yamal."
+description: "Spain faces France in crucial World Cup semi-final clash: Spain prepares for a decisive World Cup semi-final against France with a focus on managing the"
+excerpt: "The Arithmetic of an Outlier: Lamine Yamal Rewrites the Record Books Lamine Yamal takes the field at 20:00 BST today as Spain faces France."
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/yFnJxgHJ/bd9eaf0d8f59.png"
 category: "Sports"
 tags: ["football", "world cup", "spain", "france", "lamine yamal", "sports news"]
+canonical: "https://zandani.co.ke/article/spain-faces-france-in-crucial-world-cup-semi-final"
 date: "2026-07-14T11:49:02Z"
 dateModified: "2026-07-14T11:49:02Z"
+focusKeyword: "Spain faces France in crucial World Cup semi-final clash"
 schema: "NewsArticle"
 ---
 
-## The Arithmetic of an Outlier: Lamine Yamal Rewrites the Record Books
+## The Arithmetic of an Outlier: Lamine Yamal Rewrites the Record Books Spain faces France in crucial World Cup semi-final clash is the central subject of the update.
 
 Lamine Yamal takes the field at 20:00 BST today as Spain faces France. He carries a statistical profile that challenges the early career benchmarks of global icons such as Lionel Messi, Pele, and Diego Maradona. Having celebrated his 17th birthday just days ago, his current production levels represent an unprecedented deviation from standard developmental trajectories.
 
