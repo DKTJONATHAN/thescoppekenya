@@ -14,7 +14,7 @@ focusKeyword: "'Ashley Johnson Reveals Kidnapping Attempt on Growing Pains Set"
 schema: "NewsArticle"
 ---
 
-## Decades Later, Ashley Johnson Kidnapping Attempt Sparks Outcry Over Child Star Safety "Ashley Johnson Reveals Kidnapping Attempt on Growing Pains Set is the central subject of the update.
+## Decades Later, Ashley Johnson Kidnapping Attempt Sparks Outcry Over Child Star Safety "Ashley Johnson Reveals Kidnapping Attempt on Growing Pains Set is the central subject of the update. 'Ashley Johnson Reveals Kidnapping Attempt on Growing Pains Set is the central subject of the update.
 
 Actress Ashley Johnson recently unveiled a harrowing incident from her childhood on the set of "Growing Pains," detailing an attempted kidnapping that left many online communities aghast. Her revelation has galvanized a wave of social media commentary, with fans and observers alike voicing profound shock and demanding a reckoning for what they perceive as historical negligence regarding the protection of young performers in Hollywood.
 
