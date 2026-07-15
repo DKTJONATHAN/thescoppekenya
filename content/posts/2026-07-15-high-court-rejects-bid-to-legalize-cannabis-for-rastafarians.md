@@ -1,18 +1,20 @@
 ---
 title: "High Court Rejects Bid to Legalize Cannabis for Rastafarians"
 slug: "high-court-rejects-bid-to-legalize-cannabis-for-rastafarians"
-description: "The High Court has dismissed a petition seeking to legalize cannabis for religious use, ruling that drug laws remain valid and enforceable in Kenya."
+description: "High Court Rejects Bid to Legalize Cannabis for Rastafarians: The High Court has dismissed a petition seeking to legalize cannabis for religious use, ruling"
+excerpt: "The Judiciary Keeps the Status Quo Under Lock and Key Justice Bahati Mwamuye has effectively kicked the constitutional can down the road, ch"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Y7tBYKdW/5729f69f03c0.webp"
 category: "News"
 tags: ["kenya", "rastafari", "bhang", "high court", "judiciary", "narcotics law"]
+canonical: "https://zandani.co.ke/article/high-court-rejects-bid-to-legalize-cannabis-for-rastafarians"
 date: "2026-07-15T07:18:31Z"
 dateModified: "2026-07-15T07:18:31Z"
+focusKeyword: "High Court Rejects Bid to Legalize Cannabis for Rastafarians"
 schema: "NewsArticle"
 ---
 
-## The Judiciary Keeps the Status Quo Under Lock and Key
+## The Judiciary Keeps the Status Quo Under Lock and Key High Court Rejects Bid to Legalize Cannabis for Rastafarians is the central subject of the update.
 
 Justice Bahati Mwamuye has effectively kicked the constitutional can down the road, choosing to prioritize the rigid framework of the Narcotic Drugs and Psychotropic Substances Act over a substantive debate on the limits of religious freedom in Kenya.
 
