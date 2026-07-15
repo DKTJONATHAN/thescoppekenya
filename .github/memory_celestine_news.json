@@ -333,10 +333,10 @@
     "ac82e7ad106db6a419f811b41ede025e",
     "0cfc2a5d4cf91a0598d9ae9c168d43d7",
     "ccd3ac477d79428a31a7b4178f541dc0",
-    "2124b1c4dd256c9536904eca711988ad"
+    "2124b1c4dd256c9536904eca711988ad",
+    "f47f700c57c9e36877f8152ed630b85b"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Power Accountability",
     "Explainer",
     "Hard News Lead",
@@ -365,10 +365,10 @@
     "Context Backgrounder",
     "Explainer",
     "Power Accountability",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "policy_gap|Bomet County|Context Backgrounder",
     "myth_vs_fact|Finance Bill 2026|Reaction & Voices",
     "money_follow|Nakuru|Power Accountability",
     "accountability|Kenya|Hard News Lead",
@@ -447,6 +447,7 @@
     "myth_vs_fact|Fuel Subsidy|Context Backgrounder",
     "money_follow|EPRA|Explainer",
     "policy_gap|Rastafari|Power Accountability",
-    "timeline_shift|Wantam Movement|Reaction & Voices"
+    "timeline_shift|Wantam Movement|Reaction & Voices",
+    "story_progression|KNEC|Hard News Lead"
   ]
 }
