@@ -1,21 +1,20 @@
 ---
-title: "Ashley Johnson Reveals Kidnapping Attempt on Growing Pains Set
+title: "'Ashley Johnson Reveals Kidnapping Attempt on Growing Pains Set"
 slug: "ashley-johnson-kidnapping-growing-pains-set"
-description: "Child star Ashley Johnson revealed a shocking attempted kidnapping during her time on the set of 'Growing Pains.' A man with a gun grabbed her, stopped by quick security. Learn more about the terrifying incident."
+description: "'Ashley Johnson Reveals Kidnapping Attempt on Growing Pains Set: Child star Ashley Johnson revealed a shocking attempted kidnapping during her time on the set"
+excerpt: "Decades Later, Ashley Johnson Kidnapping Attempt Sparks Outcry Over Child Star Safety Actress Ashley Johnson recently unveiled a harrowing i"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/ZRYmKDQf/5241f9815c26.jpg"
-og_title: "Ashley Johnson's Shocking 'Growing Pains' Kidnapping Attempt"
-og_description: "Former child star Ashley Johnson reveals a terrifying attempted kidnapping from the set of 'Growing Pains,' involving a man with a gun and prior threats."
-focus_keyword: "Ashley Johnson kidnapping"
 category: "Entertainment"
 tags: ["ashley johnson", "growing pains", "kidnapping attempt", "child stars", "tv news", "entertainment", "set security"]
+canonical: "https://zandani.co.ke/article/ashley-johnson-kidnapping-growing-pains-set"
 date: "2026-07-15T08:57:35Z"
 dateModified: "2026-07-15T08:57:35Z"
+focusKeyword: "'Ashley Johnson Reveals Kidnapping Attempt on Growing Pains Set"
 schema: "NewsArticle"
 ---
 
-## Decades Later, Ashley Johnson Kidnapping Attempt Sparks Outcry Over Child Star Safety
+## Decades Later, Ashley Johnson Kidnapping Attempt Sparks Outcry Over Child Star Safety "Ashley Johnson Reveals Kidnapping Attempt on Growing Pains Set is the central subject of the update.
 
 Actress Ashley Johnson recently unveiled a harrowing incident from her childhood on the set of "Growing Pains," detailing an attempted kidnapping that left many online communities aghast. Her revelation has galvanized a wave of social media commentary, with fans and observers alike voicing profound shock and demanding a reckoning for what they perceive as historical negligence regarding the protection of young performers in Hollywood.
 
