@@ -1,18 +1,20 @@
 ---
 title: "KNEC Mandates Rehearsals for July Business and Technical Exams"
 slug: "knec-mandates-rehearsals-for-july-business-technical-exams"
-description: "KNEC has scheduled mandatory rehearsals for all July Business and Technical candidates to verify registration details and examination timetables."
+description: "KNEC Mandates Rehearsals for July Business and Technical Exams: KNEC has scheduled mandatory rehearsals for all July Business and Technical candidates to"
+excerpt: "Strengthening TVET Credibility Through Mandatory Pre Exam Audits The Kenya National Examinations Council has officially designated July 17,"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Csnc1bh8/554d16a6f510.webp"
 category: "News"
 tags: ["knec", "tvet", "kenya education", "vocational training", "exams", "nairobi"]
+canonical: "https://zandani.co.ke/article/knec-mandates-rehearsals-for-july-business-technical-exams"
 date: "2026-07-15T18:12:24Z"
 dateModified: "2026-07-15T18:12:24Z"
+focusKeyword: "KNEC Mandates Rehearsals for July Business and Technical Exams"
 schema: "NewsArticle"
 ---
 
-## Strengthening TVET Credibility Through Mandatory Pre-Exam Audits
+## Strengthening TVET Credibility Through Mandatory Pre-Exam Audits KNEC Mandates Rehearsals for July Business and Technical Exams is the central subject of the update.
 
 The Kenya National Examinations Council has officially designated July 17, 2026, as a mandatory rehearsal day for all Business and Technical candidates, requiring students to verify their registration data or face potential administrative disqualification from the upcoming examination cycle.
 

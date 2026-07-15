@@ -14,7 +14,7 @@ focusKeyword: "'Matt Damon quits extreme movie weight changes for health"
 schema: "NewsArticle"
 ---
 
-## Matt Damon Lightens Up: The Evolving Approach to Extreme Movie Weight Changes "Matt Damon quits extreme movie weight changes for health is the central subject of the update.
+## Matt Damon Lightens Up: The Evolving Approach to Extreme Movie Weight Changes "Matt Damon quits extreme movie weight changes for health is the central subject of the update. 'Matt Damon quits extreme movie weight changes for health is the central subject of the update.
 
 Hollywood veteran Matt Damon has decided to stop extreme physical transformations for movie roles. He's prioritizing his health over the intense demands often placed on actors. This shift makes us wonder: What does this mean for his acting, the film industry, and his fans?
 
