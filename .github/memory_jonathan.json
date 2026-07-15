@@ -181,10 +181,10 @@
     "67ef93f9c3485d3a0b917fc28b3d61c8",
     "efe7003449b8adbe724b63a8bf431e36",
     "8e24596cadf3d3358454dc9c6d9fee33",
-    "81886a1005ab41352150789b0a842c22"
+    "81886a1005ab41352150789b0a842c22",
+    "c6e1b0694cfa85b76cc23a76d27a845e"
   ],
   "style_history": [
-    "Letter Form",
     "Counterpoint",
     "Sharp Column",
     "Historical Lens",
@@ -213,10 +213,10 @@
     "Historical Lens",
     "Letter Form",
     "Counterpoint",
-    "Personal Reflection"
+    "Personal Reflection",
+    "Historical Lens"
   ],
   "angle_history": [
-    "policy_gap|fuel prices|Letter Form",
     "money_follow|United Nations|Sharp Column",
     "timeline_shift|Imperial presidency|Historical Lens",
     "policy_gap|transportation|Personal Reflection",
@@ -295,6 +295,7 @@
     "timeline_shift|football|Historical Lens",
     "accountability|Kenya|Letter Form",
     "myth_vs_fact|Devolution|Counterpoint",
-    "money_follow|eCitizen|Personal Reflection"
+    "money_follow|eCitizen|Personal Reflection",
+    "timeline_shift|youth unemployment|Historical Lens"
   ]
 }
