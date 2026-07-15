@@ -1,18 +1,20 @@
 ---
 title: "England vs Argentina Face Off in World Cup Semi-Final Showdown"
 slug: "england-vs-argentina-world-cup-semi-final"
-description: "England and Argentina battle in the World Cup semi-final for a place in the final against Spain as Lionel Messi faces the English side."
+description: "England vs Argentina Face Off in World Cup Semi-Final Showdown: England and Argentina battle in the World Cup semi-final for a place in the final against Spain"
+excerpt: "Atlanta Hosts a Historic Reckoning for England and Argentina Mercedes Benz Stadium in Atlanta provides the clinical, neutral backdrop for a"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/Wv7NQKpy/5014a496c1ce.jpg"
 category: "Sports"
 tags: ["world cup", "football", "england", "argentina", "lionel messi", "sports news"]
+canonical: "https://zandani.co.ke/article/england-vs-argentina-world-cup-semi-final"
 date: "2026-07-15T11:53:37Z"
 dateModified: "2026-07-15T11:53:37Z"
+focusKeyword: "England vs Argentina Face Off in World Cup Semi-Final Showdown"
 schema: "NewsArticle"
 ---
 
-## Atlanta Hosts a Historic Reckoning for England and Argentina
+## Atlanta Hosts a Historic Reckoning for England and Argentina England vs Argentina Face Off in World Cup Semi-Final Showdown is the central subject of the update.
 
 Mercedes-Benz Stadium in Atlanta provides the clinical, neutral backdrop for a generational collision tonight. England and Argentina meet with a singular objective: securing the right to challenge Spain for the 2026 World Cup crown.
 
