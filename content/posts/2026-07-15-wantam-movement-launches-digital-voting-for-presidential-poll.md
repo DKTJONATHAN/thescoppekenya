@@ -1,18 +1,20 @@
 ---
 title: "Wantam Movement launches digital vote for presidential candidate"
 slug: "wantam-movement-launches-digital-voting-for-presidential-poll"
-description: "The Wantam Movement has unveiled a two-stage digital voting system to crowdsource their preferred presidential candidate for the next national election."
+description: "Wantam Movement launches digital vote for presidential candidate: The Wantam Movement has unveiled a two-stage digital voting system to crowdsource their"
+excerpt: "Is Your Vote Code or Character? Digital enthusiasts are already flooding social media with skepticism as the Wantam Movement prepares to han"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/kscgNDJc/63399c818b53.webp"
 category: "News"
 tags: ["kenyan politics", "wantam movement", "2027 election", "digital voting", "kenya news"]
+canonical: "https://zandani.co.ke/article/wantam-movement-launches-digital-voting-for-presidential-poll"
 date: "2026-07-15T12:19:42Z"
 dateModified: "2026-07-15T12:19:42Z"
+focusKeyword: "Wantam Movement launches digital vote for presidential candidate"
 schema: "NewsArticle"
 ---
 
-## Is Your Vote Code or Character?
+## Is Your Vote Code or Character? Wantam Movement launches digital vote for presidential candidate is the central subject of the update.
 
 Digital enthusiasts are already flooding social media with skepticism as the Wantam Movement prepares to hand the keys of political selection to a smartphone screen. While some hail the move as a bold disruption of the status quo, thousands of Kenyans are questioning if an algorithm can truly replace the grit and deal-making of a nomination convention.
 
