@@ -319,10 +319,10 @@
     "02da124299beb524449cd369ae8e57d4",
     "054372d70782f0739ee4f94658776d87",
     "bd28f225675b6323abe79d6405665f7c",
-    "ab3bf56e39bf2ffde5fbcfcbc0ebb91b"
+    "ab3bf56e39bf2ffde5fbcfcbc0ebb91b",
+    "3c470973a3c7e1731cbfbe01a7d5a75e"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
     "Hard News Lead",
@@ -351,10 +351,10 @@
     "Receipts Piece",
     "Profile Beat",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "timeline_shift|Nikita Kering'|Reaction Round-up",
     "money_follow|Kenya|Receipts Piece",
     "policy_gap|co-parenting|Profile Beat",
     "next_48_hours|East Africa|Hard News Lead",
@@ -433,6 +433,7 @@
     "accountability|content creation|Receipts Piece",
     "accountability|Jovial|Profile Beat",
     "story_progression|Lillian Ng\u2019ang\u2019a|Reaction Round-up",
-    "money_follow|retail|Hard News Lead"
+    "money_follow|retail|Hard News Lead",
+    "money_follow|Akothee|Receipts Piece"
   ]
 }
