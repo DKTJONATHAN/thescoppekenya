@@ -1,18 +1,20 @@
 ---
 title: "Akothee Details Reasons for Marriage Split with Dennis Schweizer"
 slug: "akothee-details-reasons-for-marriage-split-with-dennis-schweizer"
-description: "Musician Akothee explains the end of her marriage to Dennis Schweizer citing love bombing and shifts in financial expectations after their wedding."
+description: "Akothee Details Reasons for Marriage Split with Dennis Schweizer: Musician Akothee explains the end of her marriage to Dennis Schweizer citing love bombing and"
+excerpt: "The Accountant of Hearts: Akothee and the Price of a Public Union Akothee once marketed her marriage to Dennis Schweizer as the ultimate rom"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/p62c2CpM/874cd7b122c9.webp"
 category: "Gossip"
 tags: ["akothee", "dennis schweizer", "kenyan entertainment", "celebrity news", "kenyan celebrities"]
+canonical: "https://zandani.co.ke/article/akothee-details-reasons-for-marriage-split-with-dennis-schweizer"
 date: "2026-07-15T10:16:40Z"
 dateModified: "2026-07-15T10:16:40Z"
+focusKeyword: "Akothee Details Reasons for Marriage Split with Dennis Schweizer"
 schema: "NewsArticle"
 ---
 
-## The Accountant of Hearts: Akothee and the Price of a Public Union
+## The Accountant of Hearts: Akothee and the Price of a Public Union Akothee Details Reasons for Marriage Split with Dennis Schweizer is the central subject of the update.
 
 Akothee once marketed her marriage to Dennis Schweizer as the ultimate romantic triumph. Today, she characterizes that same event as a series of poor financial decisions. The shift from a benefactor dynamic to a strained business partnership ultimately fractured their home life, proving that some unions crumble faster under fiscal pressure than emotional ones.
 
