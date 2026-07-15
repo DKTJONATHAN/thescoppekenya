@@ -313,10 +313,10 @@
     "849ac2709d46da0d0efa6d6d1922d85c",
     "9e549dff593a46a482fba3f1ee454d10",
     "4775391858d77a0126efebcf39fd2275",
-    "f936cf5579e286055f6bf7fbf4e723b7"
+    "f936cf5579e286055f6bf7fbf4e723b7",
+    "0cc4267b5a05902f57d61c39b898a23f"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
@@ -345,10 +345,10 @@
     "Explainer",
     "Trend Take",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Explainer"
   ],
   "angle_history": [
-    "accountability|America's Got Talent|Reaction Round-up",
     "policy_gap|Engagement|Hard News Lead",
     "winners_losers|Susan Boyle|Trend Take",
     "accountability|Scary Movie|Explainer",
@@ -427,6 +427,7 @@
     "myth_vs_fact|The Odyssey|Explainer",
     "myth_vs_fact|NCIS: New York|Trend Take",
     "money_follow|Stan Lee|Hard News Lead",
-    "accountability|Child star|Reaction Round-up"
+    "accountability|Child star|Reaction Round-up",
+    "story_progression|Matt Damon|Explainer"
   ]
 }
