@@ -1,7 +1,8 @@
 ---
 title: "Kasarani Residents Criticize Ronald Karauri Over Poor Roads Amid Gubernatorial Rumors"
 slug: "kasarani-residents-criticize-ronald-karauri-over-poor-roads-amid-gub"
-description: "Kasarani residents are criticizing MP Ronald Karauri over the poor state of local road infrastructure amid growing rumors of a Nairobi gubernatorial bid."
+description: "Kasarani Residents Criticize Ronald Karauri Over Poor Roads Amid : Kasarani residents are criticizing MP Ronald Karauri over the poor state of local road"
+excerpt: "Kasarani Member of Parliament Ronald Karauri is facing significant backlash from his constituents this week as residents highlight the worse"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/5gcLCPm4/d4e8d0af3721.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["kasarani-roads", "ronald-karauri", "nairobi-politics", "kasarani-constituency", "gubernatorial-bid"]
 canonical: "https://zandani.co.ke/article/kasarani-residents-criticize-ronald-karauri-over-poor-roads-amid-gub"
 date: "2026-07-15T14:08:32Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-15T14:08:32Z"
+focusKeyword: "Kasarani Residents Criticize Ronald Karauri Over Poor Roads Amid"
 schema: "NewsArticle"
 ---
-Kasarani Member of Parliament Ronald Karauri is facing significant backlash from his constituents this week as residents highlight the worsening state of local infrastructure. The criticism follows rising speculation that the lawmaker is preparing a bid for the Nairobi gubernatorial seat.
+
+Kasarani Member of Parliament Ronald Karauri is facing significant backlash from his constituents this week as residents highlight the worsening state of local infrastructure. The criticism follows rising speculation that the lawmaker is preparing a bid for the Nairobi gubernatorial seat. Kasarani Residents Criticize Ronald Karauri Over Poor Roads Amid  is the central subject of the update.
 
 ## The State of Kasarani Infrastructure
 
