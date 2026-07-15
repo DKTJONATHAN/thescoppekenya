@@ -155,10 +155,10 @@
     "d0585ccca918bd101b0654c7fccf72c8",
     "8bb1fb1c9c4600c596c66c2f2d029f05",
     "d7dbb711169bfa7413394b6ce4e183af",
-    "ce687cb8c24369e675ae2551c361ab73"
+    "ce687cb8c24369e675ae2551c361ab73",
+    "01bc464c9019429108cf3b7d9c882649"
   ],
   "style_history": [
-    "Hard News Lead",
     "Backgrounder",
     "Critical Take",
     "Explainer",
@@ -187,7 +187,8 @@
     "Critical Take",
     "Hard News Lead",
     "Backgrounder",
-    "Africa Angle"
+    "Africa Angle",
+    "Explainer"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -261,6 +262,7 @@
     "accountability|IEBC|Critical Take",
     "accountability|KRA|Hard News Lead",
     "timeline_shift|trade secret misappropriation|Backgrounder",
-    "timeline_shift|WIOCC|Africa Angle"
+    "timeline_shift|WIOCC|Africa Angle",
+    "money_follow|DeepSeek|Explainer"
   ]
 }
