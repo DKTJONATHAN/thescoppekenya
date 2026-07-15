@@ -1,18 +1,20 @@
 ---
 title: "Kenya youth unemployment crisis linked to industrial policy gaps"
 slug: "kenya-youth-unemployment-crisis-policy-gaps"
-description: "Rising youth unemployment in Kenya persists as formal job growth fails to match the million new entrants joining the labor market annually."
+description: "Kenya youth unemployment crisis linked to industrial policy gaps: Rising youth unemployment in Kenya persists as formal job growth fails to match the million"
+excerpt: "The Vanishing Promise of the Kenyan Degree Kenya’s early post independence era treated the university degree as a sacred talisman, a singula"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/j9V8YFYT/a349e3e8f45f.webp"
 category: "Opinions"
 tags: ["kenya", "youth unemployment", "labor market", "vocational training", "gig economy", "kenya economy"]
+canonical: "https://zandani.co.ke/article/kenya-youth-unemployment-crisis-policy-gaps"
 date: "2026-07-15T11:02:32Z"
 dateModified: "2026-07-15T11:02:32Z"
+focusKeyword: "Kenya youth unemployment crisis linked to industrial policy gaps"
 schema: "NewsArticle"
 ---
 
-## The Vanishing Promise of the Kenyan Degree
+## The Vanishing Promise of the Kenyan Degree Kenya youth unemployment crisis linked to industrial policy gaps is the central subject of the update.
 
 Kenya’s early post-independence era treated the university degree as a sacred talisman, a singular instrument intended to staff the civil service and propel the nation toward prosperity. Decades later, this obsession with paper credentials has soured into a structural confinement. Millions of young Kenyans now find themselves anchored to a rigid pursuit of formal positions that the modern economy is structurally incapable of providing.
 
