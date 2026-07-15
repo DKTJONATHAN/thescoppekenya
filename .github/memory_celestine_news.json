@@ -331,10 +331,10 @@
     "cbe2b3ded0c24cd5816a153126d9a054",
     "f7a825a47a3551cfcb0f09e302701875",
     "ac82e7ad106db6a419f811b41ede025e",
-    "0cfc2a5d4cf91a0598d9ae9c168d43d7"
+    "0cfc2a5d4cf91a0598d9ae9c168d43d7",
+    "ccd3ac477d79428a31a7b4178f541dc0"
   ],
   "style_history": [
-    "Hard News Lead",
     "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
@@ -363,10 +363,10 @@
     "Power Accountability",
     "Hard News Lead",
     "Context Backgrounder",
-    "Explainer"
+    "Explainer",
+    "Power Accountability"
   ],
   "angle_history": [
-    "policy_gap|Kenya|Hard News Lead",
     "money_follow|UHC|Explainer",
     "policy_gap|Bomet County|Context Backgrounder",
     "myth_vs_fact|Finance Bill 2026|Reaction & Voices",
@@ -445,6 +445,7 @@
     "accountability|UK immigration|Power Accountability",
     "policy_gap|Kenya|Hard News Lead",
     "myth_vs_fact|Fuel Subsidy|Context Backgrounder",
-    "money_follow|EPRA|Explainer"
+    "money_follow|EPRA|Explainer",
+    "policy_gap|Rastafari|Power Accountability"
   ]
 }
