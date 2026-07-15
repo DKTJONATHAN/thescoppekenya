@@ -193,10 +193,10 @@
     "1fd7baa237698a7fe532d9af25259341",
     "f2cb158aff287164912e1cae73166724",
     "2eb852e99fd967dff6cbbd3112a64383",
-    "410d5e1ffbfe265f9fea17ece7ab9463"
+    "410d5e1ffbfe265f9fea17ece7ab9463",
+    "f8985348424ba1dfd0f51dc8341d668e"
   ],
   "style_history": [
-    "Power Accountability",
     "SME Angle",
     "Backgrounder",
     "Markets Report",
@@ -225,10 +225,10 @@
     "SME Angle",
     "Markets Report",
     "Explainer",
-    "Backgrounder"
+    "Backgrounder",
+    "Power Accountability"
   ],
   "angle_history": [
-    "money_follow|Vodacom|Markets Report",
     "policy_gap|civil forfeiture|Explainer",
     "impact_on_citizens|Kenya|SME Angle",
     "accountability|Crown Paints|Power Accountability",
@@ -307,6 +307,7 @@
     "winners_losers|Kenya|SME Angle",
     "money_follow|Consolidated Bank of Kenya|Markets Report",
     "story_progression|NSE|Explainer",
-    "winners_losers|Ethiopian Securities Exchange|Backgrounder"
+    "winners_losers|Ethiopian Securities Exchange|Backgrounder",
+    "winners_losers|Uganda|Power Accountability"
   ]
 }
