@@ -1,18 +1,20 @@
 ---
 title: "Museveni Rejects Tax Reform Bills Over Economic Fairness Concerns"
 slug: "museveni-rejects-tax-reform-bills-over-economic-fairness"
-description: "President Museveni has returned two major tax bills to Parliament, citing concerns over proposed plastic levies and economic equity for Uganda."
+description: "Museveni Rejects Tax Reform Bills Over Economic Fairness Concerns: President Museveni has returned two major tax bills to Parliament, citing concerns over"
+excerpt: "The Plastic Protectionism Play President Yoweri Museveni has returned the Income Tax and Excise Duty Amendment Bills to Parliament. The offi"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/cKrym3S7/84a07738e432.jpg"
 category: "Business"
 tags: ["uganda", "east africa", "taxation", "economy", "yoweri museveni", "legislation"]
+canonical: "https://zandani.co.ke/article/museveni-rejects-tax-reform-bills-over-economic-fairness"
 date: "2026-07-15T07:22:39Z"
 dateModified: "2026-07-15T07:22:39Z"
+focusKeyword: "Museveni Rejects Tax Reform Bills Over Economic Fairness Concerns"
 schema: "NewsArticle"
 ---
 
-## The Plastic Protectionism Play
+## The Plastic Protectionism Play Museveni Rejects Tax Reform Bills Over Economic Fairness Concerns is the central subject of the update.
 
 President Yoweri Museveni has returned the Income Tax and Excise Duty Amendment Bills to Parliament. The official justification cites a need to protect the Ugandan economy from immediate fiscal volatility. Although the State House frames this veto as a safeguard for small-scale enterprises, the decision to reject a 25 percent excise duty on plastics raises questions about which interests are actually being served.
 
