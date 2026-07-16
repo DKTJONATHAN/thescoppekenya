@@ -1,18 +1,20 @@
 ---
 title: "US Issues Level 4 Ebola Travel Advisories for East Africa"
 slug: "us-issues-level-4-ebola-travel-advisories-for-east-africa"
-description: "The US has placed Uganda and neighboring states on high alert for Ebola, as Kenya moves to halt plans for a local quarantine facility at Laikipia Air Base."
+description: "US Issues Level 4 Ebola Travel Advisories for East Africa: The US has placed Uganda and neighboring states on high alert for Ebola, as Kenya moves to halt"
+excerpt: "The Hidden Cost of Our Border Freedom The United States State Department has officially designated Uganda, the Democratic Republic of the Co"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/tFG0N32/89711628bea0.webp"
 category: "News"
 tags: ["ebola", "kenya news", "travel advisory", "laikipia air base", "us state department", "health"]
+canonical: "https://zandani.co.ke/article/us-issues-level-4-ebola-travel-advisories-for-east-africa"
 date: "2026-07-16T07:26:02Z"
 dateModified: "2026-07-16T07:26:02Z"
+focusKeyword: "US Issues Level 4 Ebola Travel Advisories for East Africa"
 schema: "NewsArticle"
 ---
 
-## The Hidden Cost of Our Border Freedom
+## The Hidden Cost of Our Border Freedom US Issues Level 4 Ebola Travel Advisories for East Africa is the central subject of the update.
 
 The United States State Department has officially designated Uganda, the Democratic Republic of the Congo, South Sudan, and the Central African Republic as Level 4 "Do Not Travel" zones. This diplomatic shift, effective July 15, creates a mandatory 21-day quarantine for all arrivals to the U.S. from these specific nations, significantly altering travel logistics for regional business and diaspora communities.
 
