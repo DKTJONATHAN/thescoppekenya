@@ -336,10 +336,10 @@
     "2124b1c4dd256c9536904eca711988ad",
     "f47f700c57c9e36877f8152ed630b85b",
     "779981a49b383309cfa6cbbe8b565494",
-    "471930ace1bd1ff5154193d7fc883e9a"
+    "471930ace1bd1ff5154193d7fc883e9a",
+    "1630b5b65c1b4c46b5e410144ee515ee"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction & Voices",
     "Context Backgrounder",
     "Explainer",
@@ -368,10 +368,10 @@
     "Reaction & Voices",
     "Hard News Lead",
     "Explainer",
-    "Power Accountability"
+    "Power Accountability",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "accountability|Kenya|Hard News Lead",
     "money_follow|Affordable Housing Programme|Context Backgrounder",
     "timeline_shift|Kenya Meteorological Service Authority|Reaction & Voices",
     "money_follow|infrastructure|Explainer",
@@ -450,6 +450,7 @@
     "timeline_shift|Wantam Movement|Reaction & Voices",
     "story_progression|KNEC|Hard News Lead",
     "winners_losers|Ebola|Explainer",
-    "policy_gap|Huduma Kenya|Power Accountability"
+    "policy_gap|Huduma Kenya|Power Accountability",
+    "story_progression|Wantam Movement|Context Backgrounder"
   ]
 }
