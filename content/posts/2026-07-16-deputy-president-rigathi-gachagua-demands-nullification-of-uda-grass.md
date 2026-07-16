@@ -1,19 +1,21 @@
 ---
 title: "Deputy President Rigathi Gachagua Demands Nullification of UDA Grassroots Election Results Over Rigging Allegations"
 slug: "deputy-president-rigathi-gachagua-demands-nullification-of-uda-grass"
-description: "Deputy President Rigathi Gachagua has formally demanded the nullification of UDA grassroots election results, citing allegations of rigging and fraud."
+description: "Deputy President Rigathi Gachagua Demands Nullification of UDA Gr: Deputy President Rigathi Gachagua has formally demanded the nullification of UDA grassroots"
+excerpt: "Deputy President Rigathi Gachagua has formally demanded the nullification of recent United Democratic Alliance grassroots election results."
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: ""
+image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["rigathi-gachagua", "uda-grassroots-elections", "kenyan-politics", "uda-party-rigging", "kenya-kwanza-internal-conflicts"]
 canonical: "https://zandani.co.ke/article/deputy-president-rigathi-gachagua-demands-nullification-of-uda-grass"
 date: "2026-07-16T14:21:42Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-16T14:21:42Z"
+focusKeyword: "Deputy President Rigathi Gachagua Demands Nullification of UDA Gr"
 schema: "NewsArticle"
 ---
-Deputy President Rigathi Gachagua has formally demanded the nullification of recent United Democratic Alliance grassroots election results. The Deputy President alleges widespread rigging and a lack of transparency within the ruling party, signaling a deepening rift between himself and the current party leadership.
+
+Deputy President Rigathi Gachagua has formally demanded the nullification of recent United Democratic Alliance grassroots election results. The Deputy President alleges widespread rigging and a lack of transparency within the ruling party, signaling a deepening rift between himself and the current party leadership. Deputy President Rigathi Gachagua Demands Nullification of UDA Gr is the central subject of the update.
 
 ## Political Turbulence Within the Ruling Party
 
