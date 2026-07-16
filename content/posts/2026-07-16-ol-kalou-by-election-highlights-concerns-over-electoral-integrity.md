@@ -1,18 +1,20 @@
 ---
 title: "Ol Kalou By-Election Highlights Concerns Over Electoral Integrity"
 slug: "ol-kalou-by-election-highlights-concerns-over-electoral-integrity"
-description: "The Ol Kalou constituency by-election raises alarms regarding Kenya's electoral standards amid reports of voter bribery and violence ahead of the 2027 polls."
+description: "Ol Kalou By-Election Highlights Concerns Over Electoral Integrity: The Ol Kalou constituency by-election raises alarms regarding Kenya's electoral standards"
+excerpt: "The Ol Kalou Litmus Test for 2027 The by election in Ol Kalou, which concluded this week, was marketed as a routine exercise to replace the"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/WWgBL2XJ/f9f496e18e7a.webp"
 category: "Opinions"
 tags: ["kenya politics", "ol kalou", "by-election", "electoral integrity", "governance", "kenyan news"]
+canonical: "https://zandani.co.ke/article/ol-kalou-by-election-highlights-concerns-over-electoral-integrity"
 date: "2026-07-16T11:12:09Z"
 dateModified: "2026-07-16T11:12:09Z"
+focusKeyword: "Ol Kalou By-Election Highlights Concerns Over Electoral Integrity"
 schema: "NewsArticle"
 ---
 
-## The Ol Kalou Litmus Test for 2027
+## The Ol Kalou Litmus Test for 2027 Ol Kalou By-Election Highlights Concerns Over Electoral Integrity is the central subject of the update.
 
 The by-election in Ol Kalou, which concluded this week, was marketed as a routine exercise to replace the late David Njuguna Kiaraho. Beneath the surface, however, this local contest acted as a brutal diagnostic tool, exposing the rot in our electoral machinery that threatens to derail national stability in the upcoming general election.
 
