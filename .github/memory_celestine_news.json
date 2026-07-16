@@ -334,10 +334,10 @@
     "0cfc2a5d4cf91a0598d9ae9c168d43d7",
     "ccd3ac477d79428a31a7b4178f541dc0",
     "2124b1c4dd256c9536904eca711988ad",
-    "f47f700c57c9e36877f8152ed630b85b"
+    "f47f700c57c9e36877f8152ed630b85b",
+    "779981a49b383309cfa6cbbe8b565494"
   ],
   "style_history": [
-    "Power Accountability",
     "Explainer",
     "Hard News Lead",
     "Reaction & Voices",
@@ -366,10 +366,10 @@
     "Explainer",
     "Power Accountability",
     "Reaction & Voices",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "myth_vs_fact|Finance Bill 2026|Reaction & Voices",
     "money_follow|Nakuru|Power Accountability",
     "accountability|Kenya|Hard News Lead",
     "money_follow|Affordable Housing Programme|Context Backgrounder",
@@ -448,6 +448,7 @@
     "money_follow|EPRA|Explainer",
     "policy_gap|Rastafari|Power Accountability",
     "timeline_shift|Wantam Movement|Reaction & Voices",
-    "story_progression|KNEC|Hard News Lead"
+    "story_progression|KNEC|Hard News Lead",
+    "winners_losers|Ebola|Explainer"
   ]
 }
