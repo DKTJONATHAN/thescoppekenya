@@ -1,18 +1,20 @@
 ---
 title: "Argentina Defeat England in Dramatic World Cup Semi-Final in Atlanta"
 slug: "argentina-defeat-england-world-cup-semi-final"
-description: "Lionel Messi leads Argentina to a thrilling comeback victory against England in Atlanta, securing a spot in the World Cup final after late goals."
+description: "Argentina Defeat England in Dramatic World Cup Semi-Final in Atla: Lionel Messi leads Argentina to a thrilling comeback victory against England in Atlanta,"
+excerpt: "The Atlanta Collapse: Tuchel's Defensive Cage Fails Under Messi Thomas Tuchel opted for a hyper defensive structure in Atlanta, transitionin"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/RkFb3XC9/82d1f58358ce.jpg"
 category: "Sports"
 tags: ["world cup", "lionel messi", "football news", "argentina", "england", "sports"]
+canonical: "https://zandani.co.ke/article/argentina-defeat-england-world-cup-semi-final"
 date: "2026-07-16T11:56:27Z"
 dateModified: "2026-07-16T11:56:27Z"
+focusKeyword: "Argentina Defeat England in Dramatic World Cup Semi-Final in Atla"
 schema: "NewsArticle"
 ---
 
-## The Atlanta Collapse: Tuchel's Defensive Cage Fails Under Messi
+## The Atlanta Collapse: Tuchel's Defensive Cage Fails Under Messi Argentina Defeat England in Dramatic World Cup Semi-Final in Atla is the central subject of the update.
 
 Thomas Tuchel opted for a hyper-defensive structure in Atlanta, transitioning from a fluid attacking setup to a rigid 5-4-1 block designed to suffocate Argentina. While the strategy successfully neutralized the midfield for 80 minutes, it ultimately invited the exact pressure England sought to avoid.
 
