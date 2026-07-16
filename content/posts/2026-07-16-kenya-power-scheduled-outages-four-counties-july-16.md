@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Announces Scheduled Outages in Four Counties"
 slug: "kenya-power-scheduled-outages-four-counties-july-16"
-description: "Kenya Power has scheduled electricity maintenance for July 16, resulting in power outages across Nyeri, Meru, Mombasa, and Kwale counties."
+description: "Kenya Power Announces Scheduled Outages in Four Counties: Kenya Power has scheduled electricity maintenance for July 16, resulting in power outages across"
+excerpt: "The Quiet Cost of a Darkened Storefront For Mama June, the slow wilting of her spinach stocks in Nchiru is more than a botanical concern; it"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/67PFbHtz/215323a4a7d9.jpg"
 category: "Gossip"
 tags: ["kenya power", "power outage", "kenya news", "electricity", "maintenance"]
+canonical: "https://zandani.co.ke/article/kenya-power-scheduled-outages-four-counties-july-16"
 date: "2026-07-16T08:30:28Z"
 dateModified: "2026-07-16T08:30:28Z"
+focusKeyword: "Kenya Power Announces Scheduled Outages in Four Counties"
 schema: "NewsArticle"
 ---
 
-## The Quiet Cost of a Darkened Storefront
+## The Quiet Cost of a Darkened Storefront Kenya Power Announces Scheduled Outages in Four Counties is the central subject of the update.
 
 For Mama June, the slow wilting of her spinach stocks in Nchiru is more than a botanical concern; it is a financial warning. She knows that by sunrise, the familiar hum of her cooling unit will cut out, signaling another day where her inventory sits in limbo. Across the regions of Nyeri, Meru, Mombasa, and Kwale, thousands of local entrepreneurs share this same uneasy foresight. To the utility providers, these outages are merely scheduled maintenance, but for the people on the ground, they represent an unplanned tax on their daily labor.
 
