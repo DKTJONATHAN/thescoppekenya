@@ -1,18 +1,20 @@
 ---
 title: "Regulators Move to Close Digital Lending Loophole in Kenya"
 slug: "regulators-move-to-close-digital-lending-loophole-in-kenya"
-description: "Kenyan authorities are addressing a regulatory gap that enables predatory practices by digital lenders, following a surge in consumer complaints."
+description: "Regulators Move to Close Digital Lending Loophole in Kenya: Kenyan authorities are addressing a regulatory gap that enables predatory practices by digital"
+excerpt: "Addressing the 2015 Companies Act Oversight The Kenyan government is initiating a regulatory overhaul to bring non deposit taking digital le"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/svxfwNyP/0425fafaf347.webp"
 category: "Technology"
 tags: ["digital lending", "kenyan economy", "consumer protection", "financial regulation", "za ndani"]
+canonical: "https://zandani.co.ke/article/regulators-move-to-close-digital-lending-loophole-in-kenya"
 date: "2026-07-16T12:52:49Z"
 dateModified: "2026-07-16T12:52:49Z"
+focusKeyword: "Regulators Move to Close Digital Lending Loophole in Kenya"
 schema: "NewsArticle"
 ---
 
-## Addressing the 2015 Companies Act Oversight
+## Addressing the 2015 Companies Act Oversight Regulators Move to Close Digital Lending Loophole in Kenya is the central subject of the update.
 
 The Kenyan government is initiating a regulatory overhaul to bring non-deposit-taking digital lenders under stricter supervision. This move seeks to close a ten-year compliance loophole that has exposed consumers to predatory pricing and coercive debt collection methods. By refining the legislative framework, authorities aim to curb practices that have thrived in an environment lacking traditional banking oversight.
 
