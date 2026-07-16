@@ -1,18 +1,20 @@
 ---
 title: "Kenya Begins Direct Coffee Exports to Italy to Boost Farm Income"
 slug: "kenya-begins-direct-coffee-exports-to-italy"
-description: "Kenya has launched direct green coffee bean shipments to Italy via the Port of Trieste to expand EU market access and increase farmer earnings."
+description: "Kenya Begins Direct Coffee Exports to Italy to Boost Farm Income: Kenya has launched direct green coffee bean shipments to Italy via the Port of Trieste to"
+excerpt: "The Export Illusion: Trieste Dreams and Murang'a Realities The arrival of twenty containers of Kenyan green coffee at the Port of Trieste si"
 author: "Timothy Muli"
-authorUrl: "https://zandani.co.ke/author/timothy-muli"
 image: "https://i.ibb.co/LhDFXgqp/e48b1be12e39.jpg"
 category: "Agriculture"
 tags: ["coffee industry", "kenya exports", "kncci", "trade diplomacy", "agribusiness", "economy"]
+canonical: "https://zandani.co.ke/article/kenya-begins-direct-coffee-exports-to-italy"
 date: "2026-07-16T06:28:10Z"
 dateModified: "2026-07-16T06:28:10Z"
+focusKeyword: "Kenya Begins Direct Coffee Exports to Italy to Boost Farm Income"
 schema: "NewsArticle"
 ---
 
-## The Export Illusion: Trieste Dreams and Murang'a Realities
+## The Export Illusion: Trieste Dreams and Murang'a Realities Kenya Begins Direct Coffee Exports to Italy to Boost Farm Income is the central subject of the update.
 
 The arrival of twenty containers of Kenyan green coffee at the Port of Trieste signals a shift in trade strategy, yet the promised USD 9.50 per kilogram valuation remains a distant abstraction for the average smallholder farmer. While high-level officials celebrate this bypass of traditional auction floors, the structural barriers that historically eroded producer margins remain untouched by this diplomatic pivot.
 
