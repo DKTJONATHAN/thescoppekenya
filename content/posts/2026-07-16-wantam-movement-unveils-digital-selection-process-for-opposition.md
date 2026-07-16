@@ -1,18 +1,20 @@
 ---
 title: "Wantam Movement Announces Digital Process to Pick Opposition Leader"
 slug: "wantam-movement-unveils-digital-selection-process-for-opposition"
-description: "The Wantam Movement has unveiled an independent digital system to select an opposition presidential candidate for the next general election in Kenya."
+description: "Wantam Movement Announces Digital Process to Pick Opposition Lead: The Wantam Movement has unveiled an independent digital system to select an opposition"
+excerpt: "Beyond the Boardroom: Digital Sovereignty in the 2027 Race The Wantam Movement has initiated a departure from traditional kingmaker politics"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/nshrVgQg/7aaf6a00b86f.webp"
 category: "News"
 tags: ["wantam movement", "kenyan politics", "2027 elections", "digital voting", "opposition leaders", "kenya news"]
+canonical: "https://zandani.co.ke/article/wantam-movement-unveils-digital-selection-process-for-opposition"
 date: "2026-07-16T18:10:01Z"
 dateModified: "2026-07-16T18:10:01Z"
+focusKeyword: "Wantam Movement Announces Digital Process to Pick Opposition Lead"
 schema: "NewsArticle"
 ---
 
-## Beyond the Boardroom: Digital Sovereignty in the 2027 Race
+## Beyond the Boardroom: Digital Sovereignty in the 2027 Race Wantam Movement Announces Digital Process to Pick Opposition Lead is the central subject of the update.
 
 The Wantam Movement has initiated a departure from traditional kingmaker politics by announcing a tiered digital selection process to identify an opposition presidential candidate. This shift seeks to replace closed-door negotiations with algorithmic consensus, challenging how Kenyan electoral contenders are vetted.
 

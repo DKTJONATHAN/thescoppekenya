@@ -14,7 +14,7 @@ focusKeyword: "'Zendaya Explains Interstellar, Cast as Athena in Nolan's Odyssey
 schema: "NewsArticle"
 ---
 
-## Zendaya's Cardboard Interstellar Theory Ignites Fan Excitement, Followed by Nolan Casting Reveals "Zendaya Explains Interstellar, Cast as Athena in Nolan's Odyssey is the central subject of the update.
+## Zendaya's Cardboard Interstellar Theory Ignites Fan Excitement, Followed by Nolan Casting Reveals "Zendaya Explains Interstellar, Cast as Athena in Nolan's Odyssey is the central subject of the update. 'Zendaya Explains Interstellar, Cast as Athena in Nolan's Odyssey is the central subject of the update.
 
 Global audiences are captivated after Zendaya's remarkably simple explanation of *Interstellar* using a cardboard box went viral. This candid moment was swiftly followed by the informal revelation of her and Tom Holland's pivotal roles in Christopher Nolan's ambitious 'The Odyssey'. Together, these genuine, unscripted glimpses into the stars' lives have sparked widespread conversation.
 
