@@ -1,18 +1,20 @@
 ---
 title: "Audit Uncovers 6.2 Billion Shillings Fraud in Kenyan Payroll"
 slug: "audit-uncovers-6-2-billion-shillings-fraud-in-kenyan-payroll"
-description: "A government audit into the Kenyan public service payroll has exposed 6.2 billion shillings in losses linked to ghost workers and systematic fraud."
+description: "Audit Uncovers 6.2 Billion Shillings Fraud in Kenyan Payroll: A government audit into the Kenyan public service payroll has exposed 6.2 billion shillings in"
+excerpt: "Payroll Phantoms and the Taxpayer Nightmare The Kenyan public service has officially entered a horror movie era where the dead, the unborn,"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/FkQFSWZv/036515085091.webp"
 category: "Gossip"
 tags: ["kenya", "public service", "corruption", "payroll fraud", "government audit", "ghost workers"]
+canonical: "https://zandani.co.ke/article/audit-uncovers-6-2-billion-shillings-fraud-in-kenyan-payroll"
 date: "2026-07-16T10:22:20Z"
 dateModified: "2026-07-16T10:22:20Z"
+focusKeyword: "Audit Uncovers 6.2 Billion Shillings Fraud in Kenyan Payroll"
 schema: "NewsArticle"
 ---
 
-## Payroll Phantoms and the Taxpayer Nightmare
+## Payroll Phantoms and the Taxpayer Nightmare Audit Uncovers 6.2 Billion Shillings Fraud in Kenyan Payroll is the central subject of the update.
 
 The Kenyan public service has officially entered a horror movie era where the dead, the unborn, and the imaginary are somehow securing steady government paychecks. A massive audit has exposed a 6.2 billion shilling hemorrhaging of funds that confirms our worst fears about systemic rot.
 
