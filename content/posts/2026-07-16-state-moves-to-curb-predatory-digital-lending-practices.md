@@ -1,18 +1,20 @@
 ---
 title: "State moves to curb predatory digital lending practices in Kenya"
 slug: "state-moves-to-curb-predatory-digital-lending-practices"
-description: "Regulators and lawmakers are pushing for stricter oversight on digital lenders to combat hidden fees and aggressive debt collection tactics."
+description: "State moves to curb predatory digital lending practices in Kenya: Regulators and lawmakers are pushing for stricter oversight on digital lenders to combat"
+excerpt: "Navigating the Credit Crunch: Legislative Shifts in Digital Lending Proposed amendments to the Consumer Protection Act in 2025 have ignited"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/sJ637Jf3/0e6f1a688d63.jpg"
 category: "Business"
 tags: ["digital lending", "consumer protection", "kenya economy", "financial regulation", "cak", "babu owino"]
+canonical: "https://zandani.co.ke/article/state-moves-to-curb-predatory-digital-lending-practices"
 date: "2026-07-16T07:30:47Z"
 dateModified: "2026-07-16T07:30:47Z"
+focusKeyword: "State moves to curb predatory digital lending practices in Kenya"
 schema: "NewsArticle"
 ---
 
-## Navigating the Credit Crunch: Legislative Shifts in Digital Lending
+## Navigating the Credit Crunch: Legislative Shifts in Digital Lending State moves to curb predatory digital lending practices in Kenya is the central subject of the update.
 
 Proposed amendments to the Consumer Protection Act in 2025 have ignited a debate over the future of Kenya's digital lending landscape. As lawmakers push for stricter interest rate caps and volume limits, the industry faces an inflection point. While these measures aim to protect the eight million Kenyans who depend on micro-credit, analysts warn that the resulting regulatory pressure may paradoxically restrict access to capital for the informal sector. The primary challenge lies in balancing necessary consumer safeguards with the operational requirements of a KSh180 billion market that relies on high-velocity lending to sustain its business model.
 
