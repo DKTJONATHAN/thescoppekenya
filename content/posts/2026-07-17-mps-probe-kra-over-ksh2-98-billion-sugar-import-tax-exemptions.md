@@ -1,18 +1,20 @@
 ---
 title: "MPs probe KRA over Ksh2.98 billion sugar import tax exemptions"
 slug: "mps-probe-kra-over-ksh2-98-billion-sugar-import-tax-exemptions"
-description: "The National Assembly Committee on Trade is questioning KRA officials over documentation gaps and tax waivers involving a multimillion shilling sugar consignment."
+description: "MPs probe KRA over Ksh2.98 billion sugar import tax exemptions: The National Assembly Committee on Trade is questioning KRA officials over documentation gaps"
+excerpt: "The Sweetness That Turned Sour for Kenyan Wallets Nairobi residents are expressing sharp skepticism after reports emerged that billions in t"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/hxTybLY7/12f4c8af0370.webp"
 category: "News"
 tags: ["kra", "parliament", "sugar imports", "tax evasion", "kenya news", "customs"]
+canonical: "https://zandani.co.ke/article/mps-probe-kra-over-ksh2-98-billion-sugar-import-tax-exemptions"
 date: "2026-07-17T07:21:26Z"
 dateModified: "2026-07-17T07:21:26Z"
+focusKeyword: "MPs probe KRA over Ksh2.98 billion sugar import tax exemptions"
 schema: "NewsArticle"
 ---
 
-## The Sweetness That Turned Sour for Kenyan Wallets
+## The Sweetness That Turned Sour for Kenyan Wallets MPs probe KRA over Ksh2.98 billion sugar import tax exemptions is the central subject of the update.
 
 Nairobi residents are expressing sharp skepticism after reports emerged that billions in tax waivers meant to ease the cost of living failed to reflect on retail shelves. The public sentiment is clear: while officials argue over customs papers, the sugar prices in local kiosks remain stubbornly high.
 
