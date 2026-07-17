@@ -195,10 +195,10 @@
     "2eb852e99fd967dff6cbbd3112a64383",
     "410d5e1ffbfe265f9fea17ece7ab9463",
     "f8985348424ba1dfd0f51dc8341d668e",
-    "29309d175631dc545636e48a4b4bbc59"
+    "29309d175631dc545636e48a4b4bbc59",
+    "3d2db203044ef4ef85c6005d3132ec0f"
   ],
   "style_history": [
-    "Backgrounder",
     "Markets Report",
     "Explainer",
     "SME Angle",
@@ -227,10 +227,10 @@
     "Explainer",
     "Backgrounder",
     "Power Accountability",
-    "Markets Report"
+    "Markets Report",
+    "Explainer"
   ],
   "angle_history": [
-    "impact_on_citizens|Kenya|SME Angle",
     "accountability|Crown Paints|Power Accountability",
     "money_follow|Kenya|Markets Report",
     "impact_on_citizens|Treasury bills|Backgrounder",
@@ -309,6 +309,7 @@
     "story_progression|NSE|Explainer",
     "winners_losers|Ethiopian Securities Exchange|Backgrounder",
     "winners_losers|Uganda|Power Accountability",
-    "timeline_shift|digital lending|Markets Report"
+    "timeline_shift|digital lending|Markets Report",
+    "policy_gap|Kenya Revenue Authority|Explainer"
   ]
 }
