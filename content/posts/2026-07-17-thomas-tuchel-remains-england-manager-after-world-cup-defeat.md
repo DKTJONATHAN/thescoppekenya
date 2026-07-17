@@ -1,18 +1,20 @@
 ---
 title: "Thomas Tuchel to remain England manager after World Cup exit"
 slug: "thomas-tuchel-remains-england-manager-after-world-cup-defeat"
-description: "Thomas Tuchel keeps his position as England manager following the semi-final defeat against Argentina at the World Cup tournament."
+description: "Thomas Tuchel to remain England manager after World Cup exit: Thomas Tuchel keeps his position as England manager following the semi-final defeat against"
+excerpt: "Stability at a Cost: The FA Keeps Faith in Tuchel The Football Association has confirmed that Thomas Tuchel will remain at the helm of the E"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/Txrjmth6/84cc69f745d7.jpg"
 category: "Sports"
 tags: ["world cup", "thomas tuchel", "england football", "international football", "sports news"]
+canonical: "https://zandani.co.ke/article/thomas-tuchel-remains-england-manager-after-world-cup-defeat"
 date: "2026-07-17T11:44:48Z"
 dateModified: "2026-07-17T11:44:48Z"
+focusKeyword: "Thomas Tuchel to remain England manager after World Cup exit"
 schema: "NewsArticle"
 ---
 
-## Stability at a Cost: The FA Keeps Faith in Tuchel
+## Stability at a Cost: The FA Keeps Faith in Tuchel Thomas Tuchel to remain England manager after World Cup exit is the central subject of the update.
 
 The Football Association has confirmed that Thomas Tuchel will remain at the helm of the England national team through Euro 2028. Following the 2-1 semi-final exit against Argentina, the governing body has opted for continuity over drastic change. This decision reflects an administrative preference for long-term consistency, even as questions persist regarding the team's trajectory after a tournament that exposed clear tactical limitations.
 
