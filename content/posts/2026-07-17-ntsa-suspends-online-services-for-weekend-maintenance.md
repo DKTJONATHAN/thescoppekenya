@@ -1,18 +1,20 @@
 ---
 title: "NTSA Suspends Online Services for Weekend Maintenance"
 slug: "ntsa-suspends-online-services-for-weekend-maintenance"
-description: "The National Transport and Safety Authority has announced a 60-hour system outage affecting all motorist services from July 17 to July 20."
+description: "NTSA Suspends Online Services for Weekend Maintenance: The National Transport and Safety Authority has announced a 60-hour system outage affecting all motorist"
+excerpt: "The Digital Dead Zone: Why the 60 Hour NTSA Blackout Signals a Critical Infrastructure Stress Test The National Transport and Safety Authori"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/4Z44Yb46/04d4ee398672.webp"
 category: "Technology"
 tags: ["ntsa", "kenya news", "transport authority", "digital services", "motoring", "public notice"]
+canonical: "https://zandani.co.ke/article/ntsa-suspends-online-services-for-weekend-maintenance"
 date: "2026-07-17T12:37:41Z"
 dateModified: "2026-07-17T12:37:41Z"
+focusKeyword: "NTSA Suspends Online Services for Weekend Maintenance"
 schema: "NewsArticle"
 ---
 
-## The Digital Dead Zone: Why the 60-Hour NTSA Blackout Signals a Critical Infrastructure Stress Test
+## The Digital Dead Zone: Why the 60-Hour NTSA Blackout Signals a Critical Infrastructure Stress Test NTSA Suspends Online Services for Weekend Maintenance is the central subject of the update.
 
 The National Transport and Safety Authority officially shuttered its web-based motorist platforms at 8 pm this evening, marking the start of a 60-hour systems overhaul. This pause serves as a vital diagnostic phase for a platform historically plagued by intermittent connectivity and bottlenecks.
 
