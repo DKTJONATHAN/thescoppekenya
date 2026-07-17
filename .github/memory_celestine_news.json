@@ -338,10 +338,10 @@
     "779981a49b383309cfa6cbbe8b565494",
     "471930ace1bd1ff5154193d7fc883e9a",
     "1630b5b65c1b4c46b5e410144ee515ee",
-    "356359ee7f40d74d7313d8e13ef6c50c"
+    "356359ee7f40d74d7313d8e13ef6c50c",
+    "cab234c48e80634b062e6bfcf1e3d01e"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Explainer",
     "Hard News Lead",
     "Power Accountability",
@@ -370,10 +370,10 @@
     "Explainer",
     "Power Accountability",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Explainer"
   ],
   "angle_history": [
-    "timeline_shift|Kenya Meteorological Service Authority|Reaction & Voices",
     "money_follow|infrastructure|Explainer",
     "story_progression|Kenya|Hard News Lead",
     "policy_gap|KDF|Power Accountability",
@@ -452,6 +452,7 @@
     "winners_losers|Ebola|Explainer",
     "policy_gap|Huduma Kenya|Power Accountability",
     "story_progression|Wantam Movement|Context Backgrounder",
-    "money_follow|KRA|Reaction & Voices"
+    "money_follow|KRA|Reaction & Voices",
+    "story_progression|Nairobi Metropolitan Police Unit|Explainer"
   ]
 }
