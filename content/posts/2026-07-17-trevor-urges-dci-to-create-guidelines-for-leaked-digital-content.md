@@ -1,18 +1,20 @@
 ---
 title: "Trevor Calls for Clear DCI Guidelines on Leaked Digital Media"
 slug: "trevor-urges-dci-to-create-guidelines-for-leaked-digital-content"
-description: "Content director Trevor has urged the DCI to establish clear legal guidelines for handling leaked private content amid rising cybercrime concerns."
+description: "Trevor Calls for Clear DCI Guidelines on Leaked Digital Media: Content director Trevor has urged the DCI to establish clear legal guidelines for handling"
+excerpt: "Privacy Protection or Selective Policing? Kenyan content executive Trevor has officially challenged the Directorate of Criminal Investigatio"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/p66DqPhq/73cf7ae57d39.webp"
 category: "Gossip"
 tags: ["kenya news", "dci kenya", "digital privacy", "cybercrime", "content creation", "trevor"]
+canonical: "https://zandani.co.ke/article/trevor-urges-dci-to-create-guidelines-for-leaked-digital-content"
 date: "2026-07-17T10:12:41Z"
 dateModified: "2026-07-17T10:12:41Z"
+focusKeyword: "Trevor Calls for Clear DCI Guidelines on Leaked Digital Media"
 schema: "NewsArticle"
 ---
 
-## Privacy Protection or Selective Policing? 
+## Privacy Protection or Selective Policing?  Trevor Calls for Clear DCI Guidelines on Leaked Digital Media is the central subject of the update.
 
 Kenyan content executive Trevor has officially challenged the Directorate of Criminal Investigations to clarify how it handles leaked private digital media. The formal request seeks to bridge the enforcement gap within the 2018 Computer Misuse and Cybercrimes Act during an era of viral content volatility.
 
