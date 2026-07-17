@@ -1,18 +1,20 @@
 ---
 title: "Parliament Probes KSh 3 Billion Sugar Import Tax Exemption"
 slug: "parliament-probes-ksh-3-billion-sugar-import-tax-exemption"
-description: "Lawmakers are investigating a KSh 3 billion tax waiver on 27,000 tonnes of sugar following reports of missing documentation and regulatory breaches."
+description: "Parliament Probes KSh 3 Billion Sugar Import Tax Exemption: Lawmakers are investigating a KSh 3 billion tax waiver on 27,000 tonnes of sugar following reports"
+excerpt: "Understanding the KSh 3 Billion Sugar Import Controversy Parliamentary committees are currently investigating a KSh 3 billion tax exemption"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/Wpt0zZC1/48ae4d35b20a.jpg"
 category: "Business"
 tags: ["kenya news", "sugar imports", "parliamentary inquiry", "tax waivers", "kenya revenue authority", "business news"]
+canonical: "https://zandani.co.ke/article/parliament-probes-ksh-3-billion-sugar-import-tax-exemption"
 date: "2026-07-17T07:27:39Z"
 dateModified: "2026-07-17T07:27:39Z"
+focusKeyword: "Parliament Probes KSh 3 Billion Sugar Import Tax Exemption"
 schema: "NewsArticle"
 ---
 
-## Understanding the KSh 3 Billion Sugar Import Controversy
+## Understanding the KSh 3 Billion Sugar Import Controversy Parliament Probes KSh 3 Billion Sugar Import Tax Exemption is the central subject of the update.
 
 Parliamentary committees are currently investigating a KSh 3 billion tax exemption involving 27,000 tonnes of sugar. This probe highlights a growing concern regarding how government-sanctioned duty waivers impact the cost of basic food items for households across the country.
 
