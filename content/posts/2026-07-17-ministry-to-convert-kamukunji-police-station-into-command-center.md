@@ -1,18 +1,20 @@
 ---
 title: "Ministry to convert Kamukunji Police Station into command center"
 slug: "ministry-to-convert-kamukunji-police-station-into-command-center"
-description: "The Ministry of Interior will transform Kamukunji Police Station into the headquarters for the Nairobi Metropolitan Police Unit starting this August."
+description: "Ministry to convert Kamukunji Police Station into command center: The Ministry of Interior will transform Kamukunji Police Station into the headquarters for"
+excerpt: "From Colonial Outpost to Digital Watchtower The Ministry of Interior will begin repurposing the historic Kamukunji Police Station into a hig"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/G4KfxX3Y/2ff674fbe798.webp"
 category: "News"
 tags: ["nairobi", "police", "kamukunji", "security", "william ruto", "kenya"]
+canonical: "https://zandani.co.ke/article/ministry-to-convert-kamukunji-police-station-into-command-center"
 date: "2026-07-17T12:14:07Z"
 dateModified: "2026-07-17T12:14:07Z"
+focusKeyword: "Ministry to convert Kamukunji Police Station into command center"
 schema: "NewsArticle"
 ---
 
-## From Colonial Outpost to Digital Watchtower
+## From Colonial Outpost to Digital Watchtower Ministry to convert Kamukunji Police Station into command center is the central subject of the update.
 
 The Ministry of Interior will begin repurposing the historic Kamukunji Police Station into a high-tech Nairobi Metropolitan Police Unit headquarters this August. This shift signals a departure from traditional precinct-level operations toward a centralized, data-driven security model for the capital.
 
