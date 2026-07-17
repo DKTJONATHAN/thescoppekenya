@@ -1,18 +1,20 @@
 ---
 title: "LSK Announces Nationwide Court Boycott Over Judicial Accountability"
 slug: "lsk-announces-nationwide-court-boycott"
-description: "The Law Society of Kenya has scheduled a nationwide boycott for July 22 to protest judicial officers blocking ongoing corruption and disciplinary investigations."
+description: "LSK Announces Nationwide Court Boycott Over Judicial Accountabili: The Law Society of Kenya has scheduled a nationwide boycott for July 22 to protest judicial"
+excerpt: "The Judicial Deadlock: Mapping the LSK’s Targeted Strategy Against Bench Immunity The Law Society of Kenya has ordered a nationwide cessatio"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/NnN94x3k/07f2f61a102f.webp"
 category: "News"
 tags: ["lsk", "kenya judiciary", "legal news", "eacc", "jsc", "kenyan law"]
+canonical: "https://zandani.co.ke/article/lsk-announces-nationwide-court-boycott"
 date: "2026-07-17T18:10:15Z"
 dateModified: "2026-07-17T18:10:15Z"
+focusKeyword: "LSK Announces Nationwide Court Boycott Over Judicial Accountabili"
 schema: "NewsArticle"
 ---
 
-## The Judicial Deadlock: Mapping the LSK’s Targeted Strategy Against Bench Immunity
+## The Judicial Deadlock: Mapping the LSK’s Targeted Strategy Against Bench Immunity LSK Announces Nationwide Court Boycott Over Judicial Accountabili is the central subject of the update.
 
 The Law Society of Kenya has ordered a nationwide cessation of courtroom appearances for July 22, effectively grounding civil and criminal litigation to force judicial cooperation with ongoing anti-corruption oversight investigations.
 
