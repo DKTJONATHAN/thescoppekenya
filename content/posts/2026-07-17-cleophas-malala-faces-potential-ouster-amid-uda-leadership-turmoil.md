@@ -1,7 +1,8 @@
 ---
 title: "Cleophas Malala Faces Potential Ouster Amid UDA Leadership Turmoil"
 slug: "cleophas-malala-faces-potential-ouster-amid-uda-leadership-turmoil"
-description: "Cleophas Malala faces growing calls to resign as UDA Secretary General, with party officials warning his leadership style threatens President Ruto’s base."
+description: "Cleophas Malala Faces Potential Ouster Amid UDA Leadership Turmoi: Cleophas Malala faces growing calls to resign as UDA Secretary General, with party officials"
+excerpt: "The ruling United Democratic Alliance party is facing internal instability as Secretary General Cleophas Malala confronts intensifying calls"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/j94yKwSB/e9e0bc16ba00.webp"
@@ -9,10 +10,11 @@ category: "Entertainment"
 tags: ["cleophas-malala", "uda-party", "kenyan-politics", "political-leadership-turmoil"]
 canonical: "https://zandani.co.ke/article/cleophas-malala-faces-potential-ouster-amid-uda-leadership-turmoil"
 date: "2026-07-17T14:01:52Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-17T14:01:52Z"
+focusKeyword: "Cleophas Malala Faces Potential Ouster Amid UDA Leadership Turmoi"
 schema: "NewsArticle"
 ---
+
 The ruling United Democratic Alliance party is facing internal instability as Secretary General Cleophas Malala confronts intensifying calls for his resignation. Following recent cabinet reshuffles, high-ranking officials are criticizing his management, warning that his leadership is damaging President William Ruto’s political support base.
 
 ## Cleophas Malala Faces Potential Ouster Amid UDA Leadership Turmoil
