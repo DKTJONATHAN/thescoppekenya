@@ -183,10 +183,10 @@
     "8e24596cadf3d3358454dc9c6d9fee33",
     "81886a1005ab41352150789b0a842c22",
     "c6e1b0694cfa85b76cc23a76d27a845e",
-    "aae396674b6f662f22c89caa5359b592"
+    "aae396674b6f662f22c89caa5359b592",
+    "39f8bb2a66c44355e5517410058bc016"
   ],
   "style_history": [
-    "Sharp Column",
     "Historical Lens",
     "Letter Form",
     "Counterpoint",
@@ -215,10 +215,10 @@
     "Counterpoint",
     "Personal Reflection",
     "Historical Lens",
-    "Sharp Column"
+    "Sharp Column",
+    "Letter Form"
   ],
   "angle_history": [
-    "timeline_shift|Imperial presidency|Historical Lens",
     "policy_gap|transportation|Personal Reflection",
     "myth_vs_fact|Science and Technology|Counterpoint",
     "accountability|genocide|Letter Form",
@@ -297,6 +297,7 @@
     "myth_vs_fact|Devolution|Counterpoint",
     "money_follow|eCitizen|Personal Reflection",
     "timeline_shift|youth unemployment|Historical Lens",
-    "accountability|by-election|Sharp Column"
+    "accountability|by-election|Sharp Column",
+    "policy_gap|One Health|Letter Form"
   ]
 }
