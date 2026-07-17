@@ -1,18 +1,20 @@
 ---
 title: "ASLM calls for integrated laboratory networks to boost health safety"
 slug: "aslm-calls-for-integrated-laboratory-networks-to-boost-health-safety"
-description: "Africa must bridge gaps between human, animal, and environmental diagnostic systems to effectively combat disease outbreaks and antimicrobial resistance."
+description: "ASLM calls for integrated laboratory networks to boost health saf: Africa must bridge gaps between human, animal, and environmental diagnostic systems to"
+excerpt: "Closing the Diagnostic Gap: A Plea for One Health Integration The 2026 mandate from the Africa Society for Laboratory Medicine serves as a c"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/5p2mnr8/4912cc85f769.webp"
 category: "Opinions"
 tags: ["health security", "public health", "laboratory diagnostics", "one health", "africa health", "disease surveillance"]
+canonical: "https://zandani.co.ke/article/aslm-calls-for-integrated-laboratory-networks-to-boost-health-safety"
 date: "2026-07-17T10:58:50Z"
 dateModified: "2026-07-17T10:58:50Z"
+focusKeyword: "ASLM calls for integrated laboratory networks to boost health saf"
 schema: "NewsArticle"
 ---
 
-## Closing the Diagnostic Gap: A Plea for One Health Integration
+## Closing the Diagnostic Gap: A Plea for One Health Integration ASLM calls for integrated laboratory networks to boost health saf is the central subject of the update.
 
 The 2026 mandate from the Africa Society for Laboratory Medicine serves as a critical catalyst for Kenya to harmonize its disconnected health surveillance protocols. By unifying diagnostic efforts across human, animal, and environmental sectors, the nation can transition from reactive crisis management toward a proactive framework for national health security.
 
