@@ -321,10 +321,10 @@
     "bd28f225675b6323abe79d6405665f7c",
     "ab3bf56e39bf2ffde5fbcfcbc0ebb91b",
     "3c470973a3c7e1731cbfbe01a7d5a75e",
-    "f7a4ea2fc8ab43e762daedce1d69e23f"
+    "f7a4ea2fc8ab43e762daedce1d69e23f",
+    "6f5e6058e37c745b2d1db02961ff42ec"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Hard News Lead",
     "Trend Take",
     "Receipts Piece",
@@ -353,10 +353,10 @@
     "Reaction Round-up",
     "Hard News Lead",
     "Receipts Piece",
-    "Trend Take"
+    "Trend Take",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "policy_gap|co-parenting|Profile Beat",
     "next_48_hours|East Africa|Hard News Lead",
     "winners_losers|Nairobi|Reaction Round-up",
     "winners_losers|Gen Z|Trend Take",
@@ -435,6 +435,7 @@
     "story_progression|Lillian Ng\u2019ang\u2019a|Reaction Round-up",
     "money_follow|retail|Hard News Lead",
     "money_follow|Akothee|Receipts Piece",
-    "accountability|corruption|Trend Take"
+    "accountability|corruption|Trend Take",
+    "policy_gap|DCI|Reaction Round-up"
   ]
 }
