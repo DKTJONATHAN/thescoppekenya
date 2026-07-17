@@ -245,10 +245,10 @@
     "f5d0ca3510145ed25146ab90706d429d",
     "dd0f54748fd78af4dca02b222806d4e5",
     "26f2adcdbf5f9fce50f20a4b8b07ba69",
-    "ca25464a687e4079eea073a9356e6838"
+    "ca25464a687e4079eea073a9356e6838",
+    "11002d38ed4d11a0777c0b74374966bc"
   ],
   "style_history": [
-    "Player Profile Beat",
     "Tactical Take",
     "Cynical Pundit",
     "Stat Story",
@@ -277,10 +277,10 @@
     "Cynical Pundit",
     "Stat Story",
     "Match Report",
-    "Tactical Take"
+    "Tactical Take",
+    "Player Profile Beat"
   ],
   "angle_history": [
-    "accountability|World Cup|Cynical Pundit",
     "policy_gap|England football|Stat Story",
     "accountability|Manchester City|Tactical Take",
     "accountability|Championship|Match Report",
@@ -359,6 +359,7 @@
     "myth_vs_fact|World Cup 2026|Cynical Pundit",
     "winners_losers|World Cup|Stat Story",
     "timeline_shift|World Cup|Match Report",
-    "winners_losers|World Cup|Tactical Take"
+    "winners_losers|World Cup|Tactical Take",
+    "policy_gap|World Cup 2026|Player Profile Beat"
   ]
 }
