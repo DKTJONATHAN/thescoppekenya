@@ -1,20 +1,21 @@
 ---
 title: "The Royal Decree on 'Unthinking' Audiences in Kenya"
 slug: "royal-decree-unthinking-audiences-kenya"
-description: "The whispers from Versailles, where gilded ignorance once reigned, now echo, questioning the very intellect of Kenyan filmgoers. Is history repeating its tragic"
+description: "The Royal Decree on 'Unthinking' Audiences in Kenya: The whispers from Versailles, where gilded ignorance once reigned, now echo, questioning the very"
+excerpt: "The chandeliers of Versailles glittered, casting a thousand fractured diamonds across the polished parquet. Queen Marie Antoinette, a confec"
 author: "The Chronicler"
 author_url: "https://zandani.co.ke/author/the-chronicler"
 image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200"
 category: "Chronicles"
-tags: ["chronicles", "nollywood", "art", "audience", "debate", "kenya", "french-revolution", "ancien-r\u00e9gime", "louis-xvi", "marie-antoinette", "rogers-ofime-audience-escapism-kenya", "nollywood-art-versus-audience-kenya", "nollywood-\"unthinking\"-viewers-debate-kenya"]
+tags: ["chronicles", "nollywood", "art", "audience", "debate", "kenya", "french-revolution", "ancien-r\u00e9gime"]
 canonical: "https://zandani.co.ke/article/royal-decree-unthinking-audiences-kenya"
 date: "2026-07-17T12:19:22Z"
-authorUrl: "https://zandani.co.ke/author/the-chronicler"
 dateModified: "2026-07-17T12:19:22Z"
+focusKeyword: "The Royal Decree on 'Unthinking' Audiences in Kenya"
 schema: "NewsArticle"
 ---
 
-The chandeliers of Versailles glittered, casting a thousand fractured diamonds across the polished parquet. Queen Marie Antoinette, a confection of silk and powdered wig, fanned herself languidly. "The people," she murmured to the Duc de Polignac, "they clamor again for bread. As if the simple pleasures of the court are not enough to distract their... uncomplicated minds." It was July of 1788, and the royal family, along with their glittering retinue, had long since perfected the art of elegant oblivion, their lives a shimmering counterpoint to the growing hunger in the streets of Paris. King Louis XVI, ever a man of habit, nodded vaguely, his gaze fixed on a particularly delicate pastry. "Perhaps a new ballet, dear? Something with bright colors and simple tunes. They do so appreciate spectacle."
+The chandeliers of Versailles glittered, casting a thousand fractured diamonds across the polished parquet. Queen Marie Antoinette, a confection of silk and powdered wig, fanned herself languidly. "The people," she murmured to the Duc de Polignac, "they clamor again for bread. As if the simple pleasures of the court are not enough to distract their... uncomplicated minds." It was July of 1788, and the royal family, along with their glittering retinue, had long since perfected the art of elegant oblivion, their lives a shimmering counterpoint to the growing hunger in the streets of Paris. King Louis XVI, ever a man of habit, nodded vaguely, his gaze fixed on a particularly delicate pastry. "Perhaps a new ballet, dear? Something with bright colors and simple tunes. They do so appreciate spectacle." The Royal Decree on 'Unthinking' Audiences in Kenya is the central subject of the update.
 
 ## The Royal Decree on 'Unthinking' Audiences in Kenya
 
