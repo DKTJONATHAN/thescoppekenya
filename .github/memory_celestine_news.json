@@ -341,10 +341,10 @@
     "356359ee7f40d74d7313d8e13ef6c50c",
     "cab234c48e80634b062e6bfcf1e3d01e",
     "ddb7d774f1b413a7bd2540b22f1c48a8",
-    "bcedbd88c66d57a798b23b878f355814"
+    "bcedbd88c66d57a798b23b878f355814",
+    "994a0207ee8272e5b8cb44f48f7acfd1"
   ],
   "style_history": [
-    "Power Accountability",
     "Context Backgrounder",
     "Reaction & Voices",
     "Explainer",
@@ -373,10 +373,10 @@
     "Reaction & Voices",
     "Explainer",
     "Hard News Lead",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "policy_gap|KDF|Power Accountability",
     "myth_vs_fact|Kenya|Reaction & Voices",
     "money_follow|Kenya politics|Explainer",
     "policy_gap|ODM|Context Backgrounder",
@@ -455,6 +455,7 @@
     "money_follow|KRA|Reaction & Voices",
     "story_progression|Nairobi Metropolitan Police Unit|Explainer",
     "winners_losers|LSK|Hard News Lead",
-    "timeline_shift|xenophobia|Context Backgrounder"
+    "timeline_shift|xenophobia|Context Backgrounder",
+    "accountability|Kenya|Reaction & Voices"
   ]
 }
