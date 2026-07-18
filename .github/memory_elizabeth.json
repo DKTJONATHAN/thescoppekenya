@@ -158,10 +158,10 @@
     "ce687cb8c24369e675ae2551c361ab73",
     "01bc464c9019429108cf3b7d9c882649",
     "281276bd8687b8a1e1b93e17ceb6d925",
-    "78e7d63e545e39ec0a73e384fb378f06"
+    "78e7d63e545e39ec0a73e384fb378f06",
+    "71fcd53c2c92328a2e975ea729ae71f2"
   ],
   "style_history": [
-    "Explainer",
     "Africa Angle",
     "Hard News Lead",
     "Backgrounder",
@@ -190,7 +190,8 @@
     "Africa Angle",
     "Explainer",
     "Hard News Lead",
-    "Backgrounder"
+    "Backgrounder",
+    "Critical Take"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -267,6 +268,7 @@
     "timeline_shift|WIOCC|Africa Angle",
     "money_follow|DeepSeek|Explainer",
     "timeline_shift|digital lending|Hard News Lead",
-    "story_progression|NTSA|Backgrounder"
+    "story_progression|NTSA|Backgrounder",
+    "policy_gap|IFMIS|Critical Take"
   ]
 }

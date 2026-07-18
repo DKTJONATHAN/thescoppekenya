@@ -1,0 +1,37 @@
+---
+title: "Omtatah Seeks Real-Time IFMIS Access for Senate Oversight"
+slug: "omtatah-seeks-real-time-ifmis-access-for-senate-oversight"
+description: "Senator Andrew Omtatah has tabled a motion requiring the National Treasury to provide the Senate with monthly county financial data via IFMIS."
+author: "Elizabeth Muthoni"
+authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
+image: "https://i.ibb.co/wZrHGDJ9/13ff27b4ab09.webp"
+category: "Technology"
+tags: ["kenya politics", "andrew omtatah", "ifmis", "devolution", "senate of kenya", "public finance"]
+date: "2026-07-18T12:06:18Z"
+dateModified: "2026-07-18T12:06:18Z"
+schema: "NewsArticle"
+---
+
+## The Digital Mirage of IFMIS Transparency
+
+Senator Andrew Omtatah wants the Senate to have a live feed into the Integrated Financial Management Information System to curb county theft. Yet, this legislative push ignores the reality that digitizing a corrupt procurement cycle does not fix the theft; it only monitors it in high definition.
+
+Omtatah has formally moved to compel the National Treasury to surrender monthly IFMIS transaction data to the Senate. The argument rests on the assumption that real-time oversight will force accountability on county governments that treat public coffers like private slush funds. It is a logical demand on the surface, rooted in the Senate's constitutional mandate to keep devolution on track. However, this focus on data access frames the problem as a lack of information when the real issue is a systemic lack of integrity.
+
+### The Offline Loophole
+
+IFMIS is not a self-executing vault. It is a digital accounting ledger that relies entirely on the quality and honesty of the human operators inputting the data. History shows that when procurement officers or county executives intend to divert funds, they do not start by logging the crime into the system. They operate in the shadow of the digital wall. 
+
+Common practice involves engaging in offline negotiations, backdating localized purchase orders, and verifying fictitious deliveries before a single byte of data is keyed into the IFMIS platform. By the time a transaction hits the dashboard Omtatah is so desperate to watch, the contract has already been rigged, the supplier has been selected through bribery, and the money has been earmarked for siphoning. Giving the Senate a real-time window into a compromised system provides the illusion of surveillance while the actual looting happens outside the digital perimeter.
+
+The Treasury has historically treated legislative requests for raw financial data with performative bureaucracy. There is little reason to believe they will suddenly facilitate an open-API relationship with the Senate. Even if they did, the sheer volume of unstructured, messy financial entries would likely overwhelm a Senate committee ill-equipped to perform real-time forensic auditing.
+
+### Why Integration Is Not A Solution
+
+The technical architecture of IFMIS remains a black box to the public and even to most elected officials. It is built to facilitate government operations, not to provide independent oversight. True transparency would require a radical overhaul of the procurement process, including mandatory e-procurement integration that forbids offline manual overrides. Without that, the Senate is merely asking for a front-row seat to watch a movie they have seen a thousand times before.
+
+This push for data access mirrors other futile attempts to sanitize governance through technology. Much like the government recently grappled with security lapses in the north, as seen when [Police Officers Injured After Suspected Al-Shabaab IED Hits Patrol Vehicle in Mandera](https://zandani.co.ke/article/police-officers-injured-after-suspected-al-shabaab-ied-hits-patrol-v), digital tracking tools are useless if the infrastructure on the ground is broken. Simply knowing a transaction occurred is not the same as verifying that the taxpayers received the value for that transaction. 
+
+Legal challenges against top officials often stall because the evidence of malfeasance is hidden in the manual steps that precede the digital entry. Recent rulings, such as the [High Court Bars Wetangula and Kingi from Partisan Political Acts](https://zandani.co.ke/article/high-court-bars-wetangula-kingi-partisan-politics), suggest the judiciary is attempting to define the boundaries of institutional power, yet Omtatah’s motion moves in the opposite direction by trying to micromanage executive infrastructure.
+
+If the Treasury provides the data, it will likely be sanitized, filtered, or delayed through the same bureaucratic hurdles that currently hide the truth. Real-time access to a system designed to be opaque will not produce transparency; it will only produce a new set of data points to argue over while the money continues to vanish. Oversight requires the power to enforce, not just the permission to watch.
