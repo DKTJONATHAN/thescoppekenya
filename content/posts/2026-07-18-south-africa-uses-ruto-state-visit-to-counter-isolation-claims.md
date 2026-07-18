@@ -1,18 +1,20 @@
 ---
 title: "South Africa uses Ruto state visit to counter isolation claims"
 slug: "south-africa-uses-ruto-state-visit-to-counter-isolation-claims"
-description: "South Africa is citing President Ruto's state visit to defend its diplomatic status following the emergency evacuation of 400 Kenyans due to xenophobia."
+description: "South Africa uses Ruto state visit to counter isolation claims: South Africa is citing President Ruto's state visit to defend its diplomatic status following"
+excerpt: "The Diplomatic Smoke Screen: Pretoria’s Optics vs. The Reality of Repatriation As South African officials point to the red carpet welcome of"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/GLvGGY1/491a0896d102.webp"
 category: "News"
 tags: ["kenya", "south africa", "william ruto", "xenophobia", "diplomacy", "repatriation", "zandani"]
+canonical: "https://zandani.co.ke/article/south-africa-uses-ruto-state-visit-to-counter-isolation-claims"
 date: "2026-07-18T07:02:38Z"
 dateModified: "2026-07-18T07:02:38Z"
+focusKeyword: "South Africa uses Ruto state visit to counter isolation claims"
 schema: "NewsArticle"
 ---
 
-## The Diplomatic Smoke Screen: Pretoria’s Optics vs. The Reality of Repatriation
+## The Diplomatic Smoke Screen: Pretoria’s Optics vs. The Reality of Repatriation South Africa uses Ruto state visit to counter isolation claims is the central subject of the update.
 
 As South African officials point to the red carpet welcome of President William Ruto to deflect claims of continental isolation, a different reality unfolds at the tarmac. The state visit serves as a calculated maneuver to normalize regional standing while the human cost of exclusion continues to manifest in forced, emergency departures.
 
