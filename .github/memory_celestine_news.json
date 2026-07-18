@@ -342,10 +342,10 @@
     "cab234c48e80634b062e6bfcf1e3d01e",
     "ddb7d774f1b413a7bd2540b22f1c48a8",
     "bcedbd88c66d57a798b23b878f355814",
-    "994a0207ee8272e5b8cb44f48f7acfd1"
+    "994a0207ee8272e5b8cb44f48f7acfd1",
+    "4ac62e1baeaf41237f9f561c10daa470"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Reaction & Voices",
     "Explainer",
     "Hard News Lead",
@@ -374,10 +374,10 @@
     "Explainer",
     "Hard News Lead",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "myth_vs_fact|Kenya|Reaction & Voices",
     "money_follow|Kenya politics|Explainer",
     "policy_gap|ODM|Context Backgrounder",
     "accountability|Kenya Literature Bureau|Power Accountability",
@@ -456,6 +456,7 @@
     "story_progression|Nairobi Metropolitan Police Unit|Explainer",
     "winners_losers|LSK|Hard News Lead",
     "timeline_shift|xenophobia|Context Backgrounder",
-    "accountability|Kenya|Reaction & Voices"
+    "accountability|Kenya|Reaction & Voices",
+    "money_follow|Government Appointments|Power Accountability"
   ]
 }
