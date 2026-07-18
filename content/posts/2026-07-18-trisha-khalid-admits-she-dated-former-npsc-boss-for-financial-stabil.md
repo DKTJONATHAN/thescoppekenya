@@ -1,7 +1,8 @@
 ---
 title: "Trisha Khalid Admits She Dated Former NPSC Boss for Financial Stability and Regrets the Relationship"
 slug: "trisha-khalid-admits-she-dated-former-npsc-boss-for-financial-stabil"
-description: "Actress Trisha Khalid confirms she dated former NPSC boss Joseph Onyango for financial stability, publicly expressing regret over the transactional union."
+description: "Trisha Khalid Admits She Dated Former NPSC Boss for Financial Sta: Actress Trisha Khalid confirms she dated former NPSC boss Joseph Onyango for financial"
+excerpt: "Actress and socialite Trisha Khalid recently used a live video broadcast to detail her past romantic involvement with former National Police"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/TBkm2Q9F/c70aba6040d6.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["trisha-khalid", "npsc-boss", "kenyan-celebrity-news", "trisha-khalid-relationship", "kenyan-entertainment-scandals"]
 canonical: "https://zandani.co.ke/article/trisha-khalid-admits-she-dated-former-npsc-boss-for-financial-stabil"
 date: "2026-07-18T13:47:29Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-18T13:47:29Z"
+focusKeyword: "Trisha Khalid Admits She Dated Former NPSC Boss for Financial Sta"
 schema: "NewsArticle"
 ---
-Actress and socialite Trisha Khalid recently used a live video broadcast to detail her past romantic involvement with former National Police Service Commission CEO Joseph Onyango, admitting the relationship was motivated by a desire for financial stability and expressing deep regret over the union.
+
+Actress and socialite Trisha Khalid recently used a live video broadcast to detail her past romantic involvement with former National Police Service Commission CEO Joseph Onyango, admitting the relationship was motivated by a desire for financial stability and expressing deep regret over the union. Trisha Khalid Admits She Dated Former NPSC Boss for Financial Sta is the central subject of the update.
 
 ## The Economics of Modern Romance
 
