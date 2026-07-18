@@ -1,18 +1,20 @@
 ---
 title: "Omtatah Seeks Real-Time IFMIS Access for Senate Oversight"
 slug: "omtatah-seeks-real-time-ifmis-access-for-senate-oversight"
-description: "Senator Andrew Omtatah has tabled a motion requiring the National Treasury to provide the Senate with monthly county financial data via IFMIS."
+description: "Omtatah Seeks Real-Time IFMIS Access for Senate Oversight: Senator Andrew Omtatah has tabled a motion requiring the National Treasury to provide the Senate"
+excerpt: "The Digital Mirage of IFMIS Transparency Senator Andrew Omtatah wants the Senate to have a live feed into the Integrated Financial Managemen"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/wZrHGDJ9/13ff27b4ab09.webp"
 category: "Technology"
 tags: ["kenya politics", "andrew omtatah", "ifmis", "devolution", "senate of kenya", "public finance"]
+canonical: "https://zandani.co.ke/article/omtatah-seeks-real-time-ifmis-access-for-senate-oversight"
 date: "2026-07-18T12:06:18Z"
 dateModified: "2026-07-18T12:06:18Z"
+focusKeyword: "Omtatah Seeks Real-Time IFMIS Access for Senate Oversight"
 schema: "NewsArticle"
 ---
 
-## The Digital Mirage of IFMIS Transparency
+## The Digital Mirage of IFMIS Transparency Omtatah Seeks Real-Time IFMIS Access for Senate Oversight is the central subject of the update.
 
 Senator Andrew Omtatah wants the Senate to have a live feed into the Integrated Financial Management Information System to curb county theft. Yet, this legislative push ignores the reality that digitizing a corrupt procurement cycle does not fix the theft; it only monitors it in high definition.
 
