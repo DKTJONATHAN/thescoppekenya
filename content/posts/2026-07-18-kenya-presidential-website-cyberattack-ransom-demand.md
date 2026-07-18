@@ -1,18 +1,20 @@
 ---
 title: "Kenya Presidential Website Targeted in Bitcoin Ransom Cyberattack"
 slug: "kenya-presidential-website-cyberattack-ransom-demand"
-description: "The ICT Ministry confirmed a cyberattack on the Kenyan presidential website featuring a ransom demand. Authorities report no sensitive data was stolen."
+description: "Kenya Presidential Website Targeted in Bitcoin Ransom Cyberattack: The ICT Ministry confirmed a cyberattack on the Kenyan presidential website featuring a"
+excerpt: "Digital Siege: A Ransom Note for the State Kenyans are questioning the strength of the national firewall after hackers held the Presidential"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/MxKVjVzN/fc9bfd398ed9.webp"
 category: "News"
 tags: ["kenya", "cybersecurity", "ict ministry", "presidential website", "data breach", "technology news"]
+canonical: "https://zandani.co.ke/article/kenya-presidential-website-cyberattack-ransom-demand"
 date: "2026-07-18T11:56:18Z"
 dateModified: "2026-07-18T11:56:18Z"
+focusKeyword: "Kenya Presidential Website Targeted in Bitcoin Ransom Cyberattack"
 schema: "NewsArticle"
 ---
 
-## Digital Siege: A Ransom Note for the State
+## Digital Siege: A Ransom Note for the State Kenya Presidential Website Targeted in Bitcoin Ransom Cyberattack is the central subject of the update.
 
 Kenyans are questioning the strength of the national firewall after hackers held the Presidential website hostage for 5 Bitcoin. While the government insists the vault remains locked, the audacity of the breach has sparked a wildfire of public skepticism across social media platforms.
 
