@@ -340,10 +340,10 @@
     "1630b5b65c1b4c46b5e410144ee515ee",
     "356359ee7f40d74d7313d8e13ef6c50c",
     "cab234c48e80634b062e6bfcf1e3d01e",
-    "ddb7d774f1b413a7bd2540b22f1c48a8"
+    "ddb7d774f1b413a7bd2540b22f1c48a8",
+    "bcedbd88c66d57a798b23b878f355814"
   ],
   "style_history": [
-    "Hard News Lead",
     "Power Accountability",
     "Context Backgrounder",
     "Reaction & Voices",
@@ -372,10 +372,10 @@
     "Context Backgrounder",
     "Reaction & Voices",
     "Explainer",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "story_progression|Kenya|Hard News Lead",
     "policy_gap|KDF|Power Accountability",
     "myth_vs_fact|Kenya|Reaction & Voices",
     "money_follow|Kenya politics|Explainer",
@@ -454,6 +454,7 @@
     "story_progression|Wantam Movement|Context Backgrounder",
     "money_follow|KRA|Reaction & Voices",
     "story_progression|Nairobi Metropolitan Police Unit|Explainer",
-    "winners_losers|LSK|Hard News Lead"
+    "winners_losers|LSK|Hard News Lead",
+    "timeline_shift|xenophobia|Context Backgrounder"
   ]
 }
