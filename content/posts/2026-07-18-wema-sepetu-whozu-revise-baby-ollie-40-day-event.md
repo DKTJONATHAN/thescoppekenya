@@ -1,18 +1,20 @@
 ---
 title: "Wema Sepetu and Whozu revise plans for Baby Ollie 40-day event"
 slug: "wema-sepetu-whozu-revise-baby-ollie-40-day-event"
-description: "Tanzanian stars Wema Sepetu and Whozu are expanding their guest list for Baby Ollie after the infant secured multiple lucrative brand deals."
+description: "Wema Sepetu and Whozu revise plans for Baby Ollie 40-day event: Tanzanian stars Wema Sepetu and Whozu are expanding their guest list for Baby Ollie after the"
+excerpt: "Tanzanian Stars Expand Son’s Milestone Event Amid Brand Interest Tanzanian entertainers Wema Sepetu and Whozu have significantly expanded th"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/6RfWyP1w/531a72a25a2b.webp"
 category: "Gossip"
 tags: ["tanzanian entertainment", "wema sepetu", "whozu", "baby ollie", "celebrity parenting", "east african news"]
+canonical: "https://zandani.co.ke/article/wema-sepetu-whozu-revise-baby-ollie-40-day-event"
 date: "2026-07-18T09:46:09Z"
 dateModified: "2026-07-18T09:46:09Z"
+focusKeyword: "Wema Sepetu and Whozu revise plans for Baby Ollie 40-day event"
 schema: "NewsArticle"
 ---
 
-## Tanzanian Stars Expand Son’s Milestone Event Amid Brand Interest
+## Tanzanian Stars Expand Son’s Milestone Event Amid Brand Interest Wema Sepetu and Whozu revise plans for Baby Ollie 40-day event is the central subject of the update.
 
 Tanzanian entertainers Wema Sepetu and Whozu have significantly expanded the guest list for their son’s 40-day celebration, moving from an original plan of 500 attendees to a capacity of 1,500. This logistical shift comes as brands express intense interest in securing the infant as an ambassador, transforming what was intended as a private family milestone into a high-profile public event.
 
