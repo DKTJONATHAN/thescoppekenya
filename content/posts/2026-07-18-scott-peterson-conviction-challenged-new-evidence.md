@@ -1,21 +1,20 @@
 ---
-title: "Scott Peterson Murder Conviction Challenged by New Evidence
+title: "'Scott Peterson Murder Conviction Challenged by New Evidence"
 slug: "scott-peterson-conviction-challenged-new-evidence"
-description: "New evidence challenges Scott Peterson's murder conviction, re-examined by a documentary and the LA Innocence Project. Explore the latest in this evolving case now."
+description: "'Scott Peterson Murder Conviction Challenged by New Evidence: New evidence challenges Scott Peterson's murder conviction, re-examined by a documentary and the"
+excerpt: "The Scott Peterson Case: A Bellwether for Shifting Legal Scrutiny A fundamental shift is underway in how society engages with historical leg"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/WWDHf40c/e9b35942c1b0.jpg"
-og_title: "Scott Peterson's Murder Conviction: New Evidence Emerges"
-og_description: "A new documentary and the LA Innocence Project are challenging Scott Peterson's murder conviction with fresh evidence. Get the latest details."
-focus_keyword: "Scott Peterson murder conviction"
 category: "Entertainment"
 tags: ["scott peterson", "laci peterson", "murder conviction", "true crime", "innocence project", "documentary", "criminal justice"]
+canonical: "https://zandani.co.ke/article/scott-peterson-conviction-challenged-new-evidence"
 date: "2026-07-18T15:32:44Z"
 dateModified: "2026-07-18T15:32:44Z"
+focusKeyword: "'Scott Peterson Murder Conviction Challenged by New Evidence"
 schema: "NewsArticle"
 ---
 
-## The Scott Peterson Case: A Bellwether for Shifting Legal Scrutiny
+## The Scott Peterson Case: A Bellwether for Shifting Legal Scrutiny "Scott Peterson Murder Conviction Challenged by New Evidence is the central subject of the update.
 
 A fundamental shift is underway in how society engages with historical legal judgments. The re-examination of the Scott Peterson murder conviction serves as a prime example. This isn't just about one high-profile case; it underscores a wider cultural demand for accountability within justice systems, prompting deep dives into verdicts once considered final.
 
