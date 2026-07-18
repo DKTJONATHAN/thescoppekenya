@@ -14,7 +14,7 @@ focusKeyword: "'Scott Peterson Murder Conviction Challenged by New Evidence"
 schema: "NewsArticle"
 ---
 
-## The Scott Peterson Case: A Bellwether for Shifting Legal Scrutiny "Scott Peterson Murder Conviction Challenged by New Evidence is the central subject of the update.
+## The Scott Peterson Case: A Bellwether for Shifting Legal Scrutiny "Scott Peterson Murder Conviction Challenged by New Evidence is the central subject of the update. 'Scott Peterson Murder Conviction Challenged by New Evidence is the central subject of the update.
 
 A fundamental shift is underway in how society engages with historical legal judgments. The re-examination of the Scott Peterson murder conviction serves as a prime example. This isn't just about one high-profile case; it underscores a wider cultural demand for accountability within justice systems, prompting deep dives into verdicts once considered final.
 

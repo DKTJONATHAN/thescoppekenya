@@ -1,18 +1,20 @@
 ---
 title: "Cabinet Secretaries Announce New Appointments to State Agencies"
 slug: "cabinet-secretaries-announce-appointments-to-state-agencies"
-description: "Cabinet Secretaries Aden Duale, Julius Ogamba, and Eric Mugaa have announced leadership changes across key health, education, and water sector agencies."
+description: "Cabinet Secretaries Announce New Appointments to State Agencies: Cabinet Secretaries Aden Duale, Julius Ogamba, and Eric Mugaa have announced leadership"
+excerpt: "The Procurement Architects Behind the Gazette State agencies are undergoing a silent overhaul of their governance structures as Cabinet Secr"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Tx6pYXh8/b0bff3637e26.webp"
 category: "News"
 tags: ["kenya government", "cabinet secretaries", "public service", "state agencies", "kenya gazette", "leadership appointments"]
+canonical: "https://zandani.co.ke/article/cabinet-secretaries-announce-appointments-to-state-agencies"
 date: "2026-07-18T17:58:54Z"
 dateModified: "2026-07-18T17:58:54Z"
+focusKeyword: "Cabinet Secretaries Announce New Appointments to State Agencies"
 schema: "NewsArticle"
 ---
 
-## The Procurement Architects Behind the Gazette
+## The Procurement Architects Behind the Gazette Cabinet Secretaries Announce New Appointments to State Agencies is the central subject of the update.
 
 State agencies are undergoing a silent overhaul of their governance structures as Cabinet Secretaries Aden Duale, Julius Ogamba, and Eric Mugaa finalize a sweeping list of appointments across the health, education, and irrigation sectors. While the official documentation frames these as routine administrative refreshes, the concentration of fiscal oversight power suggests a more calculated consolidation of influence over the 2026/2027 procurement cycles.
 
