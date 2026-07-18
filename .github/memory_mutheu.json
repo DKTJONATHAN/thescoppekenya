@@ -318,10 +318,10 @@
     "573f196c30701477a4801966f8d5c5cf",
     "42cae96ff007b3eb39047b89168be038",
     "083a821ba7c8ad2af42f63a5b01689a4",
-    "c122d95e161fd51e5bb03278b0bdc171"
+    "c122d95e161fd51e5bb03278b0bdc171",
+    "9e36db97c61ca27629f9b06f48bdeb42"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
     "Profile Beat",
@@ -350,10 +350,10 @@
     "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
-    "timeline_shift|Firing|Profile Beat",
     "accountability|America's Next Top Model|Trend Take",
     "policy_gap|Spy movies|Hard News Lead",
     "accountability|na|Explainer",
@@ -432,6 +432,7 @@
     "money_follow|Crystal Harris|Profile Beat",
     "story_progression|Reese Witherspoon|Hard News Lead",
     "myth_vs_fact|Zendaya|Reaction Round-up",
-    "money_follow|na|Explainer"
+    "money_follow|na|Explainer",
+    "accountability|murder case|Trend Take"
   ]
 }
