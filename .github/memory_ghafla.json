@@ -258,10 +258,10 @@
     "f68d9675508100d8e69c9dc5d64d1faf",
     "ab66c781a5a940532ff73a957110fdbc",
     "5b532dafd4e96c235b2353dd37068d84",
-    "0c5a42b1bb4f52aabc9d3aef254c628c"
+    "0c5a42b1bb4f52aabc9d3aef254c628c",
+    "cd808370c0ffafb5c11d24612ae5376c"
   ],
   "style_history": [
-    "Receipts Piece",
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
@@ -290,10 +290,10 @@
     "Receipts Piece",
     "Trend Take",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "myth_vs_fact|Mike Sonko|Reaction Round-up",
     "money_follow|fiscal policy|Receipts Piece",
     "timeline_shift|Kenya|Hard News Lead",
     "myth_vs_fact|Bien-Aim\u00e9 Baraza|Profile Beat",
@@ -372,6 +372,7 @@
     "myth_vs_fact|marriage|Receipts Piece",
     "timeline_shift|Kenyan politics|Trend Take",
     "story_progression|DCI|Hard News Lead",
-    "money_follow|Kenya Power|Profile Beat"
+    "money_follow|Kenya Power|Profile Beat",
+    "policy_gap|Kenya Power|Receipts Piece"
   ]
 }
