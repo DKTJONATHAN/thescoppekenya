@@ -1,18 +1,20 @@
 ---
 title: "Former Radio Africa journalist Rose Mbugua dies in Nairobi crash"
 slug: "former-radio-africa-journalist-rose-mbugua-dies-nairobi-crash"
-description: "Former Radio Africa journalist Rose Mbugua has died following a fatal motorcycle accident on Uhuru Highway near the University Way roundabout."
+description: "Former Radio Africa journalist Rose Mbugua dies in Nairobi crash: Former Radio Africa journalist Rose Mbugua has died following a fatal motorcycle accident on"
+excerpt: "The Concrete Mixer Deadzone: Mapping Nairobi’s High Risk Infrastructure Rose Mbugua, a 24 year old former Radio Africa journalist, died yest"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/0pS4PxqC/42b7ee8010e7.webp"
 category: "Gossip"
 tags: ["kenya", "rose mbugua", "nairobi news", "road safety", "radio africa group", "nairobi accidents"]
+canonical: "https://zandani.co.ke/article/former-radio-africa-journalist-rose-mbugua-dies-nairobi-crash"
 date: "2026-07-19T10:01:40Z"
 dateModified: "2026-07-19T10:01:40Z"
+focusKeyword: "Former Radio Africa journalist Rose Mbugua dies in Nairobi crash"
 schema: "NewsArticle"
 ---
 
-## The Concrete-Mixer Deadzone: Mapping Nairobi’s High-Risk Infrastructure
+## The Concrete-Mixer Deadzone: Mapping Nairobi’s High-Risk Infrastructure Former Radio Africa journalist Rose Mbugua dies in Nairobi crash is the central subject of the update.
 
 Rose Mbugua, a 24-year-old former Radio Africa journalist, died yesterday evening following a collision on Uhuru Highway. Her death at the University Way roundabout marks a grim escalation in how Nairobi’s lethal road design consistently forces vulnerable commuters into the path of industrial machinery.
 
