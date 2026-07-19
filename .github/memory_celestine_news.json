@@ -344,10 +344,10 @@
     "bcedbd88c66d57a798b23b878f355814",
     "994a0207ee8272e5b8cb44f48f7acfd1",
     "4ac62e1baeaf41237f9f561c10daa470",
-    "2c1393c92389a3e4ea6533550349ca08"
+    "2c1393c92389a3e4ea6533550349ca08",
+    "290935edc928f12c7d69be0774d54fff"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Context Backgrounder",
     "Reaction & Voices",
@@ -376,10 +376,10 @@
     "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "policy_gap|ODM|Context Backgrounder",
     "accountability|Kenya Literature Bureau|Power Accountability",
     "next_48_hours|ODM|Hard News Lead",
     "accountability|Finance Bill 2026|Explainer",
@@ -458,6 +458,7 @@
     "timeline_shift|xenophobia|Context Backgrounder",
     "accountability|Kenya|Reaction & Voices",
     "money_follow|Government Appointments|Power Accountability",
-    "story_progression|Kenya|Hard News Lead"
+    "story_progression|Kenya|Hard News Lead",
+    "winners_losers|Kenya|Explainer"
   ]
 }
