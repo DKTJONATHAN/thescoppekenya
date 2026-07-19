@@ -247,10 +247,10 @@
     "26f2adcdbf5f9fce50f20a4b8b07ba69",
     "ca25464a687e4079eea073a9356e6838",
     "11002d38ed4d11a0777c0b74374966bc",
-    "e6b7cc48fe9ae2db93880426eb2bfdb1"
+    "e6b7cc48fe9ae2db93880426eb2bfdb1",
+    "8e63b776e9830594c8457f2b4e15b27d"
   ],
   "style_history": [
-    "Cynical Pundit",
     "Stat Story",
     "Match Report",
     "Player Profile Beat",
@@ -279,10 +279,10 @@
     "Match Report",
     "Tactical Take",
     "Player Profile Beat",
-    "Stat Story"
+    "Stat Story",
+    "Match Report"
   ],
   "angle_history": [
-    "accountability|Manchester City|Tactical Take",
     "accountability|Championship|Match Report",
     "timeline_shift|Scottish Cup|Player Profile Beat",
     "money_follow|Scottish Cup|Stat Story",
@@ -361,6 +361,7 @@
     "timeline_shift|World Cup|Match Report",
     "winners_losers|World Cup|Tactical Take",
     "policy_gap|World Cup 2026|Player Profile Beat",
-    "story_progression|football|Stat Story"
+    "story_progression|football|Stat Story",
+    "story_progression|World Cup|Match Report"
   ]
 }
