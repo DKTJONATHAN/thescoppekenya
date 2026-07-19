@@ -1,18 +1,20 @@
 ---
 title: "Rise of Organized Political Gangs Threatens Kenya National Security"
 slug: "rise-of-organized-political-gangs-threatens-kenya-national-security"
-description: "Rising political violence by organized gangs in Kenya is a major security threat. The editorial calls for urgent state action to end impunity."
+description: "Rise of Organized Political Gangs Threatens Kenya National Securi: Rising political violence by organized gangs in Kenya is a major security threat. The"
+excerpt: "The Myth of Lawless Streets Political violence in Kenya is widely dismissed as the work of rogue, unemployed youth operating outside the rea"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/JRBf5tN5/b4ca4db7d016.jpg"
 category: "Opinions"
 tags: ["kenya politics", "national security", "political violence", "governance", "kenyan news", "rule of law"]
+canonical: "https://zandani.co.ke/article/rise-of-organized-political-gangs-threatens-kenya-national-security"
 date: "2026-07-19T10:43:56Z"
 dateModified: "2026-07-19T10:43:56Z"
+focusKeyword: "Rise of Organized Political Gangs Threatens Kenya National Securi"
 schema: "NewsArticle"
 ---
 
-## The Myth of Lawless Streets
+## The Myth of Lawless Streets Rise of Organized Political Gangs Threatens Kenya National Securi is the central subject of the update.
 
 Political violence in Kenya is widely dismissed as the work of rogue, unemployed youth operating outside the reach of the state. This assessment is convenient but entirely wrong. The truth is far more calculated: these gangs are not a failure of order, but a functional, budget-optimized tool of the political establishment.
 
