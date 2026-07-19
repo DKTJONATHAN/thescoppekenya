@@ -1,18 +1,20 @@
 ---
 title: "Lionel Messi leads Argentina to World Cup final showdown with Spain"
 slug: "lionel-messi-leads-argentina-to-world-cup-final-against-spain"
-description: "Lionel Messi eyes a second consecutive World Cup title as Argentina faces Spain in the 2026 final amid speculation over his international future."
+description: "Lionel Messi leads Argentina to World Cup final showdown with Spa: Lionel Messi eyes a second consecutive World Cup title as Argentina faces Spain in the 2026"
+excerpt: "Argentina Stares Down Spain as Messi Defies the Biological Clock Lionel Messi will step onto the pitch for his 34th World Cup appearance thi"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/TxKS2gXj/e8868365d86a.jpg"
 category: "Sports"
 tags: ["world cup", "lionel messi", "argentina", "football", "sports news", "kenya sports"]
+canonical: "https://zandani.co.ke/article/lionel-messi-leads-argentina-to-world-cup-final-against-spain"
 date: "2026-07-19T11:34:19Z"
 dateModified: "2026-07-19T11:34:19Z"
+focusKeyword: "Lionel Messi leads Argentina to World Cup final showdown with Spa"
 schema: "NewsArticle"
 ---
 
-## Argentina Stares Down Spain as Messi Defies the Biological Clock
+## Argentina Stares Down Spain as Messi Defies the Biological Clock Lionel Messi leads Argentina to World Cup final showdown with Spa is the central subject of the update.
 
 Lionel Messi will step onto the pitch for his 34th World Cup appearance this Sunday, a feat that forces us to reconcile our local obsession with fleeting athletic talent against the reality of global, generational longevity.
 
