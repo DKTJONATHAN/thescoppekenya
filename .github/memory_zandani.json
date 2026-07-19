@@ -323,10 +323,10 @@
     "3c470973a3c7e1731cbfbe01a7d5a75e",
     "f7a4ea2fc8ab43e762daedce1d69e23f",
     "6f5e6058e37c745b2d1db02961ff42ec",
-    "3c818b9fde9651d1dd308e06ed4e7800"
+    "3c818b9fde9651d1dd308e06ed4e7800",
+    "c979e1a482fe7398eed868bd8051bb07"
   ],
   "style_history": [
-    "Trend Take",
     "Receipts Piece",
     "Profile Beat",
     "Hard News Lead",
@@ -355,10 +355,10 @@
     "Receipts Piece",
     "Trend Take",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "winners_losers|Nairobi|Reaction Round-up",
     "winners_losers|Gen Z|Trend Take",
     "money_follow|Star Wars|Receipts Piece",
     "money_follow|Jose Chameleone|Hard News Lead",
@@ -437,6 +437,7 @@
     "money_follow|Akothee|Receipts Piece",
     "accountability|corruption|Trend Take",
     "policy_gap|DCI|Reaction Round-up",
-    "money_follow|celebrity parenting|Hard News Lead"
+    "money_follow|celebrity parenting|Hard News Lead",
+    "policy_gap|Kenya|Receipts Piece"
   ]
 }
