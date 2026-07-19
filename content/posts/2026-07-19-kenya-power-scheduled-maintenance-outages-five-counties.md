@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Schedules Maintenance Outages in Five Counties"
 slug: "kenya-power-scheduled-maintenance-outages-five-counties"
-description: "Kenya Power has announced electricity maintenance scheduled for July 17 in Kisumu, Nyeri, Meru, Embu, and Kiambu. Residents should prepare for temporary outages."
+description: "Kenya Power Schedules Maintenance Outages in Five Counties: Kenya Power has announced electricity maintenance scheduled for July 17 in Kisumu, Nyeri, Meru,"
+excerpt: "The Geography of Inefficiency: A County by County Analysis of July 17 Infrastructure Audits Kenya Power’s 2025 strategic roadmap promised a"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/GQjNm0Hp/ebd0d3869e19.jpg"
 category: "Gossip"
 tags: ["kenya power", "power outage", "kenyan news", "utilities", "infrastructure"]
+canonical: "https://zandani.co.ke/article/kenya-power-scheduled-maintenance-outages-five-counties"
 date: "2026-07-19T08:32:16Z"
 dateModified: "2026-07-19T08:32:16Z"
+focusKeyword: "Kenya Power Schedules Maintenance Outages in Five Counties"
 schema: "NewsArticle"
 ---
 
-## The Geography of Inefficiency: A County-by-County Analysis of July 17 Infrastructure Audits
+## The Geography of Inefficiency: A County-by-County Analysis of July 17 Infrastructure Audits Kenya Power Schedules Maintenance Outages in Five Counties is the central subject of the update.
 
 Kenya Power’s 2025 strategic roadmap promised a modernized grid, yet the reality of July 17, 2026, tells a different story. Five counties spent the day in the dark, highlighting a system trapped in a cycle of endless repair. Digital transformation remains a distant ambition when basic electrical stability is still so elusive.
 
