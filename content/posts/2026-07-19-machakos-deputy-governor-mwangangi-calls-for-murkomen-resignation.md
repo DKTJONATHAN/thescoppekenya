@@ -1,18 +1,20 @@
 ---
 title: "Machakos Deputy Governor Mwangangi Calls for Murkomen Resignation"
 slug: "machakos-deputy-governor-mwangangi-calls-for-murkomen-resignation"
-description: "Machakos Deputy Governor Francis Mwangangi has demanded the resignation of CS Kipchumba Murkomen and PS Raymond Omollo over rising gang violence in Kenya."
+description: "Machakos Deputy Governor Mwangangi Calls for Murkomen Resignation: Machakos Deputy Governor Francis Mwangangi has demanded the resignation of CS Kipchumba"
+excerpt: "County Security Crisis Triggers National Cabinet Demands Machakos Deputy Governor Francis Mwangangi today demanded the immediate resignation"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/93t2wTv2/5582fdc504be.webp"
 category: "News"
 tags: ["kenya politics", "kipchumba murkomen", "machakos", "interior ministry", "national security", "goonism"]
+canonical: "https://zandani.co.ke/article/machakos-deputy-governor-mwangangi-calls-for-murkomen-resignation"
 date: "2026-07-19T07:30:04Z"
 dateModified: "2026-07-19T07:30:04Z"
+focusKeyword: "Machakos Deputy Governor Mwangangi Calls for Murkomen Resignation"
 schema: "NewsArticle"
 ---
 
-## County Security Crisis Triggers National Cabinet Demands
+## County Security Crisis Triggers National Cabinet Demands Machakos Deputy Governor Mwangangi Calls for Murkomen Resignation is the central subject of the update.
 
 Machakos Deputy Governor Francis Mwangangi today demanded the immediate resignation of Interior Cabinet Secretary Kipchumba Murkomen and Principal Secretary Raymond Omollo, citing a critical collapse of law and order following a surge in organized gang violence across the county.
 
