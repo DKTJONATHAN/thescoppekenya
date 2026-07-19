@@ -1,18 +1,20 @@
 ---
 title: "Nairobi Expressway ETC and MTC Toll Lane Guide for Motorists"
 slug: "nairobi-expressway-etc-mtc-toll-lane-guide"
-description: "Learn the difference between ETC and MTC lanes on the Nairobi Expressway to ensure smooth toll payments and observe the 20kph speed limit for safety."
+description: "Nairobi Expressway ETC and MTC Toll Lane Guide for Motorists: Learn the difference between ETC and MTC lanes on the Nairobi Expressway to ensure smooth toll"
+excerpt: "Precision at the Toll Booth The Nairobi Expressway has fundamentally altered how commuters cross the city, yet the transition from manual co"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Ps611jjM/b994e7370595.webp"
 category: "News"
 tags: ["nairobi expressway", "kenya transport", "road safety", "toll collection", "infrastructure", "nairobi traffic"]
+canonical: "https://zandani.co.ke/article/nairobi-expressway-etc-mtc-toll-lane-guide"
 date: "2026-07-19T18:01:14Z"
 dateModified: "2026-07-19T18:01:14Z"
+focusKeyword: "Nairobi Expressway ETC and MTC Toll Lane Guide for Motorists"
 schema: "NewsArticle"
 ---
 
-## Precision at the Toll Booth
+## Precision at the Toll Booth Nairobi Expressway ETC and MTC Toll Lane Guide for Motorists is the central subject of the update.
 
 The Nairobi Expressway has fundamentally altered how commuters cross the city, yet the transition from manual congestion to automated flow remains a point of friction for many motorists who continue to treat toll stations as parking spots rather than checkpoints.
 
