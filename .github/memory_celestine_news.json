@@ -343,10 +343,10 @@
     "ddb7d774f1b413a7bd2540b22f1c48a8",
     "bcedbd88c66d57a798b23b878f355814",
     "994a0207ee8272e5b8cb44f48f7acfd1",
-    "4ac62e1baeaf41237f9f561c10daa470"
+    "4ac62e1baeaf41237f9f561c10daa470",
+    "2c1393c92389a3e4ea6533550349ca08"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Explainer",
     "Hard News Lead",
     "Context Backgrounder",
@@ -375,10 +375,10 @@
     "Hard News Lead",
     "Context Backgrounder",
     "Reaction & Voices",
-    "Power Accountability"
+    "Power Accountability",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "money_follow|Kenya politics|Explainer",
     "policy_gap|ODM|Context Backgrounder",
     "accountability|Kenya Literature Bureau|Power Accountability",
     "next_48_hours|ODM|Hard News Lead",
@@ -457,6 +457,7 @@
     "winners_losers|LSK|Hard News Lead",
     "timeline_shift|xenophobia|Context Backgrounder",
     "accountability|Kenya|Reaction & Voices",
-    "money_follow|Government Appointments|Power Accountability"
+    "money_follow|Government Appointments|Power Accountability",
+    "story_progression|Kenya|Hard News Lead"
   ]
 }
