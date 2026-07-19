@@ -1,18 +1,20 @@
 ---
 title: "CS Ogamba Warns Principals Against Illegal School Levies"
 slug: "cs-ogamba-warns-principals-against-illegal-school-levies"
-description: "Education CS Julius Ogamba has warned principals against imposing unauthorized fees and urged administrators to address rising student unrest nationwide."
+description: "CS Ogamba Warns Principals Against Illegal School Levies: Education CS Julius Ogamba has warned principals against imposing unauthorized fees and urged"
+excerpt: "Why Your Child’s School Fees Feel Like A Moving Target Education Cabinet Secretary Julius Ogamba has officially declared war on the hidden f"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/DgCKL0qn/b8d5506811c2.webp"
 category: "News"
 tags: ["kenya", "education", "school fees", "student unrest", "julius ogamba", "za ndani"]
+canonical: "https://zandani.co.ke/article/cs-ogamba-warns-principals-against-illegal-school-levies"
 date: "2026-07-19T12:02:37Z"
 dateModified: "2026-07-19T12:02:37Z"
+focusKeyword: "CS Ogamba Warns Principals Against Illegal School Levies"
 schema: "NewsArticle"
 ---
 
-## Why Your Child’s School Fees Feel Like A Moving Target
+## Why Your Child’s School Fees Feel Like A Moving Target CS Ogamba Warns Principals Against Illegal School Levies is the central subject of the update.
 
 Education Cabinet Secretary Julius Ogamba has officially declared war on the hidden financial burdens placed on Kenyan households by school administrations. Speaking at Mbiriri Comprehensive School in Nyeri, the ministry chief signaled that the days of unchecked fee hikes are over, linking these extra charges directly to the current wave of student frustration and property destruction in institutions like Nyabisase Mixed Secondary.
 
