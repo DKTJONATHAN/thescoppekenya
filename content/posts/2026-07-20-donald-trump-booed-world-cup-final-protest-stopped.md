@@ -1,21 +1,20 @@
 ---
-title: "Donald Trump Booed at World Cup Final Amidst Protest Interception
+title: "'Donald Trump Booed at World Cup Final Amidst Protest Interception"
 slug: "donald-trump-booed-world-cup-final-protest-stopped"
-description: "Donald Trump faced strong jeers at the World Cup final at MetLife Stadium. A planned red card protest targeting him was thwarted by security. Get the full story on Za Ndani."
+description: "'Donald Trump Booed at World Cup Final Amidst Protest Interceptio: Donald Trump faced strong jeers at the World Cup final at MetLife Stadium. A planned red"
+excerpt: "World Cup Final Erupts: Donald Trump Booed as Political Protest is Crushed Former US President Donald Trump faced widespread jeers at the Wo"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/RTyvckQk/05c97c13a38f.jpg"
-og_title: "Trump Booed at World Cup Final, Protest Thwarted"
-og_description: "Donald Trump faced a hostile crowd at the World Cup final. Security intercepted a planned red card protest targeting him and FIFA."
-focus_keyword: "Donald Trump booed"
 category: "Entertainment"
 tags: ["donald trump", "world cup", "metlife stadium", "protest", "fifa", "sports news", "us politics"]
+canonical: "https://zandani.co.ke/article/donald-trump-booed-world-cup-final-protest-stopped"
 date: "2026-07-20T09:44:18Z"
 dateModified: "2026-07-20T09:44:18Z"
+focusKeyword: "'Donald Trump Booed at World Cup Final Amidst Protest Interceptio"
 schema: "NewsArticle"
 ---
 
-## World Cup Final Erupts: Donald Trump Booed as Political Protest is Crushed
+## World Cup Final Erupts: Donald Trump Booed as Political Protest is Crushed "Donald Trump Booed at World Cup Final Amidst Protest Interceptio is the central subject of the update.
 
 Former US President Donald Trump faced widespread jeers at the World Cup final at MetLife Stadium in East Rutherford, N.J. This public display of dissent coincided with stadium security's interception of a mass red card protest targeting his controversial actions, highlighting the blurred lines between sports and politics.
 
