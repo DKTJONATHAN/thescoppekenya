@@ -1,18 +1,20 @@
 ---
 title: "Uganda faces growing uncertainty over post-Museveni leadership"
 slug: "uganda-faces-growing-uncertainty-over-post-museveni-leadership"
-description: "As Museveni nears four decades in power, Uganda debates the strength of its democratic institutions and the future of political succession."
+description: "Uganda faces growing uncertainty over post-Museveni leadership: As Museveni nears four decades in power, Uganda debates the strength of its democratic"
+excerpt: "The Mirage of Permanent Governance Uganda stands at a precarious juncture. After four decades of dominance by one political movement, the na"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/jZzwGPhJ/15cf82d9574d.webp"
 category: "Opinions"
 tags: ["uganda politics", "yoweri museveni", "east africa", "political transition", "governance", "muhoozi kainerugaba"]
+canonical: "https://zandani.co.ke/article/uganda-faces-growing-uncertainty-over-post-museveni-leadership"
 date: "2026-07-20T11:58:28Z"
 dateModified: "2026-07-20T11:58:28Z"
+focusKeyword: "Uganda faces growing uncertainty over post-Museveni leadership"
 schema: "NewsArticle"
 ---
 
-## The Mirage of Permanent Governance
+## The Mirage of Permanent Governance Uganda faces growing uncertainty over post-Museveni leadership is the central subject of the update.
 
 Uganda stands at a precarious juncture. After four decades of dominance by one political movement, the nation’s democratic architecture is being eclipsed by a singular, aging authority. This setup threatens to destabilize not just the country itself, but the entire East African region, as the transition of power looms as an increasingly volatile question.
 
