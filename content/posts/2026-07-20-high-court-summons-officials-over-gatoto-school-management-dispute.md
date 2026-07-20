@@ -1,18 +1,20 @@
 ---
 title: "High Court Summons Officials Over Gatoto School Management Dispute"
 slug: "high-court-summons-officials-over-gatoto-school-management-dispute"
-description: "Justice Gregory Mutai has summoned top security and education officials to explain the failure to enforce a court ruling regarding Gatoto Comprehensive School."
+description: "High Court Summons Officials Over Gatoto School Management Disput: Justice Gregory Mutai has summoned top security and education officials to explain the"
+excerpt: "Mukuru Waits in Limbo as Court Demands Answers Justice Gregory Mutai has issued a stern ultimatum, ordering the Inspector General, the Deput"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/W4vFb0qH/fcfc4a69ba5c.webp"
 category: "News"
 tags: ["education", "judiciary", "gatoto school", "mukuru kwa njenga", "nairobi news", "kenyan courts"]
+canonical: "https://zandani.co.ke/article/high-court-summons-officials-over-gatoto-school-management-dispute"
 date: "2026-07-20T13:10:22Z"
 dateModified: "2026-07-20T13:10:22Z"
+focusKeyword: "High Court Summons Officials Over Gatoto School Management Disput"
 schema: "NewsArticle"
 ---
 
-## Mukuru Waits in Limbo as Court Demands Answers
+## Mukuru Waits in Limbo as Court Demands Answers High Court Summons Officials Over Gatoto School Management Disput is the central subject of the update.
 
 Justice Gregory Mutai has issued a stern ultimatum, ordering the Inspector General, the Deputy Inspector General, and the Principal Secretary for Basic Education to appear before the High Court to account for the ongoing failure to enforce management directives at Gatoto Comprehensive School.
 
