@@ -259,10 +259,10 @@
     "ab66c781a5a940532ff73a957110fdbc",
     "5b532dafd4e96c235b2353dd37068d84",
     "0c5a42b1bb4f52aabc9d3aef254c628c",
-    "cd808370c0ffafb5c11d24612ae5376c"
+    "cd808370c0ffafb5c11d24612ae5376c",
+    "86e0d4a37d7f2f60cad0df33aefcb3da"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Hard News Lead",
     "Receipts Piece",
@@ -291,10 +291,10 @@
     "Trend Take",
     "Hard News Lead",
     "Profile Beat",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "money_follow|fiscal policy|Receipts Piece",
     "timeline_shift|Kenya|Hard News Lead",
     "myth_vs_fact|Bien-Aim\u00e9 Baraza|Profile Beat",
     "impact_on_citizens|Magix Enga|Reaction Round-up",
@@ -373,6 +373,7 @@
     "timeline_shift|Kenyan politics|Trend Take",
     "story_progression|DCI|Hard News Lead",
     "money_follow|Kenya Power|Profile Beat",
-    "policy_gap|Kenya Power|Receipts Piece"
+    "policy_gap|Kenya Power|Receipts Piece",
+    "money_follow|Drake|Reaction Round-up"
   ]
 }
