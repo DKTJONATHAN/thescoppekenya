@@ -319,10 +319,10 @@
     "42cae96ff007b3eb39047b89168be038",
     "083a821ba7c8ad2af42f63a5b01689a4",
     "c122d95e161fd51e5bb03278b0bdc171",
-    "9e36db97c61ca27629f9b06f48bdeb42"
+    "9e36db97c61ca27629f9b06f48bdeb42",
+    "18cb7f78518e810659ddbd6da9cbc089"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Explainer",
     "Profile Beat",
     "Trend Take",
@@ -351,10 +351,10 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "accountability|America's Next Top Model|Trend Take",
     "policy_gap|Spy movies|Hard News Lead",
     "accountability|na|Explainer",
     "policy_gap|na|Profile Beat",
@@ -433,6 +433,7 @@
     "story_progression|Reese Witherspoon|Hard News Lead",
     "myth_vs_fact|Zendaya|Reaction Round-up",
     "money_follow|na|Explainer",
-    "accountability|murder case|Trend Take"
+    "accountability|murder case|Trend Take",
+    "policy_gap|World Cup final|Hard News Lead"
   ]
 }
