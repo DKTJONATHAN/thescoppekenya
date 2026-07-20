@@ -1,18 +1,20 @@
 ---
 title: "NSE Market Cap Hits Record KSh3.89 Trillion Amid Rally"
 slug: "nse-market-cap-hits-record-high-amid-foreign-outflows"
-description: "The Nairobi Securities Exchange records a new market capitalization high despite lower trading volumes and rising foreign investor outflows."
+description: "NSE Market Cap Hits Record KSh3.89 Trillion Amid Rally: The Nairobi Securities Exchange records a new market capitalization high despite lower trading volumes"
+excerpt: "Market Capitalization and the Dynamics of Liquidity The Nairobi Securities Exchange has reached a significant milestone, with total market c"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/6RVFrLgb/0edbb9e36ade.png"
 category: "Business"
 tags: ["nairobi securities exchange", "kenya economy", "nse news", "kenyan finance", "investing", "stanbic bank"]
+canonical: "https://zandani.co.ke/article/nse-market-cap-hits-record-high-amid-foreign-outflows"
 date: "2026-07-20T08:16:07Z"
 dateModified: "2026-07-20T08:16:07Z"
+focusKeyword: "NSE Market Cap Hits Record KSh3.89 Trillion Amid Rally"
 schema: "NewsArticle"
 ---
 
-## Market Capitalization and the Dynamics of Liquidity
+## Market Capitalization and the Dynamics of Liquidity NSE Market Cap Hits Record KSh3.89 Trillion Amid Rally is the central subject of the update.
 
 The Nairobi Securities Exchange has reached a significant milestone, with total market capitalization climbing to KSh3.89 trillion. This historic high reflects a notable appreciation in equity prices across the bourse. Yet, a closer examination of recent trading activity reveals a complex environment. While headline figures highlight record growth, a closer look at market depth and transaction volumes suggests that current investor interest remains concentrated, rather than reflecting a broad-based surge in participation.
 
