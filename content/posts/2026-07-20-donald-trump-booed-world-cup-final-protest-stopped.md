@@ -14,7 +14,7 @@ focusKeyword: "'Donald Trump Booed at World Cup Final Amidst Protest Interceptio
 schema: "NewsArticle"
 ---
 
-## World Cup Final Erupts: Donald Trump Booed as Political Protest is Crushed "Donald Trump Booed at World Cup Final Amidst Protest Interceptio is the central subject of the update.
+## World Cup Final Erupts: Donald Trump Booed as Political Protest is Crushed "Donald Trump Booed at World Cup Final Amidst Protest Interceptio is the central subject of the update. 'Donald Trump Booed at World Cup Final Amidst Protest Interceptio is the central subject of the update.
 
 Former US President Donald Trump faced widespread jeers at the World Cup final at MetLife Stadium in East Rutherford, N.J. This public display of dissent coincided with stadium security's interception of a mass red card protest targeting his controversial actions, highlighting the blurred lines between sports and politics.
 

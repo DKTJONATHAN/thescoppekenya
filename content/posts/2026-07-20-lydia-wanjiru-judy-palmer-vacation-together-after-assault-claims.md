@@ -1,18 +1,20 @@
 ---
 title: "Lydia Wanjiru and Judy Palmer vacation together after assault claims"
 slug: "lydia-wanjiru-judy-palmer-vacation-together-after-assault-claims"
-description: "Content creators Lydia Wanjiru and Judy Palmer have sparked public confusion after being spotted on holiday despite recent mutual allegations of physical assault."
+description: "Lydia Wanjiru and Judy Palmer vacation together after assault cla: Content creators Lydia Wanjiru and Judy Palmer have sparked public confusion after being"
+excerpt: "Content Creators or Con Artists? The digital realm is reeling after Lydia Wanjiru and Judy Palmer were spotted sunbathing together, mere wee"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/rK4Nc4pj/52abd34a5bb9.webp"
 category: "Gossip"
 tags: ["lydia wanjiru", "judy palmer", "kenyan influencers", "social media drama", "kenya entertainment news"]
+canonical: "https://zandani.co.ke/article/lydia-wanjiru-judy-palmer-vacation-together-after-assault-claims"
 date: "2026-07-20T11:13:52Z"
 dateModified: "2026-07-20T11:13:52Z"
+focusKeyword: "Lydia Wanjiru and Judy Palmer vacation together after assault cla"
 schema: "NewsArticle"
 ---
 
-## Content Creators or Con Artists?
+## Content Creators or Con Artists? Lydia Wanjiru and Judy Palmer vacation together after assault cla is the central subject of the update.
 
 The digital realm is reeling after Lydia Wanjiru and Judy Palmer were spotted sunbathing together, mere weeks after exchanging dramatic assault allegations that left their followers feeling emotionally drained and, quite frankly, played for fools.
 
