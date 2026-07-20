@@ -186,10 +186,10 @@
     "aae396674b6f662f22c89caa5359b592",
     "39f8bb2a66c44355e5517410058bc016",
     "2220c0ffa9b763bacce38907e223ab23",
-    "4fe9efe329f40c51e6f2e5860c7ed47b"
+    "4fe9efe329f40c51e6f2e5860c7ed47b",
+    "f16b06b7a479e818098a4bfe8e95b3e9"
   ],
   "style_history": [
-    "Counterpoint",
     "Sharp Column",
     "Historical Lens",
     "Personal Reflection",
@@ -218,10 +218,10 @@
     "Sharp Column",
     "Letter Form",
     "Personal Reflection",
-    "Counterpoint"
+    "Counterpoint",
+    "Sharp Column"
   ],
   "angle_history": [
-    "accountability|genocide|Letter Form",
     "timeline_shift|lifelong learning|Historical Lens",
     "money_follow|Kenya|Sharp Column",
     "next_48_hours|data sovereignty|Personal Reflection",
@@ -300,6 +300,7 @@
     "accountability|by-election|Sharp Column",
     "policy_gap|One Health|Letter Form",
     "accountability|BATUK|Personal Reflection",
-    "money_follow|political violence|Counterpoint"
+    "money_follow|political violence|Counterpoint",
+    "accountability|Ugandan politics|Sharp Column"
   ]
 }
