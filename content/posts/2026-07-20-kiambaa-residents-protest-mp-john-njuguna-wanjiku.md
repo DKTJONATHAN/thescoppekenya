@@ -1,18 +1,20 @@
 ---
 title: "Kiambaa residents protest demanding MP John Njuguna Wanjiku exit"
 slug: "kiambaa-residents-protest-mp-john-njuguna-wanjiku"
-description: "Kiambaa residents are protesting to demand the resignation of MP John Njuguna Wanjiku over allegations of violence linked to the Ol Kalou by-election."
+description: "Kiambaa residents protest demanding MP John Njuguna Wanjiku exit: Kiambaa residents are protesting to demand the resignation of MP John Njuguna Wanjiku over"
+excerpt: "Kiambaa Constituents Initiate Formal Recall Process Against MP Njuguna Wanjiku Demonstrating Kiambaa residents marched through the constitue"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/N2gYNRtK/bfd6e7f9c2c7.webp"
 category: "News"
 tags: ["kiambaa", "john njuguna wanjiku", "kenya politics", "ol kalou", "by-election", "political violence"]
+canonical: "https://zandani.co.ke/article/kiambaa-residents-protest-mp-john-njuguna-wanjiku"
 date: "2026-07-20T18:56:27Z"
 dateModified: "2026-07-20T18:56:27Z"
+focusKeyword: "Kiambaa residents protest demanding MP John Njuguna Wanjiku exit"
 schema: "NewsArticle"
 ---
 
-## Kiambaa Constituents Initiate Formal Recall Process Against MP Njuguna Wanjiku
+## Kiambaa Constituents Initiate Formal Recall Process Against MP Njuguna Wanjiku Kiambaa residents protest demanding MP John Njuguna Wanjiku exit is the central subject of the update.
 
 Demonstrating Kiambaa residents marched through the constituency today demanding the immediate resignation of MP John Njuguna Wanjiku following investigative reports that linked the lawmaker to organized violence during the recent Ol Kalou by-election.
 
