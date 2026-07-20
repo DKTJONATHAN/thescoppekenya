@@ -347,10 +347,10 @@
     "2c1393c92389a3e4ea6533550349ca08",
     "290935edc928f12c7d69be0774d54fff",
     "e208a4d2adc5dd77ed6983c9ae5daa01",
-    "3f844b4b305f01852a1806b8fb7d1b07"
+    "3f844b4b305f01852a1806b8fb7d1b07",
+    "ec840cf1cbeb1785fa5108ef6b7782a1"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Explainer",
     "Power Accountability",
     "Hard News Lead",
@@ -379,10 +379,10 @@
     "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
-    "Power Accountability"
+    "Power Accountability",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "accountability|Finance Bill 2026|Explainer",
     "story_progression|TSC|Context Backgrounder",
     "accountability|IEBC|Power Accountability",
     "policy_gap|Kenya|Hard News Lead",
@@ -461,6 +461,7 @@
     "story_progression|Kenya|Hard News Lead",
     "winners_losers|Kenya|Explainer",
     "story_progression|Nairobi Expressway|Context Backgrounder",
-    "money_follow|Nairobi County|Power Accountability"
+    "money_follow|Nairobi County|Power Accountability",
+    "next_48_hours|Education|Reaction & Voices"
   ]
 }
