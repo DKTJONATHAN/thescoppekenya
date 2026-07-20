@@ -1,18 +1,20 @@
 ---
 title: "Drake Loses 1.5 Million Dollars Betting on World Cup Final"
 slug: "drake-loses-1-5-million-bet-on-world-cup-final"
-description: "Musician Drake lost 1.5 million dollars after Argentina failed to beat Spain in the World Cup final, sparking fresh scrutiny over his gambling habits."
+description: "Drake Loses 1.5 Million Dollars Betting on World Cup Final: Musician Drake lost 1.5 million dollars after Argentina failed to beat Spain in the World Cup"
+excerpt: "The Stake Gamble: Why Drake’s $1.5M Loss Hits Different in Nairobi The global betting landscape recently suffered a high profile tremor that"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/WWwtRZ0d/4231f60fd65e.jpg"
 category: "Gossip"
 tags: ["drake", "world cup", "sports betting", "stake", "kenyan entertainment", "celebrity news"]
+canonical: "https://zandani.co.ke/article/drake-loses-1-5-million-bet-on-world-cup-final"
 date: "2026-07-20T09:32:30Z"
 dateModified: "2026-07-20T09:32:30Z"
+focusKeyword: "Drake Loses 1.5 Million Dollars Betting on World Cup Final"
 schema: "NewsArticle"
 ---
 
-## The Stake Gamble: Why Drake’s $1.5M Loss Hits Different in Nairobi
+## The Stake Gamble: Why Drake’s $1.5M Loss Hits Different in Nairobi Drake Loses 1.5 Million Dollars Betting on World Cup Final is the central subject of the update.
 
 The global betting landscape recently suffered a high-profile tremor that has sparked intense debate across Nairobi. When Drake staked $1.5 million on Argentina to clinch the World Cup victory within regulation time, he seemingly overlooked the unpredictable nature of football. His wager fell flat, resulting in a staggering financial loss and providing fresh fuel for critics of the "Drake Curse." 
 
