@@ -320,10 +320,10 @@
     "083a821ba7c8ad2af42f63a5b01689a4",
     "c122d95e161fd51e5bb03278b0bdc171",
     "9e36db97c61ca27629f9b06f48bdeb42",
-    "18cb7f78518e810659ddbd6da9cbc089"
+    "18cb7f78518e810659ddbd6da9cbc089",
+    "c51560a51d74eb00882a7878236bef61"
   ],
   "style_history": [
-    "Explainer",
     "Profile Beat",
     "Trend Take",
     "Reaction Round-up",
@@ -352,10 +352,10 @@
     "Reaction Round-up",
     "Explainer",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "policy_gap|Spy movies|Hard News Lead",
     "accountability|na|Explainer",
     "policy_gap|na|Profile Beat",
     "winners_losers|na|Reaction Round-up",
@@ -434,6 +434,7 @@
     "myth_vs_fact|Zendaya|Reaction Round-up",
     "money_follow|na|Explainer",
     "accountability|murder case|Trend Take",
-    "policy_gap|World Cup final|Hard News Lead"
+    "policy_gap|World Cup final|Hard News Lead",
+    "winners_losers|Celebrity family|Reaction Round-up"
   ]
 }
