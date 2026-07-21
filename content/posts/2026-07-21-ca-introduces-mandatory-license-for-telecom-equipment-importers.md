@@ -1,18 +1,20 @@
 ---
 title: "CA Introduces Mandatory License for Telecom Equipment Importers"
 slug: "ca-introduces-mandatory-license-for-telecom-equipment-importers"
-description: "The Communications Authority of Kenya now requires importers and wholesalers of telecommunications hardware to obtain a mandatory distribution license."
+description: "CA Introduces Mandatory License for Telecom Equipment Importers: The Communications Authority of Kenya now requires importers and wholesalers of"
+excerpt: "New Regulatory Costs Reshape ICT Market Access The Communications Authority of Kenya has mandated that all entities importing or wholesaling"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/cX8ntKPH/5a0065e30760.webp"
 category: "Technology"
 tags: ["communications authority of kenya", "telecommunications", "ict regulation", "kenyan business", "import licensing"]
+canonical: "https://zandani.co.ke/article/ca-introduces-mandatory-license-for-telecom-equipment-importers"
 date: "2026-07-21T12:44:35Z"
 dateModified: "2026-07-21T12:44:35Z"
+focusKeyword: "CA Introduces Mandatory License for Telecom Equipment Importers"
 schema: "NewsArticle"
 ---
 
-## New Regulatory Costs Reshape ICT Market Access
+## New Regulatory Costs Reshape ICT Market Access CA Introduces Mandatory License for Telecom Equipment Importers is the central subject of the update.
 
 The Communications Authority of Kenya has mandated that all entities importing or wholesaling telecommunications hardware obtain a Communications Equipment Distributor license, effectively restructuring the entry requirements for the local ICT supply chain.
 
