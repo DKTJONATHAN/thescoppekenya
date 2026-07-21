@@ -1,18 +1,20 @@
 ---
 title: "Pauline Njoroge Resigns from Jubilee Party After 14 Years"
 slug: "pauline-njoroge-resigns-from-jubilee-party"
-description: "Long-time Uhuru Kenyatta ally Pauline Njoroge has stepped down from her Jubilee Party roles to focus on the Linda Mwananchi movement and WANTAM initiative."
+description: "Pauline Njoroge Resigns from Jubilee Party After 14 Years: Long-time Uhuru Kenyatta ally Pauline Njoroge has stepped down from her Jubilee Party roles to focus"
+excerpt: "A Shift from Party Loyalty to Grassroots Action Pauline Njoroge has officially ended her fourteen year tenure within the Jubilee Party, vaca"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/XfS0wtNP/10033d3bf80d.webp"
 category: "News"
 tags: ["pauline njoroge", "jubilee party", "kenyan politics", "uhuru kenyatta", "linda mwananchi", "wantam"]
+canonical: "https://zandani.co.ke/article/pauline-njoroge-resigns-from-jubilee-party"
 date: "2026-07-21T07:35:34Z"
 dateModified: "2026-07-21T07:35:34Z"
+focusKeyword: "Pauline Njoroge Resigns from Jubilee Party After 14 Years"
 schema: "NewsArticle"
 ---
 
-## A Shift from Party Loyalty to Grassroots Action
+## A Shift from Party Loyalty to Grassroots Action Pauline Njoroge Resigns from Jubilee Party After 14 Years is the central subject of the update.
 
 Pauline Njoroge has officially ended her fourteen year tenure within the Jubilee Party, vacating her seat on the National Executive Committee effective July 21. This departure signals a fundamental transition for one of the most prominent voices in Kenyan political discourse, moving away from formal institutional structures to focus on decentralized advocacy.
 
