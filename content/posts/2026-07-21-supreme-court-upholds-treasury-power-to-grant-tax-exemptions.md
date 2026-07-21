@@ -1,18 +1,20 @@
 ---
 title: "Supreme Court Upholds Treasury Power to Grant Tax Exemptions"
 slug: "supreme-court-upholds-treasury-power-to-grant-tax-exemptions"
-description: "The Supreme Court has ruled that the Treasury can grant income tax exemptions to foreign investors through gazette notices without needing parliamentary approval."
+description: "Supreme Court Upholds Treasury Power to Grant Tax Exemptions: The Supreme Court has ruled that the Treasury can grant income tax exemptions to foreign"
+excerpt: "The Tax Fairness Gap: Navigating the Supreme Court’s Treasury Ruling The Supreme Court recently upheld the Treasury’s authority to grant tax"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/QRBytdR/07125d1ab8b7.jpg"
 category: "Business"
 tags: ["kenya news", "treasury", "supreme court", "tax exemption", "business law", "kenyan economy"]
+canonical: "https://zandani.co.ke/article/supreme-court-upholds-treasury-power-to-grant-tax-exemptions"
 date: "2026-07-21T07:41:27Z"
 dateModified: "2026-07-21T07:41:27Z"
+focusKeyword: "Supreme Court Upholds Treasury Power to Grant Tax Exemptions"
 schema: "NewsArticle"
 ---
 
-## The Tax Fairness Gap: Navigating the Supreme Court’s Treasury Ruling
+## The Tax Fairness Gap: Navigating the Supreme Court’s Treasury Ruling Supreme Court Upholds Treasury Power to Grant Tax Exemptions is the central subject of the update.
 
 The Supreme Court recently upheld the Treasury’s authority to grant tax exemptions to foreign investors through executive gazette notices. For the average Kenyan entrepreneur, this decision confirms a two-tier tax environment. While international firms operate under a system of fiscal sanctuary, local businesses remain responsible for the full spectrum of mandatory tax obligations.
 
