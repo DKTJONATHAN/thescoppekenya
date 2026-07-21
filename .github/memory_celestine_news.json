@@ -349,10 +349,10 @@
     "e208a4d2adc5dd77ed6983c9ae5daa01",
     "3f844b4b305f01852a1806b8fb7d1b07",
     "ec840cf1cbeb1785fa5108ef6b7782a1",
-    "8f72b246dade30a2575b46bc7fb61ef3"
+    "8f72b246dade30a2575b46bc7fb61ef3",
+    "542ddd022ea18c857c314644639c92d1"
   ],
   "style_history": [
-    "Power Accountability",
     "Hard News Lead",
     "Context Backgrounder",
     "Explainer",
@@ -381,10 +381,10 @@
     "Context Backgrounder",
     "Power Accountability",
     "Reaction & Voices",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "accountability|IEBC|Power Accountability",
     "policy_gap|Kenya|Hard News Lead",
     "winners_losers|KNEC|Explainer",
     "winners_losers|Police|Reaction & Voices",
@@ -463,6 +463,7 @@
     "story_progression|Nairobi Expressway|Context Backgrounder",
     "money_follow|Nairobi County|Power Accountability",
     "next_48_hours|Education|Reaction & Voices",
-    "accountability|Kiambaa|Hard News Lead"
+    "accountability|Kiambaa|Hard News Lead",
+    "policy_gap|Jubilee Party|Explainer"
   ]
 }
