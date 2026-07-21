@@ -1,18 +1,20 @@
 ---
 title: "Pharmacy and Poisons Board Strengthens Medical Safety Standards"
 slug: "pharmacy-and-poisons-board-strengthens-medical-safety-standards"
-description: "The Pharmacy and Poisons Board is enhancing regulatory oversight to ensure medicine quality and safety in support of Kenya Universal Health Coverage."
+description: "Pharmacy and Poisons Board Strengthens Medical Safety Standards: The Pharmacy and Poisons Board is enhancing regulatory oversight to ensure medicine quality"
+excerpt: "A Ledger of Trust in Kenya When the colonial government first codified the Pharmacy and Poisons Act in the 1950s, the regulatory objective w"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/d3DQ12G/e5632a0a7857.webp"
 category: "Opinions"
 tags: ["pharmacy and poisons board", "healthcare regulation", "kenya health", "universal health coverage", "public safety", "medical standards"]
+canonical: "https://zandani.co.ke/article/pharmacy-and-poisons-board-strengthens-medical-safety-standards"
 date: "2026-07-21T11:19:19Z"
 dateModified: "2026-07-21T11:19:19Z"
+focusKeyword: "Pharmacy and Poisons Board Strengthens Medical Safety Standards"
 schema: "NewsArticle"
 ---
 
-## A Ledger of Trust in Kenya
+## A Ledger of Trust in Kenya Pharmacy and Poisons Board Strengthens Medical Safety Standards is the central subject of the update.
 
 When the colonial government first codified the Pharmacy and Poisons Act in the 1950s, the regulatory objective was confined to a small network of apothecaries serving a colonial administration. Today, the Pharmacy and Poisons Board manages a vast, interconnected medical supply chain that acts as a vital pillar for Universal Health Coverage, requiring a digital evolution to match the scale of a modernizing nation.
 
