@@ -1,20 +1,21 @@
 ---
 title: "The Comic's Final Act: An Okemesi Spiritual Attack Claim"
 slug: "the-comics-final-act-okemesi-spiritual-attack-claim"
-description: "The curtain fell on a comic's life, a tragic echo of old, as whispers of an okemesi spiritual attack claim lingered in the air, thick with irony."
+description: "The Comic's Final Act: An Okemesi Spiritual Attack Claim: The curtain fell on a comic's life, a tragic echo of old, as whispers of an okemesi spiritual attack"
+excerpt: "The gasps rippled through the candlelit theatre, a collective intake of breath far less melodramatic than the scene unfolding. On the stage"
 author: "The Chronicler"
 author_url: "https://zandani.co.ke/author/the-chronicler"
 image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200"
 category: "Chronicles"
-tags: ["chronicles", "okemesi-spiritual-attack-claims", "nollywood-actor", "moliere", "tragic-irony", "17th-century-france", "okemesi-nollywood-actor-death-cause", "comedy", "performers"]
+tags: ["chronicles", "okemesi-spiritual-attack-claims", "nollywood-actor", "moliere", "tragic-irony", "17th-century-france", "okemesi-nollywood-actor-death-cause", "comedy"]
 canonical: "https://zandani.co.ke/article/the-comics-final-act-okemesi-spiritual-attack-claim"
 date: "2026-07-21T12:42:47Z"
-authorUrl: "https://zandani.co.ke/author/the-chronicler"
 dateModified: "2026-07-21T12:42:47Z"
+focusKeyword: "The Comic's Final Act: An Okemesi Spiritual Attack Claim"
 schema: "NewsArticle"
 ---
 
-The gasps rippled through the candlelit theatre, a collective intake of breath far less melodramatic than the scene unfolding. On the stage of the Palais-Royal, Jean-Baptiste Poquelin, known to all as Molière, was playing his part with an unsettling realism. He coughed, a deep, rattling sound, not written into *The Imaginary Invalid*. This was not the exaggerated hacking of Argan, the hypochondriac he portrayed, but a visceral tremor from the core of the man himself. His face, painted with the pallor of his character, seemed to gain a new, alarming truth.
+The gasps rippled through the candlelit theatre, a collective intake of breath far less melodramatic than the scene unfolding. On the stage of the Palais-Royal, Jean-Baptiste Poquelin, known to all as Molière, was playing his part with an unsettling realism. He coughed, a deep, rattling sound, not written into *The Imaginary Invalid*. This was not the exaggerated hacking of Argan, the hypochondriac he portrayed, but a visceral tremor from the core of the man himself. His face, painted with the pallor of his character, seemed to gain a new, alarming truth. The Comic's Final Act: An Okemesi Spiritual Attack Claim is the central subject of the update.
 
 ## The Jest That Stilled a Heart: Okemesi Nollywood Actor Death Cause
 
