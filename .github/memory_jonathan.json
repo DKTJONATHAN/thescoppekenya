@@ -187,10 +187,10 @@
     "39f8bb2a66c44355e5517410058bc016",
     "2220c0ffa9b763bacce38907e223ab23",
     "4fe9efe329f40c51e6f2e5860c7ed47b",
-    "f16b06b7a479e818098a4bfe8e95b3e9"
+    "f16b06b7a479e818098a4bfe8e95b3e9",
+    "e5f6422a2e1b055398616a7b1a4f9b2d"
   ],
   "style_history": [
-    "Sharp Column",
     "Historical Lens",
     "Personal Reflection",
     "Counterpoint",
@@ -219,10 +219,10 @@
     "Letter Form",
     "Personal Reflection",
     "Counterpoint",
-    "Sharp Column"
+    "Sharp Column",
+    "Historical Lens"
   ],
   "angle_history": [
-    "timeline_shift|lifelong learning|Historical Lens",
     "money_follow|Kenya|Sharp Column",
     "next_48_hours|data sovereignty|Personal Reflection",
     "accountability|GBV|Letter Form",
@@ -301,6 +301,7 @@
     "policy_gap|One Health|Letter Form",
     "accountability|BATUK|Personal Reflection",
     "money_follow|political violence|Counterpoint",
-    "accountability|Ugandan politics|Sharp Column"
+    "accountability|Ugandan politics|Sharp Column",
+    "timeline_shift|Pharmacy and Poisons Board|Historical Lens"
   ]
 }
