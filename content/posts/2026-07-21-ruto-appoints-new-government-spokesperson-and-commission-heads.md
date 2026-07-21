@@ -1,18 +1,20 @@
 ---
 title: "President Ruto Appoints New Government Spokesperson and Commission Heads"
 slug: "ruto-appoints-new-government-spokesperson-and-commission-heads"
-description: "President William Ruto has announced a major government reshuffle, appointing a new spokesperson and filling key vacancies at the TSC and IPOA boards."
+description: "President Ruto Appoints New Government Spokesperson and Commissio: President William Ruto has announced a major government reshuffle, appointing a new"
+excerpt: "Patronage or Progress: The New Faces of Power Skepticism is the dominant currency on Nairobi streets today as citizens weigh President Ruto'"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/pBxJZ9x1/f351d513f185.webp"
 category: "News"
 tags: ["kenyan politics", "government appointments", "tsc", "ipoa", "william ruto", "kenya news"]
+canonical: "https://zandani.co.ke/article/ruto-appoints-new-government-spokesperson-and-commission-heads"
 date: "2026-07-21T18:18:49Z"
 dateModified: "2026-07-21T18:18:49Z"
+focusKeyword: "President Ruto Appoints New Government Spokesperson and Commissio"
 schema: "NewsArticle"
 ---
 
-## Patronage or Progress: The New Faces of Power
+## Patronage or Progress: The New Faces of Power President Ruto Appoints New Government Spokesperson and Commissio is the central subject of the update.
 
 Skepticism is the dominant currency on Nairobi streets today as citizens weigh President Ruto's latest appointments against his foundational promise of a professional, merit-based administration. The move leaves many questioning whether institutional independence can truly survive when political stalwarts are drafted to lead the very bodies meant to hold them accountable.
 
