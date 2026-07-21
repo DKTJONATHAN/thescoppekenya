@@ -1,18 +1,20 @@
 ---
 title: "Alex Scott rejects Bournemouth contract extension amid transfer link"
 slug: "alex-scott-rejects-bournemouth-contract-extension"
-description: "Bournemouth midfielder Alex Scott has turned down a new contract offer but the club maintains he is not for sale despite top Premier League interest."
+description: "Alex Scott rejects Bournemouth contract extension amid transfer l: Bournemouth midfielder Alex Scott has turned down a new contract offer but the club"
+excerpt: "Tactical Stagnation: The Risks of the Bournemouth Stand off Alex Scott has opted against signing a fresh deal with Bournemouth, triggering a"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/mFDx9hfK/033847606641.jpg"
 category: "Sports"
 tags: ["alex scott", "bournemouth", "premier league", "football transfers", "kenyan football fans"]
+canonical: "https://zandani.co.ke/article/alex-scott-rejects-bournemouth-contract-extension"
 date: "2026-07-21T12:03:54Z"
 dateModified: "2026-07-21T12:03:54Z"
+focusKeyword: "Alex Scott rejects Bournemouth contract extension amid transfer l"
 schema: "NewsArticle"
 ---
 
-## Tactical Stagnation: The Risks of the Bournemouth Stand-off
+## Tactical Stagnation: The Risks of the Bournemouth Stand-off Alex Scott rejects Bournemouth contract extension amid transfer l is the central subject of the update.
 
 Alex Scott has opted against signing a fresh deal with Bournemouth, triggering a high-stakes standoff between a burgeoning talent and a club determined to retain its core assets. This rejection forces a cold calculation on the midfielder, weighing guaranteed minutes against the allure of elite-level competition.
 
