@@ -1,18 +1,20 @@
 ---
 title: "Kenya Met Department Issues Weather Outlook for July 21 to 27"
 slug: "kenya-met-department-weather-outlook-july-21-27"
-description: "The Kenya Meteorological Department forecasts dry conditions with light showers in 19 counties and cold nights dropping below 10 degrees Celsius."
+description: "Kenya Met Department Issues Weather Outlook for July 21 to 27: The Kenya Meteorological Department forecasts dry conditions with light showers in 19 counties"
+excerpt: "Preparing for the Deep Freeze The Kenya Meteorological Department has officially flagged a dual weather threat for the week of July 21 to 27"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://images.unsplash.com/photo-1610625005597-4fbd8d863392?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NjY1ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2MjM5NDd8&ixlib=rb-4.1.0&q=80&w=1080"
 category: "Gossip"
 tags: ["kenya weather", "met department", "nairobi weather", "cold spell", "kenya news"]
+canonical: "https://zandani.co.ke/article/kenya-met-department-weather-outlook-july-21-27"
 date: "2026-07-21T08:42:53Z"
 dateModified: "2026-07-21T08:42:53Z"
+focusKeyword: "Kenya Met Department Issues Weather Outlook for July 21 to 27"
 schema: "NewsArticle"
 ---
 
-## Preparing for the Deep Freeze
+## Preparing for the Deep Freeze Kenya Met Department Issues Weather Outlook for July 21 to 27 is the central subject of the update.
 
 The Kenya Meteorological Department has officially flagged a dual weather threat for the week of July 21 to 27, ordering residents across the Highlands and the Lake Victoria basin to brace for a week of unpredictable climate shifts. 
 
