@@ -1,18 +1,20 @@
 ---
 title: "Kenya Breweries Launches BimaYaBia Campaign for Football Fans"
 slug: "kenya-breweries-launches-bimayabia-campaign-for-football-fans"
-description: "Kenya Breweries Limited introduces the BimaYaBia campaign offering vouchers to football fans who spill their drinks during intense match moments."
+description: "Kenya Breweries Launches BimaYaBia Campaign for Football Fans: Kenya Breweries Limited introduces the BimaYaBia campaign offering vouchers to football fans who"
+excerpt: "The High Stakes Ritual of the Match Day Pint When a striker sends a sitter wide or a late goal sends a Nairobi sports bar into a frenzy, the"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/HDfD41bK/58a25a47b416.png"
 category: "Lifestyle"
 tags: ["kenya breweries", "bimayabia", "football", "hospitality", "kenyan news", "alcohol industry"]
+canonical: "https://zandani.co.ke/article/kenya-breweries-launches-bimayabia-campaign-for-football-fans"
 date: "2026-07-21T09:36:17Z"
 dateModified: "2026-07-21T09:36:17Z"
+focusKeyword: "Kenya Breweries Launches BimaYaBia Campaign for Football Fans"
 schema: "NewsArticle"
 ---
 
-## The High-Stakes Ritual of the Match Day Pint
+## The High-Stakes Ritual of the Match Day Pint Kenya Breweries Launches BimaYaBia Campaign for Football Fans is the central subject of the update.
 
 When a striker sends a sitter wide or a late goal sends a Nairobi sports bar into a frenzy, the resulting commotion often involves more than just cheers. Drinks frequently end up on the floor. Kenya Breweries Limited has decided to turn this common scene of chaos into a way to connect with customers through their new #BimaYaBia campaign. The initiative offers fans a Sh500 voucher to replace a spilled drink, provided they share proof of the mishap on social media. It serves as a lighthearted safety net for the clumsy, but it is also a clever way for the brand to stay relevant during the most intense moments of a match.
 
