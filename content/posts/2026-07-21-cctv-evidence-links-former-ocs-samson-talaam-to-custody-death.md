@@ -1,18 +1,20 @@
 ---
 title: "CCTV Evidence Links Former OCS Samson Talaam to Custody Death"
 slug: "cctv-evidence-links-former-ocs-samson-talaam-to-custody-death"
-description: "Recovered CCTV footage presented in the High Court reveals an alleged cover-up by former OCS Samson Talaam regarding the death of Albert Omondi Ojwang."
+description: "CCTV Evidence Links Former OCS Samson Talaam to Custody Death: Recovered CCTV footage presented in the High Court reveals an alleged cover-up by former OCS"
+excerpt: "A Life Priced at Pocket Change Kenyans are grappling with a chilling revelation that has transformed the local discourse on police accountab"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/7xH7dY4Y/a56a88c2a131.webp"
 category: "Gossip"
 tags: ["kenya", "police brutality", "ipoa", "nairobi news", "justice", "samson talaam"]
+canonical: "https://zandani.co.ke/article/cctv-evidence-links-former-ocs-samson-talaam-to-custody-death"
 date: "2026-07-21T10:34:57Z"
 dateModified: "2026-07-21T10:34:57Z"
+focusKeyword: "CCTV Evidence Links Former OCS Samson Talaam to Custody Death"
 schema: "NewsArticle"
 ---
 
-## A Life Priced at Pocket Change
+## A Life Priced at Pocket Change CCTV Evidence Links Former OCS Samson Talaam to Custody Death is the central subject of the update.
 
 Kenyans are grappling with a chilling revelation that has transformed the local discourse on police accountability. Court documents have exposed that a human life was treated as a disposable commodity, valued at less than a modest lunch for two in the capital. The recovery of digital evidence has stripped away the veneer of institutional integrity, serving as a blunt reminder that for some within the force, justice is a negotiable asset.
 
