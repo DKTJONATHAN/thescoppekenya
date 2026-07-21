@@ -325,10 +325,10 @@
     "6f5e6058e37c745b2d1db02961ff42ec",
     "3c818b9fde9651d1dd308e06ed4e7800",
     "c979e1a482fe7398eed868bd8051bb07",
-    "4b5845f566bea3df08bab82c5dd917f4"
+    "4b5845f566bea3df08bab82c5dd917f4",
+    "356e5016c527640123e985ab6ce6ef9b"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
     "Receipts Piece",
@@ -357,10 +357,10 @@
     "Reaction Round-up",
     "Hard News Lead",
     "Receipts Piece",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "money_follow|Star Wars|Receipts Piece",
     "money_follow|Jose Chameleone|Hard News Lead",
     "myth_vs_fact|Vybz Kartel|Profile Beat",
     "myth_vs_fact|Andrew Kibe|Trend Take",
@@ -439,6 +439,7 @@
     "policy_gap|DCI|Reaction Round-up",
     "money_follow|celebrity parenting|Hard News Lead",
     "policy_gap|Kenya|Receipts Piece",
-    "accountability|content creators|Profile Beat"
+    "accountability|content creators|Profile Beat",
+    "winners_losers|Kenya|Reaction Round-up"
   ]
 }
