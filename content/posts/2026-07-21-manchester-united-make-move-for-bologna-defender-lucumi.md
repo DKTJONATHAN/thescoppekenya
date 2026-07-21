@@ -1,15 +1,20 @@
 ---
 title: "Manchester United make move for Bologna defender Lucumi"
 slug: "manchester-united-make-move-for-bologna-defender-lucumi"
+description: "Manchester United make move for Bologna defender Lucumi: Manchester United's Lucumi Chase: More Transfer Window Chaos Manchester United's reported 'move' for"
+excerpt: "Manchester United's Lucumi Chase: More Transfer Window Chaos Manchester United's reported 'move' for Bologna's Jhon Lucumi reeks of indecisi"
 author: "Sports Desk"
 image: "https://i.ibb.co/Kxp2zYDm/8965ef3628c8.jpg"
 category: "Global News"
+tags: ["manchester united make move for bologna defender lucumi", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/manchester-united-make-move-for-bologna-defender-lucumi"
 date: "2026-07-21T16:26:18Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-07-21T16:26:18Z"
+focusKeyword: "Manchester United make move for Bologna defender Lucumi"
 schema: "NewsArticle"
 ---
-## Manchester United's Lucumi Chase: More Transfer Window Chaos
+
+## Manchester United's Lucumi Chase: More Transfer Window Chaos Manchester United make move for Bologna defender Lucumi is the central subject of the update.
 
 Manchester United's reported "move" for Bologna's Jhon Lucumi reeks of indecision. Despite central defence not being a top priority, the club is seemingly back to old targets, adding another name to an already sprawling shopping list. It's less a strategic pursuit and more a familiar scramble in the current transfer market.
 
