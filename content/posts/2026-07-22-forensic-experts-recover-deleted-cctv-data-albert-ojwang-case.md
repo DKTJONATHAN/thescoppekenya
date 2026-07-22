@@ -1,18 +1,20 @@
 ---
 title: "Forensic experts recover deleted CCTV data in Albert Ojwang case"
 slug: "forensic-experts-recover-deleted-cctv-data-albert-ojwang-case"
-description: "Digital forensic experts explain how deleted surveillance data is recovered from police systems to assist in the investigation of Albert Ojwang."
+description: "Forensic experts recover deleted CCTV data in Albert Ojwang case: Digital forensic experts explain how deleted surveillance data is recovered from police"
+excerpt: "Digital Forensics Expose Surveillance Gaps at Nairobi Central Forensic investigators operating under the Independent Policing Oversight Auth"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://cdn.radioafrica.digital/image/2026/07/2cb9fa3d-ade0-43b3-9934-2028bfffe346.webp?1784714525731"
 category: "Gossip"
 tags: ["kenya news", "ipoa", "albert ojwang", "digital forensics", "nairobi police", "data recovery"]
+canonical: "https://zandani.co.ke/article/forensic-experts-recover-deleted-cctv-data-albert-ojwang-case"
 date: "2026-07-22T10:35:32Z"
 dateModified: "2026-07-22T10:35:32Z"
+focusKeyword: "Forensic experts recover deleted CCTV data in Albert Ojwang case"
 schema: "NewsArticle"
 ---
 
-## Digital Forensics Expose Surveillance Gaps at Nairobi Central
+## Digital Forensics Expose Surveillance Gaps at Nairobi Central Forensic experts recover deleted CCTV data in Albert Ojwang case is the central subject of the update.
 
 Forensic investigators operating under the Independent Policing Oversight Authority (IPOA) have successfully recovered deleted surveillance footage from Nairobi Central Police Station, uncovering a 700GB discrepancy in the logs surrounding the death of Albert Ojwang. This recovery process exposes a significant gap between the data officially provided by the station and the actual storage capacity utilized by its security hardware.
 
