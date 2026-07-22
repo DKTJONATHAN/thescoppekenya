@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Announces Scheduled Outages Across Seven Counties"
 slug: "kenya-power-scheduled-maintenance-outages-july-22"
-description: "Kenya Power has scheduled electricity maintenance across seven counties on July 22. Expect power disruptions between 9am and 5pm."
+description: "Kenya Power Announces Scheduled Outages Across Seven Counties: Kenya Power has scheduled electricity maintenance across seven counties on July 22. Expect power"
+excerpt: "The High Cost of the Eight Hour Silence Kenya Power has officially penciled in major grid maintenance for July 22, 2026, leaving businesses"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://www.ghafla.co.ke/wp-content/uploads/sites/4/2024/01/kenya-power-KPLC-1200x900-1-1024x768.jpg"
 category: "Gossip"
 tags: ["kenya power", "power outage", "kenya news", "electricity", "utility updates"]
+canonical: "https://zandani.co.ke/article/kenya-power-scheduled-maintenance-outages-july-22"
 date: "2026-07-22T08:42:25Z"
 dateModified: "2026-07-22T08:42:25Z"
+focusKeyword: "Kenya Power Announces Scheduled Outages Across Seven Counties"
 schema: "NewsArticle"
 ---
 
-## The High Cost of the Eight-Hour Silence
+## The High Cost of the Eight-Hour Silence Kenya Power Announces Scheduled Outages Across Seven Counties is the central subject of the update.
 
 Kenya Power has officially penciled in major grid maintenance for July 22, 2026, leaving businesses across seven counties to reconcile their ledgers with an empty plug. As the country shifts toward 24/7 digital operations, this forced downtime acts as an invisible tax on our growing gig economy, exposing the fragility of our power-dependent momentum.
 
