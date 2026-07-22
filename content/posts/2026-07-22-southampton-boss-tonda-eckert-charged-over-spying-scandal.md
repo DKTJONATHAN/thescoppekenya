@@ -1,18 +1,20 @@
 ---
 title: "Southampton boss Tonda Eckert charged over training ground spying"
 slug: "southampton-boss-tonda-eckert-charged-over-spying-scandal"
-description: "Southampton head coach Tonda Eckert faces FA misconduct charges after a training ground spying scandal leads to point deductions and play-off expulsion."
+description: "Southampton boss Tonda Eckert charged over training ground spying: Southampton head coach Tonda Eckert faces FA misconduct charges after a training ground"
+excerpt: "The Price Tag of Espionage The Football Association has officially issued three charges of misconduct against Tonda Eckert, marking the fina"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/20b8/live/8f7cb5a0-85ac-11f1-a300-4537eea2be58.jpg"
 category: "Sports"
 tags: ["football", "southampton", "english championship", "sports news", "football association"]
+canonical: "https://zandani.co.ke/article/southampton-boss-tonda-eckert-charged-over-spying-scandal"
 date: "2026-07-22T12:09:04Z"
 dateModified: "2026-07-22T12:09:04Z"
+focusKeyword: "Southampton boss Tonda Eckert charged over training ground spying"
 schema: "NewsArticle"
 ---
 
-## The Price Tag of Espionage
+## The Price Tag of Espionage Southampton boss Tonda Eckert charged over training ground spying is the central subject of the update.
 
 The Football Association has officially issued three charges of misconduct against Tonda Eckert, marking the final stage in a systemic collapse of Southampton's sporting integrity. This regulatory hammer follows the EFL expulsion that effectively evaporated the club's projected 140 million pound Premier League broadcast windfall.
 
