@@ -1,18 +1,20 @@
 ---
 title: "Senate Rejects New NTSA Traffic Regulations After Public Outcry"
 slug: "senate-rejects-new-ntsa-traffic-regulations"
-description: "The Kenyan Senate has officially annulled three sets of 2026 NTSA traffic rules following widespread concerns over costs and lack of public consultation."
+description: "Senate Rejects New NTSA Traffic Regulations After Public Outcry: The Kenyan Senate has officially annulled three sets of 2026 NTSA traffic rules following"
+excerpt: "The Legislative Halt on Kenyan Traffic Regulations The Kenyan Senate has officially annulled three sets of traffic regulations introduced by"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://techweez.com/wp-content/uploads/2026/07/senate-scraps-ntsa-traffic-rules-2026.webp"
 category: "Technology"
 tags: ["ntsa", "kenya traffic laws", "senate", "kenyan motorists", "transport news", "kenya"]
+canonical: "https://zandani.co.ke/article/senate-rejects-new-ntsa-traffic-regulations"
 date: "2026-07-22T12:47:32Z"
 dateModified: "2026-07-22T12:47:32Z"
+focusKeyword: "Senate Rejects New NTSA Traffic Regulations After Public Outcry"
 schema: "NewsArticle"
 ---
 
-## The Legislative Halt on Kenyan Traffic Regulations
+## The Legislative Halt on Kenyan Traffic Regulations Senate Rejects New NTSA Traffic Regulations After Public Outcry is the central subject of the update.
 
 The Kenyan Senate has officially annulled three sets of traffic regulations introduced by the National Transport and Safety Authority (NTSA) this year. This move effectively clears the current legal slate, halting an executive push toward rapid digitization that bypassed essential legislative and consultative protocols. The decision concludes a period of significant tension between state agencies and the parliamentary bodies tasked with oversight.
 
