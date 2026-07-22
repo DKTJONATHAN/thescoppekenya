@@ -353,10 +353,10 @@
     "542ddd022ea18c857c314644639c92d1",
     "e0f81c71cfb7d68698806306c5c94d67",
     "dfdc1ef6e39b2cdc5bd2a59a048449c9",
-    "f0a9040494898494ab628fd26da72260"
+    "f0a9040494898494ab628fd26da72260",
+    "0100a633411ca6fe819def9a16153c8b"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Hard News Lead",
     "Context Backgrounder",
     "Explainer",
@@ -385,10 +385,10 @@
     "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
-    "Power Accountability"
+    "Power Accountability",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "winners_losers|Kenya|Context Backgrounder",
     "policy_gap|Kenya politics|Hard News Lead",
     "policy_gap|Kenya|Power Accountability",
     "winners_losers|TSC|Explainer",
@@ -467,6 +467,7 @@
     "policy_gap|Jubilee Party|Explainer",
     "myth_vs_fact|VFS Global|Context Backgrounder",
     "accountability|Kenyan politics|Reaction & Voices",
-    "policy_gap|Law Society of Kenya|Power Accountability"
+    "policy_gap|Law Society of Kenya|Power Accountability",
+    "accountability|Nairobi Rivers Commission|Hard News Lead"
   ]
 }
