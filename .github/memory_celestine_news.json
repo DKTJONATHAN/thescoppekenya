@@ -352,10 +352,10 @@
     "8f72b246dade30a2575b46bc7fb61ef3",
     "542ddd022ea18c857c314644639c92d1",
     "e0f81c71cfb7d68698806306c5c94d67",
-    "dfdc1ef6e39b2cdc5bd2a59a048449c9"
+    "dfdc1ef6e39b2cdc5bd2a59a048449c9",
+    "f0a9040494898494ab628fd26da72260"
   ],
   "style_history": [
-    "Explainer",
     "Reaction & Voices",
     "Hard News Lead",
     "Context Backgrounder",
@@ -384,10 +384,10 @@
     "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "winners_losers|Police|Reaction & Voices",
     "winners_losers|Kenya|Context Backgrounder",
     "policy_gap|Kenya politics|Hard News Lead",
     "policy_gap|Kenya|Power Accountability",
@@ -466,6 +466,7 @@
     "accountability|Kiambaa|Hard News Lead",
     "policy_gap|Jubilee Party|Explainer",
     "myth_vs_fact|VFS Global|Context Backgrounder",
-    "accountability|Kenyan politics|Reaction & Voices"
+    "accountability|Kenyan politics|Reaction & Voices",
+    "policy_gap|Law Society of Kenya|Power Accountability"
   ]
 }
