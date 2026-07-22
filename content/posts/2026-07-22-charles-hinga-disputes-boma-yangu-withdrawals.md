@@ -1,18 +1,20 @@
 ---
 title: "PS Charles Hinga Disputes Reports on Boma Yangu Savings Withdrawals"
 slug: "charles-hinga-disputes-boma-yangu-withdrawals"
-description: "Housing PS Charles Hinga clarifies that most Boma Yangu funds were used for home deposits rather than withdrawals, challenging recent media reports."
+description: "PS Charles Hinga Disputes Reports on Boma Yangu Savings Withdrawa: Housing PS Charles Hinga clarifies that most Boma Yangu funds were used for home deposits"
+excerpt: "Understanding Your Boma Yangu Account Status Housing PS Charles Hinga recently clarified that the platform has not seen a mass exodus of cap"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/hxzBcS0Z/1f6b679936e5.webp"
 category: "News"
 tags: ["boma yangu", "affordable housing", "housing levy", "charles hinga", "kenya news", "auditor general"]
+canonical: "https://zandani.co.ke/article/charles-hinga-disputes-boma-yangu-withdrawals"
 date: "2026-07-22T18:11:31Z"
 dateModified: "2026-07-22T18:11:31Z"
+focusKeyword: "PS Charles Hinga Disputes Reports on Boma Yangu Savings Withdrawa"
 schema: "NewsArticle"
 ---
 
-## Understanding Your Boma Yangu Account Status
+## Understanding Your Boma Yangu Account Status PS Charles Hinga Disputes Reports on Boma Yangu Savings Withdrawa is the central subject of the update.
 
 Housing PS Charles Hinga recently clarified that the platform has not seen a mass exodus of capital. While reports suggested Ksh 2.56 billion in withdrawals, official data indicates that most of this money moved internally to secure specific home deposits.
 
