@@ -1,18 +1,20 @@
 ---
 title: "LSK issues guidelines for court boycott during ongoing protests"
 slug: "lsk-issues-guidelines-for-court-boycott"
-description: "Law Society of Kenya President Charles Kanjama clarifies that lawyers can attend to urgent matters like 24-hour rule cases despite the national boycott."
+description: "LSK issues guidelines for court boycott during ongoing protests: Law Society of Kenya President Charles Kanjama clarifies that lawyers can attend to urgent"
+excerpt: "A Strike in Name Only The Law Society of Kenya launched its nationwide court boycott today, yet the picket lines remain curiously thin. Whil"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/YTBn5Bbj/f529a2117002.webp"
 category: "News"
 tags: ["lsk", "charles kanjama", "kenya courts", "judicial reforms", "legal news", "kenya politics"]
+canonical: "https://zandani.co.ke/article/lsk-issues-guidelines-for-court-boycott"
 date: "2026-07-22T07:37:40Z"
 dateModified: "2026-07-22T07:37:40Z"
+focusKeyword: "LSK issues guidelines for court boycott during ongoing protests"
 schema: "NewsArticle"
 ---
 
-## A Strike in Name Only
+## A Strike in Name Only LSK issues guidelines for court boycott during ongoing protests is the central subject of the update.
 
 The Law Society of Kenya launched its nationwide court boycott today, yet the picket lines remain curiously thin. While President Charles Kanjama frames this as a bold stand for judicial reform, the fine print creates a convenient backdoor that threatens to turn a militant protest into a gentlemanly inconvenience for the state.
 
