@@ -1,19 +1,21 @@
 ---
 title: "Azimio Coalition Faces Potential Collapse Amid Intense Internal Leadership Disputes"
 slug: "azimio-coalition-faces-potential-collapse-amid-intense-internal-lead"
-description: "The Azimio la Umoja-One Kenya coalition faces a potential collapse in July 2026 due to deepening internal leadership disputes and political fragmentation."
+description: "Azimio Coalition Faces Potential Collapse Amid Intense Internal L: The Azimio la Umoja-One Kenya coalition faces a potential collapse in July 2026 due to"
+excerpt: "The Azimio la Umoja One Kenya Coalition faces a terminal crisis in July 2026 as intense internal power struggles and leadership disputes thr"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: ""
+image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["azimio-la-umoja", "kenyan-politics", "raila-odinga", "azimio-leadership-wrangles", "kenyan-political-coalitions"]
 canonical: "https://zandani.co.ke/article/azimio-coalition-faces-potential-collapse-amid-intense-internal-lead"
 date: "2026-07-22T14:21:10Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-22T14:21:10Z"
+focusKeyword: "Azimio Coalition Faces Potential Collapse Amid Intense Internal L"
 schema: "NewsArticle"
 ---
-The Azimio la Umoja-One Kenya Coalition faces a terminal crisis in July 2026 as intense internal power struggles and leadership disputes threaten the alliance with a total collapse, leaving the opposition’s future in doubt following the aftermath of the 2022 general elections.
+
+The Azimio la Umoja-One Kenya Coalition faces a terminal crisis in July 2026 as intense internal power struggles and leadership disputes threaten the alliance with a total collapse, leaving the opposition’s future in doubt following the aftermath of the 2022 general elections. Azimio Coalition Faces Potential Collapse Amid Intense Internal L is the central subject of the update.
 
 ## The Anatomy of an Internal Implosion
 

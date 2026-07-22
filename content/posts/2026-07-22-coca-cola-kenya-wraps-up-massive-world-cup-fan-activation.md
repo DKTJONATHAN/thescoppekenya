@@ -14,7 +14,7 @@ focusKeyword: "Coca-Cola Kenya Wraps Up Massive World Cup Fan Activation Event"
 schema: "NewsArticle"
 ---
 
-## The Stadium is Now Your Pocket Coca-Cola Kenya Wraps Up Massive World Cup Fan Activation Event is the central subject of the update. Coca-Cola Kenya Wraps Up Massive World Cup Fan Activation Event is the central subject of the update. Coca-Cola Kenya Wraps Up Massive World Cup Fan Activation Event is the central subject of the update. Coca-Cola Kenya Wraps Up Massive World Cup Fan Activation Event is the central subject of the update. Coca-Cola Kenya Wraps Up Massive World Cup Fan Activation Event is the central subject of the update. Coca-Cola Kenya Wraps Up Massive World Cup Fan Activation Event is the central subject of the update.
+## The Stadium is Now Your Pocket Coca-Cola Kenya Wraps Up Massive World Cup Fan Activation Event is the central subject of the update. Coca-Cola Kenya Wraps Up Massive World Cup Fan Activation Event is the central subject of the update. Coca-Cola Kenya Wraps Up Massive World Cup Fan Activation Event is the central subject of the update. Coca-Cola Kenya Wraps Up Massive World Cup Fan Activation Event is the central subject of the update. Coca-Cola Kenya Wraps Up Massive World Cup Fan Activation Event is the central subject of the update. Coca-Cola Kenya Wraps Up Massive World Cup Fan Activation Event is the central subject of the update. Coca-Cola Kenya Wraps Up Massive World Cup Fan Activation Event is the central subject of the update.
 
 Kenyans have officially traded the passive role of the spectator for the active life of the creator. While the 1-0 final score between Spain and Argentina at the KICC might be the headline elsewhere, local fans are still busy editing their own victory dances.
 
