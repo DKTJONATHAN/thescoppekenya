@@ -1,18 +1,20 @@
 ---
 title: "Ruto Appoints Samuel Muchina Nyaga to Nairobi Rivers Commission"
 slug: "ruto-appoints-samuel-muchina-nyaga-nairobi-rivers-commission"
-description: "President William Ruto has appointed Samuel Muchina Nyaga to the Nairobi Rivers Commission following the revocation of Amos Chege Mugo from the role."
+description: "Ruto Appoints Samuel Muchina Nyaga to Nairobi Rivers Commission: President William Ruto has appointed Samuel Muchina Nyaga to the Nairobi Rivers Commission"
+excerpt: "Political Strategy in Environmental Governance President William Ruto has appointed Samuel Muchina Nyaga as a member of the Nairobi Rivers C"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/muchina-ruto.jpg.webp?itok=vNotNo5O"
 category: "News"
 tags: ["nairobi rivers commission", "william ruto", "kenya politics", "uda", "environmental restoration", "political appointments"]
+canonical: "https://zandani.co.ke/article/ruto-appoints-samuel-muchina-nyaga-nairobi-rivers-commission"
 date: "2026-07-22T12:28:38Z"
 dateModified: "2026-07-22T12:28:38Z"
+focusKeyword: "Ruto Appoints Samuel Muchina Nyaga to Nairobi Rivers Commission"
 schema: "NewsArticle"
 ---
 
-## Political Strategy in Environmental Governance
+## Political Strategy in Environmental Governance Ruto Appoints Samuel Muchina Nyaga to Nairobi Rivers Commission is the central subject of the update.
 
 President William Ruto has appointed Samuel Muchina Nyaga as a member of the Nairobi Rivers Commission in a move that signals a continued trend of placing loyalists in state-led environmental initiatives following their recent electoral defeats.
 
