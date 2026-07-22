@@ -1,18 +1,20 @@
 ---
 title: "Kenya Property Prices Rise Driven by Demand for Standalone Homes"
 slug: "kenya-property-prices-rise-driven-by-demand-for-standalone-homes"
-description: "Kenya's housing market sees steady growth as demand for detached homes rises, even as apartment valuations in central Nairobi decline."
+description: "Kenya Property Prices Rise Driven by Demand for Standalone Homes: Kenya's housing market sees steady growth as demand for detached homes rises, even as"
+excerpt: "The Standalone Premium Reshapes Nairobi Real Estate The Kenya National Bureau of Statistics (KNBS) Q1 2026 Residential Property Price Index"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/nMxWQgrq/bfeddd511d22.jpg"
 category: "Business"
 tags: ["kenya real estate", "housing market", "nairobi property", "knbs", "kenyan economy", "home ownership"]
+canonical: "https://zandani.co.ke/article/kenya-property-prices-rise-driven-by-demand-for-standalone-homes"
 date: "2026-07-22T07:41:49Z"
 dateModified: "2026-07-22T07:41:49Z"
+focusKeyword: "Kenya Property Prices Rise Driven by Demand for Standalone Homes"
 schema: "NewsArticle"
 ---
 
-## The Standalone Premium Reshapes Nairobi Real Estate
+## The Standalone Premium Reshapes Nairobi Real Estate Kenya Property Prices Rise Driven by Demand for Standalone Homes is the central subject of the update.
 
 The Kenya National Bureau of Statistics (KNBS) Q1 2026 Residential Property Price Index highlights a distinct bifurcation in market performance. While the broader urban apartment sector faces a valuation slump, a 1.0 percent quarterly increase in standalone housing values is providing a necessary counterbalance to these losses.
 
