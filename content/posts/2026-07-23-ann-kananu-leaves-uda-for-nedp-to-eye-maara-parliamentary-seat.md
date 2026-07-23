@@ -1,18 +1,20 @@
 ---
 title: "Ann Kananu leaves UDA for Mike Sonko's NEDP to eye Maara seat"
 slug: "ann-kananu-leaves-uda-for-nedp-to-eye-maara-parliamentary-seat"
-description: "Former Nairobi Governor Ann Kananu has defected from UDA to join Mike Sonko's National Economic Development Party to contest the Maara parliamentary seat."
+description: "Ann Kananu leaves UDA for Mike Sonko's NEDP to eye Maara seat: Former Nairobi Governor Ann Kananu has defected from UDA to join Mike Sonko's National Economic"
+excerpt: "From Nairobi Streets to Maara Fields: The Political Homecoming Debate Tharaka Nithi residents are questioning whether Ann Kananu’s move to t"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/T9Qy4fJ/50bcfb48a898.webp"
 category: "News"
 tags: ["kenya politics", "ann kananu", "mike sonko", "nedp", "uda", "2027 elections"]
+canonical: "https://zandani.co.ke/article/ann-kananu-leaves-uda-for-nedp-to-eye-maara-parliamentary-seat"
 date: "2026-07-23T07:36:14Z"
 dateModified: "2026-07-23T07:36:14Z"
+focusKeyword: "Ann Kananu leaves UDA for Mike Sonko's NEDP to eye Maara seat"
 schema: "NewsArticle"
 ---
 
-## From Nairobi Streets to Maara Fields: The Political Homecoming Debate
+## From Nairobi Streets to Maara Fields: The Political Homecoming Debate Ann Kananu leaves UDA for Mike Sonko's NEDP to eye Maara seat is the central subject of the update.
 
 Tharaka-Nithi residents are questioning whether Ann Kananu’s move to the National Economic Development Party will bring tangible change or merely import big-city theatrics to the quiet parliamentary race in Maara.
 
