@@ -162,10 +162,10 @@
     "71fcd53c2c92328a2e975ea729ae71f2",
     "b6cbe15a96833feed2c64ace2ba2e761",
     "686289633bbe92c722b2a027133ee7da",
-    "1182144e8d467bbe3b8e68c8b8b95500"
+    "1182144e8d467bbe3b8e68c8b8b95500",
+    "afdd9a9c0205c9de908f3b4cc870eb83"
   ],
   "style_history": [
-    "Explainer",
     "Critical Take",
     "Hard News Lead",
     "Backgrounder",
@@ -194,7 +194,8 @@
     "Critical Take",
     "Africa Angle",
     "Hard News Lead",
-    "Backgrounder"
+    "Backgrounder",
+    "Explainer"
   ],
   "angle_history": [
     "impact_on_citizens|artificial intelligence|Explainer",
@@ -275,6 +276,7 @@
     "policy_gap|IFMIS|Critical Take",
     "policy_gap|AI regulation|Africa Angle",
     "winners_losers|Communications Authority of Kenya|Hard News Lead",
-    "policy_gap|NTSA|Backgrounder"
+    "policy_gap|NTSA|Backgrounder",
+    "winners_losers|DCI|Explainer"
   ]
 }
