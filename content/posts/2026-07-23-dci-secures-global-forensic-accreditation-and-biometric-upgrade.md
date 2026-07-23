@@ -1,18 +1,20 @@
 ---
 title: "DCI Receives Global Forensic Accreditation and Upgrades Biometrics"
 slug: "dci-secures-global-forensic-accreditation-and-biometric-upgrade"
-description: "The DCI has secured international ANAB accreditation for its forensic lab and launched an upgraded biometric platform to improve case processing."
+description: "DCI Receives Global Forensic Accreditation and Upgrades Biometric: The DCI has secured international ANAB accreditation for its forensic lab and launched an"
+excerpt: "Will Your Police Clearance Finally Arrive on Time? The Directorate of Criminal Investigations has modernized its operations by securing ANAB"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/0PCsHLv/102546cd5897.jpg"
 category: "Technology"
 tags: ["dci", "kenya news", "forensics", "biometrics", "police clearance", "security"]
+canonical: "https://zandani.co.ke/article/dci-secures-global-forensic-accreditation-and-biometric-upgrade"
 date: "2026-07-23T12:50:10Z"
 dateModified: "2026-07-23T12:50:10Z"
+focusKeyword: "DCI Receives Global Forensic Accreditation and Upgrades Biometric"
 schema: "NewsArticle"
 ---
 
-## Will Your Police Clearance Finally Arrive on Time?
+## Will Your Police Clearance Finally Arrive on Time? DCI Receives Global Forensic Accreditation and Upgrades Biometric is the central subject of the update.
 
 The Directorate of Criminal Investigations has modernized its operations by securing ANAB forensic accreditation and deploying the Version 5 biometric identification system. For Kenyans who depend on the eCitizen platform for digital clearance certificates, these upgrades aim to resolve long-standing delays and improve the overall reliability of the application process.
 
