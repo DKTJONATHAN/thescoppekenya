@@ -1,18 +1,20 @@
 ---
 title: "National Assembly Denounces Fake Cabinet Vetting Document"
 slug: "national-assembly-denounces-fake-cabinet-vetting-document"
-description: "Parliament has officially dismissed a viral document claiming five Cabinet nominees are under EACC integrity vetting as fraudulent and unauthorized."
+description: "National Assembly Denounces Fake Cabinet Vetting Document: Parliament has officially dismissed a viral document claiming five Cabinet nominees are under EACC"
+excerpt: "Digital Sabotage Targets State Appointments The National Assembly has officially invalidated a viral document circulating online that purpor"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/JwgN2SmP/602dbea836b5.webp"
 category: "News"
 tags: ["kenya politics", "national assembly", "eacc", "cabinet nominees", "fake news"]
+canonical: "https://zandani.co.ke/article/national-assembly-denounces-fake-cabinet-vetting-document"
 date: "2026-07-23T18:20:14Z"
 dateModified: "2026-07-23T18:20:14Z"
+focusKeyword: "National Assembly Denounces Fake Cabinet Vetting Document"
 schema: "NewsArticle"
 ---
 
-## Digital Sabotage Targets State Appointments
+## Digital Sabotage Targets State Appointments National Assembly Denounces Fake Cabinet Vetting Document is the central subject of the update.
 
 The National Assembly has officially invalidated a viral document circulating online that purported to list five Cabinet nominees undergoing integrity checks by the Ethics and Anti-Corruption Commission. This fraudulent memo has triggered widespread public confusion regarding the current status of executive restructuring and the oversight role of constitutional institutions.
 
