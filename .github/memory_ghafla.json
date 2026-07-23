@@ -262,10 +262,10 @@
     "cd808370c0ffafb5c11d24612ae5376c",
     "86e0d4a37d7f2f60cad0df33aefcb3da",
     "aa4c8c8c0a3583c214735964108cc0f7",
-    "300d4960bedc9d8e680e900439332665"
+    "300d4960bedc9d8e680e900439332665",
+    "b202104bd0f9725beea571e87935b990"
   ],
   "style_history": [
-    "Receipts Piece",
     "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
@@ -294,10 +294,10 @@
     "Receipts Piece",
     "Reaction Round-up",
     "Hard News Lead",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "impact_on_citizens|Magix Enga|Reaction Round-up",
     "accountability|IEBC|Receipts Piece",
     "money_follow|entertainment|Trend Take",
     "accountability|website error|Hard News Lead",
@@ -376,6 +376,7 @@
     "policy_gap|Kenya Power|Receipts Piece",
     "money_follow|Drake|Reaction Round-up",
     "next_48_hours|Kenya|Hard News Lead",
-    "money_follow|Kenya Power|Trend Take"
+    "money_follow|Kenya Power|Trend Take",
+    "money_follow|Victor Kanyari|Profile Beat"
   ]
 }
