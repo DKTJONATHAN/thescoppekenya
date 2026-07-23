@@ -1,18 +1,20 @@
 ---
 title: "Pastor Victor Kanyari confronts employee over alleged theft"
 slug: "pastor-victor-kanyari-confronts-employee-over-alleged-theft"
-description: "Pastor Victor Kanyari has publicly confronted a staff member for allegedly stealing construction materials and vehicle parts from his property."
+description: "Pastor Victor Kanyari confronts employee over alleged theft: Pastor Victor Kanyari has publicly confronted a staff member for allegedly stealing construction"
+excerpt: "From Asset Liquidation to Scrap Metal Pennies A rusted bus skeleton resting on the Salvation Healing Ministry grounds stands as a somber mon"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/qFNyPrDT/0decef2d166a.jpg"
 category: "Gossip"
 tags: ["victor kanyari", "kenya news", "salvation healing ministry", "theft", "crime"]
+canonical: "https://zandani.co.ke/article/pastor-victor-kanyari-confronts-employee-over-alleged-theft"
 date: "2026-07-23T08:43:50Z"
 dateModified: "2026-07-23T08:43:50Z"
+focusKeyword: "Pastor Victor Kanyari confronts employee over alleged theft"
 schema: "NewsArticle"
 ---
 
-## From Asset Liquidation to Scrap Metal Pennies
+## From Asset Liquidation to Scrap Metal Pennies Pastor Victor Kanyari confronts employee over alleged theft is the central subject of the update.
 
 A rusted bus skeleton resting on the Salvation Healing Ministry grounds stands as a somber monument to a deepening crisis. While a viral video captured the raw emotion of a recent confrontation, the situation points to a far more clinical issue: the systematic draining of charitable resources. Behind the footage lies a harsh reality where essential project assets are being dismantled and funneled into the shadows of Kenya’s scrap metal trade.
 
