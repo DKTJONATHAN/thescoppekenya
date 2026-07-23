@@ -1,18 +1,20 @@
 ---
 title: "High Court finds Zacharia Obado guilty of Sharon Otieno murder"
 slug: "zacharia-obado-found-guilty-sharon-otieno-murder"
-description: "The High Court has convicted former Migori Governor Zacharia Obado and two others for the 2018 murder of student Sharon Otieno after a lengthy trial."
+description: "High Court finds Zacharia Obado guilty of Sharon Otieno murder: The High Court has convicted former Migori Governor Zacharia Obado and two others for the 2018"
+excerpt: "The Judicial Threshold: How the Obado Verdict Resets Kenya's Big Man Impunity Standards The conviction of Zacharia Okoth Obado for the murde"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/TFTpkSF/41e9b0564c98.webp"
 category: "News"
 tags: ["kenya", "migori", "judiciary", "crime", "sharon otieno", "zacharia obado"]
+canonical: "https://zandani.co.ke/article/zacharia-obado-found-guilty-sharon-otieno-murder"
 date: "2026-07-23T12:27:20Z"
 dateModified: "2026-07-23T12:27:20Z"
+focusKeyword: "High Court finds Zacharia Obado guilty of Sharon Otieno murder"
 schema: "NewsArticle"
 ---
 
-## The Judicial Threshold: How the Obado Verdict Resets Kenya's Big Man Impunity Standards
+## The Judicial Threshold: How the Obado Verdict Resets Kenya's Big Man Impunity Standards High Court finds Zacharia Obado guilty of Sharon Otieno murder is the central subject of the update.
 
 The conviction of Zacharia Okoth Obado for the murder of Sharon Otieno represents a fundamental shift in how the Kenyan judiciary confronts political dominance. By securing a guilty verdict against a former governor, the court has effectively dismantled a long standing protection shield.
 
