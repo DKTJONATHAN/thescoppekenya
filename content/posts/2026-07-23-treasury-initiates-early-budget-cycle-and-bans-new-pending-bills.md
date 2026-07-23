@@ -1,18 +1,20 @@
 ---
 title: "Treasury initiates early budget cycle and bans new pending bills"
 slug: "treasury-initiates-early-budget-cycle-and-bans-new-pending-bills"
-description: "The National Treasury has launched the budget preparation process early to improve fiscal management and enforce a strict ban on new pending bills across government departments."
+description: "Treasury initiates early budget cycle and bans new pending bills: The National Treasury has launched the budget preparation process early to improve fiscal"
+excerpt: "Fiscal discipline or an early electoral lock down? The National Treasury has fast tracked the 2027/28 budget preparation cycle, officially i"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/VYf4yqvc/ca4c25c2b1aa.jpg"
 category: "Business"
 tags: ["kenya", "national treasury", "budget preparation", "fiscal policy", "pending bills", "government finance"]
+canonical: "https://zandani.co.ke/article/treasury-initiates-early-budget-cycle-and-bans-new-pending-bills"
 date: "2026-07-23T07:42:59Z"
 dateModified: "2026-07-23T07:42:59Z"
+focusKeyword: "Treasury initiates early budget cycle and bans new pending bills"
 schema: "NewsArticle"
 ---
 
-## Fiscal discipline or an early electoral lock-down?
+## Fiscal discipline or an early electoral lock-down? Treasury initiates early budget cycle and bans new pending bills is the central subject of the update.
 
 The National Treasury has fast-tracked the 2027/28 budget preparation cycle, officially imposing a moratorium on the creation of new pending bills. While the directive cites improved fiscal oversight, the timing suggests a desperate attempt to throttle the pre-election spending surge that historically drains the public coffers.
 
