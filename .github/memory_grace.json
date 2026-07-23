@@ -199,10 +199,10 @@
     "3d2db203044ef4ef85c6005d3132ec0f",
     "6b46ee1547fbf781225f24143844d646",
     "cbe9e8746e51aa77773f6360762be0c5",
-    "f5af06abe2fcfde38fd3f12caaa7541f"
+    "f5af06abe2fcfde38fd3f12caaa7541f",
+    "c25251ca3268f597b330c7bf015d83af"
   ],
   "style_history": [
-    "Backgrounder",
     "Power Accountability",
     "Markets Report",
     "Explainer",
@@ -231,10 +231,10 @@
     "Explainer",
     "Backgrounder",
     "SME Angle",
-    "Markets Report"
+    "Markets Report",
+    "Power Accountability"
   ],
   "angle_history": [
-    "winners_losers|Finance Bill 2026|Explainer",
     "winners_losers|Asahi Group|SME Angle",
     "winners_losers|WPP Scangroup|Power Accountability",
     "money_follow|Banking|Markets Report",
@@ -313,6 +313,7 @@
     "policy_gap|Kenya Revenue Authority|Explainer",
     "money_follow|NSE|Backgrounder",
     "policy_gap|tax exemption|SME Angle",
-    "money_follow|Kenya|Markets Report"
+    "money_follow|Kenya|Markets Report",
+    "timeline_shift|Fiscal policy|Power Accountability"
   ]
 }
