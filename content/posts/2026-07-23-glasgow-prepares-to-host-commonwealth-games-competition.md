@@ -1,18 +1,20 @@
 ---
 title: "Glasgow Prepares to Host Commonwealth Games Competition"
 slug: "glasgow-prepares-to-host-commonwealth-games-competition"
-description: "Glasgow hosts the Commonwealth Games as athletes from Scotland, Wales, Northern Ireland, Jersey and Guernsey begin their pursuit of medals."
+description: "Glasgow Prepares to Host Commonwealth Games Competition: Glasgow hosts the Commonwealth Games as athletes from Scotland, Wales, Northern Ireland, Jersey and"
+excerpt: "Glasgow 2026: A Blueprint Kenya Cannot Afford to Ignore As Glasgow officially opens its doors for the 2026 Commonwealth Games, the disparity"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/c5Mykyh/bd4c825c20de.png"
 category: "Sports"
 tags: ["commonwealth games", "glasgow 2026", "sports news", "international sports", "athletic competition"]
+canonical: "https://zandani.co.ke/article/glasgow-prepares-to-host-commonwealth-games-competition"
 date: "2026-07-23T12:06:18Z"
 dateModified: "2026-07-23T12:06:18Z"
+focusKeyword: "Glasgow Prepares to Host Commonwealth Games Competition"
 schema: "NewsArticle"
 ---
 
-## Glasgow 2026: A Blueprint Kenya Cannot Afford to Ignore
+## Glasgow 2026: A Blueprint Kenya Cannot Afford to Ignore Glasgow Prepares to Host Commonwealth Games Competition is the central subject of the update.
 
 As Glasgow officially opens its doors for the 2026 Commonwealth Games, the disparity between Scottish multi-sport readiness and the dilapidated state of Kenyan facilities becomes impossible to ignore for those watching from Nairobi.
 
