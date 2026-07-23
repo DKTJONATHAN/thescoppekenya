@@ -356,10 +356,10 @@
     "f0a9040494898494ab628fd26da72260",
     "0100a633411ca6fe819def9a16153c8b",
     "4e635ff0569ccec791916c6fee2a9e71",
-    "f2956faa3b559bc19510147cda7b5788"
+    "f2956faa3b559bc19510147cda7b5788",
+    "2f9e2062fa3d9d1c151cddacb0c544f0"
   ],
   "style_history": [
-    "Explainer",
     "Power Accountability",
     "Hard News Lead",
     "Context Backgrounder",
@@ -388,10 +388,10 @@
     "Power Accountability",
     "Hard News Lead",
     "Explainer",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "winners_losers|TSC|Explainer",
     "policy_gap|Nairobi|Context Backgrounder",
     "story_progression|Kenya|Reaction & Voices",
     "timeline_shift|KRA|Hard News Lead",
@@ -470,6 +470,7 @@
     "policy_gap|Law Society of Kenya|Power Accountability",
     "accountability|Nairobi Rivers Commission|Hard News Lead",
     "myth_vs_fact|Boma Yangu|Explainer",
-    "winners_losers|Kenya politics|Reaction & Voices"
+    "winners_losers|Kenya politics|Reaction & Voices",
+    "policy_gap|Kenya|Context Backgrounder"
   ]
 }
