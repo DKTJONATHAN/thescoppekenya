@@ -1,18 +1,20 @@
 ---
 title: "Dismus Mokua outlines criteria for Ruto running mate selection"
 slug: "dismus-mokua-outlines-criteria-for-ruto-running-mate-selection"
-description: "Political analyst Dismus Mokua advises President William Ruto to prioritize loyalty and electoral strength in choosing a successor candidate."
+description: "Dismus Mokua outlines criteria for Ruto running mate selection: Political analyst Dismus Mokua advises President William Ruto to prioritize loyalty and"
+excerpt: "The Running Mate Mirage The assumption among Nairobi political elites is that President William Ruto can secure his 2027 reelection by simpl"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/mrrTs1zx/d1155d9429a2.webp"
 category: "Opinions"
 tags: ["kenyan politics", "william ruto", "rigathi gachagua", "2027 election", "uda party"]
+canonical: "https://zandani.co.ke/article/dismus-mokua-outlines-criteria-for-ruto-running-mate-selection"
 date: "2026-07-23T11:20:12Z"
 dateModified: "2026-07-23T11:20:12Z"
+focusKeyword: "Dismus Mokua outlines criteria for Ruto running mate selection"
 schema: "NewsArticle"
 ---
 
-## The Running Mate Mirage
+## The Running Mate Mirage Dismus Mokua outlines criteria for Ruto running mate selection is the central subject of the update.
 
 The assumption among Nairobi political elites is that President William Ruto can secure his 2027 reelection by simply replacing his deputy with a more compliant figure from the Mount Kenya region. This perspective is fundamentally flawed. It treats a deep structural fracture as if it were a minor human resources issue.
 
