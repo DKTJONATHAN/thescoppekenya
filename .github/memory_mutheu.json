@@ -321,10 +321,10 @@
     "c122d95e161fd51e5bb03278b0bdc171",
     "9e36db97c61ca27629f9b06f48bdeb42",
     "18cb7f78518e810659ddbd6da9cbc089",
-    "c51560a51d74eb00882a7878236bef61"
+    "c51560a51d74eb00882a7878236bef61",
+    "e0ed7eb76c7bb9c13c0aa8ac006f55d8"
   ],
   "style_history": [
-    "Profile Beat",
     "Trend Take",
     "Reaction Round-up",
     "Hard News Lead",
@@ -353,10 +353,10 @@
     "Explainer",
     "Trend Take",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Profile Beat"
   ],
   "angle_history": [
-    "accountability|na|Explainer",
     "policy_gap|na|Profile Beat",
     "winners_losers|na|Reaction Round-up",
     "myth_vs_fact|na|Trend Take",
@@ -435,6 +435,7 @@
     "money_follow|na|Explainer",
     "accountability|murder case|Trend Take",
     "policy_gap|World Cup final|Hard News Lead",
-    "winners_losers|Celebrity family|Reaction Round-up"
+    "winners_losers|Celebrity family|Reaction Round-up",
+    "winners_losers|television|Profile Beat"
   ]
 }
