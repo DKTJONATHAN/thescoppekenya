@@ -1,18 +1,20 @@
 ---
 title: "Kenya Monitors Middle East Tensions Affecting Diaspora Citizens"
 slug: "kenya-monitors-middle-east-tensions-affecting-diaspora-citizens"
-description: "Kenya is monitoring regional security as Western nations issue travel alerts for the Middle East, where over 500,000 Kenyan citizens currently reside."
+description: "Kenya Monitors Middle East Tensions Affecting Diaspora Citizens: Kenya is monitoring regional security as Western nations issue travel alerts for the Middle"
+excerpt: "Assessing Kenya's Safety Net for Diaspora Citizens Western embassies are scaling back diplomatic presence and warning citizens to exit parts"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/4wYcnyKR/60f9415002ba.jpg"
 category: "News"
 tags: ["kenya", "diaspora", "middle-east", "travel-advisory", "foreign-affairs", "security"]
+canonical: "https://zandani.co.ke/article/kenya-monitors-middle-east-tensions-affecting-diaspora-citizens"
 date: "2026-07-24T07:36:27Z"
 dateModified: "2026-07-24T07:36:27Z"
+focusKeyword: "Kenya Monitors Middle East Tensions Affecting Diaspora Citizens"
 schema: "NewsArticle"
 ---
 
-## Assessing Kenya's Safety Net for Diaspora Citizens
+## Assessing Kenya's Safety Net for Diaspora Citizens Kenya Monitors Middle East Tensions Affecting Diaspora Citizens is the central subject of the update.
 
 Western embassies are scaling back diplomatic presence and warning citizens to exit parts of the Middle East, leaving many Kenyan families wondering if the state has a concrete evacuation plan for the half-million workers currently residing in the region.
 
