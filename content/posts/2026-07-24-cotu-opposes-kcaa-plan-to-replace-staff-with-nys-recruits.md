@@ -1,18 +1,20 @@
 ---
 title: "COTU Opposes KCAA Plan to Replace Permanent Staff with NYS Recruits"
 slug: "cotu-opposes-kcaa-plan-to-replace-staff-with-nys-recruits"
-description: "COTU has formally challenged the Kenya Civil Aviation Authority over plans to replace permanent aviation workers with National Youth Service recruits."
+description: "COTU Opposes KCAA Plan to Replace Permanent Staff with NYS Recrui: COTU has formally challenged the Kenya Civil Aviation Authority over plans to replace"
+excerpt: "The Quiet Erasure of Expertise at the KCAA The Kenya Civil Aviation Authority is quietly flirting with a staffing model that threatens to tu"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/5hGs1cD0/19935d318d26.webp"
 category: "News"
 tags: ["cotu", "kcaa", "nys", "labor rights", "aviation news", "kenya"]
+canonical: "https://zandani.co.ke/article/cotu-opposes-kcaa-plan-to-replace-staff-with-nys-recruits"
 date: "2026-07-24T12:23:51Z"
 dateModified: "2026-07-24T12:23:51Z"
+focusKeyword: "COTU Opposes KCAA Plan to Replace Permanent Staff with NYS Recrui"
 schema: "NewsArticle"
 ---
 
-## The Quiet Erasure of Expertise at the KCAA
+## The Quiet Erasure of Expertise at the KCAA COTU Opposes KCAA Plan to Replace Permanent Staff with NYS Recrui is the central subject of the update.
 
 The Kenya Civil Aviation Authority is quietly flirting with a staffing model that threatens to turn the national tarmac into a training ground. By entertaining the replacement of seasoned technical professionals with National Youth Service recruits, the regulator is trading safety for a fragile, low-cost veneer of efficiency.
 
