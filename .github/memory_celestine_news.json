@@ -360,10 +360,10 @@
     "2f9e2062fa3d9d1c151cddacb0c544f0",
     "26ef6bbc794df958d2d9b636e5ea8d51",
     "b0cb77d1fe03ba90d5e6dbaf06bd556d",
-    "6c45f405eb1222787afa05b37f9cdfeb"
+    "6c45f405eb1222787afa05b37f9cdfeb",
+    "19447de151168d58b9081b0ef886160b"
   ],
   "style_history": [
-    "Explainer",
     "Power Accountability",
     "Reaction & Voices",
     "Hard News Lead",
@@ -392,10 +392,10 @@
     "Context Backgrounder",
     "Hard News Lead",
     "Explainer",
-    "Power Accountability"
+    "Power Accountability",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "winners_losers|Kenya Politics|Power Accountability",
     "myth_vs_fact|KMPDU|Explainer",
     "next_48_hours|abductions|Reaction & Voices",
     "timeline_shift|National Police Service|Context Backgrounder",
@@ -474,6 +474,7 @@
     "policy_gap|Kenya|Context Backgrounder",
     "myth_vs_fact|National Assembly|Hard News Lead",
     "policy_gap|Kenya|Explainer",
-    "policy_gap|COTU|Power Accountability"
+    "policy_gap|COTU|Power Accountability",
+    "next_48_hours|BATUK|Reaction & Voices"
   ]
 }
