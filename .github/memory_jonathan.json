@@ -190,10 +190,10 @@
     "f16b06b7a479e818098a4bfe8e95b3e9",
     "e5f6422a2e1b055398616a7b1a4f9b2d",
     "5c321b82cc6f3e76a9131c1125affb2f",
-    "f2a46116547816b0550f23323d1db897"
+    "f2a46116547816b0550f23323d1db897",
+    "749020edeb7ea5740637680bc5004b77"
   ],
   "style_history": [
-    "Counterpoint",
     "Sharp Column",
     "Historical Lens",
     "Letter Form",
@@ -222,10 +222,10 @@
     "Sharp Column",
     "Historical Lens",
     "Personal Reflection",
-    "Counterpoint"
+    "Counterpoint",
+    "Letter Form"
   ],
   "angle_history": [
-    "accountability|GBV|Letter Form",
     "myth_vs_fact|Social Health Authority|Counterpoint",
     "winners_losers|education|Sharp Column",
     "impact_on_citizens|ASAL|Personal Reflection",
@@ -304,6 +304,7 @@
     "accountability|Ugandan politics|Sharp Column",
     "timeline_shift|Pharmacy and Poisons Board|Historical Lens",
     "winners_losers|state-led capitalism|Personal Reflection",
-    "myth_vs_fact|Kenyan politics|Counterpoint"
+    "myth_vs_fact|Kenyan politics|Counterpoint",
+    "story_progression|diplomacy|Letter Form"
   ]
 }
