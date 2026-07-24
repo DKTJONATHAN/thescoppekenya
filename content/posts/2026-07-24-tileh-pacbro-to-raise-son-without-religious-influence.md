@@ -1,18 +1,20 @@
 ---
 title: "Tileh Pacbro to raise son without religious influence"
 slug: "tileh-pacbro-to-raise-son-without-religious-influence"
-description: "Content creator Tileh Pacbro explains his decision to avoid religious upbringing for his son to prevent passing on his own childhood trauma."
+description: "Tileh Pacbro to raise son without religious influence: Content creator Tileh Pacbro explains his decision to avoid religious upbringing for his son to prevent"
+excerpt: "A Quiet Rebellion at Home Tileh Pacbro is moving away from the rigid expectations of his past, choosing to raise his son outside the religio"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/JjnG5GsY/bb77d5115d8a.webp"
 category: "Gossip"
 tags: ["tileh pacbro", "kenyan influencers", "parenting", "kenyan podcasts", "childhood trauma"]
+canonical: "https://zandani.co.ke/article/tileh-pacbro-to-raise-son-without-religious-influence"
 date: "2026-07-24T10:29:43Z"
 dateModified: "2026-07-24T10:29:43Z"
+focusKeyword: "Tileh Pacbro to raise son without religious influence"
 schema: "NewsArticle"
 ---
 
-## A Quiet Rebellion at Home
+## A Quiet Rebellion at Home Tileh Pacbro to raise son without religious influence is the central subject of the update.
 
 Tileh Pacbro is moving away from the rigid expectations of his past, choosing to raise his son outside the religious framework that defined his own formative years. In Kenya, where faith frequently serves as the bedrock of family life, this shift represents a quiet but profound departure from long-standing tradition.
 
