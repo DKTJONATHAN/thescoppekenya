@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Announces Scheduled Outages in Nairobi, Uasin Gishu"
 slug: "kenya-power-scheduled-outages-nairobi-uasin-gishu-nyeri"
-description: "Kenya Power has scheduled network maintenance for July 24, affecting electricity supply in parts of Nairobi, Uasin Gishu, and Nyeri counties."
+description: "Kenya Power Announces Scheduled Outages in Nairobi, Uasin Gishu: Kenya Power has scheduled network maintenance for July 24, affecting electricity supply in"
+excerpt: "The Switch Off That Shakes The Market Floor Kenya Power has plunged parts of Nairobi, Uasin Gishu, and Nyeri into a Friday of intense frustr"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/B2kvM6G6/f6f3f3c91490.jpg"
 category: "Gossip"
 tags: ["kenya power", "power outage", "nairobi", "uasin gishu", "nyeri", "utility services", "kenya news"]
+canonical: "https://zandani.co.ke/article/kenya-power-scheduled-outages-nairobi-uasin-gishu-nyeri"
 date: "2026-07-24T08:40:20Z"
 dateModified: "2026-07-24T08:40:20Z"
+focusKeyword: "Kenya Power Announces Scheduled Outages in Nairobi, Uasin Gishu"
 schema: "NewsArticle"
 ---
 
-## The Switch-Off That Shakes The Market Floor
+## The Switch-Off That Shakes The Market Floor Kenya Power Announces Scheduled Outages in Nairobi, Uasin Gishu is the central subject of the update.
 
 Kenya Power has plunged parts of Nairobi, Uasin Gishu, and Nyeri into a Friday of intense frustration. Scheduled maintenance work has arrived with the force of a disruption, forcing small-scale traders to scramble to preserve their perishables while local institutions tally the financial damage caused by the sudden absence of a steady current.
 
