@@ -1,7 +1,8 @@
 ---
 title: "Edwin Sifuna and New Generation Challenge Oburu Odinga for Influence in ODM"
 slug: "edwin-sifuna-and-new-generation-challenge-oburu-odinga-for-influence"
-description: "Senator Edwin Sifuna and the Linda Mwananchi faction are challenging Oburu Odinga's influence, marking a generational shift within the ODM party ranks."
+description: "Edwin Sifuna and New Generation Challenge Oburu Odinga for Influe: Senator Edwin Sifuna and the Linda Mwananchi faction are challenging Oburu Odinga's"
+excerpt: "Internal friction within the Orange Democratic Movement and the Azimio coalition reached a breaking point in July 2026. As grassroots suppor"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/vKGDP9K/563165303813.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["edwin-sifuna", "oburu-odinga", "odm-party-politics", "kenyan-political-influence", "raila-odinga-succession"]
 canonical: "https://zandani.co.ke/article/edwin-sifuna-and-new-generation-challenge-oburu-odinga-for-influence"
 date: "2026-07-24T14:11:11Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-24T14:11:11Z"
+focusKeyword: "Edwin Sifuna and New Generation Challenge Oburu Odinga for Influe"
 schema: "NewsArticle"
 ---
-Internal friction within the Orange Democratic Movement and the Azimio coalition reached a breaking point in July 2026. As grassroots support shifts toward Senator Edwin Sifuna and the Linda Mwananchi faction, the influence of veteran stalwarts like Oburu Odinga faces an unprecedented challenge.
+
+Internal friction within the Orange Democratic Movement and the Azimio coalition reached a breaking point in July 2026. As grassroots support shifts toward Senator Edwin Sifuna and the Linda Mwananchi faction, the influence of veteran stalwarts like Oburu Odinga faces an unprecedented challenge. Edwin Sifuna and New Generation Challenge Oburu Odinga for Influe is the central subject of the update.
 
 ## A Generational Divide Within ODM
 
