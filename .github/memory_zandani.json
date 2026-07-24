@@ -328,10 +328,10 @@
     "4b5845f566bea3df08bab82c5dd917f4",
     "356e5016c527640123e985ab6ce6ef9b",
     "58b2fa8bb53c41751505788c845fd1f9",
-    "97333be956b9bcbdb914cb341c11e983"
+    "97333be956b9bcbdb914cb341c11e983",
+    "293f992ed6ff785bd9ca99bf13685fe7"
   ],
   "style_history": [
-    "Receipts Piece",
     "Trend Take",
     "Hard News Lead",
     "Profile Beat",
@@ -360,10 +360,10 @@
     "Profile Beat",
     "Reaction Round-up",
     "Hard News Lead",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Profile Beat"
   ],
   "angle_history": [
-    "myth_vs_fact|Andrew Kibe|Trend Take",
     "money_follow|Matatu industry|Reaction Round-up",
     "myth_vs_fact|Kenya|Hard News Lead",
     "policy_gap|NACADA|Receipts Piece",
@@ -442,6 +442,7 @@
     "accountability|content creators|Profile Beat",
     "winners_losers|Kenya|Reaction Round-up",
     "accountability|digital forensics|Hard News Lead",
-    "money_follow|cohabitation|Receipts Piece"
+    "money_follow|cohabitation|Receipts Piece",
+    "story_progression|parenting|Profile Beat"
   ]
 }
