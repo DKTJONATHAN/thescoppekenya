@@ -1,18 +1,20 @@
 ---
 title: "Roberto de Zerbi demands total commitment from Tottenham squad"
 slug: "roberto-de-zerbi-demands-commitment-from-tottenham-squad"
-description: "Tottenham manager Roberto de Zerbi has warned players to leave if they lack motivation as the club navigates major transfer dealings and injuries."
+description: "Roberto de Zerbi demands total commitment from Tottenham squad: Tottenham manager Roberto de Zerbi has warned players to leave if they lack motivation as the"
+excerpt: "The De Zerbi Doctrine: Why Tottenham's Ruthless Vibe Check Is a Tactical Gamble Roberto De Zerbi has delivered a blunt message to the Totten"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/154g2m0/ba12aefae2ab.jpg"
 category: "Sports"
 tags: ["tottenham hotspur", "premier league", "football transfers", "roberto de zerbi", "international football", "sports news"]
+canonical: "https://zandani.co.ke/article/roberto-de-zerbi-demands-commitment-from-tottenham-squad"
 date: "2026-07-25T11:39:45Z"
 dateModified: "2026-07-25T11:39:45Z"
+focusKeyword: "Roberto de Zerbi demands total commitment from Tottenham squad"
 schema: "NewsArticle"
 ---
 
-## The De Zerbi Doctrine: Why Tottenham's Ruthless Vibe Check Is a Tactical Gamble
+## The De Zerbi Doctrine: Why Tottenham's Ruthless Vibe Check Is a Tactical Gamble Roberto de Zerbi demands total commitment from Tottenham squad is the central subject of the update.
 
 Roberto De Zerbi has delivered a blunt message to the Tottenham Hotspur dressing room: emotional buy-in is now the primary condition for selection. By forcing his squad to choose between absolute dedication and an immediate departure, the manager is wagering that a perfectly synchronized group of believers will provide more value than a collection of talented individuals whose focus has wavered.
 
