@@ -191,10 +191,10 @@
     "e5f6422a2e1b055398616a7b1a4f9b2d",
     "5c321b82cc6f3e76a9131c1125affb2f",
     "f2a46116547816b0550f23323d1db897",
-    "749020edeb7ea5740637680bc5004b77"
+    "749020edeb7ea5740637680bc5004b77",
+    "1357d25c18fe232bfef1106959416e8a"
   ],
   "style_history": [
-    "Sharp Column",
     "Historical Lens",
     "Letter Form",
     "Personal Reflection",
@@ -223,10 +223,10 @@
     "Historical Lens",
     "Personal Reflection",
     "Counterpoint",
-    "Letter Form"
+    "Letter Form",
+    "Sharp Column"
   ],
   "angle_history": [
-    "myth_vs_fact|Social Health Authority|Counterpoint",
     "winners_losers|education|Sharp Column",
     "impact_on_citizens|ASAL|Personal Reflection",
     "timeline_shift|geothermal energy|Historical Lens",
@@ -305,6 +305,7 @@
     "timeline_shift|Pharmacy and Poisons Board|Historical Lens",
     "winners_losers|state-led capitalism|Personal Reflection",
     "myth_vs_fact|Kenyan politics|Counterpoint",
-    "story_progression|diplomacy|Letter Form"
+    "story_progression|diplomacy|Letter Form",
+    "winners_losers|Kenya|Sharp Column"
   ]
 }
