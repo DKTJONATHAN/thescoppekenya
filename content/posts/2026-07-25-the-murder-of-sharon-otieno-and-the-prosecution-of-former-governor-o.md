@@ -1,7 +1,8 @@
 ---
 title: "The Murder of Sharon Otieno and the Prosecution of Former Governor Okoth Obado"
 slug: "the-murder-of-sharon-otieno-and-the-prosecution-of-former-governor-o"
-description: "Explore the tragic 2018 murder of Sharon Otieno and the ongoing prosecution of former Governor Okoth Obado, exposing intersections of power and violence."
+description: "The Murder of Sharon Otieno and the Prosecution of Former Governo: Explore the tragic 2018 murder of Sharon Otieno and the ongoing prosecution of former"
+excerpt: "In September 2018, Rongo University student Sharon Otieno was abducted and murdered alongside her unborn child in Migori, Kenya. The subsequ"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/N2vv934V/8e614a72cb93.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["sharon-otieno", "okoth-obado", "migori-murder-case", "kenyan-true-crime", "high-profile-prosecution"]
 canonical: "https://zandani.co.ke/article/the-murder-of-sharon-otieno-and-the-prosecution-of-former-governor-o"
 date: "2026-07-25T14:01:15Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-25T14:01:15Z"
+focusKeyword: "The Murder of Sharon Otieno and the Prosecution of Former Governo"
 schema: "NewsArticle"
 ---
-In September 2018, Rongo University student Sharon Otieno was abducted and murdered alongside her unborn child in Migori, Kenya. The subsequent prosecution of former Migori Governor Okoth Obado for these crimes exposed the dangerous intersections of political influence, illicit affairs, and lethal violence.
+
+In September 2018, Rongo University student Sharon Otieno was abducted and murdered alongside her unborn child in Migori, Kenya. The subsequent prosecution of former Migori Governor Okoth Obado for these crimes exposed the dangerous intersections of political influence, illicit affairs, and lethal violence. The Murder of Sharon Otieno and the Prosecution of Former Governo is the central subject of the update.
 
 ## The Tragic Case of Sharon Otieno and Okoth Obado
 
