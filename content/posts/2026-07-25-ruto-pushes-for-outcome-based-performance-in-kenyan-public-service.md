@@ -1,18 +1,20 @@
 ---
 title: "Ruto Pushes for Outcome-Based Performance in Kenyan Public Service"
 slug: "ruto-pushes-for-outcome-based-performance-in-kenyan-public-service"
-description: "President William Ruto is calling for a shift in the public sector from monitoring attendance to measuring citizen outcomes and service efficiency."
+description: "Ruto Pushes for Outcome-Based Performance in Kenyan Public Servic: President William Ruto is calling for a shift in the public sector from monitoring"
+excerpt: "The Death of the Bureaucratic Squatter President William Ruto’s recent push for an outcome based public service marks the beginning of a col"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/XZP2nYHD/1b28f4aac0ce.webp"
 category: "Opinions"
 tags: ["kenya", "public service reform", "william ruto", "government news", "digital transformation", "meritocracy"]
+canonical: "https://zandani.co.ke/article/ruto-pushes-for-outcome-based-performance-in-kenyan-public-service"
 date: "2026-07-25T10:43:43Z"
 dateModified: "2026-07-25T10:43:43Z"
+focusKeyword: "Ruto Pushes for Outcome-Based Performance in Kenyan Public Servic"
 schema: "NewsArticle"
 ---
 
-## The Death of the Bureaucratic Squatter
+## The Death of the Bureaucratic Squatter Ruto Pushes for Outcome-Based Performance in Kenyan Public Servic is the central subject of the update.
 
 President William Ruto’s recent push for an outcome-based public service marks the beginning of a cold war within government offices where the traditional clock-in culture is finally losing its grip on the Kenyan taxpayer's resources and patience.
 
