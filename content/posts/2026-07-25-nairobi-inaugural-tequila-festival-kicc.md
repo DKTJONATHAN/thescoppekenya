@@ -1,18 +1,20 @@
 ---
 title: "Nairobi Hosts Inaugural Tequila Festival at KICC This Saturday"
 slug: "nairobi-inaugural-tequila-festival-kicc"
-description: "Experience premium spirit tasting and curated musical performances at the inaugural tequila festival held at the KICC Event Grounds this July 25."
+description: "Nairobi Hosts Inaugural Tequila Festival at KICC This Saturday: Experience premium spirit tasting and curated musical performances at the inaugural tequila"
+excerpt: "Nairobi’s New Standard for Spirits Nairobi’s nightlife is undergoing a fundamental identity crisis, and it is resolving through agave. This"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/HDzMLP4M/54918f3167e8.webp"
 category: "Gossip"
 tags: ["nairobi events", "tequila festival", "kicc events", "kenyan entertainment", "nairobi nightlife"]
+canonical: "https://zandani.co.ke/article/nairobi-inaugural-tequila-festival-kicc"
 date: "2026-07-25T10:00:59Z"
 dateModified: "2026-07-25T10:00:59Z"
+focusKeyword: "Nairobi Hosts Inaugural Tequila Festival at KICC This Saturday"
 schema: "NewsArticle"
 ---
 
-## Nairobi’s New Standard for Spirits
+## Nairobi’s New Standard for Spirits Nairobi Hosts Inaugural Tequila Festival at KICC This Saturday is the central subject of the update.
 
 Nairobi’s nightlife is undergoing a fundamental identity crisis, and it is resolving through agave. This Saturday, the KICC grounds host an inaugural tequila festival, transforming 7,500 square metres into an upscale playground for refined drinkers. By pivoting away from the frantic, high-volume culture that previously defined the city’s spirit scene, this event marks a bold transition toward a sophisticated, measured approach to nightlife that is rewriting the rules of the weekend.
 
