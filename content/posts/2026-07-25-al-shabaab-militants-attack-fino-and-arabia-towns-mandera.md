@@ -1,18 +1,20 @@
 ---
 title: "Al-Shabaab militants attack Fino and Arabia towns in Mandera"
 slug: "al-shabaab-militants-attack-fino-and-arabia-towns-mandera"
-description: "Suspected Al-Shabaab militants launched coordinated attacks on Fino and Arabia towns in Mandera, leaving a child injured amid heightened security concerns."
+description: "Al-Shabaab militants attack Fino and Arabia towns in Mandera: Suspected Al-Shabaab militants launched coordinated attacks on Fino and Arabia towns in Mandera,"
+excerpt: "The Fading Classroom in Mandera The recent coordinated strikes on Fino and Arabia towns are merely the loud echo of a quiet disappearance oc"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Kjg90S60/79d937f8fa25.webp"
 category: "News"
 tags: ["mandera", "al-shabaab", "kenya security", "lafey", "terrorism", "za ndani"]
+canonical: "https://zandani.co.ke/article/al-shabaab-militants-attack-fino-and-arabia-towns-mandera"
 date: "2026-07-25T07:22:41Z"
 dateModified: "2026-07-25T07:22:41Z"
+focusKeyword: "Al-Shabaab militants attack Fino and Arabia towns in Mandera"
 schema: "NewsArticle"
 ---
 
-## The Fading Classroom in Mandera
+## The Fading Classroom in Mandera Al-Shabaab militants attack Fino and Arabia towns in Mandera is the central subject of the update.
 
 The recent coordinated strikes on Fino and Arabia towns are merely the loud echo of a quiet disappearance occurring long before the first bullet was fired. While regional security forces focus on the immediate exchange of fire and the unfortunate injury of a teacher's child, the true crisis lies in the hollowed-out school desks of Lafey Constituency.
 
