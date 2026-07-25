@@ -1,18 +1,20 @@
 ---
 title: "KeNHA announces month long partial closure of Waiyaki Way"
 slug: "kenha-announces-partial-waiyaki-way-closure"
-description: "KeNHA has announced a partial closure of Mombasa bound lanes on Waiyaki Way to facilitate a Ksh4.5 billion road maintenance project ending in August."
+description: "KeNHA announces month long partial closure of Waiyaki Way: KeNHA has announced a partial closure of Mombasa bound lanes on Waiyaki Way to facilitate a Ksh4.5"
+excerpt: "Nairobi Transit Shifts as Major Arteries Face Partial Shutdown The Kenya National Highways Authority will close specific Mombasa bound lanes"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/fd57GYjw/d89d4654b7c1.webp"
 category: "News"
 tags: ["nairobi", "kenha", "waiyaki way", "road maintenance", "nairobi traffic", "infrastructure"]
+canonical: "https://zandani.co.ke/article/kenha-announces-partial-waiyaki-way-closure"
 date: "2026-07-25T12:05:20Z"
 dateModified: "2026-07-25T12:05:20Z"
+focusKeyword: "KeNHA announces month long partial closure of Waiyaki Way"
 schema: "NewsArticle"
 ---
 
-## Nairobi Transit Shifts as Major Arteries Face Partial Shutdown
+## Nairobi Transit Shifts as Major Arteries Face Partial Shutdown KeNHA announces month long partial closure of Waiyaki Way is the central subject of the update.
 
 The Kenya National Highways Authority will close specific Mombasa-bound lanes on Waiyaki Way from July 31 to August 31, 2026, forcing thousands of daily commuters to find alternative routes as part of a high-stakes infrastructure upgrade.
 
