@@ -361,10 +361,10 @@
     "26ef6bbc794df958d2d9b636e5ea8d51",
     "b0cb77d1fe03ba90d5e6dbaf06bd556d",
     "6c45f405eb1222787afa05b37f9cdfeb",
-    "19447de151168d58b9081b0ef886160b"
+    "19447de151168d58b9081b0ef886160b",
+    "2f9bbc147db552955aeb35dbfd72df02"
   ],
   "style_history": [
-    "Power Accountability",
     "Reaction & Voices",
     "Hard News Lead",
     "Explainer",
@@ -393,10 +393,10 @@
     "Hard News Lead",
     "Explainer",
     "Power Accountability",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "myth_vs_fact|KMPDU|Explainer",
     "next_48_hours|abductions|Reaction & Voices",
     "timeline_shift|National Police Service|Context Backgrounder",
     "money_follow|Isiolo gubernatorial race|Power Accountability",
@@ -475,6 +475,7 @@
     "myth_vs_fact|National Assembly|Hard News Lead",
     "policy_gap|Kenya|Explainer",
     "policy_gap|COTU|Power Accountability",
-    "next_48_hours|BATUK|Reaction & Voices"
+    "next_48_hours|BATUK|Reaction & Voices",
+    "timeline_shift|Mandera|Context Backgrounder"
   ]
 }
