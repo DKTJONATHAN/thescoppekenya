@@ -254,10 +254,10 @@
     "f76f57312e3eadf1ed49ad18fd5e39df",
     "b72479dd5c1c2358d799ad01ebe2a9c5",
     "bd96992a509c820c704a42e5c28d872e",
-    "f91508dca40635bdf6aedfd044232d7b"
+    "f91508dca40635bdf6aedfd044232d7b",
+    "7a0dba3cbf150638b2b407ed63e4143c"
   ],
   "style_history": [
-    "Stat Story",
     "Player Profile Beat",
     "Tactical Take",
     "Cynical Pundit",
@@ -286,10 +286,10 @@
     "Stat Story",
     "Match Report",
     "Player Profile Beat",
-    "Tactical Take"
+    "Tactical Take",
+    "Cynical Pundit"
   ],
   "angle_history": [
-    "money_follow|Champions League|Cynical Pundit",
     "myth_vs_fact|Women's Super League|Stat Story",
     "policy_gap|football|Tactical Take",
     "money_follow|Hull City|Match Report",
@@ -368,6 +368,7 @@
     "money_follow|football|Stat Story",
     "policy_gap|Commonwealth Games|Match Report",
     "accountability|Jurgen Klopp|Player Profile Beat",
-    "policy_gap|Tottenham Hotspur|Tactical Take"
+    "policy_gap|Tottenham Hotspur|Tactical Take",
+    "accountability|Liverpool FC|Cynical Pundit"
   ]
 }
