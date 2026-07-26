@@ -1,18 +1,20 @@
 ---
 title: "DCI Seizes 3,500 Bags of Counterfeit Fertiliser in Uasin Gishu"
 slug: "dci-seizes-counterfeit-fertiliser-in-uasin-gishu"
-description: "Detectives have arrested three suspects in Uasin Gishu after seizing 3,500 bags of fake fertiliser as part of an intensified crackdown on illicit goods."
+description: "DCI Seizes 3,500 Bags of Counterfeit Fertiliser in Uasin Gishu: Detectives have arrested three suspects in Uasin Gishu after seizing 3,500 bags of fake"
+excerpt: "Farmers Demand Justice Over Fertilizer Fraud 'If the soil is poisoned, our children starve by December,' is the bitter refrain echoing acros"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/RpGf6qTP/ce9f018e8797.jpg"
 category: "News"
 tags: ["dci", "uasin gishu", "counterfeit fertiliser", "agriculture", "kenya news", "crime"]
+canonical: "https://zandani.co.ke/article/dci-seizes-counterfeit-fertiliser-in-uasin-gishu"
 date: "2026-07-26T07:39:07Z"
 dateModified: "2026-07-26T07:39:07Z"
+focusKeyword: "DCI Seizes 3,500 Bags of Counterfeit Fertiliser in Uasin Gishu"
 schema: "NewsArticle"
 ---
 
-## Farmers Demand Justice Over Fertilizer Fraud
+## Farmers Demand Justice Over Fertilizer Fraud DCI Seizes 3,500 Bags of Counterfeit Fertiliser in Uasin Gishu is the central subject of the update.
 
 "If the soil is poisoned, our children starve by December," is the bitter refrain echoing across the villages of Soy and Moiben. For thousands of families who invested their last savings into the current planting season, the news of counterfeit agricultural inputs has morphed from a police report into a personal existential threat.
 
