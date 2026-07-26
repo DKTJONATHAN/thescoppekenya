@@ -366,10 +366,10 @@
     "b57b8a7f44c4cc4bf9aae51b315dd59b",
     "7a6c0cd9de49b79d2983066c5f5eee97",
     "f95417e0f14d22e70e4ec48bad1e0ada",
-    "e010220f36d913ddb30dfcecec056c6f"
+    "e010220f36d913ddb30dfcecec056c6f",
+    "1a18642c20cce2a00a7ed46c213e7f31"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Reaction & Voices",
     "Explainer",
     "Hard News Lead",
@@ -398,10 +398,10 @@
     "Hard News Lead",
     "Power Accountability",
     "Reaction & Voices",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "story_progression|Kenya|Reaction & Voices",
     "money_follow|higher education|Hard News Lead",
     "money_follow|manufacturing|Power Accountability",
     "winners_losers|SHA|Context Backgrounder",
@@ -480,6 +480,7 @@
     "money_follow|KeNHA|Hard News Lead",
     "policy_gap|police reform|Power Accountability",
     "winners_losers|DCI|Reaction & Voices",
-    "money_follow|coffee farming|Context Backgrounder"
+    "money_follow|coffee farming|Context Backgrounder",
+    "policy_gap|EAC|Hard News Lead"
   ]
 }
