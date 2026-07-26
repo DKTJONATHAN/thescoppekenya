@@ -265,10 +265,10 @@
     "300d4960bedc9d8e680e900439332665",
     "b202104bd0f9725beea571e87935b990",
     "d100daab77e1def69675e5894bf37cc1",
-    "31963f1898387054461fb0c9193466b8"
+    "31963f1898387054461fb0c9193466b8",
+    "242f22645b3302b7aae31e714ca1712c"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Receipts Piece",
     "Trend Take",
@@ -297,10 +297,10 @@
     "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Trend Take"
   ],
   "angle_history": [
-    "accountability|website error|Hard News Lead",
     "money_follow|aviation|Profile Beat",
     "money_follow|village elders|Reaction Round-up",
     "winners_losers|Kenyan Politics|Trend Take",
@@ -379,6 +379,7 @@
     "money_follow|Kenya Power|Trend Take",
     "money_follow|Victor Kanyari|Profile Beat",
     "story_progression|Kenya Power|Reaction Round-up",
-    "winners_losers|Kenya|Hard News Lead"
+    "winners_losers|Kenya|Hard News Lead",
+    "policy_gap|human trafficking|Trend Take"
   ]
 }
