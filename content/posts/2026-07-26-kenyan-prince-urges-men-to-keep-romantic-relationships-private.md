@@ -1,18 +1,20 @@
 ---
 title: "Kenyan Prince Advises Men to Keep Romantic Relationships Private"
 slug: "kenyan-prince-urges-men-to-keep-romantic-relationships-private"
-description: "Social media personality Kenyan Prince has urged men to stop sharing intimate relationship details online, calling the trend immature and disrespectful."
+description: "Kenyan Prince Advises Men to Keep Romantic Relationships Private: Social media personality Kenyan Prince has urged men to stop sharing intimate relationship"
+excerpt: "The Digital Code of Silence Social media personality Kenyan Prince officially challenged the prevailing culture of oversharing today, urging"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/LXw5DvWd/f6d7aa2b81af.webp"
 category: "Gossip"
 tags: ["kenyan prince", "relationships", "social media", "kenyan influencers", "privacy", "digital ethics"]
+canonical: "https://zandani.co.ke/article/kenyan-prince-urges-men-to-keep-romantic-relationships-private"
 date: "2026-07-26T10:14:19Z"
 dateModified: "2026-07-26T10:14:19Z"
+focusKeyword: "Kenyan Prince Advises Men to Keep Romantic Relationships Private"
 schema: "NewsArticle"
 ---
 
-## The Digital Code of Silence
+## The Digital Code of Silence Kenyan Prince Advises Men to Keep Romantic Relationships Private is the central subject of the update.
 
 Social media personality Kenyan Prince officially challenged the prevailing culture of oversharing today, urging men to keep intimate disagreements away from public platforms. He argued that the current habit of exposing private conflicts constitutes a lack of emotional maturity and damages the sanctity of personal partnerships.
 
