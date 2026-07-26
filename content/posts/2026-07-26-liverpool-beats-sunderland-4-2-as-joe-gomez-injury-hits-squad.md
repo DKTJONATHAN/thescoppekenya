@@ -1,18 +1,20 @@
 ---
 title: "Liverpool beats Sunderland 4-2 as Joe Gomez injury hits squad"
 slug: "liverpool-beats-sunderland-4-2-as-joe-gomez-injury-hits-squad"
-description: "Liverpool secured a 4-2 win against Sunderland in Nashville but face defensive concerns after captain Joe Gomez suffered an early injury."
+description: "Liverpool beats Sunderland 4-2 as Joe Gomez injury hits squad: Liverpool secured a 4-2 win against Sunderland in Nashville but face defensive concerns after"
+excerpt: "Nashville’s Hollow Goals Mask A Defensive Calamity Liverpool’s 4 2 win over Sunderland in Nashville was an exercise in performative theater"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/vCQTnxxZ/5ba160d37269.jpg"
 category: "Sports"
 tags: ["liverpool fc", "football", "sports news", "joe gomez", "preseason", "english premier league"]
+canonical: "https://zandani.co.ke/article/liverpool-beats-sunderland-4-2-as-joe-gomez-injury-hits-squad"
 date: "2026-07-26T11:40:21Z"
 dateModified: "2026-07-26T11:40:21Z"
+focusKeyword: "Liverpool beats Sunderland 4-2 as Joe Gomez injury hits squad"
 schema: "NewsArticle"
 ---
 
-## Nashville’s Hollow Goals Mask A Defensive Calamity
+## Nashville’s Hollow Goals Mask A Defensive Calamity Liverpool beats Sunderland 4-2 as Joe Gomez injury hits squad is the central subject of the update.
 
 Liverpool’s 4-2 win over Sunderland in Nashville was an exercise in performative theater that fooled everyone watching the highlight reels. While supporters cheered the youthful energy on the pitch, the reality is that the squad’s structural integrity evaporated in the opening eight minutes.
 
