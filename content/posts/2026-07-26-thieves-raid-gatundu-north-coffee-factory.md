@@ -1,18 +1,20 @@
 ---
 title: "Thieves raid Gatundu North factory stealing 45 bags of coffee"
 slug: "thieves-raid-gatundu-north-coffee-factory"
-description: "Unknown assailants stole 45 bags of coffee from a Gatundu North facility, marking the third such robbery in Kiambu County in just three weeks."
+description: "Thieves raid Gatundu North factory stealing 45 bags of coffee: Unknown assailants stole 45 bags of coffee from a Gatundu North facility, marking the third such"
+excerpt: "The Industrial Scale of Kiambu Coffee Raids Masked individuals neutralized security teams at a Gatundu North processing facility at 1am this"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/4wrxSw22/fb925d30e04c.webp"
 category: "News"
 tags: ["coffee farming", "kiambu", "gatundu north", "insecurity", "agriculture", "kenya news"]
+canonical: "https://zandani.co.ke/article/thieves-raid-gatundu-north-coffee-factory"
 date: "2026-07-26T12:07:55Z"
 dateModified: "2026-07-26T12:07:55Z"
+focusKeyword: "Thieves raid Gatundu North factory stealing 45 bags of coffee"
 schema: "NewsArticle"
 ---
 
-## The Industrial Scale of Kiambu Coffee Raids
+## The Industrial Scale of Kiambu Coffee Raids Thieves raid Gatundu North factory stealing 45 bags of coffee is the central subject of the update.
 
 Masked individuals neutralized security teams at a Gatundu North processing facility at 1am this morning, stripping the warehouse of 45 bags of processed coffee. This tactical strike, valued at roughly Ksh1.5 million, marks the third such operation within a three-week window across Kiambu County.
 
