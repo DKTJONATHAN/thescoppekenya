@@ -1,18 +1,20 @@
 ---
 title: "EAC Central Bank Governors Reaffirm Commitment to Single Currency"
 slug: "eac-central-banks-reaffirm-2031-single-currency-target"
-description: "Central bank governors from the EAC have confirmed the 2031 deadline for a regional single currency despite missing key macroeconomic convergence targets."
+description: "EAC Central Bank Governors Reaffirm Commitment to Single Currency: Central bank governors from the EAC have confirmed the 2031 deadline for a regional single"
+excerpt: "Bridging the Fiscal Abyss: The EAC Monetary Union Ambition East African Community central bank governors confirmed a 2031 launch for a regio"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/wNZ0fYQn/4418be00933b.webp"
 category: "News"
 tags: ["eac", "east african community", "monetary union", "kenya economy", "regional trade", "finance"]
+canonical: "https://zandani.co.ke/article/eac-central-banks-reaffirm-2031-single-currency-target"
 date: "2026-07-26T18:04:07Z"
 dateModified: "2026-07-26T18:04:07Z"
+focusKeyword: "EAC Central Bank Governors Reaffirm Commitment to Single Currency"
 schema: "NewsArticle"
 ---
 
-## Bridging the Fiscal Abyss: The EAC Monetary Union Ambition
+## Bridging the Fiscal Abyss: The EAC Monetary Union Ambition EAC Central Bank Governors Reaffirm Commitment to Single Currency is the central subject of the update.
 
 East African Community central bank governors confirmed a 2031 launch for a regional single currency on Friday despite admitting that none of the member states currently satisfy the mandatory macroeconomic stability requirements necessary for a functional monetary union.
 
