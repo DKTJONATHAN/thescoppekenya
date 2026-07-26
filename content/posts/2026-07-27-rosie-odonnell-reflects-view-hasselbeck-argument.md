@@ -1,21 +1,20 @@
 ---
-title: "Rosie O'Donnell Reflects on The View, Hasselbeck Argument
+title: "'Rosie O'Donnell Reflects on The View, Hasselbeck Argument"
 slug: "rosie-odonnell-reflects-view-hasselbeck-argument"
-description: "Rosie O'Donnell shares candid reflections on her past argument with Elisabeth Hasselbeck on 'The View' and her favorite cohost. Discover her thoughts on a 30th anniversary return."
+description: "'Rosie O'Donnell Reflects on The View, Hasselbeck Argument: Rosie O'Donnell shares candid reflections on her past argument with Elisabeth Hasselbeck on 'The"
+excerpt: "The Unforgettable Fire: Rosie O'Donnell, The View, and Fan Memories 'That 2007 argument with Elisabeth Hasselbeck? Still feels like yesterda"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/bg8xy8jV/23297e33ed56.jpg"
-og_title: "Rosie O'Donnell on The View: Hasselbeck & Streisand"
-og_description: "Rosie O'Donnell opens up about her iconic 'View' argument with Elisabeth Hasselbeck and a memorable Barbra Streisand interview. She also hints at a 30th-anniversary return."
-focus_keyword: "Rosie O'Donnell The View"
 category: "Entertainment"
 tags: ["rosie odonnell", "the view", "elisabeth hasselbeck", "barbra streisand", "joy behar", "entertainment news", "celebrity interviews"]
+canonical: "https://zandani.co.ke/article/rosie-odonnell-reflects-view-hasselbeck-argument"
 date: "2026-07-26T23:33:31Z"
 dateModified: "2026-07-26T23:33:31Z"
+focusKeyword: "'Rosie O'Donnell Reflects on The View, Hasselbeck Argument"
 schema: "NewsArticle"
 ---
 
-## The Unforgettable Fire: Rosie O'Donnell, The View, and Fan Memories
+## The Unforgettable Fire: Rosie O'Donnell, The View, and Fan Memories "Rosie O'Donnell Reflects on The View, Hasselbeck Argument is the central subject of the update.
 
 "That 2007 argument with Elisabeth Hasselbeck? Still feels like yesterday, and Rosie's inability to watch it again shows how deep it cut," remarked one fan online this past week. As entertainment icon Rosie O'Donnell opens up about her tumultuous journey with *The View*, fans across the globe are reliving the drama, reflecting on her legacy, and buzzing about a potential return.
 
