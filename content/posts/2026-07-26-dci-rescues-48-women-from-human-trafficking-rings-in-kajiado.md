@@ -1,18 +1,20 @@
 ---
 title: "DCI rescues 48 women from human trafficking rings in Kajiado"
 slug: "dci-rescues-48-women-from-human-trafficking-rings-in-kajiado"
-description: "DCI officers have dismantled two trafficking networks in Ongata Rongai and Kiserian, rescuing 48 women held for forced digital content production."
+description: "DCI rescues 48 women from human trafficking rings in Kajiado: DCI officers have dismantled two trafficking networks in Ongata Rongai and Kiserian, rescuing 48"
+excerpt: "The Deadly Pivot From Housekeeping To Digital Content Hubs The recent DCI intervention in Ongata Rongai and Kiserian highlights a sinister e"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/k2q5TbVK/e8ef3bc5cb01.jpg"
 category: "Gossip"
 tags: ["dci", "human trafficking", "ongata rongai", "kiserian", "nairobi news", "crime"]
+canonical: "https://zandani.co.ke/article/dci-rescues-48-women-from-human-trafficking-rings-in-kajiado"
 date: "2026-07-26T08:39:05Z"
 dateModified: "2026-07-26T08:39:05Z"
+focusKeyword: "DCI rescues 48 women from human trafficking rings in Kajiado"
 schema: "NewsArticle"
 ---
 
-## The Deadly Pivot From Housekeeping To Digital Content Hubs
+## The Deadly Pivot From Housekeeping To Digital Content Hubs DCI rescues 48 women from human trafficking rings in Kajiado is the central subject of the update.
 
 The recent DCI intervention in Ongata Rongai and Kiserian highlights a sinister evolution in local job scams. By pivoting from traditional domestic work lures to forced digital content production, traffickers are weaponizing Kenya's obsession with the creator economy to ensnare vulnerable young job seekers.
 
