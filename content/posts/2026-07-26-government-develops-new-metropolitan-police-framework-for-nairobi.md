@@ -1,18 +1,20 @@
 ---
 title: "Government Develops New Metropolitan Police Framework for Nairobi"
 slug: "government-develops-new-metropolitan-police-framework-for-nairobi"
-description: "The government is drafting a framework for a specialized Nairobi Metropolitan Police unit to tackle urban crime, terrorism, and cyber threats."
+description: "Government Develops New Metropolitan Police Framework for Nairobi: The government is drafting a framework for a specialized Nairobi Metropolitan Police unit to"
+excerpt: "The Blueprints of Italian Order in Nairobi Streets The recent move to draft a formal structure for a Nairobi Metropolitan Police unit marks"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/xxJPRYh/befdc1eeec03.webp"
 category: "Opinions"
 tags: ["nairobi", "kenya police", "security news", "william ruto", "law enforcement", "urban security"]
+canonical: "https://zandani.co.ke/article/government-develops-new-metropolitan-police-framework-for-nairobi"
 date: "2026-07-26T10:54:05Z"
 dateModified: "2026-07-26T10:54:05Z"
+focusKeyword: "Government Develops New Metropolitan Police Framework for Nairobi"
 schema: "NewsArticle"
 ---
 
-## The Blueprints of Italian Order in Nairobi Streets
+## The Blueprints of Italian Order in Nairobi Streets Government Develops New Metropolitan Police Framework for Nairobi is the central subject of the update.
 
 The recent move to draft a formal structure for a Nairobi Metropolitan Police unit marks a decisive shift in how the state views its capital. Officials are looking beyond local tradition, adopting the specialized rigor of Rome to transform our city safety.
 
