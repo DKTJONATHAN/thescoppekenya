@@ -324,10 +324,10 @@
     "c51560a51d74eb00882a7878236bef61",
     "e0ed7eb76c7bb9c13c0aa8ac006f55d8",
     "05a3071c0d28465b1f829c12c7388d15",
-    "46e2644cc443dbdc10bcb8a975f6a4f0"
+    "46e2644cc443dbdc10bcb8a975f6a4f0",
+    "b7ee266980db126eb4c26d01bab1a7ec"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Trend Take",
     "Profile Beat",
@@ -356,10 +356,10 @@
     "Reaction Round-up",
     "Profile Beat",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "myth_vs_fact|na|Trend Take",
     "policy_gap|Firing|Explainer",
     "next_48_hours|actor|Hard News Lead",
     "timeline_shift|na|Reaction Round-up",
@@ -438,6 +438,7 @@
     "winners_losers|Celebrity family|Reaction Round-up",
     "winners_losers|television|Profile Beat",
     "story_progression|memes|Explainer",
-    "timeline_shift|Clayface|Trend Take"
+    "timeline_shift|Clayface|Trend Take",
+    "story_progression|na|Reaction Round-up"
   ]
 }
