@@ -1,18 +1,20 @@
 ---
 title: "Arsenal identify Vinicius Jr as top transfer target"
 slug: "arsenal-identify-vinicius-jr-as-top-transfer-target"
-description: "Arsenal are targeting Real Madrid forward Vinicius Jr as he enters a contract impasse, while Jose Mourinho takes charge at the Bernabeu."
+description: "Arsenal identify Vinicius Jr as top transfer target: Arsenal are targeting Real Madrid forward Vinicius Jr as he enters a contract impasse, while Jose Mourinho"
+excerpt: "Arsenal Weighs Audacious Move for Vinicius Jr Amid Real Madrid Overhaul Arsenal has emerged as a serious suitor for Vinicius Jr, placing the"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/TqLVbPxb/f658fe2b935a.jpg"
 category: "Sports"
 tags: ["football", "arsenal", "real madrid", "vinicius jr", "premier league", "transfer news"]
+canonical: "https://zandani.co.ke/article/arsenal-identify-vinicius-jr-as-top-transfer-target"
 date: "2026-07-27T13:24:06Z"
 dateModified: "2026-07-27T13:24:06Z"
+focusKeyword: "Arsenal identify Vinicius Jr as top transfer target"
 schema: "NewsArticle"
 ---
 
-## Arsenal Weighs Audacious Move for Vinicius Jr Amid Real Madrid Overhaul
+## Arsenal Weighs Audacious Move for Vinicius Jr Amid Real Madrid Overhaul Arsenal identify Vinicius Jr as top transfer target is the central subject of the update.
 
 Arsenal has emerged as a serious suitor for Vinicius Jr, placing the Real Madrid winger at the forefront of their recruitment strategy. The Brazilian international has entered the final year of his current deal at the Santiago Bernabeu, creating a window of opportunity that the North London club is clearly eager to exploit.
 
