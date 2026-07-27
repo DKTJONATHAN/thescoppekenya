@@ -1,18 +1,20 @@
 ---
 title: "Senate Orders Arrest of Isiolo Governor Abdi Guyo"
 slug: "senate-orders-arrest-of-isiolo-governor-abdi-guyo"
-description: "The Senate Public Accounts Committee has directed IG Douglas Kanja to arrest Isiolo Governor Abdi Guyo after he failed to appear for scheduled hearings."
+description: "Senate Orders Arrest of Isiolo Governor Abdi Guyo: The Senate Public Accounts Committee has directed IG Douglas Kanja to arrest Isiolo Governor Abdi Guyo after"
+excerpt: "The Governor Who Dodges the Mace Isiolo residents are exhausted by the ongoing charade between the county headquarters and the national over"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/rGK8yNDn/85cfaa3a1b14.webp"
 category: "News"
 tags: ["isiolo", "kenya politics", "senate", "abdi guyo", "governance", "public accounts committee"]
+canonical: "https://zandani.co.ke/article/senate-orders-arrest-of-isiolo-governor-abdi-guyo"
 date: "2026-07-27T13:41:43Z"
 dateModified: "2026-07-27T13:41:43Z"
+focusKeyword: "Senate Orders Arrest of Isiolo Governor Abdi Guyo"
 schema: "NewsArticle"
 ---
 
-## The Governor Who Dodges the Mace
+## The Governor Who Dodges the Mace Senate Orders Arrest of Isiolo Governor Abdi Guyo is the central subject of the update.
 
 Isiolo residents are exhausted by the ongoing charade between the county headquarters and the national oversight body, as yet another arrest warrant for Governor Abdi Guyo signals a breakdown in trust between local leadership and constitutional accountability mechanisms.
 
