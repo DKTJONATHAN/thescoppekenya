@@ -331,10 +331,10 @@
     "97333be956b9bcbdb914cb341c11e983",
     "293f992ed6ff785bd9ca99bf13685fe7",
     "f625992b21d298e6bcfa4a5b7c03fb0c",
-    "ee186fe99f305efb4043cb51007bdb3b"
+    "ee186fe99f305efb4043cb51007bdb3b",
+    "ff445cb70ee7fc565827fdea1d98d3cd"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Receipts Piece",
     "Trend Take",
@@ -363,10 +363,10 @@
     "Receipts Piece",
     "Profile Beat",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "policy_gap|NACADA|Receipts Piece",
     "money_follow|Kenya|Trend Take",
     "impact_on_citizens|Kenya|Profile Beat",
     "timeline_shift|Jeff Koinange|Hard News Lead",
@@ -445,6 +445,7 @@
     "money_follow|cohabitation|Receipts Piece",
     "story_progression|parenting|Profile Beat",
     "timeline_shift|Tequila|Trend Take",
-    "story_progression|relationships|Hard News Lead"
+    "story_progression|relationships|Hard News Lead",
+    "story_progression|relationships|Reaction Round-up"
   ]
 }
