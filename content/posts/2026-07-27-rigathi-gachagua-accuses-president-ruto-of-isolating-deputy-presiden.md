@@ -1,7 +1,8 @@
 ---
 title: "Rigathi Gachagua accuses President Ruto of isolating Deputy President Kithure Kindiki"
 slug: "rigathi-gachagua-accuses-president-ruto-of-isolating-deputy-presiden"
-description: "Rigathi Gachagua accuses President William Ruto of deliberately isolating Deputy President Kithure Kindiki to consolidate control over his administration."
+description: "Rigathi Gachagua accuses President Ruto of isolating Deputy Presi: Rigathi Gachagua accuses President William Ruto of deliberately isolating Deputy President"
+excerpt: "Former Deputy President Rigathi Gachagua publicly accused President William Ruto of orchestrating the deliberate political isolation of his"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/xSqtpnvQ/398498938406.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["rigathi-gachagua", "william-ruto", "kithure-kindiki", "kenyan-politics", "kenya-government"]
 canonical: "https://zandani.co.ke/article/rigathi-gachagua-accuses-president-ruto-of-isolating-deputy-presiden"
 date: "2026-07-27T15:12:36Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-27T15:12:36Z"
+focusKeyword: "Rigathi Gachagua accuses President Ruto of isolating Deputy Presi"
 schema: "NewsArticle"
 ---
-Former Deputy President Rigathi Gachagua publicly accused President William Ruto of orchestrating the deliberate political isolation of his successor, Kithure Kindiki, in July 2026. This tactical assertion claims the President is suppressing his deputy to maintain absolute control over the current administration.
+
+Former Deputy President Rigathi Gachagua publicly accused President William Ruto of orchestrating the deliberate political isolation of his successor, Kithure Kindiki, in July 2026. This tactical assertion claims the President is suppressing his deputy to maintain absolute control over the current administration. Rigathi Gachagua accuses President Ruto of isolating Deputy Presi is the central subject of the update.
 
 ## The mechanics of political isolation
 
