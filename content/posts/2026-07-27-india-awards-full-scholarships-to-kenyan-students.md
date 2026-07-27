@@ -1,18 +1,20 @@
 ---
 title: "India Awards 105 Fully Funded Scholarships to Kenyan Students"
 slug: "india-awards-full-scholarships-to-kenyan-students"
-description: "The Indian government has offered 105 full scholarships to Kenyan students for the upcoming academic year to bridge critical skill gaps in tech and health."
+description: "India Awards 105 Fully Funded Scholarships to Kenyan Students: The Indian government has offered 105 full scholarships to Kenyan students for the upcoming"
+excerpt: "The Export of Potential The Indian High Commission recently announced 105 fully funded scholarships for Kenyan students. While many laud thi"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/TDV6pMDt/14c78a7a88ec.webp"
 category: "Opinions"
 tags: ["kenya education", "india kenya relations", "scholarships", "human capital development", "study abroad"]
+canonical: "https://zandani.co.ke/article/india-awards-full-scholarships-to-kenyan-students"
 date: "2026-07-27T12:36:45Z"
 dateModified: "2026-07-27T12:36:45Z"
+focusKeyword: "India Awards 105 Fully Funded Scholarships to Kenyan Students"
 schema: "NewsArticle"
 ---
 
-## The Export of Potential
+## The Export of Potential India Awards 105 Fully Funded Scholarships to Kenyan Students is the central subject of the update.
 
 The Indian High Commission recently announced 105 fully funded scholarships for Kenyan students. While many laud this as a necessary infusion of technical expertise for national progress, such optimism is arguably premature. Celebrating the availability of foreign seats obscures a deeper, more uncomfortable reality: our systemic inability to retain the very talent we claim to prioritize.
 
