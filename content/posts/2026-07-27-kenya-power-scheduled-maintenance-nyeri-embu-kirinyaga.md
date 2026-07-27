@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Schedules Maintenance Outages in Three Counties"
 slug: "kenya-power-scheduled-maintenance-nyeri-embu-kirinyaga"
-description: "Kenya Power has announced scheduled electricity interruptions in Nyeri, Embu, and Kirinyaga counties on July 27 for maintenance works."
+description: "Kenya Power Schedules Maintenance Outages in Three Counties: Kenya Power has announced scheduled electricity interruptions in Nyeri, Embu, and Kirinyaga"
+excerpt: "Silence in the Workshop: The Cost of a Scheduled Power Cut In the bustling heart of Nyeri, Mary Njeri relies on the rhythmic hum of her weld"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/qLCtx5kT/fba2a21c3576.jpg"
 category: "Gossip"
 tags: ["kenya power", "power outage", "nyeri", "embu", "kirinyaga", "utility news"]
+canonical: "https://zandani.co.ke/article/kenya-power-scheduled-maintenance-nyeri-embu-kirinyaga"
 date: "2026-07-27T10:07:13Z"
 dateModified: "2026-07-27T10:07:13Z"
+focusKeyword: "Kenya Power Schedules Maintenance Outages in Three Counties"
 schema: "NewsArticle"
 ---
 
-## Silence in the Workshop: The Cost of a Scheduled Power Cut
+## Silence in the Workshop: The Cost of a Scheduled Power Cut Kenya Power Schedules Maintenance Outages in Three Counties is the central subject of the update.
 
 In the bustling heart of Nyeri, Mary Njeri relies on the rhythmic hum of her welding machinery to sustain her livelihood. When the power cuts out at 8:30 this morning, that familiar mechanical pulse will vanish, replaced by a heavy, expensive stillness. While Kenya Power labels this interruption as routine maintenance across Nyeri, Embu, and Kirinyaga, for local business owners, the blackout functions as a forced and unpaid day of labor.
 
