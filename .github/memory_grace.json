@@ -201,10 +201,10 @@
     "cbe9e8746e51aa77773f6360762be0c5",
     "f5af06abe2fcfde38fd3f12caaa7541f",
     "c25251ca3268f597b330c7bf015d83af",
-    "c24aa633ead5db532f5d224ff26059cf"
+    "c24aa633ead5db532f5d224ff26059cf",
+    "7463e824161c450bd1dfa8cb81a6b800"
   ],
   "style_history": [
-    "Markets Report",
     "Explainer",
     "Backgrounder",
     "Power Accountability",
@@ -233,10 +233,10 @@
     "SME Angle",
     "Markets Report",
     "Power Accountability",
-    "Backgrounder"
+    "Backgrounder",
+    "Explainer"
   ],
   "angle_history": [
-    "winners_losers|WPP Scangroup|Power Accountability",
     "money_follow|Banking|Markets Report",
     "timeline_shift|Market Capitalization|Backgrounder",
     "impact_on_citizens|Public Debt|Explainer",
@@ -315,6 +315,7 @@
     "policy_gap|tax exemption|SME Angle",
     "money_follow|Kenya|Markets Report",
     "timeline_shift|Fiscal policy|Power Accountability",
-    "timeline_shift|Dangote Refinery|Backgrounder"
+    "timeline_shift|Dangote Refinery|Backgrounder",
+    "money_follow|NSE|Explainer"
   ]
 }
