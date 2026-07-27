@@ -164,10 +164,10 @@
     "686289633bbe92c722b2a027133ee7da",
     "1182144e8d467bbe3b8e68c8b8b95500",
     "afdd9a9c0205c9de908f3b4cc870eb83",
-    "51964ab39a63827cc5a3bd8f6a907663"
+    "51964ab39a63827cc5a3bd8f6a907663",
+    "79466acea0cd138d11fbcc1d6eaed583"
   ],
   "style_history": [
-    "Hard News Lead",
     "Backgrounder",
     "Explainer",
     "Critical Take",
@@ -196,10 +196,10 @@
     "Hard News Lead",
     "Backgrounder",
     "Explainer",
-    "Critical Take"
+    "Critical Take",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "winners_losers|artificial intelligence|Critical Take",
     "policy_gap|Kenya|Backgrounder",
     "timeline_shift|Ted Turner|Africa Angle",
     "myth_vs_fact|cybersecurity|Hard News Lead",
@@ -278,6 +278,7 @@
     "winners_losers|Communications Authority of Kenya|Hard News Lead",
     "policy_gap|NTSA|Backgrounder",
     "winners_losers|DCI|Explainer",
-    "myth_vs_fact|productivity app|Critical Take"
+    "myth_vs_fact|productivity app|Critical Take",
+    "next_48_hours|CXMT|Hard News Lead"
   ]
 }
