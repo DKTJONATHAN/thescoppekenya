@@ -14,7 +14,7 @@ focusKeyword: "'Rosie O'Donnell Reflects on The View, Hasselbeck Argument"
 schema: "NewsArticle"
 ---
 
-## The Unforgettable Fire: Rosie O'Donnell, The View, and Fan Memories "Rosie O'Donnell Reflects on The View, Hasselbeck Argument is the central subject of the update.
+## The Unforgettable Fire: Rosie O'Donnell, The View, and Fan Memories "Rosie O'Donnell Reflects on The View, Hasselbeck Argument is the central subject of the update. 'Rosie O'Donnell Reflects on The View, Hasselbeck Argument is the central subject of the update.
 
 "That 2007 argument with Elisabeth Hasselbeck? Still feels like yesterday, and Rosie's inability to watch it again shows how deep it cut," remarked one fan online this past week. As entertainment icon Rosie O'Donnell opens up about her tumultuous journey with *The View*, fans across the globe are reliving the drama, reflecting on her legacy, and buzzing about a potential return.
 

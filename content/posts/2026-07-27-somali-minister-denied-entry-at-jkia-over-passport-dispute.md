@@ -1,18 +1,20 @@
 ---
 title: "Somalia Minister Denied Entry at JKIA Over Passport Issues"
 slug: "somali-minister-denied-entry-at-jkia-over-passport-dispute"
-description: "Kenya has denied entry to another Somali government official citing issues with a Kenyan passport, raising concerns about diplomatic relations."
+description: "Somalia Minister Denied Entry at JKIA Over Passport Issues: Kenya has denied entry to another Somali government official citing issues with a Kenyan passport,"
+excerpt: "The Mirage of Sovereignty at JKIA The state minister for the Somali government, Abshir Bukhaari, was escorted back to a Mogadishu bound airc"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/7tXXyczT/abac3960ffba.webp"
 category: "News"
 tags: ["kenya", "somalia", "jkia", "diplomatic row", "passport", "immigration"]
+canonical: "https://zandani.co.ke/article/somali-minister-denied-entry-at-jkia-over-passport-dispute"
 date: "2026-07-27T08:35:35Z"
 dateModified: "2026-07-27T08:35:35Z"
+focusKeyword: "Somalia Minister Denied Entry at JKIA Over Passport Issues"
 schema: "NewsArticle"
 ---
 
-## The Mirage of Sovereignty at JKIA
+## The Mirage of Sovereignty at JKIA Somalia Minister Denied Entry at JKIA Over Passport Issues is the central subject of the update.
 
 The state minister for the Somali government, Abshir Bukhaari, was escorted back to a Mogadishu-bound aircraft on Sunday morning because his Kenyan passport triggered a system lockdown. This is not a clerical error. It is a systematic breach of identity security that turns our international gateway into a stage for geopolitical gamesmanship.
 
