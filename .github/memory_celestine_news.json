@@ -368,10 +368,10 @@
     "f95417e0f14d22e70e4ec48bad1e0ada",
     "e010220f36d913ddb30dfcecec056c6f",
     "1a18642c20cce2a00a7ed46c213e7f31",
-    "11a0e103119104587ff659e1fe1a03fe"
+    "11a0e103119104587ff659e1fe1a03fe",
+    "f7d9b96859f00f3766d1959edea79b51"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Context Backgrounder",
     "Reaction & Voices",
@@ -400,10 +400,10 @@
     "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
-    "Power Accountability"
+    "Power Accountability",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "money_follow|manufacturing|Power Accountability",
     "winners_losers|SHA|Context Backgrounder",
     "money_follow|Kenya|Reaction & Voices",
     "myth_vs_fact|HELB|Explainer",
@@ -482,6 +482,7 @@
     "winners_losers|DCI|Reaction & Voices",
     "money_follow|coffee farming|Context Backgrounder",
     "policy_gap|EAC|Hard News Lead",
-    "policy_gap|Kenya-Somalia relations|Power Accountability"
+    "policy_gap|Kenya-Somalia relations|Power Accountability",
+    "story_progression|Senate|Reaction & Voices"
   ]
 }
