@@ -1,18 +1,20 @@
 ---
 title: "Kenya aviation workers cancel planned strike after government deal"
 slug: "kenya-aviation-workers-cancel-strike-after-deal"
-description: "Kenya Aviation Workers Union has called off the scheduled July 31 strike after reaching a return to work agreement and a 30 day timeline for negotiations."
+description: "Kenya aviation workers cancel planned strike after government dea: Kenya Aviation Workers Union has called off the scheduled July 31 strike after reaching a"
+excerpt: "Flight plans remain secure as strike threat fades Kenya Aviation Workers Union members have formally set aside their strike notice slated fo"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Gf97VML0/e86e9e28281a.webp"
 category: "News"
 tags: ["kenya news", "kawu", "aviation industry", "labor strikes", "za ndani", "kenya economy"]
+canonical: "https://zandani.co.ke/article/kenya-aviation-workers-cancel-strike-after-deal"
 date: "2026-07-27T18:26:29Z"
 dateModified: "2026-07-27T18:26:29Z"
+focusKeyword: "Kenya aviation workers cancel planned strike after government dea"
 schema: "NewsArticle"
 ---
 
-## Flight plans remain secure as strike threat fades
+## Flight plans remain secure as strike threat fades Kenya aviation workers cancel planned strike after government dea is the central subject of the update.
 
 Kenya Aviation Workers Union members have formally set aside their strike notice slated for July 31. This development comes after state officials and labor representatives inked a deal to pause all pending legal battles, effectively resetting the negotiation table for the next four weeks.
 

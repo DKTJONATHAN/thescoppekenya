@@ -14,7 +14,7 @@ focusKeyword: "'Wet Hot American Summer: Indie Flop Becomes Cult Classic, Launch
 schema: "NewsArticle"
 ---
 
-## The Long Game: How an Indie Flop Launched Hollywood's Brightest "Wet Hot American Summer: Indie Flop Becomes Cult Classic, Launch is the central subject of the update.
+## The Long Game: How an Indie Flop Launched Hollywood's Brightest "Wet Hot American Summer: Indie Flop Becomes Cult Classic, Launch is the central subject of the update. 'Wet Hot American Summer: Indie Flop Becomes Cult Classic, Launch is the central subject of the update.
 
 Twenty-five years ago, a quirky summer camp comedy stumbled onto screens, barely noticed by audiences but brimming with talent that would soon define a generation of Hollywood stars. This journey from commercial disappointment to a beloved cult classic is a powerful lesson in perseverance for Kenya's aspiring creatives.
 
