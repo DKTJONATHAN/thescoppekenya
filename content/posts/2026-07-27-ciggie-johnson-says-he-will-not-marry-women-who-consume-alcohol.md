@@ -1,18 +1,20 @@
 ---
 title: "Ciggie Johnson Says He Will Not Marry Women Who Consume Alcohol"
 slug: "ciggie-johnson-says-he-will-not-marry-women-who-consume-alcohol"
-description: "Content creator Ciggie Johnson has stirred debate by stating he will not marry women who drink, citing concerns over peer pressure and behavior."
+description: "Ciggie Johnson Says He Will Not Marry Women Who Consume Alcohol: Content creator Ciggie Johnson has stirred debate by stating he will not marry women who"
+excerpt: "The Sobriety Standard: Why Ciggie Johnson's Ultimatum Has Nairobi Divided Content creator Ciggie Johnson has ignited a fierce digital confro"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/LhnWjDKM/3c1fdac9fca2.webp"
 category: "Gossip"
 tags: ["ciggie johnson", "kenyan celebrities", "relationships", "lifestyle", "entertainment news", "dating"]
+canonical: "https://zandani.co.ke/article/ciggie-johnson-says-he-will-not-marry-women-who-consume-alcohol"
 date: "2026-07-27T11:40:01Z"
 dateModified: "2026-07-27T11:40:01Z"
+focusKeyword: "Ciggie Johnson Says He Will Not Marry Women Who Consume Alcohol"
 schema: "NewsArticle"
 ---
 
-## The Sobriety Standard: Why Ciggie Johnson's Ultimatum Has Nairobi Divided
+## The Sobriety Standard: Why Ciggie Johnson's Ultimatum Has Nairobi Divided Ciggie Johnson Says He Will Not Marry Women Who Consume Alcohol is the central subject of the update.
 
 Content creator Ciggie Johnson has ignited a fierce digital confrontation by declaring that he will never walk down the aisle with a woman who drinks alcohol. This rigid stance has split public opinion between those applauding his discipline and others questioning the reality of his expectations.
 
