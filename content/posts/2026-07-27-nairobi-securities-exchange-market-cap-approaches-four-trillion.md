@@ -1,18 +1,20 @@
 ---
 title: "Nairobi Securities Exchange Market Cap Approaches Four Trillion"
 slug: "nairobi-securities-exchange-market-cap-approaches-four-trillion"
-description: "The Nairobi Securities Exchange indices record strong gains above 25 percent as domestic investors offset foreign capital outflows."
+description: "Nairobi Securities Exchange Market Cap Approaches Four Trillion: The Nairobi Securities Exchange indices record strong gains above 25 percent as domestic"
+excerpt: "Why Your Retirement Pot is Growing While Global Money Leaves The Nairobi Securities Exchange is rapidly closing in on a KSh 4 trillion marke"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/LzzSftM5/2ce228d7e426.png"
 category: "Business"
 tags: ["nse", "kenya economy", "stock market", "nairobi", "investing", "business news"]
+canonical: "https://zandani.co.ke/article/nairobi-securities-exchange-market-cap-approaches-four-trillion"
 date: "2026-07-27T08:43:04Z"
 dateModified: "2026-07-27T08:43:04Z"
+focusKeyword: "Nairobi Securities Exchange Market Cap Approaches Four Trillion"
 schema: "NewsArticle"
 ---
 
-## Why Your Retirement Pot is Growing While Global Money Leaves
+## Why Your Retirement Pot is Growing While Global Money Leaves Nairobi Securities Exchange Market Cap Approaches Four Trillion is the central subject of the update.
 
 The Nairobi Securities Exchange is rapidly closing in on a KSh 4 trillion market valuation, driven by a surge of local participation that has effectively defied the trend of exiting foreign capital. As of this Monday, the market cap sits just KSh 82 billion shy of this historic threshold, marking a shift in who actually owns and influences the Kenyan corporate landscape.
 
