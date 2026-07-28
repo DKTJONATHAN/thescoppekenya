@@ -332,10 +332,10 @@
     "293f992ed6ff785bd9ca99bf13685fe7",
     "f625992b21d298e6bcfa4a5b7c03fb0c",
     "ee186fe99f305efb4043cb51007bdb3b",
-    "ff445cb70ee7fc565827fdea1d98d3cd"
+    "ff445cb70ee7fc565827fdea1d98d3cd",
+    "e46cd3bd592509f7529dbdd5810b192a"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Receipts Piece",
     "Trend Take",
     "Profile Beat",
@@ -364,10 +364,10 @@
     "Profile Beat",
     "Trend Take",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "money_follow|Kenya|Trend Take",
     "impact_on_citizens|Kenya|Profile Beat",
     "timeline_shift|Jeff Koinange|Hard News Lead",
     "money_follow|Raila Odinga|Receipts Piece",
@@ -446,6 +446,7 @@
     "story_progression|parenting|Profile Beat",
     "timeline_shift|Tequila|Trend Take",
     "story_progression|relationships|Hard News Lead",
-    "story_progression|relationships|Reaction Round-up"
+    "story_progression|relationships|Reaction Round-up",
+    "timeline_shift|Kenya|Receipts Piece"
   ]
 }
