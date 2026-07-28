@@ -1,18 +1,20 @@
 ---
 title: "Zinedine Zidane appointed as new France national football coach"
 slug: "zinedine-zidane-appointed-france-national-football-coach"
-description: "Zinedine Zidane has officially taken over as France head coach, succeeding Didier Deschamps to lead the national team through 2030 qualifiers."
+description: "Zinedine Zidane appointed as new France national football coach: Zinedine Zidane has officially taken over as France head coach, succeeding Didier Deschamps to"
+excerpt: "The Maestro Returns: Zidane Begins His Reign Zinedine Zidane has officially taken charge of the France national team. His arrival marks the"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/PGmjz4cH/18542f720b50.jpg"
 category: "Sports"
 tags: ["zinedine zidane", "france football", "didier deschamps", "world cup", "football news", "international football"]
+canonical: "https://zandani.co.ke/article/zinedine-zidane-appointed-france-national-football-coach"
 date: "2026-07-28T12:17:16Z"
 dateModified: "2026-07-28T12:17:16Z"
+focusKeyword: "Zinedine Zidane appointed as new France national football coach"
 schema: "NewsArticle"
 ---
 
-## The Maestro Returns: Zidane Begins His Reign
+## The Maestro Returns: Zidane Begins His Reign Zinedine Zidane appointed as new France national football coach is the central subject of the update.
 
 Zinedine Zidane has officially taken charge of the France national team. His arrival marks the end of the long-standing Didier Deschamps era that followed the conclusion of the 2026 World Cup. As the legendary midfielder steps into the dugout, the French Football Federation transitions from a period of tactical predictability toward a new chapter defined by both historical reverence and a push for modern evolution.
 
