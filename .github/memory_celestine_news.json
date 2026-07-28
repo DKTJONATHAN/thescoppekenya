@@ -370,10 +370,10 @@
     "1a18642c20cce2a00a7ed46c213e7f31",
     "11a0e103119104587ff659e1fe1a03fe",
     "f7d9b96859f00f3766d1959edea79b51",
-    "3db86b0fa423bf567dd762322cd33625"
+    "3db86b0fa423bf567dd762322cd33625",
+    "61e540ad3cb252144a6e697916b4f7a3"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
     "Hard News Lead",
@@ -402,10 +402,10 @@
     "Hard News Lead",
     "Power Accountability",
     "Reaction & Voices",
-    "Explainer"
+    "Explainer",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "money_follow|Kenya|Reaction & Voices",
     "myth_vs_fact|HELB|Explainer",
     "accountability|Kenya Railways|Power Accountability",
     "accountability|Kenya|Hard News Lead",
@@ -484,6 +484,7 @@
     "policy_gap|EAC|Hard News Lead",
     "policy_gap|Kenya-Somalia relations|Power Accountability",
     "story_progression|Senate|Reaction & Voices",
-    "next_48_hours|KAWU|Explainer"
+    "next_48_hours|KAWU|Explainer",
+    "money_follow|ODPP|Context Backgrounder"
   ]
 }
