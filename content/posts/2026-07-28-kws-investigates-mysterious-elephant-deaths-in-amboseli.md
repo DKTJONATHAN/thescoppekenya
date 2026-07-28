@@ -1,18 +1,20 @@
 ---
 title: "KWS Investigates Mysterious Elephant Deaths in Amboseli Ecosystem"
 slug: "kws-investigates-mysterious-elephant-deaths-in-amboseli"
-description: "The Kenya Wildlife Service is investigating the deaths of 15 elephants in Amboseli due to suspected toxins after initial tests yielded inconclusive results."
+description: "KWS Investigates Mysterious Elephant Deaths in Amboseli Ecosystem: The Kenya Wildlife Service is investigating the deaths of 15 elephants in Amboseli due to"
+excerpt: "The Silent Graveyard: Pastoralists and Guides Raise Alarm Over Amboseli’s Unseen Killer Anger is simmering across the Kimana and Kuku region"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/20DgBGkw/856a59a52c65.webp"
 category: "News"
 tags: ["kenya wildlife service", "amboseli national park", "wildlife conservation", "elephant deaths", "kenya news"]
+canonical: "https://zandani.co.ke/article/kws-investigates-mysterious-elephant-deaths-in-amboseli"
 date: "2026-07-28T18:20:19Z"
 dateModified: "2026-07-28T18:20:19Z"
+focusKeyword: "KWS Investigates Mysterious Elephant Deaths in Amboseli Ecosystem"
 schema: "NewsArticle"
 ---
 
-## The Silent Graveyard: Pastoralists and Guides Raise Alarm Over Amboseli’s Unseen Killer
+## The Silent Graveyard: Pastoralists and Guides Raise Alarm Over Amboseli’s Unseen Killer KWS Investigates Mysterious Elephant Deaths in Amboseli Ecosystem is the central subject of the update.
 
 Anger is simmering across the Kimana and Kuku regions as community scouts find themselves burying giants in the dust while waiting for distant laboratories to name the poison. The frustration on the ground is palpable, with locals describing a haunting, slow-motion tragedy that official reports have yet to fully grasp.
 
