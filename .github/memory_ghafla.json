@@ -267,10 +267,10 @@
     "d100daab77e1def69675e5894bf37cc1",
     "31963f1898387054461fb0c9193466b8",
     "242f22645b3302b7aae31e714ca1712c",
-    "604db9dc01625460b75e91a24343e10e"
+    "604db9dc01625460b75e91a24343e10e",
+    "1d02d4d7029d1f848c922dc2bb544432"
   ],
   "style_history": [
-    "Receipts Piece",
     "Trend Take",
     "Reaction Round-up",
     "Hard News Lead",
@@ -299,10 +299,10 @@
     "Reaction Round-up",
     "Hard News Lead",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "money_follow|village elders|Reaction Round-up",
     "winners_losers|Kenyan Politics|Trend Take",
     "policy_gap|femicide|Receipts Piece",
     "policy_gap|Impeachment|Profile Beat",
@@ -381,6 +381,7 @@
     "story_progression|Kenya Power|Reaction Round-up",
     "winners_losers|Kenya|Hard News Lead",
     "policy_gap|human trafficking|Trend Take",
-    "winners_losers|Kenya Power|Profile Beat"
+    "winners_losers|Kenya Power|Profile Beat",
+    "money_follow|Kenya politics|Receipts Piece"
   ]
 }
