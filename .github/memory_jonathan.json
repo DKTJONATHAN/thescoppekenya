@@ -194,10 +194,10 @@
     "749020edeb7ea5740637680bc5004b77",
     "1357d25c18fe232bfef1106959416e8a",
     "9fab6571bd3041c39686f0a65d9e3273",
-    "74d0bffc04972209f3323ca2b71c127c"
+    "74d0bffc04972209f3323ca2b71c127c",
+    "150b2c1c5badda69cc9951f15b64a690"
   ],
   "style_history": [
-    "Personal Reflection",
     "Counterpoint",
     "Sharp Column",
     "Historical Lens",
@@ -226,10 +226,10 @@
     "Letter Form",
     "Sharp Column",
     "Personal Reflection",
-    "Counterpoint"
+    "Counterpoint",
+    "Historical Lens"
   ],
   "angle_history": [
-    "timeline_shift|geothermal energy|Historical Lens",
     "accountability|elections|Letter Form",
     "winners_losers|wealth taxation|Counterpoint",
     "policy_gap|chronic pain|Sharp Column",
@@ -308,6 +308,7 @@
     "story_progression|diplomacy|Letter Form",
     "winners_losers|Kenya|Sharp Column",
     "story_progression|Nairobi Metropolitan Police|Personal Reflection",
-    "myth_vs_fact|scholarships|Counterpoint"
+    "myth_vs_fact|scholarships|Counterpoint",
+    "story_progression|urban planning|Historical Lens"
   ]
 }
