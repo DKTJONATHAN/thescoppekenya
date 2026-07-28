@@ -1,18 +1,20 @@
 ---
 title: "DPP Approves Bribery Charges Against Kangema Magistrate"
 slug: "dpp-approves-bribery-charges-against-kangema-magistrate"
-description: "The DPP has sanctioned corruption charges against a Kangema magistrate and a probation officer over claims of soliciting bribes to influence court cases."
+description: "DPP Approves Bribery Charges Against Kangema Magistrate: The DPP has sanctioned corruption charges against a Kangema magistrate and a probation officer over"
+excerpt: "The Silent Toll of the Kangema Fee The Director of Public Prosecutions has officially greenlit the prosecution of a senior magistrate and a"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/r2T1rHWx/73bdb1d2ec5a.webp"
 category: "News"
 tags: ["odpp", "eacc", "bribery", "judiciary", "corruption", "kenya news"]
+canonical: "https://zandani.co.ke/article/dpp-approves-bribery-charges-against-kangema-magistrate"
 date: "2026-07-28T07:42:18Z"
 dateModified: "2026-07-28T07:42:18Z"
+focusKeyword: "DPP Approves Bribery Charges Against Kangema Magistrate"
 schema: "NewsArticle"
 ---
 
-## The Silent Toll of the Kangema Fee
+## The Silent Toll of the Kangema Fee DPP Approves Bribery Charges Against Kangema Magistrate is the central subject of the update.
 
 The Director of Public Prosecutions has officially greenlit the prosecution of a senior magistrate and a probation officer, marking another chapter in the quiet erosion of faith in the grassroots legal machinery that dictates daily life for rural litigants.
 
