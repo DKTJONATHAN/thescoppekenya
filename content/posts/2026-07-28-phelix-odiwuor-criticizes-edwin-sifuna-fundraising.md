@@ -1,18 +1,20 @@
 ---
 title: "Phelix Odiwuor Criticizes Edwin Sifuna Over Public Fundraising"
 slug: "phelix-odiwuor-criticizes-edwin-sifuna-fundraising"
-description: "MP Phelix Odiwuor has mocked Senator Edwin Sifuna for using public crowdfunding to finance political activities during a health workers event."
+description: "Phelix Odiwuor Criticizes Edwin Sifuna Over Public Fundraising: MP Phelix Odiwuor has mocked Senator Edwin Sifuna for using public crowdfunding to finance"
+excerpt: "Public Funds vs. Private Paybills: The Arithmetic of Nairobi Politics Langata MP Phelix Odiwuor recently challenged the logic of digital pol"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/QF2ybphZ/1a39eb440dbb.jpg"
 category: "Gossip"
 tags: ["kenya politics", "phelix odiwuor", "edwin sifuna", "nairobi politics", "2027 elections"]
+canonical: "https://zandani.co.ke/article/phelix-odiwuor-criticizes-edwin-sifuna-fundraising"
 date: "2026-07-28T08:49:17Z"
 dateModified: "2026-07-28T08:49:17Z"
+focusKeyword: "Phelix Odiwuor Criticizes Edwin Sifuna Over Public Fundraising"
 schema: "NewsArticle"
 ---
 
-## Public Funds vs. Private Paybills: The Arithmetic of Nairobi Politics
+## Public Funds vs. Private Paybills: The Arithmetic of Nairobi Politics Phelix Odiwuor Criticizes Edwin Sifuna Over Public Fundraising is the central subject of the update.
 
 Langata MP Phelix Odiwuor recently challenged the logic of digital political fundraising, drawing a sharp distinction between state-managed social programs and the volatile nature of crowd-funded campaigns. His comments, delivered during a gathering of Community Health Promoters, serve as a focal point for a broader dispute over how political machinery is financed in Nairobi.
 
