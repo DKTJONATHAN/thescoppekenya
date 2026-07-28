@@ -1,15 +1,20 @@
 ---
 title: "Liverpool coach Iraola demands centre-back and Barcola transfers"
 slug: "liverpool-coach-iraola-demands-centre-back-and-barcola-transfers"
+description: "Liverpool coach Iraola demands centre-back and Barcola transfers: Iraola's Urgent Transfer Demands Expose Liverpool's Summer Flaws Liverpool's new coach Andoni"
+excerpt: "Iraola's Urgent Transfer Demands Expose Liverpool's Summer Flaws Liverpool's new coach Andoni Iraola is already dictating transfer policy, d"
 author: "Sports Desk"
 image: "https://i.ibb.co/7JGJGxJr/97c2e333dd68.jpg"
 category: "Global News"
+tags: ["liverpool coach iraola demands centre back and barcola transfers", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/liverpool-coach-iraola-demands-centre-back-and-barcola-transfers"
 date: "2026-07-28T16:44:26Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-07-28T16:44:26Z"
+focusKeyword: "Liverpool coach Iraola demands centre-back and Barcola transfers"
 schema: "NewsArticle"
 ---
-## Iraola's Urgent Transfer Demands Expose Liverpool's Summer Flaws
+
+## Iraola's Urgent Transfer Demands Expose Liverpool's Summer Flaws Liverpool coach Iraola demands centre-back and Barcola transfers is the central subject of the update.
 
 Liverpool's new coach Andoni Iraola is already dictating transfer policy, demanding immediate centre-back reinforcements and PSG's Bradley Barcola. With injuries mounting and top targets slipping away, the club's defensive fragility and reactive transfer strategy are being laid bare, raising questions about summer planning.
 
