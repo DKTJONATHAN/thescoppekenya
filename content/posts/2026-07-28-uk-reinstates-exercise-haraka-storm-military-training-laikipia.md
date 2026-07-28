@@ -1,18 +1,20 @@
 ---
 title: "UK Reinstates Exercise Haraka Storm Military Training in Laikipia"
 slug: "uk-reinstates-exercise-haraka-storm-military-training-laikipia"
-description: "The UK and Kenya have resolved licensing disputes to resume the six-week military training exercise in Laikipia following earlier bribery allegations."
+description: "UK Reinstates Exercise Haraka Storm Military Training in Laikipia: The UK and Kenya have resolved licensing disputes to resume the six-week military training"
+excerpt: "Financial Integrity Clouds Military Resumption The United Kingdom has officially greenlit the resumption of Exercise HARAKA STORM in Laikipi"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/mCTL9kys/b8a4ab799f56.jpg"
 category: "News"
 tags: ["batuk", "kenya-uk relations", "laikipia", "kdf", "military cooperation", "haraka storm"]
+canonical: "https://zandani.co.ke/article/uk-reinstates-exercise-haraka-storm-military-training-laikipia"
 date: "2026-07-28T12:57:54Z"
 dateModified: "2026-07-28T12:57:54Z"
+focusKeyword: "UK Reinstates Exercise Haraka Storm Military Training in Laikipia"
 schema: "NewsArticle"
 ---
 
-## Financial Integrity Clouds Military Resumption
+## Financial Integrity Clouds Military Resumption UK Reinstates Exercise Haraka Storm Military Training in Laikipia is the central subject of the update.
 
 The United Kingdom has officially greenlit the resumption of Exercise HARAKA STORM in Laikipia for this September, resolving a standoff triggered by a high-stakes bribery scandal that stalled diplomatic military cooperation for eight months.
 
