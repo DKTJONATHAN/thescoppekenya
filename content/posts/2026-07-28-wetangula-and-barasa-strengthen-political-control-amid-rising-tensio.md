@@ -1,7 +1,8 @@
 ---
 title: "Wetangula and Barasa Strengthen Political Control Amid Rising Tensions in Bungoma"
 slug: "wetangula-and-barasa-strengthen-political-control-amid-rising-tensio"
-description: "Speaker Moses Wetang'ula and MP Didmus Barasa are consolidating UDA's political influence in Bungoma County to strengthen control ahead of next elections."
+description: "Wetangula and Barasa Strengthen Political Control Amid Rising Ten: Speaker Moses Wetang'ula and MP Didmus Barasa are consolidating UDA's political influence in"
+excerpt: "National Assembly Speaker Moses Wetang'ula and Kimilili MP Didmus Barasa are aggressively consolidating their political influence across Bun"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/M5KL2M17/a2caf584816e.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["wetangula", "bungoma-politics", "musalia-mudavadi", "western-kenya-politics", "barasa-bungoma"]
 canonical: "https://zandani.co.ke/article/wetangula-and-barasa-strengthen-political-control-amid-rising-tensio"
 date: "2026-07-28T14:35:56Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-28T14:35:56Z"
+focusKeyword: "Wetangula and Barasa Strengthen Political Control Amid Rising Ten"
 schema: "NewsArticle"
 ---
-National Assembly Speaker Moses Wetang'ula and Kimilili MP Didmus Barasa are aggressively consolidating their political influence across Bungoma County. This tactical alliance aims to cement the reach of the ruling UDA party ahead of the next election cycle, sidelining opposition figures within Western Kenya.
+
+National Assembly Speaker Moses Wetang'ula and Kimilili MP Didmus Barasa are aggressively consolidating their political influence across Bungoma County. This tactical alliance aims to cement the reach of the ruling UDA party ahead of the next election cycle, sidelining opposition figures within Western Kenya. Wetangula and Barasa Strengthen Political Control Amid Rising Ten is the central subject of the update.
 
 ## The Dynamics of Political Dominance in Western Kenya
 
