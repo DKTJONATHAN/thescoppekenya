@@ -372,10 +372,10 @@
     "f7d9b96859f00f3766d1959edea79b51",
     "3db86b0fa423bf567dd762322cd33625",
     "61e540ad3cb252144a6e697916b4f7a3",
-    "4ce3d3b9bf722443de6703a11102b7d5"
+    "4ce3d3b9bf722443de6703a11102b7d5",
+    "42fff807734252616761609af4204a2f"
   ],
   "style_history": [
-    "Power Accountability",
     "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
@@ -404,10 +404,10 @@
     "Reaction & Voices",
     "Explainer",
     "Context Backgrounder",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "accountability|Kenya Railways|Power Accountability",
     "accountability|Kenya|Hard News Lead",
     "story_progression|KMPDU|Reaction & Voices",
     "policy_gap|Thika Road|Context Backgrounder",
@@ -486,6 +486,7 @@
     "story_progression|Senate|Reaction & Voices",
     "next_48_hours|KAWU|Explainer",
     "money_follow|ODPP|Context Backgrounder",
-    "money_follow|BATUK|Hard News Lead"
+    "money_follow|BATUK|Hard News Lead",
+    "story_progression|Kenya Wildlife Service|Reaction & Voices"
   ]
 }
