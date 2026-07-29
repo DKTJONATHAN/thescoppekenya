@@ -1,18 +1,20 @@
 ---
 title: "Kenyan Commercial Bank Lending Rates Decline to Average 14.38 Percent"
 slug: "kenyan-commercial-bank-lending-rates-decline"
-description: "Commercial bank lending rates in Kenya dropped to 14.38 percent in June as the Central Bank maintained its policy rate at 8.75 percent amid market shifts."
+description: "Kenyan Commercial Bank Lending Rates Decline to Average 14.38 Per: Commercial bank lending rates in Kenya dropped to 14.38 percent in June as the Central Bank"
+excerpt: "The Cost of Capital Divide In June 2026, Kenyan commercial banks adjusted their average lending rates to 14.38 percent. While this headline"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/zhK7Gg6T/d2c3d17df9be.jpg"
 category: "Business"
 tags: ["kenya banking", "interest rates", "central bank of kenya", "business news", "kenyan economy"]
+canonical: "https://zandani.co.ke/article/kenyan-commercial-bank-lending-rates-decline"
 date: "2026-07-29T07:51:51Z"
 dateModified: "2026-07-29T07:51:51Z"
+focusKeyword: "Kenyan Commercial Bank Lending Rates Decline to Average 14.38 Per"
 schema: "NewsArticle"
 ---
 
-## The Cost of Capital Divide
+## The Cost of Capital Divide Kenyan Commercial Bank Lending Rates Decline to Average 14.38 Per is the central subject of the update.
 
 In June 2026, Kenyan commercial banks adjusted their average lending rates to 14.38 percent. While this headline figure suggests a degree of stability, it masks a complex and often volatile landscape for those seeking credit. A significant 8.4 percent spread currently exists between the most affordable and most expensive lenders, turning the choice of a financial institution into a defining factor for the fiscal health of households and businesses alike. 
 
