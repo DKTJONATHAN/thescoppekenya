@@ -1,18 +1,20 @@
 ---
 title: "Deputy President Kindiki Denies Reports of Friction with Ruto"
 slug: "deputy-president-kindiki-denies-reports-of-friction-with-ruto"
-description: "Deputy President Kithure Kindiki has dismissed viral social media claims of a power struggle with President William Ruto following a recent by-election loss."
+description: "Deputy President Kindiki Denies Reports of Friction with Ruto: Deputy President Kithure Kindiki has dismissed viral social media claims of a power struggle"
+excerpt: "The Digital Tug of War Over State House Harmony 'If Kindiki is not in trouble, why is the online chatter getting louder than a Nairobi matat"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/tPLy3p8p/71f1291c7d7d.jpg"
 category: "Gossip"
 tags: ["kenyan politics", "kithure kindiki", "william ruto", "uda", "executive leadership", "kenyan news"]
+canonical: "https://zandani.co.ke/article/deputy-president-kindiki-denies-reports-of-friction-with-ruto"
 date: "2026-07-29T09:02:48Z"
 dateModified: "2026-07-29T09:02:48Z"
+focusKeyword: "Deputy President Kindiki Denies Reports of Friction with Ruto"
 schema: "NewsArticle"
 ---
 
-## The Digital Tug of War Over State House Harmony
+## The Digital Tug of War Over State House Harmony Deputy President Kindiki Denies Reports of Friction with Ruto is the central subject of the update.
 
 "If Kindiki is not in trouble, why is the online chatter getting louder than a Nairobi matatu tout?" tweeted one user, capturing the mood that has gripped social media since the Ol Kalou by-election results sparked fresh questions about Executive stability.
 
