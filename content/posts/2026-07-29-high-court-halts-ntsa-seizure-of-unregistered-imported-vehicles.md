@@ -1,18 +1,20 @@
 ---
 title: "High Court Stops NTSA From Seizing Unregistered Imported Vehicles"
 slug: "high-court-halts-ntsa-seizure-of-unregistered-imported-vehicles"
-description: "The High Court has issued a temporary injunction against the NTSA, granting car dealers a 60-day grace period to register vehicles."
+description: "High Court Stops NTSA From Seizing Unregistered Imported Vehicles: The High Court has issued a temporary injunction against the NTSA, granting car dealers a"
+excerpt: "Regulatory Whiplash Stalls Digital Logistics The High Court has halted the NTSA from impounding unregistered imported vehicles, striking dow"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/BKGZYsfP/d216e519b5cc.jpg"
 category: "Technology"
 tags: ["ntsa", "kenya news", "high court", "car importers", "traffic act", "kenya business"]
+canonical: "https://zandani.co.ke/article/high-court-halts-ntsa-seizure-of-unregistered-imported-vehicles"
 date: "2026-07-29T13:08:56Z"
 dateModified: "2026-07-29T13:08:56Z"
+focusKeyword: "High Court Stops NTSA From Seizing Unregistered Imported Vehicles"
 schema: "NewsArticle"
 ---
 
-## Regulatory Whiplash Stalls Digital Logistics
+## Regulatory Whiplash Stalls Digital Logistics High Court Stops NTSA From Seizing Unregistered Imported Vehicles is the central subject of the update.
 
 The High Court has halted the NTSA from impounding unregistered imported vehicles, striking down a seven-day ultimatum that threatened to paralyze thousands of automotive businesses. This ruling highlights a widening disconnect between aggressive digital enforcement and the practical realities of Kenya's automotive supply chain.
 
