@@ -1,18 +1,20 @@
 ---
 title: "Former FIFA official labels global football body a political cartel"
 slug: "former-fifa-official-labels-global-football-body-a-political-cartel"
-description: "Ex-FIFA governance chair Miguel Maduro argues that the organization uses financial distribution to maintain power and requires external regulation."
+description: "Former FIFA official labels global football body a political cart: Ex-FIFA governance chair Miguel Maduro argues that the organization uses financial"
+excerpt: "The Financial Leash Binding Local Football The strategic allocation of FIFA development grants functions as a quiet architect of regional fo"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/RT4yx95F/9b3235ca0843.jpg"
 category: "Sports"
 tags: ["fifa", "football governance", "sports politics", "kenyan football", "football regulation", "gianni infantino"]
+canonical: "https://zandani.co.ke/article/former-fifa-official-labels-global-football-body-a-political-cartel"
 date: "2026-07-29T12:25:02Z"
 dateModified: "2026-07-29T12:25:02Z"
+focusKeyword: "Former FIFA official labels global football body a political cart"
 schema: "NewsArticle"
 ---
 
-## The Financial Leash Binding Local Football
+## The Financial Leash Binding Local Football Former FIFA official labels global football body a political cart is the central subject of the update.
 
 The strategic allocation of FIFA development grants functions as a quiet architect of regional football administration. By transforming administrative autonomy into a dependency trap, these funds insulate leadership from genuine accountability and solidify stagnant power structures across the African continent.
 
