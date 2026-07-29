@@ -195,10 +195,10 @@
     "1357d25c18fe232bfef1106959416e8a",
     "9fab6571bd3041c39686f0a65d9e3273",
     "74d0bffc04972209f3323ca2b71c127c",
-    "150b2c1c5badda69cc9951f15b64a690"
+    "150b2c1c5badda69cc9951f15b64a690",
+    "58dbeb974d05399c381ae84f1db80965"
   ],
   "style_history": [
-    "Counterpoint",
     "Sharp Column",
     "Historical Lens",
     "Personal Reflection",
@@ -227,10 +227,10 @@
     "Sharp Column",
     "Personal Reflection",
     "Counterpoint",
-    "Historical Lens"
+    "Historical Lens",
+    "Sharp Column"
   ],
   "angle_history": [
-    "accountability|elections|Letter Form",
     "winners_losers|wealth taxation|Counterpoint",
     "policy_gap|chronic pain|Sharp Column",
     "impact_on_citizens|wellbeing|Personal Reflection",
@@ -309,6 +309,7 @@
     "winners_losers|Kenya|Sharp Column",
     "story_progression|Nairobi Metropolitan Police|Personal Reflection",
     "myth_vs_fact|scholarships|Counterpoint",
-    "story_progression|urban planning|Historical Lens"
+    "story_progression|urban planning|Historical Lens",
+    "winners_losers|African cinema|Sharp Column"
   ]
 }
