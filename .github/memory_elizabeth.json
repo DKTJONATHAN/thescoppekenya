@@ -166,10 +166,10 @@
     "afdd9a9c0205c9de908f3b4cc870eb83",
     "51964ab39a63827cc5a3bd8f6a907663",
     "79466acea0cd138d11fbcc1d6eaed583",
-    "f2e207e1a623fdf4ac57d3b6f7f52f68"
+    "f2e207e1a623fdf4ac57d3b6f7f52f68",
+    "0f955fc292285630cf0be67f63ada459"
   ],
   "style_history": [
-    "Explainer",
     "Critical Take",
     "Hard News Lead",
     "Africa Angle",
@@ -198,10 +198,10 @@
     "Explainer",
     "Critical Take",
     "Hard News Lead",
-    "Backgrounder"
+    "Backgrounder",
+    "Africa Angle"
   ],
   "angle_history": [
-    "timeline_shift|Ted Turner|Africa Angle",
     "myth_vs_fact|cybersecurity|Hard News Lead",
     "money_follow|eCitizen|Critical Take",
     "money_follow|Safaricom|Explainer",
@@ -280,6 +280,7 @@
     "winners_losers|DCI|Explainer",
     "myth_vs_fact|productivity app|Critical Take",
     "next_48_hours|CXMT|Hard News Lead",
-    "story_progression|X Money|Backgrounder"
+    "story_progression|X Money|Backgrounder",
+    "policy_gap|NTSA|Africa Angle"
   ]
 }
