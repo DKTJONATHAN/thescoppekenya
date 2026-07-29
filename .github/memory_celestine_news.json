@@ -375,10 +375,10 @@
     "4ce3d3b9bf722443de6703a11102b7d5",
     "42fff807734252616761609af4204a2f",
     "f87e60057f41ef3646e0cabfa93f2180",
-    "f56efafdcbb468019f051dcd9c07a53c"
+    "f56efafdcbb468019f051dcd9c07a53c",
+    "c3c7f77dce98362ae6e1aa8f459726a3"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Power Accountability",
     "Reaction & Voices",
     "Hard News Lead",
@@ -407,10 +407,10 @@
     "Hard News Lead",
     "Reaction & Voices",
     "Power Accountability",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "policy_gap|Thika Road|Context Backgrounder",
     "policy_gap|emerald|Power Accountability",
     "winners_losers|Kenyan Shilling|Hard News Lead",
     "winners_losers|Real Estate|Reaction & Voices",
@@ -489,6 +489,7 @@
     "money_follow|BATUK|Hard News Lead",
     "story_progression|Kenya Wildlife Service|Reaction & Voices",
     "money_follow|Mining|Power Accountability",
-    "money_follow|kenyan politics|Explainer"
+    "money_follow|kenyan politics|Explainer",
+    "accountability|Kenya Power|Hard News Lead"
   ]
 }
