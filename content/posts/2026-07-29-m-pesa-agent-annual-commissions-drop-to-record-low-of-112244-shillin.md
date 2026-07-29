@@ -1,7 +1,8 @@
 ---
 title: "M-Pesa agent annual commissions drop to record low of 112244 shillings"
 slug: "m-pesa-agent-annual-commissions-drop-to-record-low-of-112244-shillin"
-description: "M-Pesa agent average annual commissions fell to a record low of 112,244 shillings in March 2026, reflecting financial strain on local mobile money operators."
+description: "M-Pesa agent annual commissions drop to record low of 112244 shil: M-Pesa agent average annual commissions fell to a record low of 112,244 shillings in March"
+excerpt: "For the year ending March 2026, the Central Bank of Kenya reported that average annual commissions for M Pesa agents fell to a record low of"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/VWdyRddt/e28408df632a.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["m-pesa-commissions", "safaricom-agents", "mobile-money-kenya", "fintech-earnings", "mpesa-business"]
 canonical: "https://zandani.co.ke/article/m-pesa-agent-annual-commissions-drop-to-record-low-of-112244-shillin"
 date: "2026-07-29T14:30:53Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-29T14:30:53Z"
+focusKeyword: "M-Pesa agent annual commissions drop to record low of 112244 shil"
 schema: "NewsArticle"
 ---
-For the year ending March 2026, the Central Bank of Kenya reported that average annual commissions for M-Pesa agents fell to a record low of 112,244 shillings. This decline, averaging 9,353 shillings per month, reflects the mounting financial pressures facing local mobile money operators.
+
+For the year ending March 2026, the Central Bank of Kenya reported that average annual commissions for M-Pesa agents fell to a record low of 112,244 shillings. This decline, averaging 9,353 shillings per month, reflects the mounting financial pressures facing local mobile money operators. M-Pesa agent annual commissions drop to record low of 112244 shil is the central subject of the update.
 
 ## The decline of the mobile money agent
 
