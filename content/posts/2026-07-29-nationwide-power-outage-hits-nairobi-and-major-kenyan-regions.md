@@ -1,18 +1,20 @@
 ---
 title: "Nationwide Power Outage Hits Nairobi and Major Kenyan Regions"
 slug: "nationwide-power-outage-hits-nairobi-and-major-kenyan-regions"
-description: "A widespread power failure hit Nairobi and other regions on July 29, disrupting transport hubs and residential areas with no official cause yet stated."
+description: "Nationwide Power Outage Hits Nairobi and Major Kenyan Regions: A widespread power failure hit Nairobi and other regions on July 29, disrupting transport hubs"
+excerpt: "The Governance of Silence During Grid Collapse A prolonged and unexplained loss of electrical power across Kenya since 8:30pm on Wednesday h"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/8nJN5R0f/135bf4be5f51.webp"
 category: "News"
 tags: ["kenya power", "blackout", "nairobi news", "energy sector", "za ndani"]
+canonical: "https://zandani.co.ke/article/nationwide-power-outage-hits-nairobi-and-major-kenyan-regions"
 date: "2026-07-29T18:11:06Z"
 dateModified: "2026-07-29T18:11:06Z"
+focusKeyword: "Nationwide Power Outage Hits Nairobi and Major Kenyan Regions"
 schema: "NewsArticle"
 ---
 
-## The Governance of Silence During Grid Collapse
+## The Governance of Silence During Grid Collapse Nationwide Power Outage Hits Nairobi and Major Kenyan Regions is the central subject of the update.
 
 A prolonged and unexplained loss of electrical power across Kenya since 8:30pm on Wednesday has paralyzed critical infrastructure, with Energy Cabinet Secretary Opiyo Wandayi and Kenya Power remaining silent on the cause or expected recovery timeline.
 
