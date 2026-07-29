@@ -1,18 +1,20 @@
 ---
 title: "Nyandarua Governor Kiarie Badilisha defects from UDA to DCP"
 slug: "nyandarua-governor-kiarie-badilisha-defects-uda-dcp"
-description: "Nyandarua Governor Kiarie Badilisha and county assembly members join Rigathi Gachagua's DCP, signaling significant political shifts in Mt Kenya region."
+description: "Nyandarua Governor Kiarie Badilisha defects from UDA to DCP: Nyandarua Governor Kiarie Badilisha and county assembly members join Rigathi Gachagua's DCP,"
+excerpt: "Why Governor Badilisha’s Jump to DCP Matters for Your Wallet Governor Kiarie Badilisha officially moved his allegiance from the United Democ"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/F4gMFdwc/6a906ced1ad4.webp"
 category: "News"
 tags: ["kenyan politics", "nyandarua county", "rigathi gachagua", "uda", "dcp", "mt kenya politics"]
+canonical: "https://zandani.co.ke/article/nyandarua-governor-kiarie-badilisha-defects-uda-dcp"
 date: "2026-07-29T13:03:58Z"
 dateModified: "2026-07-29T13:03:58Z"
+focusKeyword: "Nyandarua Governor Kiarie Badilisha defects from UDA to DCP"
 schema: "NewsArticle"
 ---
 
-## Why Governor Badilisha’s Jump to DCP Matters for Your Wallet
+## Why Governor Badilisha’s Jump to DCP Matters for Your Wallet Nyandarua Governor Kiarie Badilisha defects from UDA to DCP is the central subject of the update.
 
 Governor Kiarie Badilisha officially moved his allegiance from the United Democratic Alliance to the Democracy for the Citizens Party this morning, July 29, 2026. This shift creates immediate uncertainty for how county development funds and national government projects will be managed in Nyandarua moving forward.
 
