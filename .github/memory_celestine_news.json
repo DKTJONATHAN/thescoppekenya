@@ -373,10 +373,10 @@
     "3db86b0fa423bf567dd762322cd33625",
     "61e540ad3cb252144a6e697916b4f7a3",
     "4ce3d3b9bf722443de6703a11102b7d5",
-    "42fff807734252616761609af4204a2f"
+    "42fff807734252616761609af4204a2f",
+    "f87e60057f41ef3646e0cabfa93f2180"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
     "Power Accountability",
@@ -405,10 +405,10 @@
     "Explainer",
     "Context Backgrounder",
     "Hard News Lead",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "accountability|Kenya|Hard News Lead",
     "story_progression|KMPDU|Reaction & Voices",
     "policy_gap|Thika Road|Context Backgrounder",
     "policy_gap|emerald|Power Accountability",
@@ -487,6 +487,7 @@
     "next_48_hours|KAWU|Explainer",
     "money_follow|ODPP|Context Backgrounder",
     "money_follow|BATUK|Hard News Lead",
-    "story_progression|Kenya Wildlife Service|Reaction & Voices"
+    "story_progression|Kenya Wildlife Service|Reaction & Voices",
+    "money_follow|Mining|Power Accountability"
   ]
 }
