@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Schedules Maintenance Outages Across Four Counties"
 slug: "kenya-power-scheduled-maintenance-outages-july-30"
-description: "Kenya Power has announced scheduled electricity maintenance for July 30, affecting neighborhoods in Nairobi, Nyeri, Kwale, and Mombasa counties."
+description: "Kenya Power Schedules Maintenance Outages Across Four Counties: Kenya Power has announced scheduled electricity maintenance for July 30, affecting"
+excerpt: "The Silicon Savannah Stalls Out Kenya’s digital ambitions face a reality check today, July 30, as a massive electrical grid maintenance oper"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/99d3hxY9/c3868dc36f66.jpg"
 category: "Gossip"
 tags: ["kenya power", "power outage", "kenya news", "infrastructure", "electricity maintenance"]
+canonical: "https://zandani.co.ke/article/kenya-power-scheduled-maintenance-outages-july-30"
 date: "2026-07-30T08:45:41Z"
 dateModified: "2026-07-30T08:45:41Z"
+focusKeyword: "Kenya Power Schedules Maintenance Outages Across Four Counties"
 schema: "NewsArticle"
 ---
 
-## The Silicon Savannah Stalls Out
+## The Silicon Savannah Stalls Out Kenya Power Schedules Maintenance Outages Across Four Counties is the central subject of the update.
 
 Kenya’s digital ambitions face a reality check today, July 30, as a massive electrical grid maintenance operation forces a wide swath of the country into temporary analog living. Spanning Nairobi, Nyeri, Kwale, and Mombasa, this planned network upgrade has effectively paused the momentum of the nation’s tech-forward workforce. For eight hours, from 9:00 a.m. to 5:00 p.m., the promise of uninterrupted, high-speed connectivity-the bedrock of the Silicon Savannah-will be sidelined by essential infrastructure work. While Kwale residents might see power restored an hour early at 4:00 p.m., the vast majority of those affected are facing an entire workday in the dark. This is more than a minor inconvenience. It represents a recurring friction point for the thousands of remote professionals, digital freelancers, and students whose careers depend on constant access to the global web.
 
