@@ -1,18 +1,20 @@
 ---
 title: "Parliament probes KEBS over 27000 tonne sugar import inquiry"
 slug: "parliament-probes-kebs-over-sugar-import-scandal"
-description: "KEBS officials defend the approval of a massive sugar consignment amid a parliamentary investigation into tax exemptions and supply oversight."
+description: "Parliament probes KEBS over 27000 tonne sugar import inquiry: KEBS officials defend the approval of a massive sugar consignment amid a parliamentary"
+excerpt: "Brewing Trouble: The Mystery of the Port’s Missing Tax Revenue The Kenya Bureau of Standards is currently operating behind a wall of bureauc"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/cKCZ4NCL/5350f068d327.jpg"
 category: "Business"
 tags: ["kebs", "sugar importation", "parliamentary inquiry", "kenya news", "economic regulation", "tax evasion"]
+canonical: "https://zandani.co.ke/article/parliament-probes-kebs-over-sugar-import-scandal"
 date: "2026-07-30T07:41:33Z"
 dateModified: "2026-07-30T07:41:33Z"
+focusKeyword: "Parliament probes KEBS over 27000 tonne sugar import inquiry"
 schema: "NewsArticle"
 ---
 
-## Brewing Trouble: The Mystery of the Port’s Missing Tax Revenue
+## Brewing Trouble: The Mystery of the Port’s Missing Tax Revenue Parliament probes KEBS over 27000 tonne sugar import inquiry is the central subject of the update.
 
 The Kenya Bureau of Standards is currently operating behind a wall of bureaucratic labels to protect a 27,000-tonne sugar consignment. While officials insist this shipment is strictly for industrial refining, the underlying fiscal math tells a story of tax avoidance that local markets are already beginning to register. At a valuation of KSh 3 billion, this supply chain anomaly is far too large to escape scrutiny, regardless of how neatly it is filed under regulatory headers.
 
