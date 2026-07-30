@@ -258,10 +258,10 @@
     "7a0dba3cbf150638b2b407ed63e4143c",
     "c8a61d2c4a2a30146e8dc71e86b5b657",
     "39dcdf99d02071374a4c3a69fc6c0c3b",
-    "8ea5fd60671854e70fa124df210e1a99"
+    "8ea5fd60671854e70fa124df210e1a99",
+    "c8fb383e590477a20d6a18d80784fc28"
   ],
   "style_history": [
-    "Match Report",
     "Stat Story",
     "Player Profile Beat",
     "Cynical Pundit",
@@ -290,10 +290,10 @@
     "Cynical Pundit",
     "Match Report",
     "Player Profile Beat",
-    "Tactical Take"
+    "Tactical Take",
+    "Stat Story"
   ],
   "angle_history": [
-    "money_follow|Premier League|Cynical Pundit",
     "accountability|League One|Player Profile Beat",
     "myth_vs_fact|Premier League|Tactical Take",
     "timeline_shift|Tottenham Hotspur|Stat Story",
@@ -372,6 +372,7 @@
     "accountability|Liverpool FC|Cynical Pundit",
     "next_48_hours|transfer market|Match Report",
     "myth_vs_fact|football|Player Profile Beat",
-    "money_follow|FIFA|Tactical Take"
+    "money_follow|FIFA|Tactical Take",
+    "money_follow|Premier League|Stat Story"
   ]
 }
