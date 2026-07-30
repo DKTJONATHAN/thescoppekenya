@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Customers Unable to Purchase Prepaid Tokens After Outage"
 slug: "kenya-power-customers-unable-to-purchase-prepaid-tokens"
-description: "Kenya Power customers face nationwide difficulties buying prepaid electricity tokens via mobile money following a major grid failure."
+description: "Kenya Power Customers Unable to Purchase Prepaid Tokens After Out: Kenya Power customers face nationwide difficulties buying prepaid electricity tokens via"
+excerpt: "Why the Prepaid Token System Remains Offline The national grid flickered back to life at dawn, yet millions of households are finding their"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/pjqbty5w/9d81d1fe2353.webp"
 category: "Technology"
 tags: ["kenya power", "kplc", "m-pesa", "blackout", "energy", "kenyan news"]
+canonical: "https://zandani.co.ke/article/kenya-power-customers-unable-to-purchase-prepaid-tokens"
 date: "2026-07-30T12:55:47Z"
 dateModified: "2026-07-30T12:55:47Z"
+focusKeyword: "Kenya Power Customers Unable to Purchase Prepaid Tokens After Out"
 schema: "NewsArticle"
 ---
 
-## Why the Prepaid Token System Remains Offline
+## Why the Prepaid Token System Remains Offline Kenya Power Customers Unable to Purchase Prepaid Tokens After Out is the central subject of the update.
 
 The national grid flickered back to life at dawn, yet millions of households are finding their meters remain dead silent. While power lines carry current again, the digital gateway connecting your mobile money wallet to the utility server is currently caught in a bottleneck of its own.
 
