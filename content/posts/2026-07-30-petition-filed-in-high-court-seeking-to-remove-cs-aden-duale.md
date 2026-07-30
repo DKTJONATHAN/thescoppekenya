@@ -1,18 +1,20 @@
 ---
 title: "Petition filed in High Court seeking to remove CS Aden Duale"
 slug: "petition-filed-in-high-court-seeking-to-remove-cs-aden-duale"
-description: "Petitioners are seeking the removal of Health CS Aden Duale from office over allegations of ethnic incitement and failure to honor NCIC summons."
+description: "Petition filed in High Court seeking to remove CS Aden Duale: Petitioners are seeking the removal of Health CS Aden Duale from office over allegations of"
+excerpt: "The Duale Doctrine and the Death of Oversight A formal petition filed at the High Court now seeks to strip Cabinet Secretary Aden Duale of h"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/YF4CnBH9/ffc717f29ccb.webp"
 category: "News"
 tags: ["aden duale", "high court", "ncic", "kenya politics", "leadership and integrity", "mandera"]
+canonical: "https://zandani.co.ke/article/petition-filed-in-high-court-seeking-to-remove-cs-aden-duale"
 date: "2026-07-30T12:49:04Z"
 dateModified: "2026-07-30T12:49:04Z"
+focusKeyword: "Petition filed in High Court seeking to remove CS Aden Duale"
 schema: "NewsArticle"
 ---
 
-## The Duale Doctrine and the Death of Oversight
+## The Duale Doctrine and the Death of Oversight Petition filed in High Court seeking to remove CS Aden Duale is the central subject of the update.
 
 A formal petition filed at the High Court now seeks to strip Cabinet Secretary Aden Duale of his office, challenging his recent conduct in Mandera County. The move forces a confrontation between ministerial prerogative and the statutory authority of independent oversight institutions.
 
