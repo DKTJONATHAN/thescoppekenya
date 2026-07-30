@@ -377,10 +377,10 @@
     "f87e60057f41ef3646e0cabfa93f2180",
     "f56efafdcbb468019f051dcd9c07a53c",
     "c3c7f77dce98362ae6e1aa8f459726a3",
-    "6302bf3ebd31fdc51167b0e9a7d3c64b"
+    "6302bf3ebd31fdc51167b0e9a7d3c64b",
+    "40d83429247f8e50894e656ffdf48629"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
@@ -409,10 +409,10 @@
     "Power Accountability",
     "Explainer",
     "Hard News Lead",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Power Accountability"
   ],
   "angle_history": [
-    "winners_losers|Kenyan Shilling|Hard News Lead",
     "winners_losers|Real Estate|Reaction & Voices",
     "myth_vs_fact|Pharmacy and Poisons Board|Explainer",
     "policy_gap|Communications Authority of Kenya|Power Accountability",
@@ -491,6 +491,7 @@
     "money_follow|Mining|Power Accountability",
     "money_follow|kenyan politics|Explainer",
     "accountability|Kenya Power|Hard News Lead",
-    "money_follow|University of Nairobi|Context Backgrounder"
+    "money_follow|University of Nairobi|Context Backgrounder",
+    "accountability|Aden Duale|Power Accountability"
   ]
 }
