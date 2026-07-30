@@ -269,10 +269,10 @@
     "242f22645b3302b7aae31e714ca1712c",
     "604db9dc01625460b75e91a24343e10e",
     "1d02d4d7029d1f848c922dc2bb544432",
-    "662d3ca9fae51165dfff810db6106ce3"
+    "662d3ca9fae51165dfff810db6106ce3",
+    "b183eb8fdcffa1ec3197f89bae75945f"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Hard News Lead",
     "Profile Beat",
     "Trend Take",
@@ -301,10 +301,10 @@
     "Trend Take",
     "Profile Beat",
     "Receipts Piece",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
-    "policy_gap|femicide|Receipts Piece",
     "policy_gap|Impeachment|Profile Beat",
     "timeline_shift|Dr. Ofweneke|Hard News Lead",
     "accountability|Kenya|Reaction Round-up",
@@ -383,6 +383,7 @@
     "policy_gap|human trafficking|Trend Take",
     "winners_losers|Kenya Power|Profile Beat",
     "money_follow|Kenya politics|Receipts Piece",
-    "myth_vs_fact|Kenyan Politics|Reaction Round-up"
+    "myth_vs_fact|Kenyan Politics|Reaction Round-up",
+    "timeline_shift|Kenya Power|Trend Take"
   ]
 }
