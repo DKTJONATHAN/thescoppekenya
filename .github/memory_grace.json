@@ -204,10 +204,10 @@
     "c24aa633ead5db532f5d224ff26059cf",
     "7463e824161c450bd1dfa8cb81a6b800",
     "e2c208c0d0795ad008733316ad018aac",
-    "90e483e14a6ae9904f33b48b0a2bcbea"
+    "90e483e14a6ae9904f33b48b0a2bcbea",
+    "10d6d7134cbf2d7ceca6ac229419beba"
   ],
   "style_history": [
-    "Power Accountability",
     "Markets Report",
     "SME Angle",
     "Backgrounder",
@@ -236,10 +236,10 @@
     "Backgrounder",
     "Explainer",
     "SME Angle",
-    "Markets Report"
+    "Markets Report",
+    "Power Accountability"
   ],
   "angle_history": [
-    "impact_on_citizens|Public Debt|Explainer",
     "accountability|East African Community|Power Accountability",
     "impact_on_citizens|Ebola|SME Angle",
     "timeline_shift|transport-strike|Backgrounder",
@@ -318,6 +318,7 @@
     "timeline_shift|Dangote Refinery|Backgrounder",
     "money_follow|NSE|Explainer",
     "winners_losers|Cloudflare|SME Angle",
-    "winners_losers|Kenya banking sector|Markets Report"
+    "winners_losers|Kenya banking sector|Markets Report",
+    "money_follow|KEBS|Power Accountability"
   ]
 }
