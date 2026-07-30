@@ -1,18 +1,20 @@
 ---
 title: "Former University of Nairobi Chancellor Dr. Vijoo Rattansi Dies"
 slug: "former-uon-chancellor-dr-vijoo-rattansi-passes-away"
-description: "The nation mourns the passing of Dr. Vijoo Rattansi, a champion of education who served as Chancellor of the University of Nairobi for over a decade."
+description: "Former University of Nairobi Chancellor Dr. Vijoo Rattansi Dies: The nation mourns the passing of Dr. Vijoo Rattansi, a champion of education who served as"
+excerpt: "Beyond the Chancellor: The Private Engine of Public Degrees The University of Nairobi confirmed the passing of Dr. Vijoo Rattansi this Thurs"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/jZs3r11N/79e1af7328b4.webp"
 category: "News"
 tags: ["university of nairobi", "dr vijoo rattansi", "kenya education", "rattansi educational trust", "obituary", "philanthropy"]
+canonical: "https://zandani.co.ke/article/former-uon-chancellor-dr-vijoo-rattansi-passes-away"
 date: "2026-07-30T07:38:12Z"
 dateModified: "2026-07-30T07:38:12Z"
+focusKeyword: "Former University of Nairobi Chancellor Dr. Vijoo Rattansi Dies"
 schema: "NewsArticle"
 ---
 
-## Beyond the Chancellor: The Private Engine of Public Degrees
+## Beyond the Chancellor: The Private Engine of Public Degrees Former University of Nairobi Chancellor Dr. Vijoo Rattansi Dies is the central subject of the update.
 
 The University of Nairobi confirmed the passing of Dr. Vijoo Rattansi this Thursday, closing a chapter on a decade of stewardship that redirected the institution’s reliance from dwindling state coffers toward the strategic deployment of private endowment capital for student welfare.
 
