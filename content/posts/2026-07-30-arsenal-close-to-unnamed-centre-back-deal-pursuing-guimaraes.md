@@ -1,15 +1,20 @@
 ---
 title: "Arsenal close to unnamed centre-back deal, pursuing Guimaraes"
 slug: "arsenal-close-to-unnamed-centre-back-deal-pursuing-guimaraes"
+description: "Arsenal close to unnamed centre-back deal, pursuing Guimaraes: Arsenal's Shady Centre Back Scramble and Guimaraes Gamble Arsenal's transfer window continues"
+excerpt: "Arsenal's Shady Centre Back Scramble and Guimaraes Gamble Arsenal's transfer window continues its familiar chaotic dance. Amid claims of an"
 author: "Sports Desk"
 image: "https://i.ibb.co/SwmqnNDp/6e804438742a.jpg"
 category: "Global News"
+tags: ["arsenal close to unnamed centre back deal pursuing guimaraes", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/arsenal-close-to-unnamed-centre-back-deal-pursuing-guimaraes"
 date: "2026-07-30T16:39:27Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-07-30T16:39:27Z"
+focusKeyword: "Arsenal close to unnamed centre-back deal, pursuing Guimaraes"
 schema: "NewsArticle"
 ---
-## Arsenal's Shady Centre-Back Scramble and Guimaraes Gamble
+
+## Arsenal's Shady Centre-Back Scramble and Guimaraes Gamble Arsenal close to unnamed centre-back deal, pursuing Guimaraes is the central subject of the update.
 
 Arsenal's transfer window continues its familiar chaotic dance. Amid claims of an imminent, unnamed centre-back signing - a desperate fix for Saliba's injury - the club also appears set to poach Bruno Guimaraes from a vulnerable Newcastle. While "building for the future" with academy prospects, the current strategy smacks more of panic than precision.
 
