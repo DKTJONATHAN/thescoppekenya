@@ -1,18 +1,20 @@
 ---
 title: "Shorn Arwa Discusses Relationship Habits and Childhood Challenges"
 slug: "shorn-arwa-discusses-relationship-habits-and-childhood-challenges"
-description: "Content creator Shorn Arwa has opened up about her changing personality in romantic relationships and the difficult history with her brother."
+description: "Shorn Arwa Discusses Relationship Habits and Childhood Challenges: Content creator Shorn Arwa has opened up about her changing personality in romantic"
+excerpt: "Shorn Arwa Opens Up on Childhood Trauma and Emotional Shifts Content creator Shorn Arwa has publicly addressed her tendency to experience sh"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/tWNVdCL/3b8398adcd32.webp"
 category: "Gossip"
 tags: ["shorn arwa", "kenyan celebrities", "relationships", "kenyan content creators", "kenyan entertainment"]
+canonical: "https://zandani.co.ke/article/shorn-arwa-discusses-relationship-habits-and-childhood-challenges"
 date: "2026-07-30T10:35:01Z"
 dateModified: "2026-07-30T10:35:01Z"
+focusKeyword: "Shorn Arwa Discusses Relationship Habits and Childhood Challenges"
 schema: "NewsArticle"
 ---
 
-## Shorn Arwa Opens Up on Childhood Trauma and Emotional Shifts
+## Shorn Arwa Opens Up on Childhood Trauma and Emotional Shifts Shorn Arwa Discusses Relationship Habits and Childhood Challenges is the central subject of the update.
 
 Content creator Shorn Arwa has publicly addressed her tendency to experience shifting emotional states within romantic partnerships, attributing these patterns to formative domestic conflicts experienced during her upbringing. Her recent interview highlights a connection between early life stressors and adult attachment behaviors.
 
