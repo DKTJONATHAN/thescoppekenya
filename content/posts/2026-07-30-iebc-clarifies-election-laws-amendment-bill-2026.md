@@ -1,18 +1,20 @@
 ---
 title: "IEBC Clarifies Proposed Election Law Changes for Polls"
 slug: "iebc-clarifies-election-laws-amendment-bill-2026"
-description: "The IEBC has dismissed claims that the proposed election law changes will abolish result livestreaming or return Kenya to manual transmission methods."
+description: "IEBC Clarifies Proposed Election Law Changes for Polls: The IEBC has dismissed claims that the proposed election law changes will abolish result livestreaming"
+excerpt: "The Digital Trauma of Manual Transmission For many Kenyans, the word manual in the context of an election is not a technical term, but a sir"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/pvbwwFMd/2675f8d4a0d4.webp"
 category: "News"
 tags: ["iebc", "kenya politics", "general election", "election laws", "kenyan news"]
+canonical: "https://zandani.co.ke/article/iebc-clarifies-election-laws-amendment-bill-2026"
 date: "2026-07-30T18:20:11Z"
 dateModified: "2026-07-30T18:20:11Z"
+focusKeyword: "IEBC Clarifies Proposed Election Law Changes for Polls"
 schema: "NewsArticle"
 ---
 
-## The Digital Trauma of Manual Transmission
+## The Digital Trauma of Manual Transmission IEBC Clarifies Proposed Election Law Changes for Polls is the central subject of the update.
 
 For many Kenyans, the word manual in the context of an election is not a technical term, but a siren song of past catastrophe. The mere suggestion that the ballot count might drift away from digital screens has triggered a visceral, collective panic across social media and village barazas, as citizens scramble to ensure the lessons of 2007 are not buried under new legislation.
 
