@@ -1,18 +1,20 @@
 ---
 title: "Eddie Howe resigns as Newcastle United manager"
 slug: "eddie-howe-resigns-as-newcastle-united-manager"
-description: "Eddie Howe has stepped down as Newcastle United manager following growing tensions over the club transfer strategy and recent player sales. Matthias Jaissle is currently the lead candidate to replace him at St James Park."
+description: "Eddie Howe resigns as Newcastle United manager: Eddie Howe has stepped down as Newcastle United manager following growing tensions over the club transfer"
+excerpt: "The Cost of Compliance: Newcastle United Manager Change Eddie Howe has officially resigned as Newcastle United manager, marking the end of a"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/LXd4TL4h/d95a88c8eada.jpg"
 category: "Sports"
 tags: ["premier league", "newcastle united", "eddie howe", "football news", "international sports", "kenya sports"]
+canonical: "https://zandani.co.ke/article/eddie-howe-resigns-as-newcastle-united-manager"
 date: "2026-07-30T12:08:54Z"
 dateModified: "2026-07-30T12:08:54Z"
+focusKeyword: "Eddie Howe resigns as Newcastle United manager"
 schema: "NewsArticle"
 ---
 
-## The Cost of Compliance: Newcastle United Manager Change
+## The Cost of Compliance: Newcastle United Manager Change Eddie Howe resigns as Newcastle United manager is the central subject of the update.
 
 Eddie Howe has officially resigned as Newcastle United manager, marking the end of a tenure defined by the tightening grip of Profit and Sustainability Rules. His departure highlights the irreconcilable tension between ambitious Saudi-backed ownership and the restrictive financial guardrails of the Premier League.
 
