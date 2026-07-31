@@ -1,18 +1,20 @@
 ---
 title: "Central Bank of Kenya Launches Record KSh 150 Billion Bond Offer"
 slug: "cbk-launches-record-ksh-150-billion-infrastructure-bond-offer"
-description: "The Central Bank of Kenya has announced its largest ever domestic infrastructure bond offer aiming to raise KSh 150 billion to fund the national budget."
+description: "Central Bank of Kenya Launches Record KSh 150 Billion Bond Offer: The Central Bank of Kenya has announced its largest ever domestic infrastructure bond offer"
+excerpt: "A Record Debt Shift for the State The Central Bank of Kenya has officially invited subscriptions for a KSh 150 billion infrastructure bond,"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/N2MdvSKJ/c23da3e29b23.png"
 category: "Business"
 tags: ["central bank of kenya", "infrastructure bonds", "kenyan economy", "government debt", "fiscal policy", "nairobi business"]
+canonical: "https://zandani.co.ke/article/cbk-launches-record-ksh-150-billion-infrastructure-bond-offer"
 date: "2026-07-31T08:08:01Z"
 dateModified: "2026-07-31T08:08:01Z"
+focusKeyword: "Central Bank of Kenya Launches Record KSh 150 Billion Bond Offer"
 schema: "NewsArticle"
 ---
 
-## A Record Debt Shift for the State
+## A Record Debt Shift for the State Central Bank of Kenya Launches Record KSh 150 Billion Bond Offer is the central subject of the update.
 
 The Central Bank of Kenya has officially invited subscriptions for a KSh 150 billion infrastructure bond, setting a new benchmark as the largest domestic debt mobilization in the country's history. This issuance is designed to stabilize the 2026/27 fiscal deficit through long-dated obligations, illustrating a strategic change in how the national treasury manages the balance between capital expenditure requirements and immediate liquidity pressures.
 
