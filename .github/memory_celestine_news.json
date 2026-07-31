@@ -381,10 +381,10 @@
     "40d83429247f8e50894e656ffdf48629",
     "dede7ebd6264eb7e7f494705e05ece57",
     "790e0fb4883eced001c1af0cbc1dd430",
-    "3cd267b4c139d2cc1cbe6cfc678b56b3"
+    "3cd267b4c139d2cc1cbe6cfc678b56b3",
+    "4860671f9be7fae4d68bda9c4cc3e512"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Power Accountability",
     "Hard News Lead",
     "Explainer",
@@ -413,10 +413,10 @@
     "Power Accountability",
     "Reaction & Voices",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "accountability|DCI|Hard News Lead",
     "policy_gap|security|Context Backgrounder",
     "winners_losers|DCI|Reaction & Voices",
     "money_follow|Kenya|Power Accountability",
@@ -495,6 +495,7 @@
     "accountability|Aden Duale|Power Accountability",
     "myth_vs_fact|IEBC|Reaction & Voices",
     "accountability|CBK|Hard News Lead",
-    "myth_vs_fact|Nairobi|Explainer"
+    "myth_vs_fact|Nairobi|Explainer",
+    "policy_gap|Kenya|Context Backgrounder"
   ]
 }
