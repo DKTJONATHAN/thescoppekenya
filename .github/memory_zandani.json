@@ -335,10 +335,10 @@
     "ff445cb70ee7fc565827fdea1d98d3cd",
     "e46cd3bd592509f7529dbdd5810b192a",
     "f64c050dd974ea1f1800ea37cb13d74c",
-    "69e441721cd464a17c745c1a58810b9c"
+    "69e441721cd464a17c745c1a58810b9c",
+    "9ce3726be7662b8834a7d3dcffa86b33"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Receipts Piece",
     "Trend Take",
@@ -367,10 +367,10 @@
     "Reaction Round-up",
     "Receipts Piece",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "money_follow|Raila Odinga|Receipts Piece",
     "money_follow|Vurugu 2.0|Trend Take",
     "accountability|boy child movement|Profile Beat",
     "winners_losers|Akorino|Reaction Round-up",
@@ -449,6 +449,7 @@
     "story_progression|relationships|Reaction Round-up",
     "timeline_shift|Kenya|Receipts Piece",
     "policy_gap|healthcare|Profile Beat",
-    "myth_vs_fact|Shorn Arwa|Hard News Lead"
+    "myth_vs_fact|Shorn Arwa|Hard News Lead",
+    "next_48_hours|Tyla|Reaction Round-up"
   ]
 }
