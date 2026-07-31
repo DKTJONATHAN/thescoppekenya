@@ -1,21 +1,20 @@
 ---
-title: "Eddie Huang reveals Good Will Hunting helped him confront childhood abuse
+title: "'Eddie Huang reveals Good Will Hunting helped him confront childhood abuse"
 slug: "eddie-huang-good-will-hunting-childhood-abuse-trauma"
-description: "Celebrity chef Eddie Huang reveals how Good Will Hunting profoundly influenced him in processing and confronting his traumatic childhood abuse, including physical violence. Learn more."
+description: "'Eddie Huang reveals Good Will Hunting helped him confront childh: Celebrity chef Eddie Huang reveals how Good Will Hunting profoundly influenced him in"
+excerpt: "Eddie Huang on Good Will Hunting and Our Community's Call to Action Chef Eddie Huang's recent account of how the film Good Will Hunting vali"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/3YVCmQZx/0b5511ae1f1f.jpg"
-og_title: "Eddie Huang: Good Will Hunting helped me heal childhood trauma"
-og_description: "Chef Eddie Huang shared how the film 'Good Will Hunting' was pivotal in confronting his traumatic childhood and past abuse. It validated his feelings and aided his healing."
-focus_keyword: "eddie huang good will hunting"
 category: "Entertainment"
 tags: ["eddie huang", "good will hunting", "childhood abuse", "film impact", "celebrity chef", "trauma"]
+canonical: "https://zandani.co.ke/article/eddie-huang-good-will-hunting-childhood-abuse-trauma"
 date: "2026-07-31T16:19:23Z"
 dateModified: "2026-07-31T16:19:23Z"
+focusKeyword: "'Eddie Huang reveals Good Will Hunting helped him confront childh"
 schema: "NewsArticle"
 ---
 
-## Eddie Huang on *Good Will Hunting* and Our Community's Call to Action
+## Eddie Huang on *Good Will Hunting* and Our Community's Call to Action "Eddie Huang reveals Good Will Hunting helped him confront childh is the central subject of the update.
 
 Chef Eddie Huang's recent account of how the film *Good Will Hunting* validated his childhood trauma isn't just a celebrity anecdote. It serves as a potent reminder for us in Kenya to seriously consider our collective responsibility and the urgent need for intervention in cases of child abuse.
 
