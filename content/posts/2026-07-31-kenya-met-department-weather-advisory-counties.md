@@ -1,18 +1,20 @@
 ---
 title: "Kenya Met Department Issues Weather Advisory for 20 Counties"
 slug: "kenya-met-department-weather-advisory-counties"
-description: "The Kenya Meteorological Department has issued a 24-hour weather advisory warning of heavy rainfall, cool temperatures, and strong winds in parts of Kenya."
+description: "Kenya Met Department Issues Weather Advisory for 20 Counties: The Kenya Meteorological Department has issued a 24-hour weather advisory warning of heavy"
+excerpt: "Winds of Change: When the Hustle Meets the Horizon For Mama Njeri, who runs a makeshift fruit stall on the outskirts of Nakuru, a weather re"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/5Xnn7P6z/279b2620a470.png"
 category: "Gossip"
 tags: ["kenya weather", "met department", "rainfall", "weather advisory", "kenya news", "climate"]
+canonical: "https://zandani.co.ke/article/kenya-met-department-weather-advisory-counties"
 date: "2026-07-31T09:15:16Z"
 dateModified: "2026-07-31T09:15:16Z"
+focusKeyword: "Kenya Met Department Issues Weather Advisory for 20 Counties"
 schema: "NewsArticle"
 ---
 
-## Winds of Change: When the Hustle Meets the Horizon
+## Winds of Change: When the Hustle Meets the Horizon Kenya Met Department Issues Weather Advisory for 20 Counties is the central subject of the update.
 
 For Mama Njeri, who runs a makeshift fruit stall on the outskirts of Nakuru, a weather report is not just data on a screen. It is a calculation of whether her canopy will hold against the gusts or if her stock of mangoes will end up scattered in the mud. As the Kenya Meteorological Department flags high-speed winds reaching 25 knots across 11 counties this Friday, the stakes for thousands of informal workers are immediate and financial.
 
