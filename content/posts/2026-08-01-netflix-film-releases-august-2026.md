@@ -1,21 +1,20 @@
 ---
-title: "Netflix August 2026 Film Releases: 11 Diverse Movies Added
+title: "'Netflix August 2026 Film Releases: 11 Diverse Movies Added"
 slug: "netflix-film-releases-august-2026"
-description: "Netflix August 2026 film releases bring 11 diverse movies, including new originals, acclaimed dramas, comedies, and horror titles. Plan your ultimate viewing experience!"
+description: "'Netflix August 2026 Film Releases: 11 Diverse Movies Added: Netflix August 2026 film releases bring 11 diverse movies, including new originals, acclaimed"
+excerpt: "Is Your KES 700 Subscription Worth It? Kenyans React to Netflix's August 2026 Film Releases Netflix has unveiled its roster of 11 films slat"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/svz3Q0Sy/728ff612c5c6.jpg"
-og_title: "Netflix August 2026: 11 Must-Watch New & Returning Films"
-og_description: "Netflix unveils 11 diverse films for August 2026. Discover new originals, dramas, comedies, and horror. Plan your next movie night!"
-focus_keyword: "Netflix August 2026 film releases"
 category: "Entertainment"
 tags: ["netflix movies", "august 2026", "film releases", "streaming", "drama", "comedy", "horror"]
+canonical: "https://zandani.co.ke/article/netflix-film-releases-august-2026"
 date: "2026-07-31T23:35:10Z"
 dateModified: "2026-07-31T23:35:10Z"
+focusKeyword: "'Netflix August 2026 Film Releases: 11 Diverse Movies Added"
 schema: "NewsArticle"
 ---
 
-## Is Your KES 700 Subscription Worth It? Kenyans React to Netflix's August 2026 Film Releases
+## Is Your KES 700 Subscription Worth It? Kenyans React to Netflix's August 2026 Film Releases "Netflix August 2026 Film Releases: 11 Diverse Movies Added is the central subject of the update.
 
 Netflix has unveiled its roster of 11 films slated for August 2026, featuring a mix of highly anticipated originals and acclaimed older titles. As subscribers weigh the value, the conversation quickly shifts to whether this diverse lineup truly justifies the monthly spend for Kenyan households.
 
