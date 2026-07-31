@@ -328,10 +328,10 @@
     "b7ee266980db126eb4c26d01bab1a7ec",
     "3e19a4cf262e9f5a56cc5cfc34c86a4a",
     "1fdc152f2b7cff4b62333961d54e3283",
-    "028efc6b9c94311febce98ded78a80b1"
+    "028efc6b9c94311febce98ded78a80b1",
+    "f1f873a87c857d105540a859aeaf235b"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Explainer",
     "Hard News Lead",
     "Trend Take",
@@ -360,10 +360,10 @@
     "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "myth_vs_fact|na|Profile Beat",
     "policy_gap|data storage|Trend Take",
     "story_progression|Tequila Sunrise|Hard News Lead",
     "story_progression|Horror film|Reaction Round-up",
@@ -442,6 +442,7 @@
     "story_progression|na|Reaction Round-up",
     "winners_losers|Wet Hot American Summer|Profile Beat",
     "timeline_shift|Arlene Smith|Hard News Lead",
-    "accountability|Childhood abuse|Explainer"
+    "accountability|Childhood abuse|Explainer",
+    "money_follow|Netflix|Reaction Round-up"
   ]
 }
