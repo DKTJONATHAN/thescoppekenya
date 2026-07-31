@@ -1,18 +1,20 @@
 ---
 title: "Solomon Buchi calls for boycott of Tyla concert in Lagos"
 slug: "solomon-buchi-calls-for-boycott-of-tyla-concert-in-lagos"
-description: "Social media personality Solomon Buchi is urging Nigerians to boycott Tyla concert in Lagos citing the singer silence on xenophobia in South Africa."
+description: "Solomon Buchi calls for boycott of Tyla concert in Lagos: Social media personality Solomon Buchi is urging Nigerians to boycott Tyla concert in Lagos citing"
+excerpt: "Lagos Fans Are Fighting Over Tyla The digital frenzy surrounding Tyla’s upcoming Lagos concert has morphed from routine fan excitement into"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/7JfT9mFC/4f8ce9fd9ff1.webp"
 category: "Gossip"
 tags: ["tyla", "solomon buchi", "nigeria", "south africa", "xenophobia", "entertainment news"]
+canonical: "https://zandani.co.ke/article/solomon-buchi-calls-for-boycott-of-tyla-concert-in-lagos"
 date: "2026-07-31T10:51:34Z"
 dateModified: "2026-07-31T10:51:34Z"
+focusKeyword: "Solomon Buchi calls for boycott of Tyla concert in Lagos"
 schema: "NewsArticle"
 ---
 
-## Lagos Fans Are Fighting Over Tyla
+## Lagos Fans Are Fighting Over Tyla Solomon Buchi calls for boycott of Tyla concert in Lagos is the central subject of the update.
 
 The digital frenzy surrounding Tyla’s upcoming Lagos concert has morphed from routine fan excitement into a volatile cultural showdown. Within forty-eight hours, online discourse spiked, racking up over two million interactions as followers clash over the boundaries between regional politics and the music stage. It is no longer just a concert announcement; it is a high-stakes referendum on how Nigerian fans engage with international talent against a backdrop of geopolitical tension.
 
