@@ -326,10 +326,10 @@
     "05a3071c0d28465b1f829c12c7388d15",
     "46e2644cc443dbdc10bcb8a975f6a4f0",
     "b7ee266980db126eb4c26d01bab1a7ec",
-    "3e19a4cf262e9f5a56cc5cfc34c86a4a"
+    "3e19a4cf262e9f5a56cc5cfc34c86a4a",
+    "1fdc152f2b7cff4b62333961d54e3283"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
     "Explainer",
@@ -358,10 +358,10 @@
     "Explainer",
     "Trend Take",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "next_48_hours|actor|Hard News Lead",
     "timeline_shift|na|Reaction Round-up",
     "myth_vs_fact|na|Profile Beat",
     "policy_gap|data storage|Trend Take",
@@ -440,6 +440,7 @@
     "story_progression|memes|Explainer",
     "timeline_shift|Clayface|Trend Take",
     "story_progression|na|Reaction Round-up",
-    "winners_losers|Wet Hot American Summer|Profile Beat"
+    "winners_losers|Wet Hot American Summer|Profile Beat",
+    "timeline_shift|Arlene Smith|Hard News Lead"
   ]
 }
