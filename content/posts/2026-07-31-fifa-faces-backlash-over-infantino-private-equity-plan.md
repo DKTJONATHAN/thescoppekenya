@@ -1,18 +1,20 @@
 ---
 title: "Fifa Faces Global Backlash Over Infantino Private Equity Plan"
 slug: "fifa-faces-backlash-over-infantino-private-equity-plan"
-description: "Gianni Infantino faces intense opposition from major football confederations regarding a plan to sell commercial stakes in FIFA to private investors."
+description: "Fifa Faces Global Backlash Over Infantino Private Equity Plan: Gianni Infantino faces intense opposition from major football confederations regarding a plan to"
+excerpt: "The Price Tag on Our Pitch Gianni Infantino is dangling a 24 million euro payout before every national association on the planet, framing it"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/rRRQSJPX/17a396c6ff2b.jpg"
 category: "Sports"
 tags: ["fifa", "football governance", "gianni infantino", "world cup", "sports news", "international football"]
+canonical: "https://zandani.co.ke/article/fifa-faces-backlash-over-infantino-private-equity-plan"
 date: "2026-07-31T12:22:15Z"
 dateModified: "2026-07-31T12:22:15Z"
+focusKeyword: "Fifa Faces Global Backlash Over Infantino Private Equity Plan"
 schema: "NewsArticle"
 ---
 
-## The Price Tag on Our Pitch
+## The Price Tag on Our Pitch Fifa Faces Global Backlash Over Infantino Private Equity Plan is the central subject of the update.
 
 Gianni Infantino is dangling a 24 million euro payout before every national association on the planet, framing it as a generous windfall rather than a calculated erosion of sporting sovereignty. While media outlets obsess over executive friction in Zurich and the hollow boycott threats issued by UEFA, they are ignoring the primary issue: the systematic surrender of the global game to private equity interests.
 
