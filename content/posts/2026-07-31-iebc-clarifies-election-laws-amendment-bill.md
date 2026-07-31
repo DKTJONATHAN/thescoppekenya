@@ -1,18 +1,20 @@
 ---
 title: "IEBC Clarifies Election Law Amendments Amid Transparency Concerns"
 slug: "iebc-clarifies-election-laws-amendment-bill"
-description: "The IEBC has issued a clarification on the Election Laws Amendment Bill, detailing voter identification and verification protocols while leaving questions on live results open."
+description: "IEBC Clarifies Election Law Amendments Amid Transparency Concerns: The IEBC has issued a clarification on the Election Laws Amendment Bill, detailing voter"
+excerpt: "Electoral Commission Faces Scrutiny Over Omission of Results Livestreaming The Independent Electoral and Boundaries Commission (IEBC) has fo"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/Q7szTWYq/74bcee44e1c3.webp"
 category: "Technology"
 tags: ["iebc", "kenya politics", "election laws", "voter verification", "kenyan news"]
+canonical: "https://zandani.co.ke/article/iebc-clarifies-election-laws-amendment-bill"
 date: "2026-07-31T13:06:46Z"
 dateModified: "2026-07-31T13:06:46Z"
+focusKeyword: "IEBC Clarifies Election Law Amendments Amid Transparency Concerns"
 schema: "NewsArticle"
 ---
 
-## Electoral Commission Faces Scrutiny Over Omission of Results Livestreaming
+## Electoral Commission Faces Scrutiny Over Omission of Results Livestreaming IEBC Clarifies Election Law Amendments Amid Transparency Concerns is the central subject of the update.
 
 The Independent Electoral and Boundaries Commission (IEBC) has formally addressed the Election Laws (Amendment) Bill, 2026, confirming that the proposed legislation does not include provisions for the real-time public livestreaming of election results. While the commission maintains that manual voter identification remains prohibited, the absence of a mandate for digital transparency has sparked debate regarding the future of electoral oversight.
 
