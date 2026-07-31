@@ -1,21 +1,20 @@
 ---
-title: "Arlene Smith, Chantels Lead Singer & 'Maybe' Co-writer, Dies at 84
+title: "'Arlene Smith, Chantels Lead Singer & 'Maybe' Co-writer, Dies at 84"
 slug: "arlene-smith-chantels-singer-maybe-co-writer-dies"
-description: "Pioneering lead singer Arlene Smith of The Chantels, co-writer of 'Maybe', has passed away at 84. Discover her impact on music and education. Find out more."
+description: "'Arlene Smith, Chantels Lead Singer & 'Maybe' Co-writer, Dies at : Pioneering lead singer Arlene Smith of The Chantels, co-writer of 'Maybe', has passed away"
+excerpt: "Arlene Smith, Trailblazing Vocalist and Dedicated Educator, Dies at 84 Arlene Smith, the powerful lead voice of the seminal 1950s girl group"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/xqXXsc1Q/c76b6ee02c91.jpg"
-og_title: "Remembering Arlene Smith: The Chantels' Pioneering Voice"
-og_description: "Arlene Smith, lead singer of the iconic 1950s girl group The Chantels and co-writer of 'Maybe,' has died at 84. Her legacy as a music pioneer lives on."
-focus_keyword: "Arlene Smith"
 category: "Entertainment"
 tags: ["arlene smith", "the chantels", "doo-wop", "girl group", "1950s music", "music news"]
+canonical: "https://zandani.co.ke/article/arlene-smith-chantels-singer-maybe-co-writer-dies"
 date: "2026-07-31T09:27:00Z"
 dateModified: "2026-07-31T09:27:00Z"
+focusKeyword: "'Arlene Smith, Chantels Lead Singer & 'Maybe' Co-writer, Dies at"
 schema: "NewsArticle"
 ---
 
-## Arlene Smith, Trailblazing Vocalist and Dedicated Educator, Dies at 84
+## Arlene Smith, Trailblazing Vocalist and Dedicated Educator, Dies at 84 "Arlene Smith, Chantels Lead Singer & 'Maybe' Co-writer, Dies at  is the central subject of the update.
 
 Arlene Smith, the powerful lead voice of the seminal 1950s girl group The Chantels and later a respected educator, has died at 84 years old. Smith passed away Thursday from a heart attack at a New York City hospital. Her death marks the end of a remarkable life that wove together a career as a chart-topping musician with decades spent shaping young minds.
 
