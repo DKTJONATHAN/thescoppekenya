@@ -168,10 +168,10 @@
     "79466acea0cd138d11fbcc1d6eaed583",
     "f2e207e1a623fdf4ac57d3b6f7f52f68",
     "0f955fc292285630cf0be67f63ada459",
-    "149e326a13f2389b2fdb7e3f08f533f2"
+    "149e326a13f2389b2fdb7e3f08f533f2",
+    "d8de6c91b8e0cebac6a15c9a3fbac371"
   ],
   "style_history": [
-    "Hard News Lead",
     "Africa Angle",
     "Backgrounder",
     "Critical Take",
@@ -200,10 +200,10 @@
     "Hard News Lead",
     "Backgrounder",
     "Africa Angle",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "money_follow|eCitizen|Critical Take",
     "money_follow|Safaricom|Explainer",
     "accountability|M-Pesa|Africa Angle",
     "policy_gap|KRA|Backgrounder",
@@ -282,6 +282,7 @@
     "next_48_hours|CXMT|Hard News Lead",
     "story_progression|X Money|Backgrounder",
     "policy_gap|NTSA|Africa Angle",
-    "winners_losers|Kenya Power|Explainer"
+    "winners_losers|Kenya Power|Explainer",
+    "policy_gap|IEBC|Hard News Lead"
   ]
 }
