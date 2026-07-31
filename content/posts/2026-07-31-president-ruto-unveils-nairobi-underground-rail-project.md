@@ -1,18 +1,20 @@
 ---
 title: "President Ruto Unveils Plans for Nairobi Underground Rail Network"
 slug: "president-ruto-unveils-nairobi-underground-rail-project"
-description: "President William Ruto has announced a 30-kilometre underground rail project to connect Eastlands to the CBD and ease traffic congestion in Nairobi."
+description: "President Ruto Unveils Plans for Nairobi Underground Rail Network: President William Ruto has announced a 30-kilometre underground rail project to connect"
+excerpt: "Can Nairobi Really Dig Its Way Out of Traffic? President William Ruto confirmed today that his administration is pursuing a 30 kilometre und"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/mYQvymx/0eb3469d6222.webp"
 category: "News"
 tags: ["nairobi", "william ruto", "kenya infrastructure", "transport", "johnson sakaja", "urban development"]
+canonical: "https://zandani.co.ke/article/president-ruto-unveils-nairobi-underground-rail-project"
 date: "2026-07-31T12:59:37Z"
 dateModified: "2026-07-31T12:59:37Z"
+focusKeyword: "President Ruto Unveils Plans for Nairobi Underground Rail Network"
 schema: "NewsArticle"
 ---
 
-## Can Nairobi Really Dig Its Way Out of Traffic?
+## Can Nairobi Really Dig Its Way Out of Traffic? President Ruto Unveils Plans for Nairobi Underground Rail Network is the central subject of the update.
 
 President William Ruto confirmed today that his administration is pursuing a 30-kilometre underground rail network connecting Eastlands to the Central Business District. While the vision promises to move millions, history suggests that shifting Nairobi's transit burden beneath the earth is a gamble that ignores the city's difficult terrain.
 
