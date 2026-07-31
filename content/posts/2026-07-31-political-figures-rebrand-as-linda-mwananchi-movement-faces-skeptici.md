@@ -1,19 +1,21 @@
 ---
 title: "Political figures rebrand as Linda Mwananchi movement faces skepticism"
 slug: "political-figures-rebrand-as-linda-mwananchi-movement-faces-skeptici"
-description: "Kenyan political figures launch the Linda Mwananchi movement, sparking widespread public skepticism over whether the initiative is a genuine rebrand."
+description: "Political figures rebrand as Linda Mwananchi movement faces skept: Kenyan political figures launch the Linda Mwananchi movement, sparking widespread public"
+excerpt: "Several high profile Kenyan political figures launched the Linda Mwananchi movement across the country this month. While proponents frame th"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: ""
+image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["linda-mwananchi", "kenyan-politics", "political-rebranding", "activism-skepticism", "kenya-governance"]
 canonical: "https://zandani.co.ke/article/political-figures-rebrand-as-linda-mwananchi-movement-faces-skeptici"
 date: "2026-07-31T14:33:37Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-07-31T14:33:37Z"
+focusKeyword: "Political figures rebrand as Linda Mwananchi movement faces skept"
 schema: "NewsArticle"
 ---
-Several high-profile Kenyan political figures launched the Linda Mwananchi movement across the country this month. While proponents frame the initiative as a champion for public interest, critics argue the campaign is a strategic, self-serving rebranding effort designed to maintain elite influence.
+
+Several high-profile Kenyan political figures launched the Linda Mwananchi movement across the country this month. While proponents frame the initiative as a champion for public interest, critics argue the campaign is a strategic, self-serving rebranding effort designed to maintain elite influence. Political figures rebrand as Linda Mwananchi movement faces skept is the central subject of the update.
 
 ## The Rebranding of Political Allegiances
 
