@@ -1,18 +1,20 @@
 ---
 title: "MPs challenge new CBK banking levy proposal over consumer costs"
 slug: "mps-challenge-proposed-cbk-banking-levy"
-description: "The National Assembly is questioning a proposed banking revenue levy by the Central Bank of Kenya, fearing increased costs for all Kenyan consumers."
+description: "MPs challenge new CBK banking levy proposal over consumer costs: The National Assembly is questioning a proposed banking revenue levy by the Central Bank of"
+excerpt: "Parliamentary Pushback Against Banking Levy The National Assembly Committee on Delegated Legislation has formally challenged the Central Ban"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/4nFtTn9v/128c791b2950.webp"
 category: "News"
 tags: ["cbk", "banking act", "national assembly", "kenya economy", "financial regulation", "kamau thugge"]
+canonical: "https://zandani.co.ke/article/mps-challenge-proposed-cbk-banking-levy"
 date: "2026-07-31T07:54:08Z"
 dateModified: "2026-07-31T07:54:08Z"
+focusKeyword: "MPs challenge new CBK banking levy proposal over consumer costs"
 schema: "NewsArticle"
 ---
 
-## Parliamentary Pushback Against Banking Levy
+## Parliamentary Pushback Against Banking Levy MPs challenge new CBK banking levy proposal over consumer costs is the central subject of the update.
 
 The National Assembly Committee on Delegated Legislation has formally challenged the Central Bank of Kenya over a proposed 0.15 per cent gross revenue levy, arguing the move risks shifting operational costs directly onto Kenyan banking consumers.
 
