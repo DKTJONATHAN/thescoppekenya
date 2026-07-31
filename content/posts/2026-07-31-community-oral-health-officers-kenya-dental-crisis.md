@@ -1,18 +1,20 @@
 ---
 title: "Why Community Oral Health Officers are Vital for Kenya Healthcare"
 slug: "community-oral-health-officers-kenya-dental-crisis"
-description: "Amid a critical shortage of dentists, Community Oral Health Officers provide essential care. Learn why this task-sharing model is key."
+description: "Why Community Oral Health Officers are Vital for Kenya Healthcare: Amid a critical shortage of dentists, Community Oral Health Officers provide essential care."
+excerpt: "Bridging the Dental Divide: Why Kenya Must Empower Its Frontline Oral Health Workforce The dental crisis across Kenya represents a profound"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/1fNRmZQz/957333af1f8c.webp"
 category: "Opinions"
 tags: ["kenya", "coho", "oral health", "healthcare policy", "public health", "dental care"]
+canonical: "https://zandani.co.ke/article/community-oral-health-officers-kenya-dental-crisis"
 date: "2026-07-31T11:36:02Z"
 dateModified: "2026-07-31T11:36:02Z"
+focusKeyword: "Why Community Oral Health Officers are Vital for Kenya Healthcare"
 schema: "NewsArticle"
 ---
 
-## Bridging the Dental Divide: Why Kenya Must Empower Its Frontline Oral Health Workforce
+## Bridging the Dental Divide: Why Kenya Must Empower Its Frontline Oral Health Workforce Why Community Oral Health Officers are Vital for Kenya Healthcare is the central subject of the update.
 
 The dental crisis across Kenya represents a profound structural failure that denies millions of citizens access to basic, life-altering care. While modern clinics flourish in wealthy urban enclaves, the vast majority of our population encounters a desert of oral health services. Current policies and traditional medical frameworks have failed to address this chasm, leaving our people to suffer in silence.
 
