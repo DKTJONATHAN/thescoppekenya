@@ -379,10 +379,10 @@
     "c3c7f77dce98362ae6e1aa8f459726a3",
     "6302bf3ebd31fdc51167b0e9a7d3c64b",
     "40d83429247f8e50894e656ffdf48629",
-    "dede7ebd6264eb7e7f494705e05ece57"
+    "dede7ebd6264eb7e7f494705e05ece57",
+    "790e0fb4883eced001c1af0cbc1dd430"
   ],
   "style_history": [
-    "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
@@ -411,10 +411,10 @@
     "Hard News Lead",
     "Context Backgrounder",
     "Power Accountability",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "myth_vs_fact|Pharmacy and Poisons Board|Explainer",
     "policy_gap|Communications Authority of Kenya|Power Accountability",
     "accountability|DCI|Hard News Lead",
     "policy_gap|security|Context Backgrounder",
@@ -493,6 +493,7 @@
     "accountability|Kenya Power|Hard News Lead",
     "money_follow|University of Nairobi|Context Backgrounder",
     "accountability|Aden Duale|Power Accountability",
-    "myth_vs_fact|IEBC|Reaction & Voices"
+    "myth_vs_fact|IEBC|Reaction & Voices",
+    "accountability|CBK|Hard News Lead"
   ]
 }
