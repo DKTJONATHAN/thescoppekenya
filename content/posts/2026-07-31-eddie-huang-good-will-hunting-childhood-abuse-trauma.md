@@ -14,7 +14,7 @@ focusKeyword: "'Eddie Huang reveals Good Will Hunting helped him confront childh
 schema: "NewsArticle"
 ---
 
-## Eddie Huang on *Good Will Hunting* and Our Community's Call to Action "Eddie Huang reveals Good Will Hunting helped him confront childh is the central subject of the update.
+## Eddie Huang on *Good Will Hunting* and Our Community's Call to Action "Eddie Huang reveals Good Will Hunting helped him confront childh is the central subject of the update. 'Eddie Huang reveals Good Will Hunting helped him confront childh is the central subject of the update.
 
 Chef Eddie Huang's recent account of how the film *Good Will Hunting* validated his childhood trauma isn't just a celebrity anecdote. It serves as a potent reminder for us in Kenya to seriously consider our collective responsibility and the urgent need for intervention in cases of child abuse.
 
