@@ -198,10 +198,10 @@
     "150b2c1c5badda69cc9951f15b64a690",
     "58dbeb974d05399c381ae84f1db80965",
     "56787b63170c6ed463acc6a9dd2671b8",
-    "fac1dc3fd614d6ae9033f7740dc61169"
+    "fac1dc3fd614d6ae9033f7740dc61169",
+    "6cf98ccb269cf748b753a1eabb952a66"
   ],
   "style_history": [
-    "Personal Reflection",
     "Counterpoint",
     "Sharp Column",
     "Letter Form",
@@ -230,10 +230,10 @@
     "Historical Lens",
     "Sharp Column",
     "Personal Reflection",
-    "Letter Form"
+    "Letter Form",
+    "Historical Lens"
   ],
   "angle_history": [
-    "impact_on_citizens|wellbeing|Personal Reflection",
     "timeline_shift|Kenya|Historical Lens",
     "winners_losers|Convention 190|Counterpoint",
     "impact_on_citizens|digital health|Letter Form",
@@ -312,6 +312,7 @@
     "story_progression|urban planning|Historical Lens",
     "winners_losers|African cinema|Sharp Column",
     "winners_losers|Cloudflare|Personal Reflection",
-    "policy_gap|Kenya|Letter Form"
+    "policy_gap|Kenya|Letter Form",
+    "timeline_shift|Kenya|Historical Lens"
   ]
 }
