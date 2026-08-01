@@ -1,18 +1,20 @@
 ---
 title: "Fifa scraps controversial private investment plan amid Uefa pressure"
 slug: "fifa-scraps-controversial-private-investment-plan"
-description: "Fifa has cancelled plans to sell equity stakes in its competitions following backlash from Uefa and other global football governing bodies."
+description: "Fifa scraps controversial private investment plan amid Uefa press: Fifa has cancelled plans to sell equity stakes in its competitions following backlash from"
+excerpt: "Zurich’s Failed Cash Grab Fifa has officially abandoned its controversial initiative to sell equity stakes in its commercial operations afte"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/bgsg7CJY/6914a74ca741.jpg"
 category: "Sports"
 tags: ["fifa", "uefa", "football governance", "gianni infantino", "world football", "sports news"]
+canonical: "https://zandani.co.ke/article/fifa-scraps-controversial-private-investment-plan"
 date: "2026-08-01T11:37:45Z"
 dateModified: "2026-08-01T11:37:45Z"
+focusKeyword: "Fifa scraps controversial private investment plan amid Uefa press"
 schema: "NewsArticle"
 ---
 
-## Zurich’s Failed Cash Grab
+## Zurich’s Failed Cash Grab Fifa scraps controversial private investment plan amid Uefa press is the central subject of the update.
 
 Fifa has officially abandoned its controversial initiative to sell equity stakes in its commercial operations after facing a coordinated insurrection from regional confederations. This retreat highlights the widening chasm between Gianni Infantino’s centralized monetization strategy and the entrenched desire for autonomy among the game’s governing bodies.
 
