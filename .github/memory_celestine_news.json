@@ -384,10 +384,10 @@
     "3cd267b4c139d2cc1cbe6cfc678b56b3",
     "4860671f9be7fae4d68bda9c4cc3e512",
     "ae7208c70968a2fa70b4cd1479e9be12",
-    "0a6eb8a9ef7b2f15a4c4d5222de81c0c"
+    "0a6eb8a9ef7b2f15a4c4d5222de81c0c",
+    "96bda074db8a6201130dfb3bed0125fb"
   ],
   "style_history": [
-    "Explainer",
     "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
@@ -416,10 +416,10 @@
     "Explainer",
     "Context Backgrounder",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "money_follow|Kenya|Power Accountability",
     "myth_vs_fact|National Treasury|Explainer",
     "policy_gap|Saba Saba|Hard News Lead",
     "story_progression|IEBC|Reaction & Voices",
@@ -498,6 +498,7 @@
     "myth_vs_fact|Nairobi|Explainer",
     "policy_gap|Kenya|Context Backgrounder",
     "policy_gap|road accident|Power Accountability",
-    "money_follow|International Seabed Authority|Hard News Lead"
+    "money_follow|International Seabed Authority|Hard News Lead",
+    "timeline_shift|DCI|Explainer"
   ]
 }
