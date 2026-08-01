@@ -1,18 +1,20 @@
 ---
 title: "Police Link Mlolongo Land Dispute to Dr. Victoria Mutiso Murder"
 slug: "police-link-mlolongo-land-dispute-to-dr-victoria-mutiso-murder"
-description: "Detectives are probing a land dispute connection in the fatal shooting of Dr. Victoria Mutiso in Nairobi after two suspects were arraigned in court."
+description: "Police Link Mlolongo Land Dispute to Dr. Victoria Mutiso Murder: Detectives are probing a land dispute connection in the fatal shooting of Dr. Victoria Mutiso"
+excerpt: "When Property Battles Turn Lethal The fatal shooting of Dr. Victoria Nthunya Mutiso has shifted attention from a routine criminal inquiry to"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/bjrPyc0s/9c8baab04312.webp"
 category: "News"
 tags: ["nairobi crime", "dr victoria mutiso", "dci investigations", "kenya news", "land disputes", "za ndani"]
+canonical: "https://zandani.co.ke/article/police-link-mlolongo-land-dispute-to-dr-victoria-mutiso-murder"
 date: "2026-08-01T18:03:52Z"
 dateModified: "2026-08-01T18:03:52Z"
+focusKeyword: "Police Link Mlolongo Land Dispute to Dr. Victoria Mutiso Murder"
 schema: "NewsArticle"
 ---
 
-## When Property Battles Turn Lethal
+## When Property Battles Turn Lethal Police Link Mlolongo Land Dispute to Dr. Victoria Mutiso Murder is the central subject of the update.
 
 The fatal shooting of Dr. Victoria Nthunya Mutiso has shifted attention from a routine criminal inquiry toward a grim pattern of violence linked to a 20-acre land dispute in Mlolongo, revealing how slow justice in civil courts increasingly invites dangerous extrajudicial resolutions.
 
