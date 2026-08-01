@@ -1,18 +1,20 @@
 ---
 title: "Kenya Elected to International Seabed Authority Council"
 slug: "kenya-elected-international-seabed-authority-council"
-description: "Kenya has secured a seat on the International Seabed Authority Council to help regulate deep-sea mining and promote sustainable marine resource management."
+description: "Kenya Elected to International Seabed Authority Council: Kenya has secured a seat on the International Seabed Authority Council to help regulate deep-sea"
+excerpt: "Securing Kenya's Maritime Sovereign Wealth Kenya has secured a seat on the International Seabed Authority Council for the 2027 2030 term, gr"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/XxGysTFx/28ac3bc6f783.webp"
 category: "News"
 tags: ["kenya", "blue economy", "marine conservation", "deep-sea mining", "international relations", "environment"]
+canonical: "https://zandani.co.ke/article/kenya-elected-international-seabed-authority-council"
 date: "2026-08-01T12:05:07Z"
 dateModified: "2026-08-01T12:05:07Z"
+focusKeyword: "Kenya Elected to International Seabed Authority Council"
 schema: "NewsArticle"
 ---
 
-## Securing Kenya's Maritime Sovereign Wealth
+## Securing Kenya's Maritime Sovereign Wealth Kenya Elected to International Seabed Authority Council is the central subject of the update.
 
 Kenya has secured a seat on the International Seabed Authority Council for the 2027-2030 term, granting the nation direct oversight in governing deep-sea mineral exploration and establishing global standards for resource extraction within international waters.
 
