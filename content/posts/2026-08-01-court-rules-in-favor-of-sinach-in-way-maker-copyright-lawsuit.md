@@ -1,18 +1,20 @@
 ---
 title: "Court Rules in Favor of Sinach in Way Maker Copyright Lawsuit"
 slug: "court-rules-in-favor-of-sinach-in-way-maker-copyright-lawsuit"
-description: "A Nigerian court has dismissed a multi-billion naira lawsuit against Sinach, confirming the gospel singer is the sole author of Way Maker."
+description: "Court Rules in Favor of Sinach in Way Maker Copyright Lawsuit: A Nigerian court has dismissed a multi-billion naira lawsuit against Sinach, confirming the"
+excerpt: "Safeguarding Artistic Integrity: Key Takeaways from the Sinach Copyright Verdict The Federal High Court in Lagos has dismissed the ₦5 billio"
 author: "Amara Ndlovu"
-authorUrl: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/TDF0TTXz/5fe77bad9eea.png"
 category: "Africa Entertainment"
 tags: ["sinach", "gospel music", "copyright law", "music industry", "intellectual property", "kenyan gospel"]
+canonical: "https://zandani.co.ke/article/court-rules-in-favor-of-sinach-in-way-maker-copyright-lawsuit"
 date: "2026-08-01T06:07:20Z"
 dateModified: "2026-08-01T06:07:20Z"
+focusKeyword: "Court Rules in Favor of Sinach in Way Maker Copyright Lawsuit"
 schema: "NewsArticle"
 ---
 
-## Safeguarding Artistic Integrity: Key Takeaways from the Sinach Copyright Verdict
+## Safeguarding Artistic Integrity: Key Takeaways from the Sinach Copyright Verdict Court Rules in Favor of Sinach in Way Maker Copyright Lawsuit is the central subject of the update.
 
 The Federal High Court in Lagos has dismissed the ₦5 billion copyright lawsuit against Sinach, definitively upholding her exclusive ownership of the gospel anthem Way Maker. By rejecting the claim, the court has drawn a sharp distinction between the technical execution of a sound engineer and the core creative brilliance of a songwriter. This ruling offers a necessary legal roadmap for artists navigating the complexities of authorship in an increasingly collaborative digital landscape.
 
