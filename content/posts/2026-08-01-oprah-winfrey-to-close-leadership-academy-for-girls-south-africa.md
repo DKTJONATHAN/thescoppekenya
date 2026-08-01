@@ -1,18 +1,20 @@
 ---
 title: "Oprah Winfrey to Close Her Leadership Academy for Girls"
 slug: "oprah-winfrey-to-close-leadership-academy-for-girls-south-africa"
-description: "Oprah Winfrey plans to close her flagship girls academy in South Africa by 2027 to transition toward a new nationwide scholarship model."
+description: "Oprah Winfrey to Close Her Leadership Academy for Girls: Oprah Winfrey plans to close her flagship girls academy in South Africa by 2027 to transition toward a"
+excerpt: "The Ledger Behind the Legacy Oprah Winfrey’s 2007 vow to construct an elite educational sanctuary in South Africa has reached its final fisc"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/0jxF5rLV/87c8af40f6ad.jpg"
 category: "Gossip"
 tags: ["oprah winfrey", "south africa", "education", "philanthropy", "academic news"]
+canonical: "https://zandani.co.ke/article/oprah-winfrey-to-close-leadership-academy-for-girls-south-africa"
 date: "2026-08-01T08:33:09Z"
 dateModified: "2026-08-01T08:33:09Z"
+focusKeyword: "Oprah Winfrey to Close Her Leadership Academy for Girls"
 schema: "NewsArticle"
 ---
 
-## The Ledger Behind the Legacy
+## The Ledger Behind the Legacy Oprah Winfrey to Close Her Leadership Academy for Girls is the central subject of the update.
 
 Oprah Winfrey’s 2007 vow to construct an elite educational sanctuary in South Africa has reached its final fiscal act. With the Oprah Winfrey Leadership Academy for Girls slated to shutter in 2027, the billionaire is signaling a clear pivot away from brick-and-mortar philanthropy toward a more fluid, scalable model of capital deployment. This transition marks the end of her long-term commitment to maintaining physical infrastructure, favoring the efficiency of liquid assets over the high costs of property ownership.
 
