@@ -1,21 +1,20 @@
 ---
-title: "Drew Starkey Police Stop During Filming of 'Lucky' Scene
+title: "'Drew Starkey Police Stop During Filming of 'Lucky' Scene"
 slug: "drew-starkey-police-stop-filming-lucky-beach-incident"
-description: "Drew Starkey and stunt double Hayley Wright faced an unexpected police stop while filming a driving scene for the show 'Lucky' on a beach. Learn how production assistants resolved the surprising incident."
+description: "'Drew Starkey Police Stop During Filming of 'Lucky' Scene: Drew Starkey and stunt double Hayley Wright faced an unexpected police stop while filming a driving"
+excerpt: "Filming Frictions: When On Set Action Meets Local Rules The Apple TV series 'Lucky' recently experienced an unexpected pause during a beach"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/qFNtnDJh/ff964c3ded09.jpg"
-og_title: "Drew Starkey & Hayley Wright's Police Stop on 'Lucky' Set"
-og_description: "Actor Drew Starkey and stunt double Hayley Wright were pulled over by police during filming a driving scene for the show 'Lucky'. Find out what happened."
-focus_keyword: "drew starkey police stop"
 category: "Entertainment"
 tags: ["drew starkey", "hayley wright", "lucky tv show", "filming incident", "police stop", "entertainment news"]
+canonical: "https://zandani.co.ke/article/drew-starkey-police-stop-filming-lucky-beach-incident"
 date: "2026-08-01T08:55:50Z"
 dateModified: "2026-08-01T08:55:50Z"
+focusKeyword: "'Drew Starkey Police Stop During Filming of 'Lucky' Scene"
 schema: "NewsArticle"
 ---
 
-## Filming Frictions: When On-Set Action Meets Local Rules
+## Filming Frictions: When On-Set Action Meets Local Rules "Drew Starkey Police Stop During Filming of 'Lucky' Scene is the central subject of the update.
 
 The Apple TV series "Lucky" recently experienced an unexpected pause during a beach shoot involving actor Drew Starkey and stunt double Hayley Wright. This temporary halt, a surprising *drew starkey police stop*, highlights a persistent challenge for international film crews: bridging the gap between sophisticated production methods and local regulations. It serves as a stark reminder that while many regions, like Kenya, increasingly welcome global productions, navigating varying local understandings remains critical.
 
