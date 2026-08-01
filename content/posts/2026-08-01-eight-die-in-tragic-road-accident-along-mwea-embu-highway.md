@@ -1,18 +1,20 @@
 ---
 title: "Eight die in tragic road accident along Mwea-Embu Highway"
 slug: "eight-die-in-tragic-road-accident-along-mwea-embu-highway"
-description: "Eight people died and three others were injured after a lorry collided with a tuk-tuk and two pedestrians in Kirinyaga County. Police have arrested the driver."
+description: "Eight die in tragic road accident along Mwea-Embu Highway: Eight people died and three others were injured after a lorry collided with a tuk-tuk and two"
+excerpt: "Death as a policy failure on the Murubara stretch Eight families are currently arranging funerals in Kirinyaga because a lorry driver lost c"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/2Y0hYFbD/eef73e66d5b6.webp"
 category: "News"
 tags: ["kenya news", "kirinyaga", "mwea", "road safety", "za ndani", "traffic accident"]
+canonical: "https://zandani.co.ke/article/eight-die-in-tragic-road-accident-along-mwea-embu-highway"
 date: "2026-08-01T07:30:40Z"
 dateModified: "2026-08-01T07:30:40Z"
+focusKeyword: "Eight die in tragic road accident along Mwea-Embu Highway"
 schema: "NewsArticle"
 ---
 
-## Death as a policy failure on the Murubara stretch
+## Death as a policy failure on the Murubara stretch Eight die in tragic road accident along Mwea-Embu Highway is the central subject of the update.
 
 Eight families are currently arranging funerals in Kirinyaga because a lorry driver lost control of his vehicle on a stretch of road that has been screaming for intervention for years. The official narrative focuses on the arrest of the driver, but the wreckage at Murubara is not just a result of human error; it is a monument to bureaucratic apathy and the abandonment of basic highway engineering standards.
 
