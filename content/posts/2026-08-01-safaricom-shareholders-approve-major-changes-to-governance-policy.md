@@ -1,18 +1,20 @@
 ---
 title: "Safaricom Shareholders Approve Major Changes to Governance Policy"
 slug: "safaricom-shareholders-approve-major-changes-to-governance-policy"
-description: "Safaricom shareholders have passed fourteen resolutions that formalize Vodafone influence over board composition and executive appointments."
+description: "Safaricom Shareholders Approve Major Changes to Governance Policy: Safaricom shareholders have passed fourteen resolutions that formalize Vodafone influence"
+excerpt: "Inside the Boardroom Shift at Safaricom Safaricom shareholders finalized 14 special resolutions this week, officially tilting the company's"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/Y7GMH5ZJ/d5dc75e7809b.jpg"
 category: "Business"
 tags: ["safaricom", "kenya business", "corporate governance", "vodacom", "nairobi securities exchange", "telecommunications"]
+canonical: "https://zandani.co.ke/article/safaricom-shareholders-approve-major-changes-to-governance-policy"
 date: "2026-08-01T07:36:44Z"
 dateModified: "2026-08-01T07:36:44Z"
+focusKeyword: "Safaricom Shareholders Approve Major Changes to Governance Policy"
 schema: "NewsArticle"
 ---
 
-## Inside the Boardroom Shift at Safaricom
+## Inside the Boardroom Shift at Safaricom Safaricom Shareholders Approve Major Changes to Governance Policy is the central subject of the update.
 
 Safaricom shareholders finalized 14 special resolutions this week, officially tilting the company's power structure toward Vodafone Kenya. This move effectively rewrites how the firm chooses its leaders and approves massive infrastructure investments, marking a definitive end to the previous, more loosely defined oversight era.
 
