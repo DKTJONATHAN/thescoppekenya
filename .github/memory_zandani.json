@@ -336,10 +336,10 @@
     "e46cd3bd592509f7529dbdd5810b192a",
     "f64c050dd974ea1f1800ea37cb13d74c",
     "69e441721cd464a17c745c1a58810b9c",
-    "9ce3726be7662b8834a7d3dcffa86b33"
+    "9ce3726be7662b8834a7d3dcffa86b33",
+    "b39c2de214e0ce400f4662cf432cd5a4"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Receipts Piece",
     "Trend Take",
     "Hard News Lead",
@@ -368,10 +368,10 @@
     "Receipts Piece",
     "Profile Beat",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
-    "money_follow|Vurugu 2.0|Trend Take",
     "accountability|boy child movement|Profile Beat",
     "winners_losers|Akorino|Reaction Round-up",
     "impact_on_citizens|Risper Faith|Hard News Lead",
@@ -450,6 +450,7 @@
     "timeline_shift|Kenya|Receipts Piece",
     "policy_gap|healthcare|Profile Beat",
     "myth_vs_fact|Shorn Arwa|Hard News Lead",
-    "next_48_hours|Tyla|Reaction Round-up"
+    "next_48_hours|Tyla|Reaction Round-up",
+    "winners_losers|music industry|Trend Take"
   ]
 }
