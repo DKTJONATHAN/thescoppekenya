@@ -1,7 +1,8 @@
 ---
 title: "Agrippina Daughters criticized for expecting financial gifts on International Women's Day"
 slug: "agrippina-daughters-criticized-for-expecting-financial-gifts-on-inte"
-description: "Nairobi residents criticize Agrippina Daughters and others for seeking expensive gifts on International Women's Day, shifting focus from empowerment."
+description: "Agrippina Daughters criticized for expecting financial gifts on I: Nairobi residents criticize Agrippina Daughters and others for seeking expensive gifts on"
+excerpt: "Recent discussions in Nairobi have centered on the growing trend of women soliciting expensive gifts and extravagant outings on Internationa"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/jZDr8RqR/2e6b94c44827.webp"
@@ -9,10 +10,11 @@ category: "Entertainment"
 tags: ["agrippina-daughters", "international-womens-day", "kenyan-entertainment", "celebrity-controversy", "social-media-backlash"]
 canonical: "https://zandani.co.ke/article/agrippina-daughters-criticized-for-expecting-financial-gifts-on-inte"
 date: "2026-08-02T13:53:18Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-08-02T13:53:18Z"
+focusKeyword: "Agrippina Daughters criticized for expecting financial gifts on I"
 schema: "NewsArticle"
 ---
+
 Recent discussions in Nairobi have centered on the growing trend of women soliciting expensive gifts and extravagant outings on International Women’s Day. Critics argue this behavior misinterprets the holiday, shifting the focus from genuine female empowerment toward a demand for financial subsidies from men.
 
 ## Agrippina Daughters criticized for expecting financial gifts on International Women's Day
