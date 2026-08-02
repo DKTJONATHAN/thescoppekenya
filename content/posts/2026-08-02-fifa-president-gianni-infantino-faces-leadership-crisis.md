@@ -1,18 +1,20 @@
 ---
 title: "Fifa president Gianni Infantino faces leadership crisis over funding"
 slug: "fifa-president-gianni-infantino-faces-leadership-crisis"
-description: "Gianni Infantino is under intense pressure as major football confederations challenge his leadership following a failed private investment scheme."
+description: "Fifa president Gianni Infantino faces leadership crisis over fund: Gianni Infantino is under intense pressure as major football confederations challenge his"
+excerpt: "The Swiss Endgame: Gianni Infantino’s Privatization Trap Gianni Infantino’s attempt to mortgage FIFA competition assets to private equity fi"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/zVLkw14n/613fbd99a2b1.jpg"
 category: "Sports"
 tags: ["fifa", "gianni infantino", "football news", "sports governance", "uefa"]
+canonical: "https://zandani.co.ke/article/fifa-president-gianni-infantino-faces-leadership-crisis"
 date: "2026-08-02T11:38:32Z"
 dateModified: "2026-08-02T11:38:32Z"
+focusKeyword: "Fifa president Gianni Infantino faces leadership crisis over fund"
 schema: "NewsArticle"
 ---
 
-## The Swiss Endgame: Gianni Infantino’s Privatization Trap
+## The Swiss Endgame: Gianni Infantino’s Privatization Trap Fifa president Gianni Infantino faces leadership crisis over fund is the central subject of the update.
 
 Gianni Infantino’s attempt to mortgage FIFA competition assets to private equity firms has collapsed, leaving the FIFA president isolated in Zurich and fighting for his political survival. This failed gambit reveals a deeper rot in global football governance that threatens the sovereignty of the African game.
 
