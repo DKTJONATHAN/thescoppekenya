@@ -1,18 +1,20 @@
 ---
 title: "Ruto moves to anchor long-term development plans in law"
 slug: "ruto-moves-to-anchor-long-term-development-plans-in-law"
-description: "President William Ruto plans to legislate a post-Vision 2030 development framework to ensure national growth remains independent of electoral politics."
+description: "Ruto moves to anchor long-term development plans in law: President William Ruto plans to legislate a post-Vision 2030 development framework to ensure national"
+excerpt: "The Architecture of Stalled Ambition President William Ruto confirmed on August 2 at the ACK St. Stephen's Chepkoilel Church in Uasin Gishu"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/yFSF5PQM/4417998e8a1b.webp"
 category: "News"
 tags: ["william ruto", "kenya politics", "vision 2030", "government policy", "kenya development", "national dialogue"]
+canonical: "https://zandani.co.ke/article/ruto-moves-to-anchor-long-term-development-plans-in-law"
 date: "2026-08-02T12:06:28Z"
 dateModified: "2026-08-02T12:06:28Z"
+focusKeyword: "Ruto moves to anchor long-term development plans in law"
 schema: "NewsArticle"
 ---
 
-## The Architecture of Stalled Ambition
+## The Architecture of Stalled Ambition Ruto moves to anchor long-term development plans in law is the central subject of the update.
 
 President William Ruto confirmed on August 2 at the ACK St. Stephen's Chepkoilel Church in Uasin Gishu County that his administration will push for a legislative framework to lock in post-2030 development goals. This move seeks to shield national planning from the erratic fluctuations of five-year electoral cycles that have historically dictated the tempo of the country’s progress.
 
