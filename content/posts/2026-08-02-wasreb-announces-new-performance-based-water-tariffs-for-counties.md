@@ -1,18 +1,20 @@
 ---
 title: "WASREB Announces New Performance Based Water Tariffs for Counties"
 slug: "wasreb-announces-new-performance-based-water-tariffs-for-counties"
-description: "The Water Services Regulatory Board has gazetted updated tariff structures for six counties based on utility performance metrics for the coming cycle."
+description: "WASREB Announces New Performance Based Water Tariffs for Counties: The Water Services Regulatory Board has gazetted updated tariff structures for six counties"
+excerpt: "Paying for Leaks: The Hidden Penalty in New Water Bills Small business owners are branding the latest move by the Water Services Regulatory"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/zhYpbTjp/9e7e2192243c.webp"
 category: "News"
 tags: ["kenya", "wasreb", "water tariffs", "utility bills", "public policy", "economy"]
+canonical: "https://zandani.co.ke/article/wasreb-announces-new-performance-based-water-tariffs-for-counties"
 date: "2026-08-02T07:34:27Z"
 dateModified: "2026-08-02T07:34:27Z"
+focusKeyword: "WASREB Announces New Performance Based Water Tariffs for Counties"
 schema: "NewsArticle"
 ---
 
-## Paying for Leaks: The Hidden Penalty in New Water Bills
+## Paying for Leaks: The Hidden Penalty in New Water Bills WASREB Announces New Performance Based Water Tariffs for Counties is the central subject of the update.
 
 Small business owners are branding the latest move by the Water Services Regulatory Board as a double-edged sword, arguing that residents are being forced to bankroll the administrative incompetence of their local water providers through steep, performance-linked tariff spikes.
 
