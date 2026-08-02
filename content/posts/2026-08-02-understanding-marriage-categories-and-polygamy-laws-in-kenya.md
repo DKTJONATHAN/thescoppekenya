@@ -1,18 +1,20 @@
 ---
 title: "Understanding Marriage Categories and Polygamy Laws in Kenya"
 slug: "understanding-marriage-categories-and-polygamy-laws-in-kenya"
-description: "The Marriage Act 2014 defines legal requirements for monogamous and polygamous unions in Kenya while outlining penalties for bigamy under the Penal Code."
+description: "Understanding Marriage Categories and Polygamy Laws in Kenya: The Marriage Act 2014 defines legal requirements for monogamous and polygamous unions in Kenya"
+excerpt: "Legal Boundaries of Marriage Under the 2014 Act Thousands of Kenyans face potential criminal prosecution for bigamy as they unknowingly atte"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/JWNR89wB/47564fb8c5aa.webp"
 category: "News"
 tags: ["marriage act 2014", "kenyan law", "polygamy", "bigamy", "family law", "kenya"]
+canonical: "https://zandani.co.ke/article/understanding-marriage-categories-and-polygamy-laws-in-kenya"
 date: "2026-08-02T18:03:34Z"
 dateModified: "2026-08-02T18:03:34Z"
+focusKeyword: "Understanding Marriage Categories and Polygamy Laws in Kenya"
 schema: "NewsArticle"
 ---
 
-## Legal Boundaries of Marriage Under the 2014 Act
+## Legal Boundaries of Marriage Under the 2014 Act Understanding Marriage Categories and Polygamy Laws in Kenya is the central subject of the update.
 
 Thousands of Kenyans face potential criminal prosecution for bigamy as they unknowingly attempt to contract new unions while legally bound by monogamous civil or Christian marriage certificates.
 
