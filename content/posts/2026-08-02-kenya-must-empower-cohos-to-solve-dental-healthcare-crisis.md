@@ -1,18 +1,20 @@
 ---
 title: "Why Kenya Must Empower COHOs to Solve Dental Healthcare Crisis"
 slug: "kenya-must-empower-cohos-to-solve-dental-healthcare-crisis"
-description: "Kenya faces a critical shortage of dentists, prompting calls to utilize licensed Community Oral Health Officers to expand access to care."
+description: "Why Kenya Must Empower COHOs to Solve Dental Healthcare Crisis: Kenya faces a critical shortage of dentists, prompting calls to utilize licensed Community Oral"
+excerpt: "The Silent Extraction: Why Kenya’s Dentistry Crisis is a Policy Choice Kenya’s dental emergency is not a byproduct of educational neglect. I"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/T9cvDRC/04242b885fa5.webp"
 category: "Opinions"
 tags: ["oral health", "public health", "kenya", "universal health coverage", "coho", "healthcare policy"]
+canonical: "https://zandani.co.ke/article/kenya-must-empower-cohos-to-solve-dental-healthcare-crisis"
 date: "2026-08-02T10:50:11Z"
 dateModified: "2026-08-02T10:50:11Z"
+focusKeyword: "Why Kenya Must Empower COHOs to Solve Dental Healthcare Crisis"
 schema: "NewsArticle"
 ---
 
-## The Silent Extraction: Why Kenya’s Dentistry Crisis is a Policy Choice
+## The Silent Extraction: Why Kenya’s Dentistry Crisis is a Policy Choice Why Kenya Must Empower COHOs to Solve Dental Healthcare Crisis is the central subject of the update.
 
 Kenya’s dental emergency is not a byproduct of educational neglect. It is a deliberate outcome of institutional gatekeeping that leaves 98.1 percent of the population vulnerable to preventable gum disease. While private clinics flourish in elite urban enclaves, the remainder of the nation resides in a clinical desert. We are currently witnessing a mathematical farce: 1,300 registered dentists are tasked with treating 55 million people. This ratio of 0.27 dentists per 10,000 citizens is not a failure of our universities. It is a failure of governance. We possess a capable workforce, yet we bind them to archaic professional hierarchies that value the exclusivity of a title over the immediate survival of a patient.
 
