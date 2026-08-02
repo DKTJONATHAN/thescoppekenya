@@ -1,21 +1,20 @@
 ---
-title: "Practical Magic 2 Sequel Confirmed by Bullock & Kidman at Screening
+title: "'Practical Magic 2 Sequel Confirmed by Bullock & Kidman at Screening"
 slug: "practical-magic-2-bullock-kidman-confirm-sequel-cast"
-description: "Sandra Bullock and Nicole Kidman officially confirm 'Practical Magic 2' and introduce new cast. The highly anticipated sequel is set for a 2026 release. Discover all the magical details!"
+description: "'Practical Magic 2 Sequel Confirmed by Bullock & Kidman at Screen: Sandra Bullock and Nicole Kidman officially confirm 'Practical Magic 2' and introduce new"
+excerpt: "The Enduring Allure of Practical Magic 2: Why This Sequel's Return Is So Important Almost three decades have passed, but the Owens sisters a"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/cSKcds9b/e29d5bdacc7d.jpg"
-og_title: "Bullock & Kidman Confirm Practical Magic 2: New Cast Revealed"
-og_description: "Sandra Bullock and Nicole Kidman surprised fans, confirming 'Practical Magic 2' and its new cast. The sequel arrives in 2026."
-focus_keyword: "Practical Magic 2"
 category: "Entertainment"
 tags: ["practical magic 2", "sandra bullock", "nicole kidman", "hollywood", "sequel", "fantasy film", "entertainment"]
+canonical: "https://zandani.co.ke/article/practical-magic-2-bullock-kidman-confirm-sequel-cast"
 date: "2026-08-02T15:42:07Z"
 dateModified: "2026-08-02T15:42:07Z"
+focusKeyword: "'Practical Magic 2 Sequel Confirmed by Bullock & Kidman at Screen"
 schema: "NewsArticle"
 ---
 
-## The Enduring Allure of Practical Magic 2: Why This Sequel's Return Is So Important
+## The Enduring Allure of Practical Magic 2: Why This Sequel's Return Is So Important "Practical Magic 2 Sequel Confirmed by Bullock & Kidman at Screen is the central subject of the update.
 
 Almost three decades have passed, but the Owens sisters are officially preparing to enchant us once more. Sandra Bullock and Nicole Kidman's surprise announcement at a special screening confirmed *Practical Magic 2*, sparking immense excitement among dedicated fans and signaling a fresh chapter for this beloved fantasy tale.
 
