@@ -1,18 +1,20 @@
 ---
 title: "Actress Dorea Chege celebrates purchase of new Toyota Harrier"
 slug: "dorea-chege-celebrates-purchase-of-new-toyota-harrier"
-description: "Kenyan actress and content creator Dorea Chege has acquired a new Toyota Harrier, marking a significant personal milestone in her professional career."
+description: "Actress Dorea Chege celebrates purchase of new Toyota Harrier: Kenyan actress and content creator Dorea Chege has acquired a new Toyota Harrier, marking a"
+excerpt: "A New Path: Dorea Chege and the Personal Milestone of Her New Harrier The recent purchase of a Toyota Harrier by Dorea Chege is a quiet, per"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/1fP3TBsj/c5af6fdc9789.webp"
 category: "Gossip"
 tags: ["dorea chege", "kenyan celebrities", "entertainment news", "kenyan actors", "toyota harrier"]
+canonical: "https://zandani.co.ke/article/dorea-chege-celebrates-purchase-of-new-toyota-harrier"
 date: "2026-08-02T10:08:31Z"
 dateModified: "2026-08-02T10:08:31Z"
+focusKeyword: "Actress Dorea Chege celebrates purchase of new Toyota Harrier"
 schema: "NewsArticle"
 ---
 
-## A New Path: Dorea Chege and the Personal Milestone of Her New Harrier
+## A New Path: Dorea Chege and the Personal Milestone of Her New Harrier Actress Dorea Chege celebrates purchase of new Toyota Harrier is the central subject of the update.
 
 The recent purchase of a Toyota Harrier by Dorea Chege is a quiet, personal celebration. Beyond the gleaming exterior and the hum of a new engine, the vehicle serves as a reflection of a journey marked by resilience and a steadfast commitment to her own path. In an industry often defined by fleeting moments, this acquisition stands as a testament to the fruits of her labor and the grace she has navigated throughout her career.
 
