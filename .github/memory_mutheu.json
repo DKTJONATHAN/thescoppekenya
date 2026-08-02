@@ -332,10 +332,10 @@
     "f1f873a87c857d105540a859aeaf235b",
     "936d06c3cb564c0b5c7a779cbf07ed64",
     "b1b91d2e70aa5260fe1607ed2c396f60",
-    "0ccc670b158e5454d7f1a66ad245846c"
+    "0ccc670b158e5454d7f1a66ad245846c",
+    "e29bc3e899efec2b4038882514d8e8a9"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Explainer",
     "Trend Take",
@@ -364,10 +364,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "story_progression|Mice|Profile Beat",
     "story_progression|Multiple Sclerosis|Explainer",
     "story_progression|Donald Trump|Trend Take",
     "money_follow|Alzheimer's disease|Reaction Round-up",
@@ -446,6 +446,7 @@
     "money_follow|Netflix|Reaction Round-up",
     "policy_gap|Police stop|Trend Take",
     "story_progression|na|Profile Beat",
-    "accountability|Happy Days|Hard News Lead"
+    "accountability|Happy Days|Hard News Lead",
+    "story_progression|Practical Magic|Explainer"
   ]
 }
