@@ -1,18 +1,20 @@
 ---
 title: "Kalonzo Musyoka rules out deal with Ruto and plans Uhuru meeting"
 slug: "kalonzo-musyoka-dismisses-ruto-alliance-plans-uhuru-meeting"
-description: "Wiper leader Kalonzo Musyoka has dismissed claims of a political alliance with President Ruto while confirming plans to meet Uhuru Kenyatta."
+description: "Kalonzo Musyoka rules out deal with Ruto and plans Uhuru meeting: Wiper leader Kalonzo Musyoka has dismissed claims of a political alliance with President Ruto"
+excerpt: "Kalonzo Musyoka Pivots Toward 2027 Strategy Wiper leader Kalonzo Musyoka has scheduled a high stakes consultation with former President Uhur"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/GvT5TTm6/7786ae041071.jpg"
 category: "Gossip"
 tags: ["kenyan politics", "kalonzo musyoka", "uhuru kenyatta", "azimio", "opposition politics", "2027 elections"]
+canonical: "https://zandani.co.ke/article/kalonzo-musyoka-dismisses-ruto-alliance-plans-uhuru-meeting"
 date: "2026-08-02T08:36:16Z"
 dateModified: "2026-08-02T08:36:16Z"
+focusKeyword: "Kalonzo Musyoka rules out deal with Ruto and plans Uhuru meeting"
 schema: "NewsArticle"
 ---
 
-## Kalonzo Musyoka Pivots Toward 2027 Strategy
+## Kalonzo Musyoka Pivots Toward 2027 Strategy Kalonzo Musyoka rules out deal with Ruto and plans Uhuru meeting is the central subject of the update.
 
 Wiper leader Kalonzo Musyoka has scheduled a high-stakes consultation with former President Uhuru Kenyatta for August 3, 2026, marking a decisive shift toward consolidating opposition forces and silencing rumors of a clandestine alliance with the current administration.
 
