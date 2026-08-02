@@ -199,10 +199,10 @@
     "58dbeb974d05399c381ae84f1db80965",
     "56787b63170c6ed463acc6a9dd2671b8",
     "fac1dc3fd614d6ae9033f7740dc61169",
-    "6cf98ccb269cf748b753a1eabb952a66"
+    "6cf98ccb269cf748b753a1eabb952a66",
+    "532c448be55b85ff5edf24a7d0e73a6d"
   ],
   "style_history": [
-    "Counterpoint",
     "Sharp Column",
     "Letter Form",
     "Personal Reflection",
@@ -231,10 +231,10 @@
     "Sharp Column",
     "Personal Reflection",
     "Letter Form",
-    "Historical Lens"
+    "Historical Lens",
+    "Sharp Column"
   ],
   "angle_history": [
-    "timeline_shift|Kenya|Historical Lens",
     "winners_losers|Convention 190|Counterpoint",
     "impact_on_citizens|digital health|Letter Form",
     "impact_on_citizens|ergonomics|Personal Reflection",
@@ -313,6 +313,7 @@
     "winners_losers|African cinema|Sharp Column",
     "winners_losers|Cloudflare|Personal Reflection",
     "policy_gap|Kenya|Letter Form",
-    "timeline_shift|Kenya|Historical Lens"
+    "timeline_shift|Kenya|Historical Lens",
+    "policy_gap|Universal Health Coverage|Sharp Column"
   ]
 }
