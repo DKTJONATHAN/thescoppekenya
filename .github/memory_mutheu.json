@@ -333,10 +333,10 @@
     "936d06c3cb564c0b5c7a779cbf07ed64",
     "b1b91d2e70aa5260fe1607ed2c396f60",
     "0ccc670b158e5454d7f1a66ad245846c",
-    "e29bc3e899efec2b4038882514d8e8a9"
+    "e29bc3e899efec2b4038882514d8e8a9",
+    "2ef117db2914aef212a1d7bb9a6c923f"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Explainer",
     "Trend Take",
     "Profile Beat",
@@ -365,10 +365,10 @@
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "story_progression|Multiple Sclerosis|Explainer",
     "story_progression|Donald Trump|Trend Take",
     "money_follow|Alzheimer's disease|Reaction Round-up",
     "story_progression|NBA|Profile Beat",
@@ -447,6 +447,7 @@
     "policy_gap|Police stop|Trend Take",
     "story_progression|na|Profile Beat",
     "accountability|Happy Days|Hard News Lead",
-    "story_progression|Practical Magic|Explainer"
+    "story_progression|Practical Magic|Explainer",
+    "accountability|Aaron Rodgers|Reaction Round-up"
   ]
 }
