@@ -337,10 +337,10 @@
     "f64c050dd974ea1f1800ea37cb13d74c",
     "69e441721cd464a17c745c1a58810b9c",
     "9ce3726be7662b8834a7d3dcffa86b33",
-    "b39c2de214e0ce400f4662cf432cd5a4"
+    "b39c2de214e0ce400f4662cf432cd5a4",
+    "bb583de7e2861c5ddd94adf7304240fb"
   ],
   "style_history": [
-    "Receipts Piece",
     "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
@@ -369,10 +369,10 @@
     "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "accountability|boy child movement|Profile Beat",
     "winners_losers|Akorino|Reaction Round-up",
     "impact_on_citizens|Risper Faith|Hard News Lead",
     "impact_on_citizens|Radio Jambo|Trend Take",
@@ -451,6 +451,7 @@
     "policy_gap|healthcare|Profile Beat",
     "myth_vs_fact|Shorn Arwa|Hard News Lead",
     "next_48_hours|Tyla|Reaction Round-up",
-    "winners_losers|music industry|Trend Take"
+    "winners_losers|music industry|Trend Take",
+    "money_follow|Dorea Chege|Profile Beat"
   ]
 }
