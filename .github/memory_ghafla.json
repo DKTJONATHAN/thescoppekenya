@@ -272,10 +272,10 @@
     "662d3ca9fae51165dfff810db6106ce3",
     "b183eb8fdcffa1ec3197f89bae75945f",
     "1e8d37923abdb9182966370dd24da080",
-    "b348820724025248039e2a68c104f5d1"
+    "b348820724025248039e2a68c104f5d1",
+    "0c5ea0ea86c36df626673ed1e77d26e0"
   ],
   "style_history": [
-    "Trend Take",
     "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
@@ -304,10 +304,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "accountability|Kenya|Reaction Round-up",
     "winners_losers|transport strike|Trend Take",
     "impact_on_citizens|child protection|Profile Beat",
     "money_follow|fuel prices|Hard News Lead",
@@ -386,6 +386,7 @@
     "myth_vs_fact|Kenyan Politics|Reaction Round-up",
     "timeline_shift|Kenya Power|Trend Take",
     "winners_losers|Kenya Meteorological Department|Profile Beat",
-    "money_follow|education|Receipts Piece"
+    "money_follow|education|Receipts Piece",
+    "story_progression|Kenyan politics|Hard News Lead"
   ]
 }
