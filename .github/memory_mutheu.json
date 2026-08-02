@@ -331,10 +331,10 @@
     "028efc6b9c94311febce98ded78a80b1",
     "f1f873a87c857d105540a859aeaf235b",
     "936d06c3cb564c0b5c7a779cbf07ed64",
-    "b1b91d2e70aa5260fe1607ed2c396f60"
+    "b1b91d2e70aa5260fe1607ed2c396f60",
+    "0ccc670b158e5454d7f1a66ad245846c"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
     "Explainer",
@@ -363,10 +363,10 @@
     "Explainer",
     "Reaction Round-up",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "story_progression|Horror film|Reaction Round-up",
     "story_progression|Mice|Profile Beat",
     "story_progression|Multiple Sclerosis|Explainer",
     "story_progression|Donald Trump|Trend Take",
@@ -445,6 +445,7 @@
     "accountability|Childhood abuse|Explainer",
     "money_follow|Netflix|Reaction Round-up",
     "policy_gap|Police stop|Trend Take",
-    "story_progression|na|Profile Beat"
+    "story_progression|na|Profile Beat",
+    "accountability|Happy Days|Hard News Lead"
   ]
 }
