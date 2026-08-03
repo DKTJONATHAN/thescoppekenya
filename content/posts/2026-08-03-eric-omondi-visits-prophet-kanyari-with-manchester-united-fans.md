@@ -1,18 +1,20 @@
 ---
 title: "Eric Omondi visits Prophet Kanyari with Manchester United fans"
 slug: "eric-omondi-visits-prophet-kanyari-with-manchester-united-fans"
-description: "Comedian Eric Omondi visited Prophet Victor Kanyari with a group of Manchester United supporters to seek divine favor for a match against Arsenal."
+description: "Eric Omondi visits Prophet Kanyari with Manchester United fans: Comedian Eric Omondi visited Prophet Victor Kanyari with a group of Manchester United"
+excerpt: "The Gospel of Old Trafford and KSh 25,000 Eric Omondi spent the weekend bridging the gap between the Premier League and the pulpit, trading"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://cdn.radioafrica.digital/image/2026/08/009c66da-919d-4c1b-9d3b-50bb0bee2892.webp?1785757367576"
 category: "Gossip"
 tags: ["eric omondi", "victor kanyari", "manchester united", "arsenal", "kenyan football", "nairobi"]
+canonical: "https://zandani.co.ke/article/eric-omondi-visits-prophet-kanyari-with-manchester-united-fans"
 date: "2026-08-03T11:44:54Z"
 dateModified: "2026-08-03T11:44:54Z"
+focusKeyword: "Eric Omondi visits Prophet Kanyari with Manchester United fans"
 schema: "NewsArticle"
 ---
 
-## The Gospel of Old Trafford and KSh 25,000
+## The Gospel of Old Trafford and KSh 25,000 Eric Omondi visits Prophet Kanyari with Manchester United fans is the central subject of the update.
 
 Eric Omondi spent the weekend bridging the gap between the Premier League and the pulpit, trading his usual satire for a calculated pilgrimage. While the public sees a comedic stunt, the ledger tells a story of audience acquisition through the convergence of spiritual theater and tribal football loyalty.
 

@@ -14,7 +14,7 @@ focusKeyword: "'Sean Astin Recalls Patty Duke's Fierce Defense on Film Set"
 schema: "NewsArticle"
 ---
 
-## Patty Duke's Fierce Love: Sean Astin Unpacks a Mother's Protective Shield "Sean Astin Recalls Patty Duke's Fierce Defense on Film Set is the central subject of the update.
+## Patty Duke's Fierce Love: Sean Astin Unpacks a Mother's Protective Shield "Sean Astin Recalls Patty Duke's Fierce Defense on Film Set is the central subject of the update. 'Sean Astin Recalls Patty Duke's Fierce Defense on Film Set is the central subject of the update.
 
 The legendary Oscar-winner Patty Duke projected an image of talent and strength, but her fierce protectiveness towards her son, Sean Astin, stemmed from a deeper, often painful place. Astin's recent reflections reveal how his mother's own difficult past shaped her formidable defenses, sometimes with unexpected consequences.
 
