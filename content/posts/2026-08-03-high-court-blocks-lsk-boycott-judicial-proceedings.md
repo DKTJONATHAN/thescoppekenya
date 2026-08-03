@@ -1,18 +1,20 @@
 ---
 title: "High Court blocks LSK boycott of judicial proceedings"
 slug: "high-court-blocks-lsk-boycott-judicial-proceedings"
-description: "The High Court has issued conservatory orders preventing the Law Society of Kenya from disrupting judicial operations following a petition by Adrian Kamotho."
+description: "High Court blocks LSK boycott of judicial proceedings: The High Court has issued conservatory orders preventing the Law Society of Kenya from disrupting"
+excerpt: "High Court halts lawyer boycotts to restore court access Justice David Mburu has issued conservatory orders that legally compel the Law Soci"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/21MHNNJT/a78a2d7d4c7c.webp"
 category: "News"
 tags: ["lsk", "kenya judiciary", "high court", "law society of kenya", "martha koome"]
+canonical: "https://zandani.co.ke/article/high-court-blocks-lsk-boycott-judicial-proceedings"
 date: "2026-08-03T08:33:49Z"
 dateModified: "2026-08-03T08:33:49Z"
+focusKeyword: "High Court blocks LSK boycott of judicial proceedings"
 schema: "NewsArticle"
 ---
 
-## High Court halts lawyer boycotts to restore court access
+## High Court halts lawyer boycotts to restore court access High Court blocks LSK boycott of judicial proceedings is the central subject of the update.
 
 Justice David Mburu has issued conservatory orders that legally compel the Law Society of Kenya to resume participation in judicial proceedings. This intervention follows a formal petition from lawyer Adrian Kamotho, effectively pausing a standoff that has paralyzed courtrooms across the country.
 
