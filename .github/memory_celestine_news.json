@@ -389,10 +389,10 @@
     "ad5fdb97febaf79c4725eb0d56961bc2",
     "74528f762110a15fd4506b81a263aa50",
     "8ccf72c106bf45162e8d524151175ceb",
-    "8faee3817c8e3eebcd320fb771bf3bf0"
+    "8faee3817c8e3eebcd320fb771bf3bf0",
+    "756743218d98d27dda73004f1752d4f7"
   ],
   "style_history": [
-    "Power Accountability",
     "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
@@ -421,10 +421,10 @@
     "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Power Accountability"
   ],
   "angle_history": [
-    "money_follow|Nairobi|Explainer",
     "timeline_shift|National Treasury|Hard News Lead",
     "accountability|Kenya Forest Service|Power Accountability",
     "money_follow|KRA|Context Backgrounder",
@@ -503,6 +503,7 @@
     "winners_losers|Kenya|Reaction & Voices",
     "timeline_shift|Vision 2030|Context Backgrounder",
     "myth_vs_fact|Marriage Act 2014|Hard News Lead",
-    "winners_losers|High Court of Kenya|Explainer"
+    "winners_losers|High Court of Kenya|Explainer",
+    "policy_gap|DCI|Power Accountability"
   ]
 }
