@@ -207,10 +207,10 @@
     "90e483e14a6ae9904f33b48b0a2bcbea",
     "10d6d7134cbf2d7ceca6ac229419beba",
     "6d9bf23a87f9c2b38ea5c119dc406ed1",
-    "8ad9b764fd5c0c81d9789a03cb83735f"
+    "8ad9b764fd5c0c81d9789a03cb83735f",
+    "0a22a16804ea92c9979a4f8757ca6c32"
   ],
   "style_history": [
-    "Backgrounder",
     "Power Accountability",
     "Explainer",
     "Markets Report",
@@ -239,10 +239,10 @@
     "Markets Report",
     "Power Accountability",
     "Backgrounder",
-    "Explainer"
+    "Explainer",
+    "SME Angle"
   ],
   "angle_history": [
-    "timeline_shift|transport-strike|Backgrounder",
     "money_follow|fuel taxes|Markets Report",
     "winners_losers|Satrix|Power Accountability",
     "policy_gap|Kenya|Explainer",
@@ -321,6 +321,7 @@
     "winners_losers|Kenya banking sector|Markets Report",
     "money_follow|KEBS|Power Accountability",
     "story_progression|Central Bank of Kenya|Backgrounder",
-    "winners_losers|Safaricom|Explainer"
+    "winners_losers|Safaricom|Explainer",
+    "winners_losers|Safaricom Ethiopia|SME Angle"
   ]
 }
