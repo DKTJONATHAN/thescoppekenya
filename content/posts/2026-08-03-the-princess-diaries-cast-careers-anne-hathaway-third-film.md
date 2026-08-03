@@ -14,7 +14,7 @@ focusKeyword: "'The Princess Diaries Cast: Tracking Hathaway's Career & Legacy"
 schema: "NewsArticle"
 ---
 
-## A Silver Jubilee for Genovia: Tracking The Princess Diaries Cast's Enduring Impact "The Princess Diaries Cast: Tracking Hathaway's Career & Legacy is the central subject of the update.
+## A Silver Jubilee for Genovia: Tracking The Princess Diaries Cast's Enduring Impact "The Princess Diaries Cast: Tracking Hathaway's Career & Legacy is the central subject of the update. 'The Princess Diaries Cast: Tracking Hathaway's Career & Legacy is the central subject of the update.
 
 As "The Princess Diaries" prepares for its 25th anniversary in August 2026, the enduring legacy of its original cast continues to captivate. Anne Hathaway, whose career launched with the film, is set to reprise her role in a confirmed third installment, underscoring its timeless appeal.
 

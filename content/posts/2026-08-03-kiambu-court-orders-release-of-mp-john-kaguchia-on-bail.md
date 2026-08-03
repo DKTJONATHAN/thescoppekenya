@@ -1,18 +1,20 @@
 ---
 title: "Kiambu Court Orders Release of MP John Kaguchia on Bail"
 slug: "kiambu-court-orders-release-of-mp-john-kaguchia-on-bail"
-description: "The High Court has ordered the release of Mukurwe-ini MP John Kaguchia on a cash bail of Ksh100,000 amid claims of police non-compliance at the station."
+description: "Kiambu Court Orders Release of MP John Kaguchia on Bail: The High Court has ordered the release of Mukurwe-ini MP John Kaguchia on a cash bail of Ksh100,000"
+excerpt: "When the Cell Door Stays Locked Against a Court Order The tension outside the Kamkunji Police Station is thick enough to cut, with lawyers a"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/wF1PyvgL/c26fa2020caf.webp"
 category: "News"
 tags: ["kenya politics", "john kaguchia", "judiciary", "police custody", "kiambu", "nyeri"]
+canonical: "https://zandani.co.ke/article/kiambu-court-orders-release-of-mp-john-kaguchia-on-bail"
 date: "2026-08-03T18:54:05Z"
 dateModified: "2026-08-03T18:54:05Z"
+focusKeyword: "Kiambu Court Orders Release of MP John Kaguchia on Bail"
 schema: "NewsArticle"
 ---
 
-## When the Cell Door Stays Locked Against a Court Order
+## When the Cell Door Stays Locked Against a Court Order Kiambu Court Orders Release of MP John Kaguchia on Bail is the central subject of the update.
 
 The tension outside the Kamkunji Police Station is thick enough to cut, with lawyers and supporters questioning whether a judge’s signature still holds weight against the authority of the state. As the clock ticks past the four-hour mark since the Kiambu High Court ordered the release of Mukurwe-ini MP John Kaguchia on a Ksh100,000 cash bail, the growing delay has transformed a standard legal procedure into a high-stakes standoff between the judiciary and the executive.
 
