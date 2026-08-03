@@ -1,21 +1,20 @@
 ---
-title: "Sean Astin Recalls Patty Duke's Fierce Defense on Film Set
+title: "'Sean Astin Recalls Patty Duke's Fierce Defense on Film Set"
 slug: "sean-astin-patty-duke-film-set-defense-childhood-trauma"
-description: "Sean Astin details a traumatic film set incident where his mother, Patty Duke, fiercely defended him. Learn how her protective nature stemmed from her own difficult childhood."
+description: "'Sean Astin Recalls Patty Duke's Fierce Defense on Film Set: Sean Astin details a traumatic film set incident where his mother, Patty Duke, fiercely defended"
+excerpt: "Patty Duke's Fierce Love: Sean Astin Unpacks a Mother's Protective Shield The legendary Oscar winner Patty Duke projected an image of talent"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
-og_title: "Sean Astin: Patty Duke's fierce defense on set"
-og_description: "Sean Astin shares a traumatic moment when his mother, Patty Duke, fiercely defended him on a film set, linking her protectiveness to her own difficult childhood."
-focus_keyword: "Sean Astin Patty Duke"
 category: "Entertainment"
 tags: ["sean astin", "patty duke", "hollywood", "childhood trauma", "the goonies", "celebrity news"]
+canonical: "https://zandani.co.ke/article/sean-astin-patty-duke-film-set-defense-childhood-trauma"
 date: "2026-08-03T10:26:21Z"
 dateModified: "2026-08-03T10:26:21Z"
+focusKeyword: "'Sean Astin Recalls Patty Duke's Fierce Defense on Film Set"
 schema: "NewsArticle"
 ---
 
-## Patty Duke's Fierce Love: Sean Astin Unpacks a Mother's Protective Shield
+## Patty Duke's Fierce Love: Sean Astin Unpacks a Mother's Protective Shield "Sean Astin Recalls Patty Duke's Fierce Defense on Film Set is the central subject of the update.
 
 The legendary Oscar-winner Patty Duke projected an image of talent and strength, but her fierce protectiveness towards her son, Sean Astin, stemmed from a deeper, often painful place. Astin's recent reflections reveal how his mother's own difficult past shaped her formidable defenses, sometimes with unexpected consequences.
 
