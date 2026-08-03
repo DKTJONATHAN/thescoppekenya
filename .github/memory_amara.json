@@ -184,10 +184,10 @@
     "e88448ea9d243c48c3503fc298558387",
     "4d15109d3616f11211293be1d9fe1604",
     "dc178bb853145740124e6a5391238c5a",
-    "669bb5c267e109d944dc7d3a4be5c749"
+    "669bb5c267e109d944dc7d3a4be5c749",
+    "5f1111efb665e2e6760f3307a05b7a18"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Reaction Round-up",
     "Trend Take",
@@ -216,7 +216,8 @@
     "Hard News Lead",
     "Explainer",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Hard News Lead"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -285,6 +286,7 @@
     "story_progression|Esoterica|Hard News Lead",
     "myth_vs_fact|Thierry Henry|Explainer",
     "policy_gap|STEM education|Reaction Round-up",
-    "policy_gap|copyright law|Trend Take"
+    "policy_gap|copyright law|Trend Take",
+    "money_follow|influencer|Hard News Lead"
   ]
 }
