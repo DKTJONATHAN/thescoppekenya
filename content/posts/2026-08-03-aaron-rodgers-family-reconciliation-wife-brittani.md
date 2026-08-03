@@ -14,7 +14,7 @@ focusKeyword: "'Aaron Rodgers Reconciles With Family, Wife Brittani Instrumental
 schema: "NewsArticle"
 ---
 
-## Fans Give Verdict on Aaron Rodgers' Family Reconciliation After Years of Rift "Aaron Rodgers Reconciles With Family, Wife Brittani Instrumental is the central subject of the update.
+## Fans Give Verdict on Aaron Rodgers' Family Reconciliation After Years of Rift "Aaron Rodgers Reconciles With Family, Wife Brittani Instrumental is the central subject of the update. 'Aaron Rodgers Reconciles With Family, Wife Brittani Instrumental is the central subject of the update.
 
 The NFL world and beyond is buzzing following the much-anticipated Aaron Rodgers family reconciliation, with the Pittsburgh Steelers quarterback publicly mending fences with his estranged relatives. Social media is alight with Kenyans debating who truly deserves the accolades - and the accountability - for the years-long rift and its eventual healing.
 

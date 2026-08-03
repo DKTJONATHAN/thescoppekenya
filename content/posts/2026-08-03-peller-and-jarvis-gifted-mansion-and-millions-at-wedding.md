@@ -1,18 +1,20 @@
 ---
 title: "Peller and Jarvis gifted mansion and millions at wedding ceremony"
 slug: "peller-and-jarvis-gifted-mansion-and-millions-at-wedding"
-description: "TikTok stars Peller and Jarvis received a 400 million Naira mansion and cash donations from supporters during their lavish wedding celebration."
+description: "Peller and Jarvis gifted mansion and millions at wedding ceremony: TikTok stars Peller and Jarvis received a 400 million Naira mansion and cash donations from"
+excerpt: "The Digital Dowry: How Creators Monetize Social Capital TikTok sensations Peller and Jarvis have redefined the economics of celebrity nuptia"
 author: "Amara Ndlovu"
-authorUrl: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/9m0M3ZCD/ed64d973b0ea.jpg"
 category: "Africa Entertainment"
 tags: ["peller", "jarvis", "tiktok influencers", "wedding gifts", "celebrity news", "nigerian entertainment"]
+canonical: "https://zandani.co.ke/article/peller-and-jarvis-gifted-mansion-and-millions-at-wedding"
 date: "2026-08-03T06:32:36Z"
 dateModified: "2026-08-03T06:32:36Z"
+focusKeyword: "Peller and Jarvis gifted mansion and millions at wedding ceremony"
 schema: "NewsArticle"
 ---
 
-## The Digital Dowry: How Creators Monetize Social Capital
+## The Digital Dowry: How Creators Monetize Social Capital Peller and Jarvis gifted mansion and millions at wedding ceremony is the central subject of the update.
 
 TikTok sensations Peller and Jarvis have redefined the economics of celebrity nuptials by securing a ₦400 million mansion in Abuja alongside significant cash injections during their wedding celebration. This transition from traditional tokenism to high-value asset transfer signals a fundamental shift in how the creator economy rewards its top-tier talent.
 
