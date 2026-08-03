@@ -1,21 +1,20 @@
 ---
-title: "The Princess Diaries Cast: Tracking Hathaway's Career & Legacy
+title: "'The Princess Diaries Cast: Tracking Hathaway's Career & Legacy"
 slug: "the-princess-diaries-cast-careers-anne-hathaway-third-film"
-description: "The Princess Diaries approaches its 25th anniversary. Track the evolving careers of its original cast, including Anne Hathaway, and the confirmed third film. Discover their journeys."
+description: "'The Princess Diaries Cast: Tracking Hathaway's Career & Legacy: The Princess Diaries approaches its 25th anniversary. Track the evolving careers of its"
+excerpt: "A Silver Jubilee for Genovia: Tracking The Princess Diaries Cast's Enduring Impact As 'The Princess Diaries' prepares for its 25th anniversa"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/B5LKhVB5/30f46acfbd36.jpg"
-og_title: "The Princess Diaries Cast: Anne Hathaway's Journey"
-og_description: "'The Princess Diaries' approaches its 25th anniversary. Explore the careers of Anne Hathaway and co-stars, plus news on the third film."
-focus_keyword: "The Princess Diaries cast"
 category: "Entertainment"
 tags: ["the princess diaries", "anne hathaway", "julie andrews", "film careers", "hollywood news", "entertainment", "sequel"]
+canonical: "https://zandani.co.ke/article/the-princess-diaries-cast-careers-anne-hathaway-third-film"
 date: "2026-08-03T16:58:19Z"
 dateModified: "2026-08-03T16:58:19Z"
+focusKeyword: "'The Princess Diaries Cast: Tracking Hathaway's Career & Legacy"
 schema: "NewsArticle"
 ---
 
-## A Silver Jubilee for Genovia: Tracking The Princess Diaries Cast's Enduring Impact
+## A Silver Jubilee for Genovia: Tracking The Princess Diaries Cast's Enduring Impact "The Princess Diaries Cast: Tracking Hathaway's Career & Legacy is the central subject of the update.
 
 As "The Princess Diaries" prepares for its 25th anniversary in August 2026, the enduring legacy of its original cast continues to captivate. Anne Hathaway, whose career launched with the film, is set to reprise her role in a confirmed third installment, underscoring its timeless appeal.
 
