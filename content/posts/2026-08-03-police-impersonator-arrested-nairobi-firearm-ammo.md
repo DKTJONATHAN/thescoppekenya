@@ -1,18 +1,20 @@
 ---
 title: "Police Impersonator Arrested in Nairobi with Firearm and Ammo"
 slug: "police-impersonator-arrested-nairobi-firearm-ammo"
-description: "DCI detectives apprehended a man at Yaya Centre for impersonating an officer. Police recovered a pistol and 100 rounds of ammunition in Dagoretti North."
+description: "Police Impersonator Arrested in Nairobi with Firearm and Ammo: DCI detectives apprehended a man at Yaya Centre for impersonating an officer. Police recovered a"
+excerpt: "The Anatomy of an Impostor A man sits in custody after his masquerade as a DCI officer ended at the Yaya Centre, but the real story is not t"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/WYm7Dqq/338fadd2c78d.webp"
 category: "News"
 tags: ["dci", "nairobi crime", "police impersonation", "kilimani", "kenya news", "dagoretti"]
+canonical: "https://zandani.co.ke/article/police-impersonator-arrested-nairobi-firearm-ammo"
 date: "2026-08-03T13:44:20Z"
 dateModified: "2026-08-03T13:44:20Z"
+focusKeyword: "Police Impersonator Arrested in Nairobi with Firearm and Ammo"
 schema: "NewsArticle"
 ---
 
-## The Anatomy of an Impostor
+## The Anatomy of an Impostor Police Impersonator Arrested in Nairobi with Firearm and Ammo is the central subject of the update.
 
 A man sits in custody after his masquerade as a DCI officer ended at the Yaya Centre, but the real story is not the individual behind the cuffs. It is the supply chain of state-sanctioned weaponry that permits a civilian to walk the streets armed like an elite tactical operative.
 
