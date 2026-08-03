@@ -1,18 +1,20 @@
 ---
 title: "Google faces legal scrutiny over default AI scanning in Gmail"
 slug: "google-faces-legal-scrutiny-over-default-ai-scanning-in-gmail"
-description: "Google faces privacy concerns after enabling AI-powered Smart Features by default across Gmail, Chat, and Meet. Users navigate data scans."
+description: "Google faces legal scrutiny over default AI scanning in Gmail: Google faces privacy concerns after enabling AI-powered Smart Features by default across Gmail,"
+excerpt: "The Privacy Gap: Google and the Cost of Default AI Kenyan Google Workspace users currently navigate an environment where automated data proc"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/CsHCZ8k9/bd834326a77a.jpg"
 category: "Technology"
 tags: ["google", "data privacy", "gmail", "technology news", "artificial intelligence", "cyber security"]
+canonical: "https://zandani.co.ke/article/google-faces-legal-scrutiny-over-default-ai-scanning-in-gmail"
 date: "2026-08-03T13:49:23Z"
 dateModified: "2026-08-03T13:49:23Z"
+focusKeyword: "Google faces legal scrutiny over default AI scanning in Gmail"
 schema: "NewsArticle"
 ---
 
-## The Privacy Gap: Google and the Cost of Default AI
+## The Privacy Gap: Google and the Cost of Default AI Google faces legal scrutiny over default AI scanning in Gmail is the central subject of the update.
 
 Kenyan Google Workspace users currently navigate an environment where automated data processing is activated the moment an account is created. As international legal bodies weigh the complexities of digital harm, local regulators are confronting a difficult question: do existing opt-out systems provide meaningful protection for the average citizen, or are they merely a procedural hurdle?
 
