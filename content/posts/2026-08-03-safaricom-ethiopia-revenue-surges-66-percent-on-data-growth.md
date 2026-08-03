@@ -1,18 +1,20 @@
 ---
 title: "Safaricom Ethiopia Revenue Surges 66 Percent on Data Growth"
 slug: "safaricom-ethiopia-revenue-surges-66-percent-on-data-growth"
-description: "Safaricom Ethiopia reports strong financial growth with revenue hitting 5 billion shillings as active customers rise to nearly 15 million users."
+description: "Safaricom Ethiopia Revenue Surges 66 Percent on Data Growth: Safaricom Ethiopia reports strong financial growth with revenue hitting 5 billion shillings as"
+excerpt: "Ethiopia’s Digital Expansion: Practical Opportunities for Nairobi Businesses Safaricom Ethiopia reported a 66.1 percent revenue increase in"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/PZGJQyR3/9537d231eb04.jpg"
 category: "Business"
 tags: ["safaricom ethiopia", "telecommunications", "kenyan business", "m-pesa", "mobile data", "east africa"]
+canonical: "https://zandani.co.ke/article/safaricom-ethiopia-revenue-surges-66-percent-on-data-growth"
 date: "2026-08-03T08:40:20Z"
 dateModified: "2026-08-03T08:40:20Z"
+focusKeyword: "Safaricom Ethiopia Revenue Surges 66 Percent on Data Growth"
 schema: "NewsArticle"
 ---
 
-## Ethiopia’s Digital Expansion: Practical Opportunities for Nairobi Businesses
+## Ethiopia’s Digital Expansion: Practical Opportunities for Nairobi Businesses Safaricom Ethiopia Revenue Surges 66 Percent on Data Growth is the central subject of the update.
 
 Safaricom Ethiopia reported a 66.1 percent revenue increase in its latest financial results, reaching KSh 5.04 billion. This performance points to a rapidly maturing digital landscape across the border. With the active subscriber count now reaching 14.7 million, the region is shifting from an offline market to a high-connectivity environment. For Kenyan entrepreneurs, this data-driven growth is not just a corporate milestone for the telco; it represents a functional blueprint for cross-border expansion.
 
