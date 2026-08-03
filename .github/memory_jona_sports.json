@@ -262,10 +262,10 @@
     "c8fb383e590477a20d6a18d80784fc28",
     "4bf0a1fa3b08302a8982f2c2f972b049",
     "2ba6ebb85df5837a40a71ae1c4de8413",
-    "dd1c2f6cc531ce5713b396d5e4ff8b3e"
+    "dd1c2f6cc531ce5713b396d5e4ff8b3e",
+    "2e67b35e79bb559eb73a1c795408b33e"
   ],
   "style_history": [
-    "Tactical Take",
     "Match Report",
     "Stat Story",
     "Player Profile Beat",
@@ -294,10 +294,10 @@
     "Stat Story",
     "Cynical Pundit",
     "Match Report",
-    "Tactical Take"
+    "Tactical Take",
+    "Player Profile Beat"
   ],
   "angle_history": [
-    "policy_gap|West Ham|Match Report",
     "impact_on_citizens|Tottenham Hotspur|Player Profile Beat",
     "winners_losers|Tottenham Hotspur|Tactical Take",
     "money_follow|Premier League|Stat Story",
@@ -376,6 +376,7 @@
     "money_follow|Premier League|Stat Story",
     "accountability|Fifa|Cynical Pundit",
     "policy_gap|Fifa|Match Report",
-    "accountability|Fifa|Tactical Take"
+    "accountability|Fifa|Tactical Take",
+    "myth_vs_fact|FIFA|Player Profile Beat"
   ]
 }
