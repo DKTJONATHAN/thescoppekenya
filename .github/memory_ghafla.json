@@ -273,10 +273,10 @@
     "b183eb8fdcffa1ec3197f89bae75945f",
     "1e8d37923abdb9182966370dd24da080",
     "b348820724025248039e2a68c104f5d1",
-    "0c5ea0ea86c36df626673ed1e77d26e0"
+    "0c5ea0ea86c36df626673ed1e77d26e0",
+    "108ebfdd9ef1bcb47e3919fabf124d03"
   ],
   "style_history": [
-    "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
     "Profile Beat",
@@ -305,10 +305,10 @@
     "Trend Take",
     "Profile Beat",
     "Receipts Piece",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Trend Take"
   ],
   "angle_history": [
-    "winners_losers|transport strike|Trend Take",
     "impact_on_citizens|child protection|Profile Beat",
     "money_follow|fuel prices|Hard News Lead",
     "impact_on_citizens|transport strike|Reaction Round-up",
@@ -387,6 +387,7 @@
     "timeline_shift|Kenya Power|Trend Take",
     "winners_losers|Kenya Meteorological Department|Profile Beat",
     "money_follow|education|Receipts Piece",
-    "story_progression|Kenyan politics|Hard News Lead"
+    "story_progression|Kenyan politics|Hard News Lead",
+    "story_progression|Nadia Mukami|Trend Take"
   ]
 }
