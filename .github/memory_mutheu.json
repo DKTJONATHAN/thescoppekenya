@@ -335,10 +335,10 @@
     "0ccc670b158e5454d7f1a66ad245846c",
     "e29bc3e899efec2b4038882514d8e8a9",
     "2ef117db2914aef212a1d7bb9a6c923f",
-    "b677fba56508641975e731500b47718a"
+    "b677fba56508641975e731500b47718a",
+    "007a8e22f3487fe73f5f85fb3968115c"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
@@ -367,10 +367,10 @@
     "Hard News Lead",
     "Explainer",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "money_follow|Alzheimer's disease|Reaction Round-up",
     "story_progression|NBA|Profile Beat",
     "story_progression|na|Hard News Lead",
     "story_progression|Rewind|Explainer",
@@ -449,6 +449,7 @@
     "accountability|Happy Days|Hard News Lead",
     "story_progression|Practical Magic|Explainer",
     "accountability|Aaron Rodgers|Reaction Round-up",
-    "myth_vs_fact|Sean Astin|Profile Beat"
+    "myth_vs_fact|Sean Astin|Profile Beat",
+    "story_progression|The Princess Diaries|Hard News Lead"
   ]
 }
