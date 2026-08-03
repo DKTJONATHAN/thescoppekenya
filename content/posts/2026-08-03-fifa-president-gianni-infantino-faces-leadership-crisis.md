@@ -1,18 +1,20 @@
 ---
 title: "FIFA President Gianni Infantino faces leadership crisis as FA revolts"
 slug: "fifa-president-gianni-infantino-faces-leadership-crisis"
-description: "Gianni Infantino faces a leadership crisis as European football associations withdraw support over controversial plans to sell competition rights."
+description: "FIFA President Gianni Infantino faces leadership crisis as FA rev: Gianni Infantino faces a leadership crisis as European football associations withdraw"
+excerpt: "The House That Gianni Built Is Shaking Gianni Infantino spent a decade selling the world on a vision of a transparent, inclusive FIFA. Now,"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/4ZZYsk5V/2a3e13b9d9dc.jpg"
 category: "Sports"
 tags: ["fifa", "gianni infantino", "football governance", "uefa", "world football"]
+canonical: "https://zandani.co.ke/article/fifa-president-gianni-infantino-faces-leadership-crisis"
 date: "2026-08-03T13:23:12Z"
 dateModified: "2026-08-03T13:23:12Z"
+focusKeyword: "FIFA President Gianni Infantino faces leadership crisis as FA rev"
 schema: "NewsArticle"
 ---
 
-## The House That Gianni Built Is Shaking
+## The House That Gianni Built Is Shaking FIFA President Gianni Infantino faces leadership crisis as FA rev is the central subject of the update.
 
 Gianni Infantino spent a decade selling the world on a vision of a transparent, inclusive FIFA. Now, his legacy faces a brutal reckoning as the English Football Association leads a European exodus, demanding total accountability for a clandestine commercialization scheme.
 
