@@ -1,18 +1,20 @@
 ---
 title: "Çelebi Aviation Takes Over Turkish Airlines Ground Handling at JKIA"
 slug: "celebi-aviation-turkish-airlines-ground-handling-jkia"
-description: "Çelebi Aviation has officially commenced ground handling services for Turkish Airlines at Jomo Kenyatta International Airport in Nairobi."
+description: "Çelebi Aviation Takes Over Turkish Airlines Ground Handling at JK: Çelebi Aviation has officially commenced ground handling services for Turkish Airlines at"
+excerpt: "Çelebi Aviation Signals New Standard for JKIA Logistics Çelebi Aviation officially assumed ground handling responsibilities for Turkish Airl"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/mr3Xdbc5/c4a817d82393.png"
 category: "Business"
 tags: ["aviation", "jkia", "turkish airlines", "kenya business", "transport logistics", "nairobi"]
+canonical: "https://zandani.co.ke/article/celebi-aviation-turkish-airlines-ground-handling-jkia"
 date: "2026-08-04T07:47:33Z"
 dateModified: "2026-08-04T07:47:33Z"
+focusKeyword: "Çelebi Aviation Takes Over Turkish Airlines Ground Handling at JK"
 schema: "NewsArticle"
 ---
 
-## Çelebi Aviation Signals New Standard for JKIA Logistics
+## Çelebi Aviation Signals New Standard for JKIA Logistics Çelebi Aviation Takes Over Turkish Airlines Ground Handling at JK is the central subject of the update.
 
 Çelebi Aviation officially assumed ground handling responsibilities for Turkish Airlines at Jomo Kenyatta International Airport on August 1, 2026, marking a strategic shift in the operational standards governing Nairobi-bound international carriers. This transition signals the departure from legacy handling models toward high-intensity, global-standard logistics.
 
