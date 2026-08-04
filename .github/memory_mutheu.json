@@ -338,10 +338,10 @@
     "b677fba56508641975e731500b47718a",
     "007a8e22f3487fe73f5f85fb3968115c",
     "dff484c87d22b0b81b83d84ad258fd85",
-    "8c61c7d1d28b1ad4e47b4b94eb2b6de8"
+    "8c61c7d1d28b1ad4e47b4b94eb2b6de8",
+    "2591fe7c7cd7ad8ff6970986aabc0a69"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Explainer",
     "Trend Take",
     "Hard News Lead",
@@ -370,10 +370,10 @@
     "Profile Beat",
     "Hard News Lead",
     "Trend Take",
-    "Explainer"
+    "Explainer",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "story_progression|Rewind|Explainer",
     "accountability|medical drama|Trend Take",
     "story_progression|Survivor|Profile Beat",
     "myth_vs_fact|na|Reaction Round-up",
@@ -452,6 +452,7 @@
     "myth_vs_fact|Sean Astin|Profile Beat",
     "story_progression|The Princess Diaries|Hard News Lead",
     "timeline_shift|na|Trend Take",
-    "story_progression|na|Explainer"
+    "story_progression|na|Explainer",
+    "myth_vs_fact|Television careers|Reaction Round-up"
   ]
 }
