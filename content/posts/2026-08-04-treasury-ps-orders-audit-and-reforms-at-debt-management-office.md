@@ -1,18 +1,20 @@
 ---
 title: "Treasury PS Orders Audit and Reforms at Debt Management Office"
 slug: "treasury-ps-orders-audit-and-reforms-at-debt-management-office"
-description: "Treasury PS Chris Kiptoo has initiated operational audits and digital reforms to improve debt sustainability and diversify financing sources in Kenya."
+description: "Treasury PS Orders Audit and Reforms at Debt Management Office: Treasury PS Chris Kiptoo has initiated operational audits and digital reforms to improve debt"
+excerpt: "The Ledger and the Liability Treasury Principal Secretary Dr. Chris Kiptoo has instructed an immediate audit of the Public Debt Management O"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/8gTNhpvY/a3a705a9a8e7.webp"
 category: "News"
 tags: ["kenya", "national treasury", "public debt", "economy", "chris kiptoo", "government securities"]
+canonical: "https://zandani.co.ke/article/treasury-ps-orders-audit-and-reforms-at-debt-management-office"
 date: "2026-08-04T18:42:07Z"
 dateModified: "2026-08-04T18:42:07Z"
+focusKeyword: "Treasury PS Orders Audit and Reforms at Debt Management Office"
 schema: "NewsArticle"
 ---
 
-## The Ledger and the Liability
+## The Ledger and the Liability Treasury PS Orders Audit and Reforms at Debt Management Office is the central subject of the update.
 
 Treasury Principal Secretary Dr. Chris Kiptoo has instructed an immediate audit of the Public Debt Management Office to identify systemic failures in how Kenya tracks its obligations. This directive shifts focus from routine bookkeeping toward the controversial rollout of a centralized digital debt warehouse.
 
