@@ -1,18 +1,20 @@
 ---
 title: "Airtel Launches Bizna Wallet to Challenge Safaricom Merchant Fees"
 slug: "airtel-launches-bizna-wallet-to-challenge-safaricom-merchant-fees"
-description: "Airtel Kenya introduces Bizna Wallet to compete with M-Pesa in the micro-merchant sector through cashback offers and reduced transaction fees."
+description: "Airtel Launches Bizna Wallet to Challenge Safaricom Merchant Fees: Airtel Kenya introduces Bizna Wallet to compete with M-Pesa in the micro-merchant sector"
+excerpt: "The New Arithmetic of the Kenyan Informal Economy Airtel Kenya has rolled out the Bizna Wallet to aggressively court the nation’s 2.1 millio"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/rK7Dprv2/779d9db1321b.webp"
 category: "Technology"
 tags: ["airtel money", "safaricom", "mpesa", "kenya business", "mobile money", "bizna wallet"]
+canonical: "https://zandani.co.ke/article/airtel-launches-bizna-wallet-to-challenge-safaricom-merchant-fees"
 date: "2026-08-04T13:11:06Z"
 dateModified: "2026-08-04T13:11:06Z"
+focusKeyword: "Airtel Launches Bizna Wallet to Challenge Safaricom Merchant Fees"
 schema: "NewsArticle"
 ---
 
-## The New Arithmetic of the Kenyan Informal Economy
+## The New Arithmetic of the Kenyan Informal Economy Airtel Launches Bizna Wallet to Challenge Safaricom Merchant Fees is the central subject of the update.
 
 Airtel Kenya has rolled out the Bizna Wallet to aggressively court the nation’s 2.1 million micro-merchants, signaling an end to the era of passive market dominance. This shift signals a calculated move to capture liquidity within the informal sector by weaponizing transaction costs against the established incumbent.
 
