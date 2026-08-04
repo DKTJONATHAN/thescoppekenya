@@ -1,15 +1,20 @@
 ---
 title: "Manchester United plans multiple player exits"
 slug: "manchester-united-plans-multiple-player-exits"
+description: "Manchester United plans multiple player exits: Manchester United's Endless Garage Sale Nine players out, more to come Manchester United's summer clear out is"
+excerpt: "Manchester United's Endless Garage Sale Nine players out, more to come Manchester United's summer clear out is less a strategic overhaul and"
 author: "Sports Desk"
 image: "https://i.ibb.co/qYhcCMYR/9ac65bb1410d.jpg"
 category: "Global News"
+tags: ["manchester united plans multiple player exits", "global news", "kenya news"]
+canonical: "https://zandani.co.ke/article/manchester-united-plans-multiple-player-exits"
 date: "2026-08-04T16:56:27Z"
-authorUrl: "https://zandani.co.ke/author/sports-desk"
 dateModified: "2026-08-04T16:56:27Z"
+focusKeyword: "Manchester United plans multiple player exits"
 schema: "NewsArticle"
 ---
-## Manchester United's Endless Garage Sale
+
+## Manchester United's Endless Garage Sale Manchester United plans multiple player exits is the central subject of the update.
 
 Nine players out, more to come - Manchester United's summer clear-out is less a strategic overhaul and more a desperate attempt to balance books after years of questionable recruitment. With young talents cast aside and recent signings already deemed surplus, it's business as usual at Old Trafford.
 
