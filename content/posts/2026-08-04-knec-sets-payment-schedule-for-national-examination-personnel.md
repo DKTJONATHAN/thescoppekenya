@@ -1,18 +1,20 @@
 ---
 title: "KNEC Sets Payment Schedule for National Examination Personnel"
 slug: "knec-sets-payment-schedule-for-national-examination-personnel"
-description: "The Ministry of Education has released funds to KNEC, allowing the council to schedule payments for supervisors and invigilators for national exams."
+description: "KNEC Sets Payment Schedule for National Examination Personnel: The Ministry of Education has released funds to KNEC, allowing the council to schedule payments"
+excerpt: "When Will the Exam Personnel Finally See Their Pay? Teachers across Kenya who supervised and invigilated the 2025 national examinations will"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/pv4ZN8DH/708f67e34414.jpg"
 category: "News"
 tags: ["knec", "education", "kcse", "kenyan news", "national examinations", "za ndani"]
+canonical: "https://zandani.co.ke/article/knec-sets-payment-schedule-for-national-examination-personnel"
 date: "2026-08-04T13:06:06Z"
 dateModified: "2026-08-04T13:06:06Z"
+focusKeyword: "KNEC Sets Payment Schedule for National Examination Personnel"
 schema: "NewsArticle"
 ---
 
-## When Will the Exam Personnel Finally See Their Pay?
+## When Will the Exam Personnel Finally See Their Pay? KNEC Sets Payment Schedule for National Examination Personnel is the central subject of the update.
 
 Teachers across Kenya who supervised and invigilated the 2025 national examinations will finally receive their dues starting Thursday, August 6, 2026. This announcement follows sustained pressure from the National Assembly as the government clears outstanding arrears for these essential administrative services.
 
