@@ -337,10 +337,10 @@
     "2ef117db2914aef212a1d7bb9a6c923f",
     "b677fba56508641975e731500b47718a",
     "007a8e22f3487fe73f5f85fb3968115c",
-    "dff484c87d22b0b81b83d84ad258fd85"
+    "dff484c87d22b0b81b83d84ad258fd85",
+    "8c61c7d1d28b1ad4e47b4b94eb2b6de8"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
     "Trend Take",
@@ -369,10 +369,10 @@
     "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
-    "Trend Take"
+    "Trend Take",
+    "Explainer"
   ],
   "angle_history": [
-    "story_progression|na|Hard News Lead",
     "story_progression|Rewind|Explainer",
     "accountability|medical drama|Trend Take",
     "story_progression|Survivor|Profile Beat",
@@ -451,6 +451,7 @@
     "accountability|Aaron Rodgers|Reaction Round-up",
     "myth_vs_fact|Sean Astin|Profile Beat",
     "story_progression|The Princess Diaries|Hard News Lead",
-    "timeline_shift|na|Trend Take"
+    "timeline_shift|na|Trend Take",
+    "story_progression|na|Explainer"
   ]
 }
