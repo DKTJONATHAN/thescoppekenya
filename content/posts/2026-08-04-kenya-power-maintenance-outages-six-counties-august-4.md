@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Schedules Maintenance Outages in Six Counties"
 slug: "kenya-power-maintenance-outages-six-counties-august-4"
-description: "Kenya Power has announced electricity interruptions across Migori, Kiambu, Nyeri, Embu, Laikipia, and Mombasa on August 4 for maintenance."
+description: "Kenya Power Schedules Maintenance Outages in Six Counties: Kenya Power has announced electricity interruptions across Migori, Kiambu, Nyeri, Embu, Laikipia,"
+excerpt: "The Architects of the Grid: Life Behind the Maintenance Schedule When a neighborhood suddenly goes quiet, most people instinctively reach fo"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/Xfcg3VjB/82b1efb5856b.jpg"
 category: "Gossip"
 tags: ["kenya power", "power outage", "electricity", "kenya news", "utility services", "kenya energy"]
+canonical: "https://zandani.co.ke/article/kenya-power-maintenance-outages-six-counties-august-4"
 date: "2026-08-04T08:52:26Z"
 dateModified: "2026-08-04T08:52:26Z"
+focusKeyword: "Kenya Power Schedules Maintenance Outages in Six Counties"
 schema: "NewsArticle"
 ---
 
-## The Architects of the Grid: Life Behind the Maintenance Schedule
+## The Architects of the Grid: Life Behind the Maintenance Schedule Kenya Power Schedules Maintenance Outages in Six Counties is the central subject of the update.
 
 When a neighborhood suddenly goes quiet, most people instinctively reach for their phones or wonder when the appliances will hum back to life. Yet, while homes sit in the stillness of a scheduled outage this August 4, 2026, the real story is playing out thirty feet above the ground. Across six counties-Migori, Kiambu, Nyeri, Embu, Laikipia, and Mombasa-specialized crews are currently deep into a day of labor that keeps the national grid from faltering.
 
