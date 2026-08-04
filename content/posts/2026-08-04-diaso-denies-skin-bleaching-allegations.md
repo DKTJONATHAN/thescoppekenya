@@ -1,18 +1,20 @@
 ---
 title: "Social Media Personality Diaso Denies Using Skin Bleaching Agents"
 slug: "diaso-denies-skin-bleaching-allegations"
-description: "Content creator Diaso has addressed public speculation regarding his complexion, attributing his recent physical appearance to a natural skincare routine."
+description: "Social Media Personality Diaso Denies Using Skin Bleaching Agents: Content creator Diaso has addressed public speculation regarding his complexion, attributing"
+excerpt: "The Truth Behind The Digital Glow Influencer Diaso pushed back against persistent allegations of chemical skin lightening today, attributing"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://cdn.radioafrica.digital/image/2026/08/d1904466-99a0-4a94-942c-79b2750f20dc.webp?1785840006249"
 category: "Gossip"
 tags: ["diaso", "kenyan celebrities", "skincare", "kenyan entertainment", "social media trends"]
+canonical: "https://zandani.co.ke/article/diaso-denies-skin-bleaching-allegations"
 date: "2026-08-04T10:51:06Z"
 dateModified: "2026-08-04T10:51:06Z"
+focusKeyword: "Social Media Personality Diaso Denies Using Skin Bleaching Agents"
 schema: "NewsArticle"
 ---
 
-## The Truth Behind The Digital Glow
+## The Truth Behind The Digital Glow Social Media Personality Diaso Denies Using Skin Bleaching Agents is the central subject of the update.
 
 Influencer Diaso pushed back against persistent allegations of chemical skin lightening today, attributing his recent physical transformation to a disciplined and costly skincare regimen. As digital scrutiny intensifies, the creator dismissed claims of artificial intervention, framing the public’s obsession with his appearance as a misunderstanding of professional dermatological care.
 
