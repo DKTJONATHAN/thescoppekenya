@@ -1,18 +1,20 @@
 ---
 title: "Sheba Wins Week 2 Head of House Challenge in BBNaija Season 11"
 slug: "sheba-wins-week-2-head-of-house-challenge-bbnaija-season-11"
-description: "Sheba secures the Head of House title for the second week of BBNaija Season 11 and saves Chimsom Chuka from eviction after her swift win."
+description: "Sheba Wins Week 2 Head of House Challenge in BBNaija Season 11: Sheba secures the Head of House title for the second week of BBNaija Season 11 and saves"
+excerpt: "The Chessboard Moves: Sheba’s New Reign in BBNaija Season 11 Sheba dominated the second week of Big Brother Naija Season 11 by finishing the"
 author: "Amara Ndlovu"
-authorUrl: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/fVqsh9jB/55c26018063b.png"
 category: "Africa Entertainment"
 tags: ["bbnaija", "reality tv", "sheba", "big brother nigeria", "kenyan entertainment"]
+canonical: "https://zandani.co.ke/article/sheba-wins-week-2-head-of-house-challenge-bbnaija-season-11"
 date: "2026-08-04T06:05:24Z"
 dateModified: "2026-08-04T06:05:24Z"
+focusKeyword: "Sheba Wins Week 2 Head of House Challenge in BBNaija Season 11"
 schema: "NewsArticle"
 ---
 
-## The Chessboard Moves: Sheba’s New Reign in BBNaija Season 11
+## The Chessboard Moves: Sheba’s New Reign in BBNaija Season 11 Sheba Wins Week 2 Head of House Challenge in BBNaija Season 11 is the central subject of the update.
 
 Sheba dominated the second week of Big Brother Naija Season 11 by finishing the Head of House challenge in a blistering six minutes, effectively securing control over the house agenda and immediately altering the power structure among the contestants.
 
