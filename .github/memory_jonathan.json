@@ -201,10 +201,10 @@
     "fac1dc3fd614d6ae9033f7740dc61169",
     "6cf98ccb269cf748b753a1eabb952a66",
     "532c448be55b85ff5edf24a7d0e73a6d",
-    "e5d86f31fc0c284fcf10d45b88f5af3c"
+    "e5d86f31fc0c284fcf10d45b88f5af3c",
+    "84c97e72888fbea158cbd3850b46ba4a"
   ],
   "style_history": [
-    "Letter Form",
     "Personal Reflection",
     "Historical Lens",
     "Sharp Column",
@@ -233,10 +233,10 @@
     "Letter Form",
     "Historical Lens",
     "Sharp Column",
-    "Counterpoint"
+    "Counterpoint",
+    "Letter Form"
   ],
   "angle_history": [
-    "impact_on_citizens|digital health|Letter Form",
     "impact_on_citizens|ergonomics|Personal Reflection",
     "timeline_shift|Gender-based violence|Historical Lens",
     "policy_gap|Senegal|Sharp Column",
@@ -315,6 +315,7 @@
     "policy_gap|Kenya|Letter Form",
     "timeline_shift|Kenya|Historical Lens",
     "policy_gap|Universal Health Coverage|Sharp Column",
-    "myth_vs_fact|negotiated democracy|Counterpoint"
+    "myth_vs_fact|negotiated democracy|Counterpoint",
+    "story_progression|Kenya politics|Letter Form"
   ]
 }
