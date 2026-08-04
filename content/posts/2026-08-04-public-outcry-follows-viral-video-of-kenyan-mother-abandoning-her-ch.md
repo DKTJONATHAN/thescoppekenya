@@ -1,7 +1,8 @@
 ---
 title: "Public Outcry Follows Viral Video of Kenyan Mother Abandoning Her Children"
 slug: "public-outcry-follows-viral-video-of-kenyan-mother-abandoning-her-ch"
-description: "A viral video of a mother abandoning her children in a Kenyan city sparks a national debate on parental accountability and urgent child welfare ethics."
+description: "Public Outcry Follows Viral Video of Kenyan Mother Abandoning Her: A viral video of a mother abandoning her children in a Kenyan city sparks a national debate"
+excerpt: "A distressing video filmed this August in a crowded Kenyan urban center captures a mother intentionally abandoning her young children in a p"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/VYQPXb4Y/4e4c69314062.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["kenyan-social-media", "child-neglect-crisis", "viral-video-outcry", "kenyan-parenting-issues"]
 canonical: "https://zandani.co.ke/article/public-outcry-follows-viral-video-of-kenyan-mother-abandoning-her-ch"
 date: "2026-08-04T14:38:38Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-08-04T14:38:38Z"
+focusKeyword: "Public Outcry Follows Viral Video of Kenyan Mother Abandoning Her"
 schema: "NewsArticle"
 ---
-A distressing video filmed this August in a crowded Kenyan urban center captures a mother intentionally abandoning her young children in a public space, triggering a nationwide debate regarding parental accountability, the ethics of child welfare, and the boundaries of personal responsibility.
+
+A distressing video filmed this August in a crowded Kenyan urban center captures a mother intentionally abandoning her young children in a public space, triggering a nationwide debate regarding parental accountability, the ethics of child welfare, and the boundaries of personal responsibility. Public Outcry Follows Viral Video of Kenyan Mother Abandoning Her is the central subject of the update.
 
 ## The Consequences of Parental Neglect
 
