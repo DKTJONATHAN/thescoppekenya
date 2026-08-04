@@ -1,20 +1,21 @@
 ---
 title: "Echoes of Stamps: Kenya's Costly Road Reckoning"
 slug: "echoes-of-stamps-kenyas-costly-road-reckoning"
-description: "From distant shores, a whisper of past burdens, now a clamor for the present. This tale unwinds through two ages, where good intentions meet the ncaj psv drivin"
+description: "Echoes of Stamps: Kenya's Costly Road Reckoning: From distant shores, a whisper of past burdens, now a clamor for the present. This tale unwinds through two"
+excerpt: "The flickering tallow lamp cast long, dancing shadows across the inn's common room in Williamsburg, Virginia, on a brisk evening in November"
 author: "The Chronicler"
 author_url: "https://zandani.co.ke/author/the-chronicler"
 image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200"
 category: "Chronicles"
-tags: ["chronicles", "stamp-act", "1765", "george-grenville", "patrick-henry", "king-george-iii", "benjamin-franklin", "ncaj-psv-driving-certification-cost-kenya", "president-ruto-psv-safety-directives-2026", "mandatory-defensive-driving-matatu-operators", "ntsa-refresher-courses-commercial-drivers-kenya", "kenya-road-safety-reforms-2026-impact", "psv-operators-certification-challenges-kenya", "taxation-without-representation", "tragic-irony", "satire", "colonial-america", "kenya", "road-safety"]
+tags: ["chronicles", "stamp-act", "1765", "george-grenville", "patrick-henry", "king-george-iii", "benjamin-franklin", "ncaj-psv-driving-certification-cost-kenya"]
 canonical: "https://zandani.co.ke/article/echoes-of-stamps-kenyas-costly-road-reckoning"
 date: "2026-08-04T13:07:26Z"
-authorUrl: "https://zandani.co.ke/author/the-chronicler"
 dateModified: "2026-08-04T13:07:26Z"
+focusKeyword: "Echoes of Stamps: Kenya's Costly Road Reckoning"
 schema: "NewsArticle"
 ---
 
-The flickering tallow lamp cast long, dancing shadows across the inn's common room in Williamsburg, Virginia, on a brisk evening in November 1765. A low murmur of discontent hung heavier than the pipe smoke. Old Thomas, a printer by trade, gripped a crumpled newspaper, its masthead conspicuously bare of the required royal stamp. "Another shilling for the Crown," he rasped, his voice thick with indignation, "for every scrap of paper that dares to bear ink." His eyes, weary from squinting over type, scanned the faces around him, finding only grim nods and furrowed brows.
+The flickering tallow lamp cast long, dancing shadows across the inn's common room in Williamsburg, Virginia, on a brisk evening in November 1765. A low murmur of discontent hung heavier than the pipe smoke. Old Thomas, a printer by trade, gripped a crumpled newspaper, its masthead conspicuously bare of the required royal stamp. "Another shilling for the Crown," he rasped, his voice thick with indignation, "for every scrap of paper that dares to bear ink." His eyes, weary from squinting over type, scanned the faces around him, finding only grim nods and furrowed brows. Echoes of Stamps: Kenya's Costly Road Reckoning is the central subject of the update.
 
 <h2>The Burden of Distant Decrees on the Colonies</h2>
 
