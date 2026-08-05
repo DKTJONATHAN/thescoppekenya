@@ -1,18 +1,20 @@
 ---
 title: "IPOA Takes Over Probe Into Death of Teenager at Muthaiga Station"
 slug: "ipoa-investigates-death-of-teenager-at-muthaiga-police-station"
-description: "The Independent Policing Oversight Authority has launched an investigation into the death of 19-year-old Erick Otieno following his police detention."
+description: "IPOA Takes Over Probe Into Death of Teenager at Muthaiga Station: The Independent Policing Oversight Authority has launched an investigation into the death of"
+excerpt: "A Fatal Silence at Muthaiga Station The Independent Policing Oversight Authority has assumed control over the case involving 19 year old Eri"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Y4DH76gz/809e2093cc34.webp"
 category: "News"
 tags: ["ipoa", "police brutality", "nairobi", "muthaiga police station", "erick otieno", "kenya news"]
+canonical: "https://zandani.co.ke/article/ipoa-investigates-death-of-teenager-at-muthaiga-police-station"
 date: "2026-08-05T12:57:59Z"
 dateModified: "2026-08-05T12:57:59Z"
+focusKeyword: "IPOA Takes Over Probe Into Death of Teenager at Muthaiga Station"
 schema: "NewsArticle"
 ---
 
-## A Fatal Silence at Muthaiga Station
+## A Fatal Silence at Muthaiga Station IPOA Takes Over Probe Into Death of Teenager at Muthaiga Station is the central subject of the update.
 
 The Independent Policing Oversight Authority has assumed control over the case involving 19-year-old Erick Otieno, who succumbed to internal injuries shortly after walking out of the Muthaiga Police Station. While the authorities speak of a routine release, the autopsy paints a grim picture of a body broken long before it reached the safety of a hospital ward.
 
