@@ -171,10 +171,10 @@
     "149e326a13f2389b2fdb7e3f08f533f2",
     "d8de6c91b8e0cebac6a15c9a3fbac371",
     "3add4c8b89d106e969093958c724340f",
-    "03e6aa30e88e9c72a7f0e2d1760cf7f8"
+    "03e6aa30e88e9c72a7f0e2d1760cf7f8",
+    "e1bba3fee99eb9b9b827c6a3b0b31d60"
   ],
   "style_history": [
-    "Critical Take",
     "Explainer",
     "Africa Angle",
     "Backgrounder",
@@ -203,10 +203,10 @@
     "Explainer",
     "Hard News Lead",
     "Backgrounder",
-    "Africa Angle"
+    "Africa Angle",
+    "Explainer"
   ],
   "angle_history": [
-    "policy_gap|KRA|Backgrounder",
     "timeline_shift|data center|Hard News Lead",
     "money_follow|Fuliza|Critical Take",
     "policy_gap|Google Ads|Africa Angle",
@@ -285,6 +285,7 @@
     "winners_losers|Kenya Power|Explainer",
     "policy_gap|IEBC|Hard News Lead",
     "policy_gap|Google|Backgrounder",
-    "money_follow|Airtel Money|Africa Angle"
+    "money_follow|Airtel Money|Africa Angle",
+    "story_progression|Telegram|Explainer"
   ]
 }
