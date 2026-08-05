@@ -1,18 +1,20 @@
 ---
 title: "Manchester City and Chelsea continue Asian preseason tours"
 slug: "manchester-city-chelsea-preseason-asia-tour"
-description: "Manchester City defeated K-League XI while Chelsea played a draw against Juventus as top European clubs continue their preseason tour in Asia."
+description: "Manchester City and Chelsea continue Asian preseason tours: Manchester City defeated K-League XI while Chelsea played a draw against Juventus as top European"
+excerpt: "The Preseason Mirage: When Global Ambition Undermines Tactical Integrity Manchester City managed a 3 1 victory over a K League XI in Seoul,"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/MxWJRpYN/ca17ca87bb45.jpg"
 category: "Sports"
 tags: ["football", "manchester city", "chelsea", "juventus", "sports news", "kenya football"]
+canonical: "https://zandani.co.ke/article/manchester-city-chelsea-preseason-asia-tour"
 date: "2026-08-05T12:20:57Z"
 dateModified: "2026-08-05T12:20:57Z"
+focusKeyword: "Manchester City and Chelsea continue Asian preseason tours"
 schema: "NewsArticle"
 ---
 
-## The Preseason Mirage: When Global Ambition Undermines Tactical Integrity
+## The Preseason Mirage: When Global Ambition Undermines Tactical Integrity Manchester City and Chelsea continue Asian preseason tours is the central subject of the update.
 
 Manchester City managed a 3-1 victory over a K-League XI in Seoul, while Chelsea participated in a fixture against Juventus in Hong Kong. These matches serve as prime examples of how these commercial barnstorming tours are rapidly eroding Za Ndani of professional football preparation ahead of the 2026-27 season.
 
