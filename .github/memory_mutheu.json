@@ -341,10 +341,10 @@
     "8c61c7d1d28b1ad4e47b4b94eb2b6de8",
     "2591fe7c7cd7ad8ff6970986aabc0a69",
     "3983e04cab940bedb0e66d751efbcb53",
-    "8f67ce3a8eb64a9cbd0adeb1815c50ea"
+    "8f67ce3a8eb64a9cbd0adeb1815c50ea",
+    "436848168a0e8f46f0c70a0bdd4e738f"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
     "Profile Beat",
@@ -373,10 +373,10 @@
     "Explainer",
     "Reaction Round-up",
     "Hard News Lead",
-    "Trend Take"
+    "Trend Take",
+    "Explainer"
   ],
   "angle_history": [
-    "myth_vs_fact|na|Reaction Round-up",
     "story_progression|Toy Story 5|Explainer",
     "story_progression|na|Trend Take",
     "winners_losers|Dan Levy|Profile Beat",
@@ -455,6 +455,7 @@
     "story_progression|na|Explainer",
     "myth_vs_fact|Television careers|Reaction Round-up",
     "policy_gap|na|Hard News Lead",
-    "timeline_shift|The Varnell Hill Show|Trend Take"
+    "timeline_shift|The Varnell Hill Show|Trend Take",
+    "story_progression|na|Explainer"
   ]
 }
