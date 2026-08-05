@@ -1,0 +1,37 @@
+---
+title: "Senators Oppose Proposed Tolls on Rironi-Mau Summit Expressway"
+slug: "senators-oppose-rironi-mau-summit-expressway-tolling"
+description: "Senators have rejected plans to toll the Rironi-Mau Summit Expressway, citing concerns over double taxation and unfair burden on Rift Valley motorists."
+author: "Celestine Nzioka"
+authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
+image: "https://i.ibb.co/kggCkHB3/cb9c57bb7a49.webp"
+category: "News"
+tags: ["kenya news", "rironi-mau summit", "kenha", "infrastructure", "transport", "samson cherargei", "za ndani"]
+date: "2026-08-05T18:25:04Z"
+dateModified: "2026-08-05T18:25:04Z"
+schema: "NewsArticle"
+---
+
+## The Toll Road Trap: Is Your Commute Now a Regional Tax?
+
+Senator Samson Cherargei has formally challenged the planned tolling of the Rironi-Mau Summit Expressway, arguing that residents in the Rift Valley are being unfairly targeted by a fee structure that feels less like road maintenance and more like location-based profiling.
+
+### Why is this considered double taxation?
+
+Every Kenyan motorist already contributes to the Road Maintenance Levy whenever they fill their tank at a pump. This tax is specifically earmarked for the upkeep of the national road network. When the government introduces a toll on a major artery like the Rironi-Mau Summit stretch, motorists from Nandi, Uasin Gishu, Kericho, and Bomet are effectively paying twice for the same transit.
+
+While urban areas might offer alternative routes to bypass toll stations, those traveling from the Western reaches of the country face a geographical reality where this road is the only viable path to the capital. For the average commuter, the proposed rate of Ksh8 to Ksh8.50 per kilometer is not just a fee; it is an additional layer of expense that their counterparts in other regions, who rely on toll-free highways, do not face. Just as the [Nairobi Water Issues 21-Day Ultimatum for Illegal Connections](https://zandani.co.ke/article/nairobi-water-issues-ultimatum-illegal-connections) highlights the burden of utility management, this tolling plan forces a specific population to bear the weight of infrastructure financing alone.
+
+### What does this cost the average trader?
+
+If we map out the financial impact over the proposed 30-year concession period, the figures reveal a staggering disparity in disposable income. A private commuter traveling the full length of the road could face a single-trip cost between Ksh1,112 and Ksh1,400. For a small-scale trader transporting produce from the fertile lands of the Rift Valley to markets in Nairobi, these costs are cumulative and destructive.
+
+Consider a trader making multiple trips per month. Over a year, the toll fees alone could siphon off tens of thousands of shillings. When projected across three decades, the total expenditure reaches millions. This is not merely a user fee for luxury travel; it is a tax on the movement of goods and people that fuels the Kenyan economy. While small startups look to [Government sets deadline for second NYOTA startup grant payments](https://zandani.co.ke/article/government-sets-deadline-for-second-nyota-startup-grant-payments) to build their businesses, the high cost of road transit serves as a direct barrier to profitability for these same enterprises.
+
+### How does this shape regional inequality?
+
+The Rironi-Mau Summit Expressway was conceived as a massive project with costs reaching into the hundreds of billions of shillings. To recover these funds for the China Roads and Bridge Corporation, the government has turned to a user-pay model. However, the geographic placement of these tolls creates a clear divide between winners and losers.
+
+Those living in the Rift Valley are essentially being profiled by their location. Unlike residents in Nairobi who can navigate around toll zones, a motorist coming from Kericho or Bomet has no choice but to pass through these points if they want to access the national supply chain. This is not about the general necessity of infrastructure; it is about how we pay for it. By placing the heaviest financial burden on the routes essential to specific regional livelihoods, the policy turns a standard transit corridor into an economic bottleneck. The Senate opposition is driven by the realization that when you tax movement, you eventually tax the growth of the region, creating a cycle where residents pay for the right to connect to the national economy, while others enjoy the benefits of public infrastructure without the same recurring financial penalty.
+
+True development is measured by the ease of connection, not by how much we charge citizens to cross their own country.

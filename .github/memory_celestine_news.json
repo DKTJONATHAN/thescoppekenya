@@ -396,10 +396,10 @@
     "217d872c222e8c5af1e78f3f665aa7a9",
     "678b65d0cd7a12828d291b2dfecbec2c",
     "6c8e1d025b60debf22ce66ec0d4f2817",
-    "5cd0fecce9d05e57ba125812b4585675"
+    "5cd0fecce9d05e57ba125812b4585675",
+    "8a55ccb9b6330920b1ce3a1e6bae8406"
   ],
   "style_history": [
-    "Hard News Lead",
     "Power Accountability",
     "Reaction & Voices",
     "Explainer",
@@ -428,10 +428,10 @@
     "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
-    "Power Accountability"
+    "Power Accountability",
+    "Explainer"
   ],
   "angle_history": [
-    "money_follow|oil refinery|Context Backgrounder",
     "accountability|NG-CDF|Reaction & Voices",
     "policy_gap|EACC|Explainer",
     "policy_gap|Nairobi|Power Accountability",
@@ -510,6 +510,7 @@
     "winners_losers|KNEC|Explainer",
     "policy_gap|National Treasury|Context Backgrounder",
     "winners_losers|HELB|Reaction & Voices",
-    "policy_gap|Kenya|Power Accountability"
+    "policy_gap|Kenya|Power Accountability",
+    "winners_losers|KeNHA|Explainer"
   ]
 }
