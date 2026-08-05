@@ -1,21 +1,20 @@
 ---
-title: "Mario Lopez Faces Backlash for AI Video of Niece Kalia Wong
+title: "'Mario Lopez Faces Backlash for AI Video of Niece Kalia Wong"
 slug: "mario-lopez-ai-video-niece-kalia-wong-backlash-removed"
-description: "Mario Lopez faced backlash for an unsettling AI-generated video of his niece, Kalia Wong, aggressively eating hot dogs. The Mario Lopez AI video sparked criticism, leading to its swift removal from social media. Read about the viral controversy."
+description: "'Mario Lopez Faces Backlash for AI Video of Niece Kalia Wong: Mario Lopez faced backlash for an unsettling AI-generated video of his niece, Kalia Wong,"
+excerpt: "Digital Ethics in the Spotlight: Mario Lopez AI Video of Niece Sparks Outcry Television personality Mario Lopez faced immediate and widespre"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/21jGPwZB/ecc5884f7620.jpg"
-og_title: "Mario Lopez's AI Video of Niece Sparks Outcry"
-og_description: "Mario Lopez deleted an AI-generated video of his niece, Kalia Wong, after it sparked widespread backlash. Fans found the hot dog eating clip 'creepy' and 'disturbing'."
-focus_keyword: "Mario Lopez AI video"
 category: "Entertainment"
 tags: ["mario lopez", "kalia wong", "ai video", "celebrity news", "social media backlash", "entertainment"]
+canonical: "https://zandani.co.ke/article/mario-lopez-ai-video-niece-kalia-wong-backlash-removed"
 date: "2026-08-05T09:21:43Z"
 dateModified: "2026-08-05T09:21:43Z"
+focusKeyword: "'Mario Lopez Faces Backlash for AI Video of Niece Kalia Wong"
 schema: "NewsArticle"
 ---
 
-## Digital Ethics in the Spotlight: Mario Lopez AI Video of Niece Sparks Outcry
+## Digital Ethics in the Spotlight: Mario Lopez AI Video of Niece Sparks Outcry "Mario Lopez Faces Backlash for AI Video of Niece Kalia Wong is the central subject of the update.
 
 Television personality Mario Lopez faced immediate and widespread public criticism for an AI-generated video depicting his young niece, Kalia Wong, leading to its swift removal from his social media platforms amidst calls for clearer digital content ethics. The controversy has ignited a crucial conversation about the ethical responsibilities of public figures utilizing artificial intelligence to create and share content featuring family members, particularly minors, in the absence of established industry standards.
 
