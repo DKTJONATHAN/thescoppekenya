@@ -1,7 +1,8 @@
 ---
 title: "Allies of Fred Matiang'i and Political Leaders Intensify Criticism of Deputy President Rigathi Gachagua"
 slug: "allies-of-fred-matiang-i-and-political-leaders-intensify-criticism-o"
-description: "Allies of Fred Matiang'i and other political leaders have launched coordinated criticisms against DP Rigathi Gachagua, signaling shifting power dynamics."
+description: "Allies of Fred Matiang'i and Political Leaders Intensify Criticis: Allies of Fred Matiang'i and other political leaders have launched coordinated criticisms"
+excerpt: "In August 2026, a coalition of political figures including MP Antoney Kibagendi, Peter Munya, and Justin Muturi launched a series of aggress"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/PvQbTvB1/cb53fec24c1d.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["fred-matiangi", "rigathi-gachagua", "kenyan-politics", "azimio-la-umojo", "kenya-kwanza"]
 canonical: "https://zandani.co.ke/article/allies-of-fred-matiang-i-and-political-leaders-intensify-criticism-o"
 date: "2026-08-05T14:31:36Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-08-05T14:31:36Z"
+focusKeyword: "Allies of Fred Matiang'i and Political Leaders Intensify Criticis"
 schema: "NewsArticle"
 ---
-In August 2026, a coalition of political figures including MP Antoney Kibagendi, Peter Munya, and Justin Muturi launched a series of aggressive public criticisms against Deputy President Rigathi Gachagua, signaling a volatile shift in power dynamics within the national political landscape.
+
+In August 2026, a coalition of political figures including MP Antoney Kibagendi, Peter Munya, and Justin Muturi launched a series of aggressive public criticisms against Deputy President Rigathi Gachagua, signaling a volatile shift in power dynamics within the national political landscape. Allies of Fred Matiang'i and Political Leaders Intensify Criticis is the central subject of the update.
 
 ## The Strategy Behind the Assault
 
