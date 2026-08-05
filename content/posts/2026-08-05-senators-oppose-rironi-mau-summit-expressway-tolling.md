@@ -1,18 +1,20 @@
 ---
 title: "Senators Oppose Proposed Tolls on Rironi-Mau Summit Expressway"
 slug: "senators-oppose-rironi-mau-summit-expressway-tolling"
-description: "Senators have rejected plans to toll the Rironi-Mau Summit Expressway, citing concerns over double taxation and unfair burden on Rift Valley motorists."
+description: "Senators Oppose Proposed Tolls on Rironi-Mau Summit Expressway: Senators have rejected plans to toll the Rironi-Mau Summit Expressway, citing concerns over"
+excerpt: "The Toll Road Trap: Is Your Commute Now a Regional Tax? Senator Samson Cherargei has formally challenged the planned tolling of the Rironi M"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/kggCkHB3/cb9c57bb7a49.webp"
 category: "News"
 tags: ["kenya news", "rironi-mau summit", "kenha", "infrastructure", "transport", "samson cherargei", "za ndani"]
+canonical: "https://zandani.co.ke/article/senators-oppose-rironi-mau-summit-expressway-tolling"
 date: "2026-08-05T18:25:04Z"
 dateModified: "2026-08-05T18:25:04Z"
+focusKeyword: "Senators Oppose Proposed Tolls on Rironi-Mau Summit Expressway"
 schema: "NewsArticle"
 ---
 
-## The Toll Road Trap: Is Your Commute Now a Regional Tax?
+## The Toll Road Trap: Is Your Commute Now a Regional Tax? Senators Oppose Proposed Tolls on Rironi-Mau Summit Expressway is the central subject of the update.
 
 Senator Samson Cherargei has formally challenged the planned tolling of the Rironi-Mau Summit Expressway, arguing that residents in the Rift Valley are being unfairly targeted by a fee structure that feels less like road maintenance and more like location-based profiling.
 
