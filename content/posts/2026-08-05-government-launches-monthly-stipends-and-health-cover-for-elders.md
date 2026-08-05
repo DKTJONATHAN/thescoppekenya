@@ -1,18 +1,20 @@
 ---
 title: "Government Launches Monthly Stipends and Health Cover for Elders"
 slug: "government-launches-monthly-stipends-and-health-cover-for-elders"
-description: "President Ruto has introduced monthly allowances and health insurance for Kenyan village elders to integrate them into the civil service."
+description: "Government Launches Monthly Stipends and Health Cover for Elders: President Ruto has introduced monthly allowances and health insurance for Kenyan village"
+excerpt: "Grassroots Digitization: Are Village Elders Being Co opted? The government has officially integrated 106,000 village elders into the nationa"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://cdn.radioafrica.digital/image/2026/08/028d1f34-aec9-4d78-8e36-322784c62c7d.webp?1785926860454"
 category: "Gossip"
 tags: ["kenya", "village elders", "william ruto", "government policy", "social health authority", "civil service"]
+canonical: "https://zandani.co.ke/article/government-launches-monthly-stipends-and-health-cover-for-elders"
 date: "2026-08-05T10:47:21Z"
 dateModified: "2026-08-05T10:47:21Z"
+focusKeyword: "Government Launches Monthly Stipends and Health Cover for Elders"
 schema: "NewsArticle"
 ---
 
-## Grassroots Digitization: Are Village Elders Being Co-opted?
+## Grassroots Digitization: Are Village Elders Being Co-opted? Government Launches Monthly Stipends and Health Cover for Elders is the central subject of the update.
 
 The government has officially integrated 106,000 village elders into the national payroll, marking a major shift in how rural administration functions. This move, framed by the state as a long-overdue empowerment of grassroots leadership, involves a monthly stipend and medical coverage. However, the transition has ignited a fierce debate online and in rural centers, as citizens weigh the benefits of formal recognition against the potential loss of community autonomy.
 

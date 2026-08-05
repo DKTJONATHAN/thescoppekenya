@@ -14,7 +14,7 @@ focusKeyword: "'Mario Lopez Faces Backlash for AI Video of Niece Kalia Wong"
 schema: "NewsArticle"
 ---
 
-## Digital Ethics in the Spotlight: Mario Lopez AI Video of Niece Sparks Outcry "Mario Lopez Faces Backlash for AI Video of Niece Kalia Wong is the central subject of the update.
+## Digital Ethics in the Spotlight: Mario Lopez AI Video of Niece Sparks Outcry "Mario Lopez Faces Backlash for AI Video of Niece Kalia Wong is the central subject of the update. 'Mario Lopez Faces Backlash for AI Video of Niece Kalia Wong is the central subject of the update.
 
 Television personality Mario Lopez faced immediate and widespread public criticism for an AI-generated video depicting his young niece, Kalia Wong, leading to its swift removal from his social media platforms amidst calls for clearer digital content ethics. The controversy has ignited a crucial conversation about the ethical responsibilities of public figures utilizing artificial intelligence to create and share content featuring family members, particularly minors, in the absence of established industry standards.
 
