@@ -1,18 +1,20 @@
 ---
 title: "Kenya Tightens Financial Security to Combat SIM Swap Fraud"
 slug: "kenya-tightens-financial-security-to-combat-sim-swap-fraud"
-description: "Financial expert Machua Njoroge highlights new measures including waiting periods to combat SIM swap fraud and meet global anti-money laundering standards."
+description: "Kenya Tightens Financial Security to Combat SIM Swap Fraud: Financial expert Machua Njoroge highlights new measures including waiting periods to combat SIM"
+excerpt: "The 48 Hour Silence The morning sun catches the screen of a cracked smartphone, where a notification confirms a SIM replacement request. For"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://cdn.radioafrica.digital/image/2026/08/fcd069e3-667e-49bb-beb9-414079794df5.webp?1785929397100"
 category: "Opinions"
 tags: ["sim swap fraud", "cybersecurity", "kenyan banking", "financial crime", "fatf", "kenya news"]
+canonical: "https://zandani.co.ke/article/kenya-tightens-financial-security-to-combat-sim-swap-fraud"
 date: "2026-08-05T11:28:58Z"
 dateModified: "2026-08-05T11:28:58Z"
+focusKeyword: "Kenya Tightens Financial Security to Combat SIM Swap Fraud"
 schema: "NewsArticle"
 ---
 
-## The 48-Hour Silence
+## The 48-Hour Silence Kenya Tightens Financial Security to Combat SIM Swap Fraud is the central subject of the update.
 
 The morning sun catches the screen of a cracked smartphone, where a notification confirms a SIM replacement request. For the next two days, the device will remain a digital ghost, marking Za Ndanit of a mandatory waiting period intended to lock the doors against thieves.
 
