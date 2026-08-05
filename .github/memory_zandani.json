@@ -340,10 +340,10 @@
     "b39c2de214e0ce400f4662cf432cd5a4",
     "bb583de7e2861c5ddd94adf7304240fb",
     "904eed05b95a1bffaafa657c93ad7ee6",
-    "104bf0bcaf3f4976eafa906c429dd5cc"
+    "104bf0bcaf3f4976eafa906c429dd5cc",
+    "be52b162ec909b657acbfbce3bf3635b"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Receipts Piece",
     "Profile Beat",
     "Hard News Lead",
@@ -372,10 +372,10 @@
     "Trend Take",
     "Profile Beat",
     "Receipts Piece",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "impact_on_citizens|Radio Jambo|Trend Take",
     "money_follow|child protection|Receipts Piece",
     "accountability|child safety|Profile Beat",
     "timeline_shift|ODM|Reaction Round-up",
@@ -454,6 +454,7 @@
     "winners_losers|music industry|Trend Take",
     "money_follow|Dorea Chege|Profile Beat",
     "myth_vs_fact|Kenya|Receipts Piece",
-    "myth_vs_fact|Diaso|Hard News Lead"
+    "myth_vs_fact|Diaso|Hard News Lead",
+    "winners_losers|welfare|Reaction Round-up"
   ]
 }
