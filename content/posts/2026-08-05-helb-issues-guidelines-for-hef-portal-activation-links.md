@@ -1,18 +1,20 @@
 ---
 title: "HELB Issues New Guidelines for HEF Portal Activation Links"
 slug: "helb-issues-guidelines-for-hef-portal-activation-links"
-description: "HELB has released instructions for HEF portal users to check spam folders and use links within three hours to avoid errors and potential phishing risks."
+description: "HELB Issues New Guidelines for HEF Portal Activation Links: HELB has released instructions for HEF portal users to check spam folders and use links within"
+excerpt: "The Three Hour Race: Why Students Are Struggling to Keep Pace with HELB’s New Portal Mandates Frustration is boiling over in campus hostels"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/helb_loan.jpg.webp?itok=d2633oRZ"
 category: "News"
 tags: ["helb", "hef portal", "student loans", "higher education", "kenya", "tvet"]
+canonical: "https://zandani.co.ke/article/helb-issues-guidelines-for-hef-portal-activation-links"
 date: "2026-08-05T07:43:51Z"
 dateModified: "2026-08-05T07:43:51Z"
+focusKeyword: "HELB Issues New Guidelines for HEF Portal Activation Links"
 schema: "NewsArticle"
 ---
 
-## The Three-Hour Race: Why Students Are Struggling to Keep Pace with HELB’s New Portal Mandates
+## The Three-Hour Race: Why Students Are Struggling to Keep Pace with HELB’s New Portal Mandates HELB Issues New Guidelines for HEF Portal Activation Links is the central subject of the update.
 
 Frustration is boiling over in campus hostels and rural cyber cafes as students grapple with a rigid three-hour expiry window for new Higher Education Loans Board portal activation links. While officials argue this adds a layer of security, the demand for instant connectivity has left those in areas with shaky internet struggling to secure their financial future.
 

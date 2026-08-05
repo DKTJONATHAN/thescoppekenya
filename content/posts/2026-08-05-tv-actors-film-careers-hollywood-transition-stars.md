@@ -14,7 +14,7 @@ focusKeyword: "'TV Actors Who Transitioned From Small Screen to Big Film Careers
 schema: "NewsArticle"
 ---
 
-## Hollywood Dreams: Why TV Actors' Film Careers Aren't Always a Straight Shot to Stardom "TV Actors Who Transitioned From Small Screen to Big Film Careers is the central subject of the update.
+## Hollywood Dreams: Why TV Actors' Film Careers Aren't Always a Straight Shot to Stardom "TV Actors Who Transitioned From Small Screen to Big Film Careers is the central subject of the update. 'TV Actors Who Transitioned From Small Screen to Big Film Careers is the central subject of the update.
 
 It’s easy for us Kenyans to watch a beloved TV star jump to the big screen and assume instant Hollywood superstardom. But the journey for TV actors film careers is rarely a straightforward ascent, often filled with unexpected turns, proving that a popular show is a springboard, not a golden ticket.
 
