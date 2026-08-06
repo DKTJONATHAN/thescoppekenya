@@ -1,18 +1,20 @@
 ---
 title: "Meru Court Issues Manslaughter Sentence in Rare No-Body Case"
 slug: "meru-court-sentences-man-in-rare-no-body-manslaughter-case"
-description: "A Meru High Court judge has sentenced a man to 10 years for manslaughter in a rare case where the victim body was never found using DNA and phone records."
+description: "Meru Court Issues Manslaughter Sentence in Rare No-Body Case: A Meru High Court judge has sentenced a man to 10 years for manslaughter in a rare case where the"
+excerpt: "Silent Witnesses in the Meru High Court The Meru High Court has sentenced a man to a decade in prison for the manslaughter of Morris Munene"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/4ZZgGJD6/7179000740d2.webp"
 category: "News"
 tags: ["kenya", "meru", "dci", "manslaughter", "forensics", "crime"]
+canonical: "https://zandani.co.ke/article/meru-court-sentences-man-in-rare-no-body-manslaughter-case"
 date: "2026-08-06T07:43:52Z"
 dateModified: "2026-08-06T07:43:52Z"
+focusKeyword: "Meru Court Issues Manslaughter Sentence in Rare No-Body Case"
 schema: "NewsArticle"
 ---
 
-## Silent Witnesses in the Meru High Court
+## Silent Witnesses in the Meru High Court Meru Court Issues Manslaughter Sentence in Rare No-Body Case is the central subject of the update.
 
 The Meru High Court has sentenced a man to a decade in prison for the manslaughter of Morris Munene Mate, a prison officer who vanished in 2015. This rare conviction, achieved without the discovery of a body, marks a significant shift in Kenyan jurisprudence.
 

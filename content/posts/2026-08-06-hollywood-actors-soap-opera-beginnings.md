@@ -14,7 +14,7 @@ focusKeyword: "'From Soap Operas to Stardom: Hollywood Actors' Early Roles"
 schema: "NewsArticle"
 ---
 
-## From Daily Dramas to Global Icons: The Surprising Start of Hollywood's Best "From Soap Operas to Stardom: Hollywood Actors' Early Roles is the central subject of the update.
+## From Daily Dramas to Global Icons: The Surprising Start of Hollywood's Best "From Soap Operas to Stardom: Hollywood Actors' Early Roles is the central subject of the update. 'From Soap Operas to Stardom: Hollywood Actors' Early Roles is the central subject of the update.
 
 Ever wonder how today's biggest film stars honed their craft before hitting the silver screen? Many of the most recognizable faces in Hollywood didn't start in blockbusters, but on the fast-paced sets of daily soap operas, laying the groundwork for their impressive careers.
 
