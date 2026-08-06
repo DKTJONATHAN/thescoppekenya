@@ -1,18 +1,20 @@
 ---
 title: "TSC Links Teacher Promotions to Funding and Career Guidelines"
 slug: "tsc-links-teacher-promotions-to-funding-and-career-guidelines"
-description: "The Teachers Service Commission states that teacher promotions rely on government funding and career guidelines as it opens 34016 slots for educators."
+description: "TSC Links Teacher Promotions to Funding and Career Guidelines: The Teachers Service Commission states that teacher promotions rely on government funding and"
+excerpt: "Fiscal Ceilings Stall Classroom Career Growth The Teachers Service Commission (TSC) has formally tied the advancement of 34,016 educators to"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/fGNJHyX0/13a6e3e125f9.webp"
 category: "News"
 tags: ["tsc", "teachers", "kenya education", "kuppet", "employment", "za ndani"]
+canonical: "https://zandani.co.ke/article/tsc-links-teacher-promotions-to-funding-and-career-guidelines"
 date: "2026-08-06T13:00:12Z"
 dateModified: "2026-08-06T13:00:12Z"
+focusKeyword: "TSC Links Teacher Promotions to Funding and Career Guidelines"
 schema: "NewsArticle"
 ---
 
-## Fiscal Ceilings Stall Classroom Career Growth
+## Fiscal Ceilings Stall Classroom Career Growth TSC Links Teacher Promotions to Funding and Career Guidelines is the central subject of the update.
 
 The Teachers Service Commission (TSC) has formally tied the advancement of 34,016 educators to the National Treasury's disbursement schedule, signaling that individual professional progression is now strictly tethered to the government's limited fiscal space.
 
