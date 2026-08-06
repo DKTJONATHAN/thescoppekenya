@@ -1,18 +1,20 @@
 ---
 title: "Jojo Fashion House: From Crochet Side Hustle to Bespoke Tailoring"
 slug: "jojo-fashion-house-bespoke-tailoring-journey"
-description: "Discover how Jojo transformed a small crochet business into a premium fashion house in Kenya by focusing on bespoke tailoring and quality control."
+description: "Jojo Fashion House: From Crochet Side Hustle to Bespoke Tailoring: Discover how Jojo transformed a small crochet business into a premium fashion house in Kenya"
+excerpt: "The Architecture of Identity: A Custom Shift in Kenyan Style The grip of mass production on the Kenyan closet is weakening. As standardized"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/wh0sg9Ys/b23997ee3fb3.webp"
 category: "Gossip"
 tags: ["kenyan fashion", "entrepreneurship", "jojo fashion house", "custom tailoring", "kenyan business"]
+canonical: "https://zandani.co.ke/article/jojo-fashion-house-bespoke-tailoring-journey"
 date: "2026-08-06T10:50:06Z"
 dateModified: "2026-08-06T10:50:06Z"
+focusKeyword: "Jojo Fashion House: From Crochet Side Hustle to Bespoke Tailoring"
 schema: "NewsArticle"
 ---
 
-## The Architecture of Identity: A Custom Shift in Kenyan Style
+## The Architecture of Identity: A Custom Shift in Kenyan Style Jojo Fashion House: From Crochet Side Hustle to Bespoke Tailoring is the central subject of the update.
 
 The grip of mass production on the Kenyan closet is weakening. As standardized sizing fails to keep pace with the diversity of the local form, Jojo Fashion House is leading a departure from generic retail. This transition represents more than a mere change in shopping habits; it is a reclaiming of personal agency, signaling that the era of settling for factory-imposed silhouettes is nearing its end.
 

@@ -14,7 +14,7 @@ focusKeyword: "'Britney Spears' Overprotected Video Fueled by Justin Timberlake"
 schema: "NewsArticle"
 ---
 
-## When Heartbreak Becomes the Art: The 'Overprotected' Video and a Defining Britney Spears Breakup "Britney Spears' Overprotected Video Fueled by Justin Timberlake  is the central subject of the update.
+## When Heartbreak Becomes the Art: The 'Overprotected' Video and a Defining Britney Spears Breakup "Britney Spears' Overprotected Video Fueled by Justin Timberlake  is the central subject of the update. 'Britney Spears' Overprotected Video Fueled by Justin Timberlake is the central subject of the update.
 
 In the often-glamorous world of music videos, true magic can sometimes be born from the rawest human emotions. For pop icon Britney Spears, the set of her "Overprotected" video in 2002 became an unexpected crucible where personal heartache transformed into a powerful, indelible performance, shaped by the sudden news of her **Britney Spears breakup** with fellow superstar Justin Timberlake.
 
