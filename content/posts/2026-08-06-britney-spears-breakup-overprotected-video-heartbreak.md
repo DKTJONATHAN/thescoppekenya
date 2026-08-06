@@ -1,21 +1,20 @@
 ---
-title: "Britney Spears' Overprotected Video Fueled by Justin Timberlake Breakup
+title: "'Britney Spears' Overprotected Video Fueled by Justin Timberlake Breakup"
 slug: "britney-spears-breakup-overprotected-video-heartbreak"
-description: "Britney Spears' 'Overprotected' music video performance was fueled by a Justin Timberlake breakup text on set. Director Chris Applebaum channeled her heartbreak. Discover the dramatic story today."
+description: "'Britney Spears' Overprotected Video Fueled by Justin Timberlake : Britney Spears' 'Overprotected' music video performance was fueled by a Justin Timberlake"
+excerpt: "When Heartbreak Becomes the Art: The 'Overprotected' Video and a Defining Britney Spears Breakup In the often glamorous world of music video"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/fzQLc5QR/2540bfbf35b1.jpg"
-og_title: "Britney Spears' Overprotected Video & Justin Timberlake Breakup"
-og_description: "Britney Spears' 'Overprotected' video was shaped by a Justin Timberlake breakup text on set. Her heartbreak fueled a powerful, iconic performance."
-focus_keyword: "Britney Spears breakup"
 category: "Entertainment"
 tags: ["britney spears", "justin timberlake", "overprotected", "music video", "celebrity breakup", "chris applebaum", "entertainment"]
+canonical: "https://zandani.co.ke/article/britney-spears-breakup-overprotected-video-heartbreak"
 date: "2026-08-06T09:25:48Z"
 dateModified: "2026-08-06T09:25:48Z"
+focusKeyword: "'Britney Spears' Overprotected Video Fueled by Justin Timberlake"
 schema: "NewsArticle"
 ---
 
-## When Heartbreak Becomes the Art: The 'Overprotected' Video and a Defining Britney Spears Breakup
+## When Heartbreak Becomes the Art: The 'Overprotected' Video and a Defining Britney Spears Breakup "Britney Spears' Overprotected Video Fueled by Justin Timberlake  is the central subject of the update.
 
 In the often-glamorous world of music videos, true magic can sometimes be born from the rawest human emotions. For pop icon Britney Spears, the set of her "Overprotected" video in 2002 became an unexpected crucible where personal heartache transformed into a powerful, indelible performance, shaped by the sudden news of her **Britney Spears breakup** with fellow superstar Justin Timberlake.
 
