@@ -265,10 +265,10 @@
     "dd1c2f6cc531ce5713b396d5e4ff8b3e",
     "2e67b35e79bb559eb73a1c795408b33e",
     "c8453fb60fb68a9fa9838b9f43c35087",
-    "01118a92fca882de42a765e2ada7ab43"
+    "01118a92fca882de42a765e2ada7ab43",
+    "74ac82c9a8449d3712d648ffc06b2e91"
   ],
   "style_history": [
-    "Player Profile Beat",
     "Cynical Pundit",
     "Tactical Take",
     "Stat Story",
@@ -297,10 +297,10 @@
     "Tactical Take",
     "Player Profile Beat",
     "Cynical Pundit",
-    "Match Report"
+    "Match Report",
+    "Tactical Take"
   ],
   "angle_history": [
-    "money_follow|Premier League|Stat Story",
     "myth_vs_fact|Premier League|Cynical Pundit",
     "impact_on_citizens|FIFA World Cup|Player Profile Beat",
     "winners_losers|Notts County|Match Report",
@@ -379,6 +379,7 @@
     "accountability|Fifa|Tactical Take",
     "myth_vs_fact|FIFA|Player Profile Beat",
     "money_follow|Fifa|Cynical Pundit",
-    "timeline_shift|Football|Match Report"
+    "timeline_shift|Football|Match Report",
+    "winners_losers|Fifa|Tactical Take"
   ]
 }
