@@ -1,19 +1,21 @@
 ---
 title: "New Linda Ugatuzi Party Linked to Gachagua Allies Faces Mockery Over Name Pronunciation"
 slug: "new-linda-ugatuzi-party-linked-to-gachagua-allies-faces-mockery-over"
-description: "Allies of DP Rigathi Gachagua face public mockery over the pronunciation of their new political party, Linda Ugatuzi, launched to bolster Mt. Kenya ties."
+description: "New Linda Ugatuzi Party Linked to Gachagua Allies Faces Mockery O: Allies of DP Rigathi Gachagua face public mockery over the pronunciation of their new"
+excerpt: "Allies of Deputy President Rigathi Gachagua officially registered a new political entity named Linda Ugatuzi in August 2026. This developmen"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: ""
+image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["linda-ugatuzi", "rigathi-gachagua", "kenyan-politics", "ugatuzi-party", "kenyan-entertainment"]
 canonical: "https://zandani.co.ke/article/new-linda-ugatuzi-party-linked-to-gachagua-allies-faces-mockery-over"
 date: "2026-08-06T14:33:52Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-08-06T14:33:52Z"
+focusKeyword: "New Linda Ugatuzi Party Linked to Gachagua Allies Faces Mockery O"
 schema: "NewsArticle"
 ---
-Allies of Deputy President Rigathi Gachagua officially registered a new political entity named Linda Ugatuzi in August 2026. This development, intended to solidify a regional power base in Mt. Kenya, has instead prompted widespread public ridicule regarding the founders' inability to pronounce the name.
+
+Allies of Deputy President Rigathi Gachagua officially registered a new political entity named Linda Ugatuzi in August 2026. This development, intended to solidify a regional power base in Mt. Kenya, has instead prompted widespread public ridicule regarding the founders' inability to pronounce the name. New Linda Ugatuzi Party Linked to Gachagua Allies Faces Mockery O is the central subject of the update.
 
 ## The Linguistic Struggles of the Murima Faction
 
