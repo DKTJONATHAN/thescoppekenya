@@ -1,18 +1,20 @@
 ---
 title: "Peter Munya Rejects Rigathi Gachagua Presidential Bid"
 slug: "peter-munya-rejects-rigathi-gachagua-presidential-bid"
-description: "Party of National Unity leader Peter Munya has openly opposed Rigathi Gachagua for his leadership style and political conduct in Mt Kenya."
+description: "Peter Munya Rejects Rigathi Gachagua Presidential Bid: Party of National Unity leader Peter Munya has openly opposed Rigathi Gachagua for his leadership style"
+excerpt: "The Fractured Mountain: Munya and Gachagua at Odds Peter Munya once preached that regional unity was the only path to political longevity in"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/ZRRT858c/39cf6da95df6.jpg"
 category: "Gossip"
 tags: ["kenyan politics", "peter munya", "rigathi gachagua", "mt kenya politics", "pnu", "2027 elections"]
+canonical: "https://zandani.co.ke/article/peter-munya-rejects-rigathi-gachagua-presidential-bid"
 date: "2026-08-06T08:51:24Z"
 dateModified: "2026-08-06T08:51:24Z"
+focusKeyword: "Peter Munya Rejects Rigathi Gachagua Presidential Bid"
 schema: "NewsArticle"
 ---
 
-## The Fractured Mountain: Munya and Gachagua at Odds
+## The Fractured Mountain: Munya and Gachagua at Odds Peter Munya Rejects Rigathi Gachagua Presidential Bid is the central subject of the update.
 
 Peter Munya once preached that regional unity was the only path to political longevity in Central Kenya. Today, he is busy dismantling the legitimacy of a Rigathi Gachagua presidency. Munya characterizes the former deputy president as having authoritarian impulses that are fundamentally at odds with the norms of democratic governance.
 
