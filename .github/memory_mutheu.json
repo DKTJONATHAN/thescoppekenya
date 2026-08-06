@@ -342,10 +342,10 @@
     "2591fe7c7cd7ad8ff6970986aabc0a69",
     "3983e04cab940bedb0e66d751efbcb53",
     "8f67ce3a8eb64a9cbd0adeb1815c50ea",
-    "436848168a0e8f46f0c70a0bdd4e738f"
+    "436848168a0e8f46f0c70a0bdd4e738f",
+    "90b7cb1de8046d5f7f823a7db100f543"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Explainer",
     "Profile Beat",
     "Hard News Lead",
@@ -374,10 +374,10 @@
     "Reaction Round-up",
     "Hard News Lead",
     "Trend Take",
-    "Explainer"
+    "Explainer",
+    "Profile Beat"
   ],
   "angle_history": [
-    "story_progression|Toy Story 5|Explainer",
     "story_progression|na|Trend Take",
     "winners_losers|Dan Levy|Profile Beat",
     "money_follow|na|Hard News Lead",
@@ -456,6 +456,7 @@
     "myth_vs_fact|Television careers|Reaction Round-up",
     "policy_gap|na|Hard News Lead",
     "timeline_shift|The Varnell Hill Show|Trend Take",
-    "story_progression|na|Explainer"
+    "story_progression|na|Explainer",
+    "story_progression|Britney Spears|Profile Beat"
   ]
 }
