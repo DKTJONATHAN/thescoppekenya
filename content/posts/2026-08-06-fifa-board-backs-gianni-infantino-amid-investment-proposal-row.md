@@ -1,18 +1,20 @@
 ---
 title: "Fifa Board Backs Gianni Infantino Amid Investment Proposal Row"
 slug: "fifa-board-backs-gianni-infantino-amid-investment-proposal-row"
-description: "Fifa management has reaffirmed support for Gianni Infantino after a controversial investment proposal sparked calls for his resignation globally."
+description: "Fifa Board Backs Gianni Infantino Amid Investment Proposal Row: Fifa management has reaffirmed support for Gianni Infantino after a controversial investment"
+excerpt: "The Rabat Survival Clause The emergency board meeting in Rabat has effectively neutralised the rebellion against Gianni Infantino by transfo"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/7xFDyh1J/9800fa411b67.jpg"
 category: "Sports"
 tags: ["fifa", "gianni infantino", "football", "sports governance", "international football"]
+canonical: "https://zandani.co.ke/article/fifa-board-backs-gianni-infantino-amid-investment-proposal-row"
 date: "2026-08-06T12:22:53Z"
 dateModified: "2026-08-06T12:22:53Z"
+focusKeyword: "Fifa Board Backs Gianni Infantino Amid Investment Proposal Row"
 schema: "NewsArticle"
 ---
 
-## The Rabat Survival Clause
+## The Rabat Survival Clause Fifa Board Backs Gianni Infantino Amid Investment Proposal Row is the central subject of the update.
 
 The emergency board meeting in Rabat has effectively neutralised the rebellion against Gianni Infantino by transforming a potential leadership exit into a structured internal reform exercise. By securing the management board's endorsement before external pressure could crystallize, the administration has successfully locked the presidency into a position of stability heading into the March 2027 election cycle.
 
