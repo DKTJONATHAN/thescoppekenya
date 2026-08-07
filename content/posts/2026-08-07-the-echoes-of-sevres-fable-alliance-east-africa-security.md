@@ -1,20 +1,21 @@
 ---
 title: "The Echoes of Sèvres: A Fable of Alliance and East Africa Security"
 slug: "the-echoes-of-sevres-fable-alliance-east-africa-security"
-description: "Even as old empires dissolved, the shadow play of national interest against collective security cast a long, familiar pall over the east africa security middle "
+description: "The Echoes of Sèvres: A Fable of Alliance and East Africa Securit: Even as old empires dissolved, the shadow play of national interest against collective"
+excerpt: "The chandeliers of the villa outside Paris, in October of 1956, glittered with a brittle light, reflecting the cold ambition in the eyes of"
 author: "The Chronicler"
 author_url: "https://zandani.co.ke/author/the-chronicler"
 image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200"
 category: "Chronicles"
-tags: ["chronicles", "suez-crisis", "1956", "nato", "iran", "turkey", "tragic-irony", "kenya-oil-prices-iran-turkey", "east-africa-security-middle-east-conflict", "african-union-response-iran-nato", "turkey-missile-defense-incirlik-base", "iran-turkey-conflict-global-impact", "kenya-foreign-policy-iran-crisis"]
+tags: ["chronicles", "suez-crisis", "1956", "nato", "iran", "turkey", "tragic-irony", "kenya-oil-prices-iran-turkey"]
 canonical: "https://zandani.co.ke/article/the-echoes-of-sevres-fable-alliance-east-africa-security"
 date: "2026-08-07T11:53:53Z"
-authorUrl: "https://zandani.co.ke/author/the-chronicler"
 dateModified: "2026-08-07T11:53:53Z"
+focusKeyword: "The Echoes of Sèvres: A Fable of Alliance and East Africa Securit"
 schema: "NewsArticle"
 ---
 
-The chandeliers of the villa outside Paris, in October of 1956, glittered with a brittle light, reflecting the cold ambition in the eyes of the men gathered. Sir Anthony Eden, Prime Minister of Great Britain, his face etched with the weariness of a fading empire, sat opposite Guy Mollet, the French Premier, whose Gallic charm thinly veiled a steely resolve. Beside them, David Ben-Gurion, the stern patriarch of a young nation, listened with the quiet intensity of one whose very existence hung in the balance. Three nations, three leaders, all conspiring under the cloak of deepest secrecy, stitching a pact of convenience. Their grand design: to reclaim the Suez Canal, a waterway deemed essential, and to humble Gamal Abdel Nasser, Egypt's defiant leader who dared nationalize it. They spoke of international shipping and sovereign rights, but the unspoken truth hummed in the air: old grievances and new anxieties.
+The chandeliers of the villa outside Paris, in October of 1956, glittered with a brittle light, reflecting the cold ambition in the eyes of the men gathered. Sir Anthony Eden, Prime Minister of Great Britain, his face etched with the weariness of a fading empire, sat opposite Guy Mollet, the French Premier, whose Gallic charm thinly veiled a steely resolve. Beside them, David Ben-Gurion, the stern patriarch of a young nation, listened with the quiet intensity of one whose very existence hung in the balance. Three nations, three leaders, all conspiring under the cloak of deepest secrecy, stitching a pact of convenience. Their grand design: to reclaim the Suez Canal, a waterway deemed essential, and to humble Gamal Abdel Nasser, Egypt's defiant leader who dared nationalize it. They spoke of international shipping and sovereign rights, but the unspoken truth hummed in the air: old grievances and new anxieties. The Echoes of Sèvres: A Fable of Alliance and East Africa Securit is the central subject of the update.
 
 <h2>A Pact of Shadows and Kenya Foreign Policy</h2>
 
