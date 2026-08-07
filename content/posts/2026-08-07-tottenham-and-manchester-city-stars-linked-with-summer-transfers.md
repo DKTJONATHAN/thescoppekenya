@@ -1,18 +1,20 @@
 ---
 title: "Tottenham and Manchester City Stars Linked with Summer Transfers"
 slug: "tottenham-and-manchester-city-stars-linked-with-summer-transfers"
-description: "Tottenham defender Cristian Romero faces a potential move to Atletico Madrid while Manchester City midfielder Rodri weighs his future options."
+description: "Tottenham and Manchester City Stars Linked with Summer Transfers: Tottenham defender Cristian Romero faces a potential move to Atletico Madrid while Manchester"
+excerpt: "The High Cost of Tactical Purity Tottenham Hotspur is preparing for the potential departure of Cristian Romero, with Atletico Madrid reporte"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/4nRkhjJR/38f4da6f072a.png"
 category: "Sports"
 tags: ["football", "premier league", "transfer news", "tottenham hotspur", "manchester city", "sports news"]
+canonical: "https://zandani.co.ke/article/tottenham-and-manchester-city-stars-linked-with-summer-transfers"
 date: "2026-08-07T11:11:56Z"
 dateModified: "2026-08-07T11:11:56Z"
+focusKeyword: "Tottenham and Manchester City Stars Linked with Summer Transfers"
 schema: "NewsArticle"
 ---
 
-## The High Cost of Tactical Purity
+## The High Cost of Tactical Purity Tottenham and Manchester City Stars Linked with Summer Transfers is the central subject of the update.
 
 Tottenham Hotspur is preparing for the potential departure of Cristian Romero, with Atletico Madrid reportedly tracking a deal worth £40 million. This move highlights a changing approach in North London, where the priority is offloading talent to overseas leagues rather than bolstering immediate domestic threats. 
 
