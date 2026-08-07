@@ -346,10 +346,10 @@
     "90b7cb1de8046d5f7f823a7db100f543",
     "d527d73ed05b07b8a4962166c8795e3d",
     "19dfb549930e86d4109bf249b126d2fb",
-    "4b005357195a349ce7c26791f82ba8f2"
+    "4b005357195a349ce7c26791f82ba8f2",
+    "f6665f3bd1b72a4f20b8d61fc0edcdbd"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Explainer",
     "Trend Take",
     "Hard News Lead",
@@ -378,10 +378,10 @@
     "Profile Beat",
     "Hard News Lead",
     "Trend Take",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Profile Beat"
   ],
   "angle_history": [
-    "winners_losers|Drag Race Down Under vs. the World|Explainer",
     "winners_losers|Actors|Reaction Round-up",
     "story_progression|DC Studios|Profile Beat",
     "money_follow|na|Hard News Lead",
@@ -460,6 +460,7 @@
     "story_progression|Britney Spears|Profile Beat",
     "myth_vs_fact|HBO Max|Hard News Lead",
     "myth_vs_fact|Wizards of Waverly Place|Trend Take",
-    "story_progression|Savannah Guthrie|Reaction Round-up"
+    "story_progression|Savannah Guthrie|Reaction Round-up",
+    "winners_losers|Bella Thorne|Profile Beat"
   ]
 }
