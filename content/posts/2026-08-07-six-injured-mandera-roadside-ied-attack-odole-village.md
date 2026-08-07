@@ -1,18 +1,20 @@
 ---
 title: "Six injured in Mandera roadside IED attack near Odole Village"
 slug: "six-injured-mandera-roadside-ied-attack-odole-village"
-description: "Six people sustained injuries after their vehicle hit an improvised explosive device near Odole Village in Mandera. Police are investigating the incident."
+description: "Six injured in Mandera roadside IED attack near Odole Village: Six people sustained injuries after their vehicle hit an improvised explosive device near Odole"
+excerpt: "Blood on the Mandera Road: Another Failure of Intelligence Six residents of Odole Village are currently recovering at the Elwak Sub County R"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/RkPzVQ0B/cc295bc23134.webp"
 category: "News"
 tags: ["mandera", "security", "kenya", "terrorism", "al shabaab", "odole village"]
+canonical: "https://zandani.co.ke/article/six-injured-mandera-roadside-ied-attack-odole-village"
 date: "2026-08-07T06:11:59Z"
 dateModified: "2026-08-07T06:11:59Z"
+focusKeyword: "Six injured in Mandera roadside IED attack near Odole Village"
 schema: "NewsArticle"
 ---
 
-## Blood on the Mandera Road: Another Failure of Intelligence
+## Blood on the Mandera Road: Another Failure of Intelligence Six injured in Mandera roadside IED attack near Odole Village is the central subject of the update.
 
 Six residents of Odole Village are currently recovering at the Elwak Sub-County Referral Hospital after their vehicle triggered an improvised explosive device on Thursday evening. While officials categorize this as a militant-led security incident, it is the latest evidence of a systemic collapse in border protection protocols.
 
