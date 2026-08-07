@@ -1,18 +1,20 @@
 ---
 title: "Fire at Musaga Substation Causes Power Outage in Western Kenya"
 slug: "fire-at-musaga-substation-causes-power-outage-in-western-kenya"
-description: "A fire at the Musaga Substation in Kakamega has left five western counties without electricity. Kenya Power is working to restore supply via rerouting."
+description: "Fire at Musaga Substation Causes Power Outage in Western Kenya: A fire at the Musaga Substation in Kakamega has left five western counties without electricity."
+excerpt: "The Fragility of the Western Grid The fire at the Musaga Substation in the early hours of August 7 has plunged Kakamega, Bungoma, Busia, Sia"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/N29rd1hw/ee3db6b4e3f4.webp"
 category: "News"
 tags: ["kenya power", "kakamega", "power outage", "western kenya", "electricity", "za ndani"]
+canonical: "https://zandani.co.ke/article/fire-at-musaga-substation-causes-power-outage-in-western-kenya"
 date: "2026-08-07T17:51:59Z"
 dateModified: "2026-08-07T17:51:59Z"
+focusKeyword: "Fire at Musaga Substation Causes Power Outage in Western Kenya"
 schema: "NewsArticle"
 ---
 
-## The Fragility of the Western Grid
+## The Fragility of the Western Grid Fire at Musaga Substation Causes Power Outage in Western Kenya is the central subject of the update.
 
 The fire at the Musaga Substation in the early hours of August 7 has plunged Kakamega, Bungoma, Busia, Siaya, and Vihiga into darkness, exposing the acute vulnerability of a regional power network built on a single, aging point of failure.
 
