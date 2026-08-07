@@ -1,18 +1,20 @@
 ---
 title: "Rwanda FDA Suspends 52 Alcohol Brands Including Five From Kenya"
 slug: "rwanda-fda-suspends-52-alcohol-brands-including-kenyan-imports"
-description: "Rwanda has issued a recall for 52 alcoholic beverage brands over health concerns, including five products imported from Kenya. Businesses must comply."
+description: "Rwanda FDA Suspends 52 Alcohol Brands Including Five From Kenya: Rwanda has issued a recall for 52 alcoholic beverage brands over health concerns, including"
+excerpt: "Kigali Regulatory Crackdown Sidelines Kenyan Spirit Imports The Rwanda Food and Drugs Authority (FDA) has suspended the importation and sale"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/F4mzK8ry/a32257cfca6b.jpg"
 category: "Gossip"
 tags: ["rwanda", "kenya exports", "alcohol recall", "rwanda fda", "public health", "trade"]
+canonical: "https://zandani.co.ke/article/rwanda-fda-suspends-52-alcohol-brands-including-kenyan-imports"
 date: "2026-08-07T07:39:08Z"
 dateModified: "2026-08-07T07:39:08Z"
+focusKeyword: "Rwanda FDA Suspends 52 Alcohol Brands Including Five From Kenya"
 schema: "NewsArticle"
 ---
 
-## Kigali Regulatory Crackdown Sidelines Kenyan Spirit Imports
+## Kigali Regulatory Crackdown Sidelines Kenyan Spirit Imports Rwanda FDA Suspends 52 Alcohol Brands Including Five From Kenya is the central subject of the update.
 
 The Rwanda Food and Drugs Authority (FDA) has suspended the importation and sale of 52 alcoholic beverage brands, including five spirits manufactured in Kenya. This sweeping regulatory action underscores a tightening of safety protocols within the East African Community, effectively barring products that fail to satisfy Kigali’s rigorous audit standards. 
 
