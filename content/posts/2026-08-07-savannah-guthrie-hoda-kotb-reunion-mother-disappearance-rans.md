@@ -1,21 +1,20 @@
 ---
-title: "Savannah Guthrie Reunites Hoda Kotb Amid Mother Nancy Disappearance
+title: "'Savannah Guthrie Reunites Hoda Kotb Amid Mother Nancy Disappearance"
 slug: "savannah-guthrie-hoda-kotb-reunion-mother-disappearance-rans"
-description: "Savannah Guthrie reunited with Hoda Kotb as her mother Nancy Guthrie's disappearance case continues with ransom notes and a $50k FBI reward. Read details."
+description: "'Savannah Guthrie Reunites Hoda Kotb Amid Mother Nancy Disappeara: Savannah Guthrie reunited with Hoda Kotb as her mother Nancy Guthrie's disappearance case"
+excerpt: "Fans Divided as Savannah Guthrie Balances Game Show Glamour with Her Mother Nancy Guthrie’s Disappearance The internet is buzzing as fans gr"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/YFrH5zBb/d8bb3ad2f470.jpg"
-og_title: "Savannah Guthrie's Reunion & Mother's Unsolved Disappearance"
-og_description: "Savannah Guthrie reunited with Hoda Kotb amidst her mother's ongoing disappearance and FBI ransom investigation. Get the story."
-focus_keyword: "Savannah Guthrie mother"
 category: "Entertainment"
 tags: ["savannah guthrie", "hoda kotb", "nancy guthrie", "today show", "wordle", "disappearance", "celebrity news"]
+canonical: "https://zandani.co.ke/article/savannah-guthrie-hoda-kotb-reunion-mother-disappearance-rans"
 date: "2026-08-07T15:29:25Z"
 dateModified: "2026-08-07T15:29:25Z"
+focusKeyword: "'Savannah Guthrie Reunites Hoda Kotb Amid Mother Nancy Disappeara"
 schema: "NewsArticle"
 ---
 
-## Fans Divided as Savannah Guthrie Balances Game Show Glamour with Her Mother Nancy Guthrie’s Disappearance
+## Fans Divided as Savannah Guthrie Balances Game Show Glamour with Her Mother Nancy Guthrie’s Disappearance "Savannah Guthrie Reunites Hoda Kotb Amid Mother Nancy Disappeara is the central subject of the update.
 
 The internet is buzzing as fans grapple with the contrasting realities of Savannah Guthrie's life: reuniting with former co-host Hoda Kotb while simultaneously navigating the agonizing disappearance of her 84-year-old mother, Nancy Guthrie. Public sentiment is a whirlwind of empathy, speculation, and admiration for her resilience.
 
