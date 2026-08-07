@@ -14,7 +14,7 @@ focusKeyword: "'Big Bang Theory Stars Cuoco, Rauch Return for HBO Max Spinoff"
 schema: "NewsArticle"
 ---
 
-## Multiverse Mayhem: Cuoco and Rauch Join Big Bang Theory Spinoff as Alternate Icons "Big Bang Theory Stars Cuoco, Rauch Return for HBO Max Spinoff is the central subject of the update.
+## Multiverse Mayhem: Cuoco and Rauch Join Big Bang Theory Spinoff as Alternate Icons "Big Bang Theory Stars Cuoco, Rauch Return for HBO Max Spinoff is the central subject of the update. 'Big Bang Theory Stars Cuoco, Rauch Return for HBO Max Spinoff is the central subject of the update.
 
 Nairobi, Kenya - Beloved stars Kaley Cuoco and Melissa Rauch are set to return to the comedic universe that made them household names, joining the cast of the HBO Max series "Stuart Fails to Save the Universe." The announcement, made by co-creator Chuck Lorre at San Diego Comic-Con 2026, confirms the duo will portray alternate versions of their iconic "Big Bang Theory" characters, Penny and Bernadette Rostenkowski-Wolowitz, in the sprawling sci-fi comedy.
 

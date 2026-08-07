@@ -1,18 +1,20 @@
 ---
 title: "Top Ten Iconic P-Square Songs That Defined Their Musical Legacy"
 slug: "top-ten-iconic-psquare-songs-that-defined-their-legacy"
-description: "Explore the evolution of P-Square through ten classic tracks and major collaborations that shaped their status as African music legends."
+description: "Top Ten Iconic P-Square Songs That Defined Their Musical Legacy: Explore the evolution of P-Square through ten classic tracks and major collaborations that"
+excerpt: "The P Square Playbook: How a Nigerian Duo Built the Afrobeats Empire If you somehow managed to reach adulthood in Nairobi without the bliste"
 author: "Amara Ndlovu"
-authorUrl: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/5WS4YMKn/6a2059c9bd91.jpg"
 category: "Africa Entertainment"
 tags: ["p-square", "nigerian music", "afropop", "music history", "kenyan entertainment"]
+canonical: "https://zandani.co.ke/article/top-ten-iconic-psquare-songs-that-defined-their-legacy"
 date: "2026-08-07T05:01:12Z"
 dateModified: "2026-08-07T05:01:12Z"
+focusKeyword: "Top Ten Iconic P-Square Songs That Defined Their Musical Legacy"
 schema: "NewsArticle"
 ---
 
-## The P-Square Playbook: How a Nigerian Duo Built the Afrobeats Empire
+## The P-Square Playbook: How a Nigerian Duo Built the Afrobeats Empire Top Ten Iconic P-Square Songs That Defined Their Musical Legacy is the central subject of the update.
 
 If you somehow managed to reach adulthood in Nairobi without the blistering bass of a P-Square hit shaking your cousin’s graduation party back in 2012, were you really there? That nostalgic sentiment is currently tearing through Kenyan social media feeds, reminding us all that Peter and Paul Okoye are not just musicians, but the primary architects of our collective sonic memory.
 
