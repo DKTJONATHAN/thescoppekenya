@@ -344,10 +344,10 @@
     "8f67ce3a8eb64a9cbd0adeb1815c50ea",
     "436848168a0e8f46f0c70a0bdd4e738f",
     "90b7cb1de8046d5f7f823a7db100f543",
-    "d527d73ed05b07b8a4962166c8795e3d"
+    "d527d73ed05b07b8a4962166c8795e3d",
+    "19dfb549930e86d4109bf249b126d2fb"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
@@ -376,10 +376,10 @@
     "Trend Take",
     "Explainer",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Trend Take"
   ],
   "angle_history": [
-    "winners_losers|Dan Levy|Profile Beat",
     "money_follow|na|Hard News Lead",
     "winners_losers|Drag Race Down Under vs. the World|Explainer",
     "winners_losers|Actors|Reaction Round-up",
@@ -458,6 +458,7 @@
     "timeline_shift|The Varnell Hill Show|Trend Take",
     "story_progression|na|Explainer",
     "story_progression|Britney Spears|Profile Beat",
-    "myth_vs_fact|HBO Max|Hard News Lead"
+    "myth_vs_fact|HBO Max|Hard News Lead",
+    "myth_vs_fact|Wizards of Waverly Place|Trend Take"
   ]
 }
