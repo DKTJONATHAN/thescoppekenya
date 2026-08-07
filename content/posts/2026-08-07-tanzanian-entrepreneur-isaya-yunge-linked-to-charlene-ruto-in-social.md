@@ -1,7 +1,8 @@
 ---
 title: "Tanzanian Entrepreneur Isaya Yunge Linked to Charlene Ruto in Social Media Rumors"
 slug: "tanzanian-entrepreneur-isaya-yunge-linked-to-charlene-ruto-in-social"
-description: "Tanzanian tech entrepreneur Isaya Yunge faces public speculation over a rumored relationship with Charlene Ruto, highlighting elite social dynamics."
+description: "Tanzanian Entrepreneur Isaya Yunge Linked to Charlene Ruto in Soc: Tanzanian tech entrepreneur Isaya Yunge faces public speculation over a rumored relationship"
+excerpt: "Tanzanian tech innovator Isaya Yunge, founder of the Soma App, has become the subject of intense public speculation regarding a potential re"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/jZZMB1H1/ca5ee045d55c.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["isaya-yunge", "charlene-ruto", "tanzanian-entrepreneur", "social-media-rumors", "east-african-entertainment"]
 canonical: "https://zandani.co.ke/article/tanzanian-entrepreneur-isaya-yunge-linked-to-charlene-ruto-in-social"
 date: "2026-08-07T13:38:11Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-08-07T13:38:11Z"
+focusKeyword: "Tanzanian Entrepreneur Isaya Yunge Linked to Charlene Ruto in Soc"
 schema: "NewsArticle"
 ---
-Tanzanian tech innovator Isaya Yunge, founder of the Soma App, has become the subject of intense public speculation regarding a potential relationship with Charlene Ruto, the daughter of Kenyan President William Ruto, highlighting the intersection of regional elite circles and public fascination.
+
+Tanzanian tech innovator Isaya Yunge, founder of the Soma App, has become the subject of intense public speculation regarding a potential relationship with Charlene Ruto, the daughter of Kenyan President William Ruto, highlighting the intersection of regional elite circles and public fascination. Tanzanian Entrepreneur Isaya Yunge Linked to Charlene Ruto in Soc is the central subject of the update.
 
 ## The Reality of Elite Social Circles
 
