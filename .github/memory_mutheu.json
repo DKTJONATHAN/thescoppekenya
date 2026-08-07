@@ -343,10 +343,10 @@
     "3983e04cab940bedb0e66d751efbcb53",
     "8f67ce3a8eb64a9cbd0adeb1815c50ea",
     "436848168a0e8f46f0c70a0bdd4e738f",
-    "90b7cb1de8046d5f7f823a7db100f543"
+    "90b7cb1de8046d5f7f823a7db100f543",
+    "d527d73ed05b07b8a4962166c8795e3d"
   ],
   "style_history": [
-    "Explainer",
     "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
@@ -375,10 +375,10 @@
     "Hard News Lead",
     "Trend Take",
     "Explainer",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "story_progression|na|Trend Take",
     "winners_losers|Dan Levy|Profile Beat",
     "money_follow|na|Hard News Lead",
     "winners_losers|Drag Race Down Under vs. the World|Explainer",
@@ -457,6 +457,7 @@
     "policy_gap|na|Hard News Lead",
     "timeline_shift|The Varnell Hill Show|Trend Take",
     "story_progression|na|Explainer",
-    "story_progression|Britney Spears|Profile Beat"
+    "story_progression|Britney Spears|Profile Beat",
+    "myth_vs_fact|HBO Max|Hard News Lead"
   ]
 }
