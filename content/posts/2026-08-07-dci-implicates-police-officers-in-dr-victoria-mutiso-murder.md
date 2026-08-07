@@ -1,18 +1,20 @@
 ---
 title: "DCI implicates two police officers in Dr. Victoria Mutiso murder"
 slug: "dci-implicates-police-officers-in-dr-victoria-mutiso-murder"
-description: "The DCI has arrested a police inspector and constable for the murder of Dr. Victoria Mutiso, linking the killing to a land dispute in Nairobi."
+description: "DCI implicates two police officers in Dr. Victoria Mutiso murder: The DCI has arrested a police inspector and constable for the murder of Dr. Victoria Mutiso,"
+excerpt: "Who Guards the Guardians When the Badge Becomes a Weapon? The arrest of a police inspector and a constable for the murder of Dr. Victoria Mu"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/BVttfRXR/ffcb063a00f3.webp"
 category: "News"
 tags: ["dci", "dr victoria mutiso", "kenya police", "nairobi crime", "murder investigation", "justice"]
+canonical: "https://zandani.co.ke/article/dci-implicates-police-officers-in-dr-victoria-mutiso-murder"
 date: "2026-08-07T11:51:11Z"
 dateModified: "2026-08-07T11:51:11Z"
+focusKeyword: "DCI implicates two police officers in Dr. Victoria Mutiso murder"
 schema: "NewsArticle"
 ---
 
-## Who Guards the Guardians When the Badge Becomes a Weapon?
+## Who Guards the Guardians When the Badge Becomes a Weapon? DCI implicates two police officers in Dr. Victoria Mutiso murder is the central subject of the update.
 
 The arrest of a police inspector and a constable for the murder of Dr. Victoria Mutiso has shattered the fragile illusion of safety in our neighborhoods. Kenyans are no longer asking if the police can protect them, but rather, if they are the primary architects of the violence they are sworn to prevent.
 
