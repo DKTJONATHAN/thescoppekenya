@@ -204,10 +204,10 @@
     "e5d86f31fc0c284fcf10d45b88f5af3c",
     "84c97e72888fbea158cbd3850b46ba4a",
     "b1cb471949b9a9a3adea21dcc04eba76",
-    "8ff183213756316199683628287d6067"
+    "8ff183213756316199683628287d6067",
+    "ddec1bd703716668d1d8156a0334059b"
   ],
   "style_history": [
-    "Sharp Column",
     "Counterpoint",
     "Personal Reflection",
     "Historical Lens",
@@ -236,10 +236,10 @@
     "Counterpoint",
     "Letter Form",
     "Personal Reflection",
-    "Sharp Column"
+    "Sharp Column",
+    "Historical Lens"
   ],
   "angle_history": [
-    "policy_gap|Senegal|Sharp Column",
     "policy_gap|food security|Counterpoint",
     "accountability|eTIMS|Letter Form",
     "money_follow|World Bank|Personal Reflection",
@@ -318,6 +318,7 @@
     "myth_vs_fact|negotiated democracy|Counterpoint",
     "story_progression|Kenya politics|Letter Form",
     "next_48_hours|SIM swap fraud|Personal Reflection",
-    "winners_losers|digital economy|Sharp Column"
+    "winners_losers|digital economy|Sharp Column",
+    "timeline_shift|UDA|Historical Lens"
   ]
 }
