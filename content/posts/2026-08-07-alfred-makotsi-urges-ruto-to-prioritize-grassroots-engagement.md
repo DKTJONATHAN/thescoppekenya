@@ -1,18 +1,20 @@
 ---
 title: "Dr. Alfred Makotsi Urges Ruto to Focus on Grassroots Engagement"
 slug: "alfred-makotsi-urges-ruto-to-prioritize-grassroots-engagement"
-description: "Political analyst Alfred Makotsi advises President William Ruto to prioritize grassroots development over State House meetings to improve governance."
+description: "Dr. Alfred Makotsi Urges Ruto to Focus on Grassroots Engagement: Political analyst Alfred Makotsi advises President William Ruto to prioritize grassroots"
+excerpt: "The State House Echo Chamber In the late 1980s, the corridors of power were lined with elders and local administrators waiting for a preside"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/Kjq0jXy1/838862fe0ced.webp"
 category: "Opinions"
 tags: ["william ruto", "kenya politics", "uda", "governance", "political strategy"]
+canonical: "https://zandani.co.ke/article/alfred-makotsi-urges-ruto-to-prioritize-grassroots-engagement"
 date: "2026-08-07T10:10:05Z"
 dateModified: "2026-08-07T10:10:05Z"
+focusKeyword: "Dr. Alfred Makotsi Urges Ruto to Focus on Grassroots Engagement"
 schema: "NewsArticle"
 ---
 
-## The State House Echo Chamber
+## The State House Echo Chamber Dr. Alfred Makotsi Urges Ruto to Focus on Grassroots Engagement is the central subject of the update.
 
 In the late 1980s, the corridors of power were lined with elders and local administrators waiting for a presidential nod, a ritual of patronage that defined the era. Today, the digital scrutiny of governance renders those archaic spectacles of political theater increasingly fragile.
 
