@@ -1,18 +1,20 @@
 ---
 title: "Fifa President Gianni Infantino Denies Uefa Payment Allegations"
 slug: "fifa-president-gianni-infantino-denies-uefa-payment-allegations"
-description: "Gianni Infantino has dismissed claims regarding a controversial Uefa severance payment made during his tenure as the football body's general secretary."
+description: "Fifa President Gianni Infantino Denies Uefa Payment Allegations: Gianni Infantino has dismissed claims regarding a controversial Uefa severance payment made"
+excerpt: "The Swiss Accounting Trick: Why Infantino’s Education Defense is a Sham Gianni Infantino claims a mysterious Uefa payment was merely a schol"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/997YJSPL/d72c0123f9c6.jpg"
 category: "Sports"
 tags: ["fifa", "gianni infantino", "uefa", "football news", "sports scandal", "kenya sports"]
+canonical: "https://zandani.co.ke/article/fifa-president-gianni-infantino-denies-uefa-payment-allegations"
 date: "2026-08-08T10:55:36Z"
 dateModified: "2026-08-08T10:55:36Z"
+focusKeyword: "Fifa President Gianni Infantino Denies Uefa Payment Allegations"
 schema: "NewsArticle"
 ---
 
-## The Swiss Accounting Trick: Why Infantino’s Education Defense is a Sham
+## The Swiss Accounting Trick: Why Infantino’s Education Defense is a Sham Fifa President Gianni Infantino Denies Uefa Payment Allegations is the central subject of the update.
 
 Gianni Infantino claims a mysterious Uefa payment was merely a scholarship for an MBA student, but the math does not balance. While global media chases the tabloid heat, the real story is how Zurich turns professional graft into bureaucratic fiction.
 
