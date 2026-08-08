@@ -1,18 +1,20 @@
 ---
 title: "Witness details Paul Mackenzie coercive tactics in Shakahola trial"
 slug: "witness-details-paul-mackenzie-coercive-tactics-shakahola-trial"
-description: "A witness at the Shanzu Law Courts testified on how Paul Mackenzie used extreme religious doctrines to force followers into fatal starvation."
+description: "Witness details Paul Mackenzie coercive tactics in Shakahola tria: A witness at the Shanzu Law Courts testified on how Paul Mackenzie used extreme religious"
+excerpt: "The haunting silence of the Shakahola courtroom Kenyans are grappling with a collective sense of horror as witness LA recounted the systemat"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/q3n0bBmV/5b054dc100e6.jpg"
 category: "Gossip"
 tags: ["shakahola massacre", "paul mackenzie", "kenya news", "good news international ministries", "shanzu law courts", "cult radicalization"]
+canonical: "https://zandani.co.ke/article/witness-details-paul-mackenzie-coercive-tactics-shakahola-trial"
 date: "2026-08-08T07:10:20Z"
 dateModified: "2026-08-08T07:10:20Z"
+focusKeyword: "Witness details Paul Mackenzie coercive tactics in Shakahola tria"
 schema: "NewsArticle"
 ---
 
-## The haunting silence of the Shakahola courtroom
+## The haunting silence of the Shakahola courtroom Witness details Paul Mackenzie coercive tactics in Shakahola tria is the central subject of the update.
 
 Kenyans are grappling with a collective sense of horror as witness LA recounted the systematic dismantling of human willpower within the Shakahola forest. The courtroom at Shanzu has become a mirror for our national pain, forcing us to confront how easily faith can be weaponized into a lethal trap.
 
