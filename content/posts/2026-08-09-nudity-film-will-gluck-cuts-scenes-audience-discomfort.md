@@ -1,21 +1,20 @@
 ---
-title: "Will Gluck Cuts Nudity from One Night Only Film Due to Audience Discomfort
+title: "'Will Gluck Cuts Nudity from One Night Only Film Due to Audience Discomfort"
 slug: "nudity-film-will-gluck-cuts-scenes-audience-discomfort"
-description: "Director Will Gluck significantly reduced on-screen nudity in his new rom-com, One Night Only, citing audience discomfort in theaters. Discover why this decision was made and its impact on modern filmmaking choices."
+description: "'Will Gluck Cuts Nudity from One Night Only Film Due to Audience : Director Will Gluck significantly reduced on-screen nudity in his new rom-com, One Night"
+excerpt: "The Shifting Gaze: Will Gluck Film Nudity Decisions Signal a Global Reset for Shared Cinema Hollywood director Will Gluck's proactive cuts t"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/TJjtXWj/9f3084434a6f.jpg"
-og_title: "Will Gluck Reduces Nudity in New Rom-Com One Night Only"
-og_description: "Filmmaker Will Gluck significantly cut explicit content from One Night Only. He cited audience discomfort as the main reason. Learn more about this evolving trend in cinema."
-focus_keyword: "Will Gluck film nudity"
 category: "Entertainment"
 tags: ["entertainment", "film", "will gluck", "one night only", "audience discomfort", "nudity"]
+canonical: "https://zandani.co.ke/article/nudity-film-will-gluck-cuts-scenes-audience-discomfort"
 date: "2026-08-08T23:01:16Z"
 dateModified: "2026-08-08T23:01:16Z"
+focusKeyword: "'Will Gluck Cuts Nudity from One Night Only Film Due to Audience"
 schema: "NewsArticle"
 ---
 
-## The Shifting Gaze: Will Gluck Film Nudity Decisions Signal a Global Reset for Shared Cinema
+## The Shifting Gaze: Will Gluck Film Nudity Decisions Signal a Global Reset for Shared Cinema "Will Gluck Cuts Nudity from One Night Only Film Due to Audience  is the central subject of the update.
 
 Hollywood director Will Gluck's proactive cuts to explicit content in "One Night Only" reflect a seismic shift in audience comfort, particularly within the communal space of theaters, challenging long-held assumptions about on-screen material. This move spotlights a broader recalibration of cinematic standards, hinting at a global pivot for how intimacy is portrayed on the big screen.
 
