@@ -349,10 +349,10 @@
     "4b005357195a349ce7c26791f82ba8f2",
     "f6665f3bd1b72a4f20b8d61fc0edcdbd",
     "70fc3313b9cef62de512885b7d680d15",
-    "0ef3d65366a556cca7e998428d5c35ac"
+    "0ef3d65366a556cca7e998428d5c35ac",
+    "d687d7537b3ef4b381344e28bbffedf5"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Profile Beat",
     "Explainer",
@@ -381,10 +381,10 @@
     "Reaction Round-up",
     "Profile Beat",
     "Explainer",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Trend Take"
   ],
   "angle_history": [
-    "money_follow|na|Hard News Lead",
     "policy_gap|Aaron Lewis|Explainer",
     "winners_losers|Barack Obama|Trend Take",
     "story_progression|Gracie Abrams|Reaction Round-up",
@@ -463,6 +463,7 @@
     "story_progression|Savannah Guthrie|Reaction Round-up",
     "winners_losers|Bella Thorne|Profile Beat",
     "money_follow|Valerie Bertinelli|Explainer",
-    "policy_gap|romantic comedy|Hard News Lead"
+    "policy_gap|romantic comedy|Hard News Lead",
+    "timeline_shift|film|Trend Take"
   ]
 }
