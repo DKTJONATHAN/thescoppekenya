@@ -1,21 +1,20 @@
 ---
-title: "One Night Only Film: Star-Studded Rom-Com Explores Legal Premarital Sex
+title: "'One Night Only Film: Star-Studded Rom-Com Explores Legal Premarital Sex"
 slug: "one-night-only-film-celebrity-cameos-romcom"
-description: "One Night Only film: Will Gluck's rom-com. New Yorkers seek legal premarital sex one day a year. Features many celebrity cameos. Discover this unique movie."
+description: "'One Night Only Film: Star-Studded Rom-Com Explores Legal Premari: One Night Only film: Will Gluck's rom-com. New Yorkers seek legal premarital sex one day a"
+excerpt: "'One Night Only' Film Prompts Kenyan Reflection on Premarital Norms Director Will Gluck's latest romantic comedy, One Night Only , introduce"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/B2nVhfzm/215f875dc86d.jpg"
-og_title: "One Night Only Film: Rom-Com with Star-Studded Cameos"
-og_description: "Will Gluck's 'One Night Only' film is a rom-com about New Yorkers seeking legal premarital sex. See many celebrity cameos!"
-focus_keyword: "One Night Only film"
 category: "Entertainment"
 tags: ["one night only", "romantic comedy", "will gluck", "celebrity cameos", "film", "new york city"]
+canonical: "https://zandani.co.ke/article/one-night-only-film-celebrity-cameos-romcom"
 date: "2026-08-08T15:01:42Z"
 dateModified: "2026-08-08T15:01:42Z"
+focusKeyword: "'One Night Only Film: Star-Studded Rom-Com Explores Legal Premari"
 schema: "NewsArticle"
 ---
 
-## 'One Night Only' Film Prompts Kenyan Reflection on Premarital Norms
+## 'One Night Only' Film Prompts Kenyan Reflection on Premarital Norms "One Night Only Film: Star-Studded Rom-Com Explores Legal Premari is the central subject of the update.
 
 Director Will Gluck's latest romantic comedy, *One Night Only*, introduces a fictional New York where premarital sex is legally permitted for a single day each year. This provocative concept is now sparking extensive socio-cultural discussions across Kenya, prompting widespread reflection on personal freedom, deeply held cultural traditions, and the unwritten rules of intimacy that govern local relationships.
 
