@@ -1,18 +1,20 @@
 ---
 title: "Two TUM students die in Kisumu-Awasi highway bus crash"
 slug: "tum-students-die-kisumu-awasi-highway-bus-crash"
-description: "Two Technical University of Mombasa students died and 15 others were hospitalised after their bus overturned along the Kisumu-Awasi highway on Friday."
+description: "Two TUM students die in Kisumu-Awasi highway bus crash: Two Technical University of Mombasa students died and 15 others were hospitalised after their bus"
+excerpt: "Why University Travel Protocols Are Failing Students Two students from the Technical University of Mombasa died on Friday, August 7, when a"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/8DqYrJDt/29832d2966b8.webp"
 category: "News"
 tags: ["kenyan news", "za ndani", "technical university of mombasa", "kisumu accident", "road safety", "university students"]
+canonical: "https://zandani.co.ke/article/tum-students-die-kisumu-awasi-highway-bus-crash"
 date: "2026-08-08T11:33:32Z"
 dateModified: "2026-08-08T11:33:32Z"
+focusKeyword: "Two TUM students die in Kisumu-Awasi highway bus crash"
 schema: "NewsArticle"
 ---
 
-## Why University Travel Protocols Are Failing Students
+## Why University Travel Protocols Are Failing Students Two TUM students die in Kisumu-Awasi highway bus crash is the central subject of the update.
 
 Two students from the Technical University of Mombasa died on Friday, August 7, when a bus chartered for a funeral ceremony overturned on the Kisumu-Awasi highway. This tragedy has shifted focus from the accident itself to the fragile safety standards governing how Kenyan institutions move large groups of young people across the country.
 
