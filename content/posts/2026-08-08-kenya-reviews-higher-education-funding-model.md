@@ -1,18 +1,20 @@
 ---
 title: "Kenya Reviews Higher Education Funding Model Amid Dropout Surge"
 slug: "kenya-reviews-higher-education-funding-model"
-description: "The government is evaluating its university funding framework to boost inclusivity while addressing concerns over rising debt and high student dropout rates."
+description: "Kenya Reviews Higher Education Funding Model Amid Dropout Surge: The government is evaluating its university funding framework to boost inclusivity while"
+excerpt: "The False Promise of Accessible Degrees The Kenyan government is currently scrutinizing its higher education funding framework as the realit"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/tTsfDFgc/2701379e8e92.webp"
 category: "Opinions"
 tags: ["higher education", "kenya news", "student loans", "tvet", "university funding", "education policy"]
+canonical: "https://zandani.co.ke/article/kenya-reviews-higher-education-funding-model"
 date: "2026-08-08T09:53:48Z"
 dateModified: "2026-08-08T09:53:48Z"
+focusKeyword: "Kenya Reviews Higher Education Funding Model Amid Dropout Surge"
 schema: "NewsArticle"
 ---
 
-## The False Promise of Accessible Degrees
+## The False Promise of Accessible Degrees Kenya Reviews Higher Education Funding Model Amid Dropout Surge is the central subject of the update.
 
 The Kenyan government is currently scrutinizing its higher education funding framework as the reality of a 35,000-student dropout surge in 2024 forces a reckoning with how we finance the dreams of our youth.
 
