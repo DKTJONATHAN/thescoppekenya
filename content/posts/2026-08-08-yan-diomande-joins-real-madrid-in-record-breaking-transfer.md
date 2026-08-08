@@ -1,18 +1,20 @@
 ---
 title: "Yan Diomande Joins Real Madrid in Record Breaking Transfer"
 slug: "yan-diomande-joins-real-madrid-in-record-breaking-transfer"
-description: "Ivorian star Yan Diomande has completed a historic 135 million euro transfer to Real Madrid, signing a seven year deal under Jose Mourinho."
+description: "Yan Diomande Joins Real Madrid in Record Breaking Transfer: Ivorian star Yan Diomande has completed a historic 135 million euro transfer to Real Madrid,"
+excerpt: "Real Madrid Secures Yan Diomande in Record 135 Million Euro Transfer Ivorian forward Yan Diomande has finalized his move to Real Madrid, sig"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/d0Mn9PbS/e1f747545937.webp"
 category: "Gossip"
 tags: ["yan diomande", "real madrid", "football transfers", "african football", "international football"]
+canonical: "https://zandani.co.ke/article/yan-diomande-joins-real-madrid-in-record-breaking-transfer"
 date: "2026-08-08T09:01:22Z"
 dateModified: "2026-08-08T09:01:22Z"
+focusKeyword: "Yan Diomande Joins Real Madrid in Record Breaking Transfer"
 schema: "NewsArticle"
 ---
 
-## Real Madrid Secures Yan Diomande in Record 135 Million Euro Transfer
+## Real Madrid Secures Yan Diomande in Record 135 Million Euro Transfer Yan Diomande Joins Real Madrid in Record Breaking Transfer is the central subject of the update.
 
 Ivorian forward Yan Diomande has finalized his move to Real Madrid, signing a seven-year contract following a record-breaking 135 million euro transfer from RB Leipzig. The deal marks a historic milestone for African football, establishing a new valuation standard for talent transitioning from the continent to the highest levels of the European game.
 
