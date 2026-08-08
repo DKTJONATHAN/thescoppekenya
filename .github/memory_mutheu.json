@@ -348,10 +348,10 @@
     "19dfb549930e86d4109bf249b126d2fb",
     "4b005357195a349ce7c26791f82ba8f2",
     "f6665f3bd1b72a4f20b8d61fc0edcdbd",
-    "70fc3313b9cef62de512885b7d680d15"
+    "70fc3313b9cef62de512885b7d680d15",
+    "0ef3d65366a556cca7e998428d5c35ac"
   ],
   "style_history": [
-    "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
     "Profile Beat",
@@ -380,10 +380,10 @@
     "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "story_progression|DC Studios|Profile Beat",
     "money_follow|na|Hard News Lead",
     "policy_gap|Aaron Lewis|Explainer",
     "winners_losers|Barack Obama|Trend Take",
@@ -462,6 +462,7 @@
     "myth_vs_fact|Wizards of Waverly Place|Trend Take",
     "story_progression|Savannah Guthrie|Reaction Round-up",
     "winners_losers|Bella Thorne|Profile Beat",
-    "money_follow|Valerie Bertinelli|Explainer"
+    "money_follow|Valerie Bertinelli|Explainer",
+    "policy_gap|romantic comedy|Hard News Lead"
   ]
 }
