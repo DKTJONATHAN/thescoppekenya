@@ -1,18 +1,20 @@
 ---
 title: "Two Police Officers Linked to Murder of Dr. Victoria Mutiso"
 slug: "police-officers-linked-to-murder-of-dr-victoria-mutiso"
-description: "Investigators reveal two police officers were paid Ksh 1.5 million to kill Dr. Victoria Mutiso over a land dispute confirmed by ballistic evidence."
+description: "Two Police Officers Linked to Murder of Dr. Victoria Mutiso: Investigators reveal two police officers were paid Ksh 1.5 million to kill Dr. Victoria Mutiso"
+excerpt: "When the Badge Becomes a Contract Killer Kenyans are demanding an immediate, transparent forensic audit of the Nderi Police Post armory afte"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/gM88Z7Gt/ee4d5a63ea05.webp"
 category: "News"
 tags: ["dr victoria mutiso", "dci", "kenya crime", "police misconduct", "land dispute", "nairobi news"]
+canonical: "https://zandani.co.ke/article/police-officers-linked-to-murder-of-dr-victoria-mutiso"
 date: "2026-08-08T17:35:44Z"
 dateModified: "2026-08-08T17:35:44Z"
+focusKeyword: "Two Police Officers Linked to Murder of Dr. Victoria Mutiso"
 schema: "NewsArticle"
 ---
 
-## When the Badge Becomes a Contract Killer
+## When the Badge Becomes a Contract Killer Two Police Officers Linked to Murder of Dr. Victoria Mutiso is the central subject of the update.
 
 Kenyans are demanding an immediate, transparent forensic audit of the Nderi Police Post armory after evidence confirmed that state-issued weapons were used to execute Dr. Victoria Mutiso. The public outrage centers on how easily a Jericho pistol turned into a mercenary tool.
 
