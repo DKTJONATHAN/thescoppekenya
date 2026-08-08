@@ -14,7 +14,7 @@ focusKeyword: "'Bella Thorne Directing Spring Breakers 2, Aims for New Tone"
 schema: "NewsArticle"
 ---
 
-## Bella Thorne Takes Charge: A New Dawn for Spring Breakers 2 "Bella Thorne Directing Spring Breakers 2, Aims for New Tone is the central subject of the update.
+## Bella Thorne Takes Charge: A New Dawn for Spring Breakers 2 "Bella Thorne Directing Spring Breakers 2, Aims for New Tone is the central subject of the update. 'Bella Thorne Directing Spring Breakers 2, Aims for New Tone is the central subject of the update.
 
 Bella Thorne is stepping into a powerful new role, not just as a returning face but as the guiding hand behind the hotly anticipated sequel, "Spring Breakers 2." Her dual capacity as writer and director signals a significant shift, promising to redefine the franchise's identity under a vision she describes as "strong female energy" and a "litty" tone, moving far beyond its contentious past.
 

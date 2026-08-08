@@ -1,18 +1,20 @@
 ---
 title: "Nairobi emergency teams contain fires at Sonko home and Eastleigh"
 slug: "nairobi-emergency-teams-contain-fires-at-sonko-home-and-eastleigh"
-description: "Nairobi County emergency crews successfully extinguished fires at Mike Sonko's residence and the Ali Glacier hardware store in Eastleigh on Saturday."
+description: "Nairobi emergency teams contain fires at Sonko home and Eastleigh: Nairobi County emergency crews successfully extinguished fires at Mike Sonko's residence and"
+excerpt: "Nairobi Emergency Services Managed Dual Incidents Nairobi City County emergency teams successfully contained two distinct fire outbreaks on"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/8gK4v7ry/21d5450377bb.webp"
 category: "News"
 tags: ["nairobi", "mike sonko", "eastleigh", "geoffrey mosiria", "kenya news", "fire emergency"]
+canonical: "https://zandani.co.ke/article/nairobi-emergency-teams-contain-fires-at-sonko-home-and-eastleigh"
 date: "2026-08-08T05:46:09Z"
 dateModified: "2026-08-08T05:46:09Z"
+focusKeyword: "Nairobi emergency teams contain fires at Sonko home and Eastleigh"
 schema: "NewsArticle"
 ---
 
-## Nairobi Emergency Services Managed Dual Incidents
+## Nairobi Emergency Services Managed Dual Incidents Nairobi emergency teams contain fires at Sonko home and Eastleigh is the central subject of the update.
 
 Nairobi City County emergency teams successfully contained two distinct fire outbreaks on Saturday morning, testing the operational efficiency of local disaster management crews as they balanced resources between a residential property and a congested commercial hub.
 
