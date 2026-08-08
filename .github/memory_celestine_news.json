@@ -403,10 +403,10 @@
     "dac5501c12f11897e766501109396e17",
     "c6d8ff7808c238e3dd0bde3f1f32eb20",
     "bbf2bc778f698a277d87545344bb958c",
-    "4498a8451691a6e44796f5f8e25e832a"
+    "4498a8451691a6e44796f5f8e25e832a",
+    "d1e350b7ee5e1bb52cb405185b9c5b8e"
   ],
   "style_history": [
-    "Power Accountability",
     "Explainer",
     "Hard News Lead",
     "Context Backgrounder",
@@ -435,10 +435,10 @@
     "Power Accountability",
     "Reaction & Voices",
     "Context Backgrounder",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "next_48_hours|Kisumu|Reaction & Voices",
     "policy_gap|Ruaka|Hard News Lead",
     "money_follow|Malaba border|Context Backgrounder",
     "accountability|Kenya politics|Explainer",
@@ -517,6 +517,7 @@
     "accountability|Al Shabaab|Power Accountability",
     "accountability|DCI|Reaction & Voices",
     "policy_gap|Kenya Power|Context Backgrounder",
-    "story_progression|Mike Sonko|Hard News Lead"
+    "story_progression|Mike Sonko|Hard News Lead",
+    "policy_gap|TUM|Explainer"
   ]
 }

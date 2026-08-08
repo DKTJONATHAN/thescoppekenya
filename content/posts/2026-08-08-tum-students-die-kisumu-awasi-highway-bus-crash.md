@@ -1,0 +1,37 @@
+---
+title: "Two TUM students die in Kisumu-Awasi highway bus crash"
+slug: "tum-students-die-kisumu-awasi-highway-bus-crash"
+description: "Two Technical University of Mombasa students died and 15 others were hospitalised after their bus overturned along the Kisumu-Awasi highway on Friday."
+author: "Celestine Nzioka"
+authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
+image: "https://i.ibb.co/8DqYrJDt/29832d2966b8.webp"
+category: "News"
+tags: ["kenyan news", "za ndani", "technical university of mombasa", "kisumu accident", "road safety", "university students"]
+date: "2026-08-08T11:33:32Z"
+dateModified: "2026-08-08T11:33:32Z"
+schema: "NewsArticle"
+---
+
+## Why University Travel Protocols Are Failing Students
+
+Two students from the Technical University of Mombasa died on Friday, August 7, when a bus chartered for a funeral ceremony overturned on the Kisumu-Awasi highway. This tragedy has shifted focus from the accident itself to the fragile safety standards governing how Kenyan institutions move large groups of young people across the country.
+
+### Who is overseeing the safety of student-organized travel?
+
+When a university officially organizes transport, the expectation of institutional accountability is high. However, current regulations regarding student travel often fall into a regulatory blind spot. While private bus operators are subject to general National Transport and Safety Authority requirements, there is no uniform national policy mandating how universities must vet the mechanical fitness or driver history of vehicles used for student-led events.
+
+Road safety advocates point out that universities frequently rely on ad-hoc arrangements for extracurricular trips. Unlike primary and secondary schools, which are increasingly governed by strict Ministry of Education guidelines on school transport, universities often treat student travel as a private or student union affair. This creates a disconnect where the institution provides the endorsement but lacks the rigorous oversight to ensure the safety of the specific vehicle hired for the journey. The gap between an official university trip and a casual outing is currently defined more by administrative paperwork than by verified safety protocols.
+
+### What is the current medical status of those involved?
+
+The incident left 15 students requiring immediate medical intervention. According to medical authorities at Jaramogi Oginga Odinga Teaching and Referral Hospital, the survivors are currently receiving specialized care for a range of injuries sustained during the crash. Of those, one student has been moved to the High Dependency Unit at Aga Khan Hospital, reflecting the severity of their condition. While 14 other students initially transported to Lisa Hospital have been discharged, the ongoing hospitalization of the remaining cohort serves as a sobering reminder of the physical cost of this transit failure.
+
+### Can institutional responsibility be better defined?
+
+The crash on the Kisumu-Awasi highway highlights a broader, systemic issue that goes beyond driver conduct. It forces a conversation about the institutional duty of care. When an entity like a public university facilitates transport for hundreds of students, Za Ndani of safety should ideally match the professional transport sector, rather than the informal market of chartered buses.
+
+Currently, if a university hires a bus, the primary liability often rests with the private operator. This legal arrangement, however, does little to protect students in the event of a mechanical failure or an operator oversight. Transport experts suggest that universities must move toward centralized fleet management or adopt mandatory, third-party safety audits for every bus commissioned for student use. Without these changes, universities remain vulnerable to the risks inherent in a transport sector that is still struggling with accountability issues, similar to how the broader economy is working to refine systems in other sectors, such as the effort to streamline digital remittances or the ongoing national dialogue regarding political alignments like those discussed between Kalonzo Musyoka and other national leaders.
+
+Ultimately, the goal is to shift from reactive mourning to proactive policy. If universities continue to operate without a standardized, nationwide safety protocol for student travel, they leave the lives of their students to chance rather than to a calculated system of protection. A student transit policy is not just an administrative requirement; it is a life-saving necessity for the thousands who travel annually for academic and social engagement.
+
+Consistent, enforced safety standards for all student travel are the only way to ensure that tragedies like the Kisumu crash do not repeat.
