@@ -343,10 +343,10 @@
     "104bf0bcaf3f4976eafa906c429dd5cc",
     "be52b162ec909b657acbfbce3bf3635b",
     "9b049f9acd38fdb8b230731a6cee66c6",
-    "111ab012ce02fc1a477c3e9592324efa"
+    "111ab012ce02fc1a477c3e9592324efa",
+    "15e51e6889401fd45f1f046c8f4bdccb"
   ],
   "style_history": [
-    "Hard News Lead",
     "Trend Take",
     "Receipts Piece",
     "Profile Beat",
@@ -375,10 +375,10 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "timeline_shift|ODM|Reaction Round-up",
     "policy_gap|Kenya|Hard News Lead",
     "money_follow|gender-based violence|Receipts Piece",
     "winners_losers|Mugithi|Profile Beat",
@@ -457,6 +457,7 @@
     "myth_vs_fact|Diaso|Hard News Lead",
     "winners_losers|welfare|Reaction Round-up",
     "timeline_shift|Jojo Fashion House|Trend Take",
-    "story_progression|forex trading|Profile Beat"
+    "story_progression|forex trading|Profile Beat",
+    "money_follow|football|Hard News Lead"
   ]
 }
