@@ -1,7 +1,8 @@
 ---
 title: "Legendary Musician Joel Kimeto to Perform for Charlene Ruto at Kilgoris Cultural Event"
 slug: "legendary-musician-joel-kimeto-to-perform-for-charlene-ruto-at-kilgo"
-description: "Legendary musician Joel Kimeto will perform at a Kilgoris cultural event this weekend, where he is set to entertain an audience including Charlene Ruto."
+description: "Legendary Musician Joel Kimeto to Perform for Charlene Ruto at Ki: Legendary musician Joel Kimeto will perform at a Kilgoris cultural event this weekend, where"
+excerpt: "Legendary Kalenjin Benga musician Joel Kimeto will perform at a high profile cultural event in Kilgoris this weekend. The veteran artist is"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/RT8FkRzM/56c898ed2a3e.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["joel-kimeto", "charlene-ruto", "kilgoris-cultural-event", "kalenjin-music", "kenyan-entertainment"]
 canonical: "https://zandani.co.ke/article/legendary-musician-joel-kimeto-to-perform-for-charlene-ruto-at-kilgo"
 date: "2026-08-08T13:11:51Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-08-08T13:11:51Z"
+focusKeyword: "Legendary Musician Joel Kimeto to Perform for Charlene Ruto at Ki"
 schema: "NewsArticle"
 ---
-Legendary Kalenjin Benga musician Joel Kimeto will perform at a high-profile cultural event in Kilgoris this weekend. The veteran artist is scheduled to entertain an audience that includes Charlene Ruto, highlighting the enduring influence of traditional music within contemporary public engagement events.
+
+Legendary Kalenjin Benga musician Joel Kimeto will perform at a high-profile cultural event in Kilgoris this weekend. The veteran artist is scheduled to entertain an audience that includes Charlene Ruto, highlighting the enduring influence of traditional music within contemporary public engagement events. Legendary Musician Joel Kimeto to Perform for Charlene Ruto at Ki is the central subject of the update.
 
 ## From Studio Filler to National Anthem
 
