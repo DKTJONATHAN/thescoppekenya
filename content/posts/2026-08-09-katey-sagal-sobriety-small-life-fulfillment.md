@@ -1,21 +1,20 @@
 ---
-title: "Katey Sagal on Her Sobriety: From Small Life to Big Fulfillment
+title: "'Katey Sagal on Her Sobriety: From Small Life to Big Fulfillment"
 slug: "katey-sagal-sobriety-small-life-fulfillment"
-description: "Actress Katey Sagal reflects on her long-term sobriety, revealing how past drug and alcohol abuse led to a 'small life' filled with rigid desires. Discover her journey to a fulfilling life now."
+description: "'Katey Sagal on Her Sobriety: From Small Life to Big Fulfillment: Actress Katey Sagal reflects on her long-term sobriety, revealing how past drug and alcohol"
+excerpt: "Katey Sagal's Sobriety: Kenyans Weigh In on a 'Big Life' Veteran actress Katey Sagal's candid reflections on her four decades of sobriety ar"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/9mYHcjM3/38ff15c54a69.jpg"
-og_title: "Katey Sagal: My Sobriety Transformed a Small Life"
-og_description: "Actress Katey Sagal discusses her 38 years of sobriety, explaining how overcoming drug and alcohol abuse led to a much bigger and more fulfilling life."
-focus_keyword: "Katey Sagal sobriety"
 category: "Entertainment"
 tags: ["katey sagal", "sobriety", "addiction recovery", "celebrity news", "married with children", "ted danson", "entertainment"]
+canonical: "https://zandani.co.ke/article/katey-sagal-sobriety-small-life-fulfillment"
 date: "2026-08-09T15:04:34Z"
 dateModified: "2026-08-09T15:04:34Z"
+focusKeyword: "'Katey Sagal on Her Sobriety: From Small Life to Big Fulfillment"
 schema: "NewsArticle"
 ---
 
-## Katey Sagal's Sobriety: Kenyans Weigh In on a 'Big Life'
+## Katey Sagal's Sobriety: Kenyans Weigh In on a 'Big Life' "Katey Sagal on Her Sobriety: From Small Life to Big Fulfillment is the central subject of the update.
 
 Veteran actress Katey Sagal's candid reflections on her four decades of sobriety are sparking deep conversations across Kenya, moving beyond typical celebrity stories. Her unique insights into addiction's roots - linking it to "rigid desires and disappointment" - resonate powerfully with fans considering the complex paths to personal fulfillment.
 
