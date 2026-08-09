@@ -206,10 +206,10 @@
     "b1cb471949b9a9a3adea21dcc04eba76",
     "8ff183213756316199683628287d6067",
     "ddec1bd703716668d1d8156a0334059b",
-    "40ac7cea45551b96f9dc23b23b278ba1"
+    "40ac7cea45551b96f9dc23b23b278ba1",
+    "db8444fe5cbb7f6149c827740ff267d0"
   ],
   "style_history": [
-    "Personal Reflection",
     "Historical Lens",
     "Letter Form",
     "Counterpoint",
@@ -238,10 +238,10 @@
     "Personal Reflection",
     "Sharp Column",
     "Historical Lens",
-    "Letter Form"
+    "Letter Form",
+    "Personal Reflection"
   ],
   "angle_history": [
-    "accountability|eTIMS|Letter Form",
     "money_follow|World Bank|Personal Reflection",
     "winners_losers|Vision 2030|Historical Lens",
     "impact_on_citizens|air quality|Sharp Column",
@@ -320,6 +320,7 @@
     "next_48_hours|SIM swap fraud|Personal Reflection",
     "winners_losers|digital economy|Sharp Column",
     "timeline_shift|UDA|Historical Lens",
-    "policy_gap|higher education|Letter Form"
+    "policy_gap|higher education|Letter Form",
+    "policy_gap|Vision 2060|Personal Reflection"
   ]
 }
