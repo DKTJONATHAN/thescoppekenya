@@ -1,18 +1,20 @@
 ---
 title: "Joy Kanini Gathu Laid to Rest as Murder Investigation Continues"
 slug: "joy-kanini-gathu-laid-to-rest-as-murder-investigation-continues"
-description: "Family and friends mourn Joy Kanini Gathu following her burial in Laikipia. Her boyfriend remains a key suspect in the gruesome murder case."
+description: "Joy Kanini Gathu Laid to Rest as Murder Investigation Continues: Family and friends mourn Joy Kanini Gathu following her burial in Laikipia. Her boyfriend"
+excerpt: "Digital Oversight: The Changing Face of Kenyan Homicide Investigations The burial of Joy Kanini Gathu on August 6 in Mutara, Laikipia, concl"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/sdyCNfxQ/5bfb9a321b2a.jpg"
 category: "Gossip"
 tags: ["joy kanini gathu", "laikipia", "nyeri", "dci", "femicide", "homicide", "justice"]
+canonical: "https://zandani.co.ke/article/joy-kanini-gathu-laid-to-rest-as-murder-investigation-continues"
 date: "2026-08-09T07:12:10Z"
 dateModified: "2026-08-09T07:12:10Z"
+focusKeyword: "Joy Kanini Gathu Laid to Rest as Murder Investigation Continues"
 schema: "NewsArticle"
 ---
 
-## Digital Oversight: The Changing Face of Kenyan Homicide Investigations
+## Digital Oversight: The Changing Face of Kenyan Homicide Investigations Joy Kanini Gathu Laid to Rest as Murder Investigation Continues is the central subject of the update.
 
 The burial of Joy Kanini Gathu on August 6 in Mutara, Laikipia, concluded a brutal two-month saga that transformed how the public engages with criminal justice. No longer content to wait for fragmented police updates, Kenyans are increasingly inserting themselves into the investigative process. This shift marks a departure from traditional passive observation toward a model of active, persistent digital scrutiny.
 
