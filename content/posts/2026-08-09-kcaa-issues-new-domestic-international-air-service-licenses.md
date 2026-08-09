@@ -1,18 +1,20 @@
 ---
 title: "KCAA Issues New Domestic and International Air Service Licenses"
 slug: "kcaa-issues-new-domestic-international-air-service-licenses"
-description: "The Kenya Civil Aviation Authority has approved new flight licenses for passenger and cargo routes while enforcing strict regulatory safety standards."
+description: "KCAA Issues New Domestic and International Air Service Licenses: The Kenya Civil Aviation Authority has approved new flight licenses for passenger and cargo"
+excerpt: "Regulating the Flight Path The Kenya Civil Aviation Authority has tightened its oversight of the local aviation sector by issuing a wave of"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/LzwyV2s6/54ac60b536db.webp"
 category: "News"
 tags: ["kcaa", "aviation", "kenya news", "air travel", "transport", "business"]
+canonical: "https://zandani.co.ke/article/kcaa-issues-new-domestic-international-air-service-licenses"
 date: "2026-08-09T17:36:04Z"
 dateModified: "2026-08-09T17:36:04Z"
+focusKeyword: "KCAA Issues New Domestic and International Air Service Licenses"
 schema: "NewsArticle"
 ---
 
-## Regulating the Flight Path
+## Regulating the Flight Path KCAA Issues New Domestic and International Air Service Licenses is the central subject of the update.
 
 The Kenya Civil Aviation Authority has tightened its oversight of the local aviation sector by issuing a wave of new flight permits while rejecting multiple operators for failing to meet rigorous safety and economic compliance standards established under national law.
 

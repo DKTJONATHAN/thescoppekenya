@@ -14,7 +14,7 @@ focusKeyword: "'Katey Sagal on Her Sobriety: From Small Life to Big Fulfillment"
 schema: "NewsArticle"
 ---
 
-## Katey Sagal's Sobriety: Kenyans Weigh In on a 'Big Life' "Katey Sagal on Her Sobriety: From Small Life to Big Fulfillment is the central subject of the update.
+## Katey Sagal's Sobriety: Kenyans Weigh In on a 'Big Life' "Katey Sagal on Her Sobriety: From Small Life to Big Fulfillment is the central subject of the update. 'Katey Sagal on Her Sobriety: From Small Life to Big Fulfillment is the central subject of the update.
 
 Veteran actress Katey Sagal's candid reflections on her four decades of sobriety are sparking deep conversations across Kenya, moving beyond typical celebrity stories. Her unique insights into addiction's roots - linking it to "rigid desires and disappointment" - resonate powerfully with fans considering the complex paths to personal fulfillment.
 
