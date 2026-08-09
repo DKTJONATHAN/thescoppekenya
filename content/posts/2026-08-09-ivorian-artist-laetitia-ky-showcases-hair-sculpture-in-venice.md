@@ -1,18 +1,20 @@
 ---
 title: "Ivorian artist Laetitia Ky showcases hair sculpture in Venice"
 slug: "ivorian-artist-laetitia-ky-showcases-hair-sculpture-in-venice"
-description: "Ivorian artist Laetitia Ky gains international acclaim at the Venice Biennale for creating hair sculptures that address social justice issues."
+description: "Ivorian artist Laetitia Ky showcases hair sculpture in Venice: Ivorian artist Laetitia Ky gains international acclaim at the Venice Biennale for creating hair"
+excerpt: "From Viral Clips to Biennale Plinths Laetitia Ky once defined herself through the raw, unedited aesthetic of digital creation. By turning he"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/Y420kvM2/57dade12ba38.webp"
 category: "Gossip"
 tags: ["laetitia ky", "hair art", "social activism", "venice biennale", "african artists", "visual storytelling"]
+canonical: "https://zandani.co.ke/article/ivorian-artist-laetitia-ky-showcases-hair-sculpture-in-venice"
 date: "2026-08-09T09:03:23Z"
 dateModified: "2026-08-09T09:03:23Z"
+focusKeyword: "Ivorian artist Laetitia Ky showcases hair sculpture in Venice"
 schema: "NewsArticle"
 ---
 
-## From Viral Clips to Biennale Plinths
+## From Viral Clips to Biennale Plinths Ivorian artist Laetitia Ky showcases hair sculpture in Venice is the central subject of the update.
 
 Laetitia Ky once defined herself through the raw, unedited aesthetic of digital creation. By turning her hair into sculptures that served as visual anchors for social commentary, she carved out a space in the digital landscape. Now, she occupies the sterile, high-stakes corridors of the Venice Biennale. Her transition serves as a case study in how viral labor has become the preferred currency for institutional gatekeepers looking to revitalize their public image.
 

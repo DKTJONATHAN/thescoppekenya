@@ -14,7 +14,7 @@ focusKeyword: "'Barbara Eden Recalls Lucille Ball's Praise for Avoiding Desi Arn
 schema: "NewsArticle"
 ---
 
-## Barbara Eden: Quiet Resolve Amid Hollywood's Early Challenges "Barbara Eden Recalls Lucille Ball's Praise for Avoiding Desi Arn is the central subject of the update.
+## Barbara Eden: Quiet Resolve Amid Hollywood's Early Challenges "Barbara Eden Recalls Lucille Ball's Praise for Avoiding Desi Arn is the central subject of the update. 'Barbara Eden Recalls Lucille Ball's Praise for Avoiding Desi Arn is the central subject of the update.
 
 At 93 years young, legendary actress Barbara Eden offers a rare look back at her early career, revealing it was shaped by more than just talent. Her significant guest appearance in 1957 on "I Love Lucy" not only showed her acting gifts but also a discerning nature that impressed none other than Lucille Ball herself.
 
