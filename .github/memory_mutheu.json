@@ -352,10 +352,10 @@
     "0ef3d65366a556cca7e998428d5c35ac",
     "d687d7537b3ef4b381344e28bbffedf5",
     "1ebc431953b5ee0ccc5f34eb29097961",
-    "0469be94944c089da667b525fb7e2d8f"
+    "0469be94944c089da667b525fb7e2d8f",
+    "9b67802c3b2dedb1c801a89587ff5a27"
   ],
   "style_history": [
-    "Explainer",
     "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
@@ -384,10 +384,10 @@
     "Hard News Lead",
     "Trend Take",
     "Profile Beat",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "story_progression|Gracie Abrams|Reaction Round-up",
     "timeline_shift|na|Hard News Lead",
     "money_follow|Taylor Swift|Explainer",
     "timeline_shift|Venezuela earthquake|Profile Beat",
@@ -466,6 +466,7 @@
     "policy_gap|romantic comedy|Hard News Lead",
     "timeline_shift|film|Trend Take",
     "story_progression|na|Profile Beat",
-    "myth_vs_fact|Sobriety|Reaction Round-up"
+    "myth_vs_fact|Sobriety|Reaction Round-up",
+    "money_follow|Box Office|Hard News Lead"
   ]
 }
