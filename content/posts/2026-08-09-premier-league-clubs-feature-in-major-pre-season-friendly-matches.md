@@ -1,18 +1,20 @@
 ---
 title: "Premier League clubs feature in major pre-season friendly matches"
 slug: "premier-league-clubs-feature-in-major-pre-season-friendly-matches"
-description: "Manchester City, Chelsea, Arsenal and Liverpool continue their pre-season preparations today with high-profile international friendly fixtures."
+description: "Premier League clubs feature in major pre-season friendly matches: Manchester City, Chelsea, Arsenal and Liverpool continue their pre-season preparations today"
+excerpt: "Premier League giants test global limits in pre season flurry Four Premier League clubs are currently navigating a dense schedule of interna"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/bRbPDDVS/03ecca473a8b.png"
 category: "Sports"
 tags: ["premier league", "football", "pre-season", "manchester city", "arsenal", "liverpool", "chelsea"]
+canonical: "https://zandani.co.ke/article/premier-league-clubs-feature-in-major-pre-season-friendly-matches"
 date: "2026-08-09T10:56:38Z"
 dateModified: "2026-08-09T10:56:38Z"
+focusKeyword: "Premier League clubs feature in major pre-season friendly matches"
 schema: "NewsArticle"
 ---
 
-## Premier League giants test global limits in pre-season flurry
+## Premier League giants test global limits in pre-season flurry Premier League clubs feature in major pre-season friendly matches is the central subject of the update.
 
 Four Premier League clubs are currently navigating a dense schedule of international friendly matches, highlighting the increasingly fragile state of player conditioning. As the sport moves toward a 2026 calendar expansion, these teams are pushing elite squads toward a physical breaking point that prioritizes commercial reach over long-term athlete welfare.
 
