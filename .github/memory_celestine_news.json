@@ -405,10 +405,10 @@
     "bbf2bc778f698a277d87545344bb958c",
     "4498a8451691a6e44796f5f8e25e832a",
     "d1e350b7ee5e1bb52cb405185b9c5b8e",
-    "6ab57453f789a6835e3394f7aecbb8f5"
+    "6ab57453f789a6835e3394f7aecbb8f5",
+    "ff64d239607b8b3731394a13f4283739"
   ],
   "style_history": [
-    "Hard News Lead",
     "Context Backgrounder",
     "Power Accountability",
     "Reaction & Voices",
@@ -437,10 +437,10 @@
     "Context Backgrounder",
     "Hard News Lead",
     "Explainer",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "money_follow|Malaba border|Context Backgrounder",
     "accountability|Kenya politics|Explainer",
     "accountability|UK immigration|Power Accountability",
     "policy_gap|Kenya|Hard News Lead",
@@ -519,6 +519,7 @@
     "policy_gap|Kenya Power|Context Backgrounder",
     "story_progression|Mike Sonko|Hard News Lead",
     "policy_gap|TUM|Explainer",
-    "accountability|Dr. Victoria Mutiso|Reaction & Voices"
+    "accountability|Dr. Victoria Mutiso|Reaction & Voices",
+    "accountability|Kenya politics|Power Accountability"
   ]
 }
