@@ -14,7 +14,7 @@ focusKeyword: "'Will Gluck Cuts Nudity from One Night Only Film Due to Audience"
 schema: "NewsArticle"
 ---
 
-## The Shifting Gaze: Will Gluck Film Nudity Decisions Signal a Global Reset for Shared Cinema "Will Gluck Cuts Nudity from One Night Only Film Due to Audience  is the central subject of the update.
+## The Shifting Gaze: Will Gluck Film Nudity Decisions Signal a Global Reset for Shared Cinema "Will Gluck Cuts Nudity from One Night Only Film Due to Audience  is the central subject of the update. 'Will Gluck Cuts Nudity from One Night Only Film Due to Audience is the central subject of the update.
 
 Hollywood director Will Gluck's proactive cuts to explicit content in "One Night Only" reflect a seismic shift in audience comfort, particularly within the communal space of theaters, challenging long-held assumptions about on-screen material. This move spotlights a broader recalibration of cinematic standards, hinting at a global pivot for how intimacy is portrayed on the big screen.
 

@@ -1,18 +1,20 @@
 ---
 title: "UDA and ODM leaders meet in Naivasha for coalition talks"
 slug: "uda-odm-leaders-meet-in-naivasha-for-coalition-talks"
-description: "UDA and ODM party officials gather in Naivasha for a three-day retreat to discuss power-sharing, the NADCO report, and strategies for the upcoming election."
+description: "UDA and ODM leaders meet in Naivasha for coalition talks: UDA and ODM party officials gather in Naivasha for a three-day retreat to discuss power-sharing, the"
+excerpt: "The Naivasha Bargain: Whose Interests Are Actually Being Served? While the elite dine in the luxury of Naivasha, millions of Kenyans struggl"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/hJB268WJ/09d652584a05.webp"
 category: "News"
 tags: ["kenya politics", "uda", "odm", "general election", "naivasha retreat", "power sharing"]
+canonical: "https://zandani.co.ke/article/uda-odm-leaders-meet-in-naivasha-for-coalition-talks"
 date: "2026-08-09T05:50:09Z"
 dateModified: "2026-08-09T05:50:09Z"
+focusKeyword: "UDA and ODM leaders meet in Naivasha for coalition talks"
 schema: "NewsArticle"
 ---
 
-## The Naivasha Bargain: Whose Interests Are Actually Being Served?
+## The Naivasha Bargain: Whose Interests Are Actually Being Served? UDA and ODM leaders meet in Naivasha for coalition talks is the central subject of the update.
 
 While the elite dine in the luxury of Naivasha, millions of Kenyans struggle to keep pace with the dwindling income of M-Pesa agents, whose annual commissions have plummeted to a record low of 112,244 shillings. This disconnect defines the current political climate.
 
