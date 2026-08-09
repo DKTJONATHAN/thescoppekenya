@@ -1,21 +1,20 @@
 ---
-title: "Barbara Eden Recalls Lucille Ball's Praise for Avoiding Desi Arnaz
+title: "'Barbara Eden Recalls Lucille Ball's Praise for Avoiding Desi Arnaz"
 slug: "barbara-eden-lucille-ball-desi-arnaz-avoidance"
-description: "Barbara Eden, 94, details how Lucille Ball appreciated her avoiding Desi Arnaz on 'I Love Lucy' and aimed to sign her for a comedy class. Read more about her career."
+description: "'Barbara Eden Recalls Lucille Ball's Praise for Avoiding Desi Arn: Barbara Eden, 94, details how Lucille Ball appreciated her avoiding Desi Arnaz on 'I Love"
+excerpt: "Barbara Eden: Quiet Resolve Amid Hollywood's Early Challenges At 93 years young, legendary actress Barbara Eden offers a rare look back at h"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/9HB97x1m/eedeb11b4c2f.jpg"
-og_title: "Barbara Eden: Lucille Ball Appreciated My Desi Avoidance"
-og_description: "Barbara Eden recalls how Lucille Ball appreciated her efforts to avoid Desi Arnaz on set. Ball also wanted to sign her for a comedy class."
-focus_keyword: "Barbara Eden Lucille Ball"
 category: "Entertainment"
 tags: ["barbara eden", "lucille ball", "desi arnaz", "cinecon film festival", "classic tv", "hollywood", "entertainment"]
+canonical: "https://zandani.co.ke/article/barbara-eden-lucille-ball-desi-arnaz-avoidance"
 date: "2026-08-09T07:37:40Z"
 dateModified: "2026-08-09T07:37:40Z"
+focusKeyword: "'Barbara Eden Recalls Lucille Ball's Praise for Avoiding Desi Arn"
 schema: "NewsArticle"
 ---
 
-## Barbara Eden: Quiet Resolve Amid Hollywood's Early Challenges
+## Barbara Eden: Quiet Resolve Amid Hollywood's Early Challenges "Barbara Eden Recalls Lucille Ball's Praise for Avoiding Desi Arn is the central subject of the update.
 
 At 93 years young, legendary actress Barbara Eden offers a rare look back at her early career, revealing it was shaped by more than just talent. Her significant guest appearance in 1957 on "I Love Lucy" not only showed her acting gifts but also a discerning nature that impressed none other than Lucille Ball herself.
 
