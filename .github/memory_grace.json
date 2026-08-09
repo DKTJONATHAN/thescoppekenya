@@ -211,10 +211,10 @@
     "0a22a16804ea92c9979a4f8757ca6c32",
     "73019600302f14f47b4202ad92073083",
     "474fa3ce62f607009de0e173f2d1e8cc",
-    "144c3dcfd6698c156c4463553248e7b7"
+    "144c3dcfd6698c156c4463553248e7b7",
+    "c56ad5774a2b950ff38557ed077a40f3"
   ],
   "style_history": [
-    "SME Angle",
     "Power Accountability",
     "Backgrounder",
     "Markets Report",
@@ -243,10 +243,10 @@
     "SME Angle",
     "Markets Report",
     "Backgrounder",
-    "Explainer"
+    "Explainer",
+    "Power Accountability"
   ],
   "angle_history": [
-    "impact_on_citizens|Kenya|SME Angle",
     "impact_on_citizens|Banking|Markets Report",
     "money_follow|Fuel prices|Backgrounder",
     "winners_losers|AfCFTA|Power Accountability",
@@ -325,6 +325,7 @@
     "winners_losers|Safaricom Ethiopia|SME Angle",
     "story_progression|ground handling|Markets Report",
     "policy_gap|NTSA|Backgrounder",
-    "myth_vs_fact|Dangote Refinery|Explainer"
+    "myth_vs_fact|Dangote Refinery|Explainer",
+    "accountability|Nairobi Securities Exchange|Power Accountability"
   ]
 }
