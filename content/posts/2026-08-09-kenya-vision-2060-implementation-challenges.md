@@ -1,18 +1,20 @@
 ---
 title: "Assessing the implementation challenges for Vision 2060 in Kenya"
 slug: "kenya-vision-2060-implementation-challenges"
-description: "As Kenya prepares for the launch of Vision 2060, analysts urge a shift from policy documentation to consistent execution to avoid past implementation failures."
+description: "Assessing the implementation challenges for Vision 2060 in Kenya: As Kenya prepares for the launch of Vision 2060, analysts urge a shift from policy"
+excerpt: "A Blueprint Built on Borrowed Time This Sunday morning, I found myself staring at a dust covered copy of a report from two decades ago, its"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/0jxT6BHR/999cd23e4c57.webp"
 category: "Opinions"
 tags: ["kenya politics", "vision 2060", "economic policy", "government accountability", "public development", "kenyan economy"]
+canonical: "https://zandani.co.ke/article/kenya-vision-2060-implementation-challenges"
 date: "2026-08-09T09:55:30Z"
 dateModified: "2026-08-09T09:55:30Z"
+focusKeyword: "Assessing the implementation challenges for Vision 2060 in Kenya"
 schema: "NewsArticle"
 ---
 
-## A Blueprint Built on Borrowed Time
+## A Blueprint Built on Borrowed Time Assessing the implementation challenges for Vision 2060 in Kenya is the central subject of the update.
 
 This Sunday morning, I found myself staring at a dust-covered copy of a report from two decades ago, its edges curling in the Nairobi humidity. We are preparing for the grand unveiling of Vision 2060, yet the silence surrounding our past unfulfilled promises feels louder than any upcoming ribbon-cutting ceremony.
 
