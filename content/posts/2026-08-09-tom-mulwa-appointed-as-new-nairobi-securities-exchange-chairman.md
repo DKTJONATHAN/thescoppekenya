@@ -1,18 +1,20 @@
 ---
 title: "Tom Mulwa Appointed as New Nairobi Securities Exchange Chairman"
 slug: "tom-mulwa-appointed-as-new-nairobi-securities-exchange-chairman"
-description: "Tom Mulwa takes over as NSE chairman with a focus on growing retail investor participation to nine million and driving market expansion in Kenya."
+description: "Tom Mulwa Appointed as New Nairobi Securities Exchange Chairman: Tom Mulwa takes over as NSE chairman with a focus on growing retail investor participation to"
+excerpt: "Capital Markets Oversight or Corporate Pipeline? The Nairobi Securities Exchange has appointed Tom Mulwa as its new chairman, tasked with a"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/svFzPD9H/3c0e86edb919.png"
 category: "Business"
 tags: ["nairobi securities exchange", "nse", "kenyan business", "tom mulwa", "capital markets", "investing"]
+canonical: "https://zandani.co.ke/article/tom-mulwa-appointed-as-new-nairobi-securities-exchange-chairman"
 date: "2026-08-09T05:55:40Z"
 dateModified: "2026-08-09T05:55:40Z"
+focusKeyword: "Tom Mulwa Appointed as New Nairobi Securities Exchange Chairman"
 schema: "NewsArticle"
 ---
 
-## Capital Markets Oversight or Corporate Pipeline?
+## Capital Markets Oversight or Corporate Pipeline? Tom Mulwa Appointed as New Nairobi Securities Exchange Chairman is the central subject of the update.
 
 The Nairobi Securities Exchange has appointed Tom Mulwa as its new chairman, tasked with a lofty ambition to swell retail investor ranks to nine million. While the exchange celebrates this transition as a bold vision for domestic wealth, the math behind these numbers remains anchored to the same stagnation that has haunted the bourse for decades.
 
