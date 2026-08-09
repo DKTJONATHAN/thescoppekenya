@@ -344,10 +344,10 @@
     "be52b162ec909b657acbfbce3bf3635b",
     "9b049f9acd38fdb8b230731a6cee66c6",
     "111ab012ce02fc1a477c3e9592324efa",
-    "15e51e6889401fd45f1f046c8f4bdccb"
+    "15e51e6889401fd45f1f046c8f4bdccb",
+    "abc58c97f3032dcb53808a41244c5703"
   ],
   "style_history": [
-    "Trend Take",
     "Receipts Piece",
     "Profile Beat",
     "Reaction Round-up",
@@ -376,10 +376,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "policy_gap|Kenya|Hard News Lead",
     "money_follow|gender-based violence|Receipts Piece",
     "winners_losers|Mugithi|Profile Beat",
     "next_48_hours|AI-generated images|Reaction Round-up",
@@ -458,6 +458,7 @@
     "winners_losers|welfare|Reaction Round-up",
     "timeline_shift|Jojo Fashion House|Trend Take",
     "story_progression|forex trading|Profile Beat",
-    "money_follow|football|Hard News Lead"
+    "money_follow|football|Hard News Lead",
+    "money_follow|Laetitia Ky|Receipts Piece"
   ]
 }
