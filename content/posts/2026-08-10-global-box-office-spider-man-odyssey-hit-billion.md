@@ -1,21 +1,20 @@
 ---
-title: "Global Box Office: Spider-Man, The Odyssey Hit $1 Billion
+title: "'Global Box Office: Spider-Man, The Odyssey Hit $1 Billion"
 slug: "global-box-office-spider-man-odyssey-hit-billion"
-description: "Global Box Office surges as 'Spider-Man: Brand New Day' and 'The Odyssey' both cross $1 billion worldwide. The 2026 box office is significantly up. Discover the impact on cinema."
+description: "'Global Box Office: Spider-Man, The Odyssey Hit $1 Billion: Global Box Office surges as 'Spider-Man: Brand New Day' and 'The Odyssey' both cross $1 billion"
+excerpt: "Kenya's Cinematic Gold Rush: Tapping into the Global Box Office Billion Dollar Boom Global cinema attendance roars back to life, exemplified"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/d4XhbGQt/8dd71d44d809.jpg"
-og_title: "Spider-Man, The Odyssey Soar Past $1 Billion Globally"
-og_description: "Spider-Man: Brand New Day and The Odyssey both crossed $1 billion at the global box office. Cinema sees a major resurgence in 2026."
-focus_keyword: "Global Box Office"
 category: "Entertainment"
 tags: ["global box office", "film industry", "spider-man", "the odyssey", "blockbuster movies", "movie news"]
+canonical: "https://zandani.co.ke/article/global-box-office-spider-man-odyssey-hit-billion"
 date: "2026-08-09T23:03:23Z"
 dateModified: "2026-08-09T23:03:23Z"
+focusKeyword: "'Global Box Office: Spider-Man, The Odyssey Hit $1 Billion"
 schema: "NewsArticle"
 ---
 
-## Kenya's Cinematic Gold Rush: Tapping into the Global Box Office Billion Dollar Boom
+## Kenya's Cinematic Gold Rush: Tapping into the Global Box Office Billion Dollar Boom "Global Box Office: Spider-Man, The Odyssey Hit $1 Billion is the central subject of the update.
 
 Global cinema attendance roars back to life, exemplified by two Hollywood giants shattering the $1 billion threshold. This resurgence of the international film market spotlights a timely opportunity for Kenya's growing creative sector to attract significant investment and elevate its global standing.
 
