@@ -1,18 +1,20 @@
 ---
 title: "Why Kenya's Competency Based Curriculum Struggles With Reform"
 slug: "kenya-competency-based-curriculum-challenges-reform"
-description: "Kenya's education reform faces setbacks as overcrowded classrooms and systemic issues hinder the shift toward student-centered learning models."
+description: "Why Kenya's Competency Based Curriculum Struggles With Reform: Kenya's education reform faces setbacks as overcrowded classrooms and systemic issues hinder the"
+excerpt: "The Classroom Paradox: Why CBC is suffocating under the weight of 1980s infrastructure Kenya is attempting to squeeze a sophisticated, twent"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/qMcBQFBr/13df8ad895d6.webp"
 category: "Opinions"
 tags: ["education reform", "kenya news", "competency based curriculum", "teacher pupil ratio", "cbc kenya", "school system"]
+canonical: "https://zandani.co.ke/article/kenya-competency-based-curriculum-challenges-reform"
 date: "2026-08-10T10:36:20Z"
 dateModified: "2026-08-10T10:36:20Z"
+focusKeyword: "Why Kenya's Competency Based Curriculum Struggles With Reform"
 schema: "NewsArticle"
 ---
 
-## The Classroom Paradox: Why CBC is suffocating under the weight of 1980s infrastructure
+## The Classroom Paradox: Why CBC is suffocating under the weight of 1980s infrastructure Why Kenya's Competency Based Curriculum Struggles With Reform is the central subject of the update.
 
 Kenya is attempting to squeeze a sophisticated, twenty-first-century educational philosophy into a dilapidated, twentieth-century structural shell. It is a fundamental mismatch of ambition and reality.
 
