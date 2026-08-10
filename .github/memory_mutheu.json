@@ -354,10 +354,10 @@
     "1ebc431953b5ee0ccc5f34eb29097961",
     "0469be94944c089da667b525fb7e2d8f",
     "9b67802c3b2dedb1c801a89587ff5a27",
-    "064392a6fdfd39aaf083712f125c2049"
+    "064392a6fdfd39aaf083712f125c2049",
+    "8abdb25c0656c7191f493391d1726ed6"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
     "Explainer",
@@ -386,10 +386,10 @@
     "Profile Beat",
     "Reaction Round-up",
     "Hard News Lead",
-    "Trend Take"
+    "Trend Take",
+    "Explainer"
   ],
   "angle_history": [
-    "money_follow|Taylor Swift|Explainer",
     "timeline_shift|Venezuela earthquake|Profile Beat",
     "winners_losers|na|Reaction Round-up",
     "winners_losers|James Bond|Trend Take",
@@ -468,6 +468,7 @@
     "story_progression|na|Profile Beat",
     "myth_vs_fact|Sobriety|Reaction Round-up",
     "money_follow|Box Office|Hard News Lead",
-    "story_progression|Heavy metal|Trend Take"
+    "story_progression|Heavy metal|Trend Take",
+    "winners_losers|Pregnancy|Explainer"
   ]
 }
