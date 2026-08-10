@@ -1,21 +1,20 @@
 ---
-title: "Heavy Metal Band Performs Live in Ottawa Hospital for Patient
+title: "'Heavy Metal Band Performs Live in Ottawa Hospital for Patient"
 slug: "heavy-metal-concert-ottawa-hospital-patient-care"
-description: "A heavy metal band performed at an Ottawa hospital for a patient. Chaplain Lawson arranged this unique event, showing great care. Discover more."
+description: "'Heavy Metal Band Performs Live in Ottawa Hospital for Patient: A heavy metal band performed at an Ottawa hospital for a patient. Chaplain Lawson arranged this"
+excerpt: "Beyond the Bedside: How a Heavy Metal Concert in a Hospital Redefines Patient Care A Canadian hospital recently turned a sterile boardroom i"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/pjB7gCRw/eff2cca7297d.jpg"
-og_title: "Heavy Metal Concert Rocks Ottawa Hospital for Patient"
-og_description: "An Ottawa hospital patient, Tim Berry, got a private heavy metal concert. Chaplain Roshene Lawson arranged this unique show."
-focus_keyword: "heavy metal concert hospital"
 category: "Entertainment"
 tags: ["heavy metal", "concert", "hospital", "patient care", "roshene lawson", "tim berry", "ottawa music"]
+canonical: "https://zandani.co.ke/article/heavy-metal-concert-ottawa-hospital-patient-care"
 date: "2026-08-10T08:16:30Z"
 dateModified: "2026-08-10T08:16:30Z"
+focusKeyword: "'Heavy Metal Band Performs Live in Ottawa Hospital for Patient"
 schema: "NewsArticle"
 ---
 
-## Beyond the Bedside: How a Heavy Metal Concert in a Hospital Redefines Patient Care
+## Beyond the Bedside: How a Heavy Metal Concert in a Hospital Redefines Patient Care "Heavy Metal Band Performs Live in Ottawa Hospital for Patient is the central subject of the update.
 
 A Canadian hospital recently turned a sterile boardroom into an unexpected mosh pit. This wasn't merely a heartwarming gesture; it marked a significant evolution in global healthcare, signaling a move towards truly holistic patient well-being and a deeply personalized approach to care.
 
