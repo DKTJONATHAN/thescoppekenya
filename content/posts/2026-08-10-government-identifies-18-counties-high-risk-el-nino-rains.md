@@ -1,18 +1,20 @@
 ---
 title: "Government identifies 18 counties at high risk during El Nino rains"
 slug: "government-identifies-18-counties-high-risk-el-nino-rains"
-description: "Interior Ministry warns of flooding and disease risks as 18 counties face potential infrastructure damage and health threats during the coming El Nino."
+description: "Government identifies 18 counties at high risk during El Nino rai: Interior Ministry warns of flooding and disease risks as 18 counties face potential"
+excerpt: "The El Niño Mirage: Why 18 Counties Remain Trapped in a Cycle of Reactive Disaster Management The Interior Ministry has once again flagged 1"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/MxDTxjnb/13f98c216784.webp"
 category: "News"
 tags: ["el nino", "kenya news", "interior ministry", "rift valley fever", "disaster preparedness", "public health"]
+canonical: "https://zandani.co.ke/article/government-identifies-18-counties-high-risk-el-nino-rains"
 date: "2026-08-10T11:51:44Z"
 dateModified: "2026-08-10T11:51:44Z"
+focusKeyword: "Government identifies 18 counties at high risk during El Nino rai"
 schema: "NewsArticle"
 ---
 
-## The El Niño Mirage: Why 18 Counties Remain Trapped in a Cycle of Reactive Disaster Management
+## The El Niño Mirage: Why 18 Counties Remain Trapped in a Cycle of Reactive Disaster Management Government identifies 18 counties at high risk during El Nino rai is the central subject of the update.
 
 The Interior Ministry has once again flagged 18 counties as high-risk zones for the upcoming El Niño season, yet these same regions appeared on the exact same hazard list in 2025. Predictability in climate patterns is currently being met with a staggering institutional inability to break the cycle of disaster recurrence.
 
