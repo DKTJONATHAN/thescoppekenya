@@ -279,10 +279,10 @@
     "e664256aef8a8714f4d5d98f5fbe17b9",
     "ea3250e8848f0c2159d49849b53c0f81",
     "9f531f796de3ebccdf7685b66078d575",
-    "9058f280f31eca754202adedee00491b"
+    "9058f280f31eca754202adedee00491b",
+    "e3629a79212d5dfe4eb6abefe50d2014"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Receipts Piece",
     "Profile Beat",
     "Hard News Lead",
@@ -311,10 +311,10 @@
     "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "policy_gap|Kenya|Hard News Lead",
     "impact_on_citizens|EPRA|Reaction Round-up",
     "money_follow|Kenya|Receipts Piece",
     "next_48_hours|Kenya|Trend Take",
@@ -393,6 +393,7 @@
     "accountability|Kenyan politics|Receipts Piece",
     "policy_gap|Rwanda FDA|Hard News Lead",
     "story_progression|Shakahola massacre|Reaction Round-up",
-    "accountability|Homicide|Trend Take"
+    "accountability|Homicide|Trend Take",
+    "accountability|Kenya|Profile Beat"
   ]
 }
