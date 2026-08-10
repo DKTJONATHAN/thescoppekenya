@@ -345,10 +345,10 @@
     "9b049f9acd38fdb8b230731a6cee66c6",
     "111ab012ce02fc1a477c3e9592324efa",
     "15e51e6889401fd45f1f046c8f4bdccb",
-    "abc58c97f3032dcb53808a41244c5703"
+    "abc58c97f3032dcb53808a41244c5703",
+    "4a1b6bfd605e8eb75e6e08dfa5047844"
   ],
   "style_history": [
-    "Receipts Piece",
     "Profile Beat",
     "Reaction Round-up",
     "Hard News Lead",
@@ -377,10 +377,10 @@
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "money_follow|gender-based violence|Receipts Piece",
     "winners_losers|Mugithi|Profile Beat",
     "next_48_hours|AI-generated images|Reaction Round-up",
     "accountability|situationship|Hard News Lead",
@@ -459,6 +459,7 @@
     "timeline_shift|Jojo Fashion House|Trend Take",
     "story_progression|forex trading|Profile Beat",
     "money_follow|football|Hard News Lead",
-    "money_follow|Laetitia Ky|Receipts Piece"
+    "money_follow|Laetitia Ky|Receipts Piece",
+    "policy_gap|Kenya Airways|Reaction Round-up"
   ]
 }
