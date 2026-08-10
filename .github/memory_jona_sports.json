@@ -269,10 +269,10 @@
     "74ac82c9a8449d3712d648ffc06b2e91",
     "df0dcb592071784c182727f64dab2b54",
     "7b3bee50242c3de88c3d22065ee640d6",
-    "20bfcb09314723c15d662e0b8e237493"
+    "20bfcb09314723c15d662e0b8e237493",
+    "c7b37e63691ea23038d69cac7e488620"
   ],
   "style_history": [
-    "Match Report",
     "Player Profile Beat",
     "Cynical Pundit",
     "Stat Story",
@@ -301,10 +301,10 @@
     "Tactical Take",
     "Player Profile Beat",
     "Cynical Pundit",
-    "Match Report"
+    "Match Report",
+    "Tactical Take"
   ],
   "angle_history": [
-    "impact_on_citizens|League Cup|Stat Story",
     "accountability|Premier League|Tactical Take",
     "accountability|Premier League|Cynical Pundit",
     "winners_losers|fixture congestion|Player Profile Beat",
@@ -383,6 +383,7 @@
     "winners_losers|Fifa|Tactical Take",
     "winners_losers|Transfer|Player Profile Beat",
     "myth_vs_fact|Gianni Infantino|Cynical Pundit",
-    "timeline_shift|Premier League|Match Report"
+    "timeline_shift|Premier League|Match Report",
+    "policy_gap|FIFA|Tactical Take"
   ]
 }
