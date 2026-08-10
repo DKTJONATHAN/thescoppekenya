@@ -1,18 +1,20 @@
 ---
 title: "President Ruto and ODM Formalize Coalition for General Election"
 slug: "ruto-odm-formalize-coalition-for-general-election"
-description: "President William Ruto and ODM have launched a formal coalition to develop a joint manifesto and governance framework ahead of the next General Election."
+description: "President Ruto and ODM Formalize Coalition for General Election: President William Ruto and ODM have launched a formal coalition to develop a joint manifesto"
+excerpt: "The 2027 Price Tag: How the Ruto ODM Alliance Reshapes Your Household Budget President William Ruto and the Orange Democratic Movement have"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/8LPy9SKk/2fc3ee1a0288.webp"
 category: "News"
 tags: ["kenya kwanza", "odm", "william ruto", "raila odinga", "kenyan politics", "general election"]
+canonical: "https://zandani.co.ke/article/ruto-odm-formalize-coalition-for-general-election"
 date: "2026-08-10T17:54:42Z"
 dateModified: "2026-08-10T17:54:42Z"
+focusKeyword: "President Ruto and ODM Formalize Coalition for General Election"
 schema: "NewsArticle"
 ---
 
-## The 2027 Price Tag: How the Ruto-ODM Alliance Reshapes Your Household Budget
+## The 2027 Price Tag: How the Ruto-ODM Alliance Reshapes Your Household Budget President Ruto and ODM Formalize Coalition for General Election is the central subject of the update.
 
 President William Ruto and the Orange Democratic Movement have officially moved to integrate their political platforms, shifting from informal cooperation to a structured coalition aimed at the 2027 polls. This fusion of two previously opposing blocs marks a shift in how national resources will be prioritized over the next two years.
 
