@@ -1,19 +1,21 @@
 ---
 title: "President Ruto Faces Backlash Over Authoritarian Tone Regarding Government Projects"
 slug: "president-ruto-faces-backlash-over-authoritarian-tone-regarding-gove"
-description: "President Ruto faces growing criticism in Kenya as his assertive rhetoric on government projects sparks widespread accusations of undemocratic governance."
+description: "President Ruto Faces Backlash Over Authoritarian Tone Regarding G: President Ruto faces growing criticism in Kenya as his assertive rhetoric on government"
+excerpt: "President William Ruto is facing mounting public criticism across Kenya this month for his frequent use of absolute language when discussing"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: ""
+image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["president-william-ruto", "kenyan-politics", "government-projects", "ruto-backlash", "political-accountability"]
 canonical: "https://zandani.co.ke/article/president-ruto-faces-backlash-over-authoritarian-tone-regarding-gove"
 date: "2026-08-10T13:43:19Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-08-10T13:43:19Z"
+focusKeyword: "President Ruto Faces Backlash Over Authoritarian Tone Regarding G"
 schema: "NewsArticle"
 ---
-President William Ruto is facing mounting public criticism across Kenya this month for his frequent use of absolute language when discussing government projects. His insistence that specific policy objectives must succeed regardless of opposition has prompted widespread accusations of undemocratic governance and high-handedness.
+
+President William Ruto is facing mounting public criticism across Kenya this month for his frequent use of absolute language when discussing government projects. His insistence that specific policy objectives must succeed regardless of opposition has prompted widespread accusations of undemocratic governance and high-handedness. President Ruto Faces Backlash Over Authoritarian Tone Regarding G is the central subject of the update.
 
 ## The Rhetorical Shift in Executive Communication
 
