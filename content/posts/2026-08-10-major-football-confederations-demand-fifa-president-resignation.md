@@ -1,18 +1,20 @@
 ---
 title: "Major Football Confederations Demand FIFA President Resignation"
 slug: "major-football-confederations-demand-fifa-president-resignation"
-description: "UEFA, Concacaf and the Asian confederation are pushing for Gianni Infantino to step down following a failed proposal and governance row."
+description: "Major Football Confederations Demand FIFA President Resignation: UEFA, Concacaf and the Asian confederation are pushing for Gianni Infantino to step down"
+excerpt: "The Power Vacuum at the Zurich Headquarters The coordinated demand from UEFA, Concacaf, and the Asian Football Confederation for Gianni Infa"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/jZbGp1YD/b424e52e67a8.jpg"
 category: "Sports"
 tags: ["fifa", "gianni infantino", "football news", "uefa", "sports governance", "world football"]
+canonical: "https://zandani.co.ke/article/major-football-confederations-demand-fifa-president-resignation"
 date: "2026-08-10T11:29:20Z"
 dateModified: "2026-08-10T11:29:20Z"
+focusKeyword: "Major Football Confederations Demand FIFA President Resignation"
 schema: "NewsArticle"
 ---
 
-## The Power Vacuum at the Zurich Headquarters
+## The Power Vacuum at the Zurich Headquarters Major Football Confederations Demand FIFA President Resignation is the central subject of the update.
 
 The coordinated demand from UEFA, Concacaf, and the Asian Football Confederation for Gianni Infantino to step down exposes a terminal fracture in FIFA leadership. While these blocs threaten boycotts over the collapsed Fifa Forward Enterprise proposal, the real geopolitical story is the calculated silence from the Confederation of African Football.
 
