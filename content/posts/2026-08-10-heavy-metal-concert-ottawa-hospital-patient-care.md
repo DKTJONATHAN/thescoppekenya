@@ -14,7 +14,7 @@ focusKeyword: "'Heavy Metal Band Performs Live in Ottawa Hospital for Patient"
 schema: "NewsArticle"
 ---
 
-## Beyond the Bedside: How a Heavy Metal Concert in a Hospital Redefines Patient Care "Heavy Metal Band Performs Live in Ottawa Hospital for Patient is the central subject of the update.
+## Beyond the Bedside: How a Heavy Metal Concert in a Hospital Redefines Patient Care "Heavy Metal Band Performs Live in Ottawa Hospital for Patient is the central subject of the update. 'Heavy Metal Band Performs Live in Ottawa Hospital for Patient is the central subject of the update.
 
 A Canadian hospital recently turned a sterile boardroom into an unexpected mosh pit. This wasn't merely a heartwarming gesture; it marked a significant evolution in global healthcare, signaling a move towards truly holistic patient well-being and a deeply personalized approach to care.
 

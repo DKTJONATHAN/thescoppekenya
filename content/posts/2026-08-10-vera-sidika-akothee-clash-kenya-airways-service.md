@@ -1,18 +1,20 @@
 ---
 title: "Vera Sidika and Akothee Clash Over Kenya Airways Service Standards"
 slug: "vera-sidika-akothee-clash-kenya-airways-service"
-description: "Influencers Vera Sidika and Akothee engage in a public dispute over Kenya Airways service quality following a series of significant flight delays."
+description: "Vera Sidika and Akothee Clash Over Kenya Airways Service Standard: Influencers Vera Sidika and Akothee engage in a public dispute over Kenya Airways service"
+excerpt: "Kenya Airways Faces Public Scrutiny Amid Influencer Clash The debate surrounding national flight reliability reached a fever pitch after a 5"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/sp7yj3xJ/a8b44b536f72.webp"
 category: "Gossip"
 tags: ["kenya airways", "vera sidika", "akothee", "aviation news", "kenyan influencers", "customer service"]
+canonical: "https://zandani.co.ke/article/vera-sidika-akothee-clash-kenya-airways-service"
 date: "2026-08-10T09:49:00Z"
 dateModified: "2026-08-10T09:49:00Z"
+focusKeyword: "Vera Sidika and Akothee Clash Over Kenya Airways Service Standard"
 schema: "NewsArticle"
 ---
 
-## Kenya Airways Faces Public Scrutiny Amid Influencer Clash
+## Kenya Airways Faces Public Scrutiny Amid Influencer Clash Vera Sidika and Akothee Clash Over Kenya Airways Service Standard is the central subject of the update.
 
 The debate surrounding national flight reliability reached a fever pitch after a 55-hour delay triggered a high-stakes standoff between two of the country's most prominent media personalities, exposing deep-seated frustrations with the airline's ground operations and communication protocols.
 
