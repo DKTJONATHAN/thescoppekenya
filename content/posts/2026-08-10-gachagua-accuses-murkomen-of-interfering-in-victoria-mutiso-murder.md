@@ -1,18 +1,20 @@
 ---
 title: "Gachagua Accuses Murkomen of Interfering in Victoria Mutiso Murder"
 slug: "gachagua-accuses-murkomen-of-interfering-in-victoria-mutiso-murder"
-description: "Former Deputy President Rigathi Gachagua claims Interior CS Kipchumba Murkomen blocked justice in the murder investigation of Dr. Victoria Mutiso."
+description: "Gachagua Accuses Murkomen of Interfering in Victoria Mutiso Murde: Former Deputy President Rigathi Gachagua claims Interior CS Kipchumba Murkomen blocked"
+excerpt: "The Unfinished Investigation at Kikuyu Police Station The legacy of Dr. Victoria Mutiso merits a transparent pursuit of justice, yet the hal"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/YFt34fh6/27bd102aa1ee.jpg"
 category: "Gossip"
 tags: ["kenya politics", "rigathi gachagua", "kipchumba murkomen", "victoria mutiso", "dci", "crime news"]
+canonical: "https://zandani.co.ke/article/gachagua-accuses-murkomen-of-interfering-in-victoria-mutiso-murder"
 date: "2026-08-10T08:00:28Z"
 dateModified: "2026-08-10T08:00:28Z"
+focusKeyword: "Gachagua Accuses Murkomen of Interfering in Victoria Mutiso Murde"
 schema: "NewsArticle"
 ---
 
-## The Unfinished Investigation at Kikuyu Police Station
+## The Unfinished Investigation at Kikuyu Police Station Gachagua Accuses Murkomen of Interfering in Victoria Mutiso Murde is the central subject of the update.
 
 The legacy of Dr. Victoria Mutiso merits a transparent pursuit of justice, yet the halls of the Kikuyu Police Station seem clouded by external influence. While public discourse is currently preoccupied with the political friction between Rigathi Gachagua and Kipchumba Murkomen, a more pressing concern persists. The integrity of the investigative process has been compromised, leaving the pursuit of truth stalled and the prospect of accountability uncertain.
 
