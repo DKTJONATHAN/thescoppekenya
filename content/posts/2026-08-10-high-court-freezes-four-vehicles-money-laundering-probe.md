@@ -1,18 +1,20 @@
 ---
 title: "High Court Freezes Four Vehicles Over Money Laundering Probe"
 slug: "high-court-freezes-four-vehicles-money-laundering-probe"
-description: "The High Court has issued preservation orders for four vehicles linked to a money laundering probe as the Assets Recovery Agency takes over management."
+description: "High Court Freezes Four Vehicles Over Money Laundering Probe: The High Court has issued preservation orders for four vehicles linked to a money laundering"
+excerpt: "Tracking the Shifting Chrome of the Well Connected Kenyans are celebrating the High Court order targeting four luxury vehicles linked to mon"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/pvrpmjL4/cf08da6feec6.webp"
 category: "News"
 tags: ["assets recovery agency", "money laundering", "high court", "ntsa", "kenya news", "crime"]
+canonical: "https://zandani.co.ke/article/high-court-freezes-four-vehicles-money-laundering-probe"
 date: "2026-08-10T06:13:53Z"
 dateModified: "2026-08-10T06:13:53Z"
+focusKeyword: "High Court Freezes Four Vehicles Over Money Laundering Probe"
 schema: "NewsArticle"
 ---
 
-## Tracking the Shifting Chrome of the Well-Connected
+## Tracking the Shifting Chrome of the Well-Connected High Court Freezes Four Vehicles Over Money Laundering Probe is the central subject of the update.
 
 Kenyans are celebrating the High Court order targeting four luxury vehicles linked to money laundering probes, viewing the move as a rare victory against the unchecked rise of tenderpreneur culture and the flaunting of wealth without clear foundations.
 
