@@ -1,19 +1,21 @@
 ---
 title: "Prioritizing Mental Well-being by Removing Toxic People From Your Life"
 slug: "prioritizing-mental-well-being-by-removing-toxic-people-from-your-li"
-description: "As Kenyans prioritize mental well-being in 2026, many are cutting off toxic relationships to reduce emotional exhaustion and foster long-term peace."
+description: "Prioritizing Mental Well-being by Removing Toxic People From Your: As Kenyans prioritize mental well-being in 2026, many are cutting off toxic relationships to"
+excerpt: "Individuals across Kenya are increasingly reevaluating their personal relationships throughout 2026 as the national conversation shifts towa"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: ""
+image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["mental-health-kenya", "toxic-relationships", "emotional-wellbeing", "self-care-tips", "setting-boundaries"]
 canonical: "https://zandani.co.ke/article/prioritizing-mental-well-being-by-removing-toxic-people-from-your-li"
 date: "2026-08-11T13:41:55Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-08-11T13:41:55Z"
+focusKeyword: "Prioritizing Mental Well-being by Removing Toxic People From Your"
 schema: "NewsArticle"
 ---
-Individuals across Kenya are increasingly reevaluating their personal relationships throughout 2026 as the national conversation shifts toward emotional exhaustion. This movement emphasizes the necessity of cutting off draining influences to prioritize personal peace, mental health, and long-term self-respect over performative loyalty.
+
+Individuals across Kenya are increasingly reevaluating their personal relationships throughout 2026 as the national conversation shifts toward emotional exhaustion. This movement emphasizes the necessity of cutting off draining influences to prioritize personal peace, mental health, and long-term self-respect over performative loyalty. Prioritizing Mental Well-being by Removing Toxic People From Your is the central subject of the update.
 
 ## Prioritizing Mental Well-being by Removing Toxic People From Your Life
 
