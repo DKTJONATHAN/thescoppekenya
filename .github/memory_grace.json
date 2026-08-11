@@ -213,10 +213,10 @@
     "474fa3ce62f607009de0e173f2d1e8cc",
     "144c3dcfd6698c156c4463553248e7b7",
     "c56ad5774a2b950ff38557ed077a40f3",
-    "5b4d193804f5443ea06a873fa4d8145a"
+    "5b4d193804f5443ea06a873fa4d8145a",
+    "41dfb97b09377847d21b447990058779"
   ],
   "style_history": [
-    "Backgrounder",
     "Markets Report",
     "SME Angle",
     "Explainer",
@@ -245,10 +245,10 @@
     "Backgrounder",
     "Explainer",
     "Power Accountability",
-    "Markets Report"
+    "Markets Report",
+    "SME Angle"
   ],
   "angle_history": [
-    "money_follow|Fuel prices|Backgrounder",
     "winners_losers|AfCFTA|Power Accountability",
     "money_follow|Stablecoins|SME Angle",
     "myth_vs_fact|East African Cables|Markets Report",
@@ -327,6 +327,7 @@
     "policy_gap|NTSA|Backgrounder",
     "myth_vs_fact|Dangote Refinery|Explainer",
     "accountability|Nairobi Securities Exchange|Power Accountability",
-    "story_progression|Kenya|Markets Report"
+    "story_progression|Kenya|Markets Report",
+    "money_follow|hospitality|SME Angle"
   ]
 }
