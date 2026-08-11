@@ -1,21 +1,20 @@
 ---
-title: "Fast & Furious Director Hasn't Read Vin Diesel's Emotional Script
+title: "'Fast & Furious Director Hasn't Read Vin Diesel's Emotional Script"
 slug: "fast-forever-director-hasnt-read-vin-diesel-script"
-description: "Fast & Furious director Louis Leterrier hasn't read the 'Fast Forever' script that made Vin Diesel cry. Delays push the finale to 2028; understand the production challenges."
+description: "'Fast & Furious Director Hasn't Read Vin Diesel's Emotional Scrip: Fast & Furious director Louis Leterrier hasn't read the 'Fast Forever' script that made Vin"
+excerpt: "Fast Forever Director Faces Scrutiny Over Unread Script Louis Leterrier, director of the upcoming final 'Fast & Furious' installment, 'Fast"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/8DSFgRCj/74cccf5fdbbd.jpg"
-og_title: "Fast Forever Director Haven't Read Vin Diesel Script"
-og_description: "Louis Leterrier, director of 'Fast Forever', hasn't read the script that made Vin Diesel cry. Delays continue for the final Fast & Furious film."
-focus_keyword: "fast forever director"
 category: "Entertainment"
 tags: ["fast & furious", "fast forever", "vin diesel", "louis leterrier", "film production", "movie news", "entertainment"]
+canonical: "https://zandani.co.ke/article/fast-forever-director-hasnt-read-vin-diesel-script"
 date: "2026-08-11T15:32:23Z"
 dateModified: "2026-08-11T15:32:23Z"
+focusKeyword: "'Fast & Furious Director Hasn't Read Vin Diesel's Emotional Scrip"
 schema: "NewsArticle"
 ---
 
-## Fast Forever Director Faces Scrutiny Over Unread Script
+## Fast Forever Director Faces Scrutiny Over Unread Script "Fast & Furious Director Hasn't Read Vin Diesel's Emotional Scrip is the central subject of the update.
 
 Louis Leterrier, director of the upcoming final 'Fast & Furious' installment, 'Fast Forever', has revealed he has not reviewed the script that reportedly brought star Vin Diesel to tears. This admission raises significant questions regarding creative oversight for the conclusion of one of Hollywood's most enduring franchises.
 
