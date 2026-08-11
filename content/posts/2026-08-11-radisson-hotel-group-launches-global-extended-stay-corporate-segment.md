@@ -1,18 +1,20 @@
 ---
 title: "Radisson Hotel Group Launches Global Extended Stay Corporate Segment"
 slug: "radisson-hotel-group-launches-global-extended-stay-corporate-segment"
-description: "Radisson Hotel Group has introduced a new global segment to standardize booking policies and commercial terms for extended stay corporate travelers."
+description: "Radisson Hotel Group Launches Global Extended Stay Corporate Segm: Radisson Hotel Group has introduced a new global segment to standardize booking policies and"
+excerpt: "Simplifying International Lodging for Kenyan Firms Radisson Hotel Group has introduced a unified global framework for extended stay corporat"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/r2M0Dynx/d7b0152b53dc.png"
 category: "Business"
 tags: ["hospitality", "corporate travel", "business news", "radisson hotel group", "extended stay", "global business"]
+canonical: "https://zandani.co.ke/article/radisson-hotel-group-launches-global-extended-stay-corporate-segment"
 date: "2026-08-11T06:01:28Z"
 dateModified: "2026-08-11T06:01:28Z"
+focusKeyword: "Radisson Hotel Group Launches Global Extended Stay Corporate Segm"
 schema: "NewsArticle"
 ---
 
-## Simplifying International Lodging for Kenyan Firms
+## Simplifying International Lodging for Kenyan Firms Radisson Hotel Group Launches Global Extended Stay Corporate Segm is the central subject of the update.
 
 Radisson Hotel Group has introduced a unified global framework for extended-stay corporate bookings, a development designed to eliminate the fragmented negotiation processes that often burden Kenyan businesses. By applying standardized contracts and commission rates across its international portfolio, the hotel group aims to reduce the administrative friction that traditionally inflates travel costs for small and medium-sized enterprises.
 
