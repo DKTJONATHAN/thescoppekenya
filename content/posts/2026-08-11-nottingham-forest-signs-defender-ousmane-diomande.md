@@ -1,18 +1,20 @@
 ---
 title: "Nottingham Forest signs defender Ousmane Diomande from Sporting CP"
 slug: "nottingham-forest-signs-defender-ousmane-diomande"
-description: "Nottingham Forest has officially acquired 22-year-old defender Ousmane Diomande from Sporting CP, strengthening their squad for the Premier League."
+description: "Nottingham Forest signs defender Ousmane Diomande from Sporting C: Nottingham Forest has officially acquired 22-year-old defender Ousmane Diomande from"
+excerpt: "87 percent: The passing accuracy rate defining Ousmane Diomande Nottingham Forest completed the signing of 22 year old Ivorian defender Ousm"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/v6gGyMG0/b26a18f28842.jpg"
 category: "Sports"
 tags: ["nottingham forest", "premier league", "football transfers", "sporting cp", "ousmane diomande", "international football"]
+canonical: "https://zandani.co.ke/article/nottingham-forest-signs-defender-ousmane-diomande"
 date: "2026-08-11T11:09:16Z"
 dateModified: "2026-08-11T11:09:16Z"
+focusKeyword: "Nottingham Forest signs defender Ousmane Diomande from Sporting C"
 schema: "NewsArticle"
 ---
 
-## 87 percent: The passing accuracy rate defining Ousmane Diomande
+## 87 percent: The passing accuracy rate defining Ousmane Diomande Nottingham Forest signs defender Ousmane Diomande from Sporting C is the central subject of the update.
 
 Nottingham Forest completed the signing of 22-year-old Ivorian defender Ousmane Diomande today. This acquisition represents a strategic pivot for the club, prioritizing proven technical proficiency developed within the Sporting CP system.
 
