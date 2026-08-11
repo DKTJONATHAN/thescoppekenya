@@ -1,18 +1,20 @@
 ---
 title: "Junet Mohammed blames Rigathi Gachagua for failed 2023 mediation"
 slug: "junet-mohammed-blames-gachagua-for-failed-mediation-talks"
-description: "Minority leader Junet Mohammed claims Rigathi Gachagua scuttled peace talks between President Ruto and Raila Odinga by threatening to resign in 2023."
+description: "Junet Mohammed blames Rigathi Gachagua for failed 2023 mediation: Minority leader Junet Mohammed claims Rigathi Gachagua scuttled peace talks between President"
+excerpt: "The Nanyuki Ghost: How the 2023 Mediation Failure Redefined the Ruto Gachagua Rift The fragility of the Kenya Kwanza administration was laid"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/n8MtngPY/2c54409adc3a.webp"
 category: "News"
 tags: ["kenyan politics", "rigathi gachagua", "william ruto", "raila odinga", "mediation", "za ndani"]
+canonical: "https://zandani.co.ke/article/junet-mohammed-blames-gachagua-for-failed-mediation-talks"
 date: "2026-08-11T18:00:49Z"
 dateModified: "2026-08-11T18:00:49Z"
+focusKeyword: "Junet Mohammed blames Rigathi Gachagua for failed 2023 mediation"
 schema: "NewsArticle"
 ---
 
-## The Nanyuki Ghost: How the 2023 Mediation Failure Redefined the Ruto-Gachagua Rift
+## The Nanyuki Ghost: How the 2023 Mediation Failure Redefined the Ruto-Gachagua Rift Junet Mohammed blames Rigathi Gachagua for failed 2023 mediation is the central subject of the update.
 
 The fragility of the Kenya Kwanza administration was laid bare today as Minority Leader Junet Mohammed pointed to a long-buried rupture in executive cohesion. He contends that the eventual impeachment of Rigathi Gachagua was not a sudden explosion, but a conclusion to a trajectory set in motion during a botched peace process two years ago.
 

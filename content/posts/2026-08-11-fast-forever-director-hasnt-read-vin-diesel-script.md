@@ -14,7 +14,7 @@ focusKeyword: "'Fast & Furious Director Hasn't Read Vin Diesel's Emotional Scrip
 schema: "NewsArticle"
 ---
 
-## Fast Forever Director Faces Scrutiny Over Unread Script "Fast & Furious Director Hasn't Read Vin Diesel's Emotional Scrip is the central subject of the update.
+## Fast Forever Director Faces Scrutiny Over Unread Script "Fast & Furious Director Hasn't Read Vin Diesel's Emotional Scrip is the central subject of the update. 'Fast & Furious Director Hasn't Read Vin Diesel's Emotional Scrip is the central subject of the update.
 
 Louis Leterrier, director of the upcoming final 'Fast & Furious' installment, 'Fast Forever', has revealed he has not reviewed the script that reportedly brought star Vin Diesel to tears. This admission raises significant questions regarding creative oversight for the conclusion of one of Hollywood's most enduring franchises.
 
