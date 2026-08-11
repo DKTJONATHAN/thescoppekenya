@@ -1,18 +1,20 @@
 ---
 title: "ODPP Establishes Special Unit to Handle Electoral Offences"
 slug: "odpp-establishes-special-unit-to-handle-electoral-offences"
-description: "The Office of the Director of Public Prosecutions has set up a specialized division to prosecute electoral crimes ahead of the next general election."
+description: "ODPP Establishes Special Unit to Handle Electoral Offences: The Office of the Director of Public Prosecutions has set up a specialized division to prosecute"
+excerpt: "Policing the Ballot: DPP Ingonga Creates Specialized Unit for 2027 Director of Public Prosecutions Renson Ingonga has launched a dedicated s"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/fYYn3QXB/5b6624196338.webp"
 category: "News"
 tags: ["odpp", "kenya elections", "renson ingonga", "iebc", "kenyan politics", "judicial news"]
+canonical: "https://zandani.co.ke/article/odpp-establishes-special-unit-to-handle-electoral-offences"
 date: "2026-08-11T05:55:41Z"
 dateModified: "2026-08-11T05:55:41Z"
+focusKeyword: "ODPP Establishes Special Unit to Handle Electoral Offences"
 schema: "NewsArticle"
 ---
 
-## Policing the Ballot: DPP Ingonga Creates Specialized Unit for 2027
+## Policing the Ballot: DPP Ingonga Creates Specialized Unit for 2027 ODPP Establishes Special Unit to Handle Electoral Offences is the central subject of the update.
 
 Director of Public Prosecutions Renson Ingonga has launched a dedicated specialized unit to fast-track the investigation and prosecution of electoral offenses ahead of the August 2027 General Election.
 
