@@ -356,10 +356,10 @@
     "9b67802c3b2dedb1c801a89587ff5a27",
     "064392a6fdfd39aaf083712f125c2049",
     "8abdb25c0656c7191f493391d1726ed6",
-    "195d34c4757c7520bcf867b07d7cf2d6"
+    "195d34c4757c7520bcf867b07d7cf2d6",
+    "42af25d1baf1f86335ecfc07c124edb8"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Reaction Round-up",
     "Trend Take",
@@ -388,10 +388,10 @@
     "Hard News Lead",
     "Trend Take",
     "Explainer",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "winners_losers|na|Reaction Round-up",
     "winners_losers|James Bond|Trend Take",
     "story_progression|na|Explainer",
     "timeline_shift|na|Profile Beat",
@@ -470,6 +470,7 @@
     "money_follow|Box Office|Hard News Lead",
     "story_progression|Heavy metal|Trend Take",
     "winners_losers|Pregnancy|Explainer",
-    "timeline_shift|workplace comedy|Profile Beat"
+    "timeline_shift|workplace comedy|Profile Beat",
+    "accountability|Fast & Furious|Hard News Lead"
   ]
 }
