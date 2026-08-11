@@ -172,10 +172,10 @@
     "d8de6c91b8e0cebac6a15c9a3fbac371",
     "3add4c8b89d106e969093958c724340f",
     "03e6aa30e88e9c72a7f0e2d1760cf7f8",
-    "e1bba3fee99eb9b9b827c6a3b0b31d60"
+    "e1bba3fee99eb9b9b827c6a3b0b31d60",
+    "cdc686c3bb68a1de07d93773d1154d44"
   ],
   "style_history": [
-    "Explainer",
     "Africa Angle",
     "Backgrounder",
     "Hard News Lead",
@@ -204,10 +204,10 @@
     "Hard News Lead",
     "Backgrounder",
     "Africa Angle",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "timeline_shift|data center|Hard News Lead",
     "money_follow|Fuliza|Critical Take",
     "policy_gap|Google Ads|Africa Angle",
     "money_follow|KCB Bank|Backgrounder",
@@ -286,6 +286,7 @@
     "policy_gap|IEBC|Hard News Lead",
     "policy_gap|Google|Backgrounder",
     "money_follow|Airtel Money|Africa Angle",
-    "story_progression|Telegram|Explainer"
+    "story_progression|Telegram|Explainer",
+    "policy_gap|cybersecurity|Hard News Lead"
   ]
 }
