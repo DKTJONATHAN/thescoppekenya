@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Announces Scheduled Outages in Kilifi and Mombasa"
 slug: "kenya-power-scheduled-outages-kilifi-mombasa-august-11"
-description: "Kenya Power has scheduled electricity maintenance on August 11, leading to an eight-hour power outage in parts of Kilifi and Mombasa counties."
+description: "Kenya Power Announces Scheduled Outages in Kilifi and Mombasa: Kenya Power has scheduled electricity maintenance on August 11, leading to an eight-hour power"
+excerpt: "The Coast Productivity Paradox: Grid Stability Versus Economic Stagnation Kenya Power has confirmed that critical infrastructure maintenance"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/fYy5BBTf/e55d90e52e9c.jpg"
 category: "Gossip"
 tags: ["kenya power", "power outage", "kilifi", "mombasa", "electricity", "kenya news"]
+canonical: "https://zandani.co.ke/article/kenya-power-scheduled-outages-kilifi-mombasa-august-11"
 date: "2026-08-11T07:24:17Z"
 dateModified: "2026-08-11T07:24:17Z"
+focusKeyword: "Kenya Power Announces Scheduled Outages in Kilifi and Mombasa"
 schema: "NewsArticle"
 ---
 
-## The Coast Productivity Paradox: Grid Stability Versus Economic Stagnation
+## The Coast Productivity Paradox: Grid Stability Versus Economic Stagnation Kenya Power Announces Scheduled Outages in Kilifi and Mombasa is the central subject of the update.
 
 Kenya Power has confirmed that critical infrastructure maintenance will trigger an eight-hour blackout across key hubs in Malindi, Bombolulu, and Maweni this Tuesday, August 11, 2026. This service interruption, scheduled strictly between 9:00 a.m. and 5:00 p.m., marks another instance where grid integrity efforts directly collide with the operational survival of the coastal region small-business ecosystem.
 
