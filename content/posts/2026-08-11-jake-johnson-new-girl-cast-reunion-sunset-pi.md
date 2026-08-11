@@ -1,21 +1,20 @@
 ---
-title: "Jake Johnson Hopes to Reunite New Girl Cast on Sunset P.I.
+title: "'Jake Johnson Hopes to Reunite New Girl Cast on Sunset P.I."
 slug: "jake-johnson-new-girl-cast-reunion-sunset-pi"
-description: "Jake Johnson hopes to reunite with his former New Girl castmates on his new NBC series, Sunset P.I., premiering in February. Learn more about the potential reunion."
+description: "'Jake Johnson Hopes to Reunite New Girl Cast on Sunset P.I.: Jake Johnson hopes to reunite with his former New Girl castmates on his new NBC series, Sunset"
+excerpt: "Jake Johnson Navigates 'New Girl' Legacy for 'Sunset P.I.' Launch Actor Jake Johnson stands at a pivotal career moment, launching his new NB"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/r2N2z5NW/93a8cf23926c.jpg"
-og_title: "Jake Johnson Wants New Girl Cast on Sunset P.I."
-og_description: "Jake Johnson is hoping to bring his former New Girl costars onto his new NBC show, Sunset P.I. Could a reunion be brewing?"
-focus_keyword: "Jake Johnson New Girl"
 category: "Entertainment"
 tags: ["jake johnson", "new girl", "sunset p.i.", "tv news", "entertainment", "reunion"]
+canonical: "https://zandani.co.ke/article/jake-johnson-new-girl-cast-reunion-sunset-pi"
 date: "2026-08-11T07:49:26Z"
 dateModified: "2026-08-11T07:49:26Z"
+focusKeyword: "'Jake Johnson Hopes to Reunite New Girl Cast on Sunset P.I."
 schema: "NewsArticle"
 ---
 
-## Jake Johnson Navigates 'New Girl' Legacy for 'Sunset P.I.' Launch
+## Jake Johnson Navigates 'New Girl' Legacy for 'Sunset P.I.' Launch "Jake Johnson Hopes to Reunite New Girl Cast on Sunset P.I. is the central subject of the update.
 
 Actor Jake Johnson stands at a pivotal career moment, launching his new NBC series, "Sunset P.I." While charting new territory as a private investigator, Johnson openly hopes to infuse his latest project with familiar faces from his beloved past - namely, the cast of "New Girl."
 
