@@ -412,10 +412,10 @@
     "9256536dcf911231527df6be6137ab6c",
     "bfb038158760fb56919008cac69abb13",
     "702456d438109a631b2bb6d9bef1b5c5",
-    "2afe587468ccbe8b2b8cc64ea5cc2531"
+    "2afe587468ccbe8b2b8cc64ea5cc2531",
+    "f8a942a415f888e36a8b38f5a8a85c88"
   ],
   "style_history": [
-    "Power Accountability",
     "Hard News Lead",
     "Explainer",
     "Reaction & Voices",
@@ -444,10 +444,10 @@
     "Reaction & Voices",
     "Power Accountability",
     "Explainer",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "timeline_shift|Wantam Movement|Reaction & Voices",
     "story_progression|KNEC|Hard News Lead",
     "winners_losers|Ebola|Explainer",
     "policy_gap|Huduma Kenya|Power Accountability",
@@ -526,6 +526,7 @@
     "money_follow|Assets Recovery Agency|Reaction & Voices",
     "policy_gap|El Ni\u00f1o|Power Accountability",
     "money_follow|Kenya Kwanza|Explainer",
-    "accountability|ODPP|Hard News Lead"
+    "accountability|ODPP|Hard News Lead",
+    "winners_losers|National Treasury|Reaction & Voices"
   ]
 }
