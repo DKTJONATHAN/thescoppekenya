@@ -1,18 +1,20 @@
 ---
 title: "National Treasury Projects Economic Growth Recovery for Kenya"
 slug: "national-treasury-projects-kenya-economic-growth-recovery"
-description: "Kenya's National Treasury expects economic growth to hit 5.1 percent by 2027, despite ongoing concerns over global instability and rising energy costs."
+description: "National Treasury Projects Economic Growth Recovery for Kenya: Kenya's National Treasury expects economic growth to hit 5.1 percent by 2027, despite ongoing"
+excerpt: "The Growth Mirage: Why Kenyan Business Owners Are Doubting Treasury’s 5.1% Forecast The National Treasury has officially lowered the 2026 gr"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/cSGJ0qjg/50deb1f59901.webp"
 category: "News"
 tags: ["kenya economy", "national treasury", "brop", "economic growth", "inflation", "business news"]
+canonical: "https://zandani.co.ke/article/national-treasury-projects-kenya-economic-growth-recovery"
 date: "2026-08-11T11:48:36Z"
 dateModified: "2026-08-11T11:48:36Z"
+focusKeyword: "National Treasury Projects Economic Growth Recovery for Kenya"
 schema: "NewsArticle"
 ---
 
-## The Growth Mirage: Why Kenyan Business Owners Are Doubting Treasury’s 5.1% Forecast
+## The Growth Mirage: Why Kenyan Business Owners Are Doubting Treasury’s 5.1% Forecast National Treasury Projects Economic Growth Recovery for Kenya is the central subject of the update.
 
 The National Treasury has officially lowered the 2026 growth expectation to 5.0 percent, while dangling a 5.1 percent target for 2027 in its latest Budget Review and Outlook Paper released this Tuesday. For the people running businesses, these numbers feel like a different reality entirely.
 

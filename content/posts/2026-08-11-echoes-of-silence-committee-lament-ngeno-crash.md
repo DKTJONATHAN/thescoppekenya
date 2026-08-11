@@ -1,20 +1,21 @@
 ---
 title: "Echoes of Silence: A Committee's Lament After Ng'eno's Crash"
 slug: "echoes-of-silence-committee-lament-ngeno-crash"
-description: "A chilling symmetry unfolds when high-flying servants fall. The National Assembly burial support team update begins, but the questions about the journey remain."
+description: "Echoes of Silence: A Committee's Lament After Ng'eno's Crash: A chilling symmetry unfolds when high-flying servants fall. The National Assembly burial support"
+excerpt: "The air over Ndola, Northern Rhodesia, on that crisp September morning in 1961, hung heavy with the scent of charred earth and shattered met"
 author: "The Chronicler"
 author_url: "https://zandani.co.ke/author/the-chronicler"
 image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200"
 category: "Chronicles"
-tags: ["chronicles", "dag-hammarskj\u00f6ld", "johana-ng'eno", "nandi-helicopter-crash", "un-secretary-general", "cold-war", "kenyan-parliament", "tragic-irony", "johana-ng'eno-crash-investigation-findings", "national-assembly-burial-support-team-update", "emurua-dikirr-by-election-results-2026"]
+tags: ["chronicles", "dag-hammarskj\u00f6ld", "johana-ng'eno", "nandi-helicopter-crash", "un-secretary-general", "cold-war", "kenyan-parliament", "tragic-irony"]
 canonical: "https://zandani.co.ke/article/echoes-of-silence-committee-lament-ngeno-crash"
 date: "2026-08-11T11:53:34Z"
-authorUrl: "https://zandani.co.ke/author/the-chronicler"
 dateModified: "2026-08-11T11:53:34Z"
+focusKeyword: "Echoes of Silence: A Committee's Lament After Ng'eno's Crash"
 schema: "NewsArticle"
 ---
 
-The air over Ndola, Northern Rhodesia, on that crisp September morning in 1961, hung heavy with the scent of charred earth and shattered metal. Whispers, like the tendrils of smoke still rising from the wreckage, snaked through the forest. It was here, amidst the broken trees and scattered remnants of a Douglas DC-6, that the world found its hopes for peace, embodied by Dag Hammarskjöld, reduced to ash. He, the second Secretary-General of the United Nations, had been on a perilous mission to broker a ceasefire in the tumultuous Congo, to reason with men like Moïse Tshombe who clung to their Katangan breakaway. A mission of such gravity, yet its end was so starkly undignified - a fiery descent in the dead of night.
+The air over Ndola, Northern Rhodesia, on that crisp September morning in 1961, hung heavy with the scent of charred earth and shattered metal. Whispers, like the tendrils of smoke still rising from the wreckage, snaked through the forest. It was here, amidst the broken trees and scattered remnants of a Douglas DC-6, that the world found its hopes for peace, embodied by Dag Hammarskjöld, reduced to ash. He, the second Secretary-General of the United Nations, had been on a perilous mission to broker a ceasefire in the tumultuous Congo, to reason with men like Moïse Tshombe who clung to their Katangan breakaway. A mission of such gravity, yet its end was so starkly undignified - a fiery descent in the dead of night. Echoes of Silence: A Committee's Lament After Ng'eno's Crash is the central subject of the update.
 
 ## The Shadow Over Katanga's Sky
 
