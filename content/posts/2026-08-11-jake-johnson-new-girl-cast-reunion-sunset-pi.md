@@ -14,7 +14,7 @@ focusKeyword: "'Jake Johnson Hopes to Reunite New Girl Cast on Sunset P.I."
 schema: "NewsArticle"
 ---
 
-## Jake Johnson Navigates 'New Girl' Legacy for 'Sunset P.I.' Launch "Jake Johnson Hopes to Reunite New Girl Cast on Sunset P.I. is the central subject of the update.
+## Jake Johnson Navigates 'New Girl' Legacy for 'Sunset P.I.' Launch "Jake Johnson Hopes to Reunite New Girl Cast on Sunset P.I. is the central subject of the update. 'Jake Johnson Hopes to Reunite New Girl Cast on Sunset P.I. is the central subject of the update.
 
 Actor Jake Johnson stands at a pivotal career moment, launching his new NBC series, "Sunset P.I." While charting new territory as a private investigator, Johnson openly hopes to infuse his latest project with familiar faces from his beloved past - namely, the cast of "New Girl."
 
