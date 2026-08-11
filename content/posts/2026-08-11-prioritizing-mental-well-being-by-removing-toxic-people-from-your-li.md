@@ -1,0 +1,27 @@
+---
+title: "Prioritizing Mental Well-being by Removing Toxic People From Your Life"
+slug: "prioritizing-mental-well-being-by-removing-toxic-people-from-your-li"
+description: "As Kenyans prioritize mental well-being in 2026, many are cutting off toxic relationships to reduce emotional exhaustion and foster long-term peace."
+author: "Zed Mogaka"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
+image: ""
+category: "Entertainment"
+tags: ["mental-health-kenya", "toxic-relationships", "emotional-wellbeing", "self-care-tips", "setting-boundaries"]
+canonical: "https://zandani.co.ke/article/prioritizing-mental-well-being-by-removing-toxic-people-from-your-li"
+date: "2026-08-11T13:41:55Z"
+authorUrl: "https://zandani.co.ke/author/zed-mogaka"
+dateModified: "2026-08-11T13:41:55Z"
+schema: "NewsArticle"
+---
+Individuals across Kenya are increasingly reevaluating their personal relationships throughout 2026 as the national conversation shifts toward emotional exhaustion. This movement emphasizes the necessity of cutting off draining influences to prioritize personal peace, mental health, and long-term self-respect over performative loyalty.
+
+## Prioritizing Mental Well-being by Removing Toxic People From Your Life
+
+### The High Cost of Keeping Up Appearances
+Many people are realizing that maintaining emotionally draining relationships is a luxury they can no longer afford. The prevailing sentiment is that personal wellness often takes a backseat to social obligations, which inevitably leads to chronic burnout. Protecting one's private space is no longer viewed as an act of arrogance. Instead, it is increasingly recognized as an essential survival strategy for maintaining psychological health in a high-pressure environment.
+
+### Recognizing the Drains in Your Circle
+The warning signs of a toxic connection are often masked by years of shared history or mutual acquaintances. Whether the relationship involves a friend who thrives on constant negativity or a partner who demands endless emotional labor, the physiological impact remains the same. Staying in these negative cycles is akin to living in a state of constant instability. If a consistent interaction leaves an individual feeling diminished rather than empowered, the current consensus is clear: it is time to disengage.
+
+### The Power of Saying Goodbye
+Choosing to walk away from long-term connections is rarely easy, especially in a culture that often champions staying through every difficulty. However, a growing movement of people is prioritizing their own needs first. This transition is not about harboring ill will toward others, but rather about establishing firm, healthy boundaries. Ultimately, the goal is to curate a personal environment where energy is invested in individual growth and genuine development rather than constant damage control. If you are the only person watering a dead plant, you are simply wasting your own resources.
