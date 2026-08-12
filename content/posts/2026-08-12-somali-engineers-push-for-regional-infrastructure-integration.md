@@ -1,18 +1,20 @@
 ---
 title: "Somali Engineers Push for Regional Infrastructure Integration"
 slug: "somali-engineers-push-for-regional-infrastructure-integration"
-description: "Somali engineers are advocating for cross-border infrastructure projects to boost economic connectivity and resilience in the Horn of Africa."
+description: "Somali Engineers Push for Regional Infrastructure Integration: Somali engineers are advocating for cross-border infrastructure projects to boost economic"
+excerpt: "Infrastructure as a Catalyst for Regional Prosperity The Somali Engineers Association has moved beyond the immediate requirements of nationa"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/JFphc7qd/ab66efe54c17.webp"
 category: "Opinions"
 tags: ["somalia", "infrastructure", "horn of africa", "regional integration", "engineering", "east africa"]
+canonical: "https://zandani.co.ke/article/somali-engineers-push-for-regional-infrastructure-integration"
 date: "2026-08-12T10:19:53Z"
 dateModified: "2026-08-12T10:19:53Z"
+focusKeyword: "Somali Engineers Push for Regional Infrastructure Integration"
 schema: "NewsArticle"
 ---
 
-## Infrastructure as a Catalyst for Regional Prosperity
+## Infrastructure as a Catalyst for Regional Prosperity Somali Engineers Push for Regional Infrastructure Integration is the central subject of the update.
 
 The Somali Engineers Association has moved beyond the immediate requirements of national reconstruction to formally propose a unified infrastructure framework for the Horn of Africa. By prioritizing connectivity across borders, they intend to transform the region into a cohesive logistics corridor capable of attracting substantial private investment.
 
