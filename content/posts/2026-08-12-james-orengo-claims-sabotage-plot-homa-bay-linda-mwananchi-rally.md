@@ -1,18 +1,20 @@
 ---
 title: "James Orengo Claims Plot to Sabotage Homa Bay Linda Mwananchi Rally"
 slug: "james-orengo-claims-sabotage-plot-homa-bay-linda-mwananchi-rally"
-description: "Siaya Governor James Orengo has alleged a coordinated plan involving weapon distribution and market intimidation to disrupt the upcoming Homa Bay rally."
+description: "James Orengo Claims Plot to Sabotage Homa Bay Linda Mwananchi Ral: Siaya Governor James Orengo has alleged a coordinated plan involving weapon distribution and"
+excerpt: "The High Cost of Market Stagnation in Homa Bay Political tension in Homa Bay is forcing small scale traders to choose between their daily li"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/bRmt0MG2/0cc56f86a971.jpg"
 category: "News"
 tags: ["kenya politics", "linda mwananchi", "homa bay", "james orengo", "gladys wanga", "za ndani"]
+canonical: "https://zandani.co.ke/article/james-orengo-claims-sabotage-plot-homa-bay-linda-mwananchi-rally"
 date: "2026-08-12T18:00:44Z"
 dateModified: "2026-08-12T18:00:44Z"
+focusKeyword: "James Orengo Claims Plot to Sabotage Homa Bay Linda Mwananchi Ral"
 schema: "NewsArticle"
 ---
 
-## The High Cost of Market Stagnation in Homa Bay
+## The High Cost of Market Stagnation in Homa Bay James Orengo Claims Plot to Sabotage Homa Bay Linda Mwananchi Ral is the central subject of the update.
 
 Political tension in Homa Bay is forcing small-scale traders to choose between their daily livelihoods and safety as the August 16 Linda Mwananchi rally approaches. When rhetoric creates a climate of fear, the local economy suffers a silent, painful contraction.
 
