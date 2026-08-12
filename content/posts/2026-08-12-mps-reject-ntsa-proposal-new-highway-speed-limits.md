@@ -1,18 +1,20 @@
 ---
 title: "MPs Reject NTSA Proposal for New Speed Limits on Major Highways"
 slug: "mps-reject-ntsa-proposal-new-highway-speed-limits"
-description: "Members of the National Assembly have blocked the NTSA proposal to lower speed limits on major roads fearing increased congestion and traffic delays."
+description: "MPs Reject NTSA Proposal for New Speed Limits on Major Highways: Members of the National Assembly have blocked the NTSA proposal to lower speed limits on major"
+excerpt: "Prioritizing Speed Over Survival The National Assembly Transport Committee has effectively neutered the National Transport and Safety Author"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/J1BCQvb/765479934578.webp"
 category: "News"
 tags: ["ntsa", "kenyan parliament", "road safety", "traffic enforcement", "kenya roads"]
+canonical: "https://zandani.co.ke/article/mps-reject-ntsa-proposal-new-highway-speed-limits"
 date: "2026-08-12T06:18:44Z"
 dateModified: "2026-08-12T06:18:44Z"
+focusKeyword: "MPs Reject NTSA Proposal for New Speed Limits on Major Highways"
 schema: "NewsArticle"
 ---
 
-## Prioritizing Speed Over Survival
+## Prioritizing Speed Over Survival MPs Reject NTSA Proposal for New Speed Limits on Major Highways is the central subject of the update.
 
 The National Assembly Transport Committee has effectively neutered the National Transport and Safety Authority, blocking proposed speed limit reductions under the guise of traffic efficiency. While motorists cheer the absence of tighter restrictions, the data-driven reality of our road fatalities is being buried under political posturing.
 

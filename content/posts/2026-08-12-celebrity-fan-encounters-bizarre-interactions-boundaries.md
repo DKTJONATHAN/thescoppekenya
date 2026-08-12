@@ -14,7 +14,7 @@ focusKeyword: "'Celebrity Fan Encounters: Bizarre Interactions and Blurred Bound
 schema: "NewsArticle"
 ---
 
-## When Fandom Goes Wild: Unpacking Bizarre Celebrity Fan Encounters "Celebrity Fan Encounters: Bizarre Interactions and Blurred Bound is the central subject of the update.
+## When Fandom Goes Wild: Unpacking Bizarre Celebrity Fan Encounters "Celebrity Fan Encounters: Bizarre Interactions and Blurred Bound is the central subject of the update. 'Celebrity Fan Encounters: Bizarre Interactions and Blurred Bound is the central subject of the update.
 
 From unsolicited advice to outright strange requests, celebrities globally are grappling with fan interactions that constantly push boundaries. This wave of increasingly bizarre encounters has sparked a fierce debate online, with many questioning the lack of formal guidelines for managing public figures' safety and personal space in an ever-connected world.
 
