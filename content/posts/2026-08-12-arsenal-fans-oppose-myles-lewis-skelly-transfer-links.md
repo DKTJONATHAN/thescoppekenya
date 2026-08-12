@@ -1,18 +1,20 @@
 ---
 title: "Arsenal fans protest Myles Lewis-Skelly links to Premier League rivals"
 slug: "arsenal-fans-oppose-myles-lewis-skelly-transfer-links"
-description: "Myles Lewis-Skelly is attracting interest from Chelsea and Manchester United, sparking backlash from Arsenal fans who value his development and role."
+description: "Arsenal fans protest Myles Lewis-Skelly links to Premier League r: Myles Lewis-Skelly is attracting interest from Chelsea and Manchester United, sparking"
+excerpt: "The Hale End Dilemma: Is Myles Lewis Skelly Arsenal's Next Sell to Buy Martyr? The quiet hum of frustration at London Colney is growing loud"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/F4Sj3Tcq/938b21e1d7f3.jpg"
 category: "Sports"
 tags: ["arsenal", "premier league", "football transfers", "myles lewis-skelly", "kenyan sports news"]
+canonical: "https://zandani.co.ke/article/arsenal-fans-oppose-myles-lewis-skelly-transfer-links"
 date: "2026-08-12T11:13:20Z"
 dateModified: "2026-08-12T11:13:20Z"
+focusKeyword: "Arsenal fans protest Myles Lewis-Skelly links to Premier League r"
 schema: "NewsArticle"
 ---
 
-## The Hale End Dilemma: Is Myles Lewis-Skelly Arsenal's Next Sell to Buy Martyr?
+## The Hale End Dilemma: Is Myles Lewis-Skelly Arsenal's Next Sell to Buy Martyr? Arsenal fans protest Myles Lewis-Skelly links to Premier League r is the central subject of the update.
 
 The quiet hum of frustration at London Colney is growing louder as rumors link Myles Lewis-Skelly to Chelsea and Manchester United. For Arsenal supporters, this isn't just another transfer rumor, but a litmus test for the club's commitment to its academy roots versus the harsh realities of modern financial sustainability.
 
