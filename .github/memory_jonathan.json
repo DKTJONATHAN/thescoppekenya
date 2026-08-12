@@ -209,10 +209,10 @@
     "40ac7cea45551b96f9dc23b23b278ba1",
     "db8444fe5cbb7f6149c827740ff267d0",
     "7ea08cd24dac1a9954149cbbc2d8a49b",
-    "977de934d98ff10a8737f9ba8fad7143"
+    "977de934d98ff10a8737f9ba8fad7143",
+    "2d2bccfbbca75d5f01c6dffad32aced4"
   ],
   "style_history": [
-    "Counterpoint",
     "Personal Reflection",
     "Historical Lens",
     "Sharp Column",
@@ -241,10 +241,10 @@
     "Letter Form",
     "Personal Reflection",
     "Sharp Column",
-    "Historical Lens"
+    "Historical Lens",
+    "Letter Form"
   ],
   "angle_history": [
-    "impact_on_citizens|air quality|Sharp Column",
     "next_48_hours|Presidential Escort Unit|Counterpoint",
     "money_follow|Madaraka Day|Letter Form",
     "impact_on_citizens|Madaraka Day|Historical Lens",
@@ -323,6 +323,7 @@
     "policy_gap|higher education|Letter Form",
     "policy_gap|Vision 2060|Personal Reflection",
     "accountability|Competency-Based Curriculum|Sharp Column",
-    "timeline_shift|travel insurance|Historical Lens"
+    "timeline_shift|travel insurance|Historical Lens",
+    "money_follow|infrastructure|Letter Form"
   ]
 }
