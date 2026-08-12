@@ -14,7 +14,7 @@ focusKeyword: "'Harry Jowsey Marries Amber Mozo in 'Let's Marry Harry' Finale"
 schema: "NewsArticle"
 ---
 
-## Harry Jowsey Got Married on TV: What Does It Really Say About Love and Commitment? "Harry Jowsey Marries Amber Mozo in 'Let's Marry Harry' Finale is the central subject of the update.
+## Harry Jowsey Got Married on TV: What Does It Really Say About Love and Commitment? "Harry Jowsey Marries Amber Mozo in 'Let's Marry Harry' Finale is the central subject of the update. 'Harry Jowsey Marries Amber Mozo in 'Let's Marry Harry' Finale is the central subject of the update.
 
 Harry Jowsey's televised wedding is big news in the reality TV world. Kenyan viewers, like many around the globe, are asking a big question: can a real, lasting bond truly begin under the intense glare of Netflix cameras? His recent nuptials to Amber Mozo during the "Let's Marry Harry" finale is certainly a milestone, but it also makes us think harder about the gap between on-screen romance and true, lasting commitment.
 
