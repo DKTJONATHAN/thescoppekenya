@@ -1,18 +1,20 @@
 ---
 title: "Jaramogi Oginga Odinga Mausoleum Closed for Construction Project"
 slug: "jaramogi-oginga-odinga-mausoleum-closed-for-construction"
-description: "The National Museums of Kenya has closed the Jaramogi Oginga Odinga Mausoleum in Bondo for three months to build a new memorial facility for Raila Odinga."
+description: "Jaramogi Oginga Odinga Mausoleum Closed for Construction Project: The National Museums of Kenya has closed the Jaramogi Oginga Odinga Mausoleum in Bondo for"
+excerpt: "Military Engineers Take Command of Bondo Memorial Site The Kenya Defence Forces have officially commenced construction at the Jaramogi Oging"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/zh6V9CrR/7d64016ba80a.webp"
 category: "News"
 tags: ["kenya", "raila odinga", "siaya county", "national museums of kenya", "bondo", "kenya defence forces"]
+canonical: "https://zandani.co.ke/article/jaramogi-oginga-odinga-mausoleum-closed-for-construction"
 date: "2026-08-12T11:51:46Z"
 dateModified: "2026-08-12T11:51:46Z"
+focusKeyword: "Jaramogi Oginga Odinga Mausoleum Closed for Construction Project"
 schema: "NewsArticle"
 ---
 
-## Military Engineers Take Command of Bondo Memorial Site
+## Military Engineers Take Command of Bondo Memorial Site Jaramogi Oginga Odinga Mausoleum Closed for Construction Project is the central subject of the update.
 
 The Kenya Defence Forces have officially commenced construction at the Jaramogi Oginga Odinga Mausoleum in Bondo, marking a significant shift in how the state manages political infrastructure and public historical heritage sites across the country.
 
