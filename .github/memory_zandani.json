@@ -347,10 +347,10 @@
     "15e51e6889401fd45f1f046c8f4bdccb",
     "abc58c97f3032dcb53808a41244c5703",
     "4a1b6bfd605e8eb75e6e08dfa5047844",
-    "c1177875face93911e05e2284486a8b0"
+    "c1177875face93911e05e2284486a8b0",
+    "7afaf2d892ae054f8ef367a3ad736d78"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Hard News Lead",
     "Receipts Piece",
     "Trend Take",
@@ -379,10 +379,10 @@
     "Hard News Lead",
     "Receipts Piece",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "next_48_hours|AI-generated images|Reaction Round-up",
     "accountability|situationship|Hard News Lead",
     "myth_vs_fact|Influencer|Trend Take",
     "timeline_shift|Kenyan music scene|Profile Beat",
@@ -461,6 +461,7 @@
     "money_follow|football|Hard News Lead",
     "money_follow|Laetitia Ky|Receipts Piece",
     "policy_gap|Kenya Airways|Reaction Round-up",
-    "myth_vs_fact|Stevo Simple Boy|Profile Beat"
+    "myth_vs_fact|Stevo Simple Boy|Profile Beat",
+    "accountability|Kenya|Hard News Lead"
   ]
 }
