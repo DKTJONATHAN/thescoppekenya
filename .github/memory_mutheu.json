@@ -358,10 +358,10 @@
     "8abdb25c0656c7191f493391d1726ed6",
     "195d34c4757c7520bcf867b07d7cf2d6",
     "42af25d1baf1f86335ecfc07c124edb8",
-    "c265f8c16c55d451105749a24cf45e68"
+    "c265f8c16c55d451105749a24cf45e68",
+    "b2c5c3ece29371dc1e36e7ec4a5d9ddd"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
@@ -390,10 +390,10 @@
     "Explainer",
     "Profile Beat",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Explainer"
   ],
   "angle_history": [
-    "story_progression|na|Explainer",
     "timeline_shift|na|Profile Beat",
     "policy_gap|Storage Wars|Reaction Round-up",
     "myth_vs_fact|Television series|Trend Take",
@@ -472,6 +472,7 @@
     "winners_losers|Pregnancy|Explainer",
     "timeline_shift|workplace comedy|Profile Beat",
     "accountability|Fast & Furious|Hard News Lead",
-    "policy_gap|Celebrity fan encounters|Reaction Round-up"
+    "policy_gap|Celebrity fan encounters|Reaction Round-up",
+    "myth_vs_fact|Marriage|Explainer"
   ]
 }
