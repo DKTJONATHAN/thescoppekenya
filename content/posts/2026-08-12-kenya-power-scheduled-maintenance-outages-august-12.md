@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Schedules Maintenance Outages for Nakuru, Migori, Meru"
 slug: "kenya-power-scheduled-maintenance-outages-august-12"
-description: "Kenya Power has announced scheduled electricity interruptions on August 12 to facilitate infrastructure upgrades in Nakuru, Migori, and Meru counties."
+description: "Kenya Power Schedules Maintenance Outages for Nakuru, Migori, Mer: Kenya Power has announced scheduled electricity interruptions on August 12 to facilitate"
+excerpt: "Kenya Power Scheduled Maintenance: The Economic Cost of Grid Downtime Kenya Power has announced scheduled electricity interruptions for Augu"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/cSFp6WcQ/796cdc525202.jpg"
 category: "Gossip"
 tags: ["kenya power", "power outage", "kenya news", "nakuru", "meru", "migori"]
+canonical: "https://zandani.co.ke/article/kenya-power-scheduled-maintenance-outages-august-12"
 date: "2026-08-12T07:48:26Z"
 dateModified: "2026-08-12T07:48:26Z"
+focusKeyword: "Kenya Power Schedules Maintenance Outages for Nakuru, Migori, Mer"
 schema: "NewsArticle"
 ---
 
-## Kenya Power Scheduled Maintenance: The Economic Cost of Grid Downtime
+## Kenya Power Scheduled Maintenance: The Economic Cost of Grid Downtime Kenya Power Schedules Maintenance Outages for Nakuru, Migori, Mer is the central subject of the update.
 
 Kenya Power has announced scheduled electricity interruptions for August 12, citing routine maintenance required for long-term grid stability. While these upgrades are framed as essential infrastructure work, the timing of the outages creates a significant operational hurdle for local businesses in Nakuru, Migori, and Meru. As power remains unavailable throughout the primary working hours, enterprises are facing a tangible disruption to their daily revenue streams.
 
