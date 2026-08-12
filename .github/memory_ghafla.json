@@ -281,10 +281,10 @@
     "9f531f796de3ebccdf7685b66078d575",
     "9058f280f31eca754202adedee00491b",
     "e3629a79212d5dfe4eb6abefe50d2014",
-    "6a31680389eb614991a7dbe1ddf1720a"
+    "6a31680389eb614991a7dbe1ddf1720a",
+    "a1277cfae71112ce0aad0032a2981781"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
     "Receipts Piece",
@@ -313,10 +313,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "money_follow|Kenya|Receipts Piece",
     "next_48_hours|Kenya|Trend Take",
     "myth_vs_fact|Millicent Omanga|Profile Beat",
     "impact_on_citizens|Kenya|Reaction Round-up",
@@ -395,6 +395,7 @@
     "story_progression|Shakahola massacre|Reaction Round-up",
     "accountability|Homicide|Trend Take",
     "accountability|Kenya|Profile Beat",
-    "policy_gap|Kenya Power|Hard News Lead"
+    "policy_gap|Kenya Power|Hard News Lead",
+    "money_follow|Kenya Power|Receipts Piece"
   ]
 }
