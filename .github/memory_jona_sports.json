@@ -271,10 +271,10 @@
     "7b3bee50242c3de88c3d22065ee640d6",
     "20bfcb09314723c15d662e0b8e237493",
     "c7b37e63691ea23038d69cac7e488620",
-    "c0094e02f69231f0dd0fa67dba67b957"
+    "c0094e02f69231f0dd0fa67dba67b957",
+    "a31535b668f8fee40256d5a9880d7177"
   ],
   "style_history": [
-    "Cynical Pundit",
     "Stat Story",
     "Match Report",
     "Tactical Take",
@@ -303,10 +303,10 @@
     "Cynical Pundit",
     "Match Report",
     "Tactical Take",
-    "Stat Story"
+    "Stat Story",
+    "Player Profile Beat"
   ],
   "angle_history": [
-    "accountability|Premier League|Cynical Pundit",
     "winners_losers|fixture congestion|Player Profile Beat",
     "timeline_shift|Sunderland AFC|Match Report",
     "winners_losers|Transfer talks|Stat Story",
@@ -385,6 +385,7 @@
     "myth_vs_fact|Gianni Infantino|Cynical Pundit",
     "timeline_shift|Premier League|Match Report",
     "policy_gap|FIFA|Tactical Take",
-    "story_progression|Nottingham Forest|Stat Story"
+    "story_progression|Nottingham Forest|Stat Story",
+    "story_progression|football|Player Profile Beat"
   ]
 }
