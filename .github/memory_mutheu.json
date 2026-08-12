@@ -360,10 +360,10 @@
     "42af25d1baf1f86335ecfc07c124edb8",
     "c265f8c16c55d451105749a24cf45e68",
     "b2c5c3ece29371dc1e36e7ec4a5d9ddd",
-    "1f33a8933b6bd9e156c076c09e3797f3"
+    "1f33a8933b6bd9e156c076c09e3797f3",
+    "c1870fd10969f1353c0cac1d9a6e0be8"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Explainer",
     "Reaction Round-up",
@@ -392,10 +392,10 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "policy_gap|Storage Wars|Reaction Round-up",
     "myth_vs_fact|Television series|Trend Take",
     "story_progression|na|Explainer",
     "accountability|Melissa Gilbert|Profile Beat",
@@ -474,6 +474,7 @@
     "accountability|Fast & Furious|Hard News Lead",
     "policy_gap|Celebrity fan encounters|Reaction Round-up",
     "myth_vs_fact|Marriage|Explainer",
-    "next_48_hours|Concert|Trend Take"
+    "next_48_hours|Concert|Trend Take",
+    "myth_vs_fact|Jamie Lee Curtis|Hard News Lead"
   ]
 }
