@@ -416,10 +416,10 @@
     "f8a942a415f888e36a8b38f5a8a85c88",
     "53952295f52128986cff52aadf31ec60",
     "2fca5bb3d4d5bdbe57e8ce865874f873",
-    "bf3a33b8681cd8e5db2aba9fa5ef57bb"
+    "bf3a33b8681cd8e5db2aba9fa5ef57bb",
+    "407835ab70160726336b22bef9aee318"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Hard News Lead",
     "Explainer",
     "Power Accountability",
@@ -448,10 +448,10 @@
     "Reaction & Voices",
     "Context Backgrounder",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "story_progression|Wantam Movement|Context Backgrounder",
     "money_follow|KRA|Reaction & Voices",
     "story_progression|Nairobi Metropolitan Police Unit|Explainer",
     "winners_losers|LSK|Hard News Lead",
@@ -530,6 +530,7 @@
     "winners_losers|National Treasury|Reaction & Voices",
     "myth_vs_fact|Kenyan politics|Context Backgrounder",
     "accountability|NTSA|Power Accountability",
-    "next_48_hours|Kenya|Hard News Lead"
+    "next_48_hours|Kenya|Hard News Lead",
+    "policy_gap|Kenya|Explainer"
   ]
 }
