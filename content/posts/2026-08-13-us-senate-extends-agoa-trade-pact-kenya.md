@@ -1,18 +1,20 @@
 ---
 title: "US Senate Extends AGOA Trade Deal Securing Kenyan Market Access"
 slug: "us-senate-extends-agoa-trade-pact-kenya"
-description: "The US Senate has voted to extend the AGOA trade pact until 2028, pending final approval, ensuring duty-free access for Kenyan apparel and farm exports."
+description: "US Senate Extends AGOA Trade Deal Securing Kenyan Market Access: The US Senate has voted to extend the AGOA trade pact until 2028, pending final approval,"
+excerpt: "More Than Just Paperwork: The Factory Floor Relief Over AGOA The U.S. Senate has voted 90 to 6 to extend the African Growth and Opportunity"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/qM73cLtm/2a56f6c4c60e.webp"
 category: "News"
 tags: ["agoa", "kenya trade", "exports", "manufacturing", "us kenya relations", "economy"]
+canonical: "https://zandani.co.ke/article/us-senate-extends-agoa-trade-pact-kenya"
 date: "2026-08-13T11:52:25Z"
 dateModified: "2026-08-13T11:52:25Z"
+focusKeyword: "US Senate Extends AGOA Trade Deal Securing Kenyan Market Access"
 schema: "NewsArticle"
 ---
 
-## More Than Just Paperwork: The Factory Floor Relief Over AGOA
+## More Than Just Paperwork: The Factory Floor Relief Over AGOA US Senate Extends AGOA Trade Deal Securing Kenyan Market Access is the central subject of the update.
 
 The U.S. Senate has voted 90 to 6 to extend the African Growth and Opportunity Act until the end of 2028, offering a vital lifeline to thousands of Kenyan families. For the workforce in Athi River, this legislative maneuver means the difference between a steady paycheck and an uncertain future.
 
