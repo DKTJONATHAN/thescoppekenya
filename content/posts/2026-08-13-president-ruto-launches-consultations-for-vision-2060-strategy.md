@@ -1,18 +1,20 @@
 ---
 title: "President Ruto Launches Consultations for Vision 2060 Strategy"
 slug: "president-ruto-launches-consultations-for-vision-2060-strategy"
-description: "President William Ruto has initiated nationwide consultations to develop Vision 2060, a long-term economic roadmap designed to survive political cycles."
+description: "President Ruto Launches Consultations for Vision 2060 Strategy: President William Ruto has initiated nationwide consultations to develop Vision 2060, a"
+excerpt: "From Vision 2030 to Vision 2060: Kenyans are Tired of Paper Dreams President William Ruto stood at the KICC yesterday to unveil a roadmap th"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/mFd1zyPP/1958be07edd4.jpg"
 category: "Gossip"
 tags: ["kenya politics", "william ruto", "vision 2060", "economic development", "kenyan governance", "national strategy"]
+canonical: "https://zandani.co.ke/article/president-ruto-launches-consultations-for-vision-2060-strategy"
 date: "2026-08-13T07:49:02Z"
 dateModified: "2026-08-13T07:49:02Z"
+focusKeyword: "President Ruto Launches Consultations for Vision 2060 Strategy"
 schema: "NewsArticle"
 ---
 
-## From Vision 2030 to Vision 2060: Kenyans are Tired of Paper Dreams
+## From Vision 2030 to Vision 2060: Kenyans are Tired of Paper Dreams President Ruto Launches Consultations for Vision 2060 Strategy is the central subject of the update.
 
 President William Ruto stood at the KICC yesterday to unveil a roadmap that stretches three decades into the future, but the online chatter suggests most citizens are struggling to look past next week's grocery prices. While the state pushes for a 2060 horizon, the public is busy side-eyeing the blueprints of the past.
 
