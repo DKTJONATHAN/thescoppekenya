@@ -1,19 +1,21 @@
 ---
 title: "Pensioners Suffer as Treasury and Pensions Department Delay Retirement Benefit Payments"
 slug: "pensioners-suffer-as-treasury-and-pensions-department-delay-retireme"
-description: "Thousands of Kenyan civil servants face a retirement crisis in August 2026 as the National Treasury and Pensions Department delay vital benefit payments."
+description: "Pensioners Suffer as Treasury and Pensions Department Delay Retir: Thousands of Kenyan civil servants face a retirement crisis in August 2026 as the National"
+excerpt: "In August 2026, thousands of elderly Kenyan civil servants are facing a devastating crisis as the National Treasury and the Pensions Departm"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: ""
+image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["pension-delays", "retirement-benefits", "kenyan-pensioners", "national-treasury", "pensions-department"]
 canonical: "https://zandani.co.ke/article/pensioners-suffer-as-treasury-and-pensions-department-delay-retireme"
 date: "2026-08-13T13:46:18Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-08-13T13:46:18Z"
+focusKeyword: "Pensioners Suffer as Treasury and Pensions Department Delay Retir"
 schema: "NewsArticle"
 ---
-In August 2026, thousands of elderly Kenyan civil servants are facing a devastating crisis as the National Treasury and the Pensions Department consistently fail to process retirement benefits, leaving former public employees trapped in a cycle of poverty, bureaucratic obstruction, and systemic corruption.
+
+In August 2026, thousands of elderly Kenyan civil servants are facing a devastating crisis as the National Treasury and the Pensions Department consistently fail to process retirement benefits, leaving former public employees trapped in a cycle of poverty, bureaucratic obstruction, and systemic corruption. Pensioners Suffer as Treasury and Pensions Department Delay Retir is the central subject of the update.
 
 ## Institutional Neglect and the Crisis of Retirement
 
