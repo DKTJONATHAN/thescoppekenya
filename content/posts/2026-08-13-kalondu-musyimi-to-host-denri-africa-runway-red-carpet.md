@@ -1,18 +1,20 @@
 ---
 title: "Kalondu Musyimi to host Denri Africa Runway red carpet"
 slug: "kalondu-musyimi-to-host-denri-africa-runway-red-carpet"
-description: "Mpasho broadcaster Kalondu Musyimi has been named the red carpet host for the upcoming Denri Africa Runway Fashion Event at The Edge Convention Centre."
+description: "Kalondu Musyimi to host Denri Africa Runway red carpet: Mpasho broadcaster Kalondu Musyimi has been named the red carpet host for the upcoming Denri Africa"
+excerpt: "From Clickbait to Couture: The Monetization of Credibility Kalondu Musyimi has secured the red carpet hosting duties for the Denri Africa Ru"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/27tXD7yC/e486a121e117.webp"
 category: "Gossip"
 tags: ["kalondu musyimi", "denri africa runway", "mpasho", "kenyan fashion", "kenyan media", "entertainment news"]
+canonical: "https://zandani.co.ke/article/kalondu-musyimi-to-host-denri-africa-runway-red-carpet"
 date: "2026-08-13T09:34:23Z"
 dateModified: "2026-08-13T09:34:23Z"
+focusKeyword: "Kalondu Musyimi to host Denri Africa Runway red carpet"
 schema: "NewsArticle"
 ---
 
-## From Clickbait to Couture: The Monetization of Credibility
+## From Clickbait to Couture: The Monetization of Credibility Kalondu Musyimi to host Denri Africa Runway red carpet is the central subject of the update.
 
 Kalondu Musyimi has secured the red-carpet hosting duties for the Denri Africa Runway event scheduled for August 29. This appointment serves as the latest indicator of a strategic pivot in her career, moving beyond Za Ndani cycle of digital reporting into the high-margin sector of premium event hosting.
 
