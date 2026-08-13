@@ -214,10 +214,10 @@
     "144c3dcfd6698c156c4463553248e7b7",
     "c56ad5774a2b950ff38557ed077a40f3",
     "5b4d193804f5443ea06a873fa4d8145a",
-    "41dfb97b09377847d21b447990058779"
+    "41dfb97b09377847d21b447990058779",
+    "15fc222f16aa966c7e55b28998804da4"
   ],
   "style_history": [
-    "Markets Report",
     "SME Angle",
     "Explainer",
     "Backgrounder",
@@ -246,10 +246,10 @@
     "Explainer",
     "Power Accountability",
     "Markets Report",
-    "SME Angle"
+    "SME Angle",
+    "Backgrounder"
   ],
   "angle_history": [
-    "winners_losers|AfCFTA|Power Accountability",
     "money_follow|Stablecoins|SME Angle",
     "myth_vs_fact|East African Cables|Markets Report",
     "impact_on_citizens|financial diplomacy|Explainer",
@@ -328,6 +328,7 @@
     "myth_vs_fact|Dangote Refinery|Explainer",
     "accountability|Nairobi Securities Exchange|Power Accountability",
     "story_progression|Kenya|Markets Report",
-    "money_follow|hospitality|SME Angle"
+    "money_follow|hospitality|SME Angle",
+    "policy_gap|Tata Chemicals Magadi|Backgrounder"
   ]
 }
