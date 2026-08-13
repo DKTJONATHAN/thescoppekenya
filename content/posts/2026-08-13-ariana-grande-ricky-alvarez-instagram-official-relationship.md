@@ -14,7 +14,7 @@ focusKeyword: "'Ariana Grande Confirms Ricky Alvarez Relationship on Instagram"
 schema: "NewsArticle"
 ---
 
-## Ariana Grande and Ricky Alvarez: Crafting a Love Story on Her Own Terms "Ariana Grande Confirms Ricky Alvarez Relationship on Instagram is the central subject of the update.
+## Ariana Grande and Ricky Alvarez: Crafting a Love Story on Her Own Terms "Ariana Grande Confirms Ricky Alvarez Relationship on Instagram is the central subject of the update. 'Ariana Grande Confirms Ricky Alvarez Relationship on Instagram is the central subject of the update.
 
 Pop superstar Ariana Grande is taking the reins of her personal narrative, confirming her relationship with former backup dancer Ricky Alvarez on Instagram this week. The move, marked by two intimate photos, signals a deliberate choice by Grande to author her own love story, bypassing traditional media speculation and speaking directly to her millions of followers.
 
