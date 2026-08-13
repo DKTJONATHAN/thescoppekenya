@@ -14,7 +14,7 @@ focusKeyword: "'Jamie Lee Curtis Clarifies 'New Girl' Format Preference"
 schema: "NewsArticle"
 ---
 
-## Jamie Lee Curtis Details Her Comedy Format Preference, Not a Dislike for 'New Girl' "Jamie Lee Curtis Clarifies 'New Girl' Format Preference is the central subject of the update.
+## Jamie Lee Curtis Details Her Comedy Format Preference, Not a Dislike for 'New Girl' "Jamie Lee Curtis Clarifies 'New Girl' Format Preference is the central subject of the update. 'Jamie Lee Curtis Clarifies 'New Girl' Format Preference is the central subject of the update.
 
 Veteran actress Jamie Lee Curtis has clarified her recent remarks about the acclaimed comedy 'New Girl', asserting her admiration for the series itself. Her comments specifically targeted the production format, not the show's quality, highlighting a professional preference for multicamera productions.
 

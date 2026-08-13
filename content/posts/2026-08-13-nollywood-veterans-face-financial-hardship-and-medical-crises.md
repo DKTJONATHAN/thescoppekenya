@@ -1,18 +1,20 @@
 ---
 title: "Nollywood veterans face financial hardship and medical crises"
 slug: "nollywood-veterans-face-financial-hardship-and-medical-crises"
-description: "Rising cases of financial distress among veteran Nigerian actors expose deep systemic issues regarding royalty payments and retirement planning in the industry."
+description: "Nollywood veterans face financial hardship and medical crises: Rising cases of financial distress among veteran Nigerian actors expose deep systemic issues"
+excerpt: "Behind the Screen: The Price of Nollywood Stardom When the studio lights dim and the final cut is rendered, the applause that greets Nollywo"
 author: "Amara Ndlovu"
-authorUrl: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/Q7PmSvRX/507bdeee4e01.png"
 category: "Africa Entertainment"
 tags: ["nollywood", "nigerian celebrities", "entertainment news", "financial hardship", "african film industry"]
+canonical: "https://zandani.co.ke/article/nollywood-veterans-face-financial-hardship-and-medical-crises"
 date: "2026-08-13T05:00:53Z"
 dateModified: "2026-08-13T05:00:53Z"
+focusKeyword: "Nollywood veterans face financial hardship and medical crises"
 schema: "NewsArticle"
 ---
 
-## Behind the Screen: The Price of Nollywood Stardom
+## Behind the Screen: The Price of Nollywood Stardom Nollywood veterans face financial hardship and medical crises is the central subject of the update.
 
 When the studio lights dim and the final cut is rendered, the applause that greets Nollywood’s legends does little to cover their mounting medical bills or daily expenses. A sobering reality has taken hold within the industry, where the pioneers who laid the foundation for Nigeria’s cinematic empire are finding that fame offers no shield against financial collapse. For many of these icons, a celebrated career has evolved into a quiet, desperate struggle for survival.
 
