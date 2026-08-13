@@ -1,18 +1,20 @@
 ---
 title: "Premier League Referee Anthony Taylor Retires After Long Career"
 slug: "premier-league-referee-anthony-taylor-retires-after-long-career"
-description: "Professional referee Anthony Taylor has announced his retirement after two decades citing immense public scrutiny to join the Turkish Football Federation."
+description: "Premier League Referee Anthony Taylor Retires After Long Career: Professional referee Anthony Taylor has announced his retirement after two decades citing"
+excerpt: "Anthony Taylor Trades the Whistle for Systemic Reform in Turkey Anthony Taylor has officially walked away from professional officiating afte"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/Dfbk39vW/6f062dc31256.jpg"
 category: "Sports"
 tags: ["anthony taylor", "football", "referee", "premier league", "sports news"]
+canonical: "https://zandani.co.ke/article/premier-league-referee-anthony-taylor-retires-after-long-career"
 date: "2026-08-13T11:14:21Z"
 dateModified: "2026-08-13T11:14:21Z"
+focusKeyword: "Premier League Referee Anthony Taylor Retires After Long Career"
 schema: "NewsArticle"
 ---
 
-## Anthony Taylor Trades the Whistle for Systemic Reform in Turkey
+## Anthony Taylor Trades the Whistle for Systemic Reform in Turkey Premier League Referee Anthony Taylor Retires After Long Career is the central subject of the update.
 
 Anthony Taylor has officially walked away from professional officiating after two decades of high-stakes scrutiny, accepting a pivotal mandate to restructure refereeing standards within the Turkish Football Federation. The move signals a tactical pivot from frontline pressure to institutional oversight.
 
