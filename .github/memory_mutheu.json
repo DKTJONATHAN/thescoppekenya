@@ -361,10 +361,10 @@
     "c265f8c16c55d451105749a24cf45e68",
     "b2c5c3ece29371dc1e36e7ec4a5d9ddd",
     "1f33a8933b6bd9e156c076c09e3797f3",
-    "c1870fd10969f1353c0cac1d9a6e0be8"
+    "c1870fd10969f1353c0cac1d9a6e0be8",
+    "79cc50ffc0914ce98eac995845337dc2"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Reaction Round-up",
     "Profile Beat",
@@ -393,10 +393,10 @@
     "Reaction Round-up",
     "Explainer",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "myth_vs_fact|Television series|Trend Take",
     "story_progression|na|Explainer",
     "accountability|Melissa Gilbert|Profile Beat",
     "policy_gap|Erin Moriarty|Hard News Lead",
@@ -475,6 +475,7 @@
     "policy_gap|Celebrity fan encounters|Reaction Round-up",
     "myth_vs_fact|Marriage|Explainer",
     "next_48_hours|Concert|Trend Take",
-    "myth_vs_fact|Jamie Lee Curtis|Hard News Lead"
+    "myth_vs_fact|Jamie Lee Curtis|Hard News Lead",
+    "accountability|Andy Cohen|Reaction Round-up"
   ]
 }
