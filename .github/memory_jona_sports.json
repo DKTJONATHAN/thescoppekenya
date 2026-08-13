@@ -272,10 +272,10 @@
     "20bfcb09314723c15d662e0b8e237493",
     "c7b37e63691ea23038d69cac7e488620",
     "c0094e02f69231f0dd0fa67dba67b957",
-    "a31535b668f8fee40256d5a9880d7177"
+    "a31535b668f8fee40256d5a9880d7177",
+    "4e2db78734503c697f5ac9316faa8ae1"
   ],
   "style_history": [
-    "Stat Story",
     "Match Report",
     "Tactical Take",
     "Player Profile Beat",
@@ -304,10 +304,10 @@
     "Match Report",
     "Tactical Take",
     "Stat Story",
-    "Player Profile Beat"
+    "Player Profile Beat",
+    "Match Report"
   ],
   "angle_history": [
-    "winners_losers|fixture congestion|Player Profile Beat",
     "timeline_shift|Sunderland AFC|Match Report",
     "winners_losers|Transfer talks|Stat Story",
     "policy_gap|football|Cynical Pundit",
@@ -386,6 +386,7 @@
     "timeline_shift|Premier League|Match Report",
     "policy_gap|FIFA|Tactical Take",
     "story_progression|Nottingham Forest|Stat Story",
-    "story_progression|football|Player Profile Beat"
+    "story_progression|football|Player Profile Beat",
+    "story_progression|Anthony Taylor|Match Report"
   ]
 }
