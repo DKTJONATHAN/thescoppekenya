@@ -1,18 +1,20 @@
 ---
 title: "HELB Announces 80 Percent Penalty Waiver for Loan Defaulters"
 slug: "helb-announces-80-percent-penalty-waiver-for-loan-defaulters"
-description: "The Higher Education Loans Board is offering an 80 percent amnesty on penalties for Kenyans who clear their outstanding student loan balances fully."
+description: "HELB Announces 80 Percent Penalty Waiver for Loan Defaulters: The Higher Education Loans Board is offering an 80 percent amnesty on penalties for Kenyans who"
+excerpt: "The Endless Cycle of Student Debt Forgiveness The Higher Education Loans Board has rolled out a fresh amnesty program, slashing accrued pena"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/8DW4mdc2/8ca2e79de78d.webp"
 category: "News"
 tags: ["helb", "student loans", "education kenya", "debt amnesty", "crb", "kenya news"]
+canonical: "https://zandani.co.ke/article/helb-announces-80-percent-penalty-waiver-for-loan-defaulters"
 date: "2026-08-13T06:21:26Z"
 dateModified: "2026-08-13T06:21:26Z"
+focusKeyword: "HELB Announces 80 Percent Penalty Waiver for Loan Defaulters"
 schema: "NewsArticle"
 ---
 
-## The Endless Cycle of Student Debt Forgiveness
+## The Endless Cycle of Student Debt Forgiveness HELB Announces 80 Percent Penalty Waiver for Loan Defaulters is the central subject of the update.
 
 The Higher Education Loans Board has rolled out a fresh amnesty program, slashing accrued penalties by 80 percent for borrowers who clear their principal loan balances. This marks yet another attempt to thin out a portfolio of 380,000 delinquent accounts that have collectively ballooned into a staggering Sh42 billion liability, tethering a generation of graduates to a restrictive credit history.
 
