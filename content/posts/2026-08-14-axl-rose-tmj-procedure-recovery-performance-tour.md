@@ -14,7 +14,7 @@ focusKeyword: "'Axl Rose Performs After TMJ Procedure, Details Recovery"
 schema: "NewsArticle"
 ---
 
-## Beyond the Roar: Axl Rose's Unyielding Spirit on Stage "Axl Rose Performs After TMJ Procedure, Details Recovery is the central subject of the update.
+## Beyond the Roar: Axl Rose's Unyielding Spirit on Stage "Axl Rose Performs After TMJ Procedure, Details Recovery is the central subject of the update. 'Axl Rose Performs After TMJ Procedure, Details Recovery is the central subject of the update.
 
 Rock stars often project an image of invincibility, larger than life and immune to ordinary struggles. But what happens when the very human reality of illness and recovery intersects with such a powerful persona? Fans worldwide, including those here in Kenya, are talking about Guns N' Roses frontman Axl Rose. He recently performed a full three-hour show in New Jersey, despite undergoing a procedure for temporomandibular joint disorder (TMJ). This remarkable display of dedication prompts us to ask: How does an artist push past such a personal challenge for their craft, and what does it tell us about the rock star myth we so often create?
 

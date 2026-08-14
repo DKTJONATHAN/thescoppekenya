@@ -1,18 +1,20 @@
 ---
 title: "Congolese Rhumba Star Fally Ipupa to Perform Live in Nairobi"
 slug: "fally-ipupa-nairobi-concert"
-description: "Rhumba sensation Fally Ipupa has officially announced a headline concert in Nairobi. Get the latest details on tickets and event dates."
+description: "Congolese Rhumba Star Fally Ipupa to Perform Live in Nairobi: Rhumba sensation Fally Ipupa has officially announced a headline concert in Nairobi. Get the"
+excerpt: "Nairobi Goes Lingala Mad for Fally Ipupa The internet in Nairobi has officially collapsed under the weight of Congolese royalty as Fally Ipu"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/wZQfnwrk/75866303a3bd.webp"
 category: "Gossip"
 tags: ["fally ipupa", "nairobi events", "rhumba music", "live concerts", "kenyan entertainment"]
+canonical: "https://zandani.co.ke/article/fally-ipupa-nairobi-concert"
 date: "2026-08-14T09:21:53Z"
 dateModified: "2026-08-14T09:21:53Z"
+focusKeyword: "Congolese Rhumba Star Fally Ipupa to Perform Live in Nairobi"
 schema: "NewsArticle"
 ---
 
-## Nairobi Goes Lingala Mad for Fally Ipupa
+## Nairobi Goes Lingala Mad for Fally Ipupa Congolese Rhumba Star Fally Ipupa to Perform Live in Nairobi is the central subject of the update.
 
 The internet in Nairobi has officially collapsed under the weight of Congolese royalty as Fally Ipupa confirmed his September 5, 2026, date in the city. Kenyans are currently trading their usual political debates for frantic choreography tutorials and fashion emergency plans.
 
