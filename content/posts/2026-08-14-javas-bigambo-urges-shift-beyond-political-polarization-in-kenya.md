@@ -1,18 +1,20 @@
 ---
 title: "Javas Bigambo Urges Shift Beyond Political Polarization in Kenya"
 slug: "javas-bigambo-urges-shift-beyond-political-polarization-in-kenya"
-description: "Governance expert Javas Bigambo calls for Kenya to move past tribal politics and prioritize long-term development planning and economic modernization."
+description: "Javas Bigambo Urges Shift Beyond Political Polarization in Kenya: Governance expert Javas Bigambo calls for Kenya to move past tribal politics and prioritize"
+excerpt: "The Economic Architecture of Our Stagnation Kenya remains a prisoner of its own history. We are shackled to an economic roadmap drafted in 1"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/YBny4JS6/bdb881d78ead.webp"
 category: "Opinions"
 tags: ["kenya politics", "governance", "vision 2030", "economic growth", "national development", "javas bigambo"]
+canonical: "https://zandani.co.ke/article/javas-bigambo-urges-shift-beyond-political-polarization-in-kenya"
 date: "2026-08-14T10:16:54Z"
 dateModified: "2026-08-14T10:16:54Z"
+focusKeyword: "Javas Bigambo Urges Shift Beyond Political Polarization in Kenya"
 schema: "NewsArticle"
 ---
 
-## The Economic Architecture of Our Stagnation
+## The Economic Architecture of Our Stagnation Javas Bigambo Urges Shift Beyond Political Polarization in Kenya is the central subject of the update.
 
 Kenya remains a prisoner of its own history. We are shackled to an economic roadmap drafted in 1965 that has long outlived its utility. Today, this outdated framework serves only to facilitate the systematic looting of our national potential.
 
