@@ -14,7 +14,7 @@ focusKeyword: "'Chuk Anyanwu Eviction: Big Brother Exit Interview & Shocking Vot
 schema: "NewsArticle"
 ---
 
-## Big Brother Kenya's Shockwaves: Fans Reel as Chuk Exits, LaLa Seizes Power "Chuk Anyanwu Eviction: Big Brother Exit Interview & Shocking Vot is the central subject of the update.
+## Big Brother Kenya's Shockwaves: Fans Reel as Chuk Exits, LaLa Seizes Power "Chuk Anyanwu Eviction: Big Brother Exit Interview & Shocking Vot is the central subject of the update. 'Chuk Anyanwu Eviction: Big Brother Exit Interview & Shocking Vot is the central subject of the update.
 
 The Big Brother Kenya house is vibrating with aftershocks after Chuk Anyanwu's blindsiding 9-1 eviction vote. LaLa Verrett's unexpected rise to Head of Household has ignited a furious scramble for safety, leaving fans buzzing with predictions of betrayals and power plays for the coming week. The game has officially changed.
 

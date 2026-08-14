@@ -1,18 +1,20 @@
 ---
 title: "JSC Initiates New Disciplinary Rules to Address Judicial Misconduct"
 slug: "jsc-initiates-new-disciplinary-rules-to-address-judicial-misconduct"
-description: "The Judicial Service Commission is drafting new regulations to discipline judges for misconduct following mounting pressure from the Law Society of Kenya."
+description: "JSC Initiates New Disciplinary Rules to Address Judicial Miscondu: The Judicial Service Commission is drafting new regulations to discipline judges for"
+excerpt: "The Gavel’s Long Awaited Accountability Check Disillusioned litigants are calling for more than just paperwork as the Judicial Service Commi"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/4gMjC2KK/c8fcb4d499b6.webp"
 category: "News"
 tags: ["judiciary", "jsc", "law society of kenya", "kenya news", "judicial reform", "legal accountability"]
+canonical: "https://zandani.co.ke/article/jsc-initiates-new-disciplinary-rules-to-address-judicial-misconduct"
 date: "2026-08-14T17:56:41Z"
 dateModified: "2026-08-14T17:56:41Z"
+focusKeyword: "JSC Initiates New Disciplinary Rules to Address Judicial Miscondu"
 schema: "NewsArticle"
 ---
 
-## The Gavel’s Long-Awaited Accountability Check
+## The Gavel’s Long-Awaited Accountability Check JSC Initiates New Disciplinary Rules to Address Judicial Miscondu is the central subject of the update.
 
 Disillusioned litigants are calling for more than just paperwork as the Judicial Service Commission drafts new disciplinary rules to penalize misconduct short of removal. The move attempts to address a deep-seated culture of perceived impunity that has long stifled the courtroom experience.
 
