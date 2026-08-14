@@ -1,18 +1,20 @@
 ---
 title: "Kenya risks AGOA access over alleged role in Chinese tariff evasion"
 slug: "kenya-risks-agoa-access-over-alleged-chinese-tariff-evasion"
-description: "A new White House report identifies Kenya as a transit hub for Chinese goods, potentially threatening duty-free access to U.S. markets via AGOA status."
+description: "Kenya risks AGOA access over alleged role in Chinese tariff evasi: A new White House report identifies Kenya as a transit hub for Chinese goods, potentially"
+excerpt: "AGOA status under threat due to transshipment allegations A new White House report identifies Kenya as an opportunistic hub for bypassing U."
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/RTzhD1ZC/17334365ae10.webp"
 category: "News"
 tags: ["kenya", "agoa", "trade", "united states", "economy", "supply chain"]
+canonical: "https://zandani.co.ke/article/kenya-risks-agoa-access-over-alleged-chinese-tariff-evasion"
 date: "2026-08-14T06:18:29Z"
 dateModified: "2026-08-14T06:18:29Z"
+focusKeyword: "Kenya risks AGOA access over alleged role in Chinese tariff evasi"
 schema: "NewsArticle"
 ---
 
-## AGOA status under threat due to transshipment allegations
+## AGOA status under threat due to transshipment allegations Kenya risks AGOA access over alleged role in Chinese tariff evasi is the central subject of the update.
 
 A new White House report identifies Kenya as an opportunistic hub for bypassing U.S. tariffs on Chinese-made goods, a situation that now threatens the nation's preferential trade access. This discovery places Ksh71 billion in annual exports at direct risk of sudden cancellation.
 
