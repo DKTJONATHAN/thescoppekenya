@@ -1,18 +1,20 @@
 ---
 title: "Absa Group to Exit Direct Insurance Underwriting in Kenya"
 slug: "absa-group-to-exit-direct-insurance-underwriting-in-kenya"
-description: "Absa Group is selling its controlling stakes in First Assurance and Absa Life Assurance Kenya as part of a regional insurance exit strategy."
+description: "Absa Group to Exit Direct Insurance Underwriting in Kenya: Absa Group is selling its controlling stakes in First Assurance and Absa Life Assurance Kenya as"
+excerpt: "The Absa Insurance Shell Game Absa Group is offloading a 63.32 percent stake in First Assurance and Absa Life Assurance Kenya for 2.9 billio"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/vxwLGz2m/4d69a0efa0b8.png"
 category: "Business"
 tags: ["absa bank kenya", "insurance", "business news", "kenya economy", "bancassurance", "corporate divestment"]
+canonical: "https://zandani.co.ke/article/absa-group-to-exit-direct-insurance-underwriting-in-kenya"
 date: "2026-08-14T06:24:05Z"
 dateModified: "2026-08-14T06:24:05Z"
+focusKeyword: "Absa Group to Exit Direct Insurance Underwriting in Kenya"
 schema: "NewsArticle"
 ---
 
-## The Absa Insurance Shell Game
+## The Absa Insurance Shell Game Absa Group to Exit Direct Insurance Underwriting in Kenya is the central subject of the update.
 
 Absa Group is offloading a 63.32 percent stake in First Assurance and Absa Life Assurance Kenya for 2.9 billion KSh. By retreating from the high-risk mandate of underwriting, the banking giant is cleverly extracting its capital while tightening its grip on lucrative, low-risk fee income.
 
