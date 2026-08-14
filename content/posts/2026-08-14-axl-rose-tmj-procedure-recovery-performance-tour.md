@@ -1,21 +1,20 @@
 ---
-title: "Axl Rose Performs After TMJ Procedure, Details Recovery
+title: "'Axl Rose Performs After TMJ Procedure, Details Recovery"
 slug: "axl-rose-tmj-procedure-recovery-performance-tour"
-description: "Axl Rose of Guns N’ Roses recently underwent a TMJ procedure. Despite experiencing post-procedure numbness, he performed for three hours in New Jersey. Discover more about his recovery and ongoing tour now."
+description: "'Axl Rose Performs After TMJ Procedure, Details Recovery: Axl Rose of Guns N’ Roses recently underwent a TMJ procedure. Despite experiencing post-procedure"
+excerpt: "Beyond the Roar: Axl Rose's Unyielding Spirit on Stage Rock stars often project an image of invincibility, larger than life and immune to or"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/mCj4rN6W/cbfd9b5b2c94.jpg"
-og_title: "Axl Rose Rocks On Despite TMJ Procedure Recovery"
-og_description: "Axl Rose performed for three hours despite recent TMJ surgery. He shared his recovery experience with fans during a New Jersey concert."
-focus_keyword: "Axl Rose TMJ procedure"
 category: "Entertainment"
 tags: ["axl rose", "guns n roses", "tmj", "rock music", "entertainment news", "celebrity health", "music tour"]
+canonical: "https://zandani.co.ke/article/axl-rose-tmj-procedure-recovery-performance-tour"
 date: "2026-08-14T07:59:54Z"
 dateModified: "2026-08-14T07:59:54Z"
+focusKeyword: "'Axl Rose Performs After TMJ Procedure, Details Recovery"
 schema: "NewsArticle"
 ---
 
-## Beyond the Roar: Axl Rose's Unyielding Spirit on Stage
+## Beyond the Roar: Axl Rose's Unyielding Spirit on Stage "Axl Rose Performs After TMJ Procedure, Details Recovery is the central subject of the update.
 
 Rock stars often project an image of invincibility, larger than life and immune to ordinary struggles. But what happens when the very human reality of illness and recovery intersects with such a powerful persona? Fans worldwide, including those here in Kenya, are talking about Guns N' Roses frontman Axl Rose. He recently performed a full three-hour show in New Jersey, despite undergoing a procedure for temporomandibular joint disorder (TMJ). This remarkable display of dedication prompts us to ask: How does an artist push past such a personal challenge for their craft, and what does it tell us about the rock star myth we so often create?
 
