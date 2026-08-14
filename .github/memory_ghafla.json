@@ -283,10 +283,10 @@
     "e3629a79212d5dfe4eb6abefe50d2014",
     "6a31680389eb614991a7dbe1ddf1720a",
     "a1277cfae71112ce0aad0032a2981781",
-    "86b3a76f3d042f7319d0680ad2a9e838"
+    "86b3a76f3d042f7319d0680ad2a9e838",
+    "6c4e3e8f5d18d3e2343b7c81e333dcb6"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Receipts Piece",
     "Trend Take",
     "Hard News Lead",
@@ -315,10 +315,10 @@
     "Profile Beat",
     "Hard News Lead",
     "Receipts Piece",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Profile Beat"
   ],
   "angle_history": [
-    "myth_vs_fact|Millicent Omanga|Profile Beat",
     "impact_on_citizens|Kenya|Reaction Round-up",
     "myth_vs_fact|parenting|Receipts Piece",
     "impact_on_citizens|Interior Ministry|Trend Take",
@@ -397,6 +397,7 @@
     "accountability|Kenya|Profile Beat",
     "policy_gap|Kenya Power|Hard News Lead",
     "money_follow|Kenya Power|Receipts Piece",
-    "myth_vs_fact|Economic policy|Reaction Round-up"
+    "myth_vs_fact|Economic policy|Reaction Round-up",
+    "winners_losers|Kenya|Profile Beat"
   ]
 }
