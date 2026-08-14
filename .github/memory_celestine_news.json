@@ -422,10 +422,10 @@
     "8a8be8328be7a344c71a448726492b77",
     "3bea5ae82e041f482dd5ead919968207",
     "1c6801b30b0cd39285490f857c75621f",
-    "ccf64ed5079734a34f9835987d444ec9"
+    "ccf64ed5079734a34f9835987d444ec9",
+    "ab064a87b721a25929a20214e0f1ed44"
   ],
   "style_history": [
-    "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
@@ -454,10 +454,10 @@
     "Reaction & Voices",
     "Power Accountability",
     "Explainer",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "money_follow|Government Appointments|Power Accountability",
     "story_progression|Kenya|Hard News Lead",
     "winners_losers|Kenya|Explainer",
     "story_progression|Nairobi Expressway|Context Backgrounder",
@@ -536,6 +536,7 @@
     "winners_losers|AGOA|Reaction & Voices",
     "policy_gap|weather forecast|Power Accountability",
     "winners_losers|AGOA|Explainer",
-    "winners_losers|Kenya|Hard News Lead"
+    "winners_losers|Kenya|Hard News Lead",
+    "accountability|Judicial Service Commission|Reaction & Voices"
   ]
 }
