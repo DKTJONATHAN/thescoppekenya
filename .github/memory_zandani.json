@@ -349,10 +349,10 @@
     "4a1b6bfd605e8eb75e6e08dfa5047844",
     "c1177875face93911e05e2284486a8b0",
     "7afaf2d892ae054f8ef367a3ad736d78",
-    "69ae07fc35964875929dec86bde7b8b1"
+    "69ae07fc35964875929dec86bde7b8b1",
+    "eb7bf2bb016a44aedcd421b3c6c7c9f2"
   ],
   "style_history": [
-    "Receipts Piece",
     "Trend Take",
     "Reaction Round-up",
     "Hard News Lead",
@@ -381,10 +381,10 @@
     "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "myth_vs_fact|Influencer|Trend Take",
     "timeline_shift|Kenyan music scene|Profile Beat",
     "myth_vs_fact|Kenya|Reaction Round-up",
     "story_progression|One Night Only|Hard News Lead",
@@ -463,6 +463,7 @@
     "policy_gap|Kenya Airways|Reaction Round-up",
     "myth_vs_fact|Stevo Simple Boy|Profile Beat",
     "accountability|Kenya|Hard News Lead",
-    "money_follow|Kalondu Musyimi|Receipts Piece"
+    "money_follow|Kalondu Musyimi|Receipts Piece",
+    "next_48_hours|Fally Ipupa|Reaction Round-up"
   ]
 }
