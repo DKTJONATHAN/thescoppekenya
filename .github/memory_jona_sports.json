@@ -273,10 +273,10 @@
     "c7b37e63691ea23038d69cac7e488620",
     "c0094e02f69231f0dd0fa67dba67b957",
     "a31535b668f8fee40256d5a9880d7177",
-    "4e2db78734503c697f5ac9316faa8ae1"
+    "4e2db78734503c697f5ac9316faa8ae1",
+    "a9c34fa8bf757bf1ef1141b26d442b14"
   ],
   "style_history": [
-    "Match Report",
     "Tactical Take",
     "Player Profile Beat",
     "Stat Story",
@@ -305,10 +305,10 @@
     "Tactical Take",
     "Stat Story",
     "Player Profile Beat",
-    "Match Report"
+    "Match Report",
+    "Tactical Take"
   ],
   "angle_history": [
-    "timeline_shift|Sunderland AFC|Match Report",
     "winners_losers|Transfer talks|Stat Story",
     "policy_gap|football|Cynical Pundit",
     "story_progression|David Raya|Tactical Take",
@@ -387,6 +387,7 @@
     "policy_gap|FIFA|Tactical Take",
     "story_progression|Nottingham Forest|Stat Story",
     "story_progression|football|Player Profile Beat",
-    "story_progression|Anthony Taylor|Match Report"
+    "story_progression|Anthony Taylor|Match Report",
+    "money_follow|football|Tactical Take"
   ]
 }
