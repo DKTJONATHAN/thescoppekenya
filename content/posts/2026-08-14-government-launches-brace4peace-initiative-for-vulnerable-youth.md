@@ -1,18 +1,20 @@
 ---
 title: "Government Launches BRACE4PEACE Program to Empower Vulnerable Youth"
 slug: "government-launches-brace4peace-initiative-for-vulnerable-youth"
-description: "Kenya launches the BRACE4PEACE initiative to provide vocational training to 450 youth across five counties to boost security ahead of the next election."
+description: "Government Launches BRACE4PEACE Program to Empower Vulnerable You: Kenya launches the BRACE4PEACE initiative to provide vocational training to 450 youth across"
+excerpt: "Beyond the Workshop: Are 450 Youth the State's New Election Shield? Deep in the dust caked streets of Isiolo and the humid back alleys of Ki"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/9dT1c6S/27ea99eaaef9.jpg"
 category: "Gossip"
 tags: ["kenya news", "brace4peace", "youth empowerment", "national security", "vocational training", "kenyan politics"]
+canonical: "https://zandani.co.ke/article/government-launches-brace4peace-initiative-for-vulnerable-youth"
 date: "2026-08-14T07:47:18Z"
 dateModified: "2026-08-14T07:47:18Z"
+focusKeyword: "Government Launches BRACE4PEACE Program to Empower Vulnerable You"
 schema: "NewsArticle"
 ---
 
-## Beyond the Workshop: Are 450 Youth the State's New Election Shield?
+## Beyond the Workshop: Are 450 Youth the State's New Election Shield? Government Launches BRACE4PEACE Program to Empower Vulnerable You is the central subject of the update.
 
 Deep in the dust-caked streets of Isiolo and the humid back-alleys of Kilifi, the government is betting that a welding torch or a tailoring kit can replace the Molotov cocktail. While the state presents the BRACE4PEACE initiative as a path to prosperity, the math suggests a different priority: securing the peace-and perhaps the ballot box-long before the first voter hits the 2027 polls.
 
