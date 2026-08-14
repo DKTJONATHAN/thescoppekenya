@@ -366,10 +366,10 @@
     "e9c75a6339a858f6e4a53c000b965d22",
     "c4564dc196f1103b5b0c37f12809e143",
     "ee64e2fb666bdbef91e2da6fbaef0652",
-    "064a566462bf6d1e32e77675d1ee0ae0"
+    "064a566462bf6d1e32e77675d1ee0ae0",
+    "c54b7ebcf228f20bb57184babcb75edb"
   ],
   "style_history": [
-    "Trend Take",
     "Explainer",
     "Reaction Round-up",
     "Hard News Lead",
@@ -398,10 +398,10 @@
     "Profile Beat",
     "Trend Take",
     "Explainer",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Profile Beat"
   ],
   "angle_history": [
-    "myth_vs_fact|Transformers|Explainer",
     "story_progression|Marriage|Trend Take",
     "story_progression|na|Hard News Lead",
     "next_48_hours|Wedding|Reaction Round-up",
@@ -480,6 +480,7 @@
     "accountability|Ariana Grande|Profile Beat",
     "winners_losers|Camp Rock 3|Trend Take",
     "myth_vs_fact|na|Explainer",
-    "next_48_hours|Big Brother|Reaction Round-up"
+    "next_48_hours|Big Brother|Reaction Round-up",
+    "timeline_shift|Carly Simon|Profile Beat"
   ]
 }
