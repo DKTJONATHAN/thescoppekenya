@@ -1,18 +1,20 @@
 ---
 title: "Ruto Orders State House Recognition for Science Fair Winners"
 slug: "ruto-orders-state-house-recognition-for-science-fair-winners"
-description: "President William Ruto has directed the Ministry of Education to host annual State House receptions for national science and engineering fair winners."
+description: "Ruto Orders State House Recognition for Science Fair Winners: President William Ruto has directed the Ministry of Education to host annual State House"
+excerpt: "Elevating STEM Innovation to National Status President William Ruto has directed the Ministry of Education to incorporate annual State House"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/pHsv1BG/9251db81de03.webp"
 category: "News"
 tags: ["kenya", "stem", "education", "innovation", "william ruto", "science fair"]
+canonical: "https://zandani.co.ke/article/ruto-orders-state-house-recognition-for-science-fair-winners"
 date: "2026-08-14T11:48:59Z"
 dateModified: "2026-08-14T11:48:59Z"
+focusKeyword: "Ruto Orders State House Recognition for Science Fair Winners"
 schema: "NewsArticle"
 ---
 
-## Elevating STEM Innovation to National Status
+## Elevating STEM Innovation to National Status Ruto Orders State House Recognition for Science Fair Winners is the central subject of the update.
 
 President William Ruto has directed the Ministry of Education to incorporate annual State House receptions for winners of the Kenya Science and Engineering Fair, establishing a new national platform for young innovators that begins in 2027.
 
