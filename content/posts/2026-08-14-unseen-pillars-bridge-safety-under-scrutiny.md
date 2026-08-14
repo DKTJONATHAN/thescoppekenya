@@ -1,20 +1,21 @@
 ---
 title: "The Unseen Pillars: A Chronicle of Bridge Safety Under Scrutiny"
 slug: "unseen-pillars-bridge-safety-under-scrutiny"
-description: "A storm-battered bridge, a swirling river - a tragic echo across centuries, where bridge safety under scrutiny becomes a grave historical refrain."
+description: "The Unseen Pillars: A Chronicle of Bridge Safety Under Scrutiny: A storm-battered bridge, a swirling river - a tragic echo across centuries, where bridge"
+excerpt: "The wind howled a dirge across the Firth of Tay on that grim December evening of 1879. Rain lashed like a thousand whips, blurring the grand"
 author: "The Chronicler"
 author_url: "https://zandani.co.ke/author/the-chronicler"
 image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200"
 category: "Chronicles"
-tags: ["chronicles", "tay-bridge-disaster", "sir-thomas-bouch", "north-british-railway", "narok-governor", "mara-river", "bridge-safety-under-scrutiny", "infrastructure-failure", "tragic-irony"]
+tags: ["chronicles", "tay-bridge-disaster", "sir-thomas-bouch", "north-british-railway", "narok-governor", "mara-river", "bridge-safety-under-scrutiny", "infrastructure-failure"]
 canonical: "https://zandani.co.ke/article/unseen-pillars-bridge-safety-under-scrutiny"
 date: "2026-08-14T11:53:49Z"
-authorUrl: "https://zandani.co.ke/author/the-chronicler"
 dateModified: "2026-08-14T11:53:49Z"
+focusKeyword: "The Unseen Pillars: A Chronicle of Bridge Safety Under Scrutiny"
 schema: "NewsArticle"
 ---
 
-The wind howled a dirge across the Firth of Tay on that grim December evening of 1879. Rain lashed like a thousand whips, blurring the grand lattice work of Sir Thomas Bouch’s engineering marvel, the Tay Rail Bridge. A train, laden with the hopes and quiet anxieties of its passengers, rumbled confidently onto its spans, a behemoth against the tempest. Then, a shriek of tortured iron, a flicker of light against the churning blackness, and silence. The bridge, the train, and all aboard vanished into the watery abyss, swallowed by the raging storm and the hubris of a design flawed by haste and ambition. Seventy-five souls, it was later accounted, dissolved into the icy embrace of the Tay, a stark monument to the fragile promises of human ingenuity.
+The wind howled a dirge across the Firth of Tay on that grim December evening of 1879. Rain lashed like a thousand whips, blurring the grand lattice work of Sir Thomas Bouch’s engineering marvel, the Tay Rail Bridge. A train, laden with the hopes and quiet anxieties of its passengers, rumbled confidently onto its spans, a behemoth against the tempest. Then, a shriek of tortured iron, a flicker of light against the churning blackness, and silence. The bridge, the train, and all aboard vanished into the watery abyss, swallowed by the raging storm and the hubris of a design flawed by haste and ambition. Seventy-five souls, it was later accounted, dissolved into the icy embrace of the Tay, a stark monument to the fragile promises of human ingenuity. The Unseen Pillars: A Chronicle of Bridge Safety Under Scrutiny is the central subject of the update.
 
 ## The Engineer’s Folly and the Furious Firth
 
