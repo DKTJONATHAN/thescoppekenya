@@ -1,21 +1,20 @@
 ---
-title: "Carly Simon's New Album 'Comes in Waves' Addresses Taylor Divorce
+title: "'Carly Simon's New Album 'Comes in Waves' Addresses Taylor Divorce"
 slug: "carly-simon-divorce-james-taylor-album-impact-children"
-description: "Carly Simon's new album, 'Comes in Waves,' features a song 'Mother of Pearl,' offering insight into her 1983 divorce from James Taylor. It addresses the impact on their children. Discover the full story."
+description: "'Carly Simon's New Album 'Comes in Waves' Addresses Taylor Divorc: Carly Simon's new album, 'Comes in Waves,' features a song 'Mother of Pearl,' offering"
+excerpt: "Carly Simon's 'Comes in Waves' Explores Her Past Separation Through Her Children's Eyes Eighteen years since her previous release, Carly Sim"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/zVCDNm6L/b287d67535af.jpg"
-og_title: "Carly Simon's New Song Reveals James Taylor Divorce Impact"
-og_description: "Carly Simon's new album 'Comes in Waves' features 'Mother of Pearl,' a song revealing the impact of her divorce from James Taylor on their children. Get the details."
-focus_keyword: "carly simon divorce"
 category: "Entertainment"
 tags: ["carly simon", "james taylor", "music", "divorce", "celebrity news", "album review", "family"]
+canonical: "https://zandani.co.ke/article/carly-simon-divorce-james-taylor-album-impact-children"
 date: "2026-08-14T22:54:07Z"
 dateModified: "2026-08-14T22:54:07Z"
+focusKeyword: "'Carly Simon's New Album 'Comes in Waves' Addresses Taylor Divorc"
 schema: "NewsArticle"
 ---
 
-## Carly Simon's 'Comes in Waves' Explores Her Past Separation Through Her Children's Eyes
+## Carly Simon's 'Comes in Waves' Explores Her Past Separation Through Her Children's Eyes "Carly Simon's New Album 'Comes in Waves' Addresses Taylor Divorc is the central subject of the update.
 
 Eighteen years since her previous release, Carly Simon's new album, 'Comes in Waves,' delves into the profound echoes of her well-documented 1983 separation from James Taylor. With the track 'Mother of Pearl,' Simon initiates a heartfelt conversation with her daughter, Sarah, examining how the fracturing of their family unit has endured.
 
