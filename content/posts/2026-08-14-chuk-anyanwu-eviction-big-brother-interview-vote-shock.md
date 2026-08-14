@@ -1,21 +1,20 @@
 ---
-title: "Chuk Anyanwu Eviction: Big Brother Exit Interview & Shocking Vote
+title: "'Chuk Anyanwu Eviction: Big Brother Exit Interview & Shocking Vote"
 slug: "chuk-anyanwu-eviction-big-brother-interview-vote-shock"
-description: "Chuk Anyanwu discusses his shocking 9-1 Big Brother eviction, refusal to hug LaLa Verrett, and Kamu Kirk's Veto decision. Learn more about his post-exit thoughts."
+description: "'Chuk Anyanwu Eviction: Big Brother Exit Interview & Shocking Vot: Chuk Anyanwu discusses his shocking 9-1 Big Brother eviction, refusal to hug LaLa Verrett,"
+excerpt: "Big Brother Kenya's Shockwaves: Fans Reel as Chuk Exits, LaLa Seizes Power The Big Brother Kenya house is vibrating with aftershocks after C"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/FLVRwz3b/c0127f2d962e.jpg"
-og_title: "Chuk Anyanwu on Big Brother Eviction: 9-1 Vote & LaLa Snub"
-og_description: "Chuk Anyanwu unpacks his surprising 9-1 Big Brother eviction. He discusses LaLa Verrett, Kamu Kirk, and Taylor Brown's comments."
-focus_keyword: "Chuk Anyanwu eviction"
 category: "Entertainment"
 tags: ["chuk anyanwu", "big brother", "eviction", "lala verrett", "reality tv", "entertainment news"]
+canonical: "https://zandani.co.ke/article/chuk-anyanwu-eviction-big-brother-interview-vote-shock"
 date: "2026-08-14T15:29:25Z"
 dateModified: "2026-08-14T15:29:25Z"
+focusKeyword: "'Chuk Anyanwu Eviction: Big Brother Exit Interview & Shocking Vot"
 schema: "NewsArticle"
 ---
 
-## Big Brother Kenya's Shockwaves: Fans Reel as Chuk Exits, LaLa Seizes Power
+## Big Brother Kenya's Shockwaves: Fans Reel as Chuk Exits, LaLa Seizes Power "Chuk Anyanwu Eviction: Big Brother Exit Interview & Shocking Vot is the central subject of the update.
 
 The Big Brother Kenya house is vibrating with aftershocks after Chuk Anyanwu's blindsiding 9-1 eviction vote. LaLa Verrett's unexpected rise to Head of Household has ignited a furious scramble for safety, leaving fans buzzing with predictions of betrayals and power plays for the coming week. The game has officially changed.
 
