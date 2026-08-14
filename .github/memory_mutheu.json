@@ -364,10 +364,10 @@
     "c1870fd10969f1353c0cac1d9a6e0be8",
     "79cc50ffc0914ce98eac995845337dc2",
     "e9c75a6339a858f6e4a53c000b965d22",
-    "c4564dc196f1103b5b0c37f12809e143"
+    "c4564dc196f1103b5b0c37f12809e143",
+    "ee64e2fb666bdbef91e2da6fbaef0652"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Trend Take",
     "Explainer",
@@ -396,10 +396,10 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Profile Beat",
-    "Trend Take"
+    "Trend Take",
+    "Explainer"
   ],
   "angle_history": [
-    "policy_gap|Erin Moriarty|Hard News Lead",
     "myth_vs_fact|na|Reaction Round-up",
     "myth_vs_fact|Transformers|Explainer",
     "story_progression|Marriage|Trend Take",
@@ -478,6 +478,7 @@
     "myth_vs_fact|Jamie Lee Curtis|Hard News Lead",
     "accountability|Andy Cohen|Reaction Round-up",
     "accountability|Ariana Grande|Profile Beat",
-    "winners_losers|Camp Rock 3|Trend Take"
+    "winners_losers|Camp Rock 3|Trend Take",
+    "myth_vs_fact|na|Explainer"
   ]
 }
