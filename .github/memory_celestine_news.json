@@ -421,10 +421,10 @@
     "a5a50dce9a7cdc2fd212f96eb7005355",
     "8a8be8328be7a344c71a448726492b77",
     "3bea5ae82e041f482dd5ead919968207",
-    "1c6801b30b0cd39285490f857c75621f"
+    "1c6801b30b0cd39285490f857c75621f",
+    "ccf64ed5079734a34f9835987d444ec9"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
@@ -453,10 +453,10 @@
     "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "accountability|Kenya|Reaction & Voices",
     "money_follow|Government Appointments|Power Accountability",
     "story_progression|Kenya|Hard News Lead",
     "winners_losers|Kenya|Explainer",
@@ -535,6 +535,7 @@
     "myth_vs_fact|HELB|Context Backgrounder",
     "winners_losers|AGOA|Reaction & Voices",
     "policy_gap|weather forecast|Power Accountability",
-    "winners_losers|AGOA|Explainer"
+    "winners_losers|AGOA|Explainer",
+    "winners_losers|Kenya|Hard News Lead"
   ]
 }
