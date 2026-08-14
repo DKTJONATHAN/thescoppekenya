@@ -1,18 +1,20 @@
 ---
 title: "Arsenal target Jarell Quansah and Ezri Konsa amid injury woes"
 slug: "arsenal-target-jarell-quansah-and-ezri-konsa-amid-injury-woes"
-description: "Arsenal is exploring deals for Jarell Quansah and Ezri Konsa as the club tackles a defensive injury crisis ahead of the new Premier League season."
+description: "Arsenal target Jarell Quansah and Ezri Konsa amid injury woes: Arsenal is exploring deals for Jarell Quansah and Ezri Konsa as the club tackles a defensive"
+excerpt: "Defensive Vulnerability: The High Cost of Boardroom Hesitation The refusal to bridge a twenty million pound valuation gap has left Arsenal’s"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/XZLgjysW/221aa2f88da0.jpg"
 category: "Sports"
 tags: ["arsenal", "premier league", "football transfers", "kenyan football fans", "sports news"]
+canonical: "https://zandani.co.ke/article/arsenal-target-jarell-quansah-and-ezri-konsa-amid-injury-woes"
 date: "2026-08-14T11:12:37Z"
 dateModified: "2026-08-14T11:12:37Z"
+focusKeyword: "Arsenal target Jarell Quansah and Ezri Konsa amid injury woes"
 schema: "NewsArticle"
 ---
 
-## Defensive Vulnerability: The High Cost of Boardroom Hesitation
+## Defensive Vulnerability: The High Cost of Boardroom Hesitation Arsenal target Jarell Quansah and Ezri Konsa amid injury woes is the central subject of the update.
 
 The refusal to bridge a twenty-million-pound valuation gap has left Arsenal’s defensive infrastructure dangerously thin. With William Saliba and Jurrien Timber struggling to hit full fitness before the season opener, the ongoing standoff with Aston Villa regarding Ezri Konsa is no longer just a transfer negotiation. It has become a tactical liability that threatens the club's structural integrity when they need it most.
 
