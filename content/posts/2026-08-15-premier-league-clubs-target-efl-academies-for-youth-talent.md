@@ -1,18 +1,20 @@
 ---
 title: "Premier League clubs target EFL academies for youth talent"
 slug: "premier-league-clubs-target-efl-academies-for-youth-talent"
-description: "Premier League teams are increasing recruitment from EFL and Scottish academies to bypass post-Brexit restrictions and secure young football talent."
+description: "Premier League clubs target EFL academies for youth talent: Premier League teams are increasing recruitment from EFL and Scottish academies to bypass"
+excerpt: "The Domestic Talent Grab: How the Premier League Hollows Out the Pyramid The transfer window is frequently painted as a testament to elite s"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/3yVVLYj7/8bcb0560dd78.png"
 category: "Sports"
 tags: ["football", "premier league", "efl", "sports news", "youth football", "transfer news"]
+canonical: "https://zandani.co.ke/article/premier-league-clubs-target-efl-academies-for-youth-talent"
 date: "2026-08-15T10:44:20Z"
 dateModified: "2026-08-15T10:44:20Z"
+focusKeyword: "Premier League clubs target EFL academies for youth talent"
 schema: "NewsArticle"
 ---
 
-## The Domestic Talent Grab: How the Premier League Hollows Out the Pyramid
+## The Domestic Talent Grab: How the Premier League Hollows Out the Pyramid Premier League clubs target EFL academies for youth talent is the central subject of the update.
 
 The transfer window is frequently painted as a testament to elite scouting networks, but that is a comforting fiction. In truth, the Premier League has pivoted to a predatory model, aggressively stripping EFL academies of their prospects. By weaponizing systemic instability to hoard young players, the top flight is effectively choking the lower leagues in the name of squad depth.
 
