@@ -1,18 +1,20 @@
 ---
 title: "Why Kenyan students should prioritize social impact over titles"
 slug: "kenyan-students-should-prioritize-social-impact-over-job-titles"
-description: "Kenyan students are encouraged to shift focus from pursuing specific job titles to solving societal problems for a more meaningful career path."
+description: "Why Kenyan students should prioritize social impact over titles: Kenyan students are encouraged to shift focus from pursuing specific job titles to solving"
+excerpt: "Beyond the Certificate: Rethinking Education Reform The Kenyan classroom of the 1970s functioned as an extension of the colonial civil servi"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/HDcx0mgv/a642c9a959eb.webp"
 category: "Opinions"
 tags: ["kenya education", "kcse", "career development", "social impact", "education reform", "kenyan students"]
+canonical: "https://zandani.co.ke/article/kenyan-students-should-prioritize-social-impact-over-job-titles"
 date: "2026-08-15T09:39:02Z"
 dateModified: "2026-08-15T09:39:02Z"
+focusKeyword: "Why Kenyan students should prioritize social impact over titles"
 schema: "NewsArticle"
 ---
 
-## Beyond the Certificate: Rethinking Education Reform
+## Beyond the Certificate: Rethinking Education Reform Why Kenyan students should prioritize social impact over titles is the central subject of the update.
 
 The Kenyan classroom of the 1970s functioned as an extension of the colonial civil service, built upon the rigid intellectual scaffolding of Wilhelm von Humboldt. This inheritance remains a persistent weight. Even now, families often view education through the narrow lens of prestigious job titles, prioritizing status over the fluid, demanding requirements of our current landscape.
 
