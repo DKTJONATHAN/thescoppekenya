@@ -1,7 +1,8 @@
 ---
 title: "Anne Waiguru's Political Rise After the NYS Scandal"
 slug: "anne-waiguru-s-political-rise-after-the-nys-scandal"
-description: "Explore Anne Waiguru's political trajectory in Kenya, from the 2015 NYS scandal and public outcry to her eventual election as Governor of Kirinyaga County."
+description: "Anne Waiguru's Political Rise After the NYS Scandal: Explore Anne Waiguru's political trajectory in Kenya, from the 2015 NYS scandal and public outcry to her"
+excerpt: "In 2015, the Ministry of Devolution in Kenya faced a national crisis when nearly 800 million shillings disappeared from the National Youth S"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/RkpKR5jW/2ed994d23bcb.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["anne-waiguru", "nys-scandal", "kenyan-politics", "political-resilience", "devolution-cabinet-secretary"]
 canonical: "https://zandani.co.ke/article/anne-waiguru-s-political-rise-after-the-nys-scandal"
 date: "2026-08-15T12:58:50Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-08-15T12:58:50Z"
+focusKeyword: "Anne Waiguru's Political Rise After the NYS Scandal"
 schema: "NewsArticle"
 ---
-In 2015, the Ministry of Devolution in Kenya faced a national crisis when nearly 800 million shillings disappeared from the National Youth Service. Despite facing severe public outcry and multiple impeachment motions, former Cabinet Secretary Anne Waiguru eventually secured the governorship of Kirinyaga County.
+
+In 2015, the Ministry of Devolution in Kenya faced a national crisis when nearly 800 million shillings disappeared from the National Youth Service. Despite facing severe public outcry and multiple impeachment motions, former Cabinet Secretary Anne Waiguru eventually secured the governorship of Kirinyaga County. Anne Waiguru's Political Rise After the NYS Scandal is the central subject of the update.
 
 ## The Resilience of Political Careers in Kenya
 
