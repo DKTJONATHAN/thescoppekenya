@@ -1,18 +1,20 @@
 ---
 title: "EPRA Reduces Diesel Prices While Petrol and Kerosene Remain Stable"
 slug: "epra-reduces-diesel-prices-while-petrol-and-kerosene-remain-stable"
-description: "The Energy and Petroleum Regulatory Authority has lowered diesel prices by KSh5 per litre while maintaining rates for petrol and kerosene in Kenya."
+description: "EPRA Reduces Diesel Prices While Petrol and Kerosene Remain Stabl: The Energy and Petroleum Regulatory Authority has lowered diesel prices by KSh5 per litre"
+excerpt: "Small Shifts, Same Fares EPRA has recalibrated local fuel costs for the upcoming cycle through September 14, marking a KSh 5 per litre decre"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/KxJSHKn2/5e689ce2c176.jpg"
 category: "Gossip"
 tags: ["epra", "fuel prices", "kenya energy", "diesel price", "cost of living"]
+canonical: "https://zandani.co.ke/article/epra-reduces-diesel-prices-while-petrol-and-kerosene-remain-stable"
 date: "2026-08-15T06:55:21Z"
 dateModified: "2026-08-15T06:55:21Z"
+focusKeyword: "EPRA Reduces Diesel Prices While Petrol and Kerosene Remain Stabl"
 schema: "NewsArticle"
 ---
 
-## Small Shifts, Same Fares
+## Small Shifts, Same Fares EPRA Reduces Diesel Prices While Petrol and Kerosene Remain Stabl is the central subject of the update.
 
 EPRA has recalibrated local fuel costs for the upcoming cycle through September 14, marking a KSh 5 per litre decrease for diesel. Meanwhile, super petrol stays fixed at KSh 214.03 and kerosene remains at KSh 191.38. This shift brings diesel to KSh 217.86, yet for the average person commuting, the financial reality remains unchanged.
 
