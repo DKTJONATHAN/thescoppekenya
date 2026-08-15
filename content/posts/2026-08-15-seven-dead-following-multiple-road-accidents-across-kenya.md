@@ -1,18 +1,20 @@
 ---
 title: "Seven Dead Following Multiple Road Accidents Across Kenya"
 slug: "seven-dead-following-multiple-road-accidents-across-kenya"
-description: "Seven people died and dozens were injured in a series of accidents in Makueni, Gataka Road, and the Thika-Garissa highway over the weekend in Kenya."
+description: "Seven Dead Following Multiple Road Accidents Across Kenya: Seven people died and dozens were injured in a series of accidents in Makueni, Gataka Road, and the"
+excerpt: "The Deadly Math of Kenya's Roads Seven lives ended in a twisted wreck in Makueni on Saturday morning, but the tragedy is not that the vehicl"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/ym3kK0Yh/2f76d60382b7.webp"
 category: "News"
 tags: ["kenya", "road accidents", "makueni", "matatu crash", "traffic safety", "breaking news"]
+canonical: "https://zandani.co.ke/article/seven-dead-following-multiple-road-accidents-across-kenya"
 date: "2026-08-15T05:30:05Z"
 dateModified: "2026-08-15T05:30:05Z"
+focusKeyword: "Seven Dead Following Multiple Road Accidents Across Kenya"
 schema: "NewsArticle"
 ---
 
-## The Deadly Math of Kenya's Roads
+## The Deadly Math of Kenya's Roads Seven Dead Following Multiple Road Accidents Across Kenya is the central subject of the update.
 
 Seven lives ended in a twisted wreck in Makueni on Saturday morning, but the tragedy is not that the vehicle crashed. The tragedy is that a 45-seater was carrying 50 passengers in full view of the public, and no one stopped it.
 

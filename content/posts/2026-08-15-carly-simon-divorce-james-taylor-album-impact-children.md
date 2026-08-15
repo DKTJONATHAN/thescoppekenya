@@ -14,7 +14,7 @@ focusKeyword: "'Carly Simon's New Album 'Comes in Waves' Addresses Taylor Divorc
 schema: "NewsArticle"
 ---
 
-## Carly Simon's 'Comes in Waves' Explores Her Past Separation Through Her Children's Eyes "Carly Simon's New Album 'Comes in Waves' Addresses Taylor Divorc is the central subject of the update.
+## Carly Simon's 'Comes in Waves' Explores Her Past Separation Through Her Children's Eyes "Carly Simon's New Album 'Comes in Waves' Addresses Taylor Divorc is the central subject of the update. 'Carly Simon's New Album 'Comes in Waves' Addresses Taylor Divorc is the central subject of the update.
 
 Eighteen years since her previous release, Carly Simon's new album, 'Comes in Waves,' delves into the profound echoes of her well-documented 1983 separation from James Taylor. With the track 'Mother of Pearl,' Simon initiates a heartfelt conversation with her daughter, Sarah, examining how the fracturing of their family unit has endured.
 
