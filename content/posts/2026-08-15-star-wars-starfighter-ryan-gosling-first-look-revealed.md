@@ -14,7 +14,7 @@ focusKeyword: "'Star Wars: Starfighter First Look Unveiled with Ryan Gosling"
 schema: "NewsArticle"
 ---
 
-## Star Wars Starfighter Ryan Gosling Takes Helm in New Galactic Era "Star Wars: Starfighter First Look Unveiled with Ryan Gosling is the central subject of the update.
+## Star Wars Starfighter Ryan Gosling Takes Helm in New Galactic Era "Star Wars: Starfighter First Look Unveiled with Ryan Gosling is the central subject of the update. 'Star Wars: Starfighter First Look Unveiled with Ryan Gosling is the central subject of the update.
 
 At Disney's D23 Expo, "Star Wars: Starfighter" officially introduced Ryan Gosling in a central role, signaling a major new direction for the franchise under director Shawn Levy. This upcoming film aims to redefine the saga's future beyond the Skywalker era.
 
