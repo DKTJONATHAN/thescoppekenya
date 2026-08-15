@@ -284,10 +284,10 @@
     "6a31680389eb614991a7dbe1ddf1720a",
     "a1277cfae71112ce0aad0032a2981781",
     "86b3a76f3d042f7319d0680ad2a9e838",
-    "6c4e3e8f5d18d3e2343b7c81e333dcb6"
+    "6c4e3e8f5d18d3e2343b7c81e333dcb6",
+    "31482ac55c1e9cfc63fdf6035c145bc5"
   ],
   "style_history": [
-    "Receipts Piece",
     "Trend Take",
     "Hard News Lead",
     "Profile Beat",
@@ -316,10 +316,10 @@
     "Hard News Lead",
     "Receipts Piece",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
-    "impact_on_citizens|Kenya|Reaction Round-up",
     "myth_vs_fact|parenting|Receipts Piece",
     "impact_on_citizens|Interior Ministry|Trend Take",
     "money_follow|bilateral trade|Hard News Lead",
@@ -398,6 +398,7 @@
     "policy_gap|Kenya Power|Hard News Lead",
     "money_follow|Kenya Power|Receipts Piece",
     "myth_vs_fact|Economic policy|Reaction Round-up",
-    "winners_losers|Kenya|Profile Beat"
+    "winners_losers|Kenya|Profile Beat",
+    "money_follow|EPRA|Trend Take"
   ]
 }
