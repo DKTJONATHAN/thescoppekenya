@@ -1,18 +1,20 @@
 ---
 title: "Kindiki reveals secret meetings to advise Gachagua on loyalty"
 slug: "kindiki-reveals-secret-advisory-meetings-with-gachagua"
-description: "Deputy President Kithure Kindiki says he held private talks with Rigathi Gachagua to prevent his impeachment by urging loyalty to President William Ruto."
+description: "Kindiki reveals secret meetings to advise Gachagua on loyalty: Deputy President Kithure Kindiki says he held private talks with Rigathi Gachagua to prevent his"
+excerpt: "The Architecture of Political Exile Deputy President Kithure Kindiki has shed light on the clandestine warnings he issued to his predecessor"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/s9mL1X7F/9026ca59d8eb.webp"
 category: "News"
 tags: ["kenya politics", "kithure kindiki", "rigathi gachagua", "william ruto", "impeachment", "kenya news"]
+canonical: "https://zandani.co.ke/article/kindiki-reveals-secret-advisory-meetings-with-gachagua"
 date: "2026-08-15T11:24:58Z"
 dateModified: "2026-08-15T11:24:58Z"
+focusKeyword: "Kindiki reveals secret meetings to advise Gachagua on loyalty"
 schema: "NewsArticle"
 ---
 
-## The Architecture of Political Exile
+## The Architecture of Political Exile Kindiki reveals secret meetings to advise Gachagua on loyalty is the central subject of the update.
 
 Deputy President Kithure Kindiki has shed light on the clandestine warnings he issued to his predecessor, Rigathi Gachagua, during his tenure as the Interior Cabinet Secretary. These private consultations, characterized by Kindiki as a final attempt to align Gachagua with the administration, highlight the fragile power dynamics that often precede the removal of high-ranking officials in the Kenyan executive.
 
