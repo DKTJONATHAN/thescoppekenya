@@ -14,7 +14,7 @@ focusKeyword: "'Ernest Harden Jr. Reflects on Friendship with Bette Davis, Emmy"
 schema: "NewsArticle"
 ---
 
-## Ernest Harden Jr. Reflects on Full-Circle Emmy Nod, Bette Davis Friendship "Ernest Harden Jr. Reflects on Friendship with Bette Davis, Emmy  is the central subject of the update.
+## Ernest Harden Jr. Reflects on Full-Circle Emmy Nod, Bette Davis Friendship "Ernest Harden Jr. Reflects on Friendship with Bette Davis, Emmy  is the central subject of the update. 'Ernest Harden Jr. Reflects on Friendship with Bette Davis, Emmy is the central subject of the update.
 
 Fans are buzzing about Ernest Harden Jr.'s Emmy nomination for "The Pitt." His journey to this recognition holds a deeper, more poignant layer, intertwining with a legendary mentorship. It’s a compelling narrative of perseverance, profoundly shaped by none other than the iconic Bette Davis.
 
