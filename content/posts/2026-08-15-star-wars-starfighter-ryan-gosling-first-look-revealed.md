@@ -1,21 +1,20 @@
 ---
-title: "Star Wars: Starfighter First Look Unveiled with Ryan Gosling
+title: "'Star Wars: Starfighter First Look Unveiled with Ryan Gosling"
 slug: "star-wars-starfighter-ryan-gosling-first-look-revealed"
-description: "Get the first glimpse of Star Wars: Starfighter, featuring Ryan Gosling as Kade Auberon. Shawn Levy directs this new original story, set for a May 2027 release. Discover more details today!"
+description: "'Star Wars: Starfighter First Look Unveiled with Ryan Gosling: Get the first glimpse of Star Wars: Starfighter, featuring Ryan Gosling as Kade Auberon. Shawn"
+excerpt: "Star Wars Starfighter Ryan Gosling Takes Helm in New Galactic Era At Disney's D23 Expo, 'Star Wars: Starfighter' officially introduced Ryan"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/B5yWBq45/e46a48047059.jpg"
-og_title: "Star Wars: Starfighter – Ryan Gosling Unveiled at D23"
-og_description: "See Ryan Gosling in the first look for Star Wars: Starfighter! Shawn Levy directs the new original film, releasing May 2027. Get the details."
-focus_keyword: "Star Wars Starfighter Ryan Gosling"
 category: "Entertainment"
 tags: ["star wars starfighter", "ryan gosling", "shawn levy", "d23 expo", "sci-fi film", "entertainment"]
+canonical: "https://zandani.co.ke/article/star-wars-starfighter-ryan-gosling-first-look-revealed"
 date: "2026-08-15T07:09:37Z"
 dateModified: "2026-08-15T07:09:37Z"
+focusKeyword: "'Star Wars: Starfighter First Look Unveiled with Ryan Gosling"
 schema: "NewsArticle"
 ---
 
-## Star Wars Starfighter Ryan Gosling Takes Helm in New Galactic Era
+## Star Wars Starfighter Ryan Gosling Takes Helm in New Galactic Era "Star Wars: Starfighter First Look Unveiled with Ryan Gosling is the central subject of the update.
 
 At Disney's D23 Expo, "Star Wars: Starfighter" officially introduced Ryan Gosling in a central role, signaling a major new direction for the franchise under director Shawn Levy. This upcoming film aims to redefine the saga's future beyond the Skywalker era.
 
