@@ -369,10 +369,10 @@
     "064a566462bf6d1e32e77675d1ee0ae0",
     "c54b7ebcf228f20bb57184babcb75edb",
     "d2cc4790bf3765414a5fd957b951a6b0",
-    "3e58c4383df2e4d27c6238a003000e14"
+    "3e58c4383df2e4d27c6238a003000e14",
+    "8030676e53e2b51de67b0aeb11f5f494"
   ],
   "style_history": [
-    "Hard News Lead",
     "Trend Take",
     "Explainer",
     "Profile Beat",
@@ -401,10 +401,10 @@
     "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
-    "next_48_hours|Wedding|Reaction Round-up",
     "timeline_shift|Music|Explainer",
     "story_progression|na|Profile Beat",
     "story_progression|celebrity wedding|Trend Take",
@@ -483,6 +483,7 @@
     "next_48_hours|Big Brother|Reaction Round-up",
     "timeline_shift|Carly Simon|Profile Beat",
     "timeline_shift|na|Hard News Lead",
-    "story_progression|Actor|Explainer"
+    "story_progression|Actor|Explainer",
+    "myth_vs_fact|na|Trend Take"
   ]
 }
