@@ -274,10 +274,10 @@
     "c0094e02f69231f0dd0fa67dba67b957",
     "a31535b668f8fee40256d5a9880d7177",
     "4e2db78734503c697f5ac9316faa8ae1",
-    "a9c34fa8bf757bf1ef1141b26d442b14"
+    "a9c34fa8bf757bf1ef1141b26d442b14",
+    "82cb0412ecec492c22e179241d4a0a30"
   ],
   "style_history": [
-    "Tactical Take",
     "Player Profile Beat",
     "Stat Story",
     "Match Report",
@@ -306,10 +306,10 @@
     "Stat Story",
     "Player Profile Beat",
     "Match Report",
-    "Tactical Take"
+    "Tactical Take",
+    "Cynical Pundit"
   ],
   "angle_history": [
-    "winners_losers|Transfer talks|Stat Story",
     "policy_gap|football|Cynical Pundit",
     "story_progression|David Raya|Tactical Take",
     "story_progression|Liverpool FC|Player Profile Beat",
@@ -388,6 +388,7 @@
     "story_progression|Nottingham Forest|Stat Story",
     "story_progression|football|Player Profile Beat",
     "story_progression|Anthony Taylor|Match Report",
-    "money_follow|football|Tactical Take"
+    "money_follow|football|Tactical Take",
+    "accountability|football recruitment|Cynical Pundit"
   ]
 }
