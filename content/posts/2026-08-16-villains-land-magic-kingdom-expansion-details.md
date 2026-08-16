@@ -1,21 +1,20 @@
 ---
-title: "Villains Land Expansion Details Revealed for Disney World
+title: "'Villains Land Expansion Details Revealed for Disney World"
 slug: "villains-land-magic-kingdom-expansion-details"
-description: "Disney World unveiled new details for its Villains Land expansion at Magic Kingdom, featuring two new rides and 13 iconic villains. Learn more about the exciting additions."
+description: "'Villains Land Expansion Details Revealed for Disney World: Disney World unveiled new details for its Villains Land expansion at Magic Kingdom, featuring two"
+excerpt: "Villains Land Magic Kingdom Sparks Furious Fan Feud The latest D23 revelations for Magic Kingdom's Villains Land have sparked a fierce debat"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/WNDDJv1B/e262eb63f738.jpg"
-og_title: "Disney World Unveils Major Villains Land Expansion"
-og_description: "Magic Kingdom's new Villains Land expansion includes two new rides and 13 iconic villains revealed at D23. Get details!"
-focus_keyword: "Villains Land Magic Kingdom"
 category: "Entertainment"
 tags: ["disney world", "villains land", "magic kingdom", "theme parks", "d23", "maleficent", "imagineers"]
+canonical: "https://zandani.co.ke/article/villains-land-magic-kingdom-expansion-details"
 date: "2026-08-16T07:11:47Z"
 dateModified: "2026-08-16T07:11:47Z"
+focusKeyword: "'Villains Land Expansion Details Revealed for Disney World"
 schema: "NewsArticle"
 ---
 
-## Villains Land Magic Kingdom Sparks Furious Fan Feud
+## Villains Land Magic Kingdom Sparks Furious Fan Feud "Villains Land Expansion Details Revealed for Disney World is the central subject of the update.
 
 The latest D23 revelations for Magic Kingdom's Villains Land have sparked a fierce debate among Disney enthusiasts globally, and right here in Kenya. While some celebrate the dark allure of new attractions, others fear the beloved park might be losing its traditional magic, creating clear winners and losers in the fan community.
 
