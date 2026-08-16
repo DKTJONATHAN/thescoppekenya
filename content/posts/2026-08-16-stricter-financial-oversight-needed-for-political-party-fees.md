@@ -1,18 +1,20 @@
 ---
 title: "Need for stricter financial oversight of political party fees"
 slug: "stricter-financial-oversight-needed-for-political-party-fees"
-description: "Kenya requires stronger regulation of political party nomination fees to ensure transparency and prevent exploitation of candidates by parties."
+description: "Need for stricter financial oversight of political party fees: Kenya requires stronger regulation of political party nomination fees to ensure transparency and"
+excerpt: "The Auctioning of Our Ballot Political parties often claim that nomination fees are merely a necessary mechanism to fund grassroots mobiliza"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/r2R3vYjs/96cc3268a4b5.png"
 category: "Opinions"
 tags: ["kenya politics", "political parties act", "governance", "electoral reforms", "political transparency"]
+canonical: "https://zandani.co.ke/article/stricter-financial-oversight-needed-for-political-party-fees"
 date: "2026-08-16T09:40:44Z"
 dateModified: "2026-08-16T09:40:44Z"
+focusKeyword: "Need for stricter financial oversight of political party fees"
 schema: "NewsArticle"
 ---
 
-## The Auctioning of Our Ballot
+## The Auctioning of Our Ballot Need for stricter financial oversight of political party fees is the central subject of the update.
 
 Political parties often claim that nomination fees are merely a necessary mechanism to fund grassroots mobilization and manage internal elections. This comfortable narrative is a lie designed to shield an industry that has morphed into a private enterprise where democratic participation is traded for cash.
 
