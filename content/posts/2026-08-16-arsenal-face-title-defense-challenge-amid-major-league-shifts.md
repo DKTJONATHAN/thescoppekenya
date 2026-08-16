@@ -1,18 +1,20 @@
 ---
 title: "Arsenal face title defense challenge amid major league shifts"
 slug: "arsenal-face-title-defense-challenge-amid-major-league-shifts"
-description: "Arsenal enter the new season as defending Premier League champions while facing heavy competition from rivals undergoing major managerial changes."
+description: "Arsenal face title defense challenge amid major league shifts: Arsenal enter the new season as defending Premier League champions while facing heavy"
+excerpt: "Tactical Refinement in the 2026/27 Title Defense Arsenal begins the 2026/27 campaign following a seven point Premier League title win. The c"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/r2gtYP63/6b05c8d7f311.jpg"
 category: "Sports"
 tags: ["premier league", "arsenal fc", "football news", "kenya sports", "english premier league"]
+canonical: "https://zandani.co.ke/article/arsenal-face-title-defense-challenge-amid-major-league-shifts"
 date: "2026-08-16T10:44:43Z"
 dateModified: "2026-08-16T10:44:43Z"
+focusKeyword: "Arsenal face title defense challenge amid major league shifts"
 schema: "NewsArticle"
 ---
 
-## Tactical Refinement in the 2026/27 Title Defense
+## Tactical Refinement in the 2026/27 Title Defense Arsenal face title defense challenge amid major league shifts is the central subject of the update.
 
 Arsenal begins the 2026/27 campaign following a seven-point Premier League title win. The club has prioritized surgical recruitment over extensive squad turnover. Mikel Arteta has directed £109 million toward two primary acquisitions, signaling a belief that established tactical continuity remains superior to the radical roster shifts undertaken by direct competitors.
 
