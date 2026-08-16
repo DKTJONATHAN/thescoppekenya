@@ -428,10 +428,10 @@
     "a6c452a98fde4e3ed0f14ae7c5a6bf80",
     "f67888b93bdb25394d1fb8baeaefd0dd",
     "fdeeb100bded7d6c5c5cb407fa159e80",
-    "2ce5b41657ee7ff6bb20e9e8662949f5"
+    "2ce5b41657ee7ff6bb20e9e8662949f5",
+    "8c90f9e156d5bdb9a3903209530813e2"
   ],
   "style_history": [
-    "Hard News Lead",
     "Power Accountability",
     "Reaction & Voices",
     "Context Backgrounder",
@@ -460,10 +460,10 @@
     "Context Backgrounder",
     "Hard News Lead",
     "Explainer",
-    "Power Accountability"
+    "Power Accountability",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "accountability|Kiambaa|Hard News Lead",
     "policy_gap|Jubilee Party|Explainer",
     "myth_vs_fact|VFS Global|Context Backgrounder",
     "accountability|Kenyan politics|Reaction & Voices",
@@ -542,6 +542,7 @@
     "story_progression|Kenya politics|Context Backgrounder",
     "story_progression|aviation|Hard News Lead",
     "policy_gap|Kenyan Politics|Explainer",
-    "money_follow|HIV/AIDS|Power Accountability"
+    "money_follow|HIV/AIDS|Power Accountability",
+    "story_progression|Homa Bay|Reaction & Voices"
   ]
 }
