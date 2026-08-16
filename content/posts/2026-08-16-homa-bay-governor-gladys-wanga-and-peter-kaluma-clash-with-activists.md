@@ -1,7 +1,8 @@
 ---
 title: "Homa Bay Governor Gladys Wanga and Peter Kaluma Clash With Activists Amid Growing Anger Over Poor Roads"
 slug: "homa-bay-governor-gladys-wanga-and-peter-kaluma-clash-with-activists"
-description: "Homa Bay Governor Gladys Wanga and MP Peter Kaluma face backlash for attempting to block activists from overseeing local road infrastructure projects."
+description: "Homa Bay Governor Gladys Wanga and Peter Kaluma Clash With Activi: Homa Bay Governor Gladys Wanga and MP Peter Kaluma face backlash for attempting to block"
+excerpt: "Homa Bay Governor Gladys Wanga and Member of Parliament Peter Kaluma are facing intense political backlash this week as they attempt to bloc"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/8D4tRDqP/cd4073a18a9d.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["gladys-wanga", "peter-kaluma", "homa-bay-roads", "homa-bay-politics", "kenyan-activism"]
 canonical: "https://zandani.co.ke/article/homa-bay-governor-gladys-wanga-and-peter-kaluma-clash-with-activists"
 date: "2026-08-16T13:00:25Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-08-16T13:00:25Z"
+focusKeyword: "Homa Bay Governor Gladys Wanga and Peter Kaluma Clash With Activi"
 schema: "NewsArticle"
 ---
-Homa Bay Governor Gladys Wanga and Member of Parliament Peter Kaluma are facing intense political backlash this week as they attempt to block the Linda Mwananchi activist group from conducting oversight activities regarding the deteriorating state of local road infrastructure in Homa Bay.
+
+Homa Bay Governor Gladys Wanga and Member of Parliament Peter Kaluma are facing intense political backlash this week as they attempt to block the Linda Mwananchi activist group from conducting oversight activities regarding the deteriorating state of local road infrastructure in Homa Bay. Homa Bay Governor Gladys Wanga and Peter Kaluma Clash With Activi is the central subject of the update.
 
 ## The Homa Bay Power Struggle and Road Infrastructure
 
