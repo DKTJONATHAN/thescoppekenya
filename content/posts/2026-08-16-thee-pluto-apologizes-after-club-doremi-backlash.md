@@ -1,18 +1,20 @@
 ---
 title: "Thee Pluto Issues Apology Following Club Doremi Backlash"
 slug: "thee-pluto-apologizes-after-club-doremi-backlash"
-description: "Content creator Thee Pluto has issued a formal apology after facing online criticism for an insensitive alcohol ritual performed with Prince Seb."
+description: "Thee Pluto Issues Apology Following Club Doremi Backlash: Content creator Thee Pluto has issued a formal apology after facing online criticism for an"
+excerpt: "The Cost of the Spotlight at Club Doremi Robert Ndegwa, widely known as Thee Pluto, found himself in the crosshairs of public morality this"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/5gxT5Yth/86fa1c3645c0.webp"
 category: "Gossip"
 tags: ["thee pluto", "prince seb", "kenyan celebrities", "club doremi", "kenyan news", "social media controversy"]
+canonical: "https://zandani.co.ke/article/thee-pluto-apologizes-after-club-doremi-backlash"
 date: "2026-08-16T08:48:28Z"
 dateModified: "2026-08-16T08:48:28Z"
+focusKeyword: "Thee Pluto Issues Apology Following Club Doremi Backlash"
 schema: "NewsArticle"
 ---
 
-## The Cost of the Spotlight at Club Doremi
+## The Cost of the Spotlight at Club Doremi Thee Pluto Issues Apology Following Club Doremi Backlash is the central subject of the update.
 
 Robert Ndegwa, widely known as Thee Pluto, found himself in the crosshairs of public morality this weekend after a video from Club Doremi triggered an unexpected wave of disapproval. While the creator is used to controlling the narrative, this apology marks a rare moment where the line between content production and human decency became uncomfortably thin.
 
