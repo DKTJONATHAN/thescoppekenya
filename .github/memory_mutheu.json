@@ -371,10 +371,10 @@
     "d2cc4790bf3765414a5fd957b951a6b0",
     "3e58c4383df2e4d27c6238a003000e14",
     "8030676e53e2b51de67b0aeb11f5f494",
-    "fe296e977cd76bbd17116ee10fe92424"
+    "fe296e977cd76bbd17116ee10fe92424",
+    "f62b72d522e5a265f71e0d55e49d794e"
   ],
   "style_history": [
-    "Explainer",
     "Profile Beat",
     "Hard News Lead",
     "Trend Take",
@@ -403,10 +403,10 @@
     "Hard News Lead",
     "Explainer",
     "Trend Take",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Profile Beat"
   ],
   "angle_history": [
-    "story_progression|na|Profile Beat",
     "story_progression|celebrity wedding|Trend Take",
     "myth_vs_fact|Politics|Reaction Round-up",
     "policy_gap|na|Hard News Lead",
@@ -485,6 +485,7 @@
     "timeline_shift|na|Hard News Lead",
     "story_progression|Actor|Explainer",
     "myth_vs_fact|na|Trend Take",
-    "winners_losers|Disney World|Reaction Round-up"
+    "winners_losers|Disney World|Reaction Round-up",
+    "policy_gap|Talk show|Profile Beat"
   ]
 }
