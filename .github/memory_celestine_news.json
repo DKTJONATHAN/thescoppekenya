@@ -427,10 +427,10 @@
     "8f1d51fbfe5bcb4c5781f22053604d42",
     "a6c452a98fde4e3ed0f14ae7c5a6bf80",
     "f67888b93bdb25394d1fb8baeaefd0dd",
-    "fdeeb100bded7d6c5c5cb407fa159e80"
+    "fdeeb100bded7d6c5c5cb407fa159e80",
+    "2ce5b41657ee7ff6bb20e9e8662949f5"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Hard News Lead",
     "Power Accountability",
     "Reaction & Voices",
@@ -459,10 +459,10 @@
     "Power Accountability",
     "Context Backgrounder",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Power Accountability"
   ],
   "angle_history": [
-    "next_48_hours|Education|Reaction & Voices",
     "accountability|Kiambaa|Hard News Lead",
     "policy_gap|Jubilee Party|Explainer",
     "myth_vs_fact|VFS Global|Context Backgrounder",
@@ -541,6 +541,7 @@
     "policy_gap|Kenya|Power Accountability",
     "story_progression|Kenya politics|Context Backgrounder",
     "story_progression|aviation|Hard News Lead",
-    "policy_gap|Kenyan Politics|Explainer"
+    "policy_gap|Kenyan Politics|Explainer",
+    "money_follow|HIV/AIDS|Power Accountability"
   ]
 }
