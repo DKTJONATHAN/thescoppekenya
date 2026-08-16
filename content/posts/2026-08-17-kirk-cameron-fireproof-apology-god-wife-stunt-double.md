@@ -1,21 +1,20 @@
 ---
-title: "Kirk Cameron on Fireproof: Apologizing to God for On-Screen Fight
+title: "'Kirk Cameron on Fireproof: Apologizing to God for On-Screen Fight"
 slug: "kirk-cameron-fireproof-apology-god-wife-stunt-double"
-description: "Kirk Cameron opens up about his 2008 film Fireproof, detailing his discomfort with an argument scene and having his wife as a stunt double. Explore his deep commitment."
+description: "'Kirk Cameron on Fireproof: Apologizing to God for On-Screen Figh: Kirk Cameron opens up about his 2008 film Fireproof, detailing his discomfort with an"
+excerpt: "Kirk Cameron's 'Fireproof' Reflections: Faith, Marriage, and an Apology to God Veteran actor Kirk Cameron recently revisited his 2008 film '"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/hRfMJmsL/24467350b56c.jpg"
-og_title: "Kirk Cameron on Fireproof: Marriage, Faith & On-Screen Fights"
-og_description: "Kirk Cameron shares candid details about filming 'Fireproof,' his apology to God, and using his wife as a stunt double for kisses."
-focus_keyword: "Kirk Cameron Fireproof"
 category: "Entertainment"
 tags: ["kirk cameron", "fireproof movie", "christian entertainment", "celebrity marriage", "chelsea noble", "hollywood faith"]
+canonical: "https://zandani.co.ke/article/kirk-cameron-fireproof-apology-god-wife-stunt-double"
 date: "2026-08-16T22:51:38Z"
 dateModified: "2026-08-16T22:51:38Z"
+focusKeyword: "'Kirk Cameron on Fireproof: Apologizing to God for On-Screen Figh"
 schema: "NewsArticle"
 ---
 
-## Kirk Cameron's 'Fireproof' Reflections: Faith, Marriage, and an Apology to God
+## Kirk Cameron's 'Fireproof' Reflections: Faith, Marriage, and an Apology to God "Kirk Cameron on Fireproof: Apologizing to God for On-Screen Figh is the central subject of the update.
 
 Veteran actor Kirk Cameron recently revisited his 2008 film "Fireproof," detailing how his Christian faith and unwavering marital commitment shaped his controversial on-set decisions, including an apology to God following an intense scene and using his wife as a kissing stunt double.
 
