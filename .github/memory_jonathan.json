@@ -213,10 +213,10 @@
     "2d2bccfbbca75d5f01c6dffad32aced4",
     "853f59c55e88dbc9d157115880925fd6",
     "8e647cd55ef205be6951616548f291db",
-    "07aae6527909c497a539f4112eb6287e"
+    "07aae6527909c497a539f4112eb6287e",
+    "c1222732528b35e65fa67122b900e893"
   ],
   "style_history": [
-    "Letter Form",
     "Personal Reflection",
     "Counterpoint",
     "Sharp Column",
@@ -245,10 +245,10 @@
     "Letter Form",
     "Personal Reflection",
     "Sharp Column",
-    "Historical Lens"
+    "Historical Lens",
+    "Counterpoint"
   ],
   "angle_history": [
-    "myth_vs_fact|protests|Personal Reflection",
     "myth_vs_fact|sports economics|Counterpoint",
     "accountability|Kenya|Sharp Column",
     "story_progression|Madaraka Day|Letter Form",
@@ -327,6 +327,7 @@
     "money_follow|infrastructure|Letter Form",
     "accountability|Kenya politics|Personal Reflection",
     "policy_gap|governance|Sharp Column",
-    "timeline_shift|Kenya|Historical Lens"
+    "timeline_shift|Kenya|Historical Lens",
+    "money_follow|Kenya|Counterpoint"
   ]
 }
