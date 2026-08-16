@@ -1,18 +1,20 @@
 ---
 title: "Kenya Hits Global HIV Treatment Targets Amid Funding Challenges"
 slug: "kenya-hiv-treatment-targets-funding-challenges"
-description: "Kenya has achieved an 80 percent drop in new HIV infections and met global treatment goals, though declining international funding threatens progress."
+description: "Kenya Hits Global HIV Treatment Targets Amid Funding Challenges: Kenya has achieved an 80 percent drop in new HIV infections and met global treatment goals,"
+excerpt: "The Illusion of a Health Milestone The government is celebrating a milestone that is already evaporating. While the Ministry of Health parad"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/7t1ThdDB/5bbb928b4457.webp"
 category: "News"
 tags: ["hiv-aids", "kenya-health", "unaids", "public-health", "healthcare-funding"]
+canonical: "https://zandani.co.ke/article/kenya-hiv-treatment-targets-funding-challenges"
 date: "2026-08-16T11:25:25Z"
 dateModified: "2026-08-16T11:25:25Z"
+focusKeyword: "Kenya Hits Global HIV Treatment Targets Amid Funding Challenges"
 schema: "NewsArticle"
 ---
 
-## The Illusion of a Health Milestone
+## The Illusion of a Health Milestone Kenya Hits Global HIV Treatment Targets Amid Funding Challenges is the central subject of the update.
 
 The government is celebrating a milestone that is already evaporating. While the Ministry of Health parades the 95-95-95 treatment targets as a triumph of domestic policy, these statistics mask a crumbling financial architecture that relies on money that is no longer coming.
 
