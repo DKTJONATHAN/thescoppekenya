@@ -14,7 +14,7 @@ focusKeyword: "'Jenny Jones Show Murder Altered Daytime Talk TV Production"
 schema: "NewsArticle"
 ---
 
-## Beyond the Glare: When Entertainment Went Too Far on The Jenny Jones Show "Jenny Jones Show Murder Altered Daytime Talk TV Production is the central subject of the update.
+## Beyond the Glare: When Entertainment Went Too Far on The Jenny Jones Show "Jenny Jones Show Murder Altered Daytime Talk TV Production is the central subject of the update. 'Jenny Jones Show Murder Altered Daytime Talk TV Production is the central subject of the update.
 
 In 1995, a tragic event unfolded far beyond the brightly lit set of *The Jenny Jones Show*, shaking the very foundations of daytime television. The death of Scott Amedure at the hands of Jonathan Schmitz, a direct, devastating consequence of a televised revelation, ripped away the façade, exposing the hidden ethical cracks and unspoken assumptions that governed "ambush TV." This singular tragedy compelled an entire industry to confront its responsibility and grapple with the immeasurable human price paid when the pursuit of entertainment eclipses fundamental safety.
 

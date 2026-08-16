@@ -1,18 +1,20 @@
 ---
 title: "Gladys Wanga Defends Homa Bay Infrastructure Record Amid Protests"
 slug: "gladys-wanga-defends-homa-bay-infrastructure-record"
-description: "Governor Gladys Wanga links Homa Bay road conditions to historical marginalization while highlighting new national projects to improve local transport."
+description: "Gladys Wanga Defends Homa Bay Infrastructure Record Amid Protests: Governor Gladys Wanga links Homa Bay road conditions to historical marginalization while"
+excerpt: "Potholes, Politics, and Promises in Homa Bay The mood in Homa Bay has shifted from simmering frustration to a complex debate over developmen"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/5x1PbQT6/ceefceacd817.webp"
 category: "News"
 tags: ["homa bay", "gladys wanga", "kenya politics", "infrastructure", "devolution", "nyanza news"]
+canonical: "https://zandani.co.ke/article/gladys-wanga-defends-homa-bay-infrastructure-record"
 date: "2026-08-16T17:24:21Z"
 dateModified: "2026-08-16T17:24:21Z"
+focusKeyword: "Gladys Wanga Defends Homa Bay Infrastructure Record Amid Protests"
 schema: "NewsArticle"
 ---
 
-## Potholes, Politics, and Promises in Homa Bay
+## Potholes, Politics, and Promises in Homa Bay Gladys Wanga Defends Homa Bay Infrastructure Record Amid Protests is the central subject of the update.
 
 The mood in Homa Bay has shifted from simmering frustration to a complex debate over development, as residents trade viral social media memes comparing local roads to disaster zones for a cautious hope surrounding the massive Lake Victoria Ring Road project.
 
