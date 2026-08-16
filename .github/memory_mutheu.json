@@ -372,10 +372,10 @@
     "3e58c4383df2e4d27c6238a003000e14",
     "8030676e53e2b51de67b0aeb11f5f494",
     "fe296e977cd76bbd17116ee10fe92424",
-    "f62b72d522e5a265f71e0d55e49d794e"
+    "f62b72d522e5a265f71e0d55e49d794e",
+    "6a3faca390564fd3e032f38707f76a93"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Trend Take",
     "Reaction Round-up",
@@ -404,10 +404,10 @@
     "Explainer",
     "Trend Take",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "story_progression|celebrity wedding|Trend Take",
     "myth_vs_fact|Politics|Reaction Round-up",
     "policy_gap|na|Hard News Lead",
     "myth_vs_fact|The Bachelor|Explainer",
@@ -486,6 +486,7 @@
     "story_progression|Actor|Explainer",
     "myth_vs_fact|na|Trend Take",
     "winners_losers|Disney World|Reaction Round-up",
-    "policy_gap|Talk show|Profile Beat"
+    "policy_gap|Talk show|Profile Beat",
+    "accountability|Christian evangelist|Hard News Lead"
   ]
 }
