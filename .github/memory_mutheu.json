@@ -370,10 +370,10 @@
     "c54b7ebcf228f20bb57184babcb75edb",
     "d2cc4790bf3765414a5fd957b951a6b0",
     "3e58c4383df2e4d27c6238a003000e14",
-    "8030676e53e2b51de67b0aeb11f5f494"
+    "8030676e53e2b51de67b0aeb11f5f494",
+    "fe296e977cd76bbd17116ee10fe92424"
   ],
   "style_history": [
-    "Trend Take",
     "Explainer",
     "Profile Beat",
     "Hard News Lead",
@@ -402,10 +402,10 @@
     "Profile Beat",
     "Hard News Lead",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "timeline_shift|Music|Explainer",
     "story_progression|na|Profile Beat",
     "story_progression|celebrity wedding|Trend Take",
     "myth_vs_fact|Politics|Reaction Round-up",
@@ -484,6 +484,7 @@
     "timeline_shift|Carly Simon|Profile Beat",
     "timeline_shift|na|Hard News Lead",
     "story_progression|Actor|Explainer",
-    "myth_vs_fact|na|Trend Take"
+    "myth_vs_fact|na|Trend Take",
+    "winners_losers|Disney World|Reaction Round-up"
   ]
 }
