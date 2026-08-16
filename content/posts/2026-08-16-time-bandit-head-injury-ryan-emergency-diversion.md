@@ -14,7 +14,7 @@ focusKeyword: "'Time Bandit greenhorn Ryan suffers head injury, emergency detour
 schema: "NewsArticle"
 ---
 
-## Reality's Hard Lessons: Aboard the Time Bandit, an Injury Reveals TV's True Stakes "Time Bandit greenhorn Ryan suffers head injury, emergency detour is the central subject of the update.
+## Reality's Hard Lessons: Aboard the Time Bandit, an Injury Reveals TV's True Stakes "Time Bandit greenhorn Ryan suffers head injury, emergency detour is the central subject of the update. 'Time Bandit greenhorn Ryan suffers head injury, emergency detour is the central subject of the update.
 
 The appeal of extreme reality television often stems from its blend of high-stakes situations and the promise of authentic human struggle. Yet, a recent severe head injury on the *Time Bandit* exposed the stark reality behind televised peril, highlighting the critical difference between gripping entertainment and genuine danger in the challenging Bering Sea environment.
 
