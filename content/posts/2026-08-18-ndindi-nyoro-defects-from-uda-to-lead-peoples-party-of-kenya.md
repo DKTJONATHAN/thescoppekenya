@@ -1,18 +1,20 @@
 ---
 title: "Ndindi Nyoro defects from UDA to lead Peoples Party of Kenya"
 slug: "ndindi-nyoro-defects-from-uda-to-lead-peoples-party-of-kenya"
-description: "Kiharu MP Ndindi Nyoro has officially left the United Democratic Alliance to lead the Peoples Party of Kenya ahead of the next general election."
+description: "Ndindi Nyoro defects from UDA to lead Peoples Party of Kenya: Kiharu MP Ndindi Nyoro has officially left the United Democratic Alliance to lead the Peoples"
+excerpt: "The Currency of Betrayal in the Rift Ndindi Nyoro did not simply walk away from the United Democratic Alliance yesterday; he initiated a sys"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/f5B9DYt/7804a2be1abf.webp"
 category: "News"
 tags: ["ndindi nyoro", "kenyan politics", "uda", "peoples party of kenya", "william ruto", "2027 elections"]
+canonical: "https://zandani.co.ke/article/ndindi-nyoro-defects-from-uda-to-lead-peoples-party-of-kenya"
 date: "2026-08-17T23:27:48Z"
 dateModified: "2026-08-17T23:27:48Z"
+focusKeyword: "Ndindi Nyoro defects from UDA to lead Peoples Party of Kenya"
 schema: "NewsArticle"
 ---
 
-## The Currency of Betrayal in the Rift
+## The Currency of Betrayal in the Rift Ndindi Nyoro defects from UDA to lead Peoples Party of Kenya is the central subject of the update.
 
 Ndindi Nyoro did not simply walk away from the United Democratic Alliance yesterday; he initiated a systematic extraction of the political capital that built the current administration. While the optics of the Safari Park Hotel event were staged for maximum theatre, the real story is found in the ledgers of the grassroots network that now finds its funding diverted from State House to the People's Party of Kenya.
 
