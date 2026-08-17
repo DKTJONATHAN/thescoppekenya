@@ -216,10 +216,10 @@
     "5b4d193804f5443ea06a873fa4d8145a",
     "41dfb97b09377847d21b447990058779",
     "15fc222f16aa966c7e55b28998804da4",
-    "442c05f9a190c9d609199c0802104b55"
+    "442c05f9a190c9d609199c0802104b55",
+    "a9417cdaee49230fec0dc0f697ec1af4"
   ],
   "style_history": [
-    "Explainer",
     "Backgrounder",
     "Power Accountability",
     "SME Angle",
@@ -248,10 +248,10 @@
     "Markets Report",
     "SME Angle",
     "Backgrounder",
-    "Power Accountability"
+    "Power Accountability",
+    "Markets Report"
   ],
   "angle_history": [
-    "myth_vs_fact|East African Cables|Markets Report",
     "impact_on_citizens|financial diplomacy|Explainer",
     "policy_gap|Kenya Airways|Backgrounder",
     "accountability|NCBA Group|Power Accountability",
@@ -330,6 +330,7 @@
     "story_progression|Kenya|Markets Report",
     "money_follow|hospitality|SME Angle",
     "policy_gap|Tata Chemicals Magadi|Backgrounder",
-    "winners_losers|Absa Group|Power Accountability"
+    "winners_losers|Absa Group|Power Accountability",
+    "myth_vs_fact|Crown Paints|Markets Report"
   ]
 }
