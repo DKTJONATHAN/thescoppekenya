@@ -286,10 +286,10 @@
     "86b3a76f3d042f7319d0680ad2a9e838",
     "6c4e3e8f5d18d3e2343b7c81e333dcb6",
     "31482ac55c1e9cfc63fdf6035c145bc5",
-    "be3807791fb037c27fb0e708d15b13fc"
+    "be3807791fb037c27fb0e708d15b13fc",
+    "25c533848feb9b65f7c45c5b2da25f0c"
   ],
   "style_history": [
-    "Hard News Lead",
     "Profile Beat",
     "Receipts Piece",
     "Reaction Round-up",
@@ -318,10 +318,10 @@
     "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "impact_on_citizens|Interior Ministry|Trend Take",
     "money_follow|bilateral trade|Hard News Lead",
     "impact_on_citizens|Kenya Power|Profile Beat",
     "myth_vs_fact|Sanaipei Tande|Receipts Piece",
@@ -400,6 +400,7 @@
     "myth_vs_fact|Economic policy|Reaction Round-up",
     "winners_losers|Kenya|Profile Beat",
     "money_follow|EPRA|Trend Take",
-    "timeline_shift|2Mbili|Receipts Piece"
+    "timeline_shift|2Mbili|Receipts Piece",
+    "money_follow|Stivo Simple Boy|Reaction Round-up"
   ]
 }
