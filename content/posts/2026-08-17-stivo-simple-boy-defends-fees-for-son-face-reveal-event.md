@@ -1,18 +1,20 @@
 ---
 title: "Stivo Simple Boy Defends Fees for Son Face Reveal Event"
 slug: "stivo-simple-boy-defends-fees-for-son-face-reveal-event"
-description: "Stivo Simple Boy explains the decision to charge for his son Dragon Junior face reveal event to cover logistical costs and support inclusivity."
+description: "Stivo Simple Boy Defends Fees for Son Face Reveal Event: Stivo Simple Boy explains the decision to charge for his son Dragon Junior face reveal event to cover"
+excerpt: "Stivo Simple Boy pivots from grassroots rap to event entrepreneurship Stivo Simple Boy is currently navigating a polarizing transition. By p"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/TBgYRLv6/c3f02b438bca.png"
 category: "Gossip"
 tags: ["stivo simple boy", "kenyan entertainment", "dragon junior", "beautiful people experience", "kenyan news"]
+canonical: "https://zandani.co.ke/article/stivo-simple-boy-defends-fees-for-son-face-reveal-event"
 date: "2026-08-17T07:13:44Z"
 dateModified: "2026-08-17T07:13:44Z"
+focusKeyword: "Stivo Simple Boy Defends Fees for Son Face Reveal Event"
 schema: "NewsArticle"
 ---
 
-## Stivo Simple Boy pivots from grassroots rap to event entrepreneurship
+## Stivo Simple Boy pivots from grassroots rap to event entrepreneurship Stivo Simple Boy Defends Fees for Son Face Reveal Event is the central subject of the update.
 
 Stivo Simple Boy is currently navigating a polarizing transition. By placing a price tag on the debut of his son, Dragon Junior, the artist is gauging whether his dedicated fan base will transition alongside him into a world of high-production, ticketed lifestyle branding. This move marks a departure from his organic grassroots identity toward a more calculated, professionalized business model.
 
