@@ -374,10 +374,10 @@
     "fe296e977cd76bbd17116ee10fe92424",
     "f62b72d522e5a265f71e0d55e49d794e",
     "6a3faca390564fd3e032f38707f76a93",
-    "1793993b8d97c6def94b6dd8d4324ffa"
+    "1793993b8d97c6def94b6dd8d4324ffa",
+    "8ef56828cceb02778e12e3042356904a"
   ],
   "style_history": [
-    "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
     "Explainer",
@@ -406,10 +406,10 @@
     "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
-    "Trend Take"
+    "Trend Take",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "policy_gap|na|Hard News Lead",
     "myth_vs_fact|The Bachelor|Explainer",
     "timeline_shift|Big Brother|Trend Take",
     "myth_vs_fact|Joe Pesci|Profile Beat",
@@ -488,6 +488,7 @@
     "winners_losers|Disney World|Reaction Round-up",
     "policy_gap|Talk show|Profile Beat",
     "accountability|Christian evangelist|Hard News Lead",
-    "policy_gap|Hayden Panettiere|Trend Take"
+    "policy_gap|Hayden Panettiere|Trend Take",
+    "myth_vs_fact|Kristen Stewart|Reaction Round-up"
   ]
 }
