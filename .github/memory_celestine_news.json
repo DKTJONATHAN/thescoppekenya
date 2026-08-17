@@ -430,10 +430,10 @@
     "fdeeb100bded7d6c5c5cb407fa159e80",
     "2ce5b41657ee7ff6bb20e9e8662949f5",
     "8c90f9e156d5bdb9a3903209530813e2",
-    "2231cd18504b7bedc343d5d825bcfa0d"
+    "2231cd18504b7bedc343d5d825bcfa0d",
+    "7c274e9524ffad15da920d1e92203761"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
     "Explainer",
@@ -462,10 +462,10 @@
     "Explainer",
     "Power Accountability",
     "Reaction & Voices",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "myth_vs_fact|VFS Global|Context Backgrounder",
     "accountability|Kenyan politics|Reaction & Voices",
     "policy_gap|Law Society of Kenya|Power Accountability",
     "accountability|Nairobi Rivers Commission|Hard News Lead",
@@ -544,6 +544,7 @@
     "policy_gap|Kenyan Politics|Explainer",
     "money_follow|HIV/AIDS|Power Accountability",
     "story_progression|Homa Bay|Reaction & Voices",
-    "timeline_shift|UDA|Context Backgrounder"
+    "timeline_shift|UDA|Context Backgrounder",
+    "myth_vs_fact|Judiciary|Hard News Lead"
   ]
 }
