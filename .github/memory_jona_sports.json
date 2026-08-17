@@ -276,10 +276,10 @@
     "4e2db78734503c697f5ac9316faa8ae1",
     "a9c34fa8bf757bf1ef1141b26d442b14",
     "82cb0412ecec492c22e179241d4a0a30",
-    "63cf5a042874698ec83d32d9ca31e520"
+    "63cf5a042874698ec83d32d9ca31e520",
+    "35dcfe6fa38b9401778b7acbc2616e66"
   ],
   "style_history": [
-    "Stat Story",
     "Match Report",
     "Cynical Pundit",
     "Tactical Take",
@@ -308,10 +308,10 @@
     "Match Report",
     "Tactical Take",
     "Cynical Pundit",
-    "Stat Story"
+    "Stat Story",
+    "Player Profile Beat"
   ],
   "angle_history": [
-    "story_progression|David Raya|Tactical Take",
     "story_progression|Liverpool FC|Player Profile Beat",
     "timeline_shift|Champions League|Stat Story",
     "story_progression|Football|Match Report",
@@ -390,6 +390,7 @@
     "story_progression|Anthony Taylor|Match Report",
     "money_follow|football|Tactical Take",
     "accountability|football recruitment|Cynical Pundit",
-    "money_follow|Premier League|Stat Story"
+    "money_follow|Premier League|Stat Story",
+    "next_48_hours|transfer|Player Profile Beat"
   ]
 }
