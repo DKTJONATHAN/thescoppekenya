@@ -214,10 +214,10 @@
     "853f59c55e88dbc9d157115880925fd6",
     "8e647cd55ef205be6951616548f291db",
     "07aae6527909c497a539f4112eb6287e",
-    "c1222732528b35e65fa67122b900e893"
+    "c1222732528b35e65fa67122b900e893",
+    "603c58791e657e184e5e6b568840cdae"
   ],
   "style_history": [
-    "Personal Reflection",
     "Counterpoint",
     "Sharp Column",
     "Historical Lens",
@@ -246,10 +246,10 @@
     "Personal Reflection",
     "Sharp Column",
     "Historical Lens",
-    "Counterpoint"
+    "Counterpoint",
+    "Letter Form"
   ],
   "angle_history": [
-    "myth_vs_fact|sports economics|Counterpoint",
     "accountability|Kenya|Sharp Column",
     "story_progression|Madaraka Day|Letter Form",
     "story_progression|Northern Kenya|Personal Reflection",
@@ -328,6 +328,7 @@
     "accountability|Kenya politics|Personal Reflection",
     "policy_gap|governance|Sharp Column",
     "timeline_shift|Kenya|Historical Lens",
-    "money_follow|Kenya|Counterpoint"
+    "money_follow|Kenya|Counterpoint",
+    "accountability|Kenya Wildlife Service|Letter Form"
   ]
 }
