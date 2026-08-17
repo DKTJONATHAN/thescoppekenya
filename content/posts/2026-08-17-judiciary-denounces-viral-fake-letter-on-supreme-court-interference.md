@@ -1,18 +1,20 @@
 ---
 title: "Judiciary Denounces Viral Fake Letter on Supreme Court Interference"
 slug: "judiciary-denounces-viral-fake-letter-on-supreme-court-interference"
-description: "The Kenyan Judiciary has officially dismissed a viral document that falsely accused prominent political figures of attempting to influence the Supreme Court."
+description: "Judiciary Denounces Viral Fake Letter on Supreme Court Interferen: The Kenyan Judiciary has officially dismissed a viral document that falsely accused"
+excerpt: "Kenyan Judiciary Denounces Fabricated Correspondence Aimed at Undermining Court Impartiality The Kenyan Judiciary issued a formal statement"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/s0Rdv41/6897725db33e.webp"
 category: "News"
 tags: ["judiciary", "fake news", "impeachment", "supreme court", "kenyan politics"]
+canonical: "https://zandani.co.ke/article/judiciary-denounces-viral-fake-letter-on-supreme-court-interference"
 date: "2026-08-17T11:31:31Z"
 dateModified: "2026-08-17T11:31:31Z"
+focusKeyword: "Judiciary Denounces Viral Fake Letter on Supreme Court Interferen"
 schema: "NewsArticle"
 ---
 
-## Kenyan Judiciary Denounces Fabricated Correspondence Aimed at Undermining Court Impartiality
+## Kenyan Judiciary Denounces Fabricated Correspondence Aimed at Undermining Court Impartiality Judiciary Denounces Viral Fake Letter on Supreme Court Interferen is the central subject of the update.
 
 The Kenyan Judiciary issued a formal statement today disavowing a falsified document that falsely utilized official letterheads and the forged signature of Chief Justice Martha Koome. The document attempted to implicate senior political figures in a scheme to influence Deputy Chief Justice Philomena Mwilu, specifically alleging that former Chief Justice David Maraga and opposition leader Kalonzo Musyoka were exerting pressure regarding an active constitutional petition.
 
