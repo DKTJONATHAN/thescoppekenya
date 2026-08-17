@@ -1,21 +1,20 @@
 ---
-title: "Hayden Panettiere Dies at 36: Police Probe Apparent Overdose
+title: "'Hayden Panettiere Dies at 36: Police Probe Apparent Overdose"
 slug: "hayden-panettiere-death-overdose-police-investigation-tribut"
-description: "Actress Hayden Panettiere has tragically passed away at age 36. Police are investigating her death, noting an apparent overdose. Read more about the celebrity tributes and investigation."
+description: "'Hayden Panettiere Dies at 36: Police Probe Apparent Overdose: Actress Hayden Panettiere has tragically passed away at age 36. Police are investigating her"
+excerpt: "The Persistent Echo: Hayden Panettiere's Death and Hollywood's Unfinished Conversation on Wellness The tragic passing of Hayden Panettiere a"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/rfMXVwnH/20ce8c291e8b.jpg"
-og_title: "Actress Hayden Panettiere Dies at 36 After Overdose"
-og_description: "Hayden Panettiere, star of 'Heroes' and 'Nashville,' has died at 36. Police are investigating an apparent overdose. Friends and costars share tributes."
-focus_keyword: "hayden panettiere death"
 category: "Entertainment"
 tags: ["hayden panettiere", "actress death", "celebrity tributes", "overdose", "entertainment news", "nashville", "heroes"]
+canonical: "https://zandani.co.ke/article/hayden-panettiere-death-overdose-police-investigation-tribut"
 date: "2026-08-17T14:57:22Z"
 dateModified: "2026-08-17T14:57:22Z"
+focusKeyword: "'Hayden Panettiere Dies at 36: Police Probe Apparent Overdose"
 schema: "NewsArticle"
 ---
 
-## The Persistent Echo: Hayden Panettiere's Death and Hollywood's Unfinished Conversation on Wellness
+## The Persistent Echo: Hayden Panettiere's Death and Hollywood's Unfinished Conversation on Wellness "Hayden Panettiere Dies at 36: Police Probe Apparent Overdose is the central subject of the update.
 
 The tragic passing of Hayden Panettiere at 36 following an apparent overdose in Greenville casts a chilling shadow, forcing Hollywood to confront its long-standing inadequacies in safeguarding the mental health and well-being of its stars, especially those thrust into the spotlight early.
 
