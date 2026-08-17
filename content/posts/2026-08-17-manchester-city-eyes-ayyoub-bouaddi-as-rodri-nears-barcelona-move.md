@@ -1,18 +1,20 @@
 ---
 title: "Manchester City eyes Ayyoub Bouaddi as Rodri nears Barcelona move"
 slug: "manchester-city-eyes-ayyoub-bouaddi-as-rodri-nears-barcelona-move"
-description: "Manchester City is in advanced talks to sign 18-year-old Lille midfielder Ayyoub Bouaddi as a replacement for Rodri, who is set to join Barcelona."
+description: "Manchester City eyes Ayyoub Bouaddi as Rodri nears Barcelona move: Manchester City is in advanced talks to sign 18-year-old Lille midfielder Ayyoub Bouaddi as"
+excerpt: "Manchester City Faces a New Era Without Rodri The offices at the Etihad Stadium are buzzing with quiet intensity this week. With only 48 hou"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/BVcRtgYJ/99f94dfc4f73.jpg"
 category: "Sports"
 tags: ["manchester city", "football transfers", "premier league", "rodri", "international football", "ayyoub bouaddi"]
+canonical: "https://zandani.co.ke/article/manchester-city-eyes-ayyoub-bouaddi-as-rodri-nears-barcelona-move"
 date: "2026-08-17T10:52:37Z"
 dateModified: "2026-08-17T10:52:37Z"
+focusKeyword: "Manchester City eyes Ayyoub Bouaddi as Rodri nears Barcelona move"
 schema: "NewsArticle"
 ---
 
-## Manchester City Faces a New Era Without Rodri
+## Manchester City Faces a New Era Without Rodri Manchester City eyes Ayyoub Bouaddi as Rodri nears Barcelona move is the central subject of the update.
 
 The offices at the Etihad Stadium are buzzing with quiet intensity this week. With only 48 hours remaining to shape their squad, recruitment executives are deep in deliberation over a high-stakes gamble. They are weighing whether 18-year-old Lille standout Ayyoub Bouaddi possesses the technical maturity required to step into the vacancy left by a cornerstone of the club.
 
