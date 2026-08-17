@@ -1,18 +1,20 @@
 ---
 title: "UDA blames 1965 policy for Homa Bay road infrastructure crisis"
 slug: "uda-blames-1965-policy-for-homa-bay-road-crisis"
-description: "The ruling UDA party blames historical policies for poor roads in Homa Bay, sparking a debate against local claims of political marginalization in Kenya."
+description: "UDA blames 1965 policy for Homa Bay road infrastructure crisis: The ruling UDA party blames historical policies for poor roads in Homa Bay, sparking a debate"
+excerpt: "The 1965 Blueprint vs. Modern Road Reality Homa Bay County residents recently vented their frustrations over crumbling road networks during"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/SXF7ZrNd/c3ef003cb07a.webp"
 category: "News"
 tags: ["uda", "homa bay", "infrastructure", "kenya politics", "devolution", "gladys wanga"]
+canonical: "https://zandani.co.ke/article/uda-blames-1965-policy-for-homa-bay-road-crisis"
 date: "2026-08-17T05:39:16Z"
 dateModified: "2026-08-17T05:39:16Z"
+focusKeyword: "UDA blames 1965 policy for Homa Bay road infrastructure crisis"
 schema: "NewsArticle"
 ---
 
-## The 1965 Blueprint vs. Modern Road Reality
+## The 1965 Blueprint vs. Modern Road Reality UDA blames 1965 policy for Homa Bay road infrastructure crisis is the central subject of the update.
 
 Homa Bay County residents recently vented their frustrations over crumbling road networks during the Linda Mwananchi rally held on August 16. The ruling UDA party responded by citing a 1965 policy as the foundational cause of this persistent regional infrastructure deficit.
 
