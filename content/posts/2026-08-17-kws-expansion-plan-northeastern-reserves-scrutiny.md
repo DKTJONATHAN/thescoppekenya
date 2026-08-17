@@ -1,18 +1,20 @@
 ---
 title: "KWS expansion plan for Northeastern reserves faces scrutiny"
 slug: "kws-expansion-plan-northeastern-reserves-scrutiny"
-description: "KWS faces criticism over plans to revive wildlife reserves in Northeastern Kenya, with experts questioning the impact on community land."
+description: "KWS expansion plan for Northeastern reserves faces scrutiny: KWS faces criticism over plans to revive wildlife reserves in Northeastern Kenya, with experts"
+excerpt: "Beyond the Paper Parks: A Demand for Conservation Accountability Dr. Erustus Kanga, the proposal from the Kenya Wildlife Service to revitali"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/fdbNTM57/691b3ad3c8fc.png"
 category: "Opinions"
 tags: ["kenya wildlife service", "northeastern kenya", "conservation", "community conservancies", "wildlife management", "kws"]
+canonical: "https://zandani.co.ke/article/kws-expansion-plan-northeastern-reserves-scrutiny"
 date: "2026-08-17T09:57:05Z"
 dateModified: "2026-08-17T09:57:05Z"
+focusKeyword: "KWS expansion plan for Northeastern reserves faces scrutiny"
 schema: "NewsArticle"
 ---
 
-## Beyond the Paper Parks: A Demand for Conservation Accountability
+## Beyond the Paper Parks: A Demand for Conservation Accountability KWS expansion plan for Northeastern reserves faces scrutiny is the central subject of the update.
 
 Dr. Erustus Kanga, the proposal from the Kenya Wildlife Service to revitalize dormant reserves and secure additional protected areas across Garissa and Wajir carries a weight of history that your administration cannot afford to disregard.
 
