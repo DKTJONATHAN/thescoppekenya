@@ -1,18 +1,20 @@
 ---
 title: "Crown Paints Records Profit Growth as it Boosts Local Manufacturing"
 slug: "crown-paints-reports-profit-growth-boosts-local-manufacturing"
-description: "Crown Paints Kenya reports a 11 percent profit jump to 486 million shillings while shifting focus to local manufacturing to cut import reliance."
+description: "Crown Paints Records Profit Growth as it Boosts Local Manufacturi: Crown Paints Kenya reports a 11 percent profit jump to 486 million shillings while shifting"
+excerpt: "The Profitability Mirage at Crown Paints Crown Paints Kenya posted an 11.2 percent jump in net profit to KSh 486 million for the first half"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/cKMJd4Hr/c6859db20703.jpg"
 category: "Business"
 tags: ["crown paints", "kenya business", "manufacturing", "nairobi securities exchange", "corporate earnings", "import substitution"]
+canonical: "https://zandani.co.ke/article/crown-paints-reports-profit-growth-boosts-local-manufacturing"
 date: "2026-08-17T05:46:21Z"
 dateModified: "2026-08-17T05:46:21Z"
+focusKeyword: "Crown Paints Records Profit Growth as it Boosts Local Manufacturi"
 schema: "NewsArticle"
 ---
 
-## The Profitability Mirage at Crown Paints
+## The Profitability Mirage at Crown Paints Crown Paints Records Profit Growth as it Boosts Local Manufacturi is the central subject of the update.
 
 Crown Paints Kenya posted an 11.2 percent jump in net profit to KSh 486 million for the first half of 2026, even as the company grapples with a deepening liquidity crunch that forced management to withhold dividend payouts to shareholders this cycle.
 
