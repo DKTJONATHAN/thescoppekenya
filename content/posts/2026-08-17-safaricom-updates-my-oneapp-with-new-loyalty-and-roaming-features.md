@@ -1,18 +1,20 @@
 ---
 title: "Safaricom Updates My OneApp with New Loyalty and Roaming Features"
 slug: "safaricom-updates-my-oneapp-with-new-loyalty-and-roaming-features"
-description: "Safaricom has launched version 5.2.0 of My OneApp for iPhone, introducing Lipa na Bonga payments and enhanced self-service roaming tools."
+description: "Safaricom Updates My OneApp with New Loyalty and Roaming Features: Safaricom has launched version 5.2.0 of My OneApp for iPhone, introducing Lipa na Bonga"
+excerpt: "Managing the My OneApp Evolution Safaricom has released version 5.2.0 of its My OneApp, introducing features for international roaming manag"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/bSYzwyS/9e6a674e3d4a.webp"
 category: "Technology"
 tags: ["safaricom", "my oneapp", "bonga points", "kenyan tech", "mobile apps", "telecommunications"]
+canonical: "https://zandani.co.ke/article/safaricom-updates-my-oneapp-with-new-loyalty-and-roaming-features"
 date: "2026-08-17T11:42:52Z"
 dateModified: "2026-08-17T11:42:52Z"
+focusKeyword: "Safaricom Updates My OneApp with New Loyalty and Roaming Features"
 schema: "NewsArticle"
 ---
 
-## Managing the My OneApp Evolution
+## Managing the My OneApp Evolution Safaricom Updates My OneApp with New Loyalty and Roaming Features is the central subject of the update.
 
 Safaricom has released version 5.2.0 of its My OneApp, introducing features for international roaming management, enhanced accessibility options, and deeper integration of the Lipa na Bonga payment system. While these updates appear focused on user convenience, they represent a significant shift in how the platform manages customer loyalty and data.
 
