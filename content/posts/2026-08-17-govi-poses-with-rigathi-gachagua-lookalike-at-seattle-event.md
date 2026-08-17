@@ -1,18 +1,20 @@
 ---
 title: "Govi Poses with Rigathi Gachagua Lookalike at Seattle Event"
 slug: "govi-poses-with-rigathi-gachagua-lookalike-at-seattle-event"
-description: "Former actor Malik Lemuel sparked social media reactions after sharing a photo with a man resembling Rigathi Gachagua in Seattle."
+description: "Govi Poses with Rigathi Gachagua Lookalike at Seattle Event: Former actor Malik Lemuel sparked social media reactions after sharing a photo with a man"
+excerpt: "The Seattle Mirror: Diaspora Sentiment and the Gachagua Lookalike Former actor Malik Lemuel, known to many as Govi, captured public attentio"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/d4cLg5nB/d5bf1e55b085.webp"
 category: "Gossip"
 tags: ["kenya", "malik lemuel", "rigathi gachagua", "mugithi", "diaspora", "kenyan news"]
+canonical: "https://zandani.co.ke/article/govi-poses-with-rigathi-gachagua-lookalike-at-seattle-event"
 date: "2026-08-17T09:02:10Z"
 dateModified: "2026-08-17T09:02:10Z"
+focusKeyword: "Govi Poses with Rigathi Gachagua Lookalike at Seattle Event"
 schema: "NewsArticle"
 ---
 
-## The Seattle Mirror: Diaspora Sentiment and the Gachagua Lookalike
+## The Seattle Mirror: Diaspora Sentiment and the Gachagua Lookalike Govi Poses with Rigathi Gachagua Lookalike at Seattle Event is the central subject of the update.
 
 Former actor Malik Lemuel, known to many as Govi, captured public attention on August 15 in Seattle after a photograph showing him alongside a man with a striking physical resemblance to former Deputy President Rigathi Gachagua went viral. The image emerged from the Country Meets Mugithi event held in Washington, a gathering that has become a focal point for Kenyans residing in the Pacific Northwest.
 
