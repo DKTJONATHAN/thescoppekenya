@@ -1,18 +1,20 @@
 ---
 title: "37 Arrested After Fatal Violence at Homa Bay Political Rally"
 slug: "37-arrested-after-fatal-violence-at-homa-bay-political-rally"
-description: "Police have arrested 37 people following violent clashes at a Linda Mwananchi rally in Homa Bay that left two dead and several officers injured."
+description: "37 Arrested After Fatal Violence at Homa Bay Political Rally: Police have arrested 37 people following violent clashes at a Linda Mwananchi rally in Homa Bay"
+excerpt: "The Escalating Cost of Homa Bay Political Rallies Thirty seven people remain in police custody following a deadly weekend in Homa Bay, where"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/qXYKSNc/cc9c2e4e77a0.jpg"
 category: "News"
 tags: ["homa bay", "kenya politics", "national police service", "linda mwananchi", "news", "za ndani"]
+canonical: "https://zandani.co.ke/article/37-arrested-after-fatal-violence-at-homa-bay-political-rally"
 date: "2026-08-17T17:31:27Z"
 dateModified: "2026-08-17T17:31:27Z"
+focusKeyword: "37 Arrested After Fatal Violence at Homa Bay Political Rally"
 schema: "NewsArticle"
 ---
 
-## The Escalating Cost of Homa Bay Political Rallies
+## The Escalating Cost of Homa Bay Political Rallies 37 Arrested After Fatal Violence at Homa Bay Political Rally is the central subject of the update.
 
 Thirty-seven people remain in police custody following a deadly weekend in Homa Bay, where a Linda Mwananchi political rally devolved into a chaotic scene of violence. The clashes claimed two lives, including a police driver, leaving families and the community to confront a new reality where basic political engagement now carries a lethal risk.
 

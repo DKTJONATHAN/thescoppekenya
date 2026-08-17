@@ -14,7 +14,7 @@ focusKeyword: "'Hayden Panettiere Dies at 36: Police Probe Apparent Overdose"
 schema: "NewsArticle"
 ---
 
-## The Persistent Echo: Hayden Panettiere's Death and Hollywood's Unfinished Conversation on Wellness "Hayden Panettiere Dies at 36: Police Probe Apparent Overdose is the central subject of the update.
+## The Persistent Echo: Hayden Panettiere's Death and Hollywood's Unfinished Conversation on Wellness "Hayden Panettiere Dies at 36: Police Probe Apparent Overdose is the central subject of the update. 'Hayden Panettiere Dies at 36: Police Probe Apparent Overdose is the central subject of the update.
 
 The tragic passing of Hayden Panettiere at 36 following an apparent overdose in Greenville casts a chilling shadow, forcing Hollywood to confront its long-standing inadequacies in safeguarding the mental health and well-being of its stars, especially those thrust into the spotlight early.
 
