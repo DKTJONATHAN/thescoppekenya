@@ -353,10 +353,10 @@
     "eb7bf2bb016a44aedcd421b3c6c7c9f2",
     "ea41732139df1aac791c57de4a424f36",
     "26ba3f323d970a183b43faa07c378004",
-    "1ea7295aaf7723f9bb41f8238e4ef29b"
+    "1ea7295aaf7723f9bb41f8238e4ef29b",
+    "c77f327c81382f2d6034eea297955041"
   ],
   "style_history": [
-    "Receipts Piece",
     "Profile Beat",
     "Reaction Round-up",
     "Hard News Lead",
@@ -385,10 +385,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "money_follow|maternal health|Receipts Piece",
     "myth_vs_fact|boxing|Profile Beat",
     "winners_losers|Nairobi|Reaction Round-up",
     "myth_vs_fact|Raila Odinga|Trend Take",
@@ -467,6 +467,7 @@
     "next_48_hours|Fally Ipupa|Reaction Round-up",
     "money_follow|Kenya|Trend Take",
     "accountability|Thee Pluto|Profile Beat",
-    "story_progression|Kenya|Hard News Lead"
+    "story_progression|Kenya|Hard News Lead",
+    "money_follow|Mugithi|Receipts Piece"
   ]
 }
