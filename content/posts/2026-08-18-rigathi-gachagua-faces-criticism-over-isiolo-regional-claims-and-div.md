@@ -1,19 +1,21 @@
 ---
 title: "Rigathi Gachagua faces criticism over Isiolo regional claims and divisive ethnic rhetoric"
 slug: "rigathi-gachagua-faces-criticism-over-isiolo-regional-claims-and-div"
-description: "Deputy President Rigathi Gachagua faces backlash after claiming Isiolo is part of the Mt. Kenya region, drawing criticism for divisive political rhetoric."
+description: "Rigathi Gachagua faces criticism over Isiolo regional claims and : Deputy President Rigathi Gachagua faces backlash after claiming Isiolo is part of the Mt."
+excerpt: "Deputy President Rigathi Gachagua sparked significant national backlash this week following a visit to Isiolo. During his tour, he claimed t"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
-image: ""
+image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["rigathi-gachagua", "isiolo-regional-claims", "kenyan-politics", "ethnic-rhetoric", "gachagua-controversy"]
 canonical: "https://zandani.co.ke/article/rigathi-gachagua-faces-criticism-over-isiolo-regional-claims-and-div"
 date: "2026-08-18T13:07:30Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-08-18T13:07:30Z"
+focusKeyword: "Rigathi Gachagua faces criticism over Isiolo regional claims and"
 schema: "NewsArticle"
 ---
-Deputy President Rigathi Gachagua sparked significant national backlash this week following a visit to Isiolo. During his tour, he claimed the region belongs within the Mt. Kenya sphere of influence, a statement that has drawn widespread criticism for its divisive and revisionist undertones.
+
+Deputy President Rigathi Gachagua sparked significant national backlash this week following a visit to Isiolo. During his tour, he claimed the region belongs within the Mt. Kenya sphere of influence, a statement that has drawn widespread criticism for its divisive and revisionist undertones. Rigathi Gachagua faces criticism over Isiolo regional claims and  is the central subject of the update.
 
 ## Rigathi Gachagua and the politics of regional overreach
 
