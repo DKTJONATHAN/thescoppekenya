@@ -14,7 +14,7 @@ focusKeyword: "'Hayden Panettiere, 'Heroes' Star, Dies at 36 in SC"
 schema: "NewsArticle"
 ---
 
-## Investigation Launched After Hayden Panettiere's Tragic Passing "Hayden Panettiere, 'Heroes' Star, Dies at 36 in SC is the central subject of the update.
+## Investigation Launched After Hayden Panettiere's Tragic Passing "Hayden Panettiere, 'Heroes' Star, Dies at 36 in SC is the central subject of the update. 'Hayden Panettiere, 'Heroes' Star, Dies at 36 in SC is the central subject of the update.
 
 The entertainment world is in mourning following the untimely death of actress Hayden Panettiere, who passed away at 36 in South Carolina. Her sudden demise on Sunday, August 16, has initiated an official investigation, with authorities working to ascertain the full circumstances surrounding the tragedy.
 

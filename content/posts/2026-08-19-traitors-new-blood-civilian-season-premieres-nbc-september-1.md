@@ -1,21 +1,20 @@
 ---
-title: "The Traitors: New Blood Civilian Season 5 Premieres September 17 on NBC
+title: "'The Traitors: New Blood Civilian Season 5 Premieres September 17 on NBC"
 slug: "traitors-new-blood-civilian-season-premieres-nbc-september-1"
-description: "The Traitors: New Blood season 5, featuring 22 civilian contestants, premieres September 17 on NBC. Experience fresh game dynamics and authentic relationships. Learn more about the new format."
+description: "'The Traitors: New Blood Civilian Season 5 Premieres September 17: The Traitors: New Blood season 5, featuring 22 civilian contestants, premieres September 17"
+excerpt: "Is The Traitors: New Blood the Shake Up Fans Have Been Waiting For? The U.S. version of 'The Traitors' is changing everything for its fifth"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://images.unsplash.com/photo-1633465783780-e14bd0ad17bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NjY1ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwOTM5MDZ8&ixlib=rb-4.1.0&q=80&w=1080"
-og_title: "The Traitors: New Blood Features Civilians on NBC"
-og_description: "Get ready for The Traitors: New Blood! The new season exclusively features civilian contestants, promising fresh gameplay. Premieres September 17 on NBC."
-focus_keyword: "The Traitors: New Blood"
 category: "Entertainment"
 tags: ["the traitors new blood", "reality tv", "nbc shows", "alan cumming", "civilian contestants", "tv series", "september premieres"]
+canonical: "https://zandani.co.ke/article/traitors-new-blood-civilian-season-premieres-nbc-september-1"
 date: "2026-08-18T22:55:25Z"
 dateModified: "2026-08-18T22:55:25Z"
+focusKeyword: "'The Traitors: New Blood Civilian Season 5 Premieres September 17"
 schema: "NewsArticle"
 ---
 
-## Is The Traitors: New Blood the Shake-Up Fans Have Been Waiting For?
+## Is The Traitors: New Blood the Shake-Up Fans Have Been Waiting For? "The Traitors: New Blood Civilian Season 5 Premieres September 17 is the central subject of the update.
 
 The U.S. version of 'The Traitors' is changing everything for its fifth season, now rebranded as **The Traitors: New Blood**. With a premiere set for September 17 on NBC, the biggest question on everyone's lips is how an all-civilian cast will redefine the game of deception and loyalty.
 
