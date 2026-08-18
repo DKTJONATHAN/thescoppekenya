@@ -1,18 +1,20 @@
 ---
 title: "BBNaija Season 11: Kamsy Evicted as Neche Exits the House"
 slug: "bbnaija-season-11-kamsy-evicted-neche-exits"
-description: "Kamsy has been evicted from the BBNaija Season 11 house while Neche opted to resign. Meanwhile, Sultex and Chisom received major rewards this week."
+description: "BBNaija Season 11: Kamsy Evicted as Neche Exits the House: Kamsy has been evicted from the BBNaija Season 11 house while Neche opted to resign. Meanwhile,"
+excerpt: "Tactical Shifts and the High Price of Influence in the BBNaija House The BBNaija Season 11 landscape shifted dramatically this week as Kamsy"
 author: "Amara Ndlovu"
-authorUrl: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/m5SVBPGf/0d330ef85bb1.jpg"
 category: "Africa Entertainment"
 tags: ["bbnaija", "reality tv", "entertainment news", "african television", "nigeria entertainment"]
+canonical: "https://zandani.co.ke/article/bbnaija-season-11-kamsy-evicted-neche-exits"
 date: "2026-08-18T03:56:54Z"
 dateModified: "2026-08-18T03:56:54Z"
+focusKeyword: "BBNaija Season 11: Kamsy Evicted as Neche Exits the House"
 schema: "NewsArticle"
 ---
 
-## Tactical Shifts and the High Price of Influence in the BBNaija House
+## Tactical Shifts and the High Price of Influence in the BBNaija House BBNaija Season 11: Kamsy Evicted as Neche Exits the House is the central subject of the update.
 
 The BBNaija Season 11 landscape shifted dramatically this week as Kamsy faced elimination through public vote and Neche voluntarily walked away from the competition, leaving a volatile power vacuum in the Show Ya Sef house as the remaining contestants scramble to realign their strategies.
 
