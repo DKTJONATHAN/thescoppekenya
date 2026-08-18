@@ -1,20 +1,21 @@
 ---
 title: "The Pot-Filler's Lament: A Nairobi Water Tariff Hike"
 slug: "the-pot-fillers-lament-nairobi-water-tariff-hike"
-description: "In the shadow of a forgotten empire, the weight of the water jar mirrors a modern burden, where new nairobi water tariffs low income households face a stark cho"
+description: "The Pot-Filler's Lament: A Nairobi Water Tariff Hike: In the shadow of a forgotten empire, the weight of the water jar mirrors a modern burden, where new"
+excerpt: "The sun beat down on the ochre walls of Mfalme Jabari’s grand palace in the ancient land of Kusi. Inside, the cool air stirred silk banners,"
 author: "The Chronicler"
 author_url: "https://zandani.co.ke/author/the-chronicler"
 image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200"
 category: "Chronicles"
-tags: ["chronicles", "nairobi-water-bill-increase-low-consumption", "ksh23-nairobi-water-tariff-hike", "new-nairobi-water-tariffs-low-income", "nairobi-water-ksh15-bill-jump", "nairobi-water-tariff-review-households", "fall-of-ancient-court", "historical-africa", "satire", "irony"]
+tags: ["chronicles", "nairobi-water-bill-increase-low-consumption", "ksh23-nairobi-water-tariff-hike", "new-nairobi-water-tariffs-low-income", "nairobi-water-ksh15-bill-jump", "nairobi-water-tariff-review-households", "fall-of-ancient-court", "historical-africa"]
 canonical: "https://zandani.co.ke/article/the-pot-fillers-lament-nairobi-water-tariff-hike"
 date: "2026-08-18T11:36:13Z"
-authorUrl: "https://zandani.co.ke/author/the-chronicler"
 dateModified: "2026-08-18T11:36:13Z"
+focusKeyword: "The Pot-Filler's Lament: A Nairobi Water Tariff Hike"
 schema: "NewsArticle"
 ---
 
-The sun beat down on the ochre walls of Mfalme Jabari’s grand palace in the ancient land of Kusi. Inside, the cool air stirred silk banners, untouched by the dust that clung to the robes of the water bearers. Young Kipande, his shoulders already bowed by the familiar weight of the clay jar, trudged from the river, past guards whose bronze-tipped spears glinted with indifference. His village knew thirst. The Mfalme knew only the finest palm wine, served in gilded chalices that shimmered even in the dimmest light of the royal chambers.
+The sun beat down on the ochre walls of Mfalme Jabari’s grand palace in the ancient land of Kusi. Inside, the cool air stirred silk banners, untouched by the dust that clung to the robes of the water bearers. Young Kipande, his shoulders already bowed by the familiar weight of the clay jar, trudged from the river, past guards whose bronze-tipped spears glinted with indifference. His village knew thirst. The Mfalme knew only the finest palm wine, served in gilded chalices that shimmered even in the dimmest light of the royal chambers. The Pot-Filler's Lament: A Nairobi Water Tariff Hike is the central subject of the update.
 
 <h2>The Emperor's Golden Pitchers and the Nairobi Water Tariff Hike</h2>
 
