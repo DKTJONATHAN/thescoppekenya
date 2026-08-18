@@ -434,10 +434,10 @@
     "7c274e9524ffad15da920d1e92203761",
     "12ef2f4a560dba3ca9c734084ed20fa2",
     "0dc22b1f456212c5fbdd31b643334c3b",
-    "93c9043982253266ecdb8e268e17ba2a"
+    "93c9043982253266ecdb8e268e17ba2a",
+    "0f0aab4eedc8e1fecd6fa1350abf9457"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Power Accountability",
     "Context Backgrounder",
     "Hard News Lead",
@@ -466,10 +466,10 @@
     "Hard News Lead",
     "Explainer",
     "Power Accountability",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "myth_vs_fact|Boma Yangu|Explainer",
     "winners_losers|Kenya politics|Reaction & Voices",
     "policy_gap|Kenya|Context Backgrounder",
     "myth_vs_fact|National Assembly|Hard News Lead",
@@ -548,6 +548,7 @@
     "myth_vs_fact|Judiciary|Hard News Lead",
     "story_progression|Kenya|Explainer",
     "money_follow|Kenyan Politics|Power Accountability",
-    "timeline_shift|NCIC|Context Backgrounder"
+    "timeline_shift|NCIC|Context Backgrounder",
+    "story_progression|Kenya|Reaction & Voices"
   ]
 }
