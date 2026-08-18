@@ -1,21 +1,20 @@
 ---
-title: "Hayden Panettiere, 'Heroes' Star, Dies at 36 in SC
+title: "'Hayden Panettiere, 'Heroes' Star, Dies at 36 in SC"
 slug: "hayden-panettiere-dead-36-heroes-actress-investigation"
-description: "Hayden Panettiere, 'Heroes' actress, passed away at 36 in South Carolina. An investigation into her death is underway. Learn more about the tragic news."
+description: "'Hayden Panettiere, 'Heroes' Star, Dies at 36 in SC: Hayden Panettiere, 'Heroes' actress, passed away at 36 in South Carolina. An investigation into her death"
+excerpt: "Investigation Launched After Hayden Panettiere's Tragic Passing The entertainment world is in mourning following the untimely death of actre"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/NgGMbrNv/8bda4a309787.jpg"
-og_title: "Hayden Panettiere, 'Heroes' Star, Dies at 36"
-og_description: "Hayden Panettiere, known for 'Heroes,' has died at 36. An investigation is underway following a 911 call."
-focus_keyword: "Hayden Panettiere death"
 category: "Entertainment"
 tags: ["hayden panettiere", "heroes", "celebrity death", "actress", "overdose investigation", "entertainment news", "sendhil ramamurthy"]
+canonical: "https://zandani.co.ke/article/hayden-panettiere-dead-36-heroes-actress-investigation"
 date: "2026-08-18T15:05:29Z"
 dateModified: "2026-08-18T15:05:29Z"
+focusKeyword: "'Hayden Panettiere, 'Heroes' Star, Dies at 36 in SC"
 schema: "NewsArticle"
 ---
 
-## Investigation Launched After Hayden Panettiere's Tragic Passing
+## Investigation Launched After Hayden Panettiere's Tragic Passing "Hayden Panettiere, 'Heroes' Star, Dies at 36 in SC is the central subject of the update.
 
 The entertainment world is in mourning following the untimely death of actress Hayden Panettiere, who passed away at 36 in South Carolina. Her sudden demise on Sunday, August 16, has initiated an official investigation, with authorities working to ascertain the full circumstances surrounding the tragedy.
 
