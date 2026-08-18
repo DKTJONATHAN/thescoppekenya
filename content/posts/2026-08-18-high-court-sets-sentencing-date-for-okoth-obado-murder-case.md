@@ -1,18 +1,20 @@
 ---
 title: "High Court sets sentencing date for Okoth Obado in murder case"
 slug: "high-court-sets-sentencing-date-for-okoth-obado-murder-case"
-description: "The High Court has scheduled the sentencing of former Migori Governor Okoth Obado for September 16 following his conviction for the murder of Sharon Otieno."
+description: "High Court sets sentencing date for Okoth Obado in murder case: The High Court has scheduled the sentencing of former Migori Governor Okoth Obado for September"
+excerpt: "The Quiet Resolve of Migori The courtroom clock is finally ticking toward a finish line, as September 16 stands as the day the long shadowed"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/5WVqkq2t/63d4d0ef2f45.webp"
 category: "News"
 tags: ["okoth obado", "sharon otieno", "migori", "kenya judiciary", "murder case", "nairobi courts"]
+canonical: "https://zandani.co.ke/article/high-court-sets-sentencing-date-for-okoth-obado-murder-case"
 date: "2026-08-18T11:30:05Z"
 dateModified: "2026-08-18T11:30:05Z"
+focusKeyword: "High Court sets sentencing date for Okoth Obado in murder case"
 schema: "NewsArticle"
 ---
 
-## The Quiet Resolve of Migori
+## The Quiet Resolve of Migori High Court sets sentencing date for Okoth Obado in murder case is the central subject of the update.
 
 The courtroom clock is finally ticking toward a finish line, as September 16 stands as the day the long-shadowed chapter of Sharon Otieno closes in the eyes of the law, leaving a restless county to finally face its own mirror.
 
