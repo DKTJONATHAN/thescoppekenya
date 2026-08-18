@@ -1,18 +1,20 @@
 ---
 title: "Nyashinski Performs at Nameless 25 Year Music Career Celebration"
 slug: "nyashinski-performs-at-nameless-25-year-career-celebration"
-description: "Nyashinski joined other iconic Kenyan artists at the Carnivore Grounds to celebrate the 25 year musical journey of David Mathenge in Nairobi."
+description: "Nyashinski Performs at Nameless 25 Year Music Career Celebration: Nyashinski joined other iconic Kenyan artists at the Carnivore Grounds to celebrate the 25"
+excerpt: "The Kleptomaniax Legacy: Decoding the generational synergy at Nameless@25 Nyashinski took the stage at the Carnivore Grounds on August 15, 2"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/8JqDFtR/121b00bf9ff9.jpg"
 category: "Gossip"
 tags: ["kenyan music", "nameless", "nyashinski", "kenyan entertainment", "nairobi events"]
+canonical: "https://zandani.co.ke/article/nyashinski-performs-at-nameless-25-year-career-celebration"
 date: "2026-08-18T07:01:20Z"
 dateModified: "2026-08-18T07:01:20Z"
+focusKeyword: "Nyashinski Performs at Nameless 25 Year Music Career Celebration"
 schema: "NewsArticle"
 ---
 
-## The Kleptomaniax Legacy: Decoding the generational synergy at Nameless@25
+## The Kleptomaniax Legacy: Decoding the generational synergy at Nameless@25 Nyashinski Performs at Nameless 25 Year Music Career Celebration is the central subject of the update.
 
 Nyashinski took the stage at the Carnivore Grounds on August 15, 2026, marking a pivotal moment in Kenyan music as he joined David Mathenge to honor a quarter-century of industry evolution during the high-profile Nameless@25 concert.
 
