@@ -14,7 +14,7 @@ focusKeyword: "'Rosie O'Donnell Calls Trump 'Mango Mussolini' on Kimmel Live"
 schema: "NewsArticle"
 ---
 
-## Rosie O'Donnell's Bold Return to the Screen, Addressing Trump and Finding Peace "Rosie O'Donnell Calls Trump 'Mango Mussolini' on Kimmel Live is the central subject of the update.
+## Rosie O'Donnell's Bold Return to the Screen, Addressing Trump and Finding Peace "Rosie O'Donnell Calls Trump 'Mango Mussolini' on Kimmel Live is the central subject of the update. 'Rosie O'Donnell Calls Trump 'Mango Mussolini' on Kimmel Live is the central subject of the update.
 
 Veteran comedian and host Rosie O'Donnell surprised many by guest-hosting *Jimmy Kimmel Live*, not just for her return to late-night but for openly confronting her long-standing feud with Donald Trump and detailing her life-altering move to Ireland.
 
