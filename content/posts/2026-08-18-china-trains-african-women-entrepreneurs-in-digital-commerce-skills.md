@@ -1,18 +1,20 @@
 ---
 title: "China Trains African Women Entrepreneurs in Digital Commerce Skills"
 slug: "china-trains-african-women-entrepreneurs-in-digital-commerce-skills"
-description: "China is shifting its development support for Africa by training women leaders in digital marketing to boost economic growth and tech skills."
+description: "China Trains African Women Entrepreneurs in Digital Commerce Skil: China is shifting its development support for Africa by training women leaders in digital"
+excerpt: "Beyond Concrete: The New Export of Digital Savvy Twenty eight entrepreneurs from across the continent recently gathered in China to master t"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/4ZZRTXWr/c3e6e2caa2f5.webp"
 category: "Opinions"
 tags: ["digital marketing", "women empowerment", "china-africa relations", "entrepreneurship", "kenya technology", "economic development"]
+canonical: "https://zandani.co.ke/article/china-trains-african-women-entrepreneurs-in-digital-commerce-skills"
 date: "2026-08-18T09:48:52Z"
 dateModified: "2026-08-18T09:48:52Z"
+focusKeyword: "China Trains African Women Entrepreneurs in Digital Commerce Skil"
 schema: "NewsArticle"
 ---
 
-## Beyond Concrete: The New Export of Digital Savvy
+## Beyond Concrete: The New Export of Digital Savvy China Trains African Women Entrepreneurs in Digital Commerce Skil is the central subject of the update.
 
 Twenty-eight entrepreneurs from across the continent recently gathered in China to master the art of the live-streamed sale. Far from the dust of road construction sites, these women returned with a toolkit for the digital economy that could redefine how Kenyan goods reach global markets.
 
