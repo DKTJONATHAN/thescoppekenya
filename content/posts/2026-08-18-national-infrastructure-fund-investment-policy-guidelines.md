@@ -1,18 +1,20 @@
 ---
 title: "National Infrastructure Fund Sets Strict Returns and Risk Rules"
 slug: "national-infrastructure-fund-investment-policy-guidelines"
-description: "The National Infrastructure Fund has implemented strict financial criteria, including a 7% return threshold, to govern project investments."
+description: "National Infrastructure Fund Sets Strict Returns and Risk Rules: The National Infrastructure Fund has implemented strict financial criteria, including a 7%"
+excerpt: "New Financial Benchmarks for Infrastructure and What They Mean for You The National Infrastructure Fund has adopted a clear set of financial"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/RpWBSznL/36d3d358e524.png"
 category: "Business"
 tags: ["kenya", "infrastructure", "investment", "government", "economy", "policy"]
+canonical: "https://zandani.co.ke/article/national-infrastructure-fund-investment-policy-guidelines"
 date: "2026-08-18T05:40:32Z"
 dateModified: "2026-08-18T05:40:32Z"
+focusKeyword: "National Infrastructure Fund Sets Strict Returns and Risk Rules"
 schema: "NewsArticle"
 ---
 
-## New Financial Benchmarks for Infrastructure and What They Mean for You
+## New Financial Benchmarks for Infrastructure and What They Mean for You National Infrastructure Fund Sets Strict Returns and Risk Rules is the central subject of the update.
 
 The National Infrastructure Fund has adopted a clear set of financial criteria for all new development projects. This transition shifts the focus of national construction away from state-led initiatives toward a model based on commercial viability and asset divestiture. These changes are designed to influence how national resources are allocated, with potential downstream effects on trade costs and economic stability.
 
