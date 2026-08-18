@@ -376,10 +376,10 @@
     "6a3faca390564fd3e032f38707f76a93",
     "1793993b8d97c6def94b6dd8d4324ffa",
     "8ef56828cceb02778e12e3042356904a",
-    "e6aa3a117b9e643439258412fc09f181"
+    "e6aa3a117b9e643439258412fc09f181",
+    "c6cd3dc1362f02f09f7a9d76b324aa13"
   ],
   "style_history": [
-    "Profile Beat",
     "Explainer",
     "Hard News Lead",
     "Trend Take",
@@ -408,10 +408,10 @@
     "Hard News Lead",
     "Trend Take",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "timeline_shift|Big Brother|Trend Take",
     "myth_vs_fact|Joe Pesci|Profile Beat",
     "winners_losers|Emmys|Reaction Round-up",
     "policy_gap|Saturday Night Live|Explainer",
@@ -490,6 +490,7 @@
     "accountability|Christian evangelist|Hard News Lead",
     "policy_gap|Hayden Panettiere|Trend Take",
     "myth_vs_fact|Kristen Stewart|Reaction Round-up",
-    "story_progression|Rosie O'Donnell|Profile Beat"
+    "story_progression|Rosie O'Donnell|Profile Beat",
+    "story_progression|Hayden Panettiere|Hard News Lead"
   ]
 }
