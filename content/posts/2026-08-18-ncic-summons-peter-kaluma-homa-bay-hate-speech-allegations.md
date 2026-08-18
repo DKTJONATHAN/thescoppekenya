@@ -1,18 +1,20 @@
 ---
 title: "NCIC Summons MP Peter Kaluma Over Homa Bay Hate Speech Allegations"
 slug: "ncic-summons-peter-kaluma-homa-bay-hate-speech-allegations"
-description: "The NCIC has summoned Homa Bay Town MP Peter Kaluma to appear on August 19 following claims of hate speech linked to recent political violence in the area."
+description: "NCIC Summons MP Peter Kaluma Over Homa Bay Hate Speech Allegation: The NCIC has summoned Homa Bay Town MP Peter Kaluma to appear on August 19 following claims"
+excerpt: "The Homa Bay Political Fever Pitch The National Cohesion and Integration Commission has officially ordered Homa Bay Town MP Peter Kaluma to"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/WN7NfSZh/49fa48503952.webp"
 category: "News"
 tags: ["peter kaluma", "homa bay", "ncic", "hate speech", "kenyan politics", "odm"]
+canonical: "https://zandani.co.ke/article/ncic-summons-peter-kaluma-homa-bay-hate-speech-allegations"
 date: "2026-08-18T05:34:27Z"
 dateModified: "2026-08-18T05:34:27Z"
+focusKeyword: "NCIC Summons MP Peter Kaluma Over Homa Bay Hate Speech Allegation"
 schema: "NewsArticle"
 ---
 
-## The Homa Bay Political Fever Pitch
+## The Homa Bay Political Fever Pitch NCIC Summons MP Peter Kaluma Over Homa Bay Hate Speech Allegation is the central subject of the update.
 
 The National Cohesion and Integration Commission has officially ordered Homa Bay Town MP Peter Kaluma to appear before its investigators on August 19. This directive follows a weekend of violent skirmishes in Rodi that claimed two lives and highlighted the volatile intersection of regional rhetoric and local security.
 
