@@ -1,21 +1,20 @@
 ---
-title: "Rosie O'Donnell Calls Trump 'Mango Mussolini' on Kimmel Live
+title: "'Rosie O'Donnell Calls Trump 'Mango Mussolini' on Kimmel Live"
 slug: "rosie-o'donnell-calls-trump-mango-mussolini-ireland-move"
-description: "Rosie O'Donnell, guest-hosting Jimmy Kimmel Live, used her monologue to confront Donald Trump, labeling him 'mango Mussolini'. She also discussed her move to Ireland. Get the full story."
+description: "'Rosie O'Donnell Calls Trump 'Mango Mussolini' on Kimmel Live: Rosie O'Donnell, guest-hosting Jimmy Kimmel Live, used her monologue to confront Donald Trump,"
+excerpt: "Rosie O'Donnell's Bold Return to the Screen, Addressing Trump and Finding Peace Veteran comedian and host Rosie O'Donnell surprised many by"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/pBSzfskT/16d41c455621.jpg"
-og_title: "Rosie O'Donnell Slams Trump, Cites Ireland Move on Kimmel"
-og_description: "Rosie O'Donnell confronted Donald Trump on Jimmy Kimmel Live, calling him 'mango Mussolini'. She discussed her move to Ireland for safety."
-focus_keyword: "Rosie O'Donnell Trump"
 category: "Entertainment"
 tags: ["rosie o'donnell", "donald trump", "jimmy kimmel live", "celebrity feud", "talk show host", "ireland", "entertainment news"]
+canonical: "https://zandani.co.ke/article/rosie-o'donnell-calls-trump-mango-mussolini-ireland-move"
 date: "2026-08-18T07:22:53Z"
 dateModified: "2026-08-18T07:22:53Z"
+focusKeyword: "'Rosie O'Donnell Calls Trump 'Mango Mussolini' on Kimmel Live"
 schema: "NewsArticle"
 ---
 
-## Rosie O'Donnell's Bold Return to the Screen, Addressing Trump and Finding Peace
+## Rosie O'Donnell's Bold Return to the Screen, Addressing Trump and Finding Peace "Rosie O'Donnell Calls Trump 'Mango Mussolini' on Kimmel Live is the central subject of the update.
 
 Veteran comedian and host Rosie O'Donnell surprised many by guest-hosting *Jimmy Kimmel Live*, not just for her return to late-night but for openly confronting her long-standing feud with Donald Trump and detailing her life-altering move to Ireland.
 
