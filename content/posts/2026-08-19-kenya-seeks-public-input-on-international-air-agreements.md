@@ -1,18 +1,20 @@
 ---
 title: "Kenya Seeks Public Input on 17 New International Air Agreements"
 slug: "kenya-seeks-public-input-on-international-air-agreements"
-description: "The National Assembly is inviting public feedback on proposed bilateral air service agreements with 17 nations to boost regional aviation connectivity."
+description: "Kenya Seeks Public Input on 17 New International Air Agreements: The National Assembly is inviting public feedback on proposed bilateral air service agreements"
+excerpt: "Aviation Liberalization and the Sovereignty of Local Skies The National Assembly has issued a formal call for public submissions concerning"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/YTT1HwsT/efaa6339fc90.jpg"
 category: "Business"
 tags: ["aviation", "kenya-news", "transport-infrastructure", "national-assembly", "trade-agreements", "jomo-kenyatta-international-airport"]
+canonical: "https://zandani.co.ke/article/kenya-seeks-public-input-on-international-air-agreements"
 date: "2026-08-19T05:41:03Z"
 dateModified: "2026-08-19T05:41:03Z"
+focusKeyword: "Kenya Seeks Public Input on 17 New International Air Agreements"
 schema: "NewsArticle"
 ---
 
-## Aviation Liberalization and the Sovereignty of Local Skies
+## Aviation Liberalization and the Sovereignty of Local Skies Kenya Seeks Public Input on 17 New International Air Agreements is the central subject of the update.
 
 The National Assembly has issued a formal call for public submissions concerning seventeen pending bilateral air services agreements, marking a shift toward aggressive market liberalization. This legislative move seeks to formalize reciprocal traffic rights with global partners, ostensibly to solidify Nairobi as a premier regional transit node.
 
