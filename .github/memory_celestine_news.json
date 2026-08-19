@@ -435,10 +435,10 @@
     "12ef2f4a560dba3ca9c734084ed20fa2",
     "0dc22b1f456212c5fbdd31b643334c3b",
     "93c9043982253266ecdb8e268e17ba2a",
-    "0f0aab4eedc8e1fecd6fa1350abf9457"
+    "0f0aab4eedc8e1fecd6fa1350abf9457",
+    "ffc7af3db7f1203d5be744a3a26aab46"
   ],
   "style_history": [
-    "Power Accountability",
     "Context Backgrounder",
     "Hard News Lead",
     "Reaction & Voices",
@@ -467,10 +467,10 @@
     "Explainer",
     "Power Accountability",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "winners_losers|Kenya politics|Reaction & Voices",
     "policy_gap|Kenya|Context Backgrounder",
     "myth_vs_fact|National Assembly|Hard News Lead",
     "policy_gap|Kenya|Explainer",
@@ -549,6 +549,7 @@
     "story_progression|Kenya|Explainer",
     "money_follow|Kenyan Politics|Power Accountability",
     "timeline_shift|NCIC|Context Backgrounder",
-    "story_progression|Kenya|Reaction & Voices"
+    "story_progression|Kenya|Reaction & Voices",
+    "money_follow|Tata Chemicals Magadi|Hard News Lead"
   ]
 }
