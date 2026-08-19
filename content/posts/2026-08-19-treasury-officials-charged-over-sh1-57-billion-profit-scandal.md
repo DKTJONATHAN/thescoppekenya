@@ -1,18 +1,20 @@
 ---
 title: "Treasury officials charged over Sh1.57 billion PROFIT scandal"
 slug: "treasury-officials-charged-over-sh1-57-billion-profit-scandal"
-description: "Nine individuals have been released on bail after pleading not guilty to 121 counts of corruption and money laundering linked to the PROFIT programme."
+description: "Treasury officials charged over Sh1.57 billion PROFIT scandal: Nine individuals have been released on bail after pleading not guilty to 121 counts of"
+excerpt: "How 1.57 Billion Shillings Vanished from Our Food Security Basket Nine individuals, including high ranking Treasury officials, appeared befo"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/5gNvJRWG/f1e53e4f4a56.webp"
 category: "News"
 tags: ["national treasury", "corruption", "kenya news", "milimani court", "profit programme", "money laundering"]
+canonical: "https://zandani.co.ke/article/treasury-officials-charged-over-sh1-57-billion-profit-scandal"
 date: "2026-08-19T11:30:11Z"
 dateModified: "2026-08-19T11:30:11Z"
+focusKeyword: "Treasury officials charged over Sh1.57 billion PROFIT scandal"
 schema: "NewsArticle"
 ---
 
-## How 1.57 Billion Shillings Vanished from Our Food Security Basket
+## How 1.57 Billion Shillings Vanished from Our Food Security Basket Treasury officials charged over Sh1.57 billion PROFIT scandal is the central subject of the update.
 
 Nine individuals, including high-ranking Treasury officials, appeared before Magistrate Rose Ndobi at the Milimani Anti-Corruption Court yesterday to answer for the alleged theft of 1.57 billion shillings intended to bolster agricultural productivity for small-scale farmers across the country.
 
