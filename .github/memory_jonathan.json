@@ -216,10 +216,10 @@
     "07aae6527909c497a539f4112eb6287e",
     "c1222732528b35e65fa67122b900e893",
     "603c58791e657e184e5e6b568840cdae",
-    "42e019da85eeec6c3ab9e37727ec1181"
+    "42e019da85eeec6c3ab9e37727ec1181",
+    "e0a3ea64fe45945c7ea71fd8090d2f82"
   ],
   "style_history": [
-    "Sharp Column",
     "Historical Lens",
     "Personal Reflection",
     "Counterpoint",
@@ -248,10 +248,10 @@
     "Historical Lens",
     "Counterpoint",
     "Letter Form",
-    "Personal Reflection"
+    "Personal Reflection",
+    "Historical Lens"
   ],
   "angle_history": [
-    "story_progression|Madaraka Day|Letter Form",
     "story_progression|Northern Kenya|Personal Reflection",
     "policy_gap|Northern Kenya|Historical Lens",
     "myth_vs_fact|Wajir|Counterpoint",
@@ -330,6 +330,7 @@
     "timeline_shift|Kenya|Historical Lens",
     "money_follow|Kenya|Counterpoint",
     "accountability|Kenya Wildlife Service|Letter Form",
-    "story_progression|digital marketing|Personal Reflection"
+    "story_progression|digital marketing|Personal Reflection",
+    "story_progression|Governance|Historical Lens"
   ]
 }
