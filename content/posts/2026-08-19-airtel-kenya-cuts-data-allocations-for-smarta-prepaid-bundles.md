@@ -1,18 +1,20 @@
 ---
 title: "Airtel Kenya Cuts Data Allocations for Smarta Prepaid Bundles"
 slug: "airtel-kenya-cuts-data-allocations-for-smarta-prepaid-bundles"
-description: "Airtel Kenya has reduced data allocations across its Smarta prepaid plans while keeping prices steady, signaling a shift toward profitability."
+description: "Airtel Kenya Cuts Data Allocations for Smarta Prepaid Bundles: Airtel Kenya has reduced data allocations across its Smarta prepaid plans while keeping prices"
+excerpt: "A shift in strategy: Understanding Airtel Kenya’s new data structure Airtel Kenya has implemented significant changes to its Smarta prepaid"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/8LNHq6s6/27c42b6afe60.webp"
 category: "Technology"
 tags: ["airtel kenya", "data bundles", "telecommunications", "kenya tech news", "safaricom", "internet data"]
+canonical: "https://zandani.co.ke/article/airtel-kenya-cuts-data-allocations-for-smarta-prepaid-bundles"
 date: "2026-08-19T11:42:12Z"
 dateModified: "2026-08-19T11:42:12Z"
+focusKeyword: "Airtel Kenya Cuts Data Allocations for Smarta Prepaid Bundles"
 schema: "NewsArticle"
 ---
 
-## A shift in strategy: Understanding Airtel Kenya’s new data structure
+## A shift in strategy: Understanding Airtel Kenya’s new data structure Airtel Kenya Cuts Data Allocations for Smarta Prepaid Bundles is the central subject of the update.
 
 Airtel Kenya has implemented significant changes to its Smarta prepaid plans. These adjustments represent a departure from the company's previous strategy of offering deep discounts, resulting in notably smaller data allocations for many subscribers. This transition signals that the provider is moving away from a model built on aggressive price cutting in favor of a focus on long-term profitability.
 
