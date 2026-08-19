@@ -379,10 +379,10 @@
     "e6aa3a117b9e643439258412fc09f181",
     "c6cd3dc1362f02f09f7a9d76b324aa13",
     "3e40191fc00b8528175bce26fa610a0a",
-    "9749538a5769e6bc463e1af93952ed1d"
+    "9749538a5769e6bc463e1af93952ed1d",
+    "6ee2a67b4d2435bd8d0e6f7b42d2b362"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Reaction Round-up",
     "Hard News Lead",
@@ -411,10 +411,10 @@
     "Profile Beat",
     "Hard News Lead",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "policy_gap|Saturday Night Live|Explainer",
     "winners_losers|Justin Baldoni|Hard News Lead",
     "money_follow|Tiffany Haddish|Trend Take",
     "timeline_shift|Big Brother|Profile Beat",
@@ -493,6 +493,7 @@
     "story_progression|Rosie O'Donnell|Profile Beat",
     "story_progression|Hayden Panettiere|Hard News Lead",
     "timeline_shift|The Traitors: New Blood|Explainer",
-    "story_progression|Dolph Lundgren|Trend Take"
+    "story_progression|Dolph Lundgren|Trend Take",
+    "money_follow|na|Reaction Round-up"
   ]
 }
