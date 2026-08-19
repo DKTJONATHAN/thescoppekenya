@@ -175,10 +175,10 @@
     "e1bba3fee99eb9b9b827c6a3b0b31d60",
     "cdc686c3bb68a1de07d93773d1154d44",
     "edce915d68885d8b3315eb8a788f3ba6",
-    "4516471bed49c665b741ef363ce3fa30"
+    "4516471bed49c665b741ef363ce3fa30",
+    "275b003f2565c57b52e157bdbf9a609b"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Critical Take",
     "Africa Angle",
@@ -207,10 +207,10 @@
     "Explainer",
     "Hard News Lead",
     "Backgrounder",
-    "Critical Take"
+    "Critical Take",
+    "Explainer"
   ],
   "angle_history": [
-    "money_follow|KCB Bank|Backgrounder",
     "next_48_hours|BAKE Awards|Hard News Lead",
     "impact_on_citizens|YouTube|Critical Take",
     "timeline_shift|AI traffic lights|Africa Angle",
@@ -289,6 +289,7 @@
     "story_progression|Telegram|Explainer",
     "policy_gap|cybersecurity|Hard News Lead",
     "accountability|Spotify|Backgrounder",
-    "accountability|Safaricom|Critical Take"
+    "accountability|Safaricom|Critical Take",
+    "money_follow|Airtel|Explainer"
   ]
 }
