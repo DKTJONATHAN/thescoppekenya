@@ -1,7 +1,8 @@
 ---
 title: "Internal UDA Conflicts Threaten Rigathi Gachagua's Political Standing"
 slug: "internal-uda-conflicts-threaten-rigathi-gachagua-s-political-standin"
-description: "Internal UDA rifts and allegations of sabotage are undermining Deputy President Rigathi Gachagua's political influence within President Ruto’s party."
+description: "Internal UDA Conflicts Threaten Rigathi Gachagua's Political Stan: Internal UDA rifts and allegations of sabotage are undermining Deputy President Rigathi"
+excerpt: "Deputy President Rigathi Gachagua faces mounting political instability within the United Democratic Alliance as internal rifts escalate in N"
 author: "Zed Mogaka"
 author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/wNMywnkt/fc0f93598a26.webp"
@@ -9,11 +10,12 @@ category: "Entertainment"
 tags: ["uda-internal-conflicts", "rigathi-gachagua", "kenyan-politics", "mount-kenya-politics", "uda-party-wrangles"]
 canonical: "https://zandani.co.ke/article/internal-uda-conflicts-threaten-rigathi-gachagua-s-political-standin"
 date: "2026-08-19T13:08:20Z"
-authorUrl: "https://zandani.co.ke/author/zed-mogaka"
 dateModified: "2026-08-19T13:08:20Z"
+focusKeyword: "Internal UDA Conflicts Threaten Rigathi Gachagua's Political Stan"
 schema: "NewsArticle"
 ---
-Deputy President Rigathi Gachagua faces mounting political instability within the United Democratic Alliance as internal rifts escalate in Nairobi. Allegations of sabotage from within his Mount Kenya stronghold currently threaten his influence and his standing within President William Ruto’s inner circle.
+
+Deputy President Rigathi Gachagua faces mounting political instability within the United Democratic Alliance as internal rifts escalate in Nairobi. Allegations of sabotage from within his Mount Kenya stronghold currently threaten his influence and his standing within President William Ruto’s inner circle. Internal UDA Conflicts Threaten Rigathi Gachagua's Political Stan is the central subject of the update.
 
 ## The Strategy of Self-Sabotage
 
