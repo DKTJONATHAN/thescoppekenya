@@ -14,7 +14,7 @@ focusKeyword: "'The Traitors: New Blood Civilian Season 5 Premieres September 17
 schema: "NewsArticle"
 ---
 
-## Is The Traitors: New Blood the Shake-Up Fans Have Been Waiting For? "The Traitors: New Blood Civilian Season 5 Premieres September 17 is the central subject of the update.
+## Is The Traitors: New Blood the Shake-Up Fans Have Been Waiting For? "The Traitors: New Blood Civilian Season 5 Premieres September 17 is the central subject of the update. 'The Traitors: New Blood Civilian Season 5 Premieres September 17 is the central subject of the update.
 
 The U.S. version of 'The Traitors' is changing everything for its fifth season, now rebranded as **The Traitors: New Blood**. With a premiere set for September 17 on NBC, the biggest question on everyone's lips is how an all-civilian cast will redefine the game of deception and loyalty.
 
