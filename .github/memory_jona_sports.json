@@ -278,10 +278,10 @@
     "82cb0412ecec492c22e179241d4a0a30",
     "63cf5a042874698ec83d32d9ca31e520",
     "35dcfe6fa38b9401778b7acbc2616e66",
-    "c11888d1b568a3364f2c38867dd3b67d"
+    "c11888d1b568a3364f2c38867dd3b67d",
+    "84bcbb15b1cbe807a80418a64f790ad1"
   ],
   "style_history": [
-    "Cynical Pundit",
     "Tactical Take",
     "Stat Story",
     "Match Report",
@@ -310,10 +310,10 @@
     "Cynical Pundit",
     "Stat Story",
     "Player Profile Beat",
-    "Tactical Take"
+    "Tactical Take",
+    "Cynical Pundit"
   ],
   "angle_history": [
-    "timeline_shift|Champions League|Stat Story",
     "story_progression|Football|Match Report",
     "story_progression|Kenny Dalglish|Tactical Take",
     "myth_vs_fact|Golden Boot|Player Profile Beat",
@@ -392,6 +392,7 @@
     "accountability|football recruitment|Cynical Pundit",
     "money_follow|Premier League|Stat Story",
     "next_48_hours|transfer|Player Profile Beat",
-    "story_progression|transfer window|Tactical Take"
+    "story_progression|transfer window|Tactical Take",
+    "money_follow|Premier League|Cynical Pundit"
   ]
 }
