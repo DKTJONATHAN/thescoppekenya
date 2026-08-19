@@ -218,10 +218,10 @@
     "15fc222f16aa966c7e55b28998804da4",
     "442c05f9a190c9d609199c0802104b55",
     "a9417cdaee49230fec0dc0f697ec1af4",
-    "4472b8a845d4a4570655e1670724e123"
+    "4472b8a845d4a4570655e1670724e123",
+    "8a070d630d36d7dad632885dc95d0532"
   ],
   "style_history": [
-    "Power Accountability",
     "SME Angle",
     "Markets Report",
     "Explainer",
@@ -250,10 +250,10 @@
     "Backgrounder",
     "Power Accountability",
     "Markets Report",
-    "Explainer"
+    "Explainer",
+    "Backgrounder"
   ],
   "angle_history": [
-    "policy_gap|Kenya Airways|Backgrounder",
     "accountability|NCBA Group|Power Accountability",
     "policy_gap|Finance Bill 2026|Markets Report",
     "impact_on_citizens|HELB|SME Angle",
@@ -332,6 +332,7 @@
     "policy_gap|Tata Chemicals Magadi|Backgrounder",
     "winners_losers|Absa Group|Power Accountability",
     "myth_vs_fact|Crown Paints|Markets Report",
-    "money_follow|Kenya|Explainer"
+    "money_follow|Kenya|Explainer",
+    "policy_gap|aviation|Backgrounder"
   ]
 }
