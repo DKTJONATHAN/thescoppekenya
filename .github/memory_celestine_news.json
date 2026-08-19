@@ -437,10 +437,10 @@
     "93c9043982253266ecdb8e268e17ba2a",
     "0f0aab4eedc8e1fecd6fa1350abf9457",
     "ffc7af3db7f1203d5be744a3a26aab46",
-    "c40108083ca2eef58544f4b5d3e5be8b"
+    "c40108083ca2eef58544f4b5d3e5be8b",
+    "57beb65c9c373a7d487b6c6364185cae"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction & Voices",
     "Power Accountability",
     "Explainer",
@@ -469,10 +469,10 @@
     "Context Backgrounder",
     "Reaction & Voices",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "myth_vs_fact|National Assembly|Hard News Lead",
     "policy_gap|Kenya|Explainer",
     "policy_gap|COTU|Power Accountability",
     "next_48_hours|BATUK|Reaction & Voices",
@@ -551,6 +551,7 @@
     "timeline_shift|NCIC|Context Backgrounder",
     "story_progression|Kenya|Reaction & Voices",
     "money_follow|Tata Chemicals Magadi|Hard News Lead",
-    "money_follow|National Treasury|Explainer"
+    "money_follow|National Treasury|Explainer",
+    "accountability|AFCON 2027|Context Backgrounder"
   ]
 }
