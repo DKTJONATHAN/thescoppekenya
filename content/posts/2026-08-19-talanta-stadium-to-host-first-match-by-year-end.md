@@ -1,18 +1,20 @@
 ---
 title: "Talanta Stadium to host inaugural match by end of year"
 slug: "talanta-stadium-to-host-first-match-by-year-end"
-description: "Sports CS Salim Mvurya confirms Talanta Stadium is 94 percent complete and will host its first football match before the year ends ahead of AFCON 2027."
+description: "Talanta Stadium to host inaugural match by end of year: Sports CS Salim Mvurya confirms Talanta Stadium is 94 percent complete and will host its first football"
+excerpt: "The Final Six Percent Hurdle Cabinet Secretary Salim Mvurya confirms that Talanta Stadium will stage its first competitive match before the"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/hx0211sS/4c4b10159dd7.webp"
 category: "News"
 tags: ["talanta stadium", "afcon 2027", "salim mvurya", "kenyan sports", "football infrastructure"]
+canonical: "https://zandani.co.ke/article/talanta-stadium-to-host-first-match-by-year-end"
 date: "2026-08-19T17:31:14Z"
 dateModified: "2026-08-19T17:31:14Z"
+focusKeyword: "Talanta Stadium to host inaugural match by end of year"
 schema: "NewsArticle"
 ---
 
-## The Final Six Percent Hurdle
+## The Final Six Percent Hurdle Talanta Stadium to host inaugural match by end of year is the central subject of the update.
 
 Cabinet Secretary Salim Mvurya confirms that Talanta Stadium will stage its first competitive match before the close of 2024. While the project sits at 94 percent completion, the transition from heavy construction to functional stadium management remains the most precarious phase for local sports infrastructure.
 

@@ -14,7 +14,7 @@ focusKeyword: "'Dolph Lundgren's Cancer Battle: Unbreakable Documentary Reveals"
 schema: "NewsArticle"
 ---
 
-## Beyond the Brawn: Dolph Lundgren’s Cancer Journey Redefines Heroism "Dolph Lundgren's Cancer Battle: Unbreakable Documentary Reveals  is the central subject of the update.
+## Beyond the Brawn: Dolph Lundgren’s Cancer Journey Redefines Heroism "Dolph Lundgren's Cancer Battle: Unbreakable Documentary Reveals  is the central subject of the update. 'Dolph Lundgren's Cancer Battle: Unbreakable Documentary Reveals is the central subject of the update.
 
 In an era craving authenticity, global celebrity narratives are shifting from curated perfection to profound vulnerability. Action icon Dolph Lundgren stands at the forefront of this evolution, offering an unfiltered look at his battle with kidney cancer in the upcoming documentary, "Dolph: Unbreakable," a story resonating deeply within a pop culture landscape increasingly valuing true resilience.
 
