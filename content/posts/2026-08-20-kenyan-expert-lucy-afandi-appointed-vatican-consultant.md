@@ -1,18 +1,20 @@
 ---
 title: "Pope Leo XIV Appoints Kenyan Expert Lucy Afandi to Vatican Post"
 slug: "kenyan-expert-lucy-afandi-appointed-vatican-consultant"
-description: "Kenyan development expert Lucy Afandi Esipila has been named a consultant for the Vatican to advise on global humanitarian and social development issues."
+description: "Pope Leo XIV Appoints Kenyan Expert Lucy Afandi to Vatican Post: Kenyan development expert Lucy Afandi Esipila has been named a consultant for the Vatican to"
+excerpt: "The Vatican’s Kenya Pivot: Optical Inclusion or Structural Reform? Pope Leo XIV has tapped Kenyan development expert Lucy Afandi Esipila for"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/rRqw9Y5c/55e7c1f90b01.jpg"
 category: "News"
 tags: ["lucy afandi esipila", "vatican", "kenya", "humanitarian development", "caritas africa", "pope leo xiv"]
+canonical: "https://zandani.co.ke/article/kenyan-expert-lucy-afandi-appointed-vatican-consultant"
 date: "2026-08-20T05:35:52Z"
 dateModified: "2026-08-20T05:35:52Z"
+focusKeyword: "Pope Leo XIV Appoints Kenyan Expert Lucy Afandi to Vatican Post"
 schema: "NewsArticle"
 ---
 
-## The Vatican’s Kenya Pivot: Optical Inclusion or Structural Reform?
+## The Vatican’s Kenya Pivot: Optical Inclusion or Structural Reform? Pope Leo XIV Appoints Kenyan Expert Lucy Afandi to Vatican Post is the central subject of the update.
 
 Pope Leo XIV has tapped Kenyan development expert Lucy Afandi Esipila for a five-year consultancy role within the Dicastery for Promoting Integral Human Development. While the Vatican frames this as a strategic infusion of African expertise, the appointment exposes a deepening chasm between bureaucratic advisory roles in Rome and the reality of humanitarian delivery on the ground.
 
