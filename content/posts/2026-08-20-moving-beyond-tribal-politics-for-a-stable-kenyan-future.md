@@ -1,18 +1,20 @@
 ---
 title: "Moving beyond tribal politics for a stable Kenyan future"
 slug: "moving-beyond-tribal-politics-for-a-stable-kenyan-future"
-description: "Kenya must move away from divisive rhetoric and tribalism as the 2027 election nears, prioritizing policy debates over hate-based campaigning."
+description: "Moving beyond tribal politics for a stable Kenyan future: Kenya must move away from divisive rhetoric and tribalism as the 2027 election nears, prioritizing"
+excerpt: "The Tribalism Paradox: Why Politicians Are Actually Terrified of Policy Based Politics The prevailing wisdom in Kenyan political circles sug"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/nsbPgbdn/894bd73eab52.webp"
 category: "Opinions"
 tags: ["kenya politics", "2027 elections", "national cohesion", "governance", "tribalism", "kenyan news"]
+canonical: "https://zandani.co.ke/article/moving-beyond-tribal-politics-for-a-stable-kenyan-future"
 date: "2026-08-20T09:50:02Z"
 dateModified: "2026-08-20T09:50:02Z"
+focusKeyword: "Moving beyond tribal politics for a stable Kenyan future"
 schema: "NewsArticle"
 ---
 
-## The Tribalism Paradox: Why Politicians Are Actually Terrified of Policy-Based Politics
+## The Tribalism Paradox: Why Politicians Are Actually Terrified of Policy-Based Politics Moving beyond tribal politics for a stable Kenyan future is the central subject of the update.
 
 The prevailing wisdom in Kenyan political circles suggests that tribalism is an ancient, incurable cultural ailment that politicians are simply forced to navigate to win elections. This is a comforting lie that excuses systemic mediocrity. In reality, tribalism is the primary shield used by the inept to hide their absolute inability to govern.
 
