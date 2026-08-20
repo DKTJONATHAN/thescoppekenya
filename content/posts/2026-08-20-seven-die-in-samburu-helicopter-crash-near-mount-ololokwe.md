@@ -1,18 +1,20 @@
 ---
 title: "Seven Die in Samburu Helicopter Crash Near Mount Ololokwe"
 slug: "seven-die-in-samburu-helicopter-crash-near-mount-ololokwe"
-description: "Seven people including five American nationals died when their helicopter crashed in Samburu County. Authorities have launched an investigation."
+description: "Seven Die in Samburu Helicopter Crash Near Mount Ololokwe: Seven people including five American nationals died when their helicopter crashed in Samburu County."
+excerpt: "A Quiet Tragedy Above the Escarpments Mount Ololokwe, usually defined by its stoic, silent peaks, was the site of a devastating aviation acc"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/bjb25Pmp/95a2c8b1bfb9.png"
 category: "Gossip"
 tags: ["samburu county", "kenya news", "helicopter crash", "aviation accident", "kenya civil aviation authority", "mount ololokwe"]
+canonical: "https://zandani.co.ke/article/seven-die-in-samburu-helicopter-crash-near-mount-ololokwe"
 date: "2026-08-20T07:03:18Z"
 dateModified: "2026-08-20T07:03:18Z"
+focusKeyword: "Seven Die in Samburu Helicopter Crash Near Mount Ololokwe"
 schema: "NewsArticle"
 ---
 
-## A Quiet Tragedy Above the Escarpments
+## A Quiet Tragedy Above the Escarpments Seven Die in Samburu Helicopter Crash Near Mount Ololokwe is the central subject of the update.
 
 Mount Ololokwe, usually defined by its stoic, silent peaks, was the site of a devastating aviation accident this past Wednesday morning. The crash, which resulted in the loss of seven lives, casts a somber light on the private aerial networks that shuttle visitors across Kenya’s northern conservancies. As the wreckage is processed and the families begin their mourning, a necessary conversation has emerged regarding the oversight of these remote air corridors.
 
