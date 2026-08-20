@@ -440,10 +440,10 @@
     "c40108083ca2eef58544f4b5d3e5be8b",
     "57beb65c9c373a7d487b6c6364185cae",
     "bffe8b148f0c3c373d5393406395e164",
-    "f2b11b3711d5fc35544bc55821f72961"
+    "f2b11b3711d5fc35544bc55821f72961",
+    "9149425f5673ce287fe6b60c0da7070e"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Reaction & Voices",
     "Context Backgrounder",
@@ -472,10 +472,10 @@
     "Explainer",
     "Context Backgrounder",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "next_48_hours|BATUK|Reaction & Voices",
     "timeline_shift|Mandera|Context Backgrounder",
     "money_follow|KeNHA|Hard News Lead",
     "policy_gap|police reform|Power Accountability",
@@ -554,6 +554,7 @@
     "money_follow|National Treasury|Explainer",
     "accountability|AFCON 2027|Context Backgrounder",
     "policy_gap|Lucy Afandi Esipila|Power Accountability",
-    "money_follow|Kenya politics|Hard News Lead"
+    "money_follow|Kenya politics|Hard News Lead",
+    "myth_vs_fact|KeNHA|Explainer"
   ]
 }
