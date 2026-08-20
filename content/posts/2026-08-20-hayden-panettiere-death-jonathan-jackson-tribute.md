@@ -14,7 +14,7 @@ focusKeyword: "'Jonathan Jackson Pays Tribute to Hayden Panettiere After Her Dea
 schema: "NewsArticle"
 ---
 
-## A Light Extinguished Too Soon: Remembering Hayden Panettiere "Jonathan Jackson Pays Tribute to Hayden Panettiere After Her Dea is the central subject of the update.
+## A Light Extinguished Too Soon: Remembering Hayden Panettiere "Jonathan Jackson Pays Tribute to Hayden Panettiere After Her Dea is the central subject of the update. 'Jonathan Jackson Pays Tribute to Hayden Panettiere After Her Dea is the central subject of the update.
 
 The passing of Hayden Panettiere at 36 years old has cast a shadow over the entertainment world, leaving many to reflect on the bright light she brought to screens since childhood. In the wake of this sorrow, her former co-stars from 'Nashville,' particularly Jonathan Jackson, have shared intimate tributes, underscoring the deep connections forged during their years working alongside her.
 
