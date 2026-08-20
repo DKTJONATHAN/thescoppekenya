@@ -217,10 +217,10 @@
     "c1222732528b35e65fa67122b900e893",
     "603c58791e657e184e5e6b568840cdae",
     "42e019da85eeec6c3ab9e37727ec1181",
-    "e0a3ea64fe45945c7ea71fd8090d2f82"
+    "e0a3ea64fe45945c7ea71fd8090d2f82",
+    "ec912a9bafcd49c00a967fbbc7b05c3b"
   ],
   "style_history": [
-    "Historical Lens",
     "Personal Reflection",
     "Counterpoint",
     "Letter Form",
@@ -249,10 +249,10 @@
     "Counterpoint",
     "Letter Form",
     "Personal Reflection",
-    "Historical Lens"
+    "Historical Lens",
+    "Counterpoint"
   ],
   "angle_history": [
-    "story_progression|Northern Kenya|Personal Reflection",
     "policy_gap|Northern Kenya|Historical Lens",
     "myth_vs_fact|Wajir|Counterpoint",
     "money_follow|Geothermal Energy|Sharp Column",
@@ -331,6 +331,7 @@
     "money_follow|Kenya|Counterpoint",
     "accountability|Kenya Wildlife Service|Letter Form",
     "story_progression|digital marketing|Personal Reflection",
-    "story_progression|Governance|Historical Lens"
+    "story_progression|Governance|Historical Lens",
+    "myth_vs_fact|Kenya|Counterpoint"
   ]
 }
