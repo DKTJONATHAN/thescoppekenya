@@ -1,18 +1,20 @@
 ---
 title: "Nairobi riders oppose government proposed minimum fare hikes"
 slug: "nairobi-riders-oppose-proposed-minimum-ride-hailing-fare-hikes"
-description: "A TIFA Research survey reveals that 59 percent of Nairobi commuters reject proposed ride-hailing fare increases fearing higher costs and lower demand."
+description: "Nairobi riders oppose government proposed minimum fare hikes: A TIFA Research survey reveals that 59 percent of Nairobi commuters reject proposed ride-hailing"
+excerpt: "Commuters Push Back Against Ride Hailing Price Floors A new study reveals that most Nairobi ride hailing users reject the Ministry of Transp"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/gFd5Mmtq/04b0e11aa821.webp"
 category: "Technology"
 tags: ["nairobi", "ride-hailing", "transport", "tifa research", "kenya business", "ministry of transport"]
+canonical: "https://zandani.co.ke/article/nairobi-riders-oppose-proposed-minimum-ride-hailing-fare-hikes"
 date: "2026-08-20T11:44:11Z"
 dateModified: "2026-08-20T11:44:11Z"
+focusKeyword: "Nairobi riders oppose government proposed minimum fare hikes"
 schema: "NewsArticle"
 ---
 
-## Commuters Push Back Against Ride-Hailing Price Floors
+## Commuters Push Back Against Ride-Hailing Price Floors Nairobi riders oppose government proposed minimum fare hikes is the central subject of the update.
 
 A new study reveals that most Nairobi ride-hailing users reject the Ministry of Transport proposal to mandate higher minimum fares, creating a collision between driver welfare initiatives and the purchasing power of daily commuters across the capital.
 
