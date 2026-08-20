@@ -1,18 +1,20 @@
 ---
 title: "Western Kenya UDA leaders push to strip Uhuru Kenyatta of pension"
 slug: "uda-leaders-push-to-strip-uhuru-kenyatta-pension"
-description: "Western Kenya UDA leaders threaten to withdraw former President Uhuru Kenyatta retirement benefits over claims of interference in active national politics."
+description: "Western Kenya UDA leaders push to strip Uhuru Kenyatta of pension: Western Kenya UDA leaders threaten to withdraw former President Uhuru Kenyatta retirement"
+excerpt: "Political Leverage and the Retirement Benefits Dispute Western Kenya political leaders have launched a coordinated campaign to strip former"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/849MNWkD/e4a34c5b82c8.webp"
 category: "News"
 tags: ["kenya politics", "uhuru kenyatta", "uda", "western kenya", "william ruto", "retirement benefits"]
+canonical: "https://zandani.co.ke/article/uda-leaders-push-to-strip-uhuru-kenyatta-pension"
 date: "2026-08-20T11:31:10Z"
 dateModified: "2026-08-20T11:31:10Z"
+focusKeyword: "Western Kenya UDA leaders push to strip Uhuru Kenyatta of pension"
 schema: "NewsArticle"
 ---
 
-## Political Leverage and the Retirement Benefits Dispute
+## Political Leverage and the Retirement Benefits Dispute Western Kenya UDA leaders push to strip Uhuru Kenyatta of pension is the central subject of the update.
 
 Western Kenya political leaders have launched a coordinated campaign to strip former President Uhuru Kenyatta of his retirement benefits, framing the move as a necessary response to his alleged involvement in active politics.
 
