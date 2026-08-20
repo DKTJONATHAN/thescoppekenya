@@ -382,10 +382,10 @@
     "9749538a5769e6bc463e1af93952ed1d",
     "6ee2a67b4d2435bd8d0e6f7b42d2b362",
     "b89dbec2842ed06c3b43dd8a6006b403",
-    "370c1a88f1f7d58921177f148480fe65"
+    "370c1a88f1f7d58921177f148480fe65",
+    "a86b067cfd45a5202598d81685787419"
   ],
   "style_history": [
-    "Hard News Lead",
     "Trend Take",
     "Explainer",
     "Profile Beat",
@@ -414,10 +414,10 @@
     "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
-    "timeline_shift|Big Brother|Profile Beat",
     "story_progression|na|Reaction Round-up",
     "policy_gap|Football|Explainer",
     "accountability|Controversy|Trend Take",
@@ -496,6 +496,7 @@
     "story_progression|Dolph Lundgren|Trend Take",
     "money_follow|na|Reaction Round-up",
     "story_progression|Hayden Panettiere|Profile Beat",
-    "accountability|Hayden Panettiere|Explainer"
+    "accountability|Hayden Panettiere|Explainer",
+    "accountability|Mekyla Li|Trend Take"
   ]
 }
