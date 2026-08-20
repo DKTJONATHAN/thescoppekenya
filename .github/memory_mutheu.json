@@ -381,10 +381,10 @@
     "3e40191fc00b8528175bce26fa610a0a",
     "9749538a5769e6bc463e1af93952ed1d",
     "6ee2a67b4d2435bd8d0e6f7b42d2b362",
-    "b89dbec2842ed06c3b43dd8a6006b403"
+    "b89dbec2842ed06c3b43dd8a6006b403",
+    "370c1a88f1f7d58921177f148480fe65"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Hard News Lead",
     "Trend Take",
     "Explainer",
@@ -413,10 +413,10 @@
     "Explainer",
     "Trend Take",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Explainer"
   ],
   "angle_history": [
-    "money_follow|Tiffany Haddish|Trend Take",
     "timeline_shift|Big Brother|Profile Beat",
     "story_progression|na|Reaction Round-up",
     "policy_gap|Football|Explainer",
@@ -495,6 +495,7 @@
     "timeline_shift|The Traitors: New Blood|Explainer",
     "story_progression|Dolph Lundgren|Trend Take",
     "money_follow|na|Reaction Round-up",
-    "story_progression|Hayden Panettiere|Profile Beat"
+    "story_progression|Hayden Panettiere|Profile Beat",
+    "accountability|Hayden Panettiere|Explainer"
   ]
 }
