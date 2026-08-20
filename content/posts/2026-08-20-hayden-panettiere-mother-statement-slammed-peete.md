@@ -14,7 +14,7 @@ focusKeyword: "'Hayden Panettiere: Peete Criticizes Mother Lesley Vogel's Statem
 schema: "NewsArticle"
 ---
 
-## Why Hayden Panettiere's Mother's Statement Fuels Global Debate on Parental Accountability "Hayden Panettiere: Peete Criticizes Mother Lesley Vogel's Statem is the central subject of the update.
+## Why Hayden Panettiere's Mother's Statement Fuels Global Debate on Parental Accountability "Hayden Panettiere: Peete Criticizes Mother Lesley Vogel's Statem is the central subject of the update. 'Hayden Panettiere: Peete Criticizes Mother Lesley Vogel's Statem is the central subject of the update.
 
 The recent passing of actress Hayden Panettiere at 36 has brought immense sadness, but a statement from her mother, Lesley Vogel, has sparked a firestorm of criticism. Fans and fellow celebrities are now questioning the ethics of a parent's public narrative following a child's death, especially one who navigated the turbulent waters of child stardom and personal struggles.
 

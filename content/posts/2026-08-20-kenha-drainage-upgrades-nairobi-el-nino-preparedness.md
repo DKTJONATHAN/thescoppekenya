@@ -1,18 +1,20 @@
 ---
 title: "KeNHA Launches Drainage Upgrades on Nairobi Expressway Corridor"
 slug: "kenha-drainage-upgrades-nairobi-el-nino-preparedness"
-description: "Authorities have begun drainage improvements along the James Gichuru to JKIA corridor to protect infrastructure from predicted heavy El Niño rainfall."
+description: "KeNHA Launches Drainage Upgrades on Nairobi Expressway Corridor: Authorities have begun drainage improvements along the James Gichuru to JKIA corridor to"
+excerpt: "Nairobi Expressway Drainage: Can Concrete Defy an 81 Percent Forecast? Meteorological experts have placed the probability of heavy El Niño r"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/WvzqyDYf/0a1be71214a4.webp"
 category: "News"
 tags: ["kenha", "el nino", "nairobi", "flooding", "infrastructure", "johnson sakaja"]
+canonical: "https://zandani.co.ke/article/kenha-drainage-upgrades-nairobi-el-nino-preparedness"
 date: "2026-08-20T17:40:04Z"
 dateModified: "2026-08-20T17:40:04Z"
+focusKeyword: "KeNHA Launches Drainage Upgrades on Nairobi Expressway Corridor"
 schema: "NewsArticle"
 ---
 
-## Nairobi Expressway Drainage: Can Concrete Defy an 81 Percent Forecast?
+## Nairobi Expressway Drainage: Can Concrete Defy an 81 Percent Forecast? KeNHA Launches Drainage Upgrades on Nairobi Expressway Corridor is the central subject of the update.
 
 Meteorological experts have placed the probability of heavy El Niño rains at 81 percent for the final quarter of 2026. As the Kenya National Highways Authority begins drainage upgrades along the James Gichuru to JKIA corridor, commuters are asking: will these repairs actually hold, or are they merely a temporary fix against a generational weather event?
 
