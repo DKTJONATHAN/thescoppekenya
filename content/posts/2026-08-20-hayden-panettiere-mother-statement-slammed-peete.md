@@ -1,21 +1,20 @@
 ---
-title: "Hayden Panettiere: Peete Criticizes Mother Lesley Vogel's Statement
+title: "'Hayden Panettiere: Peete Criticizes Mother Lesley Vogel's Statement"
 slug: "hayden-panettiere-mother-statement-slammed-peete"
-description: "Holly Robinson Peete slammed Lesley Vogel's statement after Hayden Panettiere's death. Vogel's 'wrong path' remarks sparked outrage, raising questions about parental accountability. Read more."
+description: "'Hayden Panettiere: Peete Criticizes Mother Lesley Vogel's Statem: Holly Robinson Peete slammed Lesley Vogel's statement after Hayden Panettiere's death."
+excerpt: "Why Hayden Panettiere's Mother's Statement Fuels Global Debate on Parental Accountability The recent passing of actress Hayden Panettiere at"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/DPV4HLZV/4339d0df9c75.jpg"
-og_title: "Hayden Panettiere: Peete Slams Mother's Post-Death Remarks"
-og_description: "Holly Robinson Peete criticized Lesley Vogel's statement on Hayden Panettiere's death. Vogel's 'wrong path' remarks sparked outrage."
-focus_keyword: "Hayden Panettiere mother statement"
 category: "Entertainment"
 tags: ["hayden panettiere", "holly robinson peete", "lesley vogel", "celebrity death", "child stardom", "parental accountability", "entertainment news"]
+canonical: "https://zandani.co.ke/article/hayden-panettiere-mother-statement-slammed-peete"
 date: "2026-08-20T15:08:26Z"
 dateModified: "2026-08-20T15:08:26Z"
+focusKeyword: "'Hayden Panettiere: Peete Criticizes Mother Lesley Vogel's Statem"
 schema: "NewsArticle"
 ---
 
-## Why Hayden Panettiere's Mother's Statement Fuels Global Debate on Parental Accountability
+## Why Hayden Panettiere's Mother's Statement Fuels Global Debate on Parental Accountability "Hayden Panettiere: Peete Criticizes Mother Lesley Vogel's Statem is the central subject of the update.
 
 The recent passing of actress Hayden Panettiere at 36 has brought immense sadness, but a statement from her mother, Lesley Vogel, has sparked a firestorm of criticism. Fans and fellow celebrities are now questioning the ethics of a parent's public narrative following a child's death, especially one who navigated the turbulent waters of child stardom and personal struggles.
 
