@@ -1,21 +1,20 @@
 ---
-title: "Mekyla Li Stripped of Miss Grand USA Title Over Hit-and-Run, Past Marriage
+title: "'Mekyla Li Stripped of Miss Grand USA Title Over Hit-and-Run, Past Marriage"
 slug: "mekyla-li-stripped-miss-grand-usa-title-hit-run-marriage"
-description: "Mekyla Li, Miss Grand USA 2026, was stripped of her title just days after her win due to undisclosed litigation concerning a 2024 hit-and-run and a previous marriage. Discover the full story."
+description: "'Mekyla Li Stripped of Miss Grand USA Title Over Hit-and-Run, Pas: Mekyla Li, Miss Grand USA 2026, was stripped of her title just days after her win due to"
+excerpt: "The Unseen Past and the Public Present: Mekyla Li’s Instant Fall From Grace In an era where every digital footprint is indelible, the swift"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/mMvPXMv/d54be5790d2b.jpg"
-og_title: "Mekyla Li Loses Miss Grand USA Title Days After Win"
-og_description: "Mekyla Li was stripped of her Miss Grand USA title due to a 2024 hit-and-run case and an undisclosed past marriage. Her reign ended just one week after being crowned."
-focus_keyword: "Mekyla Li Miss Grand USA"
 category: "Entertainment"
 tags: ["mekyla li", "miss grand usa", "beauty pageant", "hit-and-run", "litigation", "entertainment news", "celebrity drama"]
+canonical: "https://zandani.co.ke/article/mekyla-li-stripped-miss-grand-usa-title-hit-run-marriage"
 date: "2026-08-20T22:58:44Z"
 dateModified: "2026-08-20T22:58:44Z"
+focusKeyword: "'Mekyla Li Stripped of Miss Grand USA Title Over Hit-and-Run, Pas"
 schema: "NewsArticle"
 ---
 
-## The Unseen Past and the Public Present: Mekyla Li’s Instant Fall From Grace
+## The Unseen Past and the Public Present: Mekyla Li’s Instant Fall From Grace "Mekyla Li Stripped of Miss Grand USA Title Over Hit-and-Run, Pas is the central subject of the update.
 
 In an era where every digital footprint is indelible, the swift disqualification of Mekyla Li Miss Grand USA within a week of her crowning highlights an inescapable truth: public life now demands near-perfect transparency. Her case signals a pivotal shift in how institutions and audiences scrutinise the integrity of their public figures, placing the past firmly under the microscope.
 
