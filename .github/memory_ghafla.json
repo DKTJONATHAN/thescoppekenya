@@ -288,10 +288,10 @@
     "31482ac55c1e9cfc63fdf6035c145bc5",
     "be3807791fb037c27fb0e708d15b13fc",
     "25c533848feb9b65f7c45c5b2da25f0c",
-    "8a232505bc8a340eb10c6e53820fd396"
+    "8a232505bc8a340eb10c6e53820fd396",
+    "49e8582b7f039cafefe290d998b289e3"
   ],
   "style_history": [
-    "Receipts Piece",
     "Reaction Round-up",
     "Hard News Lead",
     "Trend Take",
@@ -320,10 +320,10 @@
     "Trend Take",
     "Receipts Piece",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Profile Beat"
   ],
   "angle_history": [
-    "impact_on_citizens|Kenya Power|Profile Beat",
     "myth_vs_fact|Sanaipei Tande|Receipts Piece",
     "winners_losers|Mwalimu Rachel|Reaction Round-up",
     "accountability|gospel singer|Hard News Lead",
@@ -402,6 +402,7 @@
     "money_follow|EPRA|Trend Take",
     "timeline_shift|2Mbili|Receipts Piece",
     "money_follow|Stivo Simple Boy|Reaction Round-up",
-    "next_48_hours|Kenyan music|Hard News Lead"
+    "next_48_hours|Kenyan music|Hard News Lead",
+    "policy_gap|helicopter crash|Profile Beat"
   ]
 }
