@@ -177,10 +177,10 @@
     "edce915d68885d8b3315eb8a788f3ba6",
     "4516471bed49c665b741ef363ce3fa30",
     "275b003f2565c57b52e157bdbf9a609b",
-    "037275ca179795049a05b6fcef670a95"
+    "037275ca179795049a05b6fcef670a95",
+    "19df41f5083af0b9c3f3846e60a3dc2e"
   ],
   "style_history": [
-    "Critical Take",
     "Africa Angle",
     "Backgrounder",
     "Explainer",
@@ -209,10 +209,10 @@
     "Backgrounder",
     "Critical Take",
     "Explainer",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Backgrounder"
   ],
   "angle_history": [
-    "impact_on_citizens|YouTube|Critical Take",
     "timeline_shift|AI traffic lights|Africa Angle",
     "winners_losers|Kenya|Explainer",
     "money_follow|Kenya Power|Backgrounder",
@@ -291,6 +291,7 @@
     "accountability|Spotify|Backgrounder",
     "accountability|Safaricom|Critical Take",
     "money_follow|Airtel|Explainer",
-    "winners_losers|ride-hailing|Hard News Lead"
+    "winners_losers|ride-hailing|Hard News Lead",
+    "timeline_shift|Google|Backgrounder"
   ]
 }
