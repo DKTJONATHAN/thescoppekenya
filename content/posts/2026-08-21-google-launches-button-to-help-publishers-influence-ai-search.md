@@ -1,18 +1,20 @@
 ---
 title: "Google launches button to help publishers influence AI search results"
 slug: "google-launches-button-to-help-publishers-influence-ai-search"
-description: "Google has introduced a new widget allowing publishers to boost their visibility in AI search results by letting users mark them as preferred sources."
+description: "Google launches button to help publishers influence AI search res: Google has introduced a new widget allowing publishers to boost their visibility in AI"
+excerpt: "The End of Passive SEO Google has officially released a widget for publishers to embed a Preferred Source button onto their own websites, ef"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://techweez.com/wp-content/uploads/2026/08/Google-Preferred-Sources.webp"
 category: "Technology"
 tags: ["google", "seo", "digital marketing", "technology", "publishers", "ai"]
+canonical: "https://zandani.co.ke/article/google-launches-button-to-help-publishers-influence-ai-search"
 date: "2026-08-21T11:43:51Z"
 dateModified: "2026-08-21T11:43:51Z"
+focusKeyword: "Google launches button to help publishers influence AI search res"
 schema: "NewsArticle"
 ---
 
-## The End of Passive SEO
+## The End of Passive SEO Google launches button to help publishers influence AI search res is the central subject of the update.
 
 Google has officially released a widget for publishers to embed a Preferred Source button onto their own websites, effectively handing them the responsibility of soliciting their own ranking signals for AI search results. This move signals a permanent shift away from the era of automated algorithmic discovery toward a landscape where publishers must aggressively campaign for visibility.
 
