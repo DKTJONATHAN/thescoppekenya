@@ -1,18 +1,20 @@
 ---
 title: "Rigathi Gachagua pledges to build mausoleum for late Johana Ngeno"
 slug: "rigathi-gachagua-pledges-to-build-mausoleum-for-late-johana-ngeno"
-description: "Former Deputy President Rigathi Gachagua has promised to fund a mausoleum for the late Johana Ngeno after visiting his Narok County gravesite recently."
+description: "Rigathi Gachagua pledges to build mausoleum for late Johana Ngeno: Former Deputy President Rigathi Gachagua has promised to fund a mausoleum for the late"
+excerpt: "Grave Politics in Narok Former Deputy President Rigathi Gachagua stood over a patch of earth in Mogondo this Friday, offering a checkbook to"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/an-image-of-former-deputy-president-rigathi-gachagua-conversing-with-late-mp-johana-ng-eno-s-mother-mary-temas-with-an-insert-of-the-deceased-legislator.jpg.webp?itok=L1QUsZz9"
 category: "News"
 tags: ["kenyan politics", "rigathi gachagua", "johana ngeno", "narok county", "emurua dikirr", "dcp"]
+canonical: "https://zandani.co.ke/article/rigathi-gachagua-pledges-to-build-mausoleum-for-late-johana-ngeno"
 date: "2026-08-21T11:31:12Z"
 dateModified: "2026-08-21T11:31:12Z"
+focusKeyword: "Rigathi Gachagua pledges to build mausoleum for late Johana Ngeno"
 schema: "NewsArticle"
 ---
 
-## Grave Politics in Narok
+## Grave Politics in Narok Rigathi Gachagua pledges to build mausoleum for late Johana Ngeno is the central subject of the update.
 
 Former Deputy President Rigathi Gachagua stood over a patch of earth in Mogondo this Friday, offering a checkbook to secure a legacy that the current administration seemingly discarded. While Mary Temas mourned the physical absence of her son, the late MP Johana Ng’eno, the political machinery present suggested this was never just about a tombstone.
 
