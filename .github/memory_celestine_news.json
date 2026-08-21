@@ -442,10 +442,10 @@
     "bffe8b148f0c3c373d5393406395e164",
     "f2b11b3711d5fc35544bc55821f72961",
     "9149425f5673ce287fe6b60c0da7070e",
-    "39e5beb5f460d20037cd39c023c05c4c"
+    "39e5beb5f460d20037cd39c023c05c4c",
+    "99ee60b1996495b4eacb6737eb38e7b1"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Context Backgrounder",
     "Power Accountability",
     "Hard News Lead",
@@ -474,10 +474,10 @@
     "Power Accountability",
     "Hard News Lead",
     "Explainer",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "money_follow|KeNHA|Hard News Lead",
     "policy_gap|police reform|Power Accountability",
     "winners_losers|DCI|Reaction & Voices",
     "money_follow|coffee farming|Context Backgrounder",
@@ -556,6 +556,7 @@
     "policy_gap|Lucy Afandi Esipila|Power Accountability",
     "money_follow|Kenya politics|Hard News Lead",
     "myth_vs_fact|KeNHA|Explainer",
-    "next_48_hours|IEBC|Reaction & Voices"
+    "next_48_hours|IEBC|Reaction & Voices",
+    "winners_losers|Kenyan Politics|Power Accountability"
   ]
 }
