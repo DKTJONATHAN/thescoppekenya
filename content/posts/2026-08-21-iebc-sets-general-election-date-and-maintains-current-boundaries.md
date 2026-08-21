@@ -1,18 +1,20 @@
 ---
 title: "IEBC Sets General Election Date and Maintains Current Boundaries"
 slug: "iebc-sets-general-election-date-and-maintains-current-boundaries"
-description: "The IEBC has published the official roadmap for the next General Election in Kenya confirming that existing constituency and ward boundaries will remain."
+description: "IEBC Sets General Election Date and Maintains Current Boundaries: The IEBC has published the official roadmap for the next General Election in Kenya confirming"
+excerpt: "The Map is Frozen, But the Ambition is Boiling Over Candidates across the country are tearing up their campaign playbooks today after the el"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/qMQw7Nfj/ae074db29126.webp"
 category: "News"
 tags: ["iebc", "kenya politics", "general election", "electoral boundaries", "kenyan news", "za ndani"]
+canonical: "https://zandani.co.ke/article/iebc-sets-general-election-date-and-maintains-current-boundaries"
 date: "2026-08-21T05:37:53Z"
 dateModified: "2026-08-21T05:37:53Z"
+focusKeyword: "IEBC Sets General Election Date and Maintains Current Boundaries"
 schema: "NewsArticle"
 ---
 
-## The Map is Frozen, But the Ambition is Boiling Over
+## The Map is Frozen, But the Ambition is Boiling Over IEBC Sets General Election Date and Maintains Current Boundaries is the central subject of the update.
 
 Candidates across the country are tearing up their campaign playbooks today after the electoral commission slammed the door on boundary reviews. For local power brokers who spent years betting on new ward lines to carve out their paths to victory, the reality of a status quo election has forced an immediate, frantic pivot.
 
