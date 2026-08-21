@@ -1,7 +1,8 @@
 ---
 title: "The Chronicler's Folly: A Tale of Thirsty Cities and Silent Streams"
 slug: "the-chroniclers-folly-thirsty-cities"
-description: "An old tale of dry lands and powerful men echoes in the promise of the nairobi water smart meter cost, proving that some thirsts are never quenched, only redist"
+description: "The Chronicler's Folly: A Tale of Thirsty Cities and Silent Strea: An old tale of dry lands and powerful men echoes in the promise of the nairobi water smart"
+excerpt: "The dust, fine as flour ground by a desert wind, clung to every crevice of the Watterson brothers’ faces. Mark and Wilfred stood on the porc"
 author: "The Chronicler"
 author_url: "https://zandani.co.ke/author/the-chronicler"
 image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200"
@@ -9,12 +10,12 @@ category: "Chronicles"
 tags: ["chronicles", "california-water-wars", "owens-valley", "william-mulholland", "nairobi-water-smart-meter-cost", "nairobi-water-prepaid-token-system", "nairobi-water-ultrasonic-meter-accuracy"]
 canonical: "https://zandani.co.ke/article/the-chroniclers-folly-thirsty-cities"
 date: "2026-08-21T11:36:32Z"
-authorUrl: "https://zandani.co.ke/author/the-chronicler"
 dateModified: "2026-08-21T11:36:32Z"
+focusKeyword: "The Chronicler's Folly: A Tale of Thirsty Cities and Silent Strea"
 schema: "NewsArticle"
 ---
 
-The dust, fine as flour ground by a desert wind, clung to every crevice of the Watterson brothers’ faces. Mark and Wilfred stood on the porch of their *Inyo Register* office, the relentless sun baking the promise out of the Owens Valley. It was 1924, and the grand aqueduct, a serpent of concrete and steel, had been siphoning the valley’s lifeblood south to Los Angeles for over a decade. William Mulholland, the architect of this liquid empire, had famously declared, "There it is - take it!" when the first water flowed into the San Fernando Valley in 1913. He had forgotten, or perhaps never cared, that someone else’s "it" was another’s "everything."
+The dust, fine as flour ground by a desert wind, clung to every crevice of the Watterson brothers’ faces. Mark and Wilfred stood on the porch of their *Inyo Register* office, the relentless sun baking the promise out of the Owens Valley. It was 1924, and the grand aqueduct, a serpent of concrete and steel, had been siphoning the valley’s lifeblood south to Los Angeles for over a decade. William Mulholland, the architect of this liquid empire, had famously declared, "There it is - take it!" when the first water flowed into the San Fernando Valley in 1913. He had forgotten, or perhaps never cared, that someone else’s "it" was another’s "everything." The Chronicler's Folly: A Tale of Thirsty Cities and Silent Strea is the central subject of the update.
 
 ### The Unseen Price of Progress
 
