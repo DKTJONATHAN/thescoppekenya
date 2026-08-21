@@ -14,7 +14,7 @@ focusKeyword: "'Anthony Bourdain Film 'Tony': Fact, Fiction in Early Life"
 schema: "NewsArticle"
 ---
 
-## The Making of a Legend: What the Anthony Bourdain Film 'Tony' Reveals About His Origins "Anthony Bourdain Film 'Tony': Fact, Fiction in Early Life is the central subject of the update.
+## The Making of a Legend: What the Anthony Bourdain Film 'Tony' Reveals About His Origins "Anthony Bourdain Film 'Tony': Fact, Fiction in Early Life is the central subject of the update. 'Anthony Bourdain Film 'Tony': Fact, Fiction in Early Life is the central subject of the update.
 
 Before Anthony Bourdain became the global traveler and food critic we knew, he was a 19-year-old following a girl to Provincetown, Massachusetts. This important summer of 1973, often hinted at but rarely detailed, forms the core of the new film **Tony**. The movie explores Bourdain's beginnings, showing a less polished individual finding his way, and reshaping our understanding of how a cultural figure like him started out.
 
