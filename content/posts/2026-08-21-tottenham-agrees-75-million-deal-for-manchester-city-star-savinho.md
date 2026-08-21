@@ -1,18 +1,20 @@
 ---
 title: "Tottenham agrees £75 million deal for Manchester City star Savinho"
 slug: "tottenham-agrees-75-million-deal-for-manchester-city-star-savinho"
-description: "Tottenham Hotspur has secured a deal for winger Savinho from Manchester City as the club continues an aggressive summer recruitment strategy."
+description: "Tottenham agrees £75 million deal for Manchester City star Savinh: Tottenham Hotspur has secured a deal for winger Savinho from Manchester City as the club"
+excerpt: "Tottenham Bets Big on Savinho to Lead New Era Savinho is trading Manchester for North London, a transfer that highlights a dramatic pivot in"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/030e/live/790b26f0-9d29-11f1-ba3e-c323fd3033f4.jpg"
 category: "Sports"
 tags: ["tottenham hotspur", "premier league", "football transfers", "manchester city", "kenyan football fans"]
+canonical: "https://zandani.co.ke/article/tottenham-agrees-75-million-deal-for-manchester-city-star-savinho"
 date: "2026-08-21T10:52:54Z"
 dateModified: "2026-08-21T10:52:54Z"
+focusKeyword: "Tottenham agrees £75 million deal for Manchester City star Savinh"
 schema: "NewsArticle"
 ---
 
-## Tottenham Bets Big on Savinho to Lead New Era
+## Tottenham Bets Big on Savinho to Lead New Era Tottenham agrees £75 million deal for Manchester City star Savinh is the central subject of the update.
 
 Savinho is trading Manchester for North London, a transfer that highlights a dramatic pivot in Tottenham’s recruitment strategy. At 22, the Brazilian winger is a high-priced gamble, symbolizing the club’s urgent desire to transform heavy financial backing into long-awaited trophies.
 
