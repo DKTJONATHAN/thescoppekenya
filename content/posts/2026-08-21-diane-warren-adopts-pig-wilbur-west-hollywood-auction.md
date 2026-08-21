@@ -14,7 +14,7 @@ focusKeyword: "'Diane Warren Adopts Viral Pig Wilbur After West Hollywood Auctio
 schema: "NewsArticle"
 ---
 
-## Diane Warren Secures Sanctuary Home for Viral West Hollywood Pig "Diane Warren Adopts Viral Pig Wilbur After West Hollywood Auctio is the central subject of the update.
+## Diane Warren Secures Sanctuary Home for Viral West Hollywood Pig "Diane Warren Adopts Viral Pig Wilbur After West Hollywood Auctio is the central subject of the update. 'Diane Warren Adopts Viral Pig Wilbur After West Hollywood Auctio is the central subject of the update.
 
 Oscar-nominated songwriter Diane Warren has successfully secured the future of Wilbur, the internet-famous pig, following a competitive silent auction in West Hollywood. A representative for the prolific composer emerged victorious, outbidding three other interested parties to ensure Wilbur's new residence will be a sprawling seven-acre sanctuary in Malibu. The high-profile adoption brings a unique resolution to a story that captured widespread public attention.
 
