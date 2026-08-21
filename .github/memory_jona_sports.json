@@ -280,10 +280,10 @@
     "35dcfe6fa38b9401778b7acbc2616e66",
     "c11888d1b568a3364f2c38867dd3b67d",
     "84bcbb15b1cbe807a80418a64f790ad1",
-    "d2361f741f585b182b9f1729ca67810d"
+    "d2361f741f585b182b9f1729ca67810d",
+    "7764368e6fe5f9a4f7fce429efe4430f"
   ],
   "style_history": [
-    "Stat Story",
     "Match Report",
     "Player Profile Beat",
     "Tactical Take",
@@ -312,10 +312,10 @@
     "Player Profile Beat",
     "Tactical Take",
     "Cynical Pundit",
-    "Match Report"
+    "Match Report",
+    "Player Profile Beat"
   ],
   "angle_history": [
-    "story_progression|Kenny Dalglish|Tactical Take",
     "myth_vs_fact|Golden Boot|Player Profile Beat",
     "money_follow|Real Madrid|Cynical Pundit",
     "timeline_shift|football|Match Report",
@@ -394,6 +394,7 @@
     "next_48_hours|transfer|Player Profile Beat",
     "story_progression|transfer window|Tactical Take",
     "money_follow|Premier League|Cynical Pundit",
-    "story_progression|football|Match Report"
+    "story_progression|football|Match Report",
+    "winners_losers|Transfer|Player Profile Beat"
   ]
 }
