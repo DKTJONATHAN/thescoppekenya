@@ -1,21 +1,20 @@
 ---
-title: "Diane Warren Adopts Viral Pig Wilbur After West Hollywood Auction Win
+title: "'Diane Warren Adopts Viral Pig Wilbur After West Hollywood Auction Win"
 slug: "diane-warren-adopts-pig-wilbur-west-hollywood-auction"
-description: "Famed songwriter Diane Warren adopted Wilbur, the viral pig from West Hollywood, securing his new home through a silent auction win. Discover more about this heartwarming story."
+description: "'Diane Warren Adopts Viral Pig Wilbur After West Hollywood Auctio: Famed songwriter Diane Warren adopted Wilbur, the viral pig from West Hollywood, securing"
+excerpt: "Diane Warren Secures Sanctuary Home for Viral West Hollywood Pig Oscar nominated songwriter Diane Warren has successfully secured the future"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/8gcYQ8SM/711288b80ee3.jpg"
-og_title: "Diane Warren Wins Auction, Adopts Viral Pig Wilbur"
-og_description: "Famed songwriter Diane Warren won a silent auction to adopt Wilbur, the pig that went viral in West Hollywood. He now has a new home at an animal sanctuary in Malibu."
-focus_keyword: "Diane Warren pig adoption"
 category: "Entertainment"
 tags: ["diane warren", "pig adoption", "wilbur", "animal rescue", "celebrity news", "malibu", "songwriter"]
+canonical: "https://zandani.co.ke/article/diane-warren-adopts-pig-wilbur-west-hollywood-auction"
 date: "2026-08-21T07:26:53Z"
 dateModified: "2026-08-21T07:26:53Z"
+focusKeyword: "'Diane Warren Adopts Viral Pig Wilbur After West Hollywood Auctio"
 schema: "NewsArticle"
 ---
 
-## Diane Warren Secures Sanctuary Home for Viral West Hollywood Pig
+## Diane Warren Secures Sanctuary Home for Viral West Hollywood Pig "Diane Warren Adopts Viral Pig Wilbur After West Hollywood Auctio is the central subject of the update.
 
 Oscar-nominated songwriter Diane Warren has successfully secured the future of Wilbur, the internet-famous pig, following a competitive silent auction in West Hollywood. A representative for the prolific composer emerged victorious, outbidding three other interested parties to ensure Wilbur's new residence will be a sprawling seven-acre sanctuary in Malibu. The high-profile adoption brings a unique resolution to a story that captured widespread public attention.
 
