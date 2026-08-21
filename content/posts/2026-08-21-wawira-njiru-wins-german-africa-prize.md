@@ -1,18 +1,20 @@
 ---
 title: "Wawira Njiru Wins German Africa Prize for School Feeding Model"
 slug: "wawira-njiru-wins-german-africa-prize"
-description: "Kenyan innovator Wawira Njiru receives the German Africa Prize for transforming school feeding programs into sustainable economic infrastructure."
+description: "Wawira Njiru Wins German Africa Prize for School Feeding Model: Kenyan innovator Wawira Njiru receives the German Africa Prize for transforming school feeding"
+excerpt: "Feeding the Bottom Line Wawira Njiru has secured the 2026 German Africa Prize, earning international acclaim for turning school lunches into"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/pjsKkjH8/2ea97d36ca03.jpg"
 category: "Business"
 tags: ["wawira njiru", "food4education", "kenyan innovation", "education news", "german africa prize"]
+canonical: "https://zandani.co.ke/article/wawira-njiru-wins-german-africa-prize"
 date: "2026-08-21T05:43:49Z"
 dateModified: "2026-08-21T05:43:49Z"
+focusKeyword: "Wawira Njiru Wins German Africa Prize for School Feeding Model"
 schema: "NewsArticle"
 ---
 
-## Feeding the Bottom Line
+## Feeding the Bottom Line Wawira Njiru Wins German Africa Prize for School Feeding Model is the central subject of the update.
 
 Wawira Njiru has secured the 2026 German Africa Prize, earning international acclaim for turning school lunches into a logistical enterprise. While the ceremony in Berlin celebrates the prestige, the fiscal reality of managing 660,000 children reveals a precarious reliance on external capital and state cooperation.
 
