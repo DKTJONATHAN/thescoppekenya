@@ -1,18 +1,20 @@
 ---
 title: "High Court Halts TSC Directive Restricting Teacher Social Media Use"
 slug: "high-court-halts-tsc-directive-restricting-teacher-social-media"
-description: "The Kiambu High Court has suspended a TSC directive that restricted educator conduct on social media pending a formal constitutional hearing of the case."
+description: "High Court Halts TSC Directive Restricting Teacher Social Media U: The Kiambu High Court has suspended a TSC directive that restricted educator conduct on"
+excerpt: "Judicial Intervention Rescues Teacher Digital Expression Justice Francis Nyungu Kyambia of the High Court in Kiambu has issued conservatory"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/HT3xr0r5/4befd5883be1.webp"
 category: "News"
 tags: ["tsc", "kenya education", "high court", "teachers", "social media", "kiambu", "kenyan news"]
+canonical: "https://zandani.co.ke/article/high-court-halts-tsc-directive-restricting-teacher-social-media"
 date: "2026-08-21T17:33:39Z"
 dateModified: "2026-08-21T17:33:39Z"
+focusKeyword: "High Court Halts TSC Directive Restricting Teacher Social Media U"
 schema: "NewsArticle"
 ---
 
-## Judicial Intervention Rescues Teacher Digital Expression
+## Judicial Intervention Rescues Teacher Digital Expression High Court Halts TSC Directive Restricting Teacher Social Media U is the central subject of the update.
 
 Justice Francis Nyungu Kyambia of the High Court in Kiambu has issued conservatory orders suspending the enforcement of TSC Circular No. 14/2026, which aimed to impose restrictive guidelines on how educators utilize social media platforms.
 
