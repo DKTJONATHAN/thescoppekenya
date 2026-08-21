@@ -384,10 +384,10 @@
     "b89dbec2842ed06c3b43dd8a6006b403",
     "370c1a88f1f7d58921177f148480fe65",
     "a86b067cfd45a5202598d81685787419",
-    "79e983b73ecdc962a7b5cdb4a1682c9d"
+    "79e983b73ecdc962a7b5cdb4a1682c9d",
+    "f2455349d316708b7d64c6365b388d33"
   ],
   "style_history": [
-    "Explainer",
     "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
@@ -416,10 +416,10 @@
     "Profile Beat",
     "Explainer",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Profile Beat"
   ],
   "angle_history": [
-    "policy_gap|Football|Explainer",
     "accountability|Controversy|Trend Take",
     "timeline_shift|sitcom|Profile Beat",
     "money_follow|Rosie O\u2019Donnell|Hard News Lead",
@@ -498,6 +498,7 @@
     "story_progression|Hayden Panettiere|Profile Beat",
     "accountability|Hayden Panettiere|Explainer",
     "accountability|Mekyla Li|Trend Take",
-    "money_follow|Diane Warren|Hard News Lead"
+    "money_follow|Diane Warren|Hard News Lead",
+    "timeline_shift|na|Profile Beat"
   ]
 }
