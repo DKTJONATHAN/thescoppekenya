@@ -443,10 +443,10 @@
     "f2b11b3711d5fc35544bc55821f72961",
     "9149425f5673ce287fe6b60c0da7070e",
     "39e5beb5f460d20037cd39c023c05c4c",
-    "99ee60b1996495b4eacb6737eb38e7b1"
+    "99ee60b1996495b4eacb6737eb38e7b1",
+    "c605664019566013a5841230e3932054"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Power Accountability",
     "Hard News Lead",
     "Explainer",
@@ -475,10 +475,10 @@
     "Hard News Lead",
     "Explainer",
     "Reaction & Voices",
-    "Power Accountability"
+    "Power Accountability",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "policy_gap|police reform|Power Accountability",
     "winners_losers|DCI|Reaction & Voices",
     "money_follow|coffee farming|Context Backgrounder",
     "policy_gap|EAC|Hard News Lead",
@@ -557,6 +557,7 @@
     "money_follow|Kenya politics|Hard News Lead",
     "myth_vs_fact|KeNHA|Explainer",
     "next_48_hours|IEBC|Reaction & Voices",
-    "winners_losers|Kenyan Politics|Power Accountability"
+    "winners_losers|Kenyan Politics|Power Accountability",
+    "policy_gap|TSC|Hard News Lead"
   ]
 }
