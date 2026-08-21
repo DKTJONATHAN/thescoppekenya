@@ -1,18 +1,20 @@
 ---
 title: "China Highlights Five Years of Global Development Initiative"
 slug: "china-marks-five-years-of-global-development-initiative"
-description: "China marks five years of the Global Development Initiative, showcasing its impact on sustainable development projects across Kenya and Africa."
+description: "China Highlights Five Years of Global Development Initiative: China marks five years of the Global Development Initiative, showcasing its impact on sustainable"
+excerpt: "From Concrete Slabs to Custom Clearance Kenya is evolving from a debt laden construction site into a potential exporter of value added goods"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://cdn.radioafrica.digital/image/2026/08/fee806e9-14b4-4ede-8bd0-6476dd4d22b7.webp?1787306009430"
 category: "Opinions"
 tags: ["global development initiative", "kenya-china relations", "sustainable development", "china", "kenya", "global south"]
+canonical: "https://zandani.co.ke/article/china-marks-five-years-of-global-development-initiative"
 date: "2026-08-21T09:52:26Z"
 dateModified: "2026-08-21T09:52:26Z"
+focusKeyword: "China Highlights Five Years of Global Development Initiative"
 schema: "NewsArticle"
 ---
 
-## From Concrete Slabs to Custom Clearance
+## From Concrete Slabs to Custom Clearance China Highlights Five Years of Global Development Initiative is the central subject of the update.
 
 Kenya is evolving from a debt-laden construction site into a potential exporter of value-added goods as Beijing recalibrates its development agenda. Five years into the Global Development Initiative (GDI), the focus has shifted from ceremonial ribbon-cutting at massive railways toward the nuanced technicalities of market access.
 
