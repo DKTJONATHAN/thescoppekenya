@@ -387,10 +387,10 @@
     "79e983b73ecdc962a7b5cdb4a1682c9d",
     "f2455349d316708b7d64c6365b388d33",
     "e605ef1f998708d81c41f40e32f10e6e",
-    "aa329d2a111c1bb5943180663d15c7cf"
+    "aa329d2a111c1bb5943180663d15c7cf",
+    "45b609d48bf4db0b9a3af84d73002f5d"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Explainer",
     "Trend Take",
     "Hard News Lead",
@@ -419,10 +419,10 @@
     "Hard News Lead",
     "Profile Beat",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "money_follow|Rosie O\u2019Donnell|Hard News Lead",
     "timeline_shift|na|Reaction Round-up",
     "myth_vs_fact|The Odyssey|Explainer",
     "myth_vs_fact|NCIS: New York|Trend Take",
@@ -501,6 +501,7 @@
     "money_follow|Diane Warren|Hard News Lead",
     "timeline_shift|na|Profile Beat",
     "timeline_shift|Holly Robinson Peete|Explainer",
-    "accountability|Boy Meets World|Trend Take"
+    "accountability|Boy Meets World|Trend Take",
+    "policy_gap|Maury Povich|Reaction Round-up"
   ]
 }
