@@ -1,21 +1,20 @@
 ---
-title: "Child Actor Protection: Melissa Gilbert's Advocacy & Husband's Charges
+title: "'Child Actor Protection: Melissa Gilbert's Advocacy & Husband's Charges"
 slug: "child-actor-protection-melissa-gilbert-husband-charges"
-description: "Melissa Gilbert advocates for child actor protection, mental health, and privacy. Her call follows recent tragedies, notably amid her husband's criminal allegations. Get insights here."
+description: "'Child Actor Protection: Melissa Gilbert's Advocacy & Husband's C: Melissa Gilbert advocates for child actor protection, mental health, and privacy. Her call"
+excerpt: "Gilbert's Call for Child Actor Protection Faces Scrutiny Amidst Husband's Indictment Actress Melissa Gilbert has reignited conversations aro"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/Rk6Z5DqJ/fafc2655ae7b.jpg"
-og_title: "Melissa Gilbert urges child actor protection amid controversy"
-og_description: "Melissa Gilbert calls for better child actor protection and mental health resources. This comes as her husband faces criminal sexual contact charges."
-focus_keyword: "child actor protection"
 category: "Entertainment"
 tags: ["child actors", "melissa gilbert", "timothy busfield", "hollywood system", "mental health", "child protection", "celebrity news"]
+canonical: "https://zandani.co.ke/article/child-actor-protection-melissa-gilbert-husband-charges"
 date: "2026-08-22T22:52:40Z"
 dateModified: "2026-08-22T22:52:40Z"
+focusKeyword: "'Child Actor Protection: Melissa Gilbert's Advocacy & Husband's C"
 schema: "NewsArticle"
 ---
 
-## Gilbert's Call for Child Actor Protection Faces Scrutiny Amidst Husband's Indictment
+## Gilbert's Call for Child Actor Protection Faces Scrutiny Amidst Husband's Indictment "Child Actor Protection: Melissa Gilbert's Advocacy & Husband's C is the central subject of the update.
 
 Actress Melissa Gilbert has reignited conversations around child actor protection with a recent Substack essay, advocating for crucial mental health support and privacy for young performers. This influential call for systemic change emerges just seven months after her husband, Timothy Busfield, was indicted on grave charges of criminal sexual contact involving child actors in New Mexico.
 
