@@ -1,18 +1,20 @@
 ---
 title: "Paul Ng'eno Brother of Late MP Johana Ng'eno Passes Away"
 slug: "paul-ngeno-brother-of-late-mp-johana-ngeno-dies"
-description: "Paul Ng'eno has died following a long illness shortly after Rigathi Gachagua pledged support to clear his medical bill, marking a fresh family tragedy."
+description: "Paul Ng'eno Brother of Late MP Johana Ng'eno Passes Away: Paul Ng'eno has died following a long illness shortly after Rigathi Gachagua pledged support to clear"
+excerpt: "The Cost of Care in the Wake of Tragedy Paul Ng'eno passed away on August 21 while receiving treatment in Eldoret, bringing a painful conclu"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/chzzqs5Y/cb9a530345be.webp"
 category: "News"
 tags: ["kenya", "emurua dikirr", "rigathi gachagua", "johana ngeno", "obituary", "eldoret"]
+canonical: "https://zandani.co.ke/article/paul-ngeno-brother-of-late-mp-johana-ngeno-dies"
 date: "2026-08-22T05:32:19Z"
 dateModified: "2026-08-22T05:32:19Z"
+focusKeyword: "Paul Ng'eno Brother of Late MP Johana Ng'eno Passes Away"
 schema: "NewsArticle"
 ---
 
-## The Cost of Care in the Wake of Tragedy
+## The Cost of Care in the Wake of Tragedy Paul Ng'eno Brother of Late MP Johana Ng'eno Passes Away is the central subject of the update.
 
 Paul Ng'eno passed away on August 21 while receiving treatment in Eldoret, bringing a painful conclusion to a long battle with illness. His death, occurring just 174 days after his brother, MP Johana Ng'eno, perished in a Nandi County helicopter crash, highlights the profound fragility of household stability when faced with back-to-back crises.
 
