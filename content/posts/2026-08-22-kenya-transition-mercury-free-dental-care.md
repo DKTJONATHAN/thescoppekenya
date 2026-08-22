@@ -1,18 +1,20 @@
 ---
 title: "Kenya steps up transition to mercury-free dental care"
 slug: "kenya-transition-mercury-free-dental-care"
-description: "Kenya is shifting away from toxic dental amalgam to meet the global 2034 phase-out deadline while prioritizing preventive oral healthcare for citizens."
+description: "Kenya steps up transition to mercury-free dental care: Kenya is shifting away from toxic dental amalgam to meet the global 2034 phase-out deadline while"
+excerpt: "A Change in the Chairside Equation The sharp, familiar hum of the dental drill and the faint scent of ozone usually mark the rhythm of a rou"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/JwtbHYsD/20c5efe97269.webp"
 category: "Opinions"
 tags: ["dental health", "kenya health", "minamata convention", "oral hygiene", "public health", "mercury phase-out"]
+canonical: "https://zandani.co.ke/article/kenya-transition-mercury-free-dental-care"
 date: "2026-08-22T09:40:59Z"
 dateModified: "2026-08-22T09:40:59Z"
+focusKeyword: "Kenya steps up transition to mercury-free dental care"
 schema: "NewsArticle"
 ---
 
-## A Change in the Chairside Equation
+## A Change in the Chairside Equation Kenya steps up transition to mercury-free dental care is the central subject of the update.
 
 The sharp, familiar hum of the dental drill and the faint scent of ozone usually mark the rhythm of a routine repair. Yet, resting in a Nairobi clinic chair this morning, I found myself contemplating how a single silver filling symbolizes a broader environmental transformation. We are collectively stepping away from a century of mercury-dependent dentistry. It is a necessary evolution, acknowledging that the toxic legacy of our dental health must conclude well before the official global deadline arrives.
 
