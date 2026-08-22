@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Schedules Maintenance Along Mombasa Road"
 slug: "kenya-power-maintenance-mombasa-road"
-description: "Kenya Power has announced an eight-hour electricity interruption for industrial clients on Mombasa Road on August 22 for scheduled grid maintenance."
+description: "Kenya Power Schedules Maintenance Along Mombasa Road: Kenya Power has announced an eight-hour electricity interruption for industrial clients on Mombasa Road"
+excerpt: "The Eight Hour Silence on Mombasa Road Kenya Power promises grid stability while simultaneously mandating an eight hour industrial standstil"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/zVSPTWtv/e72d10c539d4.jpg"
 category: "Gossip"
 tags: ["kenya power", "nairobi", "power outage", "mombasa road", "kenyan news", "infrastructure"]
+canonical: "https://zandani.co.ke/article/kenya-power-maintenance-mombasa-road"
 date: "2026-08-22T06:56:48Z"
 dateModified: "2026-08-22T06:56:48Z"
+focusKeyword: "Kenya Power Schedules Maintenance Along Mombasa Road"
 schema: "NewsArticle"
 ---
 
-## The Eight-Hour Silence on Mombasa Road
+## The Eight-Hour Silence on Mombasa Road Kenya Power Schedules Maintenance Along Mombasa Road is the central subject of the update.
 
 Kenya Power promises grid stability while simultaneously mandating an eight-hour industrial standstill for the primary manufacturing artery of the city. While the utility calls this essential maintenance, the ledger for businesses like Alliance Concrete tells a story of lost production cycles and ballooning overheads.
 
