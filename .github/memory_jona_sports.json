@@ -281,10 +281,10 @@
     "c11888d1b568a3364f2c38867dd3b67d",
     "84bcbb15b1cbe807a80418a64f790ad1",
     "d2361f741f585b182b9f1729ca67810d",
-    "7764368e6fe5f9a4f7fce429efe4430f"
+    "7764368e6fe5f9a4f7fce429efe4430f",
+    "b1c49165f4cfdade486a865d801d7c6b"
   ],
   "style_history": [
-    "Match Report",
     "Player Profile Beat",
     "Tactical Take",
     "Cynical Pundit",
@@ -313,10 +313,10 @@
     "Tactical Take",
     "Cynical Pundit",
     "Match Report",
-    "Player Profile Beat"
+    "Player Profile Beat",
+    "Tactical Take"
   ],
   "angle_history": [
-    "myth_vs_fact|Golden Boot|Player Profile Beat",
     "money_follow|Real Madrid|Cynical Pundit",
     "timeline_shift|football|Match Report",
     "money_follow|West Ham United|Stat Story",
@@ -395,6 +395,7 @@
     "story_progression|transfer window|Tactical Take",
     "money_follow|Premier League|Cynical Pundit",
     "story_progression|football|Match Report",
-    "winners_losers|Transfer|Player Profile Beat"
+    "winners_losers|Transfer|Player Profile Beat",
+    "policy_gap|Manchester United|Tactical Take"
   ]
 }
