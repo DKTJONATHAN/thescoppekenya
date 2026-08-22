@@ -219,10 +219,10 @@
     "42e019da85eeec6c3ab9e37727ec1181",
     "e0a3ea64fe45945c7ea71fd8090d2f82",
     "ec912a9bafcd49c00a967fbbc7b05c3b",
-    "ce00f76937e5c772b6f55fabe96d4111"
+    "ce00f76937e5c772b6f55fabe96d4111",
+    "741478935ac816cb8af9cdf680a21802"
   ],
   "style_history": [
-    "Counterpoint",
     "Letter Form",
     "Sharp Column",
     "Personal Reflection",
@@ -251,10 +251,10 @@
     "Personal Reflection",
     "Historical Lens",
     "Counterpoint",
-    "Sharp Column"
+    "Sharp Column",
+    "Personal Reflection"
   ],
   "angle_history": [
-    "myth_vs_fact|Wajir|Counterpoint",
     "money_follow|Geothermal Energy|Sharp Column",
     "winners_losers|infrastructure|Personal Reflection",
     "timeline_shift|IFRS S1|Historical Lens",
@@ -333,6 +333,7 @@
     "story_progression|digital marketing|Personal Reflection",
     "story_progression|Governance|Historical Lens",
     "myth_vs_fact|Kenya|Counterpoint",
-    "winners_losers|Global Development Initiative|Sharp Column"
+    "winners_losers|Global Development Initiative|Sharp Column",
+    "story_progression|dental amalgam|Personal Reflection"
   ]
 }
