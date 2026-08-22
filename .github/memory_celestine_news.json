@@ -444,10 +444,10 @@
     "9149425f5673ce287fe6b60c0da7070e",
     "39e5beb5f460d20037cd39c023c05c4c",
     "99ee60b1996495b4eacb6737eb38e7b1",
-    "c605664019566013a5841230e3932054"
+    "c605664019566013a5841230e3932054",
+    "3971032661128ab523b92861b81f0442"
   ],
   "style_history": [
-    "Power Accountability",
     "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
@@ -476,10 +476,10 @@
     "Explainer",
     "Reaction & Voices",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "winners_losers|DCI|Reaction & Voices",
     "money_follow|coffee farming|Context Backgrounder",
     "policy_gap|EAC|Hard News Lead",
     "policy_gap|Kenya-Somalia relations|Power Accountability",
@@ -558,6 +558,7 @@
     "myth_vs_fact|KeNHA|Explainer",
     "next_48_hours|IEBC|Reaction & Voices",
     "winners_losers|Kenyan Politics|Power Accountability",
-    "policy_gap|TSC|Hard News Lead"
+    "policy_gap|TSC|Hard News Lead",
+    "policy_gap|Kenya|Explainer"
   ]
 }
