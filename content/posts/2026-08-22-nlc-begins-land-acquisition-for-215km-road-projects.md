@@ -1,18 +1,20 @@
 ---
 title: "NLC Begins Land Acquisition for 215km Road Projects Across Counties"
 slug: "nlc-begins-land-acquisition-for-215km-road-projects"
-description: "The National Land Commission has started compulsory land acquisition procedures for major road projects spanning 215 kilometres across four Kenyan counties."
+description: "NLC Begins Land Acquisition for 215km Road Projects Across Counti: The National Land Commission has started compulsory land acquisition procedures for major"
+excerpt: "The Price of Concrete Progress The National Land Commission has officially signaled the beginning of the end for hundreds of families across"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/LDwWHd3k/509a927e06c5.webp"
 category: "News"
 tags: ["kenya roads", "nlc", "kenha", "infrastructure", "land acquisition", "transport", "kajiado"]
+canonical: "https://zandani.co.ke/article/nlc-begins-land-acquisition-for-215km-road-projects"
 date: "2026-08-22T17:25:25Z"
 dateModified: "2026-08-22T17:25:25Z"
+focusKeyword: "NLC Begins Land Acquisition for 215km Road Projects Across Counti"
 schema: "NewsArticle"
 ---
 
-## The Price of Concrete Progress
+## The Price of Concrete Progress NLC Begins Land Acquisition for 215km Road Projects Across Counti is the central subject of the update.
 
 The National Land Commission has officially signaled the beginning of the end for hundreds of families across the North Rift and Kajiado. While officials tout connectivity, the move to seize land for 215 kilometres of new tarmac ignores the reality of those who call these ancestral tracts home.
 
