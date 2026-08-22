@@ -356,10 +356,10 @@
     "1ea7295aaf7723f9bb41f8238e4ef29b",
     "c77f327c81382f2d6034eea297955041",
     "4a80164f96dfce9ae330d9ac9d9e1a2e",
-    "552f6067f87f0c6528d0cea996e06359"
+    "552f6067f87f0c6528d0cea996e06359",
+    "592311450da07cb340977b5888ea4125"
   ],
   "style_history": [
-    "Hard News Lead",
     "Receipts Piece",
     "Profile Beat",
     "Trend Take",
@@ -388,10 +388,10 @@
     "Hard News Lead",
     "Receipts Piece",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "myth_vs_fact|Raila Odinga|Trend Take",
     "story_progression|Eko Dydda|Hard News Lead",
     "money_follow|nightlife|Profile Beat",
     "story_progression|Churchill Show|Reaction Round-up",
@@ -470,6 +470,7 @@
     "story_progression|Kenya|Hard News Lead",
     "money_follow|Mugithi|Receipts Piece",
     "story_progression|social media influencers|Reaction Round-up",
-    "timeline_shift|Nairobi|Trend Take"
+    "timeline_shift|Nairobi|Trend Take",
+    "story_progression|Swift Academy|Profile Beat"
   ]
 }
