@@ -1,18 +1,20 @@
 ---
 title: "Manchester United statistical analysis reveals offensive struggles"
 slug: "manchester-united-statistical-performance-analysis"
-description: "An in-depth look at Manchester United performance metrics showing a gap between shot volume and quality chance creation in the Premier League."
+description: "Manchester United statistical analysis reveals offensive struggle: An in-depth look at Manchester United performance metrics showing a gap between shot volume"
+excerpt: "The Statistical Mirage of Old Trafford Manchester United concluded their recent Premier League campaign clinging to a slender goal differenc"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/jKbTWPM/2377d771310f.jpg"
 category: "Sports"
 tags: ["manchester united", "premier league", "football analysis", "sports news", "kenyan football fans"]
+canonical: "https://zandani.co.ke/article/manchester-united-statistical-performance-analysis"
 date: "2026-08-22T10:44:58Z"
 dateModified: "2026-08-22T10:44:58Z"
+focusKeyword: "Manchester United statistical analysis reveals offensive struggle"
 schema: "NewsArticle"
 ---
 
-## The Statistical Mirage of Old Trafford
+## The Statistical Mirage of Old Trafford Manchester United statistical analysis reveals offensive struggle is the central subject of the update.
 
 Manchester United concluded their recent Premier League campaign clinging to a slender goal-difference margin of 6.5. This narrow buffer serves as a mathematical indictment of a side operating on borrowed time rather than structural superiority. While the final league position may suggest stability, the underlying metrics expose a profound tactical malfunction masked by isolated moments of individual excellence.
 
