@@ -1,18 +1,20 @@
 ---
 title: "Greek Firm Proposes Ksh194 Billion AI Data Centre in Mombasa"
 slug: "amaco-energy-proposes-ksh194-billion-ai-data-centre-mombasa"
-description: "Amaco Energy Group is in talks with the Kenyan government to build an energy-independent AI data centre in Mombasa to support digital infrastructure growth."
+description: "Greek Firm Proposes Ksh194 Billion AI Data Centre in Mombasa: Amaco Energy Group is in talks with the Kenyan government to build an energy-independent AI data"
+excerpt: "Mombasa’s Offshore Energy Secession Amaco Energy Group is seeking state approval for a Ksh194 billion data centre in Mombasa, signaling a sh"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/8n4scrZ5/3409c39f7033.webp"
 category: "News"
 tags: ["kenya news", "digital superhighway", "data centres", "mombasa", "ketraco", "ai infrastructure"]
+canonical: "https://zandani.co.ke/article/amaco-energy-proposes-ksh194-billion-ai-data-centre-mombasa"
 date: "2026-08-22T11:25:09Z"
 dateModified: "2026-08-22T11:25:09Z"
+focusKeyword: "Greek Firm Proposes Ksh194 Billion AI Data Centre in Mombasa"
 schema: "NewsArticle"
 ---
 
-## Mombasa’s Offshore Energy Secession
+## Mombasa’s Offshore Energy Secession Greek Firm Proposes Ksh194 Billion AI Data Centre in Mombasa is the central subject of the update.
 
 Amaco Energy Group is seeking state approval for a Ksh194 billion data centre in Mombasa, signaling a shift toward energy-independent tech hubs. By opting for a dedicated offshore LNG-powered generation system, the Greek corporation intends to bypass the national grid, highlighting a growing friction between decentralized digital infrastructure and Kenya’s centralized transmission strategy.
 
