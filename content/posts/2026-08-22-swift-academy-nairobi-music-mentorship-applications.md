@@ -1,18 +1,20 @@
 ---
 title: "Martell and Africa House Launch Swift Academy Mentorship in Nairobi"
 slug: "swift-academy-nairobi-music-mentorship-applications"
-description: "Swift Academy opens applications for 25 emerging music professionals in Nairobi to receive expert mentorship, industry resources, and a creative residency."
+description: "Martell and Africa House Launch Swift Academy Mentorship in Nairo: Swift Academy opens applications for 25 emerging music professionals in Nairobi to receive"
+excerpt: "Shaping the Sound of Tomorrow For twenty five musicians in Nairobi, a single classroom might soon become the most important space in the cit"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/Rkptpygp/fa56f246d9fe.webp"
 category: "Gossip"
 tags: ["kenyan music", "swift academy", "music industry", "bensoul", "nairobi events", "talent development"]
+canonical: "https://zandani.co.ke/article/swift-academy-nairobi-music-mentorship-applications"
 date: "2026-08-22T08:48:45Z"
 dateModified: "2026-08-22T08:48:45Z"
+focusKeyword: "Martell and Africa House Launch Swift Academy Mentorship in Nairo"
 schema: "NewsArticle"
 ---
 
-## Shaping the Sound of Tomorrow
+## Shaping the Sound of Tomorrow Martell and Africa House Launch Swift Academy Mentorship in Nairo is the central subject of the update.
 
 For twenty-five musicians in Nairobi, a single classroom might soon become the most important space in the city. The partnership between Martell and Africa House for the Swift Academy offers more than just a brief mentorship opportunity; it serves as a high-stakes environment where the trajectory of Kenya’s future music landscape is being mapped out.
 
