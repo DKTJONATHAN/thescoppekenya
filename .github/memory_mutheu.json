@@ -386,10 +386,10 @@
     "a86b067cfd45a5202598d81685787419",
     "79e983b73ecdc962a7b5cdb4a1682c9d",
     "f2455349d316708b7d64c6365b388d33",
-    "e605ef1f998708d81c41f40e32f10e6e"
+    "e605ef1f998708d81c41f40e32f10e6e",
+    "aa329d2a111c1bb5943180663d15c7cf"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction Round-up",
     "Explainer",
     "Trend Take",
@@ -418,10 +418,10 @@
     "Trend Take",
     "Hard News Lead",
     "Profile Beat",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
-    "timeline_shift|sitcom|Profile Beat",
     "money_follow|Rosie O\u2019Donnell|Hard News Lead",
     "timeline_shift|na|Reaction Round-up",
     "myth_vs_fact|The Odyssey|Explainer",
@@ -500,6 +500,7 @@
     "accountability|Mekyla Li|Trend Take",
     "money_follow|Diane Warren|Hard News Lead",
     "timeline_shift|na|Profile Beat",
-    "timeline_shift|Holly Robinson Peete|Explainer"
+    "timeline_shift|Holly Robinson Peete|Explainer",
+    "accountability|Boy Meets World|Trend Take"
   ]
 }
