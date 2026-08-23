@@ -1,18 +1,20 @@
 ---
 title: "Uhuru Kenyatta denies funding opposition and confirms retirement"
 slug: "uhuru-kenyatta-denies-funding-opposition-and-confirms-retirement"
-description: "Former President Uhuru Kenyatta has dismissed claims that he is funding opposition activities and reiterated his commitment to permanent retirement."
+description: "Uhuru Kenyatta denies funding opposition and confirms retirement: Former President Uhuru Kenyatta has dismissed claims that he is funding opposition activities"
+excerpt: "Uhuru Kenyatta and the politics of distraction Former President Uhuru Kenyatta has formally distanced himself from claims that he is bankrol"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/SDd7Jqj7/2b36683e87e9.webp"
 category: "News"
 tags: ["uhuru kenyatta", "william ruto", "kenyan politics", "opposition", "kenya news"]
+canonical: "https://zandani.co.ke/article/uhuru-kenyatta-denies-funding-opposition-and-confirms-retirement"
 date: "2026-08-23T11:25:26Z"
 dateModified: "2026-08-23T11:25:26Z"
+focusKeyword: "Uhuru Kenyatta denies funding opposition and confirms retirement"
 schema: "NewsArticle"
 ---
 
-## Uhuru Kenyatta and the politics of distraction
+## Uhuru Kenyatta and the politics of distraction Uhuru Kenyatta denies funding opposition and confirms retirement is the central subject of the update.
 
 Former President Uhuru Kenyatta has formally distanced himself from claims that he is bankrolling opposition movements, asserting at a memorial service in Kitale that his focus remains fixed on a quiet post-presidency life far removed from the halls of power.
 
