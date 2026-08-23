@@ -1,18 +1,20 @@
 ---
 title: "West Brom vs Burnley match to feature tribute for Quevin Castro"
 slug: "west-brom-vs-burnley-match-to-feature-tribute-for-quevin-castro"
-description: "West Bromwich Albion faces Burnley in a Championship clash overshadowed by the tragic death of former player Quevin Castro at the age of 25."
+description: "West Brom vs Burnley match to feature tribute for Quevin Castro: West Bromwich Albion faces Burnley in a Championship clash overshadowed by the tragic death of"
+excerpt: "The Arithmetic of Loss at The Hawthorns Twenty five represents the final, tragic count of years for Quevin Castro, a number that now recalib"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/5X0d6vdg/2a9164e887b5.jpg"
 category: "Sports"
 tags: ["football", "championship", "west bromwich albion", "burnley", "quevin castro", "sports news"]
+canonical: "https://zandani.co.ke/article/west-brom-vs-burnley-match-to-feature-tribute-for-quevin-castro"
 date: "2026-08-23T10:45:35Z"
 dateModified: "2026-08-23T10:45:35Z"
+focusKeyword: "West Brom vs Burnley match to feature tribute for Quevin Castro"
 schema: "NewsArticle"
 ---
 
-## The Arithmetic of Loss at The Hawthorns
+## The Arithmetic of Loss at The Hawthorns West Brom vs Burnley match to feature tribute for Quevin Castro is the central subject of the update.
 
 Twenty-five represents the final, tragic count of years for Quevin Castro, a number that now recalibrates the atmosphere of today's Championship clash between West Bromwich Albion and Burnley. While supporters prepare for a sombre tribute at the 12:00 kick-off, the professional reality of the pitch remains cold and uncompromising.
 
