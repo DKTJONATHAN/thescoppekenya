@@ -449,10 +449,10 @@
     "6182e32fbf67d0facc7f4dfbb9a6dba5",
     "f3f0f356318d05ddf14267f19d999673",
     "4d29e6a348b5e4411978d65e32ae4563",
-    "934609f4ee422e27ef82bb079e3d7886"
+    "934609f4ee422e27ef82bb079e3d7886",
+    "cdb436d1296c5481b10e34252443656a"
   ],
   "style_history": [
-    "Power Accountability",
     "Explainer",
     "Hard News Lead",
     "Reaction & Voices",
@@ -481,10 +481,10 @@
     "Context Backgrounder",
     "Power Accountability",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "next_48_hours|KAWU|Explainer",
     "money_follow|ODPP|Context Backgrounder",
     "money_follow|BATUK|Hard News Lead",
     "story_progression|Kenya Wildlife Service|Reaction & Voices",
@@ -563,6 +563,7 @@
     "winners_losers|Digital Superhighway|Context Backgrounder",
     "winners_losers|National Land Commission|Power Accountability",
     "policy_gap|Kenya Wildlife Service|Hard News Lead",
-    "winners_losers|Uhuru Kenyatta|Explainer"
+    "winners_losers|Uhuru Kenyatta|Explainer",
+    "accountability|Political Parties Fund|Reaction & Voices"
   ]
 }
