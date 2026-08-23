@@ -1,18 +1,20 @@
 ---
 title: "AliExpress Accused of Tracking Users via Silent Audio Signals"
 slug: "aliexpress-accused-of-tracking-users-via-silent-audio-signals"
-description: "Researchers discover AliExpress uses hidden scripts and silent audio signals to track devices and bypass privacy protections without user consent."
+description: "AliExpress Accused of Tracking Users via Silent Audio Signals: Researchers discover AliExpress uses hidden scripts and silent audio signals to track devices"
+excerpt: "Hidden Traces in the Digital Marketplace For many Kenyans hunting for a bargain on global retail platforms like AliExpress, the cost of a di"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/chdzyPRx/08bf4e625689.webp"
 category: "Technology"
 tags: ["aliexpress", "data privacy", "online security", "digital tracking", "cyber security", "technology news"]
+canonical: "https://zandani.co.ke/article/aliexpress-accused-of-tracking-users-via-silent-audio-signals"
 date: "2026-08-23T11:36:06Z"
 dateModified: "2026-08-23T11:36:06Z"
+focusKeyword: "AliExpress Accused of Tracking Users via Silent Audio Signals"
 schema: "NewsArticle"
 ---
 
-## Hidden Traces in the Digital Marketplace
+## Hidden Traces in the Digital Marketplace AliExpress Accused of Tracking Users via Silent Audio Signals is the central subject of the update.
 
 For many Kenyans hunting for a bargain on global retail platforms like AliExpress, the cost of a discounted smartphone or charger is far steeper than the sticker price. Behind the interface lies a sophisticated form of hardware-level audio fingerprinting that sidesteps conventional browser privacy safeguards. These scripts act as silent observers, probing device internals in ways that render our standard consent banners little more than digital window dressing.
 
