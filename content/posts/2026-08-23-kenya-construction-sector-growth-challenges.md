@@ -1,18 +1,20 @@
 ---
 title: "Kenya Construction Sector Faces Regulatory and Cost Hurdles"
 slug: "kenya-construction-sector-growth-challenges"
-description: "Kenya's construction industry sees growth despite rising material costs, approval delays, and limited digital permit adoption."
+description: "Kenya Construction Sector Faces Regulatory and Cost Hurdles: Kenya's construction industry sees growth despite rising material costs, approval delays, and"
+excerpt: "The Construction Industry Stagnation The Kenyan construction sector has achieved a 6.8 percent growth surge in 2025, yet this recovery is cu"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/Nnth3vSW/1ca5b3ea311e.webp"
 category: "Opinions"
 tags: ["construction industry", "kenyan real estate", "infrastructure development", "nairobi urbanization", "economic growth", "kenya economy"]
+canonical: "https://zandani.co.ke/article/kenya-construction-sector-growth-challenges"
 date: "2026-08-23T09:41:46Z"
 dateModified: "2026-08-23T09:41:46Z"
+focusKeyword: "Kenya Construction Sector Faces Regulatory and Cost Hurdles"
 schema: "NewsArticle"
 ---
 
-## The Construction Industry Stagnation
+## The Construction Industry Stagnation Kenya Construction Sector Faces Regulatory and Cost Hurdles is the central subject of the update.
 
 The Kenyan construction sector has achieved a 6.8 percent growth surge in 2025, yet this recovery is currently being throttled by outdated bureaucratic hurdles. It is time to address the architects of this inefficiency who prioritize gatekeeping over national economic progress.
 
