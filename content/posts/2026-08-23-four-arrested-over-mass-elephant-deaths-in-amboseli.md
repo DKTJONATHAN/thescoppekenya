@@ -1,18 +1,20 @@
 ---
 title: "Four Arrested as Authorities Probe Death of 18 Amboseli Elephants"
 slug: "four-arrested-over-mass-elephant-deaths-in-amboseli"
-description: "Kenyan authorities have arrested four suspects following the suspicious death of 18 elephants in Amboseli due to suspected exposure to toxic chemicals."
+description: "Four Arrested as Authorities Probe Death of 18 Amboseli Elephants: Kenyan authorities have arrested four suspects following the suspicious death of 18"
+excerpt: "Toxic Frontiers Threaten Amboseli Wildlife Kenyan authorities have apprehended four individuals in connection with the mass poisoning of 18"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/zWqV0hz6/df4aee7287e4.webp"
 category: "News"
 tags: ["amboseli", "kenya wildlife service", "elephants", "wildlife conservation", "kenya news"]
+canonical: "https://zandani.co.ke/article/four-arrested-over-mass-elephant-deaths-in-amboseli"
 date: "2026-08-23T05:34:24Z"
 dateModified: "2026-08-23T05:34:24Z"
+focusKeyword: "Four Arrested as Authorities Probe Death of 18 Amboseli Elephants"
 schema: "NewsArticle"
 ---
 
-## Toxic Frontiers Threaten Amboseli Wildlife
+## Toxic Frontiers Threaten Amboseli Wildlife Four Arrested as Authorities Probe Death of 18 Amboseli Elephants is the central subject of the update.
 
 Kenyan authorities have apprehended four individuals in connection with the mass poisoning of 18 elephants, a catastrophe revealing systemic failures in the regulation of hazardous agricultural chemicals circulating near the Amboseli ecosystem.
 

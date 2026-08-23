@@ -14,7 +14,7 @@ focusKeyword: "'Child Actor Protection: Melissa Gilbert's Advocacy & Husband's C
 schema: "NewsArticle"
 ---
 
-## Gilbert's Call for Child Actor Protection Faces Scrutiny Amidst Husband's Indictment "Child Actor Protection: Melissa Gilbert's Advocacy & Husband's C is the central subject of the update.
+## Gilbert's Call for Child Actor Protection Faces Scrutiny Amidst Husband's Indictment "Child Actor Protection: Melissa Gilbert's Advocacy & Husband's C is the central subject of the update. 'Child Actor Protection: Melissa Gilbert's Advocacy & Husband's C is the central subject of the update.
 
 Actress Melissa Gilbert has reignited conversations around child actor protection with a recent Substack essay, advocating for crucial mental health support and privacy for young performers. This influential call for systemic change emerges just seven months after her husband, Timothy Busfield, was indicted on grave charges of criminal sexual contact involving child actors in New Mexico.
 
