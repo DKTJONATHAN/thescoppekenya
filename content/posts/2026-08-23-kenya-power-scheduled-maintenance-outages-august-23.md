@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Schedules Maintenance Outages Across Six Counties"
 slug: "kenya-power-scheduled-maintenance-outages-august-23"
-description: "Kenya Power has announced scheduled electricity maintenance for August 23, affecting residents in Nairobi, Kajiado, Uasin Gishu, Kilifi, Laikipia, and Nyeri."
+description: "Kenya Power Schedules Maintenance Outages Across Six Counties: Kenya Power has announced scheduled electricity maintenance for August 23, affecting residents"
+excerpt: "Silent Sunday: Kenya Power Disconnects Commerce Across Six Counties Kenya Power has initiated a massive grid maintenance schedule today, Aug"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/LhJ9jzsx/ae6ce58dbb0d.jpg"
 category: "Gossip"
 tags: ["kenya power", "power outage", "utility maintenance", "kenya news", "electricity", "kenya energy"]
+canonical: "https://zandani.co.ke/article/kenya-power-scheduled-maintenance-outages-august-23"
 date: "2026-08-23T06:58:02Z"
 dateModified: "2026-08-23T06:58:02Z"
+focusKeyword: "Kenya Power Schedules Maintenance Outages Across Six Counties"
 schema: "NewsArticle"
 ---
 
-## Silent Sunday: Kenya Power Disconnects Commerce Across Six Counties
+## Silent Sunday: Kenya Power Disconnects Commerce Across Six Counties Kenya Power Schedules Maintenance Outages Across Six Counties is the central subject of the update.
 
 Kenya Power has initiated a massive grid maintenance schedule today, August 23, 2026, forcing a total blackout across Nairobi, Kajiado, Uasin Gishu, Kilifi, Laikipia, and Nyeri. This utility shutdown effectively pauses economic activity for thousands of informal traders and small businesses reliant on Sunday traffic.
 
