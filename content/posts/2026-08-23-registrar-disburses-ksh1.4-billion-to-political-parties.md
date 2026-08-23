@@ -1,18 +1,20 @@
 ---
 title: "Registrar of Political Parties disburses Ksh1.4 billion to parties"
 slug: "registrar-disburses-ksh1.4-billion-to-political-parties"
-description: "The Office of the Registrar of Political Parties has released Ksh1.4 billion to qualifying entities including UDA, ODM and Jubilee under new legislation."
+description: "Registrar of Political Parties disburses Ksh1.4 billion to partie: The Office of the Registrar of Political Parties has released Ksh1.4 billion to qualifying"
+excerpt: "The Billion Shilling Political Tab: Are Kenyans Getting Value for Party Funding? Kenyans are questioning why their taxes are fueling party c"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/PG8hVQDz/c5273a00fbca.webp"
 category: "News"
 tags: ["kenya politics", "political parties fund", "orpp", "uda", "odm", "jubilee party", "kenyan news"]
+canonical: "https://zandani.co.ke/article/registrar-disburses-ksh1.4-billion-to-political-parties"
 date: "2026-08-23T17:26:18Z"
 dateModified: "2026-08-23T17:26:18Z"
+focusKeyword: "Registrar of Political Parties disburses Ksh1.4 billion to partie"
 schema: "NewsArticle"
 ---
 
-## The Billion-Shilling Political Tab: Are Kenyans Getting Value for Party Funding?
+## The Billion-Shilling Political Tab: Are Kenyans Getting Value for Party Funding? Registrar of Political Parties disburses Ksh1.4 billion to partie is the central subject of the update.
 
 Kenyans are questioning why their taxes are fueling party coffers when basic public services remain in a state of decay. As the Office of the Registrar of Political Parties releases Ksh1.4 billion, the public mood is shifting from indifference to outright demands for accountability.
 
