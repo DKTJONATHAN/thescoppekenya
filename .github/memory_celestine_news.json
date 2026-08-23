@@ -447,10 +447,10 @@
     "c605664019566013a5841230e3932054",
     "3971032661128ab523b92861b81f0442",
     "6182e32fbf67d0facc7f4dfbb9a6dba5",
-    "f3f0f356318d05ddf14267f19d999673"
+    "f3f0f356318d05ddf14267f19d999673",
+    "4d29e6a348b5e4411978d65e32ae4563"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
     "Explainer",
@@ -479,10 +479,10 @@
     "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
-    "Power Accountability"
+    "Power Accountability",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "policy_gap|Kenya-Somalia relations|Power Accountability",
     "story_progression|Senate|Reaction & Voices",
     "next_48_hours|KAWU|Explainer",
     "money_follow|ODPP|Context Backgrounder",
@@ -561,6 +561,7 @@
     "policy_gap|TSC|Hard News Lead",
     "policy_gap|Kenya|Explainer",
     "winners_losers|Digital Superhighway|Context Backgrounder",
-    "winners_losers|National Land Commission|Power Accountability"
+    "winners_losers|National Land Commission|Power Accountability",
+    "policy_gap|Kenya Wildlife Service|Hard News Lead"
   ]
 }
