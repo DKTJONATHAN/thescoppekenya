@@ -1,21 +1,20 @@
 ---
-title: "Spider-Man Brand New Day Box Office Nears Top 5, Eyes Titanic Record
+title: "'Spider-Man Brand New Day Box Office Nears Top 5, Eyes Titanic Record"
 slug: "spider-man-brand-new-day-box-office-nears-titanic-record"
-description: "Spider-Man: Brand New Day box office dominates, holding No. 1 globally. The film is set to surpass Titanic's global earnings, nearing the all-time top 5. Read more now."
+description: "'Spider-Man Brand New Day Box Office Nears Top 5, Eyes Titanic Re: Spider-Man: Brand New Day box office dominates, holding No. 1 globally. The film is set to"
+excerpt: "The Billion Dollar Question: Will Spider Man Brand New Day Box Office Unseat Titanic? Spider Man: Brand New Day is swinging towards an unpre"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/xK2BRyyh/1a03b503b1ae.jpg"
-og_title: "Spider-Man: Brand New Day Nears Titanic in Global Box Office"
-og_description: "Spider-Man: Brand New Day is dominating the global box office and is on the cusp of surpassing Titanic's total earnings. It's nearing the all-time top 5."
-focus_keyword: "Spider-Man Brand New Day box office"
 category: "Entertainment"
 tags: ["spider-man brand new day", "box office", "film earnings", "titanic", "james cameron", "hollywood", "entertainment"]
+canonical: "https://zandani.co.ke/article/spider-man-brand-new-day-box-office-nears-titanic-record"
 date: "2026-08-23T22:52:44Z"
 dateModified: "2026-08-23T22:52:44Z"
+focusKeyword: "'Spider-Man Brand New Day Box Office Nears Top 5, Eyes Titanic Re"
 schema: "NewsArticle"
 ---
 
-## The Billion-Dollar Question: Will Spider-Man Brand New Day Box Office Unseat Titanic?
+## The Billion-Dollar Question: Will Spider-Man Brand New Day Box Office Unseat Titanic? "Spider-Man Brand New Day Box Office Nears Top 5, Eyes Titanic Re is the central subject of the update.
 
 *Spider-Man: Brand New Day* is swinging towards an unprecedented box office milestone, poised to dethrone a cinematic titan. This isn't just about numbers; it's a generational clash with huge implications for film history and fandoms worldwide, as the *Spider-Man Brand New Day box office* nears the all-time top 5.
 
