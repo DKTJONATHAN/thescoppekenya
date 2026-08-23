@@ -220,10 +220,10 @@
     "e0a3ea64fe45945c7ea71fd8090d2f82",
     "ec912a9bafcd49c00a967fbbc7b05c3b",
     "ce00f76937e5c772b6f55fabe96d4111",
-    "741478935ac816cb8af9cdf680a21802"
+    "741478935ac816cb8af9cdf680a21802",
+    "308b43bcc356cc472283c9cc033ff3c5"
   ],
   "style_history": [
-    "Letter Form",
     "Sharp Column",
     "Personal Reflection",
     "Counterpoint",
@@ -252,10 +252,10 @@
     "Historical Lens",
     "Counterpoint",
     "Sharp Column",
-    "Personal Reflection"
+    "Personal Reflection",
+    "Letter Form"
   ],
   "angle_history": [
-    "money_follow|Geothermal Energy|Sharp Column",
     "winners_losers|infrastructure|Personal Reflection",
     "timeline_shift|IFRS S1|Historical Lens",
     "winners_losers|Madaraka Day|Letter Form",
@@ -334,6 +334,7 @@
     "story_progression|Governance|Historical Lens",
     "myth_vs_fact|Kenya|Counterpoint",
     "winners_losers|Global Development Initiative|Sharp Column",
-    "story_progression|dental amalgam|Personal Reflection"
+    "story_progression|dental amalgam|Personal Reflection",
+    "accountability|Construction Industry|Letter Form"
   ]
 }
