@@ -389,10 +389,10 @@
     "e605ef1f998708d81c41f40e32f10e6e",
     "aa329d2a111c1bb5943180663d15c7cf",
     "45b609d48bf4db0b9a3af84d73002f5d",
-    "735450eb6e53889b6cd5bd0abf528847"
+    "735450eb6e53889b6cd5bd0abf528847",
+    "f2d7fed91fb4c561d62474a76752e486"
   ],
   "style_history": [
-    "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
     "Profile Beat",
@@ -421,10 +421,10 @@
     "Explainer",
     "Trend Take",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Profile Beat"
   ],
   "angle_history": [
-    "myth_vs_fact|The Odyssey|Explainer",
     "myth_vs_fact|NCIS: New York|Trend Take",
     "money_follow|Stan Lee|Hard News Lead",
     "accountability|Child star|Reaction Round-up",
@@ -503,6 +503,7 @@
     "timeline_shift|Holly Robinson Peete|Explainer",
     "accountability|Boy Meets World|Trend Take",
     "policy_gap|Maury Povich|Reaction Round-up",
-    "policy_gap|Child actors|Hard News Lead"
+    "policy_gap|Child actors|Hard News Lead",
+    "accountability|na|Profile Beat"
   ]
 }
