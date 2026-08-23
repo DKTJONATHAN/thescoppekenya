@@ -1,18 +1,20 @@
 ---
 title: "Bradley Marongo Ends Management Deal with Director Trevor"
 slug: "bradley-marongo-ends-management-deal-with-director-trevor"
-description: "Gen Z Goliath Bradley Marongo officially parts ways with manager Director Trevor after two years to pursue new professional representation."
+description: "Bradley Marongo Ends Management Deal with Director Trevor: Gen Z Goliath Bradley Marongo officially parts ways with manager Director Trevor after two years to"
+excerpt: "Bradley Marongo Transitions to New Management as Career Pivot Commences Bradley Marongo has concluded his two year professional tenure with"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/xKJ7StSZ/a70012555ecc.webp"
 category: "Gossip"
 tags: ["bradley marongo", "gen z goliath", "director trevor", "kenyan influencers", "entertainment news", "nairobi"]
+canonical: "https://zandani.co.ke/article/bradley-marongo-ends-management-deal-with-director-trevor"
 date: "2026-08-23T08:49:38Z"
 dateModified: "2026-08-23T08:49:38Z"
+focusKeyword: "Bradley Marongo Ends Management Deal with Director Trevor"
 schema: "NewsArticle"
 ---
 
-## Bradley Marongo Transitions to New Management as Career Pivot Commences
+## Bradley Marongo Transitions to New Management as Career Pivot Commences Bradley Marongo Ends Management Deal with Director Trevor is the central subject of the update.
 
 Bradley Marongo has concluded his two-year professional tenure with Director Trevor, moving his operations under the guidance of an agent identified as Frank. This administrative shift, confirmed on August 22, 2026, marks a deliberate restructuring for the personality widely recognized as the Gen Z Goliath. The move signals a departure from his initial rise to prominence and positions the 27-year-old for a new phase of commercial engagement.
 

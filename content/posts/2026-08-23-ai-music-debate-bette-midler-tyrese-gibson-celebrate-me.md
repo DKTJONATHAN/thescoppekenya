@@ -14,7 +14,7 @@ focusKeyword: "'AI Music Debate: Bette Midler Slams, Tyrese Gibson Defends 'Cele
 schema: "NewsArticle"
 ---
 
-## The Echo Chamber: Who Holds the Mic in the AI Music Conversation? "AI Music Debate: Bette Midler Slams, Tyrese Gibson Defends 'Cele is the central subject of the update.
+## The Echo Chamber: Who Holds the Mic in the AI Music Conversation? "AI Music Debate: Bette Midler Slams, Tyrese Gibson Defends 'Cele is the central subject of the update. 'AI Music Debate: Bette Midler Slams, Tyrese Gibson Defends 'Cele is the central subject of the update.
 
 The digital soundscape hums with a question deeper than typical celebrity spats: what truly constitutes art? This fundamental query comes into sharp focus as music icons Bette Midler and Tyrese Gibson voice differing views on artificial intelligence in music. Their public exchange follows the viral success of IngaRose's "Celebrate Me," sparking a wider discussion on accountability for creativity’s future.
 
