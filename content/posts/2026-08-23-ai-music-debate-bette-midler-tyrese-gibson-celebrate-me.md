@@ -1,21 +1,20 @@
 ---
-title: "AI Music Debate: Bette Midler Slams, Tyrese Gibson Defends 'Celebrate Me'
+title: "'AI Music Debate: Bette Midler Slams, Tyrese Gibson Defends 'Celebrate Me'"
 slug: "ai-music-debate-bette-midler-tyrese-gibson-celebrate-me"
-description: "The AI music debate ignites as Bette Midler calls IngaRose's 'Celebrate Me' cultural genocide. Tyrese Gibson defends AI, citing emotional resonance. Get the full story."
+description: "'AI Music Debate: Bette Midler Slams, Tyrese Gibson Defends 'Cele: The AI music debate ignites as Bette Midler calls IngaRose's 'Celebrate Me' cultural"
+excerpt: "The Echo Chamber: Who Holds the Mic in the AI Music Conversation? The digital soundscape hums with a question deeper than typical celebrity"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/CKBTsVkz/f560c27b5cef.jpg"
-og_title: "Bette Midler vs. Tyrese Gibson: The AI Music Debate"
-og_description: "Bette Midler slams AI-generated music as 'cultural genocide.' Tyrese Gibson defends it. Who's right in this heated debate?"
-focus_keyword: "AI music debate"
 category: "Entertainment"
 tags: ["ai music", "bette midler", "tyrese gibson", "ingarose", "music industry", "entertainment news", "cultural debate"]
+canonical: "https://zandani.co.ke/article/ai-music-debate-bette-midler-tyrese-gibson-celebrate-me"
 date: "2026-08-23T07:18:34Z"
 dateModified: "2026-08-23T07:18:34Z"
+focusKeyword: "'AI Music Debate: Bette Midler Slams, Tyrese Gibson Defends 'Cele"
 schema: "NewsArticle"
 ---
 
-## The Echo Chamber: Who Holds the Mic in the AI Music Conversation?
+## The Echo Chamber: Who Holds the Mic in the AI Music Conversation? "AI Music Debate: Bette Midler Slams, Tyrese Gibson Defends 'Cele is the central subject of the update.
 
 The digital soundscape hums with a question deeper than typical celebrity spats: what truly constitutes art? This fundamental query comes into sharp focus as music icons Bette Midler and Tyrese Gibson voice differing views on artificial intelligence in music. Their public exchange follows the viral success of IngaRose's "Celebrate Me," sparking a wider discussion on accountability for creativity’s future.
 
