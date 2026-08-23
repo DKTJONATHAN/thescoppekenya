@@ -357,10 +357,10 @@
     "c77f327c81382f2d6034eea297955041",
     "4a80164f96dfce9ae330d9ac9d9e1a2e",
     "552f6067f87f0c6528d0cea996e06359",
-    "592311450da07cb340977b5888ea4125"
+    "592311450da07cb340977b5888ea4125",
+    "89e0c6203352c5f7eb709239b6a865c7"
   ],
   "style_history": [
-    "Receipts Piece",
     "Profile Beat",
     "Trend Take",
     "Hard News Lead",
@@ -389,10 +389,10 @@
     "Receipts Piece",
     "Reaction Round-up",
     "Trend Take",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "story_progression|Eko Dydda|Hard News Lead",
     "money_follow|nightlife|Profile Beat",
     "story_progression|Churchill Show|Reaction Round-up",
     "policy_gap|activism|Receipts Piece",
@@ -471,6 +471,7 @@
     "money_follow|Mugithi|Receipts Piece",
     "story_progression|social media influencers|Reaction Round-up",
     "timeline_shift|Nairobi|Trend Take",
-    "story_progression|Swift Academy|Profile Beat"
+    "story_progression|Swift Academy|Profile Beat",
+    "money_follow|Gen Z Goliath|Hard News Lead"
   ]
 }
