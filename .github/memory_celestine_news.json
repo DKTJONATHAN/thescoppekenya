@@ -448,10 +448,10 @@
     "3971032661128ab523b92861b81f0442",
     "6182e32fbf67d0facc7f4dfbb9a6dba5",
     "f3f0f356318d05ddf14267f19d999673",
-    "4d29e6a348b5e4411978d65e32ae4563"
+    "4d29e6a348b5e4411978d65e32ae4563",
+    "934609f4ee422e27ef82bb079e3d7886"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Power Accountability",
     "Explainer",
     "Hard News Lead",
@@ -480,10 +480,10 @@
     "Explainer",
     "Context Backgrounder",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "story_progression|Senate|Reaction & Voices",
     "next_48_hours|KAWU|Explainer",
     "money_follow|ODPP|Context Backgrounder",
     "money_follow|BATUK|Hard News Lead",
@@ -562,6 +562,7 @@
     "policy_gap|Kenya|Explainer",
     "winners_losers|Digital Superhighway|Context Backgrounder",
     "winners_losers|National Land Commission|Power Accountability",
-    "policy_gap|Kenya Wildlife Service|Hard News Lead"
+    "policy_gap|Kenya Wildlife Service|Hard News Lead",
+    "winners_losers|Uhuru Kenyatta|Explainer"
   ]
 }
