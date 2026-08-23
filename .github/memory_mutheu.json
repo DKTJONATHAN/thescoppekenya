@@ -391,10 +391,10 @@
     "45b609d48bf4db0b9a3af84d73002f5d",
     "735450eb6e53889b6cd5bd0abf528847",
     "f2d7fed91fb4c561d62474a76752e486",
-    "f6b2e3362a6b21c8d4d89d6778d4f9e6"
+    "f6b2e3362a6b21c8d4d89d6778d4f9e6",
+    "30855ed98deeed5d694acdd9c8230861"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
     "Explainer",
@@ -423,10 +423,10 @@
     "Reaction Round-up",
     "Hard News Lead",
     "Profile Beat",
-    "Trend Take"
+    "Trend Take",
+    "Explainer"
   ],
   "angle_history": [
-    "money_follow|Stan Lee|Hard News Lead",
     "accountability|Child star|Reaction Round-up",
     "story_progression|Matt Damon|Explainer",
     "money_follow|Crystal Harris|Profile Beat",
@@ -505,6 +505,7 @@
     "policy_gap|Maury Povich|Reaction Round-up",
     "policy_gap|Child actors|Hard News Lead",
     "accountability|na|Profile Beat",
-    "timeline_shift|na|Trend Take"
+    "timeline_shift|na|Trend Take",
+    "winners_losers|na|Explainer"
   ]
 }
