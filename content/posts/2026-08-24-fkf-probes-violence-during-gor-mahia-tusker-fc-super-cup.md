@@ -1,18 +1,20 @@
 ---
 title: "FKF Probes Violence During Gor Mahia and Tusker FC Super Cup Match"
 slug: "fkf-probes-violence-during-gor-mahia-tusker-fc-super-cup"
-description: "Football Kenya Federation is investigating reports of fan violence and excessive force by security officers at Nyayo National Stadium during the Super Cup."
+description: "FKF Probes Violence During Gor Mahia and Tusker FC Super Cup Matc: Football Kenya Federation is investigating reports of fan violence and excessive force by"
+excerpt: "The Nyayo Stadium Security Charade The Football Kenya Federation is currently probing the chaos that marred the Super Cup, but their investi"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/WW0LfQPr/ea05964636e0.webp"
 category: "News"
 tags: ["fkf", "gor mahia", "tusker fc", "kenyan football", "nyayo stadium", "sports news"]
+canonical: "https://zandani.co.ke/article/fkf-probes-violence-during-gor-mahia-tusker-fc-super-cup"
 date: "2026-08-24T05:42:56Z"
 dateModified: "2026-08-24T05:42:56Z"
+focusKeyword: "FKF Probes Violence During Gor Mahia and Tusker FC Super Cup Matc"
 schema: "NewsArticle"
 ---
 
-## The Nyayo Stadium Security Charade
+## The Nyayo Stadium Security Charade FKF Probes Violence During Gor Mahia and Tusker FC Super Cup Matc is the central subject of the update.
 
 The Football Kenya Federation is currently probing the chaos that marred the Super Cup, but their investigation ignores the glaring absence of a unified safety protocol that effectively leaves spectators and journalists vulnerable to state-sanctioned aggression.
 
