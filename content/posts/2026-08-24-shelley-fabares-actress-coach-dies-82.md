@@ -14,7 +14,7 @@ focusKeyword: "'Shelley Fabares, 'Coach' Actress & Elvis Costar, Dies at 82"
 schema: "NewsArticle"
 ---
 
-## Shelley Fabares, Enduring Star From 'Donna Reed' to 'Coach,' Passes at 82 "Shelley Fabares, 'Coach' Actress & Elvis Costar, Dies at 82 is the central subject of the update.
+## Shelley Fabares, Enduring Star From 'Donna Reed' to 'Coach,' Passes at 82 "Shelley Fabares, 'Coach' Actress & Elvis Costar, Dies at 82 is the central subject of the update. 'Shelley Fabares, 'Coach' Actress & Elvis Costar, Dies at 82 is the central subject of the update.
 
 Shelley Fabares, the versatile actress who graced screens and stages for more than six decades, died Saturday at 82 after a long illness. Known for her captivating presence and remarkable range, from her beginnings as a beloved teen idol on 'The Donna Reed Show' to her Emmy-nominated role on 'Coach,' Fabares' career not only spanned but deeply mirrored the dramatic shifts in American popular culture and entertainment. Her passing marks the end of an era for a generation of fans who watched her consistently adapt and evolve alongside Hollywood itself.
 
