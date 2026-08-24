@@ -1,18 +1,20 @@
 ---
 title: "WRA Cracks Down on Illegal Gold Mining Activities Along River Yala"
 slug: "wra-cracks-down-on-illegal-gold-mining-along-river-yala"
-description: "The Water Resources Authority has launched enforcement operations against illegal gold miners in Kakamega due to mercury and cyanide water pollution."
+description: "WRA Cracks Down on Illegal Gold Mining Activities Along River Yal: The Water Resources Authority has launched enforcement operations against illegal gold"
+excerpt: "Is Your Tap Water Safe? The Hidden Cost of River Yala Gold The Water Resources Authority has officially moved to dismantle illegal dredging"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/L73nQtN/49da60bf608b.webp"
 category: "News"
 tags: ["kenya news", "river yala", "kakamega", "gold mining", "environmental conservation", "za ndani"]
+canonical: "https://zandani.co.ke/article/wra-cracks-down-on-illegal-gold-mining-along-river-yala"
 date: "2026-08-24T17:35:14Z"
 dateModified: "2026-08-24T17:35:14Z"
+focusKeyword: "WRA Cracks Down on Illegal Gold Mining Activities Along River Yal"
 schema: "NewsArticle"
 ---
 
-## Is Your Tap Water Safe? The Hidden Cost of River Yala Gold
+## Is Your Tap Water Safe? The Hidden Cost of River Yala Gold WRA Cracks Down on Illegal Gold Mining Activities Along River Yal is the central subject of the update.
 
 The Water Resources Authority has officially moved to dismantle illegal dredging operations along River Yala, citing critical levels of chemical contamination that threaten the health of every household relying on the river for domestic use and agricultural irrigation.
 
