@@ -392,10 +392,10 @@
     "735450eb6e53889b6cd5bd0abf528847",
     "f2d7fed91fb4c561d62474a76752e486",
     "f6b2e3362a6b21c8d4d89d6778d4f9e6",
-    "30855ed98deeed5d694acdd9c8230861"
+    "30855ed98deeed5d694acdd9c8230861",
+    "9514feb396806458b465f9255fcdae34"
   ],
   "style_history": [
-    "Profile Beat",
     "Trend Take",
     "Explainer",
     "Reaction Round-up",
@@ -424,10 +424,10 @@
     "Hard News Lead",
     "Profile Beat",
     "Trend Take",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "accountability|Child star|Reaction Round-up",
     "story_progression|Matt Damon|Explainer",
     "money_follow|Crystal Harris|Profile Beat",
     "story_progression|Reese Witherspoon|Hard News Lead",
@@ -506,6 +506,7 @@
     "policy_gap|Child actors|Hard News Lead",
     "accountability|na|Profile Beat",
     "timeline_shift|na|Trend Take",
-    "winners_losers|na|Explainer"
+    "winners_losers|na|Explainer",
+    "timeline_shift|na|Hard News Lead"
   ]
 }
