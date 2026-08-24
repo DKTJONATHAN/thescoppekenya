@@ -1,21 +1,20 @@
 ---
-title: "Shelley Fabares, 'Coach' Actress & Elvis Costar, Dies at 82
+title: "'Shelley Fabares, 'Coach' Actress & Elvis Costar, Dies at 82"
 slug: "shelley-fabares-actress-coach-dies-82"
-description: "Actress Shelley Fabares, known for 'Coach' and Elvis Presley films, has died at 82. Costar Craig T. Nelson mourned her. Learn more about her iconic career."
+description: "'Shelley Fabares, 'Coach' Actress & Elvis Costar, Dies at 82: Actress Shelley Fabares, known for 'Coach' and Elvis Presley films, has died at 82. Costar Craig"
+excerpt: "Shelley Fabares, Enduring Star From 'Donna Reed' to 'Coach,' Passes at 82 Shelley Fabares, the versatile actress who graced screens and stag"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/pvbL6Dch/ea792fface43.jpg"
-og_title: "Shelley Fabares, 'Coach' & Elvis Costar, Dies at 82"
-og_description: "Actress Shelley Fabares, beloved for 'Coach' and roles with Elvis Presley, has passed away at 82. Learn about her storied career."
-focus_keyword: "Shelley Fabares death"
 category: "Entertainment"
 tags: ["shelley fabares", "coach", "elvis presley", "hollywood", "actress", "celebrity death", "entertainment news"]
+canonical: "https://zandani.co.ke/article/shelley-fabares-actress-coach-dies-82"
 date: "2026-08-24T07:41:41Z"
 dateModified: "2026-08-24T07:41:41Z"
+focusKeyword: "'Shelley Fabares, 'Coach' Actress & Elvis Costar, Dies at 82"
 schema: "NewsArticle"
 ---
 
-## Shelley Fabares, Enduring Star From 'Donna Reed' to 'Coach,' Passes at 82
+## Shelley Fabares, Enduring Star From 'Donna Reed' to 'Coach,' Passes at 82 "Shelley Fabares, 'Coach' Actress & Elvis Costar, Dies at 82 is the central subject of the update.
 
 Shelley Fabares, the versatile actress who graced screens and stages for more than six decades, died Saturday at 82 after a long illness. Known for her captivating presence and remarkable range, from her beginnings as a beloved teen idol on 'The Donna Reed Show' to her Emmy-nominated role on 'Coach,' Fabares' career not only spanned but deeply mirrored the dramatic shifts in American popular culture and entertainment. Her passing marks the end of an era for a generation of fans who watched her consistently adapt and evolve alongside Hollywood itself.
 
