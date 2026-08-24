@@ -1,18 +1,20 @@
 ---
 title: "Systemic Police Brutality and Custodial Deaths Rise in Kenya"
 slug: "police-brutality-and-custodial-deaths-in-kenya"
-description: "Rising cases of custodial deaths in Kenya spark alarms over systemic police brutality, as families and human rights groups demand accountability."
+description: "Systemic Police Brutality and Custodial Deaths Rise in Kenya: Rising cases of custodial deaths in Kenya spark alarms over systemic police brutality, as"
+excerpt: "The State Sanctioned Myth of Custodial Suicide Whenever a detainee dies in police custody, the official narrative arrives with suspicious ha"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/8g0rqJmL/929d4166d1d2.webp"
 category: "Opinions"
 tags: ["police brutality", "kenya news", "human rights", "ipoa", "extrajudicial killings", "kenya police"]
+canonical: "https://zandani.co.ke/article/police-brutality-and-custodial-deaths-in-kenya"
 date: "2026-08-24T10:03:02Z"
 dateModified: "2026-08-24T10:03:02Z"
+focusKeyword: "Systemic Police Brutality and Custodial Deaths Rise in Kenya"
 schema: "NewsArticle"
 ---
 
-## The State-Sanctioned Myth of Custodial Suicide
+## The State-Sanctioned Myth of Custodial Suicide Systemic Police Brutality and Custodial Deaths Rise in Kenya is the central subject of the update.
 
 Whenever a detainee dies in police custody, the official narrative arrives with suspicious haste. Before the body has even cooled, authorities are almost certain to declare the death a suicide. This reflexive dismissal has become the default mechanism of institutional self-preservation, a convenient fiction that relies on the public’s exhaustion and the families' grief to obscure mounting evidence of state-sponsored violence.
 
