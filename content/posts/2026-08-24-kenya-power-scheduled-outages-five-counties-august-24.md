@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Announces Scheduled Outages Across Five Counties"
 slug: "kenya-power-scheduled-outages-five-counties-august-24"
-description: "Kenya Power has scheduled essential electrical maintenance on August 24 affecting residents in Uasin Gishu, Kiambu, Migori, Meru, and Laikipia."
+description: "Kenya Power Announces Scheduled Outages Across Five Counties: Kenya Power has scheduled essential electrical maintenance on August 24 affecting residents in"
+excerpt: "The Pulse of Productivity: Navigating Kenya Power’s Maintenance Cycles For the welder working in an Eldoret shed or a florist arranging stem"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/wZb3q4sx/56bbe44f0155.jpg"
 category: "Gossip"
 tags: ["kenya power", "power outage", "kenya news", "utility services", "infrastructure"]
+canonical: "https://zandani.co.ke/article/kenya-power-scheduled-outages-five-counties-august-24"
 date: "2026-08-24T07:17:21Z"
 dateModified: "2026-08-24T07:17:21Z"
+focusKeyword: "Kenya Power Announces Scheduled Outages Across Five Counties"
 schema: "NewsArticle"
 ---
 
-## The Pulse of Productivity: Navigating Kenya Power’s Maintenance Cycles
+## The Pulse of Productivity: Navigating Kenya Power’s Maintenance Cycles Kenya Power Announces Scheduled Outages Across Five Counties is the central subject of the update.
 
 For the welder working in an Eldoret shed or a florist arranging stems in Kiambu, time serves as more than a simple clock. It acts as a silent meter measuring potential income. As Kenya Power initiates a fresh round of maintenance across five counties this Monday, the reality for thousands of micro, small, and medium enterprises is a nine-hour standstill that places a heavy burden on the informal economy.
 
