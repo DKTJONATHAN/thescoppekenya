@@ -1,18 +1,20 @@
 ---
 title: "Kenya Airways Diversification and Equity Group Profit Growth"
 slug: "kenya-airways-expansion-and-equity-group-profit-growth"
-description: "Kenya Airways expands into healthcare and logistics as Equity Group posts record profits and Wawira Njiru earns international recognition."
+description: "Kenya Airways Diversification and Equity Group Profit Growth: Kenya Airways expands into healthcare and logistics as Equity Group posts record profits and"
+excerpt: "Diversification Drives Kenya’s KSh 2.5 Trillion Economic Shift Equity Group Holdings has reported a 32 percent increase in half year profits"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/twPcNB9h/c4b81c1ab1b1.avif"
 category: "Business"
 tags: ["kenya business", "equity bank", "kenya airways", "wawira njiru", "kenyan economy", "innovation"]
+canonical: "https://zandani.co.ke/article/kenya-airways-expansion-and-equity-group-profit-growth"
 date: "2026-08-24T05:49:44Z"
 dateModified: "2026-08-24T05:49:44Z"
+focusKeyword: "Kenya Airways Diversification and Equity Group Profit Growth"
 schema: "NewsArticle"
 ---
 
-## Diversification Drives Kenya’s KSh 2.5 Trillion Economic Shift
+## Diversification Drives Kenya’s KSh 2.5 Trillion Economic Shift Kenya Airways Diversification and Equity Group Profit Growth is the central subject of the update.
 
 Equity Group Holdings has reported a 32 percent increase in half-year profits to KSh 45.5 billion, marking a significant expansion in credit portfolios for micro, small, and medium enterprises. Simultaneously, Kenya Airways is restructuring its operations to prioritize non-aviation revenue streams, aiming to capture untapped demand within the regional logistics sector.
 
