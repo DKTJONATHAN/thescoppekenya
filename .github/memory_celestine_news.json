@@ -451,10 +451,10 @@
     "4d29e6a348b5e4411978d65e32ae4563",
     "934609f4ee422e27ef82bb079e3d7886",
     "cdb436d1296c5481b10e34252443656a",
-    "279205e4d1f248f70a075c5958cc0bf5"
+    "279205e4d1f248f70a075c5958cc0bf5",
+    "9c18c993439eb7e9f802ba9bfb2acedf"
   ],
   "style_history": [
-    "Hard News Lead",
     "Reaction & Voices",
     "Power Accountability",
     "Context Backgrounder",
@@ -483,10 +483,10 @@
     "Hard News Lead",
     "Explainer",
     "Reaction & Voices",
-    "Power Accountability"
+    "Power Accountability",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "money_follow|BATUK|Hard News Lead",
     "story_progression|Kenya Wildlife Service|Reaction & Voices",
     "money_follow|Mining|Power Accountability",
     "money_follow|kenyan politics|Explainer",
@@ -565,6 +565,7 @@
     "policy_gap|Kenya Wildlife Service|Hard News Lead",
     "winners_losers|Uhuru Kenyatta|Explainer",
     "accountability|Political Parties Fund|Reaction & Voices",
-    "policy_gap|FKF|Power Accountability"
+    "policy_gap|FKF|Power Accountability",
+    "accountability|Kenya Revenue Authority|Hard News Lead"
   ]
 }
