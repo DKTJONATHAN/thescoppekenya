@@ -1,18 +1,20 @@
 ---
 title: "Tribunal Rules KRA Must Use VAT Credits to Settle Tax Debts"
 slug: "tribunal-rules-kra-must-use-vat-credits-to-settle-tax-debts"
-description: "The Tax Appeals Tribunal has ordered the Kenya Revenue Authority to apply existing VAT credits against tax liabilities before enforcing debt collection."
+description: "Tribunal Rules KRA Must Use VAT Credits to Settle Tax Debts: The Tax Appeals Tribunal has ordered the Kenya Revenue Authority to apply existing VAT credits"
+excerpt: "A Legal Boundary for Revenue Collection The Tax Appeals Tribunal has issued a landmark ruling mandating the Kenya Revenue Authority to apply"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/wFsKK2N6/b86c28be4e94.webp"
 category: "News"
 tags: ["kenya revenue authority", "vat", "tax appeals tribunal", "business news", "kenya taxation", "tax compliance"]
+canonical: "https://zandani.co.ke/article/tribunal-rules-kra-must-use-vat-credits-to-settle-tax-debts"
 date: "2026-08-24T11:33:56Z"
 dateModified: "2026-08-24T11:33:56Z"
+focusKeyword: "Tribunal Rules KRA Must Use VAT Credits to Settle Tax Debts"
 schema: "NewsArticle"
 ---
 
-## A Legal Boundary for Revenue Collection
+## A Legal Boundary for Revenue Collection Tribunal Rules KRA Must Use VAT Credits to Settle Tax Debts is the central subject of the update.
 
 The Tax Appeals Tribunal has issued a landmark ruling mandating the Kenya Revenue Authority to apply existing Value Added Tax credits against outstanding tax arrears before initiating aggressive enforcement actions against businesses.
 
