@@ -1,21 +1,20 @@
 ---
-title: "Brittany Boltinhouse Sues Miss USA for Defamation After Title Revoked
+title: "'Brittany Boltinhouse Sues Miss USA for Defamation After Title Revoked"
 slug: "brittany-boltinhouse-lawsuit-miss-usa-defamation-title-revok"
-description: "Brittany Boltinhouse filed a defamation lawsuit against Miss USA, alleging malicious smearing after her Miss North Carolina USA 2026 title was revoked due to social media posts. Learn more about the legal battle."
+description: "'Brittany Boltinhouse Sues Miss USA for Defamation After Title Re: Brittany Boltinhouse filed a defamation lawsuit against Miss USA, alleging malicious"
+excerpt: "When Your Past Tweets Cost You the Crown: The Brittany Boltinhouse Lawsuit and Digital Reckoning In a world where online histories linger li"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/9F86nbS/e16d82525907.jpg"
-og_title: "Brittany Boltinhouse Sues Miss USA Over Defamation"
-og_description: "Brittany Boltinhouse is suing Miss USA and its CEO for defamation after her Miss North Carolina USA title was revoked due to past social media posts. The lawsuit seeks damages for alleged reputational harm."
-focus_keyword: "Brittany Boltinhouse lawsuit"
 category: "Entertainment"
 tags: ["brittany boltinhouse", "miss usa", "defamation lawsuit", "north carolina usa", "beauty pageants", "entertainment news"]
+canonical: "https://zandani.co.ke/article/brittany-boltinhouse-lawsuit-miss-usa-defamation-title-revok"
 date: "2026-08-24T22:56:49Z"
 dateModified: "2026-08-24T22:56:49Z"
+focusKeyword: "'Brittany Boltinhouse Sues Miss USA for Defamation After Title Re"
 schema: "NewsArticle"
 ---
 
-## When Your Past Tweets Cost You the Crown: The Brittany Boltinhouse Lawsuit and Digital Reckoning
+## When Your Past Tweets Cost You the Crown: The Brittany Boltinhouse Lawsuit and Digital Reckoning "Brittany Boltinhouse Sues Miss USA for Defamation After Title Re is the central subject of the update.
 
 In a world where online histories linger like permanent shadows, Brittany Boltinhouse, once Miss North Carolina USA 2026, finds herself in a profound legal battle. Her defamation lawsuit against the Miss USA organization, its CEO Thom Brodeur, and A Blaize Productions, spotlights the harsh reality of digital permanence and evolving public standards for those in the limelight.
 
