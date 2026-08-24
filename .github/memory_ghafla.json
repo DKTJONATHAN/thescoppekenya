@@ -292,10 +292,10 @@
     "49e8582b7f039cafefe290d998b289e3",
     "104bbe13d7030e631944d1745a82b997",
     "0f46fd6aa0b37b704bd0fbf018abe1bf",
-    "4036b88c19ef46c972c3326b8dd3e25f"
+    "4036b88c19ef46c972c3326b8dd3e25f",
+    "819be0524c2ad5eb0f26ab5a79c9632c"
   ],
   "style_history": [
-    "Profile Beat",
     "Reaction Round-up",
     "Hard News Lead",
     "Trend Take",
@@ -324,10 +324,10 @@
     "Profile Beat",
     "Trend Take",
     "Receipts Piece",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Profile Beat"
   ],
   "angle_history": [
-    "timeline_shift|Oga Obinna|Profile Beat",
     "money_follow|Oga Obinna|Trend Take",
     "accountability|IPOA|Reaction Round-up",
     "money_follow|Jose Chameleone|Hard News Lead",
@@ -406,6 +406,7 @@
     "policy_gap|helicopter crash|Profile Beat",
     "next_48_hours|Kenya Power|Trend Take",
     "money_follow|Kenya Power|Receipts Piece",
-    "winners_losers|Kenya Power|Hard News Lead"
+    "winners_losers|Kenya Power|Hard News Lead",
+    "money_follow|Kenya Power|Profile Beat"
   ]
 }
