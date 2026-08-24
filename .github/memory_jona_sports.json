@@ -283,10 +283,10 @@
     "d2361f741f585b182b9f1729ca67810d",
     "7764368e6fe5f9a4f7fce429efe4430f",
     "b1c49165f4cfdade486a865d801d7c6b",
-    "1b4e7047d32f0c639e3ff7b352c4f783"
+    "1b4e7047d32f0c639e3ff7b352c4f783",
+    "6ba9c30b1b498d7866ee238f018b3fb6"
   ],
   "style_history": [
-    "Tactical Take",
     "Cynical Pundit",
     "Match Report",
     "Player Profile Beat",
@@ -315,10 +315,10 @@
     "Match Report",
     "Player Profile Beat",
     "Tactical Take",
-    "Stat Story"
+    "Stat Story",
+    "Match Report"
   ],
   "angle_history": [
-    "timeline_shift|football|Match Report",
     "money_follow|West Ham United|Stat Story",
     "next_48_hours|World Cup 2026|Player Profile Beat",
     "money_follow|ICD|Cynical Pundit",
@@ -397,6 +397,7 @@
     "story_progression|football|Match Report",
     "winners_losers|Transfer|Player Profile Beat",
     "policy_gap|Manchester United|Tactical Take",
-    "story_progression|football|Stat Story"
+    "story_progression|football|Stat Story",
+    "policy_gap|Premier League|Match Report"
   ]
 }
