@@ -359,10 +359,10 @@
     "552f6067f87f0c6528d0cea996e06359",
     "592311450da07cb340977b5888ea4125",
     "89e0c6203352c5f7eb709239b6a865c7",
-    "95b7e283c912832ecaeec53fa7e8fbda"
+    "95b7e283c912832ecaeec53fa7e8fbda",
+    "1800b4d077e14cfa07142f64cda84f63"
   ],
   "style_history": [
-    "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
     "Receipts Piece",
@@ -391,10 +391,10 @@
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "story_progression|Churchill Show|Reaction Round-up",
     "policy_gap|activism|Receipts Piece",
     "winners_losers|Afropop|Hard News Lead",
     "winners_losers|food art|Profile Beat",
@@ -473,6 +473,7 @@
     "timeline_shift|Nairobi|Trend Take",
     "story_progression|Swift Academy|Profile Beat",
     "money_follow|Gen Z Goliath|Hard News Lead",
-    "policy_gap|marriage advocacy|Receipts Piece"
+    "policy_gap|marriage advocacy|Receipts Piece",
+    "winners_losers|Ohangla|Reaction Round-up"
   ]
 }
