@@ -1,18 +1,20 @@
 ---
 title: "Size 8 celebrates 13 years of religious conversion"
 slug: "size-8-marks-thirteen-years-of-christian-conversion"
-description: "Gospel artist Size 8 marks thirteen years since her conversion to Christianity by encouraging Kenyan youth to pursue purposeful life choices."
+description: "Size 8 celebrates 13 years of religious conversion: Gospel artist Size 8 marks thirteen years since her conversion to Christianity by encouraging Kenyan youth"
+excerpt: "The 13 Year Reflection: How Size 8 Redefined Her Path Linet Munyali, known to her fans as Size 8, recently hit a quiet yet significant miles"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/N2hgQxmF/554a01786a33.jpg"
 category: "Gossip"
 tags: ["size 8", "gospel music", "kenyan gospel", "christianity", "celebrity news", "kenya"]
+canonical: "https://zandani.co.ke/article/size-8-marks-thirteen-years-of-christian-conversion"
 date: "2026-08-25T07:05:12Z"
 dateModified: "2026-08-25T07:05:12Z"
+focusKeyword: "Size 8 celebrates 13 years of religious conversion"
 schema: "NewsArticle"
 ---
 
-## The 13-Year Reflection: How Size 8 Redefined Her Path
+## The 13-Year Reflection: How Size 8 Redefined Her Path Size 8 celebrates 13 years of religious conversion is the central subject of the update.
 
 Linet Munyali, known to her fans as Size 8, recently hit a quiet yet significant milestone. Thirteen years have passed since the artist stepped away from the frenetic pace of secular pop charts to embrace a life defined by faith. While the industry is often quick to dissect the mechanics of fame, this anniversary is a personal observation of a transformation that has redefined her public presence and her connection to her audience.
 
