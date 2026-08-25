@@ -1,21 +1,20 @@
 ---
-title: "Joseph Zada Cast as Young Haymitch in Hunger Games Prequel
+title: "'Joseph Zada Cast as Young Haymitch in Hunger Games Prequel"
 slug: "joseph-zada-haymitch-hunger-games-prequel-sunrise-reaping"
-description: "Joseph Zada plays young Haymitch Abernathy in 'Sunrise on the Reaping,' the Hunger Games prequel. Learn plot details, Zada's intense audition process, and the November 20 release date now."
+description: "'Joseph Zada Cast as Young Haymitch in Hunger Games Prequel: Joseph Zada plays young Haymitch Abernathy in 'Sunrise on the Reaping,' the Hunger Games prequel."
+excerpt: "New Haymitch Joseph Zada Endures Gruelling Selection for Prequel Role Actor Joseph Zada has been officially cast as the young Haymitch Abern"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/YFVP5B6v/ca400f979b2d.jpg"
-og_title: "Joseph Zada Cast as Young Haymitch in Hunger Games Prequel"
-og_description: "Joseph Zada is young Haymitch in 'Sunrise on the Reaping,' a Hunger Games prequel. Discover film plot details and its November 20 release."
-focus_keyword: "Joseph Zada Haymitch"
 category: "Entertainment"
 tags: ["joseph zada", "haymitch abernathy", "hunger games prequel", "sunrise on the reaping", "film casting", "dystopian film", "entertainment news"]
+canonical: "https://zandani.co.ke/article/joseph-zada-haymitch-hunger-games-prequel-sunrise-reaping"
 date: "2026-08-25T22:58:58Z"
 dateModified: "2026-08-25T22:58:58Z"
+focusKeyword: "'Joseph Zada Cast as Young Haymitch in Hunger Games Prequel"
 schema: "NewsArticle"
 ---
 
-## New Haymitch Joseph Zada Endures Gruelling Selection for Prequel Role
+## New Haymitch Joseph Zada Endures Gruelling Selection for Prequel Role "Joseph Zada Cast as Young Haymitch in Hunger Games Prequel is the central subject of the update.
 
 Actor Joseph Zada has been officially cast as the young Haymitch Abernathy in "Sunrise on the Reaping," the highly anticipated Hunger Games prequel film. His selection came after an exceptionally demanding audition process, highlighting the intense scrutiny for iconic franchise roles.
 
