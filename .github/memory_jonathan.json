@@ -222,10 +222,10 @@
     "ce00f76937e5c772b6f55fabe96d4111",
     "741478935ac816cb8af9cdf680a21802",
     "308b43bcc356cc472283c9cc033ff3c5",
-    "c618679562d5dc5d9255994925f1abff"
+    "c618679562d5dc5d9255994925f1abff",
+    "aa30b6b38e7421249f86347eba86d799"
   ],
   "style_history": [
-    "Personal Reflection",
     "Counterpoint",
     "Historical Lens",
     "Sharp Column",
@@ -254,10 +254,10 @@
     "Sharp Column",
     "Personal Reflection",
     "Letter Form",
-    "Counterpoint"
+    "Counterpoint",
+    "Sharp Column"
   ],
   "angle_history": [
-    "timeline_shift|IFRS S1|Historical Lens",
     "winners_losers|Madaraka Day|Letter Form",
     "policy_gap|Comprehensive School Model|Sharp Column",
     "myth_vs_fact|Kenya Power|Counterpoint",
@@ -336,6 +336,7 @@
     "winners_losers|Global Development Initiative|Sharp Column",
     "story_progression|dental amalgam|Personal Reflection",
     "accountability|Construction Industry|Letter Form",
-    "myth_vs_fact|police brutality|Counterpoint"
+    "myth_vs_fact|police brutality|Counterpoint",
+    "myth_vs_fact|healthcare reform|Sharp Column"
   ]
 }
