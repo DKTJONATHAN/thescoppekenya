@@ -14,7 +14,7 @@ focusKeyword: "'Brittany Boltinhouse Sues Miss USA for Defamation After Title Re
 schema: "NewsArticle"
 ---
 
-## When Your Past Tweets Cost You the Crown: The Brittany Boltinhouse Lawsuit and Digital Reckoning "Brittany Boltinhouse Sues Miss USA for Defamation After Title Re is the central subject of the update.
+## When Your Past Tweets Cost You the Crown: The Brittany Boltinhouse Lawsuit and Digital Reckoning "Brittany Boltinhouse Sues Miss USA for Defamation After Title Re is the central subject of the update. 'Brittany Boltinhouse Sues Miss USA for Defamation After Title Re is the central subject of the update.
 
 In a world where online histories linger like permanent shadows, Brittany Boltinhouse, once Miss North Carolina USA 2026, finds herself in a profound legal battle. Her defamation lawsuit against the Miss USA organization, its CEO Thom Brodeur, and A Blaize Productions, spotlights the harsh reality of digital permanence and evolving public standards for those in the limelight.
 
