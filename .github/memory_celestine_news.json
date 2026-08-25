@@ -454,10 +454,10 @@
     "279205e4d1f248f70a075c5958cc0bf5",
     "9c18c993439eb7e9f802ba9bfb2acedf",
     "706d7603e4178215b0f85bc84162f9e1",
-    "0f6ad8a835f004caa0e70a3f93aee2e3"
+    "0f6ad8a835f004caa0e70a3f93aee2e3",
+    "b123c4fa0599728413b79d05f2302e12"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Hard News Lead",
     "Explainer",
     "Power Accountability",
@@ -486,10 +486,10 @@
     "Power Accountability",
     "Hard News Lead",
     "Explainer",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "money_follow|kenyan politics|Explainer",
     "accountability|Kenya Power|Hard News Lead",
     "money_follow|University of Nairobi|Context Backgrounder",
     "accountability|Aden Duale|Power Accountability",
@@ -568,6 +568,7 @@
     "policy_gap|FKF|Power Accountability",
     "accountability|Kenya Revenue Authority|Hard News Lead",
     "story_progression|Water Resources Authority|Explainer",
-    "myth_vs_fact|Digital Health Agency|Context Backgrounder"
+    "myth_vs_fact|Digital Health Agency|Context Backgrounder",
+    "winners_losers|HELB|Reaction & Voices"
   ]
 }
