@@ -395,10 +395,10 @@
     "30855ed98deeed5d694acdd9c8230861",
     "9514feb396806458b465f9255fcdae34",
     "f0a354903b2b9575450c2f910a3db69a",
-    "443c858ee24d6a808b01b7d88cf5a98e"
+    "443c858ee24d6a808b01b7d88cf5a98e",
+    "552cf763690abfe4569ad05fa2c34d79"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
     "Explainer",
@@ -427,10 +427,10 @@
     "Explainer",
     "Hard News Lead",
     "Profile Beat",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
-    "story_progression|Reese Witherspoon|Hard News Lead",
     "myth_vs_fact|Zendaya|Reaction Round-up",
     "money_follow|na|Explainer",
     "accountability|murder case|Trend Take",
@@ -509,6 +509,7 @@
     "winners_losers|na|Explainer",
     "timeline_shift|na|Hard News Lead",
     "policy_gap|na|Profile Beat",
-    "story_progression|Taylor Swift|Reaction Round-up"
+    "story_progression|Taylor Swift|Reaction Round-up",
+    "myth_vs_fact|General Hospital|Trend Take"
   ]
 }
