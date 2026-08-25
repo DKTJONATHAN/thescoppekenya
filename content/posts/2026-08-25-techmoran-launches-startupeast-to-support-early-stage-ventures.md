@@ -1,18 +1,20 @@
 ---
 title: "TechMoran Launches StartupEast to Support Early-Stage Ventures"
 slug: "techmoran-launches-startupeast-to-support-early-stage-ventures"
-description: "TechMoran has introduced StartupEast, an initiative to connect pre-scale startups in East Africa with key investors through events and awards."
+description: "TechMoran Launches StartupEast to Support Early-Stage Ventures: TechMoran has introduced StartupEast, an initiative to connect pre-scale startups in East"
+excerpt: "Bridging the Seed Stage Drought in East Africa TechMoran has launched nominations for StartupEast, a new initiative crafted to link early st"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/CKnK8BtL/ae8479ab60c7.webp"
 category: "Technology"
 tags: ["techmoran", "startupeast", "kenya tech", "east africa startups", "venture capital", "nairobi business"]
+canonical: "https://zandani.co.ke/article/techmoran-launches-startupeast-to-support-early-stage-ventures"
 date: "2026-08-25T11:45:41Z"
 dateModified: "2026-08-25T11:45:41Z"
+focusKeyword: "TechMoran Launches StartupEast to Support Early-Stage Ventures"
 schema: "NewsArticle"
 ---
 
-## Bridging the Seed-Stage Drought in East Africa
+## Bridging the Seed-Stage Drought in East Africa TechMoran Launches StartupEast to Support Early-Stage Ventures is the central subject of the update.
 
 TechMoran has launched nominations for StartupEast, a new initiative crafted to link early-stage startups with investors well before these companies capture mainstream attention. The platform serves as a formal discovery mechanism for young firms that currently struggle to access capital in an investment landscape that favors late-stage growth.
 
