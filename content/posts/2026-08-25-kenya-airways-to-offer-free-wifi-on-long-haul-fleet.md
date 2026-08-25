@@ -1,18 +1,20 @@
 ---
 title: "Kenya Airways to Offer Free Wi-Fi on Long-Haul Fleet"
 slug: "kenya-airways-to-offer-free-wifi-on-long-haul-fleet"
-description: "Kenya Airways plans to introduce complimentary in-flight Wi-Fi for all long-haul routes to enhance passenger experience and competitive positioning."
+description: "Kenya Airways to Offer Free Wi-Fi on Long-Haul Fleet: Kenya Airways plans to introduce complimentary in-flight Wi-Fi for all long-haul routes to enhance"
+excerpt: "The Illusion of Connectivity Above the Clouds Kenya Airways promises free high speed internet on long haul flights by the second quarter of"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Ft0ML60/87d150bd850e.webp"
 category: "News"
 tags: ["kenya airways", "aviation", "technology", "nairobi", "airline news", "travel"]
+canonical: "https://zandani.co.ke/article/kenya-airways-to-offer-free-wifi-on-long-haul-fleet"
 date: "2026-08-25T17:36:47Z"
 dateModified: "2026-08-25T17:36:47Z"
+focusKeyword: "Kenya Airways to Offer Free Wi-Fi on Long-Haul Fleet"
 schema: "NewsArticle"
 ---
 
-## The Illusion of Connectivity Above the Clouds
+## The Illusion of Connectivity Above the Clouds Kenya Airways to Offer Free Wi-Fi on Long-Haul Fleet is the central subject of the update.
 
 Kenya Airways promises free high-speed internet on long-haul flights by the second quarter of 2027, yet the airline remains silent on the actual capital expenditure required to keep these satellites connected while its balance sheet continues to show deep structural scars.
 
