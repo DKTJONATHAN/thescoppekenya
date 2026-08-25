@@ -1,18 +1,20 @@
 ---
 title: "Tottenham Signs Savinho as Manchester City Targets Ayyoub Bouaddi"
 slug: "tottenham-signs-savinho-manchester-city-eyes-ayyoub-bouaddi"
-description: "Tottenham Hotspur acquires Savinho for 85 million pounds as Manchester City pursues Lille midfielder Ayyoub Bouaddi in a busy Premier League transfer window."
+description: "Tottenham Signs Savinho as Manchester City Targets Ayyoub Bouaddi: Tottenham Hotspur acquires Savinho for 85 million pounds as Manchester City pursues Lille"
+excerpt: "The Premier League Casino and the Illusion of Progress Tottenham Hotspur just handed Manchester City £85 million for Savinho, a transaction"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/NgLzfMgc/4a9792982044.jpg"
 category: "Sports"
 tags: ["football", "premier league", "tottenham hotspur", "manchester city", "transfer news", "kenyan sports"]
+canonical: "https://zandani.co.ke/article/tottenham-signs-savinho-manchester-city-eyes-ayyoub-bouaddi"
 date: "2026-08-25T10:55:04Z"
 dateModified: "2026-08-25T10:55:04Z"
+focusKeyword: "Tottenham Signs Savinho as Manchester City Targets Ayyoub Bouaddi"
 schema: "NewsArticle"
 ---
 
-## The Premier League Casino and the Illusion of Progress
+## The Premier League Casino and the Illusion of Progress Tottenham Signs Savinho as Manchester City Targets Ayyoub Bouaddi is the central subject of the update.
 
 Tottenham Hotspur just handed Manchester City £85 million for Savinho, a transaction that feels less like a strategic acquisition and more like a high stakes money laundering scheme for elite clubs. While we applaud the supposed quality, this is financial gluttony dressed up as ambition, leaving the rest of the football world begging for scraps.
 
