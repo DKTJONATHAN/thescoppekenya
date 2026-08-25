@@ -293,10 +293,10 @@
     "104bbe13d7030e631944d1745a82b997",
     "0f46fd6aa0b37b704bd0fbf018abe1bf",
     "4036b88c19ef46c972c3326b8dd3e25f",
-    "819be0524c2ad5eb0f26ab5a79c9632c"
+    "819be0524c2ad5eb0f26ab5a79c9632c",
+    "fce9a88452904a5b44ace5368685cc2c"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Hard News Lead",
     "Trend Take",
     "Profile Beat",
@@ -325,10 +325,10 @@
     "Trend Take",
     "Receipts Piece",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
-    "money_follow|Oga Obinna|Trend Take",
     "accountability|IPOA|Reaction Round-up",
     "money_follow|Jose Chameleone|Hard News Lead",
     "myth_vs_fact|Forex trading|Receipts Piece",
@@ -407,6 +407,7 @@
     "next_48_hours|Kenya Power|Trend Take",
     "money_follow|Kenya Power|Receipts Piece",
     "winners_losers|Kenya Power|Hard News Lead",
-    "money_follow|Kenya Power|Profile Beat"
+    "money_follow|Kenya Power|Profile Beat",
+    "myth_vs_fact|gospel music|Trend Take"
   ]
 }
