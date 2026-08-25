@@ -1,18 +1,20 @@
 ---
 title: "HELB Opens Loan Applications for KMTC Certificate and Diploma Students"
 slug: "helb-opens-loan-applications-for-kmtc-students"
-description: "KMTC students can now apply for HELB loans for the upcoming academic cycle following their formal integration into the national financing framework."
+description: "HELB Opens Loan Applications for KMTC Certificate and Diploma Stu: KMTC students can now apply for HELB loans for the upcoming academic cycle following their"
+excerpt: "The Debt Fueled Path to the Hospital Ward For many, the heavy relief of an approved loan application is being quickly replaced by the cold m"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/4Z14ggtJ/b87331ea4d1f.webp"
 category: "News"
 tags: ["helb", "kmtc", "education news", "student loans", "kenya", "government funding"]
+canonical: "https://zandani.co.ke/article/helb-opens-loan-applications-for-kmtc-students"
 date: "2026-08-25T11:33:16Z"
 dateModified: "2026-08-25T11:33:16Z"
+focusKeyword: "HELB Opens Loan Applications for KMTC Certificate and Diploma Stu"
 schema: "NewsArticle"
 ---
 
-## The Debt-Fueled Path to the Hospital Ward
+## The Debt-Fueled Path to the Hospital Ward HELB Opens Loan Applications for KMTC Certificate and Diploma Stu is the central subject of the update.
 
 For many, the heavy relief of an approved loan application is being quickly replaced by the cold math of long-term repayment. While the opening of the HELB portal for KMTC students has been met with gratitude, the quiet dread of compounding interest is beginning to settle in among those who see this as a necessary trade-off for survival.
 
