@@ -1,18 +1,20 @@
 ---
 title: "Kenya Health Summit Focuses on Enrollment Over Patient Outcomes"
 slug: "kenya-health-summit-focuses-enrollment-over-patient-outcomes"
-description: "Government healthcare reforms prioritize service volume and Social Health Authority registration, leaving clinical safety data gaps in Kenya."
+description: "Kenya Health Summit Focuses on Enrollment Over Patient Outcomes: Government healthcare reforms prioritize service volume and Social Health Authority"
+excerpt: "The Empty Ledger of Public Health The Kenyan government has conflated bureaucratic headcount with medical efficacy. While officials celebrat"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/JF8KcLp8/ac33d3f354a9.webp"
 category: "Opinions"
 tags: ["healthcare reform", "social health authority", "kenya health news", "public health", "uhc"]
+canonical: "https://zandani.co.ke/article/kenya-health-summit-focuses-enrollment-over-patient-outcomes"
 date: "2026-08-25T09:51:22Z"
 dateModified: "2026-08-25T09:51:22Z"
+focusKeyword: "Kenya Health Summit Focuses on Enrollment Over Patient Outcomes"
 schema: "NewsArticle"
 ---
 
-## The Empty Ledger of Public Health
+## The Empty Ledger of Public Health Kenya Health Summit Focuses on Enrollment Over Patient Outcomes is the central subject of the update.
 
 The Kenyan government has conflated bureaucratic headcount with medical efficacy. While officials celebrate the enrollment of 32.3 million citizens into the new health database, they conveniently overlook a brutal reality. A digital file cannot perform a life-saving surgery, and an automated registration system is no substitute for a pulse. We are witnessing the rise of spreadsheet governance, where the state prioritizes the appearance of progress over the actual survival of its people.
 
