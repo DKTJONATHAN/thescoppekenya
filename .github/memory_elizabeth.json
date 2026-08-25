@@ -179,10 +179,10 @@
     "275b003f2565c57b52e157bdbf9a609b",
     "037275ca179795049a05b6fcef670a95",
     "19df41f5083af0b9c3f3846e60a3dc2e",
-    "757123c0988843904df3d0d26c692540"
+    "757123c0988843904df3d0d26c692540",
+    "bc36f120f9377804f3c888899556a88e"
   ],
   "style_history": [
-    "Backgrounder",
     "Explainer",
     "Critical Take",
     "Hard News Lead",
@@ -211,10 +211,10 @@
     "Explainer",
     "Hard News Lead",
     "Backgrounder",
-    "Africa Angle"
+    "Africa Angle",
+    "Explainer"
   ],
   "angle_history": [
-    "winners_losers|Kenya|Explainer",
     "money_follow|Kenya Power|Backgrounder",
     "accountability|Finance Bill 2026|Hard News Lead",
     "impact_on_citizens|Infinix Smart 20|Africa Angle",
@@ -293,6 +293,7 @@
     "money_follow|Airtel|Explainer",
     "winners_losers|ride-hailing|Hard News Lead",
     "timeline_shift|Google|Backgrounder",
-    "policy_gap|AliExpress|Africa Angle"
+    "policy_gap|AliExpress|Africa Angle",
+    "money_follow|StartupEast|Explainer"
   ]
 }
