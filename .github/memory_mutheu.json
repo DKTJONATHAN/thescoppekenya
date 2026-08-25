@@ -394,10 +394,10 @@
     "f6b2e3362a6b21c8d4d89d6778d4f9e6",
     "30855ed98deeed5d694acdd9c8230861",
     "9514feb396806458b465f9255fcdae34",
-    "f0a354903b2b9575450c2f910a3db69a"
+    "f0a354903b2b9575450c2f910a3db69a",
+    "443c858ee24d6a808b01b7d88cf5a98e"
   ],
   "style_history": [
-    "Explainer",
     "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
@@ -426,10 +426,10 @@
     "Trend Take",
     "Explainer",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "money_follow|Crystal Harris|Profile Beat",
     "story_progression|Reese Witherspoon|Hard News Lead",
     "myth_vs_fact|Zendaya|Reaction Round-up",
     "money_follow|na|Explainer",
@@ -508,6 +508,7 @@
     "timeline_shift|na|Trend Take",
     "winners_losers|na|Explainer",
     "timeline_shift|na|Hard News Lead",
-    "policy_gap|na|Profile Beat"
+    "policy_gap|na|Profile Beat",
+    "story_progression|Taylor Swift|Reaction Round-up"
   ]
 }
