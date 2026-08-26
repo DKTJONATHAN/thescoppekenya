@@ -1,18 +1,20 @@
 ---
 title: "Manchester City signs Ayyoub Bouaddi in major midfield overhaul"
 slug: "manchester-city-signs-ayyoub-bouaddi-in-midfield-overhaul"
-description: "Manchester City has signed Moroccan midfielder Ayyoub Bouaddi from Lille for £85.6 million as part of a significant squad restructuring."
+description: "Manchester City signs Ayyoub Bouaddi in major midfield overhaul: Manchester City has signed Moroccan midfielder Ayyoub Bouaddi from Lille for £85.6 million as"
+excerpt: "Manchester City: The £400 Million Gamble on Youth Manchester City has offloaded proven veterans like Rodri and Tijjani Reinders to bankroll"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/b5Lvc4PK/fc90322c685d.jpg"
 category: "Sports"
 tags: ["manchester city", "premier league", "football transfers", "ayyoub bouaddi", "kenyan football fans", "sports news"]
+canonical: "https://zandani.co.ke/article/manchester-city-signs-ayyoub-bouaddi-in-midfield-overhaul"
 date: "2026-08-26T10:55:22Z"
 dateModified: "2026-08-26T10:55:22Z"
+focusKeyword: "Manchester City signs Ayyoub Bouaddi in major midfield overhaul"
 schema: "NewsArticle"
 ---
 
-## Manchester City: The £400 Million Gamble on Youth
+## Manchester City: The £400 Million Gamble on Youth Manchester City signs Ayyoub Bouaddi in major midfield overhaul is the central subject of the update.
 
 Manchester City has offloaded proven veterans like Rodri and Tijjani Reinders to bankroll an aggressive youth recruitment strategy. By investing £85.6 million in Ayyoub Bouaddi and £116 million in Elliot Anderson, the club is prioritizing long-term asset appreciation over immediate defensive stability.
 
