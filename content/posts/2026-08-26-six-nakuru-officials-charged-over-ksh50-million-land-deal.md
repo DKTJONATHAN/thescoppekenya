@@ -1,18 +1,20 @@
 ---
 title: "Six Nakuru officials charged over Ksh50 million land deal"
 slug: "six-nakuru-officials-charged-over-ksh50-million-land-deal"
-description: "Six Nakuru County officials and a private vendor have been charged with corruption over a controversial Ksh50 million land acquisition for a health center."
+description: "Six Nakuru officials charged over Ksh50 million land deal: Six Nakuru County officials and a private vendor have been charged with corruption over a"
+excerpt: "When Bureaucracy Fails: The Cost of Improper Land Acquisition Six public officials from the Nakuru County government recently appeared in co"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/gZXFZz4T/a0198e8c0585.webp"
 category: "News"
 tags: ["nakuru county", "corruption", "procurement", "odpp", "eacc", "kenya news"]
+canonical: "https://zandani.co.ke/article/six-nakuru-officials-charged-over-ksh50-million-land-deal"
 date: "2026-08-26T05:38:34Z"
 dateModified: "2026-08-26T05:38:34Z"
+focusKeyword: "Six Nakuru officials charged over Ksh50 million land deal"
 schema: "NewsArticle"
 ---
 
-## When Bureaucracy Fails: The Cost of Improper Land Acquisition
+## When Bureaucracy Fails: The Cost of Improper Land Acquisition Six Nakuru officials charged over Ksh50 million land deal is the central subject of the update.
 
 Six public officials from the Nakuru County government recently appeared in court to answer for their alleged roles in a procurement process that bypassed standard legal channels during a Ksh50 million land purchase intended for a community health facility.
 

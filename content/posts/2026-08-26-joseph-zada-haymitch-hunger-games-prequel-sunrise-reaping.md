@@ -14,7 +14,7 @@ focusKeyword: "'Joseph Zada Cast as Young Haymitch in Hunger Games Prequel"
 schema: "NewsArticle"
 ---
 
-## New Haymitch Joseph Zada Endures Gruelling Selection for Prequel Role "Joseph Zada Cast as Young Haymitch in Hunger Games Prequel is the central subject of the update.
+## New Haymitch Joseph Zada Endures Gruelling Selection for Prequel Role "Joseph Zada Cast as Young Haymitch in Hunger Games Prequel is the central subject of the update. 'Joseph Zada Cast as Young Haymitch in Hunger Games Prequel is the central subject of the update.
 
 Actor Joseph Zada has been officially cast as the young Haymitch Abernathy in "Sunrise on the Reaping," the highly anticipated Hunger Games prequel film. His selection came after an exceptionally demanding audition process, highlighting the intense scrutiny for iconic franchise roles.
 
