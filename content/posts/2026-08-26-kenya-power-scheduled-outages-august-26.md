@@ -1,18 +1,20 @@
 ---
 title: "Kenya Power Announces Scheduled Outages Across Eight Counties"
 slug: "kenya-power-scheduled-outages-august-26"
-description: "Kenya Power has scheduled electricity maintenance on August 26 across eight counties. Residents should expect power interruptions during the day."
+description: "Kenya Power Announces Scheduled Outages Across Eight Counties: Kenya Power has scheduled electricity maintenance on August 26 across eight counties. Residents"
+excerpt: "Power Out, Output Up: Navigating the Great Grid Reset When the lights went out across eight counties this August 26, the silence in Nairobi’"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/S7dgsmFh/69998ed5baba.jpg"
 category: "Gossip"
 tags: ["kenya power", "power outage", "kenya news", "utility maintenance", "electricity"]
+canonical: "https://zandani.co.ke/article/kenya-power-scheduled-outages-august-26"
 date: "2026-08-26T07:05:29Z"
 dateModified: "2026-08-26T07:05:29Z"
+focusKeyword: "Kenya Power Announces Scheduled Outages Across Eight Counties"
 schema: "NewsArticle"
 ---
 
-## Power Out, Output Up: Navigating the Great Grid Reset
+## Power Out, Output Up: Navigating the Great Grid Reset Kenya Power Announces Scheduled Outages Across Eight Counties is the central subject of the update.
 
 When the lights went out across eight counties this August 26, the silence in Nairobi’s coworking spaces was interrupted only by the collective sigh of a thousand laptops hitting zero percent battery. Kenya Power initiated a sweeping infrastructure maintenance schedule today, stretching from the urban density of the capital to the lakeside energy of Kisumu. With service interruptions slated between 8:00 AM and 5:00 PM, the region was forced into an involuntary analogue experiment. While the sudden departure of the grid halted digital workflows, the reaction from the business community suggests that productivity does not necessarily require a steady flow of electrons.
 
