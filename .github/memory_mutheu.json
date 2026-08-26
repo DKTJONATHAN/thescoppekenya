@@ -398,10 +398,10 @@
     "443c858ee24d6a808b01b7d88cf5a98e",
     "552cf763690abfe4569ad05fa2c34d79",
     "cef5e886097c802abf4c1e039c804481",
-    "3407d9d820b3f54e6bba9d24b56d4623"
+    "3407d9d820b3f54e6bba9d24b56d4623",
+    "ee773499702a447f61a1291649117036"
   ],
   "style_history": [
-    "Explainer",
     "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
@@ -430,10 +430,10 @@
     "Reaction Round-up",
     "Trend Take",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Explainer"
   ],
   "angle_history": [
-    "accountability|murder case|Trend Take",
     "policy_gap|World Cup final|Hard News Lead",
     "winners_losers|Celebrity family|Reaction Round-up",
     "winners_losers|television|Profile Beat",
@@ -512,6 +512,7 @@
     "story_progression|Taylor Swift|Reaction Round-up",
     "myth_vs_fact|General Hospital|Trend Take",
     "winners_losers|Hunger Games prequel|Hard News Lead",
-    "myth_vs_fact|Rob Halford|Profile Beat"
+    "myth_vs_fact|Rob Halford|Profile Beat",
+    "story_progression|Actor|Explainer"
   ]
 }
