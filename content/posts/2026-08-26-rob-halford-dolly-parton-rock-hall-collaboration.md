@@ -14,7 +14,7 @@ focusKeyword: "'Rob Halford Reflects on Dolly Parton Rock Hall Performance"
 schema: "NewsArticle"
 ---
 
-## The Heart of the Music: Rob Halford and Dolly Parton's Unlikely Friendship "Rob Halford Reflects on Dolly Parton Rock Hall Performance is the central subject of the update.
+## The Heart of the Music: Rob Halford and Dolly Parton's Unlikely Friendship "Rob Halford Reflects on Dolly Parton Rock Hall Performance is the central subject of the update. 'Rob Halford Reflects on Dolly Parton Rock Hall Performance is the central subject of the update.
 
 When Rob Halford, the undeniable 'Metal God' of heavy metal, recently spoke about his surprising connection with country music legend Dolly Parton, it was more than just a nostalgic look back. It was a clear illustration of how two giants from seemingly opposite musical worlds found common ground, demonstrating that artistic understanding genuinely knows no limits. Their collaborations, unexpected as they were, have certainly reshaped perceptions, gently pushing against the old idea that different genres simply can't mix.
 

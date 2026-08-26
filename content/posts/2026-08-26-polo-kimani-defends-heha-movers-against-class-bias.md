@@ -1,18 +1,20 @@
 ---
 title: "Polo Kimani Defends HeHa Movers Amid Claims of Class Bias"
 slug: "polo-kimani-defends-heha-movers-against-class-bias"
-description: "Social commentator Polo Kimani has defended the HeHa movers, arguing that public criticism of the group is rooted in class prejudice against Kibera residents."
+description: "Polo Kimani Defends HeHa Movers Amid Claims of Class Bias: Social commentator Polo Kimani has defended the HeHa movers, arguing that public criticism of the"
+excerpt: "The Policing of Kibera’s Digital Hustle Polo Kimani has ignited a fierce debate by arguing that the backlash against the HeHa movers is less"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/Rp94Gv5L/b98605a72713.jpg"
 category: "Gossip"
 tags: ["heha movers", "polo kimani", "kibera", "kenyan news", "social media", "classism"]
+canonical: "https://zandani.co.ke/article/polo-kimani-defends-heha-movers-against-class-bias"
 date: "2026-08-26T09:03:51Z"
 dateModified: "2026-08-26T09:03:51Z"
+focusKeyword: "Polo Kimani Defends HeHa Movers Amid Claims of Class Bias"
 schema: "NewsArticle"
 ---
 
-## The Policing of Kibera’s Digital Hustle
+## The Policing of Kibera’s Digital Hustle Polo Kimani Defends HeHa Movers Amid Claims of Class Bias is the central subject of the update.
 
 Polo Kimani has ignited a fierce debate by arguing that the backlash against the HeHa movers is less about their content and more about a deep-seated discomfort with who is allowed to succeed on the internet from Nairobi’s informal settlements.
 
