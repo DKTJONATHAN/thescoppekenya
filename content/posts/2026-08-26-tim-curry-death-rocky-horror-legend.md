@@ -1,21 +1,20 @@
 ---
-title: "Tim Curry, Iconic Dr. Frank-N-Furter Star, Dies at 80
+title: "'Tim Curry, Iconic Dr. Frank-N-Furter Star, Dies at 80"
 slug: "tim-curry-death-rocky-horror-legend"
-description: "Tim Curry, the legendary actor best known as Dr. Frank-N-Furter in The Rocky Horror Picture Show, has died at 80. Explore his impactful career and lasting legacy."
+description: "'Tim Curry, Iconic Dr. Frank-N-Furter Star, Dies at 80: Tim Curry, the legendary actor best known as Dr. Frank-N-Furter in The Rocky Horror Picture Show, has"
+excerpt: "Remembering Tim Curry: A Legacy of Unforgettable Performances The entertainment world acknowledges the passing of a truly distinctive talent"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/JRRDgFVq/69f4d199ba6c.jpg"
-og_title: "Tim Curry, Iconic Dr. Frank-N-Furter Star, Dies at 80"
-og_description: "Legendary actor Tim Curry, known for his role as Dr. Frank-N-Furter, has died at 80. His career spanned stage, film, and voice acting."
-focus_keyword: "Tim Curry death"
 category: "Entertainment"
 tags: ["tim curry", "rocky horror picture show", "dr frank n furter", "celebrity news", "hollywood actor", "entertainment", "theatre legend"]
+canonical: "https://zandani.co.ke/article/tim-curry-death-rocky-horror-legend"
 date: "2026-08-26T16:03:44Z"
 dateModified: "2026-08-26T16:03:44Z"
+focusKeyword: "'Tim Curry, Iconic Dr. Frank-N-Furter Star, Dies at 80"
 schema: "NewsArticle"
 ---
 
-## Remembering Tim Curry: A Legacy of Unforgettable Performances
+## Remembering Tim Curry: A Legacy of Unforgettable Performances "Tim Curry, Iconic Dr. Frank-N-Furter Star, Dies at 80 is the central subject of the update.
 
 The entertainment world acknowledges the passing of a truly distinctive talent. English actor and cultural icon Tim Curry has died at 80, leaving behind a profound body of work. Though most widely known for originating the unforgettable Dr. Frank-N-Furter, his influence spanned much further than just one role. Fans worldwide are now reflecting on the lasting impact of his unique contributions.
 
