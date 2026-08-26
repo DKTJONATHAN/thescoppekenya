@@ -1,18 +1,20 @@
 ---
 title: "Social Health Authority Aims to Improve Access to Healthcare"
 slug: "kenya-transitions-to-social-health-authority"
-description: "Kenya transitions to the Social Health Authority to provide universal health coverage, focusing on primary care and chronic illness protection."
+description: "Social Health Authority Aims to Improve Access to Healthcare: Kenya transitions to the Social Health Authority to provide universal health coverage, focusing"
+excerpt: "The Enduring Shadow of the NHIF Born in 1966, the National Hospital Insurance Fund originated as a colonial instrument tailored for the form"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://cdn.radioafrica.digital/image/2026/08/1cde0945-d905-443b-8ce5-4369c7f248ce.webp?1787738230743"
 category: "Opinions"
 tags: ["social health authority", "kenyan health news", "universal health coverage", "public health", "health reforms", "primary healthcare"]
+canonical: "https://zandani.co.ke/article/kenya-transitions-to-social-health-authority"
 date: "2026-08-26T09:56:36Z"
 dateModified: "2026-08-26T09:56:36Z"
+focusKeyword: "Social Health Authority Aims to Improve Access to Healthcare"
 schema: "NewsArticle"
 ---
 
-## The Enduring Shadow of the NHIF
+## The Enduring Shadow of the NHIF Social Health Authority Aims to Improve Access to Healthcare is the central subject of the update.
 
 Born in 1966, the National Hospital Insurance Fund originated as a colonial instrument tailored for the formal workforce. It effectively marginalized the vast majority of Kenyans who sustained themselves through agriculture or informal commerce. Now, as 32.3 million people transition into the Social Health Authority, the nation finds itself haunted by the specter of that exclusionary legacy.
 
