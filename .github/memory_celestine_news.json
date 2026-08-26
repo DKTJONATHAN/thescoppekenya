@@ -458,10 +458,10 @@
     "b123c4fa0599728413b79d05f2302e12",
     "cd0a6579fa5ada8cbd3a0b0ab960ce4d",
     "fed7ab642ed21a846d858234871086b7",
-    "876666eae8d191b815fb27af49d94be1"
+    "876666eae8d191b815fb27af49d94be1",
+    "772fd72b0b837d21a20fe786b4d51e3d"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Context Backgrounder",
     "Hard News Lead",
     "Explainer",
@@ -490,10 +490,10 @@
     "Reaction & Voices",
     "Power Accountability",
     "Explainer",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "myth_vs_fact|IEBC|Reaction & Voices",
     "accountability|CBK|Hard News Lead",
     "myth_vs_fact|Nairobi|Explainer",
     "policy_gap|Kenya|Context Backgrounder",
@@ -572,6 +572,7 @@
     "winners_losers|HELB|Reaction & Voices",
     "money_follow|Kenya Airways|Power Accountability",
     "policy_gap|Nakuru County Government|Explainer",
-    "story_progression|EACC|Context Backgrounder"
+    "story_progression|EACC|Context Backgrounder",
+    "myth_vs_fact|LPG|Reaction & Voices"
   ]
 }
