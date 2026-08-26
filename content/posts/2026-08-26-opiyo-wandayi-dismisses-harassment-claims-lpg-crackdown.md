@@ -1,18 +1,20 @@
 ---
 title: "Opiyo Wandayi Dismisses Claims of Harassment in LPG Crackdown"
 slug: "opiyo-wandayi-dismisses-harassment-claims-lpg-crackdown"
-description: "Energy CS Opiyo Wandayi rejects allegations by Rigathi Gachagua regarding police raids on LPG traders and vows to intensify the state safety crackdown."
+description: "Opiyo Wandayi Dismisses Claims of Harassment in LPG Crackdown: Energy CS Opiyo Wandayi rejects allegations by Rigathi Gachagua regarding police raids on LPG"
+excerpt: "A Dangerous Mix of Gas and Politics Energy Cabinet Secretary Opiyo Wandayi is doubling down on the ongoing crackdown against illegal liquefi"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/xqFyPn3y/279a7fc1af19.webp"
 category: "News"
 tags: ["energy", "kenya politics", "epra", "lpg", "opiyo wandayi", "rigathi gachagua"]
+canonical: "https://zandani.co.ke/article/opiyo-wandayi-dismisses-harassment-claims-lpg-crackdown"
 date: "2026-08-26T19:07:43Z"
 dateModified: "2026-08-26T19:07:43Z"
+focusKeyword: "Opiyo Wandayi Dismisses Claims of Harassment in LPG Crackdown"
 schema: "NewsArticle"
 ---
 
-## A Dangerous Mix of Gas and Politics
+## A Dangerous Mix of Gas and Politics Opiyo Wandayi Dismisses Claims of Harassment in LPG Crackdown is the central subject of the update.
 
 Energy Cabinet Secretary Opiyo Wandayi is doubling down on the ongoing crackdown against illegal liquefied petroleum gas traders, dismissing claims of state-sponsored harassment while signaling that regulatory pressure on the sector will not ease despite rising political friction from former leaders.
 
