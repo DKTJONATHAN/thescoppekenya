@@ -1,18 +1,20 @@
 ---
 title: "How to recover a disabled Facebook or Instagram account"
 slug: "how-to-recover-disabled-facebook-instagram-account"
-description: "Learn the official procedures for recovering disabled Meta accounts, including identity verification and appeal processes for individuals and businesses."
+description: "How to recover a disabled Facebook or Instagram account: Learn the official procedures for recovering disabled Meta accounts, including identity verification"
+excerpt: "Meta’s 180 Day Recovery Policy Challenges Kenyan SME Stability Meta mandates a strict 180 day threshold for account restoration, a protocol"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/r2zx1LFW/f08bf62896f6.webp"
 category: "Technology"
 tags: ["meta", "social media", "facebook security", "instagram tips", "online safety", "digital account recovery"]
+canonical: "https://zandani.co.ke/article/how-to-recover-disabled-facebook-instagram-account"
 date: "2026-08-26T11:46:37Z"
 dateModified: "2026-08-26T11:46:37Z"
+focusKeyword: "How to recover a disabled Facebook or Instagram account"
 schema: "NewsArticle"
 ---
 
-## Meta’s 180-Day Recovery Policy Challenges Kenyan SME Stability
+## Meta’s 180-Day Recovery Policy Challenges Kenyan SME Stability How to recover a disabled Facebook or Instagram account is the central subject of the update.
 
 Meta mandates a strict 180-day threshold for account restoration, a protocol that functions as an absolute digital lockout for Kenyan enterprises once the timeframe expires. For local entrepreneurs, this binary recovery system often results in the permanent shuttering of digital storefronts, as they lack the specialized support infrastructure routinely granted to larger multinational corporations.
 
