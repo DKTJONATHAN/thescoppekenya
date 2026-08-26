@@ -1,18 +1,20 @@
 ---
 title: "EACC pursues eight suspects in Ksh92 million Turkana scandal"
 slug: "eacc-pursues-eight-suspects-in-ksh92-million-turkana-scandal"
-description: "The EACC is prosecuting eight individuals for an alleged Ksh92 million corruption scheme involving conflict of interest and money laundering in Turkana."
+description: "EACC pursues eight suspects in Ksh92 million Turkana scandal: The EACC is prosecuting eight individuals for an alleged Ksh92 million corruption scheme"
+excerpt: "The Procurement Loophole: How Turkana County Officials Built a Ksh92 Million Private Pipeline The Ethics and Anti Corruption Commission has"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/F4W7DM0y/4cde84d95564.webp"
 category: "News"
 tags: ["eacc", "turkana county", "corruption", "money laundering", "kenya news", "za ndani"]
+canonical: "https://zandani.co.ke/article/eacc-pursues-eight-suspects-in-ksh92-million-turkana-scandal"
 date: "2026-08-26T11:35:03Z"
 dateModified: "2026-08-26T11:35:03Z"
+focusKeyword: "EACC pursues eight suspects in Ksh92 million Turkana scandal"
 schema: "NewsArticle"
 ---
 
-## The Procurement Loophole: How Turkana County Officials Built a Ksh92 Million Private Pipeline
+## The Procurement Loophole: How Turkana County Officials Built a Ksh92 Million Private Pipeline EACC pursues eight suspects in Ksh92 million Turkana scandal is the central subject of the update.
 
 The Ethics and Anti-Corruption Commission has moved to freeze assets and initiate criminal proceedings against eight individuals, exposing a sophisticated scheme where county health funds were diverted into the private coffers of those tasked with managing them.
 
