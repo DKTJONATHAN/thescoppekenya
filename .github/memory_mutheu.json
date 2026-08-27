@@ -399,10 +399,10 @@
     "552cf763690abfe4569ad05fa2c34d79",
     "cef5e886097c802abf4c1e039c804481",
     "3407d9d820b3f54e6bba9d24b56d4623",
-    "ee773499702a447f61a1291649117036"
+    "ee773499702a447f61a1291649117036",
+    "ed50e60d28b0f0bc0af514fd1eabdfc9"
   ],
   "style_history": [
-    "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
@@ -431,10 +431,10 @@
     "Trend Take",
     "Hard News Lead",
     "Profile Beat",
-    "Explainer"
+    "Explainer",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "policy_gap|World Cup final|Hard News Lead",
     "winners_losers|Celebrity family|Reaction Round-up",
     "winners_losers|television|Profile Beat",
     "story_progression|memes|Explainer",
@@ -513,6 +513,7 @@
     "myth_vs_fact|General Hospital|Trend Take",
     "winners_losers|Hunger Games prequel|Hard News Lead",
     "myth_vs_fact|Rob Halford|Profile Beat",
-    "story_progression|Actor|Explainer"
+    "story_progression|Actor|Explainer",
+    "myth_vs_fact|na|Reaction Round-up"
   ]
 }
