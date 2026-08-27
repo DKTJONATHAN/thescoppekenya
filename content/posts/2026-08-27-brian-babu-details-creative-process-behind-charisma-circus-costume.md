@@ -1,18 +1,20 @@
 ---
 title: "Brian Babu Details Creative Process Behind Charisma Circus Costume"
 slug: "brian-babu-details-creative-process-behind-charisma-circus-costume"
-description: "Celebrity stylist Brian Babu showcases his collaboration with artist Charisma to design a vintage circus-themed look in his latest digital series."
+description: "Brian Babu Details Creative Process Behind Charisma Circus Costum: Celebrity stylist Brian Babu showcases his collaboration with artist Charisma to design a"
+excerpt: "The Business Case Behind The Circus Aesthetic Award winning stylist Brian Babu has shifted the narrative of Kenyan fashion production by for"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/NndjpT8H/28c9e809a3b8.webp"
 category: "Gossip"
 tags: ["brian babu", "kenyan fashion", "charisma", "the styling process", "kenyan celebrities", "fashion design"]
+canonical: "https://zandani.co.ke/article/brian-babu-details-creative-process-behind-charisma-circus-costume"
 date: "2026-08-27T19:05:49Z"
 dateModified: "2026-08-27T19:05:49Z"
+focusKeyword: "Brian Babu Details Creative Process Behind Charisma Circus Costum"
 schema: "NewsArticle"
 ---
 
-## The Business Case Behind The Circus Aesthetic
+## The Business Case Behind The Circus Aesthetic Brian Babu Details Creative Process Behind Charisma Circus Costum is the central subject of the update.
 
 Award-winning stylist Brian Babu has shifted the narrative of Kenyan fashion production by formalizing his digital series, The Styling Process, into a professional media asset that quantifies the commercial value of costume design for live music performance.
 
