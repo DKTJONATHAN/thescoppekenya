@@ -1,18 +1,20 @@
 ---
 title: "Matiang'i dismisses Jubilee defections as overdue official exits"
 slug: "matiangi-dismisses-jubilee-defections-as-overdue-official-exits"
-description: "Fred Matiang'i clarifies that Jubilee officials who recently joined the Democracy for the Citizens Party were suspended for misconduct months earlier."
+description: "Matiang'i dismisses Jubilee defections as overdue official exits: Fred Matiang'i clarifies that Jubilee officials who recently joined the Democracy for the"
+excerpt: "Jubilee Party Reframes Exits as Disciplinary Cleanup Jubilee Party Deputy Leader Fred Matiang'i has formally dismissed the recent exodus of"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/jPPqNS87/f9bad31124a0.webp"
 category: "News"
 tags: ["jubilee party", "kenyan politics", "fred matiangi", "rigathi gachagua", "nairobi politics"]
+canonical: "https://zandani.co.ke/article/matiangi-dismisses-jubilee-defections-as-overdue-official-exits"
 date: "2026-08-27T04:27:03Z"
 dateModified: "2026-08-27T04:27:03Z"
+focusKeyword: "Matiang'i dismisses Jubilee defections as overdue official exits"
 schema: "NewsArticle"
 ---
 
-## Jubilee Party Reframes Exits as Disciplinary Cleanup
+## Jubilee Party Reframes Exits as Disciplinary Cleanup Matiang'i dismisses Jubilee defections as overdue official exits is the central subject of the update.
 
 Jubilee Party Deputy Leader Fred Matiang'i has formally dismissed the recent exodus of high-ranking Nairobi officials to the Democracy for the Citizens Party as an administrative conclusion of long-standing disciplinary cases rather than a sign of political fragmentation.
 

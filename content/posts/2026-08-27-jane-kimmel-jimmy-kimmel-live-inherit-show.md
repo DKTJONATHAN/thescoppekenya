@@ -14,7 +14,7 @@ focusKeyword: "'Jane Kimmel believes she will inherit Jimmy Kimmel Live"
 schema: "NewsArticle"
 ---
 
-## Jane Kimmel's Future at Jimmy Kimmel Live Has Kenyans Talking "Jane Kimmel believes she will inherit Jimmy Kimmel Live is the central subject of the update.
+## Jane Kimmel's Future at Jimmy Kimmel Live Has Kenyans Talking "Jane Kimmel believes she will inherit Jimmy Kimmel Live is the central subject of the update. 'Jane Kimmel believes she will inherit Jimmy Kimmel Live is the central subject of the update.
 
 Twelve-year-old Jane Kimmel's conviction that she will one day inherit her father's late-night talk show, Jimmy Kimmel Live, has ignited a lively debate among Kenyans online. Her candid belief, shared by Jimmy Kimmel and his wife Molly McNearney, challenges the conventional understanding of "family business" and sparks discussions on ambition, privilege, and children's perception of their parents' careers.
 
