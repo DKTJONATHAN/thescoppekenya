@@ -1,18 +1,20 @@
 ---
 title: "Rising Arbantone Artist Stoopid Boy Passes Away"
 slug: "rising-arbantone-artist-stoopid-boy-passes-away"
-description: "Kenyan musician Edgar, widely known as Stoopid Boy, has died. The artist rose to fame with his viral track G Baga Jat and influenced the scene."
+description: "Rising Arbantone Artist Stoopid Boy Passes Away: Kenyan musician Edgar, widely known as Stoopid Boy, has died. The artist rose to fame with his viral track G"
+excerpt: "The Final Note of Stoopid Boy Edgar, the twenty year old viral sensation known to the Arbantone circuit as Stoopid Boy, has died. His passin"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/2VNbtHR/bbc121c0211b.jpg"
 category: "Gossip"
 tags: ["stoopid boy", "arbantone", "kenyan music", "kenyan celebrities", "obituary"]
+canonical: "https://zandani.co.ke/article/rising-arbantone-artist-stoopid-boy-passes-away"
 date: "2026-08-27T17:36:54Z"
 dateModified: "2026-08-27T17:36:54Z"
+focusKeyword: "Rising Arbantone Artist Stoopid Boy Passes Away"
 schema: "NewsArticle"
 ---
 
-## The Final Note of Stoopid Boy
+## The Final Note of Stoopid Boy Rising Arbantone Artist Stoopid Boy Passes Away is the central subject of the update.
 
 Edgar, the twenty-year-old viral sensation known to the Arbantone circuit as Stoopid Boy, has died. His passing serves as a grim coda to a career that defined the accelerated, high-stakes trajectory of Kenya’s modern digital music landscape.
 
