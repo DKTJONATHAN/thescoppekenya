@@ -1,18 +1,20 @@
 ---
 title: "Public Sector Unions and SRC Clash Over CBA Negotiation Reforms"
 slug: "public-sector-unions-src-cba-negotiation-reforms"
-description: "Public service trade unions are demanding direct involvement in CBA talks as the SRC reviews salary frameworks to mitigate frequent industrial action."
+description: "Public Sector Unions and SRC Clash Over CBA Negotiation Reforms: Public service trade unions are demanding direct involvement in CBA talks as the SRC reviews"
+excerpt: "The Negotiation Bottleneck Threatening Your Public Services Public service trade unions met in Nairobi yesterday to challenge the current fr"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/bj7SBJjk/6b631bbc0f8d.webp"
 category: "News"
 tags: ["kenya", "public service", "trade unions", "cba", "src", "kenyan politics", "labour relations"]
+canonical: "https://zandani.co.ke/article/public-sector-unions-src-cba-negotiation-reforms"
 date: "2026-08-27T16:17:26Z"
 dateModified: "2026-08-27T16:17:26Z"
+focusKeyword: "Public Sector Unions and SRC Clash Over CBA Negotiation Reforms"
 schema: "NewsArticle"
 ---
 
-## The Negotiation Bottleneck Threatening Your Public Services
+## The Negotiation Bottleneck Threatening Your Public Services Public Sector Unions and SRC Clash Over CBA Negotiation Reforms is the central subject of the update.
 
 Public service trade unions met in Nairobi yesterday to challenge the current framework for Collective Bargaining Agreements. This standoff with the Salaries and Remuneration Commission creates a fiscal uncertainty that could soon disrupt daily operations across government offices, schools, and hospitals.
 
