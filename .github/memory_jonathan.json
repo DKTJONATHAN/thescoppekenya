@@ -224,10 +224,10 @@
     "308b43bcc356cc472283c9cc033ff3c5",
     "c618679562d5dc5d9255994925f1abff",
     "aa30b6b38e7421249f86347eba86d799",
-    "0b8c0b6d762a8d9c40398d4d5e608d5e"
+    "0b8c0b6d762a8d9c40398d4d5e608d5e",
+    "0df8d21eaf5403472e51bec7808ad4c4"
   ],
   "style_history": [
-    "Historical Lens",
     "Sharp Column",
     "Personal Reflection",
     "Letter Form",
@@ -256,10 +256,10 @@
     "Letter Form",
     "Counterpoint",
     "Sharp Column",
-    "Historical Lens"
+    "Historical Lens",
+    "Personal Reflection"
   ],
   "angle_history": [
-    "policy_gap|Comprehensive School Model|Sharp Column",
     "myth_vs_fact|Kenya Power|Counterpoint",
     "timeline_shift|health financing|Historical Lens",
     "accountability|education|Letter Form",
@@ -338,6 +338,7 @@
     "accountability|Construction Industry|Letter Form",
     "myth_vs_fact|police brutality|Counterpoint",
     "myth_vs_fact|healthcare reform|Sharp Column",
-    "timeline_shift|Social Health Authority|Historical Lens"
+    "timeline_shift|Social Health Authority|Historical Lens",
+    "next_48_hours|Katiba|Personal Reflection"
   ]
 }
