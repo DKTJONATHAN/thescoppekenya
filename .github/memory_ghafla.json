@@ -295,10 +295,10 @@
     "4036b88c19ef46c972c3326b8dd3e25f",
     "819be0524c2ad5eb0f26ab5a79c9632c",
     "fce9a88452904a5b44ace5368685cc2c",
-    "431bd7f836de92ba56de59868cbd4360"
+    "431bd7f836de92ba56de59868cbd4360",
+    "fe3e2dfad581ca26e41a2cb10a94c035"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Receipts Piece",
     "Reaction Round-up",
@@ -327,10 +327,10 @@
     "Hard News Lead",
     "Profile Beat",
     "Trend Take",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "money_follow|Jose Chameleone|Hard News Lead",
     "myth_vs_fact|Forex trading|Receipts Piece",
     "accountability|National Police Service|Profile Beat",
     "winners_losers|Samidoh|Trend Take",
@@ -409,6 +409,7 @@
     "winners_losers|Kenya Power|Hard News Lead",
     "money_follow|Kenya Power|Profile Beat",
     "myth_vs_fact|gospel music|Trend Take",
-    "winners_losers|Kenya Power|Reaction Round-up"
+    "winners_losers|Kenya Power|Reaction Round-up",
+    "story_progression|Arbantone|Hard News Lead"
   ]
 }
