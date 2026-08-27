@@ -1,18 +1,20 @@
 ---
 title: "Chelsea and Fulham advance in Carabao Cup after home victories"
 slug: "chelsea-and-fulham-advance-in-carabao-cup"
-description: "Chelsea secured a win over Luton Town in Xabi Alonso's first home game while Fulham defeated AFC Wimbledon to progress in the Carabao Cup."
+description: "Chelsea and Fulham advance in Carabao Cup after home victories: Chelsea secured a win over Luton Town in Xabi Alonso's first home game while Fulham defeated"
+excerpt: "Stability in West London: Early Steps for Chelsea and Fulham Xabi Alonso stood on the touchline at Stamford Bridge, watching his side naviga"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/Xf8PHvww/289e518c76e3.jpg"
 category: "Sports"
 tags: ["chelsea fc", "fulham fc", "carabao cup", "english premier league", "football news", "xabi alonso"]
+canonical: "https://zandani.co.ke/article/chelsea-and-fulham-advance-in-carabao-cup"
 date: "2026-08-27T20:36:35Z"
 dateModified: "2026-08-27T20:36:35Z"
+focusKeyword: "Chelsea and Fulham advance in Carabao Cup after home victories"
 schema: "NewsArticle"
 ---
 
-## Stability in West London: Early Steps for Chelsea and Fulham
+## Stability in West London: Early Steps for Chelsea and Fulham Chelsea and Fulham advance in Carabao Cup after home victories is the central subject of the update.
 
 Xabi Alonso stood on the touchline at Stamford Bridge, watching his side navigate their Carabao Cup tie against Luton Town. A 2-0 victory earned the team a clean sheet and a spot in the next round, marking a functional start to his tenure. Rather than chasing immediate aesthetic fireworks, Alonso appears focused on establishing a disciplined baseline for a squad that has endured significant instability over the past several seasons.
 
