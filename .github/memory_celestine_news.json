@@ -460,10 +460,10 @@
     "fed7ab642ed21a846d858234871086b7",
     "876666eae8d191b815fb27af49d94be1",
     "772fd72b0b837d21a20fe786b4d51e3d",
-    "87bcc0b6271c4d45bc3427771a560d9a"
+    "87bcc0b6271c4d45bc3427771a560d9a",
+    "1b285f68417bcaaf59d14b4e0c803f6a"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Power Accountability",
     "Context Backgrounder",
@@ -492,10 +492,10 @@
     "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "myth_vs_fact|Nairobi|Explainer",
     "policy_gap|Kenya|Context Backgrounder",
     "policy_gap|road accident|Power Accountability",
     "money_follow|International Seabed Authority|Hard News Lead",
@@ -574,6 +574,7 @@
     "policy_gap|Nakuru County Government|Explainer",
     "story_progression|EACC|Context Backgrounder",
     "myth_vs_fact|LPG|Reaction & Voices",
-    "timeline_shift|Jubilee Party|Hard News Lead"
+    "timeline_shift|Jubilee Party|Hard News Lead",
+    "money_follow|Kenya|Explainer"
   ]
 }
