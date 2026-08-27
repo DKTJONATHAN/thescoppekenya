@@ -1,18 +1,20 @@
 ---
 title: "I&M Group records historic KSh 10 billion half-year profit"
 slug: "im-group-records-historic-half-year-profit"
-description: "I&M Group reports strong financial growth with profits hitting KSh 10.17 billion as the bank recalibrates its physical branch expansion strategy."
+description: "I&M Group records historic KSh 10 billion half-year profit: I&M Group reports strong financial growth with profits hitting KSh 10.17 billion as the bank"
+excerpt: "Shifting Foundations: The New Math of Banking I&M Group recently released its financial results for the first half of 2026, reporting a prof"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/TxkbzCdb/674de974d133.jpg"
 category: "Business"
 tags: ["im group", "kenyan banking", "financial results", "nairobi securities exchange", "business news", "kenyan economy"]
+canonical: "https://zandani.co.ke/article/im-group-records-historic-half-year-profit"
 date: "2026-08-27T16:26:04Z"
 dateModified: "2026-08-27T16:26:04Z"
+focusKeyword: "I&M Group records historic KSh 10 billion half-year profit"
 schema: "NewsArticle"
 ---
 
-## Shifting Foundations: The New Math of Banking
+## Shifting Foundations: The New Math of Banking I&M Group records historic KSh 10 billion half-year profit is the central subject of the update.
 
 I&M Group recently released its financial results for the first half of 2026, reporting a profit of KSh 10.17 billion. This represents a 22.4 percent increase compared to the previous period. Beyond these numbers, the report highlights a significant evolution in how financial institutions build value. While profits are climbing, the long-standing strategy of aggressive physical branch expansion is being set aside in favor of digital scalability.
 
