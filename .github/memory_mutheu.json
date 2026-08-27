@@ -400,10 +400,10 @@
     "cef5e886097c802abf4c1e039c804481",
     "3407d9d820b3f54e6bba9d24b56d4623",
     "ee773499702a447f61a1291649117036",
-    "ed50e60d28b0f0bc0af514fd1eabdfc9"
+    "ed50e60d28b0f0bc0af514fd1eabdfc9",
+    "a99dac3f4f667c6f17e63036580414f1"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
     "Trend Take",
@@ -432,10 +432,10 @@
     "Hard News Lead",
     "Profile Beat",
     "Explainer",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
-    "winners_losers|Celebrity family|Reaction Round-up",
     "winners_losers|television|Profile Beat",
     "story_progression|memes|Explainer",
     "timeline_shift|Clayface|Trend Take",
@@ -514,6 +514,7 @@
     "winners_losers|Hunger Games prequel|Hard News Lead",
     "myth_vs_fact|Rob Halford|Profile Beat",
     "story_progression|Actor|Explainer",
-    "myth_vs_fact|na|Reaction Round-up"
+    "myth_vs_fact|na|Reaction Round-up",
+    "winners_losers|Happy Gilmore 2|Trend Take"
   ]
 }
