@@ -1,18 +1,20 @@
 ---
 title: "Nollywood actor Musiliu Dasofunjo announces prostate cancer diagnosis"
 slug: "nollywood-actor-musiliu-dasofunjo-diagnosed-with-prostate-cancer"
-description: "Veteran actor Musiliu Dasofunjo, known as Baba Johunomi, has revealed his battle with prostate cancer after experiencing severe urinary symptoms."
+description: "Nollywood actor Musiliu Dasofunjo announces prostate cancer diagn: Veteran actor Musiliu Dasofunjo, known as Baba Johunomi, has revealed his battle with"
+excerpt: "Confronting the Silence Behind Prostate Cancer in Nollywood Veteran Yoruba actor Musiliu Dasofunjo, widely recognized as Baba Johunomi, has"
 author: "Amara Ndlovu"
-authorUrl: "https://zandani.co.ke/author/amara-ndlovu"
 image: "https://i.ibb.co/FqBtyLn6/4aef5d6b1a50.png"
 category: "Africa Entertainment"
 tags: ["nollywood", "prostate cancer", "musiliu dasofunjo", "nigerian entertainment", "health awareness", "african cinema"]
+canonical: "https://zandani.co.ke/article/nollywood-actor-musiliu-dasofunjo-diagnosed-with-prostate-cancer"
 date: "2026-08-27T14:05:35Z"
 dateModified: "2026-08-27T14:05:35Z"
+focusKeyword: "Nollywood actor Musiliu Dasofunjo announces prostate cancer diagn"
 schema: "NewsArticle"
 ---
 
-## Confronting the Silence Behind Prostate Cancer in Nollywood
+## Confronting the Silence Behind Prostate Cancer in Nollywood Nollywood actor Musiliu Dasofunjo announces prostate cancer diagn is the central subject of the update.
 
 Veteran Yoruba actor Musiliu Dasofunjo, widely recognized as Baba Johunomi, has openly shared his struggle with prostate cancer after receiving a clinical diagnosis at the University College Hospital in Ibadan. This development forces a difficult conversation about how cultural stigmas influence the health choices of Nigeria's aging film legends.
 
