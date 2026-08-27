@@ -361,10 +361,10 @@
     "89e0c6203352c5f7eb709239b6a865c7",
     "95b7e283c912832ecaeec53fa7e8fbda",
     "1800b4d077e14cfa07142f64cda84f63",
-    "bd2256f2477fa171e79ac3eca247a273"
+    "bd2256f2477fa171e79ac3eca247a273",
+    "7bb9e15e0644eb0458f1e80ae49b4b9b"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Receipts Piece",
     "Profile Beat",
     "Hard News Lead",
@@ -393,10 +393,10 @@
     "Hard News Lead",
     "Receipts Piece",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "winners_losers|Afropop|Hard News Lead",
     "winners_losers|food art|Profile Beat",
     "story_progression|Timmy Tdat|Trend Take",
     "money_follow|boxing|Receipts Piece",
@@ -475,6 +475,7 @@
     "money_follow|Gen Z Goliath|Hard News Lead",
     "policy_gap|marriage advocacy|Receipts Piece",
     "winners_losers|Ohangla|Reaction Round-up",
-    "myth_vs_fact|classism|Profile Beat"
+    "myth_vs_fact|classism|Profile Beat",
+    "money_follow|Brian Babu|Hard News Lead"
   ]
 }
