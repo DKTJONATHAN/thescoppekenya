@@ -189,10 +189,10 @@
     "f73c2ad60e324ff139c670b12e37f510",
     "5cceee269bf3c7cd8e48331bf26c7342",
     "fcf9bc3c8daba1e333206b05e2280f3a",
-    "1fca998eb54586e3b2201caf3094b3c7"
+    "1fca998eb54586e3b2201caf3094b3c7",
+    "e9bf55c76e751894f224c2aa4f988280"
   ],
   "style_history": [
-    "Explainer",
     "Profile Beat",
     "Trend Take",
     "Hard News Lead",
@@ -221,7 +221,8 @@
     "Explainer",
     "Reaction Round-up",
     "Profile Beat",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -295,6 +296,7 @@
     "winners_losers|BBNaija|Explainer",
     "story_progression|P-Square|Reaction Round-up",
     "policy_gap|Nollywood|Profile Beat",
-    "next_48_hours|BBNaija|Hard News Lead"
+    "next_48_hours|BBNaija|Hard News Lead",
+    "myth_vs_fact|Nollywood|Explainer"
   ]
 }
