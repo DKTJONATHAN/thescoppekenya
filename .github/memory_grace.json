@@ -221,10 +221,10 @@
     "4472b8a845d4a4570655e1670724e123",
     "8a070d630d36d7dad632885dc95d0532",
     "f3615ed61ce7c71def357ac0ea049120",
-    "4c80c890e604144b4283966771d24fe1"
+    "4c80c890e604144b4283966771d24fe1",
+    "1bf51843d306b61cea07cc7ed28eef94"
   ],
   "style_history": [
-    "Explainer",
     "Backgrounder",
     "Power Accountability",
     "Markets Report",
@@ -253,10 +253,10 @@
     "Explainer",
     "Backgrounder",
     "Power Accountability",
-    "Markets Report"
+    "Markets Report",
+    "Explainer"
   ],
   "angle_history": [
-    "impact_on_citizens|HELB|SME Angle",
     "winners_losers|Kenya Airways|Explainer",
     "money_follow|HELB|Backgrounder",
     "winners_losers|Access Bank Kenya|Markets Report",
@@ -335,6 +335,7 @@
     "money_follow|Kenya|Explainer",
     "policy_gap|aviation|Backgrounder",
     "accountability|Food4Education|Power Accountability",
-    "next_48_hours|Kenya|Markets Report"
+    "next_48_hours|Kenya|Markets Report",
+    "timeline_shift|I&M Group|Explainer"
   ]
 }

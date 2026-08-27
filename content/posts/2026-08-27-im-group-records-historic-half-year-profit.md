@@ -1,0 +1,39 @@
+---
+title: "I&M Group records historic KSh 10 billion half-year profit"
+slug: "im-group-records-historic-half-year-profit"
+description: "I&M Group reports strong financial growth with profits hitting KSh 10.17 billion as the bank recalibrates its physical branch expansion strategy."
+author: "Grace Mkamburi"
+authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
+image: "https://i.ibb.co/TxkbzCdb/674de974d133.jpg"
+category: "Business"
+tags: ["im group", "kenyan banking", "financial results", "nairobi securities exchange", "business news", "kenyan economy"]
+date: "2026-08-27T16:26:04Z"
+dateModified: "2026-08-27T16:26:04Z"
+schema: "NewsArticle"
+---
+
+## Shifting Foundations: The New Math of Banking
+
+I&M Group recently released its financial results for the first half of 2026, reporting a profit of KSh 10.17 billion. This represents a 22.4 percent increase compared to the previous period. Beyond these numbers, the report highlights a significant evolution in how financial institutions build value. While profits are climbing, the long-standing strategy of aggressive physical branch expansion is being set aside in favor of digital scalability.
+
+### The Strategic Shift Behind Physical Footprints
+
+I&M Group has maintained its branch network at 79 locations. While the bank has not provided specific commentary on its internal staffing strategies, the freeze on physical expansion occurring alongside asset growth is noteworthy. Total assets at the bank have reached KSh 746.31 billion, while the deposit base is now valued at KSh 505.16 billion. 
+
+The maintenance of a steady branch count suggests a transition in operational priorities. In the past, banking sector growth was often measured by the number of personnel stationed at physical counters. Today, the focus has shifted toward digital infrastructure. This transition naturally changes the profile of the workforce needed to run a modern bank. Job requirements in the financial sector now prioritize technical skill sets such as cybersecurity, data analysis, and user experience design. For professionals entering the industry, the emphasis is moving away from traditional retail banking roles and toward the technical architecture that powers online platforms. The current trajectory indicates that digital literacy is becoming a core requirement for career longevity in the banking sector.
+
+### Operational Costs and the Future of Lending
+
+The bank reported total operating expenses of KSh 20.56 billion, supplemented by KSh 5.60 billion in loan-loss provisions. These figures reflect the significant capital required to maintain both traditional operations and the development of digital platforms. As banks face the high costs associated with digital transformation and risk management, their approach to lending is becoming more data-driven.
+
+Total operating income for the period reached KSh 33.69 billion, providing the bank with substantial liquidity. However, high levels of provisioning for potential defaults often lead to more stringent credit policies. For small and medium enterprises, this creates a specific set of challenges. Banks are increasingly relying on algorithms to assess creditworthiness, which favors businesses with robust digital transaction records. 
+
+Borrowers who rely heavily on cash transactions may find it harder to secure funding than those who utilize digital payment systems. Because the decision-making process is shifting toward automated data analysis, the human element of a local branch manager has less impact on loan approvals. Access to credit is now heavily contingent upon the quality and availability of a business’s digital footprint.
+
+### A Broader Transformation in Financial Services
+
+This evolution is happening within a complex macroeconomic environment. Systemic pressures, including national debt challenges and shifting regulatory requirements, are pushing banks toward leaner, more risk-averse operational models. The bank's decision to utilize a medium-term note for growth, rather than relying solely on traditional deposit-taking, illustrates a broader trend of institutions moving toward diverse forms of institutional funding to protect their margins.
+
+This transition marks a fundamental change in the relationship between banks and their customers. As physical branches become less central to the banking experience, the quality of service will be increasingly dictated by the reliability of software and the strength of data security protocols. As digital reliance grows, customer concerns regarding data privacy and system stability will likely become the primary challenges for the industry.
+
+For the individual customer or small business owner, the implications are clear. The banking landscape is moving away from personal, face-to-face interactions toward a model built on verified digital profiles. To effectively access capital, businesses must ensure that their operations are integrated into the digital ecosystems that banks prioritize. In this new climate, maintaining financial transparency and developing digital operational habits are the most effective ways to ensure continued access to banking services and loan opportunities. The era of brick-and-mortar retail banking is giving way to a system defined by information architecture.
