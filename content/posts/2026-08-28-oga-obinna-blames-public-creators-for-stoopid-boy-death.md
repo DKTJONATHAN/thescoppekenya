@@ -1,18 +1,20 @@
 ---
 title: "Oga Obinna Blames Public and Creators for Stoopid Boy Death"
 slug: "oga-obinna-blames-public-creators-for-stoopid-boy-death"
-description: "Media personality Oga Obinna has slammed the public and content creators for allegedly contributing to the suicide of rapper Stoopid Boy."
+description: "Oga Obinna Blames Public and Creators for Stoopid Boy Death: Media personality Oga Obinna has slammed the public and content creators for allegedly"
+excerpt: "The Stoopid Boy Tragedy and the Viral Hunger The death of Stoopid Boy on August 27, 2026, has stripped the veneer off the Gotta City digital"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/4ZLj95WH/cb8386e4e128.webp"
 category: "Gossip"
 tags: ["stoopid boy", "oga obinna", "arbantone", "kenyan entertainment", "mental health", "cyberbullying"]
+canonical: "https://zandani.co.ke/article/oga-obinna-blames-public-creators-for-stoopid-boy-death"
 date: "2026-08-28T20:13:41Z"
 dateModified: "2026-08-28T20:13:41Z"
+focusKeyword: "Oga Obinna Blames Public and Creators for Stoopid Boy Death"
 schema: "NewsArticle"
 ---
 
-## The Stoopid Boy Tragedy and the Viral Hunger
+## The Stoopid Boy Tragedy and the Viral Hunger Oga Obinna Blames Public and Creators for Stoopid Boy Death is the central subject of the update.
 
 The death of Stoopid Boy on August 27, 2026, has stripped the veneer off the Gotta City digital ecosystem, exposing a cycle of exploitation that rewards chaos while abandoning those who break under the pressure of overnight fame.
 

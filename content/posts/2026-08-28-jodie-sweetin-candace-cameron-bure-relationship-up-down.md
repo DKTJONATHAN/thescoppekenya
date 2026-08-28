@@ -14,7 +14,7 @@ focusKeyword: "'Jodie Sweetin on 'Up and Down' Relationship with Candace Cameron
 schema: "NewsArticle"
 ---
 
-## Sweetin and Bure: Friendship Endures Amid Ideological Divide "Jodie Sweetin on 'Up and Down' Relationship with Candace Cameron is the central subject of the update.
+## Sweetin and Bure: Friendship Endures Amid Ideological Divide "Jodie Sweetin on 'Up and Down' Relationship with Candace Cameron is the central subject of the update. 'Jodie Sweetin on 'Up and Down' Relationship with Candace Cameron is the central subject of the update.
 
 Actresses Jodie Sweetin and Candace Cameron Bure maintain a decades-long friendship, Sweetin recently confirmed, despite their openly contrasting political and social views. Their bond highlights a persistent effort to sustain respect across significant ideological differences.
 
