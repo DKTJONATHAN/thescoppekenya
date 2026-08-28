@@ -1,18 +1,20 @@
 ---
 title: "Kaptagat Forest Fencing Sparks Debate on Conservation and Access"
 slug: "kaptagat-forest-electric-fencing-project-conservation-debate"
-description: "The Kenya Forest Service is installing a 273-kilometre electric fence in Kaptagat to boost conservation, sparking local debate over land access."
+description: "Kaptagat Forest Fencing Sparks Debate on Conservation and Access: The Kenya Forest Service is installing a 273-kilometre electric fence in Kaptagat to boost"
+excerpt: "The Kaptagat Fence: An Expensive Gamble for Conservation The 273 kilometre electric barrier snaking through the Kaptagat forest is framed by"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/d0qQ4xBg/88879a1f6f5b.webp"
 category: "Opinions"
 tags: ["kaptagat forest", "kenya forest service", "environmental conservation", "community rights", "kenya news", "land management"]
+canonical: "https://zandani.co.ke/article/kaptagat-forest-electric-fencing-project-conservation-debate"
 date: "2026-08-28T20:51:03Z"
 dateModified: "2026-08-28T20:51:03Z"
+focusKeyword: "Kaptagat Forest Fencing Sparks Debate on Conservation and Access"
 schema: "NewsArticle"
 ---
 
-## The Kaptagat Fence: An Expensive Gamble for Conservation
+## The Kaptagat Fence: An Expensive Gamble for Conservation Kaptagat Forest Fencing Sparks Debate on Conservation and Access is the central subject of the update.
 
 The 273-kilometre electric barrier snaking through the Kaptagat forest is framed by officials as a necessary shield for biodiversity. Yet, beneath the promise of stability, the project faces scrutiny for relying on physical exclusion rather than long-term community engagement. While the fence aims to curb encroachment, its reliance on heavy infrastructure raises questions about whether this approach truly protects the environment or simply pushes the challenges of forest management further into the future.
 
