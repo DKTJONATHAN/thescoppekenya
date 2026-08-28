@@ -461,10 +461,10 @@
     "876666eae8d191b815fb27af49d94be1",
     "772fd72b0b837d21a20fe786b4d51e3d",
     "87bcc0b6271c4d45bc3427771a560d9a",
-    "1b285f68417bcaaf59d14b4e0c803f6a"
+    "1b285f68417bcaaf59d14b4e0c803f6a",
+    "5da67a147e743b963ebed5941e53e53d"
   ],
   "style_history": [
-    "Explainer",
     "Power Accountability",
     "Context Backgrounder",
     "Reaction & Voices",
@@ -493,10 +493,10 @@
     "Context Backgrounder",
     "Reaction & Voices",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Power Accountability"
   ],
   "angle_history": [
-    "policy_gap|Kenya|Context Backgrounder",
     "policy_gap|road accident|Power Accountability",
     "money_follow|International Seabed Authority|Hard News Lead",
     "timeline_shift|DCI|Explainer",
@@ -575,6 +575,7 @@
     "story_progression|EACC|Context Backgrounder",
     "myth_vs_fact|LPG|Reaction & Voices",
     "timeline_shift|Jubilee Party|Hard News Lead",
-    "money_follow|Kenya|Explainer"
+    "money_follow|Kenya|Explainer",
+    "accountability|Kenya|Power Accountability"
   ]
 }
