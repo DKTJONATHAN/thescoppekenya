@@ -1,18 +1,20 @@
 ---
 title: "Nakuru County ordered to pay driver Ksh4.1 million for injuries"
 slug: "nakuru-county-ordered-to-pay-driver-compensation"
-description: "A court has ordered Nakuru County to pay a former driver over 4 million shillings in damages after a workplace accident led to a permanent leg amputation."
+description: "Nakuru County ordered to pay driver Ksh4.1 million for injuries: A court has ordered Nakuru County to pay a former driver over 4 million shillings in damages"
+excerpt: "Nakuru County and the Hidden Cost of Disposable Labor Nakuru County Government has been ordered to pay Ksh4.1 million to a former driver fol"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/GQdFg3y2/16b41838377c.webp"
 category: "News"
 tags: ["nakuru county", "kenya news", "court ruling", "workplace injury", "compensation", "za ndani"]
+canonical: "https://zandani.co.ke/article/nakuru-county-ordered-to-pay-driver-compensation"
 date: "2026-08-28T17:14:29Z"
 dateModified: "2026-08-28T17:14:29Z"
+focusKeyword: "Nakuru County ordered to pay driver Ksh4.1 million for injuries"
 schema: "NewsArticle"
 ---
 
-## Nakuru County and the Hidden Cost of Disposable Labor
+## Nakuru County and the Hidden Cost of Disposable Labor Nakuru County ordered to pay driver Ksh4.1 million for injuries is the central subject of the update.
 
 Nakuru County Government has been ordered to pay Ksh4.1 million to a former driver following a 2021 accident that resulted in the amputation of his leg. While the court ruling provides a semblance of justice, the case exposes a calculated culture of administrative negligence where public workers are left without formal employment records, creating a shadow workforce designed to evade liability.
 

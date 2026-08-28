@@ -14,7 +14,7 @@ focusKeyword: "'Dolly Parton Films Return to Theaters After Her Passing"
 schema: "NewsArticle"
 ---
 
-## Dolly Parton's Films Return: A Celebration of Enduring Stardom "Dolly Parton Films Return to Theaters After Her Passing is the central subject of the update.
+## Dolly Parton's Films Return: A Celebration of Enduring Stardom "Dolly Parton Films Return to Theaters After Her Passing is the central subject of the update. 'Dolly Parton Films Return to Theaters After Her Passing is the central subject of the update.
 
 In the wake of Dolly Parton's passing, cinema chains are honoring her memory by bringing her beloved films back to the big screen. This heartfelt gesture highlights how a star's legacy can continue to inspire, entertain, and connect with audiences long after they are gone, reaffirming her lasting presence in popular culture.
 
