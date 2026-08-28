@@ -1,21 +1,20 @@
 ---
-title: "Dolly Parton Films Return to Theaters After Her Passing
+title: "'Dolly Parton Films Return to Theaters After Her Passing"
 slug: "dolly-parton-films-return-theaters-after-death"
-description: "Following Dolly Parton's passing, her iconic films 'Steel Magnolias' and 'The Best Little Whorehouse in Texas' are re-releasing nationwide. Find showtimes now."
+description: "'Dolly Parton Films Return to Theaters After Her Passing: Following Dolly Parton's passing, her iconic films 'Steel Magnolias' and 'The Best Little Whorehouse"
+excerpt: "Dolly Parton's Films Return: A Celebration of Enduring Stardom In the wake of Dolly Parton's passing, cinema chains are honoring her memory"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/TDW75HJP/ad77042e6147.jpg"
-og_title: "Dolly Parton's Films Return to Theaters Nationwide"
-og_description: "After Dolly Parton's death, her classic films 'Steel Magnolias' and 'The Best Little Whorehouse in Texas' are back on the big screen. See where to watch them."
-focus_keyword: "Dolly Parton films"
 category: "Entertainment"
 tags: ["dolly parton", "steel magnolias", "theaters", "movie re-release", "country music", "entertainment"]
+canonical: "https://zandani.co.ke/article/dolly-parton-films-return-theaters-after-death"
 date: "2026-08-28T06:17:08Z"
 dateModified: "2026-08-28T06:17:08Z"
+focusKeyword: "'Dolly Parton Films Return to Theaters After Her Passing"
 schema: "NewsArticle"
 ---
 
-## Dolly Parton's Films Return: A Celebration of Enduring Stardom
+## Dolly Parton's Films Return: A Celebration of Enduring Stardom "Dolly Parton Films Return to Theaters After Her Passing is the central subject of the update.
 
 In the wake of Dolly Parton's passing, cinema chains are honoring her memory by bringing her beloved films back to the big screen. This heartfelt gesture highlights how a star's legacy can continue to inspire, entertain, and connect with audiences long after they are gone, reaffirming her lasting presence in popular culture.
 
