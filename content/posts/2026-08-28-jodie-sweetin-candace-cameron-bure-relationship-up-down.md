@@ -1,21 +1,20 @@
 ---
-title: "Jodie Sweetin on 'Up and Down' Relationship with Candace Cameron Bure
+title: "'Jodie Sweetin on 'Up and Down' Relationship with Candace Cameron Bure"
 slug: "jodie-sweetin-candace-cameron-bure-relationship-up-down"
-description: "Jodie Sweetin reflects on her 'up and down' relationship with Candace Cameron Bure, highlighting their differing views but enduring love. Learn more about their bond."
+description: "'Jodie Sweetin on 'Up and Down' Relationship with Candace Cameron: Jodie Sweetin reflects on her 'up and down' relationship with Candace Cameron Bure,"
+excerpt: "Sweetin and Bure: Friendship Endures Amid Ideological Divide Actresses Jodie Sweetin and Candace Cameron Bure maintain a decades long friend"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/Ps1XxGTv/3ec2d7028198.jpg"
-og_title: "Jodie Sweetin on Relationship with Candace Cameron Bure"
-og_description: "Jodie Sweetin discusses her 'up and down' relationship with Candace Cameron Bure, emphasizing their love despite differing views."
-focus_keyword: "Jodie Sweetin Candace Cameron Bure"
 category: "Entertainment"
 tags: ["jodie sweetin", "candace cameron bure", "celebrity relationships", "full house", "tv actors", "progressive conservative", "entertainment news"]
+canonical: "https://zandani.co.ke/article/jodie-sweetin-candace-cameron-bure-relationship-up-down"
 date: "2026-08-28T18:59:21Z"
 dateModified: "2026-08-28T18:59:21Z"
+focusKeyword: "'Jodie Sweetin on 'Up and Down' Relationship with Candace Cameron"
 schema: "NewsArticle"
 ---
 
-## Sweetin and Bure: Friendship Endures Amid Ideological Divide
+## Sweetin and Bure: Friendship Endures Amid Ideological Divide "Jodie Sweetin on 'Up and Down' Relationship with Candace Cameron is the central subject of the update.
 
 Actresses Jodie Sweetin and Candace Cameron Bure maintain a decades-long friendship, Sweetin recently confirmed, despite their openly contrasting political and social views. Their bond highlights a persistent effort to sustain respect across significant ideological differences.
 
