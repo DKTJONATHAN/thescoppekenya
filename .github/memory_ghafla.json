@@ -296,10 +296,10 @@
     "819be0524c2ad5eb0f26ab5a79c9632c",
     "fce9a88452904a5b44ace5368685cc2c",
     "431bd7f836de92ba56de59868cbd4360",
-    "fe3e2dfad581ca26e41a2cb10a94c035"
+    "fe3e2dfad581ca26e41a2cb10a94c035",
+    "138de65ba6d9df61e6bbf4299623565f"
   ],
   "style_history": [
-    "Profile Beat",
     "Receipts Piece",
     "Reaction Round-up",
     "Trend Take",
@@ -328,10 +328,10 @@
     "Profile Beat",
     "Trend Take",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "myth_vs_fact|Forex trading|Receipts Piece",
     "accountability|National Police Service|Profile Beat",
     "winners_losers|Samidoh|Trend Take",
     "winners_losers|Kenyan Politics|Reaction Round-up",
@@ -410,6 +410,7 @@
     "money_follow|Kenya Power|Profile Beat",
     "myth_vs_fact|gospel music|Trend Take",
     "winners_losers|Kenya Power|Reaction Round-up",
-    "story_progression|Arbantone|Hard News Lead"
+    "story_progression|Arbantone|Hard News Lead",
+    "timeline_shift|Murugi Munyi|Receipts Piece"
   ]
 }
