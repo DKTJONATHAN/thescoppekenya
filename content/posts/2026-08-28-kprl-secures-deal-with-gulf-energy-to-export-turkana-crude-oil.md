@@ -1,18 +1,20 @@
 ---
 title: "KPRL Secures Deal with Gulf Energy to Export Turkana Crude Oil"
 slug: "kprl-secures-deal-with-gulf-energy-to-export-turkana-crude-oil"
-description: "Kenya Pipeline Company subsidiary KPRL has signed a long-term agreement with Gulf Energy to manage crude oil storage and transport from Turkana to Mombasa."
+description: "KPRL Secures Deal with Gulf Energy to Export Turkana Crude Oil: Kenya Pipeline Company subsidiary KPRL has signed a long-term agreement with Gulf Energy to"
+excerpt: "Crude Logistics: Small Business Opportunity Along the Lokichar Route The recent 25 year agreement between KPRL and Gulf Energy to revitalize"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/WpKp6TGG/679fced7422e.jpg"
 category: "Business"
 tags: ["kenya pipeline company", "kprl", "turkana oil", "energy sector", "mombasa port", "kenya economy"]
+canonical: "https://zandani.co.ke/article/kprl-secures-deal-with-gulf-energy-to-export-turkana-crude-oil"
 date: "2026-08-28T17:23:36Z"
 dateModified: "2026-08-28T17:23:36Z"
+focusKeyword: "KPRL Secures Deal with Gulf Energy to Export Turkana Crude Oil"
 schema: "NewsArticle"
 ---
 
-## Crude Logistics: Small Business Opportunity Along the Lokichar Route
+## Crude Logistics: Small Business Opportunity Along the Lokichar Route KPRL Secures Deal with Gulf Energy to Export Turkana Crude Oil is the central subject of the update.
 
 The recent 25-year agreement between KPRL and Gulf Energy to revitalize Mombasa storage facilities by December 2026 marks a major pivot in Kenya’s oil sector. By moving away from a long-delayed, pipeline-only export strategy, the government is embracing a road and rail transport framework. This shift creates a tangible, decentralized opportunity for local transport firms, fleet managers, and roadside service providers to enter the Turkana crude supply chain.
 
