@@ -1,20 +1,21 @@
 ---
 title: "Echoes of the Slag Heap: Nairobi-Mombasa Highway Road Safety 2026"
 slug: "echoes-slag-heap-nairobi-mombasa-highway-road-safety-2026"
-description: "A ghost lingers where warnings went unheeded, where safety gave way to cost. The past whispers of tahmeed bus kapiti crash victims."
+description: "Echoes of the Slag Heap: Nairobi-Mombasa Highway Road Safety 2026: A ghost lingers where warnings went unheeded, where safety gave way to cost. The past"
+excerpt: "The air, heavy with the pre dawn chill of October 21, 1966, offered little hint of the catastrophe brewing above the Welsh village of Aberfa"
 author: "The Chronicler"
 author_url: "https://zandani.co.ke/author/the-chronicler"
 image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200"
 category: "Chronicles"
-tags: ["chronicles", "aberfan-disaster", "lord-robens", "harold-wilson", "nairobi-mombasa-highway-road-safety-2026", "alex-kazungu-mbitha-konza-accident", "tsavo-wheat-truck-plunge-august", "salama-black-spot-accident-statistics", "tragic-irony", "kenya"]
+tags: ["chronicles", "aberfan-disaster", "lord-robens", "harold-wilson", "nairobi-mombasa-highway-road-safety-2026", "alex-kazungu-mbitha-konza-accident", "tsavo-wheat-truck-plunge-august", "salama-black-spot-accident-statistics"]
 canonical: "https://zandani.co.ke/article/echoes-slag-heap-nairobi-mombasa-highway-road-safety-2026"
 date: "2026-08-28T21:21:52Z"
-authorUrl: "https://zandani.co.ke/author/the-chronicler"
 dateModified: "2026-08-28T21:21:52Z"
+focusKeyword: "Echoes of the Slag Heap: Nairobi-Mombasa Highway Road Safety 2026"
 schema: "NewsArticle"
 ---
 
-The air, heavy with the pre-dawn chill of October 21, 1966, offered little hint of the catastrophe brewing above the Welsh village of Aberfan. Children, tiny lambs in their school uniforms, hurried through the lanes towards Pantglas Junior, eager for lessons. They were unaware that the mountain of coal waste, Tip 7, which loomed above them like a petrified thundercloud, had been weeping internally for years. Its belly, bloated with slag and saturated by underground springs, was a silent, festering wound, visible only to those who chose to look closely. For decades, warnings had been whispered, then shouted - notes in files, anxious pleas from engineers, local council concerns. These were brushed aside, neatly filed away by the National Coal Board, whose grand Chairman, Lord Robens, was a man of industry, not of sentiment. He saw tonnage, not tragedy.
+The air, heavy with the pre-dawn chill of October 21, 1966, offered little hint of the catastrophe brewing above the Welsh village of Aberfan. Children, tiny lambs in their school uniforms, hurried through the lanes towards Pantglas Junior, eager for lessons. They were unaware that the mountain of coal waste, Tip 7, which loomed above them like a petrified thundercloud, had been weeping internally for years. Its belly, bloated with slag and saturated by underground springs, was a silent, festering wound, visible only to those who chose to look closely. For decades, warnings had been whispered, then shouted - notes in files, anxious pleas from engineers, local council concerns. These were brushed aside, neatly filed away by the National Coal Board, whose grand Chairman, Lord Robens, was a man of industry, not of sentiment. He saw tonnage, not tragedy. Echoes of the Slag Heap: Nairobi-Mombasa Highway Road Safety 2026 is the central subject of the update.
 
 ### The Mountain's Unspoken Grievance
 

@@ -1,18 +1,20 @@
 ---
 title: "Manchester City Cruise Past Crystal Palace to Top Premier League"
 slug: "manchester-city-crystal-palace-match-report"
-description: "Manchester City maintained their perfect Premier League start with a 4-1 victory over Crystal Palace, featuring goals from Erling Haaland and Rayan Cherki."
+description: "Manchester City Cruise Past Crystal Palace to Top Premier League: Manchester City maintained their perfect Premier League start with a 4-1 victory over Crystal"
+excerpt: "Efficiency at the Etihad: The 22 Million Pound Valuation Model Seventeen touches defined the trajectory of Manchester City’s 4 1 demolition"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/Csp3TQFF/b3140b22a2b9.jpg"
 category: "Sports"
 tags: ["manchester city", "premier league", "football", "erling haaland", "sports news", "kenyan sports"]
+canonical: "https://zandani.co.ke/article/manchester-city-crystal-palace-match-report"
 date: "2026-08-28T21:13:05Z"
 dateModified: "2026-08-28T21:13:05Z"
+focusKeyword: "Manchester City Cruise Past Crystal Palace to Top Premier League"
 schema: "NewsArticle"
 ---
 
-## Efficiency at the Etihad: The 22 Million Pound Valuation Model
+## Efficiency at the Etihad: The 22 Million Pound Valuation Model Manchester City Cruise Past Crystal Palace to Top Premier League is the central subject of the update.
 
 Seventeen touches defined the trajectory of Manchester City’s 4-1 demolition of Crystal Palace at Selhurst Park. While traditional analysis fixates on the scoreline, the performance of Rayan Cherki serves as a masterclass in market-defying recruitment efficiency that puts modern squad spending into perspective.
 
