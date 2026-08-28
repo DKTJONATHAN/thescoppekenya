@@ -401,10 +401,10 @@
     "3407d9d820b3f54e6bba9d24b56d4623",
     "ee773499702a447f61a1291649117036",
     "ed50e60d28b0f0bc0af514fd1eabdfc9",
-    "a99dac3f4f667c6f17e63036580414f1"
+    "a99dac3f4f667c6f17e63036580414f1",
+    "7e6f5b44f3f38889bf9f79a51235ca27"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Trend Take",
     "Reaction Round-up",
@@ -433,10 +433,10 @@
     "Profile Beat",
     "Explainer",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Profile Beat"
   ],
   "angle_history": [
-    "winners_losers|television|Profile Beat",
     "story_progression|memes|Explainer",
     "timeline_shift|Clayface|Trend Take",
     "story_progression|na|Reaction Round-up",
@@ -515,6 +515,7 @@
     "myth_vs_fact|Rob Halford|Profile Beat",
     "story_progression|Actor|Explainer",
     "myth_vs_fact|na|Reaction Round-up",
-    "winners_losers|Happy Gilmore 2|Trend Take"
+    "winners_losers|Happy Gilmore 2|Trend Take",
+    "money_follow|Dolly Parton|Profile Beat"
   ]
 }
