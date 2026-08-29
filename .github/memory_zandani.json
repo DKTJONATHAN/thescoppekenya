@@ -363,10 +363,10 @@
     "1800b4d077e14cfa07142f64cda84f63",
     "bd2256f2477fa171e79ac3eca247a273",
     "7bb9e15e0644eb0458f1e80ae49b4b9b",
-    "7001f78ac68ea32bc6b95817af627f49"
+    "7001f78ac68ea32bc6b95817af627f49",
+    "ffca3a62704c93921142fddbde6c02fa"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
@@ -395,10 +395,10 @@
     "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
-    "Trend Take"
+    "Trend Take",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "story_progression|Timmy Tdat|Trend Take",
     "money_follow|boxing|Receipts Piece",
     "policy_gap|Kenya|Hard News Lead",
     "accountability|Kenya|Profile Beat",
@@ -477,6 +477,7 @@
     "winners_losers|Ohangla|Reaction Round-up",
     "myth_vs_fact|classism|Profile Beat",
     "money_follow|Brian Babu|Hard News Lead",
-    "accountability|Stoopid Boy|Trend Take"
+    "accountability|Stoopid Boy|Trend Take",
+    "story_progression|Kenya|Receipts Piece"
   ]
 }
