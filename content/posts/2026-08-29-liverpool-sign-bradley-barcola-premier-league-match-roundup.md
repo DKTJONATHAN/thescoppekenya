@@ -1,18 +1,20 @@
 ---
 title: "Liverpool Sign Bradley Barcola as Premier League Action Continues"
 slug: "liverpool-sign-bradley-barcola-premier-league-match-roundup"
-description: "Liverpool agree a record £123 million deal for Bradley Barcola while Premier League matches continue with action from Anfield and the Vitality Stadium."
+description: "Liverpool Sign Bradley Barcola as Premier League Action Continues: Liverpool agree a record £123 million deal for Bradley Barcola while Premier League matches"
+excerpt: "Anfield's Nine Figure gamble Liverpool dropped two points at home to Nottingham Forest this afternoon as the club finalized a staggering £12"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/qL2WQwxq/f8f27276d477.jpg"
 category: "Sports"
 tags: ["premier league", "liverpool", "transfer news", "football", "kenyan sports", "match results"]
+canonical: "https://zandani.co.ke/article/liverpool-sign-bradley-barcola-premier-league-match-roundup"
 date: "2026-08-29T15:08:04Z"
 dateModified: "2026-08-29T15:08:04Z"
+focusKeyword: "Liverpool Sign Bradley Barcola as Premier League Action Continues"
 schema: "NewsArticle"
 ---
 
-## Anfield's Nine-Figure gamble
+## Anfield's Nine-Figure gamble Liverpool Sign Bradley Barcola as Premier League Action Continues is the central subject of the update.
 
 Liverpool dropped two points at home to Nottingham Forest this afternoon as the club finalized a staggering £123 million agreement for PSG forward Bradley Barcola, a move that strips away the long-standing illusion of the Merseyside outfit as a frugal operator.
 
