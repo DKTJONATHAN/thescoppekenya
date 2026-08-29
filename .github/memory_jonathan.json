@@ -226,10 +226,10 @@
     "aa30b6b38e7421249f86347eba86d799",
     "0b8c0b6d762a8d9c40398d4d5e608d5e",
     "0df8d21eaf5403472e51bec7808ad4c4",
-    "41f988159c0f24155c848c532b702136"
+    "41f988159c0f24155c848c532b702136",
+    "c2431fb1e9fd6a7004278ce13da4f715"
   ],
   "style_history": [
-    "Personal Reflection",
     "Letter Form",
     "Historical Lens",
     "Sharp Column",
@@ -258,10 +258,10 @@
     "Sharp Column",
     "Historical Lens",
     "Personal Reflection",
-    "Counterpoint"
+    "Counterpoint",
+    "Letter Form"
   ],
   "angle_history": [
-    "timeline_shift|health financing|Historical Lens",
     "accountability|education|Letter Form",
     "story_progression|China-Kenya relations|Sharp Column",
     "policy_gap|school unrest|Personal Reflection",
@@ -340,6 +340,7 @@
     "myth_vs_fact|healthcare reform|Sharp Column",
     "timeline_shift|Social Health Authority|Historical Lens",
     "next_48_hours|Katiba|Personal Reflection",
-    "myth_vs_fact|conservation|Counterpoint"
+    "myth_vs_fact|conservation|Counterpoint",
+    "story_progression|Dolly Parton|Letter Form"
   ]
 }
