@@ -1,18 +1,20 @@
 ---
 title: "President Ruto Defends Housing Levy Citing Minimum Wage Increase"
 slug: "ruto-defends-housing-levy-citing-minimum-wage-increase"
-description: "President William Ruto claims the ten percent minimum wage hike introduced this year compensates workers for the mandatory 1.5 percent housing levy."
+description: "President Ruto Defends Housing Levy Citing Minimum Wage Increase: President William Ruto claims the ten percent minimum wage hike introduced this year"
+excerpt: "The Wage Math That Does Not Add Up Kenyans are crunching the numbers on their payslips this Saturday, and for most, the arithmetic linking a"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/TDcjFr5v/a3835bee4473.webp"
 category: "News"
 tags: ["william ruto", "affordable housing levy", "kenya economy", "minimum wage", "kenya politics"]
+canonical: "https://zandani.co.ke/article/ruto-defends-housing-levy-citing-minimum-wage-increase"
 date: "2026-08-29T11:32:34Z"
 dateModified: "2026-08-29T11:32:34Z"
+focusKeyword: "President Ruto Defends Housing Levy Citing Minimum Wage Increase"
 schema: "NewsArticle"
 ---
 
-## The Wage Math That Does Not Add Up
+## The Wage Math That Does Not Add Up President Ruto Defends Housing Levy Citing Minimum Wage Increase is the central subject of the update.
 
 Kenyans are crunching the numbers on their payslips this Saturday, and for most, the arithmetic linking a ten percent wage hike to the mandatory housing levy feels like a bad deal. While the President points to salary adjustments as a buffer, workers are seeing their disposable income vanish into the rising costs of basic goods.
 
