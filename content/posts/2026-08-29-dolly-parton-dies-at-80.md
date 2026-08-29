@@ -1,18 +1,20 @@
 ---
 title: "Country Music Legend Dolly Parton Dies at 80"
 slug: "dolly-parton-dies-at-80"
-description: "Legendary singer and humanitarian Dolly Parton has passed away in Nashville at age 80, leaving a massive legacy in music and literacy."
+description: "Country Music Legend Dolly Parton Dies at 80: Legendary singer and humanitarian Dolly Parton has passed away in Nashville at age 80, leaving a massive legacy"
+excerpt: "A Legacy Written in Ink and Imagination The world recently bade farewell to Dolly Parton, a cultural icon who passed away in Nashville at ag"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/nsLKM67N/6ac0cec06504.webp"
 category: "Opinions"
 tags: ["dolly parton", "obituary", "music news", "philanthropy", "global icons", "entertainment"]
+canonical: "https://zandani.co.ke/article/dolly-parton-dies-at-80"
 date: "2026-08-29T14:28:28Z"
 dateModified: "2026-08-29T14:28:28Z"
+focusKeyword: "Country Music Legend Dolly Parton Dies at 80"
 schema: "NewsArticle"
 ---
 
-## A Legacy Written in Ink and Imagination
+## A Legacy Written in Ink and Imagination Country Music Legend Dolly Parton Dies at 80 is the central subject of the update.
 
 The world recently bade farewell to Dolly Parton, a cultural icon who passed away in Nashville at age 80. While her legacy is firmly anchored in a catalog of three thousand copyrighted songs, her most profound impact was arguably a quiet, global revolution: the delivery of 325 million books to children worldwide through her Imagination Library.
 
