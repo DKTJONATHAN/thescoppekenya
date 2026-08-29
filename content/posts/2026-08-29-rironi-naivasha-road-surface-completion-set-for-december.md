@@ -1,18 +1,20 @@
 ---
 title: "Rironi-Naivasha road surface completion set for December"
 slug: "rironi-naivasha-road-surface-completion-set-for-december"
-description: "Construction of the Rironi-Naivasha road is 20 percent complete with surface works starting next month as part of the broader 2027 highway project."
+description: "Rironi-Naivasha road surface completion set for December: Construction of the Rironi-Naivasha road is 20 percent complete with surface works starting next"
+excerpt: "Smoothing the Path to Western Kenya Contractors are finalizing the tarmac surface on the Rironi Naivasha highway section by December, markin"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/G4MmfW7L/547d2e196653.webp"
 category: "News"
 tags: ["infrastructure", "kenha", "transport", "road construction", "kenya news", "crbc"]
+canonical: "https://zandani.co.ke/article/rironi-naivasha-road-surface-completion-set-for-december"
 date: "2026-08-29T19:39:36Z"
 dateModified: "2026-08-29T19:39:36Z"
+focusKeyword: "Rironi-Naivasha road surface completion set for December"
 schema: "NewsArticle"
 ---
 
-## Smoothing the Path to Western Kenya
+## Smoothing the Path to Western Kenya Rironi-Naivasha road surface completion set for December is the central subject of the update.
 
 Contractors are finalizing the tarmac surface on the Rironi-Naivasha highway section by December, marking a critical advancement in the 233-kilometre Mau Summit corridor that aims to slash travel times for regional logistics and commerce by half.
 
