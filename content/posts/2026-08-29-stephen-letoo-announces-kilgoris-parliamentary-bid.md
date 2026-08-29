@@ -1,18 +1,20 @@
 ---
 title: "Citizen TV Journalist Stephen Letoo Announces Kilgoris MP Bid"
 slug: "stephen-letoo-announces-kilgoris-parliamentary-bid"
-description: "Journalist Stephen Letoo has officially launched his campaign for the Kilgoris parliamentary seat ahead of the upcoming general election."
+description: "Citizen TV Journalist Stephen Letoo Announces Kilgoris MP Bid: Journalist Stephen Letoo has officially launched his campaign for the Kilgoris parliamentary"
+excerpt: "From Newsroom Anchors to Ballot Boxes Stephen Letoo officially declared his pursuit of the Kilgoris parliamentary seat at Oldanyati Grounds"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/23fwg2cK/9ae0dd59e56c.jpg"
 category: "Gossip"
 tags: ["stephen letoo", "kilgoris politics", "odm party", "kenyan politics", "2027 general election"]
+canonical: "https://zandani.co.ke/article/stephen-letoo-announces-kilgoris-parliamentary-bid"
 date: "2026-08-29T12:40:06Z"
 dateModified: "2026-08-29T12:40:06Z"
+focusKeyword: "Citizen TV Journalist Stephen Letoo Announces Kilgoris MP Bid"
 schema: "NewsArticle"
 ---
 
-## From Newsroom Anchors to Ballot Boxes
+## From Newsroom Anchors to Ballot Boxes Citizen TV Journalist Stephen Letoo Announces Kilgoris MP Bid is the central subject of the update.
 
 Stephen Letoo officially declared his pursuit of the Kilgoris parliamentary seat at Oldanyati Grounds today, signaling a significant evolution in how public figures translate broadcasting authority into raw political capital. This shift marks a departure from traditional local campaigning toward a model defined by curated media magnetism.
 
